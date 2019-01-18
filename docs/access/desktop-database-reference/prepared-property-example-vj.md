@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249237(v=office.15)
 ms:contentKeyID: 48544693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4f275585d784845c3292901bbacabdcc1c4ab931
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 91c279c695b72c1b60c5ae05a6f046ef116da551
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878444"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713569"
 ---
-# <a name="prepared-property-example-vj"></a><span data-ttu-id="e5002-102">Prepared-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="e5002-102">Prepared property example (VJ++)</span></span>
+# <a name="prepared-property-example-vj"></a><span data-ttu-id="9e12c-102">Prepared-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="9e12c-102">Prepared property example (VJ++)</span></span>
 
 
-<span data-ttu-id="e5002-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e5002-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9e12c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9e12c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e5002-104">Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.</span><span class="sxs-lookup"><span data-stu-id="e5002-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="9e12c-104">Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.</span><span class="sxs-lookup"><span data-stu-id="9e12c-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```java 
  

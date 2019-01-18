@@ -10,64 +10,27 @@ f1_keywords:
 - jetsql40.chm5277473
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4e841da9d401558311682f0abcbefde9161b71b3
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 33443fda474b3785d34d457719e49f5e358bb254
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26025994"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718035"
 ---
-# <a name="odbc-scalar-functions"></a><span data-ttu-id="fabd7-102">ODBC-Skalarfunktionen</span><span class="sxs-lookup"><span data-stu-id="fabd7-102">ODBC scalar functions</span></span>
+# <a name="odbc-scalar-functions"></a><span data-ttu-id="adba0-102">ODBC-Skalarfunktionen</span><span class="sxs-lookup"><span data-stu-id="adba0-102">ODBC scalar functions</span></span>
 
-<span data-ttu-id="fabd7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="fabd7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="adba0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="adba0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fabd7-104">Microsoft Access SQL unterstützt die Verwendung der ODBC definierten Syntax für Skalarfunktionen.</span><span class="sxs-lookup"><span data-stu-id="fabd7-104">Microsoft Access SQL supports the use of the ODBC defined syntax for scalar functions.</span></span> 
+<span data-ttu-id="adba0-104">Microsoft Access SQL unterstützt die Verwendung der ODBC definierten Syntax für Skalarfunktionen.</span><span class="sxs-lookup"><span data-stu-id="adba0-104">Microsoft Access SQL supports the use of the ODBC defined syntax for scalar functions.</span></span> 
 
-<span data-ttu-id="fabd7-105">Beispiel: die Abfrage `SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} > 5` alle Zeilen, bei denen der Absolute Wert der Änderung in die Preisänderung einer Aktie größer als fünf war, zurück.</span><span class="sxs-lookup"><span data-stu-id="fabd7-105">For example, the query `SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} > 5` would return all rows where the absolute value of the change in the price of a stock was greater than five.</span></span>
+<span data-ttu-id="adba0-105">Beispiel: die Abfrage `SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} > 5` alle Zeilen, bei denen der Absolute Wert der Änderung in die Preisänderung einer Aktie größer als fünf war, zurück.</span><span class="sxs-lookup"><span data-stu-id="adba0-105">For example, the query `SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} > 5` would return all rows where the absolute value of the change in the price of a stock was greater than five.</span></span>
 
-<span data-ttu-id="fabd7-p101">Es wird eine Untermenge der über ODBC definierten Skalarfunktionen unterstützt. In der folgenden Tabelle sind die unterstützten Funktionen aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="fabd7-p101">A subset of the ODBC defined scalar functions is supported. The following table lists the functions that are supported.</span></span>
+<span data-ttu-id="adba0-p101">Es wird eine Untermenge der über ODBC definierten Skalarfunktionen unterstützt. In der folgenden Tabelle sind die unterstützten Funktionen aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="adba0-p101">A subset of the ODBC defined scalar functions is supported. The following table lists the functions that are supported.</span></span>
 
-<span data-ttu-id="fabd7-108">Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesyntax für INCLUDE-Funktionen in einer SQL-Anweisung finden Sie in der ODBC-Dokumentation.</span><span class="sxs-lookup"><span data-stu-id="fabd7-108">For a description of the arguments and a complete explanation of the escape syntax for including functions in a SQL statement, see the ODBC documentation.</span></span>
+<span data-ttu-id="adba0-108">Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesyntax für INCLUDE-Funktionen in einer SQL-Anweisung finden Sie in der ODBC-Dokumentation.</span><span class="sxs-lookup"><span data-stu-id="adba0-108">For a description of the arguments and a complete explanation of the escape syntax for including functions in a SQL statement, see the ODBC documentation.</span></span>
 
-## <a name="string-functions"></a><span data-ttu-id="fabd7-109">Zeichenfolgenfunktionen</span><span class="sxs-lookup"><span data-stu-id="fabd7-109">String functions</span></span>
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span data-ttu-id="fabd7-110">ASCII</span><span class="sxs-lookup"><span data-stu-id="fabd7-110">ASCII</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-111">LENGTH</span><span class="sxs-lookup"><span data-stu-id="fabd7-111">LENGTH</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-112">RTRIM</span><span class="sxs-lookup"><span data-stu-id="fabd7-112">RTRIM</span></span></p></td>
-</tr>
-<tr class="even">
-<td><p><span data-ttu-id="fabd7-113">CHAR</span><span class="sxs-lookup"><span data-stu-id="fabd7-113">CHAR</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-114">LOCATE</span><span class="sxs-lookup"><span data-stu-id="fabd7-114">LOCATE</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-115">SPACE</span><span class="sxs-lookup"><span data-stu-id="fabd7-115">SPACE</span></span></p></td>
-</tr>
-<tr class="odd">
-<td><p><span data-ttu-id="fabd7-116">CONCAT</span><span class="sxs-lookup"><span data-stu-id="fabd7-116">CONCAT</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-117">LTRIM</span><span class="sxs-lookup"><span data-stu-id="fabd7-117">LTRIM</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-118">SUBSTRING</span><span class="sxs-lookup"><span data-stu-id="fabd7-118">SUBSTRING</span></span></p></td>
-</tr>
-<tr class="even">
-<td><p><span data-ttu-id="fabd7-119">LCASE</span><span class="sxs-lookup"><span data-stu-id="fabd7-119">LCASE</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-120">RIGHT</span><span class="sxs-lookup"><span data-stu-id="fabd7-120">RIGHT</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-121">UCASE</span><span class="sxs-lookup"><span data-stu-id="fabd7-121">UCASE</span></span></p></td>
-</tr>
-<tr class="odd">
-<td><p><span data-ttu-id="fabd7-122">LEFT</span><span class="sxs-lookup"><span data-stu-id="fabd7-122">LEFT</span></span></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-
-
-## <a name="numeric-functions"></a><span data-ttu-id="fabd7-123">Numerische Funktionen</span><span class="sxs-lookup"><span data-stu-id="fabd7-123">Numeric functions</span></span>
+## <a name="string-functions"></a><span data-ttu-id="adba0-109">Zeichenfolgenfunktionen</span><span class="sxs-lookup"><span data-stu-id="adba0-109">String functions</span></span>
 
 <table>
 <colgroup>
@@ -77,35 +40,35 @@ ms.locfileid: "26025994"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fabd7-124">ABS</span><span class="sxs-lookup"><span data-stu-id="fabd7-124">ABS</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-125">FLOOR</span><span class="sxs-lookup"><span data-stu-id="fabd7-125">FLOOR</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-126">SIN</span><span class="sxs-lookup"><span data-stu-id="fabd7-126">SIN</span></span></p></td>
+<td><p><span data-ttu-id="adba0-110">ASCII</span><span class="sxs-lookup"><span data-stu-id="adba0-110">ASCII</span></span></p></td>
+<td><p><span data-ttu-id="adba0-111">LENGTH</span><span class="sxs-lookup"><span data-stu-id="adba0-111">LENGTH</span></span></p></td>
+<td><p><span data-ttu-id="adba0-112">RTRIM</span><span class="sxs-lookup"><span data-stu-id="adba0-112">RTRIM</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fabd7-127">ATAN</span><span class="sxs-lookup"><span data-stu-id="fabd7-127">ATAN</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-128">LOG</span><span class="sxs-lookup"><span data-stu-id="fabd7-128">LOG</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-129">SQRT</span><span class="sxs-lookup"><span data-stu-id="fabd7-129">SQRT</span></span></p></td>
+<td><p><span data-ttu-id="adba0-113">CHAR</span><span class="sxs-lookup"><span data-stu-id="adba0-113">CHAR</span></span></p></td>
+<td><p><span data-ttu-id="adba0-114">LOCATE</span><span class="sxs-lookup"><span data-stu-id="adba0-114">LOCATE</span></span></p></td>
+<td><p><span data-ttu-id="adba0-115">SPACE</span><span class="sxs-lookup"><span data-stu-id="adba0-115">SPACE</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fabd7-130">CEILING</span><span class="sxs-lookup"><span data-stu-id="fabd7-130">CEILING</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-131">POWER</span><span class="sxs-lookup"><span data-stu-id="fabd7-131">POWER</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-132">TAN</span><span class="sxs-lookup"><span data-stu-id="fabd7-132">TAN</span></span></p></td>
+<td><p><span data-ttu-id="adba0-116">CONCAT</span><span class="sxs-lookup"><span data-stu-id="adba0-116">CONCAT</span></span></p></td>
+<td><p><span data-ttu-id="adba0-117">LTRIM</span><span class="sxs-lookup"><span data-stu-id="adba0-117">LTRIM</span></span></p></td>
+<td><p><span data-ttu-id="adba0-118">SUBSTRING</span><span class="sxs-lookup"><span data-stu-id="adba0-118">SUBSTRING</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fabd7-133">COS</span><span class="sxs-lookup"><span data-stu-id="fabd7-133">COS</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-134">RAND</span><span class="sxs-lookup"><span data-stu-id="fabd7-134">RAND</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-135">MOD</span><span class="sxs-lookup"><span data-stu-id="fabd7-135">MOD</span></span></p></td>
+<td><p><span data-ttu-id="adba0-119">LCASE</span><span class="sxs-lookup"><span data-stu-id="adba0-119">LCASE</span></span></p></td>
+<td><p><span data-ttu-id="adba0-120">RIGHT</span><span class="sxs-lookup"><span data-stu-id="adba0-120">RIGHT</span></span></p></td>
+<td><p><span data-ttu-id="adba0-121">UCASE</span><span class="sxs-lookup"><span data-stu-id="adba0-121">UCASE</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fabd7-136">EXP</span><span class="sxs-lookup"><span data-stu-id="fabd7-136">EXP</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-137">SIGN</span><span class="sxs-lookup"><span data-stu-id="fabd7-137">SIGN</span></span></p></td>
+<td><p><span data-ttu-id="adba0-122">LEFT</span><span class="sxs-lookup"><span data-stu-id="adba0-122">LEFT</span></span></p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="time--date-functions"></a><span data-ttu-id="fabd7-138">Datum und Uhrzeit-Funktionen</span><span class="sxs-lookup"><span data-stu-id="fabd7-138">Time & Date functions</span></span>
+## <a name="numeric-functions"></a><span data-ttu-id="adba0-123">Numerische Funktionen</span><span class="sxs-lookup"><span data-stu-id="adba0-123">Numeric functions</span></span>
 
 <table>
 <colgroup>
@@ -115,35 +78,73 @@ ms.locfileid: "26025994"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fabd7-139">CURDATE</span><span class="sxs-lookup"><span data-stu-id="fabd7-139">CURDATE</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-140">DAYOFYEAR</span><span class="sxs-lookup"><span data-stu-id="fabd7-140">DAYOFYEAR</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-141">MONTH</span><span class="sxs-lookup"><span data-stu-id="fabd7-141">MONTH</span></span></p></td>
+<td><p><span data-ttu-id="adba0-124">ABS</span><span class="sxs-lookup"><span data-stu-id="adba0-124">ABS</span></span></p></td>
+<td><p><span data-ttu-id="adba0-125">FLOOR</span><span class="sxs-lookup"><span data-stu-id="adba0-125">FLOOR</span></span></p></td>
+<td><p><span data-ttu-id="adba0-126">SIN</span><span class="sxs-lookup"><span data-stu-id="adba0-126">SIN</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fabd7-142">CURTIME</span><span class="sxs-lookup"><span data-stu-id="fabd7-142">CURTIME</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-143">YEAR</span><span class="sxs-lookup"><span data-stu-id="fabd7-143">YEAR</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-144">WEEK</span><span class="sxs-lookup"><span data-stu-id="fabd7-144">WEEK</span></span></p></td>
+<td><p><span data-ttu-id="adba0-127">ATAN</span><span class="sxs-lookup"><span data-stu-id="adba0-127">ATAN</span></span></p></td>
+<td><p><span data-ttu-id="adba0-128">LOG</span><span class="sxs-lookup"><span data-stu-id="adba0-128">LOG</span></span></p></td>
+<td><p><span data-ttu-id="adba0-129">SQRT</span><span class="sxs-lookup"><span data-stu-id="adba0-129">SQRT</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fabd7-145">NOW</span><span class="sxs-lookup"><span data-stu-id="fabd7-145">NOW</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-146">HOUR</span><span class="sxs-lookup"><span data-stu-id="fabd7-146">HOUR</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-147">QUARTER</span><span class="sxs-lookup"><span data-stu-id="fabd7-147">QUARTER</span></span></p></td>
+<td><p><span data-ttu-id="adba0-130">CEILING</span><span class="sxs-lookup"><span data-stu-id="adba0-130">CEILING</span></span></p></td>
+<td><p><span data-ttu-id="adba0-131">POWER</span><span class="sxs-lookup"><span data-stu-id="adba0-131">POWER</span></span></p></td>
+<td><p><span data-ttu-id="adba0-132">TAN</span><span class="sxs-lookup"><span data-stu-id="adba0-132">TAN</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fabd7-148">DAYOFMONTH</span><span class="sxs-lookup"><span data-stu-id="fabd7-148">DAYOFMONTH</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-149">MINUTE</span><span class="sxs-lookup"><span data-stu-id="fabd7-149">MINUTE</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-150">MONTHNAME</span><span class="sxs-lookup"><span data-stu-id="fabd7-150">MONTHNAME</span></span></p></td>
+<td><p><span data-ttu-id="adba0-133">COS</span><span class="sxs-lookup"><span data-stu-id="adba0-133">COS</span></span></p></td>
+<td><p><span data-ttu-id="adba0-134">RAND</span><span class="sxs-lookup"><span data-stu-id="adba0-134">RAND</span></span></p></td>
+<td><p><span data-ttu-id="adba0-135">MOD</span><span class="sxs-lookup"><span data-stu-id="adba0-135">MOD</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fabd7-151">DAYOFWEEK</span><span class="sxs-lookup"><span data-stu-id="fabd7-151">DAYOFWEEK</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-152">SECOND</span><span class="sxs-lookup"><span data-stu-id="fabd7-152">SECOND</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-153">DAYNAME</span><span class="sxs-lookup"><span data-stu-id="fabd7-153">DAYNAME</span></span></p></td>
+<td><p><span data-ttu-id="adba0-136">EXP</span><span class="sxs-lookup"><span data-stu-id="adba0-136">EXP</span></span></p></td>
+<td><p><span data-ttu-id="adba0-137">SIGN</span><span class="sxs-lookup"><span data-stu-id="adba0-137">SIGN</span></span></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="data-type-conversion"></a><span data-ttu-id="fabd7-154">Datentypkonvertierung</span><span class="sxs-lookup"><span data-stu-id="fabd7-154">Data type conversion</span></span>
+## <a name="time--date-functions"></a><span data-ttu-id="adba0-138">Zeit & Datumsfunktionen</span><span class="sxs-lookup"><span data-stu-id="adba0-138">Time & Date functions</span></span>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><span data-ttu-id="adba0-139">CURDATE</span><span class="sxs-lookup"><span data-stu-id="adba0-139">CURDATE</span></span></p></td>
+<td><p><span data-ttu-id="adba0-140">DAYOFYEAR</span><span class="sxs-lookup"><span data-stu-id="adba0-140">DAYOFYEAR</span></span></p></td>
+<td><p><span data-ttu-id="adba0-141">MONTH</span><span class="sxs-lookup"><span data-stu-id="adba0-141">MONTH</span></span></p></td>
+</tr>
+<tr class="even">
+<td><p><span data-ttu-id="adba0-142">CURTIME</span><span class="sxs-lookup"><span data-stu-id="adba0-142">CURTIME</span></span></p></td>
+<td><p><span data-ttu-id="adba0-143">YEAR</span><span class="sxs-lookup"><span data-stu-id="adba0-143">YEAR</span></span></p></td>
+<td><p><span data-ttu-id="adba0-144">WEEK</span><span class="sxs-lookup"><span data-stu-id="adba0-144">WEEK</span></span></p></td>
+</tr>
+<tr class="odd">
+<td><p><span data-ttu-id="adba0-145">NOW</span><span class="sxs-lookup"><span data-stu-id="adba0-145">NOW</span></span></p></td>
+<td><p><span data-ttu-id="adba0-146">HOUR</span><span class="sxs-lookup"><span data-stu-id="adba0-146">HOUR</span></span></p></td>
+<td><p><span data-ttu-id="adba0-147">QUARTER</span><span class="sxs-lookup"><span data-stu-id="adba0-147">QUARTER</span></span></p></td>
+</tr>
+<tr class="even">
+<td><p><span data-ttu-id="adba0-148">DAYOFMONTH</span><span class="sxs-lookup"><span data-stu-id="adba0-148">DAYOFMONTH</span></span></p></td>
+<td><p><span data-ttu-id="adba0-149">MINUTE</span><span class="sxs-lookup"><span data-stu-id="adba0-149">MINUTE</span></span></p></td>
+<td><p><span data-ttu-id="adba0-150">MONTHNAME</span><span class="sxs-lookup"><span data-stu-id="adba0-150">MONTHNAME</span></span></p></td>
+</tr>
+<tr class="odd">
+<td><p><span data-ttu-id="adba0-151">DAYOFWEEK</span><span class="sxs-lookup"><span data-stu-id="adba0-151">DAYOFWEEK</span></span></p></td>
+<td><p><span data-ttu-id="adba0-152">SECOND</span><span class="sxs-lookup"><span data-stu-id="adba0-152">SECOND</span></span></p></td>
+<td><p><span data-ttu-id="adba0-153">DAYNAME</span><span class="sxs-lookup"><span data-stu-id="adba0-153">DAYNAME</span></span></p></td>
+</tr>
+</tbody>
+</table>
+
+
+## <a name="data-type-conversion"></a><span data-ttu-id="adba0-154">Datentypkonvertierung</span><span class="sxs-lookup"><span data-stu-id="adba0-154">Data type conversion</span></span>
 
 <table>
 <colgroup>
@@ -152,8 +153,8 @@ ms.locfileid: "26025994"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fabd7-155">CONVERT</span><span class="sxs-lookup"><span data-stu-id="fabd7-155">CONVERT</span></span></p></td>
-<td><p><span data-ttu-id="fabd7-156">Zeichenfolgenliterale können in folgende Datentypen konvertiert werden: SQL_FLOAT, SQL_DOUBLE, SQL_NUMERIC, SQL_INTEGER, SQL_REAL, SQL_SMALLINT, SQL_VARCHAR und SQL_DATETIME.</span><span class="sxs-lookup"><span data-stu-id="fabd7-156">String literals can be converted to the following data types: SQL_FLOAT, SQL_DOUBLE, SQL_NUMERIC, SQL_INTEGER, SQL_REAL, SQL_SMALLINT, SQL_VARCHAR and SQL_DATETIME.</span></span></p></td>
+<td><p><span data-ttu-id="adba0-155">CONVERT</span><span class="sxs-lookup"><span data-stu-id="adba0-155">CONVERT</span></span></p></td>
+<td><p><span data-ttu-id="adba0-156">Zeichenfolgenliterale können in folgende Datentypen konvertiert werden: SQL_FLOAT, SQL_DOUBLE, SQL_NUMERIC, SQL_INTEGER, SQL_REAL, SQL_SMALLINT, SQL_VARCHAR und SQL_DATETIME.</span><span class="sxs-lookup"><span data-stu-id="adba0-156">String literals can be converted to the following data types: SQL_FLOAT, SQL_DOUBLE, SQL_NUMERIC, SQL_INTEGER, SQL_REAL, SQL_SMALLINT, SQL_VARCHAR and SQL_DATETIME.</span></span></p></td>
 </tr>
 </tbody>
 </table>

@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248774(v=office.15)
 ms:contentKeyID: 48542897
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 01e2f0ab0ad4a623a7f8cab44877d27e18f45c54
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c2d8af2ac4dc49d8ff2236ac49f372864d0d21f6
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867265"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718245"
 ---
-# <a name="execute-requery-and-clear-methods-example-vj"></a><span data-ttu-id="3b5f9-102">Execute-, Requery- und Clear-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="3b5f9-102">Execute, Requery, and Clear methods example (VJ++)</span></span>
+# <a name="execute-requery-and-clear-methods-example-vj"></a><span data-ttu-id="8ae6d-102">Execute-, Requery- und Clear-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="8ae6d-102">Execute, Requery, and Clear methods example (VJ++)</span></span>
 
 
-<span data-ttu-id="3b5f9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3b5f9-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8ae6d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8ae6d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3b5f9-104">In diesem Beispiel wird die Ausführung der **Execute** -Methode aus einem [Command](command-object-ado.md)-Objekt und einem [Connection](connection-object-ado.md)-Objekt dargestellt.</span><span class="sxs-lookup"><span data-stu-id="3b5f9-104">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object.</span></span> <span data-ttu-id="3b5f9-105">Anschließend wird auch die [Requery](requery-method-ado.md) -Methode zum Abrufen von aktuellen Datenteils in einem Recordset-Objekt und die [Clear](clear-method-ado.md) -Methode, um den Inhalt der [Errors](errors-collection-ado.md) -Auflistung löschen.</span><span class="sxs-lookup"><span data-stu-id="3b5f9-105">It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a recordset, and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection.</span></span> <span data-ttu-id="3b5f9-106">Die Verfahrensweise ExecuteCommand und PrintOutput ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3b5f9-106">The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
+<span data-ttu-id="8ae6d-104">In diesem Beispiel wird die Ausführung der **Execute** -Methode aus einem [Command](command-object-ado.md)-Objekt und einem [Connection](connection-object-ado.md)-Objekt dargestellt.</span><span class="sxs-lookup"><span data-stu-id="8ae6d-104">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object.</span></span> <span data-ttu-id="8ae6d-105">Anschließend wird auch die [Requery](requery-method-ado.md) -Methode zum Abrufen von aktuellen Datenteils in einem Recordset-Objekt und die [Clear](clear-method-ado.md) -Methode, um den Inhalt der [Errors](errors-collection-ado.md) -Auflistung löschen.</span><span class="sxs-lookup"><span data-stu-id="8ae6d-105">It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a recordset, and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection.</span></span> <span data-ttu-id="8ae6d-106">Die Verfahrensweise ExecuteCommand und PrintOutput ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8ae6d-106">The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
 
 ```java 
  

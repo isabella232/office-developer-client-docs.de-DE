@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15)
 ms:contentKeyID: 48546562
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f0c3f6f48418b6b8df95b423b9baba3a9c84c21b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ac0009940b3c7917db82db38d604ef6d16712953
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885815"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718966"
 ---
-# <a name="prepared-property-example-vc"></a><span data-ttu-id="3937f-102">Prepared-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="3937f-102">Prepared property example (VC++)</span></span>
+# <a name="prepared-property-example-vc"></a><span data-ttu-id="e02db-102">Prepared-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="e02db-102">Prepared property example (VC++)</span></span>
 
 
-<span data-ttu-id="3937f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3937f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e02db-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e02db-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3937f-104">Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.</span><span class="sxs-lookup"><span data-stu-id="3937f-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="e02db-104">Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.</span><span class="sxs-lookup"><span data-stu-id="e02db-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```cpp 
  

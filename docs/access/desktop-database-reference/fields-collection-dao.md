@@ -6,37 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193530(v=office.15)
 ms:contentKeyID: 48544702
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 79515c413918bca1b83d18abec41c78f3fd52447
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: d87d1535afeaf0740627a7af3852b1929a0e6d50
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921238"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713282"
 ---
-# <a name="fields-collection-dao"></a><span data-ttu-id="9815a-102">Fields-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="9815a-102">Fields collection (DAO)</span></span>
+# <a name="fields-collection-dao"></a><span data-ttu-id="5fcea-102">Fields-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="5fcea-102">Fields collection (DAO)</span></span>
 
 
-<span data-ttu-id="9815a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9815a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5fcea-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5fcea-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9815a-104">Eine **Fields** -Auflistung enthält alle gespeicherten **Field** -Objekte eines **Index** -, **QueryDef** -, **Recordset** -, **Relation** - oder **TableDef** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="9815a-104">A **Fields** collection contains all stored **Field** objects of an **Index**, **QueryDef**, **Recordset**, **Relation**, or **TableDef** object.</span></span>
+<span data-ttu-id="5fcea-104">Eine **Fields** -Auflistung enthält alle gespeicherten **Field** -Objekte eines **Index** -, **QueryDef** -, **Recordset** -, **Relation** - oder **TableDef** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="5fcea-104">A **Fields** collection contains all stored **Field** objects of an **Index**, **QueryDef**, **Recordset**, **Relation**, or **TableDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="9815a-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9815a-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5fcea-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5fcea-105">Remarks</span></span>
 
-<span data-ttu-id="9815a-p101">Die **Fields** -Auflistung der Objekte **Index**, **QueryDef**, **Relation**, and **TableDef** enthält die Spezifikationen für die Felder, die diese Objekte darstellen. Die **Fields** -Auflistung eines **Recordset** -Objekts stellt die **Field** -Objekte in einer Zeile mit Daten oder einem Datensatz dar. Verwenden Sie die **Field** -Objekte in einem **Recordset** -Objekt, um Werte für die Felder im aktuellen Datensatz des **Recordset** -Objekts zu lesen oder festzulegen.</span><span class="sxs-lookup"><span data-stu-id="9815a-p101">The **Fields** collections of the **Index**, **QueryDef**, **Relation**, and **TableDef** objects contain the specifications for the fields those objects represent. The **Fields** collection of a **Recordset** object represents the **Field** objects in a row of data, or in a record. You use the **Field** objects in a **Recordset** object to read and to set values for the fields in the current record of the **Recordset** object.</span></span>
+<span data-ttu-id="5fcea-p101">Die **Fields** -Auflistung der Objekte **Index**, **QueryDef**, **Relation**, and **TableDef** enthält die Spezifikationen für die Felder, die diese Objekte darstellen. Die **Fields** -Auflistung eines **Recordset** -Objekts stellt die **Field** -Objekte in einer Zeile mit Daten oder einem Datensatz dar. Verwenden Sie die **Field** -Objekte in einem **Recordset** -Objekt, um Werte für die Felder im aktuellen Datensatz des **Recordset** -Objekts zu lesen oder festzulegen.</span><span class="sxs-lookup"><span data-stu-id="5fcea-p101">The **Fields** collections of the **Index**, **QueryDef**, **Relation**, and **TableDef** objects contain the specifications for the fields those objects represent. The **Fields** collection of a **Recordset** object represents the **Field** objects in a row of data, or in a record. You use the **Field** objects in a **Recordset** object to read and to set values for the fields in the current record of the **Recordset** object.</span></span>
 
-<span data-ttu-id="9815a-109">Wenn Sie auf ein **Field** -Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name** -Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:</span><span class="sxs-lookup"><span data-stu-id="9815a-109">To refer to a **Field** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="5fcea-109">Wenn Sie auf ein **Field** -Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name** -Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:</span><span class="sxs-lookup"><span data-stu-id="5fcea-109">To refer to a **Field** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="9815a-110">**Fields**(0)</span><span class="sxs-lookup"><span data-stu-id="9815a-110">**Fields**(0)</span></span>
+<span data-ttu-id="5fcea-110">**Fields**(0)</span><span class="sxs-lookup"><span data-stu-id="5fcea-110">**Fields**(0)</span></span>
 
-<span data-ttu-id="9815a-111">**Felder** ("Name")</span><span class="sxs-lookup"><span data-stu-id="9815a-111">**Fields**("name")</span></span>
+<span data-ttu-id="5fcea-111">**Felder** ("Name")</span><span class="sxs-lookup"><span data-stu-id="5fcea-111">**Fields**("name")</span></span>
 
-<span data-ttu-id="9815a-112">**Felder**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="9815a-112">**Fields**\!\[name\]</span></span>
+<span data-ttu-id="5fcea-112">**Felder**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="5fcea-112">**Fields**\!\[name\]</span></span>
 
-<span data-ttu-id="9815a-p102">Mit denselben Syntaxformen können Sie auch auf die **Value**-Eigenschaft eines von Ihnen erstellten **Field**-Objekts verweisen, das Sie einer **Fields**-Auflistung anfügen. Der Kontext des Feldverweises bestimmt, ob sich der Verweis auf das **Field**-Objekt oder die **Value**-Eigenschaft des **Field**-Objekts bezieht.</span><span class="sxs-lookup"><span data-stu-id="9815a-p102">With the same syntax forms, you can also refer to the **Value** property of a **Field** object that you create and append to a **Fields** collection. The context of the field reference will determine whether you are referring to the **Field** object or the **Value** property of the **Field** object.</span></span>
+<span data-ttu-id="5fcea-p102">Mit denselben Syntaxformen können Sie auch auf die **Value**-Eigenschaft eines von Ihnen erstellten **Field**-Objekts verweisen, das Sie einer **Fields**-Auflistung anfügen. Der Kontext des Feldverweises bestimmt, ob sich der Verweis auf das **Field**-Objekt oder die **Value**-Eigenschaft des **Field**-Objekts bezieht.</span><span class="sxs-lookup"><span data-stu-id="5fcea-p102">With the same syntax forms, you can also refer to the **Value** property of a **Field** object that you create and append to a **Fields** collection. The context of the field reference will determine whether you are referring to the **Field** object or the **Value** property of the **Field** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9815a-115">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9815a-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5fcea-115">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5fcea-115">Example</span></span>
 
-<span data-ttu-id="9815a-p103">Dieses Beispiel zeigt, welche Eigenschaften für ein **Field** -Objekt gültig sind, abhängig davon, wo sich das **Field** -Objekt befindet (z. B. **Fields** -Auflistung eines **TableDef** -Objekts, **Fields** -Auflistung eines **QueryDef** -Objekts usw.). Zum Ausführen dieser Prozedur ist die FieldOutput-Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9815a-p103">This example shows what properties are valid for a **Field** object depending on where the **Field** resides (for example, the **Fields** collection of a **TableDef**, the **Fields** collection of a **QueryDef**, and so forth). The FieldOutput procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="5fcea-p103">Dieses Beispiel zeigt, welche Eigenschaften für ein **Field** -Objekt gültig sind, abhängig davon, wo sich das **Field** -Objekt befindet (z. B. **Fields** -Auflistung eines **TableDef** -Objekts, **Fields** -Auflistung eines **QueryDef** -Objekts usw.). Zum Ausführen dieser Prozedur ist die FieldOutput-Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5fcea-p103">This example shows what properties are valid for a **Field** object depending on where the **Field** resides (for example, the **Fields** collection of a **TableDef**, the **Fields** collection of a **QueryDef**, and so forth). The FieldOutput procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub FieldX() 
@@ -102,7 +103,7 @@ ms.locfileid: "25921238"
 
 <br/>
 
-<span data-ttu-id="9815a-p104">In diesem Beispiel wird die **CreateField**-Methode zum Erstellen dreier **Fields**-Objekte für ein neues **TableDef**-Objekt verwendet. Anschließend werden die Eigenschaften der **Field**-Objekte angezeigt, die nicht automatisch von der **CreateField**-Methode festgelegt werden. (Eigenschaften, deren Werte zum Zeitpunkt der Erstellung des **Field**-Objekts leer sind, werden nicht gezeigt.)</span><span class="sxs-lookup"><span data-stu-id="9815a-p104">This example uses the **CreateField** method to create three **Fields** for a new **TableDef**. It then displays the properties of those **Field** objects that are automatically set by the **CreateField** method. (Properties whose values are empty at the time of **Field** creation are not shown.)</span></span>
+<span data-ttu-id="5fcea-p104">In diesem Beispiel wird die **CreateField**-Methode zum Erstellen dreier **Fields**-Objekte für ein neues **TableDef**-Objekt verwendet. Anschließend werden die Eigenschaften der **Field**-Objekte angezeigt, die nicht automatisch von der **CreateField**-Methode festgelegt werden. (Eigenschaften, deren Werte zum Zeitpunkt der Erstellung des **Field**-Objekts leer sind, werden nicht gezeigt.)</span><span class="sxs-lookup"><span data-stu-id="5fcea-p104">This example uses the **CreateField** method to create three **Fields** for a new **TableDef**. It then displays the properties of those **Field** objects that are automatically set by the **CreateField** method. (Properties whose values are empty at the time of **Field** creation are not shown.)</span></span>
 
 ```vb
     Sub CreateFieldX() 

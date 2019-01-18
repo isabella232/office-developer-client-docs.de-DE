@@ -6,17 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249183(v=office.15)
 ms:contentKeyID: 48544428
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 60664615e9a7a053d137877f923740360516a4d3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: be587e70c1ffa9d5c8b10209aa85b4f583bc6e23
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923175"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717370"
 ---
-# <a name="users-collection-adox-reference"></a><span data-ttu-id="3f72d-102">Referenz für Benutzer-Auflistung (ADOX)</span><span class="sxs-lookup"><span data-stu-id="3f72d-102">Users collection (ADOX) reference</span></span>
+# <a name="users-collection-adox-reference"></a><span data-ttu-id="71907-102">Referenz für Benutzer-Auflistung (ADOX)</span><span class="sxs-lookup"><span data-stu-id="71907-102">Users collection (ADOX) reference</span></span>
 
-<span data-ttu-id="3f72d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3f72d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="71907-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="71907-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="3f72d-104">Users-Auflistung (ADOX)</span><span class="sxs-lookup"><span data-stu-id="3f72d-104">Users collection (ADOX)</span></span>](users-collection-adox.md)
-- [<span data-ttu-id="3f72d-105">Users-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADOX)</span><span class="sxs-lookup"><span data-stu-id="3f72d-105">Users collection properties, methods, and events (ADOX)</span></span>](users-collection-properties-methods-and-events-adox.md)
+- [<span data-ttu-id="71907-104">Users-Auflistung (ADOX)</span><span class="sxs-lookup"><span data-stu-id="71907-104">Users collection (ADOX)</span></span>](users-collection-adox.md)
+- [<span data-ttu-id="71907-105">Users-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADOX)</span><span class="sxs-lookup"><span data-stu-id="71907-105">Users collection properties, methods, and events (ADOX)</span></span>](users-collection-properties-methods-and-events-adox.md)
 

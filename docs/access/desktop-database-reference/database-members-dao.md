@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195257(v=office.15)
 ms:contentKeyID: 48545392
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa627d7c44700041209b9884374e57f7e3fa6c28
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d2254aeff94aeb2b8b078fc4f4cd4d3ef807e597
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937099"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713051"
 ---
-# <a name="database-members-dao"></a><span data-ttu-id="0eb62-102">Datenbank-Member (DAO)</span><span class="sxs-lookup"><span data-stu-id="0eb62-102">Database members (DAO)</span></span>
+# <a name="database-members-dao"></a><span data-ttu-id="6ba5a-102">Datenbank-Member (DAO)</span><span class="sxs-lookup"><span data-stu-id="6ba5a-102">Database members (DAO)</span></span>
 
 
-<span data-ttu-id="0eb62-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0eb62-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6ba5a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6ba5a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0eb62-104">Ein Database -Objekt stellt eine geöffnete Datenbank dar.</span><span class="sxs-lookup"><span data-stu-id="0eb62-104">A Database object represents an open database.</span></span>
+<span data-ttu-id="6ba5a-104">Ein Database -Objekt stellt eine geöffnete Datenbank dar.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-104">A Database object represents an open database.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="0eb62-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="0eb62-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="6ba5a-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="6ba5a-105">Methods</span></span>
 
 <table>
 <colgroup>
@@ -29,60 +30,60 @@ ms.locfileid: "25937099"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="0eb62-106">Name</span><span class="sxs-lookup"><span data-stu-id="0eb62-106">Name</span></span></p></th>
-<th><p><span data-ttu-id="0eb62-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0eb62-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="6ba5a-106">Name</span><span class="sxs-lookup"><span data-stu-id="6ba5a-106">Name</span></span></p></th>
+<th><p><span data-ttu-id="6ba5a-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6ba5a-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-108"><strong><a href="database-close-method-dao.md">Schließen Sie</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-108"><strong><a href="database-close-method-dao.md">Close</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-109">Schließt ein geöffnetes <strong>Database</strong>-Objekt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-109">Closes an open <strong>Database</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-108"><strong><a href="database-close-method-dao.md">Schließen Sie</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-108"><strong><a href="database-close-method-dao.md">Close</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-109">Schließt ein geöffnetes <strong>Database</strong>-Objekt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-109">Closes an open <strong>Database</strong>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-110"><strong><a href="database-createproperty-method-dao.md">CreateProperty</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-110"><strong><a href="database-createproperty-method-dao.md">CreateProperty</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p101">Erstellt ein neues, benutzerdefiniertes <strong><a href="property-object-dao.md">Property</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-p101">Creates a new user-defined <strong><a href="property-object-dao.md">Property</a></strong> object (Microsoft Access workspaces only). .</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-110"><strong><a href="database-createproperty-method-dao.md">CreateProperty</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-110"><strong><a href="database-createproperty-method-dao.md">CreateProperty</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p101">Erstellt ein neues, benutzerdefiniertes <strong><a href="property-object-dao.md">Property</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p101">Creates a new user-defined <strong><a href="property-object-dao.md">Property</a></strong> object (Microsoft Access workspaces only). .</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-113"><strong><a href="database-createquerydef-method-dao.md">CreateQueryDef</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-113"><strong><a href="database-createquerydef-method-dao.md">CreateQueryDef</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-114">Erstellt ein neues <strong><a href="querydef-object-dao.md">QueryDef</a></strong> -Objekt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-114">Creates a new <strong><a href="querydef-object-dao.md">QueryDef</a></strong> object.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-113"><strong><a href="database-createquerydef-method-dao.md">CreateQueryDef</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-113"><strong><a href="database-createquerydef-method-dao.md">CreateQueryDef</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-114">Erstellt ein neues <strong><a href="querydef-object-dao.md">QueryDef</a></strong> -Objekt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-114">Creates a new <strong><a href="querydef-object-dao.md">QueryDef</a></strong> object.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-115"><strong><a href="database-createrelation-method-dao.md">CreateRelation</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-115"><strong><a href="database-createrelation-method-dao.md">CreateRelation</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p102">Erstellt ein neues <strong><a href="relation-object-dao.md">Relation</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-p102">Creates a new <strong><a href="relation-object-dao.md">Relation</a></strong> object (Microsoft Access workspaces only). .</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-115"><strong><a href="database-createrelation-method-dao.md">CreateRelation</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-115"><strong><a href="database-createrelation-method-dao.md">CreateRelation</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p102">Erstellt ein neues <strong><a href="relation-object-dao.md">Relation</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p102">Creates a new <strong><a href="relation-object-dao.md">Relation</a></strong> object (Microsoft Access workspaces only). .</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-118"><strong><a href="database-createtabledef-method-dao.md">CreateTableDef</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-118"><strong><a href="database-createtabledef-method-dao.md">CreateTableDef</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p103">Erstellt ein neues <strong><a href="tabledef-object-dao.md">TableDef</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-p103">Creates a new <strong><a href="tabledef-object-dao.md">TableDef</a></strong> object (Microsoft Access workspaces only). .</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-118"><strong><a href="database-createtabledef-method-dao.md">CreateTableDef</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-118"><strong><a href="database-createtabledef-method-dao.md">CreateTableDef</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p103">Erstellt ein neues <strong><a href="tabledef-object-dao.md">TableDef</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p103">Creates a new <strong><a href="tabledef-object-dao.md">TableDef</a></strong> object (Microsoft Access workspaces only). .</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-121"><strong><a href="database-execute-method-dao.md">Ausführen</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-121"><strong><a href="database-execute-method-dao.md">Execute</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-122">Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt aus.</span><span class="sxs-lookup"><span data-stu-id="0eb62-122">Runs an action query or executes an SQL statement on the specified object.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-121"><strong><a href="database-execute-method-dao.md">Ausführen</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-121"><strong><a href="database-execute-method-dao.md">Execute</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-122">Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt aus.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-122">Runs an action query or executes an SQL statement on the specified object.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-123"><strong><a href="database-makereplica-method-dao.md">MakeReplica</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-123"><strong><a href="database-makereplica-method-dao.md">MakeReplica</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-124">Macht aus einem Datenbankreplikat ein neues Replikat (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-124">Makes a new replica from another database replica (Microsoft Access workspaces only).</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-123"><strong><a href="database-makereplica-method-dao.md">MakeReplica</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-123"><strong><a href="database-makereplica-method-dao.md">MakeReplica</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-124">Macht aus einem Datenbankreplikat ein neues Replikat (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-124">Makes a new replica from another database replica (Microsoft Access workspaces only).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-125"><strong><a href="database-newpassword-method-dao.md">NewPassword</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-125"><strong><a href="database-newpassword-method-dao.md">NewPassword</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-126">Ändert das Kennwort einer vorhandenen Microsoft Access-Datenbank (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-126">Changes the password of an existing Microsoft Access database engine database (Microsoft Access workspaces only).</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-125"><strong><a href="database-newpassword-method-dao.md">NewPassword</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-125"><strong><a href="database-newpassword-method-dao.md">NewPassword</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-126">Ändert das Kennwort einer vorhandenen Microsoft Access-Datenbank (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-126">Changes the password of an existing Microsoft Access database engine database (Microsoft Access workspaces only).</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-127"><strong><a href="database-openrecordset-method-dao.md">OpenRecordset</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-127"><strong><a href="database-openrecordset-method-dao.md">OpenRecordset</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-128">Erstellt ein neues <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt und fügt es an die <strong>Recordsets</strong>-Auflistung an.</span><span class="sxs-lookup"><span data-stu-id="0eb62-128">Creates a new <strong><a href="recordset-object-dao.md">Recordset</a></strong> object and appends it to the <strong>Recordsets</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-127"><strong><a href="database-openrecordset-method-dao.md">OpenRecordset</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-127"><strong><a href="database-openrecordset-method-dao.md">OpenRecordset</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-128">Erstellt ein neues <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt und fügt es an die <strong>Recordsets</strong>-Auflistung an.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-128">Creates a new <strong><a href="recordset-object-dao.md">Recordset</a></strong> object and appends it to the <strong>Recordsets</strong> collection.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-129"><strong><a href="database-populatepartial-method-dao.md">PopulatePartial</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-129"><strong><a href="database-populatepartial-method-dao.md">PopulatePartial</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p104">Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Repliktat, löscht alle Datensätze im Teilreplikat, und füllt dann das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf (gilt nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="0eb62-p104">Synchronizes any changes in a partial replica with the full replica, clears all records in the partial replica, and then repopulates the partial replica based on the current replica filters. (Microsoft Access database engine databases only.).</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-129"><strong><a href="database-populatepartial-method-dao.md">PopulatePartial</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-129"><strong><a href="database-populatepartial-method-dao.md">PopulatePartial</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p104">Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Repliktat, löscht alle Datensätze im Teilreplikat, und füllt dann das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf (gilt nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p104">Synchronizes any changes in a partial replica with the full replica, clears all records in the partial replica, and then repopulates the partial replica based on the current replica filters. (Microsoft Access database engine databases only.).</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-132"><strong><a href="database-synchronize-method-dao.md">Synchronisieren</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-132"><strong><a href="database-synchronize-method-dao.md">Synchronize</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p105">Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-p105">Synchronizes two replicas. (Microsoft Access workspaces only).</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-132"><strong><a href="database-synchronize-method-dao.md">Synchronisieren</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-132"><strong><a href="database-synchronize-method-dao.md">Synchronize</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p105">Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p105">Synchronizes two replicas. (Microsoft Access workspaces only).</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="properties"></a><span data-ttu-id="0eb62-135">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="0eb62-135">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6ba5a-135">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6ba5a-135">Properties</span></span>
 
 <table>
 <colgroup>
@@ -91,79 +92,79 @@ ms.locfileid: "25937099"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="0eb62-136">Name</span><span class="sxs-lookup"><span data-stu-id="0eb62-136">Name</span></span></p></th>
-<th><p><span data-ttu-id="0eb62-137">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0eb62-137">Description</span></span></p></th>
+<th><p><span data-ttu-id="6ba5a-136">Name</span><span class="sxs-lookup"><span data-stu-id="6ba5a-136">Name</span></span></p></th>
+<th><p><span data-ttu-id="6ba5a-137">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6ba5a-137">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-138"><strong><a href="database-collatingorder-property-dao.md">CollatingOrder</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-138"><strong><a href="database-collatingorder-property-dao.md">CollatingOrder</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p106">Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den Zeichenfolgenvergleich oder die Sortierung angibt (gilt nur für Microsoft Access-Arbeitsbereiche). Schreibgeschützter <strong>Long</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p106">Returns a value that specifies the sequence of the sort order in text for string comparison or sorting (Microsoft Access workspaces only). Read-only <strong>Long</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-138"><strong><a href="database-collatingorder-property-dao.md">CollatingOrder</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-138"><strong><a href="database-collatingorder-property-dao.md">CollatingOrder</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p106">Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den Zeichenfolgenvergleich oder die Sortierung angibt (gilt nur für Microsoft Access-Arbeitsbereiche). Schreibgeschützter <strong>Long</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p106">Returns a value that specifies the sequence of the sort order in text for string comparison or sorting (Microsoft Access workspaces only). Read-only <strong>Long</strong>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-141"><strong><a href="database-connect-property-dao.md">Connect</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-141"><strong><a href="database-connect-property-dao.md">Connect</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p107">Legt einen Wert fest, der Informationen zur Quelle einer geöffneten Datenbank bereitstellt, oder gibt den Wert zurück. <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p107">Sets or returns a value that provides information about the source an open database. Read/write <strong>String</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-141"><strong><a href="database-connect-property-dao.md">Connect</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-141"><strong><a href="database-connect-property-dao.md">Connect</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p107">Legt einen Wert fest, der Informationen zur Quelle einer geöffneten Datenbank bereitstellt, oder gibt den Wert zurück. <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p107">Sets or returns a value that provides information about the source an open database. Read/write <strong>String</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-144"><strong><a href="database-connection-property-dao.md">Connection</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-144"><strong><a href="database-connection-property-dao.md">Connection</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-145"><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-145"><strong>NOTE</strong>: ODBCDirect workspaces are not supported in Microsoft Access 2013.</span></span> <span data-ttu-id="0eb62-146">Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="0eb62-146">Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span></p>
-<p><span data-ttu-id="0eb62-147">Gibt das <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt zurück, das der Datenbank entspricht (gilt nur für ODBCDirect-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-147">Returns the <strong><a href="connection-object-dao.md">Connection</a></strong> object that corresponds to the database (ODBCDirect workspaces only).</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-144"><strong><a href="database-connection-property-dao.md">Verbindung</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-144"><strong><a href="database-connection-property-dao.md">Connection</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-145"><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-145"><strong>NOTE</strong>: ODBCDirect workspaces are not supported in Microsoft Access 2013.</span></span> <span data-ttu-id="6ba5a-146">Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-146">Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span></p>
+<p><span data-ttu-id="6ba5a-147">Gibt das <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt zurück, das der Datenbank entspricht (gilt nur für ODBCDirect-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-147">Returns the <strong><a href="connection-object-dao.md">Connection</a></strong> object that corresponds to the database (ODBCDirect workspaces only).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-148"><strong><a href="database-containers-property-dao.md">Containers</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-148"><strong><a href="database-containers-property-dao.md">Containers</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p109">Gibt eine <strong>Containers</strong>-Auflistung zurück, die alle <strong>Container</strong>-Objekte in der angegebenen Datenbank darstellt. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p109">Returns a <strong>Containers</strong> collection that represents all of the <strong>Container</strong> objects in the specifed database. Read-only.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-148"><strong><a href="database-containers-property-dao.md">Container</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-148"><strong><a href="database-containers-property-dao.md">Containers</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p109">Gibt eine <strong>Containers</strong>-Auflistung zurück, die alle <strong>Container</strong>-Objekte in der angegebenen Datenbank darstellt. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p109">Returns a <strong>Containers</strong> collection that represents all of the <strong>Container</strong> objects in the specifed database. Read-only.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-151"><strong><a href="database-designmasterid-property-dao.md">DesignMasterID</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-151"><strong><a href="database-designmasterid-property-dao.md">DesignMasterID</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-152">Mit dieser Eigenschaft wird ein 16-Byte-Wert festgelegt oder zurückgegeben, der den Designmaster in einer Replikatgruppe eindeutig identifiziert (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-152">Sets or returns a 16-byte value that uniquely identifies the Design Master in a replica set (Microsoft Access workspaces only).</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-151"><strong><a href="database-designmasterid-property-dao.md">DesignMasterID</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-151"><strong><a href="database-designmasterid-property-dao.md">DesignMasterID</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-152">Mit dieser Eigenschaft wird ein 16-Byte-Wert festgelegt oder zurückgegeben, der den Designmaster in einer Replikatgruppe eindeutig identifiziert (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-152">Sets or returns a 16-byte value that uniquely identifies the Design Master in a replica set (Microsoft Access workspaces only).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-153"><strong><a href="database-name-property-dao.md">Name</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-153"><strong><a href="database-name-property-dao.md">Name</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p110">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter <strong>String</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p110">Returns the name of the specified object. Read-only <strong>String</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-153"><strong><a href="database-name-property-dao.md">Name</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-153"><strong><a href="database-name-property-dao.md">Name</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p110">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter <strong>String</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p110">Returns the name of the specified object. Read-only <strong>String</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-156"><strong><a href="database-properties-property-dao.md">Eigenschaften</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-156"><strong><a href="database-properties-property-dao.md">Properties</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p111">Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p111">Returns the <strong><a href="properties-collection-dao.md">Properties</a></strong> collection of the specified object. Read-only.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-156"><strong><a href="database-properties-property-dao.md">Eigenschaften</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-156"><strong><a href="database-properties-property-dao.md">Properties</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p111">Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p111">Returns the <strong><a href="properties-collection-dao.md">Properties</a></strong> collection of the specified object. Read-only.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-159"><strong><a href="database-querydefs-property-dao.md">QueryDefs</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-159"><strong><a href="database-querydefs-property-dao.md">QueryDefs</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p112">Gibt eine <strong>QueryDefs</strong>-Auflistung zurück, die alle <strong>QueryDef</strong>-Objekte der angegebenen Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p112">Returns a <strong>QueryDefs</strong> collection that contains all of the <strong>QueryDef</strong> objects of the specified database. Read-only.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-159"><strong><a href="database-querydefs-property-dao.md">QueryDefs</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-159"><strong><a href="database-querydefs-property-dao.md">QueryDefs</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p112">Gibt eine <strong>QueryDefs</strong>-Auflistung zurück, die alle <strong>QueryDef</strong>-Objekte der angegebenen Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p112">Returns a <strong>QueryDefs</strong> collection that contains all of the <strong>QueryDef</strong> objects of the specified database. Read-only.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-162"><strong><a href="database-querytimeout-property-dao.md">QueryTimeout</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-162"><strong><a href="database-querytimeout-property-dao.md">QueryTimeout</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-163">Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, wie viele Sekunden beim Ausführen einer Abfrage zu einer ODBC-Datenquelle gewartet wird, bevor ein Timeoutfehler auftritt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-163">Sets or returns a value that specifies the number of seconds to wait before a timeout error occurs when a query is executed on an ODBC data source.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-162"><strong><a href="database-querytimeout-property-dao.md">QueryTimeout</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-162"><strong><a href="database-querytimeout-property-dao.md">QueryTimeout</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-163">Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, wie viele Sekunden beim Ausführen einer Abfrage zu einer ODBC-Datenquelle gewartet wird, bevor ein Timeoutfehler auftritt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-163">Sets or returns a value that specifies the number of seconds to wait before a timeout error occurs when a query is executed on an ODBC data source.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-164"><strong><a href="database-recordsaffected-property-dao.md">RecordsAffected</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-164"><strong><a href="database-recordsaffected-property-dao.md">RecordsAffected</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-165">Gibt die Anzahl der Datensätze zurück, die von der zuletzt aufgerufenen <strong><a href="connection-execute-method-dao.md">Execute</a></strong> -Methode betroffen waren.</span><span class="sxs-lookup"><span data-stu-id="0eb62-165">Returns the number of records affected by the most recently invoked <strong><a href="connection-execute-method-dao.md">Execute</a></strong> method.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-164"><strong><a href="database-recordsaffected-property-dao.md">RecordsAffected</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-164"><strong><a href="database-recordsaffected-property-dao.md">RecordsAffected</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-165">Gibt die Anzahl der Datensätze zurück, die von der zuletzt aufgerufenen <strong><a href="connection-execute-method-dao.md">Execute</a></strong> -Methode betroffen waren.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-165">Returns the number of records affected by the most recently invoked <strong><a href="connection-execute-method-dao.md">Execute</a></strong> method.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-166"><strong><a href="database-recordsets-property-dao.md">Recordsets</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-166"><strong><a href="database-recordsets-property-dao.md">Recordsets</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p113">Gibt eine <strong>Recordsets</strong>-Auflistung zurück, die alle geöffneten Recordsets für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p113">Returns a <strong>Recordsets</strong> collection that contains all of the open recordsets in the for the specified database. Read-only.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-166"><strong><a href="database-recordsets-property-dao.md">Recordsets</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-166"><strong><a href="database-recordsets-property-dao.md">Recordsets</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p113">Gibt eine <strong>Recordsets</strong>-Auflistung zurück, die alle geöffneten Recordsets für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p113">Returns a <strong>Recordsets</strong> collection that contains all of the open recordsets in the for the specified database. Read-only.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-169"><strong><a href="database-relations-property-dao.md">Relations</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-169"><strong><a href="database-relations-property-dao.md">Relations</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p114">Gibt eine <strong>Relations</strong>-Auflistung zurück, die alle gespeicherten <strong>Relation</strong>-Objekte für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p114">Returns a <strong>Relations</strong> collection that contains all of the stored <strong>Relation</strong> objects for the specified database. Read-only.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-169"><strong><a href="database-relations-property-dao.md">Relations</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-169"><strong><a href="database-relations-property-dao.md">Relations</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p114">Gibt eine <strong>Relations</strong>-Auflistung zurück, die alle gespeicherten <strong>Relation</strong>-Objekte für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p114">Returns a <strong>Relations</strong> collection that contains all of the stored <strong>Relation</strong> objects for the specified database. Read-only.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-172"><strong><a href="database-replicaid-property-dao.md">ReplicaID</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-172"><strong><a href="database-replicaid-property-dao.md">ReplicaID</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-173">Gibt einen 16-Byte-Wert zurück, der ein Replikat einer Datenbank eindeutig kennzeichnet (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0eb62-173">Returns a 16-byte value that uniquely identifies a database replica (Microsoft Access workspaces only).</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-172"><strong><a href="database-replicaid-property-dao.md">ReplicaID</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-172"><strong><a href="database-replicaid-property-dao.md">ReplicaID</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-173">Gibt einen 16-Byte-Wert zurück, der ein Replikat einer Datenbank eindeutig kennzeichnet (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6ba5a-173">Returns a 16-byte value that uniquely identifies a database replica (Microsoft Access workspaces only).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-174"><strong><a href="database-tabledefs-property-dao.md">TableDefs</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-174"><strong><a href="database-tabledefs-property-dao.md">TableDefs</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p115">Gibt eine <strong>TableDefs</strong>-Auflistung zurück, die alle gespeicherten <strong>TableDef</strong>-Objekte für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p115">Returns a <strong>TableDefs</strong> collection that contains all of the <strong>TableDef</strong> objects stored in the specified database. Read-only.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-174"><strong><a href="database-tabledefs-property-dao.md">TableDefs</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-174"><strong><a href="database-tabledefs-property-dao.md">TableDefs</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p115">Gibt eine <strong>TableDefs</strong>-Auflistung zurück, die alle gespeicherten <strong>TableDef</strong>-Objekte für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p115">Returns a <strong>TableDefs</strong> collection that contains all of the <strong>TableDef</strong> objects stored in the specified database. Read-only.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-177"><strong><a href="database-transactions-property-dao.md">Transaktionen</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-177"><strong><a href="database-transactions-property-dao.md">Transactions</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p116">Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter <strong>Boolean</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p116">Returns a value that indicates whether an object supports transactions. Read-only <strong>Boolean</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-177"><strong><a href="database-transactions-property-dao.md">Transaktionen</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-177"><strong><a href="database-transactions-property-dao.md">Transactions</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p116">Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter <strong>Boolean</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p116">Returns a value that indicates whether an object supports transactions. Read-only <strong>Boolean</strong>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0eb62-180"><strong><a href="database-updatable-property-dao.md">Updatable</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-180"><strong><a href="database-updatable-property-dao.md">Updatable</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p117">Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. Schreibgeschützter <strong>Boolean</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p117">Returns a value that indicates whether you can change a DAO object. Read-only <strong>Boolean</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-180"><strong><a href="database-updatable-property-dao.md">Updatable</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-180"><strong><a href="database-updatable-property-dao.md">Updatable</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p117">Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. Schreibgeschützter <strong>Boolean</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p117">Returns a value that indicates whether you can change a DAO object. Read-only <strong>Boolean</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0eb62-183"><strong><a href="database-version-property-dao.md">Version</a></strong></span><span class="sxs-lookup"><span data-stu-id="0eb62-183"><strong><a href="database-version-property-dao.md">Version</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="0eb62-p118">In einem Microsoft Access-Arbeitsbereich gibt diese Eigenschaft die Version der Microsoft Jet- oder Microsoft Access-Datenbank-Engine zurück, mit der die Datenbank erstellt wurde. Schreibgeschützter <strong>String</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="0eb62-p118">In a Microsoft Access workspace, returns the vesion of the Microsoft Jet or Microsoft Access database engine that created the database. Read-only <strong>String</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-183"><strong><a href="database-version-property-dao.md">Version</a></strong></span><span class="sxs-lookup"><span data-stu-id="6ba5a-183"><strong><a href="database-version-property-dao.md">Version</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="6ba5a-p118">In einem Microsoft Access-Arbeitsbereich gibt diese Eigenschaft die Version der Microsoft Jet- oder Microsoft Access-Datenbank-Engine zurück, mit der die Datenbank erstellt wurde. Schreibgeschützter <strong>String</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="6ba5a-p118">In a Microsoft Access workspace, returns the vesion of the Microsoft Jet or Microsoft Access database engine that created the database. Read-only <strong>String</strong>.</span></span></p></td>
 </tr>
 </tbody>
 </table>

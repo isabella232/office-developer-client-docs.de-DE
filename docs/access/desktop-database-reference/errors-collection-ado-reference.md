@@ -6,17 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248823(v=office.15)
 ms:contentKeyID: 48543094
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 31e8cbf3bd8d5cbe81f3042df4b1c9f7e6ae5498
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 060c537d117418b5a1253a4b6d4704516495e062
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946363"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715760"
 ---
-# <a name="errors-collection-ado-reference"></a><span data-ttu-id="a3732-102">Errors-Auflistung (ADO)-Referenz</span><span class="sxs-lookup"><span data-stu-id="a3732-102">Errors collection (ADO) reference</span></span>
+# <a name="errors-collection-ado-reference"></a><span data-ttu-id="45efa-102">Errors-Auflistung (ADO)-Referenz</span><span class="sxs-lookup"><span data-stu-id="45efa-102">Errors collection (ADO) reference</span></span>
 
-<span data-ttu-id="a3732-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a3732-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="45efa-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="45efa-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="a3732-104">Errors-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="a3732-104">Errors collection (ADO)</span></span>](errors-collection-ado.md)
-- [<span data-ttu-id="a3732-105">Errors-Auflistung: Eigenschaften, Methoden und Ereignisse</span><span class="sxs-lookup"><span data-stu-id="a3732-105">Errors collection properties, methods, and events</span></span>](errors-collection-properties-methods-and-events.md)
+- [<span data-ttu-id="45efa-104">Errors-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="45efa-104">Errors collection (ADO)</span></span>](errors-collection-ado.md)
+- [<span data-ttu-id="45efa-105">Errors-Auflistung: Eigenschaften, Methoden und Ereignisse</span><span class="sxs-lookup"><span data-stu-id="45efa-105">Errors collection properties, methods, and events</span></span>](errors-collection-properties-methods-and-events.md)
 

@@ -6,26 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193232(v=office.15)
 ms:contentKeyID: 48544609
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 97b39c44e529ae6c360ddf69ac9b45b0c340d500
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 528809495ebefd15a8895b15a9d51f84e6892980
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997035"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722746"
 ---
-# <a name="propertiesappend-method-dao"></a><span data-ttu-id="d295b-102">Properties.Append-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="d295b-102">Properties.Append method (DAO)</span></span>
+# <a name="propertiesappend-method-dao"></a><span data-ttu-id="37a2b-102">Properties.Append-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="37a2b-102">Properties.Append method (DAO)</span></span>
 
-<span data-ttu-id="d295b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d295b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="37a2b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="37a2b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="d295b-104">Fügt der **Properties**-Auflistung ein neues **Property**-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="d295b-104">Adds a new **Property** to the **Properties** collection.</span></span>
+<span data-ttu-id="37a2b-104">Fügt der **Properties**-Auflistung ein neues **Property**-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="37a2b-104">Adds a new **Property** to the **Properties** collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d295b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d295b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="37a2b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="37a2b-105">Syntax</span></span>
 
-<span data-ttu-id="d295b-106">*Ausdruck* . Fügen Sie (***Objekt***)</span><span class="sxs-lookup"><span data-stu-id="d295b-106">*expression* .Append(***Object***)</span></span>
+<span data-ttu-id="37a2b-106">*Ausdruck* . Fügen Sie (***Objekt***)</span><span class="sxs-lookup"><span data-stu-id="37a2b-106">*expression* .Append(***Object***)</span></span>
 
-<span data-ttu-id="d295b-107">*Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="d295b-107">*expression* A variable that represents a **Properties** object.</span></span>
+<span data-ttu-id="37a2b-107">*Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="37a2b-107">*expression* A variable that represents a **Properties** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="d295b-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="d295b-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="37a2b-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="37a2b-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -36,28 +37,28 @@ ms.locfileid: "25997035"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="d295b-109">Name</span><span class="sxs-lookup"><span data-stu-id="d295b-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="d295b-110">Erforderlich oder optional</span><span class="sxs-lookup"><span data-stu-id="d295b-110">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="d295b-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="d295b-111">Data type</span></span></p></th>
-<th><p><span data-ttu-id="d295b-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d295b-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="37a2b-109">Name</span><span class="sxs-lookup"><span data-stu-id="37a2b-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="37a2b-110">Erforderlich oder optional</span><span class="sxs-lookup"><span data-stu-id="37a2b-110">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="37a2b-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="37a2b-111">Data type</span></span></p></th>
+<th><p><span data-ttu-id="37a2b-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="37a2b-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="d295b-113"><em>Object</em></span><span class="sxs-lookup"><span data-stu-id="d295b-113"><em>Object</em></span></span></p></td>
-<td><p><span data-ttu-id="d295b-114">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="d295b-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="d295b-115"><strong>Objekt</strong></span><span class="sxs-lookup"><span data-stu-id="d295b-115"><strong>Object</strong></span></span></p></td>
-<td><p><span data-ttu-id="d295b-116">Eine Objektvariable, die das Feld darstellt, das an die Auflistung angefügt wird.</span><span class="sxs-lookup"><span data-stu-id="d295b-116">An object variable that represents the field being appended to the collection.</span></span></p></td>
+<td><p><span data-ttu-id="37a2b-113"><em>Object</em></span><span class="sxs-lookup"><span data-stu-id="37a2b-113"><em>Object</em></span></span></p></td>
+<td><p><span data-ttu-id="37a2b-114">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="37a2b-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="37a2b-115"><strong>Objekt</strong></span><span class="sxs-lookup"><span data-stu-id="37a2b-115"><strong>Object</strong></span></span></p></td>
+<td><p><span data-ttu-id="37a2b-116">Eine Objektvariable, die das Feld darstellt, das an die Auflistung angefügt wird.</span><span class="sxs-lookup"><span data-stu-id="37a2b-116">An object variable that represents the field being appended to the collection.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="d295b-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d295b-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="37a2b-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="37a2b-117">Remarks</span></span>
 
-<span data-ttu-id="d295b-118">Das angefügte Objekt wird zu einem beständigen Objekt und auf einem Datenträger gespeichert, bis Sie es mithilfe der **Delete**-Methode löschen.</span><span class="sxs-lookup"><span data-stu-id="d295b-118">The appended object becomes a persistent object, stored on disk, until you delete it by using the **Delete** method.</span></span>
+<span data-ttu-id="37a2b-118">Das angefügte Objekt wird zu einem beständigen Objekt und auf einem Datenträger gespeichert, bis Sie es mithilfe der **Delete**-Methode löschen.</span><span class="sxs-lookup"><span data-stu-id="37a2b-118">The appended object becomes a persistent object, stored on disk, until you delete it by using the **Delete** method.</span></span>
 
-<span data-ttu-id="d295b-119">Das Hinzufügen eines neuen Objekts geschieht ohne Verzögerung. Trotzdem sollten Sie die **Refresh**-Methode auf alle weiteren Auflistungen anwenden, die von Änderungen an der Datenbankstruktur betroffen sein könnten.</span><span class="sxs-lookup"><span data-stu-id="d295b-119">The addition of a new object occurs immediately, but you should use the **Refresh** method on any other collections that may be affected by changes to the database structure.</span></span>
+<span data-ttu-id="37a2b-119">Das Hinzufügen eines neuen Objekts geschieht ohne Verzögerung. Trotzdem sollten Sie die **Refresh**-Methode auf alle weiteren Auflistungen anwenden, die von Änderungen an der Datenbankstruktur betroffen sein könnten.</span><span class="sxs-lookup"><span data-stu-id="37a2b-119">The addition of a new object occurs immediately, but you should use the **Refresh** method on any other collections that may be affected by changes to the database structure.</span></span>
 
-<span data-ttu-id="d295b-120">Wenn das Objekt an die, das Sie anfügen möchten (beispielsweise wenn Sie, alle **Field** -Objekte **Fields** -Auflistung eines **Index** -Objekts angefügt haben, bevor es an eine **Indexes** -Auflistung angehängt wird) abgeschlossen ist oder wenn die Eigenschaften in einem oder mehreren festlegen untergeordnete Objekte sind falsch ist, verwenden die **Append** -Methode einen Fehler verursacht.</span><span class="sxs-lookup"><span data-stu-id="d295b-120">If the object you're appending isn't complete (such as when you haven't appended any **Field** objects to a **Fields** collection of an **Index** object before it's appended to an **Indexes** collection) or if the properties set in one or more subordinate objects are incorrect, using the **Append** method causes an error.</span></span> <span data-ttu-id="d295b-121">Angenommen, wenn Sie keinen Feldtyp angegeben und versuchen Sie es dann das **Field** -Objekt an die **Fields** -Auflistung in ein **TableDef** -Objekt angefügt werden soll, löst mit der **Append** -Methode einen Laufzeitfehler.</span><span class="sxs-lookup"><span data-stu-id="d295b-121">For example, if you haven’t specified a field type and then try to append the **Field** object to the **Fields** collection in a **TableDef** object, using the **Append** method triggers a run-time error.</span></span>
+<span data-ttu-id="37a2b-120">Wenn das Objekt an die, das Sie anfügen möchten (beispielsweise wenn Sie, alle **Field** -Objekte **Fields** -Auflistung eines **Index** -Objekts angefügt haben, bevor es an eine **Indexes** -Auflistung angehängt wird) abgeschlossen ist oder wenn die Eigenschaften in einem oder mehreren festlegen untergeordnete Objekte sind falsch ist, verwenden die **Append** -Methode einen Fehler verursacht.</span><span class="sxs-lookup"><span data-stu-id="37a2b-120">If the object you're appending isn't complete (such as when you haven't appended any **Field** objects to a **Fields** collection of an **Index** object before it's appended to an **Indexes** collection) or if the properties set in one or more subordinate objects are incorrect, using the **Append** method causes an error.</span></span> <span data-ttu-id="37a2b-121">Angenommen, wenn Sie keinen Feldtyp angegeben und versuchen Sie es dann das **Field** -Objekt an die **Fields** -Auflistung in ein **TableDef** -Objekt angefügt werden soll, löst mit der **Append** -Methode einen Laufzeitfehler.</span><span class="sxs-lookup"><span data-stu-id="37a2b-121">For example, if you haven’t specified a field type and then try to append the **Field** object to the **Fields** collection in a **TableDef** object, using the **Append** method triggers a run-time error.</span></span>
 

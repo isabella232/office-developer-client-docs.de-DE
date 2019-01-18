@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248846(v=office.15)
 ms:contentKeyID: 48543177
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 97ddfc1561eaf3e131aa6b12d04fd37c96b54e3d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 39b5c89c2e7b72ee4b4511727b83728c46b2ebe7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879452"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718945"
 ---
-# <a name="append-and-createparameter-methods-example-vb"></a><span data-ttu-id="06fb1-102">Append- und CreateParameter-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="06fb1-102">Append and CreateParameter methods example (VB)</span></span>
+# <a name="append-and-createparameter-methods-example-vb"></a><span data-ttu-id="45e4d-102">Append- und CreateParameter-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="45e4d-102">Append and CreateParameter methods example (VB)</span></span>
 
 
-<span data-ttu-id="06fb1-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="06fb1-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="45e4d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="45e4d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="06fb1-104">In diesem Beispiel werden die Methoden [Append](append-method-ado.md) und [CreateParameter](createparameter-method-ado.md) zum Ausführen einer gespeicherten Prozedur mit einem Eingabeparameter verwendet.</span><span class="sxs-lookup"><span data-stu-id="06fb1-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span>
+<span data-ttu-id="45e4d-104">In diesem Beispiel werden die Methoden [Append](append-method-ado.md) und [CreateParameter](createparameter-method-ado.md) zum Ausführen einer gespeicherten Prozedur mit einem Eingabeparameter verwendet.</span><span class="sxs-lookup"><span data-stu-id="45e4d-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span>
 
 ```vb 
  

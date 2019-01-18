@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15)
 ms:contentKeyID: 48547442
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1abdb333551e80a8c2b0e8a440aee9c35ca69120
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 4d324ae976693e635222d2b8d4b4d4571c182fa6
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879256"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714689"
 ---
-# <a name="attributes-property-example-vb"></a><span data-ttu-id="fe36f-102">Attributes-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="fe36f-102">Attributes property example (VB)</span></span>
+# <a name="attributes-property-example-vb"></a><span data-ttu-id="19a39-102">Attributes-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="19a39-102">Attributes property example (VB)</span></span>
 
 
-<span data-ttu-id="fe36f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="fe36f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="19a39-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="19a39-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fe36f-p101">In diesem Beispiel wird die Verwendung der [Attributes](attributes-property-adox.md)-Eigenschaft eines [Column](column-object-adox.md)-Objekts veranschaulicht. Durch Festlegen der Eigenschaft auf **adColNullable** kann der Benutzer als Wert eines [Recordset](recordset-object-ado.md)-[Felds](field-object-ado.md) eine leere Zeichenfolge festlegen. Hierdurch können Benutzer zwischen einem Datensatz unterscheiden, für den keine Daten bekannt sind und einem Datensatz, für den die Daten nicht angewendet werden können.</span><span class="sxs-lookup"><span data-stu-id="fe36f-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
+<span data-ttu-id="19a39-p101">In diesem Beispiel wird die Verwendung der [Attributes](attributes-property-adox.md)-Eigenschaft eines [Column](column-object-adox.md)-Objekts veranschaulicht. Durch Festlegen der Eigenschaft auf **adColNullable** kann der Benutzer als Wert eines [Recordset](recordset-object-ado.md)-[Felds](field-object-ado.md) eine leere Zeichenfolge festlegen. Hierdurch können Benutzer zwischen einem Datensatz unterscheiden, für den keine Daten bekannt sind und einem Datensatz, für den die Daten nicht angewendet werden können.</span><span class="sxs-lookup"><span data-stu-id="19a39-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
 
 ```vb 
  

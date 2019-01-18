@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250236(v=office.15)
 ms:contentKeyID: 48548671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f8e1236e1092b6b6c1d5e6afc0c64917d66ce813
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7f9a5b0e31381d36d523c23290076e0d9b07a01c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880124"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718588"
 ---
-# <a name="comparebookmarks-method-example-vj"></a><span data-ttu-id="b203c-102">CompareBookmarks-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="b203c-102">CompareBookmarks method example (VJ++)</span></span>
+# <a name="comparebookmarks-method-example-vj"></a><span data-ttu-id="73a71-102">CompareBookmarks-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="73a71-102">CompareBookmarks method example (VJ++)</span></span>
 
 
-<span data-ttu-id="b203c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b203c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="73a71-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="73a71-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b203c-p101">In diesem Beispiel wird die [CompareBookmarks](comparebookmarks-method-ado.md)-Methode dargestellt. Der relative Wert von Textmarken wird in der Regel nur bei bestimmten Textmarken verwendet, die einen Sonderfall darstellen.</span><span class="sxs-lookup"><span data-stu-id="b203c-p101">This example demonstrates the [CompareBookmarks](comparebookmarks-method-ado.md) method. The relative value of bookmarks is seldom needed unless a particular bookmark is somehow special.</span></span>
+<span data-ttu-id="73a71-p101">In diesem Beispiel wird die [CompareBookmarks](comparebookmarks-method-ado.md)-Methode dargestellt. Der relative Wert von Textmarken wird in der Regel nur bei bestimmten Textmarken verwendet, die einen Sonderfall darstellen.</span><span class="sxs-lookup"><span data-stu-id="73a71-p101">This example demonstrates the [CompareBookmarks](comparebookmarks-method-ado.md) method. The relative value of bookmarks is seldom needed unless a particular bookmark is somehow special.</span></span>
 
-<span data-ttu-id="b203c-p102">Geben Sie eine aus der ***Authors***-Tabelle abgeleitete Zufallszeile eines [Recordset](recordset-object-ado.md)-Objekts als das Ziel einer Suche an. Zeigen Sie anschließend die Position jeder Zeile im Verhältnis zu diesem Ziel an.</span><span class="sxs-lookup"><span data-stu-id="b203c-p102">Designate a random row of a [Recordset](recordset-object-ado.md) derived from the ***Authors*** table as the target of a search. Then display the position of each row relative to that target.</span></span>
+<span data-ttu-id="73a71-p102">Geben Sie eine aus der ***Authors***-Tabelle abgeleitete Zufallszeile eines [Recordset](recordset-object-ado.md)-Objekts als das Ziel einer Suche an. Zeigen Sie anschließend die Position jeder Zeile im Verhältnis zu diesem Ziel an.</span><span class="sxs-lookup"><span data-stu-id="73a71-p102">Designate a random row of a [Recordset](recordset-object-ado.md) derived from the ***Authors*** table as the target of a search. Then display the position of each row relative to that target.</span></span>
 
 ```java 
  

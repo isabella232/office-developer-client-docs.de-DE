@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249900(v=office.15)
 ms:contentKeyID: 48547393
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8a601cc5b41d7ee96a11f632070cd36cd65671c4
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b7afa0e4487b1bc01d7a45849df0c58c0e5dc04a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876827"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710139"
 ---
-# <a name="cancel-method-example-vc"></a><span data-ttu-id="233da-102">Cancel-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="233da-102">Cancel method example (VC++)</span></span>
+# <a name="cancel-method-example-vc"></a><span data-ttu-id="ac9e3-102">Cancel-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="ac9e3-102">Cancel method example (VC++)</span></span>
 
 
-<span data-ttu-id="233da-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="233da-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="ac9e3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ac9e3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="233da-104">In diesem Beispiel wird die [Cancel](cancel-method-ado.md)-Methode verwendet, um einen für ein [Connection](connection-object-ado.md)-Objekt ausgeführten Befehl abzubrechen, wenn die Verbindung ausgelastet ist.</span><span class="sxs-lookup"><span data-stu-id="233da-104">This example uses the [Cancel](cancel-method-ado.md) method to cancel a command executing on a [Connection](connection-object-ado.md) object if the connection is busy.</span></span>
+<span data-ttu-id="ac9e3-104">In diesem Beispiel wird die [Cancel](cancel-method-ado.md)-Methode verwendet, um einen für ein [Connection](connection-object-ado.md)-Objekt ausgeführten Befehl abzubrechen, wenn die Verbindung ausgelastet ist.</span><span class="sxs-lookup"><span data-stu-id="ac9e3-104">This example uses the [Cancel](cancel-method-ado.md) method to cancel a command executing on a [Connection](connection-object-ado.md) object if the connection is busy.</span></span>
 
 ```cpp 
  

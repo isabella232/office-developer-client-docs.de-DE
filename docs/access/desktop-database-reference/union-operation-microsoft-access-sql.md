@@ -12,24 +12,25 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 14e23b0df5344048fb510d8813a6e1bc2b9e1978
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: f842e662f2576d8aab5f3857877f45e380d3d3b0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026029"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716250"
 ---
-# <a name="union-operation-microsoft-access-sql"></a><span data-ttu-id="1f6c5-102">UNION-Operation (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="1f6c5-102">UNION operation (Microsoft Access SQL)</span></span>
+# <a name="union-operation-microsoft-access-sql"></a><span data-ttu-id="580f0-102">UNION-Operation (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="580f0-102">UNION operation (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="1f6c5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1f6c5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="580f0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="580f0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1f6c5-104">Erstellt eine Union-Abfrage, in der die Ergebnisse von mindestens zwei unabhängigen Abfragen oder Tabellen miteinander kombiniert werden.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-104">Creates a union query, which combines the results of two or more independent queries or tables.</span></span>
+<span data-ttu-id="580f0-104">Erstellt eine Union-Abfrage, in der die Ergebnisse von mindestens zwei unabhängigen Abfragen oder Tabellen miteinander kombiniert werden.</span><span class="sxs-lookup"><span data-stu-id="580f0-104">Creates a union query, which combines the results of two or more independent queries or tables.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1f6c5-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1f6c5-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="580f0-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="580f0-105">Syntax</span></span>
 
-<span data-ttu-id="1f6c5-106">\[Tabelle\] *Abfrage1* UNION \[alle\] \[Tabelle\] *abfrage2* \[UNION \[alle\] \[Tabelle\] *Abfragen* \[ ...</span><span class="sxs-lookup"><span data-stu-id="1f6c5-106">\[TABLE\] *query1* UNION \[ALL\] \[TABLE\] *query2* \[UNION \[ALL\] \[TABLE\] *queryn* \[ …</span></span> <span data-ttu-id="1f6c5-107">\]\]</span><span class="sxs-lookup"><span data-stu-id="1f6c5-107"></span></span>
+<span data-ttu-id="580f0-106">\[Tabelle\] *Abfrage1* UNION \[alle\] \[Tabelle\] *abfrage2* \[UNION \[alle\] \[Tabelle\] *Abfragen* \[ ...</span><span class="sxs-lookup"><span data-stu-id="580f0-106">\[TABLE\] *query1* UNION \[ALL\] \[TABLE\] *query2* \[UNION \[ALL\] \[TABLE\] *queryn* \[ …</span></span> <span data-ttu-id="580f0-107">\]\]</span><span class="sxs-lookup"><span data-stu-id="580f0-107"></span></span>
 
-<span data-ttu-id="1f6c5-108">Die UNION-Operation enthält die folgenden Bestandteile:</span><span class="sxs-lookup"><span data-stu-id="1f6c5-108">The UNION operation has these parts:</span></span>
+<span data-ttu-id="580f0-108">Die UNION-Operation enthält die folgenden Bestandteile:</span><span class="sxs-lookup"><span data-stu-id="580f0-108">The UNION operation has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -38,22 +39,22 @@ ms.locfileid: "26026029"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="1f6c5-109">Argument</span><span class="sxs-lookup"><span data-stu-id="1f6c5-109">Part</span></span></p></th>
-<th><p><span data-ttu-id="1f6c5-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1f6c5-110">Description</span></span></p></th>
+<th><p><span data-ttu-id="580f0-109">Argument</span><span class="sxs-lookup"><span data-stu-id="580f0-109">Part</span></span></p></th>
+<th><p><span data-ttu-id="580f0-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="580f0-110">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="1f6c5-111"><em>Abfrage1-N</em></span><span class="sxs-lookup"><span data-stu-id="1f6c5-111"><em>query1-n</em></span></span></p></td>
-<td><p><span data-ttu-id="1f6c5-112">Eine SELECT-Anweisung, der Name einer gespeicherten Abfrage oder der Name einer gespeicherten Tabelle, der das Schlüsselwort TABLE vorangestellt ist.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-112">A SELECT statement, the name of a stored query, or the name of a stored table preceded by the TABLE keyword.</span></span></p></td>
+<td><p><span data-ttu-id="580f0-111"><em>Abfrage1-N</em></span><span class="sxs-lookup"><span data-stu-id="580f0-111"><em>query1-n</em></span></span></p></td>
+<td><p><span data-ttu-id="580f0-112">Eine SELECT-Anweisung, der Name einer gespeicherten Abfrage oder der Name einer gespeicherten Tabelle, der das Schlüsselwort TABLE vorangestellt ist.</span><span class="sxs-lookup"><span data-stu-id="580f0-112">A SELECT statement, the name of a stored query, or the name of a stored table preceded by the TABLE keyword.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="1f6c5-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1f6c5-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="580f0-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="580f0-113">Remarks</span></span>
 
-<span data-ttu-id="1f6c5-p102">Sie können die Ergebnisse von zwei oder mehr Abfragen, Tabellen und SELECT-Anweisungen in jeder beliebigen Kombination in einer einzelnen UNION-Operation zusammenführen. Im folgenden Beispiel wird die vorhandene New Accounts-Tabelle mit einer SELECT-Anweisung zusammengeführt:</span><span class="sxs-lookup"><span data-stu-id="1f6c5-p102">You can merge the results of two or more queries, tables, and SELECT statements, in any combination, in a single UNION operation. The following example merges an existing table named New Accounts and a SELECT statement:</span></span>
+<span data-ttu-id="580f0-p102">Sie können die Ergebnisse von zwei oder mehr Abfragen, Tabellen und SELECT-Anweisungen in jeder beliebigen Kombination in einer einzelnen UNION-Operation zusammenführen. Im folgenden Beispiel wird die vorhandene New Accounts-Tabelle mit einer SELECT-Anweisung zusammengeführt:</span><span class="sxs-lookup"><span data-stu-id="580f0-p102">You can merge the results of two or more queries, tables, and SELECT statements, in any combination, in a single UNION operation. The following example merges an existing table named New Accounts and a SELECT statement:</span></span>
 
 ```sql
 TABLE [New Accounts] UNION ALL 
@@ -62,19 +63,19 @@ FROM Customers
 WHERE OrderAmount > 1000;
 ```
 
-<span data-ttu-id="1f6c5-p103">Standardmäßig werden bei Verwendung einer UNION-Operation keine duplizierten Datensätze zurückgegeben. Sie können jedoch mithilfe des Prädikats [ALL](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql) sicherstellen, dass alle Datensätze zurückgegeben werden. Außerdem wird dadurch die Ausführung der Abfrage beschleunigt.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-p103">By default, no duplicate records are returned when you use a UNION operation; however, you can include the [ALL](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql) predicate to ensure that all records are returned. This also makes the query run faster.</span></span>
+<span data-ttu-id="580f0-p103">Standardmäßig werden bei Verwendung einer UNION-Operation keine duplizierten Datensätze zurückgegeben. Sie können jedoch mithilfe des Prädikats [ALL](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql) sicherstellen, dass alle Datensätze zurückgegeben werden. Außerdem wird dadurch die Ausführung der Abfrage beschleunigt.</span><span class="sxs-lookup"><span data-stu-id="580f0-p103">By default, no duplicate records are returned when you use a UNION operation; however, you can include the [ALL](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql) predicate to ensure that all records are returned. This also makes the query run faster.</span></span>
 
-<span data-ttu-id="1f6c5-118">Alle Abfragen in einer UNION-Operation müssen dieselbe Anzahl von Feldern anfordern. Doch die Felder müssen nicht dieselbe Größe oder denselben Datentyp besitzen.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-118">All queries in a UNION operation must request the same number of fields; however, the fields do not have to be of the same size or data type.</span></span>
+<span data-ttu-id="580f0-118">Alle Abfragen in einer UNION-Operation müssen dieselbe Anzahl von Feldern anfordern. Doch die Felder müssen nicht dieselbe Größe oder denselben Datentyp besitzen.</span><span class="sxs-lookup"><span data-stu-id="580f0-118">All queries in a UNION operation must request the same number of fields; however, the fields do not have to be of the same size or data type.</span></span>
 
-<span data-ttu-id="1f6c5-p104">Verwenden Sie Aliase nur in der ersten SELECT-Anweisung, da sie in anderen Anweisungen ignoriert werden. In der ORDER BY-Klausel verweisen Sie auf ein Feld unter dem Namen, der in der ersten SELECT-Anweisung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-p104">Use aliases only in the first SELECT statement because they are ignored in any others. In the ORDER BY clause, refer to fields by what they are called in the first SELECT statement.</span></span>
+<span data-ttu-id="580f0-p104">Verwenden Sie Aliase nur in der ersten SELECT-Anweisung, da sie in anderen Anweisungen ignoriert werden. In der ORDER BY-Klausel verweisen Sie auf ein Feld unter dem Namen, der in der ersten SELECT-Anweisung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="580f0-p104">Use aliases only in the first SELECT statement because they are ignored in any others. In the ORDER BY clause, refer to fields by what they are called in the first SELECT statement.</span></span>
 
 > [!NOTE]
-> - <span data-ttu-id="1f6c5-121">Eine [GROUP BY-](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) oder [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) -Klausel können in *jedem Abfrageargument* Sie um die zurückgegebenen Daten zu gruppieren.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-121">You can use a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) or [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) clause in each *query* argument to group the returned data.</span></span>
-> - <span data-ttu-id="1f6c5-122">[ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql) -Klausel können am Ende des *letzten abfragearguments* Sie die zurückgegebenen Daten in einer bestimmten Reihenfolge angezeigt.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-122">You can use an [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql) clause at the end of the last *query* argument to display the returned data in a specified order.</span></span>
+> - <span data-ttu-id="580f0-121">Eine [GROUP BY-](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) oder [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) -Klausel können in *jedem Abfrageargument* Sie um die zurückgegebenen Daten zu gruppieren.</span><span class="sxs-lookup"><span data-stu-id="580f0-121">You can use a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) or [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) clause in each *query* argument to group the returned data.</span></span>
+> - <span data-ttu-id="580f0-122">[ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql) -Klausel können am Ende des *letzten abfragearguments* Sie die zurückgegebenen Daten in einer bestimmten Reihenfolge angezeigt.</span><span class="sxs-lookup"><span data-stu-id="580f0-122">You can use an [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql) clause at the end of the last *query* argument to display the returned data in a specified order.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f6c5-123">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1f6c5-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="580f0-123">Beispiel</span><span class="sxs-lookup"><span data-stu-id="580f0-123">Example</span></span>
 
-<span data-ttu-id="1f6c5-124">In diesem Beispiel werden die Namen und Städte aller Lieferanten und Kunden in Brasilien abgerufen.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-124">This example retrieves the names and cities of all suppliers and customers in Brazil.</span></span> <span data-ttu-id="1f6c5-125">Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.</span><span class="sxs-lookup"><span data-stu-id="1f6c5-125">It calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
+<span data-ttu-id="580f0-124">In diesem Beispiel werden die Namen und Städte aller Lieferanten und Kunden in Brasilien abgerufen.</span><span class="sxs-lookup"><span data-stu-id="580f0-124">This example retrieves the names and cities of all suppliers and customers in Brazil.</span></span> <span data-ttu-id="580f0-125">Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.</span><span class="sxs-lookup"><span data-stu-id="580f0-125">It calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
 
 ```vb
     Sub UnionX() 

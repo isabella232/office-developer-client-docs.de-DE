@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125230(v=office.15)
 ms:contentKeyID: 52073354
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8abbe64abf2908c6736534f39413486083173ca0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9148feddeb486b008b3eabbf8b7e9d7cb213b35c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924239"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715893"
 ---
-# <a name="data-blocks"></a><span data-ttu-id="448da-102">Datenblöcke</span><span class="sxs-lookup"><span data-stu-id="448da-102">Data blocks</span></span>
+# <a name="data-blocks"></a><span data-ttu-id="78573-102">Datenblöcke</span><span class="sxs-lookup"><span data-stu-id="78573-102">Data blocks</span></span>
 
-<span data-ttu-id="448da-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="448da-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="78573-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="78573-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="448da-104">DatensatzErstellen-Datenblock</span><span class="sxs-lookup"><span data-stu-id="448da-104">CreateRecord data block</span></span>](createrecord-data-block.md)
-- [<span data-ttu-id="448da-105">BearbeitenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="448da-105">EditRecord data block</span></span>](editrecord-data-block.md)
-- [<span data-ttu-id="448da-106">FürJedenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="448da-106">ForEachRecord data block</span></span>](foreachrecord-data-block.md)
-- [<span data-ttu-id="448da-107">NachschlagenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="448da-107">LookupRecord data block</span></span>](lookuprecord-data-block.md)
+- [<span data-ttu-id="78573-104">DatensatzErstellen-Datenblock</span><span class="sxs-lookup"><span data-stu-id="78573-104">CreateRecord data block</span></span>](createrecord-data-block.md)
+- [<span data-ttu-id="78573-105">BearbeitenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="78573-105">EditRecord data block</span></span>](editrecord-data-block.md)
+- [<span data-ttu-id="78573-106">FürJedenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="78573-106">ForEachRecord data block</span></span>](foreachrecord-data-block.md)
+- [<span data-ttu-id="78573-107">NachschlagenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="78573-107">LookupRecord data block</span></span>](lookuprecord-data-block.md)
 
