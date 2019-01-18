@@ -10,35 +10,36 @@ f1_keywords:
 - dao360.chm1052929
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1c8892236410005d556dbe7f9322303a23d411d8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2d8fb358ab757d826bcfcd335aada8825e3ba980
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925184"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709586"
 ---
-# <a name="fieldvalidateonset-property-dao"></a><span data-ttu-id="84f2a-102">Field.ValidateOnSet-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="84f2a-102">Field.ValidateOnSet property (DAO)</span></span>
+# <a name="fieldvalidateonset-property-dao"></a><span data-ttu-id="0a4fc-102">Field.ValidateOnSet-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="0a4fc-102">Field.ValidateOnSet property (DAO)</span></span>
 
 
-<span data-ttu-id="84f2a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="84f2a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="0a4fc-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0a4fc-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="84f2a-104">Legt einen Wert fest, der angibt, ob der Wert eines **[Field](field-object-dao.md)** -Objekts sofort der Gültigkeitsprüfung unterzogen wird, wenn die **[Value](field-value-property-dao.md)** -Eigenschaft des Objekts festgelegt wird, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="84f2a-104">Sets or returns a value that specifies whether or not the value of a **[Field](field-object-dao.md)** object is immediately validated when the object's **[Value](field-value-property-dao.md)** property is set (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="0a4fc-104">Legt einen Wert fest, der angibt, ob der Wert eines **[Field](field-object-dao.md)** -Objekts sofort der Gültigkeitsprüfung unterzogen wird, wenn die **[Value](field-value-property-dao.md)** -Eigenschaft des Objekts festgelegt wird, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="0a4fc-104">Sets or returns a value that specifies whether or not the value of a **[Field](field-object-dao.md)** object is immediately validated when the object's **[Value](field-value-property-dao.md)** property is set (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="84f2a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="84f2a-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0a4fc-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="0a4fc-105">Syntax</span></span>
 
-<span data-ttu-id="84f2a-106">*Ausdruck* . ValidateOnSet</span><span class="sxs-lookup"><span data-stu-id="84f2a-106">*expression* .ValidateOnSet</span></span>
+<span data-ttu-id="0a4fc-106">*Ausdruck* . ValidateOnSet</span><span class="sxs-lookup"><span data-stu-id="0a4fc-106">*expression* .ValidateOnSet</span></span>
 
-<span data-ttu-id="84f2a-107">*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="84f2a-107">*expression* A variable that represents a **Field** object.</span></span>
+<span data-ttu-id="0a4fc-107">*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="0a4fc-107">*expression* A variable that represents a **Field** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="84f2a-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="84f2a-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0a4fc-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="0a4fc-108">Remarks</span></span>
 
-<span data-ttu-id="84f2a-109">Nur **Field**-Objekte in **[Recordset](recordset-object-dao.md)** -Objekten unterstützen die **ValidateOnSet**-Eigenschaft mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="84f2a-109">Only **Field** objects in **[Recordset](recordset-object-dao.md)** objects support the **ValidateOnSet** property as read/write.</span></span>
+<span data-ttu-id="0a4fc-109">Nur **Field**-Objekte in **[Recordset](recordset-object-dao.md)** -Objekten unterstützen die **ValidateOnSet**-Eigenschaft mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="0a4fc-109">Only **Field** objects in **[Recordset](recordset-object-dao.md)** objects support the **ValidateOnSet** property as read/write.</span></span>
 
-<span data-ttu-id="84f2a-110">**ValidateOnSet** -Eigenschaft auf **True** festlegen kann in einer Situation nützlich sein, wenn ein Benutzer Datensätze eingibt, die erhebliche Memodaten enthalten.</span><span class="sxs-lookup"><span data-stu-id="84f2a-110">Setting the **ValidateOnSet** property to **True** can be useful in a situation when a user is entering records that include substantial Memo data.</span></span> <span data-ttu-id="84f2a-111">Warten, bis das **[Update](recordset-update-method-dao.md)** aufrufen, um die Daten überprüfen kann dazu führen unnötige Zeitaufwand für das Schreiben der langen Memo-Daten in der Datenbank, wenn es stellt sich darauf hin, dass die Daten ungültig waren, da eine Überprüfungsregel in einem anderen Feld unterbrochen wurde.</span><span class="sxs-lookup"><span data-stu-id="84f2a-111">Waiting until the **[Update](recordset-update-method-dao.md)** call to validate the data can result in unnecessary time spent writing the lengthy Memo data to the database if it turns out that the data was invalid anyway because a validation rule was broken in another field.</span></span>
+<span data-ttu-id="0a4fc-110">**ValidateOnSet** -Eigenschaft auf **True** festlegen kann in einer Situation nützlich sein, wenn ein Benutzer Datensätze eingibt, die erhebliche Memodaten enthalten.</span><span class="sxs-lookup"><span data-stu-id="0a4fc-110">Setting the **ValidateOnSet** property to **True** can be useful in a situation when a user is entering records that include substantial Memo data.</span></span> <span data-ttu-id="0a4fc-111">Warten, bis das **[Update](recordset-update-method-dao.md)** aufrufen, um die Daten überprüfen kann dazu führen unnötige Zeitaufwand für das Schreiben der langen Memo-Daten in der Datenbank, wenn es stellt sich darauf hin, dass die Daten ungültig waren, da eine Überprüfungsregel in einem anderen Feld unterbrochen wurde.</span><span class="sxs-lookup"><span data-stu-id="0a4fc-111">Waiting until the **[Update](recordset-update-method-dao.md)** call to validate the data can result in unnecessary time spent writing the lengthy Memo data to the database if it turns out that the data was invalid anyway because a validation rule was broken in another field.</span></span>
 
-## <a name="example"></a><span data-ttu-id="84f2a-112">Beispiel</span><span class="sxs-lookup"><span data-stu-id="84f2a-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0a4fc-112">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0a4fc-112">Example</span></span>
 
-<span data-ttu-id="84f2a-p102">Diese Beispiel veranschaulicht mit der ValidateOnSet-Eigenschaft, wie Fehler bei der Dateneingabe abgefangen werden können. Zum Ausführen dieser Prozedur ist die ValidateData-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="84f2a-p102">This example uses the **ValidateOnSet** property to demonstrate how one might trap for errors during data entry. The ValidateData function is required for this procedure to run.</span></span>
+<span data-ttu-id="0a4fc-p102">Diese Beispiel veranschaulicht mit der ValidateOnSet-Eigenschaft, wie Fehler bei der Dateneingabe abgefangen werden können. Zum Ausführen dieser Prozedur ist die ValidateData-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0a4fc-p102">This example uses the **ValidateOnSet** property to demonstrate how one might trap for errors during data entry. The ValidateData function is required for this procedure to run.</span></span>
 
 ```vb
     Sub ValidateOnSetX() 

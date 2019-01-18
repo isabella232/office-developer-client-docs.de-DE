@@ -6,23 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823054(v=office.15)
 ms:contentKeyID: 48547580
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 169982df924f165c4f2e9705e63af3e0c086f43f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 5917e3b86c373d86cad59f3ad9f2bcbba83c40d0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925135"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706562"
 ---
-# <a name="containername-property-dao"></a><span data-ttu-id="f7dcf-102">Container.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="f7dcf-102">Container.Name property (DAO)</span></span>
+# <a name="containername-property-dao"></a><span data-ttu-id="d4897-102">Container.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="d4897-102">Container.Name property (DAO)</span></span>
 
 
-<span data-ttu-id="f7dcf-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f7dcf-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d4897-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d4897-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f7dcf-p101">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter **String**-Wert.</span><span class="sxs-lookup"><span data-stu-id="f7dcf-p101">Returns the name of the specified object. Read-only **String**.</span></span>
+<span data-ttu-id="d4897-p101">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter **String**-Wert.</span><span class="sxs-lookup"><span data-stu-id="d4897-p101">Returns the name of the specified object. Read-only **String**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f7dcf-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="f7dcf-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d4897-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="d4897-106">Syntax</span></span>
 
-<span data-ttu-id="f7dcf-107">*Ausdruck* . Name</span><span class="sxs-lookup"><span data-stu-id="f7dcf-107">*expression* .Name</span></span>
+<span data-ttu-id="d4897-107">*Ausdruck* . Name</span><span class="sxs-lookup"><span data-stu-id="d4897-107">*expression* .Name</span></span>
 
-<span data-ttu-id="f7dcf-108">*Ausdruck* Eine Variable, die ein **Container** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f7dcf-108">*expression* A variable that represents a **Container** object.</span></span>
+<span data-ttu-id="d4897-108">*Ausdruck* Eine Variable, die ein **Container** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="d4897-108">*expression* A variable that represents a **Container** object.</span></span>
 

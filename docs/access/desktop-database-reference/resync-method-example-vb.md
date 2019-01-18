@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249571(v=office.15)
 ms:contentKeyID: 48546001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 22eafe559757c6d4b7a9f03d17e89a20d87c97a4
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 73cd34fcc81729ba1c9270e35dfe07fda1e896d9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25868987"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712387"
 ---
-# <a name="resync-method-example-vb"></a><span data-ttu-id="e8bb8-102">Resync-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="e8bb8-102">Resync method example (VB)</span></span>
+# <a name="resync-method-example-vb"></a><span data-ttu-id="039db-102">Resync-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="039db-102">Resync method example (VB)</span></span>
 
 
-<span data-ttu-id="e8bb8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e8bb8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="039db-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="039db-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e8bb8-104">In diesem Beispiel wird die Verwendung der [Resync](resync-method-ado.md)-Methode zum Aktualisieren von Daten in einer statischen Datensatzgruppe veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="e8bb8-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
+<span data-ttu-id="039db-104">In diesem Beispiel wird die Verwendung der [Resync](resync-method-ado.md)-Methode zum Aktualisieren von Daten in einer statischen Datensatzgruppe veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="039db-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
 
 ```vb 
  

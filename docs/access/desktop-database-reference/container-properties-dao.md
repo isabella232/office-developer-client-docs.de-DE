@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161089(v=office.15)
 ms:contentKeyID: 52073051
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 861faa1e2360b945d3476408f7e352204ed7ee7a
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a9edf150eb411950c605224d9370f7266f13542c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944508"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709845"
 ---
-# <a name="container-properties-dao"></a><span data-ttu-id="5cf2f-102">Containereigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="5cf2f-102">Container properties (DAO)</span></span>
+# <a name="container-properties-dao"></a><span data-ttu-id="cb153-102">Containereigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="cb153-102">Container properties (DAO)</span></span>
 
-<span data-ttu-id="5cf2f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5cf2f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cb153-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="cb153-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="5cf2f-104">Container.Documents-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="5cf2f-104">Container.Documents property (DAO)</span></span>](container-documents-property-dao.md)
-- [<span data-ttu-id="5cf2f-105">Container.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="5cf2f-105">Container.Name property (DAO)</span></span>](container-name-property-dao.md)
-- [<span data-ttu-id="5cf2f-106">Container.Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="5cf2f-106">Container.Properties property (DAO)</span></span>](container-properties-property-dao.md)
+- [<span data-ttu-id="cb153-104">Container.Documents-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="cb153-104">Container.Documents property (DAO)</span></span>](container-documents-property-dao.md)
+- [<span data-ttu-id="cb153-105">Container.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="cb153-105">Container.Name property (DAO)</span></span>](container-name-property-dao.md)
+- [<span data-ttu-id="cb153-106">Container.Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="cb153-106">Container.Properties property (DAO)</span></span>](container-properties-property-dao.md)
 

@@ -6,37 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196110(v=office.15)
 ms:contentKeyID: 48545746
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c033ec6f3d80210aaeeb36e9e3eca4b80bfb070d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b23568e0830ef07e58119d02c4d221dad4b1d015
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931316"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709635"
 ---
-# <a name="recordsettransactions-property-dao"></a><span data-ttu-id="9d4d3-102">Recordset.Transactions-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="9d4d3-102">Recordset.Transactions property (DAO)</span></span>
+# <a name="recordsettransactions-property-dao"></a><span data-ttu-id="93d04-102">Recordset.Transactions-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="93d04-102">Recordset.Transactions property (DAO)</span></span>
 
 
-<span data-ttu-id="9d4d3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9d4d3-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="93d04-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="93d04-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9d4d3-p101">Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter **Boolean**-Wert.</span><span class="sxs-lookup"><span data-stu-id="9d4d3-p101">Returns a value that indicates whether an object supports transactions. Read-only **Boolean**.</span></span>
+<span data-ttu-id="93d04-p101">Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter **Boolean**-Wert.</span><span class="sxs-lookup"><span data-stu-id="93d04-p101">Returns a value that indicates whether an object supports transactions. Read-only **Boolean**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9d4d3-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="9d4d3-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="93d04-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="93d04-106">Syntax</span></span>
 
-<span data-ttu-id="9d4d3-107">*Ausdruck* . Transaktionen</span><span class="sxs-lookup"><span data-stu-id="9d4d3-107">*expression* .Transactions</span></span>
+<span data-ttu-id="93d04-107">*Ausdruck* . Transaktionen</span><span class="sxs-lookup"><span data-stu-id="93d04-107">*expression* .Transactions</span></span>
 
-<span data-ttu-id="9d4d3-108">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="9d4d3-108">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="93d04-108">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="93d04-108">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="9d4d3-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9d4d3-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="93d04-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="93d04-109">Remarks</span></span>
 
-<span data-ttu-id="9d4d3-p102">In einem Microsoft Access-Arbeitsbereich können Sie auch die Transactions-Eigenschaft auf Recordset-Objekte vom Typ Dynaset oder Tabelle anwenden. Recordset-Objekte vom Typ Snapshot und vorwärtsgerichtet geben immer False zurück.</span><span class="sxs-lookup"><span data-stu-id="9d4d3-p102">In a Microsoft Access workspace, you can also use the **Transactions** property with dynaset- or table-type **Recordset** objects. Snapshot- and forward–only–type **[Recordset](recordset-object-dao.md)** objects always return **False**.</span></span>
+<span data-ttu-id="93d04-p102">In einem Microsoft Access-Arbeitsbereich können Sie auch die Transactions-Eigenschaft auf Recordset-Objekte vom Typ Dynaset oder Tabelle anwenden. Recordset-Objekte vom Typ Snapshot und vorwärtsgerichtet geben immer False zurück.</span><span class="sxs-lookup"><span data-stu-id="93d04-p102">In a Microsoft Access workspace, you can also use the **Transactions** property with dynaset- or table-type **Recordset** objects. Snapshot- and forward–only–type **[Recordset](recordset-object-dao.md)** objects always return **False**.</span></span>
 
-<span data-ttu-id="9d4d3-p103">Wenn ein Recordset-Objekt vom Typ Dynaset oder Tabelle auf einer Tabelle einer Microsoft Access-Datenbank-Engine basiert, hat die Transactions-Eigenschaft den Wert True, und Sie können Transaktionen verwenden. Andere Datenbank-Engines unterstützen möglicherweise keine Transaktionen. In einem Recordset-Objekt vom Typ Dynaset, das auf einer Paradox-Tabelle basiert, können z. B. keine Transaktionen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="9d4d3-p103">If a dynaset- or table-type **Recordset** is based on a Microsoft Access database engine table, the **Transactions** property is **True** and you can use transactions. Other database engines may not support transactions. For example, you can't use transactions in a dynaset-type **Recordset** object based on a Paradox table.</span></span>
+<span data-ttu-id="93d04-p103">Wenn ein Recordset-Objekt vom Typ Dynaset oder Tabelle auf einer Tabelle einer Microsoft Access-Datenbank-Engine basiert, hat die Transactions-Eigenschaft den Wert True, und Sie können Transaktionen verwenden. Andere Datenbank-Engines unterstützen möglicherweise keine Transaktionen. In einem Recordset-Objekt vom Typ Dynaset, das auf einer Paradox-Tabelle basiert, können z. B. keine Transaktionen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="93d04-p103">If a dynaset- or table-type **Recordset** is based on a Microsoft Access database engine table, the **Transactions** property is **True** and you can use transactions. Other database engines may not support transactions. For example, you can't use transactions in a dynaset-type **Recordset** object based on a Paradox table.</span></span>
 
-<span data-ttu-id="9d4d3-p104">Überprüfen Sie die **Transactions**-Eigenschaft, bevor Sie die **[BeginTrans](dbengine-begintrans-method-dao.md)** -Methode für das [**Workspace**](workspace-object-dao.md) -Objekt des **Recordset**-Objekts verwenden, um sicherzustellen, dass Transaktionen unterstützt werden. Das Anwenden der Methoden **BeginTrans**, **CommitTrans** und **Rollback** auf nicht unterstützte Objekte hat keine Wirkung.</span><span class="sxs-lookup"><span data-stu-id="9d4d3-p104">Check the **Transactions** property before using the **[BeginTrans](dbengine-begintrans-method-dao.md)** method on the **Recordset** object's **[Workspace](workspace-object-dao.md)** object to make sure that transactions are supported. Using the **BeginTrans**, **CommitTrans**, or **Rollback** methods on an unsupported object has no effect.</span></span>
+<span data-ttu-id="93d04-p104">Überprüfen Sie die **Transactions**-Eigenschaft, bevor Sie die **[BeginTrans](dbengine-begintrans-method-dao.md)** -Methode für das [**Workspace**](workspace-object-dao.md) -Objekt des **Recordset**-Objekts verwenden, um sicherzustellen, dass Transaktionen unterstützt werden. Das Anwenden der Methoden **BeginTrans**, **CommitTrans** und **Rollback** auf nicht unterstützte Objekte hat keine Wirkung.</span><span class="sxs-lookup"><span data-stu-id="93d04-p104">Check the **Transactions** property before using the **[BeginTrans](dbengine-begintrans-method-dao.md)** method on the **Recordset** object's **[Workspace](workspace-object-dao.md)** object to make sure that transactions are supported. Using the **BeginTrans**, **CommitTrans**, or **Rollback** methods on an unsupported object has no effect.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9d4d3-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9d4d3-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="93d04-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="93d04-117">Example</span></span>
 
-<span data-ttu-id="9d4d3-118">In diesem Beispiel wird die **Transactions**-Eigenschaft in Microsoft Access-Arbeitsbereichen veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="9d4d3-118">This example demonstrates the **Transactions** property in Microsoft Access workspaces.</span></span>
+<span data-ttu-id="93d04-118">In diesem Beispiel wird die **Transactions**-Eigenschaft in Microsoft Access-Arbeitsbereichen veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="93d04-118">This example demonstrates the **Transactions** property in Microsoft Access workspaces.</span></span>
 
 ```vb 
 Sub TransactionsX() 

@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249862(v=office.15)
 ms:contentKeyID: 48547218
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f5d6dc4f9c3dcd039154db74e578ed91aa62fb01
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 4be654479ec4e447a77b6c03f8bb1b7ac3616544
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944907"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707969"
 ---
-# <a name="command-object-parameters"></a><span data-ttu-id="bfbcd-102">Parameter des Command-Objekts</span><span class="sxs-lookup"><span data-stu-id="bfbcd-102">Command object parameters</span></span>
+# <a name="command-object-parameters"></a><span data-ttu-id="cf80d-102">Parameter des Command-Objekts</span><span class="sxs-lookup"><span data-stu-id="cf80d-102">Command object parameters</span></span>
 
-<span data-ttu-id="bfbcd-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="bfbcd-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cf80d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="cf80d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="bfbcd-p101">Eine interessantere Verwendung für das **Command** -Objekt wird im nächsten Beispiel veranschaulicht, in dem der Text des SQL-Befehls geändert und dadurch parametrisiert wurde. Auf diese Weise kann der Befehl wiederverwendet werden, wobei jedes Mal ein anderer Wert an den Parameter übergeben wird. Die **Prepared** -Eigenschaft im **Command** -Objekt ist auf **True** festgelegt. Deshalb erfordert ADO, dass der Anbieter den in der **CommandText** -Eigenschaft angegebenen Befehl kompiliert, bevor er zum ersten Mal ausgeführt wird. Außerdem bleibt der kompilierte Befehl im Arbeitsspeicher gespeichert. Die erstmalige Ausführung des Befehls ist aufgrund der vorbereitenden Schritte geringfügig langsamer. Bei jeder weiteren Ausführung wird der Befehl jedoch schneller ausgeführt. Befehle sollten deshalb nur vorbereitet werden, wenn sie mehrmals verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="bfbcd-p101">A more interesting use for the **Command** object is shown in the next example, in which the text of the SQL command has been modified to make it parameterized. This makes it possible to reuse the command, passing in a different value for the parameter each time. Because the **Prepared** property on the **Command** object is set equal to **True**, ADO will require the provider to compile the command specified in **CommandText** before executing it for the first time. It also will retain the compiled command in memory. This slows the execution of the command slightly the first time it is executed because of the overhead required to prepare it, but results in a performance gain each time the command is called thereafter. Thus, commands should be prepared only if they will be used more than once.</span></span>
+<span data-ttu-id="cf80d-p101">Eine interessantere Verwendung für das **Command** -Objekt wird im nächsten Beispiel veranschaulicht, in dem der Text des SQL-Befehls geändert und dadurch parametrisiert wurde. Auf diese Weise kann der Befehl wiederverwendet werden, wobei jedes Mal ein anderer Wert an den Parameter übergeben wird. Die **Prepared** -Eigenschaft im **Command** -Objekt ist auf **True** festgelegt. Deshalb erfordert ADO, dass der Anbieter den in der **CommandText** -Eigenschaft angegebenen Befehl kompiliert, bevor er zum ersten Mal ausgeführt wird. Außerdem bleibt der kompilierte Befehl im Arbeitsspeicher gespeichert. Die erstmalige Ausführung des Befehls ist aufgrund der vorbereitenden Schritte geringfügig langsamer. Bei jeder weiteren Ausführung wird der Befehl jedoch schneller ausgeführt. Befehle sollten deshalb nur vorbereitet werden, wenn sie mehrmals verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="cf80d-p101">A more interesting use for the **Command** object is shown in the next example, in which the text of the SQL command has been modified to make it parameterized. This makes it possible to reuse the command, passing in a different value for the parameter each time. Because the **Prepared** property on the **Command** object is set equal to **True**, ADO will require the provider to compile the command specified in **CommandText** before executing it for the first time. It also will retain the compiled command in memory. This slows the execution of the command slightly the first time it is executed because of the overhead required to prepare it, but results in a performance gain each time the command is called thereafter. Thus, commands should be prepared only if they will be used more than once.</span></span>
 
 ```vb 
  
@@ -100,5 +101,5 @@ ErrHandler:
 'EndManualParamCmd 
 ```
 
-<span data-ttu-id="bfbcd-p102">Nicht alle Anbieter unterstützen vorbereitete Befehle. Falls die Vorbereitung von Befehlen vom Anbieter nicht unterstützt wird, wird möglicherweise ein Fehler zurückgegeben, sobald diese Eigenschaft auf **True** festgelegt wird. Falls kein Fehler zurückgegeben wird, wird die Anforderung zum Vorbereiten des Befehls ignoriert, und die **Prepared** -Eigenschaft wird auf **False** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="bfbcd-p102">Not all providers support prepared commands. If the provider does not support command preparation, it might return an error as soon as this property is set to **True**. If it does not return an error, it ignores the request to prepare the command and sets the **Prepared** property to **False**.</span></span>
+<span data-ttu-id="cf80d-p102">Nicht alle Anbieter unterstützen vorbereitete Befehle. Falls die Vorbereitung von Befehlen vom Anbieter nicht unterstützt wird, wird möglicherweise ein Fehler zurückgegeben, sobald diese Eigenschaft auf **True** festgelegt wird. Falls kein Fehler zurückgegeben wird, wird die Anforderung zum Vorbereiten des Befehls ignoriert, und die **Prepared** -Eigenschaft wird auf **False** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="cf80d-p102">Not all providers support prepared commands. If the provider does not support command preparation, it might return an error as soon as this property is set to **True**. If it does not return an error, it ignores the request to prepare the command and sets the **Prepared** property to **False**.</span></span>
 

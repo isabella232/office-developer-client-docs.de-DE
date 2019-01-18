@@ -6,33 +6,34 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249001(v=office.15)
 ms:contentKeyID: 48543705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4a1fff5911080811bc2556a20667ff2f2391f22e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 11bb7872514a828fdd97fb404f5366c35ff9a883
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926780"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709411"
 ---
-# <a name="optimize-dynamic-property-ado"></a><span data-ttu-id="0714c-102">Optimieren der Leistung von dynamischen-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="0714c-102">Optimize dynamic property (ADO)</span></span>
+# <a name="optimize-dynamic-property-ado"></a><span data-ttu-id="cb525-102">Optimieren der Leistung von dynamischen-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="cb525-102">Optimize dynamic property (ADO)</span></span>
 
 
-<span data-ttu-id="0714c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0714c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cb525-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="cb525-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0714c-104">Gibt an, ob für ein Feld ein Index erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="0714c-104">Specifies whether an index should be created on a field.</span></span>
+<span data-ttu-id="cb525-104">Gibt an, ob für ein Feld ein Index erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="cb525-104">Specifies whether an index should be created on a field.</span></span>
 
-## <a name="settings-and-return-values"></a><span data-ttu-id="0714c-105">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="0714c-105">Settings and return values</span></span>
+## <a name="settings-and-return-values"></a><span data-ttu-id="cb525-105">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="cb525-105">Settings and return values</span></span>
 
-<span data-ttu-id="0714c-106">Legt einen **Boolean** -Wert fest, der angibt, ob ein Index erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="0714c-106">Sets or returns a **Boolean** value that indicates whether an index should be created.</span></span>
+<span data-ttu-id="cb525-106">Legt einen **Boolean** -Wert fest, der angibt, ob ein Index erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="cb525-106">Sets or returns a **Boolean** value that indicates whether an index should be created.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0714c-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="0714c-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cb525-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="cb525-107">Remarks</span></span>
 
-<span data-ttu-id="0714c-p101">Ein Index kann die Leistung von Operationen verbessern, bei denen Werte in einem [Recordset](recordset-object-ado.md) gesucht oder sortiert werden. Der Index ist in ADO integriert, Sie können nicht explizit darauf zugreifen oder ihn in der Anwendung verwenden.</span><span class="sxs-lookup"><span data-stu-id="0714c-p101">An index can improve the performance of operations that find or sort values in a [Recordset](recordset-object-ado.md). The index is internal to ADO — you cannot explicitly access or use it in your application.</span></span>
+<span data-ttu-id="cb525-p101">Ein Index kann die Leistung von Operationen verbessern, bei denen Werte in einem [Recordset](recordset-object-ado.md) gesucht oder sortiert werden. Der Index ist in ADO integriert, Sie können nicht explizit darauf zugreifen oder ihn in der Anwendung verwenden.</span><span class="sxs-lookup"><span data-stu-id="cb525-p101">An index can improve the performance of operations that find or sort values in a [Recordset](recordset-object-ado.md). The index is internal to ADO — you cannot explicitly access or use it in your application.</span></span>
 
-<span data-ttu-id="0714c-p102">Legen Sie die **Optimize** -Eigenschaft auf **True** fest, um einen Index für ein Feld zu erstellen. Legen Sie diese Eigenschaft auf **False** fest, um den Index zu löschen.</span><span class="sxs-lookup"><span data-stu-id="0714c-p102">To create an index on a field, set the **Optimize** property to **True**. To delete the index, set this property to **False**.</span></span>
+<span data-ttu-id="cb525-p102">Legen Sie die **Optimize** -Eigenschaft auf **True** fest, um einen Index für ein Feld zu erstellen. Legen Sie diese Eigenschaft auf **False** fest, um den Index zu löschen.</span><span class="sxs-lookup"><span data-stu-id="cb525-p102">To create an index on a field, set the **Optimize** property to **True**. To delete the index, set this property to **False**.</span></span>
 
-<span data-ttu-id="0714c-112">**Optimize** ist eine dynamische Eigenschaft, die der [Properties](field-object-ado.md)-Auflistung des [Field](properties-collection-ado.md)-Objekts angefügt wird, wenn die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft auf **adUseClient** festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="0714c-112">**Optimize** is a dynamic property appended to the [Field](field-object-ado.md) object [Properties](properties-collection-ado.md) collection when the [CursorLocation](cursorlocation-property-ado.md) property is set to **adUseClient**.</span></span>
+<span data-ttu-id="cb525-112">**Optimize** ist eine dynamische Eigenschaft, die der [Properties](field-object-ado.md)-Auflistung des [Field](properties-collection-ado.md)-Objekts angefügt wird, wenn die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft auf **adUseClient** festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="cb525-112">**Optimize** is a dynamic property appended to the [Field](field-object-ado.md) object [Properties](properties-collection-ado.md) collection when the [CursorLocation](cursorlocation-property-ado.md) property is set to **adUseClient**.</span></span>
 
-<span data-ttu-id="0714c-113">**Verwendung**</span><span class="sxs-lookup"><span data-stu-id="0714c-113">**Usage**</span></span>
+<span data-ttu-id="cb525-113">**Verwendung**</span><span class="sxs-lookup"><span data-stu-id="cb525-113">**Usage**</span></span>
 
 ```vb
     Dim rs As New Recordset

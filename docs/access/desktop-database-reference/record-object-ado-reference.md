@@ -6,17 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248943(v=office.15)
 ms:contentKeyID: 48543507
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0250a7830408201498b68d796eee3ecf255d1e52
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 98e62229cdd0422e03ce83e0f6c7968d4ece7cf3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929762"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708753"
 ---
-# <a name="record-object-ado-reference"></a><span data-ttu-id="f855a-102">Record-Objekt (ADO)-Referenz</span><span class="sxs-lookup"><span data-stu-id="f855a-102">Record object (ADO) reference</span></span>
+# <a name="record-object-ado-reference"></a><span data-ttu-id="dbc60-102">Record-Objekt (ADO)-Referenz</span><span class="sxs-lookup"><span data-stu-id="dbc60-102">Record object (ADO) reference</span></span>
 
-<span data-ttu-id="f855a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f855a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="dbc60-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dbc60-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="f855a-104">Record-Objekt (ADO)</span><span class="sxs-lookup"><span data-stu-id="f855a-104">Record object (ADO)</span></span>](record-object-ado.md)
-- [<span data-ttu-id="f855a-105">Protokollieren Sie die Eigenschaften, Methoden und Ereignisse (ADO)</span><span class="sxs-lookup"><span data-stu-id="f855a-105">Record properties, methods, and events (ADO)</span></span>](record-properties-methods-and-events-ado.md)
+- [<span data-ttu-id="dbc60-104">Record-Objekt (ADO)</span><span class="sxs-lookup"><span data-stu-id="dbc60-104">Record object (ADO)</span></span>](record-object-ado.md)
+- [<span data-ttu-id="dbc60-105">Protokollieren Sie die Eigenschaften, Methoden und Ereignisse (ADO)</span><span class="sxs-lookup"><span data-stu-id="dbc60-105">Record properties, methods, and events (ADO)</span></span>](record-properties-methods-and-events-ado.md)
 

@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249286(v=office.15)
 ms:contentKeyID: 48544929
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 046d005eb4a9e1c8097908e0104b8d1e5c76e2af
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7fe3e6d0afbba82cacd5a55c630f1ca41f3e318a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946913"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709152"
 ---
-# <a name="hybrid-commands"></a><span data-ttu-id="30217-102">Hybridbefehle</span><span class="sxs-lookup"><span data-stu-id="30217-102">Hybrid commands</span></span>
+# <a name="hybrid-commands"></a><span data-ttu-id="b2cbf-102">Hybridbefehle</span><span class="sxs-lookup"><span data-stu-id="b2cbf-102">Hybrid commands</span></span>
 
 
-<span data-ttu-id="30217-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="30217-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b2cbf-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b2cbf-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="30217-p101">Hybridbefehle sind teilweise parametrisierte Befehle. Beispiel:</span><span class="sxs-lookup"><span data-stu-id="30217-p101">Hybrid commands are partially parameterized commands. For example:</span></span>
+<span data-ttu-id="b2cbf-p101">Hybridbefehle sind teilweise parametrisierte Befehle. Beispiel:</span><span class="sxs-lookup"><span data-stu-id="b2cbf-p101">Hybrid commands are partially parameterized commands. For example:</span></span>
 
 ```vb 
  
@@ -28,5 +29,5 @@ SHAPE {select * from plants}
  PlantRegion TO CustomerRegion ) 
 ```
 
-<span data-ttu-id="30217-106">Das Zwischenspeicherungsverhalten für einen Hybridbefehl unterscheidet sich nicht von dem für reguläre parametrisierte Befehle.</span><span class="sxs-lookup"><span data-stu-id="30217-106">The caching behavior for a hybrid command is the same as that of regular parameterized commands.</span></span>
+<span data-ttu-id="b2cbf-106">Das Zwischenspeicherungsverhalten für einen Hybridbefehl unterscheidet sich nicht von dem für reguläre parametrisierte Befehle.</span><span class="sxs-lookup"><span data-stu-id="b2cbf-106">The caching behavior for a hybrid command is the same as that of regular parameterized commands.</span></span>
 
