@@ -6,23 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834698(v=office.15)
 ms:contentKeyID: 48547826
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 99466c456e32ee49a0f2bb8ae3ff11df97ec3980
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 824372d64d0c75984f5e84ee662ce01ef9c044b7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926556"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702019"
 ---
-# <a name="recordset2fields-property-dao"></a><span data-ttu-id="f141d-102">Recordset2.Fields-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="f141d-102">Recordset2.Fields property (DAO)</span></span>
+# <a name="recordset2fields-property-dao"></a><span data-ttu-id="8fef9-102">Recordset2.Fields-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="8fef9-102">Recordset2.Fields property (DAO)</span></span>
 
 
-<span data-ttu-id="f141d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f141d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8fef9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8fef9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f141d-p101">Gibt eine **Fields**-Auflistung zurück, die alle gespeicherten **Field**-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="f141d-p101">Returns a **Fields** collection that represents all stored **Field** objects for the specified object. Read-only.</span></span>
+<span data-ttu-id="8fef9-p101">Gibt eine **Fields**-Auflistung zurück, die alle gespeicherten **Field**-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="8fef9-p101">Returns a **Fields** collection that represents all stored **Field** objects for the specified object. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f141d-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="f141d-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8fef9-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="8fef9-106">Syntax</span></span>
 
-<span data-ttu-id="f141d-107">*Ausdruck* . Felder</span><span class="sxs-lookup"><span data-stu-id="f141d-107">*expression* .Fields</span></span>
+<span data-ttu-id="8fef9-107">*Ausdruck* . Felder</span><span class="sxs-lookup"><span data-stu-id="8fef9-107">*expression* .Fields</span></span>
 
-<span data-ttu-id="f141d-108">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f141d-108">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="8fef9-108">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8fef9-108">*expression* A variable that represents a **Recordset2** object.</span></span>
 

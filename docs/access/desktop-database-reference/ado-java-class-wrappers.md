@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250126(v=office.15)
 ms:contentKeyID: 48548183
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b10308865821f86186ff82d2362b7e6a1a7e5cde
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 731e659f29d6fd504bab772867fb438985189e13
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944557"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704147"
 ---
-# <a name="ado-java-class-wrappers"></a><span data-ttu-id="aa008-102">ADO-Java-Klassenwrapper</span><span class="sxs-lookup"><span data-stu-id="aa008-102">ADO Java class wrappers</span></span>
+# <a name="ado-java-class-wrappers"></a><span data-ttu-id="290ef-102">ADO-Java-Klassenwrapper</span><span class="sxs-lookup"><span data-stu-id="290ef-102">ADO Java class wrappers</span></span>
 
 
-<span data-ttu-id="aa008-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="aa008-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="290ef-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="290ef-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="aa008-p101">In diesem Code wird in der gleichen Codezeile eine Instanz des Recordset-ADO-Klassenwrappers deklariert und initialisiert. Außerdem werden Variablen für die einzelnen Argumente in der Open-Methode deklariert, insbesondere für LockType und CursorType (da Aufzählungstypen von Java nicht unterstützt werden). Das Recordset-Objekt wird geöffnet und geschlossen. Durch das Festlegen von Rs1 auf NULL wird lediglich geplant, dass diese Variable freigegeben wird, wenn die systematische und periodische Freigabe nicht verwendeter Objekte von Java ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="aa008-p101">This code declares an instance of the ADO [Recordset](recordset-object-ado.md) class wrapper and initializes it, all on the same line of code. Further, it declares variables for each of the arguments in the [Open](open-method-ado-recordset.md) method, especially for [LockType](locktype-property-ado.md) and [CursorType](cursortype-property-ado.md) (because Java doesn't support enumerated types). It opens and closes the **Recordset** object. Setting Rs1 to NULL merely schedules that variable to be released when Java performs its systematic and intermittent release of unused objects.</span></span>
+<span data-ttu-id="290ef-p101">In diesem Code wird in der gleichen Codezeile eine Instanz des Recordset-ADO-Klassenwrappers deklariert und initialisiert. Außerdem werden Variablen für die einzelnen Argumente in der Open-Methode deklariert, insbesondere für LockType und CursorType (da Aufzählungstypen von Java nicht unterstützt werden). Das Recordset-Objekt wird geöffnet und geschlossen. Durch das Festlegen von Rs1 auf NULL wird lediglich geplant, dass diese Variable freigegeben wird, wenn die systematische und periodische Freigabe nicht verwendeter Objekte von Java ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="290ef-p101">This code declares an instance of the ADO [Recordset](recordset-object-ado.md) class wrapper and initializes it, all on the same line of code. Further, it declares variables for each of the arguments in the [Open](open-method-ado-recordset.md) method, especially for [LockType](locktype-property-ado.md) and [CursorType](cursortype-property-ado.md) (because Java doesn't support enumerated types). It opens and closes the **Recordset** object. Setting Rs1 to NULL merely schedules that variable to be released when Java performs its systematic and intermittent release of unused objects.</span></span>
 
 ```java 
  

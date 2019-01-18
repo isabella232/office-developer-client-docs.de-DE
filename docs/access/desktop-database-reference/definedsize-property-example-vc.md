@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250192(v=office.15)
 ms:contentKeyID: 48548474
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a87889c7cd742c02def55cb802981fd3e16b3f91
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 59ca2013f9cc3551d73ea21d8a6af610e0d159d1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867363"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705820"
 ---
-# <a name="definedsize-property-example-vc"></a><span data-ttu-id="2a756-102">DefinedSize-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="2a756-102">DefinedSize property example (VC++)</span></span>
+# <a name="definedsize-property-example-vc"></a><span data-ttu-id="3f971-102">DefinedSize-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="3f971-102">DefinedSize property example (VC++)</span></span>
 
 
-<span data-ttu-id="2a756-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2a756-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3f971-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3f971-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2a756-p101">In diesem Beispiel wird die Verwendung der DefinedSizeEigenschaft eines Column-Objekts veranschaulicht. Der Code legt die Größe der FirstName-Spalte der Employees-Tabelle in der Northwind-Datenbank neu fest. Dann wird die Änderung der Werte des FirstName-Felds eines Recordsets basierend auf der Employees-Tabelle angezeigt. Standardmäßig wird das FirstName-Feld durch Leerstellen aufgefüllt, nachdem die DefinedSize-Eigenschaft erneut festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="2a756-p101">This example demonstrates the [DefinedSize](definedsize-property-adox.md) property of a [Column](column-object-adox.md). The code will redefine the size of the FirstName column of the **Employees** table of the *Northwind* database. Then, the change in the values of the FirstName [Field](field-object-ado.md) of a [Recordset](recordset-object-ado.md) based on the **Employees** table is displayed. Note that by default, the FirstName field becomes padded with spaces after you redefine the **DefinedSize** property.</span></span>
+<span data-ttu-id="3f971-p101">In diesem Beispiel wird die Verwendung der DefinedSizeEigenschaft eines Column-Objekts veranschaulicht. Der Code legt die Größe der FirstName-Spalte der Employees-Tabelle in der Northwind-Datenbank neu fest. Dann wird die Änderung der Werte des FirstName-Felds eines Recordsets basierend auf der Employees-Tabelle angezeigt. Standardmäßig wird das FirstName-Feld durch Leerstellen aufgefüllt, nachdem die DefinedSize-Eigenschaft erneut festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="3f971-p101">This example demonstrates the [DefinedSize](definedsize-property-adox.md) property of a [Column](column-object-adox.md). The code will redefine the size of the FirstName column of the **Employees** table of the *Northwind* database. Then, the change in the values of the FirstName [Field](field-object-ado.md) of a [Recordset](recordset-object-ado.md) based on the **Employees** table is displayed. Note that by default, the FirstName field becomes padded with spaces after you redefine the **DefinedSize** property.</span></span>
 
 ```cpp 
  

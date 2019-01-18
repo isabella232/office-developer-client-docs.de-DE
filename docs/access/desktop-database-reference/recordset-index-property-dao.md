@@ -10,49 +10,50 @@ f1_keywords:
 - dao360.chm1052906
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b5f568889d020676be420186b49c9c50c444ee54
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: f475635424cfb9ed8ddab4025d6a944bdedd39fd
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926136"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702726"
 ---
-# <a name="recordsetindex-property-dao"></a><span data-ttu-id="b125c-102">Recordset.Index-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="b125c-102">Recordset.Index property (DAO)</span></span>
+# <a name="recordsetindex-property-dao"></a><span data-ttu-id="6e4b8-102">Recordset.Index-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="6e4b8-102">Recordset.Index property (DAO)</span></span>
 
-<span data-ttu-id="b125c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b125c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6e4b8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6e4b8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b125c-104">Legt einen Wert fest, der den Namen des aktuellen **[Index](index-object-dao.md)** -Objekts in einem **[Recordset](recordset-object-dao.md)** -Objekt vom Typ "Tabelle" angibt, oder gibt einen solchen Wert zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="b125c-104">Sets or returns a value that indicates the name of the current **[Index](index-object-dao.md)** object in a table-type **[Recordset](recordset-object-dao.md)** object (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="6e4b8-104">Legt einen Wert fest, der den Namen des aktuellen **[Index](index-object-dao.md)** -Objekts in einem **[Recordset](recordset-object-dao.md)** -Objekt vom Typ "Tabelle" angibt, oder gibt einen solchen Wert zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6e4b8-104">Sets or returns a value that indicates the name of the current **[Index](index-object-dao.md)** object in a table-type **[Recordset](recordset-object-dao.md)** object (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b125c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b125c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6e4b8-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="6e4b8-105">Syntax</span></span>
 
-<span data-ttu-id="b125c-106">*Ausdruck* . Index</span><span class="sxs-lookup"><span data-stu-id="b125c-106">*expression* .Index</span></span>
+<span data-ttu-id="6e4b8-106">*Ausdruck* . Index</span><span class="sxs-lookup"><span data-stu-id="6e4b8-106">*expression* .Index</span></span>
 
-<span data-ttu-id="b125c-107">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="b125c-107">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="6e4b8-107">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-107">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b125c-108">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b125c-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6e4b8-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6e4b8-108">Remarks</span></span>
 
-<span data-ttu-id="b125c-p101">Datensätze in Basistabellen werden nicht in einer bestimmten Reihenfolge gespeichert. Durch Festlegen der **Index** -Eigenschaft wird die Reihenfolge der von der Datenbank zurückgegebenen Datensätze geändert. Auf die Speicherreihenfolge der Datensätze hat dies keine Auswirkungen.</span><span class="sxs-lookup"><span data-stu-id="b125c-p101">Records in base tables aren't stored in any particular order. Setting the **Index** property changes the order of records returned from the database; it doesn't affect the order in which the records are stored.</span></span>
+<span data-ttu-id="6e4b8-p101">Datensätze in Basistabellen werden nicht in einer bestimmten Reihenfolge gespeichert. Durch Festlegen der **Index** -Eigenschaft wird die Reihenfolge der von der Datenbank zurückgegebenen Datensätze geändert. Auf die Speicherreihenfolge der Datensätze hat dies keine Auswirkungen.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-p101">Records in base tables aren't stored in any particular order. Setting the **Index** property changes the order of records returned from the database; it doesn't affect the order in which the records are stored.</span></span>
 
-<span data-ttu-id="b125c-p102">Das angegebene **Index** -Objekt muss bereits definiert sein. Wenn Sie die **Index** -Eigenschaft auf ein **Index** -Objekt festlegen, das nicht vorhanden ist, oder wenn die **Index** -Eigenschaft nicht festgelegt ist, tritt bei Verwendung der **[Seek](recordset-seek-method-dao.md)** -Methode ein abfangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="b125c-p102">The specified **Index** object must already be defined. If you set the **Index** property to an **Index** object that doesn't exist or if the **Index** property isn't set when you use the **[Seek](recordset-seek-method-dao.md)** method, a trappable error occurs.</span></span>
+<span data-ttu-id="6e4b8-p102">Das angegebene **Index** -Objekt muss bereits definiert sein. Wenn Sie die **Index** -Eigenschaft auf ein **Index** -Objekt festlegen, das nicht vorhanden ist, oder wenn die **Index** -Eigenschaft nicht festgelegt ist, tritt bei Verwendung der **[Seek](recordset-seek-method-dao.md)** -Methode ein abfangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-p102">The specified **Index** object must already be defined. If you set the **Index** property to an **Index** object that doesn't exist or if the **Index** property isn't set when you use the **[Seek](recordset-seek-method-dao.md)** method, a trappable error occurs.</span></span>
 
-<span data-ttu-id="b125c-113">Untersuchen Sie die **Indexes** -Sammlung eines **TableDef** -Objekts, um zu bestimmen, welche **Index** -Objekte für **Recordset** -Objekte vom Typ "Tabelle" zur Verfügung stehen, die aus diesem **TableDef** -Objekt erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="b125c-113">Examine the **Indexes** collection of a **TableDef** object to determine what **Index** objects are available to table-type **Recordset** objects created from that **TableDef** object.</span></span>
+<span data-ttu-id="6e4b8-113">Untersuchen Sie die **Indexes** -Sammlung eines **TableDef** -Objekts, um zu bestimmen, welche **Index** -Objekte für **Recordset** -Objekte vom Typ "Tabelle" zur Verfügung stehen, die aus diesem **TableDef** -Objekt erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-113">Examine the **Indexes** collection of a **TableDef** object to determine what **Index** objects are available to table-type **Recordset** objects created from that **TableDef** object.</span></span>
 
-<span data-ttu-id="b125c-114">Sie können einen neuen Index für die Tabelle erstellen, indem Sie ein neues **Index** -Objekt erstellen, die zugehörigen Eigenschaften festlegen, es an die **Indexes** -Sammlung des zugrunde liegenden **TableDef** -Objekts anfügen und anschließend das **Recordset** -Objekt erneut öffnen.</span><span class="sxs-lookup"><span data-stu-id="b125c-114">You can create a new index for the table by creating a new **Index** object, setting its properties, appending it to the **Indexes** collection of the underlying **TableDef** object, and then reopening the **Recordset** object.</span></span>
+<span data-ttu-id="6e4b8-114">Sie können einen neuen Index für die Tabelle erstellen, indem Sie ein neues **Index** -Objekt erstellen, die zugehörigen Eigenschaften festlegen, es an die **Indexes** -Sammlung des zugrunde liegenden **TableDef** -Objekts anfügen und anschließend das **Recordset** -Objekt erneut öffnen.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-114">You can create a new index for the table by creating a new **Index** object, setting its properties, appending it to the **Indexes** collection of the underlying **TableDef** object, and then reopening the **Recordset** object.</span></span>
 
-<span data-ttu-id="b125c-115">Datensätze, die von einem **Recordset** -Objekt vom Typ "Tabelle" zurückgegeben werden, können nur nach den Indizes angeordnet werden, die für das zugrunde liegende **TableDef** -Objekt definiert sind.</span><span class="sxs-lookup"><span data-stu-id="b125c-115">Records returned from a table-type **Recordset** object can be ordered only by the indexes defined for the underlying **TableDef** object.</span></span> <span data-ttu-id="b125c-116">Um Datensätze in einer anderen Reihenfolge zu sortieren, können Sie mithilfe einer SQL-Anweisung mit einer ORDER BY-Klausel einer Dynaset, Snapshot oder vorwärts Typ **Recordset** -Objekt öffnen.</span><span class="sxs-lookup"><span data-stu-id="b125c-116">To sort records in some other order, you can open a dynaset–, snapshot–, or forward–only–type **Recordset** object by using an SQL statement with an ORDER BY clause.</span></span>
+<span data-ttu-id="6e4b8-115">Datensätze, die von einem **Recordset** -Objekt vom Typ "Tabelle" zurückgegeben werden, können nur nach den Indizes angeordnet werden, die für das zugrunde liegende **TableDef** -Objekt definiert sind.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-115">Records returned from a table-type **Recordset** object can be ordered only by the indexes defined for the underlying **TableDef** object.</span></span> <span data-ttu-id="6e4b8-116">Um Datensätze in einer anderen Reihenfolge zu sortieren, können Sie mithilfe einer SQL-Anweisung mit einer ORDER BY-Klausel einer Dynaset, Snapshot oder vorwärts Typ **Recordset** -Objekt öffnen.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-116">To sort records in some other order, you can open a dynaset–, snapshot–, or forward–only–type **Recordset** object by using an SQL statement with an ORDER BY clause.</span></span>
 
 
 > [!NOTE]
-> - <span data-ttu-id="b125c-p104">Sie brauchen keine Indizes für Tabellen zu erstellen. Bei großen, nicht-indizierten Tabellen kann der Zugriff auf einen spezifischen Datensatz oder die Erstellung eines **Recordset**-Objekts einige Zeit in Anspruch nehmen. Andererseits werden Aktualisierungs-, Anhänge- und Löschvorgänge durch das Erstellen zu vieler Indizes verlangsamt, da alle Indizes automatisch aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="b125c-p104">You don't have to create indexes for tables. With large, unindexed tables, accessing a specific record or creating a **Recordset** object can take a long time. On the other hand, creating too many indexes slows down update, append, and delete operations because all indexes are automatically updated.</span></span>
-> - <span data-ttu-id="b125c-120">Datensätze, die aus Tabellen ohne Indizes eingelesen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b125c-120">Records read from tables without indexes are returned in no particular sequence.</span></span>
-> - <span data-ttu-id="b125c-121">Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft der einzelnen **[Field](field-object-dao.md)** -Objekte im **Index**-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher die für den betreffenden Index zu verwendenden Zugriffsverfahren.</span><span class="sxs-lookup"><span data-stu-id="b125c-121">The **[Attributes](field-attributes-property-dao.md)** property of each **[Field](field-object-dao.md)** object in the **Index** object determines the order of records and consequently determines the access techniques to use for that index.</span></span>
-> - <span data-ttu-id="b125c-122">Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.</span><span class="sxs-lookup"><span data-stu-id="b125c-122">A unique index helps optimize finding records.</span></span>
-> - <span data-ttu-id="b125c-123">Indizes wirken sich nicht auf die physische Reihenfolge einer Basistabelle aus, sondern beeinflussen nur, wie vom **Recordset**-Objekt des Typs "Tabelle" auf die Datensätze zugegriffen wird, wenn ein bestimmter Index ausgewählt oder ein **Recordset** geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="b125c-123">Indexes don't affect the physical order of a base table, indexes affect only how the records are accessed by the table-type **Recordset** object when a particular index is chosen or when **Recordset** is opened.</span></span>
+> - <span data-ttu-id="6e4b8-p104">Sie brauchen keine Indizes für Tabellen zu erstellen. Bei großen, nicht-indizierten Tabellen kann der Zugriff auf einen spezifischen Datensatz oder die Erstellung eines **Recordset**-Objekts einige Zeit in Anspruch nehmen. Andererseits werden Aktualisierungs-, Anhänge- und Löschvorgänge durch das Erstellen zu vieler Indizes verlangsamt, da alle Indizes automatisch aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-p104">You don't have to create indexes for tables. With large, unindexed tables, accessing a specific record or creating a **Recordset** object can take a long time. On the other hand, creating too many indexes slows down update, append, and delete operations because all indexes are automatically updated.</span></span>
+> - <span data-ttu-id="6e4b8-120">Datensätze, die aus Tabellen ohne Indizes eingelesen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-120">Records read from tables without indexes are returned in no particular sequence.</span></span>
+> - <span data-ttu-id="6e4b8-121">Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft der einzelnen **[Field](field-object-dao.md)** -Objekte im **Index**-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher die für den betreffenden Index zu verwendenden Zugriffsverfahren.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-121">The **[Attributes](field-attributes-property-dao.md)** property of each **[Field](field-object-dao.md)** object in the **Index** object determines the order of records and consequently determines the access techniques to use for that index.</span></span>
+> - <span data-ttu-id="6e4b8-122">Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-122">A unique index helps optimize finding records.</span></span>
+> - <span data-ttu-id="6e4b8-123">Indizes wirken sich nicht auf die physische Reihenfolge einer Basistabelle aus, sondern beeinflussen nur, wie vom **Recordset**-Objekt des Typs "Tabelle" auf die Datensätze zugegriffen wird, wenn ein bestimmter Index ausgewählt oder ein **Recordset** geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-123">Indexes don't affect the physical order of a base table, indexes affect only how the records are accessed by the table-type **Recordset** object when a particular index is chosen or when **Recordset** is opened.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="b125c-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b125c-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6e4b8-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6e4b8-124">Example</span></span>
 
-<span data-ttu-id="b125c-125">In diesem Beispiel wird die **Index** -Eigenschaft verwendet, um verschiedene Datensatzreihenfolgen für ein **Recordset** vom Typ "Tabelle" festzulegen.</span><span class="sxs-lookup"><span data-stu-id="b125c-125">This example uses the **Index** property to set different record orders for a table-type **Recordset**.</span></span>
+<span data-ttu-id="6e4b8-125">In diesem Beispiel wird die **Index** -Eigenschaft verwendet, um verschiedene Datensatzreihenfolgen für ein **Recordset** vom Typ "Tabelle" festzulegen.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-125">This example uses the **Index** property to set different record orders for a table-type **Recordset**.</span></span>
 
 ```vb
     Sub IndexPropertyX() 
@@ -96,7 +97,7 @@ ms.locfileid: "25926136"
 
 <br/>
 
-<span data-ttu-id="b125c-126">Dieses Beispiel veranschaulicht die **Seek** -Methode, indem dem Benutzer erlaubt wird, anhand einer ID-Nummer nach einem Produkt zu suchen.</span><span class="sxs-lookup"><span data-stu-id="b125c-126">This example demonstrates the **Seek** method by allowing the user to search for a product based on an ID number.</span></span>
+<span data-ttu-id="6e4b8-126">Dieses Beispiel veranschaulicht die **Seek** -Methode, indem dem Benutzer erlaubt wird, anhand einer ID-Nummer nach einem Produkt zu suchen.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-126">This example demonstrates the **Seek** method by allowing the user to search for a product based on an ID number.</span></span>
 
 ```vb
     Sub SeekX() 
@@ -158,9 +159,9 @@ ms.locfileid: "25926136"
 
 <br/>
 
-<span data-ttu-id="b125c-127">Im folgenden Beispiel wird gezeigt, wie Sie mithilfe der Seek-Methode einen Datensatz in einer verknüpften Tabelle finden.</span><span class="sxs-lookup"><span data-stu-id="b125c-127">The following example shows how to use the Seek method to find a record in a linked table.</span></span>
+<span data-ttu-id="6e4b8-127">Im folgenden Beispiel wird gezeigt, wie Sie mithilfe der Seek-Methode einen Datensatz in einer verknüpften Tabelle finden.</span><span class="sxs-lookup"><span data-stu-id="6e4b8-127">The following example shows how to use the Seek method to find a record in a linked table.</span></span>
 
-<span data-ttu-id="b125c-128">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="b125c-128">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="6e4b8-128">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="6e4b8-128">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     Sub TestSeek()

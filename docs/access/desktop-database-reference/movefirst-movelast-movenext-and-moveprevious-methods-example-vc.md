@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249962(v=office.15)
 ms:contentKeyID: 48547596
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c54052c6d7f92fa70fcbe332d9896720da748544
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2d8da02821ccb6d1066288b69d2698971aeb00e2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882560"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705925"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vc"></a><span data-ttu-id="658c9-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="658c9-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VC++)</span></span>
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vc"></a><span data-ttu-id="8884d-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="8884d-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VC++)</span></span>
 
 
-<span data-ttu-id="658c9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="658c9-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8884d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8884d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="658c9-p101">In diesem Beispiel werden die Methoden MoveFirst, MoveLast, MoveNext und MovePrevious verwendet, um den Zeiger für den Datensatz eines Recordset-Objekts auf der Grundlage des angegebenen Befehls zu verschieben. Die The MoveAny-Funktion ist erforderlich, damit dieses Beispiel ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="658c9-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny function is required for this example to run.</span></span>
+<span data-ttu-id="8884d-p101">In diesem Beispiel werden die Methoden MoveFirst, MoveLast, MoveNext und MovePrevious verwendet, um den Zeiger für den Datensatz eines Recordset-Objekts auf der Grundlage des angegebenen Befehls zu verschieben. Die The MoveAny-Funktion ist erforderlich, damit dieses Beispiel ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="8884d-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny function is required for this example to run.</span></span>
 
 ```cpp 
  

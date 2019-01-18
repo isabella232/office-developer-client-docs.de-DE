@@ -6,25 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250274(v=office.15)
 ms:contentKeyID: 48548831
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bc7b8b7a61da947776fa28205e6356f0e5c24aa2
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3926c1988df0ecc19f1babbf975039d38422b32d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944137"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702831"
 ---
-# <a name="cubedef-properties-methods-and-events-ado-md"></a><span data-ttu-id="c01ad-102">CubeDef-Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="c01ad-102">CubeDef properties, methods, and events (ADO MD)</span></span>
+# <a name="cubedef-properties-methods-and-events-ado-md"></a><span data-ttu-id="31ca4-102">CubeDef-Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="31ca4-102">CubeDef properties, methods, and events (ADO MD)</span></span>
 
-<span data-ttu-id="c01ad-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c01ad-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="31ca4-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="31ca4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="propertiescollections"></a><span data-ttu-id="c01ad-104">Eigenschaften/Auflistungen</span><span class="sxs-lookup"><span data-stu-id="c01ad-104">Properties/Collections</span></span>
+## <a name="propertiescollections"></a><span data-ttu-id="31ca4-104">Eigenschaften/Auflistungen</span><span class="sxs-lookup"><span data-stu-id="31ca4-104">Properties/Collections</span></span>
 
-- [<span data-ttu-id="c01ad-105">Description-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c01ad-105">Description property</span></span>](description-property-ado-md.md)
-- [<span data-ttu-id="c01ad-106">Dimensions-Auflistung</span><span class="sxs-lookup"><span data-stu-id="c01ad-106">Dimensions collection</span></span>](dimensions-collection-ado-md.md)
-- [<span data-ttu-id="c01ad-107">Name-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c01ad-107">Name property</span></span>](name-property-ado-md.md)
-- [<span data-ttu-id="c01ad-108">Properties-Auflistung</span><span class="sxs-lookup"><span data-stu-id="c01ad-108">Properties collection</span></span>](properties-collection-ado.md)
+- [<span data-ttu-id="31ca4-105">Description-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="31ca4-105">Description property</span></span>](description-property-ado-md.md)
+- [<span data-ttu-id="31ca4-106">Dimensions-Auflistung</span><span class="sxs-lookup"><span data-stu-id="31ca4-106">Dimensions collection</span></span>](dimensions-collection-ado-md.md)
+- [<span data-ttu-id="31ca4-107">Name-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="31ca4-107">Name property</span></span>](name-property-ado-md.md)
+- [<span data-ttu-id="31ca4-108">Properties-Auflistung</span><span class="sxs-lookup"><span data-stu-id="31ca4-108">Properties collection</span></span>](properties-collection-ado.md)
 
-## <a name="events"></a><span data-ttu-id="c01ad-109">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="c01ad-109">Events</span></span>
+## <a name="events"></a><span data-ttu-id="31ca4-109">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="31ca4-109">Events</span></span>
 
-<span data-ttu-id="c01ad-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="c01ad-110">None.</span></span>
+<span data-ttu-id="31ca4-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="31ca4-110">None.</span></span>
 
