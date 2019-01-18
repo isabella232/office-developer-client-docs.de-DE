@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249248(v=office.15)
 ms:contentKeyID: 48544737
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: f2c93f652b76948439cd7f4571608f538155724b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+localization_priority: Normal
+ms.openlocfilehash: 246d9e29f084efb975783fd15c15993eba5a6e74
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881335"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726288"
 ---
-# <a name="editmodeenum"></a><span data-ttu-id="f931f-102">EditModeEnum</span><span class="sxs-lookup"><span data-stu-id="f931f-102">EditModeEnum</span></span>
+# <a name="editmodeenum"></a><span data-ttu-id="7c20c-102">EditModeEnum</span><span class="sxs-lookup"><span data-stu-id="7c20c-102">EditModeEnum</span></span>
 
-<span data-ttu-id="f931f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f931f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7c20c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7c20c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f931f-104">Gibt den Bearbeitungsstatus eines Datensatzes an.</span><span class="sxs-lookup"><span data-stu-id="f931f-104">Specifies the editing status of a record.</span></span>
+<span data-ttu-id="7c20c-104">Gibt den Bearbeitungsstatus eines Datensatzes an.</span><span class="sxs-lookup"><span data-stu-id="7c20c-104">Specifies the editing status of a record.</span></span>
 
 <br/>
 
@@ -29,39 +30,39 @@ ms.locfileid: "25881335"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="f931f-105">Konstante</span><span class="sxs-lookup"><span data-stu-id="f931f-105">Constant</span></span></p></th>
-<th><p><span data-ttu-id="f931f-106">Wert</span><span class="sxs-lookup"><span data-stu-id="f931f-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="f931f-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f931f-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="7c20c-105">Konstante</span><span class="sxs-lookup"><span data-stu-id="7c20c-105">Constant</span></span></p></th>
+<th><p><span data-ttu-id="7c20c-106">Wert</span><span class="sxs-lookup"><span data-stu-id="7c20c-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="7c20c-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7c20c-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="f931f-108"><strong>adEditNone</strong></span><span class="sxs-lookup"><span data-stu-id="f931f-108"><strong>adEditNone</strong></span></span></p></td>
-<td><p><span data-ttu-id="f931f-109">0</span><span class="sxs-lookup"><span data-stu-id="f931f-109">0</span></span></p></td>
-<td><p><span data-ttu-id="f931f-110">Gibt an, dass kein Bearbeitungsvorgang ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="f931f-110">Indicates that no editing operation is in progress.</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-108"><strong>adEditNone</strong></span><span class="sxs-lookup"><span data-stu-id="7c20c-108"><strong>adEditNone</strong></span></span></p></td>
+<td><p><span data-ttu-id="7c20c-109">0</span><span class="sxs-lookup"><span data-stu-id="7c20c-109">0</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-110">Gibt an, dass kein Bearbeitungsvorgang ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="7c20c-110">Indicates that no editing operation is in progress.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="f931f-111"><strong>adEditInProgress</strong></span><span class="sxs-lookup"><span data-stu-id="f931f-111"><strong>adEditInProgress</strong></span></span></p></td>
-<td><p><span data-ttu-id="f931f-112">1</span><span class="sxs-lookup"><span data-stu-id="f931f-112">1</span></span></p></td>
-<td><p><span data-ttu-id="f931f-113">Gibt an, dass Daten im aktuellen Datensatz geändert, aber nicht gespeichert wurden.</span><span class="sxs-lookup"><span data-stu-id="f931f-113">Indicates that data in the current record has been modified but not saved.</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-111"><strong>adEditInProgress</strong></span><span class="sxs-lookup"><span data-stu-id="7c20c-111"><strong>adEditInProgress</strong></span></span></p></td>
+<td><p><span data-ttu-id="7c20c-112">1</span><span class="sxs-lookup"><span data-stu-id="7c20c-112">1</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-113">Gibt an, dass Daten im aktuellen Datensatz geändert, aber nicht gespeichert wurden.</span><span class="sxs-lookup"><span data-stu-id="7c20c-113">Indicates that data in the current record has been modified but not saved.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="f931f-114"><strong>adEditAdd</strong></span><span class="sxs-lookup"><span data-stu-id="f931f-114"><strong>adEditAdd</strong></span></span></p></td>
-<td><p><span data-ttu-id="f931f-115">2</span><span class="sxs-lookup"><span data-stu-id="f931f-115">2</span></span></p></td>
-<td><p><span data-ttu-id="f931f-116">Gibt an, dass die <a href="addnew-method-ado.md">AddNew</a>-Methode aufgerufen wurde und der aktuelle Datensatz im Kopierpuffer ein neuer Datensatz ist, der in der Datenbank nicht gespeichert wurde.</span><span class="sxs-lookup"><span data-stu-id="f931f-116">Indicates that the <a href="addnew-method-ado.md">AddNew</a> method has been called, and the current record in the copy buffer is a new record that has not been saved in the database.</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-114"><strong>adEditAdd</strong></span><span class="sxs-lookup"><span data-stu-id="7c20c-114"><strong>adEditAdd</strong></span></span></p></td>
+<td><p><span data-ttu-id="7c20c-115">2</span><span class="sxs-lookup"><span data-stu-id="7c20c-115">2</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-116">Gibt an, dass die <a href="addnew-method-ado.md">AddNew</a>-Methode aufgerufen wurde und der aktuelle Datensatz im Kopierpuffer ein neuer Datensatz ist, der in der Datenbank nicht gespeichert wurde.</span><span class="sxs-lookup"><span data-stu-id="7c20c-116">Indicates that the <a href="addnew-method-ado.md">AddNew</a> method has been called, and the current record in the copy buffer is a new record that has not been saved in the database.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="f931f-117"><strong>adEditDelete</strong></span><span class="sxs-lookup"><span data-stu-id="f931f-117"><strong>adEditDelete</strong></span></span></p></td>
-<td><p><span data-ttu-id="f931f-118">4</span><span class="sxs-lookup"><span data-stu-id="f931f-118">4</span></span></p></td>
-<td><p><span data-ttu-id="f931f-119">Gibt an, dass der aktuelle Datensatz gelöscht wurde.</span><span class="sxs-lookup"><span data-stu-id="f931f-119">Indicates that the current record has been deleted.</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-117"><strong>adEditDelete</strong></span><span class="sxs-lookup"><span data-stu-id="7c20c-117"><strong>adEditDelete</strong></span></span></p></td>
+<td><p><span data-ttu-id="7c20c-118">4</span><span class="sxs-lookup"><span data-stu-id="7c20c-118">4</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-119">Gibt an, dass der aktuelle Datensatz gelöscht wurde.</span><span class="sxs-lookup"><span data-stu-id="7c20c-119">Indicates that the current record has been deleted.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a><span data-ttu-id="f931f-120">ADO/WFC-Entsprechung</span><span class="sxs-lookup"><span data-stu-id="f931f-120">ADO/WFC equivalent</span></span>
+### <a name="adowfc-equivalent"></a><span data-ttu-id="7c20c-120">ADO/WFC-Entsprechung</span><span class="sxs-lookup"><span data-stu-id="7c20c-120">ADO/WFC equivalent</span></span>
 
-<span data-ttu-id="f931f-121">Paket: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="f931f-121">Package: **com.ms.wfc.data**</span></span>
+<span data-ttu-id="7c20c-121">Paket: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="7c20c-121">Package: **com.ms.wfc.data**</span></span>
 
 <table>
 <colgroup>
@@ -69,21 +70,21 @@ ms.locfileid: "25881335"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="f931f-122">Konstante</span><span class="sxs-lookup"><span data-stu-id="f931f-122">Constant</span></span></p></th>
+<th><p><span data-ttu-id="7c20c-122">Konstante</span><span class="sxs-lookup"><span data-stu-id="7c20c-122">Constant</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="f931f-123">AdoEnums.EditMode.NONE</span><span class="sxs-lookup"><span data-stu-id="f931f-123">AdoEnums.EditMode.NONE</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-123">AdoEnums.EditMode.NONE</span><span class="sxs-lookup"><span data-stu-id="7c20c-123">AdoEnums.EditMode.NONE</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="f931f-124">AdoEnums.EditMode.INPROGRESS</span><span class="sxs-lookup"><span data-stu-id="f931f-124">AdoEnums.EditMode.INPROGRESS</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-124">AdoEnums.EditMode.INPROGRESS</span><span class="sxs-lookup"><span data-stu-id="7c20c-124">AdoEnums.EditMode.INPROGRESS</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="f931f-125">AdoEnums.EditMode.ADD</span><span class="sxs-lookup"><span data-stu-id="f931f-125">AdoEnums.EditMode.ADD</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-125">AdoEnums.EditMode.ADD</span><span class="sxs-lookup"><span data-stu-id="7c20c-125">AdoEnums.EditMode.ADD</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="f931f-126">AdoEnums.EditMode.DELETE</span><span class="sxs-lookup"><span data-stu-id="f931f-126">AdoEnums.EditMode.DELETE</span></span></p></td>
+<td><p><span data-ttu-id="7c20c-126">AdoEnums.EditMode.DELETE</span><span class="sxs-lookup"><span data-stu-id="7c20c-126">AdoEnums.EditMode.DELETE</span></span></p></td>
 </tr>
 </tbody>
 </table>

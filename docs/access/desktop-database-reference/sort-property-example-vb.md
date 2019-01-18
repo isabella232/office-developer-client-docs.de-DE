@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15)
 ms:contentKeyID: 48545539
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6bd5f0f894928032e975e8eebe33b18427c5dae1
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+localization_priority: Normal
+ms.openlocfilehash: 7f1d82a792961b0be398bb0ef8c2c046d9e8b375
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25891254"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726225"
 ---
-# <a name="sort-property-example-vb"></a><span data-ttu-id="fdbac-102">Sort-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="fdbac-102">Sort property example (VB)</span></span>
+# <a name="sort-property-example-vb"></a><span data-ttu-id="3c026-102">Sort-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="3c026-102">Sort property example (VB)</span></span>
 
 
-<span data-ttu-id="fdbac-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="fdbac-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3c026-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3c026-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fdbac-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="fdbac-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database. A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="3c026-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="3c026-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database. A secondary utility routine prints each row.</span></span>
 
 ```vb 
  
@@ -100,7 +101,7 @@ End Sub
 'EndSortVB 
 ```
 
-<span data-ttu-id="fdbac-106">Das ist die sekundäre Hilfsprogrammroutine, die den angegebenen Titel und den Inhalt des angegebenen **Recordset** -Objekts druckt.</span><span class="sxs-lookup"><span data-stu-id="fdbac-106">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
+<span data-ttu-id="3c026-106">Das ist die sekundäre Hilfsprogrammroutine, die den angegebenen Titel und den Inhalt des angegebenen **Recordset** -Objekts druckt.</span><span class="sxs-lookup"><span data-stu-id="3c026-106">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
 
 ```vb 
  

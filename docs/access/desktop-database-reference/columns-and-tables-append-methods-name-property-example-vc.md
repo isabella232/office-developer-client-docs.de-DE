@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249392(v=office.15)
 ms:contentKeyID: 48545322
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f592b4015d073c05fcd050350bec4ebafdb6eb54
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+localization_priority: Normal
+ms.openlocfilehash: 0fa9f903317e337b06afb4c2d0fdc1c3085df50d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882203"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726449"
 ---
-# <a name="columns-and-tables-append-methods-name-property-example-vc"></a><span data-ttu-id="15baa-102">Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="15baa-102">Columns and Tables Append Methods, Name property example (VC++)</span></span>
+# <a name="columns-and-tables-append-methods-name-property-example-vc"></a><span data-ttu-id="81926-102">Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="81926-102">Columns and Tables Append Methods, Name property example (VC++)</span></span>
 
 
-<span data-ttu-id="15baa-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="15baa-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="81926-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="81926-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="15baa-104">Im folgenden Code wird das Erstellen einer neuen Tabelle veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="15baa-104">The following code demonstrates how to create a new table.</span></span>
+<span data-ttu-id="81926-104">Im folgenden Code wird das Erstellen einer neuen Tabelle veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="81926-104">The following code demonstrates how to create a new table.</span></span>
 
 ```cpp 
  
