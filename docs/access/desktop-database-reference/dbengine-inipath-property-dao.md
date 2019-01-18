@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053070
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fd744f10d212d8ff0f7c78ca72781869ccdcd57e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f14f9f2d028bb8a9a8e71bc9d7b97ea5672466f1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928761"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717629"
 ---
 # <a name="dbengineinipath-property-dao"></a>DBEngine.IniPath-Eigenschaft (DAO)
 
@@ -32,7 +33,7 @@ Legt Informationen über den Windows-Registrierungsschlüssel fest, der Werte f�
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können die Microsoft Access-Datenbank-Engine mit der Windows-Registrierung konfigurieren. Mit der Registrierung können Sie Optionen festlegen, wie etwa installierbare ISAM-DLL-Dateien.
+Sie können das Microsoft Access-Datenbankmodul mit der Windows-Registrierung konfigurieren. Mit der Registrierung können Sie Optionen festlegen, wie etwa installierbare ISAM-DLL-Dateien.
 
 Damit diese Option wirksam wird, müssen Sie die **IniPath**-Eigenschaft festlegen, bevor Ihre Anwendung einen anderen DAO-Code aufruft. Die Wirkung dieser Einstellung ist auf die Anwendung begrenzt. Sie kann nur geändert werden, wenn Sie die Anwendung neu starten.
 

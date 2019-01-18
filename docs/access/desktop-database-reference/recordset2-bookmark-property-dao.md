@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195857(v=office.15)
 ms:contentKeyID: 48545637
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 306962eda3430a1797cf79dc04a34d2e55e9daf8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 31791e9fb3c7081989232e36a90b184ed7e31866
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930973"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699254"
 ---
 # <a name="recordset2bookmark-property-dao"></a>Recordset2.Bookmark-Eigenschaft (DAO)
 
@@ -26,7 +27,7 @@ Legt ein Lesezeichen fest, das den aktuellen Datensatz in einem **Recordset**-Ob
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für ein **Recordset** -Objekt vollständig auf Tabellen des Microsoft Access-Datenbankmoduls basiert der Wert der **Bookmarkable** -Eigenschaft True ist, und können Sie die **Bookmark** -Eigenschaft Recordset verwenden. Andere Datenbank-Produkte unterstützen Textmarken möglicherweise nicht. Beispielsweise können nicht verwenden Sie Textmarken in eine beliebige **Recordset2** -Objekt basierend auf einer verknüpften Paradox-Tabelle, die ohne Primärschlüssel.
 

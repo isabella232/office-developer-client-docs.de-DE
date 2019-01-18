@@ -1,5 +1,5 @@
 ---
-title: Verwenden von ActiveX Data Objects
+title: Verwenden von ADO (ActiveX Data Objects)
 TOCTitle: Use ActiveX Data Objects
 description: Microsoft Access enthält drei Objektmodelle, verwenden Sie bei der Erstellung, warten und Verwalten Ihrer Access-Datenbanken und der zugehörigen Daten mithilfe von Visual Basic.
 ms:assetid: 64055c45-7a27-2296-468a-015362898329
@@ -11,14 +11,15 @@ f1_keywords:
 - vbaac10.chm5285627
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d7e8e7e6abeea9cca86c928760eddb990517a207
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3b530db43a816e66b9fbef254984142aadf0b841
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887509"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719225"
 ---
-# <a name="use-activex-data-objects"></a>Verwenden von ActiveX Data Objects
+# <a name="use-activex-data-objects"></a>Verwenden von ADO (ActiveX Data Objects)
 
 **Betrifft**: Access 2013, Office 2013
 

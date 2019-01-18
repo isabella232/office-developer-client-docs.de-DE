@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052883
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b9a9a5624697779bb7231626b7440d8db9c40244
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 79c8691fcea7cf04bac7d6cd05711730b510e215
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996818"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703944"
 ---
 # <a name="recordsetaddnew-method-dao"></a>Recordset.AddNew-Methode (DAO)
 
@@ -29,7 +30,7 @@ Erstellt einen neuen Datensatz für ein aktualisierbares **[Recordset](recordset
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **AddNew**-Methode, um einen neuen Datensatz im **Recordset**-Objekt, das nach dem Recordset benannt ist, zu erstellen und hinzuzufügen. Diese Methode legt die Felder auf Standardwerte fest. Wenn keine Standardwerte angegeben sind, werden die Felder auf "Null" festgelegt (die Standardwerte, die für einen Tabellentyp **Recordset** angegeben sind).
 

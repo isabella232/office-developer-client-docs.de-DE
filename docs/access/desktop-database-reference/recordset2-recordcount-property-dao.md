@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052890
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a7dd162b9bc95e601cb5e2a8a41c81705764372c
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c23de433f26b5a54b3fee5cc69f67a07b53f8a3b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997784"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699261"
 ---
 # <a name="recordset2recordcount-property-dao"></a>Recordset2.RecordCount-Eigenschaft (DAO)
 
@@ -29,7 +30,7 @@ Gibt die Anzahl der Datensätze zurück, auf die in einem **[Recordset](recordse
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **RecordCount** -Eigenschaft, um herauszufinden, auf wie viele Datensätze in einem **Recordset** - oder **TableDef** -Objekt zugegriffen wurde. Die **RecordCount** -Eigenschaft gibt nicht an, wie viele Datensätze in einem Dynaset, Snapshot oder vorwärts Typ **Recordset** -Objekt enthalten sind, bis alle Datensätze zugegriffen wurde. Sobald auf den letzten Datensatz zugegriffen wurde, gibt die **RecordCount** -Eigenschaft die Gesamtzahl ungelöschter Datensätze im **Recordset** - oder **TableDef** -Objekt an. Um den Zugriff auf den letzten Datensatz zu erzwingen, verwenden Sie die **[MoveLast](recordset2-movelast-method-dao.md)** -Methode für das **Recordset** -Objekt. Sie können auch eine SQL- **Count** -Funktion verwenden, um die ungefähre Anzahl von Datensätzen zu bestimmen, die die Abfrage zurückgibt.
 

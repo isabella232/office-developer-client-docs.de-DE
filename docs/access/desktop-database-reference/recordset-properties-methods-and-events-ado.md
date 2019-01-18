@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249806(v=office.15)
 ms:contentKeyID: 48547019
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fea6f59479578cfd701b1adeece609c6595583a1
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d49605e923f13cd423b7ad0ac6b0d1ef64b94841
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947798"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702236"
 ---
 # <a name="recordset-properties-methods-and-events-ado"></a>Recordset-Eigenschaften, Methoden und Ereignisse (ADO)
 
@@ -37,7 +38,7 @@ ms.locfileid: "25947798"
 - [LockType-Eigenschaft](locktype-property-ado.md)
 - [MarshalOptions-Eigenschaft](marshaloptions-property-ado.md)
 - [MaxRecords-Eigenschaft](maxrecords-property-ado.md)
-- [PageCount (Eigenschaft)](pagecount-property-ado.md)
+- [PageCount-Eigenschaft](pagecount-property-ado.md)
 - [PageSize-Eigenschaft](pagesize-property-ado.md)
 - [Properties-Auflistung](properties-collection-ado.md)
 - [RecordCount-Eigenschaft](recordcount-property-ado.md)
@@ -80,7 +81,7 @@ ms.locfileid: "25947798"
 - [FetchComplete-Ereignis](fetchcomplete-event-ado.md)
 - [FetchProgress-Ereignis](fetchprogress-event-ado.md)
 - [WillChangeField- und FieldChangeComplete-Ereignisse](willchangefield-and-fieldchangecomplete-events-ado.md)
-- [WillChangeRecord- und RecordChangeComplete-Ereignisse](willchangerecord-and-recordchangecomplete-events-ado.md)
+- [WillChangeRecord und RecordChangeComplete-Ereignisse](willchangerecord-and-recordchangecomplete-events-ado.md)
 - [WillChangeRecordset- und RecordsetChangeComplete-Ereignisse](willchangerecordset-and-recordsetchangecomplete-events-ado.md)
 - [WillMove- und MoveComplete-Ereignisse](willmove-and-movecomplete-events-ado.md)
 

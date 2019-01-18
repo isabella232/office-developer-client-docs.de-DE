@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834683(v=office.15)
 ms:contentKeyID: 48547815
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ab0a04fd7282c983bd200a16108babf5e40d240c
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: c36187eef0b55681b2ba426d979f42ee8a6efea8
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026309"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716782"
 ---
 # <a name="recordset-members-dao"></a>Recordset-Member (DAO)
 
@@ -64,7 +65,7 @@ Ein Recordset -Objekt stellt die Datensätze in einer Basistabelle oder die Date
 <td><p>Wird für dieses Objekt nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="recordset-edit-method-dao.md">Edit</a></strong></p></td>
+<td><p><strong><a href="recordset-edit-method-dao.md">Bearbeiten</a></strong></p></td>
 <td><p>Kopiert den aktuellen Datensatz aus einem aktualisierbaren <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt zur nachfolgenden Bearbeitung in den Kopierpuffer.</p></td>
 </tr>
 <tr class="odd">
@@ -129,7 +130,7 @@ Ein Recordset -Objekt stellt die Datensätze in einer Basistabelle oder die Date
 <td><p>Sucht den Datensatz in einem indizierten <strong>Recordset</strong> -Objekt vom Typ Tabelle, das den angegebenen Kriterien für den aktuellen Index entspricht, und macht diesen Datensatz zum aktuellen Datensatz (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="recordset-update-method-dao.md">Aktualisieren</a></strong></p></td>
+<td><p><strong><a href="recordset-update-method-dao.md">Update</a></strong></p></td>
 <td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Speichert den Inhalt des Kopierpuffers in einem aktualisierbaren <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt.</p></td>
 </tr>

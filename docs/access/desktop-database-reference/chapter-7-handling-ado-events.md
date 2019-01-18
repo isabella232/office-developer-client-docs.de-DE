@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249004(v=office.15)
 ms:contentKeyID: 48543709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 58186a9f5612308c7762a815520d49ddce8eaf57
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: e7357cc60a3bddbf96c2abae39fecfb7107025e2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937540"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699044"
 ---
 # <a name="chapter-7-handling-ado-events"></a>Kapitel 7: Behandeln von ADO-Ereignissen
 
@@ -27,8 +28,8 @@ Durch das Verwenden des ADO-Ereignismodells entsteht mehr Aufwand für die Anwen
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
-- [Zusammenfassung der ADO-Ereignishandler](ado-event-handler-summary.md)
+- [Zusammenfassung über den ADO-Ereignishandler](ado-event-handler-summary.md)
 - [Typen von Ereignissen](types-of-events.md)
 - [Ereignisparameter](event-parameters.md)
-- [Zusammenarbeit von Ereignishandlern](how-event-handlers-work-together.md)
+- [Zusammenspiel von Ereignishandlern](how-event-handlers-work-together.md)
 - [ADO-Ereignisinstanziierung nach Sprache (ADO)](ado-event-instantiation-by-language-ado.md)

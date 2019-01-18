@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193511(v=office.15)
 ms:contentKeyID: 48544689
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 549559756a2929e6b2daad01c4a0542a973a8bca
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 1a0e448662384572163fca074e554a5e30be30a7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937120"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703601"
 ---
 # <a name="field-members-dao"></a>Elemente des (DAO)
 

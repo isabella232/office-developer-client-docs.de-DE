@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249474(v=office.15)
 ms:contentKeyID: 48545648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4b489400536675fccced8f87aae515b019b87123
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9fcf837a02c40d11fecfa56b8aa34ac80a848411
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936861"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720541"
 ---
 # <a name="chapter-3-examining-data"></a>Kapitel 3: Untersuchen von Daten
 

@@ -6,14 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250215(v=office.15)
 ms:contentKeyID: 48548576
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e80df3dad65edb23e7fcd4e6828f2435df405e70
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 649f1db283b772a0f6798fae0d56a3a80c59e21b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947777"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701606"
 ---
-# <a name="ole-db-providers"></a>OLE DB-Anbietern
+# <a name="ole-db-providers"></a>OLE DB-Anbieter
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -38,6 +39,6 @@ ADO stellt den verschiedenen OLE DB-Anbietern eine konsistente Schnittstelle auf
 
 Dieser Abschnitt enthält die folgenden Themen:
 
-- [Data Providers](data-providers.md)
+- [Datenanbieter](data-providers.md)
 
 - [Dienstanbieter und Komponenten](service-providers-and-components.md)
