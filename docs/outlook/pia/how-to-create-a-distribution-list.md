@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184637(v=office.15)
 ms:contentKeyID: 55119841
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: 19b282a3b3e756814aa2add07cda4be7609206ac
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: f37338209ea468d0143dfd1063c3c57216bc13ea
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25407135"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721759"
 ---
 # <a name="create-a-distribution-list"></a>Erstellen einer Verteilerliste
 
@@ -26,7 +27,7 @@ In diesem Beispiel wird veranschaulicht, wie eine Verteilerliste erstellt und de
 Im folgenden Codebeispiel wird von CreateDistributionList eine Verteilerliste erstellt, indem durch Aufrufen der [CreateItem(OlItemType)](https://msdn.microsoft.com/library/bb610587\(v=office.15\))-Methode ein [DistListItem](https://msdn.microsoft.com/library/bb645382\(v=office.15\))-Objekt erstellt wird. Anschließend wird ein [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\))-Objekt erstellt und die [GetTable(Object, Object)](https://msdn.microsoft.com/library/bb612189\(v=office.15\))-Methode aufgerufen, um alle Kontakte im Standardordner für Kontakte zu finden, deren Wert der [Subject](https://msdn.microsoft.com/library/bb624088\(v=office.15\))-Eigenschaft "Top Customer" lautet und deren Wert der [Email1Address](https://msdn.microsoft.com/library/bb609902\(v=office.15\))-Eigenschaft nicht leer ist. Nachdem alle Kontakte identifiziert wurden, wird der **Email1Address**-Name wird als eine Spalte zur **Tabelle** hinzugefügt. Dann erstellt CreateDistributionList ein [Recipient](https://msdn.microsoft.com/library/bb624370\(v=office.15\))-Objekt mithilfe der [CreateRecipient(String)](https://msdn.microsoft.com/library/bb609962\(v=office.15\))-Methode des [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\))-Objekts. Schließlich zeigt CreateDistributionList dem Benutzer die Verteilerliste "Top Customers" an.
 
 > [!NOTE] 
-> Sie müssen ein aufgelöstes **Recipient**-Objekt als Parameter für die [AddMember(Recipient)](https://msdn.microsoft.com/library/bb612290(v=office.15))-Methode des [DistListItem](https://msdn.microsoft.com/library/bb645382\(v=office.15\))-Objekts übergeben. Zum Auflösen eines **Empfänger**-Objekts verwenden Sie die [Resolve()](https://msdn.microsoft.com/library/bb624165(v=office.15))-Methode.
+> Sie müssen ein aufgelöstes **Recipient**-Objekt als Parameter für die [AddMember(Recipient)](https://msdn.microsoft.com/library/bb612290(v=office.15))-Methode des [DistListItem](https://msdn.microsoft.com/library/bb645382(v=office.15))-Objekts übergeben. Zum Auflösen eines **Empfänger**-Objekts verwenden Sie die [Resolve()](https://msdn.microsoft.com/library/bb624165(v=office.15))-Methode.
 
 Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die **using**-Anweisung darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgende Codezeile zeigt, wie Sie den Import und die Zuweisung in C\# vornehmen.
 

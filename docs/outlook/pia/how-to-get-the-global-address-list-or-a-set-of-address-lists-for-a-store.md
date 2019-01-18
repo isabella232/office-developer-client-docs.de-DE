@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184631(v=office.15)
 ms:contentKeyID: 55119800
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: b27c6c6fd9cf70a691f4a2df628a342cf024d8d6
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: 582b0e836edc361d1d8717f94a5d7490c57cd530
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25406456"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719464"
 ---
 # <a name="get-the-global-address-list-or-a-set-of-address-lists-for-a-store"></a>Abrufen der globalen Adressliste oder eines Satzes von Adresslisten für einen Speicher
 
@@ -83,7 +84,7 @@ public Outlook.AddressList GetGlobalAddressList(Outlook.Store store)
 }
 ```
 
-Das zweite Codebeispiel enthält die EnumerateAddressListsForStore-Methode und die GetAddressLists-Funktion. Die EnumerateAddressListsForStore-Methode zeigt den Typ und die Auflösungsreihenfolge jeder für den aktuellen Speicher definierten Adressliste an. EnumerateAddressListsForStore ruft zuerst den aktuellen Speicher ab und ruft dann GetAddressLists auf, um ein generisches [List\<T\>](https://msdn.microsoft.com/de-DE/library/6sh2ey19)-Objekt von .NET Framework abzurufen, das AddressList-Objekte für den aktuellen Speicher enthält. 
+Das zweite Codebeispiel enthält die EnumerateAddressListsForStore-Methode und die GetAddressLists-Funktion. Die EnumerateAddressListsForStore-Methode zeigt den Typ und die Auflösungsreihenfolge jeder für den aktuellen Speicher definierten Adressliste an. EnumerateAddressListsForStore ruft zuerst den aktuellen Speicher ab und ruft dann GetAddressLists auf, um ein generisches [List\<T\>](https://msdn.microsoft.com/en-us/library/6sh2ey19)-Objekt von .NET Framework abzurufen, das AddressList-Objekte für den aktuellen Speicher enthält. 
 
 GetAddressLists zählt jede für die Sitzung definierte Adressliste auf und verwendet das PropertyAccessor-Objekt und die benannte MAPI-Eigenschaft https://schemas.microsoft.com/mapi/proptag/0x3D150102, um die PR\_EMSMDB\_SECTION\_UID-Eigenschaft einer Adressliste und die PR\_EMSMDB\_SECTION\_UID-Eigenschaft eines aktuellen Speichers abzurufen. GetGlobalAddressList identifiziert eine Adressliste als einem Speicher zugeordnet, wenn ihre PR\_EMSMDB\_SECTION\_UID-Eigenschaften übereinstimmen, und gibt eine Menge von Adresslisten für den aktuellen Speicher zurück. Anschließend verwendet EnumerateAddressListsForStore die Eigenschaften [AddressListType](https://msdn.microsoft.com/library/bb610942\(v=office.15\)) und [ResolutionOrder](https://msdn.microsoft.com/library/bb646853\(v=office.15\)) des **AddressList**-Objekts, um den Typ und die Auflösungsreihenfolge für jede zurückgegebene Adressliste anzuzeigen.
 

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d71dd44d2dfc39124c5300d2597f5d8ed1e95ebb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: 356f4470be26ae3803a53af1cec34b3ac6eb0cc9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395413"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723033"
 ---
 # <a name="iconvertersessionmimetomapi"></a>IConverterSession::MIMEToMAPI
 
@@ -69,6 +69,9 @@ CCSF_INCLUDE_BCC
 CCSF_USE_RTF
   
 > Der HTML-Textkörper des MIME-Streams sollte auf Rich Text Format (RTF) in der MAPI-Nachricht konvertiert werden.
+
+CCSF_GLOBAL_MESSAGE
+> Der Konverter sollte den MIME-Stream als internationale Nachricht (EAI/RFC6530) behandeln. In Outlook 2013 unterstützt nicht.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -76,7 +79,7 @@ E_INVALIDARG
   
 > Gibt an, dass _Pstm_ **null ist**, _Pmsg_ **null ist**oder _UlFlags_ ungültig ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie **CCSF_USE_RTF** als Teil des _UlFlags_ angegeben haben, und der Nachricht Zielspeicher HTML- und RTF unterstützt, wird die MAPI-Nachricht in HTML oder RTF konvertiert werden. Wenn die Nachricht in RTF konvertiert wird, wird das Format der konvertierte komprimiert RTF, HTML-Code wird in der komprimierten RTF-Zeichenfolge eingebettet werden, und die Zeichenfolge wird in der [PidTagRtfCompressed kanonische-Eigenschaft](pidtagrtfcompressed-canonical-property.md)enthalten sein.
   

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a04acf17-4b2d-458e-9852-b6074acac096
 description: 'Zuletzt geändert: 18 Juli 2013'
-ms.openlocfilehash: edb67fde04a3aa27713c3de47a9a0e7f01eb4b97
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: adc6318ab36818b4c423bb6b1dc1b083b3fb54eb
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399553"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706884"
 ---
 # <a name="registering-services-and-service-providers-in-mapisvcinf"></a>Registrieren von Diensten und Dienstanbietern in MapiSvc.inf
 
@@ -48,6 +48,6 @@ Darüber hinaus kann der Pfad, den Sie verwenden in und aus Unicode mithilfe der
 > [!CAUTION]
 > Sie werden Fehler bemerken, wenn Sie einen Pfad auswählen, der Zeichen enthält, die eine solche eine Schleife durch die Funktionen [MultiByteToWideChar](https://msdn.microsoft.com/library/windows/desktop/dd319072%28v=vs.85%29.aspx/) und [WideCharToMultiByte](https://msdn.microsoft.com/library/windows/desktop/dd374130%28v=vs.85%29.aspx/) überstehen kann nicht. 
   
-Für diese Funktionalität veranschaulicht im [Beispiel umgebrochen PST](https://ol2010mapisamples.codeplex.com/) auf CodePlex wurde überarbeitet – die relevante Funktionalität in **MergeWithMapiSvc** und **GenerateProviderPath**ist.
+Für diese Funktionalität veranschaulicht der [umbrochen PST Beispiel](https://github.com/stephenegriffin/Outlook2010CodeSamples) auf GitHub wurde überarbeitet - die relevante Funktionalität in **MergeWithMapiSvc** und **GenerateProviderPath**ist.
   
 
