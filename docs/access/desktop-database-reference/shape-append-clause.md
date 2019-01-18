@@ -1,19 +1,20 @@
 ---
-title: Append-Klausel für Formen
+title: Shape Append-Klausel
 TOCTitle: Shape Append clause
 ms:assetid: 8f29afc3-fb93-4439-b67b-cad0eed0bda9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249633(v=office.15)
 ms:contentKeyID: 48546301
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7eab008a03cf016edc259ef5e9d41cf320e85c8c
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+localization_priority: Normal
+ms.openlocfilehash: 40c35e8b2c3fb3f0b92bf261b62c252a61a367b4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944850"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726351"
 ---
-# <a name="shape-append-clause"></a>Append-Klausel für Formen
+# <a name="shape-append-clause"></a>Shape Append-Klausel
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -124,10 +125,10 @@ SHAPE führt SELECT- \* von t1; Drop t1-Tabelle und (Wählen Sie \* aus t2 verkn
 
 Dieser Abschnitt enthält die folgenden Themen:
 
-- [Operation of Non-Parameterized Commands](operation-of-non-parameterized-commands.md)
+- [Von nicht parametrisierten Befehlen](operation-of-non-parameterized-commands.md)
 
-- [Operation of Parameterized Commands](operation-of-parameterized-commands.md)
+- [Von parametrisierten Befehlen](operation-of-parameterized-commands.md)
 
-- [Hybrid Commands](hybrid-commands.md)
+- [Hybridbefehle](hybrid-commands.md)
 
 - [Einfügen von COMPUTE-Klauseln in SHAPE-Befehlen](intervening-shape-compute-clauses.md)

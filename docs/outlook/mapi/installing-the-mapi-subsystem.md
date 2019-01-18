@@ -3,17 +3,17 @@ title: Installieren des MAPI-Subsystems
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 29fb4c44-1a59-457e-813b-a982bd72891c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: adb4d09ccce95683ac46e7b271fafa328b1a9f97
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+localization_priority: Priority
+ms.openlocfilehash: 112a683f5967f8740c2d21285eb4ebbc0f455c48
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575350"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722438"
 ---
 # <a name="installing-the-mapi-subsystem"></a>Installieren des MAPI-Subsystems
 

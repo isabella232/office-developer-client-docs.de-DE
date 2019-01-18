@@ -3,17 +3,17 @@ title: Erstellen von MAPI-Anwendungen für 32- und 64-Bit-Plattformen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d218ba2d-7a2e-4c33-a09b-a8c7e27f9726
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bc98b201b31048e22e093d92c9cf2d5ff1fb0257
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+localization_priority: Priority
+ms.openlocfilehash: 74f321d2c6c8b5159191d4dcdb62e0db21132435
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383149"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700416"
 ---
 # <a name="building-mapi-applications-on-32-bit-and-64-bit-platforms"></a>Erstellen von MAPI-Anwendungen für 32- und 64-Bit-Plattformen
 

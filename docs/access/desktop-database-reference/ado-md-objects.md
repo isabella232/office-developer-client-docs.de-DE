@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fca73b9e8a77e102ad694dde8fd9759b20c1fcaf
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+localization_priority: Normal
+ms.openlocfilehash: a2d3acf1b236e23522da0143d577bbcbeacbb4b7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910838"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726211"
 ---
 # <a name="ado-md-objects"></a>ADO MD-Objekte
 
@@ -46,7 +47,7 @@ ms.locfileid: "25910838"
 <td><p>Stellt die Ergebnisse einer multidimensionalen Abfrage dar. Es ist eine Auflistung von Zellen, die aus Cubes oder anderen Zellmengen ausgewählt wurden.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="cubedef-object-ado-md.md">CubeDef-Objekts</a></p></td>
+<td><p><a href="cubedef-object-ado-md.md">CubeDef</a></p></td>
 <td><p>Stellt einen Cube aus einem multidimensionalen Schema dar, das eine Reihe verknüpfter Dimensionen enthält.</p></td>
 </tr>
 <tr class="even">

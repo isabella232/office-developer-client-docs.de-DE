@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052900
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1236b606f81533922844026d87644b7724e68977
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+localization_priority: Normal
+ms.openlocfilehash: a557a4941f5b4aa511489c5d057871df5fa72c08
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937568"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726064"
 ---
 # <a name="fieldsourcetable-property-dao"></a>Field.SourceTable-Eigenschaft (DAO)
 
@@ -51,7 +52,7 @@ Bei einem **Field**-Objekt hängt die Verwendung der Eigenschaften **SourceField
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef-Objekt</strong></p></td>
+<td><p><strong>QueryDef</strong></p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
