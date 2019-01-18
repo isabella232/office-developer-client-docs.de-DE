@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835953(v=office.15)
 ms:contentKeyID: 48548360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ee43d82b269d472ac850f53d865a5b4bbfb954de
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 249dabfa13bac6973cea4bd69e0867292c4a6967
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929244"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718210"
 ---
 # <a name="fieldsourcefield-property-dao"></a>Field.SourceField-Eigenschaft (DAO)
 
@@ -47,7 +48,7 @@ Bei einem **Field**-Objekt hängt die Verwendung der Eigenschaften **SourceField
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef-Objekt</strong></p></td>
+<td><p><strong>QueryDef</strong></p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">

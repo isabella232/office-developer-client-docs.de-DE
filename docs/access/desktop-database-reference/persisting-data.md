@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250010(v=office.15)
 ms:contentKeyID: 48547715
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9d72ba6d895fc5aac2612eb3f81ecc95ac032d49
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f5788216a20e62cfc39fd2081f4f672bc4f9b808
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946748"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713961"
 ---
 # <a name="persisting-data"></a>Speichern von Daten
 
@@ -105,8 +106,8 @@ Im folgenden Beispiel wird mit den Methoden **Save** und **Open** ein **Recordse
 
 Dieser Abschnitt enthält die folgenden Themen:
 
-- [More About Recordset Persistence](more-about-recordset-persistence.md)
+- [Weitere Informationen zur Permanenz von Recordsets](more-about-recordset-persistence.md)
 
-- [Beibehalten von gefilterten und hierarchischen Recordsets](persisting-filtered-and-hierarchical-recordsets.md)
+- [Speichern von gefiltert und hierarchische Recordsets](persisting-filtered-and-hierarchical-recordsets.md)
 
 - [Persisting Records in XML Format (ADO)](persisting-records-in-xml-format.md)

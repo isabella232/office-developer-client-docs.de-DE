@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm35083
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c648e7ea8700a6881e3cc2deda4fd2ee9955c8b1
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 0bcf0a37f8c1596856f5d7b921430371d620f7a3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923811"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711070"
 ---
 # <a name="browseto-macro-action"></a>BrowseTo-Makroaktion
 
@@ -56,7 +57,7 @@ Die **WechselnZu** -Aktion wird mit den folgenden Argumenten verwendet.
 <td><p>Ersetzt, wenn angegeben, die Bedingung der Datensatzquelle des Objekts.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Page</p></td>
+<td><p>Seite</p></td>
 <td><p>Legt, wenn angegeben, die Seite des Endlosformulars fest, die als aktuelle Seite festgelegt wird. Dieses Argument ist nur Web.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +68,7 @@ Die **WechselnZu** -Aktion wird mit den folgenden Argumenten verwendet.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Argument PathToSubFormControl muss mit der Syntax im folgenden Codebeispiel wird angegeben werden:
 

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248984(v=office.15)
 ms:contentKeyID: 48543651
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5d5b08478b714a9b70e5cb08daff6e04b8883071
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3169b7eaab6ad290bfc385881f5de69edc80111f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026379"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716180"
 ---
 # <a name="ado-methods"></a>ADO-Methoden
 
@@ -61,7 +62,7 @@ ms.locfileid: "26026379"
 <td><p>Alle an der aktuellen oder neuen Zeile eines <strong>Recordset</strong>-Objekts oder der <strong>Fields</strong>-Auflistung eines <strong>Record</strong>-Objekts vorgenommenen Änderungen werden abgebrochen, bevor die <strong>Update</strong>-Methode aufgerufen wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="clear-method-ado.md">Löschen</a></p></td>
+<td><p><a href="clear-method-ado.md">Clear</a></p></td>
 <td><p>Alle <strong>Error</strong> -Objekte werden aus der <strong>Errors</strong> -Auflistung entfernt.</p></td>
 </tr>
 <tr class="odd">
@@ -177,7 +178,7 @@ ms.locfileid: "26026379"
 <td><p>Datenbank-Schemainformationen werden vom Anbieter abgerufen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="read-method-ado.md">Read</a></p></td>
+<td><p><a href="read-method-ado.md">Lesen</a></p></td>
 <td><p>Eine angegebene Anzahl von Bytes aus einem <strong>Stream</strong>-Objekt wird abgerufen.</p></td>
 </tr>
 <tr class="even">

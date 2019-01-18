@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248866(v=office.15)
 ms:contentKeyID: 48543270
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bcfde7e343a37d65356e1f9ed8d879030913f5ed
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8bf2234e5935c2a1a13871e7e45c980fb9f33109
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25868784"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713779"
 ---
 # <a name="using-visual-c-extensions"></a>Verwenden von Visual C++-Erweiterungen
 
@@ -117,7 +118,7 @@ _**Bindungsendeinträge**_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Class</em></p></td>
+<td><p><em>Klasse</em></p></td>
 <td><p>Klasse, in der die Bindungseinträge und C/C++-Variablen definiert werden.</p></td>
 </tr>
 <tr class="even">
@@ -133,7 +134,7 @@ _**Bindungsendeinträge**_
 <td><p>Name der C/C++-Variablen, in der das <strong>Recordset</strong>-Feld gespeichert wird.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Size</em></p></td>
+<td><p><em>Größe</em></p></td>
 <td><p>Maximale Größe von <em>Buffer</em> in Byte. Wenn <em>Buffer</em> eine Zeichenfolge mit variabler Länge enthält, lassen Sie Platz für eine Null am Ende.</p></td>
 </tr>
 <tr class="even">

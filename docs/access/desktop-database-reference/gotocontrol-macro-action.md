@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834370(v=office.15)
 ms:contentKeyID: 48547705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3e5318652430f6cb9564fb1bb02832cc120b080b
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c056f2b0922402ea7cde7cf767969b73f912f572
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026246"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715200"
 ---
 # <a name="gotocontrol-macro-action"></a>GoToControl-Makroaktion
 
@@ -19,7 +20,7 @@ ms.locfileid: "26026246"
 
 Sie können die **GeheZuSteuerelement** -Aktion verwenden, um den Fokus auf das angegebene Feld oder Steuerelement im aktuellen Datensatz des geöffneten Formulars, Datenblattes, Tabellendatenblatt oder Datenblatt Abfragen. Sie können diese Aktion verwenden, wenn ein bestimmtes Feld oder Steuerelement den Fokus haben soll. Dieses Feld oder Steuerelement kann dann für Vergleiche oder **SuchenDatensatz** -Aktionen verwendet. Sie können die Aktion auch zum Navigieren in einem Formular basierend auf bestimmten Bedingungen verwenden. Wenn der Benutzer z. B. im Steuerelement „Verheiratet“ auf einem Versicherungsformular „Nein“ angibt, kann der Fokus automatisch das Steuerelement „Name des Partners/der Partnerin“ überspringen und zum nächsten Steuerelement wechseln.
 
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 > [!NOTE]
 > Diese Aktion ist nicht für die Verwendung mit Datenzugriffsseiten verfügbar.
@@ -47,7 +48,7 @@ Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können die **GeheZuSteuerelement** -Aktion um den Fokus auf ein Steuerelement in einem ausgeblendeten Formular zu verschieben.
 

@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052887
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8b45d0bdf605f77084353da065c2cc8c674bd24e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 1ebf963695b2d754a4501077e2236c52280a9a2e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922881"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714528"
 ---
 # <a name="recordsetbookmark-property-dao"></a>Recordset.Bookmark-Eigenschaft (DAO)
 
@@ -30,7 +31,7 @@ Legt eine Textmarke fest oder gibt sie zurück. Sie identifiziert den aktuellen 
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für ein **Recordset** -Objekt vollständig auf Tabellen des Microsoft Access-Datenbankmoduls basiert der Wert der **Bookmarkable** -Eigenschaft True ist, und können Sie die **Bookmark** -Eigenschaft **Recordset-Objekt**. Andere Datenbank-Produkte unterstützen Textmarken möglicherweise nicht. Sie können Textmarken nicht in beliebigen **Recordset** -Objekten verwenden, die auf einer verknüpften Paradox-Tabelle basieren, die keinen primären Schlüssel besitzt.
 

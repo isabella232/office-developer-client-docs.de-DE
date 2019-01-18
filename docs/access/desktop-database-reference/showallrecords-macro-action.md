@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195587(v=office.15)
 ms:contentKeyID: 48545538
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c4ea531de8c5b99c9ff85eacddcc79a596caebd5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 201b284a56fbd3030b41a95424b41c73ee13e385
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922041"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721059"
 ---
 # <a name="showallrecords-macro-action"></a>ShowAllRecords-Makroaktion
 
@@ -21,11 +22,11 @@ ms.locfileid: "25922041"
 
 Sie können die **AnzeigenAlleDatensätze** -Aktion verwenden, um alle zugewiesenen Filter aus der aktiven Tabelle, Abfrage-Resultset oder Formular zu entfernen und alle Datensätze in der Tabelle oder des Resultsets oder alle Datensätze in des Formulars zugrunde liegenden Tabelle oder Abfrage anzeigen.
 
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die **AnzeigenAlleDatensätze** -Aktion verfügt nicht über keine Argumente.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können diese Aktion verwenden, um sicherzustellen, dass alle Datensätze (einschließlich aller veränderten oder neuen Datensätze) für eine Tabelle, Abfrage-Resultset oder Formular angezeigt werden. Diese Aktion bewirkt, dass eine erneute Abfrage der Datensätze in einem Formular oder Unterformular.
 

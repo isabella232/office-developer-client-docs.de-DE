@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248958(v=office.15)
 ms:contentKeyID: 48543558
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a27d8e98d6768ace36d7c66c95191b0d1484e86a
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2e8de2caf2abc53b0dbd014f21a85a6d54749033
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949901"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717650"
 ---
 # <a name="copyto-method-ado"></a>CopyTo-Methode (ADO)
 
@@ -32,7 +33,7 @@ Kopiert die angegebene Anzahl von Zeichen oder Bytes (in Abhängigkeit vom [Type
 <br/><br/>**Hinweis**: der *DestStream* -Parameter möglicherweise einen Proxy des **Stream** -Objekts nicht, da dies erfordert Zugriff auf eine private Schnittstelle am **Stream** -Objekt, das an den Client nicht remotefähig.|
 |*NumChars* |Optional. Ein **Integer** -Wert, der angibt, die Anzahl von Bytes oder Zeichen von der aktuellen Position in der Quelle **Stream-Objekt** an das Ziel **Stream**kopiert werden sollen. Der Standardwert ist-1, gibt an, dass alle Zeichen oder Bytes in [EOS](eos-property-ado.md)von der aktuellen Position kopiert werden.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Methode kopiert die angegebene Anzahl von Zeichen oder Bytes ab der durch die Position-Eigenschaft angegebenen aktuellen Position. Ist die angegebene Anzahl höher als die verfügbare Anzahl von Bytes bis zu EOS, werden nur die Zeichen oder Bytes ab der aktuellen Position bis zu EOS kopiert. Wenn der Wert für NumChars -1 oder nicht angegeben ist, werden alle Zeichen oder Bytes ab der aktuellen Position kopiert.
 

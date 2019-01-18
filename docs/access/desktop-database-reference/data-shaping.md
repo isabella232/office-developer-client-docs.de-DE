@@ -6,14 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249390(v=office.15)
 ms:contentKeyID: 48545305
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 96a5d7ad82c7cb9182f95b428ff17c9df60c47b3
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ad507ac8c963f1d6ead7bc3bf444e694d83f90e3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947098"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716810"
 ---
-# <a name="data-shaping"></a>Datenstrukturierung
+# <a name="data-shaping"></a>Datenmodellierung
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -41,5 +42,5 @@ Dieser Abschnitt enthält die folgenden Themen:
 
 - [Umstrukturierung](reshaping.md)
 - [Untergeordnete Aggregate](grandchild-aggregates.md)
-- [Parametrisierte Befehle mit dazwischen liegenden COMPUTE-Befehlen](parameterized-commands-with-intervening-compute-commands.md)
+- [Parametrisierte Befehle mit dazwischenliegenden COMPUTE-Befehlen](parameterized-commands-with-intervening-compute-commands.md)
 - [Speichern hierarchischer Recordsets](persisting-hierarchical-recordsets.md)

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197001(v=office.15)
 ms:contentKeyID: 48546090
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8737de80c38626b72933eb15a59e08ab0452ce74
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c1b127995a2f9a0af7da80e9df862259b570870e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998812"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721647"
 ---
 # <a name="moveandsizewindow-macro-action"></a>MoveAndSizeWindow-Makroaktion
 
@@ -19,7 +20,7 @@ ms.locfileid: "25998812"
 
 Wenn Sie das Dokument im Fensteroptionen auf überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden eingerichtet haben, können Sie die **Verschiebenundgrößeändernfenster** -Aktion verwenden, verschieben oder die Größe des aktiven Fensters. Informationen zum Festlegen der Dokumentfensteroptionen finden Sie unter "Hinweise".
 
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die **Verschiebenundgrößeändernfenster** -Aktion hat die folgenden Argumente.
 
@@ -62,7 +63,7 @@ Sie müssen einen Wert für mindestens ein Argument eingeben.
 > [!NOTE]
 > Jeder Messung ist in Zoll oder Zentimeter, abhängig von den regionalen Einstellungen in Windows-Systemsteuerung.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zum Einrichten einer Anwendung auf überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden, verwenden Sie die folgende Schritte aus:
 

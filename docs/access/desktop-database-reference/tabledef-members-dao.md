@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822714(v=office.15)
 ms:contentKeyID: 48547408
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c9fe82c2d3edd5127ef6e2944f10d496a558d1fb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ff9f6841b50b70f8846c829f0ee7b911c84c0e04
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920522"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721080"
 ---
 # <a name="tabledef-members-dao"></a>TableDef-Member (DAO)
 
@@ -93,7 +94,7 @@ Ein TableDef -Objekt stellt die gespeicherte Definition einer Basistabelle oder 
 <td><p>Gibt eine <strong>Fields</strong>-Auflistung zurück, die alle gespeicherten <strong>Field</strong>-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="tabledef-indexes-property-dao.md">Indexes</a></strong></p></td>
+<td><p><strong><a href="tabledef-indexes-property-dao.md">Indizes</a></strong></p></td>
 <td><p>Gibt eine <strong>Indexes</strong>-Auflistung zurück, die alle gespeicherten <strong>Index</strong>-Objekte für die angegebene Tabelle enthält. Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">

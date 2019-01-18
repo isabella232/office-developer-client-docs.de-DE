@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053362
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ec7947fd5d8d15eee92a033a47a8574f2933e73b
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 35afc836bf2fb2a728453ac1ed240fd50a9673da
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998385"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711021"
 ---
 # <a name="recordsetgetrows-method-dao"></a>Recordset.GetRows-Methode (DAO)
 
@@ -61,7 +62,7 @@ Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt a
 
 Variant
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **GetRows** -Methode, um Datensätze aus einem **Recordset** zu kopieren. **GetRows** gibt ein zweidimensionales Array zurück. Das erste Subskript identifiziert das Feld und das zweite identifiziert die Zeilenanzahl. Beispielsweise `intField` das Feld dar und `intRecord` Nummer der Zeile:
 

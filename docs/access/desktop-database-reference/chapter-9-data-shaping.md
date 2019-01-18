@@ -1,19 +1,20 @@
 ---
-title: 'Kapitel 9: Datenstrukturierung'
+title: 'Kapitel 9: Daten modellieren'
 TOCTitle: 'Chapter 9: Data shaping'
 ms:assetid: f66a319f-1b3d-c4a3-50b3-af1a47540832
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250253(v=office.15)
 ms:contentKeyID: 48548739
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 53a74a53b8c741921ad51ae79ca18e95cda2923d
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 43ad9d5e989bc1c6f4a54fb4882cfe3c3e357fd1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936553"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721554"
 ---
-# <a name="chapter-9-data-shaping"></a>Kapitel 9: Datenstrukturierung
+# <a name="chapter-9-data-shaping"></a>Kapitel 9: Daten modellieren
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -25,11 +26,11 @@ Die Datenstrukturierungssyntax stellt außerdem weitere Funktionen bereit. Entwi
 
 Weitere Informationen zur Datenstrukturierung finden Sie unter den folgenden Themen:
 
-- [Erforderliche Anbieter für die datenstrukturierung](required-providers-for-data-shaping.md)
-- [Compute-Klausel für Formen](shape-compute-clause.md)
-- [Erstellen hierarchischer Recordsets](fabricating-hierarchical-recordsets.md)
+- [Erforderliche Anbieter für Datenmodellierung](required-providers-for-data-shaping.md)
+- [Shape Compute-Klausel](shape-compute-clause.md)
+- [Fabrizieren hierarchischer Recordsets](fabricating-hierarchical-recordsets.md)
 - [Zugreifen auf Zeilen in einem hierarchischen Recordset](accessing-rows-in-a-hierarchical-recordset.md)
-- [Formale Grammatik für Formen](formal-shape-grammar.md)
+- [Formal Shape Grammar](formal-shape-grammar.md)
 - [Funktionen (Visual Basic for Applications)](visual-basic-for-applications-functions.md)
 - [Shape Append-Klausel (ADO)](shape-append-clause.md)
 - [Datenstrukturierung (ADO)](data-shaping.md)

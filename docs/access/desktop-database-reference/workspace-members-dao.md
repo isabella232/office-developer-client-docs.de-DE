@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845437(v=office.15)
 ms:contentKeyID: 48543374
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 525b261f5184f520d6f24c81f3d446fee8aa800e
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8a2105c13f5f7ce9a75e7e18e20477d8b283543a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936959"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719233"
 ---
 # <a name="workspace-members-dao"></a>Arbeitsbereichsmitglieder (DAO)
 
@@ -82,11 +83,11 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="workspace-connections-property-dao.md">Connections</a></strong></p></td>
+<td><p><strong><a href="workspace-connections-property-dao.md">Verbindungen</a></strong></p></td>
 <td><p>Gibt eine <strong>Connections</strong>-Auflistung zurück, die die aktuellen Verbindungen im angegebenen <strong>Workspace</strong>-Objekt darstellt. Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="workspace-databases-property-dao.md">Databases</a></strong></p></td>
+<td><p><strong><a href="workspace-databases-property-dao.md">Datenbanken</a></strong></p></td>
 <td><p>Gibt eine <strong>Databases</strong>-Auflistung zurück, die die geöffneten Datenbanken im angegebenen <strong>Workspace</strong>-Objekt darstellt. Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">

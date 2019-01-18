@@ -1,19 +1,20 @@
 ---
-title: 'Kapitel 1: ADO-Grundlagen'
+title: 'Kapitel 1: Grundlegendes zu ADO'
 TOCTitle: 'Chapter 1: ADO fundamentals'
 ms:assetid: d9834665-062b-c469-77a6-7fd9ea2a848e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250096(v=office.15)
 ms:contentKeyID: 48548054
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d5177da1cb271a93e058d0d03972dad277fccc91
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c0206545f14fdcc80312baa03137e933c545a789
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937435"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716964"
 ---
-# <a name="chapter-1-ado-fundamentals"></a>Kapitel 1: ADO-Grundlagen
+# <a name="chapter-1-ado-fundamentals"></a>Kapitel 1: Grundlegendes zu ADO
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -21,7 +22,7 @@ Dieses Kapitel enthält eine Einführung in die ADO-Bibliothek. Hier werden die 
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
-- [Was können Sie mit ADO machen.](what-you-can-do-with-ado.md)
+- [Was Sie mit ADO tun können](what-you-can-do-with-ado.md)
 - [Fehler](errors.md)
 - [HelloData: Eine einfache ADO-Anwendung (ADO)](hellodata-a-simple-ado-application.md)
 - [OLE DB-Anbieter (ADO)](ole-db-providers.md)

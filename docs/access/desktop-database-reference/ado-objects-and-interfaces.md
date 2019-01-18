@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249927(v=office.15)
 ms:contentKeyID: 48547471
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fa301974b4b417d09b0439b3970ee366eeb5d06e
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 539feb1918877189548d0e7cff6ceb28e50abddc
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910727"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718861"
 ---
 # <a name="ado-objects-and-interfaces"></a>ADO-Objekte und -Schnittstellen
 

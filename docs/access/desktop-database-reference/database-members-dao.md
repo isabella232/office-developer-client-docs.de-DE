@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195257(v=office.15)
 ms:contentKeyID: 48545392
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa627d7c44700041209b9884374e57f7e3fa6c28
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d2254aeff94aeb2b8b078fc4f4cd4d3ef807e597
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937099"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713051"
 ---
 # <a name="database-members-dao"></a>Datenbank-Member (DAO)
 
@@ -105,12 +106,12 @@ Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 <td><p>Legt einen Wert fest, der Informationen zur Quelle einer geöffneten Datenbank bereitstellt, oder gibt den Wert zurück. <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="database-connection-property-dao.md">Connection</a></strong></p></td>
+<td><p><strong><a href="database-connection-property-dao.md">Verbindung</a></strong></p></td>
 <td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt das <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt zurück, das der Datenbank entspricht (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="database-containers-property-dao.md">Containers</a></strong></p></td>
+<td><p><strong><a href="database-containers-property-dao.md">Container</a></strong></p></td>
 <td><p>Gibt eine <strong>Containers</strong>-Auflistung zurück, die alle <strong>Container</strong>-Objekte in der angegebenen Datenbank darstellt. Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">

@@ -8,12 +8,13 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-ms.openlocfilehash: 2b03834914c352a0e9c462c50bee48ac992276e3
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860581"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718784"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT-Anweisung (Microsoft Access SQL)
 
@@ -71,7 +72,7 @@ Die SELECT-Anweisung besteht aus folgenden Teilen:
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zum Ausführen dieses Vorgangs Microsoft Jet-Datenbankmodul sucht nach der angegebenen Tabelle oder Tabellen extrahiert die ausgewählten Spalten, wählt Zeilen, die die Kriterien, und sortiert oder gruppiert die Zeilen in der angegebenen Reihenfolge zu erfüllen.
 

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197102(v=office.15)
 ms:contentKeyID: 48546197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 85299765a598b969e4d9229c85e9f2e9b165d64e
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3018bf8cc9a62cb866b35992e25ecb1f8f41514f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996888"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722795"
 ---
 # <a name="tabledefcreateproperty-method-dao"></a>TableDef.CreateProperty-Methode (DAO)
 
@@ -50,13 +51,13 @@ Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -
 <td><p>Ein <strong>String</strong>-Wert, der das neue <strong>Property</strong>-Objekt eindeutig benennt. Weitere Informationen zu gültigen <strong>Property</strong>-Namen finden Sie in dem Thema zur <strong>Name</strong>-Eigenschaft.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Type</em></p></td>
+<td><p><em>Typ</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Konstante, die den Datentyp des neuen <strong>Property</strong>-Objekts definiert. Informationen zu gültigen Datentypen finden Sie in dem Thema zur <strong><a href="field-type-property-dao.md">Type</a></strong>-Eigenschaft.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Value</em></p></td>
+<td><p><em>Wert</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Wert, der den ursprünglichen Eigenschaftswert enthält. Weitere Informationen finden Sie in dem Thema zur <strong><a href="field-value-property-dao.md">Value</a></strong>-Eigenschaft.</p></td>

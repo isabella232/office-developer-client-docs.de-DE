@@ -12,12 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4efa4e92d7fab2dc8a4aae932ccb1ffe69c7c6c8
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 7beda04d1f18014101f00078de1d125c1fd67a69
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026099"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722872"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL-Unterabfragen (Microsoft Access SQL)
 
@@ -55,7 +56,7 @@ Eine Unterabfrage enthält die folgenden Bestandteile:
 <td><p>Ein Ausdruck und ein Vergleichsoperator, der den Ausdruck mit den Ergebnissen einer Unterabfrage vergleicht.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Ausdruck</em></p></td>
+<td><p><em>expression</em></p></td>
 <td><p>Ein Ausdruck, nach dem die Ergebnisgruppe der Unterabfrage durchsucht wird.</p></td>
 </tr>
 <tr class="odd">
@@ -111,7 +112,7 @@ Bestimmte Unterabfragen sind in Kreuztabellenabfragen zulässig, insbesondere al
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Namen und Kontaktdaten aller Kunden aufgeführt, die im zweiten Quartal 1995 eine Bestellung aufgegeben haben. Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
+In diesem Beispiel werden die Namen und Kontaktdaten jedes Kunden aufgelistet, der im zweiten Quartal 1995 eine Bestellung aufgegeben hat. Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
 
 ```vb
     Sub SubQueryX() 

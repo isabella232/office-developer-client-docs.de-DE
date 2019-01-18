@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052872
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2ee7bff8a5b7d17b714c4a52eff2eca5906c7135
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 95cf5daa9eac6644b17f47b09ebc749bd9ed928e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919871"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712568"
 ---
 # <a name="recordsetmoveprevious-method-dao"></a>Recordset.MovePrevious-Methode (DAO)
 
@@ -30,7 +31,7 @@ Wechselt zum vorherigen Datensatz in einem angegebenen **Recordset**-Objekt und 
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **Move**-Methoden, um von einem Datensatz zum nächsten zu wechseln, ohne eine Bedingung anzuwenden.
 

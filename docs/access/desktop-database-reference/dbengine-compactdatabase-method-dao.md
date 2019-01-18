@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052936
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fb3deeb6e2f90c6ddbe7cdc90c5e599349ebfb10
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: b50cb0453df1fa357fbd0b089af2e74fdd4b4c1e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998721"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714059"
 ---
 # <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabase-Methode (DAO)
 
@@ -83,7 +84,7 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglic
 <td><p><em>password</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein Zeichenfolgenausdruck, einen Verschlüsselungsschlüssel enthält, wenn die Datenbank verschlüsselt ist. Die Zeichenfolge &quot;; Pwd =&quot; dem tatsächlichen Kennwort vorausgehen muss. Wenn Sie eine Kennworteinstellung in DstLocale einschließen, wird diese Einstellung ignoriert.</p><p><strong>Hinweis</strong>: Dies ist veraltete Parameter und wird nicht unterstützt. ACCDB-Format. Zum Verschlüsseln von ein. ACCDB-Datei, verwenden Sie die "Pwd =" option Zeichenfolge. [!HINWEIS] Verwenden Sie sichere Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbolen. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</p>
+<td><p>Ein Zeichenfolgenausdruck, einen Verschlüsselungsschlüssel enthält, wenn die Datenbank verschlüsselt ist. Die Zeichenfolge &quot;; Pwd =&quot; dem tatsächlichen Kennwort vorausgehen muss. Wenn Sie eine Kennworteinstellung in DstLocale einschließen, wird diese Einstellung ignoriert.</p><p><strong>Hinweis</strong>: Dies ist veraltete Parameter und wird nicht unterstützt. ACCDB-Format. Zum Verschlüsseln von ein. ACCDB-Datei, verwenden Sie die "Pwd =" option Zeichenfolge. Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Zahlen und Symbole in Kombination verwenden. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</p>
 </td>
 </tr>
 </tbody>
