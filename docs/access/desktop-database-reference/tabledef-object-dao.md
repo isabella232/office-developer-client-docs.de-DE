@@ -6,78 +6,79 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195790(v=office.15)
 ms:contentKeyID: 48545582
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2670dadade6e934a1696251867d8ea67e8bbfc53
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 6e1182427c688e7c8b5ca53c1f5f4bb208b3609a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927368"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726344"
 ---
 # <a name="tabledef-object-dao"></a>TableDef-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Ein **TableDef** -Objekt stellt die gespeicherte Definition einer Basistabelle oder einer verknüpften Tabelle dar (nur Microsoft Access-Arbeitsbereiche).
+Ein **TableDef**-Objekt stellt die gespeicherte Definition einer Basistabelle oder einer verknüpften Tabelle dar (nur Microsoft Access-Arbeitsbereiche).
 
 ## <a name="remarks"></a>Hinweise
 
-Sie ändern eine Tabellendefinition mithilfe eines **TableDef** -Objekts sowie seiner Methoden und Eigenschaften. Folgendes ist zum Beispiel möglich:
+Sie ändern eine Tabellendefinition mithilfe eines **TableDef**-Objekts sowie seiner Methoden und Eigenschaften. Folgendes ist zum Beispiel möglich:
 
 - Untersuchen Sie das Feld und die Indexstruktur einer lokalen, verknüpften oder externen Tabelle in einer Datenbank.
 
-- Verwenden Sie die **Connect** - und **SourceTableName** -Eigenschaften, um Informationen zu verknüpften Tabellen festzulegen oder zurückzugeben, und verwenden Sie die **RefreshLink** -Methode, um Verbindungen zu verknüpften Tabellen zu aktualisieren.
+- Verwenden Sie die **Connect**- und **SourceTableName**-Eigenschaften, um Informationen zu verknüpften Tabellen festzulegen oder zurückzugeben, und verwenden Sie die **RefreshLink**-Methode, um Verbindungen zu verknüpften Tabellen zu aktualisieren.
 
-- Verwenden Sie die **ValidationRule** - und **ValidationText** -Eigenschaften, um Überprüfungsbedingungen festzulegen oder zurückzugeben.
+- Verwenden Sie die **ValidationRule**- und **ValidationText**-Eigenschaften, um Überprüfungsbedingungen festzulegen oder zurückzugeben.
 
-- Verwenden Sie die **OpenRecordset** -Methode, um eine – Tabelle, Dynaset, dynamisch, Snapshot oder Vorwärts – **Recordset** -Objekt vom Typ, basierend auf der Tabellendefinition erstellen.
+- Verwenden Sie die **OpenRecordset**-Methode, um ein **Recordset**-Objekt vom Typ "table", "dynaset", "dynamic", "snapshot" oder "forward–only" basierend auf der Tabellendefinition zu erstellen.
 
-Für Basistabellen enthält die **RecordCount** -Eigenschaft die Anzahl der Datensätze in der angegebenen Datenbanktabelle. Für verknüpfte Tabellen wird die Einstellung der **RecordCount** -Eigenschaft immer – 1.
+Für Basistabellen enthält die **RecordCount**-Eigenschaft die Anzahl der Datensätze in der angegebenen Datenbanktabelle. For linked tables, the **RecordCount** property setting is always –1.
 
-Um ein neues **TableDef** -Objekt zu erstellen, verwenden Sie die **[CreateTableDef](database-createtabledef-method-dao.md)** -Methode.
+Um ein neues **TableDef**-Objekt zu erstellen, verwenden Sie die **[CreateTableDef](database-createtabledef-method-dao.md)**-Methode.
 
 ### <a name="to-add-a-field-to-a-table"></a>So fügen Sie einer Tabelle ein Feld hinzu
 
-1.  Stellen Sie sicher, dass alle **[Recordset](recordset-object-dao.md)** -Objekte, die auf der Tabelle basieren, geschlossen sind.
+1.  Stellen Sie sicher, dass alle **[Recordset](recordset-object-dao.md)**-Objekte, die auf der Tabelle basieren, geschlossen sind.
 
-2.  Verwenden Sie die **CreateField** -Methode, um eine **Field** -Objektvariable zu erstellen, und legen Sie ihre Eigenschaften fest.
+2.  Verwenden Sie die **CreateField**-Methode, um eine **Field**-Objektvariable zu erstellen, und legen Sie ihre Eigenschaften fest.
 
-3.  Verwenden Sie die **Append** -Methode, um das **Field** -Objekt zur **Fields** -Auflistung des **TableDef** -Objekts hinzuzufügen.
+3.  Verwenden Sie die **Append**-Methode, um das **Field**-Objekt zur **Fields**-Auflistung des **TableDef**-Objekts hinzuzufügen.
 
-Sie können ein **Field** -Objekt aus einer **TableDefs** -Auflistung löschen, wenn ihm keine Indizes zugewiesen sind. Die Daten des Felds gehen aber verloren.
+Sie können ein **Field**-Objekt aus einer **TableDefs**-Auflistung löschen, wenn ihm keine Indizes zugewiesen sind. Die Daten des Felds gehen aber verloren.
 
 ### <a name="to-create-a-table-that-is-ready-for-new-records-in-a-database"></a>So erstellen Sie eine Tabelle, die für neue Datensätze in einer Datenbank bereit ist
 
-1.  Verwenden Sie die **CreateTableDef** -Methode, um ein **TableDef** -Objekt zu erstellen.
+1.  Verwenden Sie die **CreateTableDef**-Methode, um ein **TableDef**-Objekt zu erstellen.
 
 2.  Legen Sie seine Eigenschaften fest.
 
-3.  Verwenden Sie für jedes Feld in der Tabelle die **CreateField** -Methode, um eine **Field** -Objektvariable zu erstellen, und legen Sie ihre Eigenschaften fest.
+3.  Verwenden Sie für jedes Feld in der Tabelle die **CreateField**-Methode, um eine **Field**-Objektvariable zu erstellen, und legen Sie ihre Eigenschaften fest.
 
-4.  Verwenden Sie die **Append** -Methode, um die Felder zur **Fields** -Auflistung des **TableDef** -Objekts hinzuzufügen.
+4.  Verwenden Sie die **Append**-Methode, um die Felder zur **Fields**-Auflistung des **TableDef**-Objekts hinzuzufügen.
 
-5.  Verwenden Sie die **Append** -Methode, um das neue **TableDef** -Objekt zur **TableDefs** -Auflistung des **Database** -Objekts hinzuzufügen.
+5.  Verwenden Sie die **Append**-Methode, um das neue **TableDef**-Objekt zur **TableDefs**-Auflistung des **Database**-Objekts hinzuzufügen.
 
-Eine verknüpfte Tabelle ist durch die **SourceTableName** - und **Connect** -Eigenschaften des **TableDef** -Objekts mit der Datenbank verbunden.
+Eine verknüpfte Tabelle ist durch die **SourceTableName**- und **Connect**-Eigenschaften des **TableDef**-Objekts mit der Datenbank verbunden.
 
 ### <a name="to-link-a-table-to-a-database"></a>So verknüpfen Sie eine Tabelle mit einer Datenbank
 
-1.  Verwenden Sie die **CreateTableDef** -Methode, um ein **TableDef** -Objekt zu erstellen.
+1.  Verwenden Sie die **CreateTableDef**-Methode, um ein **TableDef**-Objekt zu erstellen.
 
-2.  Legen Sie die **Connect** - und **SourceTableName** -Eigenschaften (und optional die **Attributes** -Eigenschaft) fest.
+2.  Legen Sie die **Connect**- und **SourceTableName**-Eigenschaften (und optional die **Attributes**-Eigenschaft) fest.
 
-3.  Verwenden Sie die **Append** -Methode, um es der **TableDefs** -Auflistung eines **Database** -Objekts hinzuzufügen.
+3.  Verwenden Sie die **Append**-Methode, um es der **TableDefs**-Auflistung eines **Database**-Objekts hinzuzufügen.
 
-Um auf ein **TableDef** -Objekt in einer Auflistung durch die Ordnungszahl oder die Einstellung der **Name** -Eigenschaft zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
+Um auf ein **TableDef**-Objekt in einer Auflistung durch die Ordnungszahl oder die Einstellung der **Name**-Eigenschaft zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
 
 **TableDefs**(0)
 
-**TableDefs** ("Name")
+**TableDefs**("name")
 
-**TableDefs**\!\[Namen\]
+**TableDefs**\!\[name\]
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel erstellt ein neues **TableDef** -Objekt und hängt es an die **TableDefs** -Auflistung des Northwind-Datenbankobjekts an. Dann zählt es die **TableDefs** -Auflistung und die **Properties** -Auflistung des neuen **TableDef** -Objekts auf.
+Dieses Beispiel erstellt ein neues **TableDef**-Objekt und hängt es an die **TableDefs**-Auflistung des Northwind-Datenbankobjekts an. Dann zählt es die **TableDefs**-Auflistung und die **Properties**-Auflistung des neuen **TableDef**-Objekts auf.
 
 ```vb
     Sub TableDefX() 
@@ -130,7 +131,7 @@ Dieses Beispiel erstellt ein neues **TableDef** -Objekt und hängt es an die **T
 
 <br/>
 
-Dieses Beispiel erstellt ein neues **TableDef** -Objekt in der Northwind-Datenbank.
+Dieses Beispiel erstellt ein neues **TableDef**-Objekt in der Northwind-Datenbank.
 
 ```vb 
 Sub CreateTableDefX() 
@@ -195,7 +196,7 @@ Sub CreateTableDefX()
 
 Im folgenden Beispiel wird veranschaulicht, wie Sie ein berechnetes Feld erstellen. Die CreateField-Methode erstellt ein Feld namens **FullName**. Die Expression-Eigenschaft wird dann auf den Ausdruck festgelegt, der den Wert des Felds berechnet.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub CreateCalculatedField()
