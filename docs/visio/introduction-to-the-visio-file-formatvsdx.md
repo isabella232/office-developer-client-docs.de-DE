@@ -4,76 +4,76 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
 ms.assetid: 69736f40-8f67-46c2-abf6-82dffecb2274
-description: Erfahren Sie mehr über das neue Dateiformat in Visio 2013, einige hochrangige Konzepte für die Arbeit mit dem Visio 2013-Dateiformat programmgesteuert durchsuchen, und erstellen Sie eine einfache Konsolenanwendung, die ein Visio 2013-Testdatei.
-ms.openlocfilehash: 4efa90ee513def005653f4f8717b0149de1cdc3d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: Erfahren Sie mehr über das neue Dateiformat in Visio 2013, ermitteln Sie einige hochrangige Konzepte für die programmatische Arbeit mit dem Visio 2013-Dateiformat, und erstellen Sie eine einfache Konsolenanwendung, die eine Visio 2013-Datei überprüft.
+localization_priority: Priority
+ms.openlocfilehash: 74c0f05a1db280386f3dc9dfd23da73a9b2daaf5
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389365"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699072"
 ---
 # <a name="introduction-to-the-visio-file-format-vsdx"></a>Einführung in das Visio-Dateiformat (.vsdx)
 
-Erfahren Sie mehr über das neue Dateiformat in Visio 2013, einige hochrangige Konzepte für die Arbeit mit dem Visio 2013-Dateiformat programmgesteuert durchsuchen, und erstellen Sie eine einfache Konsolenanwendung, die ein Visio 2013-Testdatei.
+Erfahren Sie mehr über das neue Dateiformat in Visio 2013, ermitteln Sie einige hochrangige Konzepte für die programmatische Arbeit mit dem Visio 2013-Dateiformat, und erstellen Sie eine einfache Konsolenanwendung, die eine Visio 2013-Datei überprüft.
   
 |||
 |:-----|:-----|
-|**In diesem Artikel** [Einführung in die](#vis15_IntroVSDX_Intro) [Was ist das Visio 2013-Dateiformat "Detail"?](#vis15_IntroVSDX_What)                             [Entwicklerszenarien für die Arbeit mit dem Visio 2013-Dateiformat](#vis15_IntroVSDX_Scenarios) [Erkunden Sie programmgesteuert das Visio 2013-Dateiformat](#vis15_IntroVSDX_Explore) [Weitere Ressourcen](#vis15_IntroVSDX_Resources)                    ||
+|**Inhalt dieses Artikels**         [Einführung](#vis15_IntroVSDX_Intro)          [Was ist das integrierte Visio 2013-Dateiformat?](#vis15_IntroVSDX_What)          [Entwicklerszenarien für die Arbeit mit dem Visio 2013-Dateiformat](#vis15_IntroVSDX_Scenarios)          [Das Visio 2013-Dateiformat programmgesteuert erkunden](#vis15_IntroVSDX_Explore)          [Zusätzliche Ressourcen](#vis15_IntroVSDX_Resources)||
    
 ## <a name="introduction"></a>Einführung
 <a name="vis15_IntroVSDX_Intro"> </a>
 
-Visio 2013 führt ein neues Dateiformat (.vsdx) für Visio, die von der Visio-Binärdateiformat (.vsd) und das Dateiformat Visio XML-Zeichnung (VDX) ersetzt. Da das Visio 2013-Dateiformat Open Packaging-Konventionen und XML-basiert, können Entwickler, die mit diesen Technologien vertraut sind schnell zum programmgesteuerten arbeiten mit Visio 2013-Dateien informieren. Entwickler, die mit dem Dateiformat Visio XML-Zeichnung (VDX) aus früheren Versionen von Visio vertraut sind, können viele der gleichen XML-Strukturen in den Teilen des vsdx-Dateiformat suchen. Interoperabilität mit Visio-Dateien ist wesentlich komplexer, da Drittanbietersoftware Visio-Dateien auf einer Ebene der Datei Format bearbeiten kann. Das Visio 2013-Dateiformat wird auf Visio Services in Microsoft SharePoint Server 2013, ohne dass ein "zwischengeschaltete" Dateiformat für die Veröffentlichung in SharePoint Server unterstützt.
+Visio 2013 führt ein neues Dateiformat (.vsdx) für Visio ein, das das Visio-Binärdateiformat (.vsd) und Visio-XML-Zeichnungsdateiformat (.vdx) ersetzt. Da das Visio 2013-Dateiformat auf Open Packaging-Konventionen und XML-basiert, können Entwickler, die mit diesen Technologien vertraut sind, schnell lernen, wie man programmgesteuert mit Visio 2013-Dateien arbeitet. Entwickler, die mit dem Visio-XML-Zeichnungsdateiformat (.vdx) früherer Visio-Versionen vertraut sind, finden viele gleiche XML-Strukturen innerhalb der Bestandteile des VSDX-Dateiformats wieder. Die Interoperabilität mit Visio-Dateien wird erheblich erhöht, da Visio-Dateien auf Dateiformatebene mit Drittanbietersoftware bearbeitet werden können. Das Visio 2013-Dateiformat wird in Visio Services in Microsoft SharePoint Server 2013 unterstützt, und es wird kein "zwischengeschaltetes" Dateiformat für die Veröffentlichung auf SharePoint Server benötigt.
   
-Es gibt mehrere Dateitypen, durch Erweiterung, die das Visio 2013-Dateiformat umfassen. Dieser Erweiterungen umfassen:
+Es gibt im weiteren Sinne verschiedene Datentypen, die das Visio 2013-Dateiformat umfassen. Zu diesen Erweiterungen zählen:
   
 - .vsdx (Visio-Zeichnung)
     
-- .vsdm (per Visio-Makro aktivierte Zeichnung)
+- .vsdm (Visio-Zeichnung mit Makros)
     
-- .vssx (Visio-Schablone)
+- vssx (Visio-Schablone)
     
-- .vssm (per Visio-Makro aktivierte Schablone)
+- .vsdm (Visio-Schablone mit Makros)
     
-- .vstx (Visio-Vorlage)
+- vstx (Visio-Vorlage)
     
-- .vstm (per Visio-Makro aktivierte Vorlage)
+- .vstm (Visio-Vorlage mit Makros)
     
 > [!NOTE]
 > Nur die makrofähigen Dateien (.vsdm, .vssm, .vstm) können VBA-Makros speichern. Sie können Makros nicht in Dateien mit einer VSDX-, VSSX- oder VSTX-Erweiterung speichern. 
   
-## <a name="what-is-the-visio-2013-file-format-under-the-hood"></a>Was ist das Visio 2013-Dateiformat "Detail"?
+## <a name="what-is-the-visio-2013-file-format-under-the-hood"></a>Was ist das integrierte Visio 2013-Dateiformat?
 <a name="vis15_IntroVSDX_What"> </a>
 
-Das Visio 2013-Dateiformat verwendet die Open Verpackung Conventions (OPC), die eine strukturierte Möglichkeit zum Speichern von Anwendungsdaten mit den zugehörigen Ressourcen mit einem Container des einige Sort─for wird eine ZIP-Datei definiert. Grundlegende Ebene ist eine Visio 2013-Datei wirklich eine ZIP-Container, der andere Typen von Dateien enthält. Sie können sogar Speichern einer Zeichnung in Visio 2013 als eine vsdx-Datei, benennen Sie die Erweiterung der Datei in "\*ZIP" die Datei wie folgt einen Ordner aus, die Inhalte finden Sie unter in Windows Explorer, und klicken Sie dann auf Öffnen.
+Das Visio 2013-Dateiformat verwendet die Open Packing-Konventionen (OPC), die eine strukturierte Möglichkeit zum Speichern von Anwendungsdaten mit verwandten Ressourcen definieren, wofür ein Container, wie z.B. eine Zip-Datei, verwendet wird. Grundlegend ist eine Visio 2013-Datei ein Zip-Container, der andere Dateitypen enthält. Sie können eine Zeichnung in Visio 2013 als VSDX-Datei speichern, die Erweiterung der Datei in "\*.zip" im Windows-Explorer umbenennen, und die Datei dann wie einen Ordner öffnen, um den Inhalt anzuzeigen.
   
 > [!NOTE]
->  Dieser Artikel enthält nur eine kurze Übersicht über die Open Packaging-Konventionen. Finden Sie detaillierte Abdeckung der Konventionen in anderen Artikeln: > Weitere Informationen zu den Open Packaging Conventions selbst, finden Sie unter [OPC: ein neuer Standard für Packaging Your Data](https://msdn.microsoft.com/magazine/cc163372.aspx). > Weitere Informationen zu Open Packaging-Konventionen und deren Verwendung in Microsoft Office-Dateien finden Sie unter [Grundlagen der Open Packaging-Konventionen](https://msdn.microsoft.com/library/ee361919.aspx) und [Einführung in die Microsoft Office (2007) Open XML-Dateiformaten](https://msdn.microsoft.com/library/aa338205.aspx). 
+>  Dieser Artikel bietet nur einen kurzen Überblick über die Open Packaging-Konventionen. In anderen Artikeln finden Sie detaillierte Angaben zu den Konventionen. >  Weitere Informationen über die Open Packaging-Konventionen an sich finden Sie unter [OPC: Ein neuer Standard für das Verpacken Ihrer Daten](https://msdn.microsoft.com/magazine/cc163372.aspx). >  Weitere Informationen über die Open Packaging-Konventionen und deren Verwendung in Microsoft Office-Dateien finden Sie unter [Grundlagen der Open Packaging-Konventionen](https://msdn.microsoft.com/library/ee361919.aspx) und [Einführung in die Microsoft Office (2007) Open XML-Dateiformate](https://msdn.microsoft.com/library/aa338205.aspx). 
   
 ### <a name="packages-and-package-parts"></a>Pakete und Paketteile
 
-Wie zuvor gestartet wird, sind Visio 2013-Dateien ZIP-Container oder "Pakete", die anderen Dateien (mit der Bezeichnung "Paketteile") darin enthalten sein. Ein pakettei kann es sich um eine XML-Datei, eines Bilds, sogar einer VBA-Lösung sein. Die Teile im Paket können in zwei Hauptkategorien, "Dokumentteile" und "Beziehung Teile." weiter unterteilt werden Die Dokumentteile enthalten die tatsächlichen Inhalte und Metadaten der Visio-Datei, wie der Name der Datei, die erste Seite und alle Formen, die er enthält, und sogar die datenverbindungen für die Formen. Bilder und Textdateien, in dem Paket gelten Dokumentteile. Beziehung Teile werden weiter unten in diesem Artikel ausführlich beschrieben.
+Wie bereits erwähnt sind Visio 2013-Dateien Zip-Container oder "Pakete", die andere Dateien ("Paketteile") enthalten. Ein Paketteil kann eine XML-Datei, ein Bild oder sogar eine VBA-Lösung sein. Die Teile innerhalb des Pakets können weiterhin in zwei Kategorien unterteilt werden: "Dokumentteile" und "Beziehungsteile". Die Dokumentteile enthalten den eigentlichen Inhalt und Metadaten der Visio-Datei, z. B. den Namen der Datei, die erste Seite und alle Formen, die sie enthält, und sogar die Datenverbindungen für die Formen. Bilder und Textdateien im Paket werden als Dokumentteile bezeichnet. Beziehungsteile werden später in diesem Artikel noch genauer erläutert.
   
 > [!NOTE]
-> Wenn Sie eine Visio 2013-Datei mithilfe eines ZIP-Dienstprogramms öffnen, sehen Sie möglicherweise mehrere Ordner, die in der ZIP-Paket enthalten sind. Sie können auch diese untergeordneten Adressen wie mit einem Dienstprogramm ZIP-Ordner bearbeiten. Diese "Ordner" wird jedoch untergeordnete Adressen innerhalb der ZIP-Paket keine eigentlichen Ordner darstellen. Sie können die programmgesteuerte Entsprechung von Ordnern diese Sub-Adressen in Ihrer Lösung entwickelt. 
+> Wenn Sie eine Visio 2013-Datei über ein Zip-Programm öffnen, sehen Sie möglicherweise mehrere Ordner, die sich innerhalb des Zip-Pakets befinden. Sie können diese untergeordneten Adressen wie Ordner mit einem Zip-Programm bearbeiten. Diese "Ordner" stellen jedoch untergeordnete Adressen innerhalb des Zip-Pakets und keine tatsächlichen Ordner dar. Sie können nicht die programmgesteuerte Entsprechung von Ordnern verwenden, um in Ihrer Lösung mit diesen untergeordneten Adressen zu arbeiten. 
   
 Paketteile (sowohl Dokumentteile und Beziehungsteile) verfügen über verknüpfte Inhaltstypen. Diese Inhaltstypen sind Zeichenfolgen, die einen MIME-Medientyp definieren. Diese Inhaltstypen bestimmen und prüfen die Art der MIME-Typen, die in der Datei enthalten sein können.
   
 ### <a name="relationships"></a>Beziehungen
 
-Die Beziehung Teile (die Enden mit der Erweiterung "\*rels" und befinden sich in einem Ordner "_rels") wird beschrieben, wie die Teile im Paket miteinander in Beziehung stehen, und geben Sie die Struktur der Datei. Ein eigenständiges XML-Dokument wird die Beziehung zwischen über-und untergeordneten Elemente die Beziehung zwischen Entitäten miteinander ermittelt. Andere Dateien möglicherweise andere Hierarchien oder Ordnerstruktur Datei verwenden, um die Interaktion von Inhalten in der Datei beschreiben. Für das Visio 2013-Dateiformat ist das Paket gültige Visio-Datei aus, wenn sie die korrekte Liste der Webparts enthält und das Paket die Beziehungen zwischen den Teilen enthält. 
+Die Beziehungsteile (die auf die Erweiterung "\*rels" enden und in einem "_rels"-Ordner gespeichert sind) beschreiben, wie die Teile innerhalb des Pakets miteinander in Beziehung stehen, und stellen die Struktur der Datei bereit. Ein eigenständiges XML-Dokument verwendet die übergeordnete/untergeordnete Beziehung der Elemente, um die Beziehung zwischen den Entitäten zu bestimmen. Andere Dateien verwenden möglicherweise andere Hierarchien oder Dateiordnerstrukturen, um die Interaktion der Inhalte in der Datei zu beschreiben. Für das Visio 2013-Dateiformat ist das Paket eine gültige Visio-Datei, wenn es den richtigen Satz von Teilen und die Beziehungen zwischen den Teilen enthält. 
   
 Beziehungsteile sind XML-Dokumente, die die Beziehungen zwischen verschiedenen Dokumentteilen im Paket beschreiben. Sie definieren eine Zuordnung zwischen zwei Elementen: einem angegebenen Quell- (definiert durch den Namen und dem Speicherort der Beziehungsdatei) und einem angegebenen Zieldokumentteil. Beziehungsteile werden beispielsweise verwendet, um zu beschreiben, welche Shape-Master mit der Datei verknüpft sind, wie Seiten mit der Datei und untereinander zusammenhängen oder wie Bilder und Objekte mit einer bestimmten Seite zusammenhängen. 
   
-### <a name="similarities-and-differences-with-visio-vdx-schema"></a>Ähnlichkeiten und Unterschiede mit Visio VDX-schema
+### <a name="similarities-and-differences-with-visio-vdx-schema"></a>Ähnlichkeiten und Unterschiede mit dem Visio-VDX-Schema
 
-Wie bereits erwähnt, enthalten die frühere Versionen von Visio auch eine XML-basierte Datei Format, das Visio XML-Zeichnungsformat oder VDX. (In früheren Versionen von Visio, wird das Schema für den Visio-XML-Zeichnungsformat verwendet DatadiagramML bezeichnet.) Einige Teile von der Visio-XML-Schema haben dieselbe zwischen den beiden Dateiformate waren. Das **Windows** -Element und die untergeordneten Elemente bleiben beispielsweise Unchanged─with der Ausnahme, dass das **Windows** -Element jetzt ein Stammelement eines XML-Dokuments (window.xml) ist. 
+Wie bereits erwähnt, enthalten die früheren Versionen von Visio auch ein XML-basiertes Dateiformat, das Visio-XML-Zeichnungsformat oder .vdx. (In früheren Versionen von Visio wird das Schema für das Visio-XML-Zeichnungsformat als DatadiagramML bezeichnet.) Einige Teile aus dem Visio-XML-Schema sind in beiden Dateiformaten gleich. Das **Windows**-Element und seine untergeordneten Elemente sind z. B. gleich geblieben, allerdings mit der Ausnahme, dass das **Windows**-Element jetzt ein Stammelement eines XML-Dokuments (window.xml) ist. 
   
-Der größte Unterschied zwischen dem XML-Zeichnung und das Visio 2013-Dateiformat ist der Verpackung. Eine Datei im Format von XML-Zeichnung konnte wie eine normale eigenständige XML bearbeitet werden; das Visio 2013-Dateiformat muss als Paket bearbeitet werden. In der Visio 2013 hat der XML-Code in Webparts für einfacher Verbrauch aufgeteilt wurde. Eine andere bedeutende Änderung erfolgt ist, dass das Visio 2013-Dateiformat alle Dokumenteigenschaften im Dokumentteile beschrieben durch die OPC-standard (app.xml, core.xml, Benutzer.XML) gespeichert werden.
+Der größte Unterschied zwischen dem XML-Zeichnungsformat und dem Visio 2013-Dateiformat ist das Verpacken. Eine Datei im XML-Zeichnungsformat kann wie eine normale eigenständige XML bearbeitet werden ; das Visio 2013-Dateiformat muss als Paket bearbeitet werden. In Visio 2013 wird die XML für eine leichtere Verarbeitung in Teile eingeteilt. Eine weitere bemerkenswerte Änderung besteht darin, dass das Visio 2013-Dateiformat alle Dokumenteigenschaften in vom OPC-Standard beschriebenen Dokumentteilen (app.xml, core.xml, custom.xlm) speichert.
   
-Es ist jedoch eine bedeutende Änderung, die alle Visio-Entwickler berücksichtigen müssen: die Einführung der **Zelle**, **Zeile**und **im Abschnitt** Elemente. In der XML-Zeichnungsdateiformat Schema werden einzelne Zeilen und Zellen im ShapeSheet durch benannten Elemente dargestellt. Angenommen Sie, dass Sie ein Dokument mit einer einzelnen Seite mit einer Form mit dem **PinX** Wert "2" (d. h., dass die Pin Drehung der Form 2 Zoll vom linken Rand der Zeichnung ist). Im folgenden Code wird das relevante Markup für diese Einstellung im Dateiformat XML-Zeichnung angezeigt. 
+Es gibt jedoch eine wesentliche Änderung, über die sich alle Visio-Entwickler bewusst sein müssen: die Einführung der Elemente **Zelle**, **Zeile** und **Abschnitt**. Im XML-Zeichnungsdateiformat-Schema werden einzelne Zeilen und Zellen im ShapeSheet durch benannte Elemente dargestellt. Nehmen wir z. B. einmal an, dass Sie ein Dokument mit einer einzelnen Seite besitzen, das eine Form mit einem **PinX**-Wert von "2" enthält (d. h., die Drehachse der Form befindet sich 2 Zoll vom linken Rand der Zeichnung entfernt). Das relevante Markup für diese Einstellung im XML-Zeichnungsdateiformat wird im folgenden Code dargestellt. 
   
 ```XML
 <Shape ID="1" TextStyle="3" FillStyle="3" LineStyle="3" Type="Shape">
@@ -86,9 +86,9 @@ Es ist jedoch eine bedeutende Änderung, die alle Visio-Entwickler berücksichti
 
 ```
 
-Hier ist das **PinX** -Element ein untergeordnetes Element des **XForm** -Elements, das wiederum ein untergeordnetes Element des **Shape** -Elements ist. Dieses Modell der Visio ShapeSheet-Benutzeroberfläche, in dem die Zelle **PinX** im Abschnitt **Shape Transform** eines Shapes enthalten ist. 
+Hier ist das **PinX**-Element ein untergeordnetes Element des **XForm**-Elements, das wiederum ein untergeordnetes Element des **Shape**-Elements ist. Dies formt die Visio-ShapeSheet-Benutzeroberfläche, wobei die Zelle **PinX** im Abschnitt **Shape Transform** einer Form enthalten ist. 
   
-In Visio 2013-Dateiformat alle Zellen in der ShapeSheet─ **PinX** **LinePattern**, eine **X** -Zelle in einer **MoveTo** -Zeile in einem **Geometrie** -Abschnitt etc.─are durch einen Typ von XML-Element, **das Zellenelement** dargestellt. Verschiedene **Zelle** Elemente werden durch den Wert für das Attribut **N** voneinander individuated. Im obigen Beispiel ist daher die Daten in die Zelle **PinX** im ShapeSheet in eine VSDX-Datei wie im folgenden Code gezeigt gespeichert. 
+Im Visio 2013-Dateiformat werden alle Zellen im ShapeSheet, d. h. **PinX**, **LinePattern**, eine **X**-Zelle in einer **MoveTo**-Zeile in einem **Geometry**-Abschnitt etc., von einem XML-Element des Typs **Zelle** dargestellt. Andere **Cell**-Elemente unterscheiden sich jeweils durch den Wert Ihres **N**-Attributs voneinander. Folglich werden im Beispiel oben die in der **PinX**-Zelle des ShapeSheets enthaltenen Daten wie im folgenden Code dargestellt in einer VSDX-Datei gespeichert. 
   
 ```XML
 <Shape TextStyle="3" FillStyle="3" LineStyle="3" Type="Shape" ID="1">
@@ -97,9 +97,9 @@ In Visio 2013-Dateiformat alle Zellen in der ShapeSheet─ **PinX** **LinePatter
 </Shape>
 ```
 
-**Das Zellenelement für **DrehbezX** (wie bei anderen einzelnen, benannten Zellen "Singleton Zellen" wie **LinePattern** oder **LockSelect**aufgerufen)** ist ein direktes untergeordnetes Element des **Shape** -Elements. Keine eindeutigen Elements ist erforderlich, um die Zeile, die Zelle **PinX enthält,** darstellen, wie jeder Form eine **PinX**nur verwendet werden kann.
+Das **Cell**-Element für **PinX** (sowie andere einzelne, benannte Zellen, die auch "Singleton-Zellen" genannt werden, wie z.B. **LinePattern** oder **LockSelect**) ist ein direkt untergeordnetes Element des **Shape**-Elements. Es wird kein eindeutiges Element benötigt, um die Zeile darzustellen, die die **PinX**-Zelle enthält, da jede Form nur eine **PinX** aufweisen kann.
   
-Was geschieht mit Abschnitten, die Tabellendaten wie **geometrischen** Abschnitte enthalten? Für die Zellen in den Abschnitten das Visio 2013-Dateiformatschema **Abschnitt** verwendet und **Zeile** Elements─also definierten nach **N** -Attribut oder **T** -Attribut als Below─to dargestellt, die Daten enthalten. Dasselbe Shape aus dem vorherigen Beispiel kann beispielsweise Daten im Abschnitt **"Geometry" 1** enthalten, die den folgenden Code in das Schema der XML-Zeichnung aussieht. 
+Wie sieht es mit Abschnitten aus, die tabellarische Daten enthalten, wie z. B. **Geometry**-Abschnitte? Das Visio 2013-Dateiformat-Schema verwendet zum Aufbewahren der Daten der Zellen in diesen Abschnitten **Section- und Row-Elemente, die wie unten dargestellt durch ihre N-Attribute oder T-Attribute unterschieden werden. Beispielsweise kann die gleiche Form aus dem vorherigen Beispiel Daten im **Geometry 1**-Abschnitt enthalten, die aussehen wie der folgende Code im XML-Zeichnungsschema. 
   
 ```XML
 <Shape TextStyle="3" FillStyle="3" LineStyle="3" Type="Shape" ID="1">
@@ -115,7 +115,7 @@ Was geschieht mit Abschnitten, die Tabellendaten wie **geometrischen** Abschnitt
 
 ```
 
-Es sieht jedoch wie der folgende Code in der Datei Visio 2013.
+Es sieht jedoch wie der folgende Code in der Visio 2013-Datei aus.
   
 ```XML
 <Shape TextStyle="3" FillStyle="3" LineStyle="3" Type="Shape" ID="1">
@@ -134,42 +134,42 @@ Es sieht jedoch wie der folgende Code in der Datei Visio 2013.
 ## <a name="developer-scenarios-for-working-with-the-visio-2013-file-format"></a>Entwicklerszenarien für die Arbeit mit dem Visio 2013-Dateiformat
 <a name="vis15_IntroVSDX_Scenarios"> </a>
 
-Wie oben beschrieben, nutzt das Visio 2013-Dateiformat mehrere dokumentiertes Technologien wie ZIP-Dateien und XML zum Speichern von Daten. Um eine Zeichnung auf Dateiebene Visio 2013 zu bearbeiten, eine Lösung benötigen nur für die .NET Framework-Namespaces und Klassen im Zusammenhang mit der Arbeit mit ZIP-Dateien oder XML, wie [System.IO.Packaging](https://msdn.microsoft.com/library/system.io.packaging%28v=vs.110%29.aspx) oder [System.Xml](https://msdn.microsoft.com/library/system.xml%28v=vs.110%29.aspx)verwenden.
+Wie oben beschrieben nutzt das Visio 2013-Dateiformat mehrere gängige Technologien wie Zip-Dateien und XML, um Daten zu speichern. Um eine Visio 2013-Zeichnung auf Dateiebene zu bearbeiten, muss eine Lösung nur die .NET Framework-Namespaces und Klassen im Zusammenhang mit der Arbeit mit Zip-Dateien oder XML verwenden, wie z. B. [System.IO.Packaging](https://msdn.microsoft.com/library/system.io.packaging%28v=vs.110%29.aspx) oder [System.Xml](https://msdn.microsoft.com/library/system.xml%28v=vs.110%29.aspx).
   
-Der wichtigste Vorteil des Dateiformats für Visio 2013-Entwickler ist, können Sie lesen und in Visio 2013-Dateien schreiben ohne Automatisieren der Visio-Clientanwendung. Einige Szenarien, die Sie als Entwickler sollten, für das Arbeiten mit Visio 2013-Dateiformat, gehören:
+Der wichtigste Vorteil des Visio 2013-Dateiformats besteht für Entwickler darin, dass Visio 2013-Dateien gelesen werden können und darin geschrieben werden kann, ohne dass die Visio-Clientanwendung automatisiert werden muss. Einige Szenarien, die Sie als Entwickler berücksichtigen sollten, wenn Sie mit dem Visio 2013-Dateiformat arbeiten:
   
-- Überprüfen die einzelne Visio 2013-Dateien für bestimmte Daten. Sie können ein Element aus der ZIP-Container selektiv lesen, ohne die gesamte Datei extrahieren.
+- Einzelne Visio 2013-Dateien auf bestimmte Daten überprüfen Sie können ein Element aus dem Zip-Container selektiv lesen, ohne die gesamte Datei extrahieren zu müssen.
     
-- Aktualisieren von Bibliotheken mit Visio 2013-Dateien mit spezifischem Inhalt. Sie können das Logo in allen Hintergrundblätter neue branding Richtlinien entsprechend programmgesteuert ändern.
+- Aktualisieren von Bibliotheken der Visio 2013-Dateien mit bestimmten Inhalten Sie können das Logo in allen Hintergrundseiten programmatisch ändern, um neue Brandingrichtlinien widerzuspiegeln.
     
-- Erstellen von Anwendungen, die Visio 2013-Dateien zu nutzen. Beispielsweise können Sie ein Tool erstellen, die ein Visio-Workflowdiagramm liest und führt dann eine eigene Geschäftslogik basierend auf diesen Workflow.
+- Erstellen von Anwendungen, die Visio 2013-Dateien verwenden Beispielsweise können Sie ein Tool erstellen, das ein Visio-Workflowdiagramm liest und dann seine eigene Geschäftslogik auf Grundlage dieses Workflows ausführt.
     
 Achten Sie darauf, dass die meisten Lösungen, die auf einem Clientcomputer ausgeführt werden können, auch auf einem Server ausgeführt werden können, da diese Lösungen standardmäßige .NET Framework-Assemblys verwenden!
   
-## <a name="exploring-the-visio-2013-file-format-programmatically"></a>Programmatisches Ermitteln des Visio 2013-Dateiformats
+## <a name="exploring-the-visio-2013-file-format-programmatically"></a>Das Visio 2013-Dateiformat programmgesteuert erkunden
 <a name="vis15_IntroVSDX_Explore"> </a>
 
-Die einfachste und grundlegende Aufgabe für alle Arbeiten mit dem Visio 2013-Dateiformat (engl.) wird die Datei als Paket öffnen und den Zugriff auf einzelne Teile im Paket. Die **System.IO.Packaging.Package** in die WindowsBase.dll enthält viele Klassen, mit denen Sie öffnen und Bearbeiten von Paketen und WebParts. 
+Der einfachste und grundlegendste Vorgang bei der Arbeit mit dem Visio 2013-Dateiformat besteht darin, die Datei als Paket zu öffnen und dann auf einzelne Elemente im Paket zuzugreifen. Das **System.IO.Packaging.Package** in der WindowsBase.dll enthält viele Klassen, mit denen Sie Pakete und Teile öffnen und bearbeiten können. 
   
 Im folgenden Codebeispiel können Sie sehen, wie eine VSDX-Datei geöffnet wird, die Liste der Teile im Paket gelesen werden und Informationen über jeden Teil abgerufen werden können.
   
-### <a name="to-open-a-vsdx-file-and-view-the-document-parts"></a>So öffnen Sie eine VSDX-Datei und zeigen die Dokumentteile an
+### <a name="to-open-a-vsdx-file-and-view-the-document-parts"></a>Öffnen einer .vsdx-Datei und Anzeigen der Dokumentteile
 
-1. Öffnen Sie Visio 2013, und erstellen Sie ein neues Dokument.
+1. Öffnen Sie Visio 2013, und erstellen Sie ein neues Dokument.
     
 2. Erstellen Sie ein neues Dokument, und speichern Sie es auf dem Desktop.
     
 3. Öffnen Sie Visual Studio 2012.
     
-4. Klicken Sie im Menü **Datei** auf **neu**, und wählen Sie dann ** Project **.
+4. Wählen Sie im Menü **Datei** **Neu** aus, und wählen Sie dann ** Projekt **.
     
-5. Erweitern Sie unter **Visual C#** oder **Visual Basic** den Knoten **Windows**, und wählen Sie dann **Konsolenanwendung**.
+5. Erweitern Sie unter **visuelle C# ** oder **Visual Basic** **Windows**, und wählen Sie dann **Console Application**.
     
-6. Geben Sie im Feld **Name den Namen** 'VisioFileExplorer'. Das Konsolenanwendungsprojekt wird geöffnet. 
+6. Geben Sie in das Feld **Name** den Eintrag "VisioFileExplorer" ein. Das Konsolenanwendungsprojekt wird geöffnet. 
     
-7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Verweis hinzufügen**. 
+7. Klicken Sie im **Solution Explorer** mit der rechten Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Add Reference**. 
     
-8. Erweitern Sie im Dialogfeld **Verweis hinzufügen** unter **Assemblies** den Knoten **Framework**, und wählen Sie dann **WindowsBase** aus.
+8. Erweitern Sie im **Add Reference**-Dialogfeld unter **Assemblies** **Framework**, und wählen Sie dann **WindowsBase** aus.
     
 9. Fügen Sie den folgenden Code in die Lösung ein.
     
@@ -282,14 +282,14 @@ Im folgenden Codebeispiel können Sie sehen, wie eine VSDX-Datei geöffnet wird,
 ## <a name="see-also"></a>Siehe auch
 <a name="vis15_IntroVSDX_Resources"> </a>
 
-Weitere Informationen über das Visio 2013-Dateiformat, die Open Packaging-Konvention oder zum programmgesteuerten arbeiten mit Visio 2013or Office OpenXML-Dateien finden Sie unter den folgenden Ressourcen:
+Weitere Informationen über das Visio 2013-Dateiformat, die Open Packaging-Konvention oder die programmatische Arbeit mit Visio 2013- oder Office-Open XML-Dateien finden Sie in den folgenden Themen:
   
 - [Visio für Entwickler](https://msdn.microsoft.com/office/aa905478.aspx)
     
-- [OPC: ein neuer Standard für das Verpacken Ihrer Daten](https://msdn.microsoft.com/magazine/cc163372.aspx).
+- [OPC: Ein neuer Standard für das Verpacken Ihrer Daten](https://msdn.microsoft.com/magazine/cc163372.aspx).
     
-- [Grundlagen der Open Packaging Conventions](https://msdn.microsoft.com/library/ee361919.aspx)
+- [Grundlagen der Open Packaging-Konventionen](https://msdn.microsoft.com/library/ee361919.aspx)
     
-- [Einführung in die Office (2007) Open XML-Dateiformate](https://msdn.microsoft.com/library/aa338205.aspx)
+- [Einführung in die Microsoft Office (2007) Open XML-Dateiformate](https://msdn.microsoft.com/library/aa338205.aspx)
     
 
