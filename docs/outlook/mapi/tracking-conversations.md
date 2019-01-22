@@ -3,17 +3,17 @@ title: Nachverfolgen von Unterhaltungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0500dee8-a39d-45ce-87b1-c515e92e083d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7f1dd7a23bbd643b496b7634b6ad0230c806585f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+localization_priority: Priority
+ms.openlocfilehash: 3a59a7a15b4647832634adc4757544876b8841b1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398605"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706220"
 ---
 # <a name="tracking-conversations"></a>Nachverfolgen von Unterhaltungen
 
@@ -21,11 +21,11 @@ ms.locfileid: "25398605"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachverfolgen der Unterhaltung sammelt Antworten auf eine Nachricht. Clients sollte zwei Eigenschaften, mit denen in Unterhaltungen nachverfolgen festgelegt:
+Beim Nachverfolgen von Unterhaltungen handelt es sich um das Erfassen von Antworten auf eine Nachricht. Clients sollten zwei Eigenschaften festlegen, die bei der Nachverfolgung von Nachrichten behilflich sind:
   
-- **PR_CONVERSATION_TOPIC** ([Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md))
+- **PR_CONVERSATION_TOPIC** ([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md))
     
-    **PR_CONVERSATION_TOPIC** ist der normalisierte Betreff der Nachricht, den Betreff ohne das Pr�fixzeichenfolgen. Legen Sie diese Eigenschaft auf den Wert, der die Nachricht **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))-Eigenschaft. 
+    **PR_CONVERSATION_TOPIC** ist der standardisierte Betreff der Nachricht, der Betreff ohne die Präfixzeichenfolgen. Legen Sie diese Eigenschaft auf den Wert der **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))-Eigenschaft der Nachricht fest. 
     
 - **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))
     
@@ -61,8 +61,8 @@ Wenn die Unterhaltung Indizes der Nachrichten manuell festgelegt werden sollen, 
     
 4. Separate Threads gestartet zu unterschiedlichen Zeiten, die im gleiche Thema freigeben auftreten. 
     
-5. Um eine kategorisierte Sortierung zu implementieren, damit Nachrichten nach Thema gruppiert sind, sortiert nach **PR_CONVERSATION_TOPIC** erste und dann nach **PR_CONVERSATION_INDEX**. Um die Ergebnisse der Sortierung darzustellen, legen Sie die **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md))-Eigenschaft auf 0 für Nachrichten mit einem Unterhaltung Index, der 22 Bytes lang ist. Erh�hen Sie f�r jede in der L�nge 5-Byte-Inkrement, klicken Sie dann den Wert der Eigenschaft **PR_DEPTH** um eins. 
+5. Um eine kategorisierte Sortierung zu implementieren, sodass Nachrichten nach Thema gruppiert werden, sortieren Sie zuerst nach **PR_CONVERSATION_TOPIC** und dann nach **PR_CONVERSATION_INDEX**. Um die Ergebnisse der Sortierung darzustellen, legen Sie die **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md))-Eigenschaft für Nachrichten mit einem Unterhaltungsindex, der 22 Byte lang ist, auf 0 fest. Erhöhen Sie dann für jede Verlängerung um 5 Byte den Wert der **PR_DEPTH**-Eigenschaft um 1. 
     
-Die PR_ORIGINAL Gruppe von Eigenschaften kann auch f�r Unterhaltung Nachverfolgen verwendet werden. Legen Sie diese Eigenschaften auf die urspr�ngliche Nachricht antworten oder weitergeleiteten Nachrichten verkn�pfen. Alle Eigenschaften PR_ORIGINAL sind optional. Wenn Sie nicht explizit, beispielsweise **PR_ORIGINAL_AUTHOR_ENTRYID** ([PidTagOriginalAuthorEntryId](pidtagoriginalauthorentryid-canonical-property.md)) festlegen kann der Nachricht Speicheranbieter der Standardwert oder der Wert der **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md)) verwenden -Eigenschaft. Dienstanbieter entscheidet auch, wenn Sie nicht **PR_ORIGINAL_AUTHOR_NAME** oder **PR_ORIGINAL_SUBMIT_TIME** ([PidTagOriginalSubmitTime](pidtagoriginalsubmittime-canonical-property.md)) festlegen, können diese Eigenschaften auf die Werte der **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) und **PR_ Standard CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))-Eigenschaften fest. 
+Die PR_ORIGINAL Gruppe von Eigenschaften kann auch f�r Unterhaltung Nachverfolgen verwendet werden. Legen Sie diese Eigenschaften auf die urspr�ngliche Nachricht antworten oder weitergeleiteten Nachrichten verkn�pfen. Alle PR_ORIGINAL-Eigenschaften sind optional. Wenn Sie zum Beispiel **PR_ORIGINAL_AUTHOR_ENTRYID** ([PidTagOriginalAuthorEntryId](pidtagoriginalauthorentryid-canonical-property.md)) nicht explizit festlegen, kann der Nachrichtenspeicheranbieter den Standardwert oder den Wert der **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md))-Eigenschaft verwenden. Wenn Sie gleichermaßen **PR_ORIGINAL_AUTHOR_NAME** oder **PR_ORIGINAL_SUBMIT_TIME** ([PidTagOriginalSubmitTime](pidtagoriginalsubmittime-canonical-property.md)) nicht festlegen, können diese Eigenschaften standardmäßig die Werte der **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))- bzw. der **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))-Eigenschaft verwenden. 
   
 

@@ -1,40 +1,40 @@
 ---
-title: Größer als oder gleich (Access benutzerdefinierte Web app)
+title: Größer oder gleich (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
 ms.assetid: cceb8dcb-5ce1-4c32-b057-6201b62a646f
-description: Vergleicht zwei Ausdrücke für größer als oder gleich.
-ms.openlocfilehash: 425745d8634f92e3bcce3cbfcd7d11a890e3be4b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+description: Vergleicht zwei Ausdrücke im Hinblick auf größer als oder gleich.
+localization_priority: Priority
+ms.openlocfilehash: 76472544be950c68f3b5d42fe13b3040e9268f48
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790194"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709257"
 ---
-# <a name="greater-than-or-equal-to-access-custom-web-app"></a>Größer als oder gleich (Access benutzerdefinierte Web app)
+# <a name="greater-than-or-equal-to-access-custom-web-app"></a>Größer oder gleich (benutzerdefinierte Access-Web-App)
 
-Vergleicht zwei Ausdrücke für größer als oder gleich.
+Vergleicht zwei Ausdrücke im Hinblick auf größer als oder gleich.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
 `>= (Greater Than or Equal To)`
 
-*Ausdruck*  \>=  *Ausdruck* 
+*expression*  \>=  *expression* 
   
-*Ausdruck*  Ist ein beliebiger gültiger Ausdruck. Beide Ausdrücke müssen implizit Datentypen aufweisen. Die Konvertierung, abhängig von den Regeln der Rangfolge der Datentypen. 
+*expression*  Ein beliebiger gültiger Ausdruck. Beide Ausdrücke müssen implizit konvertierbare Datentypen aufweisen. Die Konvertierung ist von den Regeln der Rangfolge der Datentypen abhängig. 
   
 ## <a name="return-type"></a>Rückgabetyp
 
-**Boolean**
+**Boolescher Wert**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Beim Vergleichen von Ausdrücken ungleich Null ist das Ergebnis TRUE, wenn der linke Operand einen Wert größer oder gleich als der Rechte Operand besitzt; Das Ergebnis ist anderenfalls FALSE.
+Wenn Sie Ausdrücke vergleichen, die nicht null sind, so lautet das Ergebnis „TRUE“, wenn der linke Operand einen Wert aufweist, der größer oder gleich dem rechten Operanden ist, andernfalls ist das Ergebnis „FALSE“.
   
 
