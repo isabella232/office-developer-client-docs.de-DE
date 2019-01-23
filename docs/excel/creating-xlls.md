@@ -5,126 +5,126 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 keywords:
-- DLLs [excel 2007], Excel, XlAutoFree-Funktion [Excel 2007], xlAutoFree12-Funktion [Excel 2007],xlcall32.lib [Excel 2007], [Excel 2007],xlcall.cpp [Excel 2007], XlAutoRemove-Funktion [Excel 2007], XlAddInManagerInfo XlAutoRegister-Funktion aufruft Funktion [Excel 2007], XlAutoAdd-Funktion [Excel 2007], XlAutoOpen-Funktion [Excel 2007], XlAutoClose-Funktion [Excel 2007], DLLs [Excel 2007], Umwandeln in XLLs XLLs [Excel 2007], Excel, xlAutoRegister12-Funktion [Excel 2007],xlcall.h [Excel aufrufen 2007], xlAddInManagerInfo12-Funktion [Excel 2007]
-localization_priority: Normal
+- DLLs [Excel 2007], Aufrufen in Excel,xlAutoFree-Funktion [Excel 2007],xlAutoFree12-Funktion [Excel 2007],xlcall32.lib [Excel 2007],xlAutoRegister-Funktion [Excel 2007],xlcall.cpp [Excel 2007],xlAutoRemove-Funktion [Excel 2007],xlAddInManagerInfo-Funktion [Excel 2007],xlAutoAdd-Funktion [Excel 2007],xlAutoOpen-Funktion [Excel 2007],xlAutoClose-Funktion [Excel 2007],DLLs [Excel 2007], Umwandeln in XLLs,XLLs [Excel 2007], Aufrufen in Excel,xlAutoRegister12-Funktion [Excel 2007],xlcall.h [Excel 2007],xlAddInManagerInfo12-Funktion [Excel 2007]
 ms.assetid: 7754998f-4e13-4a37-9724-43b6ee6c919b
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: de347d34768c25adf0d96642b4fade781ae26a9c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+localization_priority: Priority
+ms.openlocfilehash: 886b8e74f00f2e724785d43475ee0ffa3c922710
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790404"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706744"
 ---
 # <a name="creating-xlls"></a>Erstellen von XLLs
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wenn die DLL eigenständig ist oder stützt sich nur auf andere Bibliotheken, müssen Sie zum Aktivieren von Microsoft Excel Zugriff auf seine Funktionen und Befehle kennen. Weitere Informationen finden Sie unter [Zugriff auf DLLs in Excel](how-to-access-dlls-in-excel.md). 
+Wenn Ihre DLL eigenständig ist oder sich nur auf andere Bibliotheken stützt, müssen Sie wissen, wie Sie Microsoft Excel aktivieren, um Zugriff auf die zugehörigen Funktionen und Befehle zu erhalten. Weitere Informationen finden Sie unter [Zugreifen auf DLLs in Excel](how-to-access-dlls-in-excel.md). 
   
-Jedoch, wenn die DLL muss Zugriff auf Excel-Funktionen (beispielsweise den Inhalt einer Zelle Aufrufen eine Tabellenfunktion oder Excel zum Abrufen von Informationen des Arbeitsbereichs abgefragt abrufen), muss der Code einen Rückruf in Excel können.
+Wenn Ihre DLL jedoch auf die Excel-Funktionalität zugreifen muss (z. B. um den Inhalt einer Zelle abzurufen, eine Arbeitsblattfunktion aufzurufen oder Excel nach Informationen zum Arbeitsbereich abzufragen), muss Ihr Code einen Rückruf in Excel vornehmen können.
   
-Der Excel-C-API bietet verschiedene Funktionen, mit denen DLLs in Excel zurückruft. Um auf diese zuzugreifen, die DLL verknüpft sein statisch zur Kompilierzeit mit der Excel-32-Bit-Bibliothek xlcall32.lib. Die statische Bibliothek ist zum Herunterladen von Microsoft als Teil der Microsoft Excel 2013 XLL-SDK, die 32-Bit- und 64-Bit-Versionen dieser Bibliothek enthält.
+Die C-API von Excel bietet mehrere Funktionen, mit denen DLLs einen Rückruf in Excel vornehmen können. Damit die DLL auf diese Funktionen zugreifen kann, muss sie zur Kompilierzeit statisch mit der 32-Bit-Bibliothek von Excel (xlcall32.lib) verknüpft werden. Die statische Bibliothek kann von Microsoft als Teil des Microsoft Excel 2013 XLL SDKs heruntergeladen werden, das sowohl die 32-Bit- als auch die 64-Bit-Version dieser Bibliothek enthält.
   
-## <a name="enabling-dlls-to-call-back-into-excel"></a>Aktivieren von DLLs Rückruf in Excel
+## <a name="enabling-dlls-to-call-back-into-excel"></a>Aktivieren von DLLs für den Rückruf in Excel
 
-Für eine DLL sein können den Zugriff auf die Funktionen in Excel und Abrufen oder festlegen Arbeitsbereichsinformationen, müssen sie zunächst die Adressen der Excel-Rückruffunktionen **Excel4**, **Excel4v**, **Excel12**und **Excel12v**abrufen. Die letzten beiden in Excel 2007 eingeführt wurden und in späteren Versionen verfügbar sind. Zugriff auf alle diese muss das DLL-Projekt Verweise auf die folgenden Dateien aus dem Excel 2013 XLL-SDK enthalten. Wenn Sie nur die ersten beiden Rückrufe (in einer Version von Excel) zugreifen möchten, muss das Projekt nur die ersten beiden Dateien enthalten.
+Damit eine DLL auf die Funktionen in Excel zugreifen und Arbeitsbereichsinformationen abrufen oder festlegen kann, muss sie zunächst die Adressen der Excel-Rückruffunktionen **Excel4**, **Excel4v**, **Excel12** und **Excel12v** abrufen. Die beiden letzten Funktionen wurden in Excel 2007 eingeführt und sind in nachfolgenden Versionen verfügbar. Um auf all diese Funktionen zuzugreifen, muss das DLL-Projekt Verweise auf die folgenden Dateien aus dem Excel 2013 XLL SDK enthalten. Wenn Sie nur auf die beiden ersten Rückruffunktionen (in jeder Excel-Version enthalten) zugreifen möchten, muss Ihr Projekt nur die beiden ersten Dateien enthalten.
   
 ### <a name="xlcallh"></a>Xlcall.h
 
-Die Xlcall.h-Datei enthält die folgenden Elemente:
+Die Datei "Xlcall.h" enthält die folgenden Elemente:
   
-- Von Funktionsprototypen für alle Rückruffunktionen.
+- Funktionsprototypen für alle Rückruffunktionen.
     
-- Definitionen der Datenstrukturen, die die Rückrufe zum Austauschen von Daten zwischen der DLL/XLL und Excel verwenden und Datentyp Konstante.
+- Definitionen der Datenstrukturen, welche die Rückruffunktionen für den Austausch von Daten zwischen DLL/XLL und Excel verwenden, und Definitionen von Datentypkonstanten.
     
-- Definitionen von der C-API-Funktion und Befehl Entsprechungen des Arbeitsblatts, des Makro Blatt Funktionen und der unterstützten Excel-Befehle.
+- Definitionen der C-API-Funktion und Befehlsentsprechungen für Arbeitsblatt, Makroblattfunktionen und unterstützte Excel-Befehle.
     
-- Definitionen der Callback-Funktion geben Werte zurück.
+- Definitionen der Rückgabewerte der Rückruffunktion.
     
-Verwenden Sie die **#include** Richtlinie für diese Datei, die direkt oder indirekt über einen anderen Headerdatei in alle Dateien, die auf der C-API zugreifen oder behandelt Datentypen, die der C-API verwendet. 
+Sie sollten für diese Datei die Direktive **#include** (direkt oder indirekt über eine andere Headerdatei) in allen Dateien verwenden, die auf die C-API zugreifen oder die Datentypen verarbeiten, die von der C-API verwendet werden. 
   
 ### <a name="xlcall32lib"></a>Xlcall32.lib
 
-Die Xlcall32.lib Bibliothek exportiert die ersten beiden Rückrufe, **Excel4** und **Excel4v**und auch die **XlCallVer** -Funktion. Ohne einen Verweis auf diese Bibliothek in Ihrem Projekt kann nicht vom Linker XLL erstellt, wenn Sie eine der folgenden Rückrufe in Ihrem Code verwendet haben. (Sie erhalten die Adressen dieser Funktionen von dynamisch verknüpfen mit den entsprechenden Xlcall32.dll, die als Teil einer normalen Excel-Installation auf Ihr System kopiert werden.) 
+Die Bibliothek "Xlcall32.lib" exportiert die beiden ersten Rückruffunktionen **Excel4** und **Excel4v** sowie die **XlCallVer**-Funktion. Ohne einen Verweis auf diese Bibliothek in Ihrem Projekt kann der Linker die XLL nicht erstellen, wenn Sie einen dieser Rückrufe in Ihrem Code verwendet haben. (Die Adressen dieser Funktionen können Sie durch eine dynamische Verknüpfung mit der entsprechenden Xlcall32.dll beziehen, die im Rahmen einer normalen Excel-Installation auf Ihr System kopiert wird.) 
   
 ### <a name="xlcallcpp"></a>Xlcall.cpp
 
-Die Excel-Rückrufe **Excel12** und **Excel12v** werden nicht in Xlcall32.lib exportiert. Dadurch wird sichergestellt, dass XLL-Projekten, die Sie erstellen ab Excel 2007 mit früheren Versionen von Excel auch funktioniert. Das Modul Xlcall.cpp enthält Code für die **Excel12** und **Excel12v** -Funktionen, die in einem Excel-Eintrag aufrufen zeigen Sie in Excel 2007 starten oder einen sicheren Fehlerwert zurück, wenn Sie eine frühere Version von Excel ausgeführt werden. Sie sollten in diesem Modul in Ihrem Projekt einschließen, wenn Sie eine XLL, ausgeführt wird, starten in Excel 2007 und, ist die neue Datentypen verwenden, die größer Raster und länger Unicode-Zeichenfolgen behandeln, erstellen möchten. 
+Die Excel-Rückruffunktionen **Excel12** und **Excel12v** werden nicht in Xlcall32.lib exportiert. Dadurch wird sichergestellt, dass XLL-Projekte, die Sie ab Excel 2007 erstellen, auch mit früheren Excel-Versionen funktionieren. Das Modul "Xlcall.cpp" enthält Code für die Funktionen **Excel12** und **Excel12v**, die ab Excel 2007 einen Excel-Einstiegspunkt aufrufen oder den Wert "safe error" (sicherer Fehler) zurückgeben, wenn Sie eine frühere Version von Excel ausführen. Sie sollten dieses Modul in Ihr Projekt einbeziehen, wenn Sie eine XLL erstellen möchten, die in Excel 2007 oder höher ausgeführt werden und in der Lage sein soll, die neuen Datentypen zu verwenden, die größere Raster und längere Unicode-Zeichenfolgen verarbeiten können. 
   
 > [!NOTE]
-> Beginnend mit Excel 2010 SDK, kann diese Datei für 32-Bit- und 64-Bit-XLLs kompiliert werden. 
+> Ab dem Excel 2010 SDK kann diese Datei sowohl für 32-Bit- als auch 64-Bit-XLLs kompiliert werden. 
   
-## <a name="turning-dlls-into-xlls-add-in-manager-interface-functions"></a>Umwandeln von DLLs in XLLs: Add-In-Manager-Schnittstelle Funktionen
+## <a name="turning-dlls-into-xlls-add-in-manager-interface-functions"></a>Umwandeln von DLLs in XLLs: Add-In-Manager und Schnittstellenfunktionen
 
-Eine XLL ist eine DLL, die verschiedene Prozeduren exportiert, die von Excel-Add-in-Manager oder Excel aufgerufen werden. Diese Verfahren sind hier kurz beschrieben und ausführlich im [Add-In - Manager und die Funktionen der XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md). Alle diese DLL Rückrufe beginnen mit dem Präfix **XlAuto**. Nur eine dieser Befehl **XlAutoOpen**, ist erforderlich. Es wird aufgerufen, wenn das Add-in ist aktiviert, und es wird gewöhnlich verwendet, Registrieren von XLL-Funktionen und Befehle mit Excel und für andere Aufgaben Initialisierung. In den nachfolgenden Abschnitten werden die Funktionssignaturen und Beispiel-Implementierung aller **XlAuto** -Funktionen bereitgestellt. 
+Eine XLL ist eine DLL, die mehrere Prozeduren exportiert, die von Excel oder dem Add-In-Manager von Excel aufgerufen werden. Diese Prozeduren sind hier kurz beschrieben und werden ausführlich unter [Add-In-Manager und XLL-Schnittstellenfunktionen](add-in-manager-and-xll-interface-functions.md) behandelt. All diese DLL-Rückrufe beginnen mit dem Präfix **xlAuto**. Nur einer der Rückrufe, der Befehl **xlAutoOpen**, ist erforderlich. Er wird beim Aktivieren des Add-Ins aufgerufen und wird in der Regel zum Registrieren von XLL-Funktionen und -Befehlen mit Excel und für andere Initialisierungsaufgaben verwendet. Die Funktionssignaturen und Beispielimplementierungen aller **xlAuto**-Funktionen finden Sie in den nachfolgenden Abschnitten. 
   
-Obwohl **XlAutoOpen** die einzige erforderliche diese Rückrufe ist, müssen Ihr Add-in auch andere Benutzer je nach dessen Verhalten zu exportieren. 
+Obwohl nur **xlAutoOpen** als Rückruffunktion erforderlich ist, muss das Add-In möglicherweise auch andere Funktionen exportieren. Das hängt vom Verhalten des Add-Ins ab. 
   
-Excel 2007 eingeführt einen neuen Datentyp **XLOPER12**, für ein größerer Raster und zur Unterstützung von langer Unicode-Zeichenfolgen. **XLOPER12** wird weiter unten in diesem Thema beschrieben. Während die **XlAuto** -Funktionen nutzen oder zurückgeben den alten Datentyp **XLOPER**, wurden neue Versionen dieser Funktionen in Excel 2007, die Datentypen **XLOPER12** verwenden eingeführt. Mit Ausnahme von **xlAutoFree12**, die Sie in einigen Fällen implementieren müssen, um **XLOPER12** Arbeitsspeicher vermeiden Speicherverlusten können, kann problemlos ausgelassen werden alle die Version 12 **XlAuto** Funktionen, die in diesem Fall ab Excel 2007, Excel Aufrufe der **XLOPER** Versionen. 
+In Excel 2007 wurde der neue Datentyp **XLOPER12** eingeführt, um größere Raster und lange Unicode-Zeichenfolgen zu unterstützen. **XLOPER12** wird weiter unten in diesem Thema beschrieben. Während **xlAuto**-Funktionen den alten Datentyp **XLOPER** übernehmen oder zurückgeben, wurden in Excel 2007 neue Versionen dieser Funktionen eingeführt, welche die Datentypen **XLOPER12** verwenden. Mit Ausnahme der **xlAutoFree12**-Funktion, die Sie manchmal zur Vermeidung von **XLOPER12**-Speicherverlusten implementieren müssen, können Sie bedenkenlos auf alle **xlAuto**-Funktionen der Version 12 verzichten. In diesem Fall ruft Excel (ab Excel 2007) die **XLOPER**-Versionen auf. 
   
 ### <a name="xlautoopen"></a>xlAutoOpen
 
-Excel Ruft die [XlAutoOpen](xlautoopen.md) -Funktion, wenn die XLL aktiviert wird. Das Add-In wird aktiviert, am Anfang einer Excel-Sitzung Wenn in der letzten Excel-Sitzung aktiv war, die normalerweise beendet. Das Add-in ist aktiviert, wenn sie während einer Excel-Sitzung geladen wurde. Das Add-in kann deaktiviert und während einer Sitzung Excel erneut aktiviert, und die Funktion für eine erneute Aktivierung aufgerufen wird. 
+Excel ruft jedes Mal, wenn die XLL aktiviert wird, die [xlAutoOpen](xlautoopen.md)-Funktion auf. Das Add-In wird zu Beginn einer Excel-Sitzung aktiviert, wenn es in der letzten Excel-Sitzung, die ordnungsgemäß beendet wurde, aktiv war. Das Add-In wird aktiviert, wenn es während einer Excel-Sitzung geladen werden. Das Add-In kann während einer Excel-Sitzung deaktiviert und erneut aktiviert werden. Bei der erneuten Aktivierung wird die Funktion aufgerufen. 
   
-Sie sollten **XlAutoOpen** zum Registrieren von XLL-Funktionen und Befehle, Initialisieren von Datenstrukturen, Anpassen der Benutzeroberfläche und so weiter verwenden. 
+Verwenden Sie **xlAutoOpen**, um XLL-Funktionen und -Befehle zu registrieren, Datenstrukturen zu initialisieren, die Benutzeroberfläche anzupassen usw. 
   
-Wenn Ihr Add-In implementiert und die [XlAutoRegister](xlautoregister-xlautoregister12.md) -Funktion oder die Funktion [xlAutoRegister12 exportiert](xlautoregister-xlautoregister12.md) , versucht Excel möglicherweise, aktivieren und registrieren eine Funktion oder einen Befehl, ohne vorher die **XlAutoOpen** -Funktion. In diesem Fall sollten Sie sicherstellen, dass Ihr Add-in ausreichend für Ihre Funktion oder Befehl ordnungsgemäß initialisiert wird. Wenn sie nicht der Fall ist, sollten Sie entweder beim Registrieren Sie die Funktion oder den Befehl, oder führen Sie die erforderliche Initialisierung fehl. 
+Wenn das Add-In die [xlAutoRegister](xlautoregister-xlautoregister12.md)-Funktion oder die [xlAutoRegister12](xlautoregister-xlautoregister12.md)-Funktion implementiert und exportiert, versucht Excel möglicherweise, eine Funktion oder einen Befehl zu aktivieren und zu registrieren, ohne zuerst die **xlAutoOpen**-Funktion aufzurufen. In diesem Fall müssen Sie sicherstellen, dass das Add-In für die Funktion oder den Befehl ausreichend initialisiert ist, damit es ordnungsgemäß funktioniert. Wenn das nicht zutrifft, sollten Sie entweder den Versuch, die Funktion oder den Befehl zu registrieren, abbrechen oder die erforderliche Initialisierung ausführen. 
   
 ### <a name="xlautoclose"></a>xlAutoClose
 
-Excel Ruft die [XlAutoClose](xlautoclose.md) -Funktion, wenn die XLL deaktiviert wird. Das Add-In wird deaktiviert werden normalerweise am Ende eine Excel-Sitzung. Wenn der Benutzer während einer Sitzung Excel das Add-in deaktiviert, wird die Funktion aufgerufen. 
+Excel ruft jedes Mal, wenn die XLL deaktiviert wird, die [xlAutoClose](xlautoclose.md)-Funktion auf. Das Add-in wird deaktiviert, wenn eine Excel-Sitzung ordnungsgemäß beendet wird. Wenn der Benutzer während einer Excel-Sitzung das Add-In deaktiviert, wird die Funktion aufgerufen. 
   
-Verwenden Sie **XlAutoClose** zum Aufheben der Registrierung Funktionen und Befehle, Ressourcen freizugeben, rückgängig Anpassungen und so weiter. 
+Verwenden Sie **xlAutoClose**, um die Registrierung von Funktionen und Befehlen aufzuheben, Ressourcen freizugeben, Anpassungen rückgängig zu machen usw. 
   
 > [!NOTE]
-> Es ist ein bekanntes Problem bei der Aufhebung der Registrierung von Funktionen und Befehle. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md). 
+> Bei der Aufhebung der Registrierung von Funktionen und Befehlen gibt es ein bekanntes Problem. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md). 
   
 ### <a name="xlautoadd"></a>xlAutoAdd
 
-Excel Ruft die [XlAutoAdd-Funktion](xlautoadd.md) , wenn der Benutzer die XLL während einer Sitzung Excel aktiviert, mit dem Add-In-Manager. Diese Funktion ist nicht aufgerufen, wenn Excel gestartet und eines vorinstallierten-add-ins lädt. 
+Excel ruft jedes Mal, wenn der Benutzer während einer Excel-Sitzung die XLL mithilfe des Add-In-Managers aktiviert, die [xlAutoAdd](xlautoadd.md)-Funktion auf. Diese Funktion wird nicht aufgerufen, wenn Excel startet und ein vorinstalliertes Add-In lädt. 
   
-Sie können diese Funktion verwenden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer teilt mit, dass das Add-In aktiviert wurde, Lese- oder Schreibvorgänge in die Registrierung oder Lizenzinformationen zu überprüfen.
+Sie können diese Funktion verwenden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer mitteilt, dass das Add-In zum Lesen oder Schreiben in der Registrierung oder zum Überprüfen von Lizenzinformationen aktiviert wurde.
   
 ### <a name="xlautoremove"></a>xlAutoRemove
 
-Excel Ruft die [XlAutoRemove](xlautoremove.md) -Funktion, wenn der Benutzer mit dem Add-In-Manager die XLL während einer Sitzung Excel deaktiviert. Diese Funktion ist nicht aufgerufen, wenn eine Excel-Sitzung, ordnungsgemäß oder nicht ordnungsgemäß, mit der Add-in installiert wird geschlossen. 
+Excel ruft jedes Mal, wenn der Benutzer während einer Excel-Sitzung die XLL mithilfe des Add-In-Managers deaktiviert, die [xlAutoRemove](xlautoremove.md)-Funktion auf. Diese Funktion wird nicht aufgerufen, wenn eine Excel-Sitzung mit dem installierten Add-In (ordnungsgemäß oder unerwartet) beendet wird. 
   
-Sie können diese Funktion verwenden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer teilt mit, dass das Add-in deaktiviert wurde, oder zum Lesen aus und Schreiben in die Registrierung.
+Sie können diese Funktion verwenden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer mitteilt, dass das Add-In zum Lesen oder Schreiben in der Registrierung deaktiviert wurde.
   
-### <a name="xladdinmanagerinfoxladdinmanagerinfo12"></a>XlAddInManagerInfo/xlAddInManagerInfo12
+### <a name="xladdinmanagerinfoxladdinmanagerinfo12"></a>xlAddInManagerInfo/xlAddInManagerInfo12
 
-Excel Ruft die [XlAddInManagerInfo](xladdinmanagerinfo-xladdinmanagerinfo12.md) -Funktion, wenn der Add-In-Manager zum ersten Mal in einer Excel-Sitzung aufgerufen wird. Wenn Excel ein Argument gleich 1 übergibt, sollte eine Zeichenfolge (in der Regel der Name des Add-Ins); dieser Funktion zurückgegeben werden. Es sollte anderenfalls zurückgeben **#VALUE!**.
+Excel ruft die [xlAddInManagerInfo](xladdinmanagerinfo-xladdinmanagerinfo12.md)-Funktion auf, wenn der Add-In-Manager zum ersten Mal in einer Excel-Sitzung aufgerufen wird. Wenn Excel ein Argument gleich 1 übergibt, sollte diese Funktion eine Zeichenfolge (in der Regel der Name des Add-Ins) zurückgeben. Andernfalls sollte **#VALUE!** zurückgegeben werden.
   
-Ab Excel 2007, ruft Excel die Funktion **xlAddInManagerInfo12** anstelle der **XlAddInManagerInfo** -Funktion aus, wenn es von der XLL exportiert wird. Die Funktion **xlAddInManagerInfo12** sollte auf die gleiche Weise wie die **XlAddInManagerInfo** -Funktion zur Vermeidung von versionsspezifischen Unterschiede im Verhalten von XLL funktionieren. Die **xlAddInManagerInfo12** -Funktion sollte einen Datentyp **XLOPER12** zurückgegeben, während die **XlAddInManagerInfo** -Funktion einen Datentyp **XLOPER** zurückgegeben werden soll. 
+Ab Excel 2007 ruft Excel bevorzugt die **xlAddInManagerInfo12**-Funktion statt der **xlAddInManagerInfo**-Funktion auf, wenn sie von der XLL exportiert wird. Die **xlAddInManagerInfo12**-Funktion sollte auf die gleiche Weise funktionieren wie die **xlAddInManagerInfo**-Funktion, um versionsspezifische Unterschiede im Verhalten der XLL zu vermeiden. Die **xlAddInManagerInfo12**-Funktion sollte den Datentyp **XLOPER12** zurückgeben, während die **xlAddInManagerInfo**-Funktion den Datentyp **XLOPER ** zurückgeben sollte. 
   
-### <a name="xlautoregisterxlautoregister12"></a>XlAutoRegister/xlAutoRegister12
+### <a name="xlautoregisterxlautoregister12"></a>xlAutoRegister/xlAutoRegister12
 
-Excel Ruft die [XlAutoRegister](xlautoregister-xlautoregister12.md) -Funktion, wenn ein Anruf an die XLM-Funktion **Registrieren**oder der C-API entsprechende [XlfRegister](xlfregister-form-1.md) -Funktion, mit der Rückgabe vorgenommen wurde und Elementtypen, die für die Funktion registrierende fehlt. Die Funktion **XlAutoRegister** ermöglicht die XLL zum Suchen der internen Liste der exportierten Funktionen und Befehle aus, um die Funktion mit dem Argument registrieren und die angegebenen Typen zurückgegeben. 
+Excel ruft jedes Mal, wenn ein Aufruf der XLM-Funktion **REGISTER** oder der entsprechenden C-API-Funktion [xlfRegister](xlfregister-form-1.md) erfolgt, die [xlAutoRegister](xlautoregister-xlautoregister12.md)-Funktion auf, wobei der zu registrierenden Funktion Rückgabe- und Argumenttypen fehlen. Die **xlAutoRegister**-Funktion ermöglicht der XLL, die internen Listen mit exportierten Funktionen und Befehlen zu durchsuchen, um die Funktion mit dem Argument zu registrieren und die angegebenen Typen zurückzugeben. 
   
-Ab Excel 2007, ruft Excel die Funktion **xlAddInRegister12** anstelle der **XlAddInRegister** -Funktion aus, wenn es von der XLL exportiert wird. 
+Ab Excel 2007 ruft Excel bevorzugt die **xlAddInRegister12**-Funktion statt der **xlAddInRegister**-Funktion auf, wenn sie von der XLL exportiert wird. 
   
 > [!NOTE]
-> Wenn **XlAddInRegister**/ **xlAddInRegister12** versucht, die Funktion ohne das Argument registrieren und Rückgabetypen, eine rekursive Schleife aufrufen auftritt, der schließlich überschreitet die Aufrufliste und festgelegt, dass Excel schließen oder beenden reagiert. 
+> Wenn **xlAddInRegister**/ **xlAddInRegister12** versucht, die Funktion zu registrieren, ohne Argument und Rückgabetypen bereitzustellen, tritt eine rekursive Aufrufschleife und in der Folge ein Aufruflistenüberlauf auf, der dazu führt, dass Excel beendet wird oder nicht mehr reagiert. 
   
-### <a name="xlautofreexlautofree12"></a>XlAutoFree/xlAutoFree12
+### <a name="xlautofreexlautofree12"></a>xlAutoFree/xlAutoFree12
 
-Excel Ruft die [XlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md) -Funktion auf, unmittelbar nachdem eine XLL-Arbeitsblattfunktion einen **XLOPER**gibt/ **XLOPER12** Datentyp mit Kennzeichen, die Excel angewiesen wird, Arbeitsspeicher, die die XLL weiterhin freigegeben werden muss. Auf diese Weise können die XLL zurückzugebenden dynamisch Arrays, Zeichenfolgen und externe Verweise auf das Arbeitsblatt ohne Speicherverluste zugewiesen. Ab Excel 2007, wird der Datentyp **XLOPER12** unterstützt. Weitere Informationen finden Sie unter [Speicherverwaltung in Excel](memory-management-in-excel.md).
+Excel ruft die [xlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md)-Funktion auf, sobald eine XLL-Arbeitsblattfunktion den Datentyp **XLOPER**/ **XLOPER12** zurückgibt, und zwar mit einem Flag zur Information von Excel, dass Speicher vorhanden ist, den die XLL noch freigeben muss. Dadurch kann die XLL dynamisch zugewiesene Arrays, Zeichenfolgen und externe Verweise auf das Arbeitsblatt ohne Speicherverluste zurückgeben. Ab Excel 2007 wird der Datentyp **XLOPER12** unterstützt. Weitere Informationen finden Sie unter [Speicherverwaltung in Excel](memory-management-in-excel.md).
   
 > [!NOTE]
-> Ab Excel 2007, wenn Excel ist multithreaded Arbeitsblatt neu berechnen, die **XlAutoFree**für die Verwendung konfiguriert/ **xlAutoFree12** -Funktion wird aufgerufen, auf dem gleichen Thread, die gerade verwendet wurde, um die Funktion aufgerufen wird, die es zurückgegeben. Der Aufruf von **XlAutoFree**/ **xlAutoFree12** wird immer durchgeführt werden, bevor alle nachfolgenden Arbeitsblattzellen auf diesem Thread ausgewertet werden. Dies vereinfacht die threadsicheren Design in Ihrer XLL. Weitere Informationen finden Sie unter [Multithreaded Neuberechnung in Excel](multithreaded-recalculation-in-excel.md). 
+> Ab Excel 2007 wird bei einer Konfiguration von Excel für die Verwendung der Multithread-Neuberechnung eines Arbeitsblatts die **xlAutoFree**/ **xlAutoFree12**-Funktion im selben Thread aufgerufen, der gerade zum Aufrufen der Funktion verwendet wurde, die ihn zurückgegeben hat. Der Aufruf von **xlAutoFree**/ **xlAutoFree12** erfolgt immer vor der Auswertung aller nachfolgenden Arbeitsblattzellen in diesem Thread. Dies vereinfacht das threadsichere Design in Ihrer XLL. Weitere Informationen finden Sie unter [Multithread-Neuberechnung in Excel](multithreaded-recalculation-in-excel.md). 
   
-### <a name="creating-64-bit-xlls"></a>Erstellen von XLLs 64-bit
+### <a name="creating-64-bit-xlls"></a>Erstellen von 64-Bit-XLLs
 
-Excel und benutzerdefinierte Funktionen können auf 64-Bit-Betriebssysteme Leistungsvorteile über 32-Bit-Betriebssystemen nutzen ausführen. Excel übergibt Werte in **XLOPER12** Strukturen, die Informationen zu den Typen für die Daten enthalten. Seien Sie vorsichtig bei der Konvertierung zwischen Werten in der Struktur **XLOPER12** und systemeigenen Typen wie **Int** oder Zeiger auf die Werte in der größeren Typ beizubehalten. 
+Excel und benutzerdefinierte Funktionen können auf 64-Bit-Betriebssystemen ausgeführt werden, um die Leistungsvorteile gegenüber 32-Bit-Betriebssystemen zu nutzen. Excel übergibt Werte in **XLOPER12**-Strukturen, die Informationen zu den Typen für die Daten enthalten. Gehen Sie beim Konvertieren von Werten zwischen der **XLOPER12**-Struktur und nativen Typen wie **int** oder Zeigern mit Bedacht vor, um die Werte im größeren Typ beizubehalten. 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 
 
-[Anruf XLL-Funktionen aus der Funktions-Assistenten oder Dialogfelder ersetzen](how-to-call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes.md)
+[Aufrufen von XLL-Funktionen aus dem Funktionsassistenten oder Ersetzen von Dialogfeldern](how-to-call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes.md)
   
-[Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
+[Add-In-Manager und XLL-Schnittstellenfunktionen](add-in-manager-and-xll-interface-functions.md)
   
-[Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 

@@ -1,33 +1,33 @@
 ---
-title: Schnelles Herunterfahren Benutzeroptionen
+title: Benutzeroptionen für das schnelle Herunterfahren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 220aeab5-20f6-4520-96c9-8aaa0e8ea15b
-description: 'Zuletzt geändert: 26 Juni 2012'
-ms.openlocfilehash: bd541ed09bc661f3697408d3f475928b9ef0bcc1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+description: 'Letzte Änderung: 26. Juni 2012'
+localization_priority: Priority
+ms.openlocfilehash: 3c60862733c6b38e60650ae9daba9bba578fcd58
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585192"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716369"
 ---
-# <a name="fast-shutdown-user-options"></a>Schnelles Herunterfahren Benutzeroptionen
+# <a name="fast-shutdown-user-options"></a>Benutzeroptionen für das schnelle Herunterfahren
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema werden die drei Windows-registrierungseinstellungen, die verfügbar sind, beginnend in Microsoft Outlook 2010 und jetzt einschließlich Microsoft Outlook 2013 für Schnelles Herunterfahren von MAPI-Clients des Benutzers. Administratoren können diese Registrierungseinträge verwenden, um das bevorzugte Client Herunterfahren Verhalten je nach der MAPI-Anbieter Unterstützung für schnelle Herunterfahren von Clients anzugeben. Des Administrators festlegen, wiederum bestimmt, wie das MAPI-Subsystem Aufruf [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) im Hinblick auf die verfügbaren Schnelles Herunterfahren Unterstützung der MAPI-Client reagiert. 
+In diesem Thema werden die drei Windows-Registrierungseinstellungen beschrieben, die ab Microsoft Outlook 2010 und jetzt bis einschließlich Microsoft Outlook 2013 für das schnelle Herunterfahren von MAPI-Clients eines Benutzers verfügbar sind. Administratoren können mithilfe dieser Registrierungseinstellungen das bevorzugte Clientverhalten beim Herunterfahren abhängig von der vom MAPI-Anbieter angebotenen Unterstützung für das schnelle Herunterfahren des Clients angeben. Die Einstellung des Administrators bestimmt wiederum, wie das MAPI-Subsystem auf den Aufruf des MAPI-Clients von [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) in Bezug auf die verfügbare Unterstützung für schnelles Herunterfahren reagiert. 
   
-Obwohl eine Einstellung in der Registrierung des Administrators Voreinstellung auf Benutzerebene für Schnelles Herunterfahren für alle MAPI-Clients wiedergibt, kann ein MAPI-Client-Entwickler entscheiden Sie, ob der Client Schnelles Herunterfahren unabhängig von anderen MAPI-Clients unterstützt und die registrierungseinstellung des Administrators. Dennoch für Schnelles Herunterfahren erfolgreich, stattfinden muss der Benutzer die Einstellung der erforderlichen Registrierung verfügen, die ein MAPI-Client muss das schnelle Herunterfahren initiiert werden mithilfe der [IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md) Schnittstelle und MAPI-Anbieter, die Arbeit mit der Client sollte Implementieren der [IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md) -Schnittstelle für das schnelle Herunterfahren von Clients unterstützen. 
+Eine Registrierungseinstellung spiegelt zwar die bevorzugte Einstellung des Administrators für das schnelle Herunterfahren aller MAPI-Clients auf Benutzerebene wider, ein MAPI-Cliententwickler kann jedoch entscheiden, ob der Client schnelles Herunterfahren unabhängig von anderen MAPI-Clients und der Registrierungseinstellung des Administrators unterstützen soll. Aber damit das schnelle Herunterfahren erfolgreich ausgeführt wird, muss der Benutzer die erforderliche Registrierungseinstellung festgelegt haben, ein MAPI-Client muss das schnelle Herunterfahren mithilfe der Schnittstelle [IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md) initiieren, und MAPI-Anbieter, die mit dem Client arbeiten, müssen die Schnittstelle [IMAPIProviderShutdown : IUnknown](imapiprovidershutdowniunknown.md) implementieren, um das schnelle Herunterfahren des Clients zu unterstützen. 
   
-In der folgenden Liste werden die drei Optionen auf Benutzerebene beschrieben.
+In der folgenden Liste sind diese drei Optionen auf Benutzerebene beschrieben.
   
-### <a name="option-1-the-mapi-subsystem-enables-fast-shutdown-unless-mapi-providers-explicitly-opt-out"></a>Option 1: Ermöglicht das MAPI-Subsystem Schnelles Herunterfahren, wenn MAPI-Anbieter explizit Aufheben der Bestätigung 
+### <a name="option-1-the-mapi-subsystem-enables-fast-shutdown-unless-mapi-providers-explicitly-opt-out"></a>Option 1: Das MAPI-Subsystem ermöglicht schnelles Herunterfahren, sofern die MAPI-Anbieter dies nicht explizit deaktivieren 
     
-Starten in Outlook 2010, ist dies das Standardverhalten, wenn Outlook MAPI-Client ist; Es ist nicht unbedingt das Standardverhalten für andere MAPI-Clients. Wenn Sie diese Option für Outlook explizit angeben, können Administratoren auch den folgenden Registrierungsschlüssel und den Wert festzulegen.
+Ab Outlook 2010 handelt es sich dabei um das Standardverhalten, wenn Outlook der MAPI-Client ist. Bei anderen MAPI-Clients stellt das nicht unbedingt das Standardverhalten dar. Um diese Option für Outlook explizit anzugeben, können Administratoren den folgenden Registrierungsschlüssel und -wert festlegen.
     
 Registrierungsschlüssel:
   
@@ -37,15 +37,15 @@ Wert:
   
 >  `"FastShutdownBehavior"=dword:00000000`
     
-Wenn ein MAPI-Client ein Schnelles Herunterfahren initiiert und **IMAPIClientShutdown::QueryFastShutdown** Abfrage für Schnelles Herunterfahren Support Ruft, antwortet des MAPI-Subsystems auf die Abfrage durch Rückgabe S\_solange keine MAPI-Anbieter, der eine aktive MAPI wurde auf OK Sitzung mit der MAPI-Client wurde nicht mehr unterstützt Schnelles Herunterfahren explizit bestätigt. 
+Wenn ein MAPI-Client schnelles Herunterfahren initiiert und **IMAPIClientShutdown::QueryFastShutdown** aufruft, um Unterstützung für schnelles Herunterfahren abzufragen, antwortet das MAPI-Subsystem auf die Abfrage mit der Rückgabe von S\_OK, sofern kein MAPI-Anbieter, der über eine aktive MAPI-Sitzung mit dem MAPI-Client verfügt, die Unterstützung für schnelles Herunterfahren explizit deaktiviert hat. 
 
-Ein MAPI-Anbieter nicht genügend Schnelles Herunterfahren entscheidet, durch die Implementierung der [IMAPIProviderShutdown::QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md) -Methode, um einen Fehler zurück (MAPI\_E\_NO\_Unterstützung). Wenn eine oder mehrere MAPI-Anbieter in **IMAPIProviderShutdown::QueryFastShutdown**einen Fehler zurück, gibt MAPI-Subsystems MAPI_\E_\NO\_SUPPORT zur **IMAPIClientShutdown::QueryFastShutdown**. 
+Ein MAPI-Anbieter deaktiviert schnelles Herunterfahren, indem er die Methode [IMAPIProviderShutdown::QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md) zur Rückgabe eines Fehlers (MAPI\_E\_NO\_SUPPORT) implementiert. Wenn ein oder mehrere MAPI-Anbieter einen Fehler in **IMAPIProviderShutdown::QueryFastShutdown** zurückgeben, gibt das MAPI-Subsystem MAPI_\E_\NO\_SUPPORT an **IMAPIClientShutdown::QueryFastShutdown** zurück. 
 
-Es sei denn, ein MAPI-Anbieter, die MAPI-Subsystems gibt S entscheidet\_auf OK, auch wenn eine oder mehrere Anbieter nicht implementiert haben die **IMAPIProviderShutdown: IUnknown** Schnittstelle. 
+Sofern ein MAPI-Anbieter die Option nicht deaktiviert, gibt das MAPI-Subsystem S\_OK zurück, auch wenn ein oder mehrere Anbieter die Schnittstelle **IMAPIProviderShutdown : IUnknown** nicht implementiert haben. 
     
-### <a name="option-2-the-mapi-subsystem-enables-fast-shutdown-only-if-every-mapi-provider-explicitly-opts-in"></a>Option 2: MAPI-Subsystems ermöglicht Schnelles Herunterfahren nur, wenn alle MAPI-Anbieter explizit in entscheidet 
+### <a name="option-2-the-mapi-subsystem-enables-fast-shutdown-only-if-every-mapi-provider-explicitly-opts-in"></a>Option 2: Das MAPI-Subsystem ermöglicht schnelles Herunterfahren nur, wenn jeder MAPI-Anbieter dies explizit aktiviert 
     
-Administratoren müssen die folgenden Registrierungsschlüssel und den Wert an, diese Einstellung für das schnelle Herunterfahren von Client explizit festlegen.
+Administratoren müssen den folgenden Registrierungsschlüssel und -wert explizit festlegen, um diese Einstellung für das schnelle Herunterfahren des Clients anzugeben.
     
 Registrierungsschlüssel:
   
@@ -55,13 +55,13 @@ Wert:
   
 >  `"FastShutdownBehavior"=dword:00000001`
     
-Wenn ein MAPI-Client ein Schnelles Herunterfahren initiiert und **IMAPIClientShutdown::QueryFastShutdown** Abfrage für Schnelles Herunterfahren Support Ruft, antwortet des MAPI-Subsystems auf die Abfrage durch Rückgabe S\_OK, wenn alle MAPI-Anbieter mit aktiver Sitzungen mit die MAPI-Client-Unterstützung Schnelles Herunterfahren. Ein MAPI-Anbieter veranschaulicht die Unterstützung durch die Implementierung von **IMAPIProviderShutdown::QueryFastShutdown** , um einen Fehlercode zurück (S\_OK). 
+Wenn ein MAPI-Client schnelles Herunterfahren initiiert und **IMAPIClientShutdown::QueryFastShutdown** aufruft, um Unterstützung für schnelles Herunterfahren abzufragen, antwortet das MAPI-Subsystem auf die Abfrage mit der Rückgabe von S\_OK, wenn alle MAPI-Anbieter, die über aktive Sitzungen mit dem MAPI-Client verfügen, schnelles Herunterfahren unterstützen. Ein MAPI-Anbieter demonstriert seine Unterstützung, indem er **IMAPIProviderShutdown::QueryFastShutdown** zur Rückgabe eines Nicht-Fehlercodes (S\_OK) implementiert. 
 
-Wenn solche MAPI-Anbieter einen oder mehrere MAPI zurückgeben\_E\_NO\_SUPPORT, oder **IMAPIProviderShutdown::QueryFastShutdown**, nicht zu implementieren des MAPI-Subsystems gibt einen Fehlercode an **IMAPIClientShutdown::QueryFastShutdown** zurück. .
+Wenn ein oder mehrere MAPI-Anbieter MAPI\_E\_NO\_SUPPORT zurückgeben oder **IMAPIProviderShutdown::QueryFastShutdown** nicht implementieren, gibt das MAPI-Subsystem einen Fehlercode an **IMAPIClientShutdown::QueryFastShutdown** zurück.
     
-### <a name="option-3-an-administrator-disables-support-for-client-fast-shutdown"></a>Option 3: Administrator deaktiviert die Unterstützung für schnelle Herunterfahren von Clients
+### <a name="option-3-an-administrator-disables-support-for-client-fast-shutdown"></a>Option 3: Ein Administrator deaktiviert die Unterstützung für das schnelle Herunterfahren des Clients
     
-Administratoren müssen die folgenden Registrierungsschlüssel und Deaktivieren der Unterstützung für das schnelle Herunterfahren von Client-Wert explizit festlegen.
+Administratoren müssen den folgenden Registrierungsschlüssel und -wert explizit festlegen, um die Unterstützung für das schnelle Herunterfahren des Clients zu deaktivieren.
     
 Registrierungsschlüssel:
   
@@ -71,7 +71,7 @@ Wert:
   
 >  `"FastShutdownBehavior"=dword:00000002`
     
-Wenn ein MAPI-Client ein Schnelles Herunterfahren initiiert und **IMAPIClientShutdown::QueryFastShutdown** Abfrage für Schnelles Herunterfahren Support Ruft, antwortet des MAPI-Subsystems auf die Abfrage durch Rückgabe MAPI_E_NO_SUPPORT, unabhängig davon, ob ein MAPI-Anbieter unterstützt die schnelle Herunterfahren. Bei dieser registrierungseinstellung ruft des MAPI-Subsystems nie die **IMAPIProviderShutdown::QueryFastShutdown** oder [IMAPIProviderShutdown::DoFastShutdown](imapiprovidershutdown-dofastshutdown.md) -Methode der Anbieter. 
+Wenn ein MAPI-Client schnelles Herunterfahren initiiert und **IMAPIClientShutdown::QueryFastShutdown** aufruft, um Unterstützung für schnelles Herunterfahren abzufragen, antwortet das MAPI-Subsystem auf die Abfrage mit der Rückgabe von MAPI_E_NO_SUPPORT, und zwar unabhängig davon, ob die MAPI-Anbieter schnelles Herunterfahren unterstützen. Bei dieser Registrierungseinstellung ruft das MAPI-Subsystem niemals die Methode **IMAPIProviderShutdown::QueryFastShutdown** oder [IMAPIProviderShutdown::DoFastShutdown](imapiprovidershutdown-dofastshutdown.md) eines Anbieters auf. 
     
 ## <a name="see-also"></a>Siehe auch
 
