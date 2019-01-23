@@ -3,119 +3,119 @@ title: Was das CSOM durchführen kann und was nicht
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 6828485c-040b-4278-923f-4cc7c8fe0fb1
-description: Das Client-seitigen Objektmodell (CSOM) ist ein Satz von APIs für Project Server 2013, die für beide entworfen wurden, online und lokalen verwenden in apps, die für PCs, Tablets und mobilen Geräten entwickelt werden können. Dieser Artikel enthält einige Standardszenarien für die Verwendung des CSOM und führt außerdem Einschränkungen des CSOM.
-ms.openlocfilehash: ad9f9e0404cb0063a1c58c8e66a022372881a24f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: Bei dem clientseitigen Objektmodell (CSOM) handelt es sich um eine Gruppe von APIs für Project Server 2013, die zur Verwendung in Online-Apps und in lokalen Apps konzipiert wurden, die für PCs, mobile Geräte und Tablets entwickelt werden können. Dieser Artikel enthält einige typische Szenarien für die Verwendung des CSOM und auch die Einschränkungen des CSOM.
+localization_priority: Priority
+ms.openlocfilehash: 6cdcb72c24e352365b6dcc9268ddf0bd249369af
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399291"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723047"
 ---
 # <a name="what-the-csom-does-and-does-not-do"></a>Was das CSOM durchführen kann und was nicht
 
-Das Client-seitigen Objektmodell (CSOM) ist ein Satz von APIs für Project Server 2013, die für beide entworfen wurden, online und lokalen verwenden in apps, die für PCs, Tablets und mobilen Geräten entwickelt werden können. Dieser Artikel enthält einige Standardszenarien für die Verwendung des CSOM und führt außerdem Einschränkungen des CSOM.
+Bei dem clientseitigen Objektmodell (CSOM) handelt es sich um eine Gruppe von APIs für Project Server 2013, die zur Verwendung in Online-Apps und in lokalen Apps konzipiert wurden, die für PCs, mobile Geräte und Tablets entwickelt werden können. Dieser Artikel enthält einige typische Szenarien für die Verwendung des CSOM und auch die Einschränkungen des CSOM.
   
 |||
 |:-----|:-----|
 |||
    
-Das CSOM ermöglicht die Entwicklung von apps für Project Server 2013 und Integration von Project Server mit einer anderen Anwendung. Apps können zur Ausführung auf PCs und mobilen Geräten wie Windows Phone 7.5, Tablets wie dem Windows 8-Geräten und iOS und Android-Geräte entwickelt werden. Das CSOM werden APIs, die am häufigsten Funktionen der zwölf abdecken PSI-Dienste in Project Server verwendet. Die CSOM-APIs sind abweichend und einfacher, als die ASMX-basierte und WCF-basierte PSI-Dienste zu verwenden sind. Das CSOM ADO.NET-Datasets wird nicht verwendet und kann über den OData-Protokoll zugegriffen werden. Sie können mithilfe von .NET Framework 4 Bibliotheken, JavaScript, mit dem Clientobjektmodell entwickeln oder Representational State Transfer (REST) Abfragen.
+Das CSOM ermöglicht die Entwicklung von Apps für Project Server 2013 und die Integration von Project Server in andere Anwendungen. Die Apps können zur Ausführung auf PCs, mobilen Geräten wie Windows Phone 7.5, Tablets wie Windows 8-Geräten, und IOS- und Android-Geräten entwickelt werden. Das CSOM bietet APIs, die die Funktionalität der zwölf am häufigsten verwendeten PSI-Dienste in Project Server abdecken. Die CSOM-APIs werden organisiert und sind einfacher zu verwenden als die ASMX-basierten und WCF-basierten PSI-Dienste. Das CSOM verwendet keine ADO.NET-Datasets; auf das CSOM kann über das OData-Protokoll zugegriffen werden. Sie können es mithilfe von .NET Framework 4-Bibliotheken, JavaScript oder REST-Abfragen (Representational State Transfer) entwickeln.
   
-Eine Übersicht über die CSOM und Artikel, die zeigen, wie Sie mit dem Clientobjektmodell JavaScript und .NET Framework 4 verwenden, finden Sie unter [Client-seitigen Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md). Weitere Informationen über die CSOM-Assemblys, Klassen und Member finden Sie unter den [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) Namespaceverweis. 
+Eine Übersicht über das CSOM und Artikel, in denen die Verwendung von JavaScript und .NET Framework 4 mit dem CSOM gezeigt wird, finden Sie unter [Clientseitiges Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md). Weitere Informationen zu den COM-Assemblys, -Klassen und -Mitgliedern finden Sie in der Namespacereferenz [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx). 
   
 ## <a name="usage-scenarios-for-the-csom"></a>Verwendungsszenarien für das CSOM
 <a name="pj15_WhatTheCSOM_UsageScenarios"> </a>
 
-Es folgen Beispiele für einige Arten von apps, die das CSOM unterstützt. Dem Clientobjektmodell kann anstelle der PSI für viele Szenarien verwendet werden:
+Nachfolgend finden Sie Beispiele für einige Arten von Apps, die das CSOM unterstützt. Das CSOM kann anstelle der PSI für viele Szenarien verwendet werden:
   
-- **Entwickeln von apps, die Project Server erweitern** Der primäre Zweck der des CSOM ist app-Entwicklung für Project Server 2013, wo apps für eine Vielzahl von Geräten erstellt werden können, die PCs, Mobilgeräten und Tablets enthalten. Apps können innerhalb einer privaten app-Katalog oder in den öffentlichen Office Store verteilt werden. 
+- **Entwickeln von Apps, die Project Server erweitern** Der Hauptzweck des CSOM ist die App-Entwicklung für Project Server 2013, bei der Apps für eine Vielzahl von Geräten, z. B. PCs, mobile Geräte und Tablets, erstellt werden können. Apps können in einem privaten App-Katalog oder im öffentlichen Office Store verteilt werden. 
     
-- **Automatisieren der Erstellung oder Verwaltung von Entitäten in Project Server** Dem Clientobjektmodell kann CRUD-Vorgänge für Entitäten wie Projekte, Aufgaben, Zuordnungen, Enterprise-Ressourcen, benutzerdefinierten Feldern, Nachschlagetabellen, Arbeitszeittabellen, Ereignishandler und Workflowphasen und-Stufen ausführen. Oftmals stehen Fällen, in dem eine benutzerdefinierte Anwendung Zeit mit Massen oder wiederkehrende Aufträge speichern können. 
+- **Automatisieren der Erstellung oder Verwaltung von Entitäten in Project Server** Das CSOM kann CRUD-Vorgänge für Entitäten wie Projekte, Aufgaben, Zuweisungen, Unternehmensressourcen, benutzerdefinierte Felder, Nachschlagetabellen, Arbeitszeittabellen, Ereignishandler sowie Workflowphasen und Phasen, ausführen. Eine benutzerdefinierte App kann in vielen Fällen bei Massenaufträgen oder sich wiederholenden Aufgaben Zeit sparen. 
     
-- **Abrufen von Daten in den veröffentlichten Tabellen der Project-Datenbank** Da Datenbank direkt den Zugriff auf den Entwurf, veröffentlicht, und archivieren Tabellen wird nicht unterstützt, können Sie das CSOM zum Lesen von Daten, die in die reporting Tabellen oder Ansichten nicht verfügbar ist. Beispielsweise erhalten Sie Informationen zu Workflowstufen, Phasen und Aktivitäten. Zum Lesen von Daten in den Tabellen reporting, können Sie den OData-Abfragen verwenden. 
+- **Abrufen von Daten in den veröffentlichten Tabellen der Project-Datenbank** Da kein direkter Datenbankzugriff auf die entworfenen, veröffentlichten und archivierten Tabellen unterstützt wird, können Sie das CSOM verwenden, um Daten zu lesen, die nicht in den Berichtstabellen oder Sichten verfügbar ist. Rufen Sie zum Beispiel Informationen zu Workflowphasen, Phasen und Aktivitäten ab. Um Daten in den Berichtstabellen zu lesen, können Sie OData-Abfragen verwenden. 
     
-- **Überprüfen von Zeitberichte und Arbeitszeittabellen-Daten** Verwenden Sie das CSOM in lokale Ereignishandler oder remote-Ereignisempfänger für Ereignisse vor, um Zuordnungsdaten Status oder Arbeitszeittabellen-Warteschlange überprüfen, die Benutzer eingeben, bevor die Daten in Project Web App gespeichert werden. 
+- **Überprüfen von Statusdaten und Arbeitszeittabellen** Verwenden Sie das CSOM in lokalen Ereignishandlern oder Remoteereignisempfängern für Vorereignisse, um den Status von Zuweisungen oder Daten in Arbeitszeittabellen zu überprüfen, die Benutzer eingeben, bevor die Daten in Project Web App gespeichert werden. 
     
-- **Finanzielle Projekte erstellen** Erstellen Sie Projekte für die Erfassung der Zeit über die Arbeitszeittabelle für die Integration mit einem finanzielle System. Erstellen einer Hierarchie von finanziellen Codes, die die Kosten des Ressourcenstrukturplans Struktur des Systems finanzielle widerspiegeln. Finanzielle Projekte erfordern keinen planen oder Status Updates. 
+- **Erstellen von Finanzprojekten**: Erstellen Sie Projekte für Zeiterfassung über die Arbeitszeittabelle für die Integration in ein Finanzsystem. Erstellen Sie eine Hierarchie von Finanzsystemcodes, die die Struktur der Kostenaufschlüsselung des Finanzsystems wiedergeben. Für Finanzprojekte sind keine Zeitplanungs- oder Statusaktualisierungen erforderlich. 
     
-- **Integration mit Buchhaltungssystemen** Erfassen Sie die Ressourcenkosten und Ausgaben im Zusammenhang mit Projekten Feed Systeme finanzielle und zur Abrechnung und zu Vergleichszwecken Budget. Synchronisieren von Aufgaben, Ressourcen und Zuordnungen zwischen den Systemen. Erfassen von Daten in Arbeitszeittabellen in einem System zum anderen feed (verwendet wird, welche Arbeitszeittabelle hängt von den Anforderungen der Organisation oder von einzelnen Projekten). 
+- **Integration in Nachverfolgungssysteme**: Erfassen Sie die Ressourcenkosten und Ausgaben, die mit Projekten verknüpft sind, um Finanz- und Abrechnungssystemen Informationen zur Verfügung zu stellen und um Budgetvergleiche auszuführen. Synchronisieren Sie Vorgänge, Ressourcen und Zuweisungen zwischen den Systemen. Erfassen Sie Arbeitszeittabellendaten in einem System, um die Daten dem anderen System zur Verfügung zu stellen (welche Arbeitszeittabelle verwendet wird, hängt von den Anforderungen der Organisation oder der einzelnen Projekte ab). 
     
-- **Automatisieren von Updates von Teammitgliedern** Aktualisieren Sie für Projekte, die nicht aktiv verwaltet werden automatisch Projekte auf dem Server mit des Fortschritts und der andere Änderungen von Projektteammitgliedern. Projekte können aktualisiert und ohne ein Projektmanager Überprüfen der Ergebnisse oder Anpassungen an den Plan erneut veröffentlicht werden. 
+- **Automatisieren von Aktualisierungen von Teammitgliedern**: Für Projekte, die nicht aktiv verwaltet werden, aktualisieren Sie automatisch Projekte auf dem Server mithilfe von Informationen von Teammitgliedern zu Fortschritt und anderen Änderungen. Projekte können aktualisiert und neu veröffentlicht werden, ohne dass ein Projektmanager die Ergebnisse überprüft oder Anpassungen am Plan vornimmt. 
     
     > [!NOTE]
-    > Das CSOM Übermitteln von Statusupdates unterstützt, aber Status Genehmigungen derzeit nicht unterstützt. 
+    > Das CSOM unterstützt das Übermitteln von Statusupdates, derzeit werden aber keine Statusgenehmigungen unterstützt. 
   
-- **Bewerten der Project Server-Daten in remote-Ereignisempfänger** Project Server-Daten aus dem Clientobjektmodell können ein remote-Ereignisempfänger für ein **ProjectCreating** Pre-Ereignis können Sie bestimmen, ob das Ereignis abgebrochen. Vergleichen Sie vor dem Erstellen eines Projekts, beispielsweise den Projektvorschlag mit vorhandenen Projekten. 
+- **Auswerten von Project Server-Daten in Remoteereignisempfängern** Ein Remoteereignisempfänger für ein **ProjectCreating**-Vorereignis kann Project Server-Daten aus dem CSOM verwenden, um herauszufinden, ob das Ereignis abgebrochen werden soll. Vergleichen Sie zum Beispiel vor dem Erstellen eines Projekts den Projektvorschlag mit vorhandenen Projekten. 
     
-- **Unterstützung für deklarative Project Server-workflows** Dem Clientobjektmodell kann Project Server-Workflows, die in SharePoint Designer 2013 erstellt werden. Das CSOM unterstützt workflowdefinitionen, die Windows Workflow Foundation Version 4 (WF4) verwenden. (Die PSI bietet keine Unterstützung für Workflows WF4.) 
+- **Unterstützung deklarativer Workflows für Project Server** Das CSOM ermöglicht Project Server-Workflows, die in SharePoint Designer 2013 erstellt werden. Das CSOM unterstützt Workflowdefinitionen, die Windows Workflow Foundation, Version 4, (WF4) verwenden. (Die PSI bietet keine Unterstützung für WF4-Workflows.) 
     
-- **Erstellen komplexer Project Server-workflows** Beim Entwickeln von Workflows mit Visual Studio 2012 können Sie das CSOM für komplexe Aktionen innerhalb Workflowstufen verwenden oder benutzerdefinierte Workflowaktionen erstellen. 
+- **Erstellen von komplexen Project Server-Workflows** Beim Entwickeln von Workflows mit Visual Studio 2012 können Sie das CSOM für komplexe Aktionen in Workflowphasen oder zum Erstellen benutzerdefinierter Workflowaktionen verwenden. 
     
-## <a name="what-the-csom-does-not-do"></a>Was das CSOM nicht zu
+## <a name="what-the-csom-does-not-do"></a>Was das CSOM nicht durchführen kann
 <a name="pj15_WhatTheCSOM_DoesNotDo"> </a>
 
-Das CSOM ist kein vollständiger Ersatz für die PSI. Da das CSOM intern der PSI-Dienste verwendet wird, hat das CSOM vieler die gleichen funktionalen Einschränkungen, die die PSI hat. Zusätzlich zu den Einschränkungen des die PSI, wie etwa haben keinen Zugriff auf Daten in lokalen Projekten (MPP-Dateien) enthält das CSOM keinen Verwaltungsfunktionen, die in der Regel Project Web App behandelt. Beispielsweise kann das Erstellen von benutzerdefinierten Sicherheitsgruppen in den Websiteeinstellungen - Seite Berechtigungen für Project Web App behandelt werden. 
+Das CSOM ist kein vollständiger Ersatz für die PSI. Da das CSOM intern die PSI-Dienste verwendet, gelten für das CSOM viele gleiche funktionale Beschränkungen, die auch die PSI aufweist. Zusätzlich zu Einschränkungen der PSI, z. B. kein Zugriff auf Daten in lokalen Projekten (MPP-Dateien), umfasst das CSOM keine Administratorfunktionen, die Project Web App in der Regel verarbeitet. Beispielsweise kann das Erstellen benutzerdefinierter Sicherheitsgruppen auf der Seite „Websiteeinstellungen – Berechtigungen“ für Project Web App verarbeitet werden. 
   
-Eine Liste der Aktionen, die die PSI weder das CSOM behandelt, finden Sie im Abschnitt *Was die PSI nicht* in [die PSI Was ist und nicht zu](what-the-psi-does-and-does-not-do.md).
+Eine Liste von Aktionen, die weder die PSI noch das CSOM verarbeiten, finden Sie im Abschnitt *Was die PSI nicht durchführen kann* unter [Was die PSI durchführen kann und was nicht](what-the-psi-does-and-does-not-do.md).
   
-### <a name="psi-services-that-the-csom-does-not-cover"></a>PSI-Dienste, die dem Clientobjektmodell keine abdeckt.
+### <a name="psi-services-that-the-csom-does-not-cover"></a>PSI-Dienste, die das CSOM nicht abdeckt
 <a name="pj15_WhatTheCSOM_PSIServices"> </a>
 
-Das CSOM umfasst keine Funktionalität von der folgenden PSI-Dienste:
+Das CSOM enthält keine Funktionalität der folgenden PSI-Dienste:
   
-- **Verwaltungsdienst** Verwenden Sie zum Verwalten von administrativen Einstellungen und Vorgänge in Project Server und verwandte Projektwebsites, z. B. Geschäftszeiträume erstellen und das Arbeitszeittabellen-Einstellungen PSI-Methoden in der [WebSvcAdmin.Admin](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx) -Klasse. Project Web App selbst verwendet **Admin** Methoden in vielen Seiten, die mit der Seite servereinstellungen verknüpft sind (https:// *ServerName*  /  *ProjectServerName* /_layouts/15/pwa/Admin/Admin.aspx). 
+- **Admin-Dienst** Verwenden Sie zum Verwalten von administrativen Einstellungen und Vorgängen in Project Server und für zugehörige Projektwebsites, z. B. das Erstellen von Geschäftszeiträumen und das Vornehmen von Einstellungen für Arbeitszeittabellen, PSI-Methoden in der [WebSvcAdmin.Admin](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx)-Klasse. Project Web App selbst verwendet **Admin**-Methoden auf vielen der Seiten, die mit der Seite „Servereinstellungen“ verknüpft sind (https:// *ServerName*  /  *ProjectServerName*/_layouts/15/pwa/Admin/Admin.aspx). 
     
-- **Archivierungsdienst** Verwenden Sie zum Speichern und Verwalten von Entitäten wie Projekten, Ressourcen und benutzerdefinierte Felder in die Archivtabellen, PSI-Methoden in das [Archiv](https://msdn.microsoft.com/library/WebSvcArchive.Archive.aspx) -Klasse. 
+- **Archivdienst** Zum Speichern und Verwalten von Entitäten, z. B. Projekte, Ressourcen und benutzerdefinierte Felder in den Archivtabellen, verwenden Sie PSI-Methoden in der [Archive](https://msdn.microsoft.com/library/WebSvcArchive.Archive.aspx)-Klasse. 
     
-- **CubeAdmin-Dienst** Zum Erstellen und Verwalten von OLAP-Cubes für lokale Installationen, PSI-Methoden in der [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx) -Klasse verwenden, oder verwenden Sie die Seite OLAP-Datenbankverwaltung (https:// *ServerName*  /  *ProjectServerName* /_layouts/15/pwa / CubeAdmin/CubeAnalysisAdmin.aspx) in Project Web App. 
+- **CubeAdmin-Dienst** Zum Erstellen und Verwalten von OLAP-Cubes für lokale Installationen verwenden Sie PSI-Methoden in der [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx)-Klasse, oder verwenden Sie die Seite der OLAP-Datenbankverwaltung (https:// * ServerName*  /  *ProjectServerName* /_layouts/15/pwa/CubeAdmin/CubeAnalysisAdmin.aspx) in Project Web App. 
     
     > [!NOTE]
     > Project Online unterstützt keine OLAP-Cubes. 
   
-- **Treiber-Dienst** Verwenden Sie zum Erstellen und Verwalten von betriebswirtschaftlichen Faktoren für Project Portfolio-Analysen, PSI-Methoden in der [WebSvcDriver.Driver](https://msdn.microsoft.com/library/WebSvcDriver.Driver.aspx) -Klasse. 
+- **Treiberdienst** Zum Erstellen und Verwalten von Geschäftsfaktoren für Projektportfolioanalysen verwenden Sie PSI-Methoden in der [WebSvcDriver.Driver](https://msdn.microsoft.com/library/WebSvcDriver.Driver.aspx)-Klasse. 
     
-- **LoginForms-Dienst und LoginWindows-Dienst** Authentifizierung in das CSOM erfolgt während der Initialisierung des **ProjectContext** -Objekts mit OAuth oder die Windows-Authentifizierung. Verwenden Sie zum Erstellen von Anwendungen für mehrfach-Authentifizierung, in dem eine lokale voll vertrauenswürdige Anwendung Formularauthentifizierung und Windows-Authentifizierung verwenden können, PSI-Methoden in der [WebSvcLoginForms.LoginForms](https://msdn.microsoft.com/library/WebSvcLoginForms.LoginForms.aspx) -Klasse und die [ WebSvcLoginWindows.LoginWindows](https://msdn.microsoft.com/library/WebSvcLoginWindows.LoginWindows.aspx) Klasse. 
+- **LoginForms-Dienst und LoginWindows-Dienst** Die Authentifizierung im CSOM erfolgt bei der Initialisierung des **ProjectContext**-Objekts mit der OAuth- oder Windows-Authentifizierung. Um Anwendungen für die mehrstufige Authentifizierung zu erstellen, bei denen eine lokale, voll vertrauenswürdige Anwendung sowohl die Formularauthentifizierung als auch die Windows-Authentifizierung verwenden kann, verwenden Sie PSI-Methoden in der [WebSvcLoginForms.LoginForms](https://msdn.microsoft.com/library/WebSvcLoginForms.LoginForms.aspx)-Klasse und in der [WebSvcLoginWindows.LoginWindows](https://msdn.microsoft.com/library/WebSvcLoginWindows.LoginWindows.aspx)-Klasse. 
     
-- **Benachrichtigungsdienst** Verwenden Sie zum Erstellen und Verwalten von Warnungen und Erinnerungen, PSI-Methoden in der [WebSvcNotifications.Notifications](https://msdn.microsoft.com/library/WebSvcNotifications.Notifications.aspx) -Klasse. 
+- **Benachrichtigungsdienst** Zum Erstellen und Verwalten von Warnungen und Erinnerungen verwenden Sie PSI-Methoden in der [WebSvcNotifications.Notifications](https://msdn.microsoft.com/library/WebSvcNotifications.Notifications.aspx)-Klasse. 
     
-- **ObjectLinkProvider-Dienst** Verwenden Sie zum Erstellen und Verwalten von Webobjekten und Links zu Dokumenten und Listenelementen SharePoint, PSI-Methoden in der [WebSvcObjectLinkProvider.ObjectLinkProvider](https://msdn.microsoft.com/library/WebSvcObjectLinkProvider.ObjectLinkProvider.aspx) -Klasse. 
+- **ObjectLinkProvider-Dienst** Zum Erstellen und Verwalten von Webobjekten und Links zu Dokumenten und SharePoint-Listenelementen verwenden Sie PSI-Methoden in der [WebSvcObjectLinkProvider.ObjectLinkProvider](https://msdn.microsoft.com/library/WebSvcObjectLinkProvider.ObjectLinkProvider.aspx)-Klasse. 
     
-- **PortfolioAnalyses-Dienst** Verwenden Sie zum Erstellen und Verwalten von Project Portfolioanalysen, einschließlich Planner Lösungen und Optimierer Lösungen, PSI-Methoden in der [WebSvcPortfolioAnalyses.PortfolioAnalyses](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PortfolioAnalyses.aspx) -Klasse. 
+- **PortfolioAnalyses-Dienst** Zum Erstellen und Verwalten von Projektportfolioanalysen, einschließlich Planer- und Optimierungslösungen, verwenden Sie PSI-Methoden in der [WebSvcPortfolioAnalyses.PortfolioAnalyses](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PortfolioAnalyses.aspx)-Klasse. 
     
-- **QueueSystem-Dienst** Das CSOM grundlegende Informationen zu Project Server-Warteschlangenaufträge finde und enthält die [ProjectContext.WaitForQueue](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.WaitForQueue.aspx) -Methode. Verwenden Sie zur Verwaltung der Project Server-Warteschlangensystem umfangreichere PSI-Methoden in der [WebSvcQueueSystem.QueueSystem](https://msdn.microsoft.com/library/WebSvcQueueSystem.QueueSystem.aspx) -Klasse. 
+- **QueueSystem-Dienst** Das CSOM kann grundlegende Informationen zu Project Server-Warteschlangenaufträgen abrufen und umfasst die [ProjectContext.WaitForQueue](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.WaitForQueue.aspx)-Methode. Verwenden Sie für eine umfangreichere Verwaltung des Project Server-Warteschlangensystems PSI-Methoden in der [WebSvcQueueSystem.QueueSystem](https://msdn.microsoft.com/library/WebSvcQueueSystem.QueueSystem.aspx)-Klasse. 
     
-- **Sicherheitsdienst** Erstellen und Verwalten von Project Server-Sicherheitsgruppen, Vorlagen und Kategorien und Berechtigungen für den aktuellen Benutzer zu überprüfen, verwenden Sie PSI-Methoden in der [WebSvcSecurity.Security](https://msdn.microsoft.com/library/WebSvcSecurity.Security.aspx) -Klasse. 
+- **Sicherheitsdienst** Zum Erstellen und Verwalten von Project Server-Sicherheitsgruppen, -Vorlagen und -Kategorien und zum Überprüfen der Berechtigungen für den aktuellen Benutzer verwenden Sie PSI-Methoden in der [WebSvcSecurity.Security](https://msdn.microsoft.com/library/WebSvcSecurity.Security.aspx)-Klasse. 
     
-- **WssInterop-Dienst** Verwenden Sie zum Abrufen von Informationen zu und Verwalten von Projektwebsites, PSI-Methoden in der [WebSvcWssInterop.WssInterop](https://msdn.microsoft.com/library/WebSvcWssInterop.WssInterop.aspx) -Klasse. 
+- **WssInterop-Dienst** Zum Abrufen von Informationen zu Projektwebsites und zum Verwalten verwenden Sie PSI-Methoden in der [WebSvcWssInterop.WssInterop](https://msdn.microsoft.com/library/WebSvcWssInterop.WssInterop.aspx)-Klasse. 
     
     > [!NOTE]
-    > Sie können das CSOM in SharePoint Server 2013. Projektwebsites sind SharePoint-Websites. 
+    > Sie können das CSOM in SharePoint Server 2013 verwenden. Projektwebsites sind SharePoint-Websites. 
   
-Das CSOM ermöglicht keine Erweiterungen, wie die PSI haben kann. Bei der Erstellung einer PSI-Erweiterungs für die lokale Verwendung kann beispielsweise das CSOM geändert werden zum Verwenden der PSI-Erweiterungs. Sie können auf andere Weise Erweiterung Szenarien implementieren:
+Das CSOM aktiviert keine Erweiterungen, die die PSI beispielsweise haben kann. Wenn Sie zum Beispiel eine PSI-Erweiterung für die lokale Verwendung erstellen, kann das CSOM nicht so geändert werden, dass es die PSI-Erweiterung verwendet. Sie können Erweiterungsszenarios auf andere Art und Weise implementieren:
   
-- Aggregierte CSOM-Aufrufe innerhalb einer lokalen Komponente oder eine Komponente, die auf Microsoft Azure ausgeführt wird.
+- Sammeln Sie CSOM-Aufrufe in einer lokalen Komponente oder in einer Komponente, die auf Microsoft Azure ausgeführt wird.
     
-- Verwenden von OData-Abfragen von Berichtsdaten, anstelle der direkte Zugriff auf reporting Tabellen in der Project Server-Datenbank.
+- Verwenden Sie OData-Abfragen der Berichtsdaten anstatt direkt auf Berichtstabellen in der Project Server-Datenbank zuzugreifen.
     
-- Integrieren von CSOM-Aufrufe mit drittanbieteranwendungen über OAuth-Authentifizierung aus Project Online oder serverseitige Komponenten für die lokale Verwendung.
+- Integrieren Sie CSOM-Aufrufe mit Drittanbieteranwendungen über OAuth-Authentifizierung von Project Online oder mit serverseitigen Komponenten für die lokale Verwendung.
     
-- Webanwendungen, die das CSOM verwenden können auch benutzerdefinierten Datenbanken entweder lokal oder mit SQL Azure.
+- Anwendungen, die das CSOM verwenden, können auch benutzerdefinierte Datenbanken entweder lokal oder mit SQL Azure verwenden.
     
-### <a name="request-limits-of-the-csom"></a>Grenzen eines des CSOM anfordern
+### <a name="request-limits-of-the-csom"></a>Anforderungslimits des CSOM
 <a name="pj15_WhatTheCSOM_RequestLimits"> </a>
 
-Das CSOM in Project Server 2013 basiert auf die CSOM-Implementierung in SharePoint Server 2013 und erbt die Grenzwerte für die maximale Größe einer Anforderung. SharePoint hat maximal 2 MB für eine Anforderung Vorgänge und maximal 50 MB für die Größe eines gesendete binary-Objekts. Die Größe der Anforderung ist auf den Server aus übermäßig lange Warteschlangen von Vorgängen und die Bearbeitung für große binäre Objekte zu schützen beschränkt.
+Das CSOM in Project Server 2013 basiert auf der CSOM-Implementierung in SharePoint Server 2013 und erbt die Grenzwerte für die maximale Größe einer Anforderung. SharePoint weist eine Grenze von 2 MB für eine Vorgangsanforderung auf, und eine Grenze von 50 MB für die Größe eines übermittelten binären Objekts. Die Anforderungsgröße ist beschränkt, um den Server vor übermäßig langen Warteschlangen mit Vorgängen und vor Verarbeitungsverzögerungen für große binäre Objekte zu schützen.
   
-Beispielsweise, wenn Sie des CSOM mithilfe erstellen Sie ein Projekt, und klicken Sie dann Bearbeiten des Projekts, um 252 Aufgaben mit einem Mindestmaß an Informationen wie einen kurzen Namen, die Vorgangs-GUID und eine Dauer von 1D hinzufügen, der die Gesamtmenge der Daten in der Anforderung **DraftProject.Update** ist kleiner als 2 MB. Aber, wenn Sie versuchen, ein leeres Projekt 253 Aufgaben hinzuzufügen, die 2 MB überschritten ist, und erhalten Sie die folgende Ausnahme: **Microsoft.SharePoint.Client.ServerException: die Anforderung verwendet zu viele Ressourcen**
+Wenn Sie beispielsweise das CSOM zum Erstellen eines Projekts verwenden und dann das Projekt so bearbeiten, dass 252 Aufgaben mit einer minimalen Menge von Informationen hinzugefügt werden, z. B. ein kurzer Name, die Aufgaben-GUID und eine Dauer von 1d, so beträgt die Gesamtmenge von Daten in der **DraftProject.Update**-Anforderung weniger als 2 MB. Wenn Sie aber versuchen, 253 solche Aufgaben zu einem leeren Projekt hinzuzufügen, wird die Grenze von 2 MB überschritten, und Sie erhalten die folgende Ausnahme: **Microsoft.SharePoint.Client.ServerException: Die Anforderung verwendet zu viele Ressourcen.**
   
-Zum Erfassen der Datenteils in eine CSOM-Anforderung über HTTP oder HTTPS, können Sie eine Tool wie [Fiddler](https://www.fiddler2.com) Debuggen Web (https://www.fiddler2.com). Ein Codebeispiel, das einen Test für Anforderungsgröße implementiert und umfasst eine Lösung, die eine große Anforderung in kleinere Gruppen aufgehoben, finden Sie unter [DraftProject.Update](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.DraftProject.Update.aspx) . 
+Um die Daten in einer CSOM-Anforderung über HTTP oder HTTPS zu erfassen, können Sie ein Webdebuggingtool verwenden, z. B. [Fiddler](https://www.fiddler2.com) (https://www.fiddler2.com). Ein Codebeispiel, das einen Test für die Größe der Anforderung implementiert und eine Lösung enthält, die eine große Anforderung in kleinere Gruppen unterteilt, finden Sie unter [DraftProject.Update](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.DraftProject.Update.aspx) . 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="pj15_WhatTheCSOM_AR"> </a>
 
-- [Client-seitigen Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md)
+- [Clientseitiges Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md)
     
 - [Was die PSI durchführen kann und was nicht](what-the-psi-does-and-does-not-do.md)
     
