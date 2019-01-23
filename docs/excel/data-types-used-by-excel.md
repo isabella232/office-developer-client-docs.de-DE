@@ -1,26 +1,26 @@
 ---
-title: Datentypen von Excel verwendet
+title: Von Excel verwendete Datentypen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 keywords:
-- Registrierung Datentypen [excel 2007], Excel-Datentypen, Zeichenfolgen [Excel 2007], Zahlen [Excel 2007], Datenstrukturen [Excel 2007], Datentypen [Excel 2007]
-localization_priority: Normal
+- Registrierung von Datentypen [Excel 2007]; Excel-Datentypen; Zeichenfolgen [Excel 2007]; Zahlen [Excel 2007]; Datenstrukturen [Excel 2007]; Datentypen [Excel 2007]
 ms.assetid: 8740a8fb-ad67-4232-a49b-d78967a786c2
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: b32a9beb2f77c12e6b6f2c445672c717a2546386
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+localization_priority: Priority
+ms.openlocfilehash: c546fc80b212301689744d3279a59733d9cc5524
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790402"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710608"
 ---
-# <a name="data-types-used-by-excel"></a>Datentypen von Excel verwendet
+# <a name="data-types-used-by-excel"></a>Von Excel verwendete Datentypen
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel tauscht mehrere ANSI-C/C++-Typen und auch einige Excel-spezifische Datenstrukturen. Diese sind hier erwähnten, um einen Kontext für anderen Abschnitten bereitzustellen, und sie werden ausführlich im Thema [XlfRegister (Formular 1)](xlfregister-form-1.md) . 
+Microsoft Excel tauscht mehrere NSI C/C++-Typen und auch einige Excel-spezifische Datenstrukturen aus. Diese werden hier genannt, um einen Kontext für andere Abschnitte zu liefern. Im Thema [xlfRegister (Formular 1)](xlfregister-form-1.md) werden sie ausführlich erläutert. 
   
 ## <a name="ansi-cc-types"></a>ANSI C/C++-Typen
 
@@ -28,85 +28,85 @@ Microsoft Excel tauscht mehrere ANSI-C/C++-Typen und auch einige Excel-spezifisc
 
 Alle Versionen von Excel:
   
-- 8-Byte-Gleitkommazahl
+- 8-Byte-Gleitkommawert mit doppelter Genauigkeit
     
-- [signed] Short [Int] &ndash; für **boolesche** Werte und auch Ganzzahlen verwendet 
+- [signed] short [int] &ndash; verwendet für **boolesche** Werte und auch Ganzzahlen 
     
-- nicht signierte Short [Int]
+- unsigned short [int]
     
-- [lange signiert] Int
+- [signed long] int
     
 ### <a name="strings"></a>Zeichenfolgen
 
 Alle Versionen von Excel:
   
-- [signed] Char \* &ndash; Null terminierte Byte-Zeichenfolgen mit bis zu 255 Zeichen
+- [signed] char \* &ndash;Bytezeichenfolgen mit Null-Terminierung von bis zu 255 Zeichen
     
-- nicht signierte Char \* &ndash; Zeichenfolgen mit bis zu 255 Zeichen Länge gezählt Byte
+- unsigned char \* &ndash;Bytezeichenfolgen mit Längenzählung von bis zu 255 Zeichen
     
-Starten in Excel 2007:
+Ab Excel 2007:
   
-- nicht signierte kurzfristige \* &ndash; Unicode-Zeichenfolgen von bis zu 32.767 Zeichen, die Null endende oder Länge gezählt werden können
+- unsigned short \* &ndash; Unicode-Zeichenfolgen von bis zu 32.767 Zeichen, bei denen Null-Terminierung oder Längenzählung möglich ist
     
-Alle Arbeitsblatt Zahlen in Excel werden als Double-Werte gespeichert, sodass es nicht erforderlich ist (und sogar eine kleine Konvertierung Aufwand führt) zum Deklarieren von Add-in-Funktionen als Integer-Typen mit Excel austauschen.
+Alle Arbeitsblattnummern in Excel werden als "Double" gespeichert. Deshalb ist es nicht erforderlich (und führt tatsächlich zu einem kleinen Konvertierungsmehraufwand), bei Excel Add-In-Funktionen als Ganzzahl-Austauschtypen zu deklarieren.
   
-Bei Verwendung von Integer-Typen Excel überprüft, ob die Eingaben sind innerhalb der Grenzen des Typs, und sie nicht mit **#NUM!** Falls außerhalb der diese. Die Ausnahme ist, wenn Sie eine Funktion, die ein **Boolean** -Argument mit short int implementiert registrieren In diesem Fall keine Eingaben ungleich NULL ist auf 1 konvertiert, und 0 (null) direkt übergeben wird. 
+Dort, wo Sie Ganzzahltypen verwenden, überprüft Excel, ob die Eingaben die Grenzwerte des Typs einhalten.  Wenn das nicht zutrifft, lautet die Fehlermeldung #NUM!. Die einzige Ausnahme: Wenn Sie eine Funktion zur Verwendung eines **booleschen** Arguments registrieren, das mit "short int" implementiert wurde, wird jede Eingabe von ungleich Null in "1" konvertiert, und Null wird direkt übergeben. 
   
 ## <a name="excel-specific-data-structures"></a>Excel-spezifische Datenstrukturen
 
 Alle Versionen von Excel:
   
-- **FZ** &ndash; ein zweidimensionales Array Gleitkomma-Struktur unterstützt bis zu 65.356 Zeilen durch die maximalen Anzahl Spalten in der angegebenen Version von Excel unterstützt. 
+- **FP** &ndash; ist eine zweidimensionale Gleitkomma-Arraystruktur, die bis zu 65.356 Zeilen mal der maximalen Anzahl Spalten unterstützt, die in der jeweiligen Excel-Version unterstützt werden. 
     
-- **XLOPER** &ndash; eine mit mehreren Typ Datenstruktur, die alle Arbeitsblatt Datentypen (einschließlich Fehler), ganze Zahlen, Bereich Referenzen, XLM-Fluss Steuerelement Makrovorlage und eine binäre Zentralspeicher-Datentyp darstellen kann. 
-    
-   > [!NOTE]
-   > Zeichenfolgen werden als Zeichenfolgen von bis zu 255 Zeichen Länge gezählt Byte dargestellt. 
-  
-Starten in Excel 2007:
-  
-- **FP12** &ndash; ein zweidimensionales Array Gleitkomma-Struktur unterstützen alle Zeilen und Spalten in Excel 2007 starten. 
-    
-- **XLOPER12** &ndash; eine mit mehreren Typ Datenstruktur, die alle Arbeitsblatt Datentypen (einschließlich Fehler), ganze Zahlen, Bereich Referenzen, XLM-Fluss Steuerelement Makrovorlage und eine binäre Zentralspeicher-Datentyp darstellen kann. 
+- **XLOPER** &ndash;, eine für mehrere Typen geeignete Datenstruktur, die alle Arbeitsblatt-Datentypen (einschließlich Fehlern), Ganzzahlen, Bereichsbezüge, Flusssteuerungstypen für XLM-Makrovorlagen und einen internen Datentyp für binären Speicher darstellen kann. 
     
    > [!NOTE]
-   > Zeichenfolgen werden als Unicode-Zeichenfolgen von bis zu 32.767 Zeichen Länge gezählt dargestellt. 
+   > Zeichenfolgen werden als Bytezeichenfolgen mit Längenzählung von bis zu 255 Zeichen Länge dargestellt. 
   
-## <a name="registration-data-type-codes"></a>Typcodes, die Registrierungsdaten
+Ab Excel 2007:
+  
+- **FP12** &ndash;, eine zweidimensionale Gleitkomma-Arraystruktur, die ab Excel 2007 alle Zeilen und Spalten unterstützt. 
+    
+- **XLOPER12** &ndash;, eine für mehrere Typen geeignete Datenstruktur, die alle Arbeitsblatt-Datentypen (einschließlich Fehlern), Ganzzahlen, Bereichsbezüge, Flusssteuerungstypen für XLM-Makrovorlagen und einen internen Datentyp für binären Speicher darstellen kann. 
+    
+   > [!NOTE]
+   > Zeichenfolgen werden als Unicode-Zeichenfolgen mit Längenzählung von bis zu 32.767 Zeichen Länge dargestellt. 
+  
+## <a name="registration-data-type-codes"></a>Registrierungscodes für Datentypen
 
-XLL-Funktionen werden mit der C-API-Funktion **XlfRegister**, die als dritte Argument akzeptiert eine Zeichenfolge bestehend aus, die die Typen zurück und Argument codieren registriert. Diese Zeichenfolge enthält auch Informationen, die weist Excel, ob die Funktion veränderliche ist, ist threadsicheren (beginnend in Excel 2007), Makroblatt entspricht, und, ob sie das Ergebnis zurückgibt durch ein Argument direkten ändern.
+XLL-Funktionen werden mit der C API-Funktion **xlfRegister** registriert, deren drittes Argument eine Zeichenfolge aus Buchstaben ist, die die Rückgabe- und Argumenttypen codieren. Diese Zeichenfolge enthält auch die Informationen, die Excel mitteilen, ob die Funktion veränderlich, threadsicher (ab Excel 2007) und gleichwertig mit einer Makrovorlage ist und ob sie ihr Ergebnis durch Änderung eines vorhandenen Arguments zurückgibt.
   
-In der folgenden Tabelle ist reproduziert und ausführlicher im Thema [XlfRegister (Formular 1)](xlfregister-form-1.md) . Es ist hier reproduziert, um einen Kontext für den Rest dieses Abschnitts zu gewährleisten. Beispielsweise könnte eine Funktion, die eine Länge gezählt Unicode-Zeichenfolge (beginnend in Excel 2007) akzeptiert als Offlineschalten von einem Typ C % Argument beschrieben werden. 
+Die nachstehende Tabelle wird im Thema [xlfRegister (Formular 1)](xlfregister-form-1.md) reproduziert und ausführlicher erläutert. Sie wird hier wiedergegeben, um einen Kontext für den restlichen Abschnitt zu liefern. So könnte beispielsweise eine Funktion, die eine Unicode-Zeichenfolge mit Längenzählung verwendet (ab Excel 2007), so beschrieben werden: Verwendet ein Argument des Typs "C%". 
   
-|Datentyp|Übergebener Wert|Übergebener Verweis (Zeiger)|Kommentare|
+|Datentyp|Übergabe nach Wert|Übergabe nach Verweis (Zeiger)|Kommentare|
 |:-----|:-----|:-----|:-----|
-|Boolean  <br/> |A  <br/> |L  <br/> |Short (0 = False oder 1 = True)  <br/> |
+|Boolesch  <br/> |A  <br/> |L  <br/> |short (0=false oder 1=true)  <br/> |
 |double  <br/> |B  <br/> |E  <br/> ||
-|Char\*  <br/> ||C, F  <br/> |NULL endende ASCII-Byte-Zeichenfolge  <br/> |
-|ohne Vorzeichen\*  <br/> ||D, G  <br/> |Länge-ASCII-Byte-Zeichenfolge gezählt  <br/> |
-|nicht signierte kurzfristige \* (beginnend in Excel 2007)  <br/> ||C %, F %  <br/> |Zeichenfolge mit NULL terminierte Unicode-Breitzeichen  <br/> |
-|nicht signierte kurzfristige \* (beginnend in Excel 2007)  <br/> ||D %, G %  <br/> |Zeichenfolge mit Unicode Breitzeichen Länge gezählt  <br/> |
-|nicht signierte Short [Int]  <br/> |H  <br/> ||WORD  <br/> |
-|[signed] Short [Int]  <br/> |I  <br/> |M  <br/> |16-bit  <br/> |
-|[lange signiert] Int  <br/> |J  <br/> |N  <br/> |32-Bit  <br/> |
-|Array  <br/> ||O  <br/> | Als drei Argumente übergeben als Verweis:  <br/>1. short Int \*Zeilen  <br/>2. short Int \*Spalten  <br/>3. Double \*Array  <br/> |
-|Array  <br/> (beginnend in Excel 2007)  <br/> ||O %  <br/> | Als drei Argumente übergeben als Verweis:  <br/>1. Int \*Zeilen  <br/>2. Int \*Spalten  <br/>3. Double \*Array  <br/> |
-|FZ  <br/> ||K  <br/> |Gleitkommazahl Arraystruktur  <br/> |
-|FP12  <br/> (beginnend in Excel 2007)  <br/> ||K %  <br/> |Großes Gitternetz Array Gleitkomma-Struktur  <br/> |
-|XLOPER  <br/> ||P  <br/> |Variable vom Typ Arbeitsblattwerte und arrays  <br/> |
-|||R  <br/> |Werte, Arrays und Bereich Referenzen  <br/> |
-|XLOPER12  <br/> (beginnend in Excel 2007)  <br/> ||Q  <br/> |Variable vom Typ Arbeitsblattwerte und arrays  <br/> |
-|||U  <br/> |Werte, Arrays und Bereich Referenzen  <br/> |
+|char \*  <br/> ||C, F  <br/> |ASCII-Bytezeichenfolge mit Null-Terminierung  <br/> |
+|unsigned char \*  <br/> ||D, G  <br/> |ASCII-Bytezeichenfolge mit Längenzählung  <br/> |
+|unsigned short \* (ab Excel 2007)  <br/> ||C%, F%  <br/> |Unicode-Zeichenfolge für Breitzeichen mit Null-Terminierung  <br/> |
+|unsigned short \* (ab Excel 2007)  <br/> ||D%, G%  <br/> |Unicode-Zeichenfolge für Breitzeichen mit Längenzählung  <br/> |
+|unsigned short [int]  <br/> |H  <br/> ||WORD  <br/> |
+|[signed] short [int]  <br/> |I  <br/> |M  <br/> |16-Bit  <br/> |
+|[signed long] int  <br/> |J  <br/> |N  <br/> |32-Bit  <br/> |
+|Array  <br/> ||O  <br/> | Als drei Argumente nach Verweis übergeben:  <br/>1. short int \*Zeilen  <br/>2. short int \*Spalten  <br/>3. double \*Array  <br/> |
+|Array  <br/> (ab Excel 2007)  <br/> ||O%  <br/> | Als drei Argumente nach Verweis übergeben:  <br/>1. int \*Zeilen  <br/>2. int \*Spalten  <br/>3. double \*Array  <br/> |
+|FP  <br/> ||K  <br/> |Gleitkomma-Arraystruktur  <br/> |
+|FP12  <br/> (ab Excel 2007)  <br/> ||K%  <br/> |Gleitkomma-Arraystruktur (großes Raster)  <br/> |
+|XLOPER  <br/> ||P  <br/> |Variablen-Arbeitsblattwerte und Arrays  <br/> |
+|||R  <br/> |Werte, Arrays und Bereichsbezüge  <br/> |
+|XLOPER12  <br/> (ab Excel 2007)  <br/> ||Q  <br/> |Variablen-Arbeitsblattwerte und Arrays  <br/> |
+|||U  <br/> |Werte, Arrays und Bereichsbezüge  <br/> |
    
-Die Typen **C %**, **F %**, **D %**, **G %**, **K %**, **O %**, **Q**und **U** alle neu in Microsoft Office Excel 2007 wurden und sind nicht in früheren Versionen unterstützt. Die Zeichenfolgentypen **F**, **F %**, **G**und **G %** werden für Argumente verwendet, die direkte geändert werden. Wenn **XLOPER** oder **XLOPER12** Argumente als Typen **P** oder **Q** registriert werden, konvertiert Excel einzelne Zelle Verweise auf einfache Werte und Verweise auf Arrays mit mehreren Zelle aus, wenn er sie vorbereitet. 
+Die Typen **C%**, **F%**, **D%**, **G%**, **K%**, **O%**, ** Q** und **U** waren in Microsoft Office Excel 2007 alle neu und werden in früheren Versionen nicht unterstützt. Die Zeichenfolgentypen **F**, **F%**, **G** und **G%** werden für Argumente verwendet, die direkt geändert werden. Wenn die Argumente **XLOPER** oder **XLOPER12** als die Typen **P** bzw. **Q** registriert werden, konvertiert Excel bei der Vorbereitung Bezüge auf eine Zelle in einfache Werte und Bezüge auf mehrere Zellen in Arrays. 
   
-**P** und **Q** Typen in Ihrer Funktion, die immer als eine der folgenden Objekttypen eintreffen: **XltypeNum**, **XltypeStr**, **XltypeBool**, **XltypeErr**, **XltypeMulti**, **XltypeMissing**oder **XltypeNil**, aber nicht **XltypeRef** oder **XltypeSRef** , da diese immer aufgehoben werden. 
+Die Typen **P** und **Q** gibt es in Ihrer Funktion immer als einen der folgenden Typen: **xltypeNum**, **xltypeStr**, **xltypeBool**, **xltypeErr**, **xltypeMulti**, **xltypeMissing** oder **xltypeNil**, aber nicht als **xltypeRef** oder **xltypeSRef** weil diese Typen immer dereferenziert werden. 
   
-Typ **O**, die drei Argumente auf dem Stapel wirklich ist, wurde für die Kompatibilität mit Fortran DLLs eingeführt, in dem Argumente als Verweis übergeben werden. Es kann nicht verwendet werden, um einen Wert außer deklarieren das Argument als Rückgabewert ändern-in-Place und platzieren die Ergebnisse in der referenzierten Werte zurückzugeben. Geben Sie **O %** erweitert Typ **O** in Excel 2007, damit es Arrays zugreifen kann, die größer als das Raster Office Excel 2003 Bereiche abzudecken. 
+Typ **O**, bei dem es sich tatsächlich um drei Argumente im Stapel handelt, wurde zwecks Kompatibilität mit Fortran-DLLs eingeführt, bei denen Argumente nach Verweis übergeben werden. Er kann nicht für die Rückgabe eines Werts verwendet werden – außer indem das Argument als Rückgabewert zum direkten Ändern deklariert wird und die Ergebnisse in die referenzierten Werte eingefügt werden. Der Typ **O%** erweitert den Typ **O** in Excel 2007, sodass er auf Arrays zugreifen kann, deren Bereiche größer als das Office Excel 2003-Raster sind. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [XlfRegister (Formular 1)](xlfregister-form-1.md)
-- [Excel-Programmierkonzepte](excel-programming-concepts.md)
-- [Excel XLL-SDK-API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md)
+- [xlfRegister (Formular 1)](xlfregister-form-1.md)
+- [Konzepte der Excel-Programmierung](excel-programming-concepts.md)
+- [Excel XLL SDK – API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md)
 
