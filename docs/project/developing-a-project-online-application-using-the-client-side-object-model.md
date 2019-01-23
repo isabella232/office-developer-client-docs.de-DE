@@ -3,144 +3,144 @@ title: Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmo
 manager: soliver
 ms.date: 11/08/2016
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
-description: In diesem Artikel wird beschrieben, Microsoft Project Online Anwendungsentwicklung für desktopanwendungen mit .NET Framework 4.0. Die Anwendung, die in diesem Artikel beschriebenen Ruft Informationen aus dem Hostserver.
-ms.openlocfilehash: b6e7260fd2337d2b156f97605fdd201f5e0d4edc
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen für Desktopanwendungen mit dem .NET Framework 4.0. Die in diesem Artikel beschriebene Anwendung ruft Informationen vom hostenden Server ab.
+localization_priority: Priority
+ms.openlocfilehash: 3d3c2dd5b896c10dab9a0494288f38610cbc99e1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385263"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712939"
 ---
 # <a name="developing-a-project-online-application-using-the-client-side-object-model"></a>Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmodell
 
-In diesem Artikel wird beschrieben, Microsoft Project Online Anwendungsentwicklung für desktopanwendungen mit .NET Framework 4.0. Die Anwendung, die in diesem Artikel beschriebenen Ruft Informationen aus dem Hostserver. 
+Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen für Desktopanwendungen mit dem .NET Framework 4.0. Die in diesem Artikel beschriebene Anwendung ruft Informationen vom hostenden Server ab. 
   
 ## <a name="background"></a>Hintergrund
 
-Microsoft Project als desktop-Anwendung in der frühen 1990er gestartet. Heute ist Project vieles Weitere abschließen, die mehrere Varianten:
+Microsoft Project kam in den frühen 1990er Jahren als Desktopanwendung auf den Markt. Heute ist Project viel mehr, wie seine verschiedenen Varianten belegen:
   
-- Project standard Edition ist eine desktop-Anwendung, die als eigenständige Anwendung ausgeführt wird.
+- Die Project Standard-Edition ist eine Desktopanwendung, die als eigenständige Anwendung ausgeführt wird.
     
-- Project professional Edition ist eine desktop-Anwendung, die kann interagieren und Daten gemeinsam mit einem Server in einem größeren Ausmaß als auch die Funktionalität in Project standard Edition ausführen.
+- Die Project Professional-Edition ist eine Desktopanwendung, die in größerem Maßstab mit einem Server interagieren und Daten austauschen kann und die in der Lage ist, die von der Project Standard-Edition bereitgestellte Funktionalität auszuführen.
     
-- Project Online ist ein Microsoft-gehosteten Dienst, der bietet Unternehmen eine Lösung auf Dokumentebene PMO koordinieren und Verwalten von Projekten, Programme und Portfolios. Eine andere besser als desktop-Editionen, Project Online warten und Nachverfolgen von Projektdetails im Lebenszyklus eines Projekts kann. 
+- Project Online ist ein von Microsoft gehosteter Dienst, der Unternehmen eine auf PMO-Ebene angesiedelte Lösung zur Koordinierung und Verwaltung von Projekten, Programmen und Portfolios bietet. Als Angebot, das sich von den Desktop-Editionen unterscheidet, kann Project Online Projektdetails während der gesamten Laufzeit eines Projekts verwalten und nachverfolgen. 
     
-- Projektserver ist eine Enterprise-gehosteten Dienst in dem Unternehmen verwaltet und sichert den Server, Project, Anwendung und Portfolio Informationen enthält. Projektserver nach der Sicherung des Servers internes bietet Projekt-, Anwendung und Portfolio orientierten Features von extern gehosteten Project Online mit eine höhere Kapazität für die Anpassung.
+- Project Server ist ein von einem Unternehmen gehosteter Dienst, in dem das Unternehmen den Server verwaltet und schützt, auf dem sich Projekt-, Programm- und Portfolioinformationen befinden. Project Server bietet, insbesondere durch Schützen des Servers im eigenen Haus, die projekt-, programm- und portfolioorientierten Funktionen von extern gehostetem Project Online mit einer größeren Anpassungsfähigkeit.
     
-Project Online hat drei online API-Sätze: mithilfe der clientseitigen Objekt Objektmodell (CSOM), JavaScript-Objektmodell (JSOM) und Representational State Transfer (REST). 
+Project Online hat drei Online-API-Sätze: clientseitiges Objektmodell (CSOM), JavaScript-Objektmodell (JSOM) und Representational State Transfer (REST). 
   
-- Die .NET CSOM-Implementierung ist die bevorzugte Schnittstelle beim Entwickeln von Windows-Anwendungen, die interagieren mit Project Online-Mandanten. Typische Umgebung für die Benutzer-centric Applications gehören Desktops unter Windows und Microsoft Surface Geräte. Back-End-Clientanwendungen mit .NET CSOM geschrieben können mit anderen Servern für Business Logic und Datenquellen eine Verbindung herstellen, die externe mit Project Online sind. Abruf Anfragen zu Project Online verwenden Sie ein LINQ-ähnliche Abfrage, die mehrere Verbesserungen über grundlegende Retrieval Funktionen bietet.
+- Die .NET CSOM-Implementierung ist die bevorzugte Schnittstelle bei der Entwicklung von Windows-Anwendungen, die mit Project Online-Mandanten interagieren. Typische Umgebungen für benutzerorientierte Anwendungen sind Windows-Desktops und Microsoft Surface-Geräte. Back-End-Anwendung, die mit .NET CSOM geschrieben wurden, können mit anderen Servern für Geschäftslogik und Datenquellen verbunden werden, die sich außerhalb von Project Online befinden. Abrufanforderungen an Project Online verwenden ein LINQ-ähnliches Abfragesystem, das mehrere Verbesserungen gegenüber den einfachen Abruffunktionen bietet.
     
-- Die JavaScript-Objektmodell (JSOM)-Schnittstelle bietet Browserübergreifende Unterstützung für Project Online-Add-ins. Ein Add-in ist eine Anwendung, die in Project Online-Mandanten gespeichert ist. Wenn ein Benutzer ein Add-in ausführen möchte, wird der Code für das Add-in-downloads und im Browser auf dem Computer des Benutzers ausgeführt wird. 
+- Die JavaScript-Objektmodell-Schnittstelle (JSOM-Schnittstelle) bietet browserübergreifende Unterstützung für Project Online-Add-Ins. Ein Add-In ist eine Webanwendung, die im Project Online-Mandanten gespeichert ist. Wenn ein Benutzer ein Add-In ausführen möchte, wird der Code für das Add-In heruntergeladen und im Browser auf dem Benutzercomputer ausgeführt. 
     
-- Details des Modells REST/Odata-HTTP-basierte Kommunikation bereitstellt, wird diese Schnittstelle für Applikationen in nicht-Windows-Umgebungen empfohlen. Kommunikationsendpunkten sind die Objekte in der Website für die Project Web Application (PWA). Ergebnisse liefern normalen HTTP-Statuscodes.
+- Das REST/OData-Modell stellt HTTP-basierte Kommunikation bereit. Diese Schnittstelle wird für Anwendungen in Nicht-Windows-Umgebungen empfohlen. Kommunikationsendpunkte sind die Objekte in der PWA-Website (Project Web Application). Ergebnisse stellen normale HTTP-Statuscodes bereit.
     
-Dieser Artikel befasst sich eine Anwendung, die die .NET CSOM-Schnittstelle verwendet.
+Dieser Artikel konzentriert sich auf eine Anwendung, in der die .NET CSOM-Schnittstelle verwendet wird.
   
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Starten Sie mit einem Basis-System mit Windows 10, und fügen Sie die folgenden Elemente:
+Beginnen Sie mit einem Basissystem unter Windows 10, und fügen Sie die folgenden Elemente hinzu:
   
-- .NET Framework 4.0 oder höher – verwenden Sie das vollständige Framework. Die Download-Website ist https://msdn.microsoft.com/vstudio/aa496123.aspx.
+- .NET Framework 4.0 oder höher: Verwenden Sie das vollständige Framework. Die Download-Website ist https://msdn.microsoft.com/vstudio/aa496123.aspx.
     
-- Visual Studio 2013 oder höher--Edition ist zulässig. Die Community-Edition von Visual Studio 2015 wurde verwendet, um die beispielanwendung aus zu entwickeln. Die Community Edition steht unter https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx.
+- Visual Studio 2013 oder höher: Es kann jede Edition verwendet werden. Die Community-Edition von Visual Studio 2015 wurde verwendet, um die Beispielanwendung zu entwickeln. Die Community-Edition steht unter https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx zur Verfügung.
     
-- SharePoint-Clientkomponenten SDK – Project Online und Project Server sit auf der Basis SharePoint und SharePoint-Assemblys. Die SharePoint-Clientkomponenten sind in Visual Studio Professional und Enterprise Edition enthalten. Wenn Sie Visual Studio-Community Edition verwenden, die neueste Version des Office Developer Tools SDK steht auf der folgenden Website: https://www.microsoft.com/en-us/download/details.aspx?id=35585.
+- SharePoint Client Components SDK: Project Online und Project Server setzen auf SharePoint und SharePoint-Assemblys auf. Die SharePoint Client Components sind in den Visual Studio-Editionen Professional und Enterprise enthalten. Wenn Sie Visual Studio Community verwenden, ist die neueste Version des Office Developer Tools SDKs auf der folgenden Website verfügbar: https://www.microsoft.com/en-us/download/details.aspx?id=35585.
     
-- Ein Konto Project Online – bietet dies Zugriff auf die Website gehostet. Weitere Informationen dazu, wie Sie ein Konto mit Project Online erhalten, finden Sie unter https://products.office.com/en-us/Project/project-online-portfolio-management.
+- Ein Project Online-Konto: Dies ermöglicht den Zugriff auf die hostende Website. Weitere Informationen zum Einrichten eines Project Online-Kontos finden Sie unter https://products.office.com/en-us/Project/project-online-portfolio-management.
     
-- Projekte auf der hosting-Website, die mit Daten aufgefüllt werden
+- Projekte auf der hostenden Website, die mit Informationen ausgefüllt sind
     
 > [!NOTE]
-> Der Standard ist .NET Framework (4.0 oder höher) die richtigen Framework verwendet werden. Verwenden Sie die .NET Framework 4 Client Profile nicht. 
+> Das standardmäßige .NET Framework (4.0 oder höher) ist das zu verwendende Framework. Verwenden Sie nicht .NET Framework 4 Client Profile. 
   
 ## <a name="develop-the-application"></a>Entwickeln der Anwendung
 
-Bei der Entwicklung von einer desktop-Anwendung für SharePoint, ist die bevorzugte Schnittstelle des Project-Seite-Clientobjektmodells (CSOM). 
+Beim Entwickeln einer Desktopanwendung für SharePoint ist das clientseitige Objektmodell (CSOM) für Project die bevorzugte Schnittstelle. 
   
-Sie können das vollständige Beispiel unter herunterladen https://github.com/OfficeDev/Project-CSOM-List-Projects-Tasks.
+Sie können das vollständige Beispiel aus https://github.com/OfficeDev/Project-CSOM-List-Projects-Tasks herunterladen.
   
-Die ersten beiden Themen enthalten grundlegende Probleme: Erstellen eines Visual Studio-Projekts mit den entsprechenden Namespaces und Assemblys und den Zugriff auf den Hostserver. Abrufen von Informationen über die CSOM aus einem und viele Objekte dienen in den übrigen Themen. 
+Die ersten beiden Themen behandeln grundlegende Aspekte: Erstellen eines Visual Studio-Projekts mit geeigneten Namespaces und Assemblys und Zugreifen auf den hostenden Server. Die übrigen Themen befassen sich mit dem Abrufen von Informationen über das CSOM aus einem und aus vielen Objekten. 
   
-Abrufen von Informationen aus der Host ist ein Vorgang zwei-Aktion von Clientanwendungen. Zunächst wird die Anwendung gibt an, und sendet eine oder mehrere Retrieval Anforderungen an den Server. Zweitens gibt die Anwendung eine Benachrichtigung an den Server die übermittelten Abfragen ausgeführt werden. Der Server antwortet, indem die Ergebnisse der Abfrage an den Client gesendet.
+Das Abrufen von Informationen vom Host ist ein Zwei-Aktionen-Vorgang aus Client-Anwendungen. Als Erstes gibt die Anwendung Abrufanforderungen an und sendet diese an den Server. Als Zweites sendet die Anwendung eine Benachrichtigung an den Server, damit die übermittelten Abfragen ausgeführt werden. Der Server antwortet, indem er die Abfrageergebnisse an den Client sendet.
   
 ### <a name="set-up-the-visual-studio-project"></a>Einrichten des Visual Studio-Projekts
 
-Erstellen eines neuen Projekts, verknüpfen die entsprechenden Assemblys und die erforderlichen Namespaces deklarieren besteht der Installation der Anwendung aus. Visual Studio stellt verschiedene Arten von Entwicklungsprojekten. 
+Das Einrichten der Anwendung besteht aus dem Erstellen eines neuen Projekts, dem Verknüpfen der entsprechenden Assemblys und dem Deklarieren der benötigten Namespaces. Visual Studio bietet verschiedene Typen von Entwicklungsprojekten. 
   
-#### <a name="select-a-visual-studio-project"></a>Wählen Sie ein Visual Studio-Projekt
+#### <a name="select-a-visual-studio-project"></a>Auswählen eines Visual Studio-Projekts
 
-1. Starten Sie Visual Studio, und wählen Sie **Neues Projekt starten Sie** auf der Startseite. 
+1. Starten Sie Visual Studio, und wählen Sie **Neues Projekt starten** auf der Startseite aus. 
     
-   Das Dialogfeld Neues Projekt verfügbar Anwendungsvorlagen und Datenfelder für jede ausgewählte Vorlage angezeigt. 
+   Im Dialogfeld "Neues Projekt" werden verfügbare Anwendungsvorlagen und Datenfelder für die jeweils ausgewählte Vorlage angezeigt. 
     
-2. Geben Sie für diese Anwendung die folgenden Elemente an. Schlüsselwörter aufgetreten ist, auf dem Bildschirm aufweisen eine fett Attribut:
+2. Geben Sie für diese Anwendung die folgenden Elemente an. Schlüsselwörter, die auf dem Bildschirm zu finden sind, sind fett ausgezeichnet:
     
-   1. Wählen Sie im linken Bereich die installierte Vorlagen ein **C#-** => **Windows** => **klassischen Desktop**. 
+   1. Wählen Sie aus den installierten Vorlagen im linken Bereich die Vorlage ** C# **  =>  **Windows** => **Klassischer Desktop** aus. 
     
-   2. Wählen Sie am oberen Rand der mittleren Bereich **.NET Framework 4**. 
+   2. Wählen Sie oben im zentralen Bereich die Option **.NET Framework 4** aus. 
     
-   3. Wählen Sie im mittleren Bereich Anwendungstypen **Konsolenanwendung**aus. 
+   3. Wählen Sie aus den Anwendungstypen im zentralen Bereich den Typ **Konsolenanwendung** aus. 
     
-   4. Geben Sie im unteren Bereich einen Namen und Speicherort für das Projekt, und einen Lösungsnamen. 
+   4. Geben Sie im unteren Abschnitt einen Namen und Speicherort für das Projekt und einen Projektmappennamen an. 
     
-   5. Auch im unteren Bereich das Kontrollkästchen Sie **Projektmappenverzeichnis erstellen** . 
+   5. Aktivieren Sie außerdem im unteren Abschnitt das Kontrollkästchen **Projektmappenverzeichnis erstellen**. 
     
-3. Klicken Sie auf **OK** , um das ursprüngliche Projekt zu erstellen. 
+3. Klicken Sie auf **OK**, um das Ausgangsprojekt zu erstellen. 
     
 #### <a name="add-assemblies"></a>Hinzufügen von Assemblys
 
-Die VS-Lösung benötigt die Assembly ProjectServerClient aus Project 2103 SDK, eine Reihe von Assemblys aus dem SharePoint-SDK und die System.Security für .NET Framework-Assembly.
+Für die VS-Projektmappe sind die Assembly "ProjectServerClient" aus dem Project 2013 SDK, einige Assemblys aus dem SharePoint SDK und die .NET Framework-Assembly "System.Security" erforderlich.
   
-1. In VS Projektmappen-Explorer mit der rechten Maustaste in des Eintrags Verweise, und wählen Sie **Verweis hinzufügen** Klicken Sie im Kontextmenü. 
+1. Klicken Sie im Projektmappen-Explorer von VS mit der rechten Maustaste auf den Eintrag "Verweise", und wählen Sie **Verweis hinzufügen...** im Kontextmenü aus. 
     
-2. Überprüfen Sie die **Microsoft.ProjectServer.Client.dll**. 
+2. Aktivieren Sie den Verweis **Microsoft.ProjectServer.Client.dll**. 
     
-   Falls erforderlich, klicken Sie auf die **Durchsuchen...** Navigieren Sie zu dem Installationsverzeichnis Project 2013-SDK zum Suchen der Assembly, und klicken Sie unten im Dialogfeld. 
+   Klicken Sie ggf. auf die Schaltfläche **Durchsuchen...** unten im Dialogfeld, und navigieren Sie zum Installationsverzeichnis des Project 2013 SDKs, um die Assembly zu finden. 
     
 3. Klicken Sie auf **OK**. 
     
-4. Fügen Sie den Namespace PrjoctServer Client, um die CS-Datei.
+4. Fügen Sie den Namespace "ProjectServer.Client" zur CS-Datei hinzu.
     
    ```cs
     using Microsoft.ProjectServer.Client;
    ```
 
-Fügen Sie die SharePoint 2013 SDK-Assemblys, die mit der NuGet Package Manager-Konsole hinzu. 
+Fügen Sie die SharePoint 2013 SDK-Assemblys über die NuGet-Paket-Manager-Konsole hinzu. 
   
-1. Klicken Sie im Menü Extras VS auf die folgenden Menüs: **Tools =\> NuGet Package Manager =\> Paket-Manager-Konsole**. 
+1. Klicken Sie über das VS-Menü "Extras" auf die folgenden Menüs: **Extras =\> NuGet-Paket-Manager =\> Paket-Manager-Konsole**. 
     
-2. Geben Sie in der Paket-Manager-Konsole den folgenden Befehl und drücken Sie \<EINGABETASTE\>:
+2. Geben Sie in der Paket-Manager-Konsole den folgenden Befehl ein, und drücken Sie die \<EINGABETASTE\>:
     
    ```cs
     Install-Package Microsoft.SharePointOnline.CSOM
    ```
 
-   Die **Paket-Manager-Konsole** enthält eine Beschreibung der Befehlsergebnisse; und VS Projektmappen-Explorer angezeigt, die SharePoint-Assemblys in den Projektverweisen. 
+   Die **Paket-Manager-Konsole** stellt eine Beschreibung der Befehlsergebnisse bereit, und im Projektmappen-Explorer von VS werden die SharePoint-Assemblys in den Projektverweisen angezeigt. 
     
-3. Fügen Sie die Namespaces in die CS-Datei:
+3. Fügen Sie die Namespaces zur CS-Datei hinzu:
     
    ```cs
     using Microsoft.SharePoint.Client;
    ```
 
-Die System.Security Assembly ist Teil von .NET Framework und mit Framework installiert wurde. Die beispielanwendung benötigt eine weitere Namespace, der eine verschlüsselte Zeichenfolge, die das Hostsystem für die Authentifizierung ermöglicht. Nach der Authentifizierung kann die Anwendung auf das Hostsystem Projekte zugreifen. CS-Datei auf diese Weise System.Security-Namespace hinzugefügt:
+Die Assembly "System.Security" gehört zu .NET Framework und wurde mit dem Framework installiert. Für die Beispielanwendung ist ein weiterer Namespace erforderlich, der dem hostenden System eine verschlüsselte Zeichenfolge für die Authentifizierung bereitstellt. Sobald die Anwendung authentifiziert ist, kann sie auf Projekte auf dem hostenden System zugreifen. Fügen Sie den Namespace "System.Security" wie folgt zur CS-Datei hinzu:
   
-1. In VS Projektmappen-Explorer mit der rechten Maustaste in des Eintrags Verweise, und wählen Sie **Verweis hinzufügen** Klicken Sie im Kontextmenü. 
+1. Klicken Sie im Projektmappen-Explorer von VS mit der rechten Maustaste auf den Eintrag "Verweise", und wählen Sie **Verweis hinzufügen...** im Kontextmenü aus. 
     
-2. Wählen Sie **Assemblys =\> Framework** im linken Bereich des Dialogfelds Verweise Manager **System.Security**überprüfen. 
+2. Wählen Sie **Assemblys =\> Framework** im linken Bereich des Dialogfelds für den Verweis-Manager aus, und aktivieren Sie dann **System.Security**. 
     
 3. Klicken Sie auf **OK**. 
     
-4. CS-Datei System.Security-Namespace hinzugefügt:
+4. Fügen Sie den Namespace "System.Security" zur CS-Datei hinzu:
     
    ```cs
     using System.Security;
    ```
 
-Der Anfang des CS-Datei sollte die folgenden Namespaces enthalten:
+Der Anfang der CS-Datei sollte die folgenden Namespaces enthalten:
   
 - System
     
@@ -156,9 +156,9 @@ Der Anfang des CS-Datei sollte die folgenden Namespaces enthalten:
     
 - System.Security
     
-### <a name="connect-to-the-host-system"></a>Verbinden Sie mit dem Hostsystem
+### <a name="connect-to-the-host-system"></a>Verbinden mit dem Hostsystem
 
-Project Online ist eine SharePoint-Anwendung mithilfe der SharePoint-Authentifizierung die richtige Vorgehensweise. Im folgenden Codefragment bereitet gehostete Umgebung zugreifen.
+Project Online ist eine SharePoint-Anwendung, sodass die Verwendung der SharePoint-Authentifizierung der richtige Ansatz ist. Im folgenden Codefragment wird das Zugreifen auf die gehostete Umgebung vorbereitet.
   
 ```cs
     class Program
@@ -175,28 +175,28 @@ Project Online ist eine SharePoint-Anwendung mithilfe der SharePoint-Authentifiz
 
 ```
 
-Vorbereitung die gehostete Umgebung Zugriff auf gehören die folgenden Elemente:
+Die Vorbereitungen für das Zugreifen auf die gehostete Umgebung umfassen die folgenden Schritte:
   
-1. Ein Context-Objekt für die Projekte erstellen – dies in den folgenden Code, der im vorherigen Codefragment enthalten ist. 
+1. Erstellen Sie ein Kontextobjekt für die Projekte: Dieses Objekt ist im folgenden Code aus dem vorherigen Codefragment enthalten. 
     
    ```cs
     private static ProjectContext projContext;
     
    ```
 
-   Im Kontext wird von anderen Komponenten, die das System im Kontext des Project-Objektmodell verwalten geerbt.
+   Der Kontext wird an andere Komponenten vererbt, wodurch es dem System ermöglicht wird, den Kontext des Project-Objektmodells zu verwalten.
     
-2. Identifizieren der Hostwebsite – dies geschieht in den folgenden Code aus dem vorherigen Codefragment.
+2. Geben Sie die Hostwebsite an. Dies erfolgt im folgenden Code aus dem vorherigen Codefragment.
     
    ```cs
     using (ProjectContext projContext = new ProjectContext("https://Contoso.sharepoint.com/sites/pwa"))
    ```
 
-   Wenn Projekte Kontext zu instanziieren, muss die Anwendung den Stamm der Websitesammlung Projekte bereitstellen. Die Anwendung verwendet eine Teilzeichenfolge der URL des Stammverzeichnisses der Projekte. Ein rotes Rechteck in der folgenden Abbildung ist eine Momentaufnahme der von diesem Speicherort hervorgehoben. Die Authentifizierung benötigt die Zeichenfolge aus dem Start über die Teilzeichenfolge "pwa". Im Codebeispiel, die Anwendung verwendet die Zeichenfolge "https://XXXXXXXX.sharepoint.com/sites/pwa".
+   Wenn der Projektkontext instanziiert wird, muss die Anwendung den Stamm der Websitesammlung für Projekte bereitstellen. Die Anwendung verwendet eine Teilzeichenfolge der URL des Stamms der Projekte. Ein Momentaufnahme dieser Position ist in der folgenden Abbildung mit einem roten Rechteck hervorgehoben. Für die Authentifizierung wird die Zeichenfolge ab deren Anfang bis einschließlich der Teilzeichenfolge "pwa" benötigt. Im Codeeintrag wird für die Anwendung die Zeichenfolge "https://XXXXXXXX.sharepoint.com/sites/pwa" verwendet.
         
-   ![Screenshot der URL der Websitesammlung Projekte innerhalb einer rote Rahmenlinie.] (media/d48c4894-5dba-46b6-886a-3c59bfb83c4d.png "Screenshot der URL der Projekte Websitesammlung innerhalb einer rote Rahmenlinie")
+   ![Momentaufnahme der URL der Websitesammlung für Projekte in einem roten Rahmen ](media/d48c4894-5dba-46b6-886a-3c59bfb83c4d.png "Momentaufnahme der URL der Websitesammlung für Projekte in einem roten Rahmen")
   
-3. Setzen Sie das Kennwort in eine sichere Zeichenfolge – Dies geschieht in den folgenden Code aus dem vorherigen Codefragment.
+3. Geben Sie das Kennwort in einer sicheren Zeichenfolge an. Dies erfolgt im folgenden Code aus dem vorherigen Codefragment.
     
    ```cs
     SecureString password - new SecureString();
@@ -204,37 +204,37 @@ Vorbereitung die gehostete Umgebung Zugriff auf gehören die folgenden Elemente:
     
    ```
 
-   Das Kennwort und die Benutzer sind die Anmeldeinformationen zum Zugriff auf die Hostwebsite. 
+   Das Kennwort und das Benutzerkonto sind die Anmeldeinformationen für den Zugriff auf die Hostwebsite. 
     
-4. Fügen Sie das Benutzerkonto und das Kennwort zum Bereich Anmeldeinformationen des Kontextobjekts – dies geschieht in den folgenden Code aus dem vorherigen Codefragment.
+4. Fügen Sie das Benutzerkonto und das Kennwort zur Anmeldeinformationen-Komponente des Kontextobjekts hinzu. Dies erfolgt im folgenden Code aus dem vorherigen Codefragment.
     
    ```cs
     projContext.Credentials = new SharePointOnlineCredentials("sarad@Contoso.onmicrosoft.com", password);
    ```
 
-Der Projektkontext instanziierte ist einsatzbereit.
+Der instanziierte Projektkontext kann nun verwendet werden.
   
-### <a name="list-all-published-projects"></a>Listen Sie alle veröffentlichten Projekte
+### <a name="list-all-published-projects"></a>Auflisten aller veröffentlichten Projekte
 
-Project Online und ProjectServer verwenden Proxys für die Kommunikation mit dem Server zu erstellen, Bericht, Update und delete-Operationen (CRUD). Der Hostserver behandelt Anforderungen effizient und hat der Client die folgenden Aktionen ausführen, bei der Kommunikation mit dem Server:
+Project Online und ProjectServer verwenden Proxys, um mit dem Server zum Ausführen von Erstell-, Berichts-, Aktualisier- und Löschvorgängen zu kommunizieren. Der Host/Server verarbeitet Anfragen auf effiziente Weise und lässt den Client die folgenden Aktionen in der Kommunikation mit dem Server ausführen:
   
-1. Richten Sie einen Kontext für die Kommunikation. 
+1. Richten Sie einen Kontext für Kommunikation ein. 
     
-   Der Kontext wird von der Projects-Auflistung als auch andere Objekte und Auflistungen durch Vererbung, einschließlich der Tasks-Auflistung, Assignments-Auflistung, die Stage-Objekts und benutzerdefinierte Felder verwendet. 
+   Der Kontext wird von der Projektesammlung sowie anderen Objekten und Sammlungen (Collections) durch Vererbung verwendet, einschließlich der Aufgabensammlung, der Zuweisungensammlung, des Stufenobjekts und benutzerdefinierter Felder. 
     
-2. Verwenden des Objektmodells auf ein Objekt, Auflistung oder abzurufenden Daten angeben.
+2. Geben Sie mit dem Objektmodell ein Objekt, eine Sammlung oder Daten an, die abgerufen werden sollen.
     
-   Dieser Schritt wird LINQ verwendet, als eine Abfrage oder eine Methode. Die Spezifikation steuert, was Sie erhalten. Dieser Schritt ist häufig als Hauptteil der Load-Methode (Schritt 3) eingebettet. 
+   In diesem Schritt wird LINQ als Abfrage oder Methode verwendet. Die Spezifikation steuert, was Sie erhalten. Dieser Schritt wird häufig als Kern der Load-Methode (Schritt 3) eingebettet. 
     
-3. Laden der Abruf aus dem vorherigen Schritt die Load() oder LoadQuery()-Methode verwenden.
+3. Laden Sie die Spezifikation aus dem vorherigen Schritt mit der Load()- oder LoadQuery()-Methode.
     
-   Verwenden Sie zum Laden von Auflistungen und Objekte, Load(). Für Abfragen mit Klauseln wie "Where" und "group" LoadQuery() verwenden. 
+   Verwenden Sie für das Laden von Sammlungen und Objekten Load(). Verwenden Sie für Abfragen mit Klauseln wie "where" und "group" LoadQuery(). 
     
-4. Führen Sie die Anforderung mithilfe der ExecuteQuery()-Methode.
+4. Führen Sie die Anforderung mit der ExecuteQuery()-Methode aus.
     
-   Die Methode ExecuteQuery() benachrichtigt den Host, dass die Abfrage oder Abfragen ausführen können. Nachdem der Host-Benachrichtigung erhält, führt die Abfragen und sendet die Ergebnisse an den Client. 
+   Die ExecuteQuery()-Methode benachrichtigt den Host, dass die Abfrage oder Abfragen ausgeführt werden können. Sobald der Host die Benachrichtigung erhalten hat, führt er die Abfragen aus und sendet die Ergebnisse an den Client. 
     
-Sie mit den Informationen auf dem Client können die Anwendung verwenden. Im folgenden Codefragment durch die veröffentlichten Projekte und druckt die Id und Name für jedes veröffentlichte Projekt auf dem Host.
+Sobald die Informationen beim Client eingetroffen sind, kann die Anwendung diese verwenden. Im folgenden Codefragment werden die veröffentlichten Projekte durchlaufen und werden die ID und der Name für jedes der auf dem Host veröffentlichten Projekte ausgegeben.
   
 ```cs
 // Get the list of projects in Project Web App.
@@ -257,29 +257,29 @@ Published Project count:2
 
 ```
 
-### <a name="make-a-request"></a>Stellen Sie eine Anforderung
+### <a name="make-a-request"></a>Stellen einer Anforderung
 
-Verwenden die Aktionen aus dem vorherigen Codefragment, ruft die Anwendung die Liste der Projekte in das angegebene Konto auf der Website hosten. 
+Über Verwenden der Aktionen aus dem vorherigen Codefragment ruft die Anwendung die Liste der Projekte im angegebenen Konto auf der hostenden Website ab. 
   
-1. Die ProjectContext wird für die Projekte in der Liste angegeben. 
+1. Die Projektkontext wird für die aufzulistenden Projekte angegeben. 
     
    ```cs
     var projects = projContext.Projects;
    ```
 
-2. Geben Sie das Element abrufen. 
+2. Geben Sie das abzurufende Element an. 
     
    ```cs
     projContext.Load(projects);
    ```
 
-   Durch nur unter Angabe der Auflistung, ruft der Server Auffüllen jedes Projekt mit Werten für die Standardgruppe von Eigenschaften der Project-Auflistung ab. Zugreifen auf Eigenschaften, die Teil der standardeigenschaftensatz sind bietet erfolgreiche Ergebnisse. Zugreifen auf Eigenschaften, die nicht Teil der standardmäßigen sind festzulegen, führt zu einer Ausnahme "Nicht initialisiert".
+   Weil nur die Sammlung angegeben ist, ruft der Server die Projektsammlung ab, wobei jedes Projekt mit den Werten für den Standardsatz der Eigenschaften aufgefüllt wird. Zugreifen auf Eigenschaften, die zum Standardeigenschaftensatz gehören, bringt erfolgreiche Ergebnisse. Zugreifen auf Eigenschaften, die nicht zum Standardeigenschaftensatz gehören, führt zu einer "Nicht initialisiert"-Ausnahme.
     
 3. Laden Sie die Anforderung (projContext.Load).
     
-   Dies ist Teil der im vorherigen Schritt.
+   Dies gehört zum vorherigen Schritt.
     
-4. Ausführen der Abfrage (ExecuteQuery). 
+4. Führen Sie die Abfrage aus (ExecuteQuery). 
     
    ```cs
     projContext.ExecuteQuery();
@@ -287,7 +287,7 @@ Verwenden die Aktionen aus dem vorherigen Codefragment, ruft die Anwendung die L
 
 ### <a name="retrieve-high-level-project-information"></a>Abrufen von allgemeinen Projektinformationen
 
-Eigenschaften, die nicht standardmäßigen Eigenschaften in der Anforderung an den Server müssen angegeben werden. Im nächste Codefragment lädt den Projects-Auflistung Kontext wie im vorherigen Beispiel. Die Spezifikation angefordert zusätzliche nicht standardmäßigen Eigenschaften in das Ergebnis einbezogen. 
+Eigenschaften, die keine Standardeigenschaften sind, müssen in der Anforderung an den Server angegeben werden. Im nächsten Codefragment wird der Kontext der Projektesammlung so wie im vorherigen Beispiel geladen. Anschließend werden in der Spezifikation Nicht-Standardeigenschaften angefordert, die im Ergebnis enthalten sein sollen. 
   
 ```cs
 var projects = projContext.Projects;
@@ -298,7 +298,7 @@ projContext.ExecuteQuery();
 
 ```
 
-Die Load-Anweisung gibt den Kontext der Projects-Auflistung und fügt die StartDate, Phase und Stufe Abfrageergebnis hinzu. Die zusätzlichen Eigenschaften können skalare, werden Objekte und Auflistungen. Skalare Elemente können direkt zugegriffen werden. Objekte und Auflistungen benötigen weitere Verarbeitung weiterleitet, wie im folgenden Codefragment dargestellt.
+In der Load-Anweisung wird der Kontext der Projektesammlung angegeben und werden das Startdatum (StartDate), die Phase und die Stufe (Stage) hinzugefügt. Die zusätzlichen Eigenschaften skalar, Objekte oder Sammlungen sein. Auf skalare Elemente kann direkt zugegriffen werden. Objekte und Sammlungen erfordern zusätzliche Verarbeitungsschritte, wie im folgenden Codefragment.
   
 ```cs
 // Using the previous definition and Load statement …
@@ -343,7 +343,7 @@ Console.WriteLine("\n\t{0}. \t{1} \n\t{2} \n\t{3} \n", j++, pubProj.Id, pubProj.
 
 ```
 
-Ausgabe der ersten drei Projekte:
+Ausgabe für die ersten drei Projekte:
   
 ```cs
 Project counts:31
@@ -365,17 +365,17 @@ Project counts:31
 
 ```
 
-### <a name="retrieve-all-tasks-in-a-project"></a>Rufen Sie aller Vorgänge in einem Projekt ab
+### <a name="retrieve-all-tasks-in-a-project"></a>Abrufen aller Aufgaben in einem Projekt
 
-Jedes Projekt verfügt über viele Aufgaben. Also umfasst die Aufgaben für ein einzelnes Projekt abrufen Folgendes:
+Jedes Projekt hat viele Aufgaben. Somit besteht das Abrufen der Aufgaben für ein einzelnes Projekt aus folgenden Schritten:
   
-1. Richten Sie im Kontext der Projects-Auflistung.
+1. Richten Sie den Kontext der Projektesammlung ein.
     
    ```cs
     var projects = projContext.Projects;
    ```
 
-2. Rufen Sie die Projektinformationen, einschließlich der Task-Eigenschaften ab.
+2. Rufen Sie die Projektinformationen ab, einschließlich der Aufgabeneigenschaften.
     
    ```cs
     projContext.Load(projects);
@@ -384,17 +384,17 @@ Jedes Projekt verfügt über viele Aufgaben. Also umfasst die Aufgaben für ein 
     
    ```
 
-    Beachten Sie, dass die Anwendung veröffentlichte Projekte Adressierung ist. Der Kontext für das aktuelle veröffentlichten Projekt ist PubProj. 
+    Beachten Sie, dass die Anwendung für veröffentlichte Projekte vorgesehen ist. Der Kontext für das aktuelle veröffentlichte Projekt ist "pubProj". 
     
-3. Richten Sie im Kontext der Tasks-Auflistung.
+3. Richten Sie den Kontext für die Aufgabensammlung (Tasks) ein.
     
    ```cs
     PublishedTaskCollection collTask = pubProj.Tasks;
    ```
 
-   Die `pubProj.Tasks` Eigenschaft verweist auf die Aufgaben des aktuellen Projekts veröffentlichte. 
+   Die `pubProj.Tasks`-Eigenschaft verweist auf die Aufgaben des aktuellen veröffentlichten Projekts. 
     
-4. Laden Sie die Spezifikation zum Abrufen der Auflistung von Workflowaufgaben, einschließlich der entsprechenden nicht standardmäßigen Eigenschaften.
+4. Laden Sie die Spezifikation zum Abrufen der Aufgabensammlung (Task collection), einschließlich der entsprechenden Nicht-Standardeigenschaften.
     
    ```cs
     projContext.Load(collTask,
@@ -404,13 +404,13 @@ Jedes Projekt verfügt über viele Aufgaben. Also umfasst die Aufgaben für ein 
     
    ```
 
-5. Führen Sie die Abfrage zum Abrufen der Aufgabe-Auflistung mit den entsprechenden Eigenschaften an.
+5. Führen Sie die Abfrage aus, um die Aufgabensammlung mit den entsprechenden Eigenschaften abzurufen.
     
    ```cs
     projContext.ExecuteQuery();
    ```
 
-Die Informationen sind jetzt lokalen. Im folgenden Codefragment verarbeitet die veröffentlichten Tasks-Auflistung durch Schreiben die Informationen in der Konsole angezeigt.
+Die Informationen liegen nun lokal vor. Im folgenden Codefragment wird die veröffentlichte Aufgabensammlung verarbeitet, indem die Informationen in die Konsole geschrieben werden.
   
 ```cs
     Console.WriteLine("Task collection count: {0}", collTask.Count.ToString());
@@ -426,7 +426,7 @@ Die Informationen sind jetzt lokalen. Im folgenden Codefragment verarbeitet die 
 
 ```
 
-Ausgabe von Aufgaben für ein Projekt:
+Ausgabe der Aufgaben für ein Projekt:
   
 ```cs
 Task collection count: 5
@@ -443,25 +443,25 @@ Task collection count: 5
 
 ```
 
-### <a name="access-information-at-multiple-levels"></a>Zugriff auf Informationen auf mehreren Ebenen
+### <a name="access-information-at-multiple-levels"></a>Zugreifen auf Informationen auf mehreren Ebenen
 
-Jede Aufgabe kann eine oder mehrere Personen (auch bekannt als verfügen. Ressource) beiträgt, dessen Abschluss. Die Aufgaben und Ressourcen Auflistungen enthält diese Informationen für jeden Vorgang. 
+Für jede Aufgabe können eine oder mehrere Personen (auch als Ressourcen bezeichnet) an der Erledigung der Aufgabe beteiligt sein. Die Zuweisungen- (Assignments) und die Ressourcensammlung enthalten diese Informationen für jede Aufgabe. 
   
-Die Verarbeitung umfasst Folgendes:
+Die Verarbeitung besteht aus den folgenden Schritten:
   
-1. Abrufen von einen Kontext für den Projektvorgang.
+1. Rufen Sie einen Kontext für die Projektaufgabe ab.
     
-2. Erstellen Sie eine Anforderung, und Laden Sie die Anforderung für die Zuweisung der Aufgabe gebunden. 
+2. Erstellen Sie eine Anforderung, und laden Sie die Anforderung für die Zuweisungen, die mit der Aufgabe verknüpft sind. 
     
-3. Führen Sie die Abfrage für die Zuordnungen.
+3. Führen Sie die Abfrage für die Zuweisungen aus.
     
-4. Erstellen Sie eine Anforderung, und Laden Sie die Anforderung für die Ressource eine einzelne Zuordnung zugeordnet. 
+4. Erstellen Sie eine Anforderung, und laden Sie die Anforderung für die Ressource, die mit einer einzelnen Zuweisung verknüpft ist. 
     
-5. Führen Sie die Abfrage für die Ressource.
+5. Führen Sie die Abfrage für die Ressource aus.
     
 > [!NOTE] 
-> - Assignments-Auflistung ist explizit in die Informationen vom Server angefordert, da es sich nicht um eine Standardeigenschaft der Tasks-Auflistung darstellt. Als Sammlung erfolgt eine nachfolgende Abfrage zum Abrufen der Auflistung vom Server. 
-> - Die Ressource ist ein Objekt. Die Abfrage für eine Zuordnung enthält den Ressourcennamen der Zuordnung zugeordnet.
+> - Die Zuweisungensammlung wird explizit in den Informationen vom Server angefordert, weil sie keine Standardeigenschaft der Aufgabensammlung ist. Als Sammlung wird anschließend eine Abfrage ausgeführt, um die Sammlung vom Server abzurufen. 
+> - Die Ressource ist ein Objekt. Die Abfrage für eine Zuweisung enthält den Namen der Ressource, die mit der Zuweisung verknüpft ist.
     
 ```cs
 PublishedTaskCollection collTask = pubProj.Tasks;
@@ -510,7 +510,7 @@ PublishedTaskCollection collTask = pubProj.Tasks;
 
 ```
 
-Die Ausgabe für Aufgaben 52, 75 und 76 eines Projekts:
+Ausgabe für Aufgaben 52, 75 und 76 eines Projekts:
   
 ```cs
 52. Id:2c729e96-54f0-e511-80c6-000d3a33235f     Name:Develop training materials
@@ -525,23 +525,23 @@ Die Ausgabe für Aufgaben 52, 75 und 76 eines Projekts:
 
 ```
 
-### <a name="access-custom-enterprise-level-fields"></a>Access benutzerdefinierte Unternehmensebene Felder
+### <a name="access-custom-enterprise-level-fields"></a>Zugreifen auf benutzerdefinierte Felder auf Unternehmensebene
 
-Benutzerdefinierte Felder für Project Online vorhanden sein. Dies sind Unternehmensebene Felder, die einzelne Project zugeordnet werden können. In diesem Abschnitt wird beschrieben, wie diese Felder Zugriff auf. 
+Für Project Online gibt es benutzerdefinierte Felder. Diese Felder sind Felder auf Unternehmensebene, die mit einzelnen Projekten verknüpft werden können. In diesem Abschnitt ist beschrieben, wie auf diese Felder zugegriffen wird. 
   
-Benutzerdefinierte Felder sind nicht in die Standardgruppe von Eigenschaften, die einem Projekt zugeordnete enthalten. Ja, benötigen sie explizite Identifikation in der Spezifikation abrufen. Allgemeine Ansicht über den Prozess umfasst die folgenden Elemente:
+Benutzerdefinierte Felder sind nicht in den Standardeigenschaften enthalten, die mit einem Projekt verknüpft sind. Daher müssen sie in der Abrufspezifikation explizit angegeben werden. Die grundsätzliche Sicht auf den Vorgang besteht aus den folgenden Schritten:
   
-1. Tunnelmodus an das benutzerdefinierte Feld mit den allgemeinen Namen.
+1. Erstellen Sie einen Tunnel zum benutzerdefinierten Feld über dessen allgemeinen Namen.
     
 2. Rufen Sie den internen Namen des benutzerdefinierten Felds ab.
     
-3. Zurück zu globalen Kontext und Abfragen des Systems mit den internen Namen des benutzerdefinierten Felds.
+3. Kehren Sie zum globalen Kontext zurück, und fragen Sie das System mit dem internen Namen des benutzerdefinierten Felds ab.
     
-#### <a name="tunnel-to-the-custom-field-retrieve-its-internal-name-and-used-it-to-query-the-system"></a>An das benutzerdefinierte Feld Tunnel, seinen internen Namen abrufen und es für das System die Abfrage verwendet
+#### <a name="tunnel-to-the-custom-field-retrieve-its-internal-name-and-used-it-to-query-the-system"></a>Erstellen eines Tunnels zum benutzerdefinierten Feld, Abrufen dessen internen Namens und Abfragen des Systems mit dem Namen
 
-Für diese Aufgabe gibt eine abrufen, die eine Standardeigenschaft mit ein hinzugefügte Detail verwendet.
+In dieser Aufgabe ist ein Abruf angegeben, in dem eine Nicht-Standardeigenschaft mit einem zusätzlichen Detail verwendet wird.
   
-1. Beginnen Sie mit dem Kontext Projekte wie am Anfang dieses Artikels beschrieben.
+1. Beginnen Sie durch Verwenden Projektekontexts, wie dies am Anfang dieses Artikels beschrieben ist.
     
    ```cs
     // Get the list of published projects in Project Web App.
@@ -549,7 +549,7 @@ Für diese Aufgabe gibt eine abrufen, die eine Standardeigenschaft mit ein hinzu
     
    ```
 
-2. Projects-Auflistung abrufen Anforderung zusätzlich zu anderen nicht standardmäßige-Eigenschaften zum Abrufen zwei Elemente hinzugefügt:
+2. Fügen Sie zwei Elemente zur Abrufanforderung der Projektesammlung hinzu, zusätzlich zu allen anderen Nicht-Standardeigenschaften, die abgerufen werden sollen:
     
    ```cs
     projContext.Load(projects,
@@ -562,21 +562,21 @@ Für diese Aufgabe gibt eine abrufen, die eine Standardeigenschaft mit ein hinzu
     
    ```
 
-   Die `p => p.IncludeCustomFields` Klausel erkennt die muss ein Project-Objekt verwenden, benutzerdefinierte Felder unterstützt. 
+   Die `p => p.IncludeCustomFields`-Klausel kennzeichnet die Notwendigkeit, ein Projektobjekt zu verwenden, das benutzerdefinierte Felder unterstützt. 
     
-   Die `p => p.IncludeCustomFields.CustomFields` Klausel fordert die Aufnahme der Daten im Abfrageergebnis benutzerdefinierter Felder. Diese Informationen werden verwendet, nachdem der interne Name des benutzerdefinierten Felds abgerufen wird. 
+   In der `p => p.IncludeCustomFields.CustomFields`-Klausel wird die Einbeziehung von Daten aus benutzerdefinierten Feldern in das Abfrageergebnis angefordert. Diese Informationen werden verwendet, nachdem der interne Name des benutzerdefinierten Felds abgerufen wurde. 
     
 3. Laden Sie die Anforderung.
     
-   Dies ist Teil der im vorherigen Schritt.
+   Dies gehört zum vorherigen Schritt.
     
-4. Ausführen der Abfrage.
+4. Führen Sie die Abfrage aus.
     
    ```cs
     projContext.ExecuteQuery()
    ```
 
-5. Erstellen Sie mithilfe dieser Informationen auf dem Client eine Anforderung an die benutzerdefinierten Feldern, die dem aktuellen Projekt zugeordnete abrufen.
+5. Mit diesen Informationen erstellen Sie auf dem Client eine Anforderung, um die benutzerdefinierten Felder abzurufen, die mit dem aktuellen Projekt verknüpft sind.
     
    ```cs
     foreach (PublishedProject pubProj in projContext.Projects)
@@ -590,7 +590,7 @@ Für diese Aufgabe gibt eine abrufen, die eine Standardeigenschaft mit ein hinzu
     
    ```
 
-6. Suchen Sie die entsprechenden benutzerdefinierten Felds, und rufen Sie den internen Namen des Felds. 
+6. Suchen Sie das entsprechende benutzerdefinierte Feld, und rufen Sie den internen Namen des Felds ab. 
     
    ```cs
         foreach (CustomField oCF in collCustF)
@@ -602,9 +602,9 @@ Für diese Aufgabe gibt eine abrufen, die eine Standardeigenschaft mit ein hinzu
     
    ```
 
-   Der interne Name des benutzerdefinierten Felds wird abgerufen. Elemente auf oberster Ebene 1 und 2 sind jetzt abgeschlossen.
+   Der interne Name des benutzerdefinierten Felds wird abgerufen. Die grundsätzlichen Schritte 1 und 2 sind jetzt abgeschlossen.
     
-7. Die Projekt-Kontext zurück, und rufen Sie den Wert des benutzerdefinierten Felds.
+7. Kehren Sie zum Projektkontext zurück, und rufen Sie den Wert des benutzerdefinierten Felds ab.
     
    ```cs
     Console.WriteLine("Value: {0}", 
@@ -613,9 +613,9 @@ Für diese Aufgabe gibt eine abrufen, die eine Standardeigenschaft mit ein hinzu
    ```
 
    > [!NOTE]
-   > Der Wert des benutzerdefinierten Felds ist mit den internen Namen als Index abgerufen. 
+   > Der Wert des benutzerdefinierten Felds wird abgerufen, indem der interne Name als Index verwendet wird. 
   
-Ausgabe des Project-ID, Name des Projekts, Name des benutzerdefinierten Felds, interne Name des benutzerdefinierten Felds und der Wert des benutzerdefinierten Felds bestehend aus drei Projekte.
+Die Ausgabe für drei Projekte, bestehend aus Projekt-ID, Projektname, Name des benutzerdefinierten Felds, interner Name des benutzerdefinierten Felds und Wert des benutzerdefinierten Felds.
   
 ```cs
 Project counts:31
@@ -639,6 +639,6 @@ Value: Red
 
 ## <a name="see-also"></a>Siehe auch
 
-Dokumentation und Beispiele im Zusammenhang mit Project Online und die Anwendungsentwicklung mithilfe von CSOM finden Sie im [Projekt Development Portal](https://developer.microsoft.com/en-us/project).
+Dokumentation und Beispiele zu Project Online und Anwendungsentwicklung mit CSOM finden Sie im [Project-Entwicklungsportal](https://developer.microsoft.com/de-DE/project).
     
 
