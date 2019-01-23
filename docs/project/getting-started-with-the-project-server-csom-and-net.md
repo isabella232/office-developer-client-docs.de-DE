@@ -3,38 +3,38 @@ title: Erste Schritte mit dem Project Server-CSOM und .NET
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 5ce73baa-dfb6-41d0-918d-b0c3a498815f
-description: Sie können das Project Server 2013 mithilfe der clientseitigen Objektmodell (CSOM) zum Entwickeln von Project Online und lokale Lösungen mit .NET Framework 4 verwenden. Dieser Artikel beschreibt, wie Sie eine Konsolenanwendung erstellen, die das CSOM zum Erstellen und Veröffentlichen von Projekten verwendet. Nach der Veröffentlichung eines Projekts, die Anwendung wartet darauf, dass der Project Server-Warteschlangendienst auf Fertig stellen, mit der Veröffentlichungsaktion und zeigt dann die veröffentlichten Projekte.
-ms.openlocfilehash: f4e40cb3165bb2b3caf05b01736d90c21b6ac881
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: Sie können das clientseitige Objektmodell (CSOM) von Project Server 2013 verwenden, um Project Online und lokale Lösungen mit .NET Framework 4 zu entwickeln. Dieser Artikel beschreibt, wie Sie eine Konsolenanwendung erstellen, die das CSOM zum Erstellen und Veröffentlichen von Projekten verwendet. Nach dem Veröffentlichen eines Projekts wartet die Anwendung, bis der Project Server-Warteschlangendienst die Veröffentlichung abgeschlossen hat und listet dann die veröffentlichten Projekte auf.
+localization_priority: Priority
+ms.openlocfilehash: b53587ca1959faefdc1b40f08c4adfda4ee11d70
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401741"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710461"
 ---
 # <a name="getting-started-with-the-project-server-csom-and-net"></a>Erste Schritte mit dem Project Server-CSOM und .NET
 
-Sie können das Project Server 2013 mithilfe der clientseitigen Objektmodell (CSOM) zum Entwickeln von Project Online und lokale Lösungen mit .NET Framework 4 verwenden. Dieser Artikel beschreibt, wie Sie eine Konsolenanwendung erstellen, die das CSOM zum Erstellen und Veröffentlichen von Projekten verwendet. Nach der Veröffentlichung eines Projekts, die Anwendung wartet darauf, dass der Project Server-Warteschlangendienst auf Fertig stellen, mit der Veröffentlichungsaktion und zeigt dann die veröffentlichten Projekte.
+Sie können das clientseitige Objektmodell (CSOM) von Project Server 2013 verwenden, um Project Online und lokale Lösungen mit .NET Framework 4 zu entwickeln. Dieser Artikel beschreibt, wie Sie eine Konsolenanwendung erstellen, die das CSOM zum Erstellen und Veröffentlichen von Projekten verwendet. Nach dem Veröffentlichen eines Projekts wartet die Anwendung, bis der Project Server-Warteschlangendienst die Veröffentlichung abgeschlossen hat und listet dann die veröffentlichten Projekte auf.
   
-Eine allgemeine Einführung in die Project Server-CSOM finden Sie unter [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md). Referenzthemen im CSOM-Namespace finden Sie unter [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) . 
+Eine allgemeine Einführung in das Project Server-CSOM finden Sie unter [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md). Referenzthemen im CSOM-Namespace finden Sie unter [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) . 
   
 ## <a name="creating-a-csom-project-in-visual-studio"></a>Erstellen eines CSOM-Projekts in Visual Studio
 <a name="pj15_GettingStartedCSOM_CreatingVSProject"> </a>
 
-Verwenden Sie Visual Studio 2010 oder Visual Studio 2012, zum Entwickeln von Lösungen, die die Project Server-CSOM verwenden. Die Project Server-CSOM umfasst drei Assemblys für die Entwicklung von Clientanwendungen, Microsoft Silverlight-Anwendungen und Windows Phone 8-Anwendungen mithilfe von .NET Framework 4. Das CSOM enthält auch eine JavaScript-Datei für die Entwicklung von Webanwendungen, wie in [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) beschrieben. 
+Sie können Visual Studio 2010 oder Visual Studio 2012 verwenden, um Lösungen zu entwickeln, die das Project Server-CSOM verwenden. Das Project Server-CSOM umfasst drei Assemblys für die Entwicklung von Clientanwendungen, Microsoft Silverlight-Anwendungen und Windows Phone 8-Anwendungen mit .NET Framework 4. Das CSOM umfasst außerdem eine JavaScript-Datei für die Entwicklung von Webanwendungen, wie in [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) beschrieben. 
   
-Sie können die CSOM-Assembly, die Sie benötigen aus der Project Server-Computer oder aus der Project 2013-SDK-Download auf einem Computer remoteentwicklung kopieren. Die **QueueCreateProject** Konsolenanwendung, die in diesem Thema beschrieben wird ist keiner Silverlight-Anwendung oder einer Windows Phone 8-Anwendung benötigen Sie die Assembly Microsoft.ProjectServer.Client.dll. Da das CSOM unabhängig von der WCF-basierte oder ASMX-basierte Project Server Interface (PSI) ist, müssen Sie keinen zum Festlegen von Dienstverweise für die PSI, oder verwenden Sie den **Microsoft.Office.Project.Server.Library** -Namespace. 
+Sie können die benötigte CSOM-Assembly vom Project Server-Computer oder aus dem Project 2013-SDK-Download auf einen Remote-Entwicklungscomputer kopieren. Die **QueueCreateProject**-Konsolenanwendung, die in diesem Thema beschrieben wird, ist keine Silverlight- oder Windows Phone 8-Anwendung. Sie werden also die Microsoft.ProjectServer.Client.dll-Assembly benötigen. Da das CSOM unabhängig von der WCF- oder ASMX-basierten Project Server Interface (PSI) ist, müssen Sie keine Dienstverweise für die PSI festlegen oder den **Microsoft.Office.Project.Server.Library**-Namespace festlegen. 
   
 Die **QueueCreateProject**-Anwendung verwendet Befehlszeilenargumente für den Namen des zu erstellenden Projekts und das Warteschlangen-Zeitlimit In Verfahren 1 erstellen Sie die grundlegende Konsolenanwendung, fügen eine Routine zum Analysieren der Befehlszeile hinzu und fügen eine Nachricht die Verwendung hinzu, falls Fehler in der Befehlszeile auftreten. 
   
 ### <a name="procedure-1-to-create-a-csom-project-in-visual-studio"></a>Verfahren 1: So erstellen Sie ein CSOM-Projekt in Visual Studio
 
-1. Kopieren Sie die Assembly Microsoft.ProjectServer.Client.dll aus der `%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\` Ordner auf Ihrem Entwicklungscomputer. Kopieren Sie die Assembly in einen Ordner komfortable für andere Project Server und SharePoint-Verweisassemblys, die Sie, z. B. verwenden möchten `C:\Project\Assemblies`.
+1. Kopieren Sie die Microsoft.ProjectServer.Client.dll-Assembly aus dem Ordner `%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\` auf den Entwicklungscomputer. Kopieren Sie die Assembly in einen geeigneten Ordner für andere Project Server- und SharePoint-Referenzassemblys, die Sie verwenden möchten, z. B. `C:\Project\Assemblies`.
     
 2. Kopieren Sie die Microsoft.SharePoint.Client.dll-Assembly und die Microsoft.SharePoint.Client.Runtime.dll-Assembly aus demselben Quellordner auf Ihren Entwicklungscomputer. Die Microsoft.ProjectServer.Client.dll-Assembly verfügt über Abhängigkeiten für die zugehörigen SharePoint-Assemblys.
     
-3. Klicken Sie in Visual Studio erstellen Sie eine Windows, und legen Sie das Zielframework in .NET Framework 4. Nennen Sie beispielsweise die Anwendung QueueCreateProject.
+3. Erstellen Sie in Visual Studio eine Windows-Konsolenanwendung, und legen Sie das Zielframework auf .NET Framework 4 fest. Nennen Sie die Anwendung z. B. QueueCreateProject.
     
    > [!NOTE]
    > Wenn Sie vergessen, das richtige Ziel festzulegen, nachdem Visual Studio das Projekts erstellt hat, öffnen Sie **Eigenschaften von QueueCreateProject** im Menü **Projekt**. Wählen Sie auf der Registerkarte **Anwendung** in der Dropdown-Liste **Zielframework** die Option **.NET Framework 4**. Verwenden Sie nicht **.NET Framework 4 Client Profile**. 
@@ -45,7 +45,7 @@ Die **QueueCreateProject**-Anwendung verwendet Befehlszeilenargumente für den N
    - Microsoft.SharePoint.Client.dll
    - Microsoft.SharePoint.Client.Runtime.dll
     
-5. In der Datei Program.cs Bearbeiten der `using` Anweisungen, die wie folgt. 
+5. Bearbeiten Sie in der Datei „Program.cs“ die `using`-Anweisungen wie folgt. 
     
    ```cs
     using System;
@@ -130,11 +130,11 @@ Die **QueueCreateProject**-Anwendung verwendet Befehlszeilenargumente für den N
 ## <a name="getting-the-project-context"></a>Abrufen des Projektkontexts
 <a name="pj15_GettingStartedCSOM_GettingContext"> </a>
 
-CSOM Entwicklung erfordert das **ProjectContext** -Objekt, das mit der Project Web App-URL nicht initialisiert werden. Der Code in Schritt 2 verwendet die **PwaPath** -Konstante. Wenn Sie die Anwendung für mehrere Instanzen von Project Web App verwenden möchten, können Sie **PwaPath** stellen Sie eine Variable und Hinzufügen einer anderen Befehlszeilenargument. 
+Die CSOM-Entwicklung erfordert, dass das **ProjectContext**-Objekt mit der Project Web App-URL initialisiert wird. Der Code in Verfahren 2 verwendet die **pwaPath**-Konstante. Wenn Sie beabsichtigen, die Anwendung für mehrere Instanzen von Project Web App zu verwenden, können Sie **pwaPath** zu einer Variablen machen und ein weiteres Befehlszeilenargument hinzufügen. 
   
 ### <a name="procedure-2-to-get-the-project-context"></a>Verfahren 2: So rufen Sie den Projektkontext ab
 
-1. Hinzufügen von **Programm** -Klasse Konstanten und Variablen, die die **QueueCreateProject** -Anwendung verwendet wird. Zusätzlich zu den Project Web App-URL verwendet die Anwendung den Namen der standardmäßige Enterprise-Projekttyp (EPT), den Namen des Projekts zu erstellen und eine maximale Warteschlangentimeout in Sekunden an. In diesem Fall kann die Variable **TimeoutSeconds** Sie testen, wie verschiedene Werte für das Timeout die Anwendung auswirken. Das **ProjectContext** -Objekt ist das primäre Objekt für den Zugriff auf die CSOM. 
+1. Fügen Sie **Program**-Klassenkonstanten und -Variablen hinzu, die von der **QueueCreateProject**-Anwendung verwendet werden. Zusätzlich zur Project Web App-URL verwendet die Anwendung den Namen des standardmäßigen Enterprise-Projekttyps (EPT), den Namen des zu erstellenden Projekts und ein maximales Warteschlangen-Zeitlimit in Sekunden. In diesem Fall ermöglicht Ihnen die **timeoutSeconds**-Variable zu testen, wie sich verschiedene Werte für das Zeitlimit auf die Anwendung auswirken. Das **ProjectContext**-Objekt ist das primäre Objekt für den Zugriff auf das CSOM. 
     
    ```cs
     private const string pwaPath = "https://ServerName /pwa/"; // Change the path to your Project Web App instance.
@@ -144,7 +144,7 @@ CSOM Entwicklung erfordert das **ProjectContext** -Objekt, das mit der Project W
     private static ProjectContext projContext;
    ```
 
-2. Ersetzen Sie die `/* Add calls to methods here to get the project context and create a project. */` Kommentar durch den folgenden Code. Das **Microsoft.ProjectServer.Client.ProjectContext** -Objekt wird mit der Project Web App-URL initialisiert. Die **CreateTestProject** -Methode und die **ListPublishedProjects** -Methode sind im Verfahren 4 und 5 Verfahren dargestellt. 
+2. Ersetzen Sie den Kommentar `/* Add calls to methods here to get the project context and create a project. */` durch den folgenden Code. Das **Microsoft.ProjectServer.Client.ProjectContext**-Objekt wird mit der Project Web App-URL initialisiert. Die **CreateTestProject**-Methode und die **ListPublishedProjects**-Methode werden in Verfahren 4 und Verfahren 5 gezeigt. 
     
    ```cs
     projContext = new ProjectContext(pwaPath);
@@ -218,7 +218,7 @@ Die **CreateTestProject**-Methode erstellt ein **ProjectCreationInformation**-Ob
   
 Nach dem Festlegen der neuen Projekteigenschaften fügt die **Projects.Add**-Methode das Projekt zur **Projects**-Auflistung hinzu. Zum Speichern und Veröffentlichen des Projekts müssen Sie die **Projects.Update**-Methode aufrufen, um eine Nachricht an die Project Server-Warteschlange zu senden und das Projekt zu erstellen. 
   
-### <a name="procedure-4-to-set-the-new-project-properties-create-the-project-and-publish-the-project"></a>Verfahren 4: So legen Sie die neuen Projekteigenschaften fest, erstellen das Projekt und veröffentlichen das Projekt
+### <a name="procedure-4-to-set-the-new-project-properties-create-the-project-and-publish-the-project"></a>Verfahren 4: So legen Sie die neuen Projekteigenschaften fest, erstellen das Projekt und veröffentlichen es
 
 1. Fügen Sie die **CreateTestProject**-Methode zur **Program**-Klasse hinzu. Mit dem folgende Code wird ein Projekt erstellt und veröffentlicht, es wird jedoch nicht gewartet, bis der Warteschlangenauftrag abgeschlossen ist. 
     
@@ -252,7 +252,7 @@ Nach dem Festlegen der neuen Projekteigenschaften fügt die **Projects.Add**-Met
     }
    ```
 
-2. Ersetzen Sie die `/* Add code here to wait for the queue. */` Kommentar durch den folgenden Code für den Warteschlangenauftrag gewartet. Die Routine wartet, bis zu der angegebenen **TimeoutSeconds** Anzahl von Sekunden oder wird fortgesetzt, wenn vor dem Timeout der Warteschlangenauftrag beendet wurde. Mögliche Warteschlange Auftragsstatusangaben finden Sie unter [Microsoft.ProjectServer.Client.JobState](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.JobState.aspx) . 
+2. Ersetzen Sie den Kommentar `/* Add code here to wait for the queue. */` durch den folgenden Code, damit auf den Abschluss des Warteschlangenauftrags gewartet wird. Die Routine wartet maximal die für **timeoutSeconds** angegebene Anzahl von Sekunden oder fährt fort, wenn der Warteschlangenauftrag vor dem Zeitlimit abgeschlossen ist. Mögliche Zustände von Aufträgen in der Warteschlange finden Sie unter [Microsoft.ProjectServer.Client.JobState](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.JobState.aspx). 
     
    Das Aufrufen der **Load**-Methode und der **ExecuteQuery**-Methode für das **QueueJob**-Objekt ist optional. Wenn das **QueueJob**-Objekt beim Aufrufen der **WaitForQueue**-Methode nicht initialisiert ist, initialisiert Project Server die Methode. 
     
@@ -279,7 +279,7 @@ Nach dem Festlegen der neuen Projekteigenschaften fügt die **Projects.Add**-Met
 ## <a name="listing-the-published-projects"></a>Auflisten der veröffentlichten Projekte
 <a name="pj15_GettingStartedCSOM_ListingPublished"> </a>
 
-Die **ListPublishedProjects** -Methode ruft die Auflistung aller Projekte, die in Project Web App veröffentlicht werden. Wenn der Warteschlangenauftrag erstellt, die in Verfahren 4 ein Projekt nicht erfolgreich abgeschlossen oder ein Timeout, das neue Projekt nicht in der **Projects** -Auflistung enthalten ist. 
+Die **ListPublishedProjects**-Methode ruft die Sammlung aller Projekte ab, die in Project Web App veröffentlicht wurden. Wenn der Warteschlangenauftrag, der in Verfahren 4 ein Projekt erstellt, nicht erfolgreich abgeschlossen wurde oder das Zeitlimit überschreitet, wird das neue Projekt nicht in die **Projects**-Sammlung aufgenommen. 
   
 ### <a name="procedure-5-to-list-the-published-projects"></a>Verfahren 5: So listen Sie die veröffentlichten Projekte auf
 
@@ -301,18 +301,18 @@ Die **ListPublishedProjects** -Methode ruft die Auflistung aller Projekte, die i
     }
    ```
 
-2. Legen Sie den richtigen Wert für die Project Web App-URL, kompilieren Sie die Anwendung **QueueCreateProject** , und Testen Sie die Anwendung wie in der Prozedur 6. 
+2. Legen Sie den richtigen Wert für die Project Web App-URL fest, kompilieren Sie die **QueueCreateProject**-Anwendung, und testen Sie dann die Anwendung wie in Verfahren 6 beschrieben. 
     
 ## <a name="testing-the-queuecreateproject-application"></a>Testen der QueueCreateProject-Anwendung
 <a name="pj15_GettingStartedCSOM_Testing"> </a>
 
-Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von Project Web App ausführen, insbesondere wenn Project Server auf einem virtuellen Computer installiert ist möglicherweise die Anwendung mehr Zeit als das Standardtimeout für die Warteschlange von zehn Sekunden ausführen erforderlich. 
+Beim ersten Ausführen der **QueueCreateProject**-Anwendung auf einer Testinstanz von Project Web App, insbesondere dann, wenn Sie Project Server auf einem virtuellen Computer installiert haben, benötigt die Anwendung möglicherweise mehr Zeit für die Ausführung als das Standardzeitlimit für Warteschlangen von 10 Sekunden. 
   
 ### <a name="procedure-6-to-test-the-queuecreateproject-application"></a>Verfahren 6: So testen Sie die QueueCreateProject-Anwendung
 
-1. Öffnen Sie das Fenster **QueueCreateProject Eigenschaften** , wählen Sie die Registerkarte **Debuggen** , und fügen Sie im Abschnitt **Startoptionen** die folgenden Befehlszeilenargumente:`-n "Test proj 1" -t 20`
+1. Öffnen Sie das Fenster **Eigenschaften von QueueCreateProject**, wählen Sie die Registerkarte **Debuggen** aus, und fügen Sie dann die folgenden Befehlszeilenargumente in den Abschnitt **Startoptionen** ein: `-n "Test proj 1" -t 20`
     
-   Führen Sie die Anwendung (z. B. drücken Sie **F5**). Wenn Sie der Timeoutwert lange genug ist, zeigt die Anwendung die folgende Ausgabe (wenn andere veröffentlichte Projekte in der Project Web App-Instanz vorhanden ist, sie werden auch werden angezeigt):
+   Führen Sie die Anwendung aus (drücken Sie z. B. **F5**). Wenn das Zeitlimit lang genug ist, zeigt die Anwendung die folgende Ausgabe an (wenn in Ihrer Project Web App-Instanz andere veröffentlichte Projekte vorhanden sind, werden diese ebenfalls angezeigt):
     
    ```MS-DOS
     Creating project: Test proj 1 ...
@@ -322,7 +322,7 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
     Press any key to exit...
    ```
 
-2. Führen Sie einen weiteren Test das Standardtimeout 10 Sekunden Warteschlange verwendet die folgenden Befehlszeilenargumente aus:`-n "Test proj 1"`
+2. Führen Sie einen weiteren Test mit den folgenden Befehlszeilenargumenten durch, um das standardmäßige Warteschlangen-Zeitlimit von 10 Sekunden anzuwenden: `-n "Test proj 1"`
     
    Da „Test Proj 1“ bereits vorhanden ist, zeigt die Anwendung folgende Ausgabe an.
     
@@ -335,13 +335,13 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
     Press any key to exit...
    ```
 
-3. Führen Sie einen weiteren Test das Standardtimeout 10 Sekunden Warteschlange verwendet die folgenden Befehlszeilenargumente aus:`-n "Test proj 2"`
+3. Führen Sie einen weiteren Test mit den folgenden Befehlszeilenargumenten durch, um das standardmäßige Warteschlangen-Zeitlimit von 10 Sekunden anzuwenden: `-n "Test proj 2"`
     
    Die **QueueCreateProject**-Anwendung erstellt und veröffentlicht das Projekt mit dem Namen „Test Proj 2“. 
     
-4. Führen Sie einen anderen Test mit den folgenden Befehlszeilenargumente, und legen Sie den Timeoutwert zu kurz für Warteschlangenauftrag beendet werden:`-n "Test proj 3" -t 1`
+4. Führen Sie einen weiteren Test mit den folgenden Befehlszeilenargumenten durch, und legen Sie das Zeitlimit so kurz fest, dass der Warteschlangenauftrag nicht abgeschlossen werden kann: `-n "Test proj 3" -t 1`
     
-   Da das Warteschlangen-Zeitlimit zu kurz ist, wird das Projekt nicht erstellt. Die Anwendung zeigt die folgende Ausgabe.
+   Da das Warteschlangen-Zeitlimit zu kurz ist, wird das Projekt nicht erstellt. Die Anwendung zeigt die folgende Ausgabe an.
     
    ```MS-DOS
     Creating project: Test proj 3 ...
@@ -351,7 +351,7 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
     Press any key to exit...
    ```
 
-5. Ändern Sie den Code, damit die Anwendung nicht darauf warten, dass der Warteschlangenauftrag. Beispielsweise kommentieren Sie den Code, die für die Warteschlange, außer für wartet die `projCreated = true` Zeile wie folgt. 
+5. Ändern Sie den Code so, dass die Anwendung nicht auf den Warteschlangenauftrag wartet. Kommentieren Sie zum Beispiel den Code aus, der auf die Warteschlange wartet, mit Ausnahme der folgenden `projCreated = true`-Zeile. 
     
    ```cs
     //JobState jobState = projContext.WaitForQueue(qJob, timeoutSeconds);
@@ -370,7 +370,7 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
     
    ```
 
-6. Kompilieren Sie die Anwendung neu, und führen Sie einen weiteren Test mit den folgenden Befehlszeilenargumente:`-n "Test proj 4"`
+6. Kompilieren Sie die Anwendung neu, und führen Sie einen weiteren Test mit den folgenden Befehlszeilenargumenten durch: `-n "Test proj 4"`
     
    Da die **WaitForQueue**-Routine auskommentiert ist, verwendet die Anwendung nicht den Standardwert für das Zeitlimit. Obwohl die Anwendung nicht auf die Warteschlange wartet, zeigt sie möglicherweise „Test Proj 4“ an, wenn die Veröffentlichungsaktion in Project Server schnell genug ist. 
     
@@ -386,18 +386,18 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
     Press any key to exit...
    ```
 
-Aktualisieren Sie die Seite Projektcenter in Project Web App (`https://ServerName/ProjectServerName/Projects.aspx`), um die veröffentlichten Projekte anzeigen. Die folgende Abbildung zeigt, dass die Testprojekte veröffentlicht werden.
+Aktualisieren Sie die Projektcenter-Seite in Project Web App (`https://ServerName/ProjectServerName/Projects.aspx`), um die veröffentlichten Projekte anzuzeigen. Die folgende Abbildung zeigt, dass die Projekte veröffentlicht wurden.
 
 **Überprüfen der veröffentlichten Projekte in Project Web App**
 
-![Überprüfen der veröffentlichten Projekte in Project Web App] (media/pj15_GetStartedCSOMNET_pwa.gif "Überprüfen der veröffentlichten Projekte in Project Web App")
+![Überprüfen die veröffentlichte Projekte in Project Web App](media/pj15_GetStartedCSOMNET_pwa.gif "Überprüfen die veröffentlichte Projekte in Project Web App")
   
-Die beispielanwendung **QueueCreateProject** zeigt eine typische Beispiel dafür, wie eine Project-Entität mit dem Clientobjektmodell So erstellen Sie mithilfe der **ProjectCreationInformation** -Klasse zum Hinzufügen des Projekts zu der veröffentlichten-Auflistung, wie von einem Warteschlangenauftrag gewartet verwenden die **WaitForQueue** -Methode und wie die Auflistung von veröffentlichten Projekten aufgelistet werden. 
+Die **QueueCreateProject**-Beispielanwendung zeigt ein typisches Beispiel für die Erstellung einer Projektentität mit dem CSOM anhand der **ProjectCreationInformation**-Klasse, wie Sie das Projekt zur veröffentlichten Auflistung hinzufügen, wie auf einen Auftrag in der Warteschlange mit der **WaitForQueue**-Methode auf einen Warteschlangenauftrag gewartet wird, und wie die Auflistung der veröffentlichten Projekte aufgelistet wird. 
   
 ## <a name="complete-code-example"></a>Vollständiges Codebeispiel
 <a name="pj15_GettingStartedCSOM_CompleteCode"> </a>
 
-Es folgt der vollständige Code für die **QueueCreateProject** beispielanwendung aus. [Microsoft.ProjectServer.Client.ProjectCreationInformation](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectCreationInformation.aspx) Class Reference enthält auch den Code in diesem Thema. 
+Nachfolgend ist der vollständige Code für die **QueueCreateProject**-Beispielanwendung aufgeführt. Die [Microsoft.ProjectServer.Client.ProjectCreationInformation](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectCreationInformation.aspx)-Klassenreferenz enthält auch den Code in diesem Thema. 
   
 ```cs
 using System;

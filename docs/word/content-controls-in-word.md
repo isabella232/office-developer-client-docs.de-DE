@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 09/10/2015
 ms.audience: Developer
 keywords:
-- Inhaltssteuerelemente [Word], Inhaltssteuerelemente [Word], Neuigkeiten
-localization_priority: Normal
+- Inhaltssteuerelemente [Word] Inhaltssteuerelemente [Word], Neuigkeiten
 ms.assetid: c0e6dd3b-fae1-453d-a9b4-7f456b5172db
-description: Erfahren Sie, wie Microsoft Word 2013-Inhaltssteuerelemente einen größeren Bereich von Szenarien für strukturierte Dokumente.
-ms.openlocfilehash: 1b0b88da4bc3347ac6748ab57b99d45edd57558d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+description: Erfahren Sie, wie Microsoft Word 2013-Inhaltssteuerelemente eine größere Palette von strukturierten Dokumentszenarien ermöglichen.
+localization_priority: Priority
+ms.openlocfilehash: 4234425cc8398d87b72108d389953fc0eb802c87
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798515"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718350"
 ---
 # <a name="content-controls-in-word"></a>Inhaltssteuerelemente in Word
 
-Erfahren Sie, wie Microsoft Word 2013-Inhaltssteuerelemente einen größeren Bereich von Szenarien für strukturierte Dokumente.
+Erfahren Sie, wie Microsoft Word 2013-Inhaltssteuerelemente eine größere Palette von strukturierten Dokumentszenarien ermöglichen.
 
-Dieses Thema enthält Informationen zu Änderungen an Inhaltssteuerelemente in Microsoft Word 2013 und die Dokument-Szenarien, die diese Änderungen zu ermöglichen.
+Dieses Thema enthält Informationen zu Änderungen an Inhaltssteuerelementen in Microsoft Word 2013 und zu den Dokumentszenarien, die durch diese Änderungen ermöglicht werden.
   
 ### <a name="structured-documents"></a>Strukturierte Dokumente
 <a name="WordCC_StructuredDocs"> </a>
 
 Strukturierte Dokumente sind Dokumente, die steuern, an welchen Stellen welche Art von Inhalten in einem Dokument angezeigt und ob Inhalte bearbeitet werden können.
   
-Es folgen einige häufige Szenarien für strukturierte Inhalte in Microsoft Word:
+Im Folgenden finden Sie einige typische Szenarien für strukturierte Inhalte in Microsoft Word:
   
 - Eine Anwaltskanzlei muss Dokumente erstellen, die juristische Fachsprache enthalten, die nicht vom Benutzer geändert werden sollte.
     
@@ -37,14 +37,14 @@ Es folgen einige häufige Szenarien für strukturierte Inhalte in Microsoft Word
 ### <a name="using-content-controls-to-structure-a-document"></a>Verwenden von Inhaltssteuerelementen zum Strukturieren eines Dokuments
 <a name="WordCC_StructuredDocs"> </a>
 
-Inhaltssteuerelemente sind Microsoft Word-Entitäten, die als Container für bestimmte Inhalte in einem Dokument verwendet. Einzelne Inhaltssteuerelemente können Inhalt wie Daten, Listen oder Absätze mit formatierten Text enthalten. Inhaltssteuerelemente helfen Ihnen erstellen umfassender, strukturierte Blöcke mit Inhalt und für die Verwendung in Vorlagen, die definierte Blöcke in Ihre Dokumente, Erstellen von strukturierten Dokumenten einfügen vorgesehen sind.
+Inhaltssteuerelemente sind Microsoft Word-Einheiten, die als Container für bestimmte Inhalte in einem Dokument dienen. Einzelne Inhaltssteuerelemente können Inhalte wie Datumsangaben, Listen oder Absätze mit formatiertem Text enthalten. Inhaltssteuerelemente helfen Ihnen, umfassende strukturierte Inhaltsblöcke zu erstellen und sind für die Verwendung in Vorlagen vorgesehen, die fest umrissene Blöcke in Ihre Dokumente einfügen und so strukturierte Dokumente erstellen.
   
 Inhaltssteuerelemente sind ideal für das Erstellen strukturierter Dokumente geeignet, da sie Sie dabei unterstützen, die Position von Inhalten festzulegen, die Art von Inhalten anzugeben (z. B. ein Datum, ein Bild oder Text), die Bearbeitung einzuschränken oder zu ermöglichen und Inhalten eine semantische Bedeutung hinzuzufügen.
   
-### <a name="content-controls-in-word-2010"></a>Inhaltssteuerelemente in Word 2010
+### <a name="content-controls-in-word-2010"></a>Inhaltssteuerelemente in Word 2010
 <a name="WordCC_StructuredDocs"> </a>
 
-Die folgenden Inhaltssteuerelemente sind in Word 2010 verfügbar:
+Die folgenden Inhaltssteuerelemente stehen in Word 2010 zur Verfügung:
   
 - Rich-Text
     
@@ -64,16 +64,16 @@ Die folgenden Inhaltssteuerelemente sind in Word 2010 verfügbar:
     
 - Gruppe
     
-Word 2010 mit Inhaltssteuerelementen können verschiedene potenzielle strukturiertes dokumentlösungen, aber in Word 2013 Inhaltssteuerelemente einen größeren Wertebereich Szenarien aktivieren.
+Word 2010-Inhaltssteuerelemente ermöglichen verschiedene potenzielle strukturierte Dokumentlösungen, aber mit den Inhaltssteuerelementen in Word 2013 ist eine breitere Palette an Szenarien möglich.
   
-## <a name="content-control-improvements-in-word-2013"></a>Inhaltssteuerelement Verbesserungen in Word 2013
+## <a name="content-control-improvements-in-word-2013"></a>Verbesserungen bei den Inhaltssteuerelementen in Word 2013
 <a name="WordCC_WhatsNew"> </a>
 
-In Word 2013, Inhaltssteuerelemente bieten drei wichtige Verbesserungen: Visualisierung, Unterstützung für die XML-Zuordnung für Rich-Text-Inhaltssteuerelemente und ein neues Inhaltssteuerelement sich wiederholende Inhalte verbessert.
+In Word 2013 werden drei wesentliche Verbesserungen für Inhaltssteuerelemente bereitgestellt: verbesserte Visualisierung, Unterstützung für die XML-Zuordnung für Rich-Text-Inhaltssteuerelemente und ein neues Inhaltssteuerelement für wiederholte Inhalte.
   
 ### <a name="improved-visualization"></a>Verbesserte Visualisierung
 
-Word 2013 ermöglicht ein einzelnes Inhaltssteuerelement in einer von drei möglichen Zuständen angezeigt werden:
+In Word 2013 kann ein einzelnes Inhaltssteuerelement in einem von drei möglichen Zuständen angezeigt werden:
   
 - Umgebendes Feld
     
@@ -84,16 +84,16 @@ Word 2013 ermöglicht ein einzelnes Inhaltssteuerelement in einer von drei mögl
 > [!NOTE]
 > Wenn nicht anders angegeben, gilt für die Darstellung der Visualisierung von Inhaltssteuerelementen in diesem Abschnitt, dass das Dokument nicht im **Entwurfsmodus** angezeigt wird. Sie legen den Anzeigemodus für ein Inhaltssteuerelement über das Dropdownlisten-Steuerelement **Anzeigen als** im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** fest. 
   
-**Abbildung 1: Das Dialogfeld „Eigenschaften von Inhaltssteuerelementen“**
+**Abbildung 1: Das Dialogfeld "Eigenschaften von Inhaltssteuerelementen"**
 
-![Im Dialogfeld Eigenschaften von Inhaltssteuerelement] (media/DK2_WordCC_Fig01.jpg "Im Dialogfeld Eigenschaften von Inhaltssteuerelement")
+![Dialogfeld zu Eigenschaften von Inhaltssteuerelementen](media/DK2_WordCC_Fig01.jpg "Dialogfeld zu Eigenschaften von Inhaltssteuerelementen")
   
-Sie können auch den Anzeigemodus für ein Inhaltssteuerelement mit dem Word 2013-Objektmodell (weiter unten in der [neuen Word 2013 Inhaltssteuerelement Objektmodellelemente](#WordCC_NewOM)) festlegen.
+Sie können den Anzeigemodus für ein Inhaltssteuerelement auch über das Word 2013-Objektmodell festlegen (das später unter [Neue Word 2013-Inhaltssteuerungs-Objektmodellelemente](#WordCC_NewOM) erläutert wird).
   
 ### <a name="bounding-box"></a>Umgebendes Feld
 <a name="WordCC_DefaultRendering"> </a>
 
-Das standardmäßige Rendering für Inhaltssteuerelementen in Word 2013 ist das Erscheinungsbild von Inhaltssteuerelementen beibehalten, wenn sie in Word 2007 und Word 2010 angezeigt werden. d. h., als umgebenden Feld. Wenn ein Inhaltssteuerelement festgelegt ist, als **Umgebenden Feld**, die Anzeige ändert sich je nach den folgenden Benutzerinteraktion anzeigen:
+Die Standardwiedergabe für Inhaltssteuerelemente in Word 2013 besteht darin, das Aussehen von Inhaltssteuerelementen wie in Word 2007 und Word 2010 beizubehalten, das heißt, sie als umgebendes Feld anzuzeigen. Wenn die Anzeige des Inhaltssteuerelements als **Umgebenden Feld** festgelegt ist, ändert sich die Anzeige je nach folgender Benutzerinteraktion:
   
 - Wenn das Inhaltssteuerelement nicht im Fokus steht, findet keine Visualisierung statt.
     
@@ -101,13 +101,13 @@ Das standardmäßige Rendering für Inhaltssteuerelementen in Word 2013 ist das 
     
 **Abbildung 2: Inhaltssteuerelement, wenn der Mauszeiger darüber bewegt wird**
 
-![Inhaltssteuerelement auf Maus über] (media/DK2_WordCC_Fig02.jpg "Inhaltssteuerelement auf Maus über")
+![Inhaltssteuerelement bei Mouseover](media/DK2_WordCC_Fig02.jpg "Inhaltssteuerelement bei Mouseover")
   
 - Wenn das Inhaltssteuerelement im Fokus steht (wenn der Benutzer das Inhaltssteuerelement auswählt), wird das Steuerelement als „umgebendes Feld“ angezeigt (mit einer Linie um den Inhalt und angezeigtem Titel, wenn ein Titel festgelegt wurde).
     
 **Abbildung 3: Inhaltssteuerelement mit Fokus**
 
-![Inhaltssteuerelement mit Fokus] (media/DK2_WordCC_Fig03.jpg "Inhaltssteuerelement mit Fokus")
+![Inhaltssteuerelement mit Fokus](media/DK2_WordCC_Fig03.jpg "Inhaltssteuerelement mit Fokus")
   
 ### <a name="startend-tags"></a>Start/Ende-Tags
 <a name="WordCC_StartEndTags"> </a>
@@ -116,7 +116,7 @@ Wenn die Anzeige des Inhaltssteuerelements als **Start/Ende-Tag** festgelegt ist
   
 **Abbildung 4: Anzeige von Inhaltssteuerelementen als Start/Ende-Tags**
 
-![Inhaltssteuerelement eingerichtet wird, um anzuzeigen, wie starten und Beenden von tags] (media/DK2_WordCC_Fig04.jpg "Inhaltssteuerelement eingerichtet wird, um anzuzeigen, wie starten und Beenden von tags")
+![Anzeige des Inhaltssteuerelements als Start/Ende-Tags](media/DK2_WordCC_Fig04.jpg "Anzeige des Inhaltssteuerelements als Start/Ende-Tags")
   
 ### <a name="none"></a>Keine
 <a name="WordCC_Invisible"> </a>
@@ -126,18 +126,18 @@ Wenn die Anzeige des Inhaltssteuerelements auf **Keine** festgelegt ist, wird da
 ### <a name="content-control-colorization"></a>Farbgebung für Inhaltssteuerelemente
 <a name="WordCC_CCColorization"> </a>
 
-Neben der Aktivierung einer anderen Art der Anzeige für ein Inhaltssteuerelement, hilft Word 2013 hinaus Ihnen die Farbe für ein Inhaltssteuerelement festgelegt. Legen Sie die Farbe eines Inhaltssteuerelements mithilfe der Schaltfläche **Farbe** im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** . 
+Word 2013 ermöglicht nicht nur eine andere Art der Darstellung für ein Inhaltssteuerelement, sondern hilft Ihnen auch, die Farbe für ein individuelles Inhaltssteuerelement festzulegen. Sie legen die Farbe eines Inhaltssteuerelements mithilfe der Schaltfläche **Farbe** im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** fest. 
   
-Sie können auch die Farbe eines Inhaltssteuerelements festlegen, indem Sie mit dem Word 2013-Objektmodell (weiter unten in der [neuen Word 2013 Inhaltssteuerelement Objektmodellelemente](#WordCC_NewOM)).
+Sie können die Farbe für ein Inhaltssteuerelement auch über das Word 2013-Objektmodell festlegen (das später unter [Neue Word 2013-Inhaltssteuerungs-Objektmodellelemente](#WordCC_NewOM) erläutert wird).
   
-**Abbildung 5: Das Dialogfeld „Eigenschaften von Inhaltssteuerelementen“**
+**Abbildung 5: Das Dialogfeld "Eigenschaften von Inhaltssteuerelementen"**
 
-![Im Dialogfeld Eigenschaften von Inhaltssteuerelement] (media/DK2_WordCC_Fig05.jpg "Im Dialogfeld Eigenschaften von Inhaltssteuerelement")
+![Dialogfeld zu Eigenschaften von Inhaltssteuerelementen](media/DK2_WordCC_Fig05.jpg "Dialogfeld zu Eigenschaften von Inhaltssteuerelementen")
   
 ### <a name="support-for-xml-mapping-for-rich-text-content-controls"></a>Unterstützung für die XML-Zuordnung für Rich-Text-Inhaltssteuerelemente
 <a name="WordCC_XMLMapping"> </a>
 
-Word 2013 können Sie die Inhalte von rich-Text-Inhaltssteuerelemente sowie Dokument Baustein-Inhaltssteuerelemente XML-Datenspeicher zuordnen. Zu diesem Zweck legen Sie die *XML-Zuordnung* für das Inhaltssteuerelement. Sie können diese Eigenschaft festlegen, mithilfe der vorhandenen **XMLMapping.SetMapping** -Methode im Objektmodell. Innerhalb der benutzerdefinierten XML-Komponente wird der benutzerdefinierten XML-Code als flat Open XML-Markup in einer Zeichenfolge konvertiert (mithilfe der standard-XML-Codierung), also, gespeichert als Textknoten in benutzerdefinierten XML-Komponente kann gespeichert werden. Die Zuordnung wird jedoch weiterhin die Einschränkung verfügen, die es nur erfolgreich zum Knoten oder Attribute Blätter zuordnen kann. 
+Word 2013 unterstützt Sie dabei, den Inhalt von Rich-Text-Inhaltssteuerelementen und Dokumentbaustein-Inhaltssteuerelementen dem XML-Datenspeicher zuzuordnen. Dafür legen Sie die *XML-Zuordnung* für das Inhaltssteuerelement fest. Sie können diese Eigenschaft durch Verwenden der vorhandenen **XMLMapping.SetMapping**-Methode im Objektmodell festlegen. In der benutzerdefinierten XML-Komponente wird der benutzerdefinierte XML-Code als flaches Open XML-Markup gespeichert, das in eine Zeichenfolge konvertiert wird (mithilfe der Standard-XML-Codierung), damit es als Textknoten in der benutzerdefinierten XML-Komponente gespeichert werden kann. Die Zuordnung unterliegt jedoch weiterhin der Einschränkung, dass die Zuordnung nur zu Blattknoten und Attributen erfolgreich durchgeführt werden kann. 
   
 > [!NOTE]
 > Rich-Text-Inhaltssteuerelemente können keine anderen Rich-Text-Inhaltssteuerelemente enthalten. Wenn eins in einem anderen vorhanden ist (z. B. aufgrund von Dateiformatänderungen, Kopieren und Einfügen usw.), wird das Steuerelement getrennt, bis es nicht mehr in einem zugeordneten Rich-Text-Steuerelement enthalten ist. 
@@ -147,25 +147,25 @@ Weitere Informationen zum Einrichten der XML-Zuordnung finden Sie im Abschnitt  
 ### <a name="supporting-repeating-content"></a>Unterstützung für wiederholte Inhalte
 <a name="WordCC_SupportingRepeating"> </a>
 
-Zusätzlich zur Visualisierung Verbesserungen und Unterstützung für XML-Zuordnung für rich-Text-Inhaltssteuerelemente fügt Word 2013 auch ein neues Inhaltssteuerelement, das Sie wiederholen die Inhalte ermöglicht. Das wiederholten Abschnitt Inhaltssteuerelement wird den Inhalt enthaltenen, einschließlich anderer Inhaltssteuerelemente wiederholt.
+Zusätzlich zu den Verbesserungen bei der Visualisierung und der Unterstützung für die XML-Zuordnung zu Rich-Text-Inhaltssteuerelementen bietet Word 2013 auch ein neues Inhaltssteuerelement, mit dem Sie Inhalte wiederholen können. Das Steuerelement für wiederkehrende Abschnittsinhalte wiederholt den darin enthaltenen Inhalt, einschließlich anderer Inhaltssteuerelemente.
   
 Sie fügen das Steuerelement für wiederkehrende Abschnittsinhalte um ganze Absätze oder Tabellenzeilen ein. Nachdem das Steuerelement einen Abschnitt umgibt, können Sie Kopien des Abschnitts über oder unter dem enthaltenen Abschnitt einfügen.
   
-**Abbildung 6: Kontextmenü des Steuerelements für wiederkehrende Inhaltsabschnitte**
+**Abbildung 6: Kontextmenü des Steuerelements für wiederkehrende Abschnittsinhalte**
 
-![Wiederholt Kontext] (media/DK2_WordCC_Fig06.jpg "Wiederholt Kontext")
+![Kontextmenü des Steuerelements für wiederkehrende Abschnittsinhalte](media/DK2_WordCC_Fig06.jpg "Kontextmenü des Steuerelements für wiederkehrende Abschnittsinhalte")
   
-Sie können den eingefügten Abschnitt mithilfe der entweder das Steuerelement auf das Ende des Inhaltssteuerelements (angezeigt als Schaltfläche mit einem Pluszeichen (![Pluszeichen (+)](media/DK2_WordCC_Fig06A.jpg "Pluszeichen (+)"))) oder indem Sie auf einen Befehl im Kontextmenü wiederholen, wie in Abbildung 6 dargestellt. Der wiederholte Inhalt wird einem separaten Abschnitt des Steuerelements können Sie einen Titel über das Dialogfeld **Eigenschaften von Inhaltssteuerelementen** zuweisen. 
+Sie können den eingefügten Abschnitt wiederholen, indem Sie entweder das Steuerelement am Ende des Inhaltssteuerelements verwenden (angezeigt als Schaltfläche mit einem Pluszeichen (![Pluszeichen](media/DK2_WordCC_Fig06A.jpg "Pluszeichen"))) oder indem Sie einen Befehl im Kontextmenü auswählen, wie in Abbildung 6 gezeigt. Der wiederkehrende Inhalt wird zu einem separaten Abschnitt des Steuerelements, dem Sie über das Dialogfeld **Eigenschaften von Inhaltssteuerelementen** einen Titel zuweisen können. 
   
-**Abbildung 7: Zuweisen eines Abschnittstitels im Dialogfeld „Eigenschaften von Inhaltssteuerelementen“**
+**Abbildung 7: Zuweisen eines Abschnittstitels im Dialogfeld "Eigenschaften von Inhaltssteuerelementen"**
 
-![Im Dialogfeld Eigenschaften von Inhaltssteuerelement] (media/DK2_WordCC_Fig07.jpg "Im Dialogfeld Eigenschaften von Inhaltssteuerelement")
+![Dialogfeld zu Eigenschaften von Inhaltssteuerelementen](media/DK2_WordCC_Fig07.jpg "Dialogfeld zu Eigenschaften von Inhaltssteuerelementen")
   
 Nachdem Sie dem Abschnitt einen Titel gegeben haben, können Benutzer den Abschnitt nach Namen hinzufügen oder löschen, wenn Sie die Option **Benutzern das Hinzufügen und Entfernen von Abschnitten erlauben** im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** auswählen. 
   
 **Abbildung 8: Verwenden des Kontextmenüs des Steuerelements für wiederkehrende Abschnittsinhalte zum Löschen eines Abschnitts**
 
-![Wiederholt Kontext] (media/DK2_WordCC_Fig08.jpg "Wiederholt Kontext")
+![Kontextmenü des Steuerelements für wiederkehrende Abschnittsinhalte](media/DK2_WordCC_Fig08.jpg "Kontextmenü des Steuerelements für wiederkehrende Abschnittsinhalte")
   
 Wenn ein wiederkehrender Abschnitt andere Inhaltssteuerelemente umgibt, werden die eingeschlossenen Inhaltssteuerelemente in jedem neuen Element wiederholt. Allerdings werden bei solchen Inhaltssteuerelementen die Inhalte auf Platzhaltertext zurückgesetzt. Es gibt zwei Ausnahmen, bei denen untergeordnete Steuerelementinhalte beibehalten werden: 
   
@@ -175,20 +175,20 @@ Wenn ein wiederkehrender Abschnitt andere Inhaltssteuerelemente umgibt, werden d
     
 **Abbildung 9: Steuerelement für wiederkehrende Abschnittsinhalte mit untergeordneten Steuerelementen vor Wiederholung**
 
-![Wiederholen Sie die wiederholungsabschnitts vor] (media/DK2_WordCC_Fig09.jpg "Wiederholen Sie die wiederholungsabschnitts vor")
+![Steuerelement für wiederkehrende Abschnittsinhalte vor Wiederholung](media/DK2_WordCC_Fig09.jpg "Steuerelement für wiederkehrende Abschnittsinhalte vor Wiederholung")
   
 **Abbildung 10: Steuerelement für wiederkehrende Abschnittsinhalte mit untergeordneten Steuerelementen nach Wiederholung**
 
-![Wiederholen Sie die wiederholungsabschnitts nach] (media/DK2_WordCC_Fig10.jpg "Wiederholen Sie die wiederholungsabschnitts nach")
+![Steuerelement für wiederkehrende Abschnittsinhalte nach Wiederholung](media/DK2_WordCC_Fig10.jpg "Steuerelement für wiederkehrende Abschnittsinhalte nach Wiederholung")
   
 ### <a name="repeating-section-content-controls-around-xml-mapped-controls"></a>Steuerelemente für wiederkehrende Abschnittsinhalte rund um per XML zugeordnete Steuerelemente
 <a name="WordCC_RepeatingSectionCCs"> </a>
 
-Für XML-Zuordnungen, die in einem wiederholten Abschnitt enthalten sind, ordnet Word 2013 diese wie folgt aus.
+XML-Zuordnungen, die in einem wiederholten Abschnitt enthalten sind, werden von Word 2013 wie folgt zugeordnet.
   
-Wenn die Zuordnung nicht mit einem Element in der Gruppe als Teil der Kette übergeordneten Knoten schneidet, die Bindung "absolute Bindung" und zeigt den gleichen Inhalt in alle Elemente in einem wiederholten Abschnitt.
+Wenn sich die Zuordnung nicht mit einem Element in dem Knoten überschneidet, der als Teil seiner übergeordneten Kette festgelegt ist, ist die Bindung eine "absolute Bindung" und zeigt denselben Inhalt in allen wiederholten Abschnittsinhalten an.
   
-Wenn die Zuordnung eines Elements in der Gruppe als Teil der Kette übergeordneten Knoten schneidet, wird die Bindung einer Bindung"relative", und wird wie folgt zugeordnet:
+Wenn sich die Zuordnung mit einem Element in dem Knoten überschneidet, der als Teil seiner übergeordneten Kette festgelegt ist, ist die Bindung eine "relative Bindung" und wird wie folgt erneut zugeordnet:
   
 - Die absolute Bindung für den Knoten wird bestimmt (dabei werden alle Abfrageausdrücke vereinfacht) – dies sollte bei der anfänglichen Zuordnung stattfinden.
     
@@ -211,14 +211,14 @@ Die folgenden Vorschläge für das Arbeiten mit Steuerelementen für wiederkehre
 ### <a name="working-with-repeating-section-content-controls-that-are-mapped-to-xml-data"></a>Arbeiten mit Steuerelementen für wiederkehrende Abschnittsinhalte, die XML-Daten zugeordnet sind
 <a name="WordCC_RepeatingSectionCCs"> </a>
 
-Beim Einfügen einer wiederholten Abschnitt Inhaltssteuerelement, das XML-Daten zugeordnet ist, jedes Mal, wenn die Benutzer das Dokument erneut öffnet, werden die Elemente in einem wiederholten Abschnitt, anhand der Informationen im Datenspeicher von Word neu erstellt. Auch wenn Sie das Dokument zu speichern, sind alle Änderungen, die der Benutzer in der Elemente in einem wiederholten Abschnitt im Dokument vornimmt, die auch in dem Datenspeicher zugeordnet werden nicht verloren.
+Wenn Sie ein Steuerelement für wiederkehrende Abschnittsinhalte einfügen, das XML-Daten zugeordnet ist, erstellt Word jedes Mal, wenn der Benutzer das Dokument neu öffnet, die wiederholten Abschnittselemente basierend auf den Informationen im Datenspeicher neu. Selbst wenn Sie das Dokument speichern, gehen alle Änderungen, die der Benutzer in den wiederholten Abschnittselementen im Dokument vornimmt, die nicht auch im Datenspeicher zugeordnet sind, verloren.
   
 Um dies zu verhindern, sollten Sie das Steuerelement für wiederkehrende Abschnittsinhalte sperren und für den Benutzer nur das Bearbeiten in nicht gesperrten untergeordneten Inhaltssteuerelementen erlauben, die ebenfalls dem XML-Code zugeordnet sind.
   
 ### <a name="binding-a-repeating-section-content-control-to-a-table"></a>Binden eines Steuerelements für wiederkehrende Abschnittsinhalte zu einer Tabelle
 <a name="WordCC_RepeatingSectionCCs"> </a>
 
-Wenn ein wiederholten Abschnitt Inhaltssteuerelement an eine Tabelle gebunden werden soll, legen Sie die Tabelle, und *Klicken Sie dann* das Einfügen wiederholter Abschnitt Inhaltssteuerelement und nicht umgekehrt. (Andernfalls wird nicht Sie nur die Tabelle auswählen können). 
+Wenn Sie ein Steuerelement für wiederkehrende Abschnittsinhalte zu einer Tabelle binden möchten, fügen Sie die Tabelle und *dann* das Steuerelement für wiederkehrende Abschnittsinhalte ein, nicht umgekehrt. (Andernfalls können Sie nicht nur die Tabelle auswählen). 
   
 ### <a name="nesting-repeating-section-content-controls-within-a-table"></a>Schachtelung von Steuerelementen für wiederkehrende Abschnittsinhalte innerhalb einer Tabelle
 <a name="WordCC_RepeatingSectionCCs"> </a>
@@ -236,27 +236,27 @@ Die folgenden Elemente wurden zum Open XML-WordprocessingML-Dateiformatschema hi
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|\<w:Appearance\>  <br/> |\<W:Appearance\> ist ein untergeordnetes Element des \<W:sdtPr\>.  <br/> Die folgenden Werte sind für das val-Attribut gültig:  <br/> \<W:Appearance Val = BoundingBox|-Tags hinzugefügtes Markup|ausgeblendet.  <br/> Der Standardwert ist boundingBox.  <br/> |
-|\<w:Color\>  <br/> |\<W:Color\> ist ein untergeordnetes Element des \<W:sdtPr\>.  <br/> Das Inhaltsmodell stimmt mit dem vorhandenen komplexen CT_Color-Typ überein. Der Standardwert ist die in Word 2010 verwendete Farbe.  <br/> |
+|\<w:appearance\>  <br/> |\<w:appearance\> ist ein untergeordnetes Element von \<w:sdtPr\>.  <br/> Die folgenden Werte sind für das val-Attribut gültig:  <br/> \<w:appearance val= boundingBox|tags|hidden.  <br/> Der Standardwert ist boundingBox.  <br/> |
+|\<w:color\>  <br/> |\<w:color\> ist ein untergeordnetes Element von \<w:sdtPr\>.  <br/> Das Inhaltsmodell stimmt mit dem vorhandenen komplexen CT_Color-Typ überein. Der Standardwert ist die in Word 2010 verwendete Farbe.  <br/> |
    
-## <a name="new-word-2013-content-control-object-model-members"></a>Neue Word 2013 Inhaltssteuerelement Elemente des Objektmodells
+## <a name="new-word-2013-content-control-object-model-members"></a>Neue Word 2013-Inhaltssteuerungs-Objektmodellelemente
 <a name="WordCC_NewOM"> </a>
 
-Mit dem neuen Verbesserungen und Ergänzungen von Inhaltssteuerelementen in Word 2013 wurde das Objektmodell für Word aktualisiert, um die programmgesteuerte Bearbeitung der neuen Features zu ermöglichen. Darüber hinaus haben auch die zugrunde liegenden Open XML-Dateiformat für Textverarbeitungsdokumenten geändert wurde.
+Mit den neuen Verbesserungen und Ergänzungen zu Inhaltssteuerelementen in Word 2013 wurde das Objektmodell für Word aktualisiert, um die programmgesteuerte Manipulation der neuen Funktionen zu ermöglichen. Darüber hinaus wurde auch das zugrunde liegende Open XML-Dateiformat für Textverarbeitungsdokumente geändert.
   
 In den folgenden Abschnitten finden Sie weitere Informationen zu den speziellen Objektmodelländerungen im Zusammenhang mit der jeweiligen Inhaltssteuerelementverbesserung.
   
 ### <a name="visualization-enhancements"></a>Verbesserungen der Visualisierung
 <a name="WordCC_VisEnhancements"> </a>
 
-Mehrere objektmodellergänzungen sind für Inhaltssteuerelement Visualisierung Verbesserungen in Word 2013 enthalten. In der folgenden Tabelle werden neue Elemente des **ContentControl** -Objekts für Visualisierung aufgelistet. 
+Word 2013 beinhaltet mehrere Objektmodellergänzungen für die Verbesserung der Visualisierung von Inhaltssteuerelementen. In der folgenden Tabelle sind neue Elemente des **ContentControl**-Objekts für die Visualisierung aufgeführt. 
   
 **Tabelle 2: Neue ContentControl-Objektelemente**
 
-|**Member**|**Beschreibung**|
+|**Element**|**Beschreibung**|
 |:-----|:-----|
-|. **Darstellung** als **WdContentControlAppearance** <br/> |Ruft die Visualisierung des Inhaltssteuerelements ab oder legt sie fest.  <br/> |
-|. **Farbe** als **WdColor** <br/> |Ruft die Farbe des Inhaltssteuerelements ab oder legt sie fest.  <br/> |
+|. .**Appearance** als **WdContentControlAppearance** <br/> |Ruft die Visualisierung des Inhaltssteuerelements ab oder legt sie fest.  <br/> |
+|. **Color** als **WdColor** <br/> |Ruft die Farbe des Inhaltssteuerelements ab oder legt sie fest.  <br/> |
    
 In der folgenden Tabelle sind Konstanten in der neuen **WdContentControlAppearance**-Enumeration aufgeführt. 
   
@@ -310,7 +310,7 @@ End Sub
 ### <a name="xml-mapping"></a>XML-Zuordnung
 <a name="WordCC_XMLMappingOM"> </a>
 
-Keine Ergänzungen wurden dem Objektmodell von Word 2013 vorgenommen, rich-Text-Zuordnung, die XML-Knoten im Datenspeicher Dokument einzeln zu autorisieren. Verwenden Sie stattdessen das vorhandene Objektmodell, um ein rich-Text-Inhaltssteuerelement einem XML-Knoten im Datenspeicher Dokument zuzuordnen. Darüber hinaus wurden keine Änderungen an der zugrunde liegenden Open XML-Datei Format WordprocessingML-Schema als Teil der neu enthalten rich-Text-Inhaltssteuerelement Unterstützung speziell für XML-Zuordnung vorgenommen.
+Es wurden keine Ergänzungen am Word 2013-Objektmodell vorgenommen, um die Rich-Text-Zuordnung zu XML-Knoten im Dokumentdatenspeicher aufzunehmen. Verwenden Sie stattdessen das vorhandene Objektmodell, um ein Rich-Text-Inhaltssteuerelement einem XML-Knoten im Dokumentdatenspeicher zuzuordnen. Zudem wurden keine Änderungen an dem zugrunde liegenden WordprocessingML-Schema des Open XML-Dateiformats als Teil der neu eingefügten Unterstützung für Rich-Text-Inhaltssteuerelemente speziell für die XML-Zuordnung vorgenommen.
   
 #### <a name="code-sample"></a>Codebeispiel
 
@@ -345,20 +345,20 @@ Das Steuerelement für wiederkehrende Abschnittsinhalte steht im Objektmodell zu
   
 **Tabelle 4: ContentControl-Objektelemente**
 
-|**Member**|**Beschreibung**|
+|**Element**|**Beschreibung**|
 |:-----|:-----|
-|**AllowInsertDeleteSection** als **Boolean** <br/> |Ruft ab oder legt fest, ob Benutzer können Abschnitte hinzufügen oder aus dem Inhaltssteuerelement entfernen mithilfe der Benutzeroberfläche. Wenn diese Eigenschaft für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt ist aufgerufen wird, wird der Aufruf fehlschlägt, wobei die folgende Fehlermeldung angezeigt: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Inhaltssteuerelemente."  <br/> |
-|**RepeatingSectionItemTitle** als **String** <br/> |Dient zum Abrufen oder Festlegen des Namens wiederholter Abschnitt Elemente im Kontextmenü verwendet. Wenn diese Eigenschaft für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt ist aufgerufen wird, schlägt der Aufruf mit: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Inhaltssteuerelemente."  <br/> |
-|**InsertRepeatingSectionItemBefore** als **ContentControl** <br/> |Fügt ein wiederholten Abschnitt Element vor dem aktuellen Element und gibt das neue wiederholten Abschnitt-Element zurück. Wenn diese Methode für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt-Element ist aufgerufen wird, schlägt der Aufruf mit: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Element von Inhaltssteuerelementen."  <br/> |
-|**InsertRepeatingSectionItemAfter** als **ContentControl** <br/> |Fügt ein wiederholten Abschnitt-Element nach dem aktuellen Element und gibt das neue wiederholten Abschnitt-Element zurück. Wenn diese Methode für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt-Element ist aufgerufen wird, schlägt der Aufruf mit: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Element von Inhaltssteuerelementen."  <br/> |
+|**AllowInsertDeleteSection** als **Boolean** <br/> |Ruft ab oder legt fest, ob Benutzer Abschnitte mithilfe der Benutzeroberfläche zum Inhaltssteuerelement hinzufügen oder daraus entfernen können. Wenn diese Eigenschaft für ein Steuerelement aufgerufen wird, das nicht dem Abschnittsinhaltstyp entspricht, schlägt der Aufruf mit der folgenden Fehlermeldung fehl: "Diese Eigenschaft kann nur mit Inhaltssteuerelementen für wiederholte Abschnitte verwendet werden."  <br/> |
+|**RepeatingSectionItemTitle** als **String** <br/> |Ermöglicht das Abrufen oder Festlegen des Namens von wiederholten Abschnittselementen, der im Kontextmenü verwendet wird. Wenn diese Eigenschaft für ein Steuerelement aufgerufen wird, das nicht dem Abschnittsinhaltstyp entspricht, schlägt der Aufruf mit der folgenden Fehlermeldung fehl: "Diese Eigenschaft kann nur mit Inhaltssteuerelementen für wiederholte Abschnitte verwendet werden."  <br/> |
+|**InsertRepeatingSectionItemBefore** als **ContentControl** <br/> |Fügt ein wiederholtes Abschnittselement vor dem aktuellen Element hinzu und gibt das neue wiederholte Abschnittselement zurück. Wenn diese Methode für ein Steuerelement aufgerufen wird, das nicht dem Typ wiederholtes Abschnittselement entspricht, schlägt der Aufruf mit der folgenden Fehlermeldung fehl: "Diese Eigenschaft kann nur mit Inhaltssteuerelementen für wiederholte Abschnittselement verwendet werden."  <br/> |
+|**InsertRepeatingSectionItemAfter** als **ContentControl** <br/> |Fügt ein wiederholtes Abschnittselement nach dem aktuellen Element hinzu und gibt das neue wiederholte Abschnittselement zurück. Wenn diese Methode für ein Steuerelement aufgerufen wird, das nicht dem Typ wiederholtes Abschnittselement entspricht, schlägt der Aufruf mit der folgenden Fehlermeldung fehl: "Diese Eigenschaft kann nur mit Inhaltssteuerelementen für wiederholte Abschnittselement verwendet werden."  <br/> |
    
-In Tabelle 5 sind die wichtigsten Elemente des  **RepeatingSectionItem**-Objekts aufgeführt. 
+In Tabelle 5 sind die wichtigsten Elemente des **RepeatingSectionItem**-Objekts aufgeführt. 
   
 **Tabelle 5: RepeatingSectionItem-Objektelemente**
 
-|**Member**|**Beschreibung**|
+|**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Range** als **Range** <br/> |Gibt den Bereich des angegebenen wiederholten Abschnitt Elements, ausgenommen die Start- und Endtags zurück.  <br/> |
+|**Range** als **Range** <br/> |Gibt den Bereich des angegebenen wiederholten Abschnittselements ohne Start- und Ende-Tags zurück.  <br/> |
 |**Delete** <br/> |Löscht das angegebene wiederholte Abschnittselement.  <br/> |
 |**InsertItemAfter** als **RepeatingSectionItem** <br/> |Fügt ein wiederholtes Abschnittselement nach dem angegebenen Element hinzu und gibt das neue Element zurück.  <br/> |
 |**InsertItemBefore** als **RepeatingSectionItem** <br/> |Fügt ein wiederholtes Abschnittselement vor dem angegebenen Element hinzu und gibt das neue Element zurück.  <br/> |
@@ -367,7 +367,7 @@ In Tabelle 6 sind die wichtigsten Elemente des **RepeatingSectionItemColl**-Obje
   
 **Tabelle 6: RepeatingSectionItemColl-Objektelemente**
 
-|**Member**|**Beschreibung**|
+|**Element**|**Beschreibung**|
 |:-----|:-----|
 |**Item** als **RepeatingSectionItem** <br/> |Gibt ein einzelnes wiederholtes Abschnittselement zurück.  <br/> |
    
@@ -424,7 +424,7 @@ End Sub
 ### <a name="open-xml-file-format-changes-for-repeating-section-content-controls"></a>Open XML-Dateiformatänderungen für Steuerelemente für wiederkehrende Abschnittsinhalte
 <a name="WordCC_RepeatingSection"> </a>
 
-Die Datei Format Darstellung eines wiederholten Abschnitt Inhaltssteuerelements verwendet die Elementnamen Werte im Allgemeinen usw. als das vorhandene XML-Markup; jedoch die \<Sdt\> Element, das den äußeren wiederholten Abschnitt Container darstellt im Word 2013-Namespace vorhanden ist, um die Kompatibilität mit früheren Versionen von Word sicherzustellen.
+Die Dateiformatdarstellung eines Steuerelements für wiederkehrende Abschnittsinhalte verwendet in der Regel dieselben Elementnamen, Werte usw. wie das vorhandene XML-Markup. Allerdings ist das \<sdt\>-Element, das den äußeren wiederholten Abschnittscontainer darstellt, im Word 2013-Namespace vorhanden, um die Kompatibilität mit früheren Versionen von Word sicherzustellen.
   
 Die einzelnen wiederholten Elemente im Steuerelement für wiederkehrende Abschnittsinhalte (die jedes einzelnes Element umgeben) werden über die vorhandene WordprocessingML-Darstellung als Rich-Text-Inhaltssteuerelemente gespeichert. In Tabelle 8 sind die neuen Elemente im WordprocessingML-Schema für Steuerelemente für wiederkehrende Abschnittsinhalte aufgeführt.
   
@@ -434,7 +434,7 @@ Die einzelnen wiederholten Elemente im Steuerelement für wiederkehrende Abschni
 |:-----|:-----|
 |\<w15:repeatingSection\>  <br/> |Gibt ein Steuerelement für wiederkehrende Abschnittsinhalte an. Dieses Element schließt sich mit allen anderen Steuerelementtypen gegenseitig aus und verfügt nicht über untergeordnete Elemente oder Attribute.  <br/> |
 |\<w15:repeatingSectionItem\>  <br/> |Gibt ein Steuerelement für wiederkehrende Abschnittsinhaltselemente an. Dieses Element schließt sich mit allen anderen Steuerelementtypen gegenseitig aus und verfügt nicht über untergeordnete Elemente oder Attribute.  <br/> |
-|\<w15:doNotAllowInsertDeleteSection\>  <br/> |Gibt an, dass der Benutzer kann nicht hinzufügen oder Löschen von Abschnitten mithilfe der Benutzeroberfläche in Word 2013.  <br/> |
+|\<w15:doNotAllowInsertDeleteSection\>  <br/> |Gibt an, dass der Benutzer keine Abschnitte mithilfe der Benutzeroberfläche in Word 2013 hinzufügen oder löschen kann.  <br/> |
 |\<w15:sectionTitle\>  <br/> |Gibt den Namen von wiederholten Abschnittselementen an (und wird im Kontextmenü verwendet, wenn das Steuerelement ausgewählt wird).  <br/> |
    
 
