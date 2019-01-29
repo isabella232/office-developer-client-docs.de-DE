@@ -3,50 +3,50 @@ title: Dateiformat von MapiSvc.inf
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b48eda17-83a8-4dc4-85c8-4ca827d13d25
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 726d424b6cf8d3141b36c3b61a38a6928277ec2a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 934bb491c0521b1d76d5400aac4728fbd34ba625
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567174"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700385"
 ---
 # <a name="file-format-of-mapisvcinf"></a>Dateiformat von MapiSvc.inf
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Datei "MapiSvc.inf" fungiert als MAPI-Nachricht Dienstkonfigurationsinformationen zur Konfiguration der zentralen Datenbank. MapiSvc.inf enthält Informationen zu den einzelnen die Message-Dienste auf der Arbeitsstation, Informationen zu den Dienstanbieter, die für jeden Nachrichtendienst gehören, und Informationen zu MAPI-Subsystems installiert. MapiSvc.inf ist die primäre Informationsquelle für Profile. D. h., wenn ein neues Profil erstellt wird oder eine vorhandene geändert, relevanten Informationen für jeden Nachrichtendienst oder Dienstanbieter aus MapiSvc.inf kopiert wird. 
+Die Datei "MapiSvc.inf" fungiert als zentrale Datenbank für die MAPI-Nachrichtendienst-Konfigurationsinformation. MapiSvc.inf enthält Informationen zu jedem Nachrichtendienst auf der Arbeitsstation, Informationen zu den Dienstanbietern, die zu dem jeweiligen Nachrichtendienst gehören, und Informationen zum MAPI-Subsystem. MapiSvc.inf ist die primäre Informationsquelle für Profile. D. h., wenn ein neues Profil erstellt oder ein vorhandenes geändert wird, werden die relevanten Informationen für jeden Nachrichtendienst oder Dienstanbieter aus MapiSvc.inf kopiert. 
   
-MapiSvc.inf ist in verknüpften hierarchische Abschnitte unterteilt:
+MapiSvc.inf wird in verknüpfte hierarchische Abschnitte unterteilt:
   
-1. Abschnitt mit Informationen, die für alle Profile gilt. In diesem Abschnitt besteht aus drei Teilen:
+1. Ein Abschnitt, der Informationen zu allen Profilen enthält. Dieser Abschnitt besteht aus drei Teilen:
     
-   - Bereitstellen von Links zu allen der nachfolgenden Nachricht Service Abschnitte Abschnitt **[Services]** . 
+   - Der **[Services]**-Abschnitt bietet Links zu den jeweiligen nachfolgenden Nachrichtendienst-Abschnitten. 
     
-   - Mit Informationen zum Abschnitt **[Help File Mappings]** . HLP-Dateien, die von den Diensten für Nachricht bereitgestellt. 
+   - Der **[Help File Mappings]**-Abschnitt enthält Informationen zu .HLP-Dateien, die von Nachrichtendiensten bereitgestellt werden. 
     
-   - [Default] Sie im Abschnitt **Dienste** Auflisten von Message-Dienste, die eine Standardinstallation bilden. 
+   - Im **[Default Services]**-Abschnitt sind Nachrichtendienste aufgeführt, die eine Standardinstallation bilden. 
     
-2. Abschnitt mit Informationen, die für einzelne Message Dienste gilt. Einträge in den folgenden Abschnitten finden Sie Links zu nachfolgenden Service Provider Abschnitte.
+2. Ein Abschnitt, der Informationen zu einzelnen Nachrichtendiensten enthält. Die Einträge in diesen Abschnitten enthalten Links zu nachfolgenden Dienstanbieter-Abschnitten.
     
-3. Abschnitt mit Informationen, die auf einzelne-Dienstanbieter in einem Nachrichtendienst angewendet wird.
+3. Ein Abschnitt, der Informationen zu einzelnen Nachrichtenanbietern eines Nachrichtendienstes enthält.
     
-Die folgende Abbildung zeigt die Organisation der einer typischen Datei "MapiSvc.inf". Es gibt drei Message-Dienste: AB, MsgService und MS. Der Name der rechts vom Gleichheitszeichen auf für jeden Nachrichtendienst ist Anzeigename für den Dienst. Jede Messagingdiensts verfügt über einen eigenen Abschnitt an anderer Stelle in der Datei, die mit einem oder mehreren Service Provider Abschnitten verknüpft ist. Es ist ein Dienst Anbieterabschnitt für jede Dienstanbieter, die den Dienst gehört. Die AB und MS Message-Dienste sind für die einmalige Dienste, während drei-Dienstanbieter mit dem Dienst MsgService gehören.
+Die folgende Abbildung zeigt den Aufbau einer typischen MapiSvc.inf-Datei. Es gibt drei Nachrichtendienste: AB, MsgService und MS. Der Name auf der rechten Seite des Gleichheitszeichens für jeden Nachrichtendienst ist der Anzeigename des Dienstes. Jeder Nachrichtendienst besitzt einen eigenen Abschnitt an einer anderen Stelle in der Datei, der mit einem oder mehreren Dienstanbieter-Abschnitten verknüpft ist. Es gibt einen Dienstanbieter-Abschnitt für jeden Dienstanbieter, der dem Nachrichtendienst angehört. Die Nachrichtendienste AB und MS sind Einzelanbieterdienste, während drei Dienstanbieter zum MsgService gehören.
   
 **Organisation der Datei "MapiSvc.inf"**
   
-![Organisation der Datei MapiSvc.inf] (media/amapi_30.gif "Organisation der Datei MapiSvc.inf")
+![Organisation der Datei "MapiSvc.inf"](media/amapi_30.gif "Organisation der Datei \"MapiSvc.inf\"")
   
-MAPI bietet eine skeletal Version der Datei "MapiSvc.inf" mit den Einträgen für die MAPI-Subsystems. Jede Nachricht Service Implementierer fügt Einträge, die sowohl für ihren Dienst und der Dienstanbieter, die ihren Dienst angehören, geeignet sind. Einige der Einträge sind erforderlich, während andere optional sind. Beispielsweise erfordert MAPI an, dass Sie den Namen und Pfad der einzelnen-Dienstanbieter in Ihrer Messagingdiensts angeben. Sie können nicht ohne diese Informationen geladen werden.
+MAPI bietet eine strukturierte Version der MapiSvc.inf-Datei, die die Einträge für das MAPI-Teilsystem enthält. Jeder Nachrichtendienstimplementierer fügt Einträge hinzu, die sowohl für den Dienst als auch die Dienstanbieter, die dem Dienst angehören, maßgeblich sind. Einige Einträge sind erforderlich, während andere optional sind. MAPI erfordert z. B., dass Sie den Namen und Pfad jedes Dienstanbieters in Ihrem Nachrichtendienst angeben. Ohne diese Informationen können sie nicht geladen werden.
   
-Sie können entweder im Abschnitt erforderlichen und optionalen Informationen für den Nachrichtendienst und/oder die Service Provider Abschnitte hinzufügen. Hier können Sie die Informationen zur Beschreibung Ihrer Messagingdiensts einfügen, hängt von der Anzahl der Dienstanbieter im Dienst. Da diese Informationen auf jeder Dienstanbieter im Dienst angewendet wird, müssen Sie es für alle Anbieter vornehmen. Speichern Sie sie im Abschnitt Nachricht Dienst, der die bevorzugte Option oder in allen Abschnitten Service Provider. Speichern Sie Informationen, sobald vermeiden Sie unnötige Replikation und die Notwendigkeit, mehrere Kopien synchronisiert.
+Sie können erforderliche und optionale Informationen im Abschnitt für Ihren Nachrichtendienst und/oder in den Dienstanbieter-Abschnitten hinzufügen. Wo Sie die Informationen zur Beschreibung Ihres Nachrichtendienstes ablegen, hängt von der Anzahl der Dienstanbieter im Dienst ab. Da diese Informationen für jeden Dienstanbieter im Dienst gelten, müssen Sie für alle Anbieter zugänglich sein. Speichern Sie sie im Nachrichtendienst-Abschnitt, der bevorzugten Option oder in allen Dienstanbieter-Abschnitten. Speichern Sie Informationen einmal, um unnötige Replikation zu vermeiden und zu verhindern, dass mehrere Kopien synchronisiert werden müssen.
   
-Speichern Sie alle Informationen für den Dienst Nachricht, wenn Ihre Messagingdiensts einen einzigen Anbieter-Dienst ist in den Abschnitt für den Dienstanbieter nicht im Abschnitt für den Dienst. Zugreifen auf den Bereich Service Provider ist schneller und direkter als den Zugriff auf den Bereich Message Service. 
+Wenn Ihr Nachrichtendienst ein Einzelanbieterdienst ist, speichern Sie alle Informationen für den Nachrichtendienst im Abschnitt für den Dienstanbieter und nicht im Abschnitt für den Dienst. Der Zugriff auf den Dienstanbieter-Abschnitt erfolgt schneller und direkter als der Zugriff auf den Nachrichtendienst-Abschnitt. 
   
-Speichern Sie nur öffentliche Konfigurationsdaten in der Datei "MapiSvc.inf". Informationen, die private oder erfordert zusätzliche Schutz, beispielsweise Kennwörtern oder andere Anmeldeinformationen sollte nicht in der Datei aufgenommen werden. Stattdessen Wahl, entweder keine Informationen dieses Typs in allen Speichern oder als sicheren Eigenschaften im Benutzerprofil aufbewahren. Schützen von Eigenschaften haben integrierten Schutzfeatures wie beispielsweise Verschlüsselung.
+Speichern Sie nur öffentliche Konfigurationsdaten in der MapiSvc.inf-Datei. Informationen, die privat sind oder zusätzlichen Schutz erfordern, wie z. B. Kennwörter oder andere Anmeldeinformationen, sollten in dieser Datei nicht enthalten sein. Speichern Sie entweder gar keine Informationen dieser Art oder bewahren Sie sie im Profil als sichere Eigenschaften auf. Sichere Eigenschaften verfügen über integrierte Schutzfunktionen wie Verschlüsselung.
   
 
