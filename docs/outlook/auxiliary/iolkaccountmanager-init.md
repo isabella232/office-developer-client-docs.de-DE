@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0e5ffb61-1469-bc91-f237-27d1156179cd
 description: Initialisiert den Kontomanager für die Verwendung.
-ms.openlocfilehash: 621c6a73ab2bcbdff17b87ce15af8b4e0c2e1e24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5a643a4636251afc98750be8acf47cd3bdab3847
+ms.sourcegitcommit: b361919ae2d3ac000d9fcaa3030713df7062ecd4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791089"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "29715340"
 ---
 # <a name="iolkaccountmanagerinit"></a>IOlkAccountManager::Init
 
@@ -43,7 +43,9 @@ _dwFlags_
    - **ACCT_INIT_NO_STORES_CHECK** – verhindert, dass ein Konto (beispielsweise ein IMAP-Konto) synchronisieren mit einer zugeordneten Informationsspeicher. 
     
    - **ACCT_INIT_NOSYNCH_MAPI_ACCTS** – verhindert, dass MAPI-Dienste nicht mit Konten synchronisiert. 
-    
+   
+   - **ACCT_INIT_NO_NOTIFICATIONS** – verhindert, dass der Konto-Manager abfangen Broadcastmeldungen für andere Anwendungen vorgesehen. 
+   
    - **OLK_ACCOUNT_NO_FLAGS** – synchronisiert MAPI-Dienste mit Konten. 
     
 ## <a name="return-values"></a>Rückgabewerte
