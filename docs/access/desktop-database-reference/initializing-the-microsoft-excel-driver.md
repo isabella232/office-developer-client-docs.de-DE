@@ -11,22 +11,22 @@ f1_keywords:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: 12fb79f459024ed113007e6f764945ca9564cb3c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.openlocfilehash: cec7890385e5730831cea9241278511d88b6f3a1
+ms.sourcegitcommit: 8ead5b5501f59c108cf02969070be21f7fc52467
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712932"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30135747"
 ---
-# <a name="initializing-the-microsoft-excel-driver"></a><span data-ttu-id="b9736-102">Initialisieren des Microsoft Excel-Treibers</span><span class="sxs-lookup"><span data-stu-id="b9736-102">Initializing the Microsoft Excel driver</span></span>
+# <a name="initializing-the-microsoft-excel-driver"></a><span data-ttu-id="1c3ed-102">Initialisieren des Microsoft Excel-Treibers</span><span class="sxs-lookup"><span data-stu-id="1c3ed-102">Initializing the Microsoft Excel driver</span></span>
 
-<span data-ttu-id="b9736-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="b9736-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="1c3ed-103">**Gilt für**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="1c3ed-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="b9736-104">Bei der Installation des Excel-Treibers schreibt das Setupprogramm Standardwerte der Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate.</span><span class="sxs-lookup"><span data-stu-id="b9736-104">When you install the Excel driver, the Setup program writes a set of default values to the Windows Registry in the Engines and ISAM Formats subkeys.</span></span> <span data-ttu-id="b9736-105">Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung.</span><span class="sxs-lookup"><span data-stu-id="b9736-105">You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings.</span></span> <span data-ttu-id="b9736-106">In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für die Microsoft Excel-Datenbanktreibers beschrieben.</span><span class="sxs-lookup"><span data-stu-id="b9736-106">The following sections describe initialization and ISAM Format settings for the Microsoft Excel database driver.</span></span>
+<span data-ttu-id="1c3ed-104">Wenn Sie den Excel-Treiber installieren, schreibt das Setup Programm in der Unterschlüssel Engines-und ISAM-Formate in der Windows-Registrierung eine Reihe von Standardwerten.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-104">When you install the Excel driver, the Setup program writes a set of default values to the Windows Registry in the Engines and ISAM Formats subkeys.</span></span> <span data-ttu-id="1c3ed-105">Sie sollten diese Einstellungen nicht direkt ändern; Verwenden Sie das Setupprogramm für Ihre Anwendung, um diese Einstellungen hinzuzufügen, zu entfernen oder zu ändern.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-105">You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings.</span></span> <span data-ttu-id="1c3ed-106">In den folgenden Abschnitten werden Initialisierungs-und ISAMformat-Einstellungen für den Microsoft Excel-Datenbanktreiber beschrieben.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-106">The following sections describe initialization and ISAM Format settings for the Microsoft Excel database driver.</span></span>
 
-## <a name="excel-initialization-settings"></a><span data-ttu-id="b9736-107">Initialisierungseinstellungen für Excel</span><span class="sxs-lookup"><span data-stu-id="b9736-107">Excel initialization settings</span></span>
+## <a name="excel-initialization-settings"></a><span data-ttu-id="1c3ed-107">Excel-Initialisierungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="1c3ed-107">Excel initialization settings</span></span>
 
-<span data-ttu-id="b9736-108">Die **Konnektivitätsmodul für Access\\Module\\Excel** Ordner enthält initialisierungseinstellungen für Aceexcl.dll-Treiber für den externen Zugriff zu Microsoft Excel-Arbeitsblättern verwendet.</span><span class="sxs-lookup"><span data-stu-id="b9736-108">The **Access Connectivity Engine\\Engines\\Excel** folder includes initialization settings for the Aceexcl.dll driver, used for external access to Microsoft Excel worksheets.</span></span> <span data-ttu-id="b9736-109">Standardeinstellungen für die Einträge in diesem Ordner sind im folgenden Beispiel dargestellt.</span><span class="sxs-lookup"><span data-stu-id="b9736-109">Typical settings for the entries in this folder are shown in the following example.</span></span>
+<span data-ttu-id="1c3ed-108">Der **Excel-Ordner\\Access\\Connectivity Engine Engines** enthält Initialisierungseinstellungen für den Aceexcl. dll-Treiber, der für den externen Zugriff auf Microsoft Excel-Arbeitsblätter verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-108">The **Access Connectivity Engine\\Engines\\Excel** folder includes initialization settings for the Aceexcl.dll driver, used for external access to Microsoft Excel worksheets.</span></span> <span data-ttu-id="1c3ed-109">Typische Einstellungen für die Einträge in diesem Ordner werden im folgenden Beispiel gezeigt.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-109">Typical settings for the entries in this folder are shown in the following example.</span></span>
 
 ```vb
     win32=<path>\ Aceexcl.dll  
@@ -40,7 +40,7 @@ ms.locfileid: "28712932"
     FirstRowHasNames=Yes
 ```
 
-<span data-ttu-id="b9736-110">Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Excel wie folgt.</span><span class="sxs-lookup"><span data-stu-id="b9736-110">The Microsoft Access database engine uses the Excel folder entries as follows.</span></span>
+<span data-ttu-id="1c3ed-110">Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Excel wie folgt.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-110">The Microsoft Access database engine uses the Excel folder entries as follows.</span></span>
 
 <table>
 <colgroup>
@@ -49,37 +49,37 @@ ms.locfileid: "28712932"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="b9736-111">Eintrag</span><span class="sxs-lookup"><span data-stu-id="b9736-111">Entry</span></span></p></th>
-<th><p><span data-ttu-id="b9736-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b9736-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="1c3ed-111">Eintrag</span><span class="sxs-lookup"><span data-stu-id="1c3ed-111">Entry</span></span></p></th>
+<th><p><span data-ttu-id="1c3ed-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1c3ed-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-113">Win32</span><span class="sxs-lookup"><span data-stu-id="b9736-113">win32</span></span></p></td>
-<td><p><span data-ttu-id="b9736-p103">Der Speicherort von msexcl40.dll. Der vollständige Pfad wird bei der Installation festgelegt. Die Werte sind vom Typ REG_SZ.</span><span class="sxs-lookup"><span data-stu-id="b9736-p103">The location of msexcl40.dll. The full path is determined at the time of installation. Values are of type REG_SZ.</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-113">Win32</span><span class="sxs-lookup"><span data-stu-id="1c3ed-113">win32</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-p103">Der Speicherort von msexcl40.dll. Der vollständige Pfad wird bei der Installation festgelegt. Die Werte sind vom Typ REG_SZ.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-p103">The location of msexcl40.dll. The full path is determined at the time of installation. Values are of type REG_SZ.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b9736-117">TypeGuessRows</span><span class="sxs-lookup"><span data-stu-id="b9736-117">TypeGuessRows</span></span></p></td>
-<td><p><span data-ttu-id="b9736-118">Die Anzahl der Zeilen für den Datentyp überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="b9736-118">The number of rows to be checked for the data type.</span></span> <span data-ttu-id="b9736-119">Der Datentyp ist die maximale Anzahl von Arten von Daten anhand.</span><span class="sxs-lookup"><span data-stu-id="b9736-119">The data type is determined given the maximum number of kinds of data found.</span></span> <span data-ttu-id="b9736-120">Wenn eine Tie vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt: Zahl, Währung, Datum, Text, Boolean.</span><span class="sxs-lookup"><span data-stu-id="b9736-120">If there is a tie, the data type is determined in the following order: Number, Currency, Date, Text, Boolean.</span></span> <span data-ttu-id="b9736-121">Wenn Daten, die nicht den Datentyp für die Spalte ermittelten übereinstimmt gefunden werden, wird es als einen <strong>Null</strong> -Wert zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b9736-121">If data is encountered that does not match the data type guessed for the column, it is returned as a <strong>Null</strong> value.</span></span> <span data-ttu-id="b9736-122">Beim Import Wenn eine Spalte gemischte Datentypen wurde wird die gesamte Spalte gemäß der ImportMixedTypes-Einstellung umgewandelt werden.</span><span class="sxs-lookup"><span data-stu-id="b9736-122">On import, if a column has mixed data types, the entire column will be cast according to the ImportMixedTypes setting.</span></span> <span data-ttu-id="b9736-123">Die Standardanzahl von Zeilen zu überprüfenden ist 8.</span><span class="sxs-lookup"><span data-stu-id="b9736-123">The default number of rows to be checked is 8.</span></span> <span data-ttu-id="b9736-124">Die Werte sind vom Typ REG_DWORD.</span><span class="sxs-lookup"><span data-stu-id="b9736-124">Values are of type REG_DWORD.</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-117">TypeGuessRows</span><span class="sxs-lookup"><span data-stu-id="1c3ed-117">TypeGuessRows</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-118">Die Anzahl der Zeilen, die für den Datentyp überprüft werden sollen.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-118">The number of rows to be checked for the data type.</span></span> <span data-ttu-id="1c3ed-119">Der Datentyp wird anhand der maximalen Anzahl von Datentypen ermittelt.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-119">The data type is determined given the maximum number of kinds of data found.</span></span> <span data-ttu-id="1c3ed-120">Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt: Number, Currency, Date, Text, Boolean.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-120">If there is a tie, the data type is determined in the following order: Number, Currency, Date, Text, Boolean.</span></span> <span data-ttu-id="1c3ed-121">Wenn Daten gefunden werden, die nicht mit dem für die Spalte erkannten Datentyp übereinstimmen, wird er als <strong>null</strong> -Wert zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-121">If data is encountered that does not match the data type guessed for the column, it is returned as a <strong>Null</strong> value.</span></span> <span data-ttu-id="1c3ed-122">Wenn eine Spalte beim Importieren gemischte Datentypen enthält, wird die gesamte Spalte gemäß der ImportMixedTypes-Einstellung umgewandelt.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-122">On import, if a column has mixed data types, the entire column will be cast according to the ImportMixedTypes setting.</span></span> <span data-ttu-id="1c3ed-123">Die standardmäßige Anzahl der zu überprüfenden Zeilen ist 8.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-123">The default number of rows to be checked is 8.</span></span> <span data-ttu-id="1c3ed-124">Die Werte sind vom Typ REG_DWORD.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-124">Values are of type REG_DWORD.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-125">ImportMixedTypes</span><span class="sxs-lookup"><span data-stu-id="b9736-125">ImportMixedTypes</span></span></p></td>
-<td><p><span data-ttu-id="b9736-p105">Mögliche Werte sind MajorityType und Text. Mit MajorityType werden Spalten mit gemischten Datentypen beim Importieren in den vorherrschenden Datentyp konvertiert. Mit Text werden Spalten mit gemischten Datentypen beim Importieren in Text konvertiert. Die Standardeinstellung ist Text. Die Werte sind vom Typ REG_SZ.</span><span class="sxs-lookup"><span data-stu-id="b9736-p105">Can be set to MajorityType or Text. If set to MajorityType, columns of mixed data types will be cast to the predominate data type on import. If set to Text, columns of mixed data types will be cast to Text on import. The default is Text. Values are of type REG_SZ.</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-125">ImportMixedTypes</span><span class="sxs-lookup"><span data-stu-id="1c3ed-125">ImportMixedTypes</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-p105">Mögliche Werte sind MajorityType und Text. Mit MajorityType werden Spalten mit gemischten Datentypen beim Importieren in den vorherrschenden Datentyp konvertiert. Mit Text werden Spalten mit gemischten Datentypen beim Importieren in Text konvertiert. Die Standardeinstellung ist Text. Die Werte sind vom Typ REG_SZ.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-p105">Can be set to MajorityType or Text. If set to MajorityType, columns of mixed data types will be cast to the predominate data type on import. If set to Text, columns of mixed data types will be cast to Text on import. The default is Text. Values are of type REG_SZ.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b9736-131">AppendBlankRows</span><span class="sxs-lookup"><span data-stu-id="b9736-131">AppendBlankRows</span></span></p></td>
-<td><p><span data-ttu-id="b9736-p106">Die Anzahl leerer Zeichen, die vor neuen Daten am Ende eines Arbeitsblatts der Version 3.5 oder Version 4.0 eingefügt werden. Wenn AppendBlankRows beispielsweise auf 4 festgelegt wird, fügt Microsoft Jet 4 leere Zeilen am Ende des Arbeitsblatts ein, und danach erst Zeilen mit Daten. Mögliche ganzzahlige Werte für diese Einstellungen sind die Zahlen 0 bis 16; die Standardeinstellung ist 01 (eine zusätzliche Zeile wird eingefügt). Die Werte sind vom Typ REG_DWORD.</span><span class="sxs-lookup"><span data-stu-id="b9736-p106">The number of blank rows to be appended to the end of a Version 3.5 or Version 4.0 worksheet before new data is added. For example, if AppendBlankRows is set to 4, Microsoft Jet will append 4 blank rows to the end of the worksheet before appending rows that contain data. Integer values for this setting can range from 0 to 16; the default is 01 (one additional row appended). Values are of type REG_DWORD.</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-131">AppendBlankRows</span><span class="sxs-lookup"><span data-stu-id="1c3ed-131">AppendBlankRows</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-p106">Die Anzahl leerer Zeichen, die vor neuen Daten am Ende eines Arbeitsblatts der Version 3.5 oder Version 4.0 eingefügt werden. Wenn AppendBlankRows beispielsweise auf 4 festgelegt wird, fügt Microsoft Jet 4 leere Zeilen am Ende des Arbeitsblatts ein, und danach erst Zeilen mit Daten. Mögliche ganzzahlige Werte für diese Einstellungen sind die Zahlen 0 bis 16; die Standardeinstellung ist 01 (eine zusätzliche Zeile wird eingefügt). Die Werte sind vom Typ REG_DWORD.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-p106">The number of blank rows to be appended to the end of a Version 3.5 or Version 4.0 worksheet before new data is added. For example, if AppendBlankRows is set to 4, Microsoft Jet will append 4 blank rows to the end of the worksheet before appending rows that contain data. Integer values for this setting can range from 0 to 16; the default is 01 (one additional row appended). Values are of type REG_DWORD.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-136">FirstRowHasNames</span><span class="sxs-lookup"><span data-stu-id="b9736-136">FirstRowHasNames</span></span></p></td>
-<td><p><span data-ttu-id="b9736-p107">Ein binärer Wert, der angibt, ob die erste Zeile der Tabelle Spaltennamen enthält. Der Wert 01 gibt an, dass beim Importieren die Spaltennamen aus der ersten Zeile verwendet werden. Der Wert 00 gibt an, dass in der ersten Zeile keine Spaltennamen verwendet werden; Spaltennamen werden als F1, F2, F3 usw. angezeigt. Die Standardeinstellung ist 01. Die Werte sind vom Typ REG_BINARY.</span><span class="sxs-lookup"><span data-stu-id="b9736-p107">A binary value that indicates whether the first row of the table contains column names. A value of 01 indicates that, during import, column names are taken from the first row. A value of 00 indicates no column names in the first row; column names appear as F1, F2, F3, and so on. The default is 01. Values are of type REG_BINARY.</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-136">FirstRowHasNames</span><span class="sxs-lookup"><span data-stu-id="1c3ed-136">FirstRowHasNames</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-p107">Ein binärer Wert, der angibt, ob die erste Zeile der Tabelle Spaltennamen enthält. Der Wert 01 gibt an, dass beim Importieren die Spaltennamen aus der ersten Zeile verwendet werden. Der Wert 00 gibt an, dass in der ersten Zeile keine Spaltennamen verwendet werden; Spaltennamen werden als F1, F2, F3 usw. angezeigt. Die Standardeinstellung ist 01. Die Werte sind vom Typ REG_BINARY.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-p107">A binary value that indicates whether the first row of the table contains column names. A value of 01 indicates that, during import, column names are taken from the first row. A value of 00 indicates no column names in the first row; column names appear as F1, F2, F3, and so on. The default is 01. Values are of type REG_BINARY.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 <br/>
 
-<span data-ttu-id="b9736-142">Die **Konnektivitätsmodul für Access\\Module\\Excel 8.0** Ordner enthält die folgenden Einträge, die für Microsoft Excel 97 gelten.</span><span class="sxs-lookup"><span data-stu-id="b9736-142">The **Access Connectivity Engine\\Engines\\Excel 8.0** folder contains the following entries, which apply to Microsoft Excel 97.</span></span>
+<span data-ttu-id="1c3ed-142">Der Ordner **Access Connectivity\\Engine\\Engines Excel 8,0** enthält die folgenden einträge, die für Microsoft Excel 97 gelten.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-142">The **Access Connectivity Engine\\Engines\\Excel 8.0** folder contains the following entries, which apply to Microsoft Excel 97.</span></span>
 
 <table>
 <colgroup>
@@ -89,65 +89,145 @@ ms.locfileid: "28712932"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="b9736-143">Name des Eintrags</span><span class="sxs-lookup"><span data-stu-id="b9736-143">Entry name</span></span></p></th>
-<th><p><span data-ttu-id="b9736-144">Type</span><span class="sxs-lookup"><span data-stu-id="b9736-144">Type</span></span></p></th>
-<th><p><span data-ttu-id="b9736-145">Wert</span><span class="sxs-lookup"><span data-stu-id="b9736-145">Value</span></span></p></th>
+<th><p><span data-ttu-id="1c3ed-143">Name des Eintrags</span><span class="sxs-lookup"><span data-stu-id="1c3ed-143">Entry name</span></span></p></th>
+<th><p><span data-ttu-id="1c3ed-144">Type</span><span class="sxs-lookup"><span data-stu-id="1c3ed-144">Type</span></span></p></th>
+<th><p><span data-ttu-id="1c3ed-145">Wert</span><span class="sxs-lookup"><span data-stu-id="1c3ed-145">Value</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-146">Engine</span><span class="sxs-lookup"><span data-stu-id="b9736-146">Engine</span></span></p></td>
-<td><p><span data-ttu-id="b9736-147">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="b9736-147">REG_SZ</span></span></p></td>
-<td><p><span data-ttu-id="b9736-148">Excel</span><span class="sxs-lookup"><span data-stu-id="b9736-148">Excel</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-146">Engine</span><span class="sxs-lookup"><span data-stu-id="1c3ed-146">Engine</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-147">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="1c3ed-147">REG_SZ</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-148">Excel</span><span class="sxs-lookup"><span data-stu-id="1c3ed-148">Excel</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b9736-149">ExportFilter</span><span class="sxs-lookup"><span data-stu-id="b9736-149">ExportFilter</span></span></p></td>
-<td><p><span data-ttu-id="b9736-150">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="b9736-150">REG_SZ</span></span></p></td>
-<td><p><span data-ttu-id="b9736-151">Microsoft Excel 97-2000 (\*.xls)</span><span class="sxs-lookup"><span data-stu-id="b9736-151">Microsoft Excel 97-2000 (\*.xls)</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-149">ExportFilter</span><span class="sxs-lookup"><span data-stu-id="1c3ed-149">ExportFilter</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-150">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="1c3ed-150">REG_SZ</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-151">Microsoft Excel 97-2000 (\*.xls)</span><span class="sxs-lookup"><span data-stu-id="1c3ed-151">Microsoft Excel 97-2000 (\*.xls)</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-152">CanLink</span><span class="sxs-lookup"><span data-stu-id="b9736-152">CanLink</span></span></p></td>
-<td><p><span data-ttu-id="b9736-153">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="b9736-153">REG_BINARY</span></span></p></td>
-<td><p><span data-ttu-id="b9736-154">01</span><span class="sxs-lookup"><span data-stu-id="b9736-154">01</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-152">CanLink</span><span class="sxs-lookup"><span data-stu-id="1c3ed-152">CanLink</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-153">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="1c3ed-153">REG_BINARY</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-154">01</span><span class="sxs-lookup"><span data-stu-id="1c3ed-154">01</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b9736-155">OneTablePerFile</span><span class="sxs-lookup"><span data-stu-id="b9736-155">OneTablePerFile</span></span></p></td>
-<td><p><span data-ttu-id="b9736-156">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="b9736-156">REG_BINARY</span></span></p></td>
-<td><p><span data-ttu-id="b9736-157">00</span><span class="sxs-lookup"><span data-stu-id="b9736-157">00</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-155">OneTablePerFile</span><span class="sxs-lookup"><span data-stu-id="1c3ed-155">OneTablePerFile</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-156">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="1c3ed-156">REG_BINARY</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-157">00</span><span class="sxs-lookup"><span data-stu-id="1c3ed-157">00</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-158">IsamType</span><span class="sxs-lookup"><span data-stu-id="b9736-158">IsamType</span></span></p></td>
-<td><p><span data-ttu-id="b9736-159">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="b9736-159">REG_DWORD</span></span></p></td>
-<td><p><span data-ttu-id="b9736-160">1</span><span class="sxs-lookup"><span data-stu-id="b9736-160">1</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-158">Isamtype</span><span class="sxs-lookup"><span data-stu-id="1c3ed-158">IsamType</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-159">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="1c3ed-159">REG_DWORD</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-160">1</span><span class="sxs-lookup"><span data-stu-id="1c3ed-160">1</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b9736-161">IndexDialog</span><span class="sxs-lookup"><span data-stu-id="b9736-161">IndexDialog</span></span></p></td>
-<td><p><span data-ttu-id="b9736-162">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="b9736-162">REG_BINARY</span></span></p></td>
-<td><p><span data-ttu-id="b9736-163">00</span><span class="sxs-lookup"><span data-stu-id="b9736-163">00</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-161">IndexDialog</span><span class="sxs-lookup"><span data-stu-id="1c3ed-161">IndexDialog</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-162">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="1c3ed-162">REG_BINARY</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-163">00</span><span class="sxs-lookup"><span data-stu-id="1c3ed-163">00</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-164">CreateDBOnExport</span><span class="sxs-lookup"><span data-stu-id="b9736-164">CreateDBOnExport</span></span></p></td>
-<td><p><span data-ttu-id="b9736-165">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="b9736-165">REG_BINARY</span></span></p></td>
-<td><p><span data-ttu-id="b9736-166">01</span><span class="sxs-lookup"><span data-stu-id="b9736-166">01</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-164">CreateDBOnExport</span><span class="sxs-lookup"><span data-stu-id="1c3ed-164">CreateDBOnExport</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-165">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="1c3ed-165">REG_BINARY</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-166">01</span><span class="sxs-lookup"><span data-stu-id="1c3ed-166">01</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b9736-167">ResultTextExport</span><span class="sxs-lookup"><span data-stu-id="b9736-167">ResultTextExport</span></span></p></td>
-<td><p><span data-ttu-id="b9736-168">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="b9736-168">REG_SZ</span></span></p></td>
-<td><p><span data-ttu-id="b9736-p108">Exportiert Daten aus der aktuellen Datenbank in eine Microsoft Excel 97-Datei. Dabei werden die Daten überschrieben, wenn sie in eine vorhandene Datei exportiert werden.</span><span class="sxs-lookup"><span data-stu-id="b9736-p108">Export data from the current database into a Microsoft Excel 97 file. This process will overwrite the data if exported to an existing file.</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-167">ResultTextExport</span><span class="sxs-lookup"><span data-stu-id="1c3ed-167">ResultTextExport</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-168">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="1c3ed-168">REG_SZ</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-p108">Exportiert Daten aus der aktuellen Datenbank in eine Microsoft Excel 97-Datei. Dabei werden die Daten überschrieben, wenn sie in eine vorhandene Datei exportiert werden.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-p108">Export data from the current database into a Microsoft Excel 97 file. This process will overwrite the data if exported to an existing file.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b9736-171">SupportsLongNames</span><span class="sxs-lookup"><span data-stu-id="b9736-171">SupportsLongNames</span></span></p></td>
-<td><p><span data-ttu-id="b9736-172">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="b9736-172">REG_BINARY</span></span></p></td>
-<td><p><span data-ttu-id="b9736-173">01</span><span class="sxs-lookup"><span data-stu-id="b9736-173">01</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-171">SupportsLongNames</span><span class="sxs-lookup"><span data-stu-id="1c3ed-171">SupportsLongNames</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-172">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="1c3ed-172">REG_BINARY</span></span></p></td>
+<td><p><span data-ttu-id="1c3ed-173">01</span><span class="sxs-lookup"><span data-stu-id="1c3ed-173">01</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
+## <a name="using-the-typeguessrows-setting-for-excel-driver"></a><span data-ttu-id="1c3ed-174">Verwenden der TypeGuessRows-Einstellung für den Excel-Treiber</span><span class="sxs-lookup"><span data-stu-id="1c3ed-174">Using the TypeGuessRows setting for Excel Driver</span></span>
+<span data-ttu-id="1c3ed-175">Bei Verwendung des Microsoft Excel-Treibers können Sie mit dem **TypeGuessRows** -Registrierungswert konfigurieren, wie viele Zeilen für den Datentyp überprüft werden sollen.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-175">When you use Microsoft Excel Driver, you can use the **TypeGuessRows** registry value to configure how many rows are to be checked for the data type.</span></span> <span data-ttu-id="1c3ed-176">Der **TypeGuessRows** -Wert befindet sich unter dem folgenden Registrierungsschlüssel:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-176">The **TypeGuessRows** value is located under the following registry subkey:</span></span>
 
+# <a name="office-2016taboffice-2016"></a>[<span data-ttu-id="1c3ed-177">Office 2016</span><span class="sxs-lookup"><span data-stu-id="1c3ed-177">Office 2016</span></span>](#tab/office-2016)
 
+<span data-ttu-id="1c3ed-178">Für eine MSI-Installation von Office</span><span class="sxs-lookup"><span data-stu-id="1c3ed-178">For an MSI installation of Office</span></span>
+
+- <span data-ttu-id="1c3ed-179">Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-179">For 32-bit Office on 32-bit Windows or 64-bit Office on 64-bit Windows:</span></span>
+    
+  <span data-ttu-id="1c3ed-180">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-180">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**</span></span>
+
+- <span data-ttu-id="1c3ed-181">Für 32-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-181">For 32-bit Office on 64-bit Windows:</span></span>
+
+  <span data-ttu-id="1c3ed-182">**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-182">**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**</span></span>
+    
+<span data-ttu-id="1c3ed-183">Für eine Klick-und-Los-Installation von Office</span><span class="sxs-lookup"><span data-stu-id="1c3ed-183">For a Click-to-Run installation of Office</span></span>
+
+- <span data-ttu-id="1c3ed-184">Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-184">For 32-bit Office on 32-bit Windows or 64-bit Office on 64-bit Windows:</span></span>
+    
+  <span data-ttu-id="1c3ed-185">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-185">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**</span></span>
+
+- <span data-ttu-id="1c3ed-186">Für 32-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-186">For 32-bit Office on 64-bit Windows:</span></span>
+    
+  <span data-ttu-id="1c3ed-187">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Wow6432Node\Microsoft\Office\16.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-187">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**</span></span>
+
+<span data-ttu-id="1c3ed-188">Die standardmäßige Anzahl der zu überprüfenden Zeilen ist **8** (acht).</span><span class="sxs-lookup"><span data-stu-id="1c3ed-188">The default number of rows to be checked is **8** (eight).</span></span> <span data-ttu-id="1c3ed-189">Wenn Sie den **TypeGuessRows** -Wert auf **0** (null) festlegen, überprüft der Excel-Treiber die ersten 16.384-Zeilen nach dem Datentyp.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-189">When you set the **TypeGuessRows** value to **0** (zero), Excel Driver checks the first 16,384 rows for the data type.</span></span> <span data-ttu-id="1c3ed-190">Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf Ihrem gewünschten Range basiert.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-190">If you want to check more than 16,384 rows, set **TypeGuessRows** to a value that is based on your desired range.</span></span> <span data-ttu-id="1c3ed-191">Legen Sie **TypeGuessRows** auf 1.048.576 (die maximale Anzahl von Zeilen, die in Excel zulässig sind) fest, um alle Zeilen zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-191">To check all rows, set **TypeGuessRows** to 1,048,576 (the maximum number of rows that are allowed in Excel).</span></span>
+ 
+<span data-ttu-id="1c3ed-192">Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunden werden.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-192">The data type is determined by the maximum number of kinds of data that is found.</span></span> <span data-ttu-id="1c3ed-193">Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-193">If there is a tie, the data type is determined in the following order:</span></span>
+
+- <span data-ttu-id="1c3ed-194">Zahl</span><span class="sxs-lookup"><span data-stu-id="1c3ed-194">Number</span></span>
+- <span data-ttu-id="1c3ed-195">Währung</span><span class="sxs-lookup"><span data-stu-id="1c3ed-195">Currency</span></span>
+- <span data-ttu-id="1c3ed-196">Datum</span><span class="sxs-lookup"><span data-stu-id="1c3ed-196">Date</span></span>
+- <span data-ttu-id="1c3ed-197">Text</span><span class="sxs-lookup"><span data-stu-id="1c3ed-197">Text</span></span>
+- <span data-ttu-id="1c3ed-198">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="1c3ed-198">Boolean</span></span>
+
+<span data-ttu-id="1c3ed-199">Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-199">If data is encountered that doesn’t match the guessed data type for the column, that data is returned as a **Null** value.</span></span> <span data-ttu-id="1c3ed-200">Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-200">During an import, if a column has mixed data types, the whole column is cast to the data type that’s set by the **ImportMixedTypes** setting.</span></span>
+
+# <a name="office-2013taboffice-2013"></a>[<span data-ttu-id="1c3ed-201">Office 2013</span><span class="sxs-lookup"><span data-stu-id="1c3ed-201">Office 2013</span></span>](#tab/office-2013)
+
+<span data-ttu-id="1c3ed-202">Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-202">For 32-bit Office on 32-bit Windows or 64-bit Office on 64-bit Windows:</span></span>
+
+<span data-ttu-id="1c3ed-203">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-203">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**</span></span>
+
+<span data-ttu-id="1c3ed-204">Für 32-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-204">For 32-bit Office on 64-bit Windows:</span></span>
+
+<span data-ttu-id="1c3ed-205">**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-205">**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**</span></span>
+
+<span data-ttu-id="1c3ed-206">Die standardmäßige Anzahl der zu überprüfenden Zeilen ist **8** (acht).</span><span class="sxs-lookup"><span data-stu-id="1c3ed-206">The default number of rows to be checked is **8** (eight).</span></span> <span data-ttu-id="1c3ed-207">Wenn Sie den **TypeGuessRows** -Wert auf **0** (null) festlegen, überprüft der Excel-Treiber die ersten 16.384-Zeilen nach dem Datentyp.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-207">When you set the **TypeGuessRows** value to **0** (zero), Excel Driver checks the first 16,384 rows for the data type.</span></span> <span data-ttu-id="1c3ed-208">Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf Ihrem gewünschten Range basiert.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-208">If you want to check more than 16,384 rows, set **TypeGuessRows** to a value that is based on your desired range.</span></span> <span data-ttu-id="1c3ed-209">Legen Sie **TypeGuessRows** auf 1.048.576 (die maximale Anzahl von Zeilen, die in Excel zulässig sind) fest, um alle Zeilen zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-209">To check all rows, set **TypeGuessRows** to 1,048,576 (the maximum number of rows that are allowed in Excel).</span></span>
+ 
+<span data-ttu-id="1c3ed-210">Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunden werden.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-210">The data type is determined by the maximum number of kinds of data that is found.</span></span> <span data-ttu-id="1c3ed-211">Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-211">If there is a tie, the data type is determined in the following order:</span></span>
+
+- <span data-ttu-id="1c3ed-212">Zahl</span><span class="sxs-lookup"><span data-stu-id="1c3ed-212">Number</span></span>
+- <span data-ttu-id="1c3ed-213">Währung</span><span class="sxs-lookup"><span data-stu-id="1c3ed-213">Currency</span></span>
+- <span data-ttu-id="1c3ed-214">Datum</span><span class="sxs-lookup"><span data-stu-id="1c3ed-214">Date</span></span>
+- <span data-ttu-id="1c3ed-215">Text</span><span class="sxs-lookup"><span data-stu-id="1c3ed-215">Text</span></span>
+- <span data-ttu-id="1c3ed-216">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="1c3ed-216">Boolean</span></span>
+
+<span data-ttu-id="1c3ed-217">Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-217">If data is encountered that doesn’t match the guessed data type for the column, that data is returned as a **Null** value.</span></span> <span data-ttu-id="1c3ed-218">Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-218">During an import, if a column has mixed data types, the whole column is cast to the data type that’s set by the **ImportMixedTypes** setting.</span></span>
+
+# <a name="office-2010taboffice-2010"></a>[<span data-ttu-id="1c3ed-219">Office 2010</span><span class="sxs-lookup"><span data-stu-id="1c3ed-219">Office 2010</span></span>](#tab/office-2010)
+
+<span data-ttu-id="1c3ed-220">Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-220">For 32-bit Office on 32-bit Windows or 64-bit Office on 64-bit Windows:</span></span>
+
+<span data-ttu-id="1c3ed-221">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-221">**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**</span></span>
+
+<span data-ttu-id="1c3ed-222">Für 32-Bit-Office unter 64-Bit-Windows:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-222">For 32-bit Office on 64-bit Windows:</span></span>
+
+<span data-ttu-id="1c3ed-223">**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access-Engine\Engines\Excel**</span><span class="sxs-lookup"><span data-stu-id="1c3ed-223">**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**</span></span>
+
+<span data-ttu-id="1c3ed-224">Die standardmäßige Anzahl der zu überprüfenden Zeilen ist **8** (acht).</span><span class="sxs-lookup"><span data-stu-id="1c3ed-224">The default number of rows to be checked is **8** (eight).</span></span> <span data-ttu-id="1c3ed-225">Wenn Sie den **TypeGuessRows** -Wert auf **0** (null) festlegen, überprüft der Excel-Treiber die ersten 16.384-Zeilen nach dem Datentyp.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-225">When you set the **TypeGuessRows** value to **0** (zero), Excel Driver checks the first 16,384 rows for the data type.</span></span> <span data-ttu-id="1c3ed-226">Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf Ihrem gewünschten Range basiert.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-226">If you want to check more than 16,384 rows, set **TypeGuessRows** to a value that is based on your desired range.</span></span> <span data-ttu-id="1c3ed-227">Legen Sie **TypeGuessRows** auf 1.048.576 (die maximale Anzahl von Zeilen, die in Excel zulässig sind) fest, um alle Zeilen zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-227">To check all rows, set **TypeGuessRows** to 1,048,576 (the maximum number of rows that are allowed in Excel).</span></span>
+ 
+<span data-ttu-id="1c3ed-228">Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunden werden.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-228">The data type is determined by the maximum number of kinds of data that is found.</span></span> <span data-ttu-id="1c3ed-229">Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:</span><span class="sxs-lookup"><span data-stu-id="1c3ed-229">If there is a tie, the data type is determined in the following order:</span></span>
+
+- <span data-ttu-id="1c3ed-230">Zahl</span><span class="sxs-lookup"><span data-stu-id="1c3ed-230">Number</span></span>
+- <span data-ttu-id="1c3ed-231">Währung</span><span class="sxs-lookup"><span data-stu-id="1c3ed-231">Currency</span></span>
+- <span data-ttu-id="1c3ed-232">Datum</span><span class="sxs-lookup"><span data-stu-id="1c3ed-232">Date</span></span>
+- <span data-ttu-id="1c3ed-233">Text</span><span class="sxs-lookup"><span data-stu-id="1c3ed-233">Text</span></span>
+- <span data-ttu-id="1c3ed-234">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="1c3ed-234">Boolean</span></span>
+
+<span data-ttu-id="1c3ed-235">Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-235">If data is encountered that doesn’t match the guessed data type for the column, that data is returned as a **Null** value.</span></span> <span data-ttu-id="1c3ed-236">Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-236">During an import, if a column has mixed data types, the whole column is cast to the data type that’s set by the **ImportMixedTypes** setting.</span></span>
+
+---
 > [!NOTE]
-> <span data-ttu-id="b9736-174">Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.</span><span class="sxs-lookup"><span data-stu-id="b9736-174">When you change Windows Registry settings, you must exit and then restart the database engine for the new settings to take effect.</span></span>
+> <span data-ttu-id="1c3ed-237">[!HINWEIS] Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.</span><span class="sxs-lookup"><span data-stu-id="1c3ed-237">When you change Windows Registry settings, you must exit and then restart the database engine for the new settings to take effect.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b9736-175">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b9736-175">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1c3ed-238">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1c3ed-238">See also</span></span>
 
-- [<span data-ttu-id="b9736-176">Verwenden die Einstellung TypeGuessRows für Excel-Treibers</span><span class="sxs-lookup"><span data-stu-id="b9736-176">Using the TypeGuessRows setting for Excel Driver</span></span>](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
+- [<span data-ttu-id="1c3ed-239">Verwenden der TypeGuessRows-Einstellung für den Excel-Treiber</span><span class="sxs-lookup"><span data-stu-id="1c3ed-239">Using the TypeGuessRows setting for Excel Driver</span></span>](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
