@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageAttachments (kanonische Eigenschaft)
+title: Kanonische Pidtagmessageattachments (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 85762771-b823-4227-9a7b-75b6ac280b2d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5f13c2825fc0127b95fbf5bc0b41d68c64556864
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 975f52e6ea0ca7a469a027565f845f9dc0f9c2cf
+ms.sourcegitcommit: 43cff5789e0a0a8cda11277c1a636c8b32d28cdb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384087"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30413973"
 ---
-# <a name="pidtagmessageattachments-canonical-property"></a>PidTagMessageAttachments (kanonische Eigenschaft)
+# <a name="pidtagmessageattachments-canonical-property"></a>Kanonische Pidtagmessageattachments (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Tabelle mit Einschränkungen, die auf einer Inhaltstabelle, erhalten alle Nachrichten, die Anlage Unterobjekte enthalten, die die Suchkriterien erfüllen angewendet werden kann. 
+Enthält eine Tabelle mit Anlagen für eine Nachricht. 
   
 |||
 |:-----|:-----|
@@ -34,39 +34,39 @@ Enthält eine Tabelle mit Einschränkungen, die auf einer Inhaltstabelle, erhalt
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft kann in [IMAPIProp::CopyTo](imapiprop-copyto.md) Vorgänge aus- oder in [IMAPIProp::CopyProps](imapiprop-copyprops.md) Vorgänge eingeschlossen werden. Als Eigenschaft vom Typ PT_OBJECT kann es erfolgreich von der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode abgerufen werden. Von der [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode der **IID_IMAPITable** Identifier anfordern sollte seinen Inhalt zugegriffen werden. Dienstanbieter müssen es an die [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode melden, wenn er festgelegt ist, aber optional meldet oder nicht, wenn sie nicht festgelegt ist. 
+Diese Eigenschaft kann in [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Vorgängen oder in [IMAPIProp:: CopyProps](imapiprop-copyprops.md) -Vorgängen ausgeschlossen werden. Als Eigenschaft vom Typ PT_OBJECT kann Sie nicht erfolgreich von der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode abgerufen werden. Auf den Inhalt sollte von der [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode zugegriffen werden, um den **IID_IMAPITable** -Schnittstellenbezeichner anzufordern. Dienstanbieter müssen Sie an die [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode melden, wenn Sie festgelegt ist, aber Sie kann Sie optional melden oder nicht, wenn Sie nicht festgelegt ist. 
   
-Zum Abrufen von Inhaltsverzeichnisses sollte eine Clientanwendung die [IMessage::GetAttachmentTable](imessage-getattachmenttable.md) -Methode aufrufen. For more information, see [Anlagentabellen](attachment-tables.md). 
+Zum Abrufen von Tabelleninhalten sollte eine Clientanwendung die [IMessage::](imessage-getattachmenttable.md) getattachmentable-Methode aufrufen. For more information, see [Anlagentabellen](attachment-tables.md). 
   
-Diese Eigenschaft kann durch Festlegen in der Struktur [SSubRestriction](ssubrestriction.md) für Unterobjekts Einschränkung verwendet werden. Dadurch wird den Client zur Begrenzung der Ansicht eines Containers auf Nachrichten mit Anlagen, die Besprechung, die bestimmte Kriterien erfüllen. Eine Nachricht qualifiziert für anzeigen, wenn mindestens eine Zeile in der Tabelle Anlagen, d. h., eine Anlage, die Einschränkung Unterobjekts erfüllt. 
+Diese Eigenschaft kann für SubObject-Einschränkungen verwendet werden, indem Sie Sie in der [SSubRestriction](ssubrestriction.md) -Struktur angibt. Dadurch kann der Client die Ansicht eines Containers auf Nachrichten mit Anlagen begrenzen, die bestimmte Kriterien erfüllen. Eine Nachricht kann angezeigt werden, wenn mindestens eine Zeile in der Attachments-Tabelle, also eine Anlage, der SubObject-Einschränkung entspricht. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCDATA]](https://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
   
-> Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.
+> Definiert die grundlegenden Datenstrukturen, die in Remotevorgängen verwendet werden.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.
+> Definiert die grundlegenden Datenstrukturen, die in Remotevorgängen verwendet werden.
     
 [[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
-> Konvertiert zwischen IETF RFC2445, RFC2446, RFC2447, und Termine und meeting-Objekte.
+> Konvertiert zwischen IETF-RFC2445, RFC2446 und RFC2447 sowie Termin-und Besprechungs Objekten.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,5 +78,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 
