@@ -11,22 +11,22 @@ f1_keywords:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: 2fe59f34c04314f70117b3bc7f08d78c2d23ae6d
-ms.sourcegitcommit: 62228a65109a9543cd223dfbf326dbf1af256748
+ms.openlocfilehash: c3424fd4b85108120ea4accc2dfa65d55394f0d2
+ms.sourcegitcommit: e59070b67358b3700ca677149a849768c144c1a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30179663"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518131"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Initialisieren des Microsoft Excel-Treibers
 
-**Gilt für**: Access 2013 | Office 2013
+**Gilt für**: Excel 2016 | Zugriff 2016 | Zugriff 2013 | Office 2013 | Excel 2013 | Office for Business-Zugriff 2013 | Excel 2010 | Access 2010
 
-Wenn Sie den Excel-Treiber installieren, schreibt das Setup Programm in der Unterschlüssel Engines-und ISAM-Formate in der Windows-Registrierung eine Reihe von Standardwerten. Sie sollten diese Einstellungen nicht direkt ändern; Verwenden Sie das Setupprogramm für Ihre Anwendung, um diese Einstellungen hinzuzufügen, zu entfernen oder zu ändern. In den folgenden Abschnitten werden Initialisierungs-und ISAMformat-Einstellungen für den Microsoft Excel-Datenbanktreiber beschrieben.
+Wenn Sie den Excel-Treiber installieren, schreibt das Setup Programm in der Unterschlüssel Engines-und ISAM-Formate in der Windows-Registrierung eine Reihe von Standardwerten. You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings. The following sections describe initialization and ISAM Format settings for the Microsoft Excel database driver.
 
 ## <a name="excel-initialization-settings"></a>Excel-Initialisierungseinstellungen
 
-Der **Excel-Ordner\\Access\\Connectivity Engine Engines** enthält Initialisierungseinstellungen für den Aceexcl. dll-Treiber, der für den externen Zugriff auf Microsoft Excel-Arbeitsblätter verwendet wird. Typische Einstellungen für die Einträge in diesem Ordner werden im folgenden Beispiel gezeigt.
+Der **Excel-Ordner\\Access\\Connectivity Engine Engines** enthält Initialisierungseinstellungen für den Aceexcl. dll-Treiber, der für den externen Zugriff auf Microsoft Excel-Arbeitsblätter verwendet wird. Typical settings for the entries in this folder are shown in the following example.
 
 ```vb
     win32=<path>\ Aceexcl.dll  
@@ -40,7 +40,7 @@ Der **Excel-Ordner\\Access\\Connectivity Engine Engines** enthält Initialisieru
     FirstRowHasNames=Yes
 ```
 
-Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Excel wie folgt.
+The Microsoft Access database engine uses the Excel folder entries as follows.
 
 <table>
 <colgroup>
@@ -60,7 +60,7 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Excel wie 
 </tr>
 <tr class="even">
 <td><p>TypeGuessRows</p></td>
-<td><p>Die Anzahl der Zeilen, die für den Datentyp überprüft werden sollen. Der Datentyp wird anhand der maximalen Anzahl von Datentypen ermittelt. Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt: Number, Currency, Date, Text, Boolean. Wenn Daten gefunden werden, die nicht mit dem für die Spalte erkannten Datentyp übereinstimmen, wird er als <strong>null</strong> -Wert zurückgegeben. Wenn eine Spalte beim Importieren gemischte Datentypen enthält, wird die gesamte Spalte gemäß der ImportMixedTypes-Einstellung umgewandelt. Die standardmäßige Anzahl der zu überprüfenden Zeilen ist 8. Die Werte sind vom Typ REG_DWORD.</p></td>
+<td><p>Die Anzahl der Zeilen, die für den Datentyp überprüft werden sollen. Der Datentyp wird anhand der maximalen Anzahl von Datentypen ermittelt. Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt: Number, Currency, Date, Text, Boolean. Wenn Daten gefunden werden, die nicht mit dem für die Spalte erkannten Datentyp übereinstimmen, wird er als <strong>null</strong> -Wert zurückgegeben. Wenn eine Spalte beim Importieren gemischte Datentypen enthält, wird die gesamte Spalte gemäß der ImportMixedTypes-Einstellung umgewandelt. Standardmäßig werden 8 Zeilen geprüft. Die Werte sind vom Typ REG_DWORD.</p></td>
 </tr>
 <tr class="odd">
 <td><p>ImportMixedTypes</p></td>
@@ -90,13 +90,13 @@ Der Ordner **Access Connectivity\\Engine\\Engines Excel 8,0** enthält die folge
 <thead>
 <tr class="header">
 <th><p>Name des Eintrags</p></th>
-<th><p>Type</p></th>
+<th><p>Typ</p></th>
 <th><p>Wert</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Engine</p></td>
+<td><p>Modul</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Excel</p></td>
 </tr>
@@ -143,10 +143,11 @@ Der Ordner **Access Connectivity\\Engine\\Engines Excel 8,0** enthält die folge
 </tbody>
 </table>
 
+
 ## <a name="using-the-typeguessrows-setting-for-excel-driver"></a>Verwenden der TypeGuessRows-Einstellung für den Excel-Treiber
 Bei Verwendung des Microsoft Excel-Treibers können Sie mit dem **TypeGuessRows** -Registrierungswert konfigurieren, wie viele Zeilen für den Datentyp überprüft werden sollen. Der **TypeGuessRows** -Wert befindet sich unter dem folgenden Registrierungsschlüssel:
 
-# <a name="office-2016taboffice-2016"></a>[Office 2016](#tab/office-2016)
+# [<a name="office-2016"></a>Office 2016](#tab/office-2016)
 
 Für eine MSI-Installation von Office
 
@@ -176,11 +177,11 @@ Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunde
 - Währung
 - Datum
 - Text
-- Boolescher Wert
+- Boolesch
 
 Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben. Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.
 
-# <a name="office-2013taboffice-2013"></a>[Office 2013](#tab/office-2013)
+# [<a name="office-2013"></a>Office 2013](#tab/office-2013)
 
 Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:
 
@@ -198,11 +199,11 @@ Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunde
 - Währung
 - Datum
 - Text
-- Boolescher Wert
+- Boolesch
 
 Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben. Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.
 
-# <a name="office-2010taboffice-2010"></a>[Office 2010](#tab/office-2010)
+# [<a name="office-2010"></a>Office 2010](#tab/office-2010)
 
 Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:
 
@@ -220,11 +221,15 @@ Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunde
 - Währung
 - Datum
 - Text
-- Boolescher Wert
+- Boolesch
 
 Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben. Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.
 
 ---
 > [!NOTE]
-> [!HINWEIS] Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
+> Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
+
+## <a name="see-also"></a>Siehe auch
+
+- [Verwenden der TypeGuessRows-Einstellung für den Excel-Treiber](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
 
