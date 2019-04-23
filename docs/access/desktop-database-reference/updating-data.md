@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren von Daten (Access PC-Datenbank-Referenz)
+title: Aktualisieren von Daten (Access-Desktop-Daten Bankreferenz)
 TOCTitle: Updating Data
 ms:assetid: 02e82066-77c8-cbb2-db28-98e2fc94404c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248794(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8e6989468e23fc1c9c611eb091172822a6ffe938
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313566"
 ---
 # <a name="updating-data"></a>Aktualisieren von Daten
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Aktualisierungsverhalten und Funktionalität sind größtenteils vom Aktualisierungsmodus (Sperrtyp), Cursortyp und Cursorplatzierung abhängig.
 
@@ -31,5 +31,5 @@ Dieser Abschnitt enthält die folgenden Themen:
 
 - [Unmittelbarer Modus](immediate-mode.md)
 - [Verarbeitung von Transaktionen](transaction-processing.md)
-- [Batch-Modus (ADO)](batch-mode.md)
+- [Batch Modus (ADO)](batch-mode.md)
 

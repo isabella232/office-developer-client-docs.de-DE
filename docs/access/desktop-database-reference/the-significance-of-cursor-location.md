@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3ae9cc65d61416767140572b32d3f2e1b8e4d8eb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313979"
 ---
 # <a name="significance-of-cursor-location"></a>Die Bedeutung der Cursorposition
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Jeder Cursor verwendet temporäre Ressourcen zum Speichern der Daten. Bei diesen Ressourcen kann es sich um Arbeitsspeicher, eine Auslagerungsdatei auf einer Festplatte, temporäre Dateien auf der Festplatte oder sogar temporären Speicherplatz in der Datenbank handeln. Der Mauszeiger wird einen *clientseitige* Cursor aufgerufen, wenn diese Ressourcen auf dem Clientcomputer gespeichert sind. Der Cursor ist einen *serverseitige* Cursor bezeichnet, wenn diese Ressourcen auf dem Server gespeichert sind.
+Jeder Cursor verwendet temporäre Ressourcen zum Speichern der Daten. Bei diesen Ressourcen kann es sich um Arbeitsspeicher, eine Auslagerungsdatei auf einer Festplatte, temporäre Dateien auf der Festplatte oder sogar temporären Speicherplatz in der Datenbank handeln. Der Cursor wird als *clientseitiger* Cursor bezeichnet, wenn sich diese Ressourcen auf dem Clientcomputer befinden. Der Cursor wird als *serverseitiger* Cursor bezeichnet, wenn sich diese Ressourcen auf dem Server befinden.
 
 ## <a name="client-side-cursors"></a>Clientseitige Cursor
 

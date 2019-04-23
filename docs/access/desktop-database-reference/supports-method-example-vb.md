@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5dc6035569abd42cd6a5f4ce44fcf0da550bf809
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314469"
 ---
 # <a name="supports-method-example-vb"></a>Supports-Methode (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die [Supports](supports-method-ado.md) -Methode, die durch ein Recordset geöffnet, die mit verschiedenen Cursortypen unterstützt Anzeigeoptionen. Das Verfahren DisplaySupport ist zum Ausführen dieser Prozedur erforderlich.
+This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types. The DisplaySupport procedure is required for this procedure to run.
 
 ```vb 
  
