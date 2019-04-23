@@ -1,5 +1,5 @@
 ---
-title: 'Member-Auflistung: Eigenschaften, Methoden und Ereignisse (ADO MD)'
+title: Members-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADO MD)
 TOCTitle: Members collection properties, methods, and events
 ms:assetid: 71db6aef-4479-d5ee-8487-66c4f16833c4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249455(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 333a30866ab2bafb21bcab5fed9973c4a5505642
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289381"
 ---
-# <a name="members-collection-properties-methods-and-events-ado-md"></a>Member-Auflistung: Eigenschaften, Methoden und Ereignisse (ADO MD)
+# <a name="members-collection-properties-methods-and-events-ado-md"></a>Members-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -30,5 +30,5 @@ ms.locfileid: "28720317"
 
 ## <a name="events"></a>Ereignisse
 
-Keine.
+None.
 

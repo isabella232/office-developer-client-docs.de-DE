@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c1b127995a2f9a0af7da80e9df862259b570870e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288806"
 ---
 # <a name="moveandsizewindow-macro-action"></a>MoveAndSizeWindow-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Wenn Sie das Dokument im Fensteroptionen auf überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden eingerichtet haben, können Sie die **Verschiebenundgrößeändernfenster** -Aktion verwenden, verschieben oder die Größe des aktiven Fensters. Informationen zum Festlegen der Dokumentfensteroptionen finden Sie unter "Hinweise".
+Wenn Sie Ihre Dokumentfensteroptionen für die Verwendung von überlappenden Fenstern anstelle von Dokumenten im Registerformat festgelegt haben, können Sie die **verschiebenundgrößeändernfenster** -Aktion verwenden, um das aktive Fenster zu verschieben oder die Größe zu ändern. Informationen zum Festlegen von Dokumentfensteroptionen finden Sie im Abschnitt "Hinweise".
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
-Die **Verschiebenundgrößeändernfenster** -Aktion hat die folgenden Argumente.
+Die **verschiebenundgrößeändernfenster** -Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -38,7 +38,7 @@ Die **Verschiebenundgrößeändernfenster** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Right</strong></p></td>
-<td><p>Die neue horizontale Position der linken oberen Ecke des Fensters, gemessen vom linken Rand des enthaltenden Fensters. Geben Sie die Position im Feld <strong>rechts</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators.</p></td>
+<td><p>Die neue horizontale Position der linken oberen Ecke des Fensters, gemessen vom linken Rand des enthaltenden Fensters. Geben Sie die Position in das <strong>Rechte</strong> Feld im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Down</strong></p></td>
@@ -61,11 +61,11 @@ Wenn Sie ein Argument leer lassen, verwendet Microsoft Access die aktuelle Einst
 Sie müssen einen Wert für mindestens ein Argument eingeben.
 
 > [!NOTE]
-> Jeder Messung ist in Zoll oder Zentimeter, abhängig von den regionalen Einstellungen in Windows-Systemsteuerung.
+> Jede Maßeinheit ist in Zoll oder Zentimetern abhängig von den regionalen Einstellungen in der Windows-Systemsteuerung.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Zum Einrichten einer Anwendung auf überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden, verwenden Sie die folgende Schritte aus:
+Gehen Sie folgendermaßen vor, um eine Anwendung für die Verwendung von überlappenden Fenstern anstelle von Registerkarten Dokumenten einzurichten:
 
 1.  Klicken Sie auf **Optionen**
 
@@ -73,17 +73,17 @@ Zum Einrichten einer Anwendung auf überlappende Fenster anstelle von Dokumente 
 
 3.  Klicken Sie im Abschnitt **Anwendungsoptionen** unter **Dokumentfensteroptionen** auf **Überlappende Fenster**.
 
-4.  Klicken Sie auf **OK**, und schließen und öffnen Sie die Datenbank erneut.
+4.  Klicken Sie auf **OK**, und schließen Sie die Datenbank, und öffnen Sie Sie erneut.
 
-Diese Aktion entspricht dem Klicken auf **Verschieben** oder **Größe** im **Systemmenü des Fensters** . Mit den Menübefehlen im verwenden Sie die Pfeiltasten der Tastatur verschieben oder die Größe des Fensters. Die **Verschiebenundgrößeändernfenster** -Aktion verwenden Geben Sie die Position und Größe Maße direkt. Sie können auch die Maus zum Verschieben und Größe von Windows verwenden.
+Diese Aktion ähnelt dem Klicken auf **verschieben** oder **Größe** im **System** Menü des Fensters. Mit den Menübefehlen können Sie die Pfeiltasten der Tastatur verwenden, um das Fenster zu verschieben oder die Größe zu ändern. Mit der **verschiebenundgrößeändernfenster** -Aktion geben Sie die Positions-und größenmessungen direkt ein. Sie können die Maus auch zum Verschieben und Vergrößern von Fenstern verwenden.
 
-Sie können diese Aktion für jedes Fenster in jeder Ansicht verwenden.
+Sie können diese Aktion für ein beliebiges Fenster in einer beliebigen Ansicht verwenden.
 
 > [!TIP]
-> - Um ein Fenster verschieben, ohne seine Größe zu ändern, geben Sie Werte für die **rechts** und **unten** Argumente, aber lassen Sie die **Breite** und **Höhe** Argumente leer.
-> - Um ein Fenster Größe ändern möchten, ohne es zu verschieben, geben Sie Werte für die **Breite** und **Höhe** Argumente, aber lassen Sie die Argumente **rechts** und **Abwärts** leer.
+> - Wenn Sie ein Fenster ohne Größenänderung verschieben möchten, geben Sie Werte für die Argumente **right** und **down** ein, lassen jedoch die Argumente **Width** und **height** leer.
+> - Um die Größe eines Fensters zu ändern, ohne es zu bewegen, geben Sie Werte für die Argumente **Breite** und **Höhe** ein, lassen jedoch die Argumente **Rechts** und **abwärts** leer.
 
-Um die **Verschiebenundgrößeändernfenster** -Aktion in einem Visual Basic für Applikationen (VBA)-Modul auszuführen, verwenden Sie die **MoveSize** -Methode des **DoCmd** -Objekts.
+Verwenden Sie die **Move** -Methode des **DoCmd** -Objekts, um die **VERSCHIEBENUNDGRÖßEÄNDERNFENSTER** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 
 ## <a name="example"></a>Beispiel
 
@@ -114,9 +114,9 @@ Das folgende Makro öffnet ein Produktlistenformular in der unteren rechten Ecke
 <td><p>Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</p></td>
 </tr>
 <tr class="even">
-<td><p>IsNull ([Lieferanten-Nr])</p></td>
+<td><p>IsNull ([Lieferanten-ID])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message</strong>: Wechseln Sie zum Datensatz des Lieferanten, dessen Produkte Sie anzeigen möchten, und klicken Sie dann erneut auf die Schaltfläche für die Überprüfung der Produkte. <strong>Signalton</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: Lieferanten auswählen</p></td>
+<td><p><strong>Message</strong>: Wechseln Sie zum Datensatz des Lieferanten, dessen Produkte Sie anzeigen möchten, und klicken Sie dann erneut auf die Schaltfläche für die Überprüfung der Produkte. <strong>Beep</strong>: <strong>jatyp</strong>: <strong>Keinetitel</strong>: Wählen Sie einen Zulieferer aus</p></td>
 <td><p>Wenn im Lieferantenformular kein aktueller Lieferant vorhanden ist, zeigen Sie eine Meldung an.</p></td>
 </tr>
 <tr class="odd">
@@ -134,13 +134,13 @@ Das folgende Makro öffnet ein Produktlistenformular in der unteren rechten Ecke
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>Formularname</strong>: Produkt Liste <strong>Anzeigen</strong>: <strong>DatasheetFilter Name</strong>: <strong>Bedingung</strong>: [Lieferanten-Nr] = [Formulare]! [Lieferanten]! [Lieferanten-Nr] <strong>Datenmodus</strong>: <strong>OnlyWindow Lesemodus</strong>: <strong>Normal</strong></p></td>
+<td><p><strong>Formularname</strong>: Produktlisten <strong>Ansicht</strong>: <strong>Datenblatt Filtername</strong>: <strong>Where Condition</strong>: [Supplier ID] = [Forms]! [Lieferanten]! LieferantenNr <strong>Datenmodus</strong>: <strong>Lese-schreibgeschütztfenstermodus-Modus</strong>: <strong>Normal</strong></p></td>
 <td><p>Öffnen Sie das Produktlistenformular, und ziegen Sie die Produkte des aktuellen Lieferanten an.</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><strong>MoveAndSizeWindow</strong></p></td>
-<td><p><strong>Rechts</strong>: 0.7799&quot; <strong>nach unten</strong>: 1,8&quot;</p></td>
+<td><p><strong>Verschiebenundgrößeändernfenster</strong></p></td>
+<td><p><strong>rechts</strong>: 0,7799&quot; <strong>unten</strong>: 1,8&quot;</p></td>
 <td><p>Positionieren Sie das Produktlistenformular in der unteren rechten Ecke des Lieferantenformulars.</p></td>
 </tr>
 </tbody>

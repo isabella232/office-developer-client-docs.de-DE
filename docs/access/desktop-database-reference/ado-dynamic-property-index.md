@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2bfe788923d623300edac28f0f27534b3ffd8b32
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283401"
 ---
 # <a name="ado-dynamic-property-index"></a>Index zu dynamischen ADO-Eigenschaften
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Datenprovider, Dienstanbieter und Dienstkomponenten können den **Properties** -Auflistungen der nicht geöffneten Objekte [Connection](connection-object-ado.md) und [Recordset](recordset-object-ado.md) dynamische Eigenschaften hinzufügen. Ein bestimmter Anbieter kann möglicherweise auch zusätzliche Eigenschaften hinzufügen, wenn diese Objekte geöffnet sind. Einige dieser Eigenschaften sind im Abschnitt " [Dynamische ADO-Eigenschaften](ado-dynamic-properties.md)" aufgeführt. Weitere sind unter den jeweiligen Anbietern im Abschnitt "[Anhang A: Anbieter](appendix-a-providers.md)" aufgeführt.
 
 Bei der folgenden Tabelle handelt es sich um ein Cross-Index-System der ADO- und OLE DB-Namen für alle dynamischen Standardeigenschaften von OLE DB-Anbietern. Die Anbieter können mehr als die hier aufgeführten Eigenschaften hinzufügen. Gezielte Informationen zu anbieterspezifischen dynamischen Eigenschaften finden Sie in der Dokumentation zum Anbieter.
 
-In OLE DB Programmer's Reference wird ein ADO-Eigenschaftenname als "Description" bezeichnet. Weitere Informationen zu diesen Standardeigenschaften finden Sie in OLE DB Programmer's Reference. Suchen Sie im Index nach dem OLE DB-Eigenschaftennamen, oder lesen Sie die folgenden Abschnitte:
+The OLE DB Programmer's Reference refers to an ADO property name by the term, "Description." You can find more information about these standard properties in the OLE DB Programmer's Reference. Search for the OLE DB property name in the Index or see the following topics:
 
 - Appendix C: OLE DB Properties (in Englisch)
 
@@ -32,17 +32,17 @@ In OLE DB Programmer's Reference wird ein ADO-Eigenschaftenname als "Description
 
 - Supported OLE DB Properties of the Remoting Provider (in Englisch)
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Im Cross-Index verwendete Nummern:
 
 (1) Bei dieser Eigenschaft handelt es sich um ein boolesches Flag, das angibt, ob die benannte Schnittstelle verwendet werden soll. Sofern vorhanden, ist der entsprechende OLE DB-Eigenschaftenname aufgeführt.
 
-(2) die "Bookmarkable" ADO-Eigenschaft wird intern generiert für Abwärtskompatibilität Kompatibilität und der OLE DB-Eigenschaft DBPROP zugeordnet\_IROWSETLOCATE. Dies ist die gleiche Eigenschaft, die die ADO-Eigenschaft IRowsetLocate entspricht.
+(2) die "Bookmarkable"-ADO-Eigenschaft wird intern für Abwärtskompatibilität generiert und der OLE DB-Eigenschaft dbPROP\_IROWSETLOCATE zugeordnet. Diese Eigenschaft ist dieselbe wie die, die der ADO-Eigenschaft IRowsetLocate entspricht.
 
 (3) Der ADO-Eigenschaftenname Hidden Columns ist anders benannt als die Beschreibung des OLE DB-Eigenschaftennamens Hidden Columns Count.
 
-(4) Bei hierarchischen Datensatzgruppen wird die ADO-Eigenschaft Maximum Rows auf alle untergeordneten Datensatzgruppen angewendet. Je nach Reihenfolge, in der die Zeilen zurückgegeben werden, befinden sich in der Ergebnisgruppe für die einzelnen übergeordneten Gruppen alle, einige oder keine untergeordneten Gruppen oder verwaiste untergeordnete Gruppen. Daher muss die Kennung für die einzelnen untergeordneten Gruppen beim Umstrukturieren hierarchischer Datensatzgruppen eindeutig sein. Der Anbieter Microsoft Data Shaping Service for OLE DB (MSDATASHAPE) ermöglicht generell keine Unterscheidung zwischen Eigenschaften, die von der übergeordneten Gruppe vererbt werden können, und denjenigen, die nicht vererbt werden können.
+(4) For hierarchical recordsets, the "Maximum Rows" ADO property gets applied across all children. Depending on the order in which the rows are returned, you might have all, some or no children for each parent or orphaned children in the result set. Therefore, when reshaping hierarchical recordsets, the identifier for every child should be unique. In general, the [Microsoft Data Shaping Service for OLE DB (MSDATASHAPE)](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) provider does not allow for distinction between properties that can be inherited from the parent and those that cannot be inherited.
 
 (5) Nicht zutreffend.
 
@@ -134,7 +134,7 @@ Im Cross-Index verwendete Nummern:
 </tr>
 <tr class="odd">
 <td><p>Initial Catalog</p></td>
-<td><p>NULL</p></td>
+<td><p>DBPROP_INIT_CATALOG</p></td>
 </tr>
 <tr class="even">
 <td><p>Isolation Levels</p></td>
@@ -149,8 +149,8 @@ Im Cross-Index verwendete Nummern:
 <td><p>DBPROP_INIT_LCID</p></td>
 </tr>
 <tr class="odd">
-<td><p>Location</p></td>
-<td><p>STANDARD</p></td>
+<td><p>Standort</p></td>
+<td><p>DBPROP_INIT_LOCATION</p></td>
 </tr>
 <tr class="even">
 <td><p>Maximum Index Size</p></td>
@@ -318,7 +318,7 @@ Im Cross-Index verwendete Nummern:
 
 **Dynamische Eigenschaften von "Recordset"**
 
-Die **dynamischen Eigenschaften** des **Recordset** -Objekts sind nicht mehr verfügbar, wenn das **Recordset** -Objekt geschlossen wird.
+Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verfügbar, wenn das **Recordset**-Objekt geschlossen wird.
 
 <table>
 <colgroup>
@@ -338,7 +338,7 @@ Die **dynamischen Eigenschaften** des **Recordset** -Objekts sind nicht mehr ver
 </tr>
 <tr class="even">
 <td><p>IChapteredRowset</p></td>
-<td><p>(1)</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="odd">
 <td><p>IColumnsInfo</p></td>
@@ -354,7 +354,7 @@ Die **dynamischen Eigenschaften** des **Recordset** -Objekts sind nicht mehr ver
 </tr>
 <tr class="even">
 <td><p>IConvertType</p></td>
-<td><p>(1)</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="odd">
 <td><p>ILockBytes</p></td>
@@ -370,7 +370,7 @@ Die **dynamischen Eigenschaften** des **Recordset** -Objekts sind nicht mehr ver
 </tr>
 <tr class="even">
 <td><p>IParentRowset</p></td>
-<td><p>(1)</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetChange</p></td>
@@ -378,7 +378,7 @@ Die **dynamischen Eigenschaften** des **Recordset** -Objekts sind nicht mehr ver
 </tr>
 <tr class="even">
 <td><p>IRowsetExactScroll</p></td>
-<td><p>(1)</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetFind</p></td>
@@ -397,12 +397,12 @@ Die **dynamischen Eigenschaften** des **Recordset** -Objekts sind nicht mehr ver
 <td><p>DBPROP_IROWSETLOCATE (1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetRefresh abgelöst</p></td>
+<td><p>IRowsetRefresh</p></td>
 <td><p>DBPROP_IROWSETREFRESH (1)</p></td>
 </tr>
 <tr class="even">
 <td><p>IRowsetResynch</p></td>
-<td><p>(1)</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetScroll</p></td>
@@ -614,7 +614,7 @@ Die **dynamischen Eigenschaften** des **Recordset** -Objekts sind nicht mehr ver
 </tr>
 <tr class="odd">
 <td><p>Private1</p></td>
-<td><p>(5)</p></td>
+<td><p>5</p></td>
 </tr>
 <tr class="even">
 <td><p>Quick Restart</p></td>

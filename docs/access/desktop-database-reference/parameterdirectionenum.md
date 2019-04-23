@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fac07165416841691ee7bc3ca5dfcdc366861023
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287972"
 ---
 # <a name="parameterdirectionenum"></a>ParameterDirectionEnum
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, ob der [Parameter](parameter-object-ado.md) einen Eingabeparameter, einen Ausgabeparameter, sowohl einen Eingabe- als auch einen Ausgabeparameter oder den Rückgabewert aus einer gespeicherten Prozedur darstellt.
 
@@ -64,7 +64,7 @@ Gibt an, ob der [Parameter](parameter-object-ado.md) einen Eingabeparameter, ein
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -79,19 +79,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.ParameterDirection.INPUT</p></td>
+<td><p>AdoEnums. ParameterDirection. INPUT</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ParameterDirection.INPUTOUTPUT</p></td>
+<td><p>AdoEnums. ParameterDirection. Input Output</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ParameterDirection.OUTPUT</p></td>
+<td><p>AdoEnums. ParameterDirection. OUTPUT</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ParameterDirection.RETURNVALUE</p></td>
+<td><p>AdoEnums. ParameterDirection. RETURNVALUE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ParameterDirection.UNKNOWN</p></td>
+<td><p>AdoEnums. ParameterDirection. UNKNOWN</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: ADOX-Objekte (Access PC-Datenbank-Referenz)
+title: ADOX-Objekte (Access-Desktop-Daten Bankreferenz)
 TOCTitle: ADOX objects
 ms:assetid: d7db1aed-251b-888b-bc44-f61caeeac403
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250087(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d5051a9842645ac8f93be26bf6309dd05da7ec24
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280301"
 ---
 # <a name="adox-objects"></a>ADOX-Objekte
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Jedes Objekt kann in seiner entsprechenden Auflistung enthalten sein. Beispielsweise kann ein **Table** -Objekt in einer [Tables](tables-collection-adox.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADOX-Auflistungen](adox-collections.md) oder einer bestimmten Sammlung Thema.
+Jedes Objekt kann in seiner entsprechenden Auflistung enthalten sein. Beispielsweise kann ein **Table**-Objekt in einer [Tables](tables-collection-adox.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADOX-Auflistungen](adox-collections.md) oder einem bestimmten Sammlungs Thema.
 
 <br/>
 
@@ -39,7 +39,7 @@ Jedes Objekt kann in seiner entsprechenden Auflistung enthalten sein. Beispielsw
 <td><p>Enthält Auflistungen, die den Schemakatalog einer Datenquelle beschreiben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="column-object-adox.md">Column</a></p></td>
+<td><p><a href="column-object-adox.md">Spalte</a></p></td>
 <td><p>Stellt eine Spalte aus einer Tabelle, einem Index oder einem Schlüssel dar.</p></td>
 </tr>
 <tr class="odd">
@@ -55,7 +55,7 @@ Jedes Objekt kann in seiner entsprechenden Auflistung enthalten sein. Beispielsw
 <td><p>Stellt ein Primärschlüsselfeld, ein Fremdschlüsselfeld oder ein Feld für einen eindeutigen Schlüssel aus einer Datenbanktabelle dar.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="procedure-object-adox.md">Procedure</a></p></td>
+<td><p><a href="procedure-object-adox.md">Verfahren</a></p></td>
 <td><p>Stellt eine gespeicherte Prozedur dar.</p></td>
 </tr>
 <tr class="odd">

@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b13d21ef1bd8a95587eb78cd448f19f9fd0c24c0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288364"
 ---
 # <a name="openfunction-macro-action"></a>OpenFunction-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In einem Access-Projekt können Sie mithilfe der **ÖffnenFunktion** -Aktion eine benutzerdefinierte Funktion in der Datenblattansicht, in der Entwurfsansicht der Inlinefunktion, in der SQL-Texteditor-Ansicht (für eine benutzerdefinierte Skalarfunktion oder Tabellenfunktion) oder in der Seitenansicht öffnen. Mit dieser Aktion wird die benutzerdefinierte Funktion beim Öffnen in der Datenblattansicht ausgeführt. Sie können für die benutzerdefinierte Funktion auch den Dateneingabemodus auswählen und die von der benutzerdefinierten Funktion angezeigten Datensätze einschränken.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
-Die **ÖffnenFunktion** -Aktion verwendet die folgenden Argumente.
+Die **ÖffnenFunktion**-Aktion verwendet die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -45,21 +45,21 @@ Die **ÖffnenFunktion** -Aktion verwendet die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Funktionsname</strong></p></td>
-<td><p>Der Name der benutzerdefinierten Funktion zu öffnen. Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators werden alle benutzerdefinierten Funktionen in der aktuellen Datenbank. Dies ist ein Argument erforderlich. Wenn Sie ein Makro mit der <strong>ÖffnenFunktion</strong> -Aktion in einer Bibliotheksdatenbank ausführen, sucht Microsoft Access zuerst die Funktion mit diesem Namen in der Bibliotheksdatenbank und dann in der aktuellen Datenbank.</p></td>
+<td><p>Der Name der benutzerdefinierten Funktion, die geöffnet werden soll. Im Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargumente</strong> im Bereich des Makro-Generators werden alle benutzerdefinierten Funktionen in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, das die <strong>Funktion</strong> -Aktion in einer Bibliotheksdatenbank enthält, sucht Microsoft Access zunächst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach der Funktion mit diesem Namen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>View</strong></p></td>
 <td><p>Die Ansicht, in der die benutzerdefinierte Funktion geöffnet wird. Klicken Sie im Feld <strong>Ansicht</strong> auf <strong>Datenblatt</strong>, <strong>Entwurf</strong>, <strong>Seitenansicht</strong>, <strong>PivotTable</strong> oder <strong>PivotChart</strong>. Die Standardeinstellung ist <strong>Datenblatt</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Data Mode</strong></p></td>
+<td><p><strong>Datenmodus</strong></p></td>
 <td><p>Der Dateneingabemodus für die benutzerdefinierte Funktion. Dieser gilt nur für benutzerdefinierte Funktionen, die in der Datenblattansicht geöffnet sind. Klicken Sie auf <strong>Hinzufügen</strong> (der Benutzer kann neue Datensätze hinzufügen, vorhandene Datensätze jedoch nicht anzeigen oder bearbeiten), <strong>Bearbeiten</strong> (der Benutzer kann vorhandene Datensätze anzeigen oder bearbeiten und neue Datensätze hinzufügen) oder <strong>Schreibgeschützt</strong> (der Benutzer kann Datensätze nur anzeigen). Die Standardeinstellung ist <strong>Bearbeiten</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Aktion bewirkt dasselbe, wie wenn Sie auf eine benutzerdefinierte Funktion im Navigationsbereich doppelklicken oder mit der rechten Maustaste auf die Funktion im Navigationsbereich klicken und dann eine Ansicht auswählen.
 

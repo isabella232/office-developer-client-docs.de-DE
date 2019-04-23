@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: feb24e0f498e02bae01ef689a2ad62e487e314bc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287944"
 ---
 # <a name="parameters-collection-ado"></a>Parameters-Auflistung (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Enthält alle [Parameter](parameter-object-ado.md)-Objekte eines [Command](command-object-ado.md)-Objekts.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein **Command** -Objekt besitzt eine **Parameters** -Auflistung, die aus **Parameter** -Objekten besteht.
 

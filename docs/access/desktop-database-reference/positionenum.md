@@ -1,5 +1,5 @@
 ---
-title: PositionEnum (Access PC-Datenbank-Referenz)
+title: PositionEnum (Access Desktop Database Reference)
 TOCTitle: PositionEnum
 ms:assetid: 2a6f294b-74f2-b951-e32a-79ff5e782204
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249054(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4c791cbd31e346eef5ab8503cb55b0dec5e9fbbc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287503"
 ---
 # <a name="positionenum"></a>PositionEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die aktuelle Position des Datensatzzeigers innerhalb eines [Recordsets](recordset-object-ado.md) an.
 
@@ -49,13 +49,13 @@ Gibt die aktuelle Position des Datensatzzeigers innerhalb eines [Recordsets](rec
 <tr class="odd">
 <td><p><strong>adPosUnknown</strong></p></td>
 <td><p>-1</p></td>
-<td><p>Gibt an, dass das <strong>Recordset</strong> leer ist, die aktuelle Position unbekannt ist oder der Anbieter nicht die <a href="absolutepage-property-ado.md">AbsolutePage-</a> oder <a href="absoluteposition-property-ado.md">AbsolutePosition</a> -Eigenschaft.</p></td>
+<td><p>Gibt an, dass das <strong>Recordset</strong> -Objekt leer ist, die aktuelle Position unbekannt ist oder der Anbieter die <a href="absolutepage-property-ado.md">AbsolutePage</a> -oder <a href="absoluteposition-property-ado.md">AbsolutePosition</a> -Eigenschaft nicht unterstützt.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -70,13 +70,13 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.Position.BOF</p></td>
+<td><p>AdoEnums. Position. BOF</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.Position.EOF</p></td>
+<td><p>AdoEnums. Position. EOF</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.Position.UNKNOWN</p></td>
+<td><p>AdoEnums. Position. UNKNOWN</p></td>
 </tr>
 </tbody>
 </table>

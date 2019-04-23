@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e067c2ae893d19efdbcdc160fc7a7d54b9682297
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288546"
 ---
 # <a name="numericscale-and-precision-properties-example-vb"></a>NumericScale- und Precision-Eigenschaft (VB-Beispiel)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die Verwendung der [NumericScale](numericscale-property-adox.md)- und der [Precision](precision-property-adox.md)-Eigenschaft des [Column](column-object-adox.md)-Objekts veranschaulicht. Dieser Code deren Wert für die **Bestelldetails** -Tabelle der *Northwind* -Datenbank angezeigt.
+In diesem Beispiel wird die Verwendung der [NumericScale](numericscale-property-adox.md)- und der [Precision](precision-property-adox.md)-Eigenschaft des [Column](column-object-adox.md)-Objekts veranschaulicht. In diesem Code werden die Eigenschaftenwerte für die **Order Details**-Tabelle der *Northwind*-Datenbank angezeigt.
 
 ```vb 
  

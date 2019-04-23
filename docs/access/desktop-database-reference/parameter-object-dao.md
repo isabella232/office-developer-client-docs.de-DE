@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5df04b1ee06a2224db9e21f67e9c68a3ee5740bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288084"
 ---
 # <a name="parameter-object-dao"></a>Parameter-Objekt (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein **Parameter**-Objekt stellt einen Wert für eine Abfrage dar. Der Parameter wird einem **QueryDef**-Objekt zugeordnet, das aus einer Parameterabfrage erstellt wird.
 
@@ -37,7 +37,7 @@ Mit den Eigenschaften eines **Parameter**-Objekts können Sie eine Parameterabfr
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel veranschaulicht Parameter-Objekte und die Parameters-Auflistung. Es wird ein temporäres QueryDef-Objekt erstellt, und es werden basierend auf Änderungen, die am Parameters-Objekt des QueryDef-Objekts vorgenommen werden, Daten abgerufen. Zum Ausführen dieser Prozedur ist die ParametersChange-Prozedur erforderlich.
+This example demonstrates **Parameter** objects and the **Parameters** collection by creating a temporary **QueryDef** and retrieving data based on changes made to the **QueryDef** object's **Parameters**. The ParametersChange procedure is required for this procedure to run.
 
 ```vb
     Sub ParameterX() 

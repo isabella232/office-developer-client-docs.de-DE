@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4106e66074975f08a5058aafbfc0c6deac156277
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289836"
 ---
 # <a name="logevent-macro-action"></a>LogEvent-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **ProtokollierenEreignis** -Aktion werden Informationen in die **USysApplicationLog** -Systemtabelle geschrieben.
 
 > [!NOTE]
-> [!HINWEIS] Die **ProtokollierenEreignis** -Aktion ist nur in Datenmakros verfügbar.
+> Die **ProtokollierenEreignis**-Aktion ist nur in Datenmakros verfügbar.
 
 ## <a name="setting"></a>Einstellung
 
-Die **ProtokollierenEreignis** -Aktion kann mit den folgenden Argumenten verwendet werden.
+Die **ProtokollierenEreignis**-Aktion kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -36,7 +36,7 @@ Die **ProtokollierenEreignis** -Aktion kann mit den folgenden Argumenten verwend
 <thead>
 <tr class="header">
 <th><p>Argument</p></th>
-<th><p>Eingabe erforderlich</p></th>
+<th><p>Erforderlich</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -49,7 +49,7 @@ Die **ProtokollierenEreignis** -Aktion kann mit den folgenden Argumenten verwend
 </tbody>
 </table>
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit der **ProtokollierenEreignis** -Aktion können Sie in der **USysApplicationLog** -Systemtabelle Statusinformationen schreiben, für die nicht mit der **[AuslösenFehler](raiseerror-macro-action.md)** -Aktion ein Fehler ausgelöst werden muss. Beispielsweise können Sie Änderungen in einem bestimmten Feld protokollieren oder die Einträge in **USysApplicationLog** beim Debuggen des Makros verwenden.
 

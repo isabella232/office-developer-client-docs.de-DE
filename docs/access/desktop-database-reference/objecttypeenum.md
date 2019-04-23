@@ -1,5 +1,5 @@
 ---
-title: ObjectTypeEnum (Access PC-Datenbank-Referenz)
+title: ObjectTypeEnum (Access Desktop Database Reference)
 TOCTitle: ObjectTypeEnum
 ms:assetid: b0ee2113-dea9-912d-3442-e54885397310
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249842(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6e3b470c8c0d0c3f04b59bd382b66117bd79c188
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288532"
 ---
 # <a name="objecttypeenum"></a>ObjectTypeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Typ des Datenbankobjekts an, für das Berechtigungen oder Besitzrechte festgelegt werden sollen.
 

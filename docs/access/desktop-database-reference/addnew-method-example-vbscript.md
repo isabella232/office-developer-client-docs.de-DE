@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 86fc5698cd6463c7236ab4f82a2f4f74374d664e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281853"
 ---
 # <a name="addnew-method-example-vbscript"></a>AddNew-Methode (Beispiel) (VBScript)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [AddNew](addnew-method-ado.md)-Methode zum Erstellen eines neuen Datensatzes mit dem angegebenen Namen verwendet.
 
-Verwenden Sie das folgende Beispiel auf einer Active Server Page (ASP). Verwenden Sie Suchen, um nach der Datei Adovbs.inc zu suchen, und platzieren Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, und fügen Sie ihn in Editor oder einen anderen Text-Editor ein, und speichern Sie ihn unter AddNewVBS.asp. Sie können das Ergebnis in jedem Clientbrowser anzeigen.
+Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewVBS.asp**. You can view the result in any client browser.
 
 Zum Üben mit dem Beispiel fügen Sie einen neuen Datensatz im HTML-Formular hinzu. Klicken Sie auf **Hinzufügen**. Weitere Informationen zum Entfernen unerwünschter Datensätze finden Sie unter [Delete-Methode (Beispiel) (VBScript)](delete-method-example-vbscript.md).
 

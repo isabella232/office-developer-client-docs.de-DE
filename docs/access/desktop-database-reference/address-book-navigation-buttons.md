@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e7c87acd433df4a303c1e6a15a60184cadf994c3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282464"
 ---
 # <a name="address-book-navigation-buttons"></a>Navigationsschaltflächen des Adressbuchs
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die adressbuchanwendung zeigt die Navigationsschaltflächen unten auf der Webseite. Mithilfe der Navigationsschaltflächen können Sie durch die Daten in der HTML-Rasteransicht navigieren, indem Sie die erste oder die letzte Zeile mit Daten oder Zeilen neben der aktuellen Auswahl auswählen.
+Die Adressbuchanwendung zeigt die Navigationsschaltflächen am unteren Rand der Webseite an. Mithilfe der Navigationsschaltflächen können Sie durch die Daten in der HTML-Rasteransicht navigieren, indem Sie die erste oder die letzte Zeile mit Daten oder Zeilen neben der aktuellen Auswahl auswählen.
 
 ## <a name="navigation-sub-procedures"></a>Unterprozeduren für die Navigation
 
 Die Adressbuchanwendung enthält verschiedene Prozeduren, die es den Benutzern ermöglichen, auf die Schaltflächen **First**, **Next**, **Previous** und **Last** zu klicken, um durch die Daten zu navigieren.
 
-Aktiviert das erste VBScript beispielsweise durch Klicken auf die **erste** Schaltfläche\_OnClick Sub-Prozedur. Die Prozedur führt eine [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode, wodurch die erste Zeile der Daten der aktuellen Auswahl. Durch Klicken auf die Schaltfläche **letzte** aktiviert das letzte\_OnClick Sub-Prozedur, die die [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode der letzten Zeile der Daten der aktuellen Auswahl wird. Die verbleibenden Navigationstasten funktionieren auf ähnliche Weise.
+Wenn Sie beispielsweise auf die **erste** Schaltfläche klicken, wird\_die erste VBScript-Unterprozedur OnClick aktiviert. The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection. Wenn Sie auf die **Letzte** Schaltfläche klicken\_, wird die letzte OnClick-Sub-Prozedur aktiviert, die die [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode aufruft und die letzte Datenzeile zur aktuellen Auswahl macht. The remaining navigation buttons work in a similar fashion.
 
 ```vb 
  

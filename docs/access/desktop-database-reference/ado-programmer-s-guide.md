@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b44bf60399cd3bdab9e5a1e51d13cbfc1daaba6c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283240"
 ---
 # <a name="ado-programmers-guide"></a>ADO-Programmierhandbuch
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Das ADO-Programmierhandbuch wurde Entwickler unterstützen, die noch nicht mit ADO sind, und ihnen eine umfassende Einführung in die Technologie erstellt. In diesem Handbuch wird beschrieben, die die ADO-Familie-Bibliotheken und wird mit Beispielcode in verschiedenen Sprachen erläutert, wie Sie die Bibliotheken, bewährte Methoden für die Verwendung der Bibliotheken, und Tipps und Tricks zur Maximierung der Leistung von ADO-Anwendung verwenden.
+Das ADO-Programmierhandbuch wurde erstellt, um Entwicklern bei der Einführung in die Technologie zu helfen. Dieses Handbuch beschreibt die Bibliotheken der ADO-Familie und verwendet Beispielcode in einer Vielzahl von Sprachen, um zu erläutern, wie die Bibliotheken, bewährte Methoden für die Verwendung der Bibliotheken und Tipps und Tricks zur Maximierung der Leistung Ihrer ADO-Anwendung verwendet werden.
 
 Das ADO-Programmierhandbuch enthält die folgenden Abschnitte und Kapitel:
 

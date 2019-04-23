@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 1c37e798e0624a5655b63a76332073e5b57c0823
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288602"
 ---
 # <a name="navigateto-macro-action"></a>NavigateTo-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können mit der **NavigierenZu** -Aktion das Anzeigen von Datenbankobjekten im Navigationsbereich steuern. Sie können beispielsweise die Kategorisierungsweise von Datenbankobjekten ändern und die Objekte filtern, sodass nur bestimmte Objekte angezeigt werden.
 
 ## <a name="setting"></a>Einstellung
 
-Die **NavigierenZu** -Aktion hat folgende Argumente.
+Die **NavigierenZu**-Aktion hat folgende Argumente.
 
 <table>
 <colgroup>
@@ -41,12 +41,12 @@ Die **NavigierenZu** -Aktion hat folgende Argumente.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Category</strong></p></td>
+<td><p><strong>Kategorie</strong></p></td>
 <td><p>Erforderlich. Die Kategorie, gemäß der Objekte im Navigationsbereich angezeigt werden sollen. Klicken Sie im Feld <strong>Kategorie</strong> auf <strong>Objekttyp</strong>, <strong>Tabellen und Ansichten</strong>, <strong>Änderungsdatum</strong>, <strong>Erstellungsdatum</strong> oder <strong>Benutzerdefiniert</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Group</strong></p></td>
-<td><p>Optional. <strong>Das Argument Grenzwerte der Objekte in der Kategorie</strong> im Navigationsbereich angezeigt werden. Wenn Sie das <strong>Gruppe</strong> Argument leer lassen, wird im Navigationsbereich alle Datenbankobjekte kategorisiert nach den Kriterien im Argument " <strong>Category"</strong> festgelegten angezeigt. In der folgenden Tabelle sind Beispiele gültiger Argumente <strong>Group</strong> für die verschiedenen <strong>Kategorie</strong> Argumente aufgeführt.</p></td>
+<td><p>Optional. Durch das Argument <strong>Gruppe</strong> wird beschränkt, welche Objekte im Navigationsbereich angezeigt werden. Wenn Sie das Argument <strong>Gruppe</strong> leer lassen, werden im Navigationsbereich alle Datenbankobjekte angezeigt, die nach den Kriterien kategorisiert werden, die Sie im <strong>Category</strong> -Argument angeben. In der folgenden Tabelle werden Beispiele gültiger Argumente vom Typ <strong>Gruppe</strong> für die zahlreichen Argumente vom Typ <strong>Kategorie</strong> gezeigt.</p></td>
 </tr>
 </tbody>
 </table>
@@ -54,7 +54,7 @@ Die **NavigierenZu** -Aktion hat folgende Argumente.
 
 ## <a name="remarks"></a>Bemerkungen
 
-- Diese Aktion entspricht dem Auswählen von Kategorien und Gruppen aus der Titelleiste des Navigationsbereichs.
+- Diese Aktion ähnelt der Auswahl von Kategorien und Gruppen in der Titelleiste des Navigationsbereichs.
 
 - Gültige Argumente vom Typ **Gruppe** hängen vom verwendeten Argument **Kategorie** ab. Wenn Sie für **Gruppe** ein ungültiges Argument eingeben, wird eine Fehlermeldung angezeigt.Die folgende Tabelle enthält Beispiele gültiger Argumente vom Typ **Gruppe** für jedes Argument vom Typ **Kategorie**.
     
@@ -65,14 +65,14 @@ Die **NavigierenZu** -Aktion hat folgende Argumente.
   </colgroup>
   <thead>
   <tr class="header">
-  <th><p>Argument "Kategorie"</p></th>
-  <th><p>Beispiel für Argumente vom Typ "Gruppe"</p></th>
+  <th><p>Argument "Category"</p></th>
+  <th><p>Beispiel für Argumente "Group"</p></th>
   </tr>
   </thead>
   <tbody>
   <tr class="odd">
   <td><p>Objekttyp</p></td>
-  <td><p>Tabellen, Formulare, Abfragen, Seiten, Makros, Module</p></td>
+  <td><p>Tabellen; Formulare; Abfragen; Seiten; Makros; Module</p></td>
   </tr>
   <tr class="even">
   <td><p>Tabellen und Sichten</p></td>
@@ -80,7 +80,7 @@ Die **NavigierenZu** -Aktion hat folgende Argumente.
   </tr>
   <tr class="odd">
   <td><p>Geändert am</p></td>
-  <td><p>Heute, Gestern, Letzten Monat, Älter</p></td>
+  <td><p>Heute; Gestern; Letzten Monat; Älter</p></td>
   </tr>
   <tr class="even">
   <td><p>Erstellt am</p></td>
@@ -93,9 +93,9 @@ Die **NavigierenZu** -Aktion hat folgende Argumente.
   </tbody>
   </table>
 
-- Verwenden Sie zum Ausführen der **NavigierenZu** -Aktion in einem VBA-Modul die **NavigateTo** -Methode des **DoCmd** -Objekts.
+- Verwenden Sie zum Ausführen der **NavigierenZu**-Aktion in einem VBA-Modul die **NavigateTo**-Methode des **DoCmd**-Objekts.
 
 > [!NOTE]
-> Sie müssen zum Navigieren zur obersten Ebene einer Kategorie (beispielsweise Alle Tabellen, Alle Access-Objekte oder Alle Datumswerte) das Argument Gruppe leer lassen. Wenn beispielsweise das Argument Kategorie den Wert Objekttyp aufweist, wird durch Alle Access-Objekte als Argument Gruppe ein Fehler hervorgerufen.
+> To navigate to the top level of a category (for example, **All Tables**, **All Access Objects**, or **All Dates**), you must leave the Group argument blank. For example, when the **Category** argument is **Object Type**, entering **All Access Objects** as a **Group** argument results in an error.
 
 

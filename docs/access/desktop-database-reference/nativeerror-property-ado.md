@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 86734d77cafd8dbe3c26219e291c16b81ef0026b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288610"
 ---
 # <a name="nativeerror-property-ado"></a>NativeError-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den anbieterspezifischen Fehlercode für ein bestimmtes [Error](error-object-ado.md)-Objekt an.
 
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen **Long** -Wert zurück, der den Fehlercode angibt.
+Gibt einen **Long**-Wert zurück, der den Fehlercode angibt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie mit der **NativeError** -Eigenschaft die datenbankspezifische Fehlerinformation für ein bestimmtes **Error** -Objekt ab. Wenn z. B. der Microsoft OLE DB-Anbieter für ODBC mit einer Microsoft SQL Server-Datenbank verwendet wird, werden systemeigene Fehlercodes, die aus SQL Server stammen, über ODBC und den ODBC-Anbieter an die **NativeError** -Eigenschaft übergeben.
+Rufen Sie mit der **NativeError**-Eigenschaft die datenbankspezifische Fehlerinformation für ein bestimmtes **Error**-Objekt ab. Wenn z. B. der Microsoft OLE DB-Anbieter für ODBC mit einer Microsoft SQL Server-Datenbank verwendet wird, werden systemeigene Fehlercodes, die aus SQL Server stammen, über ODBC und den ODBC-Anbieter an die **NativeError**-Eigenschaft übergeben.
 

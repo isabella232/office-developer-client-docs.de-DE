@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d6f3acd4af280f30706e35eb7ecda1dee11aa7d4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288077"
 ---
 # <a name="parameter-object-ado"></a>Parameter-Objekt (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt einen Parameter oder ein Argument dar, der bzw. das einem [Command](command-object-ado.md)-Objekt zugeordnet ist, das auf einer parametrisierten Abfrage oder einer gespeicherten Prozedur basiert.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zahlreiche Anbieter unterstützen parametrisierte Befehle. Dies sind Befehle, in denen die gewünschte Aktion einmal definiert wird, aber Variablen (oder Parameter) verwendet werden, um Details des Befehls zu ändern. Eine SQL SELECT-Anweisung kann z. B. einen Parameter verwenden, um die Übereinstimmungskriterien einer WHERE-Klausel zu definieren, und eine andere, um den Spaltennamen für eine SORT BY-Klausel festzulegen.
 

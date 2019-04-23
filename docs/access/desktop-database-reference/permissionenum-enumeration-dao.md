@@ -1,5 +1,5 @@
 ---
-title: PermissionEnum (Aufzählung) (DAO)
+title: PermissionEnum-Aufzählung (DAO)
 TOCTitle: PermissionEnum Enumeration
 ms:assetid: dcce9940-f8a7-e915-1b69-05c341bea8cd
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835373(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8d4f6741bd6203dbdeffb364650b5e3550ea8b1c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287710"
 ---
-# <a name="permissionenum-enumeration-dao"></a>PermissionEnum (Aufzählung) (DAO)
+# <a name="permissionenum-enumeration-dao"></a>PermissionEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Hiermit geben Sie zusammen mit der **Permissions**-Eigenschaft den Berechtigungstyp an.
 
@@ -106,7 +106,7 @@ Hiermit geben Sie zusammen mit der **Permissions**-Eigenschaft den Berechtigungs
 <td><p>Der Benutzer kann Daten vom Dokumentobjekt abrufen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>über dbSecWriteDef</p></td>
+<td><p>dbSecWriteDef</p></td>
 <td><p>65548</p></td>
 <td><p>Der Benutzer kann die Tabellendefinition ändern oder löschen, einschließlich Spalten- und Indexinformationen.</p></td>
 </tr>

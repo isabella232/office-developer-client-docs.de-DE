@@ -12,19 +12,19 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 33443fda474b3785d34d457719e49f5e358bb254
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288511"
 ---
 # <a name="odbc-scalar-functions"></a>ODBC-Skalarfunktionen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Microsoft Access SQL unterstützt die Verwendung der ODBC definierten Syntax für Skalarfunktionen. 
+Microsoft Access SQL unterstützt die Verwendung der ODBC-Syntax für Skalarfunktionen. 
 
-Beispiel: die Abfrage `SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} > 5` alle Zeilen, bei denen der Absolute Wert der Änderung in die Preisänderung einer Aktie größer als fünf war, zurück.
+Die Abfrage `SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} > 5` würde beispielsweise alle Zeilen zurückgeben, bei denen der absolute Wert der Änderung des Kurses einer Aktie größer als fünf war.
 
 Es wird eine Untermenge der über ODBC definierten Skalarfunktionen unterstützt. In der folgenden Tabelle sind die unterstützten Funktionen aufgeführt.
 
@@ -41,26 +41,26 @@ Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesy
 <tbody>
 <tr class="odd">
 <td><p>ASCII</p></td>
-<td><p>LENGTH</p></td>
+<td><p>Länge</p></td>
 <td><p>RTRIM</p></td>
 </tr>
 <tr class="even">
 <td><p>CHAR</p></td>
-<td><p>LOCATE</p></td>
-<td><p>SPACE</p></td>
+<td><p>Suchen</p></td>
+<td><p>LEERTASTE</p></td>
 </tr>
 <tr class="odd">
 <td><p>CONCAT</p></td>
 <td><p>LTRIM</p></td>
-<td><p>SUBSTRING</p></td>
+<td><p>Teilzeichenfolge</p></td>
 </tr>
 <tr class="even">
 <td><p>LCASE</p></td>
-<td><p>RIGHT</p></td>
+<td><p>Richting</p></td>
 <td><p>UCASE</p></td>
 </tr>
 <tr class="odd">
-<td><p>LEFT</p></td>
+<td><p>Links</p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
@@ -80,16 +80,16 @@ Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesy
 <tr class="odd">
 <td><p>ABS</p></td>
 <td><p>FLOOR</p></td>
-<td><p>SIN</p></td>
+<td><p>Sünde</p></td>
 </tr>
 <tr class="even">
-<td><p>ATAN</p></td>
-<td><p>LOG</p></td>
-<td><p>SQRT</p></td>
+<td><p>ARCTAN</p></td>
+<td><p>Protokoll</p></td>
+<td><p>Wurzel</p></td>
 </tr>
 <tr class="odd">
-<td><p>CEILING</p></td>
-<td><p>POWER</p></td>
+<td><p>Decke</p></td>
+<td><p>MACHT</p></td>
 <td><p>TAN</p></td>
 </tr>
 <tr class="even">
@@ -99,7 +99,7 @@ Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesy
 </tr>
 <tr class="odd">
 <td><p>EXP</p></td>
-<td><p>SIGN</p></td>
+<td><p>Zeichen</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -118,17 +118,17 @@ Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesy
 <tr class="odd">
 <td><p>CURDATE</p></td>
 <td><p>DAYOFYEAR</p></td>
-<td><p>MONTH</p></td>
+<td><p>Monat</p></td>
 </tr>
 <tr class="even">
 <td><p>CURTIME</p></td>
-<td><p>YEAR</p></td>
-<td><p>WEEK</p></td>
+<td><p>Jahr</p></td>
+<td><p>Woche</p></td>
 </tr>
 <tr class="odd">
-<td><p>NOW</p></td>
-<td><p>HOUR</p></td>
-<td><p>QUARTER</p></td>
+<td><p>JETZT</p></td>
+<td><p>Stunde</p></td>
+<td><p>Quartal</p></td>
 </tr>
 <tr class="even">
 <td><p>DAYOFMONTH</p></td>
@@ -137,7 +137,7 @@ Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesy
 </tr>
 <tr class="odd">
 <td><p>DAYOFWEEK</p></td>
-<td><p>SECOND</p></td>
+<td><p>ZWEITEN</p></td>
 <td><p>DAYNAME</p></td>
 </tr>
 </tbody>
@@ -153,7 +153,7 @@ Eine Beschreibung der Argumente und eine ausführliche Erläuterung der Escapesy
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>CONVERT</p></td>
+<td><p>Konvertieren</p></td>
 <td><p>Zeichenfolgenliterale können in folgende Datentypen konvertiert werden: SQL_FLOAT, SQL_DOUBLE, SQL_NUMERIC, SQL_INTEGER, SQL_REAL, SQL_SMALLINT, SQL_VARCHAR und SQL_DATETIME.</p></td>
 </tr>
 </tbody>

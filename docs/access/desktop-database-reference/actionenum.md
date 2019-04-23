@@ -1,5 +1,5 @@
 ---
-title: ActionEnum (Access PC-Datenbank-Referenz)
+title: ActionEnum (Access Desktop Database Reference)
 TOCTitle: ActionEnum
 ms:assetid: 225024c1-9088-b532-2a23-04c1aaaaa892
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248998(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f098adb42df39d1509a6d22decd8d2cead684f11
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280656"
 ---
 # <a name="actionenum"></a>ActionEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Aktionstyp an, der beim Aufruf von [SetPermissions](setpermissions-method-adox.md) ausgeführt werden soll.
 
@@ -50,7 +50,7 @@ Gibt den Aktionstyp an, der beim Aufruf von [SetPermissions](setpermissions-meth
 <td><p>Alle expliziten Zugriffsrechte der Gruppe oder des Benutzers werden aufgehoben.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adAccessSet</strong></p></td>
+<td><p><strong>anFügungen</strong></p></td>
 <td><p>2</p></td>
 <td><p>Die Gruppe oder der Benutzer verfügen genau über die angeforderten Berechtigungen.</p></td>
 </tr>

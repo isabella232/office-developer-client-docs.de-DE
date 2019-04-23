@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5c7021c6f97d1aaa9c82e65eab98a3259d6eb87e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288651"
 ---
 # <a name="name-property-adox"></a>Name-Eigenschaft (ADOX)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Namen des Objekts an.
 
@@ -24,7 +24,7 @@ Gibt den Namen des Objekts an.
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **Long** festgelegt oder zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Namen müssen innerhalb einer Auflistung nicht eindeutig sein.
 
@@ -33,7 +33,7 @@ Die **Name** -Eigenschaft verfügt über Lese-/Schreibzugriff für [Column](colu
 Für Objekte mit Lese-/Schreibzugriff (**Column**-, **Group**-, **Key**-, **Index**-, **Table**- und **User**-Objekte) ist der Standardwert eine leere Zeichenfolge ("").
 
 > [!NOTE]
-> - [!HINWEIS] Diese Eigenschaft ist schreibgeschützt für **Key** -Objekte, die bereits an eine Auflistung angefügt wurden.
+> - Diese Eigenschaft ist schreibgeschützt für **Key**-Objekte, die bereits an eine Auflistung angefügt wurden.
 > - [!HINWEIS] Diese Eigenschaft ist schreibgeschützt für **Table** -Objekte, die bereits an eine Auflistung angefügt wurden.
 
 

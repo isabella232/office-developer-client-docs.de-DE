@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2d3d51fa745f17fb07f6a46064ba8ffc626cbb3e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283387"
 ---
 # <a name="ado-error-codes"></a>ADO-Fehlercodes
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Neben den Anbieterfehlern, die in den [Error](error-object-ado.md)-Objekten der [Errors](errors-collection-ado.md)-Auflistung zurückgegeben werden, kann ADO auch Fehler an den Ausnahmebehandlungsmechanismus der Laufzeitumgebung zurückgeben. Verwenden Sie den Fehlerbehebungsmechanismus Ihrer Programmiersprache, wie z. B. die **On Error** -Anweisung in Microsoft Visual Basic oder den **try-catch** -Block in Microsoft Visual C++ oder Microsoft Visual J++, um ADO-Fehler zu erfassen.
 

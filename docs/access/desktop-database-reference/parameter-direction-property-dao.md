@@ -1,5 +1,5 @@
 ---
-title: Parameter.Direction-Eigenschaft (DAO)
+title: Parameter. Direction-Eigenschaft (DAO)
 TOCTitle: Direction Property
 ms:assetid: b78c87ff-1181-21ef-7126-92d309751005
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822422(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 3260fd3f01e8ca22d5be4f8d14f6376c31e2735a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288091"
 ---
-# <a name="parameterdirection-property-dao"></a>Parameter.Direction-Eigenschaft (DAO)
+# <a name="parameterdirection-property-dao"></a>Parameter. Direction-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 ## <a name="syntax"></a>Syntax
@@ -32,13 +32,13 @@ ms.locfileid: "28712260"
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die Einstellung oder der Rückgabewert ist vom Datentyp Long und kann auf eine der ParameterDirectionEnum-Konstanten festgelegt werden.
+The setting or return value is a Long that can be set to one of the **[ParameterDirectionEnum](parameterdirectionenum-enumeration-dao.md)** constants.
 
 Bestimmen Sie mit der **Direction**-Eigenschaft, ob der Parameter ein Eingabeparameter und/oder ein Ausgabeparameter oder der Rückgabewert der Prozedur ist. Einige ODBC-Treiber geben keine Informationen zur Richtung der Parameter für eine SELECT-Anweisung oder einen Prozeduraufruf an. In diesen Fällen muss die Richtung vor dem Ausführen der Abfrage festgelegt werden.
 
-Das folgende Verfahren gibt beispielsweise einen Wert zurück, aus einer gespeicherten Prozedur mit dem Namen "abrufen\_Employees":
+Die folgende Prozedur gibt beispielsweise einen Wert aus einer gespeicherten Prozedur mit dem Namen "\_Get Employees" zurück:
 
-{? Anruf Get =\_Mitarbeiter}
+{? = Anruf get\_Employees}
 
 Dieser Aufruf ergibt einen Parameter, und zwar den Rückgabewert. Sie müssen die Richtung dieses Parameters auf **dbParamOutput** oder **dbParamReturnValue** festlegen, bevor Sie **[QueryDef](querydef-object-dao.md)** ausführen.
 

@@ -8,19 +8,19 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a80b089fa72ef01eb1b4b2f1dae494e002c6a6fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281956"
 ---
 # <a name="accessing-rows-in-a-hierarchical-recordset"></a>Zugreifen auf Zeilen in einem hierarchischen Recordset
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das folgende Beispiel zeigt die notwendigen Schritte zum Zugreifen auf Zeilen in einem hierarchischen [Recordset](recordset-object-ado.md):
 
-1. Recordset-Objekte aus den Tabellen authors und titleauthor werden nach Autor-Nr. miteinander in Beziehung gesetzt.
+1. **Recordset** objects from the authors and titleauthor tables are related by author ID.
 
 2. In der äußeren Schleife werden der Vor- und Nachname, der Status und die Identifikation jedes Autors angezeigt.
 
@@ -29,7 +29,7 @@ Das folgende Beispiel zeigt die notwendigen Schritte zum Zugreifen auf Zeilen in
 4. In der inneren Schleife werden vier Felder aus jeder Zeile im angefügten **Recordset** angezeigt.
 
 > [!NOTE] 
-> [StayInSync](stayinsync-property-ado.md) -Eigenschaft wird zur Veranschaulichung, auf FALSE festgelegt, damit Sie sehen können, das Kapitel in jeder Iteration der äußeren Schleife explizit ändern. Das Beispiel ist jedoch effizienter, wenn die Zuweisung in Schritt 3 vor die erste Zeile in Schritt 2 verschoben wird, sodass die Zuweisung nur ein Mal ausgeführt wird. **StayInSync** -Eigenschaft auf TRUE festgelegt, sodass *RstTitleAuthor* implizit und automatisch in das entsprechende Kapitel geändert wird, wenn *Rst* an eine neue Zeile verschoben wird.
+> Die [StayInSync](stayinsync-property-ado.md) -Eigenschaft ist für Zwecke der Illustration auf false festgelegt, sodass Sie die Kapitel Änderung explizit in jeder Iteration der äußeren Schleife sehen können. Das Beispiel ist jedoch effizienter, wenn die Zuweisung in Schritt 3 vor die erste Zeile in Schritt 2 verschoben wird, sodass die Zuweisung nur ein Mal ausgeführt wird. Legen Sie die **StayInSync** -Eigenschaft auf true fest, sodass *rstTitleAuthor* implizit und automatisch in das entsprechende Kapitel wechselt, wenn *RST* zu einer neuen Zeile wechselt.
 
 **Beispiel**
 

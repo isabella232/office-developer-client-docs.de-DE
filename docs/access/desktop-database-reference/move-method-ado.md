@@ -1,5 +1,5 @@
 ---
-title: "\"Move\"-Methode - ActiveX Data Objects (ADO)"
+title: Move-Methode-ActiveX Data Objects (ADO)
 TOCTitle: Move method (ADO)
 ms:assetid: 1f858654-5fa3-273d-7cdc-574c5f09a420
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248982(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6c7db661e590bc21605d9c289b1de6d4ae9f46e2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288834"
 ---
 # <a name="move-method-ado"></a>Move-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Verschiebt die Position des aktuellen Datensatzes in einem [Recordset](recordset-object-ado.md)-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset-Objekt*. Verschieben von *NumRecords*, *Starten*
+*Recordset*. *Numrecords*verschieben, *starten*
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,23 +31,23 @@ Verschiebt die Position des aktuellen Datensatzes in einem [Recordset](recordset
 |*NumRecords* |Ein signierter **Long** -Ausdruck, der die Anzahl von Datensätzen angibt, um die die aktuelle Position des Datensatzes verschoben wird.|
 |*Start* |Optional. Ein **String** -Wert oder ein **Variant** -Wert, der eine Textmarke ergibt. Sie können auch einen [BookmarkEnum](bookmarkenum.md)-Wert verwenden.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **Move** -Methode wird für alle **Recordset** -Objekte unterstützt.
+Die **Move**-Methode wird für alle **Recordset**-Objekte unterstützt.
 
 Wenn das Argument *NumRecords* größer als null ist, wird die aktuelle Datensatzposition vorwärts verschoben (zum Ende des **Recordset**-Objekts hin). Wenn *NumRecords* kleiner als null ist, wird die aktuelle Datensatzposition rückwärts verschoben (zum Anfang des **Recordset**-Objekts hin).
 
-Wenn der Anruf **Verschieben** die Position des aktuelle Datensatzes zu einem Zeitpunkt vor dem ersten Datensatz verschoben würde, legt ADO den aktuellen Datensatz an der Position vor dem ersten Datensatz im Recordset-Objekt ([BOF-Eigenschaft](bof-eof-properties-ado.md) ist **True**). Beim Versuch, den Datensatz nach hinten zu verschieben, wenn die **BOF** -Eigenschaft bereits auf **True** festgelegt ist, wird ein Fehler generiert.
+Wenn der **Verschiebungs** Aufruf die aktuelle Datensatzposition vor dem ersten Datensatz verschiebt, wird der aktuelle Datensatz von ADO auf die Position vor dem ersten Datensatz im Recordset-Objekt festgelegt ([BOF](bof-eof-properties-ado.md) ist **true**). Beim Versuch, den Datensatz nach hinten zu verschieben, wenn die **BOF**-Eigenschaft bereits auf **True** festgelegt ist, wird ein Fehler generiert.
 
-Wenn der Anruf **Verschieben** die Position des aktuelle Datensatzes zu einem Zeitpunkt nach dem letzten Datensatz verschoben würde, legt ADO den aktuellen Datensatz auf die Position nach dem letzten Datensatz im Recordset-Objekt ([EOF](bof-eof-properties-ado.md) ist **True**). Beim Versuch, den Datensatz nach vorn zu verschieben, wenn die **EOF** -Eigenschaft bereits auf **True** festgelegt ist, wird ein Fehler generiert.
+Wenn die aktuelle Position des Datensatzes beim Aufrufen von **Move** an eine Stelle hinter dem letzten Datensatz verschoben werden würde, legt ADO den aktuellen Datensatz auf die Position nach dem letzten Datensatz in der Datensatzgruppe fest ([EOF](bof-eof-properties-ado.md) ist **True**). Beim Versuch, den Datensatz nach vorn zu verschieben, wenn die **EOF**-Eigenschaft bereits auf **True** festgelegt ist, wird ein Fehler generiert.
 
-Beim Aufrufen der **Move** -Methode aus einem leeren **Recordset** -Objekt wird ein Fehler generiert.
+Beim Aufrufen der **Move**-Methode aus einem leeren **Recordset**-Objekt wird ein Fehler generiert.
 
-Wenn Sie das Argument *Start* übergeben, ist die Verschiebung relativ zum Datensatz mit diesem Lesezeichen, vorausgesetzt, dass das **Recordset** -Objekt Lesezeichen unterstützt. Ist es nicht angegeben, ist die Verschiebung relativ zum aktuellen Datensatz.
+Wenn Sie das Argument *Start* übergeben, ist die Verschiebung relativ zum Datensatz mit dieser Textmarke, wobei davon ausgegangen wird, dass das **Recordset**-Objekt Textmarken unterstützt. Ist es nicht angegeben, ist die Verschiebung relativ zum aktuellen Datensatz.
 
-Bei Verwendung die [CacheSize](cachesize-property-ado.md) -Eigenschaft auf lokal Cache Datensätze aus der Anbieter auf und übergibt ein *NumRecords* -Argument, das die aktuelle Datensatzposition außerhalb der aktuellen Gruppe der zwischengespeicherten Datensätze verschiebt erzwingt, dass ADO Abrufen einer neuen Gruppe von Datensätzen, Starten aus dem Zieldatensatz. Die **CacheSize** -Eigenschaft bestimmt die Größe der neu abgerufenen Gruppe, und der Zieldatensatz ist der erste abgerufene Datensatz.
+Falls Sie mithilfe der [CacheSize](cachesize-property-ado.md)-Eigenschaft Datensätze vom Anbieter lokal zwischenspeichern, wird durch das Übergeben eines Arguments *NumRecords*, mit dem die aktuelle Datensatzposition außerhalb der aktuellen Gruppe zwischengespeicherter Datensätze verschoben wird, ADO gezwungen, eine neue Datensatzgruppe ausgehend vom Zieldatensatz abzurufen. Die **CacheSize**-Eigenschaft bestimmt die Größe der neu abgerufenen Gruppe, und der Zieldatensatz ist der erste abgerufene Datensatz.
 
-Wenn das **Recordset** -Objekt vorwärts nur erfolgt, kann Benutzer weiterhin mit ein Argument *NumRecords* kleiner als 0 (null), übergeben, vorausgesetzt das Ziel innerhalb der aktuellen Gruppe der zwischengespeicherten Einträge ist. Wenn die aktuelle Position des Datensatzes beim Aufrufen von **Move** auf einen Datensatz vor dem ersten zwischengespeicherten Datensatz verschoben wird, tritt ein Fehler auf. Daher können Sie statt einem Anbieter, der nur einen vorwärtsgerichteten Bildlauf unterstützt, einen Datensatzcache verwenden, der einen vollständigen Bildlauf unterstützt. Da zwischengespeicherte Datensätze in den Speicher geladen werden, sollten Sie nur so viele Datensätze wie erforderlich zwischenspeichern. Selbst wenn ein vorwärtsgerichtetes **Recordset** -Objekt rückwärtsgerichtete Verschiebungen dieser Art unterstützt, wird beim Aufrufen der [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)-Methode für ein vorwärtsgerichtetes **Recordset** -Objekt ein Fehler generiert.
+Ist das **Recordset**-Objekt vorwärtsgerichtet, kann der Benutzer auch ein Argument *NumRecords* übergeben, das kleiner als 0 (Null) ist, wenn sich das Ziel innerhalb der aktuellen Gruppe der zwischengespeicherten Datensätze befindet. Wenn die aktuelle Position des Datensatzes beim Aufrufen von **Move** auf einen Datensatz vor dem ersten zwischengespeicherten Datensatz verschoben wird, tritt ein Fehler auf. Daher können Sie statt einem Anbieter, der nur einen vorwärtsgerichteten Bildlauf unterstützt, einen Datensatzcache verwenden, der einen vollständigen Bildlauf unterstützt. Da zwischengespeicherte Datensätze in den Speicher geladen werden, sollten Sie nur so viele Datensätze wie erforderlich zwischenspeichern. Selbst wenn ein vorwärtsgerichtetes **Recordset**-Objekt rückwärtsgerichtete Verschiebungen dieser Art unterstützt, wird beim Aufrufen der [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)-Methode für ein vorwärtsgerichtetes **Recordset**-Objekt ein Fehler generiert.
 
 
 > [!NOTE]

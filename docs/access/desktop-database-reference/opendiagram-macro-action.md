@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f4273d6858ad98b723d66ba32fe3b9aa7c902d31
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288357"
 ---
 # <a name="opendiagram-macro-action"></a>OpenDiagram-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In einem Access-Projekt können Sie die **ÖffnenDiagramm** -Aktion verwenden, um ein Datenbankdiagramm in der Entwurfsansicht zu öffnen.
 
@@ -29,7 +29,7 @@ In einem Access-Projekt können Sie die **ÖffnenDiagramm** -Aktion verwenden, u
 
 ## <a name="setting"></a>Einstellung
 
-Die **ÖffnenDiagramm** -Aktion verwendet das folgende Argument.
+Die **ÖffnenDiagramm**-Aktion verwendet das folgende Argument.
 
 <table>
 <colgroup>
@@ -45,12 +45,12 @@ Die **ÖffnenDiagramm** -Aktion verwendet das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Diagrammname</strong></p></td>
-<td><p>Der Name der zu öffnenden Datenbankdiagramms. Feld <strong>Diagrammname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators zeigt alle Datenbankdiagramme in der aktuellen Datenbank. Dies ist ein erforderliches Argument. Wenn Sie ein Makro, das die <strong>ÖffnenDiagramm</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen, sucht Microsoft Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Diagramm mit diesem Namen.</p></td>
+<td><p>Der Name des zu öffnenden Datenbankdiagramms. Im Feld <strong>Diagramm Name</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator werden alle Datenbankdiagramme in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro, das die <strong>ÖffnenDiagramm</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen, sucht Microsoft Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Diagramm mit diesem Namen.</p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Aktion entspricht dem Doppelklicken auf ein Datenbankdiagramm im Navigationsbereich oder dem Klicken mit der rechten Maustaste auf das Datenbankdiagramm im Navigationsbereich und dem anschließenden Klicken auf **Entwurfsansicht**.
 

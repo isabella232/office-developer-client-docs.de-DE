@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7fb5302d1c2b8e4eebb6dbe1a5906459834b8e41
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281867"
 ---
 # <a name="address-book-data-binding-object"></a>Datenbindungsobjekt des Adressbuchs
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In der Adressbuchanwendung wird das [RDS.DataControl](datacontrol-object-rds.md)-Objekt zum Binden von Daten von der SQL Server-Datenbank an visuelle Objekte (in diesem Fall eine DHTML-Tabelle) in der Client-HTML-Seite der Anwendung verwendet. Die ereignisgesteuerte VBScript-Programmlogik verwendet [RDS.DataControl](datacontrol-object-rds.md) für Folgendes:
 
@@ -41,7 +41,7 @@ Mit dem OBJECT-Tag wird die Komponente **RDS.DataControl** im Programm definiert
 
   - Parameter, die dem generischen OBJECT-Tag zugeordnet sind.
 
-  - Parameter, die nur für das **RDS.DataControl** -Objekt gelten.
+  - Parameter, die nur für das **RDS.DataControl**-Objekt gelten.
 
 ## <a name="generic-object-tag-parameters"></a>Generische Parameter des OBJECT-Tags
 
@@ -73,7 +73,7 @@ In der folgenden Tabellen werden die Parameter beschrieben, die dem OBJECT-Tag z
 
 ## <a name="rdsdatacontrol-tag-parameters"></a>RDS.DataControl-Tagparameter
 
-In der folgenden Tabelle werden die Parameter beschrieben, die für das **RDS.DataControl** -Objekt gelten. (Eine vollständige Liste der **RDS.DataControl** -Objektparameter und Informationen zu deren Implementierung finden Sie unter [RDS.DataControl-Objekt](datacontrol-object-rds.md).)
+In der folgenden Tabelle werden die Parameter beschrieben, die für das **RDS.DataControl**-Objekt gelten. (Eine vollständige Liste der **RDS.DataControl**-Objektparameter und Informationen zu deren Implementierung finden Sie unter [RDS.DataControl-Objekt](datacontrol-object-rds.md).)
 
 <table>
 <colgroup>
@@ -89,10 +89,10 @@ In der folgenden Tabelle werden die Parameter beschrieben, die für das **RDS.Da
 <tbody>
 <tr class="odd">
 <td><p><a href="server-property-rds.md">SERVER</a></p></td>
-<td><p>Wenn Sie HTTP verwenden, ist der Wert der Name des Servercomputers mit https://.</p></td>
+<td><p>Wenn Sie HTTP verwenden, ist der Wert der Name des Servercomputers, dem https://vorangestellt ist.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-property-rds.md">EINE VERBINDUNG HERSTELLEN</a></p></td>
+<td><p><a href="connect-property-rds.md">VERBINDEN</a></p></td>
 <td><p>Bietet die erforderlichen Verbindungsinformationen für <strong>RDS.DataControl</strong>, um eine Verbindung mit SQL Server herzustellen.</p></td>
 </tr>
 <tr class="odd">

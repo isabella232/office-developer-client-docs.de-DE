@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 539feb1918877189548d0e7cff6ceb28e50abddc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283261"
 ---
 # <a name="ado-objects-and-interfaces"></a>ADO-Objekte und -Schnittstellen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die Beziehungen zwischen diesen Objekten werden im Objektmodell von ActiveX Data Objects (ADO) dargestellt.
+Die Beziehungen zwischen diesen Objekten werden im ADO-Objektmodell (ActiveX Data Objects) dargestellt.
 
-Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADO-Auflistungen](ado-collections.md) oder einer bestimmten Sammlung Thema.
+Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADO-Auflistungen](ado-collections.md) oder einem bestimmten Sammlungs Thema.
 
 <br/>
 
@@ -43,7 +43,7 @@ Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweis
 <td><p>Ein <strong>Recordset</strong>-ADO-Objekt wird aus einem <strong>Rowset</strong>-OLE DB-Objekt in einer C/C++-Anwendung erstellt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="error-object-ado.md">Command</a></p></td>
+<td><p><a href="error-object-ado.md">Befehl</a></p></td>
 <td><p>Definiert einen spezifischen Befehl, den Sie in einer Datenquelle ausführen wollen.</p></td>
 </tr>
 <tr class="even">
@@ -51,11 +51,11 @@ Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweis
 <td><p>Stellt eine offene Verbindung zu einer Datenquelle dar.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="error-object-ado.md">Fehler</a></p></td>
+<td><p><a href="error-object-ado.md">Error</a></p></td>
 <td><p>Enthält Details zu Datenzugriffsfehlern, die sich auf eine einzelne Operation beziehen, die den Anbieter betrifft.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="field-object-ado.md">Field</a></p></td>
+<td><p><a href="field-object-ado.md">Feld</a></p></td>
 <td><p>Stellt Daten mit einem gemeinsamen Datentyp in einer Spalte dar.</p></td>
 </tr>
 <tr class="odd">

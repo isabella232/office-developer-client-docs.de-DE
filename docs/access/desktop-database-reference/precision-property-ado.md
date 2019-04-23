@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 662e5e9287da1ccfb81c727f5d5e5dfedce2969b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287475"
 ---
 # <a name="precision-property-ado"></a>Precision-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Genauigkeitsgrad für numerische Werte in einem [Parameter](parameter-object-ado.md)-Objekt oder für numerische [Field](field-object-ado.md)-Objekte an.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
-Legt einen **Byte** -Wert fest oder gibt den Wert zurück, der die maximale Anzahl von Stellen angibt, die zum Darstellen eines Werts verwendet werden.
+Legt einen **Byte**-Wert fest oder gibt den Wert zurück, der die maximale Anzahl von Stellen angibt, die zum Darstellen eines Werts verwendet werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Bestimmen Sie mit der **Precision** -Eigenschaft die maximale Anzahl von Stellen, die zum Darstellen von Werten für ein numerisches **Parameter** - oder **Field** -Objekt verwendet werden.
+Bestimmen Sie mit der **Precision**-Eigenschaft die maximale Anzahl von Stellen, die zum Darstellen von Werten für ein numerisches **Parameter**- oder **Field**-Objekt verwendet werden.
 
 Der Wert ist bei einem **Parameter** -Objekt nicht schreibgeschützt.
 

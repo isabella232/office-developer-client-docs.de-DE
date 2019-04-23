@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5065b966608f8d6a3ef1cb05be890b9a1f147dc8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288960"
 ---
-# <a name="microsoft-data-shaping-service-for-ole-db-ado-service-provider"></a>Microsoft Data Shaping Dienst für OLE DB (ADO-Dienstanbieter)
+# <a name="microsoft-data-shaping-service-for-ole-db-ado-service-provider"></a>Microsoft Data Shaping Service for OLE DB (ADO Service Provider)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Der Dienstanbieter Microsoft Data Shaping Dienst für OLE DB unterstützt das Erstellen von hierarchischen (strukturierten) [Recordset](recordset-object-ado.md)-Objekten aus einem Datenanbieter.
 
@@ -48,7 +48,7 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 <tbody>
 <tr class="odd">
 <td><p><strong>Unique Reshape Names</strong></p></td>
-<td><p>Gibt an, ob <strong>Recordset</strong> -Objekte mit doppelten Werten für deren Eigenschaften <strong>Reshape Name</strong> zulässig sind. Wenn diese dynamische Eigenschaft <strong>True ist</strong> und ein neues <strong>Recordset-Objekt</strong> wird erstellt, mit derselben vom Benutzer angegebener reshape Name als ein bereits vorhandenes <strong>Recordset-Objekt</strong>, und klicken Sie dann das neue <strong>Recordset</strong> -Objekt Reshape Name wird geändert, damit es eindeutig ist. Wenn diese Eigenschaft <strong>False</strong> ist, und ein neues <strong>Recordset-Objekt</strong> wird erstellt, mit derselben vom Benutzer angegebener reshape Name als den vorhandenen <strong>Recordset</strong>, beide <strong>Recordset</strong> -Objekte haben dieselbe reshape Name. Aus diesem Grund kann weder <strong>Recordset</strong> strukturiert werden, solange beide Objekte vorhanden sind. Der Standardwert der Eigenschaft lautet <strong>False</strong>.</p></td>
+<td><p>Gibt an, ob <strong>Recordset</strong> -Objekte mit doppelten Werten für Ihre reshape-Eigenschaften zulässig sind. <strong></strong> Wenn diese dynamische Eigenschaft auf <strong>true</strong> festgelegt ist und ein neues <strong>Recordset</strong> -Objekt mit demselben vom Benutzer angegebenen reshape-Namen als vorhandenes <strong>Recordset</strong>erstellt wird, wird der Reshape-Name des neuen <strong>Recordset</strong> -Objekts so geändert, dass er eindeutig ist. Wenn diese Eigenschaft auf <strong>false</strong> festgelegt ist und ein neues <strong>Recordset</strong> -Objekt mit demselben vom Benutzer angegebenen reshape-Namen als vorhandenes <strong>Recordset</strong>erstellt wird, weisen beide <strong>Recordset</strong> -Objekte denselben reshape-Namen auf. Daher kann kein <strong>Recordset</strong> -Objekt neu gestaltet werden, solange beide Recordsets vorhanden sind. Der Standardwert der Eigenschaft lautet <strong>False</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Data Provider</strong></p></td>
@@ -58,7 +58,7 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 </table>
 
 
-Sie können auch beschreibbare dynamische Eigenschaften festlegen, indem Sie die zugehörigen Namen in der Verbindungszeichenfolge als Schlüsselwörter angeben. Legen Sie beispielsweise in Microsoft Visual Basic die dynamische Eigenschaft Data Provider auf MSDASQL fest, indem Sie Folgendes angeben:
+You may also set writable dynamic properties by specifying their names as keywords in the connection string. For example, in Microsoft Visual Basic, set the **Data Provider** dynamic property to "MSDASQL" by specifying:
 
 ```vb 
  

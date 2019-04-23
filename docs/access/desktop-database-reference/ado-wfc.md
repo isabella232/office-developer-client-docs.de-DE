@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: df9def320274df0eb4636aa237deb566dd5725b7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281722"
 ---
 # <a name="adowfc"></a>ADO/WFC
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ADO für Windows Foundation Classes (ADO/WFC) basiert auf dem ADO-Ereignismodell und stellt eine vereinfachte Anwendungsprogrammierschnittstelle dar. ADO/WFC fängt im Allgemeinen ADO-Ereignisse ab, konsolidiert die Ereignisparameter in einer einzelnen Ereignisklasse und ruft dann den Ereignishandler auf.
 
@@ -62,12 +62,9 @@ ADO für Windows Foundation Classes (ADO/WFC) basiert auf dem ADO-Ereignismodell
             new ConnectionEventHandler(this.onConnectComplete); 
     ```
     
-    
+    Das einzelne Argument ist ein Verweis auf die gewünschte Klasse (**this**) und die gewünschte Methode innerhalb der Klasse (**onConnectComplete**).
 
-Das einzelne Argument ist ein Verweis auf die gewünschte Klasse (**this**) und die gewünschte Methode innerhalb der Klasse (**onConnectComplete**).
-
-
-3.  Fügen Sie eine Liste der Handler zum Verarbeiten von einer bestimmten Art des Ereignisses festgelegte Ihre Ereignishandler hinzu. Verwenden Sie die Methode mit einem Namen wie **AddOn *** EventName*(*Handler*).
+3.  Fügen Sie den Ereignishandler einer Liste von Handlern hinzu, die für die Verarbeitung eines bestimmten Ereignistyps vorgesehen sind. Verwenden Sie die-Methode mit einem Namen wie **addOn * * * EventName*(*Handler*).
 
 4.  ADO/WFC implementiert intern alle ADO-Ereignishandler. Deshalb wird ein Ereignis, das durch einen **Connection** - oder **Recordset** -Vorgang verursacht wird, von einem ADO/WFC-Ereignishandler abgefangen. Der ADO/WFC-Ereignishandler übergibt **ConnectionEvent** -Parameter von ADO in einer Instanz der **ConnectionEvent** -Klasse von ADO/WFC oder **RecordsetEvent** -Parameter von ADO in einer Instanz der **RecordsetEvent** -Klasse von ADO/WFC. Diese ADO/WFC-Klassen konsolidieren die ADO-Ereignisparameter. Das heißt, jede ADO/WFC-Klasse enthält ein Datenelement für jeden eindeutigen Parameter in allen **ConnectionEvent** - oder **RecordsetEvent** -Methoden von ADO.
 
@@ -78,9 +75,9 @@ Das einzelne Argument ist ein Verweis auf die gewünschte Klasse (**this**) und 
         public void onConnectComplete(Object sender,ConnectionEvent e) 
     ```
     
-    Das erste Argument ist der Typ des Objekts, das das Ereignis ([Verbindung](connection-object-ado.md) oder [Recordset](recordset-object-ado.md)) gesendet, und das zweite Argument ist das ADO/WFC-Ereignisobjekt (**ConnectionEvent** oder **RecordsetEvent**). Die Signatur des Ereignishandlers ist einfacher als ein ADO-Ereignis. Sie müssen jedoch dennoch das ADO-Ereignismodell kennen, um zu wissen, welche Parameter für ein Ereignis gelten und wie reagiert werden soll.
+    Das erste Argument ist der Objekttyp, der das Ereignis gesendet hat ([Connection](connection-object-ado.md) oder [Recordset](recordset-object-ado.md)), und das zweite Argument ist das ADO/WFC-Ereignisobjekt (**ConnectionEvent** oder **RecordsetEvent**). Die Signatur des Ereignishandlers ist einfacher als ein ADO-Ereignis. Sie müssen jedoch dennoch das ADO-Ereignismodell kennen, um zu wissen, welche Parameter für ein Ereignis gelten und wie reagiert werden soll.
 
 6.  Wechseln Sie vom Ereignishandler zurück zum ADO/WFC-Handler für das ADO-Ereignis. ADO/WFC kopiert die entsprechenden Datenelemente für das ADO/WFC-Ereignis zurück in die ADO-Ereignisparameter, und anschließend wird wieder der ADO-Ereignishandler angezeigt.
 
-7.  Wenn Sie nach Abschluss des Vorgangs sind verarbeiten, entfernen Sie den Handler aus der Liste der ADO/WFC-Ereignishandler. Verwenden Sie die Methode mit einem Namen wie **RemoveOn *** EventName*(*Handler*).
+7.  Wenn Sie die Verarbeitung abgeschlossen haben, entfernen Sie den Handler aus der Liste der ADO/WFC-Ereignishandler. Verwenden Sie die-Methode mit einem Namen wie **removeOn * * * EventName*(*Handler*).
 

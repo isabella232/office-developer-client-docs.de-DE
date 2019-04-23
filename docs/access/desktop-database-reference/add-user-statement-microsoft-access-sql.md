@@ -8,21 +8,21 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8ba60a646fd234748bcc39b9a5604a33675caee5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280425"
 ---
 # <a name="add-user-statement-microsoft-access-sql"></a>ADD USER-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Fügt einer bestehenden *Gruppe* einen oder mehrere *Benutzer* hinzu.
 
 ## <a name="syntax"></a>Syntax
 
-ADD USER *Benutzer*\[, *Benutzer*,... \] *Gruppe*
+Hinzufügen **\[von Benutzer ** Benutzer, Benutzer,... \] Zur *Gruppe*
 
 Die ADD USER-Anweisung besteht aus den folgenden Komponenten:
 
@@ -33,14 +33,14 @@ Die ADD USER-Anweisung besteht aus den folgenden Komponenten:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Komponente</p></th>
+<th><p>Teil</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Benutzer</em></p></td>
-<td><p>Der Name eines Benutzers, der der Arbeitsgruppen-Informationsdatei hinzugefügt werden soll.</p></td>
+<td><p><em>user</em></p></td>
+<td><p>Der Name eines Benutzers, der zur Informationsdatei der Arbeitsgruppe hinzugefügt werden soll.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>group</em></p></td>
@@ -50,7 +50,7 @@ Die ADD USER-Anweisung besteht aus den folgenden Komponenten:
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Nachdem ein *Benutzer* zu einer *Gruppe*hinzugefügt wurde, hat der *Benutzer* alle Berechtigungen, die der *Gruppe*erteilt wurden.
+Nachdem ein *Benutzer* einer *Gruppe*hinzugefügt wurde, verfügt der *Benutzer* über alle Berechtigungen, die der *Gruppe*erteilt wurden.
 

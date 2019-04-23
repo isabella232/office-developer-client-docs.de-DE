@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1ac915684afa74b091fb1288dfde6d984cee8244
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283324"
 ---
 # <a name="ado-md-collections"></a>ADO MD-Auflistungen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -47,11 +47,11 @@ ms.locfileid: "28718581"
 <td><p>Enthält die <strong>Hierarchy</strong>-Objekte aus einer Dimension.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="level-object-ado-md.md">Levels</a></p></td>
+<td><p><a href="level-object-ado-md.md">Ebenen</a></p></td>
 <td><p>Enthält die <strong>Level</strong>-Objekte, die eine Hierarchie bilden.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="members-collection-ado-md.md">Elemente des Objekts</a></p></td>
+<td><p><a href="members-collection-ado-md.md">Elemente</a></p></td>
 <td><p>Enthält die<strong>Member</strong>-Objekte einer Ebene oder einer Position entlang einer Achse.</p></td>
 </tr>
 <tr class="odd">

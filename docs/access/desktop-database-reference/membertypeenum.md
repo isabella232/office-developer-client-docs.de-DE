@@ -1,5 +1,5 @@
 ---
-title: MemberTypeEnum (Access PC-Datenbank-Referenz)
+title: Schreibgeschützten MemberTypeEnum (Access Desktop Database Reference)
 TOCTitle: MemberTypeEnum
 ms:assetid: 3b6f9fff-fe54-b917-9404-927e3a627e0b
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249150(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 82d507457d9242daa92cc0218c87bae4d82759a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289203"
 ---
 # <a name="membertypeenum"></a>MemberTypeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Einstellung für die [Type](type-property-ado-md.md)-Eigenschaft eines [Member](member-object-ado-md.md)-Objekts an.
 

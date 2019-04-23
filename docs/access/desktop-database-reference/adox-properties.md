@@ -1,5 +1,5 @@
 ---
-title: ADOX-Eigenschaften (Access PC-Datenbank-Referenz)
+title: ADOX-Eigenschaften (Access Desktop Database Reference)
 TOCTitle: ADOX properties
 ms:assetid: 7559af18-83a4-dc7f-015f-6a7c55c520d8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249480(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0056764d80b5cfa19bf8e229d33c2c84c8b08c28
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285251"
 ---
 # <a name="adox-properties"></a>ADOX-Eigenschaften
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -34,10 +34,10 @@ ms.locfileid: "28703034"
 <tbody>
 <tr class="odd">
 <td><p><a href="activeconnection-property-adox.md">ActiveConnection</a></p></td>
-<td><p>Gibt das ADO- <strong>Connection</strong> -Objekt zu dem der Katalog gehört.</p></td>
+<td><p>Gibt das ADO-<strong>Connection</strong>-Objekt an, zu dem der Katalog gehört.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="attributes-property-adox.md">Attribute</a></p></td>
+<td><p><a href="attributes-property-adox.md">Attributes</a></p></td>
 <td><p>Beschreibt Spalteneigenschaften.</p></td>
 </tr>
 <tr class="odd">
@@ -45,7 +45,7 @@ ms.locfileid: "28703034"
 <td><p>Gibt an, ob der Index gruppiert ist.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="command-property-adox.md">Command</a></p></td>
+<td><p><a href="command-property-adox.md">Befehl</a></p></td>
 <td><p>Gibt ein ADO-<strong>Command</strong>-Objekt an, das zum Erstellen oder Ausführen der Prozedur verwendet werden kann.</p></td>
 </tr>
 <tr class="odd">
@@ -74,7 +74,7 @@ ms.locfileid: "28703034"
 </tr>
 <tr class="odd">
 <td><p><a href="item-property-ado.md">Element</a></p></td>
-<td><p>Gibt ein bestimmtes Element einer Auflistung nach Name oder Ordnungszahl an.</p></td>
+<td><p>Gibt ein bestimmtes Element einer Auflistung durch Namen oder Ordnungszahl an.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="name-property-adox.md">Name</a></p></td>
@@ -86,10 +86,10 @@ ms.locfileid: "28703034"
 </tr>
 <tr class="even">
 <td><p><a href="parentcatalog-property-adox.md">ParentCatalog</a></p></td>
-<td><p>Gibt den übergeordneten Katalog einer Tabelle oder einer Spalte an, um Zugriff auf providerspezifische Eigenschaften bereitzustellen.</p></td>
+<td><p>Gibt den übergeordneten Katalog einer Tabelle oder einer Spalte an, um Zugriff auf anbieterspezifische Eigenschaften bereitzustellen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="precision-property-adox.md">Mit doppelter Genauigkeit</a></p></td>
+<td><p><a href="precision-property-adox.md">Genauigkeit</a></p></td>
 <td><p>Gibt die maximale Genauigkeit von Datenwerten in der Spalte an.</p></td>
 </tr>
 <tr class="even">
@@ -109,15 +109,15 @@ ms.locfileid: "28703034"
 <td><p>Gibt die Sortierfolge für die Spalte (nur Indexspalten) an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox">Typ (Spalte)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox">Type (Column)</a></p></td>
 <td><p>Gibt den Datentyp einer Spalte an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox">Typ (Schlüssel)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox">Type (Key)</a></p></td>
 <td><p>Gibt den Datentyp des Schlüssels an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-tableadox">Typ (Tabelle)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-tableadox">Type (Table)</a></p></td>
 <td><p>Gibt den Tabellentyp an.</p></td>
 </tr>
 <tr class="odd">

@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ba27bfdf6cc1317b441e626c61784e2c50b589f1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288918"
 ---
-# <a name="microsoft-ole-db-provider-for-microsoft-indexing-service"></a>Microsoft OLE DB-Anbieter für Microsoft Indexdienst
+# <a name="microsoft-ole-db-provider-for-microsoft-indexing-service"></a>Microsoft OLE DB Provider for Microsoft Indexing Service
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Microsoft OLE DB-Anbieter für Microsoft Indexdienst bietet programmgesteuerten schreibgeschützten Zugriff auf System- und Daten von Microsoft Indexdienst indiziert. ADO-Anwendungen können SQL-Abfragen ausgeben, um Informationen zu Inhalts- und Dateieigenschaften abzurufen.
+Der Microsoft OLE DB-Anbieter für Microsoft Indexdienst ermöglicht den programmgesteuerten Lesezugriff auf Dateisystem-und Webdaten, die vom Microsoft-Indexdienst indiziert werden. ADO-Anwendungen können SQL-Abfragen ausgeben, um Informationen zu Inhalts- und Dateieigenschaften abzurufen.
 
 Der Anbieter ist ein Freethreadanbieter, der Unicode verwendet.
 
 ## <a name="connection-string-parameters"></a>Verbindungszeichenfolgen-Parameter
 
-Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das **Provider=** -Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
+Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das **Provider=**-Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
 
 ```vb 
  
@@ -83,11 +83,11 @@ Der Anbieter akzeptiert weder Aufrufe gespeicherter Prozeduren noch einfache Tab
 
 ## <a name="recordset-behavior"></a>Recordset-Verhalten
 
-In den folgenden Tabellen sind die für ein **Recordset** -Objekt verfügbaren Features aufgeführt, das mit diesem Anbieter geöffnet wird. Nur der statische Cursortyp (**AdOpenStatic**) zur Verfügung steht.
+In den folgenden Tabellen sind die für ein **Recordset** -Objekt verfügbaren Features aufgeführt, das mit diesem Anbieter geöffnet wird. Nur der statische Cursortyp (**adOpenStatic**) ist verfügbar.
 
 Ausführlichere Informationen zum **Recordset** -Verhalten Ihrer Anbieterkonfiguration erhalten Sie, wenn Sie die [Supports](supports-method-ado.md)-Methode ausführen und die [Properties](properties-collection-ado.md) -Auflistung des **Recordset** -Objekts aufzählen, um zu ermitteln, ob anbieterspezifische dynamische Eigenschaften vorhanden sind.
 
-Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
+Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 
 <table>
 <colgroup>
@@ -103,27 +103,27 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
 <tbody>
 <tr class="odd">
 <td><p><a href="absolutepage-property-ado.md">AbsolutePage</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="absoluteposition-property-ado.md">AbsolutePosition</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="bookmark-property-ado.md">Lesezeichen</a>*</p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="cachesize-property-ado.md">CacheSize</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cursorlocation-property-ado.md">CursorLocation</a></p></td>
@@ -139,55 +139,55 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">EOF</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="filter-property-ado.md">Filter</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="locktype-property-ado.md">LockType</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="marshaloptions-property-ado.md">MarshalOptions</a></p></td>
-<td><p>Nicht verf?gbar</p></td>
+<td><p>nicht verfügbar</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="maxrecords-property-ado.md">MaxRecords</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="status-property-ado-recordset.md">Status</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
 
 
-\*Lesezeichen müssen auf dem Anbieter für das **Recordset-Objekt**vorhanden ist damit dieses Feature aktiviert sein.
+\*Lesezeichen müssen für den Anbieter aktiviert werden, damit dieses Feature im **Recordset**-Objekt vorhanden ist.
 
-Verfügbarkeit von ADO-Standardmethoden des **Recordset** -Objekts:
+Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 
 <table>
 <colgroup>
@@ -275,5 +275,5 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset** -Objekts:
 
 ## <a name="see-also"></a>Siehe auch
 
-Implementierung und funktionale Informationen zu den Microsoft OLE DB-Anbieter für Microsoft Indexdienst finden Sie in der Microsoft OLE DB Programmer's Reference.
+Genaue Implementierungsdetails und funktionale Informationen zum Microsoft OLE DB-Anbieter für Microsoft Indexdienst finden Sie in der Microsoft OLE DB Programmer es Reference.
 

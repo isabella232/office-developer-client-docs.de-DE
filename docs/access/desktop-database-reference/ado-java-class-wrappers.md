@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 731e659f29d6fd504bab772867fb438985189e13
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283317"
 ---
 # <a name="ado-java-class-wrappers"></a>ADO-Java-Klassenwrapper
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Code wird in der gleichen Codezeile eine Instanz des Recordset-ADO-Klassenwrappers deklariert und initialisiert. Außerdem werden Variablen für die einzelnen Argumente in der Open-Methode deklariert, insbesondere für LockType und CursorType (da Aufzählungstypen von Java nicht unterstützt werden). Das Recordset-Objekt wird geöffnet und geschlossen. Durch das Festlegen von Rs1 auf NULL wird lediglich geplant, dass diese Variable freigegeben wird, wenn die systematische und periodische Freigabe nicht verwendeter Objekte von Java ausgeführt wird.
+This code declares an instance of the ADO [Recordset](recordset-object-ado.md) class wrapper and initializes it, all on the same line of code. Further, it declares variables for each of the arguments in the [Open](open-method-ado-recordset.md) method, especially for [LockType](locktype-property-ado.md) and [CursorType](cursortype-property-ado.md) (because Java doesn't support enumerated types). It opens and closes the **Recordset** object. Setting Rs1 to NULL merely schedules that variable to be released when Java performs its systematic and intermittent release of unused objects.
 
 ```java 
  

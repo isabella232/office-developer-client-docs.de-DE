@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 385a3a106c04db11b36ea646368f80fe28ffd413
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280195"
 ---
 # <a name="adox-enumerated-constants"></a>ADOX-Aufzählungskonstanten
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Zur Unterstützung des Debugprozesses listen die ADOX-Aufzählungskonstanten einen Wert für jede Konstante auf. Dieser Wert ist jedoch nur eine Empfehlung und kann von einer ADOX­-Version zur anderen variieren. Der Code sollte ausschließlich auf dem Namen, nicht auf dem tatsächlichen Wert der Aufzählungskonstanten basieren.
 
@@ -31,7 +31,7 @@ Die folgenden Aufzählungskonstanten werden definiert.
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Aufzählung</p></th>
+<th><p>Enumeration</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -46,19 +46,19 @@ Die folgenden Aufzählungskonstanten werden definiert.
 </tr>
 <tr class="odd">
 <td><p><a href="columnattributesenum.md">ColumnAttributesEnum</a></p></td>
-<td><p>Gibt die Eigenschaften einer <strong>Spalte</strong> an.</p></td>
+<td><p>Gibt die Eigenschaften einer Spalte an.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="datatypeenum.md">DataTypeEnum</a></p></td>
-<td><p>Gibt den Datentyp eines <strong>Felds</strong>, eines <strong>Parameters</strong> oder einer <strong>Eigenschaft</strong> an.</p></td>
+<td><p>Gibt den Datentyp eines Felds, eines Parameters oder einer Eigenschaft an.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="inherittypeenum.md">InheritTypeEnum</a></p></td>
-<td><p>Gibt an, wie Objekte Berechtigungen erben, die mit <strong>SetPermissions</strong> festgelegt sind.</p></td>
+<td><p>Gibt an, wie Objekte Berechtigungen erben, die mit SetPermissions festgelegt sind.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="keytypeenum.md">KeyTypeEnum</a></p></td>
-<td><p>Gibt den Typ des <strong>Schlüssel</strong>-Objekts an: primär, fremd oder eindeutig.</p></td>
+<td><p>Gibt den Typ des Schlüssels an: primär, fremd oder eindeutig.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="objecttypeenum.md">ObjectTypeEnum</a></p></td>

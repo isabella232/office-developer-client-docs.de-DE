@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1952d473b51048a271a689498ae844cee761b001
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280439"
 ---
-# <a name="adcpropupdateresyncenum"></a>ADCPROP\_UPDATERESYNC\_ENUM
+# <a name="adcpropupdateresyncenum"></a>ADCPROP\_-\_UPDATERESYNC-Enumeration
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, ob die [UpdateBatch](updatebatch-method-ado.md)-Methode von einer impliziten [Resync](resync-method-ado.md)-Methodenoperation gefolgt wird. Ist dies der Fall, wird dadurch der Umfang einer solchen Operation festgelegt.
 
@@ -37,7 +37,7 @@ Gibt an, ob die [UpdateBatch](updatebatch-method-ado.md)-Methode von einer impli
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>vom Wert adResyncAll</strong></p></td>
+<td><p><strong>adResyncAll</strong></p></td>
 <td><p>15</p></td>
 <td><p>Ruft <strong>Resync</strong> mit dem kombinierten Wert aller anderen ADCPROP_UPDATERESYNC_ENUM-Elemente auf.</p></td>
 </tr>
@@ -54,7 +54,7 @@ Gibt an, ob die [UpdateBatch](updatebatch-method-ado.md)-Methode von einer impli
 <tr class="even">
 <td><p><strong>adResyncInserts</strong></p></td>
 <td><p>8</p></td>
-<td><p>Ruft <strong>Resync</strong> für alle erfolgreich eingefügten Zeilen auf. AutoIncrement-Spaltenwerte werden jedoch nicht neu synchronisiert. Stattdessen werden die Inhalte neu eingefügte Zeilen basierend auf der vorhandenen primären Schlüsselwert neu synchronisiert. Wenn der Primärschlüssel ein AutoIncrement-Wert ist, werden nicht den Inhalt der beabsichtigten Zeile <strong>Resync</strong> abgerufen werden. Rufen Sie zur automatischen Erhöhung der AutoIncrement Werte Primärschlüssel, <strong>UpdateBatch</strong> mit dem kombinierten Wert <strong>AdResyncAutoIncrement</strong> + <strong>AdResyncInserts</strong>.</p></td>
+<td><p>Ruft <strong>Resync</strong> für alle erfolgreich eingefügten Zeilen auf. AutoIncrement-Spaltenwerte werden jedoch nicht neu synchronisiert. Stattdessen werden die Inhalte neu eingefügter Zeilen basierend auf dem vorhandenen Primärschlüsselwert neu synchronisiert. Wenn der Primärschlüssel ein AutoIncrement-Wert ist, wird der Inhalt der beabsichtigten Zeile nicht mit <strong>Resync</strong> abgerufen. Rufen Sie für die automatische Inkrementierung von Primärschlüsselwerten <strong>UpdateBatch</strong> mit dem kombinierten Wert <strong>adResyncAutoIncrement</strong> + <strong>adResyncInserts</strong>auf.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adResyncNone</strong></p></td>

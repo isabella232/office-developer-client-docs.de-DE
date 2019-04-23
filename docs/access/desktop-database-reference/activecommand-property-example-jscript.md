@@ -8,15 +8,15 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 598cfa0cc7d35586e02f003ac28401f72a5e2929
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280639"
 ---
 # <a name="activecommand-property-example-jscript"></a>ActiveCommand-Eigenschaft (Beispiel) (JScript)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [ActiveCommand](activecommand-property-ado.md)-Eigenschaft. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie ihn unter dem Dateinamen **ActiveCommandJS.asp**.
 

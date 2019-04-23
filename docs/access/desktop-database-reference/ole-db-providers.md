@@ -1,5 +1,5 @@
 ---
-title: OLE DB-Anbieter (Access PC-Datenbank-Referenz)
+title: OLE DB-Anbieter (Access-Desktop-Daten Bankreferenz)
 TOCTitle: OLE DB providers
 ms:assetid: ef412198-eac5-bf86-73fd-574e67276408
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250215(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 649f1db283b772a0f6798fae0d56a3a80c59e21b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288483"
 ---
 # <a name="ole-db-providers"></a>OLE DB-Anbieter
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Das ADO-Programmierhandbuch [Einführung](introduction-to-ado-programming.md) wird die Beziehung zwischen ADO und dem Rest der Microsoft Data Access-Architektur behandelt. OLE DB definiert eine Reihe von COM-Schnittstellen, um Anwendungen einen einheitlichen Zugriff auf Daten zu ermöglichen, die in verschiedenen Datenquellen gespeichert sind. Auf diese Weise können die Daten einer Datenquelle in Schnittstellen verwendet werden, die die entsprechende DBMS-Funktionalität unterstützen. Die leistungsfähige OLE DB-Architektur basiert auf der Verwendung eines flexiblen, komponentenbasierten Dienstmodells. Anstelle einer vorgeschriebenen Anzahl von Zwischenkomponenten zwischen der Anwendung und den Daten benötigt OLE DB nur so viele Komponenten, wie zum Ausführen einer bestimmten Aufgabe erforderlich sind.
+Die [Einführung](introduction-to-ado-programming.md) in das ADO-Programmierhandbuch erläutert die Beziehung zwischen ADO und der restlichen Microsoft Data Access-Architektur. OLE DB definiert eine Reihe von COM-Schnittstellen, um Anwendungen einen einheitlichen Zugriff auf Daten zu ermöglichen, die in verschiedenen Datenquellen gespeichert sind. Auf diese Weise können die Daten einer Datenquelle in Schnittstellen verwendet werden, die die entsprechende DBMS-Funktionalität unterstützen. Die leistungsfähige OLE DB-Architektur basiert auf der Verwendung eines flexiblen, komponentenbasierten Dienstmodells. Anstelle einer vorgeschriebenen Anzahl von Zwischenkomponenten zwischen der Anwendung und den Daten benötigt OLE DB nur so viele Komponenten, wie zum Ausführen einer bestimmten Aufgabe erforderlich sind.
 
 Angenommen, ein Benutzer möchte eine Abfrage ausführen. Betrachten Sie dazu die folgenden Szenarien:
 

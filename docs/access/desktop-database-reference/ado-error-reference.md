@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6a7f756af1422588d99fcffe1ae1413422131b70
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283394"
 ---
 # <a name="ado-error-reference"></a>ADO-Fehlerreferenz
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die **ErrorValueEnum** -Konstante beschreibt die ADO-Fehlerwerte. Eine vollständige Aufstellung dieser aufgezählten Konstanten, einschließlich Werten, finden Sie in [Anhang B: ADO-Fehler](appendix-b-ado-errors.md). In diesem Abschnitt werden einige der interessanteren Fehler betrachtet. Außerdem werden Situationen, in denen diese ausgelöst werden können, oder Lösungen zum Beheben des Problems erläutert. Die **ErrorValueEnum** -Konstante und die Kurzform als positive Dezimalzahl werden aufgelistet.
+Die **ErrorValueEnum**-Konstante beschreibt die ADO-Fehlerwerte. Eine vollständige Aufstellung dieser aufgezählten Konstanten, einschließlich Werten, finden Sie in [Anhang B: ADO-Fehler](appendix-b-ado-errors.md). In diesem Abschnitt werden einige der interessanteren Fehler betrachtet. Außerdem werden Situationen, in denen diese ausgelöst werden können, oder Lösungen zum Beheben des Problems erläutert. Die **ErrorValueEnum**-Konstante und die Kurzform als positive Dezimalzahl werden aufgelistet.
 
 <table>
 <colgroup>
@@ -28,7 +28,7 @@ Die **ErrorValueEnum** -Konstante beschreibt die ADO-Fehlerwerte. Eine vollstän
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Nummer</p></th>
+<th><p>Zahl</p></th>
 <th><p>ErrorValueEnum-Konstante</p></th>
 <th><p>Beschreibung/mögliche Ursachen</p></th>
 </tr>
@@ -222,7 +222,7 @@ Die **ErrorValueEnum** -Konstante beschreibt die ADO-Fehlerwerte. Eine vollstän
 <tr class="even">
 <td><p><strong>3727</strong></p></td>
 <td><p><strong>adErrURLDoesNotExist</strong></p></td>
-<td><p>Entweder die Quell-URL oder das übergeordnete Element der Ziel-URL ist nicht vorhanden. In der Quell- oder Ziel-URL ist ein Tippfehler vorhanden. Sie müssen möglicherweise https://mysite/photo/myphoto.jpg Wenn sollten Sie tatsächlich haben https://mysite/photos/myphoto.jpg stattdessen. Der Tippfehler in der übergeordneten URL (in diesem Fall <em>Foto</em> anstelle von <em>Fotos</em>) hat den Fehler verursacht hat.</p></td>
+<td><p>Entweder die Quell-URL oder das übergeordnete Element der Ziel-URL ist nicht vorhanden. In der Quell- oder Ziel-URL ist ein Tippfehler vorhanden. Sie haben https://mysite/photo/myphoto.jpg möglicherweise, wenn Sie https://mysite/photos/myphoto.jpg stattdessen tatsächlich haben sollten. Der Tippfehler in der übergeordneten URL (in diesem Fall <em>Foto</em> anstelle von <em>Fotos</em>) hat den Fehler verursacht.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>3728</strong></p></td>

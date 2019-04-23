@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b1d4f4777d904cd9078217e179bcebb31b7b6a1d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288322"
 ---
 # <a name="openschema-method-example-vb"></a>OpenSchema-Methode (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [OpenSchema](openschema-method-ado.md)-Methode verwendet, um den Namen und den Typ jeder Tabelle in der ***Pubs***-Datenbank anzuzeigen.
 
@@ -78,7 +78,7 @@ End Sub
 
 <br/>
 
-In diesem Beispiel wird eine Tabelle gibt\_Abfrage eine Einschränkung in der **OpenSchema** -Methode Argument ***Kriterien*** . Daher nur Schemainformationen für Ansichten, die in der ***Pubs*** -Datenbank angegeben werden zurückgegeben. In dem Beispiel wird anschließend der Name und Typ jeder einzelnen Tabelle angezeigt.
+In diesem Beispiel wird eine\_Abfrageeinschränkung für Tabellentypen im Argument OpenSchema method ***Criteria*** angegeben. **** Folglich werden nur Schemainformationen für die in der ***Pubs***-Datenbank angegebenen Ansichten zurückgegeben. In dem Beispiel wird anschließend der Name und Typ jeder einzelnen Tabelle angezeigt.
 
 ```vb 
  

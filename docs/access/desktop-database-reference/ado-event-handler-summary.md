@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c37c1257ad3f3cb046f7faf82ffcb93f067b1ff5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283373"
 ---
-# <a name="ado-event-handler-summary"></a>Zusammenfassung über den ADO-Ereignishandler
+# <a name="ado-event-handler-summary"></a>ADO-Ereignishandler (Zusammenfassung)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ereignisse können von zwei ADO-Objekten ausgelöst werden: [Connection](connection-object-ado.md) und [Recordset](recordset-object-ado.md). Die **ConnectionEvent** -Familie bezieht sich auf Operationen für das **Connection** -Objekt, und die **RecordsetEvent** -Familie bezieht sich auf Operationen für das **Recordset** -Objekt.
 
 - **Verbindungsereignisse**: Ereignisse werden ausgegeben, wenn für eine Verbindung eine Transaktion beginnt, ein Commit oder ein Rollback ausgeführt wird, wenn ein [Befehl](command-object-ado.md) ausgeführt wird, wenn während einer **Connection Event** -Operation eine Warnung auftritt oder wenn ein **Connection** -Objekt gestartet oder beendet wird.
 
-- **Recordsetereignisse**: Ereignisse werden ausgegeben bei asynchronen Abrufoperationen, sowie wenn Sie durch die Zeilen eines **Recordset** -Objekts navigieren, ein Feld in einer Zeile eines **Recordsets** ändern, eine Zeile in einem **Recordset** ändern, ein **Recordset** mit einem serverseitigen Cursor öffnen, ein **Recordset** schließen oder eine beliebige Änderung im **Recordset** vornehmen.
+- **Recordsetereignisse**: Ereignisse werden ausgegeben bei asynchronen Abrufoperationen, sowie wenn Sie durch die Zeilen eines **Recordset**-Objekts navigieren, ein Feld in einer Zeile eines **Recordsets** ändern, eine Zeile in einem **Recordset** ändern, ein **Recordset** mit einem serverseitigen Cursor öffnen, ein **Recordset** schließen oder eine beliebige Änderung im **Recordset** vornehmen.
 
 Die Ereignisse und ihre Beschreibungen werden in den folgenden Tabellen zusammengefasst.
 
@@ -40,11 +40,11 @@ Die Ereignisse und ihre Beschreibungen werden in den folgenden Tabellen zusammen
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">BeginTransComplete</a>, CommitTransComplete, RollbackTransComplete</p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">BeginTransComplete</a>, CommitTransComplete, RollbackTransComplete-</p></td>
 <td><p><strong>Verwaltung von Transaktionen</strong> - Benachrichtigung, dass die aktuelle Transaktion für die Verbindung gestartet wurde, ein Commit für sie ausgeführt wurde oder ein Rollback für sie ausgeführt wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="willconnect-event-ado.md">WillConnect</a>, <a href="connectcomplete-and-disconnect-events-ado.md">ConnectComplete, trennen</a></p></td>
+<td><p><a href="willconnect-event-ado.md">WillConnect</a>, <a href="connectcomplete-and-disconnect-events-ado.md">ConnectComplete, Disconnect</a></p></td>
 <td><p><strong>Verwaltung von Verbindungen</strong> - Benachrichtigung, dass die aktuelle Verbindung gestartet wird, gestartet wurde oder beendet wurde.</p></td>
 </tr>
 <tr class="odd">
@@ -76,20 +76,20 @@ Die Ereignisse und ihre Beschreibungen werden in den folgenden Tabellen zusammen
 <td><p><strong>Abrufstatus</strong> - Benachrichtigung über den Fortschritt einer Datenabrufoperation oder über den Abschluss der Abrufoperation. Diese Ereignisse stehen nur zur Verfügung, wenn das <strong>Recordset</strong>-Objekt mithilfe eines clientseitigen Cursors geöffnet wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="willchangefield-and-fieldchangecomplete-events-ado.md">WillChangeField FieldChangeComplete</a></p></td>
+<td><p><a href="willchangefield-and-fieldchangecomplete-events-ado.md">WillChangeField, FieldChangeComplete</a></p></td>
 <td><p><strong>Verwaltung von Feldänderungen</strong> - Benachrichtigung, dass der Wert des aktuellen Felds geändert wird oder geändert wurde.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="willmove-and-movecomplete-events-ado.md">WillMove-, MoveComplete</a>, <a href="endofrecordset-event-ado.md">EndOfRecordset</a></p></td>
-<td><p><strong>Verwaltung der Navigation</strong> - Benachrichtigung, dass die aktuelle Zeilenposition in einem <strong>Recordset</strong>-Objekt geändert wird oder geändert wurde oder dass das Ende des <strong>Recordset</strong>-Objekts erreicht ist.</p></td>
+<td><p><a href="willmove-and-movecomplete-events-ado.md">WillMove, MoveComplete</a>, <a href="endofrecordset-event-ado.md">EndOfRecordset</a></p></td>
+<td><p><strong>Navigations Verwaltung</strong> -Benachrichtigung, dass sich die aktuelle Zeilenposition in einem <strong>Recordset</strong> -Objekt ändert, geändert wurde oder das Ende des <strong>Recordset-Objekts</strong>erreicht hat.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="willchangerecord-and-recordchangecomplete-events-ado.md">WillChangeRecord RecordChangeComplete</a></p></td>
-<td><p><strong>Verwaltung von Zeilenänderungen</strong> - Benachrichtigung, dass etwas in der aktuellen Zeile des <strong>Recordset</strong>-Objekts geändert wird oder geändert wurde.</p></td>
+<td><p><a href="willchangerecord-and-recordchangecomplete-events-ado.md">WillChangeRecord, RecordChangeComplete</a></p></td>
+<td><p><strong>Verwaltung von Zeilenänderungen</strong> -Benachrichtigung, dass sich etwas in der aktuellen Zeile des <strong>Recordset-Objekts</strong> ändert oder geändert hat.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="willchangerecordset-and-recordsetchangecomplete-events-ado.md">WillChangeRecordset RecordsetChangeComplete</a></p></td>
-<td><p><strong>Verwaltung von Recordsetänderungen</strong> - Benachrichtigung, dass etwas im aktuellen <strong>Recordset</strong>-Objekt geändert wird oder geändert wurde.</p></td>
+<td><p><a href="willchangerecordset-and-recordsetchangecomplete-events-ado.md">WillChangeRecordset, RecordsetChangeComplete</a></p></td>
+<td><p><strong>Recordset Change Management</strong> -Benachrichtigung, dass etwas im aktuellen <strong>Recordset</strong> -Objekt geändert wird oder geändert wurde.</p></td>
 </tr>
 </tbody>
 </table>

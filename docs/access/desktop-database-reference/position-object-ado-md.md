@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ce036da3db888482de9328d70eb2656801897d88
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287545"
 ---
 # <a name="position-object-ado-md"></a>Position-Objekt (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt eine Gruppe von einem oder mehreren Elementen unterschiedlicher Dimensionen dar, die einen Punkt auf einer Achse definiert.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Eigenschaften und Auflistungen eines **Position** -Objekts ermöglichen Folgendes:
+Die Eigenschaften und Auflistungen eines **Position**-Objekts ermöglichen Folgendes:
 
-  - Verwenden der **Ordinal** -Eigenschaft, um die Ordnungsposition des **Position** -Objekts an der [Achse](axis-object-ado-md.md) zurückzugeben.
+  - Verwenden der **Ordinal**-Eigenschaft, um die Ordnungsposition des **Position**-Objekts an der [Achse](axis-object-ado-md.md) zurückzugeben.
 
   - Verwenden der [Members](members-collection-ado-md.md)-Auflistung, um die Mitglieder zurückzugeben, die die Position an der **Achse** bilden.
 

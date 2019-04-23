@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 76bc583804942f139e311aa75206ecf971ddc2a1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288434"
 ---
 # <a name="open-and-close-methods-example-vbscript"></a>Open- und Close-Methoden (Beispiel) (VBScript)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel werden die Methoden [Open](open-method-ado-recordset.md) und [Close](close-method-ado.md) für geöffnete [Recordset](recordset-object-ado.md)- und [Connection](connection-object-ado.md)-Objekte verwendet.
 
-Verwenden Sie das folgende Beispiel in einer Active Server Page-Datei (ASP). Verwenden Sie Find, um die Datei Adovbs.inc zu suchen, und speichern Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie die Datei unter dem Namen OpenVBS.asp. Sie können das Ergebnis in einem beliebigen Browserfenster anzeigen.
+Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code into Notepad or another text editor, and save it as **OpenVBS.asp**. You can view the result in any browser.
 
 ```vb 
  

@@ -1,5 +1,5 @@
 ---
-title: ADO MD-Objekte (Access PC-Datenbank-Referenz)
+title: ADO MD-Objekte (Access Desktop Database Reference)
 TOCTitle: ADO MD objects
 ms:assetid: 13501e44-70b6-1036-a8b7-c276f187e4f4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a2d3acf1b236e23522da0143d577bbcbeacbb4b7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283296"
 ---
 # <a name="ado-md-objects"></a>ADO MD-Objekte
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -31,7 +31,7 @@ ms.locfileid: "28726211"
 <th>Beschreibung</th>
 </tr>
 <tr class="odd">
-<td><p><a href="axis-object-ado-md.md">Achse</a></p></td>
+<td><p><a href="axis-object-ado-md.md">Axis</a></p></td>
 <td><p>Stellt eine Positions- oder Filterachse einer Zellmenge dar, die ausgewählte Elemente einer oder mehrerer Dimensionen enthält.</p></td>
 </tr>
 <tr class="even">
@@ -56,14 +56,14 @@ ms.locfileid: "28726211"
 </tr>
 <tr class="odd">
 <td><p><a href="hierarchy-object-ado-md.md">Hierarchie</a></p></td>
-<td><p>Stellt ein Verfahren, die die Elemente einer Dimension aggregiert werden können oder &quot;zusammengefasst. &quot; Eine Dimension entlang einer oder mehrerer Hierarchien aggregiert werden kann.</p></td>
+<td><p>Stellt eine Möglichkeit dar, in der die Elemente einer Dimension aggregiert oder &quot;rollupd werden können. &quot; Eine Dimension kann entlang einer oder mehrerer Hierarchien aggregiert werden.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="level-object-ado-md.md">Level</a></p></td>
-<td><p>Enthält eine Gruppe von Elementen, von denen jedes denselben Rang innerhalb einer Hierarchie hat.</p></td>
+<td><p><a href="level-object-ado-md.md">Grad</a></p></td>
+<td><p>Umfasst eine Gruppe von Elementen, von denen jedes denselben Rang innerhalb einer Hierarchie besitzt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="member-object-ado-md.md">Element</a></p></td>
+<td><p><a href="member-object-ado-md.md">Member</a></p></td>
 <td><p>Stellt ein Element einer Ebene in einem Cube, die untergeordneten Elemente eines Elements einer Ebene oder ein Element einer Position auf der Achse einer Zellmenge dar.</p></td>
 </tr>
 <tr class="even">
@@ -75,7 +75,7 @@ ms.locfileid: "28726211"
 
 <br/>
 
-Das **Catalog** -Objekt ist außerdem mit einem ADO- **Connection** -Objekt verbunden, das in der Standard-ADO-Bibliothek enthalten ist:
+Das **Catalog**-Objekt ist außerdem mit einem ADO-**Connection**-Objekt verbunden, das in der Standard-ADO-Bibliothek enthalten ist:
 
 <br/>
 
@@ -100,5 +100,5 @@ Das **Catalog** -Objekt ist außerdem mit einem ADO- **Connection** -Objekt verb
 
 <br/>
 
-Es können viele ADO MD-Objekte in einer entsprechenden Auflistung enthalten sein. Ein [CubeDef](cubedef-object-ado-md.md)-Objekt kann beispielsweise in einer [CubeDefs](cubedefs-collection-ado-md.md)-Auflistung eines **Catalog** -Objekts enthalten sein. Weitere Informationen hierzu finden Sie unter [ADO MD-Auflistungen](ado-md-collections.md).
+Es können viele ADO MD-Objekte in einer entsprechenden Auflistung enthalten sein. Ein [CubeDef](cubedef-object-ado-md.md)-Objekt kann beispielsweise in einer [CubeDefs](cubedefs-collection-ado-md.md)-Auflistung eines **Catalog**-Objekts enthalten sein. Weitere Informationen hierzu finden Sie unter [ADO MD-Auflistungen](ado-md-collections.md).
 

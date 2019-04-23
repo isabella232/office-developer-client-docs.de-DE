@@ -1,5 +1,5 @@
 ---
-title: Ereignisse ActiveX Data Objects (ADO)
+title: ADO-Ereignisse (ActiveX Data Objects)
 TOCTitle: ADO events
 ms:assetid: 84ca9525-99cb-4ba6-2a4d-172414b8f0cc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249576(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cc2ef73798dca18e00c42768fde78da2abdb56a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283338"
 ---
 # <a name="ado-events"></a>ADO-Ereignisse
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -43,7 +43,7 @@ ms.locfileid: "28706044"
 <td><p>Wird nach dem Starten einer Verbindung aufgerufen.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connectcomplete-and-disconnect-events-ado.md">Verbindung trennen</a></p></td>
+<td><p><a href="connectcomplete-and-disconnect-events-ado.md">Disconnect</a></p></td>
 <td><p>Wird nach dem Beenden einer Verbindung aufgerufen.</p></td>
 </tr>
 <tr class="odd">
@@ -83,7 +83,7 @@ ms.locfileid: "28706044"
 <td><p>Wird aufgerufen, nachdem das <strong>Recordset</strong>-Objekt geändert wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">RollbackTransComplete</a></p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">RollbackTransComplete-</a></p></td>
 <td><p>Wird nach der <strong>RollbackTrans</strong>-Operation aufgerufen.</p></td>
 </tr>
 <tr class="odd">
@@ -108,7 +108,7 @@ ms.locfileid: "28706044"
 </tr>
 <tr class="even">
 <td><p><a href="willmove-and-movecomplete-events-ado.md">WillMove</a></p></td>
-<td><p>Das <strong>WillMove</strong> -Ereignis wird aufgerufen, <em>bevor</em> eine ausstehende Operation geändert, die aktuelle Position im <strong>Recordset-Objekt</strong>.</p></td>
+<td><p>Das <strong>WillMove</strong>-Ereignis wird aufgerufen, <em>bevor</em> die aktuelle Position im <strong>Recordset</strong>-Objekt durch eine ausstehende Operation geändert wird.</p></td>
 </tr>
 </tbody>
 </table>

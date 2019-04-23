@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 145a2ee6c3d3c614eb9660350a0bb8a00d44d04c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288287"
 ---
 # <a name="operation-of-parameterized-commands"></a>Verwendung von parametrisierten Befehlen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Wenn Sie ein umfangreiches untergeordnetes **Recordset** -Objekt verwenden, insbesondere im Vergleich zur Größe des übergeordneten **Recordset** -Objekts, aber nur auf ein paar untergeordnete Kapitel zugreifen müssen, könnte die Verwendung eines parametrisierten Befehls effizienter sein.
+Wenn Sie ein umfangreiches untergeordnetes **Recordset**-Objekt verwenden, insbesondere im Vergleich zur Größe des übergeordneten **Recordset**-Objekts, aber nur auf ein paar untergeordnete Kapitel zugreifen müssen, könnte die Verwendung eines parametrisierten Befehls effizienter sein.
 
-Einen *nicht parametrisierten Befehl* Ruft die gesamte über- und untergeordnete **Recordset-Objekte**, fügt eine Kapitelspalte an das übergeordnete Element und weist einen Verweis auf das zugehörige untergeordnete Kapitel für jede Zeile des übergeordneten.
+Mit einem *nicht parametrisierten Befehl* werden die gesamten über- und untergeordneten **Recordset**-Objekte abgerufen, eine Kapitelspalte wird an das übergeordnete Elemente angefügt, und anschließend wird ein Verweis auf das zugehörige untergeordnete Kapitel für jede übergeordnete Zeile zugewiesen.
 
-Einen *parametrisierten Befehl* Ruft das gesamte übergeordnete **Recordset-Objekt**, sondern nur das Kapitel des **Recordset-Objekt** abgerufen, wenn auf die Kapitelspalte zugegriffen wird. Dieser Unterschied bei der Abrufstrategie kann erhebliche Leistungsvorteile bieten.
+Mit einem *parametrisierten Befehl* wird das gesamte übergeordnete **Recordset**-Objekt abgerufen, aber es wird nur das Kapitel des **Recordset**-Objekts abgerufen, wenn auf die Kapitelspalte zugegriffen wird. Dieser Unterschied bei der Abrufstrategie kann erhebliche Leistungsvorteile bieten.
 
 Beispielsweise können Sie Folgendes angeben:
 
@@ -33,20 +33,20 @@ SHAPE {SELECT * FROM customer}
  RELATE cust_id TO PARAMETER 0) 
 ```
 
-Die über- und untergeordneten Tabellen haben einen Spaltennamen in allgemeine, Cust\_Id *.* Der *untergeordnete Befehl* weist Platzhalter "?" die Klausel verknüpfen bezieht (d. h., "... PARAMETER 0").
+Die über-und untergeordneten Tabellen haben einen gemeinsamen Spalten\_Namen, cust ID *.* Der *untergeordnete Befehl* enthält den Platzhalter "?", auf den die RELATE-Klausel verweist (das heißt, "...PARAMETER 0").
 
 > [!NOTE]
 > [!HINWEIS] Die PARAMETER-Klausel bezieht sich ausschließlich auf die SHAPE-Befehlssyntax. Sie ist weder dem [Parameter](parameter-object-ado.md)-Objekt noch der [Parameters](parameters-collection-ado.md)-Auflistung von ADO zugeordnet.
 
 Wenn der parametrisierte SHAPE-Befehl ausgeführt wird, passiert Folgendes:
 
-1.  Der übergeordnete Befehl wird ausgeführt und gibt ein übergeordnetes Recordset-Objekt aus der Customers-Tabelle zurück.
+1.  Der *übergeordnete Befehl* wird ausgeführt und gibt ein übergeordnetes **Recordset** -Objekt aus der Customers-Tabelle zurück.
 
-2.  Eine Kapitelspalte wird an das übergeordnete **Recordset** -Objekt angefügt.
+2.  Eine Kapitelspalte wird an das übergeordnete **Recordset**-Objekt angefügt.
 
-3.  Wenn auf die Kapitelspalte einer übergeordneten Zeile zugegriffen wird, der *untergeordnete Befehl* wird ausgeführt, mit dem Wert der customer.cust\_Id als Wert des Parameters.
+3.  Wenn auf die Kapitelspalte einer übergeordneten Zeile zugegriffen wird, wird der *untergeordnete Befehl* mit dem Wert der Customer.\_cust-ID als Wert des Parameters ausgeführt.
 
-4.  Alle Zeilen in der in Schritt 3 erstellte Anbieter Datenrowset dienen zum Auffüllen des untergeordneten **Recordset-Objekts**. In diesem Beispiel wird, die alle Zeilen in der Orders-Tabelle, in dem die Cust\_Id gleich dem Wert der customer.cust\_Id. Standardmäßig wird das untergeordnete **Recordset**s auf dem Client zwischengespeichert werden, bis alle Verweise auf das übergeordnete **Recordset** freigegeben werden. Wenn dieses Verhalten ändern möchten, legen Sie die **Recordset** - [dynamische Eigenschaft](ado-dynamic-property-index.md)**Cache untergeordneten Zeilen** auf **false festgelegt**.
+4.  All rows in the data provider rowset created in step 3 are used to populate the child **Recordset**. In diesem Beispiel sind das alle Zeilen in der Orders-Tabelle, in der die\_cust-ID dem Wert von "Customer\_. cust ID" entspricht. Standardmäßig wird das untergeordnete **Recordset**-Objekt auf dem Client zwischengespeichert, bis alle Verweise auf das übergeordnete **Recordset** -Objekt freigegeben werden. Um dieses Verhalten zu ändern, legen Sie die**UntergeordnetEn Datensätze** des **Recordset** [-dynamischen](ado-dynamic-property-index.md)Caches auf **false**fest.
 
 5.  Ein Verweis auf die abgerufenen untergeordneten Zeilen (das heißt, das Kapitel des untergeordneten **Recordset**-Objekts) wird in der Kapitelspalte der aktuellen Zeile des übergeordneten **Recordset**-Objekts eingefügt.
 
@@ -69,11 +69,11 @@ Rst1.MovePrevious ' RstChild now holds cached rs, saving round trip.
 
 Bei einer Abfrage mit mehreren Parametern wird nur ein zwischengespeichertes untergeordnetes Element verwendet, wenn alle Parameterwerte den zwischengespeicherten Werten entsprechen.
 
-## <a name="parameterized-commands-and-complex-parent-child-relations"></a>Parametrisierte Befehle und komplexe übergeordneten untergeordneten Elementen
+## <a name="parameterized-commands-and-complex-parent-child-relations"></a>Parametrisierte Befehle und komplexe Parent-Child-Beziehungen
 
-Zusätzlich zur Verwendung von parametrisierter Befehlen zum Verbessern der Leistung einer Equi-Join-Typ-Hierarchie, können parametrisierte Befehle zur Unterstützung von komplexerer über-und untergeordneten Elementen verwendet werden. Angenommen, Sie verwenden eine Datenbank Little League mit zwei Tabellen: Basisplan, der die Teams (Team\_-Id, Team\_Name) und andere Spiele (Datum und private\_Team, besuchen\_Team).
+In addition to using parameterized commands to improve performance of an equi-join type hierarchy, parameterized commands can be used to support more complex parent-child relationships. Betrachten Sie beispielsweise eine kleine Liga Datenbank mit zwei Tabellen: eine bestehend aus den Teams\_(Team ID\_, Teamname) und den anderen spielen (Datum,\_Heimmannschaft,\_Besuchs Team).
 
-Mit einer nicht parametrisierten Hierarchie können die Teams- und Spieletabellen nicht so miteinander verknüpft werden, dass das untergeordnete **Recordset** -Objekt für jedes Team den vollständigen Spielplan enthält. Sie können Kapitel erstellen, die den Heimspielplan oder den Auswärtsspielplan enthalten, jedoch nicht beides. Denn die RELATE-Klausel beschränkt Sie auf Beziehungen zwischen über- und untergeordneten Elementen im Format (pc1=cc1) AND (pc2=pc2). Dies, wenn der Befehl enthielt "verknüpfen Team\_Id zu Hause\_Team, Team\_Id zu besuchen\_Team", erhalten Sie nur spielen, wurde ein Team selbst wiedergeben. Verfügbare ist "(Team\_Id = home\_Team) oder (Team\_Id = Vorsichtsmaßnahmen\_Team)", aber der Shape-Anbieter Momentaufnahmen nicht unterstützt die OR-Klausel.
+Mit einer nicht parametrisierten Hierarchie können die Teams- und Spieletabellen nicht so miteinander verknüpft werden, dass das untergeordnete **Recordset** -Objekt für jedes Team den vollständigen Spielplan enthält. Sie können Kapitel erstellen, die den Heimspielplan oder den Auswärtsspielplan enthalten, jedoch nicht beides. Denn die RELATE-Klausel beschränkt Sie auf Beziehungen zwischen über- und untergeordneten Elementen im Format (pc1=cc1) AND (pc2=pc2). Wenn Ihr Befehl also\_"Relate Team ID to Home\_Team, Team\_ID to Visiting\_Team" enthält, würden Sie nur Spiele erhalten, bei denen sich ein Team selbst anspielte. \_Sie möchten "(Team ID = Home\_Team) oder (Team\_ID = Besuchs\_Team)", aber der Shape-Anbieter unterstützt die or-Klausel nicht.
 
 Sie können einen parametrisierten Befehl verwenden, um das gewünschte Ergebnis zu erhalten. Beispiel:
 

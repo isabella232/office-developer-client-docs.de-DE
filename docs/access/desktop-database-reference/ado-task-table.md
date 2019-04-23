@@ -1,5 +1,5 @@
 ---
-title: Aufgabentabelle ActiveX Data Objects (ADO)
+title: ActiveX Data Objects (ADO)-Aufgaben Tabelle
 TOCTitle: ADO task table
 ms:assetid: 39671d86-72ac-a7b0-53d2-7a17429b15ad
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ffb9ece91d674e3447f43ae17e2ea9415e2339ac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283247"
 ---
 # <a name="ado-task-table"></a>ADO-Aufgabentabelle
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In der folgenden Tabelle Programmieraufgaben in der *ADO-Programmierhandbuch* enthält und Informationsquellen für jede Aufgabe. Bei diesen Themen kann es sich um Beschreibungen oder Codebeispiele handeln, in denen Sie Informationen zum ADO-Feature finden, mit dem die Aufgabe ausgeführt wird.
+In der folgenden Tabelle sind die im ADO-Programmierhandbuch enthaltenen Programmieraufgaben aufgeführt, und *es* werden Verweise für die einzelnen Aufgaben bereitgestellt. Bei diesen Themen kann es sich um Beschreibungen oder Codebeispiele handeln, in denen Sie Informationen zum ADO-Feature finden, mit dem die Aufgabe ausgeführt wird.
 
 <table>
 <colgroup>
@@ -28,7 +28,7 @@ In der folgenden Tabelle Programmieraufgaben in der *ADO-Programmierhandbuch* en
 <thead>
 <tr class="header">
 <th><p>ADO-Aufgabe</p></th>
-<th><p>Themen</p></th>
+<th><p>Verweise</p></th>
 </tr>
 </thead>
 <tbody>
@@ -78,7 +78,7 @@ In der folgenden Tabelle Programmieraufgaben in der *ADO-Programmierhandbuch* en
 </tr>
 <tr class="even">
 <td><p>Beginnen von Transaktionen und Ausführen eines Commits bzw. Rollbacks</p></td>
-<td><p><a href="transaction-processing.md">Die Verarbeitung von Transaktionen</a></p></td>
+<td><p><a href="transaction-processing.md">Transaktionsverarbeitung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Speichern von Datensätzen in einer Datei (XML-Datei oder Binärdatei)</p></td>
@@ -98,7 +98,7 @@ In der folgenden Tabelle Programmieraufgaben in der *ADO-Programmierhandbuch* en
 </tr>
 <tr class="odd">
 <td><p>Auswählen von Sperrtypen</p></td>
-<td><p><a href="types-of-locks.md">Typen von Sperren</a></p></td>
+<td><p><a href="types-of-locks.md">Sperrtypen</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Zurückgeben verknüpfter Datensätze in einem <strong>Recordset</strong>-Objekt</p></td>

@@ -1,5 +1,5 @@
 ---
-title: LockTypeEnum (Access PC-Datenbank-Referenz)
+title: LockTypeEnum (Access Desktop Database Reference)
 TOCTitle: LockTypeEnum
 ms:assetid: 966b4952-5591-4a99-82d5-99cb9ae3fc72
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249667(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d4b9dc49e647bdcd3123ade065da0c74538c9a88
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289864"
 ---
 # <a name="locktypeenum"></a>LockTypeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Sperrentyp für Datensätze während der Bearbeitung an.
 
@@ -63,7 +63,7 @@ Gibt den Sperrentyp für Datensätze während der Bearbeitung an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -78,19 +78,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.LockType.BATCHOPTIMISTIC</p></td>
+<td><p>AdoEnums. LockType. BATCHOPTIMISTIC</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.LockType.OPTIMISTIC</p></td>
+<td><p>AdoEnums. LockType. optimistisch</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.LockType.PESSIMISTIC</p></td>
+<td><p>AdoEnums. LockType. PESSIMISTISCH</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.LockType.READONLY</p></td>
+<td><p>AdoEnums. LockType. READONLY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.LockType.UNSPECIFIED</p></td>
+<td><p>AdoEnums. LockType. unSPECIFIED</p></td>
 </tr>
 </tbody>
 </table>

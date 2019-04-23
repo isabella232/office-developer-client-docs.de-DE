@@ -1,5 +1,5 @@
 ---
-title: ADOX-Methoden (Access PC-Datenbank-Referenz)
+title: ADOX-Methoden (Access Desktop Database Reference)
 TOCTitle: ADOX methods
 ms:assetid: 1a2eed52-2b09-e528-2cdc-134df3c9441f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248947(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 40c4ca85e28813f9827d959ff202e0036e379e96
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270007"
 ---
 # <a name="adox-methods"></a>ADOX-Methoden
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -33,11 +33,11 @@ ms.locfileid: "28721717"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="append-method-adox-columns.md">Append (Spalten)</a></p></td>
+<td><p><a href="append-method-adox-columns.md">Append (Columns)</a></p></td>
 <td><p>Fügt der <strong>Columns</strong>-Auflistung ein neues <strong>Column</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-groups.md">Append (Gruppen)</a></p></td>
+<td><p><a href="append-method-adox-groups.md">Append (Groups)</a></p></td>
 <td><p>Fügt der <strong>Groups</strong>-Auflistung ein neues <strong>Group</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="odd">
@@ -45,23 +45,23 @@ ms.locfileid: "28721717"
 <td><p>Fügt der <strong>Indexes</strong>-Auflistung ein neues <strong>Index</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-keys.md">Append (Schlüssel)</a></p></td>
+<td><p><a href="append-method-adox-keys.md">Append (Keys)</a></p></td>
 <td><p>Fügt der <strong>Keys</strong>-Auflistung ein neues <strong>Key</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="append-method-adox-procedures.md">Append (Verfahren)</a></p></td>
+<td><p><a href="append-method-adox-procedures.md">Append (Procedures)</a></p></td>
 <td><p>Fügt der <strong>Procedures</strong>-Auflistung ein neues <strong>Procedure</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-tables.md">Append (Tabellen)</a></p></td>
-<td><p>Fügt der <strong>Tables</strong> Auflistung ein neues <strong>Table</strong>-Objekt hinzu.</p></td>
+<td><p><a href="append-method-adox-tables.md">Append (Tables)</a></p></td>
+<td><p>Fügt der <strong>Tables</strong>-Auflistung ein neues <strong>Table</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="append-method-adox-users.md">Append (Benutzer)</a></p></td>
+<td><p><a href="append-method-adox-users.md">Append (Users)</a></p></td>
 <td><p>Fügt der <strong>Users</strong>-Auflistung ein neues <strong>User</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-views.md">Append (Ansichten)</a></p></td>
+<td><p><a href="append-method-adox-views.md">Append (Views)</a></p></td>
 <td><p>Fügt der <strong>Views</strong>-Auflistung ein neues <strong>View</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="odd">

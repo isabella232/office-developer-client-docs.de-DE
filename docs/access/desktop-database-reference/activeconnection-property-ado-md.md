@@ -8,23 +8,23 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 372dac11500647af75881ae6b4aee22a391a32c9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280529"
 ---
 # <a name="activeconnection-property-ado-md"></a>ActiveConnection-Eigenschaft (ADO MD)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt an, zu welchem ADO-[Connection](connection-object-ado.md)-Objekt die aktuelle Zellmenge oder der Katalog derzeit gehört.
+Gibt an, zu welchem ADO-[Connection](connection-object-ado.md)-Objekt die aktuelle Zellmenge oder der Katalog momentan gehört.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
-Legt einen **Variant** -Wert fest oder gibt diesen zurück. Der Wert enthält eine Zeichenfolge, die eine Verbindung oder ein **Connection** -Objekt definiert. Die Standardeinstellung ist eine leere Zeichenfolge.
+Legt einen **Variant**-Wert fest oder gibt diesen zurück. Der Wert enthält eine Zeichenfolge, die eine Verbindung oder ein **Connection**-Objekt definiert. Die Standardeinstellung ist eine leere Zeichenfolge.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können diese Eigenschaft auf ein gültiges ADO- **Connection** -Objekt oder eine gültige Verbindungszeichenfolge festlegen. Wenn diese Eigenschaft auf eine Verbindungszeichenfolge festgelegt wird, erstellt der Anbieter mithilfe dieser Definition ein neues **Connection** -Objekt und öffnet die Verbindung.
 
@@ -39,11 +39,11 @@ Wenn Sie versuchen, die **ActiveConnection** -Eigenschaft für ein geöffnetes *
 > [!NOTE]
 > [!HINWEIS] Achten Sie in Visual Basic darauf, das **Set** -Schlüsselwort zu verwenden, wenn Sie die **ActiveConnection** -Eigenschaft auf ein **Connection** -Objekt festlegen. Wenn Sie das **Set** -Schlüsselwort nicht verwenden, legen Sie die **ActiveConnection** -Eigenschaft gleich der Standardeigenschaft des **Connection** -Objekts , **ConnectionString**, fest. Der Code ist funktionsfähig; Sie erstellen jedoch eine zusätzliche Verbindung mit der Datenquelle, was sich negativ auf die Leistung auswirken kann.
 
-Wenn Sie den MSOLAP-Datenanbieter verwenden, legen Sie die Datenquelle in einer Verbindungszeichenfolge auf einen Servernamen fest, und legen Sie für den ursprünglichen Katalog den Namen eines Katalogs aus der Datenquelle fest. Legen Sie als Speicherort den vollständigen Dateipfad der CUB-Datei fest, um eine Verbindung mit einer Cubedatei herzustellen, die von einen Server getrennt ist. Legen Sie in jedem Fall für den Anbieter den Anbieternamen fest. Mit der folgenden Zeichenfolge wird z. B. eine Verbindung mit dem Katalog Bobs Video Store auf dem Server Servername mit dem MSOLAP-Anbieter hergestellt:
+When using the MSOLAP data provider, set the data source in a connection string to a server name and set the initial catalog to the name of a catalog from the data source. To connect to a cube file that is disconnected from a server, set the location to the full path to the .CUB file. In either case, set the provider to the provider name. For example, the following string connects to a catalog named Bobs Video Store on a server named Servername with the MSOLAP Provider:
 
 `"Data Source=Servername;Initial Catalog=Bobs Video Store;Provider=msolap"`
 
-Die folgende Zeichenfolge stellt eine Verbindung mit einer lokalen Cubedatei am Speicherort C:\\MSDASDK\\Beispiele\\Oledb\\Olap\\Daten\\bobsvid.cub:
+Die folgende Zeichenfolge stellt eine Verbindung mit einer lokalen Cubedatei am Speicherort\\C\\:\\MSDASDK\\Samples OLEDB OLAP\\Data\\bobsvid. Cub her:
 
 `"Location=C:\MSDASDK\samples\oledb\olap\data\bobsvid.cub;Provider=msolap"`
 

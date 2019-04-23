@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 09f2513a3c541c76352e773f7f2a8f0c24f78850
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282478"
 ---
 # <a name="address-book-command-buttons"></a>Befehlsschaltflächen des Adressbuchs
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Die Adressbuchanwendung bietet die folgenden Befehlsschaltflächen:
@@ -32,11 +32,11 @@ Die Adressbuchanwendung bietet die folgenden Befehlsschaltflächen:
 
 ## <a name="find-button"></a>Find (Schaltfläche)
 
-Durch Klicken auf die Schaltfläche **Suchen** VBScript suchen aktiviert\_OnClick Sub-Prozedur, die die SQL-Abfrage erstellt und gesendet. Auf diese Schaltfläche klicken, wird das Datenraster aufgefüllt.
+Wenn Sie auf die Schaltfläche **Suchen** klicken,\_wird die VBScript-Suche OnClick Sub-Prozedur aktiviert, die die SQL-Abfrage erstellt und sendet. Clicking this button populates the data grid.
 
 ## <a name="building-the-sql-query"></a>Erstellen der SQL-Abfrage
 
-Der erste Teil der Suche\_OnClick Sub-Prozedur erstellt die SQL-Abfrage einem Begriff zu einem Zeitpunkt durch Anfügen von Zeichenfolgen, die an eine globale SQL SELECT-Anweisung. Zunächst wird die Variable auf einer SQL SELECT-Anweisung, die alle Zeilen der Daten aus der Datenquellentabelle anfordert. Im nächsten Schritt überprüft der Unterprozedur jede der vier input Felder auf der Seite.
+Der erste Teil der "Find\_onclick"-Sub-Prozedur erstellt die SQL-Abfrage, jeweils einen Ausdruck, durch Anfügen von Textzeichenfolgen an eine globale SQL SELECT-Anweisung. Zunächst wird die Variable auf einer SQL SELECT-Anweisung, die alle Zeilen der Daten aus der Datenquellentabelle anfordert. Im nächsten Schritt überprüft der Unterprozedur jede der vier input Felder auf der Seite.
 
 Da das Programm das Wort im Erstellen der SQL-Anweisungen verwendet, stellen die Abfragen Suchvorgänge nach Teilzeichenfolgen dar und nicht als nach genauen Übereinstimmungen.
 
@@ -47,11 +47,11 @@ Wenn das Feld **Nachname** den Eintrag "Berge" enthalten, und das Feld **Titel**
 Select FirstName, LastName, Title, Email, Building, Room, Phone from Employee where lastname like 'Berge%' and title like 'Program Manager%' 
 ```
 
-War die Abfrage erfolgreich, werden alle Personen, deren Nachnamen den Text Berge (z. B. Berge und Berger) und deren Positionsbezeichnung die Wörter Program Manager (z. B. Program Manager, Advanced Technologies) enthalten, im HTML-Datenraster angezeigt.
+If the query was successful, all persons with a last name containing the text "Berge" (such as Berge and Berger) and with a title containing the words "Program Manager" (for example, Program Manager, Advanced Technologies) are displayed in the HTML data grid.
 
 ## <a name="preparing-and-sending-the-query"></a>Vorbereiten und Senden der Abfrage
 
-Den letzten Teil der Suche\_OnClick Sub-Prozedur besteht aus zwei Anweisungen. Der ersten Anweisung wird die SQL-Eigenschaft des RDS.DataControl-Objekt ist gleich der dynamisch erstellte SQL-Abfrage. Die zweite Anweisung bewirkt, dass die **RDS.DataControl** -Objekts (), um die Datenbank Abfragen, und klicken Sie dann die Ergebnisse der Abfrage im Raster angezeigt.
+Der letzte Teil der Find\_OnClick-Sub-Prozedur besteht aus zwei Anweisungen. Der ersten Anweisung wird die SQL-Eigenschaft des RDS.DataControl-Objekt ist gleich der dynamisch erstellte SQL-Abfrage. Die zweite Anweisung bewirkt, dass die **RDS.DataControl** -Objekts (), um die Datenbank Abfragen, und klicken Sie dann die Ergebnisse der Abfrage im Raster angezeigt.
 
 ```vb 
  
@@ -64,7 +64,7 @@ End Sub
 
 ## <a name="update-profile-button"></a>Update Profile (Schaltfläche)
 
-Durch Klicken auf die Schaltfläche **Update Profile** aktiviert das VBScript Update\_OnClick-Unterprozedur Update_OnClick RDS. DataControl-Objekt () SubmitChanges und Refresh-Methode.
+Durch Klicken auf die Schaltfläche **Profil aktualisieren** wird die\_VBScript-Update-OnClick-Sub-Prozedur aktiviert, die RDS ausführt. DataControl-Objekt () SubmitChanges und Refresh-Methode.
 
 ```vb 
  
@@ -74,11 +74,11 @@ Sub Update_OnClick
 End Sub 
 ```
 
-Wenn DC1. SubmitChanges ausgeführt wird, Remote Data Service die Aktualisierungsinformationen verpackt und sendet ihn an den Server via HTTP. Das Update ist nichts. Wenn ein Teil der Aktualisierung nicht erfolgreich ist, wird die Änderungen vorgenommen, und eine Statusnachricht wird zurückgegeben. ausgeführt wird, Remote Data Service die Aktualisierungsinformationen verpackt und sendet ihn an den Server via HTTP. Das Update ist nichts. Wenn ein Teil der Aktualisierung nicht erfolgreich ist, wird die Änderungen vorgenommen, und eine Statusnachricht wird zurückgegeben. DC1. Aktualisieren nach **SubmitChanges** mit Remote Data Service nicht erforderlich, aber es werden aktuelle Daten sichergestellt.
+Wenn DC1. SubmitChanges ausgeführt wird, werden vom Remote Data Service alle Update Informationen verpackt und über HTTP an den Server gesendet. Das Update ist alles-oder-nichts; Wenn ein Teil der Aktualisierung nicht erfolgreich ist, wird keine der Änderungen vorgenommen, und es wird eine Statusmeldung zurückgegeben. ausgeführt wird, werden vom Remote Data Service alle Update Informationen verpackt und über HTTP an den Server gesendet. Das Update ist alles-oder-nichts; Wenn ein Teil der Aktualisierung nicht erfolgreich ist, wird keine der Änderungen vorgenommen, und es wird eine Statusmeldung zurückgegeben. DC1. Refresh ist nach **SubmitChanges** mit Remote Data Service nicht erforderlich, es werden jedoch neue Daten gesichert.
 
 ## <a name="cancel-changes-button"></a>Cancel Changes (Schaltfläche)
 
-Durch Klicken auf **Cancel Changes** wird die VBScript-Abbrechen aktiviert\_OnClick-Unterprozedur Update_OnClick RDS. DataControl Objekt (CancelUpdate-Methode.
+Wenn Sie auf **Änderungen abbrechen** klicken, wird\_die VBScript-Unterprozedur Cancel onCLICK aktiviert, die RDS ausführt. DataControl-Objekt (CancelUpdate-Methode.
 
 ```vb 
  

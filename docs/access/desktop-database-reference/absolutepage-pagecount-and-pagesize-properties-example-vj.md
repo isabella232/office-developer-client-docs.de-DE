@@ -8,15 +8,15 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 34775344c03ef645b26926a5ae11b60f1c14c704
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282077"
 ---
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VJ++)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt.
 

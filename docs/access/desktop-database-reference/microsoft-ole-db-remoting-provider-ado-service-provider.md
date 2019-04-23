@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 54ea659aa5392dd4404ffb591eba06f1f9c2910b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288904"
 ---
-# <a name="microsoft-ole-db-remoting-provider-ado-service-provider"></a>Microsoft OLE DB-Anbieter für Remoting (ADO-Dienstanbieter)
+# <a name="microsoft-ole-db-remoting-provider-ado-service-provider"></a>Microsoft OLE DB Remoting Provider (ADO Service Provider)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mithilfe des Microsoft OLE DB-Anbieter für Remoting kann ein lokaler Benutzer auf einem Clientcomputer Datenanbieter auf einem Remotecomputer aufrufen. Geben Sie die Parameter des Datenanbieters für den Remotecomputer so an, als wären Sie ein lokaler Benutzer am Remotecomputer. Geben Sie anschließend die Parameter an, die vom Anbieter für Remoting für den Zugriff auf den Remotecomputer verwendet werden. So haben Sie auf den Remotecomputer Zugriff, als wären Sie ein lokaler Benutzer.
 
@@ -47,7 +47,7 @@ Beim Aufrufen dieses Dienstanbieters sind die folgenden zusätzlichen Schlüssel
 <tbody>
 <tr class="odd">
 <td><p><strong>Data Source</strong></p></td>
-<td><p>Gibt den Namen der Remotedatenquelle an. Es wird an den OLE DB-Anbieter für Remoting zur Verarbeitung übergeben. Dieses Schlüsselwort entspricht der <a href="connect-property-rds.md">Connect</a>-Eigenschaft des <a href="datacontrol-object-rds.md">RDS.DataControl</a>-Objekts.</p></td>
+<td><p>Gibt den Namen der Remotedatenquelle an. Er wird an den OLE DB-Anbieter für Remoting zur Verarbeitung übergeben. Dieses Schlüsselwort entspricht der <a href="connect-property-rds.md">Connect</a>-Eigenschaft des <a href="datacontrol-object-rds.md">RDS.DataControl</a>-Objekts.</p></td>
 </tr>
 </tbody>
 </table>
@@ -71,13 +71,13 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 <tbody>
 <tr class="odd">
 <td><p><strong>DFMode</strong></p></td>
-<td><p>Gibt den DataFactory-Modus. Eine Zeichenfolge, die die gewünschte Version des <a href="datafactory-object-rdsserver.md">DataFactory</a> -Objekts gibt an, auf dem Server. Legen Sie diese Eigenschaft vor dem Öffnen einer Verbindungs zum Anfordern einer bestimmten Version von <strong>DataFactory</strong>. Wenn die angeforderte Version nicht verfügbar ist, wird versucht werden, verwenden Sie die vorhergehende Version. Wenn keine vorhergehende Version vorhanden ist, tritt ein Fehler auf. Wenn <strong>DFMode</strong> kleiner als die verfügbare Version ist, tritt ein Fehler auf. Diese Eigenschaft ist schreibgeschützt, nachdem eine Verbindung hergestellt wird. Kann einen der folgenden gültigen Werte vom Typ String annehmen:</p>
+<td><p>Gibt den dataFactorymodus an. Eine Zeichenfolge, die die gewünschte Version des <a href="datafactory-object-rdsserver.md">DataFactory</a> -Objekts auf dem Server angibt. Legen Sie diese Eigenschaft vor dem Öffnen einer Verbindung fest, um eine bestimmte <strong></strong>Version von datafactory anzufordern. Wenn die angeforderte Version nicht verfügbar ist, wird versucht, die vorherige Version zu verwenden. Wenn keine Vorgängerversion vorliegt, tritt ein Fehler auf. Wenn <strong>DFMode</strong> kleiner als die verfügbare Version ist, tritt ein Fehler auf. Diese Eigenschaft ist schreibgeschützt, nachdem eine Verbindung hergestellt wurde. Kann einen der folgenden gültigen Werte vom Typ String annehmen:</p>
 <p></p>
 <ul>
-<li><p>&quot;25&quot; – Version 2.5 (Default)</p></li>
-<li><p>&quot;21&quot; – Version 2.1</p></li>
-<li><p>&quot;20&quot; – Version 2.0</p></li>
-<li><p>&quot;15&quot; – Version 1.5</p></li>
+<li><p>&quot;25&quot; — Version 2,5 (Standard)</p></li>
+<li><p>&quot;21&quot; – Version 2,1</p></li>
+<li><p>&quot;20&quot; -Version 2,0</p></li>
+<li><p>&quot;15&quot; – Version 1,5</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -87,7 +87,7 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 </tr>
 <tr class="odd">
 <td><p><strong>Current DFMode</strong></p></td>
-<td><p>Gibt die aktuelle Versionsnummer des <strong>DataFactory</strong> auf dem Server an. Überprüfen Sie diese Eigenschaft, um festzustellen, ob die in der Eigenschaft <strong>DFMode</strong> angeforderte Version berücksichtigt wurde. Kann einen der folgenden gültigen Werte vom Typ Long integer annehmen:</p>
+<td><p>Gibt die tatsächliche Versionsnummer des <strong>DataFactory</strong>-Objekts auf dem Server an. Überprüfen Sie diese Eigenschaft, um festzustellen, ob die in der <strong>DFMode</strong>-Eigenschaft angeforderte Version berücksichtigt wurde. Kann einen der folgenden gültigen Werte vom Typ Long integer annehmen:</p>
 <p></p>
 <ul>
 <li><p>25 – Version 2.5 (Default)</p></li>
@@ -96,11 +96,11 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 <li><p>15 – Version 1.5</p></li>
 </ul>
 <p></p>
-<p>Hinzufügen von &quot;DFMode = 20; &quot; für Ihre Verbindung bei Verwendung des Providers <strong>MSRemote</strong> Zeichenfolge beim Aktualisieren von Daten die Leistung Ihres Servers verbessern kann. Bei dieser Einstellung verwendet das <strong>RDSServer.DataFactory</strong> -Objekt auf dem Server einen weniger ressourcenintensiven Modus. In dieser Konfiguration sind die folgenden Features jedoch nicht verfügbar:</p>
+<p>Hinzu &quot;fügen von DFMode = 20; &quot; zur Verbindungszeichenfolge bei der Verwendung des <strong>MSRemote</strong> -Anbieters können die Leistung des Servers beim Aktualisieren von Daten verbessert werden. Mit dieser Einstellung verwendet das <strong>RDSServer.DataFactory</strong>-Objekt auf dem Server einen weniger ressourcenintensiven Modus. In dieser Konfiguration sind die folgenden Features jedoch nicht verfügbar:</p>
 <p></p>
 <ul>
 <li><p>Verwenden parametrisierter Abfragen.</p></li>
-<li><p>Abrufen von Parameter- oder Spalteninformationen vor dem Aufrufen der <strong>Execute</strong> -Methode.</p></li>
+<li><p>Abrufen von Parameter- oder Spalteninformationen vor dem Aufrufen der <strong>Execute</strong>-Methode.</p></li>
 <li><p>Festlegen von <strong>Transact Updates</strong> auf <strong>True</strong>.</p></li>
 <li><p>Abrufen von Zeilenstatus.</p></li>
 <li><p>Aufrufen der <strong>Resync</strong>-Methode.</p></li>
@@ -111,8 +111,8 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 <p></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Ereignishandler</strong></p></td>
-<td><p>Gibt den Namen eines serverseitigen Anpassungsprogramms (oder Handler), die die Funktionalität des <a href="datafactory-object-rdsserver.md">RDSServer.DataFactory</a>und keine Parameter vom Handler verwendeten<em>,</em> alle durch Kommas getrennt erweitert (&quot;,&quot;). Ein <strong>String</strong> -Wert.</p></td>
+<td><p><strong>Handler</strong></p></td>
+<td><p>Gibt den Namen eines serverseitigen Anpassungsprogramms (oder Handlers) an, das die Funktionalität von <a href="datafactory-object-rdsserver.md">RDSServer. DataFactory</a>und alle vom Handler verwendeten Parameter<em>,</em> alle durch Kommata getrennt (&quot;,&quot;) erweitert. Ein <strong>String</strong>-Wert.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Internet Timeout</strong></p></td>
@@ -128,7 +128,7 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 </tr>
 <tr class="even">
 <td><p><strong>Transact Updates</strong></p></td>
-<td><p>Wenn diese Eigenschaft auf True gesetzt ist, gibt dieser Wert an, dass beim Ausführen von UpdateBatch auf dem Server die Ausführung innerhalb einer Transaktion erfolgt. Der Standardwert für diese boolesche dynamische Eigenschaft ist False.</p></td>
+<td><p>Bei Festlegung auf "true" gibt dieser Wert an, dass bei der Ausführung von <a href="updatebatch-method-ado.md">UpdateBatch</a> auf dem Server innerhalb einer Transaktion ausgeführt wird. Der Standardwert für diese dynamische boolesche Eigenschaft ist false.</p></td>
 </tr>
 </tbody>
 </table>
@@ -142,7 +142,7 @@ Dim cn as New ADODB.Connection
 cn.Open "Provider=MS Remote;Internet Timeout=5000" 
 ```
 
-Sie können auch eine dynamische Eigenschaft festlegen oder abrufen, indem Sie deren Namen als Index für die **Properties** -Eigenschaft angeben. Beispiel: Rufen Sie den aktuellen Wert der dynamischen Eigenschaft **Internet Timeout** ab, und drucken Sie diesen. Legen Sie anschließend einen neuen Wert fest. Gehen Sie dazu wie folgt vor:
+Sie können auch eine dynamische Eigenschaft festlegen oder abrufen, indem Sie deren Namen als Index für die **Properties**-Eigenschaft angeben. Beispiel: Rufen Sie den aktuellen Wert der dynamischen Eigenschaft **Internet Timeout** ab, und drucken Sie diesen. Legen Sie anschließend einen neuen Wert fest. Gehen Sie dazu wie folgt vor:
 
 ```sql 
  
@@ -150,11 +150,11 @@ Debug.Print cn.Properties("Internet Timeout")
 cn.Properties("Internet Timeout") = 5000 
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-In ADO 2.0 konnte der OLE DB-Anbieter für Remoting nur in der *ActiveConnection* -Parameter der **Open** -Methode des [Recordset](recordset-object-ado.md) -Objekts angegeben werden. ADO 2.1 ab, kann der Anbieter auch in der *ConnectionString* -Parameter der **Open** -Methode des [Connection](connection-object-ado.md) -Objekts angegeben werden.
+In ADO 2.0 konnte der OLE DB-Anbieter für Remoting nur im *ActiveConnection*-Parameter der **Open**-Methode des [Recordset](recordset-object-ado.md)-Objekts angegeben werden. Ab ADO 2.1 kann der Anbieter auch im *ConnectionString*-Parameter der **Open**-Methode des [Connection](connection-object-ado.md)-Objekts angegeben werden.
 
-Die Entsprechung der **SQL**-Eigenschaft des [RDS.DataControl](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) -Objekts ist nicht verfügbar. Stattdessen wird das [Recordset](recordset-object-ado.md) -Objekt **Open** *Source* -Argument-Methode verwendet.
+Die Entsprechung der **SQL**-Eigenschaft des [RDS.DataControl](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) -Objekts ist nicht verfügbar. Stattdessen wird das **Open** method *Source* -Argument des [Recordset](recordset-object-ado.md) -Objekts verwendet.
 
 Wenn Sie "...;Remote Provider=MS Remote;..." angeben, wird ein vierstufiges Szenario erstellt. Szenarien mit mehr als drei Stufen wurden noch nicht getestet und sollten nicht erforderlich sein.
 

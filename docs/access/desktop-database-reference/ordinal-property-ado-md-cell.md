@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 91b8d66929e360f88385b6773a03fcaffb79161d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288203"
 ---
 # <a name="ordinal-property-ado-md-cell"></a>Ordinal-Eigenschaft (ADO MD Cell)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Identifiziert eine Zelle eindeutig durch ihre Position innerhalb einer Zellmenge.
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Gibt einen schreibgeschützten, ganzzahligen **Long** -Wert zurück.
+Gibt einen schreibgeschützten, ganzzahligen **Long**-Wert zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Durch den Ordnungswert einer Zelle wird die Zelle innerhalb einer Zellmenge eindeutig identifiziert. Bei diesem Konzept sind die Zellen in einer Zellmenge nummeriert, als wäre die Zellmenge ein *p*-dimensionales Array, wobei *p* die Anzahl der [Achsen](axes-collection-ado-md.md) darstellt. Zellen sind zeilenweise nummeriert (beginnend bei 0).
 

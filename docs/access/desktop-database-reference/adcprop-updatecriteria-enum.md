@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8be93b0b7e4b32e3c040e871ff7d97a95f1e247e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282852"
 ---
-# <a name="adcpropupdatecriteriaenum"></a>ADCPROP\_UPDATECRITERIA\_ENUM
+# <a name="adcpropupdatecriteriaenum"></a>ADCPROP\_-\_UPDATECRITERIA-Enumeration
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, welche Felder zum Erkennen von Konflikten während einer optimistischen Aktualisierung einer Zeile der Datenquelle mit einem [Recordset](recordset-object-ado.md)-Objekt verwendet werden können.
 
@@ -51,18 +51,18 @@ Verwenden Sie diese Konstanten mit der dynamischen **Recordset**-Eigenschaft **U
 <tr class="odd">
 <td><p><strong>adCriteriaTimeStamp</strong></p></td>
 <td><p>3</p></td>
-<td><p>Erkennt Konflikte, wenn der Zeitstempel der Datenquellenzeile geändert wurde, was bedeutet, dass die Zeile zugegriffen wurde, nachdem das <strong>Recordset</strong> abgerufen worden war.</p></td>
+<td><p>Erkennt Konflikte, wenn der Zeitstempel der Datenquellenzeile geändert wurde, was darauf hinweist, dass auf die Zeile zugegriffen wurde, nachdem das Recordset abgerufen worden war.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adCriteriaUpdCols</strong></p></td>
 <td><p>2</p></td>
-<td><p>Erkennt Konflikte, wenn eine der, die aktualisierten Feldern des <strong>Recordsets</strong> entsprechen Spalten der Datenquellenzeile geändert wurden.</p></td>
+<td><p>Erkennt Konflikte, wenn eine der Spalten der Datenquellenzeile geändert wurde, die den aktualisierten Feldern des Recordsets entsprechen.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -77,16 +77,16 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.AdcPropUpdateCriteria.ALLCOLS</p></td>
+<td><p>AdoEnums. AdcPropUpdateCriteria. allSPALTEN</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.AdcPropUpdateCriteria.KEY</p></td>
+<td><p>AdoEnums. AdcPropUpdateCriteria. KEY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.AdcPropUpdateCriteria.TIMESTAMP</p></td>
+<td><p>AdoEnums. AdcPropUpdateCriteria. TIMESTAMP</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.AdcPropUpdateCriteria.UPDCOLS</p></td>
+<td><p>AdoEnums. AdcPropUpdateCriteria. UPDCOLS</p></td>
 </tr>
 </tbody>
 </table>

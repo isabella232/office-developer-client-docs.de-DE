@@ -1,5 +1,5 @@
 ---
-title: Speichern von Daten (Access PC-Datenbank-Referenz)
+title: Persisting Data (Access-Desktop-Daten Bankreferenz)
 TOCTitle: Persisting data
 ms:assetid: cb8a32f7-2cdc-26ed-c6d4-dd93c1ac37ba
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250010(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f5788216a20e62cfc39fd2081f4f672bc4f9b808
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287601"
 ---
 # <a name="persisting-data"></a>Speichern von Daten
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Tragbare Computer (z. B. Laptops) haben Anwendungen erforderlich gemacht, die online und offline ausgeführt werden können. ADO unterstützt dies nun, indem der Entwickler ein Clientcursor- **Recordset** auf einem Datenträger speichern und später erneut laden kann.
 
@@ -51,9 +51,9 @@ Legen Sie die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft mithi
 
 Wenn ein **Recordset** -Objekt gespeichert wird, während die **CursorLocation** -Eigenschaft auf **adUseServer** festgelegt ist, sind die Aktualisierungsmöglichkeiten für das **Recordset** -Objekt eingeschränkt. Normalerweise ist nur das Aktualisieren, Einfügen und Löschen für eine einzelne Tabelle zulässig (in Abhängig von der Providerfunktionalität). Die [Resync](resync-method-ado.md)-Methode ist in dieser Konfiguration ebenfalls nicht verfügbar.
 
-Da *der Zielparameter* jedes Objekt, die die OLE DB **IStream** -Schnittstelle unterstützt akzeptieren kann, können Sie ein **Recordset-Objekt** direkt auf das ASP- **Response** -Objekt speichern.
+Für den *Ziel*-Parameter ist jedes Objekt zulässig, das die OLE DB-Schnittstelle **IStream** unterstützt. Deshalb können Sie ein **Recordset**-Objekt direkt im **Response**-Objekt von ASP speichern.
 
-Im folgenden Beispiel wird mit den Methoden **Save** und **Open** ein **Recordset** -Objekt gespeichert und später erneut geöffnet:
+Im folgenden Beispiel wird mit den Methoden **Save** und **Open** ein **Recordset**-Objekt gespeichert und später erneut geöffnet:
 
 ```vb 
  
@@ -106,8 +106,8 @@ Im folgenden Beispiel wird mit den Methoden **Save** und **Open** ein **Recordse
 
 Dieser Abschnitt enthält die folgenden Themen:
 
-- [Weitere Informationen zur Permanenz von Recordsets](more-about-recordset-persistence.md)
+- [Weitere Informationen zur Daten Satz Persistenz](more-about-recordset-persistence.md)
 
-- [Speichern von gefiltert und hierarchische Recordsets](persisting-filtered-and-hierarchical-recordsets.md)
+- [Speichern von geFilterten und hierarchischen Recordsets](persisting-filtered-and-hierarchical-recordsets.md)
 
-- [Persisting Records in XML Format (ADO)](persisting-records-in-xml-format.md)
+- [Speichern von Datensätzen im XML-Format (ADO)](persisting-records-in-xml-format.md)

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 11a280ffc1434d58b73169231b47f1ff132e1263
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280209"
 ---
 # <a name="addnew-method-example-jscript"></a>AddNew-Methode (Beispiel) (JScript)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [AddNew](addnew-method-ado.md)-Methode zum Erstellen eines neuen Datensatzes mit dem angegebenen Namen verwendet. Schneiden Sie den folgenden Code aus, und fügen Sie ihn in den Editor oder in einen anderen Text-Editor ein, und speichern Sie ihn als **AddNewJS.asp**.
 

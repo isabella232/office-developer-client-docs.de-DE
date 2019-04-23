@@ -8,16 +8,16 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6a8a030a586edc715ac62580510f9cd200b21eb3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281998"
 ---
 # <a name="absoluteposition-and-cursorlocation-properties-example-vb"></a>AbsolutePosition- und CursorLocation-Eigenschaft (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird veranschaulicht, wie über die [AbsolutePosition](absoluteposition-property-ado.md)-Eigenschaft der Status einer Schleife nachverfolgt werden kann, in der alle Datensätze eines [Recordset](recordset-object-ado.md)-Objekts aufgezählt werden. Mithilfe der [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft wird die **AbsolutePosition** -Eigenschaft aktiviert, indem als Cursor ein Clientcursor festgelegt wird.
 

@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b572f4ebe55da1add781ecd86df97937cfeae126
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288617"
 ---
 # <a name="nextrecordset-method-ado"></a>NextRecordset-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
  
-Löscht das aktuelle [Recordset](recordset-object-ado.md)-Objekt, und gibt das nächste **Recordset** -Objekt zurück, indem sie durch eine Reihe von Befehlen wechselt.
+Löscht das aktuelle [Recordset](recordset-object-ado.md)-Objekt, und gibt das nächste **Recordset**-Objekt zurück, indem sie durch eine Reihe von Befehlen wechselt.
 
 ## <a name="syntax"></a>Syntax
 
-Festlegen von *recordset2* = *recordset1*. NextRecordset (*RecordsAffected* )
+Legen Sie *Recordset2* = *Recordset1*fest. NextRecordset (*RecordsAffected* )
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -35,13 +35,13 @@ Gibt ein **Recordset**-Objekt zurück. Im Syntaxmodell können Sie für *records
 |*RecordsAffected* |Optional. Eine **Long** -Variable, an die der Anbieter die Anzahl der Datensätze zurückgibt, auf die sich der aktuelle Vorgang auswirkt.|
 
 > [!NOTE]
-> Dieser Parameter gibt nur die Anzahl der Datensätze an, auf die sich ein Vorgang auswirkt. Er gibt nicht die Anzahl der Datensätze aus einer SELECT- Anweisung zurück, die zum Generieren des Recordset-Objekts verwendet wurde.
+> This parameter only returns the number of records affected by an operation; it does not return a count of records from a select statement used to generate the **Recordset**.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **NextRecordset** -Methode, um die Ergebnisse des nächsten Befehls in einer zusammengesetzten befehlsanweisung oder einer gespeicherten Prozedur, die mehrere Ergebnisse zurückgibt zurückzugeben. Wenn Sie ein **Recordset** -Objekt basierend auf einer befehlsanweisung zusammengesetzter öffnen (beispielsweise "Wählen Sie \* FROM Tabelle1; SELECT \* aus Tabelle2 ") mithilfe der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode auf einen [Befehl](command-object-ado.md) oder die [Open](open-method-ado-recordset.md) -Methode für ein **Recordset-Objekt**, ADO führt nur den ersten Befehl und die Ergebnisse zu *Recordset-Objekt*zurückgibt. Rufen Sie den Zugriff auf die Ergebnisse der nachfolgenden Befehle in der Anweisung die **NextRecordset** -Methode.
+Verwenden Sie die **NextRecordset**-Methode, um die Ergebnisse des nächsten Befehls in einer Verbundbefehlsanweisung oder einer gespeicherten Prozedur, die mehrere Ergebnisse zurückgibt, zurückzugeben. Wenn Sie ein **Recordset** -Objekt basierend auf einer zusammengesetzten Befehlsanweisung öffnen (beispielsweise \* "SELECT FROM Tabelle1; SELECT \* from Tab ") mithilfe der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode für einen [Befehl](command-object-ado.md) oder der [Open](open-method-ado-recordset.md) -Methode für ein **Recordset**-Objekt führt ADO nur den ersten Befehl aus und gibt die Ergebnisse an das *Recordset*-Objekt zurück. Rufen Sie die **NextRecordset**-Methode auf, um auf die Ergebnisse nachfolgender Befehle in der Anweisung zuzugreifen.
 
-Solange es weitere Ergebnisse sind und das **Recordset-Objekt** mit der zusammengesetzten Anweisungen nicht getrennt oder über Prozess hinweg gemarshallt, wird die **NextRecordset** -Methode weiterhin **Recordset** -Objekte zurück. Wenn ein Zeilen zurückgebende Befehl erfolgreich ausgeführt wird, aber keine Datensätze zurückgibt, wird das zurückgegebene **Recordset** -Objekt geöffnet, aber leer sein. In diesem Fall testen Sie, überprüfen Sie, dass die Eigenschaften [BOF](bof-eof-properties-ado.md) und [EOF](bof-eof-properties-ado.md) beide auf **"true"** sind. Wenn ein Zeilen zurückgebende Befehl erfolgreich ausgeführt wird, wird das zurückgegebene **Recordset** -Objekt geschlossen werden die können Sie überprüfen, ob Sie testen die [State](state-property-ado.md) -Eigenschaft für das **Recordset**. Wenn keine weitere Ergebnisse vorhanden sind, wird die *Recordset-Objekt* auf *Nothing*festgelegt.
+Solange zusätzliche Ergebnisse vorhanden sind und das **Recordset** -Objekt, das die zusammengesetzten Anweisungen enthält, nicht getrennt oder über Prozessgrenzen hinweg gemarshallt wird, gibt die **NextRecordset** -Methode weiterhin **Recordset** -Objekte zurück. Wenn ein Befehl zur Zeilenrückgabe erfolgreich ausgeführt wird, aber keine Datensätze zurückgegeben wird, ist das zurückgegebene **Recordset** -Objekt geöffnet, aber leer. Testen Sie für diesen Fall, indem Sie sicherstellen, dass die Eigenschaften [BOF](bof-eof-properties-ado.md) und [EOF](bof-eof-properties-ado.md) beide **true**sind. Wenn ein Befehl ohne Zeilenrückgabe erfolgreich ausgeführt wird, wird das zurückgegebene **Recordset** -Objekt geschlossen, das Sie überprüfen können, indem Sie die [State](state-property-ado.md) -Eigenschaft des **Recordset**-Objekts testen. Wenn keine weiteren Ergebnisse vorhanden sind, wird *Recordset* auf *Nothing*festgelegt.
 
 Die **NextRecordset** -Methode ist in einem getrennten **Recordset** -Objekt, bei dem [ActiveConnection](activeconnection-property-ado.md) auf **Nothing** (in Microsoft Visual Basic) oder NULL (in anderen Sprachen) festgelegt wurde, nicht verfügbar.
 
@@ -51,5 +51,5 @@ Wenn Sie einen Parameter für mehrere Befehle in der Verbundanweisung übergeben
 
 Ihr OLE DB-Anbieter bestimmt, wann ein Befehl in einer Verbundanweisung ausgeführt wird. Der [Microsoft OLE DB Provider für SQL Server](microsoft-ole-db-provider-for-sql-server.md) führt beispielsweise alle Befehle nach dem Erhalt der Verbundanweisung nacheinander aus. Die resultierenden **Recordset** -Objekte werden beim Aufrufen von **NextRecordset** einfach zurückgegeben.
 
-Andere Anbieter führen den nächsten Befehl in einer Anweisung jedoch möglicherweise erst aus, nachdem NextRecordset aufgerufen wurde. Wenn Sie das Recordset-Objekt bei diesen Anbietern explizit schließen, bevor die gesamte Befehlsanweisung durchlaufen wird, führt ADO die verbleibenden Befehle nicht aus.
+However, other providers may execute the next command in a statement only after NextRecordset is called. For these providers, if you explicitly close the **Recordset** object before stepping through the entire command statement, ADO never executes the remaining commands.
 

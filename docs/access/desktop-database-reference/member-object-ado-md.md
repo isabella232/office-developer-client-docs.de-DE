@@ -8,62 +8,62 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 380fdf6c15f6774e27221e8500100870d22350c4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289422"
 ---
 # <a name="member-object-ado-md"></a>Member-Objekt (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt ein Element einer Ebene in einem Cube, die untergeordneten Elemente eines Elements einer Ebene oder ein Element einer Position auf der Achse einer Zellmenge dar.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Eigenschaften eines**** Elements unterscheiden sich je nach Kontext. Ein**** Element einer [Ebene](level-object-ado-md.md) in einem [CubeDef](cubedef-object-ado-md.md)-Objekt besitzt eine [Children](children-property-ado-md.md)-Eigenschaft, die die**** Elemente der nächstniedrigeren Ebene in der Hierarchie in Bezug auf das aktuelle **Member**-Objekt zurückgibt. Die **Children**-Auflistung für das**** Element einer [Position](position-object-ado-md.md) ist immer leer. Die [Type](type-property-ado-md.md)-Eigenschaft gilt nur für**** Elemente einer**** Ebene.
+The properties of a **Member** differ depending on the context in which it is used. A **Member** of a [Level](level-object-ado-md.md) in a [CubeDef](cubedef-object-ado-md.md) has a [Children](children-property-ado-md.md) property that returns the **Members** on the next lower level in the hierarchy from the current **Member**. For a **Member** of a [Position](position-object-ado-md.md), the **Children** collection is always empty. Also, the [Type](type-property-ado-md.md) property applies only to **Members** of a **Level**.
 
-Das **Member**-Objekt einer**** Position hat zwei Eigenschaften ([DrilledDown](drilleddown-property-ado-md.md) und [ParentSameAsPrev](parentsameasprev-property-ado-md.md)), die zum Anzeigen der [Zellmenge](cellset-object-ado-md.md) verwendet werden. Wenn auf diese Eigenschaften für das **Member**-Objekt einer**** Ebene zugegriffen wird, tritt ein Fehler auf.
+A **Member** of **Position** has two properties — [DrilledDown](drilleddown-property-ado-md.md) and [ParentSameAsPrev](parentsameasprev-property-ado-md.md) — that are useful when displaying the [Cellset](cellset-object-ado-md.md). An error will occur if these properties are accessed on a **Member** of a **Level**.
 
-Die Auflistungen und Eigenschaften des **Member**-Objekts einer Ebene**** ermöglichen Folgendes:
+With the collections and properties of a **Member** object of a **Level**, you can do the following:
 
-  - Identifizieren des**** Elements, indem Sie die Eigenschaften [Name](name-property-ado-md.md) und [UniqueName](uniquename-property-ado-md.md) verwenden.
+  - Identify the **Member** with the [Name](name-property-ado-md.md) and [UniqueName](uniquename-property-ado-md.md) properties.
 
-  - Zurückgeben einer Zeichenfolge, die zum Anzeigen des**** Elements verwendet wird, indem Sie die [Caption](caption-property-ado-md.md)-Eigenschaft verwenden.
+  - Return a string to use when displaying the **Member** with the [Caption](caption-property-ado-md.md) property.
 
   - Zurückgeben einer sinnvollen Zeichenfolge, die ein Measure- oder Formula- **Member** beschreibt, indem Sie die [Description](description-property-ado-md.md)-Eigenschaft verwenden.
 
-  - Bestimmen der Art des**** Elements, indem Sie die [Type](type-property-ado-md.md)-Eigenschaft verwenden.
+  - Determine the nature of the **Member** with the [Type](type-property-ado-md.md) property.
 
-  - Abrufen von Informationen zur**** Ebene des**** Elements, indem Sie die Eigenschaften [LevelDepth](leveldepth-property-ado-md.md) und [LevelName](levelname-property-ado-md.md) verwenden.
+  - Obtain information about the **Level** of the **Member** with the [LevelDepth](leveldepth-property-ado-md.md) and [LevelName](levelname-property-ado-md.md) properties.
 
-  - Abrufen verwandter**** Elemente in einer [Hierarchie](hierarchy-object-ado-md.md), indem Sie die Eigenschaften [Parent](parent-property-ado-md.md) und [Children](children-property-ado-md.md) verwenden.
+  - Obtain related **Members** in a [Hierarchy](hierarchy-object-ado-md.md) with the [Parent](parent-property-ado-md.md) and [Children](children-property-ado-md.md) properties.
 
-  - Zählen der untergeordneten Elemente eines **Member** -Objekts, indem Sie die [ChildCount](childcount-property-ado-md.md)-Eigenschaft verwenden.
+  - Count the children of a **Member** with the [ChildCount](childcount-property-ado-md.md) property.
 
   - Verwenden der [Properties](properties-collection-ado.md)-ADO-Standardauflistung, um zusätzliche Informationen zum **Level** -Objekt abzurufen.
 
-Die Auflistungen und Eigenschaften des **Member**-Objekts einer**** Position an der [Achse](axis-object-ado-md.md) ermöglichen Folgendes:
+With the collections and properties of a **Member** of a **Position** along an [Axis](axis-object-ado-md.md), you can do the following:
 
-  - Identifizieren des**** Elements, indem Sie die Eigenschaften [Name](name-property-ado-md.md) und [UniqueName](uniquename-property-ado-md.md) verwenden.
+  - Identify the **Member** with the [Name](name-property-ado-md.md) and [UniqueName](uniquename-property-ado-md.md) properties.
 
-  - Zurückgeben einer Zeichenfolge, die zum Anzeigen des**** Elements verwendet wird, indem Sie die [Caption](caption-property-ado-md.md)-Eigenschaft verwenden.
+  - Return a string to use when displaying the **Member** with the [Caption](caption-property-ado-md.md) property.
 
   - Zurückgeben einer sinnvollen Zeichenfolge, die ein Measure- oder Formula- **Member** beschreibt, indem Sie die [Description](description-property-ado-md.md)-Eigenschaft verwenden.
 
-  - Abrufen von Informationen zur**** Ebene des**** Elements, indem Sie die Eigenschaften [LevelDepth](leveldepth-property-ado-md.md) und [LevelName](levelname-property-ado-md.md) verwenden.
+  - Obtain information about the **Level** of the **Member** with the [LevelDepth](leveldepth-property-ado-md.md) and [LevelName](levelname-property-ado-md.md) properties.
 
   - Zählen der untergeordneten Elemente eines **Member** -Objekts, indem Sie die [ChildCount](childcount-property-ado-md.md)-Eigenschaft verwenden.
 
-  - Verwenden der [DrilledDown](drilleddown-property-ado-md.md)-Eigenschaft, um zu bestimmen, ob sich mindestens ein untergeordnetes Element in direkter Folge des aktuellen**** Elements auf der**** Achse befindet.
+  - Use the [DrilledDown](drilleddown-property-ado-md.md) property to determine whether there is at least one child on the **Axis** immediately following this **Member**.
 
   - Verwenden der [ParentSameAsPrev](parentsameasprev-property-ado-md.md)-Eigenschaft, um zu ermitteln, ob das übergeordnete Element dieses **Member** -Objekts mit dem übergeordneten Element des unmittelbar vorhergehenden **Member** -Objekts identisch ist.
 
-  - Verwenden der [Properties](properties-collection-ado.md)-ADO-Standardauflistung, um zusätzliche Informationen zum **Level** -Objekt abzurufen.
+  - Verwenden der [Properties](properties-collection-ado.md)-ADO-Standardauflistung, um zusätzliche Informationen zum **Level**-Objekt abzurufen.
 
-Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
+Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
 
 <table>
 <colgroup>
@@ -78,7 +78,7 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Katalogname</p></td>
+<td><p>CatalogName</p></td>
 <td><p>Der Name des Katalogs, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="even">
@@ -90,7 +90,7 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 <td><p>Der Name des Cubes.</p></td>
 </tr>
 <tr class="even">
-<td><p>Description</p></td>
+<td><p>Beschreibung</p></td>
 <td><p>Eine sinnvolle Beschreibung des Member-Objekts (Elements).</p></td>
 </tr>
 <tr class="odd">
@@ -146,7 +146,7 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 <td><p>Der eindeutige Name des Elements, das dem Element übergeordnet ist.</p></td>
 </tr>
 <tr class="even">
-<td><p>SchemaName</p></td>
+<td><p>Instanzschema</p></td>
 <td><p>Der Name des Schemas, zu dem dieser Cube gehört.</p></td>
 </tr>
 </tbody>

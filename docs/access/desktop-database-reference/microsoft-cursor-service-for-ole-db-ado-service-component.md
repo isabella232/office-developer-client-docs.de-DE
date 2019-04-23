@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d79d060922c6e7f28209242ebe82821c2ba97bfd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288988"
 ---
 # <a name="microsoft-cursor-service-for-ole-db-ado-service-component"></a>Microsoft Cursor Service für OLE DB (ADO-Dienstkomponente)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Der Microsoft Cursor Service für OLE DB ergänzt die Cursor-Hilfsfunktionen von Datenanbietern. Der Benutzer nimmt daher eine relativ einheitliche Funktionalität aller Datenprovider wahr.
 
@@ -27,15 +27,15 @@ Der Cursordienst ermöglicht die Unterstützung von Batchaktualisierungen in all
 
 ## <a name="keyword"></a>Schlüsselwort
 
-Um diese Dienstkomponente aufzurufen, legen Sie die [CursorLocation](recordset-object-ado.md)-Eigenschaft der Objekte [Recordset](connection-object-ado.md) oder [Connection](cursorlocation-property-ado.md) auf **adUseClient** fest.
+Um diese Dienstkomponente aufzurufen, legen Sie die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft der Objekte [Recordset](recordset-object-ado.md) oder [Connection](connection-object-ado.md) auf **adUseClient** fest.
 
 `connection.CursorLocation=adUseClientrecordset.CursorLocation=adUseClient`
 
 ## <a name="dynamic-properties"></a>Dynamische Eigenschaften
 
-Wenn der Microsoft Cursor Service für OLE DB aufgerufen wird, werden der **Properties**-Auflistung des [Recordset](properties-collection-ado.md) -Objekts die folgenden dynamischen Eigenschaften hinzugefügt. Eine vollständige Liste mit den dynamischen Eigenschaften der Objekte **Connection** und **Recordset** finden Sie im [Index zu dynamischen ADO-Eigenschaften](ado-dynamic-property-index.md). Die zugehörigen OLE DB-Eigenschaftennamen sind ggf. nach den ADO-Eigenschaftennamen in Klammern angegeben.
+Wenn der Microsoft Cursor Service für OLE DB aufgerufen wird, werden der [Properties](properties-collection-ado.md)-Auflistung des **Recordset**-Objekts die folgenden dynamischen Eigenschaften hinzugefügt. Eine vollständige Liste mit den dynamischen Eigenschaften der Objekte **Connection** und **Recordset** finden Sie im [Index zu dynamischen ADO-Eigenschaften](ado-dynamic-property-index.md). Die zugehörigen OLE DB-Eigenschaftennamen sind ggf. nach den ADO-Eigenschaftennamen in Klammern angegeben.
 
-Nach dem Aufrufen des Cursordiensts sind Änderungen an einigen dynamischen Eigenschaften für die zugrunde liegende Datenquelle nicht erkennbar. Beispielsweise wird durch Festlegen der *Befehl Zeitlimit* -Eigenschaft für ein **Recordset-Objekt** für die zugrunde liegenden Datenprovider nicht angezeigt.
+Nach dem Aufrufen des Cursordiensts sind Änderungen an einigen dynamischen Eigenschaften für die zugrunde liegende Datenquelle nicht erkennbar. Beispielsweise ist das Festlegen der Eigenschaft *Timeout* für ein **Recordset** -Objekt für den zugrunde liegenden Datenanbieter nicht sichtbar.
 
 ```vb 
 ... 
@@ -52,7 +52,7 @@ Recordset1.Properties.Item("Command Time out") = 50
 Wenn Ihre Anwendung den Cursordienst erfordert, Sie jedoch dynamische Eigenschaften im zugrunde liegenden Anbieter festlegen müssen, tun Sie dies, bevor Sie den Cursordienst aufrufen. Einstellungen für Eigenschaften von Befehlsobjekten werden unabhängig von der Cursorplatzierung immer an den zugrundeliegenden Datenprovider weitergeleitet. Sie können daher auch jederzeit ein Befehlsobjekt zum Festlegen der Eigenschaften verwenden.
 
 > [!NOTE]
-> Die dynamische Eigenschaft DBPROP_SERVERDATAONINSERT wird vom Cursordienst nicht unterstützt, auch wenn sie vom zugrunde liegenden Datenprovider unterstützt wird.
+> The dynamic property DBPROP_SERVERDATAONINSERT is not supported by the cursor service, even if it is supported by the underlying data provider.
 
 
 
@@ -94,7 +94,7 @@ Wenn Ihre Anwendung den Cursordienst erfordert, Sie jedoch dynamische Eigenschaf
 <td><p>Gibt den Text des Befehls an, der zum erneuten Synchronisieren einer oder mehrerer Zeilen in einer Verknüpfung aus mehreren Tabellen verwendet wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="optimize-property-dynamic-ado.md">Optimieren der Leistung von</a></p></td>
+<td><p><a href="optimize-property-dynamic-ado.md">Optimieren</a></p></td>
 <td><p>Gibt an, ob ein Index erstellt werden soll. Wenn diese Eigenschaft auf <strong>True</strong> festgelegt ist, wird das temporäre Erstellen von Indizes zum Verbessern der Ausführung bestimmter Vorgänge zugelassen.</p></td>
 </tr>
 <tr class="odd">
@@ -130,7 +130,7 @@ Wenn Ihre Anwendung den Cursordienst erfordert, Sie jedoch dynamische Eigenschaf
 </table>
 
 
-Sie können auch eine dynamische Eigenschaft festlegen oder abrufen, indem Sie deren Namen als Index für die **Properties** -Auflistung angeben. Beispiel: Rufen Sie den aktuellen Wert der dynamischen Eigenschaft [Optimize](optimize-property-dynamic-ado.md) ab, und drucken Sie ihn. Legen Sie anschließend einen neuen Wert fest. Gehen Sie dazu wie folgt vor:
+Sie können auch eine dynamische Eigenschaft festlegen oder abrufen, indem Sie deren Namen als Index für die **Properties**-Auflistung angeben. Beispiel: Rufen Sie den aktuellen Wert der dynamischen Eigenschaft [Optimize](optimize-property-dynamic-ado.md) ab, und drucken Sie ihn. Legen Sie anschließend einen neuen Wert fest. Gehen Sie dazu wie folgt vor:
 
 ```vb 
  
@@ -172,5 +172,5 @@ Der Microsoft Cursor Service für OLE DB hat auch Auswirkungen auf das Verhalten
 
 ## <a name="method-behavior"></a>Methodenverhalten
 
-Der Microsoft Cursor Service für OLE DB ermöglicht oder beeinflusst das Verhalten der [Append](field-object-ado.md)-Methode des [Field](append-method-ado.md)-Objekts sowie der Methoden **Open**, [Resync](open-method-ado-recordset.md), [UpdateBatch](resync-method-ado.md) und [Save](updatebatch-method-ado.md) des [Recordset](save-method-ado.md) -Objekts.
+Der Microsoft Cursor Service für OLE DB ermöglicht oder beeinflusst das Verhalten der [Append](append-method-ado.md)-Methode des [Field](field-object-ado.md)-Objekts sowie der Methoden [Open](open-method-ado-recordset.md), [Resync](resync-method-ado.md), [UpdateBatch](updatebatch-method-ado.md) und [Save](save-method-ado.md) des **Recordset**-Objekts.
 

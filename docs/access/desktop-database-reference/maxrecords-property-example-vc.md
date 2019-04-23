@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c3c68aeaf44491c15adac6040289437f1a132982
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289707"
 ---
 # <a name="maxrecords-property-example-vc"></a>MaxRecords-Eigenschaft (Beispiel) (VC++)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird mit der [MaxRecord](maxrecords-property-ado.md)-Eigenschaft ein [Recordset](recordset-object-ado.md) geöffnet, das die 10 teuersten Titel in der ***Titles***-Tabelle enthält.
 

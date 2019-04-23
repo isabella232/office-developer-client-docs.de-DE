@@ -1,5 +1,5 @@
 ---
-title: Parameter.Type-Eigenschaft (DAO)
+title: Parameter. Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 68205cd6-eb45-56a3-593f-e1203472037b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195248(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 208d0a5097b8473fef60b94f972f2c8579150fc7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288021"
 ---
-# <a name="parametertype-property-dao"></a>Parameter.Type-Eigenschaft (DAO)
+# <a name="parametertype-property-dao"></a>Parameter. Type-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt einen solchen Wert zurück. Lese-/Schreibzugriff **Integer**.
+Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. **Integer**-Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,7 +46,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbBigInt</strong></p></td>
+<td><p><strong>dbBigint</strong></p></td>
 <td><p>Große Ganzzahl</p></td>
 </tr>
 <tr class="even">
@@ -102,7 +102,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 <td><p>Langer Binärwert (OLE-Objekt)</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Wert dbMemo</strong></p></td>
+<td><p><strong>dbMemo</strong></p></td>
 <td><p>Memo</p></td>
 </tr>
 <tr class="even">
@@ -118,7 +118,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 <td><p>Text</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Zeitpunkt</strong></p></td>
+<td><p><strong>DBZeit</strong></p></td>
 <td><p>Zeit</p></td>
 </tr>
 <tr class="even">

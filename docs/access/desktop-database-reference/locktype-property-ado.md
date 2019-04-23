@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d12946a90d61a941bf5ef7d479970c8c96e074f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289843"
 ---
 # <a name="locktype-property-ado"></a>LockType-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Typ der Sperren an, die bei der Bearbeitung auf Datensätze angewendet werden.
 
@@ -25,7 +25,7 @@ Gibt den Typ der Sperren an, die bei der Bearbeitung auf Datensätze angewendet 
 
 Legt einen [LockTypeEnum](locktypeenum.md)-Wert fest oder gibt den Wert zurück. Der Standardwert ist **adLockReadOnly**.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Legen Sie die **LockType** -Eigenschaft fest, bevor Sie ein [Recordset](recordset-object-ado.md) öffnen, und geben Sie den Sperrtyp an, den der Anbieter beim Öffnen verwenden soll. Lesen Sie die Eigenschaft, um den Sperrtyp zu ermitteln, der bei einem geöffneten **Recordset** -Objekt verwendet wird.
 
@@ -35,5 +35,5 @@ Die Einstellung **adLockPessimistic** wird nicht unterstützt, wenn die [CursorL
 
 Die **LockType** -Eigenschaft ist nicht schreibgeschützt, wenn das **Recordset** -Objekt geschlossen ist, und schreibgeschützt, wenn es geöffnet ist.
 
-**Remote Data Service-Verwendung** Wenn für ein clientseitiges Recordset-Objekt verwendet wird, kann die **LockType** -Eigenschaft nur auf **AdLockBatchOptimistic**festgelegt werden.
+**Remote Data Service-Verwendung** Bei Verwendung in einem clientseitigen Recordset-Objekt kann **** die LockType-Eigenschaft nur auf **adLockBatchOptimistic**festgelegt werden.
 

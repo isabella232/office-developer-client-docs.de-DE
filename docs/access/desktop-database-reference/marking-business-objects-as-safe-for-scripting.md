@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fe5d331b7f3ab4685cb930323076d111a25ec68e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289777"
 ---
 # <a name="marking-business-objects-as-safe-for-scripting"></a>Kennzeichnen von Geschäftsobjekten als sicher für Skripting
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie müssen jedes Geschäftsobjekt, das mit der [CreateObject](dataspace-object-rds.md)-Methode des [RDS.DataSpace](createobject-method-rds.md)-Objekts instanziiert wird, als "Sicher für Skripts" kennzeichnen, um eine möglichst sichere Internetumgebung zu erreichen. Vergewissern Sie sich, dass die Objekte im Lizenzbereich der Systemregistrierung entsprechend gekennzeichnet sind, damit sie in DCOM verwendet werden können.
 
@@ -30,13 +30,13 @@ Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}]
 Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}] 
 ```
 
-wobei \< *MyActiveXGUID* \> hexadezimale GUID-Nummer des Geschäftsobjekts ist. Speichern Sie es, und in der Registrierung durch den Registrierungs-Editor verwenden oder durch Doppelklicken auf die REG-Datei in Windows Explorer zusammengeführt.
+dabei \<ist *MyActiveXGUID* \> die hexadezimale GUID-Nummer Ihres Geschäftsobjekts. Speichern Sie es, und führen Sie es mithilfe des Registrierungs-Editors in Ihre Registrierung ein, oder Doppelklicken Sie in Windows Explorer auf die reg-Datei.
 
-In Microsoft Visual Basic erstellte Geschäftsobjekte können mit dem Package und Bereitstellungs-Assistenten automatisch als "sicher für Skripting" markiert. Wählen Sie **Safe for initialization** und **Safe for scripting** aus, wenn Sie vom Assistenten auffordert werden, Sicherheitseinstellungen anzugeben.
+Geschäftsobjekte, die in Microsoft Visual Basic erstellt wurden, können mit dem Paket-und Bereitstellungs-Assistenten automatisch als "sicher für die Skripterstellung" gekennzeichnet werden. Wählen Sie **Safe for initialization** und **Safe for scripting** aus, wenn Sie vom Assistenten auffordert werden, Sicherheitseinstellungen anzugeben.
 
 Im letzten Schritt erstellt der Anwendungseinrichtungs-Assistent eine HTM- und eine CAB-Datei. Sie können diese beiden Dateien anschließend auf den Zielcomputer kopieren. Doppelklicken Sie dann auf die HTM-Datei, um die Seite zu laden und den Server ordnungsgemäß zu registrieren.
 
-Da das Geschäftsobjekt, das in der Windows installiert wird\\System32\\Occache Verzeichnis standardmäßig auf die Fenster verschieben\\Ordner System32, und ändern Sie die **HKEY\_Klassen\_ROOT\\CLSID\\ ** \< *MyActiveXGUID*\>\\**InprocServer32** Registrierungsschlüssel, der den richtigen Pfad entspricht.
+Da das\\Geschäftsobjekt standardmäßig im Windows System32\\Occache-Verzeichnis installiert wird, verschieben Sie es in das Windows\\System32-Verzeichnis, und ändern Sie die HKEY **\_-Klassen\_-Stamm\\-CLSID\\ ** . \< ** MyActiveXGUID\>InprocServer32-Registrierungsschlüssel zur Übereinstimmung mit dem richtigen Pfad.**** \\
 
 
 > [!NOTE]

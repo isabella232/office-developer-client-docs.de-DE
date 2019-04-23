@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3ac650d54d08b77bd0ba3311c1ac7c3005d75dfe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283289"
 ---
 # <a name="ado-md-properties"></a>ADO MD-Eigenschaften
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -32,10 +32,10 @@ ms.locfileid: "28716222"
 </tr>
 <tr class="odd">
 <td><p><a href="activeconnection-property-ado-md.md">ActiveConnection</a></p></td>
-<td><p>Gibt an, zu welchem ADO-<strong>Connection</strong>-Objekt die aktuelle Zellmenge oder der Katalog derzeit gehört.</p></td>
+<td><p>Gibt an, zu welchem ADO-<strong>Connection</strong>-Objekt die aktuelle Zellmenge oder der Katalog momentan gehört.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="caption-property-ado-md.md">Beschriftung</a></p></td>
+<td><p><a href="caption-property-ado-md.md">Caption</a></p></td>
 <td><p>Gibt die zu verwendende Beschriftung beim Anzeigen eines <strong>Level</strong>- oder <strong>Member</strong>-Objekts an.</p></td>
 </tr>
 <tr class="odd">
@@ -51,7 +51,7 @@ ms.locfileid: "28716222"
 <td><p>Gibt die Anzahl von Objekten in einer Auflistung an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="depth-property-ado-md.md">Tiefe</a></p></td>
+<td><p><a href="depth-property-ado-md.md">Depth</a></p></td>
 <td><p>Gibt die Anzahl von Ebenen zwischen dem <strong>Level</strong>-Objekt und dem Stammverzeichnis der Hierarchie an.</p></td>
 </tr>
 <tr class="odd">
@@ -64,7 +64,7 @@ ms.locfileid: "28716222"
 </tr>
 <tr class="odd">
 <td><p><a href="drilleddown-property-ado-md.md">DrilledDown</a></p></td>
-<td><p>Gibt an, ob dem Element auf der Achse direkt untergeordnete Elemente folgen.</p></td>
+<td><p>Gibt an, ob dem Element auf der Achse keine untergeordneten Elemente direkt auf der Achse folgen.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="filteraxis-property-ado-md.md">FilterAxis</a></p></td>
@@ -95,20 +95,20 @@ ms.locfileid: "28716222"
 <td><p>Gibt den Namen eines Objekts an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="ordinal-property-ado-md-cell.md">Ordinal-Eigenschaft (Zelle)</a></p></td>
+<td><p><a href="ordinal-property-ado-md-cell.md">Ordinal (Cell)</a></p></td>
 <td><p>Identifiziert eine Zelle eindeutig durch ihre Position innerhalb einer Zellmenge.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="ordinal-property-ado-md-position.md">Ordinal-Eigenschaft (Position)</a></p></td>
+<td><p><a href="ordinal-property-ado-md-position.md">Ordinal (Position)</a></p></td>
 <td><p>Identifiziert eindeutig eine Position auf einer Achse.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="parent-property-ado-md.md">Parent</a></p></td>
-<td><p>Gibt das Element an, das das übergeordnete Element des aktuellen Elements in einer Hierarchie ist.</p></td>
+<td><p>Gibt das Element an, dass dem aktuellen Element in einer Hierarchie übergeordnet ist.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="parentsameasprev-property-ado-md.md">ParentSameAsPrev</a></p></td>
-<td><p>Gibt an, ob das übergeordnete Element dieses Positionselements mit dem übergeordneten Element des direkt vorhergehenden Elements identisch ist.</p></td>
+<td><p>Gibt an, ob das übergeordnete Element dieses Positionselements dasselbe ist wie das übergeordnete Element des direkt darauf folgenden Elements.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="source-property-ado-md.md">Source</a></p></td>
@@ -119,8 +119,8 @@ ms.locfileid: "28716222"
 <td><p>Gibt den aktuellen Status der Zellmenge an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="type-property-ado-md.md">Typ</a></p></td>
-<td><p>Gibt den Type des aktuellen Elements an.</p></td>
+<td><p><a href="type-property-ado-md.md">Type</a></p></td>
+<td><p>Gibt den Typ des aktuellen Elements an.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="uniquename-property-ado-md.md">UniqueName</a></p></td>

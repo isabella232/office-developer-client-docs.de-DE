@@ -12,36 +12,36 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 9f7c4ab535010dc0329673fd04721615f6eb3cd8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288883"
 ---
 # <a name="minimizewindow-macro-action"></a>MinimizeWindow-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Wenn überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden Zugriff konfiguriert ist, können Sie die **Minimierenfenster** -Aktion verwenden, um das aktive Fenster auf eine kleine Titelleiste am unteren Rand des Access-Fensters zu reduzieren.
+Wenn der Zugriff auf überlappende Fenster anstelle von Dokumenten im Registerkartenformat konfiguriert ist, können Sie die **minimierenfenster** -Aktion verwenden, um das aktive Fenster auf eine kleine Titelleiste am unteren Rand des Access-Fensters zu reduzieren.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion kann auf Codefenster des Visual Basic-Editors nicht angewendet werden. Informationen zu den Auswirkungen auf Codefenster finden Sie im Thema zur **WindowState** -Eigenschaft.
+> Diese Aktion kann auf Codefenster des Visual Basic-Editors nicht angewendet werden. Informationen zu den Auswirkungen auf Codefenster finden Sie im Thema zur **WindowState**-Eigenschaft.
 
 ## <a name="setting"></a>Einstellung
 
-Die **MinimierenFenster** -Aktion hat keine Argumente.
+Die **MinimierenFenster**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können diese Aktion verwenden, um ein Fenster vom Bildschirm zu entfernen, während das Objekt geöffnet bleibt. Sie können diese Aktion auch verwenden, um ein Objekt zu öffnen, ohne sein Fenster anzuzeigen. Zum Anzeigen des Objekts verwenden Sie die **AuswählenObjekt** -Aktion mit der Aktion **MaximierenFenster** oder **WiederherstellenFenster**. Durch die **WiederherstellenFenster** -Aktion wird ein minimiertes Fenster in seiner vorherigen Größe wiederhergestellt.
 
-Die **Minimierenfenster** -Aktion hat dieselbe Wirkung wie das Klicken auf die Schaltfläche **Minimieren** in der oberen rechten Fensterecke oder klicken auf **Minimieren** im **Systemmenü des Fensters** .
+The **MinimizeWindow** action has the same effect as clicking the **Minimize** button in the window's upper-right corner or clicking **Minimize** on the window's **Control** menu.
 
 **Tipps**
 
 - Wenn das Fenster, das Sie minimieren möchten, nicht das aktive Fenster ist, müssen Sie zuerst die **AuswählenObjekt** -Aktion verwenden.
 
-- Wenn Sie den Navigationsbereich ausblenden möchten, müssen Sie zuerst die AuswählenObjekt-Aktion mit der Einstellung Ja für das Argument Im Datenbankfenster und anschließend die MinimierenFenster-Aktion verwenden. Das Objekt, das Sie in der AuswählenObjekt-Aktion auswählen, kann ein beliebiges Objekt in der Datenbank sein.
+- To hide the Navigation Pane, use the **SelectObject** action with the In Navigation Pane argument set to **Yes** and then use the **MinimizeWindow** action. The object you select in the **SelectObject** action can be any object in the database.
 
 - Sie können das aktive Fenster ausblenden, indem Sie auf im Menü **Ansicht** auf **Dieses Fenster verwalten**und dann auf **Ausblenden** klicken. Anstatt auf die Größe eines Symbols verkleinert zu werden, wird das Fenster in diesem Fall unsichtbar. Verwenden Sie den Befehl **Einblenden** im gleichen Menü, damit das Fenster wieder angezeigt wird. Mithilfe der **AusführenMenübefehl** -Aktion können Sie jeden dieser Befehle auch in einem Makro ausführen.
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1f7c1d48bca7460ca5dc7aea4c65ffd25ea5c0ac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288217"
 ---
 # <a name="optimize-property-example-vc"></a>Optimize-Eigenschaft (Beispiel) (VC++)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Dieses Beispiel veranschaulicht die [Field](field-object-ado.md) -Objekt dynamische Optimize-Eigenschaft. Das ***Zip*** -Feld der ***Authors*** -Tabelle in der ***Pubs*** -Datenbank wird nicht indiziert. [Optimize](optimize-property-dynamic-ado.md) -Eigenschaft auf **True** festlegen, im Feld ***Zip*** autorisiert ADO einen Index zu erstellen, der die [Find](find-method-ado.md) -Methode die Leistung verbessert.
+This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property. Das Feld ***ZIP*** der ***Authors*** -Tabelle in der ***Pubs*** -Datenbank ist nicht indiziert. Wenn Sie die [optimize](optimize-property-dynamic-ado.md) -Eigenschaft im Feld ***ZIP*** auf **true** festlegen, wird ADO zum Erstellen eines Indexes autorisiert, der die Leistung der [Find](find-method-ado.md) -Methode verbessert.
 
 ```cpp 
  

@@ -8,41 +8,41 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3a943209ce329d59fb4846ed18fd008bc45803da
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288385"
 ---
 # <a name="open-method-ado-stream"></a>Open-Methode (Stream in ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Öffnet ein [Stream](stream-object-ado.md)-Objekt, um Datenströme von Binär- oder Textdaten zu ändern.
 
 ## <a name="syntax"></a>Syntax
 
-*Stream-Objekt*. Öffnen Sie *Source*, *Modus*, *OpenOptions*, *Benutzername*, *Kennwort*
+*Stream*. Open *Source*, *Mode*, *openoptions*, *username*, *Password*
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*Source* |Optional. Ein **Variant** -Wert, der die Quelle der Daten für das **Stream-Objekt**angibt. *Source* kann eine absolute URL-Zeichenfolge enthalten, die auf einem vorhandenen Knoten in einer bekannten Baumstruktur, wie eine e-Mail- oder Dateisystem verweist. Eine URL sollte mithilfe des URL-Schlüsselworts angegeben werden ("URL =*Schema*://*Server*/*Ordner*"). *Quelle* kann auch einen Verweis auf ein bereits geöffnetes [Record](record-object-ado.md) -Objekt enthalten, das den dem **Eintrag**zugeordneten Standarddatenstrom geöffnet wird. Wenn *Source* nicht angegeben wird, ist ein **Stream-Objekt** instanziiert und geöffnet, keine zugrunde liegenden Quelle standardmäßig zugeordnet. Weitere Informationen zu URL-Schemas und deren zugeordneten Anbietern finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).|
-|*Mode* |Optional. Eine [ConnectModeEnum](connectmodeenum.md) -Wert, der den Zugriffsmodus für das resultierende **Stream** angibt (beispielsweise Lese-/Schreibzugriff oder schreibgeschützt). Standardwert ist **AdModeUnknown**. Finden Sie unter die [Mode](mode-property-ado.md) -Eigenschaft für Weitere Informationen zu Access-Modi. Wenn der *Authentifizierungsmodus* nicht angegeben ist, wird es von der Source-Objekt geerbt. Beispielsweise, wenn die Quelle **Datensatz** im schreibgeschützten Modus geöffnet wird, wird der **Stream** auch im schreibgeschützten Modus standardmäßig geöffnet werden.|
-|*OpenOptions* |Optional. Ein [StreamOpenOptionsEnum](streamopenoptionsenum.md)-Wert. Der Standardwert lautet **adOpenStreamUnspecified**.|
+|*Source* |Optional. Ein **Variant**-Wert, der die Datenquelle für das **Stream**-Objekt angibt. *Source* kann eine absolute URL-Zeichenfolge enthalten, die auf einen vorhandenen Knoten in einer bekannten Baumstruktur zeigt, wie eine e-Mail oder ein Dateisystem. Eine URL sollte mit dem URL-Schlüsselwort ("URL =*Schema*://*Server*/-*Ordner*") angegeben werden. Als Alternative kann *Source* einen Verweis auf ein bereits geöffnetes [Record](record-object-ado.md)-Objekt enthalten, das den dem **Record** zugeordneten Standarddatenstrom öffnet. Ist *Source* nicht angegeben, wird ein **Stream**-Objekt instanziiert und geöffnet, das standardmäßig keiner zugrunde liegenden Quelle zugeordnet ist. Weitere Informationen zu URL-Schemas und den zugehörigen Anbietern finden Sie unter [absolute und relative URLs](absolute-and-relative-urls.md).|
+|*Mode* |Optional. Ein [ConnectModeEnum](connectmodeenum.md)-Wert, der den Zugriffsmodus für das resultierende **Stream**-Objekt angibt (z. B. Lese-/Schreibzugriff oder schreibgeschützt). Der Standardwert lautet **adModeUnknown**. Weitere Informationen zu Zugriffmodi erhalten Sie unter [Mode](mode-property-ado.md)-Eigenschaft. Ist *Mode* nicht angegeben, wird diese Methode vom Quellobjekt geerbt. Wenn der Quell-**Record** im schreibgeschützten Modus geöffnet ist, wird das **Stream**-Objekt standardmäßig auch im schreibgeschützten Modus geöffnet.|
+|*Openoptions* |Optional. Ein [StreamOpenOptionsEnum](streamopenoptionsenum.md)-Wert. Der Standardwert lautet **adOpenStreamUnspecified**.|
 |*UserName* |Optional. Ein **String** -Wert mit der Benutzeridentifikation, mit der bei Bedarf auf das **Stream** -Objekt zugegriffen wird.|
 |*Password* |Optional. Ein **String** -Wert, der das Kennwort enthält, mit dem bei Bedarf auf das **Stream** -Objekt zugegriffen wird.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn ein **Record** -Objekts als der Source-Parameter, die *Benutzer-ID* und *das Kennwort* -Parameter übergeben wird werden nicht verwendet werden, da bereits Zugriff auf das **Record** -Objekt zur Verfügung steht. Entsprechend wird der [Modus](mode-property-ado.md) des **Record** -Objekts an das **Stream** -Objekt weitergeleitet. Wenn *Source* nicht angegeben wird, die geöffneten **Stream-Objekt** enthält keine Daten und weist eine [Größe](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) von null (0). Speichern Sie des **Stream-Objekt** mit der [CopyTo](copyto-method-ado.md) oder [SaveToFile](savetofile-method-ado.md) -Methoden vermeiden Verlust von Daten, die in diesen **Stream** geschrieben werden, wenn der **Stream** geschlossen ist, oder auf einen anderen Speicherort zu speichern.
+Wenn ein **Record**-Objekt als Quellparameter übergeben wird, werden die Parameter *UserID* und *Password* nicht verwendet, da der Zugriff auf das **Record**-Objekt bereits vorhanden ist. Der [Mode](mode-property-ado.md) des **Record**-Objekts wird ebenso auf das **Stream**-Objekt übertragen. Ist *Source* nicht angegeben, enthält das geöffnete **Stream**-Objekt keine Daten und weist eine [Size](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) von 0 (Null) auf. Wenn Sie vermeiden möchten, dass beim Schließen des **Stream**-Objekts Daten verlorengehen, die in dieses **Stream**-Objekt geschrieben wurden, speichern Sie das **Stream**-Objekt mit der [CopyTo](copyto-method-ado.md)-Methode oder der [SaveToFile](savetofile-method-ado.md)-Methode, oder speichern Sie ihn an einem anderen Speicherort.
 
-Ein Wert *OpenOptions* **adOpenStreamFromRecord** identifiziert den Inhalt des *Source* -Parameter ein bereits geöffnetes **Record** -Objekt sein. Das Standardverhalten besteht, *Datenquelle* als eine URL zu behandeln, die direkt auf einen Knoten in einer Baumstruktur, wie etwa einer Datei verweist. Der diesem Knoten zugeordnete Standarddatenstrom wird geöffnet.
+Ein *OpenOptions*-Wert **adOpenStreamFromRecord** identifiziert den Inhalt des *Source*-Parameters als ein bereits offenes **Record**-Objekt. Beim Standardverhalten wird *Source* wie eine URL behandelt, die direkt auf einen Knoten in einer Baumstruktur verweist (z. B. auf eine Datei). Der diesem Knoten zugeordnete Standarddatenstrom wird geöffnet.
 
-Alle schreibgeschützten Eigenschaften des **Stream** -Objekts können selbst dann gelesen werden, wenn das **Stream** -Objekt nicht offen ist. Ist ein **Stream** -Objekt asynchron geöffnet, werden alle nachfolgenden Vorgänge (außer dem Überprüfen des [State](state-property-ado.md) und anderer Eigenschaften) blockiert, bis der **Open** -Vorgang abgeschlossen ist.
+Alle schreibgeschützten Eigenschaften des **Stream**-Objekts können selbst dann gelesen werden, wenn das **Stream**-Objekt nicht offen ist. Ist ein **Stream**-Objekt asynchron geöffnet, werden alle nachfolgenden Vorgänge (außer dem Überprüfen des [State](state-property-ado.md) und anderer Eigenschaften) blockiert, bis der **Open**-Vorgang abgeschlossen ist.
 
-Zusätzlich zu den oben beschrieben, durch angeben nicht *Quelle*Optionen, können Sie einfach ein **Stream** -Objekt im Speicher instanziieren, ohne eine zugrunde liegende Datenquelle zuzuordnen. Sie können dem Datenstrom Daten dynamisch hinzufügen, indem Sie mit **Write** oder [WriteText](write-method-ado.md) einfach Binär- oder Textdaten in das [Stream](writetext-method-ado.md) -Objekt schreiben, oder indem Sie mithilfe von [LoadFromFile](loadfromfile-method-ado.md) Daten aus einer Datei laden.
+Zusätzlich zu den oben besprochenen Optionen können Sie nur ein ** **Stream** -Objekt im Arbeitsspeicher instanziieren, ohne es einer zugrunde liegenden Quelle zuzuordnen. Sie können dem Datenstrom Daten dynamisch hinzufügen, indem Sie mit **Write** oder [WriteText](write-method-ado.md) einfach Binär- oder Textdaten in das [Stream](writetext-method-ado.md) -Objekt schreiben, oder indem Sie mithilfe von [LoadFromFile](loadfromfile-method-ado.md) Daten aus einer Datei laden.
 

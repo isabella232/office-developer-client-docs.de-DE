@@ -1,5 +1,5 @@
 ---
-title: Methoden ActiveX Data Objects (ADO)
+title: ActiveX Data Objects (ADO)-Methoden
 TOCTitle: ADO methods
 ms:assetid: 1fd965a0-711c-e199-822c-b9575c5034bd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248984(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3169b7eaab6ad290bfc385881f5de69edc80111f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283282"
 ---
 # <a name="ado-methods"></a>ADO-Methoden
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -32,26 +32,25 @@ ms.locfileid: "28716180"
 </tr>
 <tr class="odd">
 <td><p><a href="addnew-method-ado.md">AddNew</a></p></td>
-<td><p>Es wird ein neuer Datensatz für ein aktualisierbares <strong>Recordset</strong>-Objekt erstellt.</p></td>
+<td><p>Ein neuer Datensatz für ein aktualisierbares <strong>Recordset</strong>-Objekt wird erstellt.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="append-method-ado.md">Append</a></p></td>
 <td><p>Ein Objekt wird einer Auflistung angefügt. Bei einer <strong>Fields</strong>-Auflistung wird möglicherweise ein neues <strong>Field</strong>-Objekt erstellt, bevor es der Auflistung angefügt wird.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="appendchunk-method-ado.md">Methoden "AppendChunk"</a></p></td>
+<td><p><a href="appendchunk-method-ado.md">AppendChunk</a></p></td>
 <td><p>Daten werden einem großen <strong>Field</strong>-Text- oder -Binärdatenobjekt oder einem <strong>Parameter</strong>-Objekt angefügt.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">BeginTrans, CommitTrans und RollbackTrans</a></p></td>
-<td><p>Die Transaktionsverarbeitung in einem <strong>Connection</strong>-Objekt wird wie folgt verwaltet:
-<br/><br/><strong>BeginTrans</strong> - Eine neue Transaktion wird begonnen.<br/><br/>
+<td><p><a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">"BeginTrans", "CommitTrans" und "RollbackTrans"</a></p></td>
+<td><p>Die Transaktionsverarbeitung in einem <strong>Connection</strong>-Objekt wird wie folgt verwaltet:<br/><br/><strong>BeginTrans</strong> - Eine neue Transaktion wird begonnen.<br/><br/>
 <strong>CommitTrans</strong> - Alle Änderungen werden gespeichert, und die aktuelle Transaktion wird beendet. Möglicherweise wird auch eine neue Transaktion gestartet.<br/><br/>
-<strong>RollbackTrans</strong> – alle Änderungen werden abgebrochen und beendet die aktuelle Transaktion. Möglicherweise wird auch eine neue Transaktion gestartet.</p></td>
+<strong>RollbackTrans</strong> -bricht alle Änderungen ab und beendet die aktuelle Transaktion. Möglicherweise wird auch eine neue Transaktion gestartet.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cancel-method-ado.md">Cancel</a></p></td>
-<td><p>Bricht die Ausführung eines ausstehenden asynchronen Methodenaufrufs ab.</p></td>
+<td><p>Die Ausführung eines ausstehenden asynchronen Methodenaufrufs wird abgebrochen.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="cancelbatch-method-ado.md">CancelBatch</a></p></td>
@@ -63,7 +62,7 @@ ms.locfileid: "28716180"
 </tr>
 <tr class="even">
 <td><p><a href="clear-method-ado.md">Clear</a></p></td>
-<td><p>Alle <strong>Error</strong> -Objekte werden aus der <strong>Errors</strong> -Auflistung entfernt.</p></td>
+<td><p>Alle <strong>Error</strong>-Objekte werden aus der <strong>Errors</strong>-Auflistung entfernt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="clone-method-ado.md">Clone</a></p></td>
@@ -75,7 +74,7 @@ ms.locfileid: "28716180"
 </tr>
 <tr class="odd">
 <td><p><a href="comparebookmarks-method-ado.md">CompareBookmarks</a></p></td>
-<td><p>Vergleicht zwei Textmarken und gibt einen Hinweis zu ihren relativen Werten zurück.</p></td>
+<td><p>Zwei Textmarken werden verglichen, und die relativen Werte werden zurückgegeben.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="copyrecord-method-ado.md">CopyRecord</a></p></td>
@@ -83,71 +82,71 @@ ms.locfileid: "28716180"
 </tr>
 <tr class="odd">
 <td><p><a href="copyto-method-ado.md">CopyTo</a></p></td>
-<td><p>Kopiert die angegebene Anzahl von Zeichen oder Bytes (in Abhängigkeit vom <strong>Type</strong>) von einem <strong>Stream</strong>-Objekt in ein anderes <strong>Stream</strong> -Objekt.</p></td>
+<td><p>Die angegebene Anzahl von Zeichen oder Bytes (abhängig vom <strong>Typ</strong>) im <strong>Datenstrom</strong> wird in ein anderes <strong>Stream</strong>-Objekt kopiert.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="createparameter-method-ado.md">CreateParameter</a></p></td>
-<td><p>Erstellt ein neues <strong>Parameter</strong>-Objekt mit den angegebenen Eigenschaften.</p></td>
+<td><p>Ein neues <strong>Parameter</strong>-Objekt mit den angegebenen Eigenschaften wird erstellt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-ado-parameters-collection.md">Delete (ADO-Parameters-Auflistung)</a></p></td>
+<td><p><a href="delete-method-ado-parameters-collection.md">Delete (Parameters-Auflistung in ADO)</a></p></td>
 <td><p>Ein Objekt wird aus der <strong>Parameters</strong>-Auflistung gelöscht.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="delete-method-ado-fields-collection.md">Löschen Sie (ADO-Fields-Auflistung)</a></p></td>
+<td><p><a href="delete-method-ado-fields-collection.md">Delete (Fields-Auflistung in ADO)</a></p></td>
 <td><p>Ein Objekt wird aus der <strong>Fields</strong>-Auflistung gelöscht.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="delete-method-ado-recordset.md">Delete (ADO-Recordset)</a></p></td>
-<td><p>Löscht den aktuellen Datensatz oder eine Gruppe von Datensätzen.</p></td>
+<td><p>Der aktuelle Datensatz oder eine Gruppe von Datensätzen wird gelöscht.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="deleterecord-method-ado.md">DeleteRecord</a></p></td>
 <td><p>Eine Datei oder ein Verzeichnis mit allen Unterverzeichnissen wird gelöscht.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command">Führen Sie aus (ADO-Befehl)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command">Execute (ADO-Befehl)</a></p></td>
 <td><p>Es wird die Abfrage, SQL-Anweisung oder gespeicherte Prozedur ausgeführt, die in der <strong>CommandText</strong>-Eigenschaft angegeben ist.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection">Führen Sie aus (ADO-Verbindung)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection">Execute (ADO-Verbindung)</a></p></td>
 <td><p>Die angegebene Abfrage, SQL-Anweisung, gespeicherte Prozedur oder der angegebene anbieterspezifische Text wird ausgeführt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="find-method-ado.md">Find</a></p></td>
+<td><p><a href="find-method-ado.md">Suchen</a></p></td>
 <td><p>Ein <strong>Recordset</strong>-Objekt wird nach der Zeile durchsucht, die den angegebenen Kriterien entspricht.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="flush-method-ado.md">Leeren</a></p></td>
-<td><p>Erzwingt, dass der Inhalt des im ADO-Puffer verbleibenden <strong>Stream</strong>-Objekts an das zugrundeliegende Objekt, dem das <strong>Stream</strong> -Objekt zugeordnet ist, übergeben wird.</p></td>
+<td><p>Es wird erzwungen, dass der Inhalt des im ADO-Puffer verbleibenden <strong>Stream</strong>-Objekts in das zugrunde liegende Objekt übernommen wird, das dem <strong>Stream</strong>-Objekt zugeordnet ist.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="getchildren-method-ado.md">GetChildren</a></p></td>
-<td><p>Gibt ein <strong>Recordset-Objekt</strong> , dessen Zeilen die Dateien und Unterverzeichnisse in dem durch dieses <strong>Record</strong>dargestellten Verzeichnis darstellen.</p></td>
+<td><p>Ein <strong>Recordset</strong>-Objekt wird zurückgegeben, dessen Zeilen die Daten und Unterverzeichnisse in dem durch dieses <strong>Record</strong>-Objekt dargestellten Verzeichnis darstellen.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="getchunk-method-ado.md">GetChunk</a></p></td>
-<td><p>Gibt den gesamten oder einen Teil des Inhalts eines umfangreichem Text oder Binärdaten <strong>Field</strong> -Objekts.</p></td>
+<td><p>Der gesamte Inhalt oder ein Teil des Inhalts eines großen <strong>Field</strong>-Text- oder -Binärdatenobjekts wird zurückgegeben.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="getrows-method-ado.md">GetRows</a></p></td>
-<td><p>Ruft mehrere Datensätze eines <strong>Recordset</strong>-Objekts in ein Array ab.</p></td>
+<td><p>Mehrere Datensätze eines <strong>Recordset</strong>-Objekts werden in ein Array abgerufen.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="getstring-method-ado.md">GetString</a></p></td>
-<td><p>Gibt das <strong>Recordset</strong>-Objekt als eine Zeichenfolge zurück.</p></td>
+<td><p>Das <strong>Recordset</strong>-Objekt wird als Zeichenfolge zurückgegeben.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="loadfromfile-method-ado.md">LoadFromFile</a></p></td>
-<td><p>Lädt den Inhalt einer vorhandenen Datei in ein <strong>Stream</strong>-Objekt.</p></td>
+<td><p>Der Inhalt einer vorhandenen Datei wird in ein <strong>Stream</strong>-Objekt geladen.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="move-method-ado.md">Move</a></p></td>
-<td><p>Verschiebt die Position des aktuellen Datensatzes in einem <strong>Recordset</strong>-Objekt.</p></td>
+<td><p>Die Position des aktuellen Datensatzes in einem <strong>Recordset</strong>-Objekt wird verschoben.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">MoveFirst-, MoveLast-, MoveNext- und MovePrevious</a></p></td>
-<td><p>Wechselt zum ersten, letzten, nächsten oder vorherigen Datensatz in einem angegebenen <strong>Recordset</strong>-Objekt. Mithilfe dieser Funktionen wird dieser Datensatz zum aktuellen Datensatz.</p></td>
+<td><p><a href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">"MoveFirst", "MoveLast", "MoveNext" und "MovePrevious"</a></p></td>
+<td><p>Es wird zum ersten, letzten, nächsten oder vorherigen Datensatz in einem angegebenen <strong>Recordset</strong>-Objekt gewechselt, und dieser Datensatz wird zum aktuellen Datensatz gemacht.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="moverecord-method-ado.md">MoveRecord</a></p></td>
@@ -155,23 +154,23 @@ ms.locfileid: "28716180"
 </tr>
 <tr class="odd">
 <td><p><a href="nextrecordset-method-ado.md">NextRecordset</a></p></td>
-<td><p>Löscht das aktuelle <strong>Recordset</strong>-Objekt, und gibt das nächste <strong>Recordset</strong> -Objekt zurück, indem sie durch eine Reihe von Befehlen wechselt.</p></td>
+<td><p>Der Inhalt des aktuellen <strong>Recordset</strong>-Objekts wird gelöscht, und das nächste <strong>Recordset</strong>-Objekt wird durch eine Reihe von Befehlen zurückgegeben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="open-method-ado-connection.md">Öffnen Sie (ADO-Verbindung)</a></p></td>
+<td><p><a href="open-method-ado-connection.md">Open (ADO-Verbindung)</a></p></td>
 <td><p>Eine Verbindung mit einer Datenquelle wird geöffnet.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="open-method-ado-record.md">Öffnen Sie (ADO-Datensatz)</a></p></td>
+<td><p><a href="open-method-ado-record.md">Open (ADO-Record)</a></p></td>
 <td><p>Ein vorhandenes <strong>Record</strong>-Objekt wird geöffnet, oder eine neue Datei oder ein neues Verzeichnis wird erstellt.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="open-method-ado-recordset.md">Öffnen Sie (ADO-Recordset)</a></p></td>
-<td><p>Öffnet einen Cursor.</p></td>
+<td><p><a href="open-method-ado-recordset.md">Open (ADO-Recordset)</a></p></td>
+<td><p>Ein Cursor wird geöffnet.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="open-method-ado-stream.md">Öffnen Sie (ADO-Datenstrom)</a></p></td>
-<td><p>Öffnet ein <strong>Stream</strong>-Objekt, um Datenströme von Binär- oder Textdaten zu ändern.</p></td>
+<td><p><a href="open-method-ado-stream.md">Open (ADO-Stream)</a></p></td>
+<td><p>Ein <strong>Stream</strong>-Objekt zum Ändern von Datenströmen von Binär- oder Textdaten wird geöffnet.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="openschema-method-ado.md">OpenSchema</a></p></td>
@@ -199,23 +198,23 @@ ms.locfileid: "28716180"
 </tr>
 <tr class="even">
 <td><p><a href="save-method-ado.md">Save</a></p></td>
-<td><p>Speichert das <strong>Recordset</strong>-Objekt in einer Datei oder in einem <strong>Stream</strong>-Objekt.</p></td>
+<td><p>Das <strong>Recordset</strong>-Objekt wird in einer Datei oder in einem <strong>Stream</strong>-Objekt gespeichert.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="savetofile-method-ado.md">SaveToFile</a></p></td>
-<td><p>Speichert den binären Inhalt eines <strong>Stream</strong>-Objekts in eine Datei.</p></td>
+<td><p>Der Binärinhalt eines <strong>Stream</strong>-Objekts wird in einer Datei gespeichert.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="seek-method-ado.md">Seek</a></p></td>
-<td><p>Durchsucht den Index eines <strong>Recordset</strong>-Objekt, um auf schnelle Weise die Zeile zu finden, die den angegebenen Werten entspricht, und ändert die aktuelle Zeilenposition auf diese Zeile.</p></td>
+<td><p>Der Index eines <strong>Recordset</strong>-Objekts wird durchsucht, um schnell die Zeile zu finden, die mit den angegebenen Werten übereinstimmt, und die aktuelle Zeilenposition wird in diese Zeile geändert.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="seteos-method-ado.md">SetEOS</a></p></td>
-<td><p>Legt die Position fest, bei der es sich um das Ende des Datenstroms handelt.</p></td>
+<td><p>Die Position, die das Ende des Datenstroms darstellt, wird festgelegt.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="skipline-method-ado.md">SkipLine</a></p></td>
-<td><p>Überspringt beim Lesen eine Textdatenstroms eine gesamte Zeile.</p></td>
+<td><p>Beim Lesen eines Textdatenstroms wird eine gesamte Zeile übersprungen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="stat-method-ado.md">Stat</a></p></td>
@@ -223,23 +222,23 @@ ms.locfileid: "28716180"
 </tr>
 <tr class="even">
 <td><p><a href="supports-method-ado.md">Unterstützt</a></p></td>
-<td><p>Bestimmt, ob ein angegebenes <strong>Recordset</strong>-Objekt einen bestimmten Funktionalitätstyp unterstützt.</p></td>
+<td><p>Es wird bestimmt, ob ein bestimmter Funktionalitätstyp von einem angegebenen <strong>Recordset</strong>-Objekt unterstützt wird.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="update-method-ado.md">Update</a></p></td>
-<td><p>Speichert alle Änderungen, die Sie an der aktuellen Zeile eines <strong>Recordset</strong>-Objekts oder der <strong>Fields</strong>-Auflistung eines <strong>Record</strong>-Objekts vornehmen.</p></td>
+<td><p>Alle Änderungen, die Sie an der aktuellen Zeile eines <strong>Recordset</strong>-Objekts oder an der <strong>Fields</strong>-Auflistung eines <strong>Record</strong>-Objekts vornehmen, werden gespeichert.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="updatebatch-method-ado.md">UpdateBatch</a></p></td>
-<td><p>Schreibt alle ausstehenden Batchaktualisierungen auf einen Datenträger.</p></td>
+<td><p>Alle ausstehenden Batchaktualisierungen werden auf den Datenträger geschrieben.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="write-method-ado.md">Write</a>-Ereignis</p></td>
-<td><p>Schreibt Binärdaten in ein <strong>Stream</strong>-Objekt.</p></td>
+<td><p><a href="write-method-ado.md">Write</a></p></td>
+<td><p>Binärdaten werden in ein <strong>Stream</strong>-Objekt geschrieben.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="writetext-method-ado.md">WriteText</a></p></td>
-<td><p>Schreibt eine angegebene Textzeichenfolge in ein <strong>Stream</strong>-Objekt.</p></td>
+<td><p>Eine angegebene Textzeichenfolge wird in ein <strong>Stream</strong>-Objekt geschrieben.</p></td>
 </tr>
 </tbody>
 </table>

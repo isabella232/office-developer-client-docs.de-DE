@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: adc8ed771bcba6a4b6532b33b27980f8aab695c5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289241"
 ---
 # <a name="members-collection-ado-md"></a>Members-Auflistung (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Enthält die[Member](member-object-ado-md.md)-Objekte einer Ebene oder einer Position entlang einer Achse.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine **Members** -Auflistung kann die folgenden Elementtypen enthalten:
+Eine **Members**-Auflistung kann die folgenden Elementtypen enthalten:
 
-  - Die Elemente, die eine Ebene in einem Cube bilden. Sie sind in der Members-Auflistung eines Level-Objekts enthalten. Im Beispiel aus Übersicht über Multidimensionale Schemas und Daten stellen Canada, USA, UK und Germany die vier Elemente der Länderebene dar.
+  - The members that make up a level in a cube. These are contained in the **Members** collection of a [Level](level-object-ado-md.md) object. For example, using the sample from [Overview of Multidimensional Schemas and Data](overview-of-multidimensional-schemas-and-data.md), the four members of the Countries level are Canada, USA, UK, and Germany.
 
   - Die Elemente, die die untergeordneten Elemente eines bestimmten Elements in einer Hierarchie darstellen. Diese Elemente werden von der [Children](children-property-ado-md.md)-Eigenschaft des übergeordneten **Member** -Objekts zurückgegeben. In demselben Beispiel sind Canada-East und Canada-West die beiden Elemente, die dem Element Canada untergeordnet sind.
 
-  - Die Elemente, die eine bestimmte Position entlang der Achse einer Zellmenge definieren. Im Beispiel aus Verwenden von multidimensionalen Daten stellen Valentine und Seattle die beiden Elemente der ersten Position auf der X-Achse dar. Diese Elemente sind in der Members-Auflistung eines Position-Objekts enthalten.
+  - The members that define a specific position along an axis of a [cellset](cellset-object-ado-md.md). Using the cellset from [Working with Multidimensional Data](working-with-multidimensional-data.md) as an example, the two members of the first position on the x-axis are Valentine and Seattle. These members are contained by the **Members** collection of a [Position](position-object-ado-md.md) object.
 
 **Members** ist eine ADO-Standardauflistung. Die Eigenschaften und Methoden einer Auflistung ermöglichen Folgendes:
 

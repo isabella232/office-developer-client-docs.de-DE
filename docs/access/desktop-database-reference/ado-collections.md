@@ -1,5 +1,5 @@
 ---
-title: Sammlungen von ActiveX Data Objects (ADO)
+title: ActiveX Data Objects (ADO)-Auflistungen
 TOCTitle: ADO collections
 ms:assetid: a57e4c0c-d043-edb8-1bbe-5b7b437a8150
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249769(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ddaab78582429e201e563c01bb3195f585216cbe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281708"
 ---
 # <a name="ado-collections"></a>ADO-Auflistungen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Jede Auflistung kann das entsprechende Objekt enthalten. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen zu Objekten finden Sie unter [ADO-Objekte](ado-objects-and-interfaces.md) oder ein bestimmtes Objektthema.
+Jede Auflistung kann das entsprechende Objekt enthalten. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen zu Objekten finden Sie unter [ADO-Objekte](ado-objects-and-interfaces.md) oder ein spezifisches Objektthema.
 
 <br/>
 

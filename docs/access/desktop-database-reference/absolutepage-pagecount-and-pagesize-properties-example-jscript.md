@@ -8,17 +8,17 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ab6600c6fd1794e860f432f41e4733690cc516af
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280705"
 ---
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (JScript)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt. Schneiden Sie aus und fügen Sie den folgenden Code in Editor oder einem anderen Texteditor, und speichern Sie es als **AbsolutePageJS.asp**.
+In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt. Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.
 
 ```javascript
 <!-- BeginAbsolutePageJS --> 

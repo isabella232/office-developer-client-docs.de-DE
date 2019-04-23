@@ -8,23 +8,23 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6a0ad4caa6e31b6de39904016cd848e12690f72e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280684"
 ---
 # <a name="absolutepage-property-ado"></a>AbsolutePage-Eigenschaft (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, auf welcher Seite sich der aktuelle Datensatz befindet.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
-Legt fest oder gibt einen **Long** -Wert von 1 bis die Anzahl der Seiten im [Recordset](recordset-object-ado.md) -Objekt ([PageCount](pagecount-property-ado.md)) oder einen der Werte [PositionEnum](positionenum.md) zurückgegeben.
+Legt einen **Long** -Wert zwischen 1 und der Anzahl von Seiten im [Recordset](recordset-object-ado.md) -Objekt ([PageCount](pagecount-property-ado.md)) fest oder gibt einen der [PositionEnum](positionenum.md) -Werte zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit dieser Eigenschaft kann die Nummer der Seite identifiziert werden, auf der sich der aktuelle Datensatz befindet. Sie verwendet die [PageSize](pagesize-property-ado.md)-Eigenschaft, um die Gesamtzahl von Rowsets des **Recordset** -Objekts logisch in Seitenblöcke aufzuteilen, die jeweils die Anzahl von Datensätzen gemäß **PageSize** enthalten (außer der letzten Seite, die weniger Datensätze haben kann). Die entsprechende Funktionalität muss vom Anbieter unterstützt werden, damit diese Eigenschaft verfügbar ist.
 
@@ -32,7 +32,7 @@ Beim Abrufen oder Festlegen der **AbsolutePage** -Eigenschaft verwendet ADO die 
 
 - Zum Abrufen von **AbsolutePage** ruft ADO zuerst die **AbsolutePosition** -Eigenschaft ab und dividiert den Wert dann durch die **PageSize** -Eigenschaft.
 
-- Zum Festlegen von **AbsolutePage** verschiebt ADO die **AbsolutePosition** -Eigenschaft wie folgt: **PageSize** wird mit dem neuen Wert von **AbsolutePage** multipliziert, und dann wird 1 addiert. Daher wird die aktuelle Position im **Recordset-Objekt** nach dem erfolgreichen festlegen **AbsolutePage** der erste Datensatz in dieser Seite.
+- Zum Festlegen von **AbsolutePage** verschiebt ADO die **AbsolutePosition** -Eigenschaft wie folgt: **PageSize** wird mit dem neuen Wert von **AbsolutePage** multipliziert, und dann wird 1 addiert. Daher ist die aktuelle Position im **Recordset** nach dem erfolgreichen Festlegen von **AbsolutePage** der erste Datensatz auf dieser Seite.
 
 **AbsolutePage** ist wie die **AbsolutePosition** -Eigenschaft 1-basiert und entspricht 1, wenn der aktuelle Datensatz der erste Datensatz im **Recordset** -Objekt ist. Legen Sie diese Eigenschaft fest, um zum ersten Datensatz einer bestimmten Seite zu navigieren. Die Gesamtseitenanzahl rufen Sie von der **PageCount** -Eigenschaft ab.
 

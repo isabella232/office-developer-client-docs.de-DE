@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 3294efe5ea1ab0f82be19f5c64a51287cc4df9b7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288343"
 ---
 # <a name="openquery-macro-action"></a>OpenQuery-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **ÖffnenAbfrage** -Aktion können Sie eine Auswahl- oder Kreuztabellenabfrage in der Datenblattansicht, in der Entwurfsansicht oder in der Seitenansicht öffnen. Mit dieser Aktion wird eine Aktionsabfrage ausgeführt. Sie können für die Abfrage auch einen Dateneingabemodus auswählen.
 
@@ -29,7 +29,7 @@ Mit der **ÖffnenAbfrage** -Aktion können Sie eine Auswahl- oder Kreuztabellena
 
 ## <a name="setting"></a>Einstellung
 
-Die **ÖffnenAbfrage** -Aktion hat die folgenden Argumente.
+Die **ÖffnenAbfrage**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -59,9 +59,9 @@ Die **ÖffnenAbfrage** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie **Datenblatt** für das Argument **Ansicht** verwenden, zeigt Access das Resultset an, sofern die Abfrage eine Auswahl-, Kreuztabellen-, Union- oder Pass-Through-Abfrage ist, deren **ReturnsRecords** -Eigenschaft auf **Ja** festgelegt ist. Zudem führt Access die Abfrage aus, wenn es sich um eine Aktions-, Datendefinitions- oder Pass-Through-Abfrage handelt, deren **ReturnsRecords** -Eigenschaft auf **Nein** festgelegt ist.
+Wenn Sie **Datenblatt** für das Argument **Ansicht** verwenden, zeigt Access das Resultset an, sofern die Abfrage eine Auswahl-, Kreuztabellen-, Union- oder Pass-Through-Abfrage ist, deren **ReturnsRecords**-Eigenschaft auf **Ja** festgelegt ist. Zudem führt Access die Abfrage aus, wenn es sich um eine Aktions-, Datendefinitions- oder Pass-Through-Abfrage handelt, deren **ReturnsRecords**-Eigenschaft auf **Nein** festgelegt ist.
 
 Die **ÖffnenAbfrage** -Aktion bewirkt dasselbe, wie wenn Sie auf die Abfrage im Navigationsbereich doppelklicken oder mit der rechten Maustaste auf die Abfrage im Navigationsbereich klicken und dann eine Ansicht auswählen. Mit dieser Aktion können Sie zusätzliche Optionen auswählen.
 

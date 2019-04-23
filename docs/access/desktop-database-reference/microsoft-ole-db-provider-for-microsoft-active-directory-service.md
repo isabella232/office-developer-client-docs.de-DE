@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 23e1cab32fee6103a046219a7cda8c90f02d9f79
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288939"
 ---
-# <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB-Anbieter für Microsoft Active Directory-Dienst
+# <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB Provider for Microsoft Active Directory Service
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mithilfe des Microsoft ADSI-Anbieters (Active Directory Service Interfaces) kann ADO über ADSI eine Verbindung mit heterogenen Verzeichnisdiensten herstellen. Dadurch erlangen ADO-Anwendungen schreibgeschützten Zugriff auf die Verzeichnisdienste von Microsoft Windows NT 4.0 und Microsoft Windows 2000 sowie auf sämtliche LDAP-kompatible Verzeichnisdienste und Novell Directory Services. ADSI selbst basiert auf einem Anbietermodell. Wenn also ein neuer Anbieter Zugriff auf ein anderes Verzeichnis gewährt, kann die ADO-Anwendung problemlos auf dieses Verzeichnis zugreifen. Der ADSI-Anbieter ist ein Freethreadanbieter, der Unicode verwendet.
 
 ## <a name="connection-string-parameters"></a>Verbindungszeichenfolgen-Parameter
 
-Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das **Provider** -Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
+Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das **Provider**-Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
 
 ```vb 
  
@@ -97,14 +97,14 @@ Eine vierteilige Befehlstextzeichenfolge wird durch den Anbieter in der folgende
 <td><p>Gibt den Suchfilter im Format RFC 1960 an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Attribute</em></p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>Gibt eine Liste mit durch Komma getrennten Attributen an, die zurückgegeben werden sollen.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Bereich</em></p></td>
-<td><p>Optional. Eine <strong>Zeichenfolge</strong> , die den Bereich der Suche angibt. Kann eine der folgenden sein: Basis – nur das Basisobjekt (Stamm der Suche).<br />
-Ebene – Sucht nur eine Ebene.<br />
-Unterstruktur – Suchen Sie die gesamte Unterstruktur.</p></td>
+<td><p><em>Scope</em></p></td>
+<td><p>Optional. Eine <strong>Zeichenfolge</strong>, dien den Bereich der Suche angibt. Kann eine der folgenden sein: Base – sucht nur nach dem Basisobjekt (Stamm der Suche).<br />
+OneLevel-sucht nur eine Ebene.<br />
+SubTree – Durchsuchen Sie die gesamte Unterstruktur.</p></td>
 </tr>
 </tbody>
 </table>
@@ -129,11 +129,11 @@ Der Anbieter akzeptiert weder Aufrufe gespeicherter Prozeduren noch einfache Tab
 
 ## <a name="recordset-behavior"></a>Recordset-Verhalten
 
-In den folgenden Tabellen sind die für ein [Recordset](recordset-object-ado.md)-Objekt verfügbaren Features aufgeführt, das mit diesem Anbieter geöffnet wird. Nur der statische Cursortyp (**AdOpenStatic**) zur Verfügung steht.
+In den folgenden Tabellen sind die für ein [Recordset](recordset-object-ado.md)-Objekt verfügbaren Features aufgeführt, das mit diesem Anbieter geöffnet wird. Nur der statische Cursortyp (**adOpenStatic**) ist verfügbar.
 
 Ausführlichere Informationen zum **Recordset** -Verhalten Ihrer Anbieterkonfiguration erhalten Sie, wenn Sie die [Supports](supports-method-ado.md)-Methode ausführen und die [Properties](properties-collection-ado.md) -Auflistung des **Recordset** -Objekts aufzählen, um zu ermitteln, ob anbieterspezifische dynamische Eigenschaften vorhanden sind.
 
-Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
+Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 
 <table>
 <colgroup>
@@ -149,27 +149,27 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
 <tbody>
 <tr class="odd">
 <td><p><a href="absolutepage-property-ado.md">AbsolutePage</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="absoluteposition-property-ado.md">AbsolutePosition</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="bookmark-property-ado.md">Lesezeichen</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="cachesize-property-ado.md">CacheSize</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cursorlocation-property-ado.md">CursorLocation</a></p></td>
@@ -185,53 +185,53 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">EOF</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="filter-property-ado.md">Filter</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="locktype-property-ado.md">LockType</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="marshaloptions-property-ado.md">MarshalOptions</a></p></td>
-<td><p>Nicht verf?gbar</p></td>
+<td><p>nicht verfügbar</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="maxrecords-property-ado.md">MaxRecords</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
-<td><p>Lesen/Schreiben</p></td>
+<td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="status-property-ado-recordset.md">Status</a></p></td>
-<td><p>nur Lesen</p></td>
+<td><p>schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Verfügbarkeit von ADO-Standardmethoden des **Recordset** -Objekts:
+Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 
 <table>
 <colgroup>

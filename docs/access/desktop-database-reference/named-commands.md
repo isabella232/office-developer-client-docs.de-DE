@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 40ce95c5879f5da9615c66d132d6c4847fae1569
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288644"
 ---
 # <a name="named-commands"></a>Benannte Befehle
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die Name-Eigenschaft im Command-Objekt festlegen und dann den Befehl ausführen, indem Sie ihn wie eine Methode für die ActiveConnection-Eigenschaft im Command-Objekt aufrufen. Dies wird im folgenden Beispiel veranschaulicht, bei dem der Befehl GetCustomers heißt. Beachten Sie, dass der Code ein deklariertes und instanziiertes Recordset-Objekt an die GetCustomers-Methode übergibt. Außerdem können Sie Parameter an die Methode übergeben, falls sie für das Command-Objekt erforderlich sind.
+Sie können die **Name** -Eigenschaft für ein **Command** -Objekt festlegen und dann den Befehl ausführen, indem Sie ihn aufrufen, als wäre es eine Methode für die **ActiveConnection** -Eigenschaft des **Command** -Objekts. Dies wird im folgenden Beispiel veranschaulicht, in dem der Befehl getCustomers ** heißt. Beachten Sie, dass der Code ein deklariertes und instanziiertes **Recordset** -Objekt an die GetCustomers-Methode übergibt. Sie können auch Parameter an die "Method" übergeben, wenn Sie für den **Befehl**erforderlich sind.
 
 ```vb 
  

@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0724320e1aaa1e7bfd3ceab8cf54afd5921c7425
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288182"
 ---
 # <a name="originalvalue-property-ado"></a>OriginalValue-Eigenschaft (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Wert eines [Felds](field-object-ado.md) im Datensatz an, bevor Änderungen vorgenommen wurden.
 
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen **Variant** -Wert zurück, der den Wert eines Felds vor einer Änderung darstellt.
+Gibt einen **Variant**-Wert zurück, der den Wert eines Felds vor einer Änderung darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **OriginalValue** -Eigenschaft, um den ursprünglichen Wert eines Felds aus dem aktuellen Datensatz zurückzugeben.
+Verwenden Sie die **OriginalValue**-Eigenschaft, um den ursprünglichen Wert eines Felds aus dem aktuellen Datensatz zurückzugeben.
 
-Im *sofortigen Aktualisierungsmodus* (in dem der Anbieter schreibt Änderungen in der zugrunde liegenden Datenquelle nach dem Aufruf der [Update](update-method-ado.md) -Methode), die **OriginalValue** -Eigenschaft gibt den Wert des Felds, das vor Änderungen vorhanden war (d. h., da die letzte Aufruf der **Update** -Methode). Dies ist der gleichen Wert, den die [CancelUpdate](cancelupdate-method-ado.md) -Methode verwendet, um die [Value](value-property-ado.md) -Eigenschaft ersetzen.
+Im *sofortigen Aktualisierungsmodus* (in dem der Anbieter Änderungen an der zugrunde liegenden Datenquelle schreibt, nachdem Sie die [Update](update-method-ado.md) -Methode aufgerufen haben), gibt die **OriginalValue** -Eigenschaft den Feldwert zurück, der vor Änderungen vorhanden war (das heißt, da der Aufruf der letzten **Update** -Methode). Dabei handelt es sich um denselben Wert, der in der [CancelUpdate](cancelupdate-method-ado.md)-Methode dazu verwendet wird, den Wert der [Value](value-property-ado.md)-Eigenschaft zu ersetzen.
 
-Im *Batchaktualisierungsmodus* (in dem der Anbieter mehrere Änderungen zwischenspeichert und schreibt sie in der zugrunde liegenden Datenquelle nur, wenn Sie die [UpdateBatch](updatebatch-method-ado.md) -Methode aufrufen), die **OriginalValue** -Eigenschaft gibt den Wert des Felds, das vorhanden, bevor Sie eine war ändert (d. h., seit die letzte **UpdateBatch** -Methode aufrufen). Dies ist der gleiche Wert, den die [CancelBatch](cancelbatch-method-ado.md) -Methode verwendet, um die **Value** -Eigenschaft ersetzen. Wenn Sie diese Eigenschaft mit der [UnderlyingValue](underlyingvalue-property-ado.md) -Eigenschaft verwenden, können Sie Konflikte lösen, die durch Batchaktualisierungen auftreten.
+Im *Batchaktualisierungsmodus* (in dem der Anbieter mehrere Änderungen zwischenspeichert und erst in die zugrunde liegende Datenquelle schreibt, wenn Sie die [UpdateBatch](updatebatch-method-ado.md)-Methode aufrufen) gibt die **OriginalValue**-Eigenschaft den Feldwert zurück, der vor Änderungen vorhanden war (d. h. seit dem letzten Aufruf der **UpdateBatch**-Methode). Dabei handelt es sich um denselben Wert, der bei der [CancelBatch](cancelbatch-method-ado.md)-Methode zum Ersetzen der **Value**-Eigenschaft verwendet wird. Wenn Sie diese Eigenschaft in Verbindung mit der [OriginalValue](underlyingvalue-property-ado.md)-Eigenschaft verwenden, können Sie Konflikte lösen, die durch Batchaktualisierungen auftreten.
 
-## <a name="record"></a>Record
+## <a name="record"></a>Aufzeichnen
 
-Bei [Record](record-object-ado.md)-Objekten ist die **OriginalValue** -Eigenschaft für Felder leer, die vor dem Aufruf der [Update](update-method-ado.md)-Methode hinzugefügt wurden.
+Bei [Record](record-object-ado.md)-Objekten ist die **OriginalValue**-Eigenschaft für Felder leer, die vor dem Aufruf der [Update](update-method-ado.md)-Methode hinzugefügt wurden.
 

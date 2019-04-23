@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4045445120d42f1ca88fce22ce566fc970fce28b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288953"
 ---
-# <a name="microsoft-ole-db-persistence-provider-ado-service-provider"></a>Microsoft OLE DB-Anbieter für Persistenz (ADO-Dienstanbieter)
+# <a name="microsoft-ole-db-persistence-provider-ado-service-provider"></a>Microsoft OLE DB Persistence Provider (ADO Service Provider)
 
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
 
-Microsoft OLE DB-Anbieter für Persistenz können Sie ein [Recordset](recordset-object-ado.md) -Objekt in einer Datei zu speichern und später dieses **Recordset** -Objekt aus der Datei wiederherstellen. Schemainformationen, Daten und ausstehende Änderungen werden beibehalten.
+The Microsoft OLE DB Persistence Provider enables you to save a [Recordset](recordset-object-ado.md) object into a file, and later restore that **Recordset** object from the file. Schema information, data, and pending changes are preserved.
 
-Sie können das **Recordset** -Objekt entweder im proprietären ADTG-Format (Advanced Data Table Gram) oder im offenen XML-Format (Extensible Markup Language) speichern.
+Sie können das **Recordset**-Objekt entweder im proprietären ADTG-Format (Advanced Data Table Gram) oder im offenen XML-Format (Extensible Markup Language) speichern.
 
 ## <a name="provider-keyword"></a>Schlüsselwort für den Anbieter
 
@@ -60,13 +60,13 @@ Die folgenden Fehler, die von diesem Anbieter ausgegeben werden, können in Ihre
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Microsoft OLE DB-Anbieter für Persistenz macht keine dynamischen Eigenschaften verfügbar.
 
 Derzeit können nur parametrisierte hierarchische **Recordset** -Objekte nicht gespeichert werden.
 
-Weitere Informationen zum permanenten Speichern von **Recordset** -Objekten finden Sie unter [Weitere Informationen zur Permanenz von Recordsets ](more-about-recordset-persistence.md).
+Weitere Informationen zum permanenten Speichern von **Recordset**-Objekten finden Sie unter [Weitere Informationen zur Permanenz von Recordsets ](more-about-recordset-persistence.md).
 
-Beim Öffnen eines **Recordset-Objekts**ein Stream verwendet wird, gibt es soll keine Parameter angegeben, andere als die *Source* -Parameter der **Open** -Methode.
+Wenn zum Öffnen eines **Recordset**-Objekts ein Stream verwendet wird, dürfen außer dem *Source*-Parameter der **Open**-Methode keine anderen Parameter angegeben werden.
 

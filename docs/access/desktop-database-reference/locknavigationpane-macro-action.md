@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7f6ee19edaf2efdc03301e98e709db6dd69f101a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289871"
 ---
 # <a name="locknavigationpane-macro-action"></a>LockNavigationPane-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **SperrenNavigationsbereich** -Aktion können Sie verhindern, dass Benutzer Datenbankobjekte löschen können, die im Navigationsbereich angezeigt werden.
 
 ## <a name="setting"></a>Einstellung
 
-Die **SperrenNavigationsbereich** -Aktion verfügt über folgendes Argument.
+Die **SperrenNavigationsbereich**-Aktion verfügt über folgendes Argument.
 
 <table>
 <colgroup>
@@ -49,9 +49,9 @@ Die **SperrenNavigationsbereich** -Aktion verfügt über folgendes Argument.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Durch Sperren des Navigationsbereichs werden Sie daran gehindert, Datenbankobjekte zu löschen oder in die Zwischenablage auszuschneiden. Es ist *nicht* verhindern, dass Sie einen der folgenden Vorgänge ausführen:
+Durch Sperren des Navigationsbereichs werden Sie daran gehindert, Datenbankobjekte zu löschen oder in die Zwischenablage auszuschneiden. Sie werden *nicht* daran gehindert, die folgenden Vorgänge auszuführen:
 
   - Kopieren von Datenbankobjekten in die Zwischenablage
 
