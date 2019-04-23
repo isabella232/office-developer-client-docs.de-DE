@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 540a15cbd284fbee6a1ceff31990b3506183bcd3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289388"
 ---
-# <a name="members-collection-ado-md-reference"></a><span data-ttu-id="dfcbc-102">Members-Auflistung (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="dfcbc-102">Members collection (ADO MD reference)</span></span>
+# <a name="members-collection-ado-md-reference"></a><span data-ttu-id="ef48b-102">Members-Auflistung (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="ef48b-102">Members collection (ADO MD reference)</span></span>
 
-<span data-ttu-id="dfcbc-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dfcbc-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="ef48b-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ef48b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="dfcbc-104">Members-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="dfcbc-104">Members collection (ADO MD)</span></span>](members-collection-ado-md.md)
-- [<span data-ttu-id="dfcbc-105">Member-Auflistung: Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="dfcbc-105">Members collection properties, methods, and events (ADO MD)</span></span>](members-collection-properties-methods-and-events-ado-md.md)
+- [<span data-ttu-id="ef48b-104">Members-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="ef48b-104">Members collection (ADO MD)</span></span>](members-collection-ado-md.md)
+- [<span data-ttu-id="ef48b-105">Members-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="ef48b-105">Members collection properties, methods, and events (ADO MD)</span></span>](members-collection-properties-methods-and-events-ado-md.md)
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8dc5684951ce71b5ceb926c3d65008bd14c2ccf1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282496"
 ---
-# <a name="addnew-method-example-vb"></a><span data-ttu-id="a2c1b-102">AddNew-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="a2c1b-102">AddNew method example (VB)</span></span>
+# <a name="addnew-method-example-vb"></a><span data-ttu-id="350bf-102">AddNew-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="350bf-102">AddNew method example (VB)</span></span>
 
 
-<span data-ttu-id="a2c1b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a2c1b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="350bf-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="350bf-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a2c1b-104">Dieses Beispiel verwendet die [AddNew](addnew-method-ado.md) -Methode, um einen neuen Datensatz mit dem angegebenen Namen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="a2c1b-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
+<span data-ttu-id="350bf-104">In diesem Beispiel wird die [AddNew](addnew-method-ado.md)-Methode zum Erstellen eines neuen Datensatzes mit dem angegebenen Namen verwendet.</span><span class="sxs-lookup"><span data-stu-id="350bf-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
 
 ```vb 
  

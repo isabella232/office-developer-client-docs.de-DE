@@ -8,17 +8,17 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 675ed4e6f96af8ac069bcff593a1277244e60380
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282046"
 ---
-# <a name="absoluteposition-and-cursorlocation-properties-example-jscript"></a><span data-ttu-id="60bb8-102">AbsolutePosition- und CursorLocation-Eigenschaft (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="60bb8-102">AbsolutePosition and CursorLocation properties example (JScript)</span></span>
+# <a name="absoluteposition-and-cursorlocation-properties-example-jscript"></a><span data-ttu-id="40ddc-102">AbsolutePosition- und CursorLocation-Eigenschaft (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="40ddc-102">AbsolutePosition and CursorLocation properties example (JScript)</span></span>
 
-<span data-ttu-id="60bb8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="60bb8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="40ddc-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="40ddc-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="60bb8-p101">In diesem Beispiel wird veranschaulicht, wie über die [AbsolutePosition](absoluteposition-property-ado.md)-Eigenschaft der Status einer Schleife nachverfolgt werden kann, in der alle Datensätze eines [Recordset](recordset-object-ado.md)-Objekts aufgezählt werden. Mithilfe der [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft wird die **AbsolutePosition** -Eigenschaft aktiviert, indem als Cursor ein Clientcursor festgelegt wird. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Text-Editor ein, und speichern Sie ihn unter dem Dateinamen **AbsolutePositionJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="60bb8-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor. Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePositionJS.asp**.</span></span>
+<span data-ttu-id="40ddc-p101">In diesem Beispiel wird veranschaulicht, wie über die [AbsolutePosition](absoluteposition-property-ado.md)-Eigenschaft der Status einer Schleife nachverfolgt werden kann, in der alle Datensätze eines [Recordset](recordset-object-ado.md)-Objekts aufgezählt werden. Mithilfe der [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft wird die **AbsolutePosition** -Eigenschaft aktiviert, indem als Cursor ein Clientcursor festgelegt wird. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Text-Editor ein, und speichern Sie ihn unter dem Dateinamen **AbsolutePositionJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="40ddc-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor. Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePositionJS.asp**.</span></span>
 
 ```javascript
 <!-- BeginAbsolutePositionJS --> 

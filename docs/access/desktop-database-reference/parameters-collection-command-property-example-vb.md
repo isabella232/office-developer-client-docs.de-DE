@@ -1,5 +1,5 @@
 ---
-title: Parameters-Auflistung, Command-Eigenschaft (Beispiel) (VB)
+title: Parameters-Auflistung, Command-Eigenschaft (VB-Beispiel)
 TOCTitle: Parameters Collection, Command property example (VB)
 ms:assetid: 3bb3e6e1-0ee5-70bb-7f2c-beb461d3914a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249151(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2653b0917de14fd10e04d866903bd7275a2f38de
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287930"
 ---
-# <a name="parameters-collection-command-property-example-vb"></a><span data-ttu-id="da0ad-102">Parameters-Auflistung, Command-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="da0ad-102">Parameters Collection, Command property example (VB)</span></span>
+# <a name="parameters-collection-command-property-example-vb"></a><span data-ttu-id="3f332-102">Parameters-Auflistung, Command-Eigenschaft (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="3f332-102">Parameters Collection, Command property example (VB)</span></span>
 
 
-<span data-ttu-id="da0ad-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="da0ad-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3f332-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3f332-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="da0ad-104">Im folgenden Codebeispiel wird die Verwendung der [Command](command-property-adox.md)-Eigenschaft mit dem [Command](command-object-ado.md)-Objekt veranschaulicht, um Parameterinformationen für die Prozedur abzurufen.</span><span class="sxs-lookup"><span data-stu-id="da0ad-104">The following code demonstrates how to use the [Command](command-property-adox.md) property with the [Command](command-object-ado.md) object to retrieve parameter information for the procedure.</span></span>
+<span data-ttu-id="3f332-104">Im folgenden Codebeispiel wird die Verwendung der [Command](command-property-adox.md)-Eigenschaft mit dem [Command](command-object-ado.md)-Objekt veranschaulicht, um Parameterinformationen für die Prozedur abzurufen.</span><span class="sxs-lookup"><span data-stu-id="3f332-104">The following code demonstrates how to use the [Command](command-property-adox.md) property with the [Command](command-object-ado.md) object to retrieve parameter information for the procedure.</span></span>
 
 ```vb 
  

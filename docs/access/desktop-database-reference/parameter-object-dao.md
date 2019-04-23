@@ -8,36 +8,36 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5df04b1ee06a2224db9e21f67e9c68a3ee5740bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288084"
 ---
-# <a name="parameter-object-dao"></a><span data-ttu-id="51ae7-102">Parameter-Objekt (DAO)</span><span class="sxs-lookup"><span data-stu-id="51ae7-102">Parameter object (DAO)</span></span>
+# <a name="parameter-object-dao"></a><span data-ttu-id="69a3d-102">Parameter-Objekt (DAO)</span><span class="sxs-lookup"><span data-stu-id="69a3d-102">Parameter object (DAO)</span></span>
 
 
-<span data-ttu-id="51ae7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="51ae7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="69a3d-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="69a3d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="51ae7-p101">Ein **Parameter**-Objekt stellt einen Wert für eine Abfrage dar. Der Parameter wird einem **QueryDef**-Objekt zugeordnet, das aus einer Parameterabfrage erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="51ae7-p101">A **Parameter** object represents a value supplied to a query. The parameter is associated with a **QueryDef** object created from a parameter query.</span></span>
+<span data-ttu-id="69a3d-104">Ein **Parameter**-Objekt stellt einen Wert für eine Abfrage dar.</span><span class="sxs-lookup"><span data-stu-id="69a3d-104">A **Parameter** object represents a value supplied to a query.</span></span> <span data-ttu-id="69a3d-105">Der Parameter wird einem **QueryDef**-Objekt zugeordnet, das aus einer Parameterabfrage erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="69a3d-105">The parameter is associated with a **QueryDef** object created from a parameter query.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="51ae7-106">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="51ae7-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="69a3d-106">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="69a3d-106">Remarks</span></span>
 
-<span data-ttu-id="51ae7-107">Mithilfe von **Parameter**-Objekten können Sie die Argumente eines häufig ausgeführten **QueryDef**-Objekts ändern, ohne dass Sie die Abfrage erneut kompilieren müssen.</span><span class="sxs-lookup"><span data-stu-id="51ae7-107">**Parameter** objects allow you to change the arguments in a frequently run **QueryDef** object without having to recompile the query.</span></span>
+<span data-ttu-id="69a3d-107">Mithilfe von **Parameter**-Objekten können Sie die Argumente eines häufig ausgeführten **QueryDef**-Objekts ändern, ohne dass Sie die Abfrage erneut kompilieren müssen.</span><span class="sxs-lookup"><span data-stu-id="69a3d-107">**Parameter** objects allow you to change the arguments in a frequently run **QueryDef** object without having to recompile the query.</span></span>
 
-<span data-ttu-id="51ae7-p102">Mit den Eigenschaften eines **Parameter**-Objekts können Sie eine Parameterabfrage festlegen, die vor dem Ausführen der Abfrage geändert werden kann. Sie können die folgenden Aktionen ausführen:</span><span class="sxs-lookup"><span data-stu-id="51ae7-p102">Using the properties of a **Parameter** object, you can set a query parameter that can be changed before the query is run. You can:</span></span>
+<span data-ttu-id="69a3d-p102">Mit den Eigenschaften eines **Parameter**-Objekts können Sie eine Parameterabfrage festlegen, die vor dem Ausführen der Abfrage geändert werden kann. Sie können die folgenden Aktionen ausführen:</span><span class="sxs-lookup"><span data-stu-id="69a3d-p102">Using the properties of a **Parameter** object, you can set a query parameter that can be changed before the query is run. You can:</span></span>
 
-  - <span data-ttu-id="51ae7-110">Geben Sie mit der **Name**-Eigenschaft den Namen eines Parameters zurück.</span><span class="sxs-lookup"><span data-stu-id="51ae7-110">Use the **Name** property to return the name of a parameter.</span></span>
+  - <span data-ttu-id="69a3d-110">Geben Sie mit der **Name**-Eigenschaft den Namen eines Parameters zurück.</span><span class="sxs-lookup"><span data-stu-id="69a3d-110">Use the **Name** property to return the name of a parameter.</span></span>
 
-  - <span data-ttu-id="51ae7-111">Verwenden Sie die **Value**-Eigenschaft, um die in der Abfrage verwendeten Parameterwerte festzulegen oder zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="51ae7-111">Use the **Value** property to set or return the parameter values to be used in the query.</span></span>
+  - <span data-ttu-id="69a3d-111">Verwenden Sie die **Value**-Eigenschaft, um die in der Abfrage verwendeten Parameterwerte festzulegen oder zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="69a3d-111">Use the **Value** property to set or return the parameter values to be used in the query.</span></span>
 
-  - <span data-ttu-id="51ae7-112">Geben Sie mit der **Type**-Eigenschaft den Datentyp des **Parameter**-Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="51ae7-112">Use the **Type** property to return the data type of the **Parameter** object.</span></span>
+  - <span data-ttu-id="69a3d-112">Geben Sie mit der **Type**-Eigenschaft den Datentyp des **Parameter**-Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="69a3d-112">Use the **Type** property to return the data type of the **Parameter** object.</span></span>
 
-  - <span data-ttu-id="51ae7-113">Verwenden Sie die **Direction**-Eigenschaft, um festzulegen oder zurückzugeben, ob es sich bei dem Parameter um einen Eingabeparameter und/oder einen Ausgabeparameter handelt.</span><span class="sxs-lookup"><span data-stu-id="51ae7-113">Use the **Direction** property to set or return whether the parameter is an input parameter, an output parameter, or both.</span></span>
+  - <span data-ttu-id="69a3d-113">Verwenden Sie die **Direction**-Eigenschaft, um festzulegen oder zurückzugeben, ob es sich bei dem Parameter um einen Eingabeparameter und/oder einen Ausgabeparameter handelt.</span><span class="sxs-lookup"><span data-stu-id="69a3d-113">Use the **Direction** property to set or return whether the parameter is an input parameter, an output parameter, or both.</span></span>
 
-## <a name="example"></a><span data-ttu-id="51ae7-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="51ae7-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="69a3d-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="69a3d-114">Example</span></span>
 
-<span data-ttu-id="51ae7-p103">Dieses Beispiel veranschaulicht Parameter-Objekte und die Parameters-Auflistung. Es wird ein temporäres QueryDef-Objekt erstellt, und es werden basierend auf Änderungen, die am Parameters-Objekt des QueryDef-Objekts vorgenommen werden, Daten abgerufen. Zum Ausführen dieser Prozedur ist die ParametersChange-Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="51ae7-p103">This example demonstrates **Parameter** objects and the **Parameters** collection by creating a temporary **QueryDef** and retrieving data based on changes made to the **QueryDef** object's **Parameters**. The ParametersChange procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="69a3d-p103">This example demonstrates **Parameter** objects and the **Parameters** collection by creating a temporary **QueryDef** and retrieving data based on changes made to the **QueryDef** object's **Parameters**. The ParametersChange procedure is required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="69a3d-p103">This example demonstrates **Parameter** objects and the **Parameters** collection by creating a temporary **QueryDef** and retrieving data based on changes made to the **QueryDef** object's **Parameters**. The ParametersChange procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub ParameterX() 

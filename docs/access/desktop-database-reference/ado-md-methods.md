@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 143e26f38afee71078b96fe43ac838817b8393a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283331"
 ---
-# <a name="ado-md-methods"></a><span data-ttu-id="78eb2-102">ADO MD-Methoden</span><span class="sxs-lookup"><span data-stu-id="78eb2-102">ADO MD methods</span></span>
+# <a name="ado-md-methods"></a><span data-ttu-id="9d46c-102">ADO MD-Methoden</span><span class="sxs-lookup"><span data-stu-id="9d46c-102">ADO MD methods</span></span>
 
-<span data-ttu-id="78eb2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="78eb2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9d46c-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9d46c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 <br/>
 
@@ -27,16 +27,16 @@ ms.locfileid: "28713177"
 </colgroup>
 <tbody>
 <tr class="even">
-<th><span data-ttu-id="78eb2-104">Methode</span><span class="sxs-lookup"><span data-stu-id="78eb2-104">Method</span></span></th>
-<th><span data-ttu-id="78eb2-105">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="78eb2-105">Description</span></span></th>
+<th><span data-ttu-id="9d46c-104">Methode</span><span class="sxs-lookup"><span data-stu-id="9d46c-104">Method</span></span></th>
+<th><span data-ttu-id="9d46c-105">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9d46c-105">Description</span></span></th>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="78eb2-106"><a href="close-method-ado-md.md">Schließen</a></span><span class="sxs-lookup"><span data-stu-id="78eb2-106"><a href="close-method-ado-md.md">Close</a></span></span></p></td>
-<td><p><span data-ttu-id="78eb2-107">Schließt eine geöffnete Zellmenge.</span><span class="sxs-lookup"><span data-stu-id="78eb2-107">Closes an open cellset.</span></span></p></td>
+<td><p><span data-ttu-id="9d46c-106"><a href="close-method-ado-md.md">Schließen</a></span><span class="sxs-lookup"><span data-stu-id="9d46c-106"><a href="close-method-ado-md.md">Close</a></span></span></p></td>
+<td><p><span data-ttu-id="9d46c-107">Schließt eine geöffnete Zellmenge.</span><span class="sxs-lookup"><span data-stu-id="9d46c-107">Closes an open cellset.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="78eb2-108"><a href="open-method-ado-md.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="78eb2-108"><a href="open-method-ado-md.md">Open</a></span></span></p></td>
-<td><p><span data-ttu-id="78eb2-109">Ruft die Ergebnisse einer multidimensionalen Abfrage ab, und gibt die Ergebnisse an eine Zellmenge zurück.</span><span class="sxs-lookup"><span data-stu-id="78eb2-109">Retrieves the results of a multidimensional query and returns the results to a cellset.</span></span></p></td>
+<td><p><span data-ttu-id="9d46c-108"><a href="open-method-ado-md.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="9d46c-108"><a href="open-method-ado-md.md">Open</a></span></span></p></td>
+<td><p><span data-ttu-id="9d46c-109">Ruft die Ergebnisse einer multidimensionalen Abfrage ab, und gibt die Ergebnisse an eine Zellmenge zurück.</span><span class="sxs-lookup"><span data-stu-id="9d46c-109">Retrieves the results of a multidimensional query and returns the results to a cellset.</span></span></p></td>
 </tr>
 </tbody>
 </table>

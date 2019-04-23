@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b5136c9b07d1d450f7b08d823175febb8716ad4c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288820"
 ---
-# <a name="move-method-example-vc"></a><span data-ttu-id="1e57c-102">Move-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="1e57c-102">Move method example (VC++)</span></span>
+# <a name="move-method-example-vc"></a><span data-ttu-id="366f4-102">Move-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="366f4-102">Move method example (VC++)</span></span>
 
-<span data-ttu-id="1e57c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1e57c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="366f4-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="366f4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1e57c-104">In diesem Beispiel wird die [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="1e57c-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
+<span data-ttu-id="366f4-104">In diesem Beispiel wird die [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="366f4-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
 
 ```cpp 
  
@@ -257,7 +257,7 @@ void PrintComError(_com_error &e)
 
 <br/>
 
-<span data-ttu-id="1e57c-105">**MoveX.h**</span><span class="sxs-lookup"><span data-stu-id="1e57c-105">**MoveX.h**</span></span>
+<span data-ttu-id="366f4-105">**MoveX. h**</span><span class="sxs-lookup"><span data-stu-id="366f4-105">**MoveX.h**</span></span>
 
 ```cpp
 // BeginMoveH 

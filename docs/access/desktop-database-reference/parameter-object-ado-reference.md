@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d9e0189a4c0ffe016fc8c9a69272f706f537a483
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288105"
 ---
-# <a name="parameter-object-ado-reference"></a><span data-ttu-id="a2012-102">Parameter-Objekt (ADO)-Referenz</span><span class="sxs-lookup"><span data-stu-id="a2012-102">Parameter object (ADO) reference</span></span>
+# <a name="parameter-object-ado-reference"></a><span data-ttu-id="1e958-102">Parameter-Objekt (ADO)-Referenz</span><span class="sxs-lookup"><span data-stu-id="1e958-102">Parameter object (ADO) reference</span></span>
 
-<span data-ttu-id="a2012-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a2012-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="1e958-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1e958-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="a2012-104">Parameter-Objekt (ADO)</span><span class="sxs-lookup"><span data-stu-id="a2012-104">Parameter object (ADO)</span></span>](parameter-object-ado.md)
-- [<span data-ttu-id="a2012-105">Parametereigenschaften, Methoden und Ereignisse (ADO)</span><span class="sxs-lookup"><span data-stu-id="a2012-105">Parameter properties, methods, and events (ADO)</span></span>](parameter-properties-methods-and-events-ado.md)
+- [<span data-ttu-id="1e958-104">Parameter-Objekt (ADO)</span><span class="sxs-lookup"><span data-stu-id="1e958-104">Parameter object (ADO)</span></span>](parameter-object-ado.md)
+- [<span data-ttu-id="1e958-105">Parameter Eigenschaften, Methoden und Ereignisse (ADO)</span><span class="sxs-lookup"><span data-stu-id="1e958-105">Parameter properties, methods, and events (ADO)</span></span>](parameter-properties-methods-and-events-ado.md)
 

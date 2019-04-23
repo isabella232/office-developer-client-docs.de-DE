@@ -8,30 +8,30 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a80b089fa72ef01eb1b4b2f1dae494e002c6a6fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281956"
 ---
-# <a name="accessing-rows-in-a-hierarchical-recordset"></a><span data-ttu-id="2545c-102">Zugreifen auf Zeilen in einem hierarchischen Recordset</span><span class="sxs-lookup"><span data-stu-id="2545c-102">Accessing rows in a hierarchical Recordset</span></span>
+# <a name="accessing-rows-in-a-hierarchical-recordset"></a><span data-ttu-id="a9a6a-102">Zugreifen auf Zeilen in einem hierarchischen Recordset</span><span class="sxs-lookup"><span data-stu-id="a9a6a-102">Accessing rows in a hierarchical Recordset</span></span>
 
-<span data-ttu-id="2545c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2545c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="a9a6a-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a9a6a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2545c-104">Das folgende Beispiel zeigt die notwendigen Schritte zum Zugreifen auf Zeilen in einem hierarchischen [Recordset](recordset-object-ado.md):</span><span class="sxs-lookup"><span data-stu-id="2545c-104">The following example shows the steps necessary to access rows in a hierarchical [Recordset](recordset-object-ado.md):</span></span>
+<span data-ttu-id="a9a6a-104">Das folgende Beispiel zeigt die notwendigen Schritte zum Zugreifen auf Zeilen in einem hierarchischen [Recordset](recordset-object-ado.md):</span><span class="sxs-lookup"><span data-stu-id="a9a6a-104">The following example shows the steps necessary to access rows in a hierarchical [Recordset](recordset-object-ado.md):</span></span>
 
-1. <span data-ttu-id="2545c-105">Recordset-Objekte aus den Tabellen authors und titleauthor werden nach Autor-Nr. miteinander in Beziehung gesetzt.</span><span class="sxs-lookup"><span data-stu-id="2545c-105">**Recordset** objects from the authors and titleauthor tables are related by author ID.</span></span>
+1. <span data-ttu-id="a9a6a-105">**Recordset** objects from the authors and titleauthor tables are related by author ID.</span><span class="sxs-lookup"><span data-stu-id="a9a6a-105">**Recordset** objects from the authors and titleauthor tables are related by author ID.</span></span>
 
-2. <span data-ttu-id="2545c-106">In der äußeren Schleife werden der Vor- und Nachname, der Status und die Identifikation jedes Autors angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2545c-106">The outer loop displays each author's first and last name, state, and identification.</span></span>
+2. <span data-ttu-id="a9a6a-106">In der äußeren Schleife werden der Vor- und Nachname, der Status und die Identifikation jedes Autors angezeigt.</span><span class="sxs-lookup"><span data-stu-id="a9a6a-106">The outer loop displays each author's first and last name, state, and identification.</span></span>
 
-3. <span data-ttu-id="2545c-107">Das angefügte **Recordset** für jede Zeile wird aus der **Fields**-Auflistung abgerufen und *rstTitleAuthor* zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="2545c-107">The appended **Recordset** for each row is retrieved from the **Fields** collection and assigned to *rstTitleAuthor*.</span></span>
+3. <span data-ttu-id="a9a6a-107">Das angefügte **Recordset** für jede Zeile wird aus der **Fields**-Auflistung abgerufen und *rstTitleAuthor* zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="a9a6a-107">The appended **Recordset** for each row is retrieved from the **Fields** collection and assigned to *rstTitleAuthor*.</span></span>
 
-4. <span data-ttu-id="2545c-108">In der inneren Schleife werden vier Felder aus jeder Zeile im angefügten **Recordset** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2545c-108">The inner loop displays four fields from each row in the appended **Recordset**.</span></span>
+4. <span data-ttu-id="a9a6a-108">In der inneren Schleife werden vier Felder aus jeder Zeile im angefügten **Recordset** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="a9a6a-108">The inner loop displays four fields from each row in the appended **Recordset**.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="2545c-109">[StayInSync](stayinsync-property-ado.md) -Eigenschaft wird zur Veranschaulichung, auf FALSE festgelegt, damit Sie sehen können, das Kapitel in jeder Iteration der äußeren Schleife explizit ändern.</span><span class="sxs-lookup"><span data-stu-id="2545c-109">The [StayInSync](stayinsync-property-ado.md) property is set to FALSE for purposes of illustration, so you can see the chapter change explicitly in each iteration of the outer loop.</span></span> <span data-ttu-id="2545c-110">Das Beispiel ist jedoch effizienter, wenn die Zuweisung in Schritt 3 vor die erste Zeile in Schritt 2 verschoben wird, sodass die Zuweisung nur ein Mal ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="2545c-110">However, the example will be more efficient if the assignment in step 3 is moved before the first line in step 2, so that the assignment is performed only once.</span></span> <span data-ttu-id="2545c-111">**StayInSync** -Eigenschaft auf TRUE festgelegt, sodass *RstTitleAuthor* implizit und automatisch in das entsprechende Kapitel geändert wird, wenn *Rst* an eine neue Zeile verschoben wird.</span><span class="sxs-lookup"><span data-stu-id="2545c-111">Set the **StayInSync** property to TRUE, so that *rstTitleAuthor* will implicitly and automatically change to the corresponding chapter whenever *rst* moves to a new row.</span></span>
+> <span data-ttu-id="a9a6a-109">Die [StayInSync](stayinsync-property-ado.md) -Eigenschaft ist für Zwecke der Illustration auf false festgelegt, sodass Sie die Kapitel Änderung explizit in jeder Iteration der äußeren Schleife sehen können.</span><span class="sxs-lookup"><span data-stu-id="a9a6a-109">The [StayInSync](stayinsync-property-ado.md) property is set to FALSE for purposes of illustration, so you can see the chapter change explicitly in each iteration of the outer loop.</span></span> <span data-ttu-id="a9a6a-110">Das Beispiel ist jedoch effizienter, wenn die Zuweisung in Schritt 3 vor die erste Zeile in Schritt 2 verschoben wird, sodass die Zuweisung nur ein Mal ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="a9a6a-110">However, the example will be more efficient if the assignment in step 3 is moved before the first line in step 2, so that the assignment is performed only once.</span></span> <span data-ttu-id="a9a6a-111">Legen Sie die **StayInSync** -Eigenschaft auf true fest, sodass *rstTitleAuthor* implizit und automatisch in das entsprechende Kapitel wechselt, wenn *RST* zu einer neuen Zeile wechselt.</span><span class="sxs-lookup"><span data-stu-id="a9a6a-111">Set the **StayInSync** property to TRUE, so that *rstTitleAuthor* will implicitly and automatically change to the corresponding chapter whenever *rst* moves to a new row.</span></span>
 
-<span data-ttu-id="2545c-112">**Beispiel**</span><span class="sxs-lookup"><span data-stu-id="2545c-112">**Example**</span></span>
+<span data-ttu-id="a9a6a-112">**Beispiel**</span><span class="sxs-lookup"><span data-stu-id="a9a6a-112">**Example**</span></span>
 
 ```vb 
  

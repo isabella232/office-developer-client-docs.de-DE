@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ccfa537f60021b17f23f4996f838651f9453097f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288799"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vb"></a><span data-ttu-id="6049e-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="6049e-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VB)</span></span>
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vb"></a><span data-ttu-id="6506e-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="6506e-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VB)</span></span>
 
 
-<span data-ttu-id="6049e-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6049e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6506e-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6506e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6049e-p101">In diesem Beispiel werden die Methoden MoveFirst, MoveLast, MoveNext und MovePrevious verwendet, um den Zeiger für den Datensatz eines Recordset-Objekts auf der Grundlage des angegebenen Befehls zu verschieben. Die The MoveAny-Prozedur ist erforderlich, damit dieser Vorgang ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="6049e-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="6506e-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny procedure is required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="6506e-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny procedure is required for this procedure to run.</span></span>
 
 ```vb 
  

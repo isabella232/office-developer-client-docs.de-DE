@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e2c89b719d61ecfe8cd8369e7aa3c3c1827fe2fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288231"
 ---
-# <a name="optimize-property-example-vj"></a><span data-ttu-id="148f1-102">Optimize-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="148f1-102">Optimize property example (VJ++)</span></span>
+# <a name="optimize-property-example-vj"></a><span data-ttu-id="2d4fe-102">Optimize-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="2d4fe-102">Optimize property example (VJ++)</span></span>
 
 
-<span data-ttu-id="148f1-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="148f1-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2d4fe-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2d4fe-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="148f1-104">Dieses Beispiel veranschaulicht die [Field](field-object-ado.md) -Objekt dynamische Optimize-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="148f1-104">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="148f1-105">Das ***Zip*** -Feld der ***Authors*** -Tabelle in der ***Pubs*** -Datenbank wird nicht indiziert.</span><span class="sxs-lookup"><span data-stu-id="148f1-105">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="148f1-106">[Optimize](optimize-property-dynamic-ado.md) -Eigenschaft auf **True** festlegen, im Feld ***Zip*** autorisiert ADO einen Index zu erstellen, der die [Find](find-method-ado.md) -Methode die Leistung verbessert.</span><span class="sxs-lookup"><span data-stu-id="148f1-106">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
+<span data-ttu-id="2d4fe-104">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span><span class="sxs-lookup"><span data-stu-id="2d4fe-104">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="2d4fe-105">Das Feld ***ZIP*** der ***Authors*** -Tabelle in der ***Pubs*** -Datenbank ist nicht indiziert.</span><span class="sxs-lookup"><span data-stu-id="2d4fe-105">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="2d4fe-106">Wenn Sie die [optimize](optimize-property-dynamic-ado.md) -Eigenschaft im Feld ***ZIP*** auf **true** festlegen, wird ADO zum Erstellen eines Indexes autorisiert, der die Leistung der [Find](find-method-ado.md) -Methode verbessert.</span><span class="sxs-lookup"><span data-stu-id="2d4fe-106">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
 
 ```java 
  

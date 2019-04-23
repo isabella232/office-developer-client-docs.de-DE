@@ -8,20 +8,20 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 32ab8ba94570c98da03c3effc484490c327fd0a9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282600"
 ---
-# <a name="activecommand-property-example-vb"></a><span data-ttu-id="fdacf-102">ActiveCommand-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="fdacf-102">ActiveCommand property example (VB)</span></span>
+# <a name="activecommand-property-example-vb"></a><span data-ttu-id="3901f-102">ActiveCommand-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="3901f-102">ActiveCommand property example (VB)</span></span>
 
 
-<span data-ttu-id="fdacf-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="fdacf-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3901f-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3901f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fdacf-104">Dieses Beispiel veranschaulicht die [ActiveCommand](activecommand-property-ado.md)-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="fdacf-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span>
+<span data-ttu-id="3901f-104">Dieses Beispiel veranschaulicht die [ActiveCommand](activecommand-property-ado.md)-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="3901f-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span>
 
-<span data-ttu-id="fdacf-105">Eine Unterroutine erhält ein [Recordset](recordset-object-ado.md)-Objekt, dessen **ActiveCommand** -Eigenschaft zum Anzeigen des Befehlstexts und des Parameters verwendet werden, mit denen das **Recordset** -Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="fdacf-105">A subroutine is given a [Recordset](recordset-object-ado.md) object whose **ActiveCommand** property is used to display the command text and parameter that created the **Recordset**.</span></span>
+<span data-ttu-id="3901f-105">Eine Unterroutine erhält ein [Recordset](recordset-object-ado.md)-Objekt, dessen **ActiveCommand**-Eigenschaft zum Anzeigen des Befehlstexts und des Parameters verwendet werden, mit denen das **Recordset**-Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="3901f-105">A subroutine is given a [Recordset](recordset-object-ado.md) object whose **ActiveCommand** property is used to display the command text and parameter that created the **Recordset**.</span></span>
 
 ```vb 
  
@@ -88,11 +88,11 @@ End Sub
 'EndActiveCommandVB 
 ```
 
-<span data-ttu-id="fdacf-p101">Die **ActiveCommandXprint** -Routine erhält nur ein **Recordset** -Objekt, sie muss jedoch den Befehlstext und den Parameter anzeigen, mit denen das **Recordset** -Objekt erstellt wurde. Dies ist möglich, weil die **ActiveCommand** -Eigenschaft des **Recordset** -Objekts das zugeordnete [Command](command-object-ado.md)-Objekt liefert.</span><span class="sxs-lookup"><span data-stu-id="fdacf-p101">The **ActiveCommandXprint** routine is given only a **Recordset** object, yet it must print the command text and parameter that created the **Recordset**. This can be done because the **Recordset** object's **ActiveCommand** property yields the associated [Command](command-object-ado.md) object.</span></span>
+<span data-ttu-id="3901f-p101">Die **ActiveCommandXprint** -Routine erhält nur ein **Recordset** -Objekt, sie muss jedoch den Befehlstext und den Parameter anzeigen, mit denen das **Recordset** -Objekt erstellt wurde. Dies ist möglich, weil die **ActiveCommand** -Eigenschaft des **Recordset** -Objekts das zugeordnete [Command](command-object-ado.md)-Objekt liefert.</span><span class="sxs-lookup"><span data-stu-id="3901f-p101">The **ActiveCommandXprint** routine is given only a **Recordset** object, yet it must print the command text and parameter that created the **Recordset**. This can be done because the **Recordset** object's **ActiveCommand** property yields the associated [Command](command-object-ado.md) object.</span></span>
 
-<span data-ttu-id="fdacf-p102">Die [CommandText](commandtext-property-ado.md)-Eigenschaft des **Command**-Objekts liefert den parametrisierten Befehl, mit dem das **Recordset**-Objekt erstellt wurde. Die [Parameters](parameters-collection-ado.md)-Auflistung des **Command**-Objekts liefert den Wert, durch den der Parameterplatzhalter ("**?**") ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="fdacf-p102">The **Command** object's [CommandText](commandtext-property-ado.md) property yields the parameterized command that created the **Recordset**. The **Command** object's [Parameters](parameters-collection-ado.md) collection yields the value that was substituted for the command's parameter placeholder ("**?**").</span></span>
+<span data-ttu-id="3901f-p102">Die [CommandText](commandtext-property-ado.md)-Eigenschaft des **Command**-Objekts liefert den parametrisierten Befehl, mit dem das **Recordset**-Objekt erstellt wurde. Die [Parameters](parameters-collection-ado.md)-Auflistung des **Command**-Objekts liefert den Wert, durch den der Parameterplatzhalter ("**?**") ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="3901f-p102">The **Command** object's [CommandText](commandtext-property-ado.md) property yields the parameterized command that created the **Recordset**. The **Command** object's [Parameters](parameters-collection-ado.md) collection yields the value that was substituted for the command's parameter placeholder ("**?**").</span></span>
 
-<span data-ttu-id="fdacf-110">Schließlich werden die Fehlermeldung oder der Name und die ID des Autors angezeigt.</span><span class="sxs-lookup"><span data-stu-id="fdacf-110">Finally, an error message or the author's name and ID are printed.</span></span>
+<span data-ttu-id="3901f-110">Schließlich werden die Fehlermeldung oder der Name und die ID des Autors angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3901f-110">Finally, an error message or the author's name and ID are printed.</span></span>
 
 ```vb 
  

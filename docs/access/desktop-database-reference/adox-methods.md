@@ -1,5 +1,5 @@
 ---
-title: ADOX-Methoden (Access PC-Datenbank-Referenz)
+title: ADOX-Methoden (Access Desktop Database Reference)
 TOCTitle: ADOX methods
 ms:assetid: 1a2eed52-2b09-e528-2cdc-134df3c9441f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248947(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 40c4ca85e28813f9827d959ff202e0036e379e96
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270007"
 ---
-# <a name="adox-methods"></a><span data-ttu-id="359bb-102">ADOX-Methoden</span><span class="sxs-lookup"><span data-stu-id="359bb-102">ADOX methods</span></span>
+# <a name="adox-methods"></a><span data-ttu-id="bcf79-102">ADOX-Methoden</span><span class="sxs-lookup"><span data-stu-id="bcf79-102">ADOX methods</span></span>
 
-<span data-ttu-id="359bb-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="359bb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="bcf79-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="bcf79-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 <br/>
 
@@ -27,70 +27,70 @@ ms.locfileid: "28721717"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="359bb-104">Methode</span><span class="sxs-lookup"><span data-stu-id="359bb-104">Method</span></span></p></th>
-<th><p><span data-ttu-id="359bb-105">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="359bb-105">Description</span></span></p></th>
+<th><p><span data-ttu-id="bcf79-104">Methode</span><span class="sxs-lookup"><span data-stu-id="bcf79-104">Method</span></span></p></th>
+<th><p><span data-ttu-id="bcf79-105">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bcf79-105">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-106"><a href="append-method-adox-columns.md">Append (Spalten)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-106"><a href="append-method-adox-columns.md">Append (Columns)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-107">Fügt der <strong>Columns</strong>-Auflistung ein neues <strong>Column</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-107">Adds a new <strong>Column</strong> object to the <strong>Columns</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-106"><a href="append-method-adox-columns.md">Append (Columns)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-106"><a href="append-method-adox-columns.md">Append (Columns)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-107">Fügt der <strong>Columns</strong>-Auflistung ein neues <strong>Column</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-107">Adds a new <strong>Column</strong> object to the <strong>Columns</strong> collection.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="359bb-108"><a href="append-method-adox-groups.md">Append (Gruppen)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-108"><a href="append-method-adox-groups.md">Append (Groups)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-109">Fügt der <strong>Groups</strong>-Auflistung ein neues <strong>Group</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-109">Adds a new <strong>Group</strong> object to the <strong>Groups</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-108"><a href="append-method-adox-groups.md">Append (Groups)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-108"><a href="append-method-adox-groups.md">Append (Groups)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-109">Fügt der <strong>Groups</strong>-Auflistung ein neues <strong>Group</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-109">Adds a new <strong>Group</strong> object to the <strong>Groups</strong> collection.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-110"><a href="append-method-adox-indexes.md">Append (Indexes)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-110"><a href="append-method-adox-indexes.md">Append (Indexes)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-111">Fügt der <strong>Indexes</strong>-Auflistung ein neues <strong>Index</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-111">Adds a new <strong>Index</strong> object to the <strong>Indexes</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-110"><a href="append-method-adox-indexes.md">Append (Indexes)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-110"><a href="append-method-adox-indexes.md">Append (Indexes)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-111">Fügt der <strong>Indexes</strong>-Auflistung ein neues <strong>Index</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-111">Adds a new <strong>Index</strong> object to the <strong>Indexes</strong> collection.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="359bb-112"><a href="append-method-adox-keys.md">Append (Schlüssel)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-112"><a href="append-method-adox-keys.md">Append (Keys)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-113">Fügt der <strong>Keys</strong>-Auflistung ein neues <strong>Key</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-113">Adds a new <strong>Key</strong> object to the <strong>Keys</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-112"><a href="append-method-adox-keys.md">Append (Keys)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-112"><a href="append-method-adox-keys.md">Append (Keys)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-113">Fügt der <strong>Keys</strong>-Auflistung ein neues <strong>Key</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-113">Adds a new <strong>Key</strong> object to the <strong>Keys</strong> collection.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-114"><a href="append-method-adox-procedures.md">Append (Verfahren)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-114"><a href="append-method-adox-procedures.md">Append (Procedures)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-115">Fügt der <strong>Procedures</strong>-Auflistung ein neues <strong>Procedure</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-115">Adds a new <strong>Procedure</strong> object to the <strong>Procedures</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-114"><a href="append-method-adox-procedures.md">Append (Procedures)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-114"><a href="append-method-adox-procedures.md">Append (Procedures)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-115">Fügt der <strong>Procedures</strong>-Auflistung ein neues <strong>Procedure</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-115">Adds a new <strong>Procedure</strong> object to the <strong>Procedures</strong> collection.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="359bb-116"><a href="append-method-adox-tables.md">Append (Tabellen)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-116"><a href="append-method-adox-tables.md">Append (Tables)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-117">Fügt der <strong>Tables</strong> Auflistung ein neues <strong>Table</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-117">Adds a new <strong>Table</strong> object to the <strong>Tables</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-116"><a href="append-method-adox-tables.md">Append (Tables)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-116"><a href="append-method-adox-tables.md">Append (Tables)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-117">Fügt der <strong>Tables</strong>-Auflistung ein neues <strong>Table</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-117">Adds a new <strong>Table</strong> object to the <strong>Tables</strong> collection.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-118"><a href="append-method-adox-users.md">Append (Benutzer)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-118"><a href="append-method-adox-users.md">Append (Users)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-119">Fügt der <strong>Users</strong>-Auflistung ein neues <strong>User</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-119">Adds a new <strong>User</strong> object to the <strong>Users</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-118"><a href="append-method-adox-users.md">Append (Users)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-118"><a href="append-method-adox-users.md">Append (Users)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-119">Fügt der <strong>Users</strong>-Auflistung ein neues <strong>User</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-119">Adds a new <strong>User</strong> object to the <strong>Users</strong> collection.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="359bb-120"><a href="append-method-adox-views.md">Append (Ansichten)</a></span><span class="sxs-lookup"><span data-stu-id="359bb-120"><a href="append-method-adox-views.md">Append (Views)</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-121">Fügt der <strong>Views</strong>-Auflistung ein neues <strong>View</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="359bb-121">Adds a new <strong>View</strong> object to the <strong>Views</strong> collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-120"><a href="append-method-adox-views.md">Append (Views)</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-120"><a href="append-method-adox-views.md">Append (Views)</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-121">Fügt der <strong>Views</strong>-Auflistung ein neues <strong>View</strong>-Objekt hinzu.</span><span class="sxs-lookup"><span data-stu-id="bcf79-121">Adds a new <strong>View</strong> object to the <strong>Views</strong> collection.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-122"><a href="changepassword-method-adox.md">ChangePassword</a></span><span class="sxs-lookup"><span data-stu-id="359bb-122"><a href="changepassword-method-adox.md">ChangePassword</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-123">Ändert das Kennwort für ein Benutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="359bb-123">Changes the password for a user account.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-122"><a href="changepassword-method-adox.md">ChangePassword</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-122"><a href="changepassword-method-adox.md">ChangePassword</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-123">Ändert das Kennwort für ein Benutzerkonto.</span><span class="sxs-lookup"><span data-stu-id="bcf79-123">Changes the password for a user account.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="359bb-124"><a href="create-method-adox.md">Create</a></span><span class="sxs-lookup"><span data-stu-id="359bb-124"><a href="create-method-adox.md">Create</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-125">Erstellt einen neuen Katalog.</span><span class="sxs-lookup"><span data-stu-id="359bb-125">Creates a new catalog.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-124"><a href="create-method-adox.md">Create</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-124"><a href="create-method-adox.md">Create</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-125">Erstellt einen neuen Katalog.</span><span class="sxs-lookup"><span data-stu-id="bcf79-125">Creates a new catalog.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-126"><a href="delete-method-adox-collections.md">Delete</a></span><span class="sxs-lookup"><span data-stu-id="359bb-126"><a href="delete-method-adox-collections.md">Delete</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-127">Entfernt ein Objekt aus einer Auflistung.</span><span class="sxs-lookup"><span data-stu-id="359bb-127">Removes an object from a collection.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-126"><a href="delete-method-adox-collections.md">Delete</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-126"><a href="delete-method-adox-collections.md">Delete</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-127">Entfernt ein Objekt aus einer Auflistung.</span><span class="sxs-lookup"><span data-stu-id="bcf79-127">Removes an object from a collection.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="359bb-128"><a href="getobjectowner-method-adox.md">GetObjectOwner</a></span><span class="sxs-lookup"><span data-stu-id="359bb-128"><a href="getobjectowner-method-adox.md">GetObjectOwner</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-129">Gibt den Besitzer eines Objekts in einem Katalog zurück.</span><span class="sxs-lookup"><span data-stu-id="359bb-129">Returns the owner of an object in a catalog.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-128"><a href="getobjectowner-method-adox.md">GetObjectOwner</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-128"><a href="getobjectowner-method-adox.md">GetObjectOwner</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-129">Gibt den Besitzer eines Objekts in einem Katalog zurück.</span><span class="sxs-lookup"><span data-stu-id="bcf79-129">Returns the owner of an object in a catalog.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-130"><a href="getpermissions-method-adox.md">GetPermissions</a></span><span class="sxs-lookup"><span data-stu-id="359bb-130"><a href="getpermissions-method-adox.md">GetPermissions</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-131">Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="359bb-131">Returns the permissions for a group or user on an object.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-130"><a href="getpermissions-method-adox.md">GetPermissions</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-130"><a href="getpermissions-method-adox.md">GetPermissions</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-131">Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="bcf79-131">Returns the permissions for a group or user on an object.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="359bb-132"><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox">SetObjectOwner</a></span><span class="sxs-lookup"><span data-stu-id="359bb-132"><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox">SetObjectOwner</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-133">Gibt den Besitzer eines Objekts in einem Katalog an.</span><span class="sxs-lookup"><span data-stu-id="359bb-133">Specifies the owner of an object in a catalog.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-132"><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox">SetObjectOwner</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-132"><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox">SetObjectOwner</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-133">Gibt den Besitzer eines Objekts in einem Katalog an.</span><span class="sxs-lookup"><span data-stu-id="bcf79-133">Specifies the owner of an object in a catalog.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="359bb-134"><a href="setpermissions-method-adox.md">SetPermissions</a></span><span class="sxs-lookup"><span data-stu-id="359bb-134"><a href="setpermissions-method-adox.md">SetPermissions</a></span></span></p></td>
-<td><p><span data-ttu-id="359bb-135">Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt an.</span><span class="sxs-lookup"><span data-stu-id="359bb-135">Specifies the permissions for group or user on an object.</span></span></p></td>
+<td><p><span data-ttu-id="bcf79-134"><a href="setpermissions-method-adox.md">SetPermissions</a></span><span class="sxs-lookup"><span data-stu-id="bcf79-134"><a href="setpermissions-method-adox.md">SetPermissions</a></span></span></p></td>
+<td><p><span data-ttu-id="bcf79-135">Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt an.</span><span class="sxs-lookup"><span data-stu-id="bcf79-135">Specifies the permissions for group or user on an object.</span></span></p></td>
 </tr>
 </tbody>
 </table>

@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4ea9e65098637986de91b6eaf5d770f2a8cab5ec
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288841"
 ---
-# <a name="move-method-example-vbscript"></a><span data-ttu-id="6ab43-102">Move-Methode (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="6ab43-102">Move method example (VBScript)</span></span>
+# <a name="move-method-example-vbscript"></a><span data-ttu-id="76892-102">Move-Methode (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="76892-102">Move method example (VBScript)</span></span>
 
 
-<span data-ttu-id="6ab43-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6ab43-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="76892-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="76892-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6ab43-104">In diesem Beispiel wird [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="6ab43-104">This example uses the [Move](move-method-ado.md) method to position the record pointer, based on user input.</span></span>
+<span data-ttu-id="76892-104">In diesem Beispiel wird [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="76892-104">This example uses the [Move](move-method-ado.md) method to position the record pointer, based on user input.</span></span>
 
-<span data-ttu-id="6ab43-105">Verwenden Sie das folgende Beispiel in einer Active Server Page-Datei (ASP).</span><span class="sxs-lookup"><span data-stu-id="6ab43-105">Use the following example in an Active Server Page (ASP).</span></span>
+<span data-ttu-id="76892-105">Verwenden Sie das folgende Beispiel in einer Active Server Page-Datei (ASP).</span><span class="sxs-lookup"><span data-stu-id="76892-105">Use the following example in an Active Server Page (ASP).</span></span>
 
-<span data-ttu-id="6ab43-p101">Verwenden Sie Find, um die Datei Adovbs.inc zu suchen, und speichern Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie die Datei unter dem Namen MoveVBS.asp. Sie können das Ergebnis in einem beliebigen Browser anzeigen.</span><span class="sxs-lookup"><span data-stu-id="6ab43-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **MoveVBS.asp**. You can view the result in any browser.</span></span>
+<span data-ttu-id="76892-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **MoveVBS.asp**. You can view the result in any browser.</span><span class="sxs-lookup"><span data-stu-id="76892-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **MoveVBS.asp**. You can view the result in any browser.</span></span>
 
-<span data-ttu-id="6ab43-109">Versuchen Sie, einen Buchstaben oder einen Nicht-Ganzzahl-Wert ein, um die Behebung des Fehlers anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="6ab43-109">Try entering a letter or noninteger to see the error handling work.</span></span>
+<span data-ttu-id="76892-109">Versuchen Sie, einen Buchstaben oder einen Nicht-Ganzzahl-Wert ein, um die Behebung des Fehlers anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="76892-109">Try entering a letter or noninteger to see the error handling work.</span></span>
 
 ```vb 
  
