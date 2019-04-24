@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d146ee74-0c3a-5fdd-b1aa-af6498550801
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fd593b68ef7ca25b1f8ceec613786cdbdd03fd76
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1df2c665f8e9d7a0bd6d47ec59b2adf706bead75
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338864"
 ---
-# <a name="upreade"></a><span data-ttu-id="a6baf-103">UPREADE</span><span class="sxs-lookup"><span data-stu-id="a6baf-103">UPREADE</span></span>
+# <a name="upreade"></a><span data-ttu-id="856db-103">UPREADE</span><span class="sxs-lookup"><span data-stu-id="856db-103">UPREADE</span></span>
 
-<span data-ttu-id="a6baf-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a6baf-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="856db-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="856db-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a6baf-105">Erweiterte Informationen zum Hochladen eines Elements Zustand "gelesen" während der [Upload lesen Status Zustand](upload-read-status-state.md).</span><span class="sxs-lookup"><span data-stu-id="a6baf-105">Extended information for uploading the read state of an item during the [upload read status state](upload-read-status-state.md).</span></span>
+<span data-ttu-id="856db-105">Erweiterte Informationen zum Hochladen des Lesestatus eines Elements während des [Uploadstatus](upload-read-status-state.md).</span><span class="sxs-lookup"><span data-stu-id="856db-105">Extended information for uploading the read state of an item during the [upload read status state](upload-read-status-state.md).</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="a6baf-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="a6baf-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="856db-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="856db-106">Quick info</span></span>
 
 ```cpp
 struct UPREADE 
@@ -31,36 +31,36 @@ struct UPREADE
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="a6baf-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="a6baf-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="856db-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="856db-107">Members</span></span>
 
-<span data-ttu-id="a6baf-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="a6baf-108">_ulFlags_</span></span>
+<span data-ttu-id="856db-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="856db-108">_ulFlags_</span></span>
   
->  <span data-ttu-id="a6baf-109">[Out] / [in] Flags, um das entsprechende Verhalten beim Hochladen zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="a6baf-109">[out]/[in] Flags to determine the appropriate behavior during the upload.</span></span> 
+>  <span data-ttu-id="856db-109">[out]/[in] Flags, um das entsprechende Verhalten während des Uploads zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="856db-109">[out]/[in] Flags to determine the appropriate behavior during the upload.</span></span> 
     
-  - <span data-ttu-id="a6baf-110">UPR_ASSOC</span><span class="sxs-lookup"><span data-stu-id="a6baf-110">UPR_ASSOC</span></span>
+  - <span data-ttu-id="856db-110">UPR_ASSOC</span><span class="sxs-lookup"><span data-stu-id="856db-110">UPR_ASSOC</span></span>
     
-    - <span data-ttu-id="a6baf-111">[out] Element ausgeblendet ist.</span><span class="sxs-lookup"><span data-stu-id="a6baf-111">[out] Item is hidden.</span></span>
+    - <span data-ttu-id="856db-111">Out Element ist ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="856db-111">[out] Item is hidden.</span></span>
     
-  - <span data-ttu-id="a6baf-112">UPR_READ</span><span class="sxs-lookup"><span data-stu-id="a6baf-112">UPR_READ</span></span>
+  - <span data-ttu-id="856db-112">UPR_READ</span><span class="sxs-lookup"><span data-stu-id="856db-112">UPR_READ</span></span>
     
-    - <span data-ttu-id="a6baf-113">[out] Der schreibgeschützte Status des Elements wurde geändert.</span><span class="sxs-lookup"><span data-stu-id="a6baf-113">[out] The read status of the item has been changed.</span></span>
+    - <span data-ttu-id="856db-113">Out Der Lesestatus des Elements wurde geändert.</span><span class="sxs-lookup"><span data-stu-id="856db-113">[out] The read status of the item has been changed.</span></span>
     
-  - <span data-ttu-id="a6baf-114">UPR_OK</span><span class="sxs-lookup"><span data-stu-id="a6baf-114">UPR_OK</span></span>
+  - <span data-ttu-id="856db-114">UPR_OK</span><span class="sxs-lookup"><span data-stu-id="856db-114">UPR_OK</span></span>
     
-    - <span data-ttu-id="a6baf-115">[in] Der Upload war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="a6baf-115">[in] Upload was successful.</span></span> <span data-ttu-id="a6baf-116">Der Client legt dies nach dem Hochladen von Informationen an den Server.</span><span class="sxs-lookup"><span data-stu-id="a6baf-116">The client sets this after uploading information to the server.</span></span>
+    - <span data-ttu-id="856db-115">in Der Upload war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="856db-115">[in] Upload was successful.</span></span> <span data-ttu-id="856db-116">Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.</span><span class="sxs-lookup"><span data-stu-id="856db-116">The client sets this after uploading information to the server.</span></span>
     
-  - <span data-ttu-id="a6baf-117">UPR_COMMIT</span><span class="sxs-lookup"><span data-stu-id="a6baf-117">UPR_COMMIT</span></span>
+  - <span data-ttu-id="856db-117">UPR_COMMIT</span><span class="sxs-lookup"><span data-stu-id="856db-117">UPR_COMMIT</span></span>
     
-    - <span data-ttu-id="a6baf-118">[in] Hochladen des lesen Status des Elements jetzt, anstatt zu warten, bis zum Ende der [Tabelle Zustand hochladen](upload-table-state.md) zur Stapelverarbeitung mehr als ein Element.</span><span class="sxs-lookup"><span data-stu-id="a6baf-118">[in] Upload the read status of the item now, instead of waiting to the end of the [upload table state](upload-table-state.md) to batch-process more than one item.</span></span> 
+    - <span data-ttu-id="856db-118">in Laden Sie jetzt den Lesestatus des Elements hoch, statt auf das Ende des Upload- [Tabellenstatus](upload-table-state.md) zu warten, um mehr als ein Element zu verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="856db-118">[in] Upload the read status of the item now, instead of waiting to the end of the [upload table state](upload-table-state.md) to batch-process more than one item.</span></span> 
     
-<span data-ttu-id="a6baf-119">_SKEY_</span><span class="sxs-lookup"><span data-stu-id="a6baf-119">_skey_</span></span>
+<span data-ttu-id="856db-119">_skey_</span><span class="sxs-lookup"><span data-stu-id="856db-119">_skey_</span></span>
   
-> <span data-ttu-id="a6baf-120">[out] Quellschlüssel des Elements.</span><span class="sxs-lookup"><span data-stu-id="a6baf-120">[out] Source key of the item.</span></span>
+> <span data-ttu-id="856db-120">Out Der Quellschlüssel des Elements.</span><span class="sxs-lookup"><span data-stu-id="856db-120">[out] Source key of the item.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="a6baf-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a6baf-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="856db-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="856db-121">See also</span></span>
 
-- [<span data-ttu-id="a6baf-122">Informationen über die Replikations-API</span><span class="sxs-lookup"><span data-stu-id="a6baf-122">About the Replication API</span></span>](about-the-replication-api.md)
-- [<span data-ttu-id="a6baf-123">Informationen über den Replikationszustandsautomaten</span><span class="sxs-lookup"><span data-stu-id="a6baf-123">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
-- [<span data-ttu-id="a6baf-124">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="a6baf-124">MAPI Constants</span></span>](mapi-constants.md)
-- [<span data-ttu-id="a6baf-125">UPREAD</span><span class="sxs-lookup"><span data-stu-id="a6baf-125">UPREAD</span></span>](upread.md)
+- [<span data-ttu-id="856db-122">Informationen über die Replikations-API</span><span class="sxs-lookup"><span data-stu-id="856db-122">About the Replication API</span></span>](about-the-replication-api.md)
+- [<span data-ttu-id="856db-123">Informationen über den Replikationszustandsautomaten</span><span class="sxs-lookup"><span data-stu-id="856db-123">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+- [<span data-ttu-id="856db-124">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="856db-124">MAPI Constants</span></span>](mapi-constants.md)
+- [<span data-ttu-id="856db-125">UPREAD</span><span class="sxs-lookup"><span data-stu-id="856db-125">UPREAD</span></span>](upread.md)
 

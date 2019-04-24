@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 1d6eec99-59f9-4700-9b83-7f7f8787a9f8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 16e1d45806755bad8caff6847b0ecdea5b4ba78b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a76d0c554d7cf06aceeaa2925c199e45411b999d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342091"
 ---
-# <a name="imapiforminfoopenformcontainer"></a><span data-ttu-id="e0d7d-103">IMAPIFormInfo::OpenFormContainer</span><span class="sxs-lookup"><span data-stu-id="e0d7d-103">IMAPIFormInfo::OpenFormContainer</span></span>
+# <a name="imapiforminfoopenformcontainer"></a><span data-ttu-id="b349c-103">IMAPIFormInfo::OpenFormContainer</span><span class="sxs-lookup"><span data-stu-id="b349c-103">IMAPIFormInfo::OpenFormContainer</span></span>
 
   
   
-<span data-ttu-id="e0d7d-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e0d7d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b349c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b349c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e0d7d-105">Gibt einen Zeiger auf den Formular-Container, in dem ein bestimmtes Formular installiert ist.</span><span class="sxs-lookup"><span data-stu-id="e0d7d-105">Returns a pointer to the form container in which a particular form is installed.</span></span>
+<span data-ttu-id="b349c-105">Gibt einen Zeiger auf den Formular Container zurück, in dem ein bestimmtes Formular installiert ist.</span><span class="sxs-lookup"><span data-stu-id="b349c-105">Returns a pointer to the form container in which a particular form is installed.</span></span>
   
 ```cpp
 HRESULT OpenFormContainer(
@@ -33,21 +33,21 @@ HRESULT OpenFormContainer(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e0d7d-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="e0d7d-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b349c-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="b349c-106">Parameters</span></span>
 
- <span data-ttu-id="e0d7d-107">_ppformcontainer_</span><span class="sxs-lookup"><span data-stu-id="e0d7d-107">_ppformcontainer_</span></span>
+ <span data-ttu-id="b349c-107">_ppformcontainer_</span><span class="sxs-lookup"><span data-stu-id="b349c-107">_ppformcontainer_</span></span>
   
-> <span data-ttu-id="e0d7d-108">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Form Container-Objekt.</span><span class="sxs-lookup"><span data-stu-id="e0d7d-108">[out] A pointer to a pointer to the returned form container object.</span></span>
+> <span data-ttu-id="b349c-108">Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Container-Objekt.</span><span class="sxs-lookup"><span data-stu-id="b349c-108">[out] A pointer to a pointer to the returned form container object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e0d7d-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e0d7d-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b349c-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b349c-109">Return value</span></span>
 
-<span data-ttu-id="e0d7d-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="e0d7d-110">S_OK</span></span> 
+<span data-ttu-id="b349c-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="b349c-110">S_OK</span></span> 
   
-> <span data-ttu-id="e0d7d-111">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e0d7d-111">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="b349c-111">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="b349c-111">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="e0d7d-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e0d7d-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b349c-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b349c-112">See also</span></span>
 
 
 
-[<span data-ttu-id="e0d7d-113">IMAPIFormInfo : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="e0d7d-113">IMAPIFormInfo : IMAPIProp</span></span>](imapiforminfoimapiprop.md)
+[<span data-ttu-id="b349c-113">IMAPIFormInfo : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="b349c-113">IMAPIFormInfo : IMAPIProp</span></span>](imapiforminfoimapiprop.md)
 

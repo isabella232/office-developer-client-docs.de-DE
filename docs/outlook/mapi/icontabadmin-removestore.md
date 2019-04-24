@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 2a5fcf5c-8a5a-4774-b8c9-1ac1ff27947d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2ec8a28dc52e2aa1f1fa63410b6bd6c13fb5bd57
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4865c1c867dd73514ab22ac4e8da628caf154ee7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339270"
 ---
-# <a name="icontabadminremovestore"></a><span data-ttu-id="65190-103">IContabAdmin::RemoveStore</span><span class="sxs-lookup"><span data-stu-id="65190-103">IContabAdmin::RemoveStore</span></span>
+# <a name="icontabadminremovestore"></a><span data-ttu-id="9c447-103">IContabAdmin::RemoveStore</span><span class="sxs-lookup"><span data-stu-id="9c447-103">IContabAdmin::RemoveStore</span></span>
 
   
   
-<span data-ttu-id="65190-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="65190-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9c447-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9c447-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="65190-105">Entfernt den Kontakt Adresse Buch (CAB) mit der angegebenen Eintrags-ID aus der Adressbuchhierarchie angegeben.</span><span class="sxs-lookup"><span data-stu-id="65190-105">Removes the Contact Address Book (CAB) specified by the given entry ID from the address book hierarchy.</span></span>
+<span data-ttu-id="9c447-105">Entfernt das von der angegebenen Eintrags-ID angegebene Kontakt Adressbuch (CAB) aus der Adressbuchhierarchie.</span><span class="sxs-lookup"><span data-stu-id="9c447-105">Removes the Contact Address Book (CAB) specified by the given entry ID from the address book hierarchy.</span></span>
   
 ```cpp
 HRESULT RemoveStore(
@@ -34,14 +34,14 @@ LPENTRYID lpEntryID
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="65190-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="65190-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="9c447-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="9c447-106">Parameters</span></span>
 
- <span data-ttu-id="65190-107">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="65190-107">_cbEntryID_</span></span>
+ <span data-ttu-id="9c447-107">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="9c447-107">_cbEntryID_</span></span>
   
-> <span data-ttu-id="65190-108">[in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen.</span><span class="sxs-lookup"><span data-stu-id="65190-108">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
+> <span data-ttu-id="9c447-108">in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="9c447-108">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
     
- <span data-ttu-id="65190-109">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="65190-109">_lpEntryID_</span></span>
+ <span data-ttu-id="9c447-109">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="9c447-109">_lpEntryID_</span></span>
   
-> <span data-ttu-id="65190-110">[in] Ein Zeiger auf die Eintrags-ID des Objekts zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="65190-110">[in] A pointer to the entry identifier of the object to open.</span></span>
+> <span data-ttu-id="9c447-110">in Ein Zeiger auf die Eintrags-ID des zu öffnenden Objekts.</span><span class="sxs-lookup"><span data-stu-id="9c447-110">[in] A pointer to the entry identifier of the object to open.</span></span>
     
 

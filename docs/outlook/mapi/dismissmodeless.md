@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef93ef3d-c159-40ae-9b8d-0af8a0567565
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c66ff2338eb5751dbffe392a6a26258fb1c89476
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: dd962515a85cb6a4b8661a0fd5294cea55cd6e96
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339774"
 ---
-# <a name="dismissmodeless"></a><span data-ttu-id="796aa-103">DISMISSMODELESS</span><span class="sxs-lookup"><span data-stu-id="796aa-103">DISMISSMODELESS</span></span>
+# <a name="dismissmodeless"></a><span data-ttu-id="b5bd6-103">DISMISSMODELESS</span><span class="sxs-lookup"><span data-stu-id="b5bd6-103">DISMISSMODELESS</span></span>
 
   
   
-<span data-ttu-id="796aa-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="796aa-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b5bd6-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b5bd6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="796aa-105">Definiert eine Rückruffunktion, die MAPI-aufrufen, wenn sie ein Dialogfeld ohne Modus Address Book geschlossen wurde.</span><span class="sxs-lookup"><span data-stu-id="796aa-105">Defines a callback function that MAPI calls when it has dismissed a modeless address book dialog box.</span></span> 
+<span data-ttu-id="b5bd6-105">Definiert eine Rückruffunktion, die von MAPI aufgerufen wird, wenn ein Dialogfeld für nicht modale Adressbücher geschlossen wurde.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-105">Defines a callback function that MAPI calls when it has dismissed a modeless address book dialog box.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="796aa-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="796aa-106">Header file:</span></span>  <br/> |<span data-ttu-id="796aa-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="796aa-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="796aa-108">Definierte Funktion von implementiert:</span><span class="sxs-lookup"><span data-stu-id="796aa-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="796aa-109">Clientanwendungen</span><span class="sxs-lookup"><span data-stu-id="796aa-109">Client applications</span></span>  <br/> |
-|<span data-ttu-id="796aa-110">Definierte Funktion aufgerufen:</span><span class="sxs-lookup"><span data-stu-id="796aa-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="796aa-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="796aa-111">MAPI</span></span>  <br/> |
+|<span data-ttu-id="b5bd6-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="b5bd6-106">Header file:</span></span>  <br/> |<span data-ttu-id="b5bd6-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="b5bd6-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="b5bd6-108">Definierte Funktion, implementiert von:</span><span class="sxs-lookup"><span data-stu-id="b5bd6-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="b5bd6-109">Client Anwendungen</span><span class="sxs-lookup"><span data-stu-id="b5bd6-109">Client applications</span></span>  <br/> |
+|<span data-ttu-id="b5bd6-110">Definierte Funktion, aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="b5bd6-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="b5bd6-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="b5bd6-111">MAPI</span></span>  <br/> |
    
 ```cpp
 void (STDMETHODCALLTYPE DISMISSMODELESS)(
@@ -40,27 +40,27 @@ void (STDMETHODCALLTYPE DISMISSMODELESS)(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="796aa-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="796aa-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b5bd6-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="b5bd6-112">Parameters</span></span>
 
- <span data-ttu-id="796aa-113">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="796aa-113">_ulUIParam_</span></span>
+ <span data-ttu-id="b5bd6-113">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="b5bd6-113">_ulUIParam_</span></span>
   
-> <span data-ttu-id="796aa-114">[in] Einen implementierungsspezifischen Wert in der Regel für die Übergabe von Informationen zur Benutzeroberfläche auf eine Funktion verwendet.</span><span class="sxs-lookup"><span data-stu-id="796aa-114">[in] An implementation-specific value typically used for passing user interface information to a function.</span></span> <span data-ttu-id="796aa-115">Beispielsweise wird in Microsoft Windows ein dieser Parameter ist das übergeordnete Fensterhandle für das Dialogfeld und vom Typ HWND in eine **ULONG_PTR**umgewandelt wird.</span><span class="sxs-lookup"><span data-stu-id="796aa-115">For example, in Microsoft Windows this parameter is the parent window handle for the dialog box and is of type HWND, cast to a **ULONG_PTR**.</span></span> <span data-ttu-id="796aa-116">Der Wert 0 gibt an, dass kein übergeordnetes Fenster vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="796aa-116">A value of zero indicates there is no parent window.</span></span> 
+> <span data-ttu-id="b5bd6-114">in Ein implementierungsspezifischer Wert, der normalerweise zum Übergeben von Benutzeroberflächeninformationen an eine Funktion verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-114">[in] An implementation-specific value typically used for passing user interface information to a function.</span></span> <span data-ttu-id="b5bd6-115">In Microsoft Windows ist dieser Parameter beispielsweise das übergeordnete Fensterhandle für das Dialogfeld und vom Typ HWND und wird in einen **ULONG_PTR**umgewandelt.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-115">For example, in Microsoft Windows this parameter is the parent window handle for the dialog box and is of type HWND, cast to a **ULONG_PTR**.</span></span> <span data-ttu-id="b5bd6-116">Der Wert 0 (null) gibt an, dass kein übergeordnetes Fenster vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-116">A value of zero indicates there is no parent window.</span></span> 
     
- <span data-ttu-id="796aa-117">_lpvContext_</span><span class="sxs-lookup"><span data-stu-id="796aa-117">_lpvContext_</span></span>
+ <span data-ttu-id="b5bd6-117">_lpvContext_</span><span class="sxs-lookup"><span data-stu-id="b5bd6-117">_lpvContext_</span></span>
   
-> <span data-ttu-id="796aa-118">[in] Zeiger auf einen beliebigen Wert wird an die Rückruffunktion übergeben, wenn MAPI aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="796aa-118">[in] Pointer to an arbitrary value passed to the callback function when MAPI calls it.</span></span> <span data-ttu-id="796aa-119">Dieser Wert kann eine an die Clientanwendung Vielfache von-Adresse dar.</span><span class="sxs-lookup"><span data-stu-id="796aa-119">This value can represent an address of significance to the client application.</span></span> <span data-ttu-id="796aa-120">In der Regel ist _LpvContext_ für C++-Code einen Zeiger auf die Adresse des eine C++-Objektinstanz.</span><span class="sxs-lookup"><span data-stu-id="796aa-120">Typically, for C++ code,  _lpvContext_ is a pointer to the address of a C++ object instance.</span></span> 
+> <span data-ttu-id="b5bd6-118">in Zeiger auf einen beliebigen Wert, der beim Aufrufen von MAPI an die Rückruffunktion übergeben wird.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-118">[in] Pointer to an arbitrary value passed to the callback function when MAPI calls it.</span></span> <span data-ttu-id="b5bd6-119">Dieser Wert kann eine für die Clientanwendung bedeutsame Adresse darstellen.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-119">This value can represent an address of significance to the client application.</span></span> <span data-ttu-id="b5bd6-120">Für C++-Code ist _LpvContext_ in der Regel ein Zeiger auf die Adresse einer c++-Objektinstanz.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-120">Typically, for C++ code,  _lpvContext_ is a pointer to the address of a C++ object instance.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="796aa-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="796aa-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b5bd6-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b5bd6-121">Return value</span></span>
 
-<span data-ttu-id="796aa-122">Keine</span><span class="sxs-lookup"><span data-stu-id="796aa-122">None</span></span>
+<span data-ttu-id="b5bd6-122">Keine</span><span class="sxs-lookup"><span data-stu-id="b5bd6-122">None</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="796aa-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="796aa-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b5bd6-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b5bd6-123">Remarks</span></span>
 
-<span data-ttu-id="796aa-124">Wenn die Client-Anwendung ein Dialogfeld ohne Modus Address Book aufruft, umfasst auch in seiner Windows Nachrichtenschleife einen Anruf an eine Funktion, die basierend auf den Prototyp [ACCELERATEABSDI](accelerateabsdi.md) , die überprüft und Zugriffstasten verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="796aa-124">When the client application invokes a modeless address book dialog box, it includes in its Windows message loop a call to a function based on the [ACCELERATEABSDI](accelerateabsdi.md) prototype, which checks for and processes accelerator keys.</span></span> <span data-ttu-id="796aa-125">Wenn das Dialogfeld geschlossen wird, basiert MAPI-Aufrufe, die **DISMISSMODELESS** Funktion basiert, damit die Clientanwendung angehalten wird das Aufrufen der **ACCELERATEABSDI** Funktion.</span><span class="sxs-lookup"><span data-stu-id="796aa-125">When the dialog box is closed, MAPI calls the **DISMISSMODELESS** based function so that the client application will stop calling the **ACCELERATEABSDI** based function.</span></span> 
+<span data-ttu-id="b5bd6-124">Wenn die Clientanwendung ein nicht modales Adressbuch-Dialogfeld aufruft, enthält es in der Windows-Meldungsschleife einen Aufruf an eine auf dem [ACCELERATEABSDI](accelerateabsdi.md) -Prototyp basierende Funktion, die Zugriffstasten überprüft und verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-124">When the client application invokes a modeless address book dialog box, it includes in its Windows message loop a call to a function based on the [ACCELERATEABSDI](accelerateabsdi.md) prototype, which checks for and processes accelerator keys.</span></span> <span data-ttu-id="b5bd6-125">Wenn das Dialogfeld geschlossen ist, ruft MAPI die **DISMISSMODELESS** -basierte Funktion auf, sodass die Clientanwendung den Aufruf der **ACCELERATEABSDI** -basierten Funktion beendet.</span><span class="sxs-lookup"><span data-stu-id="b5bd6-125">When the dialog box is closed, MAPI calls the **DISMISSMODELESS** based function so that the client application will stop calling the **ACCELERATEABSDI** based function.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="796aa-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="796aa-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b5bd6-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b5bd6-126">See also</span></span>
 
 
 
-[<span data-ttu-id="796aa-127">ADRPARM</span><span class="sxs-lookup"><span data-stu-id="796aa-127">ADRPARM</span></span>](adrparm.md)
+[<span data-ttu-id="b5bd6-127">ADRPARM</span><span class="sxs-lookup"><span data-stu-id="b5bd6-127">ADRPARM</span></span>](adrparm.md)
 
