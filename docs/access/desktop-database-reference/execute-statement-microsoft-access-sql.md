@@ -1,5 +1,5 @@
 ---
-title: EXECUTE-Anweisung (Microsoft Access SQL)
+title: EXECUTE statement (Microsoft Access SQL)
 TOCTitle: EXECUTE statement (Microsoft Access SQL)
 ms:assetid: 9ec4d9ee-db2a-0319-3ccf-c035d67a1496
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198330(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: df70d2728732f33161622ce71fc9273bd9f016f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293238"
 ---
-# <a name="execute-statement-microsoft-access-sql"></a><span data-ttu-id="e6afb-102">EXECUTE-Anweisung (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="e6afb-102">EXECUTE statement (Microsoft Access SQL)</span></span>
+# <a name="execute-statement-microsoft-access-sql"></a><span data-ttu-id="b2a10-102">EXECUTE statement (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="b2a10-102">EXECUTE Statement (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="e6afb-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e6afb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b2a10-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b2a10-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e6afb-104">Wird verwendet, um die Ausführung einer Prozedur aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="e6afb-104">Used to invoke the execution of a procedure.</span></span>
+<span data-ttu-id="b2a10-104">Wird verwendet, um die Ausführung einer Prozedur aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="b2a10-104">Used to invoke the execution of a procedure.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e6afb-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="e6afb-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b2a10-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b2a10-105">Syntax</span></span>
 
-<span data-ttu-id="e6afb-106">EXECUTE *Prozedur* \[ *param1*\[, *param2*\[,...\]\]</span><span class="sxs-lookup"><span data-stu-id="e6afb-106">EXECUTE *procedure* \[*param1*\[, *param2*\[, …\]\]</span></span>
+<span data-ttu-id="b2a10-106">EXECUTE *procedure* \[*param1*\[, *param2*\[, …\]\]</span><span class="sxs-lookup"><span data-stu-id="b2a10-106">EXECUTE *procedure [param1* \[[, *param2*[, …]]</span></span>
 
-<span data-ttu-id="e6afb-107">Die EXECUTE-Anweisung besteht aus folgenden Komponenten:</span><span class="sxs-lookup"><span data-stu-id="e6afb-107">The EXECUTE statement has these parts:</span></span>
+<span data-ttu-id="b2a10-107">Die EXECUTE-Anweisung setzt sich wie folgt zusammen:</span><span class="sxs-lookup"><span data-stu-id="b2a10-107">The EXECUTE statement has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -37,26 +37,26 @@ ms.locfileid: "28701942"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="e6afb-108">Komponente</span><span class="sxs-lookup"><span data-stu-id="e6afb-108">Part</span></span></p></th>
-<th><p><span data-ttu-id="e6afb-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e6afb-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="b2a10-108">Part</span><span class="sxs-lookup"><span data-stu-id="b2a10-108">Part</span></span></p></th>
+<th><p><span data-ttu-id="b2a10-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b2a10-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="e6afb-110"><em>Prozedur</em></span><span class="sxs-lookup"><span data-stu-id="e6afb-110"><em>procedure</em></span></span></p></td>
-<td><p><span data-ttu-id="e6afb-111">Der Name der auszuführenden Prozedur.</span><span class="sxs-lookup"><span data-stu-id="e6afb-111">The name of the procedure that is to be executed.</span></span></p></td>
+<td><p><span data-ttu-id="b2a10-110"><em>Prozedur</em></span><span class="sxs-lookup"><span data-stu-id="b2a10-110"><em>procedure</em></span></span></p></td>
+<td><p><span data-ttu-id="b2a10-111">Der Name der auszuführenden Prozedur.</span><span class="sxs-lookup"><span data-stu-id="b2a10-111">The name of the procedure that is to be executed.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e6afb-112"><em>Param1, Param2, …</em></span><span class="sxs-lookup"><span data-stu-id="e6afb-112"><em>param1, param2, …</em></span></span></p></td>
-<td><p><span data-ttu-id="e6afb-113">Die von der Prozedur definierten Werte für die Parameter.</span><span class="sxs-lookup"><span data-stu-id="e6afb-113">Values for the parameters defined by the procedure.</span></span></p></td>
+<td><p><span data-ttu-id="b2a10-112"><em>Parameter1, Parameter2, ...</em></span><span class="sxs-lookup"><span data-stu-id="b2a10-112"><em>param1, param2, …</em></span></span></p></td>
+<td><p><span data-ttu-id="b2a10-113">Werte für die von der Prozedur definierten Parameter.</span><span class="sxs-lookup"><span data-stu-id="b2a10-113">Values for the parameters defined by the procedure.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="example"></a><span data-ttu-id="e6afb-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e6afb-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b2a10-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b2a10-114">Example</span></span>
 
-<span data-ttu-id="e6afb-115">In diesem Beispiel wird die Abfrage categoryList verwendet, und es wird die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.</span><span class="sxs-lookup"><span data-stu-id="e6afb-115">This example names the query CategoryList, and calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
+<span data-ttu-id="b2a10-115">In diesem Beispiel wird die CategoryList-Abfrage benannt und die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="b2a10-115">This example calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
 
 ```vb
     Sub ProcedureX() 
