@@ -8,44 +8,44 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4c615be9e92a936486c15377514c2b695f68bb5b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308323"
 ---
-# <a name="workspaces-collection-dao"></a><span data-ttu-id="dab95-102">Workspaces-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="dab95-102">Workspaces collection (DAO)</span></span>
+# <a name="workspaces-collection-dao"></a><span data-ttu-id="b2ec5-102">Workspaces-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="b2ec5-102">Workspaces collection (DAO)</span></span>
 
 
-<span data-ttu-id="dab95-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dab95-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b2ec5-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b2ec5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="dab95-p101">Eine **Workspaces**-Auflistung enthält alle aktiven, nicht ausgeblendeten **Workspace**-Objekte des **DBEngine**-Objekts. (Ausgeblendete **Workspace**-Objekte werden nicht an die Auflistung angefügt, und auf sie wird nicht durch die Variable verwiesen, der sie zugeordnet sind.)</span><span class="sxs-lookup"><span data-stu-id="dab95-p101">A **Workspaces** collection contains all active, unhidden **Workspace** objects of the **DBEngine** object. (Hidden **Workspace** objects are not appended to the collection and referenced by the variable to which they are assigned.)</span></span>
+<span data-ttu-id="b2ec5-p101">Eine **Workspaces**-Auflistung enthält alle aktiven, nicht ausgeblendeten **Workspace**-Objekte des **DBEngine**-Objekts. (Ausgeblendete **Workspace**-Objekte werden nicht an die Auflistung angefügt, und auf sie wird nicht durch die Variable verwiesen, der sie zugeordnet sind.)</span><span class="sxs-lookup"><span data-stu-id="b2ec5-p101">A **Workspaces** collection contains all active, unhidden **Workspace** objects of the **DBEngine** object. (Hidden **Workspace** objects are not appended to the collection and referenced by the variable to which they are assigned.)</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="dab95-106">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="dab95-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b2ec5-106">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b2ec5-106">Remarks</span></span>
 
-<span data-ttu-id="dab95-107">Verwenden Sie das **Workspace**-Objekt, um die aktuelle Sitzung zu verwalten oder eine zusätzliche Sitzung zu starten.</span><span class="sxs-lookup"><span data-stu-id="dab95-107">Use the **Workspace** object to manage the current session or to start an additional session.</span></span>
+<span data-ttu-id="b2ec5-107">Verwenden Sie das **Workspace**-Objekt, um die aktuelle Sitzung zu verwalten oder eine zusätzliche Sitzung zu starten.</span><span class="sxs-lookup"><span data-stu-id="b2ec5-107">Use the **Workspace** object to manage the current session or to start an additional session.</span></span>
 
-<span data-ttu-id="dab95-108">Wenn Sie zuerst finden Sie unter oder ein **Workspace** -Objekt verwenden, erstellen Sie automatisch den Standard-Arbeitsbereich DBEngine.Workspaces(0).</span><span class="sxs-lookup"><span data-stu-id="dab95-108">When you first refer to or use a **Workspace** object, you automatically create the default workspace, DBEngine.Workspaces(0).</span></span> <span data-ttu-id="dab95-109">Die Einstellungen der Eigenschaften **Name** und **UserName** des Standard-Arbeitsbereich sind "\#Standard-Arbeitsbereich\#" und "Admin" fest.</span><span class="sxs-lookup"><span data-stu-id="dab95-109">The settings of the **Name** and **UserName** properties of the default workspace are "\#Default Workspace\#" and "Admin," respectively.</span></span> <span data-ttu-id="dab95-110">Wenn die Sicherheit aktiviert ist, lautet ist die **UserName** -Eigenschaftseinstellung der Name des angemeldeten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="dab95-110">If security is enabled, the **UserName** property setting is the name of the user who logged on.</span></span>
+<span data-ttu-id="b2ec5-108">Wenn Sie zum ersten Mal auf ein **Workspace** -Objekt verweisen oder es verwenden, erstellen Sie automatisch den standardArbeitsbereich dbengine. Workspaces (0).</span><span class="sxs-lookup"><span data-stu-id="b2ec5-108">When you first refer to or use a **Workspace** object, you automatically create the default workspace, DBEngine.Workspaces(0).</span></span> <span data-ttu-id="b2ec5-109">Die Einstellungen der Eigenschaften **Name** und **username** des Standardarbeitsbereichs sind "\#Standardarbeitsbereich\#" und "admin".</span><span class="sxs-lookup"><span data-stu-id="b2ec5-109">The settings of the **Name** and **UserName** properties of the default workspace are "\#Default Workspace\#" and "Admin," respectively.</span></span> <span data-ttu-id="b2ec5-110">If security is enabled, the **UserName** property setting is the name of the user who logged on.</span><span class="sxs-lookup"><span data-stu-id="b2ec5-110">If security is enabled, the **UserName** property setting is the name of the user who logged on.</span></span>
 
-<span data-ttu-id="dab95-p103">Sie können mit der [**CreateWorkspace**](dbengine-createworkspace-method-dao.md) -Methode neue **Workspace**-Objekte erstellen. Wenn Sie ein neues **Workspace**-Objekt erstellt haben, müssen Sie es an die **Workspaces**-Auflistung anfügen, um von der **Workspaces**-Auflistung auf dieses Objekt verweisen zu können. Sie können ein neu erstelltes **Workspace**-Objekt jedoch auch verwenden, ohne es an die **Workspaces**-Auflistung anzufügen.</span><span class="sxs-lookup"><span data-stu-id="dab95-p103">You can create new **Workspace** objects with the **[CreateWorkspace](dbengine-createworkspace-method-dao.md)** method. After you create a new **Workspace** object, you must append it to the **Workspaces** collection if you need to refer to it from the **Workspaces** collection. You can, however, use a newly created **Workspace** object without appending it to the **Workspaces** collection.</span></span>
+<span data-ttu-id="b2ec5-p103">Sie können mit der [**CreateWorkspace**](dbengine-createworkspace-method-dao.md) -Methode neue **Workspace**-Objekte erstellen. Wenn Sie ein neues **Workspace**-Objekt erstellt haben, müssen Sie es an die **Workspaces**-Auflistung anfügen, um von der **Workspaces**-Auflistung auf dieses Objekt verweisen zu können. Sie können ein neu erstelltes **Workspace**-Objekt jedoch auch verwenden, ohne es an die **Workspaces**-Auflistung anzufügen.</span><span class="sxs-lookup"><span data-stu-id="b2ec5-p103">You can create new **Workspace** objects with the **[CreateWorkspace](dbengine-createworkspace-method-dao.md)** method. After you create a new **Workspace** object, you must append it to the **Workspaces** collection if you need to refer to it from the **Workspaces** collection. You can, however, use a newly created **Workspace** object without appending it to the **Workspaces** collection.</span></span>
 
-<span data-ttu-id="dab95-114">Der Verweis auf ein **Workspace**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:</span><span class="sxs-lookup"><span data-stu-id="dab95-114">To refer to a **Workspace** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="b2ec5-114">Der Verweis auf ein **Workspace**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:</span><span class="sxs-lookup"><span data-stu-id="b2ec5-114">To refer to a **Workspace** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="dab95-115">**DBEngine**. **Arbeitsbereiche** (0)</span><span class="sxs-lookup"><span data-stu-id="dab95-115">**DBEngine**.**Workspaces**(0)</span></span>
+<span data-ttu-id="b2ec5-115">**DBEngine**. **Arbeitsbereiche** 0</span><span class="sxs-lookup"><span data-stu-id="b2ec5-115">**DBEngine**.**Workspaces**(0)</span></span>
 
-<span data-ttu-id="dab95-116">**DBEngine**. **Arbeitsbereiche** ("Name")</span><span class="sxs-lookup"><span data-stu-id="dab95-116">**DBEngine**.**Workspaces**("name")</span></span>
+<span data-ttu-id="b2ec5-116">**DBEngine**. **Arbeitsbereiche** ("Name")</span><span class="sxs-lookup"><span data-stu-id="b2ec5-116">**DBEngine**.**Workspaces**("name")</span></span>
 
-<span data-ttu-id="dab95-117">**DBEngine**. **Arbeitsbereiche** \! \[Namen\]</span><span class="sxs-lookup"><span data-stu-id="dab95-117">**DBEngine**.**Workspaces**\!\[name\]</span></span>
+<span data-ttu-id="b2ec5-117">**DBEngine**. **Arbeitsbereiche** \! \[Name\]</span><span class="sxs-lookup"><span data-stu-id="b2ec5-117">**DBEngine**.**Workspaces**\!\[name\]</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="dab95-p104">[!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="dab95-p104">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
+> <span data-ttu-id="b2ec5-p104">[!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="b2ec5-p104">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
 
 
 
-## <a name="example"></a><span data-ttu-id="dab95-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="dab95-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b2ec5-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b2ec5-120">Example</span></span>
 
-<span data-ttu-id="dab95-p105">In diesem Beispiel wird ein neues Microsoft Access-Arbeitsbereichsobjekt erstellt und an die **Arbeitsbereichs** auflistung angehängt. Anschließend werden die **Arbeitsbereichs** auflistungen und die **Eigenschafts** auflistung des **Arbeitsbereichs** objekts aufgezählt.</span><span class="sxs-lookup"><span data-stu-id="dab95-p105">This example creates a new Microsoft Access Workspace object and appends it to the **Workspaces** collection. It then enumerates the **Workspaces** collections and the **Properties** collection of the **Workspace** object.</span></span>
+<span data-ttu-id="b2ec5-p105">In diesem Beispiel wird ein neues Microsoft Access-Arbeitsbereichsobjekt erstellt und an die **Arbeitsbereichs** auflistung angehängt. Anschließend werden die **Arbeitsbereichs** auflistungen und die **Eigenschafts** auflistung des **Arbeitsbereichs** objekts aufgezählt.</span><span class="sxs-lookup"><span data-stu-id="b2ec5-p105">This example creates a new Microsoft Access Workspace object and appends it to the **Workspaces** collection. It then enumerates the **Workspaces** collections and the **Properties** collection of the **Workspace** object.</span></span>
 
 ```vb 
 Sub WorkspaceX() 
@@ -80,7 +80,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="dab95-p106">In diesem Beispiel wird die **CreateWorkspace**-Methode verwendet, um einen Microsoft Access-Arbeitsbereich zu erstellen. Danach werden die Eigenschaften des Arbeitsbereichs aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="dab95-p106">This example uses the **CreateWorkspace** method to create a Microsoft Access workspace. It then lists the properties of theworkspace.</span></span>
+<span data-ttu-id="b2ec5-p106">In diesem Beispiel wird die **CreateWorkspace**-Methode verwendet, um einen Microsoft Access-Arbeitsbereich zu erstellen. Danach werden die Eigenschaften des Arbeitsbereichs aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="b2ec5-p106">This example uses the **CreateWorkspace** method to create a Microsoft Access workspace. It then lists the properties of theworkspace.</span></span>
 
 ```vb 
 Sub CreateWorkspaceX() 

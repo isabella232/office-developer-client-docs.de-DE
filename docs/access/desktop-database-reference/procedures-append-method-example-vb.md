@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0e1df7d4914a247dac6f96a3709f0930bceea0ea
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301372"
 ---
-# <a name="procedures-append-method-example-vb"></a><span data-ttu-id="344b0-102">Append-Methode (Procedures) (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="344b0-102">Procedures Append method example (VB)</span></span>
+# <a name="procedures-append-method-example-vb"></a><span data-ttu-id="7fd48-102">Append-Methode (Procedures) (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="7fd48-102">Procedures Append method example (VB)</span></span>
 
 
-<span data-ttu-id="344b0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="344b0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7fd48-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7fd48-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="344b0-104">Im folgenden Code wird die Verwendung eines [Command](command-object-ado.md)-Objekts und der [Append](procedures-collection-adox.md)-Methode der[Procedures](append-method-adox-procedures.md)-Auflistung veranschaulicht, um eine neue Prozedur in der zugrunde liegenden Datenquelle zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="344b0-104">The following code demonstrates how to use a [Command](command-object-ado.md) object and the [Procedures](procedures-collection-adox.md) collection [Append](append-method-adox-procedures.md) method to create a new procedure in the underlying data source.</span></span>
+<span data-ttu-id="7fd48-104">Im folgenden Code wird die Verwendung eines [Command](command-object-ado.md)-Objekts und der [Append](append-method-adox-procedures.md)-Methode der[Procedures](procedures-collection-adox.md)-Auflistung veranschaulicht, um eine neue Prozedur in der zugrunde liegenden Datenquelle zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="7fd48-104">The following code demonstrates how to use a [Command](command-object-ado.md) object and the [Procedures](procedures-collection-adox.md) collection [Append](append-method-adox-procedures.md) method to create a new procedure in the underlying data source.</span></span>
 
 ```vb 
  

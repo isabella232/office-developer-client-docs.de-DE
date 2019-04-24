@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: bcbab29b58901c5850b5a13c2a2c1a9198ded2f5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301141"
 ---
-# <a name="provider-and-defaultdatabase-properties-example-vj"></a><span data-ttu-id="36694-102">Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="36694-102">Provider and DefaultDatabase properties example (VJ++)</span></span>
+# <a name="provider-and-defaultdatabase-properties-example-vj"></a><span data-ttu-id="93ad7-102">Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="93ad7-102">Provider and DefaultDatabase properties example (VJ++)</span></span>
 
 
-<span data-ttu-id="36694-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="36694-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="93ad7-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="93ad7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="36694-p101">Dieses Beispiel veranschaulicht die [Provider](provider-property-ado.md)-Eigenschaft, indem drei [Connection](connection-object-ado.md)-Objekte unter Verwendung verschiedener Anbieter geöffnet werden. Außerdem wird mit der [DefaultDatabase](defaultdatabase-property-ado.md)-Eigenschaft die Standarddatenbank für den Microsoft ODBC-Anbieter festgelegt.</span><span class="sxs-lookup"><span data-stu-id="36694-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
+<span data-ttu-id="93ad7-p101">Dieses Beispiel veranschaulicht die [Provider](provider-property-ado.md)-Eigenschaft, indem drei [Connection](connection-object-ado.md)-Objekte unter Verwendung verschiedener Anbieter geöffnet werden. Außerdem wird mit der [DefaultDatabase](defaultdatabase-property-ado.md)-Eigenschaft die Standarddatenbank für den Microsoft ODBC-Anbieter festgelegt.</span><span class="sxs-lookup"><span data-stu-id="93ad7-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
 
 ```java 
  

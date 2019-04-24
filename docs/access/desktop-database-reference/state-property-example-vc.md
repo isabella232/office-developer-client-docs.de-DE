@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 68530f060b0c3662e53e927d7e2fda6cfd7c6957
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308526"
 ---
-# <a name="state-property-example-vc"></a><span data-ttu-id="e0a93-102">State-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="e0a93-102">State property example (VC++)</span></span>
+# <a name="state-property-example-vc"></a><span data-ttu-id="3cd14-102">State-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="3cd14-102">State property example (VC++)</span></span>
 
 
-<span data-ttu-id="e0a93-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e0a93-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3cd14-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3cd14-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e0a93-104">In diesem Beispiel wird die [State](state-property-ado.md)-Eigenschaft verwendet, um eine Meldung anzuzeigen, während die asynchronen Verbindungen geöffnet und asynchrone Befehle ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="e0a93-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
+<span data-ttu-id="3cd14-104">In diesem Beispiel wird die [State](state-property-ado.md)-Eigenschaft verwendet, um eine Meldung anzuzeigen, während die asynchronen Verbindungen geöffnet und asynchrone Befehle ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="3cd14-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
 
 ```cpp 
  

@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 58bde31a3386e3c129933d02e6464de5bc18fd68
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308624"
 ---
-# <a name="sortorder-property-example-vb"></a><span data-ttu-id="c6e5c-102">SortOrder-Eigenschaft (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="c6e5c-102">SortOrder property example (VB)</span></span>
+# <a name="sortorder-property-example-vb"></a><span data-ttu-id="1117a-102">SortOrder-Eigenschaft (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="1117a-102">SortOrder property example (VB)</span></span>
 
-<span data-ttu-id="c6e5c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c6e5c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="1117a-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1117a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c6e5c-p101">In diesem Beispiel wird die Verwendung der SortOrder-Eigenschaft eines Column-Objekts veranschaulicht, das an die Columns-Auflistung eines Index-Objekts angefügt wurde. Der Code fügt einen aufsteigenden Index an die Country-Spalte in der Employees-Tabelle an und zeigt dann die Datensätze an. Dann fügt der Code einen absteigenden Index an die Country-Spalte der Employees-Tabelle an und zeigt die Datensätze erneut an. Hierdurch wird der Unterschied zwischen aufsteigenden und absteigenden Indizes veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="c6e5c-p101">This example demonstrates the [SortOrder](sortorder-property-adox.md) property of a [Column](column-object-adox.md) that has been appended to the [Columns](columns-collection-adox.md) collection of an [Index](index-object-adox.md). The code appends an ascending index to the Country column in the **Employees** table, then displays the records. Then the code appends a descending index to the Country column in the **Employees** table and displays the records again. The difference between ascending and descending indexes is shown.</span></span>
+<span data-ttu-id="1117a-p101">This example demonstrates the [SortOrder](sortorder-property-adox.md) property of a [Column](column-object-adox.md) that has been appended to the [Columns](columns-collection-adox.md) collection of an [Index](index-object-adox.md). The code appends an ascending index to the Country column in the **Employees** table, then displays the records. Then the code appends a descending index to the Country column in the **Employees** table and displays the records again. The difference between ascending and descending indexes is shown.</span><span class="sxs-lookup"><span data-stu-id="1117a-p101">This example demonstrates the [SortOrder](sortorder-property-adox.md) property of a [Column](column-object-adox.md) that has been appended to the [Columns](columns-collection-adox.md) collection of an [Index](index-object-adox.md). The code appends an ascending index to the Country column in the **Employees** table, then displays the records. Then the code appends a descending index to the Country column in the **Employees** table and displays the records again. The difference between ascending and descending indexes is shown.</span></span>
 
 
 ```vb 

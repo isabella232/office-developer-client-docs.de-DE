@@ -1,5 +1,5 @@
 ---
-title: QueryDef.Close-Methode (DAO)
+title: QueryDef. Schließ-Methode (DAO)
 TOCTitle: Close Method
 ms:assetid: b2b63462-453d-9e2b-0bb3-69a4a7a6ecef
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822031(v=office.15)
@@ -12,28 +12,28 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 4d50fa52ff4f5d669b062a052bf3e59a28a9e732
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303304"
 ---
-# <a name="querydefclose-method-dao"></a><span data-ttu-id="4c9c7-102">QueryDef.Close-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c9c7-102">QueryDef.Close method (DAO)</span></span>
+# <a name="querydefclose-method-dao"></a><span data-ttu-id="83fb8-102">QueryDef. Schließ-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="83fb8-102">QueryDef.Close method (DAO)</span></span>
 
 
-<span data-ttu-id="4c9c7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4c9c7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="83fb8-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="83fb8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4c9c7-104">Schließt ein geöffnetes **QueryDef**-Objekt.</span><span class="sxs-lookup"><span data-stu-id="4c9c7-104">Closes an open **QueryDef**.</span></span>
+<span data-ttu-id="83fb8-104">Schließt ein geöffnetes **QueryDef**-Objekt.</span><span class="sxs-lookup"><span data-stu-id="83fb8-104">Closes an open **QueryDef**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4c9c7-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="4c9c7-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="83fb8-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="83fb8-105">Syntax</span></span>
 
-<span data-ttu-id="4c9c7-106">*Ausdruck* . Schließen Sie</span><span class="sxs-lookup"><span data-stu-id="4c9c7-106">*expression* .Close</span></span>
+<span data-ttu-id="83fb8-106">*Ausdruck* . Schließen</span><span class="sxs-lookup"><span data-stu-id="83fb8-106">*expression* .Close</span></span>
 
-<span data-ttu-id="4c9c7-107">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="4c9c7-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="83fb8-107">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="83fb8-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="4c9c7-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4c9c7-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="83fb8-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="83fb8-108">Remarks</span></span>
 
-<span data-ttu-id="4c9c7-109">Ist das **QueryDef**-Objekt beim Verwenden von **Close** bereits geschlossen, tritt ein Laufzeitfehler auf.</span><span class="sxs-lookup"><span data-stu-id="4c9c7-109">If the **QueryDef** object is already closed when you use **Close**, a run-time error occurs.</span></span>
+<span data-ttu-id="83fb8-109">Ist das **QueryDef**-Objekt beim Verwenden von **Close** bereits geschlossen, tritt ein Laufzeitfehler auf.</span><span class="sxs-lookup"><span data-stu-id="83fb8-109">If the **QueryDef** object is already closed when you use **Close**, a run-time error occurs.</span></span>
 
-<span data-ttu-id="4c9c7-110">Eine Alternative für die **Close** -Methode den Wert einer Objektvariable auf **Nothing** festgelegt ist (Set DbsTemp = Nothing).</span><span class="sxs-lookup"><span data-stu-id="4c9c7-110">An alternative to the **Close** method is to set the value of an object variable to **Nothing** (Set dbsTemp = Nothing).</span></span>
+<span data-ttu-id="83fb8-110">Eine Alternative zur **Schließ** -Methode besteht darin, den Wert einer Objektvariable auf **Nothing** festzulegen (Set dbsTemp = Nothing).</span><span class="sxs-lookup"><span data-stu-id="83fb8-110">An alternative to the **Close** method is to set the value of an object variable to **Nothing** (Set dbsTemp = Nothing).</span></span>
 

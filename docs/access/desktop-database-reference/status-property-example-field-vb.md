@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 68583b1ee211802a3cade63e85f0f62bbf3cb686
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308505"
 ---
-# <a name="status-property-example-field-vb"></a><span data-ttu-id="2dbf7-102">Status-Eigenschaft (Beispiel) (Field) (VB)</span><span class="sxs-lookup"><span data-stu-id="2dbf7-102">Status property example (Field) (VB)</span></span>
+# <a name="status-property-example-field-vb"></a><span data-ttu-id="4f525-102">Status-Eigenschaft (Beispiel) (Field) (VB)</span><span class="sxs-lookup"><span data-stu-id="4f525-102">Status property example (Field) (VB)</span></span>
 
 
-<span data-ttu-id="2dbf7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2dbf7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4f525-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4f525-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2dbf7-p101">Im folgenden Beispiel wird unter Verwendung des [Internet Publishing-Anbieters](microsoft-ole-db-provider-for-internet-publishing.md) ein Dokument in einem Ordner mit Schreib-/Lesezugriff geöffnet. Die [Status](status-property-ado-field.md)-Eigenschaft eines [Field](field-object-ado.md)-Objekts des [Record](record-object-ado.md)-Objekts wird auf **adFieldPendingInsert** festgelegt und dann auf **adFieldOk** aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="2dbf7-p101">The following example opens a document from a read/write folder using the [Internet Publishing Provider](microsoft-ole-db-provider-for-internet-publishing.md). The [Status](status-property-ado-field.md) property of a [Field](field-object-ado.md) object of the [Record](record-object-ado.md) will first be set to **adFieldPendingInsert**, then be updated to **adFieldOk**.</span></span>
+<span data-ttu-id="4f525-p101">Im folgenden Beispiel wird unter Verwendung des [Internet Publishing-Anbieters](microsoft-ole-db-provider-for-internet-publishing.md) ein Dokument in einem Ordner mit Schreib-/Lesezugriff geöffnet. Die [Status](status-property-ado-field.md)-Eigenschaft eines [Field](field-object-ado.md)-Objekts des [Record](record-object-ado.md)-Objekts wird auf **adFieldPendingInsert** festgelegt und dann auf **adFieldOk** aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="4f525-p101">The following example opens a document from a read/write folder using the [Internet Publishing Provider](microsoft-ole-db-provider-for-internet-publishing.md). The [Status](status-property-ado-field.md) property of a [Field](field-object-ado.md) object of the [Record](record-object-ado.md) will first be set to **adFieldPendingInsert**, then be updated to **adFieldOk**.</span></span>
 
 ```vb
     'BeginStatusFieldVB
@@ -78,7 +78,7 @@ ms.locfileid: "28720968"
 
 <br/>
 
-<span data-ttu-id="2dbf7-p102">Im folgenden Beispiel wird ein bekanntes **Field** -Objekt aus einem in einem Dokument geöffneten **Record** -Objekt gelöscht. Die **Status** -Eigenschaft wird zuerst auf **adFieldOK** und dann auf **adFieldPendingUnknown** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="2dbf7-p102">The following example deletes a known **Field** from a **Record** opened from a document. The **Status** property will first be set to **adFieldOK**, then **adFieldPendingUnknown**.</span></span>
+<span data-ttu-id="4f525-p102">Im folgenden Beispiel wird ein bekanntes **Field** -Objekt aus einem in einem Dokument geöffneten **Record** -Objekt gelöscht. Die **Status** -Eigenschaft wird zuerst auf **adFieldOK** und dann auf **adFieldPendingUnknown** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="4f525-p102">The following example deletes a known **Field** from a **Record** opened from a document. The **Status** property will first be set to **adFieldOK**, then **adFieldPendingUnknown**.</span></span>
 
 ```vb
     'BeginStatusField2VB
@@ -132,7 +132,7 @@ ms.locfileid: "28720968"
 
 <br/>
 
-<span data-ttu-id="2dbf7-p103">Der folgende Code löscht ein **Field** -Objekt aus einem **Record** -Objekt, das in einem schreibgeschützten Dokument geöffnet ist. Die **Status** -Eigenschaft wird auf **adFieldPendingDelete** festgelegt. Mit [Update](update-method-ado.md) schlägt der Löschvorgang fehl, und die **Status** -Eigenschaft lautet **adFieldPendingDelete** plus **adFieldPermissionDenied**. [CancelUpdate](cancelupdate-method-ado.md) löscht die ausstehende **Status** -Einstellung.</span><span class="sxs-lookup"><span data-stu-id="2dbf7-p103">The following code deletes a **Field** from a **Record** opened on a read-only document. **Status** will be set to **adFieldPendingDelete**. At [Update](update-method-ado.md), the delete will fail and **Status** will be **adFieldPendingDelete** plus **adFieldPermissionDenied**. [CancelUpdate](cancelupdate-method-ado.md) clears the pending **Status** setting.</span></span>
+<span data-ttu-id="4f525-p103">Der folgende Code löscht ein **Field** -Objekt aus einem **Record** -Objekt, das in einem schreibgeschützten Dokument geöffnet ist. Die **Status** -Eigenschaft wird auf **adFieldPendingDelete** festgelegt. Mit [Update](update-method-ado.md) schlägt der Löschvorgang fehl, und die **Status** -Eigenschaft lautet **adFieldPendingDelete** plus **adFieldPermissionDenied**. [CancelUpdate](cancelupdate-method-ado.md) löscht die ausstehende **Status** -Einstellung.</span><span class="sxs-lookup"><span data-stu-id="4f525-p103">The following code deletes a **Field** from a **Record** opened on a read-only document. **Status** will be set to **adFieldPendingDelete**. At [Update](update-method-ado.md), the delete will fail and **Status** will be **adFieldPendingDelete** plus **adFieldPermissionDenied**. [CancelUpdate](cancelupdate-method-ado.md) clears the pending **Status** setting.</span></span>
 
 ```vb
     Sub Main()

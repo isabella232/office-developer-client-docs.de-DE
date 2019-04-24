@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 138364f58024f20d547a898ef4c0c00d4bd7893d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308610"
 ---
-# <a name="sort-property-example-vj"></a><span data-ttu-id="bc817-102">Sort-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="bc817-102">Sort property example (VJ++)</span></span>
+# <a name="sort-property-example-vj"></a><span data-ttu-id="e5fb9-102">Sort-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="e5fb9-102">Sort property example (VJ++)</span></span>
 
 
-<span data-ttu-id="bc817-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="bc817-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e5fb9-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e5fb9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="bc817-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="bc817-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database. A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="e5fb9-104">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt.</span><span class="sxs-lookup"><span data-stu-id="e5fb9-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="e5fb9-105">Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="e5fb9-105">A secondary utility routine prints each row.</span></span>
 
 ```java 
  

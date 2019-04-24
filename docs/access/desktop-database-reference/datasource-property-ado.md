@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0dec30715d1eb4e31d7490db4cedd015ecf3c040
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294470"
 ---
-# <a name="datasource-property-ado"></a><span data-ttu-id="7d8eb-102">DataSource-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="7d8eb-102">DataSource property (ADO)</span></span>
+# <a name="datasource-property-ado"></a><span data-ttu-id="dd3de-102">DataSource-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="dd3de-102">DataSource property (ADO)</span></span>
 
 
-<span data-ttu-id="7d8eb-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7d8eb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="dd3de-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dd3de-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7d8eb-104">Gibt ein Objekt an, das als [Recordset](recordset-object-ado.md)-Objekt darzustellende Daten enthält.</span><span class="sxs-lookup"><span data-stu-id="7d8eb-104">Indicates an object that contains data to be represented as a [Recordset](recordset-object-ado.md) object.</span></span>
+<span data-ttu-id="dd3de-104">Gibt ein Objekt an, das als [Recordset](recordset-object-ado.md)-Objekt darzustellende Daten enthält.</span><span class="sxs-lookup"><span data-stu-id="dd3de-104">Indicates an object that contains data to be represented as a [Recordset](recordset-object-ado.md) object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="7d8eb-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7d8eb-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dd3de-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="dd3de-105">Remarks</span></span>
 
-<span data-ttu-id="7d8eb-p101">Mithilfe dieser Eigenschaft werden datengebundene Steuerelemente mit der Datenumgebung erstellt. Die Datenumgebung verwaltet Datensammlungen (Datenquellen), die benannte Objekte (*Datenelemente*) enthalten und als **Recordset**-Objekt dargestellt werden.\*\*</span><span class="sxs-lookup"><span data-stu-id="7d8eb-p101">This property is used to create data-bound controls with the Data Environment. The Data Environment maintains collections of data (data sources) containing named objects (*data members*) that will be represented as a **Recordset** object *.*</span></span>
+<span data-ttu-id="dd3de-p101">Mithilfe dieser Eigenschaft werden datengebundene Steuerelemente mit der Datenumgebung erstellt. Die Datenumgebung verwaltet Datensammlungen (Datenquellen), die benannte Objekte (*Datenelemente*) enthalten und als **Recordset**-Objekt dargestellt werden.\*\*</span><span class="sxs-lookup"><span data-stu-id="dd3de-p101">This property is used to create data-bound controls with the Data Environment. The Data Environment maintains collections of data (data sources) containing named objects (*data members*) that will be represented as a **Recordset** object *.*</span></span>
 
-<span data-ttu-id="7d8eb-108">Die Eigenschaften [DataMember](datamember-property-ado.md) und **DataSource** müssen in Kombination verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="7d8eb-108">The [DataMember](datamember-property-ado.md) and **DataSource** properties must be used in conjunction.</span></span>
+<span data-ttu-id="dd3de-108">Die Eigenschaften [DataMember](datamember-property-ado.md) und **DataSource** müssen in Kombination verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="dd3de-108">The [DataMember](datamember-property-ado.md) and **DataSource** properties must be used in conjunction.</span></span>
 
-<span data-ttu-id="7d8eb-109">Das Objekt, auf das verwiesen wird, muss die **IDataSource** -Schnittstelle implementieren und eine **IRowset** -Schnittstelle enthalten.</span><span class="sxs-lookup"><span data-stu-id="7d8eb-109">The object referenced must implement the **IDataSource** interface and must contain an **IRowset** interface.</span></span>
+<span data-ttu-id="dd3de-109">Das Objekt, auf das verwiesen wird, muss die **IDataSource** -Schnittstelle implementieren und eine **IRowset** -Schnittstelle enthalten.</span><span class="sxs-lookup"><span data-stu-id="dd3de-109">The object referenced must implement the **IDataSource** interface and must contain an **IRowset** interface.</span></span>
 
-<span data-ttu-id="7d8eb-110">**Verwendung**</span><span class="sxs-lookup"><span data-stu-id="7d8eb-110">**Usage**</span></span>
+<span data-ttu-id="dd3de-110">**Verwendung**</span><span class="sxs-lookup"><span data-stu-id="dd3de-110">**Usage**</span></span>
 
 ```vb
     Dim rs as New ADODB.Recordset

@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5917e3b86c373d86cad59f3ad9f2bcbba83c40d0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295639"
 ---
-# <a name="containername-property-dao"></a><span data-ttu-id="d4897-102">Container.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="d4897-102">Container.Name property (DAO)</span></span>
+# <a name="containername-property-dao"></a><span data-ttu-id="22332-102">Container.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="22332-102">Container.Name property (DAO)</span></span>
 
 
-<span data-ttu-id="d4897-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d4897-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="22332-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="22332-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="d4897-p101">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter **String**-Wert.</span><span class="sxs-lookup"><span data-stu-id="d4897-p101">Returns the name of the specified object. Read-only **String**.</span></span>
+<span data-ttu-id="22332-104">Gibt den Namen des angegebenen Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="22332-104">Returns the name of the specified object.</span></span> <span data-ttu-id="22332-105">Schreibgeschützter **String**-Wert.</span><span class="sxs-lookup"><span data-stu-id="22332-105">Read-only **String**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d4897-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="d4897-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="22332-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="22332-106">Syntax</span></span>
 
-<span data-ttu-id="d4897-107">*Ausdruck* . Name</span><span class="sxs-lookup"><span data-stu-id="d4897-107">*expression* .Name</span></span>
+<span data-ttu-id="22332-107">*Ausdruck* . Namen</span><span class="sxs-lookup"><span data-stu-id="22332-107">*expression* .Name</span></span>
 
-<span data-ttu-id="d4897-108">*Ausdruck* Eine Variable, die ein **Container** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="d4897-108">*expression* A variable that represents a **Container** object.</span></span>
+<span data-ttu-id="22332-108">*Ausdruck* Eine Variable, die ein **Container** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="22332-108">*expression* A variable that represents a **Container** object.</span></span>
 

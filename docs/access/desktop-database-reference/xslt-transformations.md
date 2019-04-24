@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7120ec08a6a222293fc53c5a98f62c50fd5b3621
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302471"
 ---
-# <a name="xslt-transformations"></a><span data-ttu-id="8b2ee-102">XSLT-Transformationen</span><span class="sxs-lookup"><span data-stu-id="8b2ee-102">XSLT transformations</span></span>
+# <a name="xslt-transformations"></a><span data-ttu-id="72ddc-102">XSLT-Transformationen</span><span class="sxs-lookup"><span data-stu-id="72ddc-102">XSLT transformations</span></span>
 
 
-<span data-ttu-id="8b2ee-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8b2ee-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="72ddc-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="72ddc-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="xslt-transformations"></a><span data-ttu-id="8b2ee-104">XSLT</span><span class="sxs-lookup"><span data-stu-id="8b2ee-104">XSLT Transformations</span></span>
+## <a name="xslt-transformations"></a><span data-ttu-id="72ddc-104">XSLT</span><span class="sxs-lookup"><span data-stu-id="72ddc-104">XSLT Transformations</span></span>
 
-<span data-ttu-id="8b2ee-p101">XSLT kann auf den generierten XML-Code angewandt werden, um ihn in ein anderes Format zu transformieren. Die Kenntnis des XML-Formats in ADO hilft bei der Entwicklung von XSLT-Vorlagen, mit denen die Transformierung in ein benutzerfreundlicheres Format möglich ist.</span><span class="sxs-lookup"><span data-stu-id="8b2ee-p101">XSLT can be applied to the generated XML to transform it into another format. Understanding the XML format in ADO helps in developing XSLT templates that can transform it into a more user-friendly form.</span></span>
+<span data-ttu-id="72ddc-p101">XSLT kann auf den generierten XML-Code angewandt werden, um ihn in ein anderes Format zu transformieren. Die Kenntnis des XML-Formats in ADO hilft bei der Entwicklung von XSLT-Vorlagen, mit denen die Transformierung in ein benutzerfreundlicheres Format möglich ist.</span><span class="sxs-lookup"><span data-stu-id="72ddc-p101">XSLT can be applied to the generated XML to transform it into another format. Understanding the XML format in ADO helps in developing XSLT templates that can transform it into a more user-friendly form.</span></span>
 
-<span data-ttu-id="8b2ee-p102">Beispielsweise wissen Sie, dass jede Zeile des Recordset-Objekts als z:row-Element im rs:data-Element gespeichert wird. Entsprechend wird jedes Feld des Recordset-Objekts als Attribut/Wert-Paar für dieses Element gespeichert.</span><span class="sxs-lookup"><span data-stu-id="8b2ee-p102">For example, you know that each row of the **Recordset** is saved as the z:row element inside the rs:data element. Similarly, each field of the **Recordset** is saved as an attribute-value pair for this element.</span></span>
+<span data-ttu-id="72ddc-p102">For example, you know that each row of the **Recordset** is saved as the z:row element inside the rs:data element. Similarly, each field of the **Recordset** is saved as an attribute-value pair for this element.</span><span class="sxs-lookup"><span data-stu-id="72ddc-p102">For example, you know that each row of the **Recordset** is saved as the z:row element inside the rs:data element. Similarly, each field of the **Recordset** is saved as an attribute-value pair for this element.</span></span>
 
-<span data-ttu-id="8b2ee-109">Das folgende XSLT-Skript kann auf den im vorherigen Abschnitt gezeigten XML-Code angewandt werden, um ihn in eine HTML-Tabelle zu transformieren, die im Browser angezeigt wird:</span><span class="sxs-lookup"><span data-stu-id="8b2ee-109">The following XSLT script can be applied to the XML shown in the previous section to transform it into an HTML table to be displayed in the browser:</span></span>
+<span data-ttu-id="72ddc-109">Das folgende XSLT-Skript kann auf den im vorherigen Abschnitt gezeigten XML-Code angewandt werden, um ihn in eine HTML-Tabelle zu transformieren, die im Browser angezeigt wird:</span><span class="sxs-lookup"><span data-stu-id="72ddc-109">The following XSLT script can be applied to the XML shown in the previous section to transform it into an HTML table to be displayed in the browser:</span></span>
 
 ```xml 
  
@@ -52,5 +52,5 @@ ms.locfileid: "28722599"
 </html> 
 ```
 
-<span data-ttu-id="8b2ee-p103">XSLT konvertiert den von der **Save** -Methode von ADO generierten XML-Datenstrom in eine HTML-Tabelle, in der jedes Feld des **Recordset** -Objekts zusammen mit einer Tabellenüberschrift angezeigt wird. Tabellenüberschriften und Zeilen werden außerdem unterschiedliche Schriftarten und Farben zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="8b2ee-p103">The XSLT converts the XML stream generated by the ADO **Save** method into an HTML table which displays each field of the **Recordset** along with a table heading. Table headings and rows also are assigned different fonts and colors.</span></span>
+<span data-ttu-id="72ddc-p103">XSLT konvertiert den von der **Save** -Methode von ADO generierten XML-Datenstrom in eine HTML-Tabelle, in der jedes Feld des **Recordset** -Objekts zusammen mit einer Tabellenüberschrift angezeigt wird. Tabellenüberschriften und Zeilen werden außerdem unterschiedliche Schriftarten und Farben zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="72ddc-p103">The XSLT converts the XML stream generated by the ADO **Save** method into an HTML table which displays each field of the **Recordset** along with a table heading. Table headings and rows also are assigned different fonts and colors.</span></span>
 

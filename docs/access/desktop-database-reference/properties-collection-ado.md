@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 1d64f879f6a65226656bd510703e8b5b0ac8f71a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301295"
 ---
-# <a name="properties-collection-ado"></a><span data-ttu-id="8cd44-102">Properties-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="8cd44-102">Properties collection (ADO)</span></span>
+# <a name="properties-collection-ado"></a><span data-ttu-id="35954-102">Properties-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="35954-102">Properties collection (ADO)</span></span>
 
-<span data-ttu-id="8cd44-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8cd44-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="35954-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="35954-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8cd44-104">Enthält alle [Property](property-object-ado.md)-Objekte für eine bestimmte Instanz eines Objekts.</span><span class="sxs-lookup"><span data-stu-id="8cd44-104">Contains all the [Property](property-object-ado.md) objects for a specific instance of an object.</span></span>
+<span data-ttu-id="35954-104">Enthält alle [Property](property-object-ado.md)-Objekte für eine bestimmte Instanz eines Objekts.</span><span class="sxs-lookup"><span data-stu-id="35954-104">Contains all the [Property](property-object-ado.md) objects for a specific instance of an object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8cd44-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="8cd44-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="35954-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="35954-105">Remarks</span></span>
 
-<span data-ttu-id="8cd44-p101">Einige ADO-Objekte haben eine **Properties** -Auflistung, die **Property** -Objekte enthält. Jedes **Property** -Objekt entspricht einem Merkmal des ADO-Objekts, das spezifisch für den Anbieter ist.</span><span class="sxs-lookup"><span data-stu-id="8cd44-p101">Some ADO objects have a **Properties** collection made up of **Property** objects. Each **Property** object corresponds to a characteristic of the ADO object specific to the provider.</span></span>
+<span data-ttu-id="35954-p101">Einige ADO-Objekte haben eine **Properties**-Auflistung, die **Property**-Objekte enthält. Jedes **Property**-Objekt entspricht einem Merkmal des ADO-Objekts, das spezifisch für den Anbieter ist.</span><span class="sxs-lookup"><span data-stu-id="35954-p101">Some ADO objects have a **Properties** collection made up of **Property** objects. Each **Property** object corresponds to a characteristic of the ADO object specific to the provider.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8cd44-108">[!HINWEIS] Detaillierte Hinweise zur Verwendung der [Field](property-object-ado.md) -Objekte finden Sie in der Beschreibung des **Property**-Objekts.</span><span class="sxs-lookup"><span data-stu-id="8cd44-108">See the [Property](property-object-ado.md) object topic for a more detailed explanation of how to use **Property** objects.</span></span>
+> <span data-ttu-id="35954-108">[!HINWEIS] Detaillierte Hinweise zur Verwendung der [Field](property-object-ado.md) -Objekte finden Sie in der Beschreibung des **Property**-Objekts.</span><span class="sxs-lookup"><span data-stu-id="35954-108">See the [Property](property-object-ado.md) object topic for a more detailed explanation of how to use **Property** objects.</span></span>
 
-<span data-ttu-id="8cd44-109">Die **Dynamic** -Eigenschaft des **Recordset** -Objekts liegt außerhalb des Gültigkeitsbereichs (d. h. sie wird unverfügbar), wenn das **Recordset** -Objekt geschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="8cd44-109">The **Dynamic Properties** of the **Recordset** object go out of scope (become unavailable) when the **Recordset** is closed.</span></span>
+<span data-ttu-id="35954-109">Die **Dynamic**-Eigenschaft des **Recordset**-Objekts liegt außerhalb des Gültigkeitsbereichs (d. h. sie wird unverfügbar), wenn das **Recordset**-Objekt geschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="35954-109">The **Dynamic Properties** of the **Recordset** object go out of scope (become unavailable) when the **Recordset** is closed.</span></span>
 

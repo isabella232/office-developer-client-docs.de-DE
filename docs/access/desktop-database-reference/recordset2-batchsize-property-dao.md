@@ -1,5 +1,5 @@
 ---
-title: Recordset2.BatchSize-Eigenschaft (DAO)
+title: Recordset2. BatchSize-Eigenschaft (DAO)
 TOCTitle: BatchSize Property
 ms:assetid: fa7f12f6-36c8-5aad-31d2-668cfe46f9f7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837054(v=office.15)
@@ -8,30 +8,30 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f615823f99e2fdaa50a051d89a90c8f85a6ec841
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307469"
 ---
-# <a name="recordset2batchsize-property-dao"></a><span data-ttu-id="f8841-102">Recordset2.BatchSize-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="f8841-102">Recordset2.BatchSize property (DAO)</span></span>
+# <a name="recordset2batchsize-property-dao"></a><span data-ttu-id="76ece-102">Recordset2. BatchSize-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="76ece-102">Recordset2.BatchSize property (DAO)</span></span>
 
 
-<span data-ttu-id="f8841-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f8841-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="76ece-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="76ece-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f8841-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="f8841-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="76ece-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="76ece-104">Syntax</span></span>
 
-<span data-ttu-id="f8841-105">*Ausdruck* . BatchSize</span><span class="sxs-lookup"><span data-stu-id="f8841-105">*expression* .BatchSize</span></span>
+<span data-ttu-id="76ece-105">*Ausdruck* . BatchSize</span><span class="sxs-lookup"><span data-stu-id="76ece-105">*expression* .BatchSize</span></span>
 
-<span data-ttu-id="f8841-106">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f8841-106">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="76ece-106">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="76ece-106">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="f8841-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f8841-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="76ece-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="76ece-107">Remarks</span></span>
 
-<span data-ttu-id="f8841-p101">Die **BatchSize**-Eigenschaft stellt die Batchgröße fest, die beim Senden von Anweisungen an den Server bei einer Batchaktualisierung verwendet wurde. Der Wert der Eigenschaft gibt die Anzahl der Anweisungen an, die in einem Befehlspuffer an den Server gesendet wurden. Standardmäßig werden in jedem Batch 15 Anweisungen an den Server gesendet. Diese Eigenschaft kann jederzeit geändert werden. Wenn ein Datenbankserver die Batchverarbeitung von Anweisungen nicht unterstützt, können Sie diese Eigenschaft auf 1 setzen, sodass jede Anweisung einzeln gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="f8841-p101">The **BatchSize** property determines the batch size used when sending statements to the server in a batch update. The value of the property determines the number of statements sent to the server in one command buffer. By default, 15 statements are sent to the server in each batch. This property can be changed at any time. If a database server doesn't support statement batching, you can set this property to 1, causing each statement to be sent separately.</span></span>
+<span data-ttu-id="76ece-p101">Die **BatchSize**-Eigenschaft stellt die Batchgröße fest, die beim Senden von Anweisungen an den Server bei einer Batchaktualisierung verwendet wurde. Der Wert der Eigenschaft gibt die Anzahl der Anweisungen an, die in einem Befehlspuffer an den Server gesendet wurden. Standardmäßig werden in jedem Batch 15 Anweisungen an den Server gesendet. Diese Eigenschaft kann jederzeit geändert werden. Wenn ein Datenbankserver die Batchverarbeitung von Anweisungen nicht unterstützt, können Sie diese Eigenschaft auf 1 setzen, sodass jede Anweisung einzeln gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="76ece-p101">The **BatchSize** property determines the batch size used when sending statements to the server in a batch update. The value of the property determines the number of statements sent to the server in one command buffer. By default, 15 statements are sent to the server in each batch. This property can be changed at any time. If a database server doesn't support statement batching, you can set this property to 1, causing each statement to be sent separately.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f8841-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f8841-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="76ece-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="76ece-113">Example</span></span>
 
-<span data-ttu-id="f8841-114">In diesem Beispiel werden die Eigenschaften **BatchSize** und **UpdateOptions** verwendet, um Aspekte von Batchaktualisierungen für das angegebene Recordset-Objekt zu steuern.</span><span class="sxs-lookup"><span data-stu-id="f8841-114">This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.</span></span>
+<span data-ttu-id="76ece-114">This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.</span><span class="sxs-lookup"><span data-stu-id="76ece-114">This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.</span></span>
 
 ```vb
 Sub BatchSizeX() 

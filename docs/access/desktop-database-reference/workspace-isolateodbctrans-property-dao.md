@@ -1,5 +1,5 @@
 ---
-title: Workspace.IsolateODBCTrans-Eigenschaft (DAO)
+title: Workspace. IsolateODBCTrans-Eigenschaft (DAO)
 TOCTitle: IsolateODBCTrans Property
 ms:assetid: f7a48358-870b-cad3-d4ef-e46b50428e12
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836924(v=office.15)
@@ -12,28 +12,28 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 781679dfbd4050cfde219802db4cd9e1544d83ae
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302513"
 ---
-# <a name="workspaceisolateodbctrans-property-dao"></a><span data-ttu-id="11341-102">Workspace.IsolateODBCTrans-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="11341-102">Workspace.IsolateODBCTrans property (DAO)</span></span>
+# <a name="workspaceisolateodbctrans-property-dao"></a><span data-ttu-id="46a1a-102">Workspace. IsolateODBCTrans-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="46a1a-102">Workspace.IsolateODBCTrans property (DAO)</span></span>
 
 
-<span data-ttu-id="11341-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="11341-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="46a1a-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="46a1a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="11341-104">Legt einen Wert fest, der angibt, ob mehrere Transaktionen, die dieselbe mit der Microsoft Access-Datenbank-Engine verbundene ODBC-Datenquelle verwenden, isoliert sind, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="11341-104">Sets or returns a value that indicates whether multiple transactiond that involve the same Microsoft Access database engine-connected ODBC data source are isolated (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="46a1a-104">Legt einen Wert fest, der angibt, ob mehrere Transaktionen, die dieselbe mit der Microsoft Access-Datenbank-Engine verbundene ODBC-Datenquelle verwenden, isoliert sind, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="46a1a-104">Sets or returns a value that indicates whether multiple transactiond that involve the same Microsoft Access database engine-connected ODBC data source are isolated (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="11341-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="11341-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="46a1a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="46a1a-105">Syntax</span></span>
 
-<span data-ttu-id="11341-106">*Ausdruck* . IsolateODBCTrans</span><span class="sxs-lookup"><span data-stu-id="11341-106">*expression* .IsolateODBCTrans</span></span>
+<span data-ttu-id="46a1a-106">*Ausdruck* . IsolateODBCTrans</span><span class="sxs-lookup"><span data-stu-id="46a1a-106">*expression* .IsolateODBCTrans</span></span>
 
-<span data-ttu-id="11341-107">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="11341-107">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="46a1a-107">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="46a1a-107">*expression* A variable that represents a **Workspace** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="11341-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="11341-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="46a1a-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="46a1a-108">Remarks</span></span>
 
-<span data-ttu-id="11341-p101">Es gibt Situationen, in denen mehrere gleichzeitige Transaktionen für dieselbe ODBC-Verbindung zur Verarbeitung anstehen müssen. Hierzu müssen Sie für jede Transaktion ein eigenes **Workspace**-Objekt öffnen. Wenngleich jedes **Workspace**-Objekt seine eigene ODBC-Verbindung zur Datenbank haben kann, wird dadurch die Systemleistung beeinträchtigt. Da gewöhnlich keine Transaktionsisolation erforderlich ist, können ODBC-Verbindungen von mehreren **Workspace**-Objekten, die von einem Benutzer geöffnet wurden, standardmäßig gemeinsam verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="11341-p101">In some situations, you need to have multiple simultaneous transactions pending on the same ODBC connection. To do this, you need to open a separate **Workspace** for each transaction. Although each **Workspace** can have its own ODBC connection to the database, this slows system performance. Because transaction isolation isn't usually required, ODBC connections from multiple **Workspace** objects opened by the same user are shared by default.</span></span>
+<span data-ttu-id="46a1a-p101">Es gibt Situationen, in denen mehrere gleichzeitige Transaktionen für dieselbe ODBC-Verbindung zur Verarbeitung anstehen müssen. Hierzu müssen Sie für jede Transaktion ein eigenes **Workspace**-Objekt öffnen. Wenngleich jedes **Workspace**-Objekt seine eigene ODBC-Verbindung zur Datenbank haben kann, wird dadurch die Systemleistung beeinträchtigt. Da gewöhnlich keine Transaktionsisolation erforderlich ist, können ODBC-Verbindungen von mehreren **Workspace**-Objekten, die von einem Benutzer geöffnet wurden, standardmäßig gemeinsam verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="46a1a-p101">In some situations, you need to have multiple simultaneous transactions pending on the same ODBC connection. To do this, you need to open a separate **Workspace** for each transaction. Although each **Workspace** can have its own ODBC connection to the database, this slows system performance. Because transaction isolation isn't usually required, ODBC connections from multiple **Workspace** objects opened by the same user are shared by default.</span></span>
 
-<span data-ttu-id="11341-p102">Einige ODBC-Server, wie etwa Microsoft SQL Server, gestatten keine gleichzeitigen Transaktionen über eine einzelne Verbindung. Wenn in einer solchen Datenbank mehrere Transaktionen gleichzeitig ausstehen, legen Sie für jedes **Workspace**-Objekt sofort nach dem Öffnen den Wert der **IsolateODBCTrans**-Eigenschaft auf **True** fest. Dadurch wird für jedes **Workspace**-Objekt eine separate ODBC-Verbindung erzwungen.</span><span class="sxs-lookup"><span data-stu-id="11341-p102">Some ODBC servers, such as Microsoft SQL Server, don't allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the **IsolateODBCTrans** property to **True** on each **Workspace** as soon as you open it. This forces a separate ODBC connection for each **Workspace**.</span></span>
+<span data-ttu-id="46a1a-p102">Einige ODBC-Server, wie etwa Microsoft SQL Server, gestatten keine gleichzeitigen Transaktionen über eine einzelne Verbindung. Wenn in einer solchen Datenbank mehrere Transaktionen gleichzeitig ausstehen, legen Sie für jedes **Workspace**-Objekt sofort nach dem Öffnen den Wert der **IsolateODBCTrans**-Eigenschaft auf **True** fest. Dadurch wird für jedes **Workspace**-Objekt eine separate ODBC-Verbindung erzwungen.</span><span class="sxs-lookup"><span data-stu-id="46a1a-p102">Some ODBC servers, such as Microsoft SQL Server, don't allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the **IsolateODBCTrans** property to **True** on each **Workspace** as soon as you open it. This forces a separate ODBC connection for each **Workspace**.</span></span>
 

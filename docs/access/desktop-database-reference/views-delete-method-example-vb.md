@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4046c3142721ebb59d0ad467689e92e4ac587d74
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302765"
 ---
-# <a name="views-delete-method-example-vb"></a><span data-ttu-id="9dea7-102">Delete-Methode (Views) (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="9dea7-102">Views Delete method example (VB)</span></span>
+# <a name="views-delete-method-example-vb"></a><span data-ttu-id="4d92f-102">Delete-Methode (Views) (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="4d92f-102">Views Delete method example (VB)</span></span>
 
 
-<span data-ttu-id="9dea7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9dea7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4d92f-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4d92f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9dea7-104">Im folgenden Code wird die Verwendung der [Delete](delete-method-adox-collections.md)-Methode veranschaulicht, um eine Sicht aus dem Katalog zu löschen.</span><span class="sxs-lookup"><span data-stu-id="9dea7-104">The following code shows how to use the [Delete](delete-method-adox-collections.md) method to delete a view from the catalog.</span></span>
+<span data-ttu-id="4d92f-104">Im folgenden Code wird die Verwendung der [Delete](delete-method-adox-collections.md)-Methode veranschaulicht, um eine Sicht aus dem Katalog zu löschen.</span><span class="sxs-lookup"><span data-stu-id="4d92f-104">The following code shows how to use the [Delete](delete-method-adox-collections.md) method to delete a view from the catalog.</span></span>
 
 ```vb 
  
