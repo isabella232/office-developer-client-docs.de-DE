@@ -7,24 +7,24 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 98d4fe3c-3908-4cd2-bfdb-ff1874a80b24
-description: 'Zuletzt geändert: 12 März 2013'
-ms.openlocfilehash: 440c27b019b91ec8c2c02e37850d2768a273559b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte Änderung: 12. März 2013'
+ms.openlocfilehash: d902039fa1081e30947ddd8f70ead9ae7acec06a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356630"
 ---
 # <a name="transport-neutral-encapsulation-format-tnef"></a>Transport-Neutral Encapsulation Format (TNEF)
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-TNEF ist ein Format für die Konvertierung von einem Satz von MAPI-Eigenschaften – eine MAPI-Nachricht – in einen seriellen Datenstrom. Die TNEF-Funktionen werden in erster Linie von Anbietern Transport verwendet, die müssen MAPI-Eigenschaften für die Übertragung über einem messaging-System zu codieren, die diese Eigenschaften nicht direkt unterstützt. Beispielsweise verwendet ein SMTP-basierte Transport TNEF zum Codieren von Eigenschaften wie **PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)), die keine direkte Darstellungen in der Struktur einer SMTP-Nachricht besitzen.
+TNEF ist ein Format zur Konvertierung einer Reihe von MAPI-Eigenschaften – einer MAPI-Nachricht – in einen seriellen Datenstrom. Die TNEF-Funktionen werden in erster Linie von Transportanbietern verwendet, die MAPI-Nachrichteneigenschaften für die Übertragung über ein Messagingsystem codieren müssen, das diese Eigenschaften nicht direkt unterstützt. Beispielsweise verwendet ein SMTP-basierter Transport TNEF zum Codieren von Eigenschaften wie **PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)), die keine direkten Darstellungen in der Struktur einer SMTP-Nachricht aufweisen.
   
-Die TNEF-Implementierung definiert mehrere TNEF-spezifische Attribute, von die jedes eine bestimmte MAPI-Eigenschaft entspricht. Diese Attribute werden verwendet, um ihre jeweiligen MAPI-Eigenschaften in die TNEF-Stream codieren. Darüber hinaus ist ein spezielles Attribut definiert, die zum Kapseln von MAPI-Eigenschaften, die ein bestimmtes Attribut, es entspricht nicht verwendet werden können. Der Grund dafür, diese Attribute definiert werden – anstatt einfach eine einheitliche Codierungsverfahren für alle MAPI-Eigenschaften – Abwärtskompatibilität mit nicht-MAPI-kompatible Software zu aktivieren, die die TNEF verwendet wird.
+Die TNEF-Implementierung definiert mehrere TNEF-spezifische Attribute, die jeweils einer bestimmten MAPI-Eigenschaft entsprechen. Diese Attribute werden verwendet, um ihre jeweiligen MAPI-Eigenschaften in den TNEF-Stream zu codieren. Darüber hinaus wird ein spezielles Attribut definiert, mit dem alle MAPI-Eigenschaften gekapselt werden können, die nicht über ein bestimmtes Attribut entsprechen. Der Grund dafür, dass diese Attribute definiert werden, besteht darin, statt einfach eine einheitliche Codierungsmethode für alle MAPI-Eigenschaften zu verwenden, die Abwärtskompatibilität mit nicht-MAPI-kompatiblen Software zu aktivieren, die TNEF verwendet.
   
-Der Rest dieses Abschnitts wird die Struktur und Syntax von TNEF-Stream, der Zuordnung zwischen MAPI-Eigenschaften und TNEF-Attribute und wichtige Überlegungen für bestimmte TNEF-Attribute beschrieben.
+Im restlichen Teil dieses Abschnitts werden die Struktur und Syntax eines TNEF-Streams, die Zuordnung zwischen MAPI-Eigenschaften und TNEF-Attributen sowie wichtige Überlegungen zu bestimmten TNEF-Attributen beschrieben.
   
 

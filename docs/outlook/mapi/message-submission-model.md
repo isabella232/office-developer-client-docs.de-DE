@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenübermittlungsmodell
+title: Nachrichten Übermittlungs Modell
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: 4bcd19f6-c225-43ac-8c27-c46388e9097a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8cb34360f5a0a3e67aca1ac53fe639724135f594
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 090a765fd6c758e5f146caa0e7f36276b052f69e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356875"
 ---
-# <a name="message-submission-model"></a>Nachrichtenübermittlungsmodell
+# <a name="message-submission-model"></a>Nachrichten Übermittlungs Modell
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachrichtenübermittlung wird durch eine Reihe von Aufrufen aus die MAPI-Warteschlange der Adressbuchhierarchie erreicht. Die Anrufe sind wie folgt berechnet:
+Die Nachrichtenübermittlung erfolgt über eine Reihe von Anrufen vom MAPI-Spooler an den Transportanbieter. Die Anrufe werden wie folgt sequenziert:
   
-1. Die MAPI-Warteschlange ruft [IXPLogon::SubmitMessage](ixplogon-submitmessage.md), und übergeben eine [IMessage: IMAPIProp](imessageimapiprop.md) -Instanz, um den zu starten. 
+1. Der MAPI-Spooler ruft [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md)auf und übergibt eine [IMessage: IMAPIProp](imessageimapiprop.md) -Instanz, um den Prozess zu beginnen. 
     
-2. Der Transportdienst anschließend wird der Verweiswert – ein Transport-definierten Bezeichner verwendet in Zukunft Verweise auf diese Meldung – am Speicherort in **SubmitMessage**verwiesen wird.
+2. Der Transportanbieter platziert dann einen Verweiswert – einen Transport definierten Bezeichner, der in zukünftigen verweisen auf diese Nachricht verwendet wird – an dem Speicherort, auf den in **SubmitMessage**verwiesen wird.
     
-3. Der Transportdienst greift auf die Nachrichtendaten mithilfe der übergebenen **IMessage** -Instanz. Für jeden Empfänger in übergebenen **IMessage** für die Verantwortung zulässt, der Adressbuchhierarchie wird die **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))-Eigenschaft, und gibt dann zurück.
+3. Der Transportanbieter greift mithilfe der übergebenen **IMessage** -Instanz auf die Nachrichtendaten zu. Für jeden Empfänger im übergebenen **IMessage** , für den er die Verantwortung übernimmt, legt der Transportanbieter die **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft fest und gibt dann zurück.
     
-4. Der Transportdienst kann die [IMAPISupport::StatusRecips](imapisupport-statusrecips.md) -Methode verwenden, um anzugeben, ob er erkennt alle Empfänger, die nicht zugestellt werden können, oder erstellen Sie einen standard-Delivery Report. **StatusRecips** ist eine Vereinfachung für Transportanbieter, die bestimmt haben, dass einige Empfänger an übermittelt werden kann oder, von deren zugrunde liegenden messaging-System, die die Benutzer oder eine Client-Anwendung kann die Übermittlungsinformationen empfangen hilfreich sein. 
+4. Der Transportanbieter kann die [IMAPISupport:: StatusRecips](imapisupport-statusrecips.md) -Methode verwenden, um anzugeben, ob Empfänger erkannt werden, an die nicht übermittelt werden kann, oder einen Standard Zustellungsbericht zu erstellen. **StatusRecips** ist eine Bequemlichkeit für Transportanbieter, die festgestellt haben, dass einige der Empfänger nicht zugestellt werden können oder die Zustellungsinformationen aus dem zugrunde liegenden Messagingsystem erhalten haben, das der Benutzer oder die Clientanwendung möglicherweise hilfreich. 
     
-5. Die MAPI-Warteschlange Aufruf von [IXPLogon::EndMessage](ixplogon-endmessage.md) ist die endgültige Verantwortung Übergabe für eine Nachricht aus der Warteschlange MAPI an der Adressbuchhierarchie. 
+5. Der Aufruf des MAPI-Spoolers an [IXPLogon:: EndMessage](ixplogon-endmessage.md) ist die abschließende Verantwortlichkeit für die Nachricht vom MAPI-Spooler an den Transportanbieter. 
     
-6. Die MAPI-Warteschlange kann [IXPLogon::TransportNotify](ixplogon-transportnotify.md) verwenden, um Nachrichten, die während der **SubmitMessage** oder **EndMessage** Anrufe abzubrechen. 
+6. Der MAPI-Spooler kann [IXPLogon:: TransportNotify](ixplogon-transportnotify.md) verwenden, um die Nachrichtenverarbeitung während der **SubmitMessage** -oder **EndMessage** -Aufrufe abzubrechen. 
     
 

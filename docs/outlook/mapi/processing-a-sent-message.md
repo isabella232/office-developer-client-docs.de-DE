@@ -7,36 +7,36 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 55b3e692-753d-45e9-a40d-22adc81b75da
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bd86e5d06e868ebc540d8eb779c059089045cd8a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 880731bf204778cde21da6cd9024a3ca86c6f6a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351065"
 ---
 # <a name="processing-a-sent-message"></a>Verarbeiten einer gesendeten Nachricht
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ausgehende Nachrichten, nachdem sie gesendet wurden, kann im Postausgang bleiben gesendete Nachrichten-Ordner, in einen Ordner gehalten festgelegte verschoben oder gelöscht. Die Art der Verarbeitung hängt davon ab, unabhängig davon, ob Sie die Nachricht Speichereigenschaften festgelegt haben:
+Ausgehende Nachrichten können, nachdem Sie gesendet wurden, im Ordner Postausgang hinterlassen, in einen Ordner verschoben werden, der für gesendete Nachrichten reserviert oder gelöscht wurde. Die Art der Verarbeitung hängt davon ab, ob Sie die Eigenschaften für den Nachrichtenspeicher festgelegt haben:
   
-- **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) 
+- **PR_DELETE_AFTER_SUBMIT** ([Pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md)) 
     
-- **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) 
+- **PR_SENTMAIL_ENTRYID** ([Pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md)) 
     
- **PR_DELETE_AFTER_SUBMIT** ist eine boolesche Eigenschaft, die andernfalls true zurück, wenn Nachrichten gelöscht werden soll, nachdem sie gesendet werden, und FALSE festgelegt. **PR_SENTMAIL_ENTRYID** ist die Eintrags-ID eines Ordners. Wenn diese Eigenschaft festgelegt ist, sollten Sie gesendete Nachrichten in den Ordner, die von diesem Eintrag Bezeichner dargestellte verschieben. Die gespeicherten Nachrichten in der Regel haben die Identität des letzten Nachrichtenspeichers oder transport-Anbieter dies veranlassen. 
+ **PR_DELETE_AFTER_SUBMIT** ist eine boolesche Eigenschaft, die auf true festgelegt ist, wenn Nachrichten nach dem Senden gelöscht werden sollen, andernfalls false. **PR_SENTMAIL_ENTRYID** ist die Eintrags-ID eines Ordners. Wenn diese Eigenschaft festgelegt ist, sollten Sie gesendete Nachrichten in den Ordner verschieben, der durch diese Eintrags-ID dargestellt wird. Die gespeicherten Nachrichten weisen in der Regel die Identität des letzten Nachrichtenspeichers oder Transportanbieters auf, um Sie zu senden. 
   
-Entweder der anderen, oder keine dieser Eigenschaften sollte Set, jedoch nicht beide. Wenn Sie **PR_SENTMAIL_ENTRYID**festlegen, muss es einen gültigen Eintrag Bezeichner enthalten. 
+Entweder die eine oder die andere oder keine dieser Eigenschaften sollte festgelegt werden, aber nicht beides. Wenn Sie jedoch **PR_SENTMAIL_ENTRYID**festlegen, muss es eine gültige Eintrags-ID enthalten. 
   
-In der folgenden Tabelle wird beschrieben, wie diese Eigenschaften auswirken, was Sie mit gesendete Nachrichten machen.
+In der folgenden Tabelle wird beschrieben, wie sich diese Eigenschaften auf das Verhalten von gesendeten Nachrichten auswirken.
   
 |||
 |:-----|:-----|
-|Wenn weder-Eigenschaft festgelegt ist:  <br/> |Lassen Sie die Nachricht in den Ordner, von dem sie (in der Regel im Ordner Postausgang) gesendet wurde.  <br/> |
-|Wenn **PR_SENTMAIL_ENTRYID** festgelegt ist:  <br/> |Verschieben der Nachricht in den angegebenen Ordner.  <br/> |
-|Wenn **PR_DELETE_AFTER_SUBMIT** festgelegt ist:  <br/> |Löschen der Nachricht.  <br/> |
+|Wenn keine Eigenschaft festgelegt ist:  <br/> |BeLassen Sie die Nachricht in dem Ordner, von dem Sie gesendet wurde (in der Regel der Postausgang).  <br/> |
+|Wenn **PR_SENTMAIL_ENTRYID** festgelegt ist:  <br/> |Verschieben Sie die Nachricht in den angegebenen Ordner.  <br/> |
+|Wenn **PR_DELETE_AFTER_SUBMIT** festgelegt ist:  <br/> |Löschen Sie die Nachricht.  <br/> |
    
 

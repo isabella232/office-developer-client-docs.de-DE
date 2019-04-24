@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: 9bd31233-fc8d-4e0a-9f1b-218c5ecb6d1b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0d93fde7d654f0ee56dcda9f2fb69ad622e476dd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f72c916e917543b11089f8f5ef1aa4b9552a1b6a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351408"
 ---
 # <a name="setting-address-book-options"></a>Festlegen von Adressbuchoptionen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Sie können drei Eigenschaften festlegen, die Optionen für die Verwendung des Adressbuchs beschreiben:
   
-- **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md))
+- **PR_AB_SEARCH_PATH** ([Pidtagabsearchpath (](pidtagabsearchpath-canonical-property.md))
     
-    Die **PR_AB_SEARCH_PATH** -Eigenschaft wird von [IAddrBook::ResolveName](iaddrbook-resolvename.md) zum Bestimmen der Container werden im Zusammenhang mit Auflösung und die Reihenfolge, in der sie zugeordnet werden. Für jeden Container in **PR_AB_SEARCH_PATH**ruft **IAddrBook::ResolveName** seine [IABContainer](iabcontainer-resolvenames.md) -Methode. Container am Anfang des **PR_AB_SEARCH_PATH** sind vor dem Container am Ende des **PR_AB_SEARCH_PATH**durchsucht. 
+    Die **PR_AB_SEARCH_PATH** -Eigenschaft wird von [IAddrBook::](iaddrbook-resolvename.md) ResolveName verwendet, um die an der Namensauflösung beteiligten Container und die Reihenfolge zu bestimmen, in der Sie beteiligt werden sollen. Für jeden Container in **PR_AB_SEARCH_PATH**ruft **IAddrBook::** ResolveName die [IABContainer:: ResolveNames](iabcontainer-resolvenames.md) -Methode auf. Container am Anfang von **PR_AB_SEARCH_PATH** werden vor Containern am Ende von **PR_AB_SEARCH_PATH**durchsucht. 
     
-    Die Reihenfolge der Suche in **PR_AB_SEARCH_PATH** wird angegeben, mithilfe der Struktur einer [SRowSet](srowset.md) , die dieselbe Struktur, die verwendet wird, um die Zeilen in einer Tabelle darstellen. Sie können den aktuellen Suchpfad durch Aufrufen der Methode [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md) anzeigen und ändern, indem Sie die [IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md) -Methode aufrufen. 
+    Die Suchreihenfolge in **PR_AB_SEARCH_PATH** wird mithilfe einer [SRowSet](srowset.md) -Struktur angegeben, der gleichen Struktur, die zum Darstellen von Zeilen in einer Tabelle verwendet wird. Sie können den aktuellen Suchpfad anzeigen, indem Sie die [IAddrBook:: GetSearchPath](iaddrbook-getsearchpath.md) -Methode aufrufen und Sie durch Aufrufen der [IAddrBook:: SetSearchPath](iaddrbook-setsearchpath.md) -Methode ändern. 
     
-- **PR_AB_DEFAULT_DIR** ([PidTagAbDefaultDir](pidtagabdefaultdir-canonical-property.md))
+- **PR_AB_DEFAULT_DIR** ([Pidtagabdefaultdir (](pidtagabdefaultdir-canonical-property.md))
     
-    Die **PR_AB_DEFAULT_DIR** -Eigenschaft ist die Eintrags-ID der Adressbuchcontainer Anfangs angezeigt werden, wenn im Adressbuch angezeigt wird. Die Standardeinstellung Directory bleibt wirksam, bis Sie ihn ändern, indem Sie die [IAddrBook::SetDefaultDir](iaddrbook-setdefaultdir.md) -Methode aufrufen. Sie können das Standardverzeichnis durch Aufrufen der Methode [IAddrBook::GetDefaultDir](iaddrbook-getdefaultdir.md) anzeigen. 
+    Die **PR_AB_DEFAULT_DIR** -Eigenschaft ist der Eintragsbezeichner des Adressbuch Containers, der beim Anzeigen des Adressbuchs angezeigt werden soll. Die Standardverzeichnis Einstellung bleibt wirksam, bis Sie Sie ändern, indem Sie die [IAddrBook:: SetDefaultDir](iaddrbook-setdefaultdir.md) -Methode aufrufen. Sie können das Standardverzeichnis anzeigen, indem Sie die [IAddrBook:: GetDefaultDir](iaddrbook-getdefaultdir.md) -Methode aufrufen. 
     
-- **PR_AB_DEFAULT_PAB** ([PidTagAbDefaultPab](pidtagabdefaultpab-canonical-property.md))
+- **PR_AB_DEFAULT_PAB** ([Pidtagabdefaultpab (](pidtagabdefaultpab-canonical-property.md))
     
-Diese drei Eigenschaften sind spezielle, da Sie sie über die Standardmethoden **IMAPIProp** bearbeiten können. Stattdessen müssen Sie **IAddrBook** Methoden verwenden. Da keine dieser Eigenschaften mit **IMAPIProp::SetProps**geändert werden kann, ist es nicht erforderlich aufrufen, **IMAPIProp::SaveChanges** , damit Änderungen dauerhaft entfernt wird. Über die Methoden **IAddrBook** vorgenommenen Änderungen werden sofort wirksam. 
+Diese drei Eigenschaften sind etwas Besonderes, da Sie nicht mit den standardmäßigen **IMAPIProp** -Methoden arbeiten können. Stattdessen müssen Sie **IAddrBook** -Methoden verwenden. Da keine dieser Eigenschaften mit **IMAPIProp::** SetProps geändert werden kann, ist es nicht erforderlich, **IMAPIProp:: SaveChanges** aufzurufen, um Änderungen dauerhaft vorzunehmen. Änderungen, die über die **IAddrBook** -Methoden vorgenommen wurden, werden sofort wirksam. 
   
 ## <a name="see-also"></a>Siehe auch
 

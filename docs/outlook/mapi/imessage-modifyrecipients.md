@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2625f29d-325f-417d-bcec-49d580f9cd7e
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0735008575db5e1cab62dbde4b699b15e04cedb0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 07e1c2104068a6eb242e8ba81f91655edaa92cd8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349259"
 ---
 # <a name="imessagemodifyrecipients"></a>IMessage::ModifyRecipients
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Hinzugef�gt, gel�scht oder Empf�nger der Nachricht �ndert.
   
@@ -38,7 +38,7 @@ HRESULT ModifyRecipients(
 
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die die Empfänger Änderungen steuert. Wenn 0 (null) für den _UlFlags_ -Parameter übergeben wird, alle vorhandenen Empfänger von **ModifyRecipients** durch die Empfängerliste auf das durch den Parameter _LpMods_ ersetzt. Die folgenden Kennzeichen können für _UlFlags_festgelegt werden:
+> [in] Bitmask of flags that controls the recipient changes. If zero is passed for the  _ulFlags_ parameter, **ModifyRecipients** replaces all existing recipients with the recipient list pointed to by the  _lpMods_ parameter. The following flags can be set for  _ulFlags_:
     
 MODRECIP_ADD 
   
@@ -50,25 +50,25 @@ MODRECIP_MODIFY
     
 MODRECIP_REMOVE 
   
-> Aus der Empfängerliste mithilfe als Index der **PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md))-Eigenschaft, die im Array Eigenschaft Wert für jeden Empfänger Eintrag in der _LpMods_ -Parameter enthalten sollte bereits vorhandene Empfänger entfernt werden. 
+> Vorhandene Empfänger sollten aus der Empfängerliste entfernt werden, indem die **PR_ROWID** ([pidtagrowid (](pidtagrowid-canonical-property.md))-Eigenschaft, die im Eigenschaftswert Array der einzelnen Empfänger Einträge im _lpMods_ -Parameter enthalten ist, als Index verwendet wird. 
     
  _lpMods_
   
 > [in] Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die eine Liste der Empf�nger hinzugef�gt, gel�scht oder ge�ndert werden, in der Nachricht enth�lt. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Empf�ngerliste wurde erfolgreich ge�ndert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMessage::ModifyRecipients** -Methode �ndert die Nachricht Empf�ngerliste. Es ist in dieser Liste gehalten in eine [ADRLIST](adrlist.md) -Struktur, dass die Empf�nger Tabelle erstellt wird. 
   
 Die **ADRLIST** -Datenstruktur enth�lt eine [ADRENTRY](adrentry.md) -Struktur f�r jeden Empf�nger und jede **ADRENTRY** -Datenstruktur enth�lt ein Array der Eigenschaftswerte, die die Empf�ngereigenschaften beschreibt. 
   
-Empf�nger in der Struktur **ADRLIST** k�nnen gel�st oder nicht aufgel�st werden. Der Unterschied liegt in der Anzahl und Typ der Eigenschaften, die eingebunden werden. Ein nicht aufgelöster Empfänger enthält nur die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) Eigenschaften während ein aufgelöster Empfänger, die zwei Eigenschaften sowie **PR_ADDRTYPE enthält **([PidTagAddressType](pidtagaddresstype-canonical-property.md)) und **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)). Wenn **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) zur Verfügung steht, können sie auch berücksichtigt.
+Empf�nger in der Struktur **ADRLIST** k�nnen gel�st oder nicht aufgel�st werden. Der Unterschied liegt in der Anzahl und Typ der Eigenschaften, die eingebunden werden. Ein nicht aufgelöster Empfänger enthält nur die Eigenschaften **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md)), während ein aufgelöst Empfänger diese beiden Eigenschaften Plus **PR_ADDRTYPE **([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md)) und **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)). Wenn **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) verfügbar ist, kann es auch hinzugefügt werden.
   
 Durch die Zeit, die eine Nachricht gesendet wird, muss nur aufgel�sten Empf�nger in der Empf�ngerliste enthalten. Nicht aufgel�sten Empf�nger verursachen Unzustellbarkeitsberichten erstellt und an den urspr�nglichen Absender der Nachricht gesendet werden. Weitere Informationen zu den Vorgang der Namensaufl�sung aus Sicht des Clients finden Sie unter [Aufl�sen von Namen](resolving-a-recipient-name.md). Weitere Informationen aus der Perspektive der Adressbuchanbieter finden Sie unter [Implementieren der Namensaufl�sung](implementing-name-resolution.md).
   
@@ -92,7 +92,7 @@ Es folgen einige Regeln zum Festlegen der Eigenschaften der Empf�nger in der S
     
 - Verwenden Sie PT_ERROR nicht als einen Eigenschaftentyp aus. **ModifyRecipients** wird dieser Wert ignoriert. 
     
-- Fügen Sie die **PR_ROWID** -Eigenschaft für alle Empfänger in _UlFlags_legen Sie die MODRECIP_REMOVE oder MODRECIP_MODIFY-Flag. 
+- Include the **PR_ROWID** property for all recipients when you set either the MODRECIP_REMOVE or MODRECIP_MODIFY flag in  _ulFlags_. 
     
 - Schlie�en Sie die **PR_ROWID** -Eigenschaft nicht f�r alle Empf�nger beim Festlegen der MODRECIP_ADD-Flag in  _ulFlags_ oder wenn Sie NULL in  _ulFlags_�bergeben.
     
@@ -106,13 +106,13 @@ Wenn Sie die **PR_ADDRTYPE** -Eigenschaft oder die **PR_EMAIL_ADDRESS** -Eigensc
     
 Verwenden Sie die Regeln f�r die Zuweisung in [Verwalten von Arbeitsspeicher f�r ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md) beschriebenen Speicherzuordnung f�r die Empf�ngerliste. **ModifyRecipients** Freigabe nicht die Struktur **ADRLIST** noch keines der Unterstrukturen frei. Die Struktur **ADRLIST** und jede [SPropValue](spropvalue.md) Struktur m�ssen separat mithilfe der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) so, dass jeweils einzeln freigegeben werden zugeordnet werden. Wenn die Methode zus�tzlichen Speicherplatz f�r alle **SPropValue** Struktur erfordert, kann es die **SPropValue** -Struktur mit einer neuen ersetzen, die sp�ter mithilfe der [MAPIFreeBuffer](mapifreebuffer.md)freigegeben werden k�nnen. **SPropValue** Originalstruktur sollten auch mithilfe der **MAPIFreeBuffer**freigegeben werden.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIABFunctions.cpp  <br/> |AddRecipient  <br/> |MFCMAPI (engl.) verwendet die **IMessage::ModifyRecipients** -Methode, um einen neuen Empf�nger einer Nachricht hinzuf�gen.  <br/> |
+|MAPIABFunctions. cpp  <br/> |AddRecipient  <br/> |MFCMAPI (engl.) verwendet die **IMessage::ModifyRecipients** -Methode, um einen neuen Empf�nger einer Nachricht hinzuf�gen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

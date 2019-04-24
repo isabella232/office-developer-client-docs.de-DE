@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 9abe91d4ce6996a725e246da6922015d15a8bd39
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314042"
 ---
 # <a name="transform-statement-microsoft-access-sql"></a>TRANSFORM-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt eine Kreuztabellenabfrage.
 
 ## <a name="syntax"></a>Syntax
 
-TRANSFORM *aggregatfunktionselect-Anweisung* PIVOT *Pivotfield* \[IN (*Wert1*\[, *Wert2*\[,... \]\])\]
+TRANSFORM *aggfunctionselectstatement* PIVOT *pivotfield* \[IN (*value1*\[, *value2*\[, …\]\])\]
 
-Die TRANSFORM-Anweisung besteht aus folgenden Teilen:
+Die TRANSFORM-Anweisung setzt sich wie folgt zusammen:
 
 <table>
 <colgroup>
@@ -37,21 +37,21 @@ Die TRANSFORM-Anweisung besteht aus folgenden Teilen:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Komponente</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>AggFunktion</em></p></td>
+<td><p><em>Aggregatfunktion</em></p></td>
 <td><p>Eine <a href="sql-aggregate-functions-sql.md">SQL-Aggregatfunktion</a>, die für die ausgewählten Daten ausgeführt wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>SelectAnweisung</em></p></td>
+<td><p><em>SELECT-Anweisung</em></p></td>
 <td><p>Eine <a href="select-statement-microsoft-access-sql.md">SELECT</a>-Anweisung.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>PivotFeld</em></p></td>
+<td><p><em>Pivotfeld</em></p></td>
 <td><p>Das Feld oder der Ausdruck, das bzw. den Sie zum Erstellen von Spaltenüberschriften im Resultset der Abfrage verwenden möchten.</p></td>
 </tr>
 <tr class="even">
@@ -61,13 +61,13 @@ Die TRANSFORM-Anweisung besteht aus folgenden Teilen:
 </tbody>
 </table>
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie Daten mithilfe einer Kreuztabellenabfrage zusammenfassen, wählen Sie Werte aus angegebenen Feldern oder Ausdrücken als Spaltenüberschriften aus, sodass Sie Daten in einem kompakteren Format als bei einer Auswahlabfrage anzeigen können.
 
-TRANSFORM ist eine optionale Anweisung, aber wenn sie verwendet wird, ist sie die erste Anweisung in einer SQL-Zeichenfolge. Sie steht vor einer SELECT-Anweisung, die die Felder angibt, die als Zeilenüberschriften verwendet werden, und einer GROUP BY-Klausel, die die Zeilengruppierung angibt. Optional können Sie andere Klauseln einschließen, z. B. WHERE-Klauseln, die zusätzliche Auswahl- oder Sortierkriterien angeben. Sie können auch Unterabfragen als Prädikate in einer Kreuztabellenabfrage verwenden – insbesondere die in der WHERE-Klausel.
+TRANSFORM is optional but when included is the first statement in an SQL string. It precedes a SELECT statement that specifies the fields used as row headings and a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) clause that specifies row grouping. Optionally, you can include other clauses, such as [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql), that specify additional selection or sorting criteria. You can also use subqueries as predicates — specifically, those in the WHERE clause — in a crosstab query.
 
-Die im *PivotFeld* zurückgegebenen Werte werden als Spaltenüberschriften im Resultset der Abfrage verwendet. Wenn Sie z. B. die Verkaufszahlen des Verkaufsmonats in einer Kreuztabellenabfrage pivotieren, werden 12 Spalten erstellt. Sie können das *PivotFeld* darauf beschränken, Überschriften aus festen Werten (*Wert1*, *Wert2*) zu erstellen, die in der optionalen IN-Klausel aufgeführt sind. Außerdem können Sie feste Werte einschließen, für die keine Daten vorhanden sind, um zusätzliche Spalten zu erstellen.
+Die in *Pivotfeld* zurückgegebenen Werte werden als Spaltenüberschriften im Resultset der Abfrage verwendet. Beispielsweise würde das Pivotieren der Umsatzzahlen auf den Monat des Verkaufs in einer Kreuztabellenabfrage 12 Spalten erzeugen. Sie können *Pivotfeld* einschränken, um Überschriften anhand von festen Werten (*Wert1*, *Wert2*) zu erzeugen, die in der optionalen IN-Klausel aufgeführt sind. Sie können auch feste Werte verwenden, für die keine Daten vorhanden ist, um zusätzliche Spalten zu erstellen.
 
 ## <a name="example"></a>Beispiel
 

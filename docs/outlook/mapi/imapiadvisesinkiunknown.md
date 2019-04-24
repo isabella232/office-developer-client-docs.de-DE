@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: f598fc57-75d3-473b-8eb0-9d8a3b92e9f2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b9244e28337c74487562ec235f246559a49a390d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d537184f427b2ef240dd2a9a59ab2f624f8f75d0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350918"
 ---
 # <a name="imapiadvisesink--iunknown"></a>IMAPIAdviseSink : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Implementiert eine Advise-Empfängerobjekt für die Verarbeitung der Benachrichtigung. Ein Zeiger auf eine Advise-Empfängerobjekt wird in einem Aufruf des Dienstanbieters **Advise** -Methode verwendeten Mechanismus zum Registrieren für die Benachrichtigung übergeben. 
+Implementiert ein Advise-Senke-Objekt zur Behandlung von Benachrichtigungen. Ein Zeiger auf ein Advise-Senke-Objekt wird in einem Aufruf an die **Advise** -Methode eines Dienstanbieters übergeben, den Mechanismus, der für die Registrierung der Benachrichtigung verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Beraten der Empfängerobjekten  <br/> |
-|Implementiert von:  <br/> |Clientanwendungen und MAPI  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Advise-Objekt  <br/> |
+|Implementiert von:  <br/> |Client Anwendungen und MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter und MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIAdviseSink  <br/> |
 |Zeigertyp:  <br/> |LPMAPIADVISESINK  <br/> |
@@ -40,7 +40,7 @@ Implementiert eine Advise-Empfängerobjekt für die Verarbeitung der Benachricht
 
 |||
 |:-----|:-----|
-|[OnNotify](imapiadvisesink-onnotify.md) <br/> |Antwortet auf eine Benachrichtigung durch eine oder mehrere Aufgaben ausführen. Die Aufgaben ausgeführt, abhängig von den Typ des Ereignisses und das Objekt, das die Benachrichtigung generiert.  <br/> |
+|[OnNotify](imapiadvisesink-onnotify.md) <br/> |Reagiert auf eine Benachrichtigung, indem eine oder mehrere Aufgaben ausgeführt werden. Die ausgeführten Aufgaben hängen vom Ereignistyp und dem Objekt ab, das die Benachrichtigung generiert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

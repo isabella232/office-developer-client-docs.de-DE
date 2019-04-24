@@ -1,5 +1,5 @@
 ---
-title: Berechtigungen für die MAPI-Objekten und Eigenschaften
+title: Berechtigungen für MAPI-Objekte und-Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: 32669cbe-5460-4043-99cc-c609608f48da
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 11c8a58e6cfe0719e8683c4e7a0fd966972117c4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4efa9cd1596cffe19a19a62059f81fa553343d77
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348594"
 ---
-# <a name="permissions-for-mapi-objects-and-properties"></a>Berechtigungen für die MAPI-Objekten und Eigenschaften
+# <a name="permissions-for-mapi-objects-and-properties"></a>Berechtigungen für MAPI-Objekte und-Eigenschaften
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zugriffsberechtigung oder eine Reihe von Operationen zulässig sind, kann ein Merkmal des MAPI-Objekten und einzelner Eigenschaften von diesen Objekten unterstützt. Objektzugriff wird vom übergeordneten Objekts bestimmt. Für eine Nachricht bestimmt der Ordner Zugriffsberechtigungen. Ein messaging-Benutzer oder eine Verteilerliste wird seine Adressbuchcontainer hierbei. Wenn ein Objekt wie eine Nachricht in zwei Ordner befindet, können die Berechtigungen für die zwei Kopien des Objekts abweichen. 
+Die Zugriffsberechtigung oder der Satz von zulässige-Vorgängen kann ein Merkmal von MAPI-Objekten und von einzelnen Eigenschaften sein, die von diesen Objekten unterstützt werden. Der Objektzugriff wird durch das übergeordnete Objekt des Objekts bestimmt. Für eine Nachricht bestimmt der zugehörige Ordner die Zugriffsberechtigungen. Für einen Messagingbenutzer oder eine Verteilerliste macht der Adressbuchcontainer diese Bestimmung. Wenn sich ein Objekt wie eine Nachricht in zwei Ordnern befindet, können die Berechtigungen für die beiden Kopien des Objekts unterschiedlich sein. 
   
-Clients, die diese Objekte verwenden, können die höchste Zugriffsebene für das Objekt durch das MAPI_BEST_ACCESS-Flag für den Anruf [IMAPISession::OpenEntry](imapisession-openentry.md) festlegen zugelassen anfordern. Je nach den Dienstanbieter, die das Objekt implementieren wird der Client kann oder kann nicht die Zugriffsebene erforderlichen erteilt werden. Clients können die Zugriffsebene bestimmen, dass sie erteilt wurden durch Aufrufen des Objekts **GetProps** -Methode, um die Eigenschaft **PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) abzurufen. Allerdings, da der Dienstanbieter dynamisch generieren des Werts für diese Eigenschaft muss, wird empfohlen, dass Clients diese nur bei Bedarf abgerufen werden. 
+Clients, die diese Objekte verwenden, können die höchste Zugriffsebene anfordern, die für das Objekt zulässig ist, indem Sie das MAPI_BEST_ACCESS-Flag für den [IMAPISession:: OpenEntry](imapisession-openentry.md) -Aufruf festlegen. Je nach dem Dienstanbieter, der das Objekt implementiert, kann dem Client die erforderliche Zugriffsebene gewährt werden. Clients können die Zugriffsebene bestimmen, die Ihnen gewährt wurde, indem Sie die **** Objekt GetProps-Methode zum Abrufen der **PR_ACCESS** ([pidtagaccess (](pidtagaccess-canonical-property.md))-Eigenschaft aufrufen. Da der Dienstanbieter den Wert für diese Eigenschaft jedoch dynamisch generieren muss, wird empfohlen, dass Clients diesen nur bei Bedarf abrufen. 
   
-Um festzustellen, ob ein Container wie ein Ordner, Adressbuchcontainer oder Verteilerliste können Sie ändern, rufen Sie seine **GetProps** -Methode zum Abrufen der Eigenschaft **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)). Die Zugriffsebene Container wirkt sich auf Clients im Hinblick auf die Art der Anzeige ihrer von Benutzeroberflächen. Sie beeinflusst auch die Implementierung von in Containern im Hinblick auf die Anzeige ihrer Benutzer-Schnittstelle und deren allgemeine Implementierung-Objekten. 
+Um zu bestimmen, ob ein Container wie ein Ordner, ein Adressbuchcontainer oder eine Verteilerliste Änderungen zulässt **** , rufen Sie die GetProps-Methode auf, um die **PR_ACCESS_LEVEL** ([pidtagaccesslevel (](pidtagaccesslevel-canonical-property.md))-Eigenschaft abzurufen. Der Zugriff auf Container Ebene wirkt sich auf Clients im Hinblick auf die Anzeige Ihrer Benutzeroberflächen aus. Sie wirkt sich auch auf die Implementierung von Objekten innerhalb von Containern im Hinblick auf die Anzeige der Benutzeroberfläche und deren allgemeine Implementierung aus. 
   
-Zugriff auf eine bestimmte Eigenschaft wird durch das Einrichten von MAPI für das Objekt, das die Eigenschaft besitzt Eigenschaftsschema bestimmt. Eigenschaftenschemas angeben die erforderlichen und optionalen Eigenschaften für ein Objekt und deren Berechtigungen. Im Gegensatz zum Zugriff auf Objekte, die durch das übergeordnete Objekt bestimmt wird, ist der Zugriff auf Eigenschaften global. Jedes Objekt, unabhängig von der Access-Anforderungen, der das übergeordnete Objekt, hat die gleichen Berechtigungen für die Eigenschaft, wie durch das Schema bestimmt.
+Der Zugriff auf eine bestimmte Eigenschaft wird durch das von MAPI für das Objekt, das die Eigenschaft besitzt, festgelegte Eigenschaften Schema bestimmt. Eigenschaftsschemas geben den Satz der erforderlichen und optionalen Eigenschaften für ein Objekt und dessen Zugriffsberechtigungen an. Im Gegensatz zum Objektzugriff, der vom übergeordneten Objekt des Objekts bestimmt wird, ist der Eigenschaftenzugriff Global. Jedes Objekt hat, unabhängig von den Zugriffsanforderungen des übergeordneten Objekts, die gleichen Berechtigungen für die Eigenschaft, die vom Schema bestimmt werden.
   
-Wenn eine Eigenschaft schreibgeschützt ist, wird es immer mit einem Aufruf **GetProps** oder **OpenProperty** verfügbar sein. Je nach der Implementierung des Objekts die Eigenschaft unterstützt, sind jedoch für die **SetProps** -Methode zum Ändern einer Eigenschaft und die **"DeleteProps"** -Methode zum Entfernen von es zwei mögliche Ergebnisse: 
+Wenn eine Eigenschaft schreibgeschützt ist, ist Sie immer mit einem getProps **** -oder **OpenProperty** -Aufruf verfügbar. Je nach der Implementierung des Objekts, das die Eigenschaft unterstützt, gibt es jedoch zwei mögliche Ergebnisse für die **** SetProps-Methode zum Ändern einer Eigenschaft und die **DeleteProps** -Methode zum Entfernen: 
   
-- Fehler und return MAPI_E_NO_ACCESS
+- Fail-und Return-MAPI_E_NO_ACCESS
     
-- Keine Aktion ausgeführt erfolgreich
+- Erfolgreich ohne Aktion
     
-Access-Eigenschaft und -Objekt kann auch abgerufen oder mithilfe der [IPropData](ipropdataimapiprop.md) -Schnittstelle, die von der **IMAPIProp** -Schnittstelle erbt festgelegt werden. MAPI bietet eine Implementierung der **IPropData** , die auf Daten im Arbeitsspeicher basiert. Dienstanbieter können **IPropData** **IMAPIProp** unter bestimmten Umständen wie für ihren Statusobjekt implementieren, oder wenn sie eine Datenbank verwenden, die keine integrierter Transaktionen. **IPropData** funktioniert ausschließlich im Speicher, wodurch es nicht erforderlich, Sperren und Entsperren von Daten. 
+Der Zugriff auf Eigenschaften und Objekte kann auch mithilfe der [IPropData](ipropdataimapiprop.md) -Schnittstelle abgerufen oder festgelegt werden, die von der **IMAPIProp** -Schnittstelle erbt. MAPI bietet eine Implementierung von **IPropData** , die auf Daten im Arbeitsspeicher basiert. Dienstanbieter können **IPropData** verwenden, um **IMAPIProp** unter bestimmten Umständen zu implementieren, beispielsweise für Ihr Status-Objekt oder wenn Sie eine Datenbank verwenden, die keine integrierten Transaktionen hat. **IPropData** funktioniert ausschließlich im Arbeitsspeicher, sodass es nicht erforderlich ist, Daten zu sperren und zu entsperren. 
   
 ## <a name="see-also"></a>Siehe auch
 

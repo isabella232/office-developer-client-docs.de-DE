@@ -9,36 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c42d4d2e-f8f0-bc5b-6018-4bb4ffa81b64
 description: Legt die Transparenzstufe für die Farbe fest, die für den Vordergrund (Pinselstrich) des Schattenfüllmusters des Shapes verwendet wird.
-ms.openlocfilehash: 5fd385fc2f46f1ff8eedc961833813ec16ba7b73
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0ef3ce525edcce4ccd61f36649ead512545eef58
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349098"
 ---
-# <a name="shdwforegndtrans-cell-fill-format-section"></a>ShdwForegndTrans Cell (Fill Format Section)
+# <a name="shdwforegndtrans-cell-fill-format-section"></a>Zelle "ShdwForegndTrans" (Abschnitt "Fill Format")
 
 Legt die Transparenzstufe für die Farbe fest, die für den Vordergrund (Pinselstrich) des Schattenfüllmusters des Shapes verwendet wird.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|
-          0 - 100
-  <br/> |Stellt die Transparenz in Prozent dar. Der Standardwert ist 0% (vollständig undurchsichtig).  <br/> |
+|0 - 100  <br/> |Stellt die Transparenz in Prozent dar. Der Standardwert ist 0% (vollständig undurchsichtig).  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Werte werden auf die nächste halbe % gerundet. Es wird ein Wert von 100 % vollständig transparent. Obwohl Sie ein Schatten, der eine vollständig transparente Füllung hat die gleiche auf dem Zeichenblatt als einen Schatten angezeigt wird, die keine Füllung aufweist, die Interaktion mit anderen Objekten auf der Seite auf die gleiche Weise als wäre die Transparenz 0 %.
+Werte werden auf ein halbes Prozent gerundet. Ein Wert von 100% bezeichnet völlige Transparenz. Obwohl ein Schatten mit einer vollständig transparenten Füllung auf dem Zeichenblatt als Schatten angezeigt wird, der keine Füllung aufweist, interagiert er mit anderen Objekten auf der Seite auf die gleiche Weise wie bei der Transparenz von 0%.
   
 Sie können diesen Wert auch festlegen, indem Sie den Schieberegler im Dialogfeld **Schatten** verwenden (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**). Dieser Wert bestimmt den Wert der Schattentransparenz sowohl für den Hintergrund als auch für den Vordergrund. Wenn Sie diese Werte unabhängig voneinander festlegen möchten, müssen Sie sie im ShapeSheet-Fenster eingeben.
   
-Wenn Sie einen Verweis auf die Zelle ShdwForegndTrans aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ShdwForegndTrans aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |ShdwForegndTrans  <br/> |
+|Zellenname:  <br/> |Zelle ShdwForegndTrans  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShdwForegndTrans aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ShdwForegndTrans aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

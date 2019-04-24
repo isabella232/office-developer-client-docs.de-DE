@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef5eb5c6-251e-4a3a-8855-7c28804a29ab
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e303361f4f0dd3a08dbb362096d07b8b391a6d97
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e7607a57da5b618a20d6c8e360c7e3cb4f933856
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351247"
 ---
 # <a name="sclocalpathfromunc"></a>ScLocalPathFromUNC
 
@@ -25,13 +25,13 @@ ms.locfileid: "22594418"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einem Gegenstück lokaler Pfad zu dem angegebenen Pfad universal naming Convention (UNC). 
+Sucht einen lokalen Pfad Gegenstück zum angegebenen UNC-Pfad (Universal Naming Convention). 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScLocalPathFromUNC(
@@ -45,33 +45,33 @@ SCODE ScLocalPathFromUNC(
 
  _szUNC_
   
-> [in] Einen Pfad im Format \\[ _Server_]\[ _Freigeben_]\[ _Pfad_] einer Datei oder ein Verzeichnis.
+> in Ein Pfad \\im Format [ _Server_]\[ _Freigabe_\[ _Pfad_] einer Datei oder eines Verzeichnisses.
     
  _szLocal_
   
-> [out] Einen Pfad im Format [ _Laufwerk:_]\[ _Pfad_] der gleichen Datei oder des Verzeichnisses wie bei der _SzUNC_ -Parameter. 
+> Out Ein Pfad im Format [ _Drive:_]\[ _path_] derselben Datei oder desselben Verzeichnisses wie für den _szUNC_ -Parameter. 
     
  _cchLocal_
   
-> [in] Die Größe des Puffers für die Ausgabezeichenfolge.
+> in Die Größe des Puffers für die Ausgabezeichenfolge.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Lokaler Pfad wurde erfolgreich gefunden.
+> Ein lokaler Pfad wurde erfolgreich gefunden.
     
 MAPI_E_TOO_BIG
   
->  _SzLocal_ war nicht groß genug für das Ergebnis. 
+>  _szLocal_ war nicht groß genug, um das Ergebnis zu halten. 
     
 S_FALSE
   
-> Die Zeichenfolge UNC war bereits ein lokaler Pfad.
+> Die UNC-Zeichenfolge war bereits ein lokaler Pfad.
     
 MAPI_E_NOT_FOUND
   
-> Lokaler Pfad wurde nicht gefunden.
+> Es wurde kein lokaler Pfad gefunden.
     
 ## <a name="see-also"></a>Siehe auch
 

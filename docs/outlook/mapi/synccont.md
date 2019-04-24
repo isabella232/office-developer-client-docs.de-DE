@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7b4307a3-5a8c-89bf-1113-2549556a7fe7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b1ab1bd4eb6badc75065ce54d009e034f0fc2b29
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: afba7fa718a35d33966d45289461313e349ef2e2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349574"
 ---
 # <a name="synccont"></a>SYNCCONT
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen für den Inhalt der angegebenen Ordner in einem lokalen Speicher mit dem Server synchronisieren, während der [Inhalt Zustand synchronisieren](synchronize-contents-state.md). Dieser Schritt umfasst das soeben hochladen oder eine vollständige Synchronisierung im Zusammenhang mit Upload und klicken Sie dann auf Download.
+Informationen zum Synchronisieren des Inhalts bestimmter Ordner in einem lokalen Speicher mit dem Server während des [Synchronisierungs Inhaltsstatus](synchronize-contents-state.md). Dazu gehört das Hochladen oder eine vollständige Synchronisierung mit einem Upload und dann einem Download.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,31 +39,31 @@ struct SYNCCONT
 
 _ulFlags_
   
-> [in] Kennzeichen, die um das entsprechende Verhalten während der Synchronisierung zu bestimmen.
+> in Flags zum Bestimmen des geeigneten Verhaltens während der Synchronisierung.
     
   - UPC_OK
     
-  - [in] Hochladen oder vollständige Synchronisierung war erfolgreich. Der Client legt dies nach Informationen mit dem Server synchronisieren.
+  - in Die hoch-oder vollständige Synchronisierung war erfolgreich. Der Client legt dies fest, nachdem Informationen mit dem Server synchronisiert wurden.
     
 _iEnt_
   
-> [out] Index zum Nachverfolgen der Inhalt in die Anzahl von _cEnt_angegebenen Ordner zu synchronisieren.
+> Out Index, um die Synchronisierung der Inhalte in der Anzahl der durch _cEnt_angegebenen Ordner nachzuverfolgen.
     
-_cEnt_
+_Prozent_
   
-> [out] Anzahl der Ordner repliziert werden.
+> Out Die Anzahl der zu replizierenden Ordner.
     
 _pvReserved_
   
-> Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _ptagaReserved_
   
-> Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _psosReserved_
   
-> Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 ## <a name="see-also"></a>Siehe auch
 

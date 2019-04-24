@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: eaf3bafb-975d-42c8-99ea-7f9ef9c934ba
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 63e3eca4e91e560a28d57f05250264d7e0592142
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a58e723113f70c10b5c8468f5bdd0d8d9014bd2c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351125"
 ---
 # <a name="imapiviewcontextgetprintsetup"></a>IMAPIViewContext::GetPrintSetup
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die aktuellen Drucken von Informationen.
+Ruft aktuelle Druckinformationen ab.
   
 ```cpp
 HRESULT GetPrintSetup(
@@ -38,35 +38,35 @@ LPFORMPRINTSETUP FAR * lppFormPrintSetup
 
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die den Typ des zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _lppFormPrintSetup_
   
-> [out] Zeiger auf einen Zeiger auf eine Struktur, die die Drucken von Informationen enthält.
+> Out Zeiger auf einen Zeiger auf eine Struktur, die die Druckinformationen enthält.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Drucken von Informationen wurde erfolgreich abgerufen.
+> Die Druckinformationen wurden erfolgreich abgerufen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formularobjekte Aufrufen die **IMAPIViewContext::GetPrintSetup** -Methode zum Abrufen von Informationen zur Einrichtung Druckers bevor Sie versuchen, die aktuelle Nachricht zu drucken. 
+Formularobjekte rufen die **IMAPIViewContext:: GetPrintSetup** -Methode auf, um Informationen über die Druckereinrichtung abzurufen, bevor Sie versuchen, die aktuelle Nachricht zu drucken. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Ordnen Sie die **hDevMode-Feld** und **hDevName** Member der Struktur [FORMPRINTSETUP](formprintsetup.md) mithilfe der Win32-Funktion **GlobalAlloc**.
+Weisen Sie die **hDevMode** -und **hDevName** -Member der [FORMPRINTSETUP](formprintsetup.md) -Struktur mithilfe der Win32-Funktion **GlobalAlloc**zu.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie erwarten, die **hDevMode-Feld dass** und **hDevName** Member der Struktur **FORMPRINTSETUP** auf das durch den Parameter _LppFormPrintSetup_ Unicode-Zeichenfolgen werden, legen Sie _UlFlags_ auf Parameter MAPI_UNICODE. Andernfalls wird **GetPrintSetup** diese Zeichenfolgen in ANSI-Format zurückgegeben. 
+Wenn Sie davon ausgehen, dass die **hDevMode** -und **hDevName** -Elemente der **FORMPRINTSETUP** -Struktur, auf die durch den _lppFormPrintSetup_ -Parameter verwiesen wird, Unicode-Zeichenfolgen sein sollen, legen Sie _ulFlags_ auf MAPI_UNICODE fest. Andernfalls gibt **GetPrintSetup** diese Zeichenfolgen im ANSI-Format zurück. 
   
-Freigegeben Sie die **hDevMode-Feld** und **hDevName** Member der Struktur **FORMPRINTSETUP** durch Aufrufen der Win32-Funktion **GlobalFree**werden. Freigegeben Sie die gesamte Struktur **FORMPRINTSETUP** durch Aufrufen von [MAPIFreeBuffer](mapifreebuffer.md)werden. 
+Geben Sie die **hDevMode** -und **hDevName** -Member der **FORMPRINTSETUP** -Struktur frei, indem Sie die Win32-Funktion **GlobalFree**aufrufen. Freigeben der gesamten **FORMPRINTSETUP** -Struktur durch Aufrufen von [mapifreebufferfreigegeben](mapifreebuffer.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

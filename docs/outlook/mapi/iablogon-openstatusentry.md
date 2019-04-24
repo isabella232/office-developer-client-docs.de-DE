@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 66f1e246-a67a-4f8a-ae3a-6a8ec8c2b367
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cb9a2ba72ee9fd9c45aefe9d0797930a4871404a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 22f98e52444b17c383737bffd1685df0fb7ba8bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349021"
 ---
 # <a name="iablogonopenstatusentry"></a>IABLogon::OpenStatusEntry
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet den Anbieter Status-Objekt.
+Öffnet das Status-Objekt des Anbieters.
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -40,33 +40,33 @@ HRESULT OpenStatusEntry(
 
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle darstellt, die den Zugriff auf die Statusobjekt verwendet werden muss. Übergeben NULL zurückgegeben Standardschnittstelle für das Objekt, [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md).
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf das Status-Objekt verwendet werden muss. Durch das Übergeben von NULL wird die Standardschnittstelle des Objekts [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)zurückgegeben.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_MODIFY 
   
-> Anfragen Lese-/Schreibberechtigung. Standardmäßig werden Objekte mit schreibgeschützten Zugriff geöffnet und Anrufer sollte nicht davon ausgehen, dass die Lese-Schreib-Berechtigung gewährt wurde.
+> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte mit Schreibschutz geöffnet, und Aufrufer sollten nicht davon ausgehen, dass Lese-/Schreibzugriff erteilt wurde.
     
  _lpulObjType_
   
-> [out] Ein Zeiger auf den Typ des Objekts geöffnet.
+> Out Ein Zeiger auf den Typ des geöffneten Objekts.
     
  _lppEntry_
   
-> [out] Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
+> Out Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und das Statusobjekt geöffnet wurde.
+> Der Aufruf war erfolgreich, und das Status-Objekt wurde geöffnet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Von adressbuchanbietern implementierte implementieren Sie die **OpenStatusEntry** -Methode zum Erteilen des Zugriffs auf ihre Statusobjekt. Alle von adressbuchanbietern implementierte sind erforderlich, um einem Statusobjekt implementiert werden, die mindestens die [IMAPIStatus::ValidateState](imapistatus-validatestate.md) -Methode unterstützt. Weitere Informationen finden Sie unter [Implementierung der Status-Objekts](status-object-implementation.md).
+Adressbuchanbieter implementieren die **OpenStatusEntry** -Methode, um Zugriff auf Ihr Status-Objekt zu gewähren. Alle Adressbuchanbieter müssen ein Status-Objekt implementieren, das mindestens die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode unterstützt. Weitere Informationen finden Sie unter [Implementierung von Status Objekten](status-object-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

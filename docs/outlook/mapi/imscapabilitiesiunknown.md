@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 18623a44-719e-f46f-0f04-d6089a19c85d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7dc60cf3c49032a2c871872765b19e96c49f6da5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d00766d0fa85e51874357f97f60e86ee7eb1abf9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348797"
 ---
 # <a name="imscapabilities--iunknown"></a>IMSCapabilities : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen, was ein Speicher unterstützt werden kann.
+Enthält Informationen zu den unterstützten Speichermöglichkeiten.
   
 |||
 |:-----|:-----|
-|Bereitgestellt von:  <br/> |Nachricht Speicheranbieter  <br/> |
+|Bereitgestellt von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMSCapabilities  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
@@ -38,9 +38,9 @@ Enthält Informationen, was ein Speicher unterstützt werden kann.
 |:-----|:-----|
 |**[GetCapabilities](imscapabilities-getcapabilities.md)** <br/> |Gibt die Funktionen eines Speichers basierend auf der angegebenen Auswahl zurück.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
- **IMSCapabilities** enthält Informationen zu was ein Speicher unterstützen kann, wenn der Informationsspeicher diese Schnittstelle unterstützt. 
+ **IMSCapabilities** bietet Informationen darüber, was ein Informationsspeicher unterstützenkann, wenn der Speicher diese Schnittstelle unterstützt. 
   
 ## <a name="see-also"></a>Siehe auch
 

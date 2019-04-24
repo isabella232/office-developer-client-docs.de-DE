@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c327e31a-7b62-4e21-9b69-b27442f1eaca
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1ae94b40d984adee0f3c888f69dfdbffb1e352e1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2ec78331fd013777f001d39bd7e978a67abb5342
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351198"
 ---
 # <a name="imapiviewadvisesinkonsaved"></a>IMAPIViewAdviseSink::OnSaved
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigt den Formular-Viewer, den die aktuelle Nachricht in einem Formular gespeichert wurde.
+Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht in einem Formular gespeichert wurde.
   
 ```cpp
 HRESULT OnSaved( void );
@@ -35,17 +35,17 @@ HRESULT OnSaved( void );
 
 Keine
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Form-Objekt ruft die **IMAPIViewAdviseSink::OnSaved** -Methode auf, nachdem die aktuelle Nachricht in einem Formular erfolgreich gespeichert wurde. Dadurch werden Zuschauer zu ihren Windows Änderungen an der Nachricht entsprechend aktualisieren. 
+Ein Form-Objekt ruft die **IMAPIViewAdviseSink::** onsaved-Methode auf, nachdem die aktuelle Nachricht in einem Formular erfolgreich gespeichert wurde. Auf diese Weise können die Betrachter Ihre Fenster aktualisieren, um Änderungen an der Nachricht widerzuspiegeln. 
   
-Weitere Informationen zum Formular Benachrichtigungen finden Sie unter [Senden und Empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 

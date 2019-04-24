@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0a5cb49f-c4f3-4893-8616-80d6332efcfc
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: de5c98272c08c469acf23b0ecae7eac0a2d1bfe6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c14ccac0addbc1288e3507cf549344f75e69cc28
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351079"
 ---
 # <a name="imessagedeleteattach"></a>IMessage::DeleteAttach
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Löscht eine Anlage.
   
@@ -40,49 +40,49 @@ ULONG ulFlags
 
  _ulAttachmentNum_
   
-> [in] Die Indexnummer der Anlage zu löschen. Dies ist der Wert für die Anlage **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft.
+> in Index Nummer der zu löschenden Anlage. Dies ist der Wert für die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage.
     
  _ulUIParam_
   
-> [in] Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, den, die diese Methode zeigt. Der Parameter _UlUIParam_ wird ignoriert, es sei denn, das Flag ATTACH_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das ATTACH_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _lpProgress_
   
-> [in] Zeiger auf ein Fortschritt-Objekt, das eine Statusanzeige wird angezeigt. Wenn NULL _LpProgress_übergeben wird, wird der Nachricht Speicheranbieter mithilfe der MAPI-Fortschritt objektimplementierung wird die Statusanzeige angezeigt. Der Parameter _LpProgress_ wird ignoriert, es sei denn, das Flag ATTACH_DIALOG in _UlFlags_festgelegt ist.
+> in Zeiger auf ein Progress-Objekt, das eine Statusanzeige anzeigt. Wenn NULL in _lpProgress_übergeben wird, zeigt der Nachrichtenspeicher Anbieter mithilfe der MAPI-Progress-Objekt Implementierung eine Statusanzeige an. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das ATTACH_DIALOG-Flag wird in _ulFlags_festgelegt.
     
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die die Anzeige einer Benutzeroberfläche steuert. Das folgende Flag kann festgelegt werden:
+> in Bitmaske von Flags, die die Anzeige einer Benutzeroberfläche steuert. Das folgende Flag kann festgelegt werden:
     
 ATTACH_DIALOG 
   
-> Fordert die Anzeige einer Statusanzeige an, wie der-Vorgang fortgesetzt wird.
+> Fordert die Anzeige einer Statusanzeige an, während der Vorgang fortgesetzt wird.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Anlage wurde gelöscht.
+> Die Anlage wurde erfolgreich gelöscht.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMessage::DeleteAttach** -Methode löscht eine Anlage in einer Nachricht. 
+Die **IMessage::D eleteattach** -Methode löscht eine Anlage aus einer Nachricht. 
   
-Eine gelöschte Anlage wird nicht endgültig gelöscht werden, bis die Nachricht [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode aufgerufen wurde. 
+Eine gelöschte Anlage wird erst dann endgültig gelöscht, wenn die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht aufgerufen wurde. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Vor dem Aufruf von **DeleteAttach**, rufen Sie die **IUnknown** -Methode für die Anlage und die einzelnen seine Datenströme. 
+Rufen Sie vor dem Aufrufen von **DeleteAttach**die **IUnknown:: Release** -Methode für die Anlage und alle zugehörigen Streams auf. 
   
-Da eine Anlage löschen Anspruch sein kann, bietet **DeleteAttach** den Mechanismus, der eine Statusanzeige wird angezeigt. Sie können die Anzeige einer Statusanzeige anfordern, übergeben Sie einen Zeiger auf Ihre [IMAPIProgress: IUnknown](imapiprogressiunknown.md) Implementierung oder NULL, wenn Sie nicht über eine Implementierung verfügen. Sie müssen auch ein Fensterhandle in der _UlUIParam_ -Parameter und das Flag ATTACH_DIALOG im _UlFlags_ -Parameter angeben. 
+Da das Löschen einer Anlage ein langwieriger Prozess sein kann, stellt **DeleteAttach** den Mechanismus bereit, mit dem eine Statusanzeige angezeigt wird. Sie können die Anzeige einer Statusanzeige anfordern, indem Sie einen Zeiger an Ihre [IMAPIProgress: IUnknown](imapiprogressiunknown.md) -Implementierung oder NULL übergeben, wenn Sie keine Implementierung haben. Sie müssen auch ein Fensterhandle im Parameter _ulUIParam_ und das ATTACH_DIALOG-Flag im _ulFlags_ -Parameter angeben. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|AttachmentsDlg.cpp  <br/> |CAttachmentsDlg::OnDeleteSelectedItem  <br/> |MFCMAPI (engl.) verwendet die **IMessage::DeleteAttach** -Methode, um die ausgewählte Anlage zu löschen.  <br/> |
+|AttachmentsDlg. cpp  <br/> |CAttachmentsDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMessage::D eleteattach** -Methode, um die ausgewählte Anlage zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

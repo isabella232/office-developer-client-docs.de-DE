@@ -1,5 +1,5 @@
 ---
-title: PidTagRemoteValidateOk (kanonische Eigenschaft)
+title: Kanonische Pidtagremotevalidateok (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: e336d2ec-57cb-4d08-bd6e-330ef7d9939e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9b06ebbe8cb162d77d60cfffa866438567c84c27
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8b5c9e5bb2aa915d4b76d9998baaf504e7929b78
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355615"
 ---
-# <a name="pidtagremotevalidateok-canonical-property"></a>PidTagRemoteValidateOk (kanonische Eigenschaft)
+# <a name="pidtagremotevalidateok-canonical-property"></a>Kanonische Pidtagremotevalidateok (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält True, wenn der remote-Viewer zulässig ist, die [IMAPIStatus::ValidateState](imapistatus-validatestate.md) -Methode aufrufen. 
+Diese Eigenschaft enthält TRUE, wenn die Remoteanzeige berechtigt ist, die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode aufzurufen. 
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Diese Eigenschaft enthält True, wenn der remote-Viewer zulässig ist, die [IMAP
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird in der Tabelle "Status" und einige Kontrolle über die Transport Leistung bietet. Es kann als eine andere Möglichkeit, leiten den remote Viewer, im Leerlauf betrachtet werden. Wenn sie auf "true" festgelegt ist, kann die remote-Ansicht so oft wie gewünscht **IMAPIStatus::ValidateState** aufrufen. Der Wert FALSE gibt an, dass keine weitere Aufrufe der remote-Viewer nicht ausgeführt werden kann. 
+Diese Eigenschaft wird in der Statustabelle angezeigt und bietet eine gewisse Kontrolle über die Transportleistung. Er kann als eine andere Möglichkeit angesehen werden, um den Remote Viewer in den Leerlauf zu lenken. Wenn Sie auf TRUE festgelegt ist, kann die Remoteanzeige **IMAPIStatus:: ValidateState** so oft wie gewünscht aufrufen. Der Wert FALSE gibt an, dass die Remoteanzeige keine weiteren Anrufe tätigen kann. 
   
-Der Transportdienst festgelegt, dass in der Regel diese Eigenschaft dynamisch durch Festlegen des Werts auf false fest, um zusätzliche Anrufe deaktivieren, wenn der Adressbuchhierarchie eine ausreichende Menge der Verarbeitung ausführen hat. Klicken Sie nach Abschluss der Adressbuchhierarchie wird dann den Wert auf TRUE, um die Clientanwendung auf Weitere **IMAPIStatus::ValidateState** tätigen können. 
+Der Transportanbieter legt diese Eigenschaft normalerweise dynamisch fest, indem der Wert auf FALSE festgelegt wird, um zusätzliche Aufrufe zu deaktivieren, wenn der Transportanbieter über ausreichend Verarbeitungsleistung verfügt. Wenn der Transportanbieter fertig ist, wird der Wert auf TRUE festgelegt, damit die Clientanwendung weitere **IMAPIStatus:: ValidateState** -Aufrufe durchführen kann. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

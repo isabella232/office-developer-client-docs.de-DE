@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: b5eb1841-e450-4024-aeaa-3b5a492ddb99
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 93fb82c6274a1703376d7a9e15f37088e132dc23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a6168e8fced2fff3a7f9d273e47ed2410ac4c010
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350967"
 ---
 # <a name="imapicontainersetsearchcriteria"></a>IMAPIContainer::SetSearchCriteria
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt die Suchkriterien für den Container her.
+Legt Suchkriterien für den Container fest.
   
 ```cpp
 HRESULT SetSearchCriteria(
@@ -39,89 +39,89 @@ HRESULT SetSearchCriteria(
 
  _lpRestriction_
   
-> [in] Ein Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Suchkriterien definiert. Wenn NULL in der _LpRestriction_ -Parameter übergeben wird, werden die Suchkriterien, die für diesen Container zuletzt verwendet wurden erneut verwendet. NULL darf nicht in _LpRestriction_ für die erste Suche in einem Container übergeben werden. 
+> in Ein Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Suchkriterien definiert. Wenn NULL im _lpRestriction_ -Parameter übergeben wird, werden die Suchkriterien, die zuletzt für diesen Container verwendet wurden, erneut verwendet. NULL sollte in _lpRestriction_ nicht für die erste Suche in einem Container übergeben werden. 
     
  _lpContainerList_
   
-> [in] Ein Zeiger auf ein Array von Eintragsbezeichner, die Container, in die Suche einbezogen werden darstellen. Wenn ein Client NULL im Parameter _LpContainerList_ übergibt, werden die zuletzt verwendet, um diesen Container suchen Eintragsbezeichner für die neue Suche verwendet. Ein Client sollte nicht NULL _LpContainerList_ für die erste Suche in einem Container übergeben. 
+> in Ein Zeiger auf ein Array von Eintrags Bezeichnern, die Container darstellen, die in die Suche eingeschlossen werden sollen. Wenn ein Client im _lpContainerList_ -Parameter den Wert NULL übergibt, werden die in letzter Zeit verwendeten Eintrags-IDs für die neue Suche verwendet. Ein Client sollte NULL in _lpContainerList_ für die erste Suche in einem Container nicht weiterleiten. 
     
  _ulSearchFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuern, wie die Suche ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die Steuern, wie die Suche ausgeführt wird. Die folgenden Flags können festgelegt werden:
     
 BACKGROUND_SEARCH 
   
-> Die Suche sollte mit normaler Priorität relativ zu anderen Suchvorgänge ausgeführt. Dieses Kennzeichen können nicht gleichzeitig als das Flag FOREGROUND_SEARCH festgelegt werden.
+> Die Suche sollte im Verhältnis zu anderen Suchvorgängen mit normaler Priorität ausgeführt werden. Dieses Flag kann nicht gleichzeitig mit dem FOREGROUND_SEARCH-Flag festgelegt werden.
     
 FOREGROUND_SEARCH 
   
-> Die Suche sollte mit hoher Priorität relativ zu anderen Suchvorgänge ausgeführt. Dieses Kennzeichen können nicht gleichzeitig als das Flag BACKGROUND_SEARCH festgelegt werden.
+> Die Suche sollte relativ zu anderen Suchvorgängen mit hoher Priorität ausgeführt werden. Dieses Flag kann nicht gleichzeitig mit dem BACKGROUND_SEARCH-Flag festgelegt werden.
     
 NON_CONTENT_INDEXED_SEARCH
   
-> Die Suche sollte Inhaltsindex nicht übereinstimmenden Einträge suchen verwenden. Dieses Kennzeichen gilt nur für Exchange-Speicher.
+> Die Suche sollte nicht die Inhaltsindizierung verwenden, um übereinstimmende Einträge zu finden. Dieses Flag gilt nur für Exchange-Speicher.
     
 RECURSIVE_SEARCH 
   
-> Die Suche sollte in der _LpContainerList_ -Parameter und alle untergeordneten Container angegebenen Container enthalten. Dieses Kennzeichen können nicht gleichzeitig als das Flag SHALLOW_SEARCH festgelegt werden. 
+> Die Suche muss die im Parameter _lpContainerList_ und alle untergeordneten Container angegebenen Container aufweisen. Dieses Flag kann nicht gleichzeitig mit dem SHALLOW_SEARCH-Flag festgelegt werden. 
     
 RESTART_SEARCH 
   
-> Die Suche sollte initiiert, wenn dies der erste Aufruf von **SetSearchCriteria**ist, oder neu gestartet, wenn die Suche nicht aktiv ist. Dieses Kennzeichen können nicht gleichzeitig als das Flag STOP_SEARCH festgelegt werden.
+> Die Suche sollte initiiert werden, wenn dies der erste Aufruf von **SetSearchCriteria**ist, oder neu gestartet, wenn die Suche inaktiv ist. Dieses Flag kann nicht gleichzeitig mit dem STOP_SEARCH-Flag festgelegt werden.
     
 SHALLOW_SEARCH 
   
-> Die Suche sollte nur in den Containern im für übereinstimmende Einträge _LpContainerList_ -Parameter angegebene aussehen. Dieses Kennzeichen können nicht gleichzeitig als das Flag RECURSIVE_SEARCH festgelegt werden. 
+> Die Suche sollte nur in den im _lpContainerList_ -Parameter angegebenen Containern für übereinstimmende Einträge aussehen. Dieses Flag kann nicht gleichzeitig mit dem RECURSIVE_SEARCH-Flag festgelegt werden. 
     
 STOP_SEARCH 
   
-> Die Suche muss angehalten werden. Dieses Kennzeichen können nicht gleichzeitig als das Flag RESTART_SEARCH festgelegt werden.
+> Die Suche sollte beendet werden. Dieses Flag kann nicht gleichzeitig mit dem RESTART_SEARCH-Flag festgelegt werden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Suchkriterien wurde erfolgreich festgelegt.
+> Die Suchkriterien wurden erfolgreich festgelegt.
     
 MAPI_E_TOO_COMPLEX 
   
-> Der Dienstanbieter unterstützt nicht die angegebenen Suchkriterien entsprechen.
+> Der Dienstanbieter unterstützt die angegebenen Suchkriterien nicht.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIContainer::SetSearchCriteria** -Methode richtet Suchkriterien für einen Container, der sucht, in der Regel in einem Suchergebnisse Ordner unterstützt. Suchergebnisse Ordner enthält Links zu Nachrichten, die den Suchkriterien entsprechen; die Nachrichten werden weiterhin an ihrem ursprünglichen Speicherort gespeichert. Nur eindeutigen in einem Suchergebnisse Ordner enthaltenen Daten ist die Inhaltstabelle. Die Inhaltstabelle eines Ordners Suchergebnisse hat den zusammengeführten Inhalt des Nachrichtenspeichers, nachdem die Suche Einschränkung angewendet wurde. 
+Mit der **IMAPIContainer:: SetSearchCriteria** -Methode werden Suchkriterien für einen Container festgelegt, der Suchvorgänge unterstützt, in der Regel ein Suchergebnisordner. Ein Suchergebnisordner enthält Links zu den Nachrichten, die den Suchkriterien entsprechen. die tatsächlichen Nachrichten werden weiterhin an ihren ursprünglichen Speicherorten gespeichert. Die einzigen eindeutigen Daten, die in einem Ordner mit Suchergebnissen enthalten sind, sind die Inhaltstabelle. Die Inhaltstabelle eines Suchergebnis Ordners enthält die zusammengeführten Inhalte des Nachrichtenspeichers, nachdem die sucheinschränkung angewendet wurde. 
   
-Suchvorgang funktioniert nur für diese Tabelle zusammengeführten Inhalt. Es wird nicht durch andere Suchergebnisse Ordner gesucht. Die Suchergebnisse zurück, nur die Nachrichten, die den Suchkriterien entsprechen. Die Ordnerhierarchie wird nicht zurückgegeben.
+Ein Suchvorgang funktioniert nur in dieser zusammengeführten Inhaltstabelle; andere Suchergebnisordner werden nicht durchsucht. In den Suchergebnissen werden nur die Nachrichten zurückgegeben, die den Suchkriterien entsprechen. die Ordnerhierarchie wird nicht zurückgegeben.
   
-Steuerelement wird an den Client zurückgegeben, wenn die Suche abgeschlossen wurde.
+Die Steuerung wird an den Client zurückgegeben, wenn die Suche abgeschlossen ist.
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Address Book Containern erstellen Suchkriterien Einschränkungen auf ihren Inhalt Tabellen anwenden. Weitere Informationen zu Suchkriterien und address Book Containern, finden Sie unter [Implementieren erweiterte Suche](implementing-advanced-searching.md).
+Adressbuchcontainer legen Suchkriterien fest, indem Sie Einschränkungen auf Ihre Inhaltstabellen anwenden. Weitere Informationen zu Suchkriterien und Adressbuch Containern finden Sie unter [Implementieren der erweiterten Suche](implementing-advanced-searching.md).
   
-Sie sollten unterstützen öffnen, kopieren, verschieben und delete-Vorgänge auf die Nachrichten in Suchergebnissen Ordnern, nicht auf den Suchergebnisse Ordner selbst. Lassen Sie nicht Nachrichten innerhalb erstellt oder in einem Suchergebnisse Ordner kopiert werden. 
+Sie sollten öffnen-, Kopier-, Verschiebungs-und Löschvorgänge für die Nachrichten in Suchergebnis Ordnern unterstützen, nicht im Ordner "Suchergebnisse" selbst. Lassen Sie keine Nachrichten innerhalb oder in einen Suchergebnisordner kopieren. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Legen Sie zum Suchen der Empfänger der Nachricht _LpRestriction_ So zeigen Sie auf eine Einschränkung Unterobjekts mit dem **UlSubObject** -Element in der [SSubRestriction](ssubrestriction.md) -Struktur auf **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) festgelegt. Legen Sie zum Suchen nach Anlagen des **UlSubObject** Members auf **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)). Legen Sie den **LpRes** Member So zeigen Sie auf eine eigenschaftseinschränkung, die die Suchkriterien für die Empfänger oder Anlagen beschreibt. 
+Zum Suchen nach Nachrichtenempfängern legen Sie fest, dass _lpRestriction_ auf eine SubObject-Einschränkung zeigt, wobei das **ulSubObject** -Element in der [SSubRestriction](ssubrestriction.md) -Struktur auf **PR_MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md)) festgelegt ist. Legen Sie das **ulSubObject** -Element auf **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md)) fest, um nach Anlagen zu suchen. Legen Sie fest, dass das **lpRes** -Element auf eine Eigenschaftseinschränkung zeigt, die die Suchkriterien für die Empfänger oder Anlagen beschreibt. 
   
-Um für Dateianlagen zu suchen, die die Erweiterung .mss haben, legen Sie beispielsweise **UlSubObject** auf **PR_MESSAGE_ATTACHMENTS** und **LpRes** , die eine eigenschaftseinschränkung, die mit **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md) übereinstimmt ) mit. mss.
+Um beispielsweise nach Dateianlagen mit der Erweiterung. MSS zu suchen, legen Sie **ulSubObject** auf **PR_MESSAGE_ATTACHMENTS** und **lpRes** auf eine Eigenschaftseinschränkung fest, die mit **PR_ATTACH_EXTENSION** übereinstimmt ([pidtagattachextension (](pidtagattachextension-canonical-property.md) ) mit. MSS.
   
-Festlegen des Flags FOREGROUND_SEARCH in der _UlSearchFlags_ -Parameter kann eine Beeinträchtigung der Systemleistung führen. 
+Das Festlegen des FOREGROUND_SEARCH-Flags im _ulSearchFlags_ -Parameter kann zu einer Verringerung der Systemleistung führen. 
   
-**SetSearchCriteria** können Sie die Suchkriterien bereits in Bearbeitung einer Suche ändern. Sie können neue Einschränkungen, neue Listen der Ordner für die Suche und eine neue Suche Priorität wie aktualisieren eine Suche auf eine höhere Priorität angeben. Änderungen in Search Priorität bewirken keine vorhandene Suche neu starten, jedoch können weitere Änderungen an den Suchkriterien. 
+Sie können **SetSearchCriteria** verwenden, um die Suchkriterien einer bereits ausgeführten Suche zu ändern. Sie können neue Einschränkungen, neue Ordnerlisten für die Suche und eine neue Suchpriorität angeben, wie beispielsweise das Upgrade einer Suche auf eine höhere Priorität. Änderungen der Suchpriorität führen nicht zu einem Neustart einer vorhandenen Suche, andere Änderungen an den Suchkriterien können jedoch vorgenommen werden. 
   
-Wenn Sie über die Verwendung eines Ordners-Ergebnisse sind, können Sie den Ordner löschen oder lassen Sie ihn zur späteren Verwendung geöffnet bleiben. Wenn Sie den Suchergebnisse Ordner löschen, werden nur Nachricht Links gelöscht. Die tatsächlichen Nachrichten verbleiben in die übergeordneten Ordner. 
+Wenn Sie einen Suchergebnisordner verwenden, können Sie entweder den Ordner löschen oder ihn zur späteren Verwendung geöffnet lassen. Wenn Sie den Ordner Suchergebnisse löschen, werden nur die Nachrichten Links gelöscht. Die tatsächlichen Nachrichten verbleiben in ihren übergeordneten Ordnern. 
   
-Weitere Informationen zu Suchergebnissen Ordnern finden Sie unter [Suchordner MAPI](mapi-search-folders.md). 
+Weitere Informationen zu Suchergebnis Ordnern finden Sie unter [MAPI Search Folders](mapi-search-folders.md). 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|HierarchyTableDlg.cpp  <br/> |CHierarchyTableDlg::OnEditSearchCriteria  <br/> |MFCMAPI (engl.) verwendet die **IMAPIContainer::SetSearchCriteria** -Methode zum Schreiben von Suchkriterien für einen Ordner, nachdem ein Benutzer es bearbeitet wurde.  <br/> |
+|HierarchyTableDlg. cpp  <br/> |CHierarchyTableDlg:: OnEditSearchCriteria  <br/> |MFCMAPI verwendet die **IMAPIContainer:: SetSearchCriteria** -Methode, um Suchkriterien für einen Ordner zu schreiben, nachdem Sie von einem Benutzer bearbeitet wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

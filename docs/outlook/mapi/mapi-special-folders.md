@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f2aa2376-b293-4d05-9104-218cc1fe1758
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 396a6c01d0b9cd867706a7dd4997bd6ddd7fd147
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa221510a5f6a8c8be24b4869960d1770cef5882
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357358"
 ---
 # <a name="mapi-special-folders"></a>MAPI-Spezialordner
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 MAPI definiert einige Ordner, die spezielle sind, da sie vordefinierte Rollen als Standardordner f�r bestimmte Arten von Nachrichten dienen. Diesen Spezialordnern k�nnen in der Regel k�nnen nicht gel�scht werden, und spezielle Eintrag Bezeichnereigenschaften vorhanden sind.
   
@@ -54,12 +54,12 @@ Outlook-Spezialordner werden durch die Eintrags-IDs identifiziert, die in den Or
   
 |**Folder**|**Der festzulegenden Eigenschaft**|
 |:-----|:-----|
-|Calendar  <br/> |**PR_IPM_APPOINTMENT_ENTRYID** ([PidTagIpmAppointmentEntryId](pidtagipmappointmententryid-canonical-property.md))  <br/> |
-|Kontakte  <br/> |**PR_IPM_CONTACT_ENTRYID** ([PidTagIpmContactEntryId](pidtagipmcontactentryid-canonical-property.md))  <br/> |
-|Journal  <br/> |**PR_IPM_JOURNAL_ENTRYID** ([PidTagIpmJournalEntryId](pidtagipmjournalentryid-canonical-property.md))  <br/> |
-|Hinweise  <br/> |**PR_IPM_NOTE_ENTRYID** ([PidTagIpmNoteEntryId](pidtagipmnoteentryid-canonical-property.md))  <br/> |
-|Tasks  <br/> |**PR_IPM_TASK_ENTRYID** ([PidTagIpmTaskEntryId](pidtagipmtaskentryid-canonical-property.md))  <br/> |
-|Entwürfe  <br/> |**PR_IPM_DRAFTS_ENTRYID** ([PidTagIpmDraftsEntryId](pidtagipmdraftsentryid-canonical-property.md))  <br/> |
+|Calendar  <br/> |**PR_IPM_APPOINTMENT_ENTRYID** ([Pidtagipmappointmententryid (](pidtagipmappointmententryid-canonical-property.md))  <br/> |
+|Kontakte  <br/> |**PR_IPM_CONTACT_ENTRYID** ([Pidtagipmcontactentryid (](pidtagipmcontactentryid-canonical-property.md))  <br/> |
+|Journal  <br/> |**PR_IPM_JOURNAL_ENTRYID** ([Pidtagipmjournalentryid (](pidtagipmjournalentryid-canonical-property.md))  <br/> |
+|Hinweise  <br/> |**PR_IPM_NOTE_ENTRYID** ([Pidtagipmnoteentryid (](pidtagipmnoteentryid-canonical-property.md))  <br/> |
+|Aufgaben  <br/> |**PR_IPM_TASK_ENTRYID** ([Pidtagipmtaskentryid (](pidtagipmtaskentryid-canonical-property.md))  <br/> |
+|Entwürfe  <br/> |**PR_IPM_DRAFTS_ENTRYID** ([Pidtagipmdraftsentryid (](pidtagipmdraftsentryid-canonical-property.md))  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

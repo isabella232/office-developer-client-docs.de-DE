@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4ed8cab4-112a-e96a-f4e3-02490a6f87fa
 description: Sperrt die vertikale Position des Shapes, damit es nicht vertikal verschoben werden kann.
-ms.openlocfilehash: 24f6f477860ea3634cfdcfd92199f2de65e543db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6666d47555f8175b4950f95e1fb15abb8b11bfd5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348349"
 ---
-# <a name="lockmovey-cell-protection-section"></a>LockMoveY Cell (Protection Section)
+# <a name="lockmovey-cell-protection-section"></a>Zelle "LockMoveY" (Abschnitt "Protection")
 
 Sperrt die vertikale Position des Shapes, damit es nicht vertikal verschoben werden kann.
   
@@ -25,15 +25,15 @@ Sperrt die vertikale Position des Shapes, damit es nicht vertikal verschoben wer
 | TRUE  <br/> | Vertikale Position ist gesperrt.  <br/> |
 | FALSE  <br/> | Vertikale Position ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockMoveY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockMoveY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockMoveY  <br/> |
+| Zellenname:  <br/> | Zelle LockMoveY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockMoveY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockMoveY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

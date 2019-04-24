@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 34bae703-a979-437c-9d86-8b91e9822a54
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fbba349fd81240a33c08c5adb910c1236222fb30
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8156cb53fc81f4861e4a66da4960df0458ec6c91
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351548"
 ---
 # <a name="mapi-features-and-architecture"></a>MAPI-Features und -Architektur
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Messaging-API (MAPI) besteht aus einer Reihe von common Application programming Interfaces und eine Komponente Dynamic Link Library (DLL). Die Schnittstellen dienen zum Erstellen und Zugriff auf verschiedene Messaginganwendungen und messaging-Systeme, bietet eine einheitliche Umgebung für die Entwicklung und Verwendung und true Unabhängigkeit für beide bereitstellen. Die DLL-Datei enthält das MAPI-Subsystem, verwaltet die Interaktion zwischen Messaginganwendungen Front-End- und Back-End-messaging-Systeme und bietet eine einheitliche Benutzeroberfläche für häufige Aufgaben. MAPI-Subsystems fungiert als Clearing House zentralen vereinheitlicht die verschiedenen Messagingsystemen und mit Clients aus ihre Unterschiede abschirmen.
+Messaging-API (MAPI) besteht aus einem Satz allgemeiner Anwendungsprogrammierschnittstellen und einer DLL-Komponente (Dynamic Link Library). Die Schnittstellen werden für die Erstellung und den Zugriff auf verschiedene Messaging-Anwendungen und Messagingsysteme verwendet, die eine einheitliche Umgebung für die Entwicklung und Verwendung bieten und eine echte Unabhängigkeit für beide bereitstellen. Die DLL enthält das MAPI-Subsystem, das die Interaktion zwischen Front-End-Messaging-Anwendungen und Back-End-Messaging-Systemen verwaltet und eine allgemeine Benutzeroberfläche für häufige Aufgaben bereitstellt. Das MAPI-Subsystem fungiert als zentrales Clearing-Stelle, um die verschiedenen Messagingsysteme zu vereinheitlichen und Clients vor ihren Unterschieden zu schützen.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[MAPI-Konzepte](mapi-concepts.md)
+[MAPI-Konzepte (engl.)](mapi-concepts.md)
 

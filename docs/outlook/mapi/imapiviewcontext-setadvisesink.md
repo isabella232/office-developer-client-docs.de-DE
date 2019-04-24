@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4799084a-b5d1-48c3-a889-b2f0e9d68c30
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 555bb4820dc36934fb28197b7e222633a5248125
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7ee641214e1eaae667af356fd8dbe51ff7dc7982
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351191"
 ---
 # <a name="imapiviewcontextsetadvisesink"></a>IMAPIViewContext::SetAdviseSink
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verwaltet ein Formular Registrierung Erhalt von Benachrichtigungen zu Änderungen im Viewer. 
+Verwaltet die Registrierung eines Formulars, um Benachrichtigungen zu Änderungen im Viewer zu erhalten. 
   
 ```cpp
 HRESULT SetAdviseSink(
@@ -37,31 +37,31 @@ LPMAPIFORMADVISESINK pmvns
 
  _pmvns_
   
-> [in] Zeiger auf ein Formular advise-Empfängerobjekt oder NULL.
+> in Zeiger auf ein Formular Advise Sink-Objekt oder NULL.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Registrierung oder die Löschung für Formular-Benachrichtigung war erfolgreich.
+> Die Registrierung oder Stornierung für die Formular Benachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formularobjekte Aufrufen die **IMAPIViewContext::SetAdviseSink** -Methode, um entweder Register erfahren Sie mehr über die Änderungen im Formular-Viewer oder Abbrechen einer vorherigen Erfassung. Wenn _Pmvns_ auf NULL festgelegt ist, das Formular eine Registrierung abbrechen möchte. Wenn _Pmvns_ verweist auf ein gültiges Formular-Empfänger Advise, möchte, dass das Formular für zukünftige Benachrichtigungen registriert. 
+Formularobjekte rufen die **IMAPIViewContext:: SetAdviseSink** -Methode auf, um sich zu registrieren, um sich über Änderungen im Formular-Viewer zu informieren oder um eine vorherige Registrierung abzubrechen. Wenn _pmvns_ auf NULL festgelegt ist, möchte das Formular eine Registrierung abbrechen. Wenn _pmvns_ auf eine gültige Form Advise-Senke zeigt, möchte das Formular für zukünftige Benachrichtigungen registrieren. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn **SetAdviseSink** enthält ein Formular advise-Empfängerzeiger, halten, um einen Verweis auf ein anderes **SetAdviseSink** aufgerufen wird, Benachrichtigung abzubrechen. Senden Sie eine Benachrichtigung bei einer Änderung wird im Viewer und Laden Sie eine neue Nachricht. 
+Wenn **SetAdviseSink** einen Form Advise-Senk Zeiger enthält, behalten Sie einen Verweis darauf, bis ein weiterer **SetAdviseSink** -Aufruf zum Abbrechen der Benachrichtigung erfolgt. Senden Sie eine Benachrichtigung, wenn eine Änderung in Ihrem Viewer auftritt und wenn Sie eine neue Nachricht laden. 
   
-Weitere Informationen finden Sie unter [Senden und Empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SetAdviseSink  <br/> |MFCMAPI (engl.) implementiert die **IMAPIViewContext::SetAdviseSink** -Methode in dieser Funktion.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: SetAdviseSink  <br/> |MFCMAPI implementiert die **IMAPIViewContext:: SetAdviseSink** -Methode in dieser Funktion.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

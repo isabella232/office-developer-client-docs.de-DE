@@ -1,5 +1,5 @@
 ---
-title: Transportanbieterrolle des MAPI-Subsystems
+title: Transportanbieterrolle im MAPI-Subsystem
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,53 +8,53 @@ api_type:
 - COM
 ms.assetid: 7659369a-0952-4f5a-a86b-91958c4c1a3f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 263370590a35f19482cc5ad7e56c65f6df0087fa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7cadb57706e3feec7ed98dd5e4e8d75967036fef
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356620"
 ---
-# <a name="transport-provider-role-in-the-mapi-subsystem"></a>Transportanbieterrolle des MAPI-Subsystems
+# <a name="transport-provider-role-in-the-mapi-subsystem"></a>Transportanbieterrolle im MAPI-Subsystem
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Transport-Anbieter Dynamic Link Libraries (DLLs) stellen die Schnittstelle zwischen der MAPI-Warteschlange und das Webpart von einem verantwortlich für die Nachricht senden und Empfangen von messaging-System. Die MAPI-Warteschlange und der Adressbuchhierarchie arbeiten zusammen, um die Aufgaben der eine Nachricht senden oder Empfangen einer Nachricht zu verarbeiten. Die MAPI-Warteschlange wird der Adressbuchhierarchie DLL geladen, wenn es zuerst verwendet wird, und gibt es frei, wenn es nicht mehr benötigt wird. Mehrere Transportanbieter auf dem gleichen System installiert werden können, aber MAPI bereitstellt, die eine Warteschlange erforderlich.
+Transport Provider Dynamic-Link Libraries (DLLs) stellen die Schnittstelle zwischen dem MAPI-Spooler und dem Teil eines Messagingsystems bereit, das für das Senden und empfangen von Nachrichten zuständig ist. Die MAPI-Spooler und der Transportanbieter arbeiten zusammen, um die Zuständigkeiten des Sendens einer Nachricht oder des Empfangens einer Nachricht zu behandeln. Der MAPI-Spooler lädt die Transportanbieter-DLL, wenn Sie zuerst verwendet wird, und gibt Sie frei, wenn Sie nicht mehr benötigt wird. Mehrere Transportanbieter können auf demselben System installiert werden, MAPI stellt jedoch den erforderlichen Spooler bereit.
   
-Clientanwendungen kommunizieren in der Regel nicht direkt mit der Adressbuchhierarchie. Vielmehr Clients Übermitteln von Nachrichten über einen Anbieter anmelden und die MAPI-Warteschlange ausgehende Nachrichten an den entsprechenden Transport gesendet und eingehende Nachrichten mit dem entsprechenden Nachrichtenspeicher übermittelt. Die MAPI-Warteschlange führt diese Aufgaben und seine Aufrufe der Anbieter Transport, wenn Vordergrund Applikationen im Leerlauf befinden. Nachdem optional Dialogfelder anzeigen, wenn der Adressbuchhierarchie zuerst angemeldet, Betrieb Transportanbieter im Hintergrund, wenn vom Client zu leeren senden und Empfangen von Warteschlangen aufgerufen. 
+Client Anwendungen kommunizieren in der Regel nicht direkt mit dem Transportanbieter. Stattdessen übermitteln Clients Nachrichten über einen Speicheranbieter, und der MAPI-Spooler sendet ausgehende Nachrichten an den entsprechenden Transportanbieter und übermittelt eingehende Nachrichten an den entsprechenden Nachrichtenspeicher. Der MAPI-Spooler funktioniert und ruft seine Anrufe an Transportanbieter ab, wenn vordergrundanwendungen im Leerlauf sind. Nachdem optional Dialogfelder angezeigt werden, wenn der Transportanbieter zum ersten Mal angemeldet ist, werden Transportanbieter im Hintergrund ausgeführt, es sei denn, der Client wird zum leeren von Sende-und Empfangs Warteschlangen aufgerufen. 
   
-Transportanbieter haben folgende Aufgaben in MAPI-messaging-System:
+Transport Anbieter haben folgende Zuständigkeiten in einem MAPI-Messagingsystem:
   
-- Registrieren Sie die Adresstypen, den, die Sie annehmen können, die MAPI-Warteschlange, damit die MAPI-Warteschlange Nachrichten an die entsprechenden Adressbuchhierarchie je nach die Zieladresse der Nachrichten senden kann. Eine Adressbuchhierarchie kann mehrere Adresstyp registrieren. Transportanbieter können auch bestimmte Empfänger-Adressen mit der MAPI-Warteschlange registrieren. Nachrichten an eine dieser Adressen werden an der Adressbuchhierarchie gesendet werden, die die Adresse für die MAPI-Warteschlange registriert. Weitere Informationen finden Sie unter [Adressbuchhierarchie und MAPI-Warteschlange betriebliche Modell](transport-provider-and-mapi-spooler-operational-model.md).
+- Registrieren Sie die Adresstypen, die Sie mit dem MAPI-Spooler akzeptieren können, damit der MAPI-Spooler Nachrichten abhängig von der Zieladresse der Nachrichten an den entsprechenden Transportanbieter übermitteln kann. Ein Transportanbieter kann mehrere Adresstypen registrieren. Transport Anbieter können auch bestimmte Empfängeradressen mit dem MAPI-Spooler registrieren. An eine dieser Adressen adressierte Nachrichten werden an den Transportanbieter übermittelt, der die Adresse mit dem MAPI-Spooler registriert hat. Weitere Informationen finden Sie unter [Transport Anbieter und MAPI-Spooler-Betriebsmodell](transport-provider-and-mapi-spooler-operational-model.md).
     
-- Übermitteln Sie eingehende Nachrichten an die Warteschlange MAPI. Abhängig von der Art der messaging-System kann ein Transportdienstes entweder direkt benachrichtigt werden, die MAPI-Warteschlange beim Eintreffen einer neuen Nachricht, oder es anfordern kann, dass die MAPI-Warteschlange der Adressbuchhierarchie in regelmäßigen Abständen zu prüfen, ob neue Nachrichten abzufragen.
+- Übermitteln Sie eingehende Nachrichten an den MAPI-Spooler. Je nach Art des Messagingsystems kann ein Transportanbieter den MAPI-Spooler entweder direkt benachrichtigen, wenn eine neue Nachricht eingeht, oder er kann anfordern, dass der MAPI-Spooler den Transportanbieter regelmäßig abfragt, ob er nach neuen Nachrichten suchen soll.
     
-- Konvertieren von MAPI-Eigenschaften zu und von Nachrichteneigenschaften einheitlich in Messagingsystem bereit. Beispielsweise möglicherweise der Adressbuchhierarchie des Senders und des Empfängers Adressen in ausgehenden Nachrichten in ein Format konvertiert, die an die messaging-System akzeptabel ist. Einige Messagingsysteme unterstützen nicht alle Eigenschaften MAPI-Nachricht. Weitere Informationen zum Beibehalten von MAPI-Nachrichteneigenschaften bei der Übermittlung von Nachrichten mit einem Messagingsystem finden Sie unter [Developing eines Transportdienstes TNEF-Enabled](developing-a-tnef-enabled-transport-provider.md).
+- Konvertieren von MAPI-Nachrichteneigenschaften in und aus Nachrichteneigenschaften, die im Messagingsystem systemintern sind. Beispielsweise muss der Transportanbieter die Absender-und Empfängeradressen in einer ausgehenden Nachricht in ein für das Messagingsystem akzeptables Formular konvertieren. Einige Messagingsysteme unterstützen nicht alle MAPI-Nachrichteneigenschaften. Weitere Informationen zum Beibehalten von MAPI-Nachrichteneigenschaften beim Übermitteln von Nachrichten an ein Messagingsystem finden Sie unter [Entwickeln eines TNEF-fähigEn Transport Anbieters](developing-a-tnef-enabled-transport-provider.md).
     
-- Registrieren Sie Nachrichten- und Empfänger Optionen speziell für den Transportdienst.
+- Registrieren von Nachrichten-und Empfängeroptionen für den Transportanbieter.
     
-- Führen Sie die Überprüfung von Anmeldeinformationen, die von der messaging-System erforderlich.
+- Führen Sie die Überprüfung der vom Messagingsystem erforderlichen Anmeldeinformationen durch.
     
-- Zugriff auf ausgehende Nachrichten mithilfe des Message-Objekts übergeben die MAPI-Warteschlange.
+- Zugriff auf ausgehende Nachrichten mithilfe des Message-Objekts, das vom MAPI-Spooler an die Nachricht übergeben wird.
     
-- Nachrichtenformat gemäß dem zugrunde liegenden messaging-System zu übersetzen.
+- Nachrichtenformat nach Bedarf des zugrunde liegenden Messagingsystems übersetzen.
     
-- Benachrichtigen Sie der MAPI-Warteschlange der Empfänger von ausgehenden Nachrichten der Adressbuchhierarchie Verantwortung für die Behandlung durch Festlegen der **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))-Eigenschaft für diese Empfänger angenommen hat.
+- Benachrichtigen Sie den MAPI-Spooler, welche Empfänger einer ausgehenden Nachricht der Transportanbieter die Verantwortung für die Behandlung übernommen hat, indem Sie die **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft für diese Empfänger festlegen.
     
-- Informieren Sie die MAPI-Warteschlange, wenn eine eingehende Nachricht behandelt werden muss.
+- Informieren Sie den MAPI-Spooler, wenn eine eingehende Nachricht behandelt werden muss.
     
-- Übergeben Sie Daten der eingehenden Nachricht an die MAPI-Warteschlange mithilfe von Message-Objekten.
+- Weiterleiten eingehender Nachrichtendaten an den MAPI-Spooler mithilfe von Message-Objekten.
     
-- Alle erforderlichen MAPI Nachrichteneigenschaften für eingehende Nachrichten Werte zuweisen.
+- Weisen Sie allen erforderlichen MAPI-Nachrichteneigenschaften für eingehende Nachrichten Werte zu.
     
-- Löschen der Nachricht aus dem zugrunde liegenden messaging-System nach der Übermittlung, falls erforderlich.
+- Löschen Sie, falls erforderlich, die Nachricht aus dem zugrunde liegenden Messagingsystem.
     
-- Bereitzustellen Sie Statusinformationen für den MAPI-Warteschlange und Clientanwendungen.
+- Bereitstellen von Statusinformationen für die MAPI-Spooler-und Clientanwendungen.
     
-Die folgende Abbildung zeigt eine Adressbuchhierarchie Rolle in Bezug auf die anderen Komponenten der MAPI-Architektur.
+Die folgende Abbildung zeigt die Rolle eines Transportanbieters im Hinblick auf die anderen Komponenten der MAPI-Architektur.
   
 **Transportanbieterrolle in einem Messaging-System**
   
-![Transport-Anbieter-Rolle in einem messaging-system] (media/xp01.gif "Transport-Anbieter-Rolle in einem messaging-system")
+![Transport Anbieterrolle in einem Messagingsystem] (media/xp01.gif "Transport Anbieterrolle in einem Messagingsystem")
   
 

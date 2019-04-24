@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 82a9e379-39e4-4257-8cba-a6758f431cdc
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 843eed06f30dcca530cf4306c9e03bbffbb05af5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e5043a614ccd94994fe86838f15aa1a43f22733e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357330"
 ---
 # <a name="mapiadminprofiles"></a>MAPIAdminProfiles
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein Profil Administration-Objekt. 
+Erstellt ein Profilverwaltungsobjekt. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HRESULT MAPIAdminProfiles(
@@ -44,25 +44,25 @@ HRESULT MAPIAdminProfiles(
 
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die Optionen für die Funktion Eintrag angibt. 
+> in Bitmaske von Flags, die Optionen für die Dienst Eingabefunktion angeben. 
     
  _lppProfAdmin_
   
-> [out] Zeiger auf einen Zeiger auf das neue Profil Administration-Objekt.
+> Out Zeiger auf einen Zeiger auf das neue Profilverwaltungsobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIObjects.cpp  <br/> |CMapiObjects::GetProfAdmin  <br/> |MFCMAPI (engl.) verwendet die **"MAPIAdminProfiles"** -Methode, um das Profil Administration-Objekt abzurufen.  <br/> |
+|MAPIObjects. cpp  <br/> |CMapiObjects:: GetProfAdmin  <br/> |MFCMAPI verwendet die **MAPIAdminProfiles** -Methode, um das Profilverwaltungsobjekt abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

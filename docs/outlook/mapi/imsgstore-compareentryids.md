@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33d70748-0d3f-4be4-bcb5-7ec048887944
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 640923511241b08e5a86e9733aab5cc2e9237c23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2a2439bae79b497f018391983e2c4b03a35eee70
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348790"
 ---
 # <a name="imsgstorecompareentryids"></a>IMsgStore::CompareEntryIDs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintragsbezeichner, um festzustellen, ob sie auf dieselbe Rechtsgrundlage in einem Nachrichtenspeicher verweisen. MAPI übergibt dieses Anrufs mit einem Dienstanbieter nur, wenn der eindeutige Bezeichner (UIDs) in beiden Eintragsbezeichner verglichen werden soll, die von diesem Provider behandelt werden.
+Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf den gleichen Eintrag in einem Nachrichtenspeicher verweisen. Dieser Aufruf wird von MAPI nur dann an einen Dienstanbieter weitergeleitet, wenn die eindeutigen IDs in beiden Eintrags Bezeichnern, die verglichen werden sollen, von diesem Anbieter verarbeitet werden.
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf das durch den Parameter _lpEntryID1_ _._
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird _._
     
  _lpEntryID1_
   
-> [in] Ein Zeiger auf die erste Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
     
  _cbEntryID2_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf das durch den Parameter _lpEntryID2_ _._
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird _._
     
  _lpEntryID2_
   
-> [in] Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
     
  _ulFlags_
   
@@ -62,9 +62,9 @@ HRESULT CompareEntryIDs(
     
  _lpulResult_
   
-> [out] Ein Zeiger auf das Ergebnis des Vergleichs. True, wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen. andernfalls, FALSE.
+> Out Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, andernfalls false. andernfalls FALSE.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -72,25 +72,25 @@ S_OK
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Stellen eine oder beide der Eintragsbezeichner angegeben, wie der Parameter nicht auf Objekte, möglicherweise verweisen, da die entsprechenden Objekte nicht geöffneten und nicht mehr verfügbar sind.
+> Eine oder beide der als Parameter angegebenen Eintragsbezeichner verweisen nicht auf Objekte, möglicherweise weil die entsprechenden Objekte ungeöffnet und derzeit nicht verfügbar sind.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::CompareEntryIDs** -Methode vergleicht zwei Eintragsbezeichner, die mit dem Nachrichtenspeicher, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen gehören. 
+Die **IMsgStore:: CompareEntryIDs** -Methode vergleicht zwei Eintragsbezeichner, die zum Nachrichtenspeicher gehören, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **CompareEntryIDs** ist hilfreich, da ein Objekt mehr als eine gültige Eintrags-ID (beispielsweise nach der Installation einer neuen Version einer Nachricht Speicheranbieter) haben kann. 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann (beispielsweise nach der Installation einer neuen Version eines Nachrichtenspeicher Anbieters). 
   
-Wenn **CompareEntryIDs** einen Fehler zurückgibt, führen Sie keine Aktion basierend auf dem Ergebnis des Vergleichs. In diesem Fall sollten Sie am häufigsten konservative Methode möglich. **CompareEntryIDs** können Fehler auftreten, wenn Sie beispielsweise eine oder beide der Eintragsbezeichner enthält eine ungültige **MAPIUID**. 
+Wenn **CompareEntryIDs** einen Fehler zurückgibt, führen Sie keine Aktion basierend auf dem Ergebnis des Vergleichs aus. Verwenden Sie stattdessen die konservativste Vorgehensweise. **CompareEntryIDs** kann fehlschlagen, wenn beispielsweise eine oder beide der Eintragsbezeichner eine ungültige **MAPIUID**enthält. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|BaseDialog.cpp  <br/> |CBaseDialog::OnCompareEntryIDs  <br/> |MFCMAPI (engl.) verwendet die **IMsgStore::CompareEntryIDs** -Methode zum Vergleichen von Eintrags-IDs.  <br/> |
+|BaseDialog. cpp  <br/> |CBaseDialog:: OnCompareEntryIDs  <br/> |MFCMAPI verwendet die **IMsgStore:: CompareEntryIDs** -Methode, um Eintrags-IDs zu vergleichen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

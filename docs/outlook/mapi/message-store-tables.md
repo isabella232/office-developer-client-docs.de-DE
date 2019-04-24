@@ -7,35 +7,35 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: cdb7d8c5-8e35-47ff-8be7-2cb17e341ad3
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 735c778cd8e6ccb41de3d3d8cb0fdc163493f712
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: dd28c146f6b05b2dea03f73fab7131f23ca99e5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356896"
 ---
 # <a name="message-store-tables"></a>Nachrichtenspeichertabellen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Nachricht Store-Tabelle enthält Informationen zu Anbietern Nachricht im aktuellen Profil. Es wird eine Meldung Store-Tabelle für jedes MAPI-Sitzung von MAPI implementiert und von Clients verwendet wird. Clients können diese Tabelle beispielsweise nach allen Instanzen eines bestimmten Anbieters suchen oder suchen Sie einen bestimmten Nachrichtenspeicher verwenden. 
+Die Nachrichtenspeichertabelle enthält Informationen zu Nachrichtenspeicher Anbietern im aktuellen Profil. Es gibt eine Nachrichtenspeichertabelle für jede MAPI-Sitzung, die von MAPI implementiert und von Clients verwendet wird. Clients können diese Tabelle verwenden, um beispielsweise alle Instanzen eines bestimmten Anbieters zu finden oder einen bestimmten Nachrichtenspeicher zu finden. 
   
-Die Tabelle Store ist dynamisch. Wenn der Benutzer von einer Clientanwendung aus das Profil bearbeitet, werden, Ändern der Standard-Informationsspeicher, beispielsweise die Werte der **PR_DEFAULT_STORE** Eigenschaften für die betroffenen Nachrichtenspeicher unmittelbar aktualisiert. 
+Die Nachrichtenspeichertabelle ist dynamisch. Wenn der Benutzer einer Clientanwendung das Profil bearbeitet und den Standardnachrichtenspeicher ändert, werden beispielsweise die Werte der **PR_DEFAULT_STORE** -Eigenschaften für die betroffenen Nachrichtenspeicher sofort aktualisiert. 
   
-Clientzugriff durch Aufrufen der Methode [IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md) die Nachricht Store-Tabelle. 
+Clients greifen auf die Nachrichtenspeichertabelle zu, indem Sie die [IMAPISession:: GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode aufrufen. 
   
-Die folgenden Eigenschaften bilden die erforderliche Spalte in der Nachricht Store Tabelle festgelegt:
+Die folgenden Eigenschaften stellen den erforderlichen Spaltensatz in der Nachrichtenspeichertabelle dar:
   
 |||
 |:-----|:-----|
-|**PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md))  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
-|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |
-|**PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |
-|**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |
-|**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
+|**PR_DEFAULT_STORE** ([Pidtagdefaultstore (](pidtagdefaultstore-canonical-property.md))  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))  <br/> |
+|**PR_MDB_PROVIDER** ([Pidtagstoreprovider (](pidtagstoreprovider-canonical-property.md))  <br/> |**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |
+|**PR_PROVIDER_DISPLAY** ([Pidtagproviderdisplay (](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md))  <br/> |
+|**PR_RESOURCE_FLAGS** ([Pidtagresourceflags (](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([Pidtagresourcetype (](pidtagresourcetype-canonical-property.md))  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

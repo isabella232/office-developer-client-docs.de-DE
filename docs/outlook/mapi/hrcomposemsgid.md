@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb76b147-6552-4cc4-920f-699170aea17f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3bcad4c236f71390f7a048eb66860720e9180e06
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c035780d3d790d94551860a418401e63da1c2151
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348048"
 ---
 # <a name="hrcomposemsgid"></a>HrComposeMsgID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine ASCII-Zeichenfolge, die eine zusammengesetzter Eintrags-ID für ein Objekt, das in der Regel eine Meldung in einem Nachrichtenspeicher darstellt. 
+Erstellt eine ASCII-Zeichenfolge, die eine verknüpfte Eintrags-ID für ein Objekt darstellt, in der Regel eine Nachricht in einem Nachrichtenspeicher. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HrComposeMsgID(
@@ -48,38 +48,38 @@ HrComposeMsgID(
 
  _psession_
   
-> [in] Zeiger auf die Sitzung von der Clientanwendung verwendet. 
+> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
     
  _cbStoreRecordKey_
   
-> [in] Größe in Bytes des Schlüssels Datensatz des Nachrichtenspeichers, die die Nachricht oder eines anderen Objekts enthält. Wenn 0 (null) im _CbStoreRecordKey_ -Parameter übergeben wird, wird der _PszMsgID_ Parameter verweist auf eine Kopie des Eintrags-ID in Text konvertiert. 
+> in Größe (in Bytes) des Daten Satz Schlüssels des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. Wenn NULL im _cbStoreRecordKey_ -Parameter übergeben wird, zeigt der _pszMsgID_ -Parameter auf eine Kopie der Eintrags-ID, die in Text konvertiert wurde. 
     
  _pStoreRecordKey_
   
-> [in] Zeiger auf den Eintrag Schlüssel des Nachrichtenspeichers, die die Nachricht oder eines anderen Objekts enthält. 
+> in Zeiger auf den Datensatzschlüssel des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. 
     
  _cbMsgEID_
   
-> [in] Größe des Eintrags-ID der Nachricht oder eines anderen Objekts in Bytes. 
+> in Größe (in Bytes) der Eintrags-ID der Nachricht oder eines anderen Objekts. 
     
  _pMsgEID_
   
-> [in] Zeiger auf die Eintrags-ID des Objekts. 
+> in Zeiger auf die Eintrags-ID des Objekts. 
     
  _pszMsgID_
   
-> [out] Zeiger auf die zurückgegebene ASCII-Zeichenfolge. Wenn der Parameter _CbStoreRecordKey_ größer als NULL ist, wird der _PszMsgID_ Parameter verweist auf ein zusammengesetzter Eintrags-ID in Text konvertiert. Wenn _CbStoreRecordKey_ gleich NULL ist, _PszMsgID_ verweist auf eine noncompound Eintrags-ID in Text konvertiert. 
+> Out Zeiger auf die zurückgegebene ASCII-Zeichenfolge. Wenn der _cbStoreRecordKey_ -Parameter größer als NULL ist, zeigt der _pszMsgID_ -Parameter auf eine verknüpfte Eintrags-ID, die in Text konvertiert wurde. Wenn _cbStoreRecordKey_ ist, verweist _pszMsgID_ auf eine nicht zusammengesetzte Eintrags-ID, die in Text konvertiert wurde. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn die Nachricht oder eines anderen Objekts für die die zusammengesetzter Eintrags-ID erstellt wird, wird in einem Nachrichtenspeicher befindet, wird die Bezeichnerzeichenfolge aus Eintrags-ID für das Objekt und den Store-Eintrag Schlüssel erstellt. Ist das Objekt nicht in einem Speicher, d. h., ist wenn die Byteanzahl für den Store-Eintrag Schlüssel in der _CbStoreRecordKey_ -Parameter übergeben NULL ist, ist Eintrags-ID für das Objekt einfach kopiert und in eine Zeichenfolge konvertiert. 
+Wenn die Nachricht oder ein anderes Objekt, für das die verknüpfte Eintrags-ID erstellt wird, in einem Nachrichtenspeicher gespeichert ist, wird die ID-Zeichenfolge aus der Eintrags-ID des Objekts und dem Record-Schlüssel des Speichers erstellt. Wenn sich das Objekt nicht in einem Speicher befindet, das heißt, wenn die Bytezahl für den im _cbStoreRecordKey_ -Parameter übergebenen Speicher Eintragsschlüssel 0 (null) ist, wird die Eintrags-ID des Objekts einfach kopiert und in eine Zeichenfolge konvertiert. 
   
-Aufrufen der Funktion **HrComposeMsgID** entspricht dem Aufrufen der [HrComposeEID](hrcomposeeid.md) und klicken Sie dann die Funktion [HrSzFromEntryID](hrszfromentryid.md) . 
+Das Aufrufen der **HrComposeMsgID** -Funktion entspricht dem Aufrufen der [HrComposeEID](hrcomposeeid.md) -Funktion und dann der [HrSzFromEntryID](hrszfromentryid.md) -Funktion. 
   
- **HrComposeMsgID** von Clientanwendungen-Objekte in mehreren Informationsspeichern mithilfe von zusammengesetzten-Eintragsbezeichner entwickelt. Eine Anwendung kann die [HrDecomposeMsgID](hrdecomposemsgid.md) -Funktion, um die zusammengesetzter Eintrags-ID in seiner ursprünglichen Bestandteile aufgeteilt aufrufen. 
+ Mit **HrComposeMsgID** können Clientanwendungen mit Objekten in mehreren speichern arbeiten, die mit verknüpften Eingabe Bezeichnern verwendet werden. Eine Anwendung kann die [HrDecomposeMsgID](hrdecomposemsgid.md) -Funktion aufrufen, um den verknüpften Eintragsbezeichner in seine ursprünglichen Bestandteile aufzuteilen. 
   
 

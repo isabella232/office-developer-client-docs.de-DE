@@ -1,26 +1,26 @@
 ---
-title: ColorSchemeIndex Cell (Theme Properties Section)
+title: ColorSchemeIndex Cell (Theme Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb84f71e-59c4-43d4-a28b-c3d6f267d2ae
-description: Bestimmt den Index des Designs, die die Form Farbschema after, als ganze Zahl akzeptiert.
-ms.openlocfilehash: 03f354890c8dbce74da6b1171b3b3aaf4bf73ad3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den Index des Designs, nach dem das Farbschema des Shapes stattfindet, als ganze Zahl.
+ms.openlocfilehash: d67363b48454a717914b8ff9e39952609d848118
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357099"
 ---
-# <a name="colorschemeindex-cell-theme-properties-section"></a>ColorSchemeIndex Cell (Theme Properties Section)
+# <a name="colorschemeindex-cell-theme-properties-section"></a>ColorSchemeIndex Cell (Theme Properties section)
 
-Bestimmt den Index des Designs, die die Form Farbschema after, als ganze Zahl akzeptiert.
+Bestimmt den Index des Designs, nach dem das Farbschema des Shapes stattfindet, als ganze Zahl.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **ColorSchemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **ColorSchemeIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

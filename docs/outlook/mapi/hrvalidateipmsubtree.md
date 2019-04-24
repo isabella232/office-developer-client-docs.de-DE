@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6454c1fa-5216-4934-a908-48c634ac4a07
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2625b148d15c2f5ccf65eedf3a1b1f2c9d0d133e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6cf51985e534434c584eff4d63dfbf239121ee85
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346767"
 ---
 # <a name="hrvalidateipmsubtree"></a>HrValidateIPMSubtree
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einen Nachrichtenspeicher hinzugefügt standard zwischen Personen (IPM) Nachrichtenordner. 
+Fügt einem Nachrichtenspeicher standardmäßige zwischenmenschliche Nachrichten-Ordner hinzu. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HrValidateIPMSubtree(
@@ -47,27 +47,27 @@ HrValidateIPMSubtree(
 
  _lpMDB_
   
-> [in] Zeiger auf die Nachricht speichern-Objekt, dem der Ordner hinzufügen. 
+> in Zeiger auf das Nachrichtenspeicherobjekt, dem die Ordner hinzugefügt werden sollen. 
     
  _ulFlags_
   
-> [in] Bitmaske aus Flags verwendet, um zu steuern, wie die Ordner erstellt werden. Die folgenden Kennzeichen können festgelegt werden:
+> in Bitmaske der Flags, die verwendet werden, um zu steuern, wie die Ordner erstellt werden. Die folgenden Flags können festgelegt werden:
     
 MAPI_FORCE_CREATE 
   
-> Die Ordner sollte vor dem Erstellen der, überprüft werden, selbst wenn die Eigenschaften des Nachrichtenspeichers Geben Sie an, dass sie gültig sind. Eine Clientanwendung wird dieses Flag in der Regel, wenn ein Fehler weist darauf hin, dass die Struktur eines vorhandenen Ordners beschädigt ist. 
+> Die Ordner sollten vor der Erstellung überprüft werden, auch wenn die Eigenschaften des Nachrichtenspeichers darauf hinweisen, dass Sie gültig sind. Eine Clientanwendung legt dieses Flag in der Regel fest, wenn ein Fehler darauf hinweist, dass die Struktur eines vorhandenen Ordners beschädigt wurde. 
     
 MAPI_FULL_IPM_TREE 
   
-> Der vollständige Satz IPM Ordner sollte im Stammordner der Nachrichtenspeicher erstellt werden. Der Ordner Titel in der Hierarchie sind:
+> Der vollständige Satz von IPM-Ordnern sollte im Stammordner des Nachrichtenspeichers erstellt werden. Die Ordnertitel in der Hierarchie sind:
     
     - Ordneransichten
     
     - Allgemeine Ansichten
     
-    - Stamm der Suche\*
+    - Such Stamm\*
     
-    - IPM-Teilstruktur\*
+    - IPM-unterStruktur\*
     
     - Posteingang
     
@@ -77,57 +77,57 @@ MAPI_FULL_IPM_TREE
     
     - Gesendete Elemente
     
-    die drei Ordner, in dem mit markiert \* werden den Mindestsatz erstellt, auch wenn das Flag MAPI_FULL_IPM_TREE nicht festgelegt wurde. Eine Clientanwendung wird dieses Flag in der Regel, wenn der Nachrichtenspeicher, in dem der Ordner sind zu erstellenden, des Standard-Informationsspeichers ist.
+    Dabei sind die drei mit \* gekennzeichneten Ordner der Mindestsatz, der auch dann erstellt wird, wenn das MAPI_FULL_IPM_TREE-Flag nicht festgelegt wurde. Eine Clientanwendung legt dieses Flag in der Regel fest, wenn der Nachrichtenspeicher, in dem die Ordner erstellt werden sollen, der Standardspeicher ist.
     
  _lpcValues_
   
-> [in, out] Zeiger auf die Anzahl der [SPropValue](spropvalue.md) Strukturen in das im Parameter _LppProps_ zurückgegebene Array. Der Wert des Parameters _LpcValues_ kann 0 (null) sein, wenn _LppProps_ NULL ist. 
+> [in, out] Zeiger auf die Anzahl der [SPropValue](spropvalue.md) -Strukturen im Array, die im _lppProps_ -Parameter zurückgegeben werden. Der Wert des _lpcValues_ -Parameters kann NULL sein, wenn _lppProps_ NULL ist. 
     
  _lppProps_
   
-> [in, out] Zeiger auf einen Zeiger auf ein Array von **SPropValue** -Strukturen, Eigenschaftswerte für die Eigenschaft **PR_VALID_FOLDER_MASK** ([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md)) und für die entsprechenden Ordner Eintrags-ID-Eigenschaften enthält. Wenn **HrValidateIPMSubtree** einen Posteingang im Nachrichtenspeicher erstellt, enthält das Array **SPropValue** ein Posteingang Eintrags-ID mit einem speziellen Eigenschaftentag als codierte `PROP_TAG(PT_BINARY, PROP_ID_NULL)`. Der Parameter _LppProps_ möglicherweise NULL-Wert zurück, der angibt, dass die aufrufende Implementierung nicht erfordert, dass ein **SPropValue** Array zurückgegeben werden. 
+> [in, out] Zeiger auf einen Zeiger auf ein Array von **SPropValue** -Strukturen, die Eigenschaftswerte für die **PR_VALID_FOLDER_MASK** ([pidtagvalidfoldermask (](pidtagvalidfoldermask-canonical-property.md))-Eigenschaft und die entsprechenden Eigenschaften für die Ordnereintrags-ID enthält. Wenn **HrValidateIPMSubtree** einen Posteingang im Nachrichtenspeicher erstellt, enthält das **SPropValue** -Array eine Posteingangs-ID mit einem speziellen Eigenschafts, das als `PROP_TAG(PT_BINARY, PROP_ID_NULL)`codiert ist. Der _lppProps_ -Parameter kann NULL sein, wodurch angegeben wird, dass für die aufrufende Implementierung kein **SPropValue** -Array zurückgegeben werden muss. 
     
  _lppMapiError_
   
-> [out] Zeiger auf einen Zeiger auf eine [MAPIERROR](mapierror.md) -Struktur, die Angaben zu Version, Komponente und Kontext für einen Fehler enthält. Der Parameter _LppMAPIError_ ist auf NULL festgelegt, wenn keine **MAPIERROR** -Struktur zurückgegeben wird. 
+> Out Zeiger auf einen Zeiger auf eine [MAPIERROR](mapierror.md) -Struktur, die Versions-, Komponenten-und Kontextinformationen für einen Fehler enthält. Der Parameter _lppMAPIError_ wird auf NULL festgelegt, wenn keine **MAPIERROR** -Struktur zurückgegeben wird. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI verwendet die Funktion **HrValidateIPMSubtree** intern standard IPM-Unterstruktur in einem Nachrichtenspeicher erstellt wird, wenn der Informationsspeicher zum ersten Mal geöffnet wird, oder ein Speichers Standard speichern vorgenommen wird. Diese Funktion kann auch verwendet werden von Clientanwendungen überprüfen oder Reparatur von e-Mail-Ordnern. 
+MAPI verwendet die **HrValidateIPMSubtree** -Funktion intern, um die standardmäßige IPM-Unterstruktur in einem Nachrichtenspeicher zu erstellen, wenn der Informationsspeicher zum ersten Mal geöffnet wird oder wenn ein Speicher als Standardspeicher erstellt wird. Diese Funktion kann auch von Clientanwendungen verwendet werden, um Standardnachrichten Ordner zu überprüfen oder zu reparieren. 
   
- **HrValidateIPMSubtree** wird immer die Suche Domänenstamm und in IPM-Unterstruktur Ordner im Stammordner des Speichers und der Ordner Gelöschte Elemente im Ordner "IPM-Unterstruktur" erstellt. Der Ordner IPM-Unterstruktur ist der Stamm der Hierarchie IPM in dieser Nachrichtenspeicher. Suche Stammordner kann als Basis für eine Unterstruktur für Suchergebnisse Ordner verwendet werden. 
+ **HrValidateIPMSubtree** erstellt immer die Ordner Search root und IPM Subtree im Stammordner des Stores und im Ordner "Gelöschte Elemente" im Ordner "IPM subtree". Der IPM-subtree-Ordner ist der Stamm der IPM-Hierarchie in diesem Nachrichtenspeicher. Der Stammordner der Suche kann als Stamm einer Unterstruktur für Suchergebnisordner verwendet werden. 
   
-IPM Clients sollte ihre Ordneransicht beginnend am IPM Unterstruktur Stammordner und Anzeigen von untergeordneten Ordner darunter angezeigt werden. Informationen in den Stammordner eines Nachrichtenspeichers sollte nicht in einem Client-Benutzeroberfläche angezeigt werden. Dies bedeutet, dass wenn ein Client Informationen ausblenden muss, die Informationen in das Stammverzeichnis IPM Unterstruktur versetzt werden kann, ist es nicht für den Benutzer sichtbar. Im Gegensatz dazu können sie nicht-IPM-Anwendungen, die Nachrichten und Ordnern für den Benutzer, beispielsweise in einem serverbasierten Nachrichtenspeicher, unsichtbar werden müssen, außerhalb der Hierarchie IPM platzieren. 
+IPM-Clients sollten ihre Ordneransicht beginnend beim Stammordner der IPM-Unterstruktur anzeigen und die darunter liegenden Ordner anzeigen. Informationen im Stammordner eines Nachrichtenspeichers sollten nicht auf der Benutzeroberfläche eines Clients angezeigt werden. Diese Funktion bedeutet, dass, wenn ein Clientinformationen ausblenden muss, die Informationen im Stammverzeichnis der IPM-Unterstruktur abgelegt werden können, wo es für den Benutzer nicht sichtbar ist. Im Gegensatz dazu können nicht-IPM-Anwendungen, die Nachrichten und Ordner für den Benutzer unsichtbar sein müssen, beispielsweise in einem Server basierten Nachrichtenspeicher, außerhalb der IPM-Hierarchie platziert werden. 
   
- **HrValidateIPMSubtree** wird die **PR_VALID_FOLDER_MASK** -Eigenschaft, um anzugeben, ob jeder IPM-Ordner erstellt werden, eine gültige Eingabe-ID hat. Die folgenden Eigenschaften des Nachrichtenspeichers Eintrag sind der entsprechenden Ordner auf den Eintrag festgelegt und im Parameter _LppProps_ zusammen mit **PR_VALID_FOLDER_MASK**zurückgegeben: 
+ **HrValidateIPMSubtree** legt die **PR_VALID_FOLDER_MASK** -Eigenschaft fest, um anzugeben, ob jeder erstellte IPM-Ordner eine gültige Eintrags-ID aufweist. Die folgenden Eigenschaften des Eintrags Identifiers des Nachrichtenspeichers werden auf die Eintragsbezeichner der entsprechenden Ordner festgelegt und im _lppProps_ -Parameter zusammen mit **PR_VALID_FOLDER_MASK**zurückgegeben: 
   
- **PR_COMMON_VIEWS_ENTRYID** ([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md))
+ **PR_COMMON_VIEWS_ENTRYID** ([Pidtagcommonviewsentryid (](pidtagcommonviewsentryid-canonical-property.md))
   
-> **PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md))
+> **PR_FINDER_ENTRYID** ([Pidtagfinderentryid (](pidtagfinderentryid-canonical-property.md))
   
-> **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md))
+> **PR_IPM_OUTBOX_ENTRYID** ([Pidtagipmoutboxentryid (](pidtagipmoutboxentryid-canonical-property.md))
   
-> **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md))
+> **PR_IPM_SENTMAIL_ENTRYID** ([Pidtagipmsentmailentryid (](pidtagipmsentmailentryid-canonical-property.md))
   
-> **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md))
+> **PR_IPM_SUBTREE_ENTRYID** ([Pidtagipmsubtreeentryid (](pidtagipmsubtreeentryid-canonical-property.md))
   
-> **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md))
+> **PR_IPM_WASTEBASKET_ENTRYID** ([Pidtagipmwastebasketentryid (](pidtagipmwastebasketentryid-canonical-property.md))
   
-> **PR_VIEWS_ENTRYID** ([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md))
+> **PR_VIEWS_ENTRYID** ([Pidtagviewsentryid (](pidtagviewsentryid-canonical-property.md))
   
-> Ein Platzhalter [PROP_TAG](prop_tag.md) für den Posteingang IPM (PT_BINARY, PROP_ID_NULL). 
+> Ein Platzhalter- [PROP_TAG](prop_tag.md) für den IPM-Posteingang (PT_BINARY, PROP_ID_NULL). 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MstStoreDlg.cpp  <br/> |CMsgStoreDlg::OnValidateIPMSubtree  <br/> |MFCMAPI (engl.) verwendet die **HrValidateIPMSubtree** -Methode, um einen Nachrichtenspeicher standard Ordner hinzuzufügen.  <br/> |
+|MstStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnValidateIPMSubtree  <br/> |MFCMAPI verwendet die **HrValidateIPMSubtree** -Methode, um einem Nachrichtenspeicher Standardordner hinzuzufügen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b680f5a7-0df3-4e7b-bf3b-f149eb42be8d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 48df5362106e849f061b0797736fad82fafa6584
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e0c3747b48526b715f976e7bf3c142097c85f29a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349252"
 ---
 # <a name="imessageopenattach"></a>IMessage::OpenAttach
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Öffnet eine Anlage. 
   
@@ -40,57 +40,57 @@ HRESULT OpenAttach(
 
  _ulAttachmentNum_
   
-> [in] Die Indexnummer der Anlage für das Öffnen, wie in der Anlage **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft gespeichert. Diese Indexnummer eindeutig identifiziert die Anlage in der Nachricht und ist nur im Kontext der Nachricht gültig.
+> in Index Nummer der zu öffnenden Anlage, wie in der **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage gespeichert. Diese Indexnummer identifiziert die Anlage in der Nachricht eindeutig und ist nur im Kontext der Nachricht gültig.
     
  _lpInterface_
   
-> [in] Zeiger auf die Schnittstelle-ID (IID), das die Schnittstelle für den Zugriff auf die Anlage verwendet werden darstellt. Bei Übergabe von NULL führt der Anlage Standardschnittstelle oder **IAttach**, zurückgegeben wird. 
+> in Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf die Anlage verwendet werden soll. Das übergeben von NULL-Ergebnissen in der Standardschnittstelle oder **IAttach**, die zurückgegeben wird. 
     
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die steuert, wie die Anlage geöffnet wird. Die folgenden Kennzeichen können festgelegt werden: 
+> in Bitmaske von Flags, die Steuern, wie die Anlage geöffnet wird. Die folgenden Flags können festgelegt werden: 
     
 MAPI_BEST_ACCESS 
   
-> Fordert an, dass die Anlage mit den maximale Netzwerkberechtigungen für den Benutzer und die maximale Anwendung Clientzugriff zulässig geöffnet werden. Beispielsweise sollte der Client Lese-/Schreibberechtigung verfügt, das Attachment-Objekt mit Lese-/Schreibzugriff geöffnet werden; Wenn der Client schreibgeschützten Zugriff hat, sollte die Anlage mit schreibgeschützten Zugriff geöffnet werden. 
+> Fordert, dass die Anlage mit den maximal zulässigen Netzwerkberechtigungen für den Benutzer und dem maximalen Zugriff auf Clientanwendungen geöffnet wird. Wenn der Client beispielsweise über Lese-/Schreibzugriff verfügt, muss die Anlage mit Lese-/Schreibzugriff geöffnet werden. Wenn der Client schreibgeschützten Zugriff hat, sollte die Anlage mit Lesezugriff geöffnet werden. 
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **OpenAttach** erfolgreich, möglicherweise beendet, bevor die Anlage vollständig an den aufrufenden Client verfügbar ist. Wenn die Anlage nicht verfügbar ist, kann nachfolgende anrufen darauf verursacht einen Fehler. 
+> Ermöglicht **** das erfolgreiche zurückgeben von openattach, möglicherweise vor der vollständigen Verfügbarkeit der Anlage für den aufrufenden Client. Wenn die Anlage nicht verfügbar ist, kann durch einen nachfolgenden Aufruf eine Fehlermeldung verursacht werden. 
     
 MAPI_MODIFY 
   
-> Anfragen Lese-/Schreibberechtigung. Standardmäßig werden Anlagen mit schreibgeschützten Zugriff geöffnet, und Clients sollte nicht verwendet werden, unter der Voraussetzung, die Lese-/Schreibzugriff, dass die Berechtigung erteilt wurde. 
+> Fordert Lese-/Schreibzugriff-Berechtigung an. Anlagen werden standardmäßig mit schreibgeschütztem Zugriff geöffnet, und Clients sollten nicht unter der Annahme arbeiten, dass die Berechtigung zum Lesen/Schreiben erteilt wurde. 
     
  _lppAttach_
   
-> [out] Zeiger auf einen Zeiger auf die Anlage öffnen.
+> Out Zeiger auf einen Zeiger auf die offene Anlage.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Anlage wurde erfolgreich geöffnet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMessage::OpenAttach** -Methode wird ein e-Mail-Anlage geöffnet. 
+Die **IMessage:: openattach** -Methode öffnet die Anlage einer Nachricht. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Anlage zu öffnen, benötigen Sie Zugriff auf die Anlage Nummer oder **PR_ATTACH_NUM** -Eigenschaft. Rufen Sie [IMessage::GetAttachmentTable](imessage-getattachmenttable.md) zum Abrufen der Nachricht Anlagentabelle, und suchen Sie die Zeile, die die Anlage geöffnet werden soll. Weitere Informationen finden Sie unter [Öffnen einer Anlage](opening-an-attachment.md) . 
+Zum Öffnen einer Anlage benötigen Sie Zugriff auf die Anlagennummer oder die **PR_ATTACH_NUM** -Eigenschaft. Rufen Sie [IMessage::](imessage-getattachmenttable.md) getattachmentable auf, um die Attachment-Tabelle der Nachricht abzurufen und die Zeile zu suchen, die die zu öffnende Anlage darstellt. Weitere Informationen finden Sie unter [Öffnen einer Anlage](opening-an-attachment.md) . 
   
-Versuchen Sie nicht, öffnen Sie eine Anlage mehrmals; die Ergebnisse sind nicht definiert und die Nachricht Speicheranbieter abhängig.
+Versuchen Sie nicht, eine Anlage mehrmals zu öffnen. die Ergebnisse sind nicht definiert und vom Nachrichtenspeicher Anbieter abhängig.
   
-Sie können anfordern, dass die Anlage im Lese-/Schreibmodus anstelle der Standardmodus schreibgeschützt geöffnet werden. Bis zu der Nachricht Informationsdienst jedoch ist, ob die Anlage tatsächlich im Lese-/Schreibmodus geöffnet werden. Sie können entweder Versuch, ändern die Anlage Vorbereitung auf mögliche Ausfälle behandeln oder Überprüfen Sie die Zugriffsebene, die durch die Anlage **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md))-Eigenschaft, abrufen, falls verfügbar erteilt wurde. 
+Anstelle des Standard schreibgeschützten Modus können Sie anfordern, dass die Anlage im Lese-/Schreibzugriff-Modus geöffnet wird. Ob die Anlage tatsächlich im Lese-/Schreibzugriff-Modus geöffnet wird, liegt jedoch beim Nachrichtenspeicher Anbieter. Sie können entweder versuchen, die Anlage zu ändern, die Behandlung möglicher Ausfälle vorzubereiten oder die Zugriffsebene zu überprüfen, die durch Abrufen der **PR_ACCESS_LEVEL** ([pidtagaccesslevel (](pidtagaccesslevel-canonical-property.md))-Eigenschaft der Anlage gewährt wurde, falls diese verfügbar ist. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|AttachmentsDlg.cpp verwendet, um  <br/> |CAttachmentsDlg::OpenItemProp  <br/> |MFCMAPI (engl.) wird die **IMessage::OpenAttach** -Methode verwendet, um Attachment-Objekte zu öffnen,  <br/> |
+|AttachmentsDlg. cpp  <br/> |CAttachmentsDlg:: OpenItemProp  <br/> |MFCMAPI verwendet die **IMessage:: openattach** -Methode zum Öffnen von Attachment-Objekten,  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

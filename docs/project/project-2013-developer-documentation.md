@@ -17,11 +17,11 @@ ms.assetid: f66adbf1-5cb5-4dd0-be08-45e1c88c010c
 description: Hier finden Sie Dokumentationen, Codebeispiele, Anleitungen und Programmierungsreferenzen, die beim Erstellen von Apps für den Office Store oder beim Erstellen eines privaten App-Katalogs behilflich sind. Sie helfen zudem beim Anpassen und Integrieren von Project Server und der Project-Clients mit einer großen Vielfalt an anderen Desktop- und Geschäftsanwendungen für das Enterprise-Projektmanagement.
 localization_priority: Priority
 ms.openlocfilehash: cb4dd31a76b897bb5dba39e6b20d0a238bd95293
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357043"
 ---
 # <a name="project-2013-developer-documentation"></a>Project 2013-Entwicklerdokumentation
 

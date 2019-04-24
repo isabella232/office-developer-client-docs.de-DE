@@ -1,5 +1,5 @@
 ---
-title: PidTagReportingMessageTransferAgentCertificate (kanonische Eigenschaft)
+title: Kanonische Pidtagreportingmessagetransferagentcertificate (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02e18d97-25d2-49a3-a63d-26a70895e21c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fbadc9407a181ba58b4bcd726df05465b11dc789
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 04d97dfeeef28aac1d0bbf963074b4262d4fed3d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346305"
 ---
-# <a name="pidtagreportingmessagetransferagentcertificate-canonical-property"></a>PidTagReportingMessageTransferAgentCertificate (kanonische Eigenschaft)
+# <a name="pidtagreportingmessagetransferagentcertificate-canonical-property"></a>Kanonische Pidtagreportingmessagetransferagentcertificate (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Bezeichner für den Message Transfer Agent, der ein Bericht generiert.
+Enthält einen Bezeichner für den Nachrichtenübermittlungs-Agent, der einen Bericht generiert hat.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_REPORTING_MTA_CERTIFICATE  <br/> |
-|Kennung:  <br/> |0 x 1004  <br/> |
+|Kennung:  <br/> |0x1004  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft entspricht einem x. 400-Bericht-Message-Attribut.
+Diese Eigenschaft entspricht einem X. 400-Bericht pro Nachrichtenattribut.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

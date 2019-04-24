@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9be6b88e-2510-4b82-8b35-5f20a0f99fc0
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a176b51577c7d4616d988a0b28f2afcfb554e9f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1486730dfa2d76bf8e97439213851b195504962f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348818"
 ---
 # <a name="imsgstoreabortsubmit"></a>IMsgStore::AbortSubmit
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Versucht, eine Nachricht aus der ausgehenden Warteschlange zu entfernen.
   
@@ -39,45 +39,45 @@ AbortSubmit(
 
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID der Nachricht aus der ausgehenden Warteschlange zu entfernen. 
+> in Ein Zeiger auf die Eintrags-ID der Nachricht, die aus der ausgehenden Warteschlange entfernt werden soll. 
     
  _ulFlags_
   
 > [in] Reserviert. NULL muss sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Nachricht wurde aus der ausgehenden Warteschlange erfolgreich entfernt.
+> Die Nachricht wurde erfolgreich aus der ausgehenden Warteschlange entfernt.
     
 MAPI_E_NOT_IN_QUEUE 
   
-> Die Nachricht vom _LpEntryID_ ist nicht mehr in der Nachrichtenspeicher ausgehenden Warteschlange, in der Regel, da es bereits gesendet wurde. 
+> Die von _lpEntryID_ angegebene Nachricht befindet sich nicht mehr in der ausgehenden Warteschlange des Nachrichtenspeichers, in der Regel, weil Sie bereits gesendet wurde. 
     
 MAPI_E_UNABLE_TO_ABORT 
   
-> Die Nachricht vom _LpEntryID_ gesperrt ist, durch die MAPI-Warteschlange, und der Vorgang kann nicht abgebrochen werden. 
+> Die von _lpEntryID_ angegebene Nachricht wird vom MAPI-Spooler gesperrt, und der Vorgang kann nicht abgebrochen werden. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::AbortSubmit** -Methode versucht, eine gesendete Nachricht aus dem Nachrichtenspeicher ausgehende Warteschlange zu entfernen. 
+Die **IMsgStore:: AbortSubmit** -Methode versucht, eine übermittelte Nachricht aus der ausgehenden Warteschlange des Nachrichtenspeichers zu entfernen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Nachdem eine Nachricht gesendet wird, ist das Abbrechen der Übermittlung durch Aufrufen von **AbortSubmit** die einzige Aktion, die für die Nachricht ausgeführt werden kann. Davon ausgehen, dass **AbortSubmit** immer erfolgreich ausgeführt werden kann. Je nachdem, wie das zugrunde liegende messaging-System implementiert wird möglicherweise es nicht möglich, das Senden der Nachricht abzubrechen. 
+Nachdem eine Nachricht übermittelt wurde, wird die Übermittlung durch Aufrufen von **AbortSubmit** abgebrochen und ist die einzige Aktion, die für die Nachricht ausgeführt werden kann. Erwarten Sie nicht, dass **AbortSubmit** immer erfolgreich ist. Je nachdem, wie das zugrunde liegende Messagingsystem implementiert wird, kann das Senden der Nachricht möglicherweise nicht abgebrochen werden. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |CFolderDlg::OnAbortSubmit  <br/> |MFCMAPI (engl.) verwendet die **IMsgStore::AbortSubmit** -Methode, um der Übermittlung der ausgewählten Nachricht abzubrechen.  <br/> |
+|FolderDlg. cpp  <br/> |CFolderDlg:: OnAbortSubmit  <br/> |MFCMAPI verwendet die **IMsgStore:: AbortSubmit** -Methode, um die Übermittlung der ausgewählten Nachricht abzubrechen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

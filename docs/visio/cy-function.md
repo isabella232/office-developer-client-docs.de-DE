@@ -8,44 +8,44 @@ f1_keywords:
 - Vis_DSS.chm82253223
 localization_priority: Normal
 ms.assetid: abb27f90-21b4-08cd-6995-9520fbcebd78
-description: Gibt einen Währungswert zurück.
-ms.openlocfilehash: ea7696e7628939466730b9c054a706a7a9fa264e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen Currency-Wert zurück.
+ms.openlocfilehash: 65c88d69669e2fa7f708402d9d50dfe035456edb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344989"
 ---
 # <a name="cy-function"></a>CY Function
 
-Gibt einen Währungswert zurück.
+Gibt einen Currency-Wert zurück.
   
 ## <a name="syntax"></a>Syntax
 
-CY (** *Wert* **, ** *CyID* **) 
+CY (* * *Wert* * *, * * *cyID* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Value_ <br/> |Optional  <br/> |**Nummer oder Zeichenfolge** <br/> |Eine Zahl oder eine Zeichenfolge, die Währung-spezifischen Formatierung enthält. Wenn nicht angegeben, wird der Währungswert entsprechend das Währungsformat in die Standardeinstellungen des Systems Region und Sprache formatiert.  <br/> |
-| _cyID_ <br/> |Optional  <br/> |**Nummer** <br/> |Eine numerische Währung-ID oder eine Zeichenfolge mit drei Zeichen in Anführungszeichen für die Abkürzung ISO 4217.  <br/> |
+| _value_ <br/> |Optional  <br/> |**Nummer oder Zeichenfolge** <br/> |Eine Zahl oder eine Zeichenfolge, die währungsspezifische Formatierung enthält. Wenn dieser Parameter nicht angegeben wird, wird der Währungswert entsprechend dem Währungsformat in der Region und den Spracheinstellungen des Systems formatiert.  <br/> |
+| _cyID_ <br/> |Optional  <br/> |**Number** <br/> |Eine numerische Währungs-ID oder eine aus drei Zeichen bestehende Zeichenfolge für die ISO 4217-Abkürzung.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Um eine andere Währung angeben, müssen Sie eine gültige _CyID_einbeziehen. Eine Liste finden Sie unter [About Currency-Konstanten](about-currency-constants.md).
+Wenn Sie eine andere Währung angeben möchten, müssen Sie eine gültige _cyID_einfügen. Eine entsprechende Liste finden Sie unter [Informationen zu Währungskonstanten](about-currency-constants.md).
   
-Wenn der _Wert_ nicht kompatibel mit dem angegebenen Währungstyp ist oder wenn ein ungültiges Argument wie "keine Zahl" angegeben ist, wird ein #VALUE! Fehler wird zurückgegeben. Wenn der _Wert größer als 922,337,203,685,477.5807 oder kleiner als -922.337.203.685.477,5808 ist, wird ein #VALUE!_ Fehler wird zurückgegeben. 
+Wenn der _Wert_ mit dem angegebenen Währungstyp nicht kompatibel ist oder wenn ein ungültiges Argument wie "not a Number" angegeben ist, wird ein #VALUE! zurückgegeben. Wenn der _Wert_ größer als 922.337.203.685.477,5807 oder kleiner als-922.337.203.685.477,5808 ist, wird ein #VALUE! zurückgegeben. 
   
-Verwenden Sie für eine bessere Genauigkeit mit sehr großen Währungswerten mit Bruchzahlangaben für eine Einheit wie 3.6 Billionen, Zeichenfolge-Argumente _Wert_.
+Zur besseren Genauigkeit bei sehr großen Währungswerten, die Brüche einer Einheit wie 3,6 Billionen, verwenden Sie String-Argumente für _value_.
   
-Angabe einer ungültigen _CyID_ wird ein Fehler zurückgegeben. 
+Durch Angeben eines ungültigen _cyID_ wird ein Fehler zurückgegeben. 
   
 ## <a name="example-1"></a>Beispiel 1
 
 Wenn der Benutzer in den Regions- und Spracheinstellungen US-Dollar festgelegt hat:
   
-CY(999998.993)
+CY (999998.993)
   
 Gibt $999.998,99 zurück.
   

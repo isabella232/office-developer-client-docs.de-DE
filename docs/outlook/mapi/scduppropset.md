@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 165ffbd0-54aa-4692-8bd1-09e6ff3762df
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8bbe8aa00ce446d228c23e1d474fa5140ae7b40a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 77a376bba8d65737be84e2af62e65e0419d20957
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351268"
 ---
 # <a name="scduppropset"></a>ScDupPropset
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Array-Eigenschaft ein Wert in einem Block MAPI-Speicher die Vorgänge der Funktionen [ScCopyProps](sccopyprops.md) und [ScCountProps](sccountprops.md) kombinieren dupliziert. 
+Dupliziert ein Eigenschafts Wertarray in einem einzelnen MAPI-Blockspeicher, der die Vorgänge der [ScCopyProps](sccopyprops.md) -und [ScCountProps](sccountprops.md) -Funktionen kombiniert. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScDupPropset(
@@ -46,21 +46,21 @@ SCODE ScDupPropset(
 
  _cprop_
   
-> [in] Anzahl der-Eigenschaftswerte im Array durch den Parameter _Rgprop_ angegeben. 
+> in Die Anzahl der Eigenschaftswerte im durch den _rgprop_ -Parameter angegebenen Array. 
     
  _rgprop_
   
-> [in] Zeiger auf ein Array von [SPropValue](spropvalue.md) Strukturen definieren die Eigenschaftswerte dupliziert werden. 
+> in Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die Eigenschaftswerte definieren, die dupliziert werden sollen. 
     
  _lpAllocateBuffer_
   
-> [in] Zeiger auf die Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) , Speicher für das duplizierte Array verwendet werden soll. 
+> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Zuweisen von Arbeitsspeicher für das duplizierte Array verwendet werden soll. 
     
  _prgprop_
   
-> [out] Zeiger auf die Ausgangsposition im Arbeitsspeicher, in dem das duplizierte zurückgegebene Array von **SPropValue** -Strukturen gespeichert ist. 
+> Out Zeiger auf die Anfangsposition im Arbeitsspeicher, in der das zurückgegebene duplizierte Array von **SPropValue** -Strukturen gespeichert wird. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   

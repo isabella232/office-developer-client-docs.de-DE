@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 2a8561a9-df09-453a-b415-c45910625870
 description: This topic describes how to programmatically update a profile in Outlook 2016 by adding a MAPI property to the emsuid section of the Profile object.
 ms.openlocfilehash: 85d084705c1e36f5fe3b0ed268094f86b38d6383
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345941"
 ---
 # <a name="programmatically-create-a-profile-in-outlook"></a>Programmgesteuertes Erstellen eines Profils in Outlook
 
@@ -27,7 +27,7 @@ In MAPI können Sie ein Profil aktualisieren, indem Sie die Eigenschaft **PR_PRO
     
 2. Using the [IMAPIProp](https://msdn.microsoft.com/library/cc815525.aspx) interface, go to the Outlook Profile section. 
     
-   Dies kann in der MAPI von Outlook schwierig sein, da in 2010 und höher der globale Profilabschnitt nicht mehr vorhanden ist. Um den Profilabschnitt zu finden, suchen Sie die Eigenschaft PR_EMSMDB_SECTION_UID (0x3D150102). Der Wert ist die GUID des Profilabschnitts, gespeichert im Binärformat, der in den nachfolgenden Schritten verwendet wird. Merken Sie sich diesen Wert. 
+   This can be difficult in Outlook�s MAPI, since in 2010 and above there is no longer the global profile section. To find the Profile section, find the property PR_EMSMDB_SECTION_UID (0x3D150102). The value will be the GUID of the profile section persisted in binary form, which will be used in the subsequent steps. You will need to remember this value. 
     
 3. Add the property **PR_PROFILE_USER_SMTP_EMAIL_ADDRESS_W**. 
     

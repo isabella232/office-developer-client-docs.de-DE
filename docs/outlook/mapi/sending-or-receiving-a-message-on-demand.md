@@ -1,5 +1,5 @@
 ---
-title: Senden oder Empfangen einer Nachricht bei Bedarf
+title: Senden oder Empfangen einer Nachricht nach Bedarf
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,57 +8,57 @@ api_type:
 - COM
 ms.assetid: 479404c5-4926-402a-aa12-75dd23276d75
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 668e1c57c59bf2356be808e0347e1bd5135478a2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 15b9c8c5a56b6f37464d2469bd1d7b3e24596502
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356476"
 ---
-# <a name="sending-or-receiving-a-message-on-demand"></a>Senden oder Empfangen einer Nachricht bei Bedarf
+# <a name="sending-or-receiving-a-message-on-demand"></a>Senden oder Empfangen einer Nachricht nach Bedarf
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients greifen in der Regel auf das MAPI-Subsystem – die MAPI-Warteschlange und die-Dienstanbieter – den Zeitpunkt der Nachrichtenübermittlung und Empfang von Nachrichten zu behandeln. Jedoch können Sie diese Zeitdauer ändern, mithilfe des Objekts Status, der die MAPI-Warteschlange oder eines Transportdienstes.
+Clients verwenden in der Regel das MAPI-Subsystem, die MAPI-Warteschlange und die Dienstanbieter, um den Zeitpunkt der Nachrichtenübermittlung und des Empfangs zu behandeln. Sie können dieses Timing jedoch ändern, indem Sie das Status-Objekt entweder des MAPI-Spoolers oder eines Transportanbieters verwenden.
   
-Die [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) -Methode entfernt alle Nachrichten aus Warteschlangen für eine oder mehrere Adressbuchhierarchie eingehend oder ausgehend. Die folgenden Verfahren werden zwei Verfahren zum Senden oder Empfangen von Nachrichten bei Bedarf beschrieben. Die erste Prozedur verwendet die MAPI-Warteschlange Status-Objekt zum Leeren der Warteschlangen aller Transport Provider im Profil. im zweite Verfahren leert die Warteschlange eines einzigen Anbieters. 
+Mit der [IMAPIStatus:: FlushQueues](imapistatus-flushqueues.md) -Methode werden alle Nachrichten aus den eingehenden oder ausgehenden Warteschlangen eines oder mehrerer Transportanbieter entfernt. In den folgenden Verfahren werden zwei Techniken zum Senden oder empfangen von Nachrichten bei Bedarf beschrieben. Das erste Verfahren verwendet das Status-Objekt des MAPI-Spoolers, um die Warteschlangen aller Transportanbieter im Profil zu leeren. bei der zweiten Prozedur wird die Warteschlange eines einzelnen Transportanbieters geleert. 
   
-### <a name="to-flush-all-incoming-or-outgoing-queues-in-a-single-operation"></a>Um alle ein- oder ausgehenden Warteschlangen in einem einzigen Vorgang zu leeren.
+### <a name="to-flush-all-incoming-or-outgoing-queues-in-a-single-operation"></a>So leeren Sie alle eingehenden oder ausgehenden Warteschlangen in einem einzelnen Vorgang
   
-1. Rufen Sie [IMAPISession::GetStatusTable](imapisession-getstatustable.md) Zugriff auf die Statustabelle. 
+1. Rufen Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable auf, um auf die Statustabelle zuzugreifen. 
     
-2. Rufen Sie die Statustabelle [IMAPITable::SetColumns](imapitable-setcolumns.md) -Methode zum Beschränken der Spalte **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) festgelegt.
+2. Rufen Sie die [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode der Statustabelle auf, um den Spaltensatz auf **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_RESOURCE_TYPE** ([pidtagresourcetype (](pidtagresourcetype-canonical-property.md)) einzuschränken.
     
-3. Erstellen Sie eine eigenschaftseinschränkung mithilfe der Struktur einer [SPropertyRestriction](spropertyrestriction.md) **PR_RESOURCE_TYPE** mit MAPI_SPOOLER übereinstimmen. 
+3. Erstellen Sie eine Eigenschaftseinschränkung mithilfe einer [SPropertyRestriction](spropertyrestriction.md) -Struktur, um **PR_RESOURCE_TYPE** mit MAPI_SPOOLER zu vergleichen. 
     
-4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md), indem Sie in der Struktur **SPropertyRestriction** übergeben, um die Zeile abzurufen, die den Status der Warteschlange MAPI darstellt. 
+4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md)auf, und übergeben Sie die **SPropertyRestriction** -Struktur, um die Zeile abzurufen, die den Status des MAPI-Spoolers darstellt. 
     
-5. Übergeben Sie die Spalte **PR_ENTRYID** an [IMAPISession::OpenEntry](imapisession-openentry.md) , um die MAPI-Warteschlange Statusobjekt zu öffnen. 
+5. Führen Sie die **PR_ENTRYID** -Spalte an [IMAPISession:: OpenEntry](imapisession-openentry.md) , um das Statusobjekt des MAPI-Spoolers zu öffnen. 
     
-6. Rufen Sie die MAPI-Warteschlange [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) -Methode übergeben Sie FLUSH_NO_UI Flag unterdrückt die Benutzeroberfläche und die FLUSH_DOWNLOAD oder FLUSH_UPLOAD Flag zum Leeren der Warteschlangen ausgehenden oder eingehenden. 
+6. Rufen Sie die [IMAPIStatus:: FlushQueues](imapistatus-flushqueues.md) -Methode des MAPI-Spoolers auf, und übergeben Sie das FLUSH_NO_UI-Flag, um die Benutzeroberfläche und das FLUSH_DOWNLOAD-oder FLUSH_UPLOAD-Flag zum leeren der ausgehenden oder eingehenden Warteschlangen zu unterdrücken. 
     
-7. Lassen Sie die Status-Objekts und der Tabelle "Status" als auch die [SRowSet](srowset.md) -Struktur, die für die Tabelle zugeordnet ist. 
+7. Geben Sie das Status-und die Status-Tabelle sowie die [SRowSet](srowset.md) -Struktur frei, die für die Tabelle reserviert ist. 
     
-### <a name="to-flush-incoming-or-outgoing-queues-individually-by-transport-provider"></a>Zum ein- oder ausgehende Warteschlangen einzeln durch Adressbuchhierarchie leeren
+### <a name="to-flush-incoming-or-outgoing-queues-individually-by-transport-provider"></a>So leeren Sie eingehende oder ausgehende Warteschlangen einzeln über den Transportanbieter
   
-1. Rufen Sie [IMAPISession::GetStatusTable](imapisession-getstatustable.md) Zugriff auf die Statustabelle. 
+1. Rufen Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable auf, um auf die Statustabelle zuzugreifen. 
     
-2. Rufen Sie die Statustabelle [IMAPITable::SetColumns](imapitable-setcolumns.md) -Methode zum Beschränken der Spalte **PR_ENTRYID** und **PR_RESOURCE_TYPE**festgelegt.
+2. Rufen Sie die [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode der Statustabelle auf, um den Spaltensatz auf **PR_ENTRYID** und **PR_RESOURCE_TYPE**zu begrenzen.
     
-3. Erstellen Sie eine eigenschaftseinschränkung mithilfe der Struktur einer [SPropertyRestriction](spropertyrestriction.md) **PR_RESOURCE_TYPE** mit MAPI_TRANSPORT_PROVIDER übereinstimmen. 
+3. Erstellen Sie eine Eigenschaftseinschränkung mithilfe einer [SPropertyRestriction](spropertyrestriction.md) -Struktur, um **PR_RESOURCE_TYPE** mit MAPI_TRANSPORT_PROVIDER zu vergleichen. 
     
-4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md), indem Sie in der Struktur **SPropertyRestriction** übergeben, um die Zeilen abrufen, die vom Transportanbieter für bereitgestellt werden. 
+4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md)auf, und übergeben Sie die **SPropertyRestriction** -Struktur, um die Zeilen abzurufen, die von Transportanbietern bereitgestellt werden. 
     
-5. Für jede Zeile aus **HrQueryAllRows**zurückgegeben:
+5. Für jede Zeile, die von **HrQueryAllRows**zurückgegeben wird:
     
-    1. Übergeben Sie die Spalte **PR_ENTRYID** [IMAPISession::OpenEntry](imapisession-openentry.md) zum Öffnen der Adressbuchhierarchie Status-Objekts. 
+    1. Führen Sie die **PR_ENTRYID** -Spalte an [IMAPISession:: OpenEntry](imapisession-openentry.md) , um das Status-Objekt des Transportanbieters zu öffnen. 
         
-    2. Überprüfen Sie, dass der Status Transportobjekt die **FlushQueues** -Methode unterstützt überprüfen, dass dessen **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))-Eigenschaft der STATUS_FLUSH_QUEUES hat flag festgelegt. 
+    2. Überprüfen Sie, ob das Transportstatus Objekt die **FlushQueues** -Methode unterstützt, indem Sie überprüfen, ob die **PR_RESOURCE_METHODS** ([PIDTAGRESOURCEMETHODS (](pidtagresourcemethods-canonical-property.md))-Eigenschaft das STATUS_FLUSH_QUEUES-Flag festgelegt ist. 
         
-    3. Wenn unterstützt, rufen Sie [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md). Wenn nicht unterstützt, rufen Sie die MAPI-Warteschlange **IMAPIStatus::FlushQueues** -Methode, die Eintrags-ID des Transports im _LpTargetTransport_ -Parameter übergeben. Finden Sie im vorherige Verfahren Anweisungen zum Zugreifen auf die MAPI-Warteschlange Status-Objekt. Legen Sie das Kennzeichen FLUSH_DOWNLOAD zum Leeren der ausgehenden Warteschlangen oder FLUSH_UPLOAD-Flag, um die eingehenden Warteschlangen zu leeren. 
+    3. Wenn unterstützt, rufen Sie [IMAPIStatus:: FlushQueues](imapistatus-flushqueues.md). Wenn diese nicht unterstützt wird, rufen Sie die **IMAPIStatus:: FlushQueues** -Methode des MAPI-Spoolers auf, und übergeben Sie den Eintragsbezeichner des Transports im _lpTargetTransport_ -Parameter. Im vorherigen Verfahren finden Sie Anweisungen für den Zugriff auf das Statusobjekt des MAPI-Spoolers. Legen Sie das FLUSH_DOWNLOAD-Flag so fest, dass die ausgehenden Warteschlangen oder das FLUSH_UPLOAD-Flag geleert werden. 
         
-    4. Lassen Sie die Status-Objekts und der Tabelle "Status" als auch die [SRowSet](srowset.md) -Struktur, die für die Tabelle zugeordnet ist. 
+    4. Geben Sie das Status-und die Status-Tabelle sowie die [SRowSet](srowset.md) -Struktur frei, die für die Tabelle reserviert ist. 
     
-Die MAPI-Warteschlange berücksichtigt das Flag FLUSH_NO_UI, wie die meisten LAN-Transport-Anbieter. Nicht alle Transportanbieter für berücksichtigt jedoch dieses Flag, insbesondere solche, die ein Modem explizit verwenden und Remote Access Service (RAS). RAS wurde nicht entwickelt, damit Clients die Benutzeroberfläche installieren können. Es ist möglich, damit ein Client konfiguriert werden, damit es verbinden kann, ohne die Interaktion eines Benutzers, aber es ist schwierig und erfordert sehr gute Kenntnisse über den Client Message-Dienste.
+Der MAPI-Spooler würdigt das FLUSH_NO_UI-Flag wie die meisten LAN-Transportanbieter. Nicht alle Transportanbieter Ehren dieses Flag, insbesondere solche, die explizit ein Modem verwenden, und den RAS-Dienst. RAS wurde nicht entwickelt, um Clients das Unterdrücken der Benutzeroberfläche zu ermöglichen. Es ist möglich, dass ein Client so konfiguriert ist, dass er eine Verbindung herstellen kann, ohne die Interaktion eines Benutzers zu erfordern, aber es ist schwierig und erfordert eine genaue Kenntnis der Nachrichtendienste des Clients.
   
 

@@ -8,37 +8,37 @@ api_type:
 - COM
 ms.assetid: ce643afe-e5b6-42f2-b3cf-4efb957c4f2e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 85bd3f7db53f195295405fb0b02c25f084786a67
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c4d2439c06da292c9cc72c1506a1ae4d10c6704f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357001"
 ---
 # <a name="message-content"></a>Nachrichteninhalt
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Es gibt zwei mögliche Codierung für den Nachrichteninhalt: eine Verwendung von MIME, die andere mit Uuencode. MIME ist die bevorzugte Codierung. Darüber hinaus definiert MAPI eine Eigenschaft pro Empfänger, **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)), der steuert, ob die TNEF-Informationen in eine ausgehende Nachricht enthalten sein sollen oder nicht. Es bestehen nun also insgesamt vier Arten der Codierung Nachrichteninhalt:
+Für den Nachrichteninhalt gibt es zwei mögliche Codierungen: eine mit MIME, die andere mit UUEncode. MIME ist die bevorzugte Codierung. Darüber hinaus definiert MAPI eine empfängerspezifische Eigenschaft, **PR_SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md)), die bestimmt, ob TNEF-Informationen in eine ausgehende Nachricht aufgenommen werden sollen. Es gibt also insgesamt vier Möglichkeiten zum Codieren von Nachrichteninhalten:
   
-- Mit TNEF MIME-Ermittlung
+- MIME mit TNEF
     
-- Ohne TNEF MIME-Ermittlung
+- MIME ohne TNEF
     
-- UUENCODE mit TNEF
+- UUEncode mit TNEF
     
-- UUENCODE ohne TNEF
+- UUEncode ohne TNEF
     
-Auswählen von MIME oder Uuencode für ausgehende Nachrichten wurde nicht angegeben.
+Das Auswählen von MIME oder UUENCODE für ausgehende Nachrichten wird nicht angegeben.
   
-Die folgenden Eigenschaften werden von TNEF ausgeschlossen: **PR_SENDER_\***, **PR_ATTACH_DATA_\***, **PR_BODY**. Alle anderen Übertragungseinehit Nachrichteneigenschaften sind im TNEF-Datenstrom enthalten.
+Die folgenden Eigenschaften sind aus TNEF ausgeschlossen: **PR_SENDER_\***, **PR_ATTACH_DATA_\***, **PR_BODY**. Alle anderen übertragenen Nachrichteneigenschaften sind im TNEF-Stream enthalten.
   
-Die folgenden Vorschläge sind vorgesehen, um eine Liste der Parameter bereitzustellen, die die Implementierung entscheiden kann, wie unterstützt:
+Die folgenden Vorschläge sollen eine Liste von Parametern enthalten, die die Implementierung für die Unterstützung entscheiden kann:
   
-- Ob zum Codieren mithilfe von MIME oder Uuencode für ausgehende Nachrichten: boolean.
+- Ob mit MIME oder UUENCODE für ausgehende Nachrichten codiert werden soll: Boolean.
     
-- Zeichensatz für ausgehende Nachrichten: Zeichenfolge (kopiert direkt an Charset-Parameter) oder -Enumeration (intern übersetzt Charset-Zeichenfolge).
+- Zeichensatz für ausgehende Nachrichten: Zeichenfolge (direkt in den Charset-Parameter kopiert) oder Enumeration (intern in charset-Zeichenfolge übersetzt).
     
 

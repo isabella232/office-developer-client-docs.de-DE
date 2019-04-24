@@ -1,5 +1,5 @@
 ---
-title: PidTagSendRichInfo (kanonische Eigenschaft)
+title: Kanonische Pidtagsendrichinfo (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: e85fc766-197a-484f-b600-68cd28a052a2
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: a7ad27d757d4ed6df58c597bf17d9e5412f83457
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342518"
 ---
-# <a name="pidtagsendrichinfo-canonical-property"></a>PidTagSendRichInfo (kanonische Eigenschaft)
+# <a name="pidtagsendrichinfo-canonical-property"></a>Kanonische Pidtagsendrichinfo (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält TRUE, wenn der Empfänger alle Nachrichteninhalt, einschließlich Rich Text Format (RTF) und Objekten Object Linking and Embedding (OLE) empfangen kann. 
+Enthält TRUE, wenn der Empfänger alle Nachrichteninhalte empfangen kann, einschließlich Rich-Text-Format (RTF) und Objekt Verknüpfungs-und Einbettungs Objekte (OLE). 
   
 |||
 |:-----|:-----|
@@ -34,62 +34,62 @@ Enthält TRUE, wenn der Empfänger alle Nachrichteninhalt, einschließlich Rich 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Es wird empfohlen, dass diese Eigenschaft Verteilerliste und messaging User-Objekte verfügbar machen. 
+Es wird empfohlen, dass Verteilerlisten-und Messaging-Benutzerobjekte diese Eigenschaft verfügbar machen. 
   
-Diese Eigenschaft gibt an, ob der Absender den Empfänger zu MAPI-fähigen betrachtet. 
+Diese Eigenschaft gibt an, ob der Absender der Ansicht ist, dass der Empfänger MAPI-fähig ist. 
   
-Wenn diese Eigenschaft auf TRUE festgelegt ist, können die Transport- und Gateway des gesamten Inhalts der Nachricht, einschließlich RTF und OLE-Objekte übertragen. Der Adressbuchhierarchie und Gateway sollte Transport Neutral Encapsulation Format (TNEF) verwenden, um alle Eigenschaften kapseln, die nicht für alle der Messagingsysteme beteiligten systemeigene sind. 
+Wenn diese Eigenschaft auf TRUE festgelegt ist, können Transport und Gateway den vollständigen Inhalt der Nachricht übertragen, einschließlich RTF-und OLE-Objekten. Transport-und Gateway sollten Transport Neutral Encapsulation Format (TNEF) verwenden, um alle Eigenschaften einzukapseln, die nicht für alle Beteiligten Messagingsysteme systemeigen sind. 
   
-Wenn diese Eigenschaft auf FALSE festgelegt ist, können der Adressbuchhierarchie und Gateway Nachrichteninhalt verwerfen, die systemeigene-Clients verwendet werden können. Beispielsweise kann die Clients RTF nicht unterstützen, der Adressbuchhierarchie nur-Text senden. 
+Wenn diese Eigenschaft auf FALSE festgelegt ist, können Transportanbieter und Gateway Nachrichten verwerfen, die von ihren systemeigenen Clients nicht verwendet werden können. Wenn die Clients beispielsweise RTF nicht unterstützen, kann der Transportanbieter nur nur-Text senden. 
   
-Wenn diese Eigenschaft nicht festgelegt ist, wird durch die Implementierung der Adressbuchhierarchie, Message Transfer Agent (MTA) oder Gateway Standardverhalten bestimmt. Von adressbuchanbietern implementierte sind zur Unterstützung von dieser Eigenschaft nicht erforderlich. Beispielsweise können ein eng gekoppelten Adresse Adressbuch und Transport Anbieter senden TNEF jedoch nie RTF-Format verwenden. 
+Wenn diese Eigenschaft nicht festgelegt ist, wird das Standardverhalten durch die Implementierung des Transportanbieters, MTA (Message Transfer Agent) oder Gateways bestimmt. Adressbuchanbieter müssen diese Eigenschaft nicht unterstützen. Ein eng gekoppelter Adressbuch-und Transportanbieter kann beispielsweise TNEF senden, aber nie RTF verwenden. 
   
-Der Client sollte nicht der Adressbuchhierarchie voraussetzen und Gateway TNEF auf eigene Initiative verwenden. Einige Transportanbieter und Gateways, die Unterstützung von TNEF ohne Berücksichtigung des Werts dieser Eigenschaft übertragen, aber andere ablehnen, zu erstellen oder TNEF senden, wenn sie nicht auf TRUE festgelegt ist. 
+Der Client sollte nicht davon ausgehen, dass der Transportanbieter und das Gateway TNEF aus eigener Initiative verwenden. Einige Transportanbieter und Gateways, die TNEF unterstützen, übertragen Sie ohne Rücksicht auf den Wert dieser Eigenschaft, andere jedoch ablehnen, TNEF zu erstellen oder zu senden, wenn Sie nicht auf TRUE festgelegt ist. 
   
 > [!NOTE]
-> Die Einstellung dieser Eigenschaft und die Entscheidungen basierend auf seinen Wert sind für einzelne pro Empfänger. 
+> Die Einstellung dieser Eigenschaft und die Entscheidungen, die auf ihrem Wert basieren, sind pro Empfänger. 
   
-Der Wert von MAPI wird standardmäßig auf "true" festgelegt. Ein Aufruf von [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md) oder einen Anbieter Aufrufen [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md) Client kann das **MAPI_SEND_NO_RICH_INFO** Bit im Parameter _UlFlags_ festgelegt, MAPI, um diese Eigenschaft auf FALSE festgelegt. Von der Benutzeroberfläche erstellt Fly verwenden Sie den Wert durch die Vorlage erstellen angegeben. 
+Standardmäßig wird der Wert von MAPI auf TRUE festgelegt. Ein Client, der [IAddrBook:: CreateOneOff](iaddrbook-createoneoff.md) oder einen Anbieter aufruft, der [IMAPISupport:: CreateOneOff](imapisupport-createoneoff.md) aufgerufen hat, kann das **MAPI_SEND_NO_RICH_INFO** -Bit im Parameter _ulFlags_ festlegen, wodurch MAPI diese Eigenschaft auf false festgelegt wird. Von der Benutzeroberfläche erstellte einmaliges verwenden den von der Erstellungs Vorlage angegebenen Wert. 
   
-Wenn der Name kann nicht aufgelöst werden, aber als eine IP-Adresse (SMTP) interpretiert werden kann, ist diese Eigenschaft auf Aufrufe der [IAddrBook::ResolveName](iaddrbook-resolvename.md) -Methode auf FALSE festgelegt. Um als eine IP-Adresse zu verstehen, muss der Anzeigename des nicht aufgelösten Eintrags im Format X@Y. Z, beispielsweise "pete@pinecone.com". 
+Bei Aufrufen der [IAddrBook::](iaddrbook-resolvename.md) ResolveName-Methode, wenn der Name nicht aufgelöst, aber als Internet Adresse (SMTP) interpretiert werden kann, wird diese Eigenschaft auf false festgelegt. Um als Internet Adresse interpretiert werden zu können, muss der Anzeigename des nicht aufgelösten Eintrags im Format X @ Y liegen. Z, beispielsweise "pete@pinecone.com". 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.
+> Gibt die Eigenschaften und Vorgänge für Listen von Benutzern, Kontakten, Gruppen und Ressourcen an.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für e-Mail-Nachrichtenobjekte zulässig sind.
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> aus dem Internet standard-e-Mail-Konventionen für die Message-Objekten.
+> von Internet Standard-e-Mail-Konventionen zu Nachrichtenobjekten.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagAttachDataObject (kanonische Eigenschaft)](pidtagattachdataobject-canonical-property.md)
+[Kanonische Pidtagattachdataobject (-Eigenschaft](pidtagattachdataobject-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -98,5 +98,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

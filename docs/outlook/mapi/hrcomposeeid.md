@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8aba90d8-ea1f-4636-af80-17bfeadbdfa0
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 335fac38ff3f084195a000ad32a27adcb85c1cc6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7de4fdefee67c79fb15ac28f821b015cdda6708d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348062"
 ---
 # <a name="hrcomposeeid"></a>HrComposeEID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt einen Eintrag zusammengesetzter Bezeichner für ein Objekt, das in der Regel eine Meldung in einem Nachrichtenspeicher. 
+Erstellt eine verknüpfte Eintrags-ID für ein Objekt, in der Regel eine Nachricht in einem Nachrichtenspeicher. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HrComposeEID(
@@ -49,41 +49,41 @@ HrComposeEID(
 
  _psession_
   
-> [in] Zeiger auf die Sitzung von der Clientanwendung verwendet. 
+> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
     
  _cbStoreRecordKey_
   
-> [in] Größe des Schlüssels Datensatz des Nachrichtenspeichers aufbewahren der Nachricht oder eines anderen Objekts in Bytes. Wenn 0 (null) der _PpEID_ -Parameter verweist auf eine Kopie des Eintrags-ID des Objekts in der _CbStoreRecordKey_ -Parameter übergeben wird. 
+> in Größe (in Byte) des Daten Satz Schlüssels des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt hält. Wenn NULL im _cbStoreRecordKey_ -Parameter übergeben wird, zeigt der _ppEID_ -Parameter auf eine Kopie der Eintrags-ID des Objekts. 
     
  _pStoreRecordKey_
   
-> [in] Zeiger auf den Eintrag Schlüssel des Nachrichtenspeichers, die die Nachricht oder eines anderen Objekts enthält. 
+> in Zeiger auf den Datensatzschlüssel des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. 
     
  _cbMsgEID_
   
-> [in] Größe des Eintrags-ID der Nachricht oder eines anderen Objekts in Bytes. 
+> in Größe (in Bytes) der Eintrags-ID der Nachricht oder eines anderen Objekts. 
     
  _pMsgEID_
   
-> [in] Zeiger auf die Eintrags-ID des Objekts. 
+> in Zeiger auf die Eintrags-ID des Objekts. 
     
  _pcbEID_
   
-> [out] Zeiger auf die Größe des zurückgegebene Bezeichner in Bytes. 
+> Out Zeiger auf die Größe des zurückgegebenen Bezeichners in Byte. 
     
  _ppEID_
   
-> [out] Zeiger auf einen Zeiger auf den Bezeichner des zurückgegebenen Objekts. Wenn der Wert des Parameters _CbStoreRecordKey_ größer als NULL ist, zeigt der _PpEID_ -Parameter auf einen Zeiger auf das zusammengesetzter Eintrags-ID, die erstellt wird. Wenn _CbStoreRecordKey_ gleich NULL ist, zeigt _PpEID_ auf einen Zeiger auf eine Kopie des Eintrags-ID für das Objekt. 
+> Out Zeiger auf einen Zeiger auf den zurückgegebenen Eintragsbezeichner. Wenn der Wert des _cbStoreRecordKey_ -Parameters größer als NULL ist, zeigt der Parameter _ppEID_ auf einen Zeiger auf den verknüpften Eintragsbezeichner, der erstellt wird. Wenn _cbStoreRecordKey_ ist, verweist _ppEID_ auf einen Zeiger auf eine Kopie des Eintrags Bezeichners des Objekts. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn die Nachricht oder eines anderen Objekts für die die zusammengesetzter Eintrags-ID erstellt wird in einem Nachrichtenspeicher befindet, ist der Bezeichner aus Eintrags-ID für das Objekt und den Store-Eintrag Schlüssel erstellt. Ist das Objekt nicht in einem Speicher, d. h., wird Wenn die Byteanzahl für den Store-Eintrag Schlüssel übergebenen _CbStoreRecordKey_ 0 (null) ist, ist das Objekt Eintrags-ID einfach kopiert. 
+Wenn die Nachricht oder ein anderes Objekt, für das die verknüpfte Eintrags-ID erstellt wird, in einem Nachrichtenspeicher gespeichert ist, wird der Bezeichner aus der Eintrags-ID des Objekts und dem Record-Schlüssel des Speichers erstellt. Wenn sich das Objekt nicht in einem Speicher befindet, das heißt, wenn die Bytezahl für den in _cbStoreRecordKey_ übergebenen Speicher Eintragsschlüssel NULL ist, wird die Eintrags-ID des Objekts einfach kopiert. 
   
-Die Funktion **HrComposeEID** ermöglicht, dass Anwendungen-Objekte in mehreren Informationsspeichern mithilfe von zusammengesetzten-Eintragsbezeichner entwickelt. Eine Anwendung kann die [HrDecomposeEID](hrdecomposeeid.md) -Funktion, um die zusammengesetzter Eintrags-ID in seiner ursprünglichen Bestandteile aufgeteilt aufrufen. 
+Mit der **HrComposeEID** -Funktion können Anwendungen mit Objekten in mehreren speichern mithilfe von verknüpften Eingabe Bezeichnern verwendet werden. Eine Anwendung kann die [HrDecomposeEID](hrdecomposeeid.md) -Funktion aufrufen, um den verknüpften Eintragsbezeichner in seine ursprünglichen Bestandteile aufzuteilen. 
   
 ## <a name="see-also"></a>Siehe auch
 

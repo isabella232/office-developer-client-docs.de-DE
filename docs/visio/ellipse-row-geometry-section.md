@@ -8,30 +8,30 @@ f1_keywords:
 - vis_sdr.chm3010
 localization_priority: Normal
 ms.assetid: 183fb303-4acb-a486-7b97-f11f7ae3978f
-description: Enthält die X- und y-Koordinaten des Mittelpunkts der Ellipse von zwei Punkten auf der Ellipse.
-ms.openlocfilehash: 0a2acb0efa20f67d04581f827edbfc4fb4a2d6b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält die x-und y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse.
+ms.openlocfilehash: 5121ba0c7bf97eaeaaf8a438dd40eccddada4362
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345682"
 ---
-# <a name="ellipse-row-geometry-section"></a>Ellipse Row (Geometry Section)
+# <a name="ellipse-row-geometry-section"></a>Zeile "Ellipse" (Abschnitt "Geometry")
 
-Enthält die *X* - und *y* -Koordinaten des Mittelpunkts der Ellipse von zwei Punkten auf der Ellipse. 
+Enthält die *x* -und *y* -Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse. 
   
 Eine Zeile Ellipse enthält folgende Zellen.
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |Die *X* -Koordinate des Mittelpunkts.  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |Die *x* -Koordinate des Mittelpunkts.  <br/> |
 |[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Mittelpunkts.  <br/> |
-|[A](a-cell-geometry-section.md) <br/> |Die X-Koordinate eines Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle B.  <br/> |
-|[B](b-cell-geometry-section.md) <br/> |Die *y* --Koordinate eines Punkts auf der Ellipse; gepaart mit einer X-Koordinate, dargestellt durch die Zelle A.  <br/> |
-|[C](c-cell-geometry-section.md) <br/> |Die *X* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle D.  <br/> |
-|[D](d-cell-geometry-section.md) <br/> |Die *y* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle C.  <br/> |
+|[A](a-cell-geometry-section.md) <br/> |Die x-Koordinate eines Punkts auf der Ellipse; gepaart mit der *y* -Koordinate, dargestellt durch die Zelle B.  <br/> |
+|[B](b-cell-geometry-section.md) <br/> |Die *y* -Koordinate eines Punkts auf der Ellipse; gepaart mit einer x-Koordinate, dargestellt durch die Zelle A.  <br/> |
+|[C](c-cell-geometry-section.md) <br/> |Die *x* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit der *y* -Koordinate, dargestellt durch die Zelle D.  <br/> |
+|[D](d-cell-geometry-section.md) <br/> |Die *y* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit der *y* -Koordinate, dargestellt durch die Zelle C.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Abschnitt Geometry, der eine Zeile Ellipse oder InfiniteLine enthält, sollte keine anderen Zeilen enthalten.
   

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 9e255b3e-dd17-4528-ba4e-c3a1aef32b04
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5ef210aedc884e5c09eca6335199e2ef284b901c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 44ecf095ad24dd266dc5f603ace9c7b9f21c1b41
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348664"
 ---
 # <a name="itabledatahrmodifyrow"></a>ITableData::HrModifyRow
 
@@ -25,7 +25,7 @@ ms.locfileid: "22574832"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt eine neue Tabellenzeile, die möglicherweise eine vorhandene Zeile ersetzen.
+Fügt eine neue Tabellenzeile ein, die möglicherweise eine vorhandene Zeile ersetzt.
   
 ```cpp
 HRESULT HrModifyRow(
@@ -37,9 +37,9 @@ HRESULT HrModifyRow(
 
  _lpSRow_
   
-> [in] Ein Zeiger auf eine [SRow](srow.md) -Struktur, die Zeile hinzugefügt werden soll, oder um eine vorhandene Zeile ersetzen beschreibt. Eine der Eigenschaft Wert Strukturen auf den die **LpProps** Member der Struktur **' srow '** sollte die Indexspalte den gleichen Wert enthalten, die in der _UlPropTagIndexColumn_ -Parameter im Aufruf der [CreateTable angegeben wurde ](createtable.md)Funktion. 
+> in Ein Zeiger auf eine [SRow](srow.md) -Struktur, die die hinzuzufügende Zeile beschreibt oder eine vorhandene Zeile ersetzt. Eine der Eigenschaftswert Strukturen, auf die durch das **lpProps** -Element der **SRow** -Struktur verwiesen wird, sollte die Index-Spalte enthalten, den gleichen Wert, der im _ulPropTagIndexColumn_ -Parameter im Aufruf der Create-Basis angegeben wurde. [ ](createtable.md)-Funktion. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,17 +47,17 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Die Zeile übergeben in einer Indexspalte keinen.
+> Die übergebene Zeile hat keine Indexspalte.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **ITableData::HrModifyRow** -Methode fügt die Zeile mit der **SRow** -Struktur, die auf das durch den Parameter _LpSRow_ beschrieben. Wenn eine Zeile, die den gleichen Wert für die Indexspalte der Zeile, _LpSRow_ verweist, in der Tabelle bereits vorhanden ist, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden, die in der Struktur **SRow** enthaltene übereinstimmt ist, fügt **HrModifyRow** die Zeile an das Ende der Tabelle an. 
+Die **ITableData:: HrModifyRow** -Methode fügt die durch die **SRow** -Struktur beschriebene Zeile ein, auf die durch den _lpSRow_ -Parameter verwiesen wird. Wenn eine Zeile, die den gleichen Wert für die Indexspalte hat, wie die Zeile, auf die _lpSRow_ verweist, in der Tabelle bereits vorhanden ist, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden ist, die mit der in der **SRow** -Struktur übereinstimmt, fügt **HrModifyRow** die Zeile am Ende der Tabelle hinzu. 
   
-Alle Ansichten für die Tabelle werden geändert, um die Zeile, die auf den _LpSRow_einschließen. Jedoch, wenn eine Ansicht eine Einschränkung eingerichtet, die die Zeile ausschließt hat, es für den Benutzer sichtbar möglicherweise nicht. 
+Alle Ansichten der Tabelle werden so geändert, dass Sie die Zeile einbeziehen, auf die von _lpSRow_verwiesen wird. Wenn in einer Ansicht jedoch eine Einschränkung vorhanden ist, die die Zeile ausschließt, ist Sie möglicherweise nicht für den Benutzer sichtbar. 
   
-Die Spalten in der Zeile, die auf den _LpSRow_ müssen nicht in derselben Reihenfolge wie die Spalten in der Tabelle werden. Der Aufrufer kann auch als Spalteneigenschaften enthalten, die derzeit nicht in der Tabelle enthalten sind. Für vorhandene Ansichten **HrModifyRow** diesen neuen Spalten zur Verfügung umfasst aber nicht sie in der aktuellen Spalte Gruppe. Für zukünftige Ansichten enthält **HrModifyRow** die neuen Spalten in der Spalte festlegen. 
+Die Spalten in der Zeile, auf die durch _lpSRow_ verwiesen wird, müssen sich nicht in derselben Reihenfolge wie die Spalten in der Tabelle befinden. Der Aufrufer kann auch als Spalteneigenschaften enthalten, die sich derzeit nicht in der Tabelle befinden. Bei vorhandenen Ansichten stellt **HrModifyRow** diese neuen Spalten zur Verfügung, diese werden jedoch nicht in den aktuellen Spaltensatz aufgenommen. Für zukünftige Ansichten enthält **HrModifyRow** die neuen Spalten in den Spaltensatz. 
   
-Nachdem **HrModifyRow** die Zeile hinzugefügt hat, werden Benachrichtigungen an alle Clients oder Dienstanbieter, die eine Ansicht der Tabelle und aufgerufen, die die Tabelle [IMAPITable::Advise](imapitable-advise.md) -Methode zum Registrieren für Benachrichtigungen, gesendet. 
+Nachdem **HrModifyRow** die Zeile hinzugefügt hat, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Tabellenansicht verfügen und die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

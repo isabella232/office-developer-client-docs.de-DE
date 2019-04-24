@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: a261ba0d-cb56-4935-b745-1d4bbd0b8b9d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 28e7874d1e61c0a4fe0ad702f206ca03a9a1096a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ae124cb94cff5be0a655386d31f1bf2c82f66a85
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351590"
 ---
 # <a name="ixplogonsubmitmessage"></a>IXPLogon::SubmitMessage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass die MAPI-Warteschlange eine Nachricht an der Adressbuchhierarchie übermittelt wurde.
+Gibt an, dass der MAPI-Spooler eine Nachricht für den zu übermittelnden Transportanbieter hat.
   
 ```cpp
 HRESULT SubmitMessage(
@@ -40,79 +40,79 @@ HRESULT SubmitMessage(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Nachricht gesendet wird. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die die Übermittlung der Nachricht steuert. Das folgende Flag kann festgelegt werden:
     
 BEGIN_DEFERRED 
   
-> Die MAPI-Warteschlange ist der Aufruf eines Transportdienstes mit einer Meldung, die zuvor zurückgestellt wurde. Die Eintrags-ID der Nachricht ist identisch, wenn sie verschoben wurde. Die Nachricht wurde zurückgestellt, indem Sie die Eintrags-ID an die MAPI-Warteschlange mithilfe der [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) -Methode mit dem NOTIFY_SENTDEFERRED-Flag übergeben. 
+> Der MAPI-Spooler Ruft einen Transportanbieter mit einer zuvor verzögerten Meldung auf. Die Eintrags-ID der Nachricht ist identisch mit dem Zeitpunkt, zu dem Sie verzögert wurde. Die Nachricht wurde verzögert, indem die Eintrags-ID mithilfe der [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode mit dem NOTIFY_SENTDEFERRED-Flag zurück an den MAPI-Spooler übergeben wurde. 
     
  _lpMessage_
   
-> [in] Ein Zeiger auf ein Objekt "Message" (für die Nachricht übermitteln), der über Lese-/Schreibberechtigung, verfügt der Adressbuchhierarchie aufrufen und Bearbeiten dieser Nachricht verwendet. Dieses Objekt bleibt gültig bis, nachdem der Adressbuchhierarchie aus einer nachfolgenden Aufruf der [IXPLogon::EndMessage](ixplogon-endmessage.md) -Methode zurückgibt. 
+> in Ein Zeiger auf ein Nachrichtenobjekt (das die zu übermittelnde Nachricht darstellt), die über Lese-/Schreibzugriff verfügt, die der Transportanbieter zum zugreifen und Bearbeiten dieser Nachricht verwendet. Dieses Objekt bleibt gültig, bis der Transportanbieter von einem nachfolgenden Aufruf an die [IXPLogon:: EndMessage](ixplogon-endmessage.md) -Methode zurückkehrt. 
     
  _lpulMsgRef_
   
-> [out] Ein Zeiger auf eine Variable, die in der der Adressbuchhierarchie den Verweiswert zurückgibt, den sie diese Meldung zugewiesen. Die MAPI-Warteschlange übergibt dieser Verweiswert nachfolgende Aufrufe für diese Nachricht. Die MAPI-Warteschlange initialisiert den Wert auf 0 vor der Rückgabe an den Transportanbieter.
+> Out Ein Zeiger auf eine Variable, in der der Transportanbieter den Referenzwert zurückgibt, der dieser Nachricht zugewiesen wurde. Der MAPI-Spooler übergibt diesen Verweiswert in nachfolgenden Aufrufen für diese Nachricht. Der MAPI-Spooler initialisiert den Wert mit 0, bevor er an den Transportanbieter zurückgegeben wird.
     
  _lpulReturnParm_
   
-> [out] Ein Zeiger auf eine Variable, die den Fehlerwert MAPI_E_WAIT oder MAPI_E_NETWORK_ERROR **SubmitMessage**zurückgegebene entspricht.
+> Out Ein Zeiger auf eine Variable, die dem von **SubmitMessage**zurückgegebenen MAPI_E_WAIT-oder MAPI_E_NETWORK_ERROR-Fehlerwert entspricht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
 MAPI_E_BUSY 
   
-> Der Adressbuchhierarchie kann nicht die Meldung, zu behandeln, da es einen anderen Vorgang ausgeführt wird. Ein Anbieter sollten dieser Rückgabewert verwenden, um anzugeben, dass keine Verarbeitung aufgetreten ist und dass die MAPI-Warteschlange **EndMessage**nicht aufrufen soll. Die MAPI-Warteschlange wird den Anruf **SubmitMessage** einem späteren Zeitpunkt erneut versuchen. 
+> Der Transportanbieter kann die Nachricht nicht verarbeiten, da Sie einen anderen Vorgang ausführt. Ein Anbieter sollte diesen Rückgabewert verwenden, um anzugeben, dass keine Verarbeitung aufgetreten ist und dass der MAPI-Spooler nicht **EndMessage**aufrufen sollte. Der MAPI-Spooler versucht den **SubmitMessage** -Aufruf später erneut. 
     
 MAPI_E_CANCEL 
   
-> Obwohl der Adressbuchhierarchie angefordert, dass die MAPI-Warteschlange die Nachricht in einem vorherigen Aufruf der **SpoolerNotify** erneut übermitteln, Bedingungen haben inzwischen geändert, und die Nachricht nicht erneut gesendet werden soll. Die MAPI-Warteschlange wird wechseln Sie auf einen anderen Suchbegriff behandelt. 
+> Obwohl der Transportanbieter angefordert hat, dass der MAPI-Spooler die Nachricht bei einem vorherigen **SpoolerNotify** -Aufruf erneut übermitteln muss, wurden die Bedingungen seither geändert, und die Nachricht sollte nicht erneut gesendet werden. Der MAPI-Spooler wird mit etwas anderem umgehen. 
     
 MAPI_E_NETWORK_ERROR 
   
-> Ein Netzwerkfehler verhindert erfolgreichen Abschluss des Vorgangs. Der Parameter _LpulReturnParm_ sollte auf die Anzahl der Sekunden festgelegt werden, die verstreichen die MAPI-Warteschlange werden die Nachricht erneut übermittelt. 
+> Ein Netzwerkfehler hat den erfolgreichen Abschluss des Vorgangs verhindert. Der _lpulReturnParm_ -Parameter sollte auf die Anzahl der Sekunden festgelegt werden, die verstreichen, bevor die Nachricht vom MAPI-Spooler erneut übermittelt wird. 
     
 MAPI_E_NOT_ME 
   
-> Diese Meldung kann nicht der Adressbuchhierarchie behandeln. Die MAPI-Warteschlange sollte versuchen, an einen anderen Transportanbieter zu finden. Ein Anbieter sollten dieser Rückgabewert verwenden, um anzugeben, dass keine Verarbeitung aufgetreten ist und dass die MAPI-Warteschlange **EndMessage**nicht aufrufen soll.
+> Der Transportanbieter kann diese Nachricht nicht verarbeiten. Der MAPI-Spooler sollte versuchen, einen anderen Transportanbieter für diesen zu finden. Ein Anbieter sollte diesen Rückgabewert verwenden, um anzugeben, dass keine Verarbeitung aufgetreten ist und dass der MAPI-Spooler nicht **EndMessage**aufrufen sollte.
     
 MAPI_E_WAIT 
   
-> Ein vorübergehendes Problem wird verhindert, dass der Adressbuchhierarchie Behandlung der Nachricht. Der Parameter _LpulReturnParm_ sollte auf die Anzahl der Sekunden festgelegt werden, die verstreichen die MAPI-Warteschlange werden die Nachricht erneut übermittelt. 
+> Ein vorübergehendes Problem verhindert, dass der Transportanbieter die Nachricht verarbeitet. Der _lpulReturnParm_ -Parameter sollte auf die Anzahl der Sekunden festgelegt werden, die verstreichen, bevor die Nachricht vom MAPI-Spooler erneut übermittelt wird. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Warteschlange Ruft die **IXPLogon::SubmitMessage** -Methode auf, wenn es sich um eine Nachricht an der Adressbuchhierarchie übermittelt hat. Die Nachricht wird an der Adressbuchhierarchie übergeben, mit dem Parameter _LpMessage_ . 
+Der MAPI-Spooler Ruft die **IXPLogon:: SubmitMessage** -Methode auf, wenn eine Nachricht für den zu übermittelnden Transportanbieter vorliegt. Die Nachricht wird mithilfe des _lpMessage_ -Parameters an den Transportanbieter übergeben. 
   
-Wenn der Anbieter die Nachricht anzunehmen bereit ist, muss einen Verweiswert zurück, mit dem Parameter _LpulMsgRef_ , Prozess der übergebene Objekt und den entsprechenden Wert (normalerweise S_OK) zurückgeben. Wenn der Anbieter nicht vorbereitete zum Verarbeiten der Weiterleitung ist, sollte es einen Fehlerwert zurückgegeben, und optional einen anderen MAPI-Wert zurück, in _LpulReturnParm_ , um anzugeben, wie lange die MAPI-Warteschlange warten soll, bevor die erneute Übermittlung der Nachricht. 
+Wenn der Anbieter bereit ist, die Nachricht zu akzeptieren, sollte Sie einen Verweiswert zurückgeben, indem Sie den _lpulMsgRef_ -Parameter verwenden, das übergebene Objekt verarbeiten und den entsprechenden Wert (normalerweise S_OK) zurückgeben. Wenn der Anbieter nicht bereit ist, die Übertragung zu verarbeiten, sollte er einen Fehlerwert und optional einen weiteren MAPI-Rückgabewert in _lpulReturnParm_ zurückgeben, um anzugeben, wie lange der MAPI-Spooler warten soll, bevor die Nachricht erneut übermittelt wird. 
   
-Eines Transportdienstes Implementierung dieser Methode kann die folgenden Aufgaben ausführen:
+Die Implementierung dieser Methode durch einen Transportanbieter kann folgende Aktionen ausführen:
   
-- Stellen Sie die Nachricht in einer internen Warteschlange, die für die Übertragung, kopieren die Nachricht möglicherweise an den lokalen Speicher warten und zurückzugeben.
+- Setzen Sie die Nachricht in eine interne Warteschlange, um auf die Übertragung zu warten, möglicherweise die Nachricht in den lokalen Speicher zu kopieren und zurückzugeben.
     
-- Versuchen Sie, führen Sie die tatsächliche Übertragung und zurückgeben, wenn die Übertragung erfolgreich oder nicht erfolgreich abgeschlossen wird.
+- Versuchen Sie, die tatsächliche Übertragung und Rückgabe zu erreichen, wenn die Übertragung erfolgreich oder erfolglos abgeschlossen wurde.
     
-- Bestimmen Sie, ob die Nachricht gesendet werden, nachdem die Beteiligten Ressource überprüft. In diesem Fall ist die Ressource frei, kann der Anbieter die Ressource zu sperren, Vorbereiten die Nachricht und senden sie Sie. Wenn die Ressource ausgelastet ist, kann der Anbieter vorbereiten die Nachricht und Senden an einem späteren Zeitpunkt verzögern.
+- Bestimmen Sie, ob die Nachricht nach dem Überprüfen der betreffenden Ressource gesendet werden soll. In diesem Fall kann der Anbieter, wenn die Ressource frei ist, die Ressource sperren, die Nachricht vorbereiten und übermitteln. Wenn die Ressource ausgelastet ist, kann der Anbieter die Nachricht vorbereiten und das Senden zu einem späteren Zeitpunkt aufschieben.
     
-Das bevorzugte Verfahren für die Nachrichtenübermittlung hängt davon ab, der Adressbuchhierarchie und der erwarteten Anzahl von Prozesse konkurrieren für Systemressourcen. 
+Die bevorzugte Technik für die Nachrichtenübermittlung hängt vom Transportanbieter und der erwarteten Anzahl von Prozessen ab, die für Systemressourcen konkurrieren. 
   
-Während eines Anrufs **SubmitMessage** steuert der Adressbuchhierarchie die Übertragung von Nachrichtendaten von Message-Objekts. Jedoch sollte der Adressbuchhierarchie einen Verweiswert der Nachricht zuweisen, der einen Zeiger in _LpulMsgRef_, wird vor der Weiterleitung von Daten. Darin wird, da jederzeit während des Aktivierungsvorgangs die MAPI-Warteschlange die [IXPLogon::TransportNotify](ixplogon-transportnotify.md) -Methode mit dem NOTIFY_CANCEL_MESSAGE-Flag aufrufen kann so festgelegt, um dem Anbieter zu signalisieren, dass es sollten alle geöffneten Objekte freigeben und Beenden der Nachrichtenübermittlung. 
+Während eines **SubmitMessage** -Aufrufs steuert der Transportanbieter die Übermittlung von Nachrichtendaten aus dem Nachrichtenobjekt. Der Transportanbieter sollte der Nachricht jedoch einen Verweiswert zuweisen, dem Sie vor dem Übertragen von Daten einen Zeiger in _lpulMsgRef_zurückgibt. Dies ist der Fall, da der MAPI-Spooler zu einem beliebigen Zeitpunkt während des Vorgangs die [IXPLogon:: TransportNotify](ixplogon-transportnotify.md) -Methode aufrufen kann, wobei das NOTIFY_CANCEL_MESSAGE-Flag festgelegt ist, um den Anbieter zu signalisieren, dass alle geöffneten Objekte freigegeben und die Nachrichtenübertragung beendet werden soll. 
   
-Der Transportdienst sollte keine Nontransmittable Eigenschaften der Nachricht senden. Wenn eine solche Eigenschaft gefunden wird, sollten sie wechseln Sie auf die nächste Eigenschaft verarbeitet. Der Anbieter sollte bemüht nicht für MAPI_P1 als Teil des Inhalts übertragene Nachricht Empfängerinformationen stellen. der Anbieter sollte diese Empfängerinformationen nur zum Umgang mit Zwecke verwenden. MAPI_P1 Empfänger sind intern generierten Empfänger, die für erneutes Senden von Nachrichten verwendet werden. Sie sollten nicht übertragen werden. Verwenden Sie stattdessen die anderen Empfänger für die Übertragung von Empfängerinformationen. Diese Anordnung dient gestatten erneut Empfänger genauen derselben Tabelle Empfänger als die ursprünglichen Empfänger zu sehen.
+Der Transportanbieter sollte keine nicht übertragbaren Eigenschaften der Nachricht senden. Wenn Sie eine solche Eigenschaft findet, sollte Sie fortfahren, um die Next-Eigenschaft zu verarbeiten. Der Anbieter sollte sich bemühen, keine MAPI_P1-Empfängerinformationen als Teil des übertragenen Nachrichteninhalts anzuzeigen. der Anbieter sollte diese Empfängerinformationen nur zu Adressierungs Zwecken verwenden. MAPI_P1-Empfänger sind intern generierte Empfänger, die zum erneuten Senden von Nachrichten verwendet werden. Sie sollten nicht übertragen werden. Verwenden Sie stattdessen die anderen Empfänger für die Übertragung von Empfängerinformationen. Der Zweck dieser Anordnung besteht darin, es den erneuten Empfängern zu gestatten, genau dieselbe Empfängertabelle wie die ursprünglichen Empfänger anzuzeigen.
   
-Während eines Anrufs **SubmitMessage** die MAPI-Warteschlange verarbeitet Methoden für Objekte, die während der Übertragung der Nachricht geöffnet werden, und alle Anlagen verarbeitet. Diese Verarbeitung kann sehr lange dauern. Transportanbieter können die [IMAPISupport::SpoolerYield](imapisupport-spooleryield.md) -Methode für die MAPI-Warteschlange während diese Verarbeitung freizugebende CPU-Zeit für andere Systemaufgaben häufig aufrufen. 
+Während eines **SubmitMessage** -Aufrufs verarbeitet der MAPI-Spooler Methoden für Objekte, die während der Übertragung der Nachricht geöffnet werden, und verarbeitet Anlagen. Diese Verarbeitung kann sehr viel Zeit in Anspruch nehmen. Transport Anbieter können die [IMAPISupport:: SpoolerYield](imapisupport-spooleryield.md) -Methode für den MAPI-Spooler während dieser Verarbeitung häufig aufrufen, um die CPU-Zeit für andere Systemaufgaben zu veröffentlichen. 
   
-Alle Empfänger der Nachricht werden in der Tabelle Empfänger der Nachricht, die die MAPI-Warteschlange ursprünglich übergeben angezeigt. Der Transportdienst sollten nur die Empfänger, die es verarbeiten kann verarbeiten – basierend auf Eintrags-ID und/oder Adresstyp – und noch keine ihrer **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))-Eigenschaft auf TRUE festgelegt haben. Wenn **PR_RESPONSIBILITY** bereits auf "true" festgelegt ist, hat einen anderen Transportanbieter, die der Empfänger behandelt. Nach Abschluss der Anbieter über ausreichende Verarbeitung eines Empfängers, um festzustellen, ob sie Nachrichten für diesen Empfänger behandelt werden kann, sollte es des Empfängers **PR_RESPONSIBILITY** -Eigenschaft in der übergebenen Meldung auf TRUE festgelegt. In der Regel wird der Anbieter hierbei nach Abschluss der Nachrichtenübermittlung. 
+Alle Nachrichtenempfänger sind in der Empfängertabelle der Nachricht sichtbar, die der MAPI-Spooler ursprünglich übergeben hat. Der Transportanbieter sollte nur die Empfänger verarbeiten, die er verarbeiten kann – basierend auf der Eintrags-ID, dem Adresstyp oder beiden – und die **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft nicht bereits auf true festgelegt haben. Wenn **PR_RESPONSIBILITY** bereits auf true festgelegt ist, hat ein anderer Transportanbieter diesen Empfänger behandelt. Wenn der Anbieter eine ausreichende Verarbeitung eines Empfängers abgeschlossen hat, um zu bestimmen, ob er Nachrichten für diesen Empfänger verarbeiten kann, sollte er die **PR_RESPONSIBILITY** -Eigenschaft des Empfängers in der übergebenen Nachricht auf true festlegen. In der Regel trifft der Anbieter diese Bestimmung nach Abschluss der Nachrichtenübermittlung. 
   
-Der Adressbuchhierarchie gibt in der Regel nicht von einem Aufruf **SubmitMessage** zurück, erst nach die Übertragung von Meldungsdaten Abschluss. Wenn kein Fehler zurückgegeben wird, ist der nächste Aufruf aus die MAPI-Warteschlange an den Anbieter einen Aufruf der [IXPLogon::EndMessage](ixplogon-endmessage.md) -Methode. 
+In der Regel wird der Transportanbieter nicht von einem **SubmitMessage** -Aufruf zurückgegeben, bis die Übermittlung der Nachrichtendaten abgeschlossen ist. Wenn kein Fehler zurückgegeben wird, ist der nächste Aufruf des MAPI-Spoolers an den Anbieter ein Aufruf der [IXPLogon:: EndMessage](ixplogon-endmessage.md) -Methode. 
   
-Wenn **SubmitMessage** einen Fehler zurückgibt, gibt die MAPI-Warteschlange die Nachricht im Prozess frei, ohne Änderungen zu speichern. Benötigt der Adressbuchhierarchie Nachricht Änderungen gespeichert werden soll, muss er die [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode für die Nachricht vor der Rückgabe aufrufen. 
+Wenn **SubmitMessage** einen Fehler zurückgibt, gibt der MAPI-Spooler die Nachricht in Process frei, ohne Änderungen zu speichern. Wenn der Transportanbieter das Speichern von Nachrichtenänderungen erfordert, muss er die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode für die Nachricht aufrufen, bevor Sie zurückgegeben wird. 
   
-Bei Fehlern, die aufgrund von Transport Probleme auftreten, die MAPI-Warteschlange behält die Nachricht, aber sie verzögert erneute Übermittlung der Nachricht an der Adressbuchhierarchie basierend auf dem Wert in _LpulReturnParm_zurückgegeben. Wenn der Rückgabewert aus **SubmitMessage** MAPI_E_WAIT oder MAPI_E_NETWORK_ERROR ist, muss diesen Wert der Adressbuchhierarchie ausfüllen. Wenn eine Bedingung Schwerwiegender Fehler auftritt, muss der Adressbuchhierarchie die [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) -Methode mit dem NOTIFY_CRITICAL_ERROR-Flag aufrufen. 
+Bei Fehlern, die aufgrund von Transportproblemen auftreten, behält die MAPI-Warteschlange die Nachricht bei, verzögert jedoch die erneute Übermittlung der Nachricht an den Transportanbieter basierend auf dem in _lpulReturnParm_zurückgegebenen Wert. Der Transportanbieter muss diesen Wert angeben, wenn der Rückgabewert von **SUBMITMESSAGE** MAPI_E_WAIT oder MAPI_E_NETWORK_ERROR ist. Wenn eine schwere Fehlerbedingung auftritt, muss der Transportanbieter die [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode mit dem NOTIFY_CRITICAL_ERROR-Flag aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

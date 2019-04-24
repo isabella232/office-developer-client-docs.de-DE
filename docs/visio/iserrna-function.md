@@ -8,34 +8,34 @@ f1_keywords:
 - Vis_DSS.chm82251451
 localization_priority: Normal
 ms.assetid: 6ee7dc3d-efe9-c862-f71d-034b3d9c3ec6
-description: 'Gibt TRUE zurück, wenn der Wert von Zellbezug den Fehlertyp #n ist! (nicht verfügbar); Andernfalls wird FALSE zurückgegeben. ISERRNA-Funktion wird in Formeln verwendet, die auf einer anderen Zelle verweisen.'
-ms.openlocfilehash: a471119265d77866e51ccc6bb556f2ce0095d31d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gibt TRUE zurück, wenn der Wert von cellreference den Fehlertyp #N/A! (nicht verfügbar); Andernfalls wird FALSE zurückgegeben. Die ISERRNA-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen.'
+ms.openlocfilehash: 8a398eca6da659a6b8f29e4ef8e31b18abf56fde
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357260"
 ---
 # <a name="iserrna-function"></a>ISERRNA-Funktion
 
-Gibt TRUE zurück, wenn der Wert von _Zellbezug_ den Fehlertyp #n ist! (nicht verfügbar); Andernfalls wird FALSE zurückgegeben. ISERRNA-Funktion wird in Formeln verwendet, die auf einer anderen Zelle verweisen. 
+Gibt TRUE zurück, wenn der Wert von _cellreference_ den fehlertyp #N/a! (nicht verfügbar); Andernfalls wird FALSE zurückgegeben. Die ISERRNA-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen. 
   
 ## <a name="syntax"></a>Syntax
 
-ISERRNA (** *Zellbezug* **) 
+ISERRNA (* * *cellreference* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zellbezug_ <br/> |Erforderlich  <br/> |**String** <br/> |Bezug auf eine Zelle.  <br/> |
+| _cellreference_ <br/> |Erforderlich  <br/> |**String** <br/> |Bezug auf eine Zelle.  <br/> |
    
 ## <a name="example-1"></a>Beispiel 1
 
 |**Cell**|**Formula**|**Zurückgegebener Wert**|
 |:-----|:-----|:-----|
-|Scratch.A1  <br/> |="5 + 3"  <br/> |"8"  <br/> |
-|Scratch.B1  <br/> |=ISERRNA(Scratch.a1)  <br/> |FALSE  <br/> |
+|Scratch. a1  <br/> |="5 + 3"  <br/> |8  <br/> |
+|Scratch. B1  <br/> |= ISERRNA (Scratch. a1)  <br/> |FALSE  <br/> |
    
 Gibt FALSE zurück, da der zurückgegebene Wert verfügbar ist.
   
@@ -43,8 +43,8 @@ Gibt FALSE zurück, da der zurückgegebene Wert verfügbar ist.
 
 |**Cell**|**Formula**|**Zurückgegebener Wert**|
 |:-----|:-----|:-----|
-|Scratch.A1  <br/> |=NV( )  <br/> |#N/V!  <br/> |
-|Scratch.B1  <br/> |=ISERRNA(Scratch.a1)  <br/> |TRUE  <br/> |
+|Scratch. a1  <br/> |=NV( )  <br/> |#N/A!  <br/> |
+|Scratch. B1  <br/> |= ISERRNA (Scratch. a1)  <br/> |TRUE  <br/> |
    
 Gibt TRUE zurück, da der Rückgabewert den Fehlertyp #N/V! ergibt.
   

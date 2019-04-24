@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: d566ff39-92c1-4a14-85e5-1c406825f805
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ae2729ec5620b6b408a5c999d4b6ede7143bed2f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: db0c375218755c3a28475e2ebce2d097fb789f75
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351135"
 ---
 # <a name="imapiviewcontext--iunknown"></a>IMAPIViewContext : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Formular in einer Clientanwendung Formular Viewer verwaltet. 
+Verwaltet ein Formular im Formular-Viewer einer Clientanwendung. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Kontext-Objekte anzeigen  <br/> |
-|Implementiert von:  <br/> |Formular-Viewer  <br/> |
-|Aufgerufen von:  <br/> |Formular-Objekte  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Anzeigen von Kontextobjekten  <br/> |
+|Implementiert von:  <br/> |Formular Betrachter  <br/> |
+|Aufgerufen von:  <br/> |Formularobjekte  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIViewContext  <br/> |
 |Zeigertyp:  <br/> |LPMAPIVIEWCONTEXT  <br/> |
    
@@ -40,12 +40,12 @@ Ein Formular in einer Clientanwendung Formular Viewer verwaltet.
 
 |||
 |:-----|:-----|
-|[SetAdviseSink](imapiviewcontext-setadvisesink.md) <br/> |Verwaltet ein Formular Registrierung Erhalt von Benachrichtigungen zu Änderungen im Viewer.  <br/> |
-|[ActivateNext](imapiviewcontext-activatenext.md) <br/> |Die nächste oder vorherige Nachricht im Formular-Viewer aktiviert.  <br/> |
-|[GetPrintSetup](imapiviewcontext-getprintsetup.md) <br/> |Ruft die aktuellen Drucken von Informationen.  <br/> |
-|[GetSaveStream](imapiviewcontext-getsavestream.md) <br/> |Ruft einen Datenstrom zum Speichern der aktuellen Nachricht verwendet werden soll.  <br/> |
-|[GetViewStatus](imapiviewcontext-getviewstatus.md) <br/> |Ruft den aktuellen Status der Viewer ab.  <br/> |
-|[GetLastError](imapiviewcontext-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler auftritt, in der Ansicht Context-Objekt enthält.  <br/> |
+|[SetAdviseSink](imapiviewcontext-setadvisesink.md) <br/> |Verwaltet die Registrierung eines Formulars, um Benachrichtigungen zu Änderungen im Viewer zu erhalten.  <br/> |
+|[ActivateNext](imapiviewcontext-activatenext.md) <br/> |Aktiviert die nächste oder vorherige Nachricht im Formular-Viewer.  <br/> |
+|[GetPrintSetup](imapiviewcontext-getprintsetup.md) <br/> |Ruft aktuelle Druckinformationen ab.  <br/> |
+|[GetSaveStream](imapiviewcontext-getsavestream.md) <br/> |Ruft einen Stream ab, der zum Speichern der aktuellen Nachricht verwendet werden soll.  <br/> |
+|[GetViewStatus](imapiviewcontext-getviewstatus.md) <br/> |Ruft den aktuellen viewerstatus ab.  <br/> |
+|[Getlasterroraufzurufen](imapiviewcontext-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen über den vorherigen Fehler enthält, der im View-Kontextobjekt auftritt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

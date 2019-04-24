@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d03ae1b3-da6c-56d3-4f96-6e131c04e93e
 description: Legt fest, ob die Zeichnung eine Vorschau mit einschließt. Wenn die Zeichnung eine Vorschau mit einschließt, wird hier definiert, ob die Vorschau nur die erste Seite oder alle Seiten der Zeichnung zeigt.
-ms.openlocfilehash: 865da052f710481c146d3c2692ddf506018be789
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 34dbc9ac02032b2cb5cb6373c3c6361e3d822312
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356112"
 ---
-# <a name="previewscope-cell-document-properties-section"></a>PreviewScope Cell (Document Properties Section)
+# <a name="previewscope-cell-document-properties-section"></a>Zelle "PreviewScope" (Abschnitt "Document Properties")
 
 Legt fest, ob die Zeichnung eine Vorschau mit einschließt. Wenn die Zeichnung eine Vorschau mit einschließt, wird hier definiert, ob die Vorschau nur die erste Seite oder alle Seiten der Zeichnung zeigt.
   
@@ -28,15 +28,15 @@ Legt fest, ob die Zeichnung eine Vorschau mit einschließt. Wenn die Zeichnung e
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können diesen Wert auch auf der Registerkarte **Zusammenfassung** im Dialogfeld **Eigenschaften** festlegen (klicken Sie auf die **Office** -Schaltfläche, klicken Sie auf der Registerkarte **Info** , klicken Sie auf **Dokumenteigenschaften**, und klicken Sie dann auf **Erweiterte Eigenschaften**).
+Sie können diesen Wert auch im Dialogfeld **Eigenschaften** auf der Registerkarte **Zusammenfassung** festlegen (Klicken Sie auf die **Office** -Schaltfläche, klicken Sie auf die Registerkarte **Info** , klicken Sie auf **Dokumenteigenschaften**und dann auf **Erweiterte Eigenschaften**).
   
-Wenn Sie einen Verweis auf die Zelle PreviewScope aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "PreviewScope aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | PreviewScope  <br/> |
+| Zellenname:  <br/> | "PreviewScope  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PreviewScope aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "PreviewScope aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2b3334de-588c-6cf3-bc88-be03ae71b1a6
 description: Bestimmt, ob eine Formatvorlage Füllbereichseigenschaften enthält.
-ms.openlocfilehash: 399af4b9d1a2245ea7a9b91ebbf036eb122f15bd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 55191cb28d5777f7fb65a3a1e4be890e6dda4e8b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345563"
 ---
-# <a name="enablefillprops-cell-style-properties-section"></a>EnableFillProps Cell (Style Properties Section)
+# <a name="enablefillprops-cell-style-properties-section"></a>Zelle "EnableFillProps" (Abschnitt "Style Properties")
 
 Bestimmt, ob eine Formatvorlage Füllbereichseigenschaften enthält.
   
@@ -27,13 +27,13 @@ Bestimmt, ob eine Formatvorlage Füllbereichseigenschaften enthält.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle EnableFillProps aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "EnableFillProps aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |EnableFillProps  <br/> |
+|Zellenname:  <br/> |"EnableFillProps  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EnableFillProps aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "EnableFillProps aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 59fe0887-2092-4fad-ea38-2aba354f3b92
 description: Aktiviert bzw. deaktiviert das Drucken für das ausgewählte Shape.
-ms.openlocfilehash: ab00914a9c59cfe94b3f7273f89684f43328b4d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c3e1fc1b2d91fa4808f8ea89c904218c2236f5b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357232"
 ---
-# <a name="nonprinting-cell-miscellaneous-section"></a>NonPrinting Cell (Miscellaneous Section)
+# <a name="nonprinting-cell-miscellaneous-section"></a>Zelle "NonPrinting" (Abschnitt "Miscellaneous")
 
 Aktiviert bzw. deaktiviert das Drucken für das ausgewählte Shape.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| WAHR  <br/> | Das Drucken ist deaktiviert, doch das Shape wird im Zeichnungsfenster angezeigt.  <br/> |
-| FALSCH  <br/> | Drucken ist aktiviert.  <br/> |
+| TRUE  <br/> | Das Drucken ist deaktiviert, doch das Shape wird im Zeichnungsfenster angezeigt.  <br/> |
+| FALSE  <br/> | Drucken ist aktiviert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können eine Führungslinie drucken, indem Sie sie auswählen und anschließend den Wert ihrer Zelle NonPrinting auf FALSE setzen.
   
-Wenn Sie einen Verweis auf die Zelle NonPrinting aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle nonPrinting aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Nicht druckbare  <br/> |
+| Zellenname:  <br/> | Druckbaren  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NonPrinting aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle nonPrinting aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

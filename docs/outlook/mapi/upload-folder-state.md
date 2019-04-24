@@ -1,48 +1,48 @@
 ---
-title: Status „Uploadordner“
+title: Ordner Status hochladen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270b1df0-c5cd-0d0f-7b57-2726dee978ab
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ae8c3c4012874e1ca35761b103066cceebb1b165
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c20f2998a2fef1ddb53b13708dcf56f9d7b50dbe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348426"
 ---
-# <a name="upload-folder-state"></a>Status „Uploadordner“
+# <a name="upload-folder-state"></a>Ordner Status hochladen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was geschieht, während der Upload Ordner Zustand des Computers Zustand Replikation. 
+ In diesem Thema wird beschrieben, was während des Upload-Ordner Status des Replikationsstatus Computers passiert. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|State-ID:  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |
-|Verwandte-Datenstruktur:  <br/> |**[UPFLD](upfld.md)** <br/> |
-|Aus diesem Zustand:  <br/> |[Hochladen der Hierarchie Zustand](upload-hierarchy-state.md) <br/> |
-|Diesen Status:  <br/> |Hochladen der Hierarchie Zustand  <br/> |
+|Status-ID:  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |
+|Zugehörige Datenstruktur:  <br/> |**[UPFLD](upfld.md)** <br/> |
+|Aus folgendem Zustand:  <br/> |[Hierarchie Status hochladen](upload-hierarchy-state.md) <br/> |
+|Zu folgendem Status:  <br/> |Hierarchie Status hochladen  <br/> |
    
 > [!NOTE]
-> Das Zustandsautomat Replikation ist ein deterministisch Zustandsautomat. Ein Client, der von einem Zustand zu einem anderen Unternehmen muss schließlich auf die frühere letztere zurückgeben. 
+> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status wird initiiert, Hochladen eines Ordners in einer Hierarchie, die in einem vorherigen Upload Hierarchie Zustand angegeben wurde. Während dieser Status wird Outlook das Folder-Objekt (sofern es nicht gelöscht) und die Kennzeichen, die den Zustand des Ordners (neue, verschoben, geändert oder gelöscht) als Teil der Datenstruktur des entsprechenden **UPFLD** . Der Client lädt dann diese Informationen an den Server hoch. 
+Dieser Status initiiert das Hochladen eines Ordners in einer Hierarchie, der in einem vorangehenden Upload-Hierarchie Status angegeben wurde. In diesem Zustand stellt Outlook das Folder-Objekt (falls es nicht gelöscht wurde) und die Flags bereit, die den Status des Ordners (neu, verschoben, geändert oder gelöscht) als Teil der entsprechenden **UPFLD** -Datenstruktur angeben. Der Client lädt diese Informationen dann auf den Server hoch. 
   
-Wenn der Hochladevorgang erfolgreich ist, wird der Client *UlFlags* in **UPFLD** auf **UPF_OK**. Outlook löscht dann internen Informationen über die Anforderung an den Ordner hochladen. 
+Wenn der Upload erfolgreich ist, legt der Client *ulFlags* in **UPFLD** auf **UPF_OK**fest. Outlook löscht dann die internen Informationen zu der Anforderung, den Ordner hochzuladen. 
   
-Nach Ende der Ordner Upload gibt der lokale Speicher in den Upload Hierarchie Zustand zurück. Basierend auf der **[UPHIER](uphier.md)** -Struktur, die auf den vorstehenden Upload Hierarchie Status entspricht, bestimmt Outlook, ob den nächsten Ordner hochladen fort und zur Vorbereitung der nächsten Upload Ordner Status. 
+Wenn der Ordner Upload beendet wird, wird der lokale Speicher zum Upload-Hierarchie Status zurückgegeben. Basierend auf der **[uphier](uphier.md)** -Struktur, die dem vorangehenden Upload-Hierarchie Status entspricht, bestimmt Outlook, ob das Hochladen des nächsten Ordners fortgesetzt und der nächste Upload-Ordner Status vorbereitet werden soll. 
   
 > [!NOTE]
-> Wenn der Client nur ein Ordner hochladen muss, kann der Client die Replikation über das [Synchronisieren von Zustand](synchronize-state.md) initiieren, ohne den Upload Hierarchie Zustand. Der Client legt bestimmte Mitglieder der **[SYNCHRONISIERUNG](sync.md)** – *UlFlags* **UPS_UPLOAD_ONLY** und **UPS_ONE_FOLDER** und *Feid* auf den Ordner ID – anzuweisen, Outlook, nur einen Ordner hochgeladen werden soll. 
+> Wenn der Client nur einen Ordner hochladen muss, kann der Client die Replikation über den [Status Synchronize](synchronize-state.md) initiieren, ohne den Upload-Hierarchie Status einzugeben. Der Client legt bestimmte Synchronisierungs **[](sync.md)** Mitglieder – *ulFlags* auf **UPS_UPLOAD_ONLY** und **UPS_ONE_FOLDER** und *Feid* auf die ID des Ordners – fest, um Outlook mitzuteilen, dass nur ein Ordner hochgeladen wird. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -54,5 +54,5 @@ Nach Ende der Ordner Upload gibt der lokale Speicher in den Upload Hierarchie Zu
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

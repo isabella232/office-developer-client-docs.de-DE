@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b03b4415-0b1a-eb03-2b5e-373b39a0f07a
 description: Legt fest, ob der Text als durchgestrichen formatiert ist.
-ms.openlocfilehash: 2b25d1d9b00d062214c02c3fc7b14569b43a5110
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4a58123814a4782c279a36d202e1293ec222ef93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349336"
 ---
-# <a name="strikethru-cell-character-section"></a>Strikethru Cell (Character Section)
+# <a name="strikethru-cell-character-section"></a>Zelle "Strikethru" (Abschnitt "Character")
 
 Legt fest, ob der Text als durchgestrichen formatiert ist.
   
@@ -29,18 +29,18 @@ Legt fest, ob der Text als durchgestrichen formatiert ist.
 
 Sie können den Wert dieser Zelle auch festlegen, indem Sie das Dialogfeld **Text** verwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Wenn Sie einen Verweis auf die Zelle Strikethru aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Strikethru aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Char.Strikethru [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+|Zellenname:  <br/> |Char. Strikethru [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Strikethru aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Strikethru aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-|Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCharacterStrikethru** <br/> |
    
 

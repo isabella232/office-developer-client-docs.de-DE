@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1fbe6dc1-254b-4557-92c8-9fa42a8efd64
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0a93dd44960a01996672a55501a7626d0ff56986
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8b2190f77c7575d3d4f5e25fa0863bec844158bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348902"
 ---
 # <a name="iabprovidershutdown"></a>IABProvider::Shutdown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bricht eine Verbindung mit einer aktiven Sitzung ab.
   
@@ -37,9 +37,9 @@ HRESULT Shutdown(
 
  _lpulFlags_
   
-> [In] Reserviert. Ein Zeiger auf 0 (null) muss sein.
+> In Reserviert muss ein Zeiger auf NULL sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,7 +47,7 @@ S_OK
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Führen Sie in der Implementierung der **Shutdown** -Methode jegliches Aufgaben erforderlich werden sollten. MAPI-Aufrufen **Shutdown** -Methode nur, nachdem Sie alle Objekte Ihrer Anmeldung freigegeben haben. 
+Führen Sie in der Implementierung der **Shutdown** -Methode alle Aufgaben aus, die Sie für erforderlich halten. MAPI Ruft die **Shutdown** -Methode nur auf, nachdem Sie alle Anmeldeobjekte freigegeben haben. 
   
 ## <a name="see-also"></a>Siehe auch
 

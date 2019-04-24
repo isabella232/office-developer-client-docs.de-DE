@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: fbff82de-77d3-411e-a30c-a37cefdd92fc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1d486344ab20ef49488dbb911f3dd7000d64942e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8611249207811446ae47f056486ec498bf1e7eab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349308"
 ---
 # <a name="iaddrbooksetsearchpath"></a>IAddrBook::SetSearchPath
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt einen neuen Pfad für die Suche in das Profil, das für den Vorgang der Lösung verwendet wird. 
+Legt einen neuen Suchpfad im Profil fest, der für den Prozess der Namensauflösung verwendet wird. 
   
 ```cpp
 HRESULT SetSearchPath(
@@ -42,9 +42,9 @@ HRESULT SetSearchPath(
     
  _lpSearchPath_
   
-> [in] Ein Zeiger auf die [SRowSet](srowset.md) -Struktur verwendet, um den Suchpfad aufzunehmen. Die erste Eigenschaft für jedes Mitglied **aRow** in **' srowset '** muss **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).
+> in Ein Zeiger auf die [SRowSet](srowset.md) -Struktur, die zum Speichern des Suchpfads verwendet wird. Die erste Eigenschaft für jedes **aRow** -Element in **SRowSet** muss **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -52,13 +52,13 @@ S_OK
     
 MAPI_E_MISSING_REQUIRED_COLUMN 
   
-> Eine der in der Struktur **SRowSet** beschriebenen Container haben dessen **PR_ENTRYID** -Eigenschaft nicht eingeschlossen. 
+> Einer der in der **SRowSet** -Struktur beschriebenen Container enthielt nicht die zugehörige **PR_ENTRYID** -Eigenschaft. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen die **SetSearchPath** -Methode, um die Änderungen zu speichern, die an die Reihenfolge des Containers Suche vorgenommen wurden, die zum Auflösen von Namen mit der [IAddrBook::ResolveName](iaddrbook-resolvename.md) -Methode verwendet wird, Clients und -Dienstanbieter. Der Suchpfad wird zwischen Instanzen von einer Sitzung gespeichert. 
+Clients und Dienstanbieter rufen die **SetSearchPath** -Methode auf, um Änderungen an der Container Suchreihenfolge zu speichern, die zum Auflösen von Namen mithilfe der [IAddrBook::](iaddrbook-resolvename.md) ResolveName-Methode verwendet wird. Der Suchpfad wird zwischen den Instanzen einer Sitzung gespeichert. 
   
-Clients und Anbieter müssen nicht Aufrufen der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode, um die Suche Pfad Änderungen dauerhaft entfernt wird. 
+Clients und Anbieter müssen nicht die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode aufrufen, um den Suchpfad dauerhaft zu ändern. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,7 +70,7 @@ Clients und Anbieter müssen nicht Aufrufen der [IMAPIProp::SaveChanges](imapipr
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
+[Kanonische Pidtagcontainerflags (-Eigenschaft](pidtagcontainerflags-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 55943197-fd11-442d-bb4b-0bff565b846e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7c19cce33ec351a5627870782ebb4fe509a98be2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b3a0872c94459fc7c24d13e35adf335ef8012182
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357848"
 ---
 # <a name="spropproblem"></a>SPropProblem
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt einen Fehler, die einen Vorgang im Zusammenhang mit einer Eigenschaft zuordnen.
+Beschreibt einen Fehler, der sich auf einen Vorgang mit einer Eigenschaft bezieht.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SPropProblem
@@ -45,19 +45,19 @@ typedef struct _SPropProblem
 
  **ulIndex**
   
-> Ein Index in einem Array von Eigenschaftentags.
+> Ein Index in einem Array von Property-Tags.
     
  **ulPropTag**
   
-> Eigenschaftentag für die Eigenschaft, die den Fehler hat.
+> Property-Tag für die Eigenschaft mit dem Fehler.
     
  **SCODE**
   
-> Fehlerwert Beschreibung des Problems mit der-Eigenschaft. Dieser Wert kann einen beliebigen MAPI [SCODE](scode.md) -Wert sein. 
+> Fehlerwert, der das Problem mit der Eigenschaft beschreibt. Dieser Wert kann ein beliebiger MAPI- [SCODE](scode.md) -Wert sein. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Array von **SPropProblem** Strukturen wird von folgenden Methoden zurückgegeben: 
+Ein Array von **SPropProblem** -Strukturen wird von den folgenden Methoden zurückgegeben: 
   
 - [IMAPISupport::DoCopyTo](imapisupport-docopyto.md)
     
@@ -73,9 +73,9 @@ Ein Array von **SPropProblem** Strukturen wird von folgenden Methoden zurückgeg
     
 - [IPropData::HrAddObjProps](ipropdata-hraddobjprops.md)
     
-Eine **SPropProblem** -Struktur enthält einen **SCODE** Fehlerwert, der einen Vorgang versucht, ändern oder Löschen einer MAPI-Eigenschaft ergibt. 
+Eine **SPropProblem** -Struktur enthält einen **SCODE** -Fehlerwert, der aus einem Vorgang resultiert, der versucht, eine MAPI-Eigenschaft zu ändern oder zu löschen. 
   
-Weitere Informationen zur Funktionsweise der **SPropProblem** -Struktur mit Fehlern im Zusammenhang mit Eigenschaften finden Sie unter [MAPI-Eigenschaften mit dem Namen](mapi-named-properties.md). 
+Weitere Informationen zur Funktionsweise der **SPropProblem** -Struktur mit Fehlern im Zusammenhang mit Eigenschaften finden Sie unter [MAPI Named Properties](mapi-named-properties.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0fe79f78ba1aab1e54df0b0bc88fa0c55c73e187
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357400"
 ---
 # <a name="enumerate-folders"></a>Aufzählen von Ordnern
 
@@ -61,5 +61,5 @@ private void EnumerateFolders(Outlook.Folder folder)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ordner](folders.md)
+- [Folders](folders.md)
 

@@ -1,37 +1,37 @@
 ---
-title: NoProofing Cell (Miscellaneous Section)
+title: Zelle "noProofing" (Abschnitt "Miscellaneous")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 668f993c-b4d1-4762-9801-c578b17fdafd
-description: Bestimmt, ob die Rechtschreibung automatisch korrigiert wird und ob Rechtschreibfehler für das ausgewählte Shape angezeigt werden. Nimmt einen booleschen Wert an.
-ms.openlocfilehash: 6c27e6740b547af83058519de8edd38fc3522b32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt, ob die Rechtschreibung automatisch korrigiert wird und ob Rechtschreibfehler für das ausgewählte Shape angezeigt werden. Akzeptiert einen booleschen Wert.
+ms.openlocfilehash: 8d7eebcc349c54db3cd48d6c5fa3c8fa6f4f760e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19797547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357225"
 ---
-# <a name="noproofing-cell-miscellaneous-section"></a>NoProofing Cell (Miscellaneous Section)
+# <a name="noproofing-cell-miscellaneous-section"></a>Zelle "noProofing" (Abschnitt "Miscellaneous")
 
-Bestimmt, ob die Rechtschreibung automatisch korrigiert wird und ob Rechtschreibfehler für das ausgewählte Shape angezeigt werden. Nimmt einen **booleschen** Wert an. 
+Bestimmt, ob die Rechtschreibung automatisch korrigiert wird und ob Rechtschreibfehler für das ausgewählte Shape angezeigt werden. Akzeptiert einen **booleschen** Wert. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Rechtschreibung wird nicht automatisch korrigiert und Rechtschreibfehler werden nicht für die markierte Form angezeigt.  <br/> |
-|FALSE  <br/> |Rechtschreibung wird automatisch korrigiert und Rechtschreibfehler für das ausgewählte Shape angezeigt werden.  <br/> |
+|TRUE  <br/> |Die Rechtschreibung wird nicht automatisch korrigiert, und es werden keine Rechtschreibfehler für das ausgewählte Shape angezeigt.  <br/> |
+|FALSE  <br/> |Die Rechtschreibung wird automatisch korrigiert, und Rechtschreibfehler werden für das ausgewählte Shape angezeigt.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle NoProofing nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle noProofing aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |NoProofing  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoProofing aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle noProofing aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

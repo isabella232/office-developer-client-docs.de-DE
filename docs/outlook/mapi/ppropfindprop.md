@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f23dd6f4-915b-4fe8-ab3f-6d625c7d6061
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f720160193613bbbb4bbd447f78c14e6e5378eb8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 97021128f92af0486af1ba3125c7843eaa357648
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350731"
 ---
 # <a name="ppropfindprop"></a>PpropFindProp
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einer angegebenen Eigenschaft in einer Eigenschaft festlegen.
+Sucht nach einer angegebenen Eigenschaft in einem Eigenschaftensatz.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPSPropValue PpropFindProp(
@@ -45,31 +45,31 @@ LPSPropValue PpropFindProp(
 
  _rgprop_
   
-> [in] Array von [SPropValue](spropvalue.md) -Strukturen, die definieren die Eigenschaften, die durchsucht werden soll. 
+> in Array von [SPropValue](spropvalue.md) -Strukturen, die die zu durchsuchenden Eigenschaften definieren. 
     
  _cprop_
   
-> [in] Anzahl der Eigenschaften in den Eigenschaftensatz, der durch den Parameter _Rgprop_ angegeben. 
+> in Die Anzahl der Eigenschaften in dem vom _rgprop_ -Parameter angegebenen Eigenschaftssatz. 
     
  _ulPropTag_
   
-> [in] Eigenschaftentag für die Eigenschaft in dem durch den _Rgprop_ -Parameter angegebenen Eigenschaftensatz suchen. 
+> in Property-Tag für die Eigenschaft, nach der im durch den _rgprop_ -Parameter angegebenen Eigenschaftensatz gesucht werden soll. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
- **PpropFindProp** gibt eine [SPropValue](spropvalue.md) -Struktur definieren die Eigenschaft, die dem input-Eigenschaftentag übereinstimmt, oder NULL, wenn keine Übereinstimmung vorliegt. 
+ **PpropFindProp** gibt eine [SPropValue](spropvalue.md) -Struktur zurück, die die Eigenschaft definiert, die mit dem Eingabe Eigenschafts übereinstimmt, oder NULL, wenn keine Übereinstimmung vorliegt. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn der angegebene Eigenschaftstag eine Eigenschaft vom Typ PT_UNSPECIFIED gibt an, sucht die **PpropFindProp** -Funktion nur eine Übereinstimmung mit der Bezeichner für die in das Tag an. Andernfalls findet eine Übereinstimmung für das gesamte Eigenschafts-Tag, einschließlich den Eigenschaftentyp und gibt die angegebene Eigenschaft zurück. 
+Wenn das angegebene Property-Tag eine Eigenschaft vom Typ PT_UNSPECIFIED angibt, findet die **PpropFindProp** -Funktion nur eine Übereinstimmung für den Eigenschaftenbezeichner im-Tag. Andernfalls findet es eine Übereinstimmung für das gesamte Property-Tag, einschließlich des Eigenschaftentyps, und gibt die identifizierte Eigenschaft zurück. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::BuildDataItem  <br/> |MFCMAPI (engl.) verwendet die **PpropFindProp** -Methode, um zu finden, dass Eigenschaften in einer Eigenschaft festgelegt, die der Liste hinzugefügt wird.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl:: BuildDataItem  <br/> |MFCMAPI verwendet die **PpropFindProp** -Methode, um Eigenschaften in einem Eigenschaftensatz zu suchen, der der Liste hinzugefügt wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

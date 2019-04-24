@@ -1,45 +1,45 @@
 ---
-title: Status „Status der Upload-Löschung“
+title: Status "Löschvorgang löschen"
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dee566ad-b46d-1015-4b0b-6c3313060142
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4a45cfafec5126c72f365858e41963bc95fa707a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: dda9d23a572446a5fa79a9500eb69558b6e0debd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357708"
 ---
-# <a name="upload-delete-status-state"></a>Status „Status der Upload-Löschung“
+# <a name="upload-delete-status-state"></a>Status "Löschvorgang löschen"
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was geschieht, während der Upload löschen Status Zustand der Replikation Zustandsautomat. 
+ In diesem Thema wird beschrieben, was während des Status Status des Replikats des Replikationsstatus geschehen soll. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|State-ID:  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |
-|Verwandte-Datenstruktur:  <br/> |**[UPDEL](updel.md)** <br/> |
-|Aus diesem Zustand:  <br/> |[Tabelle Zustand hochladen](upload-table-state.md) <br/> |
-|Diesen Status:  <br/> |Tabelle Zustand hochladen  <br/> |
+|Status-ID:  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |
+|Zugehörige Datenstruktur:  <br/> |**[UPDEL](updel.md)** <br/> |
+|Aus folgendem Zustand:  <br/> |[Tabellenstatus hochladen](upload-table-state.md) <br/> |
+|Zu folgendem Status:  <br/> |Tabellenstatus hochladen  <br/> |
    
 > [!NOTE]
-> Das Zustandsautomat Replikation ist ein deterministisch Zustandsautomat. Ein Client, der von einem Zustand zu einem anderen Unternehmen muss schließlich auf die frühere letztere zurückgeben. 
+> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status wird initiiert, auf einem Server aktualisieren, die Outlook-Elemente (e-Mail, Kalender, Kontakt, Aufgabe, Notiz oder Journal), die in einem Ordner in einem lokalen Speicher angegeben, die in den vorstehenden Upload-Tabelle gelöscht wurden. Während dieser Zustand initialisiert Outlook Elemente in der zugeordneten **UPDEL** Datenstruktur mit Informationen für die Elemente, die aus dem Ordner verschoben oder gelöscht wurden. 
+Dieser Status initiiert die Aktualisierung auf einem Server diese Outlook-Elemente (e-Mail, Kalender, Kontakt, Aufgabe, Notiz oder Journal), die in einem Ordner in einem lokalen Speicher gelöscht wurden, der in einem vorherigen Upload-Tabellenstatus angegeben wurde. Während dieses Status initialisiert Outlook Elemente in der zugeordneten **UPDEL** -Datenstruktur mit Informationen für die Elemente, die aus dem Ordner gelöscht oder verschoben wurden. 
   
-Der Client löscht die angegebenen Elemente im Ordner auf dem Server. Um Elemente zu unterscheiden, die verschoben wurden, im Gegensatz zu müssen gelöscht wurden, muss der Client die *Pupmov* Member in der Struktur **UPDEL** identifiziert überprüfen. 
+Der Client löscht dann die angegebenen Elemente im Ordner auf dem Server. Um Elemente zu unterscheiden, die verschoben wurden, anstatt sie gelöscht zu haben, muss der Client die in der **UPDEL** -Struktur angegebenen *pupmov* -Elemente überprüfen. 
   
-Wenn dieser Status beendet ist, löscht Outlook die interne Informationen zurück, der angibt, dass das Element gelöscht wurde. Daher müssen Outlook nicht mehr einen Datensatz des Elements. Auf den Upload Tabelle Status gibt der lokale Speicher zurück.
+Wenn dieser Status endet, löscht Outlook die internen Informationen, die darauf hinweisen, dass das Element gelöscht wurde. Daher hat Outlook keinen Datensatz mehr für das Element. Der lokale Speicher gibt den Status der hochzuladenden Tabelle zurück.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -51,5 +51,5 @@ Wenn dieser Status beendet ist, löscht Outlook die interne Informationen zurüc
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2bbc87250ab77f662e0fc5a71f9857e734637dd2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349427"
 ---
 # <a name="get-information-about-all-distribution-lists-of-which-the-current-user-is-a-member"></a>Abrufen von Informationen über alle Verteilerlisten, in denen der aktuelle Benutzer Mitglied ist
 

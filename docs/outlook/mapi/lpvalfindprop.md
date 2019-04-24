@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 67461a38-bb60-467b-901b-39c645e764f7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c4a201411e2232a3e5fdcd97dcbc9460f657b12a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: fa1588d4a58824b57c132fc8e66a0abd6e9acd0a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357428"
 ---
 # <a name="lpvalfindprop"></a>LpValFindProp
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einer angegebenen Eigenschaft in einer Eigenschaft festlegen.
+Sucht nach einer angegebenen Eigenschaft in einem Eigenschaftensatz.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |mapiutil.h  <br/> |
+|Headerdatei  <br/> |mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter.  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter.  <br/> |
    
 ```cpp
 LPSPropValue LpValFindProp(
@@ -41,21 +41,21 @@ LPSPropValue LpValFindProp(
 
  _ulPropTag_
   
-> [in] Tag für die Eigenschaft in den durch den _LpPropArray_ -Parameter angegebenen Eigenschaftensatz suchen. 
+> in -Tag für die Eigenschaft, nach der im Eigenschaftensatz gesucht werden soll, angegeben durch den _lpPropArray_ -Parameter. 
     
  _cValues_
   
-> [in] Anzahl der Eigenschaften in den Eigenschaftensatz durch den Parameter _LpPropArray_ angegeben. 
+> in Die Anzahl der Eigenschaften im Eigenschaftensatz, angegeben durch den _lpPropArray_ -Parameter. 
     
  _lpPropArray_
   
-> [in] Ein Array von **SPropValue** -Strukturen, die die Eigenschaften des zu durchsuchenden definiert. 
+> in Array von **SPropValue** -Strukturen, die die zu durchsuchenden Eigenschaften definieren. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Die **LpValFindProp** -Funktion gibt eine **SPropValue** -Struktur, die die Eigenschaft, die dem input-Eigenschaftentag übereinstimmt definiert, oder NULL, wenn keine Übereinstimmung vorliegt. 
+Die **LpValFindProp** -Funktion gibt eine **SPropValue** -Struktur zurück, die die Eigenschaft definiert, die mit dem Eingabe Eigenschafts übereinstimmt, oder NULL, wenn keine Übereinstimmung vorliegt. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
 Die **LpValFindProp** -Funktion ist identisch mit **PpropFindProp**.
   

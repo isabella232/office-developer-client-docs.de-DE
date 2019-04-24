@@ -8,42 +8,41 @@ f1_keywords:
 - Vis_DSS.chm60115
 localization_priority: Normal
 ms.assetid: 4a27663a-9d37-2ac4-5856-edeb0880f16e
-description: Ersetzt einen Teil einer Zeichenfolge durch eine andere Textzeichenfolge.
+description: Ersetzt einen Teil einer Textzeichenfolge durch eine andere Textzeichenfolge.
 ms.openlocfilehash: fc12ab30ec9c509e2f126931bee837f518e96f3a
-ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26643213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346823"
 ---
 # <a name="substitute-function"></a>SUBSTITUTE Function
 
-Ersetzt einen Teil einer Zeichenfolge durch eine andere Textzeichenfolge. 
+Ersetzt einen Teil einer Textzeichenfolge durch eine andere Textzeichenfolge. 
   
 ## <a name="syntax"></a>Syntax
 
- Ersatz (** *Text* **, ** *Alter_Text* **, ** *Neuer_Text* ** [, ** *Erstes_Zeichen* **] [, ** *Ignore_case_opt* **) 
+ Ersatz (* * *Text* * *, * * *old_text* * *, * * *new_text* * * [, * * *start_num* * *] [, * * *ignore_case_opt* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text oder der Bezug auf eine Zelle mit dem Text, in dem Zeichen ersetzt werden sollen.  <br/> |
-| _Alter_Text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, der ersetzt werden soll.
-  <br/> |
-| _Neuer_Text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, den Sie _Alter_Text_ersetzen möchten.  <br/> |
-| _start_num_opt_ <br/> |Optional  <br/> |**Numerisch** <br/> |Gibt an, welche Vorkommen von Old_text ersetzt werden soll.  <br/> |
+| _old_text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, der ersetzt werden soll.  <br/> |
+| _new_text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, den Sie zum Ersetzen von _old_text_verwenden möchten.  <br/> |
+| _start_num_opt_ <br/> |Optional  <br/> |**Numerisch** <br/> |Gibt an, welche Vorkommen von old_text ersetzt werden sollen.  <br/> |
 | _ignore_case_opt_ <br/> |Optional  <br/> |**Boolean** <br/> |FALSE, wenn Groß- und Kleinschreibung zu beachten ist; andernfalls TRUE. Die Standardeinstellung ist FALSE.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
- Wenn Sie _Start_num_opt_angeben, wird nur dieses Auftreten von _Old_text_ ersetzt. Andernfalls wird jedes Vorkommen von _Old_text_ in _Text_ um geändert _Neuer_Text._
+ Wenn Sie _start_num_opt_angeben, wird nur das Vorkommen von _old_text_ ersetzt. Andernfalls wird jedes Vorkommen von _old_text_ in _Text_ in new_text geändert _._
   
-Verwenden Sie die Ersatz-Funktion, wenn Sie bestimmten Text in einer Zeichenfolge ersetzen möchten. Wenn Text zu ersetzen, das auftritt, an einer bestimmten Stelle in einer Textzeichenfolge zurückgegeben werden soll, verwenden Sie die REPLACE-Funktion.
+Verwenden Sie die SUBSTITUTE-Funktion, wenn bestimmter Text in einer Zeichenfolge ersetzt werden soll. Wenn Sie Text ersetzen möchten, der an einer bestimmten Stelle in einer Textzeichenfolge vorkommt, verwenden Sie die REPLACE-Funktion.
   
 ## <a name="example"></a>Beispiel
 
@@ -53,6 +52,6 @@ Gibt "1 JAN 2003" zurück.
   
 SUBSTITUTE ("1 January 2003","january","JAN") 
   
-Gibt "1. Januar 2003" zurück. Keine Änderung erfolgt, da die Textsuche Groß-/Kleinschreibung beachtet wird. 
+Gibt "1 January 2003" zurück. Es wurde keine Änderung durchgeführt, da bei der Textsuche zwischen Groß- und Kleinschreibung unterschieden wird. 
   
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagPstRememberPassword (kanonische Eigenschaft)
+title: Kanonische Pidtagpstrememberpassword (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,46 +9,46 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2f8eff88-848c-4ad4-a6be-b1744a0ce4ce
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e747034d64d83105de6413fe7546235cabb5d491
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4688c706629368be0c2a56490020a0cab17c5bf1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356509"
 ---
-# <a name="pidtagpstrememberpassword-canonical-property"></a>PidTagPstRememberPassword (kanonische Eigenschaft)
+# <a name="pidtagpstrememberpassword-canonical-property"></a>Kanonische Pidtagpstrememberpassword (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt, ob das Kennwort im Profil gespeichert.
+Bestimmt, ob das Kennwort im Profil vergessen werden soll.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_PST_REMEMBER_PW  <br/> |
 |Kennung:  <br/> |0x6701  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
+|Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

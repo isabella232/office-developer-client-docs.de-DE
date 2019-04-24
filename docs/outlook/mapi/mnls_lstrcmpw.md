@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d26c59d7-c839-426f-8693-727fc6bef67e
-description: 'Zuletzt geändert: 18 Juni 2012'
+description: 'Zuletzt geändert: 18, 2012'
 ms.openlocfilehash: 03b0eb794b07bc56ec6dce4a567d89294b2c908a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356840"
 ---
 # <a name="mnlslstrcmpw"></a>MNLS_lstrcmpW
 
@@ -33,19 +33,19 @@ int MNLS_lstrcmpW(
 
  _lpString1_
   
-> [in] Zeiger auf die erste zu vergleichende Unicode-Zeichenfolge.
+> in Zeiger auf die erste Unicode-Zeichenfolge, die verglichen werden soll.
     
  _lpString2_
   
-> [in] Zeiger auf die zweite zu vergleichende Unicode-Zeichenfolge.
+> in Zeiger auf die zweite Unicode-Zeichenfolge, die verglichen werden soll.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt die Werte für einen entsprechenden Aufruf **MNLS_CompareStringW** außer CSTR_EQUAL beschrieben. 
+Gibt die für einen äquivalenten Aufruf von **MNLS_CompareStringW** mit Ausnahme von CSTR_EQUAL beschriebenen Werte zurück. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
- _MNLS_lstrcmpW_ führt einen Vergleich durch Aufrufen von [MNLS_CompareStringW](mnls_comparestringw.md) mit der GetUserDefaultLCID, 0 für Flags, die ein Gebietsschema und-1 für cch1 und cch2. 
+ _MNLS_lstrcmpW_ führt einen Vergleich durch Aufrufen von [MNLS_CompareStringW](mnls_comparestringw.md) mit einem Gebietsschema von GetUserDefaultLCID, 0 für Flags und-1 für Kmk1 und Kmk2 aus. 
   
 ## <a name="see-also"></a>Siehe auch
 

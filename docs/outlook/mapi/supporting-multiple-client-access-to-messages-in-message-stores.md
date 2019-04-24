@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 31885c64-edb2-4a87-8730-09f163dedd40
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b13fbb9f2807c9814fed5ba3bcca8fe73aaa7b01
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 40bed9ccbe8073c8e9ea5176c9d4be8fe642b52d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350603"
 ---
 # <a name="supporting-multiple-client-access-to-messages-in-message-stores"></a>Unterst�tzung von mehreren den Clientzugriff auf Nachrichten in Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Es ist m�glich, dass mehrere Clientanwendungen, eine bestimmte Nachricht gleichzeitig zu �ffnen. Nachricht-Anbieter m�ssen keine f�hren bestimmten Regeln f�r diesen Zugriff steuern. Wenn die Client-Anwendungen �ndern Sie die Nachricht und ihre �nderungen zu speichern, sollten jedoch Speicheranbieter die folgenden Regeln entsprechen:
   
@@ -35,5 +35,5 @@ Alternativ kann die Nachrichtenanbieter den Konflikt zu erkennen und pr�sentie
 
 
 
-[Implementieren von Nachrichten in Nachrichtenspeicher](implementing-messages-in-message-stores.md)
+[Implementieren von Nachrichten in Nachrichtenspeichern](implementing-messages-in-message-stores.md)
 

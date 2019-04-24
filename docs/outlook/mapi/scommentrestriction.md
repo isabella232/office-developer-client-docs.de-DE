@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 07631ae1-981e-4c8e-a30b-1213904fe079
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 84fb79b1922669db9c8e5d518a833a6866f11cea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3f66f513cc16bc479dd24c53804d751a396141f4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351415"
 ---
 # <a name="scommentrestriction"></a>SCommentRestriction
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Einschränkung Kommentar, der verwendet wird, um eine Einschränkung kommentieren. 
+Beschreibt eine Kommentar Einschränkung, die zum kommentieren einer Einschränkung verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SCommentRestriction
@@ -45,7 +45,7 @@ typedef struct _SCommentRestriction
 
  **cValues**
   
-> Anzahl-Eigenschaftswerte im Array auf den Member **LpProp** zeigt. 
+> Die Anzahl der Eigenschaftswerte im Array, auf die durch das **lpProp** -Element verwiesen wird. 
     
  **lpRes**
   
@@ -53,15 +53,15 @@ typedef struct _SCommentRestriction
     
  **lpProp**
   
-> Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, mit der Eigenschafts-Tag und der Wert für eine benannte Eigenschaft. 
+> Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die jeweils das Property-Tag und den Wert für eine benannte Eigenschaft enthalten. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **SCommentRestriction** ordnet ein Objekt zusammen mit einer Gruppe von benannten Eigenschaften. Kommentar Einschränkungen sind im Gegensatz zu anderen Einschränkungen, da sie nicht ausgewertet werden. D. h., werden sie von der [Methode IMAPITable:: Restrict](imapitable-restrict.md) -Methode ignoriert. Es ist keine Auswirkung auf die Zeilen, die von [der QueryRows](imapitable-queryrows.md) zurückgegeben wird, nachdem eine **Methode IMAPITable:: Restrict** aufgerufen wurde. 
+Die **SCommentRestriction** -Struktur ordnet ein Objekt einer Gruppe benannter Eigenschaften zu. Kommentar Einschränkungen sind im Gegensatz zu anderen Einschränkungen, da Sie nicht ausgewertet werden. Das heißt, Sie werden von der [IMAPITable:: Restrict](imapitable-restrict.md) -Methode ignoriert. Es gibt keine Auswirkung auf die Zeilen, die von der [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode zurückgegeben werden, nachdem ein **IMAPITable:: Restrict** -Aufruf ausgeführt wurde. 
   
-Anwendungsspezifische Informationen mit einer Einschränkung beibehalten, wenn es auf dem Datenträger gespeichert wird, kann die **SCommentRestriction** -Struktur verwendet werden. Beispielsweise kann ein Client, speichern den Namen einer benannten Eigenschaft in einer eigenschaftseinschränkung verwendet dazu eine **SCommentRestriction** -Struktur. Speichern einen Eigenschaftennamen ist nicht möglich, in einer eigenschaftseinschränkung, da die zugeordnete [SPropertyRestriction](spropertyrestriction.md) Struktur das Eigenschafts-Tag enthält. 
+Die **SCommentRestriction** -Struktur kann verwendet werden, um anwendungsspezifische Informationen mit einer Einschränkung beizubehalten, wenn Sie auf dem Datenträger gespeichert wird. Beispielsweise kann ein Client, der den Namen einer benannten Eigenschaft speichert, die in einer Eigenschaftseinschränkung verwendet wird, dies in einer **SCommentRestriction** -Struktur tun. Das Speichern eines Eigenschaftennamens ist in einer Eigenschaftseinschränkung nicht möglich, da die zugeordnete [SPropertyRestriction](spropertyrestriction.md) -Struktur nur das Tag der Eigenschaft enthält. 
   
-Weitere Informationen zu den **SCommentRestriction** Struktur und Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Weitere Informationen zur **SCommentRestriction** -Struktur und zu Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

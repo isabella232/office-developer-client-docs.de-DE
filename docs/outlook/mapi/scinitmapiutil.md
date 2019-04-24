@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d83b8ea8-a3b8-4038-a226-de1869c5d722
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3176280de33bda01bfd09ebaafc31d326d455a3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 090a73ed908d2a647d00de27b93538a77766c258
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351261"
 ---
 # <a name="scinitmapiutil"></a>ScInitMapiUtil
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-["MAPIInitialize"](mapiinitialize.md) ersetzt, wenn nur select Hilfsfunktionen verwendet werden. 
+Ersetzt [MAPIInitialize](mapiinitialize.md) , wenn nur ausgewählte Dienstprogrammfunktionen verwendet werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 SCODE ScInitMapiUtil(
@@ -45,17 +45,17 @@ SCODE ScInitMapiUtil(
   
 > [in] Reserviert. NULL muss sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktionen **ScInitMapiUtil** und [DeinitMapiUtil](deinitmapiutil.md) zusammenarbeiten, um aufrufen und Freigeben von select Hilfsfunktionen für Funktionen, im Gegensatz zu ["MAPIInitialize"](mapiinitialize.md), die Core sowie Dienstprogramm aufruft. Wenn **ScInitMapiUtil** Hilfsfunktionen anruft, wird auch den erforderlichen Arbeitsspeicher initialisiert. 
+Die **ScInitMapiUtil** -und die [DeinitMapiUtil](deinitmapiutil.md) -Funktion kooperieren beim Aufrufen und Freigeben von SELECT Utility-Funktionen, im Gegensatz zu [MAPIInitialize](mapiinitialize.md), das sowohl Core-als auch Utility-Funktionen aufruft. Wenn **ScInitMapiUtil** Dienstfunktionen aufruft, wird auch der erforderliche Speicher initialisiert. 
   
-Nach Abschluss der Verwendung der Funktionen, die **ScInitMapiUtil** aufgerufen hat muss **DeinitMapiUtil** explizit aufgerufen werden, um diese freigeben. Im Gegensatz dazu ruft **"MAPIInitialize"** implizit **DeinitMapiUtil**. 
+Wenn die Verwendung der von **ScInitMapiUtil** aufgerufenen Funktionen abgeschlossen ist, muss **DeinitMapiUtil** explizit aufgerufen werden, um Sie zu veröffentlichen. **MAPIInitialize** ruft hingegen implizit **DeinitMapiUtil**auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

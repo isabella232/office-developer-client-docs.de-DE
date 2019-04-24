@@ -8,30 +8,30 @@ f1_keywords:
 - Vis_DSS.chm82251788
 localization_priority: Normal
 ms.assetid: 87ea5e8f-c3e0-009f-4bf8-8c34fbdb83a6
-description: Ruft den Text aus einem Shape ab.
-ms.openlocfilehash: 53a0cb6e485ae2fd233792e1ebd9765426b7f798
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft den Text aus einer Form ab.
+ms.openlocfilehash: bb9b1fbe5900cd051828ed6c7ff07546567c1b23
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349112"
 ---
 # <a name="shapetext-function"></a>SHAPETEXT Function
 
-Ruft den Text aus einem Shape ab. 
+Ruft den Text aus einer Form ab. 
   
 ## <a name="syntax"></a>Syntax
 
-SHAPETEXT (** *Shapename! TheText* ** ** *[, Flag]* **) 
+SHAPETEXT (* * *Shapename! DerText* * * * * *[, Flag]* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Shapename! TheText_ <br/> |Erforderlich  <br/> ||Ein Verweis auf die Zelle TheText mit der in der Ziel-Shape.  _Shapename!_ ist der Name des Shapes, von dem Sie den Text abrufen möchten.  <br/> |
-| _Flag_ <br/> |Optional  <br/> |**Numeric** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
+| _Shapename! DerText_ <br/> |Erforderlich  <br/> ||Ein Verweis auf die Zelle mit dem Namen DerText im Ziel-Shape.  _Shapename!_ ist der Name der Form, aus der Sie den Text abrufen möchten.  <br/> |
+| _Flag_ <br/> |Optional  <br/> |**Numerisch** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
@@ -52,13 +52,13 @@ Sie können eine beliebige Kombination folgender Flags mit der Funktion SHAPETEX
    
 ## <a name="example-1"></a>Beispiel 1
 
-SHAPETEXT(sheetN!theText)
+SHAPETEXT (Sheetn! DerText)
   
 Gibt den Text aus dem Shape namens sheetN genau so zurück, wie er in dem Shape angezeigt ist.
   
 ## <a name="example-2"></a>Beispiel 2
 
-SHAPETEXT(theText)
+SHAPETEXT (DerText)
   
 Gibt den Text aus dem aktuellen Shape genau so zurück, wie er in dem Shape angezeigt ist.
   

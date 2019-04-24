@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 41b6c162-9984-43a3-b38e-44f0afae67de
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4ca565f97851a2efe2f3279f062f6ea89a4c6326
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7845238722ce81b84210b6f4fc33f9df0abacc07
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349294"
 ---
 # <a name="imapicontainergetsearchcriteria"></a>IMAPIContainer::GetSearchCriteria
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die Suchkriterien für den Container an.
+Ruft die Suchkriterien für den Container ab.
   
 ```cpp
 HRESULT GetSearchCriteria(
@@ -40,73 +40,73 @@ HRESULT GetSearchCriteria(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _lppRestriction_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Suchkriterien definiert. Wenn eine Clientanwendung NULL im Parameter _LppRestriction_ erfolgreich ist, gibt **GetSearchCriteria** keine **SRestriction** -Struktur zurück. 
+> Out Ein Zeiger auf einen Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Suchkriterien definiert. Wenn eine Clientanwendung im _lppRestriction_ -Parameter den Wert NULL übergibt, gibt **GetSearchCriteria** keine **SRestriction** -Struktur zurück. 
     
  _lppContainerList_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Array von Eintragsbezeichner, die Container, in die Suche einbezogen werden darstellen. Wenn ein Client NULL im Parameter _LppContainerList_ übergibt, gibt **GetSearchCriteria** ein Array von Eintragsbezeichner keine zurück. 
+> Out Ein Zeiger auf einen Zeiger auf ein Array von Eintrags Bezeichnern, die Container darstellen, die in die Suche eingeschlossen werden sollen. Wenn ein Client im _lppContainerList_ -Parameter den Wert NULL übergibt, gibt **GetSearchCriteria** kein Array von Eintrags Bezeichnern zurück. 
     
  _lpulSearchState_
   
-> [out] Ein Zeiger auf eine Bitmaske aus Flags verwendet, um den aktuellen Status der Suche anzugeben. Wenn ein Client NULL im Parameter _LpulSearchState_ übergibt, gibt **GetSearchCriteria** keine Flags zurück. Die folgenden Kennzeichen können festgelegt werden: 
+> Out Ein Zeiger auf eine Bitmaske von Flags, die verwendet werden, um den aktuellen Status der Suche anzugeben. Wenn ein Client im _lpulSearchState_ -Parameter den Wert NULL übergibt, gibt **GetSearchCriteria** keine Flags zurück. Die folgenden Flags können festgelegt werden: 
     
 SEARCH_FOREGROUND 
   
-> Die Suche sollte mit hoher Priorität relativ zu anderen Suchvorgänge ausgeführt. Wenn dieses Flag nicht festgelegt ist, wird die Suche mit normaler Priorität relativ zu anderen Suchvorgänge ausgeführt.
+> Die Suche sollte relativ zu anderen Suchvorgängen mit hoher Priorität ausgeführt werden. Wenn dieses Flag nicht festgelegt ist, wird die Suche im Verhältnis zu anderen Suchvorgängen mit normaler Priorität ausgeführt.
     
 SEARCH_REBUILD 
   
-> Die Suche ist im Modus CPU-intensiver ihren Funktionen, die versuchen, Nachrichten zu suchen, die den Kriterien entsprechen. Wenn dieses Flag nicht festgelegt ist, gehört die CPU-intensiver Vorgang für die Suche über. Dieses Kennzeichen wirkt sich nur, wenn die Suche aktiviert ist (d. h., wenn das Flag SEARCH_RUNNING festgelegt ist).
+> Die Suche befindet sich im CPU-intensiven Modus des Vorgangs und versucht, Nachrichten zu finden, die den Kriterien entsprechen. Wenn dieses Flag nicht festgelegt ist, ist der CPU-intensive Teil des Suchvorgangs über. Dieses Flag hat nur dann eine Bedeutung, wenn die Suche aktiv ist (d. h., wenn das SEARCH_RUNNING-Flag festgelegt ist).
     
 SEARCH_RECURSIVE 
   
-> Die Suche wird in den angegebenen Container und deren untergeordnete Container für übereinstimmende Einträge suchen. Wenn dieses Flag nicht festgelegt ist, werden nur die explizit in den letzten Aufruf der [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md) -Methode einbezogen Container durchsucht wird. 
+> Die Suche sucht in den angegebenen Containern und allen untergeordneten Containern nach übereinstimmenden Einträgen. Wenn dieses Flag nicht festgelegt ist, werden nur die Container durchsucht, die explizit im letzten Aufruf der [IMAPIContainer:: SetSearchCriteria](imapicontainer-setsearchcriteria.md) -Methode enthalten sind. 
     
 SEARCH_RUNNING 
   
-> Die Suche ist aktiv und Inhaltstabelle des Containers wird aktualisiert, um die Änderungen im Nachrichtenspeicher oder -Adressbuch. Wenn dieses Flag nicht festgelegt ist, wird die Suche ist deaktiviert, und der Inhaltstabelle ist statische.
+> Die Suche ist aktiv, und die Inhaltstabelle des Containers wird aktualisiert, um Änderungen im Nachrichtenspeicher oder im Adressbuch widerzuspiegeln. Wenn dieses Flag nicht festgelegt ist, ist die Suche inaktiv und die Tabelle Contents ist statisch.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Suchkriterien erfolgreich abgerufen wurde.
+> Die Suchkriterien wurden erfolgreich abgerufen.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_NOT_INITIALIZED 
   
-> Nie wurden die Suchkriterien für den Container festgelegt.
+> Suchkriterien wurden nie für den Container festgelegt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIContainer::GetSearchCriteria** -Methode ruft die Suchkriterien für einen Container, der sucht, in der Regel in einem Suchergebnisse Ordner unterstützt. Erstellen Sie Suchkriterien durch Aufrufen des Containers **IMAPIContainer::SetSearchCriteria** -Methode. 
+Die **IMAPIContainer:: GetSearchCriteria** -Methode ruft die Suchkriterien für einen Container ab, der Suchvorgänge unterstützt, in der Regel einen Suchergebnisordner. Sie erstellen Suchkriterien, indem Sie die **IMAPIContainer:: SetSearchCriteria** -Methode eines Containers aufrufen. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Address Book Containern müssen möglicherweise **GetSearchCriteria** unterstützen nur, wenn die erweiterte Suche-Funktionen der Eigenschaft **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) zugeordnet bieten. Weitere Informationen zum Implementieren die erweiterten Suchfunktion für Address Book Container, finden Sie unter [Implementieren der erweiterten Suche](implementing-advanced-searching.md).
+Adressbuchcontainer müssen **GetSearchCriteria** möglicherweise nur unterstützen, wenn Sie die erweiterten Suchfunktionen zur Verfügung stellen, die der **PR_SEARCH** ([pidtagsearch (](pidtagsearch-canonical-property.md))-Eigenschaft zugeordnet sind. Weitere Informationen dazu, wie Sie die erweiterte Suchfunktion für Adressbuchcontainer implementieren, finden Sie unter [Implementieren der erweiterten](implementing-advanced-searching.md)Suche.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie mit den Datenstrukturen auf das durch die Parameter _LppRestriction_ und _LppContainerList_ abgeschlossen haben, rufen Sie [MAPIFreeBuffer](mapifreebuffer.md) einmal für jede Struktur freigegeben werden muss. 
+Wenn Sie die Datenstrukturen, auf die durch die Parameter _lppRestriction_ und _lppContainerList_ verwiesen wird, nicht mehr aufgerufen haben, rufen Sie [mapifreebufferfreigegeben](mapifreebuffer.md) einmal für jede Struktur auf, die freigegeben werden soll. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|HierarchyTableDlg.cpp  <br/> |CHierarchyTableDlg::OnEditSearchCriteria  <br/> |MFCMAPI (engl.) verwendet die **IMAPIContainer::GetSearchCriteria** -Methode, um Suchkriterien aus einem Ordner anzuzeigenden abzurufen.  <br/> |
+|HierarchyTableDlg. cpp  <br/> |CHierarchyTableDlg:: OnEditSearchCriteria  <br/> |MFCMAPI verwendet die **IMAPIContainer:: GetSearchCriteria** -Methode, um Suchkriterien aus einem anzuzeigenden Ordner abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -118,7 +118,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagSearch (kanonische Eigenschaft)](pidtagsearch-canonical-property.md)
+[Kanonische Pidtagsearch (-Eigenschaft](pidtagsearch-canonical-property.md)
   
 [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6fee29ce-9a34-4e0c-bb71-03120c3f1117
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 054625601b496a8ec8f7745aa4cbc4715eed81a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9b4ca4628f356142eb5303c064e3916474810fda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345101"
 ---
 # <a name="sorrestriction"></a>SOrRestriction
 
@@ -25,11 +25,11 @@ ms.locfileid: "22585059"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Einschränkung **oder** die verwendet wird, um eine logische **OR** -Operation, die eine Einschränkung anzuwenden. 
+Beschreibt eine **oder** -Einschränkung, die zum Anwenden einer logischen **or** -Operation auf eine Einschränkung verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SOrRestriction
@@ -44,15 +44,15 @@ typedef struct _SOrRestriction
 
  **cRes**
   
-> Anzahl der im Array Strukturen auf der **LpRes** Member zeigt. 
+> Anzahl der Strukturen im Array, auf die durch das **lpRes** -Element verwiesen wird. 
     
  **lpRes**
   
-> Zeiger auf die [SRestriction](srestriction.md) -Struktur, beschreibt die Einschränkung mithilfe des logischen Operators **OR** verknüpft werden. 
+> Zeiger auf die [SRestriction](srestriction.md) -Struktur, die die zu verbindende Einschränkung mit der logischen **or** -Operation beschreibt. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zur Struktur **SOrRestriction** finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Weitere Informationen zur **SOrRestriction** -Struktur finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

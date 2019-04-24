@@ -7,11 +7,11 @@ ms.assetid: ef88e30e-7537-488e-bc72-8da29810f7aa
 description: Verwenden Sie das Telemetrieprotokoll für Office 2013, um Kompatibilitätsprobleme zwischen Office 2013 und Lösungen zu ermitteln, die für vorherige Versionen von Office entwickelt wurden.
 localization_priority: Priority
 ms.openlocfilehash: 3954662a9476dca0cbb9bf4b8197979783b7e11e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346288"
 ---
 # <a name="troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log"></a>Problembehandlung bei Office-Dateien und benutzerdefinierte Lösungen mit dem Telemetrieprotokoll
 
@@ -33,7 +33,7 @@ Weitere Informationen finden Sie im Artikel [Bereitstellen des Office-Telemetrie
 Wenn eine Office-Datei oder -Lösung geladen, verwendet oder geschlossen wird oder einen Fehler in einer der ausgewählten Office 2013-Anwendungen auslöst, fügt die Anwendung einen Datensatz in einem lokalen Datenspeicher (einer Datenbank auf demselben Computer) hinzu, der Informationen über das Ereignis enthält. Der Datensatz umfasst einen Titel für das Ereignis, den Namen der Anwendung, die das Ereignis protokolliert hat, die Uhrzeit, den Namen der Datei oder Lösung, den Schweregrad und eine kurze Beschreibung eventueller Fehler, die aufgetreten sind. Nach einer Aktualisierung zeigt die Telemetrieprotokoll-Arbeitsmappe eine Liste der im lokalen Datenspeicher enthaltenen Datensätze an.
   
 > [!NOTE]
-> Der Standardspeicherort für den lokalen Datenspeicher ist %Users%\[Current user]\AppData\Local\Microsoft\Office\15.0\Telemetry. Die standardmäßige Maximalgröße für den Datenspeicher beträgt 5 MB (5.120 KB). 
+> The default location for the local data store is %Users%\[Current user]\AppData\Local\Microsoft\Office\15.0\Telemetry. The default maximum size for the data store is 5 MB (5,120 KB). 
   
 Ausgewählte Office 2013-Anwendungen verfügen über eine Laufzeitprotokollierungs-API, die einen Datensatz im lokalen Datenspeicher erstellt, wann immer eine Datei oder eine Lösung eines der folgenden Ereignisse auslöst:
   
@@ -73,7 +73,7 @@ Gehen Sie folgendermaßen vor, um die erfassten Office-Probleme in Telemetriepro
 
 1. Gehen Sie folgendermaßen vor, um Telemetrieprotokoll zu öffnen:
     
-   - **Für Windows 7:** Wählen Sie im **Startmenü** **Alle Programme**. Erweitern Sie dann in der Liste der Programme **Microsoft Office 2013** und **Office 2013 Tools**, und klicken Sie dann auf **Office 2013 Telemetry Log**.
+   - **On Windows 7:** On the **Start** menu, choose **All Programs**. Then, in the list of programs, expand **Microsoft Office 2013**, expand **Office 2013 Tools**, and then click **Office 2013 Telemetry Log**.
     
      In Excel 2013 wird eine neue Arbeitsmappe geöffnet. Die neue Arbeitsmappe enthält drei Arbeitsblätter: **Ereignisse**, **Systeminfo** und **Anleitung**.
     
@@ -126,11 +126,11 @@ Interpretieren Sie die in Telemetrieprotokoll angezeigten Datensätze anhand der
 |**Ereignis-ID**|**Titel**|**Schweregrad**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |Das Dokument wurde erfolgreich geladen  <br/> ||Die in der Spalte **File** angegebene Datei wurde in der Office-Anwendung ohne Probleme geöffnet.  <br/> |
-|2  <br/> |Das Dokument konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Datei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
+|2  <br/> |Das Dokument konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Datei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/de-DE/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/de-DE/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
 |3  <br/> |Die Vorlage wurde erfolgreich geladen.  <br/> ||Die in der Spalte **File** angegebene Vorlagendatei wurde in der Office-Anwendung ohne Probleme geöffnet.  <br/> |
-|4  <br/> |Die Vorlage konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Vorlagendatei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache, oder die Vorlagenverfügbarkeit hat sich geändert.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
+|4  <br/> |Die Vorlage konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Vorlagendatei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache, oder die Vorlagenverfügbarkeit hat sich geändert.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/de-DE/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/de-DE/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
 |5  <br/> |Das Add-In wurde erfolgreich geladen.  <br/> ||Das in der Spalte **File** angegebene Add-In wurde erfolgreich in die Office-Anwendung geladen. Es wurden keine Kompatibilitätsprobleme ermittelt.  <br/> |
-|6  <br/> |Fehler beim Laden von Add-In  <br/> |Kritisch  <br/> | Die Anwendung konnte das in der Spalte **File** angegebene Add-In nicht laden.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx). <br/><br/>  Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
+|6  <br/> |Fehler beim Laden von Add-In  <br/> |Kritisch  <br/> | Die Anwendung konnte das in der Spalte **File** angegebene Add-In nicht laden.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/de-DE/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx). <br/><br/>  Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/de-DE/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
 |7  <br/> |Das Add-In-Manifest wurde erfolgreich heruntergeladen.  <br/> ||Die Host-Anwendung hat das Manifest für die Office-Add-In erfolgreich heruntergeladen.  <br/> |
 |8  <br/> |Das Add-In-Manifest konnte nicht heruntergeladen werden.  <br/> |Kritisch  <br/> |Die Hostanwendung konnte die Manifestdatei für die Office-Add-In nicht aus dem SharePoint-Katalog, dem Unternehmenskatalog oder aus dem Office Store laden.  <br/> |
 |9  <br/> |Das Add-In-Manifest konnte nicht analysiert werden.  <br/> |Kritisch  <br/> |Die Hostanwendung hat das Office-Add-In-Manifest für das Add-In geladen, konnte jedoch das XML-Markup nicht lesen.  <br/> |

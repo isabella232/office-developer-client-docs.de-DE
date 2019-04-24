@@ -1,5 +1,5 @@
 ---
-title: WeatherData-Element (Outlook Wetter Speicherort-Schema)
+title: WeatherData-Element (Outlook Weather Location Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,25 +7,25 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 14e0c469-31dc-fbe2-0d45-da602df04f13
-description: Definiert das Wetter-Element.
+description: Definiert das wetterelement.
 ms.openlocfilehash: ade57264fab592d3314aa9a3376e129a5f3719c0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355034"
 ---
-# <a name="weatherdata-element-outlook-weather-location-schema"></a>WeatherData-Element (Outlook Wetter Speicherort-Schema)
+# <a name="weatherdata-element-outlook-weather-location-schema"></a>WeatherData-Element (Outlook Weather Location Schema)
 
-Definiert das Wetter-Element.
+Definiert das wetterelement.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> ||
 |**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
-|**Schemadatei** <br/> |getweatherlocation.xsd  <br/> |
+|**Schemadatei** <br/> |getweatherlocation. xsd  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -47,7 +47,7 @@ Definiert das Wetter-Element.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -57,7 +57,7 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Wetterbericht](weather-element-weatherdata-elementoutlook-weather-location-schema.md) <br/> |[weatherType](weathertype-complextype-outlook-weather-location-schema.md) <br/> |Gibt den Speicherort für den Bericht Wetter auf.  <br/> |
+|[Wetter](weather-element-weatherdata-elementoutlook-weather-location-schema.md) <br/> |[weathertype](weathertype-complextype-outlook-weather-location-schema.md) <br/> |Gibt den Speicherort an, an dem Wetterbedingungen gemeldet werden sollen.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

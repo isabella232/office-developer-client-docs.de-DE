@@ -1,5 +1,5 @@
 ---
-title: Optionale Funktionen für Transportanbieter
+title: Optionale Transport Anbieter Features
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: 0bec2c17-b41c-4e46-8961-a55bde1f7326
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b55e6518ee1f3f59ef0459b3aeb68461f00a7ab3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: df38350b049264e7e20ac0bb821c71d93b992d2a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348517"
 ---
-# <a name="optional-transport-provider-features"></a>Optionale Funktionen für Transportanbieter
+# <a name="optional-transport-provider-features"></a>Optionale Transport Anbieter Features
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Optionale Features, die Transportanbieter implementiert werden können, gehören:
+Zu den optionalen Features, die Transportanbieter implementieren können, gehören:
   
-- Registrieren von Nachrichten und Empfänger Optionen speziell für den Transportdienst.
+- Registrieren von Nachrichten-und Empfängeroptionen für den Transportanbieter.
     
-- Warten ein Profil, falls erforderlich, um Konfigurationsinformationen und Anmeldeinformationen für die messaging-System zu speichern.
+- Verwalten eines Profils, falls erforderlich, zum Speichern von Konfigurationsinformationen und Anmeldeinformationen für das Messagingsystem.
     
-- Überprüfung von Anmeldeinformationen, die erforderlich sind, durch die messaging-System ausführen.
+- DurchFühren einer Überprüfung der vom Messagingsystem erforderlichen Anmeldeinformationen.
     
-- Unterstützung für ereignisbenachrichtigung für Interesse Clientanwendungen mit der [IMAPISupport::Notify](imapisupport-notify.md) -Methode. 
+- Unterstützende Ereignisbenachrichtigung für interessierte Clientanwendungen mit der [IMAPISupport:: notify](imapisupport-notify.md) -Methode. 
     
-- Anzeigen von Konfiguration Eigenschaftenseiten und Dialogfeldern des Assistenten zum Benutzer der Adressbuchhierarchie Einstellungen konfigurieren können.
+- Anzeigen von Konfigurationseigenschaften Blättern und Assistenten Dialogfeldern, um Benutzern das Konfigurieren der Einstellungen des Transportanbieters zu ermöglichen.
     
-- Nachricht Übermittlungsberichte Clientanwendungen bereit.
+- Bereitstellen von Nachrichtenübermittlungsberichten für Clientanwendungen.
     
 

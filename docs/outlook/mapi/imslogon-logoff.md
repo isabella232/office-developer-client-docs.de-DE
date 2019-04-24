@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 1b0d1b52-6651-4de3-9381-86772d9d52a1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 66ba27d1d333be3217f2a22ca5d53449372c1f31
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348874"
 ---
 # <a name="imslogonlogoff"></a>IMSLogon::Logoff
 
@@ -25,7 +25,7 @@ ms.locfileid: "25399235"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Nachricht Abmeldung Speicheranbieter. 
+Meldet einen Nachrichtenspeicher Anbieter ab. 
   
 ```cpp
 HRESULT Logoff(
@@ -37,7 +37,7 @@ HRESULT Logoff(
 
  _lpulFlags_
   
-> [in] Reserviert. Ein Zeiger auf 0 (null) muss sein.
+> in Reserviert muss ein Zeiger auf NULL sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,13 +45,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Nachricht Anbieter implementieren Sie die **IMSLogon::Logoff** -Methode eine Nachricht Speicheranbieter zwangsweise Herunterfahren. **IMSLogon::Logoff** wird in den folgenden Situationen aufgerufen: 
+Nachrichtenspeicher Anbieter implementieren die **IMSLogon:: Logout** -Methode, um den Nachrichtenspeicher Anbieter gewaltsam herunterzufahren. **IMSLogon:: Logoff** wird in den folgenden Situationen aufgerufen: 
   
-- Während MAPI deaktiviert Clientidentität nach einem Aufruf der Methode [IMAPISession::Logoff](imapisession-logoff.md) protokolliert wird. 
+- Während MAPI nach einem Aufruf der [IMAPISession:: Abmelde](imapisession-logoff.md) Methode einen Client abmeldet. 
     
-- Während MAPI aus einer Nachricht Speicheranbieter protokolliert wird. In diesem Fall **IMSLogon::Logoff** im Rahmen der Verarbeitung der [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode des Support-Objekts, mit dem Anbieter der Nachricht erstellt, während ein [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) oder **IUnknown verarbeitet wird MAPI aufgerufen wird: Version** Methodenaufruf für eine Nachricht Store-Objekt. 
+- Während MAPI sich bei einem Nachrichtenspeicher Anbieter abmeldet. In diesem Fall wird **IMSLogon:: Logoff** als Teil der MAPI-Verarbeitung der [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode des Support Objekts aufgerufen, die der Nachrichtenspeicher Anbieter während der Verarbeitung eines [IMsgStore:: StoreLogoff](imsgstore-storelogoff.md) oder IUnknown erstellt:: ** Release** -Methodenaufruf für ein Nachrichtenspeicherobjekt. 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,32 +1,32 @@
 ---
-title: ReflectionSize Cell (Additional Effect Properties Section)
+title: Reflexions Zelle (Abschnitt "Additional Effect Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7dfeb78e-a0fa-4492-b35f-70b1e2975d38
-description: Bestimmt die Größe des Reflektions relativ zum Shape, als Prozentwert von 0,0 und 100,0 %. Eine Form mit einem Wert von 0 % in der Zelle ReflectionSize ist eine Spiegelung nicht mit. ein Wert von 100 % zeigt ein vollständiges Spiegelbild der Form.
-ms.openlocfilehash: b525a5f7379b2702dd7152d4eccf6dab1879a6cb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Größe der Reflektion relativ zum Shape, als Prozentsatz von 0,0 bis 100,0%. Ein Shape mit dem Wert 0% in der Zelle reFlexe hat keine Reflexion; ein Wert von 100% zeigt ein vollständiges Spiegelbild der Form an.
+ms.openlocfilehash: 60fcb315ec1b6187082bdcdbbdcfaa4b80bbcfb3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348356"
 ---
-# <a name="reflectionsize-cell-additional-effect-properties-section"></a>ReflectionSize Cell (Additional Effect Properties Section)
+# <a name="reflectionsize-cell-additional-effect-properties-section"></a>Reflexions Zelle (Abschnitt "Additional Effect Properties")
 
-Bestimmt die Größe des Reflektions relativ zum Shape, als Prozentwert von 0,0 und 100,0 %. Eine Form mit einem Wert von 0 % in der Zelle **ReflectionSize** ist eine Spiegelung nicht mit. ein Wert von 100 % zeigt ein vollständiges Spiegelbild der Form. 
+Bestimmt die Größe der Reflektion relativ zum Shape, als Prozentsatz von 0,0 bis 100,0%. Ein Shape mit dem Wert 0% in der Zelle **** Reflexe hat keine Reflexion; ein Wert von 100% zeigt ein vollständiges Spiegelbild der Form an. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **ReflectionSize** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die **** Zelle Reflexe aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ReflectionSize  <br/> |
+| Zellenname:  <br/> | Reflexion  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **ReflectionSize** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die **** Zelle Reflexe aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

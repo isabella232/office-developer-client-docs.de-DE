@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 48ceeeed-66ae-a81f-2aee-f0010102dfb7
 description: Sperrt die horizontale Position des Shapes, damit es nicht horizontal verschoben werden kann.
-ms.openlocfilehash: 981f4f417e48f70d0693e30683c4351d0e53a758
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: af0cee32370a540cd8d7aaf960cc0cbc27cc8f97
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348265"
 ---
-# <a name="lockmovex-cell-protection-section"></a>LockMoveX Cell (Protection Section)
+# <a name="lockmovex-cell-protection-section"></a>Zelle "LockMoveX" (Abschnitt "Protection")
 
 Sperrt die horizontale Position des Shapes, damit es nicht horizontal verschoben werden kann.
   
@@ -25,15 +25,15 @@ Sperrt die horizontale Position des Shapes, damit es nicht horizontal verschoben
 | TRUE  <br/> | Horizontale Position ist gesperrt.  <br/> |
 | FALSE  <br/> | Horizontale Position ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockMoveX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LockMoveX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockMoveX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockMoveX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LockMoveX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

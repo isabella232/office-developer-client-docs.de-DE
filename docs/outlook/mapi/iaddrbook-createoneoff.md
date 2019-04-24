@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: bcacfbdf-edff-4810-a985-e6d2c9271901
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ddb87af4b14be6d728bcceddb4d958ba49229ad4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 980ac82c6f7fcb5771a6013b3fb033b0bdfd05e0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349315"
 ---
 # <a name="iaddrbookcreateoneoff"></a>IAddrBook::CreateOneOff
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt einen Eintrag Bezeichner für eine einmalige Adresse.
+Erstellt eine Eintrags-ID für eine einmalige Adresse.
   
 ```cpp
 HRESULT CreateOneOff(
@@ -40,61 +40,61 @@ HRESULT CreateOneOff(
 
 ## <a name="parameters"></a>Parameter
 
- _Wert_
+ _lpszName_
   
-> [in] Ein Zeiger auf den Wert des Empfängers **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft. Der _Wert_ -Parameter kann NULL sein. 
+> in Ein Zeiger auf den Wert der **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des Empfängers. Der _lpszName_ -Parameter kann NULL sein. 
     
  _lpszAdrType_
   
-> [in] Ein Zeiger auf den Typ des Empfängers, wie FAX oder SMTP-Adresse. Der Parameter _LpszAdrType_ darf nicht NULL sein. 
+> in Ein Zeiger auf den Adresstyp des Empfängers, wie FAX oder SMTP. Der _lpszAdrType_ -Parameter darf nicht NULL sein. 
     
  _lpszAddress_
   
-> [in] Ein Zeiger auf die Adresse des Empfängers. Der Parameter _LpszAddress_ darf nicht NULL sein. 
+> in Ein Zeiger auf die Adresse des Empfängers. Der _lpszAddress_ -Parameter darf nicht NULL sein. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den einmal-Empfänger auswirkt. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die sich auf den einmaligen Empfänger auswirkt. Die folgenden Flags können festgelegt werden:
     
 MAPI_SEND_NO_RICH_INFO 
   
-> Der Empfänger kann nicht formatierte Nachrichteninhalt behandeln. Wenn MAPI_SEND_NO_RICH_INFO festgelegt ist, wird der MAPI-Eigenschaft des Empfängers- **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) auf false festgelegt. Wenn MAPI_SEND_NO_RICH_INFO nicht festgelegt ist, wird diese Eigenschaft von MAPI auf TRUE festgelegt, es sei denn, die Adresse des Empfängers messaging auf das _LpszAddress_ interpretiert wird, um eine IP-Adresse sein. In diesem Fall wird MAPI **PR_SEND_RICH_INFO** auf false festgelegt. 
+> Der Empfänger kann formatierten Nachrichteninhalt nicht verarbeiten. Wenn MAPI_SEND_NO_RICH_INFO festgelegt ist, legt MAPI die **PR_SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md))-Eigenschaft des Empfängers auf false fest. Wenn MAPI_SEND_NO_RICH_INFO nicht festgelegt ist, legt MAPI diese Eigenschaft auf TRUE fest, es sei denn, die Messaging Adresse des Empfängers, auf die durch _lpszAddress_ verwiesen wird, wird als Internet Adresse interpretiert. In diesem Fall wird **PR_SEND_RICH_INFO** auf false festgelegt. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Der Anzeigename, Adresstyp und Adresse sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind diese Zeichenfolgen in ANSI-Format.
+> Der Anzeigename, der Adresstyp und die Adresse sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
     
  _lpcbEntryID_
   
-> [out] Ein Zeiger auf die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LppEntryID_ verwiesen. 
+> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppEntryID_ -Parameter verwiesen wird. 
     
  _lppEntryID_
   
-> [out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID für den einmaligen Empfänger.
+> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID für den einmaligen Empfänger.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Bezeichner des Eingangs wurde erfolgreich erstellt.
+> Der einmalige Eintragsbezeichner wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clients rufen die **CreateOneOff** -Methode zum Erstellen eines Eintrags-ID für einen einmaligen Empfänger – einen Empfänger, die nicht zu keiner der Container aus der aktuell geladenen adressbuchanbietern implementierte gehört. Einmaligen Empfänger können jede Art von-Adresse, die unterstützt wird von einem der aktiven adressbuchanbietern implementierte besitzen, für die Sitzung. 
+Clients rufen die **CreateOneOff** -Methode auf, um eine Eintrags-ID für einen einmaligen Empfänger zu erstellen: einen Empfänger, der keinem der Container eines der derzeit geladenen Adressbuchanbieter angehört. Einmal Empfänger können jede Art von Adresse haben, die von einem der aktiven Adressbuchanbieter für die Sitzung unterstützt wird. 
   
-Einmaligen Empfänger werden in der Regel mit einer Vorlage für ihre speziellen Adresstyp erstellt. Der Adressbuchanbieter, die den Adresstyp unterstützt stellt die Vorlage. Ein Benutzer von einer Clientanwendung gibt die entsprechende Informationen in die Vorlage.
+Einmal Empfänger werden in der Regel mit einer Vorlage für ihren jeweiligen Adresstyp erstellt. Der Adressbuchanbieter, der den Adresstyp unterstützt, liefert die Vorlage. Ein Benutzer einer Clientanwendung gibt die relevanten Informationen in die Vorlage ein.
   
-MAPI unterstützt Unicode-Zeichenfolgen für die Anzeigenamen, den Adresstyp und die Adressenparameter der **CreateOneOff**.
+MAPI unterstützt Unicode-Zeichenfolgen für den Anzeigenamen, den Adresstyp und die Adressparameter von **CreateOneOff**.
   
-Das Flag MAPI_SEND_NO_RICH_INFO steuert, ob formatierter Text in Rich Text Format (RTF) zusammen mit jeder Nachricht gesendet wird. Die Transport Neutral Encapsulation Format (TNEF) – ein Format, das für die Übertragung verwendet wird formatierter Text – wird von den meisten Transport Anbietern, unabhängig davon, wie der Empfänger die **PR_SEND_RICH_INFO** -Eigenschaft festgelegt wird gesendet. Dies gilt nicht für die messaging-Clients, die mit Nachrichten zwischen Personen arbeiten. Da TNEF in der Regel zum Senden von benutzerdefinierter Eigenschaften für benutzerdefinierte Nachrichtenklassen verwendet wird, kann nicht unterstützt, es jedoch ein Problem für formularbasierte oder Clients, die eine benutzerdefinierte MAPI-Eigenschaften erfordern. Weitere Informationen finden Sie unter [Senden von Nachrichten mit TNEF](sending-messages-with-tnef.md).
+Das MAPI_SEND_NO_RICH_INFO-Flag steuert, ob formatierter Text im Rich-Text-Format (RTF) zusammen mit jeder Nachricht gesendet wird. Das Transport Neutral Encapsulation Format (TNEF) – ein Format, das für die Übertragung von formatiertem Text verwendet wird – wird von den meisten Transport Anbietern gesendet, unabhängig davon, wie der Empfänger seine **PR_SEND_RICH_INFO** -Eigenschaft festlegt. Dies ist kein Problem für Messaging-Clients, die mit zwischenmenschlichen Nachrichten arbeiten. Da TNEF jedoch normalerweise zum Senden benutzerdefinierter Eigenschaften für benutzerdefinierte Nachrichtenklassen verwendet wird, kann dies ein Problem für formularbasierte Clients oder Clients sein, die benutzerdefinierte MAPI-Eigenschaften erfordern. Weitere Informationen finden Sie unter [Senden von Nachrichten mit TNEF](sending-messages-with-tnef.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|Mapiabfunctions.cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI (engl.) verwendet die **CreateOneOff** -Methode, um eine Eintrags-ID für eine Adresse erstellen, die in jeder Adressbuch nicht gefunden werden kann.  <br/> |
+|Mapiabfunctions. cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI verwendet die **CreateOneOff** -Methode, um eine EINTRAGS-ID für eine Adresse zu erstellen, die in keinem Adressbuch gefunden wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

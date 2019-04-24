@@ -1,5 +1,5 @@
 ---
-title: PidTagServiceEntryName (kanonische Eigenschaft)
+title: Kanonische Pidtagserviceentryname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 783f08aa-fb5a-432d-b8bd-48d69f0e5c38
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3988596cc0b9c01d526354dabef3a6e7fdefc3b6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2c771f1d97305271b70102c148e62f30512974fb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351072"
 ---
-# <a name="pidtagserviceentryname-canonical-property"></a>PidTagServiceEntryName (kanonische Eigenschaft)
+# <a name="pidtagserviceentryname-canonical-property"></a>Kanonische Pidtagserviceentryname (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Namen der Funktion Punkt Eintrag für die Konfiguration eines Diensts Nachricht.
+Enthält den Namen der Einstiegspunktfunktion für die Konfiguration eines Nachrichtendiensts.
   
 |||
 |:-----|:-----|
@@ -34,25 +34,25 @@ Enthält den Namen der Funktion Punkt Eintrag für die Konfiguration eines Diens
 |Datentyp:  <br/> |PT_STRING8  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Es wird empfohlen, dass Message Service Implementierer einen Nachricht Service Einstiegspunkt bereitstellen, aber der Einstiegspunkt nicht erforderlich ist. Der Einstiegspunkt sollten jedoch bereitgestellt werden, nur, wenn die zugehörigen Konfigurationseigenschaften vorhanden. Wenn diese Eigenschaften nicht vorhanden sind, wird MAPI davon ausgegangen, dass kein Einstiegspunkt bereitgestellt wird.
+Es wird empfohlen, dass der Nachrichtendienst Implementierer einen Einstiegspunkt für den Nachrichtendienst bereitstellt, der Einstiegspunkt ist jedoch nicht erforderlich. Der Einstiegspunkt sollte jedoch nur angegeben werden, wenn die zugehörigen Konfigurationseigenschaften vorhanden sind. Wenn diese Eigenschaften nicht vorhanden sind, geht MAPI davon aus, dass kein Einstiegspunkt bereitgestellt wird.
   
-Die Dynamic Link Library (DLL) in der die Funktion Eintrag angezeigt wird, heißt von der **PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md))-Eigenschaft.
+Die Dynamic Link Library (DLL), in der die Einstiegspunktfunktion angezeigt wird, wird von der **PR_SERVICE_DLL_NAME** ([pidtagservicedllname (](pidtagservicedllname-canonical-property.md))-Eigenschaft benannt.
   
-Weitere Informationen zu Nachricht Service Einstiegspunkte finden Sie unter [Implementieren einer Service Provider Eintrag Point-Funktion](implementing-a-service-provider-entry-point-function.md).
+Weitere Informationen zu Einstiegspunkten für den Nachrichtendienst finden Sie unter [Implementieren einer Dienstanbieter-Einstiegspunktfunktion](implementing-a-service-provider-entry-point-function.md).
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -64,5 +64,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

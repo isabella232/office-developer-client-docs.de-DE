@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3231a91a-1ef2-4dd8-9f3e-79ca56d2eae9
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7177b2f0f709939b7580fa7abb87490073bb00c4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 513ec0db4e99e687d8aeb9e1d6acdef73df4d158
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351289"
 ---
 # <a name="scomparepropsrestriction"></a>SComparePropsRestriction
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wird eine eigenschaftseinschränkung vergleichen, die getestet werden zwei Eigenschaften mit einem relationalen Operator beschrieben. 
+Beschreibt eine Compare-Eigenschaftseinschränkung, die zwei Eigenschaften mithilfe eines relationalen Operators testet. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SComparePropsRestriction
@@ -41,41 +41,41 @@ typedef struct _SComparePropsRestriction
 
 ## <a name="members"></a>Elemente
 
-**RelOp-Element**
+**RelOp**
   
-> Relationale Operator, der zum Vergleichen von zwei Eigenschaften verwendet. Mögliche Werte sind wie folgt:
+> Relationaler Operator, der zum Vergleichen der beiden Eigenschaften verwendet werden soll. Folgende Werte sind möglich:
     
-  - RELOP_GE: Der Vergleich wird basierend auf dem ersten Wert größer oder gleich vorgenommen.
+  - RELOP_GE: der Vergleich erfolgt basierend auf einem größer oder gleich dem ersten Wert.
       
-  - RELOP_GT: Der Vergleich wird basierend auf einen höheren Wert für die erste vorgenommen.
+  - RELOP_GT: der Vergleich erfolgt basierend auf einem höheren ersten Wert.
       
-  - RELOP_LE: Der Vergleich wird basierend auf dem ersten Wert kleiner oder gleich vorgenommen.
+  - RELOP_LE: der Vergleich erfolgt basierend auf einem niedrigeren oder gleichen ersten Wert.
       
-  - RELOP_LT: Der Vergleich wird basierend auf einen kleineren Wert des ersten vorgenommen.
+  - RELOP_LT: der Vergleich erfolgt basierend auf einem niedrigeren ersten Wert.
       
-  - RELOP_NE: Der Vergleich basierend auf Werten mit ungleicher erfolgt.
+  - RELOP_NE: der Vergleich erfolgt basierend auf ungleich Werten.
       
-  - RELOP_RE: Der Vergleich basierend auf wie Werte (reguläre Ausdrücke) erfolgt.
+  - RELOP_RE: der Vergleich basiert auf LIKE (Regular Expression)-Werten.
       
-  - RELOP_EQ: Der Vergleich wird basierend auf gleich große Werte vorgenommen.
+  - RELOP_EQ: der Vergleich erfolgt basierend auf gleichen Werten.
     
 **ulPropTag1**
   
-> Eigenschaftentag der Eigenschaft verglichen werden soll. 
+> Property-Tag der ersten Eigenschaft, die verglichen werden soll. 
     
 **ulPropTag2**
   
-> Eigenschaftentag der zweiten-Eigenschaft, die verglichen werden.
+> Property-Tag der zweiten Eigenschaft, die verglichen werden soll.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Reihenfolge der Vergleich ist _(Eigenschafts-Tag (1) (relationalen Operator) (Eigenschaftentag 2)_. Die Eigenschaften, die verglichen werden müssen den gleichen Typ aufweisen. Bei dem Versuch, Eigenschaften mit unterschiedlichen Typen verglichen wird MAPI oder den Dienstanbieter den Fehlerwert MAPI_E_TOO_COMPLEX [IMAPITable](imapitableiunknown.md) -Methode zurückgegeben, der die Struktur als Parameter übergeben wird. 
+Die Vergleichsreihenfolge ist _(Property Tag 1) (relationaler Operator) (Eigenschafts Tag 2)_. Die zu vergleichenden Eigenschaften müssen vom gleichen Typ sein. Der Versuch, Eigenschaften unterschiedlicher Typen zu vergleichen, bewirkt, dass MAPI oder der Dienstanbieter den Fehlerwert MAPI_E_TOO_COMPLEX aus der [IMAPITable](imapitableiunknown.md) -Methode zurückgibt, an die die Struktur als Parameter übergeben wird. 
   
-Das Ergebnis der Einschränkung Wert Compare-Eigenschaft ist nicht definiert, wenn eine oder beide der Eigenschaften nicht vorhanden sind. Wenn ein Client eindeutig definiertes Verhalten für eine solche Beschränkung erfordert und sich nicht sicher ist, ob die Eigenschaft vorhanden ist (beispielsweise, es ist keine erforderliche Spalte einer Tabelle) sollten sie eine Einschränkung **und** zum Teilnehmen an der eigenschaftseinschränkung vergleichen mit einen vorhanden erstellen Einschränkung. Verwenden Sie eine [SExistRestriction](sexistrestriction.md) -Struktur, um die Einschränkung vorhanden und eine [SAndRestriction](sandrestriction.md) -Struktur so definieren Sie die Einschränkung **und** definieren. 
+Das Ergebnis einer Einschränkung des Compare-Eigenschaftswerts ist nicht definiert, wenn eine oder beide Eigenschaften nicht vorhanden sind. Wenn ein Client ein genau definiertes Verhalten für eine solche Einschränkung benötigt und nicht sicher ist, ob die Eigenschaft vorhanden ist (beispielsweise ist es keine erforderliche Spalte einer Tabelle), sollte es eine **und** -Einschränkung für den Join der Compare-Eigenschaftseinschränkung mit einem exist-Objekt erstellen. Einschränkung. Verwenden Sie eine [SExistRestriction](sexistrestriction.md) -Struktur, um die exist-Einschränkung und eine [SAndRestriction](sandrestriction.md) -Struktur zum Definieren der **und-** Einschränkung zu definieren. 
   
-Die Member **ulPropTag1** und **ulPropTag2** angegebenen Eigenschaften können mit mehreren Werten sein, wenn der Dienstanbieter unterstützt. 
+Die im **ulPropTag1** -und **ulPropTag2** -Member angegebenen Eigenschaften können mehrwertig sein, wenn der Dienstanbieter Sie unterstützt. 
   
-Weitere Informationen zu den **SComparePropsRestriction** Struktur und Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Weitere Informationen zur **SComparePropsRestriction** -Struktur und zu Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
   
 ## <a name="see-also"></a>Siehe auch
 

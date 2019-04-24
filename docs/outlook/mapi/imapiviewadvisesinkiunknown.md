@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1231391d-803a-4b41-b252-4d986f99361a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 157703fc9702bb954b4a5c570fc3d5c045e181cc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 70f61fe33baa7870a58c4cbc7d75e0df119b5b1a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351140"
 ---
 # <a name="imapiviewadvisesink--iunknown"></a>IMAPIViewAdviseSink : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Er empfängt Benachrichtigungen von Formularen. 
+Empfängt Benachrichtigungen von Formularen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Empfängerobjekten advise-Ansicht  <br/> |
-|Implementiert von:  <br/> |Formular-Viewer  <br/> |
-|Aufgerufen von:  <br/> |Formular-Objekte  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Anzeigen von Advise-Senke-Objekten  <br/> |
+|Implementiert von:  <br/> |Formular Betrachter  <br/> |
+|Aufgerufen von:  <br/> |Formularobjekte  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIViewAdviseSink  <br/> |
 |Zeigertyp:  <br/> |LPMAPIVIEWADVISESINK  <br/> |
    
@@ -40,11 +40,11 @@ Er empfängt Benachrichtigungen von Formularen.
 
 |||
 |:-----|:-----|
-|[OnShutdown](imapiviewadvisesink-onshutdown.md) <br/> |Benachrichtigt dem Formular-Viewer, dass ein Formular geschlossen wird.  <br/> |
-|[OnNewMessage](imapiviewadvisesink-onnewmessage.md) <br/> |Benachrichtigt dem Formular-Viewer, dass eine neue oder eine vorhandene Nachricht in einem Formular geladen wurde.  <br/> |
-|[OnPrint](imapiviewadvisesink-onprint.md) <br/> |Benachrichtigt den Formular-Viewer des Status eines Formulars drucken.  <br/> |
-|[OnSubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |Benachrichtigt dem Formular-Viewer, dass die aktuelle Nachricht zu MAPI-Warteschlange gesendet wurde.  <br/> |
-|[OnSaved](imapiviewadvisesink-onsaved.md) <br/> |Benachrichtigt den Formular-Viewer, den die aktuelle Nachricht in einem Formular gespeichert wurde.  <br/> |
+|[OnShutdown](imapiviewadvisesink-onshutdown.md) <br/> |Benachrichtigt den Formular Betrachter darüber, dass ein Formular geschlossen wird.  <br/> |
+|[OnNewMessage](imapiviewadvisesink-onnewmessage.md) <br/> |Benachrichtigt den Formular Betrachter, dass eine neue oder eine vorhandene Nachricht in ein Formular geladen wurde.  <br/> |
+|[OnPrint](imapiviewadvisesink-onprint.md) <br/> |Benachrichtigt den Formular Betrachter über den Druckstatus eines Formulars.  <br/> |
+|[OnSubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht an MAPI-Spooler übermittelt wurde.  <br/> |
+|[OnSaved](imapiviewadvisesink-onsaved.md) <br/> |Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht in einem Formular gespeichert wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

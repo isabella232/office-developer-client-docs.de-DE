@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 5add1f2b-d9e6-4d78-8739-c3848f6e32a3
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 65d633f0c2b0ce56793eaa55a417b5d6a816d449
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ca68c604152a7a28fb6a5357aa9c012ec7466b5a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357211"
 ---
 # <a name="ixplogonaddresstypes"></a>IXPLogon::AddressTypes
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Typen von Empfängern, die der Adressbuchhierarchie behandelt.
+Gibt die Empfängertypen zurück, die vom Transportanbieter verarbeitet werden.
   
 ```cpp
 HRESULT AddressTypes(
@@ -41,51 +41,51 @@ HRESULT AddressTypes(
 
  _lpulFlags_
   
-> [out] Eine Bitmaske aus Flags, die den Typ des zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> Out Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _lpcAdrType_
   
-> [out] Ein Zeiger auf die Anzahl der Einträge in der Matrix, durch den Parameter _LpppszAdrTypeArray_ auf zeigt. 
+> Out Ein Zeiger auf die Anzahl der Einträge im Array, auf die durch den _lpppszAdrTypeArray_ -Parameter verwiesen wird. 
     
  _lpppszAdrTypeArray_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Array von Zeichenfolgen, die Empfängertypen bezeichnet.
+> Out Ein Zeiger auf einen Zeiger auf ein Array von Zeichenfolgen, die Empfängertypen identifizieren.
     
  _lpcMAPIUID_
   
-> [out] Ein Zeiger auf die Anzahl der Einträge in der Matrix, durch den Parameter _LpppUIDArray_ auf zeigt. 
+> Out Ein Zeiger auf die Anzahl der Einträge im Array, auf die durch den _lpppUIDArray_ -Parameter verwiesen wird. 
     
  _lpppUIDArray_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Array von Zeigern für [MAPIUID](mapiuid.md) -Strukturen, die Empfängertypen zu identifizieren. 
+> Out Ein Zeiger auf einen Zeiger auf ein Array von Zeigern auf [MAPIUID](mapiuid.md) -Strukturen, die Empfängertypen identifizieren. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Transportdienst angegeben erfolgreich die Typen von Empfängern, die es verarbeiten kann.
+> Der Transportanbieter hat erfolgreich die Empfängertypen angegeben, die er verarbeiten kann.
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die MAPI-Warteschlange Ruft die **IXPLogon::AddressTypes** -Methode auf, unmittelbar nachdem ein Transportdienstes aus einen Anruf an die [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) -Methode zurückgegeben, damit der Adressbuchhierarchie angeben kann, welche Arten von Empfängern verarbeitet. Um dies darauf hinzuweisen, sollte der Adressbuchhierarchie in der _LpppszAdrTypeArray_ -Parameter einen Zeiger auf ein Array von Zeigern auf Zeichenfolgen übergeben oder wieder in den _LpppUIDArray_ -Parameter einen Zeiger auf ein Array von Zeigern für **MAPIUID** übergeben Strukturen oder Werte in beiden Parametern übergeben. 
+Der MAPI-Spooler Ruft die **IXPLogon:: AddressTypes** -Methode unmittelbar auf, nachdem ein Transportanbieter von einem Aufruf der [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md) -Methode zurückgegeben hat, sodass der Transportanbieter anzeigen kann, welche Empfängertypen er verarbeitet. Um dies anzugeben, sollte der Transportanbieter zurückgeben, in der _lpppszAdrTypeArray_ -Parameter einen Zeiger auf ein Array von Zeigern auf Zeichenfolgen oder zurückgeben Sie den _lpppUIDArray_ -Parameter einen Zeiger auf ein Array von Zeigern auf **MAPIUID** Strukturen oder übergeben Sie Werte in beiden Parametern. 
   
-Für verschiedene Identification Prozesse werden diese beiden Arrays verwendet. MAPI- und die MAPI-Warteschlange können Sie die Strukturen [MAPIUID](mapiuid.md) im Array _LpppUIDArray_ verwenden, um diese Empfänger-Eintragsbezeichner identifizieren, die direkt mit der Adressbuchhierarchie oder mit der messaging-System mit dem der Adressbuchhierarchie verbindet behandelt werden . MAPI- weder die MAPI-Warteschlange erweitert Adressen mithilfe von Eintragsbezeichner in keiner dieser **MAPIUID** Strukturen enthalten; Diese Strukturen dienen nur zur Identifizierung der Empfängertyp. 
+Diese beiden Arrays werden für verschiedene identifizierungsprozesse verwendet. MAPI und der MAPI-Spooler verwenden die [MAPIUID](mapiuid.md) -Strukturen im _lpppUIDArray_ -Array, um die Empfänger Eintrags-IDs zu identifizieren, die direkt vom Transportanbieter oder vom Messagingsystem verarbeitet werden, mit dem der Transportanbieter eine Verbindung herstellt. . Weder MAPI noch der MAPI-Spooler erweitern Adressen mithilfe von Eintrags-IDs, die in einer dieser **MAPIUID** -Strukturen enthalten sind; Diese Strukturen werden nur zur Identifizierung von Empfängertypen verwendet. 
   
-Die MAPI-Warteschlange verwendet jede der Zeichenfolgen in der _LpppszAdrTypeArray_ -Parameter für einen Vergleichstest bei der Festlegung, welche Adressbuchhierarchie welche Empfänger für eine ausgehende Nachricht behandelt werden sollen. Wenn der Empfänger einer Nachricht **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))-Eigenschaft eine Zeichenfolge übereinstimmt, die eines der messaging-Adresstypen identifiziert, die der Adressbuchhierarchie bereitstellt, kann der Anbieter die Nachricht an diesen Empfänger übermitteln.
+Der MAPI-Spooler verwendet jede der Zeichenfolgen im _lpppszAdrTypeArray_ -Parameter für einen Vergleichstest, wenn er entscheidet, welcher Transportanbieter welche Empfänger für eine ausgehende Nachricht behandeln soll. Wenn die **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md))-Eigenschaft eines Nachrichtenempfängers genau mit einer Zeichenfolge übereinstimmt, die einen der vom Transportanbieter bereitgestellten Messaging Adresstypen identifiziert, kann der Anbieter die Nachricht an diesen Empfänger übermitteln.
   
-Wenn mehrere Transportanbieter den gleichen Typ des Empfängers verarbeitet werden können, wählt MAPI ein Transportdienstes basierend auf der Transport Prioritätsreihenfolge aus, die in der Clientanwendung Profil angegeben. Um festzustellen, welche Adressbuchhierarchie verwenden, überprüft die MAPI-Warteschlange alle Anbieter angegeben **MAPIUID** Strukturen in Prioritätsreihenfolge aus, und klicken Sie dann alle Anbieter angegebene Adresse Geben Sie Werte in Prioritätsreihenfolge aus. Der erste Transportdienst auf einen bestimmten Empfänger in diese Überprüfung übereinstimmen Ruft die erste Möglichkeit, diesen Empfänger zu verarbeiten. Wenn dieses Anbieters den Empfänger nicht behandelt wird, wird die MAPI-Warteschlange die Überprüfung ein Transportdienstes für jeden Empfänger noch nicht verarbeitet finden fortgesetzt. Die Überprüfung wird fortgesetzt, bis keine weiteren Treffer gefunden werden, an welcher Stelle ein Unzustellbarkeitsbericht für alle Empfänger generiert wird, die nicht bearbeitet wurde. 
+Wenn mehrere Transportanbieter denselben Empfängertyp verarbeiten können, wählt MAPI einen Transportanbieter basierend auf der im Profil der Clientanwendung angegebenen Transport Prioritätsreihenfolge aus. Um zu bestimmen, welcher Transportanbieter verwendet werden soll, scannt der MAPI-Spooler alle vom Anbieter angegebenen **MAPIUID** -Strukturen in der Prioritätsreihenfolge und dann alle vom Anbieter angegebenen Adresstyp Werte in der Prioritätsreihenfolge. Der erste Transportanbieter, der einem bestimmten Empfänger bei dieser Überprüfung entspricht, erhält die erste Gelegenheit, diesen Empfänger zu behandeln. Wenn dieser Anbieter den Empfänger nicht verarbeitet, setzt der MAPI-Spooler die Überprüfung fort, um einen Transportanbieter für einen Empfänger zu finden, der noch nicht behandelt wurde. Die Überprüfung wird fortgesetzt, bis keine weiteren Übereinstimmungen gefunden werden, an welcher Stelle ein Unzustellbarkeitsbericht für einen Empfänger generiert wird, der nicht behandelt wurde. 
   
-Wenn der Anbieter immer einen bestimmten Satz von Empfängertypen unterstützt, können der Adresstyp und **MAPIUID** Arrays, die der Adressbuchhierarchie übergeben statisch sein. Wenn der Adressbuchhierarchie diese Arrays dynamisch erstellt wurde, können sie Speicher mithilfe des Support-Objekts, das zuvor im Aufruf **TransportLogon**, übergeben wurde, obwohl dies nicht erforderlich ist.
+Wenn der Anbieter eine bestimmte Gruppe von Empfängertypen immer unterstützt, können der Adresstyp und die **MAPIUID** -Arrays, die der Transportanbieter übergeben hat, statisch sein. Wenn der Transportanbieter diese Arrays dynamisch erstellt, kann er Arbeitsspeicher mithilfe des Support-Objekts zuweisen, das zuvor im Aufruf an **TransportLogon**übergeben wurde, obwohl dies nicht erforderlich ist.
   
-Der Speicher für den Adresstyp und **MAPIUID** Arrays verwendet sollte erst nach dem letzten Aufruf der [IXPLogon::TransportLogoff](ixplogon-transportlogoff.md) -Methode zugewiesenen bleiben bei der Adressbuchhierarchie den Arbeitsspeicher bei Bedarf freigegeben werden kann. Der Transportdienst sollten nicht den Inhalt dieser Arrays ändern, nachdem ein Wert aus dem Aufruf **TransportLogoff** zurückgegeben. 
+Der für den Adresstyp und **MAPIUID** -Arrays verwendete Speicher sollte bis zum letzten Aufruf der [IXPLogon:: TransportLogoff](ixplogon-transportlogoff.md) -Methode reserviert werden, zu der Zeit, zu der der Transportanbieter den Arbeitsspeicher freigeben kann, falls erforderlich. Der Transportanbieter sollte den Inhalt dieser Arrays nicht ändern, nachdem er vom **TransportLogoff** -Aufruf zurückgegeben wurde. 
   
-Ein Transportanbieter, der jeden Empfänger behandeln kann kann im Parameter _LpppszAdrTypeArray_ NULL zurückgegeben. Transportanbieter für LAN-basierte messaging-Systemen, die einen zentralen Server ausgehende Nachrichten an verschiedenen foreign Nachrichtensysteme häufig übermitteln verwenden hierzu. Diese Art der Adressbuchhierarchie zuletzt in den MAPI- und MAPI-installiert werden soll Warteschlange Prioritätsreihenfolge aus der Transportanbieter im Profil. 
+Ein Transportanbieter, der einen beliebigen Empfängertyp verarbeiten kann, kann im _lpppszAdrTypeArray_ -Parameter NULL zurückgeben. Transport Anbieter für LAN-basierte Messagingsysteme, die einen zentralen Server verwenden, um ausgehende Nachrichten an verschiedene fremd Nachrichtensysteme zuzustellen, tun dies häufig. Dieser Transport Anbietertyp sollte zuletzt in der MAPI-und MAPI-Spooler-Prioritätsreihenfolge der Transportanbieter im Profil installiert werden. 
   
-Ein Transportdienstes, das nicht unterstützt werden ausgehende Nachrichten, die versandt werden, basierend auf den Adresstyp sollte in _LpppszAdrTypeArray_eine einzelne Zeichenfolge der Länge Null zurückgegeben. Wenn ein Transportdienstes keine Empfängertypen unterstützt, sollten sie NULL für die **MAPIUID** -Struktur und eine leere Zeichenfolge für den Adresstyp übergeben. Transportanbieter dieses Typs werden am häufigsten verwendet, um eine Nachricht Präprozessor zu installieren. 
+Ein Transportanbieter, der ausgehende Nachrichten, die basierend auf dem Adresstyp an ihn gesendet werden, nicht unterstützt, sollte eine einzelne leere Zeichenfolge in _lpppszAdrTypeArray_zurückgeben. Wenn ein Transportanbieter keine Empfängertypen unterstützt, sollte er NULL für die **MAPIUID** -Struktur und eine leere Zeichenfolge für den Adresstyp überschreiten. Transport Anbieter dieses Typs werden am häufigsten für die Installation eines nachrichtenpräprozessors verwendet. 
   
 ## <a name="see-also"></a>Siehe auch
 

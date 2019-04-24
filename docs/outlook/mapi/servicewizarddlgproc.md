@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e2d5190-e67a-470d-8177-0f0ba20c7b82
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fdd5d01b96c9ea756ee64f113ccb5119a9693668
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e43a1d7c57668ba930b4c4af7194bd298971e6ba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356413"
 ---
 # <a name="servicewizarddlgproc"></a>SERVICEWIZARDDLGPROC
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Callback-Funktion aufgerufen, die vom Assistenten Profil zu einem Dienstanbieter reagieren auf Benutzerereignisse, wenn der Anbieters Eigenschaftenseiten oder Seiten angezeigt werden. 
+Definiert eine vom Profil-Assistenten aufgerufene Rückruffunktion, damit ein Dienstanbieter auf Benutzerereignisse reagieren kann, wenn die Eigenschaftenblätter oder Seiten des Anbieters angezeigt werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiwz.h  <br/> |
-|Definierte Funktion von implementiert:  <br/> |Dienstanbieter  <br/> |
-|Definierte Funktion aufgerufen:  <br/> |MAPI-Profil-Assistent  <br/> |
+|Headerdatei  <br/> |Mapiwz. h  <br/> |
+|Definierte Funktion, implementiert von:  <br/> |Dienstanbieter  <br/> |
+|Definierte Funktion, aufgerufen von:  <br/> |MAPI-Profil-Assistent  <br/> |
    
 ```cpp
 BOOL SERVICEWIZARDDLGPROC(
@@ -44,27 +44,27 @@ BOOL SERVICEWIZARDDLGPROC(
 
 _hDlg_
   
-> [in] Fensterhandle an, das Dialogfeld-Profil-Assistent. 
+> in Fensterhandle für das Dialogfeld Profil-Assistent. 
     
 _wMsgID_
   
-> [in] Die Fensternachricht im verarbeitet werden. Zusätzlich zu den regulären Fenster-Nachrichten von einem modalen Dialogfeld erwartet können die folgenden Nachrichten empfangen werden:
+> in Die zu verarbeitende Fenstermeldung. Zusätzlich zu den von einem modalen Dialogfeld erwarteten regulären Fenster Meldungen können die folgenden Nachrichten empfangen werden:
     
 WM_CLOSE 
   
-> Der Profil-Assistent wurde abgeschlossen. Der Dienstanbieter sollten alle Bereinigung tun, wie Speicher Aufheben der Zuweisung von einem dynamisch zugewiesen werden. 
+> Der Profil-Assistent wurde abgeschlossen. Der Dienstanbieter muss alle erforderlichen Aufräumarbeiten ausführen, beispielsweise die dezuweisung dynamisch zugewiesener Arbeitsspeicher. 
     
 WM_COMMAND 
   
-> Eines der Steuerelemente des Anbieters ausgewählt wurde, oder die **nächsten** oder **zurück** -Schaltfläche geklickt hat. Der Wert in der _wParam_ -Parameter gibt an, welches dieser Benutzerereignisse eingetreten ist. 
+> Eines der Steuerelemente des Anbieters wurde ausgewählt, oder auf die Schaltfläche **weiter** oder **zurück** wurde geklickt. Der Wert im Parameter _wParam_ gibt an, welches dieser Benutzerereignisse aufgetreten ist. 
     
 WM_INITDIALOG 
   
-> Der Benutzer wurde an eine andere Eigenschaftenseite verschoben, für die das Dialogfeld initialisiert werden muss. Der Anbieter sollte die Steuerelemente initialisieren, die der Profil-Assistent zum Dialogfeld hinzugefügt hat. 
+> Der Benutzer ist zu einer anderen Eigenschaftenseite gewechselt, für die das Dialogfeld initialisiert werden muss. Der Anbieter sollte die Steuerelemente initialisieren, die der Profil-Assistent dem Dialogfeld hinzugefügt hat. 
     
 WIZ_QUERYNUMPAGES 
   
-> Der Profil-Assistent ist für die Anzahl der Seiten aufgefordert werden, die zum Anzeigen der Anbieter benötigt. Der Anbieter sollte die Anzahl der Seiten anstelle von TRUE oder FALSE zurückgegeben. Verwenden Sie beispielsweise die folgenden return-Anweisung um anzugeben, dass drei Seiten angezeigt werden soll:
+> Der Profil-Assistent fordert die Anzahl der Seiten an, die vom Anbieter angezeigt werden müssen. Der Anbieter sollte die Anzahl der Seiten anstelle von TRUE oder FALSE zurückgeben. Verwenden Sie beispielsweise die folgende Return-Anweisung, um anzugeben, dass drei Seiten angezeigt werden sollen:
     
    ```cpp
 return (BOOL)3;
@@ -73,48 +73,48 @@ return (BOOL)3;
 
 _wParam_
   
-> [in] Ein 32-Bit-Parameter Fenster-Nachrichten zugeordnet. Mögliche Werte hängen von der in der _wMsgID_ -Parameter angegebenen Nachricht ab. Zusätzlich zu den Werten, die mit den normalen Fenster-Nachrichten für ein modales Dialogfeld erwartet können die folgenden Werte erhalten: 
+> in Ein 32-Bit-Parameter, der Fenster Meldungen zugeordnet ist. Mögliche Werte hängen von der im Parameter _wMsgID_ angegebenen Meldung ab. Zusätzlich zu den erwarteten Werten mit den regulären Fenster Meldungen für ein modales Dialogfeld können die folgenden Werte empfangen werden: 
     
 WIZ_NEXT 
   
-> Wenn _wMsgID_ WM_COMMAND enthält, hat der Benutzer die Schaltfläche **Weiter** geklickt hat. 
+> Wenn _WMSGID_ WM_COMMAND enthält, hat der Benutzer auf die Schaltfläche **weiter** geklickt. 
     
 WIZ_PREV 
   
-> Wenn _wMsgID_ WM_COMMAND enthält, hat der Benutzer durch Klicken auf die Schaltfläche **zurück** . 
+> Wenn _WMSGID_ WM_COMMAND enthält, hat der Benutzer auf die Schaltfläche " **zurück** " geklickt. 
     
 _lParam_
   
-> [in] Ein 32-Bit-Parameter Fenster-Nachrichten zugeordnet. Mögliche Werte hängen von der in der _wMsgID_ -Parameter angegebenen Nachricht ab. 
+> in Ein 32-Bit-Parameter, der Fenster Meldungen zugeordnet ist. Mögliche Werte hängen von der im Parameter _wMsgID_ angegebenen Meldung ab. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Der von einer **SERVICEWIZARDDLGPROC** Basis-Funktion zurückgegebene Wert ist die empfangene Meldung Fenster abhängig. Beachten Sie insbesondere, dass die außergewöhnliche Wert für die Nachricht WIZ_QUERYNUMPAGES zurückzugeben. Normale zurückgegebenen Werte sind: 
+Der von einer **SERVICEWIZARDDLGPROC** -basierten Funktion zurückgegebene Wert ist von der empfangenen Fenster Nachricht abhängig. Beachten Sie insbesondere den außergewöhnlichen Rückgabewert für die WIZ_QUERYNUMPAGES-Nachricht. Die normalen Rückgabewerte sind: 
   
 TRUE 
   
-> Der Dienstanbieter hat die empfangene Meldung verarbeitet. 
+> Der Dienstanbieter hat die empfangene Fenstermeldung verarbeitet. 
     
 FALSE 
   
-> Der Dienstanbieter noch die empfangene Meldung nicht verarbeitet werden.
+> Der Dienstanbieter hat die empfangene Fenstermeldung nicht verarbeitet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn der Benutzer eine Eigenschaft auf der Seite zu einer anderen bewegt wird, ist der Anbieter für die alte Seite Steuerelemente ein- und Ausblenden von den Steuerelementen zum nächsten oder vorherigen Seite verantwortlich. Wenn der Benutzer auf die Schaltfläche **Weiter** klickt, wird die **SERVICEWIZARDDLGPROC** Basis-Funktion mit der WM_COMMAND-Meldung und WIZ_NEXT im _wParam_ -Parameter aufgerufen. Die folgenden Schritte beschreiben, was geschieht, zwischen dem Zeitpunkt der Benutzer **Weiter** klickt und Zeitpunkt, zu dem der erste Anbieter Konfigurationsseiten gerendert werden. 
+Wenn der Benutzer von einer Eigenschaftenseite zu einer anderen wechselt, ist der Anbieter dafür verantwortlich, die Steuerelemente der alten Seite zu verbergen und die Steuerelemente für die nächste oder vorherige Seite anzuzeigen. Wenn der Benutzer auf die Schaltfläche **weiter** klickt, wird die **SERVICEWIZARDDLGPROC** -basierte Funktion mit der WM_COMMAND-Nachricht und WIZ_NEXT im _wParam_ -Parameter aufgerufen. In den folgenden Schritten wird beschrieben, was zwischen dem Zeitpunkt, zu dem der Benutzer auf **Next** klickt, und dem Zeitpunkt, zu dem die Konfigurationsseiten des ersten Anbieters gerendert werden. 
   
-1. Der Profil-Assistent werden alle Steuerelemente, die auf das Fenster sind ausgeblendet. 
+1. Der Profil-Assistent blendet alle Steuerelemente aus dem Fenster aus. 
     
-2. Der Profil-Assistent hinzugefügt die Seite des Anbieters ausgeblendete Steuerelemente. 
+2. Der Profil-Assistent fügt der Seite die ausgeblendeten Steuerelemente des Anbieters hinzu. 
     
-3. Der Profil-Assistent ruft **SERVICEWIZARDDLGPROC**, senden die Nachricht WM_INITDIALOG, damit der Anbieter die Steuerelemente initialisieren kann. 
+3. Der Profil-Assistent ruft **SERVICEWIZARDDLGPROC**auf und sendet die WM_INITDIALOG-Nachricht, sodass der Anbieter die Steuerelemente initialisieren kann. 
     
-4. Der Profil-Assistent ruft **SERVICEWIZARDDLGPROC**, die WIZ_QUERYNUMPAGES-Nachricht senden. Der Anbieter gibt die Anzahl der Seiten, die angezeigt werden sollen. 
+4. Der Profil-Assistent ruft **SERVICEWIZARDDLGPROC**auf und sendet die WIZ_QUERYNUMPAGES-Nachricht. Der Anbieter gibt die Anzahl der Seiten zurück, die angezeigt werden sollen. 
     
-5. Der Profil-Assistent ruft **SERVICEWIZARDDLGPROC**, senden die WM_COMMAND-Meldung mit dem _wParam_ -Parameter auf WIZ_NEXT oder WIZ_PREV festgelegt. Zu diesem Zeitpunkt der Anbieter entweder gibt FALSE {Fehler} zurück oder zeigt dessen Steuerelemente und gibt TRUE zurück {Erfolg}. Wenn der Profil-Assistent ID_NEXT übergibt, wird die erste Seite des Anbieters angezeigt. Wenn ID_PREV übergeben wird, wird die letzte Seite angezeigt. 
+5. Der Profil-Assistent ruft **SERVICEWIZARDDLGPROC**auf und sendet die WM_COMMAND-Nachricht mit dem _wParam_ -Parameter, der auf WIZ_NEXT oder WIZ_PREV festgelegt ist. Zu diesem Zeitpunkt gibt der Anbieter entweder FALSE {Error} zurück oder zeigt seine Steuerelemente an und gibt TRUE {Success} zurück. Wenn der Profil-Assistent ID_NEXT übergibt, wird die erste Seite des Anbieters angezeigt. Wenn ID_PREV übergeben wird, wird die letzte Seite angezeigt. 
     
-6. Der Profil-Assistent ruft der Anbieter **SERVICEWIZARDDLGPROC** Funktion senden die WM_COMMAND-Meldung mit dem _wParam_ -Parameter auf WIZ_NEXT oder WIZ_PREV (je nachdem, auf welche Schaltfläche der Benutzer geklickt hat) festgelegt. Der Anbieter ist verantwortlich für ein- oder Ausblenden von dessen Steuerelemente, und Schreiben von Daten in die **IMAPIProp** an der Profil-Assistent schrittweise durchlaufen ihrer Sequenz von Seiten übergeben. Der Anbieter sollte TRUE zurück, wenn die nächste oder der vorherige Seite wurde erfolgreich angezeigt werden soll, und FALSE, wenn weder der nächsten oder vorherigen Seite angezeigt werden konnten. Der Anbieter muss beachten, wenn sie außerhalb der Reihenfolge von Seiten Einzelschritt ist, und durch Ausblenden von dessen Steuerelemente und Schreiben von Daten auf das Profil entsprechend reagieren. 
+6. Der Profil-Assistent ruft die **SERVICEWIZARDDLGPROC** -Funktion des Anbieters auf und sendet die WM_COMMAND-Nachricht mit dem _wParam_ -Parameter, der auf WIZ_NEXT oder WIZ_PREV festgelegt ist (abhängig von der Schaltfläche, auf die der Benutzer geklickt hat). Der Anbieter ist dafür verantwortlich, seine Steuerelemente anzuzeigen oder zu verbergen und seine Daten in die **IMAPIProp** zu schreiben, die an den Profil-Assistenten übergeben wurden, um die Reihenfolge der Seiten zu durchlaufen. Der Anbieter sollte TRUE zurückgeben, wenn die nächste oder die vorherige Seite erfolgreich angezeigt wurde, und FALSE, wenn weder die nächste noch die vorherige Seite angezeigt werden konnte. Der Anbieter muss sich dessen klar sein, wenn er sich außerhalb seiner Seitenfolge befindet, und entsprechend reagieren, indem er seine Steuerelemente versteckt und seine Daten in das Profil schreibt. 
     
-7. Wenn der Benutzer außerhalb des Anbieters Seitenbereich Schritte, löscht den Anbieter ausgeblendete Steuerelemente im Dialogfeld der Profil-Assistent und ruft den nächsten Anbieter oder die nächste Seite angezeigt, wenn das letzte Anbieter war. 
+7. Wenn der Benutzer außerhalb des Seiten Angebots des Anbieters ausgeführt wird, löscht der Profil-Assistent die ausgeblendeten Steuerelemente des Anbieters aus dem Dialogfeld und ruft den nächsten Anbieter auf oder zeigt die nächste Seite an, wenn dies der letzte Anbieter war. 
     
 

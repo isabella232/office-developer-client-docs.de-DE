@@ -1,5 +1,5 @@
 ---
-title: LockTypeEnum (Aufzählung) (DAO)
+title: LockTypeEnum-Aufzählung (DAO)
 TOCTitle: LockTypeEnum Enumeration
 ms:assetid: d40f984c-b37f-72f7-7b05-752f106b6029
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834802(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c2d355e2a16df632d6952802914c1f921b5e9719
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289857"
 ---
-# <a name="locktypeenum-enumeration-dao"></a>LockTypeEnum (Aufzählung) (DAO)
+# <a name="locktypeenum-enumeration-dao"></a>LockTypeEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Art der Datensatzsperrung an, die beim Öffnen eines Datensatzes verwendet wird.
 
@@ -51,7 +51,7 @@ Gibt die Art der Datensatzsperrung an, die beim Öffnen eines Datensatzes verwen
 <td><p>Vollständige Parallelität basierend auf Datensatzwerten. Der Cursor vergleicht Datenwerte in alten und neuen Datensätzen, um zu bestimmen, ob seit dem letzten Zugriff auf den Datensatz Änderungen vorgenommen wurden (nur ODBCDirect-Arbeitsbereiche).</p>
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
+> ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
 
 
 </td>

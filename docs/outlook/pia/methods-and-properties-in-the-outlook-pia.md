@@ -1,5 +1,5 @@
 ---
-title: Methoden und Eigenschaften in der Outlook-PIA
+title: Methoden und Eigenschaften in der Outlook PIA
 TOCTitle: Methods and properties in the Outlook PIA
 ms:assetid: ec7742de-ead6-41dd-90a3-1280fdf09d54
 ms:mtpsurl: https://msdn.microsoft.com/library/Bb612528(v=office.15)
@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 90c13559094fbffd2dbe9a99602ee235c92d9445
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351034"
 ---
 # <a name="methods-and-properties-in-the-outlook-pia"></a>Methoden und Eigenschaften in der Outlook-PIA
 
@@ -38,7 +38,7 @@ TLBIMP importiert die primäre Schnittstelle und die Ereignisschnittstelle für 
 
 Bei weiterer Verwendung des **FormRegion**-Objekts als Beispiel prüft die folgende Liste, was die einzelnen Schnittstellen und zuvor aufgeführten Klassen enthalten.
 
-- Die \_FormRegion-Schnittstelle definiert alle Methoden und Eigenschaften von FormRegion. In der Regel wird diese Schnittstelle nicht im Code verwendet, mit Ausnahme einer nachfolgend besprochenen Bedingung.
+- Die \_FormRegion-Schnittstelle definiert alle Methoden und Eigenschaften von FormRegion. In der Regel verwenden Sie diese Schnittstelle nicht in Code, außer in den unten beschriebenen Fällen.
 
 - Die **FormRegionEvents**-Schnittstelle definiert Methoden, die Ereignissen von FormRegion zugeordnet sind. Verwenden Sie diese Schnittstelle nicht im Code.
 

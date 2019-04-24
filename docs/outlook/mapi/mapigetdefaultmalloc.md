@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 148695dd-d886-4a06-9cfe-749059ae91ed
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cb0630ba30f8d3d7ae38c165c5da60bbc12077c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 635f22c97ed27889245becbebb990ab3995b70b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345776"
 ---
 # <a name="mapigetdefaultmalloc"></a>MAPIGetDefaultMalloc
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die Adresse der Verteilungsfunktion Standard MAPI-Speicher.
+Ruft die Adresse der standardmäßigen MAPI-Speicher Zuordnungsfunktion ab.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPMALLOC MAPIGetDefaultMalloc( );
@@ -41,8 +41,8 @@ LPMALLOC MAPIGetDefaultMalloc( );
 
 None. 
   
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-Die **MAPIGetDefaultMalloc** -Funktion gibt einen Zeiger auf die Standardfunktion MAPI Memory Allocation. 
+Die **MAPIGetDefaultMalloc** -Funktion gibt einen Zeiger auf die standardmäßige MAPI-Speicher Zuordnungsfunktion zurück. 
   
 

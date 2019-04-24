@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01a868f4-afda-43ba-bc17-c33ae56b7b7d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: aff805f7868ec0c2adc55ece94c45b76368ba6eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5b76f9daec89e9229fc7f81e1332c3075c951067
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348587"
 ---
 # <a name="itneffinish"></a>ITnef::Finish
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beendet Verarbeitung für alle Transport-Neutral Encapsulation Format (TNEF) Vorgänge, die sich in der Warteschlange und wartet. 
+Beendet die Verarbeitung aller TNEF-Vorgänge (Transport Neutral Encapsulation Format), die in der Warteschlange gespeichert sind. 
   
 ```cpp
 HRESULT Finish(
@@ -43,37 +43,37 @@ HRESULT Finish(
     
  _lpKey_
   
-> [out] Ein Zeiger auf die wichtigste **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage. Das TNEF-Kapselung-Objekt verwendet diesen Schlüssel mit dem entsprechenden Anlage Platzierung Tag in einer Nachricht eine Anlage übereinstimmt. Dieser Schlüssel sollte für jede Anlage eindeutig sein.
+> Out Ein Zeiger auf die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Schlüsseleigenschaft einer Anlage. Das TNEF-Kapselungs Objekt verwendet diesen Schlüssel, um eine Anlage mit dem Attachment-Platzierungs-Tag in einer Nachricht abzugleichen. Dieser Schlüssel sollte für jede Anlage eindeutig sein.
     
  _lpProblem_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine zurückgegebenen [STnefProblemArray](stnefproblemarray.md) -Struktur. Die **STnefProblemArray** -Struktur gibt an, welche Eigenschaften, falls vorhanden, nicht ordnungsgemäß codiert wurden. Wenn NULL in der _LpProblem_ -Parameter übergeben wird, wird kein Problem Array-Eigenschaft zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf eine zurückgegebene [STnefProblemArray](stnefproblemarray.md) -Struktur. Die **STnefProblemArray** -Struktur gibt an, welche Eigenschaften, falls vorhanden, nicht ordnungsgemäß codiert wurden. Wenn NULL im _lpProblem_ -Parameter übergeben wird, wird kein Property-Problem-Array zurückgegeben. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Transport-Provider, Anbieter Nachricht und Gateways Aufruf die **ITnef::Finish** -Methode zum Ausführen der Codierung aller Eigenschaften für die Codierung Aufrufe der Methoden [ITnef::AddProps](itnef-addprops.md) und [ITnef::SetProps](itnef-setprops.md) angefordert wurde. Wenn das TNEF-Objekt mit dem TNEF_ENCODE-Flag für die [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet wurde, codiert die Methode **Fertig stellen** die angeforderten Eigenschaften in der an dieses Objekt übergebene Encapsulation Stream. Wenn das TNEF-Objekt mit dem TNEF_DECODE-Flag geöffnet wurde, wird die Methode **Fertig stellen** decodiert die Eigenschaften aus dem TNEF-Stream und schreibt sie zurück in die Nachricht, der sie angehören. 
+Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:: Finish** -Methode auf, um die Codierung aller Eigenschaften auszuführen, für die die Codierung in Aufrufen der [ITnef::](itnef-addprops.md) AddProps-und [ITnef:](itnef-setprops.md) : SetProps-Methoden angefordert wurde. Wenn das TNEF-Objekt mit dem TNEF_ENCODE-Flag für die [OpenTnefStream](opentnefstream.md) -oder die [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet wurde, codiert die **Finish** -Methode die angeforderten Eigenschaften in den an dieses Objekt übergebenen Kapselungs Datenstrom. Wenn das TNEF-Objekt mit dem TNEF_DECODE-Flag geöffnet wurde, dekodiert die **Finish** -Methode die Eigenschaften aus dem TNEF-Stream und schreibt Sie zurück in die Nachricht, zu der Sie gehören. 
   
-Nach dem Aufruf von **Fertig stellen** der Zeiger in den Stream Kapselung bis zum Ende der TNEF Daten zeigt. Wenn der Anbieter oder Gateway muss die TNEF-Stream-Daten verwenden Sie nach dem Aufrufen der **Fertig stellen** , muss es den Zeiger Stream an den Anfang der Streamdaten TNEF zurücksetzen. 
+Nach dem **Finish** -Aufruf zeigt der Zeiger auf den Encapsulation-Stream auf das Ende der TNEF-Daten. Wenn der Anbieter oder das Gateway die TNEF-Streamdaten nach dem **Beendigungs** Aufruf verwenden muss, muss er den Stream-Zeiger auf den Anfang der TNEF-Datenstrom zurücksetzen. 
   
-Die TNEF-Implementierung meldet TNEF Stream Codierung Probleme ohne Anhalten des Prozesses **Fertig stellen** . Die [STnefProblemArray](stnefproblemarray.md) -Struktur zurückgegeben, die in der _LpProblem_ -Parameter gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften, falls vorhanden, nicht verarbeitet werden konnte. Der im **Scode** -Member, eine der in **STnefProblemArray** enthaltenen **STnefProblem** Strukturen zurückgegebene Wert gibt an, das Problem. Der Anbieter oder Gateway kann auf der Annahme arbeiten, dass alle Eigenschaften oder Attribute für die **Fertig stellen** kein Problemberichts zurückgibt erfolgreich verarbeitet wurden. 
+Die TNEF-Implementierung meldet TNEF-Datenstrom Codierungsprobleme, ohne den **Abschluss** Prozess zu beenden. Die im Parameter _lpProblem_ zurückgeGebene [STnefProblemArray](stnefproblemarray.md) -Struktur gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften, falls vorhanden, nicht verarbeitet werden konnten. Der Wert, der im **SCODE** -Element einer der in **STnefProblemArray** enthaltenen **STnefProblem** -Strukturen zurückgegeben wird, gibt das spezifische Problem an. Der Anbieter oder das Gateway kann davon ausgehen, dass alle Eigenschaften oder Attribute, für die **Finish** keinen Problembericht zurückgibt, erfolgreich verarbeitet wurden. 
   
-Wenn Sie einen Anbieter oder ein Gateway mit Problem Arrays nicht funktionsfähig ist, können sie NULL _LpProblem_übergeben; In diesem Fall wird kein Problem Array zurückgegeben. 
+Wenn ein Anbieter oder Gateway nicht mit Problem Arrays funktioniert, kann er in _lpProblem_den Wert NULL überschreiten; in diesem Fall wird kein Problem Array zurückgegeben. 
   
-Der in _LpProblem_ zurückgegebene Wert ist nur gültig, wenn der Aufruf gibt S_OK zurück. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder ein Gateway in der Struktur **STnefProblemArray** zurückgegebenen Werte überprüfen. Bei einem beim Aufruf Fehler die **STnefProblemArray** -Struktur ist nicht ausgefüllt und die aufrufende Anbieter oder das Gateway nicht verwenden oder die Struktur frei. Wenn dem Gespräch tritt kein Fehler auf, muss die aufrufende Anbieter oder Gateway den Speicher freizugeben für die **STnefProblemArray** durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion. 
+Der in _lpProblem_ zurückgegebene Wert ist nur gültig, wenn der Aufruf S_OK zurückgibt. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder das Gateway die in der **STnefProblemArray** -Struktur zurückgegebenen Werte überprüfen. Wenn für den Anruf ein Fehler auftritt, wird die **STnefProblemArray** -Struktur nicht ausgefüllt, und der aufrufende Anbieter oder das Gateway sollte die Struktur nicht verwenden oder freigeben. Wenn beim Aufruf kein Fehler auftritt, muss der aufrufende Anbieter oder das Gateway den Speicher für das **STnefProblemArray** freigeben, indem er die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufruft. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|File.cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI (engl.) verwendet die **ITnef::Finish** -Methode des neuen TNEF-Streams abgeschlossen.  <br/> |
+|Datei. cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI verwendet die **ITnef:: Finish** -Methode, um die Verarbeitung des neuen TNEF-Streams abzuschließen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -87,7 +87,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
+[Kanonische Pidtagattachnumber (-Eigenschaft](pidtagattachnumber-canonical-property.md)
   
 [STnefProblemArray](stnefproblemarray.md)
   

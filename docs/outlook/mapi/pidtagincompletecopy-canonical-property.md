@@ -1,5 +1,5 @@
 ---
-title: PidTagIncompleteCopy (kanonische Eigenschaft)
+title: Kanonische Pidtagincompletecopy (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 352a95cb-e8ba-4c79-81d8-b22723ec71fb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cfe3eaa7a1d849fa5b192c83af0eb153b3f90ca7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d03a8b7eb39c819b865ae24189bbcf04dacbbe8b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346613"
 ---
-# <a name="pidtagincompletecopy-canonical-property"></a>PidTagIncompleteCopy (kanonische Eigenschaft)
+# <a name="pidtagincompletecopy-canonical-property"></a>Kanonische Pidtagincompletecopy (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn diese Meldung ein unvollständiger Kopie von eine andere Nachricht handelt.
+Enthält TRUE, wenn diese Nachricht eine unvollständige Kopie einer anderen Nachricht ist.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält True, wenn diese Meldung ein unvollständiger Kopie von eine andere Nac
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine Nachrichteneigenschaften  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

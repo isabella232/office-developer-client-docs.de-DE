@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6f52ed60-d58b-86e6-f7e2-2ef19d4afa75
 description: Enthält den Kommentartext im Zeichenformat für ein Shape.
-ms.openlocfilehash: f5222836b29a26cc26ca8093576d0962f0592fae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e6f21875928bce31dc2004d88f2d281e31265d65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357113"
 ---
-# <a name="comment-cell-miscellaneous-section"></a>Comment Cell (Miscellaneous Section)
+# <a name="comment-cell-miscellaneous-section"></a>Zelle "Comment" (Abschnitt "Miscellaneous")
 
 Enthält den Kommentartext im Zeichenformat für ein Shape.
   
@@ -24,18 +24,18 @@ Enthält den Kommentartext im Zeichenformat für ein Shape.
 
 Sie können einen Kommentar auch einfügen, indem Sie auf der Registerkarte **Überprüfen** auf **Neuer Kommentar** klicken. 
   
-Wenn Sie einen Verweis auf die Zelle Comment aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Comment aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Kommentar  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Comment aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Comment aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowMisc** <br/> |
-|Zellenindex:  <br/> |**visComment** <br/> |
+|Zellenindex:  <br/> |**visCom** <br/> |
    
 

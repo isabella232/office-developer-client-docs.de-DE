@@ -1,5 +1,5 @@
 ---
-title: Typen (Outlook Wetter Speicherort-Schema)
+title: Typen (Outlook Weather Location Schema)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 35911941-3d5d-a00c-f6bf-eb0e93e00083
-description: In diesem Thema werden die Typen in Outlook Wetter Speicherort XML-Schema.
-ms.openlocfilehash: 9eb513bec6e0ddbe080ee0e93deabf45ea33ad77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Thema werden die Typen in Outlook Weather Location XML-Schema aufgelistet.
+ms.openlocfilehash: 9b28021c4f2b22df3c745a8dc9521cf058c14e04
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356168"
 ---
-# <a name="types-outlook-weather-location-schema"></a>Typen (Outlook Wetter Speicherort-Schema)
+# <a name="types-outlook-weather-location-schema"></a>Typen (Outlook Weather Location Schema)
 
-In diesem Thema werden die Typen in Outlook Wetter Speicherort XML-Schema.
+In diesem Thema werden die Typen in Outlook Weather Location XML-Schema aufgelistet.
   
 - [weatherType complexType](weathertype-complextype-outlook-weather-location-schema.md)
     

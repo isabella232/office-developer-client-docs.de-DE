@@ -1,31 +1,31 @@
 ---
-title: HeaderMargin-Element (HeaderFooter_Type ComplexType) ("Visio XML")
+title: HeaderMargin-Element (HeaderFooter_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2bb0f4c5-eacf-e09b-2fce-dcff2d927557
-description: Gibt den Rand der Kopfzeile des Dokuments an.
+description: Gibt den Rand der Kopfzeile eines Dokuments an.
 ms.openlocfilehash: d8126ae73b1fb330234698343d14468fcbb3eed8
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351667"
 ---
-# <a name="headermargin-element-headerfootertype-complextype-visio-xml"></a>HeaderMargin-Element (HeaderFooter_Type ComplexType) ("Visio XML")
+# <a name="headermargin-element-headerfootertype-complextype-visio-xml"></a>HeaderMargin-Element (HeaderFooter_Type complexType) (' Visio XML ')
 
-Gibt den Rand der Kopfzeile des Dokuments an.
+Gibt den Rand der Kopfzeile eines Dokuments an.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[HeaderMargin_Type](headermargin_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt den Rand der Kopfzeile des Dokuments an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[HeaderFooter](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |Enthält Elemente für Kopf- und Fußzeile eines Dokuments.  <br/> |
+|[HeaderFooter](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |Enthält Elemente für die Kopf-und Fußzeile eines Dokuments.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Einheit  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Maßeinheit an. Der Standardwert ist DP.  <br/> |Werte des Typs xsd: String.  <br/> |
+|Unit  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar. Der Standardwert ist DP.  <br/> |Werte des XSD: String-Typs.  <br/> |
    
 

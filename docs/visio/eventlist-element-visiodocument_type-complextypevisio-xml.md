@@ -1,31 +1,31 @@
 ---
-title: EventList-Element (VisioDocument_Type ComplexType) ("Visio XML")
+title: EventList-Element (VisioDocument_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 40bb8c7c-89ef-22e1-5edf-e2423fc89660
-description: Enthält ein Element EventItem für jedes Ereignis, der ein Objekt Antworten sollen.
+description: Enthält ein EventItem-Element für jedes Ereignis, auf das ein Objekt reagieren soll.
 ms.openlocfilehash: 5331f1b4a510b05b862f8c7c6306c89c6be4d9f0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351051"
 ---
-# <a name="eventlist-element-visiodocumenttype-complextype-visio-xml"></a>EventList-Element (VisioDocument_Type ComplexType) ("Visio XML")
+# <a name="eventlist-element-visiodocumenttype-complextype-visio-xml"></a>EventList-Element (VisioDocument_Type complexType) (' Visio XML ')
 
-Enthält ein Element **EventItem** für jedes Ereignis, der ein Objekt Antworten sollen. 
+Enthält ein **EventItem** -Element für jedes Ereignis, auf das ein Objekt reagieren soll. 
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[EventList_Type](eventlist_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält ein Element **EventItem** für jedes Ereignis, der ein Objekt Antworten
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,7 +48,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[EventItem](eventitem-element-eventlist_type-complextypevisio-xml.md) <br/> |[EventItem_Type](eventitem_type-complextypevisio-xml.md) <br/> |Einen Ereigniscode kapselt.  <br/> |
+|[EventItem](eventitem-element-eventlist_type-complextypevisio-xml.md) <br/> |[EventItem_Type](eventitem_type-complextypevisio-xml.md) <br/> |Kapselt einen Ereigniscode.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

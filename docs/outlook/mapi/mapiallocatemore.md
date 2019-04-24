@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3e48f76a-bc97-4cbc-9082-c07dd674b73e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0e6226dd0fc9c04070ed3d1dda1770f77fbc585c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 01980b2da735838eeffa9afa5a0d139b69e76d0c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357316"
 ---
 # <a name="mapiallocatemore"></a>MAPIAllocateMore
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ordnet Speicherpuffers, die mit einer anderen zuvor mit der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) reservierten Puffer verknüpft ist. 
+Reserviert einen Arbeitsspeicherpuffer, der mit einem anderen Puffer verknüpft ist, der zuvor mit der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion reserviert wurde. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE MAPIAllocateMore(
@@ -45,26 +45,26 @@ SCODE MAPIAllocateMore(
 
  _cbSize_
   
-> [in] Größe in Bytes des neuen Puffers zugeordnet werden. 
+> in Die Größe des neuen Puffers in Bytes, der reserviert werden soll. 
     
  _lpObject_
   
-> [in] Zeiger auf eine vorhandene MAPI-Puffer mit **MAPIAllocateBuffer**reserviert.
+> in Zeiger auf einen vorhandenen MAPI-Puffer, der mit **MAPIAllocateBuffer**zugeordnet ist.
     
  _lppBuffer_
   
-> [out] Zeiger auf das zurückgegebene Puffer neu zugewiesen.
+> Out Zeiger auf den zurückgegebenen, neu zugewiesenen Puffer.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und hat einen Zeiger auf den angeforderten Speicher zurückgegeben.
+> Der Aufruf war erfolgreich und hat einen Zeiger auf den angeforderten Speicher zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie während der **MAPIAllocateMore** Verarbeitung, die aufrufende Implementierung erhält einen Block von Arbeitsspeicher vom Betriebssystem. Der Arbeitsspeicherpuffer wird auf einer geraden Byteadresse zugewiesen. Auf Plattformen, auf dem vom Typ long Integer Access effizienter ist, weist das Betriebssystem den Puffer auf eine Adresse, deren Größe in Byte ein Vielfaches von vier ist. 
+Während der **MAPIAllocateMore** -Anrufverarbeitung erwirbt die aufrufende Implementierung einen Speicherblock vom Betriebssystem. Der Arbeitsspeicherpuffer wird für eine gerade nummerierte Byte-Adresse zugewiesen. Auf Plattformen, auf denen der Zugriff auf lange ganze Zahlen effizienter ist, weist das Betriebssystem den Puffer einer Adresse zu, deren Größe in Byte ein Vielfaches von vier ist. 
   
-Die einzige Möglichkeit, einen Puffer mit **MAPIAllocateMore** reservierte Version ist, übergeben den Zeiger auf den Puffer im _LpObject_ -Parameter an die Funktion [MAPIFreeBuffer](mapifreebuffer.md) angegeben. Die Verknüpfung zwischen den Speicherpuffern mit [MAPIAllocateBuffer](mapiallocatebuffer.md) und **MAPIAllocateMore** reserviert ermöglicht **MAPIFreeBuffer** , beide Puffer mit einem einzigen Aufruf freizugeben. 
+Die einzige Möglichkeit zum Freigeben eines mit **MAPIAllocateMore** zugeordneten Puffers besteht darin, den im _lpObject_ -Parameter angegebenen Pufferzeiger an die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion zu übergeben. Die Verknüpfung zwischen den Speicherpuffern, die mit [MAPIAllocateBuffer](mapiallocatebuffer.md) und **MAPIAllocateMore** reserviert wurden, ermöglicht **mapifreebufferfreigegeben** das Freigeben beider Puffer mit einem einzelnen Aufruf. 
   
 

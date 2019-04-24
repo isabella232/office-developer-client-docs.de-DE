@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 08bc256c-9706-4f3e-9a12-3e9cca5e4caa
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: eb3b3b3c9c2e9cffb77febf9c96baed40ce3f9e8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1afd922459be2ec4bbbd27a61fdf6fcb425548c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351331"
 ---
 # <a name="sccopyprops"></a>ScCopyProps
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kopiert die Eigenschaften, die durch ein Array von [SPropValue](spropvalue.md) Strukturen zu einem neuen Ziel definiert. 
+Kopiert die durch ein Array von [SPropValue](spropvalue.md) -Strukturen definierten Eigenschaften in ein neues Ziel. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScCopyProps(
@@ -46,21 +46,21 @@ SCODE ScCopyProps(
 
  _cprop_
   
-> [in] Anzahl der Eigenschaften kopiert werden soll. 
+> in Die Anzahl der zu kopierenden Eigenschaften. 
     
  _rgprop_
   
-> [in] Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die definieren die Eigenschaften kopiert werden soll. Der Parameter _Rgprop_ muss nicht an den Anfang des Arrays zeigen, aber es muss zeigen Sie auf den Anfang einer der **SPropValue** Strukturen im Array. 
+> in Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die zu kopierenden Eigenschaften definieren. Der _rgprop_ -Parameter muss nicht auf den Anfang des Arrays zeigen, sondern auf den Anfang einer der **SPropValue** -Strukturen im Array. 
     
  _pvDst_
   
-> [in] Zeiger auf die Ausgangsposition im Arbeitsspeicher, dem diese Funktion die Eigenschaften kopiert. 
+> in Zeiger auf die Anfangsposition im Speicher, auf die diese Funktion die Eigenschaften kopiert. 
     
  _PCB_
   
-> [out] Optional Zeiger auf die Größe in Bytes, den Block mit Speicher durch den Parameter _PvDst_ . 
+> Out Optionaler Zeiger auf die Größe des Speicherblocks, auf den durch den _pvDst_ -Parameter verwiesen wird. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
@@ -68,15 +68,15 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER
   
-> Unbekannte Eigenschaft vom Typ aufgetreten.
+> Ein unbekannter Eigenschafts wurde gefunden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das neue Array und ihre Daten befinden sich in einem Puffer mit einer einzelnen Reservierung erstellt, und die [ScRelocProps](screlocprops.md) -Funktion kann zum Anpassen der Zeiger in den einzelnen [SPropValue](spropvalue.md) Strukturen verwendet werden. Bevor Sie diese Anpassung sind der Zeiger gültig. 
+Das neue Array und seine Daten befinden sich in einem Puffer, der mit einer einzelnen Zuordnung erstellt wurde, und die [ScRelocProps](screlocprops.md) -Funktion kann verwendet werden, um die Zeiger in den einzelnen [SPropValue](spropvalue.md) -Strukturen anzupassen. Vor dieser Einstellung sind die Zeiger gültig. 
   
- **ScCopyProps** behält die Reihenfolge der ursprünglichen Eigenschaft für Array der kopierten-Eigenschaft. 
+ **ScCopyProps** behält die ursprüngliche Reihenfolge der Eigenschaften für das kopierte Eigenschaftenarray bei. 
   
-Der Parameter _pcb_ ist optional. Wenn nicht NULL ist, wird es auf die Anzahl von Bytes, die im Parameter _PvDst_ gespeichert festgelegt. 
+Der _PCB_ -Parameter ist optional; Wenn Sie nicht NULL ist, wird Sie auf die Anzahl von Bytes festgelegt, die im Parameter _pvDst_ gespeichert sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

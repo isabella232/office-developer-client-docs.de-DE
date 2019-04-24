@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b850dc08-73c3-4b19-ae29-1892d6a2ff2f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f0d2ad118346dd06788af972b64b10d6f6f6d0fc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8d5d4895e4440945896ee4f2212c5fca6da8610d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350862"
 ---
 # <a name="iexchangemodifytablegetlasterror"></a>IExchangeModifyTable::GetLastError
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt Informationen zu den letzten aufgetretenen Fehler in einem Table-Objekt zurück.
+Gibt Informationen zum letzten Fehler zurück, der in einem Table-Objekt aufgetreten ist.
   
 ```cpp
 HRESULT GetLastError( 
@@ -39,15 +39,15 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in] Der Rückgabewert von der Methode, die nicht erfolgreich.
+> in Der Rückgabewert der Methode, die fehlgeschlagen ist.
     
  _ulFlags_
   
-> [in] Nicht verwendet, auf 0 (null) festgelegt.
+> in Nicht verwendet, auf 0 (null) festgelegt.
     
  _lppMAPIError_
   
-> [out] Verweist auf eine MAPI- [MAPIERROR](mapierror.md) -Struktur, die Informationen über den letzten Fehler enthält, die für ein Table-Objekt aufgetreten sind. 
+> Out Verweist auf eine MAPI- [MAPIERROR](mapierror.md) -Struktur, die Informationen zum letzten Fehler enthält, der für ein Table-Objekt aufgetreten ist. 
     
 ## <a name="see-also"></a>Siehe auch
 

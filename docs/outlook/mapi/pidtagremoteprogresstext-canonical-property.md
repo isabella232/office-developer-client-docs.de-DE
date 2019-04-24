@@ -1,5 +1,5 @@
 ---
-title: PidTagRemoteProgressText (kanonische Eigenschaft)
+title: Kanonische Pidtagremoteprogresstext (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: b74d4350-4ad6-4c3f-8326-bd28537dfa0f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0a9d6bbe6807c2893c1bb208976dae9e695aa125
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b2a7a415f97af6aee4b9aa62b4349d2c40bfb55c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355132"
 ---
-# <a name="pidtagremoteprogresstext-canonical-property"></a>PidTagRemoteProgressText (kanonische Eigenschaft)
+# <a name="pidtagremoteprogresstext-canonical-property"></a>Kanonische Pidtagremoteprogresstext (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält eine Zeichenfolge, die den Status einer remote Übertragungstyp angibt.
+Diese Eigenschaft enthält eine Zeichenfolge, die den Status einer Remoteübertragung angibt.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Diese Eigenschaft enthält eine Zeichenfolge, die den Status einer remote Übert
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ein numerischer Code zugeordnet dieser Text wird in der Eigenschaft **PR_REMOTE_PROGRESS** ([PidTagRemoteProgress](pidtagremoteprogress-canonical-property.md)) übergeben.
+Ein numerischer Code, der diesem Text zugeordnet ist, wird in der **PR_REMOTE_PROGRESS** ([pidtagremoteprogress (](pidtagremoteprogress-canonical-property.md))-Eigenschaft übergeben.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

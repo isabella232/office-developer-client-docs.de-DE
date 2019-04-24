@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageToken (kanonische Eigenschaft)
+title: Kanonische Pidtagmessagetoken (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fcb93346-db92-44b5-a447-59fd95f98f45
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6b5def94096f7664169935a062d3b28171fb2919
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2d832b3a53f8056c034b5e87f1f309fa3058173d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355804"
 ---
-# <a name="pidtagmessagetoken-canonical-property"></a>PidTagMessageToken (kanonische Eigenschaft)
+# <a name="pidtagmessagetoken-canonical-property"></a>Kanonische Pidtagmessagetoken (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein ASN. 1-Sicherheitstoken für eine Nachricht enthält.
+Enthält ein ASN. 1-Sicherheitstoken für eine Nachricht.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_TOKEN  <br/> |
 |Kennung:  <br/> |0x0C03  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |Secure Messaging-Eigenschaften  <br/> |
+|Bereich:  <br/> |Eigenschaften für sichere Nachrichtenübermittlung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft übermittelt geschützte sicherheitsbezogenen Informationen aus den Ersteller an den Empfänger. In Verbindung mit der **PR_MESSAGE_SECURITY_LABEL** ([PidTagMessageSecurityLabel](pidtagmessagesecuritylabel-canonical-property.md))-Eigenschaft garantiert dies Zuordnung mit den Nachrichteninhalt des Bezeichnungsfelds. In Verbindung mit der **PR_CONTENT_INTEGRITY_CHECK** ([PidTagContentIntegrityCheck](pidtagcontentintegritycheck-canonical-property.md))-Eigenschaft überprüft es, dass der Inhalt der Nachricht unverändert ist.
+Diese Eigenschaft übermittelt geschützte sicherheitsbezogene Informationen vom Absender an den Empfänger. In Verbindung mit der **PR_MESSAGE_SECURITY_LABEL** ([pidtagmessagesecuritylabel (](pidtagmessagesecuritylabel-canonical-property.md))-Eigenschaft wird die Zuordnung der Bezeichnung zum Nachrichteninhalt garantiert. In Verbindung mit der **PR_CONTENT_INTEGRITY_CHECK** ([pidtagcontentintegritycheck (](pidtagcontentintegritycheck-canonical-property.md))-Eigenschaft wird überprüft, ob der Nachrichteninhalt unverändert ist.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

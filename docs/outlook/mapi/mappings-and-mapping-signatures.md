@@ -1,5 +1,5 @@
 ---
-title: Zuordnungen und Zuordnungssignaturen
+title: Zuordnungen und Zuordnungs Signaturen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 773f6671-cc21-4d1f-a11d-308bc71c852d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b5c8fd8c757de995e2a2e4239be614cf171fcb44
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cd26ce4bc2da3da639b4a611fc9a69f39b13e5f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357638"
 ---
-# <a name="mappings-and-mapping-signatures"></a>Zuordnungen und Zuordnungssignaturen
+# <a name="mappings-and-mapping-signatures"></a>Zuordnungen und Zuordnungs Signaturen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bei ein Dienstanbieter benannte Eigenschaften unterstützt, wird jeder Gruppe von-ID und Name-Paare als eine Zuordnung bezeichnet. Dienstanbieter können eine Zuordnung eines oder mehrere unterstützen. Dass wird eine Nachricht Speicheranbieter, z. B., können die Methoden **GetIDsFromNames** und **GetNamesFromIDs** für alle seine Nachricht, Ordner und Message Store Objekte arbeiten mit einer einzelnen Liste mit Namen und ihren entsprechenden IDs implementieren. Eine andere Nachricht Speicheranbieter möglicherweise haben eine Liste für jeden Ordner und die darin enthaltenen Nachrichten oder eine eindeutige Liste für jede Nachricht und jeder Ordner implementieren. Nachricht-Anbieter, die eine eindeutige Zuordnung für jede Nachricht verwenden darf keine benannte Eigenschaften in ihren Ordner Inhalt Tabellen angezeigt werden, da für einen bestimmten Eigenschaftennamen, der Bezeichner für die Nachricht zu Nachricht unterscheiden sich zulassen. MAPI empfiehlt, dass der Anbieter ganz einfach und Arbeiten mit einer einzelnen Liste für alle ihre Objekte, einschließlich Tabellen. 
+Wenn ein Dienstanbieter benannte Eigenschaften unterstützt, wird jede Gruppe von Bezeichner-und namens Paaren als Zuordnung bezeichnet. Dienstanbieter können eine oder mehrere Zuordnungen unterstützen. Ein Nachrichtenspeicher Anbieter kann beispielsweise die Methoden **GetIDsFromNames** und **GetNamesFromIDs** für alle Nachrichten-, Ordner-und Nachrichtenspeicher Objekte implementieren, um mit einer einzelnen Liste von Namen und deren entsprechenden Bezeichnern zu arbeiten. Ein anderer Nachrichtenspeicher Anbieter verfügt möglicherweise über eine Liste für jeden Ordner und die darin enthaltenen Nachrichten oder implementiert eine eindeutige Liste für jede Nachricht und jeden Ordner. Nachrichtenspeicher Anbieter, die eine eindeutige Zuordnung für jede Nachricht verwenden, dürfen nicht zulassen, dass benannte Eigenschaften in ihren Ordnerinhaltstabellen angezeigt werden, da für einen bestimmten Eigenschaftennamen der Eigenschaftenbezeichner von Nachricht zu Nachricht unterschiedlich ist. MAPI empfiehlt, dass Anbieter es einfach halten und mit einer einzigen Liste für alle Objekte einschließlich Tabellen arbeiten. 
   
-Für jede Zuordnung müssen Dienstanbieter eine Zuordnung Signatur angeben. Eine Signatur Zuordnung ist ein Binärwert, in der Regel eine GUID, die eine Reihe von eigenschaftskennungen und ihre entsprechenden Namen eindeutig identifiziert. Zuordnung Signaturen werden in der Eigenschaft eines Objekts **PR_MAPPING_SIGNATURE** ([PidTagMappingSignature](pidtagmappingsignature-canonical-property.md)) gespeichert. Dienstanbieter müssen ändern Sie den Wert für die **PR_MAPPING_SIGNATURE** -Eigenschaft immer auf die Zuordnung, das es darstellt, eine Änderung vorgenommen wird. Beispielsweise muss **PR_MAPPING_SIGNATURE** aktualisiert werden, wenn eine neue-ID zugeordnet, einen Namen oder einen neuen Namen ist und Bezeichner-Paar wird hinzugefügt. 
+Für jede Zuordnung müssen Dienstanbieter eine Zuordnungs Signatur angeben. Eine Zuordnungs Signatur ist ein binärer Wert, in der Regel eine GUID, die einen Satz von Eigenschafts Bezeichnern und die zugehörigen Namen eindeutig identifiziert. Zuordnungs Signaturen werden in der **PR_MAPPING_SIGNATURE** ([pidtagmappingsignature (](pidtagmappingsignature-canonical-property.md))-Eigenschaft eines Objekts gespeichert. Dienstanbieter müssen den Wert für Ihre **PR_MAPPING_SIGNATURE** -Eigenschaft ändern, wenn die Zuordnung geändert wird, die Sie darstellt. Beispielsweise muss **PR_MAPPING_SIGNATURE** aktualisiert werden, wenn einem Namen ein neuer Bezeichner zugewiesen wird oder ein neuer Name und ein Bezeichner-Paar hinzugefügt werden. 
   
-Arbeiten mit der benannten Eigenschaft der Objekte Clients verwenden der Objekte **PR_MAPPING_SIGNATURE** Eigenschaften in Vergleiche und kopieren. Zum Vergleichen mit der Eigenschaft Bezeichner, die auf zwei Objekte gehören, Clients, die nicht mit Zuordnung Signaturen [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) für beide Objekte zum Abrufen der Names für jede der Bezeichner aufrufen müssen. Verwenden die Zuordnung Signaturen von Objekten kann dieses Anrufs unnötige rendern. Wenn zwei Objekte den gleichen Wert für ihre **PR_MAPPING_SIGNATURE** Eigenschaften aufweisen, verwenden sie die gleiche Zuordnung. Bezeichner, die die gleiche Zuordnung verwenden können direkt verglichen werden. Dienstanbieter, die die Implementierung [IMAPIProp::CopyTo](imapiprop-copyto.md) und [IMAPIProp::CopyProps](imapiprop-copyprops.md) können auch ein Objekt Zuordnung Signatur nutzen. Beim Kopieren zwischen Objekten Eigenschaften namens können Dienstanbieter den Konvertierungsschritt vermeiden, wenn die Quell- und Ziel-Objekte dieselbe Zuordnung Signatur aufweisen. 
+Clients, die mit den benannten Eigenschaften von Objekten arbeiten, verwenden die **PR_MAPPING_SIGNATURE** -Eigenschaften der Objekte in Vergleichs-und Kopiervorgängen. Um benannte Eigenschaftenbezeichner zu vergleichen, die zu zwei Objekten gehören, müssen Clients, die keine Zuordnungs Signaturen verwenden, [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) für beide Objekte aufrufen, um die Namen der einzelnen Bezeichner abzurufen. Bei Verwendung der Zuordnungs Signaturen von Objekten kann dieser Aufruf nicht erforderlich sein. Wenn zwei Objekte den gleichen Wert für Ihre **PR_MAPPING_SIGNATURE** -Eigenschaften haben, verwenden Sie die gleiche Zuordnung. Bezeichner, die dieselbe Zuordnung verwenden, können direkt verglichen werden. Dienstanbieter, die [IMAPIProp:: CopyTo](imapiprop-copyto.md) und [IMAPIProp:: CopyProps](imapiprop-copyprops.md) implementieren, können auch die Zuordnungs Signatur eines Objekts nutzen. Beim Kopieren benannter Eigenschaften zwischen Objekten können Dienstanbieter den Konvertierungsschritt vermeiden, wenn die Quell-und Zielobjekte dieselbe Zuordnungs Signatur aufweisen. 
   
 ## <a name="see-also"></a>Siehe auch
 

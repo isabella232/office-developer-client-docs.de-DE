@@ -7,58 +7,58 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 6511e1b5-697e-4ed1-80af-aa8ca56fd045
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1f931382e790da13e7d4a746e286d9dc176b7b6b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: bb40891376ac511869ba157b675e53ee236b24ca
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346676"
 ---
 # <a name="mapi-service-providers"></a>MAPI-Dienstanbieter
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Es gibt drei gängige Typen der Dienstanbieter:
+Es gibt drei gängige Typen von Dienstanbietern:
   
-- Beheben von adressbuchanbietern implementierte.
+- Adressbuchanbieter.
     
-- Nachricht-Anbieter.
+- Nachrichtenspeicher Anbieter.
     
-- Transport-Anbieter.
+- Transport Anbieter.
     
-Address Book und Message-Anbieter müssen viele ähnlichkeiten. Registrieren sie einen eindeutigen Bezeichner MAPI, die sie zum Erstellen von Eintragsbezeichner für Objekte verwenden. Sie bieten eine Hierarchie von Objekten und Eigenschaften, die Clients zugreifen und diese bearbeiten können. Für ihre Containerobjekte unterstützen sie eine Hierarchie und einer Inhaltstabelle. Sie unterstützen ereignisbenachrichtigung zu diesen Tabellen und optional für einzelne Objekte, damit Clients über Änderungen informiert werden können, die während der Sitzung auftreten. Wenn Vorgänge langen werden, können sie eine Statusanzeige um informieren den Benutzer über den Vorgang Status anzeigen. Können Clients kommunizieren mit Address Book und Message-Anbieter entweder indirekt über MAPI mithilfe der [IAddrBook: IMAPIProp](iaddrbookimapiprop.md) und [IMAPISession: IUnknown](imapisessioniunknown.md) Schnittstellen oder direkt mithilfe eines der Service Provider-Schnittstellen in der in der folgenden Tabelle. 
+Adressbuch-und Nachrichtenspeicher Anbieter haben viele Ähnlichkeiten. Sie registrieren einen eindeutigen Bezeichner mit MAPI, den Sie zum Erstellen von Eintrags Bezeichnern für Ihre Objekte verwenden. Sie bieten eine Hierarchie von Objekten und Eigenschaften, auf die Clients zugreifen und diese bearbeiten können. Für Ihre Container-Objekte unterstützen Sie eine Hierarchietabelle und eine Inhaltstabelle. Sie unterstützen Ereignisbenachrichtigungen für diese Tabellen und optional für einzelne Objekte, sodass Clients über Änderungen informiert werden können, die während der Sitzung stattfinden. Wenn Vorgänge langwierig werden, können Sie eine Statusanzeige anzeigen, um den Benutzer über den Status des Vorgangs zu informieren. Clients können mit Adressbuch-und Nachrichtenspeicher Anbietern entweder indirekt über MAPI kommunizieren, indem Sie die [IAddrBook: IMAPIProp](iaddrbookimapiprop.md) und [IMAPISession: IUnknown](imapisessioniunknown.md) -Schnittstellen verwenden oder direkt über eine der Dienstanbieter Schnittstellen in der folgende Tabelle. 
   
-|**Address Book Provider-Schnittstellen**|**Nachricht Store Provider-Schnittstellen**|
+|**Schnittstellen des Adressbuch Anbieters**|**Schnittstellen des Nachrichtenspeicher Anbieters**|
 |:-----|:-----|
 |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) <br/> |
 |[IDistList : IMAPIContainer](idistlistimapicontainer.md) <br/> |[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md) <br/> |
 |[IMailUser : IMAPIProp](imailuserimapiprop.md) <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
 | <br/> |[IAttach : IMAPIProp](iattachimapiprop.md) <br/> |
    
-Transportanbieter unterscheiden sich von Adresse Adressbuch und Nachricht Speicher-Anbieter in die Möglichkeit, den, die Sie mit MAPI- und -Clients kommunizieren. In der Regel warten Transportanbieter MAPI, um Informationen dazu auffordern, anstatt Kommunikation zu initiieren. Im Gegensatz zu anderen Anbietern unterstützt Transportanbieter keine Vielzahl von Objekten und Tabellen, die von Clients häufig zugegriffen werden. Allerdings unterstützen sie ein Statusobjekt wie alle-Dienstanbieter, und seine Eigenschaften in der Statustabelle veröffentlichen. Während Address Book und Message-Anbieter die [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) -Methode zum Registrieren der eindeutige Bezeichner für die Erstellung ihrer Eintragsbezeichner aufrufen, rufen Sie Transportanbieter die [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode Registrieren Sie sich eindeutige Bezeichner als auch-Adresstypen für die Verantwortung für die Übermittlung von bestimmten Nachrichten. 
+Transport Anbieter unterscheiden sich von Adressbuch-und Nachrichtenspeicher Anbietern bei der Kommunikation mit MAPI und mit Clients. Transport Anbieter warten in der Regel, bis MAPI Sie zur Information auffordert, statt die Kommunikation zu initiieren. Im Gegensatz zu anderen Anbietern unterstützen Transportanbieter keine Vielzahl von Objekten und Tabellen, auf die häufig Clients zugreifen. Sie unterstützen jedoch ein Status-Objekt, wie alle Dienstanbieter, und veröffentlichen die Eigenschaften in der Statustabelle. Während Adressbuch-und Nachrichtenspeicher Anbieter die [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md) -Methode aufrufen, um eindeutige Bezeichner für die Erstellung Ihrer Eintragsbezeichner zu registrieren, rufen Transportanbieter die [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode auf, um Registrieren Sie eindeutige Bezeichner sowie Adresstypen für die Übernahme der Verantwortung für die Bereitstellung bestimmter Nachrichten. 
   
-Ihren Dienstanbieter müssen drei Headerdateien: eine öffentliche Headerdatei und zwei interne Dateien. Verwenden Sie die öffentlichen Header-Datei aus, für die Konfiguration und zum Dokumentieren von Eigenschaften und deren Werten. Enthalten Sie in einem der internen Headerdateien alle erforderlichen öffentlichen MAPI-Header. Diese Headerdatei sollte in allen der Service Provider Quelldateien enthalten sein. Verwenden Sie die anderen interne Datei Resource Identifier definieren.
+Der Dienstanbieter sollte drei Headerdateien haben: eine öffentliche Headerdatei und zwei interne Dateien. Verwenden Sie die öffentliche Headerdatei zur Konfiguration und zum Dokumentieren von Eigenschaften und deren Werten. Fügen Sie in eine der internen Headerdateien alle erforderlichen öffentlichen MAPI-Header ein. Diese Headerdatei sollte in allen Dienstanbieter-Quelldateien enthalten sein. Verwenden Sie die andere interne Datei, um Ressourcen-IDs zu definieren.
   
 Adressbuch, Nachrichtenspeicher und Transportanbieter führen die folgenden Aufgaben aus:
   
-- Geben Sie eine Eintrag-Funktion. 
+- Geben Sie eine Einstiegspunktfunktion an. 
     
-- Geben Sie ein Anbieter und Anmeldeobjekt zur Verarbeitung von Anmelde- und Initialisierung an. 
+- Geben Sie einen Anbieter und ein Anmeldeobjekt an, um die Anmeldung und Initialisierung zu behandeln. 
     
-- Wenn der Anbieter eine Message Service gehört, geben Sie eine Nachricht Service Entry Point-Funktion. 
+- Wenn der Anbieter zu einem Nachrichtendienst gehört, geben Sie eine Einstiegspunktfunktion für den Nachrichtendienst ein. 
     
-- Konfiguration durch die Implementierung eines Eigenschaftenblatts unterstützt.
+- Unterstützen der Konfiguration durch Implementieren eines Eigenschaftenblatts.
     
-- Implementieren Sie ein Statusobjekt und Unterstützung der Statustabelle. 
+- Implementieren Sie ein Status-Objekt, und unterstützen Sie die Statustabelle. 
     
-- Handle Herunterfahren.
+- Handle heruntergefahren.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[MAPI-Konzepte](mapi-concepts.md)
+[MAPI-Konzepte (engl.)](mapi-concepts.md)
 

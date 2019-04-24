@@ -1,5 +1,5 @@
 ---
-title: PidLidFShouldTNEF (kanonische Eigenschaft)
+title: Kanonische Pidlidfshouldtnef (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,47 +11,47 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3cab23b6-f0e3-4703-a83b-12a617537651
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ad9d81342ed749b6b1b640fd8118519aae7469a4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a8f88e4b41ab455c55bfd1cb36b73ce7ef0383b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348993"
 ---
-# <a name="pidlidfshouldtnef-canonical-property"></a>PidLidFShouldTNEF (kanonische Eigenschaft)
+# <a name="pidlidfshouldtnef-canonical-property"></a>Kanonische Pidlidfshouldtnef (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob ein Element mit Transport Neutral Encapsulation Format (TNEF) codiert. 
+Gibt an, ob ein Element mit TNEF (Transport Neutral Encapsulation Format) codiert werden soll. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidFShouldTNEF  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x000085A5  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
+|Long-ID (Deckel):  <br/> |0x000085A5  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
+|Bereich:  <br/> |Laufzeitkonfiguration  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird festgelegt, wenn Microsoft Word als e-Mail-Editor festgelegt ist, und sendet ein OLE-Objekt, das in einem Rich Text Format (RTF)-Stream eingebettet ist.
+Diese Eigenschaft wird festgelegt, wenn Microsoft Word als e-Mail-Editor festgelegt ist, und es wird ein OLE-Objekt gesendet, das in einen RTF-Stream (Rich Text Format) eingebettet ist.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,5 +63,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

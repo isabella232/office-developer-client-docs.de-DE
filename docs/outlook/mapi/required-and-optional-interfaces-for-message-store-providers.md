@@ -1,5 +1,5 @@
 ---
-title: Erforderliche und optionale Schnittstellen Nachrichtenspeicheranbieter
+title: Erforderliche und optionale Schnittstellen für Nachrichtenspeicher Anbieter
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -8,40 +8,40 @@ api_type:
 - COM
 ms.assetid: cc62e57e-82a4-4f37-8d1b-7cdf828b951e
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 3305aaadbcf7d53b801ddaf7e31a0d63145fc7ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 35b1d05d742b0d8defabf84b6dbf7d418ece0bbd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345710"
 ---
-# <a name="required-and-optional-interfaces-for-message-store-providers"></a>Erforderliche und optionale Schnittstellen Nachrichtenspeicheranbieter
+# <a name="required-and-optional-interfaces-for-message-store-providers"></a>Erforderliche und optionale Schnittstellen für Nachrichtenspeicher Anbieter
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI definiert eine Reihe von Schnittstellen, die Nachricht Speicher-Anbieter beziehen. Aufgrund der Vielzahl von Features, die zum Implementieren ein Nachrichtenspeichers auswählen können, sind einige dieser Schnittstellen erforderlich und sind nicht. Die folgende Tabelle listet die MAPI-Schnittstellen, die im Zusammenhang mit der Nachricht-Anbieter, gibt an, ob die Schnittstellen sind erforderlich oder optional und beschreibt deren Zweck.
+MAPI definiert eine Gruppe von Schnittstellen, die sich auf Nachrichtenspeicher Anbieter beziehen. Aufgrund der großen Palette von Features, die ein Nachrichtenspeicher für die Implementierung auswählen kann, sind einige dieser Schnittstellen erforderlich, andere nicht. In der folgenden Tabelle sind die MAPI-Schnittstellen aufgelistet, die sich auf Nachrichtenspeicher Anbieter beziehen, gibt an, ob die Schnittstellen erforderlich oder optional sind, und beschreibt deren Zweck.
   
 |**Schnittstelle**|**Status**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[IMSProvider](imsprovideriunknown.md) <br/> |Erforderlich  <br/> |Protokolle an und von einem Nachrichtenspeicher.  <br/> |
-|[IMSLogon](imslogoniunknown.md) <br/> |Erforderlich  <br/> |Ordner oder Nachrichten öffnet, überprüft die Nachrichtenspeicher Identität und Benachrichtigungen behandelt.  <br/> |
-|[IMsgStore](imsgstoreimapiprop.md) <br/> |Erforderlich  <br/> |Ordner oder Nachrichten öffnet, sucht nach Spezialordner und Nachrichtenübermittlungen behandelt.  <br/> |
-|[IMAPIFolder](imapifolderimapicontainer.md) <br/> |Erforderlich  <br/> |Sucht und Nachrichten und Unterordner bearbeitet.  <br/> |
-|[IMessage](imessageimapiprop.md) <br/> |Erforderlich  <br/> |Anlagen bearbeitet und einige der Eigenschaften einer Nachricht festgelegt.  <br/> |
-|[IMAPITable](imapitableiunknown.md) <br/> |Erforderlich  <br/> |Ermöglicht es anderen Objekten Sammlungen von Daten zu verschiedenen MAPI-Komponenten durchzuführen.  <br/> |
-|[IMAPIStatus](imapistatusimapiprop.md) <br/> |Erforderlich  <br/> |Ermöglicht es Clients, um den Status eines Nachrichtenspeichers überprüfen und einige Konfigurationsaufgaben ausführen.  <br/> |
-|[IAttach](iattachimapiprop.md) <br/> |Optional  <br/> |Zugriffe Nachrichteneigenschaften Anlage Wenn Speicheranbieter Dateianlagen unterstützt.  <br/> |
-|**IStorage** <br/> |Optional  <br/> |Strukturierte Speicherobjekte verwaltet, wenn Speicheranbieter OLE-Objekt von Anlagen unterstützt.  <br/> |
-|**IStream** <br/> |Optional  <br/> |Können Nachrichten und Anlagen Objekte zum Lesen und Schreiben von Daten in Stream-Objekten.  <br/> |
-|**IStreamDocfile** <br/> |Optional  <br/> |Einige Dienstanbieter ein Speicherobjekt, wie etwa eine Verbunddatei im OLE 2.0-Dateiformat öffnen können.  <br/> |
+|[IMSProvider](imsprovideriunknown.md) <br/> |Erforderlich  <br/> |Meldet ein-und Ausschalten eines Nachrichtenspeichers an.  <br/> |
+|[IMSLogon](imslogoniunknown.md) <br/> |Erforderlich  <br/> |Öffnet Ordner oder Nachrichten, überprüft die Identität des Nachrichtenspeichers und verarbeitet Benachrichtigungen.  <br/> |
+|[IMsgStore](imsgstoreimapiprop.md) <br/> |Erforderlich  <br/> |Öffnet Ordner oder Nachrichten, sucht nach speziellen Ordnern und verarbeitet Nachrichtenübermittlungen.  <br/> |
+|[IMAPIFolder](imapifolderimapicontainer.md) <br/> |Erforderlich  <br/> |Sucht und bearbeitet Nachrichten und Unterordner.  <br/> |
+|[IMessage](imessageimapiprop.md) <br/> |Erforderlich  <br/> |Bearbeitet Anlagen und legt einige der Eigenschaften einer Nachricht fest.  <br/> |
+|[IMAPITable](imapitableiunknown.md) <br/> |Erforderlich  <br/> |Ermöglicht anderen Objekten das darstellen von Datensammlungen für verschiedene MAPI-Komponenten.  <br/> |
+|[IMAPIStatus](imapistatusimapiprop.md) <br/> |Erforderlich  <br/> |Ermöglicht es Clients, den Status eines Nachrichtenspeichers zu überprüfen und einige Konfigurationsaufgaben auszuführen.  <br/> |
+|[IAttach](iattachimapiprop.md) <br/> |Optional  <br/> |Greift auf Eigenschaften der Nachrichtenanlage zu, wenn der Informationsspeicher Anbieterdatei Anlagen unterstützt.  <br/> |
+|**IStorage** <br/> |Optional  <br/> |Verwaltet strukturierte Speicherobjekte, wenn der Informationsspeicher Anbieter OLE-Objekt Anlagen unterstützt.  <br/> |
+|**IStream** <br/> |Optional  <br/> |Ermöglicht es Message-und Attachment-Objekten, Daten in Stream-Objekte zu lesen und zu schreiben.  <br/> |
+|**IStreamDocfile** <br/> |Optional  <br/> |Ermöglicht es einigen Dienstanbietern, ein Speicherobjekt zu öffnen, beispielsweise eine Verbunddatei im OLE 2,0-Dateiformat.  <br/> |
    
-Die grundlegende Informationen zum Implementieren von **IMAPIFolder**, **IMessage**, **IMAPIStatus**und **IMAPITable** benötigten ist in den Referenzthemen für diese Schnittstellen dokumentiert. Dieser Abschnitt enthält zusätzliche Informationen, die direkt Nachricht Anbieter verknüpft ist. Entsprechend den Informationen in diesem Abschnitt und in den entsprechenden Referenzthemen sollte der Rest der MAPI-Schnittstellen implementiert werden. Siehe Abschnitt COM und ActiveX-Objektdienste im Windows SDK für Weitere Informationen zum Implementieren von **IStorage** **IStream**und **IStreamDocFile**.
+Die grundlegenden Informationen, die Sie für die Implementierung von **IMAPIFolder**, **IMessage**, **IMAPIStatus**und **IMAPITable** benötigen, sind in den Referenzthemen zu diesen Schnittstellen dokumentiert. Dieser Abschnitt enthält zusätzliche Informationen, die sich direkt auf Nachrichtenspeicher Anbieter beziehen. Die restlichen MAPI-Schnittstellen sollten gemäß den Informationen in diesem Abschnitt und in den entsprechenden Referenzthemen implementiert werden. Weitere Informationen zum Implementieren von **IStorage**, **IStream**und **ISTREAMDOCFILE**finden Sie im Abschnitt com-und ActiveX-Objektdienste im Windows SDK.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
+[Entwickeln eines MAPI-Nachrichtenspeicheranbieters](developing-a-mapi-message-store-provider.md)
 

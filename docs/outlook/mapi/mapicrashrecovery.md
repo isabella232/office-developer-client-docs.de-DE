@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4172e2d3-6343-385b-c691-a64c1e198051
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6b07d794a8f54477c6706cb70af60f7f7ef57d49
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9efafbac55a2925e04b533e7c08388c026540dff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357302"
 ---
 # <a name="mapicrashrecovery"></a>MAPICrashRecovery
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Funktion **MAPICrashRecovery** überprüft, ob der Zustand des Persönliche Ordner-Datei (PST) oder Offlineordnerdatei (OST) Arbeitsspeicher freigegeben. Wenn der Arbeitsspeicher in einen konsistenten Status befindet, wird die **MAPICrashRecovery** -Funktion verschiebt die Daten auf dem Datenträger und verhindert, dass weitere Lese- oder Schreibzugriff, bis der Prozess beendet wird. 
+Die **MAPICrashRecovery** -Funktion überprüft den Status des freigegebenen Speichers (PST) oder der Offline Ordner Datei (Ost). Wenn sich der Speicher in einem konsistenten Zustand befindet, verschiebt die **MAPICrashRecovery** -Funktion die Daten auf den Datenträger und verhindert den weiteren Lese-oder Schreibzugriff, bis der Prozess beendet wird. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Vom exportiert werden:  <br/> |olmapi32.dll  <br/> |
+|Exportiert von:  <br/> |olmapi32. dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
    
@@ -41,19 +41,19 @@ void MAPICrashRecovery(ULONG ulFlags);
 
 _ulFlags_
   
-> [in] Kennzeichen, die steuern, wie die MAPI-Wiederherstellung ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Flags, die verwendet werden, um zu steuern, wie die MAPI-Crash Wiederherstellung ausgeführt wird. Die folgenden Flags können festgelegt werden:
     
-   - **MAPICRASH\_wiederherstellen**: Wenn die PST-Dateien oder OSTs in einen konsistenten Status befinden, verschieben Sie die Daten auf dem Datenträger und die PST-Dateien oder OSTs, um zu verhindern, dass Lese- oder Schreibzugriff sperren.
+   - **MAPICRASH\_Recover**: Wenn sich die PST oder Kosten in einem konsistenten Zustand befinden, verschieben Sie die Daten auf den Datenträger, und Sperren Sie die PST oder Kosten, um Lese-oder Schreibzugriff zu verhindern.
     
-   - **MAPICRASH\_weiter**: entsperren Sie die PST-Dateien oder OSTs für das debugging. Rufen Sie nach einem erfolgreichen Aufruf von **MAPICrashRecovery** mit dem **MAPICRASH_RECOVER** -Flag, **MAPICrashRecovery** mit der **MAPICRASH\_weiter** Kennzeichnung, damit das Debuggen, um den Vorgang fortzusetzen. 
+   - **MAPICRASH\_Continue**: entsperren Sie die PST-oder Kosten für das Debugging. Rufen Sie nach einem erfolgreichen Aufruf von **MAPICrashRecovery** mit dem **MAPICRASH_RECOVER** -Flag **MAPICrashRecovery** mit dem Flag **MAPICRASH\_Continue** auf, um das Debuggen zu ermöglichen. 
     
-   - **MAPICRASH\_SYSTEM_SHUTDOWN**: Wenn die PST-Dateien oder OSTs in einen konsistenten Status befinden, verschieben Sie die Daten auf dem Datenträger und die PST-Dateien oder OSTs, um zu verhindern, dass Lese- oder Schreibzugriff sperren. Die PST-Dateien oder OSTs kann nicht entsperrt mit werden **MAPICRASH\_weiter**. Muss verwendet werden, in Kombination mit **MAPICRASH\_wiederherstellen**. 
+   - **MAPICRASH\_SYSTEM_SHUTDOWN**: Wenn die PST oder Kosten sich in einem konsistenten Zustand befinden, verschieben Sie die Daten auf den Datenträger, und Sperren Sie die PST oder Kosten, um Lese-oder Schreibzugriff zu verhindern. Die PST oder Kosten kann nicht mit **MAPICRASH\_Continue**entsperrt werden. Muss in Kombination mit **MAPICRASH\_Recover**verwendet werden. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das obere Byte (0xFF000000) ist für Anbieter für bestimmte Absturz Recovery Flags reserviert.
+Das obere Byte (0xFF000000) ist für anbieterspezifische Absturz Wiederherstellungs Kennzeichen reserviert.
   
-Rufen Sie **MAPICrashRecovery** mit der **MAPICRASH\_wiederherstellen** und **MAPICRASH_SYSTEM_SHUTDOWN** Flags als Antwort auf die Nachricht **WM_ENDSESSION** . 
+Aufrufen von **MAPICrashRecovery** mit **den\_MAPICRASH Recover** -und **MAPICRASH_SYSTEM_SHUTDOWN** -Flags als Reaktion auf die **WM_ENDSESSION** -Nachricht. 
   
 ## <a name="see-also"></a>Siehe auch
 

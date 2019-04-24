@@ -12,44 +12,44 @@ api_type:
 - COM
 ms.assetid: 2348cce1-07c3-49ed-ae03-79e477d3c6c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7f8ede3761ca10589c686e2ec4fac18fbe00fb2c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4208f51af44055b03c65b51c9b3d94e947dc9b68
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351240"
 ---
 # <a name="scode"></a>SCODE
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine 32-Bit Statuswert, der verwendet wird, um einen Fehler oder eine Warnung zu beschreiben. 
+Ein 32-Bit-Statuswert, der verwendet wird, um einen Fehler oder eine Warnung zu beschreiben. 
   
 ```cpp
 typedef ULONG SCODE;
 
 ```
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Datentyp **SCODE** ist identisch mit der [HRESULT](hresult.md) -Datentyp. 
+Der **SCODE** -Datentyp ist derselbe wie der [HRESULT](hresult.md) -Datentyp. 
   
-Ein **SCODE** -Wert wird in vier Felder unterteilt: 
+Ein **SCODE** -Wert ist in vier Felder unterteilt: 
   
-- Ein Einzel-Bit Schweregradcode, der auf 0 festgelegt ist, um Erfolg und 1 Fehler anzuzeigen.
+- Ein Single-Bit-Schweregradcode, der auf 0 festgelegt ist, um den Erfolg und 1 zum Anzeigen des Fehlers anzuzeigen.
     
 - Ein reserviertes 11-Bit-Feld
     
-- Ein 4-Bit-Facility-Code, der den Bereich verantwortlich für die Fehlermeldung oder einer Warnung angibt.
+- Ein 4-Bit-Code, der den für den Fehler oder die Warnung verantwortlichen Bereich angibt.
     
-- Eine 16-Bit-Fehler oder eine Warnung Code, der das Problem beschreibt, das den Fehler verursacht oder einer Warnung.
+- Ein 16-Bit-Fehler oder Warnungscode, der das Problem beschreibt, das den Fehler oder die Warnung verursacht.
     
-Viele der MAPI-Funktionen und Methoden zurückgeben **SCODE** -Werte als **HRESULT** -Datentypen definiert, wie die OLE-Methoden und Funktionen. OLE definiert verschiedene Makros, die für die Konvertierung zwischen **SCODE** und ein **HRESULT**verwendet werden können.
+Viele der MAPI-Funktionen und-Methoden geben **SCODE** -Werte zurück, die als **HRESULT** -Datentypen definiert sind, ebenso wie die OLE-Methoden und-Funktionen. OLE definiert mehrere Makros, die zum Konvertieren zwischen einem **SCODE** und einem **HRESULT**verwendet werden können.
   
 > [!NOTE]
-> In 64-Bit-MAPI ist **SCODE** noch ein 32-Bit-Wert. 
+> In 64-Bit-MAPI ist **SCODE** immer noch ein 32-Bit-Wert. 
   
-Weitere Informationen dazu, wie den **SCODE** -Datentyp in MAPI verwendet werden finden Sie unter [Fehlerbehandlung](error-handling-in-mapi.md). Weitere Informationen zu OLE und den Datentyp **SCODE** finden Sie unter der *OLE Programmer's Reference* . 
+Weitere Informationen zur Verwendung des **SCODE** -Datentyps in MAPI finden Sie unter [Error Handling](error-handling-in-mapi.md). Weitere Informationen zu OLE und zum **SCODE** -Datentyp finden Sie unter *OLE Programmer es Reference* . 
   
 ## <a name="see-also"></a>Siehe auch
 

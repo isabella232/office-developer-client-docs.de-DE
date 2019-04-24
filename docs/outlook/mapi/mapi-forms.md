@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 41d35370-495d-40fe-80bc-6c3bfc995b85
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b53cdb4fe379405018555f1cca9fa40ddc5d0fa8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 951a1c88d2fd4291ee0b48924de6eda8f43c3e47
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351345"
 ---
 # <a name="mapi-forms"></a>MAPI-Formulare
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nach dem Lesen dieses Übersicht über die Architektur der MAPI-Formulars, müssen Sie einen Überblick über was MAPI-Formulare sind und Interaktion mit anderen Komponenten des MAPI-Subsystems. Der Zweck dieses Abschnitts ist die grundlegende Kenntnisse zum Implementieren Ihrer eigenen MAPI Formular Server benötigten zur Verfügung.
+Nach der Lektüre dieser Übersicht über die MAPI-Formulararchitektur haben Sie Verständnis dafür, was MAPI-Formulare sind und wie Sie mit anderen Komponenten des MAPI-Subsystems interagieren. Dieser Abschnitt soll Ihnen die konzeptionellen Kenntnisse vermitteln, die Sie benötigen, um Ihre eigenen MAPI-Formularserver zu implementieren.
   
-Vor dem Lesen dieses Abschnitts, sollten Sie sich mit dem Material im Thema [MAPI Workflowformulare (Übersicht)](mapi-forms-overview.md) vertraut machen. 
+Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit dem Material im Thema [MAPI Forms Overview](mapi-forms-overview.md) vertraut machen. 
   
 > [!NOTE]
-> Weil die Architektur des MAPI-Formulars auf Component Object Model (COM) basiert, erfordert das Formular Server Anwendungsentwicklung Kenntnisse der COM-Programmierung. Weitere Informationen zu COM finden Sie im Abschnitt "COM und ActiveX-Objekt Services" im Windows SDK. 
+> Da die MAPI-Formulararchitektur auf dem Component Object Model (COM) basiert, erfordert das Entwickeln von Formularserver Anwendungen Kenntnisse der COM-Programmierung. Weitere Informationen zu COM finden Sie im Abschnitt COM-und ActiveX-Objektdienste im Windows SDK. 
   
 

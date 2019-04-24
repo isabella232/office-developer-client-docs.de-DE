@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9b824e70-ed9a-490c-b777-8902a793fece
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4b05baf1f819a821da3496cc63c2b2980894efd7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b9a31fec93ec7fafc4d1565d63e4bc427ba4050e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347831"
 ---
 # <a name="hrgetgalfromemsmdbuid"></a>HrGetGALFromEmsmdbUID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Eintrags-ID der im globalen Adressbuch für den Exchange-Dienst _pEmsmdbUID_identifizierten zurück. Die zurückgegebene Eintrags-ID sollte mithilfe der [MAPIFreeBuffer](mapifreebuffer.md)freigegeben werden.
+Gibt die Eintrags-ID des globalen Adressbuchs für den Exchange-Dienst zurück, der von _pEmsmdbUID_identifiziert wurde. Der zurückgegebene Eintragsbezeichner sollte mit [mapifreebufferfreigegeben](mapifreebuffer.md)freigegeben werden.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |abhelp.h  <br/> |
+|Headerdatei  <br/> |abhelp. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrGetGALFromEmsmdbUID(
@@ -43,22 +43,22 @@ HRESULT HrGetGALFromEmsmdbUID(
 
  _pSess_
   
-> [in] Die angemeldete IMAPISession. Es darf nicht NULL sein.
+> in Der angemeldete IMAPISession. Er darf nicht NULL sein.
     
  _pAddrBook_
   
-> [in] Das Adressbuch verwendet, um die Eintrags-ID zu öffnen. Es darf nicht NULL sein.
+> in Das zum Öffnen des Eintrags Bezeichners verwendete Adressbuch. Er darf nicht NULL sein.
     
  _pEmsmdbUID_
   
-> [in] Ein Zeiger auf eine **EmsmdbUID** , die identifiziert die globale Adressliste des Exchange-Diensts abgerufen werden sollen. Wenn _pEmsmdbUID_ NULL oder die UID 0 (null) ist, gibt diese Funktion die Vorgängerversion GAL von der Exchange-Dienst. 
+> in Ein Zeiger auf ein **emsmdbUID** , das die GAL des Exchange-Diensts identifiziert, der abgerufen werden soll. Wenn _pEmsmdbUID_ oder die UID NULL ist, ruft diese Funktion die Legacy-GAL des Exchange-Diensts ab. 
     
  _lpcbeid_
   
-> [out] Ein Zeiger auf die Byteanzahl des Eintrags-ID der globalen Adressliste.
+> Out Ein Zeiger auf die Bytezahl des Eintrags Bezeichners der globalen Adressliste.
     
  _lppeid_
   
-> [out] Ein Zeiger auf die Eintrags-ID der globalen Adressliste. Dies sollte mithilfe der [MAPIFreeBuffer](mapifreebuffer.md)freigegeben werden.
+> Out Ein Zeiger auf die Eintrags-ID der globalen Adressliste. Dies sollte mit [mapifreebufferfreigegeben](mapifreebuffer.md)freigegeben werden.
     
 

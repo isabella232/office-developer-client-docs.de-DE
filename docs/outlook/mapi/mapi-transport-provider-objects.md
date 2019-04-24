@@ -1,5 +1,5 @@
 ---
-title: MAPI-Transport-Anbieter-Objekte
+title: MAPI-Transportanbieter Objekte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 4f28fab8-2ce1-4398-a941-6d718c9bbd6a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: de0334ee9a90da38e472571314136195c84a7866
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3f05e5b4b45e18d580737d37250e183c4cead881
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357376"
 ---
-# <a name="mapi-transport-provider-objects"></a>MAPI-Transport-Anbieter-Objekte
+# <a name="mapi-transport-provider-objects"></a>MAPI-Transportanbieter Objekte
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zusätzlich zu den standardmäßigen Provider und Logon-Objekten, die von allen Dienstanbietern implementiert werden Transportanbieter erforderlich, um einem Statusobjekt implementiert werden. Implementieren ein Statusobjekt ist für die anderen Anbieter Diensttypen optional. Muss allerdings MAPI für Transportanbieter. Transportanbieter, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver unterstützen, implementieren auch einen Ordner und eine Tabelle. 
+Zusätzlich zu den Standardanbieter-und anmeldeobjekten, die von allen Dienstanbietern implementiert werden, müssen Transportanbieter ein Status-Objekt implementieren. Für die anderen Dienstanbieter Typen ist die Implementierung eines Status-Objekts optional. MAPI ist jedoch für Transportanbieter erforderlich. Transport Anbieter, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver unterstützen, implementieren auch einen Ordner und eine Tabelle. 
   
-Die folgende Abbildung zeigt alle Objekte, die Transportanbieter mit ihren entsprechenden Schnittstellen implementieren können. Die Abbildung wird angegeben, ob MAPI oder ein Client das Objekt-Benutzer ist.
+In der folgenden Abbildung sind alle Objekte dargestellt, die Transportanbieter mit den entsprechenden Schnittstellen implementieren können. Die Abbildung gibt auch an, ob MAPI oder ein Client der Benutzer des Objekts ist.
   
-![Objekte, mit denen Transportanbieter implementiert] (media/amapi_66.gif "Objekte, mit denen Transportanbieter implementiert")
+Von ![Transportanbietern implementierte Objekte] Von (media/amapi_66.gif "Transportanbietern implementierte Objekte")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Dienstanbieterobjekten](mapi-service-provider-objects.md)
+- [MAPI-Dienstanbieter Objekte](mapi-service-provider-objects.md)
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70739711-ff43-407d-bc8b-6baf7a476fef
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: de31fe7d472b143ed8f3c108dca84a019b5ce103
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357295"
 ---
 # <a name="mapiinit0"></a>MAPIINIT_0
 
@@ -25,11 +25,11 @@ ms.locfileid: "25391150"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Optionen für die Funktion ["MAPIInitialize"](mapiinitialize.md) übermittelt. 
+Übermittelt Optionen zur [MAPIInitialize](mapiinitialize.md) -Funktion. 
   
 |||
 |:-----|:-----|
-|Headerdatei:  <br/> |MAPIX. H  <br/> |
+|Headerdatei  <br/> |MAPIX. H  <br/> |
    
 ```cpp
 typedef struct
@@ -44,29 +44,29 @@ typedef struct
 
  **ulVersion**
   
-> Ein Ganzzahlwert, der die Versionsnummer der **MAPIINIT_0** Struktur darstellt. Das **UlVersion** -Element ist für die zukünftige Erweiterung und die Version der MAPI-Schnittstelle stellt keine dar. Derzeit muss **UlVersion** auf MAPI_INIT_VERSION festgelegt sein. 
+> Ein ganzzahliger Wert, der die Versionsnummer der **MAPIINIT_0** -Struktur darstellt. Das **ulVersion** -Element ist für die zukünftige Erweiterung und stellt nicht die Version der MAPI-Schnittstelle dar. Derzeit muss **ulVersion** auf MAPI_INIT_VERSION festgelegt sein. 
     
  **ulFlags**
   
-> Die Bitmaske Flags verwendet, um die Initialisierung der MAPI-Sitzung zu steuern. Die folgenden Kennzeichen können festgelegt werden:
+> Die Bitmaske der Flags, die zum Steuern der Initialisierung der MAPI-Sitzung verwendet werden. Die folgenden Flags können festgelegt werden:
     
 MAPI_MULTITHREAD_NOTIFICATIONS 
   
-> MAPI sollte mit einem Thread dedizierte Benachrichtigung anstelle des ersten Threads verwendet, um das Aufrufen von **"MAPIInitialize"** Behandeln von Benachrichtigungen generieren.
+> MAPI sollte Benachrichtigungen mithilfe eines Threads generieren, der für die Benachrichtigungs Verarbeitung reserviert ist, anstelle des ersten Threads, der zum Aufrufen von **MAPIInitialize**verwendet wird.
     
 MAPI_NT_SERVICE 
   
-> Der Anrufer wird als Windows-Dienst ausgeführt. Anrufer, die wie ein Windows-Dienst nicht dieses Flag festlegen sollten nicht ausgeführt werden; Anrufer, die als Dienst ausgeführt werden, müssen dieses Flag festgelegt.
+> Der Anrufer wird als Windows-Dienst gestartet. Anrufer, die nicht als Windows-Dienst gestartet werden, sollten dieses Flag nicht festlegen; Aufrufer, die als Dienst gestartet werden, müssen dieses Flag festlegen.
     
 MAPI_NO_COINIT
   
-> Das Flag MAPI_NO_COINT so festgelegt, dass **"MAPIInitialize"** nicht versucht, mit einem Aufruf von [CoInitialize](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)COM initialisieren. Wenn eine **MAPIINIT_0** -Struktur mit _UlFlags_ auf MAPI_NO_COINIT festgelegt in **"MAPIInitialize"** übergeben wird, wird MAPI wird vorausgesetzt, dass COM bereits initialisiert wurde, und den Aufruf von **CoInitialize**umgangen wird.
+> Legen Sie das MAPI_NO_COINT-Flag fest, sodass **MAPIInitialize** nicht versucht, com mit einem Aufruf [](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)von "Initialize" zu initialisieren. Wenn eine **MAPIINIT_0** -Struktur an **MAPIInitialize** übergeben wird, wobei _ulFlags_ auf MAPI_NO_COINIT festgelegt ist, wird von MAPI davon ausgegangen, dass com bereits INITIALISIERT wurde und den Aufruf von "diinitialize" umgehen wird. ****
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Multithread-Clients sollte das MAPI_MULTITHREAD_NOTIFICATIONS Flag festgelegt. Wenn das Flag nicht festgelegt ist, werden Benachrichtigungen auf dem Thread verwendet, um den ersten Aufrufen **"MAPIInitialize"** generiert. 
+Multithread-Clients sollten das MAPI_MULTITHREAD_NOTIFICATIONS-Flag festlegen. Wenn das Flag nicht festgelegt ist, werden Benachrichtigungen für den Thread generiert, der zum ersten Aufruf von **MAPIInitialize**verwendet wird. 
   
-Weitere Informationen, wann dieses Flag festgelegt und wie Threadsicherheit in einer Clientdatenbank implementieren finden Sie unter [Threading in MAPI](threading-in-mapi.md). 
+Weitere Informationen zum Festlegen dieses Flags und zum Implementieren der Threadsicherheit in einem Client finden Sie unter Threading [in MAPI](threading-in-mapi.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm1026937
 localization_priority: Normal
 ms.assetid: 27042b62-7623-95d7-7e10-f589d74605c7
-description: Die y-Abstand der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch die Zellen X und Y definiert ist.
-ms.openlocfilehash: 8f8323d1f392654bf118ece2f78890f2a1b860ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Der y-Offset der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch die Zellen X und Y definiert ist.
+ms.openlocfilehash: d7a1f5c1feda3624c9f96039e7247c737a91a813
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357015"
 ---
-# <a name="y-justify-cell-action-tags-section"></a>Y Justify Cell (Action Tags Section)
+# <a name="y-justify-cell-action-tags-section"></a>Zelle "Y Justify" (Abschnitt "Action Tags")
 
-Die *y* -Abstand der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch die Zellen X und Y definiert ist. 
+Der *y* -Offset der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch die Zellen X und y definiert ist. 
   
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
@@ -31,20 +31,20 @@ Die *y* -Abstand der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch 
    
 ## <a name="remarks"></a>Bemerkungen
 
-Die Zellen X Justify und Y Justify bestimmen, wo die Schaltfläche Aktionstag in Bezug auf die Zellen X und Y definierten Punkt platziert wird.
+Die Zellen X Blocksatz und Y-Ausrichtung legen fest, wo die Schaltfläche Aktionstag in Bezug auf den in den Zellen X und Y definierten Punkt angeordnet wird.
   
-Wenn Sie einen Verweis auf die Zelle Y Justify aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Y Blocksatz aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | SmartTags.  *Name* . YJustify wobei SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
+| Zellenname:  <br/> | Smarttags.  *Name* . YJustify, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Y Justify aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Y Blocksatz aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**VisRowSmartTag** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagYJustify** <br/> |
    
 

@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 13e80bdc-cb59-47a5-8de0-404e22f87f82
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 923864c625cb032c3b351bb999ff7cc782eae588
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f5298620239d1e42e4ba613c22a98f0cf6f7d457
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351371"
 ---
 # <a name="sccountnotifications"></a>ScCountNotifications
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt die Größe in Bytes, der ein Array von ereignisbenachrichtigungen, und das Array zugeordneten Arbeitsspeicher überprüft.
+Bestimmt die Größe eines Arrays von Ereignisbenachrichtigungen in Byte und überprüft den dem Array zugeordneten Arbeitsspeicher.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScCountNotifications(
@@ -45,28 +45,28 @@ SCODE ScCountNotifications(
 
  _cntf_
   
-> [in] Anzahl der [Benachrichtigung](notification.md) Strukturen in das Array, das durch den Parameter _Rgntf_ angegeben. 
+> in Die Anzahl [](notification.md) der Benachrichtigungs Strukturen im durch den _rgntf_ -Parameter angegebenen Array. 
     
  _rgntf_
   
-> [in] Zeiger auf das Array von **Benachrichtigung** Strukturen, deren Größe ist bestimmt werden soll. 
+> in Zeiger auf das Array der **Benachrichtigungs** Strukturen, dessen Größe bestimmt werden soll. 
     
  _PCB_
   
-> [out] Optional Zeiger auf die Größe des Arrays auf das durch den Parameter _Rgntf_ in Bytes. Wenn NULL, überprüft **ScCountNotifications** das Array von Benachrichtigungen. 
+> Out Optionaler Zeiger auf die Größe des Arrays, auf das durch den _rgntf_ -Parameter verwiesen wird, in Bytes. Wenn der Wert NULL ist, überprüft **ScCountNotifications** das Array der Benachrichtigungen. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Count wurde erfolgreich bestimmt.
+> Count wurde erfolgreich ermittelt.
     
 MAPI_E_INVALID_PARAMETER
   
-> Eine ungültige Benachrichtigung aufgetreten.
+> Es wurde eine ungültige Benachrichtigung gefunden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn NULL in der _pcb_ -Parameter übergeben wird, überprüft die Funktion **ScCountNotifications** nur das Array von Benachrichtigungen, aber keine Zählung abgeschlossen ist. Wenn ein Wert ungleich Null in _pcb_übergeben wird, bestimmt die Größe des Arrays und speichert die Ursache **ScCountNotifications** _pcb_. Der Parameter _pcb_ muss groß genug für das gesamte Array sein. 
+Wenn NULL im _PCB_ -Parameter übergeben wird, überprüft die **ScCountNotifications** -Funktion nur das Array der Benachrichtigungen, aber es wird keine Zählung durchgeführt; Wenn ein Wert ungleich NULL in _PCB_übergeben wird, bestimmt **ScCountNotifications** die Größe des Arrays und speichert die Ursache _PCB_. Der _PCB_ -Parameter muss so hoch sein, dass er das gesamte Array enthält. 
   
 

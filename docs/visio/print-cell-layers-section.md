@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 9c76bf02-7269-65bb-2fd2-920243d962ef
 description: Gibt an, ob die dem Layer zugehörigen Shapes ausgedruckt werden können.
-ms.openlocfilehash: cd5b2830ba8bd20cb435cdc2bca4bd55fd5a5438
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f9a1dca6d45b53c02ff0ed29f921c352fc947630
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356182"
 ---
-# <a name="print-cell-layers-section"></a>Print Cell (Layers Section)
+# <a name="print-cell-layers-section"></a>Zelle "Print" (Abschnitt "Layers")
 
 Gibt an, ob die dem Layer zugehörigen Shapes ausgedruckt werden können.
   
@@ -29,18 +29,18 @@ Gibt an, ob die dem Layer zugehörigen Shapes ausgedruckt werden können.
 
 Sie können diesen Wert auch über die Option **Drucken** im Dialogfeld **Layereigenschaften** festlegen. (Klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**.)
   
-Wenn Sie einen Verweis auf die Zelle Print aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "Print" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Layers.Print [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+|Zellenname:  <br/> |Layers. print [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Print aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "Print" aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionLayer** <br/> |
-|Zeilenindex:  <br/> |**VisRowLayer** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowLayer** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visDocPreviewScope** <br/> |
    
 

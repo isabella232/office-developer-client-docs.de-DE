@@ -1,5 +1,5 @@
 ---
-title: MAPI-Formularoberflächen
+title: MAPI-Formular Schnittstellen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,39 +7,39 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 611213c9-e758-4366-b193-fc62181d3d1f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f37d398167e8210a2fd67ff08e63572eb6c9db9c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f207f9550c61ad69fd1fc560cdb2084b7bb56c6f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351541"
 ---
-# <a name="mapi-form-interfaces"></a>MAPI-Formularoberflächen
+# <a name="mapi-form-interfaces"></a>MAPI-Formular Schnittstellen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI definiert die folgenden Schnittstellen, die sich auf die Formulare beziehen.
+MAPI definiert die folgenden Schnittstellen im Zusammenhang mit Formularen.
   
-|**Name der Schnittstelle**|**Beschreibung**|
+|**Schnittstellenname**|**Beschreibung**|
 |:-----|:-----|
-|[IMAPIForm](imapiformiunknown.md) <br/> |Bearbeiten der Formular-Objekte und Form-Objektbefehle behandelt.  <br/> |
-|[IMAPIFormAdviseSink](imapiformadvisesinkiunknown.md) <br/> |Bestimmt, ob das Form-Objekt die nächste Nachricht verarbeiten kann und den nächsten oder vorherigen Zustand des Form-Objekts ändert.  <br/> |
-|[IMAPIFormContainer](imapiformcontaineriunknown.md) <br/> |Unterstützt die Installation, Deinstallation und Auflösung von Servern für ein bestimmtes Formular Container Formular.  <br/> |
-|[IMAPIFormFactory](imapiformfactoryiunknown.md) <br/> |Unterstützt die Verwendung von Servern konfigurierbar Laufzeit-Formular.  <br/> |
-|[IMAPIFormInfo](imapiforminfoimapiprop.md) <br/> |Ermöglicht Clientanwendungen zum Arbeiten mit Eigenschaften, die für eine Nachrichtenklasse spezifisch sind.  <br/> |
-|[IMAPIFormMgr](imapiformmgriunknown.md) <br/> |Ermöglicht Clientanwendungen zum Abrufen von Informationen zu Servern Formular, Formular Server aktiviert und Formular Servern im Nachrichtensystem installiert.  <br/> |
-|[IMAPIMessageSite](imapimessagesiteiunknown.md) <br/> |Zum Bearbeiten von Formularobjekten zugeordneten Nachrichten verwendet.  <br/> |
-|[IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) <br/> |Benachrichtigt die Clientanwendungen, die in das Form-Objekt ein Ereignis aufgetreten ist.  <br/> |
-|[IMAPIViewContext](imapiviewcontextiunknown.md) <br/> |Zum Reagieren auf Next, Previous und Delete-Befehle in das Form-Objekt verwendet wird.  <br/> |
-|[IPersistMessage](ipersistmessageiunknown.md) <br/> |Verwendet, um speichern, initialisieren, und Laden Formularobjekte von und zu speichern.  <br/> |
+|[IMAPIForm](imapiformiunknown.md) <br/> |Bearbeitet Formularobjekte und verarbeitet Formularobjekt Befehle.  <br/> |
+|[IMAPIFormAdviseSink](imapiformadvisesinkiunknown.md) <br/> |Bestimmt, ob das Form-Objekt die nächste Nachricht verarbeiten und den nächsten oder vorherigen Status des Form-Objekts ändert.  <br/> |
+|[IMAPIFormContainer](imapiformcontaineriunknown.md) <br/> |Unterstützt die Installation, Deinstallation und Lösung von Formular Servern für einen bestimmten Formular Container.  <br/> |
+|[IMAPIFormFactory](imapiformfactoryiunknown.md) <br/> |Unterstützt die Verwendung von konfigurierbaren Lauf Zeit Formular Servern.  <br/> |
+|[IMAPIFormInfo](imapiforminfoimapiprop.md) <br/> |Ermöglicht Clientanwendungen das Arbeiten mit Eigenschaften, die für eine Nachrichtenklasse spezifisch sind.  <br/> |
+|[IMAPIFormMgr](imapiformmgriunknown.md) <br/> |Ermöglicht es Clientanwendungen, Informationen zu Formular Servern abzurufen, Formularserver zu aktivieren und Formularserver im Messagingsystem zu installieren.  <br/> |
+|[IMAPIMessageSite](imapimessagesiteiunknown.md) <br/> |Wird zum Bearbeiten von Nachrichten verwendet, die Formularobjekten zugeordnet sind.  <br/> |
+|[IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) <br/> |Benachrichtigt Clientanwendungen, dass ein Ereignis im Form-Objekt aufgetreten ist.  <br/> |
+|[IMAPIViewContext](imapiviewcontextiunknown.md) <br/> |Wird verwendet, um auf die Befehle Next, Previous und DELETE im Form-Objekt zu reagieren.  <br/> |
+|[IPersistMessage](ipersistmessageiunknown.md) <br/> |Wird zum Speichern, initialisieren und Laden von Formularobjekten in und aus dem Nachrichtenspeicher verwendet.  <br/> |
    
-Weitere Informationen zu den Methoden der MAPI-Formulars Schnittstellen finden Sie unter Dokumentation für diese Schnittstellen. Sie müssen nicht alle MAPI-Formulars Schnittstellen implementieren, um ein benutzerdefiniertes Formular erstellen. Ein Formular selbst erfordert nur, dass Sie die **IPersistMessage**, **IMAPIForm**, implementieren und **IMAPIFormAdviseSink** Schnittstellen. Darüber hinaus ist es ratsam, **IMAPIFormFactory** und **IMAPIFormInfo**implementieren. **IMAPIFormFactory** eignet sich für die Einhaltung der OLE und **IMAPIFormInfo** ermöglicht gut geschriebenem Clientanwendungen von Formularen besser zu nutzen. 
+Weitere Informationen zu den Methoden der MAPI-Formular Schnittstellen finden Sie in der Dokumentation zu diesen Schnittstellen. Sie müssen nicht alle MAPI-Formular Schnittstellen implementieren, um ein benutzerdefiniertes Formular zu erstellen. Ein Formular selbst erfordert nur, dass Sie die **IPersistMessage**-, **IMAPIForm**-und **IMAPIFormAdviseSink** -Schnittstellen implementieren. Darüber hinaus empfiehlt es sich auch, **IMAPIFormFactory** und **IMAPIFormInfo**zu implementieren. **IMAPIFormFactory** ist für die OLE-Kompatibilität hilfreich, und **IMAPIFormInfo** ermöglicht es gut geschriebenen Clientanwendungen, ihre Formulare besser zu verwenden. 
   
 > [!NOTE]
-> Eigentlich ist **IMAPIFormAdviseSink** eine optionale Schnittstelle. Jedoch wird dringend empfohlen, dass Sie es in Ihren Servern Formular implementieren. Diese Schnittstelle ist entscheidend für effiziente Interaktion zwischen messaging-Clients und Servern Formular, insbesondere wenn mehrere Nachrichten Ihres Formulars Servers Klasse die Nachricht wird behandelt werden. 
+> **IMAPIFormAdviseSink** ist eine optionale Schnittstelle. Es wird jedoch dringend empfohlen, dass Sie es in ihren Formular Servern implementieren. Diese Schnittstelle ist für eine effiziente Interaktion zwischen Messagingclients und Formular Servern entscheidend, insbesondere dann, wenn mehrere Nachrichten der Nachrichtenklasse des Formular Servers behandelt werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

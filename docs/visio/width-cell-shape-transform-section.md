@@ -9,28 +9,28 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 992ae9d8-ea15-0f5c-ccd6-e4c536099692
 description: 'Enthält die Breite des ausgewählten Shapes in Zeichnungseinheiten. Die Standardformel zur Bestimmung der Breite eines 1D-Shapes lautet:'
-ms.openlocfilehash: 55e77c5ccfca2425a8a2985564448e0f656aebbf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c99f4669f3b27390a5b8e9062d6085a5a9db54e1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351219"
 ---
-# <a name="width-cell-shape-transform-section"></a>Width Cell (Shape Transform Section)
+# <a name="width-cell-shape-transform-section"></a>Zelle "Width" (Abschnitt "Shape Transform")
 
 Enthält die Breite des ausgewählten Shapes in Zeichnungseinheiten. Die Standardformel zur Bestimmung der Breite eines 1D-Shapes lautet:
   
 = SQRT((EndeX - AnfangX) ^ 2 + (EndeY - AnfangY) ^ 2)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Width aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Width aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Width  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Width aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "width" aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

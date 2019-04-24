@@ -8,59 +8,59 @@ api_type:
 - COM
 ms.assetid: f40c2e0b-1a35-4901-868f-af6c191c921e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3f3330c132abdf35d0e4f67775c03f7d2e9fcc76
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 07785ac82c41108b4333b3c370e3d2f5bfd1426a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342805"
 ---
 # <a name="handling-an-outgoing-message"></a>Behandeln von ausgehenden Nachrichten
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine ausgehende Nachricht ist eine Nachricht, die an einen oder mehrere Empfänger gesendet werden kann, über eine oder mehrere messaging-Systemen oder in einen Ordner in einem Nachrichtenspeicher veröffentlicht werden.
+Eine ausgehende Nachricht ist eine Nachricht, die an einen oder mehrere Empfänger über ein oder mehrere Messagingsysteme gesendet oder in einem Ordner in einem Nachrichtenspeicher bereitgestellt werden kann.
   
-## <a name="create-and-send-an-outgoing-message"></a>Erstellen Sie und senden Sie eine ausgehende Nachricht
+## <a name="create-and-send-an-outgoing-message"></a>Erstellen und Senden einer ausgehenden Nachricht
   
-1. Öffnen Sie die Standard-Informationsspeicher. Weitere Informationen finden Sie unter [Öffnen eines Nachrichtenspeichers](opening-a-message-store.md) und [Öffnen Sie die Standard-Informationsspeicher](opening-the-default-message-store.md).
+1. Öffnen Sie den Standardnachrichtenspeicher. Weitere Informationen finden Sie unter [Öffnen eines Nachrichtenspeichers](opening-a-message-store.md) und [Öffnen des Standardnachrichten Speichers](opening-the-default-message-store.md).
     
-2. Öffnen Sie den Ordner Postausgang. Weitere Informationen finden Sie unter [Öffnen einen Speicherordner Nachricht](opening-a-message-store-folder.md).
+2. Öffnen Sie den Ordner Postausgang. Weitere Informationen finden Sie unter [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md).
     
-3. Aufrufen der Ordner Postausgang **IMAPIFolder::CreateMessage** -Methode, um die neue Nachricht zu erstellen. Weitere Informationen finden Sie unter [IMAPIFolder::CreateMessage](imapifolder-createmessage.md),
+3. Rufen Sie die **IMAPIFolder:: CreateMessage** -Methode des Postausgangs Ordners auf, um die neue Nachricht zu erstellen. Weitere Informationen finden Sie unter [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md),
     
-4. Erstellen Sie eine Empfängerliste mit einen oder mehrere aufgelösten Empfänger. Weitere Informationen finden Sie unter [Erstellen einer Liste der Empfänger](creating-a-recipient-list.md).
+4. Erstellen Sie eine Empfängerliste mit einem oder mehreren gelösten Empfängern. Weitere Informationen finden Sie unter [Erstellen einer Empfängerliste](creating-a-recipient-list.md).
     
-5. Fügen Sie optional einen Betreff hinzu. Weitere Informationen finden Sie unter [Erstellen einer Betreff der Nachricht](creating-a-message-subject.md).
+5. Optional können Sie einen Betreff hinzufügen. Weitere Informationen finden Sie unter [Erstellen eines Nachrichtenbetreffs](creating-a-message-subject.md).
     
-6. Fügen Sie den Nachrichtentext hinzu. Weitere Informationen finden Sie unter [Erstellen des Nachrichtentexts](creating-message-text.md).
+6. Fügen Sie den Nachrichtentext hinzu. Weitere Informationen finden Sie unter [Creating Message Text](creating-message-text.md).
     
-7. Wenn der Nachrichtentext formatiert ist, fügen Sie Renderinginformationen hinzu. Weitere Informationen finden Sie unter [Hinzufügen von Rendern von Informationen in Text formatiert](adding-rendering-information-to-formatted-text.md).
+7. Wenn der Nachrichtentext formatiert ist, fügen Sie Renderinginformationen hinzu. Weitere Informationen finden Sie unter [Hinzufügen von Renderinformationen zu formatiertEm Text](adding-rendering-information-to-formatted-text.md).
     
-8. Fügen Sie optional eine oder mehrere Anlagen hinzu. Weitere Informationen finden Sie unter [Erstellen von E-Mail-Anlagen](creating-a-message-attachment.md).
+8. Optional können Sie eine oder mehrere Anlagen hinzufügen. Weitere Informationen finden Sie unter [Erstellen einer Nachrichtenanlage](creating-a-message-attachment.md).
     
-9. Legen Sie nach Bedarf weitere Nachrichteneigenschaften und speichern und Senden der Nachricht durch Aufrufen von **IMessage::SubmitMessage**. Weitere Informationen finden Sie unter [IMessage::SubmitMessage](imessage-submitmessage.md).
+9. Legen Sie andere Nachrichteneigenschaften wie gewünscht fest, und speichern und senden Sie dann die Nachricht, indem Sie **IMessage:: SubmitMessage**aufrufen. Weitere Informationen finden Sie unter [IMessage:: SubmitMessage](imessage-submitmessage.md).
     
-10. Die gesendete Nachricht löschen, wenn die **PR\_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md))-Eigenschaft auf TRUE oder verschieben in den Ordner identifiziert durch die **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))-Eigenschaft festgelegt ist. Weitere Informationen finden Sie in der [Verarbeitung einer Nachricht gesendet](processing-a-sent-message.md).
+10. Löschen Sie die gesendete Nachricht, wenn die **PR\_DELETE_AFTER_SUBMIT** ([PIDTAGDELETEAFTERSUBMIT (](pidtagdeleteaftersubmit-canonical-property.md))-Eigenschaft auf true festgelegt ist, oder verschieben Sie Sie in den Ordner, der durch die **PR_SENTMAIL_ENTRYID** ([pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md))-Eigenschaft identifiziert wird. Weitere Informationen finden Sie unter [Verarbeiten einer gesendetEn Nachricht](processing-a-sent-message.md).
     
-Wenn Sie möchten abwechselnd speichern Sie die Nachricht vor dem senden, rufen Sie die Nachricht [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode. Weitere Informationen finden Sie unter, [Speichern einer Nachricht](saving-a-message.md) oder [Senden einer Nachricht](sending-a-message.md). 
+Wenn Sie die Nachricht vor dem Senden erkennt speichern möchten, rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht auf. Weitere Informationen finden Sie unter [Speichern einer Nachricht](saving-a-message.md) oder [Senden einer Nachricht](sending-a-message.md). 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Erstellen einer Liste der Empfänger](creating-a-recipient-list.md): Beschreibt das Erstellen einer Empfängerliste.
+- [Erstellen einer Empfängerliste](creating-a-recipient-list.md): Beschreibt das Erstellen einer Empfängerliste.
     
-- [Erstellen Sie einen Betreff der Nachricht](creating-a-message-subject.md): Beschreibt, wie Sie einen optionalen Betreff für eine Nachricht zu erstellen.
+- [Erstellen eines Nachrichtenbetreffs](creating-a-message-subject.md): Beschreibt, wie ein optionaler Betreff für eine Nachricht erstellt wird.
     
-- [Erstellen des Nachrichtentexts](creating-message-text.md): Erstellen des Nachrichtentexts beschrieben.
+- [Erstellen von Nachrichtentext](creating-message-text.md): Beschreibt, wie Nachrichtentext erstellt wird.
     
-- [Rendern von Informationen zu formatierten Text hinzufügen](adding-rendering-information-to-formatted-text.md): Beschreibt, in dem in formatierten Text eine Anlage gerendert werden.
+- [Hinzufügen von Renderinformationen zu formatiertEm Text](adding-rendering-information-to-formatted-text.md): Beschreibt, wo in formatiertem Text eine Anlage gerendert werden soll.
     
-- [Erstellen von E-Mail-Anlagen](creating-a-message-attachment.md): Beschreibt, wie Anlagen erstellen.
+- [Erstellen einer Nachrichtenanlage](creating-a-message-attachment.md): Beschreibt, wie Anlagen erstellt werden.
     
 - [Speichern einer Nachricht](saving-a-message.md): Beschreibt, wie Clients Nachrichten speichern.
     
-- [Senden einer Nachricht](sending-a-message.md): Beschreibt, wie Sie eine Nachricht senden.
+- [Senden einer Nachricht](sending-a-message.md): Beschreibt, wie eine Nachricht gesendet wird.
     
-- [Verarbeiten einer Nachricht gesendet](processing-a-sent-message.md): Beschreibt, wie Sie gesendete Nachrichten verarbeitet werden können.
+- [Verarbeiten einer gesendetEn Nachricht](processing-a-sent-message.md): Beschreibt, wie gesendete Nachrichten verarbeitet werden können.
     
 

@@ -1,26 +1,26 @@
 ---
-title: VariationStyleIndex Cell (Theme Properties Section)
+title: VariationStyleIndex Cell (Theme Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 932195d5-2cb7-49f7-bc64-4ce00bf780b2
-description: Bestimmt den Stilindex für die aktive Design Variation auf der Seite als ganze Zahl.
-ms.openlocfilehash: fc29d95c6601303671e83e2c89f693447550c5f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den formatvorlagenindex der aktiven Design Variation auf der Seite als ganze Zahl.
+ms.openlocfilehash: 57d4b2493b7278064daf7b0cb986e58ebacf4be2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355888"
 ---
-# <a name="variationstyleindex-cell-theme-properties-section"></a>VariationStyleIndex Cell (Theme Properties Section)
+# <a name="variationstyleindex-cell-theme-properties-section"></a>VariationStyleIndex Cell (Theme Properties section)
 
-Bestimmt den Stilindex für die aktive Design Variation auf der Seite als ganze Zahl.
+Bestimmt den formatvorlagenindex der aktiven Design Variation auf der Seite als ganze Zahl.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **VariationStyleIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **VariationStyleIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

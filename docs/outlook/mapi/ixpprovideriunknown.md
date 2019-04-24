@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: d5507785-c924-4981-ae80-19709ceb054d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 49cb500279540317059cde2d9baba28fcbf06165
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0aa77ced9d0c242dcafb84ca1e1a60d02db9504a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357449"
 ---
 # <a name="ixpprovider--iunknown"></a>IXPProvider : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initialisiert einen Transport-Anbieter-Objekt und das Objekt heruntergefahren, wenn es nicht mehr benötigt wird.
+Initialisiert ein Transportanbieter Objekt und beendet das Objekt, wenn es nicht mehr benötigt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Transport-Anbieter-Objekte  <br/> |
-|Implementiert von:  <br/> |Transportanbieter  <br/> |
-|Aufgerufen von:  <br/> |Die MAPI-Warteschlange  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Transportanbieterobjekte  <br/> |
+|Implementiert von:  <br/> |Transport Anbieter  <br/> |
+|Aufgerufen von:  <br/> |Der MAPI-Spooler  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IXPProvider  <br/> |
 |Zeigertyp:  <br/> |LPXPROVIDER  <br/> |
    
@@ -40,7 +40,7 @@ Initialisiert einen Transport-Anbieter-Objekt und das Objekt heruntergefahren, w
 
 |||
 |:-----|:-----|
-|[Herunterfahren](ixpprovider-shutdown.md) <br/> |In einer bestimmten Reihenfolge eines Transportdienstes wird geschlossen.  <br/> |
-|[TransportLogon](ixpprovider-transportlogon.md) <br/> |Richtet eine Sitzung, in der eine Clientanwendung eines Transportdienstes anmeldet.  <br/> |
+|[Herunterfahren](ixpprovider-shutdown.md) <br/> |Schließt einen Transportanbieter ordnungsgemäß ab.  <br/> |
+|[TransportLogon](ixpprovider-transportlogon.md) <br/> |Richtet eine Sitzung ein, in der sich eine Clientanwendung bei einem Transportanbieter anmeldet.  <br/> |
    
 

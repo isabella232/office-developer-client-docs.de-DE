@@ -1,5 +1,5 @@
 ---
-title: Typen (Outlook Wetter Informationen-Schema)
+title: Typen (Outlook Wetter Information-Schema)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1120ad84-577f-6a72-cd3d-bb9bf3ffaa08
-description: In diesem Thema werden die Typen im Outlook Wetter Informationen XML-Schema.
-ms.openlocfilehash: 5d731dcc5bdf21736fb42b4295582c0a82c2276d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Thema werden die Typen im Outlook-XML-Schema für Wetterinformationen aufgelistet.
+ms.openlocfilehash: 8c8881caec8cde94c91bcdc258647959848974d5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355048"
 ---
-# <a name="types-outlook-weather-information-schema"></a>Typen (Outlook Wetter Informationen-Schema)
+# <a name="types-outlook-weather-information-schema"></a>Typen (Outlook Wetter Information-Schema)
 
-In diesem Thema werden die Typen im Outlook Wetter Informationen XML-Schema.
+In diesem Thema werden die Typen im Outlook-XML-Schema für Wetterinformationen aufgelistet.
   
 - [currentType complexType](currenttype-complextype-outlook-weather-information-schema.md)
     

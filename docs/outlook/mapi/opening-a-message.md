@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 142c4975-08df-4501-9996-557aa44eafb3
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e0701e64469576a8241002a6ff11299d1c343556
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bf633a971f7e3077ce2f418021ef183a36db8cc8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348608"
 ---
 # <a name="opening-a-message"></a>Öffnen einer Nachricht
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-### <a name="to-open-a-message"></a>Öffnen eine Nachricht
+### <a name="to-open-a-message"></a>So öffnen Sie eine Nachricht
   
-1. Abrufen von Eintrags-ID der Nachricht aus einer der folgenden Quellen:
+1. Rufen Sie die Eintrags-ID der Nachricht aus einer der folgenden Quellen ab:
     
-   - Die Zeile, die die Nachricht in der Inhaltstabelle des übergeordneten Ordners darstellt. Weitere Informationen zum Arbeiten mit einem Ordner Inhaltstabelle finden Sie unter [Inhalt Tabellen](contents-tables.md).
+   - Die Zeile, die die Nachricht in der Inhaltstabelle des übergeordneten Ordners darstellt. Weitere Informationen zum Arbeiten mit einer Ordnerinhaltstabelle finden Sie unter [Inhaltstabellen](contents-tables.md).
     
-   - Der **LpEntryID** Member der [NEWMAIL_NOTIFICATION](newmail_notification.md) -Struktur, die mit einer neuen e-Mail-Benachrichtigung gesendet wird. Weitere Informationen zu empfangen und Behandlung Benachrichtigungen finden Sie unter [Behandeln von Benachrichtigungen](handling-notifications.md).
+   - Das **lpEntryID** -Element der [NEWMAIL_NOTIFICATION](newmail_notification.md) -Struktur, die mit einer neuen e-Mail-Benachrichtigung gesendet wird. Weitere Informationen zum empfangen und Verarbeiten von Benachrichtigungen finden Sie unter [Handling Notifications](handling-notifications.md).
     
-   - Anruf an die Nachricht [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode, die Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) anfordert. 
+   - Ein Aufruf der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode der Nachricht, die die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft anfordert. 
     
-2. Rufen Sie eine der folgenden Methoden **OpenEntry** zum Öffnen der Nachricht, die Einstellung _LpEntryID_ an die Nachricht Eintrags-ID: 
+2. Rufen Sie eine der folgenden **OpenEntry** -Methoden auf, um die Nachricht zu öffnen, und legen Sie _lpEntryID_ auf die Eintrags-ID der Nachricht fest: 
     
    - [IMAPIContainer::OpenEntry](imapicontainer-openentry.md)
     
@@ -37,14 +37,14 @@ ms.locfileid: "22582980"
     
    - [IMAPISession::OpenEntry](imapisession-openentry.md)
     
-  Die schnellste Methode kann nur für eingehende Nachrichten verwendet werden und umfasst den Empfangsordner **IMAPIFolder::OpenEntry** -Methode aufrufen. Die nächste schnellste Methode aufrufen der Nachrichtenspeicher **IMsgStore::OpenEntry** -Methode kann für alle Nachrichten verwendet werden, wie die langsamste-Methode aufrufen **IMAPISession::OpenEntry**ist.
+  Die schnellste Methode ist nur für eingehende Nachrichten nutzbar und umfasst das Aufrufen der **IMAPIFolder:: OpenEntry** -Methode des Empfänger Ordners. Die nächste schnellste Methode, die **IMsgStore:: OpenEntry** -Methode des Nachrichtenspeichers aufzurufen, ist für alle Nachrichten verwendbar, ebenso wie die langsamste Methode, indem **IMAPISession:: OpenEntry**aufgerufen wird.
     
 > [!NOTE]
-> Ordner und deren Inhalt Tabellen können geschlossen werden können Sie jederzeit ohne Beeinträchtigung der keines der Nachrichten, die darin enthaltenen aus geöffnet wurden. 
+> Ordner und deren Inhaltstabellen können jederzeit geschlossen werden, ohne dass sich dies nachteilig auf die Nachrichten auswirkt, die in diesen geöffnet wurden. 
   
-### <a name="to-open-a-message-that-has-been-saved-on-disk"></a>Um eine Nachricht zu öffnen, die auf dem Datenträger gespeichert wurde
+### <a name="to-open-a-message-that-has-been-saved-on-disk"></a>So öffnen Sie eine Nachricht, die auf dem Datenträger gespeichert wurde
   
-1. Rufen Sie **StgOpenStorage** zum Abrufen eines **IStorage** Schnittstelle Zeigers, übergeben Sie den Namen der Nachrichtendatei für den Parameter _PwcsName_ . 
+1. Rufen Sie **StgOpenStorage** auf, um einen **IStorage** -Schnittstellenzeiger abzurufen, und übergeben Sie den Namen der Nachrichtendatei für den _pwcsName_ -Parameter. 
     
    ```cpp
     LPSTORAGE pStorage = NULL;
@@ -56,7 +56,7 @@ ms.locfileid: "22582980"
     
    ```
 
-2. Rufen Sie **OpenIMsgOnIStg** zum Abrufen eines **IMessage** -Schnittstelle Zeigers Zugriff auf die Nachricht. 
+2. Aufrufen von **OpenIMsgOnIStg** zum Abrufen eines **IMessage** -Schnittstellenzeigers für den Zugriff auf die Nachricht. 
     
    ```cpp
     LPMESSAGE pMessage = NULL;

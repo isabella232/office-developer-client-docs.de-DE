@@ -1,5 +1,5 @@
 ---
-title: Wetter-Element (Weatherdata-Element) (Outlook Wetter Informationen-Schema)
+title: Weather-Element (WeatherData-Element) (Outlook Wetter Information-Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,25 +7,25 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: de3c35ef-84a3-b991-7c98-3eca720c9ba0
-description: Gibt die Wetterbedingungen einen Speicherort an.
+description: Gibt die Wetterbedingungen für einen Standort an.
 ms.openlocfilehash: 19e6669d51aa38d10587c6334aef0409f31baf58
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355146"
 ---
-# <a name="weather-element-weatherdata-element-outlook-weather-information-schema"></a>Wetter-Element (Weatherdata-Element) (Outlook Wetter Informationen-Schema)
+# <a name="weather-element-weatherdata-element-outlook-weather-information-schema"></a>Weather-Element (WeatherData-Element) (Outlook Wetter Information-Schema)
 
-Gibt die Wetterbedingungen einen Speicherort an.
+Gibt die Wetterbedingungen für einen Standort an.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
-|**Elementtyp** <br/> |[weatherType](weathertype-complextype-outlook-weather-information-schema.md) <br/> |
+|**Elementtyp** <br/> |[weathertype](weathertype-complextype-outlook-weather-information-schema.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
-|**Schemadatei** <br/> |GetWeatherInfo.xsd  <br/> |
+|**Schemadatei** <br/> |GetWeatherInfo. xsd  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -37,31 +37,31 @@ Gibt die Wetterbedingungen einen Speicherort an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[WeatherData](weatherdata-element-outlook-weather-information-schema.md) <br/> ||Definiert das Wetter-Element.  <br/> |
+|[WeatherData](weatherdata-element-outlook-weather-information-schema.md) <br/> ||Definiert das wetterelement.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[aktuelle](current-element-weathertype-complextypeoutlook-weather-information-schema.md) <br/> |[currentType](currenttype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die aktuelle Wettervorhersage an.  <br/> |
-|[Planung](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md) <br/> |[forecastType](forecasttype-complextype-outlook-weather-information-schema.md) <br/> |Gibt an, die Wetterbedingungen zukünftigen mindestens drei Tage im Voraus einschließlich heute: heute, morgen, übermorgen.  <br/> |
+|[aktuellen](current-element-weathertype-complextypeoutlook-weather-information-schema.md) <br/> |[currentType](currenttype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die aktuellen Wetterbedingungen an.  <br/> |
+|[Prognose](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md) <br/> |[forecasttype](forecasttype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die zukünftigen Wetterbedingungen von mindestens drei Tagen im Voraus an: heute, morgen, übermorgen.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Zuweisung  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt die Quelle der Wetterinformationen.  <br/> |Ein Wert, der den Typ xs:  <br/> |
-|degreetype  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt die Maßeinheit für die Temperatur des Speicherorts beispielsweise Celsius.  <br/> |C, F  <br/> |
-|imagerelativeurl  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt die URL des Bilds für den Speicherort.  <br/> |Ein Wert, der den Typ xs:  <br/> |
-|Zeitzone  <br/> |xs:integer  <br/> |erforderlich  <br/> |Gibt den Offset GMT.  <br/> |Ein Wert zwischen-11 und 12 inklusive  <br/> |
-|url  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt die URL für die Webseite des Diensts Wetter, die für den angegebenen Speicherort Wetterinformationen enthält.  <br/> |Ein Wert, der den Typ xs:  <br/> |
-|weatherlocationcode  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt den Code, der mit dem Speicherort zum unterscheiden von mehreren Standorten mit dem gleichen Namen zugeordnet ist.  <br/> |Ein Wert, der den Typ xs:  <br/> |
-|weatherlocationname  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt den Namen des Speicherorts, der angezeigt wird im Dropdown-Steuerelement.  <br/> |Ein Wert, der den Typ xs:  <br/> |
+|Attribution  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt die Quelle der Wetterinformationen an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|degreetype  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt die Einheit für die Temperatur des Standorts an, beispielsweise Celsius.  <br/> |C, F  <br/> |
+|imagerelativeurl  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt die URL des Bilds für den Speicherort an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|TimeZone  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt den GMT-Offset an.  <br/> |Ein Wert zwischen-11 und 12 inklusive  <br/> |
+|url  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt die URL für die Webseite des Wetter Diensts an, die Wetterinformationen für den angegebenen Speicherort enthält.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|weatherlocationcode  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt den Code an, der dem Speicherort zugeordnet ist, an dem mehrere Standorte mit demselben Namen unterschieden werden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|weatherlocationname  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt den Namen des Speicherorts an, der im Dropdown-Steuerelement angezeigt wird.  <br/> |Ein Wert vom Typ xs: String  <br/> |
    
 

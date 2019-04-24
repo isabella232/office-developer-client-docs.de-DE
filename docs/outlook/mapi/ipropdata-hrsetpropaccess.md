@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 02365050-5e8b-437c-925f-4eb0df646356
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d0054e54d56fbe1cc6d6d783ffcd6330d8ab2e6b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9e443302e49bad4a586b657a6de298dafbeefab4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348678"
 ---
 # <a name="ipropdatahrsetpropaccess"></a>IPropData::HrSetPropAccess
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Legt die Zugriffsebene oder Status f�r eine oder mehrere der Eigenschaften des Objekts fest.
   
@@ -49,7 +49,7 @@ HRESULT HrSetPropAccess(
 |IPROP_READONLY, die angibt, dass die Eigenschaft nicht ge�ndert werden kann  <br/> |IPROP_CLEAN, die angibt, dass die Eigenschaft nicht ge�ndert wurde.  <br/> |
 |IPROP_READWRITE, die angibt, dass die Eigenschaft ge�ndert werden kann.  <br/> |IPROP_DIRTY, die angibt, dass die Eigenschaft ge�ndert wurde.  <br/> |
    
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -63,7 +63,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Der Parameter  _rgulAccess_ enth�lt eine ung�ltige Kombination von Flags, die wie IPROP_READONLY und IPROP_READWRITE. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IPropData::HrSetPropAccess** -Methode �ndert die Zugriffsebene und den Status f�r die Eigenschaften, die durch die Eigenschaftstags in der [SPropTagArray](sproptagarray.md) -Struktur, die auf die durch den Parameter  _lpPropTagArray_ identifiziert werden. F�r jede Eigenschaft ist vorhanden ein entsprechender Eintrag im  _rgulAccess_ -Array. Der Eintrag kann festgelegt werden, um ein Flag, das die Eigenschaft Zugriffsebene und ein weiteres angibt Flag, das den Status angibt. 
   

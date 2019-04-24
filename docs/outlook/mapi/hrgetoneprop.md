@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8d0a381a-e714-4663-9a57-b0e1cdbd6ba7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 99b63e7b0b31a603bf372b1d52e83af39784b628
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e5adc7d0c317d8b803645d78227777998d7d241f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347838"
 ---
 # <a name="hrgetoneprop"></a>HrGetOneProp
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft den Wert einer Eigenschaft von einer Eigenschaft Oberfläche, d. h., eine Schnittstelle abgeleitet [IMAPIProp](imapipropiunknown.md)ab. 
+Ruft den Wert einer einzelnen Eigenschaft von einer Eigenschaften Schnittstelle ab, also einer von [IMAPIProp](imapipropiunknown.md)abgeleiteten Schnittstelle. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HrGetOneProp(
@@ -45,35 +45,35 @@ HrGetOneProp(
 
  _PMP_
   
-> [in] Zeiger auf die [IMAPIProp](imapipropiunknown.md) -Schnittstelle, die von der Wert der Eigenschaft ist abgerufen werden sollen. 
+> in Zeiger auf die [IMAPIProp](imapipropiunknown.md) -Schnittstelle, von der der Eigenschaftswert abgerufen werden soll. 
     
  _ulPropTag_
   
-> [in] Eigenschaftentag der Eigenschaft abgerufen werden sollen. 
+> in Property-Tag der Eigenschaft, die abgerufen werden soll. 
     
  _ppprop_
   
-> [out] Zeiger auf einen Zeiger auf die zurückgegebene [SPropValue](spropvalue.md) -Struktur, die den Wert der abgerufenen-Eigenschaft definiert. 
+> Out Zeiger auf einen Zeiger auf die zurückgegebene [SPropValue](spropvalue.md) -Struktur, die den abgerufenen Eigenschaftswert definiert. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 MAPI_E_NOT_FOUND 
   
-> Die angeforderte-Eigenschaft ist von der angegebenen Schnittstelle nicht verfügbar.
+> Die angeforderte Eigenschaft ist nicht über die angegebene Schnittstelle verfügbar.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Im Gegensatz zu der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode gibt die **HrGetOneProp** -Funktion nie eine Warnung an. Da es nur eine Eigenschaft abruft, es einfach entweder Erfolg oder Fehler. Zum Abrufen von mehreren Eigenschaften, ist **GetProps** schneller. 
+Im Gegensatz zur [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode gibt die **HrGetOneProp** -Funktion nie eine Warnung zurück. Da nur eine Eigenschaft abgerufen wird, ist Sie entweder erfolgreich oder schlägt fehl. Zum Abrufen mehrerer Eigenschaften ist getProps schneller. **** 
   
-Sie können festlegen oder ändern eine einzelne Eigenschaft mit der [HrSetOneProp](hrsetoneprop.md) -Funktion. 
+Sie können eine einzelne Eigenschaft mit der [HrSetOneProp](hrsetoneprop.md) -Funktion festlegen oder ändern. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |GetMAPIObjectType  <br/> |MFCMAPI (engl.) wird die **HrGetOneProp** -Methode verwendet, um den Typ eines Objekts abzurufen.  <br/> |
+|MAPIFunctions. cpp  <br/> |GetMAPIObjectType  <br/> |MFCMAPI verwendet die **HrGetOneProp** -Methode, um den Typ eines Objekts abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

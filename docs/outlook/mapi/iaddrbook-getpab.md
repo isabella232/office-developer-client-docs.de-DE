@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9830e09c-700f-469b-a54d-4e4e0583aa84
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1f93ee653c9365488432c4e797b171a199c30107
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6c565c088fd4ef7d5df141bf770c560f79535998
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349301"
 ---
 # <a name="iaddrbookgetpab"></a>IAddrBook::GetPAB
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Eintrags-ID des Containers, die als das persönliche Adressbuch (PAB) festgelegt ist.
+Gibt den Eintragsbezeichner des Containers zurück, der als persönliches Adressbuch (PAB) festgelegt ist.
   
 ```cpp
 HRESULT GetPAB(
@@ -38,29 +38,29 @@ HRESULT GetPAB(
 
  _lpcbEntryID_
   
-> [out] Ein Zeiger auf die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LppEntryID_ verwiesen. 
+> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppEntryID_ -Parameter verwiesen wird. 
     
  _lppEntryID_
   
-> [out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID des PAB. Der Parameter _LppEntryID_ enthält 0 (null), wenn kein Container als PAB festgelegt wurde. 
+> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID des PAB. Der Parameter _lppEntryID_ enthält 0 (null), wenn kein Container als PAB festgelegt wurde. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Eintrags-ID des PAB wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clients rufen Sie die **GetPAB** -Methode, um die Eintrags-ID des Containers als PAB abzurufen. Wenn ein PAB nicht im Profil eingerichtet wurde, wählt MAPI als PAB den ersten Container in der Adressbuchhierarchie, die Änderungen ermöglicht. 
+Clients rufen die **GetPAB** -Methode auf, um den Eintragsbezeichner des Containers abzurufen, der als PAB festgelegt ist. Wenn kein PAB im Profil eingerichtet wurde, wählt MAPI als PAB den ersten Container in der Adressbuchhierarchie aus, der Änderungen ermöglicht. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnOpenPAB  <br/> |MFCMAPI (engl.) wird die **GetPAB** -Methode verwendet, um die ID für das persönliche Adressbuch des Benutzers abzurufen.  <br/> |
+|MainDlg. cpp  <br/> |CMainDlg:: OnOpenPAB  <br/> |MFCMAPI verwendet die **GetPAB** -Methode, um die ID des persönlichen Adressbuchs des Benutzers abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,7 +70,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
+[Kanonische Pidtagcontainerflags (-Eigenschaft](pidtagcontainerflags-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

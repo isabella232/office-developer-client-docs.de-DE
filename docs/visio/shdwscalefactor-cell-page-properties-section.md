@@ -9,34 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 10979706-6dfe-5241-e862-3f94716d14fa
 description: Gibt den Prozentsatz an, um den der Schatten eines Shapes vergrößert oder verkleinert wird.
-ms.openlocfilehash: 99bc48f5332830512e1f5c2f6d93c70b67197c03
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9175e9a1148779524fdce96ff18eac22fe8dd421
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342882"
 ---
-# <a name="shdwscalefactor-cell-page-properties-section"></a>ShdwScaleFactor Cell (Page Properties Section)
+# <a name="shdwscalefactor-cell-page-properties-section"></a>Zelle "ShdwScaleFactor" (Abschnitt "Page Properties")
 
 Gibt den Prozentsatz an, um den der Schatten eines Shapes vergrößert oder verkleinert wird. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Jeder Schatten weist eine schattierte Speicherorts eines Punkts auf der Schatten, die die Shape-PIN bis entspricht. Wenn ein Shape-Pin in der Mitte des Shapes befindet, würde der schattierte Speicherort beispielsweise den Punkt in der Mitte des Schattens sein. Skalierung auf einfache Schatten angewendet wird, wird an der Position schattierte Vergrößerung zentriert; Beim Skalieren einfache Schatten anwenden, wird die Vergrößerung in der Schräge angibt angewendet. 
+Jeder Schatten hat eine schattierte Pin-Position, die ein Punkt auf dem Schatten ist, der der PIN des Shapes entspricht. Wenn sich beispielsweise die PIN eines Shapes in der Mitte des Shapes befindet, ist die schattierte Position des Pins der Punkt in der Mitte des Schattens. Wenn Sie die Skalierung auf einfache Schatten anwenden, wird die Vergrößerung an der schattierten Pin-Position zentriert. Wenn Sie die Skalierung auf schräge Schatten anwenden, wird die Vergrößerung in schräger Richtung angewendet. 
   
- Dieser Prozentsatz wird verwendet, wenn der Schattentyp eines Shapes auf Seitenstandard festgelegt ist (Zelle ShapeShdwType ist gleich ** VisFSTPageDefault **). 
+ Dieser Prozentsatz wird verwendet, wenn der Schattentyp für ein Shape auf Seiten Standard festgelegt ist (Zelle Cell Equals * * visFSTPageDefault * *). 
   
 Wenn Sie dieses Verhalten für einen einzelnen Schatten festlegen möchten, verwenden Sie im Abschnitt Fill Format die Zelle ShapeShdwScaleFactor.
   
 Dieser Wert entspricht dem Wert, den Sie im Dialogfeld **Seite einrichten** auf der Registerkarte **Schatten** im Feld **Vergrößerung** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**). 
   
-Wenn Sie einen Verweis auf die Zelle ShdwScaleFactor aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "ShdwScaleFactor aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ShdwScaleFactor  <br/> |
+| Zellenname:  <br/> | "ShdwScaleFactor  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShdwScaleFactor aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "ShdwScaleFactor aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

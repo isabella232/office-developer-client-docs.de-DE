@@ -1,5 +1,5 @@
 ---
-title: PidTagXCoordinate (kanonische Eigenschaft)
+title: Kanonische Pidtagxcoordinate (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - COM
 ms.assetid: 030d5c21-ab02-4047-bf2d-9a402a1e9102
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e600d309a5b545ddd46f93f68d7bcb23b763ca24
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 87df676dccdb067302d62da2bd1fda6b634ed4f8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350659"
 ---
-# <a name="pidtagxcoordinate-canonical-property"></a>PidTagXCoordinate (kanonische Eigenschaft)
+# <a name="pidtagxcoordinate-canonical-property"></a>Kanonische Pidtagxcoordinate (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die X-Koordinate der Startposition (die linke obere Ecke) von einem Dialogfeld-Steuerelement, in Standardeinheiten für Windows-Dialogfeld enthält.
+Enthält die x-Koordinate der Anfangsposition (der oberen linken Ecke) eines Dialogfeld-Steuerelements in Windows-Standarddialog Einheiten.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_XPOS  <br/> |
 |Kennung:  <br/> |0x3F05  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
+|Bereich:  <br/> |MAPI-Anzeigetabelle  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft, **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAX** ([PidTagDeltaX](pidtagdeltax-canonical-property.md)) und **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) Eigenschaften position und Größe das Dialogfeld-Steuerelement.
+Diese Eigenschaft, **PR_YPOS** ([Pidtagycoordinate (](pidtagycoordinate-canonical-property.md)), **PR_DELTAX** ([pidtagdeltax (](pidtagdeltax-canonical-property.md)) und **PR_DELTAY** ([pidtagdeltay (](pidtagdeltay-canonical-property.md))-Eigenschaften positionieren und Größe des Dialogfeld-Steuerelements.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

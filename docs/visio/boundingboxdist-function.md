@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8a2490f2-48c4-5df3-a3b3-40e8e0c80479
 description: Gibt die Messung für den angegebenen Teil des das Shape umgebenden Felds zurück.
-ms.openlocfilehash: 94cad37c4a0d2c6c7e7c69d997af09a9d7f1d651
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a62d5b82c310e7b99e16b70982b75a68172b7fd8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348965"
 ---
 # <a name="boundingboxdist-function"></a>BOUNDINGBOXDIST Function
 
@@ -25,26 +25,26 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-BOUNDINGBOXDIST (** *Index* **) 
+BOUNDINGBOXDIST (* * *Index* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Index_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Der Teil des das Shape umgebenden Felds um messen und zurückzukehren. Mögliche Werte finden Sie in den Hinweisen.  <br/> |
+| _Index_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Teil des umgebenden Felds des Shapes, der gemessen und zurückgegeben werden soll. Mögliche Werte finden Sie in den Hinweisen.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
- **Nummer**
+ **Number**
   
 ## <a name="remarks"></a>Bemerkungen
 
- *Index* kann eine der folgenden Werte sein: 
+ *Index* kann einer der folgenden Werte sein. 
   
 |**Element**|**Wert**|
 |:-----|:-----|
-|Breite  <br/> |0  <br/> |
-|Höhe  <br/> |1  <br/> |
+|Width  <br/> |0  <br/> |
+|Height  <br/> |1  <br/> |
 |Shape-Pin bis linke Kante  <br/> |2  <br/> |
 |Shape-Pin bis rechte Kante  <br/> |3  <br/> |
 |Shape-Pin bis obere Kante  <br/> |4  <br/> |

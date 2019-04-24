@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: a335dfca-44da-452e-b16f-25d314b1758f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5908069f5fa887fd9d2e3f8c0df75f2e3d69515c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ca42e91528cdb7e61ae3620989c4a89966db1061
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349280"
 ---
 # <a name="imessagegetrecipienttable"></a>IMessage::GetRecipientTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Empfänger der Nachricht-Tabelle zurück.
+Gibt die Empfängertabelle der Nachricht zurück.
   
 ```cpp
 HRESULT GetRecipientTable(
@@ -38,47 +38,47 @@ HRESULT GetRecipientTable(
 
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die die Rückgabe von der Tabelle steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Bitmaske von Flags, die die Rückgabe der Tabelle steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **GetRecipientTable** erfolgreich, möglicherweise beendet, bevor die Tabelle vollständig an den aufrufenden Client verfügbar ist. Wenn die Tabelle nicht verfügbar ist, kann nachfolgende anrufen darauf verursacht einen Fehler. 
+> Ermöglicht **** getrecipientable, um erfolgreich zurückzugeben, möglicherweise bevor die Tabelle vollständig für den aufrufenden Client verfügbar ist. Wenn die Tabelle nicht verfügbar ist, kann der nachfolgende Aufruf einen Fehler verursachen. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Zeichenfolgenspalten sollte im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sollte die Zeichenfolgenspalten im ANSI-Format sein.
+> Zeichenfolgenspalten sollten im Unicode-Format vorliegen. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sollten die Zeichenfolgenspalten im ANSI-Format sein.
     
  _lppTable_
   
-> [out] Zeiger auf einen Zeiger auf die Empfänger Tabelle.
+> Out Zeiger auf einen Zeiger auf die Empfängertabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Empfänger Tabelle wurde erfolgreich zurückgegeben.
+> Die Empfängertabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMessage::GetRecipientTable** -Methode gibt einen Zeiger auf Empfänger die Nachricht-Tabelle, die Informationen zu allen der Empfänger der Nachricht enthält. Es wird eine Zeile für jeden Empfänger. 
+Die **IMessage::** getrecipientable-Methode gibt einen Zeiger auf die Empfängertabelle der Nachricht zurück, die Informationen zu allen Empfängern der Nachricht enthält. Es gibt eine Zeile für jeden Empfänger. 
   
-Empfänger Tabellen ist eine andere Spalte festlegen, je nachdem, ob die Nachricht gesendet wurde. Eine vollständige Liste der Spalten in einer Tabelle Empfänger finden Sie unter [Empfänger Tabellen](recipient-tables.md).
+Empfänger Tabellen haben unterschiedliche Spaltensätze, je nachdem, ob die Nachricht übermittelt wurde. Eine vollständige Liste der Spalten in einer Empfängertabelle finden Sie unter [Recipient Tables](recipient-tables.md).
   
-Einige Empfänger Tabellen unterstützt eine Vielzahl von Einschränkungen. andere nicht. Unterstützung für Einschränkungen hängt von der Nachricht Informationsdienst Implementierung ab. 
+Einige Empfänger Tabellen unterstützen eine Vielzahl von Einschränkungen; andere nicht. Die Unterstützung von Einschränkungen hängt von der Implementierung des Nachrichtenspeicher Anbieters ab. 
   
-Festlegen der Option MAPI_UNICODE im Parameter _UlFlags_ wirkt sich auf die folgenden Aufrufe an die Empfänger Tabelle aus: 
+Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf die folgenden Aufrufe der Recipient-Tabelle aus: 
   
-- [IMAPITable::QueryColumns](imapitable-querycolumns.md) zum Abrufen der Spalte festlegen. 
+- [IMAPITable:: QueryColumns](imapitable-querycolumns.md) zum Abrufen des Spaltensatzes. 
     
-- [IMAPITable::QueryRows](imapitable-queryrows.md) abzurufenden Zeilen. 
+- [IMAPITable:: QueryRows](imapitable-queryrows.md) zum Abrufen von Zeilen. 
     
-- [IMAPITable::QuerySortOrder](imapitable-querysortorder.md) , um die Sortierreihenfolge abzurufen. 
+- [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) , um die Sortierreihenfolge abzurufen. 
     
-Durch Festlegen der Unicode-Flag-Anforderungen, die die Informationen für alle diese aufrufen zurückgegebenen Zeichenfolgenspalten im Unicode-Format sein. Da nicht alle Nachricht Anbieter Unicode unterstützen, ist jedoch festlegen dieses Flag nur eine Anforderung.
+Durch Festlegen des Unicode-Kennzeichens wird angefordert, dass die Informationen für Zeichenfolgenspalten, die von diesen Aufrufen zurückgegeben werden, im Unicode-Format vorliegen. Da jedoch nicht alle Nachrichtenspeicher Anbieter Unicode unterstützen, ist das Festlegen dieses Kennzeichens nur eine Anforderung.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können eine Empfänger Tabelle ändern, während es geöffnet ist, indem Sie die [IMessage::ModifyRecipients](imessage-modifyrecipients.md) -Methode aufrufen. **ModifyRecipients** Fügt Empfänger, löscht Empfänger oder Empfängereigenschaften ändert. 
+Sie können eine Empfängertabelle ändern, während Sie geöffnet ist, indem Sie die [IMessage:: ModifyRecipients](imessage-modifyrecipients.md) -Methode aufrufen. **ModifyRecipients** fügt Empfänger hinzu, löscht Empfänger oder ändert Empfänger Eigenschaften. 
   
 ## <a name="see-also"></a>Siehe auch
 

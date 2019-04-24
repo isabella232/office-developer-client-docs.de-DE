@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 85762771-b823-4227-9a7b-75b6ac280b2d
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 975f52e6ea0ca7a469a027565f845f9dc0f9c2cf
-ms.sourcegitcommit: 43cff5789e0a0a8cda11277c1a636c8b32d28cdb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30413973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342567"
 ---
 # <a name="pidtagmessageattachments-canonical-property"></a>Kanonische Pidtagmessageattachments (-Eigenschaft
 

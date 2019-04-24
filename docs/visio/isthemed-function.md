@@ -6,46 +6,46 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 91cde601-dca9-4737-afe1-bdf76638dfe3
-description: Gibt einen Boolean-Wert zurück, der angibt, ob ein Shape ein Design angewendet wurde.
-ms.openlocfilehash: 4311780d8686b5792e999c204ec182d23efb723c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen booleschen Wert zurück, der angibt, ob auf eine Form ein Design angewendet wurde.
+ms.openlocfilehash: 49f53eaaacbdc86a633703d6ef847e38097f5122
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357512"
 ---
 # <a name="isthemed-function"></a>ISTHEMED Function
 
-Gibt einen Boolean-Wert zurück, der angibt, ob ein Shape ein Design angewendet wurde. 
+Gibt einen booleschen Wert zurück, der angibt, ob auf eine Form ein Design angewendet wurde. 
   
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Visio 2013
  
   
 ## <a name="syntax"></a>Syntax
 
- **ISTHEMED** ()
+ **** Isthemed ()
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Boolean
+Boolesch
   
 ## <a name="remarks"></a>Bemerkungen
 
 > [!NOTE]
-> Die Funktion **ISTHEMED** in Visio 2013 ersetzt die **CELLISTHEMED** -Funktion aus früheren Versionen von Visio. 
+> Die **** isdesigned-Funktion in Visio 2013 ersetzt die **CELLISTHEMED** -Funktion aus früheren Versionen von Visio. 
   
-Der **ISTHEMED** -Funktion, den Sie entsprechende Teile der Formatierung eines Designs auf eine Form zuweisen können jedoch die Möglichkeit, andere Teile des Designs mit Formatierung manuell angewendete Formatierung überschreiben beibehalten. Wenn Sie das Design anschließend erneut anwenden, manuelle Formatierung überschrieben, und die Form übernimmt alle Formatierungen des Designs. 
+Mit **** der isthemed-Funktion können Sie die entsprechenden Teile der Formatierung eines Designs einem Shape zuweisen, aber die Möglichkeit, andere Bereiche der Designformatierung mit manuell angewendeten Formatierungen außer Kraft zu setzen. Wenn Sie das Design anschließend erneut anwenden, werden alle manuellen Formatierungen außer Kraft gesetzt, und die Form übernimmt alle Formatierungen des Designs. 
   
- **ISTHEMED** ergibt True, wenn die Zelle [ColorSchemeIndex](colorschemeindex-cell-theme-properties-section.md) in der Form größer als 0 ist. Wenn diese Zelle gleich 0 ist, berechnet **ISTHEMED** auf false festgelegt. Das Design der DocumentSheet und PageSheet hat keine Auswirkung auf den Wert der **ISTHEMED** -Funktion, die in einem ShapeSheet verwendet. Nur, wenn die Funktion **ISTHEMED** in wird wird die PageSheet der Seite Design Frage. 
+ **** Isdesigned ergibt true, wenn die [ColorSchemeIndex](colorschemeindex-cell-theme-properties-section.md) -Zelle in der Form größer als 0 ist. Wenn diese Zelle gleich 0 ist, wird isdesigned als FALSE ausgewertet. **** Das Design von DocumentSheet und PageSheet hat keinen Einfluss auf den Wert der **** isthemed-Funktion, die in einem ShapeSheet verwendet wird. Nur wenn die **** isthemed-Funktion in der PageSheet angezeigt wird, ist das Design der Seite wichtig. 
   
 ## <a name="example"></a>Beispiel
 
 ||||
 |:-----|:-----|:-----|
-|Zelle  <br/> |Formel  <br/> |Ergebnis  <br/> |
-|Char.Font  <br/> |IF(ISTHEMED(), THEMEVAL(), FONT("Calibri"))  <br/> |Wenn die Form ein entsprechendes mit Design versehenes angewendet hat, akzeptiert der Shape-Text die Formatierung aus dem Design Schriftart an. Wenn das Shape kein entsprechendes mit Design versehenes ist, wird der Shape-Text mit der Schriftart "Calibri" formatiert.  <br/> |
-|LineColor  <br/> |IF (ISTHEMED, RGB (255, 0, 0), RGB (0, 255, 0))  <br/> |Wenn die Form ein entsprechendes mit Design versehenes angewendet hat, ist das Shape die Farbe Rot. Wenn das Shape kein entsprechendes mit Design versehenes ist, ist das Shape die Farbe Grün.  <br/> |
+|Cell  <br/> |Formel  <br/> |Ergebnis  <br/> |
+|Char. Font  <br/> |IF (isdesigned (), THEMEVAL (), FONT ("Calibri")))  <br/> |Wenn auf die Form ein Design angewendet wird, akzeptiert der Shape-Text die Schriftartenformatierung des Designs. Wenn es sich nicht um ein Design handelt, wird der Shape-Text mit der Schriftart "Calibri" formatiert.  <br/> |
+|Zelle LineColor  <br/> |IF (ISDESIGNED, RGB (255, 0, 0), RGB (0, 255, 0))  <br/> |Wenn auf die Form ein Design angewendet wird, ist die Linienfarbe des Shapes rot. Wenn es sich nicht um ein Design handelt, ist die Linienfarbe der Form grün.  <br/> |
    
 

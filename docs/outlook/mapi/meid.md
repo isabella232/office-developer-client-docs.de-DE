@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: aa8f18d9-691d-d0cc-a660-f15ea6cff6ce
-description: 'Zuletzt geändert: 03 Juli 2012'
-ms.openlocfilehash: 24cc4b00f02c61395565fb7ddeb6a5b5a62afdc5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 03 Juli, 2012'
+ms.openlocfilehash: a9aea0db700de9c82aa2a41a443ebf03da8ce9b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356973"
 ---
 # <a name="meid"></a>MEID
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bezeichner für ein Outlook-Element. Sie enthält eine Eintrags-ID und weitere relevante Informationen.
+Bezeichner für ein Outlook-Element. Sie enthält eine Eintrags-ID und andere relevante Informationen.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,15 +40,15 @@ struct MEID
 
  _abFlags_
   
-> 4-Byte-Eintrags-ID für das Outlook-Element. Weitere Informationen zu MAPI-Eintragsbezeichner finden Sie unter **[ENTRYID](entryid.md)**. 
+> 4-Byte-Eintrags-ID für das Outlook-Element. Weitere Informationen zu MAPI-Eintrags Bezeichnern **[](entryid.md)** finden Sie Untereintrags-ID. 
     
  _muid_
   
-> GUID, den Speicheranbieter identifiziert. Finden Sie unter mapidefs.h für die Definition des **MAPIUID**Typs. 
+> GUID, die den Informationsspeicher Anbieter identifiziert. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **MAPIUID**. 
     
  _Platzhalter_
   
-> Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
+> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
  _ltidFld_
   

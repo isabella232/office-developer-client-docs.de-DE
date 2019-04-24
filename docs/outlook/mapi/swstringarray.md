@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1ae24ad-1bbb-4dee-b414-b5226593b6fa
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e3f53a894b7f7cdaa68e66530c7bd99bf49b9ed0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ff69981e83d42e439936a3e4be47eabfd811b310
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349553"
 ---
 # <a name="swstringarray"></a>SWStringArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeichenfolgen, die verwendet werden, um eine Eigenschaft vom Typ PT_MV_UNICODE zu beschreiben. 
+Enthält ein Array von Zeichenfolgen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_UNICODE verwendet werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SWStringArray
@@ -44,15 +44,15 @@ typedef struct _SWStringArray
 
  **cValues**
   
-> Anzahl der Zeichenfolgen im Array auf den Member **LppszW** zeigt. 
+> Anzahl der Zeichenfolgen im Array, auf die durch das **lppszW** -Element verwiesen wird. 
     
  **lppszW**
   
-> Zeiger auf ein Array von Zeichenfolgen mit Unicode-Zeichen Null beendet.
+> Zeiger auf ein Array von Zeichenfolgen mit NULL-Zeichenfolge.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zu PT_MV_UNICODE finden Sie unter [Eigenschaftentypen](property-types.md).
+Weitere Informationen zu PT_MV_UNICODE finden Sie unter [Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

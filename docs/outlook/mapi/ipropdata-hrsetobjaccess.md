@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 01bd3235-22cc-4ff3-b2b6-341ce622128b
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d7886d08c21e8fff9aceb3437ecb6bbbd970ed7b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4e478c9e8978125a37691ee5bd97fa9f1cbce077
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348692"
 ---
 # <a name="ipropdatahrsetobjaccess"></a>IPropData::HrSetObjAccess
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Legt die Zugriffsebene f�r das Objekt fest.
   
@@ -47,13 +47,13 @@ IPROP_READWRITE
   
 > Legt die Zugriffsebene f�r das Objekt den Lese-/Schreibzugriff.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Zugriffsebene f�r das Objekt wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IPropData::HrSetObjAccess** -Methode wird die Zugriffsebene f�r das gesamte Objekt, statt die Daten f�r die einzelnen Eigenschaften. So �ndern Sie die Zugriffsebene festgelegt, wenn das Objekt erstellt wurde, kann **HrSetObjAccess** verwendet werden. 
   

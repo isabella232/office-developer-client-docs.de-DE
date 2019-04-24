@@ -1,5 +1,5 @@
 ---
-title: PidTagBodyCrc (kanonische Eigenschaft)
+title: Kanonische Pidtagbodycrc (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6efe9dc3-e988-4042-ab02-2863b5e0f294
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 55da942e59c619dd384bef58349aa3a00d4a6d8c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 416486c3b06c485a1fa6525b54c37a6e0d23f56c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350925"
 ---
-# <a name="pidtagbodycrc-canonical-property"></a>PidTagBodyCrc (kanonische Eigenschaft)
+# <a name="pidtagbodycrc-canonical-property"></a>Kanonische Pidtagbodycrc (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen CRC CRC-Prüfung Wert auf den Nachrichtentext an.
+Enthält einen CRC-Wert (zyklische Redundanzprüfung) für den Nachrichtentext.
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält einen CRC CRC-Prüfung Wert auf den Nachrichtentext an.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Nachrichtenspeicher können jeder CRC-Algorithmus, der einen PT_LONG Wert generiert. Es muss diese Eigenschaft als Teil der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode berechnen, wenn die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft festgelegt wurde, zum ersten Mal und wenn es später geändert wurde.
+Der Nachrichtenspeicher kann einen beliebigen CRC-Algorithmus verwenden, der einen PT_LONG-Wert generiert. Diese Eigenschaft muss als Teil der [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode berechnet werden, wenn die **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft zum ersten Mal festgelegt wurde und wenn Sie anschließend geändert wurde.
   
-Eine Clientanwendung verwendet **PR_BODY_CRC** zur Unterstützung bei der vergleichen Nachricht Textzeichenfolgen in **PR_BODY** Eigenschaften oder deren Varianten enthalten. Mithilfe dieser Eigenschaft, kann der Client schnell und einfach erkennen, wann der Nachrichtentext geändert hat. Es kann erhebliche Leistungssteigerungen Realisierung von über **PR_BODY_CRC** anstatt **PR_BODY** aus dem Nachrichtenspeicher abrufen und diese mit einer lokalen Version zu vergleichen. 
+Eine Clientanwendung verwendet **PR_BODY_CRC** , um die in **PR_BODY** -Eigenschaften oder deren Varianten enthaltenen Nachrichtentext Zeichenfolgen zu vergleichen. Mit dieser Eigenschaft kann der Client schnell und einfach erkennen, wann der Nachrichtentext geändert wurde. Mithilfe von **PR_BODY_CRC** können Sie beträchtliche Leistungssteigerungen erzielen, statt **PR_BODY** aus dem Nachrichtenspeicher abzurufen und mit einer lokalen Version zu vergleichen. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

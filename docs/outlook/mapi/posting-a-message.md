@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen einer Nachricht
+title: Veröffentlichen einer Nachricht
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,51 +8,51 @@ api_type:
 - COM
 ms.assetid: cc3e1546-e58b-413f-82d7-4efeb86b0000
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 61e1039a89f47fe29f9b5a1ba9203cfc88d9797e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2c174d48a19e23de725e1d5a1533130175f2ab00
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350750"
 ---
-# <a name="posting-a-message"></a>Bereitstellen einer Nachricht
+# <a name="posting-a-message"></a>Veröffentlichen einer Nachricht
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bereitstellen einer Nachricht ähnelt dem Senden einer Nachricht. Der Hauptunterschied ist das Ziel. Statt weitergeleitet werden ein oder mehrere Empfänger über eine oder mehrere von Messagingsystemen, bleibt eine bereitgestellte Nachricht in einem Ordner im aktuellen Nachrichtenspeicher.
+Das Veröffentlichen einer Nachricht ähnelt dem Senden einer Nachricht. Der Hauptunterschied ist das Ziel. Anstatt an einen oder mehrere Empfänger über ein oder mehrere Messagingsysteme umgeleitet zu werden, verbleibt eine bereitgestellte Nachricht in einem Ordner im aktuellen Nachrichtenspeicher.
   
-### <a name="to-post-a-message"></a>Zum Übermitteln einer Nachricht
+### <a name="to-post-a-message"></a>So veröffentlichen Sie eine Nachricht
   
-1. Öffnen Sie den Zielordner durch Aufrufen von [IMsgStore::OpenEntry](imsgstore-openentry.md). Wenn der Zielordner des Posteingangs ist, suchen Sie die Eintrags-ID durch Aufrufen von [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md)an **OpenEntry** übergeben. 
+1. Öffnen Sie den Zielordner, indem Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md)aufrufen. Wenn der Zielordner der Posteingang ist, suchen Sie nach der Eintrags **** -ID, die an OpenEntry durch Aufrufen von [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md). 
     
-2. Rufen Sie [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) , um die Nachricht zu erstellen. 
+2. Rufen Sie [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) auf, um die Nachricht zu erstellen. 
     
-3. Rufen Sie die Nachricht [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode festgelegt: 
+3. Rufen Sie die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode der Nachricht auf, um Folgendes festzulegen: 
     
-   - Das Flag MSGFLAG_READ in der Eigenschaft **PidTagMessageFlags** ( [PR_MESSAGE_FLAGS](pidtagmessageflags-canonical-property.md)).
+   - Das MSGFLAG_READ-flag in der **PidTagMessageFlags** ( [PR_MESSAGE_FLAGS](pidtagmessageflags-canonical-property.md))-Eigenschaft.
     
    - Die **PR_SENDER** -Eigenschaften. 
     
    - Die **PR_SENT_REPRESENTING** -Eigenschaften. 
     
-   - Die Eigenschaft **PR_RECEIPT_TIME** ([PidTagReceiptTime](pidtagreceipttime-canonical-property.md)).
+   - Die **PR_RECEIPT_TIME** ([pidtagreceipttime (](pidtagreceipttime-canonical-property.md))-Eigenschaft.
     
-   - Das **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) oder die Eigenschaft **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)).
+   - Die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) oder **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft.
     
-   - Die Eigenschaft **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)).
+   - Die **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md))-Eigenschaft.
     
-   - Die Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)).
+   - Die **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft.
     
-   - Alle Eigenschaften, die von der Nachrichtenklasse erforderlich.
+   - Alle Eigenschaften, die für die Nachrichtenklasse erforderlich sind.
     
-4. Rufen Sie die Nachricht [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode, um die Nachricht zu speichern. 
+4. Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht auf, um die Nachricht zu speichern. 
     
-5. Falls erforderlich, erstellen Sie eine Anlage, legen Sie dessen Eigenschaften und speichern Sie es. Weitere Informationen zum Hinzufügen von Anlagen von Nachrichten finden Sie unter [Erstellen von E-Mail-Anlagen](creating-a-message-attachment.md).
+5. Erstellen Sie bei Bedarf eine Anlage, legen Sie Ihre Eigenschaften fest, und speichern Sie Sie. Weitere Informationen zum Hinzufügen von Anlagen zu Nachrichten finden Sie unter [Creating a Message Attachment](creating-a-message-attachment.md).
     
-6. Rufen Sie **IMessage::SaveChanges** , um die Nachricht zu speichern. Zu diesem Zeitpunkt wird sie in der Inhaltstabelle des Zielordners angezeigt. 
+6. Rufen Sie **IMessage:: SaveChanges** auf, um die Nachricht zu speichern. An dieser Stelle wird Sie in der Tabelle Inhalt des Zielordners angezeigt. 
     
-Beachten Sie, dass Sie keine Empfängerliste erstellen. Stattdessen legen Sie verschiedene Eigenschaften, die normalerweise von einem Transportanbieter für eine gesendete Nachricht festgelegt sind. 
+Beachten Sie, dass Sie keine Empfängerliste erstellen. Stattdessen legen Sie mehrere Eigenschaften fest, die normalerweise von einem Transportanbieter für eine gesendete Nachricht festgelegt werden. 
   
-Wenn eine Nachricht speichern zeitweise bevor er in der Inhaltstabelle des Ordners "sichtbar" angezeigt werden soll, stattdessen in einem ausgeblendeten Ordner wie den Stammordner der IPM-Unterstruktur erstellen und anschließend in den Zielordner verschieben. 
+Wenn Sie eine Nachricht zeitweise speichern möchten, bevor Sie in der Tabelle Inhalt des sichtbaren Ordners angezeigt wird, erstellen Sie Sie stattdessen in einem ausgeblendeten Ordner wie dem Stammordner der IPM-Unterstruktur, und verschieben Sie Sie dann in den Zielordner. 
   
 

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f851ce8-bd01-4ea5-86e0-e44323cc0aab
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1a1d11db538d9b5368d80962e44b9eab38b490d2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e53c0cbd9946ff04516594a7ce99fdc2daf4ff4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355743"
 ---
 # <a name="imapiformcontainerremoveform"></a>IMAPIFormContainer::RemoveForm
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Entfernt ein bestimmtes Formular aus einem Formular Container.
   
@@ -37,9 +37,9 @@ HRESULT RemoveForm(
 
  _szMessageClass_
   
-> [in] Eine Zeichenfolge, die den Namen die Nachrichtenklasse des Formulars aus dem Container Formular entfernt werden soll. Nachrichtenklassennamen sind immer noch nie Unicode-ANSI-Zeichenfolgen.
+> in Eine Zeichenfolge, die die Nachrichtenklasse des Formulars benennt, das aus dem Formular Container entfernt werden soll. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,15 +47,15 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die Nachrichtenklasse in der _SzMessageClass_ -Parameter übergeben entspricht nicht die Nachrichtenklasse für jedes Formular in der Form Container. 
+> Die Nachrichtenklasse, die im _szMessageClass_ -Parameter übergeben wird, stimmt nicht mit der Nachrichtenklasse eines beliebigen Formulars im Formular Container überein. 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnDeleteSelectedItem  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormContainer::RemoveForm** -Methode, um ein Formular aus einem Formular Container zu löschen.  <br/> |
+|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: RemoveForm** -Methode, um ein Formular aus einem Formular Container zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

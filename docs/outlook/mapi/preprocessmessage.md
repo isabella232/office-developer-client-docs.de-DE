@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 878c3aaf22a6cf8a08c8234df41b671088c435c7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a3982520cb1c745874a938962ece075a294b6257
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351380"
 ---
 # <a name="preprocessmessage"></a>PreprocessMessage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Funktion, die vorverarbeitet Nachrichteninhalt oder das Format einer Nachricht.
+Definiert eine Funktion, die den Nachrichteninhalt oder das Format einer Nachricht vorverarbeitet.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Definierte Funktion von implementiert:  <br/> |Transportanbieter  <br/> |
-|Definierte Funktion aufgerufen:  <br/> |MAPI-Warteschlange  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Definierte Funktion, implementiert von:  <br/> |Transport Anbieter  <br/> |
+|Definierte Funktion, aufgerufen von:  <br/> |MAPI-Spooler  <br/> |
    
 ```cpp
 HRESULT PreprocessMessage(
@@ -52,61 +52,61 @@ HRESULT PreprocessMessage(
 
  _lpvSession_
   
-> [in] Zeiger auf die Sitzung verwendet werden. 
+> in Zeiger auf die zu verwendende Sitzung. 
     
  _lpMessage_
   
-> [in] Zeiger auf die Nachricht vorverarbeitet werden. 
+> in Zeiger auf die Nachricht, die vorverarbeitet werden soll. 
     
  _lpAdrBook_
   
-> [in] Zeiger auf das Adressbuch von dem der Benutzer Empfänger der Nachricht wählen sollten. 
+> in Zeiger auf das Adressbuch, aus dem der Benutzer Empfänger für die Nachricht auswählen soll. 
     
  _lpFolder_
   
-> [in, out] Zeiger in einen Ordner. Zeigt bei der Eingabe der _LpFolder_ -Parameter auf den Ordner, der vorverarbeitet werden Nachrichten enthält. Ausgabe _LpFolder_ zeigt auf den Ordner, in dem vorverarbeitete Nachrichten abgelegt wurden. 
+> [in, out] Zeiger auf einen Ordner. Bei der Eingabe zeigt der Parameter _lpFolder_ auf den Ordner mit Nachrichten, die vorverarbeitet werden sollen. Bei der Ausgabe zeigt _lpFolder_ auf den Ordner, in dem vorverarbeitete Nachrichten abgelegt wurden. 
     
  _lpAllocateBuffer_
   
-> [in] Zeiger auf die Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) , Speicher verwendet werden soll. 
+> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Reservieren von Arbeitsspeicher verwendet werden soll. 
     
  _lpAllocateMore_
   
-> [in] Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, mit der zusätzlichen Arbeitsspeicher zugewiesen werden, in denen erforderlich. 
+> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die verwendet werden soll, um bei Bedarf zusätzlichen Arbeitsspeicher zuzuordnen. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer](mapifreebuffer.md) -Funktion verwendet werden, um Arbeitsspeicher freizugeben. 
+> in Zeiger auf die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, die verwendet werden, um Arbeitsspeicher freizugeben. 
     
  _lpcOutbound_
   
-> [out] Zeiger auf die Anzahl der Nachrichten in der Matrix, durch den Parameter _LpppMessage_ auf zeigt. 
+> Out Zeiger auf die Anzahl der Nachrichten im Array, auf die durch den _lpppMessage_ -Parameter verwiesen wird. 
     
  _lpppMessage_
   
-> [out] Zeiger auf einen Zeiger auf ein Array von Zeigern für vorverarbeitet oder andernfalls Nachrichten generiert. 
+> Out Zeiger auf einen Zeiger auf ein Array von Zeigern auf vorverarbeitete oder anderweitig generierte Nachrichten. 
     
  _lppRecipList_
   
-> [out] Zeiger auf eine optionale zurückgegebenen [ADRLIST](adrlist.md) -Struktur, auflisten Präprozessor erkannt Empfänger für die Nachricht nicht zugestellt werden kann. Weitere Informationen über den Inhalt dieser Liste finden Sie unter der [IMAPISupport::StatusRecips](imapisupport-statusrecips.md) -Methode. 
+> Out Zeiger auf eine optionale zurückgegebene [ADRLIST](adrlist.md) -Struktur, die Vorprozessor-erkannte Empfänger auflistet, für die die Nachricht unzustellbar ist. Weitere Informationen zu den Inhalten dieser Liste finden Sie unter der [IMAPISupport:: StatusRecips](imapisupport-statusrecips.md) -Methode. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Nachrichteninhalt wurden erfolgreich vorverarbeitet.
+> Der Nachrichteninhalt wurde erfolgreich vorverarbeitet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Adressbuchhierarchie Nachricht Präprozessor kann eine Statusanzeige während der vorverarbeitung Nachricht darstellen. Sie sollten jedoch noch nie ein Dialogfeld Benutzereingriff während der vorverarbeitung Nachricht dar. 
+Ein Transportanbieter-Nachrichten Präprozessor kann während der Nachrichten Vorverarbeitung eine Statusanzeige darstellen. Es sollte jedoch nie ein Dialogfeld angezeigt werden, das die Benutzerinteraktion während der Nachrichten Vorverarbeitung erfordert. 
   
-Wenn ein Präprozessor große Datenmengen eine ausgehende Nachricht hinzufügt, müssen bestimmte Verfahren folgen. Nachrichten dieses Typs kann in einem serverbasierten Nachrichtenspeicher gespeichert werden, verursacht des Präprozessors auf einen remote-Speicher sehr zeitaufwendig zugreifen. Um dies vermeiden möchten, sollte der Präprozessor eine Option, die Ihnen zum Speichern von Daten, die eine große Menge an Speicherplatz in einem lokalen Nachrichtenspeicher akzeptiert, und geben Sie einen Verweis auf diesen lokalen Speicher in der Nachricht ermöglicht. 
+Wenn ein Präprozessor große Datenmengen zu einer ausgehenden Nachricht hinzufügt, sollten bestimmte Verfahren befolgt werden. Diese Art von Nachricht kann in einem Server basierten Nachrichtenspeicher gespeichert werden, wodurch der Präprozessor auf einen Remotespeicher zugreift, ein zeitaufwändiger Vorgang. Um dies zu vermeiden, sollte der Präprozessor über eine Option verfügen, die es ermöglicht, Daten zu speichern, die sehr viel Speicherplatz in einem lokalen Nachrichtenspeicher benötigen, und einen Verweis auf diesen lokalen Speicher in der Nachricht bereitzustellen. 
   
-Der Präprozessor sollte nicht mit den Objekten, die ursprünglich übergeben an die Funktion **PreprocessMessage** basierend freigeben. 
+Der Präprozessor sollte keines der Objekte freigeben, die ursprünglich an die **PreprocessMessage** -basierte Funktion übergeben wurden. 
   
-Bevor die MAPI-Warteschlange eine **PreprocessMessage** -Funktion aufgerufen werden kann, muss der Adressbuchhierarchie die Funktion in einem Aufruf der [IMAPISupport::RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode registriert haben. Nach dem Aufrufen einer Funktion **PreprocessMessage** , kann nicht die Warteschlange weiterhin eine Nachricht senden, bis der Funktion zurückgegeben. 
+Bevor der MAPI-Spooler eine **PreprocessMessage** -Funktion aufrufen kann, muss der Transportanbieter die Funktion bei einem Aufruf der [IMAPISupport:: RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode registriert haben. Nach dem Aufrufen einer **PreprocessMessage** -Funktion kann der Spooler keine Nachricht mehr senden, bis die Funktion zurückgegeben wird. 
   
-Die MAPI-Warteschlange besitzt die Aufgabe übermitteln von Nachrichten an. Dies bedeutet, dass die ursprüngliche Nachricht nie in ein Array von Zeigern Nachricht befindet und dass ein Anruf an die Methoden **SubmitMessage** nie erforderlich ist. 
+Der MAPI-Spooler besitzt die Aufgabe, Nachrichten zu übermitteln. Dies bedeutet, dass die ursprüngliche Nachricht nie in einem Array von Nachrichten Zeigern angeordnet wird, und dass ein Aufruf der **SubmitMessage** -Methoden nie erforderlich ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

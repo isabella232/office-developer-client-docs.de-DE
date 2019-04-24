@@ -1,5 +1,5 @@
 ---
-title: YRulerDensity Cell (Ruler &amp; Grid Section)
+title: Zelle YRulerDensity Cell (Ruler &amp; Grid section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: aebcd321-9d1c-e04e-7c85-3ec1ed851561
 description: Legt die vertikalen Einteilungen auf dem Lineal des Zeichenblatts fest.
-ms.openlocfilehash: 4b5dcba7a5cb1a588f742b1c2ea6b430cb2af12c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c92c48f6c86fc794cf6f53a87fdb99e67a73b9f5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357204"
 ---
-# <a name="yrulerdensity-cell-ruler-amp-grid-section"></a>YRulerDensity Cell (Ruler &amp; Grid Section)
+# <a name="yrulerdensity-cell-ruler-amp-grid-section"></a>Zelle YRulerDensity Cell (Ruler &amp; Grid section)
 
 Legt die vertikalen Einteilungen auf dem Lineal des Zeichenblatts fest.
   
@@ -25,19 +25,19 @@ Legt die vertikalen Einteilungen auf dem Lineal des Zeichenblatts fest.
 |0  <br/> |Fest  <br/> |**visRulerFixed** <br/> |
 |8 (&amp;H8)  <br/> |Grob  <br/> |**visRulerCoarse** <br/> |
 |16 (&amp;H10)  <br/> |Normal (Standard)  <br/> |**visRulerNormal** <br/> |
-|32 (&amp;H20)  <br/> |Fein  <br/> |**visRulerFine** <br/> |
+|32 (&amp;H20)  <br/> |Abgestimmter  <br/> |**visRulerFine** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Zelle entspricht der vertikalen Option **Einteilung** in die **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ). 
+Diese Zelle entspricht der Option vertikale unter **Einheiten** im Dialogfeld **** **Lineal &amp; -Raster** (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil). 
   
-Wenn Sie einen Verweis auf die Zelle YRulerDensity aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle YRulerDensity aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |YRulerDensity  <br/> |
+|Zellenname:  <br/> |Zelle YRulerDensity  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle YRulerDensity aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle YRulerDensity aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

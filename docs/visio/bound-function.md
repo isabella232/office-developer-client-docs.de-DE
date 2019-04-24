@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 36374d78-1028-bd7f-6282-66555ee31306
 description: Schränkt den Wert einer Zelle auf einen oder mehrere Bereiche ein.
-ms.openlocfilehash: 2f6228828fee8fa1831bb0d3a714fca068808652
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 85fbe66d4e458ac4e42c9eb3c65b9a3a1d8211df
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348951"
 ---
 # <a name="bound-function"></a>BOUND Function
 
@@ -22,35 +22,33 @@ Schränkt den Wert einer Zelle auf einen oder mehrere Bereiche ein.
   
 ## <a name="syntax"></a>Syntax
 
-GEBUNDEN (** *Wert* **, ** *Typ* **, ** *ignorieren* **, ** *Wert1* **, ** *value2* ** ** * [, ignore(n), value1(n), value2(n),...] * **) 
+BOUND (* * *Wert* * *, * * *Typ* * *, * * *Ignore* * *, * * *Wert1* * *, * * *value2* * * * * * [, ignore (n), Wert1 (n), Value2 (n),...] * * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Value_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der aktuelle einzuschränkende Wert.  <br/> |
-| _Typ_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, ob die Einschränkung einschließend (0), ausschließend (1) oder deaktiviert (2) ist.
-  <br/> |
-| _ignorieren_ <br/> |Erforderlich  <br/> |**Boolean** <br/> | True, um den Bereich zu ignorieren. Legen Sie false fest, um den Wert der Zelle auf den Bereich einzuschränken.  <br/> |
-| _Wert1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Erster Wert in einem Bereich.
-  <br/> |
-| _Wert2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Zweiter Wert in einem Bereich.  <br/> |
+| _value_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der aktuelle einzuschränkende Wert.  <br/> |
+| _Typ_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, ob die Einschränkung einschließend (0), ausschließend (1) oder deaktiviert (2) ist.  <br/> |
+| _ignorieren_ <br/> |Erforderlich  <br/> |**Boolean** <br/> | TRUE, um den Range zu ignorieren; FALSE, wenn der Wert der Zelle auf den Range beschränkt werden soll.  <br/> |
+| _Wert1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Erster Wert in einem Bereich.  <br/> |
+| _Wert2_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Zweiter Wert in einem Bereich.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden der BOUND-Funktion zum Einschränken der Wert auf eine obere und die untere Grenze, beispielsweise einer Zelle, um Objekte zu steuern, die nicht über oder unter eine minimale oder maximale Höhe gedehnt werden sollten. Die Einschränkung kann inklusive oder exklusive in Bezug auf den Bereich oder die Bereiche. Wenn der aktuelle Wert nicht eingeschränkt werden soll, legen Sie den Parameter _Type_ auf 2 (deaktiviert). 
+Verwenden Sie die BOUND-Funktion, um den Wert einer Zelle auf eine Ober-und Untergrenze zu beschränken, um beispielsweise Objekte zu steuern, die nicht oberhalb oder unterhalb einer minimalen oder maximalen Höhe gedehnt werden sollen. Die Einschränkung kann im Hinblick auf den Bereich oder die Bereiche inklusive oder exklusiv sein. Wenn der aktuelle Wert nicht eingeschränkt werden soll, legen Sie den _Type_ -Parameter auf 2 (deaktiviert) fest. 
   
-Sie können mehrere Bereiche definieren, indem der Parameter _ignore_, _value1_und _value2_ mehrere Vorkommen. Verwenden Sie den Parameter _ignorieren_ , um Einschränkungen durch einen bestimmten Bereich deaktivieren. 
+Sie können mehrere Bereiche definieren, indem Sie mehrere Vorkommen der Parameter _Ignore_, _Wert1_und _value2_ angeben. Verwenden Sie den _Ignore_ -Parameter, um Einschränkungen für einen bestimmten Zeitraum zu deaktivieren. 
   
-Die Formel, die mit der BOUND-Funktion ist nicht überschrieben, wenn der Wert geändert wird; stattdessen die Formel wird beibehalten, und der neue Wert wird in der _Value_ -Parameter eingefügt. 
+Die Formel, die die gebundene Funktion enthält, wird nicht überschrieben, wenn sich ihr Wert ändert; Stattdessen wird die Formel beibehalten, und der neue Wert wird in den _value_ -Parameter eingefügt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
 In diesem Beispiel wird mit der BOUND-Funktion erzwungen, dass ein Steuerpunkt nicht die Grenzen eines Shape-Felds verlässt. 
   
-Controls.X1 = Grenze (Breite\*0,5, 0, FALSE, Breite\*0, Breite\*1)
+Controls. x1 = BOUND (Breite\*0,5, 0, false, Breite\*0, Breite\*1)
   
-Controls.Y1 = Grenze (Höhe\*0,5, 0, FALSE, Height\*0, Höhe\*1)
+Controls. Y1 = BOUND (Höhe\*0,5, 0, false, Höhe\*0, Höhe\*1)
   
 ## <a name="example-2"></a>Beispiel 2
 

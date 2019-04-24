@@ -8,43 +8,43 @@ f1_keywords:
 - Vis_DSS.chm82251446
 localization_priority: Normal
 ms.assetid: ce193ce1-c7fd-6609-ad37-a3a28b30a1bd
-description: Rundet eine Zahl auf die nächste ganze Zahl.
-ms.openlocfilehash: f54a08fa059d50102a6377b7e368e7e388297acc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Rundet eine Zahl auf die nächste Ganzzahl ab.
+ms.openlocfilehash: 405345ae1d22d599df85e2a640445c8c681ec2f6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357288"
 ---
 # <a name="intup-function"></a>INTUP Function
 
-Rundet eine Zahl auf die nächste ganze Zahl.
+Rundet eine Zahl auf die nächste Ganzzahl ab.
   
 ## <a name="syntax"></a>Syntax
 
-INTUP (** *Anzahl* **) 
+INTUP (* * *Number* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die aufzurundende Zahl.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die aufzurundende Zahl.  <br/> |
    
 ## <a name="example-1"></a>Beispiel 1
 
-INTUP(3.2)
+INTUP (3.2)
   
 Gibt 4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-INTUP(-3.2)
+INTUP (-3,2)
   
 Gibt -3 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-INTUP(3)
+INTUP (3)
   
 Gibt 3 zurück.
   

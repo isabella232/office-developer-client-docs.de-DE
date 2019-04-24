@@ -1,5 +1,5 @@
 ---
-title: Shapes-Element (ShapeSheet_Type ComplexType) ("Visio XML")
+title: Shapes-Element (ShapeSheet_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ localization_priority: Normal
 ms.assetid: 85aa7df3-d9bd-acb3-61b3-2bd5fa256435
 description: Enthält eine Auflistung von Shape-Elementen.
 ms.openlocfilehash: d4de4436079ec6290b52dd74bf3ee015c5b0d3f5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348251"
 ---
-# <a name="shapes-element-shapesheettype-complextype-visio-xml"></a>Shapes-Element (ShapeSheet_Type ComplexType) ("Visio XML")
+# <a name="shapes-element-shapesheettype-complextype-visio-xml"></a>Shapes-Element (ShapeSheet_Type complexType) (' Visio XML ')
 
 Enthält eine Auflistung von Shape-Elementen.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Page #. XML, Master #. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,19 +36,19 @@ Enthält eine Auflistung von Shape-Elementen.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Eigenschaften, die mit einer Form verknüpft ist.  <br/> |
+|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Eigenschaften an, die einem Shape zugeordnet sind.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die ein Shape in einen **Master**, eine **Seite**oder eine Gruppe Form-Element definieren.  <br/> |
+|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die eine Form in einem **Master**-, **Page**-oder Group Shape-Element definieren.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

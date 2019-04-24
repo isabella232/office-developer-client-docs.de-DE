@@ -13,35 +13,35 @@ f1_keywords:
 - VBA
 - VBA object model
 keywords:
-- Project Server-Schnittstelle, Project Server, Fehler VBA-Codes Project-Objektmodell, Project 2013,-Plattform, Visual Basic für Applikationen, Project-Objektmodell-Objektmodell, VBA-Projekt, Project Server, PSI PSI-Referenz
+- Project Server-Schnittstelle, Project Server, Fehlercodes, VBA, Projektobjektmodell, Projekt 2013, Plattform, Visual Basic for Applications, Project-Objektmodell, Objektmodell, Projekt VBA, Project Server, PSI-Referenz, PSI
 localization_priority: Normal
 ms.assetid: 79c78c44-1e08-4c9b-a7fe-a5089e666055
-description: Hier finden Sie eine Übersicht der Project Server Interface (PSI)-Referenz, wie Sie die ASMX-Schnittstelle und die WCF-Schnittstelle von der PSI, Informationen zu Project Server-Fehlercodes und einen Verweis für den ProjectData OData-Dienst zu verwenden.
+description: Hier finden Sie eine Übersicht über die PSI-Referenz (Project Server Interface), die Verwendung der ASMX-Schnittstelle und der WCF-Schnittstelle der PSI, Informationen zu Project Server-Fehlercodes und einen Verweis auf den ProjectData OData-Dienst.
 ms.openlocfilehash: 27b2eb27d62ec1abdb1a835b5d874e211e7e793e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357036"
 ---
 # <a name="project-2013-programming-references"></a>Project 2013 Programmierreferenzen
 
-Hier finden Sie eine Übersicht der Project Server Interface (PSI)-Referenz, wie Sie die ASMX-Schnittstelle und die WCF-Schnittstelle von der PSI, Informationen zu Project Server-Fehlercodes und einen Verweis für den **ProjectData** OData-Dienst zu verwenden. 
+Hier finden Sie eine Übersicht über die PSI-Referenz (Project Server Interface), die Verwendung der ASMX-Schnittstelle und der WCF-Schnittstelle der PSI, Informationen zu Project Server-Fehlercodes und einen Verweis auf den **ProjectData** OData-Dienst. 
   
 > [!NOTE]
-> Die primäre für die PSI und Client-seitigen Objektmodell (CSOM) in Project Server 2013 finden Sie unter den folgenden Abschnitten: [Class Library und-Webdienst verweisen](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) und [JavaScript-API-Referenz für Project Server 2013](javascript-library-and-rest-reference-for-project-server-2013.md). > Für die Office-Add-ins-Referenzen, die die JavaScript-Referenz für Project 2013 Aufgabenbereichs-apps enthalten, finden Sie unter [JavaScript-API für Office](https://msdn.microsoft.com/library/fp142185.aspx). > Der VBA-Referenz für Project Standard 2013 und Project Professional 2013 finden Sie unter [Project 2013 VBA-Entwicklerreferenz](https://msdn.microsoft.com/library/jj235035.aspx). > Die Referenz für die reporting Tabellen und Ansichten in der Datenbank des lokalen Project Server 2013 ist noch nicht verfügbar. 
+> Die primären Verweise für PSI und clientseitiges Objektmodell (CSOM) in Project Server 2013 finden Sie in den folgenden Abschnitten: [Class Library and Web Service Reference](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) and [JavaScript API Reference for Project Server 2013](javascript-library-and-rest-reference-for-project-server-2013.md). > für die Office-Add-Ins-Verweise, die die JavaScript-Referenz für Project 2013-Aufgabenbereich-Apps enthalten, finden Sie unter [JavaScript-API für Office](https://msdn.microsoft.com/library/fp142185.aspx). > für die VBA-Referenz für Project Standard 2013 und Project Professional 2013 finden Sie unter [project 2013 VBA Developer Reference](https://msdn.microsoft.com/library/jj235035.aspx). > die Referenz für die Berichtstabellen und-Ansichten in der lokalen Project Server 2013-Datenbank ist noch nicht verfügbar. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[Project PSI-Referenz (Übersicht)](project-psi-reference-overview.md) Beschreibt den Assemblys und Namespaces in der PSI-Referenz für Project Server 2013. 
+[Übersicht über die PSI-Referenz für Project](project-psi-reference-overview.md) Beschreibt die Assemblys und Namespaces in der PSI-Referenz für Project Server 2013. 
   
-[Voraussetzungen für ASMX-basierte Codebeispiele in Project](prerequisites-for-asmx-based-code-samples-in-project.md) Beschreibt die Codebeispiele in der PSI-Referenz zu verwenden, die mithilfe von ASMX-Webdiensten in Ihrer testanwendungen integriert sind. 
+[VorausSetzungen für ASMX-basierte Codebeispiele in Project](prerequisites-for-asmx-based-code-samples-in-project.md) Beschreibt die Verwendung von Codebeispielen in der PSI-Referenz, die mithilfe der ASMX-Webdienste in ihren Testanwendungen erstellt werden. 
   
-[Voraussetzungen für WCF-basierte Codebeispiele in Project](prerequisites-for-wcf-based-code-samples-in-project.md) Beschreibt die Codebeispiele in der PSI-Referenz zu verwenden, die mithilfe von Windows Communication Foundation (WCF)-Webdiensten in Ihrer testanwendungen integriert sind. 
+[VorausSetzungen für WCF-basierte Codebeispiele in Project](prerequisites-for-wcf-based-code-samples-in-project.md) Beschreibt die Verwendung von Codebeispielen in der PSI-Referenz, die mithilfe von Windows Communication Foundation (WCF)-Diensten in ihren Testanwendungen erstellt werden. 
   
-[Project Server-Fehlercodes](project-server-error-codes.md) Listet die Codes und eine Beschreibung der Project Server-Fehler nach Funktionsbereich. 
+[Project Server-Fehlercodes](project-server-error-codes.md) Listet die Codes und Beschreibungen von Project Server-Fehlern nach Funktionsbereich auf. 
   
-[ProjectData - Projekt OData-Dienstverweises](https://msdn.microsoft.com/library/office/jj163015.aspx) Enthält eine Übersicht über den OData-Dienst für Project Server-Berichtsdaten, eine Einführung in die Verwendung der OData-Feeds mit LINQ-Abfragen und Referenzen für die XML-Metadaten in den **ProjectData** -Dienst. 
+[ProjectData-Project OData-Dienst Referenz](https://msdn.microsoft.com/library/office/jj163015.aspx) Enthält eine Übersicht über den OData-Dienst für Project Server-Berichtsdaten, eine Einführung in die Verwendung der OData-Feeds mit LINQ-Abfragen und Verweise auf die XML-Metadaten im **PROJECTDATA** -Dienst. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -49,5 +49,5 @@ Hier finden Sie eine Übersicht der Project Server Interface (PSI)-Referenz, wie
 
 [JavaScript-API für Office](https://msdn.microsoft.com/library/fp142185.aspx)
   
-[Project 2013-VBA-Entwicklerreferenz](https://msdn.microsoft.com/library/jj235035.aspx)
+[Project 2013 VBA-Entwicklerreferenz](https://msdn.microsoft.com/library/jj235035.aspx)
 

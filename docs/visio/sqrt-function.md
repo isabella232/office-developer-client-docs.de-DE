@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 513302d3-3be8-882f-5258-95529098f95d
 description: Gibt die Quadratwurzel einer Zahl zurück.
-ms.openlocfilehash: 020a286c3e652c7b135a1013cee61e7b39cc9b94
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f9f31b9360248f002cac74dfb87ac3b292d34620
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349357"
 ---
 # <a name="sqrt-function"></a>WURZEL-Funktion
 
@@ -22,25 +22,25 @@ Gibt die Quadratwurzel einer Zahl zurück.
   
 ## <a name="syntax"></a>Syntax
 
-SQRT (** *Anzahl* **) 
+SQRT (* * *Number* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Zahl, deren Quadratwurzel ermittelt werden soll.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Zahl, deren Quadratwurzel ermittelt werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn _Zahl_ negativ ist, gibt die SQRT-Funktion den Fehlerwert #NUM! zurück. 
+Wenn _Zahl_ negativ ist, gibt die SQRT-Funktion den fehlerwert #NUM! zurück. 
   
 ## <a name="example"></a>Beispiel
 
-SQRT(2) 
+SQRT (2) 
   
 Gibt 1,4142 zurück. 
   

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 96b8c503-67b3-8623-d99b-0dad7b15c224
 description: Gibt an, ob dieses Shape andere Shapes teilen kann, sofern diese teilbar sind.
-ms.openlocfilehash: b782977bd5b7e828223675eb16f4e7e48f4ca55d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 46b42e9be070b54095d3e9a5c247d63be6348f77
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349119"
 ---
-# <a name="shapesplit-cell-shape-layout-section"></a>ShapeSplit Cell (Shape Layout Section)
+# <a name="shapesplit-cell-shape-layout-section"></a>Zelle "ShapeSplit" (Abschnitt "Shape Layout")
 
 Gibt an, ob dieses Shape andere Shapes teilen kann, sofern diese teilbar sind.
   
@@ -31,19 +31,19 @@ Ein Shape, das andere Shapes teilen kann, muss entweder ein 2D-Shape oder ein pl
   
 Das automatische Teilen von Shapes wird auf drei unterschiedlichen Ebenen aktiviert und deaktiviert: Anwendung, Zeichenblatt und Shape. In der Standardeinstellung ist das Teilen auf den Ebenen Anwendung und Zeichenblatt aktiviert, bei Shapes hängt es vom Zeichnungstyp ab. 
   
-Zum Aktivieren oder Deaktivieren des Teilens auf Anwendungsebene, verwenden Sie die Einstellung **Connector aufteilen aktivieren** auf der Registerkarte **Erweitert** im Dialogfeld **Visio-Optionen** (klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Optionen**, und klicken Sie dann auf ** Erweiterte**). 
+Um die Aufteilung auf Anwendungsebene zu aktivieren oder zu deaktivieren, verwenden Sie die Einstellung **Verbinder-Aufteilung aktivieren** auf der Registerkarte **erweitert** des Dialogfelds **Visio-Optionen** (Klicken Sie auf die Registerkarte **Datei** , dann auf **Optionen**und dann auf ** Advanced**). 
   
 Lesen Sie zum Aktivieren oder Deaktivieren des Teilens auf einem Zeichenblatt die Informationen zur Zelle PageShapeSplit. 
   
 Wenn Sie ein 1D-Shape teilbar machen möchten, lesen Sie die Informationen zur Zelle ShapeSplittable.
   
-Zum Abrufen eines Verweises auf die Zelle ShapeSplit nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapeSplit aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ShapeSplit  <br/> |
    
-Wenn Sie einen Bezug auf die Zelle ShapeSplit aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapeSplit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

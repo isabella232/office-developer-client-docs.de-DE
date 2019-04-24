@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 274899cc-2894-4d99-84ec-f18121e856a0
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 28dd45f29610b7ad56b4d3302715311569d497c4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: cbdfba68490b1e756f277c6e552235368a86f310
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348853"
 ---
 # <a name="iprofadmin--iunknown"></a>IProfAdmin : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Unterstützt die Verwaltung von Benutzerprofilen. 
+Unterstützt die Verwaltung von Profilen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Profile Administration-Objekt  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Profilverwaltungsobjekt  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IProfAdmin  <br/> |
 |Zeigertyp:  <br/> |LPPROFADMIN  <br/> |
    
@@ -40,15 +40,15 @@ Unterstützt die Verwaltung von Benutzerprofilen.
 
 |||
 |:-----|:-----|
-|[GetLastError](iprofadmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler enthält, die auf ein Profil Administration-Objekt aufgetreten sind.  <br/> |
-|["GetProfileTable"](iprofadmin-getprofiletable.md) <br/> |Bietet Zugriff auf die Benutzerprofildienst-Tabelle eine Tabelle mit Informationen zu allen verfügbaren Profilen.  <br/> |
+|[Getlasterroraufzurufen](iprofadmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält, der in einem Profilverwaltungsobjekt aufgetreten ist.  <br/> |
+|[GetProfilable](iprofadmin-getprofiletable.md) <br/> |Ermöglicht den Zugriff auf die Profiltabelle, eine Tabelle, die Informationen zu allen verfügbaren Profilen enthält.  <br/> |
 |[CreateProfile](iprofadmin-createprofile.md) <br/> |Erstellt ein neues Profil.  <br/> |
 |[DeleteProfile](iprofadmin-deleteprofile.md) <br/> |Löscht ein Profil.  <br/> |
 |[ChangeProfilePassword](iprofadmin-changeprofilepassword.md) <br/> |Veraltet. Ändert das Kennwort für ein Profil.  <br/> |
 |[CopyProfile](iprofadmin-copyprofile.md) <br/> |Kopiert ein Profil.  <br/> |
-|[RenameProfile](iprofadmin-renameprofile.md) <br/> |Weist einen neuen Namen zu einem Profil.  <br/> |
-|[SetDefaultProfile](iprofadmin-setdefaultprofile.md) <br/> |Aktiviert oder deaktiviert eine Client-Standardprofil.  <br/> |
-|[AdminServices](iprofadmin-adminservices.md) <br/> |Bietet Zugriff auf ein Objekt "Message" Service Administration für die Änderung der Nachrichtendienste in einem Profil.  <br/> |
+|[RenameProfile](iprofadmin-renameprofile.md) <br/> |Weist einem Profil einen neuen Namen zu.  <br/> |
+|[SetDefaultProfile](iprofadmin-setdefaultprofile.md) <br/> |Legt fest oder löscht das Standardprofil eines Clients.  <br/> |
+|[AdminServices](iprofadmin-adminservices.md) <br/> |Ermöglicht den Zugriff auf ein Nachrichtendienst-Verwaltungsobjekt zum vornehmen von Änderungen an den Nachrichtendiensten in einem Profil.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

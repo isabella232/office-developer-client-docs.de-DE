@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b25d9f2b-9454-4983-98f7-6a051a3b8a04
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 140efe0b2d1b428a94b5bb2919d461779613932a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 50fd96acd0989459c9887770ec5a3a236f182da5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348895"
 ---
 # <a name="itabledatahrenumrow"></a>ITableData::HrEnumRow
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine Zeile basierend auf seine Position in der Tabelle an. 
+Ruft eine Zeile basierend auf ihrer Position in der Tabelle ab. 
   
 ```cpp
 HRESULT HrEnumRow(
@@ -38,27 +38,27 @@ HRESULT HrEnumRow(
 
  _ulRowNumber_
   
-> [in] Die Anzahl der Zeilen für die Eigenschaften zurückgegeben. Der Wert in der _UlRowNumber_ -Parameter kann ein beliebiger Wert von 0, sein, die die erste Zeile in der Tabelle, bis n - 1, gibt an, welche die gibt die letzte Zeile in der Tabelle an. 
+> in Die Nummer der Zeile, für die Eigenschaften zurückgegeben werden sollen. Der Wert im _ulRowNumber_ -Parameter kann ein beliebiger Wert von 0 sein, der die erste Zeile in der Tabelle durch n-1 angibt, die die letzte Zeile in der Tabelle angibt. 
     
  _lppSRow_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine [SRow](srow.md) -Struktur, die Zielzeile beschreibt. 
+> Out Ein Zeiger auf einen Zeiger auf eine [SRow](srow.md) -Struktur, die die Zielzeile beschreibt. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Zeile erfolgreich abgerufen wurde, oder eine Zeile für die Nummer der Zeile durch den _UlRowNumber_ -Parameter angegeben ist nicht vorhanden. 
+> Die Zeile wurde erfolgreich abgerufen, oder eine Zeile für die vom _ulRowNumber_ -Parameter angegebene Zeilennummer ist nicht vorhanden. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **ITableData::HrEnumRow** -Methode ruft eine Zeile basierend auf eine fortlaufende Zahl. Diese Nummer stellt die Reihenfolge des Einfügevorgangs (0 gibt die erste Zeile und die Anzahl der Zeilen minus 1 gibt die letzte Zeile). MAPI behält diese Reihenfolge der Zeile eingefügt für die Lebensdauer des Table-Objekts Daten. 
+Die **ITableData:: HrEnumRow** -Methode ruft eine Zeile basierend auf einer sequenziellen Zahl ab. Diese Zahl stellt die Reihenfolge der Einfügung dar (0 gibt die erste Zeile an, und die Anzahl der Zeilen minus 1 gibt die letzte Zeile an). MAPI behält diese chronologische Reihenfolge der Zeileneinfügung für die Lebensdauer des Tabellendaten Objekts bei. 
   
-Wenn die Nummer im angegebenen _UlRowNumber_ nicht zu einer Zeile in der Tabelle entspricht, **HrEnumRow** gibt S_OK zurück, und der _LppSRow_ -Parameter auf NULL festgelegt. 
+Wenn die in _ulRowNumber_ angegebene Zahl nicht mit einer Zeile in der Tabelle übereinstimmt, gibt **HRENUMROW** den Wert S_OK zurück und legt den _lppSRow_ -Parameter auf NULL fest. 
   
-MAPI weist Speicher für die zurückgegebene Struktur **' srow '** mit der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, wenn das Table-Datenobjekt erstellt wird. Der Aufrufer muss diesen Speicher Aufruf der Funktion [MAPIFreeBuffer](mapifreebuffer.md) freigeben. 
+MAPI reserviert Speicher für die zurückgegebene **SRow** -Struktur mithilfe der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, wenn das Tabellendaten Objekt erstellt wird. Der Aufrufer muss diesen Speicher freigeben, indem er die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufruft. 
   
-Um Zeilen aus einer Tabelle in der Reihenfolge abzurufen, dass sie eingefügt wurden, rufen Sie Tabelle Daten Objekt Benutzer die **HrEnumRow** -Methode. 
+Zum Abrufen von Zeilen aus einer Tabelle in der Reihenfolge, in der Sie eingefügt wurden, rufen Tabellendaten Objekt Benutzer die **HrEnumRow** -Methode auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

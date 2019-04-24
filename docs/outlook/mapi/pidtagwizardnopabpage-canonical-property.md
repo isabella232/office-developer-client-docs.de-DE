@@ -1,5 +1,5 @@
 ---
-title: PidTagWizardNoPabPage (kanonische Eigenschaft)
+title: Kanonische Pidtagwizardnopabpage (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9cec22cd-798d-41f6-9ebd-c7354f2162c2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cdb7dde4853188eb0621dc3c2f45c2dc713441d3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: fc971be76dbaa83176f207411f9f125ffee386cf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350652"
 ---
-# <a name="pidtagwizardnopabpage-canonical-property"></a>PidTagWizardNoPabPage (kanonische Eigenschaft)
+# <a name="pidtagwizardnopabpage-canonical-property"></a>Kanonische Pidtagwizardnopabpage (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält True, wenn der Profilassistent unterdrückt werden, die Seite Persönliches Adressbuch (PAB).
+Diese Eigenschaft enthält TRUE, wenn der Profil-Assistent die Seite persönliches Adressbuch (PAB) unterdrückt.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Diese Eigenschaft enthält True, wenn der Profilassistent unterdrückt werden, d
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Exchange-Verwaltung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Dienstanbieter können diese Eigenschaft festlegen, beim Aufrufen einer Funktion basierend auf den [LAUNCHWIZARDENTRY](launchwizardentry.md) Funktionsprototyp. Diese Eigenschaft teilt der Profil-Assistent, dass der Anbieter nicht möchte die PAB-Seite, während das Benutzerdialogfeld angezeigt werden soll. 
+Dienstanbieter können diese Eigenschaft beim Aufrufen einer Funktion festlegen, die auf dem Prototyp der [LAUNCHWIZARDENTRY](launchwizardentry.md) -Funktion basiert. Diese Eigenschaft teilt dem Profil-Assistenten mit, dass die PAB-Seite im Benutzerdialogfeld nicht angezeigt werden soll. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

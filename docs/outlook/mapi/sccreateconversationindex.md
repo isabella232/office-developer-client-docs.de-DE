@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ccfc15d-f3c6-4c7b-b1cc-855af66036de
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5ae0c9f123ade599ca9bc1d3bdea3e9c89cfbc16
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 385660889c40e5f59dfc015ad92ce6a1398ab0cd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351324"
 ---
 # <a name="sccreateconversationindex"></a>ScCreateConversationIndex
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, in dem in einem Thread Nachricht eine Nachricht gehört. 
+Gibt an, wo in einem Nachrichtenthread eine Nachricht gehört. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScCreateConversationIndex(
@@ -46,21 +46,21 @@ SCODE ScCreateConversationIndex(
 
  _cbParent_
   
-> [in] Anzahl der Bytes in der übergeordneten Unterhaltung Index.
+> in Die Anzahl der Bytes im übergeordneten Unterhaltungsindex.
     
  _lpbParent_
   
-> [in] Zeiger auf Bytes im übergeordneten Unterhaltung Index. Dies kann NULL sein, wenn _CbParent_ gleich NULL ist. 
+> in Zeiger auf Bytes im übergeordneten Unterhaltungsindex. Dies ist möglicherweise NULL, wenn _cbParent_ NULL ist. 
     
  _lpcbIndex_
   
-> [out] Zeiger auf die Anzahl der Bytes in den neuen Unterhaltung Index durch den Aufruf zurückgegeben. 
+> Out Zeiger auf die Anzahl von Bytes im neuen unter Haltungs Index, der vom Aufruf zurückgegeben wird. 
     
  _lppbIndex_
   
-> [out] Zeiger auf einen Zeiger auf den neuen Unterhaltung Index durch den Aufruf zurückgegeben.
+> Out Zeiger auf einen Zeiger auf den neuen unter Haltungs Index, der vom Aufruf zurückgegeben wird.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   

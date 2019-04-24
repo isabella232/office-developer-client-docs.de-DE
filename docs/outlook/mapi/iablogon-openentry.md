@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 1cfb82f7-5215-4faa-af25-5b1da7e31209
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bf6386ae3a7d835c8748e332235d8737c7a502e8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 70f61ef553350f08eed96c1ee4e9ab790359d1fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348937"
 ---
 # <a name="iablogonopenentry"></a>IABLogon::OpenEntry
 
@@ -25,7 +25,7 @@ ms.locfileid: "22589469"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet einen Container, messaging-Benutzer oder eine Verteilerliste, und gibt einen Zeiger auf eine Implementierung Zugriff zu ermöglichen.
+Öffnet einen Container, einen Messagingbenutzer oder eine Verteilerliste und gibt einen Zeiger auf eine Schnittstellenimplementierung zurück, um weiteren Zugriff zu ermöglichen.
   
 ```cpp
 HRESULT OpenEntry(
@@ -42,39 +42,39 @@ HRESULT OpenEntry(
 
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Containers, messaging-Benutzer oder Verteilerliste zu öffnen.
+> in Ein Zeiger auf die Eintrags-ID des Containers, des Messaging Benutzers oder der Verteilerliste, die geöffnet werden soll.
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle für den Zugriff auf die open-Objekt verwendet werden. Übergeben von NULL gibt den Bezeichner für das Objekt standard-Schnittstelle zurück. Für Container, ist der standard-Benutzeroberfläche [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md). Der Standard-Schnittstellen für Address Book-Objekten sind [IDistList: IMAPIContainer](idistlistimapicontainer.md) für eine Verteilerliste und [IMailUser: IMAPIProp](imailuserimapiprop.md) für ein messaging-Benutzer. 
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf das Open-Objekt verwendet werden soll. Beim Übergeben von NULL wird der Bezeichner für die Standardschnittstelle des Objekts zurückgegeben. Für Container ist die Standardschnittstelle [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md). Die Standardschnittstellen für Adressbuch Objekte sind [IDistList: IMAPIContainer](idistlistimapicontainer.md) für eine Verteilerliste und [IMailUser: IMAPIProp](imailuserimapiprop.md) für einen Messagingbenutzer. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Flags können festgelegt werden:
     
 MAPI_BEST_ACCESS 
   
-> Fordert an, dass das Objekt mit den maximale Netzwerkberechtigungen für den Benutzer und die maximale Anwendung Clientzugriff zulässig geöffnet werden. Beispielsweise sollte der Client Lese-/Schreibberechtigung verfügt, das Objekt mit Lese-/Schreibzugriff geöffnet werden; Wenn der Client nur-Lese-Berechtigung verfügt, sollte das Objekt mit Leseberechtigung geöffnet werden.
+> Fordert, dass das Objekt mit den maximal zulässigen Netzwerkberechtigungen für den Benutzer und dem maximalen Zugriff auf Clientanwendungen geöffnet wird. Wenn der Client beispielsweise über Lese-/Schreibzugriff verfügt, sollte das Objekt mit Lese-/Schreibzugriff geöffnet werden. Wenn der Client schreibgeschützte Berechtigung hat, sollte das Objekt mit Leseberechtigung geöffnet werden.
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht die **OpenEntry** -Methode erfolgreich, möglicherweise zurückgegeben werden, bevor der aufrufende Client vollständig Zugriff auf das Objekt hat. Wenn das Objekt nicht zugegriffen werden kann, kann die nachfolgenden Objekt Anrufen ein Fehler ausgelöst. 
+> Ermöglicht die **** erfolgreiche Rückgabe der OpenEntry-Methode, bevor der aufrufende Client vollständig auf das Objekt zugegriffen hat. Wenn auf das Objekt nicht zugegriffen wird, kann durch einen nachfolgenden Objektaufruf ein Fehler ausgelöst werden. 
     
 MAPI_MODIFY 
   
-> Anfragen Lese-/Schreibberechtigung. Standardmäßig werden Objekte mit schreibgeschützten Zugriff geöffnet, und Clients sollte nicht davon ausgehen, dass die Lese-Schreib-Berechtigung gewährt wurde.
+> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte mit Schreibschutz geöffnet, und Clients sollten nicht davon ausgehen, dass Lese-/Schreibzugriff erteilt wurde.
     
  _lpulObjType_
   
-> [out] Ein Zeiger auf den Typ des Objekts geöffnet.
+> Out Ein Zeiger auf den Typ des geöffneten Objekts.
     
  _lppUnk_
   
-> [out] Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
+> Out Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
     
 ## <a name="remarks"></a>Bemerkungen
 
@@ -84,29 +84,29 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Entweder der Benutzer verfügt nicht über ausreichende Berechtigungen zum Öffnen des Objekts oder es wurde versucht, ein nur-Lese-Objekt mit Lese-/Schreibzugriff zu öffnen.
+> Entweder hat der Benutzer unzureichende Berechtigungen zum Öffnen des Objekts oder es wurde versucht, ein schreibgeschütztes Objekt mit Lese-/Schreibzugriff zu öffnen.
     
 MAPI_E_NOT_FOUND 
   
-> Die _LpEntryID_ angegebene Eintrags-ID stellt kein Objekts dar. 
+> Die durch _lpEntryID_ angegebene Eintrags-ID stellt kein Objekt dar. 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Die Eintrags-ID in der _LpEntryID_ -Parameter ist nicht vom durch die Adressbuchanbieter erkanntes Format. 
+> Die Eintrags-ID im _lpEntryID_ -Parameter weist kein vom Adressbuchanbieter erkanntes Format auf. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-MAPI-Aufrufen die **OpenEntry** -Methode, um einen Container öffnen messaging-Benutzer oder eine Verteilerliste. 
+MAPI Ruft die **OpenEntry** -Methode auf, um einen Container, einen Messagingbenutzer oder eine Verteilerliste zu öffnen. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Bevor Sie MAPI Ihrer **OpenEntry** -Methode aufruft, wird festgelegt, dass die Eintrags-ID in der _LpEntryID_ -Parameter für den Benutzer und nicht für einen anderen Anbieter gehört. MAPI wird durch entsprechende [MAPIUID](mapiuid.md) Strukturänderung in die Eintrags-ID mit der **MAPIUID** , die Sie durch Aufrufen der [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) -Methode beim Start registriert. 
+Bevor MAPI Ihre **OpenEntry** -Methode aufruft, bestimmt Sie, dass die Eintrags-ID im _lpEntryID_ -Parameter zu Ihnen gehört und nicht zu einem anderen Anbieter. MAPI bewirkt dies, indem die [MAPIUID](mapiuid.md) -Struktur in der Eintrags-ID mit dem **MAPIUID** abgeglichen wird, den Sie durch Aufrufen der [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md) -Methode beim Start registriert haben. 
   
-Öffnen Sie das Objekt als schreibgeschützt, es sei denn, das Flag MAPI_MODIFY oder MAPI_BEST_ACCESS im _UlFlags_ -Parameter festgelegt ist. Wenn Sie die Änderung für das angeforderte Objekt nicht zulässig ist, keine überhaupt öffnen Sie das Objekt und zurückzugeben Sie MAPI_E_NO_ACCESS. 
+Öffnen Sie das Objekt schreibgeschützt, es sei denn, das MAPI_MODIFY-oder MAPI_BEST_ACCESS-Flag wird im _ulFlags_ -Parameter festgelegt. Wenn Sie keine Änderung für das angeforderte Objekt zulassen, öffnen Sie das Objekt nicht, und geben Sie MAPI_E_NO_ACCESS zurück. 
   
-Wenn MAPI NULL für _LpEntryID_übergibt, öffnen Sie den Stammcontainer in der Containerhierarchie.
+Wenn MAPI für _LPENTRYID_NULL übergibt, öffnen Sie den Stammcontainer in der Containerhierarchie.
   
-Das Objekt, das Sie aufgefordert werden, öffnen Sie möglicherweise ein Objekt aus einem anderen Anbieter kopiert. In diesem Fall wird die Eigenschaft **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) unterstützt. Wenn diese Eigenschaft auf das Objekt unterstützt, rufen Sie die [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md) -Methode zum Binden von Code für diesen Eintrag in der fremden Anbieter auf und übergibt **PR_TEMPLATEID** in der _LpTemplateID_ -Parameter und den Wert 0 in die _ulTemplateFlags _Parameter. **IMAPISupport::OpenTemplateID** übergibt diese Informationen an den foreign Anbieter in einem Aufruf der fremde Anbieter [OpenTemplateID](iablogon-opentemplateid.md) -Methode. Wenn **IMAPISupport::OpenTemplateID** löst einen Fehler aus, in der Regel, da der fremde Anbieter nicht verfügbar ist oder nicht in das Profil enthalten ist versuchen Sie fortfahren, indem Sie den Eintrag ungebundenen als schreibgeschützt behandeln. Weitere Informationen zum Öffnen von Adressbucheinträgen fremden finden Sie unter [als ein Host-Adressbuchanbieter fungiert](acting-as-a-host-address-book-provider.md).
+Das Objekt, das Sie öffnen möchten, kann ein Objekt sein, das von einem anderen Anbieter kopiert wurde. In diesem Fall wird die **PR_TEMPLATEID** ([pidtagtemplateid (](pidtagtemplateid-canonical-property.md))-Eigenschaft unterstützt. Wenn das Objekt diese Eigenschaft unterstützt, rufen Sie die [IMAPISupport::](imapisupport-opentemplateid.md) opentemplatecode-Methode auf, um an Code für diesen Eintrag im fremden Anbieter zu binden, übergeben Sie **PR_TEMPLATEID** im _lpTemplateID_ -Parameter und 0 in der _ulTemplateFlags _-Parameter. **IMAPISupport::** opentemplatecode übergibt diese Informationen an den fremden Anbieter in einem Aufruf der [IABLogon::](iablogon-opentemplateid.md) opentemplated-Methode des fremden Anbieters. Wenn **IMAPISupport::** opentemplatecode einen Fehler auslöst, in der Regel, weil der fremde Anbieter nicht verfügbar ist oder nicht im Profil enthalten ist, versuchen Sie, den ungebundenen Eintrag als schreibgeschützt zu behandeln. Weitere Informationen zum Öffnen von Einträgen für fremde Adressbücher finden Sie unter [fungieren als Host-Adressbuchanbieter](acting-as-a-host-address-book-provider.md).
   
 ## <a name="see-also"></a>Siehe auch
 

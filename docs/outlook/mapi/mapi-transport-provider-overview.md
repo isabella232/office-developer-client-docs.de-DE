@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die MAPI-Transport-Anbieter
+title: Übersicht über den MAPI-Transport Anbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,25 +8,25 @@ api_type:
 - COM
 ms.assetid: b193e819-749e-4642-8afc-dbc47b17b617
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 244dae4d3413587b7a37e93328998b153fb8ece3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 20b03f7c52ec86d1fb554bf69c53947c3dda4f36
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357344"
 ---
-# <a name="mapi-transport-provider-overview"></a>Übersicht über die MAPI-Transport-Anbieter
+# <a name="mapi-transport-provider-overview"></a>Übersicht über den MAPI-Transport Anbieter
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Transportanbieter die Nachrichtenübermittlung und Empfang verarbeiten und Implementieren von Sicherheit, falls dies erforderlich. Sie auch alle erforderlichen vorverarbeitung und übernehmen postprocessing Aufgaben. In der Regel eine Adressbuchhierarchie für jede active messaging-System ist vorhanden.
+Transport Anbieter verarbeiten Nachrichtenübertragung und-Empfang und implementieren ggf. Sicherheit. Sie kümmern sich auch um alle erforderlichen Vorverarbeitungs-und Nachbearbeitungsaufgaben. Es gibt in der Regel einen Transportanbieter für jedes aktive Messagingsystem.
   
-Clientanwendungen kommunizieren mit der Adressbuchhierarchie über einen Anbieter für die Nachricht anmelden. 
+Client Anwendungen kommunizieren mit dem Transportanbieter über einen Nachrichtenspeicher Anbieter. 
   
-Transportanbieter registrieren MAPI, um eine oder mehrere bestimmte Arten von empfangenen Einträge zu behandeln. Wenn eine Nachricht gesendet werden kann, muss MAPI ermitteln, welche Adressbuchhierarchie die Übertragung behandelt werden sollen. MAPI kann für mehrere Adressbuchhierarchie je nach Typ des Empfängers sogar hinzuziehen. Ist eine nicht verfügbare Adressbuchhierarchie die einzige, die den Empfänger verarbeitet werden können, wird der Nachrichtenübermittlung verschoben werden, bis eine Verbindung mit diesem Anbieter wiederhergestellt werden kann.
+Transport Anbieter registrieren sich bei MAPI, um einen oder mehrere bestimmte Typen von Empfänger Einträgen zu behandeln. Wenn eine Nachricht gesendet werden kann, muss MAPI bestimmen, welcher Transportanbieter die Übertragung verarbeiten soll. Je nach Empfängertyp kann MAPI sogar mehrere Transportanbieter aufrufen. Wenn ein nicht verfügbarer Transportanbieter der einzige ist, der den Empfänger verarbeiten kann, wird die Nachrichtenübertragung verschoben, bis eine Verbindung mit diesem Anbieter hergestellt werden kann.
   
-Einige Messagingsysteme sind sichere Systeme. Alle potenzielle Benutzern sind erforderlich, um einen Satz von gültige Anmeldeinformationen eingeben, vor dem Zugriff zulässig ist. MAPI verhindert nicht autorisierten Zugriff auf solchen secure messaging-Systemen, dass der Adressbuchhierarchie Anmeldeinformationen bei der Anmeldung zu überprüfen. 
+Einige Messagingsysteme sind sichere Systeme; alle potenziellen Benutzer müssen eine Reihe gültiger Anmeldeinformationen eingeben, bevor der Zugriff zulässig ist. MAPI verhindert den unbefugten Zugriff auf solche Secure Messaging-Systeme, indem der Transportanbieter Anmeldeinformationen zur Anmeldezeit überprüfen kann. 
   
 

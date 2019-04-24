@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 201ceb76-41bc-4d7b-835d-5196bf3dc234
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b684309211bbc008856311158c67864d958c96a0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8ea7d51b15a6e6acd44a3c0b6158378661f311bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344499"
 ---
 # <a name="sshortarray"></a>SShortArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Werten Ganzzahl ohne Vorzeichen, die verwendet werden, um eine Eigenschaft vom Typ PT_MV_SHORT zu beschreiben.
+Enthält ein Array von Ganzzahlwerten ohne Vorzeichen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_SHORT verwendet werden.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SShortArray
@@ -44,15 +44,15 @@ typedef struct _SShortArray
 
  **cValues**
   
-> Anzahl der Werte im Array auf den Member **Lpi** zeigt. 
+> Die Anzahl der Werte im Array, auf die durch das **LPI** -Element verwiesen wird. 
     
- **lpi**
+ **LPI**
   
-> Zeiger auf ein Array von Werten Ganzzahl ohne Vorzeichen.
+> Zeiger auf ein Array von Ganzzahlwerten ohne Vorzeichen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zu PT_MV_SHORT und anderer Eigenschaftsarten finden Sie unter [Eigenschaftentypen](property-types.md). 
+Weitere Informationen zu PT_MV_SHORT und anderen Eigenschaftstypen finden Sie unter [Property Types](property-types.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

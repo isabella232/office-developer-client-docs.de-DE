@@ -1,5 +1,5 @@
 ---
-title: Tabellen für ausgehende Warteschlange
+title: Tabellen für ausgehende Warteschlangen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,42 +7,42 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 070377ca-ba9e-42ef-ac6b-ff7548b5ccf5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c5f136a0d26b7519bc1b7b3d8f448f5f382767ad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4bf935f58fb20460bbf6baf4b1434be1f3ab8156
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348503"
 ---
-# <a name="outgoing-queue-tables"></a>Tabellen für ausgehende Warteschlange
+# <a name="outgoing-queue-tables"></a>Tabellen für ausgehende Warteschlangen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine ausgehende Warteschlangentabelle enthält Informationen zu allen ausgehenden Nachrichten für einen Nachrichtenspeicher. Nachricht Anbieter implementieren ausgehende Warteschlange Tabellen für die MAPI-Warteschlange verwendet. Speicher, die nicht das Senden oder Empfangen von Nachrichten muss in dieser Tabelle nicht implementieren. 
+Eine Tabelle für ausgehende Warteschlangen enthält Informationen zu allen ausgehenden Nachrichten für einen Nachrichtenspeicher. Nachrichtenspeicher Anbieter implementieren ausgehende Warteschlangentabellen für die zu verwendende MAPI-Spooler. Speicher, die das Senden oder empfangen von Nachrichten nicht unterstützen, müssen diese Tabelle nicht implementieren. 
   
-Die MAPI-Warteschlange die [IMsgStore::GetOutgoingQueue](imsgstore-getoutgoingqueue.md) -Methode aufgerufen, um eine ausgehende Warteschlangentabelle zuzugreifen. 
+Um auf eine Tabelle für ausgehende Warteschlangen zuzugreifen, ruft der MAPI-Spooler die [IMsgStore:: GetOutgoingQueue](imsgstore-getoutgoingqueue.md) -Methode auf. 
   
-Es ist eine Voraussetzung, dass Nachrichten vorverarbeitet und an der Adressbuchhierarchie in der gleichen Reihenfolge übermittelt werden, wie sie von der Clientanwendung gesendet wurden. Die MAPI-Warteschlange dient zum Akzeptieren von Nachrichten aus dem Nachrichtenspeicher in aufsteigender Reihenfolge der Zeitpunkt der Übermittlung. Aufgrund dieser Anforderung kann es einige Zeit dauern bevor einige Nachrichten in der ausgehenden Warteschlangentabelle angezeigt werden. 
+Es ist erforderlich, dass Nachrichten vorverarbeitet und an den Transportanbieter in der gleichen Reihenfolge übermittelt werden, in der Sie von der Clientanwendung gesendet wurden. Die MAPI-Spooler wurde entwickelt, um Nachrichten aus dem Nachrichtenspeicher in aufsteigender Reihenfolge der Übermittlungszeit zu akzeptieren. Aufgrund dieser Anforderung kann es einige Verzögerungen geben, bevor einige Nachrichten in der Tabelle für ausgehende Warteschlangen angezeigt werden. 
   
-Nachrichtenspeicher sollte entweder zulassen, damit die MAPI-Warteschlange der Nachrichten vom Zeitpunkt der Übermittlung sortieren oder die Sortierreihenfolge werden sollte, aufsteigend Zeitpunkt der Übermittlung der ausgehenden Warteschlangentabelle sortieren. 
+Nachrichtenspeicher sollten entweder die Sortierung in der Tabelle für ausgehende Warteschlangen zulassen, sodass der MAPI-Spooler die Nachrichten nach der Übermittlungszeit sortieren kann, oder die Standardsortierreihenfolge sollte von aufsteigender Übermittlungszeit sein. 
   
-Die ausgehende Warteschlangentabelle muss Benachrichtigungen senden, wenn der Inhalt der Warteschlange geändert wird.
+Die Tabelle für ausgehende Warteschlangen muss Benachrichtigungen senden, wenn sich der Inhalt der Warteschlange ändert.
   
-Die folgenden Eigenschaften bilden die erforderliche Spalte in ausgehenden Warteschlange Tabellen festzulegen:
+Die folgenden Eigenschaften bilden den erforderlichen Spaltensatz in Tabellen für ausgehende Warteschlangen:
   
 |||
 |:-----|:-----|
-|**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |**PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md))  <br/> |
+|**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |**PR_DISPLAY_BCC** ([Pidtagdisplaybcc (](pidtagdisplaybcc-canonical-property.md))  <br/> |
 |**PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))  <br/> |**PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))  <br/> |
 |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |
-|**PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md))  <br/> |**PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md))  <br/> |
-|**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |**PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |
-|**PR_SUBMIT_FLAGS** ([PidTagSubmitFlags](pidtagsubmitflags-canonical-property.md))  <br/> | <br/> |
+|**PR_MESSAGE_SIZE** ([Pidtagmessagesize (](pidtagmessagesize-canonical-property.md))  <br/> |**PR_PRIORITY** ([Pidtagpriority (](pidtagpriority-canonical-property.md))  <br/> |
+|**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |**PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |
+|**PR_SUBMIT_FLAGS** ([Pidtagsubmitflags (](pidtagsubmitflags-canonical-property.md))  <br/> | <br/> |
    
-Weitere Informationen darüber, wie die ausgehende Warteschlangentabelle verwendet wird finden Sie unter [Nachrichten Zeichenfolgeneigenschaften verwenden Nachricht senden](sending-messages-by-using-message-store-providers.md).
+Weitere Informationen zur Verwendung der Tabelle für ausgehende Warteschlangen finden Sie unter [Senden von Nachrichten mithilfe von Nachrichtenspeicher Anbietern](sending-messages-by-using-message-store-providers.md).
   
 ## <a name="see-also"></a>Siehe auch
 

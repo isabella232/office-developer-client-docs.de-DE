@@ -12,38 +12,38 @@ api_type:
 - COM
 ms.assetid: 310cba9a-a343-484d-a029-fcd51b731460
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 41c4ee65ce6ae8f2e0d978f1e2bd95adb4f5872a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 32a0051207ae34f919523fbfe3e01601b7ea5d2a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350904"
 ---
 # <a name="imapiclientshutdowndofastshutdown"></a>IMAPIClientShutdown::DoFastShutdown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass der MAPI-Client der Client sofort zu beenden.
+Gibt an, dass der MAPI-Client sofort den Clientprozess beenden soll.
   
 ```cpp
 HRESULT DoFastShutdown ();
 ```
 
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> MAPI-Subsystems hat geladen MAPI-Anbieter angegeben, dass der MAPI-Client wird sofort beendet, und die MAPI-Anbieter bereit für den Client beenden sind.
+> Das MAPI-Subsystem hat den geladenen MAPI-Anbietern angezeigt, dass der MAPI-Client sofort beendet wird, und die MAPI-Anbieter sind bereit für den Client-Exit.
     
 MAPI_E_NO_SUPPORT
   
-> MAPI-Subsystems bietet keine Unterstützung für schnelle Herunterfahren von Clients.
+> Das MAPI-Subsystem unterstützt das schnelle Herunterfahren des Clients nicht.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Verlust von Daten über das schnelle Herunterfahren von einem MAPI-Client zu vermeiden, sollten MAPI-Clients die basierend auf dem S_OK Ergebnis des MAPI-Subsystems in zurückgegebene [IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) und **IMAPIClientShutdown::DoFastShutdown** -Methoden aufrufen. die [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode. Weitere Informationen finden Sie unter [Bewährte Methoden für Schnelles Herunterfahren](best-practices-for-fast-shutdown.md).
+Um Datenverluste beim schnellen Herunterfahren eines MAPI-Clients zu vermeiden, sollten MAPI-Clients die [IMAPIClientShutdown:: NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) und **IMAPIClientShutdown::D ofastshutdown** -Methoden basierend auf dem vom MAPI-Subsystem zurückgegebenen Ergebnis S_OK in die [IMAPIClientShutdown:: QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode. Weitere Informationen finden Sie unter [bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md).
   
 ## <a name="see-also"></a>Siehe auch
 

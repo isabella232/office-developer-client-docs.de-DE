@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d0d003b0-f12f-4422-b71f-26886169461f
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 73a4c07c69fb10044cba6e9368cd4bc86c11ad54
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a8ec06fd0401a129e08a06acdb1c18785f90d4a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348755"
 ---
 # <a name="imsgstorenotifynewmail"></a>IMsgStore::NotifyNewMail
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Informiert den Nachrichtenspeicher, den eine neue Nachricht empfangen hat. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
   
@@ -39,13 +39,13 @@ HRESULT NotifyNewMail(
   
 > [in] Ein Zeiger auf eine [Benachrichtigung](notification.md) -Struktur, die Benachrichtigung �ber eine neue Nachricht beschreibt. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Nachrichtenspeicher wurde erfolgreich benachrichtigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::NotifyNewMail** -Methode wird aufgerufen, durch die MAPI-Warteschlange, um dem Nachrichtenspeicher zu informieren, dass eine Nachricht f�r die �bermittlung bereit ist. 
   

@@ -1,5 +1,5 @@
 ---
-title: Arten von Clientanwendungen
+title: Arten von Client Anwendungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,43 +8,43 @@ api_type:
 - COM
 ms.assetid: 52ce22a9-3ec2-481c-bb91-7a5bcca817f5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 783b8972c29b80e1005f0d55e00487dd0e2757b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 167710243c61a7226375b88977c94ff4a517c1c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356560"
 ---
-# <a name="types-of-client-applications"></a>Arten von Clientanwendungen
+# <a name="types-of-client-applications"></a>Arten von Client Anwendungen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Es gibt hauptsächlich zwei Arten von messaging-Clients:, die Nachrichten zwischen Personen (IPM) behandelt, und die Verarbeitung von Nachrichten prozessübergreifenden Kommunikation (IPK). In dieser Typen kann messaging-Clientanwendungen wie folgt kategorisiert:
+Es gibt in erster Linie zwei Arten von Messagingclients: solche, die zwischenmenschliche Nachrichten (IPM) und die Interprocess Communication (IPC)-Nachrichten verarbeiten. Innerhalb dieser Typen können Messaging-Clientanwendungen wie folgt kategorisiert werden:
   
-- Zwischen Personen
+- Person-zu-Person
     
-- Person-zu-Computer
+- Person-zu-Maschine
     
-- Computer-zu-person
+- Computer-zu-Person
     
-- Computer-zu-Computer
+- Machine-to-Machine
     
-- Kombination von Personen und Computern
+- Kombination aus Personen und Maschinen
     
-Person Applications umfassen eine Person, die den Austausch von Nachrichten und eine andere Person reagieren initiieren. Diese Kategorie von Anwendungen umfasst herkömmlichen e-Mail-Programmen sowie weitere strukturierte Austausch wie dokumentgenehmigung routing oder Ausgaben.
+Bei der Person-zu-Person-Anwendung handelt es sich um eine Person, die den Austausch von Nachrichten initiiert und eine andere Person reagiert. Diese Anwendungskategorie umfasst herkömmliche e-Mail-Anwendungen sowie strukturiertere Exchange-Dokumente wie Dokumentweiterleitung oder Spesen Genehmigung.
   
-Person-zu-Computer-Applikationen umfassen eine Person, die den Austausch von Nachrichten und ein Computer reagiert initiieren. Zu dieser Kategorie gehören, e-Mail an, beispielsweise eine Datenbankabfrage übermitteln oder Abonnieren einer Mailingliste verwenden.
+Bei der Person-zu-Machine-Anwendung handelt es sich um eine Person, die den Austausch von Nachrichten initiiert und eine Maschine reagiert. Diese Kategorie enthält Anwendungen, die e-Mails verwenden, um beispielsweise eine Datenbankabfrage zu übermitteln oder eine Mailingliste zu abonnieren.
   
-Computer-zu-Person Applications umfassen ein Computers, der den Austausch von Nachrichten und eine Person reagieren initiieren. Zu dieser Kategorie gehören Applications, von die Dokumente wie Newsfeeds und Umfragen Opinion verteilt.
+Computer-zu-Person-Anwendungen umfassen einen Computer, der den Austausch von Nachrichten initiiert und eine Person reagiert. Diese Kategorie enthält Anwendungen, die Dokumente wie Nachrichten Feeds und Meinungsumfragen verteilen.
   
-Computer-zu-Computer-Applikationen umfassen ein Computers, der den Austausch von Nachrichten und ein Computer reagiert initiieren. Zu dieser Kategorie gehören Anwendungen wie Link Heartbeat-Überwachung und Verzeichnis und Datenbank-Replikation.
+Machine-to-Machine-Anwendungen umfassen einen Computer, der den Austausch von Nachrichten initiiert, und eine Maschine reagiert. Diese Kategorie umfasst Anwendungen wie die Überwachung von Link Takten und die Verzeichnis-und Datenbankreplikation.
   
-Die letzte Kategorie eine Kombination von Personen und Computern, umfasst ein komplexeres Szenario. Zu dieser Kategorie gehören Anwendungen, die nicht notwendigerweise Nachrichten zwischen Absender und Empfänger übertragen werden. Stattdessen können sie diese direkt in einem öffentlichen Ordner oder in einem Website Forum unterstützt durch einen Nachrichtenspeicher buchen. Die Nachrichten können von anderen Leser, ein Administrator oder ein Agent Software klicken Sie dann bei Bedarf genutzt werden.
+Die letzte Kategorie, eine Kombination aus Personen und Maschinen, beinhaltet ein komplexeres Szenario. Diese Kategorie enthält Anwendungen, die nicht notwendigerweise Nachrichten zwischen Absendern und Empfängern übertragen. Stattdessen können Sie diese direkt in einem öffentlichen Ordner oder in einem von einem Nachrichtenspeicher unterstützten Website-Forum veröffentlichen. Die Nachrichten können dann bei Bedarf von anderen Lesern, einem Administrator oder einem Software-Agent verwendet werden.
   
-Wenn Sie eine Person-Anwendung, Computer-zu-Person-Anwendung oder eine Anwendung, die Nachrichten an Öffentliche Foren zurücksendet schreiben, Entwerfen Sie Ihre Anwendung senden und Empfangen von Nachrichten IPM. Wenn Sie eine Person-zu-Computer oder Computer-zu-Computer-Anwendung schreiben, können sie für konzipiert IPK Nachrichten senden und empfangen. Eine beliebige Anwendung, die die Interaktion eines Benutzers human erfordert muss IPM-Nachrichten unterstützen. Clientanwendungen, die häufig von Benutzern und Computern in einer Vielzahl von Szenarien betreffen müssen IPM und IPK Nachrichten unterstützt. Der einzige Unterschied zwischen den zwei Klassen ist, dass IPM-Nachrichten in einen Nachrichtenspeicher für Benutzer von messaging-Clients angezeigt werden, während IPK Nachrichten in der Regel nicht an die Client-Anwendungsbenutzer sichtbar sind. 
+Wenn Sie eine Person-zu-Person-Anwendung, eine Computer-zu-Person-Anwendung oder eine Anwendung schreiben, die Nachrichten in öffentliche Foren übermittelt, entwerfen Sie Ihre Anwendung, um IPM-Nachrichten zu senden und zu empfangen. Wenn Sie eine Person-zu-Maschine-oder Maschine-zu-Maschine-Anwendung schreiben, kann Sie zum Senden und empfangen von IPC-Nachrichten entwickelt werden. Jede Anwendung, die die Interaktion eines menschlichen Benutzers erfordert, muss IPM-Nachrichten unterstützen. Anwendungen, die sowohl Personen als auch Computer in einer Vielzahl von Szenarien einbeziehen, müssen häufig sowohl IPM-als auch IPC-Nachrichten unterstützen. Der einzige wirkliche Unterschied zwischen den beiden Klassen besteht darin, dass IPM-Nachrichten in einem Nachrichtenspeicher für Benutzer von Messagingclients sichtbar sind, während IPC-Nachrichten für die Client Anwendungsbenutzer normalerweise nicht sichtbar sind. 
   
-Statt beschränken Ihre Nachrichten an die Funktionen von MAPI-Contain IPM und IPK, können Sie anpassen und erweitern diese Klassen, indem Sie neue IPM oder IPK Unterklassen erstellen. Erstellen von Nachricht Unterklassen umfasst gleichzeitig neue Nachrichtenklassen, die von der übergeordneten Klassen erben. Beispielsweise wenn die Person Anwendung Customer Relationship Management unterstützt, können Sie Unterklasse der IPM übergeordneten Klasse durch die Definition einer IPM. Contact.Customer-Klasse und Erstellen von Eigenschaften, die einen Kunden zu beschreiben. Zusätzlich zur Unterstützung von diese benutzerdefinierten Eigenschaften, Ihre IPM. Contact.Customer Nachrichten werden vom IPM-Nachrichten, die alle unterstützten Eigenschaften erben.
+Anstatt Ihre Nachrichten auf die von der MAPI und IPC bereitgestellten Funktionen einzuschränken, können Sie diese Klassen anpassen und erweitern, indem Sie neue IPM-oder IPC-Unterklassen erstellen. Das Erstellen von Nachrichten Unterklassen umfasst das erfinden neuer Nachrichtenklassen, die von den SuperClasses erben. Wenn sich Ihre Person-zu-Person-Anwendung beispielsweise auf die Verwaltung von Kundenbeziehungen spezialisiert hat, können Sie die IPM-Oberklasse durch Definieren einer IPM-Klasse Unterklassen. Contact. Customer-Klasse und Erstellen von Eigenschaften, die einen Kunden beschreiben. Zusätzlich zur Unterstützung dieser benutzerdefinierten Eigenschaften kann Ihre IPM. Contact. Customer-Nachrichten erben die von allen IPM-Nachrichten unterstützten Eigenschaften.
   
 

@@ -1,37 +1,37 @@
 ---
-title: Erhalten Sie eine Kontakte Nachricht erhält eine Kontakte Buch Adresseintrag
+title: Abrufen einer Kontakt Nachricht bei Adressbucheinträgen für Kontakte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a263894b-b3da-f1e4-a7da-ca3695bddc94
-description: 'Zuletzt geändert: 13 August 2013'
-ms.openlocfilehash: 472b5847053c0a18026c76b8055a26551331d8dd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 13 August, 2013'
+ms.openlocfilehash: be988a3036c2d882f65e2e588cc9a40bfda146a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345955"
 ---
-# <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>Erhalten Sie eine Kontakte Nachricht erhält eine Kontakte Buch Adresseintrag
+# <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>Abrufen einer Kontakt Nachricht bei Adressbucheinträgen für Kontakte
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Beispiel in C++ `HrOpenContact`, die zeigt, wie die [CONTAB_ENTRYID](contab_entryid.md) -Struktur, die einen Eintrag in einem Adressbuch Kontakte die zugehörige MAPI Kontakt Meldung erhalten identifiziert. 
+Dieses Thema enthält ein Beispiel in C++ `HrOpenContact`, das zeigt, wie die [CONTAB_ENTRYID](contab_entryid.md) -Struktur verwendet wird, die einen Eintrag in einem Adressbuch für Kontakte identifiziert, um die zugehörige MAPI-Kontakt Nachricht abzurufen. 
   
 `HrOpenContact`hat die folgenden Parameter: 
   
--  *LpSession* ist ein Eingabeparameter, die die aktuelle Sitzung darstellt. **LPMAPISESSION** in der MAPI-Header-Datei mapix.h definiert ist, als Zeiger auf [IMAPISession: IUnknown](imapisessioniunknown.md).
+-  *lpSession* ist ein Eingabeparameter, der die aktuelle Sitzung darstellt. **LPMAPISESSION** ist in der MAPI-Headerdatei mapix. h als Zeiger auf [IMAPISession: IUnknown](imapisessioniunknown.md)definiert.
     
--  *CbEntryID* ist ein Eingabeparameter, der die Größe des Bezeichners Eintrag *LpEntryID* zugeordnet. 
+-  *cbEntryID* ist ein Eingabeparameter, der die Größe der mit *lpEntryID* verknüpften Eintrags-ID darstellt. 
     
--  *LpEntryID* ist ein Eingabeparameter, einen Zeiger auf die Eintrags-ID eines Eintrags im Adressbuch eines Kontakts darstellt. 
+-  *lpEntryID* ist ein Eingabeparameter, der einen Zeiger auf den Eintragsbezeichner eines Eintrags in einem Kontakt Adressbuch darstellt. 
     
--  *UlFlags* ist ein Eingabeparameter, der eine Bitmaske mit Objekt Access Flags, die der Kontakt MAPI-Nachricht darstellt. 
+-  *ulFlags* ist ein Eingabeparameter, der eine Bitmaske darstellt, die Objektzugriffs Kennzeichen für die MAPI-Kontakt Nachricht enthält. 
     
--  *LpContactMessage* ist ein Output-Parameter, der einen Zeiger auf die Nachricht MAPI-Kontakt an. 
+-  *lpContactMessage* ist ein Ausgabeparameter, der einen Zeiger auf die MAPI-Kontakt Nachricht darstellt. 
     
-Um die zugrunde liegenden MAPI-Kontakt Nachricht öffnen `HrOpenContact` zuerst wandelt *LpEntryID* auf einen Zeiger auf **CONTAB_ENTRYID**. Es ruft dann [IMAPISession::OpenEntry](imapisession-openentry.md) zum Abrufen von MAPI-Kontakt-Nachricht, die als Parameter übergeben, die Felder *Cbeid* und *Abeid* des Eintrags im Adressbuch Kontakte, die jeweils die Größe des Eintrags-ID identifizieren und die Kennzeichnung der Kontakt MAPI-Nachricht. 
+Um die zugrunde liegende MAPI- `HrOpenContact` Kontakt Nachricht zu öffnen, wandelt *lpEntryID* zunächst in einen Zeiger auf **CONTAB_ENTRYID**. Anschließend wird [IMAPISession:: OpenEntry](imapisession-openentry.md) aufgerufen, um die MAPI-Kontakt Nachricht abzurufen und als Parameter die Felder *cbeid* und *Abeid* des Eintrags im Adressbuchkontakte zu übergeben, die die Größe der Eintrags-ID und die Eintragsbezeichner der MAPI-Kontakt Nachricht. 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

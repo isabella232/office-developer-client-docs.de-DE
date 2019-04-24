@@ -1,5 +1,5 @@
 ---
-title: Message-Dienste und Profile
+title: Nachrichtendienste und Profile
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,50 +8,50 @@ api_type:
 - COM
 ms.assetid: df0db1e4-69c8-44ec-bb2a-d31fc8a564b9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 60a102a68ee11cd6002be9edf47d0cee93ed2e15
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 78a13bacf13b019bbf9436830ad66db7fdfaf425
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356960"
 ---
-# <a name="message-services-and-profiles"></a>Message-Dienste und Profile
+# <a name="message-services-and-profiles"></a>Nachrichtendienste und Profile
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einige Benutzer benötigen die Dienste von verschiedenen Messagingsystemen, jeweils mit mindestens einem Dienstanbieter. Da es ist schwierig zu installieren und konfigurieren Sie jeden dieser Dienstanbieter einzeln und messaging-Server in der Regel eine Gruppe von verwandten Anbieter alle seine Funktionen verfügbar machen muss, enthält MAPI das Konzept eines Diensts Nachricht. Message-Dienste unterstützen Benutzer beim Installieren und Konfigurieren von ihren Dienstanbieter.
+Einige Benutzer benötigen die Dienste mehrerer Messagingsysteme, die jeweils einen oder mehrere Dienstanbieter aufweisen. Da es umständlich ist, jeden dieser Dienstanbieter einzeln zu installieren und zu konfigurieren, und da ein Messaging Server in der Regel eine Gruppe verwandter Anbieter benötigt, um alle Funktionen verfügbar zu machen, enthält MAPI das Konzept eines Nachrichtendiensts. Nachrichtendienste helfen Benutzern bei der Installation und Konfiguration Ihrer Dienstanbieter.
   
-Erstellen eines Diensts Nachricht ein Entwickler schreibt eine Nachricht-Diensteintrag Point-Programm, die Konfiguration der einzelnen Anbieter in der Dienst und ein Setup-Programm für folgende Aufgaben behandelt:
+Zum Erstellen eines Nachrichtendiensts schreibt ein Entwickler ein Entry Point-Programm für den Nachrichtendienst, um die Konfiguration der einzelnen Anbieter im Dienst und ein Setupprogramm für Folgendes zu übernehmen:
   
-- Installieren Sie aller Dienstanbieter im Dienst.
+- Installieren Sie jeden Anbieter im Dienst.
     
-- Erstellen Sie Registrierung und Initialisierung Einträge in der Datei.
+- Erstellen Sie Registrierungs-und Initialisierungsdatei Einträge.
     
-- Erstellen Sie Einträge in der MAPI-Konfigurationsdatei Mapisvc.inf.
+- Erstellen Sie Einträge in der MAPI-Konfigurationsdatei MAPISVC. inf.
     
-Die Datei "Mapisvc.inf" enthält Informationen zur Konfiguration aller Message-Dienste und-Dienstanbieter, die auf dem Computer installiert. Es wird mit jeder verknüpft zur nächsten Stufe in hierarchische Abschnitten angeordnet. Klicken Sie oben sind drei Abschnitte, die Folgendes enthalten: 
+Die Datei MAPISVC. inf enthält Informationen zur Konfiguration aller Nachrichtendienste und Dienstanbieter, die auf dem Computer installiert sind. Sie ist in hierarchischen Abschnitten gegliedert, wobei jede Ebene mit der nächsten verknüpft ist. Oben befinden sich drei Abschnitte, die Folgendes enthalten: 
   
-- Eine Liste der Nachricht Service-Hilfedateien.
+- Eine Liste der Hilfedateien des Nachrichtendiensts.
     
-- Eine Liste der wichtigsten oder in der Standardeinstellung Message-Dienste.
+- Eine Liste der wichtigsten oder standardmäßigen Nachrichtendienste.
     
 - Eine Liste aller Dienste auf dem Computer.
     
-Die nächste Ebene enthält Abschnitte für jeden Nachrichtendienst und die letzte Ebene enthält Abschnitte für jeden Anbieter in einem Dienst. MAPI erfordert, dass Entwickler der Dienstanbieter und Message Dienste Mapisvc.inf bestimmte Einträge hinzufügen. Entwickler können ihre eigenen Ermessen anderen Einträge hinzufügen. Die meisten Informationen in Mapisvc.inf letztendlich in eine oder mehrere Profile, eine Auflistung von Konfigurationsinformationen für eines Benutzers bevorzugte Satz von Message-Dienste. Da mehrere Benutzer über einen Computer verfügen kann und ein einzelner Benutzer kann mehrere Sätze von Voreinstellungen haben, können auf einem Computer viele Profile vorhanden. Jedes Profil wird eine andere Menge von Message-Dienste beschrieben. Mehrere Profile ermöglicht einen Benutzer, beispielsweise zu Hause einen Satz mit einem anderen Satz von Message-Dienste und sich im Büro entwickelt.
+Die nächste Ebene enthält Abschnitte für jeden Nachrichtendienst, und die letzte Ebene enthält Abschnitte für jeden Dienstanbieter in einem Dienst. MAPI erfordert, dass Entwickler von Dienstanbietern und Nachrichtendiensten bestimmte Einträge zu MAPISVC. inf hinzufügen; Entwickler können weitere Einträge nach eigenem Ermessen hinzufügen. Die meisten Informationen in MAPISVC. inf enden in einem oder mehreren Profilen, einer Sammlung von Konfigurationsinformationen für die bevorzugten Nachrichtendienste eines Benutzers. Da ein Computer mehrere Benutzer haben kann und ein einzelner Benutzer über mehrere Einstellungssätze verfügen kann, können viele Profile auf einem Computer vorhanden sein. Jedes Profil beschreibt einen anderen Satz von Nachrichtendiensten. Durch die Verwendung mehrerer Profile kann ein Benutzer beispielsweise zu Hause mit einem Satz von Nachrichtendiensten und im Büro mit einem anderen Satz arbeiten.
   
-Profile werden während der Installation von Message Service oder Anmeldung von einer Clientanwendung erstellt, die Konfiguration unterstützt. MAPI bietet zwei solche Client Applications: eines Systemsteuerungsobjekts und der Profil-Assistent. Das Systemsteuerungselement ist eine kompletter Service Configuration-Anwendung, mit der Benutzer können erstellen, löschen, bearbeiten, und Kopieren von Profilen sowie nehmen Sie Änderungen vor, um die Einträge in einem Profil. Der Profil-Assistent ist eine einfache Anwendung, die mit dem Hinzufügen einer Messagingdiensts zu einem Profil so einfach wie möglich. Der Profil-Assistent besteht aus einer Reihe von Dialogfeldern, aufgerufen, die den Benutzer durch den Prozess der Installation und Konfiguration eines Diensts auffordern Eigenschaftenseiten. Der Benutzer ist nur für Werte für die wichtigsten Einstellungen aufgefordert. Alle anderen Einstellungen erben die Standardwerte. Nachdem das Profil erstellt wurde, sind Benutzer nicht zulässig, um Änderungen vorzunehmen. 
+Profile werden bei der Installation oder Anmeldezeit des Nachrichtendiensts von einer Clientanwendung erstellt, die Konfigurationsunterstützung bereitstellt. MAPI bietet zwei solcher Clientanwendungen: ein Element der Systemsteuerung und den Profil-Assistenten. Bei dem Element der Systemsteuerung handelt es sich um eine vollständige Konfigurationsanwendung, mit der Benutzerprofile erstellen, löschen, bearbeiten und kopieren sowie Änderungen an den Einträgen in einem Profil vornehmen können. Der Profil-Assistent ist eine einfache Anwendung, die das Hinzufügen eines Nachrichtendiensts zu einem Profil so einfach wie möglich macht. Der Profil-Assistent besteht aus einer Reihe von Dialogfeldern, die als Eigenschaftenseiten bezeichnet werden und den Benutzer bei der Installation und Konfiguration eines Diensts auffordern. Der Benutzer wird nur für Werte für die kritischsten Einstellungen aufgefordert; alle anderen Einstellungen erben die Standardwerte. Nachdem das Profil erstellt wurde, dürfen Benutzer keine Änderungen vornehmen. 
   
-Während der das Systemsteuerungselement immer über die Systemsteuerung aufgerufen wird, sind eine Vielzahl von Szenarien, in denen der Profil-Assistent aus aufgerufen werden. Clientanwendungen können Aufrufen der Profil-Assistent zum Erstellen eines Standardprofils bei der Anmeldung, wenn eine nicht noch erstellt wurde. Statt die Implementierung von Code zum Hinzufügen eines Profils, kann das Systemsteuerungselement oder einer anderen Clientanwendung auf die Funktionalität bereits in der Profil-Assistent verlassen. Ein Nachrichtendienst kann im zugehörigen Eintrag Punkt der Profil-Assistent beim Aufrufen der Dienst muss das Standardprofil hinzugefügt werden. Message-Dienste, die den Profil-Assistenten verwenden, müssen ein zusätzlicher Eintrag-Funktion und standardmäßigen Windows-Dialogfeld Feld Prozedur schreiben. Der Profil-Assistent Ruft die Eintrags-Funktion, um im Dialogfeld Konfiguration des Dienstes abzurufen, während das Dialogfeld Feld Verfahren die Nachrichten, die generiert werden verarbeitet, wenn das Dialogfeld verwendet wird. 
+Während das Element der Systemsteuerung immer über die Systemsteuerung aufgerufen wird, gibt es eine Reihe von Szenarien, die dazu führen können, dass der Profil-Assistent aufgerufen wird. Client Anwendungen können den Profil-Assistenten aufrufen, um ein Standardprofil zum Zeitpunkt der Anmeldung zu erstellen, wenn noch keine erstellt wurde. Anstatt Code erneut zu implementieren, um ein Profil hinzuzufügen, kann das Element der Systemsteuerung oder eine andere Clientanwendung die Funktionen verwenden, die sich bereits im Profil-Assistenten befinden. Ein Nachrichtendienst kann in seiner Einstiegspunktfunktion den Profil-Assistenten aufrufen, wenn der Dienst dem Standardprofil hinzugefügt werden muss. Nachrichtendienste, die den Profil-Assistenten verwenden, müssen eine zusätzliche Einstiegspunktfunktion und eine Windows-Standarddialogfelder-Prozedur schreiben. Der Profil-Assistent ruft die Einstiegspunktfunktion auf, um das Konfigurationsdialogfeld des Diensts abzurufen, während die Dialogfeldprozedur die Nachrichten verarbeitet, die bei Verwendung dieses Dialogfelds generiert werden. 
   
-Profile sind in der Datei "Mapisvc.inf" ähnlich wie organisiert. Profile haben hierarchische Abschnitte verknüpft. Service Provider eigenen Abschnitte in der untersten Ebene, Message Dienste besitzen Abschnitte in der mittleren Ebene, und MAPI Abschnitte in der höchsten Ebene besitzt. Jeder Abschnitt wird durch eine eindeutige ID, die als eine [MAPIUID](mapiuid.md)bezeichnet identifiziert. Die MAPI-Abschnitte enthalten Informationen, die interne MAPI, wie die IDs aller die Nachricht Service Profil Abschnitte und Links zu den anderen Abschnitten. Jeder Abschnitt Nachricht Service speichert Links zu den Abschnitten Anbieter und jede Anbieterabschnitt speichert einen Link zu einem Abschnitt Service. 
+Profile werden ähnlich wie die Datei "Mapisvc. inf" organisiert. Profile haben verknüpfte hierarchische Abschnitte; Dienstanbieter eigene Abschnitte in der untersten Ebene, Nachrichtendienste eigene Abschnitte in der mittleren Ebene und MAPI besitzt Abschnitte auf höchster Ebene. Jeder Abschnitt wird mit einem eindeutigen Bezeichner identifiziert, der als [MAPIUID](mapiuid.md)bezeichnet wird. Die MAPI-Abschnitte enthalten interne Informationen zu MAPI, wie die Bezeichner aller Profile des Nachrichtendienst Profils und Links zu den einzelnen Abschnitten. Jeder Nachrichtendienst Abschnitt speichert Links zu seinen Anbieter Abschnitten, und jeder Anbieterabschnitt speichert einen Link zu seinem Dienst Abschnitt. 
   
-Die folgende Abbildung zeigt den Inhalt der beiden typische Profile. SAM hat zwei Profile auf seinem Computer, einen für die private Nutzung und einen für die Verwendung von Office. Das private Profil enthält drei Message-Dienste. Nachricht Service X ist ein einzelner Anbieterdienst für die adressbuchverwaltung. Nachricht Services Y und Z haben drei Anbieter – Adressbuch-Dienstanbieter, eine Nachricht Speicheranbieter und eines Transportdienstes. SAM Arbeit Profil enthält zwei unterschiedlichen Nachrichten, die Dienste, von die jedes Adressbuch-Dienstanbieter, eine Nachricht Speicheranbieter und eines Transportdienstes hat. 
+Die folgende Abbildung zeigt die Inhalte von zwei typischen Profilen. Sam hat zwei Profile auf seinem Computer, eine für die private Nutzung und eine für die Office-Verwendung. Das Startprofil enthält drei Nachrichtendienste. Message Service X ist ein einzelner Anbieterdienst für die Adressbuchverwaltung. Nachrichtendienste Y und Z verfügen über drei Anbieter: einen Adressbuchanbieter, einen Nachrichtenspeicher Anbieter und einen Transportanbieter. Sams Arbeitsprofil enthält zwei verschiedene Nachrichtendienste, von denen jeder einen Adressbuchanbieter, einen Nachrichtenspeicher Anbieter und einen Transportanbieter besitzt. 
   
 **Profilbeispiel**
   
-![Profilbeispiel] (media/amapi_56.gif "Profilbeispiel")
+![Profil Beispiel] (media/amapi_56.gif "Profil Beispiel")
   
-Die folgende Abbildung zeigt ein Profil, das zwei Nachrichtendienste enthält. Der Code zum Installieren und Konfigurieren der Dienstanbieter, die den Dienst angehören, befindet sich in derselben DLL-Datei wie der Code für den Anbieter. Dieser Code liest Informationen aus dem Profil bei der Anmeldung die-Dienstanbieter zu konfigurieren, und sie werden aufgefordert, den Benutzer, wenn möglich und gegebenenfalls fehlende Informationen. Durch diesen Code allgemeine gekennzeichnete auch Anfragen von einem Client anzeigen oder Ändern von Konfigurationseinstellungen für den Anbieter.
+Die folgende Abbildung zeigt ein Profil mit zwei Nachrichtendiensten. Der Code für die Installation und Konfiguration der Dienstanbieter, die zum Nachrichtendienst gehören, befindet sich in derselben DLL wie der Code für die Anbieter. Dieser Code liest Informationen aus dem Profil bei der Anmeldung, um die Dienstanbieter zu konfigurieren, und fordert den Benutzer auf, wenn möglich und erforderlich, fehlende Informationen zu erhalten. Anforderungen von einem Client zum Anzeigen oder Ändern von Konfigurationseinstellungen für einen der Anbieter werden ebenfalls durch diesen gemeinsamen Code behandelt.
   
 **Installieren und Konfigurieren von Serviceanbietern**
   
@@ -60,5 +60,5 @@ Die folgende Abbildung zeigt ein Profil, das zwei Nachrichtendienste enthält. D
 ## <a name="see-also"></a>Siehe auch
 
 - [MAPIUID](mapiuid.md)
-- [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
+- [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
 

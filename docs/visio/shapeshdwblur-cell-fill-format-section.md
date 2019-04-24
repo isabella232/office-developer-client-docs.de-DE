@@ -1,26 +1,26 @@
 ---
-title: ShapeShdwBlur Cell (Fill Format Section)
+title: ShapeShdwBlur Cell (Fill Format section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 90ace659-d979-43e1-ac64-25af3ec5d666
-description: Bestimmt die Größe des der Blur für den Schatten eines Shapes, die in Punkt (0,00 zu 100.00).
-ms.openlocfilehash: 87502e9e34252afa81aca1c480e2b1c61b2effaa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Größe der Unschärfe für den Schatten einer Form in Punkt (0,00 bis 100,00).
+ms.openlocfilehash: ae559cbb183266dbba3ed0e98c98d24db71f3b58
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349175"
 ---
-# <a name="shapeshdwblur-cell-fill-format-section"></a>ShapeShdwBlur Cell (Fill Format Section)
+# <a name="shapeshdwblur-cell-fill-format-section"></a>ShapeShdwBlur Cell (Fill Format section)
 
-Bestimmt die Größe des der Blur für den Schatten eines Shapes, die in Punkt (0,00 zu 100.00). 
+Bestimmt die Größe der Unschärfe für den Schatten einer Form in Punkt (0,00 bis 100,00). 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **ShapeShdwBlur** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **ShapeShdwBlur** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

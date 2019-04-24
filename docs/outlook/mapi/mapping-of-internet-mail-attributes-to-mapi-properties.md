@@ -1,5 +1,5 @@
 ---
-title: Zuordnen von Internet-Mail-Attributen zu MAPI-Eigenschaften
+title: Zuordnen von Internet-e-Mail-Attributen zu MAPI-Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,30 +9,30 @@ api_type:
 ms.assetid: 79d1d2ba-34fe-4851-918f-adbc69c20eee
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c0a71cbd3b6cdbef091e75ade5d190369a4626a4
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355818"
 ---
-# <a name="mapping-of-internet-mail-attributes-to-mapi-properties"></a>Zuordnen von Internet-Mail-Attributen zu MAPI-Eigenschaften
+# <a name="mapping-of-internet-mail-attributes-to-mapi-properties"></a>Zuordnen von Internet-e-Mail-Attributen zu MAPI-Eigenschaften
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Anhang wird beschrieben, wie ein MAPI-Transportdienst oder MAPI-fähigen Gateway mit dem Internet verbunden zwischen MAPI Nachrichteneigenschaften und Simple Mail Transport Protocol (SMTP) Nachrichtenattribute übersetzen sollten. SMTP ist das messaging auf einen Großteil der im Internet verwendete Protokoll. SMTP definiert eine Reihe von Nachrichtenkopfzeilen – der Nachrichtenumschlag – und einen Content-Nachrichtenformat. SMTP ist vollständig dokumentiert, in einem Satz von zwei Dokumenten, RFC 821 und RFC 822 einer Reihe von FTP und WWW-Websites im Internet gefunden werden kann.
+In diesem Anhang wird beschrieben, wie ein MAPI-Transportanbieter oder ein MAPI-fähiges Gateway, das eine Verbindung mit dem Internet herstellt, zwischen MAPI-Nachrichteneigenschaften und SMTP-Nachrichtenattributen (Simple Mail Transport Protocol) übersetzen soll. SMTP ist das Messaging Protokoll, das in einem Großteil des Internets verwendet wird. SMTP definiert eine Gruppe von Nachrichtenkopfzeilen – den Nachrichtenumschlag und ein Nachrichteninhalts Format. SMTP ist vollständig in einem Satz von zwei Dokumenten dokumentiert, RFC 821 und RFC 822, die sich auf einer Reihe von FTP-und WWW-Standorten im Internet befinden.
   
-Informationen über das SMTP-Protokoll verwendet, um eine Kommunikation mit SMTP-basierte e-Mail-Agenten, finden Sie in RFC 821 "Simple Mail Transfer Protocol," unter [https://www.rfc-editor.org](https://www.rfc-editor.org).
+Informationen zum SMTP-Protokoll, das für die Kommunikation mit SMTP-basierten e-Mail-Agents verwendet wird, finden Sie unter RFC 821, [https://www.rfc-editor.org](https://www.rfc-editor.org)"Simple Mail Transfer Protocol" unter.
   
-Reagieren auf und standard Nachrichtenkopfzeilen finden Sie im RFC 822, "Standard für das Format von ARPA Internet-Textnachrichten," unter [https://www.rfc-editor.org](https://www.rfc-editor.org).
+Informationen zu Adressierungs-und Standardnachrichten Kopfzeilen finden Sie in [https://www.rfc-editor.org](https://www.rfc-editor.org)RFC 822, "Standard für das Format von ARPA-Internet Text Nachrichten" unter.
   
-MIME, finden Sie unter RFC 1521, "MIME (Multipurpose Internet Mail Extensions)-Teil einer: Mechanismen zum angeben und Beschreiben des Formats Internet Message Bodies" unter [https://www.rfc-editor.org](https://www.rfc-editor.org).
+Für MIME lesen Sie RFC 1521, "MIME (Multipurpose Internet Mail Extensions), Teil 1: Mechanismen zum angeben und beschreiben des Formats von Internet Nachrichten Körpern" [https://www.rfc-editor.org](https://www.rfc-editor.org)unter.
   
-Das Ziel der Zuordnung SMTP Nachrichtenattribute zu MAPI-Eigenschaften (und umgekehrt) ist, stellen Sie sicher, dass des gesamten Inhalts der MAPI-Nachrichten über die mit systemeigenen SMTP-Nachrichtenattribute codiert werden können, zwischen verschiedenen MAPI zuverlässig ausgetauscht werden können Komponenten, die über das Internet kommunizieren müssen. Dieses Dokument basiert auf arbeiten, die bereits an eine solche Komponenten bei Microsoft. 
+Das Ziel der Zuordnung von SMTP-Nachrichtenattributen zu MAPI-Eigenschaften (und umgekehrt) besteht darin, sicherzustellen, dass der vollständige Inhalt der MAPI-Nachrichten, die über die systemeigenen SMTP-Nachrichtenattribute codiert werden können, zuverlässig zwischen verschiedenen MAPI-Daten austauschen kann. Komponenten, die über das Internet kommunizieren müssen. Dieses Dokument basiert auf der Arbeit, die bereits an solchen Komponenten bei Microsoft ausgeführt wurde. 
   
-In diesem Dokument wird davon ausgegangen, gute Kenntnisse im Umgang mit MAPI-Transport, TNEF und SMTP-Mail. Es ist bestrebt, Risiken löschen, statt präzise sein.
+In diesem Dokument wird die Vertrautheit mit MAPI-Übertragungs-, TNEF-und SMTP-e-Mails vorausgesetzt. Sie strebt an, prägnant zu sein und nicht in einem klaren Licht.
   
-Als eine Konvention "Ausgehend" verweist auf Reisen aus einem MAPI-kompatible UA oder MTA mit dem Internet mail und "eingehenden" bezieht sich auf Reisen über das Internet zu einer Komponente MAPI Mail.
+Als Konvention bezieht sich "ausgehend" auf e-Mails, die von einem MAPI-kompatiblen UA oder MTA ins Internet Reisen, und "eingehend" bezieht sich auf e-Mails, die aus dem Internet in eine MAPI-Komponente Reisen.
   
 

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7fe270e8-0dff-bf1f-dfc0-c0608af79f59
 description: Legt die Zeichnungsgröße fest.
-ms.openlocfilehash: a87f37ac79d00aeb064072389db432421b33d2d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 33c85b6c2f0587654038eaec1a9490ca8bd8301b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351457"
 ---
-# <a name="drawingsizetype-cell-page-properties-section"></a>DrawingSizeType Cell (Page Properties Section)
+# <a name="drawingsizetype-cell-page-properties-section"></a>Zelle "DrawingSizeType" (Abschnitt "Zeichenblatteigenschaften")
 
 Legt die Zeichnungsgröße fest.
   
@@ -35,13 +35,13 @@ Legt die Zeichnungsgröße fest.
 
 Verwenden Sie das Dialogfeld **Seite einrichten**, um die Zeichnungsgröße festzulegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**), oder passen Sie die Größe der Seite manuell mit der Maus an. 
   
-Wenn Sie eine Referenz auf die Zelle DrawingSizeType nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "DrawingSizeType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |DrawingSizeType  <br/> |
+|Zellenname:  <br/> |"DrawingSizeType  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle DrawingSizeType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "DrawingSizeType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

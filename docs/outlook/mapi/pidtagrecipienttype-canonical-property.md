@@ -1,5 +1,5 @@
 ---
-title: PidTagRecipientType (kanonische Eigenschaft)
+title: Kanonische Pidtagrecipienttype (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,15 +11,15 @@ api_name:
 api_type:
 - COM
 ms.assetid: 67e31027-6bc2-4a40-9b00-d61baef4ab0f
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 9d74fdb3acb6db94078d6090f0def050fb564cd9
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355258"
 ---
-# <a name="pidtagrecipienttype-canonical-property"></a>PidTagRecipientType (kanonische Eigenschaft)
+# <a name="pidtagrecipienttype-canonical-property"></a>Kanonische Pidtagrecipienttype (-Eigenschaft
 
   
   
@@ -34,89 +34,89 @@ Enthält den Empfängertyp für einen Nachrichtenempfänger.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der in dieser Eigenschaft enthaltenen Empfängertyp besteht aus ein erforderlicher Wert und eine optionale Kennzeichnung.
+Der in dieser Eigenschaft enthaltene Empfängertyp besteht aus einem erforderlichen Wert und einem optionalen Flag.
   
 Diese Eigenschaft muss genau einen der folgenden Werte enthalten:
   
 MAPI_TO 
   
-> Der Empfänger ist ein primärer (Empfänger To). Clients sind erforderlich, um die primären Empfänger zu behandeln. Alle anderen Typen sind optional.
+> Der Empfänger ist ein primärer Empfänger (an). Clients müssen primäre Empfänger verarbeiten. Alle anderen Typen sind optional.
     
 MAPI_CC 
   
-> Beim Empfänger handelt es sich um einen Empfänger Carbon Copy, Kopie (CC), einen Empfänger an, die zusätzlich zu den primären Empfänger eine Nachricht empfängt.
+> Der Empfänger ist ein CC-Empfänger (Carbon Copy), ein Empfänger, der zusätzlich zu den primären Empfängern eine Nachricht empfängt.
     
 MAPI_BCC 
   
-> Beim Empfänger handelt es sich um einen Empfänger blind Carbon Copy, Blindkopie (BCC). Primäre und Carbon Copy, Blindkopie Empfänger ist wissen das Vorhandensein der BCC-Empfänger. 
+> Der Empfänger ist ein BCC-Empfänger (Blind Carbon Copy). Primäre und Carbon Copy-Empfänger wissen nicht, dass BCC-Empfänger vorhanden sind. 
     
 MAPI_P1 
   
-> Der Empfänger nicht die Meldung auf vorherigen Versuch erhalten. Hierbei handelt es sich um eine erneute Senden eines eine frühere Übertragung.
+> Der Empfänger hat die Nachricht beim vorherigen Versuch nicht erfolgreich empfangen. Dies ist eine erneute Übermittlung einer früheren Übertragung.
     
-Darüber hinaus können die folgenden Kennzeichen festgelegt werden:
+Darüber hinaus kann das folgende Flag festgelegt werden:
   
 MAPI_SUBMITTED 
   
-> Der Empfänger die Nachricht wurde bereits empfangen und muss nicht erneut empfangen. Hierbei handelt es sich um eine erneute Senden eines eine frühere Übertragung. Dieses Kennzeichen werden in Verbindung mit den Werten **MAPI_TO**, **MAPI_CC**und **MAPI_BCC** festgelegt. 
+> Der Empfänger hat die Nachricht bereits empfangen und muss ihn nicht erneut empfangen. Dies ist eine erneute Übermittlung einer früheren Übertragung. Dieses Flag wird in Verbindung mit den **MAPI_TO**-, **MAPI_CC**-und **MAPI_BCC** -Werten festgelegt. 
     
-Der Wert MAPI_P1 und das Flag **MAPI_SUBMITTED** werden verwendet, wenn eine Nachricht aufgrund von Nondelivery an einen oder mehrere der angegebenen Empfänger erneut übertragen wird. Für diese erneute Übertragung wird der Client **MAPI_SUBMITTED** auf jeden Empfänger, die in der Empfängerliste angezeigt werden sollen, benötigen die Nachricht nicht erneut. Für jeden Empfänger, die nicht zuvor die Nachricht erhalten haben, wird der Client behält den ursprünglichen Empfänger mit seinem **PR_RECIPIENT_TYPE** Wert unverändert aber darüber sendet eine Kopie des Empfängers mit MAPI_P1 anstelle der ursprüngliche Wert. Diese Kopie, die vor der Zustellung tatsächlichen gelöscht wird, erzwingt, dass den Empfänger in den Umschlag P1 und garantiert physischen erneute Übertragung an diesen Empfänger. Die **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))-Eigenschaft ist für MAPI_P1 Empfänger auf FALSE festgelegt.
+Der MAPI_P1-Wert und das **MAPI_SUBMITTED** -Flag werden verwendet, wenn eine Nachricht aufgrund einer Nichtübermittlung an einen oder mehrere der vorgesehenen Empfänger erneut übermittelt wird. Bei dieser erneuten Übertragung legt der Client **MAPI_SUBMITTED** für jeden Empfänger fest, der die Nachricht nicht erneut benötigt, sondern in der Empfängerliste angezeigt werden soll. Für jeden Empfänger, der die Nachricht zuvor nicht erhalten hat, behält der Client den ursprünglichen Empfänger mit dem **PR_RECIPIENT_TYPE** -Wert unverändert bei, gibt aber zusätzlich eine Kopie des Empfängers mit MAPI_P1 anstelle des ursprünglichen Werts aus. Diese Kopie, die vor der tatsächlichen Übermittlung verworfen wird, zwingt den Empfänger in den P1-Umschlag und garantiert eine physische erneute Übermittlung an diesen Empfänger. Die **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft ist für MAPI_P1-Empfänger auf false festgelegt.
   
-Wenn ein Client ein Formular erneut angezeigt wird, werden nur die MAPI_P1 Empfänger angezeigt. Wenn der Benutzer weitere Empfänger eingibt, wenn die Nachricht gesendet wird, wird die Empfängerliste angezeigt, genau wie beim zum ersten Mal die Nachricht gesendet wurde. 
+Wenn ein Client ein Resend-Formular anzeigt, sind nur die MAPI_P1-Empfänger sichtbar. Wenn der Benutzer keine weiteren Empfänger eingibt, wird die Empfängerliste genau wie beim ersten Senden der Nachricht angezeigt. 
   
-Die **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) sowie die **PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md)) und **PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md)) Eigenschaften sind Empfängertyp relevant. Wenn ein Client eine Nachricht **IMAPIProp::SaveChanges ruft** und mindestens einen Empfänger in der Empfängerliste ist, legt der Nachricht Informationsdienst diese Eigenschaften wie folgt fest: 
+Die Eigenschaften **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) **, PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md)) und **PR_DISPLAY_BCC** ([pidtagdisplaybcc (](pidtagdisplaybcc-canonical-property.md)) beziehen sich auf den Empfängertyp. Wenn ein Client die **IMAPIProp:: SaveChanges** einer Nachricht aufruft und mindestens ein Empfänger in der Empfängerliste vorhanden ist, werden diese Eigenschaften vom Nachrichtenspeicher Anbieter wie folgt festgelegt: 
   
 |**Eigenschaft**|**Beschreibung**|
 |:-----|:-----|
-|PR_DISPLAY_TO  <br/> |Auf TRUE festgelegt, wenn ein oder mehrere Empfänger **MAPI_TO** Empfänger sind.  <br/> |
-|PR_DISPLAY_CC  <br/> |Auf TRUE festgelegt, wenn ein oder mehrere Empfänger **MAPI_CC** Empfänger sind.  <br/> |
-| PR_DISPLAY_BCC  <br/> |Auf TRUE festgelegt, wenn ein oder mehrere Empfänger **MAPI_BCC** Empfänger sind.  <br/> |
+|PR_DISPLAY_TO  <br/> |Legen Sie den Wert auf TRUE fest, wenn mindestens einer der Empfänger **MAPI_TO** Empfänger ist.  <br/> |
+|PR_DISPLAY_CC  <br/> |Legen Sie den Wert auf TRUE fest, wenn mindestens einer der Empfänger **MAPI_CC** Empfänger ist.  <br/> |
+| PR_DISPLAY_BCC  <br/> |Legen Sie den Wert auf TRUE fest, wenn mindestens einer der Empfänger **MAPI_BCC** Empfänger ist.  <br/> |
    
-In x. 400 wird der Umschlag P1 oder Übermittlung benötigt, eine Nachricht, einschließlich des Empfängers Adresseigenschaften und Steuern der Übermittlung und-Antworten Optionsflags übermitteln. Der P2 oder den Anzeigenamen-Umschlag befindet sich die Informationen in der Regel auf jeden Empfänger als den Nachrichtentext selbst angezeigt. Sie umfasst in der Regel den Betreff, Wichtigkeit, Priorität, Vertraulichkeit, und Zeitpunkt der Übermittlung, sowie die primären und die kopierte Empfängernamen. 
+In X. 400 ist der P1-oder Zustellungs Umschlag die Informationen, die für die Zustellung einer Nachricht erforderlich sind, einschließlich der Adresseigenschaften des Empfängers und beliebiger Options Fahnen zur Steuerung der Zustellung und der Antworten. Der P2-oder Anzeige Umschlag stellt die Informationen dar, die in der Regel jedem anderen Empfänger als dem Nachrichtentext angezeigt werden. Sie umfasst in der Regel den Betreff, die Wichtigkeit, die Priorität, die Vertraulichkeit und die Übermittlungszeit sowie die primären und kopierten Empfängernamen. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für e-Mail-Nachrichtenobjekte zulässig sind.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs-und Antwortnachrichten an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagRecipientStatus (kanonische Eigenschaft)](pidtagrecipientstatus-canonical-property.md)
+[Kanonische Pidtagrecipientstatus (-Eigenschaft](pidtagrecipientstatus-canonical-property.md)
   
-[PidTagDisplayTo (kanonische Eigenschaft)](pidtagdisplayto-canonical-property.md)
+[Kanonische PidTagDisplayTo-Eigenschaft](pidtagdisplayto-canonical-property.md)
   
-[PidTagDisplayBcc (kanonische Eigenschaft)](pidtagdisplaybcc-canonical-property.md)
+[Kanonische Pidtagdisplaybcc (-Eigenschaft](pidtagdisplaybcc-canonical-property.md)
   
-[PidTagDisplayCc (kanonische Eigenschaft)](pidtagdisplaycc-canonical-property.md)
+[Kanonische PidTagDisplayCc-Eigenschaft](pidtagdisplaycc-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -125,5 +125,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

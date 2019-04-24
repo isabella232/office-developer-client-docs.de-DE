@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginallyIntendedRecipientName (kanonische Eigenschaft)
+title: Kanonische Pidtagoriginallyintendedrecipientname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - COM
 ms.assetid: 56c406fb-8778-4f85-bbdc-4cabfa140248
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7fae59d23d2d335513cbbddc22638ed623d894b7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8637ef8036ccec79b82bcfff4a9f6d21fd5c2e11
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342588"
 ---
-# <a name="pidtagoriginallyintendedrecipientname-canonical-property"></a>PidTagOriginallyIntendedRecipientName (kanonische Eigenschaft)
+# <a name="pidtagoriginallyintendedrecipientname-canonical-property"></a>Kanonische Pidtagoriginallyintendedrecipientname (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den codierten Namen von der ursprünglich beabsichtigten Empfänger einer Nachricht Autoforwarded.
+Enthält den codierten Namen des ursprünglich vorgesehenen Empfängers einer AutoForwarded-Nachricht.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ORIGINALLY_INTENDED_RECIPIENT_NAME  <br/> |
-|Kennung:  <br/> |0 x 0020  <br/> |
+|Kennung:  <br/> |0x0020  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **PR_ORIGINALLY_INTENDED_RECIPIENT_NAME** -Eigenschaft muss vom automatische Agent festgelegt werden, die die Nachricht weitergeleitet hat. 
+Die **PR_ORIGINALLY_INTENDED_RECIPIENT_NAME** -Eigenschaft muss vom automatischen Agent festgelegt werden, der die Nachricht weitergeleitet hat. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

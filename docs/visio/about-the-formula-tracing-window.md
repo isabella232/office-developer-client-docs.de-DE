@@ -10,46 +10,46 @@ localization_priority: Normal
 ms.assetid: 0cdacd4e-74dc-32c3-2eb2-219bf7fcb532
 description: Das Fenster Formelprotokollierung bietet Shape-Entwicklern Informationen über gegenseitige Abhängigkeiten zwischen Zellen, sowohl für abhängige Zellen (Zellen mit einer Abhängigkeit gegenüber einer bestimmten Zelle) als auch für Vorgängerzellen (Zellen, von denen eine bestimmte Zelle abhängt).
 ms.openlocfilehash: f5f9d6a7ba3ab7049715d31342cfe7aa68ea053f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345320"
 ---
-# <a name="about-the-formula-tracing-window"></a>Informationen zur zum Formelablauffenster
+# <a name="about-the-formula-tracing-window"></a>Informationen zum Fenster "Formelprotokollierung"
 
 Das Fenster **Formelprotokollierung** bietet Shape-Entwicklern Informationen über gegenseitige Abhängigkeiten zwischen Zellen, sowohl für abhängige Zellen (Zellen mit einer Abhängigkeit gegenüber einer bestimmten Zelle) als auch für Vorgängerzellen (Zellen, von denen eine bestimmte Zelle abhängt). 
   
-Die Zellen in einem Microsoft Visio-ShapeSheet enthalten Werte und Formeln. Formeln können wiederum Verweise auf andere Zellen, was Ihnen die Möglichkeit, einen Wert in einer Zelle basierend auf einer anderen Zelle Wert berechnen lassen. Beim Erstellen oder Verwalten komplexer Shapes, kann jedoch es schwierig sein, alle diese Abhängigkeiten identifiziert werden, da eine Formel, die eine beliebige Zelle in der Zeichnung verwiesen werden kann, ob es sich um eine Zelle in der gleichen ShapeSheet oder eine Zelle, die in ein anderes Objekt in der Zeichnung gehören ist, beispielsweise einer Seite, Formatvorlage, Master-Shape oder eine andere Form. 
+Die Zellen in einem Microsoft Visio-ShapeSheet enthalten Werte und Formeln. Formeln können wiederum Verweise auf andere Zellen enthalten, sodass Sie die Möglichkeit haben, einen Wert in einer Zelle basierend auf dem Wert einer anderen Zelle zu berechnen. Beim Erstellen und Verwalten komplexer Shapes ist das Erkennen all dieser Abhängigkeiten jedoch unter Umständen sehr schwierig, da eine Formel auf eine beliebige Zelle in der Zeichnung verweisen kann, wobei es egal ist, ob es sich um eine Zelle in demselben ShapeSheet oder um eine Zelle eines anderen Objekts in der Zeichnung handelt, beispielsweise um eine Seite, eine Formatvorlage, einen Master oder ein anderes Shape. 
   
-Im Fenster **Formelprotokollierung** enthält Informationen, mit denen das Verständnis die Auswirkungen von Änderungen, die Sie Zellen vornehmen. 
+Das Fenster für die **Formelprotokollierung** enthält Informationen, die Ihnen helfen, die Auswirkungen von Änderungen, die Sie an Zellen vornehmen, zu verstehen. 
   
-## <a name="displaying-the-formula-tracing-window"></a>Anzeigen von Formelprotokollierungsfenster
+## <a name="displaying-the-formula-tracing-window"></a>Anzeigen des Fensters für die Formelprotokollierung
 
-So zeigen Sie das Fenster **Formelprotokollierung** im ShapeSheet-Fenster aktiv ist, klicken Sie unter **ShapeSheet-Tools** auf an der ** Design ** klicken auf der Registerkarte in der Gruppe **Formelprotokollierung** **Fenster anzeigen**. **Das Formelprotokollierungsfenster** angedockten im ShapeSheet-Fenster wird standardmäßig angezeigt, jedoch ist ein verankertes Fenster, das angedockt, Mauszeiger halten oder zusammengeführt werden kann mit anderen verfügbaren verankerten ShapeSheet-Fenster, beispielsweise das **Format-Explorer** -Fenster. 
+Klicken Sie zum Anzeigen des Fensters für die **Formel Ablaufverfolgung** , wobei das ShapeSheet-Fenster aktiv ist, unter **ShapeSheet-Tools** auf der Registerkarte * * Design * * in der Gruppe **Formelprotokollierung** auf **Fenster anzeigen**. Das Fenster für die **Formelprotokollierung** wird standardmäßig im ShapeSheet-Fenster angedockt, es handelt sich jedoch um ein verankertes Fenster, das angedockt, unverankert oder mit anderen verfügbaren verankerten ShapeSheet-Fenstern zusammengeführt werden kann, beispielsweise im Fenster **Format-Explorer** . 
   
 ## <a name="tracing-dependent-cells"></a>Verfolgen abhängiger Zellen
 
 Zum Anzeigen einer Liste von Zellen, die von einer bestimmten Zelle abhängig sind, wählen Sie die betreffende Zelle im ShapeSheet-Fenster aus. In diesem Beispiel ist die Zelle Width ausgewählt. 
   
-![Zelle "Width" aktiviert ist](media/ShapeSheetDependents_UI_01_ZA01039814.gif)
+![Die Zelle "width" ist ausgewählt](media/ShapeSheetDependents_UI_01_ZA01039814.gif)
   
-Klicken Sie zum Anzeigen von ihr abhängigen Zellen klicken, in der Gruppe **Formelprotokollierung**auf **Spur zum Nachfolger**.
+Um die abhängigen Zellen anzuzeigen, klicken Sie in der Gruppe **Formelprotokollierung**auf **Ablauf Verfolgungs abhängige**.
   
-Eine Liste aller von der Zelle Width abhängigen Zellen wird im Fenster Formelprotokollierung angezeigt. Sie können zu einer beliebigen Zelle in der Liste navigieren, indem Sie auf den entsprechenden Eintrag im Fenster Formelprotokollierung doppelklicken. 
+Eine Liste aller Zellen mit einer Abhängigkeit von der Zelle Breite wird im Fenster **Formelprotokollierung** angezeigt. Sie können zu einer beliebigen Zelle in der Liste navigieren, indem Sie im Fenster **Formelprotokollierung** auf den entsprechenden Eintrag doppelklicken. 
   
-![Alle Zellen mit einer Abhängigkeit auf die Zelle Width angezeigt werden, klicken Sie im Fenster Formelprotokollierung](media/ShapeSheetDependents_UI_02_ZA01039815.gif)
+![Alle Zellen mit einer Abhängigkeit von der Zelle "Breite" werden im Fenster "Formel Ablaufverfolgung" angezeigt.](media/ShapeSheetDependents_UI_02_ZA01039815.gif)
   
-## <a name="tracing-precendent-cells"></a>Verfolgen Precendent Zellen
+## <a name="tracing-precendent-cells"></a>NachVerfolgen von precendent-Zellen
 
 Wenn eine Liste aller Zellen angezeigt werden soll, von denen eine bestimmte Zelle abhängt, wählen Sie zunächst die Zelle im ShapeSheet-Fenster aus. In diesem Beispiel ist die Zelle Geometry1.X2 ausgewählt. 
   
-![Geometry1.X2 Zelle ist ausgewählt.](media/ShapeSheetPrecedents_UI_01_ZA01039817.gif)
+![Zelle Geometry1. x2 ist ausgewählt](media/ShapeSheetPrecedents_UI_01_ZA01039817.gif)
   
-Klicken Sie zum Anzeigen ihrer Vorgängerzellen klicken, in der Gruppe **Formelprotokollierung**auf **Spur zum Vorgänger**.
+Zum Anzeigen der Vorgängerzellen klicken Sie in der Gruppe **Formelprotokollierung**auf **Vorgänger**-Traces.
   
-Eine Liste aller Zellen, die die Zelle Geometry1.X2 abhängig ist, wird im Fenster **Formelprotokollierung** angezeigt. Sie können auf eine beliebige Zelle in der Liste navigieren, indem Sie den Eintrag im Fenster **Formelprotokollierung** doppelklicken. 
+Eine Liste aller Zellen, von denen die Zelle Geometry1. x2 abhängig ist, wird im Fenster **Formelprotokollierung** angezeigt. Sie können zu einer beliebigen Zelle in der Liste navigieren, indem Sie im Fenster **Formelprotokollierung** auf den entsprechenden Eintrag doppelklicken. 
   
-![Alle Zellen, denen die Zelle Geometry1.X2 abhängig ist angezeigt wird, klicken Sie im Fenster Formelprotokollierung](media/ShapeSheetPrecedents_UI_02_ZA01039818.gif)
+![Alle Zellen, von denen die Zelle Geometry1. x2 abhängig ist, werden im Fenster Formelprotokollierung angezeigt.](media/ShapeSheetPrecedents_UI_02_ZA01039818.gif)
   
 

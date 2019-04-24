@@ -1,5 +1,5 @@
 ---
-title: Unterstützen von benannten Eigenschaften
+title: Unterstützung benannter Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: 2e742ecd-2dcd-46a8-9d4e-2cec2c6f795e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9ee41469914e52295af219428f26854662c9e2f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 27625e913f06e858295351ed62de840ae7789915
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349630"
 ---
-# <a name="supporting-named-properties"></a>Unterstützen von benannten Eigenschaften
+# <a name="supporting-named-properties"></a>Unterstützung benannter Eigenschaften
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Any object that implements the [IMAPIProp: IUnknown](imapipropiunknown.md) interface can support named properties. Unterstützung für benannte Eigenschaften ist für erforderlich: 
+Any object that implements the [IMAPIProp: IUnknown](imapipropiunknown.md) interface can support named properties. Die Unterstützung für benannte Eigenschaften ist erforderlich für: 
   
-- Von adressbuchanbietern implementierte, mit denen Sie Einträge von anderen Anbietern in ihre Container kopiert werden können.
+- Adressbuchanbieter, mit denen Einträge anderer Anbieter in Ihre Container kopiert werden können.
     
-- Nachrichtenspeicher Authentifizierungsanbieter an, die zum Erstellen von beliebigen Nachrichtentypen verwendet werden können.
+- Nachrichtenspeicher Anbieter, die zum Erstellen beliebiger Nachrichtentypen verwendet werden können.
     
-Unterstützung für benannte Eigenschaft ist optional für alle anderen Dienstanbieter. Dienstanbieter, die Unterstützung für benannte Eigenschaften müssen Namensbezeichner-Zuordnung in den Methoden [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) implementieren. Clients aufrufen **GetNamesFromIDs** zum Abrufen der entsprechenden Names für einen oder mehrere Eigenschaftenbezeichner im Bereich 0 x 8000 Failover und **GetIDsFromNames** entweder erstellen oder die Bezeichner für einen oder mehrere Namen abgerufen. 
+Die Unterstützung benannter Eigenschaften ist für alle anderen Dienstanbieter optional. Dienstanbieter, die benannte Eigenschaften unterstützen, müssen die Zuordnung von Namen zu Bezeichnern in den Methoden [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) implementieren. Clients rufen **GetNamesFromIDs** auf, um die entsprechenden Namen für einen oder mehrere Eigenschaftsbezeichner im over 0X8000-Range abzurufen, und **GetIDsFromNames** , um die Bezeichner für einen oder mehrere Namen zu erstellen oder abzurufen. 
   
-Dienstanbieter, die keine Unterstützung für benannte Eigenschaften müssen:
+Dienstanbieter, die benannte Eigenschaften nicht unterstützen, müssen:
   
-- Schlagen Sie Aufrufe von [IMAPIProp::SetProps](imapiprop-setprops.md) Eigenschaften mit Bezeichnern oder größer 0 x 8000 Festlegen des MAPI_E_UNEXPECTED_ID im [SPropProblem](spropproblem.md) -Array zurückgeben. 
+- Fehler beim Aufrufen von [IMAPIProp::](imapiprop-setprops.md) SetProps zum Festlegen von Eigenschaften mit Bezeichnern von 0X8000 oder höher, indem MAPI_E_UNEXPECTED_ID im [SPropProblem](spropproblem.md) -Array zurückgegeben wird. 
     
-- Geben Sie die Methoden [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) MAPI_E_NO_SUPPORT zurück. 
+- Geben Sie MAPI_E_NO_SUPPORT aus den Methoden [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) zurück. 
     
 

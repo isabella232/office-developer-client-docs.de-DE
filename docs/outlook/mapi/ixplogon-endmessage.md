@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: bb29e6a0-7a92-46eb-bbeb-6f2df6ac6d21
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f727d68e0e193e8f2e148d881968993f836f8ab0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 03eccfe27c6f93e42ee01a34fbf5df766c145cf1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357351"
 ---
 # <a name="ixplogonendmessage"></a>IXPLogon::EndMessage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Transportdienst informiert werden, dass die MAPI-Warteschlange die Verarbeitung für eine ausgehende Nachricht abgeschlossen.
+Informiert den Transportanbieter darüber, dass der MAPI-Spooler seine Verarbeitung für eine ausgehende Nachricht abgeschlossen hat.
   
 ```cpp
 HRESULT EndMessage(
@@ -38,37 +38,37 @@ HRESULT EndMessage(
 
  _ulMsgRef_
   
-> [in] Ein Message-spezifische-Verweiswert, der in einem früheren Aufruf der [IXPLogon::SubmitMessage](ixplogon-submitmessage.md) -Methode abgerufen wurde. 
+> in Ein Nachrichten spezifischer Verweiswert, der in einem früheren Aufruf der [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md) -Methode abgerufen wurde. 
     
  _lpulFlags_
   
-> [out] Eine Bitmaske aus Flags, die an die Warteschlange MAPI gibt an, was mit der Nachricht Verfahren werden soll. Wenn keine Flags festgelegt sind, hat die Nachricht gesendet wurde. Die folgenden Kennzeichen können festgelegt werden:
+> Out Eine Bitmaske von Flags, die dem MAPI-Spooler mitteilen, was er mit der Nachricht tun soll. Wenn keine Flags festgelegt sind, wurde die Nachricht gesendet. Die folgenden Flags können festgelegt werden:
     
 END_DONT_RESEND 
   
-> Der Transportdienst verfügt über alle Informationen, die über diese Meldung für jetzt benötigt. Wenn der Adressbuchhierarchie Weitere Informationen erforderlich sind, oder wenn sie die Nachricht gesendet hat, benachrichtigt die MAPI-Warteschlange, die [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) -Methode mit dem NOTIFY_SENTDEFERRED-Flag und durch Übergeben der Eintrags-ID der Nachricht. 
+> Der Transportanbieter verfügt jetzt über alle erforderlichen Informationen zu dieser Nachricht. Wenn der Transportanbieter Weitere Informationen benötigt oder wenn er die Nachricht gesendet hat, benachrichtigt er den MAPI-Spooler durch Aufrufen der [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode mit dem NOTIFY_SENTDEFERRED-Flag und durch übergeben der Eintrags-ID der Nachricht. 
     
 END_RESEND_LATER 
   
-> Der Transportdienst sendet die Nachricht nicht an der aktuellen Zeit Gründen, die nicht fehlerbedingungen sind. Der Transportdienst sollte erneut zum Senden der Nachricht höher aufgerufen werden.
+> Der Transportanbieter sendet die Nachricht nicht zum aktuellen Zeitpunkt aus Gründen, die keine Fehlerbedingungen sind. Der Transportanbieter sollte später erneut aufgerufen werden, um die Nachricht zu senden.
     
 END_RESEND_NOW 
   
-> Der Transportdienst muss neu gestartet werden die Nachricht in einem Aufruf der [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode übergeben. 
+> Der Transportanbieter muss die an ihn übergebene Nachricht in einem [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methodenaufruf neu starten. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Warteschlange Ruft die **IXPLogon::EndMessage** -Methode nach dem Abschluss der Verarbeitung von erweiterten Übermittlung oder Nondelivery Informationen bereitstellen. 
+Die MAPI-Warteschlange ruft die **IXPLogon:: EndMessage** -Methode auf, nachdem Sie die Verarbeitung abgeschlossen hat, die für die Bereitstellung erweiterter Zustellungs-oder Unzustellbarkeits Informationen erforderlich ist. 
   
-Nachdem dieser Aufruf zurückgegeben wird, ist der Wert in der _UlMsgRef_ -Parameter nicht mehr gültig für diese Nachricht. Der Transportdienst kann den gleichen Wert auf eine zukünftige Nachricht wiederverwenden. 
+Sobald dieser Aufruf zurückgegeben wird, ist der Wert im _ulMsgRef_ -Parameter für diese Nachricht nicht mehr gültig. Der Transportanbieter kann denselben Wert für eine zukünftige Nachricht wieder verwenden. 
   
-Alle Objekte, die der Adressbuchhierarchie während der Übertragung einer Nachricht öffnet sollten vor der **EndMessage** Rückgabe, mit Ausnahme von Message-Objekts freigegeben werden, die die MAPI-Warteschlange an der Adressbuchhierarchie übergibt. Die MAPI-Warteschlange übergebener Message-Objekts ist nach dem Aufruf der **EndMessage** ungültig. 
+Alle Objekte, die der Transportanbieter während der Übertragung einer Nachricht öffnet, sollten freigegeben werden, bevor der **EndMessage** -Aufruf zurückgegeben wird, mit Ausnahme des Message-Objekts, das vom MAPI-Spooler an den Transportanbieter übergeben wird. Das vom MAPI-Spooler übergebene Nachrichtenobjekt ist nach dem **EndMessage** -Aufruf ungültig. 
   
 ## <a name="see-also"></a>Siehe auch
 

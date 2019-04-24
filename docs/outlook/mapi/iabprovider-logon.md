@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f9468715-1674-4d14-81c8-2f24dbaa0453
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 59c6d4a05c91511ad8c481fd4ddbe42396442190
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348783"
 ---
 # <a name="iabproviderlogon"></a>IABProvider::Logon
 
@@ -44,47 +44,47 @@ HRESULT Logon(
 
  _lpMAPISup_
   
-> [in] Ein Zeiger auf die Adressbuchanbieter DSO-Objekt.
+> in Ein Zeiger auf das Support Objekt des Adressbuch Anbieters.
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für das Dialogfeld anmelden, die die **Logon** -Methode angezeigt, wenn zulässig. Der Parameter _UlUIParam_ enthält den Wert des Parameters mit demselben Namen in der vorherigen Aufruf der Funktion [MAPILogonEx](mapilogonex.md) MAPI übergeben. 
+> in Ein Handle für das übergeordnete Fenster für das Anmeldedialogfeld, das von der **Anmelde** Methode angezeigt wird, falls zulässig. Der Parameter _ulUIParam_ enthält den Wert des Parameters mit demselben Namen, der an MAPI im vorherigen Aufruf der [MAPILogonEx](mapilogonex.md) -Funktion übergeben wurde. 
     
  _lpszProfileName_
   
-> [in] Ein Zeiger auf den Namen des Profils Sitzung.
+> in Ein Zeiger auf den Namen des Sitzungs Profils.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Anmeldung ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Ausführung der Anmeldung steuert. Die folgenden Flags können festgelegt werden:
     
 AB_NO_DIALOG 
   
-> Der Anbieter sollte kein Dialogfeld während der Anmeldung angezeigt werden. Wenn dieses Flag nicht festgelegt ist, kann der Anbieter ein Dialogfeld, um den Benutzer aufzufordern, nach fehlenden Konfigurationsinformationen anzeigen.
+> Der Anbieter sollte während der Anmeldung kein Dialogfeld anzeigen. Wenn dieses Flag nicht festgelegt ist, kann der Anbieter ein Dialogfeld anzeigen, in dem der Benutzer nach fehlenden Konfigurationsinformationen gefragt wird.
     
 MAPI_DEFERRED_ERRORS 
   
-> **Anmeldung** erfolgreich, möglicherweise vor Abschluss des Anmeldevorgangs zurückgeben können. 
+> Ermöglicht die erfolgreiche Rückgabe der **Anmeldung** , bevor der Anmeldevorgang abgeschlossen ist. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Alle Zeichenfolgen sollte im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sollte die Zeichenfolgen in ANSI-Format.
+> Alle Zeichenfolgen sollten im Unicode-Format vorliegen. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sollten die Zeichenfolgen im ANSI-Format sein.
     
  _lpulcbSecurity_
   
-> [in, out] Ein Zeiger auf die Größe der Struktur der Sicherheits-Anmeldeinformationen auf das durch den Parameter _LppbSecurity_ in Bytes. Bei der Eingabe muss der Wert ungleich NULL sein. Bei der Ausgabe muss der Wert 0 (null) sein. In beiden Fällen müssen die Zeiger gültig sein. 
+> [in, out] Ein Zeiger auf die Größe der Sicherheitsanmeldeinformationen, auf die durch den _lppbSecurity_ -Parameter verwiesen wird, in Bytes. Bei der Eingabe muss der Wert ungleich NULL sein. bei der Ausgabe muss der Wert NULL sein. In beiden Fällen müssen die Zeiger gültig sein. 
     
  _lppbSecurity_
   
-> [in, out] Ein Zeiger auf einen Zeiger auf Sicherheitsanmeldeinformationen. Bei der Eingabe muss der Wert ungleich NULL sein. Bei der Ausgabe muss der Wert 0 (null) sein. In beiden Fällen muss der Zeiger gültig sein.
+> [in, out] Ein Zeiger auf einen Zeiger auf Sicherheitsanmeldeinformationen. Bei der Eingabe muss der Wert ungleich NULL sein. bei der Ausgabe muss der Wert NULL sein. In beiden Fällen muss der Zeiger gültig sein.
     
  _lppMAPIError_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine [MAPIERROR](mapierror.md) -Struktur. Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn es keine **MAPIERROR** -Struktur ist zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf eine [MAPIERROR](mapierror.md) -Struktur. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn keine **MAPIERROR** -Struktur zurückgegeben werden soll. 
     
  _lppABLogon_
   
-> [out] Ein Zeiger auf einen Zeiger auf das Objekt für den Anbieter anmelden.
+> Out Ein Zeiger auf einen Zeiger auf das Anmeldeobjekt des Anbieters.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -94,49 +94,49 @@ S_OK
     
 MAPI_E_FAILONEPROVIDER 
   
-> Der Anbieter nicht anmelden kann, MAPI jedoch weiterhin die anderen Anbieter in der Nachrichtendienst anmelden zu der der Anbieter gehört. 
+> Der Anbieter kann sich nicht anmelden, aber MAPI kann sich weiterhin bei den anderen Anbietern im Nachrichtendienst anmelden, zu dem der Anbieter gehört. 
     
 MAPI_E_UNCONFIGURED 
   
-> Der Anbieter verfügt über nicht genügend Informationen für die Durchführung die Anmeldung. MAPI-Aufrufen des Anbieters Nachricht Service Eintrag-Funktion.
+> Der Anbieter verfügt nicht über genügend Informationen, um die Anmeldung abzuschließen. MAPI Ruft die Nachrichtendienst-Eintrags Funktion des Anbieters auf.
     
 MAPI_E_UNKNOWN_CPID 
   
-> Der Server ist nicht zur Unterstützung der Codeseite für den Client konfiguriert.
+> Der Server ist nicht für die Unterstützung der Codeseite des Clients konfiguriert.
     
 MAPI_E_UNKNOWN_LCID 
   
-> Der Server ist nicht konfiguriert, um Gebietsschemainformationen des Clients zu unterstützen.
+> Der Server ist nicht für die Unterstützung der Gebietsschemainformationen des Clients konfiguriert.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld Anmeldung abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in der Regel auf die Schaltfläche **Abbrechen** im Anmeldedialogfeld geklickt hat. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verbindungen sind mit jedem Adressbuchanbieter im Profil der Sitzung eingerichtet, wenn ein Client die [IMAPISession::OpenAddressBook](imapisession-openaddressbook.md) -Methode aufruft. **OpenAddressBook** ruft dann des Anbieters **Logon** (Methode). 
+Verbindungen werden mit jedem Adressbuchanbieter im Sitzungsprofil hergestellt, wenn ein Client die [IMAPISession:: openaddressbook](imapisession-openaddressbook.md) -Methode aufruft. **Openaddressbook** ruft dann die **Anmelde** Methode jedes Anbieters auf. 
   
-Der Name der Benutzerprofildienst auf das durch den Parameter _LpszProfileName_ wird in den Zeichensatz des Client des Benutzers, wie durch die Anwesenheit oder Abwesenheit die Option MAPI_UNICODE im _UlFlags_ -Parameter angegeben angezeigt. 
+Der Profilname, auf den durch den _lpszProfileName_ -Parameter verwiesen wird, wird im Zeichensatz des Clients des Benutzers angezeigt, der durch das vorhanden sein oder Fehlen des MAPI_UNICODE-Kennzeichens im _ulFlags_ -Parameter angegeben wird. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Rufen Sie in der Implementierung der die **Logon** -Methode die [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) -Methode, um eine eindeutige ID oder [MAPIUID](mapiuid.md) -Struktur zu registrieren. Jedes Ihrer Objekte haben eine Eintrags-ID, die diese **MAPIUID**enthält. MAPI verwendet die **MAPIUID** , um ein Objekt mit seinen Provider übereinstimmen. Wenn ein Client die [IMAPISession::OpenEntry](imapisession-openentry.md) -Methode, um ein messaging-Benutzer öffnen aufruft, untersucht **OpenEntry** beispielsweise den **MAPIUID** Teil der Eintrags-ID, die übergeben wurde, und ordnet ihn einem **MAPIUID** registriert, indem ein Adressbuchanbieter. 
+Rufen Sie in der Implementierung der **Anmelde** Methode die [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md) -Methode auf, um einen eindeutigen Bezeichner oder eine [MAPIUID](mapiuid.md) -Struktur zu registrieren. Jedes Objekt verfügt über eine Eintrags-ID, die diese **MAPIUID**enthält. MAPI verwendet die **MAPIUID** , um ein Objekt mit seinem Anbieter abzugleichen. Wenn ein Client beispielsweise die [IMAPISession:: OpenEntry](imapisession-openentry.md) -Methode aufruft, um einen Messagingbenutzer zu öffnen, unterSucht OpenEntry den **** **MAPIUID** -Teil des Eintrags Bezeichners, der übergeben wurde, und vergleicht ihn mit einem **MAPIUID** , der von einem registrierten Adressbuchanbieter. 
   
-Wenn ein Client an Ihren Anbieter nur einmal anmeldet, möchten Sie möglicherweise eine unterschiedliche **MAPIUID** für jede Anmeldung registrieren. Registrieren eindeutige **MAPIUID** Strukturen ermöglicht MAPI ordnungsgemäß Anforderungen an die entsprechende authentifizierungsanbieterinstanz weitergeleitet. Sie möchten jedoch jeder Anmeldung-Objekt eine **MAPIUID**freigeben. In diesem Fall müssen Sie das routing verarbeiten werden selbst auf MAPI angewiesen. Weitere Informationen zum Erstellen einer **MAPIUID**finden Sie unter [Registrieren Service Provider eindeutige Bezeichner](registering-service-provider-unique-identifiers.md).
+Wenn sich ein Client mehr als einmal bei Ihrem Anbieter anmeldet, können Sie für jede Anmeldung eine andere **MAPIUID** registrieren. Das Registrieren eindeutiger **MAPIUID** -Strukturen ermöglicht MAPI das ordnungsgemäße Weiterleiten von Anforderungen an die entsprechende Anbieterinstanz. Möglicherweise möchten Sie jedoch, dass jedes Logon-Objekt eine **MAPIUID**. In diesem Fall müssen Sie in der Lage sein, das Routing selbst zu behandeln, statt sich auf MAPI zu verlassen. Weitere Informationen zum Erstellen eines **MAPIUID**finden Sie unter Registrieren von [eindeutigen Bezeichnern des Dienstanbieters](registering-service-provider-unique-identifiers.md).
   
-Das Support-Objekt, das MAPI an Ihre **Logon** -Methode im Parameter _LpMAPISup_ übergibt ermöglicht den Zugriff auf viele der Methoden in enthalten die [IMAPISupport: IUnknown](imapisupportiunknown.md) Schnittstelle. MAPI erstellt ein Support-Objekt, das in den Typ des Anbieters angepasst ist. Wenn Sie müssen zur Anmeldung an einer zugrunde liegenden messaging-System oder Verzeichnisdienst, wenn Sie die Verbindung hergestellt wird, können Sie beispielsweise die [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) -Methode zum Abrufen von Anmeldeinformationen für diese Sitzung bestimmte Anmeldung anrufen. 
+Das Unterstützungsobjekt, das MAPI an Ihre **Anmelde** Methode im _lpMAPISup_ -Parameter übergibt, ermöglicht den Zugriff auf viele der Methoden, die in der [IMAPISupport: IUnknown](imapisupportiunknown.md) -Schnittstelle enthalten sind. MAPI erstellt ein Support Objekt, das an den Anbietertyp angepasst wird. Wenn Sie sich beispielsweise bei einem zugrunde liegenden Messagingsystem oder Verzeichnisdienst anmelden müssen, wenn Sie Ihre Verbindung herstellen, können Sie die [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) -Methode aufrufen, um Sicherheitsanmeldeinformationen für diese bestimmte Anmeldesitzung abzurufen. 
   
-Wenn die **Anmeldung** erfolgreich ist, müssen Sie unbedingt, dass Sie die des Unterstützungsobjekts [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode, um erhöht den Referenzzähler aufrufen. Auf diese Weise können vom Dienstanbieter, die auf den Support-Objektzeiger für den Rest der Sitzung enthalten soll. Wenn Sie diese **AddRef** -Methode nicht aufrufen, wird MAPI vom Dienstanbieter entfernen. 
+Wenn die **Anmeldung** erfolgreich ist, stellen Sie sicher, dass Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode des Support-Objekts aufrufen, um den Verweiszähler zu erhöhen. Auf diese Weise kann der Anbieter den Support Objektzeiger für den Rest der Sitzung aufbewahren. Wenn Sie diese **AddRef** -Methode nicht aufrufen, wird der Anbieter von MAPI entladen. 
   
-Sie können den Namen des Profils im Parameter _LpszProfileName_ Fehlerdialogfelder, Anmeldefenster oder andere Elemente der Benutzeroberfläche übergeben einschließen. Um den Profilnamen zu verwenden, kopieren Sie sie in einen Speicher, die Sie bereitgestellt haben. 
+Sie können den im Parameter _lpszProfileName_ übergebenen Profilnamen in Fehler Dialogfeldern, Anmeldebildschirmen oder anderen Benutzeroberflächen angeben. Um den Profilnamen zu verwenden, kopieren Sie ihn in den Speicher, den Sie zugeordnet haben. 
   
-Erstellen Sie ein Objekt Anmeldung und zurückkehren Sie einen Zeiger in der _LppABLogon_ -Parameter zu ihm. MAPI verwendet dieses Anmeldeobjekt tätigen von Anrufen an die Methoden in der Implementierung [IABLogon](iablogoniunknown.md) . 
+Erstellen Sie ein LOGON-Objekt, und geben Sie im _lppABLogon_ -Parameter einen Zeiger darauf zurück. MAPI verwendet dieses Logon-Objekt, um Aufrufe der Methoden in der [IABLogon](iablogoniunknown.md) -Implementierung durchzuführen. 
   
-Wenn Sie ein Kennwort bei der Anmeldung benötigen, ein Anmeldedialogfeld nur angezeigt, wenn das Flag AB_NO_DIALOG nicht festgelegt ist. Wenn der Benutzer des Anmeldevorgangs abbricht, in der Regel durch Klicken auf die Schaltfläche **Abbrechen** klicken Sie im Dialogfeld zurückgeben Sie MAPI_E_USER_CANCEL aus **Anmelden**.
+Wenn Sie während der Anmeldung ein Kennwort anfordern, zeigen Sie nur dann ein Anmeldedialogfeld an, wenn das AB_NO_DIALOG-Flag nicht festgelegt ist. Wenn der Benutzer den Anmeldevorgang abbricht, indem er in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld MAPI_E_USER_CANCEL von der **Anmeldung**zurückgibt.
   
-In der Regel bei der Adressbuch-Dienstanbieter nicht anmelden kann, MAPI wird deaktiviert den Dienst, der der fehlerhaften Anbieter angehört – d. h., MAPI versucht nicht, Verbindungen für andere Anbieter herzustellen, die mit dem Dienst für den Rest der der Sitzung gehören Lebensdauer. Wenn vom Dienstanbieter kann keine Verbindung herstellen, und Sie nicht den gesamten Dienst deaktivieren möchten, zurückgeben Sie MAPI_E_FAILONEPROVIDER oder MAPI_E_UNCONFIGURED aus. MAPI wird nicht den Dienst deaktivieren, zu dem der Anbieter gehört. 
+Wenn sich ein Adressbuchanbieter nicht anmelden kann, deaktiviert MAPI in der Regel den Nachrichtendienst, zu dem der fehlerhafte Anbieter gehört, d. h., MAPI versucht nicht, Verbindungen für andere Anbieter herzustellen, die für den Rest der Sitzung zum Dienst gehören. Leben. Wenn Ihr Anbieter jedoch keine Verbindung herstellen kann und Sie den gesamten Dienst nicht deaktivieren möchten, geben Sie entweder MAPI_E_FAILONEPROVIDER oder MAPI_E_UNCONFIGURED zurück. Der Nachrichtendienst, zu dem der Anbieter gehört, wird von MAPI nicht deaktiviert. 
   
-Rückgabe MAPI_E_FAILONEPROVIDER, wenn ein Fehler auftritt, kann nicht schwerwiegend genug ist, um zu verhindern, dass die anderen Anbieter in der Nachrichtendienst Herstellen einer Verbindung. MAPI_E_UNCONFIGURED zurück, wenn die erforderlichen Konfigurationsdaten aus dem Profil nicht vorhanden ist und Sie ein Dialogfeld, um den Benutzer aufzufordern können nicht angezeigt werden. MAPI wird durch Aufrufen des Anbieters Nachricht Service Entry Point-Funktion mit MSG_SERVICE_CONFIGURE als Parameter _UlContext_ für dem Dienst selbst, entweder programmgesteuert konfigurieren kann oder Verwenden des Eigenschaftenfensters Antworten. Wenn die Nachricht Service Einstiegspunkt Funktion beendet wurde, MAPI, ein Wiederholungsversuch der Anmeldung. 
+Geben Sie MAPI_E_FAILONEPROVIDER zurück, wenn ein Fehler auftritt, der nicht schwer genug ist, um zu verhindern, dass die anderen Anbieter im Nachrichtendienst Verbindungen herstellen. Geben Sie MAPI_E_UNCONFIGURED zurück, wenn die erforderlichen Konfigurationsinformationen im Profil fehlen, und Sie können kein Dialogfeld anzeigen, um den Benutzer aufzufordern. MAPI antwortet, indem er die Einstiegspunktfunktion des Anbieters für den Nachrichtendienst aufruft, wobei MSG_SERVICE_CONFIGURE als _ulContext_ -Parameter festgelegt ist, um dem Dienst die Möglichkeit zu geben, sich selbst programmgesteuert oder mithilfe eines Eigenschaftenblatts zu konfigurieren. Wenn die Nachrichtendienst-Einstiegspunktfunktion beendet wurde, versucht MAPI die Anmeldung erneut. 
   
 ## <a name="see-also"></a>Siehe auch
 

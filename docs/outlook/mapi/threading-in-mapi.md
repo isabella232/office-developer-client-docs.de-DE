@@ -7,40 +7,40 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 259297d2-acd7-4bc5-9a77-0df92cbfa33e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d9ee45ea7a3592a2b0fc0675bbdb6e640f9bd046
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5d94aeaa75ede85983a678f448b05ad90c1e458a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344828"
 ---
 # <a name="threading-in-mapi"></a>Threading in MAPI
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Thread ist die grundlegende Entität, die ein Betriebssystem CPU-Zeit zuweist. Ein Thread verfügt über eine eigene Register, Stack, Priorität und Speicher, aber eine Adresse Speicherplatz und Verarbeiten von Ressourcen wie Zugriffstoken gemeinsam genutzt. Threads freigeben Arbeitsspeicher, auch mit einem Thread lesen, was ein anderer Thread geschrieben hat.
+Ein Thread ist die grundlegende Entität, in die ein Betriebssystem CPU-Zeit zuordnet. Ein Thread verfügt über eigene Register, Stapel, Priorität und Speicher, hat jedoch einen Adressraum und verarbeitet Ressourcen wie Zugriffstoken. Threads teilen auch Arbeitsspeicher, wobei ein Thread liest, was ein anderer Thread geschrieben hat.
   
-MAPI-Clients verwenden Sie die folgenden generischen threading Modelle.
+MAPI-Clients verwenden die folgenden generischen Threadingmodelle.
   
-|**Threading-Modell**|**Beschreibung**|
+|**Threadingmodell**|**Beschreibung**|
 |:-----|:-----|
-|Einzelne Threadingmodells  <br/> |Alle Objekte werden in den einzelnen Thread verwendet.  <br/> |
-|Des Apartmentthreading Threadingmodells  <br/> |Ein Objekt kann nur in dem Thread verwendet werden, die sie erstellt haben.  <br/> |
-|Free-threading, oder der Thread-Modell  <br/> |Ein Objekt kann auf einem beliebigen Thread verwendet werden.  <br/> |
+|Single Threading-Modell  <br/> |Alle Objekte werden im einzelnen Thread verwendet.  <br/> |
+|Apartment-Threading-Modell  <br/> |Ein Objekt kann nur für den Thread verwendet werden, der es erstellt hat.  <br/> |
+|Freies Threading oder Thread-Party-Modell  <br/> |Ein Objekt kann in einem beliebigen Thread verwendet werden.  <br/> |
    
-MAPI verwendet das kostenlose Threadingmodell unterstützenden threadsicheren Objekten, die auf einem beliebigen Thread können Sie jederzeit verwendet werden können. OLE verwendet die Apartmentthreading-Modells. Das Threadingmodell des Apartmentthreading unterstützt-Objekten, die bei ein Thread als diejenige, die das Objekt erstellt verwenden dieses Objekt muss explizit übertragen werden müssen.
+MAPI verwendet das ﻿kostenlose Threadingmodell und unterstützt threadsichere Objekte, die jederzeit in einem beliebigen Thread verwendet werden können. OLE verwendet das Apartment-Threadingmodell. Das Apartment-Threading-Modell unterstützt Objekte, die explizit übergeben werden müssen, wenn ein anderer Thread als derjenige, der das Objekt erstellt hat, dieses Objekt verwenden muss.
   
-Der Mechanismus, den OLE verwendet, um Objekte von einem Thread in eine andere zu übertragen wird als Marshallen bezeichnet. Das Marshallen beinhaltet ein Stubobjekt und ein Proxyobjekt. Diese spezielle Objekte Packen Sie die Parameter der Schnittstelle im Objekt gemarshallt werden, diese Parameter an den anderen Thread übertragen und Entpacken sie nach dem eintreffen. Konflikt zwischen den beiden Multithread-Modellen tritt auf, wenn ein-threading MAPI-Objekt an einen anderen Prozess, die mit OLE "lightweight" Remote Procedure Call oder LRPC gesendet wird. LRPC Semantik des Objekts von free-threading zu Apartmentthreading durch interposing Stub und des Proxys Schnittstellen mit Apartmentthreading-Verhalten zwischen dem Objekt und seine Aufrufer geändert. Zur Förderung des Bekanntheitsgrads der Situationen in MAPI, die zu dieser Konflikt führen kann Clients und Dienstanbieter können Probleme.
+Der Mechanismus, den OLE zum Übertragen von Objekten von einem Thread zu einem anderen verwendet, wird als Marshalling bezeichnet. Marshalling umfasst ein Stub-Objekt und ein Proxy-Objekt. Diese speziellen Objekte verpacken die Parameter der Schnittstelle im Objekt, das gemarshallt werden soll, übertragen diese Parameter in den anderen Thread und entpacken Sie bei der Ankunft. Der Konflikt zwischen den beiden Multithread-Modellen ergibt sich, wenn ein MAPI-Objekt mit freiem Threading an einen anderen Prozess mithilfe von OLE "Lightweight"-Remote Prozeduraufruf oder LRPC gesendet wird. LRPC ändert die Semantik des Objekts vom freien Threading in den Apartmentthreading, indem Stub-und Proxy Schnittstellen mit dem Apartmentthreading-Verhalten zwischen dem Objekt und seinem Aufrufer zwischen den Objekten ausgerichtet werden. Das Bewusstsein für die Situationen in MAPI, die zu diesem Konflikt führen, kann dazu beitragen, dass Clients und Dienstanbieter Probleme vermeiden.
   
-Ein MAPI-Objekt kann zugegriffen werden:
+Auf ein MAPI-Objekt kann zugegriffen werden:
   
-- Über direkte Aufrufe von dessen eine Schnittstelle mit Methoden verknüpft von einem Dienstanbieter oder MAPI zurückgegebene Zeiger an den Client-Prozess wie das Sitzungsobjekt von [MAPILogonEx](mapilogonex.md)zurückgegeben.
+- Durch direkte Aufrufe seiner Methoden mithilfe eines Schnittstellenzeigers, der von einem Dienstanbieter oder einer mit dem Prozess des Clients verknüpften MAPI zurückgegeben wird, wie beispielsweise das von [MAPILogonEx](mapilogonex.md)zurückgegebene Sitzungsobjekt.
     
-- Unter Verwendung eines Schnittstelle Zeigers zurückgegeben, die für alle Dienstanbieter, wie etwa das Folder-Objekt kopiert über indirekte Aufrufe der Methoden aus einem anderen Ordner im [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md)haben.
+- Durch indirekte Aufrufe seiner Methoden mithilfe eines von einem beliebigen Dienstanbieter zurückgegebenen Schnittstellenzeigers, wie beispielsweise des Folder-Objekts, das aus einem anderen Ordner in [IMAPIFolder:: CopyFolder](imapifolder-copyfolder.md)kopiert wurde.
     
-- Über eine Callback-Funktion wie die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode übergebenen mit einem Dienstanbieter oder MAPI einen **Advise** -Anruf oder die Methoden, die auf einer langen Operation Fortschritt anzeigen können. 
+- Über eine Rückruffunktion, wie beispielsweise die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode, die an einen Dienstanbieter oder an MAPI in einem **Advise** -Aufruf übergeben wird, oder die Methoden, die den Fortschritt bei einem langwierigen Vorgang anzeigen können. 
     
 

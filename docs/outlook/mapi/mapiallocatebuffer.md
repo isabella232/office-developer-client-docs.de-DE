@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f1fc7fc5-c71f-44f7-930a-571773eb6809
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0520b219c87207a54555ba74050761f6ecc4854a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 589ad42199e6f2ec1039499dfd9beda044ccc3dd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357309"
 ---
 # <a name="mapiallocatebuffer"></a>MAPIAllocateBuffer
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ordnet einen Arbeitsspeicherpuffer. 
+Weist einen Speicherpuffer zu. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE MAPIAllocateBuffer(
@@ -44,23 +44,23 @@ SCODE MAPIAllocateBuffer(
 
  _cbSize_
   
-> [in] Größe des Puffers zuzuweisende in Bytes. 
+> in Die Größe des Puffers in Byte, der reserviert werden soll. 
     
  _lppBuffer_
   
-> [out] Zeiger auf den zurückgegebenen zugewiesenen Puffer.
+> Out Zeiger auf den zurückgegebenen reservierten Puffer.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und angeforderten Pufferüberläufe zurückgegeben hat.
+> Der Aufruf war erfolgreich, und der angeforderte Speicherpuffer wurde zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie während der **MAPIAllocateBuffer** Verarbeitung, die aufrufende Implementierung erhält einen Block von Arbeitsspeicher vom Betriebssystem. Der Arbeitsspeicherpuffer wird auf einer geraden Byteadresse zugewiesen. Auf Plattformen, auf dem vom Typ long Integer Access effizienter ist, weist das Betriebssystem den Puffer auf eine Adresse, deren Größe in Byte ein Vielfaches von vier ist. 
+Während der **MAPIAllocateBuffer** -Anrufverarbeitung erwirbt die aufrufende Implementierung einen Speicherblock vom Betriebssystem. Der Arbeitsspeicherpuffer wird für eine gerade nummerierte Byte-Adresse zugewiesen. Auf Plattformen, auf denen der Zugriff auf lange ganze Zahlen effizienter ist, weist das Betriebssystem den Puffer einer Adresse zu, deren Größe in Byte ein Vielfaches von vier ist. 
   
-Die [MAPIFreeBuffer](mapifreebuffer.md) Funktion-Versionen aufrufen verknüpft der **MAPIAllocateBuffer**, durch Aufrufen der [MAPIAllocateMore](mapiallocatemore.md) -Funktion und alle Puffer reservierte Speicherpuffer, wenn der Speicher nicht mehr benötigt wird. 
+Das Aufrufen der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion gibt den von **MAPIAllocateBuffer**zugewiesenen Speicherpuffer frei, indem die [MAPIAllocateMore](mapiallocatemore.md) -Funktion und alle damit verknüpften Puffer aufgerufen werden, wenn der Arbeitsspeicher nicht mehr benötigt wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

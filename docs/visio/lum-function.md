@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251460
 localization_priority: Normal
 ms.assetid: 38e6bba7-1bf2-3d31-0912-707002454f5d
-description: Gibt den Wert einer Farbkomponente Helligkeit zurück.
-ms.openlocfilehash: 9c9594aff0149a54d7faacdf8295e6c214c43348
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Wert der Helligkeitskomponente einer Farbe zurück.
+ms.openlocfilehash: 17fa43f8e2cd7422428f92724e351436233c2d62
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357981"
 ---
 # <a name="lum-function"></a>LUM Function
 
-Gibt den Wert einer Farbkomponente Helligkeit zurück.
+Gibt den Wert der Helligkeitskomponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-LUM (** *Ausdruck* **) 
+LUM (* * *Expression* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex aus der Farbpalette des Dokuments oder ein Bezug auf eine Zelle, die einen Farbindex enthält.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex aus der Farbpalette des Dokuments oder ein Bezug auf eine Zelle, die einen Farbindex enthält.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zahl
   
@@ -40,13 +40,13 @@ Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 240. Bei ei
   
 ## <a name="example-1"></a>Beispiel 1
 
-LUM (Sheet4! FillForegnd)
+LUM (Sheet. 4! Zelle FillForegnd
   
 Gibt die Farbkomponente Helligkeit der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-LUM(6)
+LUM (6)
   
 Gibt 120 zurück, wenn das Dokument die Standardfarbpalette von Visio verwendet, wobei Magenta die Farbe mit Index 6 ist.
   

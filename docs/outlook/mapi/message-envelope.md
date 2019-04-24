@@ -7,62 +7,62 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 613956da-c49b-4836-9fde-4601510e8b89
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fd642575a3136eef3193e0bdbe884cf8f54ba337
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ccd14244bf7ee76396dc239437ca19f080edb170
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356924"
 ---
 # <a name="message-envelope"></a>Nachrichtenumschlag
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-RFC 822 Kopfzeilen werden wie folgt zu MAPI-Eigenschaften zugeordnet. PR_SENDER_\* ist eine Abkürzung für die folgenden 5 Eigenschaften:
+RFC 822-Header werden MAPI-Eigenschaften wie folgt zugeordnet. PR_SENDER_\* ist eine Abkürzung für die folgenden 5 Eigenschaften:
   
  **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))
   
- **PR_SENDER_ADDRTYPE** ([PidTagSenderAddressType](pidtagsenderaddresstype-canonical-property.md))
+ **PR_SENDER_ADDRTYPE** ([Pidtagsenderaddresstype (](pidtagsenderaddresstype-canonical-property.md))
   
  **PR_SENDER_EMAIL_ADDRESS** ([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md))
   
- **PR_SENDER_SEARCH_KEY** ([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md))
+ **PR_SENDER_SEARCH_KEY** ([Pidtagsendersearchkey (](pidtagsendersearchkey-canonical-property.md))
   
  **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md))
   
-Ähnliche Abkürzungen dienen zum PR_SENT_REPRESENTING_\* und andere Gruppen mit Nachrichteneigenschaften.
+Ähnliche Abkürzungen werden für PR_SENT_REPRESENTING_\* und andere Gruppen von Nachrichteneigenschaften verwendet.
   
-|**SMTP-header**|**MAPI-Eigenschaft**|
+|**SMTP-Header**|**MAPI-Eigenschaft**|
 |:-----|:-----|
-|Von:  <br/> |Ausgehend: PR_SENDER_\*; Eingehend: PR_SENDER_\* und PR_SENT_REPRESENTING_\*  <br/> |
-|Datum:  <br/> |Ausgehend: aktuelle Uhrzeit; Eingehende: **PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))  <br/> |
-|An:  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) für **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)), auf dem MAPI_TO ist Empfänger  <br/> |
-|Cc:  <br/> |**PR_DISPLAY_NAME** und **PR_EMAIL_ADDRESS** für Empfänger, in denen **PR_RECIPIENT_TYPE** MAPI_CC ist  <br/> |
-|Bcc:  <br/> |**PR_DISPLAY_NAME** und **PR_EMAIL_ADDRESS** für Empfänger, in denen **PR_RECIPIENT_TYPE** MAPI_BCC ist  <br/> |
+|Von:  <br/> |Ausgehend\*: PR_SENDER_; eingehend: PR_SENDER_\* und PR_SENT_REPRESENTING_\*  <br/> |
+|Datum  <br/> |Ausgehend: aktuelle Uhrzeit; eingehend: **PR_MESSAGE_DELIVERY_TIME** ([pidtagmessagedeliverytime (](pidtagmessagedeliverytime-canonical-property.md))  <br/> |
+|An:  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) für Empfänger, bei denen **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md)) MAPI_TO ist  <br/> |
+|CC  <br/> |**PR_DISPLAY_NAME** und **PR_EMAIL_ADDRESS** für Empfänger, bei denen **PR_RECIPIENT_TYPE** MAPI_CC ist  <br/> |
+|BCC  <br/> |**PR_DISPLAY_NAME** und **PR_EMAIL_ADDRESS** für Empfänger, bei denen **PR_RECIPIENT_TYPE** MAPI_BCC ist  <br/> |
 |||
-|Empfangen:  <br/> |Keine entsprechende MAPI-Eigenschaft; Lokaler Hostname und der Name der Komponente hier einfügen  <br/> |
-|Zurückgeben des Empfangs auf:  <br/> |**PR_REPORT_NAME** ([PidTagReportName](pidtagreportname-canonical-property.md)) und **PR_REPORT_ENTRYID** ([PidTagReportEntryId](pidtagreportentryid-canonical-property.md))  <br/> |
-|Antwort an:  <br/> |**PR_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) und **PR_REPLY_RECIPIENT_NAMES** ([PidTagReplyRecipientNames](pidtagreplyrecipientnames-canonical-property.md))  <br/> |
-|Betreff:  <br/> |**PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) Keine bestimmte Länge Einschränkung.  <br/> |
-|MIME-Version:  <br/> |Immer "1.0"  <br/> |
+|Empfangen  <br/> |Keine entsprechende MAPI-Eigenschaft; Geben Sie hier den lokalen Hostnamen und ihren Komponentennamen ein.  <br/> |
+|Return-Receipt-an:  <br/> |**PR_REPORT_NAME** ([Pidtagreportname (](pidtagreportname-canonical-property.md)) und **PR_REPORT_ENTRYID** ([pidtagreportentryid (](pidtagreportentryid-canonical-property.md))  <br/> |
+|Reply-an:  <br/> |**PR_REPLY_RECIPIENT_ENTRIES** ([Pidtagreplyrecipiententries (](pidtagreplyrecipiententries-canonical-property.md)) und **PR_REPLY_RECIPIENT_NAMES** ([pidtagreplyrecipientnames (](pidtagreplyrecipientnames-canonical-property.md))  <br/> |
+|Betreff:  <br/> |**PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md)) Keine bestimmte Längenbeschränkung.  <br/> |
+|MIME-Version:  <br/> |Immer "1,0"  <br/> |
 |||
-|X-MS-Anlage:  <br/> |Für die Kompatibilität mit MS Mail SMTP-Gateway. _filename Größe mm-tt-Yyy Hh:mm_Details unten.  <br/> |
+|X-MS-Attachment:  <br/> |Zur Kompatibilität mit dem MS Mail-SMTP-Gateway. _FileName Größe mm-DD-yyy hh: mm_Details unten.  <br/> |
 |||
-| _gesamte SMTP-Nachrichtenumschlag_ <br/> |**PR_TRANSPORT_MESSAGE_HEADERS** ([PidTagTransportMessageHeaders](pidtagtransportmessageheaders-canonical-property.md))  <br/> |
-|Kopfzeile Namen TBD  <br/> |**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) _for Absender nur ._The TBDheader sollte verwendet werden, um festzustellen, ob der Absender TNEF-Inhalt in einer Antwort zu interpretieren ist.  <br/> |
-|MessageID:  <br/> |**PR_TNEF_CORRELATION_KEY** ([PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md))  <br/> |
-|Content-type  <br/> |Text/Plain oder Multipart/mixed. Siehe "Nachricht" Inhaltsabschnitt.  <br/> |
+| _vollständiger SMTP-Nachrichtenumschlag_ <br/> |**PR_TRANSPORT_MESSAGE_HEADERS** ([Pidtagtransportmessageheaders (](pidtagtransportmessageheaders-canonical-property.md))  <br/> |
+|Kopfzeilenname ist festgelegt  <br/> |**PR_SEND_RICH_INFO** ([Pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md)) _for Sender only. _The-TBDheader sollte verwendet werden, um zu bestimmen, ob der Absender TNEF-Inhalte in einer Antwort interpretieren kann.  <br/> |
+|MessageId  <br/> |**PR_TNEF_CORRELATION_KEY** ([Pidtagtnefcorrelationkey (](pidtagtnefcorrelationkey-canonical-property.md))  <br/> |
+|Content-type  <br/> |Entweder Text/Plain oder multipart/mixed. Weitere Informationen finden Sie im Abschnitt "Nachrichteninhalt".  <br/> |
    
-Der X-MS-Attachment-Header wird als vier Token, getrennt durch ein Leerzeichen formatiert:
+Der X-MS-Attachment-Header ist als vier Token formatiert, getrennt durch ein Leerzeichen:
   
- _Nennen Sie Größe Datum Uhrzeit_
+ _namens Größe (Datum)_
   
-Das erste Token lautet der Dateiname, der eingebettete Leerzeichen enthalten kann, sodass diese Kopfzeile aus der Recht auf eingehenden Nachrichten verarbeitet werden soll. Die Größe ist in Byte. das Datum wird als _mm-tt-jjjj,_ und die Uhrzeit als formatiert _hh: mm._
+Das erste Token ist der Dateiname, der möglicherweise eingebettete Leerzeichen enthält, sodass diese Kopfzeile von rechts auf eingehende Nachrichten analysiert werden sollte. Die Größe ist in Byte; das Datum ist als _mm-tt-yyyy_ und als _hh: mm formatiert._
   
 > [!NOTE]
-> MessageID ist **PR_SEARCH_KEY** nicht, da die SMTP-Domäne spezifische Anforderungen für das Format des Bezeichners Nachricht seinerseits zum Codieren von einer beliebigen MAPI-ID unmöglich zugeordnet. Stattdessen wird MessageID **PR_TNEF_CORRELATION_KEY**zugeordnet. Diese Eigenschaft ist eine Transport definiert-Eigenschaft, die durch den Transport Senden ausgehender Nachrichten festgelegt und durch einen Transport eine eingehende Nachricht empfangen verwendet. Weitere Informationen finden Sie unter [Developing eines Transportdienstes TNEF-Enabled](developing-a-tnef-enabled-transport-provider.md). 
+> MessageID ist nicht **PR_SEARCH_KEY** zugeordnet, da die SMTP-Domäne bestimmte Anforderungen an das Format der Nachrichtenkennung hat, die es unmöglich macht, einen beliebigen MAPI-Nachrichtenbezeichner zu codieren. Stattdessen wird MessageID **PR_TNEF_CORRELATION_KEY**zugeordnet. Diese Eigenschaft ist eine Transport definierte Eigenschaft, die durch den Transport festgelegt wird, der eine ausgehende Nachricht sendet und von einem Transport verwendet wird, der eine eingehende Nachricht empfängt. Weitere Informationen finden Sie unter [Entwickeln eines TNEF-fähigEn Transport Anbieters](developing-a-tnef-enabled-transport-provider.md). 
   
 

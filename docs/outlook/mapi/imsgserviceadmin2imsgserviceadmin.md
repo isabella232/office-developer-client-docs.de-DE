@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14654259-e884-46bf-84ff-9e3c1a8cd60d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f501ffc9fdb708604e3e64769de16081f87a2450
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2b1e00938800fb6517e634c3ba365276e0e76bd9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348839"
 ---
 # <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2 : IMsgServiceAdmin
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ändert eine Message Service in einem Profil.
+Nimmt Änderungen an einem Nachrichtendienst in einem Profil vor.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiaux.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Message Service Administration-Objekte  <br/> |
+|Headerdatei  <br/> |Mapiaux. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Nachrichtendienst-Verwaltungsobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMsgServiceAdmin2  <br/> |
 |Zeigertyp:  <br/> |LPSERVICEADMIN2  <br/> |
    
@@ -40,11 +40,11 @@ ms.locfileid: "22590561"
 
 |||
 |:-----|:-----|
-|[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |Fügt einen Nachrichtendienst gibt, die Dienst-UID neu hinzugefügt und der aktuellen Profil hinzu.  <br/> |
+|[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |Fügt dem aktuellen Profil einen Nachrichtendienst hinzu und gibt die neu hinzugefügte Dienst-UID zurück.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgServiceAdmin2** -Schnittstelle von dieselben Objekte, die die [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle verfügbar machen verfügbar gemacht wird, und wurde mithilfe des Outlook-Implementierung des MAPI-Subsystems seit Microsoft Outlook 2003 zur Verfügung. 
+Die **IMsgServiceAdmin2** -Schnittstelle wird von den gleichen Objekten verfügbar gemacht, die die [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle verfügbar machen, und ist mit der Implementierung des MAPI-Subsystems von outlook seit Microsoft Outlook 2003 verfügbar. 
   
 ## <a name="see-also"></a>Siehe auch
 

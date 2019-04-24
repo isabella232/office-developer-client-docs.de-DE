@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2e5ec914-7171-41ce-a6fe-78dd80ac32ff
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 992d51526c45334f6db3738e36994f4bb9c07c6e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: bb8699746b3f4207ee70edd4e56d0ec6041beac2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351177"
 ---
 # <a name="imapiviewcontextgetviewstatus"></a>IMAPIViewContext::GetViewStatus
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft den aktuellen Status der Viewer ab. 
+Ruft den aktuellen viewerstatus ab. 
   
 ```cpp
 HRESULT GetViewStatus(
@@ -37,61 +37,61 @@ ULONG FAR * lpulStatus
 
  _lpulStatus_
   
-> [out] Zeiger auf eine Bitmaske aus Flags, die den Status der Viewer bereitstellen. Die folgenden Kennzeichen können festgelegt werden:
+> Out Zeiger auf eine Bitmaske von Flags, die den Status des Viewers bereitstellt. Die folgenden Flags können festgelegt werden:
     
 VCSTATUS_CATEGORY 
   
-> Es ist eine Nachricht nächste oder vorherige in einer anderen Kategorie. 
+> Es gibt eine nächste oder eine vorherige Nachricht in einer anderen Kategorie. 
     
 VCSTATUS_DELETE 
   
-> Das Formular ermöglicht Nachrichten entfernt werden soll. 
+> Das Formular ermöglicht das Entfernen von Nachrichten. 
     
 VCSTATUS_INTERACTIVE 
   
-> Das Formular sollte eine Benutzeroberfläche angezeigt werden. Wenn dieses Flag nicht festgelegt ist, sollte das Formular unterdrückt werden, auch als Antwort auf ein Verb an, die in der Regel eine Benutzeroberfläche anzuzeigende bewirkt, dass eine Benutzeroberfläche anzuzeigen. 
+> Im Formular sollte eine Benutzeroberfläche angezeigt werden. Wenn dieses Flag nicht festgelegt ist, sollte das Formular die Anzeige einer Benutzeroberfläche auch als Reaktion auf ein Verb unterdrücken, das in der Regel bewirkt, dass eine Benutzeroberfläche angezeigt wird. 
     
 VCSTATUS_MODAL 
   
-> Das Formular ist für den Betrachter modal. 
+> Das Formular ist für den Viewer modal. 
     
 VCSTATUS_NEXT 
   
-> Es ist eine nächste Nachricht in der Ansicht. 
+> In der Ansicht wird eine nächste Nachricht angezeigt. 
     
 VCSTATUS_PREV 
   
-> Es ist eine vorherige Nachricht in der Ansicht. 
+> In der Ansicht ist eine vorherige Nachricht vorhanden. 
     
 VCSTATUS_READONLY 
   
-> Die Nachricht ist im schreibgeschützten Modus geöffnet werden. Löschen Sie, senden Sie, und verschieben Sie Vorgänge deaktiviert werden soll. 
+> Die Nachricht soll im schreibgeschützten Modus geöffnet werden. Lösch-, Sende-und Verschiebungsvorgänge sollten deaktiviert werden. 
     
 VCSTATUS_UNREAD 
   
-> Es ist eine nächste oder Vorherige ungelesene Nachricht in der Ansicht.
+> Es gibt eine nächste oder vorherige ungelesene Nachricht in der Ansicht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Zeichnungsanzeige Status wurde erfolgreich zurückgegeben.
+> Der Status des Viewers wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular-Objekte aufrufen, die **IMAPIViewContext::GetViewStatus** -Methode, um zu bestimmen, ob es sind weitere Nachrichten an, die in einer Ansicht des Formulars in einem aktiviert werden, oder beide Richtungen d. h., in die Richtung, in dem ein Befehl **Weiter** aktiviert, Nachrichten in der Richtung, in dem ein **Vorherige** Befehl Nachrichten, aktiviert, oder in beide Richtungen. Der Wert, der auf den durch den Parameter _LpulStatus_ wird verwendet, um festzustellen, ob die Flags VCSTATUS_NEXT und VCSTATUS_PREV für [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)gültig sind. Wenn das Flag VCSTATUS_DELETE Set, aber nicht das Flag VCSTATUS_READONLY ist, kann die Nachricht mit der [IMAPIMessageSite::DeleteMessage](imapimessagesite-deletemessage.md) -Methode gelöscht werden. 
+Formularobjekte rufen die **IMAPIViewContext:: GetViewStatus** -Methode auf, um zu bestimmen, ob in einer Formularansicht in einer oder in beide Richtungen Weitere Nachrichten aktiviert werden sollen, die in der Richtung, in der ein **Nächster** Befehl Nachrichten aktiviert, in der Richtung, in der **** ein vorheriger Befehl Nachrichten aktiviert, oder in beide Richtungen. Der Wert, auf den durch den _lpulStatus_ -Parameter verwiesen wird, wird verwendet, um zu bestimmen, ob die VCSTATUS_NEXT-und VCSTATUS_PREV-Flags für [IMAPIViewContext:: ActivateNext](imapiviewcontext-activatenext.md)gültig sind. Wenn das VCSTATUS_DELETE-Flag festgelegt ist, aber nicht das VCSTATUS_READONLY-Flag, kann die Nachricht mithilfe der [IMAPIMessageSite::D eletemessage](imapimessagesite-deletemessage.md) -Methode gelöscht werden. 
   
-Formulare deaktivieren in der Regel Menübefehle und Schaltflächen, wenn sie nicht für den Viewer Kontext gültig sind. Ein Viewer kann ein Formular auf eine Änderung im Status durch Aufrufen der [IMAPIFormAdviseSink::OnChange](imapiformadvisesink-onchange.md) -Methode benachrichtigen. 
+In der Regel werden Menübefehle und Schaltflächen von Formularen deaktiviert, wenn Sie nicht für den Kontext des Betrachters gültig sind. Ein Betrachter kann ein Formular durch Aufrufen seiner [IMAPIFormAdviseSink:: OnChange](imapiformadvisesink-onchange.md) -Methode auf eine Änderung des Statushinweisen. 
   
-Das Flag VCSTATUS_MODAL festgelegt ist, wenn das Formular in das Fenster gebunden sein muss, dessen Handle übergeben wird, in den früheren [IMAPIForm::DoVerb](imapiform-doverb.md) -Aufruf. Wenn VCSTATUS_MODAL festgelegt ist, können das Formular Threads auf dem der **DoVerb** -Anruf getätigt wurde, bis das Formular geschlossen wird. Wenn VCSTATUS_MODAL nicht festgelegt ist, wird das Formular nicht modal in diesem Fenster werden und muss nicht den Thread verwenden. 
+Das VCSTATUS_MODAL-Flag wird festgelegt, wenn das Formular in das Fenster gebunden werden muss, dessen Handle im früheren [IMAPIForm::D overb](imapiform-doverb.md) -Aufruf übergeben wird. Wenn VCSTATUS_MODAL festgelegt ist, kann das Formular den Thread verwenden, in dem der **DoVerb** -Aufruf vorgenommen wurde, bis das Formular geschlossen wird. Wenn VCSTATUS_MODAL nicht festgelegt ist, sollte das Formular nicht in dieses Fenster gebunden sein und den Thread nicht verwenden. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetViewStatus  <br/> |MFCMAPI (engl.) implementiert die **IMAPIViewContext::GetViewStatus** -Methode in dieser Funktion.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: GetViewStatus  <br/> |MFCMAPI implementiert die **IMAPIViewContext:: GetViewStatus** -Methode in dieser Funktion.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

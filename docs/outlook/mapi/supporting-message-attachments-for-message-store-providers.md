@@ -1,5 +1,5 @@
 ---
-title: Unterstützen von Nachrichtenanlagen für Nachrichtenspeicheranbieter
+title: Unterstützen von Nachrichtenanlagen für Nachrichtenspeicher Anbieter
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: d5fabc40-71e8-4afa-9846-533da605ce6c
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: a94d1230f4f26d080976fd15768bdfeb6ea04748
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 69d1df5bf206cddd0d25698665c9fd87b81e4ea5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350624"
 ---
-# <a name="supporting-message-attachments-for-message-store-providers"></a>Unterstützen von Nachrichtenanlagen für Nachrichtenspeicheranbieter
+# <a name="supporting-message-attachments-for-message-store-providers"></a>Unterstützen von Nachrichtenanlagen für Nachrichtenspeicher Anbieter
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ihre Nachricht Speicheranbieter muss nicht zur Unterstützung von e-Mail-Anlagen. Erwarten jedoch viele Clientanwendungen Anlagen zu Nachrichten hinzufügen können. Wenn Ihre Nachrichtenspeicher zum Erstellen oder IPM Speichern verwendet wird. Beachten Sie Nachrichten, und klicken Sie dann Sie e-Mail-Anlagen unterstützen soll. Standard-Nachricht Anbieter sollten auch e-Mail-Anlagen unterstützen. Weitere Informationen finden Sie unter [MAPI Message Classes](mapi-message-classes.md)und [Nachrichtenspeicher Standard](default-message-stores.md).
+Der Nachrichtenspeicher Anbieter muss keine Nachrichtenanlagen unterstützen. Viele Clientanwendungen erwarten jedoch, dass Sie Anlagen zu Nachrichten hinzufügen können. Wenn der Nachrichtenspeicher zum Erstellen oder Speichern von IPM verwendet wird. Hinweis Nachrichten, dann sollten Sie Nachrichtenanlagen unterstützen. Standardmäßige Nachrichtenspeicher Anbieter sollten auch Nachrichtenanlagen unterstützen. Weitere Informationen finden Sie unter [MAPI-Nachrichtenklassen](mapi-message-classes.md)und [Standardnachrichtenspeicher](default-message-stores.md).
   
-Es gibt fünf Typen von Anlagen, die MAPI unterstützt: file, Anlagen, Daten Anlagen, e-Mail-Anlagen, OLE-Objekt-Anlagen und Links. Die Anforderungen für die Unterstützung von jedem Typ unterscheiden. Clients unterscheiden zwischen den beiden Typen von Anlagen mit der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))-Eigenschaft auf Attachment-Objekte.
+Es gibt fünf Typen von Anlagen, die von MAPI unterstützt werden: Dateianhänge, Daten Anlagen, Nachrichtenanlagen, OLE-Objekt Anlagen und Links. Die Anforderungen für die Unterstützung der einzelnen Typen sind unterschiedlich. Clients unterscheiden zwischen den beiden Typen von Anlagen mithilfe der **PR_ATTACH_METHOD** ([pidtagattachmethod (](pidtagattachmethod-canonical-property.md))-Eigenschaft für Attachment-Objekte.
   
-Unterstützung von Anlagen bedeutet die Implementierung der [IAttach: IMAPIProp](iattachimapiprop.md) Schnittstelle. Die Schnittstelle **IAttach** verfügt über keine Methoden eigenen; Es hat nur Methoden, die von der Schnittstelle [IMAPIProp](imapipropiunknown.md) vererbt werden. Da Ihre Nachricht Speicheranbieter Eigenschaften für Nachrichtenobjekte bereits implementiert werden muss, vereinfacht dies das erheblich Unterstützung für Anlagen. Implementieren **IAttach** im Wesentlichen bedeutet das Bereitstellen der Möglichkeit für Clients Zugriff auf eine Tabelle von Eigenschaften für die Anlagen auf Nachrichten. 
+Unterstützende Anlagen beinhaltet die Implementierung der [IAttach: IMAPIProp](iattachimapiprop.md) -Schnittstelle. Die **IAttach** -Schnittstelle verfügt über keine eigenen Methoden; Es verfügt nur über Methoden, die von der [IMAPIProp](imapipropiunknown.md) -Schnittstelle geerbt werden. Da der Nachrichtenspeicher Anbietereigenschaften für Nachrichtenobjekte bereits implementieren muss, vereinfacht dies die Unterstützung von Anlagen erheblich. Die Implementierung von **IAttach** bedeutet im Grunde eine Möglichkeit für Clients, auf eine Tabelle mit Eigenschaften für bestimmte Anlagen für Nachrichten zuzugreifen. 
   
-Daten Anlagen sind einfach Anlagen, die den Inhalt der Anlage direkt in eine Anlage **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md))-Eigenschaft gespeichert werden. Daten Anlagen vorhanden und kann in erster Linie damit Clients So fügen Sie Dateien auf eine Nachricht an, wenn der Absender und Empfänger der Nachricht nicht über Zugriff auf einen gemeinsamen Dateiserver verfügen. Weitere Informationen finden Sie unter der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))-Eigenschaft.
+Bei Daten Anlagen handelt es sich lediglich um Anlagen, für die der Inhalt der Anlage direkt in der **PR_ATTACH_DATA_BIN** ([pidtagattachdatabinary (](pidtagattachdatabinary-canonical-property.md))-Eigenschaft einer Anlage gespeichert wird. Daten Anlagen sind hauptsächlich vorhanden, um Clients das Anfügen von Dateien an eine Nachricht zu gestatten, wenn der Absender und der Empfänger der Nachricht keinen Zugriff auf einen gemeinsamen Dateiserver haben. Weitere Informationen finden Sie unter der **PR_ATTACH_METHOD** ([pidtagattachmethod (](pidtagattachmethod-canonical-property.md))-Eigenschaft.
   
-E-Mail-Anlagen sind für die das-Unterobjekt Anlage eine andere ist Anlagen [IMessage: ' mapiProp '](imessageimapiprop.md) Objekt. Da Nachricht Anbieter bereits die **IMessage** -Schnittstelle unterstützt, ist die Unterstützung von e-Mail-Anlagen nicht schwierig. 
+Nachrichtenanlagen sind Anlagen, für die das Attachment-Unterobjekt ein weiteres [IMessage: mapiProp](imessageimapiprop.md) -Objekt ist. Da Nachrichtenspeicher Anbieter die **IMessage** -Schnittstelle bereits unterstützen, ist das unterstützen von Nachrichtenanlagen nicht schwierig. 
   
-OLE-Objekt Anlagen unterstützen bedeutet, dass die OLE- **IStorage** **IStream**und **IStreamDocfile** Schnittstellen implementieren. Ihre Nachricht Speicheranbieter muss möglicherweise konvertieren OLE-Objektdaten in der Nachricht in einer aktiven OLE-Objekt gespeichert wird, wenn ein Client das Objekt geöffnet wird. 
+Die Unterstützung von OLE-Objekt Anlagen beinhaltet die Implementierung der OLE- **IStorage**-, **IStream**-und **IStreamDocfile** -Schnittstellen. Der Nachrichtenspeicher Anbieter muss in der Lage sein, in der Nachricht gespeicherte OLE-Objektdaten in ein aktives OLE-Objekt umzuwandeln, wenn ein Client das Objekt öffnet. 
   
-Links gibt zwei Arten: Links zu Dateien und Links zu anderen Nachrichten. Links zu Dateien mithilfe den ATTACH_BY_REF_ONLY-Wert für die **PR_ATTACH_METHOD** -Eigenschaft zusammen mit **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) oder **PR_ATTACH_LONG_PATHNAME** ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md)) an die Position einer Datei.
+Links gibt es in zwei Arten: Links zu Dateien und Links zu anderen Nachrichten. Links zu Dateien verwenden Sie den ATTACH_BY_REF_ONLY-Wert für die **PR_ATTACH_METHOD** -Eigenschaft zusammen mit **PR_ATTACH_PATHNAME** ([pidtagattachpathname (](pidtagattachpathname-canonical-property.md)) oder **PR_ATTACH_LONG_PATHNAME** ([pidtagattachlongpathname (](pidtagattachlongpathname-canonical-property.md)), um anzugeben der Speicherort einer Datei.
   
-Eine Implementierung von Links zu Nachrichten möglicherweise hängen Aspekte des lokalen Messagingsystem bereit und, daher kann nicht vollständig dokumentiert werden hier. Senden eine Verknüpfung mit einer Meldung, die auf einem Server-basierten Nachrichtenspeicher gespeichert ist ist beispielsweise in der Regel nur darum, die Eintrags-ID der verknüpften Nachricht, vorausgesetzt, dass Absender und Empfänger Zugriff auf diesem Server haben zu senden. Andere messaging Systemkonfigurationen-Präsentation vor anderen Anforderungen und Herausforderungen für die Implementierung von Links zu Nachrichten.
+Die Implementierung von Links zu Nachrichten kann von Aspekten des lokalen Messagingsystems abhängig sein und kann daher nicht vollständig dokumentiert werden. Wenn Sie beispielsweise einen Link zu einer Nachricht senden, die in einem Server basierten Nachrichtenspeicher gespeichert ist, ist es in der Regel nur eine Frage des Sendens der Eintrags-ID der verknüpften Nachricht, wobei der Absender und der Empfänger Zugriff auf diesen Server haben. Andere Messagingsystem Konfigurationen stellen andere Anforderungen und Herausforderungen für die Implementierung von Links zu Nachrichten dar.
   
 ## <a name="see-also"></a>Siehe auch
 

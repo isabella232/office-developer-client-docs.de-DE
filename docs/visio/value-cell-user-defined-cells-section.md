@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 495b2aec-e197-75eb-9974-e7c92d26546f
 description: Gibt einen Wert für die entsprechende benutzerdefinierte Zelle an.
-ms.openlocfilehash: d320c35fa8ae65dd0b21a83ad2cf23dbb3af77f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 137d22430829f96a9c6ad69a73a6b44e964d5f4f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355895"
 ---
-# <a name="value-cell-user-defined-cells-section"></a>Value Cell (User-Defined Cells Section)
+# <a name="value-cell-user-defined-cells-section"></a>Zelle "Value" (Abschnitt "User-Defined Cells")
 
 Gibt einen Wert für die entsprechende benutzerdefinierte Zelle an.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie auf diesen Wert in einer anderen Zelle verweisen möchten, geben Sie den in die Zeilenbeschriftung User.Row benutzerdefinierten Namen an.
   
-Wenn Sie einen Verweis auf die Zelle Value aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Wert aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Benutzer.  *Name* . Wert, für den Benutzer.  *Name* ist der Zeilenname  <br/> |
+| Zellenname:  <br/> | Benutzer.  *Name* . Wert, bei dem Benutzer.  *Name* ist der Name der Zeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Value aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Value nach Index aus einem Programm abrufen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionUser** <br/> |
-| Zeilenindex:  <br/> |**VisRowUser** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowUser** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visUserValue** <br/> |
    
 

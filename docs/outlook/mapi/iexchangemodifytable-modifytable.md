@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: b9a745cc-260d-4a1c-896e-6a038ab3cfb9
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b801bdc06317738448a2205b60b94e1c9707d4f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 46bb9b2cc1a4d54807d6929b4e1439b58fb3a531
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350841"
 ---
 # <a name="iexchangemodifytablemodifytable"></a>IExchangeModifyTable::ModifyTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktualisiert ein MAPI-Table-Objekt.
+Aktualisiert ein MAPI-Tabellenobjekt.
   
 ```cpp
 HRESULT ModifyTable( 
@@ -39,23 +39,23 @@ HRESULT ModifyTable(
 
  _ulFlags_
   
-> [in] Verwenden Sie eine der folgenden Werte: 
+> in Verwenden Sie einen der folgenden Werte: 
     
 0 (Null)
   
-> Verwenden Sie den Wert des Elements **UlRowFlags** der [ROWENTRY](rowentry.md) Struktur. 
+> Verwenden Sie den Wert des **ulRowFlags** -Elements der [ROWENTRY](rowentry.md) -Struktur. 
     
 ACLTABLE_FREEBUSY
   
-> Neue Rechte festgelegt.
+> Legt neue Rechte fest.
     
 frightsFreeBusyDetailed
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, bietet eine detaillierte Ansicht der Rechte für neue Frei/Gebucht-Informationen.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, werden neue frei/gebucht-Rechte ausführlich angezeigt.
     
 frightsFreeBusySimple
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, bietet eine einfache Anzeige von Frei/Gebucht-Informationen Rechte für neue.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, bietet eine einfache Anzeige der neuen frei/gebucht-Rechte.
     
 ROWLIST_REPLACE
   
@@ -63,15 +63,15 @@ ROWLIST_REPLACE
     
  _lpMods_
   
-> [in] Verweist auf eine [ROWLIST](rowlist.md) -Struktur mit den Eigenschaften für das Table-Objekt. 
+> in Verweist auf eine [ROWLIST](rowlist.md) -Struktur, die die Eigenschaften für das Table-Objekt enthält. 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::OnModifySelectedItem  <br/> |MFCMAPI (engl.) wird die **IExchangeModifyTable::ModifyTable** -Methode verwendet, um eine geänderte Regel in der Tabelle der Regeln zurückzuschreiben.  <br/> |
+|RulesDlg. cpp  <br/> |CRulesDlg:: OnModifySelectedItem  <br/> |MFCMAPI verwendet die **IExchangeModifyTable:: Modify** Table-Methode, um eine geänderte Regel zurück in die Tabelle der Regeln zu schreiben.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

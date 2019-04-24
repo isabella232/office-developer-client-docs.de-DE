@@ -8,27 +8,27 @@ f1_keywords:
 - Vis_DSS.chm3015
 localization_priority: Normal
 ms.assetid: 7ceb30a8-1d05-feff-35d8-08a198784a27
-description: Enthält X- und y-Koordinaten des eines elliptischen Bogens Endpunkt, X- und y-Koordinaten der Kontrollpunkte des Bogens, den Winkel von X-Achse zu großen Achse der Ellipse und das Verhältnis zwischen der Ellipse Haupt- und Hilfsintervalle Achsen.
-ms.openlocfilehash: 9a356429f14a20b72a8bd55689855e2954d4a807
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält die x-und y-Koordinaten des Endpunkts eines elliptischen Bogens, die x-und y-Koordinaten der Steuerpunkte des Bogens, den Winkel von der x-Achse zur Hauptachse der Ellipse und das Verhältnis zwischen Haupt-und Nebenachsen der Ellipse.
+ms.openlocfilehash: c6db7560a05652ca3bfcadb2fd4857ac39370562
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345675"
 ---
-# <a name="ellipticalarcto-row-geometry-section"></a>EllipticalArcTo Row (Geometry Section)
+# <a name="ellipticalarcto-row-geometry-section"></a>Zeile "EllipticalArcTo" (Abschnitt "Geometry")
 
-Enthält die *X* - und *y* - Koordinaten des Endpunkts eines elliptischen Bogens, *X* - und *y* -Koordinaten der Kontrollpunkte des Bogens, Winkel von der *x* -Achse zu großen Achse der Ellipse und das Verhältnis zwischen der Ellipse Haupt- und Mino R Achsen. 
+Enthält die *x* -und *y* -Koordinaten des Endpunkts eines elliptischen Bogens, die *x* -und *y* -Koordinaten der Kontrollpunkte des Bogens, den Winkel von der *x* -Achse zur Hauptachse der Ellipse und das Verhältnis zwischen dem großen und dem Mino r-Achsen. 
   
 Eine Zeile EllipticalArcTo enthält folgende Zellen.
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |Die *X* -Koordinate des Endscheitelpunkts eines Bogens.  <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Endscheitelpunkts eines Bogens.  <br/> |
-|[A](a-cell-geometry-section.md) <br/> |Die *X* -Koordinate des Kontrollpunkts des Bogens; ein Punkt auf dem Bogen. Kontrollpunkts ist die beste in der Mitte zwischen dem ersten und letzten Scheitelpunkt des Bogens. Andernfalls kann Bogens extrem große anwachsen, um passieren Kontrollpunkts weitergibt.  <br/> |
-|[B](b-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Kontrollpunkts des Bogens.  <br/> |
-|[C](c-cell-geometry-section.md) <br/> |Der Winkel der Größenachse des Bogens relativ zu der *X* -Achse des übergeordneten Objekts.  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |Die *x* -Koordinate des Endpunkts eines Bogens.  <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Endpunkts eines Bogens.  <br/> |
+|[A](a-cell-geometry-section.md) <br/> |Die *x* -Koordinate des Kontrollpunkts des Bogens; ein Punkt auf dem Bogen. Der Steuerpunkt befindet sich am besten in der Mitte zwischen dem Anfangs-und Endscheitel des Bogens. Andernfalls kann der Bogen zu einer extremen Größe anwachsen, um den Kontrollpunkt mit unvorhersehbaren Ergebnissen zu durchlaufen.  <br/> |
+|[B](b-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Kontrollpunkts eines Bogens.  <br/> |
+|[C](c-cell-geometry-section.md) <br/> |Der Winkel der Hauptachse eines Bogens relativ zur *x* -Achse des übergeordneten Elements.  <br/> |
 |[D](d-cell-geometry-section.md) <br/> |Das Verhältnis der größeren zur kleineren Achse eines Bogens. Im Gegensatz zu der normalen Bedeutung der Bezeichnungen muss die als "große" Achse bezeichnete Achse nicht unbedingt größer als die "kleine" Achse sein, sodass das Größenverhältnis nicht größer als 1 sein muss. Beim Festlegen des Zellwerts gleich 0 bzw. größer als 1000 können unvorhergesehene Ergebnisse auftreten.  <br/> |
    
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4b1176ec-4126-43f5-856d-cbab8d622825
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2efee531e277b6295b7d4bc299eefc789a805d34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9eeede2a430f5186daf429dd6ed59f312ae334be
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348748"
 ---
 # <a name="imsgstoresetlockstate"></a>IMsgStore::SetLockState
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Sperrt oder entsperrt eine Nachricht. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
   
@@ -38,37 +38,37 @@ HRESULT SetLockState(
 
  _lpMessage_
   
-> [in] Ein Zeiger auf die Nachricht zu sperren oder entsperren.
+> in Ein Zeiger auf die Nachricht zum Sperren oder entsperren.
     
  _ulLockState_
   
-> [in] Ein Wert, der angibt, ob die Nachricht gesperrt oder entsperrt werden soll. Einer der folgenden Werte ist gültig:
+> in Ein Wert, der angibt, ob die Nachricht gesperrt oder entsperrt werden soll. Einer der folgenden Werte ist gültig:
     
 MSG_LOCKED 
   
-> Die Nachricht sollte gesperrt werden. 
+> Die Nachricht sollte gesperrt sein. 
     
 MSG_UNLOCKED 
   
-> Die Nachricht muss aufgehoben werden.
+> Die Nachricht sollte entsperrt werden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Sperrstatus der Nachricht wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::SetLockState** -Methode sperrt oder entsperrt eine Nachricht. **SetLockState** kann nur durch die MAPI-Warteschlange aufgerufen werden, während sie die Nachricht gesendet hat. 
+Mit der **IMsgStore:: SetLockState** -Methode wird eine Nachricht gesperrt oder aufgehoben. **SetLockState** kann nur vom MAPI-Spooler aufgerufen werden, wenn die Nachricht gesendet wird. 
   
-In der Regel, wenn die Warteschlange MAPI **SetLockState** So sperren Sie eine Nachricht aufruft, sperrt er nur die älteste Nachricht (d. h., die nächste Nachricht in der Warteschlange für die MAPI-Warteschlange senden). Wenn der ältesten Nachrichten in der Warteschlange darauf, dass eines Transportdienstes vorübergehend nicht verfügbar wartet, und die nächste Nachricht in der Warteschlange ein anderen Transportdienstes verwendet, kann die MAPI-Warteschlange verarbeitet die Nachricht spätere beginnen. Verarbeitung beginnt durch das Sperren dieser Nachricht mithilfe von **SetLockState**.
+Wenn der MAPI-Spooler **SetLockState** zum Sperren einer Nachricht aufruft, sperrt er in der Regel nur die älteste Nachricht (also die nächste Nachricht, die in der Warteschlange für den zu sendenden MAPI-Spooler steht). Wenn die älteste Nachricht in der Warteschlange auf einen vorübergehend nicht verfügbaren Transportanbieter wartet und die nächste Nachricht in der Warteschlange einen anderen Transportanbieter verwendet, kann der MAPI-Spooler mit der Verarbeitung der späteren Nachricht beginnen. Die Verarbeitung wird gestartet, indem diese Nachricht mithilfe von **SetLockState**gesperrt wird.
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Nachdem die MAPI-Warteschlange mit der _UlLockState_ -Parameter auf MSG_LOCKED **SetLockState** aufgerufen, müssen Aufrufe an die [IMsgStore::AbortSubmit](imsgstore-abortsubmit.md) -Methode die Nachricht Übertragung abzubrechen fehl. 
+Nachdem der MAPI-Spooler **SetLockState** aufgerufen hat, wobei der Parameter _ulLockState_ auf MSG_LOCKED festgelegt ist, müssen Aufrufe an die [IMsgStore:: AbortSubmit](imsgstore-abortsubmit.md) -Methode zum Abbrechen der Nachrichtenübertragung fehlschlagen. 
   
-Rufen Sie die Nachricht [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode in der Implementierung **SetLockState** , sodass alle Änderungen, die an die Nachricht vorgenommen wurden, bevor der Anruf **SetLockState** eingegangen gespeichert werden. 
+Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht in der **SetLockState** -Implementierung auf, sodass alle Änderungen, die an der Nachricht vorgenommen wurden, bevor der **SetLockState** -Aufruf empfangen wurde, gespeichert werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: f21b5e6c-7a63-46bf-acbf-0e042e3519f7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f54ef96443e5c9fc5fb587f5a9c25388c1ff9cdb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 38263f46ccb50e1836f31d457f54f52abca7ce9f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357519"
 ---
 # <a name="sbinary"></a>SBinary
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Eigenschaft vom Typ PT_BINARY.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SBinary
@@ -44,15 +44,15 @@ typedef struct _SBinary
 
  **cb**
   
-> Anzahl der Bytes im **Lpb** -Member. 
+> Die Anzahl der Bytes im **LPB** -Element. 
     
- **lpb**
+ **LPB**
   
 > Zeiger auf den Wert der PT_BINARY-Eigenschaft.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Informationen zu Eigenschaftstypen finden Sie unter [MAPI-Eigenschaft Type Overview](mapi-property-type-overview.md).
+Weitere Informationen zu Eigenschaftstypen finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md).
   
 ## <a name="see-also"></a>Siehe auch
 

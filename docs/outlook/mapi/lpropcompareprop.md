@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: f14ad568-fe45-4875-957d-415d39dc6f28
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0985ed0c5d4482bb22f46bdc9198afc343c61e5f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7417ddeb814cafb954d5ab80a6dae771fd0f7a79
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357435"
 ---
 # <a name="lpropcompareprop"></a>LPropCompareProp
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eigenschaftswerte, um festzustellen, ob diese gleich sind. 
+Vergleicht zwei Eigenschaftswerte, um zu bestimmen, ob Sie gleich sind. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LONG LPropCompareProp(
@@ -44,30 +44,30 @@ LONG LPropCompareProp(
 
  _lpSPropValueA_
   
-> [in] Zeiger auf eine [SPropValue](spropvalue.md) -Struktur definieren den ersten Eigenschaftswert verglichen werden soll. 
+> in Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die den ersten zu vergleichenden Eigenschaftswert definiert. 
     
  _lpSPropValueB_
   
-> [in] Zeiger auf eine **SPropValue** -Struktur definieren den zweiten Eigenschaftswert verglichen werden soll. 
+> in Zeiger auf eine **SPropValue** -Struktur, die den zweiten zu vergleichenden Eigenschaftswert definiert. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
- **LPropCompareProp** gibt einen der folgenden Werte für die meisten Eigenschaftentypen zurück: 
+ **LPropCompareProp** gibt für die meisten Eigenschaftstypen einen der folgenden Werte zurück: 
   
-- Kleiner als 0 (null) ist der Parameter _LpSPropValueA_ , wenn der Wert von angegebenen kleiner ist als der durch den Parameter _LpSPropValueB_ angegeben. 
+- Kleiner als 0 (null), wenn der vom _lpSPropValueA_ -Parameter angegebene Wert kleiner als der durch den _lpSPropValueB_ -Parameter angegebene ist. 
     
-- Größer als 0 (null), wenn der Wert von _LpSPropValueA_ angegebene ist größer als der mit _LpSPropValueB_angegeben.
+- Größer als 0 (null), wenn der von _lpSPropValueA_ angegebene Wert größer ist als der von _lpSPropValueB_.
     
-- 0 (null), wenn der Wert von _LpSPropValueA_ angegebene gleich den durch _LpSPropValueB_angegebenen Wert ist. 
+- NULL, wenn der von _lpSPropValueA_ angegebene Wert dem von _lpSPropValueB_angegebenen Wert entspricht. 
     
-Für Eigenschaftentypen, die keine systeminterne Sortierung, wie etwa boolescher Wert haben oder Fehlertypen, gibt die **LPropCompareProp** -Funktion einen nicht definierten Wert zurück, wenn die zwei Werte nicht gleich sind. Dieser Wert nicht definierte sind ungleich NULL und konsistent Anrufe. 
+Bei Eigenschaftentypen, die keine systeminterne Reihenfolge aufweisen, wie boolesche oder Fehlertypen, gibt die **LPropCompareProp** -Funktion einen nicht definierten Wert zurück, wenn die beiden Eigenschaftswerte ungleich sind. Dieser nicht definierte Wert ist ungleich NULL und konsistent für Aufrufe. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **LPropCompareProp** -Funktion nur, wenn die Typen der beiden Eigenschaften, die verglichen werden identisch sind. 
+Verwenden Sie die **LPropCompareProp** -Funktion nur, wenn die Typen der beiden zu vergleichenden Eigenschaften identisch sind. 
   
-Vor dem Aufruf von **LPropCompareProp**, muss eine Clientanwendung oder Dienstanbieter zunächst die Eigenschaften für den Vergleich mit einem Aufruf der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode abrufen. Der Vergleich von Eigenschaftswerten ist gültig, wenn ein Client oder Anbieter Anrufe **LPropCompareProp**, die Funktion zuerst die Eigenschaftentags, um sicherzustellen, dass untersucht. Die Funktion vergleicht dann die Eigenschaftswerte, die einen entsprechenden Wert zurückgeben. 
+Vor dem Aufrufen von **LPropCompareProp**muss eine Clientanwendung oder ein Dienstanbieter zunächst die Eigenschaften für den Vergleich mit einem Aufruf der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode abrufen. Wenn ein Client oder Anbieter **LPropCompareProp**aufruft, untersucht die Funktion zuerst die Eigenschaftentags, um sicherzustellen, dass der Vergleich der Eigenschaftswerte gültig ist. Die Funktion vergleicht dann die Eigenschaftswerte und gibt einen entsprechenden Wert zurück. 
   
-Wenn die Werte ungleich sind, bestimmt **LPropCompareProp** an, welche größer ist. Die Eigenschaften, die **LPropCompareProp** vergleicht müssen nicht auf das gleiche Objekt gehören. 
+Wenn die Eigenschaftswerte ungleich sind, bestimmt **LPropCompareProp** , welche größer ist. Die Eigenschaften, die von **LPropCompareProp** verglichen werden, müssen nicht zum gleichen Objekt gehören. 
   
 
