@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: f5c6ba8f-4ef5-4d60-b4e6-5b9160ec4e99
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d90f502e2cd7f97ac273ebecedbd0363097b1d60
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f6cdebf82d8b84ada3d029865867c5192af90b0d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329037"
 ---
 # <a name="imapisupportspooleryield"></a>IMAPISupport::SpoolerYield
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Kontrolle über die CPU auf die MAPI-Warteschlange, damit sie alle Aufgaben ausführen kann, notwendig hält.
+Gibt die CPU-Steuerung für den MAPI-Spooler an, sodass Sie alle für erforderlich erachteten Aufgaben ausführen kann.
   
 ```cpp
 HRESULT SpoolerYield(
@@ -37,29 +37,29 @@ ULONG ulFlags
 
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Transportdienst veröffentlicht erfolgreich CPU.
+> Der Transportanbieter hat die CPU erfolgreich veröffentlicht.
     
 MAPI_W_CANCEL_MESSAGE 
   
-> Weist der Adressbuchhierarchie So beenden Sie die Zustellung der Nachricht an alle Empfänger, die noch nicht erhalten haben.
+> Weist den Transportanbieter an, die Übermittlung der Nachricht an Empfänger zu beenden, die Sie noch nicht erhalten haben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::SpoolerYield** -Methode wird für Transport Anbieter Unterstützungsobjekte implementiert. Transportanbieter Aufrufen **SpoolerYield** , um die MAPI-Warteschlange, die erforderliche Verarbeitung bezwecken zu ermöglichen. 
+Die **IMAPISupport:: SpoolerYield** -Methode wird für Support Objekte des Transportanbieters implementiert. Transport Anbieter rufen **SpoolerYield** auf, damit der MAPI-Spooler alle erforderlichen Verarbeitungsschritte ausführen kann. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **SpoolerYield** , wenn Sie langer Vorgänge ausführen, die angehalten werden können. Dadurch können Vordergrund während eines langen Vorgangs, wie die Zustellung an eine große Empfängerliste über Datenverkehrsaufkommen ausgeführt werden. 
+Rufen Sie **SpoolerYield** auf, wenn Sie längere Vorgänge ausführen, die angehalten werden können. Auf diese Weise können vordergrundanwendungen während eines langen Betriebs ausgeführt werden, beispielsweise die Übertragung an eine große Empfängerliste in einem belebten Netzwerk. 
   
-Wenn **SpoolerYield** mit MAPI_W_CANCEL_MESSAGE zurückgibt, wurde die MAPI-Warteschlange festgestellt, dass die Nachricht nicht mehr gesendet werden soll. Geben Sie nach Möglichkeit MAPI_E_USER_CANCEL an die aufrufende Prozess und beenden, zurück. 
+Wenn **SpoolerYield** mit MAPI_W_CANCEL_MESSAGE zurückgibt, hat der MAPI-Spooler festgestellt, dass die Nachricht nicht mehr gesendet werden soll. Geben Sie MAPI_E_USER_CANCEL an den Anruf Prozess zurück, und beenden Sie, wenn möglich. 
   
-Weitere Informationen dazu, die MAPI-Warteschlange Zurückhalten finden Sie unter [Interaktion mit der MAPI-Warteschlange](interacting-with-the-mapi-spooler.md).
+Weitere Informationen zur Angabe des MAPI-Spoolers finden Sie unter [interagieren mit dem MAPI](interacting-with-the-mapi-spooler.md)-Spooler.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: 85f0d8a5-6dd3-4f33-b31a-246d286d6286
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 87b91b66807ce79533029a8d5b5c4956bc4d5ce9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 319c932862615e063a02ffac07e5541b1b20ac7e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330244"
 ---
 # <a name="adrlist"></a>ADRLIST
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt NULL oder mehrere Eigenschaften, die einen oder mehrere Empfänger angehören. 
+Beschreibt NULL oder mehr Eigenschaften, die zu einem oder mehreren Empfängern gehören. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Verwandte Makros:  <br/> |[CbADRLIST](cbadrlist.md), [CbNewADRLIST](cbnewadrlist.md), [CbNewADRLIST](cbnewadrlist.md) <br/> |
    
 ```cpp
@@ -41,19 +41,19 @@ typedef struct _ADRLIST
 
 ## <a name="members"></a>Elemente
 
-**cEntries**
+**Zentriert**
   
-> Anzahl der Einträge im Array vom **aEntries** Member angegeben. 
+> Die Anzahl der Einträge im vom **aEntries** -Element angegebenen Array. 
     
 **aEntries**
   
-> Array von [ADRENTRY](adrentry.md) Strukturen, eine Struktur für jeden Empfänger. 
+> Array von [Miet](adrentry.md) Strukturen, eine Struktur für jeden Empfänger. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine **ADRLIST** -Struktur enthält ein oder mehrere **ADRENTRY** Strukturen, die die Eigenschaften eines Empfängers beschreibt. Ein Empfänger kann nicht aufgelöst werden. Dies bedeutet, dass es einen Eintrag Bezeichner in dessen Array von Eigenschaftswerten fehlen. Ein aufgelöster Empfänger bedeutet, dass die **PR\_ENTRYID** -Eigenschaft ([PidTagEntryId](pidtagentryid-canonical-property.md)) enthalten ist. Außerdem müssen in der Regel aufgelösten Empfänger eine e-Mail-Adresse die **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))-Eigenschaft. Die e-Mail-Adresse ist jedoch nicht erforderlich. **ADRLIST** -Strukturen, beispielsweise dienen zum Beschreiben der Empfängerliste für eine ausgehende Nachricht und MAPI, um die Einträge im Adressbuch anzuzeigen. 
+Eine **ADRLIST** -Struktur enthält eine oder mehrere **Miet** Strukturen, die jeweils die Eigenschaften eines Empfängers beschreiben. Ein Empfänger kann nicht aufgelöst werden. Dies bedeutet, dass es in seinem Array von Eigenschaftswerten keine Eintrags-ID gibt. Ein aufgelöster Empfänger bedeutet, dass die **\_PR** -Eintrags-Eigenschaft ([PidTagEntryId](pidtagentryid-canonical-property.md)) enthalten ist. In der Regel haben aufgelöste Empfänger auch eine e-Mail-Adresse der **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))-Eigenschaft. Die e-Mail-Adresse ist jedoch nicht erforderlich. **ADRLIST** -Strukturen werden zum Beispiel verwendet, um die Empfängerliste für eine ausgehende Nachricht und MAPI zum Anzeigen der Einträge im Adressbuch zu beschreiben. 
   
-**ADRLIST** -Strukturen so oder ähnlich aus [SRowSet](srowset.md) Strukturen Strukturen für das Darstellen von Zeilen in Tabellen verwendet. Diese zwei Strukturen dienen tatsächlich, damit sie austauschbar verwendet werden können. Beide enthalten ein Array von Strukturen, die eine Gruppe von Eigenschaften und die Anzahl der Werte im Array beschreibt. Während der **ADRLIST** -Struktur enthält das Array [ADRENTRY](adrentry.md) Strukturen, in der Struktur **SRowSet** das Array [SRow](srow.md) Strukturen enthält. **ADRENTRY** Strukturen und **SRow** Strukturen sind in Layout identisch. Da **ADRLIST** und **SRowSet** Strukturen dieselben Zuordnungsregeln zu befolgen, kann unverändert eine **SRowSet** -Struktur, die aus der Inhaltstabelle einer Adressbuchcontainer abgerufen wird auf eine **ADRLIST** -Struktur umgewandelt und verwendet werden. 
+**ADRLIST** -Strukturen ähneln [SRowSet](srowset.md) Strukturen der Strukturen für die Darstellung von Zeilen in Tabellen verwendet. Tatsächlich sind diese beiden Strukturen so konzipiert, dass Sie synonym verwendet werden können. Beide enthalten ein Array von Strukturen, die eine Gruppe von Eigenschaften und die Anzahl der Werte im Array beschreiben. Während in der **ADRLIST** -Struktur das Array die [Miet](adrentry.md) Strukturen enthält, enthält das Array in der **SRowSet** -Struktur [SRow](srow.md) -Strukturen. **Miet** Strukturen und **SRow** -Strukturen sind im Layout identisch. Da **ADRLIST** -und **SRowSet** -Strukturen denselben Zuordnungsregeln folgen, kann eine **SRowSet** -Struktur, die aus der Inhaltstabelle eines Adressbuch Containers abgerufen wird, in eine **ADRLIST** -Struktur umgewandelt und unverändert verwendet werden. 
   
 Die folgende Abbildung zeigt das Layout einer **ADRLIST** -Struktur. 
   
@@ -61,13 +61,13 @@ Die folgende Abbildung zeigt das Layout einer **ADRLIST** -Struktur.
   
 ![ADRLIST-Komponenten] (media/amapi_18.gif "ADRLIST-Komponenten")
   
-Die Abschnitte **ADRENTRY** und [SPropValue](spropvalue.md) in einer **ADRLIST** müssen belegt und unabhängig von den anderen Teilen freigegeben werden. D. h., muss jede **SPropValue** Struktur einzeln zugeordnet werden, nachdem Speicher für die Struktur **ADRENTRY** zugewiesen wurde und freigegeben werden, bevor die Struktur **ADRENTRY** freigegeben wird. Diese Unabhängigkeit in die Behandlung von Speicher ermöglicht Empfänger und einzelne Empfängereigenschaften frei hinzugefügt oder aus der Adressliste gelöscht werden soll. 
+Die **Miet** -und [SPropValue](spropvalue.md) -Teile in einer **ADRLIST** -Struktur müssen unabhängig von den anderen Teilen reserviert und freigegeben werden. Das heißt, jede **SPropValue** -Struktur muss einzeln zugeordnet werden, nachdem der Speicher für die **Miet** Struktur reserviert und freigegeben wurde, bevor die **Miet** Struktur freigegeben wird. Durch diese Unabhängigkeit im Umgang mit Arbeitsspeicher können Empfänger und einzelne Empfänger Eigenschaften in der Adressliste frei hinzugefügt oder gelöscht werden. 
   
-Die Funktionen [MAPIAllocateBuffer](mapiallocatebuffer.md) und [MAPIFreeBuffer](mapifreebuffer.md) müssen zum Zuordnen und Freigeben der **ADRLIST** -Struktur und all seiner Teile verwendet werden. 
+Die [MAPIAllocateBuffer](mapiallocatebuffer.md) -und [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktionen müssen verwendet werden, um die **ADRLIST** -Struktur und alle zugehörigen Komponenten zuzuweisen und freizugeben. 
   
-Wenn eine Empfängerliste zu groß im Arbeitsspeicher ist, können Clients die [IMessage::ModifyRecipients](imessage-modifyrecipients.md) -Methode eine Teilmenge der Liste entwickelt aufrufen. Clients sollten Address Book allgemeine Dialogfelder in dieser Situation nicht verwenden. 
+Wenn eine Empfängerliste zu umfangreich ist, um Sie in den Arbeitsspeicher zu integrieren, können Clients die [IMessage:: ModifyRecipients](imessage-modifyrecipients.md) -Methode aufrufen, um mit einer Teilmenge der Liste zu arbeiten. In dieser Situation sollten Clients nicht die allgemeinen Dialogfelder des Adressbuchs verwenden. 
   
-Weitere Informationen zur Verwendung von Arbeitsspeicher für **ADRENTRY** Strukturen, finden Sie unter [Verwalten von Arbeitsspeicher für ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md). 
+Weitere Informationen zum Zuweisen von Arbeitsspeicher für **Miet** Strukturen finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

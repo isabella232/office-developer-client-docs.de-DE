@@ -7,50 +7,50 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6f8f6af2-c7fa-4135-9532-7af5fc643b0d
-description: Instanzen von Vorlagenvariablen (dargestellt durch ein TemplateVariable-Element) angeben, die Daten von einer Aktivitätsfeed-Element in einer Aktivitätsvorlage.
-ms.openlocfilehash: 99f4c2de586447fb0361e528bcd33d62b79e0fb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Instanzen von Vorlagenvariablen (dargestellt durch ein templateVariable-Element) geben die Daten eines Aktivitätsfeed-Elements in einer Aktivitätsvorlage an.
+ms.openlocfilehash: 9b37665488f0f1e2bd205fb7d4a5d2201697d7c8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329176"
 ---
 # <a name="template-variables"></a>Vorlagenvariablen
 
-Instanzen von Vorlagenvariablen (dargestellt durch ein **TemplateVariable** -Element) angeben, die Daten von einer Aktivitätsfeed-Element in einer Aktivitätsvorlage. 
+Instanzen von Vorlagenvariablen (dargestellt durch ein **templateVariable** -Element) geben die Daten eines Aktivitätsfeed-Elements in einer Aktivitätsvorlage an. 
   
-Ein Beispiel der Aktivität XML-feed, finden Sie unter [Aktivität Feed XML-Beispiel](activity-feed-xml-example.md).
+Ein Beispiel für Aktivitäts-Feed-XML finden Sie unter [Activity Feed XML example](activity-feed-xml-example.md).
 
-Die folgende Tabelle zeigt den Typen von unterstützten Vorlagenvariablen, jeweils durch die entsprechende XML-Enumerationswert dargestellt.
+In der folgenden Tabelle sind die Typen der unterstützten Vorlagenvariablen aufgeführt, die jeweils durch den entsprechenden XML-Enumerationswert dargestellt werden.
   
-|**Typ der Vorlage Variablen**|**Beschreibung**|
+|**Typ der Vorlagenvariablen**|**Beschreibung**|
 |:-----|:-----|
-|**entityVariable** <br/> |Eine Person, eine Gruppe oder eine Sache.  <br/> |
-|**linkVariable** <br/> |Eine Verknüpfung.  <br/> |
+|**entityVariable** <br/> |Eine Person, eine Gruppe oder ein Ding.  <br/> |
+|**linkVariable** <br/> |Link.  <br/> |
 |**listVariable** <br/> |Eine Gruppe von Objekten.  <br/> |
 |**pictureVariable** <br/> |Ein Bild.  <br/> |
-|**publisherVariable** <br/> |Element-feed der Herausgeber der Aktivität.  <br/> |
-|**textVariable** <br/> |Text-Block.  <br/> |
+|**publisherVariable** <br/> |Der Herausgeber des Aktivitätsfeed-Elements.  <br/> |
+|**Textvariable** <br/> |Ein TextBlock.  <br/> |
    
-Jede Art von Vorlage Variable hat Elemente an, die Daten über diese Variable erforderlich. Vorlagenvariablen werden wie folgt angegeben:
+Jeder Typ von Template-Variablen verfügt über erforderliche Elemente, um die Daten zu dieser Variablen anzugeben. Vorlagenvariablen werden wie folgt festgelegt:
   
 `<templateVariable type="variable type">`
   
-## <a name="list-template-variable"></a>Die Vorlage Listenvariable
+## <a name="list-template-variable"></a>Listenvorlagen Variable
 
-Sie können Vorlagenvariablen angeben, die in einer Liste (getrennt durch die **ListVariable** und **ListItems** Elemente) wie folgt enthalten sind: 
+Sie können Vorlagenvariablen, die in einer Liste enthalten sind (durch die Elemente **listVariable** und **ListItems** getrennt) wie folgt angeben: 
   
 `<simpleTemplateVariable type="variable type of text, link, or picture">`
   
-Eine Vorlage Variable vom Typ **ListVariable** ist ein Container für Objekte. Sie können durch Kommas getrennte Elemente (vom Typ **LinkVariable** oder **TextVariable** ) oder Bilder (vom Typ **PictureVariable** ) enthalten. Listen können bis zu fünf Verknüpfen von Elementen, fünf Textelemente oder fünf Bilder enthalten. 
+Eine Vorlagenvariable des **listVariable** -Typs ist ein Container für Objekte. Sie kann durch trennzeichengetrennte Elemente (vom Typ **linkVariable** oder Textvariable) oder Bilder (vom Typ **pictureVariable** ) enthalten. **** Listen können bis zu fünf Link Elemente, fünf Textelemente oder fünf Bilder enthalten. 
   
-Outlook Social Connector (OSC) lokalisiert Link oder Text Listenelemente entsprechend des Windows-Systemgebietsschemas an.
+Der Outlook Connector für soziale Netzwerke (OSC) lokalisiert Verknüpfungs-oder Textlisten Elemente entsprechend dem Windows-Systemgebietsschema.
   
-Um korrekt analysiert und Anzeigen von Bildern in einer Aktivitätsfeed-Element, müssen Sie Bilder in einer Liste einbeziehen. Alle Bilder werden Größe der 52 Pixel hoch sein. Die Breite des Bilds wird nicht geändert.
+Um Bilder in einem Aktivitätsfeed-Element richtig zu analysieren und anzuzeigen, müssen Sie Bilder in eine Liste aufnehmen. Alle Bilder werden um 52 Pixel hoch geändert. Die Größe des Bilds wird nicht geändert.
   
-## <a name="template-variable-elements"></a>Vorlage Variable Elemente
+## <a name="template-variable-elements"></a>Vorlagenvariable Elemente
 
-Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede Art von Vorlage Variable unterstützt.
+In diesem Abschnitt werden die erforderlichen und optionalen Elemente erläutert, die für die einzelnen Vorlagenvariablen Typen unterstützt werden.
   
 ### <a name="entityvariable"></a>entityVariable
 
@@ -58,17 +58,17 @@ Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede A
 |:-----|:-----|
 |**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
 |**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.   <br/> |
-|**nameHint** <br/> |Der Name der feed-Element angezeigt werden. Optional.  <br/> |
-|**profileUrl** <br/> |Die URL des Profils der Person, die für den Namen der Person in der feed-Element als Hyperlink verwendet wird, wenn Sie den Namen der Person vorhanden ist. Optional.  <br/> |
-|**emailAddress** <br/> |Die e-Mail-Adresse, die verwendet wird, um die Kontaktinformationen dieser Person in Outlook zu aktualisieren. Optional.  <br/> |
+|**nameHint** <br/> |Der Name, der im Feedelement angezeigt werden soll. Optional.  <br/> |
+|**profileUrl** <br/> |Die URL des Profils der Person, die als Hyperlink für den Namen der Person im Feedelement verwendet wird, wenn der Name der Person vorhanden ist. Optional.  <br/> |
+|**emailAddress** <br/> |Die e-Mail-Adresse, die zum Aktualisieren der Kontaktinformationen dieser Person in Outlook verwendet wird. Optional.  <br/> |
    
 ### <a name="linkvariable"></a>linkVariable
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**Value** <br/> |Die URL für diese Verknüpfung. Erforderlich.   <br/> |
-|**text** <br/> |Der Linktext, anstatt die URL selbst angezeigt. Optional.  <br/> |
+|**value** <br/> |Die URL für diesen Link. Erforderlich.   <br/> |
+|**text** <br/> |Der Linktext, der anstelle der URL selbst angezeigt werden soll. Optional.  <br/> |
    
 ### <a name="listvariable"></a>listVariable
 
@@ -82,9 +82,9 @@ Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede A
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**Value** <br/> |Die URL für das Bild. Erforderlich.   <br/> |
-|**altText** <br/> |Der alternative Text für Eingabehilfen und wenn der Benutzer den Mauszeiger über das Bild bewegt angezeigt. Optional.  <br/> |
-|**href** <br/> |Der Hyperlink klickt der Benutzer das Bild verwenden, wenn das gewünschte Ziel nicht die Bild-URL, die durch das **Value** -Element angegeben ist. Optional.  <br/> |
+|**value** <br/> |Die URL für das Bild. Erforderlich.   <br/> |
+|**altText** <br/> |Der Alternative Text, der für die Eingabehilfen angezeigt werden soll, und beim Bewegen des Mauszeigers über das Bild. Optional.  <br/> |
+|**href** <br/> |Der Hyperlink, der verwendet werden soll, wenn der Benutzer auf das Bild klickt, wenn das gewünschte Ziel nicht die vom **value** -Element angegebene Bild-URL ist. Optional.  <br/> |
    
 ### <a name="publishervariable"></a>publisherVariable
 
@@ -92,24 +92,24 @@ Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede A
 |:-----|:-----|
 |**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
 |**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.   <br/> |
-|**nameHint** <br/> |Der Name der feed-Element angezeigt werden. Optional.  <br/> |
-|**profileUrl** <br/> |Die URL des Profils der Person, die für den Namen der Person in der feed-Element als Hyperlink verwendet wird, wenn Sie den Namen der Person vorhanden ist. Optional.  <br/> |
-|**emailAddress** <br/> |Die e-Mail-Adresse, die verwendet wird, um die Kontaktinformationen dieser Person in Outlook zu aktualisieren. Optional.  <br/> |
+|**nameHint** <br/> |Der Name, der im Feedelement angezeigt werden soll. Optional.  <br/> |
+|**profileUrl** <br/> |Die URL des Profils der Person, die als Hyperlink für den Namen der Person im Feedelement verwendet wird, wenn der Name der Person vorhanden ist. Optional.  <br/> |
+|**emailAddress** <br/> |Die e-Mail-Adresse, die zum Aktualisieren der Kontaktinformationen dieser Person in Outlook verwendet wird. Optional.  <br/> |
    
-### <a name="textvariable"></a>textVariable
+### <a name="textvariable"></a>Textvariable
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**Value** <br/> |Der anzuzeigende Text. Optional.  <br/> |
+|**value** <br/> |Der anzuzeigende Text. Optional.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über XML-Code für eine Aktivität Element-Feed](overview-of-xml-for-an-activity-feed-item.md)  
-- [ActivityDetails Element](activitydetails-element.md)  
-- [ActivityTemplateContainer Element](activitytemplatecontainer-element.md)  
-- [Richtlinien für das Aktivitäten ordnungsgemäß anzeigen](guidelines-for-properly-displaying-activities.md)  
-- [XML-Code für Aktivitäten](xml-for-activities.md)  
-- [Outlook Connector für soziale Netzwerke Anbieter XML-Schema](outlook-social-connector-provider-xml-schema.md)
+- [Übersicht über XML für ein Aktivitäts Feed-Element](overview-of-xml-for-an-activity-feed-item.md)  
+- [activityDetails-Element](activitydetails-element.md)  
+- [activityTemplateContainer-Element](activitytemplatecontainer-element.md)  
+- [Richtlinien für die OrdnungsGemäße Anzeige von Aktivitäten](guidelines-for-properly-displaying-activities.md)  
+- [XML für Aktivitäten](xml-for-activities.md)  
+- [XML-Schema des Anbieters für soziale Netzwerke in Outlook](outlook-social-connector-provider-xml-schema.md)
 - [Entwickeln eines Providers mit dem OSC-XML-Schema](developing-a-provider-with-the-osc-xml-schema.md)
 

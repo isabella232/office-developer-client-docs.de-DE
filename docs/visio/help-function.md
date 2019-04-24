@@ -8,35 +8,35 @@ f1_keywords:
 - Vis_DSS.chm82251436
 localization_priority: Normal
 ms.assetid: 5b358c38-6ed1-3fbe-c1d1-1a56ebbaa870
-description: Öffnet eine HTML-Hilfedatei mit dem Schlüsselwort angegeben, in das Feld Suchen.
-ms.openlocfilehash: 4671b18333bdae953c487662cd880849233df7f5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Öffnet eine HTML-Hilfedatei mit dem Schlüsselwort angegebene im Suchfeld.
+ms.openlocfilehash: 639d10bf489d1ad09aef1522d3cbc743bbe66f6f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329974"
 ---
 # <a name="help-function"></a>HELP-Funktion
 
-Öffnet eine HTML-Hilfedatei mit dem angegebenen *Schlüsselwort* im Feld **Suchen** . 
+Öffnet eine HTML-Hilfedatei mit dem *Schlüsselwort* angegebene im **Suchfeld** . 
   
 ## <a name="syntax"></a>Syntax
 
-Hilfe ("** *filename.chm!keyword* **") 
+HELP ("* * *filename. chm!-Schlüsselwort* * *") 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _filename.chm!Keyword_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name der Hilfedatei und das Stichwort, nach dem gesucht werden soll.  <br/> |
+| _filename. chm!-Schlüsselwort_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name der Hilfedatei und das Stichwort, nach dem gesucht werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn kein *Keyword* angegeben wurde, wird die HELP-Funktion die Inhaltsübersicht der Hilfedatei geöffnet. 
+Wenn kein *Schlüsselwort* angegeben wird, wird die Seite Inhalt der Hilfedatei geöffnet. 
   
 ## <a name="example"></a>Beispiel
 
-Help("Visio.chm!ShapeSheet") 
+Hilfe ("Visio. chm! ShapeSheet") 
   
 Öffnet die Visio-Hilfedatei und zeigt eine Liste der Themen zum Stichwort "Shapesheet" an. 
   

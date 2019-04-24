@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8fac3c92-d2f5-479e-a368-ca82bddd8e30
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 21b738424b27d3d89d8de84c8c9ff2ff86dd945b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6c00dce9ec489ca2b886f3e51551ba57e9eeea33
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331563"
 ---
 # <a name="mapi-folders"></a>MAPI-Ordner
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ordner sind MAPI-Objekten, die als Basiseinheit Organisation f�r Nachrichten zu bedienen. Hierarchisch angeordnet sind, k�nnen Ordner Nachrichten und andere Ordner enthalten. Ordner erleichtern das Suchen von und Arbeiten mit Nachrichten.
   
@@ -39,19 +39,19 @@ Die meisten anderen Ordner sind generische Ordner. Generische Ordner enthalten w
   
 Ein Suchordner enth�lt Links zu Nachrichten, die eine Reihe von vordefinierten Kriterien entsprechen. Da Suchordner Links anstelle von tats�chlichen Nachrichten enthalten, werden sie in Kraft schreibgesch�tzt. Nicht enthalten andere Ordner oder Nachrichten oder Ordner verschoben oder in diese kopiert. Sie d�rfen keine neue Nachrichten erstellt, in denen besitzen. und sie selbst verschoben, kopiert oder umbenannt werden nicht m�glich. Wenn eine Nachricht aus einem Suchordner gel�scht wird, wird sie tats�chlich aus dem Ordner gel�scht, die die Nachricht enth�lt.
   
-Ordnertyp ist in der Eigenschaft **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md)) gespeichert. Jeder Ordner hat diese Eigenschaft auf FOLDER_GENERIC, FOLDER_ROOT oder FOLDER_SEARCH, je nachdem dieses Typs festgelegt.
+Der Ordnertyp wird in der **PR_FOLDER_TYPE** ([pidtagfoldertype (](pidtagfoldertype-canonical-property.md))-Eigenschaft gespeichert. Jeder Ordner hat diese Eigenschaft auf FOLDER_GENERIC, FOLDER_ROOT oder FOLDER_SEARCH, je nachdem dieses Typs festgelegt.
   
-Jeder Ordner verf�gt �ber eine Eintrags-ID und einen Datensatzschl�ssel. Die Eintrags-ID **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) wird zum Öffnen des Ordners von Clients und -Dienstanbieter verwendet. Der Datensatzschlüssel **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) ist ein binärer Wert, der verwendet wird, um den Ordner mit anderen Ordnern zu vergleichen. 
+Jeder Ordner verf�gt �ber eine Eintrags-ID und einen Datensatzschl�ssel. Die Eintrags-ID **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) wird von Clients und Dienstanbietern zum Öffnen des Ordners verwendet. Der Eintragsschlüssel **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md)) ist ein binärer Wert, der zum Vergleichen des Ordners mit anderen Ordnern verwendet wird. 
   
 Ein Ordner hat andere Eigenschaften zugeh�rigen Ordner und den Nachrichtenspeicher zu identifizieren. Die folgenden Eigenschaften sind erforderlich:
   
-- **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md))
+- **PR_PARENT_ENTRYID** ([Pidtagparententryid (](pidtagparententryid-canonical-property.md))
     
-- **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))
+- **PR_STORE_ENTRYID** ([Pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md))
     
-- **PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))
+- **PR_STORE_RECORD_KEY** ([Pidtagstorerecordkey (](pidtagstorerecordkey-canonical-property.md))
     
-Einige Ordner unterstützen die Eigenschaft **PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) der Art der Vorgänge beschrieben, die Benutzer ausführen kann. Beispielsweise ist eine der g�ltigen Einstellungen f�r **PR_ACCESS** MAPI_ACCESS_DELETE, die angibt, dass der Ordner entfernt werden kann. Eine weitere Einstellung, MAPI_ACCESS_MODIFY, gibt an, dass der Ordner ge�ndert werden. 
+Einige Ordner unterstützen die **PR_ACCESS** ([pidtagaccess (](pidtagaccess-canonical-property.md))-Eigenschaft, die die Art der Vorgänge beschreibt, die ein Benutzer ausführen kann. Beispielsweise ist eine der g�ltigen Einstellungen f�r **PR_ACCESS** MAPI_ACCESS_DELETE, die angibt, dass der Ordner entfernt werden kann. Eine weitere Einstellung, MAPI_ACCESS_MODIFY, gibt an, dass der Ordner ge�ndert werden. 
   
 Eine vollst�ndige Liste der erforderlichen Ordnereigenschaften finden Sie unter der [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle. 
   

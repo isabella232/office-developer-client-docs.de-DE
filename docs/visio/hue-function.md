@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251440
 localization_priority: Normal
 ms.assetid: 0f5c6097-eef5-5f58-e2ef-2c348e42dc9a
-description: Gibt den Wert der Farbtonkomponente eine Farbe zurück.
-ms.openlocfilehash: 2a532e305eb7cbabc5ba07dcace6c07a337e7743
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Wert der Farbtonkomponente einer Farbe zurück.
+ms.openlocfilehash: 39fdd160f5cd792e95930a3e7c7cea3c37ed16c1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329911"
 ---
 # <a name="hue-function"></a>HUE Function
 
-Gibt den Wert der Farbtonkomponente eine Farbe zurück.
+Gibt den Wert der Farbtonkomponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-FARBTON (** *Ausdruck* **) 
+HUE (* * *Expression* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,7 +30,7 @@ FARBTON (** *Ausdruck* **)
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Ausdruck, der eine Farbe ergibt.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zahl
   
@@ -40,13 +40,13 @@ Der zurückgegebene Wert ist eine Zahl im Bereich von 0 bis einschließlich 239.
   
 ## <a name="example-1"></a>Beispiel 1
 
-FARBTON (Sheet4! FillForegnd)
+Farbton (Blatt. 4! Zelle FillForegnd
   
 Gibt den Wert der Farbtonkomponente der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-HUE(7)
+FARBTON (7)
   
 Gibt 120 zurück, wenn das Dokument die Farbpalette von Microsoft Visio verwendet, wobei Zyan die Farbe mit Index 7 darstellt.
   

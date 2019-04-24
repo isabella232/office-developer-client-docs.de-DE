@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: fe447899-d37a-4775-a09d-13ba3a878008
 description: Gibt die e-Mail-Adresse für das Konto an.
-ms.openlocfilehash: 7d0bbba2dcb104326c360da6a10f3e19d1740e46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 115941fdf2fdec01da8d6bc1320ac6cdc0930ffa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326530"
 ---
 # <a name="propacctuseremailaddr"></a>PROP_ACCT_USER_EMAIL_ADDR
 
@@ -20,18 +20,18 @@ Gibt die e-Mail-Adresse für das Konto an.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0x000C  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Eigenschafts-Tag:  <br/> |0x000C001F  <br/> |
-|Access:  <br/> |Lese-/Schreibzugriff  <br/> |
+|Kennung:  <br/> |0x000C  <br/> |
+|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
+|Property-Tag:  <br/> |0x000C001F  <br/> |
+|Access  <br/> |Lesen/Schreiben  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
- **PROP_ACCT_USER_EMAIL_ADDR** voraussichtlich nicht auf jedem Konto vorhanden sein. Beispielsweise konnte ein Exchange-Konto verfügen, [PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md) jedoch nicht **PROP_ACCT_USER_EMAIL_ADDR**, während für ein SMTP/POP3-Konto an, die über diese Situation rückgängig gemacht.
+ **PROP_ACCT_USER_EMAIL_ADDR** wird nicht in jedem Konto vorhanden sein. Ein Exchange-Konto kann beispielsweise [PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md) , aber nicht **PROP_ACCT_USER_EMAIL_ADDR**haben, während bei einem SMTP/POP3-Konto die Situation umgekehrt wird.
   
 ## <a name="see-also"></a>Siehe auch
 

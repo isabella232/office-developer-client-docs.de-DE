@@ -1,5 +1,5 @@
 ---
-title: Empfängertabellen
+title: Empfänger Tabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 02e77317-54c4-4fca-9ab4-835998ce07ce
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fdca2f65c73c0db0fa0b7d59b8d49b218aeb2330
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8950623308e85de1d239deb322f65ee867a33ca0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328420"
 ---
-# <a name="recipient-tables"></a>Empfängertabellen
+# <a name="recipient-tables"></a>Empfänger Tabellen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Empfänger Tabelle enthält Informationen zu allen Empfängern für eine Nachricht. Nachricht Anbieter implementieren Empfänger Tabellen und Clientanwendungen verwenden. Clients tätigen eines Anrufs an die [IMessage::GetRecipientTable](imessage-getrecipienttable.md) -Methode zum Öffnen einer Empfänger Tabelle oder unterstützt, wenn die Nachricht vom Anbieter Speichern der [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode. Clients Zugriff auf Empfänger Tabellen mit **OpenProperty** angeben **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) für die Eigenschaftentag und IID_IMAPITable für den Schnittstellenbezeichner. Änderungen, die einer Tabelle Empfänger können durch Aufrufen der Methode [IMessage::ModifyRecipients](imessage-modifyrecipients.md) vorgenommen werden. 
+Die Empfängertabelle enthält Informationen zu allen Empfängern einer Nachricht. Nachrichtenspeicher Anbieter implementieren Empfänger Tabellen und Clientanwendungen verwenden Sie. Clients greifen auf eine Empfängertabelle zu, indem Sie die [IMessage::](imessage-getrecipienttable.md) getrecipientable-Methode aufrufen oder wenn der Nachrichtenspeicher Anbieter Sie unterstützt, an die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode. Clients greifen auf Empfänger Tabellen **** mit OpenProperty zu, indem Sie **PR_MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md)) für das Property-Tag und IID_IMAPITable für den Schnittstellenbezeichner angeben. Änderungen an einer Empfängertabelle können durch Aufrufen der [IMessage:: ModifyRecipients](imessage-modifyrecipients.md) -Methode erfolgen. 
   
-Empfänger Tabellen ist eine andere Spalte festlegen, je nachdem, ob die Nachricht gesendet wurde. Die folgenden Eigenschaften bilden die erforderliche Spalte in Empfänger Tabellen festzulegen:
+Empfänger Tabellen haben unterschiedliche Spaltensätze, je nachdem, ob die Nachricht übermittelt wurde. Die folgenden Eigenschaften bilden den erforderlichen Spaltensatz in Empfänger Tabellen:
   
 - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
+- **PR_RECIPIENT_TYPE** ([Pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md))
     
-- **PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md))
+- **PR_ROWID** ([Pidtagrowid (](pidtagrowid-canonical-property.md))
     
 Die optionalen Eigenschaften sind:
   
@@ -37,19 +37,19 @@ Die optionalen Eigenschaften sind:
     
 - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
-- **PR_SPOOLER_STATUS** ([PidTagSpoolerStatus](pidtagspoolerstatus-canonical-property.md))
+- **PR_SPOOLER_STATUS** ([Pidtagspoolerstatus (](pidtagspoolerstatus-canonical-property.md))
     
-- **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))
+- **PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))
     
-Gesendete Nachrichten sollte diese zusätzlichen Eigenschaften in einen Satz erforderliche Spalte enthalten:
+ÜberMittelte Nachrichten sollten diese zusätzlichen Eigenschaften in den erforderlichen Spaltensatz aufnehmen:
   
-- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
     
-- **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
+- **PR_RESPONSIBILITY** ([Pidtagresponsibility (](pidtagresponsibility-canonical-property.md))
     
-Je nach der Implementierung eines Anbieters möglicherweise zusätzliche Spalten, wie **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) und [ENTRYID](entryid.md), in der Tabelle.
+Abhängig von der Implementierung eines Anbieters können zusätzliche Spalten wie **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) und [Entry](entryid.md)-out in der Tabelle enthalten sein.
   
-Eine beliebige Nachricht Speicher-Anbieter, der Nachrichtenübermittlung unterstützt – wie das STORE_SUBMIT_OK Bit festgelegt wird, in der Anbieter **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft angegeben – bieten Unterstützung für eine bestimmte Gruppe von Einschränkungen in einer Implementierung eines Empfängers Tabelle. **Und**, **oder**, vorhanden, und Suchkriterien in Eigenschaft gehören zu den Arten von Einschränkungen, die an Empfänger Tabelle Benutzer verfügbar sein soll. Nur die Operatoren gleich und ungleich müssen in der eigenschaftseinschränkung unterstützt werden. Diese Einschränkung Zusammenarbeit müssen mit den folgenden Eigenschaften:
+Jeder Nachrichtenspeicher Anbieter, der die Nachrichtenübertragung unterstützt, wie in dem STORE_SUBMIT_OK-Bit angegeben, das in der **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft des Anbieters festgelegt ist, sollte Unterstützung für eine bestimmte Gruppe von Einschränkungen in einer Empfänger Tabellen Implementierung. Die **and**-, **or**-, exist-und Property-Einschränkungen gehören zu den Arten von Einschränkungen, die für Empfänger Tabellen Benutzer verfügbar sein sollten. Nur die Operatoren EQUAL und ungleich werden für die Eigenschaftseinschränkung unterstützt. Diese Einschränkungen müssen mit den folgenden Eigenschaften funktionieren:
   
 - **PR_ADDRTYPE**
     

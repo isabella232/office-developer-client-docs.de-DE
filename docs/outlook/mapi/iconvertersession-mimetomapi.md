@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 356f4470be26ae3803a53af1cec34b3ac6eb0cc9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326929"
 ---
 # <a name="iconvertersessionmimetomapi"></a>IConverterSession::MIMEToMAPI
 
@@ -25,7 +25,7 @@ ms.locfileid: "28723033"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert einen MIME-Datenstrom an einem MAPI-Nachricht.
+Konvertiert einen MIME-Stream in eine MAPI-Nachricht.
   
 ```cpp
 HRESULT IConverterSession:: MIMEToMAPI ( 
@@ -40,57 +40,57 @@ HRESULT IConverterSession:: MIMEToMAPI (
 
  _pstm_
   
-> [in] [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle in eine MIME-Stream. 
+> in [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle zu einem MIME-Stream. 
     
  _pmsg_
   
-> [out] Zeiger auf die Meldung geladen werden. Finden Sie unter mapidefs.h für die Definition des **LPMESSAGE**Typs.
+> Out Zeiger auf die zu ladende Nachricht. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.
     
  _pszSrcSrv_
   
-> [in] Dieser Wert muss **null**sein.
+> in Dieser Wert muss **null**sein.
     
  _ulFlags_
   
-> [in] Dieser Parameter identifiziert eine spezielle Aktion während der Konvertierung erfolgen soll. Es muss null (0), wenn keine bestimmte Aktion ausgeführt werden soll, oder eine Kombination der folgenden Werte sein:
+> in Dieser Parameter identifiziert eine besondere Aktion, die während der Konvertierung durchgeführt werden soll. Es muss NULL (0) sein, wenn keine bestimmte Aktion ausgeführt werden soll, oder eine Kombination der folgenden Werte:
     
 CCSF_EMBEDDED_MESSAGE
   
-> Informationen gesendet/nicht gesendet wird dauerhaft in X nicht gesendet.
+> Gesendete/nicht gesendete Informationen werden in X-unsent gespeichert.
     
 CCSF_SMTP
   
-> Der MIME-Stream ist für eine Nachricht Simple MAPI-Transfer Protocol (SMTP).
+> Der MIME-Stream ist für eine SMTP-Nachricht (Simple MAPI Transfer Protocol).
     
 CCSF_INCLUDE_BCC
   
-> BCC-Empfänger des MIME-Streams sollte in der MAPI-Nachricht enthalten sein.
+> BCC-Empfänger des MIME-Streams sollten in der MAPI-Nachricht enthalten sein.
     
 CCSF_USE_RTF
   
-> Der HTML-Textkörper des MIME-Streams sollte auf Rich Text Format (RTF) in der MAPI-Nachricht konvertiert werden.
+> Der HTML-Textkörper des MIME-Streams sollte in Rich-Text-Format (RTF) in der MAPI-Nachricht konvertiert werden.
 
 CCSF_GLOBAL_MESSAGE
-> Der Konverter sollte den MIME-Stream als internationale Nachricht (EAI/RFC6530) behandeln. In Outlook 2013 unterstützt nicht.
+> Der Konverter sollte den MIME-Stream als internationale Nachricht behandeln (EAI/RFC6530). In Outlook 2013 nicht unterstützt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 E_INVALIDARG
   
-> Gibt an, dass _Pstm_ **null ist**, _Pmsg_ **null ist**oder _UlFlags_ ungültig ist. 
+> Gibt an, dass _pstm_ den Wert **null**hat, _Pmsg_ ist **null**, oder _ulFlags_ ist ungültig. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie **CCSF_USE_RTF** als Teil des _UlFlags_ angegeben haben, und der Nachricht Zielspeicher HTML- und RTF unterstützt, wird die MAPI-Nachricht in HTML oder RTF konvertiert werden. Wenn die Nachricht in RTF konvertiert wird, wird das Format der konvertierte komprimiert RTF, HTML-Code wird in der komprimierten RTF-Zeichenfolge eingebettet werden, und die Zeichenfolge wird in der [PidTagRtfCompressed kanonische-Eigenschaft](pidtagrtfcompressed-canonical-property.md)enthalten sein.
+Wenn Sie **CCSF_USE_RTF** als Teil von _ulFlags_ angegeben haben und der Ziel Nachrichtenspeicher sowohl HTML als auch RTF unterstützt, wird die MAPI-Nachricht in HTML oder RTF konvertiert. Wenn die Nachricht in RTF konvertiert wird, wird das konvertierte Format RTF komprimiert, jeder HTML-Code wird in die komprimierte RTF-Zeichenfolge eingebettet, und die Zeichenfolge wird in der [kanonischEn Eigenschaft PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)enthalten sein.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI (engl.) wandelt MimeToMAPI eine EML-Datei an einen MAPI-Nachricht.  <br/> |
-|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI (engl.) wird MAPIToMIMEStm verwendet, um eine MAPI-Nachricht in einer EML-Datei zu konvertieren.  <br/> |
+|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.  <br/> |
+|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

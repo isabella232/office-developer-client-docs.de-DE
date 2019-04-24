@@ -1,5 +1,5 @@
 ---
-title: MAPI-Referenz
+title: MAPI Reference
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,11 +11,11 @@ ms.assetid: 807d1b76-ccc1-4cbe-bbe3-5d5cadffbef4
 description: Beschreibt die MAPI-Programmierelemente.
 localization_priority: Priority
 ms.openlocfilehash: 9489343e1ea88aa51bdf09ee5b705a9cfa59fafa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329729"
 ---
 # <a name="mapi-reference"></a>MAPI-Referenz
  
@@ -42,6 +42,6 @@ Dieser Abschnitt beschreibt die MAPI-Programmierelemente.
 - [MAPI-Referenz für Outlook](outlook-mapi-reference.md) 
 - [Erste Schritte mit der Outlook-MAPI-Referenz](getting-started-with-the-outlook-mapi-reference.md)
 - [MAPI-Beispiele](mapi-samples.md)
-- [MAPI-Konzepte](mapi-concepts.md)
+- [MAPI-Konzepte (engl.)](mapi-concepts.md)
   
 

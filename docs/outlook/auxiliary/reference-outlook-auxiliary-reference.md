@@ -1,22 +1,22 @@
 ---
-title: Referenz (Outlook-zusatzreferenz)
+title: Referenz (Outlook-Hilfsreferenz)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: aaea2c76-b373-419c-9782-240e32c5e1e0
-description: Dieser Abschnitt enthält die Referenz für die folgenden APIs in der Outlook 2013-Auxiliary-Referenz.
-ms.openlocfilehash: c2df2acfd23f59802c4f305b282e2b8fff4dd66c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieser Abschnitt enthält Referenzinhalte für die folgenden APIs in der Outlook 2013-hilfsReferenz.
+ms.openlocfilehash: 2c5e2c1991b127fa2619cb32d5d488455cba9025
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328301"
 ---
-# <a name="reference-outlook-auxiliary-reference"></a>Referenz (Outlook-zusatzreferenz)
+# <a name="reference-outlook-auxiliary-reference"></a>Referenz (Outlook-Hilfsreferenz)
 
-Dieser Abschnitt enthält die Referenz für die folgenden APIs in der Outlook 2013-Auxiliary-Referenz.
+Dieser Abschnitt enthält Referenzinhalte für die folgenden APIs in der Outlook 2013-hilfsReferenz.
 
 - [Account-Management-API-Referenz](account-management-api-reference.md)
     

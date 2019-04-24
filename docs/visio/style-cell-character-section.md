@@ -9,49 +9,49 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4372f1e1-f0a9-2f63-ff79-58f2afdceed5
 description: Zeigt die Zeichenformatierung für einen Textbereich im Textblock des Shapes an.
-ms.openlocfilehash: 48bda5eb798f439e2616b2b910d7ec5ac719d060
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 349bdc42485aa511011aeb85a43f1ab3e4ea853d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329811"
 ---
-# <a name="style-cell-character-section"></a>Style Cell (Character Section)
+# <a name="style-cell-character-section"></a>Zelle "Style" (Abschnitt "Character")
 
 Zeigt die Zeichenformatierung für einen Textbereich im Textblock des Shapes an.
   
-|**Style**|**Wert**|**Automatisierungskonstante**|
+|**Format**|**Wert**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | Fett  <br/> | &amp;H1  <br/> |**visBold** <br/> |
 | Kursiv  <br/> | &amp;H2  <br/> |**visItalic** <br/> |
 | Unterstrichen  <br/> | &amp;H4  <br/> |**visUnderLine** <br/> |
 | Kapitälchen  <br/> | &amp;H8  <br/> |**visSmallCaps** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zelle Style enthält Formatierungsinformationen für einen Unterbereich des Texts eines Shapes, wenn der Abschnitt Character mehrere Zeilen enthält. Andernfalls enthält diese Zelle Formatierungsinformationen für den gesamten Text des Shapes.
   
-Der Wert stellt eine binäre Zahl in denen jedes Bit eine Zeichenformatvorlage angibt. Beispielsweise stellt einen Wert von 3 Text fett und kursiv formatiert. Wenn der Wert der Style 0 ist, wird der Text einfache oder unformatierte. Sie können ein bestimmtes Format mit Boolean BIT testen\* Funktionen. Finden Sie unter Dokumentation zu Ihrem Programmierung Informationen zu diesen Funktionen.
+Der Wert stellt eine Binärzahl dar, in der jedes einzelne Bit eine Zeichenformatvorlage ist. Der Wert 3 stellt beispielsweise fett und kursiv formatierten Text dar. Wenn der Wert von Style 0 ist, ist der Text überhaupt nicht formatiert. Sie können ein bestimmtes Format mit booleschen BIT\* -Funktionen testen. Ausführliche Informationen zu diesen Funktionen finden Sie in Ihrer Programmierungsdokumentation.
   
-Wenn Sie einen Verweis auf die Zelle Style aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Style aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Char.Style [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Char. Style [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Style aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Style aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-| Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCharacterStyle** <br/> |
    
  *Beispiel* 
   
 Die Zelle Farbe in der ersten Zeile des Abschnitts Character eines Shapes enthält die folgende Formel:
   
-= IF(BITAND(Char.Style,1)=1,4,3)
+= IF (BITUND (Char. Style, 1) = 1, 4, 3)
   
 Wenn das erste Zeichen des Shape-Texts fett formatiert ist, ist der von der ersten Zeile mit Zeicheneigenschaften formatierte Text blau (4). Andernfalls ist er grün (3). Dieses Beispiel setzt voraus, dass die Standardfarben verwendet werden.
   

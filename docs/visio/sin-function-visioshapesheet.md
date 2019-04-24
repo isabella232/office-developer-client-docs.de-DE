@@ -1,5 +1,5 @@
 ---
-title: SIN Function (VisioShapeSheet)
+title: SIN-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,36 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5a6ddb97-39b8-4e24-9b89-7a1e3bb261d5
 description: Gibt den Sinus eines Winkels zurück.
-ms.openlocfilehash: 19504f2f19b8523e0f081dbba0359986a940762b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 00701656d400264c206f4a48ed88cf94f0902dc3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328581"
 ---
-# <a name="sin-function-visioshapesheet"></a>SIN Function (VisioShapeSheet)
+# <a name="sin-function-visioshapesheet"></a>SIN-Funktion (VisioShapeSheet)
 
-Gibt den Sinus eines Winkels zurück.
-    
- 
+Gibt den Sinus eines Winkels zurück. 
   
 ## <a name="syntax"></a>Syntax
 
-SIN (** *Winkel* **) 
+SIN (* * *Angle* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Sinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen Sinus abgerufen werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die SIN-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in _Winkel_angeben.
+Die SIN-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im _Winkel_an.
   
 ## <a name="example"></a>Beispiel
 

@@ -6,30 +6,30 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: d82986c1-3a1e-48de-b6c9-b4bc64a88ee2
-description: Gibt an, ob die Authentifizierung mit GESICHERTEM Kennwort für SMTP-Konto verwenden.
-ms.openlocfilehash: a0bd944f4534f1a18021d1cbf6a1d224e60f9568
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt an, ob die Secure Password Authentication (SPA) für das SMTP-Konto verwendet werden soll.
+ms.openlocfilehash: b1f2ba9b7568361ad25147a94966bf42b98eda40
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328336"
 ---
 # <a name="propsmtpusespa"></a>PROP_SMTP_USE_SPA
 
-Gibt an, ob die Authentifizierung mit GESICHERTEM Kennwort für SMTP-Konto verwenden.
+Gibt an, ob die Secure Password Authentication (SPA) für das SMTP-Konto verwendet werden soll.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0 x 0207  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_DWORD  <br/> |
-|Eigenschafts-Tag:  <br/> |0x02070003  <br/> |
-|Access:  <br/> |Schreibgeschützt.  <br/> |
+|Kennung:  <br/> |0x0207  <br/> |
+|Eigenschafts:  <br/> |PT_DWORD  <br/> |
+|Property-Tag:  <br/> |0x02070003  <br/> |
+|Access  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Eine NULL bedeutet der Wert nicht gesicherte KENNWORTAUTHENTIFIZIERUNG verwenden, andernfalls können Sie SPA verwenden.
+Ein Nullwert besagt, dass SPA nicht verwendet wird, andernfalls wird SPA verwendet.
   
 ## <a name="see-also"></a>Siehe auch
 

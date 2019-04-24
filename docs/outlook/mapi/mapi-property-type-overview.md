@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Typ von MAPI-Eigenschaft
+title: Übersicht über die MAPI-Eigenschaftstypen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,54 +8,54 @@ api_type:
 - COM
 ms.assetid: b762f5fb-7c2c-4303-96f7-0b6e657146c9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2de51e1cf0f29c91e39eb3c6dbaab065fd7d5972
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 58dd25f09b76d97fd6441915225756a19f4ec3cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328260"
 ---
-# <a name="mapi-property-type-overview"></a>Übersicht über Typ von MAPI-Eigenschaft
+# <a name="mapi-property-type-overview"></a>Übersicht über die MAPI-Eigenschaftstypen
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eigenschaftentypen sind Konstanten, die von MAPI in der MAPIDEFS definiert. H-Headerdatei, die den zugrunde liegenden Daten eines Eigenschaftswerts anzugeben. Alle Eigenschaften verwenden, ob sie, MAPI, Clientanwendungen oder Dienstanbieter definiert sind, Sie eine der folgenden Typen. 
+Eigenschaftstypen sind Konstanten, die von MAPI in der MAPIDEFS definiert werden. H-Headerdatei, die den zugrunde liegenden Datentyp eines Eigenschaftswerts angibt. Alle Eigenschaften, unabhängig davon, ob Sie von MAPI, von Clientanwendungen oder von Dienstanbietern definiert werden, verwenden einen dieser Typen. 
   
-Eigenschaftentypen Namenskonvention ähnliche für Eigenschaftentags verwendeten ähnelt. Viele Eigenschaftentypen haben eine Single-Wert und mehreren Werten Version. Eigenschaften der einzelnen Werte enthalten ein Wert des Typs wie eine einzelne ganze Zahl oder eine Zeichenfolge. Die Konstante, die zur Darstellung einer einzelnen Value-Eigenschaft besteht aus zwei Teilen: Präfix PT_ und eine Zeichenfolge, die den tatsächlichen Typ, wie lange oder des STRING8 beschreibt. 
+Eigenschaftstypen Folgen einer ähnlichen Benennungskonvention wie die für Eigenschaftstags. Viele Eigenschaftstypen verfügen über eine Einzel-und eine mehrwertige Version. Einzelne Werte Eigenschaften enthalten einen Wert des Typs, beispielsweise eine einzelne ganze Zahl oder Zeichenfolge. Die zur Darstellung einer einzelnen Value-Eigenschaft verwendete Konstante besteht aus zwei Teilen: dem Präfix PT_ und einer Zeichenfolge, die den tatsächlichen Typ beschreibt, beispielsweise LONG oder STRING8. 
   
-Eigenschaften mit mehreren Werten enthalten mehrere Werte des Typs. Im Gegensatz zu OLE-variant-Arrays ist jeden Wert in einer mehrwertigen Eigenschaft des gleichen Typs. Die Konstante, die zur Darstellung von mehrwertiger Eigenschaften wird erstellt, durch die Kombination der MV_FLAG Flag mit der entsprechenden Einzelwert-Konstante, die den Basistyp darstellt. Es gibt drei Teile: das Präfix PT_ gefolgt von MV_ gefolgt von einer Zeichenfolge, die den Typ beschreibt. Beispielsweise der Typ für eine Eigenschaft mit mehreren ganzen Zahlen ist PT_MV_LONG und für mehrere Zeichenfolgen PT_MV_STRING8.
+Mehrwertige Eigenschaften enthalten mehr als einen Wert des Typs. Im Gegensatz zu OLE-Variant-Arrays hat jeder Wert in einer mehrwertigen Eigenschaft denselben Typ. Die zur Darstellung von mehrwertigen Eigenschaften verwendete Konstante wird erstellt, indem das MV_FLAG-Flag mit der entsprechenden Einzel wertkonstante kombiniert wird, die den Basistyp darstellt. Es gibt drei Teile: das Präfix PT_ gefolgt von MV_ gefolgt von einer Zeichenfolge, die den Typ beschreibt. Beispielsweise ist der Typ für eine Eigenschaft, die mehrere ganze Zahlen enthält, PT_MV_LONG und für mehrere Zeichenfolgen PT_MV_STRING8.
   
-Die folgende Abbildung zeigt die Struktur einer [SPropValue](spropvalue.md) -Struktur, um eine mehrwertige ganze Zahl, eine Eigenschaft vom Typ PT_MV_LONG zu beschreiben. **Das Element** wird erweitert, um die Anzahl der Werte für ganze Zahl in die Eigenschaft sowie einen Zeiger auf ein Array der folgenden Werte enthalten. 
+Die folgende Abbildung zeigt die Struktur einer [SPropValue](spropvalue.md) -Struktur zur Beschreibung einer mehrwertigen Ganzzahl, einer Eigenschaft vom Typ PT_MV_LONG. Der **Wert** Member wird erweitert, um die Anzahl der ganzzahligen Werte in der Eigenschaft und einen Zeiger auf ein Array dieser Werte einzuschließen. 
   
 **Eigenschaften mit mehreren Werten**
   
-![Eigenschaften mit mehreren Werten] (media/amapi_12.gif "Eigenschaften mit mehreren Werten")
+![Mehr] wertige Eigenschaften (media/amapi_12.gif "Mehr") wertige Eigenschaften
   
-Obwohl die Unterstützung für mehrwertige Eigenschaften ist optional, empfiehlt MAPI-Clients und -Dienstanbieter unterstützen beide Arten von Eigenschaften, da in diesem Fall ermöglicht mehr Interaktion zwischen MAPI-kompatible Komponenten wie folgt.
+Obwohl die Unterstützung für Eigenschaften mit mehreren Werten optional ist, empfiehlt MAPI, dass Clients und Dienstanbieter beide Arten von Eigenschaften unterstützen, da dadurch eine bessere Interaktion zwischen MAPI-kompatiblen Komponenten ermöglicht wird.
   
-Die folgende Abbildung zeigt eine Liste aller der verschiedenen Konstanten des Eigenschaftentyps, anzeigen, wo sie in einer Struktur **SPropValue** gespeichert sind. Die Größe des Elements **Wert** ist abhängig von den angegebenen Typ. Beachten Sie, dass nicht alle Typen einwertig mehrwertige-Entsprechungen. 
+In der folgenden Abbildung sind alle verschiedenen Eigenschaftentyp Konstanten aufgeführt, die zeigen, wo Sie in einer **SPropValue** -Struktur gespeichert sind. Die Größe des **value** -Elements hängt vom jeweiligen Typ ab. Beachten Sie, dass nicht alle einwertigen Typen mehrwertige äquivalente aufweisen. 
   
 **Eigenschaftstypenkonstanten**
   
-![Konstanten des Eigenschaftentyps] (media/amapi_11.gif "Konstanten des Eigenschaftentyps")
+![Eigenschaftentyp Konstanten] (media/amapi_11.gif "Eigenschaftentyp Konstanten")
   
-Clients und Arbeiten mit einer Eigenschaft Dienstanbieter müssen zwei Schritte ausführen:
+Clients und Dienstanbieter, die mit einer Eigenschaft arbeiten, müssen zwei Schritte ausführen:
   
 1. Bestimmen Sie, ob die Eigenschaft verfügbar oder nicht verfügbar ist.
     
-2. Falls verfügbar, rufen Sie den Wert der Eigenschaft ab.
+2. Wenn verfügbar, rufen Sie den Wert der Eigenschaft ab.
     
-In einigen Fällen muss einen Client oder Dienstanbieter nur das Vorhandensein einer Eigenschaft überprüfen. in anderen Fällen ist es erforderlich, nach einem bestimmten Wert zu überprüfen. Beispielsweise Transportanbieter haben drei verschiedene Kurse der Aktion für die Verarbeitung der **PR\_SEND_RICH_INFO** -Eigenschaft ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)), einen booleschen Wert, der angibt, ob eine Nachricht mit gesendet werden sollen formatierter Text. Wenn **PR\_SEND_RICH_INFO** ist auf TRUE festgelegt wird, überträgt der Adressbuchhierarchie formatierten Text. Wenn sie auf "false" festgelegt ist, wird der formatierte Text vor der Übertragung verworfen. Wenn **PR_SEND_RICH_INFO** nicht verfügbar ist, folgt der Adressbuchhierarchie seiner standardmäßigen Vorgehensweise aufbauen, d. h. für den bestimmten Anbieter. 
+Manchmal muss ein Client oder Dienstanbieter nur überprüfen, ob eine Eigenschaft vorhanden ist; Manchmal ist es erforderlich, einen bestimmten Wert zu überprüfen. Transportanbieter haben beispielsweise drei verschiedene Vorgehensweisen für die Verarbeitung **der\_PR-SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md))-Eigenschaft, einen booleschen Wert, der angibt, ob eine Nachricht mit formatierter Text. Wenn **PR\_SEND_RICH_INFO** auf true festgelegt ist, übermittelt der Transportanbieter den formatierten Text. Wenn Sie auf FALSE festgelegt ist, wird der formatierte Text vor der Übertragung verworfen. Wenn **PR_SEND_RICH_INFO** nicht verfügbar ist, folgt der Transportanbieter seiner standardmäßigen Vorgehensweise, was auch immer für den jeweiligen Anbieter gilt. 
   
-MAPI definiert einen speziellen Eigenschaftentyp PT_UNSPECIFIED, die ein Client oder Dienstanbieter verwenden können, um eine Eigenschaft abzurufen, wenn der Eigenschaftentyp nicht bekannt ist. Zum Abrufen einer Eigenschaft ohne Vorauswissen des Typs ein Client oder Dienstanbieter ein Objekt [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode aufgerufen und übergibt ein Bezeichner für die Eigenschaft und den Eigenschaftentyp PT_UNSPECIFIED bestehen Eigenschaftentag. **GetProps** gibt eine [SPropValue](spropvalue.md) -Struktur für die Eigenschaft PT_UNSPECIFIED mit den entsprechenden Typ ersetzen. Implementieren von **GetProps** Dienstanbieter sind zur Unterstützung von PT_UNSPECIFIED erforderlich. 
+MAPI definiert einen speziellen Eigenschaftentyp, PT_UNSPECIFIED, der von einem Client oder Dienstanbieter zum Abrufen einer Eigenschaft verwendet werden kann, wenn der Eigenschaftentyp unbekannt ist. Um eine Eigenschaft ohne Vorkenntnisse des Typs abzurufen, Ruft ein Client oder Dienstanbieter die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode eines Objekts auf und übergibt ein Eigenschaftentag, das aus dem Bezeichner der Eigenschaft und dem PT_UNSPECIFIED-Eigenschaftentyp besteht. **** GetProps gibt eine [SPropValue](spropvalue.md) -Struktur für die Eigenschaft zurück, die PT_UNSPECIFIED durch den entsprechenden Typ ersetzt. Dienstanbieter, **** die GetProps implementieren, sind zur Unterstützung von PT_UNSPECIFIED erforderlich. 
   
-Einige MAPI-Objekte unterstützen Eigenschaften, die sich selbst sind Objekte. Objekteigenschaften haben die PT_OBJECT. Statt **IMAPIProp::GetProps** diese Eigenschaften, Clients und -Dienstanbieter in der Regel Zugriff auf Benutzer entweder die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode, die entsprechende Schnittstelle für den Zugriff oder eine Methode für das Objekt angeben die Eigenschaft unterstützt. 
+Einige MAPI-Objekte unterstützen Eigenschaften, die selbst Objekte sind. Objekteigenschaften haben den Typ PT_OBJECT. Statt **IMAPIProp::** GetProps für den Zugriff auf diese Eigenschaften zu verwenden, werden Clients und Dienstanbieter in der Regel entweder die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode, die die entsprechende Schnittstelle für Access oder eine Methode für das Objekt angibt. unterstützen der Eigenschaft. 
   
-Da zugreifen auf den Wert einer Objekteigenschaft beinhaltet die Verwendung einer der Schnittstellen für das Objekt **GetProps** ist nicht zulässig. Mit **GetProps**greift der Aufrufer den Wert einer Eigenschaft über eine **SPropValue** -Struktur auf. Mit **IMAPIProp::OpenProperty**ruft der Aufrufer einen Zeiger auf eine Schnittstelle, die das Objekt zugreifen kann. **OpenProperty** können immer verwendet werden, um eine Object-Eigenschaft abzurufen. Eine weitere Möglichkeit, Aufrufen einer Methode für das Objekt ist nicht mit jeder Eigenschaft-Objekts verfügbar. 
+Da der Zugriff auf den Wert einer Objekteigenschaft die Verwendung einer der Schnittstellen für das Objekt **** beinhaltet, ist GetProps unangemessen. Mit **** GetProps greift der Aufrufer über eine **SPropValue** -Struktur auf den Wert einer Eigenschaft zu. Mit **IMAPIProp:: OpenProperty**ruft der Aufrufer einen Zeiger auf eine Schnittstelle ab, die auf das Objekt zugreifen kann. **OpenProperty** kann immer verwendet werden, um eine Objekteigenschaft abzurufen. Die andere Option, die eine Methode für das Objekt aufruft, ist bei jeder Objekteigenschaft nicht verfügbar. 
   
-Jeder Ordner unterstützt beispielsweise zwei Tabellen, eine Hierarchietabelle und Inhalt. Diese Tabellen sind die Eigenschaften des Ordners. Ihre Eigenschaftentags sind **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) und **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)). Tabellen sind Objekte, die die **IMAPITable** -Schnittstelle für den Zugriff benötigen. Ein Client kann den Ordner [IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md) -Methode zum Zugriff auf die Hierarchietabelle, den Ordner [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) -Methode den Zugriff auf die Inhaltstabelle oder des Ordners [IMAPIProp::OpenProperty aufrufen. ](imapiprop-openproperty.md)-Methode, um die beiden Tabellen zugreifen. Zum Aufrufen von **OpenProperty**übergibt ein Client das Eigenschafts-Tag für die Eigenschaft als der erste Parameter und als Schnittstellenbezeichner für die Schnittstelle für den Zugriff als der zweite Parameter verwendet werden soll. Diese Parameter wäre **PR_CONTAINER_HIERARCHY** oder **PR_CONTAINER_CONTENTS** und **IID_IMAPITable**.
+Jeder Ordner unterstützt beispielsweise zwei Tabellen, eine Hierarchietabelle und eine Inhaltstabelle. Diese Tabellen sind Eigenschaften des Ordners; Ihre Eigenschaftstags sind **PR_CONTAINER_HIERARCHY** ([Pidtagcontainerhierarchy (](pidtagcontainerhierarchy-canonical-property.md)) und **PR_CONTAINER_CONTENTS** ([pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md)). Tabellen sind Objekte, die die **IMAPITable** -Schnittstelle für den Zugriff erfordern. Ein Client kann die [IMAPIContainer:: GetHierarchy](imapicontainer-gethierarchytable.md) -Methode des Ordners aufrufen, um auf die Hierarchietabelle zuzugreifen, die [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable-Methode des Ordners für den Zugriff auf die Inhaltstabelle oder die [IMAPIProp:: OpenProperty des Ordners. ](imapiprop-openproperty.md)Methode für den Zugriff auf eine Tabelle. Um **OpenProperty**aufzurufen, übergibt ein Client das Property-Tag für die Eigenschaft als ersten Parameter und einen Schnittstellenbezeichner für die Schnittstelle, die für Access als zweiten Parameter verwendet werden soll. Diese Parameter sind **PR_CONTAINER_HIERARCHY** oder **PR_CONTAINER_CONTENTS** und **IID_IMAPITable**.
   
-Eine vollständige Liste der Eigenschaftentypen einwertig und mehrwertige finden Sie unter [Eigenschaftentypen](property-types.md). 
+Eine vollständige Liste der Eigenschaftentypen mit einem oder mehreren Werten finden Sie unter [Property Types](property-types.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

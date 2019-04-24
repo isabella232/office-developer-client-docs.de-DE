@@ -1,5 +1,5 @@
 ---
-title: Überprüfen der Konfiguration für Service provider
+title: Überprüfen der Dienstanbieterkonfiguration
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,49 +7,49 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: dc23dc61-7b51-43ab-a184-ce0bdac91d03
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f6190b2860e227b24b34e31a4ee9741468383460
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 381e2c9ec84811b69d666017a568e7b9cca21755
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329607"
 ---
-# <a name="verifying-service-provider-configuration"></a>Überprüfen der Konfiguration für Service provider
+# <a name="verifying-service-provider-configuration"></a>Überprüfen der Dienstanbieterkonfiguration
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Logon-Methode ([IABProvider::Logon](iabprovider-logon.md), [IMSProvider::Logon](imsprovider-logon.md)oder [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)) muss vom Dienstanbieter Konfiguration überprüfen. Dieser Schritt umfasst, überprüfen, dass alle Eigenschaften für die vollständige Vorgänge benötigt richtig eingestellt sind. Jeder Anbieter erfordert eine unterschiedliche Anzahl von Eigenschaften. Konfiguration abhängig von Ihren Anbieter und den Grad der Benutzerinteraktion, für die Sie zulassen. Einige Dienstanbieter lassen Sie alle erforderlichen Eigenschaften im Benutzerprofil. 
+Ihre Anmeldemethode ([IABProvider:: LOGON](iabprovider-logon.md), [IMSProvider:: LOGON](imsprovider-logon.md)oder [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md)) muss die Konfiguration Ihres Anbieters überprüfen. Dabei wird überprüft, ob alle für den vollständigen Vorgang erforderlichen Eigenschaften richtig festgelegt sind. Jeder Anbieter benötigt eine unterschiedliche Anzahl von Eigenschaften; die Konfiguration hängt von Ihrem Anbieter und dem Grad der zulässigen Benutzerinteraktion ab. Einige Dienstanbieter behalten alle erforderlichen Eigenschaften im Profil bei. 
 
-Dienstanbieter lassen Sie eine Teilmenge der Eigenschaften im Benutzerprofil und auffordern, nach fehlenden Werten. Noch speichern andere Anbieter Eigenschaften im Benutzerprofil in allen nicht auf dem Benutzer alle Informationen für die Konfiguration erforderlich ist.
+Andere Dienstanbieter behalten eine partielle Gruppe von Eigenschaften im Profil bei und fordern den Benutzer auf, fehlende Werte einzugeben. Dennoch werden von anderen Anbietern keine Eigenschaften im Profil gespeichert, und der Benutzer muss alle für die Konfiguration erforderlichen Informationen bereitstellen.
   
-### <a name="to-retrieve-properties-stored-in-the-profile"></a>Zum Abrufen von Eigenschaften, die im Profil gespeichert
+### <a name="to-retrieve-properties-stored-in-the-profile"></a>So rufen Sie im Profil gespeicherte Eigenschaften ab
   
-1. Rufen Sie [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md), die [MAPIUID](mapiuid.md) Ihres Anbieters als Eingabeparameter übergeben. 
+1. Rufen Sie [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md)auf, und übergeben Sie die [MAPIUID](mapiuid.md) Ihres Anbieters als Eingabeparameter. 
     
-2. Rufen Sie Profilabschnitt [IMAPIProp::GetProps](imapiprop-getprops.md) oder [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methoden zum Abrufen von einzelnen Eigenschaften oder eine Eigenschaftenliste auf. 
+2. Rufen Sie die Methoden [IMAPIProp::](imapiprop-getprops.md) GetProps oder [IMAPIProp::](imapiprop-getproplist.md) getproplist des profile-Abschnitts auf, um einzelne Eigenschaften oder eine Eigenschaftenliste abzurufen. 
     
-### <a name="to-set-properties-from-user-information"></a>Festlegen von Eigenschaften von Benutzerinformationen
+### <a name="to-set-properties-from-user-information"></a>So legen Sie Eigenschaften aus Benutzerinformationen fest
   
-Ein Eigenschaftenblatt angezeigt, wenn MAPI ein Flag verbietet die Anzeige nicht festgelegt wurde. Die folgenden Kennzeichen darauf hinzuweisen, dass eine Benutzeroberfläche nicht gestellt werden.
+Zeigt ein Eigenschaftenfenster an, wenn MAPI kein Flag festgelegt hat, das die Anzeige verhindert. Die folgenden Flags zeigen an, dass eine Benutzeroberfläche nicht angezeigt werden kann.
   
 |**Wert**|**Dienstanbieter**|
 |:-----|:-----|
-|AB_NO_DIALOG  <br/> |-Adressbuchanbieter  <br/> |
-|LOGON_NO_DIALOG  <br/> |Transportdienst  <br/> |
-|MDB_NO_DIALOG  <br/> |Nachricht Speicheranbieter  <br/> |
+|AB_NO_DIALOG  <br/> |Adressbuchanbieter  <br/> |
+|LOGON_NO_DIALOG  <br/> |Transport Anbieter  <br/> |
+|MDB_NO_DIALOG  <br/> |Nachrichtenspeicher Anbieter  <br/> |
    
-Wenn vom Dienstanbieter speichert nicht alle seine Konfigurationseigenschaften in das Profil Benutzereingriff und MAPI zu den Dialogfeld Feld Unterdrückung Flags an Ihre Logon (Methode) übergibt, geben Sie MAPI_E_UNCONFIGURED zurück. Zurückgegeben Sie dieser Fehler wird auch, wenn das Dialogfeld Unterdrückung Flag nicht festgelegt ist, aber der Benutzer nicht alle erforderlichen Informationen bereitstellt.
+Wenn Ihr Anbieter nicht alle Konfigurationseigenschaften im Profil speichert, eine Benutzerinteraktion erfordert und MAPI eines der Dialogfeld Unterdrückungs Kennzeichen an Ihre Anmeldemethode übergibt, geben Sie MAPI_E_UNCONFIGURED zurück. Geben Sie auch diesen Fehler zurück, wenn das Dialogfeld Unterdrückungs Kennzeichen nicht festgelegt ist, aber der Benutzer nicht alle erforderlichen Informationen bereitstellt.
   
-Wenn die Logon-Methode mit MAPI_E_UNCONFIGURED Ihren Dienstanbieter ein Fehler auftritt, ruft MAPI erneut Ihre Entry Point-Funktion. Wenn die Informationen nicht mit dem zweiten Aufruf gefunden werden kann, kann die Sitzung beenden, je nachdem, wie wichtig Ihren Dienstanbieter ist. 
+Wenn der Dienstanbieter seine Anmeldemethode mit MAPI_E_UNCONFIGURED nicht unterbricht, ruft MAPI ihre Einstiegspunktfunktion erneut auf. Wenn die Informationen beim zweiten Aufruf nicht gefunden werden können, wird die Sitzung möglicherweise beendet, je nachdem, wie wichtig der Dienstanbieter ist. 
   
-Die folgende Abbildung zeigt die Logik für die Konfiguration in Ihrer Service Provider Logon (Methode) erforderlich. 
+Die folgende Abbildung zeigt die Logik, die für die Konfiguration in ihrer Dienstanbieter-Anmeldemethode erforderlich ist. 
   
 **Flussdiagramm für Konfigurationsüberprüfung**
   
-![Flussdiagramm für konfigurationsüberprüfung] (media/amapi_62.gif "Flussdiagramm für konfigurationsüberprüfung")
+![Flussdiagramm zur Konfigurationsüberprüfung] (media/amapi_62.gif "Flussdiagramm zur Konfigurationsüberprüfung")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Implementieren einer Dienstanbieteranmeldung](implementing-service-provider-logon.md)
+- [Implementieren der Dienstanbieter Anmeldung](implementing-service-provider-logon.md)
 

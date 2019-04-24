@@ -1,5 +1,5 @@
 ---
-title: PidTagNonDeliveryReportDiagCode (kanonische Eigenschaft)
+title: Kanonische Pidtagnondeliveryreportdiagcode (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,32 +11,32 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a39c0f54-bdca-498f-a75c-dd8702e5385a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 528e18964cacfb59f30667295b792e850353f3ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a3cf1d32ac4c21137e1b1cbb04f64d7efbc0729d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329351"
 ---
-# <a name="pidtagnondeliveryreportdiagcode-canonical-property"></a>PidTagNonDeliveryReportDiagCode (kanonische Eigenschaft)
+# <a name="pidtagnondeliveryreportdiagcode-canonical-property"></a>Kanonische Pidtagnondeliveryreportdiagcode (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen diagnostic Code, der Teil einer Unzustellbarkeitsbericht bildet.
+Enthält einen Diagnosecode, der Teil eines Unzustellbarkeitsberichts ist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_NDR_DIAG_CODE  <br/> |
 |Kennung:  <br/> |0x0C05  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Allgemeine messaging  <br/> |
+|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
+Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
 MAPI_DIAG_ALPHABETIC_CHARACTER_LOST 
   
@@ -230,23 +230,23 @@ MAPI_DIAG_TOO_MANY_RECIPIENTS
   
 > 
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)](pidtagnondeliveryreportreasoncode-canonical-property.md)
+[Kanonische Pidtagnondeliveryreportreasoncode (-Eigenschaft](pidtagnondeliveryreportreasoncode-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -255,5 +255,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

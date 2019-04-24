@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: ce5e8c43-06af-4afc-9138-5cc51d8fc401
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e6803c54ddd60c1bcebbe7a139c2edf2e7f4449d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bbb79097d03a8ea09cb4aff374231ee780e15395
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328840"
 ---
 # <a name="imapitableseekrowapprox"></a>IMAPITable::SeekRowApprox
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verschiebt den Cursor an eine ungefähre Bruch Position in der Tabelle an. 
+Verschiebt den Cursor an eine ungefähre Bruchposition in der Tabelle. 
   
 ```cpp
 HRESULT SeekRowApprox(
@@ -38,31 +38,31 @@ ULONG ulDenominator
 
  _ulNumerator_
   
-> [in] Zeiger auf die Zähler des Bruchs, die die Position der Tabelle darstellen. Wenn der Parameter _UlNumerator_ gleich NULL ist, wird der Cursor am Anfang der Tabelle ungeachtet des Werts Nenner positioniert. Wenn _UlNumerator_ gleich dem _UlDenominator_ -Parameter ist, wird der Cursor nach der letzten Tabellenzeile positioniert. 
+> in Zeiger auf den Zähler des Bruchs, der die Tabellenposition darstellt. Wenn der _ulNumerator_ -Parameter 0 (null) ist, wird der Cursor unabhängig vom Wert des Nenners am Anfang der Tabelle positioniert. Wenn _ulNumerator_ dem Parameter _ulDenominator_ entspricht, wird der Cursor hinter der letzten Tabellenzeile positioniert. 
     
  _ulDenominator_
   
-> [in] Zeiger auf die als Nenner des Bruchs, die die Position der Tabelle darstellen. Der Parameter _UlDenominator_ darf nicht NULL sein. 
+> in Zeiger auf den Nenner des Bruchs, der die Tabellenposition darstellt. Der Parameter _ulDenominator_ darf nicht NULL sein. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Suchvorgang erfolgreich war.
+> Der Seek-Vorgang war erfolgreich.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt, die verhindert, die Zeile Suchvorgänge Vorgang dass gestartet wird. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
+> Es wird ein weiterer Vorgang ausgeführt, der verhindert, dass der Suchvorgang gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Cursorposition in einer Tabelle nach dem Aufruf **der SeekRowApprox** ist heuristisch den Bruch und möglicherweise nicht genau. Bestimmte Anbieter können beispielsweise eine Tabelle auf der Basis einer binären Struktur, implementieren, zeigen Sie in der Mitte der Tabelle als im oberen Bereich der Struktur aus Gründen der Systemleistung behandelt. Wenn die Struktur nicht ausgeglichen ist, klicken Sie dann in der Mitte Punkts verwendet genau durch die Tabelle in der Mitte möglicherweise nicht. 
+Die Cursorposition in einer Tabelle nach einem Aufruf der **IMAPITable:: SeekRowApprox** -Methode ist heuristisch der Bruchteil und ist möglicherweise nicht genau. Beispielsweise können bestimmte Anbieter eine Tabelle über eine binäre Struktur implementieren, um aus Leistungsgründen die halbe Stelle der Tabelle als oberste der Struktur zu behandeln. Wenn die Struktur nicht ausgeglichen ist, ist die verwendete Hälfte möglicherweise nicht genau in der Mitte der Tabelle. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **SeekRowApprox** , um die Daten für die Implementierung eines Scroll-Leiste bereitzustellen. Wenn der Benutzer die Bildlaufleiste Feld 2/3 nach unten die Bildlaufleiste positioniert, können Sie beispielsweise diese Aktion modellieren, durch Aufrufen von **SeekRowApprox** und einen entsprechenden Bruch Wert mithilfe von _UlNumerator_ und _UlDenominator_übergeben. Die **SeekRowApprox** Suche ist immer absolute vom Beginn der Tabelle. Um am Ende der Tabelle zu verschieben, müssen die Werte in _UlNumerator_ und _UlDenominator_ identisch sein. 
+Aufrufen von **SeekRowApprox** , um die Daten für eine Bildlaufleisten Implementierung bereitzustellen. Wenn der Benutzer beispielsweise das Bildlauffeld 2/3 auf der Bildlaufleiste positioniert, können Sie diese Aktion modellieren, indem Sie **SeekRowApprox** aufrufen und einen äquivalenten Dezimalwert mit _ulNumerator_ und _ulDenominator_übergeben. Die **SeekRowApprox** -Suche ist immer vom Anfang der Tabelle aus absolut. Um zum Ende der Tabelle zu wechseln, müssen die Werte in _ulNumerator_ und _ulDenominator_ identisch sein. 
   
-Verwenden Sie aufbauen Nummerierungsschema geeignet ist. Um eine Position in der Mitte durch die Tabelle gesucht, können Sie d. h., 1/2, 10/20 oder 50/100 angeben. 
+Verwenden Sie ein beliebiges Zahlen Schema. Das heißt, um nach einer Position in der Mitte der Tabelle zu suchen, können Sie 1/2, 10/20 oder 50/100 angeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

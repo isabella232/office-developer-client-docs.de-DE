@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 056b54ae-1475-9480-6ebc-5c34ef48e0f8
 description: Bestimmt, ob zwei Zeichenfolgen identisch sind.
-ms.openlocfilehash: 129c7429fbb3b3e5d09193b8be570045d43a0f0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ac5a74e08079f86c28b086b92302ebb01a4b0627
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329792"
 ---
 # <a name="strsameex-function"></a>STRSAMEEX Function
 
@@ -22,26 +22,24 @@ Bestimmt, ob zwei Zeichenfolgen identisch sind.
   
 ## <a name="syntax"></a>Syntax
 
-STRSAMEEX ("** *Zeichenfolge1* **","** *Zeichenfolge2* **", ** *LocaleID* **, ** *Flag* **) 
+STRSAMEEX ("* * *string1* * *", "* * *string2* * *", * * *Gebietsschema* -Nr. * *, * * *Flag* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zeichenfolge1_ <br/> |Erforderlich  <br/> |**String** <br/> |Die erste zu vergleichende Zeichenfolge.  <br/> |
-| _Zeichenfolge2_ <br/> |Erforderlich  <br/> |**String** <br/> | Die zweite zu vergleichende Zeichenfolge.  <br/> |
-| _Gebietsschema-ID_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der lokale ID-Code.  <br/> |
-| _Flag_ <br/> |Erforderlich  <br/> |**Numeric** <br/> | Ein Bit, das den Typ des Vergleichs bestimmt.  <br/> |
+| _string1_ <br/> |Erforderlich  <br/> |**String** <br/> |Die erste zu vergleichende Zeichenfolge.  <br/> |
+| _string2_ <br/> |Erforderlich  <br/> |**String** <br/> | Die zweite zu vergleichende Zeichenfolge.  <br/> |
+| _localeID_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der lokale ID-Code.  <br/> |
+| _Flag_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> | Ein Bit, das den Typ des Vergleichs bestimmt.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Boolean
+Boolesch
   
 ## <a name="remarks"></a>Bemerkungen
 
-STRSAMEEX gibt TRUE zurück, wenn beide Eingabezeichenfolgen identisch sind. Ist dies nicht der Fall, wird FALSE zurückgegeben. Verwenden Sie diese Funktion, wenn Sie Multibyte-Zeichenfolgen vergleichen oder Vergleiche mit Groß- und Kleinschreibregeln für ein bestimmtes Gebietsschema durchführen möchten.
-			
-
+STRSAMEEX gibt TRUE zurück, wenn beide Eingabezeichenfolgen identisch sind, und FALSE, wenn dies nicht der Fall ist. Mit dieser Funktion können Sie Multi-Byte-Zeichenfolgenvergleichen oder Vergleiche ausführen, die Fall Regeln für ein bestimmtes Gebietsschema verwenden.
   
 Sie können eine beliebige Kombination folgender Flags mit der STRGLEICHEX-Funktion verwenden.
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 655b66e8-8642-43ad-8392-048578f96820
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d3cab3073b942cd8acc0919031e212b6a7d96e8a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7683a2926880234367b2134f9053078b82631aeb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331822"
 ---
 # <a name="cbflatentry"></a>CbFLATENTRY
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes in einer vorhandenen [FLATENTRY](flatentry.md) Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [FLATENTRY](flatentry.md) -Struktur. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**FLATENTRY** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**FLATENTRY** <br/> |
    
 ```cpp
 CbFLATENTRY (_lpentry)
@@ -40,7 +40,7 @@ CbFLATENTRY (_lpentry)
 
  __lpentry_
   
-> Zeiger auf die vorhandenen **FLATENTRY** Struktur. 
+> Zeiger auf die vorhandene **FLATENTRY** -Struktur. 
     
 ## <a name="see-also"></a>Siehe auch
 

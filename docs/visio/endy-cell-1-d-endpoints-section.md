@@ -8,32 +8,32 @@ f1_keywords:
 - vis_sdr.chm340
 localization_priority: Normal
 ms.assetid: 3fbfa4bc-7792-b6d9-d549-4602d252c293
-description: Stellt die y-Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung seines übergeordneten Objekts.
-ms.openlocfilehash: 4c619a9c7c37ba892931f08b37c3beb0efac7531
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Stellt die y-Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar.
+ms.openlocfilehash: e75355ad333b7f6398618c974f7c49e5c26c41d6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328939"
 ---
-# <a name="endy-cell-1-d-endpoints-section"></a>EndY Cell (1-D Endpoints Section)
+# <a name="endy-cell-1-d-endpoints-section"></a>Zelle "EndY" (Abschnitt "1-D Endpoints")
 
-Stellt die *y* -Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung seines übergeordneten Objekts. 
+Stellt die *y* -Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle EndY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle EndY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | EndY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EndY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle EndY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowXForm1D** <br/> |
-| Zellenindex:  <br/> |**vis1DEndY** <br/> |
+| Zeilenindex:  <br/> |**vis1DEndY** <br/> |
    
 

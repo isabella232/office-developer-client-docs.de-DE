@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 9c7d6605-73ee-468c-981b-e0853106c9ba
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5affce8ab7a8b08019816ad9485641c401dd80c9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 54eaf9e67da1b520896122c937508a90700a0b84
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328098"
 ---
 # <a name="forcing-a-notification"></a>Erzwingen einer Benachrichtigung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Dienst Dienstanbieter verwenden die [IMAPISupport: IUnknown](imapisupportiunknown.md) Methoden für die Benachrichtigung, MAPI bietet Benachrichtigungen mit einem ausgeblendeten Fenster und ihrer entsprechenden Fensterprozedur. Für jeden Prozess eine Benachrichtigung erhalten sendet die MAPI eine spezielle Nachricht an das ausgeblendete Fenster. Diese Meldung wird mit der Konstante **SzMAPINotificationMsg** mit dem Namen der in MAPIDEFS definiert ist. H. 
+Wenn Dienstanbieter die [IMAPISupport: IUnknown](imapisupportiunknown.md) -Methoden für die Benachrichtigung verwenden, übermittelt MAPI Benachrichtigungen mithilfe eines ausgeblendeten Fensters und der entsprechenden Fensterprozedur. Für jeden Prozess, der eine Benachrichtigung empfängt, sendet MAPI eine spezielle Nachricht an das ausgeblendete Fenster. Diese Nachricht wird mit der Konstanten **szMAPINotificationMsg** benannt, die in MAPIDEFS definiert ist. H. 
   
-Sie erhalten diese Benachrichtigungen, wenn das ausgeblendete Fenster Fenster Verfahren **SzMAPINotificationMsg** Nachricht verarbeitet. Um sicherzustellen, dass Benachrichtigungen gesendet werden, ist es erforderlich, warten und diese Meldung **SzMAPINotificationMsg** versenden. Implementieren die Logik zu diesem Zweck kann erfolgen relativ einfach, aber MAPI bietet ein Einstiegspunkt in die MAPI-DLL [HrDispatchNotifications](hrdispatchnotifications.md) damit Verarbeitung sogar noch einfacher wird aufgerufen. Rufen Sie **HrDispatchNotifications** wie folgt Erhalt von Benachrichtigungen in Ihrem Client: 
+Sie erhalten diese Benachrichtigungen, wenn die Fensterprozedur des ausgeblendeten Fensters die **szMAPINotificationMsg** -Nachricht verarbeitet. Um sicherzustellen, dass Benachrichtigungen zugestellt werden, ist es erforderlich, diese **szMAPINotificationMsg** -Nachricht zu warten und zu senden. Die Implementierung der Logik, um dies zu erreichen, kann relativ einfach erfolgen, aber MAPI bietet einen Einstiegspunkt in die MAPI-DLL namens [HrDispatchNotifications](hrdispatchnotifications.md) , um die Verarbeitung noch einfacher zu gestalten. Rufen Sie **HrDispatchNotifications** wie folgt auf, um Benachrichtigungen in Ihrem Client zu erhalten: 
   
 ```cpp
 HRESULT hr = HrDispatchNotifications(0);

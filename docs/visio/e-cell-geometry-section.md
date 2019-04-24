@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: bc0154b1-6930-1fe0-655c-05eab2d60230
 description: Enthält die Formel eines nicht einheitlichen rationalen B-Splines (Nonuniform Rational B-Spline, NURBS).
-ms.openlocfilehash: 000c4864c6ae98bfcd9e9cfdb16ff68396f63e44
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5c9b3cbf96e2a218a8ed790d3a5615843360c95e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327391"
 ---
-# <a name="e-cell-geometry-section"></a>E Cell (Geometry Section)
+# <a name="e-cell-geometry-section"></a>Zelle "E" (Abschnitt "Geometry")
 
 Enthält die Formel eines nicht einheitlichen rationalen B-Splines (Nonuniform Rational B-Spline, NURBS).
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle E aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle E aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Geometrie *i* . E *j* wobei *i* und *j* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Geometrie *i* . E *j* wobei *i* und *j* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle E aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle E nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zeilenindex:  <br/> |**VisRowVertex** +  *j* wobei *j* = 0, 1, 2...  <br/> |
+| Abschnittsindex:  <br/> |**visSectionFirstComponent** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowVertex** +  *j* = ** 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visNURBSData** <br/> |
    
 

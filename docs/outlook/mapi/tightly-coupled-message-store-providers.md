@@ -1,5 +1,5 @@
 ---
-title: Eng verknüpfte Nachrichtenspeicheranbieter
+title: Eng gekoppelte Nachrichtenspeicher Anbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,32 +8,32 @@ api_type:
 - COM
 ms.assetid: 2eb493d7-bbd1-45b2-bd82-2bc452b2deab
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4b8aa7f05c20eb3b100e9e04424dc752f064a61b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3c9996dad1e9aa8c291f1cd593d9651994d86141
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330058"
 ---
-# <a name="tightly-coupled-message-store-providers"></a>Eng verknüpfte Nachrichtenspeicheranbieter
+# <a name="tightly-coupled-message-store-providers"></a>Eng gekoppelte Nachrichtenspeicher Anbieter
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachricht Anbieter können eng mit eines Transportdienstes verknüpft sein. Wodurch eng MAPI Service Provider bedeutet, dass zwei Anbieter implementieren, beispielsweise, dass der Anbieter und Adressbuchhierarchie kommunizieren können, um das Senden und Empfangen von Nachrichten effizienter zu machen. Der Vorteil dabei ist, dass Leistungssteigerungen führen können, wenn zwei Dienstanbieter miteinander direkt und nicht über MAPI-Warteschlange interagieren können. Um eine Nachrichtenanbieter eng mit eines Transportdienstes gekoppelt, muss der Adressbuchhierarchie der Nachricht Informationsdienst Eintrags-ID in der Eigenschaft **PR_OWN_STORE_ENTRYID** ([PidTagOwnStoreEntryId](pidtagownstoreentryid-canonical-property.md)) in der Adressbuchhierarchie platziert. Zeile in der Tabelle MAPI-Status. Auf diese Weise MAPI-Warteschlange zum der Adressbuchhierarchie Speicheranbieter herstellen können.
+Nachrichtenspeicher Anbieter können eng mit einem Transportanbieter gekoppelt werden. Die enge Kopplung von MAPI-Dienstanbietern beinhaltet die Implementierung der beiden Anbieter, sodass der Informationsspeicher Anbieter und der Transportanbieter kommunizieren können, um das Senden und empfangen von Nachrichten effizienter zu gestalten. Der Vorteil besteht darin, dass die Leistungsverbesserungen dazu führen können, dass zwei Dienstanbieter direkt miteinander interagieren können und nicht über MAPI-Spooler. Um einen Nachrichtenspeicher Anbieter eng mit einem Transportanbieter zu koppeln, muss der Transportanbieter den Eintragsbezeichner des Nachrichtenspeicher Anbieters in der **PR_OWN_STORE_ENTRYID** ([pidtagownstoreentryid (](pidtagownstoreentryid-canonical-property.md))-Eigenschaft des Transportanbieters platzieren. Zeile in der MAPI-Statustabelle. Dadurch kann MAPI-Spooler den Speicheranbieter mit dem Transportanbieter verbinden.
   
-Es ist nicht erforderlich, dass eine Nachricht Speicheranbieter jemals eng mit einem anderen Anbieter verknüpft sein. Der am häufigsten verwendete Dienstanbieter eng mit einem Nachrichtenanbieter gekoppelt ist eines Transportdienstes. Dies erfolgt normalerweise, sodass senden und Empfangen von Nachrichten ohne im Zusammenhang mit der MAPI-Warteschlange durchgeführt werden kann. Beispielsweise, wenn der Benutzer eine ausgehende Nachricht sendet, können der kombinierten Nachrichtenanbieter und Adressbuchhierarchie direkt senden. Die kombinierte-Dienstanbieter müssen nicht MAPI-Warteschlange zuerst zu benachrichtigen, dass eine neue Nachricht zu verarbeiten und warten Sie MAPI-Warteschlange die Übertragung der Nachricht vom Anbieter für die Nachricht an der Adressbuchhierarchie initiieren vorhanden ist. Dies hat bestimmte Vorteile, wenn ein serverbasierte Nachrichtenspeicher durch Minimierung des Netzwerkverkehrs zwischen dem Computer des Benutzers und dem Server verwendet wird.
+Es ist nicht erforderlich, dass ein Nachrichtenspeicher Anbieter immer eng mit einem anderen Dienstanbieter verbunden wird. Der häufigste Dienstanbieter, der eng mit einem Nachrichtenspeicher Anbieter gekoppelt ist, ist ein Transportanbieter. Dies geschieht normalerweise, damit das Senden und empfangen von Nachrichten ohne Einbeziehung der MAPI-Spooler durchgeführt werden kann. Wenn der Benutzer beispielsweise eine ausgehende Nachricht sendet, kann er vom kombinierten Nachrichtenspeicher Anbieter und-Transportanbieter direkt gesendet werden. Die kombinierten Dienstanbieter müssen MAPI-Spooler nicht zuerst Benachrichtigen, dass eine neue Nachricht zur Verarbeitung vorhanden ist, und dann warten, bis MAPI-Spooler den Prozess der Übertragung der Nachricht vom Nachrichtenspeicher Anbieter an den Transportanbieter initiiert. Dies hat besondere Vorteile, wenn ein serverbasierter Nachrichtenspeicher verwendet wird, indem der Netzwerkdatenverkehr zwischen dem Computer des Benutzers und dem Server minimiert wird.
   
-Im Allgemeinen sind gibt es keine gut angegebenen Prozeduren für wodurch eng-Dienstanbieter. Sie sollten jedoch die folgenden Richtlinien verwenden:
+Im Allgemeinen gibt es keine genau festgelegten Verfahren für die enge Kopplung von Dienstanbietern. Sie sollten jedoch die folgenden Richtlinien verwenden:
   
-- Ist der Grund für wodurch eng Dienstanbieter Leistung, beachten Sie, dass die Kopplung Teile des MAPI-Subsystems nicht genügend Prozesse annimmt, an denen die Teile normalerweise beteiligt werden würde. Dies bedeutet, dass die einzelnen Teile in der kombinierten Dienstanbieter miteinander in einer Weise interagieren soll, die die Interaktion simuliert, die sie normalerweise mit den Teilen der MAPI-Subsystems hätten, die nicht verwendet werden.
+- Wenn der Grund für die enge Kopplung von Dienstanbietern die Leistung ist, beachten Sie, dass die Kopplung Teile des MAPI-Subsystems aus den Prozessen abnimmt, an denen diese Teile normalerweise beteiligt wären. Dies impliziert, dass die einzelnen Teile des kombinierten Dienstanbieters miteinander interagieren sollen, um die Interaktion zu simulieren, die Sie normalerweise mit den Teilen des MAPI-Subsystems haben, die nicht verwendet werden.
     
-- Wenn eng gekoppelten-Dienstanbietern interagieren mit anderen Komponenten MAPI muss weiterhin Interaktion mit ihnen genau wie würden sie nicht eng verknüpft wurden. Beispielsweise, wenn ein Benutzer eine kombinierte Nachrichtenanbieter und Adressbuchhierarchie als ihren Standard-Nachrichtenspeicher verwendet, aber wird mithilfe ein separaten Transportdienstes zum Senden von Nachrichten – wie auftreten können, wenn ein Benutzer einen Computer auf Reisen hat und zu einer remote-Transport-Kurs wechselt Ovider – der Bereich Message Store des Dienstanbieters eng gekoppelten muss weiterhin mit MAPI-Warteschlange interagieren, als ob es sich um einen Anbieter für eigenständige Nachricht anmelden.
+- Wenn eng gekoppelte Dienstanbieter mit anderen MAPI-Komponenten interagieren, müssen Sie weiterhin mit ihnen interagieren, wenn Sie nicht eng gekoppelt wären. Wenn ein Benutzer beispielsweise einen kombinierten Nachrichtenspeicher Anbieter und-Transportanbieter als Standardnachrichtenspeicher verwendet, aber einen separaten Transportanbieter zum Senden von Nachrichten verwendet, kann dies passieren, wenn ein Benutzer einen Computer auf den Weg bringt und zu einem Remote Transport-PR wechselt. ovider – der Nachrichtenspeicher Teil des eng gekoppelten Dienstanbieters muss weiterhin mit dem MAPI-Spooler interagieren, als ob es sich um einen eigenständigen Nachrichtenspeicher Anbieter handelt.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
+[Entwickeln eines MAPI-Nachrichtenspeicheranbieters](developing-a-mapi-message-store-provider.md)
 

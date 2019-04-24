@@ -11,24 +11,24 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c3dcd0d4-018a-47b0-b040-227034ed59d8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e76ad936cb8dc99897bc1c74d3a47b0d2aa4be46
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: acec07df0b72685cf9ec6b21499c730b72f58c59
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328112"
 ---
 # <a name="abproviderinit"></a>ABProviderInit
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Adressbuch-Dienstanbieter für Vorgang initialisiert. 
+Initialisiert einen Adressbuchanbieter für den Vorgang. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Implementiert von:  <br/> |Von adressbuchanbietern implementierte  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Implementiert von:  <br/> |Adressbuchanbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
    
 ```cpp
@@ -49,45 +49,45 @@ HRESULT ABProviderInit(
 
  _hInstance_
   
-> [in] Die Instanz der Adressbuchanbieter Dynamic Link Library (DLL), die MAPI verwendet wird, wenn es verknüpft. 
+> in Die Instanz der Dynamic Link Library (DLL) des Adressbuch Anbieters, die MAPI bei der Verknüpfung verwendet hat. 
     
  _lpMalloc_
   
-> [in] Zeiger auf ein Speicherobjekt-Zuweisung die OLE **IMalloc** -Schnittstelle verfügbar macht. Der Adressbuchanbieter müssen möglicherweise beim Arbeiten mit bestimmte Schnittstellen wie **IStream**diese Zuordnungsmethode verwenden. 
+> in Zeiger auf ein Speicher Reservierungs Objekt, das die OLE **IMalloc** -Schnittstelle verfügbar macht. Der Adressbuchanbieter muss diese Zuordnungsmethode möglicherweise beim Arbeiten mit bestimmten Schnittstellen wie **IStream**verwenden. 
     
  _lpAllocateBuffer_
   
-> [in] Zeiger auf die Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) , gegebenenfalls MAPI Speicher verwendet werden soll. 
+> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die verwendet werden soll, wenn MAPI zum Reservieren von Arbeitsspeicher erforderlich ist. 
     
  _lpAllocateMore_
   
-> [in] Zeiger auf die Funktion [MAPIAllocateMore](mapiallocatemore.md) , gegebenenfalls MAPI verwendet werden soll, zusätzlichen Arbeitsspeicher zugewiesen werden. 
+> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die bei Bedarf von MAPI verwendet werden kann, um zusätzlichen Arbeitsspeicher zuzuweisen. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer](mapifreebuffer.md) -Funktion verwendet werden, in denen MAPI erforderlich, um Arbeitsspeicher freizugeben. 
+> in Zeiger auf die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, die verwendet werden soll, wenn MAPI zum Freigeben des Arbeitsspeichers erforderlich ist. 
     
  _ulFlags_
   
-> [in] Bitmaske der Kennzeichen. Das folgende Flag kann festgelegt werden:
+> in Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
     
 MAPI_NT_SERVICE 
   
-> Der Anbieter wird im Kontext eines Windows-Diensts, eine spezielle Art von Vorgang ohne Zugriff auf eine beliebige Benutzeroberfläche geladen. 
+> Der Anbieter wird im Kontext eines Windows-Diensts, einem speziellen Prozesstyp ohne Zugriff auf eine beliebige Benutzeroberfläche, geladen. 
     
  _ulMAPIVer_
   
-> [in] Versionsnummer der der Dienstanbieter-Schnittstelle (SPI), MAPI. DLL-Datei verwendet. Die aktuelle Versionsnummer finden Sie unter der MAPISPI. H-Headerdatei. 
+> in Versionsnummer der Dienstanbieterschnittstelle (SPI), die MAPI. DLL verwendet. Die aktuelle Versionsnummer finden Sie unter MAPISPI. H-Headerdatei. 
     
  _lpulProviderVer_
   
-> [out] Zeiger auf die Versionsnummer der SPI, die diese Adressbuchanbieter verwendet. 
+> Out Zeiger auf die Versionsnummer des SPI, den dieser Adressbuchanbieter verwendet. 
     
  _lppABProvider_
   
-> [out] Zeiger auf einen Zeiger auf das initialisierten Address Book Anbieter-Objekt.
+> Out Zeiger auf einen Zeiger auf das Objekt des initialisierten Adressbuch Anbieters.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -95,21 +95,21 @@ S_OK
     
 MAPI_E_VERSION 
   
-> Die SPI-Version von MAPI verwendet wird, ist nicht kompatibel mit der SPI, die von diesem Anbieter verwendet wird.
+> Die SPI-Version, die von MAPI verwendet wird, ist nicht mit dem SPI kompatibel, der von diesem Anbieter verwendet wird.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-aufrufen, die Eintrags-Funktion **ABProviderInit** nach einer Clientanmeldung Adressbuch-Dienstanbieter nicht initialisiert werden. 
+MAPI Ruft die Einstiegspunktfunktion **ABProviderInit** auf, um einen Adressbuchanbieter nach einer Clientanmeldung zu initialisieren. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Adressbuch-Dienstanbieter muss als Funktion Entry Point in die DLL des Anbieters **ABProviderInit** implementieren. Die Implementierung der **ABPROVIDERINIT** Funktionsprototyp auch im angegebenen MAPISPI basieren. H. MAPI definiert **ABPROVIDERINIT** Verwendung standard MAPI Initialisierung Aufruftyps, STDMAPIINITCALLTYPE, wodurch **ABProviderInit** CDECL-Aufrufkonvention folgen. 
+Ein Adressbuchanbieter muss **ABProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem Prototyp der **ABPROVIDERINIT** -Funktion basieren, der auch in MAPISPI angegeben ist. H. MAPI definiert **ABPROVIDERINIT** für die Verwendung des standardMÄßIGen MAPI-Initialisierungsaufruf Typs STDMAPIINITCALLTYPE, wodurch **ABPROVIDERINIT** der Cdecl-Aufrufkonvention folgt. 
   
-Ein Anbieter kann mehrere Male, als Ergebnis in mehrere Profile angezeigt wird, in der gleichzeitigen Verwendung oder nur einmal in das gleiche Profil angezeigt werden initialisiert werden. Da das Anbieterobjekt Kontext enthält, muss **ABProviderInit** in _LppABProvider_ für jede Initialisierung, auch für mehrere wie in demselben Prozess einer anderen Anbieter-Objekt zurückgeben. 
+Ein Anbieter kann mehrmals initialisiert werden, wenn er in mehreren Profilen gleichzeitig verwendet wird oder mehr als einmal im gleichen Profil angezeigt wird. Da das Provider-Objekt den Kontext enthält, muss **ABProviderInit** für jede Initialisierung ein anderes Anbieterobjekt in _lppABProvider_ zurückgeben, auch für mehrere Initialisierungen im selben Prozess. 
   
-Der Adressbuchanbieter sollten die Funktionen, die auf den _LpAllocateBuffer_, _LpAllocateMore_und _LpFreeBuffer_ für die meisten arbeitsspeicherreservierung und Freigabe verwenden. Insbesondere muss den Anbieter diese Funktionen für die Verwendung von Clientanwendungen Speicher beim Aufruf von wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md)-Schnittstellen verwenden. Wenn der Anbieter auch erwartet, verwenden Sie die Zuweisung der OLE-Speicher, sollten sie die **IUnknown:: AddRef** -Methode, der das Zuordnungsobjekt auf das durch den Parameter _LpMalloc_ aufrufen. 
+Der Adressbuchanbieter sollte die Funktionen, auf die von _lpAllocateBuffer_, _lpAllocateMore_und _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und-Zuordnungen verwenden. Insbesondere muss der Anbieter diese Funktionen verwenden, um Arbeitsspeicher für die Verwendung durch Clientanwendungen zu reservieren, wenn Objektschnittstellen wie [IMAPIProp::](imapiprop-getprops.md) GetProps und [IMAPITable:: QueryRows](imapitable-queryrows.md)aufgerufen werden. Wenn der Anbieter auch die Verwendung der OLE-Speicherzuweisung erwartet, sollte er die **IUnknown:: AddRef** -Methode des Zuweisungs Objekts aufrufen, auf die durch den _lpMalloc_ -Parameter verwiesen wird. 
   
-Weitere Informationen zum Schreiben von **ABProviderInit**finden Sie unter [Implementieren einer Adresse Adressbuch Anbieter Eintrag Point-Funktion](implementing-an-address-book-provider-entry-point-function.md). Weitere Informationen zu Entry Point-Funktionen finden Sie unter [Implementieren einer Service Provider Eintrag zeigen-Funktion](implementing-a-service-provider-entry-point-function.md). 
+Weitere Informationen zum Schreiben von **ABProviderInit**finden Sie unter [Implementieren der Einstiegspunktfunktion eines Adressbuch Anbieters](implementing-an-address-book-provider-entry-point-function.md). Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementieren einer Dienstanbieter-Einstiegspunktfunktion](implementing-a-service-provider-entry-point-function.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: MAPI-Statusanzeigen
+title: MAPI-fortSchrittsIndikatoren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: 73a99e52-97fe-40f5-af90-52cfd858ab22
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8fc39c6d7da0970ee15cdd9dd67bfeef0997d7d1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cdfb6898146583b7da9b043eadd3acc09edbf292
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328210"
 ---
-# <a name="mapi-progress-indicators"></a>MAPI-Statusanzeigen
+# <a name="mapi-progress-indicators"></a>MAPI-fortSchrittsIndikatoren
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Viele Vorgänge, die Sie für Clients ausführen dauert sehr lange Zeit in Anspruch. Um den Fortschritt eines längeren Vorgangs-Clients zu informieren, können Sie ein Symbol anzeigen, das den Teil eines Vorgangs nach Abschluss des Vorgangs zu einem bestimmten Zeitpunkt vom Anfang des Vorgangs zu ihrem Abschluss grafisch dargestellt werden. Die Statusanzeige zeigt einen prozentualen Anteil der gesamte Vorgang ausgeführt werden.
+Viele der Vorgänge, die Sie für Clients ausführen, können sehr viel Zeit in Anspruch nehmen. Wenn Sie Clients über den Fortschritt eines längeren Vorgangs informieren möchten, können Sie einen Indikator anzeigen, der den abgeschlossenen Teil eines Vorgangs zu einem beliebigen Zeitpunkt vom Beginn des Vorgangs bis zum Abschluss grafisch anzeigt. Die Fortschrittsanzeige zeigt einen Prozentsatz der gesamten auszufüllenden Operation an.
   
-Die folgenden Methoden unterstützen langen Vorgänge und die Anzeige einer Statusanzeige:
+Die folgenden Methoden unterstützen langwierige Vorgänge und die Anzeige einer Statusanzeige:
   
-- [IMAPIFolder::CopyMessages](imapifolder-copymessages.md), [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md), [IMAPIFolder::DeleteMessages](imapifolder-deletemessages.md), [IMAPIFolder::DeleteFolder](imapifolder-deletefolder.md), [IMAPIFolder::EmptyFolder](imapifolder-emptyfolder.md)und [IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md).
+- [IMAPIFolder:: CopyMessages](imapifolder-copymessages.md), [IMAPIFolder:: CopyFolder](imapifolder-copyfolder.md), [IMAPIFolder::D Eletemessages](imapifolder-deletemessages.md), [IMAPIFolder::D Eletefolder](imapifolder-deletefolder.md), [IMAPIFolder:: EmptyFolder](imapifolder-emptyfolder.md)und [IMAPIFolder:: SetReadFlags](imapifolder-setreadflags.md).
     
-- [IMAPIProp::CopyProps](imapiprop-copyprops.md) und [IMAPIProp::CopyTo](imapiprop-copyto.md).
+- [IMAPIProp:: CopyProps](imapiprop-copyprops.md) und [IMAPIProp:: CopyTo](imapiprop-copyto.md).
     
-- [IMAPISupport::DoCopyProps](imapisupport-docopyprops.md), [IMAPISupport::DoCopyTo](imapisupport-docopyto.md), [IMAPISupport::CopyFolder](imapisupport-copyfolder.md)und [IMAPISupport::CopyMessages](imapisupport-copymessages.md).
+- [IMAPISupport::D ocopyprops](imapisupport-docopyprops.md), [IMAPISupport::D ocopyto](imapisupport-docopyto.md), [IMAPISupport:: CopyFolder](imapisupport-copyfolder.md)und [IMAPISupport:: CopyMessages](imapisupport-copymessages.md).
     
-- [IMessage::DeleteAttach](imessage-deleteattach.md).
+- [IMessage::D eleteattach](imessage-deleteattach.md).
     
-- [IABContainer::CopyEntries](iabcontainer-copyentries.md).
+- [IABContainer:: CopyEntries](iabcontainer-copyentries.md).
     
-Zum Anzeigen einer Statusanzeige definiert MAPI ein Fortschritt-Objekt. Fortschritt Objekte Implementieren der [IMAPIProgress: IUnknown](imapiprogressiunknown.md) -Schnittstelle, die eine Schnittstelle, die Methoden für das Einrichten des Bereichs von den Indikator und die Anzeige erstellen enthält. MAPI bietet eine Implementierung der Fortschritt-Objekt, wie einige Clients. Sie sollten eine Client-Implementierung verwenden, wenn eine bereitgestellt wird, als Eingabeparameter der Methode Ausführen des Vorgangs. Wenn der Client NULL anstatt einen Zeiger auf ein Objekt Fortschritt übergibt, verwenden Sie des MAPI-Implementierung durch Aufrufen der [IMAPISupport::DoProgressDialog](imapisupport-doprogressdialog.md) -Methode. 
+Um eine Statusanzeige anzuzeigen, definiert MAPI ein Progress-Objekt. Progress-Objekte implementieren die [IMAPIProgress: IUnknown](imapiprogressiunknown.md) -Schnittstelle, eine Schnittstelle, die Methoden zum Festlegen des Indikators und zum Erstellen der Anzeige enthält. MAPI bietet eine Progress-Objekt Implementierung wie einige Clients. Sie sollten die Implementierung eines Clients, sofern vorhanden, als Eingabeparameter für die Methode verwenden, die den Vorgang ausführt. Wenn der Client NULL anstelle eines Zeigers an ein Progress-Objekt übergibt, verwenden Sie die MAPI-Implementierung, indem Sie die [IMAPISupport::D oprogressdialog](imapisupport-doprogressdialog.md) -Methode aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

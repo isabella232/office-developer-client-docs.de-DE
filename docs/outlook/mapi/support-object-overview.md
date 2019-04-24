@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Unterstützungsobjekte
+title: Übersicht über das Support Objekt
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,68 +8,68 @@ api_type:
 - COM
 ms.assetid: 5b062891-39ab-4334-9706-5b376719d5e4
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7f43a50d08daedc623fa1e4570eafa5d58be71f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 55d8a9c78ae5132eaa8cf0f0aec5b252ef83b926
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327167"
 ---
-# <a name="support-object-overview"></a>Übersicht über Unterstützungsobjekte
+# <a name="support-object-overview"></a>Übersicht über das Support Objekt
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI stellt ein Support-Objekt, ein Objekt, das implementiert bereit die [IMAPISupport: IUnknown](imapisupportiunknown.md) Schnittstelle, die für alle Dienstanbieter bei der Anmeldung und für alle Nachrichtendienste während der Konfiguration. 
+MAPI liefert ein Support-Objekt, ein Objekt, das die [IMAPISupport: IUnknown](imapisupportiunknown.md) -Schnittstelle für alle Dienstanbieter während der Anmeldung und für alle Nachrichtendienste während der Konfiguration implementiert. 
   
-Unterstützungsobjekte sind nicht Clients zugreifen können. Sie sind von MAPI implementierte und nur vom Dienstanbieter aufgerufen. Die **IMAPISupport** -Schnittstelle wird in der Headerdatei Mapispi.h angegeben. Des Bezeichners IID_IMAPISup und dieses Zeigertyps LPMAPISUP. Keine MAPI-Eigenschaften werden von Unterstützungsobjekte verfügbar gemacht. 
+Auf Support Objekte kann von Clients nicht zugegriffen werden; Sie werden von MAPI implementiert und nur von Dienstanbietern aufgerufen. Die **IMAPISupport** -Schnittstelle wird in der Headerdatei Mapispi. h angegeben. Der Bezeichner ist IID_IMAPISup, und sein Zeigertyp ist LPMAPISUP. Von Support-Objekten werden keine MAPI-Eigenschaften verfügbar gemacht. 
   
-Ein Anbieter kann zugewiesen werden, eine oder mehrere Unterstützungsobjekte, je nachdem, wie oft sollen MAPI den Anbieter oder die Anzahl der Häufigkeit, mit die der Anbieter Nachricht Service Eintrag-Funktion aufgerufen wird. In der Regel wird ein Anbieter mindestens einmal pro Sitzung angemeldet sein. Address Book und Transport-Provider sind angemeldet, jedes Mal, wenn ein Client eine Sitzung mit einem Profileintrag gestartet, der sie anfordert. Jedes Mal, wenn ein Client die [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) -Methode aufruft, sind Nachricht Anbieter angemeldet. 
+Ein Anbieter kann ein oder mehrere Support Objekte erhalten, je nachdem, wie oft MAPI den Anbieter protokolliert oder wie oft die Nachrichtendienst-Eingabefunktion des Anbieters aufgerufen wird. In der Regel wird ein Anbieter mindestens einmal pro Sitzung angemeldet. Adressbuch-und Transportanbieter werden bei jedem Start einer Sitzung mit einem Profileintrag, der Sie anfordert, bei jedem Client protokolliert. Nachrichtenspeicher Anbieter werden bei jedem Aufruf der [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md) -Methode bei einem Client protokolliert. 
   
-Im Fall von mehreren Anmeldungen in einer Sitzung können Sie entweder zu behalten und jedes Objekt Unterstützung separat verwenden oder beibehalten werden, und verwenden Sie nur die ersten jedes nachfolgende Support-Objekt verworfen. Um ein Objekt Support beizubehalten, rufen Sie seine **IUnknown:: AddRef** -Methode. Aufruf von **AddRef** für ein Support-Objekt, das Sie während einer Sitzung beibehalten möchten ist äußerst wichtig. Wenn der Anruf nicht erfolgt, MAPI-Freigaben für den Support-Objekt und gibt den Speicherplatz frei. 
+Bei mehreren Anmeldungen in einer Sitzung können Sie entweder die Option zum Aufbewahren und Verwenden der einzelnen Support Objekte separat oder zum Aufbewahren und verwenden nur des ersten, wobei jedes nachfolgende Support Objekt verworfen wird. Um ein Support Objekt beizubehalten, rufen Sie die zugehörige **IUnknown:: AddRef** -Methode auf. Das Aufrufen von **AddRef** für ein Support Objekt, das Sie während einer Sitzung aufbewahren möchten, ist äußerst wichtig; Wenn der Anruf nicht durchgeführt wird, gibt MAPI das Support Objekt frei und gibt den Arbeitsspeicher zurück. 
   
-Der Zweck des Support-Objekts ist bei Implementierungen für eine relativ große Anzahl von Methoden, die der Anbieter verwendet werden. Jedes Support-Objekt enthält auch Kontextdaten speziell für ihre eigene Instanz, wie der Sitzungen, in denen der Anbieter im Profilabschnitt, den der Anbieter verwendet ausgeführt wird, und die Fehlerinformationen für die Sitzung. 
+Der Zweck des Support-Objekts besteht darin, Implementierungen für eine relativ hohe Anzahl von Methoden bereitzustellen, die häufig von den Anbietern verwendet werden. Jedes Support Objekt enthält auch kontextbezogene Daten, die spezifisch für die eigene Instanz sind, beispielsweise die Sitzung, in der der Anbieter aktiv ist, den Profil Abschnitt, den der Anbieter verwendet, und Fehlerinformationen für die Sitzung. 
   
-Es gibt vier verschiedene Typen von Unterstützungsobjekte: einen für jeden Haupt-Anbietertyp (Adressbuch, Nachrichtenspeicher und Transport) und einen für die Konfiguration. 
+Es gibt vier verschiedene Typen von Unterstützungs Objekten: eine für jeden Haupt Anbietertyp (Adressbuch, Nachrichtenspeicher und Transport) und eine für Konfigurationsunterstützung. 
   
-MAPI passt jedes Objekt Unterstützung durch das Einbeziehen von Implementierungen der Methoden, die für die Verwendung von Bedeutung sind. Implementierungen von einige Methoden wie [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md), sind alle Support-Objekte enthalten. Die Implementierung von anderen Methoden wie [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md), gelten nur für bestimmte Unterstützungsobjekte. Nur Nachrichtenspeicher und Transportanbieter können diese Methode verwenden. Wenn Adressbuch-Dienstanbieter oder eine Message Service versuchen es aufrufen, gibt MAPI MAPI_E_NO_SUPPORT zurück.
+MAPI passt jedes Support Objekt an, indem es Implementierungen von Methoden einschließt, die für seine Verwendung relevant sind. Implementierungen einiger Methoden, wie [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md), sind in allen Support-Objekten enthalten. Implementierungen anderer Methoden wie [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md)gelten nur für bestimmte Support Objekte. Diese Methode kann nur für Nachrichtenspeicher-und Transportanbieter verwendet werden. Wenn ein Adressbuchanbieter oder ein Nachrichtendienst versucht, es aufzurufen, gibt MAPI MAPI_E_NO_SUPPORT zurück.
   
-Unterstützungsobjekte können viele, wie die folgenden Aufgaben verwendet werden:
+Unterstützende Objekte können zum Ausführen vieler Aufgaben verwendet werden, wie beispielsweise:
   
-- Zugreifen auf einen Profilabschnitt.
+- Zugreifen auf einen Profil Abschnitt.
     
-- Kopieren von Ordnern oder Nachrichten. Weitere Informationen finden Sie unter [Kopieren oder Verschieben einer Nachricht oder eines Ordners](copying-or-moving-a-message-or-a-folder.md).
+- Kopieren von Ordnern oder Nachrichten. Weitere Informationen finden Sie unter [Kopieren oder bewegen einer Nachricht oder eines Ordners](copying-or-moving-a-message-or-a-folder.md).
     
-- Zugreifen auf Objekte, die andere Anbieter angehören. Weitere Informationen finden Sie unter [Vergleich und unterstützende Object Access](supporting-object-access-and-comparison.md). 
+- Zugreifen auf Objekte, die zu anderen Anbietern gehören. Weitere Informationen finden Sie unter [unterstützen des Objektzugriffs und-Vergleichs](supporting-object-access-and-comparison.md). 
     
-- Behandeln von ereignisbenachrichtigung. Weitere Informationen finden Sie unter [Ereignisbenachrichtigung unterstützen](supporting-event-notification.md).
+- Behandeln der Ereignisbenachrichtigung. Weitere Informationen finden Sie unter [UnterstützenDe Ereignisbenachrichtigung](supporting-event-notification.md).
     
 - Reservieren und Freigeben von Arbeitsspeicher.
     
 - Abrufen eines eindeutigen Bezeichners.
     
-- Objekte für ungültig erklärt.
+- Objekte werden nicht überprüft.
     
-- Behandeln von Fehlern.
+- Fehlerbehandlung.
     
-- Nachricht Präprozessoren registrieren. 
+- Registrieren von Nachrichten Präprozessoren. 
     
-- Vorbereiten der Nachricht Übermittlungsberichte. 
+- Vorbereiten von Nachrichtenübermittlungsberichten. 
     
-Bei der Anmeldung ruft MAPI die Logon-Methode des jeder Dienstanbieter Anbieter-Objekts. Für adressbuchanbietern implementierte ruft MAPI [IABProvider::Logon](iabprovider-logon.md). Für Nachricht-Anbieter ruft MAPI [IMSProvider::Logon](imsprovider-logon.md). Für Transportanbieter für ruft MAPI [IXPProvider::TransportLogon](ixpprovider-transportlogon.md). MAPI übergibt einen Zeiger auf das entsprechende Unterstützung-Objekt in einer der Parameter an diese Methode. Die Logon-Methode instanziiert wiederum eine Anmeldung-Objekt, übergeben sie den Zeiger Support-Objekt. Das Anmeldeobjekt Ruft die des Unterstützungsobjekts **IUnknown:: AddRef** -Methode zum beibehalten, bei Bedarf. Weitere Informationen zu den Anmeldevorgang für Dienstanbieter finden Sie unter [einem Dienstanbieter zu starten](starting-a-service-provider.md).
+Während der Anmeldung ruft MAPI die Anmeldemethode des Anbieterobjekts jedes Dienstanbieters auf. Für Adressbuchanbieter ruft MAPI [IABProvider:: LOGON](iabprovider-logon.md)auf. Für Nachrichtenspeicher Anbieter ruft MAPI [IMSProvider:: LOGON](imsprovider-logon.md)auf. Für Transportanbieter ruft MAPI [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md)auf. MAPI übergibt einen Zeiger an das entsprechende Support-Objekt in einem der Parameter an diese Methode. Die Logon-Methode wiederum instanziiert ein LOGON-Objekt und übergibt dabei den Objektzeiger für den Support. Das Logon-Objekt ruft die **IUnknown:: AddRef** -Methode des Support Objekts auf, um Sie bei Bedarf beizubehalten. Weitere Informationen zum Anmeldeprozess für Dienstanbieter finden Sie unter [Starten eines Dienstanbieters](starting-a-service-provider.md).
   
-Wenn ein Client abmeldet, ruft MAPI das Anmeldeobjekt logoff (Methode). Logoff (Methode) Ruft das Support-Objekt **IUnknown** -Methode, um darauf hinzuweisen, dass der Anbieter nicht mehr die Support-Methoden aufrufen will. Wie bei der Anmeldung haben die Methoden Abmeldung etwas andere Namen. Die [IABLogon](iablogoniunknown.md) und [IMSLogon](imslogoniunknown.md) Schnittstellen haben **Abmeldung** Methoden. die Schnittstelle [IXPLogon](ixplogoniunknown.md) verfügt über eine [TransportLogoff](ixplogon-transportlogoff.md) -Methode. 
+Wenn ein Client sich abmeldet, ruft MAPI die Abmelde Methode des LOGON Objekts auf. Die logout-Methode ruft die **IUnknown:: Release** -Methode des Support Objekts auf, um anzugeben, dass der Anbieter keine der Supportmethoden mehr aufrufen möchte. Wie bei der Anmeldung weisen die Logoff-Methoden leicht unterschiedliche Namen auf. Die [IABLogon](iablogoniunknown.md) -und [IMSLogon](imslogoniunknown.md) -Schnittstellen weisen Abmeldemethoden auf. **** die [IXPLogon](ixplogoniunknown.md) -Schnittstelle verfügt über eine [TransportLogoff](ixplogon-transportlogoff.md) -Methode. 
   
-Nachricht Webdienstfunktionen Entry Point werden aufgerufen, wenn ein Anmeldeversuch fehlschlägt, mit dem Fehler MAPI_E_UNCONFIGURED oder wenn ein Client eine Anforderung Konfiguration initiiert. MAPI instanziiert ein Support-Konfigurationsobjekt und ruft die Meldung Service Entry Point-Funktion für den Anbieter nicht konfiguriert oder der Anbieter, deren Konfiguration geändert wird. Im Gegensatz zu anderen Unterstützungsobjekte gelten Unterstützungsobjekte Konfiguration nur, bis der Einstiegspunkt-Funktion gibt zurück; Diese Objekte **AddRef** -Methoden, um zu verhindern, sie rufen Sie Message-Dienste. 
+Einstiegspunktfunktionen für den Nachrichtendienst werden aufgerufen, wenn ein Anmeldeversuch mit dem Fehler MAPI_E_UNCONFIGURED fehlschlägt oder wenn ein Client eine Konfigurationsanforderung initiiert. MAPI instanziiert ein Konfigurations Unterstützungsobjekt und ruft die Einstiegspunktfunktion des Nachrichtendiensts für den nicht konfigurierten Anbieter oder den Anbieter auf, dessen Konfiguration gerade geändert werden soll. Im Gegensatz zu anderen Support Objekten sind Konfigurations Unterstützungsobjekte nur gültig, wenn die Einstiegspunktfunktion zurückgegeben wird. Nachrichtendienste rufen die **AddRef** -Methoden dieser Objekte nicht auf, um Sie beizubehalten. 
   
-In der Regel MAPI des Anbieters Nachricht Service Entry Point-Funktion aufruft, aber in einigen Fällen ist ein Anbieter aufgefordert werden, den Anruf zu tätigen. Dies kann vorkommen, wenn ein Client [einen Anbieter SettingsDialog des Dienstanbieters für das Eigenschaftenblatt Konfiguration anzuzeigen aufgefordert](imapistatus-settingsdialog.md) aufruft. **SettingsDialog** sollte Aufrufen [IMAPISupport::GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) um ein Konfigurationsobjekt Support zu erhalten, die an die Nachricht Service Entry Point-Funktion übergeben werden kann. 
+In der Regel führt MAPI Aufrufe an die Funktion des Einstiegspunkts eines Anbieters für den Nachrichtendienst aus, aber manchmal wird ein Anbieter aufgefordert, den Anruf zu tätigen. Dies kann auftreten, wenn ein Client die [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) -Methode eines Anbieters aufruft, um den Anbieter aufzufordern, dessen Konfigurationseigenschaften Blatt anzuzeigen. **Settingsdialog** sollte [IMAPISupport:: GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) aufrufen, um ein Konfigurations Unterstützungsobjekt abzurufen, das an die Einstiegspunktfunktion des Nachrichtendiensts weitergegeben werden kann. 
   
-Die [IMAPISupport::GetMemAllocRoutines](imapisupport-getmemallocroutines.md) -Methode ist für die Bestimmung der Adressen der Arbeitsspeicher Reservierung und Freigabe Funktionen ohne Verknüpfung mit MAPI verfügbar. Verwenden von **GetMemAllocRoutines** vereinfacht auch So verfolgen Sie Speicherverluste umgebenden die Zuweisung Funktionsaufrufe mit Debuggen von Code. Wenn Sie **GetMemAllocRoutines**, rufen Sie wie empfohlen wird, führen Sie vor dem Aufrufen der [CreateIProp](createiprop.md) -Funktion, die die Zuordnung Funktion Adressen als Parameter erforderlich sind. 
+Die [IMAPISupport:: GetMemAllocRoutines](imapisupport-getmemallocroutines.md) -Methode ist für die Bestimmung der Adressen der Speicher Zuweisungs-und Zuordnungsfunktionen verfügbar, ohne dass eine Verknüpfung mit MAPI hergestellt werden muss. Die Verwendung von **GetMemAllocRoutines** erleichtert auch die Ablaufverfolgung von Speicherlecks, indem die Zuordnungs Funktionsaufrufe mit Debugcode umgeben werden. Wenn Sie **GetMemAllocRoutines**aufrufen, wie empfohlen, tun Sie dies, bevor Sie die [CreateIProp](createiprop.md) -Funktion aufrufen, die die Zuordnungs Funktions Adressen als Parameter erfordert. 
   
-Wenn Sie erstellen müssen ein neues Adressbuch oder einer Nachricht Objekt speichern, erstellen und einen Search-Schlüssel für das Objekt in der **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft festlegen. Rufen Sie [IMAPISupport::NewUID](imapisupport-newuid.md) , um eine eindeutige ID verwenden Sie beim Erstellen eines Schlüssels für die Suche zu erhalten. Verwenden Sie eine eigene hartcodierte [MAPIUID](mapiuid.md)nicht. Ein Anbieter **MAPIUID** sollte nur für Eintragsbezeichner verwendet werden. Weitere Informationen zum Erstellen von Search-Schlüssel finden Sie unter [MAPI-Datensatz und Suche Schlüssel](mapi-record-and-search-keys.md).
+Wenn Sie ein neues Adressbuch-oder Nachrichtenspeicherobjekt erstellen müssen, erstellen Sie einen Suchschlüssel für das Objekt in seiner **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft, und legen Sie ihn fest. Rufen Sie [IMAPISupport:: NewUID](imapisupport-newuid.md) auf, um einen eindeutigen Bezeichner abzurufen, der beim Erstellen eines Suchschlüssels verwendet werden soll. Verwenden Sie nicht Ihre eigene hart codierte [MAPIUID](mapiuid.md). Die **MAPIUID** eines Anbieters sollten nur für Eintrags-IDs verwendet werden. Weitere Informationen zum Erstellen von Such Schlüsseln finden Sie unter [MAPI Record and Search Keys](mapi-record-and-search-keys.md).
   
-Eine Clientanwendung kann ein Objekt ohne einen oder mehrere verbundenen Objekte freigibt manchmal freigeben. In diesem Fall müssen ein Anbieter für ein nicht freigegebene Objekt nicht mehr wiedergegeben. Zu diesem Zweck der Anbieter gibt alle Ressourcen verbunden mit dem Objekt frei und ruft dann [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md) , um das Objekt Vtable ungültig. **MakeInvalid** ersetzt die Vtable **IUnknown** -Methoden (**QueryInterface**, **AddRef**und **Release**) mit standard MAPI Implementierungen und bewirkt, dass alle anderen Methoden zur MAPI_E_INVALID_OBJECT zurückzugeben. **MakeInvalid** gibt auch alle der Speicher des Objekts als Vtable frei. 
+Eine Clientanwendung kann ein Objekt manchmal freigeben, ohne ein oder mehrere der zugehörigen Objekte freizugeben. In einem solchen Fall muss ein Anbieter möglicherweise ein nicht freigegebenes Objekt als unbenutzbar rendern. Hierzu gibt der Anbieter alle Ressourcen frei, die mit dem Objekt verbunden sind, und ruft dann [IMAPISupport:: MakeInvalid](imapisupport-makeinvalid.md) auf, um die Vtable des Objekts zu invalidisieren. **MakeInvalid** ersetzt die **IUnknown** -Methoden (**QueryInterface**, **AddRef**und **Release**) der vtable durch standardmäßige MAPI-Implementierungen und bewirkt, dass alle anderen Methoden MAPI_E_INVALID_OBJECT zurückgeben. **MakeInvalid** gibt auch den gesamten Speicher des Objekts außer der vtable frei. 
   
 ## <a name="see-also"></a>Siehe auch
 

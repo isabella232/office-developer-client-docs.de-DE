@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1a23e555-be26-43fb-a715-cfc4ffa623cd
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b4dd7e9715c2d3c99eda44f7eed0b3360a2e33be
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e6a180ceb325a705ebf226bb728c52cce7396490
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328963"
 ---
 # <a name="imapitablecollapserow"></a>IMAPITable::CollapseRow
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Blendet eine Tabellenkategorie für erweiterte, entfernen Sie die untergeordnete Überschriften und Endknoten Zeilen aus der Tabellenansicht für die Kategorie gehören.
+Reduziert eine erweiterte Tabellen Kategorie, wobei alle untergeordneten Überschriften und Blattzeilen, die der Kategorie angehören, aus der Tabellenansicht entfernt werden.
   
 ```cpp
 HRESULT CollapseRow(
@@ -40,51 +40,51 @@ ULONG FAR * lpulRowCount
 
  _cbInstanceKey_
   
-> [in] Die Anzahl der Bytes in der PR_INSTANCE_KEY-Eigenschaft auf den durch den Parameter _PbInstanceKey_ verwiesen. 
+> in Die Anzahl der Bytes in der PR_INSTANCE_KEY-Eigenschaft, auf die durch den _pbInstanceKey_ -Parameter verwiesen wird. 
     
  _pbInstanceKey_
   
-> [in] Ein Zeiger auf die **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))-Eigenschaft, die Zeile mit der Spaltenüberschrift für die Kategorie identifiziert. 
+> in Ein Zeiger auf die **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md))-Eigenschaft, die die Überschriftenzeile für die Kategorie identifiziert. 
     
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  _lpulRowCount_
   
-> [out] Ein Zeiger auf die Gesamtzahl der Zeilen, die aus der Tabellenansicht entfernt werden.
+> Out Ein Zeiger auf die Gesamtanzahl der Zeilen, die aus der Tabellenansicht entfernt werden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Collapse-Vorgang wurde erfolgreich abgeschlossen.
+> Der Collapse-Vorgang wurde erfolgreich ausgeführt.
     
 MAPI_E_NOT_FOUND 
   
-> Die Zeile, die vom _PbInstanceKey_ -Parameter ist nicht vorhanden. 
+> Die durch den _pbInstanceKey_ -Parameter angegebene Zeile ist nicht vorhanden. 
     
 MAPI_E_INVALID_ENTRYID 
   
-> Die Zeile, die vom _PbInstanceKey_ -Parameter ist nicht vorhanden. Dieser Fehler ist eine Alternative zur MAPI_E_NOT_FOUND. Dienstanbieter können entweder 1 zurück. 
+> Die durch den _pbInstanceKey_ -Parameter angegebene Zeile ist nicht vorhanden. Dieser Fehler ist eine Alternative zu MAPI_E_NOT_FOUND; Dienstanbieter können eine der beiden zurückgeben. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPITable::CollapseRow** -Methode wird eine Tabellenkategorie reduziert und entfernt ihn aus der Tabellenansicht. Die Zeilen werden regelmäßig beginnend in der Zeile, die von der **PR_INSTANCE_KEY** -Eigenschaft auf das durch den Parameter _PbInstanceKey_ identifiziert. Die Anzahl der Zeilen, die aus der Ansicht entfernt wurden, wird in den Inhalt des Parameters _LpulRowCount_ zurückgegeben. 
+Die **IMAPITable:: CollapseRow** -Methode reduziert eine Tabellen Kategorie und entfernt Sie aus der Tabellenansicht. Die Zeilen werden beginnend bei der Zeile reduziert, die von der **PR_INSTANCE_KEY** -Eigenschaft identifiziert wird, auf die durch den _pbInstanceKey_ -Parameter verwiesen wird. Die Anzahl der Zeilen, die aus der Ansicht entfernt werden, wird im Inhalt des _lpulRowCount_ -Parameters zurückgegeben. 
   
-Benachrichtigungen werden nie für Tabellenzeilen generiert, die als Ergebnis eines Vorgangs reduzieren aus einer Ansicht entfernt werden. 
+Benachrichtigungen werden nie für Tabellenzeilen generiert, die aus einer Ansicht als Ergebnis eines Collapse-Vorgangs entfernt werden. 
   
-Wenn eine Zeile, die durch eine Textmarke definiert wird aus der Ansicht reduziert ist, wird die Textmarke So zeigen Sie auf die nächste sichtbare Zeile verschoben. 
+Wenn eine Zeile, die durch eine Textmarke definiert ist, ausgeblendet ist, wird die Textmarke so verschoben, dass Sie auf die nächste sichtbare Zeile zeigt. 
   
-Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sortieren und Kategorisierung](sorting-and-categorization.md).
+Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sortieren und kategorisieren](sorting-and-categorization.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::DoExpandCollapse  <br/> |MFCMAPI (engl.) verwendet die **IMAPITable::CollapseRow** -Methode, um eine Tabellenkategorie reduzieren.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl::D oExpandCollapse  <br/> |MFCMAPI verwendet die **IMAPITable:: CollapseRow** -Methode, um eine Tabellen Kategorie zu reduzieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

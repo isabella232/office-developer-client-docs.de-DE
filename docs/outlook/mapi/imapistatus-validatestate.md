@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 036b9b15-86e1-4a37-8e4b-e37b2963d8fb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5ab459239bdcdcad30c4b6c82d5a3f8641bd4aca
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: adcdf04653f8c9fed2ecc6520648abd3acd36134
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331549"
 ---
 # <a name="imapistatusvalidatestate"></a>IMAPIStatus::ValidateState
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestätigen Sie die externen Statusinformationen für die MAPI-Ressource oder den Dienstanbieter. Diese Methode wird in allen Status-Objekten unterstützt. 
+Bestätigt die externen Statusinformationen für die MAPI-Ressource oder den Dienstanbieter. Diese Methode wird in allen Status-Objekten unterstützt. 
   
 ```cpp
 HRESULT ValidateState(
@@ -36,45 +36,45 @@ HRESULT ValidateState(
 
 _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, die diese Methode anzeigt.
+> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
     
 _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die die Überprüfung steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Validierung steuert. Die folgenden Flags können festgelegt werden:
     
 ABORT_XP_HEADER_OPERATION
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** , in dem entsprechenden Dialogfeld abgebrochen. Das Statusobjekt besitzt zwei Optionen zur Verfügung: 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in der Regel auf die Schaltfläche **Abbrechen** im entsprechenden Dialogfeld geklickt hat. Das Status-Objekt verfügt über zwei Optionen: 
     
-   - Fortsetzen Sie Arbeit an den Vorgang.
+   - Arbeiten Sie weiterhin an dem Vorgang.
     
-   - Beenden Sie den Vorgang, und geben Sie MAPI_E_USER_CANCELED zurück.
+   - Beenden Sie den Vorgang, und geben Sie MAPI_E_USER_CANCELED.
     
 CONFIG_CHANGED 
   
-> Eine oder mehrere der Eigenschaften von Konfiguration der Status des Objekts geändert. Clients können dieses Kennzeichen ermöglicht die MAPI-Warteschlange dynamisch kritische Transport Anbieter Fehler korrigieren festlegen. 
+> Eine oder mehrere der Konfigurationseigenschaften des Status-Objekts wurden geändert. Clients können dieses Flag festlegen, um zu ermöglichen, dass der MAPI-Spooler kritische Transportanbieter Fehler dynamisch korrigiert. 
     
 FORCE_XP_CONNECT 
   
-> Das Statusobjekt sollte eine Verbindung ausführen. Wenn dieses Flag mit dem REFRESH_XP_HEADER_CACHE oder PROCESS_XP_HEADER_CACHE-Flag verwendet wird, tritt die Verbindung ohne Zwischenspeichern.
+> Das Status-Objekt sollte eine Verbindung herstellen. Wenn dieses Flag mit dem REFRESH_XP_HEADER_CACHE-oder PROCESS_XP_HEADER_CACHE-Flag verwendet wird, erfolgt die Verbindung ohne Zwischenspeicherung.
     
 FORCE_XP_DISCONNECT 
   
-> Das Statusobjekt sollte einen Trennvorgang auszuführen. Wenn dieses Flag mit dem REFRESH_XP_HEADER_CACHE oder PROCESS_XP_HEADER_CACHE-Flag verwendet wird, tritt das Trennen der Verbindung ohne Zwischenspeichern.
+> Das Status-Objekt sollte einen Disconnect-Vorgang ausführen. Wenn dieses Flag mit dem REFRESH_XP_HEADER_CACHE-oder PROCESS_XP_HEADER_CACHE-Flag verwendet wird, erfolgt die Trennung ohne Zwischenspeicherung.
     
 PROCESS_XP_HEADER_CACHE 
   
-> Einträge in der Kopfzeile Cachetabelle verarbeitet werden soll, sollten alle Nachrichten mit dem MSGSTATUS_REMOTE_DOWNLOAD-Flag heruntergeladen werden und alle Nachrichten mit dem MSGSTATUS_REMOTE_DELETE-Flag gekennzeichnet gelöscht werden sollen. Nachrichten, die MSGSTATUS_REMOTE_DOWNLOAD und MSGSTATUS_REMOTE_DELETE festgelegt haben, sollten verschoben werden.
+> Einträge in der Kopfzeile-Cache-Tabelle sollten verarbeitet werden, alle Nachrichten, die mit dem MSGSTATUS_REMOTE_DOWNLOAD-Flag gekennzeichnet sind, sollten heruntergeladen werden, und alle Nachrichten, die mit dem MSGSTATUS_REMOTE_DELETE-Flag gekennzeichnet sind, sollten gelöscht werden. Nachrichten, die sowohl MSGSTATUS_REMOTE_DOWNLOAD als auch MSGSTATUS_REMOTE_DELETE festgelegt haben, sollten verschoben werden.
     
 REFRESH_XP_HEADER_CACHE 
   
-> Bei einem remote-Transport-Anbieter sollte eine neue Liste der Kopfzeilen heruntergeladen werden, und alle Flags, die die Nachricht den Status markieren sollte deaktiviert werden.
+> Bei einem Remote Transportanbieter sollte eine neue Liste mit Nachrichtenkopfzeilen heruntergeladen werden, und alle Kennzeichnungen, die den Nachrichtenstatus markieren, sollten gelöscht werden.
     
 SUPPRESS_UI 
   
-> Verhindert, dass das Statusobjekt eine Benutzeroberfläche als Teil des Vorgangs angezeigt.
+> Verhindert, dass das Statusobjekt eine Benutzeroberfläche als Teil des Vorgangs anzeigt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -82,119 +82,119 @@ S_OK
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang ist in Bearbeitung. Es dürfen für die Durchführung, oder er angehalten werden sollte, bevor Sie diesen Vorgang gestartet wird.
+> Ein anderer Vorgang wird ausgeführt; Sie sollte zugelassen werden, oder Sie sollte beendet werden, bevor dieser Vorgang eingeleitet wird.
     
 MAPI_E_NO_SUPPORT 
   
-> Das Statusobjekt unterstützt nicht die Methode für die Überprüfung, wie durch die Abwesenheit des STATUS_VALIDATE_STATE-Flags in der Eigenschaft **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) angegeben.
+> Das Status-Objekt unterstützt die Validierungsmethode nicht, wie durch das Fehlen des STATUS_VALIDATE_STATE-Flags in der **PR_RESOURCE_METHODS** ([pidtagresourcemethods (](pidtagresourcemethods-canonical-property.md))-Eigenschaft angegeben.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Überprüfungsvorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. Dieser Wert wird nur von remote-Transport-Anbietern zurückgegeben. 
+> Der Benutzer hat den Validierungsvorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. Dieser Wert wird nur von Remote Transportanbietern zurückgegeben. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIStatus::ValidateState** -Methode überprüft den Status einer Ressource, die ein Statusobjekt zugeordnet ist. **ValidateState** ist die einzige Methode in der [IMAPIStatus](imapistatusimapiprop.md) -Schnittstelle, die für alle Status erforderlich ist. Das genaue Verhalten dieser Methode hängt von der Implementierung. Die folgende Tabelle beschreibt die Implementierung der verschiedenen Arten von Status-Objekten. 
+Die **IMAPIStatus:: ValidateState** -Methode überprüft den Status einer Ressource, die einem Statusobjekt zugeordnet ist. **ValidateState** ist die einzige Methode in der [IMAPIStatus](imapistatusimapiprop.md) -Schnittstelle, die für alle Status-Objekte erforderlich ist. Das genaue Verhalten dieser Methode hängt von der Implementierung ab. In der folgenden Tabelle wird die Implementierung der einzelnen Arten von Statusobjekten beschrieben. 
   
-|**Statusobjekt**|ValidateState ** Implementierung **|
+|**Status-Objekt**|ValidateState * * Implementierung * *|
 |:-----|:-----|
-|MAPI-Subsystems  <br/> |Überprüft den Status aller Ressourcen, die die derzeit aktive-Dienstanbieter und Teilsystems selbst besitzen.  <br/> |
-|MAPI-Warteschlange  <br/> |Führt eine Anmeldung aller Transport-Anbieter, unabhängig davon, ob sie bereits angemeldet sind.  <br/> |
-|MAPI-Adressbuch  <br/> |Überprüft die Einträge in einem Profilabschnitt.  <br/> |
-|Dienstanbieter  <br/> |Implementierung hängt die Art der Anbieter und die Kennzeichen, die im Parameter _UlFlags_ festgelegt.  <br/> |
+|MAPI-Subsystem  <br/> |Überprüft den Status aller Ressourcen, die die derzeit aktiven Dienstanbieter und das Subsystem selbst besitzen.  <br/> |
+|MAPI-Spooler  <br/> |Führt eine Anmeldung aller Transportanbieter aus, unabhängig davon, ob Sie bereits angemeldet sind.  <br/> |
+|MAPI-Adressbuch  <br/> |Überprüft die Einträge im Profil Abschnitt.  <br/> |
+|Dienstanbieter  <br/> |Die Implementierung hängt vom Anbietertyp und den im _ulFlags_ -Parameter festgelegten Flags ab.  <br/> |
    
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Remote-Clientanwendungen rufen Sie die **ValidateState** -Methode, um remote Verarbeitung für verschiedene Aktionen zu starten. Diese Methode vorhanden ist, in erster Linie um Statusbits der MAPI-Warteschlange, anstatt Kommunikation tatsächlich Arbeit leisten festgelegt. In der Regel wird der Adressbuchhierarchie Flags in der Statuszeile, die an die Warteschlange MAPI angeben, welche Aktionen initiiert werden, um die Anforderung des Clients abzuschließen müssen. 
+Remote Clientanwendungen rufen die **ValidateState** -Methode auf, um die Remoteverarbeitung für verschiedene Aktionen zu starten. Diese Methode besteht hauptsächlich darin, Statusbits für die Kommunikation mit dem MAPI-Spooler festzulegen, statt tatsächlich arbeiten auszuführen. In der Regel legt der Transportanbieter Flags in der Statuszeile fest, die dem MAPI-Spooler zeigen, welche Aktionen initiiert werden müssen, um die Anforderung des Clients abzuschließen. 
 
-In diesem Modell der Interaktion von Client-Transport-Warteschlange sind die Aktionen, die vom Client angeforderten asynchronen, **ValidateState** zurückgibt, bevor die angeforderten Aktionen abgeschlossen sind. Aktionen, die das zugrunde liegende messaging-System nicht unbedingt beinhalten oder bereit, die eine Schnittstelle Transport-spezifischen beinhalten, können jedoch synchrone sein. Die Client-Anwendung übergibt eine Bitmaske der folgenden Werte aus, um anzugeben, welche Aktivitäten der Adressbuchhierarchie remote ausgeführt werden soll. 
+In diesem Modell der Client-Transport-Spooler-Interaktion sind die vom Client angeforderten Aktionen asynchron, da **ValidateState** zurückgegeben wird, bevor die angeforderten Aktionen abgeschlossen sind. Aktionen, die nicht notwendigerweise das zugrunde liegende Messagingsystem oder eine transportspezifische Schnittstelle beinhalten, können jedoch synchron sein. Die Clientanwendung übergibt eine Bitmaske der folgenden Flags, um anzugeben, welche Aktionen vom Remote Transportanbieter ausgeführt werden sollen. 
   
 ABORT_XP_HEADER_OPERATION 
   
-> Wenn möglich, sollte der remote Adressbuchhierarchie Vorgänge abzubrechen, die umfassen Kopfzeilen heruntergeladen. Hierzu muss der Adressbuchhierarchie die folgenden Eigenschaftswerte in der Statuszeile des Anmeldung-Objekts festgelegt:
+> Wenn möglich, sollte der Remote Transportanbieter alle Vorgänge abbrechen, die das Herunterladen von Kopfzeilen beinhalten. Hierzu muss der Transportanbieter die folgenden Eigenschaftswerte in der Statuszeile des LOGON-Objekts festlegen:
     
-   - Deaktivieren Sie die Bits STATUS_INBOUND_ENABLED und STATUS_INBOUND_ACTIVE in der Eigenschaft **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) anzuweisen, die MAPI-Warteschlange den eingehenden flush-Prozess für diesen Transportanbieter anhalten.
+   - Löschen Sie die STATUS_INBOUND_ENABLED-und STATUS_INBOUND_ACTIVE-Bits in der **PR_STATUS_CODE** ([pidtagstatuscode (](pidtagstatuscode-canonical-property.md))-Eigenschaft, um dem MAPI-Spooler mitzuteilen, dass der Prozess für eingehende Flush für diesen Transportanbieter angehalten werden soll.
     
-   - Legen Sie die STATUS_OFFLINE bit in der **PR_STATUS_CODE** -Eigenschaft. 
+   - Legen Sie das STATUS_OFFLINE-Bit in der **PR_STATUS_CODE** -Eigenschaft fest. 
     
-   - Legen Sie die **PR_REMOTE_VALIDATE_OK** ([PidTagRemoteValidateOk](pidtagremotevalidateok-canonical-property.md))-Eigenschaft auf true fest.
+   - Legen Sie die **PR_REMOTE_VALIDATE_OK** ([pidtagremotevalidateok (](pidtagremotevalidateok-canonical-property.md))-Eigenschaft auf true fest.
     
-   - Legen Sie die **PR_STATUS_STRING** ([PidTagStatusString](pidtagstatusstring-canonical-property.md))-Eigenschaft auf eine Zeichenfolge, die der Adressbuchhierarchie Status für den Benutzer angibt.
+   - Legen Sie die **PR_STATUS_STRING** ([pidtagstatusstring (](pidtagstatusstring-canonical-property.md))-Eigenschaft auf eine Zeichenfolge fest, die den Status des Transportanbieters für den Benutzer angibt.
     
-   - Geben Sie S_OK zur�ck. Wenn der Vorgang in Arbeit kann nicht abgebrochen werden, sollte **ValidateState** MAPI_E_BUSY zurückgegeben. 
+   - Geben Sie S_OK zur�ck. Wenn jedoch der laufende Vorgang nicht abgebrochen werden kann, sollte **VALIDATESTATE** MAPI_E_BUSY zurückgeben. 
     
 FORCE_XP_CONNECT 
   
-> Ein remote Transportdienstes richten Sie eine Verbindung mit einer freigegebenen Ressource (z. B. Modem oder COM-Anschluss) außerhalb des Kontexts der MAPI-Warteschlange-Transport-Aktivität beteiligt die [IXPLogon::FlushQueues](ixplogon-flushqueues.md) -Methode sollte niemals. Wenn dieses Flag **ValidateState** aufgerufen wird, sollte der Adressbuchhierarchie Folgendes ausführen: 
+> Ein Remote Transportanbieter sollte niemals eine Verbindung zu einer freigegebenen Ressource (beispielsweise einem Modem oder COM-Anschluss) außerhalb des Kontexts der MAPI-Spooler-Transport Interaktion herstellen, die an der [IXPLogon:: FlushQueues](ixplogon-flushqueues.md) -Methode beteiligt ist. Wenn **ValidateState** mit diesem Flag aufgerufen wird, sollte der Transportanbieter folgende Schritte ausführen: 
     
-   - Legen Sie einen internen Status-Flag, um anzugeben, dass die Verbindung hergestellt werden muss, die **IXPLogon::FlushQueues** -Methode aufgerufen wird. 
+   - Legen Sie ein internes Statuskennzeichen fest, um anzugeben, dass die Remoteverbindung hergestellt werden muss, wenn die **IXPLogon:: FlushQueues** -Methode aufgerufen wird. 
     
-   - Legen Sie die richtigen Werte in der Statustabelle ", die dazu führen, dass die MAPI-Warteschlange, die Warteschlange, die leeren Prozess zu initiieren.
+   - Legen Sie die richtigen Werte in der Statustabelle fest, damit der MAPI-Spooler den Prozess der Warteschlangen Bereinigung initiiert.
     
-   - Wenn das Leeren der Warteschlangen abgeschlossen ist, lassen Sie freigegebene Ressource.
+   - Wenn das Leeren der Warteschlangen abgeschlossen ist, lassen Sie die freigegebene Ressource frei.
     
-   - Deaktivieren Sie das STATUS_OFFLINE bit in der **PR_STATUS_CODE** -Eigenschaft. 
+   - Löschen Sie das STATUS_OFFLINE-Bit in der **PR_STATUS_CODE** -Eigenschaft. 
     
    - Geben Sie S_OK zur�ck.
     
 FORCE_XP_DISCONNECT 
   
-> Der remote Adressbuchhierarchie sollte die Verbindung mit der messaging Systemressourcen freigeben. Nach dem auf diese Weise sollte es das STATUS_OFFLINE Bit in der **PR_STATUS_CODE** -Eigenschaft festgelegt und S_OK zurück. 
+> Der Remote Transportanbieter sollte seine Verbindung mit den Messagingsystem Ressourcen freigeben. Anschließend sollte das STATUS_OFFLINE-Bit in der **PR_STATUS_CODE** -Eigenschaft festgelegt und S_OK zurückgegeben werden. 
     
 PROCESS_XP_HEADER_CACHE 
   
-> Der remote Adressbuchhierarchie sollte remote-Nachrichten zu verarbeiten und Hochladen von Nachrichten, die zurückgestellt wurden. Hierzu muss der Adressbuchhierarchie die folgenden Eigenschaftswerte in der Statuszeile des Anmeldung-Objekts festgelegt:
+> Der Remote Transportanbieter sollte Remotenachrichten verarbeiten und alle verzögerten Nachrichten hochladen. Hierzu muss der Transportanbieter die folgenden Eigenschaftswerte in der Statuszeile des LOGON-Objekts festlegen:
     
-   - Legen Sie die **PR_STATUS_STRING** -Eigenschaft auf eine Zeichenfolge, die der Adressbuchhierarchie Status für den Benutzer angibt. 
+   - Legen Sie die **PR_STATUS_STRING** -Eigenschaft auf eine Zeichenfolge fest, die den Status des Transportanbieters für den Benutzer angibt. 
     
-   - Legen Sie die STATUS_OUTBOUND_ENABLED und STATUS_OUTBOUND_ACTIVE Bits in der **PR_STATUS_CODE** -Eigenschaft. 
+   - Legen Sie die STATUS_OUTBOUND_ENABLED-und STATUS_OUTBOUND_ACTIVE-Bits in der **PR_STATUS_CODE** -Eigenschaft fest. 
     
-   - Legen Sie die **PR_REMOTE_VALIDATE_OK** -Eigenschaft in der Adressbuchhierarchie Statuszeile auf false festgelegt. 
+   - Legen Sie die **PR_REMOTE_VALIDATE_OK** -Eigenschaft in der Statuszeile des Transportanbieters auf false fest. 
     
-   - Wenn ein anderer Vorgang in Arbeit (beispielsweise Kopfzeilen herunterladen) wird **ValidateState** aufgerufen wird, sollte **ValidateState** MAPI_E_BUSY zurückgegeben. 
+   - Wenn ein anderer Vorgang ausgeführt wird (beispielsweise das Herunterladen von Kopfzeilen), wenn **ValidateState** aufgerufen wird, sollte **ValidateState** MAPI_E_BUSY zurückgeben. 
     
-   - Führen Sie den Code für die Verarbeitung der REFRESH_XP_HEADER_CACHE-Flag, um Anforderungen des Microsoft Exchange-Clients zu erfüllen.
+   - Führen Sie den Code für die Verarbeitung des REFRESH_XP_HEADER_CACHE-Flags aus, um die Anforderungen des Microsoft Exchange-Clients zu erfüllen.
     
 REFRESH_XP_HEADER_CACHE 
   
-> Der remote-Transport-Anbieter sollten alle neuen Nachrichtenkopfzeilen von messaging-System abrufen. Zu diesem Zweck muss der Adressbuchhierarchie Folgendes ausführen:
+> Der Remote Transportanbieter sollte neue Nachrichtenkopfzeilen aus dem Messagingsystem abrufen. Hierzu muss der Transportanbieter folgende Schritte ausführen:
     
-   - Legen Sie die **PR_STATUS_STRING** -Eigenschaft auf eine Zeichenfolge, die der Adressbuchhierarchie Status für den Benutzer angibt. 
+   - Legen Sie die **PR_STATUS_STRING** -Eigenschaft auf eine Zeichenfolge fest, die den Status des Transportanbieters für den Benutzer angibt. 
     
-   - Legen Sie die STATUS_INBOUND_ENABLED und STATUS_INBOUND_ACTIVE Bits in der **PR_STATUS_CODE** -Eigenschaft. 
+   - Legen Sie die STATUS_INBOUND_ENABLED-und STATUS_INBOUND_ACTIVE-Bits in der **PR_STATUS_CODE** -Eigenschaft fest. 
     
-   - Deaktivieren Sie das STATUS_OFFLINE bit in der **PR_STATUS_CODE** -Eigenschaft. 
+   - Löschen Sie das STATUS_OFFLINE-Bit in der **PR_STATUS_CODE** -Eigenschaft. 
     
-   - Legen Sie die STATUS_ONLINE bit in der **PR_STATUS_CODE** -Eigenschaft. 
+   - Legen Sie das STATUS_ONLINE-Bit in der **PR_STATUS_CODE** -Eigenschaft fest. 
     
-   - Legen Sie die **PR_REMOTE_VALIDATE_OK** -Eigenschaft in der Adressbuchhierarchie Statuszeile auf false festgelegt. 
+   - Legen Sie die **PR_REMOTE_VALIDATE_OK** -Eigenschaft in der Statuszeile des Transportanbieters auf false fest. 
     
 SHOW_XP_SESSION_UI 
   
-> Verfügt Ihre Adressbuchhierarchie alle Teile der Benutzeroberfläche für die Verarbeitung der Nachrichtenkopfzeilen (beispielsweise ein Dialogfeld, das bestätigt das Herunterladen von Nachrichten), sollte das Dialogfeld angezeigt. Andernfalls können **ValidateState** MAPI_E_NO_SUPPORT zurück. 
+> Wenn Ihr Transportanbieter über Teile der Benutzeroberfläche für die Verarbeitung der Nachrichtenkopfzeilen verfügt (beispielsweise ein Dialogfeld, das das Herunterladen von Nachrichten bestätigt), sollte dieses Dialogfeld angezeigt werden. Andernfalls kann **VALIDATESTATE** MAPI_E_NO_SUPPORT zurückgeben. 
     
-Wenn alle Flags als diese übergeben werden, sollte **ValidateState** MAPI_E_UNKNOWN_FLAGS zurückgegeben. 
+Wenn andere Flags als diese übergeben werden, sollte **VALIDATESTATE** MAPI_E_UNKNOWN_FLAGS zurückgeben. 
   
-Aufruf der Adressbuchhierarchie des Clients werden häufig an die **IMAPIStatus::ValidateState** -Methode. Während der Verarbeitung der **ValidateState**, sollte der Adressbuchhierarchie keine Aktionen ausführen, die anderen Komponenten um knappe Systemressourcen, wie ein Modem oder COM-Port zuweisen. Dies ist, da die MAPI-Warteschlange manchmal zum Leeren der Warteschlangen auf mehreren Adressbuchhierarchie benötigen. Der Client kann jedoch Adressbuchhierarchie **ValidateState** -Methode können Sie jederzeit aufrufen. Wenn Ihre Adressbuchhierarchie versucht, eine wertvolle Ressource während der Verarbeitung der **ValidateState**zugewiesen werden, kann ein Fehler aufgrund eines Konflikts mit einem anderen Adressbuchhierarchie führen, die die MAPI-Warteschlange angewiesen hat, um Warteschlangen zu leeren. Wenn Sie alle anderen Komponenten um knappe Ressourcen Zuweisungen unter die Richtung der die MAPI-Warteschlange erfolgt zulassen, können Sie solche Konflikte vermeiden. Der Transportdienst sollte die **PR_REMOTE_VALIDATE_OK** -Eigenschaft unterstützen, damit Clientanwendungen erkennen können, wenn Ihre Adressbuchhierarchie ausgelastet oder wartet die MAPI-Warteschlange zum Initiieren einer Aktion ist. 
+Der Aufruf des Clients an den Transportanbieter erfolgt häufig über die **IMAPIStatus:: ValidateState** -Methode. Während der Verarbeitung von **ValidateState**sollte der Transportanbieter keine Aktionen ausführen, die knappe Systemressourcen wie ein Modem oder einen COM-Anschluss zuweisen. Der Grund dafür ist, dass der MAPI-Spooler manchmal Warteschlangen für mehrere Transportanbieter leeren muss. Der Client kann jedoch jederzeit die **ValidateState** -Methode eines beliebigen Transportanbieters aufrufen. Wenn Ihr Transportanbieter versucht, eine knappe Ressource während der Verarbeitung von **ValidateState**zu reservieren, kann ein Fehler aufgrund eines Konflikts mit einem anderen Transportanbieter verursacht werden, den der MAPI-Spooler angewiesen hat, seine Warteschlangen zu leeren. Wenn Sie zulassen, dass alle knappen Ressourcenzuordnungen unter der Richtung des MAPI-Spoolers auftreten, können Sie solche Konflikte vermeiden. Der Transportanbieter sollte die **PR_REMOTE_VALIDATE_OK** -Eigenschaft unterstützen, damit Clientanwendungen feststellen können, ob der Transportanbieter ausgelastet ist oder darauf wartet, dass der MAPI-Spooler eine Aktion initiiert. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Da diese Methode anderen potenziell langen Aufrufe erfolgen auftreten kann, können **ValidateState** MAPI_E_BUSY zu informieren, wenn diese Methode auf den Abschluss einer anderen Operation wartet zurück. Warten Sie, bis der ausstehende Vorgang abgeschlossen ist, bevor Sie versuchen, einer anderen Aufgabe. 
+Da diese Methode andere potenziell langwierige Aufrufe auslösen kann, kann **VALIDATESTATE** MAPI_E_BUSY zurückgeben, um Sie darüber zu informieren, dass diese Methode auf den Abschluss eines anderen Vorgangs wartet. Sie sollten warten, bis der ausstehende Vorgang abgeschlossen ist, bevor Sie eine andere Aufgabe ausführen. 
   
-Sie haben die größte Kontrolle über Ihre Anrufe transport-Anbieter Status Objekte. Sie können eine oder mehrere Flags an **ValidateState** , die der Adressbuchhierarchie Vorgänge betreffen übergeben. Das Flag ABORT_XP_HEADER_OPERATION gibt beispielsweise an, dass der Benutzer die Überprüfung abgebrochen. Transportanbieter können entscheiden, um den Vorgang abzubrechen, MAPI_E_USER_CANCELED, zurückgeben oder fortfahren können. 
+Sie haben die größte Kontrolle über Ihre Aufrufe an Transportanbieter Status-Objekte. Sie können ein oder mehrere Flags an **ValidateState** , die sich auf die Vorgänge des Transportanbieters auswirken. Das ABORT_XP_HEADER_OPERATION-Flag gibt beispielsweise an, dass der Benutzer die Validierung abgebrochen hat. Transport Anbieter können entscheiden, ob Sie abgebrochen werden, MAPI_E_USER_CANCELED zurückgeben oder fortfahren können. 
   
-Klicken Sie auf einen Anruf an das Statusobjekt einem Dienstanbieter oder die MAPI-Warteschlange, um anzugeben, dass eine Konfigurationsoption geändert wurde, können Sie die CONFIG_CHANGED-Flag festlegen. CONFIG_CHANGED können Sie dynamisch eine Transportdienst neu konfigurieren. Wenn Sie CONFIG_CHANGED auf einen Anruf an einem Dienstanbieter Status-Objekt festlegen, reagiert der Anbieter mit einem Aufruf von [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) zu warnen, die MAPI-Warteschlange der Änderung. Wenn Sie CONFIG_CHANGED auf einen Anruf an die MAPI-Warteschlange Status-Objekt festlegen, ruft die Warteschlange [IXPLogon::AddressTypes](ixplogon-addresstypes.md) für jeden Anbieter aktiven Transport. **AddressTypes** informiert die MAPI-Warteschlange von unterstützten Adresstypen einen Transport. Einige Dienstanbieter können auch eine Statusanzeige angezeigt, wenn die Überprüfung voraussichtlich dauert sehr lange. Eine Statusanzeige anzeigen ist hilfreich, aber nicht erforderlich. 
+Sie können das CONFIG_CHANGED-Flag für einen Aufruf entweder an das Status-Objekt eines Dienstanbieters oder an den MAPI-Spooler festlegen, um anzugeben, dass eine Konfigurationsoption geändert wurde. Sie können CONFIG_CHANGED verwenden, um einen Transportanbieter dynamisch neu zu konfigurieren. Wenn Sie CONFIG_CHANGED für einen Aufruf des Status Objekts eines Dienstanbieters festlegen, antwortet der Anbieter mit einem Aufruf von [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) , um den MAPI-Spooler der Änderung zu benachrichtigen. Wenn Sie CONFIG_CHANGED für einen Aufruf des Status Objekts des MAPI-Spoolers festlegen, ruft der Spooler [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) für jeden aktiven Transportanbieter auf. **AddressTypes** informiert den MAPI-Spooler über die unterstützten Adresstypen eines Transports. Einige Dienstanbieter zeigen auch eine Statusanzeige an, wenn die Überprüfung sehr lange dauern wird. Das Anzeigen einer Statusanzeige ist hilfreich, aber nicht erforderlich. 
   
-Wenn das Flag SUPPRESS_UI festgelegt ist, können keines der Eigenschaftenseiten Konfiguration oder Fortschritt Dialogfelder angezeigt werden. 
+Wenn das SUPPRESS_UI-Flag festgelegt ist, können keine der Konfigurationseigenschaften Blätter oder Fortschritts Dialogfelder angezeigt werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
 - [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)
 - [IXPLogon::AddressTypes](ixplogon-addresstypes.md)
 - [IXPLogon::FlushQueues](ixplogon-flushqueues.md)
-- [PidTagRemoteValidateOk (kanonische Eigenschaft)](pidtagremotevalidateok-canonical-property.md)
-- [PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
-- [PidTagStatusCode (kanonische Eigenschaft)](pidtagstatuscode-canonical-property.md)
-- [PidTagStatusString (kanonische Eigenschaft)](pidtagstatusstring-canonical-property.md)
+- [Kanonische Pidtagremotevalidateok (-Eigenschaft](pidtagremotevalidateok-canonical-property.md)
+- [Kanonische Pidtagresourcemethods (-Eigenschaft](pidtagresourcemethods-canonical-property.md)
+- [Kanonische Pidtagstatuscode (-Eigenschaft](pidtagstatuscode-canonical-property.md)
+- [Kanonische Pidtagstatusstring (-Eigenschaft](pidtagstatusstring-canonical-property.md)
 - [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

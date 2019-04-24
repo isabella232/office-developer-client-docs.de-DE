@@ -1,5 +1,5 @@
 ---
-title: XGridDensity Cell (Ruler &amp; Grid Section)
+title: Zelle XGridDensity Cell (Ruler &amp; Grid section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: db7b353f-4379-8865-1c35-36b89cf93257
 description: Gibt den Typ des zu verwendenden horizontalen Gitters an.
-ms.openlocfilehash: 107cde8e8b0d630a4dc4b43127412de2f6b0115d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5ebd172e56a66bfb39bd9bfa20967bb6b52c5aa2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328987"
 ---
-# <a name="xgriddensity-cell-ruler-amp-grid-section"></a>XGridDensity Cell (Ruler &amp; Grid Section)
+# <a name="xgriddensity-cell-ruler-amp-grid-section"></a>Zelle XGridDensity Cell (Ruler &amp; Grid section)
 
 Gibt den Typ des zu verwendenden horizontalen Gitters an.
   
@@ -25,19 +25,19 @@ Gibt den Typ des zu verwendenden horizontalen Gitters an.
 |0  <br/> |Fest  <br/> |**visGridFixed** <br/> |
 |2  <br/> |Grob  <br/> |**visGridCoarse** <br/> |
 |4  <br/> |Normal (Standard)  <br/> |**visGridNormal** <br/> |
-|8  <br/> |Fein  <br/> |**visGridFine** <br/> |
+|8  <br/> |Abgestimmter  <br/> |**visGridFine** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Zelle entspricht der horizontalen **Gitterabstand** option in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ). 
+Diese Zelle entspricht der horizontalen **Rasterabstand** Option im Dialogfeld **Lineal &amp; -Raster** (Klicken Sie auf der Registerkarte **Ansicht** auf **** den Pfeil). 
   
-Wenn Sie einen Verweis auf die Zelle XGridDensity aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle XGridDensity aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |XGridDensity  <br/> |
+|Zellenname:  <br/> |Zelle XGridDensity  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle XGridDensity aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle XGridDensity aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

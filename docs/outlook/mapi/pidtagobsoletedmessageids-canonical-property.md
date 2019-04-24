@@ -1,5 +1,5 @@
 ---
-title: PidTagObsoletedMessageIds (kanonische Eigenschaft)
+title: Kanonische Pidtagobsoletedmessageids (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bc979398-f1ad-4496-b982-428b95719369
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1717e30679fb3f6721690db75fb5dd402048eb09
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1f00a57798b03edb368fb0dc59fead7a2e9f5c8f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329246"
 ---
-# <a name="pidtagobsoletedmessageids-canonical-property"></a>PidTagObsoletedMessageIds (kanonische Eigenschaft)
+# <a name="pidtagobsoletedmessageids-canonical-property"></a>Kanonische Pidtagobsoletedmessageids (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Bezeichner der Nachrichten, die diese Meldung hat Vorrang vor.
+Enthält die Bezeichner von Nachrichten, die von dieser Nachricht abgelöst werden.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält den Bezeichner der Nachrichten, die diese Meldung hat Vorrang vor.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die in dieser Eigenschaft enthaltenen Bezeichner sind standard Search-Schlüssel mit dem Format der **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft.
+Die in dieser Eigenschaft enthaltenen Bezeichner sind Standardsuch Schlüssel, die das Format der **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft verwenden.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

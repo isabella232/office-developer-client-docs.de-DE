@@ -8,27 +8,27 @@ f1_keywords:
 - Vis_DSS.chm82251509
 localization_priority: Normal
 ms.assetid: ef94ee0f-dbb8-a2e1-1805-8a6609830d2a
-description: Gibt eine Zeichenfolge in Großbuchstaben konvertiert.
-ms.openlocfilehash: df8250ef634b04cb19cbb4e120bd02eb77531a82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine in Großbuchstaben konvertierte Zeichenfolge zurück.
+ms.openlocfilehash: b88958526bfb5e08839077217759f7ffb50151b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327328"
 ---
 # <a name="upper-function"></a>UPPER Function
 
-Gibt eine Zeichenfolge in Großbuchstaben konvertiert.
+Gibt eine in Großbuchstaben konvertierte Zeichenfolge zurück.
   
 ## <a name="syntax"></a>Syntax
 
-OBERE (** *Ausdruck* **) 
+UPPER (* * *Expression* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Varies** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Großbuchstaben konvertiert wird.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Großbuchstaben konvertiert wird.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

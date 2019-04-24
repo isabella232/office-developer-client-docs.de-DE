@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 510b2e21-ba27-47dd-87cb-2a549e31fa28
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 502bc24ece37c91e2cac23cf8486df96d5a71377
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2e44d824bbb5cc96c51d7ca91eb639001bc52a71
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328874"
 ---
 # <a name="imapitablequeryposition"></a>IMAPITable::QueryPosition
 
@@ -25,7 +25,7 @@ ms.locfileid: "22584338"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die aktuelle Tabelle Zeilenposition des Cursors, basierend auf einem Bruch Wert.
+Ruft die aktuelle Tabellenzeilen Position des Cursors basierend auf einem Dezimalwert ab.
   
 ```cpp
 HRESULT QueryPosition(
@@ -39,39 +39,39 @@ ULONG FAR * lpulDenominator
 
  _lpulRow_
   
-> [out] Zeiger auf die Anzahl der aktuellen Zeile. Die Zeilennummer ist nullbasiert. die erste Zeile in der Tabelle ist 0 (null). 
+> Out Zeiger auf die Nummer der aktuellen Zeile. Die Zeilennummer ist nullbasiert; die erste Zeile in der Tabelle ist NULL. 
     
  _lpulNumerator_
   
-> [out] Zeiger auf die Zähler für den Bruch, die die Position der Tabelle identifiziert.
+> Out Zeiger auf den Zähler für den Bruch, der die Tabellenposition angibt.
     
  _lpulDenominator_
   
-> [out] Zeiger auf die als Nenner für den Bruch, die die Position der Tabelle identifiziert. Der Parameter _LpulDenominator_ darf nicht NULL sein. 
+> Out Zeiger auf den Nenner für den Bruch, der die Tabellenposition angibt. Der Parameter _lpulDenominator_ darf nicht NULL sein. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Methode, die gültige Werte in _LpulRow_, _LpulNumerator_und _LpulDenominator_zurückgegeben.
+> Die Methode hat gültige Werte in _lpulRow_, _lpulNumerator_und _lpulDenominator_zurückgegeben.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPITable::QueryPosition** -Methode die aktuelle Zeilenposition bestimmt und sowohl die Anzahl der aktuellen Zeile und eine anteilige Wert, der angibt, der der relativen Position am Ende der Tabelle zurückgegeben. MAPI definiert die aktuelle Zeile als die nächste Zeile gelesen werden sollen. 
+Die **IMAPITable:: QueryPosition** -Methode bestimmt die aktuelle Zeilenposition und gibt sowohl die Nummer der aktuellen Zeile als auch einen Bruch Wert zurück, der die relative Position am Ende der Tabelle angibt. MAPI definiert die aktuelle Zeile als die nächste Zeile, die gelesen werden soll. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Sie müssen nicht die genaue Anzahl der Zeilen in der Tabelle für den Parameter _LpulDenominator_ zurückgegeben. Es kann eine Annäherung sein. 
+Sie müssen nicht die genaue Anzahl der Zeilen in der Tabelle für den _lpulDenominator_ -Parameter zurückgeben. Es kann eine Näherung sein. 
   
-Wenn Sie die aktuelle Zeile nicht ermitteln können, einen Wert 0xFFFFFFFF in _LpulRow_zurück.
+Wenn die aktuelle Zeile nicht bestimmt werden kann, geben Sie den Wert 0xFFFFFFFF in _lpulRow_zurück.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-**QueryPosition** können Sie um das Bildlauffeld in einer Bildlaufleiste zu positionieren. Beispielsweise in einer Tabelle mit 100 Zeilen **QueryPosition** in den _LpulNumerator_ -Parameter im Parameter _LpulDenominator_ 100 und 75 in den _LpulRow_ -Parameter einen Wert von 75 zurück können Sie die Scroll Feld 3/4 der positionieren die Möglichkeit, über die Bildlaufleiste. 
+Sie können **QueryPosition** verwenden, um ein Bildlauffeld in einer Bildlaufleiste zu positionieren. Wenn **QueryPosition** beispielsweise in einer tabelle mit 100 Zeilen einen wert von 75 im _lpulNumerator_ -Parameter, 100 im _lpulDenominator_ -Parameter und 75 im _lpulRow_ -Parameter zurückgibt, können Sie das Bildlauffeld 3/4 von die quer über die Bildlaufleiste. 
   
-Verlassen Sie sich nicht auf dem Wert im _LpulDenominator_ wird die Anzahl der Zeilen in der Tabelle. **QueryPosition** kann nicht immer die genaue Zeile identifizieren, der auf dem sich der Cursor befindet. 
+Verlassen Sie sich nicht auf den Wert in _lpulDenominator_ , der die Anzahl der Zeilen in der Tabelle ist. **QueryPosition** kann nicht immer die genaue Zeile identifizieren, auf der sich der Cursor befindet. 
   
-Ein Aufruf von **QueryPosition** möglicherweise große Mengen von Arbeitsspeicher, besonders für große kategorisierten Tabellen umfassen. Wenn der Parameter _LpulRow_ auf 0xFFFFFFFF festgelegt ist, wurde zu viel Speicher für **QueryPosition** zum Bestimmen der aktuellen Zeile erforderlich. Rufen Sie die [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md) -Methode, um die position der Tabelle auf die Zeile, die durch die Parameter _LpulNumerator_ und _LpulDenominator_ identifiziert. Jedoch immer erwarten Sie keine **SeekRowApprox** , wie die aktuelle Position die gleiche Zeile herzustellen, die Wenn Speicher keinen Faktor hätte **QueryPosition** hätten. 
+Ein Aufruf von **QueryPosition** kann große Mengen an Arbeitsspeicher erfordern, insbesondere für große kategorisierte Tabellen. Wenn der _lpulRow_ -Parameter auf 0xFFFFFFFF festgelegt ist, wurde zu viel Arbeitsspeicher benötigt, damit **QueryPosition** die aktuelle Zeile ermitteln kann. Rufen Sie die [IMAPITable:: SeekRowApprox](imapitable-seekrowapprox.md) -Methode auf, um die Tabelle in der durch die Parameter _lpulNumerator_ und _lpulDenominator_ angegebenen Zeile zu positionieren. Erwarten Sie jedoch nicht immer, dass **SeekRowApprox** als aktuelle Position die gleiche Zeile **QueryPosition** hätte, wenn der Arbeitsspeicher kein Faktor gewesen wäre. 
   
 ## <a name="see-also"></a>Siehe auch
 

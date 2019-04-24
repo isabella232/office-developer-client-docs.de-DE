@@ -7,26 +7,26 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2635a829-0f3a-49ed-a672-2f350a2cf979
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f073dbb9655585ee56ab38be35bea4ef320042c0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f308c1f6f3cd2c9904dd94cd6761517bd5b410b6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328021"
 ---
 # <a name="ftadcft"></a>FtAdcFt
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt einer 64-Bit-Ganzzahl ohne Vorzeichen in eine andere, optional mit einem Flag ausführen.
+Fügt eine unsignierte 64-Bit-Ganzzahl zu einem anderen hinzu, optional mit einem Carry-Flag.
   
 |||
 |:-----|:-----|
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtAdcFt( 
@@ -40,23 +40,23 @@ FILETIME FtAdcFt(
 
  _FT1_
   
-> [in] Ein [FILETIME](filetime.md) -Struktur, die enthält die erste 64-Bit-Ganzzahl hinzugefügt werden soll. 
+> in Eine [FILETIME](filetime.md) -Struktur, die die erste nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll. 
     
  _ft2_
   
-> [in] Ein FILETIME-Struktur, die enthält die zweite 64-Bit-Ganzzahl hinzugefügt werden soll.
+> in Eine fileTIME-Struktur, die die zweite nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll.
     
  _pwCarry_
   
-> [eingehend, ausgehend, optional] Führen bei der Eingabe ein Zeiger auf die eingehenden Kennzeichnung. Bei der Ausgabe einen Zeiger auf das Ergebnis sind für das Hinzufügen. Dieser Parameter kann NULL sein, wenn das Ergebnis sind nicht erforderlich ist.
+> [in, out, optional] Bei Eingabe ein Zeiger auf die eingehende Carry-Kennzeichnung. Bei Ausgabe ein Zeiger auf das Carry-Ergebnis für den Zusatz. Dieser Parameter kann NULL sein, wenn das Carry-Ergebnis nicht erforderlich ist.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Die **FtAdcFt** -Funktion gibt eine **FILETIME** -Struktur, die die Summe der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. Wenn **PwCarry** ungleich NULL ist, werden für die Summe das Ergebnis ausführen enthält 0 oder 1. 
+Die **FtAdcFt** -Funktion gibt **** eine FILETIME-Struktur zurück, die die Summe der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. Wenn **pwCarry** ungleich NULL ist, enthält es das Carry-Ergebnis für die Summe, entweder 0 oder 1. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **FtAdcFt** -Funktion ist identisch mit **FtAddFt** , wenn _PwCarry_ NULL ist. Wenn _PwCarry_ nicht NULL ist, und zeigt auf 0, **FtAdcFt** gibt den gleichen **FILETIME** -Wert, den **FtAddFt** zurückgibt. 
+Die **FtAdcFt** -Funktion ist identisch mit **FtAddFt** , wenn _pwCarry_ NULL ist. Wenn _pwCarry_ nicht NULL ist und auf 0 zeigt, gibt **FtAdcFt** den gleichen **FILETIME** -Wert zurück, der **FtAddFt** zurückgibt. 
   
 ## <a name="see-also"></a>Siehe auch
 

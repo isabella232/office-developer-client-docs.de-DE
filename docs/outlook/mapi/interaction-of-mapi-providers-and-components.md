@@ -1,5 +1,5 @@
 ---
-title: Interaktion von MAPI-Anbietern und Komponenten
+title: Interaktion von MAPI-Anbietern und-Komponenten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,39 +8,39 @@ api_type:
 - COM
 ms.assetid: 2c0e010b-0432-4ef7-a243-3a4b46f0a19d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c81da7673d6c0c59de6992bc46362069daf71b42
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b88eafcc1ca6be98c5c1e9418072a5cb35f43345
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332172"
 ---
-# <a name="interaction-of-mapi-providers-and-components"></a>Interaktion von MAPI-Anbietern und Komponenten
+# <a name="interaction-of-mapi-providers-and-components"></a>Interaktion von MAPI-Anbietern und-Komponenten
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Dienstanbieter jeglicher Art müssen bestimmte Richtlinien andere MAPI-Komponenten entwickelt. Jeder Dienstanbieter muss:
+MAPI-Dienstanbieter jeglicher Art müssen bestimmte Richtlinien befolgen, um mit anderen MAPI-Komponenten zu arbeiten. Jeder Dienstanbieter muss:
   
-- Verwenden Sie die entsprechenden Objekte Anbieter und die Anmeldeinformationen für die Initialisierung.
+- Verwenden Sie die richtigen Anbieter-und Anmeldeobjekte für die Initialisierung.
     
-- Zurückgeben einer Tabelle Versendung der Anbieter Einstiegspunkte an die messaging-System bei der Initialisierung.
+- Zurückgeben einer Dispatch-Tabelle mit Anbieter Einstiegspunkten nach der Initialisierung an das Messagingsystem.
     
-- Registrieren Sie eine MAPI-Status Tabellenzeile für jede Ressource, die vom Anbieter gehören, und rufen Sie die [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode zum entsprechenden Zeitpunkt. 
+- Registrieren Sie eine MAPI-Statustabellen Zeile für jede Ressource, die im Besitz des Anbieters ist, und rufen Sie die [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode zu geeigneten Zeiten auf. 
     
-- Verwenden Sie die [IMAPISupport::NewUID](imapisupport-newuid.md) -Methode, um gültige eindeutige Bezeichner (UIDs) abzurufen. 
+- Verwenden Sie die [IMAPISupport:: NewUID](imapisupport-newuid.md) -Methode, um gültige eindeutige IDs zu erhalten. 
     
-- Unterstützt die gemeinsamen MAPI-Schnittstellen für Objekte zurück.
+- Unterstützen der allgemeinen MAPI-Schnittstellen für Objekte, die zurückgegeben werden.
     
-- Verwenden Sie die MAPI-Speicherverwaltungsfunktionen Speicher Clientanwendungen zurückgegeben und durch andere Teile des MAPI-Subsystems Arbeitsspeicher freizugeben.
+- Verwenden Sie die MAPI-Speicher Zuweisungsfunktionen, um an Clientanwendungen zurückgegebener Speicher zuzuweisen und den von anderen Teilen des MAPI-Subsystems reservierten Arbeitsspeicher freizugeben.
     
-- Verwalten eines Abschnitts Profil; bei Bedarf zum Speichern von Anmeldeinformationen für den zugrunde liegenden messaging-System.
+- Führen Sie bei Bedarf einen Profil Abschnitt aus, um die Anmeldeinformationen für das zugrunde liegende Messagingsystem zu speichern.
     
-- Verwenden Sie die [IMAPISupport::RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode, um eine beliebige Nachricht vorverarbeitung Funktionen registrieren. 
+- Verwenden Sie die [IMAPISupport:: RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode, um alle Funktionen der Nachrichten Vorverarbeitung zu registrieren. 
     
-- Einfügen der richtigen Headerdateien (einschließlich mapispi.h), die definieren, häufige Konstanten, Strukturen, Schnittstellen und Rückgabewerte.
+- Schließen Sie die richtigen Headerdateien (einschließlich mapispi. h) ein, die allgemeine Konstanten, Strukturen, Schnittstellen und Rückgabewerte definieren.
     
-- Führen Sie die Adresse Format Konventionen für allgemeine Adresstypen.
+- BeFolgen Sie die Adressformat Konventionen für allgemeine Adresstypen.
     
 

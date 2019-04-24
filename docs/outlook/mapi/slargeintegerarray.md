@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ec9a674-c1a2-4137-856f-6cabe6f0eb9f
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: ab82fff2645a5e1861523eb3f1866e0ddc7d13a5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331388"
 ---
 # <a name="slargeintegerarray"></a>SLargeIntegerArray
 
@@ -25,11 +25,11 @@ ms.locfileid: "25382729"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [LARGE_INTEGER](https://go.microsoft.com/fwlink/?LinkId=132130) -Strukturen, die verwendet werden, um eine Eigenschaft vom Typ PT_MV_I8 beschrieben. 
+Enthält ein Array von [LARGE_INTEGER](https://go.microsoft.com/fwlink/?LinkId=132130) -Strukturen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_I8 verwendet werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei:  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SLargeIntegerArray
@@ -44,15 +44,15 @@ typedef struct _SLargeIntegerArray
 
  **cValues**
   
-> Anzahl der Werte im Array auf den Member **Lpli** zeigt. 
+> Die Anzahl der Werte im Array, auf die durch das **lpli** -Element verwiesen wird. 
     
  **lpli**
   
-> Zeiger auf ein Array von **LARGE_INTEGER** Strukturen, indem Sie die Werte für ganze Zahl. 
+> Zeiger auf ein Array von **LARGE_INTEGER** -Strukturen, die die ganzzahligen Werte aufweisen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zu PT_MV_18 finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
+Weitere Informationen zu PT_MV_18 finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

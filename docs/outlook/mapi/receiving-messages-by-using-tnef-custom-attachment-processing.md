@@ -8,33 +8,33 @@ api_type:
 - COM
 ms.assetid: bb5082fa-8fe3-46fe-b2de-b6dd1af79ea7
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 67c202e5130bd35e1277c5260bc1702043eadd95
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 046b537d41b318fa857ef77f1906edcf2c3aa2bf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328427"
 ---
 # <a name="receiving-messages-by-using-tnef-custom-attachment-processing"></a>Empfangen von Nachrichten mit der benutzerdefinierten TNEF-Anlagenverarbeitung
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um eine TNEF-Nachricht mit Anlage benutzerdefinierte Verarbeitung zu erhalten:
+So erhalten Sie eine TNEF-Nachricht mit angepasster Anlagenverarbeitung:
   
-1. Importieren Sie alle Übertragungseinehit Eigenschaften – die, die das messaging-System unterstützt – aus der eingehenden Nachricht in eine neue MAPI-Nachricht. Dies umfasst den Nachrichtentext an, der den TNEF-Datenstrom enthält.
+1. Importieren Sie alle transmitable-Eigenschaften, die vom Messagingsystem unterstützt werden, von der eingehenden Nachricht in eine neue MAPI-Nachricht. Hierzu gehört der Nachrichtentext, der den TNEF-Datenstrom enthält.
     
-2. Identifizieren Sie und Decodieren Sie spezielle Anlage, die den TNEF-Stream enthält.
+2. Identifizieren und Decodieren Sie die spezielle Anlage, die den TNEF-Datenstrom enthält.
     
-3. Extrahieren Sie alle Anlagen aus der eingehenden Nachricht in MAPI-Anlagen für die neue MAPI-Nachricht. Die wiederhergestellten Dateinamen oder andere identifizierende Marker auf die Anlagen platziert werden soll in die **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md))-Eigenschaft der neuen Anlagen also, die die [ITnef::ExtractProps](itnef-extractprops.md) -Methode die Anlage-Tags in den Nachrichtentext codiert können später die richtige Anlage zugeordnet werden. 
+3. Extrahieren Sie alle Anlagen aus der eingehenden Nachricht in MAPI-Anlagen in der neuen MAPI-Nachricht. Die wiederhergestellten Dateinamen oder anderen identifizierenden Marker für die Anlagen sollten in der **PR_ATTACH_TRANSPORT_NAME** ([pidtagattachtransportname (](pidtagattachtransportname-canonical-property.md))-Eigenschaft der neuen Anlagen platziert werden, damit die [ITnef:: ExtractProps](itnef-extractprops.md) -Methode die richtige Anlage kann später mit den im Nachrichtentext codierten Anlagen Tags verknüpft werden. 
     
-4. Erstellen Sie eine OLE- **IStream** -Schnittstelle zum Umschließen des decodierten TNEF-Streams und verwenden Sie dieses Objekt zusammen mit der neuen MAPI-Nachricht in einem Aufruf der Funktion [OpenTnefStreamEx](opentnefstreamex.md) . 
+4. Erstellen Sie eine OLE **IStream** -Schnittstelle, um den deCODIERTen TNEF-Stream zu umbrechen, und verwenden Sie dieses Objekt zusammen mit der neuen MAPI-Nachricht in einem Aufruf der [OpenTnefStreamEx](opentnefstreamex.md) -Funktion. 
     
-5. Rufen Sie die **ITnef::ExtractProps** -Methode, um die Nontransmittable-Eigenschaften auf die Nachricht aus der TNEF-Datenstrom wiederherstellen. 
+5. Rufen Sie die **ITnef:: ExtractProps** -Methode auf, um die nicht übertragbaren Eigenschaften für die Nachricht aus dem TNEF-Datenstrom wiederherzustellen. 
     
-6. Rufen Sie die [ITnef::OpenTaggedBody](itnef-opentaggedbody.md) -Methode mit dem MAPI_CREATE ist und MAPI_MODIFY Flags. Dieses Anrufs die Anlage-Tags aus dem Nachrichtentext entfernt und in der Anlage Positionsinformationen in der MAPI-Nachricht konvertiert. 
+6. Rufen Sie die [ITnef:: OpenTaggedBody](itnef-opentaggedbody.md) -Methode auf, wobei die Flags MAPI_CREATE und MAPI_MODIFY festgelegt sind. Dieser Aufruf entfernt die Anlagen Tags aus dem Nachrichtentext und wandelt sie in die Informationen zur Anlagen Position in der MAPI-Nachricht um. 
     
-7. Die Nachricht über die MAPI-Warteschlange zu übermitteln.
+7. Übermitteln Sie die Nachricht über den MAPI-Spooler.
     
 

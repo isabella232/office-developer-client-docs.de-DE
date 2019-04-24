@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17cb53c4-7154-4a4e-b4ec-de720fa055cb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: adccbaf65adec2c517c4890f722198e8262092cb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7726811467324242037ec11a69ae0b1b123d7f21
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328070"
 ---
 # <a name="fpropcompareprop"></a>FPropCompareProp
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eigenschaftswerte, die mit einem angegebenen relationalen Operator. 
+Vergleicht zwei Eigenschaftswerte mit einem angegebenen relationalen Operator. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FPropCompareProp(
@@ -43,30 +43,30 @@ BOOL FPropCompareProp(
 
 _lpSPropValue1_
   
-> [in] Zeiger auf eine [SPropValue](spropvalue.md) -Struktur für den Vergleich den ersten Eigenschaftswert definieren. 
+> in Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die den ersten Eigenschaftswert für den Vergleich definiert. 
     
 _ulRelOp_
   
-> [in] Der relationale Operator, im Vergleich zu verwenden. Zulässige Werte finden Sie unter der Struktur [SComparePropsRestriction](scomparepropsrestriction.md) . 
+> in Der relationale Operator, der im Vergleich verwendet werden soll. Informationen zu zulässigen Werten finden Sie in der [SComparePropsRestriction](scomparepropsrestriction.md) -Struktur. 
     
 _lpSPropValue2_
   
-> [in] Zeiger auf eine **SPropValue** -Struktur für den Vergleich den zweiten Eigenschaftswert definieren. 
+> in Zeiger auf eine **SPropValue** -Struktur, die den zweiten Eigenschaftswert für den Vergleich definiert. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Die Eigenschaftswerte erfüllen die angegebene Relation-Objekt. 
+> Die Eigenschaftswerte erfüllen die angegebene Beziehung. 
     
 FALSE 
   
-> Die Eigenschaftswerte werden nicht die angegebene Relation-Objekt erfüllen.
+> Die Eigenschaftswerte erfüllen nicht die angegebene Beziehung.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Vergleichsmethode hängt die Eigenschaftentypen in die Definitionen der [SPropValue](spropvalue.md) -Eigenschaft angegeben. Die Funktionen **FPropCompareProp** und [FPropContainsProp](fpropcontainsprop.md) können verwendet werden, um Einschränkungen zum Generieren einer Tabelle vorzubereiten. 
+Die Vergleichsmethode hängt von den Eigenschaftentypen ab, die in den [SPropValue](spropvalue.md) -Eigenschaftsdefinitionen angegeben sind. Die **FPropCompareProp** -und [FPropContainsProp](fpropcontainsprop.md) -Funktionen können verwendet werden, um Einschränkungen für das Generieren einer Tabelle vorzubereiten. 
   
-Die Reihenfolge des Vergleichs ist _lpSPropValue1_, _ UlRelOp _, _ lpSPropValue2 _. Die **FPropCompareProp** -Funktion gibt FALSE zurück, wenn die Eigenschaftentypen der Eigenschaftswerte, die verglichen werden nicht übereinstimmen. 
+Die Reihenfolge des Vergleichs ist _lpSPropValue1_, _ ulRelOp _, _ lpSPropValue2 _. Wenn die Eigenschaftentypen der zu vergleichenden Eigenschaftswerte nicht übereinstimmen, gibt die **FPropCompareProp** -Funktion false zurück. 
   
 

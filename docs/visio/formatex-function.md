@@ -8,34 +8,34 @@ f1_keywords:
 - Vis_DSS.chm82251590
 localization_priority: Normal
 ms.assetid: d375c971-fee2-baa3-dc4f-a26018e70e8a
-description: Gibt das Ergebnis von Expression in SrcUnit als Zeichenfolge ausgewertet formatiert entsprechend Format wurde.
-ms.openlocfilehash: 08d123967272e0ab4e25990bcfab55cc80cef55d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt das Ergebnis des in srcUnit ausgewerteten Ausdrucks als eine Zeichenfolge zurück, die gemäß dem in dstUnit-Format formatiert ist.
+ms.openlocfilehash: e341cbcb16cc273f0413f98c195f77ad08946ab1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328630"
 ---
 # <a name="formatex-function"></a>FORMATEX Function
 
-Gibt das Ergebnis von Expression in SrcUnit als Zeichenfolge ausgewertet formatiert entsprechend Format wurde.
+Gibt das Ergebnis des in srcUnit ausgewerteten Ausdrucks als eine Zeichenfolge zurück, die gemäß dem in dstUnit-Format formatiert ist.
   
 ## <a name="syntax"></a>Syntax
 
-FORMATEX (** *Ausdruck* **, "** *Format* **", [** *SrcUnit* **], [** *DstUnit* **], [** *LangID* **] [, ** *CalID* **]) 
+FORMATEX (* * *Expression* * *, "* * *Format* * *", [* * *srcUnit* * *], [* * *dstUnit* * *]; [* * ** * * ** 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine Kombination aus Konstanten, Operatoren, Funktionen und Bezügen auf ShapeSheet-Zellen, die einen Wert ergeben.  <br/> |
-| _format_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Formatierungsangabe zum Formatieren der Zeichenfolge verwendet. Weitere Informationen zu Formatierungsangaben finden Sie unter [Informationen zu Formatierungsangaben](about-format-pictures.md).  <br/> |
+| _format_ <br/> |Erforderlich  <br/> |**String** <br/> |Das zum Formatieren der Zeichenfolge verwendete Format Bild. Weitere Informationen zum Formatieren von Bildern finden Sie unter Informationen [zum Formatieren von Bildern](about-format-pictures.md).  <br/> |
 | _srcUnit_ <br/> |Optional  <br/> |**String** <br/> | Einheiten zum Auswerten von expression (in, cm usw.).  <br/> |
 | _dstUnit_ <br/> |Optional  <br/> |**String** <br/> |Einheiten, die für das Ergebnis von expression verwendet werden sollen (in, cm usw.).  <br/> |
-| _langID_ <br/> |Optional  <br/> |**Nummer** <br/> |Die Sprache, die beim Formatieren von Datums-/Zeitangaben in Microsoft Office System verwendet wird.  <br/> |
-| _calID_ <br/> |Optional  <br/> |**Nummer** <br/> |Der Kalender, der beim Formatieren von Datums-/Zeitangaben in Microsoft Office System verwendet wird.  <br/> |
+| _langID_ <br/> |Optional  <br/> |**Number** <br/> |Die Sprache, die beim Formatieren von Datums-/Zeitangaben in Microsoft Office System verwendet wird.  <br/> |
+| _calID_ <br/> |Optional  <br/> |**Number** <br/> |Der Kalender, der beim Formatieren von Datums-/Zeitangaben in Microsoft Office System verwendet wird.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   

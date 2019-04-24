@@ -9,16 +9,16 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d63fe874-1027-3436-dbc1-73e722bce22e
 description: Bestimmt, ob die Seite vergrößert werden soll, um die Zeichnung mit einzuschließen, nachdem Shapes mithilfe des Dialogfelds Layout konfigurieren ausgerichtet wurden (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie dann auf Weitere Layoutoptionen).
-ms.openlocfilehash: fab37ee4561ba82ea1f314ad595e513253478b30
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8d0001ce35808f8c5f11068ed78865ce992af5cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326824"
 ---
-# <a name="resizepage-cell-page-layout-section"></a>ResizePage Cell (Page Layout Section)
+# <a name="resizepage-cell-page-layout-section"></a>Zelle "ResizePage" (Abschnitt "Page Layout")
 
-Bestimmt, ob die Seite, um die Zeichnung, nachdem das Layout von Shapes mithilfe des Dialogfelds **Layout konfigurieren** einzuschließen, vergrößert (auf der Registerkarte **Entwurf** in der Gruppe **Layout** klicken Sie auf der Seite **Re-Layout** , und klicken Sie dann auf **mehr Layout Optionen**).
+Bestimmt, ob die Seite vergrößert werden soll, um die Zeichnung einzuschließen, nachdem Shapes mithilfe des Dialogfelds **Layout konfigurieren** (Klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf Seite **neu Layout** ), und klicken Sie dann auf **weiteres Layout Optionen**).
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
@@ -27,13 +27,13 @@ Bestimmt, ob die Seite, um die Zeichnung, nachdem das Layout von Shapes mithilfe
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle ResizePage aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ResizePage aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ResizePage  <br/> |
+| Zellenname:  <br/> | Zelle ResizePage  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ResizePage aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ResizePage aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

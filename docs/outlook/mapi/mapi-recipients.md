@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 88a4360d-6ab8-466e-8ebd-af80227ee00a
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6af54b773b875531437a275f14c961a06ef799ff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ebdaf47b4f20763574ffac73bddeb3eb4eeb95df
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328217"
 ---
 # <a name="mapi-recipients"></a>MAPI-Empf�nger
 
@@ -25,19 +25,19 @@ Every message to be transmitted has one or more recipients, or a set of properti
   
 Clients greifen �ber seine Empf�nger Tabelle Empf�nger einer Nachricht auf. Jede Nachricht weist eine Empf�nger Tabelle, die zusammenfassende Informationen zu den einzelnen Empf�nger enth�lt. Die Spalten in der Tabelle enthalten, abh�ngig von den Status der Nachricht. Wenn eine Nachricht verfasst, m�glicherweise die Empf�nger nur die drei Spalten in der Tabelle:
   
-- Der Anzeigename oder die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+- Anzeigename oder **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- Empfängertyp oder **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
+- Empfängertyp oder **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md))
     
-- Zeilen-ID oder **PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md))
+- Zeilenbezeichner oder **PR_ROWID** ([pidtagrowid (](pidtagrowid-canonical-property.md))
     
-Wenn die Nachricht Vorgang der Lösung unterzogen wurde, werden jeden Empfänger auch eine Eintrags-ID oder ein Spaltenfeld **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) haben. Und wenn die Nachricht gesendet wurde, werden die Zeilen in der Tabelle Empf�nger von zwei weitere Spalten hinzugef�gt:
+Nachdem die Nachricht den Prozess der Namensauflösung durchlaufen hat, verfügt jeder Empfänger auch über eine Eintrags-ID oder **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Spalte. Und wenn die Nachricht gesendet wurde, werden die Zeilen in der Tabelle Empf�nger von zwei weitere Spalten hinzugef�gt:
   
-- Adresstyp oder **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+- Adresstyp oder **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
     
-- Transport Verantwortung oder **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
+- Transport Verantwortlichkeit oder **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))
     
-Clients can retrieve a message's recipient table by calling its **IMessage::GetRecipientTable** method or its **IMAPIProp::OpenProperty** method. For more information, see [IMessage::GetRecipientTable](imessage-getrecipienttable.md) and [IMAPIProp::OpenProperty](imapiprop-openproperty.md). Message store providers are expected to support both of these approaches. The **OpenProperty** approach requires that the client specify IID_IMAPITable as the interface identifier and **PR_MESSAGE_RECIPIENTS** as the property tag. **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) ist ein Table-Objekt-Eigenschaft, die Empfänger einer Nachricht-Tabelle darstellt. Message store providers are required to set **PR_MESSAGE_RECIPIENTS** for each message and include it in the array of property tags returned from the **IMAPIProp::GetPropList** method. For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
+Clients can retrieve a message's recipient table by calling its **IMessage::GetRecipientTable** method or its **IMAPIProp::OpenProperty** method. For more information, see [IMessage::GetRecipientTable](imessage-getrecipienttable.md) and [IMAPIProp::OpenProperty](imapiprop-openproperty.md). Message store providers are expected to support both of these approaches. The **OpenProperty** approach requires that the client specify IID_IMAPITable as the interface identifier and **PR_MESSAGE_RECIPIENTS** as the property tag. **PR_MESSAGE_RECIPIENTS** ([Pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md)) ist eine Table-Objekteigenschaft, die die Empfängertabelle einer Nachricht darstellt. Message store providers are required to set **PR_MESSAGE_RECIPIENTS** for each message and include it in the array of property tags returned from the **IMAPIProp::GetPropList** method. For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
   
 For more information about how to work with a recipient table, see [Empf�nger Tabellen](recipient-tables.md).
   

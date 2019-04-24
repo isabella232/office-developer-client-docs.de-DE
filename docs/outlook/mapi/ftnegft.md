@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 639a408c-aed1-456b-9f75-9d6fb8dcb33b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 37dc92a40043657cb791359d543ef52c77dbd8ce
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: db208dad8697060e394b3ee037ea658cefbab669
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327972"
 ---
 # <a name="ftnegft"></a>FtNegFt
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die beiden Komplement eine 64-Bit-Ganzzahl ohne Vorzeichen. 
+Berechnet die beiden Komplemente einer unsignierten 64-Bit-Ganzzahl. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtNegFt(
@@ -43,10 +43,10 @@ FILETIME FtNegFt(
 
  _FT_
   
-> [in] Ein [FILETIME](filetime.md) -Struktur, die 64-Bit-Ganzzahl ohne Vorzeichen für die die beiden Ergänzung berechnet enthält. 
+> in Eine [FILETIME](filetime.md) -Struktur mit der unsignierten 64-Bit-Ganzzahl, für die die Komplemente der beiden berechnet werden sollen. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Die **FtNegFt** -Funktion gibt eine **FILETIME** -Struktur, die die beiden Ergänzung der ganzen Zahl enthält. Der Eingabeparameter bleibt unverändert. 
+Die **FtNegFt** -Funktion gibt **** eine FILETIME-Struktur zurück, die die Komplemente der ganzen Zahl enthält. Der Eingabeparameter bleibt unverändert. 
   
 

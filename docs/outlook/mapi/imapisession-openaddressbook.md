@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b6a4c6a-bb71-4ea1-a3b6-90a2722880fb
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 51bf5f8455d4cb790d0c955e96249b0f9deef1af
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329421"
 ---
 # <a name="imapisessionopenaddressbook"></a>IMAPISession::OpenAddressBook
 
@@ -25,7 +25,7 @@ ms.locfileid: "25396974"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet das MAPI-integrierte Adressbuch, einen [IAddrBook](iaddrbookimapiprop.md) Zeiger für den weiteren Zugriff zurückgibt. 
+Öffnet das integrierte MAPI-Adressbuch und gibt einen [IAddrBook](iaddrbookimapiprop.md) -Zeiger für den weiteren Zugriff zurück. 
   
 ```cpp
 HRESULT OpenAddressBook(
@@ -40,23 +40,23 @@ HRESULT OpenAddressBook(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster der Adresse Standarddialogfeld und anderer weiterführende zeigt.
+> in Ein Handle für das übergeordnete Fenster des Dialogfelds "allgemeine Adresse" und andere zugehörige anzeigen.
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle für das Adressbuch zugreifen zu verwendende darstellt. Übergeben von **null** gibt einen Zeiger auf das Adressbuch Standardschnittstelle, [IAddrBook: IMAPIProp](iaddrbookimapiprop.md). 
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf das Adressbuch verwendet werden soll. Beim Übergeben von **null** wird ein Zeiger auf die Standardschnittstelle des Adressbuchs [IAddrBook: IMAPIProp](iaddrbookimapiprop.md)zurückgegeben. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die das Öffnen des Adressbuchs steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die das Öffnen des Adressbuchs steuert. Das folgende Flag kann festgelegt werden:
     
 AB_NO_DIALOG 
   
-> Unterdrückt die Anzeige von Dialogfeldern. Wenn das Flag AB_NO_DIALOG nicht festgelegt ist, können die adressbuchanbietern implementierte, die auf die integrierte Adressbuch beitragen der Benutzer für alle erforderlichen Informationen aufgefordert. 
+> Unterdrückt die Anzeige von Dialogfeldern. Wenn das AB_NO_DIALOG-Flag nicht festgelegt ist, können die Adressbuchanbieter, die zum integrierten Adressbuch beitragen, den Benutzer um erforderliche Informationen auffordern. 
     
  _lppAdrBook_
   
-> [out] Ein Zeiger auf einen Zeiger auf das Adressbuch.
+> Out Ein Zeiger auf einen Zeiger auf das Adressbuch.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -66,25 +66,25 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war erfolgreich, aber die Container für eine oder mehrere adressbuchanbietern implementierte konnte nicht geöffnet werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf war erfolgreich, aber die Container eines oder mehrerer Adressbuchanbieter konnten nicht geöffnet werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISession::OpenAddressBook** -Methode öffnet das integrierte Adressbuch MAPI, eine Auflistung von Container der obersten Ebene aller von der adressbuchanbietern implementierte im Profil. Der Zeiger, der im Parameter _LppAdrBook_ zurückgegeben wird, bietet weitere Zugriff auf den Inhalt des Adressbuchs. Dadurch wird den Anrufer für Aufgaben wie öffnen einzelne Container, messaging Benutzer suchen und Anzeigen von Dialogfeldern für allgemeine Adresse. 
+Die **IMAPISession:: openaddressbook** -Methode öffnet das integrierte MAPI-Adressbuch, eine Sammlung der Container der obersten Ebene aller Adressbuchanbieter im Profil. Der im Parameter _lppAdrBook_ zurückgegebene Zeiger bietet weiteren Zugriff auf den Inhalt des Adressbuchs. Dadurch kann der Anrufer Aufgaben wie das Öffnen einzelner Container, das Auffinden von Messaging Benutzern und das Anzeigen allgemeiner Adress Dialogfelder ausführen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **OpenAddressBook** gibt MAPI_W_ERRORS_RETURNED zurück, wenn mindestens eines der adressbuchanbietern implementierte im Profil geladen werden kann. Dieser Wert ist eine Warnung, keinen Fehlerwert. Behandeln Sie es wie S_OK zurück. **OpenAddressBook** gibt immer einen gültigen Zeiger in der _LppAdrBook_ -Parameter, unabhängig davon, wie viele der Address Book Anbieter konnte nicht geladen werden. Aus diesem Grund müssen Sie zu einem bestimmten Zeitpunkt auch immer im Adressbuch [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, vor der Abmeldung. 
+ **Openaddressbook** gibt MAPI_W_ERRORS_RETURNED zurück, wenn ein oder mehrere Adressbuchanbieter im Profil nicht geladen werden können. Dieser Wert ist eine Warnung, kein Fehlerwert; behandeln Sie Sie wie S_OK. **Openaddressbook** gibt immer einen gültigen Zeiger im _lppAdrBook_ -Parameter zurück, unabhängig davon, wie viele Adressbuchanbieter nicht geladen wurden. Daher müssen Sie vor dem Abmelden immer die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode des Adressbuchs aufrufen. 
   
-Wenn **OpenAddressBook** MAPI_W_ERRORS_RETURNED zurückgegeben wird, rufen Sie [IMAPISession::GetLastError](imapisession-getlasterror.md) um eine [MAPIERROR](mapierror.md) -Struktur zu erhalten, die Informationen zu den fehlerhaften Anbietern enthält. Eine einzelne **MAPIERROR** -Struktur zurückgegeben, die Informationen von alle Anbieter bereitgestellt wird, enthält. 
+Wenn **Openaddressbook** MAPI_W_ERRORS_RETURNED zurückgibt, rufen Sie [IMAPISession:: getlasterroraufzurufen](imapisession-getlasterror.md) auf, um eine [MAPIERROR](mapierror.md) -Struktur abzurufen, die Informationen zu den fehlerhaften Anbietern enthält. Es wird eine einzelne **MAPIERROR** -Struktur zurückgegeben, die von allen Anbietern bereitgestellte Informationen enthält. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIObjects.cpp  <br/> |CMapiObjects::GetAddrBook  <br/> |MFCMAPI (engl.) verwendet die **IMAPISession::OpenAddressBook** -Methode, um die integrierten Adressbuch abzurufen.  <br/> |
+|MAPIObjects. cpp  <br/> |CMapiObjects:: GetAddrBook  <br/> |MFCMAPI verwendet die **IMAPISession:: openaddressbook** -Methode, um das integrierte Adressbuch abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -96,7 +96,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [MAPIERROR](mapierror.md)
   
-[IMAPISession: IUnknown](imapisessioniunknown.md)
+[IMAPISession : IUnknown](imapisessioniunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

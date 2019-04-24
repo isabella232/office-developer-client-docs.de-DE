@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachMimeTag (kanonische Eigenschaft)
+title: Kanonische Pidtagattachmimetag (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: cbc4585d-f970-4b22-ac08-d7fc91bff3d3
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: f05fa0816db3b412329372ad392c673c240eb59e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327244"
 ---
-# <a name="pidtagattachmimetag-canonical-property"></a>PidTagAttachMimeTag (kanonische Eigenschaft)
+# <a name="pidtagattachmimetag-canonical-property"></a>Kanonische Pidtagattachmimetag (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Formatierung Informationen über eine Anlage Multipurpose Internet Mail Extensions (MIME). 
+Enthält Formatierungsinformationen zu einer MIME-Anlage (Multipurpose Internet Mail Extensions). 
   
 |||
 |:-----|:-----|
@@ -34,33 +34,33 @@ Enthält Formatierung Informationen über eine Anlage Multipurpose Internet Mail
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn die **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md))-Eigenschaft den Wert **OID_MIMETAG**enthält, sollte der Adressbuchhierarchie sehen Sie sich diese Eigenschaften, um zu bestimmen, wie die Anlage formatiert ist. 
+Wenn die **PR_ATTACH_TAG** ([pidtagattachtag (](pidtagattachtag-canonical-property.md))-Eigenschaft den Wert **OID_MIMETAG**enthält, sollte der Transportanbieter diese Eigenschaften überprüfen, um zu bestimmen, wie die Anlage formatiert werden soll. 
   
-Diese Eigenschaften werden aus dem Content-Type-Parameter des eingehenden MIME-Header kopiert. Die Zusammensetzung der Zeichenfolge ist im Dokument RFC 1521 definiert. Das Format ist Typ/Untertyp wie Anwendung/Binär oder Text/Plain. 
+Diese Eigenschaften werden aus dem Content-Type-Parameter des eingehenden MIME-Headers kopiert. Die Zusammensetzung der Zeichenfolge ist im RFC 1521-Dokument definiert. Das Format ist Type/SubType, wie Application/Binary oder Text/Plain. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften der codierten Nachrichten, deren Rechte verwaltet werden.
+> Gibt die Eigenschaften von Nachrichten mit verwalteten Rechten an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,5 +72,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

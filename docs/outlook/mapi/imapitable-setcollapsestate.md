@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 31325e8f-1cf9-49b2-8118-953996b0037f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 51c239897e5e225a0765f78404526e2836371f30
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7351457dc5b72cfc4a7ef9f91e9d33a80ca98c39
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328833"
 ---
 # <a name="imapitablesetcollapsestate"></a>IMAPITable::SetCollapseState
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt den aktuellen erweiterten oder reduzierten den Status einer kategorisierten Tabelle mit Daten, die durch einen vorherigen Aufruf der [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md) -Methode gespeichert wurde neu. 
+Erstellt den aktuellen erweiterten oder reduzierten Status einer kategorisierten Tabelle mithilfe von Daten, die durch einen vorherigen Aufruf der [IMAPITable:: GetCollapseState](imapitable-getcollapsestate.md) -Methode gespeichert wurden. 
   
 ```cpp
 HRESULT SetCollapseState(
@@ -40,53 +40,53 @@ BOOKMARK FAR * lpbkLocation
 
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  _cbCollapseState_
   
-> [in] Die Anzahl der Bytes in der Struktur auf den durch den Parameter _PbCollapseState_ verwiesen. 
+> in Die Anzahl der Bytes in der Struktur, auf die durch den _pbCollapseState_ -Parameter verwiesen wird. 
     
  _pbCollapseState_
   
-> [in] Zeiger auf die Strukturen, die mit den Daten, die Tabellenansicht neu erstellen.
+> in Zeiger auf die Strukturen, die die zum Neuaufbau der Tabellenansicht erforderlichen Daten enthalten.
     
  _lpbkLocation_
   
-> [out] Zeiger auf eine Textmarke, identifiziert der Zeile in der Tabelle, an der der reduzierte oder erweiterte Zustand neu erstellt werden soll. Dieses Lesezeichen und im _LpbInstanceKey_ -Parameter im Aufruf [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md) übergebenen Instanz Taste identifizieren die gleiche Zeile. 
+> Out Zeiger auf eine Textmarke, die die Zeile in der Tabelle identifiziert, bei der der reduzierte oder erweiterte Zustand neu erstellt werden soll. Diese Textmarke und der Instanzschlüssel, die im _lpbInstanceKey_ -Parameter im Aufruf von [IMAPITable:: GetCollapseState](imapitable-getcollapsestate.md) übergeben werden, identifizieren dieselbe Zeile. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Zustand der kategorisierten Tabelle wurden erfolgreich neu erstellt.
+> Der Status der kategorisierten Tabelle wurde erfolgreich neu erstellt.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt, die verhindert, den Vorgang gestartet wird dass. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Vorgang gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
     
 MAPI_E_UNABLE_TO_COMPLETE 
   
-> Die Tabelle konnte nicht fertig gestellt Neuerstellen der Ansicht reduzierten oder erweiterten.
+> Die Tabelle konnte das erneute Erstellen der reduzierten oder erweiterten Ansicht nicht abschließen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPITable::SetCollapseState** -Methode wird den Zustand erweiterten oder reduzierten die Tabellenansicht. **SetCollapseState** und **GetCollapseState** arbeiten wie folgt zusammen: 
+Die **IMAPITable:: SetCollapseState** -Methode stellt den erweiterten oder reduzierten Status der Tabellenansicht wieder her. **SetCollapseState** und **GetCollapseState** arbeiten wie folgt zusammen: 
   
-1. Wenn der Zustand einer kategorisierten Tabelle zu ändern, [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md) aufgerufen, um alle Daten für den Zustand vor der Änderung zu speichern. 
+1. Wenn der Status einer kategorisierten Tabelle gerade geändert wird, wird [IMAPITable:: GetCollapseState](imapitable-getcollapsestate.md) aufgerufen, um alle Daten zu speichern, die sich auf den Status vor der Änderung beziehen. 
     
-2. **SetCollapseState** wird aufgerufen, um die Ansicht der Tabelle auf den gespeicherten Zustand wiederherzustellen. Die Daten, die **GetCollapseState** gespeichert werden an **SetCollapseState**übergeben. **SetCollapseState** ist berechtigt, diese Daten verwenden, um den Zustand wiederherzustellen. 
+2. **SetCollapseState** wird aufgerufen, um die Ansicht der Tabelle auf den gespeicherten Zustand zurückzusetzen. Die von **GetCollapseState** gespeicherten Daten werden an **SetCollapseState**übergeben. **SetCollapseState** kann diese Daten verwenden, um den Status wiederherzustellen. 
     
-3. **SetCollapseState** gibt als Ausgabeparameter eine Textmarke, die die gleiche Zeile als Instanzschlüssel übergeben als Eingabe in **GetCollapseState**identifiziert.
+3. **SetCollapseState** gibt als Ausgabeparameter eine Textmarke zurück, die dieselbe Zeile identifiziert wie der Instanzschlüssel, der als Eingabe an **GetCollapseState**übergeben wird.
     
-Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sortieren und Kategorisierung](sorting-and-categorization.md). 
+Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sortieren und kategorisieren](sorting-and-categorization.md). 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Sie sind verantwortlich für das Überprüfen, dass die Sortierreihenfolge und Einschränkungen identisch sind, wie sie zum Zeitpunkt des Anrufs **GetCollapseState** waren. Wenn eine Änderung vorgenommen wurde, sollte **SetCollapseState** nicht aufgerufen werden, da die Ergebnisse unvorhersehbar können. Dies kann vorkommen, wenn beispielsweise ein Client **GetCollapseState** und dann **SortTable** , um den Sortierschlüssel zu ändern, vor dem Aufruf von **SetCollapseState**aufruft. Aus Sicherheitsgründen sicher, dass die gespeicherten Daten noch gültig ist, bevor Sie mit der Wiederherstellung. 
+Sie sind dafür verantwortlich, zu überprüfen, ob die Sortierreihenfolge und die Einschränkungen identisch sind, wie Sie zum Zeitpunkt des **GetCollapseState** -Aufrufs waren. Wenn eine Änderung vorgenommen wurde, sollte **SetCollapseState** nicht aufgerufen werden, da die Ergebnisse unvorhersehbar sein können. Dies kann passieren, wenn beispielsweise ein Client **GetCollapseState** aufruft und dann **sortable** , um den Sortierschlüssel zu ändern, bevor **SetCollapseState**aufgerufen wird. Vergewissern Sie sich, dass die gespeicherten Daten noch gültig sind, bevor Sie mit der Wiederherstellung fortfahren. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **SetCollapseState**anrufen möchten, müssen Sie zuvor **GetCollapseState**aufgerufen. Die Sortierreihenfolge zur Festlegung der Kategorien sollten für beide Methoden identisch sein. Wenn die Sortierreihenfolgen unterscheiden, sind die Ergebnisse des Vorgangs **SetCollapseState** unvorhersehbar. 
+Zum Aufrufen von **SetCollapseState**müssen Sie zuvor **GetCollapseState**aufgerufen haben. Die Sortierreihenfolge für die Kategorien sollte für beide Methoden identisch sein. Wenn die Sortierreihenfolgen unterschiedlich sind, sind die Ergebnisse der **SetCollapseState** -Operation unvorhersehbar. 
   
 ## <a name="see-also"></a>Siehe auch
 

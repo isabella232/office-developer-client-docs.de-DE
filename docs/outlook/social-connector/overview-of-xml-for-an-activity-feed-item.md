@@ -1,5 +1,5 @@
 ---
-title: Überblick über XML für eine Aktivitätsfeedelement
+title: Überblick über XML für ein Aktivitätsfeedelement
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,64 +7,64 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 366550fa-e787-4ca0-bfe1-a7890dfc27c6
-description: 'Ein Aktivitätsfeed umfasst eine oder mehrere Aktivitäten, die bei einem sozialen Netzwerk. Jedes Aktivitätsfeed wird durch ein ActivityFeed-Element dargestellt, und wird durch diese drei Angaben Merkmale auf:'
-ms.openlocfilehash: 318875aeb6312a3710654d129f3f48139ff7ef12
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Ein Aktivitätsfeed besteht aus einer oder mehreren Aktivitäten, die in einem sozialen Netzwerk auftreten. Jeder Aktivitätsfeed wird durch ein activityFeed-Element dargestellt und zeichnet sich durch diese drei Informationselemente aus:'
+ms.openlocfilehash: 971c54cf69a65bebbe4fd04e8608e88b89145bb4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329292"
 ---
-# <a name="overview-of-xml-for-an-activity-feed-item"></a>Überblick über XML für eine Aktivitätsfeedelement
+# <a name="overview-of-xml-for-an-activity-feed-item"></a>Überblick über XML für ein Aktivitätsfeedelement
 
-Ein Aktivitätsfeed umfasst eine oder mehrere Aktivitäten, die bei einem sozialen Netzwerk. Jedes Aktivitätsfeed wird durch ein **ActivityFeed** -Element dargestellt, und wird durch diese drei Angaben Merkmale auf: 
+Ein Aktivitätsfeed besteht aus einer oder mehreren Aktivitäten, die in einem sozialen Netzwerk auftreten. Jeder Aktivitätsfeed wird durch ein **activityFeed** -Element dargestellt und zeichnet sich durch diese drei Informationselemente aus: 
   
-- **Netzwerk**– Name der dem sozialen Netzwerk, von dem die Aktivitäten stammt.
+- **Netzwerk**– Name des sozialen Netzwerks, von dem die Aktivitäten stammten.
     
-- **Aktivitäten**– Container für Aktivitäten auf das angemeldete Konto des Benutzers für das soziale Netzwerk.
+- **Aktivitäten**– Container für Aktivitäten, die im Konto des angemeldeten Benutzers in diesem sozialen Netzwerk stattfindet.
     
-- **Vorlagen**– Container für Vorlagen, die zum Anzeigen des entsprechenden Aktivitätselements in **Aktivitäten**verwendet werden.
+- **Vorlagen**– Container für Vorlagen, die verwendet werden, um das entsprechende Aktivitätselement in **Aktivitäten**anzuzeigen.
     
-Um eine Aktivität Element-feed zu erstellen, müssen Sie das Outlook Social Connector (OSC) Anbieter Erweiterbarkeit XML-Schema entsprechen. Abbildung 1 zeigt, dass die XML-Struktur der Aktivitätsfeeds.
+Zum Erstellen eines Aktivitätsfeed-Elements müssen Sie dem XML-Schema für die Erweiterbarkeit von Outlook Social Connector (OSC) entsprechen. Abbildung 1 zeigt die XML-Struktur des Aktivitätsfeeds.
   
-**Abbildung 1. XML-Struktur für Aktivitätsfeeds**
+**Abbildung 1. XML-Struktur des Aktivitätsfeeds**
 
 ![Aktivitäts-XML-Struktur](media/odc_ol14_ta_OSC_Fig06.gif)
   
-Für jede Aktivität Element-feed sind die beiden wichtigsten Teile dieses Schemas die **ActivityDetails** und **ActivityTemplateContainer** Elemente: 
+Für jedes Aktivitätsfeed-Element sind die beiden wichtigsten Teile dieses Schemas die Elemente **activityDetails** und **activityTemplateContainer** : 
   
-- Das Element **ActivityDetails** speichert spezifische Informationen für jede Aktivitätsfeed-Element, wie der Name des Besitzers der Aktivität oder die URL für die Bilder hochgeladen. 
+- Das **activityDetails** -Element speichert bestimmte Informationen für jedes Aktivitätsfeed-Element, beispielsweise den Namen des Aktivitäts Besitzers oder die URL für die hochgeladenen Bilder. 
     
-- Das Element **ActivityTemplateContainer** speichert das Format oder Layout für jede Aktivität feed Element. Es besteht aus Vorlagen, dargestellt durch einzelne **ActivityTemplate** -Elemente, die mehrere Elemente feed wiederverwendet werden können. 
+- Das **activityTemplateContainer** -Element speichert das Format oder Layout für jedes Aktivitätsfeed-Element. Sie besteht aus Vorlagen, dargestellt durch einzelne **activityTemplate** -Elemente, die für mehrere Feed-Elemente wieder verwendet werden können. 
     
-Das **ActivityTemplate** -Element für ein einzelnes Element der Aktivitätsfeed gibt an, dass die folgenden vier Arten von Informationen: 
+Bei einem einzelnen Aktivitätsfeed-Element gibt das **activityTemplate** -Element die folgenden vier Informationen an: 
   
-- **Symbol**– gibt die URL für das Symbol zum Anzeigen der Aktivitätsfeeds feed Element.
+- **Symbol**– gibt die URL für das Symbol an, um das Aktivitäts Feedelement anzuzeigen.
     
-- **Titel**– beschreibt die Aktivitätsfeed item.
+- **Title**– Beschreibung des Aktivitätsfeed-Elements.
     
-- **Typ**– gibt den Typ der Aktivität, wie ein Status, Foto oder Aktualisierung des Dokuments an.
+- **Typ**– gibt den Aktivitätstyp an, beispielsweise ein Status-, Foto-oder Dokument Update.
     
-- **Daten**– gibt zusätzliche Informationen mit Aktivitätsfeed Element angezeigt.
+- **Data**– gibt alle zusätzlichen Informationen an, die mit Activity Feed Item angezeigt werden.
     
 > [!TIP]
-> Der Aktivitätsfeed angezeigte Symbol entspricht immer das Symbol für Anbieter von der **ISocialProvider::SocialNetworkIcon** -Eigenschaft zurückgegeben. 
+> Das im Aktivitätsfeed angezeigte Symbol ist immer identisch mit dem Anbieter Symbol, das von der **ISocialProvider:: SocialNetworkIcon** -Eigenschaft zurückgegeben wird. 
   
-Finden Sie unter den folgenden Themen Weitere Informationen zu **ActivityDetails** -Element, das **ActivityTemplateContainer** -Element, Vorlage Token und Vorlagenvariablen: 
+In den folgenden Themen finden Sie weitere Informationen zum **activityDetails** -Element, dem **activityTemplateContainer** -Element, Vorlagen Token und Vorlagenvariablen: 
   
-- [ActivityDetails Element](activitydetails-element.md)
+- [activityDetails-Element](activitydetails-element.md)
     
-- [ActivityTemplateContainer Element](activitytemplatecontainer-element.md)
+- [activityTemplateContainer-Element](activitytemplatecontainer-element.md)
     
 - [Vorlagenvariablen](template-variables.md)
     
-- [Richtlinien für das Aktivitäten ordnungsgemäß anzeigen](guidelines-for-properly-displaying-activities.md)
+- [Richtlinien für die OrdnungsGemäße Anzeige von Aktivitäten](guidelines-for-properly-displaying-activities.md)
     
-Ein Beispiel der Aktivität XML-feed, finden Sie unter [Aktivität Feed XML-Beispiel](activity-feed-xml-example.md).
+Ein Beispiel für Aktivitäts-Feed-XML finden Sie unter [Activity Feed XML example](activity-feed-xml-example.md).
   
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Code für Aktivitäten](xml-for-activities.md) 
-- [Outlook Connector für soziale Netzwerke Anbieter XML-Schema](outlook-social-connector-provider-xml-schema.md)
+- [XML für Aktivitäten](xml-for-activities.md) 
+- [XML-Schema des Anbieters für soziale Netzwerke in Outlook](outlook-social-connector-provider-xml-schema.md)
 - [Entwickeln eines Providers mit dem OSC-XML-Schema](developing-a-provider-with-the-osc-xml-schema.md)
 

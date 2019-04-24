@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f7fcb385-186d-d5fe-7104-fe0af09d5768
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b2523c149d98dacf9ad321a4a443382a39753fd5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d0b440f01aad7078ed76cd37d36c5ad506215438
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329708"
 ---
 # <a name="uptble"></a>UPTBLE
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ausführliche Informationen zum Hochladen der Inhalt eines Ordners während der [Tabelle Zustand hochladen](upload-table-state.md)enthält.
+Erweiterte Informationen zum Hochladen der Inhalte eines Ordners während des [Upload-Tabellenstatus](upload-table-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,27 +39,27 @@ struct UPTBLE
 
  _iEntMod_
   
->  [out] Index zum Nachverfolgen die _cEntMod_ Anzahl der neuen oder geänderten Elemente hochladen. 
+>  Out Index zum Nachverfolgen des Hochladens der _cEntMod_ Anzahl neuer oder geänderter Elemente. 
     
  _cEntMod_
   
->  [out] Anzahl der neuen oder geänderten Elemente im Ordner. 
+>  Out Anzahl der neuen oder geänderten Elemente im Ordner. 
     
  _iEntRead_
   
->  [out] Indizieren Sie, um nachzuverfolgen, die Anzahl der _cEntRead_ Elemente lesen hochladen. 
+>  Out Index zum Nachverfolgen des Hochladens der Anzahl von _cEntRead_ -Lese Elementen. 
     
  _cEntRead_
   
->  [out] Anzahl der gelesenen Elemente im Ordner. 
+>  Out Die Anzahl der gelesenen Elemente im Ordner. 
     
  _iEntDel_
   
->  [out] Index zum Nachverfolgen die Anzahl der _cEntDel_ hochladen gelöschte Elemente. 
+>  Out Index zum Nachverfolgen des Uploads der Anzahl von _cEntDel_ gelöschten Elementen. 
     
  _cEntDel_
   
->  [out] Anzahl der gelöschten Elemente im Ordner. 
+>  Out Die Anzahl der gelöschten Elemente im Ordner. 
     
 ## <a name="see-also"></a>Siehe auch
 

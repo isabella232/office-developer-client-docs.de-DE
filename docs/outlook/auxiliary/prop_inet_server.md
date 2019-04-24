@@ -6,26 +6,26 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: cd1bf05a-30df-436f-856b-d5280c20b694
-description: Stellt den Servernamen eines allgemeinen Internet-Postfachs an.
-ms.openlocfilehash: 6ed7cd758ae5bfa011c8a6eeed48e4d3870edc47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Stellt den Servernamen eines allgemeinen Internet Postfachs dar.
+ms.openlocfilehash: fa0ac96249b600b4e42f85a205870a15bd0f700c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327538"
 ---
 # <a name="propinetserver"></a>PROP_INET_SERVER
 
-Stellt den Servernamen eines allgemeinen Internet-Postfachs an.
+Stellt den Servernamen eines allgemeinen Internet Postfachs dar.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0 x 0100  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Eigenschafts-Tag:  <br/> |0x0100001F  <br/> |
-|Access:  <br/> |Schreibgeschützt.  <br/> |
+|Kennung:  <br/> |0x0100  <br/> |
+|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
+|Property-Tag:  <br/> |0x0100001F  <br/> |
+|Access  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

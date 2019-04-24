@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0f8f9fc4-4940-4c0a-92cc-2a6409b9a13f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0686cee9bf6fa47332f75f99e1d2a2d35cb7e7fb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b1109b3201e1b1e4a78c3a0fe0f2eb4d0cd43c05
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328014"
 ---
 # <a name="freeprows"></a>FreeProws
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Löscht eine [SRowSet](srowset.md) -Struktur und zugehörige Speicher, einschließlich des Speichers für alle Member Arrays und Strukturen frei. 
+Zerstört eine [SRowSet](srowset.md) -Struktur und gibt zugeordneten Arbeitsspeicher frei, einschließlich des Arbeitsspeichers, der für alle Elementarrays und-Strukturen reserviert ist. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 void FreeProws(
@@ -43,25 +43,25 @@ void FreeProws(
 
  _PROWS_
   
-> [in] Zeiger auf die **SRowSet** -Struktur, die gelöscht werden. 
+> in Zeiger auf die **SRowSet** -Struktur, die zerstört werden soll. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
 None.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Als Teil der Implementierung der **FreeProws**ruft MAPI [MAPIFreeBuffer](mapifreebuffer.md) -Funktion, um alle Einträge in der Struktur **SRowSet** freizugeben, bevor die vollständige Struktur freigegeben. Aus diesem Grund alle diese Einträge müssen die Zuweisung Regeln für die [SRowSet](srowset.md) -Struktur folgen, mit einer einzelnen [MAPIAllocateBuffer](mapiallocatebuffer.md) rufen Sie für jedes Array mit Mitgliedern und Struktur. 
+Im Rahmen der Implementierung von **FreeProws**ruft MAPI die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um jeden Eintrag in der **SRowSet** -Struktur freizugeben, bevor die gesamte Struktur freigegeben wird. Daher müssen alle diese Einträge den Zuordnungsregeln für die [SRowSet](srowset.md) -Struktur unter Verwendung eines einzelnen [MAPIAllocateBuffer](mapiallocatebuffer.md) -Aufrufs für die einzelnen Elementarrays und-Strukturen gefolgt sein. 
   
-Weitere Informationen zum Zuweisen von Arbeitsspeicher für **ADRLIST** und **SRowSet** Strukturen finden Sie unter [Verwalten von Arbeitsspeicher für ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md). 
+Weitere Informationen zum Zuweisen von Arbeitsspeicher für **ADRLIST** -und **SRowSet** -Strukturen finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md). 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI (engl.) verwendet die **FreeProws** -Methode, um eine SRowSet-Struktur, die Zeilen der Tabelle verarbeitet enthält frei.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI verwendet die **FreeProws** -Methode, um eine SRowSet-Struktur mit Zeilen der verarbeiteten Tabelle freizugeben.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

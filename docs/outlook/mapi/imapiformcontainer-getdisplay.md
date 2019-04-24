@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6829e273-4a75-4278-b58a-ae7543e075ac
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 66e23d73af53b05295bf2cbcd8c604ab3545bbca
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 994041d050df56fd3fa3c0e599542e05a202ad65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329428"
 ---
 # <a name="imapiformcontainergetdisplay"></a>IMAPIFormContainer::GetDisplay
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Anzeigenamen eines Containers Formular zurück.
+Gibt den Anzeigenamen eines Formular Containers zurück.
   
 ```cpp
 HRESULT GetDisplay(
@@ -38,29 +38,29 @@ HRESULT GetDisplay(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der zurückgegebenen Zeichenfolge steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolge steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die zurückgegebene Zeichenfolge wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, wird die Zeichenfolge im ANSI-Format.
+> Die zurückgegebene Zeichenfolge ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, wird die Zeichenfolge im ANSI-Format.
     
  _pszDisplayName_
   
-> [out] Ein Zeiger auf eine Zeichenfolge, die den Anzeigenamen des Containers Formular enthält.
+> Out Ein Zeiger auf eine Zeichenfolge, die den Anzeigenamen des Formular Containers enthält.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::CFormContainerDlg  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormContainer::GetDisplay** -Methode, um den Namen des Containers Formular abrufen, wenn CFormContainerDlg gerendert.  <br/> |
+|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: CFormContainerDlg  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: getdisplay** -Methode, um den Namen des Formular Containers abzurufen, wenn er CFormContainerDlg rendert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

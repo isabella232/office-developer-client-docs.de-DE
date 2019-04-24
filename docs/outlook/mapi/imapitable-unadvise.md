@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 19f0dad9-9704-4bbe-a689-9531e7198351
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7de4d3c58d5eeefcf9a82235333da5db4703bc8d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: da11f15dfe9d269b79f465f01f713de401584962
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328805"
 ---
 # <a name="imapitableunadvise"></a>IMAPITable::Unadvise
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht ab, das Senden von Benachrichtigungen, die zuvor mit einem Aufruf der Methode [IMAPITable::Advise](imapitable-advise.md) eingerichtet. 
+Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMAPITable:: Advise](imapitable-advise.md) -Methode eingerichtet wurden. 
   
 ```cpp
 HRESULT Unadvise(
@@ -37,27 +37,27 @@ ULONG_PTR ulConnection
 
  _ulConnection_
   
-> [in] Die Anzahl der Registrierung Verbindung durch einen Aufruf von [IMAPITable::Advise](imapitable-advise.md)zurückgegeben.
+> in Die Nummer der Registrierungs Verbindung, die von einem Aufruf von [IMAPITable:: Advise](imapitable-advise.md)zurückgegeben wird.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **IMAPITable::Unadvise** -Methode, um den Zeiger auf den im Parameter _LpAdviseSink_ im vorherigen Aufruf **IMAPITable::Advise**, wodurch Stornieren einer benachrichtigungsregistrierung übergeben Advise-Empfängerobjekt freizugeben. Im Rahmen des Zeigers auf das Empfängerobjekt Advise verwerfen wird das Objekt **IUnknown** -Methode aufgerufen. Im allgemeinen **Release** aufgerufen wird während des Anrufs **Unadvise** , jedoch ist, wenn ein anderer Thread aufruft, die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfänger der Anruf **Version** verzögert, bis die **OnNotify** -Methode zurückgegeben. 
+Verwenden Sie die **IMAPITable:: Unadvise** -Methode, um den Zeiger auf das Advise-Senke-Objekt, das im _lpAdviseSink_ -Parameter im vorherigen Aufruf von **IMAPITable:: Advise**übergeben wird, aufzuheben, wodurch eine Benachrichtigungs Registrierung abgebrochen wird. Als Teil des Verwerfens des Zeigers auf das Advise-Senke-Objekt wird die **IUnknown:: Release** -Methode des Objekts aufgerufen. Im Allgemeinen wird **Release** während des Unadvise-Aufrufs aufgerufen, aber wenn ein anderer Thread gerade **** die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Senke aufruft, wird der **Freigabe** Aufruf verzögert, bis die OnNotify **** Methode gibt zurück. 
   
-Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event Notification in MAPI](event-notification-in-mapi.md). Spezifische Informationen zur Tabelle Benachrichtigung finden Sie unter [Zur Tabelle Benachrichtigungen](about-table-notifications.md). Informationen zur Verwendung der Methods **IMAPISupport** zum Benachrichtigung zu unterstützen finden Sie unter [Event Notification unterstützen](supporting-event-notification.md).
+Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Spezifische Informationen zur Tabellenbenachrichtigung finden Sie unter [Informationen zu Tabellen Benachrichtigungen](about-table-notifications.md). Informationen zur Verwendung der **IMAPISupport** -Methoden zur Unterstützung von Benachrichtigungen finden Sie unter [unterstützende Ereignisbenachrichtigung](supporting-event-notification.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::NotificationOff  <br/> |MFCMAPI (engl.) verwendet die **IMAPITable::Unadvise** -Methode, um Benachrichtigungen für die Tabelle abzubrechen.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl:: NotificationOff  <br/> |MFCMAPI verwendet die **IMAPITable:: Unadvise** -Methode, um Benachrichtigungen für die Tabelle abzubrechen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,25 +6,25 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a556eadc-9ee6-7a29-ca05-6250b612790c
-description: Schützt die Formatierungen Zellen eines Shapes, um sicherzustellen, dass sie entsprechende Aspekte des aktuellen Designs verwenden.
-ms.openlocfilehash: 10a7772995b9cc22e53ff577b2f663d7c97d0816
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Schützt die Formatierungszellen eines Shapes, um sicherzustellen, dass Sie die entsprechenden Aspekte des aktuellen Designs verwenden.
+ms.openlocfilehash: c20d43f9d03296a3c529a6c8f59cf27489dcdc51
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326754"
 ---
 # <a name="themeguard-function"></a>THEMEGUARD Function
 
-Schützt die Formatierungen Zellen eines Shapes, um sicherzustellen, dass sie entsprechende Aspekte des aktuellen Designs verwenden.
+Schützt die Formatierungszellen eines Shapes, um sicherzustellen, dass Sie die entsprechenden Aspekte des aktuellen Designs verwenden.
   
 ## <a name="syntax"></a>Syntax
 
-THEMEGUARD()
+THEMEGUARD ()
   
 ## <a name="remarks"></a>Bemerkungen
 
-Anwenden der THEMEGUARD-Funktion auf eine Zelle ist nicht für die manuelle Formatierung auf die gleiche Weise, die die GUARD anwenden Funktion schützen. Wenn Sie die Formatierung auf die Form in der Benutzeroberfläche oder programmgesteuert mittels Automatisierung anwenden, wird die Formel THEMEGUARD überschrieben, sofern Sie nicht die SETATREFEXPR-Funktion in der Formel, um die manuelle Formatierung Wert zu speichern. 
+Wenn Sie die THEMEGUARD-Funktion auf eine Zelle anwenden, wird die manuelle Formatierung nicht auf die gleiche Weise geschützt wie bei der Anwendung der GUARD-Funktion. Wenn Sie die Form auf der Benutzeroberfläche oder programmgesteuert mithilfe der Automatisierung formatieren, wird die THEMEGUARD-Formel außer Kraft gesetzt, es sei denn, Sie schließen die SETATREFEXPR-Funktion in die Formel ein, um den manuellen Formatierungswert zu speichern. 
   
 ## <a name="example"></a>Beispiel
 

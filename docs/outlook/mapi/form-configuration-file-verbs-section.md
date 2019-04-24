@@ -1,5 +1,5 @@
 ---
-title: Abschnitt [Verbs] in der Formularkonfigurationsdatei
+title: Formular Konfigurationsdatei [Verbs] Abschnitt
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,26 +8,26 @@ api_type:
 - COM
 ms.assetid: e7e1f371-9e9a-4bec-a0b3-87753a16f5e0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6a06283e3eb072e1f502d0b1bd303ce9f0733578
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bb7d49d69fadab54212ff7e8b50ac969e4890c0a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327496"
 ---
-# <a name="form-configuration-file-verbs-section"></a>Abschnitt [Verbs] in der Formularkonfigurationsdatei
+# <a name="form-configuration-file-verbs-section"></a>Formular Konfigurationsdatei [Verbs] Abschnitt
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Im Abschnitt **[Verben]** wird der vollständige Satz von Verben, die vom Formular unterstützt. Das Format des Abschnitts **[Verben]** lautet: 
+Der Abschnitt **[Verbs]** enthält die vollständigen Verben, die vom Formular unterstützt werden. Das Format des Abschnitts **[Verbs]** lautet: 
   
- **[Verben]**
+ **Verben**
   
- **Verb1** =  _Zeichenfolge_
+ **Verb1** =  -_Zeichenfolge_
   
-Es folgt ein Beispiel für einen Abschnitt **[Verben]** . 
+Es folgt ein Beispiel für einen Abschnitt **[Verbs]** . 
   
 ```cpp
 [Verbs]
@@ -36,19 +36,19 @@ Verb2=2
 
 ```
 
-Jedes Verb definiert, in einer separaten **[Verb.** _Zeichenfolge_ **]** Abschnitt. Eine **[Verb.** _Zeichenfolge_ **]** Abschnitt beschreibt ein einzelnes Verb vom Formular angeboten. Der Eintrag " **DisplayName** " in einem **[Verb.** _Zeichenfolge_ Abschnitt **]** gibt den Namen des Befehls in der Benutzeroberfläche angezeigt. Der **Code** -Eintrag entspricht der Verbanzahl in der [IMAPIForm::DoVerb](imapiform-doverb.md) -Methode übergeben. Die Syntax für die **[Verb.** _Zeichenfolge_ **]** Abschnitt ist: 
+Jedes Verb wird in einem separaten **[Verb.** _Zeichenfolge_ **]** -Abschnitt. Ein **[Verb.** _Zeichenfolge_ **]** section beschreibt ein einzelnes Verb, das vom Formular angeboten wird. Der Eintrag **DisplayName** in einem **[Verb.** _Zeichenfolge_ **]** -Abschnitt gibt den in der Benutzeroberfläche angezeigten Befehlsnamen an. Der **Code** Eintrag entspricht der Verb Nummer, die in der [IMAPIForm::D overb](imapiform-doverb.md) -Methode übergeben wird. Die Syntax für das **[Verb.** _Zeichenfolge_ **]** section ist: 
   
- **[Verb.** _Zeichenfolge_ **]**
+ **Verb.** _Zeichenfolge_ **]**
   
- **DisplayName** =  _Zeichenfolge angezeigt_
+ **** Angezeigte Zeichen_Folge_  =  
   
- **Code** =  _ganze Zahl_
+ **Code** =  _Ganzzahl_
   
- **Flags** =  _ganze Zahl_
+ **Flags** =  -_Ganzzahl_
   
- **Attributen** =  _ganze Zahl_
+ **Attribute** =  -_Ganzzahl_
   
-Nachfolgend sehen Sie ein Beispiel für eine **[Verb.** _Zeichenfolge_ **]** Abschnitt. 
+Es folgt ein Beispiel für ein **[Verb.** _Zeichenfolge_ **]** -Abschnitt. 
   
 ```cpp
 [Verb.1]
@@ -64,6 +64,6 @@ Attribs=2
 
 ```
 
-In diesem Abschnitt aufgeführten Verben werden von einem Client mithilfe der [Methode IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md)abgerufen. Verben aktiviert sind, indem das Formular [IMAPIForm::DoVerb](imapiform-doverb.md) -Methode aufrufen, und übergeben sie die Anzahl von Code für die auszuführende Aktion ausgeführt werden. 
+Verben, die in diesem Abschnitt aufgelistet werden, werden von einem Client mithilfe der [IMAPIFormInfo:: CalcVerbSet-Methode](imapiforminfo-calcverbset.md)abgerufen. Verben werden aktiviert, indem die [IMAPIForm::D overb](imapiform-doverb.md) -Methode des Formulars aufgerufen und die Codenummer des auszuführenden Verbs übergeben wird. 
   
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachMimeSequence (kanonische Eigenschaft)
+title: Kanonische Pidtagattachmimesequence (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d2a84f24-b4a5-4e16-9219-7a579a31a8f8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b8fe0dd61247d3473db4cc728ecfa2c83682b691
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ae9b79abea9a1b2b31867b9ed575e16e8f1c4474
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327279"
 ---
-# <a name="pidtagattachmimesequence-canonical-property"></a>PidTagAttachMimeSequence (kanonische Eigenschaft)
+# <a name="pidtagattachmimesequence-canonical-property"></a>Kanonische Pidtagattachmimesequence (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die MIME-Sequenznummer des MIME-Nachrichtenanlage enthält.
+Enthält die MIME-Sequenznummer einer MIME-Nachrichtenanlage.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_MIME_SEQUENCE  <br/> |
 |Kennung:  <br/> |0x3710  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Anlage Nachrichteneigenschaften  <br/> |
+|Bereich:  <br/> |Eigenschaften von Nachrichtenanlagen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird verwendet, für die MHTML-Unterstützung. Es stellt die Sequenznummer der Anlage innerhalb des übergeordneten MIME multipart Textteil der MIME-Nachricht.
+Diese Eigenschaft wird für die MHTML-Unterstützung verwendet. Sie stellt die Sequenznummer der Anlage innerhalb des übergeordneten MIME-mehrteiligen Textteil der MIME-Nachricht dar.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

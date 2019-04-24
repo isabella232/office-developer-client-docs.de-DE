@@ -13,11 +13,11 @@ api_type:
 ms.assetid: fdda45e2-631d-404c-8af4-bce68df0968b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 770ceb7af98f5271baad65043e013feb353d231a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329470"
 ---
 # <a name="imapiformunadvise"></a>IMAPIForm::Unadvise
 
@@ -25,7 +25,7 @@ ms.locfileid: "25390471"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Registrierung für Benachrichtigungen mit einem Formular Viewer zuvor durch Aufrufen von [IMAPIForm::Advise](imapiform-advise.md)hergestellt werden abgebrochen.
+Bricht eine Registrierung für Benachrichtigungen mit einem Formular Betrachter ab, der zuvor durch Aufrufen von [IMAPIForm:: Advise](imapiform-advise.md)eingerichtet wurde.
   
 ```cpp
 HRESULT Unadvise(
@@ -37,7 +37,7 @@ HRESULT Unadvise(
 
  _ulConnection_
   
-> [in] Eine Verbindungsnummer, die identifiziert die benachrichtigungsregistrierung abgebrochen werden.
+> in Eine Verbindungsnummer, die die zu abgebrochene Benachrichtigungs Registrierung identifiziert.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,15 +47,15 @@ S_OK
     
 E_INVALIDARG 
   
-> Die Nummer der _UlConnection_ -Parameter übergebenen stellt keine Registrierung ein gültiges dar. 
+> Die im _ulConnection_ -Parameter übergebene Verbindungsnummer stellt keine gültige Registrierung dar. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIForm::Unadvise** -Methode, um eine Registrierung für Benachrichtigung abzubrechen, das sie zuerst die **IMAPIForm::Advise** -Methode festgelegt. 
+Formular Betrachter rufen die **IMAPIForm:: Unadvise** -Methode auf, um eine Registrierung für eine Benachrichtigung abzubrechen, die Sie zuerst durch Aufrufen der **IMAPIForm:: Advise** -Methode festgelegt haben. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Verwerfen der Zeiger, den Sie zur Ansicht des Formulars-Viewers halten advise-Empfänger durch seine [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen. Im allgemeinen **Release** aufgerufen wird während des Anrufs **Unadvise** . Wenn ein anderer Thread aufruft, eine der Methoden [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) ist für die Ansicht advise-Empfänger jedoch **Release** -Aufruf Verzögerung, bis die **IMAPIViewAdviseSink** -Methode zurückgibt. 
+VerWerfen Sie den Zeiger, den Sie in der View Advise-Senke des Formular Viewers halten, durch Aufrufen der [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode. Im Allgemeinen wird die **Freigabe** während des **Unadvise** -Aufrufs aufgerufen. Wenn jedoch ein anderer Thread gerade eine der [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methoden für die View Advise-Senke aufruft, verzögern Sie den **Release** -Aufruf, bis die **IMAPIViewAdviseSink** -Methode zurückgegeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

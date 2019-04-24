@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: ff1a6843-6dd6-4527-9fc1-70da288cb9e7
-description: In diesem Abschnitt wird das Konfigurieren von Outlook zum Element Konflikte lösen, ermitteln Sie die Aktualisierungszeit für ein Offlineadressbuch und Registrieren einer Domäne für die automatische Konfiguration beschrieben.
-ms.openlocfilehash: ba45c022fa35bf87911aaa2b8b272d03a0703bae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Abschnitt wird beschrieben, wie Sie Outlook so konfigurieren, dass Elementkonflikte aufgelöst werden, die Aktualisierungszeit für ein Offline Adressbuch ermittelt und eine Domäne für die automatische Konfiguration registriert wird.
+ms.openlocfilehash: 781d1fe34a8918fdb96900e4f191ea36cf1b732c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327783"
 ---
 # <a name="outlook-configuration"></a>Outlook-Konfiguration
 
-In diesem Abschnitt wird das Konfigurieren von Outlook zum Element Konflikte lösen, ermitteln Sie die Aktualisierungszeit für ein Offlineadressbuch und Registrieren einer Domäne für die automatische Konfiguration beschrieben.
+In diesem Abschnitt wird beschrieben, wie Sie Outlook so konfigurieren, dass Elementkonflikte aufgelöst werden, die Aktualisierungszeit für ein Offline Adressbuch ermittelt und eine Domäne für die automatische Konfiguration registriert wird.
 
 - [Informationen zur Konfliktbehebung für benutzerdefinierte Typen](about-conflict-resolution-for-custom-item-types.md)
     
-- [Informationen zum letzten Aktualisierungszeitpunkt eines Offlineadressbuchs](about-the-last-update-time-of-an-offline-address-book.md)
+- [Informationen zum letzten Aktualisierungszeitpunkt eines Offline Adressbuchs](about-the-last-update-time-of-an-offline-address-book.md)
     
 - [Informationen zum Registrieren einer neuen Domäne für die automatische Konfiguration](about-registering-a-new-domain-for-automatic-configuration.md)
     

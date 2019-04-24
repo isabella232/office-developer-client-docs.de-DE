@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a5bfc190-b58f-44c3-893c-8727df14ee58
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 924715f26e104739f2e60762511221da5facd5a5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6cca6bc12fa6f100885b7bf705d79fa24a2e2f91
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328847"
 ---
 # <a name="imapitablerestrict"></a>IMAPITable::Restrict
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wendet einen Filter auf eine Tabelle, reduzieren die Zeile festgelegt, um nur die Zeilen, die den angegebenen Kriterien entsprechen.
+Wendet einen Filter auf eine Tabelle an, wobei der Zeilensatz nur auf die Zeilen reduziert wird, die den angegebenen Kriterien entsprechen.
   
 ```cpp
 HRESULT Restrict(
@@ -38,21 +38,21 @@ ULONG ulFlags
 
  _lpRestriction_
   
-> [in] Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Bedingungen des Filters definieren. Übergeben von NULL im Parameter _LpRestriction_ entfernt den aktuellen Filter. 
+> in Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Bedingungen des Filters definiert. Durch das Übergeben von NULL im _lpRestriction_ -Parameter wird der aktuelle Filter entfernt. 
     
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die den Zeitpunkt des Vorgangs Einschränkung steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Bitmaske von Flags, die das Timing des Einschränkungs Vorgangs steuert. Die folgenden Flags können festgelegt werden:
     
 TBL_ASYNC 
   
-> Die Operation asynchron startet und gibt vor dem Abschluss des Vorgangs.
+> Startet den Vorgang asynchron und gibt vor dem Abschluss des Vorgangs zurück.
     
 TBL_BATCH 
   
-> Bewertung des Filters verzögert, bis die Daten in der Tabelle erforderlich ist.
+> Verzögert die Auswertung des Filters, bis die Daten in der Tabelle erforderlich sind.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -60,48 +60,48 @@ S_OK
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt, die verhindert, den Einschränkung Vorgang gestartet wird dass. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
+> Ein anderer Vorgang wird ausgeführt, der verhindert, dass der Einschränkungs Vorgang gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
     
 MAPI_E_TOO_COMPLEX 
   
-> Die Tabelle kann nicht den Vorgang ausgeführt werden, da der bestimmte Filter auf das durch den Parameter _LpRestriction_ zu kompliziert ist. 
+> Die Tabelle kann den Vorgang nicht ausführen, da der bestimmte Filter, auf den durch den _lpRestriction_ -Parameter verwiesen wird, zu kompliziert ist. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **Methode IMAPITable:: Restrict** -Methode stellt eine Einschränkung oder ein Filter für eine Tabelle her. Wenn eine vorherige Einschränkung vorhanden ist, es verworfen, und die neue Datenbank angewendet. Anwenden einer Einschränkung hat keine Auswirkung auf die zugrunde liegenden Daten einer Tabelle; Diese ändert der Ansicht einfach durch Beschränken der Zeilen, die abgerufen werden können, um Zeilen mit Daten, die die Einschränkung erfüllen. 
+Die **IMAPITable:: Restrict** -Methode richtet eine Einschränkung oder einen Filter für eine Tabelle ein. Wenn es eine frühere Einschränkung gibt, wird sie verworfen und die neue angewendet. Das Anwenden einer Einschränkung hat keine Auswirkungen auf die zugrunde liegenden Daten einer Tabelle; Es ändert lediglich die Ansicht, indem die Zeilen eingeschränkt werden, die in Zeilen mit Daten abgerufen werden können, die die Einschränkung erfüllen. 
   
-Es gibt verschiedene Arten von Einschränkungen, jeweils mit einer anderen Struktur beschrieben. Die [SRestriction](srestriction.md) -Datenstruktur enthält zwei Elemente: ein Wert, der den Typ der Einschränkung und die spezifische Struktur für dieses Typs angibt. 
+Es gibt verschiedene Arten von Einschränkungen, die jeweils mit einer anderen Struktur beschrieben werden. Die [SRestriction](srestriction.md) -Struktur enthält zwei Elemente: ein Wert, der den Typ der Einschränkung und die spezifische Struktur angibt, die für diesen Typ gilt. 
   
-Benachrichtigungen für Zeilen der Tabelle, die durch Aufrufe **Restrict** ausgeblendet sind, werden nie generiert. 
+Benachrichtigungen für Tabellenzeilen, die durch Aufrufe von **Restrict** ausgeblendet werden, werden nie generiert. 
   
-Eine eigenschaftseinschränkung für eine mehrwertige Eigenschaft funktioniert wie eine Einschränkung für eine einwertige Eigenschaft. Eine mehrwertige Eigenschaft in einer eigenschaftseinschränkung verwendet werden muss die MVI_FLAG gekennzeichnet sind. Wenn dieses Flag festgelegt ist, wird es als ein solcher geordnete Tupel behandelt. Ein Vergleich von zwei mehrwertige Spalten werden die Spalte Elemente in der Reihenfolge, reporting die Beziehung der Spalten auf dem ersten Zeichen verglichen. Gleichheit wird nur zurückgegeben, wenn die Spalten im Vergleich dieselben Werte wie in der gleichen Reihenfolge enthalten. Wenn eine Spalte weniger Werte als die andere verfügt, kann die gemeldete Beziehung, die über einen null-Wert auf den anderen Wert.
+Eine Eigenschaftseinschränkung für eine mehrwertige Eigenschaft funktioniert wie eine Einschränkung für eine einwertige Eigenschaft. Für eine mehrwertige Eigenschaft, die in einer Eigenschaftseinschränkung verwendet werden soll, muss das MVI_FLAG-Flag festgelegt sein. Wenn dieses Flag nicht festgelegt ist, wird es als vollständig geordnetes Tupel behandelt. Bei einem Vergleich zwischen zwei mehrwertigen Spalten werden die Spaltenelemente in der Reihenfolge verglichen, wobei die Relation der Spalten bei der ersten Ungleichung gemeldet wird. Gleichheit wird nur zurückgegeben, wenn die verglichenen Spalten die gleichen Werte in derselben Reihenfolge enthalten. Wenn eine Spalte weniger Werte als die andere hat, ist die berichtete Relation die eines NULL-Werts für den anderen Wert.
   
-Weitere Informationen zu Beschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Weitere Informationen zu Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
   
 > [!NOTE]
-> Wenn Sie dynamische Abfragen von Daten auf dem Server erstellen, verwenden Sie anstelle der **Restrict** -Methode und die **QueryRows** -Methode zusammen mit **FindRow** -Methode. Die **Restrict** -Methode erstellt eine zwischengespeicherte Ansicht, die verwendet wird, für alle Nachrichten, die in den Basisordner geändert oder hinzugefügt ausgewertet werden soll. Wenn eine Clientanwendung die **Restrict** -Methode für jede dynamische Abfrage verwendet wird, wird eine zwischengespeicherte Ansicht für jede Abfrage erstellt werden. 
+> Wenn Sie dynamische Abfragen zum Suchen nach Daten auf dem Server erstellen, verwenden Sie die **FindRow** -Methode, anstatt die **Restrict** -Methode und die **QueryRows** -Methode zusammen zu verwenden. Die **Restrict** -Methode erstellt eine zwischengespeicherte Ansicht, die zum Auswerten aller Nachrichten verwendet wird, die im Basisordner hinzugefügt oder geändert wurden. Wenn eine Clientanwendung die **Restrict** -Methode für jede dynamische Abfrage verwendet, wird für jede Abfrage eine zwischengespeicherte Ansicht erstellt. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um der aktuellen Einschränkung verwerfen, ohne einen neuen Anwendungspool erstellen, übergeben Sie NULL _LpRestriction_.
+Um die aktuelle Einschränkung zu verwerfen, ohne eine neue zu erstellen, müssen Sie in _lpRestriction_den Wert NULL überschreiten.
   
-Wenn eine andere asynchrone Tabelle Anruf ausgeführt wird, können, auf dem Sie [IMAPITable::Abort](imapitable-abort.md) , um den Anruf zu beenden anrufen **Restrict** zurückzugebenden MAPI_E_BUSY, verursacht. 
+Wenn ein anderer asynchroner Tabellen Aufruf ausgeführt wird, wodurch **Restrict** MAPI_E_BUSY zurückgegeben wird, können Sie [IMAPITable:: Abort](imapitable-abort.md) aufrufen, um den Anruf zu beenden. 
   
- **Restrict** arbeitet synchron, es sei denn, Sie eines der Flags festlegen. Wenn Sie das TBL_BATCH-Flag festlegen, verschiebt **Restrict** die Auswertung der Einschränkung, es sei denn, Sie die Daten anfordern. Wenn das Flag TBL_ASYNC festgelegt ist, arbeitet **Restrict**asynchron potenziell vor dem Abschluss des Vorgangs zurückgeben.
+ **Restrict** arbeitet synchron, es sei denn, Sie legen eine der Flags fest. Wenn Sie das TBL_BATCH-Flag festlegen, verschiebt **Restrict** die Bewertung der Einschränkung, es sei denn, Sie fordern die Daten an. Wenn das TBL_ASYNC-Flag festgelegt ist, wird **Restrict**asynchron ausgeführt, was möglicherweise vor dem Abschluss des Vorgangs zurückgegeben wird.
   
-Wenn **Restrict** wird aufgerufen, und BOOKMARK_CURRENT der aktuellen Cursorposition an den Anfang der Tabelle festgelegt ist, werden alle Textmarken für eine Tabelle verworfen. 
+Alle Lesezeichen für eine Tabelle werden verworfen, wenn ein Aufruf von **Restrict** ausgeführt wird und BOOKMARK_CURRENT, die aktuelle Cursorposition, auf den Anfang der Tabelle festgelegt ist. 
   
-Wenn Sie versuchen, eine eigenschaftseinschränkung für eine Eigenschaft zugrunde liegen, die nicht in der Tabelle Spalte Set ist, sind die Ergebnisse nicht definiert. Wenn Sie nicht sicher sind, ob eine Eigenschaft in einer Tabelle unterstützt wird, Kombinieren der eigenschaftseinschränkung mit einer Einschränkung vorhanden. Die Einschränkung überprüft, ob der-Eigenschaft, bevor Sie versuchen, die eigenschaftseinschränkung bedingen vorhanden. 
+Wenn Sie versuchen, eine Eigenschaftseinschränkung für eine Eigenschaft aufzuerlegen, die nicht im Spaltensatz der Tabelle enthalten ist, sind die Ergebnisse nicht definiert. Wenn Sie nicht sicher sind, ob eine Eigenschaft in einer Tabelle unterstützt wird, kombinieren Sie die Eigenschaftseinschränkung mit einer EXISTS-Einschränkung. Die EXISTS-Einschränkung überprüft, ob die Eigenschaft vorhanden ist, bevor Sie versuchen, die Eigenschaftseinschränkung aufzuzwingen. 
   
-Davon ausgehen, dass eine Benachrichtigung zu erhalten Tabelle in einer Zeile, die gefiltert wurde aus einer Tabelle aufgrund einer Einschränkung.
+Erwarten Sie nicht, dass Sie eine Tabellenbenachrichtigung für eine Zeile erhalten, die aufgrund einer Einschränkung aus einer Tabelle gefiltert wurde.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::ApplyRestriction  <br/> |MFCMAPI (engl.) verwendet die **Methode IMAPITable:: Restrict** -Methode, um eine Einschränkung für eine Tabelle festgelegt.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl:: ApplyRestriction  <br/> |MFCMAPI verwendet die **IMAPITable:: Restrict** -Methode, um eine Einschränkung für eine Tabelle festzulegen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

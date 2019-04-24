@@ -7,62 +7,62 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 824eb670-16b7-49bf-9992-39fe0586a552
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a56223e909edf89d0f7fe2ba7f6d281509002429
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: aab5c76fb268729f1a50a33e4764905fe3d53405
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329743"
 ---
 # <a name="mapi-report-messages"></a>MAPI-Berichtnachrichten
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Melden von Nachrichten vorhanden Statusinformationen über eine Nachricht an den Absender.
+Berichtnachrichten geben dem Absender Statusinformationen zu einer Nachricht.
   
-Es gibt zwei allgemeine Arten von Nachrichten melden:
+Es gibt zwei allgemeine Arten von Berichtnachrichten:
   
 - Lesen Sie Statusberichte.
     
-- Übermittlung Statusberichte.
+- ZuStellungsstatus Berichte.
     
-## <a name="read-status-reports"></a>Lesen von Statusberichten
+## <a name="read-status-reports"></a>Lesen von Status Berichten
 
-Lesen von Statusberichten werden Zeichenfolgeneigenschaften Nachricht durch einen Aufruf an die [IMAPISupport::ReadReceipt](imapisupport-readreceipt.md) -Methode initiiert und an den Empfänger, dargestellt durch die Eintrags-ID in der **PR_REPORT_ENTRYID** ([PidTagReportEntryId](pidtagreportentryid-canonical-property.md)) gesendet werden -Eigenschaft. Statusberichte lesen werden nicht automatisch erstellt. Clientanwendungen, die sie erhalten möchten, müssen sie explizit anfordern.
+Lesestatus Berichte werden von Nachrichtenspeicher Anbietern durch einen Aufruf der [IMAPISupport:: ReadReceipt](imapisupport-readreceipt.md) -Methode initiiert und an den Empfänger gesendet, der durch die Eintrags-ID im **PR_REPORT_ENTRYID** ([pidtagreportentryid (](pidtagreportentryid-canonical-property.md)) Eigenschaft. Lesestatus Berichte werden nicht automatisch generiert; Clientanwendungen, die Sie empfangen möchten, müssen Sie explizit anfordern.
   
-Lese-Bericht gibt an, dass das Flag Lesen einer Nachricht die kann auftreten, wenn die Nachricht geöffnet, gedruckt, kopiert oder verschoben wird, festgelegt wurde. Unabhängig davon, ob eine Nachricht Speicheranbieter generiert einen lesen Bericht als Antwort auf eine Verschiebung oder Kopiervorgang, hängt davon ab, in dem die Nachricht gesendet wird. Wenn es ist, die verschoben oder kopiert an einen anderen Nachrichtenspeicher eine Lese-Bericht wird sehr wahrscheinlich immer gesendet. Wenn es gerade verschoben oder kopiert haben, in der aktuellen Nachrichtenspeicher Lese-Bericht möglicherweise oder möglicherweise nicht gesendet werden. 
+Ein Lesebericht gibt an, dass die Read-Kennzeichnung einer Nachricht festgelegt wurde, die beim Öffnen, drucken, verschieben oder Kopieren der Nachricht auftreten kann. Ob ein Nachrichtenspeicher Anbieter als Reaktion auf einen Vorgang zum Verschieben oder kopieren einen Lesebericht generiert, hängt davon ab, wo die Nachricht gesendet wird. Wenn Sie in einen anderen Nachrichtenspeicher verschoben oder kopiert wird, wird wahrscheinlich immer ein Lesebericht gesendet. Wenn Sie im aktuellen Nachrichtenspeicher verschoben oder kopiert wird, wird möglicherweise ein Lesebericht gesendet. 
   
-Ein Bericht nonread gibt an, dass das Flag Lesen einer Nachricht nicht festgelegt ist und dass die Nachricht nicht entweder vor in den Ordner Gelöschte Objekte gespeichert wird, oder vor dem Ablauf eines Zeitlimits geöffnet wurde. Clients können die [IMessage::SetReadFlag](imessage-setreadflag.md) oder [IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md) -Methode, um festzulegen, oder eine Nachricht lesen Kennzeichnung löschen aufrufen. 
+Ein nicht gelesener Bericht gibt an, dass die Read-Kennzeichnung einer Nachricht nicht festgelegt ist und dass die Nachricht nicht geöffnet wurde, bevor Sie im Ordner "Gelöschte Elemente" oder vor Ablauf eines Zeitlimits abgelegt wurde. Clients können die [IMessage:: SetReadFlag](imessage-setreadflag.md) -oder [IMAPIFolder:: SetReadFlags](imapifolder-setreadflags.md) -Methode aufrufen, um die Read-Kennzeichnung einer Nachricht festzulegen oder zu löschen. 
   
-## <a name="delivery-status-reports"></a>Übermittlungsberichte Status
+## <a name="delivery-status-reports"></a>Berichte über den zuStellungs Status
 
-Zustellungsstatus wiedergegeben wird, in einen Übermittlungsbericht, die gesendet wird, wenn eine Nachricht den Empfänger erreicht hat, und ein Unzustellbarkeitsbericht, die gesendet wird, wenn eine Nachricht einen Empfänger nicht erreichen konnte. Übermittlungsberichte Status werden an den Empfänger, dargestellt durch die Eintrags-ID in der Eigenschaft **PR_REPORT_ENTRYID** oder an den Absender gesendet, wenn diese Eigenschaft nicht vorhanden ist. 
+Der Übermittlungsstatus wird in einem Zustellungsbericht widergespiegelt, der gesendet wird, wenn eine Nachricht den beabsichtigten Empfänger erreicht hat, und in einem Unzustellbarkeitsbericht, der gesendet wird, wenn eine Nachricht keinen Empfänger erreichen konnte. ZuStellungsstatus Berichte werden an den Empfänger gesendet, der durch den Eintragsbezeichner in der **PR_REPORT_ENTRYID** -Eigenschaft oder an den Absender dargestellt wird, wenn diese Eigenschaft nicht vorhanden ist. 
   
-Übermittlungsberichte werden nur auf Anforderung gesendet und die ursprüngliche Nachricht nicht einschließen. Unzustellbarkeitsberichten werden automatisch gesendet, es sei denn, sie unterdrückt eine Anforderung gestellt wird. Unzustellbarkeitsberichten enthalten die ursprüngliche Nachricht als Anlage so aktivieren Sie den Bericht Empfänger die Nachricht erneut zu senden, für den Fall, dass Sie den Inhalt die Lieferung blockiert nicht mehr ein Problem darstellt. Die Nachricht angefügte ähnelt den ursprünglichen vorhanden war die [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode aufgerufen wurde, zunächst zu senden. 
+Übermittlungsberichte werden nur auf Anforderung gesendet, und die ursprüngliche Nachricht wird nicht eingeschlossen. Unzustellbarkeitsberichte werden automatisch gesendet, es sei denn, Sie werden aufgefordert, Sie zu unterdrücken. Unzustellbarkeitsberichte schließen die ursprüngliche Nachricht als Anlage ein, damit der Empfänger des Berichts die Nachricht erneut senden kann, falls blockiert wird, dass die Übermittlung kein Problem mehr ist. Die angefügte Nachricht ähnelt der ursprünglichen, wenn Sie vorhanden war, als die [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode zum anfänglichen senden aufgerufen wurde. 
   
-Mindestens einen Status Übermittlungsberichte werden von Transportanbieter generiert, wenn sie die [IMAPISupport::StatusRecips](imapisupport-statusrecips.md) -Methode aufrufen. Transportanbieter Verfassenmodus eine Liste der Empfänger einer Nachricht. Unabhängig davon, ob ein Empfänger empfängt, ein Bericht und den Typ des Berichts, die generiert wird, hängt von folgenden Faktoren ab: 
+Ein oder mehrere Übermittlungsstatusberichte werden von Transportanbietern generiert, wenn Sie die [IMAPISupport:: StatusRecips](imapisupport-statusrecips.md) -Methode aufrufen. Transport Anbieter verfassen eine Liste von Empfängern für eine Nachricht. Hängt davon ab, ob ein Empfänger einen Bericht empfängt oder nicht, und wie der generierte Berichttyp generiert wird: 
   
-- Übermittlungsberichte wechseln Sie zu Empfänger, die die **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md))-Eigenschaft auf TRUE festgelegt, bevor die Nachricht im Nachrichtenspeicher getätigt wurde.
+- ZuStellungsberichte gehen an Empfänger, die die **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md))-Eigenschaft auf true festlegen, bevor die Nachricht im Nachrichtenspeicher abgelegt wurde.
     
-- Unzustellbarkeitsberichten wechseln Sie zu Empfänger an, die nicht die **PR_ORIGINATOR_NON_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorNonDeliveryReportRequested](pidtagoriginatornondeliveryreportrequested-canonical-property.md))-Eigenschaft auf FALSE festgelegt. 
+- Unzustellbarkeitsberichte gehen an Empfänger, die die **PR_ORIGINATOR_NON_DELIVERY_REPORT_REQUESTED** ([pidtagoriginatornondeliveryreportrequested (](pidtagoriginatornondeliveryreportrequested-canonical-property.md))-Eigenschaft nicht auf false festgelegt haben. 
     
-Fast alle erforderlichen Informationen von einem Unzustellbarkeitsbericht anzeigen in der Tabelle Empfänger der Nachricht angefügte enthalten ist. Einige Eigenschaften sind aus dem Bericht selbst. Für Übermittlungsberichte ist die erforderliche Informationen in der Tabelle Empfänger des Berichts und einige Eigenschaften des Berichts enthalten. 
+Fast alle erforderlichen Informationen, um einen Unzustellbarkeitsbericht anzuzeigen, sind in der Empfängertabelle der angefügten Nachricht enthalten. Einige Eigenschaften sind aus dem Bericht selbst. Für Zusteller-Berichte sind die erforderlichen Informationen in der Empfängertabelle des Berichts und in einigen Berichtseigenschaften enthalten. 
   
-Berichte werden Nachrichten mit unterschiedlichen Nachrichtenklassen, basierend auf der Klasse die gesendete Nachricht. Die meisten Dienstanbieter verwenden eine Namenskonvention fest, bei dem die Nachrichtenklasse aus mehreren Teilen durch Punkte getrennt ist. Der erste Teil ist "Report" und der letzte Teil ist eine Konstante, die den Typ des Berichts darstellt. Im mittleren Bereich ist für die Klasse der gesendeten Nachricht reserviert. Beispielsweise, da die Konstante DR ein Unzustellbarkeitsberichts verwendet werden, die Nachrichtenklasse für eine Übermittlung Berichten zu einer IPM. Hinweis Nachricht wäre **Report.IPM.Note.DR**.
+Berichte sind Nachrichten mit unterschiedlichen Nachrichtenklassen, basierend auf der Klasse der gesendeten Nachricht. Die meisten Dienstanbieter verwenden eine Benennungskonvention, wobei die Nachrichtenklasse aus mehreren Teilen besteht, die durch Punkte getrennt sind. Der erste Teil ist "Bericht", und der letzte Teil ist eine Konstante, die den Berichtstyp darstellt. Der mittlere Teil ist für die Klasse der gesendeten Nachricht reserviert. Da ein zugestellter Bericht beispielsweise die Konstante DR verwendet, wird die Nachrichtenklasse für einen Übermittlungsbericht zu einem IPM. Hinweis Nachricht wäre **Report. IPM. Note. Dr**.
   
-Die folgende Tabelle enthält die Konstanten, mit die die Typen von Berichten darstellen.
+In der folgenden Tabelle sind die Konstanten dargestellt, die die Berichtstypen darstellen.
   
-|**Berichtstyp**|**Konstante in der Nachrichtenklasse**|
+|**Berichttyp**|**In der Nachrichtenklasse verwendete Konstante**|
 |:-----|:-----|
 |Lesen  <br/> |IPNRN  <br/> |
-|Nonread  <br/> |IPNNRN  <br/> |
+|Ungelesen  <br/> |IPNNRN  <br/> |
 |Übermittlung  <br/> |DR  <br/> |
-|NonDelivery  <br/> |NDR  <br/> |
+|Unzustellbarkeits  <br/> |NDR  <br/> |
    
-Interactive-Clients können Nachrichten melden anzeigen, mithilfe von MAPI bereitgestellten Standardformulare oder benutzerdefinierte Formulare, die mit dem Formular-Manager für den Bericht Nachrichtenklasse registriert wurden. Clients, die einen für ein IPM Unzustellbarkeitsbericht. Hinweis Nachricht, kann beispielsweise das MAPI-Standardformular anzeigen, das eine Liste der fehlerhaften Empfänger und einer vorgeschlagenen Grund für den Fehler anzeigt. Das Formular ermöglicht dem Benutzer erneuten Senden die Nachricht auch, falls gewünscht. 
+Interaktive Clients können Berichtnachrichten mithilfe von MAPI bereitgestellten Standardformularen oder benutzerdefinierten Formularen anzeigen, die beim Formular-Manager für die Nachrichtenklasse des Berichts registriert wurden. Clients, die einen Unzustellbarkeitsbericht für eine IPM erhalten. Hinweis die Meldung kann beispielsweise das standardmäßige MAPI-Formular anzeigen, das eine Liste der fehlerhaften Empfänger und einen empfohlenen Grund für den Fehler enthält. Das Formular ermöglicht es dem Benutzer auch, die Nachricht erneut zu senden, falls gewünscht. 
   
 ## <a name="see-also"></a>Siehe auch
 

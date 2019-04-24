@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: e8b5d21e-dc14-4b61-96b3-a51bcfa0d232
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cd6b119bd88fccf80bf2488592a24b3398e6e8af
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c9401c163c74ab303ec39c147e0432d1979426b8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329018"
 ---
 # <a name="imapitableadvise"></a>IMAPITable::Advise
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert ein Empfängerobjekt Advise, um die Benachrichtigung der Auswirkungen auf die Tabelle angegebenen Ereignisse.
+Registriert ein Advise-Senke-Objekt, um Benachrichtigungen über angegebene Ereignisse zu erhalten, die sich auf die Tabelle auswirken.
   
 ```cpp
 HRESULT Advise(
@@ -39,49 +39,49 @@ ULONG_PTR FAR * lpulConnection
 
  _ulEventMask_
   
-> [in] Wert, der den Typ des Ereignisses, das die Benachrichtigung generiert wird. Nur der folgende Wert ist gültig:
+> in Wert, der den Typ des Ereignisses angibt, das die Benachrichtigung generiert. Nur der folgende Wert ist gültig:
     
  `fnevTableModified`
   
  _lpAdviseSink_
   
-> [in] Zeiger auf eine Advise-Empfängerobjekt nachfolgenden Benachrichtigungen zu empfangen. Diese Advise-Empfängerobjekt muss bereits zugewiesen wurden.
+> in Zeiger auf ein Advise-Senke-Objekt, um die nachfolgenden Benachrichtigungen zu erhalten. Dieses Advise-Senke-Objekt muss bereits zugeordnet worden sein.
     
  _lpulConnection_
   
-> [out] Zeiger auf einen Wert ungleich NULL, der die erfolgreiche benachrichtigungsregistrierung darstellt.
+> Out Zeiger auf einen Wert ungleich NULL, der die erfolgreiche Benachrichtigungs Registrierung darstellt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die benachrichtigungsregistrierung erfolgreich abgeschlossen.
+> Die Benachrichtigungs Registrierung wurde erfolgreich abgeschlossen.
     
 MAPI_E_NO_SUPPORT 
   
-> Die Tabelle-Implementierung unterstützt keine Änderungen auf die Zeilen und Spalten, oder unterstützt keine Benachrichtigung.
+> Die Tabellen Implementierung unterstützt keine Änderungen an den Zeilen und Spalten oder unterstützt keine Benachrichtigung.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **IMAPITable::Advise** -Methode, um ein Table-Objekt im Anbieter für Benachrichtigung Rückrufe implementiert registrieren. Bei eine Änderung an das Table-Objekt, überprüft der Anbieter finden Sie unter welche Ereignis Maskenbit im _UlEventMask_ -Parameter festgelegt wurde, und daher, welche Art der Änderung. Wenn ein bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfängerobjekt durch den Parameter _LpAdviseSink_ Sie das Ereignis melden angegeben. Daten, die in der Benachrichtigungsstruktur der **OnNotify** Routine übergeben wird das Ereignis beschrieben. 
+Verwenden Sie die **IMAPITable:: Advise** -Methode, um ein Table-Objekt zu registrieren, das im Anbieter für Benachrichtigungsrückrufe implementiert ist. Wenn eine Änderung für das Table-Objekt auftritt, überprüft der Anbieter, welches Ereignis Masken Bit im Parameter _ulEventMask_ festgelegt wurde und welche Art von Änderung aufgetreten ist. Wenn ein Bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode für das vom _lpAdviseSink_ -Parameter angegebene Advise-Senke-Objekt auf, um das Ereignis zu melden. Die Daten, die in der Benachrichtigungs **** Struktur an die OnNotify-Routine übergeben werden, beschreiben das Ereignis. 
   
-Der Aufruf von **OnNotify** kann auftreten, während des Anrufs, der das Objekt ändert oder folgenden jederzeit. Auf Systemen, die mehreren Threads der Ausführung zu unterstützen, kann der Aufruf von **OnNotify** auf einem beliebigen Thread auftreten. Für eine Möglichkeit, einen Anruf an **OnNotify** aktivieren, die zu einem ungünstigen Zeitpunkt in eine auftreten können, die zum Verarbeiten von sicherer ist, sollte ein Anbieter für die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion verwenden. 
+Der Aufruf von **OnNotify** kann während des Anrufs auftreten, der das Objekt ändert oder zu einem beliebigen Zeitpunkt. Auf Systemen, die mehrere Threads der Ausführung unterstützen, kann **** der Aufruf von OnNotify in jedem Thread auftreten. Damit ein Anruf an onNotify, der **** möglicherweise zu einem ungünstigen Zeitpunkt stattfindet, zu einem sicherer wird, der zu handhaben ist, sollte ein Anbieter die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion verwenden. 
   
-Um Benachrichtigungen zu ermöglichen, beraten die Anbieter implementieren **Advise** muss eine Kopie des Zeigers auf die _LpAdviseSink_ Empfängerobjekt; Hierzu wird die **IUnknown:: AddRef** -Methode für die Advise-Empfänger, dessen Objektzeiger verwalten, bis benachrichtigungsregistrierung mit einem Aufruf der Methode [IMAPITable::Unadvise](imapitable-unadvise.md) abgebrochen wird. Die **Advise** -Implementierung sollte weisen eine Verbindungsnummer zu der benachrichtigungsregistrierung und rufen **AddRef** für diese Verbindungsnummer vor der Rückgabe im _LpulConnection_ -Parameter. Dienstanbieter können das Empfängerobjekt Advise freigeben, bevor die Registrierung wird abgebrochen, aber sie nicht, bis die Nummer freigeben müssen ** Unadvise ** aufgerufen wurde. 
+Um Benachrichtigungen bereitzustellen, muss der Anbieter, der **Advise** implementiert, eine Kopie des Zeigers auf das _lpAdviseSink_ -Advise-Objekt beibehalten; Hierzu wird die **IUnknown:: AddRef** -Methode für die Advise-Senke aufgerufen, um den Objektzeiger zu warten, bis die Benachrichtigungs Registrierung mit einem Aufruf der [IMAPITable:: Unadvise](imapitable-unadvise.md) -Methode abgebrochen wird. Die **Advise** -Implementierung sollte der Benachrichtigungs Registrierung eine Verbindungsnummer zuweisen und **AddRef** für diese Verbindungsnummer aufrufen, bevor Sie im _lpulConnection_ -Parameter zurückgegeben wird. Dienstanbieter können das Advise-Senke-Objekt freigeben, bevor die Registrierung abgebrochen wird, aber Sie dürfen die Verbindungsnummer erst freigeben, wenn * * Unadvise * * aufgerufen wurde. 
   
-Nach ein Aufruf von **Advise** erfolgreich abgeschlossen wurde und bevor ** Unadvise ** wurde aufgerufen, Clients müssen bereiten Sie für das Empfängerobjekt Advise freigegeben werden muss. Ein Client sollte daher seine Advise-Empfängerobjekt freigeben, nachdem **Advise** zurückgegeben, wenn es eine bestimmte langfristige Verwendung verfügt. 
+Nachdem ein Anruf bei **Advise** erfolgreich war und bevor * * Unadvise * * aufgerufen wurde, müssen Clients für das Advise-Senke-Objekt freigegeben werden. Ein Client sollte daher sein Advise-Senke-Objekt freigeben, nachdem **Advise** zurückgegeben wird, es sei denn, er hat eine bestimmte langfristige Verwendung dafür. 
   
-Aufgrund der asynchronen Verhalten der Benachrichtigung erhalten Implementierungen integrieren, die Tabelle spalteneinstellungen ändern Benachrichtigungen mit Informationen in einer vorherigen Spaltenreihenfolge angeordnet sind. Beispielsweise könnte eine Tabellenzeile für eine Nachricht zurückgegeben werden, die nur aus dem Container gelöscht wurde. Wenn die Änderung der Einstellung wurde, und Informationen gesendet, aber die Benachrichtigung Tabellenansicht mit diesen Informationen noch nicht aktualisiert wurde, wird eine solche Benachrichtigung gesendet.
+Aufgrund des asynchronen Verhaltens der Benachrichtigung können Implementierungen, die Tabellenspalten Einstellungen ändern, Benachrichtigungen mit Informationen erhalten, die in einer vorherigen Spaltenreihenfolge organisiert sind. Beispielsweise kann eine Tabellenzeile für eine Nachricht zurückgegeben werden, die soeben aus dem Container gelöscht wurde. Eine solche Benachrichtigung wird gesendet, wenn die Spalten Einstellung geändert wurde und Informationen über Sie gesendet wurden, aber die Benachrichtigungstabellen Ansicht noch nicht mit diesen Informationen aktualisiert wurde.
   
-Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event Notification in MAPI](event-notification-in-mapi.md). Spezifische Informationen zur Tabelle Benachrichtigung finden Sie unter [Zur Tabelle Benachrichtigungen](about-table-notifications.md). Informationen zur Verwendung der Methods **IMAPISupport** zum Benachrichtigung zu unterstützen finden Sie unter [Event Notification unterstützen](supporting-event-notification.md).
+Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Spezifische Informationen zur Tabellenbenachrichtigung finden Sie unter [Informationen zu Tabellen Benachrichtigungen](about-table-notifications.md). Informationen zur Verwendung der **IMAPISupport** -Methoden zur Unterstützung von Benachrichtigungen finden Sie unter [unterstützende Ereignisbenachrichtigung](supporting-event-notification.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContestTableListCtrl::NotificationOn  <br/> |MFCMAPI (engl.) verwendet die **IMAPITable::Advise** -Methode, um für Benachrichtigungen der Tabellenansicht auf dem neuesten Stand zu registrieren.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |CContestTableListCtrl:: NotificationOn  <br/> |MFCMAPI verwendet die **IMAPITable:: Advise** -Methode, um Benachrichtigungen zu registrieren, damit die Tabellenansicht aktuell bleibt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

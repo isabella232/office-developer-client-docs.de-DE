@@ -8,19 +8,19 @@ api_type:
 - COM
 ms.assetid: c510b7a5-0f55-46af-bddb-40a8195a84d4
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a006c126ec5e0fb86847226195efd03f7ae5351f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d58fc0eae5401773d28f5bbe510913ff381ade8d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331913"
 ---
 # <a name="attattachrenddata"></a>attAttachRenddata
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Attribut **AttAttachRenddata** wird als eine **RENDDATA** Struktur codiert, die beschreibt, wie und, in dem die Anlage im Nachrichtentext gerendert wird. Die Struktur **RENDDATA** ist einfach in der TNEF-Stream als beginnend mit dem ersten Element in der Struktur **RENDDATA** **sizeof(RENDDATA)** -Bytes codiert. Wenn der Wert der **RENDDATA** -Struktur **DwFlags** Members auf **MAC_BINARY**festgelegt ist, werden die Daten für die folgenden Anlage im MacBinary-Format gespeichert. Andernfalls werden die Anlagendaten wie gewohnt codiert.
+Das **attAttachRenddata** -Attribut wird als eine **RENDDATA** -Struktur codiert, die beschreibt, wie und wo die Anlage im Nachrichtentext gerendert wird. Die **RENDDATA** -Struktur wird einfach im TNEF-Stream als **sizeof (RENDDATA)-** Byte codiert, beginnend mit dem ersten Element der **RENDDATA** -Struktur. Wenn der Wert des **dwFlags** -Elements der **RENDDATA** -Struktur auf **MAC_BINARY**festgelegt ist, werden die Daten für die folgende Anlage im MacBinary-Format gespeichert. Andernfalls werden die Anlagendaten wie üblich codiert.
   
 

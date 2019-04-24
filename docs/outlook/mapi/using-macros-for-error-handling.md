@@ -7,37 +7,37 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 351405ca-b72b-4e9e-bc8e-947344588970
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 715cd001c5eab89f40c31200a12deaf6981b9a61
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9e6901d6583e7a7924a4a7c19c0a262bcef74bd3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329659"
 ---
 # <a name="using-macros-for-error-handling"></a>Verwenden von Makros zur Fehlerbehandlung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Es gibt mehrere Makros für entwickelt HRESULT-Werte zu erleichtern.
+Es gibt mehrere Makros, um die Arbeit mit HRESULT-Werten zu vereinfachen.
   
-Es gibt zwei Sätze von Makros, die für Fehler oder Erfolg zu testen: HR_SUCCEEDED und HR_FAILED und SUCCEEDED und FAILED. Erfolgreich abgeschlossen wurde, handelt es sich um dieselbe wie HR_SUCCEEDED und fehlgeschlagen HR_FAILED identisch ist.
+Es gibt zwei Gruppen von Makros, die auf Fehler oder Erfolg testen: HR_SUCCEEDED und HR_FAILED und erfolgreich und fehlgeschlagen. SUCCEEDed ist identisch mit HR_SUCCEEDED und FAILED ist identisch mit HR_FAILED.
   
-In diesem Fall verwenden Sie das Makro **ResultFromScode** , um die HRESULT-Variable auf den entsprechenden HRESULT-Wert für S_OK festzulegen. 
+Verwenden Sie in diesem Fall das **ResultFromScode** -Makro, um die HRESULT-Variable auf den entsprechenden HRESULT-Wert für S_OK festzulegen. 
   
 Häufig verwendete Makros werden in der folgenden Tabelle kurz beschrieben.
   
 |**Makro**|**Beschreibung**|
 |:-----|:-----|
-|**MAKE_HRESULT** <br/> |Erstellt ein HRESULT aus seiner Komponenten.  <br/> |
-|**HR_SUCCEEDED** <br/> |Ein HRESULT für einen Erfolg oder eine Warnung Bedingung getestet.  <br/> |
-|**HR_FAILED** <br/> |Ein HRESULT für ein Fehlerzustand getestet.  <br/> |
-|**HRESULT_CODE** <br/> |Den Fehler Codeteil der HRESULT extrahiert.  <br/> |
-|**HRESULT_FACILITY** <br/> |Extrahiert die Einrichtung von HRESULT.  <br/> |
-|**HRESULT_SEVERITY** <br/> |Extrahiert das Severity Bit Schweregrad.  <br/> |
-|**ERFOLGREICH ABGESCHLOSSEN WURDE** <br/> |Ein HRESULT für einen Erfolg oder eine Warnung Bedingung getestet.  <br/> |
-|**FEHLER BEI** <br/> |Ein HRESULT für ein Fehlerzustand getestet.  <br/> |
+|**MAKE_HRESULT** <br/> |Erstellt ein HRESULT aus seinen Komponenten.  <br/> |
+|**HR_SUCCEEDED** <br/> |Testet ein HRESULT für eine Erfolgs-oder Warnungsbedingung.  <br/> |
+|**HR_FAILED** <br/> |Testet ein HRESULT auf eine Fehlerbedingung.  <br/> |
+|**HRESULT_CODE** <br/> |Extrahiert den Fehlercode Teil von HRESULT.  <br/> |
+|**HRESULT_FACILITY** <br/> |Extrahiert die Einrichtung aus dem HRESULT.  <br/> |
+|**HRESULT_SEVERITY** <br/> |Extrahiert das Schweregrad-Bit aus dem Schweregrad.  <br/> |
+|**GELUNGEN** <br/> |Testet ein HRESULT für eine Erfolgs-oder Warnungsbedingung.  <br/> |
+|**NICHT** <br/> |Testet ein HRESULT auf eine Fehlerbedingung.  <br/> |
    
 

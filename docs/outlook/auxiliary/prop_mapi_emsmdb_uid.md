@@ -6,34 +6,34 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 8e5b42e3-844f-488c-ba6f-b74c447b1d59
-description: Stellt eine ACCT_BIN-Struktur, die UID des ein Exchange-Konto enthält.
+description: Stellt eine ACCT_BIN-Struktur dar, die die UID eines Exchange-Kontos enthält.
 ms.openlocfilehash: 6bb529da82cc24e41ddc70c5031f84050a2ece25
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326551"
 ---
 # <a name="propmapiemsmdbuid"></a>PROP_MAPI_EMSMDB_UID
 
-Stellt eine [ACCT_BIN](acct_bin.md) -Struktur, die UID des ein Exchange-Konto enthält. 
+Stellt eine [ACCT_BIN](acct_bin.md) -Struktur dar, die die UID eines Exchange-Kontos enthält. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x2009  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_BINARY  <br/> |
-|Eigenschafts-Tag:  <br/> |0x20090102  <br/> |
-|Access:  <br/> |Schreibgeschützt.  <br/> |
+|Eigenschafts:  <br/> |PT_BINARY  <br/> |
+|Property-Tag:  <br/> |0x20090102  <br/> |
+|Access  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie diese Eigenschaft mithilfe von [IOlkAccount::GetProp](iolkaccount-getprop.md).
+Rufen Sie diese Eigenschaft mithilfe von [IOlkAccount:: getprop](iolkaccount-getprop.md)ab.
   
-Verwenden Sie [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md) , um sicherzustellen, wenn das Konto ein Exchange-Konto ist. Wenn dies der Fall, **Eigenschaft\_MAPI_EMSMDB_UID** ist eine **ACCT_BIN** , die die **EmsmdbUID**enthält, die die eindeutige ID, für die Exchange-Konto ist. Wenn das Konto nicht um ein Exchange-Konto handelt, ist diese Eigenschaft nicht definiert.
+Verwenden Sie [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md) , um zu überprüfen, ob das Konto ein Exchange-Konto ist. Wenn dies der Fall ist, ist **Prop\_MAPI_EMSMDB_UID** ein **ACCT_BIN** , das die **emsmdbUID**, die eindeutige ID, für das Exchange-Konto enthält. Wenn es sich bei dem Konto nicht um ein Exchange-Konto handelt, ist diese Eigenschaft nicht definiert.
   
 ## <a name="see-also"></a>Siehe auch
 

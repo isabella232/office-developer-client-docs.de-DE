@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: f7182631-7f0e-4f4a-995d-22c0bedd7b6a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c976375d428e477de688f42eaa3ff8396fcfd4fc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2780f33744cacf07671aa70f1d5b4af49e95da43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331829"
 ---
 # <a name="cbnewflatentrylist"></a>CbNewFLATENTRYLIST
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes, die für eine neue [FLATENTRYLIST](flatentrylist.md) -Struktur zugeordnet werden sollen, die mehrere [FLATENTRY](flatentry.md) Strukturen einer angegebenen Größe enthält. 
+Berechnet die Anzahl der Bytes, die für eine neue [FLATENTRYLIST](flatentrylist.md) -Struktur reserviert werden sollen, die mehrere [FLATENTRY](flatentry.md) -Strukturen einer angegebenen Größe enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**FLATENTRYLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**FLATENTRYLIST** <br/> |
    
 ```cpp
 CbNewFLATENTRY (_cb)
@@ -38,9 +38,9 @@ CbNewFLATENTRY (_cb)
 
 ## <a name="parameters"></a>Parameter
 
- __cb_
+ __CB_
   
-> Anzahl der Bytes in den **FLATENTRY** Strukturen, die in die neue Struktur **FLATENTRYLIST** eingeschlossen werden. 
+> Die Anzahl der Bytes in den **FLATENTRY** -Strukturen, die in die neue **FLATENTRYLIST** -Struktur eingeschlossen werden sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

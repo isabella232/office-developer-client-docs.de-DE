@@ -1,5 +1,5 @@
 ---
-title: Formular Verben
+title: Formularverben
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,27 +8,27 @@ api_type:
 - COM
 ms.assetid: a63bf0a7-24e6-4eef-98e8-3744ce5f9f2d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 27999c141fdeb3e1610213db128bc4ad3d049e6d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dbd08437dfdd38c3a43cbf12eae8710cc8e3661e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327489"
 ---
-# <a name="form-verbs"></a>Formular Verben
+# <a name="form-verbs"></a>Formularverben
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benutzeroberfläche des Formulars bietet in der Regel Menüelemente oder Steuerelemente, mit denen Benutzer die verschiedenste Aktion mit dem Formular. Es ist dem Formular Server Auftrag an diese Benutzeraktionen zu behandeln. Diese Schnittstelle wird mit standard Win32-APIs implementiert. Schreiben einer verhält sich wie andere Schnittstellen für regulären Win32-Programme schreiben.
+Die Benutzeroberfläche eines Formulars bietet normalerweise Menüelemente oder Steuerelemente, mit denen Benutzer eine Art von Aktion mit dem Formular ausführen können. Diese Benutzeraktionen werden vom Formularserver ausgeführt. Diese Schnittstelle wird mit standardmäßigen Win32-APIs implementiert; Writing One ist genau wie das Schreiben von anderen Schnittstellen für reguläre Win32-Programme.
   
-Oft sind Benutzeraktionen Verben zugeordnet. Ein Verb ist der Name für eine Aktion, die speziell für eine bestimmte Nachrichtenklasse ist. Beispielsweise ist **Antwort** ein Verb, die jeweils eine unterschiedliche Interpretation von diesem Verb möglicherweise viele Formular Server implementiert wird. Verben werden manchmal als Befehle bezeichnet. 
+Häufig werden Benutzeraktionen mit Verben verknüpft. Ein Verb ist der Name für eine Aktion, die für eine bestimmte Nachrichtenklasse spezifisch ist. **Reply** ist beispielsweise ein Verb, das von vielen Formular Servern implementiert wird, von denen jede eine andere Interpretation dieses Verbs haben kann. Verben werden manchmal auch als Befehle bezeichnet. 
   
 > [!NOTE]
-> Nicht alle Menüelemente und Steuerelemente eines Formulars entsprechen ein Verb. Beispielsweise entspricht eine Schaltfläche **Abbrechen** nicht abbrechen Verb innerhalb des Servers Formular. In der Regel Verben, die Aktionen, die speziell für eine bestimmte Nachrichtenklasse oder eine Gruppe von Nachrichtenklassen zugeordnet sind. Obwohl unterschiedliche Nachrichtenklassen verschiedene Sätze von Verben unterstützen können, unterstützen das Open Verb, das Benutzeroberfläche des Formulars angezeigt und lädt ihn mit der Nachricht Eigenschaftswerte mindestens. 
+> Nicht alle Menüelemente und Steuerelemente in einem Formular entsprechen einem Verb. Beispielsweise entspricht eine **Abbrechen** -Schaltfläche nicht einem Abbrechen-Verb innerhalb des Formular Servers. Verben sind in der Regelaktionen zugeordnet, die spezifisch für eine bestimmte Nachrichtenklasse oder eine Gruppe von Nachrichtenklassen sind. Obwohl unterschiedliche Nachrichtenklassen unterschiedliche Verben unterstützen können, unterstützen alle mindestens das offene Verb, das die Benutzeroberfläche des Formulars anzeigt und mit den Eigenschaftenwerten der Nachricht lädt. 
   
-Verben können keine Parameter verwendet werden. Formulare, die Befehle mit Variable Parameter exportieren müssen die Automatisierung Mechanismen verwenden.
+Verben können keine Parameter annehmen. Formulare, die Befehle mit Variablen Parametern exportieren, müssen die Automatisierungsmechanismen verwenden.
   
-Clients können ermitteln, welche Verben von einer bestimmten Nachrichtenklasse über die Methode [IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md) unterstützt werden die von der MAPI-Formular-Manager implementiert wird. Der Formular-Manager ruft diese Informationen aus der Konfigurationsdatei des Formulars ab. Der Verb Satz von dieser Methode zurückgegebene wird vom Client verwendet, um dem Benutzer anzuzeigen, welche Befehle für eine Nachricht ausgeführt werden können. Beispielsweise kann ein Client Benutzer über eine Meldung an Verben für die Nachricht der rechten Maustaste auf aktivieren. 
+Clients können mithilfe der [IMAPIFormInfo:: CalcVerbSet](imapiforminfo-calcverbset.md) -Methode, die vom MAPI-Formular-Manager implementiert wird, bestimmen, welche Verben von einer bestimmten Nachrichtenklasse unterstützt werden. Der Formular-Manager ruft diese Informationen aus der Konfigurationsdatei des Formulars ab. Das von dieser Methode zurückgegebene Verb Set wird vom Client verwendet, um den Benutzer anzuzeigen, welche Befehle für eine Nachricht ausgeführt werden können. Beispielsweise kann ein Client Benutzern ermöglichen, mit der rechten Maustaste auf eine Nachricht zu klicken, um Verben anzuzeigen, die für diese Nachricht gelten. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagIpmOutboxEntryId (kanonische Eigenschaft)
+title: Kanonische Pidtagipmoutboxentryid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fa03d819-2621-4990-80ae-4140b83a8a85
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3b0332fb81dadb0f10ab6f55fae317349ab9b8d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ec73a456f87b18905c180803d26720ef09254c7e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327895"
 ---
-# <a name="pidtagipmoutboxentryid-canonical-property"></a>PidTagIpmOutboxEntryId (kanonische Eigenschaft)
+# <a name="pidtagipmoutboxentryid-canonical-property"></a>Kanonische Pidtagipmoutboxentryid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des Ordners Postausgang standard zwischen Personen Nachricht (IPM). 
+Enthält die Eintrags-ID des Standardordners für die zwischenmenschlichen Nachricht (IPM). 
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält die Eintrags-ID des Ordners Postausgang standard zwischen Personen Nach
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ausgehende Nachrichten werden in der Regel im Ordner Postausgang erstellt. In diesem Ordner für die Übermittlung sollte Nachrichten zwischen Personen platziert werden. 
+Ausgehende Nachrichten werden in der Regel im Ordner Postausgang erstellt. Zwischenmenschliche Nachrichten sollten in diesem Ordner zur Übermittlung hinzugefügt werden. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

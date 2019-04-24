@@ -1,5 +1,5 @@
 ---
-title: Erweiterte Client-Themen
+title: Erweiterte Client Themen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,45 +8,45 @@ api_type:
 - COM
 ms.assetid: 9eb052b5-c0ad-418b-9469-e11ffe450fb7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 59f245972fabde8db5123c4d0d39e259257ecfdc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d0a43d5977b2007416caa1793ad779e790498cac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331381"
 ---
-# <a name="advanced-client-topics"></a>Erweiterte Client-Themen
+# <a name="advanced-client-topics"></a>Erweiterte Client Themen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieser Abschnitt enthält Unterthemen zum einige Features mehr ungewöhnlicher oder schwer in einer Clientanwendung zu implementieren.
+Dieser Abschnitt enthält Unterthemen zum Implementieren einiger der ungewöhnlicheren oder schwierigeren Features in einer Clientanwendung.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 [Schreiben eines automatisierten Clients](writing-an-automated-client.md)
   
-> Beschreibt, wie einen automatisierten Client erstellt, der die Benutzeroberfläche wird unterdrückt.
+> Beschreibt, wie ein automatisierter Client geschrieben wird, der die Benutzeroberfläche unterdrückt.
     
-[Schreiben eines Remote-Viewers](writing-a-remote-viewer.md)
+[Schreiben eines Remote Viewers](writing-a-remote-viewer.md)
   
-> Beschreibt, wie eine Clientanwendung schreiben den gesteuerten Zugriff auf Nachrichten, die auf einem anderen Computer gespeichert.
+> Beschreibt das Schreiben einer Clientanwendung, die den kontrollierten Zugriff auf Nachrichten bereitstellt, die auf einem anderen Computer gespeichert sind.
     
-[Schreiben eines Hierarchie Viewers](writing-a-hierarchy-viewer.md)
+[Schreiben eines Hierarchie-Viewers](writing-a-hierarchy-viewer.md)
   
-> Beschreibt, wie einen Hierarchie Viewer, einer Komponente der Benutzeroberfläche zu schreiben, die für die Anzeige von Ordner Tabellen und Address Book Container Hierarchie verwendet wird.
+> Beschreibt das Schreiben eines Hierarchie-Viewers, eine Benutzeroberflächenkomponente, die für die Anzeige von Ordner-und Adressbuchcontainer-Hierarchietabellen verwendet wird.
     
 [Verwenden der MAPI-Dienstprogramme](using-the-mapi-utilities.md)
   
-> Beschreibt, wie Sie MAPI-Dienstprogramme verwenden, die von Tabellendaten und Datenobjekte Eigenschaft sowie einer Reihe von Funktionen bestehen, um verschiedene Features unterstützen
+> Beschreibt die Verwendung von MAPI-Dienstprogrammen, die aus Tabellendaten und Eigenschaftendaten Objekten und einer Vielzahl von Funktionen zur Unterstützung von verschiedenen Features bestehen.
     
 [Implementieren eines Statusindikators](implementing-a-progress-indicator.md)
   
-> Beschreibt, wie eine Statusanzeige zu implementieren.
+> Beschreibt, wie eine Statusanzeige implementiert wird.
     
-[Zentralisieren des Empfangs von NDRs](centralizing-the-receipt-of-ndrs.md)
+[Zentralisieren des Empfangs von Unzustellbarkeitsberichten](centralizing-the-receipt-of-ndrs.md)
   
-> Beschreibt, wie den Empfang von Unzustellbarkeitsberichten zentralisieren.
+> Beschreibt, wie der Empfang von Unzustellbarkeitsberichten zentralisiert wird.
     
 

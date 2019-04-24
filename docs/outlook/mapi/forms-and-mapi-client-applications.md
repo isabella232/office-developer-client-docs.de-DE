@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 658ebb86-e9f4-44d8-a5f1-6f66eaf75dd6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1357482b372e83be4aab1f77037908cafc0b3f05
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 36c137555a051dbc56d5023a7b2244126f4f8255
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327293"
 ---
 # <a name="forms-and-mapi-client-applications"></a>Formulare und MAPI-Clientanwendungen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Da alle MAPI-Nachrichten werden Instanzen des Forms sind, Clientanwendungen anzeigen und interagieren mit Objekten Weise mit anderen Objekten Nachricht.
+Da alle MAPI-Nachrichten Instanzen von Formularen sind, zeigen Clientanwendungen und interagieren mit Formularobjekten genau wie bei anderen Nachrichtenobjekten.
   
-Clientanwendungen, die MAPI-Formular-Schnittstellen verwenden, können zusätzliche Interaktion mit Formular-Objekte enthalten. Clientanwendungen können besonderen Verben definiert, die von einem Formular zum Bereitstellen für Benutzer mit den gesamten Bereich der Aktivitäten, die für die direkte Verwendung durch den Formular-Designer. Clients können auch alle benutzerdefinierten Eigenschaften, die der Formular Server, mit denen Benutzer sortieren, eine Vorschau anzeigen oder zur Verwaltung von Formularen in die Client-Schnittstelle verfügbar macht.
+Client Anwendungen, die die MAPI-Formular Schnittstellen verwenden, können zusätzliche Interaktionen mit Formularobjekten bereitstellen. Client Anwendungen können alle von einem Formular definierten speziellen Verben verwenden, um Benutzern die gesamte Bandbreite der Interaktionen bereitzustellen, die vom Designer des Formulars bestimmt werden sollen. Clients können auch beliebige benutzerdefinierte Eigenschaften verwenden, die vom Formularserver verfügbar gemacht werden, um Benutzern zu helfen, Formulare auf der Benutzeroberfläche des Clients zu sortieren, in der Vorschau anzuzeigen oder anderweitig zu verwalten.
   
-Weitere Informationen finden Sie unter [Behandeln von MAPI-Formulare](handling-mapi-forms.md).
+Weitere Informationen finden Sie unter [Behandeln von MAPI-Formularen](handling-mapi-forms.md).
   
 ## <a name="see-also"></a>Siehe auch
 

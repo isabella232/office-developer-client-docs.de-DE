@@ -8,38 +8,38 @@ f1_keywords:
 - Vis_DSS.chm82251511
 localization_priority: Normal
 ms.assetid: c01dd938-677c-b2ba-8f56-4638e7e988fd
-description: Wertet einen der beiden Ausdrücke abhängig vom Wert des Status aus.
-ms.openlocfilehash: 2cfdf23986a06dcc109106bd50a1a38e5af91313
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Wertet einen der beiden Ausdrücke in Abhängigkeit vom Wert von State aus.
+ms.openlocfilehash: 544bb2b19dc610591afc78c407301098fac9c7c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331325"
 ---
 # <a name="userui-function"></a>USERUI Function
 
-Wertet einen der beiden Ausdrücke abhängig vom Wert des _Status_aus.
+Wertet einen der beiden Ausdrücke in Abhängigkeit vom Wert von _State_aus.
   
 ## <a name="syntax"></a>Syntax
 
-USERUI (** *Zustand* **, ** *Standardausdruck aus* **, ** *BenutzerAusdruck ausgewertet* **) 
+USERUI (* * *Status* * *, * * *Standardwert* * *, * * *Benutzertyp* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _state_ <br/> |Erforderlich  <br/> |**Boolean** <br/> |Bestimmt, welche der auszuwertende Ausdruck.  <br/> |
-| _Standardausdruck aus_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Standardausdruck.  <br/> |
-| _BenutzerAusdruck ausgewertet_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Ausdruck, der vom Benutzer bereitgestellt wird.  <br/> |
+| _state_ <br/> |Erforderlich  <br/> |**Boolean** <br/> |Bestimmt, welcher Ausdruck ausgewertet werden soll.  <br/> |
+| _DEFAULTAusdruck_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Standardausdruck.  <br/> |
+| _UserForm_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein vom Benutzer bereitgestellter Ausdruck.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn _Zustand_ 0 ist, wertet die USERUI-Funktion den _Standardausdruck aus_. Wenn _Zustand_ 1 ist, wird der _BenutzerAusdruck ausgewertet_.
+Wenn _Status_ 0 ist, wertet die USERUI-Funktion den _Standard_Ausdruck aus. Wenn _Status_ 1 ist, wird die _Benutzer_Ausdruck ausgewertet.
   
 ## <a name="example"></a>Beispiel
 
-USERUI (1, wenn (Breite\>6 Zoll, 6 In, Breite), Breite\*0,75) 
+USERUI (1, if (Breite\>6in, 6in, Breite), Breite\*0,75) 
   
-Wertet den Ausdruck Breite\*.075 und gibt das Ergebnis zurück. 
+Wertet den Ausdruck\*Width. 075 und gibt das Ergebnis zurück. 
   
 

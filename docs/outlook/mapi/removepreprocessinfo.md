@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25f46937-abac-4a0b-83db-eeac9451c112
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c90b569414c1710cc1065fdb4fd72738e265ebff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d80c73aef780a0da39f3939f71462488a067de5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328378"
 ---
 # <a name="removepreprocessinfo"></a>RemovePreprocessInfo
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt vorverarbeitet Informationen von einer [PreprocessMessage](preprocessmessage.md) Basis-Funktion aus einer Nachricht verfasst. 
+Entfernt vorverarbeitete Informationen, die von einer [PreprocessMessage](preprocessmessage.md) -basierten Funktion geschrieben wurden, aus einer Nachricht. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Definierte Funktion von implementiert:  <br/> |Transportanbieter  <br/> |
-|Definierte Funktion aufgerufen:  <br/> |MAPI-Warteschlange  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Definierte Funktion, implementiert von:  <br/> |Transport Anbieter  <br/> |
+|Definierte Funktion, aufgerufen von:  <br/> |MAPI-Spooler  <br/> |
    
 ```cpp
 HRESULT RemovePreprocessInfo(
@@ -43,18 +43,18 @@ HRESULT RemovePreprocessInfo(
 
  _lpMessage_
   
-> [in] Zeiger auf die vorverarbeiteten Nachricht aus der Informationen sind, entfernt werden soll.
+> in Zeiger auf die vorverarbeitete Nachricht, von der die Informationen entfernt werden sollen.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Vorverarbeitete Informationen wurde erfolgreich entfernt.
+> Vorverarbeitete Informationen wurden erfolgreich entfernt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Warteschlange Ruft eine Funktion basierend auf **RemovePreprocessInfo**. Ein Transportdienstes registriert die Funktion **RemovePreprocessInfo** basierend gleichzeitig die parallele **PreprocessMessage** Basis-Funktion in einem Aufruf der [IMAPISupport::RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode registriert. 
+Der MAPI-Spooler Ruft eine auf **RemovePreprocessInfo**basierende Funktion auf. Ein Transportanbieter registriert die **RemovePreprocessInfo** -basierte Funktion bei der Registrierung der parallelen **PreprocessMessage** -basierten Funktion bei einem Aufruf der [IMAPISupport:: RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode. 
   
-Ein Bild rendern geeignet für die Übertragung von Fax ist ein Beispiel der vorverarbeiteten Informationen, die von einer Funktion, die von der [PreprocessMessage](preprocessmessage.md)Funktionsprototyp definierten geschrieben. Die MAPI-Warteschlange Ruft eine **RemovePreprocessInfo** -Funktion in der Regel nach dem Senden einer Nachricht, die vorverarbeiteten Informationen enthält. 
+Ein für die Fax-Übertragung geeignetes Bildrendering ist ein Beispiel für vorverarbeitete Informationen, die von einer durch den [PreprocessMessage](preprocessmessage.md)-Funktionsprototyp definierten Funktion geschrieben werden. Der MAPI-Spooler ruft in der Regel eine **RemovePreprocessInfo** -Funktion nach dem Senden einer Nachricht ab, die vorverarbeitete Informationen enthält. 
   
 

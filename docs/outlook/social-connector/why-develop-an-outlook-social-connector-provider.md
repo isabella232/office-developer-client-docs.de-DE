@@ -7,29 +7,29 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3e8cf5a1-31d1-4d69-8db3-511b6880eb89
-description: Ein Outlook Social Connector (OSC)-Anbieter ermöglicht Office Benutzer innerhalb einer Office-Clientanwendung anzeigen eine Aggregation von Updates für soziale Netzwerke Informationen auf einer Website professional oder sozialen Netzwerk angewendet.
-ms.openlocfilehash: 8a567f6891fbc0812471b81db3ee698dd8a6eb5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ein OSC-Anbieter (Outlook Social Connector) ermöglicht es Office-Benutzern, innerhalb einer Office-Clientanwendung eine Aggregation von Updates für soziale Informationen anzuzeigen, die auf einem professionellen oder sozialen Netzwerkstandort angewendet werden.
+ms.openlocfilehash: 06514937ab07fa78b83a4687eaeba8967213d76c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329138"
 ---
 # <a name="why-develop-an-outlook-social-connector-provider"></a>Gründe für die Entwicklung eines Outlook Social Connector-Anbieters
 
-Ein Outlook Social Connector (OSC)-Anbieter ermöglicht Office Benutzer innerhalb einer Office-Clientanwendung anzeigen eine Aggregation von Updates für soziale Netzwerke Informationen auf einer Website professional oder sozialen Netzwerk angewendet. SharePoint Server, SharePoint-Arbeitsbereich Lync-Clients und alle Office-Clientanwendungen, die Anwesenheitsinformationen und der Visitenkarte unterstützen unterstützen das osc bilden.
+Ein OSC-Anbieter (Outlook Social Connector) ermöglicht es Office-Benutzern, innerhalb einer Office-Clientanwendung eine Aggregation von Updates für soziale Informationen anzuzeigen, die auf einem professionellen oder sozialen Netzwerkstandort angewendet werden. SharePoint Server, SharePoint Workspace, lync-Client und alle Office-Clientanwendungen, die Anwesenheitsinformationen unterstützen, und die VisitenKarte unterstützen den OSC.
   
-Verwenden einen Anbieter für soziale Netzwerke, zeigt die OSC zusätzliche Informationen zu einer Person in der Visitenkarte oder im Bereich Personen Outlook wie in Abbildung 1 dargestellt. Da die OSC auf ein open Anbietermodell erstellt wird, können Sie bequem Anbieter entwickelt der OSC zum Anzeigen von Daten (beispielsweise Freunde, Profile, Aktivitäten und Informationen über die Beziehung) für soziale Netzwerke in Office erstellen.
+Mit einem Anbieter für soziale Netzwerke zeigt der OSC zusätzliche Informationen zu einer Person auf der VisitenKarte oder im Outlook-Personen Bereich an, wie in Abbildung 1 dargestellt. Da OSC auf einem offenen Anbietermodell basiert, können Sie Anbieter für die Zusammenarbeit mit dem OSC verwenden, um Daten zu sozialen Netzwerken (beispielsweise Freunde, Profile, Aktivitäten und Beziehungsinformationen) in Office anzuzeigen.
   
-Ausreichend Abstand zu platzieren öffentliche sozialen Netzwerk-Websites können Sie OSC-anbietererweiterung auch zum Erstellen von Anbietern für Line-of-Business Applications oder interne Websites von Unternehmen und ihre Dienste in Office integrieren verwenden.
+Neben öffentlichen Social Network-Websites können Sie auch OSC-Anbieter Erweiterbarkeit verwenden, um Anbieter für Branchenanwendungen oder interne Unternehmenswebsites zu erstellen und ihre Dienste in Office zu integrieren.
   
-**Abbildung 1. Outlook Connector für soziale Netzwerke Bereich**
+**Abbildung 1. Outlook-Connectorbereich für soziale Netzwerke**
 
 ![Bereich des Outlook Connector für soziale Netzwerke](media/2d6b867f-73d8-4a3b-b8bd-3844bc34bf4e.jpg)
   
 ## <a name="see-also"></a>Siehe auch
 
-- [QuickSteps für Informationen zum Entwickeln eines Providers](quick-steps-for-learning-to-develop-a-provider.md)  
+- [Schnelle Schritte für die Entwicklung eines Anbieters](quick-steps-for-learning-to-develop-a-provider.md)  
 - [Technische Anforderungen](technical-requirements.md)
 - [Über den OSC-Beispielvorlagen](osc-sample-templates.md) 
 - [Erste Schritte zum Entwickeln eines Outlook Connector Providers für soziale Netzwerke](getting-started-with-developing-an-outlook-social-connector-provider.md)

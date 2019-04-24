@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7663c640-396e-4720-9345-370d0856bd49
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a3343381709b7ce3370ba481ad8dbb935c7d4165
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 778ff8f36478740e5ee23ba439db1e328eca2e06
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328812"
 ---
 # <a name="imapitablewaitforcompletion"></a>IMAPITable::WaitForCompletion
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Unterbricht die Verarbeitung, bis eine oder mehrere asynchrone Vorgänge in Bearbeitung in der Tabelle abgeschlossen haben.
+Hält die Verarbeitung an, bis mindestens ein asynchroner Vorgang abgeschlossen ist, der in der Tabelle ausgeführt wurde.
   
 ```cpp
 HRESULT WaitForCompletion(
@@ -39,33 +39,33 @@ ULONG FAR * lpulTableStatus
 
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  _ulTimeout_
   
-> [in] Maximale Anzahl von Millisekunden zu warten, bis der asynchrone Vorgang oder Vorgänge abgeschlossen. Legen Sie zum Warten auf unbestimmte Zeit, bis Abschluss auftritt, _UlTimeout_ auf 0xFFFFFFFF ein. 
+> in Maximale Anzahl von Millisekunden, die gewartet werden soll, bis der asynchrone Vorgang abgeschlossen ist. Wenn auf unbestimmte Zeit gewartet werden soll, bis der Abschluss auftritt, legen Sie _ulTimeout_ auf 0xFFFFFFFF. 
     
  _lpulTableStatus_
   
-> [in, out] Bei der Eingabe ein gültiger Zeiger oder NULL. Bei der Ausgabe ist _LpulTableStatus_ gültiger Zeiger ist, zeigt es auf den aktuellen Status der Tabelle. Wenn _LpulTableStatus_ NULL ist, werden keine Statusinformationen zurückgegeben. Wenn **WaitForCompletion** nicht erfolgreichen HRESULT-Wert zurückgibt, sind der Inhalt der _LpulTableStatus_ nicht definiert. 
+> [in, out] Bei der Eingabe ein gültiger Zeiger oder NULL. Wenn _lpulTableStatus_ ein gültiger Zeiger ist, zeigt er auf den letzten Status der Tabelle. Wenn _lpulTableStatus_ ist, werden keine Statusinformationen zurückgegeben. Wenn **WaitForCompletion** einen nicht erfolgreichen HRESULT-Wert zurückgibt, sind die Inhalte von _lpulTableStatus_ nicht definiert. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Wait-Vorgang wurde erfolgreich abgeschlossen.
+> Der Wartevorgang war erfolgreich.
     
 MAPI_E_NO_SUPPORT 
   
-> Die Tabelle unterstützt keine Anzeige für wartende für den Abschluss der asynchronen Vorgänge.
+> Die Tabelle unterstützt nicht das warten auf den Abschluss von asynchronen Vorgängen.
     
 MAPI_E_TIMEOUT 
   
-> Die asynchrone Operation oder Vorgänge wurde nicht in der angegebenen Zeit abgeschlossen.
+> Der asynchrone Vorgang oder die Vorgänge wurden nicht in der angegebenen Zeit abgeschlossen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Methode **IMAPITable::WaitForCompletion** hält die Verarbeitung, bis alle derzeit asynchrone Vorgänge für die Tabelle abgeschlossen haben. **WaitForCompletion** können die asynchrone Vorgänge entweder vollständig abgeschlossen oder für eine bestimmte Anzahl von Millisekunden auszuführen, wie _UlTimeout_, abgebrochen wird angegeben. Zum Erkennen von asynchrone Vorgänge in Bearbeitung rufen Sie die [IMAPITable::GetStatus](imapitable-getstatus.md) -Methode auf. 
+Mit der **IMAPITable:: WaitForCompletion** -Methode wird die Verarbeitung angehalten, bis alle asynchronen Vorgänge, die für die Tabelle ausgeführt werden, abgeschlossen sind. **WaitForCompletion** kann die asynchrone Vorgänge vollständig abgeschlossen oder für eine bestimmte Anzahl von Millisekunden ausgeführt, wie durch _ulTimeout_, bevor Sie unterbrochen wird. Um asynchrone Vorgänge zu finden, die ausgeführt werden, rufen Sie die [IMAPITable:: GetStatus](imapitable-getstatus.md) -Methode auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

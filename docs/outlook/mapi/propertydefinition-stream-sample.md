@@ -1,29 +1,29 @@
 ---
-title: PropertyDefinition Stream-Beispiel
+title: PropertyDefinition-Stream-Beispiel
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7919f4d7-04df-4a96-a5b1-b7b460890486
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fc216302cb68be4b0e9d57f60f491adebcba1975
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 63a8141221c0ff7a8c6ffee20587b682386f87b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328504"
 ---
-# <a name="propertydefinition-stream-sample"></a>PropertyDefinition Stream-Beispiel
+# <a name="propertydefinition-stream-sample"></a>PropertyDefinition-Stream-Beispiel
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird ein Beispiel eines PropertyDefinition Stream-Objekts. Das Stream-Objekt enthält eine Definition eines benutzerdefinierten Felds `TextField1`. Der **Text**ist, und die Definition im Format PropDefV2 ist.
+In diesem Thema wird ein Beispiel für einen PropertyDefinition-Stream beschrieben. Der Stream enthält eine Definition eines benutzerdefinierten Felds `TextField1`. Der Typ ist **Text**, und die Definition befindet sich im PropDefV2-Format.
   
-## <a name="data-dump"></a>Daten dump
+## <a name="data-dump"></a>Daten Dump
 
-Im folgenden finden ein Abbild der Daten des Stream-Objekts, wie er in einem binären-Editor angezeigt.
+Es folgt ein Daten Dump des Streams, wie er in einem binären Editor angezeigt würde.
   
-|Stream-offset|Datenbytes|ASCII-Daten|
+|Datenstrom Offset|Datenbytes|ASCII-Daten|
 |:-----|:-----|:-----|
 | `0000000000` <br/> | `03 01 01 00 00 00 45 00 00 00 08 00 00 00 00 00` <br/> | `???...E...?.....` <br/> |
 | `0000000010` <br/> | `0A 00 54 00 65 00 78 00 74 00 46 00 69 00 65 00` <br/> | `?.T.e.x.t.F.i.e.` <br/> |
@@ -32,82 +32,82 @@ Im folgenden finden ein Abbild der Daten des Stream-Objekts, wie er in einem bin
 | `0000000040` <br/> | `65 00 78 00 74 00 46 00 69 00 65 00 6C 00 64 00` <br/> | `e.x.t.F.i.e.l.d.` <br/> |
 | `0000000050` <br/> | `31 00 00 00 00 00` <br/> | `1.....` <br/> |
    
-Es folgt eine Analyse der Beispieldaten für den Datenstrom PropertyDefinition:
+Es folgt eine Analyse der Beispieldaten für den PropertyDefinition-Stream:
   
-- Version: Offset 0 x 0, 2 Bytes: 0x0103 (PropDefV2).
+- Version: Offset 0x0 festlegen, 2 Bytes: 0x0103 (PropDefV2).
     
-- FieldDefinitionCount: Offset 0 x 2, 4 Bytes: 0 x 1 (1).
+- FieldDefinitionCount: Offset 0x2, 4 Bytes: 0x1 (1).
     
-- FieldDefinitions: Offset 0 x 6, Array 1 FieldDefinition Stream-Objekts.
+- FieldDefinitions: Offset 0x6, Array of 1 FieldDefinition streamstruktur Stream.
     
-  - Flags: Offset 0, 4 Bytes x 6: 0 x 45 (PDO_IS_CUSTOM | PDO_PRINT_SAVEAS | PDO_PRINT_SAVEAS_DEF).
+  - Flags: Offset 0x6 bytes: 0x45 (PDO_IS_CUSTOM | PDO_PRINT_SAVEAS | PDO_PRINT_SAVEAS_DEF).
     
-  - VT: Offset 0xA 2 Bytes: 0 x 8 (**VT_BSTR**).
+  - VT: Offset 0xA, 2 Bytes: 0x8 (**VT_BSTR**).
     
-  - DispId: Offset 0xC 4 Bytes: 0 x 0 (0).
+  - DispId: Offset 0xC bytes: 0x0 festlegen (0).
     
-  - NmidNameLength: Offset 0 x 10, 2 Bytes: 0xA (10).
+  - NmidNameLength: Offset 0x10, 2 Bytes: 0xA (10).
     
-  - NmidName: Offset 0 x 12, Array von 10 WCHARs so lang wie. Unicode-Zeichenfolgenwert: "TextField1".
+  - NmidName: Offset 0x12, Array von 10 WCHARs. Unicode-Zeichenfolgenwert: "TextField1".
     
-  - NameANSI: Offset 0 x 26, PackedAnsiString-Stream.
+  - NameANSI: Offset 0x26, Packedansistring streamstruktur-Stream.
     
-    - Länge: Offset 0 x 26, 1 Byte: 0xA (10).
+    - Length: Offset 0x26, 1 Byte: 0xA (10).
       
-    - Zeichen: Offset 0 x 27, Array von 10 Zeichen. ANSI-String-Wert: "TextField1".
+    - Characters: Offset 0x27, Array of 10 CHARs. ANSI-Zeichenfolgenwert: "TextField1".
     
-  - FormulaANSI: Offset 0x31, PackedAnsiString-Stream.
+  - FormulaANSI: Offset 0x31, Packedansistring streamstruktur-Stream.
     
-    - Länge: Offset 0x31, 1 Byte: 0 x 0 (0).
+    - Length: Offset 0x31, 1 Byte: 0x0 festlegen (0).
       
-    - Zeichen: Offset 0 x 32, Array von 0 Zeichen. Leere ANSI-Zeichenfolge.
+    - Characters: Offset 0x32, Array of 0 CHARs. Leere ANSI-Zeichenfolge.
     
-  - ValidationRuleANSI: Offset 0 x 32, PackedAnsiString-Stream.
+  - ValidationRuleANSI: Offset 0x32, Packedansistring streamstruktur-Stream.
     
-    - Länge: Offset 0 x 32, 1 Byte: 0 x 0 (0).
+    - Length: Offset 0x32, 1 Byte: 0x0 festlegen (0).
       
-    - Zeichen: Offset 0 x 33, Array von 0 Zeichen. Leere ANSI-Zeichenfolge.
+    - Characters: Offset 0x33, Array of 0 CHARs. Leere ANSI-Zeichenfolge.
     
-  - ValidationTextANSI: Offset 0 x 33, PackedAnsiString-Stream.
+  - ValidationTextANSI: Offset 0x33, Packedansistring streamstruktur-Stream.
     
-    - Länge: Offset 0 x 33, 1 Byte: 0 x 0 (0).
+    - Length: Offset 0x33, 1 Byte: 0x0 festlegen (0).
       
-    - Zeichen: Offset 0 x 34, 0 char-Array. Leere ANSI-Zeichenfolge.
+    - Characters: Offset 0x34, Array of 0 CHARs. Leere ANSI-Zeichenfolge.
     
-  - ErrorANSI: Offset 0 x 34, PackedAnsiString-Stream.
+  - ErrorANSI: Offset 0x34, Packedansistring streamstruktur-Stream.
     
-    - Länge: Offset 0 x 34, 1 Byte: 0 x 0 (0).
+    - Length: Offset 0x34, 1 Byte: 0x0 festlegen (0).
       
-    - Zeichen: Offset 0x35 Array von 0 Zeichen. Leere ANSI-Zeichenfolge.
+    - Characters: Offset 0x35, Array of 0 CHARs. Leere ANSI-Zeichenfolge.
     
-  - InternalType: Offset 0x35 4 Bytes: 0 x 0 (iTypeString).
+  - Internaltype: Offset 0x35 bytes: 0x0 festlegen (iTypeString).
     
-  - SkipBlocks: Offset 0 x 39, Serie SkipBlock Datenströme.
+  - SkipBlocks: Offset-0x39, Reihe von SkipBlock streamstruktur-Streams.
     
-  - Erste SkipBlock
+  - Erster SkipBlock streamstruktur
     
-    - Größe: Offset 0, 4 Bytes x 39: 0x15 (21).
+    - Größe: Offset 0x39 bytes: 0x15 (21).
       
-    - Inhalt: Offset 0x3D 21 Bytearray. Dies ist der erste SkipBlock Datenstrom dieses Array einen FirstSkipBlockContent Stream enthält.
+    - Inhalt: Offset 0x3D, Array mit 21 bytes. Dies ist der erste SkipBlock streamstruktur-Datenstrom, daher enthält dieses Array einen Firstskipblockcontent streamstruktur-Stream.
       
-      - FieldName: Offset 0x3D, PackedUnicodeString-Stream.
+      - FieldName: Offset 0x3D, Packedunicodestring streamstruktur Stream.
         
-        - Länge: Offset 0x3D, 1 Byte: 0xA (10).
+        - Length: Offset 0x3D, 1 Byte: 0xA (10).
           
-        - Zeichen: Offset 0x3E Array von 10 WCHARs so lang wie. Unicode-Zeichenfolgenwert: "TextField1".
+        - Characters: Offset 0x3E, Array of 10 WCHARs. Unicode-Zeichenfolgenwert: "TextField1".
     
-  - Zweite SkipBlock
+  - Zweite SkipBlock streamstruktur
     
-    - Größe: Offset 0, 4 Bytes x 52: 0 x 0 (0). Dies ist der abschließende SkipBlock-Stream.
+    - Größe: Offset 0x52 bytes: 0x0 festlegen (0). Dies ist der abschließende SkipBlock streamstruktur-Stream.
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Elemente und Felder in Outlook](outlook-items-and-fields.md)
-- [Streamstrukturen](stream-structures.md)
-- [PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md)
-- [FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
-- [SkipBlock-Streamstruktur](skipblock-stream-structure.md)
-- [FirstSkipBlockContent-Streamstruktur](firstskipblockcontent-stream-structure.md)
-- [PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
-- [PackedUnicodeString-Streamstruktur](packedunicodestring-stream-structure.md)
+- [Outlook-Elemente und-Felder](outlook-items-and-fields.md)
+- [Stream-Strukturen](stream-structures.md)
+- [PropertyDefinition-Datenstrom Struktur](propertydefinition-stream-structure.md)
+- [FieldDefinition streamstruktur-Datenstrom Struktur](fielddefinition-stream-structure.md)
+- [SkipBlock streamstruktur-Datenstrom Struktur](skipblock-stream-structure.md)
+- [Firstskipblockcontent streamstruktur-Datenstrom Struktur](firstskipblockcontent-stream-structure.md)
+- [Packedansistring streamstruktur-Datenstrom Struktur](packedansistring-stream-structure.md)
+- [Packedunicodestring streamstruktur-Datenstrom Struktur](packedunicodestring-stream-structure.md)
 

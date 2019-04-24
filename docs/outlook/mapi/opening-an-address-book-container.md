@@ -1,5 +1,5 @@
 ---
-title: Öffnen ein Adressbuchcontainer
+title: Öffnen eines Adressbuchcontainers
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,62 +7,62 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 89383b27-618c-4ccb-9e16-f66235c98bfe
-description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 79f1f9254e69e1871e886fa0bb3fbb66e2aab128
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 20 November, 2011'
+ms.openlocfilehash: 97fa9f9750174c112c431c62f6171f674856fa86
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326579"
 ---
-# <a name="opening-an-address-book-container"></a>Öffnen ein Adressbuchcontainer
+# <a name="opening-an-address-book-container"></a>Öffnen eines Adressbuchcontainers
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nach dem Öffnen der MAPI-Adressbuch integriert, öffnen Sie eine oder mehrere Address Book Containern Zugriff auf die darin enthaltenen Empfänger.
+Öffnen Sie nach dem Öffnen des integrierten MAPI-Adressbuchs einen oder mehrere Adressbuchcontainer für den Zugriff auf die Empfänger in diesen.
   
-Rufen Sie zum Öffnen den Container der obersten Ebene des Adressbuchs [IAddrBook::OpenEntry](iaddrbook-openentry.md) mit einem NULL-Eintrags-ID ein. 
+Um den Container der obersten Ebene des Adressbuchs zu öffnen, rufen Sie [IAddrBook:: OpenEntry](iaddrbook-openentry.md) mit einer NULL-Eintrags-ID auf. 
   
-Address Book Containern können implementiert werden, mit der nur-Lese- oder Lese-/Schreibzugriff. Nur-Lese-Containern dienen nur zum Durchsuchen. Lese-Schreib-Container können geändert werden, dass Clients, die zum Erstellen neuer Einträge und löschen und Ändern der vorhandenen Einträge. Alle Persönliches Adressbuch (PAB) Container werden als Container für Lese-/Schreibzugriff implementiert. 
+Adressbuchcontainer können mit Schreibschutz oder Lese-/Schreibzugriff implementiert werden. Schreibgeschützte Container werden nur zum Browsen verwendet. Container mit Lese-/Schreibzugriff können geändert werden, sodass Clients neue Einträge erstellen und vorhandene Einträge löschen und ändern kann. Alle PAB-Container (persönliches Adressbuch) werden als Lese-/Schreibzugriff-Container implementiert. 
   
-Zum Öffnen ein unteren Ebene Containers rufen Sie **OpenEntry auf** , und geben Sie die Eintrags-ID des Containers geöffnet werden soll. 
+Um einen Container mit niedrigerer Ebene zu **** öffnen, rufen Sie OpenEntry auf, und geben Sie den Eintragsbezeichner des zu öffnenden Containers an. 
   
-## <a name="open-the-container-designated-as-the-pab"></a>Öffnen Sie den Container der PAB als
+## <a name="open-the-container-designated-as-the-pab"></a>Öffnen des als PAB festgelegten Containers
   
-1. Rufen Sie [IAddrBook::GetPAB](iaddrbook-getpab.md) , um die PAB-Eintrags-ID abzurufen. 
+1. Rufen Sie [IAddrBook:: GetPAB](iaddrbook-getpab.md) auf, um die Eintrags-ID des PAB abzurufen. 
     
-2. Übergeben Sie dieses Eintrags-ID an [IAddrBook::OpenEntry](iaddrbook-openentry.md).
+2. Führen Sie diesen Eintragsbezeichner an [IAddrBook:: OpenEntry](iaddrbook-openentry.md).
     
-## <a name="open-a-container-that-is-not-the-pab"></a>Öffnen Sie einen Container, der nicht die PAB ist
+## <a name="open-a-container-that-is-not-the-pab"></a>Öffnen eines Containers, der nicht das PAB ist
   
-1. Rufen Sie [IAddrBook::OpenEntry](iaddrbook-openentry.md) mit einen NULL-Eintrags-ID im Adressbuch Stammcontainer öffnen. 
+1. Rufen Sie [IAddrBook:: OpenEntry](iaddrbook-openentry.md) mit einer NULL-Eintrags-ID auf, um den Stammcontainer des Adressbuchs zu öffnen. 
     
-2. Rufen Sie den Container Root [IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md) -Methode zum Abrufen der Hierarchietabelle – eine Liste aller Container der obersten Ebene im Adressbuch. 
+2. Rufen Sie die [IMAPIContainer:: gethierarchyid](imapicontainer-gethierarchytable.md) -Methode des Stammcontainers auf, um die Hierarchietabelle abzurufen – eine Liste aller Container der obersten Ebene im Adressbuch. 
     
-3. Wenn der Container zum Öffnen eines bestimmten Typs ist:
+3. Wenn der Container, der geöffnet werden soll, einen bestimmten Typ hat:
     
-   - Erstellen Sie eine **SPropertyRestriction** -Struktur mit **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) für das Eigenschafts-Tag, das Container-Typ für den Eigenschaftswert und RELOP_EQ für die Beziehung. **PR_DISPLAY_TYPE** können auf viele Werte, zwischen ihnen festgelegt werden: 
+   - Erstellen Sie eine **SPropertyRestriction** -Struktur mit **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) für das Property-Tag, den Typ des Containers für den Eigenschaftswert und RELOP_EQ für die Beziehung. **PR_DISPLAY_TYPE** kann auf viele Werte festgelegt werden, darunter: 
     
-   - DT_GLOBAL die Hierarchietabelle Containern beschränken, die in der globalen Adressliste gehören.
+   - DT_GLOBAL, um die Hierarchietabelle auf Container zu begrenzen, die in die globale Adressliste gehören.
     
-   - DT_LOCAL die Tabelle, die zu einem lokalen Adressbuch gehören Containern beschränken.
+   - DT_LOCAL, um die Tabelle auf Container zu begrenzen, die zu einem lokalen Adressbuch gehören.
     
-   - DT_MODIFIABLE die Tabelle Containern beschränken, die geändert werden kann.
+   - DT_MODIFIABLE, um die Tabelle auf Container zu begrenzen, die geändert werden können.
     
-   - Erstellen einer [SPropTagArray](sproptagarray.md) -Struktur, die **PR_ENTRYID** **PR_DISPLAY_TYPE**und alle anderen Spalten von Interesse enthält. 
+   - Erstellen Sie eine [SPropTagArray](sproptagarray.md) -Struktur, die **PR_ENTRYID**, **PR_DISPLAY_TYPE**und alle anderen interessierenden Spalten enthält. 
     
-   - Rufen Sie [HrQueryAllRows](hrqueryallrows.md), Ihre eigenschaftseinschränkung und Tag-Array-Eigenschaft übergeben. NULL oder mehr Zeilen, eine Zeile für jedes Container, in den angegebenen Typ gehört, gibt **HrQueryAllRows** zurück. Bereiten Sie die Rückgabe einer beliebigen Anzahl von Zeilen zu behandeln. 
+   - Rufen Sie [HrQueryAllRows](hrqueryallrows.md)auf, und übergeben Sie Ihre Eigenschaftseinschränkung und das Property-Tag-Array. **HrQueryAllRows** gibt NULL oder mehr Zeilen zurück, eine Zeile für jeden Container, der zum angegebenen Typ gehört. Bereiten Sie die Rückgabe einer beliebigen Anzahl von Zeilen vor. 
     
-   - Rufen Sie **IAddrBook::OpenEntry** , wobei die Eintrags-ID aus der **PR_ENTRYID** -Spalte der Zeile, die den Container von Interesse darstellt. 
+   - Rufen Sie **IAddrBook:: OpenEntry** mit der Eintrags-ID aus der **PR_ENTRYID** -Spalte der Zeile, die den Container von Interesse darstellt. 
     
-4. Zugehörigkeit der Container zum Öffnen einer bestimmten Adressbuchanbieter:
+4. Wenn der zu öffnende Container zu einem bestimmten Adressbuchanbieter gehört:
     
-   - Erstellen Sie eine [SPropertyRestriction](spropertyrestriction.md) -Struktur mit **PR_AB_PROVIDERS** ([PidTagAbProviders](pidtagabproviders-canonical-property.md)) für das Eigenschafts-Tag, anbieterspezifische Wert für den Eigenschaftswert und RELOP_EQ für die Beziehung. In der Regel ist der Wert der anbieterspezifische einen global eindeutigen Bezeichner oder eine GUID. Sie finden dieses Werts in eine der Headerdateien der Adressbuchanbieter veröffentlicht. 
+   - Erstellen Sie eine [SPropertyRestriction](spropertyrestriction.md) -Struktur mit **PR_AB_PROVIDERS** ([pidtagabproviders (](pidtagabproviders-canonical-property.md)) für das Property-Tag, einen anbieterspezifischen Wert für den Eigenschaftswert und RELOP_EQ für die Beziehung. Der anbieterspezifische Wert ist in der Regel ein global eindeutiger Bezeichner oder eine GUID. Dieser Wert wird in einer der Headerdateien des Adressbuch Anbieters veröffentlicht. 
     
-   - Erstellen einer [SPropTagArray](sproptagarray.md) -Struktur, die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_AB_PROVIDERS**und alle anderen Spalten von Interesse enthält. 
+   - Erstellen Sie eine [SPropTagArray](sproptagarray.md) -Struktur, die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_AB_PROVIDERS**und alle anderen interessierenden Spalten enthält. 
     
-   - Rufen Sie [HrQueryAllRows](hrqueryallrows.md), Ihre eigenschaftseinschränkung und Tag-Array-Eigenschaft übergeben. **HrQueryAllRows** gibt 0 (null) Zeilen zurück, wenn die angegebene Adressbuchanbieter nicht im Profil vorhanden ist. Sie können eine oder mehrere Zeilen für den Anbieter Container auf oberster Ebene, je nach der Struktur des Anbieters zurück. 
+   - Rufen Sie [HrQueryAllRows](hrqueryallrows.md)auf, und übergeben Sie Ihre Eigenschaftseinschränkung und das Property-Tag-Array. **HrQueryAllRows** gibt keine Zeilen zurück, wenn sich der angegebene Adressbuchanbieter nicht im Profil befindet. Je nachdem, wie der Anbieter organisiert ist, kann er eine oder mehrere Zeilen für die Container der obersten Ebene des Anbieters zurückgeben. 
     
-   - Rufen Sie [IAddrBook::OpenEntry](iaddrbook-openentry.md) , wobei die Eintrags-ID aus der **PR_ENTRYID** -Spalte der Zeile, die den Container von Interesse darstellt. Ist der Container, dem Sie interessiert sind nicht Container der obersten Ebene, suchen Sie den Container der obersten Ebene, und Durchlaufen der Hierarchie. 
+   - Rufen Sie [IAddrBook:: OpenEntry](iaddrbook-openentry.md) mit der Eintrags-ID aus der **PR_ENTRYID** -Spalte der Zeile, die den Container von Interesse darstellt. Wenn der Container, an dem Sie interessiert sind, kein Container der obersten Ebene ist, suchen Sie den Container der obersten Ebene, und überqueren Sie die Hierarchie. 
     
 

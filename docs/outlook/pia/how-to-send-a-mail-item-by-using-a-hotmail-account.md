@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 008f66ff1a43f90e756900c467ba6c086829b769
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331164"
 ---
 # <a name="send-a-mail-item-by-using-a-hotmail-account"></a>Senden eines E-Mail-Elements mithilfe eines Hotmail-Kontos
 
@@ -51,5 +51,5 @@ private void SendUsingAccountExample()
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Konten](accounts.md)
+- [Accounts](accounts.md)
 

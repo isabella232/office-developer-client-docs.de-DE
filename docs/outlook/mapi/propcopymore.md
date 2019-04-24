@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 133d47cf-3592-44f3-8cdd-be402d160ee4
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 635525a1c2c3234d724534d225eb07022afc9956
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 827cdb919499a068f7932d8f1f7ec264ddc5b47c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328553"
 ---
 # <a name="propcopymore"></a>PropCopyMore
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kopiert einen einzelnen Eigenschaftswert von einem Quellspeicherort in einen Zielspeicherort. 
+Kopiert einen einzelnen Eigenschaftswert von einem Quellspeicherort an einen Zielspeicherort. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE PropCopyMore(
@@ -46,36 +46,36 @@ SCODE PropCopyMore(
 
  _lpSPropValueDest_
   
-> [out] Zeiger auf den Speicherort, zu dem diese Funktion eine [SPropValue](spropvalue.md) -Struktur definieren den kopierten Eigenschaftswert schreibt. 
+> Out Zeiger auf den Speicherort, an den diese Funktion eine [SPropValue](spropvalue.md) -Struktur schreibt, die den kopierten Eigenschaftswert definiert. 
     
  _lpSPropValueSrc_
   
-> [in] Zeiger auf die [SPropValue](spropvalue.md) -Struktur, die Wert der Eigenschaft kopiert werden soll. 
+> in Zeiger auf die [SPropValue](spropvalue.md) -Struktur, die den zu kopierenden Eigenschaftswert enthält. 
     
  _lpfAllocMore_
   
-> [in] Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die verwendet werden, um zusätzliche Speicher ist Zielspeicherort nicht groß genug für die Eigenschaft kopiert werden soll. 
+> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die zum Zuweisen von zusätzlichem Arbeitsspeicher verwendet werden soll, wenn der Zielspeicherort nicht groß genug ist, um die zu kopierende Eigenschaft zu speichern. 
     
  _lpvObject_
   
-> [in] Zeiger auf ein Objekt für die **MAPIAllocateMore** Speicherplatz bei Bedarf reserviert werden soll. 
+> in Zeiger auf ein Objekt, für das **MAPIAllocateMore** ggf. Platz reserviert. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Die einzelnen Eigenschaftswert wurde erfolgreich kopiert.
+> Der einzelne Eigenschaftswert wurde erfolgreich kopiert.
     
 MAPI_E_NO_SUPPORT
   
-> Unbekannte Eigenschaft vom Typ aufgetreten.
+> Ein unbekannter Eigenschafts wurde gefunden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Clientanwendung oder Dienstanbieter kann die Funktion **PropCopyMore** verwenden, um eine Eigenschaft aus einer Tabelle zu kopieren, der freigegeben werden, damit er an anderer Stelle verwendet. 
+Eine Clientanwendung oder ein Dienstanbieter kann die **PropCopyMore** -Funktion verwenden, um eine Eigenschaft aus einer Tabelle zu kopieren, die freigegeben werden soll, um Sie an anderer Stelle zu verwenden. 
   
- **PropCopyMore** muss kein Speicher zugewiesen werden, wenn der Wert der Eigenschaft kopiert eines Typs, beispielsweise PT_STRING8, ist, die nicht in einer Struktur [SPropValue](spropvalue.md) passen. Für diese Eigenschaften großen weist die Funktion Speicher, die mithilfe der [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die ein Zeiger in der _LpfAllocMore_ -Parameter übergeben wird. 
+ **PropCopyMore** muss keinen Arbeitsspeicher zuweisen, es sei denn, der kopierte Eigenschaftswert ist ein Typ, wie beispielsweise PT_STRING8, der nicht in eine [SPropValue](spropvalue.md) -Struktur passt. Bei diesen hohen Eigenschaften weist die Funktion Speicher mithilfe der [MAPIAllocateMore](mapiallocatemore.md) -Funktion zu, an die ein Zeiger im _lpfAllocMore_ -Parameter übergeben wird. 
   
-Injudicious Verwendung von **PropCopyMore** Fragmente Speicher; Erwägen Sie die [ScCopyProps](sccopyprops.md) -Funktion. 
+Unüberlegte Verwendung von **PropCopyMore** -Fragmenten Verwenden Sie stattdessen die [ScCopyProps](sccopyprops.md) -Funktion. 
   
 

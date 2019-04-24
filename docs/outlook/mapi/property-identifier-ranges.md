@@ -1,5 +1,5 @@
 ---
-title: Eigenschaftenbezeichnerbereiche
+title: Eigenschaftenbezeichner Bereiche
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,51 +7,51 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c01e95bb-be25-490d-880b-60674f890258
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 479e5abda9137ddaedcabb8d914bc038ddf200f3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: cdf1eae945cddf9eb76a2b7a2532d5dc6568beac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328532"
 ---
-# <a name="property-identifier-ranges"></a>Eigenschaftenbezeichnerbereiche
+# <a name="property-identifier-ranges"></a>Eigenschaftenbezeichner Bereiche
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In der folgenden Tabelle sind die unterschiedlichen Bereiche für Eigenschaftenbezeichner, zur Beschreibung des Besitzers für die Eigenschaften im jeweiligen Bereich zusammengefasst.
+In der folgenden Tabelle sind die verschiedenen Bereiche für Eigenschaftsbezeichner zusammengefasst, die den Besitzer für die Eigenschaften in den einzelnen Bereichen beschreiben.
   
-|**ID-Bereich**|**Beschreibung**|
+|**Bezeichnerbereich**|**Beschreibung**|
 |:-----|:-----|
-|0000  <br/> |MAPI vorbehalten für den speziellen Wert **PR_NULL**.  <br/> |
-|0001 - 0BFF  <br/> |Briefumschlag Nachrichteneigenschaften MAPI definiert.  <br/> |
-|0C 00 - 0DFF  <br/> |Empfängereigenschaften MAPI definiert.  <br/> |
-|0E00 - 0FFF  <br/> |Nicht-Übertragungseinehit Nachrichteneigenschaften MAPI definiert.  <br/> |
-|1000 - 2FFF  <br/> |Content Nachrichteneigenschaften MAPI definiert.  <br/> |
-|3000 - 3FFF  <br/> |Eigenschaften für Objekte, die keine Nachrichten und Empfänger MAPI definiert.  <br/> |
-|4000 - 57FF  <br/> |Briefumschlag Nachrichteneigenschaften von Anbietern Transport definiert.  <br/> |
-|5800 - 5FFF  <br/> |Empfängereigenschaften von Anbietern für Transport- und Address Book definiert.  <br/> |
-|6000 - 65FF  <br/> |Nicht-Übertragungseinehit Nachrichteneigenschaften durch Clients definiert.  <br/> |
-|6600 - 67FF  <br/> |Nicht-Übertragungseinehit von einem Dienstanbieter definierten Eigenschaften. Diese Eigenschaften können für Benutzer sichtbar oder ausgeblendet werden.  <br/> |
-|6800 - 7BFF  <br/> |Content Nachrichteneigenschaften für benutzerdefinierte Nachrichtenklassen vom Ersteller dieser Klassen definiert.  <br/> |
-|7C 00 - 7FFF  <br/> |Nicht-Übertragungseinehit Eigenschaften für benutzerdefinierte Nachrichtenklassen vom Ersteller dieser Klassen definiert.  <br/> |
-|8000 - FFFE  <br/> |Eigenschaften von Clients definiert und gelegentlich-Dienstanbieter, die über die Methoden [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) namentlich identifiziert werden.  <br/> |
-|FFFF  <br/> |MAPI vorbehalten für den speziellen Fehlerwert PROP_ID_INVALID.  <br/> |
+|0000  <br/> |Von MAPI für den speziellen Wert **PR_NULL**reserviert.  <br/> |
+|0001-0BFF  <br/> |Von MAPI definierte Nachrichtenumschlag Eigenschaften.  <br/> |
+|0C00-0DFF  <br/> |Von MAPI definierte Empfänger Eigenschaften.  <br/> |
+|0E00-0FFF  <br/> |Nicht übertragbare Nachrichteneigenschaften, die von MAPI definiert werden.  <br/> |
+|1000-2FFF  <br/> |Von MAPI definierte Nachrichteninhalts Eigenschaften.  <br/> |
+|3000-3FFF  <br/> |Eigenschaften für andere Objekte als Nachrichten und Empfänger, die von MAPI definiert wurden.  <br/> |
+|4000-57FF  <br/> |Nachrichtenumschlag Eigenschaften, die von Transportanbietern definiert werden.  <br/> |
+|5800-5FFF  <br/> |Empfänger Eigenschaften, die von Transport-und Adressbuch Anbietern definiert werden.  <br/> |
+|6000-65FF  <br/> |Nicht übertragbare Nachrichteneigenschaften, die von Clients definiert werden.  <br/> |
+|6600-67FF  <br/> |Nicht übertragbare Eigenschaften, die von einem Dienstanbieter definiert werden. Diese Eigenschaften können für Benutzer sichtbar oder unsichtbar sein.  <br/> |
+|6800-7BFF  <br/> |Nachrichteninhalts Eigenschaften für benutzerdefinierte Nachrichtenklassen, die von Erstellern dieser Klassen definiert werden.  <br/> |
+|7C00-7FFF  <br/> |Nicht übertragbare Eigenschaften für benutzerdefinierte Nachrichtenklassen, die von Erstellern dieser Klassen definiert werden.  <br/> |
+|8000-FFFE  <br/> |Von Clients und gelegentlichen Dienstanbietern definierte Eigenschaften, die über die [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) -und [IMAPIProp: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methoden anhand des Namens identifiziert werden.  <br/> |
+|FFFF  <br/> |Von MAPI für den speziellen Fehlerwert PROP_ID_INVALID reserviert.  <br/> |
    
-Der Bereich zwischen 3000 und 3FFF für Eigenschaften, die keine Nachrichten oder Empfänger im Zusammenhang mit reserviert ist. MAPI unterteilt dieses Bereichs in untergeordneten Bereiche von Objekttypen. Die folgende Tabelle zeigt diese weitere Aufschlüsselung. 
+Der Bereich zwischen 3000 und 3FFF ist für Eigenschaften reserviert, die sich nicht auf Nachrichten oder Empfänger beziehen. MAPI teilt diesen Bereich nach Objekttypen in Unterbereiche auf. die folgende Tabelle zeigt diese weitere Aufteilung. 
   
-|**ID-Bereich**|**Typ der Eigenschaft**|
+|**Bezeichnerbereich**|**Typ der Eigenschaft**|
 |:-----|:-----|
-|3000 - 33FF.  <br/> |Allgemeine Eigenschaften, die bei mehreren Objekten wie **PR_DISPLAY_NAME** und **PR_ENTRYID**angezeigt werden.  <br/> |
-|3400 - 35FF  <br/> |Eigenschaften des Nachrichtenspeichers  <br/> |
-|3600 - 36FF  <br/> |Ordner und Adressbucheinträge Containereigenschaften  <br/> |
-|3700 - 38FF.  <br/> |Eigenschaften für Dateianlage  <br/> |
-|3900 - 39FF  <br/> |Adressbucheigenschaften  <br/> |
-|3A00 - 3BFF  <br/> |Messaging-Benutzereigenschaften  <br/> |
-|3 C 00 - 3CFF  <br/> |Eigenschaften von Verteilerlisten  <br/> |
-|3D 00 - 3DFF  <br/> |Profileigenschaften  <br/> |
-|3E00 - 3FFF  <br/> |Status-Objekteigenschaften  <br/> |
+|3000-33FF  <br/> |Allgemeine Eigenschaften, die für mehrere Objekte wie **PR_DISPLAY_NAME** und **PR_ENTRYID**angezeigt werden.  <br/> |
+|3400-35FF  <br/> |Nachrichtenspeichereigenschaften  <br/> |
+|3600-36FF  <br/> |Container Eigenschaften für Ordner und Adressbuch  <br/> |
+|3700-38FF  <br/> |Attachment-Eigenschaften  <br/> |
+|3900-39FF  <br/> |Adressbucheigenschaften  <br/> |
+|3A00-3BFF  <br/> |Eigenschaften für Messaging-Benutzer  <br/> |
+|3C00-3CFF  <br/> |Eigenschaften der Verteilerliste  <br/> |
+|3D00-3DFF  <br/> |Profileigenschaften  <br/> |
+|3E00-3FFF  <br/> |Eigenschaften des Status Objekts  <br/> |
    
 

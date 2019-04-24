@@ -1,5 +1,5 @@
 ---
-title: Verwenden eines Dialogfelds für die erweiterte Suche.
+title: Verwenden eines Dialog Felds für die erweiterte Suche
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: c9a156e6-3472-4409-a4ba-3a1a65b7bdcd
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 581607e184d67413e735c4cbfb874643b3222a80
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 70b62eeaf6e737747c98b3abcd6e7053f71d4308
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329666"
 ---
-# <a name="using-an-advanced-search-dialog-box"></a>Verwenden eines Dialogfelds für die erweiterte Suche.
+# <a name="using-an-advanced-search-dialog-box"></a>Verwenden eines Dialog Felds für die erweiterte Suche
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einige Address Book Container unterstützt eine erweiterte Suchfunktionen, mit der Clients auf andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) durchsuchen kann. Address Book Container, die erweiterte Suchvorgänge unterstützen, verfügen über die Container-Objekteigenschaft **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)). Diese Container-Objekt ermöglicht den Zugriff auf eine zeigt die Tabelle, die das Dialogfeld Suchen beschreibt – ein Dialogfeld zum eingeben und bearbeiten die Kriterien für die erweiterte Suche verwendet.
+Einige Adressbuchcontainer unterstützen eine erweiterte Suchfunktion, die es Clients ermöglicht, andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) zu suchen. Adressbuchcontainer, die erweiterte Suchvorgänge unterstützen, verfügen über eine Containerobjekt Eigenschaft namens **PR_SEARCH** ([pidtagsearch (](pidtagsearch-canonical-property.md)). Dieses Container-Objekt ermöglicht den Zugriff auf eine Anzeigetabelle, die das Dialogfeld Suchen beschreibt – ein Dialogfeld zum eingeben und Bearbeiten der erweiterten Suchkriterien.
   
- **Zum Ausführen einer erweiterten Suche auf eine Adressbuchcontainer**
+ **So führen Sie eine erweiterte Suche für einen Adressbuchcontainer aus**
   
-1. Rufen Sie den Container [IMAPIProp::OpenProperty](imapiprop-openproperty.md) Methode **PR_SEARCH** für die Eigenschaftentag und IID_IMAPIContainer für den Schnittstellenbezeichner angeben. 
+1. Rufen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers auf, und geben Sie **PR_SEARCH** für das Property-Tag und IID_IMAPIContainer für den Schnittstellenbezeichner an. 
     
-2. Rufen Sie das Search-Objekt **IMAPIProp::OpenProperty** Methode **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) für die Eigenschaftentag und IID_IMAPITable für den Schnittstellenbezeichner angeben. 
+2. Rufen Sie die **IMAPIProp:: OpenProperty** -Methode des Search-Objekts auf, und geben Sie **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md)) für das Property-Tag und IID_IMAPITable für den Schnittstellenbezeichner an. 
     
-3. Rufen Sie das Search-Objekt [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode zum Festlegen der Werte für die Eigenschaften in die erweiterte Suche verwendet werden. 
+3. Rufen Sie die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des Search-Objekts auf, um Werte für die in der erweiterten Suche zu verwendenden Eigenschaften einzurichten. 
     
-4. Rufen Sie das Search-Objekt [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode, um die Kriterien für die erweiterte Suche zu speichern. 
+4. Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode des Search-Objekts auf, um die erweiterten Suchkriterien zu speichern. 
     
-Diese Folge der Aufrufe führt eine Einschränkung nicht verfügbar sein, wenn ein Client das Search-Objekt **GetSearchCriteria** -Methode aufruft. 
+Diese Sequenz von Aufrufen führt zu einer Einschränkung, die verfügbar ist, wenn ein Client die **GetSearchCriteria** -Methode des Search-Objekts aufruft. 
   
 

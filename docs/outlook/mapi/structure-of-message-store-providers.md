@@ -1,5 +1,5 @@
 ---
-title: Struktur der Nachricht-Anbieter
+title: Struktur eines Nachrichtenspeicheranbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 064b2fc1-e690-43e6-95d3-a61438115de5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 58b6771c6bdae91ad0e496189258e4745de5bc84
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: eda62a4cd31e0de695d52391a6717e7a0f5ea581
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327206"
 ---
-# <a name="structure-of-message-store-providers"></a>Struktur der Nachricht-Anbieter
+# <a name="structure-of-message-store-providers"></a>Struktur eines Nachrichtenspeicheranbieters
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Anbieter eine Nachricht bei der Ausführung im Arbeitsspeicher, ist eine [IMSProvider: IUnknown](imsprovideriunknown.md) Schnittstelle. Die **IMSProvider** -Schnittstelle ermöglicht Client-Anwendungen und die MAPI-Warteschlange an und von der Nachrichtenspeicher anmelden. Die, die Clientanwendungen und die MAPI-Warteschlange verwenden, Zugriff auf Ordner und Nachrichten im Nachrichtenspeicher sind [IMSLogon](imslogoniunknown.md) und [IMsgStore](imsgstoreimapiprop.md) Schnittstellen. Diese Schnittstellen werden normalerweise erstellt, wenn der Nachrichtenspeicher zuerst angemeldet ist, obwohl der Einstiegspunkt [MSProviderInit](msproviderinit.md) der Nachricht speichern DLL konnte auch erstellen sie. 
+Ein Nachrichtenspeicher Anbieter ist, wenn er im Arbeitsspeicher läuft, eine [IMSProvider: IUnknown](imsprovideriunknown.md) -Schnittstelle. Die **IMSProvider** -Schnittstelle ermöglicht es Clientanwendungen und der MAPI-Warteschlange, sich am Nachrichtenspeicher an-und abmelden zu lassen. Die Schnittstellen, die Clientanwendungen und der MAPI-Spooler für den Zugriff auf Ordner und Nachrichten im Nachrichtenspeicher verwenden, sind [IMSLogon](imslogoniunknown.md) -und [IMsgStore](imsgstoreimapiprop.md) -Schnittstellen. Diese Schnittstellen werden in der Regel erstellt, wenn der Nachrichtenspeicher zum ersten Mal angemeldet ist, obwohl der [MSProviderInit](msproviderinit.md) -Einstiegspunkt der nachrichtenSPEICHER-dll Sie auch erstellen kann. 
   
-Da die **IMSLogon** und **IMsgStore** Schnittstellen einige Methoden gemeinsam nutzen, kann es einfacher sein ein Klassenobjekt erstellen, die beide Schnittstellen erbt. Sie können diese Schnittstellen in separaten Objekten implementieren, und Schreiben Hilfsfunktionen interne zur DLL, mit die die freigegebenen Methoden implementiert, die dann von den Methoden in den Schnittstellen **IMSLogon** und **IMsgStore** aufgerufen werden können. 
+Da die **IMSLogon** -und **IMsgStore** -Schnittstellen einige Methoden gemeinsam nutzen, ist es möglicherweise einfacher, ein Klassenobjekt zu erstellen, das von beiden Schnittstellen erbt. Sie können diese Schnittstellen auch in separaten Objekten implementieren und Hilfsfunktionen innerhalb Ihrer DLL schreiben, die die freigegebenen Methoden implementieren, die dann von den Methoden in den **IMSLogon** -und **IMsgStore** -Schnittstellen aufgerufen werden können. 
   
-Die folgende Abbildung zeigt einen allgemeinen Überblick über die Objekthierarchie innerhalb eines Nachrichtenspeichers ausgeführt wird.
+Die folgende Abbildung zeigt eine allgemeine Gliederung der Objekthierarchie innerhalb eines aktiven Nachrichtenspeichers.
   
 **Objekthierarchie des Nachrichtenspeichers**
   
-![Objekthierarchie des Nachrichtenspeichers] (media/storeobj.gif "Objekthierarchie des Nachrichtenspeichers")
+![Nachrichtenspeicher-Objekthierarchie] (media/storeobj.gif "Nachrichtenspeicher-Objekthierarchie")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
+- [Entwickeln eines MAPI-Nachrichtenspeicheranbieters](developing-a-mapi-message-store-provider.md)
 

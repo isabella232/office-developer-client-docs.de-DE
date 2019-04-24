@@ -1,5 +1,5 @@
 ---
-title: PidTagContentCount (kanonische Eigenschaft)
+title: Kanonische Pidtagcontentcount (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 27c75031-a968-4636-98a6-4a5b7422f57c
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 7e9994da72bbc38a546f220e5ecf8768b80c6f1f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331955"
 ---
-# <a name="pidtagcontentcount-canonical-property"></a>PidTagContentCount (kanonische Eigenschaft)
+# <a name="pidtagcontentcount-canonical-property"></a>Kanonische Pidtagcontentcount (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Anzahl der Nachrichten in einem Ordner enthält, wie Sie mithilfe des Nachrichtenspeichers berechnet.
+Enthält die Anzahl der Nachrichten in einem Ordner, die vom Nachrichtenspeicher berechnet wurden.
   
 |||
 |:-----|:-----|
@@ -34,37 +34,37 @@ Die Anzahl der Nachrichten in einem Ordner enthält, wie Sie mithilfe des Nachri
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft von der Nachrichtenspeicher berechnet wird für zwei unterschiedliche, obwohl verbunden, Zwecke. Für ein MapiFolder-Objekt enthält sie die Anzahl der Nachrichten in einem Ordner. In eine Überschriftenzeile in kategorisierten MAPI-Tabellen enthält sie die Anzahl der Nachrichten in der Kategorie dieser Überschriftenzeile entsprechendes-verknüpft ist.
+Diese vom Nachrichtenspeicher berechnete Eigenschaft wird für zwei verschiedene, wenn auch verwandte Zwecke verwendet. In einem MapiFolder-Objekt enthält es die Anzahl der Nachrichten in einem Ordner. In einer Überschriftenzeile in kategorisierten MAPI-Tabellen enthält es die Anzahl der nicht zugeordneten Nachrichten in der Kategorie, die dieser Überschriftenzeile entspricht.
   
-Die Zahl in dieser Eigenschaft enthaltenen umfasst nicht zugeordnete Einträge im Ordner. **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md)) enthält die Anzahl der ungelesenen Nachrichten für den Ordner. Eine Clientanwendung kann gelesen, aber nicht geändert werden, diese Eigenschaft und die **PR_CONTENT_UNREAD**. 
+Die in dieser Eigenschaft enthaltene Zahl enthält keine zugeordneten Einträge im Ordner. **PR_CONTENT_UNREAD** ([Pidtagcontentunreadcount (](pidtagcontentunreadcount-canonical-property.md)) enthält die Anzahl der ungelesenen Nachrichten für den Ordner. Eine Clientanwendung kann diese Eigenschaft und **PR_CONTENT_UNREAD**lesen, aber nicht ändern. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.
+> Enthält Verweise auf zugehörige Microsoft Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> Ordner Vorgänge behandelt.
+> Behandelt Ordner Vorgänge.
     
 [[MS-OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
-> Zulässige Vorgänge für die Hauptobjekte-Tabelle enthält.
+> Enthält zulässige Vorgänge für die Haupttabellen Objekte.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -76,5 +76,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: b66c2815-72bc-4535-b34c-899bb830f29e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0f1495549df751c59ab84e2b16fffbaf2f4f9fa5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: bd9bfe4d1411b84a7811235aa68728afaefe64ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327307"
 ---
 # <a name="flatmtsidlist"></a>FLATMTSIDLIST
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [MTSID](mtsid.md) -Strukturen, von denen jedes einen x. 400-Nachricht Transport System (MTS) Eintrag Bezeichner enthält. 
+Enthält ein Array von [MTSID](mtsid.md) -Strukturen, die jeweils eine MTS-Eintrags-ID (X. 400-Nachrichtentransportsystem) enthalten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Verwandte Makros:  <br/> |[CbFLATMTSIDLIST](cbflatmtsidlist.md), [CbNewFLATMTSIDLIST](cbnewflatmtsidlist.md) <br/> |
    
 ```cpp
@@ -46,21 +46,21 @@ typedef struct
 
  **cMTSIDs**
   
-> Anzahl der **MTSID** Strukturen in das Array von **AbMTSIDs** -Elements beschrieben. 
+> Die Anzahl der **MTSID** -Strukturen in dem vom **abMTSIDs** -Element beschriebenen Array. 
     
  **cbMTSIDs**
   
-> Die Anzahl von Bytes im Array von **AbMTSIDs**beschrieben.
+> Die Anzahl der Bytes im von **abMTSIDs**beschriebenen Array.
     
  **abMTSIDs**
   
-> Bytearray, das eine oder mehrere **MTSID** Strukturen enthält. 
+> Bytearray, das eine oder mehrere **MTSID** -Strukturen enthält. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **FLATMTSIDLIST** Struktur Verwendung in x. 400-messaging entspricht der [FLATENTRYLIST](flatentrylist.md) -Struktur Verwendung in MAPI messaging. MAPI verwendet **FLATMTSIDLIST** Strukturen zum Verwalten von x. 400-Eigenschaften während der Verarbeitung der Nachricht. Dienstanbieter verwenden **FLATMTSIDLIST** Strukturen beim Verarbeiten von eingehender und ausgehender x. 400-Nachrichten. 
+Die Verwendung der **FLATMTSIDLIST** -Struktur in X. 400-Messaging entspricht der Verwendung der [FLATENTRYLIST](flatentrylist.md) -Struktur in MAPI-Messaging. MAPI verwendet **FLATMTSIDLIST** -Strukturen, um X. 400-Eigenschaften während der Nachrichtenverarbeitung zu verwalten. Dienstanbieter verwenden **FLATMTSIDLIST** -Strukturen, wenn Sie eingehende und ausgehende X. 400-Nachrichten verarbeiten. 
   
-Im Array **AbMTSIDs** wird jede **MTSID** Struktur auf einer vertrauten ausgerichtete Grenze ausgerichtet. Zusätzliche Bytes sind als Abstand, stellen Sie sicher, dass natürlichen Ausrichtung alle zweier **MTSID** Strukturen enthalten. Die erste **MTSID** Struktur im Array ist immer ordnungsgemäß ausgerichtet werden, da der Versatz des Elements **AbMTSIDs** 8 ist. Berechnen Sie den Offset der nächsten Struktur, verwenden Sie die Größe des ersten Eintrags aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das Makro [CbNewMTSID](cbnewmtsid.md) , um die Größe einer **MTSID** -Struktur zu berechnen. 
+Im **abMTSIDs** -Array wird jede **MTSID** -Struktur an einer natürlich ausgerichteten Grenze ausgerichtet. Zusätzliche Bytes sind als Padding enthalten, um eine natürliche Ausrichtung zwischen zwei **MTSID** -Strukturen sicherzustellen. Die erste **MTSID** -Struktur im Array wird immer korrekt ausgerichtet, da der Offset des **abMTSIDs** -Elements 8 ist. Um den Offset der nächsten Struktur zu berechnen, verwenden Sie die Größe des ersten Eintrags, aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das [CbNewMTSID](cbnewmtsid.md) -Makro, um die Größe einer **MTSID** -Struktur zu berechnen. 
   
 ## <a name="see-also"></a>Siehe auch
 

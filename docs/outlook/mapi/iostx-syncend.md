@@ -12,28 +12,28 @@ api_type:
 - COM
 ms.assetid: da9de705-bdab-6cb8-35ea-61f03cdc4ff5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fd5b2ed23eba30cbe861a20c4fd100cb8ea1aeb0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 364914df1c5897241dfeb89cce2cc3c62018ce24
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332151"
 ---
 # <a name="iostxsyncend"></a>IOSTX::SyncEnd
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Synchronisierung in den aktuellen Status beendet und diesen Status beendet.
+Beendet die Synchronisierung im aktuellen Zustand und beendet diesen Status.
   
 ```cpp
 HRESULT SyncEnd();
 ```
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Client muss für jeden Aufruf von [IOSTX::SyncBeg](iostx-syncbeg.md) **IOSTX::SyncEnd** aufrufen. Die entsprechenden-Datenstruktur enthält Informationen an, ob der Client den aktuellen Status erfolgreich abgeschlossen wurde, damit der interne Zustand von Outlook bereinigen kann.
+Der Client muss **IOSTX:: SyncEnd** für jeden Aufruf von [IOSTX:: SyncBeg](iostx-syncbeg.md)aufrufen. Die entsprechende Datenstruktur enthält Informationen, um anzugeben, ob der Client den aktuellen Zustand erfolgreich abgeschlossen hat, damit Outlook seinen internen Status bereinigen kann.
   
 ## <a name="see-also"></a>Siehe auch
 

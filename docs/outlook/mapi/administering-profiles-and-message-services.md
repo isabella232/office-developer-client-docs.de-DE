@@ -8,73 +8,73 @@ api_type:
 - COM
 ms.assetid: 89a2ac43-9601-47fc-b736-db48585fe879
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 124f4875834e035e29d4c63e52789bf07f18258d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1e64241008a4adde4431b2c9683199294f21e396
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330233"
 ---
 # <a name="administering-profiles-and-message-services"></a>Verwalten von Profilen und Nachrichtendiensten
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benutzerprofil und Nachricht, dass Verwalten des Diensts umfassen kann, neue Profile erstellen, alte Profile löschen und Ändern des Inhalts der vorhandene Profile durch Ändern der Message-Dienste und die darin enthaltenen Dienstanbieter. Nicht alle Clients unterstützen Benutzerprofil und Nachricht Verwalten des Diensts als Standardfeatures. Einige Clients müssen keine weiteren Schritte durchgeführt mit Profilen, die als ihre Benutzer bei der Anmeldung auswählen können.
+Die Verwaltung von Profil-und Nachrichtendiensten kann dazu dienen, neue Profile zu erstellen, alte Profile zu löschen und die Inhalte vorhandener Profile zu ändern, indem Sie die darin enthaltenen Nachrichtendienste und Dienstanbieter ändern. Nicht alle Clients unterstützen die Verwaltung von Profil-und Nachrichtendiensten als Standardfunktionen. Einige Clients haben nichts mehr mit Profilen zu tun, als es Ihren Benutzern bei der Anmeldung zu erlauben, eine auszuwählen.
   
-Verwalten des Diensts Profil oder einer Nachricht unterstützen, sind wahrscheinlich, dass Sie die folgenden Schnittstellen verwenden möchten, die von MAPI implementiert werden:
+Wenn Sie die Verwaltung des Profil-oder Nachrichtendiensts unterstützen, können Sie die folgenden Schnittstellen verwenden, die von MAPI implementiert werden:
   
-- [IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md) eine Message Service in einem Profil, das über [IMAPISession::AdminServices](imapisession-adminservices.md) oder [IProfAdmin::AdminServices](iprofadmin-adminservices.md)verwalten. Messaging-Clients rufen **IMAPISession** normalerweise während der Konfiguration oder Clients, die nicht senden oder Empfangen von Nachrichten, **IProfAdmin**aufrufen. Wenn möglich, rufen Sie die **IProfAdmin** -Methode, da sie nicht den Dienst gestartet werden führt. Weitere Informationen zur Verwendung der **IMsgServiceAdmin** -Schnittstelle finden Sie unter den folgenden Themen: [Konfigurieren einer Nachricht](configuring-a-message-service.md), [eine Message Service kopieren](copying-a-message-service.md)und [Löschen einer Nachricht-Dienstes](deleting-a-message-service.md).
+- [IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md) zum Verwalten eines Nachrichtendiensts in einem Profil, auf das entweder über [IMAPISession:: AdminServices](imapisession-adminservices.md) oder [IProfAdmin:: AdminServices](iprofadmin-adminservices.md)zugegriffen werden kann. Messaging-Clients rufen in der Regel **IMAPISession** auf, während Konfigurations Clients oder Clients, die keine Nachrichten senden oder empfangen, **IProfAdmin**aufrufen. Rufen Sie nach Möglichkeit die **IProfAdmin** -Methode auf, da der Nachrichtendienst nicht gestartet wird. Weitere Informationen zur Verwendung der **IMsgServiceAdmin** -Schnittstelle finden Sie in den folgenden Themen: [Konfigurieren eines Nachrichtendiensts](configuring-a-message-service.md), [Kopieren eines Nachrichten](copying-a-message-service.md)Diensts und [Löschen eines Nachrichtendiensts](deleting-a-message-service.md).
     
-- [IProfAdmin: IUnknown](iprofadminiunknown.md) zum Verwalten eines Profils, über die Funktion ["MAPIAdminProfiles"](mapiadminprofiles.md) zugegriffen werden. Weitere Informationen zur Verwendung der **IProfAdmin** -Schnittstelle finden Sie unter den folgenden Themen: [Erstellen eines Profils durch Verwendung benutzerdefinierter Code](creating-a-profile-by-using-custom-code.md), [Kopieren eines Profils](copying-a-profile.md), [Löschen ein Profil](deleting-a-profile.md), [Suchen Sie einen Profilnamen](finding-a-profile-name.md)und [Einstellung ein Standardprofil](setting-a-default-profile.md).
+- [IProfAdmin: IUnknown](iprofadminiunknown.md) zum Verwalten eines Profils, auf das über die [MAPIAdminProfiles](mapiadminprofiles.md) -Funktion zugegriffen werden kann. Weitere Informationen zur Verwendung der **IProfAdmin** -Schnittstelle finden Sie in den folgenden Themen: [Erstellen eines Profils mithilfe von benutzerdefiniertem Code](creating-a-profile-by-using-custom-code.md), [Kopieren eines Profils](copying-a-profile.md), [Löschen eines](deleting-a-profile.md)Profils, [Suchen eines Profilnamens](finding-a-profile-name.md)und [Festlegen eines Standardprofil](setting-a-default-profile.md).
     
-- [IProfSect: IMAPIProp](iprofsectimapiprop.md) zur Aufrechterhaltung der Eigenschaften in einem Profilabschnitt kann über die [IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) oder [IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md) -Methode zugegriffen werden. Weitere Informationen über Profil Abschnitte finden Sie unter [MAPI-Profile](mapi-profiles.md).
+- [IProfSect: IMAPIProp](iprofsectimapiprop.md) zum Verwalten der Eigenschaften in einem Profil Abschnitt, auf die über die [IMAPISession:: OpenProfileSection](imapisession-openprofilesection.md) -oder [IProviderAdmin:: OpenProfileSection](iprovideradmin-openprofilesection.md) -Methode zugegriffen werden kann. Weitere Informationen zu Profil Abschnitten finden Sie unter [MAPI-Profile](mapi-profiles.md).
     
-- [IProviderAdmin: IUnknown](iprovideradminiunknown.md) zur Verwaltung der Dienstanbieter in einem Message-Dienst über [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)zugegriffen werden. Weitere Informationen zur Verwendung der **IProviderAdmin** -Schnittstelle finden Sie unter [Hinzufügen oder Löschen von Anbietern in einem Message-Dienst](adding-or-deleting-providers-in-a-message-service.md).
+- [IProviderAdmin: IUnknown](iprovideradminiunknown.md) zum Verwalten der Dienstanbieter in einem Nachrichtendienst, auf die über [IMsgServiceAdmin:: AdminProviders](imsgserviceadmin-adminproviders.md)zugegriffen werden kann. Weitere Informationen zur Verwendung der **IProviderAdmin** -Schnittstelle finden Sie unter [Hinzufügen oder Löschen von Anbietern in einem Nachrichtendienst](adding-or-deleting-providers-in-a-message-service.md).
     
-Achten Sie darauf, dass in Ihre Unterstützung von Profil- und Nachricht verwalten. Es gibt keine Sicherheitsfunktionen zum Schutz gegen ändern sich negativ auf ein Profil, das verwendet wird. MAPI kann verhindern, dass Sie löschen ein Profil verwendet, aber kann nicht verhindern, dass Sie alle Messagingdiensts darin löschen. Wenn Sie jeden Nachrichtendienst in einem Profil löschen, hält alle-Dienstanbieter in dieser Dienste und verursacht dadurch zu unvorhersehbaren Ergebnissen eintritt.
+Achten Sie auf die Unterstützung der Verwaltung von Profil-und Nachrichtendiensten. Es gibt keine Schutzvorkehrungen, die gegen eine nachteilige Änderung eines verwendeten Profils geschützt werden müssen. MAPI kann das Löschen eines verwendeten Profils verhindern, kann jedoch nicht verhindern, dass Sie jeden Nachrichtendienst darin löschen. Wenn Sie jeden Nachrichtendienst in einem Profil löschen, werden alle Dienstanbieter in diesen Diensten angehalten, wodurch unvorhersehbare Ergebnisse auftreten.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 [Erstellen eines Profils](creating-a-profile.md)
   
-> Beschreibt, wie Sie ein Profil erstellen.
+> Beschreibt das Erstellen eines Profils.
     
 [Kopieren eines Profils](copying-a-profile.md)
   
-> Beschreibt, wie ein Profil zu kopieren.
+> Beschreibt das Kopieren eines Profils.
     
 [Löschen eines Profils](deleting-a-profile.md)
   
-> Beschreibt, wie ein Profil zu löschen.
+> Beschreibt das Löschen eines Profils.
     
 [Festlegen eines Standardprofils](setting-a-default-profile.md)
   
-> Beschreibt, wie ein Standardprofil festgelegt.
+> Beschreibt, wie ein Standardprofil festgelegt wird.
     
 [Suchen nach einem Profilnamen](finding-a-profile-name.md)
   
-> Beschreibt, wie ein Profil einen Namen zu suchen.
+> Beschreibt, wie Sie einen Namen eines Profils finden.
     
 [Hinzufügen eines Nachrichtendiensts](adding-a-message-service.md)
   
-> Beschreibt, wie einen Nachrichtendienst hinzufügen.
+> Beschreibt das Hinzufügen eines Nachrichtendiensts.
     
 [Konfigurieren eines Nachrichtendiensts](configuring-a-message-service.md)
   
-> Beschreibt, wie eine Message Service konfigurieren.
+> Beschreibt, wie ein Nachrichtendienst konfiguriert wird.
     
 [Kopieren eines Nachrichtendiensts](copying-a-message-service.md)
   
-> Beschreibt, wie eine Messagingdiensts zu einem Profil zu kopieren.
+> Beschreibt, wie ein Nachrichtendienst in ein Profil kopiert wird.
     
 [Löschen eines Nachrichtendiensts](deleting-a-message-service.md)
   
-> Beschreibt, wie eine Messagingdiensts zu löschen.
+> Beschreibt das Löschen eines Nachrichtendiensts.
     
 [Hinzufügen oder Löschen von Anbietern in einem Nachrichtendienst](adding-or-deleting-providers-in-a-message-service.md)
   
-> Beschreibt das Hinzufügen oder Löschen von Anbietern in einem Message-Dienst.
+> Beschreibt das Hinzufügen oder Löschen von Anbietern in einem Nachrichtendienst.
     
 

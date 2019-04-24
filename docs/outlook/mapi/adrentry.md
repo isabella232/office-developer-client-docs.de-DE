@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5fa091a4-3a84-4881-91b3-e34fd9ca6f38
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f3a62f6783e3b1a0a0423a08c7f5e866b42b81f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 36e0218c9e4e312a138bef7517242f74079212c4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330226"
 ---
 # <a name="adrentry"></a>ADRENTRY
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-NULL oder mehrere Eigenschaften, die an einen Empfänger gehören beschrieben.
+Beschreibt NULL oder mehr Eigenschaften, die zu einem Empfänger gehören.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _ADRENTRY
@@ -45,37 +45,37 @@ typedef struct _ADRENTRY
 
  **ulReserved1**
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  **cValues**
   
-> Anzahl der Eigenschaften im Array Wert-Eigenschaft auf den vom **RgPropVals** Member verwiesen. Der **cValues** -Member kann 0 (null) sein. 
+> Die Anzahl der Eigenschaften im Eigenschafts Wertarray, auf die durch das **rgPropVals** -Element verwiesen wird. Das **cValues** -Element kann NULL sein. 
     
  **rgPropVals**
   
-> Zeiger auf ein Wertearray-Eigenschaft, beschreibt die Eigenschaften für den Empfänger. Der **RgPropVals** -Member kann NULL sein. 
+> Zeiger auf ein Eigenschaftswert Array, das die Eigenschaften für den Empfänger beschreibt. Das **rgPropVals** -Element kann NULL sein. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **ADRENTRY** beschreibt die Eigenschaften, die an einen einzelnen Empfänger gehören. Die folgenden: Eigenschaften, die in der Regel verwendet werden, um einen Empfänger zu beschreiben 
+In einer **Miet** Struktur werden Eigenschaften beschrieben, die zu einem einzelnen Empfänger gehören. Zu den Eigenschaften, die in der Regel zur Beschreibung eines Empfängers verwendet werden, gehören die folgenden: 
   
  **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
   
- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+ **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
   
  **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))
   
  **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
   
-Wenn eine Eintrags-ID oder **PR_ENTRYID** -Eigenschaft im Array [SPropValue](spropvalue.md) für einen Empfänger angezeigt wird, bedeutet dies, dass der Empfänger aufgelöst wurde. Clients rufen Sie die [IAddrBook::ResolveName](iaddrbook-resolvename.md) -Methode, um sicherzustellen, dass alle Empfänger in der Empfängerliste von ausgehenden Nachrichten behoben wurden. Nur aufgelösten Empfänger können mit Nachrichten gesendet werden. 
+Wenn im [SPropValue](spropvalue.md) -Array für einen Empfänger eine Eintrags-ID oder eine **PR_ENTRYID** -Eigenschaft angezeigt wird, bedeutet dies, dass der Empfänger aufgelöst wurde. Clients rufen die [IAddrBook::](iaddrbook-resolvename.md) ResolveName-Methode auf, um sicherzustellen, dass alle Empfänger in der Empfängerliste einer ausgehenden Nachricht aufgelöst wurden. Nur aufgelöste Empfänger können mit Nachrichten gesendet werden. 
   
- **ADRENTRY** Strukturen werden in der Regel kombiniert, um ein Array für das **aEntries** Mitglied einer [ADRLIST](adrlist.md) -Struktur zu bilden. 
+ **Miet** Strukturen werden in der Regel kombiniert, um ein Array für das **aEntries** -Element einer [ADRLIST](adrlist.md) -Struktur zu bilden. 
   
- **ADRENTRY** Strukturen und [SRow](srow.md) Strukturen sind identisch, da beide Mitglied reserviert, ein Array von Eigenschaftswerten und die Anzahl der Werte im Array enthalten. Während **ADRENTRY** Strukturen kombiniert werden, um das **aEntries** Mitglied einer **ADRLIST** -Struktur zu bilden, werden **SRow** Strukturen kombiniert, um die **aRow** Mitglied einer [SRowSet](srowset.md) Struktur bilden. Beide Arten von Strukturen führen Sie die gleichen Allocation-Regeln, sagen, dass eine **SRowSet** -Struktur, die aus der Inhaltstabelle einer Adressbuchcontainer abgerufen wird auf eine **ADRLIST** -Struktur umgewandelt und verwendet werden kann. 
+ **Miet** Strukturen und [SRow](srow.md) -Strukturen sind identisch, da Sie sowohl ein reserviertes Element, ein Array mit Eigenschaftswerten als auch eine Anzahl von Werten im Array enthalten. Während die **Miet** Strukturen zu dem **aEntries** -Element einer **ADRLIST** -Struktur kombiniert werden, werden **SRow** -Strukturen kombiniert, um das **aRow** -Element einer [SRowSet](srowset.md) -Struktur zu bilden. Beide Arten von Strukturen folgen den gleichen Zuordnungsregeln, was bedeutet, dass eine **SRowSet** -Struktur, die aus der Inhaltstabelle eines Adressbuch Containers abgerufen wird, in eine **ADRLIST** -Struktur umgewandelt und unverändert verwendet werden kann. 
   
-Eine Struktur **ADRENTRY** kann leer sein. Beispielsweise kann eine **ADRENTRY** -Struktur, die in der **ADRLIST** -Struktur, die auf das durch den Parameter _LppAdrList_ in einem Aufruf von **IAddrBook::Address** enthalten ist leer sein, wenn ein Empfänger entfernt wird. 
+Eine **Miet** Struktur kann leer sein. Beispielsweise kann eine in der **ADRLIST** -Struktur enthaltene **Miet** Struktur, auf die durch den _lppAdrList_ -Parameter in einem Aufruf von **IAddrBook:: Address** verwiesen wird, leer sein, wenn ein Empfänger entfernt wird. 
   
-Weitere Informationen zur Verwendung von Arbeitsspeicher für **ADRENTRY** Strukturen, finden Sie unter [Verwalten von Arbeitsspeicher für ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md).
+Weitere Informationen zum Zuweisen von Arbeitsspeicher für **Miet** Strukturen finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
   
 ## <a name="see-also"></a>Siehe auch
 

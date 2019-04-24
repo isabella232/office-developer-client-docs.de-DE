@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80aadd11-5409-4636-8fad-fa2206336671
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 662330a7b8c665471e9bbe6af27dff84ee68c8cf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b3862ea539907bb0570a0e845b09a15e7bed0507
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329568"
 ---
 # <a name="validateparameters"></a>ValidateParameters
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine interne Funktion, um zu überprüfen, dass die Parameter-Clientanwendungen Dienstanbietern vergangen sind. 
+Ruft eine interne Funktion auf, um die Parameter zu überprüfen, die Clientanwendungen an Dienstanbieter übergeben haben. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -44,24 +44,24 @@ HRESULT ValidateParameters(
 
  _eMethod_
   
-> [in] Gibt den-Enumeration zurück, die-Methode, um zu überprüfen. 
+> in Gibt die zu überprüfende Methode an. 
     
- _Erster_
+ _First_
   
-> [in] Zeiger auf das erste Argument im Stapel.
+> in Zeiger auf das erste Argument im Stapel.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Alle Parameter sind ungültig. 
+> Alle Parameter sind gültig. 
     
 MAPI_E_CALL_FAILED 
   
-> Eine oder mehrere der Parameter sind ungültig.
+> Mindestens einer der Parameter ist ungültig.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **ValidateParameters** wurde durch das Makro [ValidateParms](validateparms.md) ersetzt. **ValidateParameters** funktioniert nicht ordnungsgemäß auf RISC-Plattformen und wird nun auf diese zu kompilieren verhindert. Immer noch kompiliert und auf Intel-Plattformen ordnungsgemäß funktioniert, aber **ValidateParms** wird auf allen Plattformen empfohlen. 
+Das **ValidateParameters** -Makro wurde vom [ValidateParms](validateparms.md) -Makro abgelöst. **ValidateParameters** funktioniert auf RISC-Plattformen nicht ordnungsgemäß und kann nun nicht mehr kompiliert werden. Es wird weiterhin auf Intel-Plattformen kompiliert und funktioniert, aber **ValidateParms** wird auf allen Plattformen empfohlen. 
   
 

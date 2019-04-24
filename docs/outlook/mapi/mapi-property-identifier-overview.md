@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Bezeichner des MAPI-Eigenschaft
+title: Übersicht über die MAPI-EigenschaftsKennung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 957aa00f-23d8-4f3b-bbc2-7d54f17b47b5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8cf2f08a69ee87c40789b764596e514c91483c2e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 29626f49365a0f37f1e13d965c62bfd5ad0fb774
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328186"
 ---
-# <a name="mapi-property-identifier-overview"></a>Übersicht über die Bezeichner des MAPI-Eigenschaft
+# <a name="mapi-property-identifier-overview"></a>Übersicht über die MAPI-EigenschaftsKennung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Bezeichner für eine ist eine Zahl, die verwendet wird, um anzugeben, was für eine Eigenschaft verwendet wird, und wer ist dafür verantwortlich. Eigenschaftenbezeichner sind MAPI in Bereiche unterteilt; Gibt an, bei denen ein Bezeichner des Bereichs liegt, seine Verwendung und den Besitz. 
+Ein Eigenschaftenbezeichner ist eine Zahl, die verwendet wird, um anzugeben, wofür eine Eigenschaft verwendet wird und wer dafür zuständig ist. Eigenschaftsbezeichner werden durch MAPI in Bereiche unterteilt; wo ein Bezeichner in den Range fällt, gibt seine Verwendung und seinen Besitz an. 
   
-Der Bereich der Eigenschaftenbezeichner verläuft vom 0 x 0001 bis 0xFFFF. Eigenschaftenbezeichner 0 x 0000 und 0xFFFF sind in allen Fällen, was bedeutet, dass dieser Bezeichner nicht verwendete bleiben müssen reserviert. Der Bereich für MAPI definierten Eigenschaften wird auf 0 x 0001 zum 0x3FFF ausgeführt. Diese Eigenschaften werden als MAPI-benutzerdefinierte Eigenschaften bezeichnet. Der Bereich 0 x 4000 auf 0x7FFF Nachrichten- und Empfängereigenschaften gehört, und Clients oder Dienstanbieter können Eigenschaften in diesem Bereich definieren. Eigenschaften im Bereich von 0 x 0001 zu 0x7FFF werden als markierte Eigenschaften bezeichnet. 0 x 8000 sprengen Bereich bekannt ist als benannten Eigenschaften oder Eigenschaften, die einen global eindeutigen Bezeichner (GUID) von 32-Bit- und eine Unicode-Zeichenfolge oder numerischen Wert enthalten. Benannte Eigenschaften können Clients ihre Eigenschaftensatz anpassen.
+Der Umfang der Eigenschaftsbezeichner wird von 0x0001 bis 0xFFFF ausgeführt. Eigenschaftenbezeichner 0x0000 und 0xFFFF sind in allen Fällen reserviert, was bedeutet, dass diese Bezeichner nicht verwendet werden müssen. Der Range für von MAPI definierte Eigenschaften wird von 0x0001 bis 0x3FFF ausgeführt. Diese Eigenschaften werden als MAPI-definierte Eigenschaften bezeichnet. Der 0x4000-0x7FFF gehört zu Nachrichten-und Empfänger Eigenschaften, und entweder Clients oder Dienstanbieter können Eigenschaften in diesem Range definieren. Eigenschaften im Range von 0x0001 bis 0x7FFF werden als gekennzeichnete Eigenschaften bezeichnet. Beyond 0X8000 ist der Umfang für das, was als benannte Eigenschaften bezeichnet wird, oder Eigenschaften, die einen global eindeutigen Bezeichner (GUID) mit 32 Bit und eine Unicode-Zeichenfolge oder einen numerischen Wert aufweisen. Clients können benannte Eigenschaften verwenden, um Ihren Eigenschaftensatz anzupassen.
   
-Dienstanbieter können sichere Profileigenschaften im Bereich 0x67F0 bis 0x67FF definieren. Sichern Sie die Profil, das Eigenschaften Informationen verwendet werden, die zusätzlichen Schutz, beispielsweise Kennwörter erforderlich sind. Diese Eigenschaften können ausgeblendet und verschlüsselt werden. Unabhängig davon, ob sichere Eigenschaften in der Liste der von der [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode zurückgegebenen Eigenschaften enthalten sind, hängt von der Anbieter-Implementierung. Diese Eigenschaften sind in der Regel nicht enthalten. Die [IProfSect: IMAPIProp](iprofsectimapiprop.md) -Schnittstelle wird für den Zugriff auf die Eigenschaften eines Abschnitts Profil, einschließlich sichere Eigenschaften. 
+Dienstanbieter können sichere Profileigenschaften im Range 0x67F0 bis 0x67FF definieren. Sichere Profileigenschaften werden für Informationen verwendet, die zusätzlichen Schutz erfordern, beispielsweise Kennwörter. Diese Eigenschaften können ausgeblendet und verschlüsselt werden. Ob sichere Eigenschaften in der Standardliste der von der [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode zurückgegebenen Eigenschaften enthalten sind, hängt von der Implementierung des Anbieters ab. In der Regel sind diese Eigenschaften nicht enthalten. Die [IProfSect: IMAPIProp](iprofsectimapiprop.md) -Schnittstelle wird für den Zugriff auf die Eigenschaften eines Profil Abschnitts, einschließlich der sicheren Eigenschaften, verwendet. 
   
-Einige dieser Eigenschaft Bereiche sind auf Übertragungseinehit oder nontransmittable Eigenschaften beschränkt. Übertragungseinehit Eigenschaften werden mit einer Meldung übertragen. Nontransmittable Eigenschaften werden mit einer Nachricht nicht übertragen. Nontransmittable Eigenschaften enthalten in der Regel Informationen, die vom Wert nur für Clients und -Dienstanbieter, die mit der aktuellen Sitzung ist. Diese Eigenschaften wäre nicht sinnvoll, die einem anderen Messagingsystem und einen weiteren Satz der Dienstanbieter unbedingt. Das Konzept der Übertragungseinehit Eigenschaften wird hauptsächlich Transportanbieter betrifft. Um festzustellen, ob eine Eigenschaft Übertragungseinehit ist, übergeben Sie seine Eigenschafts-Tag an das **FIsTransmittable** -Makro, das in der Headerdatei Mapitags.h definiert. 
+Einige der Eigenschaftsbereiche sind auf transmitable-Eigenschaften oder nontransmitable-Eigenschaften beschränkt. Transmitable-Eigenschaften werden mit einer Nachricht übertragen; nicht übertragbare Eigenschaften werden nicht mit einer Nachricht übertragen. Nontransmitable-Eigenschaften enthalten in der Regel Informationen, die nur für Clients und Dienstanbieter von Nutzen sind, die mit der aktuellen Sitzung arbeiten. Diese Eigenschaften wären für ein anderes Messagingsystem und eine andere Gruppe von Dienstanbietern nicht unbedingt sinnvoll. Das Konzept der transmitable-Eigenschaften gilt in erster Linie für Transportanbieter. Um zu bestimmen, ob eine Eigenschaft transmitable ist oder nicht, übergeben Sie Ihr Property-Tag an das **FIsTransmittable** -Makro, das in der Headerdatei Mapitags. h definiert ist. 
   
-Eine vollständige Beschreibung der Bereiche Bezeichner finden Sie unter [Eigenschaft Bezeichner Bereiche](property-identifier-ranges.md).
+Eine vollständige Beschreibung der Bezeichner Bereiche finden Sie unter [Eigenschaftenbezeichner Bereiche](property-identifier-ranges.md).
   
 ## <a name="see-also"></a>Siehe auch
 

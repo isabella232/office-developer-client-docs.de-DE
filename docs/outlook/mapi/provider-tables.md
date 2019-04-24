@@ -1,5 +1,5 @@
 ---
-title: Anbietertabellen
+title: Anbieter Tabellen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,39 +7,39 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 99709a4c-cb52-436e-a322-02ded5d65ce5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ccc51f33ff681021492949c2180fe70940157f4f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2b81f4aebae692d28ed492df102d59ba34debf63
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328462"
 ---
-# <a name="provider-tables"></a>Anbietertabellen
+# <a name="provider-tables"></a>Anbieter Tabellen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Anbieter-Tabelle enthält Informationen zu Dienstanbietern. Es gibt zwei verschiedene Anbieter Tabellen, beide MAPI implementiert und von Clients verwendet wird. Die erste Tabelle, die durch Aufrufen der Methode [IMsgServiceAdmin::GetProviderTable](imsgserviceadmin-getprovidertable.md) zugegriffen enthält Informationen über alle Anbieter für das aktuelle Profil. Die zweite Tabelle, auf die Sie über [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md), erstellt eine Tabelle, die Informationen zu allen-Dienstanbieter für einen Nachrichtendienst gespeichert.
+Eine Anbieter Tabelle enthält Informationen zu Dienstanbietern. Es gibt zwei verschiedene Anbieter Tabellen, die von MAPI implementiert und von Clients verwendet werden. Die erste Tabelle, auf die durch Aufrufen der [IMsgServiceAdmin:: GetProvider](imsgserviceadmin-getprovidertable.md) Table-Methode zugegriffen wird, enthält Informationen zu allen Anbietern für das aktuelle Profil. In der zweiten Tabelle, auf die über [IProviderAdmin::](iprovideradmin-getprovidertable.md)getproviderable zugegriffen wird, wird eine Tabelle erstellt, in der Informationen zu allen Dienstanbietern für einen Nachrichtendienst gespeichert werden.
   
-Diese beiden Tabellen haben ein weiterer Unterschied. Tabelle der Dienstanbieter über **IMsgServiceAdmin::GetProviderTable** verfügbar enthält nur die Zeilen, die Dienstanbieter darstellen, während die Tabelle über **IProviderAdmin::GetProviderTable** Zeilen hinzugefügt werden, die darstellen Weitere Informationen im Zusammenhang mit einem Dienstanbieter. Diese zusätzlichen Informationen wird das Profil mit dem Schlüsselwort "Abschnitte" der MAPISVC.INF hinzugefügt. Wenn ein Anbieter zusätzliche Profil hat, werden die **MAPIUID** Werte für diese Abschnitte in der Eigenschaft **PR_SERVICE_EXTRA_UIDS** ([PidTagServiceExtraUids](pidtagserviceextrauids-canonical-property.md)) gespeichert. **PR_SERVICE_EXTRA_UIDS** wird im Abschnitt Profile Service Nachricht gespeichert. 
+Diese beiden Tabellen haben einen weiteren Unterschied. Die Anbieter Tabelle, die über **IMsgServiceAdmin::** getproviderable verfügbar ist, enthält nur Zeilen, die Dienstanbieter darstellen, während die über **IProviderAdmin::** getproviderable verfügbare Tabelle Zeilen enthalten kann, die zusätzliche Informationen, die einem Dienstanbieter zugeordnet sind. Diese zusätzlichen Informationen werden dem Profil mit dem Schlüsselwort "Sections" von MAPISVC. INF hinzugefügt. Wenn ein Anbieter über zusätzliche Profilabschnitte verfügt, speichert er die **MAPIUID** -Werte für diese Abschnitte in der **PR_SERVICE_EXTRA_UIDS** ([pidtagserviceextrauids (](pidtagserviceextrauids-canonical-property.md))-Eigenschaft. **PR_SERVICE_EXTRA_UIDS** wird im Abschnitt Nachrichtendienst Profil gespeichert. 
   
-Die folgenden Eigenschaften bilden die erforderliche Spalte in beide Arten von Anbieter für Tabellen festzulegen:
+Die folgenden Eigenschaften bilden den erforderlichen Spaltensatz in beiden Typen von Anbieter Tabellen:
   
 |||
 |:-----|:-----|
-|**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
-|**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))  <br/> |
-|**PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md))  <br/> |**PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md))  <br/> |
-|**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
-|**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md))  <br/> |**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))  <br/> |
+|**PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
+|**PR_PROVIDER_DISPLAY** ([Pidtagproviderdisplay (](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_PROVIDER_DLL_NAME** ([Pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md))  <br/> |
+|**PR_PROVIDER_ORDINAL** ([Pidtagproviderordinal (](pidtagproviderordinal-canonical-property.md))  <br/> |**PR_PROVIDER_UID** ([Pidtagprovideruid (](pidtagprovideruid-canonical-property.md))  <br/> |
+|**PR_RESOURCE_FLAGS** ([Pidtagresourceflags (](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([Pidtagresourcetype (](pidtagresourcetype-canonical-property.md))  <br/> |
+|**PR_SERVICE_NAME** ([Pidtagservicename (](pidtagservicename-canonical-property.md))  <br/> |**PR_SERVICE_UID** ([Pidtagserviceuid (](pidtagserviceuid-canonical-property.md))  <br/> |
    
-Tabelle der Dienstanbieter kann verwendet werden, um die aktuelle Transport Reihenfolge anzuzeigen oder zu ändern. Um die aktuelle Reihenfolge anzuzeigen, erstellen Sie eine Einschränkung, um nur die Zeilen mit der **PR_RESOURCE_TYPE** -Eigenschaft, um MAPI_TRANSPORT_PROVIDER abzurufen. Klicken Sie dann verwenden Sie **PR_PROVIDER_ORDINAL** als Sortierschlüssel zum Sortieren der Tabelle und alle Zeilen mit [der QueryRows](imapitable-queryrows.md) oder die Funktion [HrQueryAllRows](hrqueryallrows.md) abrufen. 
+Die Anbieter Tabelle kann verwendet werden, um den aktuellen Transportauftrag anzuzeigen oder zu ändern. Um die aktuelle Reihenfolge anzuzeigen, erstellen Sie eine Einschränkung, um nur die Zeilen abzurufen, deren **PR_RESOURCE_TYPE** -Eigenschaft auf MAPI_TRANSPORT_PROVIDER festgelegt ist. Verwenden Sie dann **PR_PROVIDER_ORDINAL** als Sortierschlüssel, um die Tabelle zu sortieren und alle Zeilen mit der [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode oder der [HrQueryAllRows](hrqueryallrows.md) -Funktion abzurufen. 
   
-Ändern der Reihenfolge Transport, gelten diese Beschränkung und die Zeilen abrufen. Klicken Sie dann erstellen Sie ein Array von Werten aus der **PR_PROVIDER_UID** -Eigenschaft, die die eindeutigen Bezeichner für den Transport Anbietern darstellt. Wenn der Bezeichner in der gewünschten Reihenfolge befinden, an die [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md) -Methode übergeben. 
+Um den Transportauftrag zu ändern, wenden Sie dieselbe Einschränkung an, und rufen Sie die Zeilen ab. Erstellen Sie dann ein Array mit Werten aus der **PR_PROVIDER_UID** -Eigenschaft, die die eindeutigen Bezeichner für die Transportanbieter darstellt. Wenn die Bezeichner in der gewünschten Reihenfolge vorliegen, müssen Sie Sie an die [IMsgServiceAdmin:: MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md) -Methode weitergeben. 
   
-Nachdem eine Tabelle Anbieter verfügbar gemacht wurde, wird es nicht nachfolgende Änderungen, wie die Hinzufügung oder Löschung eines Anbieters wider.
+Nachdem eine Anbieter Tabelle verfügbar gemacht wurde, werden nachfolgende Änderungen, wie das Hinzufügen oder Löschen eines Anbieters, nicht wiedergegeben.
   
 ## <a name="see-also"></a>Siehe auch
 

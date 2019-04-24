@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: d6b01a91-b452-4b2c-9802-698e7b0f4169
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 30aaaaa250155215149a941da7f7e528d65b8dc3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5f8396ca84192e485d33fb5a96f641361b717584
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328194"
 ---
 # <a name="imapistatusflushqueues"></a>IMAPIStatus::FlushQueues
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erzwingt, dass alle Nachrichten gesendet oder empfangen, um sofort hoch- oder heruntergeladen werden. Die MAPI-Warteschlange Statusobjekt und die Status-Objekte, mit denen Transportanbieter implementiert unterstützt diese Methode auf.
+ErZwingt, dass alle Nachrichten, die darauf warten, gesendet oder empfangen werden, sofort hochgeladen oder heruntergeladen werden. Das MAPI-Spooler-Statusobjekt und die Statusobjekte, die von Transportanbietern implementiert werden, unterstützen diese Methode.
   
 ```cpp
 HRESULT FlushQueues(
@@ -40,77 +40,77 @@ HRESULT FlushQueues(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, die diese Methode anzeigt.
+> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
     
  _cbTargetTransport_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpTargetTransport_ verwiesen. Der Parameter _CbTargetTransport_ wird nur für Anrufe an die MAPI-Warteschlange Status-Objekts festgelegt. Für Anrufe eines Transportdienstes ist der Parameter _CbTargetTransport_ auf 0 festgelegt. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpTargetTransport_ -Parameter verwiesen wird. Der _cbTargetTransport_ -Parameter wird nur bei Aufrufen des Status-Objekts des MAPI-Spoolers festgelegt. Bei Aufrufen eines Transportanbieters wird der Parameter _cbTargetTransport_ auf 0 festgelegt. 
     
  _lpTargetTransport_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Anbieters Transport, der seine Nachrichtenwarteschlangen zu leeren. Der Parameter _LpTargetTransport_ wird nur für Anrufe an die MAPI-Warteschlange Status-Objekts festgelegt. Für Anrufe eines Transportdienstes ist der _LpTargetTransport_ -Parameter auf NULL festgelegt. 
+> in Ein Zeiger auf die Eintrags-ID des Transportanbieters, der die Nachrichtenwarteschlangen leeren soll. Der _lpTargetTransport_ -Parameter wird nur bei Aufrufen des Status-Objekts des MAPI-Spoolers festgelegt. Bei Aufrufen eines Transportanbieters wird der Parameter _lpTargetTransport_ auf NULL festgelegt. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die die Schreibvorgang wurde steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die den Flush-Vorgang steuert. Die folgenden Flags können festgelegt werden:
     
 FLUSH_ASYNC_OK 
   
-> Flush-Vorgang kann asynchron auftreten. Dieser Parameter gilt nur für die MAPI-Warteschlange Status-Objekt. 
+> Der Flush-Vorgang kann asynchron ausgeführt werden. Dieses Flag gilt nur für das Statusobjekt des MAPI-Spoolers. 
     
 FLUSH_DOWNLOAD 
   
-> Die eingehende Nachrichtenwarteschlangen sollten entfernt werden.
+> Die Warteschlangen für eingehende Nachrichten sollten geleert werden.
     
 FLUSH_FORCE 
   
-> Der Schreibvorgang wurde sollte unabhängig davon, obwohl die Wahrscheinlichkeit, dass eine Beeinträchtigung der Systemleistung auftreten. Dieses Kennzeichen müssen festgelegt werden, wenn eine asynchrone Adressbuchhierarchie gerichtet ist.
+> Der Flush-Vorgang sollte unabhängig von der Wahrscheinlichkeit einer Leistungsminderung auftreten. Dieses Flag muss festgelegt werden, wenn ein asynchroner Transportanbieter zielgerichtet ist.
     
 FLUSH_NO_UI 
   
-> Das Statusobjekt sollte eine Statusanzeige nicht angezeigt werden.
+> Das Status-Objekt sollte keine Statusanzeige anzeigen.
     
 FLUSH_UPLOAD 
   
-> Ausgehende Nachrichtenwarteschlangen sollten entfernt werden.
+> Die Warteschlangen für ausgehende Nachrichten sollten geleert werden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Schreibvorgang wurde erfolgreich war.
+> Der Flush-Vorgang war erfolgreich.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang ist in Bearbeitung. Es dürfen für die Durchführung, oder er angehalten werden sollte, bevor Sie diesen Vorgang initiiert werden kann.
+> Ein anderer Vorgang wird ausgeführt; Es sollte zugelassen werden, oder es sollte beendet werden, bevor dieser Vorgang eingeleitet werden kann.
     
 MAPI_E_NO_SUPPORT 
   
-> Das Statusobjekt unterstützt keine dieser Vorgang, wie durch die Abwesenheit des STATUS_FLUSH_QUEUES-Flags in den Status des Objekts **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))-Eigenschaft angegeben.
+> Das Status-Objekt unterstützt diesen Vorgang nicht, wie durch das Fehlen des STATUS_FLUSH_QUEUES-Flags in der **PR_RESOURCE_METHODS** ([pidtagresourcemethods (](pidtagresourcemethods-canonical-property.md))-Eigenschaft des Status-Objekts angegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Methode **IMAPIStatus::FlushQueues** fordert an, dass die MAPI-Warteschlange oder eines Transportdienstes sofort alle Nachrichten in der Warteschlange für ausgehende Nachrichten senden oder empfangen alle aus der Warteschlange für eingehende. **FlushQueues** ist nur durch das MAPI-Warteschlange Status-Objekt und von Status-Objekten, die transport-Anbieter Kooperation implementiert. 
+Die **IMAPIStatus:: FlushQueues** -Methode fordert, dass der MAPI-Spooler oder ein Transportanbieter sofort alle Nachrichten in der ausgehenden Warteschlange sendet oder alle Nachrichten von der eingehenden Warteschlange empfängt. **FlushQueues** wird nur vom MAPI-Spooler-Statusobjekt und von Statusobjekten implementiert, die von den Transportanbietern bereitstellen. 
   
-MAPI_E_BUSY sollten für asynchrone Anfragen zurückgegeben werden, damit Clients Arbeit fortgesetzt werden können. 
+MAPI_E_BUSY sollte für asynchrone Anforderungen zurückgegeben werden, damit Clients weiterhin arbeiten können. 
   
-Standardmäßig ist **FlushQueues** eine synchrone Operation. Steuerelement gibt keine an den Anrufer zurück, bis der Löschvorgang abgeschlossen ist. Nur der flush durch die MAPI-Warteschlange ausgeführte Vorgang kann asynchrone sein. Clients fordern dieses Verhalten, indem Sie das FLUSH_ASYNC_OK-Flag festlegen. 
+Standardmäßig ist **FlushQueues** eine synchrone Operation; die Steuerung kehrt erst dann zum Aufrufer zurück, wenn der Flush abgeschlossen wurde. Nur der Flush-Vorgang, der vom MAPI-Spooler ausgeführt wird, kann asynchron sein; Clients fordern dieses Verhalten, indem Sie das FLUSH_ASYNC_OK-Flag festlegen. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Implementierung eines remote-Transport-Anbieters von **FlushQueues** legt Bits in der Eigenschaft **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) in das Anmeldeobjekt Statuszeile steuern, wie Warteschlangen geleert werden. Wenn Sie ein remote-Viewer das Flag FLUSH_UPLOAD übergibt, sollte die **FlushQueues** -Methode die Bits STATUS_INBOUND_ENABLED und STATUS_INBOUND_ACTIVE festlegen. Wenn Sie ein remote-Viewer das Flag FLUSH_DOWNLOAD übergibt, sollte die **FlushQueues** -Methode die Bits STATUS_OUTBOUND_ENABLED und STATUS_OUTBOUND_ACTIVE festlegen. **FlushQueues** sollte dann S_OK zurückgegeben. Die MAPI-Warteschlange initiieren Sie dann die entsprechenden Aktionen zum Hoch- und Herunterladen von Nachrichten. 
+Die Implementierung eines Remote Transportanbieters von **FlushQueues** legt Bits in der **PR_STATUS_CODE** ([pidtagstatuscode (](pidtagstatuscode-canonical-property.md))-Eigenschaft in der Status Zeile des LOGON-Objekts fest, um zu steuern, wie Warteschlangen geleert werden. Wenn ein Remote Viewer das FLUSH_UPLOAD-Flag übergibt, sollte die **FlushQueues** -Methode die Bits STATUS_INBOUND_ENABLED und STATUS_INBOUND_ACTIVE festlegen. Wenn ein Remote Viewer das FLUSH_DOWNLOAD-Flag übergibt, sollte die **FlushQueues** -Methode die Bits STATUS_OUTBOUND_ENABLED und STATUS_OUTBOUND_ACTIVE festlegen. **FlushQueues** sollte dann S_OK zurückgeben. Der MAPI-Spooler startet dann die entsprechenden Aktionen, um Nachrichten hoch-und herunterzuladen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Ein Anruf an das MAPI-Warteschlange Status-Objekt ist eine Richtlinie auf alle Nachrichten oder von der entsprechenden Adressbuchhierarchie übertragen. Wenn Sie eine einzelne Adressbuchhierarchie Status-Objekts aufrufen, sind nur die Nachrichten für diesen Anbieter betroffen.
+Ein Aufruf des MAPI-Spooler-Status Objekts ist eine Direktive, mit der alle Nachrichten an den oder vom entsprechenden Transportanbieter übertragen werden. Wenn Sie das Status-Objekt eines einzelnen Transportanbieters aufrufen, sind nur die Nachrichten für diesen Anbieter betroffen.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
+[Kanonische Pidtagresourcemethods (-Eigenschaft](pidtagresourcemethods-canonical-property.md)
   
-[PidTagStatusCode (kanonische Eigenschaft)](pidtagstatuscode-canonical-property.md)
+[Kanonische Pidtagstatuscode (-Eigenschaft](pidtagstatuscode-canonical-property.md)
   
 [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

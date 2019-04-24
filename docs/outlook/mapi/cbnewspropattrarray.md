@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: c085e3e4-5d1e-42ab-8c44-2c326c032aea
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8bcb650a7aef357be155c177c38bc39cac3fa2c2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 365348a4eb3440d1f284a39cfce019cf4f89f915
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331962"
 ---
 # <a name="cbnewspropattrarray"></a>CbNewSPropAttrArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes, die für eine neue [SPropAttrArray](spropattrarray.md) Struktur zugewiesen werden soll, die eine angegebene Anzahl von Eigenschaftsattributen enthält. 
+Berechnet die Anzahl der Bytes, die für eine neue [SPropAttrArray](spropattrarray.md) -Struktur reserviert werden sollen, die eine bestimmte Anzahl von Eigenschaftsattributen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage.h  <br/> |
-|Verwandte Struktur:  <br/> |**SPropAttrArray** <br/> |
+|Headerdatei  <br/> |IMessage. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SPropAttrArray** <br/> |
    
 ```cpp
 CbNewSPropAttrArray (_cattr)
@@ -40,7 +40,7 @@ CbNewSPropAttrArray (_cattr)
 
  __cattr_
   
-> Anzahl der Attribute in die neue Struktur **SPropAttrArray** enthalten sein. 
+> Die Anzahl der Eigenschaftsattribute, die in die neue **SPropAttrArray** -Struktur eingeschlossen werden sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

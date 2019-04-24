@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6d1ed913-8329-3bb9-d275-9b76597781ee
 description: ''
-ms.openlocfilehash: c382edb21e8c8e4f6561f6e34a8fe28c3907af61
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 213436da43ef66bc85b0caf6bef20fb9972edc19
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327356"
 ---
-# <a name="edit-a-part-of-a-formula"></a>Bearbeiten eines Teils einer Formel
+# <a name="edit-a-part-of-a-formula"></a>Bearbeiten von Formelteilen
 
 1. Doppelklicken Sie auf die Zelle. Oder markieren Sie die Zelle, und drücken Sie F2.
     
@@ -35,6 +35,6 @@ ms.locfileid: "19796915"
 | Bis zum Ende markieren  <br/> | Drücken Sie UMSCHALT+ENDE.  <br/> |
 | Bis zum Anfang markieren  <br/> | Drücken Sie UMSCHALT+POS1.  <br/> |
 | Den markierten Text ersetzen  <br/> | Geben Sie den neuen Text ein.  <br/> |
-| Den markierten Text löschen  <br/> | Drücken Sie ENTF. Oder klicken Sie auf der Registerkarte **Start** auf **Ausschneiden**.  <br/> |
+| Den markierten Text löschen  <br/> | Drücken Sie ENTF. Klicken Sie auf der Registerkarte **Start** auf Ausschneiden. ****  <br/> |
    
 

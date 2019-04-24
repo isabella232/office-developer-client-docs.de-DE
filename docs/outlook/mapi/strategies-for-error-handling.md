@@ -1,5 +1,5 @@
 ---
-title: Strategien zur Fehlerbehandlung
+title: Strategien für die Fehlerbehandlung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,32 +8,32 @@ api_type:
 - COM
 ms.assetid: be941efd-04b3-48d0-9b9c-8195ad2bb58d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b0ec3ada71a3e604ea71c5d386f1ff0466132081
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9e76ae3f292d8348b9dc64cb54bffae96b96e871
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327216"
 ---
-# <a name="strategies-for-error-handling"></a>Strategien zur Fehlerbehandlung
+# <a name="strategies-for-error-handling"></a>Strategien für die Fehlerbehandlung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Da Schnittstellenmethoden virtuellen sind, ist es nicht möglich, als ein Anrufer den vollständigen Satz von Werten kennen, die von jeder einen Aufruf zurückgegeben werden können. Eine Implementierung einer Methode möglicherweise fünf Werte zurück. eine andere möglicherweise acht zurück. Die Einträge Verweis in der Dokumentation zu MAPI-einige Werte aufgeführt, die für jede Methode zurückgegeben werden können; Dies sind die Werte, die der Client oder Dienstanbieter suchen und verarbeiten, da sie eine besondere Bedeutung haben kann. Andere Werte zurückgegeben werden können, aber, da sie nicht aussagekräftig sind, ist die Behandlung von spezieller Code nicht erforderlich. Eine einfache Überprüfung Erfolg oder Fehler ist ausreichend.
+Da Schnittstellenmethoden virtuell sind, ist es nicht möglich, als Anrufer den vollständigen Satz von Werten zu kennen, die von einem beliebigen Aufruf zurückgegeben werden können. Eine Implementierung einer Methode kann fünf Werte zurückgeben. eine andere kann acht zurückgeben. In den Referenz Einträgen in der MAPI-Dokumentation werden einige Werte aufgeführt, die für jede Methode zurückgegeben werden können. Dies sind die Werte, die Ihr Client oder Dienstanbieter überprüfen und behandeln kann, da diese eine besondere Bedeutung haben. Andere Werte können zurückgegeben werden, da Sie jedoch keine Bedeutung haben, ist kein spezieller Code erforderlich, um diese zu behandeln. Eine einfache Überprüfung auf Erfolg oder Misserfolg ist ausreichend.
   
-Wenige-Schnittstellenmethoden zurückgeben Warnungen. Wenn eine Methode, die der Client oder Dienstanbieter Ruft eine Warnung zurückgeben kann, verwenden Sie das Makro **HR_FAILED** So testen Sie den Rückgabewert statt eine Überprüfung für 0 (null) oder ungleich NULL. Warnungen, unterscheiden sich zwar ungleich NULL, von Fehlercodes, dass sie nicht das hohe Bit festgelegt haben. Wenn der Client oder Dienstanbieter nicht das Makro verwendet wird, ist es wahrscheinlich, dass eine Warnung für ein Fehler gehalten werden kann. 
+Einige der Schnittstellenmethoden geben Warnungen zurück. Wenn eine vom Client oder Dienstanbieter aufgerufene Methode eine Warnung zurückgeben kann, verwenden Sie das **HR_FAILED** -Makro, um den Rückgabewert zu testen, statt eine Überprüfung auf 0 (null) oder ungleich NULL. Warnungen, obwohl ungleich NULL, unterscheiden sich von Fehlercodes dadurch, dass Sie nicht das hohe Bit festgelegt haben. Wenn Ihr Client oder Dienstanbieter das Makro nicht verwendet, ist es wahrscheinlich, dass für einen Fehler eine Warnung verwechselt wird. 
   
-Zwar die meisten Interface-Methoden und Funktionen HRESULT-Werte zurückgeben, Rückgabewerte einige Funktionen, die nicht signierte lang. Darüber hinaus einige Methoden in der MAPI-Umgebung verwendet stammen aus COM und COM-Fehlerwerte statt MAPI-Fehlerwerte zurückzugeben. Beachten behalten Sie die folgenden Richtlinien beim erachtet bei:
+Obwohl die meisten Schnittstellenmethoden und-Funktionen HRESULT-Werte zurückgeben, geben einige Funktionen unsigned long-Werte zurück. Außerdem stammen einige Methoden, die in der MAPI-Umgebung verwendet werden, aus COM und geben COM-Fehlerwerte anstelle von MAPI-Fehlerwerten zurück. Beachten Sie beim tätigen von Anrufen die folgenden Richtlinien:
   
-- Niemals, oder verwenden Sie die Rückgabewerte von **IUnknown:: AddRef** oder **IUnknown**. Diese zurückgegebenen Werte sind nur zu Diagnosezwecken. 
+- Verlassen Sie sich nie auf die Rückgabewerte von **IUnknown:: AddRef** oder **IUnknown:: Release**. Diese Rückgabewerte dienen nur zu Diagnosezwecken. 
     
-- **QueryInterface** gibt immer generischen COM-Fehler, in dem die Funktion FACILITY_NULL oder FACILITY_RPC wird, statt der MAPI-Fehler zurück. 
+- **IUnknown:: QueryInterface** gibt immer generische com-Fehler zurück, bei denen die FACILITY_NULL-oder FACILITY_RPC statt MAPI-Fehler aufweist. 
     
-- Alle anderen Schnittstellenmethoden zurückgeben MAPI-Benutzeroberflächenfehler mit einer Funktion des FACILITY_ITF oder FACILITY_RPC oder FACILITY_NULL Fehler.
+- Alle anderen Schnittstellenmethoden geben MAPI-Schnittstellenfehler mit einer FACILITY_ITF-oder FACILITY_RPC-oder FACILITY_NULL-Fehlermeldung zurück.
     
-Wenn eine nicht unterstützte MAPI-Methode aufgerufen wird, kann eine der vier mögliche Fehler zurückgegeben werden: 
+Wenn ein Aufruf an eine nicht unterstützte MAPI-Methode erfolgt, kann einer von vier möglichen Fehlern zurückgegeben werden: 
   
 MAPI_E_NO_SUPPORT
   

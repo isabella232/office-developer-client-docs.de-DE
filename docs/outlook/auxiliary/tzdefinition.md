@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0ae21571-2299-6407-807c-428668bb6798
-description: Stellt eine gesamte Zeitzone, einschließlich aller historischen, aktuellen und zukünftigen Zeitzone UMSCHALT Regeln Sommerzeit.
-ms.openlocfilehash: f436216f5da882ea8ac144e6bd384e51e31abb8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Stellt eine gesamte Zeitzone einschließlich aller historischen, aktuellen und zukünftigen Zeitzone-Schicht Regeln für Sommerzeit dar.
+ms.openlocfilehash: 5f7000ecc1fa602b330670c2ee1c39f673a11a65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328294"
 ---
 # <a name="tzdefinition"></a>TZDEFINITION
 
-Stellt eine gesamte Zeitzone, einschließlich aller historischen, aktuellen und zukünftigen Zeitzone UMSCHALT Regeln Sommerzeit.
+Stellt eine gesamte Zeitzone einschließlich aller historischen, aktuellen und zukünftigen Zeitzone-Schicht Regeln für Sommerzeit dar.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -33,25 +33,25 @@ typedef struct {
 
 _wFlags_
   
-> Gibt an, dass der Name des Schlüssels, der die Zeitzone in der Windows-Registrierung gültig ist. Da jede Zeitzone immer mit einem Schlüsselnamen bestimmt werden soll, sollte dieser Member immer den Wert **TZDEFINITION_FLAG_VALID_KEYNAME**haben.
+> Gibt an, dass der Schlüsselname, der die Zeitzone in der Windows-Registrierung darstellt, gültig ist. Da jede Zeitzone immer mit einem Schlüsselnamen identifiziert werden sollte, sollte dieser Member immer den Wert **TZDEFINITION_FLAG_VALID_KEYNAME**haben.
     
 _pwszKeyName_
   
-> Der Name des Schlüssels für diese Zeitzone in der Windows-Registrierung. Dieser Name muss nicht lokalisiert werden. Es wurde eine maximale Größe von **MAX_PATH**, die in der Windows Software Development Kit (SDK) Kopfzeile Datei windows.h definiert ist. 
+> Der Name des Schlüssels für diese Zeitzone in der Windows-Registrierung. Dieser Name darf nicht lokalisiert werden. Es hat eine maximale Größe von **MAX_PATH**, die in der Windows Software Development Kit (SDK)-Headerdatei Windows. h definiert ist. 
     
 _cRules_
   
-> Die Anzahl der Zeitzonenregeln für diese Definition. Die maximale Anzahl von Regeln ist **TZ_MAX_RULES**. 
+> Die Anzahl der Zeitzonenregeln für diese Definition. Die maximale Anzahl von Regeln lautet **TZ_MAX_RULES**. 
     
 _rgRules_
   
-> Ein Array von Regeln, die beim Auftreten von Schichten beschreiben.
+> Ein Array von Regeln, die beschreiben, wenn Verschiebungen auftreten.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Es muss mindestens eine Regel in *RgRules* . Die erste Regel in *RgRules* wird unabhängig von der *StStart* auf die erste Regel angesehen werden die Regel verwenden, bis die zweite Regel beginnt. 
+Es muss mindestens eine Regel in *RgRules* vorhanden sein. Die erste Regel in *rgRules* gilt als die Regel, die verwendet werden soll, bis die zweite Regel gestartet wird, unabhängig von der *stStart* für die erste Regel. 
   
-Die Regeln sollten von ALT zu neu sortiert werden. Überschneidung zwischen Regeln, damit eine vorherige Regel gilt für das Ende beim Starten einer neuen Regel zulässig ist.
+Die Regeln sollten vom ältesten zum neuesten sortiert werden. Zwischen den Regeln ist keine Überlappung zulässig, sodass eine frühere Regel als beendet gilt, wenn eine neue Regel beginnt.
   
 ## <a name="see-also"></a>Siehe auch
 

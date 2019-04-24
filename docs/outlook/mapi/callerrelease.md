@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 80ba893d-3380-4db1-9175-f5b84cb57def
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e97e1d5302d8247cb09ce7cb1b581582405300a5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9a22550e60c9de38236a9f612c7e60f50f18978f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331843"
 ---
 # <a name="callerrelease"></a>CALLERRELEASE
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Rückruffunktion, die ein Table-Datenobjekt freigeben kann, wenn eine Tabellenansicht freigegeben wird. 
+Definiert eine Rückruffunktion, die ein Tabellendaten Objekt freigeben kann, wenn eine Tabellenansicht veröffentlicht wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
-|Definierte Funktion von implementiert:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
-|Definierte Funktion aufgerufen:  <br/> |MAPI  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Definierte Funktion, implementiert von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
    
 ```cpp
 void CALLERRELEASE(
@@ -45,24 +45,24 @@ void CALLERRELEASE(
 
  _ulCallerData_
   
-> [in] Anrufer-Daten mit der Tabellenansicht MAPI gespeichert und an die **CALLERRELEASE** übergebenen basieren Callback-Funktion. Die Daten enthält Kontext über die Tabellenansicht freigegeben wird. 
+> in Von MAPI gespeicherte Anrufer-Daten in der Tabellenansicht und an die **CALLERRELEASE** -basierte Rückruffunktion übergeben. Die Daten liefern Kontext über die Tabellenansicht, die freigegeben wird. 
     
  _lpTblData_
   
-> [in] Zeiger auf die [ITableData: IUnknown](itabledataiunknown.md) Schnittstelle für die Tabelle Datenobjekt zugrunde liegenden der Tabellenansicht freigegeben wird. 
+> in Zeiger auf die [ITableData: IUnknown](itabledataiunknown.md) -Schnittstelle für das Tabellendaten Objekt, das der Tabellenansicht zugrunde liegt, die freigegeben wird. 
     
  _lpVue_
   
-> [in] Zeiger auf die [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle für die Tabellenansicht freigegeben wird. Dies ist eine Schnittstelle für das Table-Objekt zurückgegeben, die im Parameter _LppMAPITable_ der [ITableData::HrGetView](itabledata-hrgetview.md) -Methode, die das freizugebende-Objekt erstellt. 
+> in Zeiger auf die [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle für die Tabellenansicht, die freigegeben wird. Hierbei handelt es sich um eine Schnittstelle für das Table-Objekt, das im _lppMAPITable_ -Parameter der [ITableData:: HrGetView](itabledata-hrgetview.md) -Methode zurückgegeben wird, die das Release-Objekt erstellt hat. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Keine 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Eine Clientanwendung oder Dienstanbieter, die ein Table-Datenobjekt gefüllt wurde kann [ITableData::HrGetView](itabledata-hrgetview.md) zum Erstellen einer Ansicht, sortierten der Tabelle aufrufen. Der Anruf an **HrGetView** übergibt einen Zeiger auf eine Rückruffunktion **CALLERRELEASE** basiert und auch einen Kontext mit der Tabellenansicht gespeichert werden soll. Wenn der Tabellenansicht der Referenzzähler gibt 0 (null) zurück, und die Ansicht wird veröffentlicht, ruft die **IMAPITable** -Implementierung die Callback-Funktion, die im Kontext der _UlCallerData_ -Parameter übergeben. 
+Eine Clientanwendung oder ein Dienstanbieter, der ein Tabellendaten Objekt aufgefüllt hat, kann [ITableData:: HrGetView](itabledata-hrgetview.md) aufrufen, um eine schreibgeschützte, sortierte Ansicht der Tabelle zu erstellen. Der Aufruf von **HrGetView** übergibt einen Zeiger auf eine **CALLERRELEASE** -basierte Rückruffunktion und auch einen Kontext, der mit der Tabellenansicht gespeichert werden soll. Wenn der Verweiszähler der Tabellenansicht auf Null zurückgesetzt wird und die Ansicht veröffentlicht wird, ruft die **IMAPITable** -Implementierung die Rückruffunktion auf und übergibt den Kontext im _ulCallerData_ -Parameter. 
   
-Eine häufige Verwendung von einer Rückruffunktion **CALLERRELEASE** basierend ist zum Freigeben des zugrunde liegenden Daten Tabellenobjekts und keinen verfolgen sie bei der nachfolgenden Verarbeitung an. 
+Eine häufige Verwendung einer **CALLERRELEASE** -basierten Rückruffunktion besteht darin, das zugrunde liegende Tabellendaten Objekt freizusetzen und es während der nachfolgenden Verarbeitung nicht nachzuverfolgen. 
   
 

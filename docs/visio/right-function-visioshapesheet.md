@@ -1,5 +1,5 @@
 ---
-title: RIGHT Function (VisioShapeSheet)
+title: RIGHT-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,38 +8,38 @@ f1_keywords:
 - Vis_DSS.chm1027314
 localization_priority: Normal
 ms.assetid: 910f0297-d588-2048-f308-03f3c2389bba
-description: Gibt das letzte Zeichen oder Zeichen in einer Textzeichenfolge, basierend auf der Anzahl der Zeichen an, die Sie angeben.
-ms.openlocfilehash: e35cc4918809d5f134f9519c01cb3c93407258e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt das letzte Zeichen in einer Textzeichenfolge basierend auf der Anzahl der Zeichen zurück, die Sie angeben.
+ms.openlocfilehash: faf14ef55b34e51bac11129d6857e381d07357c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326726"
 ---
-# <a name="right-function-visioshapesheet"></a>RIGHT Function (VisioShapeSheet)
+# <a name="right-function-visioshapesheet"></a>RIGHT-Funktion (VisioShapeSheet)
 
-Gibt das letzte Zeichen oder Zeichen in einer Textzeichenfolge, basierend auf der Anzahl der Zeichen an, die Sie angeben.
+Gibt das letzte Zeichen in einer Textzeichenfolge basierend auf der Anzahl der Zeichen zurück, die Sie angeben.
   
 ## <a name="syntax"></a>Syntax
 
-RECHTS (** *Text* ** [, ** *Num_chars_opt* **]) 
+Rechts (* * *Text* * * [, * * *num_chars_opt* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |Erforderlich  <br/> |**String** <br/> | Die Textzeichenfolge mit den zu extrahierenden Zeichen.  <br/> |
-| _num_chars_opt_ <br/> |Optional  <br/> |**Nummer** <br/> |Die Anzahl der Zeichen, die extrahiert werden sollen. Standardwert ist 1.  <br/> |
+| _num_chars_opt_ <br/> |Optional  <br/> |**Number** <br/> |Die Anzahl der Zeichen, die extrahiert werden sollen. Standardwert ist 1.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Wert von _Num_chars_opt_ muss größer als oder gleich 0 (null). 
+Der Wert von _num_chars_opt_ muss größer oder gleich NULL (0) sein. 
   
-Wenn _Num_chars_opt_ größer als die Länge des Texts ist, gibt rechts des gesamten Texts. Wenn _Num_chars_opt_ ausgelassen wird, wird angenommen, 1 sein. 
+Wenn _num_chars_opt_ größer als die Länge des Texts ist, gibt right den gesamten Text zurück. Wenn _num_chars_opt_ ausgelassen wird, wird davon ausgegangen, dass es 1 ist. 
   
 ## <a name="example"></a>Beispiel
 

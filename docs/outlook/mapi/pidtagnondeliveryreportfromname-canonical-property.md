@@ -1,5 +1,5 @@
 ---
-title: PidTagNonDeliveryReportFromName (kanonische Eigenschaft)
+title: Kanonische Pidtagnondeliveryreportfromname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,46 +11,46 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 886b4fdd-5d97-4b66-8329-052301e637fc
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 28eafc29a9d711b7d98444ebb330df1145f86628
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: fa30a1b07f2b1f3c9ca837b5ddda629b3d8737f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329337"
 ---
-# <a name="pidtagnondeliveryreportfromname-canonical-property"></a>PidTagNonDeliveryReportFromName (kanonische Eigenschaft)
+# <a name="pidtagnondeliveryreportfromname-canonical-property"></a>Kanonische Pidtagnondeliveryreportfromname (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn für einen Unzustellbarkeitsbericht festgelegt, wird der Name eines fehlerhaften senden-als Benutzer.
+Wenn für einen Unzustellbarkeitsbericht festgelegt ist, wird der Name des fehlerhaften senden als Benutzer.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_NDR_FROM_NAME  <br/> |
 |Kennung:  <br/> |0x6905  <br/> |
 |Datentyp:  <br/> |PT_STRING8  <br/> |
-|Bereich:  <br/> |Allgemeine messaging  <br/> |
+|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

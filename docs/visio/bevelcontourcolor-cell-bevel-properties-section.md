@@ -1,26 +1,26 @@
 ---
-title: BevelContourColor Cell (Bevel Properties Section)
+title: Zelle "BevelContourColor" (Abschnitt "Fase Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 90bc9be5-282e-4a84-9d8b-e11788070768
-description: Bestimmt die Farbe der Abschrägung Arbeitsprofil in RGB-Wert oder durch das aktive Design wie bestimmt.
-ms.openlocfilehash: 89b90f804ce1ccd8511dc0160f1ca2c94546596e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Farbe der Kontur der Abschrägung im RGB-Wert oder vom aktiven Design.
+ms.openlocfilehash: df22f001dc7fa85e192ab93d5ff799a0b424aefe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327146"
 ---
-# <a name="bevelcontourcolor-cell-bevel-properties-section"></a>BevelContourColor Cell (Bevel Properties Section)
+# <a name="bevelcontourcolor-cell-bevel-properties-section"></a>Zelle "BevelContourColor" (Abschnitt "Fase Properties")
 
-Bestimmt die Farbe der Abschrägung Arbeitsprofil in RGB-Wert oder durch das aktive Design wie bestimmt.
+Bestimmt die Farbe der Kontur der Abschrägung im RGB-Wert oder vom aktiven Design.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **BevelContourColor** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **BevelContourColor** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
@@ -32,6 +32,6 @@ Wenn Sie einen Verweis auf die Zelle **BevelContourColor** aus einem Programm na
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowBevelProperties** <br/> |
-| Zellenindex:  <br/> |**gegenüber BevelContourColor** <br/> |
+| Zellenindex:  <br/> |**VIS-BevelContourColor** <br/> |
    
 

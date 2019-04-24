@@ -5,83 +5,83 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 30dd43a3ac9a315cd41919872b918bee639ca259
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a0644e4bf5c6847d61cc59e203d50f61ad142e84
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329750"
 ---
 # <a name="about-the-replication-state-machine"></a>Informationen über den Replikationszustandsautomaten
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält eine Übersicht über die Zustandsautomat für die Datenreplikation für Microsoft Outlook 2013 und Microsoft Outlook 2010.
+Dieses Thema enthält eine Übersicht über den Statuscomputer für Microsoft Outlook 2013 und Microsoft Outlook 2010-Datenreplikation.
   
 > [!NOTE]
-> Die Replikation API muss gemäß den Anweisungen in diesem Thema, um die Benutzer nützlich oder unterstützte vollständig implementiert werden. Die Replikation-API ist ausschließlich für Outlook 2013 oder Outlook 2010 Änderungen an und von einem Server zu replizieren verfügbar. 
+> Die Replikations-API muss vollständig gemäß den Anweisungen in diesem Thema implementiert werden, damit Sie nützlich oder unterstützt werden. Die Replikations-API steht ausschließlich zum Replizieren von Outlook 2013-oder Outlook 2010-Änderungen auf und von einem Server zur Verfügung. 
   
-## <a name="iostx-and-the-state-machine"></a>IOSTX und der Zustandsautomat
+## <a name="iostx-and-the-state-machine"></a>IOSTX und der Statuscomputer
 
-Ein Client ruft **[IOSTX::SyncBeg](iostx-syncbeg.md)**, **[IOSTX::SyncEnd](iostx-syncend.md)**, **[IOSTX::SyncHdrBeg](iostx-synchdrbeg.md)** und **[IOSTX::SyncHdrEnd](iostx-synchdrend.md)** in einer Sequenz zum Synchronisieren von Outlook 2013 oder Outlook 2010-Ordner und Elemente zwischen einer lokalen Speicher und einem Server. Die tatsächlichen Folge der Aufrufe hängt die Daten, die auf (z. B., eine Hierarchie von Ordnern für Outlook 2013 oder Outlook 2010, ein Outlook 2013 oder Outlook 2010-Ordner, e-Mail-Elementen, Kalenderelemente und usw.) repliziert werden müssen und die Richtung der Synchronisierung (, ob Hochladen aus dem lokalen Speicher auf dem Server oder auf den lokalen Speicher vom Server herunterladen). Hier ist eine typische Folge der Aufrufe aus: 
+Ein Client ruft **[IOSTX:: SyncBeg](iostx-syncbeg.md)**, **[IOSTX:: SyncEnd](iostx-syncend.md)**, **[IOSTX:: SyncHdrBeg](iostx-synchdrbeg.md)** und **[IOSTX:: SyncHdrEnd](iostx-synchdrend.md)** in einer Sequenz auf, um Outlook 2013-oder Outlook 2010-Ordner und-Elemente zwischen einem lokalen Speicher und einem Server zu synchronisieren. Die tatsächliche Abfolge von Anrufen hängt von den zu replizierenden Daten ab (beispielsweise einer Hierarchie von Outlook 2013-oder Outlook 2010-Ordnern, einem Outlook 2013-oder Outlook 2010-Ordner, e-Mail-Elementen, Kalenderelementen usw.) und der Synchronisierungsrichtung (unabhängig davon, ob Hochladen vom lokalen Speicher zum Server oder Herunterladen vom Server zum lokalen Speicher). Es folgt eine typische Abfolge von anrufen: 
   
-1. Der Client ruft **IOSTX::SyncBeg** Replikation beginnen, um einen Bezeichner Zustand und einen Zeiger auf eine Adresse einer entsprechenden Datenstruktur angeben. 
+1. Der Client ruft **IOSTX:: SyncBeg** auf, um mit der Replikation zu beginnen und einen Statusbezeichner und einen Zeiger auf eine Adresse einer entsprechenden Datenstruktur anzugeben. 
     
-2. Outlook 2013 oder Outlook 2010 weist die Datenstruktur und initialisiert die Datenstruktur mit den erforderlichen Informationen für den Client. 
+2. Outlook 2013 oder Outlook 2010 weist die Datenstruktur zu und initialisiert die Datenstruktur mit den erforderlichen Informationen für den Client. 
     
-3. Der Client führt die Replikation aktualisieren die Datenstruktur, um alle erforderlichen Informationen über die Replikation auf den lokalen Speicher zu vermitteln.
+3. Der Client führt die Replikation durch und aktualisiert die Datenstruktur, um alle erforderlichen Informationen zur Replikation an den lokalen Speicher zu übermitteln.
     
-4. Nach dem Ausführen der Replikations, ruft der Client **[IOSTX::SetSyncResult](iostx-setsyncresult.md)** und **IOSTX::SyncEnd** , um den lokalen Speicher nach Abschluss der bestimmten Replikation zu benachrichtigen. 
+4. Nach der Durchführung der Replikation ruft der Client **[IOSTX:: SetSyncResult](iostx-setsyncresult.md)** und **IOSTX:: SyncEnd** auf, um den lokalen Speicher über den Abschluss der jeweiligen Replikation zu informieren. 
     
 > [!NOTE]
-> Der Client ruft immer **IOSTX::SyncEnd** , um eine Replikation zu beenden, die der Client für einen bestimmten Zustand begonnen hat. Je nach der gesamten Daten, die der Client synchronisieren muss, kann der Client die beiden Anrufe **IOSTX::SyncBeg** und **IOSTX::SyncEnd** nur einmal aufrufen. 
+> Der Client ruft immer **IOSTX:: SyncEnd** auf, um eine Replikation zu beenden, die der Client für einen bestimmten Status gestartet hat. Abhängig von den Gesamtdaten, die der Client synchronisieren muss, kann der Client das Paar von Aufrufen **IOSTX:: SyncBeg** und **IOSTX:: SyncEnd** mehrmals aufrufen. 
   
-## <a name="state-table"></a>State-Tabelle
+## <a name="state-table"></a>Statustabelle
 
 > [!NOTE]
-> Die folgende Tabelle enthält die gültigen Zustände in der Zustandsautomat Replikation zusammen mit den entsprechenden Status Bezeichner und Datenstrukturen. In der Spalte **Daten repliziert** enthält der Begriff "Elemente" e-Mail, Kalender, Kontakt, Notizen, Journal und Aufgabenelementen. Beim Replizieren von Änderungen aus dem lokalen Speicher auf dem Server, verwenden Sie die State-IDs angeben "Hochladen" und Datenstrukturen mit dem "Nach oben" Präfix (z. B. **LR_SYNC_UPLOAD_HIERARCHY** und **[UPHIER](uphier.md)** ). Beim Replizieren von Änderungen vom Server auf den lokalen Speicher, verwenden Sie die State-IDs angeben "Herunterladen" und Datenstrukturen mit dem Präfix "DN" (beispielsweise **LR_SYNC_DOWNLOAD_HIERARCHY** und **[DNHIER](dnhier.md)** ). 
+> In der folgenden Tabelle sind alle gültigen Status im Replikationsstatus Computer zusammen mit den entsprechenden Zustands-IDs und Datenstrukturen aufgeführt. In der Spalte **replizierte Daten** enthält der Begriff "Elemente" die Elemente e-Mail, Kalender, Kontakt, Notiz, Journal und Aufgaben. Beim Replizieren von Änderungen vom lokalen Speicher auf den Server verwenden Sie Statusbezeichner, die "UPLOAD" und Datenstrukturen mit dem Präfix "UP" angeben (beispielsweise **LR_SYNC_UPLOAD_HIERARCHY** und **[uphier](uphier.md)** ). Beim Replizieren von Änderungen vom Server zum lokalen Speicher verwenden Sie Statusbezeichner, die "DOWNLOAD" und Datenstrukturen mit dem Präfix "DN" angeben (beispielsweise **LR_SYNC_DOWNLOAD_HIERARCHY** und **[DNHIER](dnhier.md)** ). 
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**State** <br/> |**Replizierten Daten** <br/> |**State-ID** <br/> |**Datenstruktur** <br/> |
-|[Leerlauf](idle-state.md) <br/> | *None*  <br/> |**LR_SYNC_IDLE** <br/> | *None*  <br/> |
-|[Synchronisieren von Zustand](synchronize-state.md) <br/> |Ordner oder Elemente  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
-|[Hochladen der Hierarchie Zustand](upload-hierarchy-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
-|[Ordner Zustand hochladen](upload-folder-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
-|[Synchronisieren von Inhalt Zustand](synchronize-contents-state.md) <br/> |Elemente  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
-|[Tabelle Zustand hochladen](upload-table-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
+|**State** <br/> |**Replizierte Daten** <br/> |**Status-ID** <br/> |**Datenstruktur** <br/> |
+|[Zustand „Leerlauf“](idle-state.md) <br/> | *None*  <br/> |**LR_SYNC_IDLE** <br/> | *None*  <br/> |
+|[Zustand „Synchronisieren“](synchronize-state.md) <br/> |Ordner oder Elemente  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
+|[Hierarchie Status hochladen](upload-hierarchy-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
+|[Ordner Status hochladen](upload-folder-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
+|[Synchronisieren des Inhaltsstatus](synchronize-contents-state.md) <br/> |Elemente  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
+|[Tabellenstatus hochladen](upload-table-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
 |[Nachrichtenstatus hochladen](upload-message-state.md) <br/> |Element  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
-|[Upload Status Zustand lesen](upload-read-status-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
-|[Status-Status löschen hochladen](upload-delete-status-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
-|[Hierarchie Downloadstatus](download-hierarchy-state.md) <br/> |Ordner  <br/> |**LR_SYNC_DOWNLOAD_HIERARCHY** <br/> |**[DNHIER](dnhier.md)** <br/> |
-|[Tabelle Downloadstatus](download-table-state.md) <br/> |Elemente  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
-|[Status der Nachricht Kopfzeilen herunterladen](download-message-header-state.md) <br/> |Nachrichtenkopf  <br/> |**LR_SYNC_DOWNLOAD_HEADER** <br/> |**[HDRSYNC](hdrsync.md)** <br/> |
+|[Status Status des Uploads](upload-read-status-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
+|[Status "Löschvorgang löschen"](upload-delete-status-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
+|[Download-Hierarchie Status](download-hierarchy-state.md) <br/> |Ordner  <br/> |**LR_SYNC_DOWNLOAD_HIERARCHY** <br/> |**[DNHIER](dnhier.md)** <br/> |
+|[Tabellenstatus herunterladen](download-table-state.md) <br/> |Elemente  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
+|[Nachrichtenkopf Status herunterladen](download-message-header-state.md) <br/> |Nachrichtenkopf  <br/> |**LR_SYNC_DOWNLOAD_HEADER** <br/> |**[HDRSYNC](hdrsync.md)** <br/> |
    
-## <a name="state-transition-diagram"></a>Statusübergang-Diagramm
+## <a name="state-transition-diagram"></a>ZustandsÜbergang-Diagramm
 
-Das folgende Diagramm zeigt die Statusübergänge, die beim Hochladen oder das Ausführen einer vollständigen Synchronisierung (Download gefolgt von hochladen) von Ordnern oder Inhalt von Ordnern (e-Mail, Kalender, Kontakt, Notiz, Aufgabe oder Journalelemente) auftreten. 
+Das folgende Diagramm zeigt die Zustandsübergänge, die beim Hochladen oder Ausführen einer vollständigen Synchronisierung (herunterladen gefolgt von einem Upload) von Ordnern oder Inhalten von Ordnern (e-Mail-, Kalender-, Kontakt-, Aufgaben-oder Journalelemente) auftreten. 
   
-@@@NEED AUF GRAFIK EINFÜGEN HIER, DER FEHLT @@@
+@ @ @ @ @NEED ZUM EINFÜGEN VON KUNST HIER, DIE @ @ @ @ @ @ FEHLT
   
 ## <a name="example-uploading-a-folder-hierarchy"></a>Beispiel: Hochladen einer Ordnerhierarchie
 
- Beim Hochladen einer Hierarchie von Ordnern erfolgt die folgende Schrittfolge: 
+ Beim Hochladen einer Ordnerhierarchie erfolgen die folgenden Schritte: 
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**Schritt** <br/> |**Aktion** <br/> |**State** <br/> |**Verwandte-Datenstruktur** <br/> |
-|1.  <br/> |Den Upload Hierarchie mit **IOSTX::SyncBeg**wird vom Client initiiert.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
-|2.  <br/> |Outlook 2013 oder Outlook 2010 füllt **UPHIER** mit Informationen für den Client. Dazu gehören die [Out]-Parameter initialisieren: *iEnt* auf 0 und *cEnt* auf die Anzahl der Ordner in der Hierarchie, das Hochladen von benötigt festgelegt ist.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
-|3.  <br/> |Der Client führt das tatsächliche Hierarchie hochladen. Als Beispiel *cEnt* 10, für jeden der 10 Ordner ist, ruft der Client **IOSTX::SyncBeg**, den entsprechenden Statusbezeichner und die Datenstruktur zum Hochladen eines Ordners angeben.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|4.  <br/> |Outlook 2013 oder Outlook 2010 füllt **UPFLD** [Out] Parameter, einschließlich der Grund für den Ordner Upload, den Zeiger auf das Folder-Objekt und die Eintrags-ID für den Ordner zu initialisieren.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|5.  <br/> |Der Client hochgeladen im angegebenen Ordner.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|6.  <br/> |Der Client benachrichtigt den lokalen Speicher nach Abschluss des Uploads Ordner: bei Erfolg der Client legt fest, die [in] Parameter *UlFlags* in **UPFLD** mit **UPF_OK**, und klicken Sie dann auf Anrufe **IOSTX::SetSyncResult (S_OK)** und **IOSTX::SyncEnd **. Bei Auftreten eines Fehlers würde der Client nicht *UlFlags* mit dem **UPF_OK** -Flag festgelegt. Sie ruft **IOSTX::SetSyncResult**, in der **HRESULT** -Wert und **IOSTX::SyncEnd**übergeben.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|7.  <br/> |Wenn **UPF_OK** festgelegt ist, wird die interne Anforderung für den Ordner hochladen Outlook 2013 oder Outlook 2010 gelöscht werden. Klicken Sie dann unabhängig von der Einstellung *UlFlags* bereinigt sie alle internen Protokollinformationen. Während es noch Ordner in der Hierarchie sind Hochladen (*iEnt* ist weiterhin kleiner als *cEnt*), den Client und Outlook 2013 oder Outlook 2010 wiederholen Sie die Schritte 3 bis 7.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|8.  <br/> |Der Client benachrichtigt den lokalen Speicher nach Abschluss des Uploads Hierarchie: bei Erfolg der Client legt fest, die [in] **IOSTX::SetSyncResult (S_OK)** und **IOSTX::SyncEnd**-flag in **UPHIER** mit **UPH_OK**, und dann wird. Bei Auftreten eines Fehlers würde der Client nicht das Flag **UPH_OK** festgelegt. Sie ruft **IOSTX::SetSyncResult**, in der **HRESULT** -Wert und **IOSTX::SyncEnd**übergeben.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
-|9.  <br/> |Wenn **UPH_OK** festgelegt ist, wird die interne Anforderung zum Hochladen der Hierarchie Outlook 2013 oder Outlook 2010 gelöscht werden. Klicken Sie dann unabhängig von der Einstellung *UlFlags* bereinigt sie alle internen Protokollinformationen.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|**Schritt** <br/> |**Aktion** <br/> |**State** <br/> |**Zugehörige Datenstruktur** <br/> |
+|1.  <br/> |Der Client initiiert den Hierarchie Upload mit **IOSTX:: SyncBeg**.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|2.  <br/> |Outlook 2013 oder Outlook 2010 füllt **uphier** mit Informationen für den Client. Dazu gehört das Initialisieren der [out]-Parameter: *iEnt* ist auf 0 und *cEnt* auf die Anzahl der Ordner in der Hierarchie festgelegt, die hochgeladen werden müssen.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|3.  <br/> |Der Client führt den tatsächlichen Hierarchie Upload aus. Wenn *cEnt* beispielsweise 10 ist, ruft der Client für jeden der 10 Ordner **IOSTX:: SyncBeg**auf und gibt den entsprechenden Statusbezeichner und die Datenstruktur für das Hochladen eines Ordners an.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|4.  <br/> |Outlook 2013 oder Outlook 2010 füllt **UPFLD** durch Initialisieren der [out]-Parameter, einschließlich des Grunds für den Ordner Upload, des Zeigers auf das Folder-Objekt und der EINTRAGS-ID für den Ordner.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|5.  <br/> |Der Client lädt den angegebenen Ordner hoch.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|6.  <br/> |Der Client benachrichtigt den lokalen Speicher über den Abschluss des Ordner Uploads: bei Erfolg legt der Client den [in]-Parameter *ulFlags* in **UPFLD** mit **UPF_OK**fest und ruft dann **IOSTX:: SetSyncResult (S_OK)** und **IOSTX:: SyncEnd **. Bei einem fehlschlagen würde der Client *ulFlags* nicht mit dem **UPF_OK** -Flag festlegen. Sie ruft **IOSTX:: SetSyncResult**auf und übergibt den **HRESULT** -Wert und **IOSTX:: SyncEnd**.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|7.  <br/> |Wenn **UPF_OK** festgelegt ist, wird die interne Anforderung für das Hochladen des Ordners von Outlook 2013 oder Outlook 2010 gelöscht. Unabhängig vom Status von *ulFlags* werden alle internen Buchhaltungsinformationen bereinigt. Während in der Hierarchie noch Ordner zum Hochladen vorhanden sind (*iEnt* ist immer noch kleiner als *cEnt*), wiederholen der Client und outlook 2013 oder Outlook 2010 die Schritte 3 bis 7.  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|8.  <br/> |Der Client benachrichtigt den lokalen Speicher über den Abschluss des Hierarchie-Uploads: beim Erfolg legt der Client das [in]-Flag **** in uphier mit **UPH_OK**und dann **IOSTX:: SetSyncResult (S_OK)** und **IOSTX:: SyncEnd**. Bei einem fehlschlagen würde der Client das **UPH_OK** -Flag nicht festlegen. Sie ruft **IOSTX:: SetSyncResult**auf und übergibt den **HRESULT** -Wert und **IOSTX:: SyncEnd**.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|9.  <br/> |Wenn **UPH_OK** festgelegt ist, wird die interne Anforderung zum Hochladen der Hierarchie von Outlook 2013 oder Outlook 2010 gelöscht. Unabhängig vom Status von *ulFlags* werden alle internen Buchhaltungsinformationen bereinigt.  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -91,5 +91,5 @@ Das folgende Diagramm zeigt die Statusübergänge, die beim Hochladen oder das A
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

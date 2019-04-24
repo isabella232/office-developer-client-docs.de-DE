@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 961318d6-bebe-4f4b-98ff-921cafc68d24
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 2ed8bace97dee3842243ed835769e80e8aaf6b03
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329484"
 ---
 # <a name="imapiformadvise"></a>IMAPIForm::Advise
 
@@ -25,7 +25,7 @@ ms.locfileid: "25387531"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert einen Formular-Viewer für Benachrichtigungen über Ereignisse, die Einfluss auf das Formular.
+Registriert einen Formular-Viewer für Benachrichtigungen zu Ereignissen, die das Formular betreffen.
   
 ```cpp
 HRESULT Advise(
@@ -38,35 +38,35 @@ HRESULT Advise(
 
  _pAdvise_
   
-> [in] Ein Zeiger auf eine Ansicht advise Empfängerobjekt, um nachfolgenden Benachrichtigungen zu erhalten. 
+> in Ein Zeiger auf eine Ansicht Advise Sink-Objekt, das die nachfolgenden Benachrichtigungen empfangen. 
     
  _pulConnection_
   
-> [out] Ein Zeiger auf einen Wert ungleich NULL, der eine erfolgreiche benachrichtigungsregistrierung darstellt.
+> Out Ein Zeiger auf einen Wert ungleich NULL, der eine erfolgreiche Benachrichtigungs Registrierung darstellt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Registrierung erfolgreich war.
+> Die Registrierung war erfolgreich.
     
 E_OUTOFMEMORY 
   
-> Die Registrierung war nicht erfolgreich, da nicht genügend Arbeitsspeicher.
+> Die Registrierung war aufgrund unzureichenden Arbeitsspeichers nicht erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer Aufrufen eines Formulars **IMAPIForm::Advise** -Methode, um für die Benachrichtigung zu registrieren, falls sich das Formular. 
+Formular Betrachter rufen die **IMAPIForm:: Advise** -Methode eines Formulars auf, um bei Änderungen am Formular eine Benachrichtigung zu registrieren. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Beibehalten einer Kopie der Ansicht advise-Empfängerzeiger im _pAdvise_ -Parameter übergeben werden, sodass Sie sie verwenden können, die entsprechende [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methode aufrufen, wenn ein Ereignis auftritt. Aufruf der Ansicht Teilen des Empfängers [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode, die den Zeiger beibehalten werden, bis benachrichtigungsregistrierung abgebrochen wird. Legen Sie den Inhalt des Parameters _PulConnection_ auf eine Zahl ungleich NULL. 
+Halten Sie eine Kopie des Ansichts-Advise-Senke-Zeigers im _pAdvise_ -Parameter übergeben, damit Sie Sie verwenden können, um die entsprechende [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methode aufzurufen, wenn ein Ereignis eintritt. Rufen Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode der View-Advise-Senke auf, um den Zeiger beizubehalten, bis die Benachrichtigungs Registrierung abgebrochen wird. Legen Sie den Inhalt des _pulConnection_ -Parameters auf eine Zahl ungleich NULL fest. 
   
-Viele Formulare implementieren Sie ein Objekt, um die Registrierung und nachfolgende Benachrichtigung über Ereignisse behandelt werden sollen. 
+Viele Formulare implementieren ein Hilfsobjekt zur Behandlung der Registrierung und der nachfolgenden Benachrichtigung über Ereignisse. 
   
-Weitere Informationen zu den Benachrichtigungsprozess im Allgemeinen finden Sie unter [Event Notification in MAPI](event-notification-in-mapi.md). 
+Weitere Informationen zum Benachrichtigungsprozess im Allgemeinen finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). 
   
-Weitere Informationen zu Benachrichtigungen und Formulare finden Sie unter [Senden und Empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Benachrichtigungen und Formularen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -81,5 +81,5 @@ Weitere Informationen zu Benachrichtigungen und Formulare finden Sie unter [Send
 
 [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md)
   
-[Senden und Empfangen von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md)
+[Senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md)
 

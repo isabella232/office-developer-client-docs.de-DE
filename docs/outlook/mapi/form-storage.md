@@ -1,5 +1,5 @@
 ---
-title: Formular Speicher
+title: Formularspeicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,32 +8,32 @@ api_type:
 - COM
 ms.assetid: 6ddf9158-3c10-408a-aeaf-5a382c4339e7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c98427ab326ada0b717282dc4077d526780aa45c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 793a34b093ba69f73be7e186bec0a769584bbac4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328084"
 ---
-# <a name="form-storage"></a>Formular Speicher
+# <a name="form-storage"></a>Formularspeicher
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Obwohl es nicht erforderlich ist, wissen Sie alle Details der wie Formulare physisch gespeichert sind, ist es sinnvoll, nur einige der wichtigsten Konzepte verstehen. Bevor Sie die drei Typen von Formularbibliotheken mithilfe der Standard-Formular-Manager unterstützt beschreiben, bietet in diesem Thema daher eine Übersicht über wie Formulare gespeichert werden.
+Obwohl es nicht notwendig ist, alle Details der physischen Speicherung von Formularen zu kennen, ist es hilfreich, einige der wichtigsten Konzepte zu verstehen. Vor Beschreibung der drei Arten von Formularbibliotheken, die vom Standardformular-Manager unterstützt werden, finden Sie in diesem Thema eine Übersicht über die Speicherung von Formularen.
   
-Formulardefinitionen können in Ordnern in eine oder mehrere MAPI-Nachrichtenspeicher physisch gespeichert werden. Jedes MAPI-Ordners mit zwei Bereichen zum Speichern von Message-Objekten betrachtet werden kann: das standard-Webpart und das zugeordnete Teil. Der standard Teil des Ordners enthält die Nachrichten und Ordnern, die Benutzer zu bearbeiten.
+Formulardefinitionen können physisch in Ordnern in einem oder mehreren MAPI-Nachrichten speichern gespeichert werden. Jeder MAPI-Ordner kann als zwei Bereiche zum Speichern von Nachrichtenobjekten betrachtet werden: der Standardteil und der zugehörige Teil. Der Standardteil des Ordners enthält die Nachrichten und Ordner, die von Benutzern bearbeitet werden.
   
-Das zugeordnete Teil umfasst ausgeblendete Nachricht-Objekte, die dem Ordner, einschließlich Formulardefinitionen, Ansichten, Vorlagen, Antwortvorlagen usw. zugeordnet sind. Diese Alternative Teil die Ordner verknüpfte Inhaltstabelle wird aufgerufen, und der Satz von Nachrichten in der zugehörigen Inhaltstabelle genannt wird die Informationen Ordner verknüpft ist. Die ausgeblendeten Nachrichten sind ein integraler Bestandteil des Ordners und werden zusammen mit den Standardordner Inhalt kopiert, wenn der Ordner kopiert wird. Obwohl physisch als Nachrichten gespeichert, unterscheidet sich Informationen in einem Ordner zugeordnete Inhaltstabelle mehr Eigenschaften als sichtbare Nachrichten wie. Alle Folder-Objekt, das eine Inhaltstabelle zugeordneten unterstützt kann zum Speichern von benutzerdefinierten Formularen. Die [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) -Methode kann den Inhalt standard oder den zugehörigen Inhalt des Ordners, abhängig vom Wert des Parameters für die Methode _Ulflags_ zurückgeben. 
+Der zugeordnete Teil enthält ausgeblendete Nachrichtenobjekte, die dem Ordner zugeordnet sind, einschließlich Formulardefinitionen, Ansichten, Regelvorlagen, Antwortvorlagen usw. Dieser Alternative Teil wird als Folder-Associated Contents-Tabelle bezeichnet, und die Gruppe der Nachrichten in der zugeordneten Inhaltstabelle wird als Ordner zugeordnete Informationen bezeichnet. Die ausgeblendeten Nachrichten sind ein integraler Bestandteil des Ordners und werden zusammen mit den standardmäßigen Ordnerinhalten kopiert, wenn der Ordner kopiert wird. Obwohl physisch als Nachrichten gespeichert, verhält sich die Informationen in der Tabelle mit den zugeordneten Inhalten eines Ordners mehr als Eigenschaften wie sichtbare Nachrichten. Jedes Folder-Objekt, das eine zugeordnete Inhaltstabelle unterstützt, kann benutzerdefinierte Formulare speichern. Die [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable-Methode kann je nach Wert des _ulflags_ -Parameters der Methode entweder den Standardinhalt oder den zugeordneten Inhalt des Ordners zurückgeben. 
   
-Besteht aus eine Formularbibliothek Formulardefinitionen, die in einem Ordner zugeordnete Inhaltstabelle gespeichert. Die Formulardefinition enthält die Eigenschaften des Formulars, die Aktionen des Formulars unterstützt, und auch das Formular Server ausführbare Datei, die als eine oder mehrere e-Mail-Anlagen gespeichert ist.
+Eine Formularbibliothek besteht aus Formulardefinitionen, die in der Tabelle zugeordnete Inhalte eines Ordners gespeichert sind. Die Formulardefinition enthält die Eigenschaften des Formulars, die Aktionen, die vom Formular unterstützt werden, und sogar die ausführbare Datei des Formular Servers, die als eine oder mehrere Nachrichtenanlagen gespeichert wird.
   
-Darüber hinaus können Formulare in eine Datei oder einen Speicherort, der der Formular-Manager verwendeten unterstützt gespeichert werden. Der Standard-Formular-Manager speichert Formular Servern in MAPI-Ordnern, aber ein benutzerdefiniertes Formular-Manager konnte einen eigene Speicher für Formular-Servern implementieren.
+Darüber hinaus können Formulare in jeder beliebigen Datei oder jedem Speicherort gespeichert werden, die der verwendete Formular-Manager unterstützt. Der Standardformular-Manager speichert Formularserver in MAPI-Ordnern, aber ein benutzerdefinierter Formular-Manager kann einen eigenen Speicher für Formularserver implementieren.
   
-Ein Formular kann mehrere Benutzeroberflächen enthalten, die auf deren Nachrichtenklasse gebunden sind. Beispielsweise kann ein Formular separate verfassen- und Benutzeroberflächen haben. Das Formular akzeptiert Pflege des Aufrufs der entsprechenden Benutzeroberfläche für verschiedene Benutzeranfragen, je nachdem, welches das Formular Verben angerufen wird. Angenommen, wenn Ihr Formular Server separaten Verfassen und Lesen von Benutzeroberflächen verfügt, die Benutzeroberfläche zum Verfassen kann geöffnet werden automatisch, wenn der Benutzer eine neue Nachricht der Nachrichtenklasse des Formulars erstellt und die Read-Benutzeroberfläche geöffnet werden automatisch bei der Benutzer öffnet eine vorhandene Nachricht der Nachrichtenklasse des Formulars.
+Ein Formular kann mehrere Benutzeroberflächen aufweisen, die an seine Nachrichtenklasse gebunden sind. Ein Formular kann beispielsweise separate verFassen-und Lese-Benutzeroberflächen aufweisen. Das Formular sorgt dafür, dass die richtige Benutzeroberfläche für unterschiedliche Benutzeranforderungen aufgerufen wird, je nachdem, welche Verben des Formulars aufgerufen werden. Wenn Ihr Formularserver beispielsweise über separate Erstellungs-und Lese-Benutzeroberflächen verfügt, kann die Erstell-Benutzeroberfläche automatisch geöffnet werden, wenn der Benutzer eine neue Nachricht der Nachrichtenklasse des Formulars erstellt, und die Lese-Benutzeroberfläche kann automatisch geöffnet werden, wenn der der Benutzer öffnet eine vorhandene Nachricht der Nachrichtenklasse des Formulars.
   
-Die meisten der Informationen in einer Formulardefinition ist durch Aufrufen der [IMAPIFormInfo::IMAPIProp](imapiforminfoimapiprop.md) -Methode für ein Objekt **IMAPIFormInfo** verfügbar. Die Schnittstelle **IMAPIFormInfo** vereinfacht den Zugriff auf Informationen für das Formular durch Aufrufen der MAPI-Ordner und die Nachricht angewendet werden, um die Informationen abzurufen. Ein **IMAPIFormInfo** -Objekt kann durch Aufrufen der Methode [IMAPIFormContainer::ResolveMessageClass](imapiformcontainer-resolvemessageclass.md) abgerufen werden. 
+Die meisten in einer Formulardefinition gespeicherten Informationen stehen zur Verfügung, indem die [IMAPIFormInfo:: IMAPIProp](imapiforminfoimapiprop.md) -Methode für ein **IMAPIFormInfo** -Objekt aufgerufen wird. Die **IMAPIFormInfo** -Schnittstelle vereinfacht den Zugriff auf Formular Informationen durch Aufrufen aller MAPI-Ordner-und Nachrichten Methoden, die zum Abrufen der Informationen erforderlich sind. Ein **IMAPIFormInfo** -Objekt kann abgerufen werden, indem die [IMAPIFormContainer:: ResolveMessageClass](imapiformcontainer-resolvemessageclass.md) -Methode aufgerufen wird. 
   
-Die drei Typen von Formularbibliotheken werden in den Themen [Lokalen Formularbibliotheken](local-form-libraries.md), [Ordner Formularbibliotheken](folder-form-libraries.md) und [Persönliche Formularbibliotheken](personal-form-libraries.md)beschrieben.
+Die drei Arten von Formularbibliotheken werden in den Themen [lokale Formularbibliotheken](local-form-libraries.md), [Ordner Formularbibliotheken](folder-form-libraries.md) und [persönliche Formularbibliotheken](personal-form-libraries.md)beschrieben.
   
 ## <a name="see-also"></a>Siehe auch
 

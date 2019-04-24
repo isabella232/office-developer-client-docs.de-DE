@@ -1,5 +1,5 @@
 ---
-title: PidTagJunkThreshold (kanonische Eigenschaft)
+title: Kanonische Pidtagjunkthreshold (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8067e2b5-02df-4b96-8f66-509f5a48c8aa
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 078dfcc7c24870cf95a2a4b2385c34fbeb64fac0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326852"
 ---
-# <a name="pidtagjunkthreshold-canonical-property"></a>PidTagJunkThreshold (kanonische Eigenschaft)
+# <a name="pidtagjunkthreshold-canonical-property"></a>Kanonische Pidtagjunkthreshold (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, wie aggressiv eingehenden e-Mail-Nachrichten in den Junk-e-Mail-Ordner gesendet werden soll.
+Gibt an, wie aggressiv eingehende e-Mails an den Junk-e-Mail-Ordner gesendet werden sollen.
   
 |||
 |:-----|:-----|
@@ -34,38 +34,38 @@ Gibt an, wie aggressiv eingehenden e-Mail-Nachrichten in den Junk-e-Mail-Ordner 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft entspricht der hoch / niedrig / keine Einstellung filtern. Der Wert "0xFFFFFFFF" gibt an, dass Spam-Filterung nicht angewendet werden soll, jedoch Sperrlisten weiterhin angewendet werden müssen. Der Wert "0 x 80000000" gibt an, dass alle e-Mails Spam außer diese Nachrichten von Absendern in der Liste vertrauenswürdiger Absender oder an Empfänger in der Liste vertrauenswürdiger Empfänger gesendet. Werte für dieses sind wie folgt:
+Diese Eigenschaft entspricht der Filtereinstellung High/Low/None. Der Wert "0xFFFFFFFF" gibt an, dass keine Spamfilterung angewendet werden soll, es müssen jedoch weiterhin Sperrlisten angewendet werden. Der Wert "0x80000000" gibt an, dass alle e-Mails Spam sind, mit Ausnahme der Nachrichten von Absendern in der Liste der vertrauenswürdigen Absender oder an Empfänger in der Liste der vertrauenswürdigen Empfänger. Dafür gibt es folgende Werte:
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0xFFFFFFFF  <br/> |Keine Spamfilterung  <br/> |
-|0 x 00000006  <br/> |Niedrige Spamfilterung  <br/> |
-|0 x 00000003  <br/> |Hohe Spamfilterung  <br/> |
-|0 x 80000000  <br/> |Nur vertrauenswürdige Listen  <br/> |
+|0x00000006  <br/> |Niedrige Spamfilterung  <br/> |
+|0x00000003  <br/> |Hohe Spamfilterung  <br/> |
+|0x80000000  <br/> |Nur vertrauenswürdige Listen  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> Ermöglicht die Behandlung von zulassen/blockieren-Listen und die Bestimmung des junk-e-Mail-Nachrichten.
+> Ermöglicht die Behandlung von Allow/Block-Listen und die Bestimmung von Junk-e-Mails.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -77,5 +77,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

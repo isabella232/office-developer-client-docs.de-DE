@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 2e1287a3-0f15-4d9a-b7ee-738fce9cd51f
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a305b9c9ea2802ac63a22118b55274bcdff23617
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b22b8641d55037d3755fc9ae32b97455223bbd12
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329757"
 ---
 # <a name="mapi-receive-folders"></a>MAPI empfangen Ordner
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine Empfangsordner enth�lt eingehende Nachrichten von einer bestimmten Nachrichtenklasse. Empfangsordner, die Zuordnungen von Clients, vom Anbieter Store Nachricht oder MAPI hergestellt werden k�nnen. MAPI hat zwei Standard Ordner empfangen: im Stammordner des Nachrichtenspeichers und den Ordner Posteingang des untergeordneten Baumes zwischen Personen Nachricht (IPM). Der Stammordner des Nachrichtenspeichers ist die Standardeinstellung Empfangsordner f�r alle prozess�bergreifenden Kommunikation (IPK) Nachrichten.
   
@@ -55,10 +55,10 @@ Die folgende Tabelle zeigt, wie Nachrichten mit verschiedenen Klassen an die ent
   
 |**Eingehende Nachricht-Klasse**|**Ordner empfangen**|
 |:-----|:-----|
-|**IPM. Note.Sample.Simple** <br/> |F�r Beispielordner  <br/> |
+|**IPM. Hinweis. Sample. Simple** <br/> |F�r Beispielordner  <br/> |
 |**IPM.Note** <br/> |Ordner Posteingang  <br/> |
-|**IPM. Zeitkarte** <br/> |Ordner Posteingang  <br/> |
-|**IPM. Note.Sample.Simple.Totally** <br/> |F�r Beispielordner  <br/> |
+|**IPM. Timecard** <br/> |Ordner Posteingang  <br/> |
+|**IPM. Note. Sample. Simple. Total** <br/> |F�r Beispielordner  <br/> |
    
 Clients rufen Sie die **SetReceiveFolder** -Methode, um eine explizite Zuordnung zwischen einem bestimmten Nachrichtenklasse t�tigen und annehmen von Ordner. Wenn eine Nachricht an eine leere Nachrichtenklasse �bermittelt werden, platziert MAPI die Nachricht im Ordner "empfangen", die f�r ein Pr�fix der leere-Klasse definiert ist. Wenn der Client eine Empfangsordner f�r Nachrichten mit Klasse **IPM** hergestellt hat und eine Nachricht mit der Klasse **IPM.Note.Test** �bermittelt wird, wird diese Nachricht im Ordner "empfangen" f�r die Nachrichtenklasse **IPM** platziert. 
   
@@ -66,7 +66,7 @@ Clients in der Regel eine Meldungszeichenfolge-Klasse �bergeben, und klicken S
   
 |**_SetReceiveFolder_ -parameter**|**Resultierende Verhalten**|
 |:-----|:-----|
-|Eintrags-ID auf NULL festgelegt wurde  <br/> |Nachrichtenspeicher l�scht die Zuordnung zwischen dem angegebenen-Klasse und die vorhandene Ordner empfangenen Nachricht. Empfangen einer neuen Ordner ist nicht hergestellt werden. <br/> Nachfolgende Aufrufe von **GetReceiveFolder** mit dieser Nachrichtenklasse gibt den Empfangsordner f�r ein Pr�fix der Nachrichtenklasse zur�ck. f�r neue Nachrichtenspeicher werden **GetReceiveFolder** Posteingang IPM-Unterstruktur zur�ckgegeben.    <br/> |
+|Eintrags-ID auf NULL festgelegt wurde  <br/> |Nachrichtenspeicher l�scht die Zuordnung zwischen dem angegebenen-Klasse und die vorhandene Ordner empfangenen Nachricht. Empfangen einer neuen Ordner ist nicht hergestellt werden. <br/> Nachfolgende Aufrufe von **GetReceiveFolder** mit dieser Nachrichtenklasse gibt den Empfangsordner f�r ein Pr�fix der Nachrichtenklasse zur�ck. f�r neue Nachrichtenspeicher werden **GetReceiveFolder** Posteingang IPM-Unterstruktur zur�ckgegeben.      <br/> |
 |Nachrichtenklasse auf NULL festgelegt wurde  <br/> |Nachrichtenspeicher �ndert die Zuordnung f�r die leere Nachrichtenklasse in den angegebenen Ordner. In diesem Ordner gehen eingehende Nachrichten, deren Klasse andernfalls nicht erkannt wird.  <br/> |
 |Eintrags-ID und die Nachrichtenklasse auf NULL festgelegt wurde  <br/> |Nachrichtenspeicher l�scht die Zuordnung Klasse-Ordner f�r die Nachrichtenklasse leer. Sie sollten nicht beide Parameter auf NULL festgelegt, da sich daraus in der Regel eingehende Nachrichten in den Stammordner des Nachrichtenspeichers, einen Ordner, der an den Client nicht sichtbar ist platziert wird.  <br/> |
    

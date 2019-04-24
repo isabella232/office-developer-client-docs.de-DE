@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7994477d-5207-4335-b538-69c98782d52d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 244087c41e33e470c42434e9d57cee7317bcb78c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a38f7ea475f8a5cbad4f1cc295c3e2550ea8cd66
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330198"
 ---
 # <a name="imapisupportnewuid"></a>IMAPISupport::NewUID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine neue [MAPIUID](mapiuid.md) -Struktur, die als eindeutiger Bezeichner verwendet werden. 
+Erstellt eine neue [MAPIUID](mapiuid.md) -Struktur, die als eindeutiger Bezeichner verwendet werden soll. 
   
 ```cpp
 HRESULT NewUID(
@@ -39,19 +39,19 @@ LPMAPIUID lpMuid
   
 > Ein Zeiger auf die neue **MAPIUID** -Struktur. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die neue **MAPIUID** Struktur erstellt wurde. 
+> Die neue **MAPIUID** -Struktur wurde erstellt. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::NewUID** -Methode wird für alle Unterstützungsobjekte implementiert. Dienstanbieter und Message-Dienste aufrufen **NewUID** , wenn sie benötigen, um eine langfristige eindeutige ID zu generieren. Eine Nachricht Speicheranbieter, zum Beispiel, **NewUID** zum Abrufen einer **MAPIUID** in die **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft einer neu erstellten Nachricht platzieren aufgerufen werden kann.
+Die **IMAPISupport:: NewUID** -Methode wird für alle Support-Objekte implementiert. Dienstanbieter und Nachrichtendienste rufen **NewUID** auf, wenn Sie einen langfristigen eindeutigen Bezeichner generieren müssen. Ein Nachrichtenspeicher Anbieter kann beispielsweise **NewUID** aufrufen, um eine **MAPIUID** abzurufen, die in die **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft einer neu erstellten Nachricht eingefügt werden soll.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Verwechseln Sie nicht die **MAPIUID** -Struktur, die Sie bei der Anmeldung mit den Strukturen **MAPIUID** registrieren, die die **NewUID** -Methode erstellt. Die **MAPIUID** -Struktur, die Sie registrieren, wenn Sie die [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) -Methode aufrufen, stellt Adressbuch oder Nachricht MAPI-Speicheranbieter und wird verwendet, um die Eintrags-IDs zu unterscheiden, die verschiedene Anbieter erstellen. Diese Struktur **MAPIUID** sollte hartcodierte und nicht durch einen Aufruf von **NewUID**abgerufen werden.
+Verwechseln Sie die **MAPIUID** -Struktur nicht, die Sie bei der Anmeldung mit den **MAPIUID** -Strukturen registrieren, die von der **NewUID** -Methode erstellt werden. Die **MAPIUID** -Struktur, die Sie beim Aufrufen der [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md) -Methode registrieren, stellt das Adressbuch oder der Nachrichtenspeicher Anbieter in MAPI dar und dient zur Unterscheidung von Eintrags Bezeichnern, die von verschiedenen Anbietern erstellt werden. Diese **MAPIUID** -Struktur sollte hart codiert und nicht über einen Aufruf von **NewUID**abgerufen werden.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: ShowRulers-Element (Window_Type ComplexType) ("Visio XML")
+title: ShowRulers-Element (Window_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ localization_priority: Normal
 ms.assetid: bb5667b9-22d6-5913-a170-626f8c93e2f9
 description: Gibt an, ob Lineale im Zeichnungsfenster angezeigt werden.
 ms.openlocfilehash: 96d50e1ad6f14ff192906c38f845dfa3881eca1d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328602"
 ---
-# <a name="showrulers-element-windowtype-complextype-visio-xml"></a>ShowRulers-Element (Window_Type ComplexType) ("Visio XML")
+# <a name="showrulers-element-windowtype-complextype-visio-xml"></a>ShowRulers-Element (Window_Type complexType) (' Visio XML ')
 
 Gibt an, ob Lineale im Zeichnungsfenster angezeigt werden.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ShowRulers_Type](showrulers_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Windows.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Windows. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,14 +36,13 @@ Gibt an, ob Lineale im Zeichnungsfenster angezeigt werden.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.
-  <br/> |
+|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

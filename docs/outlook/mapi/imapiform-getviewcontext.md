@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c6938986-a9f9-4ef4-9655-ded55b7357db
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9f09f29d67bff6588c826b92d93aead491510cef
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f0b217372f6b4848f83c993846cd08a81c7098e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329459"
 ---
 # <a name="imapiformgetviewcontext"></a>IMAPIForm::GetViewContext
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den aktuellen Ansichtskontext für das Formular zurück. 
   
@@ -37,33 +37,33 @@ HRESULT GetViewContext(
 
  _ppViewContext_
   
-> [out] Ein Zeiger auf einen Zeiger auf das Formular Ansichtskontext.
+> Out Ein Zeiger auf einen Zeiger auf den Ansichtskontext des Formulars.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Formular aktuellen Ansichtskontext wurde erfolgreich zurückgegeben. 
+> Der aktuelle Ansichtskontext des Formulars wurde erfolgreich zurückgegeben. 
     
 S_FALSE 
   
-> Es ist keine Ansichtskontext für das Formular.
+> Es gibt keinen Ansichtskontext für das Formular.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer aufrufen **GetViewContext** um einen Zeiger auf die in einem vorherigen Aufruf von [IMAPIForm::SetViewContext](imapiform-setviewcontext.md)hergestellt Ansichtskontext zu erhalten. Falls keine vorherigen Aufruf **SetViewContext**vorgenommen wurden, legt **GetViewContext** _PpViewContext_ auf NULL fest. 
+Formular Betrachter rufen **** getviewcontext auf, um einen Zeiger auf den Ansichtskontext abzurufen, der in einem vorherigen Aufruf von [IMAPIForm::](imapiform-setviewcontext.md)setviewcontext festgelegt wurde. Wenn kein vorheriger Aufruf an setViewcontext vorgenommen wurde, **** wird _ppViewContext_ auf NULL festgelegt. **** 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Kopieren des Formulars Ansicht Kontext Zeiger in der durch den aufrufenden Formular Viewer im _PpViewContext_ -Parameter übergebene Zeiger. Wenn das Formular nicht über ein Ansichtskontext verfügt, _PpViewContext_ auf NULL festgelegt wurde. 
+Kopieren Sie den Ansichtskontext des Formulars in den Zeiger, der vom aufrufenden Formular Betrachter im _ppViewContext_ -Parameter übergeben wird. Wenn das Formular keinen Ansichtskontext hat, legen Sie _ppViewContext_ auf NULL fest. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI (engl.) verwendet die **IMAPIForm::GetViewContext** -Methode überprüfen, ob ein Formular ein Ansichtskontext aufweist.  <br/> |
+|MAPIFormFunctions. cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI verwendet die **IMAPIForm::** getviewcontext-Methode, um zu überprüfen, ob ein Formular einen Ansichtskontext aufweist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

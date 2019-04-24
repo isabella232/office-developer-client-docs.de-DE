@@ -1,24 +1,24 @@
 ---
-title: LANGUAGE Function
+title: LANGUAGE-Funktion
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e372c670-e9a0-4352-b70a-3a054b036124
-description: Der Vergleichsvorgänge zwischen anderen Sprache Darstellungen ermöglicht. Es ist am besten für die Konvertierung von Tags (BCP 47) Werte der Internet Engineering Task Force Language, Werte für den Gebietsschemabezeichner (LCID) verwendet.
-ms.openlocfilehash: 6a05a850f5908ac5a4f6a4a72b2ce56b4c98f137
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ermöglicht Vergleichsvorgänge zwischen verschiedenen sprach Darstellungen. Es wird am besten für die Konvertierung von Internet Engineering Task Force Language Tags (BCP 47)-Werten in Gebietsschema-ID (LCID)-Werte verwendet.
+ms.openlocfilehash: 9c2dc96cefe7a1cfcd06947dcc54453dcef276fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327818"
 ---
-# <a name="language-function"></a>LANGUAGE Function
+# <a name="language-function"></a>LANGUAGE-Funktion
 
-Der Vergleichsvorgänge zwischen anderen Sprache Darstellungen ermöglicht. Es ist am besten für die Konvertierung von Tags (BCP 47) Werte der Internet Engineering Task Force Language, Werte für den Gebietsschemabezeichner (LCID) verwendet.
+Ermöglicht Vergleichsvorgänge zwischen verschiedenen sprach Darstellungen. Es wird am besten für die Konvertierung von Internet Engineering Task Force Language Tags (BCP 47)-Werten in Gebietsschema-ID (LCID)-Werte verwendet.
   
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Visio 2013
  
@@ -31,11 +31,11 @@ Hinzugefügte Version: Visio 2013
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _lcid_or_bcp47_ <br/> |Erforderlich  <br/> |**String** <br/> |Der LCID oder BCP 47 Wert für die Sprache.  <br/> |
+| _lcid_or_bcp47_ <br/> |Erforderlich  <br/> |**String** <br/> |Der LCID-oder BCP 47-Wert für die Sprache.  <br/> |
    
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Integer
+Ganze Zahl
   
 ## <a name="example"></a>Beispiel
 

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: 35cd57b4-9901-456c-bf06-1f84e274eb4e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 560cae5e8a3d73d80a4907fd0fec43b389ef9fc5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9663a25a50d914f47cff48124898d16318bbbc43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330219"
 ---
 # <a name="adrparm"></a>ADRPARM
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Beschreibt die Anzeige und das Verhalten des Dialogfelds allgemeine Adresse. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _ADRPARM
@@ -58,39 +58,39 @@ typedef struct _ADRPARM
 
 **cbABContEntryID**
   
-> Anzahl der Bytes in die Eintrags-ID auf **LpABContEntryID**zeigt.
+> Anzahl der Bytes in der Eintrags-ID, auf die von **lpABContEntryID**verwiesen wird.
     
 **lpABContEntryID**
   
-> Zeiger auf die Eintrags-ID des Containers, die die ursprüngliche Liste der Empfängeradressen bereitstellt, die im Dialogfeld Adresse angezeigt werden.
+> Zeiger auf die Eintrags-ID des Containers, der die anfängliche Liste der Empfängeradressen bereitstellt, die im Dialogfeld Adresse angezeigt werden.
     
 **ulFlags**
   
-> Bitmaske aus Flags, die mit verschiedenen Adresse Dialogfeldoptionen verknüpft ist. Die folgenden Kennzeichen können festgelegt werden:
+> Bitmaske der Flags, die verschiedenen Optionen für Adress Dialogfelder zugeordnet sind. Die folgenden Flags können festgelegt werden:
     
 AB_RESOLVE
   
-> Aktivieren Sie alle Namen aufgelöst werden, nachdem das Dialogfeld Adresse geschlossen wurde. Wenn mehrdeutige Einträge, die aus der Namensauflösungsprozess vorhanden sind, wird ein Dialogfeld angezeigt, um den Benutzer für die Hilfe in Ihrer Lösung aufzufordern. Einstellung dieses Flag wird sichergestellt, dass alle [IAddrBook::Address](iaddrbook-address.md) zurückgegebenen Namen aufgelöst werden. 
+> Aktivieren Sie alle Namen, die aufgelöst werden sollen, nachdem das Dialogfeld Adresse geschlossen wurde. Wenn es zu mehrdeutigen Einträgen kommt, die aus dem Prozess der Namensauflösung resultieren, wird ein Dialogfeld angezeigt, in dem der Benutzer Hilfe beim Auflösen auffordert. Durch Festlegen dieses Flags wird sichergestellt, dass alle von [IAddrBook:: Address](iaddrbook-address.md) zurückgegebenen Namen aufgelöst werden. 
     
 AB_SELECTONLY
   
-> Deaktivieren Sie die Erstellung von einmal-Adressen für eine Empfängerliste. Dieses Kennzeichen werden verwendet, nur, wenn das Dialogfeld modal, wird durch das DIALOG_MODAL-Flag festgelegt wird.
+> Deaktivieren Sie das Erstellen von einmaligen Adressen für eine Empfängerliste. Dieses Flag wird nur verwendet, wenn das Dialogfeld modal ist, wie durch das festgelegte DIALOG_MODAL-Flag angegeben.
     
 ADDRESS_ONE
   
-> Der Benutzer kann genau ein Empfänger anstatt mehrere Empfänger aus einer Liste auswählen. Dieses Kennzeichen gilt nur, wenn **cDestFields** 0 (null ist) und das Dialogfeld ist modal, durch das DIALOG_MODAL-Flag festgelegt wird. 
+> Der Benutzer kann aus einer Liste genau einen Empfänger anstelle mehrerer Empfänger auswählen. Dieses Flag ist nur gültig, wenn **cDestFields** NULL ist und das Dialogfeld modal ist, wie durch das festgeLEGTe DIALOG_MODAL-Flag angegeben. 
     
 DIALOG_MODAL
   
-> Bewirkt, dass die modale Version der Adresse im allgemeinen Dialogfeld angezeigt werden. Entweder dieses Flag oder DIALOG_SDI sollte festgelegt werden. Sie können nicht festgelegt werden. 
+> Bewirkt, dass die modale Version des Dialogfelds allgemeine Adresse angezeigt wird. Entweder dieses Flag oder DIALOG_SDI sollte festgelegt werden; Sie können nicht beide festgelegt werden. 
     
 DIALOG_OPTIONS
   
-> Bewirkt, dass die Schaltfläche **Optionen senden** , die im Dialogfeld angezeigt werden. Dieses Kennzeichen werden verwendet, nur, wenn das Dialogfeld modal, wird durch das DIALOG_MODAL-Flag festgelegt wird. 
+> Bewirkt, dass die Schaltfläche " **Sendeoptionen** " im Dialogfeld angezeigt wird. Dieses Flag wird nur verwendet, wenn das Dialogfeld modal ist, wie durch das festgelegte DIALOG_MODAL-Flag angegeben. 
     
 DIALOG_SDI
   
-> Bewirkt, dass die ohne Modus Version der Adresse im allgemeinen Dialogfeld angezeigt werden. Entweder dieses Flag oder DIALOG_MODAL sollte festgelegt werden. Sie können nicht festgelegt werden. Das Flag DIALOG_SDI für nicht-Outlook-Clients ignoriert, und die modale Version des Dialogfelds angezeigt. Ein Zeiger auf ein Handle sollte daher nicht im _LpulUIParam_ -Parameter der [IAddrBook::Address](iaddrbook-address.md)erwartet werden.
+> Bewirkt, dass die nicht modale Version des Dialogfelds allgemeine Adresse angezeigt wird. Entweder dieses Flag oder DIALOG_MODAL sollte festgelegt werden; Sie können nicht beide festgelegt werden. Das DIALOG_SDI-Flag wird für nicht-Outlook-Clients ignoriert, und die modale Version des Dialog Felds wird angezeigt. Daher sollte im _lpulUIParam_ -Parameter von [IAddrBook:: Address](iaddrbook-address.md)kein Zeiger auf ein Handle erwartet werden.
     
 **lpReserved**
   
@@ -98,102 +98,102 @@ DIALOG_SDI
     
 **ulHelpContext**
   
-> Gibt den Kontext innerhalb **helfen** , die zuerst angezeigt werden, wenn der Benutzer auf die Schaltfläche Hilfe klicken Sie im Dialogfeld Adresse klickt. 
+> Gibt den Kontext in der **Hilfe** an, der zuerst angezeigt wird, wenn der Benutzer im Dialogfeld Adresse auf die Schaltfläche Hilfe klickt. 
     
 **lpszHelpFileName**
   
-> Zeiger auf den Namen einer Hilfedatei, die im Dialogfeld Adresse zugeordnet werden. Das Element **LpszHelpFileName** wird zusammen mit **UlHelpContext** aufrufen, die Windows- **WinHelp** -Funktion verwendet. 
+> Zeiger auf den Namen einer Hilfedatei, die dem Dialogfeld Adresse zugeordnet wird. Das **lpszHelpFileName** -Element wird zusammen mit **ulHelpContext** verwendet, um die Windows- **WinHelp** -Funktion aufzurufen. 
     
 **lpfnABSDI**
   
-> Zeiger auf eine MAPI-Funktion basierend auf dem [ACCELERATEABSDI](accelerateabsdi.md) Prototyp oder NULL. Dieser Member gilt für die ohne Modus Version des Dialogfelds nur durch das DIALOG_SDI-Flag festgelegt wird. Erstellen eine **ADRPARM** -Struktur zum Übergeben an [IAddrBook::Address](iaddrbook-address.md) Clients müssen immer den **LpfnABSDI** Member auf NULL festgelegt. Wenn das Flag DIALOG_SDI festgelegt ist, wird MAPI es auf eine gültige Funktion vor der Rückgabe festgelegt. Clients rufen Sie diese Funktion aus in ihre Nachrichtenschleife hinzu, um sicherzustellen, dass in der Adresse Beschleuniger zum Dialogfeld Feld Arbeit Buch. Wenn das Dialogfeld geschlossen und MAPI-Aufrufen der Funktion an, von dem **LpfnDismiss** Member auf, sollten Clients die Funktion **ACCELERATEABSDI** aus ihrer Nachrichtenschleife aufzuheben. 
+> Zeiger auf eine MAPI-Funktion, die auf dem [ACCELERATEABSDI](accelerateabsdi.md) -Prototyp oder NULL basiert. Dieses Element gilt nur für die nicht modale Version des Dialogfelds, wie durch das festgelegte DIALOG_SDI-Flag angegeben. Clients, die eine **ADRPARM** -Struktur an [IAddrBook:: Address](iaddrbook-address.md) erstellen, müssen das **LPFNABSDI** -Element immer auf NULL festlegen. Wenn das DIALOG_SDI-Flag festgelegt ist, wird es von MAPI vor dem zurückgeben auf eine gültige Funktion festgelegt. Clients rufen diese Funktion in der Meldungsschleife auf, um sicherzustellen, dass Beschleuniger im Dialogfeld Adressbuch funktionieren. Wenn das Dialogfeld geschlossen wird und MAPI die Funktion aufruft, auf die durch das **lpfnDismiss** -Element verwiesen wird, sollten Clients die Hookfunktion der **ACCELERATEABSDI** -Funktion aus ihrer Meldungsschleife aufheben. 
     
 **lpfnDismiss**
   
-> Zeiger auf eine Funktion, die basierend auf dem [DISMISSMODELESS](dismissmodeless.md) Prototyp oder NULL. Dieser Member gilt nur für die ohne Modus Version des Dialogfelds nur durch das DIALOG_SDI-Flag festgelegt wird. MAPI-Aufrufen die **DISMISSMODELESS** -Funktion, wenn der Benutzer schließt das Dialogfeld ohne Modus Adresse aufrufen **IAddrBook::Address** , dass das Dialogfeld nicht mehr aktiv ist Client darüber informieren. 
+> Zeiger auf eine Funktion, die auf dem [DISMISSMODELESS](dismissmodeless.md) -Prototyp oder NULL basiert. Dieses Element gilt nur für die nicht modale Version des Dialogfelds, wie durch das festgelegte DIALOG_SDI-Flag angegeben. MAPI Ruft die **DISMISSMODELESS** -Funktion auf, wenn der Benutzer das Dialogfeld "nicht modale Adresse" abschließt und einen Client anruft, der **IAddrBook:: Address** angibt, dass das Dialogfeld nicht mehr aktiv ist. 
     
 **lpvDismissContext**
   
-> Zeiger auf Kontextinformationen an die Funktion **DISMISSMODELESS** übergeben werden, auf dem **LpfnDismiss** Mitglied zeigt. Dieser Member gilt nur für die im Dialogfeld ohne Modus Version durch das DIALOG_SDI-Flag festgelegt wird. 
+> Zeiger auf Kontextinformationen, die an die **DISMISSMODELESS** -Funktion übergeben werden sollen, auf die durch das **lpfnDismiss** -Element verwiesen wird. Dieses Element gilt nur für die nicht modale Version des Dialogfelds, wie durch das festgelegte DIALOG_SDI-Flag angegeben. 
     
 **lpszCaption**
   
-> Zeiger auf Text, der als Titel für das Dialogfeld allgemeine Adresse verwendet werden.
+> Zeiger auf Text, der als Titel für das Dialogfeld Allgemeine Adresse verwendet werden soll.
     
 **lpszNewEntryTitle**
   
-> Zeiger auf Text, der als Bezeichnung der Schaltfläche für die Schaltfläche verwendet werden, die im Dialogfeld **Neuen Eintrag** oder ein anderes Dialogfeld aufruft. 
+> Zeiger auf Text, der als Schaltflächenbeschriftung für die Schaltfläche verwendet werden soll, mit der das Dialogfeld **neuer Eintrag** oder ein anderes Dialogfeld aufgerufen wird. 
     
 **lpszDestWellsTitle**
   
-> Zeiger auf Text, der als Titel für die Empfänger Textfeld-Steuerelemente verwendet werden, die in der modal Version im Dialogfeld allgemeine Adresse angezeigt werden können. Dieser Member ist nicht für nicht modale Dialogfelder verwendet. 
+> Zeiger auf Text, der als Titel für die Empfänger Textfeld-Steuerelemente verwendet werden kann, die in der modalen Version des Dialogfelds allgemeine Adresse angezeigt werden können. Dieses Element wird nicht für nicht modale Dialogfelder verwendet. 
     
 **cDestFields**
   
-> Anzahl der Empfänger Textfeld-Steuerelemente in der modal Version von im Dialogfeld Adresse oder NULL, wenn das Dialogfeld ohne Modus ist. Das Dialogfeld Adresse wird geöffnet, zum Durchsuchen von nur, wenn Folgendes zutrifft: 
+> Anzahl der Empfänger Textfeld-Steuerelemente in der modalen Version des Dialogfelds Adresse oder NULL, wenn das Dialogfeld nicht aktiviert ist. Das Dialogfeld Adresse kann nur geöffnet werden, wenn die folgenden Bedingungen zutreffen: 
     
-  - Das **cDestFields** -Element wird auf 0 (null) festgelegt. 
+  - Das **cDestFields** -Element wird auf NULL festgelegt. 
     
-  - Das Flag DIALOG_BOX festgelegt ist.
+  - Das DIALOG_BOX-Flag wird festgelegt.
     
-  - Das Flag ADDRESS_ONE ist nicht festgelegt.
+  - Das ADDRESS_ONE-Flag wird nicht festgelegt.
     
-  Festlegen von **cDestFields** auf 0XFFFFFFFF impliziert, dass die Standardanzahl zulässiger Empfänger Text von MAPI-Steuerelemente erstellt werden soll. In diesem Fall müssen die Member **LppszDestTitles** und **LpulDestComps** NULL sein. 
+  Festlegen von **cDestFields** auf 0XFFFFFFFF impliziert, dass MAPI die Standardanzahl von Empfänger Textfeld-Steuerelemente erstellen soll. In diesem Fall müssen die **lppszDestTitles** -und **LPULDESTCOMPS** -Member NULL sein. 
     
 **nDestFieldFocus**
   
-> Gibt an, das bestimmten Textfeld-Steuerelement, das das Hauptaugenmerk verfügen soll, wenn die modale Version des Dialogfelds angezeigt wird. Dieser Wert muss zwischen 0 und der Wert der **cDestFields** minus 1 liegen. 
+> Gibt das Textfeld-Steuerelement an, das den anfänglichen Fokus haben soll, wenn die modale Version des Dialogfelds angezeigt wird. Dieser Wert muss zwischen 0 und dem Wert von **cDestFields** minus 1 liegen. 
     
 **lppszDestTitles**
   
-> Zeiger auf ein Array von Beschriftungen für die Schaltflächen mit den einzelnen Textfeld-Steuerelemente, die in der modal Version des Dialogfelds Adresse angezeigt werden. Der Wert des Elements **cDestFields** gibt die Anzahl der Etiketten, die in das Array aufgenommen. Wenn der **LppszDestTitles** Member NULL ist, wird die **Adresse** -Methode Standard Titel verwendet. 
+> Zeiger auf ein Array von Bezeichnungen für Schaltflächen, die den einzelnen Textfeld-Steuerelementen zugeordnet sind, die in der modalen Version des Dialogfelds Adresse angezeigt werden. Der Wert des **cDestFields** -Elements gibt die Anzahl der im Array enthaltenen Bezeichnungen an. Wenn das **lppszDestTitles** -Element NULL ist, verwendet die **Address** -Methode Standardtitel. 
     
 **lpulDestComps**
   
-> Zeiger auf ein Array von Werten Empfängertyp, wie MAPI_TO, MAPI_CC und MAPI_BCC, jedes Textfeld-Steuerelement zugeordnet ist. Der Wert des Elements **CDestFields** gibt die Anzahl von Empfängertypen in das Array aufgenommen. Die Werte auf die **LpulDestComps** können verwendet werden, die **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))-Eigenschaft der einzelnen Empfänger festgelegt. Wenn der **LpulDestComps** Member NULL ist, wird die **Adresse** -Methode Empfängertypen Standard verwendet. 
+> Zeiger auf ein Array von Empfängertyp Werten wie MAPI_TO, MAPI_CC und MAPI_BCC, das jedem Textfeld-Steuerelement zugeordnet ist. Der Wert des **CDestFields** -Elements gibt die Anzahl der im Array enthaltenen Empfängertypen an. Die Werte, auf die durch **lpulDestComps** verwiesen wird, können zum Festlegen der **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md))-Eigenschaft jedes Empfängers verwendet werden. Wenn das **lpulDestComps** -Element NULL ist, verwendet die **Address** -Methode Standardempfänger Typen. 
     
 **lpContRestriction**
   
-> Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die den Typ der Adresseinträge beschränkt, die im Dialogfeld angezeigt werden kann. 
+> Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die den Typ von Adresseinträgen einschränkt, die im Dialogfeld angezeigt werden können. 
     
 **lpHierRestriction**
   
-> Zeiger auf eine **SRestriction** -Struktur, die die Address Book Container beschränkt, die Adresseinträge im Dialogfeld anzuzeigende bereitstellen können. 
+> Zeiger auf eine **SRestriction** -Struktur, die die Adressbuchcontainer einschränkt, die Adresseinträge angeben können, die im Dialogfeld angezeigt werden sollen. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-**ADRPARM** Strukturen werden von Clients und -Dienstanbieter verwendet, um das Aussehen und Verhalten der MAPI-allgemeine Adresse Dialogfelder zu steuern. Es gibt zwei Arten des Dialogfelds Adresse: ohne Modus und modal. Einige der Elemente in der Struktur **ADRPARM** gelten für beide Versionen des Dialogfelds, aber einige gelten nur für eine der beiden Versionen. In der folgenden Tabelle betrifft die Mitglieder einer **ADRPARM** Struktur für ihre Verwendung mit der Standarddialogfelder Adresse. 
+**ADRPARM** -Strukturen werden von Clients und Dienstanbietern verwendet, um die Darstellung und das Verhalten der MAPI-Dialogfelder für allgemeine Adressen zu steuern. Im Dialogfeld Adresse gibt es zwei Varianten: moduslos und modal. Einige der Elemente in der **ADRPARM** -Struktur gelten für beide Versionen des Dialogfelds, einige gelten jedoch nur für eine der beiden Versionen. In der folgenden Tabelle sind die Elemente einer **ADRPARM** -Struktur mit den allgemeinen Adress Dialogfeldern verknüpft. 
   
-|ADRPARM member|Typ des Dialogfelds|
+|ADRPARM-Element|Dialogfeldtyp|
 |:-----|:-----|
-|**CbABContEntryID** und **lpABContEntryID** <br/> |Modale und nicht modale  <br/> |
-|**ulFlags** <br/> |Modale und nicht modale  <br/> |
-|**lpReserved** <br/> |Modale und nicht modale  <br/> |
-|**UlHelpContext** und **lpszHelpFileName** <br/> |Modale und nicht modale  <br/> |
-|**lpfnABSDI** <br/> |Ungebunden  <br/> |
-|**LpfnDismiss** und **lpvDismissContext** <br/> |Ungebunden  <br/> |
-|**lpszCaption** <br/> |Modale und nicht modale  <br/> |
+|**cbABContEntryID** und **lpABContEntryID** <br/> |Modal und ohne Modus  <br/> |
+|**ulFlags** <br/> |Modal und ohne Modus  <br/> |
+|**lpReserved** <br/> |Modal und ohne Modus  <br/> |
+|**ulHelpContext** und **lpszHelpFileName** <br/> |Modal und ohne Modus  <br/> |
+|**lpfnABSDI** <br/> |MODELESS  <br/> |
+|**lpfnDismiss** und **lpvDismissContext** <br/> |MODELESS  <br/> |
+|**lpszCaption** <br/> |Modal und ohne Modus  <br/> |
 |**lpszNewEntryTitle** <br/> |Modal  <br/> |
-|**LpszDestWellsTitle**, **cDestFields**, **nDestFieldFocus**, **LppszDestTitles**und **lpulDestComps** <br/> |Modal  <br/> |
-|**lpContRestriction** <br/> |Modale und nicht modale  <br/> |
-|**lpHierRestriction** <br/> |Modale und nicht modale  <br/> |
+|**lpszDestWellsTitle**, **cDestFields**, **nDestFieldFocus**, **lppszDestTitles**und **lpulDestComps** <br/> |Modal  <br/> |
+|**lpContRestriction** <br/> |Modal und ohne Modus  <br/> |
+|**lpHierRestriction** <br/> |Modal und ohne Modus  <br/> |
    
-Das Dialogfeld ohne Modus ist eine schreibgeschützte Darstellung von Einträgen aus einen oder mehrere Address Book Container. Das Dialogfeld kann alle Einträge aus der ausgewählten Container ein- oder auf begrenzt nur die Einträge und Containern, die durch eine Einschränkung festgelegten Kriterien entsprechen. Die Einschränkung der Inhalt auf den **LpContRestriction** kann die Typen der angezeigten Einträge beschränkt, und die Einschränkung der Hierarchie auf den **LpHierRestriction** kann die Container bereitstellen die Einträge beschränkt. Um den Anrufer informieren, wann das Dialogfeld geschlossen wird, ruft MAPI eine Funktion, die vom Anrufer bereitgestellt wird, die den [DISMISSMODELESS](dismissmodeless.md) Prototyp entspricht. Eine andere Funktion, mit den Prototyp [ACCELERATEABSDI](accelerateabsdi.md) übereinstimmt MAPI bereitgestellt und aufgerufen, die vom Anrufer in der Windows-Nachrichtenschleife in das Funktionieren der Tastenkombinationen zu vereinfachen. Die ohne Modus Version des Dialogfelds MAPI-Adresse kann angezeigt werden, wenn Clients [IAddrBook::Address](iaddrbook-address.md) aufrufen oder Dienstanbieter [IMAPISupport::Address](imapisupport-address.md)aufgerufen. 
+Das Dialogfeld nicht modal ist eine schreibgeschützte Anzeige von Einträgen aus einem oder mehreren Adressbuch Containern. Im Dialogfeld können alle Einträge aus den ausgewählten Containern angezeigt werden oder auf nur die Einträge und Container beschränkt werden, die Kriterien erfüllen, die mit einer Einschränkung festgelegt wurden. Die Inhaltseinschränkung, auf die durch **lpContRestriction** verwiesen wird, kann die Art der angezeigten Einträge einschränken, und die Hierarchieeinschränkung, auf die durch **lpHierRestriction** verwiesen wird, kann die Container einschränken, die die Einträge bereitstellen. Um den Anrufer zu benachrichtigen, wenn das Dialogfeld geschlossen wird, ruft MAPI eine Funktion auf, die vom Anrufer bereitgestellt wird, der dem [DISMISSMODELESS](dismissmodeless.md) -Prototyp entspricht. Eine andere Funktion, die mit dem [ACCELERATEABSDI](accelerateabsdi.md) -Prototyp übereinstimmt, wird von MAPI bereitgestellt und vom Aufrufer in der Windows-Meldungsschleife aufgerufen, um das Arbeiten mit Tastenkombinationen zu erleichtern. Die nicht modale Version des Dialogfelds MAPI-Adresse kann angezeigt werden, wenn Clients [IAddrBook:: Address](iaddrbook-address.md) aufrufen oder wenn Dienstanbieter [IMAPISupport:: Address](imapisupport-address.md)aufrufen. 
   
-Das modale Dialogfeld ist eine Lese-Schreib-Darstellung der Einträge aus mindestens einen Container. Seinen Inhalt können auf die gleiche Weise betroffen sein, wie in den **LpContRestriction** und **LpHierRestriction** Mitglieder die ohne Modus Version von Einschränkungen festgelegt. Zusätzlich zur Anzeige der Container Einträge im Listenfeld kann das modale Dialogfeld zwischen einem und drei Textfeld-Steuerelemente zum Aufbewahren von vom Benutzer ausgewählten Einträge enthalten. Jedes Bearbeitungssteuerelement ist einer bestimmten Empfängertyp oder **PR_RECIPIENT_TYPE** -Eigenschaft, wie etwa MAPI_TO zugeordnet. Modales Dialogfeld Adressfeld kann mithilfe der Methoden **Adresse** oder angezeigt werden, wenn Clients [IAddrBook::Details](iaddrbook-details.md) -Dienstanbieter aufrufen und [IMAPISupport::Details](imapisupport-details.md). 
+Das modale Dialogfeld ist eine Lese-/Schreibzugriff Anzeige von Einträgen aus einem oder mehreren Containern. Der Inhalt kann auf dieselbe Weise beeinflusst werden wie die nicht modale Version durch Einschränkungen, die in den **lpContRestriction** -und **lpHierRestriction** -Membern festgelegt sind. Zusätzlich zum Listenfeld, das Container Einträge anzeigt, kann das modale Dialogfeld zwischen einem und drei Textfeld-Steuerelemente enthalten, um vom Benutzer ausgewählte Einträge zu halten. Jedes Bearbeitungssteuerelement ist einem bestimmten Empfängertyp oder einer **PR_RECIPIENT_TYPE** -Eigenschaft wie MAPI_TO zugeordnet. Das Dialogfeld modal address kann von einer der **Adress** Methoden angezeigt werden oder wenn Clients IAddrBook aufrufen [::D ails](iaddrbook-details.md) und Dienstanbieter rufen [IMAPISupport::D ails](imapisupport-details.md). 
   
-Die folgende Abbildung enthält zwei Textfeld-Steuerelemente, da das **cDestFields** Mitglied der **ADRPARM** -Struktur, die Steuerung der Anzeige dieses Dialogfelds auf 2 festgelegt ist. Das erste Steuerelement hat Hauptaugenmerk, da das Element **nDestFieldFocus** auf 0 festgelegt ist. 
+Diese Abbildung enthält zwei Textfeld-Steuerelemente, da das **cDestFields** -Element der **ADRPARM** -Struktur, die die Anzeige dieses Dialogfelds steuert, auf 2 festgelegt ist. Das erste Steuerelement hat den anfänglichen Fokus, da das **nDestFieldFocus** -Element auf 0 festgelegt ist. 
   
-**LpszNewEntryTitle** Member verweist auf eine Schaltfläche Beschriftungstext, die, wenn er ausgewählt ist, wird ein weiteres Dialogfeld angezeigt werden. In der Regel wie in der Abbildung im modalen Dialogfeld angezeigt wird, ist die Schaltfläche **neu** gekennzeichnet, und klicken Sie im Dialogfeld listet alle Typen von Adressen, die erstellt werden können von jedem der adressbuchanbietern implementierte im Profil. Clients führen dazu, dass das Dialogfeld **Neuen Eintrag** , durch Aufrufen von [IAddrBook::NewEntry](iaddrbook-newentry.md) und 0 (null) für den Parameter _CbEidNewEntryTpl_ und NULL für den Parameter _LpEidNewEntryTpl_ übergeben, wenn der Benutzer die Schaltfläche auswählt angezeigt werden soll. Die Informationen, die in diesem Dialogfeld enthalten ist, stammen aus der einmaligen MAPI-Tabelle. 
+Das **lpszNewEntryTitle** -Element zeigt auf Text für eine Schaltflächenbeschriftung, die, wenn es ausgewählt wird, ein zusätzliches Dialogfeld angezeigt wird. In der Regel wird, wie in der Abbildung des Dialogfelds modal angezeigt, die Schaltfläche **neu** beschriftet, und im daraufhin angezeigten Dialogfeld werden alle Adresstypen aufgelistet, die von einem beliebigen Adressen Anbieter im Profil erstellt werden können. Clients führen dazu, dass dieses Dialogfeld für den **neuen Eintrag** angezeigt wird, indem [IAddrBook:: neuer Eintrag](iaddrbook-newentry.md) aufgerufen wird und NULL für den Parameter _CbEidNewEntryTpl_ und NULL für den _lpEidNewEntryTpl_ -Parameter übergeben wird, wenn der Benutzer die Schaltfläche auswählt. Die in diesem Dialogfeld enthaltenen Informationen stammen aus der einmaligen MAPI-Tabelle. 
   
-Jeder Eintrag in diesem Dialogfeld ist eine Vorlage für die Dateneingabe erforderlich, um eine Adresse eines bestimmten Typs erstellen zugeordnet. Die meisten adressbuchanbietern implementierte Geben Sie eine Vorlage für jede Art von Adresseintrag, die sie erstellen können. Wenn ein Benutzer in diesem Dialogfeld eine Auswahl treffen, zeigt MAPI die entsprechende Vorlage.
+Jeder Eintrag in diesem Dialogfeld ist mit einer Vorlage verknüpft, um die Daten einzugeben, die zum Erstellen einer Adresse des jeweiligen Typs erforderlich sind. Die meisten Adressbuchanbieter stellen eine Vorlage für jede Art von Adresseintrag bereit, die Sie erstellen können. Wenn ein Benutzer über dieses Dialogfeld eine Auswahl trifft, zeigt MAPI die entsprechende Vorlage an.
   
-Die vier wichtigsten Bits die **ADRPARM** Struktur **UlFlags** Members enthalten eine Versionsnummer, die die Version der Struktur **ADRPARM** identifiziert. Die aktuelle Version ist 0 (null) oder ADRPARM_HELP_CTX. Die aktuelle Implementierung von MAPI schlägt fehl, für alle Versionen der Struktur als 0 (null). 
+Die wichtigsten vier Bits des **ulFlags** -Elements der **ADRPARM** -Struktur enthalten eine Versionsnummer, die die Version der **ADRPARM** -Struktur identifiziert. Die aktuelle Version ist 0 (null) oder ADRPARM_HELP_CTX. Die aktuelle MAPI-Implementierung schlägt für eine andere Version der Struktur als NULL fehl. 
   
-Zukünftige Versionen der Struktur möglicherweise ganz anderen; Sie können die Version-NULL-Struktur nicht unterstützt. Die folgenden Makros werden zum Extrahieren der Versionsnummer aus der **UlFlags** Member und für die Kombination mit den definierten Flags bereitgestellt: 
+Zukünftige Versionen der Struktur können vollständig unterschiedlich sein; Sie unterstützen möglicherweise nicht die Struktur der Version-Zero. Die folgenden Makros werden zum Extrahieren der Versionsnummer aus dem **ulFlags** -Element und zur Kombination mit den definierten Flags bereitgestellt: 
   
-- **GET_ADRPARM_VERSION** (_UlFlags_) 
-- **SET_ADRPARM_VERSION** (_UlFlags_, _ UlVersion _) 
+- **GET_ADRPARM_VERSION** (_ulFlags_) 
+- **SET_ADRPARM_VERSION** (_ulFlags_, _ ulVersion _) 
 - **ADRPARM_HELP_CTX**
   
 ## <a name="see-also"></a>Siehe auch

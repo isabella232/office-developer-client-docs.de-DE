@@ -8,51 +8,51 @@ api_type:
 - COM
 ms.assetid: 63444a65-d56a-4dbd-9aa6-e60f18ba8104
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d5b2aa2830e2721b9f895b22df12c9d712188625
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8dc82a99ee088d42c076ca9a3a75eac6553f7d35
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331878"
 ---
 # <a name="adding-address-book-entries"></a>Hinzufügen von Adressbucheinträgen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aufrufe [IMAPISupport::NewEntry](imapisupport-newentry.md) mit der Eintrags-ID des Zielcontainers in der _LpEIDContainer_ -Parameter einen Container, eine Client-Anrufe [IAddrBook::NewEntry](iaddrbook-newentry.md) oder einen Anbieter einen messaging Benutzer oder eine Verteilerliste hinzugefügt. MAPI-Aufrufen wiederum den Container [IABContainer::CreateEntry](iabcontainer-createentry.md) -Methode, um den Eintrag mithilfe einer einmaligen Vorlage aus einer einmaligen Tabelle zu erstellen. Eine einmalige Vorlage ermöglicht dem Client einen neuen Empfänger eines bestimmten Typs zu erstellen. Die meisten Felder können bearbeitet werden. Die Vorlage, auf das durch den Parameter _LpEntryID_ möglicherweise eine, die vom Dienstanbieter bereitstellt oder einer Vorlage von einem fremden Anbieter, wäre, wenn der Anbieter fremde Vorlagen unterstützt. Die Implementierung von **CreateEntry** für Anbieter, die Empfänger aus einer fremden Vorlage erstellen können sind immer komplexer als Implementierungen für Anbieter, die nicht möglich. 
+Um einem Container einen Messagingbenutzer oder eine Verteilerliste hinzuzufügen, Ruft ein Client [IAddrBook:: Neuentry](iaddrbook-newentry.md) auf, oder ein Anbieter ruft [IMAPISupport::](imapisupport-newentry.md) neueintrags mit dem Eintragsbezeichner des Zielcontainers im _lpEIDContainer_ -Parameter auf. MAPI ruft wiederum die [IABContainer:: CreateEntry](iabcontainer-createentry.md) -Methode des Containers auf, um den Eintrag mithilfe einer einmaligen Vorlage aus einer einmaligen Tabelle zu erstellen. Eine einmalige Vorlage ermöglicht es dem Client, einen neuen Empfänger eines bestimmten Typs zu erstellen. Die meisten Felder können bearbeitet werden. Die Vorlage, auf die durch den _lpEntryID_ -Parameter verwiesen wird, kann möglicherweise von Ihrem Anbieter bereitgestellt werden, oder es kann sich um eine Vorlage eines fremden Anbieters handeln, wenn Ihr Anbieter fremde Vorlagen unterstützt. Implementierungen **** von CreateEntry für Anbieter, die Empfänger aus einer fremden Vorlage erstellen können, sind immer komplexer als Implementierungen für Anbieter, die nicht. 
   
- **Implementieren von IABContainer::CreateEntry**
+ **So implementieren Sie IABContainer:: createEntry**
   
-1. Bestimmen Sie den Typ des Eintrags-ID, die durch den Parameter _LpEntryID_ angegeben. 
+1. Bestimmen des vom _lpEntryID_ -Parameter angegebenen Typs der Eintrags-ID. 
     
-2. Wenn die Eintrags-ID eine Vorlage für eine messaging-Benutzer, Verteilerliste oder im Besitz des Anbieters Adressbuchcontainer darstellt:
+2. Wenn die Eintrags-ID eine Vorlage für einen Messagingbenutzer, eine Verteilerliste oder einen Adressbuchcontainer darstellt, die im Besitz Ihres Anbieters sind:
     
-1. Erstellen Sie und initialisieren Sie das entsprechende Objekt. Vom Dienstanbieter kann einige anfänglichen Eigenschaften festlegen, falls gewünscht. Diese Eigenschaften richten sich nach den Typ des zu erstellenden Empfänger. 
+1. Erstellen und initialisieren Sie das entsprechende Objekt. Bei Bedarf kann Ihr Anbieter einige anfängliche Eigenschaften festlegen. Diese Eigenschaften hängen vom Typ des zu erstellenden Empfängers ab. 
     
-2. Ein Zeiger auf das Objekt Implementierung in den Inhalt des Parameters _LppMAPIPropEntry_ zurückgegeben. 
+2. Zurückgeben eines Zeigers auf die Implementierung des Objekts im Inhalt des _lppMAPIPropEntry_ -Parameters. 
     
 3. Wenn die Eintrags-ID eine Vorlage für einen fremden Anbieter darstellt:
     
-1. Rufen Sie [IMAPISupport::OpenEntry](imapisupport-openentry.md) zum Öffnen des fremden Objekts. 
+1. Rufen Sie [IMAPISupport:: OpenEntry](imapisupport-openentry.md) auf, um das fremdobjekt zu öffnen. 
     
-2. Rufen Sie das Objekt [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode übergeben NULL für die Arrays Tag-Eigenschaft, um seine Eigenschaften abzurufen. 
+2. Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Objekts auf, und übergeben Sie NULL für das Property-Tag-Array, um dessen Eigenschaften abzurufen. 
     
-3. Bearbeiten des Eigenschaft Wertearrays von **GetProps** zurückgegeben, indem Sie das Eigenschafts-Tag auf PR_NULL für alle Eigenschaften, die nicht auf das neue Objekt angewendet und sollte nicht übertragen werden. 
+3. Bearbeiten Sie das von getProps **** zurückgegebene Eigenschafts Wertarray, indem Sie das Property-Tag in PR_NULL für alle Eigenschaften ändern, die für das neue Objekt nicht gelten und nicht übertragen werden sollen. 
     
-4. Erstellen Sie einen Eintrag Bezeichner für das neue Objekt. 
+4. Erstellen Sie eine Eintrags-ID für das neue Objekt. 
     
-5. Erstellen Sie ein neues Objekt der entsprechenden eingeben, entweder messaging Benutzer oder Verteilerliste aus.
+5. Erstellen Sie ein neues Objekt vom entsprechenden Typ, entweder Messaging-Benutzer oder Verteilerliste.
     
-6. Initialisieren Sie das neue Objekt durch Festlegen der Standardeigenschaften.
+6. Initialisieren Sie das neue Objekt, indem Sie die Standardeigenschaften festlegen.
     
-7. Überprüfen Sie, ob die fremden Objekts die Eigenschaft **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) unterstützt. 
+7. Überprüfen Sie, ob das Foreign-Objekt die **PR_TEMPLATEID** ([pidtagtemplateid (](pidtagtemplateid-canonical-property.md))-Eigenschaft unterstützt. 
     
-8. Wenn die fremden Objekts **PR_TEMPLATEID**unterstützt, rufen Sie [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md) zum Abrufen einer Eigenschaft Objektschnittstelle aus der fremden Anbieter und Festlegen von den Inhalt des Parameters _LppMAPIPropEntry_ für die foreign-Eigenschaft objektimplementierung. 
+8. Wenn das Foreign-Objekt **PR_TEMPLATEID**unterstützt, rufen Sie [IMAPISupport::](imapisupport-opentemplateid.md) opentemplatecode auf, um eine Property-Objekt Schnittstelle vom fremden Anbieter abzurufen, und legen Sie den Inhalt des _lppMAPIPropEntry_ -Parameters auf die Foreign-Eigenschaft fest. Objekt Implementierung. 
     
-9. Wenn die fremden Objekts **PR_TEMPLATEID**nicht unterstützt, legen Sie den Inhalt des Parameters _LppMAPIPropEntry_ an Ihren Anbieter die Implementierung des neuen Objekts. 
+9. Wenn das Foreign-Objekt **PR_TEMPLATEID**nicht unterstützt, legen Sie die Inhalte des _lppMAPIPropEntry_ -Parameters auf die Implementierung des neuen Objekts durch den Anbieter fest. 
     
-10. Rufen Sie die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode des Objekts auf das durch den Parameter _LppMAPIPropEntry_ , um die entsprechenden Eigenschaften aus der fremden Objekts festzulegen. 
+10. Rufen Sie die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des Objekts auf, auf das durch den _lppMAPIPropEntry_ -Parameter verwiesen wird, um die entsprechenden Eigenschaften aus dem Foreign-Objekt festzulegen. 
     
 

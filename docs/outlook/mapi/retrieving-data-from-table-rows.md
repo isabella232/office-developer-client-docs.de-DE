@@ -7,37 +7,37 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 19a42794-a3a2-4336-af2a-473f24431252
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7b8690871dbe5b7234645f00cabab9c65706141e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2f389d26ec80b9af3ed28c5eb85b589c9cbb26c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328658"
 ---
 # <a name="retrieving-data-from-table-rows"></a>Abrufen von Daten aus Tabellenzeilen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Abrufen von Zeilen aus einer Tabelle umfasst:
+Das Abrufen von Zeilen aus einer Tabelle umfasst Folgendes:
   
 - Abrufen der Eigenschaftswerte für alle Spalten.
     
 - Ändern der aktuellen Position.
     
-Einer der erforderlichen Spalten in den meisten Tabellen ist eine Eintrags-ID – die Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) –, die verwendet werden kann, um das Objekt zu öffnen, das die Zeile darstellt. Dieses Eintrags-ID ist in der Regel eine kurzfristige Eintrags-ID, eine, die nicht über die Lebensdauer der Tabelle beibehalten wird. Es kann jedoch ein langfristige Bezeichner sein, wenn der Dienstanbieter Implementieren der Tabelle nur ein Typ von Eintrags-ID unterstützt.
+Eine der erforderlichen Spalten in den meisten Tabellen ist eine Eintrags-ID, die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft, die verwendet werden kann, um das Objekt zu öffnen, das die Zeile darstellt. Diese Eintrags-ID ist in der Regel eine kurzfristige Eintrags-ID, die nicht über die Lebensdauer der Tabelle beibehalten wird. Es kann sich jedoch um einen langfristigen Bezeichner handeln, wenn der Dienstanbieter, der die Tabelle implementiert, nur einen Typ von Eintrags Bezeichnern unterstützt.
   
-Clients und Dienstanbieter können einen der folgenden Aufrufe abzurufenden Zeilen vornehmen:
+Clients und Dienstanbieter können einen der folgenden Aufrufe zum Abrufen von Zeilen ausführen:
   
 |||
 |:-----|:-----|
-|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |Ruft eine angegebene Anzahl von Zeilen beginnend mit der aktuellen Zeile in vorwärts oder rückwärts ausgeführt.  <br/> |
+|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |Ruft eine angegebene Anzahl von Zeilen ab der aktuellen Zeile in eine vorwärts-oder Rückwärtsrichtung ab.  <br/> |
 |[HrQueryAllRows](hrqueryallrows.md) <br/> |Ruft alle Zeilen in einer Tabelle ab.  <br/> |
-|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |Ruft eine Zeile in einer Tabelle entsprechend dem Wert der Index-Spalte. **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) ist in der Regel die Indexspalte für eine Tabelle.  <br/> |
+|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |Ruft eine Zeile in einer Tabelle entsprechend dem Wert der Indexspalte ab. **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md)) ist in der Regel die Indexspalte für eine Tabelle.  <br/> |
    
-Wenn eine optionale Eigenschaft als eine der Spalten in einer Tabelle enthalten ist, möglicherweise einige der Zeilen gültige Werte für die Spalte haben, während andere Benutzer nicht möglicherweise. Gibt an, ob ein gültiger Wert für eine Spalte vorhanden ist, hängt davon ab, ob das Objekt, und geben Sie Informationen für die Zeile die-Eigenschaft festgelegt wird. Je nach der Implementierung des Objekts kann eine nicht vorhandene Eigenschaft in der Tabelle als **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) oder ein beliebiger Wert dargestellt werden. Benutzer von Tabellen müssen achten unterscheiden zwischen Eigenschaften, die nicht vorhanden sind und keine Bedeutung Werte und Eigenschaften, die vorhanden und sind gültige Werte. 
+Wenn eine optionale Eigenschaft als eine der Spalten in einer Tabelle enthalten ist, verfügen einige Zeilen möglicherweise über gültige Werte für die Spalte, andere nicht. Ob ein gültiger Wert für eine Spalte vorhanden ist, hängt davon ab, ob das Objekt, das die Informationen für die Zeile bereitstellt, die Eigenschaft festlegt. Abhängig von der Implementierung des Objekts kann eine nicht vorhandene Eigenschaft in der Tabelle als **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)) oder ein beliebiger Wert dargestellt werden. Benutzer von Tabellen müssen darauf achten, zwischen Eigenschaften zu unterscheiden, die nicht vorhanden sind und sinnlose Werte und Eigenschaften aufweisen, die vorhanden sind und gültige Werte haben. 
   
 ## <a name="see-also"></a>Siehe auch
 

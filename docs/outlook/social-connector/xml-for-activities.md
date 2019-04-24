@@ -7,53 +7,53 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: acc4a555-a3bf-4a79-86dc-aba6477733b8
-description: Dieses Thema enthält ein Beispielszenario, das den Outlook Social Connector (OSC)-Anbieter zeigt Erweiterbarkeits-API-Aufrufe, die ein OSC-Anbieter implementiert und die OSC zum Abrufen von Aktivitätsinformationen macht. Informationen wird in XML-Zeichenfolgen ausgedrückt, die das OSC-Anbieter-XML-Schema entsprechen.
-ms.openlocfilehash: 44f74d9e72eec3ff6da7f9967315fc9d75191584
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieses Thema enthält ein Beispielszenario, in dem die von einem OSC-Anbieter implementierten APIs für die Erweiterbarkeits-Erweiterbarkeit (Social Connector) und OSC zum Abrufen von Aktivitätsinformationen angezeigt werden. Informationen werden in XML-Zeichenfolgen ausgedrückt, die dem OSC-Anbieter-XML-Schema entsprechen.
+ms.openlocfilehash: a4f1c6ce1f33b59811f6a6fecb737cd1f737946b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329120"
 ---
 # <a name="xml-for-activities"></a>XML für „activities“
 
-Dieses Thema enthält ein Beispielszenario, das den Outlook Social Connector (OSC)-Anbieter zeigt Erweiterbarkeits-API-Aufrufe, die ein OSC-Anbieter implementiert und die OSC zum Abrufen von Aktivitätsinformationen macht. Informationen wird in XML-Zeichenfolgen ausgedrückt, die das OSC-Anbieter-XML-Schema entsprechen.
+Dieses Thema enthält ein Beispielszenario, in dem die von einem OSC-Anbieter implementierten APIs für die Erweiterbarkeits-Erweiterbarkeit (Social Connector) und OSC zum Abrufen von Aktivitätsinformationen angezeigt werden. Informationen werden in XML-Zeichenfolgen ausgedrückt, die dem OSC-Anbieter-XML-Schema entsprechen.
   
-OSC-Anbieter-XML-Schema ermöglicht einen OSC-Anbieter Aktivitäten zu definieren. Aktivitätsinformationen kann das soziale Netzwerk, in dem die Aktivitäts--Elemente stammt Feed, Details der einzelnen Elemente Aktivitätsfeed enthalten (z. B. Besitzer, eingeben und Veröffentlichungsdatum der Aktivität), und die Vorlage aus, um die Aktivität anzuzeigen. Zur Unterstützung der mit Aktivitäten auf dem Bereich Personen oder Visitenkarte muss ein social Network OSC-Anbieter implementieren und die richtigen Aktivitäten XML zurückgegeben. Ein Beispiel der Aktivität XML-feed, finden Sie unter [Aktivität Feed XML-Beispiel](activity-feed-xml-example.md). Weitere Informationen zum Synchronisieren von Freunden Aktivitäten finden Sie unter [Synchronisieren Freunde und Aktivitäten](synchronizing-friends-and-activities.md). Eine vollständige Definition des OSC-Anbieter XML-Schema, welche Elemente sind, erforderlich oder optional, einschließlich finden Sie unter [Outlook Social Connector Provider XML-Schema](outlook-social-connector-provider-xml-schema.md). 
+Das XML-Schema des OSC-Anbieters ermöglicht es einem OSC-Anbieter, Aktivitäten zu definieren. Aktivitätsinformationen können das soziale Netzwerk einbeziehen, in dem die Aktivitätsfeed-Elemente stammen, Details zu den einzelnen Aktivitätsfeed-Elementen (wie Besitzer, Typ und Veröffentlichungsdatum der Aktivität) sowie die Vorlage zum Anzeigen der Aktivität. Zur Unterstützung der Anzeige von Aktivitäten im Personen Bereich oder der VisitenKarte muss der OSC-Anbieter eines sozialen Netzwerks die richtigen Aktivitäten XML implementieren und zurückgeben. Ein Beispiel für Aktivitäts-Feed-XML finden Sie unter [Activity Feed XML example](activity-feed-xml-example.md). Weitere Informationen zum Synchronisieren von Aktivitäten von Freunden finden Sie unter [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md). Eine vollständige Definition des XML-Schemas des OSC-Anbieters, einschließlich der erforderlichen oder optionalen Elemente, finden Sie unter [Outlook Social Connector Provider XML Schema](outlook-social-connector-provider-xml-schema.md). 
   
-Im folgenden Szenario wird die OSC dynamisch synchronisiert Aktivitäten für eine Person im Bereich Personen ausgewählt und ruft Informationen zu dieser Person:
+Im folgenden Szenario synchronisiert OSC die Aktivitäten für eine im Personen Bereich ausgewählte Person dynamisch und ruft Details zu dieser Person ab:
   
-1. Ein OSC-Anbieter, der bedarfsgesteuerten Synchronisierung von Aktivitäten unterstützt angibt, der die OSC, mithilfe der **GetActivities** und **DynamicActivitiesLookupEx** Elemente. Der OSC-Anbieter wird auch das **HashFunction** -Element. Alle drei Elemente sind untergeordnete Elemente des **Funktionen**. 
+1. Ein OSC-Anbieter, der die bedarfsgesteuerte Synchronisierung von Aktivitäten unterstützt, weist darauf hin, **** dass der osc mithilfe der Elemente GetActivities und **dynamicActivitiesLookupEx** . Der OSC-Anbieter legt auch das **hashFunction** -Element fest. Alle drei Elemente sind untergeordnete Elemente der **Funktionen**. 
     
-2. Der OSC-Anbieter implementiert die Methoden **ISocialProvider::GetCapabilities** und [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md) . 
+2. Der OSC-Anbieter implementiert die Methoden **ISocialProvider:: getCapabilities** und [ISocialSession2:: GetActivitiesEx](isocialsession2-getactivitiesex.md) . 
     
-3. Die OSC-Aufrufe **ISocialProvider::GetCapabilities** an den Wert der **GetActivities** und **DynamicActivitiesLookupEx** überprüfen, um sicherzustellen, dass den OSC-Anbieter unterstützt bedarfsgesteuerten Synchronisierung von Aktivitäten. Die OSC Notizen auch den Wert des **HashFunction** -Elements durch den OSC-Anbieter unterstützt. 
+3. OSC ruft **ISocialProvider:: getCapabilities** auf, um den Wert von **GetActivities** und **dynamicActivitiesLookupEx** zu überprüfen, um zu überprüfen, ob der osc-Anbieter die bedarfsgesteuerte Synchronisierung von Aktivitäten unterstützt. Der OSC stellt auch den Wert des vom OSC-Anbieter unterstützten **hashFunction** -Elements fest. 
     
-4. Die OSC wird der Bereich Personen oder Visitenkarte, um die neuesten Aktivitäten der ausgewählten Person finden Sie unter Benutzer können aktualisiert. Die OSC verschlüsselt die SMTP-Adresse der Person mithilfe der Hashfunktion im Element **HashFunction** bilden eine XML-Zeichenfolge, die die XML-Schemadefinition für das **HashedAddresses** -Element entspricht. 
+4. Der OSC aktualisiert den Personen Bereich oder die VisitenKarte, damit der Benutzer die neuesten Aktivitäten der ausgewählten Person anzeigen kann. OSC verschlüsselt die SMTP-Adresse der Person mithilfe der im **hashFunction** -Element angegebenen Hashfunktion und bildet eine XML-Zeichenfolge, die der XML-Schema Definition für das **hashedAddresses** -Element entspricht. 
     
-5. Die OSC ruft **ISocialSession2::GetActivitiesEx**, bietet diese XML-Zeichenfolge der Hash-Adresse als _HashedAddresses_ -Parameter, um aktuelle Zusammenstellung von Aktivitäten für diese Person im Parameter _Aktivitäten_ zu erhalten. Die Zeichenfolge für den _Aktivitäten_ Parameter erfüllt die XML-Schemadefinition des **ActivityFeed** -Elements. 
+5. OSC ruft **ISocialSession2:: GetActivitiesEx**auf, wobei diese XML-Zeichenfolge der Hash Adresse als _hashedAddresses_ -Parameter bereitgestellt wird, um eine aktuelle Auflistung von Aktivitäten für diese Person im _Activities_ -Parameter abzurufen. Die _Aktivitäts_ Parameterzeichenfolge entspricht der XML-Schema Definition des **activityFeed** -Elements. 
     
-6. Basierend auf den XML-Schemadefinition für **ActivityFeed**, analysiert der OSC weiter die _Aktivitäten_ Zeichenfolge suchen, die-Typ, veröffentlichen, Datum, und andere Informationen über jede Aktivität und wie Sie die Aktivität anzeigen. 
+6. Basierend auf der XML-Schema Definition für **activityFeed**analysiert der osc die Aktivitäts Zeichenfolge __ weiter, um den Typ, das Veröffentlichungsdatum und weitere Informationen zu den einzelnen Aktivitäten zu ermitteln und die Aktivität anzuzeigen. 
     
-7. Um Informationen zu der ausgewählten Person erhalten möchten, ruft der OSC [ISocialSession2::GetPeopleDetails](isocialsession2-getpeopledetails.md), die gleiche XML-Zeichenfolge als Argument für den Parameter _PersonsAddresses_ Hash-Adressen bereitstellt. Die Details über die Person werden im Parameter _PersonsCollection_ zurückgegeben. Diese Einzelheiten können **FirstName**, **LastName**und **EmailAddress**hinzufügen. Der Parameter _PersonsCollection_ entspricht der XML-Schemadefinition für das Element **Person** . 
+7. Um Details zur ausgewählten Person abzurufen, ruft OSC [ISocialSession2:: GetPeopleDetails](isocialsession2-getpeopledetails.md)auf und stellt die gleiche XML-Zeichenfolge von Hash-Adressen als Argument für den _personsAddresses_ -Parameter bereit. Die Details zur Person werden im Parameter personencollection __ zurückgegeben. Diese Details können **FirstName**, **LastName**und **Email**-e/a sein. Der __ Parameter personencollection entspricht der XML-Schema Definition für das **Person** -Element. 
     
-Sie finden weitere Informationen zum Angeben von XML für Aktivitäten in den folgenden Themen dieses Abschnitts:
+Weitere Informationen zum Angeben von XML für Aktivitäten finden Sie in den folgenden Themen dieses Abschnitts:
   
-- [Übersicht über XML-Code für eine Aktivität Element-Feed](overview-of-xml-for-an-activity-feed-item.md)
+- [Übersicht über XML für ein Aktivitäts Feed-Element](overview-of-xml-for-an-activity-feed-item.md)
     
-- [ActivityDetails Element](activitydetails-element.md)
+- [activityDetails-Element](activitydetails-element.md)
     
-- [ActivityTemplateContainer Element](activitytemplatecontainer-element.md)
+- [activityTemplateContainer-Element](activitytemplatecontainer-element.md)
     
 - [Vorlagenvariablen](template-variables.md)
     
-- [Richtlinien für das Aktivitäten ordnungsgemäß anzeigen](guidelines-for-properly-displaying-activities.md)
+- [Richtlinien für die OrdnungsGemäße Anzeige von Aktivitäten](guidelines-for-properly-displaying-activities.md)
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Beispiel für eine Aktivität Feed XML](activity-feed-xml-example.md)  
-- [Synchronisieren von Freunde und Aktivitäten](synchronizing-friends-and-activities.md) 
-- [XML-Code für Funktionen](xml-for-capabilities.md)  
-- [XML-Code für Freunde](xml-for-friends.md)
+- [XML-Beispiel für Aktivitätsfeeds](activity-feed-xml-example.md)  
+- [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md) 
+- [XML für Funktionen](xml-for-capabilities.md)  
+- [XML für Freunde](xml-for-friends.md)
 - [Entwickeln eines Providers mit dem OSC-XML-Schema](developing-a-provider-with-the-osc-xml-schema.md)
 

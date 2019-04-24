@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Funktionen für Transportanbieter
+title: Erforderliche Funktionen für Transport Anbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: a0d9a3e0-a500-4d72-8859-ecfd1604fc5b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: dc1189df1b8ad8f8e613d6813681ed3f4148b122
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7f9768d47cf740bdf50b439ee3af4b0d2a191602
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328686"
 ---
-# <a name="required-functionality-for-transport-providers"></a>Erforderliche Funktionen für Transportanbieter
+# <a name="required-functionality-for-transport-providers"></a>Erforderliche Funktionen für Transport Anbieter
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Jedes MAPI-Transportdienst muss:
+Jeder MAPI-Transportanbieter muss:
   
-- Führen Sie die allgemeinen Richtlinien für die Arbeit mit MAPI- und anderen Dienstanbieter. Weitere Informationen finden Sie unter [MAPI-Anwendungsentwicklung](mapi-application-development.md) und [MAPI-Dienstanbieter](mapi-service-providers.md).
+- BeFolgen Sie die allgemeinen Richtlinien für das Arbeiten mit MAPI und anderen Dienstanbietern. Weitere Informationen finden Sie unter [MAPI-Anwendungsentwicklung](mapi-application-development.md) und [MAPI-Dienstanbieter](mapi-service-providers.md).
     
-- Der Adressbuchhierarchie DLL machen MAPI seine Initialisierungsfunktion [XPProviderInit](xpproviderinit.md) haben. 
+- Lassen Sie die [XPProviderInit](xpproviderinit.md) -Initialisierungsfunktion ihrer Transportanbieter-dll für MAPI verfügbar. 
     
-- Die Implementierung von MAPI verfügbar machen die [IXPProvider: IUnknown](ixpprovideriunknown.md) und [IXPLogon: IUnknown](ixplogoniunknown.md) Schnittstellen. 
+- Machen Sie für MAPI die Implementierung der [IXPProvider: IUnknown](ixpprovideriunknown.md) -und [IXPLogon: IUnknown](ixplogoniunknown.md) -Schnittstellen verfügbar. 
     
-- Die Implementierung von für MAPI-und Clientanwendungen verfügbar machen die [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) Schnittstelle. Weitere Informationen zum Implementieren von **IMAPIStatus**finden Sie unter [Implementierung der Status-Objekts](status-object-implementation.md). 
+- Verfügbar machen für MAPI-und Clientanwendungen die Implementierung der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle. Weitere Informationen zum Implementieren von **IMAPIStatus**finden Sie unter [Status Object Implementation](status-object-implementation.md). 
     
-- Implementieren Sie ein Blatt Eigenschaftendialogfeld für die Konfiguration. Weitere Informationen zum Implementieren von Eigenschaftenseiten finden Sie unter [Implementierung von Eigenschaften Blatt](property-sheet-implementation.md).
+- Implementieren Sie ein Eigenschaftenblatt-Dialogfeld für die Konfiguration. Weitere Informationen zum Implementieren von Eigenschaftenblättern finden Sie unter [Eigenschaftenblatt Implementierung](property-sheet-implementation.md).
     
 

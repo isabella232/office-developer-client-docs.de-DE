@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ec1bbaa-7707-4239-9994-21ad1116430b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 898876863223aefa868fd37deced2948bd5a5694
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 885cf53de45cfde4079cc2a0e7bfdca09f72b962
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329526"
 ---
 # <a name="cbnewadrlist"></a>CbNewADRLIST
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes, die für eine neue [ADRLIST](adrlist.md) -Struktur, die eine angegebene Anzahl von Empfängern, dargestellt durch [ADRENTRY](adrentry.md) Strukturen enthält zugewiesen werden soll. 
+Berechnet die Anzahl der Bytes, die für eine neue [ADRLIST](adrlist.md) -Struktur reserviert werden sollen, die eine angegebene Anzahl von Empfängern enthält, die durch die [Miet](adrentry.md) Strukturen repräsentiert werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**ADRLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**ADRLIST** <br/> |
    
 ```cpp
 CbNewADRLIST (_centries)
@@ -38,9 +38,9 @@ CbNewADRLIST (_centries)
 
 ## <a name="parameters"></a>Parameter
 
- __centries_
+ __Zentrierungen_
   
-> Anzahl der **ADRENTRY** Strukturen, die in der neuen **ADRLIST** -Struktur eingeschlossen werden. 
+> Die Anzahl der **Miet** Strukturen, die in die neue **ADRLIST** -Struktur eingeschlossen werden sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

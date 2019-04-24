@@ -1,5 +1,5 @@
 ---
-title: Abschnitt [Extensions] in der Formularkonfigurationsdatei
+title: Abschnitt "Formular Konfigurationsdatei [Erweiterungen]"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,38 +8,38 @@ api_type:
 - COM
 ms.assetid: 4817e446-982d-491c-abcf-cc888a771afa
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 459c5f5a34421583141028cd9accad5e242d31ad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96682dd2bdfedc42ea13c6985cb834f0adffd4df
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327300"
 ---
-# <a name="form-configuration-file-extensions-section"></a>Abschnitt [Extensions] in der Formularkonfigurationsdatei
+# <a name="form-configuration-file-extensions-section"></a>Abschnitt "Formular Konfigurationsdatei [Erweiterungen]"
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Abschnitt **[Extensions]** Listet die erweiterten Attribute des Formulars, in der Regel eine benannte Eigenschaft festgelegt, die alle außer den grundlegenden in den Abschnitt **[Beschreibung]** der Konfigurationsdatei Formular aufgeführten Attribute sind. Erweiterte Attribute sind Eigenschaften von Aufrufe der **GetProps** -Methode des **IMAPIFormInfo** -Objekts zurückgegeben wird, mit dem hohe Bit in das Eigenschafts-Tag festgelegt. Clientanwendungen können erweiterte Attribute eines Formulars, gegebenenfalls durch diese Tags abrufen bestimmen. Dazu Clients rufen Sie die [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode und die Namen der Eigenschaften des Formulars übergeben, und rufen die [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode, um die Eigenschaften abzurufen. 
+Im Abschnitt **[Extensions]** werden die erweiterten Attribute des Formulars aufgelistet, in der Regel ein benannter Eigenschaftensatz, bei dem es sich nicht um die grundlegenden Attribute handelt, die im Abschnitt **[Beschreibung]** der Formular Konfigurationsdatei aufgeführt sind. Erweiterte Attribute sind Eigenschaften, die von Aufrufen der **** GetProps-Methode des **IMAPIFormInfo** -Objekts zurückgegeben werden, wobei das High-Bit im Property-Tag festgelegt ist. Client Anwendungen können die erweiterten Attribute eines Formulars bestimmen, sofern vorhanden, indem Sie diese Tags abrufen. Dazu rufen die Clients die [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode auf, übergeben die Namen der Eigenschaften des Formulars und rufen die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode auf, um die Eigenschaften abzurufen. 
   
- **[Extensions]**
+ **Erweiterungen**
   
- **Erweiterung.** _String1_ =  _string2_
+ **Erweiterung.** _string1_ =  _string2_
   
-Jede Erweiterung-Eigenschaft im Abschnitt definiert eine von der mit dem Namen Eigenschaftensyntax MAPI Extension-Attribut. Der Eigenschaftentyp muss PT_LONG oder PT_STRING8. Eigenschaftensätze, die benannte Zeichenfolgen enthält, werden nicht unterstützt. Das Format des Abschnitts **[Erweiterung]** lautet: 
+Jeder Abschnitt der Extension-Eigenschaft definiert ein Erweiterungsattribut mit der Syntax der MAPI-Eigenschaft. Der Eigenschaftentyp muss entweder PT_LONG oder PT_STRING8 sein. Eigenschaftensätze mit benannten Zeichenfolgen werden nicht unterstützt. Das Format des Abschnitts **[Extension]** lautet: 
   
- **[Erweiterung.** _Zeichenfolge2_ **]**
+ **Erweiterung.** _string2_ **]**
   
- **Typ** =  _ganze Zahl_
+ **Typ** =  _Integer_
   
- **NmidPropset** =  _Guid_
+ **NmidPropset** =  -_GUID_
   
- **NmidInteger** =  _ganze Zahl_
+ **NmidInteger** =  -_Ganzzahl_
   
- **Wert** =  _Zeichenfolge_ |  _ganze Zahl_
+ **Wert** =  __ String |  _Integer_
   
-Ein Beispiel für einen Abschnitt **[Extensions]** und einer der folgenden Verwandte Abschnitte wird nach angezeigt. 
+Es folgt ein Beispiel für einen **[Extensions]** -Abschnitt und einen nachfolgenden verwandten Abschnitt. 
   
 ```
 [Extensions]

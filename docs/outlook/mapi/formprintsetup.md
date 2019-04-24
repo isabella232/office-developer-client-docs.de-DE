@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6e82fe94-47bd-4a25-b25b-0ab6fe2db274
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: c2b9176e21341ef28e6f0bc007757b097a05daee
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327286"
 ---
 # <a name="formprintsetup"></a>FORMPRINTSETUP
 
@@ -25,11 +25,11 @@ ms.locfileid: "25386572"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt die print Setupinformationen für das Form-Objekt. 
+Beschreibt die Druck Setupinformationen für das Form-Objekt. 
   
 |||
 |:-----|:-----|
-|Headerdatei:  <br/> |Mapiform.h  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
    
 ```cpp
 typedef struct
@@ -47,35 +47,35 @@ typedef struct
 
  **ulFlags**
   
-> Bitmaske aus Flags, die den Typ der Zeichenfolgen steuert. Das folgende Flag kann verwendet werden:
+> Bitmaske von Flags, die den Typ der Zeichenfolgen steuert. Das folgende Flag kann verwendet werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
- **hDevMode-Feld**
+ **hDevmode**
   
-> In den Modus des Druckers behandeln.
+> Behandeln Sie den Modus des Druckers.
     
  **hDevnames**
   
-> Handle für den Pfad des Druckers an.
+> Handle für den Pfad des Druckers.
     
  **ulFirstPageNumber**
   
-> Die Seitenzahl der ersten Seite gedruckt werden.
+> Seitenzahl der ersten zu druckenden Seite.
     
  **ulFPrintAttachments**
   
-> Flag, die angibt, ob Anlagen zu druckende vorhanden sind. Wenn Anlagen drucken vorhanden sind, wird der Member **UlFPrintAttachments** auf 1 festgelegt. Wenn keine Anhänge zu druckende vorhanden sind, wird es auf 0 festgelegt. 
+> Flag, das angibt, ob Anlagen gedruckt werden sollen. Wenn Anlagen zum Drucken vorhanden sind, wird das **ulFPrintAttachments** -Element auf 1 festgelegt. Wenn keine Anlagen zum Drucken vorhanden sind, wird dieser Wert auf 0 festgelegt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **FORMPRINTSETUP** wird verwendet, um die print Setupinformationen für ein Form-Objekt beschreiben. Die Implementierung von [IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md) füllen Sie die **FORMPRINTSETUP** -Struktur und in den Inhalt der _LppFormPrintSetup_ Output-Parameter des **GetPrintSetup**zurückgeben.
+Die **FORMPRINTSETUP** -Struktur wird verwendet, um die Druck Setupinformationen für ein Form-Objekt zu beschreiben. Implementierungen von [IMAPIViewContext:: GetPrintSetup](imapiviewcontext-getprintsetup.md) füllen die **FORMPRINTSETUP** -Struktur aus und geben Sie in den Inhalt des _LppFormPrintSetup_ -Ausgabeparameters von **GetPrintSetup**zurück.
   
-Wenn die Option MAPI_UNICODE im _UlFlags_ -Parameter der **GetPrintSetup**übergeben wird, sollte die Zeichenfolgen, die durch die **hDevMode-Feld** und **hDevnames** Member im Unicode-Format. Andernfalls müssen die Zeichenfolgen in ANSI-Format sein. 
+Wenn das MAPI_UNICODE-Flag im _ulFlags_ -Parameter von **GetPrintSetup**übergeben wird, sollten die Zeichenfolgen, auf die von den **hDevmode** -und **HDevnames** -Elementen verwiesen wird, im Unicode-Format vorliegen. Andernfalls sollten die Zeichenfolgen im ANSI-Format vorliegen. 
   
-Formular Viewer **IMAPIViewContext** implementieren die **FORMPRINTSETUP** -Struktur, die mit der MAPI-Zuweisung Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md)zuordnen, aber die einzelnen Mitgliedern, **hDevMode-Feld** und **hDevNames**zuweisen, mit der Windows-Funktion [GlobalAlloc](https://go.microsoft.com/fwlink/?LinkId=132110). Die Freigabe des Arbeitsspeichers ist ähnlich behandelt. Die Member **hDevMode-Feld** und **hDevNames** müssen mithilfe der Windows-Funktion [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108) , während die **FORMPRINTSETUP** -Struktur mit der Funktion [MAPIFreeBuffer](mapifreebuffer.md) freigegeben werden muss freigegeben werden. 
+Formular Betrachter, die **IMAPIViewContext** implementieren, müssen die **FORMPRINTSETUP** -Struktur mithilfe der MAPI-Zuweisungsfunktion [MAPIAllocateBuffer](mapiallocatebuffer.md)zuweisen, aber die einzelnen Member, **hDevMode** und **hDevNames**, zuweisen. mit der Windows-Funktion [GlobalAlloc](https://go.microsoft.com/fwlink/?LinkId=132110). Die Freigabe des Arbeitsspeichers wird entsprechend behandelt. Die **hDevMode** -und **hDevNames** -Member müssen mithilfe der Windows-Funktion [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108) freigegeben werden, während die **FORMPRINTSETUP** -Struktur mit der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion freigegeben werden muss. 
   
 ## <a name="see-also"></a>Siehe auch
 

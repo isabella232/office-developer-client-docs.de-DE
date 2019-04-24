@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: f26384f1-467e-4343-92b3-0425da9d2123
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 179d76b56c1ba9b40768c691d0b1555377f7adb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 26d6ffe66a5e7749c9d8c4e5210e9f72de808932
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328869"
 ---
 # <a name="imapitablequeryrows"></a>IMAPITable::QueryRows
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine oder mehrere Zeilen aus einer Tabelle, beginnend bei der aktuellen Cursorposition zurück.
+Gibt eine oder mehrere Zeilen aus einer Tabelle zurück, die an der aktuellen Cursorposition beginnen.
   
 ```cpp
 HRESULT QueryRows(
@@ -39,21 +39,21 @@ LPSRowSet FAR * lppRows
 
  _lRowCount_
   
-> [in] Maximale Anzahl der Zeilen, die zurückgegeben werden soll.
+> in Maximale Anzahl der zurückzugebenden Zeilen.
     
  _ulFlags_
   
-> [in] Bitmaske der Flags, die steuern, wie Zeilen zurückgegeben werden. Das folgende Flag kann festgelegt werden:
+> in Bitmaske von Flags, die Steuern, wie Zeilen zurückgegeben werden. Das folgende Flag kann festgelegt werden:
     
 TBL_NOADVANCE 
   
-> Verhindert, dass den Cursor als Ergebnis des Zeile Abrufs vorwärts verschoben. Wenn das Flag TBL_NOADVANCE festgelegt ist, zurückgegeben, die der Cursor verweist auf die erste Zeile. Wenn das Flag TBL_NOADVANCE nicht festgelegt ist, zeigt der Cursor auf die Zeile nach der letzten Zeile zurückgegeben.
+> Verhindert das Fortschreiten des Cursors als Ergebnis des Zeilen Abrufs. Wenn das TBL_NOADVANCE-Flag festgelegt ist, zeigt der Cursor auf die erste zurückgegebene Zeile. Wenn das TBL_NOADVANCE-Flag nicht festgelegt ist, zeigt der Cursor auf die Zeile nach der letzten zurückgegebenen Zeile.
     
  _lppRows_
   
-> [out] Zeiger auf einen Zeiger auf eine [SRowSet](srowset.md) -Struktur, die die Tabellenzeilen. 
+> Out Zeiger auf einen Zeiger auf eine [SRowSet](srowset.md) -Struktur, in der sich die Tabellenzeilen befinden. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -61,63 +61,63 @@ S_OK
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt, die verhindert, den Vorgang Zeile nicht gestartet dass. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Zeilenabruf Vorgang gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
     
 MAPI_E_INVALID_PARAMETER 
   
-> Der Parameter _IRowCount_ wird auf 0 (null) festgelegt. 
+> Der Parameter _IRowCount_ wird auf NULL festgelegt. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-**Die QueryRows** Ruft eine oder mehrere Zeilen mit Daten aus einer Tabelle ab. Der Wert des Parameters _IRowCount_ wirkt sich auf der Ausgangspunkt für das Abrufen. _IRowCount_ positiv darf, werden vorwärts, ab der aktuellen Position Zeilen gelesen. Wenn _IRowCount_ negativ ist, setzt **QueryRows** Startpunkt durch Verschieben rückwärts die angegebene Anzahl von Zeilen zurück. Nach dem Zurücksetzen von des Cursors werden die Zeilen in der Reihenfolge gelesen. 
+Die **IMAPITable:: QueryRows** -Methode ruft eine oder mehrere Datenzeilen aus einer Tabelle ab. Der Wert des _IRowCount_ -Parameters wirkt sich auf den Anfangspunkt des Abrufs aus. Wenn _IRowCount_ positiv ist, werden Zeilen nach vorn gelesen, beginnend an der aktuellen Position. Wenn _IRowCount_ negativ ist, wird der Startpunkt von **QueryRows** zurückgesetzt, indem die angegebene Anzahl von Zeilen rückwärts bewegt wird. Nach dem Zurücksetzen des Cursors werden die Zeilen in der Forward-Reihenfolge gelesen. 
   
-Der **cRows** Member in der [SRowSet](srowset.md) -Struktur, die auf das durch den Parameter _LppRows_ gibt die Anzahl von Zeilen zurückgegeben. Wenn keine Zeilen zurückgegeben werden: 
+Das **Crows** -Element in der [SRowSet](srowset.md) -Struktur, auf die durch den _lppRows_ -Parameter verwiesen wird, gibt die Anzahl der zurückgegebenen Zeilen an. Wenn null Zeilen zurückgegeben werden: 
   
-- Der Cursor wurde bereits am Anfang der Tabelle positioniert, und der Wert der _IRowCount_ negativ ist. \Endash oder \endash 
+- Der Cursor war bereits am Anfang der Tabelle positioniert, und der Wert von _IRowCount_ ist negativ. Oder 
     
-- Der Cursor wurde bereits am Ende der Tabelle positioniert, und der Wert der _IRowCount_ positiv ist. 
+- Der Cursor wurde bereits am Ende der Tabelle positioniert, und der Wert von _IRowCount_ ist positiv. 
     
-Die Anzahl der Spalten und ihrer Reihenfolge wird für jede Zeile identisch. Wenn eine Eigenschaft für eine Zeile nicht vorhanden, oder es wird ein Fehler beim Lesen einer Eigenschaft, enthält die **SPropValue** -Struktur für die Eigenschaft in der Zeile die folgenden Werte: 
+Die Anzahl der Spalten und ihre Reihenfolge ist für jede Zeile identisch. Wenn eine Eigenschaft nicht für eine Zeile vorhanden ist oder beim Lesen einer Eigenschaft ein Fehler auftritt, enthält die **SPropValue** -Struktur für die-Eigenschaft in der Zeile die folgenden Werte: 
   
-- PT_ERROR für den Eigenschaftentyp im **UlPropTag** -Member. 
+- PT_ERROR für den Eigenschaftentyp im **ulPropTag** -Element. 
     
-- MAPI_E_NOT_FOUND für **das Element** . 
+- MAPI_E_NOT_FOUND für den **Wert** Member. 
     
-Für die [SPropValue](spropvalue.md) Strukturen in der Zeile auf das durch den Parameter _LppRows_ verwendeter Arbeitsspeicher muss separat belegt und für jede Zeile freigegeben werden. Verwenden Sie [MAPIFreeBuffer](mapifreebuffer.md) , um die Eigenschaft Wert Strukturen frei, und legen Sie die Zeile frei, um. Wenn Sie ein Anruf an **QueryRows** gibt 0 (null) zurück, jedoch muss, der angibt, der Anfang oder das Ende der Tabelle nur die **SRowSet** Struktur selbst freigegeben werden. Weitere Informationen zum Zuordnen und Freigeben von Arbeitsspeicher in eine **SRowSet** -Struktur finden Sie unter [Verwalten von Arbeitsspeicher für ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md).
+Der für die [SPropValue](spropvalue.md) -Strukturen im Zeilensatz, auf den der _lppRows_ -Parameter zeigt, verwendete Arbeitsspeicher muss für jede Zeile separat reserviert und freigegeben werden. Verwenden Sie [mapifreebufferfreigegeben](mapifreebuffer.md) , um die Eigenschaftswert Strukturen freizugeben und den Zeilensatz freizugeben. Wenn ein Aufruf von **QueryRows** NULL zurückgibt, aber den Anfang oder das Ende der Tabelle angibt, muss nur die **SRowSet** -Struktur selbst freigegeben werden. Weitere Informationen zum reservieren und Freigeben von Arbeitsspeicher in einer **SRowSet** -Struktur finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
   
-Die Zeilen, die zurückgegeben werden und die Reihenfolge, in der sie zurückgegeben werden, hängt davon ab, unabhängig davon, ob erfolgreiche Anrufe an die [Methode IMAPITable:: Restrict](imapitable-restrict.md) und [SortTable](imapitable-sorttable.md)vorgenommen wurden. **Restrict** Filter Zeilen aus der Ansicht verursacht **QueryRows** , um nur die Zeilen zurück, die in der Einschränkung angegebenen Kriterien entsprechen. **SortTable** richtet einen Standard oder kategorisiert Sortierreihenfolge, beeinflussen die Abfolge von Zeilen von **QueryRows**zurückgegeben. Die zurückgegebenen Zeilen werden in der Reihenfolge, in der **SortTable**übergeben [SSortOrderSet](ssortorderset.md) Struktur angegeben.
+Die zurückgegebenen Zeilen und die Reihenfolge, in der Sie zurückgegeben werden, hängen davon ab, ob erfolgreiche Aufrufe an [IMAPITable:: Restrict](imapitable-restrict.md) und [IMAPITable:: sortable](imapitable-sorttable.md)vorgenommen wurden. Filter Zeilen aus der Ansicht **einschränken** , sodass **QueryRows** nur die Zeilen zurückgibt, die den in der Einschränkung angegebenen Kriterien entsprechen. **Sortable** legt eine Standard-oder kategorisierte Sortierreihenfolge fest, die sich auf die Reihenfolge der von **QueryRows**zurückgegebenen Zeilen auswirkt. Die zurückgegebenen Zeilen befinden sich in der in der [SSortOrderSet](ssortorderset.md) -Struktur angegebenen **** Reihenfolge, die an sortable übergeben wird.
   
-Die Spalten für jede Zeile zurückgegeben und hängen von der Reihenfolge, in dem sie zurückgegeben werden, unabhängig davon, ob ein erfolgreicher Aufruf an [IMAPITable::SetColumns](imapitable-setcolumns.md)vorgenommen wurde. **SetColumns** richtet einen Spaltensatz angeben die Eigenschaften, die Spalten in der Tabelle und die Reihenfolge, in der sie enthalten sein sollen, berücksichtigt werden. Wenn ein Anruf **SetColumns** vorgenommen wurden, übereinstimmen bestimmten Spalten in jeder Zeile und die Reihenfolge der Spalten die Spalte festlegen in der Anruf angegeben. Falls kein Aufruf **SetColumns** vorgenommen wurden, gibt die Tabelle die standardspaltensammlung zurück. 
+Die für jede Zeile zurückgegebenen Spalten und die Reihenfolge, in der Sie zurückgegeben werden, hängen davon ab, ob ein erfolgreicher Aufruf an [IMAPITable::](imapitable-setcolumns.md)SetColumns erfolgt ist oder nicht. **** SetColumns richtet eine Spaltengruppe ein, die die Eigenschaften angibt, die in Spalten in der Tabelle enthalten sein sollen, und die Reihenfolge, in der Sie eingeschlossen werden sollen. Wenn ein **** SetColumns-Aufruf ausgeführt wurde, stimmen die Spalten in jeder Zeile und die Reihenfolge dieser Spalten mit dem im Aufruf angegebenen Spaltensatz überein. Wenn kein **** SetColumns-Aufruf ausgeführt wurde, gibt die Tabelle den Standardspaltensatz zurück. 
   
-Wenn keine dieser Anrufe vorgenommen wurde, gibt **QueryRows** alle Zeilen in der Tabelle zurück. Jede Zeile enthält die Standardspalte in Standardreihenfolge festgelegt. 
+Wenn keiner dieser Aufrufe vorgenommen wurde, gibt **QueryRows** alle Zeilen in der Tabelle zurück. Jede Zeile enthält den standardmäßigen Spaltensatz in der Standardreihenfolge. 
   
-Wenn die Spalte in einem Aufruf von [IMAPITable::SetColumns](imapitable-setcolumns.md) hergestellt Spalten auf PR_NULL gesetzt enthält, wird das Array [SPropValue](spropvalue.md) innerhalb der Zeile, die in _LppRows_ zurückgegeben leere Steckplätze enthalten. 
+Wenn der in einem Aufruf von [IMAPITable::](imapitable-setcolumns.md) SetColumns eingerichtete Spaltensatz Spalten enthält, die auf PR_NULL festgelegt sind, enthält das [SPropValue](spropvalue.md) -Array innerhalb des in _lppRows_ zurückgegebenen Rowsets leere Slots. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Sie können einen Anrufer zum Anfordern von nicht unterstützten Spalte, die in der Spalte Gruppe eingeschlossen werden. In diesem Fall wird die Eigenschaft Typ Teil der Eigenschafts-Tag und MAPI_E_NOT_FOUND im-Eigenschaftenwert für die Spalte nicht unterstützte versehen Sie PT_ERROR. 
+Sie können einem Anrufer gestatten, eine nicht unterstützte Spalte anzufordern, die in den Spaltensatz eingeschlossen werden soll. Wenn dies der Fall ist, platzieren Sie PT_ERROR im Eigenschafts Teil des Property-Tags und MAPI_E_NOT_FOUND im Eigenschaftswert für die nicht unterstützte Spalte. 
   
-Die Anzahl der Zeilen einer Anforderung, sondern als Voraussetzung zu behandeln. Sie können an einer beliebigen Stelle aus keine Zeilen zurückgeben, wenn keine Zeilen in die Richtung der Abfrage, auf die angeforderte Anzahl vorhanden sind. 
+Behandeln Sie die Zeilenanzahl als Anforderung anstatt als Anforderung. Sie können an einer beliebigen Stelle von null Zeilen zurückkehren, wenn es keine Zeilen in der Richtung der Abfrage gibt, um die angeforderte Nummer. 
   
-Nur die Zeilen, die dem Benutzer angezeigt wird, wenn Zeilen aus einer kategorisierten Tabellenansicht angefordert werden sodass Aufrufer gültige Annahmen bezüglich des Umfangs der Daten und zusätzliche Arbeit vermeiden zurück. 
+Gibt nur die Zeilen zurück, die dem Benutzer angezeigt werden, wenn Zeilen aus einer kategorisierten Tabellenansicht angefordert werden, sodass der Aufrufer gültige Annahmen über den Datenbereich treffen und zusätzliche Arbeit vermeiden kann. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-In der Regel werden Sie am Ende beliebig viele Zeilen, die Sie in der _lRowCount_ -Parameter angegeben haben. Jedoch zurück Wenn Speicher oder-Implementierung Grenzwerten handelt es sich ein Problem oder der Vorgang der Anfang oder das Ende der Tabelle vorzeitig erreicht, **QueryRows** weniger Zeilen als angefordert. 
+In der Regel werden Sie so viele Zeilen wie im Parameter _lRowCount_ angegeben haben. Wenn jedoch Speicher-oder Implementierungs Grenzwerte ein Problem sind oder wenn der Vorgang vorzeitig den Anfang oder das Ende der Tabelle erreicht, gibt **QueryRows** weniger Zeilen zurück als angefordert. 
   
-Wenn **QueryRows** MAPI_E_BUSY zurückgibt, wird rufen Sie die [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md) -Methode auf, und wiederholen Sie den Anruf an **QueryRows** , wenn der asynchrone Vorgang abgeschlossen ist. 
+Wenn **QUERYROWS** MAPI_E_BUSY zurückgibt, rufen Sie die [IMAPITable:: WaitForCompletion](imapitable-waitforcompletion.md) -Methode auf, und wiederholen Sie den Aufruf von **QueryRows** , wenn der asynchrone Vorgang abgeschlossen ist. 
   
-Beim Aufruf von **QueryRows**, achten Sie darauf, dass der Zeitpunkt des asynchronen Benachrichtigungen das Rowset fest potenziell dazu führen, dass Sie ähnliche aus **QueryRows** erhalten haben, nicht für die zugrunde liegenden Daten genau darstellen. Legen Sie beispielsweise ein Aufruf von **QueryRows** , einen Ordner Inhalt Tabelle Folgendes, dass das Löschen einer Nachricht, aber vor dem Empfang des die entsprechende Benachrichtigung verursacht die gelöschte Zeile in der Zeile zurückgegeben werden soll. Warten Sie immer eine Benachrichtigung vor dem Aktualisieren der Ansicht der Daten des Benutzers eingehen. 
+Beachten Sie beim Aufrufen von **QueryRows**, dass der Zeitpunkt der asynchronen Benachrichtigungen potenziell dazu führen kann, dass der aus **QueryRows** zurückgegebene Zeilensatz die zugrunde liegenden Daten nicht genau darstellt. Beispielsweise bewirkt ein Aufruf von **QueryRows** in der Inhaltstabelle eines Ordners nach dem Löschen einer Nachricht, jedoch vor dem Empfang der entsprechenden Benachrichtigung, dass die gelöschte Zeile im Zeilensatz zurückgegeben wird. Warten Sie immer, bis eine Benachrichtigung eingeht, bevor Sie die Benutzeransicht der Daten aktualisieren. 
   
 Weitere Informationen zum Abrufen von Zeilen aus Tabellen finden Sie unter [Abrufen von Daten aus Tabellenzeilen](retrieving-data-from-table-rows.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI (engl.) verwendet **die QueryRows** abzurufenden Zeilen in der Tabelle, in der Ansicht zu laden.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI verwendet die **IMAPITable:: QueryRows** -Methode zum Abrufen von Zeilen in der Tabelle, um Sie in die Ansicht zu laden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

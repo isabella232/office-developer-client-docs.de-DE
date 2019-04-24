@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7f083ee0-bf36-0059-1589-66e454fe0098
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f8982bafc0678378ae46dc31a9417cc11bb695a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 78ccf72f17ec350d77f2d22d0e6d2fa7c3d97543
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332144"
 ---
 # <a name="iostxsetsyncresult"></a>IOSTX::SetSyncResult
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Ergebnis der Synchronisierung festgelegt.
+Legt das Ergebnis der Synchronisierung fest.
   
 ```cpp
 HRESULT SetSyncResult( 
@@ -37,11 +37,11 @@ HRESULT SetSyncResult(
 
  _hrSync_
   
->  [in] Das Ergebnis der Synchronisierung. 
+>  in Das Ergebnis der Synchronisierung. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie **IOSTX::SetSyncResult** vor **IOSTX::SyncEnd** , um den lokalen Speicher des Ergebnisses der Synchronisierung zu informieren. 
+Rufen Sie **IOSTX:: SetSyncResult** vor dem Aufruf von **IOSTX:: SyncEnd** auf, um den lokalen Speicher über das Ergebnis der Synchronisierung zu informieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

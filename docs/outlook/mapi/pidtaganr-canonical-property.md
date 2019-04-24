@@ -1,5 +1,5 @@
 ---
-title: PidTagAnr (kanonische Eigenschaft)
+title: Kanonische Pidtaganr (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,58 +11,58 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: eca3d4ff-2e92-4d20-a498-98e0773c1962
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: ce08ba971662b7f5060e6b24a6d2c5ee1a921d5b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327965"
 ---
-# <a name="pidtaganr-canonical-property"></a>PidTagAnr (kanonische Eigenschaft)
+# <a name="pidtaganr-canonical-property"></a>Kanonische Pidtaganr (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einen String-Wert für die Verwendung in einer eigenschaftseinschränkung auf eine Adresse Adressbuch Container Inhaltstabelle enthält. 
+Enthält einen Zeichenfolgenwert für die Verwendung in einer Eigenschaftseinschränkung in einer Adressbuchcontainer-Inhaltstabelle. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ANR, PR_ANR_A, PR_ANR_W  <br/> |
 |Kennung:  <br/> |0x360C  <br/> |
-|Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
+|Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften gehören nicht auf ein beliebiges Objekt; Es wird von adressbuchanbietern implementierte in [SPropertyRestriction](spropertyrestriction.md) Strukturen bereitgestellt. Diese Eigenschaft enthält eine Zeichenfolge der mehrdeutiger Name-Lösung (ANR), die ein Adressbuchcontainer Inhaltstabelle, entsprechende Empfänger der Nachricht erhalten verglichen werden kann. 
+Diese Eigenschaften gehören nicht zu einem Objekt; Sie wird von Adressbuch Anbietern in [SPropertyRestriction](spropertyrestriction.md) -Strukturen bereitgestellt. Diese Eigenschaft enthält eine ANR-Zeichenfolge (mehrdeutige Namensauflösung), die anhand der Inhaltstabelle eines Adressbuch Containers getestet werden kann, um entsprechende Nachrichtenempfänger zu finden. 
   
-Von adressbuchanbietern implementierte gleich dem Wert der **PR_ANR** und zugeordneten Eigenschaften für jeden Eintrag in der Inhaltstabelle mit einer vom Anbieter definiertes übereinstimmenden Algorithmus. Die Spalte oder Spalten, die in diese Übereinstimmung verwendet werden, werden vom Anbieter als Teil des Algorithmus ausgewählt. Die Spalte **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) ist die am häufigsten verwendet. die Spalte **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)) ist auch nützlich, wenn sie den Namen des Benutzers e-Mail enthält. 
+Adressbuchanbieter entsprechen dem Wert von **PR_ANR** und zugeordneten Eigenschaften für jeden Eintrag in der Inhaltstabelle mithilfe eines vom Anbieter definierten übereinstimmenden Algorithmus. Die Spalten, die in dieser Übereinstimmung verwendet werden, werden vom Anbieter als Teil des Algorithmus ausgewählt. Die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Spalte ist die am häufigsten verwendete; die **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))-Spalte ist auch nützlich, wenn Sie den e-Mail-Namen des Benutzers enthält. 
   
-Weitere Informationen über die Auflösung nicht eindeutiger Namen finden Sie unter [Address Book Einschränkungen](address-book-restrictions.md). 
+Weitere Informationen zur Auflösung mehrdeutiger Namen finden Sie unter [Address Book Restrictions](address-book-restrictions.md). 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.
+> Gibt die Eigenschaften und Vorgänge für Listen von Benutzern, Kontakten, Gruppen und Ressourcen an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -79,5 +79,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

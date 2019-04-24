@@ -1,5 +1,5 @@
 ---
-title: PidTagContentIdentifier (kanonische Eigenschaft)
+title: Kanonische Pidtagcontentidentifier (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 33bf8251-37d5-47d0-88d2-5088bfaa147a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 57f036872276ed2ff85bf6f8a53801f3af605607
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 312253f0ea4b115018cbe71522782ea21579fa4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331899"
 ---
-# <a name="pidtagcontentidentifier-canonical-property"></a>PidTagContentIdentifier (kanonische Eigenschaft)
+# <a name="pidtagcontentidentifier-canonical-property"></a>Kanonische Pidtagcontentidentifier (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Wert, der zum Identifizieren des Inhalts den Empfänger der Nachricht ermöglicht.
+Enthält einen Schlüsselwert, mit dem der Nachrichtenempfänger seinen Inhalt identifizieren kann.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält einen Wert, der zum Identifizieren des Inhalts den Empfänger der Nachr
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

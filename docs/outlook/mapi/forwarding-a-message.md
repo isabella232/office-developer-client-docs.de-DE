@@ -7,70 +7,70 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0027fd5a-f30a-4025-b670-c21869b3a480
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 18113fd48f33eaf067942116f168a54e8b91c55c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d1df84c37cc2a24806c35ae0c90e4bf2a5e438d2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328063"
 ---
 # <a name="forwarding-a-message"></a>Weiterleiten einer Nachricht
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Weiterleiten einer Nachricht umfasst viele der dieselben Aufgaben wie die ursprüngliche Nachricht. Zuerst, öffnen Sie den standardmäßigen Nachrichtenspeicher und dem Ordner, der ausgehende Nachrichten, in der Regel im Ordner Postausgang, halten und rufen Sie diesen Ordner [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) -Methode, um die Nachricht weitergeleitet werden zu erstellen. Darüber hinaus müssen Sie den Ordner öffnen, der die ursprüngliche Nachricht, typischerweise im Posteingang enthält. Informationen zum Öffnen von verschiedenen Ordnern finden Sie unter [Öffnen einen Speicherordner Nachricht](opening-a-message-store-folder.md).
+Das Weiterleiten einer Nachricht umfasst viele der gleichen Aufgaben wie das Senden einer ursprünglichen Nachricht. Zunächst müssen Sie den standardmäßigen Nachrichtenspeicher und den Ordner, der für ausgehende Nachrichten vorgesehen ist, in der Regel den Postausgang öffnen und die [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode dieses Ordners aufrufen, um die zu sendende Nachricht zu erstellen. Sie müssen auch den Ordner öffnen, der die ursprüngliche Nachricht enthält, normalerweise den Posteingang. Informationen zum Öffnen unterschiedlicher Ordner finden Sie unter [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md).
   
-Der Hauptunterschied zwischen Erstellen einer Nachricht weitergeleitet werden, und erstellen die ursprüngliche ist, dass mit einer weitergeleiteten Nachricht, die meisten Eigenschaften sind entweder basierend auf, oder direkt über die Eigenschaften der ursprünglichen Nachricht kopiert. 
+Der Hauptunterschied zwischen dem Erstellen einer Nachricht, die weitergeleitet wird, und dem Erstellen des Originals besteht darin, dass die meisten Eigenschaften bei einer weitergeleiteten Nachricht direkt aus den Eigenschaften der ursprünglichen Nachricht kopiert werden. 
   
-**Um eine Nachricht weiterzuleiten**
+**So leiten Sie eine Nachricht weiter**
   
-1. Öffnen Sie die Standard-Informationsspeicher. Weitere Informationen finden Sie unter [Standard-Informationsspeicher zu öffnen](opening-the-default-message-store.md).
+1. Öffnen Sie den Standardnachrichtenspeicher. Weitere Informationen finden Sie unter [Öffnen des Standardnachrichten Speichers](opening-the-default-message-store.md).
     
-2. Öffnen Sie den Ordner Postausgang. Weitere Informationen finden Sie unter [Öffnen einen Speicherordner Nachricht](opening-a-message-store-folder.md).
+2. Öffnen Sie den Ordner Postausgang. Weitere Informationen finden Sie unter [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md).
     
-3. Rufen Sie den Postausgang [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) -Methode zum Erstellen einer neuen Nachricht weitergeleiteten. 
+3. Rufen Sie die [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode des Postausgangs auf, um eine neue weitergeleitete Nachricht zu erstellen. 
     
-4. Rufen Sie die ursprüngliche Nachricht [IMAPIProp::CopyTo](imapiprop-copyto.md) -Methode, um die folgenden Eigenschaften in der weitergeleiteten Nachricht zu kopieren: 
+4. Rufen Sie die [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Methode der ursprünglichen Nachricht auf, um die folgenden Eigenschaften in die weitergeleitete Nachricht zu kopieren: 
     
-   - **Kurs\_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) **PR\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) oder **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)), je nachdem, ob die Rich-Text-Format, nur-Text oder HTML unterstützt.
+   - **PR\_** -Textkörper ([pidtagbody (](pidtagbody-canonical-property.md)), **PR\_-HTML** ([pidtaghtml (](pidtaghtml-canonical-property.md)) oder **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)), je nachdem, ob Sie Rich-Text-Format, nur-Text oder HTML unterstützen.
     
-   - **Kurs\_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) 
+   - **PR\_-NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) 
     
-5. Kopieren Sie die e-Mail-Anlagen aus der ursprünglichen Nachricht durch Aufrufen der ursprünglichen Nachricht **IMAPIProp::CopyTo** -Methode, um die Eigenschaft **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) zu kopieren oder durch den folgenden Aufruf drei Schritt-Verfahren für jede Anlage kopiert werden:
+5. Kopieren Sie die Nachrichtenanlagen aus der ursprünglichen Nachricht, indem Sie die **IMAPIProp:: CopyTo** -Methode der ursprünglichen Nachricht aufrufen, um die **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md))-Eigenschaft zu kopieren oder indem Sie Folgendes aufrufen. dreistufiges Verfahren für jede zu kopierende Anlage:
     
-   1. Rufen Sie die neue Nachricht [IMessage::CreateAttach](imessage-createattach.md) -Methode, um eine neue Anlage erstellen weitergeleitet. 
+   1. Rufen Sie die [IMessage:: createattach](imessage-createattach.md) -Methode der neuen weitergeleiteten Nachricht auf, um eine neue Anlage zu erstellen. 
       
-   2. Rufen Sie die ursprüngliche Nachricht [IMessage::OpenAttach](imessage-openattach.md) -Methode zum Öffnen der Anlage kopiert werden soll. 
+   2. Rufen Sie die [IMessage:: openattach](imessage-openattach.md) -Methode der ursprünglichen Nachricht auf, um die zu kopierende Anlage zu öffnen. 
       
-   3. Rufen Sie die ursprüngliche Nachricht **IMAPIProp::CopyTo** -Methode, um alle Anlagen Eigenschaften aus der alten Anlage in die neue kopieren. 
+   3. Rufen Sie die **IMAPIProp:: CopyTo** -Methode der ursprünglichen Nachricht auf, um alle Anlageneigenschaften aus der alten Anlage in die neue zu kopieren. 
     
-6. Nehmen Sie die folgenden Eigenschaften nicht in den Anruf auf **IMAPIProp::CopyTo**aus: 
+6. Schließen Sie die folgenden Eigenschaften nicht in den Aufruf von **IMAPIProp:: CopyTo**ein: 
     
 |||
 |:-----|:-----|
-|**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |**PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))  <br/> |
-|**PR_MESSAGE_DOWNLOAD_TIME** ([PidTagMessageDownloadTime](pidtagmessagedownloadtime-canonical-property.md))  <br/> |**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |
+|**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |**PR_MESSAGE_DELIVERY_TIME** ([Pidtagmessagedeliverytime (](pidtagmessagedeliverytime-canonical-property.md))  <br/> |
+|**PR_MESSAGE_DOWNLOAD_TIME** ([Pidtagmessagedownloadtime (](pidtagmessagedownloadtime-canonical-property.md))  <br/> |**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |
 |**PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md))  <br/> |**PR_RCVD_REPRESENTING** -Eigenschaften  <br/> |
-|**PR_READ_RECEIPT_ENTRYID** ([PidTagReadReceiptEntryId](pidtagreadreceiptentryid-canonical-property.md))  <br/> |**PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md))  <br/> |
+|**PR_READ_RECEIPT_ENTRYID** ([Pidtagreadreceiptentryid (](pidtagreadreceiptentryid-canonical-property.md))  <br/> |**PR_READ_RECEIPT_REQUESTED** ([Pidtagreadreceiptrequested (](pidtagreadreceiptrequested-canonical-property.md))  <br/> |
 |**PR_RECEIVED_BY** -Eigenschaften  <br/> |**PR_REPLY_RECIPIENT** -Eigenschaften  <br/> |
-|**PR_REPORT_ENTRYID** ([PidTagReportEntryId](pidtagreportentryid-canonical-property.md))  <br/> |**PR_SENDER** -Eigenschaften  <br/> |
-|**PR_SENT_REPRESENTING** -Eigenschaften  <br/> |**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))  <br/> |
-|**PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md))  <br/> | <br/> |
+|**PR_REPORT_ENTRYID** ([Pidtagreportentryid (](pidtagreportentryid-canonical-property.md))  <br/> |**PR_SENDER** -Eigenschaften  <br/> |
+|**PR_SENT_REPRESENTING** -Eigenschaften  <br/> |**PR_SENTMAIL_ENTRYID** ([Pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md))  <br/> |
+|**PR_SUBJECT_PREFIX** ([Pidtagsubjectprefix (](pidtagsubjectprefix-canonical-property.md))  <br/> | <br/> |
    
-1. Formatieren Sie den Nachrichtentext durch Hinzufügen von Einzug und einer Kopfzeile Absatz, der den ursprünglichen Absender enthält Datum der Übertragung, Betreff und Empfängerliste. Schließen Sie Internet-Schreibweise Anfangszeichen mit dem Inhalt nicht.
+1. Formatieren Sie den Nachrichtentext, indem Sie Einzüge und einen Kopf Absatz hinzufügen, der den ursprünglichen Absender, das Sendedatum, den Betreff und die Empfängerliste enthält. Verwenden Sie keine Präfixzeichen im Internet Format mit dem Inhalt.
     
-2. Rufen Sie [ScCreateConversationIndex](sccreateconversationindex.md), übergeben den Wert der Eigenschaft für die ursprüngliche Nachricht **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)).
+2. Rufen Sie [ScCreateConversationIndex](sccreateconversationindex.md)auf, und übergeben Sie den Wert der **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))-Eigenschaft der ursprünglichen Nachricht.
     
-3. Legen Sie ein Präfix für den weitergeleiteten Nachrichten. Bei Verwendung den Standard "Firmware:", diese Zeichen auf den Anfang der **PR_NORMALIZED_SUBJECT** verketten und **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) auf die neue Zeichenfolge festgelegt. **PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) nicht festgelegt. Bei Verwendung ein nicht standardmäßigen Präfixes, wie eine Zeichenfolge mit mehr als drei Zeichen im **PR_SUBJECT_PREFIX**speichern. 
+3. Legen Sie ein Präfix für die weitergeleitete Nachricht fest. Wenn Sie den Standard "FW:" verwenden, verketten Sie diese Zeichen am Anfang von **PR_NORMALIZED_SUBJECT** , und legen Sie **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md)) auf diese neue Zeichenfolge fest. Legen Sie **PR_SUBJECT_PREFIX** ([pidtagsubjectprefix (](pidtagsubjectprefix-canonical-property.md)) nicht fest. Wenn Sie ein nicht standardmäßiges Präfix verwenden, wie etwa eine Zeichenfolge mit mehr als drei Zeichen, speichern Sie es in **PR_SUBJECT_PREFIX**. 
     
-4. Legen Sie die **PR_SENT_REPRESENTING** -Eigenschaften auf die entsprechenden Werte in den Eigenschaften des **PR_RCVD_REPRESENTING** . 
+4. Legen Sie die **PR_SENT_REPRESENTING** -Eigenschaften auf die entsprechenden Werte in den **PR_RCVD_REPRESENTING** -Eigenschaften fest. 
     
-5. Erstellen einer Empfängerliste. Weitere Informationen finden Sie unter [Erstellen einer Liste der Empfänger](creating-a-recipient-list.md).
+5. Erstellen Sie eine Empfängerliste. Weitere Informationen finden Sie unter [Erstellen einer Empfängerliste](creating-a-recipient-list.md).
     
-6. Rufen Sie die weitergeleitete Nachricht [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode zum Speichern oder [IMessage::SubmitMessage](imessage-submitmessage.md) zu speichern und senden. 
+6. Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der weitergeleiteten Nachricht auf, um Sie zu speichern, oder [IMessage:: SubmitMessage](imessage-submitmessage.md) , um Sie zu speichern und zu senden. 
     
 ## <a name="see-also"></a>Siehe auch
 
-- [PidTagMessageAttachments (kanonische Eigenschaft)](pidtagmessageattachments-canonical-property.md)
+- [Kanonische Pidtagmessageattachments (-Eigenschaft](pidtagmessageattachments-canonical-property.md)
 

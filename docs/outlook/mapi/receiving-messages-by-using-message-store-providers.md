@@ -1,5 +1,5 @@
 ---
-title: Empfangen von Nachrichten durch Nachrichtenspeicheranbieter
+title: Empfangen von Nachrichten mithilfe von Nachrichtenspeicher Anbietern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,42 +8,42 @@ api_type:
 - COM
 ms.assetid: 4763951e-ccfd-453e-b99c-5c7d5efb90c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8a5df2e8f50d8de05ec43b03ae5b56887e76d505
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c93a4b56489c2bfb458e2e1cd872073e64d9998a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328448"
 ---
-# <a name="receiving-messages-by-using-message-store-providers"></a>Empfangen von Nachrichten durch Nachrichtenspeicheranbieter
+# <a name="receiving-messages-by-using-message-store-providers"></a>Empfangen von Nachrichten mithilfe von Nachrichtenspeicher Anbietern
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachricht-Anbieter müssen keine eingehenden Nachrichtenübermittlungen unterstützen (d. h., unterstützen die Möglichkeit zu Nachrichten Transportanbieter und die Warteschlange MAPI-Anbieter als Ausgangspunkt Übermittlung von Nachrichten Filiale). Jedoch, wenn Ihre Nachricht Speicheranbieter eingehende Nachrichtenübermittlungen nicht unterstützt, kann es als Standard-Informationsspeicher verwendet werden.
+Nachrichtenspeicher Anbieter müssen keine eingehenden Nachrichten unterstützen (das heißt, Sie unterstützen die Möglichkeit, dass Transportanbieter und der MAPI-Spooler den Nachrichtenspeicher Anbieter als Zustellungs Punkt für e-Mails verwenden können). Wenn jedoch der Nachrichtenspeicher Anbieter eingehende Nachrichten nicht unterstützt, kann er nicht als Standardnachrichtenspeicher verwendet werden.
   
-Zur Unterstützung der eingehenden Nachrichtenübermittlungen muss ein Speicheranbieter Nachricht Folgendes ausführen:
+Zur Unterstützung eingehender Nachrichtenübermittlungen muss der Nachrichtenspeicher Anbieter folgende Schritte ausführen:
   
-- Unterstützt die Methoden [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) und [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md) -Clientanwendungen eingehende Nachrichten suchen können. 
+- Unterstützen Sie die Methoden [IMsgStore:: GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) und [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md) , sodass Clientanwendungen eingehende Nachrichten finden können. 
     
-- Unterstützung für die [IMsgStore::NotifyNewMail](imsgstore-notifynewmail.md) -Methode, damit die MAPI-Warteschlange den Nachricht Speicheranbieter informieren kann, den eine neue Nachricht empfangen hat. 
+- Unterstützen Sie die [IMsgStore:: NotifyNewMail](imsgstore-notifynewmail.md) -Methode, sodass der MAPI-Spooler den Nachrichtenspeicher Anbieter informieren kann, dass eine neue Nachricht eingegangen ist. 
     
-- Implementieren Sie Benachrichtigungen, damit Clients für die Benachrichtigung über eine neue Nachricht registrieren können. Benachrichtigungen sind optional, jedoch zu Ihrem Anbieter sollte implementieren.
+- Implementieren Sie Benachrichtigungen, damit Clients sich für neue Nachrichten Benachrichtigungen anmelden können. Benachrichtigungen sind optional, aber Ihr Anbieter sollte Sie implementieren.
     
-Die Reihenfolge der Methodenaufrufe, die auftritt, wenn eine eingehende Nachricht an einen Nachrichtenspeicher übermittelt werden lautet wie folgt:
+Die Reihenfolge der Methodenaufrufe, die auftreten, wenn eine eingehende Nachricht an einen Nachrichtenspeicher übermittelt wird, lautet wie folgt:
   
-1. Die MAPI-Warteschlange ruft [IMsgStore::OpenEntry](imsgstore-openentry.md) mit der Posteingang [EntryID](entryid.md) eine [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle abrufen. 
+1. Der MAPI-Warteschlangen Aufruf [IMsgStore:: OpenEntry](imsgstore-openentry.md) mit der Posteingangs- [Eingabe](entryid.md) Aufforderung, um eine [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle abzurufen. 
     
-2. Die MAPI-Warteschlange ruft [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) zum Abrufen einer neuen Nachricht-Objekts. 
+2. Der MAPI-Spooler ruft [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) auf, um ein neues Message-Objekt abzurufen. 
     
-3. Die MAPI-Warteschlange übergibt das Message-Objekt an der Adressbuchhierarchie.
+3. Der MAPI-Spooler übergibt das Nachrichtenobjekt an den Transportanbieter.
     
-4. Der Transportdienst füllt Nachrichteneigenschaften mit Daten aus dem zugrunde liegenden messaging-System und das Meldungsobjekt [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode aufgerufen. 
+4. Der Transportanbieter füllt die Eigenschaften der Nachricht mit Daten aus dem zugrunde liegenden Messagingsystem aus und ruft die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode des Nachrichtenobjekts auf. 
     
-5. Der Nachricht Speicheranbieter verwendet seine Benachrichtigungsmethode registrierte Clients informiert, die eine neue Nachricht empfangen hat.
+5. Der Nachrichtenspeicher Anbieter verwendet seine Benachrichtigungsmethode, um registrierte Clients darüber zu informieren, dass eine neue Nachricht eingegangen ist.
     
-6. Der Nachrichtenspeicher [IMsgStore::NotifyNewMail](imsgstore-notifynewmail.md) -Methode aufgerufen, die MAPI-Warteschlange. 
+6. Die MAPI-Warteschlange ruft die [IMsgStore:: NotifyNewMail](imsgstore-notifynewmail.md) -Methode des Nachrichtenspeichers auf. 
     
 ## <a name="see-also"></a>Siehe auch
 

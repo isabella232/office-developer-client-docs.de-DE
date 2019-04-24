@@ -1,5 +1,5 @@
 ---
-title: RGB Function (VisioShapeSheet)
+title: RGB-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm82251489
 localization_priority: Normal
 ms.assetid: f6b9f65c-6752-16cb-7eb1-44e1ce56e80b
-description: Gibt einen Wert, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe nach seiner Rot-, Grün- und blauen-Komponenten, wobei es sich um eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck, der als eine derartige Zahl ausgewertet wird.
-ms.openlocfilehash: 7fa129d3ed28441f619660ed0db035cde85979bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Sie gibt eine Farbe anhand ihrer rot-, grün-und Blau-Komponenten an, wobei jedes eine Zahl im Bereich von 0 bis 255, einschließlich oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird.
+ms.openlocfilehash: 34f9c2f2043afe6144feba561e545dc7be35a5a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326740"
 ---
-# <a name="rgb-function-visioshapesheet"></a>RGB Function (VisioShapeSheet)
+# <a name="rgb-function-visioshapesheet"></a>RGB-Funktion (VisioShapeSheet)
 
-Gibt einen Wert, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe nach seiner Rot-, Grün- und blauen-Komponenten, wobei es sich um eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck, der als eine derartige Zahl ausgewertet wird. 
+Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Sie gibt eine Farbe anhand ihrer rot-, grün-und Blau-Komponenten an, wobei jedes eine Zahl im Bereich von 0 bis 255, einschließlich oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird. 
   
 ## <a name="syntax"></a>Syntax
 
-RGB (** *Rot* **, ** *grüne* **, ** *Blau* **) 
+RGB (* * *rot* * *, * * *grün* * *, * * *blau* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Rot_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die Rotkomponente.  <br/> |
-| _Grün_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die Grünkomponente.  <br/> |
-| _Blau_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Blaukomponente.  <br/> |
+| _rot_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Rotkomponente.  <br/> |
+| _grün_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Grünkomponente.  <br/> |
+| _blau_ <br/> |Erforderlich  <br/> |**Nmber** <br/> |Die Blaukomponente.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zahl
   
@@ -55,13 +55,13 @@ Die folgende Tabelle listet einige Standardfarben mit ihren Rot-, Grün- und Bla
    
 ## <a name="example-1"></a>Beispiel 1
 
-RGB(0,0,255)
+RGB (0, 0255)
   
 Gibt den Index für die Farbe Blau zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-RGB (Rot (Sheet.1! FillForegnd), 120, 0)
+RGB (rot (Blatt. 1! Zelle FillForegnd), 120, 0)
   
 Gibt den Index für eine Farbe zurück, deren Rotkomponente der Vordergrundfüllfarbe von Sheet.1 entspricht.
   

@@ -6,30 +6,30 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 27732f6d-e030-4080-9684-69293a57598b
-description: Gibt an, ob für ein Postfach für allgemeine Internet Secure Socket Layer (SSL) verwenden.
-ms.openlocfilehash: aecebe77ffe0db14a183e8b86269db7c7ff5d891
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt an, ob Secure Socket Layer (SSL) für ein allgemeines Internet Postfach verwendet werden soll.
+ms.openlocfilehash: 12b6d803925b0be546273521b171d59a0a6b29d7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327545"
 ---
 # <a name="propinetssl"></a>PROP_INET_SSL
 
-Gibt an, ob für ein Postfach für allgemeine Internet Secure Socket Layer (SSL) verwenden.
+Gibt an, ob Secure Socket Layer (SSL) für ein allgemeines Internet Postfach verwendet werden soll.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0x0105  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_DWORD  <br/> |
-|Eigenschafts-Tag:  <br/> |0x01050003  <br/> |
-|Access:  <br/> |Schreibgeschützt.  <br/> |
+|Kennung:  <br/> |0x0105  <br/> |
+|Eigenschafts:  <br/> |PT_DWORD  <br/> |
+|Property-Tag:  <br/> |0x01050003  <br/> |
+|Access  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Eine NULL bedeutet der Wert nicht SSL verwenden, andernfalls können Sie SSL verwenden.
+Ein Nullwert besagt, dass SSL nicht verwendet wird, andernfalls wird SSL verwendet.
   
 ## <a name="see-also"></a>Siehe auch
 

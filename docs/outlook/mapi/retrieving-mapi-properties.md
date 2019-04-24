@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: bd3f9f59-9020-46e6-9560-86a7a0eeca20
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 1404239a54f9b8991099a66831e3364d9a683d1d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9666c551543cefd12ee8c902db1a2372aab20632
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328644"
 ---
 # <a name="retrieving-mapi-properties"></a>Abrufen von MAPI-Eigenschaften
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn ein Client oder Dienstanbieter aus einem Objekt eine Eigenschaft abruft, stellt das Objekt zur Verfügung, der Wert der Eigenschaft, Type und Bezeichner. 
+Wenn ein Client oder Dienstanbieter eine Eigenschaft von einem Objekt abruft, stellt das Objekt den Wert, Typ und Bezeichner der Eigenschaft zur Verfügung. 
   
--Clients und -Dienstanbieter können Eigenschaften eines Objekts abrufen, indem Sie eine der folgenden:
+Clients und Dienstanbieter können die Eigenschaften eines Objekts abrufen, indem Sie eine der folgenden aufrufen:
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
@@ -31,42 +31,42 @@ Wenn ein Client oder Dienstanbieter aus einem Objekt eine Eigenschaft abruft, st
   
 [HrGetOneProp](hrgetoneprop.md)
   
-Die **GetProps** -Methode wird verwendet, um eine oder mehrere Eigenschaften abzurufen, die nicht über eine spezielle oder alternative Schnittstelle für den Zugriff benötigen. Dies bedeutet, dass die Eigenschaften verfügbar mit **GetProps** klein wie ganzen Zahlen und boolesche Werte. 
+Die **** GetProps-Methode wird verwendet, um eine oder mehrere Eigenschaften abzurufen, die keine spezielle oder alternative Schnittstelle für den Zugriff benötigen. Dies impliziert, dass die mit getProps verfügbaren Eigenschaften klein sind, wie Ganzzahlen und boolesche Werte. **** 
   
- **Abrufen mehrerer Eigenschaften**
+ **So rufen Sie mehrere Eigenschaften ab**
   
-1. Reservieren Sie eine [SPropTagArray](sproptagarray.md) -Struktur groß genug für die Anzahl der Eigenschaften abgerufen werden sollen. 
+1. Reservieren Sie eine [SPropTagArray](sproptagarray.md) -Struktur, die ausreicht, um die Anzahl der abzurufenden Eigenschaften zu speichern. 
     
-2. Legen Sie das **cValues** Mitglied der **SPropTagArray** -Struktur auf die Anzahl der Eigenschaften abgerufen und jedes Mitglied **AulPropTag** auf das Bezeichner und Typ, wenn möglich, von der Zieleigenschaften festgelegt werden. Wenn der Typ bekannt ist, legen Sie es auf PT_UNSPECIFIED. Wenn der Typ und der Bezeichner nicht bekannt sind, suchen Sie diese Informationen durch Aufrufen von [IMAPIProp::GetPropList](imapiprop-getproplist.md). **GetPropList** gibt ein Array mit allen unterstützten Eigenschaften des Objekts Tag-Eigenschaft zurück. Wenn nur ein Name der Eigenschaft verfügbar ist, rufen Sie [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) Zugriff auf den zugeordneten Bezeichner. 
+2. Legen Sie das **cValues** -Element der **SPropTagArray** -Struktur auf die Anzahl der abzurufenden Eigenschaften fest, und legen Sie jedes **aulPropTag** -Element auf den Bezeichner und Typ, sofern möglich, einer der Zieleigenschaften fest. Wenn der Typ unbekannt ist, legen Sie ihn auf PT_UNSPECIFIED. Wenn sowohl der Typ als auch der Bezeichner unbekannt sind, suchen Sie nach diesen Informationen, indem Sie [IMAPIProp::](imapiprop-getproplist.md)getproplist aufrufen. **** Getproplist gibt ein Property-Tag-Array mit allen unterstützten Eigenschaften des Objekts zurück. Wenn nur ein Eigenschaften Name verfügbar ist, rufen Sie [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) auf, um auf den zugeordneten Bezeichner zuzugreifen. 
     
-3. Rufen Sie [IMAPIProp::GetProps](imapiprop-getprops.md) , um die Eigenschaft oder Eigenschaften zu öffnen. 
+3. Rufen Sie [IMAPIProp::](imapiprop-getprops.md) GetProps auf, um die Eigenschaften zu öffnen. 
     
-Die **OpenProperty** -Methode wird verwendet, um größere Eigenschaften zu öffnen, die eine alternative Schnittstelle wie **IStream** oder [IMAPITable](imapitableiunknown.md) Access erfordern. **OpenProperty** wird in der Regel verwendet, um große Zeichenkette, Binär und Objekteigenschaften geöffnet und kann nur eine Eigenschaft zu einem Zeitpunkt geöffnet. Anrufer übergeben Sie den Bezeichner der zusätzliche Schnittstelle, die als eine der Eingabeparameter erforderlich ist. 
+Die **OpenProperty** -Methode wird verwendet, um größere Eigenschaften zu öffnen, für die eine Alternative Schnittstelle wie **IStream** oder [IMAPITable](imapitableiunknown.md) für Access erforderlich ist. **OpenProperty** wird normalerweise verwendet, um Zeichenfolgen-, Binär-und Objekteigenschaften mit großem Zeichen zu öffnen und nur jeweils eine Eigenschaft zu öffnen. Aufrufer übergeben den Bezeichner der zusätzlichen Schnittstelle, die als einer der Eingabeparameter erforderlich ist. 
   
-Einige häufigen Verwendungsmöglichkeiten des **OpenProperty** umfassen das Öffnen von **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)), die Eigenschaft, die im Textkörper der textbasierte Nachricht **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)), die Eigenschaft enthält, die enthält ein OLE-Objekt oder eine Nachricht Anlage und **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)), die Eigenschaft, die eine Tabelle Ordner oder Adressbuch Container, Inhalt enthält. 
+Zu den gebräuchlichen Verwendungsmöglichkeiten **** von OpenProperty gehört das Öffnen von **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md)), die Eigenschaft, die den Textkörper einer Nachrichten enthält, **PR_ATTACH_DATA_OBJ** ([pidtagattachdataobject (](pidtagattachdataobject-canonical-property.md)), die Eigenschaft mit einem OLE-Objekt oder Nachrichtenanlage und **PR_CONTAINER_CONTENTS** ([pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md)), die Eigenschaft, die eine Ordner-oder Adressbuch Container-Inhaltstabelle enthält. 
   
-Abhängig von der Eigenschaft ist eine andere Schnittstelle auf **OpenProperty**angefordert haben. **IStream**, können Sie Eigenschaftendaten, besteht Lese- / Schreibzugriff als Stream von Bytes, wird in der Regel **PR_BODY**zugreifen. [IMessage](imessageimapiprop.md) oder **IStream** kann verwendet werden, auf **PR_ATTACH_DATA_OBJ**zugreifen. Eingebettete e-Mail-Anlagen, die standard-Nachrichten sind verwenden **IMessage** **IStream**TNEF-Format für Nachrichten verwendet werden. Da **PR_CONTAINER_CONTENTS** ein Table-Objekt ist, wird es mit [IMAPITable](imapitableiunknown.md)zugegriffen.
+Abhängig von der Eigenschaft wird eine andere Schnittstelle von OpenProperty **** angefordert. **IStream**, eine Schnittstelle, die das Lesen und Schreiben von Eigenschaftsdaten als Datenstrom ermöglicht, wird in der Regel für den Zugriff auf **PR_BODY**verwendet. Für den Zugriff auf **PR_ATTACH_DATA_OBJ**kann entweder [IMessage](imessageimapiprop.md) oder **IStream** verwendet werden. Eingebettete Nachrichtenanlagen, bei denen es sich um Standardnachrichten handelt, verwenden **IMessage** , wohingegen Nachrichten im TNEF-Format **IStream**verwenden. Da **PR_CONTAINER_CONTENTS** ein Table-Objekt ist, wird mit [IMAPITable](imapitableiunknown.md)zugegriffen.
   
- **Zum Abrufen einer Anlage PR_ATTACH_DATA_BIN-Eigenschaft**
+ **So rufen Sie die PR_ATTACH_DATA_BIN-Eigenschaft einer Anlage ab**
   
-1. Aufruf der Funktion [OpenStreamOnFile nicht ausgeführt werden](openstreamonfile.md) , um einen Stream für die Datei zu öffnen. 
+1. Rufen Sie die [OpenStreamOnFile](openstreamonfile.md) -Funktion auf, um einen Stream für die Datei zu öffnen. 
     
-2. Rufen Sie die Nachricht [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode zum Abrufen der Eigenschaft **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) mit der **IStream** -Schnittstelle. Legen Sie die MAPI_MODIFY und die MAPI_CREATE ist Flags. 
+2. Rufen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode der Nachricht auf, um die **PR_ATTACH_DATA_BIN** ([pidtagattachdatabinary (](pidtagattachdatabinary-canonical-property.md))-Eigenschaft mit der **IStream** -Schnittstelle abzurufen. Legen Sie sowohl die MAPI_MODIFY-als auch die MAPI_CREATE-Flags fest. 
     
-3. Ordnen Sie eine **STATSTG** -Struktur zu, und geben Sie ihn in einem Aufruf der Dateidatenstrom **:: Stat** -Methode zum Bestimmen der Größe. Eine weitere Möglichkeit zum Bestimmen der Größe des Datenstroms wird mit dem Flag STREAM_SEEK_END **IStream:: Seek** aufzurufen. 
+3. Reservieren Sie eine **STATSTG** -Struktur, und führen Sie Sie in einem Aufruf an die **IStream:: stat** -Methode des Dateistreams, um die Größe zu bestimmen. Eine andere Möglichkeit zum Bestimmen der Datenstrom Größe ist das Aufrufen von **IStream:: Seek** mit dem Flag STREAM_SEEK_END. 
     
-4. Rufen Sie den Stream **:: CopyTo** -Methode, um die Daten aus der Datei-Stream in die Anlagendatenstrom kopieren. 
+4. Rufen Sie die **IStream:: CopyTo** -Methode des Streams auf, um die Daten aus dem Stream der Datei in den Anlagendatenstrom zu kopieren. 
     
-5. Wenn der Kopiervorgang abgeschlossen ist, geben Sie beide Datenströme durch Aufrufen von ihrer **IUnknown** -Methoden. 
+5. Wenn der Kopiervorgang abgeschlossen ist, veröffentlichen Sie beide Streams, indem Sie Ihre **IUnknown:: Release** -Methoden aufrufen. 
     
-Wenn **IStream** für den Zugriff auf Eigenschaften verwendet wird, senden Sie einige Dienstanbieter automatisch die Größe der-Eigenschaft mit dem Stream-Objekt zurück. **OpenProperty** mit der MAPI_DEFERRED_ERRORS aufrufen können Kennzeichen für das Öffnen der-Eigenschaft und die Rückgabe der Größe des Datenstroms verzögern. Wenn **:: Stat** aufgerufen wird, um diese Größe abrufen, **OpenProperty** mit der MAPI_DEFERRED_ERRORS flag festgelegt, wird die Leistung beeinträchtigt werden, da diese Folge der Aufrufe ein sehr Remoteprozeduraufruf erzwingt. Clients können zwischen der Anrufe **OpenProperty** und **Stat**jede MAPI-Methode aufrufen, um die Leistungseinbußen zu vermeiden.
+Wenn **IStream** für den Eigenschaftenzugriff verwendet wird, senden einige Dienstanbieter die Größe der Eigenschaft automatisch zurück mit dem Stream. Das **** Aufrufen von OpenProperty mit dem MAPI_DEFERRED_ERRORS-Flag kann das Öffnen der Eigenschaft und die Rückgabe der Datenstrom Größe verzögern. Wenn **IStream:: stat** aufgerufen wird, um diese Größe nach **OpenProperty** mit dem MAPI_DEFERRED_ERRORS-Flag abzurufen, wird die Leistung beeinträchtigt, da diese Sequenz von Aufrufen einen zusätzlichen Remoteprozeduraufruf erzwingt. Um die Leistungseinbußen zu vermeiden, können Clients eine beliebige MAPI-Methode zwischen den **** Aufrufen von OpenProperty und **stat**aufrufen.
   
-Die [HrGetOneProp](hrgetoneprop.md) -Funktion wie **OpenProperty**, wird eine Eigenschaft zu einem Zeitpunkt geöffnet. **HrGetOneProp** sollte nur verwendet werden, wenn das Zielobjekt auf dem lokalen Computer vorhanden ist. Wenn das Zielobjekt nicht lokal verfügbar ist, können **HrGetOneProp** wiederholt mehrere Remoteprozeduraufrufe und Leistungseinbußen führen. 
+Die [HrGetOneProp](hrgetoneprop.md) -Funktion, **** wie OpenProperty, öffnet jeweils eine Eigenschaft. **HrGetOneProp** sollte nur verwendet werden, wenn das Zielobjekt auf dem lokalen Computer vorhanden ist. Wenn das Zielobjekt nicht lokal verfügbar ist, kann die Verwendung von **HrGetOneProp** mehrmals zu mehreren Remoteprozeduraufrufen und zu einer Leistungsbeeinträchtigung führen. 
   
-Anrufer, die verschiedene Eigenschaften benötigen können **HrGetOneProp** oder **OpenProperty** in einer Schleife aufrufen oder durch Aufrufen von **GetProps**stellen. **GetProps** einmal aufrufen ist effizienter. 
+Aufrufer, die mehrere Eigenschaften benötigen, können entweder **HrGetOneProp** oder **OpenProperty** in einer Schleife aufrufen oder einen Aufruf an **** GetProps ausführen. Das **** einmalige Aufrufen von GetProps ist effizienter. 
   
 > [!NOTE]
-> Schützen von Eigenschaften sind nicht automatisch mit anderen Eigenschaften im Gespräch **GetProps**, **HrGetOneProp**oder **GetPropList** verfügbar. Schützen von Eigenschaften müssen explizit mit ihren Eigenschaftenbezeichnern angefordert werden. 
+> Sichere Eigenschaften sind nicht automatisch mit anderen Eigenschaften in einem getProps-, **HrGetOneProp**-oder getproplist-Aufruf verfügbar. **** **** Sichere Eigenschaften müssen explizit mithilfe ihrer Eigenschaftsbezeichner angefordert werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

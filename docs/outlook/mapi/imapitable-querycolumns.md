@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d6341acc-c6ca-4605-93af-77230040339d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 86dfaa8fbc9ff24d38472f1339a22534086d890b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d142e19fc4721cec4dde0df7fc030a001121da63
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328882"
 ---
 # <a name="imapitablequerycolumns"></a>IMAPITable::QueryColumns
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine Liste mit Spalten für die Tabelle zurück.
+Gibt eine Liste der Spalten für die Tabelle zurück.
   
 ```cpp
 HRESULT QueryColumns(
@@ -38,51 +38,51 @@ LPSPropTagArray FAR * lpPropTagArray
 
  _ulFlags_
   
-> [in] Bitmaske aus Flags, die angibt, welche Spalte festlegen sollten zurückgegeben werden. Das folgende Flag kann festgelegt werden:
+> in Bitmaske von Flags, die angibt, welche Spaltengruppe zurückgegeben werden soll. Das folgende Flag kann festgelegt werden:
     
 TBL_ALL_COLUMNS 
   
-> Die Tabelle sollte alle Verfügbare Spalten zurückgegeben.
+> Die Tabelle sollte alle verfügbaren Spalten zurückgeben.
     
  _lpPropTagArray_
   
-> [out] Legen Sie den Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die die Eigenschaftentags für die Spalte enthält. 
+> Out Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die die Eigenschaftentags für den Spaltensatz enthält. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Spalte wurde erfolgreich zurückgegeben.
+> Der Spaltensatz wurde erfolgreich zurückgegeben.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt, die verhindert, die Spalte dass Abrufvorgang starten festgelegt. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Abrufvorgang für den Spaltensatz gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPITable::QueryColumns** -Methode kann EntityInstances abgerufen werden: 
+Die **IMAPITable:: QueryColumns** -Methode kann aufgerufen werden, um Folgendes abzurufen: 
   
-- Die Standardspalte für eine Tabelle festlegen.
+- Die Standardspaltengruppe für eine Tabelle.
     
-- Der aktuellen Spalte für eine Tabelle festlegen, wie durch einen Aufruf an die [IMAPITable::SetColumns](imapitable-setcolumns.md) -Methode festgelegt. 
+- Die aktuelle Spaltengruppe für eine Tabelle, die durch einen Aufruf der [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode festgelegt wird. 
     
-- Die vollständige Spalte für eine Tabelle, die Spalten, die verfügbar sind, aber nicht unbedingt Teil der aktuellen Gruppe festgelegt.
+- Der vollständige Spaltensatz für eine Tabelle, die verfügbaren Spalten, aber nicht notwendigerweise Teil des aktuellen Satzes.
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie nicht das TBL_ALL_COLUMNS-Flag festlegen, gibt **IMAPITable::QueryColumns** eine Tabelle Standard oder aktuellen Spalte festgelegt, je nachdem, ob die Tabelle durch einen Aufruf von **IMAPITable::SetColumns**betroffen ist. **SetColumns** ändert die Reihenfolge und Auswahl von Spalten in einer Tabelle Spalte festlegen. 
+Wenn Sie das TBL_ALL_COLUMNS-Flag nicht festlegen, gibt **IMAPITable:: QueryColumns** entweder die Standard-oder aktuelle Spaltengruppe einer Tabelle zurück, je nachdem, ob die Tabelle von einem Aufruf von **IMAPITable::** SetColumns betroffen ist. **** SetColumns ändert die Reihenfolge und Auswahl von Spalten im Spaltensatz einer Tabelle. 
   
-Wenn Sie das TBL_ALL_COLUMNS-Flag festlegen, gibt **QueryColumns** alle Spalten, die in der Tabelle Spalte festlegen, sondern können. 
+Wenn Sie das TBL_ALL_COLUMNS-Flag festlegen, gibt **QueryColumns** alle Spalten zurück, die im Spaltensatz der Tabelle enthalten sein können. 
   
-Freigeben des Speichers für die Array-Tag-Eigenschaft durch den Parameter _LpPropTagArray_ auf das durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion. 
+Freigeben des Speichers für das Property-Tag-Array, auf das durch den _lpPropTagArray_ -Parameter verwiesen wird, durch Aufrufen der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::DoSetColumns  <br/> |MFCMAPI (engl.) verwendet die **IMAPITable::QueryColumns** -Methode zum Abrufen der aktuellen Spalte für eine Tabelle festlegen, sodass der Benutzer bearbeitet werden kann.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl::D oSetColumns  <br/> |MFCMAPI verwendet die **IMAPITable:: QueryColumns** -Methode, um die aktuelle Spaltengruppe für eine Tabelle abzurufen, sodass der Benutzer Sie bearbeiten kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

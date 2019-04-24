@@ -9,28 +9,28 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 8dc6515b-66ab-f1ac-18fd-820209f90991
 description: Enthält eine von der Anwendung generierte Triggerformel, die festlegt, ob der Endpunkt eines 1D-Shapes zur Aufrechterhaltung seiner Verbindung zu einem anderen Shape verschoben werden soll.
-ms.openlocfilehash: 3a2fadd3d00bc23e689bbf22bb3b5db3efcd71f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9093cca782d9262b2511198ed73f512a75bb8994
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329063"
 ---
-# <a name="endtrigger-cell-glue-info-section"></a>EndTrigger Cell (Glue Info Section)
+# <a name="endtrigger-cell-glue-info-section"></a>Zelle "EndTrigger" (Abschnitt "Glue Info")
 
 Enthält eine von der Anwendung generierte Triggerformel, die festlegt, ob der Endpunkt eines 1D-Shapes zur Aufrechterhaltung seiner Verbindung zu einem anderen Shape verschoben werden soll.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie ein 1D-Shape mit dynamischem Kleber an ein anderes Shape kleben, generiert Visio eine Formel, die sich auf die Zelle EventXFMod des anderen Shapes bezieht. Wird das Shape geändert, berechnet Visio erneut alle auf die Zelle EventXFMod bezogenen Formeln, einschließlich der Formel in der Zelle EndTrigger. Andere Formeln für das 1D-Shape beziehen sich auf die Zelle EndTrigger und verschieben den Endpunkt des 1D-Shapes oder verändern ggf. das Shape.
   
-Wenn Sie einen Verweis auf die Zelle EndTrigger aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle EndTrigger aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | EndTrigger  <br/> |
+| Zellenname:  <br/> | Zelle EndTrigger  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EndTrigger aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle EndTrigger aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

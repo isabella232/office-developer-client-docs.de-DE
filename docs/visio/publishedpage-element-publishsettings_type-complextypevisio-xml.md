@@ -1,31 +1,31 @@
 ---
-title: PublishedPage-Element (PublishSettings_Type ComplexType) ("Visio XML")
+title: PublishedPage-Element (PublishSettings_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c1eca66b-5840-790a-459f-e06680d11c05
-description: Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 sichtbar ist.
+description: Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 angezeigt werden kann.
 ms.openlocfilehash: 313cabbdd59930df67c807ee3c89df1a6e8c17a2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326796"
 ---
-# <a name="publishedpage-element-publishsettingstype-complextype-visio-xml"></a>PublishedPage-Element (PublishSettings_Type ComplexType) ("Visio XML")
+# <a name="publishedpage-element-publishsettingstype-complextype-visio-xml"></a>PublishedPage-Element (PublishSettings_Type complexType) (' Visio XML ')
 
-Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 sichtbar ist.
+Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 angezeigt werden kann.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[PublishedPage_Type](publishedpage_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[PublishSettings](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |Gibt die Einstellungen, die verwendet werden, wenn das Diagramm mit Visio Services geöffnet wird.  <br/> |
+|[PublishSettings](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |Gibt die Einstellungen an, die beim Öffnen des Diagramms mithilfe von Visio Services verwendet werden.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Der Bezeichner eines Zeichenblatts.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
+|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Der Bezeichner eines Zeichenblatts.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
    
 

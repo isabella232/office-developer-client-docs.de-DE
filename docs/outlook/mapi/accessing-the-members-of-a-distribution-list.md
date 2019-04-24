@@ -8,27 +8,27 @@ api_type:
 - COM
 ms.assetid: f724cac8-2d5d-42bc-a15e-99f77a99ce21
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a32552343fa90dfbbb3571f50846976a5f5f5edd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2944a53d27bc916ccafcfa649d79e3c00afaf622
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331241"
 ---
 # <a name="accessing-the-members-of-a-distribution-list"></a>Zugreifen auf die Mitglieder einer Verteilerliste
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- **Zum Abrufen der Mitglieder einer Verteilerliste**
+ **So rufen Sie die Mitglieder einer Verteilerliste ab**
   
-1. Erstellen Sie ein Größe Eigenschaft Tag-Array mit den Eigenschaften der Elemente aus, wie **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_DISPLAY_TYPE** ([ abgerufen werden sollen. PidTagDisplayType](pidtagdisplaytype-canonical-property.md)).
+1. Erstellen Sie ein Array mit den Eigenschaften der Elemente, die Sie abrufen möchten, wie **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_DISPLAY_TYPE** ([ PidTagDisplayType](pidtagdisplaytype-canonical-property.md)).
     
-2. Rufen Sie [IAddrBook::OpenEntry](iaddrbook-openentry.md) , um die Verteilerliste zu öffnen. 
+2. Rufen Sie [IAddrBook:: OpenEntry](iaddrbook-openentry.md) auf, um die Verteilerliste zu öffnen. 
     
-3. Rufen Sie die Verteilerliste **IABContainer::GetContentsTable** -Methode zum Zugriff auf die Inhaltstabelle. 
+3. Rufen Sie die **IABContainer::** getcontentable-Methode der Verteilerliste auf, um auf Ihre Inhaltstabelle zuzugreifen. 
     
-4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md) zum Abrufen aller Zeilen der Tabelle, die Mitglieder der Verteilerliste darstellt. 
+4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md) auf, um alle Tabellenzeilen abzurufen, die die Mitglieder der Verteilerliste darstellen. 
     
 

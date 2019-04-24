@@ -1,5 +1,5 @@
 ---
-title: PidTagPhysicalDeliveryMode (kanonische Eigenschaft)
+title: Kanonische Pidtagphysicaldeliverymode (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98597495-7761-4eda-ae75-1ccefa6abb81
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a19c67d7b83c4890c998cd2e53a36bfc34d11386
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a99760e11c34404f48ec193750b1a7f4ac541674
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327830"
 ---
-# <a name="pidtagphysicaldeliverymode-canonical-property"></a>PidTagPhysicalDeliveryMode (kanonische Eigenschaft)
+# <a name="pidtagphysicaldeliverymode-canonical-property"></a>Kanonische Pidtagphysicaldeliverymode (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmaske aus Flags, die definieren, den physische Bereitstellung-Modus (beispielsweise Spezial) für eine Nachricht für einen bestimmten Empfänger bestimmt.
+Enthält eine Bitmaske von Flags, die den physischen Übermittlungsmodus (beispielsweise eine spezielle Übermittlung) für eine Nachricht definieren, die für einen bestimmten Empfänger bestimmt ist.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält eine Bitmaske aus Flags, die definieren, den physische Bereitstellung-M
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

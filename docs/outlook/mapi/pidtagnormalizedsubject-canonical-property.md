@@ -1,5 +1,5 @@
 ---
-title: PidTagNormalizedSubject (kanonische Eigenschaft)
+title: Kanonische PidTagNormalizedSubject-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 2000e6e8-d908-4814-8093-28f8011250c8
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 54a0f438dacc8a1c7838eb538ec05c5c263f1b0a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329274"
 ---
-# <a name="pidtagnormalizedsubject-canonical-property"></a>PidTagNormalizedSubject (kanonische Eigenschaft)
+# <a name="pidtagnormalizedsubject-canonical-property"></a>Kanonische PidTagNormalizedSubject-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Betreff der Nachricht mit dem Präfix entfernt.
+Enthält den Betreff der Nachricht mit einem beliebigen Präfix entfernt.
   
 |||
 |:-----|:-----|
@@ -34,49 +34,49 @@ Enthält den Betreff der Nachricht mit dem Präfix entfernt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften werden berechnet, indem Nachrichtenspeicher oder transport-Anbieter aus der **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) und **PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md))-Eigenschaften auf folgende Weise.
+Diese Eigenschaften werden von den Nachrichtenspeicher-oder Transportanbietern aus den Eigenschaften **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md)) und **PR_SUBJECT_PREFIX** ([pidtagsubjectprefix (](pidtagsubjectprefix-canonical-property.md)) auf folgende Weise berechnet.
   
-- Wenn die **PR_SUBJECT_PREFIX** vorhanden ist und eine anfängliche Teilzeichenfolge **PR_SUBJECT**ist, werden **PR_NORMALIZED_SUBJECT** und die zugehörigen Eigenschaften auf den Inhalt der **PR_SUBJECT** mit dem Präfix entfernt festgelegt. 
+- Wenn **PR_SUBJECT_PREFIX** vorhanden ist und eine anfängliche Teilzeichenfolge von **PR_Subject**ist, werden **PR_NORMALIZED_SUBJECT** und zugehörige Eigenschaften auf den Inhalt von **PR_Subject** festgelegt, wobei das Präfix entfernt wird. 
     
-- Wenn es sich nicht um eine anfängliche Teilzeichenfolge **PR_SUBJECT**, aber **PR_SUBJECT_PREFIX** vorhanden ist, wird **PR_SUBJECT_PREFIX** gelöscht und neu berechnet aus **PR_SUBJECT** mithilfe der folgenden Regel: Wenn die Zeichenfolge in **PR_SUBJECT** enthalten beginnt mit ein bis drei numerische Zeichen, gefolgt von einem Doppelpunkt und ein Leerzeichen ein, und klicken Sie dann die Zeichenfolge zusammen mit dem Doppelpunkt und die leere das Präfix wird. Zahlen, Leerzeichen und Interpunktionszeichen sind keine gültigen Präfixzeichen. 
+- Wenn **PR_SUBJECT_PREFIX** vorhanden ist, aber keine anfängliche Teilzeichenfolge von **PR_Subject**ist, wird **PR_SUBJECT_PREFIX** gelöscht und von **PR_Subject** mithilfe der folgenden Regel neu berechnet: Wenn die in **PR_Subject** enthaltene Zeichenfolge beginnt mit einem bis drei nicht-numerischen Zeichen, gefolgt von einem Doppelpunkt und einem Raum, dann wird die Zeichenfolge zusammen mit dem Doppelpunkt und dem leeren das Präfix. Zahlen, Leerzeichen und Interpunktionen sind keine gültigen Präfixzeichen. 
     
-- Wenn **PR_SUBJECT_PREFIX** nicht vorhanden ist, wird es von **PR_SUBJECT** mithilfe der Regel, die im vorherigen Schritt beschrieben berechnet. Diese Eigenschaft wird auf den Inhalt der **PR_SUBJECT** mit dem Präfix entfernt festgelegt. 
+- Wenn **PR_SUBJECT_PREFIX** nicht vorhanden ist, wird es aus **PR_Subject** mithilfe der im vorherigen Schritt beschriebenen Regel berechnet. Diese Eigenschaft wird dann auf den Inhalt von **PR_Subject** festgelegt, wobei das Präfix entfernt wurde. 
     
- **Hinweis** Wenn **PR_SUBJECT_PREFIX** eine leere Zeichenfolge ist, sind **PR_SUBJECT** und diese Eigenschaft identisch. 
+ **Hinweis** Wenn **PR_SUBJECT_PREFIX** eine leere Zeichenfolge ist, sind **PR_Subject** und diese Eigenschaft identisch. 
   
-Schließlich sollte diese Eigenschaft den Teil des **PR_SUBJECT** hinter dem Präfix sein. Wenn kein Präfix vorhanden ist, wird diese Eigenschaft **PR_SUBJECT**identisch.
+Schließlich sollte diese Eigenschaft der Teil von **PR_Subject** sein, der dem Präfix folgt. Wenn kein Präfix vorliegt, wird diese Eigenschaft mit **PR_Subject**identisch.
   
- **PR_SUBJECT_PREFIX** und diese Eigenschaft sollte als Teil der Implementierung des [IMAPIProp::SaveChanges](imapiprop-savechanges.md) berechnet werden. Eine Clientanwendung sollte nicht die [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode für ihre Werte aufgefordert, bis sie gespeichert wurden durch einen Aufruf von **IMAPIProp::SaveChanges** . 
+ **PR_SUBJECT_PREFIX** und diese Eigenschaft sollten als Teil der [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Implementierung berechnet werden. Eine Clientanwendung sollte die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode für ihre Werte erst auffordern, nachdem Sie von einem **IMAPIProp:: SaveChanges** -Aufruf übergeben wurden. 
   
-Die Subject-Eigenschaften in der Regel kleine Zeichenfolgen von weniger als 256 Zeichen sind, und eine Nachricht Speicheranbieter ist nicht verpflichtet, klicken sie auf die Object Linking and Embedding (OLE) **IStream** -Schnittstelle unterstützt. Der Client sollte immer Zugriff über die Schnittstelle **IMAPIProp** zuerst versuchen, und greifen auf **IStream** nur, wenn MAPI_E_NOT_ENOUGH_MEMORY zurückgegeben wird. 
+Die Subject-Eigenschaften sind in der Regel kleine Zeichenfolgen mit weniger als 256 Zeichen, und ein Nachrichtenspeicher Anbieter ist nicht zur Unterstützung der OLE- **IStream** -Schnittstelle (Object Linking and Embedding) für Sie verpflichtet. Der Client sollte immer versuchen, zuerst über die **IMAPIProp** -Schnittstelle zuzugreifen, und nur dann auf **IStream** zurückgreifen, wenn MAPI_E_NOT_ENOUGH_MEMORY wird. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -88,5 +88,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

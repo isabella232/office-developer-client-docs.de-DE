@@ -1,5 +1,5 @@
 ---
-title: "\"IAttachmentSecurity\" IUnknown"
+title: IAttachmentSecurity IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 69609f73-5884-9e2b-ab78-a2e0ece3a1d1
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f182610f9cf4874cc18c409960e1f8b23f853d4f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a8464c8265ebc1754f7909be5413620e7f76db5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326985"
 ---
 # <a name="iattachmentsecurity--iunknown"></a>IAttachmentSecurity : IUnknown
 
@@ -25,7 +25,7 @@ ms.locfileid: "22574826"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Können Microsoft Outlook 2010 und Microsoft Outlook 2013-Lösungen zu ermitteln, ob die Anlage unsichere und zum Anzeigen und Indizierung blockierte betrachtet wird.
+Ermöglicht Microsoft Outlook 2010-und Microsoft Outlook 2013-Lösungen herauszufinden, ob eine Anlage als unsicher und zum Anzeigen und indizieren gesperrt ist.
   
 |||
 |:-----|:-----|
@@ -35,11 +35,11 @@ Können Microsoft Outlook 2010 und Microsoft Outlook 2013-Lösungen zu ermitteln
 
 |||
 |:-----|:-----|
-|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |Überprüft, ob eine angegebene Anlage zum Anzeigen und Indizieren von Outlook 2010 oder Outlook 2013 ausgeschlossen wird.  <br/> |
+|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |Überprüft, ob eine angegebene Anlage für das Anzeigen und Indizieren von Outlook 2010 oder Outlook 2013 blockiert wird.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Outlook 2010 und Outlook 2013-Lösungen können Abfragen diese Schnittstelle, um festzustellen, ob eine Anlage ausgeschlossen wird. Die Anlagen, die von Outlook 2010 oder Outlook 2013 blockiert werden variieren je nach wie Outlook 2010 oder Outlook 2013 konfiguriert wurde und die Richtlinien, die ein Administrator angewendet hat.
+Outlook 2010-und Outlook 2013-Lösungen können diese Schnittstelle Abfragen, um festzustellen, ob eine Anlage blockiert ist. Die Anlagen, die von Outlook 2010 oder Outlook 2013 blockiert werden, unterscheiden sich je nach Konfiguration von Outlook 2010 oder Outlook 2013 und den Richtlinien, die ein Administrator angewendet hat.
   
 ## <a name="see-also"></a>Siehe auch
 

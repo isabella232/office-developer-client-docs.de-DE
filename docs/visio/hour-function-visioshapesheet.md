@@ -1,5 +1,5 @@
 ---
-title: HOUR Function (VisioShapeSheet)
+title: HOUR-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,43 +8,43 @@ f1_keywords:
 - Vis_DSS.chm82251437
 localization_priority: Normal
 ms.assetid: 2a21d6f9-bad6-92ab-6d36-477bcb9d7f17
-description: Gibt eine ganze Zahl von 0 bis 23 für die Stunde des Tages in Datetime oder Expression zurück.
-ms.openlocfilehash: 9cfe8c88a4a4d73be23b2ac230b0cfabc955c004
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine ganze Zahl von 0 bis 23 zurück, die die Stunde des Tages von DateTime oder Expression darstellt.
+ms.openlocfilehash: 1d0c6ec2bd80605401f44d2a5ef6e3d41bc72556
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329967"
 ---
-# <a name="hour-function-visioshapesheet"></a>HOUR Function (VisioShapeSheet)
+# <a name="hour-function-visioshapesheet"></a>HOUR-Funktion (VisioShapeSheet)
 
-Gibt eine ganze Zahl von 0 bis 23 für die Stunde des Tages in _Datetime_ oder _Expression_zurück.
+Gibt eine ganze Zahl von 0 bis 23 zurück, die die Stunde des Tages von _DateTime_ oder _Expression_darstellt.
   
 ## <a name="syntax"></a>Syntax
 
-Stunde ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **]) 
+HOUR ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> | Eine Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
-| _expression_ <br/> |Erforderlich  <br/> |**Varies** <br/> |Ein Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Nummer** <br/> | Ein lokaler Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Number** <br/> | Ein lokaler Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Die Datumskomponente in *Datetime* und *Expression* wird verworfen. 
+Die Datumskomponente in *DateTime* und *Expression* wird verworfen. 
   
-Keine Rundung erfolgt. Die *Datetime* ist nicht vorhanden oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt die Funktion einen Fehler zurück. 
+Es findet kein Auf- oder Abrunden statt. Wenn *DateTime* fehlt oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt die Funktion einen Fehler zurück. 
   
-Der zurückgegebene  Wert wird in dem Zeitformat angezeigt, das aktuell in den Ländereinstellungen des Systems festgelegt ist. 
+Der zurückgegebene Wert wird in dem Zeitformat angezeigt, das aktuell in den Ländereinstellungen des Systems festgelegt ist. 
   
-Die HOUR-Funktion nimmt auch einen einzelnen Zahlenwert für *Expression* , wobei der Dezimalteil des Ergebnisses den Bruchteil eines Tages seit Mitternacht darstellt. 
+Die HOUR-Funktion akzeptiert auch einen einzelnen Zahlenwert für *Expression* , wobei der Dezimalteil des Ergebnisses den Bruchteil eines Tags seit Mitternacht darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-HOUR("15:45")
+STUNDE ("15:45")
   
 Gibt 15 zurück.
   
@@ -56,13 +56,13 @@ Gibt 15 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-HOUR(0.5)
+STUNDE (0,5)
   
 Gibt 12 zurück.
   
 ## <a name="example-4"></a>Beispiel 4
 
-HOUR("30/5/1997")
+HOUR ("5/30/1997")
   
 Gibt 0 zurück.
   

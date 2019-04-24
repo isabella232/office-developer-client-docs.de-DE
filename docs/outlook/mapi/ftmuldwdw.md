@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c1a342c-d7ae-4e26-b327-a63cdd3c3ee6
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8002698b1644fb63292b4242d4fb3d784a99a03f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 54561450e7d91d8a30695dacf508758623547e39
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327979"
 ---
 # <a name="ftmuldwdw"></a>FtMulDwDw
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Multipliziert einer 32-Bit-Ganzzahl ohne Vorzeichen mit einer anderen.
+Multipliziert eine unsignierte 32-Bit-Ganzzahl mit einer anderen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtMulDwDw(
@@ -44,14 +44,14 @@ FILETIME FtMulDwDw(
 
  _Multiplikand_
   
-> [in] Double Wort enthält, die 32-Bit-Ganzzahl ohne Vorzeichen durch den Wert im Parameter _Multiplikator_ multipliziert werden soll. 
+> in Ein Doppelwort, das die nicht signierte 32-Bit-Ganzzahl enthält, die mit dem Wert im _Multiplikatorparameter_ multipliziert werden soll. 
     
  _Multiplikator_
   
-> [in] Ein Wort, Double-Wert, der den 32-Bit-Ganzzahl ohne Vorzeichen Multiplikator enthält.
+> in Ein Doppelwort, das den unsignierten ganzzahligen Multiplikations Wert 32-Bit enthält.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Die **FtMulDwDw** -Funktion gibt eine [FILETIME](filetime.md) -Struktur, die das Produkt von zwei Ganzzahlen enthält. Die beiden Eingabeparameter bleiben unverändert. 
+Die **FtMulDwDw** -Funktion gibt [](filetime.md) eine FILETIME-Struktur zurück, die das Produkt der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. 
   
 

@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: c18ed9f7-c053-4453-b0b1-06234cdfb025
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9f02da9eb1920f55acf65dfb6a503e42d4c3daf2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 59196f136c422be912ac2460cbbd25d8bc2e3330
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329701"
 ---
 # <a name="using-a-table-to-work-with-properties"></a>Verwenden einer Tabelle zum Arbeiten mit Eigenschaften
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Viele Eigenschaften sind sowohl auf die Objekte, die sie unterstützen und als Spalten in Tabellen zur Verfügung. Wenn möglich, rufen Sie diese Eigenschaften über die Tabelle ab.
+Viele Eigenschaften sind sowohl von den Objekten, die Sie unterstützen, als auch von Spalten in Tabellen verfügbar. Rufen Sie diese Eigenschaften nach Möglichkeit über die Tabelle ab.
   
-Rufen Sie [IMAPITable::SetColumns](imapitable-setcolumns.md) alle Eigenschaften enthalten, die der Client muss und [IMAPITable::QueryRows](imapitable-queryrows.md) alle Zeilen der Tabelle abrufen. 
+Rufen Sie [IMAPITable::](imapitable-setcolumns.md) SetColumns auf, um alle Eigenschaften einzuschließen, die der Client benötigt, und [IMAPITable:: QueryRows](imapitable-queryrows.md) , um alle Zeilen der Tabelle abzurufen. 
   
-Diese beiden Aufrufe in der Regel ausreichend zum Abrufen von genügend Informationen, die ein Benutzer angezeigt werden und sind häufig ausreichend für alle erforderlichen interner Aufrufen **OpenEntry** zum Öffnen des Objekts nicht erforderlich. 
+Diese beiden Aufrufe sind in der Regel ausreichend, um genügend Informationen abzurufen, die für einen Benutzer angezeigt werden sollen, und Sie sind häufig für die erforderliche interne Verarbeitung **** ausreichend, wodurch ein Aufruf von OpenEntry zum Öffnen des Objekts erforderlich ist. 
   
 Es gibt nur zwei Ausnahmen:
   
-- Wenn die Eigenschaft mehr als 255 Byte ist. Die ** IMAPITable ** Schnittstelle möglicherweise nicht zurück, die den gesamte Eigenschaftswert stattdessen auf 255 Byte abgeschnitten. Überlegen Sie jedoch dieser Kompromiss. Wenn Sie diese Daten an den Benutzer anzeigen, möglicherweise 255 Byte genug für eine textbezogene dar, wie ein Kommentar. 
+- Wenn die Eigenschaft über 255 Byte ist. Die * * IMAPITable * *-Schnittstelle gibt möglicherweise nicht den gesamten Eigenschaftswert zurück und schneidet Sie stattdessen mit 255 Byte ab. Denken Sie jedoch an diesen Kompromiss. Wenn Sie diese Daten dem Benutzer anzeigen, können 255 Byte für ein Textfeld wie einen Kommentar ausreichen. 
     
-- Wenn Sie eine bestimmte Eigenschaft aus einer einzelnen Zeile in einer Tabelle benötigen. In diesem Fall ist es nicht erforderlich, eine Tabelle mit den Eigenschaften zu erstellen, die noch nie verwendet werden. In den meisten Fällen benötigen die gleichen Eigenschaften Sie für alle Zeilen.
+- Wenn Sie eine bestimmte Eigenschaft aus einer einzelnen Zeile in einer Tabelle benötigen. In diesem Fall ist es nicht erforderlich, eine Tabelle mit Eigenschaften zu erstellen, die nie verwendet werden. In den meisten Fällen benötigen Sie die gleichen Eigenschaften für alle Zeilen.
     
 

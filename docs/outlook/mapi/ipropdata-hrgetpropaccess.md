@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0101d291-00ca-4f66-b857-75d74b9f91a1
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 64b0c0501a6ef4471f97e82b231ef430681f1306
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5e36cf12b7a5b1643f5a0ec97223030718195a7d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331591"
 ---
 # <a name="ipropdatahrgetpropaccess"></a>IPropData::HrGetPropAccess
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ruft die Zugriffsebene und den Status f�r eine oder mehrere der Eigenschaften des Objekts an.
   
@@ -49,13 +49,13 @@ HRESULT HrGetPropAccess(
 |IPROP_READONLY, die angibt, dass die Eigenschaft nicht ge�ndert werden kann.  <br/> |IPROP_CLEAN, die angibt, dass die Eigenschaft nicht ge�ndert wurde.  <br/> |
 |IPROP_READWRITE, die angibt, dass die Eigenschaft ge�ndert werden kann.  <br/> |IPROP_DIRTY, die angibt, dass die Eigenschaft ge�ndert wurde.  <br/> |
    
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Access-Ebene und den Status Kennzeichen f�r die Eigenschaften wurden erfolgreich zur�ckgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IPropData::HrGetPropAccess** -Methode ruft eine Reihe von Flags, die die Zugriffsebene und den Status f�r eine oder mehrere Eigenschaften angibt. 
   

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 320af2ff-c2a5-43b1-b3a1-76cb5ffd6a4f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5e9135a52c15c18b70116aaf52e1ee63af413673
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c251dacce0d4e1743a74f1ba45e395b6e1c05064
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329008"
 ---
 # <a name="imapitablecreatebookmark"></a>IMAPITable::CreateBookmark
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine Textmarke an der aktuellen Position der Tabelle an.
+Erstellt eine Textmarke an der aktuellen Position der Tabelle.
   
 ```cpp
 HRESULT CreateBookmark(
@@ -37,9 +37,9 @@ BOOKMARK FAR * lpbkPosition
 
  _lpbkPosition_
   
-> [out] Zeiger auf den zurückgegebenen Textmarke für 32-Bit-Wert. Dieses Lesezeichen kann später in einem Aufruf der [IMAPITable::SeekRow](imapitable-seekrow.md) -Methode übergeben werden. 
+> Out Zeiger auf den zurückgegebenen 32-Bit-Lesezeichenwert. Diese Textmarke kann später in einem Aufruf an die [IMAPITable:: SeekRow](imapitable-seekrow.md) -Methode übergeben werden. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -49,23 +49,23 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > Der angeforderte Vorgang konnte nicht abgeschlossen werden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPITable::CreateBookmark** -Methode markiert die Position einer Tabelle, indem Sie einen Wert eine Textmarke namens erstellen. Eine Textmarke kann verwendet werden, um an der Position der Textmarke identifizierten zurückzugeben. Die mit einer Textmarke versehenen Position ist das Row-Objekts in der Tabelle-Objekt zugeordnet. 
+Die **IMAPITable:: CreateBookMark** -Methode kennzeichnet eine Tabellenposition durch Erstellen eines Werts, der als Textmarke bezeichnet wird. Eine Textmarke kann verwendet werden, um zu der durch die Textmarke identifizierten Position zurückzukehren. Die Lesezeichenposition ist dem Objekt in dieser Zeile in der Tabelle zugeordnet. 
   
-Lesezeichen auf Anlagentabellen nicht unterstützt werden, und Anlage Tabelle Implementierungen von **CreateBookmark** MAPI_E_NO_SUPPORT zurückzugeben. 
+Lesezeichen werden für Anlagen Tabellen und für Anlagen Tabellen Implementierungen von **CreateBookMark** Return MAPI_E_NO_SUPPORT nicht unterstützt. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Aufgrund der Arbeitsspeicher Ausgaben Cursorpositionen mit Lesezeichen zu verwalten die Anzahl der Textmarken, die Sie erstellen können. Wenn diese Nummer erreicht ist, geben alle nachfolgenden Aufrufe **CreateBookmark**MAPI_E_UNABLE_TO_COMPLETE zurück.
+Aufgrund der Arbeitsspeicherkosten für die Verwaltung von Cursorpositionen mit Lesezeichen können Sie die Anzahl der zu erstellende Textmarken begrenzen. Wenn Sie diese Nummer erreicht haben, geben Sie MAPI_E_UNABLE_TO_COMPLETE von allen nachfolg **** enden Aufrufen von CreateBookMark zurück.
   
-In einigen Fällen zeigt ein Lesezeichen auf eine Zeile, die nicht mehr in der Tabellenansicht ist ein. Wenn ein Anrufer solche eine Textmarke verwendet wird, bewegen Sie den Cursor in die nächste Zeile sichtbar und noch mehr. 
+Manchmal verweist eine Textmarke auf eine Zeile, die sich nicht mehr in der Tabellenansicht befindet. Wenn ein Anrufer ein solches Lesezeichen verwendet, bewegen Sie den Cursor zur nächsten sichtbaren Zeile, und halten Sie dort an. 
   
-Wenn der Aufrufer versucht, ein Lesezeichen zu verwenden, die auf ein sichtbares Zeile verweist, da es reduziert wurde, geben Sie nach dem Verschieben der Textmarke MAPI_W_POSITION_CHANGED zurück. Sie können die Textmarke in die nächste Zeile sichtbar zu diesem Zeitpunkt oder wenn tritt auf, in der **SetCollapseState** -Methode der reduzieren positionieren. Wenn Sie die Textmarke Zeitpunkt die Zeile reduziert ist verschieben, Sie müssen beibehalten etwas in die Textmarke, der angibt, wann genau die Textmarke verschoben wurde: seit der letzten verwenden, oder wenn es seit seiner Erstellung nie verwendet wurde. 
+Wenn der Aufrufer versucht, ein Lesezeichen zu verwenden, das auf eine nicht sichtbare Zeile zeigt, da es reduziert wurde, geben Sie MAPI_W_POSITION_CHANGED nach dem Bewegen der Textmarke zurück. Sie können die Textmarke entweder zu diesem Zeitpunkt oder in der **SetCollapseState** -Methode in die nächste sichtbare Zeile verschieben. Wenn Sie die Textmarke zu dem Zeitpunkt verschieben, zu dem die Zeile reduziert wird, müssen Sie ein Bit in der Textmarke aufbewahren, die genau angibt, wann das Lesezeichen verschoben wurde: seit der letzten Verwendung oder wenn es nie seit seiner Erstellung verwendet wurde. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **CreateBookmark** weist Speicher für die Textmarke erstellt wird. Geben Sie die Ressourcen für das Lesezeichen durch Aufrufen der [IMAPITable::FreeBookmark](imapitable-freebookmark.md) -Methode. 
+ **CreateBookMark** reserviert Speicher für die erstellte Textmarke. Geben Sie die Ressourcen für das Lesezeichen frei, indem Sie die [IMAPITable:: FreeBookmark](imapitable-freebookmark.md) -Methode aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

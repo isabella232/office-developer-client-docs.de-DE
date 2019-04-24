@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 194d5beb-c705-f567-84de-8305c41081a8
 description: Legt die Höhe des Shapes in Zeichnungseinheiten fest.
-ms.openlocfilehash: c9f6282e9a2be161a4338043925d88cee672d5ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1f08fec0ec09e4ba77296495defc91b0f1f3a4c8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329988"
 ---
-# <a name="height-cell-shape-transform-section"></a>Height Cell (Shape Transform Section)
+# <a name="height-cell-shape-transform-section"></a>Zelle "Height" (Abschnitt "Shape Transform")
 
 Legt die Höhe des Shapes in Zeichnungseinheiten fest.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Height aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Height aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Height  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Height aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Height nach Index aus einem Programm abrufen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

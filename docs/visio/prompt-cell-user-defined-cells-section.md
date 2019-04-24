@@ -8,32 +8,32 @@ f1_keywords:
 - Vis_DSS.chm840
 localization_priority: Normal
 ms.assetid: d0f91e7d-2373-cfef-e105-fb17e77c7f2d
-description: Gibt eine beschreibende Eingabeaufforderung bzw. einen Kommentar für die benutzerdefinierte Zelle an. Die Anwendung schließt den Prompt Text automatisch in Anführungszeichen (), um anzugeben, dass es sich um eine Textzeichenfolge ist. Wenn Sie ein Gleichheitszeichen (=) eingeben und die Anführungszeichen auslassen, können Sie eine Formel in dieser Zelle eingeben, die die Anwendung ausgewertet wird.
-ms.openlocfilehash: a7f8757af3e324a89f49bf5d19185b7a22173ff5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine beschreibende Eingabeaufforderung bzw. einen Kommentar für die benutzerdefinierte Zelle an. Die Anwendung schließt den Ansagetext automatisch in Anführungszeichen () ein, um anzugeben, dass es sich um eine Textzeichenfolge handelt. Wenn Sie ein Gleichheitszeichen (=) eingeben und die Anführungszeichen weglassen, können Sie in diese Zelle eine Formel eingeben, die von der Anwendung ausgewertet wird.
+ms.openlocfilehash: 7684025e03bd3f4f68893179b1df00cc0cb535e2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326887"
 ---
-# <a name="prompt-cell-user-defined-cells-section"></a>Prompt Cell (User-Defined Cells Section)
+# <a name="prompt-cell-user-defined-cells-section"></a>Zelle "Prompt" (Abschnitt "User-Defined Cells")
 
 Gibt eine beschreibende Eingabeaufforderung bzw. einen Kommentar für die benutzerdefinierte Zelle an. Die Anwendung schließt den Aufforderungstext automatisch in Anführungszeichen (" ") ein, um anzuzeigen, dass es sich um eine Textzeichenfolge handelt. Wenn Sie ein Gleichheitszeichen (=) eingeben und die Anführungszeichen auslassen, können Sie eine Formel in diese Zelle eingeben, die von der Anwendung berechnet wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Prompt aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "Ansage" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Benutzer.  *Name* . Prompt Where Benutzer.  *Name* ist der Zeilenname  <br/> |
+| Zellenname:  <br/> | Benutzer.  *Name* . Benutzer aufFordern.  *Name* ist der Name der Zeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Prompt aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "anSagen" aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionUser** <br/> |
-| Zeilenindex:  <br/> |**VisRowUser +** *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowUser +** *i* wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visUserPrompt** <br/> |
    
 

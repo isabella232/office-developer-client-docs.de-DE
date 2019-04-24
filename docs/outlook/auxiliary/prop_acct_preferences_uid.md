@@ -6,32 +6,32 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ec0aac33-624e-48f7-8177-8f7b8db6af7d
-description: Ruft den eindeutigen Bezeichner (UID) für den Benutzerprofildienst-Abschnitt, in dem die Vorgaben Konto gespeichert.
+description: Ruft den eindeutigen Bezeichner (UID) für den Profil Abschnitt ab, in dem die Kontoeinstellungen gespeichert werden.
 ms.openlocfilehash: 97f1a858c8f58e13b72b8d5f052b35359581b718
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327636"
 ---
 # <a name="propacctpreferencesuid"></a>PROP_ACCT_PREFERENCES_UID
 
-Ruft den eindeutigen Bezeichner (UID) für den Benutzerprofildienst-Abschnitt, in dem die Vorgaben Konto gespeichert. 
+Ruft den eindeutigen Bezeichner (UID) für den Profil Abschnitt ab, in dem die Kontoeinstellungen gespeichert werden. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 |||
 |:-----|:-----|
-|Kennung:  <br/> |0 x 0022  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_BINARY  <br/> |
-|Eigenschafts-Tag:  <br/> |0x00220102  <br/> |
-|Access:  <br/> |Schreibgeschützt.  <br/> |
+|Kennung:  <br/> |0x0022  <br/> |
+|Eigenschafts:  <br/> |PT_BINARY  <br/> |
+|Property-Tag:  <br/> |0x00220102  <br/> |
+|Access  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Mit der **PROP_ACCT_PREFERENCES_UID** Aufrufe [IMAPISupport::OpenProfileSection](https://msdn.microsoft.com/library/cd1fa994-9531-46c4-94e5-505e7f90b884%28Office.15%29.aspx) Profilabschnitt abgerufen, der Konto Voreinstellungen enthält. 
+Verwenden Sie **PROP_ACCT_PREFERENCES_UID** in Aufrufen von [IMAPISupport:: OpenProfileSection](https://msdn.microsoft.com/library/cd1fa994-9531-46c4-94e5-505e7f90b884%28Office.15%29.aspx) , um den Profilbereich abzurufen, der die Kontoeinstellungen enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

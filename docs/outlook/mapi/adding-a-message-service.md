@@ -8,35 +8,35 @@ api_type:
 - COM
 ms.assetid: 1e626714-52dc-4141-9741-4d801f32d294
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6a8b0f8fc8c296fe4022ac28623b83d270472ca3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 30cbe49eae7b4a232efb544c7a508a36b326c6b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328185"
 ---
 # <a name="adding-a-message-service"></a>Hinzufügen eines Nachrichtendiensts
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- **Zum Hinzufügen eines neuen Nachricht-Diensts zu einem Profil und Zugreifen auf den neuen Dienst**
+ **So fügen Sie einem Profil einen neuen Nachrichtendienst hinzu und greifen auf den neuen Nachrichtendienst zu**
   
-Rufen Sie [IMsgServiceAdmin2::CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md). **CreateMsgServiceEx** führt die folgenden Aufgaben: 
+Rufen Sie [IMsgServiceAdmin2:: CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md)auf. **CreateMsgServiceEx** führt die folgenden Aufgaben aus: 
   
-1. Kopiert alle relevanten Informationen für den Dienst, der in die Datei MAPISVC ist. INF-Datei, Erstellen eines Profils Abschnitts für jede Anbieterabschnitt.
+1. Kopiert alle relevanten Informationen für den Nachrichtendienst, der sich in der MAPISVC befindet. INF-Datei, Erstellen eines Profil Abschnitts für jeden Anbieterabschnitt.
     
-2. Ruft die Messagingdiensts Eintrag Punktfunktion **MSGSERVICEENTRY**, mit dem _UlContext_ -Parameter auf MSG_SERVICE_CREATE festgelegt. 
+2. Ruft die Einstiegspunktfunktion des Nachrichtendiensts **MSGSERVICEENTRY**auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_CREATE festgelegt ist. 
     
-3. Legt fest, und die Messagingdiensts **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))-Eigenschaft abruft.
+3. Legt die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Eigenschaft des Nachrichtendiensts fest und ruft Sie ab.
     
- **Greifen Sie auf alle Dienste neu hinzugefügte Nachricht**
+ **So greifen Sie auf einen neu hinzugefügten Nachrichtendienst zu**
   
-1. Rufen Sie [IMsgServiceAdmin::GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) zum Abrufen der Tabelle der Dienste. 
+1. Rufen Sie [IMsgServiceAdmin:: GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) auf, um die Nachrichtendienst Tabelle abzurufen. 
     
-2. Rufen Sie die Nachricht Service Tabelle [IMAPITable::Advise](imapitable-advise.md) -Methode für die Tabelle Benachrichtigungen registriert. 
+2. Rufen Sie die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Nachrichtendienst Tabelle auf, um Tabellen Benachrichtigungen zu registrieren. 
     
-3. Wenn MAPI TABLE_ROW_ADDED Benachrichtigung sendet, suchen Sie die Eintrags-ID des neu hinzugefügten Nachricht-Diensts in der [SRow](srow.md) -Struktur, die in der Struktur [TABLE_NOTIFICATION](table_notification.md) enthalten. 
+3. Wenn MAPI eine TABLE_ROW_ADDED-Benachrichtigung sendet, suchen Sie den Eintragsbezeichner des neu hinzugefügten Nachrichtendiensts in der [SRow](srow.md) -Struktur, die in der [TABLE_NOTIFICATION](table_notification.md) -Struktur enthalten ist. 
     
 

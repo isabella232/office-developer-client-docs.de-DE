@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 44a12c92-7462-4acf-9520-5d4c2d7f1d47
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 71178f1a531bd381387e0aa7fbacb02d4431a401
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b13bf3bdd8392efc42ad189e48dffad8636f0708
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328889"
 ---
 # <a name="imapitablegetrowcount"></a>IMAPITable::GetRowCount
 
@@ -25,7 +25,7 @@ ms.locfileid: "22584324"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Gesamtzahl der Zeilen in der Tabelle zurück. 
+Gibt die Gesamtanzahl der Zeilen in der Tabelle zurück. 
   
 ```cpp
 HRESULT GetRowCount(
@@ -38,21 +38,21 @@ ULONG FAR * lpulCount
 
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  _lpulCount_
   
-> [out] Zeiger auf die Anzahl der Zeilen in der Tabelle.
+> Out Zeiger auf die Anzahl der Zeilen in der Tabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Anzahl der Zeilen wurde erfolgreich zurückgegeben.
+> Die Zeilenanzahl wurde erfolgreich zurückgegeben.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt, die verhindert, den Vorgang Count Zeile nicht gestartet dass. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Abrufvorgang für die Zeilenanzahl gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
     
 MAPI_E_NO_SUPPORT 
   
@@ -60,31 +60,31 @@ MAPI_E_NO_SUPPORT
     
 MAPI_W_APPROX_COUNT 
   
-> Der Aufruf war erfolgreich, aber eine ungefähre Zeilenanzahl wurde zurückgegeben, da die genaue Zeilenanzahl nicht möglicherweise aufgrund der Speicherkapazität ermittelt werden kann. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Finden Sie unter [Verwendung von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf war erfolgreich, aber eine ungefähre Zeilenanzahl wurde zurückgegeben, da die genaue Zeilenanzahl aufgrund von Arbeitsspeichereinschränkungen nicht bestimmt werden konnte. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPITable::GetRowCount** -Methode ruft die Gesamtzahl der Zeilen in einer Tabelle ab. 
+Die **IMAPITable:: GetRowCount** -Methode ruft die Gesamtanzahl der Zeilen in einer Tabelle ab. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn Sie die Tabelle genauen Zeilenanzahl ermitteln können, zählen return MAPI_W_APPROX_COUNT und eine ungefähre Zeile in den Inhalt des Parameters _LpulCount_ . 
+Wenn Sie die genaue Zeilenanzahl der Tabelle nicht bestimmen können, geben Sie MAPI_W_APPROX_COUNT und eine ungefähre Zeilenanzahl im Inhalt des _lpulCount_ -Parameters zurück. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Verwendung **GetRowCount** um zu erfahren, wie viele Zeilen eine Tabelle enthält vor dem tätigen eines Anrufs auf [die QueryRows](imapitable-queryrows.md) zum Abrufen der Daten. Wenn weniger als 20 Zeilen in der Tabelle vorhanden sind, ist es sicherer **QueryPosition** zum Abrufen der gesamten Tabelle aufrufen. Wenn mehr als 20 Zeilen in der Tabelle vorhanden sind, sollten Sie mehrere Aufrufe von **QueryPosition** und die Anzahl der Zeilen, die in jedem Aufruf abgerufen. 
+Verwenden **** Sie GetRowCount, um herauszufinden, wie viele Zeilen eine Tabelle enthält, bevor Sie die [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode aufrufen, um die Daten abzurufen. Wenn die Tabelle weniger als zwanzig Zeilen enthält, können Sie **QueryPosition** aufrufen, um die gesamte Tabelle abzurufen. Wenn in der Tabelle mehr als zwanzig Zeilen vorhanden sind, sollten Sie mehrere Aufrufe an **QueryPosition** durchführen und die Anzahl der in jedem Aufruf abgerufenen Zeilen begrenzen. 
   
-Einige Tabellen nicht unterstützen **GetRowCount** und MAPI_E_NO_SUPPORT zurückzugeben. Wenn **GetRowCount** nicht unterstützt wird, möglicherweise eine Alternative [IMAPITable::QueryPosition](imapitable-queryposition.md)aufrufen. Mit den Ergebnissen von **QueryPosition**können Sie die Beziehung zwischen der aktuellen Zeile und die letzte Zeile bestimmen. 
+Einige Tabellen unterstützen **GetRowCount** nicht und geben MAPI_E_NO_SUPPORT zurück. Wenn **GetRowCount** nicht unterstützt wird, können Sie [IMAPITable:: QueryPosition](imapitable-queryposition.md)aufrufen. Mit den Ergebnissen aus **QueryPosition**können Sie die Beziehung zwischen der aktuellen Zeile und der letzten Zeile bestimmen. 
   
-Wenn **GetRowCount** MAPI_E_BUSY zurückgegeben, da es vorübergehend nicht zum Abrufen der Zeilenanzahl ist, rufen Sie die [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md) -Methode. Wenn **WaitForCompletion** zurückgegeben wird, wiederholen Sie den Anruf an **GetRowCount**. Eine andere Möglichkeit, erkennen, ob eine asynchrone Operation ausgeführt wird, ist die [IMAPITable::GetStatus](imapitable-getstatus.md) -Methode aufrufen, und überprüfen Sie den Inhalt des Parameters _LpulTableState_ . 
+Wenn **GetRowCount** MAPI_E_BUSY zurückgibt, da es vorübergehend nicht in der Lage ist, eine Zeilenanzahl abzurufen, rufen Sie die [IMAPITable:: WaitForCompletion](imapitable-waitforcompletion.md) -Methode auf. Wiederholen Sie den Aufruf von getRowCount, **** Wenn **WaitForCompletion** zurückgegeben wird. Sie können auch feststellen, ob eine asynchrone Operation ausgeführt wird, indem Sie die [IMAPITable:: GetStatus](imapitable-getstatus.md) -Methode aufrufen und den Inhalt des _lpulTableState_ -Parameters überprüfen. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |CopyFolderContents  <br/> |MFCMAPI (engl.) verwendet die **IMAPITable::GetRowCount** -Methode, um zu bestimmen, wie viele Zeilen in der Quelltabelle werden, damit Speicher zugewiesen werden kann, um den Kopiervorgang.  <br/> |
+|MAPIFunctions. cpp  <br/> |CopyFolderContents  <br/> |MFCMAPI verwendet die **IMAPITable:: GetRowCount** -Methode, um zu bestimmen, wie viele Zeilen sich in der Quelltabelle befinden, damit der Arbeitsspeicher für die Kopie reserviert werden kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

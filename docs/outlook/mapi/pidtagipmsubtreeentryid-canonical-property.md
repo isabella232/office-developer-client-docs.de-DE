@@ -1,5 +1,5 @@
 ---
-title: PidTagIpmSubtreeEntryId (kanonische Eigenschaft)
+title: Kanonische Pidtagipmsubtreeentryid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5763fc78-5192-4162-be27-4aadc7ed65bc
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ade74b13811445c39c73f778b6de49b67b59093b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 815685696dfc93bb6241f608ca0157e87e758e7b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327870"
 ---
-# <a name="pidtagipmsubtreeentryid-canonical-property"></a>PidTagIpmSubtreeEntryId (kanonische Eigenschaft)
+# <a name="pidtagipmsubtreeentryid-canonical-property"></a>Kanonische Pidtagipmsubtreeentryid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID der Stamm des untergeordneten Ordner zwischen Personen Nachricht (IPM) in der Nachrichtenspeicher Ordnerstruktur. 
+Enthält die Eintrags-ID des Stamms der Unterstruktur des Ordners "zwischenmenschlichen Nachrichten" (IPM) in der Ordnerstruktur des Nachrichtenspeichers. 
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält die Eintrags-ID der Stamm des untergeordneten Ordner zwischen Personen 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft stellt den Stamm der Hierarchie IPM. IPM Clients keine Ordner angezeigt werden sollen, die nicht Unterordner des durch diese Eigenschaft dargestellt wird sind.
+Diese Eigenschaft stellt den Stamm der IPM-Hierarchie dar. IPM-Clients sollten keine Ordner anzeigen, die keine Unterordner des durch diese Eigenschaft dargestellten Ordners sind.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

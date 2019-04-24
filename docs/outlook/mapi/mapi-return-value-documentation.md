@@ -7,43 +7,43 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c32ee53c-b063-4a00-a6bf-75ce5e07f56a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 39d195f3cea6acbd5d5ab80cbba9d041ce9f7137
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5bbafe9fda479d951bb20175ab904dc6e241226a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329715"
 ---
 # <a name="mapi-return-value-documentation"></a>MAPI-Rückgabewert Dokumentation
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Verweis Einträge in dieser Referenz des Dokuments nur diese Werte zurückgeben, die einige Behandlung von Clientanwendungen erfordern. Rückgabewerte, die allgemeine fehlerbedingungen anzugeben und Mobilgeräts auf eventuelle Fehler abgeleitet werden können, sind nicht in der Dokumentation enthalten. Beispielsweise können viele Schnittstellenmethoden MAPI_E_INVALID_PARAMETER zurück, wenn ein Anrufer gibt den falschen Wert für einen Eingabeparameter an. Dieser Wert wird in der Regel nicht in den erwarteten Rückgabewerte aufgeführt, weil es muss speziell für MAPI_E_INVALID_PARAMETER und müssen nicht anders aus einem anderen Fehler die Verarbeitung. Andererseits, einige Dienstanbieter unterstützen keine Benachrichtigung und MAPI_E_NO_SUPPORT an die Clients über **IMAPISession**vorgenommene **Advise** -Methode zurückgegeben werden. Da Clients müssen explizit für diesen Wert überprüfen und bereitstellen, sollten Code für die Behandlung der Bedingung, die es darstellt es tritt auf, MAPI_E_NO_SUPPORT ist in der Liste der Rückgabewerte für [IMAPISession::Advise](imapisession-advise.md)enthalten.
+Die Referenz Einträge in dieser Referenz dokumentieren nur die Rückgabewerte, die von Clientanwendungen verarbeitet werden müssen. Rückgabewerte, die häufige Fehlerbedingungen angeben und durch Überprüfen auf Fehler abgeleitet werden können, sind in der Dokumentation nicht enthalten. Viele Schnittstellenmethoden können beispielsweise MAPI_E_INVALID_PARAMETER zurückgeben, wenn ein Aufrufer den falschen Wert für einen Eingabe Parameter angibt. Dieser Wert ist in der Regel nicht in der Gruppe der erwarteten Rückgabewerte aufgeführt, da es nicht erforderlich ist, speziell nach MAPI_E_INVALID_PARAMETER zu suchen, und es nicht erforderlich ist, es anders zu verarbeiten als andere Fehler. Andererseits unterstützen einige Dienstanbieter keine Ereignisbenachrichtigung und geben MAPI_E_NO_SUPPORT an die **Advise** -Methode zurück, die von Clients über **IMAPISession**durchgeführt wird. Da Clients diesen Wert explizit überprüfen und Code zur Behandlung der Bedingung bereitstellen müssen, die er darstellt, wenn er eintritt, ist MAPI_E_NO_SUPPORT in der Liste der Rückgabewerte für [IMAPISession:: Advise](imapisession-advise.md)enthalten.
   
-In der folgenden Tabelle werden die Fehlerwerte, die häufig von Methoden und Funktionen zurückgegeben werden und erfordern explizite Behandlung durch einen Client oder Dienstanbieter beschrieben. Diese Werte werden in vier Kategorien unterteilt: Werte, die ungültige Eingabedaten angeben, Werte, die Ressourcenprobleme hinweisen, Werte, die angeben, Zeichensatz Inkompatibilität und Werte, die Ausfall eines unbekannten Ursprungs angeben.
+In der folgenden Tabelle werden Fehlerwerte beschrieben, die häufig von Methoden und Funktionen zurückgegeben werden und eine explizite Behandlung durch einen Client oder Dienstanbieter erfordern. Diese Werte werden in vier Kategorien unterteilt: Werte, die ungültige Eingabedaten, Werte, die Ressourcenprobleme anzeigen, Werte, die die Inkompatibilität von Zeichensätzen anzeigen, und Werte, die den Fehler eines unbekannten Ursprungs kennzeichnen.
   
 |**Rückgabewert**|**Beschreibung**|
 |:-----|:-----|
-|MAPI_E_INVALID_PARAMETER  <br/> |Eine oder mehrere der Parameter an die Methode übergebenen oder Funktionen sind nicht gültig.  <br/> |
-|MAPI_E_UNKNOWN_FLAGS  <br/> |Eine oder mehrere Werte für Flags-Parameter sind ungültig.  <br/> |
-|MAPI_E_DISK_ERROR  <br/> |Es wurde ein Problem beim Schreiben in oder Lesen vom Datenträger.  <br/> |
-|MAPI_E_NOT_ENOUGH_DISK  <br/> |Es war nicht genügend Speicherplatz zum Abschließen des Vorgangs verfügbar.  <br/> |
-|MAPI_E_NOT_ENOUGH_MEMORY  <br/> |Es ist nicht genügend Arbeitsspeicher verfügbar, um den Vorgang abzuschließen.  <br/> |
-|MAPI_E_NOT_ENOUGH_RESOURCES  <br/> |Nicht genügend Systemressourcen waren zum Abschließen des Vorgangs verfügbar.  <br/> |
-|MAPI_E_BAD_CHARWIDTH  <br/> |Eine Inkompatibilität vorhanden ist, in die Zeichensätze, die von dem Anrufer und der Implementierung unterstützt werden.  <br/> |
-|MAPI_E_CALL_FAILED  <br/> |Unerwarteter oder unbekannten Ursprungs ein Fehler aufgetreten.  <br/> |
+|MAPI_E_INVALID_PARAMETER  <br/> |Mindestens einer der an die Methode oder Funktionen übergebenen Parameter war ungültig.  <br/> |
+|MAPI_E_UNKNOWN_FLAGS  <br/> |Mindestens ein Wert für einen Flags-Parameter war ungültig.  <br/> |
+|MAPI_E_DISK_ERROR  <br/> |Beim Schreiben oder Lesen vom Datenträger ist ein Problem aufgetreten.  <br/> |
+|MAPI_E_NOT_ENOUGH_DISK  <br/> |Es war nicht genügend Speicherplatz verfügbar, um den Vorgang abzuschließen.  <br/> |
+|MAPI_E_NOT_ENOUGH_MEMORY  <br/> |Es war nicht genügend Arbeitsspeicher verfügbar, um den Vorgang abzuschließen.  <br/> |
+|MAPI_E_NOT_ENOUGH_RESOURCES  <br/> |Es waren nicht genügend Systemressourcen verfügbar, um den Vorgang abzuschließen.  <br/> |
+|MAPI_E_BAD_CHARWIDTH  <br/> |Eine Inkompatibilität besteht in den Zeichensätzen, die vom Aufrufer und der Implementierung unterstützt werden.  <br/> |
+|MAPI_E_CALL_FAILED  <br/> |Ein Fehler unerwarteter oder unbekannter Herkunft ist aufgetreten.  <br/> |
    
-Die Konstanten, die MAPI-Rückgabewerte darstellen, sind in der MAPICODE aufgeführt. H-Headerdatei. Einige der Konstanten zuordnen zu Win32-Fehler; die Zuordnung der folgenden Konstanten für numerische Werte kann in der Win32-Headerdatei WINERROR gefunden werden. H.
+Die Konstanten, die MAPI-Rückgabewerte darstellen, werden im MAPICODE aufgelistet. H-Headerdatei. Einige der Konstanten werden Win32-Fehlern zugeordnet. die Zuordnung dieser Konstanten zu numerischen Werten finden Sie in der Win32-Headerdatei WINERROR. H.
   
-Fehler bezüglich ungültige Daten vom Anrufer übergebene können über entweder den Parameter Validierung API bereitgestellten Funktionen MAPI oder eine Gruppe von Makros ermittelt werden. 
+Fehler in Bezug auf ungültige Daten, die von einem Aufrufer übergeben wurden, können entweder über die von MAPI bereitgestellten API-Funktionen für die Parametervalidierung oder eine Gruppe von Makros bestimmt werden. 
   
-Character Set Inkompatibilität tritt auf, wenn eine der folgenden Situationen auftritt:
+Die Inkompatibilität von Zeichensätzen tritt auf, wenn eine der folgenden Situationen eintritt:
   
-- Ein Client oder Dienstanbieter legt die Option MAPI_UNICODE bei einem Aufruf-Methode oder die Funktion, und die Implementierung Unicode nicht unterstützt. Festlegen von Parameter MAPI_UNICODE gibt an, dass Zeichenfolgen, die als Eingabe übergebenen Unicode-Zeichenfolgen und Zeichenfolgen übergeben wieder als Ausgabe erwartet werden Unicode-Zeichenfolgen.
+- Ein Client oder Dienstanbieter legt das MAPI_UNICODE-Flag für eine Methode oder einen Funktionsaufruf fest, und die Implementierung unterstützt Unicode nicht. Setting MAPI_UNICODE gibt an, dass Zeichen Zeichenfolgen, die als Eingabe übergeben werden, Unicode-Zeichenfolgen sind und dass Zeichen Zeichenfolgen, die als Ausgabe zurückgegeben werden, als Unicode-Zeichenfolgen erwartet werden.
     
-- Ein Client oder Dienstanbieter wird die Option MAPI_UNICODE ein Gespräch über eine Methode oder Funktion nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+- Ein Client oder Dienstanbieter legt das MAPI_UNICODE-Flag für eine Methode oder einen Funktionsaufruf nicht fest, und die Implementierung unterstützt nur Unicode.
     
 

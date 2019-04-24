@@ -1,61 +1,61 @@
 ---
-title: Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher
+title: Informationen zum einGebundenen PST-Speicheranbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 953391ce-31a2-3271-365a-284cf5e15d82
-description: 'Zuletzt geändert: 03 Juli 2012'
-ms.openlocfilehash: 399c86d189cfc4160d151f417a6dd20364e60ce3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 03 Juli, 2012'
+ms.openlocfilehash: 779dd96c4f07c0c5eee60ae046cd17db98eebfd9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329764"
 ---
-# <a name="about-the-sample-wrapped-pst-store-provider"></a>Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher
+# <a name="about-the-sample-wrapped-pst-store-provider"></a>Informationen zum einGebundenen PST-Speicheranbieter
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-## <a name="overview-of-message-store-providers"></a>Übersicht über die Nachrichtenspeicher-Anbieter
+## <a name="overview-of-message-store-providers"></a>Übersicht über Nachrichtenspeicher Anbieter
 
-Nachricht Anbieter behandeln die Speicherung und den Abruf von Nachrichten und andere Informationen für die Benutzer der Clientanwendungen. Informationen der Nachricht ist mit einer hierarchischen System bekannt als Nachrichtenspeicher organisiert. Nachrichtenspeicher implementiert ist in mehreren Ebenen mit Containern aufgerufen, Ordner, die Nachrichten von unterschiedlichen Elementtypen enthalten. Es gibt keine Beschränkung der Anzahl der Ebenen in einem Nachrichtenspeicher. Ordner können viele Unterordner enthalten.
+Nachrichtenspeicher Anbieter behandeln das Speichern und Abrufen von Nachrichten und anderen Informationen für die Benutzer von Clientanwendungen. Die Nachrichten Informationen werden mithilfe eines hierarchischen Systems organisiert, das als Nachrichtenspeicher bezeichnet wird. Der Nachrichtenspeicher wird auf mehreren Ebenen implementiert, wobei Container als Ordner bezeichnet werden, die Nachrichten unterschiedlicher Typen enthalten. Es gibt keine Begrenzung für die Anzahl der Ebenen in einem Nachrichtenspeicher; Ordner können viele Unterordner enthalten.
   
-Nachricht Speichern von Daten können auf verschiedene Weise verwendet werden. Zusätzlich zu den normalen e-Mail-Nutzung können Ordner als Forum für Öffentliche Diskussion, als Repository für Referenzdokumenten oder als Container für Bulletin Board-Informationen verwendet werden. Ein einzelnen Nachrichtenspeicher kann viele Arten von Informationen, einige änderbare und andere nicht enthalten. Mehrere Clients können den gleichen Nachrichtenspeicher installieren leicht, einfach und schnell zum Freigeben von Daten.
+Nachrichtenspeicher Daten können auf unterschiedliche Weise verwendet werden. Neben der typischen e-Mail-Verwendung können Ordner als Forum für öffentliche Diskussionen, als Repository für Referenzdokumente oder als Container für Bulletin Board-Informationen verwendet werden. Ein einzelner Nachrichtenspeicher kann viele Arten von Informationen enthalten, einige änderbar und andere nicht. Mehrere Clients können denselben Nachrichtenspeicher installieren, sodass Daten problemlos und schnell freigegeben werden.
   
-Nachricht Speicherordner zum Sortieren und Filtern können Sie Nachrichten und zum Anpassen der Ansicht in der Anzeige einer Benutzer-Benutzeroberfläche (UI). Links zu gefilterten Nachrichten werden in Spezialordnern aufgerufen Suchergebnisse Ordner gespeichert. Der Benutzer von einer Clientanwendung gibt Filterkriterien, die MAPI bezieht sich auf als eine Einschränkung, und die Kriterien auf die Nachrichten in einen oder mehrere Ordner angewendet wird. Beispielsweise kann ein Benutzer anzeigen möchten nur Nachrichten Umgang mit einem bestimmten Thema mit hinzukommen Datumsangaben, die aktueller ist als die letzte Woche liegen. Verweise auf die Nachrichten, die den Kriterien im Suchergebnisse Ordner aufgeführt sind, und die echten Nachrichten in ihren regulären Ordnern verbleiben.
+Mit dem Nachrichtenspeicher Ordner können Sie Nachrichten sortieren und Filtern und die Ansicht in einer Benutzeroberfläche (UI) anpassen. Links zu gefilterten Nachrichten werden in speziellen Ordnern mit dem Namen Suchergebnisordner gespeichert. Der Benutzer einer Clientanwendung gibt Filterkriterien ein, auf die MAPI als Einschränkung verweist, und die Kriterien werden auf die Nachrichten angewendet, die in einem oder mehreren Ordnern gespeichert sind. Beispielsweise kann ein Benutzer nur die Nachrichten anzeigen, die sich auf einen bestimmten Betreff beziehen, und zwar mit Anreise Terminen, die jünger sind als letzte Woche. Verweise auf die Nachrichten, die den Kriterien entsprechen, werden im Ordner Suchergebnisse aufgeführt, und die tatsächlichen Nachrichten verbleiben in ihren regulären Ordnern.
   
-Nachrichten werden die Daten von einem Benutzer oder eine Anwendung an einen anderen Benutzer oder eine Anwendung übertragen. Jede Nachricht enthält einige Nachrichtentext und Informationen im Nachrichtenumschlag, die für die Übertragung verwendet wird. Einige Nachrichten enthalten eine oder mehrere Anlagen oder zusätzliche Daten im Zusammenhang mit und transportiert mit einer Nachricht in Form einer Datei, eine andere Nachricht oder ein OLE-Objekt.
+Nachrichten sind die Dateneinheiten, die von einem Benutzer oder einer Anwendung an einen anderen Benutzer oder eine andere Anwendung übertragen werden. Jede Nachricht enthält einige Nachrichtentext-und Nachrichtenumschlag Informationen, die für die Übertragung verwendet werden. Einige Nachrichten verfügen über eine oder mehrere Anhänge oder zusätzliche Daten im Zusammenhang mit einer Nachricht in Form einer Datei, einer anderen Nachricht oder einem OLE-Objekt.
   
-## <a name="the-sample-wrapped-pst-store-provider"></a>Im Beispiel umgebrochen PST-Anbieter
+## <a name="the-sample-wrapped-pst-store-provider"></a>Der beispielhafte PST-Speicheranbieter
 
-Replikation der API können Sie Elemente in einer Outlook-PST-Speicher aus einem Back-End-Daten-Repository repliziert werden. Sie verwenden die Replikation-API zum Replizieren von Daten in einer dedizierten PST-Speicher und verfolgen an den Synchronisierungsstatus. Dieser Ansatz erfordert keinen Sie einen benutzerdefinierten MAPI-Speicher-Anbieter einführen, der schreiben und Verwalten komplexer ist. Der PST-Speicher-Anbieter müssen jedoch umbrochen werden, damit die Replikation API entwickelt.
+Mit der Replikations-API können Sie Elemente aus einem Back-End-Daten-Repository in einen Outlook-PST-Speicher replizieren. Sie verwenden die Replikations-API, um die Daten in einem dedizierten PST-Speicher zu replizieren und den Synchronisierungsstatus nachzuverfolgen. Dieser Ansatz erfordert nicht, dass Sie einen benutzerdefinierten MAPI-Speicheranbieter einführen, der Komplex ist, um zu schreiben und zu warten. Der PST-Speicheranbieter muss jedoch für die Zusammenarbeit mit der Replikations-API verpackt werden.
   
-Der umbrochen PST Store Beispielanbieter verwendet den Persönliche Ordner-Datei (PST) Anbieter als Back-End zum Speichern von Daten. Der gepackten PST-Speicheranbieter sollte in Verbindung mit der API für die Replikation verwendet werden. Weitere Informationen finden Sie unter [Informationen zu Replikation API](about-the-replication-api.md). Die meisten Funktionen in der umbrochen PST Store Beispielanbieter übergeben ihre Argumente direkt an dem zugrunde liegenden PST-Anbieter. Bestimmte Funktionen erfordern besondere Implementierung und werden in den folgenden Themen beschrieben.
+Der Beispiel-Wrapped-PST-Speicheranbieter verwendet den PST-Anbieter als Back-End zum Speichern von Daten. Der verpackte PST-Speicheranbieter sollte in Verbindung mit der Replikations-API verwendet werden. Weitere Informationen finden Sie unter [Informationen zur Replikations-API](about-the-replication-api.md). Die meisten Funktionen im beispielhaften PST-Speicheranbieter übergeben ihre Argumente direkt an den zugrunde liegenden PST-Anbieter. Bestimmte Funktionen erfordern eine spezielle Implementierung und werden in den folgenden Themen beschrieben.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher](installing-the-sample-wrapped-pst-store-provider.md)
+- [Installieren des eingeWickelten Beispiel-PST-Speicheranbieters](installing-the-sample-wrapped-pst-store-provider.md)
     
-- Erläutert das Herunterladen und Installieren der umbrochen PST Store Beispielanbieter.
+- Erläutert das herunterladen und Installieren des Beispiels Wrapped-PST-Speicheranbieters.
     
-- [Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
+- [Initialisieren eines einGebundenen PST-Speicheranbieters](initializing-a-wrapped-pst-store-provider.md)
     
-- Der erste Schritt beim Implementieren von eines gepackten PST-Anbieters wird initialisiert und Konfigurieren des gepackten PST-Anbieters.
+- Der erste Schritt bei der Implementierung eines eingebundenen PST-Speicheranbieters besteht in der Initialisierung und Konfiguration des eingebundenen PST-Speicheranbieters.
     
-- [Anmelden bei einem Anbieter von umschlossenem PST-Speicher](logging-on-to-a-wrapped-pst-store-provider.md)
+- [Anmelden bei einem einGebundenen PST-Speicheranbieter](logging-on-to-a-wrapped-pst-store-provider.md)
     
-- Nach ein gepackten PST-Anbieter initialisiert wird, müssen Sie Funktionen implementieren, sodass MAPI- und die MAPI-Warteschlange auf dem gepackten PST-Anbieter anmelden können.
+- Nachdem ein eingebundener PST-Speicheranbieter initialisiert wurde, müssen Sie Funktionen implementieren, damit MAPI und der MAPI-Spooler sich beim eingebundenen PST-Speicheranbieter anmelden können.
     
-- [Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
+- [Verwenden eines einGebundenen PST-Speicheranbieters](using-a-wrapped-pst-store-provider.md)
     
-- Zum Verwenden einer gepackten PST-Speichers umgebrochen Anbieter die **[IMAPISupport::IUnknown](imapisupportiunknown.md)** -Schnittstelle zum Implementieren von allgemeinen Text fließt um müssen PST-Speicher-Anbieter Aufgaben. 
+- Um einen eingebundenen PST-Speicheranbieter verwenden zu können, müssen Sie die **[IMAPISupport:: IUnknown](imapisupportiunknown.md)** -Schnittstelle einschließen, um häufig eingebundene PST-Speicheranbieter Aufgaben zu implementieren. 
     
-- [Herunterfahren eines Anbieters von umschlossenem PST-Speicher](shutting-down-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines einGebundenen PST-Speicheranbieters](shutting-down-a-wrapped-pst-store-provider.md)
     
-- Nach Abschluss der mit einem gepackten PST-Anbieter, müssen Sie die gepackten PST-Speicheranbieter ordnungsgemäß herunterfahren.
+- Nachdem Sie einen eingebundenen PST-Speicheranbieter abgeschlossen haben, müssen Sie den eingebundenen PST-Speicheranbieter ordnungsgemäß herunterfahren.
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a1ff95a-9862-4165-8a70-bd2eeb7fe683
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d277908d3ec96537f63511e4d50488a694696bd5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: dee1de19ed61fa4f8edab69152315d77545b01b2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331696"
 ---
 # <a name="sapptimearray"></a>SAppTimeArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeitwerte an.
+Enthält ein Array von Zeitwerten.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SAppTimeArray
@@ -44,15 +44,15 @@ typedef struct _SAppTimeArray
 
  **cValues**
   
-> Anzahl der Werte im Array auf den Member **Lpat** zeigt. 
+> Die Anzahl der Werte im Array, auf die durch das **lpat** -Element verwiesen wird. 
     
  **lpat**
   
-> Zeiger auf ein Array von Zeitwerte für die Anwendung. 
+> Zeiger auf ein Array von Anwendungszeit Werten. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **SAppTimeArray** wird verwendet, um die Eigenschaften des Typs PT_MV_APPTIME definieren. Weitere Informationen zu PT_MV_APPTIME finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
+Die **SAppTimeArray** -Struktur wird verwendet, um Eigenschaften vom Typ PT_MV_APPTIME zu definieren. Weitere Informationen zu PT_MV_APPTIME finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

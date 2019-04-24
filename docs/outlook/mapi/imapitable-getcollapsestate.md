@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: fd4ea496-4c83-49cd-854e-f373cc1ed2af
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 46d993060d03b8c22c2d6c083c05f023648e6642
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 97575a65cd6825e07d6f11c813beec539f99f53a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328927"
 ---
 # <a name="imapitablegetcollapsestate"></a>IMAPITable::GetCollapseState
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Daten, die benötigt werden, um die aktuelle neu erstellen erweitert oder reduziert Zustand einer kategorisierten Tabelle.
+Gibt die Daten zurück, die erforderlich sind, um den aktuellen reduzierten oder erweiterten Status einer kategorisierten Tabelle neu zu erstellen.
   
 ```cpp
 HRESULT GetCollapseState(
@@ -41,57 +41,57 @@ LPBYTE FAR * lppbCollapseState
 
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  _cbInstanceKey_
   
-> [in] Durch den Parameter _LpbInstanceKey_ auf zeigt die Anzahl der Bytes im Instanzschlüssel. 
+> in Die Anzahl der Bytes im Instanzschlüssel, auf die durch den _lpbInstanceKey_ -Parameter verwiesen wird. 
     
  _lpbInstanceKey_
   
-> [in] Ein Zeiger auf die **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))-Eigenschaft der Zeile mit der aktuellen reduziert oder erweitert Zustand sollte neu erstellt werden. Der Parameter _LpbInstanceKey_ darf nicht NULL sein. 
+> in Ein Zeiger auf die **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md))-Eigenschaft der Zeile, in der der aktuelle reduzierte oder erweiterte Zustand neu erstellt werden soll. Der _lpbInstanceKey_ -Parameter darf nicht NULL sein. 
     
  _lpcbCollapseState_
   
-> [out] Ein Zeiger auf die Anzahl der Strukturen auf den durch den Parameter _LppbCollapseState_ verwiesen. 
+> Out Ein Zeiger auf die Anzahl der Strukturen, auf die durch den _lppbCollapseState_ -Parameter verwiesen wird. 
     
  _lppbCollapseState_
   
-> [out] Ein Zeiger auf einen Zeiger auf Strukturen, die Daten enthalten, die die aktuelle Tabellenansicht beschreibt.
+> Out Ein Zeiger auf einen Zeiger auf Strukturen, die Daten enthalten, die die aktuelle Tabellenansicht beschreiben.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Status für die kategorisierten Tabelle wurde erfolgreich gespeichert.
+> Der Status der kategorisierten Tabelle wurde erfolgreich gespeichert.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt, die verhindert, den Vorgang gestartet wird dass. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Vorgang gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
     
 MAPI_E_NO_SUPPORT 
   
 > Die Tabelle unterstützt keine Kategorisierung und erweiterte und reduzierte Ansichten.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPITable::GetCollapseState** -Methode funktioniert mit der [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md) -Methode zum Ändern des Benutzers Ansicht einer kategorisierten Tabelle. **GetCollapseState** speichert die Daten, die für **SetCollapseState** zu verwenden, um die entsprechenden Ansichten der Kategorien von einer kategorisierten Tabelle neu erstellen erforderlich ist. Dienstanbieter bestimmen die Daten gespeichert werden soll. Die meisten Dienstanbieter implementieren **GetCollapseState** speichern jedoch die folgenden: 
+Die **IMAPITable:: GetCollapseState** -Methode kann mit der [IMAPITable:: SetCollapseState](imapitable-setcollapsestate.md) -Methode verwendet werden, um die Benutzeransicht einer kategorisierten Tabelle zu ändern. **GetCollapseState** speichert die Daten, die **SetCollapseState** benötigen, um die entsprechenden Ansichten der Kategorien einer kategorisierten Tabelle neu zu erstellen. Dienstanbieter bestimmen die zu speichernden Daten. Die meisten Dienstanbieter, die **GetCollapseState** implementieren, speichern jedoch Folgendes: 
   
-- Die Sortierschlüssel (standard und Spalten Kategorie).
+- Die Sortierschlüssel (Standardspalten und Kategorien Spalten).
     
-- Informationen über die Zeile, die den Instanzschlüssel darstellt.
+- Informationen zu der Zeile, die der Instanzschlüssel darstellt.
     
 - Informationen zum Wiederherstellen der reduzierten und erweiterten Kategorien der Tabelle.
     
-Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sortieren und Kategorisierung](sorting-and-categorization.md).
+Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sortieren und kategorisieren](sorting-and-categorization.md).
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Speichern Sie den aktuellen Status aller Knoten in einer Tabelle in der _LppbCollapseState_ -Parameter. 
+Speichert den aktuellen Status aller Knoten einer Tabelle im _lppbCollapseState_ -Parameter. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie immer **GetCollapseState** , bevor Sie **SetCollapseState**aufrufen. 
+Rufen Sie **GetCollapseState** immer auf, bevor Sie **SetCollapseState**aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

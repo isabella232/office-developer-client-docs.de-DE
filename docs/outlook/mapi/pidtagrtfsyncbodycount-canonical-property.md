@@ -1,5 +1,5 @@
 ---
-title: PidTagRtfSyncBodyCount (kanonische Eigenschaft)
+title: Kanonische Pidtagrtfsyncbodycount (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,56 +11,56 @@ api_name:
 api_type:
 - COM
 ms.assetid: b7267be4-8d5c-4dc7-86b2-651e03e84f9b
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 6f6e687412dfce1e5fcee6b4a4d64f3e5106455f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331255"
 ---
-# <a name="pidtagrtfsyncbodycount-canonical-property"></a>PidTagRtfSyncBodyCount (kanonische Eigenschaft)
+# <a name="pidtagrtfsyncbodycount-canonical-property"></a>Kanonische Pidtagrtfsyncbodycount (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Anzahl der signifikanten Zeichen des Nachrichtentexts enthält.
+Enthält die Anzahl der signifikanten Zeichen des Nachrichtentexts.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_RTF_SYNC_BODY_COUNT  <br/> |
-|Kennung:  <br/> |0 x 1007  <br/> |
+|Kennung:  <br/> |0x1007  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die [RTFSync](rtfsync.md) -Funktion berechnet die Anzahl der Zeichen im Text nur diejenigen, die sie für die Nachricht erzielt werden hält verwenden. Beispielsweise sind einige Leerzeichen und Sonderzeichen ignoriert die Anzahl der ausgelassen. 
+Die [RTFSync](rtfsync.md) -Funktion berechnet die Anzahl der Zeichen im Text nur mit denjenigen, die für die Nachricht als bedeutsam erachtet werden. Beispielsweise werden einige Leerraum und andere ignorierte Zeichen aus der Anzahl weggelassen. 
   
-Diese Eigenschaft ist eine zusätzliche Rich Text Format (RTF)-Eigenschaft. Diese Eigenschaften werden von der Funktion **RTFSync** verwendet und nicht direkt von Clientanwendungen verwendet werden sollen. 
+Diese Eigenschaft ist eine Hilfseigenschaft für Rich-Text-Format (RTF). Diese Eigenschaften werden von der **RTFSync** -Funktion verwendet und sind nicht für die direkte Verwendung durch Clientanwendungen vorgesehen. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
-> Codiert und decodiert Nachrichten- und Objekte, die auf eine effiziente Streamdarstellung.
+> Codiert und dekodiert Message-und Attachment-Objekte in einer effizienten Datenstrom Darstellung.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,5 +72,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

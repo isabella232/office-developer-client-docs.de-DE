@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: d8c9d18c-4043-41f3-8501-8be8e3a2c9ac
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cbead0a9953ae5106e1fcc7d07d965d4dc7bacb9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7ab4e4e9e51849037a91a071f16294cfdf10870c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328567"
 ---
 # <a name="proptag"></a>PROP_TAG
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine Eigenschaftentag erstellt durch die Kombination einer angegebenen Eigenschaftentyp und Bezeichner zurück. 
+Gibt ein Eigenschaftentag zurück, das durch Kombinieren eines angegebenen Eigenschaftentyps und Bezeichners erstellt wurde. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 PROP_TAG (ulPropType, ulPropID)
@@ -38,24 +38,24 @@ PROP_TAG (ulPropType, ulPropID)
 
 _ulPropType_
   
-> Der Eigenschaftentyp für die neue Eigenschaftentag.
+> Eigenschafts für das neue Property-Tag.
     
 _ulPropID_
   
-> Der Bezeichner für die neue Eigenschaftentag.
+> Eigenschaftenbezeichner für das neue Property-Tag.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **Eigenschaft\_TAG** Makro erstellt eine Eigenschaftentag für eine Eigenschaft vom Typ _UlPropType_ und die Kennung, die in _UlPropID_angegeben ist. Beispielsweise kann eine Eigenschaftentag für eine Eintrags-ID mit dem Makro **PROP_TAG** wie folgt erstellt werden: 
+Das **Prop\_-Tag** -Makro erstellt ein Property-Tag für eine Eigenschaft vom Typ _ulPropType_ und den in _ulPropID_angegebenen Bezeichner. Beispielsweise kann ein Property-Tag für eine Eintrags-ID wie folgt mithilfe des **PROP_TAG** -Makros erstellt werden: 
   
 ```cpp
 PROP_TAG( PT_BINARY, 0x0FFF)
 
 ```
 
-Die niederwertige 16 Bit des Tags zurückgegebene Eigenschaft enthalten den Eigenschaftentyp PT_BINARY, und die obere 16 Bit der Eigenschaftenbezeichner 0xFFFF.
+Die niedrigwertigen 16 Bits des zurückgegebenen Property-Tags enthalten den Eigenschaftentyp PT_BINARY, und die hochwertigen 16 Bits enthalten den Eigenschaftenbezeichner 0xFFFF.
   
-Weitere Informationen zu Eigenschaftentags finden Sie unter [MAPI-Eigenschaftentags](mapi-property-tags.md).
+Weitere Informationen zu Eigenschaftstags finden Sie unter [MAPI property Tags](mapi-property-tags.md).
   
 ## <a name="see-also"></a>Siehe auch
 

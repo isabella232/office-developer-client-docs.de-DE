@@ -9,37 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 62d87db9-b8ca-60b6-bf27-5168c718ec96
 description: Bestimmt, wo eine Formatvorlage auf der Microsoft Visio-Benutzeroberfläche angezeigt wird.
-ms.openlocfilehash: 5b0221c54c17a3b9957cce5e890842def0ba7525
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7b3830488770a66d7be35923e1807dbcdcd1f1c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329953"
 ---
-# <a name="hideforapply-cell-style-properties-section"></a>HideForApply Cell (Style Properties Section)
+# <a name="hideforapply-cell-style-properties-section"></a>Zelle "HideForApply" (Abschnitt "Style Properties")
 
 Bestimmt, wo eine Formatvorlage auf der Microsoft Visio-Benutzeroberfläche angezeigt wird.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| TRUE  <br/> | 
-          Formatvorlage nur im **Zeichnungsexplorer** anzeigen.
-  <br/> |
-| FALSE  <br/> | 
-          Formatvorlage im **Zeichnungsexplorer** anzeigen.
-  <br/> |
+| TRUE  <br/> | Formatvorlage nur im **Zeichnungsexplorer** anzeigen.  <br/> |
+| FALSE  <br/> | Formatvorlage im **Zeichnungsexplorer** anzeigen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie eine neue Formatvorlage auf der Grundlage einer ausgeblendeten Formatvorlage erstellen, erbt die neue Formatvorlage dieses Attribut nicht.
   
-Wenn Sie einen Verweis auf die Zelle HideForApply aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "HideForApply aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | HideForApply  <br/> |
+| Zellenname:  <br/> | "HideForApply  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle HideForApply aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "HideForApply aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

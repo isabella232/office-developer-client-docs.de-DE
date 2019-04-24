@@ -1,5 +1,5 @@
 ---
-title: PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)
+title: Kanonische Pidtagnondeliveryreportreasoncode (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,40 +11,40 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 4b3ce80c-4245-47b0-ab10-a2e03ccb0b83
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 25b428c084bb49315e940829979602aeb6a38ac4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 639409f33f080aa3369b94060ce249017006f121
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329330"
 ---
-# <a name="pidtagnondeliveryreportreasoncode-canonical-property"></a>PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)
+# <a name="pidtagnondeliveryreportreasoncode-canonical-property"></a>Kanonische Pidtagnondeliveryreportreasoncode (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen diagnostic Code, der Teil einer Unzustellbarkeitsbericht bildet.
+Enthält einen Diagnosecode, der Teil eines Unzustellbarkeitsberichts ist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_NDR_REASON_CODE  <br/> |
 |Kennung:  <br/> |0x0C04  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Allgemeine messaging  <br/> |
+|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

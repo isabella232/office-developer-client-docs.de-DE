@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: ba33866a-c9c4-454a-9549-72455c61ee97
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f01d0ad7e7e6b1ad7a5e4c4838bb46ca143e0968
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a922b8bb21bfd534935d4d1706a6ccfd15c2da5c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332075"
 ---
 # <a name="checkparameters"></a>CheckParameters
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine interne Funktion zum debugging Parameter für Webdienstmethoden aufgerufen von MAPI-Anbieter zu überprüfen. 
+Ruft eine interne Funktion auf, um debuggingparameter für Dienstanbieter Methoden zu überprüfen, die von MAPI aufgerufen werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -44,20 +44,20 @@ HRESULT CheckParameters(
 
  _eMethod_
   
-> [in] Gibt den-Enumeration zurück, die-Methode, um zu überprüfen. 
+> in Gibt die zu überprüfende Methode an. 
     
- _Erster_
+ _First_
   
-> [in] Zeiger auf das erste Argument im Stapel.
+> in Zeiger auf das erste Argument im Stapel.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **CheckParameters** wurde durch das Makro [CheckParms](checkparms.md) ersetzt. **CheckParms** wird auf allen Plattformen empfohlen. 
+Das **CheckParameters** -Makro wurde vom [CheckParms](checkparms.md) -Makro abgelöst. **CheckParms** wird auf allen Plattformen empfohlen. 
   
 

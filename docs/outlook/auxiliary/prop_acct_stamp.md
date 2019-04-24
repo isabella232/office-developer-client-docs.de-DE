@@ -6,32 +6,32 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 70b6ecc8-6be3-0f05-3291-ac5b7f2ecfdb
-description: Gibt den Stempel Konto zurück.
-ms.openlocfilehash: ec1824d8c8c61d392b4e11cdb5213a85100d971e
-ms.sourcegitcommit: c55eec212ae794592c83bbf06b01eab5ca6bff6d
+description: Gibt den Konto Stempel zurück.
+ms.openlocfilehash: fe3c6e65e12ab62bd1c2ec0245e4a22502f610eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "19791199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327594"
 ---
 # <a name="propacctstamp"></a>PROP_ACCT_STAMP
 
-Gibt den Stempel Konto zurück.
+Gibt den Konto Stempel zurück.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 |||
 |:-----|:-----|
-|Kennung:  <br/> |0x000d  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Eigenschafts-Tag:  <br/> |0x000D001F  <br/> |
-|Access:  <br/> |Schreibgeschützt.  <br/> |
+|Kennung:  <br/> |0x000D  <br/> |
+|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
+|Property-Tag:  <br/> |0x000D001F  <br/> |
+|Access  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie diese Eigenschaft mithilfe von [IOlkAccount::GetProp](iolkaccount-getprop.md). Wenn der Client versucht, diese Eigenschaft nicht festlegen, gibt diese Eigenschaft **E_OLK_PROP_READ_ONLY**. 
+Rufen Sie diese Eigenschaft mithilfe von [IOlkAccount:: getprop](iolkaccount-getprop.md)ab. Wenn der Client versucht, diese Eigenschaft festzulegen, gibt diese Eigenschaft **E_OLK_PROP_READ_ONLY**zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

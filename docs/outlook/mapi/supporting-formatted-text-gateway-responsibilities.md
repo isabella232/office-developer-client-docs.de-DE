@@ -1,5 +1,5 @@
 ---
-title: Unterstützung von formatierten Text Gateway Zuständigkeiten
+title: Unterstützung für formatierte Text Gateway-zuStändigkeiten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,45 +8,45 @@ api_type:
 - COM
 ms.assetid: de737118-5f3b-464f-b036-f4a3489d411a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d369093589ffad03bf087b02905c443cf6f46c34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d5c3480018be399a85ee0bfda7ce1ff9b701cecc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327419"
 ---
 # <a name="supporting-formatted-text-gateway-responsibilities"></a>Unterstützung von formatiertem Text: Aufgaben des Gateways
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- **Zum Verarbeiten von Rich-Text-Format für ausgehende Nachrichten, gateways**
+ **So behandeln Sie Rich-Text-Formate für ausgehende Nachrichten, Gateways**
   
-1. Rufen Sie nur eine Nachricht **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft aus dem Nachrichtenspeicher ab. Der Hauptvorteil Abrufen nur die **PR_RTF_COMPRESSED** -Eigenschaft ist, dass der Nachrichtentext nicht zwischen Computern gesendet werden, wenn das Gateway und dem Nachrichtenspeicher auf verschiedenen Computern vorhanden sein muss. 
+1. Ruft nur die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft einer Nachricht aus dem Nachrichtenspeicher ab. Der Hauptvorteil beim Abrufen der **PR_RTF_COMPRESSED** -Eigenschaft besteht darin, dass der Nachrichtentext nicht zwischen Computern gesendet werden muss, wenn das Gateway und der Nachrichtenspeicher auf unterschiedlichen Computern vorhanden sind. 
     
-2. Generieren Sie dem Nachrichtentext aus der formatierte Text entweder durch den Aufruf von RTF-Library-Funktion **HrTextFromCompressedRTFStream** oder, falls die Nachricht lokal gespeichert ist **RTFSync**. Das Flag RTF_SYNC_RTF_CHANGED sollte in den Aufruf von **RTFSync**festgelegt werden. Weitere Informationen finden Sie unter [RTFSync](rtfsync.md).
+2. Generieren Sie den Nachrichtentext aus dem formatierten Text, indem Sie die RTF-Bibliotheksfunktion **HrTextFromCompressedRTFStream** aufrufen oder, falls die Nachricht lokal gespeichert ist, **RTFSync**. Das RTF_SYNC_RTF_CHANGED-Flag sollte im Aufruf von **RTFSync**festgelegt werden. Weitere Informationen finden Sie unter [RTFSync](rtfsync.md).
     
-3. Stellen Sie den Nachrichtentext, z. B. das Verwerfen nicht unterstützter Zeichen in irgendeiner Weise nicht rückgängig gemacht werden. 
+3. Nehmen Sie irreversible Änderungen am Nachrichtentext vor, beispielsweise nicht unterstützte Zeichen. 
     
-4. Stellen Sie sicher, dass **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) und alle RTF Auxilliary Eigenschaften entweder festgelegt sind oder nicht vorhanden.
+4. Stellen Sie sicher, dass sowohl **PR_RTF_IN_SYNC** ([pidtagrtfinsync (](pidtagrtfinsync-canonical-property.md)) als auch alle RTF-Hilfsbetriebe-Eigenschaften entweder festgelegt oder abwesend sind.
     
-5. Wenn alle Änderungen vorgenommen wurden, rufen Sie mit der RTF_SYNC_RTF_CHANGED und die RTF_SYNC_BODY_CHANGED Flags **RTFSync** . **RTFSync** wird die RTF Auxilliary Eigenschaften aus dem geänderten Text neu berechnen. 
+5. Wenn Änderungen vorgenommen wurden, rufen Sie **RTFSync** mit den RTF_SYNC_RTF_CHANGED-und RTF_SYNC_BODY_CHANGED-Flags auf. **RTFSync** berechnet die RTF-Hilfsbetriebe-Eigenschaften aus dem geänderten Text neu. 
     
-6. Stellen Sie alle umkehrbar Änderungen an den Nachrichtentext, wie Anlagen Platzhalter einfügen und nicht zerstörerische Codepages ausführen.
+6. Nehmen Sie beliebige Änderungen am Nachrichtentext vor, beispielsweise Einfügen von Anlagen Platzhaltern und Durchführen von nicht zerstörerischen Codepage-Konvertierungen.
     
-7. Senden der Nachricht.
+7. Senden Sie die Nachricht.
     
- **Zum Verarbeiten von Rich-Text-Format für eingehende Nachrichten gateways**
+ **So behandeln Sie Rich-Text-Formate für eingehende Nachrichten, Gateways**
   
-1. Umgekehrte Modifikationen Text Nachricht, die direkt vorgenommen wurden, bevor die Nachricht gesendet wurde. 
+1. Rückgängige Nachrichtentext Änderungen, die direkt vor dem Senden der Nachricht vorgenommen wurden. 
     
-2. Rufen Sie **RTFSync** , wenn die Nachricht die **PR_RTF_COMPRESSED** und die Eigenschaften **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) enthält. 
+2. Rufen Sie **RTFSync** auf, wenn die Nachricht sowohl die **PR_RTF_COMPRESSED** -als auch die **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft enthält. 
     
-3. Aktualisieren Sie die Nachricht im Nachrichtenspeicher mit der **PR_RTF_COMPRESSED** -Eigenschaft, wenn die Meldung Es enthält; Aktualisieren Sie mit der **PR_BODY** -Eigenschaft nur, wenn **PR_RTF_COMPRESSED** nicht vorhanden ist. 
+3. Aktualisieren Sie die Nachricht im Nachrichtenspeicher mit der **PR_RTF_COMPRESSED** -Eigenschaft, wenn Sie von der Nachricht enthalten ist. Aktualisieren Sie nur mit der **PR_BODY** -Eigenschaft, wenn **PR_RTF_COMPRESSED** fehlt. 
     
-4. Verwerfen Sie **PR_BODY** , wenn die Nachricht diese Eigenschaft und die **PR_RTF_COMPRESSED**enthält.
+4. VerWerfen Sie **PR_BODY** , wenn die Nachricht sowohl diese Eigenschaft als auch **PR_RTF_COMPRESSED**enthält.
     
-Gateways Aufrufen **RTFSync** zur Vermeidung der Nachrichtentext und die formatierten Text übertragen, wenn der Nachrichtenspeicher auf einem anderen Computer ist. Wenn das Gateway lokal ist, kann die Eigenschaften festgelegt werden und des Nachrichtenspeichers für die Synchronisierung zulassen. 
+Gateways rufen **RTFSync** auf, um zu vermeiden, dass sowohl der Nachrichtentext als auch der formatierte Text übertragen werden, wenn sich der Nachrichtenspeicher auf einem anderen Computer befindet. Wenn das Gateway lokal ist, kann es beide Eigenschaften festlegen und dem Nachrichtenspeicher die Ausführung der Synchronisierung gestatten. 
   
 

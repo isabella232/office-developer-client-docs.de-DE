@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: db621dfd-c6ad-42d2-8089-db40a63cab36
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7e8fb69e7d25420186d7269943c5d957311e813d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d647b41018afbade91dffb2818b48b0738148855
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329435"
 ---
 # <a name="imapiformadvisesinkonactivatenext"></a>IMAPIFormAdviseSink::OnActivateNext
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob das Formular die Nachrichtenklasse für die nächste anzuzeigende Meldung verarbeiten kann.
+Gibt an, ob das Formular die Nachrichtenklasse der nächsten anzuzeigende Nachricht behandeln kann.
   
 ```cpp
 HRESULT OnActivateNext(
@@ -40,21 +40,21 @@ HRESULT OnActivateNext(
 
  _lpszMessageClass_
   
-> [in] Ein Zeiger auf die Nachrichtenklasse des nächsten Nachricht.
+> in Ein Zeiger auf die Nachrichtenklasse der nächsten Nachricht.
     
  _ulMessageStatus_
   
-> [in] Eine Bitmaske vom Client definiert oder vom Anbieter definiertes Flags, die aus der **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft die nächste Nachricht angezeigt kopiert, bereitstellt, die Statusinformationen bezüglich der Inhaltstabelle, dass die Nachricht enthalten ist. in.
+> in Eine Bitmaske von Client definierten oder Anbieter definierten Flags, die von der **PR_MSG_STATUS** ([pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md))-Eigenschaft der nächsten anzuzeigende Nachricht kopiert werden und Status Informationen zur Inhaltstabelle bereitstellen, die die Nachricht enthält. in.
     
  _ulMessageFlags_
   
-> [in] Ein Zeiger auf eine Bitmaske aus Flags aus der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft, die an die nächste Nachricht kopiert gibt den aktuellen Status der Nachricht an.
+> in Ein Zeiger auf eine Bitmaske von Flags, die von der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der nächsten anzuzeigende Nachricht kopiert und den aktuellen Status der Nachricht angibt.
     
  _ppPersistMessage_
   
-> [out] Ein Zeiger auf einen Zeiger auf die [IPersistMessage](ipersistmessageiunknown.md) -Implementierung für das Form-Objekt für das neue Formular verwendet wird, wenn ein neues Formular erforderlich ist. Ein Zeiger auf NULL kann zurückgegeben werden, wenn das aktuelle Formularobjekt zum Anzeigen und speichern die nächste Nachricht verwendet werden kann. 
+> Out Ein Zeiger auf einen Zeiger auf die [IPersistMessage](ipersistmessageiunknown.md) -Implementierung für das Form-Objekt, das für das neue Formular verwendet wird, wenn ein neues Formular erforderlich ist. Ein Zeiger auf NULL kann zurückgegeben werden, wenn das aktuelle Formularobjekt verwendet werden kann, um die nächste Nachricht anzuzeigen und zu speichern. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -62,35 +62,35 @@ S_OK
     
 S_FALSE 
   
-> Das Formular behandelt die Nachrichtenklasse für die nächste Nachricht nicht.
+> Das Formular verarbeitet die Nachrichtenklasse der nächsten Nachricht nicht.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormAdviseSink::OnActivateNext** -Methode, mit denen das Formular zu bestimmen, ob die nächste Nachricht in einem Ordner angezeigt werden können. Die nächste Nachricht konnte eine Nachricht einer beliebigen Klasse werden, jedoch ist normalerweise der gleichen Klasse oder einer verknüpften-Klasse. Dadurch wird das Lesen von mehrere Nachrichten von der gleichen Klasse effizienter durch Clientanwendungen Formularobjekte nach Möglichkeit wiederverwenden aktivieren. 
+Formular Betrachter rufen die **IMAPIFormAdviseSink:: OnActivateNext** -Methode auf, um zu bestimmen, ob die nächste Nachricht in einem Ordner angezeigt werden kann. Bei der nächsten Nachricht kann es sich um eine beliebige Klasse handeln, aber in der Regel handelt es sich um eine Klasse oder eine zugehörige Klasse. Dadurch wird der Prozess des Lesens mehrerer Nachrichten derselben Klasse effizienter, indem Clientanwendungen nach Möglichkeit die Wiederverwendung von Formularobjekten ermöglichen. 
   
-Die meisten Formularobjekte werden die Nachrichtenklasse auf das durch den Parameter _LpszMessageClass_ verwenden, um festzustellen, ob sie die nächste Nachricht verarbeiten können. In der Regel kann ein Formular Verarbeitung von Nachrichten, die zu Klassen, von denen Standard-Klasse des Formulars eine Unterklasse, zusätzlich zu Nachrichten gehören, die der Default-Klasse angehören. Ein Formular kann jedoch andere Faktoren verwenden, um ohne Frage zu bestimmen, ob eine Nachricht kann, wie beispielsweise der Status gesendet, der die nächste Nachricht verarbeitet werden. 
+Die meisten Form-Objekte verwenden die Nachrichtenklasse, auf die durch den _lpszMessageClass_ -Parameter verwiesen wird, um zu bestimmen, ob Sie die nächste Nachricht verarbeiten können. In der Regel kann ein Formular Nachrichten verarbeiten, die zu Klassen gehören, deren Standardklasse eine Unterklasse ist, zusätzlich zu Nachrichten, die zur Standardklasse gehören. Ein Formular kann jedoch andere Faktoren verwenden, um zu bestimmen, ob eine Nachricht verarbeitet werden kann, beispielsweise den Status "gesendet" oder "nicht gesendet" der nächsten Nachricht. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Zurückgeben Sie S_OK und NULL in der _PpPersistMessage_ -Parameter, wenn das Formular die Nachrichtenklasse verarbeitet werden kann. Wenn das Formular ein neues Formular, das die Nachricht verarbeitet werden können, die das Formular nicht behandelt wird erstellen kann, gehen Sie folgendermaßen vor: 
+Geben Sie S_OK und NULL im _ppPersistMessage_ -Parameter zurück, wenn das Formular die Nachrichtenklasse verarbeiten kann. Führen Sie die folgenden Schritte aus, wenn das Formular ein neues Formular erstellen kann, das die Nachricht verarbeiten kann, die vom Formular nicht verarbeitet werden konnte: 
   
-1. Rufen Sie das Formular Klassenfactory zum Erstellen einer Instanz eines neuen Formulars-Objekts.
+1. Rufen Sie die Klassen Factory des Formulars auf, um eine Instanz eines neuen Form-Objekts zu erstellen.
     
-2. Speichern Sie diese Instanz, in den Inhalt des Parameters Zeiger _PpPersistMessage_ . 
+2. Speichern Sie diese Instanz im Inhalt des _ppPersistMessage_ -Zeiger-Parameters. 
     
 3. Geben Sie S_OK zur�ck.
     
-Der Formular-Viewer lädt die Nachricht mit der [IPersistMessage::Load](ipersistmessage-load.md) -Methode, die auf das Objekt, auf das _PpPersistMessage_gehört.
+Der Formular-Viewer lädt die Nachricht mithilfe der [IPersistMessage:: Laden](ipersistmessage-load.md) -Methode, die zu dem Objekt gehört, auf das durch _ppPersistMessage_verwiesen wird.
   
-Wenn weder das Formular noch ein Formular, das Sie erstellen können die nächste Nachricht behandeln, zurückgeben Sie S_FALSE. Allerdings sollte im Allgemeinen Formulare nicht zurückgegeben werden, dass dieser Wert, da dadurch die Leistung im Formular-Viewer verringert.
+Wenn weder das Formular noch ein Formular, das Sie erstellen können, die nächste Nachricht verarbeiten kann, geben Sie S_FALSE zurück. Im Allgemeinen sollten Formulare diesen Wert jedoch nicht zurückgeben, da dadurch die Leistung im Formular Betrachter vermindert wird.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |CMyMAPIFormViewer::ActivateNext  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormAdviseSink::OnActivateNext** -Methode, um die [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) -Methode zu implementieren.  <br/> |
+|MAPIFormFunctions. cpp  <br/> |CMyMAPIFormViewer:: ActivateNext  <br/> |MFCMAPI verwendet die **IMAPIFormAdviseSink:: OnActivateNext** -Methode, um die [IMAPIViewContext:: ActivateNext](imapiviewcontext-activatenext.md) -Methode zu implementieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -102,9 +102,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IPersistMessage::Load](ipersistmessage-load.md)
   
-[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
+[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
   
-[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
+[Kanonische Pidtagmessagestatus (-Eigenschaft](pidtagmessagestatus-canonical-property.md)
   
 [IMAPIFormAdviseSink : IUnknown](imapiformadvisesinkiunknown.md)
 

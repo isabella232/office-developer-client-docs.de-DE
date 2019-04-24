@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 7919a255-2935-4cb0-bffa-9d431d77848a
 description: Dieser Abschnitt enthält grundlegende Informationen über den Outlook-Kalendern und Terminen, einschließlich der Frei/Gebucht-API, Anforderung Besprechungsaktualisierungen und erneute Basiszuordnung Kalender Sommer-/Winterzeit.
-ms.openlocfilehash: 8e139e6d01a21560d6799186db54dc1e4625323f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3e265ee962e6f55214e9c26978abe7496561a482
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327804"
 ---
 # <a name="outlook-calendars-and-appointments"></a>Outlook-Kalendern und Terminen
 

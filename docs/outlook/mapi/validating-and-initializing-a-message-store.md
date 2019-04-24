@@ -1,5 +1,5 @@
 ---
-title: Überprüfen und Initialisieren eines Nachrichtenspeichers
+title: ÜberPrüfen und Initialisieren eines Nachrichtenspeichers
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,51 +8,51 @@ api_type:
 - COM
 ms.assetid: 74f0a1fe-2a79-4b32-ab88-85a8839a2639
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7a5a5045594e87953d967fddbdeefd5ac18c8a3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 77b3f707fc36a868de5acd7c7ba4642a1da4e3c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329582"
 ---
-# <a name="validating-and-initializing-a-message-store"></a>Überprüfen und Initialisieren eines Nachrichtenspeichers
+# <a name="validating-and-initializing-a-message-store"></a>ÜberPrüfen und Initialisieren eines Nachrichtenspeichers
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beim Öffnen eines Nachrichtenspeichers über die [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) -Methode ohne das MDB_NO_MAIL-Flag MAPI mehrere Ordner erstellt und ihnen Standardnamen und Rollen zuweist. MAPI ist verantwortlich für die Erstellung dieser Ordner um Inkompatibilitäten zu vermeiden, die zwangsläufig auftreten würde, wenn Clients oder Nachricht Anbieter verantwortlich für die Erstellung wurden. 
+Wenn Sie einen Nachrichtenspeicher über die [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md) -Methode öffnen, ohne das MDB_NO_MAIL-Flag festzulegen, erstellt MAPI mehrere Ordner und weist Ihnen Standardnamen und Rollen zu. MAPI ist für die Erstellung dieser Ordner verantwortlich, um die Unverträglichkeiten zu vermeiden, die unvermeidlich wären, wenn entweder Clients oder Nachrichtenspeicher Anbieter für die Erstellung verantwortlich waren. 
   
-In einigen Fällen ist es erforderlich, um sicherzustellen, dass die entsprechenden Ordner erstellt wurden und dass sie gültig sind. Die [HrValidateIPMSubtree](hrvalidateipmsubtree.md) -Funktion ist für diesen Zweck verfügbar. Wenn Sie den standardmäßigen Nachrichtenspeicher überprüfen, übergeben Sie die Kennzeichen MAPI_FULL_IPM_TREE. Eine umfangreichere Gruppe von Ordnern wird für den standardmäßigen Nachrichtenspeicher erstellt. Wenn **HrValidateIPMSubtree** das Flag MAPI_FULL_IPM_TREE empfängt, überprüft es die folgenden Ordner: 
+Manchmal muss überprüft werden, ob die entsprechenden Ordner erstellt wurden und dass Sie gültig sind. Die [HrValidateIPMSubtree](hrvalidateipmsubtree.md) -Funktion steht zu diesem Zweck zur Verfügung. Wenn Sie den Standardnachrichtenspeicher überprüfen, führen Sie das MAPI_FULL_IPM_TREE-Flag aus. Eine umfangreichere Gruppe von Ordnern wird für den Standardnachrichtenspeicher erstellt. Wenn **HrValidateIPMSubtree** das MAPI_FULL_IPM_TREE-Flag erhält, prüft es die folgenden Ordner: 
   
 - Stammordner für die IPM-Unterstruktur
     
-- Ordner Gelöschte Objekte im Stammordner IPM
+- Ordner "Gelöschte Elemente" im IPM-Stammordner
     
-- Ordner Posteingang im Stammordner IPM
+- PostEingangsordner im IPM-Stammordner
     
-- Postausgang im Stammordner IPM
+- Ausgangsordner im IPM-Stammordner
     
-- Ordner Gesendete Objekte im Stammordner IPM
+- Ordner "Gesendete Elemente" im IPM-Stammordner
     
-- Ansichten für Ordner im Stammordner der Nachrichtenspeicher
+- Ordneransichten im Stammordner des Nachrichtenspeichers
     
-- Allgemeine Ansichten im Stammordner der Nachrichtenspeicher
+- Allgemeine Ansichten im Stammordner des Nachrichtenspeichers
     
-- Suchordner im Stammordner der Nachrichtenspeicher
+- Suchordner im Stammordner des Nachrichtenspeichers
     
-Ist der Nachrichtenspeicher nicht Standard, können Sie festlegen oder das Flag MAPI_FULL_IPM_TREE nicht festgelegt. Wenn dieses Flag **HrValidateIPMSubtree** prüft, ob nur den Stammordner für die Unterstruktur nicht festgelegt ist, speichern den Ordner Gelöschte Objekte und der Stammordner für Nachricht Suchergebnisse. 
+Wenn der Nachrichtenspeicher nicht der Standardwert ist, können Sie das MAPI_FULL_IPM_TREE-Flag festlegen oder nicht festlegen. Wenn dieses Flag nicht festgelegt ist, sucht **HrValidateIPMSubtree** nur nach dem Stammordner für die Unterstruktur, dem Ordner "Gelöschte Elemente" und dem Stammordner für die Suchergebnisse des Nachrichtenspeichers. 
   
-Um einen Nachrichtenspeicher initialisieren, speichern Sie die folgenden Eigenschaften im Arbeitsspeicher, damit sie verfügbar sind:
+Um einen Nachrichtenspeicher zu initialisieren, speichern Sie die folgenden Eigenschaften im Arbeitsspeicher, damit Sie sofort verfügbar sind:
   
-- **PR_VALID_FOLDER_MASK** ([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md))
+- **PR_VALID_FOLDER_MASK** ([Pidtagvalidfoldermask (](pidtagvalidfoldermask-canonical-property.md))
     
 - **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))
     
-Diese Eigenschaften sind Bitmasken, die Features des Nachrichtenspeichers beschreiben. **PR_VALID_FOLDER_MASK** verfügt über ein Bit für jeden speziellen Ordner, der im Nachrichtenspeicher vorhanden ist und verfügt über einen Eintrag zugewiesene Bezeichner, der gültig ist festgelegt. Weitere Informationen zu den Zugriff auf diese Ordner und ihre Eintragsbezeichner finden Sie unter [Öffnen einen Speicherordner Nachricht](opening-a-message-store-folder.md). 
+Diese Eigenschaften sind Bitmasken, die Features des Nachrichtenspeichers beschreiben. **PR_VALID_FOLDER_MASK** hat ein Bit für jeden speziellen Ordner festgelegt, der im Nachrichtenspeicher vorhanden ist und einen gültigen Eintragsbezeichner besitzt. Weitere Informationen zum Zugriff auf diese Ordner und ihre Eintragsbezeichner finden Sie unter [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md). 
   
- **PR_STORE_SUPPORT_MASK** verfügt über ein Bit für jedes Feature im Nachrichtenspeicher unterstützt festgelegt. Beispielsweise wenn ein Nachrichtenspeicher Benachrichtigung und formatierten Text unterstützt, haben dessen **PR_STORE_SUPPORT_MASK** die STORE_NOTIFY_OK und STORE_RTF_OK Bits festgelegt. 
+ **PR_STORE_SUPPORT_MASK** hat für jedes im Nachrichtenspeicher unterstützte Feature ein Bit festgelegt. Wenn beispielsweise ein Nachrichtenspeicher Benachrichtigungen und formatierten Text unterstützt, werden für dessen **PR_STORE_SUPPORT_MASK** die Bits STORE_NOTIFY_OK und STORE_RTF_OK festgelegt. 
   
-Andere Eigenschaften, die lokal gespeichert werden sollen enthalten den Eintrag-IDs für die Ordner, die die **PR_VALID_FOLDER_MASK** -Eigenschaft als gültig beschreibt. Jeder dieser speziellen Ordner, mit Ausnahme der Ordner Posteingang verfügt über eine Eintrags-ID-Eigenschaft zugeordnet. Beispielsweise wird die Eintrags-ID für den Ordner Postausgang seiner **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md))-Eigenschaft. Da diese Ordner die Ordner, die häufig geöffnet wird sind, ist es ratsam, haben ihre Eintragsbezeichner immer leicht zugänglich sind.
+Andere Eigenschaften, die lokal gespeichert werden sollen, sind die Eintrags-IDs für die Ordner, die von der **PR_VALID_FOLDER_MASK** -Eigenschaft als gültig beschrieben werden. Jedem dieser speziellen Ordner, mit Ausnahme des Ordners "Inbox", ist eine Eintrags-ID-Eigenschaft zugeordnet. Beispielsweise ist die Eintrags-ID für den Ordner Postausgang Ihre **PR_IPM_OUTBOX_ENTRYID** ([pidtagipmoutboxentryid (](pidtagipmoutboxentryid-canonical-property.md))-Eigenschaft. Da es sich bei diesen Ordnern um die Ordner handelt, die häufig geöffnet werden, empfiehlt es sich, die Eingabe Kennungen bereitzustellen.
   
 

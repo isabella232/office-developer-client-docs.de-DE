@@ -8,15 +8,15 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ecf342c54d1aa2020fbfad4175a220b2aefecbe3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327182"
 ---
 # <a name="folders"></a>Ordner
 
-In diesem Abschnitt finden Sie Beispielaufgaben im Zusammenhang mit Ordnern. [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\))-Objekte stellen die Ordnerhierarchie dar, in der Microsoft Outlook-Elemente gespeichert werden. Beispiele für Ordner sind die Ordner „Kalender“, „E-Mail“ und „Gelöschte Elemente“. In der primären Interopassembly (Primary Interop Assembly, PIA) von Outlook werden Member des **Folder**-Objekts als Member des [MAPIFolde](https://msdn.microsoft.com/library/bb624369\(v=office.15\))-Objekts verfügbar gemacht.
+This section provides sample tasks that involve folders. [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) objects represent the folder hierarchy where Microsoft Outlook items are stored. Examples of folders include the Calendar, Mail, and Deleted Items folders. In the Outlook Primary Interop Assembly (PIA), members of the **Folder** object are exposed as members of the [MAPIFolder](https://msdn.microsoft.com/library/bb624369\(v=office.15\)) object.
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

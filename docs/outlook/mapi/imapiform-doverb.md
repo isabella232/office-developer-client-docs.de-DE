@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8b582571-b448-4476-91d9-4cc94dbec710
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 60a8c89afe0d70a1737c6ce694c66359fd6aae4f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329460"
 ---
 # <a name="imapiformdoverb"></a>IMAPIForm::DoVerb
 
@@ -25,7 +25,7 @@ ms.locfileid: "25398094"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fordert, dass das Formular ausführen, was es Aufgaben ein bestimmtes Verb zugeordnet.
+Fordert, dass das Formular alle Aufgaben ausführt, die es einem bestimmten Verb zuordnet.
   
 ```cpp
 HRESULT DoVerb(
@@ -40,19 +40,19 @@ HRESULT DoVerb(
 
  _iVerb_
   
-> [in] Die Anzahl eines Verben für das Formular zugeordnet ist.
+> in Die Zahl, die einem der Verben des Formulars zugeordnet ist.
     
  _lpViewContext_
   
-> [in] Ein Zeiger auf eine Ansicht Context-Objekt. Der Parameter _LpViewContext_ kann **null**sein.
+> in Ein Zeiger auf ein View-Kontextobjekt. Der _lpViewContext_ -Parameter kann **null**sein.
     
  _hwndParent_
   
-> [in] Ein Handle für das übergeordnete Fenster des alle Dialogfelder oder Fenster zeigt diese Methode an. Der Parameter _HwndParent_ muss **null** sein, wenn das Dialogfeld oder Fenster nicht modalen Zustand befindet. 
+> in Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der _hwndParent_ -Parameter sollte **null** sein, wenn das Dialogfeld oder Fenster nicht modal ist. 
     
  _lprcPosRect_
   
-> [in] Ein Zeiger auf eine Win32- [Rechteck](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx) -Struktur, die die Größe und Position des Fenster des Formulars enthält. 
+> in Ein Zeiger auf eine Win32- [Rect](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx) -Struktur, die die Größe und Position des Formularfensters enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -62,47 +62,47 @@ S_OK
     
 OLEOBJ_S_CANNOT_DOVERB_NOW 
   
-> Das Verb, dargestellt durch den Parameter _iVerb_ ist gültig, aber das Formular kann nicht ausgeführt werden die Vorgänge, die derzeit zugeordnet. 
+> Das durch den _iVerb_ -Parameter dargestellte Verb ist gültig, aber das Formular kann die derzeit zugeordneten Vorgänge nicht ausführen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIForm::DoVerb** -Methode, um anzufordern, dass das Formular der Aufgaben, bei denen es jedes Verb zugeordnet, die das Formular unterstützt. 
+Formular Betrachter rufen die **IMAPIForm::D overb** -Methode auf, um anzufordern, dass das Formular die Aufgaben ausführt, die es mit jedem Verb, das das Formular unterstützt, zuordnet. 
   
-Jeder der unterstützten Verben wird durch einen numerischen Wert, der im Parameter _iVerb_ **DoVerb** übergeben identifiziert. Typische Implementierungen von **DoVerb** enthalten eine **switch** -Anweisung, die die Werte getestet, die für den Parameter _iVerb_ für das Formular gültig sind. 
+Jedes der unterstützten Verben wird durch einen numerischen Wert identifiziert, der an **DoVerb** im _iVerb_ -Parameter übergeben wird. Typische Implementierungen von **DoVerb** enthalten eine **Switch** -Anweisung, die die Werte testet, die für den _iVerb_ -Parameter für das Formular gültig sind. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Verwenden sie der Formular-Viewer ein Ansichtskontext im _LpViewContext_ -Parameter gibt an, in der Implementierung **DoVerb** anstelle der Ansichtskontext einen früheren Aufruf der [IMAPIForm::SetViewContext](imapiform-setviewcontext.md) -Methode übergeben. Stellen Sie alle Änderungen sind erforderlich, um Ihre internen Datenstrukturen und den Ansichtskontext nicht speichern. 
+Wenn der Formular Betrachter einen Ansichtskontext im _lpViewContext_ -Parameter angibt, verwenden Sie ihn in Ihrer **DoVerb** -Implementierung anstelle des Ansichts Kontexts, der bei einem früheren Aufruf der [IMAPIForm::](imapiform-setviewcontext.md) setviewcontext-Methode übergeben wurde. Nehmen Sie die erforderlichen Änderungen an den internen Datenstrukturen vor, und speichern Sie den Ansichtskontext nicht. 
   
-Führen Sie die folgenden Aufgaben in der Implementierung **DoVerb** : 
+Führen Sie die folgenden Aufgaben in der **DoVerb** -Implementierung aus: 
   
-- Führen Sie den Code für das jeweilige Verb erforderlich ist, mit dem Parameter _iVerb_ verbunden ist. 
+- Führen Sie den Code aus, der für das jeweilige Verb erforderlich ist, das dem _iVerb_ -Parameter zugeordnet ist. 
     
-- Bei Bedarf wiederherstellen Sie den ursprünglichen Ansichtskontext.
+- Stellen Sie gegebenenfalls den ursprünglichen Ansichtskontext wieder her.
     
-- Wenn eine unbekannte Verbanzahl übergeben wurde, geben Sie MAPI_E_NO_SUPPORT zurück. Anderenfalls zurückgeben Sie basierend auf den Erfolg oder Misserfolg des jegliches Verb ausgeführt wurde.
+- Wenn eine unbekannte Verb-Zahl übergeben wurde, geben Sie MAPI_E_NO_SUPPORT. Geben Sie andernfalls ein Ergebnis zurück, das auf dem Erfolg oder Fehler des ausgeführten Verbs basiert.
     
-- Schließen Sie das Formular. Es ist immer sicherstellen, dass Sie das Formular nach Abschluss einer **DoVerb** -Aufrufs zu schließen. 
+- Schließt das Formular. Es liegt stets in ihrer Verantwortung, das Formular zu beenden, nachdem ein **DoVerb** -Aufruf abgeschlossen ist. 
     
-Einige Verben, wie beispielsweise drucken, sollte im Hinblick auf den Anruf **DoVerb** modal sein – d. h., die angegebene Operation muss gestartet werden, bevor der Aufruf **DoVerb** beendet. 
+Einige Verben, wie beispielsweise Print, sollten im Hinblick auf den **DoVerb** -Aufruf modal sein, d. h., der angegebene Vorgang muss abgeschlossen sein, bevor der **DoVerb** -Aufruf zurückgegeben wird. 
   
-Rufen Sie die [GetWindowRect](https://msdn.microsoft.com/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten. 
+Rufen Sie die [GetWindowRect](https://msdn.microsoft.com/library/ms633519) -Funktion auf, um die vom Fenster eines Formulars verwendete **Rect** -Struktur abzurufen. 
   
-Speichern Sie das Handle nicht im Parameter _HwndParent_ , da es in der Regel gültig bis zum Abschluss des **DoVerb**bleibt, es sofort bei der Rückgabe des Aufrufs gelöscht werden kann.
+Speichern Sie das Handle nicht im _hwndParent_ -Parameter, da es, obwohl es normalerweise bis zum Abschluss von **DoVerb**gültig bleibt, unmittelbar nach der Rückgabe des Anrufs zerstört werden kann.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können festlegen, dass nicht gebundenes Verben fungieren als modales Verben zeigen Sie _LpViewContext_ an die Implementierung einer Ansicht Kontext, die die Kennzeichen VCSTATUS_MODAL von der [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) -Methode zurückgibt. 
+Sie können nicht modale Verben als modale Verben fungieren, indem Sie _lpViewContext_ auf eine Kontext Implementierung verweisen, die das VCSTATUS_MODAL-Flag aus der [IMAPIViewContext:: GetViewStatus](imapiviewcontext-getviewstatus.md) -Methode zurückgibt. 
   
-Weitere Informationen zu Verben in MAPI finden Sie unter [Formular Verben](form-verbs.md). Weitere Informationen dazu, wie Verben in OLE behandelt werden finden Sie unter [OLE und Daten übertragen](https://msdn.microsoft.com/library/ms693425%28VS.85%29.aspx).
+Weitere Informationen zu Verben in MAPI finden Sie unter [Form](form-verbs.md)-Verben. Weitere Informationen dazu, wie Verben in OLE behandelt werden, finden Sie unter [OLE-und Datenübertragung](https://msdn.microsoft.com/library/ms693425%28VS.85%29.aspx).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::CallDoVerb  <br/> |MFCMAPI (engl.) verwendet die **IMAPIForm::DoVerb** -Methode zum Aufrufen eines Verbs in einem Formular.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: CallDoVerb  <br/> |MFCMAPI verwendet die **IMAPIForm::D-overb** -Methode, um ein Verb in einem Formular aufzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -115,7 +115,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 [IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Formularverben](form-verbs.md)
+[Formular Verben](form-verbs.md)
 

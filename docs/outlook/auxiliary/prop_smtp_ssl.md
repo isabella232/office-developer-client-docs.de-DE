@@ -6,30 +6,30 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: f46e8aa3-d2c2-45a2-93fe-1c40107fbf16
-description: Gibt an, ob Secure Socket Layer (SSL)-Protokoll für das SMTP-Konto.
-ms.openlocfilehash: b935e575338d39041bbdd6737b04a71dfe7f65b6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt an, ob das SSL-Protokoll (Secure Socket Layer) für das SMTP-Konto verwendet werden soll.
+ms.openlocfilehash: 64856322ec0afce80777417f781c22b927ed5e2d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328308"
 ---
 # <a name="propsmtpssl"></a>PROP_SMTP_SSL
 
-Gibt an, ob Secure Socket Layer (SSL)-Protokoll für das SMTP-Konto.
+Gibt an, ob das SSL-Protokoll (Secure Socket Layer) für das SMTP-Konto verwendet werden soll.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0 x 0202  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_DWORD  <br/> |
-|Eigenschafts-Tag:  <br/> |0x02020003  <br/> |
-|Access:  <br/> |Schreibgeschützt.  <br/> |
+|Kennung:  <br/> |0x0202  <br/> |
+|Eigenschafts:  <br/> |PT_DWORD  <br/> |
+|Property-Tag:  <br/> |0x02020003  <br/> |
+|Access  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Eine NULL bedeutet der Wert nicht SSL-Verschlüsselung verwenden, andernfalls können Sie SSL-Verschlüsselung verwenden.
+Ein Nullwert besagt, dass die SSL-Verschlüsselung nicht verwendet wird, andernfalls wird SSL-Verschlüsselung verwendet.
   
 ## <a name="see-also"></a>Siehe auch
 

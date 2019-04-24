@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1b746e6-c9df-4e92-a8b8-7a00b2de53e7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8ae4326cedf7e4fa4c3218d30255a9473ab7fbe0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e0087cdffe04bdb5de7ffcfa295a5ac84bf03bd1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331620"
 ---
 # <a name="cbmapiverbarray"></a>CbMAPIVerbArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes in eine vorhandene [SMAPIVerbArray](smapiverbarray.md) -Struktur, die eine angegebene Anzahl von [SMAPIVerb](smapiverb.md) Strukturen enthält. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIVerbArray](smapiverbarray.md) -Struktur, die eine angegebene Anzahl von [SMAPIVerb](smapiverb.md) -Strukturen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verwandte Struktur:  <br/> |**SMAPIVerbArray** <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SMAPIVerbArray** <br/> |
    
 ```cpp
 int CbMAPIVerbArray (_c)
@@ -40,7 +40,7 @@ int CbMAPIVerbArray (_c)
 
  __c_
   
-> Anzahl der **SMAPIVerb** Strukturen in der vorhandenen **SMAPIVerbArray** Struktur. 
+> Anzahl der **SMAPIVerb** -Strukturen in der vorhandenen **SMAPIVerbArray** -Struktur. 
     
 ## <a name="see-also"></a>Siehe auch
 

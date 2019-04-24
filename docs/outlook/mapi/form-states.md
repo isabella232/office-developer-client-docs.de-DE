@@ -1,5 +1,5 @@
 ---
-title: Formular Staaten
+title: Formularstatus
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,37 +8,37 @@ api_type:
 - COM
 ms.assetid: dfc9fbf1-90d4-4756-92d9-032ac56a9c50
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 195a82bfcc163ee01d2d42c71e79a8f5c9c620e5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 61d20ff7010151a82c53cafc69270e6925796a5c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327517"
 ---
-# <a name="form-states"></a>Formular Staaten
+# <a name="form-states"></a>Formularstatus
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Formular-Objekte können in eine der fünf verschiedenen Status, je nach welche Methoden werden aufgerufen wurden und ob Fehler aufgetreten sind, in diese Methoden ausgeführt werden. In den folgenden Themen werden die Zustände beschrieben:
+Formularobjekte können sich in einem von fünf unterschiedlichen Status befinden, je nachdem, welche Methoden in diesen aufgerufen wurden und ob beim Ausführen dieser Methoden Fehler aufgetreten sind. Die Zustände werden in den folgenden Themen beschrieben:
   
-- [Status „Nicht initialisiert“](uninitialized-state.md)
+- [Nicht initialisierter Status](uninitialized-state.md)
     
-- [Status „Normal“](normal-state.md)
+- [Normaler Status](normal-state.md)
     
-- [Status „NoScribble“](noscribble-state.md)
+- [Status "noScribble"](noscribble-state.md)
     
-- [Status „HandsOffAfterSave“](handsoffaftersave-state.md)
+- [HandsOffAfterSave-Status](handsoffaftersave-state.md)
     
-- [Status „HandsOffFromNormal“](handsofffromnormal-state.md)
+- [Status "handsofffromnormal-Status](handsofffromnormal-state.md)
     
-Die Zustände beziehen sich hauptsächlich auf den Status der Daten in das Form-Objekt. Die unterschiedlichen Zustände anzugeben, ob die Daten gespeichert werden müssen, ob das Form-Objekt Änderungen an welchem Punkt beim Speichern der Daten, die darf, denen in das Formular befindet, und die Daten. Als solche Formular Zustände und Übergänge zwischen diesen stärker mit Ihrem Formular Server Implementierung von [IPersistMessage: IUnknown](ipersistmessageiunknown.md) Schnittstellenmethoden als andere. Kenntnisse in dieser Zustände ist sehr nützlich für eine ordnungsgemäße Implementierung der MAPI-Formulars Schnittstellen, die der Formular Server implementiert werden muss. 
+Die Zustände beziehen sich in erster Linie auf den Status der Daten im Form-Objekt. Die verschiedenen Statusangaben geben an, ob die Daten gespeichert werden müssen, ob das Form-Objektänderungen an den Daten zulassen soll und wie die Daten, in denen das Formular gespeichert ist, in den Prozess eingespart werden. Daher haben die Formular Zustände und Übergänge zwischen diesen mehr mit der Implementierung der [IPersistMessage: IUnknown](ipersistmessageiunknown.md) -Schnittstellenmethoden durch den Formularserver als alle anderen. Die Kenntnis dieser Zustände ist sehr nützlich für die ordnungsgemäße Implementierung der MAPI-Formular Schnittstellen, die der Formularserver implementieren muss. 
   
-In den Themen in diesem Abschnitt beschreiben die verschiedenen Status, zusammen mit den zulässigen Aktionen, die dazu führen, in anderen Zustände wechselt dass. Alle Übergänge, die nicht in den Themen aufgeführt sind nicht zulässig. Wenn Ihr Formularobjekte nicht zulässige Übergänge zwischen Zuständen vornehmen, werden sie nicht Weise Verhalten, messaging-Clients auf Sie zukommt und unvorhersehbares Verhalten der Clients oder Form-Objekt verursachen.
+In den Themen in diesem Abschnitt werden die verschiedenen Status zusammen mit den zulässigen Aktionen beschrieben, die Übergänge zu anderen Zuständen verursachen. Alle Übergänge, die nicht in den Themen aufgeführt sind, sind nicht zulässig. Wenn Ihre Formularobjekte nicht zulässige Übergänge zwischen Zuständen vornehmen, Verhalten Sie sich nicht auf die Art und Weise, wie Messaging-Clients erwarten, und können zu unvorhersehbaren Client-oder Formularobjekt Verhalten führen.
   
 > [!NOTE]
-> Einige Statusübergänge hängen von Informationen aus der vorherigen Status. Ihr Formular Server muss in den meisten Fällen implementieren Sie ein Flag in Formularobjekte anzugeben, ob die Werte der Eigenschaften der Nachricht ändert sich höher vereinfachen geändert wurden. 
+> Einige Statusübergänge hängen von Informationen aus früheren Status ab. Der Formularserver muss höchstwahrscheinlich ein Flag in seinen Form-Objekten implementieren, um anzugeben, ob die Werte der Eigenschaften der Nachricht geändert wurden, um spätere Statusänderungen zu erleichtern. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
 

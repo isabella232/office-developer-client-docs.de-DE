@@ -1,5 +1,5 @@
 ---
-title: Implementierung von Eigenschaftenblättern
+title: Eigenschaftenblatt Implementierung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,66 +8,66 @@ api_type:
 - COM
 ms.assetid: f3475206-0237-4b5b-8efd-abd5d5e0b6c3
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9a0fad8fa20b2d94077f9fbdf8a3c595c0ab219e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3f1c6497a182231645691f669d8900d33b495503
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328525"
 ---
-# <a name="property-sheet-implementation"></a>Implementierung von Eigenschaftenblättern
+# <a name="property-sheet-implementation"></a>Eigenschaftenblatt Implementierung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Eigenschaftenblatt wird ein Dialogfeld zum Anzeigen der Eigenschaften eines Objekts. Die Eigenschaften können schreibgeschützt, dem der Benutzer nur Sie können diese anzeigen oder Lese-/Schreibzugriff, sodass der Benutzer Änderungen vornehmen. Ein Eigenschaftenblatt enthält eine oder mehrere überlappende untergeordnete Fenster als Seiten bezeichnet. Jede Seite enthält Steuerelement Windows für eine Gruppe von verwandten Eigenschaften festlegen. Benutzer Navigieren von einer Seite auf durch Auswählen einer Registerkarte, die die entsprechende Seite im Vordergrund im Eigenschaftsfenster bringt.
+Ein Eigenschaftenblatt ist ein Dialogfeld zum Anzeigen der Eigenschaften eines Objekts. Die Eigenschaften können schreibgeschützt sein, sodass der Benutzer Sie nur anzeigen oder lesen/schreiben kann, sodass der Benutzer Änderungen vornehmen muss. Ein Eigenschaftenblatt enthält mindestens ein überlappendes untergeordnetes Fenster mit dem Namen pages. Jede Seite enthält Steuerelementfenster zum Festlegen einer Gruppe verwandter Eigenschaften. Benutzer navigieren von Seite zu Seite, indem Sie eine Registerkarte auswählen, die die entsprechende Seite in den Vordergrund des Eigenschaftenblatts einfügt.
   
-Dienstanbieter müssen ein Eigenschaftenblatt implementieren, die einen minimalen Satz von Eigenschaften im Zusammenhang mit der Konfiguration im Nachrichtendienst angezeigt. Wenn Sie diesen Dienst Nachrichteneigenschaften geändert werden können, können Sie entweder Benutzer des Clients zulassen Anwendungen wie die Systemsteuerung, um die Änderungen vornehmen, oder die Änderungen programmgesteuert implementieren. Implementieren von Eigenschaftenseiten zum Anzeigen und Bearbeiten von anderen Arten von Eigenschaften ist optional. 
+Dienstanbieter müssen ein Eigenschaftenfenster implementieren, das einen minimalen Satz von Eigenschaften im Zusammenhang mit der Konfiguration im Nachrichtendienst anzeigt. Wenn Sie zulassen, dass diese Eigenschaften des Nachrichtendiensts geändert werden, können Sie entweder Benutzern von Clientanwendungen wie der Systemsteuerung erlauben, die Änderungen vorzunehmen oder die Änderungen programmgesteuert zu implementieren. Die Implementierung von Eigenschaftenblättern zum Anzeigen und Bearbeiten anderer Typen von Eigenschaften ist optional. 
   
-In der Regel müssen Sie in den folgenden Situationen ein Eigenschaftenfenster anzuzeigen:
+In der Regel müssen Sie ein Eigenschaftenblatt in den folgenden Situationen anzeigen:
   
-- Wenn ein Client [SettingsDialog Ihr Status des Objekts](imapistatus-settingsdialog.md) aufruft. 
+- Wenn ein Client die [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) -Methode des Status-Objekts aufruft. 
     
-- Wenn MAPI Anbieter-Objekts Logon-Methode aufruft.
+- Wenn MAPI die Anmeldemethode Ihres Anbieterobjekts aufruft.
     
-- Wenn MAPI die Eintrags-Funktion für Messagingdiensts des Anbieters aufruft.
+- Wenn MAPI die Einstiegspunktfunktion für den Nachrichtendienst Ihres Anbieters aufruft.
     
-Transportanbieter auch implementieren Sie Eigenschaftenseiten, um Eigenschaften im Zusammenhang mit Nachrichtenoptionen anzuzeigen und adressbuchanbietern implementierte Eigenschaft Sheets zum Anzeigen und bearbeiten ausführliche Informationen zu Benutzern und Verteilerlisten, erweiterte Suche messaging Kriterien und Vorlagen für neue Benutzer eingeben.
+Transport Anbieter implementieren auch Eigenschaftenblätter, um Eigenschaften im Zusammenhang mit Nachrichtenoptionen anzuzeigen, und Adressbuchanbieter implementieren Eigenschaftenblätter zum Anzeigen und bearbeiten detaillierter Informationen zu Messaging Benutzern und Verteilerlisten, Erweiterte Suche Kriterien und Vorlagen für die Eingabe neuer Benutzer.
   
-Eines der folgenden drei Verfahren können Sie um ein Eigenschaftenblatt zu erstellen:
+Zum Erstellen eines Eigenschaftenblatts können Sie eine der folgenden drei Techniken verwenden:
   
-- Manuell, wie Sie alle im Dialogfeld.
+- Wie bei jedem Dialogfeld.
     
-- Mithilfe des common Control Blatt-Eigenschaft im Windows SDK bereitgestellt.
+- Mithilfe des im Windows SDK bereitgestellten allgemeinen Steuerelements.
     
-- Mithilfe von MAPI zeigen Sie Tabelle an.
+- Mithilfe einer MAPI-Anzeigetabelle.
     
-Anbieter sollte die letzte Option wählen (erstellen ein Eigenschaftenblatts mithilfe einer Tabelle anzeigen). Dies ist die einfachste Möglichkeit, da es entfällt die Notwendigkeit der Windows-Benutzeroberfläche entwickelt. 
+Anbieter sollten die letzte Option wählen (Erstellen eines Eigenschaftenfensters mithilfe einer Anzeigetabelle). Dies ist die einfachste Option, da die Arbeit mit der Windows-Benutzeroberfläche nicht mehr erforderlich ist. 
   
-Um ein Eigenschaftenblatt erstellt aus einer Tabelle Anzeige für Ihre Nachricht Diensteigenschaften implementieren möchten, verwenden Sie die folgende Schritte aus:
+Gehen Sie folgendermaßen vor, um ein Eigenschaftenblatt zu implementieren, das aus einer Anzeigetabelle für die Eigenschaften des Nachrichtendiensts erstellt wurde:
   
-1. Rufen Sie [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) , um einen Abschnitt im aktuellen Profil zu öffnen. Übergeben Sie Ihre [MAPIUID](mapiuid.md) oder NULL, um Ihre Anbieterabschnitt Profil zu öffnen. 
+1. Rufen Sie [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) auf, um einen Abschnitt im aktuellen Profil zu öffnen. Führen Sie Ihre [MAPIUID](mapiuid.md) oder NULL aus, um den Profilbereich Ihres Anbieters zu öffnen. 
     
-2. Rufen Sie [CreateIProp](createiprop.md) um ein Property-Daten-Objekt zu erstellen. 
+2. Rufen Sie [CreateIProp](createiprop.md) auf, um ein Eigenschaftendaten Objekt zu erstellen. 
     
-3. Rufen Sie Profilabschnitt [IMAPIProp::CopyTo](imapiprop-copyto.md) -Methode, um alle Eigenschaften des Bereichs in das Eigenschaftenobjekt Daten kopieren. 
+3. Rufen Sie die [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Methode des profile-Abschnitts auf, um alle Eigenschaften des Bereichs in das Datenobjekt der Eigenschaft zu kopieren. 
     
-4. Erstellen Sie eine Anzeige Tabelle erstellen eine oder mehrere [DTPAGE](dtpage.md) -Strukturen, die beschreiben, die Steuerelemente auf dem Eigenschaftenblatt und Aufruf der Funktion [BuildDisplayTable](builddisplaytable.md) angezeigt werden soll, indem oder benutzerdefinierten Code implementieren. 
+4. Erstellen Sie eine Anzeigetabelle, indem Sie eine oder mehrere [DTPAGE](dtpage.md) -Strukturen, die die Steuerelemente beschreiben, die im Eigenschaftenfenster angezeigt werden und die [BuildDisplayTable](builddisplaytable.md) -Funktion aufrufen, oder indem Sie benutzerdefinierten Code implementieren. 
     
-5. Rufen Sie [IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md) , um einem Eigenschaftenfenster anzuzeigen, die die kopierten Eigenschaften hat. Übergeben Sie einen Zeiger auf die Daten Property-Objekt als Parameter _LpConfigData_ und einen Zeiger auf die Tabelle Anzeige als _LpDisplayTable_ -Parameter. Wenn Sie der Standardzugriffsmodus für dieses Eigenschaftenblatt außer Kraft setzen möchten, legen Sie die DT_EDITABLE-Flag für jedes Steuerelement nicht in der Tabelle anzeigen, die eine schreibgeschützte Eigenschaft darstellt. 
+5. Rufen Sie [IMAPISupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md) , um ein Eigenschaftenfenster mit den kopierten Eigenschaften anzuzeigen. Übergeben Sie einen Zeiger auf das Datenobjekt der Eigenschaft als _lpConfigData_ -Parameter und einen Zeiger auf die Anzeigetabelle als _lpDisplayTable_ -Parameter. Wenn Sie den Standardzugriffs Modus für dieses Eigenschaftenblatt außer Kraft setzen möchten, legen Sie das DT_EDITABLE-Flag für jedes Steuerelement in der Anzeigetabelle, das eine schreibgeschützte Eigenschaft darstellt, nicht fest. 
     
-6. Wenn alle Änderungen im Eigenschaftenfenster vorgenommen wurden, rufen Sie die Eigenschaft Datenobjekt **IMAPIProp::CopyTo** -Methode, um die geänderten Eigenschaften zurück in den Profilabschnitt zu kopieren. 
+6. Wenn alle Änderungen im Eigenschaftenfenster vorgenommen wurden, rufen Sie die **IMAPIProp:: CopyTo** -Methode des Property-Datenobjekts auf, um die geänderten Eigenschaften zurück in den profile-Abschnitt zu kopieren. 
     
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). 
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). 
   
-Ausführliche Informationen zu Tabellen anzeigen finden Sie unter [Tabelle Implementierung anzuzeigen](display-table-implementation.md). 
+Ausführliche Informationen zu Anzeige Tabellen finden Sie unter [Display Table Implementation](display-table-implementation.md). 
   
-Informationen zum Implementieren eines Steuerelements finden Sie unter [Implementierung der Steuerelement-Objekts](control-object-implementation.md).
+Informationen zum Implementieren eines Steuerelements finden Sie unter [Control Object Implementation](control-object-implementation.md).
   
-Um den Index eines Steuerelements abzurufen, die ein Benutzer in einem Listenfeld für Anzeige Tabelle auswählt, warten Sie, bis der Benutzer auf **OK** oder **Übernehmen**klickt. Zu diesem Zeitpunkt die Eintrags-ID des ausgewählten Elements wird in zurückgeschrieben der [IMAPIProp: IUnknown](imapipropiunknown.md) -Schnittstelle als der Wert der Eigenschaft durch die **UlPRSetProperty** Mitglied in der Struktur [DTBLLBX](dtbllbx.md) angegeben. 
+Zum Abrufen des Indexes eines Steuerelements, das ein Benutzer in einem Listenfeld Anzeigetabelle auswählt, warten Sie, bis der Benutzer auf **OK** oder über **nehmen**klickt. Zu diesem Zeitpunkt wird der Eintragsbezeichner des ausgewählten Elements zurück in die [IMAPIProp: IUnknown](imapipropiunknown.md) -Schnittstelle als Wert der vom **ulPRSetProperty** -Element in der [DTBLLBX](dtbllbx.md) -Struktur angegebenen Eigenschaft geschrieben. 
   
-Wenn Sie hinzufügen oder Entfernen von Elementen in Ihrem Listenfeld werden müssen, funktioniert mit einer Tabelle anzeigen und die [IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md) -Methode nicht. Stattdessen Sie Implementieren eines Eigenschaftenblatts mit der Blatt-API in Win32-Eigenschaft, die in der Datei comdlg32.dll enthalten sind. 
+Wenn Sie in der Lage sein müssen, Elemente aus Ihrem Listenfeld hinzuzufügen oder zu entfernen, kann die Verwendung einer Anzeigetabelle und der [IMAPISupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md) -Methode nicht ausgeführt werden. Erwägen Sie stattdessen die Implementierung eines Eigenschaftenblatts mit der Win32-Eigenschaftenblatt-API, die in der Datei comdlg32. dll enthalten ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

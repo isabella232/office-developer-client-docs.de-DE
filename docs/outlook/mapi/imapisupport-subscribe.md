@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: e6baaff1-446e-431a-a09b-9b529153382b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: beeca6ba958c38e12fba7dbc2884c81e58bdf3c4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5a8c288e877078ece6ab2da8c6494d96e1714ad7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328962"
 ---
 # <a name="imapisupportsubscribe"></a>IMAPISupport::Subscribe
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert ein Advise-Empfänger Erhalt von Benachrichtigungen über MAPI an.
+Registriert eine Advise-Senke, um Benachrichtigungen über MAPI zu empfangen.
   
 ```cpp
 HRESULT Subscribe(
@@ -41,81 +41,81 @@ ULONG FAR * lpulConnection
 
  _lpKey_
   
-> [in] Ein Zeiger auf eine Benachrichtigung-Schlüssel, der Advise-Source-Objekt darstellt. Der Parameter _LpKey_ darf nicht NULL sein. 
+> in Ein Zeiger auf einen Benachrichtigungs Schlüssel, der das Advise-Quellobjekt darstellt. Der _lpKey_ -Parameter darf nicht NULL sein. 
     
  _ulEventMask_
   
-> [in] Eine Maske von Werten, mit die die Typen von Benachrichtigungsereignisse anzugeben, die dem Anrufer ist daran interessiert, und die Registrierung einbezogen werden soll. Die folgenden Werte sind gültig:
+> in Eine Maske mit Werten, die die Typen von Benachrichtigungsereignissen angibt, an denen der Anrufer interessiert ist, und die in die Registrierung aufgenommen werden sollen. Die folgenden Werte sind gültig:
     
  _fnevCriticalError_
   
-> Register für Benachrichtigungen zu schwerwiegenden Fehlern, beispielsweise nicht genügend Arbeitsspeicher.
+> Registriert Benachrichtigungen zu schwerwiegenden Fehlern, beispielsweise unzureichenden Arbeitsspeicher.
     
  _fnevExtended_
   
-> Speicheranbieter Register für Benachrichtigungen über Ereignisse, die speziell für die bestimmten Adressbuch oder einer Nachricht.
+> Registriert Benachrichtigungen zu Ereignissen, die spezifisch für das jeweilige Adressbuch oder den Nachrichtenspeicher Anbieter sind.
     
- _fnevNewMail_
+ _Uleventmaskfnevnewmail_
   
-> Register für die Benachrichtigung über den Empfang von neuen Nachrichten. 
+> Registriert Benachrichtigungen über das Eintreffen neuer Nachrichten. 
     
  _fnevObjectCreated_
   
-> Register für die Benachrichtigung über die Erstellung eines neuen Objekts.
+> Registriert Benachrichtigungen über die Erstellung eines neuen Objekts.
     
  _fnevObjectCopied_
   
-> Register für Benachrichtigungen zu einem Objekt kopiert wird.
+> Registriert Benachrichtigungen zu einem kopierten Objekt.
     
  _fnevObjectDeleted_
   
-> Register für Benachrichtigungen zu einem Objekt, das gelöscht wird.
+> Registriert Benachrichtigungen zu einem Objekt, das gelöscht wird.
     
  _fnevObjectModified_
   
-> Register für Benachrichtigungen zu einem Objekt geändert wird.
+> Registriert Benachrichtigungen zu einem Objekt, das geändert wird.
     
  _fnevObjectMoved_
   
-> Register für Benachrichtigungen zu einem Objekt verschoben wird.
+> Registriert Benachrichtigungen zu einem Objekt, das verschoben wird.
     
  _fnevSearchComplete_
   
-> Register für die Benachrichtigung über den Abschluss der Suchvorgang.
+> Registriert Benachrichtigungen über den Abschluss eines Suchvorgangs.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Benachrichtigung erfolgt. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die die Art der Benachrichtigung steuert. Das folgende Flag kann festgelegt werden:
     
 NOTIFY_SYNC 
   
-> Wenn der Anrufer die [IMAPISupport::Notify](imapisupport-notify.md) -Methode zum Generieren von Benachrichtigungen für diese Advise-Empfänger aufruft, sollten **Benachrichtigen** alle erforderlichen Aufrufe advise-senken, vor der Rückgabe. Wenn dieses Flag nicht festgelegt ist, Benachrichtigung ist asynchron und Rückrufe werden in der Warteschlange für die Prozesse, die sich dafür angemeldet haben und gestartet, wenn die Prozesse der CPU Kontrolle. 
+> Wenn der Anrufer die [IMAPISupport:: notify](imapisupport-notify.md) -Methode zum Generieren von Benachrichtigungen für diese Advise-Senke aufruft, sollte notify alle erforderlichen Aufrufe für Advise-Empfänger durchführen, bevor **Sie** zurückkehren. Wenn dieses Flag nicht festgelegt ist, ist die Benachrichtigung asynchron, und die Rückrufe werden in die Warteschlange aufgenommen, wenn diese Prozesse die Steuerung der CPU erhalten haben. 
     
  _lpAdviseSink_
   
-> [in] Ein Zeiger auf eine Advise-Empfängerobjekt. 
+> in Ein Zeiger auf ein Advise-Senke-Objekt. 
     
  _lpulConnection_
   
-> [out] Ein Zeiger auf eine Verbindung ungleich NULL-Zahl, die Registrierung darstellt.
+> Out Ein Zeiger auf eine Verbindungsnummer ungleich NULL, die die Registrierung darstellt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die benachrichtigungsregistrierung war erfolgreich.
+> Die Benachrichtigungs Registrierung war erfolgreich.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::Subscribe** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter Aufrufen **Abonnieren** von einem ihrer **Advise** -Methoden, um MAPI, um die Benachrichtigungen verwalten zu ermöglichen. 
+Die **IMAPISupport:: subscribe** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter rufen **subscribe** aus einer Ihrer **Advise** -Methoden auf, damit MAPI die Benachrichtigungen verwalten kann. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um die Methoden des MAPI-Unterstützung für die Benachrichtigung zu verwenden, erstellen Sie einen Product Key für die Advise-Quelle das Objekt über welche Benachrichtigungen generiert werden soll. Der Wert des Schlüssels muss eindeutig sein und auf einfache Weise neu generiert werden sollte jeder Änderung des Objekts. 
+Um die MAPI-Supportmethoden für die Benachrichtigung zu verwenden, erstellen Sie einen Schlüssel für die Advise-Quelle das Objekt, über das Benachrichtigungen generiert werden sollen. Der Wert des Schlüssels muss eindeutig sein und bei jeder Änderung des Objekts leicht neu generiert werden. 
   
-MAPI verwendet den Benachrichtigung Schlüssel um zu suchenden alle Callback-Funktionen, die über die [HrAllocAdviseSink](hrallocadvisesink.md) -Funktion für die entsprechenden Advise-Quelle registriert. Übergeben Sie dieser Schlüssel an **IMAPISupport::Notify** , wenn Sie eine Benachrichtigung für die entsprechenden Advise-Quelle erstellen müssen. 
+MAPI verwendet den Benachrichtigungs Schlüssel, um nach beliebigen Rückruffunktionen zu suchen, die über die [HrAllocAdviseSink](hrallocadvisesink.md) -Funktion für die entsprechende Advise-Quelle registriert sind. Geben Sie diesen Schlüssel an **IMAPISupport:: notify** , wenn Sie eine Benachrichtigung für die entsprechende Advise-Quelle generieren müssen. 
   
-Das Flag NOTIFY_SYNC wirkt sich auf den Betrieb von nachfolgende Aufrufe **benachrichtigt werden soll**. Wenn Sie NOTIFY_SYNC festlegen, gibt **Benachrichtigen** bis zum Abschluss aller erforderlichen Mitteilungen senden keine zurück. Wenn Sie nicht NOTIFY_SYNC festlegen, arbeitet **Benachrichtigen** asynchron möglicherweise zurückgeben, bevor alle die Benachrichtigungen gesendet wurden. 
+Das NOTIFY_SYNC-Flag wirkt sich auf den Vorgang der nachfolgenden Aufrufe von **Notify**aus. Wenn Sie NOTIFY_SYNC festlegen, wird **Notify** erst zurückgegeben, wenn alle erforderlichen Benachrichtigungen gesendet wurden. Wenn Sie NOTIFY_SYNC nicht festlegen, wird **Notify** asynchron ausgeführt, und möglicherweise wird zurückgegeben, bevor alle Benachrichtigungen gesendet wurden. 
   
 ## <a name="see-also"></a>Siehe auch
 

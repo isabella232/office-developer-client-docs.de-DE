@@ -1,31 +1,31 @@
 ---
-title: FormElement (Shapes_Type ComplexType) ("Visio XML")
+title: Shape-Element (Shapes_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8074bd07-430a-779e-ad1f-e7e3a1c748b1
-description: Enthält Elemente, die ein Shape in einen Master, eine Seite oder eine Gruppe Form-Element definieren.
+description: Enthält Elemente, die eine Form in einem Master-, Page-oder Group Shape-Element definieren.
 ms.openlocfilehash: 6308b8dd21c92f6ced9ea7f03ec8aa85773fa2bb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326572"
 ---
-# <a name="shape-element-shapestype-complextype-visio-xml"></a>FormElement (Shapes_Type ComplexType) ("Visio XML")
+# <a name="shape-element-shapestype-complextype-visio-xml"></a>Shape-Element (Shapes_Type complexType) (' Visio XML ')
 
-Enthält Elemente, die ein Shape in einen **Master**, eine **Seite**oder eine Gruppe Form-Element definieren.
+Enthält Elemente, die eine Form in einem **Master**-, **Page**-oder Group Shape-Element definieren.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Page #. XML, Master #. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,44 +36,44 @@ Enthält Elemente, die ein Shape in einen **Master**, eine **Seite**oder eine Gr
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Shapes](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Formen.  <br/> |
-|[Shapes](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Formen.  <br/> |
+|[Shapes](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Formen an.  <br/> |
+|[Shapes](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Formen an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |Gibt eine einzelne Eigenschaft an.  <br/> |
-|[Data1](data1-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Datentyp](data_type-complextypevisio-xml.md) <br/> |Enthält einen beliebiger Zeichenfolgenwert, der verwendet wird, um zusätzliche Informationen zu einem Shape bereitzustellen.  <br/> |
-|[Data2](data2-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Datentyp](data_type-complextypevisio-xml.md) <br/> |Enthält einen beliebiger Zeichenfolgenwert, der verwendet wird, um zusätzliche Informationen zu einem Shape bereitzustellen.  <br/> |
-|[Data3](data3-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Datentyp](data_type-complextypevisio-xml.md) <br/> |Enthält einen beliebiger Zeichenfolgenwert, der verwendet wird, um zusätzliche Informationen zu einem Shape bereitzustellen.  <br/> |
-|[ForeignData](foreigndata-element-shapesheet_type-complextypevisio-xml.md) <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> |MIME (Multipurpose Internet Mail Extensions) codierten BLOB von Bilddaten wie Windows-Metadatei, Bitmap oder OLE-Daten enthält.  <br/> |
-|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von verwandten Eigenschaften an.  <br/> |
-|[Shapes](shapes-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Formen.  <br/> |
-|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |Enthält den Text eines Shapes.  <br/> |
+|[Data1](data1-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |Enthält einen beliebigen String-Wert, der verwendet wird, um zusätzliche Informationen zu einer Form anzugeben.  <br/> |
+|[Data2](data2-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |Enthält einen beliebigen String-Wert, der verwendet wird, um zusätzliche Informationen zu einer Form anzugeben.  <br/> |
+|[Data3](data3-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |Enthält einen beliebigen String-Wert, der verwendet wird, um zusätzliche Informationen zu einer Form anzugeben.  <br/> |
+|[ForeignData](foreigndata-element-shapesheet_type-complextypevisio-xml.md) <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> |Enthält eine MIME (Multipurpose Internet Mail Extensions) codiertes BLOB von Bild Daten wie Windows Metafile, Bitmap oder OLE-Daten.  <br/> |
+|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung verwandter Eigenschaften an.  <br/> |
+|[Shapes](shapes-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von Formen an.  <br/> |
+|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |Enthält den Text einer Form.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ENTF  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Ein Flag zurück, der angibt, ob das Element lokal gelöscht wird.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
-|FillStyle  <br/> |XSD:unsignedInt  <br/> ||Die ID des Stylesheets, die von der Formatierung ausfüllen dieses Shape erbt.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Die eindeutige ID des Elements in seinem übergeordneten Element.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|IsCustomName  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der Name des Benutzers angepasst wurde.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
-|IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der universelle Name durch den Benutzer angepasst wurde.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
-|LineStyle  <br/> |XSD:unsignedInt  <br/> ||Die ID des Stylesheets, die von der Formatierung von Linie dieses Shape erbt.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|Master  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Die ID des Master-Shapes Element von der Form seine Daten erbt.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|MasterShape  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Die ID des Master-Shapes Element von der Form seine Daten erbt.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|Name  <br/> |XSD: String  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des Typs xsd: String.  <br/> |
-|NameU  <br/> |XSD: String  <br/> |Optional  <br/> |Der universelle Name des Elements.  <br/> |Werte des Typs xsd: String.  <br/> |
-|TextStyle  <br/> |XSD:unsignedInt  <br/> ||Die ID des Stylesheets, von denen dieses Shape-Text-Formatierung erbt.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|Typ  <br/> |XSD:Token  <br/> |Optional  <br/> |Der Typ eines Shapes. Es kann einen der folgenden Werte sein: Gruppe, der Form, Handbuch oder Fremd.  <br/> |Werte des Typs Xsd:token.  <br/> |
-|UniqueID  <br/> |XSD: String  <br/> |Optional  <br/> |Eine GUID (globally unique Identifier), mit dem Shape zugewiesen ist.  <br/> |Werte des Typs xsd: String.  <br/> |
+|ENTF  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Ein Flag, das angibt, ob das Element lokal gelöscht wird.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|FillStyle  <br/> |XSD: unsignedInt  <br/> ||Die ID des StyleSheets, von dem dieses Shape Füllungsformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|IsCustomname  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|LineStyle  <br/> |XSD: unsignedInt  <br/> ||Die ID des StyleSheets, von dem dieses Shape die Linienformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|Master  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Master-Elements, dessen Daten von der Form geerbt werden.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|MasterShape  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Master-Elements, dessen Daten von der Form geerbt werden.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|NameU  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der universelle Name des Elements.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|TextStyle  <br/> |XSD: unsignedInt  <br/> ||Die ID des StyleSheets, von dem dieses Shape die Textformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|Typ  <br/> |XSD: Token  <br/> |Optional  <br/> |Der Typ einer Form. Möglicherweise handelt es sich um einen der folgenden Werte: Group, Shape, Guide oder Foreign.  <br/> |Werte des XSD: Token-Typs.  <br/> |
+|UniqueID  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Eine GUID (Globally Unique Identifier), die dem Shape zugewiesen ist.  <br/> |Werte des XSD: String-Typs.  <br/> |
    
 

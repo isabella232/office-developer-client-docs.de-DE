@@ -1,5 +1,5 @@
 ---
-title: PidTagRpcOverHttpFlags (kanonische Eigenschaft)
+title: Kanonische Pidtagrpcoverhttpflags (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,68 +7,68 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c8b30768-cf83-450d-9fe2-567a5e0c2f57
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: cf1f3b4d72426fb5f80decdc074a622b140657c8
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327447"
 ---
-# <a name="pidtagrpcoverhttpflags-canonical-property"></a>PidTagRpcOverHttpFlags (kanonische Eigenschaft)
+# <a name="pidtagrpcoverhttpflags-canonical-property"></a>Kanonische Pidtagrpcoverhttpflags (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Einstellungen in einem Profil von Microsoft Office Outlook verwendet werden, um mit Microsoft Exchange Server eine Verbindung über einen Remoteprozeduraufruf (RPC) über Hypertext Transfer Protocol (HTTP).
+Enthält die Einstellungen in einem Profil, das von Microsoft Office Outlook zum Herstellen einer Verbindung mit Microsoft Exchange Server mithilfe eines Remoteprozeduraufrufs (RPC) über Hypertext Transfer Protocol (HTTP) verwendet wird.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ROH_FLAGS  <br/> |
 |Kennung:  <br/> |0x6623  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Verschiedenes  <br/> |
+|Bereich:  <br/> |Sonstiges  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **PR_ROH_FLAGS** -Eigenschaft wird im Abschnitt globale Profil ein Profil Messaging Application Programming Interface (MAPI) gespeichert. Der Wert der **PR_ROH_FLAGS** ist eine Bitmaske, die von einem oder mehreren der folgenden Werte bestehen. 
+Die **PR_ROH_FLAGS** -Eigenschaft wird im Abschnitt globaler Profil eines MAPI-Profils (Messaging Application Programming Interface) gespeichert. Der Wert von **PR_ROH_FLAGS** ist eine Bitmaske, die aus einem oder mehreren der folgenden Flags besteht. 
   
 |**Name**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**ROHFLAGS_USE_ROH** <br/> |0 x 1  <br/> |Verbinden Sie mit dem Exchange-Server mit RPC über HTTP.  <br/> |
-|**ROHFLAGS_SSL_ONLY** <br/> |0 x 2  <br/> |Verbinden Sie mit dem Exchange-Server nur über Secure Socket Layer (SSL).  <br/> |
-|**ROHFLAGS_MUTUAL_AUTH** <br/> |0 x 4  <br/> |Sitzung gegenseitig authentifizieren beim Herstellen einer Verbindung mit SSL.  <br/> |
-|**ROHFLAGS_HTTP_FIRST_ON_FAST** <br/> |0 x 8  <br/> |Bei schnellen Netzwerken zuerst eine Verbindung über HTTP. Verbinden Sie dann mithilfe von TCP/IP.  <br/> |
-|**ROHFLAGS_HTTP_FIRST_ON_SLOW** <br/> |0 x 20  <br/> |Bei langsamen Netzwerken zuerst eine Verbindung über HTTP. Verbinden Sie dann mithilfe von TCP/IP.  <br/> |
+|**ROHFLAGS_USE_ROH** <br/> |0x1  <br/> |Stellen Sie über RPC über HTTP eine Verbindung mit dem Exchange-Server her.  <br/> |
+|**ROHFLAGS_SSL_ONLY** <br/> |0x2  <br/> |Stellen Sie eine Verbindung mit dem Exchange-Server nur über Secure Sockets Layer (SSL) her.  <br/> |
+|**ROHFLAGS_MUTUAL_AUTH** <br/> |0x4  <br/> |Die Sitzung gegenseitig authentifizieren, wenn eine Verbindung über SSL hergestellt wird.  <br/> |
+|**ROHFLAGS_HTTP_FIRST_ON_FAST** <br/> |0x8  <br/> |Stellen Sie in schnellen Netzwerken zuerst eine Verbindung über HTTP her. Stellen Sie dann eine Verbindung über TCP/IP her.  <br/> |
+|**ROHFLAGS_HTTP_FIRST_ON_SLOW** <br/> |0x20  <br/> |Stellen Sie in langsamen Netzwerken zuerst eine Verbindung über HTTP her. Stellen Sie dann eine Verbindung über TCP/IP her.  <br/> |
    
-Beispielsweise die **PR_ROH_FLAGS** festgelegt einschalten RPC über HTTP, SSL erforderlich ist, und um anzugeben, dass das HTTP-Protokoll zuerst bei langsamer Verbindung verwendet werden soll Eigenschaftensatz-den Wert der Eigenschaft **PR_ROH_FLAGS** `ROHFLAGS_USE_ROH | ROHFLAGS_SSL_ONLY | ROHFLAGS_HTTP_FIRST_ON_SLOW` gleich 0 x 23 ist. 
+Wenn Sie beispielsweise festlegen möchten, dass die **PR_ROH_FLAGS** -Eigenschaft RPC über HTTP aktivieren muss, um SSL zu erfordern, und um anzugeben, dass das HTTP-Protokoll zuerst bei langsamen Verbindungen verwendet werden soll, legen `ROHFLAGS_USE_ROH | ROHFLAGS_SSL_ONLY | ROHFLAGS_HTTP_FIRST_ON_SLOW` Sie den Wert der **PR_ROH_FLAGS** -Eigenschaft auf, die gleich 0x23 ist. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.
+> Definiert die grundlegenden Datenstrukturen, die in Remotevorgängen verwendet werden.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für e-Mail-Nachrichtenobjekte zulässig sind.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -80,5 +80,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

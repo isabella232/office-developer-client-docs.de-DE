@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33c00752-cdc1-4cbe-8fca-6b06c78bd362
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0d016c83678d9c1c94ee4ad4b8e12723c03f7bda
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7190065c687524302bae362a2e25d3848e17d1bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327272"
 ---
 # <a name="fpropexists"></a>FPropExists
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einem bestimmten Eigenschaftentag in eine [IMAPIProp](imapipropiunknown.md) oder einer Schnittstelle abgeleitet **IMAPIProp**wie [IMessage](imessageimapiprop.md) oder [IMAPIFolder](imapifolderimapicontainer.md). 
+Sucht nach einem bestimmten Property-Tag in einer [IMAPIProp](imapipropiunknown.md) -Schnittstelle oder einer von **IMAPIProp**abgeleiteten Schnittstelle wie [IMessage](imessageimapiprop.md) oder [IMAPIFolder](imapifolderimapicontainer.md). 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FPropExists(
@@ -44,24 +44,24 @@ BOOL FPropExists(
 
  _pobj_
   
-> [in] Zeiger auf die **IMAPIProp** Schnittstelle oder Schnittstelle abgeleitet **IMAPIProp** innerhalb für das Eigenschafts-Tag gesucht werden soll. 
+> in Zeiger auf die **IMAPIProp** -Schnittstelle oder-Schnittstelle, die von **IMAPIProp** abgeleitet ist, in der nach dem Property-Tag gesucht werden soll. 
     
  _ulPropTag_
   
-> [in] Eigenschaftentag für gesucht werden soll.
+> in Eigenschaftentag, nach dem gesucht werden soll.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Eine Übereinstimmung für das Tag für die angegebene Eigenschaft gefunden wurde. 
+> Eine Übereinstimmung für das angegebene Property-Tag wurde gefunden. 
     
 FALSE 
   
-> Eine Übereinstimmung für das Tag für die angegebene Eigenschaft wurde nicht gefunden.
+> Eine Übereinstimmung für das angegebene Property-Tag wurde nicht gefunden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn das Eigenschafts-Tag im Parameter _UlPropTag_ PT_UNSPECIFIED aufweist, sucht die **FPropExists** Funktion für eine Übereinstimmung nur anhand der Eigenschaftenbezeichner. Andernfalls wird die Übereinstimmung für das gesamte Eigenschafts-Tag, einschließlich der Art ein. 
+Wenn das Property-Tag im _ulPropTag_ -Parameter den Typ PT_UNSPECIFIED hat, sucht die **FPropExists** -Funktion nach einer Übereinstimmung, die nur auf dem Eigenschaftenbezeichner basiert. Andernfalls ist die Übereinstimmung für das gesamte Property-Tag, einschließlich des Typs. 
   
 

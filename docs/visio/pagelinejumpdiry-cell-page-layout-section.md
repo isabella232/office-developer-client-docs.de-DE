@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f73cc157-b332-279b-f7cf-d5a090bc09a4
 description: Bestimmt die Richtung von Liniensprüngen auf vertikalen dynamischen Verbindern auf dem Zeichenblatt, für die Sie keine lokale Liniensprungrichtung festgelegt haben.
-ms.openlocfilehash: 640ad93fbccf2cec26bda535c288c881aea32207
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 21ad1d95fd83780f31778dbc8bb70f9bdb4b922d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329897"
 ---
-# <a name="pagelinejumpdiry-cell-page-layout-section"></a>PageLineJumpDirY Cell (Page Layout Section)
+# <a name="pagelinejumpdiry-cell-page-layout-section"></a>Zelle "PageLineJumpDirY" (Abschnitt "Page Layout")
 
 Bestimmt die Richtung von Liniensprüngen auf vertikalen dynamischen Verbindern auf dem Zeichenblatt, für die Sie keine lokale Liniensprungrichtung festgelegt haben.
   
@@ -28,13 +28,13 @@ Bestimmt die Richtung von Liniensprüngen auf vertikalen dynamischen Verbindern 
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle PageLineJumpDirY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle PageLineJumpDirY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | PageLineJumpDirY  <br/> |
+| Zellenname:  <br/> | Zelle PageLineJumpDirY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageLineJumpDirY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle PageLineJumpDirY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

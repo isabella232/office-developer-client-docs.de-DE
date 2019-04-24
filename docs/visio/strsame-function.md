@@ -8,33 +8,33 @@ f1_keywords:
 - Vis_DSS.chm82251786
 localization_priority: Normal
 ms.assetid: d9fc2007-cc21-b20c-adee-be87cc356753
-description: Bestimmt, ob die Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn sie identisch sind, und FALSE, wenn sie nicht.
-ms.openlocfilehash: 5365ce6e679f708a47f4bcbdebbc4cabb13a2aee
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt, ob Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn Sie identisch sind, und FALSE, wenn dies nicht der Fall ist.
+ms.openlocfilehash: 0f298c966ec7a3f1e23c89473fecc555ed950f79
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329841"
 ---
 # <a name="strsame-function"></a>STRSAME Function
 
-Bestimmt, ob die Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn sie identisch sind, und FALSE, wenn sie nicht. 
+Bestimmt, ob Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn Sie identisch sind, und FALSE, wenn dies nicht der Fall ist. 
   
 ## <a name="syntax"></a>Syntax
 
-STRSAME ("** *Zeichenfolge1* **","** *Zeichenfolge2* **", ** *IgnoreCase* **) 
+STRSAME ("* * *string1* * *", "* * *string2* * *", * * *ignoreCase* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zeichenfolge1_ <br/> |Erforderlich  <br/> |**String** <br/> |Die erste zu vergleichende Zeichenfolge.  <br/> |
-| _Zeichenfolge2_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zweite zu vergleichende Zeichenfolge.  <br/> |
+| _string1_ <br/> |Erforderlich  <br/> |**String** <br/> |Die erste zu vergleichende Zeichenfolge.  <br/> |
+| _string2_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zweite zu vergleichende Zeichenfolge.  <br/> |
 | _ignoreCase_ <br/> |Optional  <br/> |**Boolean** <br/> |TRUE steht für "Groß- und Kleinschreibung ignorieren" und FALSE für "Groß- und Kleinschreibung berücksichtigen". Die Standardeinstellung ist FALSE.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Boolean
+Boolesch
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -42,13 +42,13 @@ Wenn Sie Multibyte-Zeichenfolgen vergleichen oder Vergleiche mit Groß- und Klei
   
 ## <a name="example-1"></a>Beispiel 1
 
-STRSAME("Katze","Hund")
+STRSAME ("Cat", "Dog")
   
 Gibt FALSE zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-STRSAME("Katze","Katze")
+STRSAME ("Cat", "Cat")
   
 Gibt TRUE zurück.
   
@@ -60,7 +60,7 @@ Gibt TRUE zurück.
   
 ## <a name="example-4"></a>Beispiel 4
 
-STRSAME("katze","KATZE")
+STRSAME ("Cat", "CAT")
   
 Gibt FALSE zurück.
   

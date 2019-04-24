@@ -6,32 +6,32 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ffe48267-d6c7-c1d0-9298-272b31fd8102
-description: Zurückgeben oder Festlegen der Anzeigename des Benutzers.
-ms.openlocfilehash: 8224ad6589d94a52d1a792bedadc7aa1c8bd913a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Anzeigenamen des Benutzers zurück oder legt ihn fest.
+ms.openlocfilehash: 2fb42a6f6ae9a72bc31c103af6314fcfd098439c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328244"
 ---
 # <a name="propacctuserdisplayname"></a>PROP_ACCT_USER_DISPLAY_NAME
 
-Zurückgeben oder Festlegen der Anzeigename des Benutzers.
+Gibt den Anzeigenamen des Benutzers zurück oder legt ihn fest.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0x000b  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Eigenschafts-Tag:  <br/> |0x000B001F  <br/> |
-|Access:  <br/> |Lese-/Schreibzugriff  <br/> |
+|Kennung:  <br/> |0x000B  <br/> |
+|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
+|Property-Tag:  <br/> |0x000B001F  <br/> |
+|Access  <br/> |Lesen/Schreiben  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Abrufen Sie oder festlegen Sie dieser Eigenschaft mithilfe von [IOlkAccount::GetProp](iolkaccount-getprop.md) oder [IOlkAccount::SetProp](iolkaccount-setprop.md), jeweils.
+Abrufen oder Festlegen dieser Eigenschaft mithilfe von [IOlkAccount:: getprop](iolkaccount-getprop.md) oder [IOlkAccount:: setprop](iolkaccount-setprop.md), beziehungsweise.
   
 ## <a name="see-also"></a>Siehe auch
 

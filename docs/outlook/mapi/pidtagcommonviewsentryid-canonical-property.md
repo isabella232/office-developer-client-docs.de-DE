@@ -1,5 +1,5 @@
 ---
-title: PidTagCommonViewsEntryId (kanonische Eigenschaft)
+title: Kanonische Pidtagcommonviewsentryid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: cd9e6a46-2112-4663-891e-5e57b22c0950
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7449e59227b147d34c2329175d0251dbb9c427b6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e22b8905901f16606614ac918896f3afe0093752
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331745"
 ---
-# <a name="pidtagcommonviewsentryid-canonical-property"></a>PidTagCommonViewsEntryId (kanonische Eigenschaft)
+# <a name="pidtagcommonviewsentryid-canonical-property"></a>Kanonische Pidtagcommonviewsentryid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID der vordefinierten gemeinsame Ansicht Ordner. 
+Enthält die Eintrags-ID des vordefinierten allgemeinen Ansichts Ordners. 
   
 |||
 |:-----|:-----|
@@ -34,31 +34,31 @@ Enthält die Eintrags-ID der vordefinierten gemeinsame Ansicht Ordner.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der gemeinsamen Ordner anzeigen enthält ein vordefiniertes Satzes von Standardansicht Bezeichner, während der Ansichtordner Bezeichner definiert durch ein messaging-Benutzer enthält. Diese Ordner, die nicht in der Hierarchie zwischen Personen Nachricht (IPM) sichtbar sind, können enthalten viele Ansicht Bezeichner, die jeweils als eine Nachricht gespeichert. Eine Clientanwendung kann wahlweise Zusammenführen von zwei Sätze der Bezeichner und diese beiden zur Verfügung stellen. 
+Der Ordner allgemeine Ansicht enthält eine vordefinierte Gruppe von Standard Ansichtsbezeichnern, während der Ansichtsordner Bezeichner enthält, die von einem Messagingbenutzer definiert werden. Diese Ordner, die in der Hierarchie der zwischenmenschlichen Nachrichten (IPM) nicht sichtbar sind, können viele Ansichtsbezeichner enthalten, die jeweils als Nachricht gespeichert werden. Eine Clientanwendung kann die beiden Gruppen von Bezeichnern zusammenführen und beide zur Verfügung stellen. 
   
-Weitere Informationen zu Sichten finden Sie unter [Anzeigen von Ordnern](mapi-view-folders.md).
+Weitere Informationen zu Ansichten finden Sie unter [Anzeigen von Ordnern](mapi-view-folders.md).
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagDefaultViewEntryId (kanonische Eigenschaft)](pidtagdefaultviewentryid-canonical-property.md)
+[Kanonische Pidtagdefaultviewentryid (-Eigenschaft](pidtagdefaultviewentryid-canonical-property.md)
   
-[PidTagViewsEntryId (kanonische Eigenschaft)](pidtagviewsentryid-canonical-property.md)
+[Kanonische Pidtagviewsentryid (-Eigenschaft](pidtagviewsentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -67,5 +67,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

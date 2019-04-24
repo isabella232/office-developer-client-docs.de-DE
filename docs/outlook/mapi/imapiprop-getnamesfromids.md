@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3efa4731-cf32-4a6c-9ba8-d059e58b0d98
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 186afd6a80d0ae3ae0a767456e60b2ebaaa579b9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f6688afde9b36a7722eaaf768f091481c15b7308
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329059"
 ---
 # <a name="imapipropgetnamesfromids"></a>IMAPIProp::GetNamesFromIDs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eigenschaftennamen, die einen oder mehrere Eigenschaftenbezeichner entsprechen.
+Stellt die Eigenschaftennamen bereit, die einem oder mehreren Eigenschafts Bezeichnern entsprechen.
   
 ```cpp
 HRESULT GetNamesFromIDs(
@@ -41,33 +41,33 @@ HRESULT GetNamesFromIDs(
 
  _lppPropTags_
   
-> [in, out] Bei Eingabe einen Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Eigenschaftentags enthält. andernfalls NULL, was bedeutet, dass alle Namen zurückgegeben werden sollen. Das Element **cValues** Array der Tag-Eigenschaft kann nicht 0 sein. Wenn _LppPropTags_ einen gültigen Zeiger für die Eingabe ist, gibt **GetNamesFromIDs** Namen für jede Eigenschaft-ID in das Array aufgenommen. 
+> [in, out] Bei der Eingabe ein Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags enthält; andernfalls NULL, wodurch angegeben wird, dass alle Namen zurückgegeben werden sollen. Das **cValues** -Element für das Property-Tag-Array kann nicht 0 sein. Wenn _lppPropTags_ ein gültiger Zeiger auf der Eingabe ist, gibt **GetNamesFromIDs** die Namen der einzelnen Eigenschaftenbezeichner zurück, die im Array enthalten sind. 
     
  _lpPropSetGuid_
   
-> [in] Ein Zeiger auf eine GUID oder eine [GUID](guid.md) -Struktur, einen Eigenschaftensatz angibt. Der Parameter _LpPropSetGuid_ kann auf einen gültigen Eigenschaftensatz oder NULL sein. 
+> in Ein Zeiger auf eine GUID oder eine [GUID](guid.md) -Struktur, die einen Eigenschaftensatz identifiziert. Der _lpPropSetGuid_ -Parameter kann auf einen gültigen Eigenschaftensatz verweisen oder NULL sein. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des zurückzugebenden Namen angibt. Die folgenden Werte können verwendet werden (wenn beide Attribute festgelegt sind, keine Namen zurückgegeben):
+> in Eine Bitmaske von Flags, die den Typ der zurückzugebenden Namen angibt. Die folgenden Flags können verwendet werden (wenn beide Flags festgelegt sind, werden keine Namen zurückgegeben):
     
 MAPI_NO_IDS 
   
-> Anforderungen, die nur als Unicode-Zeichenfolgen gespeicherte Namen zurückgegeben werden soll. 
+> Fordert an, dass nur als Unicode-Zeichenfolgen gespeicherte Namen zurückgegeben werden. 
     
 MAPI_NO_STRINGS 
   
-> Anforderungen, die nur als numerischen Bezeichner gespeicherte Namen zurückgegeben werden soll. 
+> Fordert an, dass nur als numerische Bezeichner gespeicherte Namen zurückgegeben werden. 
     
  _lpcPropNames_
   
-> [out] Ein Zeiger auf eine Anzahl von der Eigenschaft Name Zeigern im Array auf den durch den Parameter _LppPropNames_ verwiesen. 
+> Out Ein Zeiger auf die Anzahl der Eigenschaftennamen Zeiger im Array, auf das durch den _lppPropNames_ -Parameter verwiesen wird. 
     
  _lpppPropNames_
   
-> [out] Ein Zeiger auf ein Array von Zeigern für [MAPINAMEID](mapinameid.md) Strukturen, Eigenschaftennamen enthält. 
+> Out Ein Zeiger auf ein Array von Zeigern auf [MAPINAMEID](mapinameid.md) -Strukturen, die Eigenschaftsnamen enthalten. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -75,71 +75,71 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Das Objekt unterstützt keine benannte Eigenschaften. 
+> Das Objekt unterstützt keine benannten Eigenschaften. 
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war insgesamt erfolgreich, aber Namen für eine oder mehrere Eigenschaften konnte nicht zurückgegeben werden. Die Eigenschaftentags für die fehlerhafte Eigenschaften haben einen Eigenschaftentyp des **PT_ERROR**. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md). 
+> Der Aufruf war insgesamt erfolgreich, aber Namen für eine oder mehrere Eigenschaften konnten nicht zurückgegeben werden. Die Eigenschaftstags für die fehlerhaften Eigenschaften haben den Eigenschaftentyp **PT_ERROR**. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md). 
     
 MAPI_E_INVALID_PARAMETER 
   
-> Das **cValues** -Element aus einem oder mehreren der Einträge in der Array-Tag-Eigenschaft auf den _LppPropTags_ ist auf 0 festgelegt. 
+> Das **cValues** -Element eines oder mehrerer der Einträge im Array der Eigenschaftentags, auf die von _lppPropTags_ verwiesen wird, ist auf 0 festgelegt. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Während der Zugriff auf die meisten Eigenschaften vom Eigenschaftenbezeichner ist, können einige Eigenschaften namentlich zugegriffen werden. Die **IMAPIProp::GetNamesFromIDs** -Methode kann aufgerufen werden, um Folgendes auszuführen: 
+Während der Zugriff auf die meisten Eigenschaften durch die Eigenschaftskennung erfolgt, können auf einige Eigenschaften über den Namen zugegriffen werden. Die **IMAPIProp:: GetNamesFromIDs** -Methode kann aufgerufen werden, um folgende Aufgaben auszuführen: 
   
-- Namen für bestimmte Eigenschaftenbezeichner in einer bestimmten Eigenschaft abrufen.
+- Ruft Namen für bestimmte Eigenschaftenbezeichner in einem bestimmten Eigenschaftensatz ab.
     
-- Namen für bestimmte Eigenschaftenbezeichner in einer Reihe Eigenschaft abrufen.
+- Ruft Namen für bestimmte Eigenschaftenbezeichner in einem beliebigen Eigenschaftensatz ab.
     
-- Abrufen von Namen für alle benannten Eigenschaften, die in das Objekt Zuordnung enthalten sind.
+- Ruft Namen für alle benannten Eigenschaften ab, die in der Zuordnung des Objekts enthalten sind.
     
-Wenn _LppPropTags_ verweist auf eine gültige Eigenschaft Tag-Array mit mindestens einen Eigenschaftenbezeichner und _LpPropSetGuid_ verweist auf eine gültige Eigenschaft festlegen, ignoriert die Eigenschaft festgelegt und die Eigenschaftentypen und gibt die Namen aller **GetNamesFromIDs** die auf die angegebene Bezeichner zuordnen. 
+Wenn _lppPropTags_ auf ein gültiges Property-Tag-Array mit einem oder mehreren Property Identifiers zeigt und _lpPropSetGuid_ auf einen gültigen Eigenschaftensatz zeigt, ignoriert **GetNamesFromIDs** den Eigenschaftensatz und die Eigenschaftentypen und gibt alle Namen zurück. , die den angegebenen Bezeichnern zugeordnet sind. 
   
-Wenn _LppPropTags_ verweist auf eine gültige Eigenschaft Tag Array mit einem oder mehreren Eigenschaftenbezeichner und _LpPropSetGuid_ ist NULL, **GetNamesFromIDs** gibt alle Namen, die dem angegebenen Bezeichner zugeordnet sind. 
+Wenn _lppPropTags_ auf ein gültiges Property-Tag-Array mit einem oder mehreren Property Identifiers zeigt und _LPPROPSETGUID_ den Wert NULL hat, gibt **GetNamesFromIDs** alle Namen zurück, die den angegebenen Bezeichnern zugeordnet sind. 
   
-Wenn ein angegebenen Bezeichner keinen Namen, **GetNamesFromIDs** gibt NULL zurück, in diesem Bezeichner Stelle in der Struktur in _LpppPropNames_ zurückgegeben und gibt auch MAPI_W_ERRORS_RETURNED zurück. 
+Wenn ein angegebener Bezeichner keinen Namen hat, gibt **GetNamesFromIDs** in der in _lpppPropNames_ zurückgegebenen Struktur NULL an der Stelle des Bezeichners zurück und gibt auch MAPI_W_ERRORS_RETURNED zurück. 
   
-Wenn _LpPropSetGuid_ und _LppPropTags_ NULL sind, **GetNamesFromIDs** ordnet ein neues Eigenschaft Tag Array und gibt die Namen aller benannten Eigenschaften für das Objekt zurück. 
+Wenn sowohl _lpPropSetGuid_ als auch _lppPropTags_ NULL sind, weist **GetNamesFromIDs** ein neues Property-Tag-Array zu und gibt alle Namen für alle benannten Eigenschaften für das Objekt zurück. 
   
-Wenn es keine Namen sind zurückgegeben werden soll, führt möglicherweise, weil keine Eigenschaften vorhanden, in dem angeforderten Eigenschaftensatz sind oder alle Eigenschaften eines Typs werden durch die Kennzeichen ausgeschlossen werden **GetNamesFromIDs** Folgendes aus: 
+Wenn keine Namen zurückgegeben werden sollen, möglicherweise, da keine Eigenschaften im angeforderten Eigenschaftensatz vorhanden sind oder alle Eigenschaften einen Typ aufweisen, der durch die Flags ausgeschlossen ist, führt **GetNamesFromIDs** Folgendes aus: 
   
 - Gibt S_OK zurück.
     
-- Ordnet eine neue **SPropTagArray** -Struktur, wenn das Element **cValues** auf 0 festlegen. 
+- Weist eine neue **SPropTagArray** -Struktur zu, wobei das **cValues** -Element auf 0 festgelegt wird. 
     
-- Der Inhalt des _LpcPropNames_ festgelegt auf 0. 
+- Legt den Inhalt von _lpcPropNames_ auf 0 fest. 
     
-- Legt den Inhalt der _LpppPropNames_ auf NULL fest. 
+- Legt den Inhalt von _lpppPropNames_ auf NULL fest. 
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn _LpPropSetGuid_ verweist auf einen gültigen Eigenschaftensatz und _LppPropTags_ NULL ist, ist das Ergebnis nicht definiert. Sie können eine der folgenden Strategien verwenden: 
+Wenn _lpPropSetGuid_ auf einen gültigen Eigenschaftensatz verweist und _LPPPROPTAGS_ den Wert NULL hat, ist das Ergebnis nicht definiert. Sie können eine der folgenden Strategien verwenden: 
   
-- Ignorieren Sie die Eigenschaft festgelegt, und zurückgegeben Sie die Namen für den Bezeichner in Array der Tag-Eigenschaft.
+- Ignorieren Sie den Eigenschaftensatz, und geben Sie die Namen der Bezeichner im Property-Tag-Array zurück.
     
-- Die Namen für die nur die Bezeichner in der Tag Array-Eigenschaft, die zu dem angegebenen Eigenschaftensatz gehören zurück.
+- Gibt die Namen nur für die Bezeichner im Property-Tag-Array zurück, die zum angegebenen Eigenschaftensatz gehören.
     
-- Ein Fehler auf den Anruf MAPI_E_INVALID_PARAMETER zurückgeben. 
+- Fehlschlagen des Anrufs, zurückgeben von MAPI_E_INVALID_PARAMETER. 
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um alle benannten Eigenschaften für ein Objekt abzurufen, müssen Sie zunächst das Objekt [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode aufrufen, und übergeben Sie den zurückgegebenen IDs, die über dem Bereich 0 x 8000 zu **GetNamesFromIDs**sind.
+Wenn Sie alle benannten Eigenschaften für ein Objekt abrufen möchten, müssen Sie zuerst die [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode des Objekts aufrufen und dann die zurückgegebenen Bezeichner über dem 0X8000-Range an **GetNamesFromIDs**.
   
-Wenn Sie eine gültige Eigenschaft fest, jedoch keine gültige Eigenschaft Tag-Array übergeben, bereiten Sie für zu unvorhersehbaren Ergebnissen führen. Einige Implementierungen von **GetNamesFromIDs** ignorieren die Eigenschaft festgelegt und die Namen für den Bezeichner in Array der Tag-Eigenschaft zurückgegeben. Einige Implementierungen zurückgeben MAPI_E_INVALID_PARAMETER. Implementierungen wird weiterhin Namen für die IDs aller Eigenschaften im Eigenschaftensatz zurück. Wenn der Eigenschaftensatz PS_PUBLIC_STRINGS ist, können **GetNamesFromIDs** alle Namen zurück, die jemals erstellt wurden. Es ist, ob der Dienstanbieter, eine Eigenschaft unter den IDs der öffentlichen Zeichenfolgen zugeordnet speichert irrelevant. 
+Wenn Sie einen gültigen Eigenschaftensatz, aber keinen gültigen Property-Tag-Array, werden auf unvorhersehbare Ergebnisse vorbereitet. Bei einigen Implementierungen von **GetNamesFromIDs** wird der Eigenschaftensatz ignoriert und die Namen der Bezeichner im Property-Tag-Array zurückgegeben. Einige Implementierungen geben MAPI_E_INVALID_PARAMETER zurück. Weitere Implementierungen geben Namen für Bezeichner aller Eigenschaften im Eigenschaftensatz zurück. Wenn der Eigenschaftensatz PS_PUBLIC_STRINGS ist, kann **GetNamesFromIDs** alle Namen zurückgeben, die jemals erstellt wurden. Ob der Dienstanbieter eine Eigenschaft unter den mit den öffentlichen Zeichenfolgen verknüpften Bezeichnern speichert, ist unerheblich. 
   
-Wenn Sie mit den Eigenschaftennamen fertig sind, überprüfen Sie den Inhalt des Parameters _LpcPropNames_ , um zu bestimmen, ob alle Namen zurückgegeben wurden. Wenn dies der Fall ist, auf die Aufruf der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion, um den Arbeitsspeicher freizugeben _LppPropTags_ und _LpppPropNames_ soll, wenn ein erfolgreiches Ergebnis zurückgegeben wird. Durch Aufrufen von **MAPIFreeBuffer** ist ausreichend für jeden Parameter. Sie müssen nicht das Array von Zeigern zu durchlaufen und jede **MAPINAMEID** Struktur einzeln frei. 
+Wenn Sie die Eigenschaftennamen beendet haben, überprüfen Sie den Inhalt des _lpcPropNames_ -Parameters, um zu bestimmen, ob Namen zurückgegeben wurden. Wenn dies der Fall ist, rufen Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um den Arbeitsspeicher freizugeben, auf den von _lppPropTags_ und _lpppPropNames_ verwiesen wird, wenn ein erfolgreiches Ergebnis zurückgegeben wird. Ein Aufruf von **mapifreebufferfreigegeben** ist für jeden Parameter ausreichend; Sie müssen nicht das Array von Zeigern durchlaufen und jede **MAPINAMEID** -Struktur einzeln freigeben. 
   
-Weitere Informationen zu benannten Eigenschaften finden Sie unter [MAPI-Eigenschaften mit dem Namen](mapi-named-properties.md). 
+Weitere Informationen zu benannten Eigenschaften finden Sie unter [MAPI Named Properties](mapi-named-properties.md). 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|SingleMAPIPropListCtrl.cpp  <br/> |CSingleMAPIPropListCtrl::FindAllNamedProps  <br/> |MFCMAPI (engl.) verwendet die **IMAPIProp::GetNamesFromIDs** -Methode zum Nachschlagen von benannten Eigenschaften, die zuvor zugeordnet wurden.  <br/> |
+|SingleMAPIPropListCtrl. cpp  <br/> |CSingleMAPIPropListCtrl:: FindAllNamedProps  <br/> |MFCMAPI verwendet die **IMAPIProp:: GetNamesFromIDs** -Methode, um benannte Eigenschaften nachzuschlagen, die zuvor zugeordnet wurden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -160,7 +160,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Benannte Eigenschaften MAPI](mapi-named-properties.md)
   

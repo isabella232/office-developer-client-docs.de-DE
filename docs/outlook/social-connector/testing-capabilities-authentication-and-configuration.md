@@ -7,73 +7,73 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 69e1f5bc-354c-4c33-84a1-b1aa10d4b650
-description: In diesem Thema werden die Tests zum Abrufen von Funktionen und Szenarien zum Konfigurieren eines Kontos und Authentifizieren eines Benutzers für ein social Network beschrieben.
-ms.openlocfilehash: ac294291e2226dbb73f822b2a641fe2bf67ce5eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Thema werden Tests zum Aufrufen von Funktionen und Szenarien zum Konfigurieren eines Kontos und zum Authentifizieren eines Benutzers für ein soziales Netzwerk beschrieben.
+ms.openlocfilehash: 218d5c564dd18e1e72820e31079011e6bb81a33c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329169"
 ---
 # <a name="testing-capabilities-authentication-and-configuration"></a>Testen der Funktionen, Authentifizierung und Konfiguration
 
-In diesem Thema werden die Tests zum Abrufen von Funktionen und Szenarien zum Konfigurieren eines Kontos und Authentifizieren eines Benutzers für ein social Network beschrieben.
+In diesem Thema werden Tests zum Aufrufen von Funktionen und Szenarien zum Konfigurieren eines Kontos und zum Authentifizieren eines Benutzers für ein soziales Netzwerk beschrieben.
   
-## <a name="getting-capabilities"></a>Abrufen von Funktionen
+## <a name="getting-capabilities"></a>Aufrufen von Funktionen
 
-Outlook Social Connector (OSC)-Anbieter implementiert [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)und die OSC-Aufrufe **GetCapabilities** an die vom Anbieter unterstützten Funktionalität zu erhalten. Die von Ihrem Anbieter für das soziale Netzwerk unterstützten Funktionen zum Zeitpunkt der Implementierung bekannt sein sollten, und sollte nicht abhängen, einen Anruf an die für soziale Netzwerke in Echtzeit. Beispielsweise Outlook-Benutzer können Outlook offline starten, und kann nicht **GetCapabilities** Netzwerkkonnektivität zur Zeit beim Starten von Outlook abhängig. 
+Ein OSC-Anbieter (Outlook Social Connector) implementiert [ISocialProvider:: getCapabilities](isocialprovider-getcapabilities.md), und der osc ruft getCapabilities auf, um die vom Anbieter unterstützten Funktionen abzurufen. **** Die Funktionen, die Ihr Anbieter für Ihr soziales Netzwerk unterstützt, sollten zum Zeitpunkt der Implementierung bekannt sein und sollten nicht in Echtzeit von einem Anruf an das soziale Netzwerk abhängen. Beispielsweise können Outlook-Benutzer Outlook offline starten, und **getCapabilities** kann beim Start von Outlook nicht auf die Netzwerkkonnektivität zurückgreifen. 
   
-Wenn Sie den Anbieter zu testen, sollten Sie sicherstellen, dass durch das OSC-Anbieter-XML-Schema definierten **GetCapabilities** zurückgegebene _Ergebnisse_ Zeichenfolgenparameter **Capabilities** -Element entspricht. Weitere Informationen finden Sie unter [Funktionen XML-Elemente](capabilities-xml-elements.md).
+Beim Testen des Anbieters sollten Sie überprüfen, ob der von getCapabilities **** zurückgegebene _Ergebnis_ Zeichenfolgen-Parameter dem **Capabilities** -Element entspricht, wie vom osc-Anbieter-XML-Schema definiert. Weitere Informationen finden Sie unter [Capabilities XML Elements](capabilities-xml-elements.md).
   
 ## <a name="configuring-an-account"></a>Konfigurieren eines Kontos
 
-Wenn die OSC ein Konto konfiguriert werden, sollten Sie überprüfen, ob der Symbol für soziale Netzwerke und der Name angezeigt werden und dass die Create-Konto und Kennwort vergessen gemäß den Anbieter im Dialogfeld Konfiguration Konto angezeigt.
+Wenn der OSC ein Konto konfiguriert, sollten Sie überprüfen, ob das Symbol und der Name des sozialen Netzwerks angezeigt werden und dass die Hyperlinks Create-Account und Forgot-Password im Dialogfeld Kontokonfiguration, wie vom Anbieter angegeben, angezeigt werden.
   
-### <a name="social-network-icon-and-name"></a>Symbol für soziale Netzwerke und Namen
+### <a name="social-network-icon-and-name"></a>Soziales Netzwerksymbol und Name
 
-Nach der erste Funktionen, kann die OSC fortfahren, und das Symbol und den Namen für das soziale Netzwerk durch Aufrufen von [ISocialProvider::SocialNetworkIcon](isocialprovider-socialnetworkicon.md) und [ISocialProvider::SocialNetworkName](isocialprovider-socialnetworkname.md)abrufen. Führen Sie die folgenden Tests durch, um sicherzustellen, dass diese Methodenanrufe können getätigt werden.
+Nachdem Sie die Funktionen abgerufen haben, kann OSC fortfahren, das Symbol und den Namen für das soziale Netzwerk abzurufen, indem Sie [ISocialProvider:: SocialNetworkIcon](isocialprovider-socialnetworkicon.md) und [ISocialProvider:: SocialNetworkName](isocialprovider-socialnetworkname.md)aufrufen. Führen Sie die folgenden Tests aus, um sicherzustellen, dass diese Methodenaufrufe erfolgreich ausgeführt werden.
   
-|**Zu überprüfende Element**|**Erwartetes Verhalten**|
+|**Zu testendes Element**|**Erwartetes Verhalten**|
 |:-----|:-----|
-|Symbol für soziale Netzwerke  <br/> | Das Symbol für soziale Netzwerke wird in den folgenden Stellen in der OSC ordnungsgemäß angezeigt:  <br/>  Im Dialogfeld OSC für das **Soziale Netzwerkkonten**.  <br/>  In der Dropdown-Menü, wenn Sie versuchen, eine Person als Freund hinzuzufügen.  <br/>  In das Logo beim Freund folgen.  <br/> <br/>**Hinweis**: Sie können das Dialogfeld für das **Soziale Netzwerk-Konten** zugreifen, indem Sie durch Klicken auf die Registerkarte **Ansicht** in Outlook, in der Gruppe **Personenbereich** , auf **Personenbereich**, und klicken Sie dann auf **Kontoeinstellungen**.           |
-|Name für soziale Netzwerke  <br/> | Der Name für soziale Netzwerke wird ordnungsgemäß an den folgenden Stellen in der OSC angezeigt:  <br/>  Im Dialogfeld OSC für das **Soziale Netzwerkkonten**.  <br/>  In der Dropdown-Menü, wenn Sie versuchen, eine Person als Freund hinzuzufügen.  <br/>  Als Titel des Dialogfelds Kennwort, wenn Sie versuchen, das bestehende Kennwort zu ändern.  <br/> |
+|Symbol für soziale Netzwerke  <br/> | Das Symbol für soziale Netzwerke wird an den folgenden Stellen im OSC korrekt angezeigt:  <br/>  Im Dialogfeld OSC für **Konten für soziale Netzwerke**.  <br/>  Im Dropdownmenü, wenn Sie versuchen, eine Person als Freund hinzuzufügen.  <br/>  In der Plakette, wenn Sie einem Freund folgen.  <br/> <br/>**Hinweis**: Sie können auf das Dialogfeld für **Konten für soziale Netzwerke** zugreifen, indem Sie auf die Registerkarte **Ansicht** in Outlook, in der Gruppe **Personen Bereich** , auf **Personen Bereich**und dann auf **Kontoeinstellungen**klicken.           |
+|Name des sozialen Netzwerks  <br/> | Der Name des sozialen Netzwerks wird an den folgenden Stellen im OSC korrekt angezeigt:  <br/>  Im Dialogfeld OSC für **Konten für soziale Netzwerke**.  <br/>  Im Dropdownmenü, wenn Sie versuchen, eine Person als Freund hinzuzufügen.  <br/>  Als Titel des Dialogfelds Kennwort, wenn Sie versuchen, das vorhandene Kennwort zu ändern.  <br/> |
    
-### <a name="showing-hyperlinks-in-configuration-dialog"></a>Anzeige von Hyperlinks im Konfigurationsdialogfeld
+### <a name="showing-hyperlinks-in-configuration-dialog"></a>Anzeigen von Hyperlinks im Konfigurationsdialogfeld
 
-Nach dem Aufruf von **ISocialProvider::GetCapabilities**, verwendet das osc bilden den Wert des **HideHyperlinks** -Elements in der _Results_ -Parameter um zu ermitteln, ob die **Klicken Sie hier, um ein Konto erstellen** und **vergessen anzeigen oder Ausblenden der Kennwort?** Links in im Dialogfeld Konfiguration Konto. Stellen Sie sicher, dass wenn **HideHyperlinks** auf **false festgelegt**ist, wird die Kontokonfiguration dieser URLs angezeigt.
+Nach dem Aufruf von **ISocialProvider:: getCapabilities**verwendet der osc den Wert des **hideHyperlinks** -Elements im _results_ -Parameter, um zu bestimmen, ob das Feld **Klicken Sie hier, um ein Konto zu erstellen** und **Ihre Kennwort?** Hyperlinks im Dialogfeld Kontokonfiguration. Stellen Sie sicher, dass die Kontokonfiguration diese URLs anzeigt, wenn **hideHyperlinks** auf **false festgelegt**ist.
   
-### <a name="support-to-create-account"></a>Unterstützung für das Konto erstellen
+### <a name="support-to-create-account"></a>Unterstützung zum Erstellen eines Kontos
 
-Überprüfen Sie, ob der Parameter _Ergebnisse_ vom Methodenaufruf **ISocialProvider::GetCapabilities** hat das **HideHyperlinks** -Element auf **"false"** festgelegt und das **CreateAccountUrl** -Element auf **"true"**, klicken auf die URL festgelegt Öffnet die Seite im Standardwebbrowser.
+Stellen Sie sicher, dass der Parameter _results_ des **ISocialProvider:: getCapabilities** -Methodenaufrufs das **hideHyperlinks** -Element auf **false** festgelegt ist und das **createAccountUrl** -Element auf **true**festgelegt ist, indem Sie auf die URL Öffnet die Seite im Standardwebbrowser.
   
-### <a name="support-for-forgotten-password"></a>Unterstützung für Kennwort vergessen?
+### <a name="support-for-forgotten-password"></a>Unterstützung für vergessenes Kennwort
 
-Überprüfen Sie, ob der Parameter _Ergebnisse_ vom Methodenaufruf **ISocialProvider::GetCapabilities** hat das **HideHyperlinks** -Element auf **"false"** festgelegt und das **ForgotPasswordUrl** -Element auf **"true"**, klicken auf die URL festgelegt Öffnet die Seite im Standardwebbrowser.
+Stellen Sie sicher, dass der Parameter _results_ des **ISocialProvider:: getCapabilities** -Methodenaufrufs das **hideHyperlinks** -Element auf **false** festgelegt ist und das **forgotPasswordUrl** -Element auf **true**festgelegt ist, indem Sie auf die URL Öffnet die Seite im Standardwebbrowser.
   
 ## <a name="authenticating-users"></a>Authentifizierung von Benutzern
 
-Testen Sie die folgenden Szenarien unabhängig davon, ob Ihre OSC-Anbieter Standardauthentifizierung oder formularbasierte Authentifizierung unterstützt.
+Testen Sie die folgenden Szenarien, unabhängig davon, ob Ihr OSC-Anbieter die Standardauthentifizierung oder die formularbasierte Authentifizierung unterstützt.
   
 |**Szenario**|**Erwartetes Verhalten**|
 |:-----|:-----|
-|Zum ersten Mal anmelden.  <br/> |Der Benutzer kann sich erfolgreich in sozialen Netzwerken anmelden.  <br/> |
-|Erstellen Sie eine Anmeldung mit einem Kennwort eine Vielzahl von Zeichen, Interpunktionszeichen und Unicode-Zeichen bestehen.  <br/> |Der Benutzer kann sich erfolgreich mit dem sozialen Netzwerk, unabhängig von der Art der Zeichen in den Feldern Kennwort anmelden.  <br/> |
-|Das Dialogfeld für Anzeige der Benutzername oder das ID- **Konten für soziale Netzwerke**  <br/> |Nachdem der Benutzer erfolgreich mit dem Netzwerk angemeldet hat, zeigt die OSC-Dialogfeld für **Konten für soziale Netzwerke** , der angemeldete Benutzername oder die ID  <br/> |
-|Authentifizierung ein Fehler auftritt.  <br/> |Die OSC wird der Fehler **Ungültiger Benutzername oder das Kennwort**angezeigt.  <br/> |
-|Mit dem sozialen Netzwerk kann keine Verbindung hergestellt werden.  <br/> |Die OSC wird der Fehler **Server kann nicht gefunden werden**angezeigt.  <br/> |
-|Die Fähigkeit zum Abrufen von Elementen.  <br/> |Nachdem der Benutzer authentifiziert wurde, sollte alle Aktivitäten zugelassen werden. Es gibt keine Fehler Abrufen von Daten oder Aktivitäten Freunde.  <br/> |
-|Anmelden bei dem sozialen Netzwerk nach Outlook neu zu starten.  <br/> |Wenn der OSC-Anbieter ermöglicht das Zwischenspeichern des Kennworts, nachdem der Benutzer beim ersten authentifiziert wurde, wird der Benutzer nicht später für Anmeldeinformationen aufgefordert immer die OSC versucht, Daten aus dem sozialen Netzwerk erhalten.  <br/> |
+|Anmeldung zum ersten Mal.  <br/> |Der Benutzer kann sich erfolgreich beim sozialen Netzwerk anmelden.  <br/> |
+|Anmelden mit einem Kennwort aus einer Vielzahl von Zeichen, einschließlich Interpunktions-und Unicode-Zeichen.  <br/> |Der Benutzer kann sich erfolgreich beim sozialen Netzwerk anmelden, unabhängig von der Art der im Kennwort verwendeten Zeichen.  <br/> |
+|Das Dialogfeld für **Konten für soziale Netzwerke** , in dem der Benutzername oder die ID angezeigt wird.  <br/> |Nachdem der Benutzer sich erfolgreich beim Netzwerk angemeldet hat, zeigt das Dialogfeld des OSC für **soziale Netzwerke** den angemeldeten Benutzernamen oder die ID an.  <br/> |
+|Authentifizierung schlägt fehl.  <br/> |OSC zeigt den Fehler unGültiger **Benutzername oder Kennwort**an.  <br/> |
+|Es kann keine Verbindung mit dem sozialen Netzwerk hergestellt werden.  <br/> |OSC zeigt an, dass der Fehler **Server nicht gefunden wurde**.  <br/> |
+|In der Lage, Elemente abzurufen.  <br/> |Sobald der Benutzer authentifiziert wurde, sollten alle Aktivitäten zugelassen werden. Es gibt keine Fehler beim Einholen von Daten oder Aktivitäten von Freunden.  <br/> |
+|Anmelden beim sozialen Netzwerk nach einem Neustart von Outlook.  <br/> |Wenn der OSC-Anbieter das Zwischenspeichern des Kennworts zulässt, wird der Benutzer nach dem ersten Authentifizieren des Benutzers nicht mehr zur Eingabe von Anmeldeinformationen aufgefordert, wenn der OSC versucht, Daten aus dem sozialen Netzwerk abzurufen.  <br/> |
    
-Darüber hinaus Wenn Ihre OSC-Anbieter formularbasierte Authentifizierung unterstützt, test für die folgenden Szenario.
+Wenn Ihr OSC-Anbieter die formularbasierte Authentifizierung unterstützt, testen Sie darüber hinaus auch das folgende Szenario.
   
 |**Szenario**|**Erwartetes Verhalten**|
 |:-----|:-----|
-|Die OSC erste eine URL zu einem Formular für den Benutzer aus dem Aufruf von [ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md)anmelden.  <br/> |Die OSC öffnet die URL im Standardbrowser des Benutzers ein, und die Webseite ermöglicht es dem Benutzer zur Eingabe der Anmeldeinformationen zur Anmeldung bei dem sozialen Netzwerk.  <br/> |
+|OSC Ruft eine URL zu einem Formular ab, über das der Benutzer sich beim Aufrufen von [ISocialSession:: GetLogonUrl](isocialsession-getlogonurl.md)anmelden muss.  <br/> |OSC öffnet die URL im Standardbrowser des Benutzers, und auf der Webseite kann der Benutzeranmeldeinformationen eingeben, um sich beim sozialen Netzwerk anzumelden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Funktionen XML-Elemente](capabilities-xml-elements.md)  
-- [Standardauthentifizierung](basic-authentication.md) 
+- [Capabilities-XML-Elemente](capabilities-xml-elements.md)  
+- [Basic Authentication](basic-authentication.md) 
 - [Formularbasierte Authentifizierung](forms-based-authentication.md)
 - [Vorbereitung der Freigabe eines OSC-Providers](getting-ready-to-release-an-osc-provider.md)
 
