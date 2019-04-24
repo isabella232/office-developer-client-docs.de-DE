@@ -1,5 +1,5 @@
 ---
-title: Field2.IsComplex-Eigenschaft (DAO)
+title: Field2. isComplex-Eigenschaft (DAO)
 TOCTitle: IsComplex Property
 ms:assetid: ffc90e6e-e3ee-4f9b-ca6b-615199300d45
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837318(v=office.15)
@@ -8,33 +8,33 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d24229a0fc3122cc8a9fb20b041fc9fadc5ccb0a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292783"
 ---
-# <a name="field2iscomplex-property-dao"></a><span data-ttu-id="f4b19-102">Field2.IsComplex-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="f4b19-102">Field2.IsComplex property (DAO)</span></span>
+# <a name="field2iscomplex-property-dao"></a><span data-ttu-id="1ed4b-102">Field2. isComplex-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="1ed4b-102">Field2.IsComplex property (DAO)</span></span>
 
-<span data-ttu-id="f4b19-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f4b19-103">**Applies to**: Access 2013, Office 2013</span></span> 
+<span data-ttu-id="1ed4b-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1ed4b-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="f4b19-p101">Gibt einen **Boolean**-Wert zurück, der angibt, ob das angegebene Feld ein mehrwertiger Datentyp ist. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="f4b19-p101">Returns **Boolean** that indicates whether the specified field is a multi-valued data type. Read-only.</span></span>
+<span data-ttu-id="1ed4b-104">Gibt einen **Boolean**-Wert zurück, der angibt, ob das angegebene Feld ein mehrwertiger Datentyp ist.</span><span class="sxs-lookup"><span data-stu-id="1ed4b-104">Returns **Boolean** that indicates whether the specified field is a multi-valued data type.</span></span> <span data-ttu-id="1ed4b-105">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="1ed4b-105">Read-only.</span></span>
 
-## <a name="version-information"></a><span data-ttu-id="f4b19-106">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="f4b19-106">Version information</span></span>
+## <a name="version-information"></a><span data-ttu-id="1ed4b-106">Informationen zur Version</span><span class="sxs-lookup"><span data-stu-id="1ed4b-106">Version information</span></span>
 
-<span data-ttu-id="f4b19-107">Hinzugefügte Version: Access 2007</span><span class="sxs-lookup"><span data-stu-id="f4b19-107">Version added: Access 2007</span></span>
+<span data-ttu-id="1ed4b-107">Hinzugefügte Version: Access 2007</span><span class="sxs-lookup"><span data-stu-id="1ed4b-107">Version added: Access 2007</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f4b19-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="f4b19-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1ed4b-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="1ed4b-108">Syntax</span></span>
 
-<span data-ttu-id="f4b19-109">*Ausdruck* . IsComplex</span><span class="sxs-lookup"><span data-stu-id="f4b19-109">*expression* .IsComplex</span></span>
+<span data-ttu-id="1ed4b-109">*Ausdruck* . IsComplex</span><span class="sxs-lookup"><span data-stu-id="1ed4b-109">*expression* .IsComplex</span></span>
 
-<span data-ttu-id="f4b19-110">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f4b19-110">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="1ed4b-110">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="1ed4b-110">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f4b19-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f4b19-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ed4b-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1ed4b-111">Example</span></span>
 
-<span data-ttu-id="f4b19-112">Das folgende Beispiel zeigt, wie Sie durch ein Recordset-Objekt navigieren, das ein Mehrfachwertfeld enthält.</span><span class="sxs-lookup"><span data-stu-id="f4b19-112">The following example shows how to navigate a Recordset that contains a multi-value field.</span></span>
+<span data-ttu-id="1ed4b-112">Das folgende Beispiel zeigt, wie Sie durch ein Recordset-Objekt navigieren, das ein Mehrfachwertfeld enthält.</span><span class="sxs-lookup"><span data-stu-id="1ed4b-112">The following example shows how to navigate a Recordset that contains a multi-value field.</span></span>
 
-<span data-ttu-id="f4b19-113">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="f4b19-113">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="1ed4b-113">**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="1ed4b-113">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     Sub PrintStudentsAndClasses()

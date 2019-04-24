@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2c5ac2ab7230df6042b2939558e687d8c49a2ab5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306804"
 ---
-# <a name="relations-properties-dao"></a><span data-ttu-id="7ddb5-102">Relations-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="7ddb5-102">Relations properties (DAO)</span></span>
+# <a name="relations-properties-dao"></a><span data-ttu-id="dbff5-102">Relations-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="dbff5-102">Relations properties (DAO)</span></span>
 
-<span data-ttu-id="7ddb5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7ddb5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="dbff5-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dbff5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="7ddb5-104">Relations.Count-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="7ddb5-104">Relations.Count property (DAO)</span></span>](relations-count-property-dao.md)
+- [<span data-ttu-id="dbff5-104">Relations. Count-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="dbff5-104">Relations.Count property (DAO)</span></span>](relations-count-property-dao.md)
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8ae6adc835a75472570282650d1c9b86133a15ec
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297053"
 ---
-# <a name="appendchunk-and-getchunk-methods-example-vb"></a><span data-ttu-id="2f068-102">AppendChunk- und GetChunk-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="2f068-102">AppendChunk and GetChunk methods example (VB)</span></span>
+# <a name="appendchunk-and-getchunk-methods-example-vb"></a><span data-ttu-id="5a747-102">AppendChunk- und GetChunk-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="5a747-102">AppendChunk and GetChunk methods example (VB)</span></span>
 
 
-<span data-ttu-id="2f068-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2f068-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5a747-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5a747-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2f068-104">In diesem Beispiel werden die Methoden [AppendChunk](appendchunk-method-ado.md) und [GetChunk](getchunk-method-ado.md) verwendet, um ein Bildfeld mit Daten aus einem anderen Datensatz zu füllen.</span><span class="sxs-lookup"><span data-stu-id="2f068-104">This example uses the [AppendChunk](appendchunk-method-ado.md) and [GetChunk](getchunk-method-ado.md) methods to fill an image field with data from another record.</span></span>
+<span data-ttu-id="5a747-104">In diesem Beispiel werden die Methoden [AppendChunk](appendchunk-method-ado.md) und [GetChunk](getchunk-method-ado.md) verwendet, um ein Bildfeld mit Daten aus einem anderen Datensatz zu füllen.</span><span class="sxs-lookup"><span data-stu-id="5a747-104">This example uses the [AppendChunk](appendchunk-method-ado.md) and [GetChunk](getchunk-method-ado.md) methods to fill an image field with data from another record.</span></span>
 
 ```vb 
  

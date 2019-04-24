@@ -1,5 +1,5 @@
 ---
-title: Recordset2.MoveFirst-Methode (DAO)
+title: Recordset2. MoveFirst-Methode (DAO)
 TOCTitle: MoveFirst Method
 ms:assetid: 74b186d0-8f6a-d136-a563-04f58d67b122
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195879(v=office.15)
@@ -8,38 +8,38 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a54658e1259a49a1c92facf988076e6b6e1dd961
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309660"
 ---
-# <a name="recordset2movefirst-method-dao"></a><span data-ttu-id="ad12b-102">Recordset2.MoveFirst-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="ad12b-102">Recordset2.MoveFirst method (DAO)</span></span>
+# <a name="recordset2movefirst-method-dao"></a><span data-ttu-id="abcc2-102">Recordset2. MoveFirst-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="abcc2-102">Recordset2.MoveFirst method (DAO)</span></span>
 
 
-<span data-ttu-id="ad12b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ad12b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="abcc2-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="abcc2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ad12b-104">Wechselt zum ersten Datensatz in einem angegebenen **Recordset**-Objekt und macht diesen zum aktuellen Datensatz.</span><span class="sxs-lookup"><span data-stu-id="ad12b-104">Moves to the first record in a specified **Recordset** object and make that record the current record.</span></span>
+<span data-ttu-id="abcc2-104">Wechselt zum ersten Datensatz in einem angegebenen **Recordset**-Objekt und macht diesen zum aktuellen Datensatz.</span><span class="sxs-lookup"><span data-stu-id="abcc2-104">Moves to the first record in a specified **Recordset** object and make that record the current record.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ad12b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="ad12b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="abcc2-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="abcc2-105">Syntax</span></span>
 
-<span data-ttu-id="ad12b-106">*Ausdruck* . MoveFirst</span><span class="sxs-lookup"><span data-stu-id="ad12b-106">*expression* .MoveFirst</span></span>
+<span data-ttu-id="abcc2-106">*Ausdruck* . MoveFirst</span><span class="sxs-lookup"><span data-stu-id="abcc2-106">*expression* .MoveFirst</span></span>
 
-<span data-ttu-id="ad12b-107">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="ad12b-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="abcc2-107">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="abcc2-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="ad12b-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ad12b-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="abcc2-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="abcc2-108">Remarks</span></span>
 
-<span data-ttu-id="ad12b-109">Verwenden Sie die **Move**-Methoden, um von einem Datensatz zum nächsten zu wechseln, ohne eine Bedingung anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="ad12b-109">Use the **Move** methods to move from record to record without applying a condition.</span></span>
+<span data-ttu-id="abcc2-109">Verwenden Sie die **Move**-Methoden, um von einem Datensatz zum nächsten zu wechseln, ohne eine Bedingung anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="abcc2-109">Use the **Move** methods to move from record to record without applying a condition.</span></span>
 
-<span data-ttu-id="ad12b-p101">Wenn Sie den aktuellen Datensatz bearbeiten, sollten Sie die Änderungen mit der **Update**-Methode speichern, bevor Sie zu einem anderen Datensatz wechseln. Ohne diese Aktualisierung gehen die Änderungen beim Wechseln zwischen Datensätzen ohne Warnung verloren.</span><span class="sxs-lookup"><span data-stu-id="ad12b-p101">If you edit the current record, be sure you use the **Update** method to save the changes before you move to another record. If you move to another record without updating, your changes are lost without warning.</span></span>
+<span data-ttu-id="abcc2-p101">Wenn Sie den aktuellen Datensatz bearbeiten, sollten Sie die Änderungen mit der **Update**-Methode speichern, bevor Sie zu einem anderen Datensatz wechseln. Ohne diese Aktualisierung gehen die Änderungen beim Wechseln zwischen Datensätzen ohne Warnung verloren.</span><span class="sxs-lookup"><span data-stu-id="abcc2-p101">If you edit the current record, be sure you use the **Update** method to save the changes before you move to another record. If you move to another record without updating, your changes are lost without warning.</span></span>
 
-<span data-ttu-id="ad12b-p102">Beim Öffnen eines **Recordset**-Objekts ist der erste Datensatz aktuell, und die **BOF**-Eigenschaft ist auf **False** festgelegt. Wenn **Recordset** keine Datensätze enthält, ist die **BOF**-Eigenschaft auf **True** festgelegt, und es ist kein aktueller Datensatz vorhanden.</span><span class="sxs-lookup"><span data-stu-id="ad12b-p102">When you open a **Recordset**, the first record is current and the **BOF** property is **False**. If the **Recordset** contains no records, the **BOF** property is **True**, and there is no current record.</span></span>
+<span data-ttu-id="abcc2-p102">Beim Öffnen eines **Recordset**-Objekts ist der erste Datensatz aktuell, und die **BOF**-Eigenschaft ist auf **False** festgelegt. Wenn **Recordset** keine Datensätze enthält, ist die **BOF**-Eigenschaft auf **True** festgelegt, und es ist kein aktueller Datensatz vorhanden.</span><span class="sxs-lookup"><span data-stu-id="abcc2-p102">When you open a **Recordset**, the first record is current and the **BOF** property is **False**. If the **Recordset** contains no records, the **BOF** property is **True**, and there is no current record.</span></span>
 
-<span data-ttu-id="ad12b-114">Ist der erste bzw. letzte Datensatz beim Verwenden von **MoveFirst** oder **MoveLast** bereits aktuell, ändert sich der aktuelle Datensatz nicht.</span><span class="sxs-lookup"><span data-stu-id="ad12b-114">If the first or last record is already current when you use **MoveFirst** or **MoveLast**, the current record doesn't change.</span></span>
+<span data-ttu-id="abcc2-114">Ist der erste bzw. letzte Datensatz beim Verwenden von **MoveFirst** oder **MoveLast** bereits aktuell, ändert sich der aktuelle Datensatz nicht.</span><span class="sxs-lookup"><span data-stu-id="abcc2-114">If the first or last record is already current when you use **MoveFirst** or **MoveLast**, the current record doesn't change.</span></span>
 
-<span data-ttu-id="ad12b-115">Wenn Recordset vom Typ Tabelle **Recordset-Objekt** (nur Microsoft Access-Arbeitsbereiche) bezieht, folgt die Verschiebung den aktuellen Index.</span><span class="sxs-lookup"><span data-stu-id="ad12b-115">If recordset refers to a table-type **Recordset** (Microsoft Access workspaces only), movement follows the current index.</span></span> <span data-ttu-id="ad12b-116">Sie können den aktuellen Index mit der **Index** -Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="ad12b-116">You can set the current index by using the **Index** property.</span></span> <span data-ttu-id="ad12b-117">Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.</span><span class="sxs-lookup"><span data-stu-id="ad12b-117">If you don't set the current index, the order of returned records is undefined.</span></span>
+<span data-ttu-id="abcc2-115">Wenn Recordset auf ein **Recordset** vom Typ "Tabelle" verweist (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index.</span><span class="sxs-lookup"><span data-stu-id="abcc2-115">If recordset refers to a table-type **Recordset** (Microsoft Access workspaces only), movement follows the current index.</span></span> <span data-ttu-id="abcc2-116">You can set the current index by using the **Index** property.</span><span class="sxs-lookup"><span data-stu-id="abcc2-116">You can set the current index by using the **Index** property.</span></span> <span data-ttu-id="abcc2-117">Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.</span><span class="sxs-lookup"><span data-stu-id="abcc2-117">If you don't set the current index, the order of returned records is undefined.</span></span>
 
-<span data-ttu-id="ad12b-118">Sie können nicht auf ein **Recordset** -Objekt weiterleiten – nur – Geben Sie die **MoveFirst**, **MoveLast**und **MovePrevious** -Methoden verwenden.</span><span class="sxs-lookup"><span data-stu-id="ad12b-118">You can't use the **MoveFirst**, **MoveLast**, and **MovePrevious** methods on a forward–only–type **Recordset** object.</span></span>
+<span data-ttu-id="abcc2-118">Die Methoden **MoveFirst**, **MoveLast** und **MovePrevious** können für ein **Recordset**-Objekt vom Typ "Forward-only" nicht verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="abcc2-118">You can't use the **MoveFirst**, **MoveLast**, and **MovePrevious** methods on a forward–only–type **Recordset** object.</span></span>
 
-<span data-ttu-id="ad12b-119">Verwenden Sie die **Move**-Methode, um die Position des aktuellen Datensatzes in einem **Recordset**-Objekt um eine bestimmte Anzahl von Datensätzen vorwärts oder rückwärts zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="ad12b-119">To move the position of the current record in a **Recordset** object a specific number of records forward or backward, use the **Move** method.</span></span>
+<span data-ttu-id="abcc2-119">Um die Position des aktuellen Datensatzes in einem **Recordset**-Objekt um eine bestimmte Anzahl von Datensätzen nach vorne oder hinten zu verschieben, verwenden Sie die **Move**-Methode.</span><span class="sxs-lookup"><span data-stu-id="abcc2-119">To move the position of the current record in a **Recordset** object a specific number of records forward or backward, use the **Move** method.</span></span>
 

@@ -1,5 +1,5 @@
 ---
-title: Workspaces-Objektverweis (DAO)
+title: Arbeitsbereichsobjekt Referenz (DAO)
 TOCTitle: Workspaces
 ms:assetid: eb32673a-ffbd-4f6a-9a11-60c93f632be3
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn126013(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6aaba4ab42b32033123cd1723108017dfbedeecf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302625"
 ---
-# <a name="workspaces-object-reference-dao"></a><span data-ttu-id="973d0-102">Workspaces-Objektverweis (DAO)</span><span class="sxs-lookup"><span data-stu-id="973d0-102">Workspaces object reference (DAO)</span></span>
+# <a name="workspaces-object-reference-dao"></a><span data-ttu-id="2788f-102">Arbeitsbereichsobjekt Referenz (DAO)</span><span class="sxs-lookup"><span data-stu-id="2788f-102">Workspaces object reference (DAO)</span></span>
 
-<span data-ttu-id="973d0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="973d0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2788f-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2788f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="973d0-104">Workspaces-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="973d0-104">Workspaces collection (DAO)</span></span>](workspaces-collection-dao.md)
-- [<span data-ttu-id="973d0-105">Workspaces-Member (DAO)</span><span class="sxs-lookup"><span data-stu-id="973d0-105">Workspaces members (DAO)</span></span>](workspaces-members-dao.md)
-- [<span data-ttu-id="973d0-106">Workspaces-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="973d0-106">Workspaces properties (DAO)</span></span>](workspaces-properties-dao.md)
-- [<span data-ttu-id="973d0-107">Workspaces-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="973d0-107">Workspaces methods (DAO)</span></span>](workspaces-methods-dao.md)
+- [<span data-ttu-id="2788f-104">Workspaces-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="2788f-104">Workspaces collection (DAO)</span></span>](workspaces-collection-dao.md)
+- [<span data-ttu-id="2788f-105">Workspaces-Elemente (DAO)</span><span class="sxs-lookup"><span data-stu-id="2788f-105">Workspaces members (DAO)</span></span>](workspaces-members-dao.md)
+- [<span data-ttu-id="2788f-106">Workspaces-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="2788f-106">Workspaces properties (DAO)</span></span>](workspaces-properties-dao.md)
+- [<span data-ttu-id="2788f-107">Workspaces-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="2788f-107">Workspaces methods (DAO)</span></span>](workspaces-methods-dao.md)
 

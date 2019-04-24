@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 17bb30a3af97c3ec83fd44c8a9e5d3c5dbf12d2a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295406"
 ---
-# <a name="create-method-example-vc"></a><span data-ttu-id="84d4f-102">Create-Methode (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="84d4f-102">Create method example (VC++)</span></span>
+# <a name="create-method-example-vc"></a><span data-ttu-id="34b4b-102">Create-Methode (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="34b4b-102">Create method example (VC++)</span></span>
 
 
-<span data-ttu-id="84d4f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="84d4f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="34b4b-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="34b4b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="84d4f-104">Im folgenden Code wird das Erstellen einer neuen Microsoft Jet-Datenbank mithilfe der [Create](create-method-adox.md)-Methode gezeigt.</span><span class="sxs-lookup"><span data-stu-id="84d4f-104">The following code shows how to create a new Microsoft Jet database with the [Create](create-method-adox.md) method.</span></span>
+<span data-ttu-id="34b4b-104">Im folgenden Code wird das Erstellen einer neuen Microsoft Jet-Datenbank mithilfe der [Create](create-method-adox.md)-Methode gezeigt.</span><span class="sxs-lookup"><span data-stu-id="34b4b-104">The following code shows how to create a new Microsoft Jet database with the [Create](create-method-adox.md) method.</span></span>
 
 ```cpp 
  

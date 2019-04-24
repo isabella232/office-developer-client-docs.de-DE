@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e97e0c72320ef92d1444267265be0b89129d2876
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309276"
 ---
-# <a name="recordsets-methods-dao"></a><span data-ttu-id="f38d4-102">Recordsets-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="f38d4-102">Recordsets methods (DAO)</span></span>
+# <a name="recordsets-methods-dao"></a><span data-ttu-id="b9f04-102">Recordsets-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="b9f04-102">Recordsets methods (DAO)</span></span>
 
-<span data-ttu-id="f38d4-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f38d4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b9f04-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b9f04-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="f38d4-104">Recordsets.Refresh-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="f38d4-104">Recordsets.Refresh method (DAO)</span></span>](recordsets-refresh-method-dao.md)
+- [<span data-ttu-id="b9f04-104">Recordsets. Refresh-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="b9f04-104">Recordsets.Refresh method (DAO)</span></span>](recordsets-refresh-method-dao.md)
 

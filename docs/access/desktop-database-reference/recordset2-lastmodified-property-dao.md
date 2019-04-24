@@ -1,5 +1,5 @@
 ---
-title: Recordset2.LastModified-Eigenschaft (DAO)
+title: Recordset2. LastModified-Eigenschaft (DAO)
 TOCTitle: LastModified Property
 ms:assetid: 1c13cb43-23b5-73b6-af00-a3676cc37cc7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845726(v=office.15)
@@ -8,32 +8,32 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c3d9337c36a2b126f4ce6d9a27ae6d26712a7b6a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309427"
 ---
-# <a name="recordset2lastmodified-property-dao"></a><span data-ttu-id="f741b-102">Recordset2.LastModified-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="f741b-102">Recordset2.LastModified property (DAO)</span></span>
+# <a name="recordset2lastmodified-property-dao"></a><span data-ttu-id="36a63-102">Recordset2. LastModified-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="36a63-102">Recordset2.LastModified property (DAO)</span></span>
 
 
-<span data-ttu-id="f741b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f741b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="36a63-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="36a63-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f741b-104">Gibt ein Lesezeichen zurück, das den zuletzt hinzugefügten oder geänderten Datensatz angibt.</span><span class="sxs-lookup"><span data-stu-id="f741b-104">Returns a ookmark indicating the most recently added or changed record.</span></span>
+<span data-ttu-id="36a63-104">Gibt ein Lesezeichen zurück, das den zuletzt hinzugefügten oder geänderten Datensatz angibt.</span><span class="sxs-lookup"><span data-stu-id="36a63-104">Returns a ookmark indicating the most recently added or changed record.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f741b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="f741b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="36a63-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="36a63-105">Syntax</span></span>
 
-<span data-ttu-id="f741b-106">*Ausdruck* . LastModified</span><span class="sxs-lookup"><span data-stu-id="f741b-106">*expression* .LastModified</span></span>
+<span data-ttu-id="36a63-106">*Ausdruck* . LastModified</span><span class="sxs-lookup"><span data-stu-id="36a63-106">*expression* .LastModified</span></span>
 
-<span data-ttu-id="f741b-107">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f741b-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="36a63-107">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="36a63-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="f741b-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f741b-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="36a63-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="36a63-108">Remarks</span></span>
 
-<span data-ttu-id="f741b-p101">Mit der LastModified-Eigenschaft können Sie den zuletzt hinzugefügten oder aktualisierten Datensatz verschieben. Verwenden Sie die LastModified-Eigenschaft für Recordset-Objekte vom Typ Tabelle und Dynaset. Damit die LastModified-Eigenschaft einen Wert hat, muss ein Datensatz im Recordset-Objekt selbst hinzugefügt oder geändert werden.</span><span class="sxs-lookup"><span data-stu-id="f741b-p101">You can use the **LastModified** property to move to the most recently added or updated record. Use the **LastModified** property with table- and dynaset-type **[Recordset](recordset-object-dao.md)** objects. A record must be added or modified in the **Recordset** object itself in order for the **LastModified** property to have a value.</span></span>
+<span data-ttu-id="36a63-p101">You can use the **LastModified** property to move to the most recently added or updated record. Use the **LastModified** property with table- and dynaset-type **[Recordset](recordset-object-dao.md)** objects. A record must be added or modified in the **Recordset** object itself in order for the **LastModified** property to have a value.</span><span class="sxs-lookup"><span data-stu-id="36a63-p101">You can use the **LastModified** property to move to the most recently added or updated record. Use the **LastModified** property with table- and dynaset-type **[Recordset](recordset-object-dao.md)** objects. A record must be added or modified in the **Recordset** object itself in order for the **LastModified** property to have a value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f741b-112">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f741b-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="36a63-112">Beispiel</span><span class="sxs-lookup"><span data-stu-id="36a63-112">Example</span></span>
 
-<span data-ttu-id="f741b-113">In diesem Beispiel wird die **LastModified**-Eigenschaft verwendet, um den aktuellen Datensatzzeiger auf einen geänderten Datensatz sowie auf einen neu erstellten Datensatz zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="f741b-113">This example uses the **LastModified** property to move the current record pointer to both a record that has been modified and a newly created record.</span></span>
+<span data-ttu-id="36a63-113">In diesem Beispiel wird die **LastModified**-Eigenschaft verwendet, um den aktuellen Datensatzzeiger auf einen geänderten Datensatz sowie auf einen neu erstellten Datensatz zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="36a63-113">This example uses the **LastModified** property to move the current record pointer to both a record that has been modified and a newly created record.</span></span>
 
 ```vb
     Sub LastModifiedX() 
@@ -94,7 +94,7 @@ ms.locfileid: "28712862"
 
 <br/>
 
-<span data-ttu-id="f741b-p102">Dieses Beispiel verwendet die **AddNew** -Methode, um einen neuen Datensatz mit dem angegebenen Namen zu erstellen. Die "AddName"-Funktion ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f741b-p102">This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.</span></span>
+<span data-ttu-id="36a63-p102">This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="36a63-p102">This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.</span></span>
 
 ```vb
     Sub AddNewX() 

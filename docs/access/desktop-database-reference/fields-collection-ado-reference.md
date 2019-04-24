@@ -1,5 +1,5 @@
 ---
-title: Feldreferenz-Auflistung (ADO)
+title: Fields-Auflistung (ADO)-Verweis
 TOCTitle: Fields collection (ADO)
 ms:assetid: bf2f780e-8a29-4d20-a5ec-80567860d576
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249929(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 23da290e3d0e6b38ab28f3fda396d9f7c17d93c0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292566"
 ---
-# <a name="fields-collection-ado-reference"></a><span data-ttu-id="99f09-102">Feldreferenz-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="99f09-102">Fields collection (ADO) reference</span></span>
+# <a name="fields-collection-ado-reference"></a><span data-ttu-id="60fa0-102">Fields-Auflistung (ADO)-Verweis</span><span class="sxs-lookup"><span data-stu-id="60fa0-102">Fields collection (ADO) reference</span></span>
 
-<span data-ttu-id="99f09-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="99f09-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="60fa0-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="60fa0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="99f09-104">Fields-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="99f09-104">Fields collection (ADO)</span></span>](fields-collection-ado.md)
-- [<span data-ttu-id="99f09-105">Fields-Auflistung: Eigenschaften, Methoden und Ereignisse</span><span class="sxs-lookup"><span data-stu-id="99f09-105">Fields collection properties, methods, and events</span></span>](fields-collection-properties-methods-and-events.md)
+- [<span data-ttu-id="60fa0-104">Fields-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="60fa0-104">Fields collection (ADO)</span></span>](fields-collection-ado.md)
+- [<span data-ttu-id="60fa0-105">Eigenschaften, Methoden und Ereignisse der Fields-Auflistung</span><span class="sxs-lookup"><span data-stu-id="60fa0-105">Fields collection properties, methods, and events</span></span>](fields-collection-properties-methods-and-events.md)
 
