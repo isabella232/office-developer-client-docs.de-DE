@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30dd19d9-0840-49e9-aec6-ec8d19b1f91d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8f4e62a8eb1b5e61cb0223c66b921e15ab9423b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 55cba4f7cfb3fa8035117348b10ab1d6d3082710
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358114"
 ---
-# <a name="spropattrarray"></a><span data-ttu-id="99fc3-103">SPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="99fc3-103">SPropAttrArray</span></span>
+# <a name="spropattrarray"></a><span data-ttu-id="0af25-103">SPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="0af25-103">SPropAttrArray</span></span>
 
   
   
-<span data-ttu-id="99fc3-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="99fc3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0af25-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0af25-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="99fc3-105">Enthält eine Liste der Attribute für die Eigenschaften eines Objekts.</span><span class="sxs-lookup"><span data-stu-id="99fc3-105">Contains a list of attributes for properties of an object.</span></span> 
+<span data-ttu-id="0af25-105">Enthält eine Liste der Attribute für die Eigenschaften eines Objekts.</span><span class="sxs-lookup"><span data-stu-id="0af25-105">Contains a list of attributes for properties of an object.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="99fc3-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="99fc3-106">Header file:</span></span>  <br/> |<span data-ttu-id="99fc3-107">IMessage.h</span><span class="sxs-lookup"><span data-stu-id="99fc3-107">Imessage.h</span></span>  <br/> |
-|<span data-ttu-id="99fc3-108">Verwandte Makros:</span><span class="sxs-lookup"><span data-stu-id="99fc3-108">Related macros:</span></span>  <br/> |<span data-ttu-id="99fc3-109">[CbNewSPropAttrArray](cbnewspropattrarray.md), [CbSPropAttrArray](cbspropattrarray.md)</span><span class="sxs-lookup"><span data-stu-id="99fc3-109">[CbNewSPropAttrArray](cbnewspropattrarray.md), [CbSPropAttrArray](cbspropattrarray.md)</span></span> <br/> |
+|<span data-ttu-id="0af25-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="0af25-106">Header file:</span></span>  <br/> |<span data-ttu-id="0af25-107">IMessage. h</span><span class="sxs-lookup"><span data-stu-id="0af25-107">Imessage.h</span></span>  <br/> |
+|<span data-ttu-id="0af25-108">Verwandte Makros:</span><span class="sxs-lookup"><span data-stu-id="0af25-108">Related macros:</span></span>  <br/> |<span data-ttu-id="0af25-109">[CbNewSPropAttrArray](cbnewspropattrarray.md), [CbSPropAttrArray](cbspropattrarray.md)</span><span class="sxs-lookup"><span data-stu-id="0af25-109">[CbNewSPropAttrArray](cbnewspropattrarray.md), [CbSPropAttrArray](cbspropattrarray.md)</span></span> <br/> |
    
 ```cpp
 typedef struct
@@ -41,40 +41,40 @@ typedef struct
 
 ```
 
-## <a name="members"></a><span data-ttu-id="99fc3-110">Elemente</span><span class="sxs-lookup"><span data-stu-id="99fc3-110">Members</span></span>
+## <a name="members"></a><span data-ttu-id="0af25-110">Elemente</span><span class="sxs-lookup"><span data-stu-id="0af25-110">Members</span></span>
 
- <span data-ttu-id="99fc3-111">**cValues**</span><span class="sxs-lookup"><span data-stu-id="99fc3-111">**cValues**</span></span>
+ <span data-ttu-id="0af25-111">**cValues**</span><span class="sxs-lookup"><span data-stu-id="0af25-111">**cValues**</span></span>
   
-> <span data-ttu-id="99fc3-112">Anzahl der Attribute im **aPropAttr** -Member.</span><span class="sxs-lookup"><span data-stu-id="99fc3-112">Count of property attributes in the **aPropAttr** member.</span></span> 
+> <span data-ttu-id="0af25-112">Die Anzahl der Eigenschaftsattribute im **aPropAttr** -Element.</span><span class="sxs-lookup"><span data-stu-id="0af25-112">Count of property attributes in the **aPropAttr** member.</span></span> 
     
- <span data-ttu-id="99fc3-113">**aPropAttr**</span><span class="sxs-lookup"><span data-stu-id="99fc3-113">**aPropAttr**</span></span>
+ <span data-ttu-id="0af25-113">**aPropAttr**</span><span class="sxs-lookup"><span data-stu-id="0af25-113">**aPropAttr**</span></span>
   
-> <span data-ttu-id="99fc3-114">Ein Array von Eigenschaftsattribute.</span><span class="sxs-lookup"><span data-stu-id="99fc3-114">An array of property attributes.</span></span> <span data-ttu-id="99fc3-115">Gültige Werte für Attribute sind wie folgt:</span><span class="sxs-lookup"><span data-stu-id="99fc3-115">Valid values for attributes are as follows:</span></span>
+> <span data-ttu-id="0af25-114">Ein Array von Eigenschaftsattributen.</span><span class="sxs-lookup"><span data-stu-id="0af25-114">An array of property attributes.</span></span> <span data-ttu-id="0af25-115">Gültige Werte für Attribute lauten wie folgt:</span><span class="sxs-lookup"><span data-stu-id="0af25-115">Valid values for attributes are as follows:</span></span>
     
-    - <span data-ttu-id="99fc3-116">PROPATTR_MANDATORY</span><span class="sxs-lookup"><span data-stu-id="99fc3-116">PROPATTR_MANDATORY</span></span>
+    - <span data-ttu-id="0af25-116">PROPATTR_MANDATORY</span><span class="sxs-lookup"><span data-stu-id="0af25-116">PROPATTR_MANDATORY</span></span>
     
-    - <span data-ttu-id="99fc3-117">PROPATTR_READABLE</span><span class="sxs-lookup"><span data-stu-id="99fc3-117">PROPATTR_READABLE</span></span>
+    - <span data-ttu-id="0af25-117">PROPATTR_READABLE</span><span class="sxs-lookup"><span data-stu-id="0af25-117">PROPATTR_READABLE</span></span>
     
-    - <span data-ttu-id="99fc3-118">PROPATTR_WRITEABLE</span><span class="sxs-lookup"><span data-stu-id="99fc3-118">PROPATTR_WRITEABLE</span></span>
+    - <span data-ttu-id="0af25-118">PROPATTR_WRITEABLE</span><span class="sxs-lookup"><span data-stu-id="0af25-118">PROPATTR_WRITEABLE</span></span>
     
-    - <span data-ttu-id="99fc3-119">PROPATTR_NOT_PRESENT</span><span class="sxs-lookup"><span data-stu-id="99fc3-119">PROPATTR_NOT_PRESENT</span></span>
+    - <span data-ttu-id="0af25-119">PROPATTR_NOT_PRESENT</span><span class="sxs-lookup"><span data-stu-id="0af25-119">PROPATTR_NOT_PRESENT</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="99fc3-120">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="99fc3-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0af25-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="0af25-120">Remarks</span></span>
 
-<span data-ttu-id="99fc3-121">Die Struktur **SPropAttrArray** wird vom Daten Property-Objekten, die implementiert werden die [IPropData: IMAPIProp](ipropdataimapiprop.md) Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="99fc3-121">The **SPropAttrArray** structure is used by property data objects that implement the [IPropData : IMAPIProp](ipropdataimapiprop.md) interface.</span></span> <span data-ttu-id="99fc3-122">Darüber hinaus wird von der MAPI-Implementierung der [IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md) also basierend auf strukturierter Speicher.</span><span class="sxs-lookup"><span data-stu-id="99fc3-122">It is also used by MAPI's implementation of [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md) that is based on structured storage.</span></span> 
+<span data-ttu-id="0af25-121">Die **SPropAttrArray** -Struktur wird von Eigenschaftendaten Objekten verwendet, die die [IPropData: IMAPIProp](ipropdataimapiprop.md) -Schnittstelle implementieren.</span><span class="sxs-lookup"><span data-stu-id="0af25-121">The **SPropAttrArray** structure is used by property data objects that implement the [IPropData : IMAPIProp](ipropdataimapiprop.md) interface.</span></span> <span data-ttu-id="0af25-122">Sie wird auch von der MAPI-Implementierung von [IMAPIMessageSite verwendet: IUnknown](imapimessagesiteiunknown.md) , die auf strukturiertem Speicher basiert.</span><span class="sxs-lookup"><span data-stu-id="0af25-122">It is also used by MAPI's implementation of [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md) that is based on structured storage.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="99fc3-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="99fc3-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0af25-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0af25-123">See also</span></span>
 
 
 
-[<span data-ttu-id="99fc3-124">IPropData: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="99fc3-124">IPropData : IMAPIProp</span></span>](ipropdataimapiprop.md)
+[<span data-ttu-id="0af25-124">IPropData: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="0af25-124">IPropData : IMAPIProp</span></span>](ipropdataimapiprop.md)
   
-[<span data-ttu-id="99fc3-125">IMAPIMessageSite : IUnknown</span><span class="sxs-lookup"><span data-stu-id="99fc3-125">IMAPIMessageSite : IUnknown</span></span>](imapimessagesiteiunknown.md)
+[<span data-ttu-id="0af25-125">IMAPIMessageSite : IUnknown</span><span class="sxs-lookup"><span data-stu-id="0af25-125">IMAPIMessageSite : IUnknown</span></span>](imapimessagesiteiunknown.md)
   
-[<span data-ttu-id="99fc3-126">CbNewSPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="99fc3-126">CbNewSPropAttrArray</span></span>](cbnewspropattrarray.md)
+[<span data-ttu-id="0af25-126">CbNewSPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="0af25-126">CbNewSPropAttrArray</span></span>](cbnewspropattrarray.md)
   
-[<span data-ttu-id="99fc3-127">CbSPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="99fc3-127">CbSPropAttrArray</span></span>](cbspropattrarray.md)
+[<span data-ttu-id="0af25-127">CbSPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="0af25-127">CbSPropAttrArray</span></span>](cbspropattrarray.md)
 
 
-[<span data-ttu-id="99fc3-128">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="99fc3-128">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="0af25-128">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="0af25-128">MAPI Structures</span></span>](mapi-structures.md)
 

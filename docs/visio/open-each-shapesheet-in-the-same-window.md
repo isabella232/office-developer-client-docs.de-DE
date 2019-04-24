@@ -1,5 +1,5 @@
 ---
-title: Öffnen jedes ShapeSheets im demselben Fenster
+title: Öffnen aller ShapeSheets im gleichen Fenster
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6e178e26-e696-f38b-4720-10ce0e6ad110
 description: ''
-ms.openlocfilehash: aba759d5ad170e94a388f9186fbb41798cb33e79
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 45616be6a1d59bd1464222897050de324cebe80e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360963"
 ---
-# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="ed1cc-102">Öffnen jedes ShapeSheets im demselben Fenster</span><span class="sxs-lookup"><span data-stu-id="ed1cc-102">Open Each ShapeSheet in the Same Window</span></span>
+# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="c026e-102">Öffnen aller ShapeSheets im gleichen Fenster</span><span class="sxs-lookup"><span data-stu-id="c026e-102">Open Each ShapeSheet in the Same Window</span></span>
 
-1. <span data-ttu-id="ed1cc-103">Klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Optionen**, und klicken Sie dann auf **Erweitert**.</span><span class="sxs-lookup"><span data-stu-id="ed1cc-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
+1. <span data-ttu-id="c026e-103">Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Optionen**und dann auf **erweitert**.</span><span class="sxs-lookup"><span data-stu-id="c026e-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
     
-2. <span data-ttu-id="ed1cc-104">Aktivieren Sie unter **Allgemein** das Kontrollkästchen **Alle ShapeSheets in einem Fenster öffnen**.</span><span class="sxs-lookup"><span data-stu-id="ed1cc-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
+2. <span data-ttu-id="c026e-104">Aktivieren Sie unter **Allgemein** das Kontrollkästchen **Alle ShapeSheets in einem Fenster öffnen**.</span><span class="sxs-lookup"><span data-stu-id="c026e-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
     
-3. <span data-ttu-id="ed1cc-105">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="ed1cc-105">Click **OK**.</span></span> 
+3. <span data-ttu-id="c026e-105">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="c026e-105">Click **OK**.</span></span> 
     
 

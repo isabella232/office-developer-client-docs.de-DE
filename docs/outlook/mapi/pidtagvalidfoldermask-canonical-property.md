@@ -1,5 +1,5 @@
 ---
-title: PidTagValidFolderMask (kanonische Eigenschaft)
+title: Kanonische Pidtagvalidfoldermask (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,88 +11,88 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83a44aee-5269-42a8-8078-4bc063bb6e29
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 605e2f528ea0afc1a35348320abaffeb142d9921
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 925e0eb60d55349ded114b827b6ca67e3b5ac1ce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360746"
 ---
-# <a name="pidtagvalidfoldermask-canonical-property"></a><span data-ttu-id="2602e-103">PidTagValidFolderMask (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="2602e-103">PidTagValidFolderMask Canonical Property</span></span>
+# <a name="pidtagvalidfoldermask-canonical-property"></a><span data-ttu-id="7811e-103">Kanonische Pidtagvalidfoldermask (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="7811e-103">PidTagValidFolderMask Canonical Property</span></span>
 
   
   
-<span data-ttu-id="2602e-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2602e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="7811e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7811e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2602e-105">Enthält eine Bitmaske der Flags, die die Gültigkeit der Eintragsbezeichner der Ordner in einem Nachrichtenspeicher angeben.</span><span class="sxs-lookup"><span data-stu-id="2602e-105">Contains a bitmask of flags that indicate the validity of the entry identifiers of the folders in a message store.</span></span>
+<span data-ttu-id="7811e-105">Enthält eine Bitmaske von Flags, die die Gültigkeit der Eintragsbezeichner der Ordner in einem Nachrichtenspeicher kennzeichnen.</span><span class="sxs-lookup"><span data-stu-id="7811e-105">Contains a bitmask of flags that indicate the validity of the entry identifiers of the folders in a message store.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="2602e-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="2602e-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="2602e-107">PR_VALID_FOLDER_MASK</span><span class="sxs-lookup"><span data-stu-id="2602e-107">PR_VALID_FOLDER_MASK</span></span>  <br/> |
-|<span data-ttu-id="2602e-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="2602e-108">Identifier:</span></span>  <br/> |<span data-ttu-id="2602e-109">0x35DF</span><span class="sxs-lookup"><span data-stu-id="2602e-109">0x35DF</span></span>  <br/> |
-|<span data-ttu-id="2602e-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="2602e-110">Data type:</span></span>  <br/> |<span data-ttu-id="2602e-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="2602e-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="2602e-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="2602e-112">Area:</span></span>  <br/> |<span data-ttu-id="2602e-113">MAPI-Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="2602e-113">MAPI message store</span></span>  <br/> |
+|<span data-ttu-id="7811e-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="7811e-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="7811e-107">PR_VALID_FOLDER_MASK</span><span class="sxs-lookup"><span data-stu-id="7811e-107">PR_VALID_FOLDER_MASK</span></span>  <br/> |
+|<span data-ttu-id="7811e-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="7811e-108">Identifier:</span></span>  <br/> |<span data-ttu-id="7811e-109">0x35DF</span><span class="sxs-lookup"><span data-stu-id="7811e-109">0x35DF</span></span>  <br/> |
+|<span data-ttu-id="7811e-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="7811e-110">Data type:</span></span>  <br/> |<span data-ttu-id="7811e-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="7811e-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="7811e-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="7811e-112">Area:</span></span>  <br/> |<span data-ttu-id="7811e-113">MAPI-Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="7811e-113">MAPI message store</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2602e-114">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="2602e-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7811e-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7811e-114">Remarks</span></span>
 
-<span data-ttu-id="2602e-115">Eintrags-ID für einen Ordner werden ungültig, wenn ein Benutzer auf den Ordner löscht oder der Nachrichtenspeicher beschädigt.</span><span class="sxs-lookup"><span data-stu-id="2602e-115">A folder's entry identifier can become invalid if a user deletes the folder or if the message store becomes corrupted.</span></span>
+<span data-ttu-id="7811e-115">Die Eintrags-ID eines Ordners kann ungültig werden, wenn ein Benutzer den Ordner löscht oder wenn der Nachrichtenspeicher beschädigt wird.</span><span class="sxs-lookup"><span data-stu-id="7811e-115">A folder's entry identifier can become invalid if a user deletes the folder or if the message store becomes corrupted.</span></span>
   
-<span data-ttu-id="2602e-116">Für die Bitmaske kann eine oder mehrere der folgenden Werte festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="2602e-116">One or more of the following flags can be set for the bitmask:</span></span> 
+<span data-ttu-id="7811e-116">Mindestens eines der folgenden Flags kann für die Bitmaske festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="7811e-116">One or more of the following flags can be set for the bitmask:</span></span> 
   
-<span data-ttu-id="2602e-117">FOLDER_COMMON_VIEWS_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-117">FOLDER_COMMON_VIEWS_VALID</span></span> 
+<span data-ttu-id="7811e-117">FOLDER_COMMON_VIEWS_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-117">FOLDER_COMMON_VIEWS_VALID</span></span> 
   
-> <span data-ttu-id="2602e-118">Die gemeinsamen Ordner "Ansichten" besitzt eine gültige Eingabe-ID.</span><span class="sxs-lookup"><span data-stu-id="2602e-118">The common views folder has a valid entry identifier.</span></span> <span data-ttu-id="2602e-119">Finden Sie unter **PR_COMMON_VIEWS_ENTRYID** ([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="2602e-119">See **PR_COMMON_VIEWS_ENTRYID** ([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md)).</span></span>
+> <span data-ttu-id="7811e-118">Der Ordner Allgemeine Ansichten hat einen gültigen Eintragsbezeichner.</span><span class="sxs-lookup"><span data-stu-id="7811e-118">The common views folder has a valid entry identifier.</span></span> <span data-ttu-id="7811e-119">Siehe **PR_COMMON_VIEWS_ENTRYID** ([pidtagcommonviewsentryid (](pidtagcommonviewsentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="7811e-119">See **PR_COMMON_VIEWS_ENTRYID** ([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md)).</span></span>
     
-<span data-ttu-id="2602e-120">FOLDER_FINDER_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-120">FOLDER_FINDER_VALID</span></span> 
+<span data-ttu-id="7811e-120">FOLDER_FINDER_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-120">FOLDER_FINDER_VALID</span></span> 
   
-> <span data-ttu-id="2602e-121">Der Finder-Ordner verfügt über eine gültige Eingabe-Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="2602e-121">The finder folder has a valid entry identifier.</span></span> <span data-ttu-id="2602e-122">Finden Sie unter **PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="2602e-122">See **PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md)).</span></span> 
+> <span data-ttu-id="7811e-121">Der Finder-Ordner verfügt über eine gültige Eintrags-ID.</span><span class="sxs-lookup"><span data-stu-id="7811e-121">The finder folder has a valid entry identifier.</span></span> <span data-ttu-id="7811e-122">Siehe **PR_FINDER_ENTRYID** ([pidtagfinderentryid (](pidtagfinderentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="7811e-122">See **PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md)).</span></span> 
     
-<span data-ttu-id="2602e-123">FOLDER_IPM_INBOX_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-123">FOLDER_IPM_INBOX_VALID</span></span> 
+<span data-ttu-id="7811e-123">FOLDER_IPM_INBOX_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-123">FOLDER_IPM_INBOX_VALID</span></span> 
   
-> <span data-ttu-id="2602e-124">Die zwischen Personen angezeigt (IPM) Ordner verfügt über eine gültige Eingabe-Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="2602e-124">The interpersonal message (IPM) receive folder has a valid entry identifier.</span></span> <span data-ttu-id="2602e-125">Finden Sie unter [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md).</span><span class="sxs-lookup"><span data-stu-id="2602e-125">See [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md).</span></span> 
+> <span data-ttu-id="7811e-124">Der Empfänger Ordner für die zwischenmenschlichen Nachrichten (IPM) verfügt über eine gültige Eintrags-ID.</span><span class="sxs-lookup"><span data-stu-id="7811e-124">The interpersonal message (IPM) receive folder has a valid entry identifier.</span></span> <span data-ttu-id="7811e-125">Weitere Informationen finden Sie unter [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md).</span><span class="sxs-lookup"><span data-stu-id="7811e-125">See [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md).</span></span> 
     
-<span data-ttu-id="2602e-126">FOLDER_IPM_OUTBOX_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-126">FOLDER_IPM_OUTBOX_VALID</span></span> 
+<span data-ttu-id="7811e-126">FOLDER_IPM_OUTBOX_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-126">FOLDER_IPM_OUTBOX_VALID</span></span> 
   
-> <span data-ttu-id="2602e-127">Der Ordner Postausgang IPM besitzt eine gültige Eingabe-ID.</span><span class="sxs-lookup"><span data-stu-id="2602e-127">The IPM Outbox folder has a valid entry identifier.</span></span> <span data-ttu-id="2602e-128">Finden Sie unter **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="2602e-128">See **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)).</span></span> 
+> <span data-ttu-id="7811e-127">Der IPM-Ausgangsordner hat einen gültigen Eintragsbezeichner.</span><span class="sxs-lookup"><span data-stu-id="7811e-127">The IPM Outbox folder has a valid entry identifier.</span></span> <span data-ttu-id="7811e-128">Siehe **PR_IPM_OUTBOX_ENTRYID** ([pidtagipmoutboxentryid (](pidtagipmoutboxentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="7811e-128">See **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)).</span></span> 
     
-<span data-ttu-id="2602e-129">FOLDER_IPM_SENTMAIL_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-129">FOLDER_IPM_SENTMAIL_VALID</span></span> 
+<span data-ttu-id="7811e-129">FOLDER_IPM_SENTMAIL_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-129">FOLDER_IPM_SENTMAIL_VALID</span></span> 
   
-> <span data-ttu-id="2602e-130">Ordner Gesendete Objekte IPM verfügt über eine gültige Eingabe-Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="2602e-130">The IPM Sent Items folder has a valid entry identifier.</span></span> <span data-ttu-id="2602e-131">Finden Sie unter **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="2602e-131">See **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)).</span></span>
+> <span data-ttu-id="7811e-130">Der Ordner "IPM Sent Items" hat einen gültigen Eintragsbezeichner.</span><span class="sxs-lookup"><span data-stu-id="7811e-130">The IPM Sent Items folder has a valid entry identifier.</span></span> <span data-ttu-id="7811e-131">Siehe **PR_IPM_SENTMAIL_ENTRYID** ([pidtagipmsentmailentryid (](pidtagipmsentmailentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="7811e-131">See **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)).</span></span>
     
-<span data-ttu-id="2602e-132">FOLDER_IPM_SUBTREE_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-132">FOLDER_IPM_SUBTREE_VALID</span></span> 
+<span data-ttu-id="7811e-132">FOLDER_IPM_SUBTREE_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-132">FOLDER_IPM_SUBTREE_VALID</span></span> 
   
-> <span data-ttu-id="2602e-133">Die IPM Ordner Unterstruktur verfügt über eine gültige Eingabe Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="2602e-133">The IPM folder subtree has a valid entry identifier.</span></span> <span data-ttu-id="2602e-134">Finden Sie unter **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="2602e-134">See **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)).</span></span>
+> <span data-ttu-id="7811e-133">Die Unterstruktur des IPM-Ordners verfügt über eine gültige Eintrags-ID.</span><span class="sxs-lookup"><span data-stu-id="7811e-133">The IPM folder subtree has a valid entry identifier.</span></span> <span data-ttu-id="7811e-134">Siehe **PR_IPM_SUBTREE_ENTRYID** ([pidtagipmsubtreeentryid (](pidtagipmsubtreeentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="7811e-134">See **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)).</span></span>
     
-<span data-ttu-id="2602e-135">FOLDER_IPM_WASTEBASKET_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-135">FOLDER_IPM_WASTEBASKET_VALID</span></span> 
+<span data-ttu-id="7811e-135">FOLDER_IPM_WASTEBASKET_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-135">FOLDER_IPM_WASTEBASKET_VALID</span></span> 
   
-> <span data-ttu-id="2602e-136">Der Ordner Gelöschte Objekte IPM verfügt über eine gültige Eingabe-Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="2602e-136">The IPM Deleted Items folder has a valid entry identifier.</span></span> <span data-ttu-id="2602e-137">Finden Sie unter **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="2602e-137">See **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)).</span></span>
+> <span data-ttu-id="7811e-136">Der Ordner "IPM Deleted Items" hat einen gültigen Eintragsbezeichner.</span><span class="sxs-lookup"><span data-stu-id="7811e-136">The IPM Deleted Items folder has a valid entry identifier.</span></span> <span data-ttu-id="7811e-137">Siehe **PR_IPM_WASTEBASKET_ENTRYID** ([pidtagipmwastebasketentryid (](pidtagipmwastebasketentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="7811e-137">See **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)).</span></span>
     
-<span data-ttu-id="2602e-138">FOLDER_VIEWS_VALID</span><span class="sxs-lookup"><span data-stu-id="2602e-138">FOLDER_VIEWS_VALID</span></span> 
+<span data-ttu-id="7811e-138">FOLDER_VIEWS_VALID</span><span class="sxs-lookup"><span data-stu-id="7811e-138">FOLDER_VIEWS_VALID</span></span> 
   
-> <span data-ttu-id="2602e-139">Ordner "Ansichten" verfügt über eine gültige Eingabe-Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="2602e-139">The views folder has a valid entry identifier.</span></span> <span data-ttu-id="2602e-140">Finden Sie unter **PR_VIEWS_ENTRYID** ([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="2602e-140">See **PR_VIEWS_ENTRYID** ([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md)).</span></span>
+> <span data-ttu-id="7811e-139">Der Ordner views hat eine gültige Eintrags-ID.</span><span class="sxs-lookup"><span data-stu-id="7811e-139">The views folder has a valid entry identifier.</span></span> <span data-ttu-id="7811e-140">Siehe **PR_VIEWS_ENTRYID** ([pidtagviewsentryid (](pidtagviewsentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="7811e-140">See **PR_VIEWS_ENTRYID** ([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md)).</span></span>
     
-## <a name="related-resources"></a><span data-ttu-id="2602e-141">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="2602e-141">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="7811e-141">Zugehörige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="7811e-141">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="2602e-142">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="2602e-142">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="7811e-142">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="7811e-142">Header files</span></span>
 
-<span data-ttu-id="2602e-143">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="2602e-143">Mapidefs.h</span></span>
+<span data-ttu-id="7811e-143">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="7811e-143">Mapidefs.h</span></span>
   
-> <span data-ttu-id="2602e-144">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="2602e-144">Provides data type definitions.</span></span>
+> <span data-ttu-id="7811e-144">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="7811e-144">Provides data type definitions.</span></span>
     
-<span data-ttu-id="2602e-145">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="2602e-145">Mapitags.h</span></span>
+<span data-ttu-id="7811e-145">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="7811e-145">Mapitags.h</span></span>
   
-> <span data-ttu-id="2602e-146">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="2602e-146">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="7811e-146">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="7811e-146">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="2602e-147">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2602e-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7811e-147">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7811e-147">See also</span></span>
 
 
 
-[<span data-ttu-id="2602e-148">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2602e-148">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="7811e-148">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7811e-148">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="2602e-149">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2602e-149">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="7811e-149">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7811e-149">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="2602e-150">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="2602e-150">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="7811e-150">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="7811e-150">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="2602e-151">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="2602e-151">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="7811e-151">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="7811e-151">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

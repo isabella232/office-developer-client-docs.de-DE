@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6bd2781a-d4e7-136f-8996-62ebc5f890ab
 description: Gibt die Sprache an, in der der Wert für die Shape-Daten eingegeben wurde.
-ms.openlocfilehash: 696c42483390509474eb82bd8cc0046beee345e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c5a0cca5f71bc5520337ad2bdcf354a2b4affe92
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359031"
 ---
-# <a name="langid-cell-shape-data-section"></a><span data-ttu-id="14674-103">LangID Cell (Shape Data Section)</span><span class="sxs-lookup"><span data-stu-id="14674-103">LangID Cell (Shape Data Section)</span></span>
+# <a name="langid-cell-shape-data-section"></a><span data-ttu-id="c5b8a-103">Zelle "LangID" (Abschnitt "Shape Data")</span><span class="sxs-lookup"><span data-stu-id="c5b8a-103">LangID Cell (Shape Data Section)</span></span>
 
-<span data-ttu-id="14674-104">Gibt die Sprache an, in der der Wert für die Shape-Daten eingegeben wurde.</span><span class="sxs-lookup"><span data-stu-id="14674-104">Indicates the language in which the shape data value was entered.</span></span> 
+<span data-ttu-id="c5b8a-104">Gibt die Sprache an, in der der Wert für die Shape-Daten eingegeben wurde.</span><span class="sxs-lookup"><span data-stu-id="c5b8a-104">Indicates the language in which the shape data value was entered.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="14674-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="14674-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c5b8a-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c5b8a-105">Remarks</span></span>
 
-<span data-ttu-id="14674-106">Eine Liste der von Microsoft Office System-Anwendungen unterstützten Sprachen finden Sie unter [Zelle "DocLangID"](doclangid-cell-document-properties-section.md) (Abschnitt "Document Properties").</span><span class="sxs-lookup"><span data-stu-id="14674-106">For a list of languages supported by Microsoft Office System applications, see the [DocLangID](doclangid-cell-document-properties-section.md) Cell (Document Properties Section).</span></span> 
+<span data-ttu-id="c5b8a-106">Eine Liste der von Microsoft Office System-Anwendungen unterstützten Sprachen finden Sie unter [Zelle "DocLangID"](doclangid-cell-document-properties-section.md) (Abschnitt "Document Properties").</span><span class="sxs-lookup"><span data-stu-id="c5b8a-106">For a list of languages supported by Microsoft Office System applications, see the [DocLangID](doclangid-cell-document-properties-section.md) Cell (Document Properties Section).</span></span> 
   
-<span data-ttu-id="14674-107">Wenn Sie einen Verweis auf die Zelle LangID aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="14674-107">To get a reference to the LangID cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="c5b8a-107">Wenn Sie einen Verweis auf die Zelle "lang" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="c5b8a-107">To get a reference to the LangID cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="14674-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="14674-108">Cell name:</span></span>  <br/> | <span data-ttu-id="14674-109">Eigenschaft.  *Name* . LangID wobei Prop.  *Name* ist der Zeilenname</span><span class="sxs-lookup"><span data-stu-id="14674-109">Prop.  *name*  .LangID            where Prop.  *name*  is the row name</span></span>  <br/> |
+| <span data-ttu-id="c5b8a-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="c5b8a-108">Cell name:</span></span>  <br/> | <span data-ttu-id="c5b8a-109">Prop.  *Name* . Lang-Punkt, wobei Prop.  *Name* ist der Name der Zeile</span><span class="sxs-lookup"><span data-stu-id="c5b8a-109">Prop.  *name*  .LangID            where Prop.  *name*  is the row name</span></span>  <br/> |
    
-<span data-ttu-id="14674-110">Wenn Sie einen Verweis auf die Zelle LangID aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="14674-110">To get a reference to the LangID cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="c5b8a-110">Wenn Sie einen Verweis auf die Zelle lang aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="c5b8a-110">To get a reference to the LangID cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="14674-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="14674-111">Section index:</span></span>  <br/> |<span data-ttu-id="14674-112">**visSectionProp**</span><span class="sxs-lookup"><span data-stu-id="14674-112">**visSectionProp**</span></span> <br/> |
-| <span data-ttu-id="14674-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="14674-113">Row index:</span></span>  <br/> |<span data-ttu-id="14674-114">**VisRowProp** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="14674-114">**visRowProp** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="14674-115">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="14674-115">Cell index:</span></span>  <br/> |<span data-ttu-id="14674-116">**visCustPropsLangID**</span><span class="sxs-lookup"><span data-stu-id="14674-116">**visCustPropsLangID**</span></span> <br/> |
+| <span data-ttu-id="c5b8a-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="c5b8a-111">Section index:</span></span>  <br/> |<span data-ttu-id="c5b8a-112">**visSectionProp**</span><span class="sxs-lookup"><span data-stu-id="c5b8a-112">**visSectionProp**</span></span> <br/> |
+| <span data-ttu-id="c5b8a-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="c5b8a-113">Row index:</span></span>  <br/> |<span data-ttu-id="c5b8a-114">**visRowProp** +  *i* , wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="c5b8a-114">**visRowProp** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="c5b8a-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="c5b8a-115">Cell index:</span></span>  <br/> |<span data-ttu-id="c5b8a-116">**visCustPropsLangID**</span><span class="sxs-lookup"><span data-stu-id="c5b8a-116">**visCustPropsLangID**</span></span> <br/> |
    
 

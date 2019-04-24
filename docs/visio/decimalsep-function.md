@@ -8,24 +8,24 @@ f1_keywords:
 - Vis_DSS.chm82251883
 localization_priority: Normal
 ms.assetid: 091fe401-05b2-464f-9333-7bb7118cd7cd
-description: Gibt das Dezimaltrennzeichen für das Gebietsschema des aktuellen Benutzers zurück.
-ms.openlocfilehash: a47bc20702262ab7d4a072694c36e424e6949919
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die Dezimaltrennzeichen-Zeichenfolge für das aktuelle Benutzergebietsschema zurück.
+ms.openlocfilehash: 8a59e7331fd51cf5426b5e2cdd64e3c5a22334b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360305"
 ---
-# <a name="decimalsep-function"></a><span data-ttu-id="8faf7-103">DECIMALSEP-Funktion</span><span class="sxs-lookup"><span data-stu-id="8faf7-103">DECIMALSEP Function</span></span>
+# <a name="decimalsep-function"></a><span data-ttu-id="d7f6c-103">DECIMALSEP-Funktion</span><span class="sxs-lookup"><span data-stu-id="d7f6c-103">DECIMALSEP Function</span></span>
 
-<span data-ttu-id="8faf7-104">Gibt das Dezimaltrennzeichen für das Gebietsschema des aktuellen Benutzers zurück.</span><span class="sxs-lookup"><span data-stu-id="8faf7-104">Returns the decimal separator string for the current user locale.</span></span>
+<span data-ttu-id="d7f6c-104">Gibt die Dezimaltrennzeichen-Zeichenfolge für das aktuelle Benutzergebietsschema zurück.</span><span class="sxs-lookup"><span data-stu-id="d7f6c-104">Returns the decimal separator string for the current user locale.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="8faf7-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8faf7-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d7f6c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d7f6c-105">Syntax</span></span>
 
-<span data-ttu-id="8faf7-106">DECIMALSEP( )</span><span class="sxs-lookup"><span data-stu-id="8faf7-106">DECIMALSEP( )</span></span>
+<span data-ttu-id="d7f6c-106">DECIMALSEP( )</span><span class="sxs-lookup"><span data-stu-id="d7f6c-106">DECIMALSEP( )</span></span>
   
-## <a name="example"></a><span data-ttu-id="8faf7-107">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8faf7-107">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d7f6c-107">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d7f6c-107">Example</span></span>
 
-<span data-ttu-id="8faf7-108">SETF(GETREF(User.Size), Benutzer.wholepart &amp; DECIMALSEP() &amp; Benutzer.fracpart)</span><span class="sxs-lookup"><span data-stu-id="8faf7-108">SETF(GETREF(user.size), user.wholePart &amp; DECIMALSEP() &amp; user.fracPart)</span></span> 
+<span data-ttu-id="d7f6c-108">SETF (GETREF (User. Size), User. wholePart &amp; DECIMALSEP () &amp; User. fracPart)</span><span class="sxs-lookup"><span data-stu-id="d7f6c-108">SETF(GETREF(user.size), user.wholePart &amp; DECIMALSEP() &amp; user.fracPart)</span></span> 
   
 

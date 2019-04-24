@@ -6,63 +6,63 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7f2b4e04-2f25-44fd-8167-6fe97fa2b719
-ms.openlocfilehash: e3bf7af0e3ee5a49502f3b71890a6c3cedfff6f8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f69d1286cc8eb2f42dd742288b961803155664a4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360536"
 ---
-# <a name="rows-visio-shapesheet-reference"></a><span data-ttu-id="0ead3-102">Zeilen (Visio-ShapeSheet-Referenz)</span><span class="sxs-lookup"><span data-stu-id="0ead3-102">Rows (Visio ShapeSheet Reference)</span></span>
+# <a name="rows-visio-shapesheet-reference"></a><span data-ttu-id="11234-102">Zeilen (Visio-ShapeSheet-Referenz)</span><span class="sxs-lookup"><span data-stu-id="11234-102">Rows (Visio ShapeSheet Reference)</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="0ead3-103">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="0ead3-103">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="11234-103">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="11234-103">In this section</span></span>
 
-- [<span data-ttu-id="0ead3-104">Zeile "Actions" (Abschnitt "Actions")</span><span class="sxs-lookup"><span data-stu-id="0ead3-104">Actions Row (Actions Section)</span></span>](actions-row-actions-section.md)
+- [<span data-ttu-id="11234-104">Zeile "Actions" (Abschnitt "Actions")</span><span class="sxs-lookup"><span data-stu-id="11234-104">Actions Row (Actions Section)</span></span>](actions-row-actions-section.md)
     
-- [<span data-ttu-id="0ead3-105">Zeile "ArcTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-105">ArcTo Row (Geometry Section)</span></span>](arcto-row-geometry-section.md)
+- [<span data-ttu-id="11234-105">Zeile "ArcTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-105">ArcTo Row (Geometry Section)</span></span>](arcto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-106">Zeile "Connection Points" (Abschnitt "Connection Points")</span><span class="sxs-lookup"><span data-stu-id="0ead3-106">Connection Points Row (Connection Points Section)</span></span>](connection-points-row-connection-points-section.md)
+- [<span data-ttu-id="11234-106">Zeile "Connection Points" (Abschnitt "Connection Points")</span><span class="sxs-lookup"><span data-stu-id="11234-106">Connection Points Row (Connection Points Section)</span></span>](connection-points-row-connection-points-section.md)
     
-- [<span data-ttu-id="0ead3-107">Zeile "Controls" (Abschnitt "Controls")</span><span class="sxs-lookup"><span data-stu-id="0ead3-107">Controls Row (Controls Section)</span></span>](controls-row-controls-section.md)
+- [<span data-ttu-id="11234-107">Zeile "Controls" (Abschnitt "Controls")</span><span class="sxs-lookup"><span data-stu-id="11234-107">Controls Row (Controls Section)</span></span>](controls-row-controls-section.md)
     
-- [<span data-ttu-id="0ead3-108">Zeile "Ellipse" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-108">Ellipse Row (Geometry Section)</span></span>](ellipse-row-geometry-section.md)
+- [<span data-ttu-id="11234-108">Zeile "Ellipse" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-108">Ellipse Row (Geometry Section)</span></span>](ellipse-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-109">Zeile "EllipticalArcTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-109">EllipticalArcTo Row (Geometry Section)</span></span>](ellipticalarcto-row-geometry-section.md)
+- [<span data-ttu-id="11234-109">Zeile "EllipticalArcTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-109">EllipticalArcTo Row (Geometry Section)</span></span>](ellipticalarcto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-110">Gradient Stop Row (Fill Gradient Section)</span><span class="sxs-lookup"><span data-stu-id="0ead3-110">Gradient Stop Row (Fill Gradient Section)</span></span>](gradient-stop-row-fill-gradient-section.md)
+- [<span data-ttu-id="11234-110">Verlaufs Unterbrechungs Zeile (Abschnitt "Füll Verlauf")</span><span class="sxs-lookup"><span data-stu-id="11234-110">Gradient Stop Row (Fill Gradient Section)</span></span>](gradient-stop-row-fill-gradient-section.md)
     
-- [<span data-ttu-id="0ead3-111">Gradient Stop Row (Line Gradient Section)</span><span class="sxs-lookup"><span data-stu-id="0ead3-111">Gradient Stop Row (Line Gradient Section)</span></span>](gradient-stop-row-line-gradient-section.md)
+- [<span data-ttu-id="11234-111">Verlaufs Unterbrechungs Zeile (Abschnitt "Linienverlauf")</span><span class="sxs-lookup"><span data-stu-id="11234-111">Gradient Stop Row (Line Gradient Section)</span></span>](gradient-stop-row-line-gradient-section.md)
     
-- [<span data-ttu-id="0ead3-112">Zeile "Hyperlink" (Abschnitt "Hyperlinks")</span><span class="sxs-lookup"><span data-stu-id="0ead3-112">Hyperlink Row (Hyperlinks Section)</span></span>](hyperlink-row-hyperlinks-section.md)
+- [<span data-ttu-id="11234-112">Zeile "Hyperlink" (Abschnitt "Hyperlinks")</span><span class="sxs-lookup"><span data-stu-id="11234-112">Hyperlink Row (Hyperlinks Section)</span></span>](hyperlink-row-hyperlinks-section.md)
     
-- [<span data-ttu-id="0ead3-113">Zeile "InfiniteLine" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-113">InfiniteLine Row (Geometry Section)</span></span>](infiniteline-row-geometry-section.md)
+- [<span data-ttu-id="11234-113">Zeile "InfiniteLine" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-113">InfiniteLine Row (Geometry Section)</span></span>](infiniteline-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-114">Zeile "LineTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-114">LineTo Row (Geometry Section)</span></span>](lineto-row-geometry-section.md)
+- [<span data-ttu-id="11234-114">Zeile "LineTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-114">LineTo Row (Geometry Section)</span></span>](lineto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-115">Zeile "MoveTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-115">MoveTo Row (Geometry Section)</span></span>](moveto-row-geometry-section.md)
+- [<span data-ttu-id="11234-115">Zeile "MoveTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-115">MoveTo Row (Geometry Section)</span></span>](moveto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-116">Zeile "NURBSTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-116">NURBSTo Row (Geometry Section)</span></span>](nurbsto-row-geometry-section.md)
+- [<span data-ttu-id="11234-116">Zeile "NURBSTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-116">NURBSTo Row (Geometry Section)</span></span>](nurbsto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-117">Zeile "PolylineTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-117">PolylineTo Row (Geometry Section)</span></span>](polylineto-row-geometry-section.md)
+- [<span data-ttu-id="11234-117">Zeile "PolylineTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-117">PolylineTo Row (Geometry Section)</span></span>](polylineto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-118">RelCubBezTo Row (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="0ead3-118">RelCubBezTo Row (Geometry Section)</span></span>](relcubbezto-row-geometry-section.md)
+- [<span data-ttu-id="11234-118">Zeile "RelCubBezTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-118">RelCubBezTo Row (Geometry Section)</span></span>](relcubbezto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-119">RelEllipticalArcTo Row (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="0ead3-119">RelEllipticalArcTo Row (Geometry Section)</span></span>](relellipticalarcto-row-geometry-section.md)
+- [<span data-ttu-id="11234-119">Zeile "RelEllipticalArcTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-119">RelEllipticalArcTo Row (Geometry Section)</span></span>](relellipticalarcto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-120">RelLineTo Row (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="0ead3-120">RelLineTo Row (Geometry Section)</span></span>](rellineto-row-geometry-section.md)
+- [<span data-ttu-id="11234-120">Zeile "RelLineTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-120">RelLineTo Row (Geometry Section)</span></span>](rellineto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-121">RelMoveTo Row (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="0ead3-121">RelMoveTo Row (Geometry Section)</span></span>](relmoveto-row-geometry-section.md)
+- [<span data-ttu-id="11234-121">Zeile "RelMoveTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-121">RelMoveTo Row (Geometry Section)</span></span>](relmoveto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-122">RelQuadBezTo Row (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="0ead3-122">RelQuadBezTo Row (Geometry Section)</span></span>](relquadbezto-row-geometry-section.md)
+- [<span data-ttu-id="11234-122">Zeile "RelQuadBezTo" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-122">RelQuadBezTo Row (Geometry Section)</span></span>](relquadbezto-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-123">Zeile "Shape Data" (Abschnitt "Shape Data")</span><span class="sxs-lookup"><span data-stu-id="0ead3-123">Shape Data Row (Shape Data Section)</span></span>](shape-data-row-shape-data-section.md)
+- [<span data-ttu-id="11234-123">Zeile "Shape Data" (Abschnitt "Shape Data")</span><span class="sxs-lookup"><span data-stu-id="11234-123">Shape Data Row (Shape Data Section)</span></span>](shape-data-row-shape-data-section.md)
     
-- [<span data-ttu-id="0ead3-124">Zeile "Smart Tags" (Abschnitt "Action Tags")</span><span class="sxs-lookup"><span data-stu-id="0ead3-124">Smart Tags Row (Action Tags Section)</span></span>](smart-tags-row-action-tags-section.md)
+- [<span data-ttu-id="11234-124">Zeile "Smart Tags" (Abschnitt "Action Tags")</span><span class="sxs-lookup"><span data-stu-id="11234-124">Smart Tags Row (Action Tags Section)</span></span>](smart-tags-row-action-tags-section.md)
     
-- [<span data-ttu-id="0ead3-125">Zeile "SplineKnot" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-125">SplineKnot Row (Geometry Section)</span></span>](splineknot-row-geometry-section.md)
+- [<span data-ttu-id="11234-125">Zeile "SplineKnot" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-125">SplineKnot Row (Geometry Section)</span></span>](splineknot-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-126">Zeile "SplineStart" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="0ead3-126">SplineStart Row (Geometry Section)</span></span>](splinestart-row-geometry-section.md)
+- [<span data-ttu-id="11234-126">Zeile "SplineStart" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="11234-126">SplineStart Row (Geometry Section)</span></span>](splinestart-row-geometry-section.md)
     
-- [<span data-ttu-id="0ead3-127">Zeile "User-defined Cells" (Abschnitt "User-defined Cells")</span><span class="sxs-lookup"><span data-stu-id="0ead3-127">User-defined Cells Row (User-defined Cells Section)</span></span>](user-defined-cells-row-user-defined-cells-section.md)
+- [<span data-ttu-id="11234-127">Zeile "User-defined Cells" (Abschnitt "User-defined Cells")</span><span class="sxs-lookup"><span data-stu-id="11234-127">User-defined Cells Row (User-defined Cells Section)</span></span>](user-defined-cells-row-user-defined-cells-section.md)
     
 

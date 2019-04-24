@@ -8,34 +8,34 @@ f1_keywords:
 - Vis_DSS.chm82251485
 localization_priority: Normal
 ms.assetid: 482497ee-fe19-c2fa-53ce-bdb27b5d28bc
-description: Gibt eine zufällige Gleitkommazahl von 0,0 1,0 zurück. Es gibt eine unterschiedliche Anzahl jedes Mal, wenn die Funktion ausgewertet wird, die einmal pro Minute entsprechend der Systemuhr ist.
-ms.openlocfilehash: 4b164e90c6d6b81764d2763bef04d836cae52c1b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine zufällige Gleitkommazahl zwischen 0,0 und 1,0 zurück. Jedes Mal, wenn die Funktion ausgewertet wird, wird je nach der Systemuhr eine andere Zahl zurückgegeben.
+ms.openlocfilehash: bab2fd74aff85be85f886e3ac8fe7df113664ae5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360004"
 ---
-# <a name="rand-function"></a><span data-ttu-id="e2e57-104">RAND Function</span><span class="sxs-lookup"><span data-stu-id="e2e57-104">RAND Function</span></span>
+# <a name="rand-function"></a><span data-ttu-id="c002e-104">RAND Function</span><span class="sxs-lookup"><span data-stu-id="c002e-104">RAND Function</span></span>
 
-<span data-ttu-id="e2e57-105">Gibt eine zufällige Gleitkommazahl von 0,0 1,0 zurück.</span><span class="sxs-lookup"><span data-stu-id="e2e57-105">Returns a random floating point number from 0.0 to 1.0.</span></span> <span data-ttu-id="e2e57-106">Es gibt eine unterschiedliche Anzahl jedes Mal, wenn die Funktion ausgewertet wird, die einmal pro Minute entsprechend der Systemuhr ist.</span><span class="sxs-lookup"><span data-stu-id="e2e57-106">It returns a different number each time the function is evaluated, which is once per minute according to the system clock.</span></span> 
+<span data-ttu-id="c002e-105">Gibt eine zufällige Gleitkommazahl zwischen 0,0 und 1,0 zurück.</span><span class="sxs-lookup"><span data-stu-id="c002e-105">Returns a random floating point number from 0.0 to 1.0.</span></span> <span data-ttu-id="c002e-106">Jedes Mal, wenn die Funktion ausgewertet wird, wird je nach der Systemuhr eine andere Zahl zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c002e-106">It returns a different number each time the function is evaluated, which is once per minute according to the system clock.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="e2e57-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="e2e57-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c002e-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="c002e-107">Syntax</span></span>
 
-<span data-ttu-id="e2e57-108">RAND( )</span><span class="sxs-lookup"><span data-stu-id="e2e57-108">RAND( )</span></span>
+<span data-ttu-id="c002e-108">RAND( )</span><span class="sxs-lookup"><span data-stu-id="c002e-108">RAND( )</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="e2e57-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e2e57-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="c002e-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c002e-109">Return value</span></span>
 
-<span data-ttu-id="e2e57-110">Float</span><span class="sxs-lookup"><span data-stu-id="e2e57-110">Float</span></span>
+<span data-ttu-id="c002e-110">Gleitkommazahl</span><span class="sxs-lookup"><span data-stu-id="c002e-110">Float</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e2e57-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e2e57-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c002e-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c002e-111">Remarks</span></span>
 
-<span data-ttu-id="e2e57-112">Mithilfe dieser Funktion können Sie Animationseffekte erstellen, indem Sie bestimmten Shape-Eigenschaften Zufallswerte zuweisen.</span><span class="sxs-lookup"><span data-stu-id="e2e57-112">You can use this function to create animation effects by setting the properties of shapes to random values.</span></span>
+<span data-ttu-id="c002e-112">Mithilfe dieser Funktion können Sie Animationseffekte erstellen, indem Sie bestimmten Shape-Eigenschaften Zufallswerte zuweisen.</span><span class="sxs-lookup"><span data-stu-id="c002e-112">You can use this function to create animation effects by setting the properties of shapes to random values.</span></span>
   
-## <a name="example"></a><span data-ttu-id="e2e57-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e2e57-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c002e-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c002e-113">Example</span></span>
 
-<span data-ttu-id="e2e57-114">RAND( )</span><span class="sxs-lookup"><span data-stu-id="e2e57-114">RAND( )</span></span> 
+<span data-ttu-id="c002e-114">RAND( )</span><span class="sxs-lookup"><span data-stu-id="c002e-114">RAND( )</span></span> 
   
-<span data-ttu-id="e2e57-115">Gibt eine Dezimalzahl wie 0,3503 zurück.</span><span class="sxs-lookup"><span data-stu-id="e2e57-115">Returns a decimal fraction, such as 0.3503.</span></span> 
+<span data-ttu-id="c002e-115">Gibt eine Dezimalzahl wie 0,3503 zurück.</span><span class="sxs-lookup"><span data-stu-id="c002e-115">Returns a decimal fraction, such as 0.3503.</span></span> 
   
 

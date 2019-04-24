@@ -9,36 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 966cde5c-f04e-7149-3660-720ffa4f7079
 description: Sperrt die Scheitelpunkte eines Shapes, sodass sie nicht bearbeitet werden können.
-ms.openlocfilehash: 3766df62bb85e1470ad0fa46274b9bbbd96b8406
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1703769fe54171a14f7052f0f6686e1eb5ec92fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19797416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358058"
 ---
-# <a name="lockvtxedit-cell-protection-section"></a><span data-ttu-id="696f5-103">LockVtxEdit Cell (Protection Section)</span><span class="sxs-lookup"><span data-stu-id="696f5-103">LockVtxEdit Cell (Protection Section)</span></span>
+# <a name="lockvtxedit-cell-protection-section"></a><span data-ttu-id="f3546-103">Zelle "LockVtxEdit" (Abschnitt "Protection")</span><span class="sxs-lookup"><span data-stu-id="f3546-103">LockVtxEdit Cell (Protection Section)</span></span>
 
-<span data-ttu-id="696f5-104">Sperrt die Scheitelpunkte eines Shapes, sodass sie nicht bearbeitet werden können.</span><span class="sxs-lookup"><span data-stu-id="696f5-104">Locks the vertices of a shape so that they cannot be edited.</span></span>
+<span data-ttu-id="f3546-104">Sperrt die Scheitelpunkte eines Shapes, sodass sie nicht bearbeitet werden können.</span><span class="sxs-lookup"><span data-stu-id="f3546-104">Locks the vertices of a shape so that they cannot be edited.</span></span>
   
-|<span data-ttu-id="696f5-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="696f5-105">**Value**</span></span>|<span data-ttu-id="696f5-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="696f5-106">**Description**</span></span>|
+|<span data-ttu-id="f3546-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="f3546-105">**Value**</span></span>|<span data-ttu-id="f3546-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f3546-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="696f5-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="696f5-107">TRUE</span></span>  <br/> |<span data-ttu-id="696f5-108">Scheitelpunkte können nicht bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="696f5-108">Vertices cannot be edited.</span></span>  <br/> |
-|<span data-ttu-id="696f5-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="696f5-109">FALSE</span></span>  <br/> |<span data-ttu-id="696f5-110">Scheitelpunkte können bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="696f5-110">Vertices can be edited.</span></span>  <br/> |
+|<span data-ttu-id="f3546-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="f3546-107">TRUE</span></span>  <br/> |<span data-ttu-id="f3546-108">Scheitelpunkte können nicht bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="f3546-108">Vertices cannot be edited.</span></span>  <br/> |
+|<span data-ttu-id="f3546-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="f3546-109">FALSE</span></span>  <br/> |<span data-ttu-id="f3546-110">Scheitelpunkte können bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="f3546-110">Vertices can be edited.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="696f5-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="696f5-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f3546-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f3546-111">Remarks</span></span>
 
-<span data-ttu-id="696f5-112">Wenn Sie einen Verweis auf die Zelle LockVtxEdit aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="696f5-112">To get a reference to the LockVtxEdit cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="f3546-112">Wenn Sie einen Verweis auf die Zelle Zelle LockVtxEdit aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="f3546-112">To get a reference to the LockVtxEdit cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="696f5-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="696f5-113">Cell name:</span></span>  <br/> |<span data-ttu-id="696f5-114">LockVtxEdit</span><span class="sxs-lookup"><span data-stu-id="696f5-114">LockVtxEdit</span></span>  <br/> |
+|<span data-ttu-id="f3546-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="f3546-113">Cell name:</span></span>  <br/> |<span data-ttu-id="f3546-114">Zelle LockVtxEdit</span><span class="sxs-lookup"><span data-stu-id="f3546-114">LockVtxEdit</span></span>  <br/> |
    
-<span data-ttu-id="696f5-115">Wenn Sie einen Verweis auf die Zelle LockVtxEdit aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="696f5-115">To get a reference to the LockVtxEdit cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="f3546-115">Wenn Sie einen Verweis auf die Zelle Zelle LockVtxEdit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="f3546-115">To get a reference to the LockVtxEdit cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="696f5-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="696f5-116">Section index:</span></span>  <br/> |<span data-ttu-id="696f5-117">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="696f5-117">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="696f5-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="696f5-118">Row index:</span></span>  <br/> |<span data-ttu-id="696f5-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="696f5-119">**visRowLock**</span></span> <br/> |
-|<span data-ttu-id="696f5-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="696f5-120">Cell index:</span></span>  <br/> |<span data-ttu-id="696f5-121">**visLockVtxEdit**</span><span class="sxs-lookup"><span data-stu-id="696f5-121">**visLockVtxEdit**</span></span> <br/> |
+|<span data-ttu-id="f3546-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="f3546-116">Section index:</span></span>  <br/> |<span data-ttu-id="f3546-117">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="f3546-117">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="f3546-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="f3546-118">Row index:</span></span>  <br/> |<span data-ttu-id="f3546-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="f3546-119">**visRowLock**</span></span> <br/> |
+|<span data-ttu-id="f3546-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="f3546-120">Cell index:</span></span>  <br/> |<span data-ttu-id="f3546-121">**visLockVtxEdit**</span><span class="sxs-lookup"><span data-stu-id="f3546-121">**visLockVtxEdit**</span></span> <br/> |
    
 

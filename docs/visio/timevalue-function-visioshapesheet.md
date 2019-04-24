@@ -1,5 +1,5 @@
 ---
-title: TIMEVALUE Function (VisioShapeSheet)
+title: TIMEVALUE-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,66 +8,66 @@ f1_keywords:
 - Vis_DSS.chm82251507
 localization_priority: Normal
 ms.assetid: 53579e0e-fcec-e745-0207-3861b5efa333
-description: Gibt der Time-Wert dargestellt durch Datetime oder Expression, basierend auf dem System Region und Sprache Einstellungen.
-ms.openlocfilehash: e75607d19dc7062af717823c13f580cb44c9406b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt basierend auf den Regions-und Spracheinstellungen des Systems den Zeitwert zurück, der durch DateTime oder Expression dargestellt wird.
+ms.openlocfilehash: 61eeafac64ce199eba0f9032c42474d2b44febce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361110"
 ---
-# <a name="timevalue-function-visioshapesheet"></a><span data-ttu-id="2feeb-103">TIMEVALUE Function (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="2feeb-103">TIMEVALUE Function (VisioShapeSheet)</span></span>
+# <a name="timevalue-function-visioshapesheet"></a><span data-ttu-id="8c060-103">TIMEVALUE-Funktion (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="8c060-103">TIMEVALUE Function (VisioShapeSheet)</span></span>
 
-<span data-ttu-id="2feeb-104">Gibt der Time-Wert dargestellt durch _Datetime_ oder _Expression_, basierend auf dem System Region und Sprache Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="2feeb-104">Returns the time value represented by  _datetime_ or  _expression_, based on the system's Region and Language settings.</span></span>
+<span data-ttu-id="8c060-104">Gibt basierend auf den Regions-und Spracheinstellungen des Systems den Zeitwert zurück, der durch _DateTime_ oder _Expression_dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="8c060-104">Returns the time value represented by  _datetime_ or  _expression_, based on the system's Region and Language settings.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="2feeb-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="2feeb-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8c060-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8c060-105">Syntax</span></span>
 
-<span data-ttu-id="2feeb-106">TIMEVALUE ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])</span><span class="sxs-lookup"><span data-stu-id="2feeb-106">TIMEVALUE(" ** *datetime* ** "| ** *expression* ** [, ** *lcid* ** ])</span></span> 
+<span data-ttu-id="8c060-106">TIMEvalue ("\* \* *DateTime* \* \*" | \* \* *Expression* \* \* [, \* \* *LCID* \* \*])</span><span class="sxs-lookup"><span data-stu-id="8c060-106">TIMEVALUE(" \*\* *datetime* \*\* "| \*\* *expression* \*\* [, \*\* *lcid* \*\* ])</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="2feeb-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="2feeb-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="8c060-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="8c060-107">Parameters</span></span>
 
-|<span data-ttu-id="2feeb-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="2feeb-108">**Name**</span></span>|<span data-ttu-id="2feeb-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="2feeb-109">**Required/Optional**</span></span>|<span data-ttu-id="2feeb-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="2feeb-110">**Data Type**</span></span>|<span data-ttu-id="2feeb-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="2feeb-111">**Description**</span></span>|
+|<span data-ttu-id="8c060-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="8c060-108">**Name**</span></span>|<span data-ttu-id="8c060-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="8c060-109">**Required/Optional**</span></span>|<span data-ttu-id="8c060-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="8c060-110">**Data Type**</span></span>|<span data-ttu-id="8c060-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8c060-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="2feeb-112">_DateTime_</span><span class="sxs-lookup"><span data-stu-id="2feeb-112">_datetime_</span></span> <br/> |<span data-ttu-id="2feeb-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="2feeb-113">Required</span></span>  <br/> |<span data-ttu-id="2feeb-114">**String**</span><span class="sxs-lookup"><span data-stu-id="2feeb-114">**String**</span></span> <br/> | <span data-ttu-id="2feeb-115">Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.</span><span class="sxs-lookup"><span data-stu-id="2feeb-115">Any string commonly recognized as a date and time or a reference to a cell containing a date and time.</span></span>  <br/> |
-| <span data-ttu-id="2feeb-116">_expression_</span><span class="sxs-lookup"><span data-stu-id="2feeb-116">_expression_</span></span> <br/> |<span data-ttu-id="2feeb-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="2feeb-117">Required</span></span>  <br/> |<span data-ttu-id="2feeb-118">**Varies**</span><span class="sxs-lookup"><span data-stu-id="2feeb-118">**Varies**</span></span> <br/> | <span data-ttu-id="2feeb-119">Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.</span><span class="sxs-lookup"><span data-stu-id="2feeb-119">Any expression that yields a date and time.</span></span>  <br/> |
-| <span data-ttu-id="2feeb-120">_lcid_</span><span class="sxs-lookup"><span data-stu-id="2feeb-120">_lcid_</span></span> <br/> |<span data-ttu-id="2feeb-121">Optional</span><span class="sxs-lookup"><span data-stu-id="2feeb-121">Optional</span></span>  <br/> |<span data-ttu-id="2feeb-122">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="2feeb-122">**Number**</span></span> <br/> |<span data-ttu-id="2feeb-p101">Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.</span><span class="sxs-lookup"><span data-stu-id="2feeb-p101">The locale identifier to be used in evaluating a nonlocal datetime. The locale identifier is a number described in the system header files.</span></span>  <br/> |
+| <span data-ttu-id="8c060-112">_DateTime_</span><span class="sxs-lookup"><span data-stu-id="8c060-112">_datetime_</span></span> <br/> |<span data-ttu-id="8c060-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="8c060-113">Required</span></span>  <br/> |<span data-ttu-id="8c060-114">**String**</span><span class="sxs-lookup"><span data-stu-id="8c060-114">**String**</span></span> <br/> | <span data-ttu-id="8c060-115">Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.</span><span class="sxs-lookup"><span data-stu-id="8c060-115">Any string commonly recognized as a date and time or a reference to a cell containing a date and time.</span></span>  <br/> |
+| <span data-ttu-id="8c060-116">_expression_</span><span class="sxs-lookup"><span data-stu-id="8c060-116">_expression_</span></span> <br/> |<span data-ttu-id="8c060-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="8c060-117">Required</span></span>  <br/> |<span data-ttu-id="8c060-118">**Variiert**</span><span class="sxs-lookup"><span data-stu-id="8c060-118">**Varies**</span></span> <br/> | <span data-ttu-id="8c060-119">Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.</span><span class="sxs-lookup"><span data-stu-id="8c060-119">Any expression that yields a date and time.</span></span>  <br/> |
+| <span data-ttu-id="8c060-120">_lcid_</span><span class="sxs-lookup"><span data-stu-id="8c060-120">_lcid_</span></span> <br/> |<span data-ttu-id="8c060-121">Optional</span><span class="sxs-lookup"><span data-stu-id="8c060-121">Optional</span></span>  <br/> |<span data-ttu-id="8c060-122">**Number**</span><span class="sxs-lookup"><span data-stu-id="8c060-122">**Number**</span></span> <br/> |<span data-ttu-id="8c060-123">Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="8c060-123">The locale identifier to be used in evaluating a nonlocal datetime.</span></span> <span data-ttu-id="8c060-124">Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.</span><span class="sxs-lookup"><span data-stu-id="8c060-124">The locale identifier is a number described in the system header files.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2feeb-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2feeb-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8c060-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8c060-125">Remarks</span></span>
 
-<span data-ttu-id="2feeb-126">Alle Datumskomponenten in _Datetime_ oder _Expression_ wird verworfen.</span><span class="sxs-lookup"><span data-stu-id="2feeb-126">Any date component in  _datetime_ or  _expression_ is discarded.</span></span> 
+<span data-ttu-id="8c060-126">Eine beliebige Datumskomponente in _DateTime_ oder _Expression_ wird verworfen.</span><span class="sxs-lookup"><span data-stu-id="8c060-126">Any date component in  _datetime_ or  _expression_ is discarded.</span></span> 
   
-<span data-ttu-id="2feeb-127">Wenn _Datetime_ nicht vorhanden ist oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt diese Funktion ein #VALUE!</span><span class="sxs-lookup"><span data-stu-id="2feeb-127">If  _datetime_ is missing or cannot be converted to a valid result, this function returns a #VALUE!</span></span> <span data-ttu-id="2feeb-128">Fehler.</span><span class="sxs-lookup"><span data-stu-id="2feeb-128">error.</span></span> 
+<span data-ttu-id="8c060-127">Wenn _DateTime_ fehlt oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt diese funktion einen #VALUE!</span><span class="sxs-lookup"><span data-stu-id="8c060-127">If  _datetime_ is missing or cannot be converted to a valid result, this function returns a #VALUE!</span></span> <span data-ttu-id="8c060-128">zurück.</span><span class="sxs-lookup"><span data-stu-id="8c060-128">error.</span></span> 
   
-<span data-ttu-id="2feeb-129">Die TIMEVALUE-Funktion nimmt auch einen einzelnen Zahlenwert für _Expression_ , wobei der Dezimalteil des Ergebnisses den Bruchteil eines Tages seit Mitternacht darstellt.</span><span class="sxs-lookup"><span data-stu-id="2feeb-129">The TIMEVALUE function also accepts a single number value for  _expression_ where the decimal portion of the result represents the fraction of a day since midnight.</span></span> 
+<span data-ttu-id="8c060-129">Die TIMEvalue-Funktion akzeptiert auch einen einzelnen Zahlenwert für _Expression_ , wobei der Dezimalteil des Ergebnisses den Bruchteil eines Tags seit Mitternacht darstellt.</span><span class="sxs-lookup"><span data-stu-id="8c060-129">The TIMEVALUE function also accepts a single number value for  _expression_ where the decimal portion of the result represents the fraction of a day since midnight.</span></span> 
   
-## <a name="example-1"></a><span data-ttu-id="2feeb-130">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="2feeb-130">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="8c060-130">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="8c060-130">Example 1</span></span>
 
-<span data-ttu-id="2feeb-131">TIMEVALUE("06:00")</span><span class="sxs-lookup"><span data-stu-id="2feeb-131">TIMEVALUE("6:00 AM")</span></span>
+<span data-ttu-id="8c060-131">TIMEVALUE("06:00")</span><span class="sxs-lookup"><span data-stu-id="8c060-131">TIMEVALUE("6:00 AM")</span></span>
   
-<span data-ttu-id="2feeb-132">Gibt den Wert für 06:00 zurück.</span><span class="sxs-lookup"><span data-stu-id="2feeb-132">Returns the value representing 6:00 AM.</span></span>
+<span data-ttu-id="8c060-132">Gibt den Wert für 06:00 zurück.</span><span class="sxs-lookup"><span data-stu-id="8c060-132">Returns the value representing 6:00 AM.</span></span>
   
-## <a name="example-2"></a><span data-ttu-id="2feeb-133">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="2feeb-133">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="8c060-133">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="8c060-133">Example 2</span></span>
 
-<span data-ttu-id="2feeb-134">TIMEVALUE("14:30")+4 vs.+30 vm.</span><span class="sxs-lookup"><span data-stu-id="2feeb-134">TIMEVALUE("14:30")+4 eh.+30 em.</span></span>
+<span data-ttu-id="8c060-134">TIMEVALUE("14:30")+4 vs.+30 vm.</span><span class="sxs-lookup"><span data-stu-id="8c060-134">TIMEVALUE("14:30")+4 eh.+30 em.</span></span>
   
-<span data-ttu-id="2feeb-135">Gibt den Wert für 19:00:00 zurück.</span><span class="sxs-lookup"><span data-stu-id="2feeb-135">Returns the value representing 19:00:00.</span></span>
+<span data-ttu-id="8c060-135">Gibt den Wert für 19:00:00 zurück.</span><span class="sxs-lookup"><span data-stu-id="8c060-135">Returns the value representing 19:00:00.</span></span>
   
-## <a name="example-3"></a><span data-ttu-id="2feeb-136">Beispiel 3</span><span class="sxs-lookup"><span data-stu-id="2feeb-136">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="8c060-136">Beispiel 3</span><span class="sxs-lookup"><span data-stu-id="8c060-136">Example 3</span></span>
 
-<span data-ttu-id="2feeb-137">TIMEVALUE("11:00, 1. Juli 1997")</span><span class="sxs-lookup"><span data-stu-id="2feeb-137">TIMEVALUE("11 AM, July 1, 1997")</span></span>
+<span data-ttu-id="8c060-137">TIMEVALUE("11:00, 1. Juli 1997")</span><span class="sxs-lookup"><span data-stu-id="8c060-137">TIMEVALUE("11 AM, July 1, 1997")</span></span>
   
-<span data-ttu-id="2feeb-138">Gibt den Wert für 11:00 zurück.</span><span class="sxs-lookup"><span data-stu-id="2feeb-138">Returns the value representing 11:00 AM.</span></span>
+<span data-ttu-id="8c060-138">Gibt den Wert für 11:00 zurück.</span><span class="sxs-lookup"><span data-stu-id="8c060-138">Returns the value representing 11:00 AM.</span></span>
   
-## <a name="example-4"></a><span data-ttu-id="2feeb-139">Beispiel 4</span><span class="sxs-lookup"><span data-stu-id="2feeb-139">Example 4</span></span>
+## <a name="example-4"></a><span data-ttu-id="8c060-139">Beispiel 4</span><span class="sxs-lookup"><span data-stu-id="8c060-139">Example 4</span></span>
 
-<span data-ttu-id="2feeb-140">TIMEVALUE(0.6337)</span><span class="sxs-lookup"><span data-stu-id="2feeb-140">TIMEVALUE(0.6337)</span></span>
+<span data-ttu-id="8c060-140">TIMEVALUE (0.6337)</span><span class="sxs-lookup"><span data-stu-id="8c060-140">TIMEVALUE(0.6337)</span></span>
   
-<span data-ttu-id="2feeb-141">Gibt den Wert für 15:12:32 zurück.</span><span class="sxs-lookup"><span data-stu-id="2feeb-141">Returns the value representing 15:12:32.</span></span>
+<span data-ttu-id="8c060-141">Gibt den Wert für 15:12:32 zurück.</span><span class="sxs-lookup"><span data-stu-id="8c060-141">Returns the value representing 15:12:32.</span></span>
   
-## <a name="example-5"></a><span data-ttu-id="2feeb-142">Beispiel 5</span><span class="sxs-lookup"><span data-stu-id="2feeb-142">Example 5</span></span>
+## <a name="example-5"></a><span data-ttu-id="8c060-142">Beispiel 5</span><span class="sxs-lookup"><span data-stu-id="8c060-142">Example 5</span></span>
 
-<span data-ttu-id="2feeb-143">TIMEVALUE("7:89")</span><span class="sxs-lookup"><span data-stu-id="2feeb-143">TIMEVALUE("7:89")</span></span>
+<span data-ttu-id="8c060-143">TIMEVALUE ("7:89")</span><span class="sxs-lookup"><span data-stu-id="8c060-143">TIMEVALUE("7:89")</span></span>
   
-<span data-ttu-id="2feeb-p103">Gibt einen Fehler vom Typ #WERT! zurück.</span><span class="sxs-lookup"><span data-stu-id="2feeb-p103">Returns a #VALUE! error.</span></span>
+<span data-ttu-id="8c060-p103">Gibt einen Fehler vom Typ #WERT! zurück.</span><span class="sxs-lookup"><span data-stu-id="8c060-p103">Returns a #VALUE! error.</span></span>
   
 

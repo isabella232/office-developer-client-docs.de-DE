@@ -1,25 +1,25 @@
 ---
-title: Gradient Properties Section
+title: Abschnitt "Gradient Properties"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 99380333-9bb2-4aad-87ef-4f7f5f594dcd
-description: Zeigt die Eigenschaften für alle graduelle Füllung oder Linie Farbe Effekte auf die Form angewendet. Dieser Abschnitt enthält außerdem Zellen, die steuern, ob ein Shape Farbverlauf mit der Form dreht oder gibt an, ob das Shape einen angewendeten Verlauf, wenn mit anderen Shapes gruppiert wird davon ausgegangen.
-ms.openlocfilehash: 471cfca5a3dc09984073f81c1f945a1e5d4504af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Zeigt die Eigenschaften für alle graduellen Füll-oder Linien Farbeffekte an, die auf das Shape angewendet werden. Dieser Abschnitt enthält auch Zellen, die Steuern, ob der Farbverlauf einer Form mit dem Shape gedreht wird oder ob das Shape bei der Gruppierung mit anderen Shapes einen angewendeten Farbverlauf annimmt.
+ms.openlocfilehash: e0eed4508a366c772cb9830e0fe53b57faa84c43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360221"
 ---
-# <a name="gradient-properties-section"></a><span data-ttu-id="27e4a-104">Gradient Properties Section</span><span class="sxs-lookup"><span data-stu-id="27e4a-104">Gradient Properties Section</span></span>
+# <a name="gradient-properties-section"></a><span data-ttu-id="b7aab-104">Abschnitt "Gradient Properties"</span><span class="sxs-lookup"><span data-stu-id="b7aab-104">Gradient Properties Section</span></span>
 
-<span data-ttu-id="27e4a-105">Zeigt die Eigenschaften für alle graduelle Füllung oder Linie Farbe Effekte auf die Form angewendet.</span><span class="sxs-lookup"><span data-stu-id="27e4a-105">Shows the properties for any gradient fill or line color effects applied to the shape.</span></span> <span data-ttu-id="27e4a-106">Dieser Abschnitt enthält außerdem Zellen, die steuern, ob ein Shape Farbverlauf mit der Form dreht oder gibt an, ob das Shape einen angewendeten Verlauf, wenn mit anderen Shapes gruppiert wird davon ausgegangen.</span><span class="sxs-lookup"><span data-stu-id="27e4a-106">This section also includes cells that control whether a shape's gradient rotates with the shape or whether the shape assumes an applied gradient when grouped with other shapes.</span></span> 
+<span data-ttu-id="b7aab-105">Zeigt die Eigenschaften für alle graduellen Füll-oder Linien Farbeffekte an, die auf das Shape angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="b7aab-105">Shows the properties for any gradient fill or line color effects applied to the shape.</span></span> <span data-ttu-id="b7aab-106">Dieser Abschnitt enthält auch Zellen, die Steuern, ob der Farbverlauf einer Form mit dem Shape gedreht wird oder ob das Shape bei der Gruppierung mit anderen Shapes einen angewendeten Farbverlauf annimmt.</span><span class="sxs-lookup"><span data-stu-id="b7aab-106">This section also includes cells that control whether a shape's gradient rotates with the shape or whether the shape assumes an applied gradient when grouped with other shapes.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="27e4a-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="27e4a-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b7aab-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b7aab-107">Remarks</span></span>
 
-<span data-ttu-id="27e4a-108">Sie können im Dialogfeld **Shape formatieren** Farbverlauf Einstellungen festlegen (**Home** > **Formenarten** > **Füllung** > **Ausfülloptionen** > **Füllung** > **graduelle Füllung**).</span><span class="sxs-lookup"><span data-stu-id="27e4a-108">You can set gradient settings in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Fill** > **Fill Options** > **Fill** > **Gradient fill**).</span></span> 
+<span data-ttu-id="b7aab-108">Sie können Farbverlaufseinstellungen im Dialogfeld **Shape formatieren** festlegen (Füllungs\*\*\*\* > **Optionen** > \*\*\*\* > \*\*\*\* für die Füllfarbe für die**Ausgangs** > **Form** > ).</span><span class="sxs-lookup"><span data-stu-id="b7aab-108">You can set gradient settings in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Fill** > **Fill Options** > **Fill** > **Gradient fill**).</span></span> 
   
 
