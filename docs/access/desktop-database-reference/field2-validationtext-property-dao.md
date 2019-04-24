@@ -1,5 +1,5 @@
 ---
-title: Field2.ValidationText-Eigenschaft (DAO)
+title: Field2. ValidationText-Eigenschaft (DAO)
 TOCTitle: ValidationText Property
 ms:assetid: 6128f66c-3891-ae4d-d12d-354a79a9c05e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194867(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4d58cb6bd32bd46b0a6bcec40ff68cdc52eebc31
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292622"
 ---
-# <a name="field2validationtext-property-dao"></a>Field2.ValidationText-Eigenschaft (DAO)
+# <a name="field2validationtext-property-dao"></a>Field2. ValidationText-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der den Text oder die Meldung angibt, mit der die Anwendung anzeigt, dass der Wert eines **Field2**-Objekts nicht der in der Einstellung der **ValidationRule**-Eigenschaft angegebenen Gütigkeitsregel entspricht (gilt nur für Microsoft Access-Arbeitsbereiche). **String**-Wert mit Lese-/Schreibzugriff.
 
@@ -51,11 +51,11 @@ Bei einem **Field2**-Objekt hängt die Verwendung der **ValidationText**-Eigensc
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Beziehung</strong></p></td>
@@ -63,7 +63,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der **ValidationText**-Eigensc
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong></p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 </tbody>
 </table>

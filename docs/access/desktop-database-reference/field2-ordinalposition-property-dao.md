@@ -1,5 +1,5 @@
 ---
-title: Field2.Ordinalposition-Eigenschaft (DAO)
+title: Field2. OrdinalPosition-Eigenschaft (DAO)
 TOCTitle: OrdinalPosition Property
 ms:assetid: 55d89611-ad07-990d-fc33-f81d59472430
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194179(v=office.15)
@@ -12,19 +12,19 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 26d37bfda90f2ab4e2627b936d3cf37b5be811d5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292727"
 ---
-# <a name="field2ordinalposition-property-dao"></a>Field2.Ordinalposition-Eigenschaft (DAO)
+# <a name="field2ordinalposition-property-dao"></a>Field2. OrdinalPosition-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
-Mit dieser Eigenschaft wird die relative Position eines **Field2**-Objekts in einer **[Fields](fields-collection-dao.md)** -Auflistung festgelegt oder zurückgegeben.
+Legt die relative Position eines **Field2** -Objekts in einer Fields **[](fields-collection-dao.md)** -Auflistung fest oder gibt Sie zurück. .
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +36,7 @@ Mit dieser Eigenschaft wird die relative Position eines **Field2**-Objekts in ei
 
 Bei einem Objekt, das noch nicht der **Fields**-Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 
-Der Standardwert ist 0.
+The default is 0.
 
 Die Verfügbarkeit der **OrdinalPosition**-Eigenschaft hängt vom Objekt ab, in dem die **Fields**-Auflistung enthalten ist (siehe folgende Tabelle).
 
@@ -48,54 +48,53 @@ Die Verfügbarkeit der **OrdinalPosition**-Eigenschaft hängt vom Objekt ab, in 
 <thead>
 <tr class="header">
 <th><p>Zugehörigkeit der Fields-Auflistung</p></th>
-<th><p>
-Verfügbarkeit von OrdinalPosition</p></th>
+<th><p>OrdinalPosition</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Index</strong> -Objekt</p></td>
+<td><p><strong>Index</strong>-Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong> -Objekt</p></td>
+<td><p><strong>Relation</strong>-Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TableDef</strong> -Objekt</p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p><strong>TableDef</strong>-Objekt</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In der Regel hängt die Position eines Objekts, das Sie einer Auflistung anfügen, von der Reihenfolge der Anfügung ab. Das erste angefügte Objekt befindet sich an der ersten Position (0), das zweite an der zweiten Position (1) usw. Das letzte hinzugefügte Objekt befindet sich an Position Count – 1, wobei Count der Anzahl von Objekten in der Auflistung entspricht, wie durch die Einstellung der **[Count](containers-count-property-dao.md)**-Eigenschaft angegeben.
+In der Regel hängt die Position eines Objekts, das Sie einer Auflistung anfügen, von der Reihenfolge der Anfügung ab. Das erste angefügte Objekt befindet sich an der ersten Position (0), das zweite an der zweiten Position (1) usw. Das letzte angefügte Objekt befindet sich in der Ordnungsposition count-1, wobei count die Anzahl der Objekte in der Auflistung ist, wie durch die **[count](containers-count-property-dao.md)** -Eigenschaft festgelegt.
 
-Sie können mithilfe der **OrdinalPosition**-Eigenschaft eine Position für neue **Field2**-Objekte angeben, die von der Reihenfolge abweicht, in der Sie diese Objekte der Auflistung anfügen. Dadurch können Sie eine Feldreihenfolge für Tabellen, Abfragen und Recordsets angeben, die Sie in einer Anwendung verwenden. Beispielsweise die Reihenfolge, in der Felder in einer SELECT-Anweisung zurückgegeben werden \* Abfrage wird durch die aktuellen Werte der **OrdinalPosition** -Eigenschaft bestimmt.
+Sie können mithilfe der **OrdinalPosition**-Eigenschaft eine Position für neue **Field2**-Objekte angeben, die von der Reihenfolge abweicht, in der Sie diese Objekte der Auflistung anfügen. Dadurch können Sie eine Feldreihenfolge für Tabellen, Abfragen und Recordsets angeben, die Sie in einer Anwendung verwenden. Die Reihenfolge, in der Felder in einer SELECT \* -Abfrage zurückgegeben werden, wird beispielsweisedurch die aktuellen Werte der **Ordinalposition** -Eigenschaft bestimmt.
 
 Sie können die Reihenfolge, in der Felder in Recordsets zurückgegeben werden, dauerhaft zurücksetzen, indem Sie die **OrdinalPosition**-Eigenschaft auf eine positive ganze Zahl festlegen.
 
-Zwei oder mehr Field2-Objekte in derselben Auflistung können denselben OrdinalPosition-Eigenschaftswert besitzen. In diesem Fall werden sie alphabetisch angeordnet. Wenn Sie z. B. ein Feld namens Alter auf 4 und ein zweites Feld namens Gewicht auf 4 festlegen, wird das Gewicht nach dem Alter zurückgegeben.
+Two or more **Field2** objects in the same collection can have the same **OrdinalPosition** property value, in which case they will be ordered alphabetically. For example, if you have a field named Age set to 4 and you set a second field named Weight to 4, Weight is returned after Age.
 
-Sie können einen Wert angeben, der größer als die Anzahl der Felder minus 1 ist. Das Feld wird in einer Reihenfolge relativ zum größten Wert zurückgegeben. Wenn Sie z. B. die **OrdinalPosition**-Eigenschaft eines Felds auf 20 festlegen (und nur 5 Felder vorhanden sind) und Sie die **OrdinalPosition**-Eigenschaft für zwei anderen Felder auf 10 und 30 gesetzt haben, wird das Feld mit dem Wert 20 zwischen den Feldern mit den Werten 10 und 30 zurückgegeben.
+You can specify a number that is greater than the number of fields minus 1. The field will be returned in an order relative to the largest number. For example, if you set a field's **OrdinalPosition** property to 20 (and there are only 5 fields) and you've set the **OrdinalPosition** property for two other fields to 10 and 30, respectively, the field set to 20 is returned between the fields set to 10 and 30.
 
 
 > [!NOTE]
-> Auch wenn die **Fields** -Auflistung ein **[TableDef](tabledef-object-dao.md)** -Objekt nicht aktualisiert wurde, wird die Reihenfolge der Felder in einem **[Recordset-Objekt](recordset-object-dao.md)** aus der **TableDef** geöffnet die **OrdinalPosition** -Daten des **TableDef** -Objekts widerspiegeln. Ein **Recordset-Objekt** vom Typ Tabelle wird die gleichen **OrdinalPosition** Daten wie der zugrunde liegenden Tabelle, aber eine andere Art von **Recordset-Objekt** werden neue **OrdinalPosition** -Daten (beginnend mit 0), die die Reihenfolge der **Folgen haben OrdinalPosition** Daten des **TableDef**.
+> Auch wenn die Fields-Auflistung eines **[TableDef](tabledef-object-dao.md)** -Objekts nicht aktualisiert wurde, gibt die Reihenfolge der **Felder** in einem **[Recordset](recordset-object-dao.md)** -Objekt, das von **TableDef** geöffnet wird, die **Ordinalposition** -Daten des **TableDef** -Objekts wieder. A table-type **Recordset** will have the same **OrdinalPosition** data as the underlying table, but any other type of **Recordset** will have new **OrdinalPosition** data (starting with 0) that follow the order determined by the **OrdinalPosition** data of the **TableDef**.
 
 
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel ändert die Werte der OrdinalPosition-Eigenschaft des TableDef-Objekts in der Employees-Tabelle (Personal), um die Field2-Reihenfolge in einem resultierenden Recordset-Objekt zu steuern. Indem die OrdinalPosition-Eigenschaft aller Felder der Fields-Auflistung auf 1 festgelegt wird, ordnen resultierende Recordset-Objekte die Fields-Auflistung alphabetisch an. Beachten Sie, dass die OrdinalPosition-Werte im Recordset-Objekt nicht mit den Werten im TableDef-Objekt übereinstimmen, sondern lediglich das Endergebnis der TableDef-Änderungen wiedergeben.
+This example changes the **OrdinalPosition** property values in the Employees **TableDef** in order to control the **Field2** order in a resulting **Recordset**. By setting the **OrdinalPosition** of all the **Fields** to 1, any resulting **Recordset** will order the **Fields** alphabetically. Note that the **OrdinalPosition** values in the **Recordset** don't match the values in the **TableDef**, but simply reflect the end result of the **TableDef** changes.
 
 ```vb
     Sub OrdinalPositionX() 

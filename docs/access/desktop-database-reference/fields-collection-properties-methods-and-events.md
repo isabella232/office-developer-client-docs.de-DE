@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1a3a9fdbadd365334a38dc831d86d4072dbc1938
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292552"
 ---
 # <a name="fields-collection-properties-methods-and-events"></a>Eigenschaften, Methoden und Ereignisse der Fields-Auflistung
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -27,12 +27,12 @@ ms.locfileid: "28703986"
 
 - [Append-Methode](append-method-ado.md)
 - [CancelUpdate-Methode](cancelupdate-method-ado.md)
-- [Delete-Methode (ADO-Fields-Auflistung)](delete-method-ado-fields-collection.md)
+- [Delete-Methode (ADO Fields-Auflistung)](delete-method-ado-fields-collection.md)
 - [Refresh-Methode](refresh-method-ado.md)
 - [Resync-Methode](resync-method-ado.md)
 - [Update-Methode](update-method-ado.md)
 
 ## <a name="events"></a>Ereignisse
 
-Keine.
+None.
 

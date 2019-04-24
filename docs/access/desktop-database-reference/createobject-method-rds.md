@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 47ad61495bcc96b3099af6273796626e9442cbf0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295373"
 ---
 # <a name="createobject-method-rds"></a>CreateObject-Methode (RDS)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt den Proxy für das Zielgeschäftsobjekt und gibt einen Zeiger auf das Objekt zurück. Der Proxy verpackt Daten und leitet diese Daten an den serverseitigen Stub für die Kommunikation mit dem Geschäftsobjekt weiter, damit Anfragen und Daten über das Internet gesendet werden. Bei In-Process-Komponentenobjekten werden keine Proxies verwendet, sondern wird lediglich ein Zeiger auf das Objekt bereitgestellt.
 
@@ -38,19 +38,19 @@ Von Remote Data Service werden die folgenden Protokolle unterstützt: HTTP, HTTP
 <tbody>
 <tr class="odd">
 <td><p>HTTP</p></td>
-<td><p>Legen Sie<em>Objekt</em> = <em>DataSpace</em>. CreateObject (&quot;<em>ProgId</em>&quot;, &quot; <em>https://awebsrvr</em> &quot;)</p></td>
+<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot; &quot; <em>https://awebsrvr</em>, &quot;)</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS</p></td>
-<td><p>Legen Sie<em>Objekt</em> = <em>DataSpace</em>. CreateObject (&quot;<em>ProgId</em>&quot;, &quot; <em>https://awebsrvr</em> &quot;)</p></td>
+<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot; &quot; <em>https://awebsrvr</em>, &quot;)</p></td>
 </tr>
 <tr class="odd">
 <td><p>DCOM</p></td>
-<td><p>Legen Sie<em>Objekt</em> = <em>DataSpace</em>. CreateObject (&quot;<em>ProgId</em>&quot;, &quot; <em>Computername</em>&quot;)</p></td>
+<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot;, &quot; <em>Computername</em>&quot;)</p></td>
 </tr>
 <tr class="even">
 <td><p>In-Process</p></td>
-<td><p>Legen Sie<em>Objekt</em> = <em>DataSpace</em>. CreateObject (&quot;<em>ProgId</em>&quot;, &quot; &quot;)</p></td>
+<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot;, &quot; &quot;)</p></td>
 </tr>
 </tbody>
 </table>
@@ -63,9 +63,9 @@ Von Remote Data Service werden die folgenden Protokolle unterstützt: HTTP, HTTP
 |*Objekt* |Eine Objektvariable, die zu einem Objekt ausgewertet wird, das den in *ProgID* angegebenen Typ hat.|
 |*DataSpace* |Eine Objektvariable, die ein [RDS.DataSpace](dataspace-object-rds.md)-Objekt darstellt, das zum Erstellen einer Instanz des neuen Objekts verwendet wird.|
 |*ProgID* |Ein **String** -Wert mit dem programmgesteuerten Bezeichner, der ein serverseitiges Geschäftsobjekt angibt, das die Geschäftregeln Ihrer Anwendung implementiert.|
-|*Awebsrvr* oder *computername* |Ein **String** -Wert, der eine URL, die den Webserver der Internetinformationsdienste (Internet Information Services, IIS) identifiziert, auf denen eine Instanz des Objekts Business Server darstellt, wird erstellt.|
+|*awebsrvr* oder *Computername* |Ein **String** -Wert, der eine URL darstellt, die den Internetinformationsdienste-Webserver (IIS) angibt, auf dem eine Instanz des Server Geschäftsobjekts erstellt wird.|
 
 ## <a name="remarks"></a>Bemerkungen
 
-Das *http-Protokoll* ist ein standard-Web-Protokoll. *HTTPS* ist eine sichere Web-Protokoll. Verwenden Sie das *DCOM-Protokoll* , wenn ein LAN ohne HTTP ausführen. Das *in-Process* -Protokoll ist einer lokalen Dynamic-Link Library (DLL); Es wird ein Netzwerk nicht verwendet.
+Das *http-Protokoll* ist das standardmäßige Webprotokoll. *Https* ist ein sicheres Webprotokoll. Verwenden Sie das *DCOM-Protokoll* , wenn Sie ein lokales Netzwerk ohne http betreiben. Das *in-Process* -Protokoll ist eine lokale Dynamic Link Library (dll); Es wird kein Netzwerk verwendet.
 

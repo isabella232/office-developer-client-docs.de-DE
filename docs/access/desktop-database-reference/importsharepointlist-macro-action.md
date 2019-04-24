@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: df77d2375b66df907832b6ff2717427ae54a35a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291859"
 ---
 # <a name="importsharepointlist-macro-action"></a>ImportSharePointList-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **ImportierenSharePointListe** -Aktion können Sie Daten von einer Microsoft SharePoint Foundation-Website importieren oder verknüpfen.
 
@@ -29,7 +29,7 @@ Mit der **ImportierenSharePointListe** -Aktion können Sie Daten von einer Micro
 
 ## <a name="setting"></a>Einstellung
 
-Die **ImportierenSharePointListe** -Aktion hat die folgenden Argumente.
+Die **ImportierenSharePointListe**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -47,8 +47,8 @@ Die **ImportierenSharePointListe** -Aktion hat die folgenden Argumente.
 <td><p><strong>Transfertyp</strong></p></td>
 <td><p>Wählen Sie den Übertragungstyp aus.</p>
 <ul>
-<li><p>Wählen Sie <strong>Importieren</strong> , kopieren Sie die SharePoint Foundation-Daten in eine Tabelle in Microsoft Access. Updates für die Daten in Access haben keinen Einfluss auf die Daten in SharePoint Foundation. Aktualisierung der Daten in SharePoint Foundation wirken sich dagegen nicht auf die Daten in Access aus.</p></li>
-<li><p>Wählen Sie <strong>Link</strong> erstellen Sie eine verknüpfte Tabelle in Access, die eine Verknüpfung mit den Daten in SharePoint Foundation. Aktualisierung der Daten in Access werden in SharePoint Foundation übernommen. Dementsprechend werden Updates mit den Daten in SharePoint Foundation in Access wiedergegeben.</p></li>
+<li><p>Wählen Sie <strong>importieren</strong> aus, um die SharePoint Foundation-Daten in eine Tabelle in Microsoft Access zu kopieren. Aktualisierungen der Daten in Access wirken sich nicht auf die Daten in SharePoint Foundation aus. Entsprechend wirken sich Aktualisierungen an den Daten in SharePoint Foundation nicht auf die Daten in Access aus.</p></li>
+<li><p>Wählen Sie <strong>Link</strong> aus, um eine verknüpfte Tabelle in Access zu erstellen, die mit den Daten in SharePoint Foundation verknüpft ist. Aktualisierungen der Daten in Access werden in SharePoint Foundation widergespiegelt. Entsprechend werden Aktualisierungen der Daten in SharePoint Foundation in Access wiedergegeben.</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -76,7 +76,7 @@ Die **ImportierenSharePointListe** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Diese Aktion hat den gleichen Effekt wie das Klicken auf **SharePoint-Liste** in der Gruppe **Importieren** auf der Registerkarte **Externe Daten**. Die Argumente für die Aktion entsprechen den Optionen, die Sie im Assistenten für externe Daten auswählen.
 
@@ -98,5 +98,5 @@ Die **ImportierenSharePointListe** -Aktion hat die folgenden Argumente.
         
      `https://MySite12/_layouts/ViewEdit.aspx?List=%7B2A82A404%2D5529%2D47DC%2DAE13%2DAC1D9BC0A84F%7D&View=%7B357B4FE6%2D44CF%2D4275%2DB91F%2D46558301579B%7D`
         
-  Bevor Sie die GUIDs der Absenderadresse als Argumente in dieser Makroaktion verwenden können, müssen Sie jede **% 7 b** -Zeichenfolge mit dem Zeichen **{** ersetzen, ersetzen Sie jedes **% 2D** string mit der **-** Zeichen, und Ersetzen Sie jede **% 7 D** Zeichenfolge mit der **}** Zeichen. Fügen Sie nicht das **&** -Zeichen (kaufmännisches Und-Zeichen) ein, das auf die **%7D** -Zeichenfolge in der Listen-GUID folgt.
+  Bevor Sie die GUIDs aus der Adresse als Argumente in dieser Makroaktion verwenden können, müssen Sie jede **% 7B** -Zeichenfolge durch das Zeichen **{** ersetzen, jede **%-2D** - **-** Zeichenfolge durch das Zeichen ersetzen und jede **% 7D** -Zeichenfolge durch die **}** -Zeichen. Fügen Sie nicht das **&** -Zeichen (kaufmännisches Und-Zeichen) ein, das auf die **%7D** -Zeichenfolge in der Listen-GUID folgt.
 

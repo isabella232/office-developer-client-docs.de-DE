@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e98854665185d682b9049b000bf4b600040ba624
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295422"
 ---
 # <a name="create-method-adox"></a>Create-Methode (ADOX)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt einen neuen Katalog.
 
 ## <a name="syntax"></a>Syntax
 
-*Katalog*. *ConnectString* erstellen
+*Katalog*. Erstellen** von connectcollection
 
 ## <a name="parameters"></a>Parameter
 
@@ -30,7 +30,7 @@ Erstellt einen neuen Katalog.
 |:--------|:----------|
 |*ConnectString* |Ein **String** -Wert, der verwendet wird, um eine Verbindung mit der Datenquelle herzustellen.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Create**-Methode erstellt und öffnet ein neues ADO-[Connection](connection-object-ado.md)-Objekt für die in *ConnectString* angegebene Datenquelle. Bei erfolgreicher Ausführung wird das neue **Connection**-Objekt der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft zugewiesen.
 

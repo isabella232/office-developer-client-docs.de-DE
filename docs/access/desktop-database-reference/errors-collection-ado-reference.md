@@ -1,5 +1,5 @@
 ---
-title: Errors-Auflistung (ADO)-Referenz
+title: Errors-Auflistung (ADO)-Verweis
 TOCTitle: Errors collection (ADO)
 ms:assetid: 08400de5-8113-4f53-a6ae-62010372f276
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248823(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 060c537d117418b5a1253a4b6d4704516495e062
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293434"
 ---
-# <a name="errors-collection-ado-reference"></a>Errors-Auflistung (ADO)-Referenz
+# <a name="errors-collection-ado-reference"></a>Errors-Auflistung (ADO)-Verweis
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [Errors-Auflistung (ADO)](errors-collection-ado.md)
-- [Errors-Auflistung: Eigenschaften, Methoden und Ereignisse](errors-collection-properties-methods-and-events.md)
+- [Eigenschaften, Methoden und Ereignisse der Errors-Auflistung](errors-collection-properties-methods-and-events.md)
 

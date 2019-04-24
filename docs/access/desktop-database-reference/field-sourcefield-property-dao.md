@@ -1,5 +1,5 @@
 ---
-title: Field.SourceField-Eigenschaft (DAO)
+title: Field. SourceField-Eigenschaft (DAO)
 TOCTitle: SourceField Property
 ms:assetid: e5750d6c-4078-7bbb-9356-f9207c4e8028
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835953(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 249dabfa13bac6973cea4bd69e0867292c4a6967
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292993"
 ---
-# <a name="fieldsourcefield-property-dao"></a>Field.SourceField-Eigenschaft (DAO)
+# <a name="fieldsourcefield-property-dao"></a>Field. SourceField-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der den Namen des Felds angibt, das die ursprüngliche Quelle der Daten für ein **Field**-Objekt ist. Schreibgeschützter **String**-Wert.
 
@@ -49,11 +49,11 @@ Bei einem **Field**-Objekt hängt die Verwendung der Eigenschaften **SourceField
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Beziehung</strong></p></td>
@@ -61,7 +61,7 @@ Bei einem **Field**-Objekt hängt die Verwendung der Eigenschaften **SourceField
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
