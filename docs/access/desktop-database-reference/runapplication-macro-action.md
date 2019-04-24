@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: e7bf54934c6be215b2be5f32160d74fc2b4ab346
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306839"
 ---
 # <a name="runapplication-macro-action"></a>RunApplication-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <table>
 <thead>
@@ -38,11 +38,11 @@ ms.locfileid: "28721787"
 Sie können die **AusführenAnwendung** -Aktion verwenden, um eine Microsoft Windows-basierte oder MS-DOS-basierte Anwendung, wie Microsoft Excel, Microsoft Word oder Microsoft PowerPoint, in Microsoft Access auszuführen. Sie können z. B. Excel-Tabellenkalkulationsdaten in Ihre Access-Datenbank einfügen.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
-Die **AusführenAnwendung** -Aktion hat das folgende Argument.
+Die **AusführenAnwendung**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -58,13 +58,13 @@ Die **AusführenAnwendung** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Befehlszeile</strong></p></td>
-<td><p>Die Befehlszeile, die zum Starten der Anwendung verwendet wird (einschließlich des Pfads und aller anderen erforderlichen Parameter wie Switches, mit denen die Anwendung in einem bestimmten Modus ausgeführt wird). Geben Sie die Befehlszeile im Feld Befehlszeile im Abschnitt Aktionsargumente des Bereichs Makro-Generator ein. Dies ist ein erforderliches Argument.</p></td>
+<td><p>Die Befehlszeile, die zum Starten der Anwendung verwendet wird (einschließlich des Pfads und aller anderen erforderlichen Parameter, wie Switches, die die Anwendung in einem bestimmten Modus ausführen). Geben Sie die Befehlszeile in das Feld <strong>Befehlszeile</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die mit dieser Aktion ausgewählte Anwendung wird im Vordergrund ausgeführt. Das Makro, das diese Aktion enthält, wird nach dem Starten der Anwendung weiter ausgeführt.
 

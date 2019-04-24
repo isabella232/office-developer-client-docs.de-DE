@@ -1,5 +1,5 @@
 ---
-title: CommandTypeEnum (Access PC-Datenbank-Referenz)
+title: CommandTypeEnum (Access Desktop Database Reference)
 TOCTitle: CommandTypeEnum
 ms:assetid: 9ad8f155-88a0-00eb-2855-1e1a2a677437
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249700(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a9114128771d4753265208dada763ac0c9f796d1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296115"
 ---
 # <a name="commandtypeenum"></a>CommandTypeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, wie ein Befehlsargument interpretiert werden sollte.
 
@@ -52,7 +52,7 @@ Gibt an, wie ein Befehlsargument interpretiert werden sollte.
 <td><p>Wertet <strong>CommandText</strong> als Namen einer Tabelle aus, deren Spalten alle von einer intern generierten SQL-Abfrage zurückgegeben werden.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adCmdStoredProc fest</strong></p></td>
+<td><p><strong>adCmdStoredProc</strong></p></td>
 <td><p>4</p></td>
 <td><p>Wertet <strong>CommandText</strong> als Namen einer gespeicherten Prozedur aus.</p></td>
 </tr>
@@ -69,13 +69,13 @@ Gibt an, wie ein Befehlsargument interpretiert werden sollte.
 <tr class="odd">
 <td><p><strong>adCmdTableDirect</strong></p></td>
 <td><p>512</p></td>
-<td><p>Wertet <strong>CommandText</strong> als Namen einer Tabelle, deren Spalten alle zurückgegeben werden. Nur verwendet mit <strong>"Recordset.Open"</strong> oder <strong>Requery</strong> . Um die <a href="seek-method-ado.md">Seek</a> -Methode verwenden, muss das <strong>Recordset</strong> mit <strong>AdCmdTableDirect</strong>geöffnet werden. Dieser Wert kann nicht mit dem <a href="executeoptionenum.md">ExecuteOptionEnum</a>-Wert <strong>adAsyncExecute</strong> kombiniert werden.</p></td>
+<td><p>Wertet <strong>CommandText</strong> als Tabellenname aus, dessen Spalten alle zurückgegeben werden. Wird nur mit <strong>Recordset. Open</strong> oder Requery verwendet. <strong></strong> Um die <a href="seek-method-ado.md">Seek</a> -Methode verwenden zu können, muss das <strong>Recordset</strong> -Objekt mit <strong>adCmdTableDirect</strong>geöffnet werden. Dieser Wert kann nicht mit dem <a href="executeoptionenum.md">ExecuteOptionEnum</a>-Wert <strong>adAsyncExecute</strong> kombiniert werden.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -90,25 +90,25 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.UNSPECIFIED</p></td>
+<td><p>AdoEnums. CommandType. unSPECIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CommandType.TEXT</p></td>
+<td><p>AdoEnums. CommandType. TEXT</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.TABLE</p></td>
+<td><p>AdoEnums. CommandType. TABLE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CommandType.STOREDPROC</p></td>
+<td><p>AdoEnums. CommandType. GESPPROZ</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.UNKNOWN</p></td>
+<td><p>AdoEnums. CommandType. UNKNOWN</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CommandType.FILE</p></td>
+<td><p>AdoEnums. CommandType. FILE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.TABLEDIRECT</p></td>
+<td><p>AdoEnums. CommandType. direkt</p></td>
 </tr>
 </tbody>
 </table>

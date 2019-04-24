@@ -1,5 +1,5 @@
 ---
-title: RDS-Methoden (Access PC-Datenbank-Referenz)
+title: RDS-Methoden (Access Desktop Database Reference)
 TOCTitle: RDS methods
 ms:assetid: 7f4e2a28-cf6b-4621-5352-ed983a3c7450
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249538(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6797cb36821f99a2ec5aadf6e1c1c6fbedc5f3c3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300889"
 ---
 # <a name="rds-methods"></a>RDS-Methoden
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -64,7 +64,7 @@ ms.locfileid: "28699955"
 </tr>
 <tr class="odd">
 <td><p><a href="reset-method-rds.md">Reset</a></p></td>
-<td><p>Führt die Sortierung und Filterung für ein clientseitiges <strong>Recordset-Objekt</strong>, basierend auf den angegebenen Eigenschaften sortieren und filtern.</p></td>
+<td><p>Die Sortierung oder Filterung eines clientseitigen <strong>Recordsets</strong> wird basierend auf den angegebenen Sortierungs- und Filterungseigenschaften ausgeführt.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="submitchanges-method-rds.md">SubmitChanges</a></p></td>

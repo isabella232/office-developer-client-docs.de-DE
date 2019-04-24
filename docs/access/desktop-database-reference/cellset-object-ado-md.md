@@ -1,5 +1,5 @@
 ---
-title: Cellset-Objekt (ADO MD)
+title: CellSet-Objekt (ADO MD)
 TOCTitle: Cellset object (ADO MD)
 ms:assetid: 28d4b3b9-f907-9ec0-00e1-9666c887cdf0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249047(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c8cb75ad7277386cfe81b2edcffa234498318444
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296514"
 ---
-# <a name="cellset-object-ado-md"></a>Cellset-Objekt (ADO MD)
+# <a name="cellset-object-ado-md"></a>CellSet-Objekt (ADO MD)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt die Ergebnisse einer multidimensionalen Abfrage dar. Es ist eine Auflistung von Zellen, die aus Cubes oder anderen Zellmengen ausgewählt wurden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Daten innerhalb einer Zellmenge werden per array-ähnlichem Direktzugriff abgerufen. Sie können einen Drilldown für ein bestimmtes Element ausführen, um Daten zu diesem Element abzurufen. Der folgende Code gibt beispielsweise die Beschriftung des ersten Elements in der ersten Position auf der ersten Achse der Zellmenge **cst** zurück:
 
@@ -34,17 +34,17 @@ Die Auflistungen, Methoden und Eigenschaften eines **Cellset** -Objekts ermögli
 
   - Ausführen einer multidimensionalen Abfrage und Abrufen der entsprechenden Ergebnisse, indem Sie die [Open](open-method-ado-md.md)-Methode verwenden.
 
-  - Abrufen einer**** Zelle aus der**** Zellmenge, indem Sie die [Item](item-property-ado-md-cellset.md)-Eigenschaft verwenden.
+  - Retrieve a **Cell** from the **Cellset** with the [Item](item-property-ado-md-cellset.md) property.
 
-  - Zurückgeben der [Axis](axis-object-ado-md.md)-Objekte, die die**** Zellmenge definieren, indem Sie die [Axes](axes-collection-ado-md.md)-Auflistung verwenden.
+  - Return the [Axis](axis-object-ado-md.md) objects that define the **Cellset** with the [Axes](axes-collection-ado-md.md) collection.
 
-  - Abrufen von Informationen zu den Dimensionen, die zum Filtern der Daten in der**** Zellmenge verwendet werden, indem Sie die [FilterAxis](filteraxis-property-ado-md.md)-Eigenschaft verwenden.
+  - Retrieve information about the dimensions used to filter the data in the **Cellset** with the [FilterAxis](filteraxis-property-ado-md.md) property.
 
-  - Zurückgeben oder Angeben der Abfrage, mit der die**** Zellmenge definiert wird, indem Sie die [Source](source-property-ado-md.md)-Eigenschaft verwenden.
+  - Return or specify the query used to define the **Cellset** with the [Source](source-property-ado-md.md) property.
 
-  - Zurückgeben des aktuellen Status der**** Zellmenge (geöffnet, geschlossen, wird ausgeführt oder Verbindung wird hergestellt), indem Sie die [State](state-property-ado-md.md)-Eigenschaft verwenden.
+  - Return the current state of the **Cellset** (open, closed, executing, or connecting) with the [State](state-property-ado-md.md) property.
 
-  - Schließen einer geöffneten**** Zellmenge, indem Sie die [Close](close-method-ado-md.md)-Methode verwenden.
+  - Close an open **Cellset** with the [Close](close-method-ado-md.md) method.
 
-  - Abrufen anbieterspezifischer Informationen zum**** Cellset (Zellmenge), indem Sie die ADO-Standardauflistung [Properties](properties-collection-ado.md) verwenden.
+  - Retrieve provider-specific information about the **Cellset** with the standard ADO [Properties](properties-collection-ado.md) collection.
 

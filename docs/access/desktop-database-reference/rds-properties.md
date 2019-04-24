@@ -1,5 +1,5 @@
 ---
-title: RDS-Eigenschaften (Access PC-Datenbank-Referenz)
+title: RDS-Eigenschaften (Access-Desktop-Daten Bankreferenz)
 TOCTitle: RDS properties
 ms:assetid: 002989dc-0022-d3a2-ddd2-2230837b3a63
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248775(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 35d3552705ff358f34a40aa51a2ec13b4b80f6d2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300840"
 ---
 # <a name="rds-properties"></a>RDS-Eigenschaften
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <br/>
 
@@ -51,12 +51,12 @@ ms.locfileid: "28716052"
 <td><p>Gibt den im Filterwert zu verwendenden Auswertungsoperator an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="filtervalue-property-rds.md"><ui>FilterValue</ui></a></p></td>
+<td><p><a href="filtervalue-property-rds.md">FilterValue</a></p></td>
 <td><p>Der Wert zum Filtern von Datensätzen wird angegeben.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="handler-property-rds.md">Ereignishandler</a></p></td>
-<td><p>Gibt den Namen des einer serverseitigen Anpassungsprogramms (<em>Handler</em>), die die Funktionalität des <strong>RDSServer.DataFactory</strong>und alle vom <em>Handler</em>verwendeten Parametern erweitert.</p></td>
+<td><p><a href="handler-property-rds.md">Handler</a></p></td>
+<td><p>Der Name eines serverseitigen Anpassungsprogramms (<em>Handler</em>), durch das die Funktionalität von <strong>RDSServer.DataFactory</strong> und allen vom <em>Handler</em> verwendeten Parametern erweitert wird, wird angegeben.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="internettimeout-property-rds.md">InternetTimeout</a></p></td>
@@ -67,7 +67,7 @@ ms.locfileid: "28716052"
 <td><p>Der Fortschritt eines <strong>DataControl</strong>-Objekts beim Abrufen von Daten in sein <strong>Recordset</strong>-Objekt wird angegeben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="recordset-sourcerecordset-properties-rds.md">Recordset- und SourceRecordset</a></p></td>
+<td><p><a href="recordset-sourcerecordset-properties-rds.md">Recordset-und SourceRecordset</a></p></td>
 <td><p>Gibt das <strong>Recordset</strong> -Objekt an, das von einem benutzerdefinierten Geschäftsobjekt zurückgegeben wird.</p></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ ms.locfileid: "28716052"
 <td><p>Gibt die Spalte an, nach der die Datensätze sortiert werden sollen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sortdirection-property-rds.md"><ui>SortDirection</ui></a></p></td>
+<td><p><a href="sortdirection-property-rds.md">SortDirection</a></p></td>
 <td><p>Gibt eine aufsteigende oder absteigende Sortierreihenfolge an.</p></td>
 </tr>
 <tr class="even">

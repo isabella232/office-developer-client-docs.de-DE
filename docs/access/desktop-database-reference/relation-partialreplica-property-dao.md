@@ -1,5 +1,5 @@
 ---
-title: Relation.PartialReplica-Eigenschaft (DAO)
+title: Relation. PartialReplica-Eigenschaft (DAO)
 TOCTitle: PartialReplica Property
 ms:assetid: 3cb15639-371e-06e3-e2ba-30466ce09a72
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192692(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: fef48902b806f13947ae4b81728af4c5704c2b8e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307014"
 ---
-# <a name="relationpartialreplica-property-dao"></a>Relation.PartialReplica-Eigenschaft (DAO)
+# <a name="relationpartialreplica-property-dao"></a>Relation. PartialReplica-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert für ein **Relation**-Objekt fest, der angibt, ob die Beziehung berücksichtigt werden soll, wenn ein Teilreplikat von einem vollständigen Replikat aufgefüllt wird, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Datenbanken). **Boolean**-Wert mit Lese-/Schreibzugriff.
 
@@ -34,22 +34,22 @@ Legt einen Wert für ein **Relation**-Objekt fest, der angibt, ob die Beziehung 
 
 Die Einstellung bzw. der Rückgabewert ist ein boolescher Datentyp, der **True** ist, wenn die Beziehung während der Synchronisation erzwungen werden soll.
 
-Diese Eigenschaft gestattet es Ihnen, Daten vom vollständigen Replikat basierend auf Beziehungen zwischen Tabellen auf das Teilreplikat zu replizieren. Sie können die PartialReplica-Eigenschaft verwenden, wenn die Einstellung der ReplicaFilter-Eigenschaft alleine nicht ausreicht, um festzulegen, welche Daten auf das Teilreplikat repliziert werden sollen. Beispiel: Sie haben eine Datenbank, in der die Tabelle Customers eine 1:n-Beziehung zur Tabelle Orders hat. Sie möchten ein Teilreplikat konfigurieren, bei der nur Bestellungen von Kunden aus der Region Kalifornien (CA) repliziert werden (anstelle aller Bestellungen). Es ist nicht möglich, die ReplicaFilter-Eigenschaft für die Tabelle Orders auf Region = 'CA' festzulegen, da sich das Feld Region in der Tabelle Customers befindet und nicht in der Tabelle Orders.
+This property enables you to replicate data from the full replica to the partial replica based on relationships between tables. You can use the **PartialReplica** property when setting the **ReplicaFilter** property alone can't adequately specify what data should be replicated to the partial. For example, suppose you have a database in which the Customers table has a one-to-many relationship with the Orders table, and you want to configure a partial replica that only replicates orders from customers in the California region (instead of all orders). Die **ReplicaFilter** -Eigenschaft der Orders-Tabelle kann nicht auf Region = ' ca ' festgelegt werden, da sich das Feld Region in der Tabelle Customers befindet, nicht in der Tabelle Bestellungen.
 
-Um alle Bestellungen aus der Region Kalifornien (CA) zu replizieren, müssen Sie angeben, dass die Beziehung zwischen den Tabellen Orders und Customers während der Replikation aktiv sein soll. Nach der Erstellung eines Teilreplikats wird es mit den folgenden Schritten mit allen Bestellungen aus der Region Kalifornien aufgefüllt:
+To replicate all orders from the California region, you must indicate that the relation between the Orders and Customers tables will be active during replication. Once you've created a partial replica, the following steps will populate it with all orders from the California region:
 
-1.  Legen Sie die **ReplicaFilter** -Eigenschaft für das Kunden **TableDef** -Objekt zum "Region = 'CA'".
+1.  Legen Sie die **ReplicaFilter** -Eigenschaft des **TableDef** -Objekts Customers auf "Region = ' ca '" fest.
 
-2.  Legen Sie den Wert der PartialReplica-Eigenschaft für das Relation-Objekt entsprechend der Beziehung zwischen Orders und Customers auf True fest.
+2.  Set the value of the **PartialReplica** property to **True** on the **Relation** object corresponding to the relationship between Orders and Customers.
 
 3.  Rufen Sie die **PopulatePartial**-Methode auf.
     
 
 > [!NOTE]
-> Wenn Sie einen Replikatfilter oder Replikat Relation festlegen, achten Sie darauf, dass Datensätze aus dem Teilreplikat, die die Einschränkungskriterien erfüllen, nicht aus dem Teilreplikat, aber nicht aus dem vollständigen Replikat entfernt werden sollen. Angenommen, Sie die **ReplicaFilter** -Eigenschaft festlegen, auf die Kunden **TableDef** in dem Teilreplikat zu "Region = 'CA'" und Sie dann erneut die Datenbank aufzufüllen. Dies wird einfügen oder aktualisieren alle Datensätze für Kunden-basierte Kalifornien (CA). 
+> When you set a replica filter or replica relation, be aware that records in the partial replica that don't satisfy the restriction criteria will be removed from the partial replica, but not from the full replica. Nehmen Sie beispielsweise an, dass Sie die **ReplicaFilter** -Eigenschaft im **TableDef** Customers im Teilreplikat auf "Region = ' ca '" festlegen und dann die Datenbank erneut auffüllen. This will insert or update all records for California-based customers. 
 > 
-> Wenn Sie dann die **ReplicaFilter** -Eigenschaft zum Zurücksetzen "Region = 'FL'" und die Datenbank wieder auffüllen, alle Kalifornien (CA) Region Datensätze aus dem Teilreplikat entfernt werden und alle Datensätze aus Florida-basierte Kunden aus dem vollständigen Replikat eingefügt werden soll. Es werden keine Datensätze aus dem vollständigen Replikat gelöscht werden. 
+> Wenn Sie die **ReplicaFilter** -Eigenschaft dann auf "Region = ' FL '" zurücksetzen und die Datenbank erneut auffüllen, werden alle Datensätze von California Region im Teilreplikat entfernt, und alle Datensätze aus Florida-basierten Kunden werden aus dem vollständigen Replikat eingefügt. No records in the full replica will be deleted. 
 >
-> Bevor Sie die **ReplicaFilter** - oder **PartialReplica** -Eigenschaft festlegen, ist es ratsam, synchronisieren das Teilreplikat, in dem Sie diese Eigenschaften mit dem vollständigen Replikat festlegen. Dadurch wird sichergestellt, dass mit dem vollständigen Replikat ausstehenden Änderungen aus dem Teilreplikat zusammengeführt wird, bevor alle Datensätze aus dem Teilreplikat entfernt werden.
+> Before setting either the **ReplicaFilter** or **PartialReplica** property, it's a good idea to synchronize the partial replica in which you are setting these properties with the full replica. This will ensure that pending changes in the partial replica will be merged into the full replica before any records are removed in the partial replica.
 
 

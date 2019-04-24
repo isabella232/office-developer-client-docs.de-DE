@@ -1,5 +1,5 @@
 ---
-title: Recordset2.FillCache-Methode (DAO)
+title: Recordset2. FillCache-Methode (DAO)
 TOCTitle: FillCache Method
 ms:assetid: 28a70997-a8d4-73e6-171a-61286e3d3485
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192007(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2098df82375ac47b7d5abe0bd63b0af2bb29ba40
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309702"
 ---
-# <a name="recordset2fillcache-method-dao"></a>Recordset2.FillCache-Methode (DAO)
+# <a name="recordset2fillcache-method-dao"></a>Recordset2. FillCache-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit einem Microsoft Access-Datenbankmodul verbundenen ODBC-Datenquelle enthält, teilweise oder vollständig auf (gilt nur für mit dem Microsoft Access-Datenbankmodul verbundene ODBC-Datenquellen).
+Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit einem Microsoft Access-Datenbankmodul verbundenen ODBC-Datenquelle enthält (gilt nur für mit dem Microsoft Access-Datenbankmodul verbundene ODBC-Datenquellen), teilweise oder vollständig auf.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . FillCache (***Zeilen***, ***Anfangslesezeichen***)
+*Ausdruck* . FillCache (***Rows***, ***Start Bookmark***)
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
@@ -42,7 +42,7 @@ Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit 
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -52,13 +52,13 @@ Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit 
 <td><p><em>Rows</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>Integer</strong>), der angibt, wie viele Zeilen im Cache gespeichert werden sollen. Wenn Sie dieses Argument auslassen, wird der Wert durch die <strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong>-Eigenschafteneinstellung festgelegt.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>Integer</strong>), der angibt, wie viele Zeilen im Cache gespeichert werden sollen. Wenn Sie dieses Argument weglassen, wird der Wert durch die Einstellung der <strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong> -Eigenschaft bestimmt.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Anfangslesezeichen</em></p></td>
+<td><p><em>Start Bookmark</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der ein Lesezeichen angibt. Der Cache wird ab dem Datensatz gefüllt, der durch dieses Lesezeichen angegeben wurde. Wenn Sie dieses Argument auslassen, wird der Cache ab dem Datensatz gefüllt, der durch die <strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong>-Eigenschaft angegeben wurde.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der ein Lesezeichen angibt. Der Cache wird ab dem Datensatz gefüllt, der durch dieses Lesezeichen angegeben wurde. Wenn Sie dieses Argument weglassen, wird der Cache beginnend mit dem von der <strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong> -Eigenschaft angegebenen Datensatz gefüllt.</p></td>
 </tr>
 </tbody>
 </table>
@@ -72,13 +72,13 @@ Wenn Sie nicht warten möchten, bis der Cache mit Datensätzen gefüllt ist, die
 
 Jede mit einem Microsoft Access-Datenbankmodul verbundene ODBC-Datenquelle, auf die Sie mit **Recordset**-Objekten zugreifen, kann einen lokalen Cache haben. Sie können einen Cache erstellen, indem Sie ein **Recordset**-Objekt aus einer Remotedatenquelle öffnen und dann die **CacheSize**- und **CacheStart**-Eigenschaften des **Recordset**-Objekts festlegen.
 
-Wenn Zeilen und Anfangslesezeichen erstellen einen Bereich von Datensätzen, die teilweise oder vollständig außerhalb des Bereichs von Datensätzen, die von den Eigenschaften **CacheSize** und **CacheStart** angegeben, der Teil des Recordset-Objekts außerhalb dieses Bereichs wird ignoriert und nicht geladen werden in den Cache.
+Wenn Zeilen und Start Bookmark einen Bereich von Datensätzen erstellen, die teilweise oder vollständig außerhalb des von den Eigenschaften **CacheSize** und **CacheStart** angegebenen Datensatzes liegen, wird der Teil des Recordset-Objekts außerhalb dieses Bereichs ignoriert und nicht geladen. in den Cache.
 
 Übersteigen die durch **FillCache** angeforderten Datensätze die in der Remotedatenquelle verbliebene Anzahl, ruft das Microsoft Access-Datenbankmodul nur die verbliebenen Datensätze ab, und es tritt kein Fehler auf.
 
 > [!NOTE]
 > - Aus dem Cache abgerufene Datensätze enthalten keine Änderungen, die andere Benutzer gleichzeitig an den Quelldaten vorgenommen haben.
-> - FillCache ruft nur Datensätze ab, die noch nicht zwischengespeichert wurden. Wenn Sie eine Aktualisierung aller zwischengespeicherten Daten erzwingen möchten, legen Sie die CacheSize-Eigenschaft des Recordset-Objekts auf 0 fest, setzen Sie die Größe des ursprünglich angeforderten Caches zurück, und verwenden Sie dann FillCache.
+> - **FillCache** only retrieves records not already cached. To force an update of all the cached data, set the **CacheSize** property of the **Recordset** to 0, reset it to the size of the cache you originally requested, and then use **FillCache**.
 
 ## <a name="example"></a>Beispiel
 

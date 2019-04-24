@@ -1,5 +1,5 @@
 ---
-title: Recordset2.CancelUpdate-Methode (DAO)
+title: Recordset2. CancelUpdate-Methode (DAO)
 TOCTitle: CancelUpdate Method
 ms:assetid: f741dec1-b9a4-506e-74ec-2bc309b0918e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836907(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 90378dc61d12485a290bbd7857d026a46cd9da96
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307399"
 ---
-# <a name="recordset2cancelupdate-method-dao"></a>Recordset2.CancelUpdate-Methode (DAO)
+# <a name="recordset2cancelupdate-method-dao"></a>Recordset2. CancelUpdate-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Alle ausstehenden Aktualisierungen für ein **[Recordset](recordset-object-dao.md)** -Objekt werden abgebrochen.
+Bricht alle ausstehenden Aktualisierungen für ein **[Recordset](recordset-object-dao.md)** -Objekt ab.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,17 +38,17 @@ Alle ausstehenden Aktualisierungen für ein **[Recordset](recordset-object-dao.m
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>UpdateType</em></p></td>
+<td><p><em>Aktualisierungstyp</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Long</strong></p></td>
-<td><p>Legen Sie auf einen der Werte <strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong> .</p><p><strong>Hinweis</strong>: die Werte <EM>DbUpdateRegular</EM> und <EM>DbUpdateBatch</EM> sind nur gültig, wenn Batchaktualisierungen aktiviert ist.</p>
+<td><p>Auf einen der <strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong> -Werte festgelegt.</p><p><strong>Hinweis</strong>: die <EM>DbUpdateRegular</EM> -und <EM>dbUpdateBatch</EM> -Werte sind nur gültig, wenn die Batchaktualisierung aktiviert ist.</p>
 </td>
 </tr>
 </tbody>

@@ -1,5 +1,5 @@
 ---
-title: Connection.OpenRecordset-Methode (DAO)
+title: Connection. openRecordset-Methode (DAO)
 TOCTitle: OpenRecordset Method
 ms:assetid: 584a3e00-7589-90f1-aa6a-5d6116f0b5b6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194324(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: abbb7a4f58714aef0e085d0f37b5ee49378e0f51
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295849"
 ---
-# <a name="connectionopenrecordset-method-dao"></a>Connection.OpenRecordset-Methode (DAO)
+# <a name="connectionopenrecordset-method-dao"></a>Connection. openRecordset-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es an die **Recordsets**-Auflistung an.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . OpenRecordset (***Name***, ***Typ***, ***Optionen***, ***LockEdit***)
+*Ausdruck* . OpenRecordset (***Name***, ***Type***, ***options***, ***bearbeitsperr***)
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 
@@ -38,7 +38,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -54,21 +54,21 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es
 <td><p><em>Type</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> -Konstante gibt den Typ des zu öffnenden <strong>Recordset</strong> an.</p><p><strong>Hinweis</strong>: Wenn Sie ein <strong>Recordset-Objekt</strong> in einer Microsoft Access-Arbeitsbereich öffnen, und Sie keinen Typ angeben, erstellt <strong>OpenRecordset</strong> eine vom Typ Tabelle <strong>Recordset</strong>, falls möglich. Wenn Sie einer verknüpften Tabelle oder Abfrage angeben, erstellt <strong>OpenRecordset</strong> ein vom Typ Dynaset- <strong>Recordset-Objekt</strong>.</p>
+<td><p>Eine <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> -Konstante gibt den Typ des zu öffnenden <strong>Recordset</strong> an.</p><p><strong>Hinweis</strong>: Wenn Sie ein <strong>Recordset</strong> -Objekt in einem Microsoft Access-Arbeitsbereich öffnen und keinen Typ angeben, erstellt OpenRecordset, falls möglich, ein <strong>Recordset</strong>vom Tabellentyp. <strong></strong> If you specify a linked table or query, <strong>OpenRecordset</strong> creates a dynaset-type <strong>Recordset</strong>.</p>
 </td>
 </tr>
 <tr class="odd">
 <td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Kombination aus <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> -Konstanten, die Merkmale des neuen <strong>Recordset</strong> angeben.</p><p><strong>Hinweis</strong>: die Konstanten <strong>DbConsistent</strong> und <strong>DbInconsistent</strong> schließen sich gegenseitig aus, und beide wird ein Fehler ausgegeben. Lockedits-Argument angeben, wenn <strong>beide</strong> Optionen verwenden, tritt ein Fehler auf.</p>
+<td><p>Eine Kombination aus <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> -Konstanten, die Merkmale des neuen <strong>Recordset</strong> angeben.</p><p><strong>Hinweis</strong>: die Konstanten <strong>dbConsistent</strong> und <strong>dbInconsistent</strong> schließen sich gegenseitig aus, und die Verwendung von beidem verursacht einen Fehler. Das Angeben eines LockEdits-Arguments, wenn <strong></strong> Optionen die dbReadOnly-Konstante verwenden, verursacht auch einen Fehler.</p>
 </td>
 </tr>
 <tr class="even">
-<td><p><em>LockEdit</em></p></td>
+<td><p><em>Bearbeitsperr</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong> -Konstante, die die Sperre für das <strong>Recordset</strong> bestimmt.</p><p><strong>Hinweis</strong>: <strong>DbReadOnly</strong> Options-Argument oder das Argument sperren, jedoch nicht beide können. Wenn Sie für beide Argumente verwenden, tritt ein Laufzeitfehler auf.</p>
+<td><p>Eine <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong> -Konstante, die die Sperre für das <strong>Recordset</strong> bestimmt.</p><p><strong>Hinweis</strong>: Sie können <strong>dbReadOnly</strong> entweder im Options-oder im LockEdits-Argument verwenden, jedoch nicht in beiden. Wenn Sie es für beide Argumente verwenden, tritt ein Laufzeitfehler auf.</p>
 </td>
 </tr>
 </tbody>
@@ -90,6 +90,6 @@ Das Öffnen mehrerer **Recordset**-Objekte in einer ODBC-Datenquelle kann fehlsc
 Beim Schließen eines **Recordset**-Objekts mit der **[Close](connection-close-method-dao.md)** -Methode wird es automatisch aus der **Recordsets**-Auflistung gelöscht.
 
 > [!NOTE]
-> Wenn *Quelle* bezieht eine SQL-Anweisung besteht aus einer Zeichenfolge mit einem nicht-Integer-Wert verkettet und die Systemparameter angeben einer US-decimal Zeichen wie etwa ein Komma (beispielsweise StrSQL = "PRICE &gt; " &amp; LngPrice, und LngPrice = 125,50), tritt ein Fehler auf, wenn Sie, zum Öffnen des **Recordset-Objekts versuchen**. Das geschieht, weil die Zahl während der Verkettung mithilfe des standardmäßigen Dezimalzeichens des Systems in eine Zeichenfolge konvertiert wird und SQL nur US-amerikanische Dezimalzeichen akzeptiert.
+> Wenn *Source* auf eine SQL-Anweisung verweist, die aus einer mit einem nicht-ganzzahligen Wert verketteten Zeichenfolge besteht, und die Systemparameter ein nicht-U. S. Decimal-Zeichen wie ein Komma (beispielsweise &gt; strSQL &amp; = "Price" lngPrice und lngPrice = 125, 50), tritt ein Fehler auf, wenn Sie versuchen, das **Recordset**-Objekt zu öffnen. Der Grund ist, dass die Zahl bei der Verkettung mithilfe des Standarddezimalzeichens des Systems in eine Zeichenfolge umgewandelt wird und SQL nur für die USA gültige Dezimalzeichen akzeptiert.
 
 

@@ -1,5 +1,5 @@
 ---
-title: Protokollieren Sie die Eigenschaften, Methoden und Ereignisse (ADO)
+title: Record-Eigenschaften,-Methoden und-Ereignisse (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: c38c915c-da8f-ce52-cf36-7463829d2278
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249956(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e8d7cbf0620d896044edd41f783180148bceae66
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300714"
 ---
-# <a name="record-properties-methods-and-events-ado"></a>Protokollieren Sie die Eigenschaften, Methoden und Ereignisse (ADO)
+# <a name="record-properties-methods-and-events-ado"></a>Record-Eigenschaften,-Methoden und-Ereignisse (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="propertiescollections"></a>Eigenschaften/Auflistungen
 
@@ -38,9 +38,9 @@ ms.locfileid: "28710993"
 - [DeleteRecord-Methode](deleterecord-method-ado.md)
 - [GetChildren-Methode](getchildren-method-ado.md)
 - [MoveRecord-Methode](moverecord-method-ado.md)
-- [Open Sie-Methode (ADO-Datensatz)](open-method-ado-record.md)
+- [Open-Methode (ADO-Datensatz)](open-method-ado-record.md)
 
 ## <a name="events"></a>Ereignisse
 
-Keine.
+None.
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: aa98d021c47747a1c8f0dbe2091fdd2b08fb9823
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295730"
 ---
 # <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a>ConnectionString-, ConnectionTimeout- und State-Eigenschaft (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Dieses Beispiel veranschaulicht verschiedene Verwendungsmöglichkeiten der ConnectionString-Eigenschaft, um ein Connection-Objekt zu öffnen. Außerdem wird mithilfe der ConnectionTimeout-Eigenschaft ein Verbindungstimeout festgelegt, und mithilfe der State-Eigenschaft wird der Status der Verbindungen überprüft. Zum Ausführen dieser Prozedur ist die GetState-Funktion erforderlich.
+This example demonstrates different ways of using the [ConnectionString](connectionstring-property-ado.md) property to open a [Connection](connection-object-ado.md) object. It also uses the [ConnectionTimeout](connectiontimeout-property-ado.md) property to set a connection timeout period, and the [State](state-property-ado.md) property to check the state of the connections. The GetState function is required for this procedure to run.
 
 ```vb 
  

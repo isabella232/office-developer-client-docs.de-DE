@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 399836158084f07b30b06a9fb099da74527d0cb0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308652"
 ---
 # <a name="shape-commands-in-general"></a>Shape-Befehle im Allgemeinen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Durch Datenstrukturierung werden die Spalten eines geformten **Recordset** -Objekts, die Beziehungen zwischen den durch die Spalten dargestellten Entitäten und die Methode, mit der das **Recordset** -Objekt mit Daten aufgefüllt wird, definiert.
 
-Ein geformtes **Recordset** -Objekt kann aus den folgenden Spaltentypen bestehen.
+Ein geformtes **Recordset**-Objekt kann aus den folgenden Spaltentypen bestehen.
 
 <table>
 <colgroup>
@@ -58,21 +58,21 @@ Ein geformtes **Recordset** -Objekt kann aus den folgenden Spaltentypen bestehen
 </table>
 
 
-Ein Shape-Befehl kann eine Klausel enthalten, durch die ein Abfragebefehl an einen zugrunde liegenden Datenprovider angegeben wird, durch den ein Recordset-Objekt zurückgegeben wird. Die Syntax der Abfrage hängt von den Anforderungen des zugrunde liegenden Datenproviders ab. Normalerweise handelt es sich dabei um die SQL-Sprache, obwohl für ADO keine bestimmte Abfragesprache erforderlich ist.
+A shape command may contain a clause specifying a query command to an underlying data provider that will return a **Recordset** object. The query's syntax depends on the requirements of the underlying data provider. This will usually be Structured Query Language (SQL), although ADO does not require the use of any particular query language.
 
 Sie können eine SQL JOIN-Klausel verwenden, um zwei Tabellen miteinander in Beziehung zu setzen. Durch ein hierarchisches **Recordset** -Objekt werden die Informationen jedoch möglicherweise effizienter dargestellt. In jeder Zeile eines durch JOIN erstellten **Recordset** -Objekts werden Informationen aus einer der Tabellen redundant wiederholt. Ein hierarchisches **Recordset** -Objekt hat nur ein übergeordnetes **Recordset** -Objekt für jedes einzelne mehrerer untergeordneter **Recordset** -Objekte.
 
-Shape-Befehle können durch Recordset-Objekte oder durch Festlegen der CommandText-Eigenschaft des Command-Objekts und anschließendes Aufrufen der Execute-Methode ausgegeben werden.
+Shape commands can be issued by **Recordset** objects or by setting the [CommandText](commandtext-property-ado.md) property of the [Command](command-object-ado.md) object and then calling the [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) method.
 
-Shape-Befehle können geschachtelt werden. Das heißt, der übergeordnete Befehl oder der untergeordnete Befehl kann selbst ein weiterer Shape-Befehl sein.
+Shape commands can be nested. Das heißt, der *übergeordnete Befehl* oder *untergeordnete* Befehl kann selbst ein anderer Shape-Befehl sein.
 
-Vom Shape-Anbieter wird immer ein Clientcursor zurückgegeben, selbst wenn der Benutzer die Cursorplatzierung adUseServer angibt.
+The shape provider always returns a client cursor, even when the user specifies a cursor location of **adUseServer**.
 
 Weitere Informationen zum Navigieren in einem hierarchischen **Recordset** -Objekt finden Sie unter [Zugreifen auf Zeilen in einem hierarchischen Recordset](accessing-rows-in-a-hierarchical-recordset.md).
 
-Genaue Informationen zu syntaktisch richtigen Shape-Befehlen finden Sie unter Formale Grammatik für Formen.
+For precise information about syntactically correct shape commands, see [Formal Shape Grammar](formal-shape-grammar.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ausstellen von Befehlen für den zugrunde liegenden Datenprovider](issuing-commands-to-the-underlying-data-provider.md)
+- [Ausgeben von Befehlen an den zuGrunde liegenden Datenanbieter](issuing-commands-to-the-underlying-data-provider.md)
 

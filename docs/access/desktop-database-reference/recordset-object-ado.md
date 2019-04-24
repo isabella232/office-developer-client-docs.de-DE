@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 636681cf8e0c20f078387b21974141a9cb66cfcd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300476"
 ---
 # <a name="recordset-object-ado"></a>Recordset-Objekt (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt den gesamten Satz der Datensätze aus einer Basistabelle oder die Ergebnisse eines ausgeführten Befehls dar. Das **Recordset** -Objekt verweist immer nur auf einen einzelnen Datensatz innerhalb des Satzes als aktueller Datensatz.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit **Recordset** -Objekten können Sie Daten eines Anbieters ändern. Wenn Sie ADO verwenden, ändern Sie Daten fast ausschließlich mit **Recordset** -Objekten. Alle **Recordset** -Objekte bestehen aus Datensätzen (Zeilen) und Feldern (Spalten). Abhängig von der vom Anbieter unterstützten Funktionalität sind einige **Recordset** -Methoden oder -Eigenschaften möglicherweise nicht verfügbar.
 
-ADODB.Recordset ist die Programm-ID, die zum Erstellen eines Recordset-Objekts verwendet werden sollte. Vorhandene Anwendungen, die auf die veraltete Programm-ID ADOR.Recordset verweisen, funktionieren weiterhin ohne Neukompilierung, doch für neue Entwicklungen sollte ADODB.Recordset verwendet werden.
+ADODB.Recordset is the ProgID that should be used to create a **Recordset** object. Existing applications that reference the outdated ADOR.Recordset ProgID will continue to work without recompiling, but new development should reference ADODB.Recordset.
 
 In ADO sind vier verschiedene Cursortypen definiert:
 
@@ -34,9 +34,9 @@ In ADO sind vier verschiedene Cursortypen definiert:
 
   - **Statischer Cursor**. Dieser Cursortyp bietet eine statische Kopie einer Datensatzgruppe, die Sie zum Suchen von Daten oder Generieren von Berichten verwenden können. Der Cursortyp gestattet immer Textmarken und damit alle Typen von Bewegungen innerhalb des **Recordset** -Objekts. Hinzufügungen, Änderungen oder Löschungen anderer Benutzer sind nicht zu sehen. Dies ist der einzige erlaubte Cursortyp, wenn Sie ein clientseitiges **Recordset** -Objekt erstellen.
 
-  - **Vorwärtsgerichteter Cursor**. Dieser Cursortyp gestattet nur ein vorwärtsgerichtetes Abrollen des **Recordset** -Objekts. Hinzufügungen, Änderungen und Löschungen anderer Benutzer sind nicht zu sehen. Dadurch wird die Leistung in Situationen verbessert, in denen Sie nur einen einzelnen Schritt durch ein **Recordset** -Objekt ausführen müssen.
+  - **Vorwärtsgerichteter Cursor** . Dieser Cursortyp gestattet nur ein vorwärtsgerichtetes Abrollen des **Recordset**-Objekts. Hinzufügungen, Änderungen und Löschungen anderer Benutzer sind nicht zu sehen. Dadurch wird die Leistung in Situationen verbessert, in denen Sie nur einen einzelnen Schritt durch ein **Recordset**-Objekt ausführen müssen.
 
-Legen Sie die [CursorType](cursortype-property-ado.md) -Eigenschaft vor dem Öffnen des **Recordset-Objekt** , um den Cursortyp auszuwählen, oder mit der [Open](open-method-ado-recordset.md) -Methode übergeben Sie ein *CursorType* -Argument. Einige Anbieter unterstützen nicht alle Cursortypen. Überprüfen Sie die Dokumentation des Anbieters diesbezüglich. Wenn Sie keinen Cursortyp festlegen, öffnet ADO standardmäßig einen vorwärtsgerichteten Cursor.
+Legen Sie vor dem Öffnen des **Recordset**-Objekts die [CursorType](cursortype-property-ado.md)-Eigenschaft fest, um den Cursortyp auszuwählen, oder übergeben Sie ein *CursorType*-Argument mit der [Open](open-method-ado-recordset.md)-Methode. Einige Anbieter unterstützen nicht alle Cursortypen. Überprüfen Sie die Dokumentation des Anbieters diesbezüglich. Wenn Sie keinen Cursortyp festlegen, öffnet ADO standardmäßig einen vorwärtsgerichteten Cursor.
 
 Wenn die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft auf den Wert **adUseClient** festgelegt ist, um ein **Recordset** -Objekt zu öffnen, ist die **UnderlyingValue** -Eigenschaft des [Field](field-object-ado.md)-Objekts im zurückgegebenen **Recordset** -Objekt nicht verfügbar. Bei der Verwendung dieser Eigenschaft mit bestimmten Anbietern (z. B. der Microsoft OLE DB-Anwender für ODBC in Verbindung mit Microsoft SQL Server) können Sie **Recordset** -Objekte unabhängig von einem zuvor definierten [Connection](connection-object-ado.md)-Objekt erstellen, indem Sie eine Verbindungszeichenfolge mit der **Open** -Methode übergeben. ADO erstellt dennoch ein [Connection](connection-object-ado.md)-Objekt, weist dieses Objekt jedoch keiner Objektvariablen zu. Wenn Sie mehrere **Recordset** -Objekte über dieselbe Verbindung öffnen, sollten Sie explizit ein **Connection** -Objekt erstellen und öffnen. Dadurch wird das **Connection** -Objekt einer Objektvariablen zugewiesen. Wenn Sie diese Objektvariable beim Öffnen Ihrer **Recordset** -Objekte nicht verwenden, erstellt ADO für jedes neue **Recordset** -Objekt ein neues **Connection** -Objekt, selbst wenn Sie dieselbe Verbindungszeichenfolge übergeben.
 

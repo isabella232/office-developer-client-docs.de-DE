@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0706f216eed6f40c313bc93541aae9d715efd2f8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309073"
 ---
 # <a name="running-the-address-book-sample-application"></a>Ausführen der Adressbuchanwendung
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Führen Sie zum Ausführen der Adressbuchanwendung das folgende Verfahren durch.
 
@@ -24,7 +24,7 @@ Führen Sie zum Ausführen der Adressbuchanwendung das folgende Verfahren durch.
 
 1.  Stellen Sie sicher, dass Microsoft SQL Server ausgeführt wird. Klicken Sie auf **Start**, zeigen Sie auf **Programme**, zeigen Sie auf **Microsoft SQL Server 7.0**, und klicken Sie dann auf **Dienst-Manager**. Enthält der weiße Kreis einen grünen Pfeil, wird SQL Server ausgeführt. Klicken Sie andernfalls (der weiße Kreis enthält ein rotes Rechteck) auf **Start/Weiter**.
 
-2.  Geben Sie in Microsoft Internet Explorer 4.0 oder höher folgende Adresse: **https://***Webserver***/RDS/AddressBook/AddrBook.asp** Hierbei ist *Webserver* der Name des Webservers, auf dem die RDS-Serverkomponenten installiert sind.
+2.  Geben Sie in Microsoft Internet Explorer 4,0 oder höher die folgende Adresse ein **:****** https://Webserver/RDS/addressbook/AddrBook.ASP** , ** wobei Webserver der Name des Webservers ist, auf dem die RDS-Server Komponenten installiert sind.
 
-3.  Sie können dann verschiedener Szenarien in der Adressbuch-beispielanwendung versuchen, wie Suchen nach einer Person basierend auf seinen e-Mail-Namen Auflisten aller Personen mit dem Titel "Programm-Manager" oder Bearbeiten einer vorhandenen Datensätze. Klicken Sie auf **Suchen** , um das Datenraster mit allen verfügbaren Namen zu füllen.
+3.  Sie können dann verschiedene Szenarien in der Beispielanwendung für das Adressbuch testen, beispielsweise die Suche nach einer Person, die auf Ihrem e-Mail-Namen basiert, und alle Personen mit dem Titel "Programm-Manager" auflisten oder vorhandene Datensätze bearbeiten. Klicken Sie auf **Suchen** , um das Datenraster mit allen verfügbaren Namen auszufüllen.
 

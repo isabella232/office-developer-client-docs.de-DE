@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 03447b9977c74484eb7455a75fc2255c33c5e4c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308701"
 ---
 # <a name="service-providers-and-components"></a>Dienstanbieter und Komponenten
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Dienstanbieter sind Komponenten, die die Funktionalität von Datenprovidern erweitern, indem erweiterte Schnittstellen implementiert werden, die vom Datenspeicher systemintern nicht unterstützt werden.
 
-Microsoft Data Access bietet eine *Komponentenarchitektur* , die einzelne, spezialisierte Komponenten implementieren diskrete können Datenbankfunktionalität oder "Dienste" auf der Basis weniger leistungsfähige Speicher-Sätze. Auf diese Weise statt erzwingen jedes Datenspeicher auf eine eigenen Implementierung von erweiterten Funktionen bereit, oder erzwingen, dass generische Applications Datenbankfunktionalität intern implementieren, Dienstkomponenten eine allgemeine Implementierung bereit, die jeder Anwendung können Verwenden Sie beim Zugriff auf jeden beliebigen Datenspeicher. Die Tatsache, dass einige Funktionen systemintern vom Datenspeicher und durch allgemeine Komponenten implementiert wird, ist für die Anwendung transparent.
+Microsoft Data Access stellt eine *Komponentenarchitektur* bereit, mit der einzelne, spezialisierte Komponenten für weniger leistungsfähige Datenspeicher eigenständige Datenbankfunktionalität oder "Dienste" implementieren können. Anstatt also für jeden Datenspeicher eine eigene Implementierung erweiterter Funktionalität bzw. für einfache Anwendungen die interne Implementierung von Datenbankfunktionalität zu erzwingen, stellen Dienstkomponenten eine allgemeine Implementierung bereit, die von jeder Anwendung beim Zugriff auf einen beliebigen Datenspeicher verwendet werden kann. Die Tatsache, dass bestimmte Funktionen systemintern durch den Datenspeicher sowie durch allgemeine Komponenten implementiert werden, ist im Hinblick auf die Anwendung transparent.
 
 Beispielsweise ist ein Cursormodul wie z. B. der Microsoft Cursor Service für OLE DB eine Dienstkomponente, die Daten eines sequenziellen Vorwärtscursor-Datenspeichers verwenden kann, um Daten zu erstellen, für die ein Bildlauf ausgeführt werden kann. Weitere von ADO häufig verwendete Dienstanbieter sind der Microsoft OLE DB-Anbieter für Persistenz (zum Speichern von Daten in einer Datei), der Microsoft Data Shaping Dienst für OLE DB (für hierarchische **Recordset**-Objekte) und der Microsoft OLE DB-Anbieter für Remoting (zum Aufrufen von Datenprovidern auf einem Remotecomputer).
 

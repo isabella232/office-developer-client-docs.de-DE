@@ -1,5 +1,5 @@
 ---
-title: Recordset2.AddNew-Methode (DAO)
+title: Recordset2. AddNew-Methode (DAO)
 TOCTitle: AddNew Method
 ms:assetid: 25c7d207-185c-943b-405e-b138ffb8b3e2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191874(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 49a69b5e8603e72faaba480ea9069d3668bd6de1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307497"
 ---
-# <a name="recordset2addnew-method-dao"></a>Recordset2.AddNew-Methode (DAO)
+# <a name="recordset2addnew-method-dao"></a>Recordset2. AddNew-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
  
 Erstellt einen neuen Datensatz für ein aktualisierbares **Recordset2**-Objekt.
 
@@ -28,7 +28,7 @@ Erstellt einen neuen Datensatz für ein aktualisierbares **Recordset2**-Objekt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die AddNew-Methode, um einen neuen Datensatz zu erstellen und zum durch Recordset benannten Recordset2-Objekt hinzuzufügen. Bei dieser Methode werden die Felder auf Standardwerte festgelegt. Sind keine Standardwerte angegeben, werden die Felder auf Null festgelegt (die für ein Recordset2 des Typs Tabelle angegebenen Standardwerte).
+Use the **AddNew** method to create and add a new record in the **Recordset2** object named by recordset. This method sets the fields to default values, and if no default values are specified, it sets the fields to Null (the default values specified for a table-type **Recordset2**).
 
 Mit der **[Update](recordset2-update-method-dao.md)** -Methode können Sie nach dem Ändern des neuen Datensatzes die Änderungen speichern und den Datensatz zum **Recordset2** hinzufügen. Es treten erst dann Änderungen in der Datenbank auf, wenn Sie die **Update**-Methode verwenden.
 
@@ -42,18 +42,18 @@ Wenn Sie noch nicht zum letzten Datensatz des **Recordset2**-Objekts gewechselt 
 
 Die Position des neuen Datensatzes hängt vom Typ des **Recordset2**-Objekts ab:
 
-- In einem Recordset2-Objekt vom Typ Dynaset werden Datensätze an das Ende des Recordset-Objekts eingefügt, unabhängig davon, welche Regeln in Bezug auf die Sortierung oder Reihenfolge beim Öffnen des Recordset-Objekts gültig waren.
+- In a dynaset-type **Recordset2** object, records are inserted at the end of the **Recordset**, regardless of any sorting or ordering rules that were in effect when the **Recordset** was opened.
 
-- In einem Recordset2-Objekt vom Typ Tabelle, dessen Index-Eigenschaft festgelegt wurde, werden Datensätze in der Sortierreihenfolge an ihrer richtigen Position zurückgegeben. Falls Sie die Index-Eigenschaft nicht festgelegt haben, werden neue Datensätze am Ende des Recordset-Objekts zurückgegeben.
+- In a table-type **Recordset2** object whose **[Index](recordset2-index-property-dao.md)** property has been set, records are returned in their proper place in the sort order. If you haven't set the **Index** property, new records are returned at the end of the **Recordset**.
 
 Der Datensatz, der vor dem Verwenden von **AddNew** aktuell war, bleibt der aktuelle Datensatz. Wenn Sie den neuen Datensatz zum aktuellen Datensatz machen möchten, können Sie die **[Bookmark](recordset2-bookmark-property-dao.md)** -Eigenschaft auf das durch die **[LastModified](recordset2-lastmodified-property-dao.md)** -Eigenschaft identifizierte Lesezeichen festlegen.
 
 > [!NOTE]
-> [!HINWEIS] Um einen Datensatz hinzuzufügen, zu bearbeiten oder zu löschen, muss es einen eindeutigen Index im Datensatz in der zugrunde liegenden Datenquelle geben. Andernfalls tritt ein "Berechtigung verweigert"-Fehler im **AddNew** -, **Delete** - oder **Edit** -Methodenaufruf in einem Microsoft Access-Arbeitsbereich auf.
+> [!HINWEIS] Es muss ein eindeutiger Index für den Datensatz in der zugrunde liegenden Datenquelle vorhanden sein, damit der Datensatz hinzugefügt, bearbeitet oder gelöscht werden kann. Andernfalls tritt im Aufruf der Methoden **AddNew**, **Delete** oder **Edit** in einem Microsoft Access-Arbeitsbereich ein Fehler vom Typ "Berechtigung verweigert" auf.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel verwendet die **AddNew** -Methode, um einen neuen Datensatz mit dem angegebenen Namen zu erstellen. Die "AddName"-Funktion ist zum Ausführen dieser Prozedur erforderlich.
+This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.
 
 ```vb
     Sub AddNewX() 

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b706ffed14fdb440f3c3192c7c36015343f2e134
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300924"
 ---
 # <a name="raiseerror-macro-action"></a>RaiseError-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
 
 Mit der **AuslösenFehler** -Aktion wird eine Ausnahme ausgelöst, die von der **[BeiFehler](onerror-macro-action.md)** -Makroaktion behandelt werden kann.
 
@@ -25,7 +25,7 @@ Mit der **AuslösenFehler** -Aktion wird eine Ausnahme ausgelöst, die von der *
 
 ## <a name="setting"></a>Einstellung
 
-Die **AuslösenFehler** -Aktion kann mit den folgenden Argumenten verwendet werden.
+Die **AuslösenFehler**-Aktion kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -36,7 +36,7 @@ Die **AuslösenFehler** -Aktion kann mit den folgenden Argumenten verwendet werd
 <thead>
 <tr class="header">
 <th><p>Argument</p></th>
-<th><p>Eingabe erforderlich</p></th>
+<th><p>Erforderlich</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -55,7 +55,7 @@ Die **AuslösenFehler** -Aktion kann mit den folgenden Argumenten verwendet werd
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Bei einem Aufruf der **AuslösenFehler** -Aktion in einem Makroereignis des Typs **[Vor Änderung](before-change-macro-event.md)** oder **[Vor Löschung](before-delete-macro-event.md)** wird das Ereignis abgebrochen.
 
@@ -63,7 +63,7 @@ Wenn keine aktive **BeiFehler** -Anweisung zur Fehlerbehandlung vorhanden ist, w
 
 Zum Anzeigen der **USysApplicationLog** -Tabelle gehen Sie wie folgt vor:
 
-1.  Klicken Sie im Menü **Datei** auf, und klicken Sie dann auf **Optionen**.
+1.  Klicken Sie im Menü **Datei** auf **Optionen**.
 
 2.  Klicken Sie im Dialogfeld **Access-Optionen** auf die Registerkarte **Aktuelle Datenbank**.
 
@@ -75,9 +75,9 @@ Zum Anzeigen der **USysApplicationLog** -Tabelle gehen Sie wie folgt vor:
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel veranschaulicht die Auslösenfehler-Aktion verwenden, um das Ereignis vor Änderung Daten Makro abzubrechen. Wenn das Feld AssignedTo aktualisiert wird, wird mit einem NachschlagenDatensatz-Datenblock verwendet, um festzustellen, ob der zugewiesene Techniker eine open Service-Anforderung derzeit zugewiesen ist. Wenn dies der Fall ist, klicken Sie dann das Ereignis vor Änderung abgebrochen, und der Datensatz nicht aktualisiert.
+Das folgende Beispiel zeigt, wie Sie die Auslösenfehler-Aktion verwenden, um das makroereignis Before Change Data abzubrechen. Wenn das Feld ZugewiesenAn aktualisiert wird, wird ein LookupRecord-Datenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer offenen Serviceanforderung zugeordnet ist. Wenn dies auf true festgelegt ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     /* Get the name of the technician  */

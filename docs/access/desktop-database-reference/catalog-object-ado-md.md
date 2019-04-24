@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0ee7d2e68df90c8eee4227f949f93ea074b7df97
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296591"
 ---
 # <a name="catalog-object-ado-md"></a>Catalog-Objekt (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Enthält multidimensionale Schemainformationen (Cubes und zugrunde liegende Dimensionen, Hierarchien, Ebenen und Elemente), die für einen multidimensionalen Datenanbieter (Datenprovider, MDP) spezifisch sind.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Auflistungen und Eigenschaften eines **Catalog** -Objekts ermöglichen Folgendes:
+Die Auflistungen und Eigenschaften eines **Catalog**-Objekts ermöglichen Folgendes:
 
 - Öffnen des Katalogs, indem Sie für die [ActiveConnection](activeconnection-property-ado-md.md)-Eigenschaft ein [Connection](connection-object-ado.md)-ADO-Standardobjekt oder eine gültige Verbindungszeichenfolge festlegen.
 
-- Identifizieren des**** Katalogs, indem Sie die [Name](name-property-ado-md.md)-Eigenschaft verwenden.
+- Identify the **Catalog** with the [Name](name-property-ado-md.md) property.
 
 - Durchlaufen der Cubes in einem Katalog, indem Sie die [CubeDefs](cubedefs-collection-ado-md.md)-Auflistung verwenden.
 

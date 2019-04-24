@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 646c1393cc798c1f827e6ceaebf46bfe7c87bcbd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306832"
 ---
 # <a name="runcode-macro-action"></a>RunCode-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können mit der Aktion **AusführenCode** eine Visual Basic for Applications (VBA)-Funktionsprozedur aufrufen.
 
-## <a name="setting"></a>Einstellungen
+## <a name="setting"></a>Einstellung
 
-Die **AusführenCode** -Aktion hat das folgende Argument.
+Die **AusführenCode**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -42,13 +42,13 @@ Die **AusführenCode** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Funktionsname</strong></p></td>
-<td><p>Der Name der VBA-Funktionsprozedur, die aufgerufen werden soll. Geben Sie die gewünschten Funktionsargumente in Klammern an. Geben Sie den Funktionsnamenn im Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" ein. Dabei handelt es sich um ein Pflichtargument.  </p><p><strong>Hinweis</strong>: In einer Access-Datenbank (MDB oder ACCDB), klicken Sie auf die <strong>Generator</strong> -Schaltfläche des Ausdrucks-Generators verwenden, um eine Funktion für dieses Argument auszuwählen. Klicken Sie auf die gewünschte Funktion in der Liste im Ausdrucks-Generator.</p></td>
+<td><p>Der Name der VBA-Funktionsprozedur, die aufgerufen werden soll. Geben Sie die gewünschten Funktionsargumente in Klammern an. Geben Sie den Funktionsnamenn im Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" ein. Dabei handelt es sich um ein Pflichtargument.  </p><p><strong>Hinweis</strong>: in einer Access-Datenbank (MDB oder ACCDB) klicken Sie auf die <strong></strong> Generator-Schaltfläche, um mithilfe des Ausdrucks-Generators eine Funktion für dieses Argument auszuwählen. Klicken Sie dazu im Ausdrucks-Generator auf die gewünschte Funktion in der Liste.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die benutzerdefinierten Funktionen werden in Microsoft Access-Modulen gespeichert.
 
@@ -56,7 +56,7 @@ Sie müssen Klammern angeben, auch wenn die Funktion, wie im folgenden Beispiel,
 
 `TestFunction()`
 
-Im Gegensatz zu benutzerdefinierten Funktionsnamen für Einstellungen der Ereignis-Eigenschaft verwendet, der Funktionsname im Argument **Funktionsname** nicht mit einem Gleichheitszeichen beginnen (**=**).
+Im Gegensatz zu benutzerdefinierten Funktionsnamen, die für Einstellungen der Ereigniseigenschaft verwendet werden, beginnt der Funktionsname im Argument **Funktionsname** nicht mit**=** einem Gleichheitszeichen ().
 
 Access ignoriert den Rückgabewert der Funktion.
 

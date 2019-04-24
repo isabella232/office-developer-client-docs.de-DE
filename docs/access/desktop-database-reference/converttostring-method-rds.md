@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2c589339eb838f944ce4443c19a787eafb01c3dd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295513"
 ---
 # <a name="converttostring-method-rds"></a>ConvertToString-Methode (RDS)
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
 
 Konvertiert ein [Recordset](recordset-object-ado.md)-Objekt in eine MIME-Zeichenfolge, die die Recordsetdaten darstellt.
 
@@ -29,13 +29,13 @@ Konvertiert ein [Recordset](recordset-object-ado.md)-Objekt in eine MIME-Zeichen
 |Parameter|Beschreibung|
 |:--------|:----------|
 |*DataFactory* |Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekt darstellt.|
-|*Recordset* |Eine Objektvariable, die ein **Recordset** -Objekt darstellt.|
+|*Recordset* |Eine Objektvariable, die ein **Recordset**-Objekt darstellt.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie bei ASP-Dateien **ConvertToString**, um das **Recordset** -Objekt in eine auf dem Server generierte HTML-Seite einzubetten, damit es auf den Clientcomputer transportiert wird.
+Verwenden Sie bei ASP-Dateien **ConvertToString**, um das **Recordset**-Objekt in eine auf dem Server generierte HTML-Seite einzubetten, damit es auf den Clientcomputer transportiert wird.
 
-**ConvertToString** lädt das **Recordset** -Objekt zunächst in die Tabellen des Cursordiensts und generiert anschließend einen Datenstrom im MIME-Format.
+**ConvertToString** lädt das **Recordset**-Objekt zunächst in die Tabellen des Cursordiensts und generiert anschließend einen Datenstrom im MIME-Format.
 
 Mit Remote Data Service kann die MIME-Zeichenfolge auf dem Client erneut in ein voll funktionsfähiges **Recordset** -Objekt konvertiert werden. Er eignet sich hervorragend für die Behandlung von weniger als 400 Datenzeilen mit einer Breite von maximal 1024 Bytes pro Zeile. Sie sollten ihn jedoch nicht zur Übertragung von BLOB-Daten und umfangreichen Ergebnisgruppen über HTTP verwenden. Da die Zeichenfolge nicht komprimiert wird, kann die Übertragung von sehr großen Datensätzen über HTTP im Vergleich zum datenübertragungsoptimierten Tablegram-Format, das von Remote Data Service definiert und als dessen systemeigenes Transportprotokollformat verwendet wird, eine beträchtliche Zeit dauern.
 

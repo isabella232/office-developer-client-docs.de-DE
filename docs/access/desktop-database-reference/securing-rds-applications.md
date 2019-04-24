@@ -8,37 +8,37 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4a531c01750117ae7abbf87e5ba4cb23daf37851
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308778"
 ---
 # <a name="securing-rds-applications"></a>Sichern von RDS-Anwendungen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="microsoft-internet-explorer-security-issues"></a>Sicherheitsaspekte zu Microsoft Internet Explorer
 
-Mit neuen Security optimierten Features von Microsoft Internet Explorer sind einige ADO- und RDS-Objekte nur in einer Umgebung "sicher" Modus ausgeführt. Dies erfordert, dass Sie diesen Problemen, einschließlich der verschiedenen Zonen, Sicherheitsstufen, strengen Verhalten, unsichere Vorgänge kennen und Sicherheitseinstellungen angepasst.
+Mit neuen Sicherheitsverbesserungen, die Microsoft Internet Explorer hinzugefügt werden, sind einige ADO-und RDS-Objekte nur in einer "sicheren" Modus-Umgebung eingeschränkt. Dies erfordert, dass Sie diese Probleme, einschließlich unterschiedlicher Zonen, Sicherheitsstufen, restriktive Verhalten, unsichere Vorgänge und angepasste Sicherheitseinstellungen wissen.
 
 Weitere Informationen zu diesen Aspekten finden Sie unter den entsprechenden ADO- und RDS-Sicherheitsthemen zu Microsoft Internet Explorer in den technischen Artikeln zu ActiveX Data Objects (ADO).
 
-## <a name="security-and-your-web-server"></a>Sicherheit und das Web Server
+## <a name="security-and-your-web-server"></a>Sicherheit und Ihr Webserver
 
-Wenn Sie das [RDSServer.DataFactory](datafactory-object-rdsserver.md) -Objekt auf Ihrem Webserver Internet verwenden, denken Sie daran, dass dies ein potenzielles Sicherheitsrisiko erstellt. Externe Benutzern, die gültige Datenquellennamen (DSN), Benutzer-ID und Kennwortinformationen erhalten könnten Seiten zum Senden von Abfragen zu dieser Datenquelle schreiben. Wenn Sie Zugriff auf eine Datenquelle möchten, ist eine Option zum Aufheben der Registrierung und löschen Sie das **RDSServer.DataFactory** -Objekt (msadcf.dll) und benutzerdefinierte Geschäftsobjekte stattdessen mit hartcodierten Abfragen verwenden.
+Wenn Sie das [RDSServer. DataFactory](datafactory-object-rdsserver.md) -Objekt auf Ihrem Internet-Webserver verwenden, ist dies ein potenzielles Sicherheitsrisiko. External users who obtain valid data source name (DSN), user ID, and password information could write pages to send any query to that data source. If you want more restricted access to a data source, one option is to unregister and delete the **RDSServer.DataFactory** object (msadcf.dll), and instead use custom business objects with hard-coded queries.
 
-Weitere Informationen über die Sicherheitsaspekte bei der Verwendung des RDSServer.DataFactory-Objekts finden Sie unter Microsoft-Sicherheitsbulletin MS99-025 auf der [Microsoft Security-Website](https://www.microsoft.com/en-us/security/default.aspx).
+Weitere Informationen zu den Sicherheitsimplikationen der Verwendung des RDSServer. dataFactory-Objekts finden Sie im Microsoft-Sicherheits Bulletin MS99-025 auf der [Microsoft-Sicherheitswebsite](https://www.microsoft.com/en-us/security/default.aspx).
 
 ## <a name="client-impersonation-and-security"></a>Sicherheit beim Clientidentitätswechsel
 
-Wenn die **Kennwortauthentifizierung** -Eigenschaft für den IIS-Webserver auf Windows NT NTLM-Authentifizierung (für Windows NT 4.0) oder auf integrierte Windows-Authentifizierung (für Windows 2000) festgelegt ist, werden klicken Sie dann von Geschäftsobjekten unter des Clients aufgerufen Sicherheitskontext. Dies ist ein neues Feature in RDS 1.5, das den Clientidentitätswechsel über HTTP zulässt. Bei der Arbeit in diesem Modus werden die Anmeldung an den Webserver (IIS) ist nicht anonyme, verwendet die Benutzer-ID und das Kennwort, das unter der Clientcomputer ausgeführt wird. Wenn die ODBC-Datenquellennamen für die Verwendung der vertrauenswürdigen Verbindung eingerichtet sind, erfolgt der Zugriff auf Datenbanken, wie SQL Server, auch Sicherheitskontext des Clients. Aber dies funktioniert nur, wenn die Datenbank auf demselben Computer wie der IIS. die Anmeldeinformationen des Clients können nicht auf noch einen anderen Computer übertragen werden.
+Wenn die **Kenn Wort Authentifizierungs** Eigenschaft für Ihren IIS-Webserver auf Windows NT Challenge/Response Authentication (für windows NT 4,0) oder auf integrierte Windows-Authentifizierung (für Windows 2000) festgelegt ist, werden Geschäftsobjekte unter dem Client Sicherheitskontext. Das ist ein neues Feature in RDS 1.5, das den Clientidentitätswechsel über HTTP zulässt. Wenn Sie in diesem Modus arbeiten, ist die Anmeldung am Webserver (IIS) nicht anonym, sondern verwendet die Benutzer-ID und das Kennwort, unter dem der Clientcomputer ausgeführt wird. Wenn die ODBC-Datenquellennamen für die Verwendung der vertrauenswürdigen Verbindung eingerichtet sind, erfolgt der Zugriff auf Datenbanken (z. B. SQL Server) ebenfalls unter dem Sicherheitskontext des Clients. Das funktioniert jedoch nur, wenn sich die Datenbank auf demselben Computer wie IIS befindet, denn die Anmeldeinformationen des Clients können nicht auf einen weiteren Computer übertragen werden.
 
-Angenommen, ein Client John Doe mit Userid = "HerbertD" und das Kennwort = "Secret" an einem Clientcomputer angemeldet ist. Er führt eine browserbasierte Anwendung, die auf das **RDSServer.DataFactory** -Objekt, um ein [Recordset-Objekt](recordset-object-ado.md) erstellen, indem Sie eine SQL-Abfrage ausführen, auf dem Computer "MyServer" mit IIS zugreifen muss. MyServer, einem System mit Windows NT Server 4.0, Windows NT NTLM-Authentifizierung eingerichtet ist, dessen ODBC-DSN "Vertrauenswürdige Verbindung verwenden" ausgewählt wurde und der Server enthält auch die SQL Server-Datenquelle. Wenn eine Anforderung auf dem Webserver empfangen wird, werden Sie den Client für den Benutzer-ID und das Kennwort gefragt. Daher die Anforderung angemeldet ist MyServer entnommen "HerbertD" / "Geheim" anstelle von IUSER\_MyServer (die Standardeinstellung ist, wenn anonyme Kennwortauthentifizierung aktiviert ist). In ähnlicher Weise bei der Anmeldung bei SQL Server "HerbertD" / "Geheim" wird verwendet.
+Beispielsweise ist ein Client, John Doe, mit UserID = "JohnD" und Password = "Secret" an einem Clientcomputer angemeldet. Er führt eine browserbasierte Anwendung aus, die auf das **RDSServer. DataFactory-** Objekt zugreifen muss, um eine Daten [Satzgruppe](recordset-object-ado.md) zu erstellen, indem eine SQL-Abfrage auf dem "MyServer"-Computer mit IIS ausgeführt wird. MyServer, ein System mit Windows NT Server 4,0, ist für die Verwendung der Windows NT-Challenge/Response-Authentifizierung eingerichtet, der ODBC-DSN hat "vertrauenswürdige Verbindung verwenden" ausgewählt, und der Server enthält auch die SQL Server-Datenquelle. Wenn eine Anforderung auf dem Webserver empfangen wird, fordert Sie den Client auf, die Benutzer-ID und das Kennwort einzugeben. Daher wird die Anforderung bei MyServer protokolliert, da Sie von "JohnD"/"Secret" anstelle von\_iuser MyServer stammt (Dies ist die Standardeinstellung für die anonyme Kennwortauthentifizierung). Entsprechend wird bei der Anmeldung bei SQL Server "Johnsd"/"Secret" verwendet.
 
 Folglich lässt der IIS-Abfrage/Rückmeldung-Authentifizierungsmodus von Windows NT das Erstellen von HTML-Seiten zu, ohne dass Benutzer ausdrücklich nach der für die Anmeldung an der Datenbank erforderlichen Benutzer-ID und dem Kennwort gefragt werden. Bei Verwendung der IIS-Standardauthentifizierung wäre dies ebenfalls erforderlich.
 
 ## <a name="password-authentication"></a>Kennwortauthentifizierung
 
-RDS kann mit einem IIS-Webserver ausgeführt wird, in einem der drei Modi Kennwortauthentifizierung kommunizieren: anonyme, die Standard-, oder NT NTLM-Authentifizierung (integrierte Windows-Authentifizierung in Windows 2000 genannt). Diese Einstellungen definieren, wie Steuerelemente ein Webserver Zugriff über, wie etwa festzulegen, dass es sich bei ein Clientcomputer auf dem Webserver NT expliziten Zugriffsrechte haben.
+RDS kann mit einem IIS-Webserver kommunizieren, der in einem der drei Kenn Wort Authentifizierungsmodi ausgeführt wird: Anonymous, Basic oder NT Challenge/Response Authentication (called Integrated Windows Authentication in Windows 2000). Diese Einstellungen definieren, wie ein Webserver den Zugriff darauf steuert, wie beispielsweise, dass ein Clientcomputer explizite Zugriffsrechte auf dem NT-Webserver hat.
 

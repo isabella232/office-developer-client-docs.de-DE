@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8652aa2c028350aab79cdf101cba189026b9a5ae
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295142"
 ---
 # <a name="customization-file-connect-section"></a>Anpassungsdatei – Verbindungsabschnitt
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Verweigern aller Verbindungen ist das Standardverhalten des Handlers. Im **connect** -Abschnitt werden Ausnahmen für dieses Verhalten angegeben. Wenn z. B. alle **connect** -Abschnitte nicht vorhanden oder leer sind, können standardmäßig keine Verbindungen hergestellt werden.
 
@@ -43,7 +43,7 @@ Ein Eintrag für eine Ersetzungsverbindungszeichenfolge hat folgendes Format:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Argument</p></th>
+<th><p>Teil</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -62,8 +62,7 @@ Ein Eintrag für eine Ersetzungsverbindungszeichenfolge hat folgendes Format:
 </tr>
 <tr class="even">
 <td><p><strong><em>accessRight</em></strong></p></td>
-<td><p>Eines der folgenden Zugriffsrechte:
-</p>
+<td><p>Eines der folgenden Zugriffsrechte:</p>
 <p></p>
 <ul>
 <li><p><strong>NoAccess</strong> - Benutzer kann nicht auf die Datenquelle zugreifen.</p></li>
@@ -76,5 +75,5 @@ Ein Eintrag für eine Ersetzungsverbindungszeichenfolge hat folgendes Format:
 </table>
 
 
-Wenn Sie alle Verbindungen (in Effekt, deaktivieren das Standardverhalten des Handlers) ermöglichen, legen Sie den Zugriffseintrag im Abschnitt **Standard verbinden** , und löschen oder kommentieren Sie alle anderen **Verbinden** *Identifier* -Abschnitte möchten.
+Wenn Sie eine Verbindung zulassen möchten (in der Tat das standardmäßige Handler-Verhalten deaktivieren), legen Sie den Zugriffseintrag im **Standardabschnitt Connect** auf fest, und löschen oder kommentieren Sie einen anderen Abschnitt **Connect** *Identifier* aus.
 

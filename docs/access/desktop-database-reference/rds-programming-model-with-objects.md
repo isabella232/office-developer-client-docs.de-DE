@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9743fb1e7329457abb60ed8ed41bc39067f3551d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301050"
 ---
 # <a name="rds-programming-model-with-objects"></a>RDS-Programmiermodell mit Objekten
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Ziel von RDS besteht darin, über einen Vermittler wie IIS (Internet Information Services, Internetinformationsdienste) Zugriff auf Datenquellen zu erhalten und diese zu aktualisieren. Durch das Programmiermodell wird die Reihenfolge der zum Erreichen dieses Ziels notwendigen Aktivitäten angegeben. Durch das Objektmodell werden die Objekte angegeben, deren Methoden und Eigenschaften sich auf das Programmiermodell auswirken.
 
@@ -28,7 +28,7 @@ Durch RDS werden die Mittel bereitgestellt, die zum Ausführen der folgenden Akt
 
 - Das Serverprogramm erhält ein [Recordset](recordset-object-ado.md)-Objekt aus der Datenquelle, normalerweise mithilfe von ADO. Optional wird das **Recordset**-Objekt auf dem Server verarbeitet ([RDSServer.DataFactory](datafactory-object-rdsserver.md)).
 
-- Vom Serverprogramm wird das endgültige **Recordset** -Objekt an die Clientanwendung (Proxy) zurückgegeben.
+- Vom Serverprogramm wird das endgültige **Recordset**-Objekt an die Clientanwendung (Proxy) zurückgegeben.
 
 - Auf dem Client wird das **Recordset**-Objekt in eine Form umgewandelt, die von visuellen Steuerelementen (visuelles Steuerelement und **RDS.DataControl**) problemlos verwendet werden kann.
 

@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: d9e86fb7d60af94d6ecde71b2a857a3cc5b9bcb8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306853"
 ---
 # <a name="runmacro-macro-action"></a>RunMacro-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Zum Ausführen eines Makros können Sie die **AusführenMakro** -Aktion verwenden. Das Makro kann sich in einer Makrogruppe befinden.
 
@@ -34,7 +34,7 @@ Sie können diese Aktion für Folgendes verwenden:
 
 ## <a name="setting"></a>Einstellung
 
-Die **AusführenMakro** -Aktion hat die folgenden Argumente.
+Die **AusführenMakro**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Die **AusführenMakro** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Makroname</strong></p></td>
-<td><p>Der Name des auzuführenden Makros. Das Feld <strong>Makroname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators zeigt alle Makros (und Makrogruppen) in der aktuellen Datenbank. Wenn das Makro in einer Makrogruppe befindet, wird sie als <em>Makrogruppenname</em>unter dem Makrogruppennamen in der Liste aufgeführt. <em>Makroname</em>. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, das die <strong>AusführenMakro</strong>-Aktion in einer Bibliotheksdatenbank enthält, sucht Microsoft Access zunächst in der Bibliotheksdatenbank nach dem Makro mit diesem Namen und dann in der aktuellen Datenbank.</p></td>
+<td><p>Der Name des auzuführenden Makros. Im <strong></strong> Feld Makroname im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator werden alle Makros (und Makrogruppen) in der aktuellen Datenbank angezeigt. Wenn sich das Makro in einer Makrogruppe befindet, wird es unter dem Namen der Makrogruppe in der Liste als <em>auch</em>aufgeführt. <em>Makroname</em>. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, das die <strong>AusführenMakro</strong>-Aktion in einer Bibliotheksdatenbank enthält, sucht Microsoft Access zunächst in der Bibliotheksdatenbank nach dem Makro mit diesem Namen und dann in der aktuellen Datenbank.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Wiederholungen</strong></p></td>
@@ -63,7 +63,7 @@ Die **AusführenMakro** -Aktion hat die folgenden Argumente.
 </tbody>
 </table>
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Makrogruppennamen für das Argument **Makroname** eingeben, wird das erste Makro in der Makrogruppe in Access ausgeführt.
 

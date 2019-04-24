@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 947a6355d07ba2e9fb9b2a9b76c4c1941d83e668
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296885"
 ---
 # <a name="basic-rds-programming-model"></a>Grundlegendes RDS-Programmierungsmodell
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 RDS ist für Anwendungen in der folgenden Umgebung gedacht: Durch eine Clientanwendung werden ein auf einem Server ausgeführtes Programm und die erforderlichen Parameter zum Rückgeben der gewünschten Informationen angegeben. Das auf dem Server aufgerufene Programm erhält Zugriff auf die angegebene Datenquelle, ruft die Informationen ab, verarbeitet optional die Daten und gibt dann die resultierenden Informationen in einer einfach zu verwendenden Form an die Clientanwendung zurück. Durch RDS werden die Mittel bereitgestellt, die Sie zum Ausführen der folgenden Aktionssequenz benötigen:
 
@@ -28,9 +28,9 @@ RDS ist für Anwendungen in der folgenden Umgebung gedacht: Durch eine Clientanw
 
 - Vom Serverprogramm wird das endgültige **Recordset** -Objekt an die Clientanwendung zurückgegeben.
 
-- Auf dem Client wird das **Recordset** -Objekt in eine Form umgewandelt, die von visuellen Steuerelementen problemlos verwendet werden kann.
+- Auf dem Client wird das **Recordset**-Objekt in eine Form umgewandelt, die von visuellen Steuerelementen problemlos verwendet werden kann.
 
-- Alle Änderungen am **Recordset** -Objekt werden zurück an das Serverprogramm gesendet, von dem sie zum Aktualisieren der Datenquelle verwendet werden.
+- Alle Änderungen am **Recordset**-Objekt werden zurück an das Serverprogramm gesendet, von dem sie zum Aktualisieren der Datenquelle verwendet werden.
 
 Dieses Programmiermodell enthält bestimmte Komfortfeatures. Wenn Sie für den Zugriff auf die Datenquelle kein komplexes Serverprogramm benötigen und wenn Sie die erforderliche Verbindung und die erforderlichen Befehlsparameter bereitstellen, werden die angegebenen Daten von RDS automatisch mit einem einfachen Standardserverprogramm abgerufen.
 

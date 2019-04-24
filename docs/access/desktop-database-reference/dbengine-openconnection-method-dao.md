@@ -1,5 +1,5 @@
 ---
-title: DBEngine.OpenConnection-Methode (DAO)
+title: DbEngine. OpenConnection-Methode (DAO)
 TOCTitle: OpenConnection Method
 ms:assetid: 778a581f-be42-94ee-e5c6-4cbc1843450d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196074(v=office.15)
@@ -12,19 +12,19 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 845c710954d83003f49a6cd9db21ae3f3bfab383
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294260"
 ---
-# <a name="dbengineopenconnection-method-dao"></a>DBEngine.OpenConnection-Methode (DAO)
+# <a name="dbengineopenconnection-method-dao"></a>DbEngine. OpenConnection-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . OpenConnection (***Name***, ***Optionen***, ***ReadOnly***, ***Verbinden***)
+*Ausdruck* . OpenConnection (***Name***, ***options***, ***ReadOnly***, ***Connect***)
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
@@ -40,7 +40,7 @@ ms.locfileid: "28704602"
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -68,7 +68,7 @@ ms.locfileid: "28704602"
 <td><p><em>Connect</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine ODBC-Verbindungszeichenfolge. Finden Sie unter der <strong><a href="connection-connect-property-dao.md">Connect</a></strong> -Eigenschaft für die bestimmte Elemente und die Syntax dieser Zeichenfolge. Eine vorangestellt &quot;ODBC; &quot; ist erforderlich.</p></td>
+<td><p>Eine ODBC-Verbindungszeichenfolge. Weitere Informationen finden Sie unter der <strong><a href="connection-connect-property-dao.md">Connect</a></strong> -Eigenschaft für die spezifischen Elemente und Syntax dieser Zeichenfolge. Ein vorangestelltes &quot;ODBC-; &quot; ist erforderlich.</p></td>
 </tr>
 </tbody>
 </table>
@@ -76,15 +76,15 @@ ms.locfileid: "28704602"
 
 ## <a name="return-value"></a>Rückgabewert
 
-Connection
+Verbindung
 
 ## <a name="remarks"></a>Bemerkungen
 
 Mit der **OpenConnection**-Methode können Sie aus einem ODBC-Arbeitsbereich eine Verbindung zu einer ODBC-Datenquelle herstellen. Die **OpenConnection**-Methode ähnelt der **OpenDatabase**-Methode. Der wichtigste Unterschied besteht darin, dass **OpenConnection** nur in einem ODBCDirect-Arbeitsbereich verfügbar ist.
 
-Wenn Sie einen registrierten ODBC-Datenquellennamen (DSN) in der Connect-Argument angeben, klicken Sie dann im Name-Argument kann eine beliebige gültige Zeichenfolge sein, und stellt auch die **Name** -Eigenschaft für das **Connection** -Objekt bereit. Wenn Sie ein gültiger DSN in der Connect-Argument nicht enthalten ist, muss Name auf einen gültigen ODBC DSN verweisen, die auch die **Name** -Eigenschaft verwendet wird. Wenn weder name noch connect enthält keinen gültigen DSN, kann der ODBC-Treiber-Manager auf der Benutzer für die erforderlichen Verbindungsinformationen aufgefordert (über das Argument Options) festgelegt. Der durch die Eingabeaufforderung bereitgestellte DSN gibt dann die **Name**-Eigenschaft an.
+Wenn Sie einen registrierten ODBC-Datenquellennamen (DSN) im Connect-Argument angeben, kann das Name-Argument eine beliebige gültige Zeichenfolge sein und auch die **Name** -Eigenschaft für das **Connection** -Objekt bereitstellen. Wenn kein gültiger DSN im Connect-Argument enthalten ist, muss Name auf einen gültigen ODBC-DSN verweisen, der auch die **Name** -Eigenschaft ist. Wenn weder Name noch Connect einen gültigen DSN enthält, kann der ODBC-Treiber-Manager (über das options-Argument) festgelegt werden, um den Benutzer für die erforderlichen Verbindungsinformationen aufzufordern. Der durch die Eingabeaufforderung bereitgestellte DSN gibt dann die **Name**-Eigenschaft an.
 
-Durch das Argument options ist festgelegt, ob und zu welchem Zeitpunkt der Benutzer aufgefordert wird, die Verbindung herzustellen, und ob die Verbindung asynchron geöffnet werden soll. Sie können eine der folgenden Konstanten verwenden.
+Das options-Argument bestimmt, ob und wann der Benutzer aufgefordert wird, die Verbindung herzustellen, und ob die Verbindung asynchron geöffnet werden soll. Sie können eine der folgenden Konstanten verwenden.
 
 <table>
 <colgroup>

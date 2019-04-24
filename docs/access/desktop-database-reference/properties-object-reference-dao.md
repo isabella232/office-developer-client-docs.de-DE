@@ -1,5 +1,5 @@
 ---
-title: Eigenschaften-Objektverweis (DAO)
+title: Eigenschaftenobjekt Referenz (DAO)
 TOCTitle: Properties Object
 ms:assetid: dbd58d66-9566-41cd-82e2-bfc0c8778867
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125748(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d23568c70857c273263a72d9f2271200ff304eb2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301232"
 ---
-# <a name="properties-object-reference-dao"></a>Eigenschaften-Objektverweis (DAO)
+# <a name="properties-object-reference-dao"></a>Eigenschaftenobjekt Referenz (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [Properties-Auflistung (DAO)](properties-collection-dao.md)
-- [Elemente von Eigenschaften (DAO)](properties-members-dao.md)
-- [Eigenschaften (DAO)](properties-properties-dao.md)
-- [Eigenschaften, Methoden (DAO)](properties-methods-dao.md)
+- [Properties-Elemente (DAO)](properties-members-dao.md)
+- [Properties-Eigenschaften (DAO)](properties-properties-dao.md)
+- [Properties-Methoden (DAO)](properties-methods-dao.md)
 

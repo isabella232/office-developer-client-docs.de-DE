@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1bc0d378428c00882c49f7783892ca2bf4d4638c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300693"
 ---
 # <a name="recordcreateoptionsenum"></a>RecordCreateOptionsEnum
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt an, ob ein vorhandener **Datensatz** geöffnet werden soll, oder ein neuer **Datensatz** für das [Open](open-method-ado-record.md) -Methode des [Record](record-object-ado.md) -Objekt erstellt. Die Werte können mit einem AND-Operator kombiniert werden.
+Specifies whether an existing **Record** should be opened or a new **Record** created for the [Record](record-object-ado.md) object [Open](open-method-ado-record.md) method. The values can be combined with an AND operator.
 
 <table>
 <colgroup>
@@ -37,23 +37,23 @@ Gibt an, ob ein vorhandener **Datensatz** geöffnet werden soll, oder ein neuer 
 <tbody>
 <tr class="odd">
 <td><p><strong>adCreateCollection</strong></p></td>
-<td><p>0 x 2000</p></td>
-<td><p>Erstellt einen neuen <strong>Datensatz</strong> an dem Knoten gemäß der <em>Source</em> -Parameter zu einem vorhandenen <strong>Datensatz</strong>zu öffnen. Wenn die Quelle auf einem vorhandenen Knoten verweist, tritt ein Laufzeitfehler, es sei denn, <strong>AdCreateCollection</strong> mit <strong>AdOpenIfExists</strong> oder <strong>AdCreateOverwrite</strong>kombiniert ist.</p></td>
+<td><p>0x2000</p></td>
+<td><p>Erstellt einen neuen <strong>Datensatz</strong> an dem durch <em>Source</em> -Parameter angegebenen Knoten, anstatt einen vorhandenen <strong>Datensatz</strong>zu öffnen. Wenn die Quelle auf einen vorhandenen Knoten zeigt, tritt ein Laufzeitfehler auf, es sei <strong></strong> denn, die addcreatecollection wird mit <strong>adOpenIfExists</strong> oder <strong>adCreateOverwrite</strong>kombiniert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adCreateNonCollection</strong></p></td>
 <td><p>0</p></td>
-<td><p>Erstellt einen neuen <strong>Datensatz</strong> vom Typ <a href="recordtypeenum.md">AdSimpleRecord</a>.</p></td>
+<td><p>Erstellt einen neuen <strong>Datensatz</strong> vom Typ <a href="recordtypeenum.md">adSimpleRecord</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adCreateOverwrite</strong></p></td>
 <td><p>0x4000000</p></td>
-<td><p>Ändert die Erstellung Flags <strong>AdCreateCollection</strong>, <strong>AdCreateNonCollection</strong>und <strong>AdCreateStructDoc</strong>. Wenn oder mit diesem Wert und einen der Werte für die Erstellung Kennzeichen verwendet wird, wenn die Quelle der URL auf einen vorhandenen Knoten oder <strong>Datensatz verweist</strong>, dann der vorhandene <strong>Datensatz</strong> überschrieben wird und an ihrer Stelle wird eine neue erstellt. Dieser Wert kann nicht zusammen mit <strong>AdOpenIfExists</strong>verwendet werden.</p></td>
+<td><p>Ändert die Erstellungskennzeichen <strong></strong>addcreatecollection, <strong>adCreateNonCollection</strong>und <strong>adCreateStructDoc</strong>. Wenn oder mit diesem Wert und einem der Werte für die Erstellungs Kennzeichnung verwendet wird, wenn die Quell-URL auf einen vorhandenen Knoten oder <strong>Datensatz</strong>verweist, wird der vorhandene <strong>Datensatz</strong> überschrieben, und an seiner Stelle wird ein neuer erstellt. Dieser Wert kann nicht zusammen mit <strong>adOpenIfExists</strong>verwendet werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adCreateStructDoc</strong></p></td>
 <td><p>0x80000000</p></td>
-<td><p>Erstellt einen neuen <strong>Datensatz</strong> vom Typ <a href="recordtypeenum.md">AdStructDoc</a>statt einen bereits vorhandenen <strong>Datensatz</strong>zu öffnen.</p></td>
+<td><p>Erstellt einen neuen <strong>Datensatz</strong> vom Typ <a href="recordtypeenum.md">adStructDoc</a>, statt einen vorhandenen <strong>Datensatz</strong>zu öffnen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFailIfNotExists</strong></p></td>
@@ -63,13 +63,13 @@ Gibt an, ob ein vorhandener **Datensatz** geöffnet werden soll, oder ein neuer 
 <tr class="even">
 <td><p><strong>adOpenIfExists</strong></p></td>
 <td><p>0x2000000</p></td>
-<td><p>Ändert die Erstellung Flags <strong>AdCreateCollection</strong>, <strong>AdCreateNonCollection</strong>und <strong>AdCreateStructDoc</strong>. Wenn oder mit diesem Wert und einen der Werte für die Erstellung Kennzeichen verwendet wird, falls die Quell-URL zu einer vorhandenen Knoten oder <strong>Record</strong> -Objekts verweist, und klicken Sie dann der Anbieter muss den vorhandenen <strong>Datensatz</strong> statt Erstellen einer neuen öffnen. Dieser Wert kann nicht zusammen mit <strong>AdCreateOverwrite</strong>verwendet werden.</p></td>
+<td><p>Ändert die Erstellungskennzeichen <strong></strong>addcreatecollection, <strong>adCreateNonCollection</strong>und <strong>adCreateStructDoc</strong>. Wenn oder mit diesem Wert und einem der Werte für die Erstellungs Kennzeichnung verwendet wird, wenn die Quell-URL auf ein vorhandenes Node-oder <strong>Record</strong> -Objekt verweist, muss der Anbieter den vorhandenen <strong>Datensatz</strong> öffnen, statt eine neue zu erstellen. Dieser Wert kann nicht zusammen mit <strong>adCreateOverwrite</strong>verwendet werden.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

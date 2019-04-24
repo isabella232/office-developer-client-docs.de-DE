@@ -1,5 +1,5 @@
 ---
-title: Recordset.Updatable-Eigenschaft (DAO)
+title: Recordset. aktualisierbare Eigenschaft (DAO)
 TOCTitle: Updatable Property
 ms:assetid: 2d4bdcef-1b10-b542-ce0f-6172c271131b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192110(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 722ccc2334cd00ed89a1193709023db039ba9fd3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307546"
 ---
-# <a name="recordsetupdatable-property-dao"></a>Recordset.Updatable-Eigenschaft (DAO)
+# <a name="recordsetupdatable-property-dao"></a>Recordset. aktualisierbare Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. Schreibgeschützter **Boolean**-Wert.
 
@@ -29,9 +29,9 @@ Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. S
 
 ## <a name="remarks"></a>Bemerkungen
 
-Recordset-Objekte vom Typ Momentaufnahme und vorwärtsgerichtet geben immer False zurück.
+Snapshot-und Forward-only-Recordset-Objekte geben immer **false**zurück.
 
-Zahlreiche Typen von Objekten können Felder enthalten, die nicht aktualisiert werden können. Sie können z. B. ein Recordset-Objekt vom Typ Dynaset erstellen, in dem nur bestimmte Felder geändert werden können. Diese Felder können feste Daten enthalten oder auch Werte, die automatisch erhöht werden. Das Dynaset kann auch das Ergebnis einer Abfrage sein, in der aktualisierbare und nicht-aktualisierbare Tabellen kombiniert werden.
+Many types of objects can contain fields that can't be updated. For example, you can create a dynaset-type **Recordset** object in which only some fields can be changed. These fields can be fixed or contain data that increments automatically, or the dynaset can result from a query that combines updatable and nonupdatable tables.
 
 Wenn das Objekt nur schreibgeschützte Felder enthält, ist der Wert der **Updatable**-Eigenschaft **False**. Wenn mindestens ein Feld aktualisierbar ist, ist der Wert der Eigenschaft **True**. Sie können nur die aktualisierbaren Felder bearbeiten. Wenn Sie versuchen, einem schreibgeschützten Feld einen neuen Wert zuzuweisen, tritt ein auffangbarer Fehler auf.
 

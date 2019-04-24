@@ -1,5 +1,5 @@
 ---
-title: Query-Methode (RDS - Access-desktop-Datenbank (engl.))
+title: Query-Methode (RDS-Access-Desktop-Daten Bankreferenz)
 TOCTitle: Query method (RDS)
 ms:assetid: c88d82bd-2139-7f1e-4e5e-9030f3795816
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249975(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 92c72bf78f8f01a675038f63b065aceb6869fcd0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301113"
 ---
 # <a name="query-method-rds"></a>Query-Methode (RDS)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Verwendet eine gültige SQL-Abfragezeichenfolge, um ein [Recordset](recordset-object-ado.md)-Objekt zurückzugeben.
 
 ## <a name="syntax"></a>Syntax
 
-Festlegen von*Recordset-Objekt* = *DataFactory*. Abfrage (*Verbindung*, *Abfrage*)
+*Recordset* = -Daten*Factory*festlegen. Abfrage (*Verbindung*, *Abfrage*)
 
 ## <a name="parameters"></a>Parameter
 
@@ -33,7 +33,7 @@ Festlegen von*Recordset-Objekt* = *DataFactory*. Abfrage (*Verbindung*, *Abfrage
 |*Connection* |Ein **String** -Wert, der die Informationen zur Serververbindung enthält. Er ist mit der [Connect](connect-property-rds.md)-Eigenschaft vergleichbar.|
 |*Query* |Ein **String**, der die SQL-Abfrage enthält.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Für die Abfrage sollte der SQL-Dialekt des Datenbankservers verwendet werden. Tritt bei der ausgeführten Abfrage ein Fehler auf, wird ein Ergebnisstatus zurückgegeben. Die **Query** -Methode führt keine Syntaxüberprüfung für die **Query** -Zeichenfolge aus.
+Für die Abfrage sollte der SQL-Dialekt des Datenbankservers verwendet werden. Tritt bei der ausgeführten Abfrage ein Fehler auf, wird ein Ergebnisstatus zurückgegeben. Die **Query**-Methode führt keine Syntaxüberprüfung für die **Query**-Zeichenfolge aus.
 

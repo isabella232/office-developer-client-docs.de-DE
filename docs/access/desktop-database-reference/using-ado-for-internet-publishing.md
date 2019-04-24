@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ae8341151c7bf7d90585794061647ba33a5c4ea7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32305901"
 ---
 # <a name="using-ado-for-internet-publishing"></a>Verwenden von ADO für Veröffentlichungen im Internet
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 
-[OLE DB-Anbieter für Internet Publishing](the-ole-db-provider-for-internet-publishing.md) zeigt ein bestimmtes Beispiel für den Zugriff auf heterogenen Daten mit ADO. Während der Beispiele in diesem Abschnitt speziell für mit dem Internet Publishing-Anbieter werden, sollten die veranschaulichten Prinzipien ähnlich sein, wenn ADO mit anderen Anbietern für heterogenen Daten enthält, wie ein Anbieter für einen e-Mail-Speicher.
+In [Der OLE DB-Anbieter für Internet Publishing](the-ole-db-provider-for-internet-publishing.md) wird ein konkretes Beispiel für das Zugreifen auf heterogene Daten mit ADO gezeigt. Während die Beispiele in diesem Abschnitt speziell für die Verwendung des Internet Publishing-Anbieters gelten, sollten die folgenden Prinzipien ähnlich sein, wenn ADO mit anderen Anbietern zu heterogenen Daten verwendet wird, beispielsweise einem Anbieter zu einem e-Mail-Speicher.
 
 ## <a name="urls"></a>URLs
 
@@ -45,4 +45,4 @@ Mehrere ADO-Objekte wurden verbessert, um mit den Objekten **Record** und **Stre
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Internet Publishing-Szenario Themen](internet-publishing-scenario.md)
+- [Themen zu Internet Publishing-Szenarien](internet-publishing-scenario.md)

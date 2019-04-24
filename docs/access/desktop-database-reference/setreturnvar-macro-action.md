@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0e0c849fc507d535807bc088e667acd74410ddd8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308673"
 ---
 # <a name="setreturnvar-macro-action"></a>SetReturnVar-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die **SetReturnVar** -Aktion erstellt eine Variable zurückgegebene und platziert es in einem bestimmten Wert.
+Mit der **SetReturnVar** -Aktion wird eine Rückgabevariable erstellt und auf einen bestimmten Wert festgelegt.
 
 > [!NOTE]
-> Die **SetReturnVar** -Aktion ist nur in Datenmakros verfügbar.
+> Die **SetReturnVar** -Aktion ist nur in datenmakros verfügbar.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 Die **SetReturnVar** -Aktion hat die folgenden Argumente.
 
@@ -36,7 +36,7 @@ Die **SetReturnVar** -Aktion hat die folgenden Argumente.
 <thead>
 <tr class="header">
 <th><p>Argument</p></th>
-<th><p>Eingabe erforderlich</p></th>
+<th><p>Erforderlich</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -49,7 +49,7 @@ Die **SetReturnVar** -Aktion hat die folgenden Argumente.
 <tr class="even">
 <td><p>Ausdruck</p></td>
 <td><p>Ja</p></td>
-<td><p>Ein Ausdruck, der verwendet wird, um den Wert für diese temporäre Variable festzulegen. Setzen Sie den Ausdruck mit dem Gleichheitszeichen (=). Sie können klicken Sie auf die Schaltfläche <strong>Erstellen</strong> , um den <strong>Ausdrucks-Generator</strong> verwenden, um dieses Argument festzulegen.</p></td>
+<td><p>Ein Ausdruck, mit dem der Wert für diese temporäre Variable festgelegt wird. Stellen Sie dem Ausdruck kein Gleichheitszeichen (=) voran. Sie können auf die <strong>Generator</strong> -Schaltfläche klicken, um den <strong>Ausdrucks-Generator</strong> zum Festlegen dieses Arguments zu verwenden.</p></td>
 </tr>
 </tbody>
 </table>
@@ -57,21 +57,21 @@ Die **SetReturnVar** -Aktion hat die folgenden Argumente.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die Aktion **SetReturnVar** dient zum Erstellen einer **ReturnVar**die Variable, die von Makros kann, die ein Datenmakro Aufrufen verwendet werden, indem Sie mit der **AusführenDatenmakro** -Aktion ist.
+Die **SetReturnVar** -Aktion wird verwendet, um eine **ReturnVar**zu erstellen, die von Makros verwendet werden kann, die ein datenmakro mithilfe der **ausführendatenmakro** -Aktion aufrufen.
 
-Sobald ein **ReturnVar** durch die **SetReturnVar** -Aktion erstellt wurde, kann das aufrufende Makro in einem Ausdruck verwenden. Angenommen, wenn Sie eine **ReturnVar** mit dem Namen **UpdateSuccess**erstellt, können die Variable Sie mithilfe der folgenden Syntax:
+Nachdem ein **ReturnVar** durch die **SetReturnVar** -Aktion erstellt wurde, kann es in einem Ausdruck vom aufrufenden Makro verwendet werden. Wenn Sie beispielsweise einen **ReturnVar** mit dem Namen **UpdateSuccess**erstellt haben, können Sie die Variable mithilfe der folgenden Syntax verwenden:
 
 ```vb
     =[ReturnVars]![UpdateSuccess]
 ```
 
-Die **SetReturnVar** -Aktion kann nur in benannten Datenmakros verwendet werden. Es ist nicht verfügbar in Datenmakros, die ein Ereignis eines Makro zugeordnet sind.
+Die **SetReturnVar** -Aktion kann nur in benannten datenmakros verwendet werden. Sie ist in datenmakros, die an ein datenmakro Ereignis angefügt sind, nicht verfügbar.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel veranschaulicht die SetReturnVar-Aktion verwenden, um einen Wert aus ein benanntes Datenmakro zurückzugeben. Eine mit dem Namen **CurrentServiceRequest** ReturnVar wird an das Makro oder Visual Basic für Applikationen (VBA) Unterroutine zurückgegeben, die das benanntes Datenmakro aufgerufen.
+Das folgende Beispiel zeigt, wie Sie die SetReturnVar-Aktion verwenden, um einen Wert aus einem benannten datenmakro zurückzugeben. Ein ReturnVar mit dem Namen **CurrentServiceRequest** wird an das Makro oder die VBA-Unterroutine (Visual Basic für Applikationen) zurückgegeben, die das benannte datenmakro aufgerufen hat.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     RunDataMacro

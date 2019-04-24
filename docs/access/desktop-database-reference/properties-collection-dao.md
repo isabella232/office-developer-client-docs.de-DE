@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 515d28f0d7d99359c36df79cf3b8769d8f71e06d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301281"
 ---
 # <a name="properties-collection-dao"></a>Properties-Auflistung (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Eine **Properties**-Auflistung enthält alle **[Property](property-object-dao.md)** -Objekte für eine bestimmte Objektinstanz.
+Eine **Properties**-Auflistung enthält alle **[Property](property-object-dao.md)** -Objekte einer bestimmten Instanz eines Objekts.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -33,18 +33,18 @@ Mit der **Delete**-Methode können Sie benutzerdefinierte Eigenschaften aus der 
 
 Der Verweis auf ein integriertes **Property**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:
 
-- -Objekt. **Eigenschaften** (0)
+- Objekt. **Eigenschaften** 0
 
-- -Objekt. **Eigenschaften** ("Name")
+- Objekt. **Eigenschaften** ("Name")
 
-- -Objekt. **Eigenschaften** \! \[Namen\]
+- Objekt. **Eigenschaften** \! \[Name\]
 
 Bei einer integrierten Eigenschaft können Sie auch diese Syntax verwenden:
 
 - Object.Name
 
 > [!NOTE]
-> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige-Objekt verwenden. **Eigenschaften** Syntax ("Name").
+> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige Objekt verwenden. **Eigenschaften** ("Name").
 
 Sie können mit denselben Syntaxformen auf die **Value**-Eigenschaft eines **Property**-Objekts verweisen. Der Kontext des Verweises entscheidet, ob Sie sich auf das **Property**-Objekt selbst oder auf die **Value**-Eigenschaft des **Property**-Objekts beziehen.
 
@@ -91,7 +91,7 @@ In diesem Beispiel wird eine benutzerdefinierte Eigenschaft für die aktuelle Da
 
 <br/>
 
-In diesem Beispiel wird versucht, den Wert einer benutzerdefinierten Eigenschaft festzulegen. Wenn die Eigenschaft nicht vorhanden ist, wird die CreateProperty-Methode zum Erstellen und Festlegen des Werts der neuen Eigenschaft verwendet. Zum Ausführen dieses Vorgangs ist die SetProperty-Prozedur erforderlich.
+This example tries to set the value of a user-defined property. If the property doesn't exist, it uses the **CreateProperty** method to create and set the value of the new property. The SetProperty procedure is required for this procedure to run.
 
 ```vb
     Sub CreatePropertyX() 

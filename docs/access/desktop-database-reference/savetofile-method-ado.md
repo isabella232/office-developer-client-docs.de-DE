@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f3b08c9df435c7ce995a40af7b8ad5466b79245d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308925"
 ---
 # <a name="savetofile-method-ado"></a>SaveToFile-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Speichert den binären Inhalt eines [Stream](stream-object-ado.md)-Objekts in eine Datei.
 
 ## <a name="syntax"></a>Syntax
 
-*Stream-Objekt*. SaveToFile*Dateiname*, *SaveOptions*
+*Stream*. SaveToFile*filename*, *SaveOptions*
 
 ## <a name="parameters"></a>Parameter
 
@@ -34,7 +34,7 @@ Speichert den binären Inhalt eines [Stream](stream-object-ado.md)-Objekts in ei
 > [!NOTE]
 > [!HINWEIS] Wenn Sie eine vorhandene Datei überschreiben (wenn **adSaveCreateOverwrite** festgelegt ist), ignoriert **SaveToFile** alle Bytes aus der vorhandenen ursprünglichen Datei, die dem neuen [EOS](eos-property-ado.md) folgen.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **SaveToFile** kann verwendet werden, um den Inhalt eines **Stream** -Objekts in eine lokale Datei zu speichern. Es werden keine Änderungen am Inhalt oder den Eigenschaften des **Stream** -Objekts vorgenommen. Das **Stream** -Objekt muss vor dem Aufrufen von **SaveToFile** geöffnet werden.
 

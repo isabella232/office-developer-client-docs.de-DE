@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f8c45cdf0d9cf588f61d1b51b728a8a15f6d7e12
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308750"
 ---
 # <a name="sendkeys-macro-action"></a>SendKeys-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 <table>
 <thead>
@@ -30,9 +30,7 @@ ms.locfileid: "28722375"
 </thead>
 <tbody>
 <tr class="odd">
-<td>
-      Vermeiden Sie bei sensiblen oder vertraulichen Informationen die Verwendung der <strong>SendKeys</strong>-Anweisung oder eines AutoKeys-Makros. Ein bösartiger Benutzer könnte die Tastenfolgen abfangen und die Sicherheit Ihres Computers und Ihrer Daten gefährden.
-</td>
+<td>Vermeiden Sie die <strong>SendKeys</strong>-Anweisung oder ein AutoKeys-Makro mit sensiblen oder vertraulichen Informationen. Ein böswilliger Benutzer kann die Tastatureingaben abfangen und die Sicherheit von Computer und Daten gefährden.</td>
 </tr>
 </tbody>
 </table>
@@ -44,7 +42,7 @@ Sie können die **Tastaturbefehle** -Aktion zum direkten Senden von Tastaturbefe
 
 ## <a name="setting"></a>Einstellung
 
-Die **Tastaturbefehle** -Aktion verwendet die folgenden Argumente.
+Die **Tastaturbefehle**-Aktion verwendet die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -59,8 +57,8 @@ Die **Tastaturbefehle** -Aktion verwendet die folgenden Argumente.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Tastaturbefehle</strong></p></td>
-<td><p>Die Tastaturbefehle, die Access oder die Anwendung verarbeiten soll. Geben Sie die Tastaturbefehle im Feld Tastaturbefehle im Abschnitt Aktionsargumente im Bereichs Makro-Generator ein. Sie können bis zu 255 Zeichen eingeben. Dies ist ein erforderliches Argument.</p></td>
+<td><p><strong>Anschläge</strong></p></td>
+<td><p>Die Tastenkombinationen, die der Zugriff oder die Anwendung verarbeiten soll. Geben Sie die Tastenkombinationen im Feld <strong>Tastenkombinationen</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Sie können bis zu 255 Zeichen eingeben. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Wait</strong></p></td>
@@ -70,9 +68,9 @@ Die **Tastaturbefehle** -Aktion verwendet die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Access verarbeitet die Tastaturbefehle, die von der **Tastaturbefehle** -Aktion empfangen werden, als ob Sie diese direkt in einem Access-Fenster eingegeben hätten.
+Access verarbeitet die Tastaturbefehle, die von der **Tastaturbefehle**-Aktion empfangen werden, als ob Sie diese direkt in einem Access-Fenster eingegeben hätten.
 
 Um die Tastaturbefehle anzugeben, verwenden Sie dieselbe Syntax wie für die Anweisung **Tastaturbefehle**.
 

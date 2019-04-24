@@ -1,5 +1,5 @@
 ---
-title: Daten importieren/exportieren (Access PC-Datenbank-Referenz)
+title: Datenimport/-Export (Access Desktop Database Reference)
 TOCTitle: Data import/export
 ms:assetid: 30b43148-8915-4204-87cc-09621f4d628a
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124236(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 767d80e8b3c73a78bb1401c4d3ffd729e0ce8bc0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295086"
 ---
 # <a name="data-importexport"></a>Importieren/Exportieren von Daten
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [RunSavedImportExport-Makroaktion](runsavedimportexport-macro-action.md)
 - [EMailDatenbankobjekt-Makroaktion](emaildatabaseobject-macro-action.md)
@@ -24,5 +24,5 @@ ms.locfileid: "28713639"
 - [ImportExportData-Makroaktion](importexportdata-macro-action.md)
 - [ImportExportSpreadsheet-Makroaktion](importexportspreadsheet-macro-action.md)
 - [ImportExportText-Makroaktion](importexporttext-macro-action.md)
-- [Importierensharepointliste-Makroaktion](importsharepointlist-macro-action.md)
+- [ImportSharePointList-Makroaktion](importsharepointlist-macro-action.md)
 

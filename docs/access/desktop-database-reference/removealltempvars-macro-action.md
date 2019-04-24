@@ -12,25 +12,25 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: eade809a6e3982dc0dc4cf94ae382af72e8f454e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306797"
 ---
 # <a name="removealltempvars-macro-action"></a>RemoveAllTempVars-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
-Mit der **EntfernenAlleTempVar** -Aktion können Sie alle mit der **FestlegenTempVar** -Aktion erstellten temporären Variablen entfernen.
+Mit der **EntfernenAlleTempVar**-Aktion können Sie alle mit der **FestlegenTempVar**-Aktion erstellten temporären Variablen entfernen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **EntfernenAlleTempVar** -Aktion hat keine Argumente.
+Die **EntfernenAlleTempVar**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
   - Es können bis zu 255 temporäre Variablen gleichzeitig definiert sein. Wenn eine temporäre Variable nicht entfernt wird, verbleibt diese bis zum Schließen der Datenbank oder des Projekts im Arbeitsspeicher. Es empfiehlt sich, temporäre Variablen zu entfernen, sobald Sie deren Verwendung beendet haben.
 
@@ -61,12 +61,12 @@ Im folgenden Makro wird die Vorgehensweise zum Erstellen einer temporären Varia
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>FestlegenTempVar</strong></p></td>
-<td><p><strong>Name</strong>: Meinevar<strong>Ausdruck</strong>: InputBox (&quot;Geben Sie eine Zahl ungleich NULL.&quot;)</p></td>
+<td><p><strong>Name</strong>: MeineVar<strong>Ausdruck</strong>: InputBox (&quot;geben Sie eine Zahl ungleich NULL&quot;ein.)</p></td>
 </tr>
 <tr class="even">
-<td><p>[TempVars]! [Meinevar] &lt; &gt;0</p></td>
+<td><p>[TempVars]! MeineVar &lt; &gt;0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Meldung</strong>: =&quot;eingegebene &quot; &amp; [TempVars]! [Meinevar] &amp; &quot;. &quot; <strong>Signalton</strong>: <strong>YesType</strong>: <strong>Informationen</strong></p></td>
+<td><p><strong>Meldung</strong>: =&quot;Sie haben &quot; &amp; [TempVars] eingegeben! MeineVar &amp; &quot;. &quot; <strong>Beep</strong>: <strong>jatyp</strong>: <strong>Informationen</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c7bda00e757a17c973c650361c5caff5d702cee0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308435"
 ---
 # <a name="table-properties-methods-and-events-adox"></a>Tabelleneigenschaften, Methoden und Ereignisse (ADOX)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="propertiescollections"></a>Eigenschaften/Auflistungen
 
@@ -35,5 +35,5 @@ Keine.
 
 ## <a name="events"></a>Ereignisse
 
-Keine.
+None.
 

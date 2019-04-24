@@ -12,28 +12,28 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f524a544736f68bcfa6bd15e3bcc720ffa2bc4d6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297214"
 ---
 # <a name="after-delete-macro-event"></a>Makroereignis "Nach Löschvorgang"
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Ereignis **Nach Löschvorgang** tritt auf, nachdem ein Datensatz gelöscht wurde.
 
 > [!NOTE]
-> [!HINWEIS] Das Ereignis **Nach Löschvorgang** ist nur in Datenmakros verfügbar.
+> Das Ereignis **Nach Löschvorgang** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit dem Ereignis **Nach Löschvorgang** führen Sie sämtliche Aktionen nach dem Löschen eines Datensatzes aus. Häufig wird **Nach Löschvorgang** verwendet, um Geschäftsregeln und Workflows zu erzwingen, einen Aggregatgesamtwert zu aktualisieren oder Benachrichtigungen zu senden.
 
-Wenn das Ereignis **Nach Löschvorgang** aufgetreten ist, bleiben die im gelöschten Datensatz enthaltenen Werte verfügbar. Sie möchten einen gelöschten Wert erhöhen oder verringern insgesamt, erstellen einen Überwachungspfad oder im Vergleich zu einem vorhandenen Wert in einem Argument *Bedingung* verwenden.
+Wenn das Ereignis **Nach Löschvorgang** aufgetreten ist, bleiben die im gelöschten Datensatz enthaltenen Werte verfügbar. Möglicherweise möchten Sie einen gelöschten Wert verwenden, um eine Summe zu erhöhen oder zu dekrementieren, einen Überwachungspfad zu erstellen oder mit einem vorhandenen Wert in einem *Bedingung* -Argument zu vergleichen.
 
-Mit der Funktion Updated("Feldname") ermitteln Sie, ob ein Feld geändert wurde. Das folgende Codebeispiel zeigt die Verwendung einer If-Anweisung zum Ermitteln, ob das PaidInFull-Feld geändert wurde.
+Sie können die **aktualisierte ("*Feldname*")-** Funktion verwenden, um zu bestimmen, ob ein Feld geändert wurde. The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
 
 ```vb 
  
@@ -49,13 +49,13 @@ Mit der folgenden Syntax können Sie auf einen Wert im gelöschten Datensatz zug
 
 `[Old].[Field Name]`
 
-Um den Wert des QuantityInStock-Felds im gelöschten Datensatz zugreifen möchten, verwenden Sie beispielsweise die folgende Syntax.
+For example, to access the value of the QuantityInStock field in the deleted record, use the following syntax.
 
 `[Old].[QuantityInStock]`
 
 Am Ende des Ereignisses **Nach Löschvorgang** werden die Werte im gelöschten Datensatz dauerhaft gelöscht.
 
-Die folgenden Makrobefehle verwenden, können das Ereignis **Nach Löschvorgang** verwendet werden.
+Die folgenden Makrobefehle können im Ereignis **nach Lösch** Vorgang verwendet werden.
 
 <table>
 <colgroup>
@@ -83,19 +83,19 @@ Die folgenden Makrobefehle verwenden, können das Ereignis **Nach Löschvorgang*
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="createrecord-data-block.md">DatensatzErstellen-Makroaktion</a></p></td>
+<td><p><a href="createrecord-data-block.md">CreateRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="editrecord-data-block.md">BearbeitenDatensatz-Makroaktion</a></p></td>
+<td><p><a href="editrecord-data-block.md">Bearbeitendatensatz-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="foreachrecord-data-block.md">FürJedenDatensatz-Makroaktion</a></p></td>
+<td><p><a href="foreachrecord-data-block.md">Fürjedendatensatz-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Datenblock</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord-Datenblock</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
@@ -163,7 +163,7 @@ Im Makro-Designer wird ein leeres Datenmakro angezeigt.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Codebeispiel wird das Ereignis **Nach Löschvorgang** um einige Verarbeitung beim Löschen eines Datensatzes aus der Tabelle Spenden auszuführen, verwendet. Wenn ein Datensatz gelöscht wird, ist der Zeitraum der Spenden Subracted Formular das DonationsReceived-Feld in der Tabelle DonationsReceived und die TotalDonatedField in der Spender-Tabelle.
+The following code example uses the **After Delete** event to perform some processing when a record is deleted from the Donations table. When a record is deleted, the amount of the donation is subracted form the DonationsReceived field in the DonationsReceived table and the TotalDonatedField in the Donors table.
 
 **Klicken Sie hier, um eine Kopie des Makros anzuzeigen, die Sie im Makro-Designer einfügen können.**
 

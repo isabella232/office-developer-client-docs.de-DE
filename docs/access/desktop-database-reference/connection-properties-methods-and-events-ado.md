@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e1fa956a5045e9678c45c74a160e3bb80e78e627
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295842"
 ---
 # <a name="connection-properties-methods-and-events-ado"></a>Verbindungseigenschaften, Methoden und Ereignisse (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="propertiescollections"></a>Eigenschaften/Auflistungen
 
@@ -37,7 +37,7 @@ ms.locfileid: "28721528"
 
 ## <a name="methods"></a>Methoden
 
-- [BeginTrans, CommitTrans und RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)
+- [Methoden "BeginTrans", "CommitTrans" und "RollbackTrans"](begintrans-committrans-and-rollbacktrans-methods-ado.md)
 - [Cancel-Methode](cancel-method-ado.md)
 - [Close-Methode](close-method-ado.md)
 - [Execute-Methode (ADO-Verbindung)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)

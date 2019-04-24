@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b3c98d8795bb7039c0ae158414401dc5d754066f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295499"
 ---
 # <a name="copydatabasefile-macro-action"></a>CopyDatabaseFile-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die **KopierenDatenbankdatei** -Aktion verwenden, um eine Kopie der aktuellen Microsoft SQL Server 7.0-Datenbank oder einer neueren Datenbank anzulegen, die mit Ihrem Access-Projekt verbunden ist. Access trennt die aktuelle Datenbank und fügt sie dann auf den Zielserver. Weitere Informationen zum Trennen und Verbinden einer Datenbank finden Sie in der SQL Server-Dokumentation.
+Sie können die **KopierenDatenbankdatei**-Aktion verwenden, um eine Kopie der aktuellen Microsoft SQL Server 7.0-Datenbank oder einer neueren Datenbank anzulegen, die mit Ihrem Access-Projekt verbunden ist. Access trennt die aktuelle Datenbank und fügt Sie dann an den Zielserver an. Weitere Informationen zum Trennen und Verbinden einer Datenbank finden Sie in der SQL Server-Dokumentation.
 
 > [!NOTE]
 > [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
@@ -26,7 +26,7 @@ Sie können die **KopierenDatenbankdatei** -Aktion verwenden, um eine Kopie der 
 
 ## <a name="setting"></a>Einstellung
 
-Die **KopierenDatenbankdatei** -Aktion hat die folgenden Argumente.
+Die **KopierenDatenbankdatei**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -50,19 +50,17 @@ Die **KopierenDatenbankdatei** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Alle Verbindungen trennen</strong></p></td>
-<td><p>Gibt an, ob Access das Trennen von Datenbankverbindungen erzwingen sollte. Wenn <strong>Ja</strong> festgelegt ist, werden alle Verbindungen mit der aktuellen Datenbank getrennt, damit das Kopieren der Datenbank fortgesetzt werden kann. Wenn <strong>Nein</strong> festgelegt ist und mindestens eine Verbindung zur Datenbank besteht, schlägt das Kopieren der Datenbank fehl. Die Standardeinstellung ist <strong>Nein</strong>. 
-
-</p><p><strong>Warnung</strong>: Trennen von Benutzern aus einer Datenbank ohne angemessene Warnung zu Datenverlusten führen kann.</p></td>
+<td><p>Gibt an, ob Access das Trennen von Datenbankverbindungen erzwingen sollte. Wenn <strong>Ja</strong> festgelegt ist, werden alle Verbindungen mit der aktuellen Datenbank getrennt, damit das Kopieren der Datenbank fortgesetzt werden kann. Wenn <strong>Nein</strong> festgelegt ist und mindestens eine Verbindung zur Datenbank besteht, schlägt das Kopieren der Datenbank fehl. Die Standardeinstellung ist <strong>Nein</strong>.</p><p><strong>Warnung</strong>: das Trennen von Benutzern aus einer Datenbank ohne ausreichende Warnung kann zu Datenverlusten führen.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Kopiervorgang läuft synchron ab. Daher können Sie andere Vorgänge erst ausführen, wenn das Kopieren der Datenbank abgeschlossen ist.
 
-Die **KopierenDatenbankdatei** -Aktion kopiert nicht nur Daten, Datendefinitionen und Datenbankobjekte, sondern auch erweiterte Eigenschaften wie Standardwerte, Texteinschränkungen und Nachschlagewerte.
+Die **KopierenDatenbankdatei**-Aktion kopiert nicht nur Daten, Datendefinitionen und Datenbankobjekte, sondern auch erweiterte Eigenschaften wie Standardwerte, Texteinschränkungen und Nachschlagewerte.
 
 Voraussetzungen für das Kopieren einer Datenbank:
 
@@ -76,9 +74,7 @@ Voraussetzungen für das Kopieren einer Datenbank:
 
 - Bei der SQL Server-Datenbank auf dem Quellserver muss es sich um eine einzelne Dateidatenbank handeln.
 
-- 
-				Sie müssen auf dem Quell- und dem Zielcomputer mit SQL Server ein Mitglied der Rolle sysadmin sein.
+- You must be a member of the sysadmin role on both the source and destination SQL Server computers.
 
-
-Verwenden Sie die **CopyDatabaseFile** -Methode des **DoCmd**-Objekts, um die **KopierenDatenbankdatei**-Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
+Verwenden Sie die **CopyDatabaseFile**-Methode des **DoCmd**-Objekts, um die **KopierenDatenbankdatei**-Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 

@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 35322ec058d31f92288fd06a4e8434a4256c2d74
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296647"
 ---
 # <a name="cancel-method-rds"></a>Cancel-Methode (RDS)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Bricht die Ausführung eines ausstehenden asynchronen Methodenaufrufs ab.
+Die Ausführung eines ausstehenden asynchronen Methodenaufrufs wird abgebrochen.
 
 ## <a name="syntax"></a>Syntax
 
 *RDS*. *DataControl*. Abbrechen
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie **Cancel** aufrufen, wird [ReadyState](readystate-property-rds.md) automatisch auf **adcReadyStateLoaded** festgelegt, und das [Recordset](recordset-object-ado.md)-Objekt ist leer.
 

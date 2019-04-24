@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 44e961d7b3f4b12d8801429ecb78a1a186f5547a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301015"
 ---
 # <a name="read-readtext-write-and-writetext-methods-example-vb"></a>Read-, ReadText-, Write- und WriteText-Methoden (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird veranschaulicht, wie der Inhalt eines Textfelds in ein [Stream](stream-object-ado.md)-Textobjekt und ein binäres **Stream** -Objekt gelesen wird. Andere dargestellte Eigenschaften und Methoden beinhalten [Position](position-property-ado.md), [Size](size-property-ado.md), [Charset](charset-property-ado.md) und [SetEOS](seteos-method-ado.md).
 

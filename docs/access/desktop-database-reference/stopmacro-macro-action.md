@@ -8,37 +8,37 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fe319e0f7a811d3bcd3b2fc18c4a3d951187fbe8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308498"
 ---
 # <a name="stopmacro-macro-action"></a>StopMacro-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die **StoppMakro** -Aktion können Sie das derzeit ausgeführte Makro anzuhalten.
+Sie können die **stopmakro** -Aktion verwenden, um das derzeit ausgeführte Makro zu beenden.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
-Die **StoppMakro** -Aktion verfügt nicht über keine Argumente.
+Die **stopmakro** -Aktion hat keine Argumente.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Normalerweise verwenden Sie diese Aktion, wenn eine Bedingung das Makro anzuhalten vornimmt. Sie können einen bedingten Ausdruck in der Aktionszeile des Makros verwenden, die diese Aktion enthält. Wenn der Ausdruck auf **True** (– 1) ausgewertet wird, beendet Microsoft Access das Makro aus.
+Diese Aktion wird in der Regel verwendet, wenn eine Bedingung das Beenden des Makros erforderlich macht. Sie können einen bedingten Ausdruck in der Aktionszeile des Makros verwenden, die diese Aktion enthält. Wenn der Ausdruck **true** ergibt (– 1), beendet Microsoft Access das Makro.
 
-Beispielsweise können Sie ein Makro erstellen, das einem Formular mit der täglichen Summen Reihenfolge für das Datum in einem benutzerdefinierten Dialogfeld geöffnet wird. Sie können einen bedingten Ausdruck verwenden, um sicherzustellen, dass das Steuerelement **Bestelldatum** im Dialogfeld ein gültiges Datum enthält. Wenn dies nicht der Fall, die **Abfrageergebnis** -Aktion kann eine Fehlermeldung angezeigt, und die **StoppMakro** -Aktion kann das Makro beenden.
+Sie können beispielsweise ein Makro erstellen, das ein Formular öffnet, in dem die Gesamtsummen für das in einem benutzerdefinierten Dialogfeld eingegebene Datum angezeigt werden. Sie können einen bedingten Ausdruck verwenden, um sicherzustellen, dass das Steuerelement **Order Date** im Dialogfeld ein gültiges Datum enthält. Wenn dies nicht der Fall ist, kann die **MessageBox** -Aktion eine Fehlermeldung anzeigen, und die **stopmakro** -Aktion kann das Makro beenden.
 
-Wenn das Makro die Aktionen **Echo** oder **Warnmeldungen** zum Aktivieren von Echo oder die Anzeige von systemmeldungen aus verwendet, wird von die **StoppMakro** -Aktion automatisch wieder aktiviert.
+Wenn das Makro die Aktionen **Echo** oder **Warn** Meldungen zum Ausschalten von Echo oder der Anzeige von Systemnachrichten verwendet hat, werden Sie von der **stopmakro** -Aktion automatisch wieder aktiviert.
 
 Diese Aktion ist in einem VBA-Modul (Visual Basic für Applikationen) nicht verfügbar.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Makro veranschaulicht die Verwendung der **BeiFehler** -Aktion. In diesem Beispiel gibt die **BeiFehler** -Aktion an, dass Access führen Sie eine benutzerdefinierte Fehlerbehandlung Makro mit dem Namen Fehlerhandler, wenn ein Fehler auftritt. Wenn ein Fehler auftritt, wird das Untermakro CatchErrors aufgerufen. Wenn die Fehlernummer 2102 ist, eine bestimmte Nachricht wird angezeigt, und Ausführung von Makros wird unterbrochen. Andernfalls wird eine Meldung, die Beschreibung des Fehlers angezeigt und das Makro wird angehalten, damit Sie zusätzliche Hinweise zur Problembehandlung ausführen können. Das Fehlerhandler Makro zeigt eine Meldung angezeigt, die auf das **MacroError** -Objekt zum Anzeigen von Informationen zu dem Fehler verweist.
+The following macro demonstrates the use of the **OnError** action. In this example, the **OnError** action specifies that Access run a custom error handling macro named ErrorHandler when an error occurs. Wenn ein Fehler auftritt, wird das CatchErrors-unter Makro aufgerufen. Wenn die Fehlernummer 2102 ist, wird eine bestimmte Meldung angezeigt, und die Ausführung des Makros wird angehalten. Andernfalls wird eine Meldung mit dem Fehler angezeigt, und das Makro wird angehalten, damit Sie zusätzliche Problembehandlung durchführen können. The ErrorHandler macro displays a message box that refers to the **MacroError** object to display information about the error.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     /* MACRO: mcrThrowErrors                                  */

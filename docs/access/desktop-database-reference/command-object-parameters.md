@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4be654479ec4e447a77b6c03f8bb1b7ac3616544
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296157"
 ---
 # <a name="command-object-parameters"></a>Parameter des Command-Objekts
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine interessantere Verwendung für das **Command** -Objekt wird im nächsten Beispiel veranschaulicht, in dem der Text des SQL-Befehls geändert und dadurch parametrisiert wurde. Auf diese Weise kann der Befehl wiederverwendet werden, wobei jedes Mal ein anderer Wert an den Parameter übergeben wird. Die **Prepared** -Eigenschaft im **Command** -Objekt ist auf **True** festgelegt. Deshalb erfordert ADO, dass der Anbieter den in der **CommandText** -Eigenschaft angegebenen Befehl kompiliert, bevor er zum ersten Mal ausgeführt wird. Außerdem bleibt der kompilierte Befehl im Arbeitsspeicher gespeichert. Die erstmalige Ausführung des Befehls ist aufgrund der vorbereitenden Schritte geringfügig langsamer. Bei jeder weiteren Ausführung wird der Befehl jedoch schneller ausgeführt. Befehle sollten deshalb nur vorbereitet werden, wenn sie mehrmals verwendet werden.
 

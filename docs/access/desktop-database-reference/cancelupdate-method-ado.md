@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4585679688929532d7f50be9efc71b2830bb6587
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296626"
 ---
 # <a name="cancelupdate-method-ado"></a>CancelUpdate-Methode (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Alle an der aktuellen oder neuen Zeile eines [Recordset](recordset-object-ado.md)-Objekts oder der [Fields](fields-collection-ado.md)-Auflistung eines [Record](record-object-ado.md)-Objekts vorgenommenen Änderungen werden abgebrochen, bevor die [Update](update-method-ado.md)-Methode aufgerufen wird.
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset-Objekt*. CancelUpdate
+*Recordset*. CancelUpdate
 
-*Datensatz*. *Felder*. CancelUpdate
+*Record*. *Felder*. CancelUpdate
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **Recordset**
 

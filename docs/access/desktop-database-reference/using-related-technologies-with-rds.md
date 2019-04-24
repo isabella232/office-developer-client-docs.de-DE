@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3e58978145a59a0057f5c7218afe417f8455fcb3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32305977"
 ---
 # <a name="using-related-technologies-with-rds"></a>Verwenden verwandter Technologien mit RDS
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Dieser Abschnitt enthält spezielle Informationen zur Verwendung von Remote Data Service (RDS) mit Aspekten der folgenden Technologien:
 
-- [Verwenden von RDS mit ODBC-Verbindungspooling](using-rds-with-odbc-connection-pooling.md)
+- [Verwenden von RDS mit ODBC-Verbindungs-Pooling](using-rds-with-odbc-connection-pooling.md)
 
 - [Ausführen von Geschäftsobjekten in Komponentendiensten](running-business-objects-in-component-services.md)
 
-**Internet-Informationsdienste** Weitere Informationen zu Microsoft Internet Information Services (IIS) finden Sie in der Microsoft Internet Information Services-Website.
+**Internet Informationsdienste** Weitere Informationen zu Microsoft Internet Information Services (IIS) finden Sie auf der Microsoft Internet Information Services-Website.
 
-**Active Server Pages** Weitere Informationen zu Microsoft Active Server Pages (ASP) finden Sie unter der Website Microsoft Active Server Pages.
+**Active Server Pages** Weitere Informationen zu Microsoft Active Server Pages (ASP) finden Sie auf der Microsoft Active Server Pages-Website.
 
-**Microsoft Component Services** Weitere Informationen zu Component Services finden Sie in der Microsoft Transaction Server-Website.
+**Microsoft-Komponentendienste** Weitere Informationen zu Komponentendiensten finden Sie auf der Microsoft Transaction Server-Website.
 
-**Microsoft SQL Server** Weitere Informationen zu Microsoft SQL Server finden Sie in der Microsoft SQL Server-Website.
+**Microsoft SQL Server** Weitere Informationen zu Microsoft SQL Server finden Sie auf der Microsoft SQL Server-Website.
 
-**Microsoft Internet Explorer** Weitere Informationen zu Microsoft Internet Explorer finden Sie unter Microsoft Internet Explorer-Website und auf der MSDN Library und Web Workshop-Website.
+**Microsoft Internet Explorer** Weitere Informationen zu Microsoft Internet Explorer finden Sie auf der Microsoft Internet Explorer-Website und in der MSDN Library und der Web Workshop-Website.
 
-**Microsoft Windows NT Server/Windows 2000 Server** Weitere Informationen zur Sicherheit in Microsoft Windows NT Server oder Windows 2000 Server finden Sie in der Microsoft Windows-Website.
+**Microsoft Windows NT Server/windows 2000 Server** Weitere Informationen zur Sicherheit in Microsoft Windows NT Server oder Windows 2000 Server finden Sie auf der Microsoft Windows-Website.
 

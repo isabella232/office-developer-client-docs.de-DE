@@ -1,5 +1,5 @@
 ---
-title: Verbindung Mitglieder (DAO)
+title: Connection-Member (DAO)
 TOCTitle: Connection Members
 ms:assetid: 94fc60ee-b6f2-cf08-b008-ed51bf7e7f8c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197681(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 098f44d87390351c23e61000ecbe47eae35810ae
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295905"
 ---
-# <a name="connection-members-dao"></a>Verbindung Mitglieder (DAO)
+# <a name="connection-members-dao"></a>Connection-Member (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 > [!NOTE]
 > [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden. Bei einem Connection-Objekt handelt es sich um eine Verbindung mit einer ODBC-Datenbank (gilt nur für ODBCDirect-Arbeitsbereiche).
@@ -48,8 +48,8 @@ ms.locfileid: "28703902"
 <td><p>Erstellt ein neues <strong><a href="querydef-object-dao.md">QueryDef</a></strong> -Objekt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="connection-execute-method-dao.md">Ausführen</a></strong></p></td>
-<td><p>Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt aus.</p></td>
+<td><p><strong><a href="connection-execute-method-dao.md">Execute</a></strong></p></td>
+<td><p>Führt eine Aktionsabfrage oder eine SQL-Anweisung zu dem angegebenen Objekt aus.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-openrecordset-method-dao.md">OpenRecordset</a></strong></p></td>
@@ -74,12 +74,12 @@ ms.locfileid: "28703902"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="connection-connect-property-dao.md">Eine Verbindung herstellen</a></strong></p></td>
+<td><p><strong><a href="connection-connect-property-dao.md">Connect</a></strong></p></td>
 <td><p>Legt einen Wert fest, der Informationen zur Quelle einer geöffneten Verbindung bereitstellt, oder gibt den Wert zurück. <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-database-property-dao.md">Datenbank</a></strong></p></td>
-<td><p>Gibt das <strong><a href="database-object-dao.md">Database</a></strong>-Objekt zurück, das dieser Verbindung entspricht (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p>Gibt das <strong><a href="database-object-dao.md">Database</a></strong> -Objekt zurück, das dieser Verbindung entspricht (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-name-property-dao.md">Name</a></strong></p></td>

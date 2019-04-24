@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f3ef598ad50747d99ca884043e03ebfabfef8f63
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308995"
 ---
 # <a name="runsql-macro-action"></a>RunSQL-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die **AusführenSQL** -Aktion verwenden, eine Aktionsabfrage Zugriff mithilfe der entsprechenden SQL-Anweisung auszuführen. Sie können auch eine Datendefinitionsabfrage ausführen.
+Mit der **AusführenSQL** -Aktion können Sie eine Access-Aktionsabfrage mithilfe der entsprechenden SQL-Anweisung ausführen. Sie können auch eine Datendefinitionsabfrage ausführen.
 
 > [!NOTE]
 > [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
-Die **AusführenSQL** -Aktion hat die folgenden Argumente.
+Die **AusführenSQL**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -55,11 +55,11 @@ Die **AusführenSQL** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können Aktionsabfragen verwenden, um Datensätze anzufügen, zu löschen und zu aktualisieren und um das Resultset einer Abfrage als neue Tabelle zu speichern. Sie können Datendefinitionsabfragen verwenden, um Tabellen oder Indizes zu erstellen, zu ändern und zu löschen. Sie können die **AusführenSQL** -Aktion verwenden, um diese Vorgänge direkt aus einem Makro heraus auszuführen, ohne gespeicherte Abfragen verwenden zu müssen.
 
-Wenn Sie eine SQL-Anweisung, die mehr als 255 Zeichen eingeben müssen, verwenden Sie die **RunSQL** -Methode des **DoCmd** -Objekts in einem Visual Basic für Applikationen (VBA) Modul stattdessen. Sie können SQL-Anweisungen bis zu 32.768 Zeichen in VBA eingeben.
+If you need to type an SQL statement longer than 255 characters, use the **RunSQL** method of the **DoCmd** object in a Visual Basic for Applications (VBA) module instead. You can type SQL statements of up to 32,768 characters in VBA.
 
 Access-Abfragen sind normalerweise SQL-Anweisungen, die beim Entwerfen einer Abfrage im Entwurfsbereich des Abfragefensters erstellt werden. Die folgende Tabelle enthält eine Liste der Access-Aktions- und Datendefinitionsabfragen sowie die entsprechenden SQL-Anweisungen.
 
@@ -80,16 +80,16 @@ Access-Abfragen sind normalerweise SQL-Anweisungen, die beim Entwerfen einer Abf
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>Anfügen</p></td>
+<td><p>Append</p></td>
 <td><p>INSERT INTO</p></td>
 </tr>
 <tr class="odd">
 <td><p>Löschen</p></td>
-<td><p>DELETE</p></td>
+<td><p>LÖSCHEN</p></td>
 </tr>
 <tr class="even">
-<td><p>Tabellenerstellung</p></td>
-<td><p>WÄHLEN SIE... IN</p></td>
+<td><p>Make-Table</p></td>
+<td><p>Wählen Sie... IN</p></td>
 </tr>
 <tr class="odd">
 <td><p>Aktualisieren</p></td>
@@ -125,4 +125,4 @@ Access-Abfragen sind normalerweise SQL-Anweisungen, die beim Entwerfen einer Abf
 Zum Ändern von Daten in einer anderen Datenbank können Sie auch eine IN-Klausel mit diesen Anweisungen verwenden.
 
 > [!NOTE]
-> Um eine Auswahlabfrage oder Kreuztabellenabfrage in einem Makro auszuführen, verwenden Sie das Argument Ansicht der ÖffnenAbfrage-Aktion zum Öffnen einer vorhandenen Auswahlabfrage oder Kreuztabellenabfrage in der Datenblattansicht. Auf dieselbe Weise können Sie auch bereits vorhandene Aktionsabfragen und SQL-spezifische Abfragen ausführen.
+> To run a select query or crosstab query from a macro, use the View argument of the **OpenQuery** action to open an existing select query or crosstab query in Datasheet view. You can also run existing action queries and SQL-specific queries in the same way.

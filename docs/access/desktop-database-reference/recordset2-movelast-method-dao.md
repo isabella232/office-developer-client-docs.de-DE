@@ -1,5 +1,5 @@
 ---
-title: Recordset2.MoveLast-Methode (DAO)
+title: Recordset2. MoveLast-Methode (DAO)
 TOCTitle: MoveLast Method
 ms:assetid: 32717786-c59c-ec22-666b-fc78e4265c5a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192306(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 829c4dd759bce86388cc65aa5b63276eec438ea0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307259"
 ---
-# <a name="recordset2movelast-method-dao"></a>Recordset2.MoveLast-Methode (DAO)
+# <a name="recordset2movelast-method-dao"></a>Recordset2. MoveLast-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Wechselt zum letzten Datensatz in einem angegebenen **Recordset**-Objekt und macht diesen zum aktuellen Datensatz.
 
@@ -38,7 +38,7 @@ Wechselt zum letzten Datensatz in einem angegebenen **Recordset**-Objekt und mac
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -64,14 +64,14 @@ Beim Öffnen eines **Recordset**-Objekts ist der erste Datensatz aktuell, und di
 
 Ist der erste bzw. letzte Datensatz beim Verwenden von **MoveFirst** oder **MoveLast** bereits aktuell, ändert sich der aktuelle Datensatz nicht.
 
-Wenn Recordset vom Typ Tabelle **Recordset-Objekt** (nur Microsoft Access-Arbeitsbereiche) bezieht, folgt die Verschiebung den aktuellen Index. Sie können den aktuellen Index mit der **Index** -Eigenschaft festlegen. Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.
+Wenn Recordset auf ein **Recordset** vom Typ "Tabelle" verweist (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index. You can set the current index by using the **Index** property. If you don't set the current index, the order of returned records is undefined.
 
 > [!NOTE]
-> Die **MoveLast** -Methode können Sie vollständig auffüllen einen Typ Dynaset oder Snapshot- **Recordset-Objekts** , um die aktuelle Anzahl der Datensätze im **Recordset-Objekt**enthalten. Jedoch, wenn Sie auf diese Weise **MoveLast** verwenden, können Sie die Leistung der Anwendung verlangsamen. Sie sollten nur **MoveLast** verwenden, um zählen der Datensätze abzurufen, wenn dies unbedingt erforderlich ist, erhalten Sie eine genaue Anzahl für ein neu geöffneten **Recordset-Objekt**ist. 
+> You can use the **MoveLast** method to fully populate a dynaset- or snapshot-type **Recordset** to provide the current number of records in the **Recordset**. However, if you use **MoveLast** in this way, you can slow down your application's performance. You should only use **MoveLast** to get a record count if it is absolutely necessary to obtain an accurate record count on a newly opened **Recordset**. 
 >
-> Wenn Sie die Konstante **DbRunAsync** mit **MoveLast**verwenden, ist der Methodenaufruf asynchron. Die **StillExecuting** -Eigenschaft können Sie bestimmen, wann **Recordset** vollständig aufgefüllt wird, und Sie können die **Cancel** -Methode verwenden, um die Ausführung des asynchronen Aufrufs **MoveLast** -Methode beendet werden.
+> If you use the **dbRunAsync** constant with **MoveLast**, the method call is asynchronous. You can use the **StillExecuting** property to determine when the **Recordset** is fully populated, and you can use the **Cancel** method to terminate execution of the asynchronous **MoveLast** method call.
 
-Sie können nicht auf ein **Recordset** -Objekt weiterleiten – nur – Geben Sie die **MoveFirst**, **MoveLast**und **MovePrevious** -Methoden verwenden.
+Die Methoden **MoveFirst**, **MoveLast** und **MovePrevious** können für ein **Recordset**-Objekt vom Typ "Forward-only" nicht verwendet werden.
 
-Verwenden Sie die **Move**-Methode, um die Position des aktuellen Datensatzes in einem **Recordset**-Objekt um eine bestimmte Anzahl von Datensätzen vorwärts oder rückwärts zu verschieben.
+Um die Position des aktuellen Datensatzes in einem **Recordset**-Objekt um eine bestimmte Anzahl von Datensätzen nach vorne oder hinten zu verschieben, verwenden Sie die **Move**-Methode.
 

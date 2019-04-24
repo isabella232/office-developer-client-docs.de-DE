@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e4549c8817361cfb5b9fa730ee37ca6a07edc98b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297060"
 ---
 # <a name="appendix-a-providers"></a>Anhang A: Anbieter
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 In diesem Abschnitt werden drei Arten von Anbietern beschrieben: Datenprovider, Dienstanbieter und Dienstkomponenten. Anbieter können in zwei Kategorien geteilt werden: diejenigen, die Daten anbieten, und diejenigen, die Dienste anbieten. Ein *Datenprovider* besitzt eigene Daten und stellt diese für Ihre Anwendung in tabellarischer Form bereit. Ein *Dienstanbieter* kapselt einen Dienst durch Erstellen und Verwenden von Daten und Vergrößern von Features in den ADO-Anwendungen. Ein Dienstanbieter kann darüber hinaus auch als *Dienstkomponente* definiert werden, die mit anderen Dienstanbietern oder -komponenten verwendet werden muss.
@@ -28,7 +28,7 @@ ADO ist leistungsfähig und flexibel, da es eine Verbindung mit einem beliebigen
 
 Da jedoch jeder Datenprovider einzigartig ist, ergeben sich bei der Interaktion der Anwendung mit ADO je nach Datenprovider geringfügige Abweichungen. Die Abweichungen können einer von drei Kategorien zugeordnet werden:
 
-- Connection-Parameter in der ConnectionString-Eigenschaft.
+- Connection parameters in the [ConnectionString](connectionstring-property-ado.md) property.
 
 - Verwendung des [Command](command-object-ado.md)-Objekts.
 
@@ -44,21 +44,21 @@ Ausführliche Informationen zu den derzeit von Microsoft erhältlichen Datenprov
 <thead>
 <tr class="header">
 <th><p>Bereich</p></th>
-<th><p>Abschnitt</p></th>
+<th><p>Thema</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>ODBC-Datenbanken</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB Provider for ODBC</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB-Anbieter für ODBC</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Indexdienst</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB Provider for Microsoft Indexing Service</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB-Anbieter für Microsoft Indexdienst</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Active Directory-Dienst</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB Provider for Microsoft Active Directory Service</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB-Anbieter für Microsoft Active Directory-Dienst</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Jet-Datenbanken</p></td>
@@ -66,15 +66,15 @@ Ausführliche Informationen zu den derzeit von Microsoft erhältlichen Datenprov
 </tr>
 <tr class="odd">
 <td><p>Microsoft SQL Server</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB-Anbieter für SQL Server</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Oracle-Datenbanken</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB Provider for Oracle</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB-Anbieter für Oracle</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Internet Publishing</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB-Anbieter für Internet Publishing</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +84,7 @@ Ausführliche Informationen zu den derzeit von Microsoft erhältlichen Datenprov
 
 Die [Properties](properties-collection-ado.md)-Auflistungen von [Connection](connection-object-ado.md)-, [Command](command-object-ado.md)- und [Recordset](recordset-object-ado.md)-Objekten enthalten anbieterspezifische dynamische Eigenschaften. Diese Eigenschaften stellen über die von ADO unterstützten integrierten Eigenschaften hinaus Informationen zur anbieterspezifischen Funktionalität bereit.
 
-Wenden Sie nach dem Herstellen der Verbindung und dem Erstellen dieser Objekte die Refresh-Methode auf die Properties-Auflistung des Objekts an, um die anbieterspezifischen Eigenschaften zu erhalten. Ausführliche Informationen zu diesen dynamischen Eigenschaften finden Sie in der Dokumentation zum Anbieter sowie in OLE DB Programmer's Reference.
+After establishing the connection and creating these objects, use the [Refresh](refresh-method-ado.md) method on the object's **Properties** collection to obtain the provider-specific properties. Refer to the provider documentation and the OLE DB Programmer's Reference for detailed information about these dynamic properties.
 
 ## <a name="service-providers"></a>Dienstanbieter
 
@@ -100,9 +100,9 @@ Um einen Dienstanbieter zu verwenden, müssen Sie ein Schlüsselwort angeben. Da
 
 Die Dienstkomponente [Microsoft Cursor Service für OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) ergänzt die Cursor-Hilfsfunktionen von Datenanbietern. Sie erfordert ebenfalls ein Schlüsselwort und hat dynamische Eigenschaften.
 
-Weitere Informationen zu Anbietern finden Sie in der Dokumentation für Microsoft OLE DB in Microsoft Data Access Components SDK oder besuchen Sie das [Data Plattform Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).
+For more information about providers, see the documentation for Microsoft OLE DB in the Microsoft Data Access Components SDK or visit the [Data Platform Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).
 
-## <a name="provider-commands"></a>Providerbefehle
+## <a name="provider-commands"></a>Anbieter Befehle
 
-Für jeden Anbieter hier aufgeführt, wenn Ihre Anwendung Benutzer SQL-Anweisungen wie die Providerbefehle eingeben können, müssen immer überprüft die Benutzereingabe und seien Sie wachsam von möglichen Hackerangriffen mit potenziell gefährlicher SQL-Anweisung, z. B., als Teil der Benutzereingaben.
+Wenn Ihre Anwendungen Benutzern die Eingabe von SQL-Anweisungen als Anbieter Befehle gestatten, müssen Sie für jeden hier aufgeführten Anbieter die Benutzereingabe immer überprüfen und auf mögliche Hackerangriffe mit potenziell gefährlichen SQL-Anweisungen wie, als Teil des Benutzereingabe.
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9f9fdf9dd5908b65ae3b6f6ce5a44eba07e4d9bb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308806"
 ---
 # <a name="searchdirectionenum"></a>SearchDirectionEnum
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Richtung einer Datensatzsuche innerhalb eines [Recordsets](recordset-object-ado.md) an.
 
@@ -38,18 +38,18 @@ Gibt die Richtung einer Datensatzsuche innerhalb eines [Recordsets](recordset-ob
 <tr class="odd">
 <td><p><strong>adSearchBackward</strong></p></td>
 <td><p>-1</p></td>
-<td><p>Sucht rückwärts und hält am Anfang des <strong>Recordset-Objekts</strong>. Wenn eine Übereinstimmung gefunden wird, wird der Datensatzzeiger bei <a href="bof-eof-properties-ado.md">BOF</a>positioniert.</p></td>
+<td><p>Sucht rückwärts und hält am Anfang des Recordset- <strong>Objekts</strong>. Wenn keine Übereinstimmung gefunden wird, wird der Datensatzzeiger an <a href="bof-eof-properties-ado.md">BOF</a>positioniert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSearchForward</strong></p></td>
 <td><p>1</p></td>
-<td><p>Sucht vorwärts und hält am Ende des <strong>Recordset-Objekts</strong>an. Wenn eine Übereinstimmung gefunden wird, wird der Datensatzzeiger bei <a href="bof-eof-properties-ado.md">EOF</a>positioniert.</p></td>
+<td><p>Sucht nach vorn und beendet am Ende des <strong>Recordset-Objekts</strong>. Wenn keine Übereinstimmung gefunden wird, wird der Datensatzzeiger am <a href="bof-eof-properties-ado.md">EOF</a>positioniert.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -64,10 +64,10 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.SearchDirection.BACKWARD</p></td>
+<td><p>AdoEnums. SearchDirection. rückwärts</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.SearchDirection.FORWARD</p></td>
+<td><p>AdoEnums. SearchDirection. FORWARD</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: Recordset.PercentPosition-Eigenschaft (DAO)
+title: Recordset. PercentPosition-Eigenschaft (DAO)
 TOCTitle: PercentPosition Property
 ms:assetid: aebbda44-ed72-7a6c-0cd5-28c8997d4d96
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821751(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 118b93641184eed367cd5f0f00a15a13ff28cd58
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300163"
 ---
-# <a name="recordsetpercentposition-property-dao"></a>Recordset.PercentPosition-Eigenschaft (DAO)
+# <a name="recordsetpercentposition-property-dao"></a>Recordset. PercentPosition-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert fest, der die ungefähre Position des aktuellen Datensatzes (aktueller Datensatz) im **[Recordset](recordset-object-dao.md)** -Objekt basierend auf einem Prozentwert der Datensätze im **Recordset** angibt, oder gibt diesen Wert zurück.
 
@@ -28,14 +28,14 @@ Legt einen Wert fest, der die ungefähre Position des aktuellen Datensatzes (akt
 
 ## <a name="remarks"></a>Bemerkungen
 
-Zum Festlegen oder Ändern der ungefähren Position des aktuellen Datensatz in einem Recordset-Objekt können Sie die PercentPosition-Eigenschaft überprüfen oder festlegen. Wenn Sie ein Recordset-Objekt vom Typ Dynaset oder Snapshot verwenden, das direkt in einer Basistabelle geöffnet wurde, füllen Sie zunächst das Recordset-Objekt auf, indem Sie zum letzten Datensatz gehen. Anschließend legen Sie die PercentPosition-Eigenschaft fest oder überprüfen sie. Wenn Sie die PercentPosition-Eigenschaft verwenden, bevor Sie das Recordset-Objekt vollständig aufgefüllt haben, erfolgt die Bewegung relativ zur Anzahl der Datensätze, auf die laut des Werts der RecordCount-Eigenschaft zugegriffen wurde. Mithilfe der MoveLast-Methode können Sie zum letzten Datensatz wechseln.
+To indicate or change the approximate position of the current record in a **Recordset** object, you can check or set the **PercentPosition** property. When working with a dynaset- or snapshot-type **Recordset** object opened directly from a base table, first populate the **Recordset** object by moving to the last record before you set or check the **PercentPosition** property. If you use the **PercentPosition** property before fully populating the **Recordset** object, the amount of movement is relative to the number of records accessed as indicated by the **[RecordCount](recordset-recordcount-property-dao.md)** property setting. You can move to the last record by using the **[MoveLast](recordset-movelast-method-dao.md)** method.
 
 > [!NOTE]
-> Verwenden die **PercentPosition** -Eigenschaft zum Verschieben des aktuellen Datensatzes zu einem bestimmten Datensatz in einem **Recordset** -Objekt wird nicht empfohlen. Die **[Bookmark](recordset-bookmark-property-dao.md)** -Eigenschaft eignet sich besser für diese Aufgabe.
+> Die Verwendung der **PercentPosition** -Eigenschaft zum Verschieben des aktuellen Datensatzes in einen bestimmten Datensatz in einem **Recordset** -Objekt wird nicht empfohlen. Die **[Bookmark](recordset-bookmark-property-dao.md)** -Eigenschaft eignet sich besser für diese Aufgabe.
 
 Wenn Sie einen Wert für die **PercentPosition**-Eigenschaft festgelegt haben, wird der Datensatz an der ungefähren Position, die dem betreffenden Wert entspricht, zum aktuellen Datensatz. Die **PercentPosition**-Eigenschaft wird auf einen Wert zurückgesetzt, der die ungefähre Position des aktuellen Datensatzes widerspiegelt. Beispiel: Wenn das **Recordset**-Objekt nur 5 Datensätze enthält und Sie seine **PercentPosition**-Eigenschaft auf den Wert 77 festlegen, kann der von der **PercentPosition**-Eigenschaft zurückgegebene Wert 80 sein, anstelle von 77.
 
-Die **PercentPosition** -Eigenschaft gilt für alle Typen von **Recordset** -Objekten, ausgenommen Forward Typ **Recordset** -Objekte oder **Recordset** -Objekten, die von Pass-Through-Abfragen an Remotedatenbanken geöffnet.
+Die **PercentPosition** -Eigenschaft gilt für alle Typen von **Recordset** -Objekten, mit Ausnahme von "Forward-Only"-Typ **Recordset** -Objekte oder **Recordset** -Objekte, die von Passthrough-Abfragen für Remotedatenbanken geöffnet werden.
 
 Sie können die **PercentPosition**-Eigenschaft mit einer Bildlaufleiste auf einem Formular oder in einem Textfeld verwenden, um die Position des aktuellen Datensatzes in einem **Recordset**-Objekt anzugeben.
 

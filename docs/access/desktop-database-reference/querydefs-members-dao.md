@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e5f77697bbf0f9231500f325545c0e6ccd9c45fe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301022"
 ---
 # <a name="querydefs-members-dao"></a>QueryDefs-Member (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine QueryDefs -Auflistung enthält alle QueryDef -Objekte eines Database -Objekts in einer Datenbank eines Microsoft Access-Datenbankmoduls.
 
@@ -36,7 +36,7 @@ Eine QueryDefs -Auflistung enthält alle QueryDef -Objekte eines Database -Objek
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="querydefs-append-method-dao.md">Anfügen</a></strong></p></td>
+<td><p><strong><a href="querydefs-append-method-dao.md">Append</a></strong></p></td>
 <td><p>Fügt der <strong>QueryDefs</strong>-Auflistung ein neues <strong>QueryDef</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Eine QueryDefs -Auflistung enthält alle QueryDef -Objekte eines Database -Objek
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="querydefs-count-property-dao.md">Count</a></strong></p></td>
-<td><p>Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
+<td><p>Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
 </tr>
 </tbody>
 </table>

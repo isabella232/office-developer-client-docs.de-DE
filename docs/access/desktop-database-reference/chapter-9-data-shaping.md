@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 43ad9d5e989bc1c6f4a54fb4882cfe3c3e357fd1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296423"
 ---
 # <a name="chapter-9-data-shaping"></a>Kapitel 9: Daten modellieren
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-*Data shaping* bietet eine Möglichkeit zum Abfragen einer Datenquelle und Zurückgeben einer [Recordset-Objekt](recordset-object-ado.md) , das eine hierarchische Beziehung zwischen zwei oder mehr logische Entitäten (einer Hierarchie) darstellt. 
+Die *Datenstrukturierung* stellt eine Möglichkeit zum Abfragen einer Datenquelle und Zurückgeben eines [Recordsets](recordset-object-ado.md) bereit, das eine Übergeordnet-Untergeordnet-Beziehung zwischen zwei oder mehr logischen Entitäten (eine Hierarchie) darstellt. 
 
 Ein klassisches Beispiel für eine hierarchische Beziehung sind Kunden und Aufträge. Für jeden Kunden in einer Datenbank können null oder mehr Aufträge vorhanden sein. Mit regulären SQL-Befehlen könnten die Daten mithilfe der JOIN-Syntax abgerufen werden, was jedoch ineffizient und unhandlich sein kann, da in jedem für eine bestimmte Übergeordnet-Untergeordnet-Beziehung zurückgegebenen Datensatz redundante Daten zum übergeordneten Element wiederholt werden. Durch Datenstrukturierung kann ein einzelner übergeordneter Datensatz im übergeordneten **Recordset** in Beziehung zu mehreren untergeordneten Datensätzen im **Recordset** gesetzt werden, wodurch die Redundanz von JOIN vermieden wird. Die meisten Personen finden das Programmiermodell mit Übergeordnet-Untergeordnet-Beziehungen und mehreren **Recordsets** natürlicher und meinen, dass sie mit ihm einfacher arbeiten als mit dem JOIN-Modell und einem einzelnen **Recordset**.
 
@@ -32,7 +32,7 @@ Weitere Informationen zur Datenstrukturierung finden Sie unter den folgenden The
 - [Zugreifen auf Zeilen in einem hierarchischen Recordset](accessing-rows-in-a-hierarchical-recordset.md)
 - [Formal Shape Grammar](formal-shape-grammar.md)
 - [Funktionen (Visual Basic for Applications)](visual-basic-for-applications-functions.md)
-- [Shape Append-Klausel (ADO)](shape-append-clause.md)
+- [Shape APPEND-Klausel (ADO)](shape-append-clause.md)
 - [Datenstrukturierung (ADO)](data-shaping.md)
-- [Shape-Befehle im Allgemeinen (ADO)](shape-commands-in-general.md)
+- [Shape-Befehle im allgemeinen (ADO)](shape-commands-in-general.md)
 

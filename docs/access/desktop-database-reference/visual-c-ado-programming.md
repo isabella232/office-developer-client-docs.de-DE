@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2a890b4906fb9f207f12ff17ef0d3ccf1a97a44d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302772"
 ---
 # <a name="visual-c-ado-programming"></a>Visual C++ ADO-Programmierung
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In der ADO-API-Referenz wird die Funktionalität der ADO-Anwendungsprogrammierschnittstelle (Application Programming Interface, API) mit einer Microsoft Visual Basic ähnlichen Syntax beschrieben. Obwohl die Zielgruppe alle Benutzer sind, verwendet ADO-Programmierer verschiedene Sprachen wie Visual Basic, Visual C++ (mit und ohne die ** \#importieren** Richtlinie), und Visual J++ (mit dem ADO/WFC-Klasse-Paket).
+In der ADO-API-Referenz wird die Funktionalität der ADO-Anwendungsprogrammierschnittstelle (Application Programming Interface, API) mit einer Microsoft Visual Basic ähnlichen Syntax beschrieben. Obwohl die Zielgruppe alle Benutzer ist, verwenden ADO-Programmierer unterschiedliche Sprachen wie Visual Basic, Visual C++ (mit und ohne die ** \#Import** -Direktive) und Visual J++ (mit dem Class-Paket ADO/WFC).
 
 Um dieser Vielfalt gerecht zu werden, bieten die [ADO für Visual C++-Syntaxindizes](using-ado-with-microsoft-visual-c.md) eine Visual C++-sprachspezifische Syntax mit Verknüpfungen zu allgemeinen Beschreibungen der Funktionalität, der Parameter, außergewöhnlichen Verhaltensweisen usw. in der API-Referenz.
 
 ADO wird mit COM-Schnittstellen (Component Object Model) implementiert. In bestimmten Programmiersprachen ist es jedoch einfacher für Programmierer mit COM zu arbeiten als in anderen. Beispielsweise werden nahezu alle Details der Verwendung von COM implizit für Visual Basic-Programmierer behandelt, wohingegen Visual C++-Programmierer die Details selbst ermitteln müssen.
 
-In den folgenden Abschnitten werden Details für C und C++-Programmierer verwenden von ADO zusammengefasst und die ** \#importieren** Richtlinie. Der Schwerpunkt liegt auf den speziellen Datentypen für COM (**Variant**, **BSTR**und **SafeArray**) und Fehlerbehandlung (\_com\_Fehler).
+In den folgenden Abschnitten werden die Details für C-und C++-Programmierer mit ADO und der ** \#Import** -Direktive zusammengefasst. Der Schwerpunkt liegt auf Datentypen, die für COM (**Variant**, **BSTR**und **SAFEARRAY**) spezifisch sind,\_und\_Fehlerbehandlung (com-Fehler).
 
-## <a name="using-the-import-compiler-directive"></a>Mithilfe der \#-Compilerdirektive importieren
+## <a name="using-the-import-compiler-directive"></a>Verwenden der \#Import Compiler-Direktive
 
-Die ** \#importieren** Visual C++-Compilerdirektive vereinfacht die Arbeit mit der ADO-Methoden und Eigenschaften. Die Richtlinie akzeptiert den Namen einer Datei mit einer Typbibliothek, wie der ADO-DLL (Msado15.dll), und generiert Headerdateien mit Typedef-Deklarationen, intelligente Zeiger für Schnittstellen und aufgezählte Konstanten. Jede Schnittstelle ist gekapselte oder eingebunden, in einer Klasse.
+Die Compiler-Direktive Visual C++ ** \#importieren** vereinfacht das Arbeiten mit den ADO-Methoden und-Eigenschaften. The directive takes the name of a file containing a type library, such as the ADO .dll (Msado15.dll), and generates header files containing typedef declarations, smart pointers for interfaces, and enumerated constants. Each interface is encapsulated, or wrapped, in a class.
 
 Für jeden Vorgang in einer Klasse (also ein Methoden- oder Eigenschaftenaufruf) gibt es eine Deklaration, um den Vorgang direkt aufzurufen (also die "Rohform" des Vorgangs), und eine Deklaration, um den Rohvorgang aufzurufen und einen COM-Fehler auszulösen, wenn der Vorgang nicht erfolgreich ausgeführt wird. Wenn es sich bei dem Vorgang um eine Eigenschaft handelt, wird normalerweise mit einer Compilerdirektive eine alternative Syntax für den Vorgang erstellt, die der Syntax von Visual Basic ähnelt.
 
-Vorgänge, die den Wert einer Eigenschaft abzurufen, weisen Namen des Formulars, **Abrufen *** Eigenschaft*. Vorgänge, die den Wert einer Eigenschaft festgelegt haben Namen des Formulars, **platzieren *** Eigenschaft*. Vorgänge, die den Wert einer Eigenschaft mit einem Zeiger auf ein ADO-Objekt festgelegt haben Namen des Formulars, **PutRef *** Eigenschaft*.
+Vorgänge, die den Wert einer Eigenschaft abrufen, haben Namen des Formulars, **Get * * *-Eigenschaft*. Vorgänge, die den Wert einer Eigenschaft festlegen, haben Namen des Formulars, **Put * * *-Eigenschaft*. Vorgänge, die den Wert einer Eigenschaft mit einem Zeiger auf ein ADO-Objekt festlegen, haben die Namen des Formulars, **PutRef * * *-Eigenschaft*.
 
 Sie können eine Eigenschaft mit Aufrufen in der folgenden Form abrufen oder festlegen:
 
@@ -43,9 +43,9 @@ objectPtr->PutProperty(value); // set property value
 objectPtr->PutRefProperty(&value); // set property with object pointer 
 ```
 
-## <a name="using-property-directives"></a>Verwenden von Eigenschaftendirektiven
+## <a name="using-property-directives"></a>Verwenden von Eigenschafts Direktiven
 
-Die ** \_ \_declspec(property...)** -Compilerdirektive ist eine Erweiterung der Microsoft-spezifischen C-Sprache, die eine Funktion, die als eine Eigenschaft verwendet, um eine alternative Syntax deklariert. Daher können Sie festlegen oder Abrufen von Werten einer Eigenschaft so ähnlich zu Visual Basic. Beispielsweise können Sie festlegen und Abrufen eine Eigenschaft auf diese Weise:
+** \_Die \_declspec (Property...)** -Compiler-Direktive ist eine Microsoft-spezifische C-Spracherweiterung, die eine Funktion deklariert, die als Eigenschaft verwendet wird, um eine alternative Syntax zu haben. Daher können Sie Werte einer Eigenschaft ähnlich wie bei Visual Basic festlegen oder abrufen. Sie können z. B. wie folgt eine Eigenschaft festlegen und abrufen:
 
 ```vb 
  
@@ -61,26 +61,26 @@ objectPtr->PutProperty(value); // set property value
 variable = objectPtr->GetProperty; // get property value 
 ```
 
-Der Compiler generiert den entsprechenden **Get ***-*, **Put**-, oder **PutRef *** Eigenschaft* Anruf basierend auf welche alternative Syntax deklariert ist, und gibt an, ob die Eigenschaft wird gelesenen oder geschriebenen.
+Der Compiler generiert den entsprechenden **Get *** * *-, **Put**-oder **PutRef * * *-Eigenschafts* Aufruf basierend darauf, welche Alternative Syntax deklariert wird und ob die Eigenschaft gelesen oder geschrieben wird.
 
-Die ** \_ \_declspec(property...)** -Compilerdirektive kann nur **get**, **put**oder **get** und **put** alternative Syntax für eine Funktion deklarieren. Schreibgeschützte Vorgänge weisen lediglich eine Erklärung **erhalten möchten** . lesegeschützte Vorgänge weisen lediglich eine Erklärung **zu platzieren** . Vorgänge, die Lese- und Schreibvorgang sind verfügen sowohl **get** und **put** -Deklarationen.
+** \_Die \_declspec (Property...)** -Compiler-Direktive kann **nur Get**-, **Put**-oder **Get** -und **Put** -alternative Syntax für eine Funktion deklarieren. Schreibgeschützte Vorgänge haben nur eine **Get** -Deklaration; schreibgeschützte Vorgänge haben nur eine **Put** -Deklaration; sowohl Lese-als auch Schreibvorgänge haben sowohl **Get** -als auch **Put** -Deklarationen.
 
-Es sind nur zwei Deklarationen mit dieser Richtlinie möglich. Jede Eigenschaft kann jedoch drei Eigenschaftenfunktionen haben: **Abrufen *** Eigenschaft*, **zu platzieren *** Eigenschaft*, und **PutRef *** Eigenschaft*. In diesem Fall weisen nur zwei Formen der Eigenschaft die alternative Syntax.
+Nur zwei Deklarationen sind mit dieser Direktive möglich; jede Eigenschaft kann jedoch drei Eigenschaftsfunktionen aufweisen: **Get *** * Property, **Put *** * Property und **PutRef * * * Property*. In diesem Fall haben nur zwei Formen der Eigenschaft die alternative Syntax.
 
-Beispielsweise wird der **ActiveConnection** -Eigenschaft für das **Command** -Objekt mit einer alternativen Syntax für deklariert **Abrufen *** ActiveConnection* und **PutRef *** ActiveConnection*. Die **PutRef**- Syntax ist eine gute Wahl, da in der Praxis Sie in der Regel werden ein geöffnetes **Connection** -Objekt (d. h., ein **Connection** -Objektzeiger) in dieser Eigenschaft aufnehmen möchten. Andererseits, hat das **Recordset** -Objekt **Abrufen**-, **Put**-, und **PutRef *** ActiveConnection* Vorgänge, aber keine alternative Syntax.
+Beispielsweise wird die **ActiveConnection** -Eigenschaft des **Command** -Objekts mit einer alternativen Syntax für **Get * ** * * ActiveConnection und **PutRef * * * ActiveConnection*deklariert. Die **PutRef**-Syntax ist eine gute Wahl, weil Sie in der Praxis üblicherweise in diese Eigenschaft ein offenes **Connection**-Objekt aufnehmen (d. h. einen **Connection**-Objektzeiger). Andererseits verfügt das **Recordset** -Objekt über **Get**-, **Put**-und **PutRef * * * ActiveConnection* -Operationen, jedoch keine alternative Syntax.
 
-## <a name="collections-the-getitem-method-and-the-item-property"></a>Auflistungen, GetItem-Methode und die Item-Eigenschaft
+## <a name="collections-the-getitem-method-and-the-item-property"></a>Auflistungen, die GetItem-Methode und die Item-Eigenschaft
 
-ADO definiert mehrere Auflistungen, einschließlich **Fields**, **Parameters**, **Properties** und **Errors**. In Visual C++ gibt die **GetItem(***index***)**-Methode ein Member der Auflistung zurück. *Index* ist ein **Variant**-Wert, der eigentliche Wert ist ein numerischer Index des Members in der Auflistung oder eine Zeichenfolge mit dem Namen des Members.
+ADO definiert mehrere Auflistungen, einschließlich **Fields**, **Parameters**, **Properties** und **Errors**. In Visual C++ gibt die **GetItem (***Index***)** -Methode ein Element der Auflistung zurück. *Index* ist ein **Variant**-Wert, der eigentliche Wert ist ein numerischer Index des Members in der Auflistung oder eine Zeichenfolge mit dem Namen des Members.
 
-Die ** \_ \_declspec(property...)** -Compilerdirektive deklariert die **Item** -Eigenschaft als eine alternative Syntax für jede Auflistung grundlegende **'GetItem()'** -Methode. Für die alternative Syntax werden eckige Klammern verwendet, und sie ähnelt einem Arrayverweis. Im Allgemeinen sehen die beiden Formen wie folgt aus:
+** \_Die \_declspec (Property...)** -Compiler-Direktive deklariert die **Item** -Eigenschaft als alternative Syntax für die grundlegende **GetItem ()** -Methode der einzelnen Auflistungen. Für die alternative Syntax werden eckige Klammern verwendet, und sie ähnelt einem Arrayverweis. Im Allgemeinen sehen die beiden Formen wie folgt aus:
 
 ```vb
     collectionPtr->GetItem(index); 
     collectionPtr->Item[index]; 
 ```
 
-Ein Feld eines **Recordset** -Objekts, mit dem Namen ***Rs***, abgeleitet aus der **Authors** -Tabelle der **Pubs** -Datenbank beispielsweise weisen Sie einen Wert zu. Verwenden Sie die Eigenschaft **Item()** Zugriff auf das dritte **Feld** der **Fields** -Auflistung des **Recordset** -Objekts (Sammlungen von 0 indiziert werden, sofern das dritte Feld den Namen ***au\_Fname***). Rufen Sie dann die **Value()** -Methode für das **Field** -Objekt einen String-Wert zuweisen.
+Weisen Sie z. B. einem Feld des **Recordset**-Objekts mit dem Namen ***rs*** einen Wert zu, der aus der **authors**-Tabelle der **pubs**-Datenbank abgeleitet ist. Verwenden Sie die **Item ()** -Eigenschaft für den Zugriff auf das dritte **Feld** der **Fields** -Auflistung des **Recordset** -Objekts (Auflistungen werden von Null indiziert; davon ausgehend, dass das dritte Feld den Namen ***au\_fname***). Rufen Sie dann die **Value()**-Methode für das **Field**-Objekt auf, um einen Zeichenfolgenwert zuzuweisen.
 
 Dies kann in Visual Basic auf die folgenden vier Arten ausgedrückt werden (die beiden letzten Formen gelten nur für Visual Basic, in anderen Sprachen gibt es keine Entsprechungen):
 
@@ -100,7 +100,7 @@ rs->Fields->GetItem(long(2))->PutValue("value");
 rs->Fields->GetItem("au_fname")->PutValue("value"); 
 ```
 
-\-oder -(die alternative Syntax für die **Value** -Eigenschaft wird ebenfalls dargestellt)
+\-oder-(die alternative Syntax für die **value** -Eigenschaft wird ebenfalls angezeigt)
 
 ```cpp 
  
@@ -116,25 +116,25 @@ Ausnahmen zu dieser Regel bilden die Datentypen, die nur für COM gelten: **Vari
 
 ### <a name="variant"></a>Variant
 
-Variant ist ein strukturierter Datentyp, der ein Wertmember und ein Datentypmember enthält. Ein Variant-Wert kann eine Vielzahl anderen Datentypen enthalten, u. a. einen anderen Variant-Wert, einen BSTR- oder Boolean-Wert, einen IDispatch- oder IUnknown-Zeiger, eine Währung und ein Datum. COM bietet außerdem Methoden, die die Konvertierung von Datentypen vereinfachen.
+A **Variant** is a structured data type that contains a value member and a data type member. A **Variant** may contain a wide range of other data types including another Variant, BSTR, Boolean, IDispatch or IUnknown pointer, currency, date, and so on. COM also provides methods that make it easy to convert one data type to another.
 
-Die ** \_Variant\_t** -Klasse kapselt und verwaltet den **Variant** -Datentyp.
+Die ** \_Variant\_** -Klasse t kapselt und verwaltet den **Variant** -Datentyp.
 
-Wenn der ADO-API-Referenz besagt, eine Methode dass oder Operanden Eigenschaft einen Wert übernimmt, sie in der Regel bedeutet, dass übergebene Wert ist eine ** \_Variant\_t**.
+Wenn die ADO-API-Referenz besagt, dass eine Methode oder ein Eigenschafts Operand einen Wert akzeptiert, bedeutet dies normalerweise, dass der Wert in einem ** \_Variant-Datentyp\_** übergeben wird.
 
-Diese Regel ist explizit True, wenn der ADO-API-Referenz in den Themen im Abschnitt **Parameter** besagt, einen Operand dass **Variant**. Eine Ausnahme ist, wenn die Dokumentation ausdrücklich darauf hinweist, dass der Operand einen standard-Datentyp, wie **lange** oder **Byte**oder eine Enumeration übernimmt. Eine weitere Ausnahme ist, wenn der Operand eine **Zeichenfolge**akzeptiert.
+This rule is explicitly true when the **Parameters** section in the topics of the ADO API Reference says an operand is a **Variant**. One exception is when the documentation explicitly says the operand takes a standard data type, such as **Long** or **Byte**, or an enumeration. Another exception is when the operand takes a **String**.
 
 ### <a name="bstr"></a>BSTR
 
 **BSTR** (**B**asic **STR**ing) ist ein strukturierter Datentyp, der eine Zeichenfolge und die Länge der Zeichenfolge enthält. COM bietet Methoden zum Zuordnen, Ändern und Freigeben eines **BSTR**-Werts.
 
-Die ** \_Bstr\_t** -Klasse kapselt und verwaltet den **BSTR** -Datentyp.
+Die ** \_BSTR\_t** -Klasse kapselt und verwaltet den **BSTR** -Datentyp.
 
-Wenn der ADO-API-Referenz besagt, eine Methode dass oder Eigenschaft einen **String** -Wert übernimmt, bedeutet der Wert wird in Form von einer ** \_Bstr\_t**.
+Wenn die ADO-API-Referenz besagt, dass eine Methode oder Eigenschaft einen **String** -Wert akzeptiert, bedeutet dies, dass der Wert in der Form von ** \_BSTR\_t**ist.
 
-#### <a name="casting-variantt-and-bstrt-classes"></a>Umwandeln von \_Variant\_t und \_Bstr\_t-Klassen
+#### <a name="casting-variantt-and-bstrt-classes"></a>Umwandeln \_von\_Variant- \_Datentyp\_t und BSTR t-Klassen
 
-Häufig ist es nicht erforderlich, explizit Code eine ** \_Variant\_t** oder ** \_Bstr\_t** als Argument für einen Vorgang. Wenn die ** \_Variant\_t** oder ** \_Bstr\_t** Klasse hat einen Konstruktor, der den Datentyp des Arguments entspricht, und klicken Sie dann der Compiler generiert den entsprechenden ** \_Variant\_t** oder ** \_ BSTR\_t**.
+Häufig ist es nicht erforderlich, einen ** \_\_Variant** -Wert oder ** \_BSTR\_t** in einem Argument für einen Vorgang explizit zu codieren. Wenn die ** \_Variant\_** -Klasse t oder ** \_BSTR\_t** einen Konstruktor besitzt, der mit dem Datentyp des Arguments übereinstimmt, generiert der Compiler die ** \_entsprechende\_Variante t** oder ** \_ BSTR\_t**.
 
 Wenn das Argument jedoch nicht eindeutig ist, wenn also der Datentyp des Arguments mit mehr als einem Konstruktor übereinstimmt, müssen Sie das Argument mit dem entsprechenden Datentyp umwandeln, um den richtigen Konstruktor aufzurufen.
 
@@ -150,19 +150,19 @@ Beispielsweise lautet die Deklaration für die **Recordset::Open** -Methode wie 
  long Options ); 
 ```
 
-Das ActiveConnection-Argument übernimmt einen Verweis auf ein ** \_Variant\_t**, den Sie als Verbindungszeichenfolge oder als Zeiger auf ein geöffnetes **Connection** -Objekt codieren können.
+Das ActiveConnection-Argument übernimmt einen Verweis auf ** \_einen\_Variant**-Wert, den Sie als Verbindungszeichenfolge oder als Zeiger auf ein geöffnetes **Connection** -Objekt codieren können.
 
-Die richtige ** \_Variant\_t** wird implizit konstruiert, wenn Sie eine Zeichenfolge, z. B. übergeben "DSN = Pubs; Uid = sa; Pwd =;", oder einen Zeiger wie "(IDispatch \*) pConn".
+Die richtige ** \_Variante\_t** wird implizit erstellt, wenn Sie eine Zeichenfolge wie "DSN = Pubs; UID = SA; pwd =;" oder einen Zeiger wie "(IDispatch \*) pConn" weitergeben.
 
-Oder Sie können explizit code eine ** \_Variant\_t** mit einem Zeiger wie "\_Variant-Wert\_t ((IDispatch \*) pConn, true)". Die Cast (IDispatch \*), wird die Mehrdeutigkeit mit einem anderen Konstruktor, der einen Zeiger auf eine IUnknown-Schnittstelle akzeptiert aufgelöst.
+Oder Sie können einen ** \_Variant\_** -Wert mit einem Zeiger wie "\_Variant\_t ((IDispatch \*) pConn, true)" explizit codieren. Die Umwandlung (IDispatch \*) löst die Mehrdeutigkeit mit einem anderen Konstruktor auf, der einen Zeiger auf eine IUnknown-Schnittstelle annimmt.
 
-Eine wichtige, aber selten erwähnte Tatsache ist, dass ADO eine IDispatch-Schnittstelle ist. Wenn ein Zeiger auf ein ADO-Objekt als ein Variant-Wert übergeben werden muss, muss dieser Zeiger als ein Zeiger auf eine IDispatch-Schnittstelle umgewandelt werden.
+It is a crucial, though seldom mentioned fact, that ADO is an IDispatch interface. Whenever a pointer to an ADO object must be passed as a **Variant**, that pointer must be cast as a pointer to an IDispatch interface.
 
-Im letzte Fall codes explizit das zweite boolesche Argument des Konstruktors mit dem optional, Standardwert true. Dieses Argument wird vom **Variant** Konstruktor rufen Sie die **AddRef**-Methode () dafür, dass von ADO automatisch die ** \_Variant\_t::Release**()-Methode, wenn der ADO-Methode oder Eigenschaft Aufruf abgeschlossen ist.
+Im letzten Fall wird das zweite boolesche Argument des Konstruktors explizit mit dem optionalen Standardwert true codiert. Dieses Argument bewirkt, dass der **Variant** -Konstruktor seine **AddRef**()-Methode aufruft, durch die ADO beim Abschluss des ADO-Methoden-oder-Eigenschaften Aufrufs automatisch den ** \_Variant-Datentyp\_t:: Release**() aufruft.
 
 ### <a name="safearray"></a>SafeArray
 
-**SafeArray** ist ein strukturierter Datentyp, der ein Array anderer Datentypen enthält. **SafeArray** ist *sicherer* bezeichnet, da sie Informationen zu den Grenzen der einzelnen Arraydimension und schränkt den Zugriff auf Elemente innerhalb dieser Grenzen Arrays enthält.
+**SafeArray** ist ein strukturierter Datentyp, der ein Array anderer Datentypen enthält. **SafeArray** wird als *safe* (sicher) bezeichnet, da dieser Datentyp Informationen zu den Grenzen der einzelnen Arraydimensionen enthält und den Zugriff auf die Arrayelemente innerhalb dieser Grenzen beschränkt.
 
 Wenn in der ADO-API-Referenz angegeben ist, dass eine Methode oder Eigenschaft ein Array übernimmt oder zurückgibt, bedeutet dies, dass die Methode oder Eigenschaft einen **SafeArray** -Wert übernimmt oder zurückgibt, kein systemeigenes C/C++-Array.
 
@@ -170,11 +170,11 @@ Für den zweiten Parameter der **OpenSchema** -Methode des **Connection** -Objek
 
 Als weiteres Beispiel ist das erste Argument der **Find** -Methode ein **Variant** -Wert, dessen Wert ein eindimensionaler **SafeArray** -Wert ist. Jedes optionale erste und zweite Argument von **AddNew** ist ein eindimensionaler **SafeArray** -Wert, und der Rückgabewert der **GetRows** -Methode ist ein **Variant** -Wert, dessen Wert ein zweidimensionaler **SafeArray** -Wert ist.
 
-## <a name="missing-and-default-parameters"></a>Fehlende und Standard-Parameter
+## <a name="missing-and-default-parameters"></a>Fehlende und Standardparameter
 
 Bei Visual Basic sind fehlende Parameter in Methoden zulässig. Die **Open** -Methode des **Recordset** -Objekts weist z. B. fünf Parameter auf, aber Sie können Zwischenparameter überspringen und nachstehende Parameter auslassen. Ein standardmäßiger **BSTR** - oder **Variant** -Wert wird je nach Datentyp des fehlenden Operanden ersetzt.
 
-In der C/C++ müssen alle Operanden angegeben werden. Wenn Sie einen fehlenden Parameter angeben möchten, dessen Datentyp eine Zeichenfolge ist, geben Sie eine ** \_Bstr\_t** mit einer leeren Zeichenfolge. Wenn Sie einen fehlenden Parameter angeben möchten, dessen Datentyp **Variant-Wert**ist, geben Sie eine ** \_Variant\_t** mit einem Wert von Verschiebung\_E\_PARAMNOTFOUND und einen Typ von VT\_Fehler. Alternativ angeben die Entsprechung ** \_Variant\_t** -Konstante, **VtMissing**, das von bereitgestellt wird die ** \#importieren** Richtlinie.
+In C/C++, all operands must be specified. Wenn Sie einen fehlenden Parameter angeben möchten, dessen Datentyp eine Zeichenfolge ist, geben Sie ** \_ein\_BSTR t** an, das eine NULL-Zeichenfolge enthält. Wenn Sie einen fehlenden Parameter angeben möchten, dessen Datentyp ein **Variant**-Datentyp ist, geben Sie einen ** \_\_t** -Datentyp mit dem\_Wert\_"Dispo E PARAMNOTFOUND" und\_einen VT-Fehlertyp an. Alternativ können Sie die äquivalente ** \_Variante\_t** , **vtMissing**, angeben, die von der ** \#Import** -Direktive bereitgestellt wird.
 
 Drei Methoden bilden Ausnahmen zur üblichen Verwendung von **vtMissing**. Dies sind die **Execute** -Methoden der Objekte **Connection** - und **Command** -Objekte sowie die **NextRecordset** -Methode des **Recordset** -Objekts. Im Folgenden sind deren Signaturen aufgeführt:
 
@@ -189,9 +189,9 @@ _RecordsetPtr Invalid DDUE based on source, error:link not allowed in code, link
 
 Die Parameter *RecordsAffected* und *Parameters* sind Zeiger auf einen **Variant**-Wert. *Parameters* ist ein Eingabeparameter, mit dem die Adresse eines **Variant**-Werts angegeben wird, der einen Parameter oder ein Array von Parametern enthält, der bzw. das den ausgeführten Befehl ändert. *RecordsAffected* ist ein Ausgabeparameter, mit dem die Adresse eines **Variant**-Werts angegeben wird, an den die Anzahl der von der Methode betroffenen Zeilen zurückgegeben wird.
 
-Geben Sie in das **Command** -Objekt **Execute** -Methode an, dass keine Parameter angegeben werden, indem Sie *Parameter* entweder \&VtMissing (was empfohlen wird) oder auf einen null-Zeiger (d. h., **NULL** oder 0 (null)). Wenn der *Parameter* auf null-Zeiger festgelegt ist, wird die Methode intern ersetzt das Äquivalent von **VtMissing**und schließt dann den Vorgang.
+Geben Sie in der **Execute** -Methode des **Command** -Objekts an, dass keine Parameter durch Festlegen \&von *Parametern* für vtMissing (was empfohlen wird) oder für den NULL-Zeiger (also **null** oder NULL (0)) angegeben werden. Wird *Parameters* auf einen NULL-Zeiger festgelegt, ersetzt die Methode intern die Entsprechung von **vtMissing** und schließt dann den Vorgang ab.
 
-Geben Sie in den Methoden an, dass die Anzahl der betroffenen Datensätze nicht zurückgegeben werden soll, indem Sie *RecordsAffected* auf null-Zeiger festlegen. In diesem Fall ist der NULL-Zeiger kein fehlender Parameter, sondern ein Kennzeichen dafür, dass die Methode die Anzahl betroffener Datensätze verwerfen soll.
+Geben Sie für alle Methoden an, dass die Anzahl betroffener Datensätze nicht zurückgegeben werden soll, indem Sie *RecordsAffected* auf den NULL-Zeiger festlegen. In diesem Fall ist der NULL-Zeiger kein fehlender Parameter, sondern ein Kennzeichen dafür, dass die Methode die Anzahl betroffener Datensätze verwerfen soll.
 
 Deshalb können Sie für diese drei Methoden z. B. folgenden Code schreiben:
 
@@ -204,13 +204,13 @@ pRecordset->NextRecordset(NULL);
 
 ## <a name="error-handling"></a>Fehlerbehandlung
 
-In COM geben die meisten Vorgänge einen HRESULT-Rückgabecode, der angibt, ob eine Funktion erfolgreich abgeschlossen. Die ** \#importieren** Richtlinie generiert Wrappercode um jede "unformatierte" Methode oder Eigenschaft und überprüft den zurückgegebenen HRESULT. Wenn das HRESULT einen Fehler angibt, löst der Code einen COM-Fehler durch Aufrufen von \_com\_Problem\_errorex() mit dem HRESULT-Rückgabecode als Argument. Com-Error-Objekte abgefangen werden können, **versuchen Sie es**-**catch** -Block. (Aus Gründen der Effizienz catch einen Verweis auf ein ** \_com\_Fehler** -Objekt.)
+In COM, most operations return an HRESULT return code that indicates whether a function completed successfully. Die ** \#Import** -Direktive generiert Wrappercode um jede "rohe" Methode oder Eigenschaft und überprüft das zurückgegebene HRESULT. Wenn der HRESULT-Fehler angibt, löst der Wrappercode einen COM-Fehler \_aus\_,\_indem com-Problem errorex () mit dem HRESULT-Rückgabecode als Argument aufgerufen wird. COM error objects can be caught in a **try**-**catch** block. (Aus Effizienzgründen sollten Sie einen Verweis auf ein ** \_com\_Error** -Objekt abfangen.)
 
 Bedenken Sie, dass es sich dabei um ADO-Fehler handelt: Sie resultieren daraus, dass der ADO-Vorgang fehlschlägt. Fehler, die vom zugrunde liegenden Anbieter zurückgegeben werden, werden als **Error** -Objekte in der **Errors** -Auflistung des **Connection** -Objekt angezeigt.
 
-Die ** \#importieren** Richtlinie erstellt nur Fehler dadurch für Methoden und Eigenschaften, die in der ADO-DLL deklariert. Sie können jedoch den gleichen Mechanismus für die Fehlerbehandlung nutzen, indem Sie ein eigenes Makro oder eine Inlinefunktion für die Fehlerüberprüfung schreiben. Beispiele finden Sie im Thema [Visual C++-Erweiterungen](visual-c-extensions-for-ado.md) oder im Code in den folgenden Abschnitten.
+Die ** \#Import** -Direktive erstellt nur Fehlerbehandlungsroutinen für Methoden und Eigenschaften, die in der ADO. dll deklariert wurden. Sie können jedoch den gleichen Mechanismus für die Fehlerbehandlung nutzen, indem Sie ein eigenes Makro oder eine Inlinefunktion für die Fehlerüberprüfung schreiben. Beispiele finden Sie im Thema [Visual C++-Erweiterungen](visual-c-extensions-for-ado.md) oder im Code in den folgenden Abschnitten.
 
-## <a name="visual-c-equivalents-of-visual-basic-conventions"></a>Visual C++-Entsprechungen für Visual Basic-Konventionen
+## <a name="visual-c-equivalents-of-visual-basic-conventions"></a>Visual C++-Entsprechungen von Visual Basic-Konventionen
 
 Im Folgenden finden Sie eine Zusammenfassung verschiedener Konventionen in der ADO-Dokumentation, codiert in Visual Basic, sowie deren Entsprechungen in Visual C++.
 
@@ -223,14 +223,14 @@ In Visual Basic wird eine ADO-Objektvariable (in diesem Fall für ein **Recordse
 Dim rst As ADODB.Recordset 
 ```
 
-Die Klausel "ADODB. Recordset-Objekt"ist die ProgID des **Recordset** -Objekts an, wie in der Registrierung definiert. Eine neue Instanz eines **Record** -Objekts wird wie folgt deklariert:
+Die Klausel "ADODB. Recordset "ist die ProgID des **Recordset** -Objekts, wie in der Registrierung definiert. Eine neue Instanz eines **Record** -Objekts wird wie folgt deklariert:
 
 ```vb 
  
 Dim rst As New ADODB.Recordset 
 ```
 
-\-oder -
+\-oder
 
 ```vb 
  
@@ -238,21 +238,21 @@ Dim rst As ADODB.Recordset
 Set rst = New ADODB.Recordset 
 ```
 
-In Visual C++ die ** \#importieren** Richtlinie generiert intelligente Zeiger-Typ-Deklarationen für alle ADO-Objekte. Beispielsweise eine Variable, die auf zeigt eine ** \_Recordset** -Objekt ist vom Typ ** \_RecordsetPtr**, und wird wie folgt deklariert:
+In Visual C++ generiert die ** \#Import** -Direktive Smart Pointer-Type-Deklarationen für alle ADO-Objekte. Eine Variable, die auf ein ** \_Recordset** -Objekt zeigt, hat beispielsweise den Typ ** \_RecordsetPtr**und wird wie folgt deklariert:
 
 ```cpp 
  
 _RecordsetPtr rs; 
 ```
 
-Eine Variable, die auf eine neue Instanz des zeigt eine ** \_Recordset** Objekt wird wie folgt deklariert:
+Eine Variable, die auf eine neue Instanz eines ** \_Recordset** -Objekts verweist, wird wie folgt deklariert:
 
 ```cpp 
  
 _RecordsetPtr rs("ADODB.Recordset"); 
 ```
 
-\-oder -
+\-oder
 
 ```cpp 
  
@@ -260,7 +260,7 @@ _RecordsetPtr rs;
 rs.CreateInstance("ADODB.Recordset"); 
 ```
 
-\-oder -
+\-oder
 
 ```cpp 
  
@@ -275,15 +275,15 @@ Nachdem die **CreateInstance** -Methode aufgerufen wurde, kann die Variable wie 
 rs->Open(...); 
 ```
 
-Beachten Sie, dass in einem Fall der "." Operator wird verwendet, als wäre der Variablen eine Instanz einer Klasse (Rs. CreateInstance), und in einem anderen Fall die "-\>" Operator wird verwendet, als wären die Variable einen Zeiger auf eine Schnittstelle (Rs -\>öffnen).
+Beachten Sie, dass in einem Fall der "."-Operator verwendet wird, als ob die Variable eine Instanz einer Klasse (Rs. CreateInstance), und in einem anderen Fall wird der Operator "\>-" verwendet, als ob die Variable ein Zeiger auf eine Schnittstelle (RS-\>Open) wäre.
 
-Eine Variable kann auf zwei Arten verwendet werden, da die "-\>" Operator wird überladen, um eine Instanz einer Klasse wie ein Zeiger auf eine Schnittstelle Verhalten kann. Mitglied private-Klasse die Instanzvariable enthält einen Zeiger auf die ** \_Recordset** Schnittstelle. die "-\>" Operator zurückgibt, Zeiger; und der zurückgegebene Zeiger greift auf die Mitglieder der ** \_Recordset** Objekt.
+Eine Variable kann auf zweierlei Weise verwendet werden, da der\>Operator "-" überlastet ist, damit eine Instanz einer Klasse sich wie ein Zeiger auf eine Schnittstelle verhält. Ein privates Klassenmember der Instanzenvariablen enthält einen Zeiger auf die ** \_Recordset** -Schnittstelle; der Operator "\>-" gibt diesen Zeiger zurück; und der zurückgegebene Zeiger greift auf die Member des ** \_Recordset** -Objekts zu.
 
 ### <a name="coding-a-missing-parameter"></a>Codieren eines fehlenden Parameters
 
 #### <a name="string"></a>Zeichenfolge
 
-Wenn Sie einen fehlenden **String** -Operanden in Visual Basic codieren müssen, lassen Sie lediglich den Operanden aus. Sie müssen den Operanden in Visual C++ angeben. Code ein ** \_Bstr\_t** , die eine leere Zeichenfolge als Wert hat.
+Wenn Sie einen fehlenden **String** -Operanden in Visual Basic codieren müssen, lassen Sie lediglich den Operanden aus. Sie müssen den Operanden in Visual C++ angeben. Codieren Sie ** \_eine\_BSTR-t** , die eine leere Zeichenfolge als Wert aufweist.
 
 ```cpp 
  
@@ -292,21 +292,21 @@ _bstr_t strMissing(L"");
 
 #### <a name="variant"></a>Variant
 
-Wenn Sie einen fehlenden **Variant** Operanden in Visual Basic codieren müssen, lassen Sie lediglich den Operanden. Sie müssen alle Operanden in Visual C++ angeben. Codieren ein fehlenden Parameters **Variant-Wert** mit einer ** \_Variant\_t** legen Sie den speziellen Wert, Verschiebung\_E\_PARAMNOTFOUND und Typ, VT\_Fehler. Geben Sie alternativ **VtMissing**, die Entsprechung ist vordefinierte Konstante von bereitgestellt wird, die ** \#importieren** Richtlinie.
+When you need to code a missing **Variant** operand in Visual Basic, you merely omit the operand. You must specify all operands in Visual C++. Codieren eines fehlenden **Variant** -Parameters mit einem ** \_\_** Wert vom Typ "Special"\_,\_"Dispo E PARAMNOTFOUND" und\_"Type", VT Error. Alternativ können Sie **vtMissing**angeben, die eine äquivalente vordefinierte Konstante ist, die von der ** \#Import** -Direktive bereitgestellt wird.
 
 ```cpp 
  
 _variant_t vtMissingYours(DISP_E_PARAMNOTFOUND, VT_ERROR); 
 ```
 
-\-oder verwenden Sie-
+\-oder use-
 
 ```cpp 
  
 ...vtMissing...; 
 ```
 
-### <a name="declaring-a-variant"></a>Deklarieren ein Variant-Wert
+### <a name="declaring-a-variant"></a>Deklarieren eines Variant-Werts
 
 In Visual Basic wird ein **Variant** -Wert wie folgt mit der **Dim** -Anweisung deklariert:
 
@@ -315,7 +315,7 @@ In Visual Basic wird ein **Variant** -Wert wie folgt mit der **Dim** -Anweisung 
 Dim VariableName As Variant 
 ```
 
-Deklarieren Sie eine Variable als Typ in Visual C++ ** \_Variant\_t**. Einige schematische Darstellung ** \_Variant\_t** Deklarationen sind unten aufgeführt.
+Deklarieren Sie in Visual C++ eine Variable als Typ ** \_Variant\_t**. Nachfolgend finden Sie einige schematische ** \_Variante\_t** -Deklarationen.
 
 > [!NOTE]
 > [!HINWEIS] Diese Deklarationen geben Ihnen lediglich eine ungefähre Vorstellung davon, was Sie in Ihrem eigenen Programm codieren können. Weitere Informationen finden Sie in den Beispielen unten und in der Visual C++-Dokumentation.
@@ -350,12 +350,12 @@ cn.Close
 End Sub 
 ```
 
-Im folgenden Visual C++-Beispiel veranschaulicht die Verwendung von **SafeArray** mit verwendet eine ** \_Variant\_t**.
+Im folgenden Visual C++-Beispiel wird die **** Verwendung eines SAFEARRAYs veranschaulicht, das mit einem ** \_Variant\_**-Wert von t verwendet wird.
 
 > [!NOTE]
-> [!HINWEIS] Die folgenden Hinweise entsprechen kommentierten Abschnitten im Codebeispiel.
+> Die folgenden Hinweise entsprechen kommentierten Abschnitten im Codebeispiel.
 
-1. Auch hier wird die TESTHR()-Inlinefunktion definiert, um den vorhandenen Mechanismus für die Fehlerbehandlung zu nutzen.
+1. Once again, the TESTHR() inline function is defined to take advantage of the existing error-handling mechanism.
 
 2. Sie benötigen nur ein eindimensionales Array, sodass Sie **SafeArrayCreateVector** verwenden können, statt der allgemeinen **SAFEARRAYBOUND** -Deklaration und der **SafeArrayCreate** -Funktion. Der Code würde wie folgt aussehen, wenn **SafeArrayCreate** verwendet wird:
     
@@ -367,9 +367,9 @@ Im folgenden Visual C++-Beispiel veranschaulicht die Verwendung von **SafeArray*
      pSa = SafeArrayCreate(VT_VARIANT, 1, sabound); 
    ```
 
-3. Das Schema, identifiziert durch die enumerierte Konstante **AdSchemaColumns**, vier Einschränkungsspalten zugeordnet ist: Tabelle\_Katalog, Tabelle\_SCHEMA, Tabelle\_Namen und Spalte\_NAME. Aus diesem Grund wird ein Array von **Variant** -Werten mit vier Elementen erstellt. Klicken Sie dann einen Einschränkungswert, die die dritte Spalte, Tabelle entspricht\_NAME angegeben ist. Das **Recordset-Objekt** , das zurückgegeben wird besteht aus mehreren Spalten, die eine, die Teilmenge der Einschränkungsspalten ist. Die Werte der Einschränkungsspalten für jede Zeile zurückgegebene muss die entsprechende Einschränkungswerte identisch.
+3. Das durch die aufgezählte Konstante, **adSchemaColumns**, angegebene Schema ist mit vier Einschränkungsspalten verknüpft\_: Tabellenkatalog\_, Tabellenschema\_, Tabellenname und\_Spaltenname. Therefore, an array of **Variant** values with four elements is created. Dann wird ein Einschränkungswert angegeben, der der dritten Spalte\_, dem Tabellennamen entspricht. The **Recordset** that is returned consists of several columns, a subset of which is the constraint columns. The values of the constraint columns for each returned row must be the same as the corresponding constraint values.
 
-4. Mit **SAFEARRAY** vertraut sind möglicherweise überrascht sein, dass **SafeArrayDestroy()** nicht vor dem Exit aufgerufen wird. Tatsächlich wird **SafeArrayDestroy()** Aufrufen in diesem Fall eine Laufzeit-Ausnahme ausgelöst. Der Grund dafür besteht darin, dass der Destruktor für VtCriteria soll ( **VariantClear aufgerufen werden**) Wenn der ** \_Variant\_t** wechselt außerhalb des Gültigkeitsbereichs, **SafeArray**freigegeben wird. Aufrufen von **SafeArrayDestroy**, ohne manuell löschen der ** \_Variant-Wert\_t**, würde den Destruktor versuchen, einen ungültigen **SafeArray** Zeiger zu löschen. Wenn **SafeArrayDestroy** aufgerufen wird, würde der Code wie folgt aussehen:
+4. Wenn Sie mit **SafeArrays** vertraut sind, überrascht es Sie möglicherweise, dass **SafeArrayDestroy()** nicht vor dem Ende aufgerufen wird. Tatsächlich wird durch den Aufruf von **SafeArrayDestroy()** in diesem Fall eine Laufzeitausnahme verursacht. Der Grund ist, dass der Destruktor für vtCriteria **VariantClear**() aufrufen wird, wenn der ** \_Variant\_** -Wert aus dem Gültigkeitsbereich wechselt, wodurch das **SAFEARRAY**freigegeben wird. Der Aufruf von **SafeArrayDestroy**, ohne die ** \_Variante\_t**manuell zu löschen, würde dazu führen, dass der Destruktor versucht, einen ungültigen **SAFEARRAY** -Zeiger zu löschen. Wenn **SafeArrayDestroy** aufgerufen wird, würde der Code wie folgt aussehen:
     
    ```cpp 
      
@@ -378,7 +378,7 @@ Im folgenden Visual C++-Beispiel veranschaulicht die Verwendung von **SafeArray*
      vtCriteria.parray = NULL; 
    ```
     
-   Es ist jedoch viel einfacher, lassen Sie die ** \_Variant\_t** **SafeArray**verwalten.
+   Es ist jedoch viel einfacher, die ** \_\_Variante t** mit **SAFEARRAY**zu verwalten.
 
 
 ```cpp 
@@ -441,7 +441,7 @@ Im folgenden Visual C++-Beispiel veranschaulicht die Verwendung von **SafeArray*
     } 
 ```
 
-### <a name="using-property-getputputref"></a>Verwenden Get/Put/PutRef-Eigenschaft
+### <a name="using-property-getputputref"></a>Verwenden der Eigenschaft Get/Put/PutRef
 
 In Visual Basic wird der Name einer Eigenschaft nicht dadurch qualifiziert, ob sie abgerufen oder zugewiesen wird bzw. ob ihr ein Verweis zugewiesen wurde.
 
@@ -462,14 +462,14 @@ In Visual Basic wird der Name einer Eigenschaft nicht dadurch qualifiziert, ob s
     End Sub
 ```
 
-In diesem Visual C++-Beispiel wird gezeigt, **Abrufen**/**platzieren**/**PutRef *** Eigenschaft*.
+In diesem Visual C++-Beispiel wird die **Get**/**Put**/**-PutRef * * *-Eigenschaft*veranschaulicht.
 
 > [!NOTE]
 > [!HINWEIS] Die folgenden Hinweise entsprechen kommentierten Abschnitten im Codebeispiel.
 
-1. In diesem Beispiel werden zwei Arten von einem fehlenden Zeichenfolgenargument: eine explizite Konstante, **StrMissing**und eine Zeichenfolge, die der Compiler erstellen einen temporären ** \_Bstr\_t** vorhanden, die für den Bereich der **Open** -Methode.
+1. In diesem Beispiel werden zwei Formen eines fehlenden Zeichenfolgenarguments verwendet: eine explizite Konstante, **strMissing**und eine Zeichenfolge, mit der der Compiler einen temporären ** \_\_BSTR t** erstellt, der für den Bereich der **Open** -Methode vorhanden ist.
 
-2. Es ist nicht erforderlich, das Umwandeln des Operanden von Rs -\>PutRefActiveConnection(cn) an (IDispatch \*), da der Operand bereits ist (IDispatch \*).
+2. Es ist nicht erforderlich, den Operanden von RS\>-PutRefActiveConnection (CN) in ( \*IDispatch) umzuwandeln, da der Typ des Operanden bereits \*(IDispatch) ist.
     
    ```cpp 
      
@@ -518,7 +518,7 @@ In diesem Visual C++-Beispiel wird gezeigt, **Abrufen**/**platzieren**/**PutRef 
     } 
    ```
 
-### <a name="using-getitemx-and-itemx"></a>Mithilfe von "GetItem(x)" und "Item\[x\]
+### <a name="using-getitemx-and-itemx"></a>Verwenden von GetItem (x)\[und Item x\]
 
 Mit diesem Visual Basic-Beispiel wird die standardmäßige und die alternative Syntax für **Item()** dargestellt.
 
@@ -593,14 +593,14 @@ Mit diesem Visual C++-Beispiel wird **Item** dargestellt.
 
 ### <a name="casting-ado-object-pointers-with-idispatch-"></a>Umwandeln von ADO-Objektzeigern mit "(IDispatch \*)"
 
-Im folgenden Visual C++-Beispiel veranschaulicht die Verwendung (IDispatch \*) zu Cast ADO-Objektzeigern veranschaulicht.
+The following Visual C++ example demonstrates using (IDispatch \*) to cast ADO object pointers.
 
 > [!NOTE]
 > [!HINWEIS] Die folgenden Hinweise entsprechen kommentierten Abschnitten im Codebeispiel.
 
-1. Geben Sie ein geöffnetes **Connection** -Objekt in einer explizit codierten- **Variant**. Wandeln sie mit (IDispatch \*), damit der richtige Konstruktor aufgerufen wird. Auch explizit festlegen, die zweite ** \_Variant\_t** Parameter auf den Standardwert **true**, so dass der Referenzzähler Objekt am Ende des Vorgangs **Open** korrekt.
+1. Specify an open **Connection** object in an explicitly coded **Variant**. Cast it with (IDispatch \*), sodass der richtige Konstruktor aufgerufen wird. Legen Sie außerdem explizit den zweiten ** \_Variant\_** -Parameter auf den Standardwert **true**fest, sodass die Objektverweis Anzahl korrekt ist, wenn das **Recordset:: Open** -Vorgang beendet wird.
 
-2. Der Ausdruck (\_Bstr\_t), wird nicht umgewandelt, aber ein ** \_Variant-Wert\_t** Operator, der extrahiert ein ** \_Bstr\_t** Zeichenfolge aus der zurückgegebene **Wert** **Variant-Wert** . Der Ausdruck (Char\*), wird nicht umgewandelt, aber ein ** \_Bstr\_t** Operator, der einen Zeiger in die gekapselte Zeichenfolge in extrahiert ein ** \_Bstr\_t** Objekt. In diesem Abschnitt werden einige nützliche Verhaltensweisen von veranschaulicht ** \_Variant\_t** und ** \_Bstr\_t** Operatoren.
+2. \_Der Ausdruck (BSTR\_t) ist keine Umwandlung, sondern ein ** \_Variant\_** -Operator, der eine ** \_BSTR\_t** -Zeichenfolge aus dem von value zurückgegebenen **Variant** - **Wert**extrahiert. Der Ausdruck (Char\*) ist keine Umwandlung, sondern ein ** \_BSTR\_t** -Operator, der einen Zeiger auf die gekapselte Zeichenfolge in einem ** \_BSTR\_t** -Objekt extrahiert. In diesem Codeabschnitt werden einige der nützlichen Verhaltensweisen von ** \_Variant\_t** - ** \_und\_BSTR t** -Operatoren veranschaulicht.
     
    ```cpp 
      

@@ -1,5 +1,5 @@
 ---
-title: Workspace.IsolateODBCTrans-Eigenschaft (DAO)
+title: Workspace. IsolateODBCTrans-Eigenschaft (DAO)
 TOCTitle: IsolateODBCTrans Property
 ms:assetid: f7a48358-870b-cad3-d4ef-e46b50428e12
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836924(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 781679dfbd4050cfde219802db4cd9e1544d83ae
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302513"
 ---
-# <a name="workspaceisolateodbctrans-property-dao"></a>Workspace.IsolateODBCTrans-Eigenschaft (DAO)
+# <a name="workspaceisolateodbctrans-property-dao"></a>Workspace. IsolateODBCTrans-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert fest, der angibt, ob mehrere Transaktionen, die dieselbe mit der Microsoft Access-Datenbank-Engine verbundene ODBC-Datenquelle verwenden, isoliert sind, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).
 

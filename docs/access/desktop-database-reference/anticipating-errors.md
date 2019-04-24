@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c4bd130ca05527c7761ca587781c1fd4f939ebe9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297172"
 ---
 # <a name="anticipating-errors"></a>Vorhersehen von Fehlern
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Die Fehlervermeidung ist mindestens so wichtig wie die Fehlerbehandlung. Dieser letzte Abschnitt enthält eine kurze Aufstellung der Vorsichtsmaßnahmen für Ihre Anwendung, um die Wahrscheinlichkeit von Fehlern zu reduzieren.
 
@@ -27,7 +27,7 @@ Die Fehlervermeidung ist mindestens so wichtig wie die Fehlerbehandlung. Dieser 
 
 Überprüfen Sie die Daten, bevor Sie versuchen, Daten in den Datenspeicher zu schreiben. Dazu verwenden Sie am einfachsten das Ereignis **WillMove** oder **WillUpdateRecordset**. Ausführlichere Informationen zum Behandeln von ADO-Ereignissen finden Sie in [Kapitel 7: Behandeln von ADO-Ereignissen](chapter-7-handling-ado-events.md).
 
-Stellen Sie sicher, dass Recordset-Objekte nicht außerhalb der Begrenzungen des Recordset-Objekts liegen, bevor Sie versuchen den Datensatzzeiger zu verschieben. Ein Fehler tritt auf, falls Sie versuchen MoveNext auszuführen, wenn EOF gleich True ist, oder MovePrev, wenn BOF gleich True ist. Falls Sie eine der Move-Methoden ausführen, wenn sowohl EOF als auch BOF gleich True sind, wird ein Fehler generiert.
+Make sure that **Recordset** objects are not beyond the boundaries of the **Recordset** before attempting to move the record pointer. If you try to **MoveNext** when **EOF** is True or **MovePrev** when **BOF** is True, an error will occur. If you perform any of the **Move** methods when both **EOF** and **BOF** are True, an error will be generated.
 
-Fehler treten ebenfalls auf, wenn Sie z. B. versuchen, **Seek** oder **Find** für ein leeres **Recordset** -Objekt auszuführen.
+Fehler treten ebenfalls auf, wenn Sie z. B. versuchen, **Seek** oder **Find** für ein leeres **Recordset**-Objekt auszuführen.
 

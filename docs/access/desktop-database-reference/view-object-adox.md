@@ -1,5 +1,5 @@
 ---
-title: View-Objekt (ADOX - Access-desktop-Datenbank (engl.))
+title: View-Objekt (ADOX-Access-Desktop-Daten Bankreferenz)
 TOCTitle: View object (ADOX)
 ms:assetid: 3b2e9972-8a0d-eaa3-1c93-ae0665a47f02
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249149(v=office.15)
@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b3b5d25a727233b5fda5627df8dff952003bbfe3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306049"
 ---
 # <a name="view-object-adox"></a>View-Objekt (ADOX)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt eine gefilterte Datensatzgruppe oder eine virtuelle Tabelle dar. Wenn es in Verbindung mit dem ADO-Objekt [Command](command-object-ado.md) verwendet wird, kann das **View** -Objekt zum Hinzufügen, Löschen oder Ändern von Sichten verwendet werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Sicht ist eine virtuelle Tabelle, die aus anderen Datenbanktabellen oder -sichten erstellt wird. Mit dem **View** -Objekt können Sie eine Sicht erstellen, ohne die CREATE VIEW-Syntax des Anbieters zu kennen oder zu verwenden.
 

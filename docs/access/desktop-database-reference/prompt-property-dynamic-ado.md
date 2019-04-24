@@ -1,5 +1,5 @@
 ---
-title: Prompt dynamische-Eigenschaft (ADO)
+title: Refrom Dynamic Property (ADO)
 TOCTitle: Prompt dynamic property (ADO)
 ms:assetid: 6c899b03-1d1f-a81f-dc17-7205a0230af9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249428(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 261ac5640b5239f27ad91e01d1cb23794f88740a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301323"
 ---
-# <a name="prompt-dynamic-property-ado"></a>Prompt dynamische-Eigenschaft (ADO)
+# <a name="prompt-dynamic-property-ado"></a>Refrom Dynamic Property (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt an, ob der OLE DB-Anbieter den Benutzer zur Eingabe von Initialisierungsinformationen auffordern soll.
+Es wird angegeben, ob der OLE DB-Anbieter den Benutzer zur Angabe von Initialisierungsinformationen auffordern sollte.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
 Mit dieser Eigenschaft wird ein [ConnectPromptEnum](connectpromptenum.md)-Wert festgelegt und zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **Prompt** ist eine dynamische Eigenschaft, die vom OLE DB-Anbieter an die [Properties](connection-object-ado.md)-Auflistung des [Connection](properties-collection-ado.md)-Objekts angefügt werden kann. Für die Aufforderung zur Eingabe von Initialisierungsinformationen zeigen OLE DB-Anbieter dem Benutzer normalerweise ein Dialogfeld an.
 

@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 268ea9636ff60f509167889791a852a8cca79ca1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303227"
 ---
 # <a name="querydefs-methods-dao"></a>QueryDefs-Methoden (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-- [QueryDefs.Append-Methode (DAO)](querydefs-append-method-dao.md)
-- [QueryDefs.Delete-Methode (DAO)](querydefs-delete-method-dao.md)
-- [QueryDefs.Refresh-Methode (DAO)](querydefs-refresh-method-dao.md)
+- [QueryDefs. Append-Methode (DAO)](querydefs-append-method-dao.md)
+- [QueryDefs. Delete-Methode (DAO)](querydefs-delete-method-dao.md)
+- [QueryDefs. Refresh-Methode (DAO)](querydefs-refresh-method-dao.md)
 

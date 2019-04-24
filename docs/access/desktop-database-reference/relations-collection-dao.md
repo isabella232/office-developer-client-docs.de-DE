@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fc60e36abbb353a178864b488a738fcf3247e1a1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306972"
 ---
 # <a name="relations-collection-dao"></a>Relations-Auflistung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Eine **Relations**-Auflistung enthält gespeicherte **Relation**-Objekte für ein **Database**-Objekt (nur für Microsoft Access-Datenbanken).
+Eine **Relations**-Auflistung enthält gespeicherte **Relation**-Objekte für ein **Database**-Objekt (gilt nur für Microsoft Access-Datenbanken).
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -29,13 +29,13 @@ Der Verweis auf ein **Relation**-Objekt in einer Auflistung erfolgt über dessen
 
 **Relations**(0)
 
-**Relations** ("Name")
+**Beziehungen** ("Name")
 
-**Relations**\!\[Namen\]
+**Beziehungs**\!\[Name\]
 
 ## <a name="example"></a>Beispiel
 
-Diese Beispiel zeigt, wie ein vorhandenes **Relation**-Objekt die Dateneingabe steuern kann. Die Prozedur versucht mit einer bewusst falschen Kategorienummer (CategoryID) einen Datensatz hinzuzufügen. Dadurch wird die Fehlerbehandlungsroutine ausgelöst.
+This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.
 
 ```vb
     Sub RelationX() 
@@ -96,7 +96,7 @@ Diese Beispiel zeigt, wie ein vorhandenes **Relation**-Objekt die Dateneingabe s
 
 <br/>
 
-In diesem Beispiel wird die **CreateRelation** -Methode zum Erstellen einer **Beziehung** zwischen Mitarbeitern **TableDef** und ein neues **TableDef** Abteilungen aufgerufen. Es wird veranschaulicht, wie Erstellen einer neuen **Relation** auch alle erforderlichen **Indizes** in der Fremdtabelle (DepartmentsEmployees Index in der Employees-Tabelle) erstellt werden.
+This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. Außerdem wird gezeigt, wie die Erstellung einer neuen **Beziehung** alle erforderlichen **Indizes** in der Fremdtabelle (der DepartmentsEmployees-Index in der Employees-Tabelle) erstellt.
 
 ```vb
     Sub CreateRelationX() 

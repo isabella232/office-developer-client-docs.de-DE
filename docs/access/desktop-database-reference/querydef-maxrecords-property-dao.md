@@ -1,5 +1,5 @@
 ---
-title: QueryDef.MaxRecords-Eigenschaft (DAO)
+title: QueryDef. MaxRecords-Eigenschaft (DAO)
 TOCTitle: MaxRecords Property
 ms:assetid: 7492cde9-be30-3473-dabc-9602465910d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195877(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 6738762ba18289293c67392d47e278066ead071d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301078"
 ---
-# <a name="querydefmaxrecords-property-dao"></a>QueryDef.MaxRecords-Eigenschaft (DAO)
+# <a name="querydefmaxrecords-property-dao"></a>QueryDef. MaxRecords-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt die maximale Anzahl von Datensätzen fest, die von einer Abfrage an eine ODBC-Datenquelle zurückgegeben werden sollen, oder gibt den betreffenden Wert zurück.
 
@@ -32,7 +32,7 @@ Legt die maximale Anzahl von Datensätzen fest, die von einer Abfrage an eine OD
 
 ## <a name="remarks"></a>Bemerkungen
 
-Der Standardwert ist 0. Bei diesem Wert gibt es keine Beschränkung der Anzahl der zurückzugebenden Datensätze.
+The default value is 0, indicating no limit on the number of records returned.
 
 Wenn die von **MaxRecords** festgelegte Anzahl der Zeilen an die Anwendung in einem **[Recordset](recordset-object-dao.md)** -Objekt zurückgegeben wird, beendet der Abfrageprozessor die Rückgabe der Datensätze, selbst wenn noch weitere Datensätze in das **Recordset** einbezogen werden sollten. Diese Eigenschaft ist nützlich, wenn beschränkte Clientressourcen die Verarbeitung einer großen Anzahl von Datensätzen nicht zulassen.
 

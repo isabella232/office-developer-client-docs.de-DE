@@ -12,25 +12,25 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 791803bb8935ffab24e5aed7e4e6a77360e82b65
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296675"
 ---
 # <a name="cancel-method-ado"></a>Cancel-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Bricht die Ausführung eines ausstehenden asynchronen Methodenaufrufs ab.
+Die Ausführung eines ausstehenden asynchronen Methodenaufrufs wird abgebrochen.
 
 ## <a name="syntax"></a>Syntax
 
 - *Objekt*. Abbrechen
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **Cancel** -Methode, um die Ausführung eines asynchronen Methodenaufrufs (d. h. einer mit der Option **adAsyncConnect**, **adAsyncExecute** oder **adAsyncFetch** aufgerufenen Methode) zu beenden.
+Verwenden Sie die **Cancel**-Methode, um die Ausführung eines asynchronen Methodenaufrufs (d. h. einer mit der Option **adAsyncConnect**, **adAsyncExecute** oder **adAsyncFetch** aufgerufenen Methode) zu beenden.
 
 In der folgenden Tabelle wird gezeigt, welcher Task beendet wird, wenn Sie die **Cancel** -Methode für einen bestimmten Objekttyp verwenden.
 
@@ -48,8 +48,8 @@ In der folgenden Tabelle wird gezeigt, welcher Task beendet wird, wenn Sie die *
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="command-object-ado.md">Command</a></p></td>
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command">Ausführen</a></p></td>
+<td><p><a href="command-object-ado.md">Befehl</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command">Execute</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="connection-object-ado.md">Connection</a></p></td>

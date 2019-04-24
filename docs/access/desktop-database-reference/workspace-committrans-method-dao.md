@@ -1,5 +1,5 @@
 ---
-title: Workspace.CommitTrans-Methode (DAO)
+title: Workspace. CommitTrans-Methode (DAO)
 TOCTitle: CommitTrans Method
 ms:assetid: e6d129fb-a578-5c79-9c16-6444519f0daf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835985(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 52af229f03b7ea10510f3e580ba2c4e12784e461
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306034"
 ---
-# <a name="workspacecommittrans-method-dao"></a>Workspace.CommitTrans-Methode (DAO)
+# <a name="workspacecommittrans-method-dao"></a>Workspace. CommitTrans-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Beendet die aktuelle Transaktion und speichert die Änderungen.
 
@@ -38,7 +38,7 @@ Beendet die aktuelle Transaktion und speichert die Änderungen.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -71,9 +71,9 @@ Wenn Sie ein **Workspace**-Objekt schließen, ohne ausstehende Transaktionen auf
 
 Wenn Sie die **CommitTrans**- oder **Rollback**-Methode verwenden, ohne vorher die **BeginTrans**-Methode verwendet zu haben, tritt ein Fehler auf.
 
-Einige ISAM-Datenbanken, die in einem Microsoft Access-Arbeitsbereich verwendet unterstützen möglicherweise keine Transaktionen, in diesem Fall wird die **Transactions** -Eigenschaft des **Database** -Objekt oder **Recordset** -Objekts **False**. Überprüfen Sie den Wert der **Transaktionen** -Eigenschaft des **Database** -Objekts, um sicherzustellen, dass die Datenbank Transaktionen unterstützt, bevor Sie die **BeginTrans** -Methode verwenden. Wenn Sie ein **Recordset** -Objekt basierend auf mehrere Datenbanken verwenden, überprüfen Sie die **Transactions** -Eigenschaft des **Recordset** -Objekts. 
+Einige ISAM-Datenbanken, die in einem Microsoft Access-Arbeitsbereich verwendet werden, unter **** stützen möglicherweise keine Transaktionen, in diesem Fall ist die Transactions-Eigenschaft des **Database** -Objekts oder **Recordset** -Objekts **false**. Um sicherzustellen, dass die Datenbank Transaktionen unterstützt, überprüfen **** Sie den Wert der Transactions-Eigenschaft des **Database** -Objekts, bevor Sie die BeginTrans-Methode verwenden. **** Wenn Sie ein **Recordset** -Objekt basierend auf mehr als einer Datenbank verwenden, überprüfen Sie die Transactions-Eigenschaft des **Recordset** -Objekts. **** 
 
-Wenn ein **Recordset** vollständig auf Tabellen des Microsoft Access-Datenbankmoduls basiert, können Sie immer Transaktionen verwenden. **Recordset** -Objekte auf Tabellen, die von anderen Datenbankprodukten erstellt wurde, jedoch basieren, möglicherweise Transaktionen nicht unterstützt. Sie können nicht beispielsweise Transaktionen in einem **Recordset-Objekt** basierend auf einer Paradox-Tabelle verwenden. In diesem Fall wird die **Transactions** -Eigenschaft **False**. Wenn die **Datenbank** oder **Recordset-Objekt** nicht Transaktionen unterstützt, die Methoden werden ignoriert, und tritt kein Fehler auf.
+Wenn ein **Recordset** -Objekt vollständig auf Tabellen des Microsoft Access-Datenbankmoduls basiert, können Sie immer Transaktionen verwenden. **Recordset** -Objekte, die auf Tabellen basieren, die von anderen Datenbankprodukten erstellt wurden, unterstützen jedoch möglicherweise keine Transaktionen. Sie können beispielsweise keine Transaktionen in einem **Recordset** basierend auf einer Paradox-Tabelle verwenden. In diesem Fall ist die **** Transactions-Eigenschaft auf **false festgelegt**. Wenn die **Datenbank** oder das **Recordset** -Objekt keine Transaktionen unterstützt, werden die Methoden ignoriert, und es tritt kein Fehler auf.
 
 Wenn Sie über das Microsoft Access-Datenbankmodul auf ODBC-Datenquellen zugreifen, können Sie Transaktionen nicht schachteln.
 
@@ -88,7 +88,7 @@ Wenn Sie in ODBC-Arbeitsbereichen **CommitTrans** verwenden, ist der Cursor mög
 
 Im folgenden Beispiel wird aufgezeigt, wie eine Transaktion in einem Data Access Objects (DAO)-Arbeitsbereich verwendet werden kann.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 
 ```vb

@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 5ed20555726d0a6f63f0e48fb154cedb411ef8cd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306846"
 ---
 # <a name="transfersqldatabase-macro-action"></a>TransferSQLDatenbank-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Verwenden Sie in einem Access-Projekt die **TransferSQLDatenbank** -Aktion, um eine Microsoft SQL Server-Datenbank der Version 7.0 oder höher zu übertragen. Weitere Informationen zum Transferieren einer Datenbank finden Sie in der Dokumentation zu SQL Server.
+Verwenden Sie in einem Access-Projekt die **TransferSQLDatenbank** -Aktion, um eine Microsoft SQL Server-Datenbank der Version 7.0 oder höher zu übertragen. Weitere Informationen zum Übertragen einer Datenbank finden Sie in der SQL Server-Dokumentation.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist.
 
 ## <a name="setting"></a>Einstellung
 
-Die **TransferSQLDatenbank** -Aktion hat die folgenden Argumente.
+Die **TransferSQLDatenbank**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -53,10 +53,10 @@ Die **TransferSQLDatenbank** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Vertrauenswürdige Verbindung verwenden</strong></p></td>
-<td><p>Gibt an ist, ob eine vertrauenswürdige Verbindung zu SQL Server nicht vorhanden. Wenn legen Sie auf <strong>Ja</strong>, und klicken Sie dann eine vertrauenswürdige Verbindung vorhanden ist und die Argumente <strong>Benutzername</strong> und <strong>Kennwort</strong> nicht erforderlich sind. Wenn Sie auf <strong>Nein</strong>, den <strong>Benutzernamen</strong> und <strong>das Kennwort</strong> Argumente erforderlich sind. Die Standardeinstellung ist <strong>Ja</strong>. Wenn Sie eine vertrauenswürdige Verbindung verwenden, ist SQL Server-Sicherheit in die Sicherheit des Betriebssystems Windows anzugebende eine einzige Anmeldung am Netzwerk und die Datenbank integriert.</p></td>
+<td><p>Angibt, ob eine vertrauenswürdige Verbindung mit dem SQL Server besteht. Wenn dieser Wert auf <strong>Ja</strong>festgelegt ist, gibt es eine vertrauenswürdige Verbindung, und die Argumente <strong>Login</strong> und <strong>Password</strong> sind nicht erforderlich. Wenn der Wert auf <strong>Nein</strong>festgelegt ist, sind die Argumente <strong>Login</strong> und <strong>Password</strong> erforderlich. Die Standardeinstellung ist <strong>Ja</strong>. Wenn Sie eine vertrauenswürdige Verbindung verwenden, wird die SQL Server-Sicherheit in die Sicherheit des Windows-Betriebssystems integriert, um eine einzige Anmeldung am Netzwerk und der Datenbank bereitzustellen.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Benutzername</strong></p></td>
+<td><p><strong>Login</strong></p></td>
 <td><p>Der Anmeldename für den Zielserver.</p></td>
 </tr>
 <tr class="odd">
@@ -71,7 +71,7 @@ Die **TransferSQLDatenbank** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Während des Datenbanktransfers können keine weiteren Vorgänge ausgeführt werden.
 
@@ -79,7 +79,7 @@ Die **TransferSQLDatenbank** -Aktion kopiert standardmäßig Daten, Datendefinit
 
 Voraussetzungen für das Transferieren einer Datenbank:
 
-- Sie müssen auf dem Zielserver ein Mitglied der Rolle sysadmin sein. (Auf dem Quellserver ist keine spezielle Rolle erforderlich.)
+- You must be a member of the sysadmin role on the destination server (No special role is required on the source server).
 
 - Der aktuelle SQL Server, der mit dem Access-Projekt verbunden ist, und der Zielserver, an den Sie die Datenbank transferieren, müssen SQL Server, Version 7.0 oder höher, sein.
 

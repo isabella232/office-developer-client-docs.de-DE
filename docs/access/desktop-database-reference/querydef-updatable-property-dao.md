@@ -1,5 +1,5 @@
 ---
-title: QueryDef.Updatable-Eigenschaft (DAO)
+title: QueryDef. aktualisierbare Eigenschaft (DAO)
 TOCTitle: Updatable Property
 ms:assetid: 9b978b7d-1d76-ff27-a032-dd94660fb088
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198056(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c5321e834f1dd5ed663033cacb530962d7beeb5a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303332"
 ---
-# <a name="querydefupdatable-property-dao"></a>QueryDef.Updatable-Eigenschaft (DAO)
+# <a name="querydefupdatable-property-dao"></a>QueryDef. aktualisierbare Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. Schreibgeschützter **Boolean**-Wert.
 

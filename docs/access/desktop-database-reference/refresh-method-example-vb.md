@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1ac2613bb0bd60bffb6e547c7372e76e32f4b6ce
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307082"
 ---
 # <a name="refresh-method-example-vb"></a>Refresh-Methode (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der [Refresh](refresh-method-ado.md)-Methode zum Aktualisieren der [Parameters](parameters-collection-ado.md)-Auflistung für das [Command](command-object-ado.md)-Objekt einer gespeicherten Prozedur veranschaulicht.
 

@@ -1,5 +1,5 @@
 ---
-title: DBEngine.SetOption-Methode (DAO)
+title: DbEngine. SetOption-Methode (DAO)
 TOCTitle: SetOption Method
 ms:assetid: ea55c10c-2385-1b7e-0cba-32982c9b6643
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836236(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 5875a8935b1b44c3c36b29344af32df552f6e01c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294197"
 ---
-# <a name="dbenginesetoption-method-dao"></a>DBEngine.SetOption-Methode (DAO)
+# <a name="dbenginesetoption-method-dao"></a>DbEngine. SetOption-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Werte für die Schlüssel des Microsoft Access-Datenbankmoduls werden in der Windows-Registrierung temporär überschrieben (gilt nur für Microsoft Access-Arbeitsbereiche).
 
@@ -42,7 +42,7 @@ Werte für die Schlüssel des Microsoft Access-Datenbankmoduls werden in der Win
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -55,10 +55,10 @@ Werte für die Schlüssel des Microsoft Access-Datenbankmoduls werden in der Win
 <td><p>Eine Konstante, wie unter "Hinweise" beschrieben.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Wert</em></p></td>
+<td><p><em>Value</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Der Wert, den Sie Option festlegen möchten.</p></td>
+<td><p>Der Wert, auf den die Option festgelegt werden soll.</p></td>
 </tr>
 </tbody>
 </table>
@@ -66,7 +66,7 @@ Werte für die Schlüssel des Microsoft Access-Datenbankmoduls werden in der Win
 
 ## <a name="remarks"></a>Bemerkungen
 
-Jede Konstante bezieht sich auf den entsprechenden Registrierungsschlüssel im Pfad HKEY\_lokale\_Computer\\SOFTWARE\\Microsoft\\Office\\12.0\\Konnektivitätsmodul für Access\\Module\\(d. h., ACE **DbSharedAsyncDelay** entspricht dem Schlüssel HKEY\_lokale\_Computer\\SOFTWARE\\Microsoft\\Office\\12.0\\Konnektivitätsmodul für Access\\Module\\ACE \\SharedAsyncDelay, usw.).
+Jede Konstante bezieht sich auf den entsprechenden Registrierungsschlüssel im Pfad\_HKEY\_-\\lokale\\Computer\\Software\\Microsoft\\Office 12,0 Access\\Connectivity\\Engine Engines ACE (d. **dbSharedAsyncDelay** entspricht dem Schlüssel HKEY\_lokale\_Computer\\Software\\Microsoft\\Office\\12,0\\Access Connectivity Engine\\Engines\\ACE \\Schlüssel SharedAsyncDelay usw.).
 
 <table>
 <colgroup>

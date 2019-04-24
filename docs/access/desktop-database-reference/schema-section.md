@@ -1,5 +1,5 @@
 ---
-title: Schemaabschnitt (Access PC-Datenbank-Referenz)
+title: Abschnitt "Schema" (Access Desktop Database Reference)
 TOCTitle: Schema Section
 ms:assetid: 59b42ffb-0524-adc3-8bcd-6e4cd2c505ce
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249304(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f8c479c430dd6d0ca742fefb4948544d31ba2e61
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308939"
 ---
 # <a name="schema-section"></a>Schema-Abschnitt
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="schema-section"></a>Schemaabschnitt
 
@@ -45,7 +45,7 @@ Im obigen Beispiel behandelt ADO die Daten als Zeichenfolgen mit variabler Läng
 
 ## <a name="creating-aliases-for-column-names"></a>Erstellen von Aliasen für Spaltennamen
 
-Mit dem rs:name-Attribut können Sie einen Alias für einen Spaltennamen erstellen, damit ein aussagekräftiger Name in den Spalteninformationen angezeigt wird, die vom Rowset verfügbar gemacht werden, und ein kürzerer Name im Datenabschnitt verwendet werden kann. Beispielsweise könnte das obige Schema geändert werden, indem wie folgt ShipperID zu s1, CompanyName zu s2 und Phone zu s3 zugeordnet wird:
+The **rs:name** attribute allows you to create an alias for a column name so that a friendly name may appear in the column information exposed by the rowset and a shorter name may be used in the data section. For example, the schema above could be modified to map ShipperID to s1, CompanyName to s2, and Phone to s3 as follows:
 
 ```xml 
  
@@ -72,14 +72,14 @@ Anschließend würde im Datenabschnitt die Zeile mithilfe des **name**-Attributs
 "<row s1="1" s2="Speedy Express" s3="(503) 555-9831"/> 
 ```
 
-Das Erstellen von Aliasen für Spaltennamen ist erforderlich, wenn ein Spaltenname im XML-Format kein zulässiger Attribut- oder Tagname ist. Beispielsweise ist für Last Name ein Alias erforderlich, weil Namen mit eingebetteten Leerzeichen unzulässige Attribute sind. Die folgende Zeile wird vom XML-Parser nicht ordnungsgemäß verarbeitet, deshalb müssen Sie einen Alias mit einem anderen Namen ohne eingebettetes Leerzeichen erstellen:
+Creating aliases for column names is required whenever a column name is not a legal attribute or tag name in XML. For example, "Last Name" must have an alias because names with embedded spaces are illegal attributes. The following line won't be correctly handled by the XML parser, so you must create an alias to some other name that does not have an embedded space:
 
 ```xml 
  
 <row last name="Jones"/> 
 ```
 
-Der für das name-Attribut verwendete Wert muss an jeder Stelle, an der im Schema- und Datenabschnitt des XML-Dokuments auf die Spalte verwiesen wird, einheitlich verwendet werden. Das folgende Beispiel veranschaulicht die einheitliche Verwendung von s1:
+Whatever value you use for the **name** attribute must be used consistently in each place that the column is referenced in both the schema and data sections of the XML document. The following example shows the consistent use of s1:
 
 ```xml 
  
@@ -121,7 +121,7 @@ ist gleichbedeutend mit
 <s:AttributeType name="Phone" dt:type="string"/> 
 ```
 
-Wenn Sie das **dt:type** -Attribut in der Zeilendefinition vollständig auslassen, hat die Spalte standardmäßig eine Zeichenfolge mit variabler Länge als Datentyp.
+Wenn Sie das **dt:type**-Attribut in der Zeilendefinition vollständig auslassen, hat die Spalte standardmäßig eine Zeichenfolge mit variabler Länge als Datentyp.
 
 Wenn mehr Typinformationen als nur der Typname vorhanden sind (z. B. **dt:maxLength**), wird die Lesbarkeit der Daten mithilfe des untergeordneten Elements **s:datatype** erhöht. Dies ist jedoch lediglich eine Konvention, kein Muss.
 
@@ -148,11 +148,11 @@ Die folgenden Beispiele zeigen, wie Sie Typinformationen in das Schema einschlie
 <s:AttributeType name="title_id" dt:type="int"/> 
 ```
 
-Verwendet das **Rs: Fixedlength** -Attribut im zweiten Beispiel ist vorhanden. Legen Sie eine Spalte mit dem **Rs: Fixedlength** -Attribut auf true gibt an, denen die Daten im Schema definierte Länge aufweisen müssen. In diesem Fall ein rechtlichen Wert für Titel\_Id lautet "123456," wie gesehen "123". "123" würde jedoch nicht gültig sein, da die Länge 3, nicht 6 ist. Finden Sie unter der OLE DB Programmer's Guide für eine ausführlichere Beschreibung der Eigenschaft **Fixedlength** abzuschließen.
+Im zweiten Beispiel wird das **RS: FixedLength** -Attribut subtil verwendet. Eine Spalte mit dem **RS: FixedLength** -Attribut, das auf true festgelegt ist, bedeutet, dass die Daten die im Schema definierte Länge aufweisen müssen. In diesem Fall lautet ein gültiger Wert für die\_Titel-id "123456", wie auch "123". "123" wäre jedoch nicht gültig, da die Länge 3 und nicht 6 ist. Eine ausführlichere Beschreibung der **FixedLength** -Eigenschaft finden Sie im OLE DB Programmer es Guide.
 
 ## <a name="handling-nulls"></a>Behandeln von NULL-Werten
 
-NULL-Werte werden vom rs:maybenull-Attribut behandelt. Falls dieses Attribut auf True festgelegt wird, können die Spalteninhalte einen NULL-Wert enthalten. Wenn darüber hinaus die Spalte nicht in einer Datenzeile gefunden wird, erhält der Benutzer, der die Daten vom Rowset zurückliest, einen NULL-Status von IRowset::GetData(). Betrachten Sie die folgenden Spaltendefinitionen aus der Shippers-Tabelle:
+Null values are handled by the **rs:maybenull** attribute. If this attribute is set to true, the contents of the column may contain a null value. Furthermore, if the column is not found in a row of data, the user reading the data back from the rowset will get a null status from **IRowset::GetData()**. Consider the following column definitions from the Shippers table:
 
 ```xml 
  
@@ -164,14 +164,14 @@ NULL-Werte werden vom rs:maybenull-Attribut behandelt. Falls dieses Attribut auf
 </s:AttributeType> 
 ```
 
-Die Definition ermöglicht CompanyName null sein darf keine ShipperID einen null-Wert enthalten. Wenn Datenabschnitt die folgende Zeile enthalten, würde der Anbieter für Persistenz den Status der Daten für die Spalte CompanyName legen Sie auf der OLE DB-Status-Konstante DBSTATUS\_S\_ISNULL:
+The definition allows CompanyName to be null, but ShipperID cannot contain a null value. Wenn der Datenabschnitt die folgende Zeile enthält, würde der Persistenz-Anbieter den Status der Daten für die Spalte CompanyName auf die OLE DB-Statuskonstante dbSTATUS\_S\_IsNull festlegen:
 
 ```xml 
  
 <z:row ShipperID="1"/> 
 ```
 
-Wenn die Zeile wie folgt vollständig leer war, würde der Anbieter für Persistenz OLE DB-Status des DBSTATUS zurückgeben\_E\_nicht verfügbar für ShipperID und DBSTATUS\_S\_ISNULL für CompanyName.
+Wenn die Zeile vollständig leer war, würde der Persistenz-Anbieter den OLE DB-Status von\_DBStatus e\_nicht für ShipperID und DBStatus\_S\_IsNull für CompanyName zurückgeben.
 
 ```xml 
  
@@ -185,7 +185,7 @@ Beachten Sie, dass eine leere Zeichenfolge nicht mit NULL identisch ist.
 <z:row ShipperID="1" CompanyName=""/> 
 ```
 
-Für die vorhergehende Zeile gibt der Anbieter für Persistenz OLE DB-Status des DBSTATUS zurück\_S\_OK für beide Spalten. CompanyName ist in diesem Fall einfach "" (leere Zeichenfolge).
+Für die vorhergehende Zeile gibt der Persistenzdienst für beide Spalten einen OLE DB-Status\_von\_"DBStatus S OK" zurück. The CompanyName in this case is simply "" (a zero-length string).
 
-Weitere Informationen zur OLE DB-Syntax, die im Schema eines XML-Dokuments für OLE DB verwendet werden kann, finden Sie in der Definition zu urn:schemas-microsoft-com:rowset und im OLE DB Programmer's Guide.
+For further information about the OLE DB constructs available for use within the schema of an XML document for OLE DB, see the definition of "urn:schemas-microsoft-com:rowset" and the OLE DB Programmer's Guide.
 

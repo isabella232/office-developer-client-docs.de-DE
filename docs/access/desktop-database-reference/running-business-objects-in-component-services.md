@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 23cb90161e5e0728aa652ae5d496216676f781a5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309205"
 ---
 # <a name="running-business-objects-in-component-services"></a>Ausführen von Geschäftsobjekten in Komponentendiensten
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Bei Geschäftsobjekten kann es sich um ausführbare Dateien (EXE) oder um Dynamic Link Libraries (DLL) handeln. Die für die Ausführung eines Geschäftsobjekts verwendete Konfiguration hängt davon ab, ob das Objekt eine DLL- oder eine EXE-Datei ist:
 
@@ -26,11 +26,11 @@ Bei Geschäftsobjekten kann es sich um ausführbare Dateien (EXE) oder um Dynami
 
 
 > [!NOTE]
-> Wenn von Geschäftsobjekten auf der mittleren Ebene als Komponenten der Komponentendienste (mit **GetObjectContext**, **SetComplete**und **SetAbort**) implementiert werden, können sie Komponentendienste (oder MTS, bei Verwendung der Windows NT)-Objekte Kontext Verwalten von deren Status über mehrere Client-Anrufe. Dieses Szenario ist mit DCOM möglich, das üblicherweise zwischen vertrauenswürdigen Clients und Servern (ein Intranet) implementiert wird. 
+> Wenn Geschäftsobjekte auf der mittleren Ebene als Komponenten-Dienste-Komponente implementiert werden ****(mithilfe von GetObjectContext, SetComplete und SetAbort), können Sie Komponentendienste (oder MTS, wenn Sie Windows NT-Kontextobjekte verwenden) verwenden, um **** **** Verwalten Sie Ihren Status über mehrere Clientaufrufe hinweg. Dieses Szenario ist mit DCOM möglich, das üblicherweise zwischen vertrauenswürdigen Clients und Servern (ein Intranet) implementiert wird. 
 >
 > In diesem Fall werden das [RDS.DataSpace](dataspace-object-rds.md)-Objekt und die [CreateObject](createobject-method-rds.md)-Methode auf dem Client durch das Transaktionskontextobjekt und die **CreateInstance** -Methode ersetzt (bereitgestellt von der **ITransactionContext** -Schnittstelle), die von den Komponentendiensten implementiert wird.
 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ausführen von Geschäftsobjekten in Komponentendiensten (SQLServer)](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)
+- [Durchführen von Geschäftsobjekten in Komponentendiensten (SQL Server)](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)

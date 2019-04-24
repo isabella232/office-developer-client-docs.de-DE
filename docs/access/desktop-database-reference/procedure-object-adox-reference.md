@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 557134675ea37735525baeae7873244229be9afa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301386"
 ---
 # <a name="procedure-object-adox-reference"></a>Procedure-Objekt (ADOX)-Referenz
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [Procedure-Objekt (ADOX)](procedure-object-adox.md)
-- [Prozedureigenschaften, Methoden und Ereignisse (ADOX)](procedure-properties-methods-and-events-adox.md)
+- [Prozedur Eigenschaften, Methoden und Ereignisse (ADOX)](procedure-properties-methods-and-events-adox.md)
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5b7d0bab179cd7ec658bc04cee05f486947f38c9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306020"
 ---
 # <a name="what-you-can-do-with-ado"></a>Was Sie mit ADO tun können
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ADO bietet Entwicklern ein leistungsfähiges, logisches Objektmodell, mit dem sie programmgesteuert eine Reihe von Datenquellen über OLE DB-Systemschnittstellen öffnen, bearbeiten und aktualisieren können. Das Abfragen einer Tabelle oder von Tabellen in einer relationalen Datenbank, das Abrufen und Anzeigen der Ergebnisse in einer Anwendung sowie vielleicht das Ändern der Daten und das Speichern dieser Änderungen durch Benutzer sind die häufigsten Verwendungsmöglichkeiten von ADO. Darüber hinaus ermöglicht ADO die folgenden programmgesteuerten Schritte:
 

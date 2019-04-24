@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 9e934b290472dc4bb0ad8619b2ada6992b4215c0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308631"
 ---
 # <a name="singlestep-macro-action"></a>SingleStep-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Mit der **MakroEinzelschritt** -Aktion können Sie die Makroausführung anhalten und das Dialogfeld **Einzelschritt** öffnen.
+Mit der **MakroEinzelschritt**-Aktion können Sie die Makroausführung anhalten und das Dialogfeld **Einzelschritt** öffnen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **MakroEinzelschritt** -Aktion hat keine Argumente.
+Die **MakroEinzelschritt**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Verwenden Sie die **MakroEinzelschritt** -Aktion, um Probleme mit einem Makro zu beheben, das nicht richtig funktioniert. Sie können die **MakroEinzelschritt** -Aktion direkt vor der Aktion, die Ursache eines Problems sein könnte, einem Makro hinzufügen. Die Aktion hält das Makro an und öffnet das Dialogfeld **Einzelschritt**. In diesem Dialogfeld werden Informationen über das aktuelle Makro angezeigt, z. B. Name des Makros, angegebene Bedingungen, Name der Aktion, Argumente und ggf. die Fehlernummer. Klicken Sie in diesem Dialogfeld auf **Schritt**, um mit der nächsten Makroaktion fortzufahren, auf **Alle Makros anhalten**, um das aktuelle Makro und alle weiteren derzeit ausgeführten Makros anzuhalten, oder auf **Weiter**, um den Einzelschrittmodus zu verlassen und mit der Ausführung des Makros fortzufahren.
 

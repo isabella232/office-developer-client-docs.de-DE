@@ -1,5 +1,5 @@
 ---
-title: Recordset2.LockEdits-Eigenschaft (DAO)
+title: Recordset2. LockEdits-Eigenschaft (DAO)
 TOCTitle: LockEdits Property
 ms:assetid: 77055f44-f8e9-ac64-ecc3-144ddb4a4558
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196045(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ff2db22dcb0119792eb57a971d3cf36e763d3049
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309646"
 ---
-# <a name="recordset2lockedits-property-dao"></a>Recordset2.LockEdits-Eigenschaft (DAO)
+# <a name="recordset2lockedits-property-dao"></a>Recordset2. LockEdits-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert fest, der den Typ der Sperreangibt, die während der Bearbeitung wirksam ist, oder gibt diesen Wert zurück.
 
@@ -48,7 +48,7 @@ Die Einstellung oder der Rückgabewert gibt den Sperrentyp an, wie in der folgen
 </tr>
 <tr class="even">
 <td><p>False</p></td>
-<td><p>Parallelität ist für die Bearbeitung aktiviert. Die Seite, die den Datensatz enthält, ist nicht gesperrt, bis die Update-Methode ausgeführt wird.</p></td>
+<td><p>Für die Bearbeitung wird die optimistische Sperre verwendet. Die Seite mit dem Datensatz wird erst gesperrt, wenn die Update-Methode ausgeführt wird.</p></td>
 </tr>
 </tbody>
 </table>
@@ -63,11 +63,11 @@ Wenn Sie für die **LockEdits**-Eigenschaft den Wert **False** festlegen und zu 
 Wenn Sie ODBC-Datenquellen verwenden, die mit der Microsoft Access-Datenbank-Engine verbunden sind, ist für die **LockEdits**-Eigenschaft immer **False** bzw. die optimistische Sperre festgelegt. Die Microsoft Access-Datenbank-Engine hat keine Kontrolle über die von externen Datenbankservern verwendeten Sperrmechanismen.
 
 > [!NOTE]
-> Sie können den Wert der **LockEdits** voreinstellen, wenn Sie das **Recordset-Objekt** zunächst öffnen, indem Sie das Argument Sperren der **[OpenRecordset](connection-openrecordset-method-dao.md)** -Methode festlegen. Festlegen des Arguments Lockedits auf **DbPessimistic** **LockEdits** -Eigenschaft auf **True**festgelegt wird, und Einstellung Lockedits auf einen anderen Wert wird die **LockEdits** -Eigenschaft auf **False**festgelegt.
+> Sie können den Wert von **LockEdits** beim ersten Öffnen des Recordset- **Objekts** durch Festlegen des LockEdits-Arguments **[](connection-openrecordset-method-dao.md)** der OpenRecordset-Methode voreinstellen. Wenn Sie das Argument LockEdits **** auf dbpessimistisch festlegen, wird die **LockEdits** -Eigenschaft auf **true**festgelegt, und durch Festlegen von LockEdits auf einen anderen Wert wird die **LockEdits** -Eigenschaft auf **false**festgelegt.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die pessimistische Sperre veranschaulicht, indem die LockEdits-Eigenschaft auf True festgelegt wird. Dann wird die optimistische Sperre verwendet, indem die LockEdits-Eigenschaft auf False festgelegt wird. Außerdem wird gezeigt, welche Art von Fehlerbehandlung in einer Mehrbenutzerdatenbank-Umgebung erforderlich ist, um ein Feld zu ändern. Damit diese Prozedur ausgeführt werden kann, sind die Funktionen PessimisticLock und OptimisticLock erforderlich.
+This example demonstrates pessimistic locking by setting the **LockEdits** property to **True**, and then demonstrates optimistic locking by setting the **LockEdits** property to False. It also demonstrates what kind of error handling is required in a multiuser database environment in order to modify a field. The PessimisticLock and OptimisticLock functions are required for this procedure to run.
 
 ```vb
     Sub LockEditsX() 
