@@ -14,23 +14,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 6ff2ad40d318801ecec2332b53b41f327c20fbc5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291400"
 ---
 # <a name="inner-join-operation-microsoft-access-sql"></a>INNER JOIN-Operation (Microsoft Access SQL)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
-Fasst Datensätze aus zwei Tabellen zusammen, wenn in einem gemeinsamen Feld entsprechende Datensätze enthalten sind.
+Kombiniert Datensätze aus zwei Tabellen, wenn in einem gemeinsamen Feld übereinstimmende Werte vorhanden sind.
 
 ## <a name="syntax"></a>Syntax
 
-AUS *Tabelle1* INNER JOIN *Tabelle2* für *Tabelle1*. *Feld1* *Compopr Tabelle2*. *Field2*
+FROM *table1* INNER JOIN *table2* ON *table1*.*field1* *compopr table2*.*field2*
 
 Die INNER JOIN-Operation besteht aus folgenden Komponenten:
 
@@ -48,7 +48,7 @@ Die INNER JOIN-Operation besteht aus folgenden Komponenten:
 <tbody>
 <tr class="odd">
 <td><p><em>Tabelle1</em>, <em>Tabelle2</em></p></td>
-<td><p>Die Namen der Tabellen, deren Datensätze kombiniert werden.</p></td>
+<td><p>Die Namen der Tabellen, aus denen Datensätze zusammengefasst werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Feld1</em>, <em>Feld2</em></p></td>
@@ -56,23 +56,23 @@ Die INNER JOIN-Operation besteht aus folgenden Komponenten:
 </tr>
 <tr class="odd">
 <td><p><em>Vergleichsoperator</em></p></td>
-<td><p>Ein beliebiger Vergleichsoperator: &quot;=,&quot; &quot; &lt;,&quot; &quot; &gt;,&quot; &quot; &lt;=,&quot; &quot; &gt;=,&quot; oder &quot; &lt; &gt;.&quot;</p></td>
+<td><p>Ein beliebiger relationaler Vergleichsoperator: &quot;=,&quot; &quot;&lt;,&quot; &quot;&gt;,&quot; &quot;&lt;=,&quot; &quot;&gt;=,&quot; oder &quot;&lt;&gt;.&quot;</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können eine INNER JOIN-Operation in jeder [FROM](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/from-clause-microsoft-access-sql)-Klausel verwenden. Hierbei handelt es sich um den Verknüpfungstyp, der im Allgemeinen verwendet wird. Innere Verknüpfungen fassen Datensätze aus zwei Tabellen zusammen, wenn sich in Feldern, die in beiden Tabellen enthalten sind, übereinstimmende Werte befinden.
 
-Sie können die INNER JOIN-Operation in Kombination mit der Departments-Tabelle (Abteilungen) und der Employees-Tabelle (Personal) verwenden, um alle Mitarbeiter in jeder Abteilung auszuwählen. Umgekehrt können Sie eine LEFT JOIN- oder RIGHT JOIN-Operation zur Erstellung einer äußeren Verknüpfung verwenden, um alle Abteilungen (selbst wenn den Abteilungen kein Personal zugewiesen wurde) oder das gesamte Personal (selbst wenn einige Mitarbeiter keiner Abteilung zugewiesen wurden) auszuwählen.
+You can use INNER JOIN with the Departments and Employees tables to select all the employees in each department. In contrast, to select all departments (even if some have no employees assigned to them) or all employees (even if some are not assigned to a department), you can use a [LEFT JOIN or RIGHT JOIN](left-join-right-join-operations-microsoft-access-sql.md) operation to create an outer join.
 
-Wenn Sie versuchen, Felder zu verknüpfen, die Daten vom Typ Memo oder OLE-Objekt enthalten, wird ein Fehler generiert.
+Wenn Sie versuchen, Felder mit Memo- oder OLE-Objektdaten zu verknüpfen, tritt ein Fehler auf.
 
-Sie können zwei beliebige numerische Felder vom Typ LIKE miteinander verknüpfen. So können beispielsweise Felder vom Datentyp AutoWert und Long verknüpft werden, da es sich in beiden Fällen um Felder vom Typ LIKE handelt. Felder vom Datentyp Single und Double können dagegen nicht miteinander verknüpft werden.
+Sie können zwei beliebige numerische Felder gleicher Art miteinander verknüpfen. Sie können z. B. eine Verknüpfung anhand von "AutoNumber"- und "Long"-Feldern vornehmen, da diese gleicher Art sind. Es ist jedoch nicht möglich, Felder der Typen "Single" und "Double" zu verknüpfen.
 
-Im folgenden Beispiel wird gezeigt, wie die Categories-Tabelle (Kategorien) und die Products-Tabelle (Artikel) über das CategoryID-Feld (Kategorie-Nr.) verknüpft werden können:
+Das folgende Beispiel zeigt, wie Sie die Tabellen "Categories" und "Products" anhand des Felds "CategoryID" verknüpfen können.
 
 ```sql
 SELECT CategoryName, ProductName 
@@ -80,22 +80,21 @@ FROM Categories INNER JOIN Products
 ON Categories.CategoryID = Products.CategoryID;
 ```
 
-Klicken Sie im vorstehenden Beispiel CategoryID ist das verknüpfte Feld, aber es ist nicht in den Abfrageergebnissen enthalten, da es nicht in der [SELECT](select-statement-microsoft-access-sql.md) -Anweisung enthalten ist. Der Name des Felds in der SELECT-Anweisung zum Einbeziehen von verknüpften Felds einschließen – in diesem Fall also Kategorien.Kategorie-Nr..
+Im vorigen Beispiel ist "CategoryID" das verknüpfte Feld, wird aber nicht in die Abfrageausgabe einbezogen, da es nicht in der [SELECT](select-statement-microsoft-access-sql.md)-Anweisung enthalten ist. Um das verknüpfte Feld einzuschließen, geben Sie den Feldnamen in die SELECT-Anweisung ein, in diesem Fall Categories.CategoryID.
 
-Sie können unter Verwendung der folgenden Syntax auch verschiedene ON-Klauseln in einer JOIN-Anweisung verknüpfen:
+Sie können auch mehrere ON-Klauseln in einer JOIN-Anweisung mit der folgenden Syntax verknüpfen:
 
-Wählen SIE die *Felder* FROM *Tabelle1* INNER JOIN *Tabelle2* ON *Tabelle1*. *Feld1* *compopr* *Tabelle2*. *Feld1* UND für *Tabelle1*. *Field2* *compopr* *Tabelle2*. *field2*) ODER klicken Sie auf *Tabelle1*. *feld3* *compopr* *Tabelle2*. *feld3*) \];
+SELECT *fields* FROM *table1* INNER JOIN *table2* ON *table1*.*field1* *compopr* *table2*.*field1* AND ON *table1*.*field2* *compopr* *table2*.*field2*) OR ON *table1*.*field3* *compopr* *table2*.*field3*)\];
 
-Sie können unter Verwendung der folgenden Syntax JOIN-Anweisungen auch schachteln:
+Sie können JOIN-Anweisungen auch mithilfe der folgenden Syntax schachteln:
 
-Wählen Sie *Felder* FROM *Tabelle1* INNER JOIN (*Tabelle2* INNER JOIN \[( \] *Tabelle3* \[INNER JOIN \[( \] *tabellex* \[INNER JOIN...) \] Auf *Tabelle3*. *feld3* *compopr* *tabellex*. *Fieldx*) \] Für *Tabelle2*. *Field2* *compopr* *Tabelle3*. *feld3*) FÜR *Tabelle1*. *Feld1* *compopr* *Tabelle2*. *Feld2*;
+SELECT *fields* FROM *table1* INNER JOIN (*table2* INNER JOIN \[( \]*table3* \[INNER JOIN \[( \]*tablex* \[INNER JOIN …)\] ON *table3*.*field3* *compopr* *tablex*.*fieldx*)\] ON *table2*.*field2* *compopr* *table3*.*field3*) ON *table1*.*field1* *compopr* *table2*.*field2*;
 
-Eine LEFT JOIN- oder eine RIGHT JOIN-Operation kann in einer INNER JOIN-Operation geschachtelt werden, aber umgekehrt kann eine INNER JOIN-Operation nicht in einer LEFT JOIN- oder einen RIGHT JOIN-Operation geschachtelt werden.
+Eine LEFT JOIN- oder RIGHT JOIN-Operation kann in einer INNER JOIN-Operation geschachtelt werden, wohingegen eine INNER JOIN-Operation nicht in einer LEFT JOIN- oder RIGHT JOIN-Operation geschachtelt werden kann.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel werden zwei gleichwertige Verknüpfungen erstellt: eine Verknüpfung zwischen der Order Details-Tabelle (Bestelldetails) und der Orders-Tabelle (Bestellungen) und eine andere Verknüpfung zwischen der Orders-Tabelle und der Employees-Tabelle (Personal). Dies ist erforderlich, weil die Employees-Tabelle keine Verkaufsdaten und die Order Details-Tabelle keine Personaldaten enthält. Die Abfrage gibt eine Liste der Mitarbeiter unter Aufführung ihrer Gesamtverkäufe zurück.  
-
+This example creates two equi-joins: one between the Order Details and Orders tables and another between the Orders and Employees tables. This is necessary because the Employees table does not contain sales data, and the Order Details table does not contain employee data. The query produces a list of employees and their total sales.
 
 In diesem Beispiel wird die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung enthalten ist.
 

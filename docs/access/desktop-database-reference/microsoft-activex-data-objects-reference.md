@@ -8,27 +8,27 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c1fee657c0d6ecd319157f704df2b1c5a900be3b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289119"
 ---
 # <a name="microsoft-activex-data-objects-reference"></a>Referenz zu Microsoft ActiveX Data Objects
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="purpose"></a>Zweck
 
-Mit Microsoft ActiveX Data Objects (ADO) können Clientanwendungen über einen OLE DB-Anbieter auf Daten auf einem Datenbankserver zugreifen und diese bearbeiten. Die wichtigsten Vorteile sind einfache Handhabung, hohe Geschwindigkeit sowie geringer Arbeitsspeicher- und Speicherplatzbedarf. ADO unterstützt wichtige Features für die Erstellung von Client-Server und webbasierten Anwendungen.
+Mit Microsoft ActiveX Data Objects (ADO) können Clientanwendungen über einen OLE DB-Anbieter auf Daten auf einem Datenbankserver zugreifen und diese bearbeiten. Die wichtigsten Vorteile sind einfache Handhabung, hohe Geschwindigkeit sowie geringer Arbeitsspeicher- und Speicherplatzbedarf. ADO unterstützt Schlüsselfeatures für das Erstellen von Client-/Server- und webbasierten Anwendungen.
 
 ## <a name="rds"></a>RDS
 
-ADO bietet außerdem Remote Data Service (RDS), mit dem Sie Daten von einem Server zu einer Clientanwendung oder eine Webseite, die Daten auf dem Client manipulieren und Updates auf dem Server in einer einzelnen Roundtrip wieder verschieben können.
+ADO bietet außerdem Remote Data Service (RDS). Hiermit können Sie Daten von einem Server in eine Clientanwendung oder auf eine Website verschieben, die Datei auf dem Client bearbeiten sowie Updates an den Server in einem einzelnen Roundtrip zurückgeben.
 
 ## <a name="ado-md"></a>ADO MD
 
-Microsoft ActiveX Data Objects (Multidimensional) (ADO MD) ermöglicht den einfachen Zugriff auf multidimensionale Daten in Sprachen wie z. B. Microsoft Visual Basic, Microsoft Visual C++ und Microsoft Visual J++. ADO MD erweitert Microsoft ActiveX Data Objects (ADO) um Objekte speziell für multidimensionale Daten, wie z. B. die CubeDef- und Cellset-Objekte. Mit ADO MD können Sie ein multidimensionales Schema durchsuchen, einen Cube abfragen und die Ergebnisse abrufen.
+Microsoft ActiveX Data Objects (Multidimensional) (ADO MD) provides easy access to multidimensional data from languages such as Microsoft Visual Basic, Microsoft Visual C++, and Microsoft Visual J++. ADO MD extends Microsoft ActiveX Data Objects (ADO) to include objects specific to multidimensional data, such as the CubeDef and Cellset objects. With ADO MD you can browse multidimensional schema, query a cube, and retrieve the results.
 
 ADO MD verwendet wie ADO einen zugrunde liegenden OLE DB-Anbieter für den Zugriff auf Daten. Der Anbieter muss gemäß der OLE DB für OLAP-Spezifikation ein multidimensionaler Datenprovider (MDP) sein, um mit ADO MD arbeiten zu können. MDPs stellen Daten in multidimensionalen Ansichten dar. Tabulare Datenprovider (TDP) stellen Daten dagegen in tabularen Ansichten dar. In der Dokumentation zu Ihrem OLE DB für OLAP-Anbieter finden Sie ausführlichere Information zur Syntax und zu den Funktionen, die von Ihrem Anbieter unterstützt werden.
 
@@ -38,11 +38,11 @@ Microsoft ActiveX Data Objects Extensions für Datendefinitionssprache und Siche
 
 ADOX ist eine Begleitbibliothek zu ADO-Kernobjekten. Hiermit werden zusätzliche Objekte für das Erstellen, Ändern und Löschen von Schemaobjekten wie Tabellen und Prozeduren verfügbar gemacht. Außerdem enthält dieses Element Sicherheitsobjekte, um Benutzer und Gruppen zu warten und um Berechtigungen für Objekte zu erteilen und aufzuheben.
 
-## <a name="ado-25-main-components"></a>ADO 2.5 Hauptkomponenten
+## <a name="ado-25-main-components"></a>ADO 2.5-Hauptkomponenten
 
-- [Programmierhandbuch](ado-programmer-s-guide.md): eine Einführung in die Verwendung von ADO, RDS, ADO MD und ADOX.
+- [Leitfaden für Programmierer](ado-programmer-s-guide.md): Eine Einführung in die Verwendung von ADO, RDS, ADO MD und ADOX.
 
-- [Programmer's Reference](ado-programmer-s-reference-topics.md): in diesem Abschnitt der ADO-Dokumentation enthält Themen jede Auflistung von ADO, RDS, ADO MD und ADOX-Objekt, -Eigenschaft, dynamische Eigenschaft, -Methode, -Ereignis, und -Enumeration.
+- [Referenz für Programmierer](ado-programmer-s-reference-topics.md)Dieser Abschnitt der ADO-Dokumentation behandelt Themen zu den verschiedenen Objekten, Auflistungen, Eigenschaften, dynamischen Eigenschaften, Methoden, Ereignissen und Aufzählungen von ADO, RDS, ADO MD und ADOX.
 
 ## <a name="feedback"></a>Feedback
 

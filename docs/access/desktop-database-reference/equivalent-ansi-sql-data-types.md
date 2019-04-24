@@ -12,18 +12,18 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 3ea0641c7325bfcb4339572bc8b50724115af8d6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293511"
 ---
 # <a name="equivalent-ansi-sql-data-types"></a>Äquivalente ANSI SQL-Datentypen
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In der folgenden Tabelle werden ANSI SQL-Datentypen, die gleichwertigen Datentypen für das Microsoft Access-Datenbankmodul SQL sowie die gültigen Synonyme aufgelistet. Es sind auch die entsprechenden Microsoft SQL Server™-Datentypen aufgeführt.
+In der folgenden Tabelle sind die ANSI-SQL-Datentypen, ihre entsprechenden SQL-Datentypen im Microsoft Access-Datenbankmodul und deren gültige Synonyme aufgeführt. Zusätzlich werden die gleichwertigen Microsoft SQL Server™-Datentypen aufgelistet.
 
 <table>
 <colgroup>
@@ -35,9 +35,8 @@ In der folgenden Tabelle werden ANSI SQL-Datentypen, die gleichwertigen Datentyp
 <thead>
 <tr class="header">
 <th><p>ANSI SQL-Datentyp</p></th>
-<th><p>Microsoft Access SQL-Datentyp</p></th>
-<th><p>
-Synonym</p></th>
+<th><p>Microsoft Access-SQL-Datentyp</p></th>
+<th><p>Synonym</p></th>
 <th><p>Microsoft SQL Server-Datentyp</p></th>
 </tr>
 </thead>
@@ -75,7 +74,7 @@ Synonym</p></th>
 <tr class="even">
 <td><p>DATE, TIME, TIMESTAMP</p></td>
 <td><p>DATETIME</p></td>
-<td><p>DATE, TIME (siehe Hinweise)</p></td>
+<td><p>DATE, TIME (Siehe Hinweise)</p></td>
 <td><p>DATETIME</p></td>
 </tr>
 <tr class="odd">
@@ -123,19 +122,19 @@ Synonym</p></th>
 <tr class="even">
 <td><p>Nicht unterstützt</p></td>
 <td><p>IMAGE</p></td>
-<td><p>LONGBINARY GENERAL, OLEOBJECT</p></td>
+<td><p>LONGBINARY, GENERAL, OLEOBJECT</p></td>
 <td><p>IMAGE</p></td>
 </tr>
 <tr class="odd">
 <td><p>Nicht unterstützt</p></td>
-<td><p>TEXT (siehe Hinweise)</p></td>
+<td><p>TEXT (Siehe Hinweise)</p></td>
 <td><p>LONGTEXT, LONGCHAR, MEMO, NOTE, NTEXT (Siehe Hinweise)</p></td>
 <td><p>TEXT</p></td>
 </tr>
 <tr class="even">
 <td><p>CHARACTER, CHARACTER VARYING, NATIONAL CHARACTER, NATIONAL CHARACTER VARYING</p></td>
 <td><p>CHAR (Siehe Hinweise)</p></td>
-<td><p>Text (n), ALPHANUMERIC, CHARACTER, STRING, VARCHAR, CHARACTER VARYING, NCHAR, NATIONAL CHARACTER, NATIONAL CHAR, NATIONAL CHARACTER VARYING, NATIONAL CHAR VARYING (siehe Hinweise)</p></td>
+<td><p>TEXT(n), ALPHANUMERIC, CHARACTER, STRING, VARCHAR, CHARACTER VARYING, NCHAR, NATIONAL CHARACTER, NATIONAL CHAR, NATIONAL CHARACTER VARYING, NATIONAL CHAR VARYING (See Notes)</p></td>
 <td><p>CHAR, VARCHAR, NCHAR, NVARCHAR</p></td>
 </tr>
 </tbody>
