@@ -1,5 +1,5 @@
 ---
-title: BearbeitenDatensatz-Datenblock
+title: Bearbeitendatensatz-Datenblock
 TOCTitle: EditRecord data block
 ms:assetid: fe9f55eb-d7ed-1914-65a9-fa2fcb332b98
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837277(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 32ddfbbf21e62d5967fa1f2f31bab0222664eb39
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293595"
 ---
-# <a name="editrecord-data-block"></a><span data-ttu-id="04cb2-102">BearbeitenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="04cb2-102">EditRecord data block</span></span>
+# <a name="editrecord-data-block"></a><span data-ttu-id="8926e-102">Bearbeitendatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="8926e-102">EditRecord data block</span></span>
 
-<span data-ttu-id="04cb2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="04cb2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8926e-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8926e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="04cb2-104">Mit dem **BearbeitenDatensatz** -Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern.</span><span class="sxs-lookup"><span data-stu-id="04cb2-104">You can use the **EditRecord** data block to change the values contained in an existing record.</span></span>
+<span data-ttu-id="8926e-104">Mit dem **BearbeitenDatensatz** -Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern.</span><span class="sxs-lookup"><span data-stu-id="8926e-104">You can use the **EditRecord** data block to change the values contained in an existing record.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="04cb2-105">[!HINWEIS] Der **BearbeitenDatensatz** -Datenblock ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="04cb2-105">The **EditRecord** data block is available only in Data Macros.</span></span>
+> <span data-ttu-id="8926e-105">Der **BearbeitenDatensatz**-Datenblock ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="8926e-105">The **EditRecord** data block is available only in Data Macros.</span></span>
 
 
-## <a name="setting"></a><span data-ttu-id="04cb2-106">Einstellung</span><span class="sxs-lookup"><span data-stu-id="04cb2-106">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="8926e-106">Einstellung</span><span class="sxs-lookup"><span data-stu-id="8926e-106">Setting</span></span>
 
-<span data-ttu-id="04cb2-107">Der **BearbeitenDatensatz** -Datenblock kann mit den folgenden Argumenten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="04cb2-107">The **EditRecord** data block has the following arguments.</span></span>
+<span data-ttu-id="8926e-107">Der **BearbeitenDatensatz**-Datenblock kann mit den folgenden Argumenten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="8926e-107">The **EditRecord** data block has the following arguments.</span></span>
 
 <table>
 <colgroup>
@@ -35,21 +35,21 @@ ms.locfileid: "28715753"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="04cb2-108">Argument</span><span class="sxs-lookup"><span data-stu-id="04cb2-108">Argument</span></span></p></th>
-<th><p><span data-ttu-id="04cb2-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="04cb2-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="8926e-108">Argument</span><span class="sxs-lookup"><span data-stu-id="8926e-108">Argument</span></span></p></th>
+<th><p><span data-ttu-id="8926e-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8926e-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="04cb2-110"><strong>Alias</strong></span><span class="sxs-lookup"><span data-stu-id="04cb2-110"><strong>Alias</strong></span></span></p></td>
-<td><p><span data-ttu-id="04cb2-p101">Eine Zeichenfolge, mit der der zu bearbeitende Datensatz gekennzeichnet wird. Wenn das <em>Alias</em>-Argument nicht angegeben ist, wird der aktuelle Datensatz bearbeitet.</span><span class="sxs-lookup"><span data-stu-id="04cb2-p101">A string that identifies the record to edit. If the <em>Alias</em> argument is not specified, then the current record is edited.</span></span></p></td>
+<td><p><span data-ttu-id="8926e-110"><strong>Alias</strong></span><span class="sxs-lookup"><span data-stu-id="8926e-110"><strong>Alias</strong></span></span></p></td>
+<td><p><span data-ttu-id="8926e-111">Eine Zeichenfolge, mit der der zu bearbeitende Datensatz gekennzeichnet wird.</span><span class="sxs-lookup"><span data-stu-id="8926e-111">A string that identifies the record to edit.</span></span> <span data-ttu-id="8926e-112">Wenn das <em>Alias</em>-Argument nicht angegeben ist, wird der aktuelle Datensatz bearbeitet.</span><span class="sxs-lookup"><span data-stu-id="8926e-112">If the <em>Alias</em> argument is not specified, then the current record is edited.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a><span data-ttu-id="04cb2-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="04cb2-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8926e-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8926e-113">Remarks</span></span>
 
-<span data-ttu-id="04cb2-p102">Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen einfügen, die ausgeführt werden, bevor für die Änderungen am Datensatz ein Commit erfolgt. In einem **BearbeitenDatensatz** -Datenblock sind die folgenden Aktionen verfügbar.</span><span class="sxs-lookup"><span data-stu-id="04cb2-p102">After **EditRecord** statement, you can insert a block of commands that will execute before the changes to the record are comitted. The following actions are available in a **EditRecord** data block.</span></span>
+<span data-ttu-id="8926e-p102">Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen einfügen, die ausgeführt werden, bevor für die Änderungen am Datensatz ein Commit erfolgt. In einem **BearbeitenDatensatz** -Datenblock sind die folgenden Aktionen verfügbar.</span><span class="sxs-lookup"><span data-stu-id="8926e-p102">After **EditRecord** statement, you can insert a block of commands that will execute before the changes to the record are comitted. The following actions are available in a **EditRecord** data block.</span></span>
 
 <table>
 <colgroup>
@@ -57,35 +57,35 @@ ms.locfileid: "28715753"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="04cb2-116"><a href="cancelrecordchange-macro-action.md">CancelRecordChange-Makroaktion</a></span><span class="sxs-lookup"><span data-stu-id="04cb2-116"><a href="cancelrecordchange-macro-action.md">CancelRecordChange macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="8926e-116"><a href="cancelrecordchange-macro-action.md">CancelRecordChange-Makroaktion</a></span><span class="sxs-lookup"><span data-stu-id="8926e-116"><a href="cancelrecordchange-macro-action.md">CancelRecordChange macro action</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="04cb2-117"><a href="comment-macro-statement.md">Kommentar-Makroanweisung</a></span><span class="sxs-lookup"><span data-stu-id="04cb2-117"><a href="comment-macro-statement.md">Comment macro statement</a></span></span></p></td>
+<td><p><span data-ttu-id="8926e-117"><a href="comment-macro-statement.md">Kommentar-Makroanweisung</a></span><span class="sxs-lookup"><span data-stu-id="8926e-117"><a href="comment-macro-statement.md">Comment macro statement</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="04cb2-118"><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></span><span class="sxs-lookup"><span data-stu-id="04cb2-118"><a href="group-macro-statement.md">Group macro statement</a></span></span></p></td>
+<td><p><span data-ttu-id="8926e-118"><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></span><span class="sxs-lookup"><span data-stu-id="8926e-118"><a href="group-macro-statement.md">Group macro statement</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="04cb2-119"><a href="if-then-else-macro-block.md">If... Im Anschluss: Else-makroanweisung</a></span><span class="sxs-lookup"><span data-stu-id="04cb2-119"><a href="if-then-else-macro-block.md">If...Then...Else macro statement</a></span></span></p></td>
+<td><p><span data-ttu-id="8926e-119"><a href="if-then-else-macro-block.md">If... Dann... Else-Makroanweisung</a></span><span class="sxs-lookup"><span data-stu-id="8926e-119"><a href="if-then-else-macro-block.md">If...Then...Else macro statement</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="04cb2-120"><a href="setfield-macro-action.md">SetField-Makroaktion</a></span><span class="sxs-lookup"><span data-stu-id="04cb2-120"><a href="setfield-macro-action.md">SetField macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="8926e-120"><a href="setfield-macro-action.md">SetField-Makroaktion</a></span><span class="sxs-lookup"><span data-stu-id="8926e-120"><a href="setfield-macro-action.md">SetField macro action</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="04cb2-121"><a href="setlocalvar-macro-action.md">SetLocalVar-Makroaktion</a></span><span class="sxs-lookup"><span data-stu-id="04cb2-121"><a href="setlocalvar-macro-action.md">SetLocalVar macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="8926e-121"><a href="setlocalvar-macro-action.md">SetLocalVar-Makroaktion</a></span><span class="sxs-lookup"><span data-stu-id="8926e-121"><a href="setlocalvar-macro-action.md">SetLocalVar macro action</a></span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="04cb2-122">Mit der **FestlegenFeld** -Aktion geben Sie die neuen Werte eines Felds im bearbeiteten Datensatz an.</span><span class="sxs-lookup"><span data-stu-id="04cb2-122">Use the **SetField** action to specify the new values of a field in the edited record.</span></span>
+<span data-ttu-id="8926e-122">Mit der **FestlegenFeld** -Aktion geben Sie die neuen Werte eines Felds im bearbeiteten Datensatz an.</span><span class="sxs-lookup"><span data-stu-id="8926e-122">Use the **SetField** action to specify the new values of a field in the edited record.</span></span>
 
-<span data-ttu-id="04cb2-123">Anschließend können Sie mit einer **Wenn...Dann...Sonst** -Anweisung Vorgänge auf der Grundlage einer Bedingung ausführen.</span><span class="sxs-lookup"><span data-stu-id="04cb2-123">You can use an **If...Then...Else** statment to perform operations based on a condition.</span></span>
+<span data-ttu-id="8926e-123">Anschließend können Sie mit einer **Wenn...Dann...Sonst** -Anweisung Vorgänge auf der Grundlage einer Bedingung ausführen.</span><span class="sxs-lookup"><span data-stu-id="8926e-123">You can use an **If...Then...Else** statment to perform operations based on a condition.</span></span>
 
-<span data-ttu-id="04cb2-p103">Wenn Sie das Bearbeiten eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **BearbeitenDatensatz** -Datenblock wird beendet.</span><span class="sxs-lookup"><span data-stu-id="04cb2-p103">To cancel the editing of a record, use the **CancelRecordChange** action. This prevents the changes from being committed and exits the **EditRecord** data block.</span></span>
+<span data-ttu-id="8926e-p103">Wenn Sie das Bearbeiten eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **BearbeitenDatensatz** -Datenblock wird beendet.</span><span class="sxs-lookup"><span data-stu-id="8926e-p103">To cancel the editing of a record, use the **CancelRecordChange** action. This prevents the changes from being committed and exits the **EditRecord** data block.</span></span>
 
-<span data-ttu-id="04cb2-126">Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten.</span><span class="sxs-lookup"><span data-stu-id="04cb2-126">You can use the **LastCreateRecordIdentity** local variable to work with last record created in a **CreateRecord** data block.</span></span> <span data-ttu-id="04cb2-127">Verwenden Sie beispielsweise die folgende Syntax, um des Felds AssignedTo die zuletzt erstellte Datensatz zu verweisen:</span><span class="sxs-lookup"><span data-stu-id="04cb2-127">For example, use the following syntax to refer to the AssignedTo field of the most recently created record:</span></span>
+<span data-ttu-id="8926e-126">Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten.</span><span class="sxs-lookup"><span data-stu-id="8926e-126">You can use the **LastCreateRecordIdentity** local variable to work with last record created in a **CreateRecord** data block.</span></span> <span data-ttu-id="8926e-127">Verwenden Sie beispielsweise die folgende Syntax, um auf das Feld ZugewiesenAn des zuletzt erstellten Datensatzes zu verweisen:</span><span class="sxs-lookup"><span data-stu-id="8926e-127">For example, use the following syntax to refer to the AssignedTo field of the most recently created record:</span></span>
 
 `[LastCreateRecordIdentity].[AssignedTo]`
 
-<span data-ttu-id="04cb2-128">Der DatensatzErstellen-Datenblock kann nur in den Datenmakroereignissen **[Nach Eingabe](after-insert-macro-event.md)**, **[Nach Aktualisierung](after-update-macro-event.md)** und **[Nach Aktualisierung](after-update-macro-event.md)** verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="04cb2-128">The CreateRecord data block can only be used in the **[After Insert](after-insert-macro-event.md)**, **[After Update](after-update-macro-event.md)**, and **[After Update](after-update-macro-event.md)** data macro events.</span></span>
+<span data-ttu-id="8926e-128">Der DatensatzErstellen-Datenblock kann nur in den Datenmakroereignissen **[Nach Eingabe](after-insert-macro-event.md)**, **[Nach Aktualisierung](after-update-macro-event.md)** und **[Nach Aktualisierung](after-update-macro-event.md)** verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="8926e-128">The CreateRecord data block can only be used in the **[After Insert](after-insert-macro-event.md)**, **[After Update](after-update-macro-event.md)**, and **[After Update](after-update-macro-event.md)** data macro events.</span></span>
 

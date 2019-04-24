@@ -1,5 +1,5 @@
 ---
-title: Visual J++ (Access PC-Datenbank-Referenz)
+title: Visual J++ (Access Desktop Database Reference)
 TOCTitle: Visual J++
 ms:assetid: 5c05db85-cdf2-9a73-fbc5-3dbfa6752376
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249320(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: da13ae0f10e2338b961f2f12686bd378580a69d7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311333"
 ---
-# <a name="visual-j"></a><span data-ttu-id="c8d27-102">Visual J++</span><span class="sxs-lookup"><span data-stu-id="c8d27-102">Visual J++</span></span>
+# <a name="visual-j"></a><span data-ttu-id="8b4bf-102">Visual J++</span><span class="sxs-lookup"><span data-stu-id="8b4bf-102">Visual J++</span></span>
 
 
-<span data-ttu-id="c8d27-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c8d27-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8b4bf-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8b4bf-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c8d27-104">Dieses kurze Microsoft Visual J++-Beispiel zeigt, wie Sie einem bestimmten Ereignis Ihre eigene Funktion zuordnen können.</span><span class="sxs-lookup"><span data-stu-id="c8d27-104">This short Microsoft Visual J++ example shows how you can associate your own function with a particular event.</span></span>
+<span data-ttu-id="8b4bf-104">Dieses kurze Microsoft Visual J++-Beispiel zeigt, wie Sie einem bestimmten Ereignis Ihre eigene Funktion zuordnen können.</span><span class="sxs-lookup"><span data-stu-id="8b4bf-104">This short Microsoft Visual J++ example shows how you can associate your own function with a particular event.</span></span>
 
 ```java 
  
@@ -53,7 +53,7 @@ public class EventExampleVJ
 // EndEventExampleVJ 
 ```
 
-<span data-ttu-id="c8d27-105">Zunächst wird die Klasse-Methode *OnConnectionComplete* erstellen ein neues **ConnectionEventHandler** -Objekt, und weisen die *OnConnectComplete* -Funktion, um das Objekt dem **ConnectionComplete** -Ereignis zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="c8d27-105">First, the class method *onConnectionComplete* is associated with the **ConnectionComplete** event by creating a new **ConnectionEventHandler** object and assigning the *onConnectComplete* function to the object.</span></span>
+<span data-ttu-id="8b4bf-105">Zunächst wird die *onConnectionComplete*-Klassenmethode dem **ConnectionComplete**-Ereignis zugeordnet, indem ein neues **ConnectionEventHandler**-Objekt erstellt und die *onConnectComplete*-Funktion diesem Objekt zugewiesen wird.</span><span class="sxs-lookup"><span data-stu-id="8b4bf-105">First, the class method *onConnectionComplete* is associated with the **ConnectionComplete** event by creating a new **ConnectionEventHandler** object and assigning the *onConnectComplete* function to the object.</span></span>
 
-<span data-ttu-id="c8d27-106">Die *main* -Funktion wird dann ein **Connection** -Objekt erstellt und ermöglicht die Ereignisbehandlung durch Aufrufen der **AddOnConnectComplete** -Methode und durch Übergeben der Adresse der *Handler* -Funktion.</span><span class="sxs-lookup"><span data-stu-id="c8d27-106">The *main* function then creates a **Connection** object and enables event handling by calling the **addOnConnectComplete** method and passing it the address of the *handler* function.</span></span>
+<span data-ttu-id="8b4bf-106">Die *main*-Funktion erstellt dann ein **Connection**-Objekt und ermöglicht die Ereignisbehandlung durch Aufrufen der **addOnConnectComplete**-Methode und durch Übergeben der Adresse der *handler*-Funktion.</span><span class="sxs-lookup"><span data-stu-id="8b4bf-106">The *main* function then creates a **Connection** object and enables event handling by calling the **addOnConnectComplete** method and passing it the address of the *handler* function.</span></span>
 

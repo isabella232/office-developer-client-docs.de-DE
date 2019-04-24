@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: daecca6a8d2997fefdca4736cc8325733a2b9188
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292300"
 ---
-# <a name="getobjectowner-and-setobjectowner-methods-example-vb"></a><span data-ttu-id="8dfe3-102">GetObjectOwner- und SetObjectOwner-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="8dfe3-102">GetObjectOwner and SetObjectOwner methods example (VB)</span></span>
+# <a name="getobjectowner-and-setobjectowner-methods-example-vb"></a><span data-ttu-id="c4218-102">GetObjectOwner- und SetObjectOwner-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="c4218-102">GetObjectOwner and SetObjectOwner methods example (VB)</span></span>
 
 
-<span data-ttu-id="8dfe3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8dfe3-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c4218-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c4218-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8dfe3-104">Dieses Beispiel veranschaulicht die Methoden [GetObjectOwner](getobjectowner-method-adox.md) und [SetObjectOwner verwenden](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) .</span><span class="sxs-lookup"><span data-stu-id="8dfe3-104">This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods.</span></span> <span data-ttu-id="8dfe3-105">Dieser Code wird vorausgesetzt, dass die Gruppe Accounting (siehe die [Gruppen und Benutzer anzufügen, ChangePassword-Methoden (Beispiel) (VB)](groups-and-users-append-changepassword-methods-example-vb.md) wie das System dieser Gruppe hinzugefügt angezeigt).</span><span class="sxs-lookup"><span data-stu-id="8dfe3-105">This code assumes the existence of the group Accounting (see the [Groups and Users Append, ChangePassword methods example (VB)](groups-and-users-append-changepassword-methods-example-vb.md) to see how to add this group to the system).</span></span> <span data-ttu-id="8dfe3-106">Der Besitzer der Kategorientabelle wird auf Buchhaltung festgelegt.</span><span class="sxs-lookup"><span data-stu-id="8dfe3-106">The owner of the Categories table is set to Accounting.</span></span>
+<span data-ttu-id="c4218-104">This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods.</span><span class="sxs-lookup"><span data-stu-id="c4218-104">This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods.</span></span> <span data-ttu-id="c4218-105">In diesem Code wird davon ausgegangen, dass die Gruppen Abrechnung vorhanden ist (siehe [Append-, ChangePassword-und](groups-and-users-append-changepassword-methods-example-vb.md) "Groups"-Methoden (Beispiel), um zu sehen, wie diese Gruppe dem System hinzugefügt wird).</span><span class="sxs-lookup"><span data-stu-id="c4218-105">This code assumes the existence of the group Accounting (see the [Groups and Users Append, ChangePassword methods example (VB)](groups-and-users-append-changepassword-methods-example-vb.md) to see how to add this group to the system).</span></span> <span data-ttu-id="c4218-106">The owner of the Categories table is set to Accounting.</span><span class="sxs-lookup"><span data-stu-id="c4218-106">The owner of the Categories table is set to Accounting.</span></span>
 
 ```vb 
  

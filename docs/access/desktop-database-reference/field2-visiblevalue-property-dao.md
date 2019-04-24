@@ -1,5 +1,5 @@
 ---
-title: Field2.VisibleValue-Eigenschaft (DAO)
+title: Field2. VisibleValue-Eigenschaft (DAO)
 TOCTitle: VisibleValue Property
 ms:assetid: 1e023a1a-fd49-7570-42bd-2f4c06ac5e5e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845809(v=office.15)
@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 0161ea66068457b53a9667a6739c3a3a0458c8c5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292615"
 ---
-# <a name="field2visiblevalue-property-dao"></a><span data-ttu-id="4b8a0-102">Field2.VisibleValue-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="4b8a0-102">Field2.VisibleValue property (DAO)</span></span>
+# <a name="field2visiblevalue-property-dao"></a><span data-ttu-id="b84ff-102">Field2. VisibleValue-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="b84ff-102">Field2.VisibleValue property (DAO)</span></span>
 
 
-<span data-ttu-id="4b8a0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4b8a0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b84ff-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b84ff-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4b8a0-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="4b8a0-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b84ff-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="b84ff-104">Syntax</span></span>
 
-<span data-ttu-id="4b8a0-105">*Ausdruck* . VisibleValue</span><span class="sxs-lookup"><span data-stu-id="4b8a0-105">*expression* .VisibleValue</span></span>
+<span data-ttu-id="b84ff-105">*Ausdruck* . VisibleValue</span><span class="sxs-lookup"><span data-stu-id="b84ff-105">*expression* .VisibleValue</span></span>
 
-<span data-ttu-id="4b8a0-106">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="4b8a0-106">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="b84ff-106">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="b84ff-106">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="4b8a0-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4b8a0-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b84ff-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b84ff-107">Remarks</span></span>
 
-<span data-ttu-id="4b8a0-p101">Diese Eigenschaft enthält den Wert des Felds, der sich aktuell in der Datenbank auf dem Server befindet. Bei einer optimistischen Batchaktualisierung kann ein Konflikt auftreten, wenn ein zweiter Client dasselbe Feld und denselben Datensatz in dem Zeitraum ändert, in dem der erste Client die Daten abruft und versucht, die Daten zu aktualisieren. Wenn dies geschieht, kann auf den Wert, den der zweite Client festgelegt hat, über diese Eigenschaft zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="4b8a0-p101">This property contains the value of the field that is currently in the database on the server. During an optimistic batch update, a collision may occur where a second client modified the same field and record in between the time the first client retrieved the data and the first client's update attempt. When this happens, the value that the second client set will be accessible through this property.</span></span>
+<span data-ttu-id="b84ff-p101">Diese Eigenschaft enthält den Wert des Felds, der sich aktuell in der Datenbank auf dem Server befindet. Bei einer optimistischen Batchaktualisierung können Konflikte auftreten, wenn in der Zeitspanne, in der ein erster Client Daten abruft und eine Aktualisierung versucht, ein zweiter Client dasselbe Feld und den Datensatz ändert. In diesem Fall kann über diese Eigenschaft auf den vom zweiten Client festgelegten Wert zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="b84ff-p101">This property contains the value of the field that is currently in the database on the server. During an optimistic batch update, a collision may occur where a second client modified the same field and record in between the time the first client retrieved the data and the first client's update attempt. When this happens, the value that the second client set will be accessible through this property.</span></span>
 

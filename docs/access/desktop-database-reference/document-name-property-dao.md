@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 682845b8033d96a4ced9788c3a7d7e06f99d589f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293784"
 ---
-# <a name="documentname-property-dao"></a><span data-ttu-id="23e7f-102">Document.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="23e7f-102">Document.Name property (DAO)</span></span>
+# <a name="documentname-property-dao"></a><span data-ttu-id="981d9-102">Document.Name-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="981d9-102">Document.Name property (DAO)</span></span>
 
 
-<span data-ttu-id="23e7f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="23e7f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="981d9-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="981d9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="23e7f-p101">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter **String**-Wert.</span><span class="sxs-lookup"><span data-stu-id="23e7f-p101">Returns the name of the specified object. Read-only **String**.</span></span>
+<span data-ttu-id="981d9-104">Gibt den Namen des angegebenen Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="981d9-104">Returns the name of the specified object.</span></span> <span data-ttu-id="981d9-105">Schreibgeschützter **String**-Wert.</span><span class="sxs-lookup"><span data-stu-id="981d9-105">Read-only **String**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="23e7f-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="23e7f-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="981d9-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="981d9-106">Syntax</span></span>
 
-<span data-ttu-id="23e7f-107">*Ausdruck* . Name</span><span class="sxs-lookup"><span data-stu-id="23e7f-107">*expression* .Name</span></span>
+<span data-ttu-id="981d9-107">*Ausdruck* . Namen</span><span class="sxs-lookup"><span data-stu-id="981d9-107">*expression* .Name</span></span>
 
-<span data-ttu-id="23e7f-108">*Ausdruck* Eine Variable, die ein **Document** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="23e7f-108">*expression* A variable that represents a **Document** object.</span></span>
+<span data-ttu-id="981d9-108">*Ausdruck* Eine Variable, die ein **Document** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="981d9-108">*expression* A variable that represents a **Document** object.</span></span>
 

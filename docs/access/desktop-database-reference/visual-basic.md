@@ -1,5 +1,5 @@
 ---
-title: Visual Basic (Access PC-Datenbank-Referenz)
+title: Visual Basic (Access-Desktop-Daten Bankreferenz)
 TOCTitle: Visual Basic
 ms:assetid: 9d153b6c-c860-7350-cb3c-b9bd08f75ba8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249714(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3045cf3861409d2909f31536670a27c282eb2cdc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312138"
 ---
-# <a name="visual-basic"></a><span data-ttu-id="e6e10-102">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="e6e10-102">Visual Basic</span></span>
+# <a name="visual-basic"></a><span data-ttu-id="8d50a-102">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="8d50a-102">Visual Basic</span></span>
 
 
-<span data-ttu-id="e6e10-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e6e10-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8d50a-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8d50a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e6e10-p101">Um ADO-Ereignisse in Microsoft Visual Basic zu behandeln, müssen Sie mithilfe des **WithEvents** -Schlüsselworts eine Variable auf Modulebene deklarieren. Die Variable kann nur als Teil eines Klassenmoduls deklariert werden und muss auf der Modulebene deklariert werden. Dies ist jedoch weniger restriktiv als es den Anschein hat, weil **Form** -Objekte von Visual Basic ebenfalls Klassen sind. Die einfachste Methode zum Behandeln von ADO-Ereignissen ist das Deklarieren einer Variablen mithilfe von **WithEvents**. Im folgenden Beispiel wird das **ConnectComplete** -Ereignis für ein **Connection** -Objekt behandelt:</span><span class="sxs-lookup"><span data-stu-id="e6e10-p101">In order to handle ADO events in Microsoft Visual Basic, you must declare a module-level variable using the **WithEvents** keyword. The variable can be declared only as part of a class module and must be declared at the module level. This is not as restrictive as it seems, however, because Visual Basic **Form** objects are also classes. The simplest way to handle ADO events is to declare a variable using **WithEvents**. The following example handles the **ConnectComplete** event for a **Connection** object:</span></span>
+<span data-ttu-id="8d50a-p101">Um ADO-Ereignisse in Microsoft Visual Basic zu behandeln, müssen Sie mithilfe des **WithEvents** -Schlüsselworts eine Variable auf Modulebene deklarieren. Die Variable kann nur als Teil eines Klassenmoduls deklariert werden und muss auf der Modulebene deklariert werden. Dies ist jedoch weniger restriktiv als es den Anschein hat, weil **Form** -Objekte von Visual Basic ebenfalls Klassen sind. Die einfachste Methode zum Behandeln von ADO-Ereignissen ist das Deklarieren einer Variablen mithilfe von **WithEvents**. Im folgenden Beispiel wird das **ConnectComplete** -Ereignis für ein **Connection** -Objekt behandelt:</span><span class="sxs-lookup"><span data-stu-id="8d50a-p101">In order to handle ADO events in Microsoft Visual Basic, you must declare a module-level variable using the **WithEvents** keyword. The variable can be declared only as part of a class module and must be declared at the module level. This is not as restrictive as it seems, however, because Visual Basic **Form** objects are also classes. The simplest way to handle ADO events is to declare a variable using **WithEvents**. The following example handles the **ConnectComplete** event for a **Connection** object:</span></span>
 
 ```vb 
  
@@ -77,5 +77,5 @@ End Sub
 ' EndEventExampleVB02 
 ```
 
-<span data-ttu-id="e6e10-109">Das **Connection** -Objekt wird auf **Formularebene verwenden das Schlüsselwort **WithEvents** zum ermöglichen des Ereignisbehandlung** deklariert.</span><span class="sxs-lookup"><span data-stu-id="e6e10-109">The **Connection** object is declared at the **Form** level using the **WithEvents** keyword to enable event handling.</span></span> <span data-ttu-id="e6e10-110">Das Formular\_Load-Ereignishandler erstellt das Objekt, indem Sie **ein neues Verbindungsobjekt** *ConnEvent* zuweisen, und klicken Sie dann die Verbindung wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="e6e10-110">The Form\_Load event handler actually creates the object by assigning a new **Connection** object to *connEvent* and then opens the connection.</span></span> <span data-ttu-id="e6e10-111">Natürlich eine echte Anwendung würden führen Sie weitere Verarbeitung in der Form\_Load-Ereignishandler als hier dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="e6e10-111">Of course, a real application would do more processing in the Form\_Load event handler than is shown here.</span></span>
+<span data-ttu-id="8d50a-109">The **Connection** object is declared at the **Form** level using the **WithEvents** keyword to enable event handling.</span><span class="sxs-lookup"><span data-stu-id="8d50a-109">The **Connection** object is declared at the **Form** level using the **WithEvents** keyword to enable event handling.</span></span> <span data-ttu-id="8d50a-110">Der Ereignis\_Handler für den formularladevorgang erstellt das Objekt, indem ein neues **Connection** -Objekt zu *connEvent* zugewiesen und dann die Verbindung geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="8d50a-110">The Form\_Load event handler actually creates the object by assigning a new **Connection** object to *connEvent* and then opens the connection.</span></span> <span data-ttu-id="8d50a-111">Natürlich würde eine echte Anwendung im Formular\_Lade-Ereignishandler mehr Verarbeitung als hier gezeigt.</span><span class="sxs-lookup"><span data-stu-id="8d50a-111">Of course, a real application would do more processing in the Form\_Load event handler than is shown here.</span></span>
 

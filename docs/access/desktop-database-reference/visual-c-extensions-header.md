@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 60dbf94824c5563196c549e2276b903ea814b1fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311326"
 ---
-# <a name="visual-c-extensions-header"></a><span data-ttu-id="aa803-102">Kopfzeile für Visual C++-Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="aa803-102">Visual C++ Extensions header</span></span>
+# <a name="visual-c-extensions-header"></a><span data-ttu-id="1fa98-102">Kopfzeile für Visual C++-Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="1fa98-102">Visual C++ Extensions header</span></span>
 
 
-<span data-ttu-id="aa803-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="aa803-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="1fa98-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1fa98-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="aa803-p101">Im folgenden Header, **icrsint.h**, wird die Schnittstelle beschrieben, die es Clients ermöglicht, Felder aus einem **Recordset** -Objekt in Variablen abzurufen, die in einer von **CADORecordBinding** abgeleiteten Klasse definiert sind. Sie müssen für jedes Feld, auf das Sie zugreifen möchten, ein ADO-Bindungsmakro angeben.</span><span class="sxs-lookup"><span data-stu-id="aa803-p101">The following header, **icrsint.h**, details the interface that allow clients to retrieve fields from a **Recordset** into variables defined in a class derived from **CADORecordBinding**. You must specify an ADO binding macro for each field you intend to access.</span></span>
+<span data-ttu-id="1fa98-p101">Im folgenden Header, **icrsint.h**, wird die Schnittstelle beschrieben, die es Clients ermöglicht, Felder aus einem **Recordset** -Objekt in Variablen abzurufen, die in einer von **CADORecordBinding** abgeleiteten Klasse definiert sind. Sie müssen für jedes Feld, auf das Sie zugreifen möchten, ein ADO-Bindungsmakro angeben.</span><span class="sxs-lookup"><span data-stu-id="1fa98-p101">The following header, **icrsint.h**, details the interface that allow clients to retrieve fields from a **Recordset** into variables defined in a class derived from **CADORecordBinding**. You must specify an ADO binding macro for each field you intend to access.</span></span>
 
 ```cpp 
  

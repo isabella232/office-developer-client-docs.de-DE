@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 40a97c7f755f681169c77c3a2077ee41d9cdc980
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293686"
 ---
-# <a name="drilleddown-property-ado-md"></a><span data-ttu-id="c279a-102">DrilledDown-Eigenschaft (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="c279a-102">DrilledDown property (ADO MD)</span></span>
+# <a name="drilleddown-property-ado-md"></a><span data-ttu-id="3c8a4-102">DrilledDown-Eigenschaft (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="3c8a4-102">DrilledDown property (ADO MD)</span></span>
 
 
-<span data-ttu-id="c279a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c279a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3c8a4-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3c8a4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c279a-104">Gibt an, ob dem Element auf der Achse direkt untergeordnete Elemente folgen.</span><span class="sxs-lookup"><span data-stu-id="c279a-104">Indicates whether no children immediately follow the member on the axis.</span></span>
+<span data-ttu-id="3c8a4-104">Gibt an, ob dem Element auf der Achse direkt untergeordnete Elemente folgen.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-104">Indicates whether no children immediately follow the member on the axis.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="c279a-105">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="c279a-105">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="3c8a4-105">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="3c8a4-105">Return values</span></span>
 
-<span data-ttu-id="c279a-p101">Gibt einen schreibgeschützten **Boolean** -Wert zurück. **DrilledDown** gibt **True** zurück, wenn sich keine untergeordneten Elemente des aktuellen Elements auf der Achse befinden. **DrilledDown** gibt **False** zurück, wenn sich ein oder mehrere untergeordnete Elemente des aktuellen Elements auf der Achse befinden.</span><span class="sxs-lookup"><span data-stu-id="c279a-p101">Returns a **Boolean** value and is read-only. **DrilledDown** returns **True** if there are no child members of the current member on the axis. **DrilledDown** returns **False** if there is one or more child members of the current member on the axis.</span></span>
+<span data-ttu-id="3c8a4-p101">Gibt einen schreibgeschützten **Boolean** -Wert zurück. **DrilledDown** gibt **True** zurück, wenn sich keine untergeordneten Elemente des aktuellen Elements auf der Achse befinden. **DrilledDown** gibt **False** zurück, wenn sich ein oder mehrere untergeordnete Elemente des aktuellen Elements auf der Achse befinden.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-p101">Returns a **Boolean** value and is read-only. **DrilledDown** returns **True** if there are no child members of the current member on the axis. **DrilledDown** returns **False** if there is one or more child members of the current member on the axis.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="c279a-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c279a-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3c8a4-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3c8a4-109">Remarks</span></span>
 
-<span data-ttu-id="c279a-p102">Verwenden Sie die **DrilledDown** -Eigenschaft, um zu bestimmen, ob sich mindestens ein untergeordnetes Element in direkter Folge des aktuellen Elements auf der Achse befindet. Diese Information ist beim Anzeigen des Elements nützlich.</span><span class="sxs-lookup"><span data-stu-id="c279a-p102">Use the **DrilledDown** property to determine whether there is at least one child of this member on the axis immediately following this member. This information is useful when displaying the member.</span></span>
+<span data-ttu-id="3c8a4-p102">Verwenden Sie die **DrilledDown** -Eigenschaft, um zu bestimmen, ob sich mindestens ein untergeordnetes Element in direkter Folge des aktuellen Elements auf der Achse befindet. Diese Information ist beim Anzeigen des Elements nützlich.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-p102">Use the **DrilledDown** property to determine whether there is at least one child of this member on the axis immediately following this member. This information is useful when displaying the member.</span></span>
 
-<span data-ttu-id="c279a-p103">Diese Eigenschaft wird nur für [Member](member-object-ado-md.md)-Objekte unterstützt, die zu einem [Position](position-object-ado-md.md)-Objekt gehören. Wenn auf diese Eigenschaft durch **Member** -Objekte verwiesen wird, die zu einem [Level](level-object-ado-md.md)-Objekt gehören, tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="c279a-p103">This property is only supported on [Member](member-object-ado-md.md) objects belonging to a [Position](position-object-ado-md.md) object. An error occurs when this property is referenced from **Member** objects belonging to a [Level](level-object-ado-md.md) object.</span></span>
+<span data-ttu-id="3c8a4-p103">Diese Eigenschaft wird nur für [Member](member-object-ado-md.md)-Objekte unterstützt, die zu einem [Position](position-object-ado-md.md)-Objekt gehören. Wenn auf diese Eigenschaft durch **Member** -Objekte verwiesen wird, die zu einem [Level](level-object-ado-md.md)-Objekt gehören, tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="3c8a4-p103">This property is only supported on [Member](member-object-ado-md.md) objects belonging to a [Position](position-object-ado-md.md) object. An error occurs when this property is referenced from **Member** objects belonging to a [Level](level-object-ado-md.md) object.</span></span>
 

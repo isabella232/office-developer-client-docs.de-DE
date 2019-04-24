@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b6da2dc9ff721adbb4bc0e533a02085adb534b0b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292230"
 ---
-# <a name="getrows-method-example-jscript"></a><span data-ttu-id="8f9a9-102">GetRows-Methode (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="8f9a9-102">GetRows method example (JScript)</span></span>
+# <a name="getrows-method-example-jscript"></a><span data-ttu-id="e60b2-102">GetRows-Methode (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="e60b2-102">GetRows method example (JScript)</span></span>
 
 
-<span data-ttu-id="8f9a9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8f9a9-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e60b2-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e60b2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8f9a9-104">In diesem Beispiel wird die [GetRows](getrows-method-ado.md) -Methode alle Zeilen der Tabelle *Custiomers* aus einem [Recordset-Objekt](recordset-object-ado.md) abgerufen und um ein Array mit den resultierenden Daten aufzufüllen.</span><span class="sxs-lookup"><span data-stu-id="8f9a9-104">This example uses the [GetRows](getrows-method-ado.md) method to retrieve all rows of the *Custiomers* table from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data.</span></span> <span data-ttu-id="8f9a9-105">Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde.</span><span class="sxs-lookup"><span data-stu-id="8f9a9-105">The **GetRows** method will return fewer than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user.</span></span> <span data-ttu-id="8f9a9-106">Die Funktion gibt nur im zweiten Fall **False** zurück.</span><span class="sxs-lookup"><span data-stu-id="8f9a9-106">The function returns **False** only if the second case occurs.</span></span> <span data-ttu-id="8f9a9-107">Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einen anderen Texteditor ein, und speichern Sie die Datei unter dem Namen **GetRowsJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="8f9a9-107">Cut and paste the following code to Notepad or another text editor, and save it as **GetRowsJS.asp**.</span></span>
+<span data-ttu-id="e60b2-p101">In diesem Beispiel wird die [GetRows](getrows-method-ado.md)-Methode verwendet, um alle Zeilen der *Custiomers*-Table aus einem [Recordset](recordset-object-ado.md)-Objekt abzurufen, und um ein Array mit den resultierenden Daten aufzufüllen. Die **GetRows**-Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Wert abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einen anderen Texteditor ein, und speichern Sie die Datei unter dem Namen **GetRowsJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="e60b2-p101">This example uses the [GetRows](getrows-method-ado.md) method to retrieve all rows of the *Custiomers* table from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return fewer than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. Cut and paste the following code to Notepad or another text editor, and save it as **GetRowsJS.asp**.</span></span>
 
 ```javascript 
  

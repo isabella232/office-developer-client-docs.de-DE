@@ -1,5 +1,5 @@
 ---
-title: Field2.FieldSize-Eigenschaft (DAO)
+title: Field2. Fieldes-Eigenschaft (DAO)
 TOCTitle: FieldSize Property
 ms:assetid: d609801d-7761-663f-2840-de5923bb120c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835039(v=office.15)
@@ -12,45 +12,45 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a7dfeb33568664a6a75f9f43de64e0c24abeb09a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292804"
 ---
-# <a name="field2fieldsize-property-dao"></a><span data-ttu-id="0c97b-102">Field2.FieldSize-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="0c97b-102">Field2.FieldSize property (DAO)</span></span>
+# <a name="field2fieldsize-property-dao"></a><span data-ttu-id="1b2fd-102">Field2. Fieldes-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="1b2fd-102">Field2.FieldSize property (DAO)</span></span>
 
 
-<span data-ttu-id="0c97b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0c97b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="1b2fd-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1b2fd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="0c97b-104">Gibt die in der Datenbank (nicht im Arbeitsspeicher) verwendete Anzahl von Bytes eines Field2-Objekts vom Typ Memo oder Long Binary in der Fields-Auflistung eines Recordset-Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="0c97b-104">Returns the number of bytes used in the database (rather than in memory) of a Memo or Long Binary **Field2** object in the **[Fields](fields-collection-dao.md)** collection of a **[Recordset](recordset-object-dao.md)** object.</span></span>
+<span data-ttu-id="1b2fd-104">Returns the number of bytes used in the database (rather than in memory) of a Memo or Long Binary **Field2** object in the **[Fields](fields-collection-dao.md)** collection of a **[Recordset](recordset-object-dao.md)** object.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-104">Returns the number of bytes used in the database (rather than in memory) of a Memo or Long Binary **Field2** object in the **[Fields](fields-collection-dao.md)** collection of a **[Recordset](recordset-object-dao.md)** object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0c97b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="0c97b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1b2fd-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1b2fd-105">Syntax</span></span>
 
-<span data-ttu-id="0c97b-106">*Ausdruck* . Feldgröße</span><span class="sxs-lookup"><span data-stu-id="0c97b-106">*expression* .FieldSize</span></span>
+<span data-ttu-id="1b2fd-106">*Ausdruck* . Feldgröße</span><span class="sxs-lookup"><span data-stu-id="1b2fd-106">*expression* .FieldSize</span></span>
 
-<span data-ttu-id="0c97b-107">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="0c97b-107">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="1b2fd-107">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-107">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0c97b-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="0c97b-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1b2fd-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1b2fd-108">Remarks</span></span>
 
-<span data-ttu-id="0c97b-109">Sie können die **FieldSize**-Eigenschaft mit den Methoden **[AppendChunk](field-appendchunk-method-dao.md)** und **[GetChunk](field-getchunk-method-dao.md)** zum Bearbeiten großer Felder verwenden.</span><span class="sxs-lookup"><span data-stu-id="0c97b-109">You can use **FieldSize** with the **[AppendChunk](field-appendchunk-method-dao.md)** and **[GetChunk](field-getchunk-method-dao.md)** methods to manipulate large fields.</span></span>
+<span data-ttu-id="1b2fd-109">Sie können die **FieldSize**-Eigenschaft mit den Methoden **[AppendChunk](field-appendchunk-method-dao.md)** und **[GetChunk](field-getchunk-method-dao.md)** zum Bearbeiten großer Felder verwenden.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-109">You can use **FieldSize** with the **[AppendChunk](field-appendchunk-method-dao.md)** and **[GetChunk](field-getchunk-method-dao.md)** methods to manipulate large fields.</span></span>
 
-<span data-ttu-id="0c97b-110">Da die Größe eines Felds vom Datentyp Long Binary oder Memo 64 KB überschreiten kann, sollten Sie den von der FieldSize-Eigenschaft zurückgegebenen Wert einer Variablen zuordnen, deren Größe zum Speichern einer Long-Variablen ausreicht.</span><span class="sxs-lookup"><span data-stu-id="0c97b-110">Because the size of a Long Binary or Memo field can exceed 64K, you should assign the value returned by **FieldSize** to a variable large enough to store a **Long** variable.</span></span>
+<span data-ttu-id="1b2fd-110">Because the size of a Long Binary or Memo field can exceed 64K, you should assign the value returned by **FieldSize** to a variable large enough to store a **Long** variable.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-110">Because the size of a Long Binary or Memo field can exceed 64K, you should assign the value returned by **FieldSize** to a variable large enough to store a **Long** variable.</span></span>
 
-<span data-ttu-id="0c97b-111">Wenn Sie die Größe eines Field2-Objekts eines anderen Typs als Memo and Long Binary ermitteln möchten, verwenden Sie die Size-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="0c97b-111">To determine the size of a **Field2** object other than Memo and Long Binary types, use the **[Size](field-size-property-dao.md)** property.</span></span>
+<span data-ttu-id="1b2fd-111">To determine the size of a **Field2** object other than Memo and Long Binary types, use the **[Size](field-size-property-dao.md)** property.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-111">To determine the size of a **Field2** object other than Memo and Long Binary types, use the **[Size](field-size-property-dao.md)** property.</span></span>
 
-  - <span data-ttu-id="0c97b-112">Der Datenbankserver oder ODBC-Treiber unterstützt keine serverseitigen Cursor.</span><span class="sxs-lookup"><span data-stu-id="0c97b-112">If the database server or ODBC driver does not support server-side cursors.</span></span>
+  - <span data-ttu-id="1b2fd-112">Der Datenbankserver oder ODBC-Treiber unterstützt keine serverseitigen Cursor.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-112">If the database server or ODBC driver does not support server-side cursors.</span></span>
 
-  - <span data-ttu-id="0c97b-113">Sie verwenden die ODBC-Cursorbibliothek (d. h. die **DefaultCursorDriver**-Eigenschaft ist auf **dbUseODBC** festgelegt oder auf **dbUseDefault**, wenn der Server keine serverseitigen Cursor unterstützt).</span><span class="sxs-lookup"><span data-stu-id="0c97b-113">If you are using the ODBC cursor library (that is, the **DefaultCursorDriver** property is set to **dbUseODBC**, or to **dbUseDefault** when the server does not support server-side cursors).</span></span>
+  - <span data-ttu-id="1b2fd-113">Sie verwenden die ODBC-Cursorbibliothek (d. h. die **DefaultCursorDriver**-Eigenschaft ist auf **dbUseODBC** festgelegt oder auf **dbUseDefault**, wenn der Server keine serverseitigen Cursor unterstützt).</span><span class="sxs-lookup"><span data-stu-id="1b2fd-113">If you are using the ODBC cursor library (that is, the **DefaultCursorDriver** property is set to **dbUseODBC**, or to **dbUseDefault** when the server does not support server-side cursors).</span></span>
 
-  - <span data-ttu-id="0c97b-114">Sie verwenden eine Abfrage ohne Cursor (d. h. die **DefaultCursorDriver**-Eigenschaft ist auf **dbUseNoCursor** festgelegt).</span><span class="sxs-lookup"><span data-stu-id="0c97b-114">If you are using a cursorless query (that is, the **DefaultCursorDriver** property is set to **dbUseNoCursor**).</span></span>
+  - <span data-ttu-id="1b2fd-114">Sie verwenden eine Abfrage ohne Cursor (d. h. die **DefaultCursorDriver**-Eigenschaft ist auf **dbUseNoCursor** festgelegt).</span><span class="sxs-lookup"><span data-stu-id="1b2fd-114">If you are using a cursorless query (that is, the **DefaultCursorDriver** property is set to **dbUseNoCursor**).</span></span>
 
-<span data-ttu-id="0c97b-p101">Die **FieldSize**-Eigenschaft und die VBA-Funktionen **Len()** oder **LenB()** geben möglicherweise unterschiedliche Werte als Länge derselben Zeichenfolge zurück. Zeichenfolgen werden in einer Microsoft Access-Datenbank in einem MBCS-Format (Multi-Byte Character Set, Mehrbyte-Zeichensatz) gespeichert, jedoch in VBA im Unicode-Format angezeigt. Folglich gibt die **Len()**-Funktion immer die Anzahl von Zeichen, die **LenB**-Funktion immer die Anzahl von Zeichen mal 2 (Unicode verwendet 2 Bytes pro Zeichen) und die **FieldSize**-Eigenschaft einen Wert dazwischen zurück, wenn die Zeichenfolge MBCS-Zeichen enthält. Angenommen, eine Zeichenfolge besteht aus 3 normalen Zeichen und 2 MBCS-Zeichen, dann gibt **Len()** 5 zurück, **LenB()** 10 und **FieldSize** 7, d. h. die Summe von 1 für jedes normale Zeichen und 2 für jedes MBCS-Zeichen.</span><span class="sxs-lookup"><span data-stu-id="0c97b-p101">The **FieldSize** property and the VBA **Len()** or **LenB()** functions may return different values as the length of the same string. Strings are stored in a Microsoft Access database in multi-byte character set (MBCS) form, but exposed through VBA in Unicode format. As a result, the **Len()** function will always return the number of characters, **LenB** will always return the number of characters X 2 (Unicode uses two bytes for each character), but **FieldSize** will return some value in between if the string has any MBCS characters. For example, given a string consisting of three normal characters and two MBCS characters, **Len()** will return 5, **LenB()** will return 10, and **FieldSize** will return 7, the sum of 1 for each normal character and 2 for each MBCS character.</span></span>
+<span data-ttu-id="1b2fd-p101">Die **FieldSize**-Eigenschaft und die VBA-Funktionen **Len()** oder **LenB()** geben möglicherweise unterschiedliche Werte als Länge derselben Zeichenfolge zurück. Zeichenfolgen werden in einer Microsoft Access-Datenbank in einem MBCS-Format (Multi-Byte Character Set, Mehrbyte-Zeichensatz) gespeichert, jedoch in VBA im Unicode-Format angezeigt. Folglich gibt die **Len()**-Funktion immer die Anzahl von Zeichen, die **LenB**-Funktion immer die Anzahl von Zeichen mal 2 (Unicode verwendet 2 Bytes pro Zeichen) und die **FieldSize**-Eigenschaft einen Wert dazwischen zurück, wenn die Zeichenfolge MBCS-Zeichen enthält. Angenommen, eine Zeichenfolge besteht aus 3 normalen Zeichen und 2 MBCS-Zeichen, dann gibt **Len()** 5 zurück, **LenB()** 10 und **FieldSize** 7, d. h. die Summe von 1 für jedes normale Zeichen und 2 für jedes MBCS-Zeichen.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-p101">The **FieldSize** property and the VBA **Len()** or **LenB()** functions may return different values as the length of the same string. Strings are stored in a Microsoft Access database in multi-byte character set (MBCS) form, but exposed through VBA in Unicode format. As a result, the **Len()** function will always return the number of characters, **LenB** will always return the number of characters X 2 (Unicode uses two bytes for each character), but **FieldSize** will return some value in between if the string has any MBCS characters. For example, given a string consisting of three normal characters and two MBCS characters, **Len()** will return 5, **LenB()** will return 10, and **FieldSize** will return 7, the sum of 1 for each normal character and 2 for each MBCS character.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0c97b-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0c97b-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1b2fd-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1b2fd-119">Example</span></span>
 
-<span data-ttu-id="0c97b-120">Dieses Beispiel veranschaulicht, wie Sie mit der FieldSize-Eigenschaft die Anzahl von Bytes auflisten, die in Field-Objekten vom Typ Memo und Long Binary in zwei verschiedenen Tabellen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="0c97b-120">This example uses the **FieldSize** property to list the number of bytes used by the Memo and Long Binary Field objects in two different tables.</span></span>
+<span data-ttu-id="1b2fd-120">This example uses the **FieldSize** property to list the number of bytes used by the Memo and Long Binary Field objects in two different tables.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-120">This example uses the **FieldSize** property to list the number of bytes used by the Memo and Long Binary Field objects in two different tables.</span></span>
 
 ```vb
     Sub FieldSizeX() 
@@ -110,7 +110,7 @@ ms.locfileid: "28713576"
 
 <br/>
 
-<span data-ttu-id="0c97b-p102">In diesem Beispiel werden die Methoden **AppendChunk** und **GetChunk** verwendet, um ein OLE-Objektfeld mit Daten aus einem anderen Datensatz zu füllen (immer jeweils 32 KB). In einer echten Anwendung kann es sinnvoll sein, mit einer Prozedur wie dieser einen Mitarbeiterdatensatz (inklusive Foto des Mitarbeiters) von einer Tabelle in eine andere zu kopieren. In diesem Beispiel wird der Datensatz einfach wieder in dieselbe Tabelle kopiert. Beachten Sie, dass die gesamte Bearbeitung des Abschnitts innerhalb einer einzelnen AddNew-Aktualisierungssequenz erfolgt.</span><span class="sxs-lookup"><span data-stu-id="0c97b-p102">This example uses the **AppendChunk** and **GetChunk** methods to fill an OLE object field with data from another record, 32K at a time. In a real application, one might use a procedure like this to copy an employee record (including the employee's photo) from one table to another. In this example, the record is simply being copied back to same table. Note that all the chunk manipulation takes place within a single AddNew-Update sequence.</span></span>
+<span data-ttu-id="1b2fd-p102">In diesem Beispiel werden die Methoden **AppendChunk** und **GetChunk** verwendet, um ein OLE-Objektfeld mit Daten aus einem anderen Datensatz zu füllen (immer jeweils 32 KB). In einer echten Anwendung kann es sinnvoll sein, mit einer Prozedur wie dieser einen Mitarbeiterdatensatz (inklusive Foto des Mitarbeiters) von einer Tabelle in eine andere zu kopieren. In diesem Beispiel wird der Datensatz einfach wieder in dieselbe Tabelle kopiert. Beachten Sie, dass die gesamte Bearbeitung des Abschnitts innerhalb einer einzelnen AddNew-Aktualisierungssequenz erfolgt.</span><span class="sxs-lookup"><span data-stu-id="1b2fd-p102">This example uses the **AppendChunk** and **GetChunk** methods to fill an OLE object field with data from another record, 32K at a time. In a real application, one might use a procedure like this to copy an employee record (including the employee's photo) from one table to another. In this example, the record is simply being copied back to same table. Note that all the chunk manipulation takes place within a single AddNew-Update sequence.</span></span>
 
 ```vb
     Sub AppendChunkX() 

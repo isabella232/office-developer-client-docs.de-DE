@@ -1,5 +1,5 @@
 ---
-title: TableDef.SourceTableName-Eigenschaft (DAO)
+title: TableDef. SourceTableName-Eigenschaft (DAO)
 TOCTitle: SourceTableName Property
 ms:assetid: 3c02f5f6-70ae-39ec-0984-8d6b81992418
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192675(v=office.15)
@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: bd2610e728d97d3a9fc2f6359a42fd3cdccb11e5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314259"
 ---
-# <a name="tabledefsourcetablename-property-dao"></a><span data-ttu-id="6975b-102">TableDef.SourceTableName-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="6975b-102">TableDef.SourceTableName property (DAO)</span></span>
+# <a name="tabledefsourcetablename-property-dao"></a><span data-ttu-id="6fe43-102">TableDef. SourceTableName-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="6fe43-102">TableDef.SourceTableName property (DAO)</span></span>
 
 
-<span data-ttu-id="6975b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6975b-103">**Applies to**: Access 2013, Office 2013</span></span> 
+<span data-ttu-id="6fe43-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6fe43-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="6975b-104">Legt einen Wert fest, der den Namen einer verknüpften Tabelle oder den Namen einer Basistabelle angibt, oder gibt den betreffenden Namen zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6975b-104">Sets or returns a value that specifies the name of a linked table or the name of a base table (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="6fe43-104">Legt einen Wert fest, der den Namen einer verknüpften Tabelle oder den Namen einer Basistabelle angibt, oder gibt den betreffenden Namen zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="6fe43-104">Sets or returns a value that specifies the name of a linked table or the name of a base table (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6975b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="6975b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6fe43-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="6fe43-105">Syntax</span></span>
 
-<span data-ttu-id="6975b-106">*Ausdruck* . SourceTableName</span><span class="sxs-lookup"><span data-stu-id="6975b-106">*expression* .SourceTableName</span></span>
+<span data-ttu-id="6fe43-106">*Ausdruck* . SourceTableName</span><span class="sxs-lookup"><span data-stu-id="6fe43-106">*expression* .SourceTableName</span></span>
 
-<span data-ttu-id="6975b-107">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="6975b-107">*expression* A variable that represents a **TableDef** object.</span></span>
+<span data-ttu-id="6fe43-107">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="6fe43-107">*expression* A variable that represents a **TableDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="6975b-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6975b-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6fe43-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6fe43-108">Remarks</span></span>
 
-<span data-ttu-id="6975b-p101">Der Wert dieser Eigenschaft ist für eine Basistabelle schreibgeschützt. Für eine verknüpfte Tabelle oder ein Objekt, das nicht an eine Auflistung angefügt wurde, besteht Lese-/Schreibzugriff. Bei einer Basistabelle ist der Wert eine leere Zeichenfolge ("").</span><span class="sxs-lookup"><span data-stu-id="6975b-p101">This property setting is read-only for a base table and read/write for a linked table or an object not appended to a collection. For a base table, the setting is a zero-length string ("").</span></span>
+<span data-ttu-id="6fe43-p101">Der Wert dieser Eigenschaft ist für eine Basistabelle schreibgeschützt. Für eine verknüpfte Tabelle oder ein Objekt, das nicht an eine Auflistung angefügt wurde, besteht Lese-/Schreibzugriff. Bei einer Basistabelle ist der Wert eine leere Zeichenfolge ("").</span><span class="sxs-lookup"><span data-stu-id="6fe43-p101">This property setting is read-only for a base table and read/write for a linked table or an object not appended to a collection. For a base table, the setting is a zero-length string ("").</span></span>
 
-## <a name="example"></a><span data-ttu-id="6975b-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6975b-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6fe43-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6fe43-111">Example</span></span>
 
-<span data-ttu-id="6975b-p102">In diesem Beispiel werden mithilfe der Eigenschaften Connect und SourceTableName verschiedene externe Tabellen mit einer Microsoft Access-Datenbank verknüpft. Zum Ausführen dieser Prozedur ist die ConnectOutput-Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6975b-p102">This example uses the **Connect** and **SourceTableName** properties to link various external tables to a Microsoft Access database. The ConnectOutput procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="6fe43-p102">This example uses the **Connect** and **SourceTableName** properties to link various external tables to a Microsoft Access database. The ConnectOutput procedure is required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="6fe43-p102">This example uses the **Connect** and **SourceTableName** properties to link various external tables to a Microsoft Access database. The ConnectOutput procedure is required for this procedure to run.</span></span>
 
 ```vb 
 Sub ConnectX() 

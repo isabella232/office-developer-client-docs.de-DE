@@ -1,5 +1,5 @@
 ---
-title: Field2.Expression-Eigenschaft (DAO)
+title: Field2. Expression-Eigenschaft (DAO)
 TOCTitle: Expression Property
 ms:assetid: 8ae9db2c-7460-5bfc-0dc4-3f87e5ab30ff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197109(v=office.15)
@@ -8,41 +8,41 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 603dfaa9a54ddfe769b96a57b790b4657abbeb14
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292818"
 ---
-# <a name="field2expression-property-dao"></a><span data-ttu-id="1156e-102">Field2.Expression-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="1156e-102">Field2.Expression property (DAO)</span></span>
+# <a name="field2expression-property-dao"></a><span data-ttu-id="abf19-102">Field2. Expression-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="abf19-102">Field2.Expression property (DAO)</span></span>
 
-<span data-ttu-id="1156e-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1156e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="abf19-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="abf19-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1156e-104">Ruft ab oder legt diesen fest einen Ausdruck, der die Formel für ein berechnetes Feld darstellt.</span><span class="sxs-lookup"><span data-stu-id="1156e-104">Gets or sets an expression that represents the formula for a calculated field.</span></span> <span data-ttu-id="1156e-105">**Zeichenfolge** mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="1156e-105">Read/write **String**.</span></span>
+<span data-ttu-id="abf19-104">Dient zum Abrufen oder Festlegen eines Ausdrucks, der die Formel für ein berechnetes Feld darstellt.</span><span class="sxs-lookup"><span data-stu-id="abf19-104">Gets or sets an expression that represents the formula for a calculated field.</span></span> <span data-ttu-id="abf19-105">**Zeichenfolge** mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="abf19-105">Read/write **String**.</span></span>
 
-## <a name="version-information"></a><span data-ttu-id="1156e-106">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="1156e-106">Version information</span></span>
+## <a name="version-information"></a><span data-ttu-id="abf19-106">Informationen zur Version</span><span class="sxs-lookup"><span data-stu-id="abf19-106">Version information</span></span>
 
-<span data-ttu-id="1156e-107">Hinzugefügte Version: Access 2010</span><span class="sxs-lookup"><span data-stu-id="1156e-107">Version added: Access 2010</span></span>
+<span data-ttu-id="abf19-107">Hinzugefügte Version: Access 2010</span><span class="sxs-lookup"><span data-stu-id="abf19-107">Version added: Access 2010</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1156e-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="1156e-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="abf19-108">Syntax</span><span class="sxs-lookup"><span data-stu-id="abf19-108">Syntax</span></span>
 
-<span data-ttu-id="1156e-109">*Ausdruck* . Ausdruck</span><span class="sxs-lookup"><span data-stu-id="1156e-109">*expression* .Expression</span></span>
+<span data-ttu-id="abf19-109">*Ausdruck* . Ausdruck</span><span class="sxs-lookup"><span data-stu-id="abf19-109">*expression* .Expression</span></span>
 
-<span data-ttu-id="1156e-110">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="1156e-110">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="abf19-110">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="abf19-110">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="1156e-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1156e-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="abf19-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="abf19-111">Remarks</span></span>
 
-<span data-ttu-id="1156e-112">In Access 2013 können Sie Felder der Tabelle erstellen, die Werte berechnen.</span><span class="sxs-lookup"><span data-stu-id="1156e-112">In Access 2013, you can create table fields that calculate values.</span></span> <span data-ttu-id="1156e-113">Die Berechnung können Werte aus Feldern in derselben Tabelle als auch integrierte Funktionen enthalten.</span><span class="sxs-lookup"><span data-stu-id="1156e-113">The calculations can include values from fields in the same table as well as built-in Access functions.</span></span>
+<span data-ttu-id="abf19-112">In Access 2013 können Sie Tabellen Felder erstellen, die Werte berechnen.</span><span class="sxs-lookup"><span data-stu-id="abf19-112">In Access 2013, you can create table fields that calculate values.</span></span> <span data-ttu-id="abf19-113">Die Berechnungen können Werte aus Feldern in derselben Tabelle sowie integrierte Access-Funktionen einbeziehen.</span><span class="sxs-lookup"><span data-stu-id="abf19-113">The calculations can include values from fields in the same table as well as built-in Access functions.</span></span>
 
-<span data-ttu-id="1156e-114">Die Berechnung kann keine Felder aus anderen Tabellen oder Abfragen enthalten.</span><span class="sxs-lookup"><span data-stu-id="1156e-114">The calculation cannot include fields from other tables or queries.</span></span>
+<span data-ttu-id="abf19-114">Die Berechnung darf keine Felder aus anderen Tabellen oder Abfragen aufnehmen.</span><span class="sxs-lookup"><span data-stu-id="abf19-114">The calculation cannot include fields from other tables or queries.</span></span>
 
-<span data-ttu-id="1156e-115">Die Ergebnisse der Berechnung sind schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="1156e-115">The results of the calculation are read-only.</span></span>
+<span data-ttu-id="abf19-115">Die Ergebnisse der Berechnung sind schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="abf19-115">The results of the calculation are read-only.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1156e-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1156e-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="abf19-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="abf19-116">Example</span></span>
 
-<span data-ttu-id="1156e-p103">Im folgenden Beispiel wird veranschaulicht, wie Sie ein berechnetes Feld erstellen. Die CreateField-Methode erstellt ein Feld namens **FullName**. Die Expression-Eigenschaft wird dann auf den Ausdruck festgelegt, der den Wert des Felds berechnet.</span><span class="sxs-lookup"><span data-stu-id="1156e-p103">The following example shows how to create a calculated field. The CreateField method creates a field named **FullName**. The Expression property is then set to the expression that calculates the value of the field.</span></span>
+<span data-ttu-id="abf19-p103">Im folgenden Beispiel wird veranschaulicht, wie Sie ein berechnetes Feld erstellen. Die CreateField-Methode erstellt ein Feld namens **FullName**. Die Expression-Eigenschaft wird dann auf den Ausdruck festgelegt, der den Wert des Felds berechnet.</span><span class="sxs-lookup"><span data-stu-id="abf19-p103">The following example shows how to create a calculated field. The CreateField method creates a field named **FullName**. The Expression property is then set to the expression that calculates the value of the field.</span></span>
 
-<span data-ttu-id="1156e-120">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="1156e-120">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="abf19-120">**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="abf19-120">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     Sub CreateCalculatedField()

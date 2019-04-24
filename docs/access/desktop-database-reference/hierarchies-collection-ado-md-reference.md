@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 43c7d2cb8b8d82047e82472a9db49aa8f1f53b38
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291985"
 ---
-# <a name="hierarchies-collection-ado-md-reference"></a><span data-ttu-id="5978c-102">Hierarchies-Auflistung (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="5978c-102">Hierarchies collection (ADO MD reference)</span></span>
+# <a name="hierarchies-collection-ado-md-reference"></a><span data-ttu-id="f1164-102">Hierarchies-Auflistung (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="f1164-102">Hierarchies collection (ADO MD reference)</span></span>
 
-<span data-ttu-id="5978c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5978c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f1164-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f1164-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="5978c-104">Hierarchies-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="5978c-104">Hierarchies collection (ADO MD)</span></span>](hierarchies-collection-ado-md.md)
-- [<span data-ttu-id="5978c-105">Hierarchies-Auflistung: Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="5978c-105">Hierarchies collection properties, methods, and events (ADO MD)</span></span>](hierarchies-collection-properties-methods-and-events-ado-md.md)
+- [<span data-ttu-id="f1164-104">Hierarchies-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="f1164-104">Hierarchies collection (ADO MD)</span></span>](hierarchies-collection-ado-md.md)
+- [<span data-ttu-id="f1164-105">Hierarchies-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="f1164-105">Hierarchies collection properties, methods, and events (ADO MD)</span></span>](hierarchies-collection-properties-methods-and-events-ado-md.md)
 

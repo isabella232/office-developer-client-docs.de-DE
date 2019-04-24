@@ -1,5 +1,5 @@
 ---
-title: TableDef.Properties-Eigenschaft (DAO)
+title: TableDef. Properties-Eigenschaft (DAO)
 TOCTitle: Properties Property
 ms:assetid: e6eefc5f-498c-77c1-79e1-e4d0b8cc2133
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835993(v=office.15)
@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fa84d0101ca920b71882ed9f275753b03d9054e7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314273"
 ---
-# <a name="tabledefproperties-property-dao"></a><span data-ttu-id="13d45-102">TableDef.Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="13d45-102">TableDef.Properties property (DAO)</span></span>
+# <a name="tabledefproperties-property-dao"></a><span data-ttu-id="b4035-102">TableDef. Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="b4035-102">TableDef.Properties property (DAO)</span></span>
 
 
-<span data-ttu-id="13d45-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="13d45-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b4035-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b4035-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="13d45-p101">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="13d45-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
+<span data-ttu-id="b4035-104">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="b4035-104">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object.</span></span> <span data-ttu-id="b4035-105">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b4035-105">Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="13d45-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="13d45-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b4035-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="b4035-106">Syntax</span></span>
 
-<span data-ttu-id="13d45-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="13d45-107">*expression* .Properties</span></span>
+<span data-ttu-id="b4035-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b4035-107">*expression* .Properties</span></span>
 
-<span data-ttu-id="13d45-108">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="13d45-108">*expression* A variable that represents a **TableDef** object.</span></span>
+<span data-ttu-id="b4035-108">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="b4035-108">*expression* A variable that represents a **TableDef** object.</span></span>
 

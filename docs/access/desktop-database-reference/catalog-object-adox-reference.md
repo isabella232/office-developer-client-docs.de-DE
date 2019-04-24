@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e1971a27a6570ceff621c4b8c0b66db7e6224196
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296584"
 ---
-# <a name="catalog-object-adox-reference"></a><span data-ttu-id="860d0-102">Catalog-Objekt (ADOX)-Referenz</span><span class="sxs-lookup"><span data-stu-id="860d0-102">Catalog object (ADOX) reference</span></span>
+# <a name="catalog-object-adox-reference"></a><span data-ttu-id="4924f-102">Catalog-Objekt (ADOX)-Referenz</span><span class="sxs-lookup"><span data-stu-id="4924f-102">Catalog object (ADOX) reference</span></span>
 
-<span data-ttu-id="860d0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="860d0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4924f-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4924f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="860d0-104">Catalog-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="860d0-104">Catalog object (ADOX)</span></span>](catalog-object-adox.md)
-- [<span data-ttu-id="860d0-105">Eigenschaften, Methoden und Ereignisse (ADOX)</span><span class="sxs-lookup"><span data-stu-id="860d0-105">Catalog properties, methods, and events (ADOX)</span></span>](catalog-properties-methods-and-events-adox.md)
+- [<span data-ttu-id="4924f-104">Catalog-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="4924f-104">Catalog object (ADOX)</span></span>](catalog-object-adox.md)
+- [<span data-ttu-id="4924f-105">Katalogeigenschaften, Methoden und Ereignisse (ADOX)</span><span class="sxs-lookup"><span data-stu-id="4924f-105">Catalog properties, methods, and events (ADOX)</span></span>](catalog-properties-methods-and-events-adox.md)
 

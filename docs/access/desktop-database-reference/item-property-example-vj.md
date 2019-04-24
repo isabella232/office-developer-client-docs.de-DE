@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9a3aa155505e8d6376c0a741f932d59906083965
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290800"
 ---
-# <a name="item-property-example-vj"></a><span data-ttu-id="4e8a2-102">Item-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="4e8a2-102">Item property example (VJ++)</span></span>
+# <a name="item-property-example-vj"></a><span data-ttu-id="e34cd-102">Item-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="e34cd-102">Item property example (VJ++)</span></span>
 
 
-<span data-ttu-id="4e8a2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4e8a2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e34cd-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e34cd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4e8a2-p101">In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.</span><span class="sxs-lookup"><span data-stu-id="4e8a2-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
+<span data-ttu-id="e34cd-104">In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift.</span><span class="sxs-lookup"><span data-stu-id="e34cd-104">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection.</span></span> <span data-ttu-id="e34cd-105">In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.</span><span class="sxs-lookup"><span data-stu-id="e34cd-105">The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
 
-<span data-ttu-id="4e8a2-p102">Auf den Parameter, der sich in dem an die Datenbank ausgegebenen Befehl befindet, wird von der [Parameters](command-object-ado.md)-Auflistung des [Command](parameters-collection-ado.md)-Objekts aus anhand von Index und Name zugegriffen. Auf die Felder des zurückgegebenen [Recordset](recordset-object-ado.md)-Objekts wird anschließend von der [Fields](fields-collection-ado.md)-Auflistung dieses Objekts aus anhand von Index und Name zugegriffen.</span><span class="sxs-lookup"><span data-stu-id="4e8a2-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
+<span data-ttu-id="e34cd-p102">Auf den Parameter, der sich in dem an die Datenbank ausgegebenen Befehl befindet, wird von der [Parameters](command-object-ado.md)-Auflistung des [Command](parameters-collection-ado.md)-Objekts aus anhand von Index und Name zugegriffen. Auf die Felder des zurückgegebenen [Recordset](recordset-object-ado.md)-Objekts wird anschließend von der [Fields](fields-collection-ado.md)-Auflistung dieses Objekts aus anhand von Index und Name zugegriffen.</span><span class="sxs-lookup"><span data-stu-id="e34cd-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
 
 ```java 
  

@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 15845c1e2c85c90157297b21b1bb36a550d10875
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292265"
 ---
-# <a name="getstring-method-example-vc"></a><span data-ttu-id="49200-102">GetString-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="49200-102">GetString method example (VC++)</span></span>
+# <a name="getstring-method-example-vc"></a><span data-ttu-id="82569-102">GetString-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="82569-102">GetString method example (VC++)</span></span>
 
 
-<span data-ttu-id="49200-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="49200-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="82569-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="82569-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="49200-104">In diesem Beispiel wird die [GetString](getstring-method-ado.md)-Methode dargestellt.</span><span class="sxs-lookup"><span data-stu-id="49200-104">This example demonstrates the [GetString](getstring-method-ado.md) method.</span></span>
+<span data-ttu-id="82569-104">In diesem Beispiel wird die [GetString](getstring-method-ado.md)-Methode dargestellt.</span><span class="sxs-lookup"><span data-stu-id="82569-104">This example demonstrates the [GetString](getstring-method-ado.md) method.</span></span>
 
-<span data-ttu-id="49200-105">Angenommen, Sie beheben ein Datenzugriffsproblem und möchten den aktuellen Inhalt eines kleinen [Recordset](recordset-object-ado.md)-Objekts auf schnelle und einfache Weise drucken.</span><span class="sxs-lookup"><span data-stu-id="49200-105">Assume you are debugging a data access problem and want a quick, simple way of printing the current contents of a small [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="82569-105">Angenommen, Sie beheben ein Datenzugriffsproblem und möchten den aktuellen Inhalt eines kleinen [Recordset](recordset-object-ado.md)-Objekts auf schnelle und einfache Weise drucken.</span><span class="sxs-lookup"><span data-stu-id="82569-105">Assume you are debugging a data access problem and want a quick, simple way of printing the current contents of a small [Recordset](recordset-object-ado.md).</span></span>
 
 ```cpp 
  

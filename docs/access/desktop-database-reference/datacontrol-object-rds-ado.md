@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 375b37aab73b7973f8d063cf3fe7bbc500d91054
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294526"
 ---
-# <a name="datacontrol-rds-ado"></a><span data-ttu-id="b8ca8-102">DataControl (RDS) (ADO)</span><span class="sxs-lookup"><span data-stu-id="b8ca8-102">DataControl (RDS) (ADO)</span></span>
+# <a name="datacontrol-rds-ado"></a><span data-ttu-id="03065-102">DataControl (RDS) (ADO)</span><span class="sxs-lookup"><span data-stu-id="03065-102">DataControl (RDS) (ADO)</span></span>
 
-<span data-ttu-id="b8ca8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b8ca8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="03065-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="03065-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="b8ca8-104">DataControl-Objekt (RDS)</span><span class="sxs-lookup"><span data-stu-id="b8ca8-104">DataControl object (RDS)</span></span>](datacontrol-object-rds.md)
-- [<span data-ttu-id="b8ca8-105">DataControl-Eigenschaften, Methoden und Ereignisse (RDS)</span><span class="sxs-lookup"><span data-stu-id="b8ca8-105">DataControl properties, methods, and events (RDS)</span></span>](datacontrol-properties-methods-and-events-rds.md)
+- [<span data-ttu-id="03065-104">DataControl-Objekt (RDS)</span><span class="sxs-lookup"><span data-stu-id="03065-104">DataControl object (RDS)</span></span>](datacontrol-object-rds.md)
+- [<span data-ttu-id="03065-105">DataControl-Eigenschaften,-Methoden und-Ereignisse (RDS)</span><span class="sxs-lookup"><span data-stu-id="03065-105">DataControl properties, methods, and events (RDS)</span></span>](datacontrol-properties-methods-and-events-rds.md)
 

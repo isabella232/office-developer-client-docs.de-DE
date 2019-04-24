@@ -1,5 +1,5 @@
 ---
-title: QueryDef.RecordsAffected-Eigenschaft (DAO)
+title: QueryDef. RecordsAffected-Eigenschaft (DAO)
 TOCTitle: RecordsAffected Property
 ms:assetid: 29a864b5-305c-d33f-b2ca-fc9a08baaa5c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192040(v=office.15)
@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ad3759be1bcb60052111a4e7d27419aff08d510a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300966"
 ---
-# <a name="querydefrecordsaffected-property-dao"></a><span data-ttu-id="221b8-102">QueryDef.RecordsAffected-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="221b8-102">QueryDef.RecordsAffected property (DAO)</span></span>
+# <a name="querydefrecordsaffected-property-dao"></a><span data-ttu-id="d0522-102">QueryDef. RecordsAffected-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="d0522-102">QueryDef.RecordsAffected property (DAO)</span></span>
 
 
-<span data-ttu-id="221b8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="221b8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d0522-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d0522-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="221b8-104">Gibt die Anzahl der Datensätze zurück, die von der zuletzt aufgerufenen **[Execute](querydef-execute-method-dao.md)** -Methode betroffen waren.</span><span class="sxs-lookup"><span data-stu-id="221b8-104">Returns the number of records affected by the most recently invoked **[Execute](querydef-execute-method-dao.md)** method.</span></span>
+<span data-ttu-id="d0522-104">Gibt die Anzahl der Datensätze zurück, die von der zuletzt aufgerufenen **[Execute](querydef-execute-method-dao.md)** -Methode betroffen waren.</span><span class="sxs-lookup"><span data-stu-id="d0522-104">Returns the number of records affected by the most recently invoked **[Execute](querydef-execute-method-dao.md)** method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="221b8-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="221b8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d0522-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d0522-105">Syntax</span></span>
 
-<span data-ttu-id="221b8-106">*Ausdruck* . RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="221b8-106">*expression* .RecordsAffected</span></span>
+<span data-ttu-id="d0522-106">*Ausdruck* . RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="d0522-106">*expression* .RecordsAffected</span></span>
 
-<span data-ttu-id="221b8-107">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="221b8-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="d0522-107">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="d0522-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="221b8-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="221b8-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d0522-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d0522-108">Remarks</span></span>
 
-<span data-ttu-id="221b8-109">Wenn Sie die **Execute**-Methode verwenden, um eine Aktionsabfrage für ein **QueryDef**-Objekt auszuführen, enthält die **RecordsAffected**-Eigenschaft die Anzahl der gelöschten, aktualisierten oder eingefügten Datensätze.</span><span class="sxs-lookup"><span data-stu-id="221b8-109">When you use the **Execute** method to run an action query from a **QueryDef** object, the **RecordsAffected** property will contain the number of records deleted, updated, or inserted.</span></span>
+<span data-ttu-id="d0522-109">Wenn Sie die **Execute**-Methode verwenden, um eine Aktionsabfrage für ein **QueryDef**-Objekt auszuführen, enthält die **RecordsAffected**-Eigenschaft die Anzahl der gelöschten, aktualisierten oder eingefügten Datensätze.</span><span class="sxs-lookup"><span data-stu-id="d0522-109">When you use the **Execute** method to run an action query from a **QueryDef** object, the **RecordsAffected** property will contain the number of records deleted, updated, or inserted.</span></span>
 
-## <a name="example"></a><span data-ttu-id="221b8-110">Beispiel</span><span class="sxs-lookup"><span data-stu-id="221b8-110">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d0522-110">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d0522-110">Example</span></span>
 
-<span data-ttu-id="221b8-p101">In diesem Beispiel wird die RecordsAffected-Eigenschaft mit Aktionsabfragen für ein Database-Objekt und ein QueryDef-Objekt ausgeführt. Zum Ausführen dieser Prozedur ist die RecordsAffectedOutput-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="221b8-p101">This example uses the **RecordsAffected** property with action queries executed from a **[Database](database-object-dao.md)** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="d0522-p101">This example uses the **RecordsAffected** property with action queries executed from a **[Database](database-object-dao.md)** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="d0522-p101">This example uses the **RecordsAffected** property with action queries executed from a **[Database](database-object-dao.md)** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub RecordsAffectedX() 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 816d421d4181f78e0e0e83c2b575b330a3625f4e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312152"
 ---
-# <a name="value-property-example-vj"></a><span data-ttu-id="7b0a0-102">Value-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="7b0a0-102">Value property example (VJ++)</span></span>
+# <a name="value-property-example-vj"></a><span data-ttu-id="74aaf-102">Value-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="74aaf-102">Value property example (VJ++)</span></span>
 
 
-<span data-ttu-id="7b0a0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7b0a0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="74aaf-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="74aaf-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7b0a0-104">Diese Beispiel veranschaulicht die [Value](value-property-ado.md)-Eigenschaft bei [Field](field-object-ado.md)- und [Property](property-object-ado.md)-Objekten, indem Feld- und Eigenschaftswerte für die ***Employees***-Tabelle angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="7b0a0-104">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
+<span data-ttu-id="74aaf-104">Diese Beispiel veranschaulicht die [Value](value-property-ado.md)-Eigenschaft bei [Field](field-object-ado.md)- und [Property](property-object-ado.md)-Objekten, indem Feld- und Eigenschaftswerte für die ***Employees***-Tabelle angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="74aaf-104">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
 
 ```java 
  

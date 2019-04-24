@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7985df074caee9b1508be9c045ac84f2f8ef248f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309101"
 ---
-# <a name="recordtype-property-ado"></a><span data-ttu-id="ea0c8-102">RecordType-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="ea0c8-102">RecordType property (ADO)</span></span>
+# <a name="recordtype-property-ado"></a><span data-ttu-id="7b640-102">RecordType-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="7b640-102">RecordType property (ADO)</span></span>
 
 
-<span data-ttu-id="ea0c8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ea0c8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7b640-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7b640-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ea0c8-104">Gibt den Typ des [Record](record-object-ado.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="ea0c8-104">Indicates the type of [Record](record-object-ado.md) object.</span></span>
+<span data-ttu-id="7b640-104">Der Typ eines [Record](record-object-ado.md)-Objekts wird angegeben.</span><span class="sxs-lookup"><span data-stu-id="7b640-104">Indicates the type of [Record](record-object-ado.md) object.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="ea0c8-105">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ea0c8-105">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7b640-105">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7b640-105">Return value</span></span>
 
-<span data-ttu-id="ea0c8-106">Gibt einen [RecordTypeEnum](recordtypeenum.md)-Wert zurück.</span><span class="sxs-lookup"><span data-stu-id="ea0c8-106">Returns a [RecordTypeEnum](recordtypeenum.md) value.</span></span>
+<span data-ttu-id="7b640-106">Gibt einen [RecordTypeEnum](recordtypeenum.md)-Wert zurück.</span><span class="sxs-lookup"><span data-stu-id="7b640-106">Returns a [RecordTypeEnum](recordtypeenum.md) value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="ea0c8-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ea0c8-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7b640-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7b640-107">Remarks</span></span>
 
-<span data-ttu-id="ea0c8-108">Die **RecordType** -Eigenschaft ist schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="ea0c8-108">The **RecordType** property is read-only.</span></span>
+<span data-ttu-id="7b640-108">Die **RecordType**-Eigenschaft ist schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="7b640-108">The **RecordType** property is read-only.</span></span>
 

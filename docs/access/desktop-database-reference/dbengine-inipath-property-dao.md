@@ -1,5 +1,5 @@
 ---
-title: DBEngine.IniPath-Eigenschaft (DAO)
+title: DbEngine. IniPath-Eigenschaft (DAO)
 TOCTitle: IniPath Property
 ms:assetid: b18cace5-4e53-d011-6373-f4ac64556fd4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822009(v=office.15)
@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f14f9f2d028bb8a9a8e71bc9d7b97ea5672466f1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294295"
 ---
-# <a name="dbengineinipath-property-dao"></a><span data-ttu-id="84e67-102">DBEngine.IniPath-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="84e67-102">DBEngine.IniPath property (DAO)</span></span>
+# <a name="dbengineinipath-property-dao"></a><span data-ttu-id="b1092-102">DbEngine. IniPath-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="b1092-102">DBEngine.IniPath property (DAO)</span></span>
 
 
-<span data-ttu-id="84e67-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="84e67-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b1092-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b1092-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="84e67-104">Legt Informationen über den Windows-Registrierungsschlüssel fest, der Werte für die Microsoft Access-Datenbank-Engine enthält, oder gibt die Informationen zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="84e67-104">Sets or returns information about the Windows Registry key that contains values for the Microsoft Access database engine (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="b1092-104">Legt Informationen über den Windows-Registrierungsschlüssel fest, der Werte für die Microsoft Access-Datenbank-Engine enthält, oder gibt die Informationen zurück (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="b1092-104">Sets or returns information about the Windows Registry key that contains values for the Microsoft Access database engine (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="84e67-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="84e67-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b1092-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b1092-105">Syntax</span></span>
 
-<span data-ttu-id="84e67-106">*Ausdruck* . IniPath</span><span class="sxs-lookup"><span data-stu-id="84e67-106">*expression* .IniPath</span></span>
+<span data-ttu-id="b1092-106">*Ausdruck* . IniPath</span><span class="sxs-lookup"><span data-stu-id="b1092-106">*expression* .IniPath</span></span>
 
-<span data-ttu-id="84e67-107">*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="84e67-107">*expression* A variable that represents a **DBEngine** object.</span></span>
+<span data-ttu-id="b1092-107">*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="b1092-107">*expression* A variable that represents a **DBEngine** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="84e67-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="84e67-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b1092-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b1092-108">Remarks</span></span>
 
-<span data-ttu-id="84e67-109">Sie können das Microsoft Access-Datenbankmodul mit der Windows-Registrierung konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="84e67-109">You can configure the Microsoft Access database engine with the Windows Registry.</span></span> <span data-ttu-id="84e67-110">Mit der Registrierung können Sie Optionen festlegen, wie etwa installierbare ISAM-DLL-Dateien.</span><span class="sxs-lookup"><span data-stu-id="84e67-110">You can use the Registry to set options, such as installable ISAM DLLs.</span></span>
+<span data-ttu-id="b1092-109">Sie können das Microsoft Access-Datenbankmodul mit der Windows-Registrierung konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="b1092-109">You can configure the Microsoft Access database engine with the Windows Registry.</span></span> <span data-ttu-id="b1092-110">Mit der Registrierung können Sie Optionen festlegen, wie etwa installierbare ISAM-DLL-Dateien.</span><span class="sxs-lookup"><span data-stu-id="b1092-110">You can use the Registry to set options, such as installable ISAM DLLs.</span></span>
 
-<span data-ttu-id="84e67-p102">Damit diese Option wirksam wird, müssen Sie die **IniPath**-Eigenschaft festlegen, bevor Ihre Anwendung einen anderen DAO-Code aufruft. Die Wirkung dieser Einstellung ist auf die Anwendung begrenzt. Sie kann nur geändert werden, wenn Sie die Anwendung neu starten.</span><span class="sxs-lookup"><span data-stu-id="84e67-p102">For this option to have any effect, you must set the **IniPath** property before your application invokes any other DAO code. The scope of this setting is limited to your application and can't be changed without restarting your application.</span></span>
+<span data-ttu-id="b1092-p102">Damit diese Option wirksam wird, müssen Sie die **IniPath**-Eigenschaft festlegen, bevor Ihre Anwendung einen anderen DAO-Code aufruft. Die Wirkung dieser Einstellung ist auf die Anwendung begrenzt. Sie kann nur geändert werden, wenn Sie die Anwendung neu starten.</span><span class="sxs-lookup"><span data-stu-id="b1092-p102">For this option to have any effect, you must set the **IniPath** property before your application invokes any other DAO code. The scope of this setting is limited to your application and can't be changed without restarting your application.</span></span>
 
-<span data-ttu-id="84e67-p103">Die Registrierung dient auch zur Bereitstellung von Initialisierungsparametern für einige installierbare ISAM-Datenbanktreiber. Beispiel: Zur Verwendung von Paradox Version 4.0 legen Sie für die **IniPath**-Eigenschaft den Teil der Registrierung fest, der die betreffenden Parameter enthält.</span><span class="sxs-lookup"><span data-stu-id="84e67-p103">You also use the Registry to provide initialization parameters for some installable ISAM database drivers. For example, to use Paradox version 4.0, set the **IniPath** property to a part of the Registry containing the appropriate parameters.</span></span>
+<span data-ttu-id="b1092-p103">Die Registrierung dient auch zur Bereitstellung von Initialisierungsparametern für einige installierbare ISAM-Datenbanktreiber. Beispiel: Zur Verwendung von Paradox Version 4.0 legen Sie für die **IniPath**-Eigenschaft den Teil der Registrierung fest, der die betreffenden Parameter enthält.</span><span class="sxs-lookup"><span data-stu-id="b1092-p103">You also use the Registry to provide initialization parameters for some installable ISAM database drivers. For example, to use Paradox version 4.0, set the **IniPath** property to a part of the Registry containing the appropriate parameters.</span></span>
 
-<span data-ttu-id="84e67-115">Diese Eigenschaft erkennt entweder HKEY\_lokale\_Computer oder HKEY\_lokale\_Benutzer.</span><span class="sxs-lookup"><span data-stu-id="84e67-115">This property recognizes either HKEY\_LOCAL\_MACHINE or HKEY\_LOCAL\_USER.</span></span> <span data-ttu-id="84e67-116">Wenn kein Stammschlüssel bereitgestellt wird, wird der Standardwert ist HKEY\_lokale\_Computer.</span><span class="sxs-lookup"><span data-stu-id="84e67-116">If no root key is supplied, the default is HKEY\_LOCAL\_MACHINE.</span></span>
+<span data-ttu-id="b1092-115">Diese Eigenschaft erkennt entweder HKEY\_lokalen\_Computer oder lokalen\_\_HKEY-Benutzer.</span><span class="sxs-lookup"><span data-stu-id="b1092-115">This property recognizes either HKEY\_LOCAL\_MACHINE or HKEY\_LOCAL\_USER.</span></span> <span data-ttu-id="b1092-116">Wenn kein Stammschlüssel angegeben wird, lautet der Standardwert\_HKEY\_lokaler Computer.</span><span class="sxs-lookup"><span data-stu-id="b1092-116">If no root key is supplied, the default is HKEY\_LOCAL\_MACHINE.</span></span>
 

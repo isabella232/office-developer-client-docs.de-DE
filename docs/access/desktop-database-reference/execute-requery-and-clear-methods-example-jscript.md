@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0556c40823facf5bdddbbe67874d6417b416674e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293259"
 ---
-# <a name="execute-requery-and-clear-methods-example-jscript"></a><span data-ttu-id="65a30-102">Execute-, Requery- und Clear-Methode (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="65a30-102">Execute, Requery, and Clear methods example (JScript)</span></span>
+# <a name="execute-requery-and-clear-methods-example-jscript"></a><span data-ttu-id="5534a-102">Execute-, Requery- und Clear-Methode (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="5534a-102">Execute, Requery, and Clear methods example (JScript)</span></span>
 
 
-<span data-ttu-id="65a30-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="65a30-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5534a-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5534a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="65a30-p101">In diesem Beispiel wird die Ausführung der **Execute** -Methode aus einem [Command](command-object-ado.md)-Objekt und einem [Connection](connection-object-ado.md)-Objekt dargestellt. Außerdem wird die [Requery](requery-method-ado.md)-Methode zum Abrufen von aktuellen Daten in einem [Recordset](recordset-object-ado.md)-Objekt und die [Clear](clear-method-ado.md)-Methode zum Löschen des Inhalts der [Errors](errors-collection-ado.md)-Auflistung verwendet. (Auf die **Errors** -Auflistung wird mithilfe des **Connection** -Objekts der [ActiveConnection](activeconnection-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts zugegriffen.) Benennen Sie die Datei **ExecuteJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="65a30-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) Name the file **ExecuteJS.asp**.</span></span>
+<span data-ttu-id="5534a-p101">In diesem Beispiel wird die Ausführung der **Execute** -Methode aus einem [Command](command-object-ado.md)-Objekt und einem [Connection](connection-object-ado.md)-Objekt dargestellt. Außerdem wird die [Requery](requery-method-ado.md)-Methode zum Abrufen von aktuellen Daten in einem [Recordset](recordset-object-ado.md)-Objekt und die [Clear](clear-method-ado.md)-Methode zum Löschen des Inhalts der [Errors](errors-collection-ado.md)-Auflistung verwendet. (Auf die **Errors** -Auflistung wird mithilfe des **Connection** -Objekts der [ActiveConnection](activeconnection-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts zugegriffen.) Benennen Sie die Datei **ExecuteJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="5534a-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) Name the file **ExecuteJS.asp**.</span></span>
 
 ```javascript 
  

@@ -1,5 +1,5 @@
 ---
-title: Database.Containers-Eigenschaft (DAO)
+title: Database. Containers-Eigenschaft (DAO)
 TOCTitle: Containers Property
 ms:assetid: d6b13bae-461c-fe5e-692b-0e04fcd5df2a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835049(v=office.15)
@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 01fec649391f8c0cda6d9b6b4718b8b630373c81
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294967"
 ---
-# <a name="databasecontainers-property-dao"></a><span data-ttu-id="097df-102">Database.Containers-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="097df-102">Database.Containers property (DAO)</span></span>
+# <a name="databasecontainers-property-dao"></a><span data-ttu-id="a0ac3-102">Database. Containers-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="a0ac3-102">Database.Containers property (DAO)</span></span>
 
 
-<span data-ttu-id="097df-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="097df-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="a0ac3-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a0ac3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="097df-p101">Gibt eine **Containers**-Auflistung zurück, die alle **Container**-Objekte in der angegebenen Datenbank darstellt. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="097df-p101">Returns a **Containers** collection that represents all of the **Container** objects in the specifed database. Read-only.</span></span>
+<span data-ttu-id="a0ac3-104">Gibt eine **Containers**-Auflistung zurück, die alle **Container**-Objekte in der angegebenen Datenbank darstellt.</span><span class="sxs-lookup"><span data-stu-id="a0ac3-104">Returns a **Containers** collection that represents all of the **Container** objects in the specifed database.</span></span> <span data-ttu-id="a0ac3-105">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="a0ac3-105">Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="097df-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="097df-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a0ac3-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="a0ac3-106">Syntax</span></span>
 
-<span data-ttu-id="097df-107">*Ausdruck* . Container mit Daten</span><span class="sxs-lookup"><span data-stu-id="097df-107">*expression* .Containers</span></span>
+<span data-ttu-id="a0ac3-107">*Ausdruck* . Container</span><span class="sxs-lookup"><span data-stu-id="a0ac3-107">*expression* .Containers</span></span>
 
-<span data-ttu-id="097df-108">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="097df-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="a0ac3-108">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="a0ac3-108">*expression* A variable that represents a **Database** object.</span></span>
 

@@ -1,5 +1,5 @@
 ---
-title: Keys-Methode Append, Schlüsseltyp, RelatedColumn-Eigenschaft (Beispiel) (VC++)
+title: Append-Methode für Schlüssel, Schlüsseltyp, RelatedColumn-Eigenschaft (Beispiel) (VC + +)
 TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VC++)
 ms:assetid: d0784eb5-94aa-ef62-c26f-3d0980485990
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250041(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: edbb25c9eda48a33f659e577882e40cc67a07190
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290638"
 ---
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a><span data-ttu-id="12974-102">Keys-Methode Append, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="12974-102">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VC++)</span></span>
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a><span data-ttu-id="5c7d8-102">Append-Methode, KeyType-, RelatedColumn-und UpdateRule-Eigenschaft (Beispiel) (VC + +)</span><span class="sxs-lookup"><span data-stu-id="5c7d8-102">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VC++)</span></span>
 
 
-<span data-ttu-id="12974-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="12974-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5c7d8-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5c7d8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="12974-p101">Im folgenden Code wird das Erstellen eines neuen Fremdschlüssels veranschaulicht. Für das Beispiel wird vorausgesetzt, dass zwei Tabellen (Customers und Orders) vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="12974-p101">The following code demonstrates how to create a new foreign key. It assumes two tables (Customers and Orders) exist.</span></span>
+<span data-ttu-id="5c7d8-p101">Im folgenden Code wird das Erstellen eines neuen Fremdschlüssels veranschaulicht. Für das Beispiel wird vorausgesetzt, dass zwei Tabellen (Customers und Orders) vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="5c7d8-p101">The following code demonstrates how to create a new foreign key. It assumes two tables (Customers and Orders) exist.</span></span>
 
 ```cpp 
  

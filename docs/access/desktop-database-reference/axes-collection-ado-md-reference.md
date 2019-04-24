@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 463a137e70503591abee29a6ebeacf79d6194366
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296927"
 ---
-# <a name="axes-collection-ado-md-reference"></a><span data-ttu-id="ff355-102">Axes-Auflistung (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="ff355-102">Axes collection (ADO MD reference)</span></span>
+# <a name="axes-collection-ado-md-reference"></a><span data-ttu-id="60f37-102">Axes-Auflistung (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="60f37-102">Axes collection (ADO MD reference)</span></span>
 
-<span data-ttu-id="ff355-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ff355-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="60f37-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="60f37-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="ff355-104">Axes-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="ff355-104">Axes collection (ADO MD)</span></span>](axes-collection-ado-md.md)
-- [<span data-ttu-id="ff355-105">Axes-Auflistung: Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="ff355-105">Axes collection properties, methods, and events (ADO MD)</span></span>](axes-collection-properties-methods-and-events-ado-md.md)
+- [<span data-ttu-id="60f37-104">Axes-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="60f37-104">Axes collection (ADO MD)</span></span>](axes-collection-ado-md.md)
+- [<span data-ttu-id="60f37-105">Axes-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="60f37-105">Axes collection properties, methods, and events (ADO MD)</span></span>](axes-collection-properties-methods-and-events-ado-md.md)
 
