@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b2b368ce-4486-4f90-985f-59e50ca95229
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 761228a01e0dc778b962c62436e872ff20d72088
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 78b4feeca263035b9c90184f10edd294e6cd7b10
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351583"
 ---
-# <a name="ixplogontransportlogoff"></a><span data-ttu-id="dfb9d-103">IXPLogon::TransportLogoff</span><span class="sxs-lookup"><span data-stu-id="dfb9d-103">IXPLogon::TransportLogoff</span></span>
+# <a name="ixplogontransportlogoff"></a><span data-ttu-id="521e9-103">IXPLogon::TransportLogoff</span><span class="sxs-lookup"><span data-stu-id="521e9-103">IXPLogon::TransportLogoff</span></span>
 
   
   
-<span data-ttu-id="dfb9d-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="dfb9d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="521e9-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="521e9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="dfb9d-105">Initiiert den Prozess abmelden.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-105">Initiates the logoff process.</span></span> 
+<span data-ttu-id="521e9-105">Initiiert den ABMELDEPROZESS.</span><span class="sxs-lookup"><span data-stu-id="521e9-105">Initiates the logoff process.</span></span> 
   
 ```cpp
 HRESULT TransportLogoff(
@@ -33,43 +33,43 @@ HRESULT TransportLogoff(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="dfb9d-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="dfb9d-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="521e9-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="521e9-106">Parameters</span></span>
 
- <span data-ttu-id="dfb9d-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="dfb9d-107">_ulFlags_</span></span>
+ <span data-ttu-id="521e9-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="521e9-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="dfb9d-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-108">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="521e9-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="521e9-108">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="dfb9d-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dfb9d-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="521e9-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="521e9-109">Return value</span></span>
 
-<span data-ttu-id="dfb9d-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="dfb9d-110">S_OK</span></span> 
+<span data-ttu-id="521e9-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="521e9-110">S_OK</span></span> 
   
-> <span data-ttu-id="dfb9d-111">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-111">The call succeeded and returned the expected value or values.</span></span> <span data-ttu-id="dfb9d-112">Wenn alles andere als S_OK zurückgegeben wird, wird der Anbieter abgemeldet.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-112">If anything other than S_OK is returned, the provider is logged off.</span></span>
+> <span data-ttu-id="521e9-111">Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="521e9-111">The call succeeded and returned the expected value or values.</span></span> <span data-ttu-id="521e9-112">Wenn etwas anderes als S_OK zurückgegeben wird, wird der Anbieter abgemeldet.</span><span class="sxs-lookup"><span data-stu-id="521e9-112">If anything other than S_OK is returned, the provider is logged off.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="dfb9d-113">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="dfb9d-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="521e9-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="521e9-113">Remarks</span></span>
 
-<span data-ttu-id="dfb9d-114">Die MAPI-Warteschlange die **IXPLogon::TransportLogoff** -Methode aufgerufen, um eine Sitzung Transport Anbieter für einen bestimmten Benutzer zu beenden.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-114">The MAPI spooler calls the **IXPLogon::TransportLogoff** method to terminate a transport provider session for a particular user.</span></span> <span data-ttu-id="dfb9d-115">Vor dem Aufruf von **TransportLogoff**, verwirft die MAPI-Warteschlange von Daten zu unterstützten messaging-Adresstypen für diese Sitzung in der [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode übergeben.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-115">Before calling **TransportLogoff**, the MAPI spooler discards any data about supported messaging address types for this session passed in the [IXPLogon::AddressTypes](ixplogon-addresstypes.md) method.</span></span> 
+<span data-ttu-id="521e9-114">Der MAPI-Spooler Ruft die **IXPLogon:: TransportLogoff** -Methode auf, um eine Transportanbieter Sitzung für einen bestimmten Benutzer zu beenden.</span><span class="sxs-lookup"><span data-stu-id="521e9-114">The MAPI spooler calls the **IXPLogon::TransportLogoff** method to terminate a transport provider session for a particular user.</span></span> <span data-ttu-id="521e9-115">Vor dem Aufrufen von **TransportLogoff**verwirft der MAPI-Spooler alle Daten über unterstützte Messaging Adresstypen für diese Sitzung, die in der [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="521e9-115">Before calling **TransportLogoff**, the MAPI spooler discards any data about supported messaging address types for this session passed in the [IXPLogon::AddressTypes](ixplogon-addresstypes.md) method.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="dfb9d-116">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="dfb9d-116">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="521e9-116">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="521e9-116">Notes to implementers</span></span>
 
-<span data-ttu-id="dfb9d-117">Der Adressbuchhierarchie sollte vorbereitet werden, können Sie jederzeit einen Anruf an **TransportLogoff** akzeptieren kann.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-117">The transport provider should be prepared to accept a call to **TransportLogoff** at any time.</span></span> <span data-ttu-id="dfb9d-118">Wenn eine Nachricht verarbeitet wird, sollte der Anbieter die sendende Abbrechen.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-118">If a message is in process, the provider should stop the sending process.</span></span> 
+<span data-ttu-id="521e9-117">Der Transportanbieter sollte jederzeit bereit sein, einen Anruf an **TransportLogoff** zu akzeptieren.</span><span class="sxs-lookup"><span data-stu-id="521e9-117">The transport provider should be prepared to accept a call to **TransportLogoff** at any time.</span></span> <span data-ttu-id="521e9-118">Wenn eine Nachricht in Arbeit ist, sollte der Anbieter den sendenden Prozess beenden.</span><span class="sxs-lookup"><span data-stu-id="521e9-118">If a message is in process, the provider should stop the sending process.</span></span> 
   
-<span data-ttu-id="dfb9d-119">Der Transportdienst sollte alle Ressourcen für die aktuelle Sitzung freigeben.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-119">The transport provider should release all resources allocated for its current session.</span></span> <span data-ttu-id="dfb9d-120">Wenn es für diese Sitzung mit der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) Speicher zugewiesen hat, sollten sie den Arbeitsspeicher freizugeben, mithilfe der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-120">If it has allocated any memory for this session with the [MAPIAllocateBuffer](mapiallocatebuffer.md) function, it should free the memory by using the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> <span data-ttu-id="dfb9d-121">Von Speicher vom Transportanbieter zum Aufrufen der Methode [IXPLogon::AddressTypes](ixplogon-addresstypes.md) erfüllen kann zu diesem Zeitpunkt sicher freigegeben werden.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-121">Any memory allocated by the transport provider to satisfy calls to the [IXPLogon::AddressTypes](ixplogon-addresstypes.md) method can be safely released at this time.</span></span> 
+<span data-ttu-id="521e9-119">Der Transportanbieter sollte alle Ressourcen freigeben, die für seine aktuelle Sitzung reserviert sind.</span><span class="sxs-lookup"><span data-stu-id="521e9-119">The transport provider should release all resources allocated for its current session.</span></span> <span data-ttu-id="521e9-120">Wenn der Speicherplatz für diese Sitzung mit der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion reserviert wurde, sollte er den Arbeitsspeicher mithilfe der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion freigeben.</span><span class="sxs-lookup"><span data-stu-id="521e9-120">If it has allocated any memory for this session with the [MAPIAllocateBuffer](mapiallocatebuffer.md) function, it should free the memory by using the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> <span data-ttu-id="521e9-121">Jeder vom Transportanbieter zugewiesene Arbeitsspeicher, der Aufrufe der [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode erfüllt, kann zu diesem Zeitpunkt sicher freigegeben werden.</span><span class="sxs-lookup"><span data-stu-id="521e9-121">Any memory allocated by the transport provider to satisfy calls to the [IXPLogon::AddressTypes](ixplogon-addresstypes.md) method can be safely released at this time.</span></span> 
   
-<span data-ttu-id="dfb9d-122">In der Regel für das Gespräch **TransportLogoff** durchführen, sollte ein Anbieter zunächst dessen Anmeldung-Objekt durch Aufrufen der Methode [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md) ungültig und anschließend wieder seines Support-Objekts.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-122">Usually, on completing a **TransportLogoff** call, a provider should first invalidate its logon object by calling the [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md) method and then release its support object.</span></span> <span data-ttu-id="dfb9d-123">Implementierung der **TransportLogoff** der Anbieter sollte Support-Objekt letzten, freigeben, da beim Support-Objekt veröffentlicht hat, die MAPI-Warteschlange auch das Provider-Objekt selbst freigeben kann.</span><span class="sxs-lookup"><span data-stu-id="dfb9d-123">The provider's implementation of **TransportLogoff** should release the support object last, because when the support object is released, the MAPI spooler can also release the provider object itself.</span></span> 
+<span data-ttu-id="521e9-122">In der Regel muss ein Anbieter beim Abschließen eines **TransportLogoff** -Aufrufs zuerst sein Logo-Objekt ungültig machen, indem er die [IMAPISupport:: MakeInvalid](imapisupport-makeinvalid.md) -Methode aufruft und dann sein Support-Objekt freigibt.</span><span class="sxs-lookup"><span data-stu-id="521e9-122">Usually, on completing a **TransportLogoff** call, a provider should first invalidate its logon object by calling the [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md) method and then release its support object.</span></span> <span data-ttu-id="521e9-123">Die Implementierung von **TransportLogoff** durch den Anbieter sollte das Support Objekt zuletzt freigeben, da der MAPI-Spooler, wenn das Support Objekt veröffentlicht wird, auch das Provider-Objekt selbst freigeben kann.</span><span class="sxs-lookup"><span data-stu-id="521e9-123">The provider's implementation of **TransportLogoff** should release the support object last, because when the support object is released, the MAPI spooler can also release the provider object itself.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="dfb9d-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dfb9d-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="521e9-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="521e9-124">See also</span></span>
 
 
 
-[<span data-ttu-id="dfb9d-125">IMAPISupport::MakeInvalid</span><span class="sxs-lookup"><span data-stu-id="dfb9d-125">IMAPISupport::MakeInvalid</span></span>](imapisupport-makeinvalid.md)
+[<span data-ttu-id="521e9-125">IMAPISupport::MakeInvalid</span><span class="sxs-lookup"><span data-stu-id="521e9-125">IMAPISupport::MakeInvalid</span></span>](imapisupport-makeinvalid.md)
   
-[<span data-ttu-id="dfb9d-126">IMAPISupport::SpoolerYield</span><span class="sxs-lookup"><span data-stu-id="dfb9d-126">IMAPISupport::SpoolerYield</span></span>](imapisupport-spooleryield.md)
+[<span data-ttu-id="521e9-126">IMAPISupport::SpoolerYield</span><span class="sxs-lookup"><span data-stu-id="521e9-126">IMAPISupport::SpoolerYield</span></span>](imapisupport-spooleryield.md)
   
-[<span data-ttu-id="dfb9d-127">IXPLogon::AddressTypes</span><span class="sxs-lookup"><span data-stu-id="dfb9d-127">IXPLogon::AddressTypes</span></span>](ixplogon-addresstypes.md)
+[<span data-ttu-id="521e9-127">IXPLogon::AddressTypes</span><span class="sxs-lookup"><span data-stu-id="521e9-127">IXPLogon::AddressTypes</span></span>](ixplogon-addresstypes.md)
   
-[<span data-ttu-id="dfb9d-128">MAPIAllocateBuffer</span><span class="sxs-lookup"><span data-stu-id="dfb9d-128">MAPIAllocateBuffer</span></span>](mapiallocatebuffer.md)
+[<span data-ttu-id="521e9-128">MAPIAllocateBuffer</span><span class="sxs-lookup"><span data-stu-id="521e9-128">MAPIAllocateBuffer</span></span>](mapiallocatebuffer.md)
   
-[<span data-ttu-id="dfb9d-129">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="dfb9d-129">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
+[<span data-ttu-id="521e9-129">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="521e9-129">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
   
-[<span data-ttu-id="dfb9d-130">IXPLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="dfb9d-130">IXPLogon : IUnknown</span></span>](ixplogoniunknown.md)
+[<span data-ttu-id="521e9-130">IXPLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="521e9-130">IXPLogon : IUnknown</span></span>](ixplogoniunknown.md)
 

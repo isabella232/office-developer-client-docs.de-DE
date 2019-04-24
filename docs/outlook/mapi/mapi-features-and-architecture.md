@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 34bae703-a979-437c-9d86-8b91e9822a54
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fbba349fd81240a33c08c5adb910c1236222fb30
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8156cb53fc81f4861e4a66da4960df0458ec6c91
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351548"
 ---
-# <a name="mapi-features-and-architecture"></a><span data-ttu-id="20e5b-103">MAPI-Features und -Architektur</span><span class="sxs-lookup"><span data-stu-id="20e5b-103">MAPI Features and Architecture</span></span>
+# <a name="mapi-features-and-architecture"></a><span data-ttu-id="699fa-103">MAPI-Features und -Architektur</span><span class="sxs-lookup"><span data-stu-id="699fa-103">MAPI Features and Architecture</span></span>
 
   
   
-<span data-ttu-id="20e5b-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="20e5b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="699fa-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="699fa-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="20e5b-105">Messaging-API (MAPI) besteht aus einer Reihe von common Application programming Interfaces und eine Komponente Dynamic Link Library (DLL).</span><span class="sxs-lookup"><span data-stu-id="20e5b-105">Messaging API (MAPI) is composed of a set of common application programming interfaces and a dynamic-link library (DLL) component.</span></span> <span data-ttu-id="20e5b-106">Die Schnittstellen dienen zum Erstellen und Zugriff auf verschiedene Messaginganwendungen und messaging-Systeme, bietet eine einheitliche Umgebung für die Entwicklung und Verwendung und true Unabhängigkeit für beide bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="20e5b-106">The interfaces are used to create and access diverse messaging applications and messaging systems, offering a uniform environment for development and use, and providing true independence for both.</span></span> <span data-ttu-id="20e5b-107">Die DLL-Datei enthält das MAPI-Subsystem, verwaltet die Interaktion zwischen Messaginganwendungen Front-End- und Back-End-messaging-Systeme und bietet eine einheitliche Benutzeroberfläche für häufige Aufgaben.</span><span class="sxs-lookup"><span data-stu-id="20e5b-107">The DLL contains the MAPI subsystem, which manages the interaction between front-end messaging applications and back-end messaging systems and provides a common user interface for frequent tasks.</span></span> <span data-ttu-id="20e5b-108">MAPI-Subsystems fungiert als Clearing House zentralen vereinheitlicht die verschiedenen Messagingsystemen und mit Clients aus ihre Unterschiede abschirmen.</span><span class="sxs-lookup"><span data-stu-id="20e5b-108">The MAPI subsystem acts as a central clearinghouse to unify the various messaging systems and shield clients from their differences.</span></span>
+<span data-ttu-id="699fa-105">Messaging-API (MAPI) besteht aus einem Satz allgemeiner Anwendungsprogrammierschnittstellen und einer DLL-Komponente (Dynamic Link Library).</span><span class="sxs-lookup"><span data-stu-id="699fa-105">Messaging API (MAPI) is composed of a set of common application programming interfaces and a dynamic-link library (DLL) component.</span></span> <span data-ttu-id="699fa-106">Die Schnittstellen werden für die Erstellung und den Zugriff auf verschiedene Messaging-Anwendungen und Messagingsysteme verwendet, die eine einheitliche Umgebung für die Entwicklung und Verwendung bieten und eine echte Unabhängigkeit für beide bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="699fa-106">The interfaces are used to create and access diverse messaging applications and messaging systems, offering a uniform environment for development and use, and providing true independence for both.</span></span> <span data-ttu-id="699fa-107">Die DLL enthält das MAPI-Subsystem, das die Interaktion zwischen Front-End-Messaging-Anwendungen und Back-End-Messaging-Systemen verwaltet und eine allgemeine Benutzeroberfläche für häufige Aufgaben bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="699fa-107">The DLL contains the MAPI subsystem, which manages the interaction between front-end messaging applications and back-end messaging systems and provides a common user interface for frequent tasks.</span></span> <span data-ttu-id="699fa-108">Das MAPI-Subsystem fungiert als zentrales Clearing-Stelle, um die verschiedenen Messagingsysteme zu vereinheitlichen und Clients vor ihren Unterschieden zu schützen.</span><span class="sxs-lookup"><span data-stu-id="699fa-108">The MAPI subsystem acts as a central clearinghouse to unify the various messaging systems and shield clients from their differences.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="20e5b-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="20e5b-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="699fa-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="699fa-109">See also</span></span>
 
 
 
-[<span data-ttu-id="20e5b-110">MAPI-Konzepte</span><span class="sxs-lookup"><span data-stu-id="20e5b-110">MAPI Concepts</span></span>](mapi-concepts.md)
+[<span data-ttu-id="699fa-110">MAPI-Konzepte (engl.)</span><span class="sxs-lookup"><span data-stu-id="699fa-110">MAPI Concepts</span></span>](mapi-concepts.md)
 

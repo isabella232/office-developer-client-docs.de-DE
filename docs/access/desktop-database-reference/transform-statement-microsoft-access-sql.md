@@ -12,23 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 9abe91d4ce6996a725e246da6922015d15a8bd39
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314042"
 ---
-# <a name="transform-statement-microsoft-access-sql"></a><span data-ttu-id="b4f34-102">TRANSFORM-Anweisung (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="b4f34-102">TRANSFORM statement (Microsoft Access SQL)</span></span>
+# <a name="transform-statement-microsoft-access-sql"></a><span data-ttu-id="b54d9-102">TRANSFORM-Anweisung (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="b54d9-102">TRANSFORM Statement (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="b4f34-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b4f34-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b54d9-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b54d9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b4f34-104">Erstellt eine Kreuztabellenabfrage.</span><span class="sxs-lookup"><span data-stu-id="b4f34-104">Creates a crosstab query.</span></span>
+<span data-ttu-id="b54d9-104">Erstellt eine Kreuztabellenabfrage.</span><span class="sxs-lookup"><span data-stu-id="b54d9-104">Creates a crosstab query.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b4f34-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b4f34-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b54d9-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b54d9-105">Syntax</span></span>
 
-<span data-ttu-id="b4f34-106">TRANSFORM *aggregatfunktionselect-Anweisung* PIVOT *Pivotfield* \[IN (*Wert1*\[, *Wert2*\[,... \]\])\]</span><span class="sxs-lookup"><span data-stu-id="b4f34-106">TRANSFORM *aggfunctionselectstatement* PIVOT *pivotfield* \[IN (*value1*\[, *value2*\[, …\]\])\]</span></span>
+<span data-ttu-id="b54d9-106">TRANSFORM *aggfunctionselectstatement* PIVOT *pivotfield* \[IN (*value1*\[, *value2*\[, …\]\])\]</span><span class="sxs-lookup"><span data-stu-id="b54d9-106">TRANSFORM aggfunction selectstatement 
+    PIVOT pivotfield [IN (value1[, value2[, …]])]</span></span>
 
-<span data-ttu-id="b4f34-107">Die TRANSFORM-Anweisung besteht aus folgenden Teilen:</span><span class="sxs-lookup"><span data-stu-id="b4f34-107">The TRANSFORM statement has these parts:</span></span>
+<span data-ttu-id="b54d9-107">Die TRANSFORM-Anweisung setzt sich wie folgt zusammen:</span><span class="sxs-lookup"><span data-stu-id="b54d9-107">The TRANSFORM statement has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -37,41 +38,41 @@ ms.locfileid: "28711959"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="b4f34-108">Komponente</span><span class="sxs-lookup"><span data-stu-id="b4f34-108">Part</span></span></p></th>
-<th><p><span data-ttu-id="b4f34-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b4f34-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="b54d9-108">Part</span><span class="sxs-lookup"><span data-stu-id="b54d9-108">Part</span></span></p></th>
+<th><p><span data-ttu-id="b54d9-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b54d9-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b4f34-110"><em>AggFunktion</em></span><span class="sxs-lookup"><span data-stu-id="b4f34-110"><em>aggfunction</em></span></span></p></td>
-<td><p><span data-ttu-id="b4f34-111">Eine <a href="sql-aggregate-functions-sql.md">SQL-Aggregatfunktion</a>, die für die ausgewählten Daten ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="b4f34-111">An <a href="sql-aggregate-functions-sql.md">SQL aggregate function</a> that operates on the selected data.</span></span></p></td>
+<td><p><span data-ttu-id="b54d9-110"><em>Aggregatfunktion</em></span><span class="sxs-lookup"><span data-stu-id="b54d9-110"><em>aggfunction</em></span></span></p></td>
+<td><p><span data-ttu-id="b54d9-111">Eine <a href="sql-aggregate-functions-sql.md">SQL-Aggregatfunktion</a>, die für die ausgewählten Daten ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="b54d9-111">An <a href="sql-aggregate-functions-sql.md">SQL aggregate function</a> that operates on the selected data.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b4f34-112"><em>SelectAnweisung</em></span><span class="sxs-lookup"><span data-stu-id="b4f34-112"><em>selectstatement</em></span></span></p></td>
-<td><p><span data-ttu-id="b4f34-113">Eine <a href="select-statement-microsoft-access-sql.md">SELECT</a>-Anweisung.</span><span class="sxs-lookup"><span data-stu-id="b4f34-113">A <a href="select-statement-microsoft-access-sql.md">SELECT</a> statement.</span></span></p></td>
+<td><p><span data-ttu-id="b54d9-112"><em>SELECT-Anweisung</em></span><span class="sxs-lookup"><span data-stu-id="b54d9-112"><em>selectstatement</em></span></span></p></td>
+<td><p><span data-ttu-id="b54d9-113">Eine <a href="select-statement-microsoft-access-sql.md">SELECT</a>-Anweisung.</span><span class="sxs-lookup"><span data-stu-id="b54d9-113">A <a href="select-statement-microsoft-access-sql.md">SELECT</a> statement.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b4f34-114"><em>PivotFeld</em></span><span class="sxs-lookup"><span data-stu-id="b4f34-114"><em>pivotfield</em></span></span></p></td>
-<td><p><span data-ttu-id="b4f34-115">Das Feld oder der Ausdruck, das bzw. den Sie zum Erstellen von Spaltenüberschriften im Resultset der Abfrage verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="b4f34-115">The field or expression you want to use to create column headings in the query's result set.</span></span></p></td>
+<td><p><span data-ttu-id="b54d9-114"><em>Pivotfeld</em></span><span class="sxs-lookup"><span data-stu-id="b54d9-114"><em>pivotfield</em></span></span></p></td>
+<td><p><span data-ttu-id="b54d9-115">Das Feld oder der Ausdruck, das bzw. den Sie zum Erstellen von Spaltenüberschriften im Resultset der Abfrage verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="b54d9-115">The field or expression you want to use to create column headings in the query's result set.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b4f34-116"><em>Wert1</em>, <em>Wert2</em></span><span class="sxs-lookup"><span data-stu-id="b4f34-116"><em>value1</em>, <em>value2</em></span></span></p></td>
-<td><p><span data-ttu-id="b4f34-117">Feste Werte, die zum Erstellen von Spaltenüberschriften verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b4f34-117">Fixed values used to create column headings.</span></span></p></td>
+<td><p><span data-ttu-id="b54d9-116"><em>Wert1</em>, <em>Wert2</em></span><span class="sxs-lookup"><span data-stu-id="b54d9-116"><em>value1</em>, <em>value2</em></span></span></p></td>
+<td><p><span data-ttu-id="b54d9-117">Feste Werte, die zum Erstellen von Spaltenüberschriften verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b54d9-117">Fixed values used to create column headings.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a><span data-ttu-id="b4f34-118">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b4f34-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b54d9-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b54d9-118">Remarks</span></span>
 
-<span data-ttu-id="b4f34-119">Wenn Sie Daten mithilfe einer Kreuztabellenabfrage zusammenfassen, wählen Sie Werte aus angegebenen Feldern oder Ausdrücken als Spaltenüberschriften aus, sodass Sie Daten in einem kompakteren Format als bei einer Auswahlabfrage anzeigen können.</span><span class="sxs-lookup"><span data-stu-id="b4f34-119">When you summarize data using a crosstab query, you select values from specified fields or expressions as column headings so you can view data in a more compact format than with a select query.</span></span>
+<span data-ttu-id="b54d9-119">Wenn Sie Daten mithilfe einer Kreuztabellenabfrage zusammenfassen, wählen Sie Werte aus angegebenen Feldern oder Ausdrücken als Spaltenüberschriften aus, sodass Sie Daten in einem kompakteren Format als bei einer Auswahlabfrage anzeigen können.</span><span class="sxs-lookup"><span data-stu-id="b54d9-119">When you summarize data using a crosstab query, you select values from specified fields or expressions as column headings so you can view data in a more compact format than with a select query.</span></span>
 
-<span data-ttu-id="b4f34-p101">TRANSFORM ist eine optionale Anweisung, aber wenn sie verwendet wird, ist sie die erste Anweisung in einer SQL-Zeichenfolge. Sie steht vor einer SELECT-Anweisung, die die Felder angibt, die als Zeilenüberschriften verwendet werden, und einer GROUP BY-Klausel, die die Zeilengruppierung angibt. Optional können Sie andere Klauseln einschließen, z. B. WHERE-Klauseln, die zusätzliche Auswahl- oder Sortierkriterien angeben. Sie können auch Unterabfragen als Prädikate in einer Kreuztabellenabfrage verwenden – insbesondere die in der WHERE-Klausel.</span><span class="sxs-lookup"><span data-stu-id="b4f34-p101">TRANSFORM is optional but when included is the first statement in an SQL string. It precedes a SELECT statement that specifies the fields used as row headings and a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) clause that specifies row grouping. Optionally, you can include other clauses, such as [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql), that specify additional selection or sorting criteria. You can also use subqueries as predicates — specifically, those in the WHERE clause — in a crosstab query.</span></span>
+<span data-ttu-id="b54d9-p101">TRANSFORM is optional but when included is the first statement in an SQL string. It precedes a SELECT statement that specifies the fields used as row headings and a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) clause that specifies row grouping. Optionally, you can include other clauses, such as [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql), that specify additional selection or sorting criteria. You can also use subqueries as predicates — specifically, those in the WHERE clause — in a crosstab query.</span><span class="sxs-lookup"><span data-stu-id="b54d9-p101">TRANSFORM is optional but when included is the first statement in an SQL string. It precedes a SELECT statement that specifies the fields used as row headings and a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) clause that specifies row grouping. Optionally, you can include other clauses, such as [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql), that specify additional selection or sorting criteria. You can also use subqueries as predicates — specifically, those in the WHERE clause — in a crosstab query.</span></span>
 
-<span data-ttu-id="b4f34-p102">Die im *PivotFeld* zurückgegebenen Werte werden als Spaltenüberschriften im Resultset der Abfrage verwendet. Wenn Sie z. B. die Verkaufszahlen des Verkaufsmonats in einer Kreuztabellenabfrage pivotieren, werden 12 Spalten erstellt. Sie können das *PivotFeld* darauf beschränken, Überschriften aus festen Werten (*Wert1*, *Wert2*) zu erstellen, die in der optionalen IN-Klausel aufgeführt sind. Außerdem können Sie feste Werte einschließen, für die keine Daten vorhanden sind, um zusätzliche Spalten zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b4f34-p102">The values returned in *pivotfield* are used as column headings in the query's result set. For example, pivoting the sales figures on the month of the sale in a crosstab query would create 12 columns. You can restrict *pivotfield* to create headings from fixed values (*value1*, *value2* ) listed in the optional IN clause. You can also include fixed values for which no data exists to create additional columns.</span></span>
+<span data-ttu-id="b54d9-p102">Die in *Pivotfeld* zurückgegebenen Werte werden als Spaltenüberschriften im Resultset der Abfrage verwendet. Beispielsweise würde das Pivotieren der Umsatzzahlen auf den Monat des Verkaufs in einer Kreuztabellenabfrage 12 Spalten erzeugen. Sie können *Pivotfeld* einschränken, um Überschriften anhand von festen Werten (*Wert1*, *Wert2*) zu erzeugen, die in der optionalen IN-Klausel aufgeführt sind. Sie können auch feste Werte verwenden, für die keine Daten vorhanden ist, um zusätzliche Spalten zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b54d9-p102">The values returned in *pivotfield* are used as column headings in the query's result set. For example, pivoting the sales figures on the month of the sale in a crosstab query would create 12 columns. You can restrict *pivotfield* to create headings from fixed values (*value1*, *value2* ) listed in the optional IN clause. You can also include fixed values for which no data exists to create additional columns.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b4f34-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b4f34-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b54d9-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b54d9-128">Example</span></span>
 
-<span data-ttu-id="b4f34-p103">In diesem Beispiel wird die SQL TRANSFORM-Klausel zum Erstellen einer Kreuztabellenabfrage verwendet, die die Anzahl der Bestellungen anzeigt, die von jedem Mitarbeiter für jedes Quartals des Jahrs 1994 entgegengenommen wurden. Die SQLTRANSFORMOutput-Funktion ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b4f34-p103">This example uses the SQL TRANSFORM clause to create a crosstab query showing the number of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="b54d9-p103">In diesem Beispiel wird die SQL TRANSFORM-Klausel zum Erstellen einer Kreuztabellenabfrage verwendet, die die Anzahl der Bestellungen anzeigt, die von jedem Mitarbeiter für jedes Quartals des Jahrs 1994 entgegengenommen wurden. Die SQLTRANSFORMOutput-Funktion ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b54d9-p103">This example uses the SQL TRANSFORM clause to create a crosstab query showing the number of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub TransformX1() 
@@ -109,7 +110,7 @@ ms.locfileid: "28711959"
 
 <br/>
 
-<span data-ttu-id="b4f34-p104">In diesem Beispiel wird die SQL TRANSFORM-Klausel zum Erstellen einer etwas komplexeren Kreuztabellenabfrage verwendet, die den Gesamtwert in Dollar der Bestellungen anzeigt, die von jedem Mitarbeiter für jedes Quartals des Jahrs 1994 entgegengenommen wurden. Die SQLTRANSFORMOutput-Funktion ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b4f34-p104">This example uses the SQL TRANSFORM clause to create a slightly more complex crosstab query showing the total dollar amount of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="b54d9-p104">In diesem Beispiel wird die SQL TRANSFORM-Klausel zum Erstellen einer etwas komplexeren Kreuztabellenabfrage verwendet, die den Gesamtwert in Dollar der Bestellungen anzeigt, die von jedem Mitarbeiter für jedes Quartals des Jahrs 1994 entgegengenommen wurden. Die SQLTRANSFORMOutput-Funktion ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b54d9-p104">This example uses the SQL TRANSFORM clause to create a slightly more complex crosstab query showing the total dollar amount of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub TransformX2() 

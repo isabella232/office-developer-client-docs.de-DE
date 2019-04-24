@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginalAuthorAddressType (kanonische Eigenschaft)
+title: Kanonische Pidtagoriginalauthoraddresstype (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,56 +11,56 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7cdedb1a-e441-469b-be50-2f18203eb30d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bc3c06c38f8ff8121a8503341cdd1084c036e52d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 596e416624fb6f2bf1fdaef64c2179feb7787815
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356217"
 ---
-# <a name="pidtagoriginalauthoraddresstype-canonical-property"></a><span data-ttu-id="ca73f-103">PidTagOriginalAuthorAddressType (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="ca73f-103">PidTagOriginalAuthorAddressType Canonical Property</span></span>
+# <a name="pidtagoriginalauthoraddresstype-canonical-property"></a><span data-ttu-id="f5fb8-103">Kanonische Pidtagoriginalauthoraddresstype (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f5fb8-103">PidTagOriginalAuthorAddressType Canonical Property</span></span>
 
   
   
-<span data-ttu-id="ca73f-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ca73f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f5fb8-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f5fb8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ca73f-105">Enthält den Adresstyp des Autors der ersten Version einer Nachricht, d. h., die Nachricht vor dem weitergeleitet oder darauf geantwortet wird.</span><span class="sxs-lookup"><span data-stu-id="ca73f-105">Contains the address type of the author of the first version of a message, that is, the message before being forwarded or replied to.</span></span>
+<span data-ttu-id="f5fb8-105">Enthält den Adresstyp des Autors der ersten Version einer Nachricht, also die Nachricht, bevor Sie weitergeleitet oder darauf geantwortet wird.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-105">Contains the address type of the author of the first version of a message, that is, the message before being forwarded or replied to.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ca73f-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="ca73f-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ca73f-107">PR_ORIGINAL_AUTHOR_ADDRTYPE, PR_ORIGINAL_AUTHOR_ADDRTYPE_A, PR_ORIGINAL_AUTHOR_ADDRTYPE_W</span><span class="sxs-lookup"><span data-stu-id="ca73f-107">PR_ORIGINAL_AUTHOR_ADDRTYPE, PR_ORIGINAL_AUTHOR_ADDRTYPE_A, PR_ORIGINAL_AUTHOR_ADDRTYPE_W</span></span>  <br/> |
-|<span data-ttu-id="ca73f-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="ca73f-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ca73f-109">0x0079</span><span class="sxs-lookup"><span data-stu-id="ca73f-109">0x0079</span></span>  <br/> |
-|<span data-ttu-id="ca73f-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="ca73f-110">Data type:</span></span>  <br/> |<span data-ttu-id="ca73f-111">PT_STRING8, PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="ca73f-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="ca73f-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="ca73f-112">Area:</span></span>  <br/> |<span data-ttu-id="ca73f-113">Server</span><span class="sxs-lookup"><span data-stu-id="ca73f-113">Server</span></span>  <br/> |
+|<span data-ttu-id="f5fb8-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="f5fb8-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="f5fb8-107">PR_ORIGINAL_AUTHOR_ADDRTYPE, PR_ORIGINAL_AUTHOR_ADDRTYPE_A, PR_ORIGINAL_AUTHOR_ADDRTYPE_W</span><span class="sxs-lookup"><span data-stu-id="f5fb8-107">PR_ORIGINAL_AUTHOR_ADDRTYPE, PR_ORIGINAL_AUTHOR_ADDRTYPE_A, PR_ORIGINAL_AUTHOR_ADDRTYPE_W</span></span>  <br/> |
+|<span data-ttu-id="f5fb8-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="f5fb8-108">Identifier:</span></span>  <br/> |<span data-ttu-id="f5fb8-109">0x0079</span><span class="sxs-lookup"><span data-stu-id="f5fb8-109">0x0079</span></span>  <br/> |
+|<span data-ttu-id="f5fb8-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="f5fb8-110">Data type:</span></span>  <br/> |<span data-ttu-id="f5fb8-111">PT_STRING8, PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="f5fb8-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="f5fb8-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="f5fb8-112">Area:</span></span>  <br/> |<span data-ttu-id="f5fb8-113">Server</span><span class="sxs-lookup"><span data-stu-id="f5fb8-113">Server</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ca73f-114">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="ca73f-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f5fb8-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f5fb8-114">Remarks</span></span>
 
-<span data-ttu-id="ca73f-115">Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Autor einer Nachricht.</span><span class="sxs-lookup"><span data-stu-id="ca73f-115">These properties are examples of the address properties for the author of a message.</span></span> <span data-ttu-id="ca73f-116">Am ersten Übermittlung der Nachricht sollte die Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_SENDER_ADDRTYPE** ([PidTagSenderAddressType](pidtagsenderaddresstype-canonical-property.md)) festgelegt.</span><span class="sxs-lookup"><span data-stu-id="ca73f-116">At first submission of the message, the client application should set this property to the value of the **PR_SENDER_ADDRTYPE** ([PidTagSenderAddressType](pidtagsenderaddresstype-canonical-property.md)) property.</span></span> <span data-ttu-id="ca73f-117">Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.</span><span class="sxs-lookup"><span data-stu-id="ca73f-117">It is never changed when the message is forwarded or replied to.</span></span>
+<span data-ttu-id="f5fb8-115">Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Autor einer Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-115">These properties are examples of the address properties for the author of a message.</span></span> <span data-ttu-id="f5fb8-116">Bei der ersten Übermittlung der Nachricht sollte die Clientanwendung diese Eigenschaft auf den Wert der **PR_SENDER_ADDRTYPE** ([pidtagsenderaddresstype (](pidtagsenderaddresstype-canonical-property.md))-Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-116">At first submission of the message, the client application should set this property to the value of the **PR_SENDER_ADDRTYPE** ([PidTagSenderAddressType](pidtagsenderaddresstype-canonical-property.md)) property.</span></span> <span data-ttu-id="f5fb8-117">Sie wird nie geändert, wenn die Nachricht weitergeleitet oder beantwortet wird.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-117">It is never changed when the message is forwarded or replied to.</span></span>
   
-<span data-ttu-id="ca73f-118">Ursprüngliche Autor der Eigenschaften können zur Aufbewahrung von Informationen von außerhalb der lokalen Domäne messaging.</span><span class="sxs-lookup"><span data-stu-id="ca73f-118">The original author properties allow for preservation of information from outside the local messaging domain.</span></span> <span data-ttu-id="ca73f-119">Beim Empfang einer Nachricht aus einer anderen Domäne messaging bieten wie beispielsweise aus dem Internet diese Eigenschaften eine Möglichkeit, stellen Sie sicher, dass die ursprünglichen Informationen nicht verloren gehen.</span><span class="sxs-lookup"><span data-stu-id="ca73f-119">When a message arrives from another messaging domain, such as from the Internet, these properties provide a way to ensure that original information is not lost.</span></span>
+<span data-ttu-id="f5fb8-118">Die ursprünglichen Autoren Eigenschaften ermöglichen die Aufbewahrung von Informationen außerhalb der lokalen Messaging Domäne.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-118">The original author properties allow for preservation of information from outside the local messaging domain.</span></span> <span data-ttu-id="f5fb8-119">Wenn eine Nachricht von einer anderen Messaging Domäne eingeht, beispielsweise aus dem Internet, bieten diese Eigenschaften eine Möglichkeit, um sicherzustellen, dass die ursprünglichen Informationen nicht verloren gehen.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-119">When a message arrives from another messaging domain, such as from the Internet, these properties provide a way to ensure that original information is not lost.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="ca73f-120">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="ca73f-120">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="f5fb8-120">Zugehörige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="f5fb8-120">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="ca73f-121">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="ca73f-121">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="f5fb8-121">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="f5fb8-121">Header files</span></span>
 
-<span data-ttu-id="ca73f-122">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ca73f-122">Mapidefs.h</span></span>
+<span data-ttu-id="f5fb8-122">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="f5fb8-122">Mapidefs.h</span></span>
   
-> <span data-ttu-id="ca73f-123">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="ca73f-123">Provides data type definitions.</span></span>
+> <span data-ttu-id="f5fb8-123">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-123">Provides data type definitions.</span></span>
     
-<span data-ttu-id="ca73f-124">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="ca73f-124">Mapitags.h</span></span>
+<span data-ttu-id="f5fb8-124">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="f5fb8-124">Mapitags.h</span></span>
   
-> <span data-ttu-id="ca73f-125">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="ca73f-125">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="f5fb8-125">Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.</span><span class="sxs-lookup"><span data-stu-id="f5fb8-125">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ca73f-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ca73f-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f5fb8-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f5fb8-126">See also</span></span>
 
 
 
-[<span data-ttu-id="ca73f-127">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ca73f-127">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="f5fb8-127">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f5fb8-127">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="ca73f-128">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ca73f-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="f5fb8-128">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f5fb8-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="ca73f-129">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="ca73f-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="f5fb8-129">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="f5fb8-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="ca73f-130">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="ca73f-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="f5fb8-130">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="f5fb8-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

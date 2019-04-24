@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1cdc95b8-a156-4600-9e20-caaa02680e87
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 39f28d5a8e9c8c7f3dfc6a8d09cf022cea08800c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1362b1131d937ef240aa1962db8c1b5116786c67
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347782"
 ---
-# <a name="hristoragefromstream"></a><span data-ttu-id="bd9dc-103">HrIStorageFromStream</span><span class="sxs-lookup"><span data-stu-id="bd9dc-103">HrIStorageFromStream</span></span>
+# <a name="hristoragefromstream"></a><span data-ttu-id="f140a-103">HrIStorageFromStream</span><span class="sxs-lookup"><span data-stu-id="f140a-103">HrIStorageFromStream</span></span>
 
   
   
-<span data-ttu-id="bd9dc-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bd9dc-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f140a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f140a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="bd9dc-105">Ebenen eine **IStorage** -Schnittstelle auf **IStream** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-105">Layers an **IStorage** interface onto an **IStream** object.</span></span> 
+<span data-ttu-id="f140a-105">Layers eine **IStorage** -Schnittstelle auf ein **IStream** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="f140a-105">Layers an **IStorage** interface onto an **IStream** object.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="bd9dc-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="bd9dc-106">Header file:</span></span>  <br/> |<span data-ttu-id="bd9dc-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="bd9dc-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="bd9dc-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="bd9dc-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="bd9dc-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="bd9dc-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="bd9dc-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="bd9dc-110">Called by:</span></span>  <br/> |<span data-ttu-id="bd9dc-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="bd9dc-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="f140a-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="f140a-106">Header file:</span></span>  <br/> |<span data-ttu-id="f140a-107">Mapiutil. h</span><span class="sxs-lookup"><span data-stu-id="f140a-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="f140a-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="f140a-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="f140a-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="f140a-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="f140a-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="f140a-110">Called by:</span></span>  <br/> |<span data-ttu-id="f140a-111">Client Anwendungen und Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="f140a-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 HRESULT HrIStorageFromStream(
@@ -42,48 +42,48 @@ HRESULT HrIStorageFromStream(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="bd9dc-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="bd9dc-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f140a-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="f140a-112">Parameters</span></span>
 
- <span data-ttu-id="bd9dc-113">_lpUnkIn_</span><span class="sxs-lookup"><span data-stu-id="bd9dc-113">_lpUnkIn_</span></span>
+ <span data-ttu-id="f140a-113">_lpUnkIn_</span><span class="sxs-lookup"><span data-stu-id="f140a-113">_lpUnkIn_</span></span>
   
-> <span data-ttu-id="bd9dc-114">[in] Zeiger auf die **IUnknown** -Objekt **IStream**implementieren.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-114">[in] Pointer to the **IUnknown** object implementing **IStream**.</span></span> 
+> <span data-ttu-id="f140a-114">in Zeiger auf das **IUnknown** -Objekt, das **IStream**implementiert.</span><span class="sxs-lookup"><span data-stu-id="f140a-114">[in] Pointer to the **IUnknown** object implementing **IStream**.</span></span> 
     
- <span data-ttu-id="bd9dc-115">_lpInterface_</span><span class="sxs-lookup"><span data-stu-id="bd9dc-115">_lpInterface_</span></span>
+ <span data-ttu-id="f140a-115">_lpInterface_</span><span class="sxs-lookup"><span data-stu-id="f140a-115">_lpInterface_</span></span>
   
-> <span data-ttu-id="bd9dc-116">[in] Zeiger auf der Benutzeroberfläche IID (Identifier) für das Stream-Objekt.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-116">[in] Pointer to the interface identifier (IID) for the stream object.</span></span> <span data-ttu-id="bd9dc-117">Eines der folgenden Werte im _LpInterface_ -Parameter übergeben werden kann: NULL, IID_IStream oder IID_ILockBytes.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-117">Any of the following values can be passed in the  _lpInterface_ parameter: NULL, IID_IStream, or IID_ILockBytes.</span></span> <span data-ttu-id="bd9dc-118">Übergeben von NULL in _LpInterface_ ist identisch mit der Übergabe IID_IStream.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-118">Passing NULL in  _lpInterface_ is the same as passing IID_IStream.</span></span> 
+> <span data-ttu-id="f140a-116">in Zeiger auf die Schnittstellen-ID (IID) für das Stream-Objekt.</span><span class="sxs-lookup"><span data-stu-id="f140a-116">[in] Pointer to the interface identifier (IID) for the stream object.</span></span> <span data-ttu-id="f140a-117">Jeder der folgenden Werte kann im _lpInterface_ -Parameter übergeben werden: NULL, IID_IStream oder IID_ILockBytes.</span><span class="sxs-lookup"><span data-stu-id="f140a-117">Any of the following values can be passed in the  _lpInterface_ parameter: NULL, IID_IStream, or IID_ILockBytes.</span></span> <span data-ttu-id="f140a-118">Das übergeben von NULL in _lpInterface_ ist identisch mit dem übergeben von IID_IStream.</span><span class="sxs-lookup"><span data-stu-id="f140a-118">Passing NULL in  _lpInterface_ is the same as passing IID_IStream.</span></span> 
     
- <span data-ttu-id="bd9dc-119">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="bd9dc-119">_ulFlags_</span></span>
+ <span data-ttu-id="f140a-119">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="f140a-119">_ulFlags_</span></span>
   
-> <span data-ttu-id="bd9dc-120">[in] Bitmaske aus Flags, die steuert, wie das Objekt ist relativ zu der Stream erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-120">[in] Bitmask of flags that controls how the storage object is to be created relative to the stream.</span></span> <span data-ttu-id="bd9dc-121">Die Standardeinstellung ist STGSTRM_RESET, die ermöglicht des Zugriffs nur-Lese-Speicher und startet ihn an der Position 0 (null) des Stream-Objekts.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-121">The default setting is STGSTRM_RESET, which gives the storage object read-only access and starts it at position zero of the stream.</span></span> <span data-ttu-id="bd9dc-122">Die folgenden Kennzeichen können eine beliebige Kombination außer festgelegt werden, wie bereits erwähnt:</span><span class="sxs-lookup"><span data-stu-id="bd9dc-122">The following flags can be set in any combination, except as noted:</span></span>
+> <span data-ttu-id="f140a-120">in Bitmaske von Flags, die Steuern, wie das Speicherobjekt relativ zum Stream erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="f140a-120">[in] Bitmask of flags that controls how the storage object is to be created relative to the stream.</span></span> <span data-ttu-id="f140a-121">Die Standardeinstellung ist STGSTRM_RESET, wodurch das Speicherobjekt schreibgeschützt ist und an Position NULL des Streams gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="f140a-121">The default setting is STGSTRM_RESET, which gives the storage object read-only access and starts it at position zero of the stream.</span></span> <span data-ttu-id="f140a-122">Die folgenden Flags können in beliebiger Kombination festgelegt werden, außer wie angegeben:</span><span class="sxs-lookup"><span data-stu-id="f140a-122">The following flags can be set in any combination, except as noted:</span></span>
     
-<span data-ttu-id="bd9dc-123">STGSTRM_CREATE</span><span class="sxs-lookup"><span data-stu-id="bd9dc-123">STGSTRM_CREATE</span></span> 
+<span data-ttu-id="f140a-123">STGSTRM_CREATE</span><span class="sxs-lookup"><span data-stu-id="f140a-123">STGSTRM_CREATE</span></span> 
   
-> <span data-ttu-id="bd9dc-124">Erstellt ein neues Speicherobjekt für das Stream-Objekt.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-124">Creates a new storage object for the stream object.</span></span> <span data-ttu-id="bd9dc-125">Dieses Kennzeichen können nicht festgelegt werden, wenn das Flag STGSTRM_RESET festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-125">This flag cannot be set if the STGSTRM_RESET flag is set.</span></span> 
+> <span data-ttu-id="f140a-124">Erstellt ein neues Speicherobjekt für das Stream-Objekt.</span><span class="sxs-lookup"><span data-stu-id="f140a-124">Creates a new storage object for the stream object.</span></span> <span data-ttu-id="f140a-125">Dieses Flag kann nicht festgelegt werden, wenn das STGSTRM_RESET-Flag festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f140a-125">This flag cannot be set if the STGSTRM_RESET flag is set.</span></span> 
     
-<span data-ttu-id="bd9dc-126">STGSTRM_CURRENT</span><span class="sxs-lookup"><span data-stu-id="bd9dc-126">STGSTRM_CURRENT</span></span> 
+<span data-ttu-id="f140a-126">STGSTRM_CURRENT</span><span class="sxs-lookup"><span data-stu-id="f140a-126">STGSTRM_CURRENT</span></span> 
   
-> <span data-ttu-id="bd9dc-127">Startet Speicher an der aktuellen Position des Datenstroms.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-127">Starts storage at the current position of the stream.</span></span> <span data-ttu-id="bd9dc-128">Dieses Kennzeichen können nicht festgelegt werden, wenn das Flag STGSTRM_RESET festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-128">This flag cannot be set if the STGSTRM_RESET flag is set.</span></span> 
+> <span data-ttu-id="f140a-127">Startet den Speicher an der aktuellen Position des Streams.</span><span class="sxs-lookup"><span data-stu-id="f140a-127">Starts storage at the current position of the stream.</span></span> <span data-ttu-id="f140a-128">Dieses Flag kann nicht festgelegt werden, wenn das STGSTRM_RESET-Flag festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f140a-128">This flag cannot be set if the STGSTRM_RESET flag is set.</span></span> 
     
-<span data-ttu-id="bd9dc-129">STGSTRM_MODIFY</span><span class="sxs-lookup"><span data-stu-id="bd9dc-129">STGSTRM_MODIFY</span></span> 
+<span data-ttu-id="f140a-129">STGSTRM_MODIFY</span><span class="sxs-lookup"><span data-stu-id="f140a-129">STGSTRM_MODIFY</span></span> 
   
-> <span data-ttu-id="bd9dc-130">Ermöglicht es dem aufrufenden Dienstanbieter, in der zurückgegebene Speicher zu schreiben.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-130">Allows the calling service provider to write to the returned storage.</span></span> <span data-ttu-id="bd9dc-131">Dieses Kennzeichen können nicht festgelegt werden, wenn das Flag STGSTRM_RESET festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-131">This flag cannot be set if the STGSTRM_RESET flag is set.</span></span> 
+> <span data-ttu-id="f140a-130">Ermöglicht es dem aufrufenden Dienstanbieter, in den zurückgegebenen Speicher zu schreiben.</span><span class="sxs-lookup"><span data-stu-id="f140a-130">Allows the calling service provider to write to the returned storage.</span></span> <span data-ttu-id="f140a-131">Dieses Flag kann nicht festgelegt werden, wenn das STGSTRM_RESET-Flag festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f140a-131">This flag cannot be set if the STGSTRM_RESET flag is set.</span></span> 
     
-<span data-ttu-id="bd9dc-132">STGSTRM_RESET</span><span class="sxs-lookup"><span data-stu-id="bd9dc-132">STGSTRM_RESET</span></span> 
+<span data-ttu-id="f140a-132">STGSTRM_RESET</span><span class="sxs-lookup"><span data-stu-id="f140a-132">STGSTRM_RESET</span></span> 
   
-> <span data-ttu-id="bd9dc-133">Startet Speicher an Position 0 (null).</span><span class="sxs-lookup"><span data-stu-id="bd9dc-133">Starts storage at position zero.</span></span> <span data-ttu-id="bd9dc-134">Dieses Kennzeichen können nicht festgelegt werden, wenn alle anderen Kennzeichen festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-134">This flag cannot be set if any other flag is set.</span></span> 
+> <span data-ttu-id="f140a-133">Startet den Speicher an Position NULL.</span><span class="sxs-lookup"><span data-stu-id="f140a-133">Starts storage at position zero.</span></span> <span data-ttu-id="f140a-134">Dieses Flag kann nicht festgelegt werden, wenn ein anderes Flag festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f140a-134">This flag cannot be set if any other flag is set.</span></span> 
     
- <span data-ttu-id="bd9dc-135">_lppStorageOut_</span><span class="sxs-lookup"><span data-stu-id="bd9dc-135">_lppStorageOut_</span></span>
+ <span data-ttu-id="f140a-135">_lppStorageOut_</span><span class="sxs-lookup"><span data-stu-id="f140a-135">_lppStorageOut_</span></span>
   
-> <span data-ttu-id="bd9dc-136">[out] Zeiger auf einen Zeiger auf das zurückgegebene **IStorage** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-136">[out] Pointer to a pointer to the returned **IStorage** object.</span></span> 
+> <span data-ttu-id="f140a-136">Out Zeiger auf einen Zeiger auf das zurückgegebene **IStorage** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="f140a-136">[out] Pointer to a pointer to the returned **IStorage** object.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="bd9dc-137">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="bd9dc-137">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f140a-137">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f140a-137">Return value</span></span>
 
-<span data-ttu-id="bd9dc-138">S_OK</span><span class="sxs-lookup"><span data-stu-id="bd9dc-138">S_OK</span></span> 
+<span data-ttu-id="f140a-138">S_OK</span><span class="sxs-lookup"><span data-stu-id="f140a-138">S_OK</span></span> 
   
-> <span data-ttu-id="bd9dc-139">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-139">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="f140a-139">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="f140a-139">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="bd9dc-140">Hinweise</span><span class="sxs-lookup"><span data-stu-id="bd9dc-140">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f140a-140">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f140a-140">Remarks</span></span>
 
-<span data-ttu-id="bd9dc-141">Nachricht speichern-Anbieter unterstützen die **HrIStorageFromStream** -Funktion mit der **IStorage** -Schnittstelle für Anlagen.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-141">Message store providers support the **HrIStorageFromStream** function using the **IStorage** interface for attachments.</span></span> <span data-ttu-id="bd9dc-142">Speicheranbieter müssen die **IStream** -Schnittstelle implementieren.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-142">Store providers must implement the **IStream** interface.</span></span> <span data-ttu-id="bd9dc-143">**HrIStorageFromStream** stellt die **IStorage** -Schnittstelle für das **IStream** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-143">**HrIStorageFromStream** provides the **IStorage** interface for the **IStream** object.</span></span> <span data-ttu-id="bd9dc-144">Es ist möglich, eine **ILockBytes** oder eine **IStream** -Schnittstelle in _LpUnkIn_übergeben.</span><span class="sxs-lookup"><span data-stu-id="bd9dc-144">It is possible to pass either an **ILockBytes** or an **IStream** interface in  _lpUnkIn_.</span></span> 
+<span data-ttu-id="f140a-141">Nachrichtenspeicher Anbieter unterstützen die **HrIStorageFromStream** -Funktion mithilfe der **IStorage** -Schnittstelle für Anlagen.</span><span class="sxs-lookup"><span data-stu-id="f140a-141">Message store providers support the **HrIStorageFromStream** function using the **IStorage** interface for attachments.</span></span> <span data-ttu-id="f140a-142">Speicheranbieter müssen die **IStream** -Schnittstelle implementieren.</span><span class="sxs-lookup"><span data-stu-id="f140a-142">Store providers must implement the **IStream** interface.</span></span> <span data-ttu-id="f140a-143">**HrIStorageFromStream** stellt die **IStorage** -Schnittstelle für das **IStream** -Objekt bereit.</span><span class="sxs-lookup"><span data-stu-id="f140a-143">**HrIStorageFromStream** provides the **IStorage** interface for the **IStream** object.</span></span> <span data-ttu-id="f140a-144">Es ist möglich, eine **ILockBytes** oder eine **IStream** -Schnittstelle in _lpUnkIn_zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="f140a-144">It is possible to pass either an **ILockBytes** or an **IStream** interface in  _lpUnkIn_.</span></span> 
   
 

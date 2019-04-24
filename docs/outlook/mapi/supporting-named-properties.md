@@ -1,5 +1,5 @@
 ---
-title: Unterstützen von benannten Eigenschaften
+title: Unterstützung benannter Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: 2e742ecd-2dcd-46a8-9d4e-2cec2c6f795e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9ee41469914e52295af219428f26854662c9e2f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 27625e913f06e858295351ed62de840ae7789915
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349630"
 ---
-# <a name="supporting-named-properties"></a><span data-ttu-id="6ac13-103">Unterstützen von benannten Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6ac13-103">Supporting Named Properties</span></span>
+# <a name="supporting-named-properties"></a><span data-ttu-id="6cf15-103">Unterstützung benannter Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6cf15-103">Supporting Named Properties</span></span>
 
   
   
-<span data-ttu-id="6ac13-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6ac13-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6cf15-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6cf15-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="6ac13-105">Any object that implements the [IMAPIProp: IUnknown](imapipropiunknown.md) interface can support named properties.</span><span class="sxs-lookup"><span data-stu-id="6ac13-105">Any object that implements the [IMAPIProp : IUnknown](imapipropiunknown.md) interface can support named properties.</span></span> <span data-ttu-id="6ac13-106">Unterstützung für benannte Eigenschaften ist für erforderlich:</span><span class="sxs-lookup"><span data-stu-id="6ac13-106">Support for named properties is required for:</span></span> 
+<span data-ttu-id="6cf15-105">Any object that implements the [IMAPIProp: IUnknown](imapipropiunknown.md) interface can support named properties.</span><span class="sxs-lookup"><span data-stu-id="6cf15-105">Any object that implements the [IMAPIProp : IUnknown](imapipropiunknown.md) interface can support named properties.</span></span> <span data-ttu-id="6cf15-106">Die Unterstützung für benannte Eigenschaften ist erforderlich für:</span><span class="sxs-lookup"><span data-stu-id="6cf15-106">Support for named properties is required for:</span></span> 
   
-- <span data-ttu-id="6ac13-107">Von adressbuchanbietern implementierte, mit denen Sie Einträge von anderen Anbietern in ihre Container kopiert werden können.</span><span class="sxs-lookup"><span data-stu-id="6ac13-107">Address book providers that allow entries from other providers to be copied into their containers.</span></span>
+- <span data-ttu-id="6cf15-107">Adressbuchanbieter, mit denen Einträge anderer Anbieter in Ihre Container kopiert werden können.</span><span class="sxs-lookup"><span data-stu-id="6cf15-107">Address book providers that allow entries from other providers to be copied into their containers.</span></span>
     
-- <span data-ttu-id="6ac13-108">Nachrichtenspeicher Authentifizierungsanbieter an, die zum Erstellen von beliebigen Nachrichtentypen verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="6ac13-108">Message store providers that can be used to create arbitrary message types.</span></span>
+- <span data-ttu-id="6cf15-108">Nachrichtenspeicher Anbieter, die zum Erstellen beliebiger Nachrichtentypen verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="6cf15-108">Message store providers that can be used to create arbitrary message types.</span></span>
     
-<span data-ttu-id="6ac13-109">Unterstützung für benannte Eigenschaft ist optional für alle anderen Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="6ac13-109">Named property support is optional for all other service providers.</span></span> <span data-ttu-id="6ac13-110">Dienstanbieter, die Unterstützung für benannte Eigenschaften müssen Namensbezeichner-Zuordnung in den Methoden [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) implementieren.</span><span class="sxs-lookup"><span data-stu-id="6ac13-110">Service providers that do support named properties must implement name-to-identifier mapping in the [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) and [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) methods.</span></span> <span data-ttu-id="6ac13-111">Clients aufrufen **GetNamesFromIDs** zum Abrufen der entsprechenden Names für einen oder mehrere Eigenschaftenbezeichner im Bereich 0 x 8000 Failover und **GetIDsFromNames** entweder erstellen oder die Bezeichner für einen oder mehrere Namen abgerufen.</span><span class="sxs-lookup"><span data-stu-id="6ac13-111">Clients call **GetNamesFromIDs** to retrieve the corresponding names for one or more property identifiers in the over 0x8000 range and **GetIDsFromNames** to either create or retrieve the identifiers for one or more names.</span></span> 
+<span data-ttu-id="6cf15-109">Die Unterstützung benannter Eigenschaften ist für alle anderen Dienstanbieter optional.</span><span class="sxs-lookup"><span data-stu-id="6cf15-109">Named property support is optional for all other service providers.</span></span> <span data-ttu-id="6cf15-110">Dienstanbieter, die benannte Eigenschaften unterstützen, müssen die Zuordnung von Namen zu Bezeichnern in den Methoden [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) implementieren.</span><span class="sxs-lookup"><span data-stu-id="6cf15-110">Service providers that do support named properties must implement name-to-identifier mapping in the [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) and [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) methods.</span></span> <span data-ttu-id="6cf15-111">Clients rufen **GetNamesFromIDs** auf, um die entsprechenden Namen für einen oder mehrere Eigenschaftsbezeichner im over 0X8000-Range abzurufen, und **GetIDsFromNames** , um die Bezeichner für einen oder mehrere Namen zu erstellen oder abzurufen.</span><span class="sxs-lookup"><span data-stu-id="6cf15-111">Clients call **GetNamesFromIDs** to retrieve the corresponding names for one or more property identifiers in the over 0x8000 range and **GetIDsFromNames** to either create or retrieve the identifiers for one or more names.</span></span> 
   
-<span data-ttu-id="6ac13-112">Dienstanbieter, die keine Unterstützung für benannte Eigenschaften müssen:</span><span class="sxs-lookup"><span data-stu-id="6ac13-112">Service providers that do not support named properties must:</span></span>
+<span data-ttu-id="6cf15-112">Dienstanbieter, die benannte Eigenschaften nicht unterstützen, müssen:</span><span class="sxs-lookup"><span data-stu-id="6cf15-112">Service providers that do not support named properties must:</span></span>
   
-- <span data-ttu-id="6ac13-113">Schlagen Sie Aufrufe von [IMAPIProp::SetProps](imapiprop-setprops.md) Eigenschaften mit Bezeichnern oder größer 0 x 8000 Festlegen des MAPI_E_UNEXPECTED_ID im [SPropProblem](spropproblem.md) -Array zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="6ac13-113">Fail calls to [IMAPIProp::SetProps](imapiprop-setprops.md) to set properties with identifiers of 0x8000 or greater by returning MAPI_E_UNEXPECTED_ID in the [SPropProblem](spropproblem.md) array.</span></span> 
+- <span data-ttu-id="6cf15-113">Fehler beim Aufrufen von [IMAPIProp::](imapiprop-setprops.md) SetProps zum Festlegen von Eigenschaften mit Bezeichnern von 0X8000 oder höher, indem MAPI_E_UNEXPECTED_ID im [SPropProblem](spropproblem.md) -Array zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="6cf15-113">Fail calls to [IMAPIProp::SetProps](imapiprop-setprops.md) to set properties with identifiers of 0x8000 or greater by returning MAPI_E_UNEXPECTED_ID in the [SPropProblem](spropproblem.md) array.</span></span> 
     
-- <span data-ttu-id="6ac13-114">Geben Sie die Methoden [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) MAPI_E_NO_SUPPORT zurück.</span><span class="sxs-lookup"><span data-stu-id="6ac13-114">Return MAPI_E_NO_SUPPORT from the [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) and [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) methods .</span></span> 
+- <span data-ttu-id="6cf15-114">Geben Sie MAPI_E_NO_SUPPORT aus den Methoden [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) zurück.</span><span class="sxs-lookup"><span data-stu-id="6cf15-114">Return MAPI_E_NO_SUPPORT from the [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) and [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) methods .</span></span> 
     
 

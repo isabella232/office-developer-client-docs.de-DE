@@ -8,21 +8,21 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 32c40e1fbda3f0f851b52d29c073d95a5d636620
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349560"
 ---
-# <a name="create-a-mail-item-attach-a-report-and-send-the-mail-item-to-the-users-manager"></a><span data-ttu-id="bd5a9-102">Erstellen eines E-Mail-Elements, Anfügen eines Berichts und Senden des E-Mail-Elements an den Vorgesetzten des Benutzers</span><span class="sxs-lookup"><span data-stu-id="bd5a9-102">Create a mail item, attach a report, and send the mail item to the user's manager</span></span>
+# <a name="create-a-mail-item-attach-a-report-and-send-the-mail-item-to-the-users-manager"></a><span data-ttu-id="c90d7-102">Erstellen eines E-Mail-Elements, Anfügen eines Berichts und Senden des E-Mail-Elements an den Vorgesetzten des Benutzers</span><span class="sxs-lookup"><span data-stu-id="c90d7-102">Create a mail item, attach a report, and send the mail item to the user's manager</span></span>
 
-<span data-ttu-id="bd5a9-103">In diesem Beispiel wird ein E-Mail-Element mit einer Anlage erstellt und dann an den Vorgesetzten des Benutzers gesendet.</span><span class="sxs-lookup"><span data-stu-id="bd5a9-103">This example creates a mail item that has an attachment, and then sends the mail item to the user's manager.</span></span>
+<span data-ttu-id="c90d7-103">In diesem Beispiel wird ein E-Mail-Element mit einer Anlage erstellt und dann an den Vorgesetzten des Benutzers gesendet.</span><span class="sxs-lookup"><span data-stu-id="c90d7-103">This example creates a mail item that has an attachment, and then sends the mail item to the user's manager.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bd5a9-104">Beispiel</span><span class="sxs-lookup"><span data-stu-id="bd5a9-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c90d7-104">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c90d7-104">Example</span></span>
 
-<span data-ttu-id="bd5a9-p101">Dieses Beispiel kann nur mit einem Microsoft Exchange Server-Konto ordnungsgemäß ausgeführt werden. Im Active Directory-Verzeichnisdienst muss eine Vorgesetztenbeziehung für Benutzer eingerichtet werden. Im Beispiel wird anhand des [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) -Objekts durch Aufrufen der [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) -Methode der Vorgesetzte des aktuellen Benutzers ermittelt.</span><span class="sxs-lookup"><span data-stu-id="bd5a9-p101">This example runs correctly only against a Microsoft Exchange Server account. A manager relationship for users must be established in the Active Directory directory service. The example uses the [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) object to determine the current user's manager by calling the [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) method.</span></span>
+<span data-ttu-id="c90d7-p101">Dieses Beispiel kann nur mit einem Microsoft Exchange Server-Konto ordnungsgemäß ausgeführt werden. Im Active Directory-Verzeichnisdienst muss eine Vorgesetztenbeziehung für Benutzer eingerichtet werden. Im Beispiel wird anhand des [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) -Objekts durch Aufrufen der [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) -Methode der Vorgesetzte des aktuellen Benutzers ermittelt.</span><span class="sxs-lookup"><span data-stu-id="c90d7-p101">This example runs correctly only against a Microsoft Exchange Server account. A manager relationship for users must be established in the Active Directory directory service. The example uses the [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) object to determine the current user's manager by calling the [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) method.</span></span>
 
-<span data-ttu-id="bd5a9-108">Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren.</span><span class="sxs-lookup"><span data-stu-id="bd5a9-108">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="bd5a9-109">Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="bd5a9-109">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="bd5a9-110">Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.</span><span class="sxs-lookup"><span data-stu-id="bd5a9-110">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
+<span data-ttu-id="c90d7-108">Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren.</span><span class="sxs-lookup"><span data-stu-id="c90d7-108">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="c90d7-109">Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="c90d7-109">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="c90d7-110">Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.</span><span class="sxs-lookup"><span data-stu-id="c90d7-110">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook
@@ -78,7 +78,7 @@ private void SendSalesReport()
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="bd5a9-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bd5a9-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c90d7-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c90d7-111">See also</span></span>
 
-- [<span data-ttu-id="bd5a9-112">Mail</span><span class="sxs-lookup"><span data-stu-id="bd5a9-112">Mail</span></span>](mail.md)
+- [<span data-ttu-id="c90d7-112">Mail</span><span class="sxs-lookup"><span data-stu-id="c90d7-112">Mail</span></span>](mail.md)
 

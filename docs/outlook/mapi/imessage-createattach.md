@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 01711aca-c598-438c-88d7-0719b6691e34
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9cc2f5f3880466c0a70febedbc7aaec987b62bb3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f534912377aadb3c342030fc02fce26693857476
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351114"
 ---
-# <a name="imessagecreateattach"></a><span data-ttu-id="4fd0a-103">IMessage::CreateAttach</span><span class="sxs-lookup"><span data-stu-id="4fd0a-103">IMessage::CreateAttach</span></span>
+# <a name="imessagecreateattach"></a><span data-ttu-id="41a1a-103">IMessage::CreateAttach</span><span class="sxs-lookup"><span data-stu-id="41a1a-103">IMessage::CreateAttach</span></span>
 
   
   
-<span data-ttu-id="4fd0a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4fd0a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="41a1a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="41a1a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4fd0a-105">Erstellt eine neue Anlage.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-105">Creates a new attachment.</span></span>
+<span data-ttu-id="41a1a-105">Erstellt eine neue Anlage.</span><span class="sxs-lookup"><span data-stu-id="41a1a-105">Creates a new attachment.</span></span>
   
 ```cpp
 HRESULT CreateAttach(
@@ -36,43 +36,43 @@ LPATTACH FAR * lppAttach
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="4fd0a-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="4fd0a-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="41a1a-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="41a1a-106">Parameters</span></span>
 
- <span data-ttu-id="4fd0a-107">_lpInterface_</span><span class="sxs-lookup"><span data-stu-id="4fd0a-107">_lpInterface_</span></span>
+ <span data-ttu-id="41a1a-107">_lpInterface_</span><span class="sxs-lookup"><span data-stu-id="41a1a-107">_lpInterface_</span></span>
   
-> <span data-ttu-id="4fd0a-108">[in] Zeiger auf die Schnittstelle-ID (IID), das die Schnittstelle für verwendet werden, um Zugriff auf die Nachricht darstellt.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-108">[in] Pointer to the interface identifier (IID) representing the interface to be used to access the message.</span></span> <span data-ttu-id="4fd0a-109">Bei Übergabe von NULL führt der Nachricht Standardschnittstelle oder **IMessage**, zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-109">Passing NULL results in the message's standard interface, or **IMessage**, being returned.</span></span> 
+> <span data-ttu-id="41a1a-108">in Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf die Nachricht verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="41a1a-108">[in] Pointer to the interface identifier (IID) representing the interface to be used to access the message.</span></span> <span data-ttu-id="41a1a-109">Übergeben von NULL-Ergebnissen in der Standardschnittstelle der Nachricht oder **IMessage**, wird zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="41a1a-109">Passing NULL results in the message's standard interface, or **IMessage**, being returned.</span></span> 
     
- <span data-ttu-id="4fd0a-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="4fd0a-110">_ulFlags_</span></span>
+ <span data-ttu-id="41a1a-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="41a1a-110">_ulFlags_</span></span>
   
-> <span data-ttu-id="4fd0a-111">[in] Bitmaske aus Flags, die steuert, wie das Attachment-Objekt erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-111">[in] Bitmask of flags that controls how the attachment is created.</span></span> <span data-ttu-id="4fd0a-112">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="4fd0a-112">The following flag can be set:</span></span>
+> <span data-ttu-id="41a1a-111">in Bitmaske von Flags, die die Erstellung der Anlage steuert.</span><span class="sxs-lookup"><span data-stu-id="41a1a-111">[in] Bitmask of flags that controls how the attachment is created.</span></span> <span data-ttu-id="41a1a-112">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="41a1a-112">The following flag can be set:</span></span>
     
-<span data-ttu-id="4fd0a-113">MAPI_DEFERRED_ERRORS</span><span class="sxs-lookup"><span data-stu-id="4fd0a-113">MAPI_DEFERRED_ERRORS</span></span> 
+<span data-ttu-id="41a1a-113">MAPI_DEFERRED_ERRORS</span><span class="sxs-lookup"><span data-stu-id="41a1a-113">MAPI_DEFERRED_ERRORS</span></span> 
   
-> <span data-ttu-id="4fd0a-114">Ermöglicht **CreateAttach** erfolgreich, möglicherweise beendet, bevor die Anlage vollständig an den aufrufenden Client verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-114">Allows **CreateAttach** to return successfully, possibly before the attachment is fully accessible to the calling client.</span></span> <span data-ttu-id="4fd0a-115">Wenn die Anlage nicht möglich ist, kann nachfolgende aufrufen es ein Laufzeitfehler.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-115">If the attachment is not accessible, making a subsequent call to it can result in an error.</span></span> 
+> <span data-ttu-id="41a1a-114">Ermöglicht \*\*\*\* , dass createattach erfolgreich zurückgegeben wird, möglicherweise, bevor der aufrufende Client vollständig auf die Anlage zugreifen kann.</span><span class="sxs-lookup"><span data-stu-id="41a1a-114">Allows **CreateAttach** to return successfully, possibly before the attachment is fully accessible to the calling client.</span></span> <span data-ttu-id="41a1a-115">Wenn auf die Anlage nicht zugegriffen werden kann, führt der nachfolgende Aufruf zu einem Fehler.</span><span class="sxs-lookup"><span data-stu-id="41a1a-115">If the attachment is not accessible, making a subsequent call to it can result in an error.</span></span> 
     
- <span data-ttu-id="4fd0a-116">_lpulAttachmentNum_</span><span class="sxs-lookup"><span data-stu-id="4fd0a-116">_lpulAttachmentNum_</span></span>
+ <span data-ttu-id="41a1a-116">_lpulAttachmentNum_</span><span class="sxs-lookup"><span data-stu-id="41a1a-116">_lpulAttachmentNum_</span></span>
   
-> <span data-ttu-id="4fd0a-117">[out] Zeiger auf eine Indexnummer, die das neu erstellte Attachment-Objekt identifiziert.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-117">[out] Pointer to an index number identifying the newly created attachment.</span></span> <span data-ttu-id="4fd0a-118">Diese Nummer gilt nur, wenn die Nachricht geöffnet wird und die Grundlage für die Anlage **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft bildet.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-118">This number is valid only when the message is open and is the basis for the attachment's **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) property.</span></span>
+> <span data-ttu-id="41a1a-117">Out Zeiger auf eine Indexnummer, die die neu erstellte Anlage identifiziert.</span><span class="sxs-lookup"><span data-stu-id="41a1a-117">[out] Pointer to an index number identifying the newly created attachment.</span></span> <span data-ttu-id="41a1a-118">Diese Nummer ist nur gültig, wenn die Nachricht geöffnet ist und die Grundlage für die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage ist.</span><span class="sxs-lookup"><span data-stu-id="41a1a-118">This number is valid only when the message is open and is the basis for the attachment's **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) property.</span></span>
     
- <span data-ttu-id="4fd0a-119">_lppAttach_</span><span class="sxs-lookup"><span data-stu-id="4fd0a-119">_lppAttach_</span></span>
+ <span data-ttu-id="41a1a-119">_lppAttach_</span><span class="sxs-lookup"><span data-stu-id="41a1a-119">_lppAttach_</span></span>
   
-> <span data-ttu-id="4fd0a-120">[out] Zeiger auf einen Zeiger auf das Objekt Anlage öffnen.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-120">[out] Pointer to a pointer to the open attachment object.</span></span>
+> <span data-ttu-id="41a1a-120">Out Zeiger auf einen Zeiger auf das offene Attachment-Objekt.</span><span class="sxs-lookup"><span data-stu-id="41a1a-120">[out] Pointer to a pointer to the open attachment object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="4fd0a-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4fd0a-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="41a1a-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="41a1a-121">Return value</span></span>
 
-<span data-ttu-id="4fd0a-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="4fd0a-122">S_OK</span></span> 
+<span data-ttu-id="41a1a-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="41a1a-122">S_OK</span></span> 
   
-> <span data-ttu-id="4fd0a-123">Die Anlage wurde erfolgreich erstellt.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-123">The attachment was successfully created.</span></span>
+> <span data-ttu-id="41a1a-123">Die Anlage wurde erfolgreich erstellt.</span><span class="sxs-lookup"><span data-stu-id="41a1a-123">The attachment was successfully created.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="4fd0a-124">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4fd0a-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="41a1a-124">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="41a1a-124">Remarks</span></span>
 
-<span data-ttu-id="4fd0a-125">Die **IMessage::CreateAttach** -Methode erstellt eine neue Anlage in einer Nachricht.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-125">The **IMessage::CreateAttach** method creates a new attachment on a message.</span></span> <span data-ttu-id="4fd0a-126">Die neue Anlage und Eigenschaften, die für sie festgelegt sind sind nicht verfügbar, bis ein Client die Anlage [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode und die Nachricht **IMAPIProp::SaveChanges** -Methode aufgerufen wurde.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-126">The new attachment and any properties that are set for it, are not available until a client has called both the attachment's [IMAPIProp::SaveChanges](imapiprop-savechanges.md) method and the message's **IMAPIProp::SaveChanges** method.</span></span> 
+<span data-ttu-id="41a1a-125">Die **IMessage:: createattach** -Methode erstellt eine neue Anlage für eine Nachricht.</span><span class="sxs-lookup"><span data-stu-id="41a1a-125">The **IMessage::CreateAttach** method creates a new attachment on a message.</span></span> <span data-ttu-id="41a1a-126">Die neue Anlage und alle für Sie festgelegten Eigenschaften sind erst verfügbar, wenn ein Client sowohl die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode als auch die **IMAPIProp:: SaveChanges** -Methode der Nachricht aufgerufen hat.</span><span class="sxs-lookup"><span data-stu-id="41a1a-126">The new attachment and any properties that are set for it, are not available until a client has called both the attachment's [IMAPIProp::SaveChanges](imapiprop-savechanges.md) method and the message's **IMAPIProp::SaveChanges** method.</span></span> 
   
-<span data-ttu-id="4fd0a-127">Die Anlage Anzahl auf den _LpulAttachmentNum_ ist eindeutig und nur im Kontext der Nachricht gültig.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-127">The attachment number pointed to by  _lpulAttachmentNum_ is unique and valid only within the context of the message.</span></span> <span data-ttu-id="4fd0a-128">D. h., können zwei Anlagen in zwei verschiedene Nachrichten die gleiche Anzahl haben, während zwei Anlagen in die gleiche Nachricht ist nicht möglich.</span><span class="sxs-lookup"><span data-stu-id="4fd0a-128">That is, two attachments in two different messages can have the same number while two attachments in the same message cannot.</span></span> 
+<span data-ttu-id="41a1a-127">Die Anlagennummer, auf die durch _lpulAttachmentNum_ verwiesen wird, ist eindeutig und gilt nur innerhalb des Kontexts der Nachricht.</span><span class="sxs-lookup"><span data-stu-id="41a1a-127">The attachment number pointed to by  _lpulAttachmentNum_ is unique and valid only within the context of the message.</span></span> <span data-ttu-id="41a1a-128">Das heißt, zwei Anlagen in zwei verschiedenen Nachrichten können dieselbe Anzahl haben, während zwei Anlagen in der gleichen Nachricht nicht.</span><span class="sxs-lookup"><span data-stu-id="41a1a-128">That is, two attachments in two different messages can have the same number while two attachments in the same message cannot.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="4fd0a-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4fd0a-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="41a1a-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="41a1a-129">See also</span></span>
 
 
 
-[<span data-ttu-id="4fd0a-130">IMessage: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="4fd0a-130">IMessage : IMAPIProp</span></span>](imessageimapiprop.md)
+[<span data-ttu-id="41a1a-130">IMessage: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="41a1a-130">IMessage : IMAPIProp</span></span>](imessageimapiprop.md)
 

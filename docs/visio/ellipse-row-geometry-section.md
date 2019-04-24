@@ -8,31 +8,31 @@ f1_keywords:
 - vis_sdr.chm3010
 localization_priority: Normal
 ms.assetid: 183fb303-4acb-a486-7b97-f11f7ae3978f
-description: Enthält die X- und y-Koordinaten des Mittelpunkts der Ellipse von zwei Punkten auf der Ellipse.
-ms.openlocfilehash: 0a2acb0efa20f67d04581f827edbfc4fb4a2d6b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält die x-und y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse.
+ms.openlocfilehash: 5121ba0c7bf97eaeaaf8a438dd40eccddada4362
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345682"
 ---
-# <a name="ellipse-row-geometry-section"></a><span data-ttu-id="d27ff-103">Ellipse Row (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="d27ff-103">Ellipse Row (Geometry Section)</span></span>
+# <a name="ellipse-row-geometry-section"></a><span data-ttu-id="f251f-103">Zeile "Ellipse" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="f251f-103">Ellipse Row (Geometry Section)</span></span>
 
-<span data-ttu-id="d27ff-104">Enthält die *X* - und *y* -Koordinaten des Mittelpunkts der Ellipse von zwei Punkten auf der Ellipse.</span><span class="sxs-lookup"><span data-stu-id="d27ff-104">Contains the  *x*  - and  *y*  -coordinates of the ellipse's center point and two points on the ellipse.</span></span> 
+<span data-ttu-id="f251f-104">Enthält die *x* -und *y* -Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse.</span><span class="sxs-lookup"><span data-stu-id="f251f-104">Contains the  *x*  - and  *y*  -coordinates of the ellipse's center point and two points on the ellipse.</span></span> 
   
-<span data-ttu-id="d27ff-105">Eine Zeile Ellipse enthält folgende Zellen.</span><span class="sxs-lookup"><span data-stu-id="d27ff-105">An Ellipse row contains the following cells.</span></span>
+<span data-ttu-id="f251f-105">Eine Zeile Ellipse enthält folgende Zellen.</span><span class="sxs-lookup"><span data-stu-id="f251f-105">An Ellipse row contains the following cells.</span></span>
   
-|<span data-ttu-id="d27ff-106">**Cell**</span><span class="sxs-lookup"><span data-stu-id="d27ff-106">**Cell**</span></span>|<span data-ttu-id="d27ff-107">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d27ff-107">**Description**</span></span>|
+|<span data-ttu-id="f251f-106">**Cell**</span><span class="sxs-lookup"><span data-stu-id="f251f-106">**Cell**</span></span>|<span data-ttu-id="f251f-107">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f251f-107">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d27ff-108">X</span><span class="sxs-lookup"><span data-stu-id="d27ff-108">X</span></span>](x-cell-geometry-section.md) <br/> |<span data-ttu-id="d27ff-109">Die *X* -Koordinate des Mittelpunkts.</span><span class="sxs-lookup"><span data-stu-id="d27ff-109">The  *x*  -coordinate of the center point.</span></span>  <br/> |
-|[<span data-ttu-id="d27ff-110">Y</span><span class="sxs-lookup"><span data-stu-id="d27ff-110">Y</span></span>](y-cell-geometry-section.md) <br/> |<span data-ttu-id="d27ff-111">Die *y* -Koordinate des Mittelpunkts.</span><span class="sxs-lookup"><span data-stu-id="d27ff-111">The  *y*  -coordinate of the center point.</span></span>  <br/> |
-|[<span data-ttu-id="d27ff-112">A</span><span class="sxs-lookup"><span data-stu-id="d27ff-112">A</span></span>](a-cell-geometry-section.md) <br/> |<span data-ttu-id="d27ff-113">Die X-Koordinate eines Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle B.</span><span class="sxs-lookup"><span data-stu-id="d27ff-113">The x-coordinate of one point on the ellipse; paired with  *y*  -coordinate represented by the B cell.</span></span>  <br/> |
-|[<span data-ttu-id="d27ff-114">B</span><span class="sxs-lookup"><span data-stu-id="d27ff-114">B</span></span>](b-cell-geometry-section.md) <br/> |<span data-ttu-id="d27ff-115">Die *y* --Koordinate eines Punkts auf der Ellipse; gepaart mit einer X-Koordinate, dargestellt durch die Zelle A.</span><span class="sxs-lookup"><span data-stu-id="d27ff-115">The  *y*  -coordinate of one point on the ellipse; paired with x-coordinate represented by the A cell.</span></span>  <br/> |
-|[<span data-ttu-id="d27ff-116">C</span><span class="sxs-lookup"><span data-stu-id="d27ff-116">C</span></span>](c-cell-geometry-section.md) <br/> |<span data-ttu-id="d27ff-117">Die *X* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle D.</span><span class="sxs-lookup"><span data-stu-id="d27ff-117">The  *x*  -coordinate of another point on the ellipse; paired with  *y*  -coordinate represented by the D cell.</span></span>  <br/> |
-|[<span data-ttu-id="d27ff-118">D</span><span class="sxs-lookup"><span data-stu-id="d27ff-118">D</span></span>](d-cell-geometry-section.md) <br/> |<span data-ttu-id="d27ff-119">Die *y* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle C.</span><span class="sxs-lookup"><span data-stu-id="d27ff-119">The  *y*  -coordinate of another point on the ellipse; paired with  *y*  -coordinate represented by the C cell.</span></span>  <br/> |
+|[<span data-ttu-id="f251f-108">X</span><span class="sxs-lookup"><span data-stu-id="f251f-108">X</span></span>](x-cell-geometry-section.md) <br/> |<span data-ttu-id="f251f-109">Die *x* -Koordinate des Mittelpunkts.</span><span class="sxs-lookup"><span data-stu-id="f251f-109">The  *x*  -coordinate of the center point.</span></span>  <br/> |
+|[<span data-ttu-id="f251f-110">Y</span><span class="sxs-lookup"><span data-stu-id="f251f-110">Y</span></span>](y-cell-geometry-section.md) <br/> |<span data-ttu-id="f251f-111">Die *y* -Koordinate des Mittelpunkts.</span><span class="sxs-lookup"><span data-stu-id="f251f-111">The  *y*  -coordinate of the center point.</span></span>  <br/> |
+|[<span data-ttu-id="f251f-112">A</span><span class="sxs-lookup"><span data-stu-id="f251f-112">A</span></span>](a-cell-geometry-section.md) <br/> |<span data-ttu-id="f251f-113">Die x-Koordinate eines Punkts auf der Ellipse; gepaart mit der *y* -Koordinate, dargestellt durch die Zelle B.</span><span class="sxs-lookup"><span data-stu-id="f251f-113">The x-coordinate of one point on the ellipse; paired with  *y*  -coordinate represented by the B cell.</span></span>  <br/> |
+|[<span data-ttu-id="f251f-114">B</span><span class="sxs-lookup"><span data-stu-id="f251f-114">B</span></span>](b-cell-geometry-section.md) <br/> |<span data-ttu-id="f251f-115">Die *y* -Koordinate eines Punkts auf der Ellipse; gepaart mit einer x-Koordinate, dargestellt durch die Zelle A.</span><span class="sxs-lookup"><span data-stu-id="f251f-115">The  *y*  -coordinate of one point on the ellipse; paired with x-coordinate represented by the A cell.</span></span>  <br/> |
+|[<span data-ttu-id="f251f-116">C</span><span class="sxs-lookup"><span data-stu-id="f251f-116">C</span></span>](c-cell-geometry-section.md) <br/> |<span data-ttu-id="f251f-117">Die *x* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit der *y* -Koordinate, dargestellt durch die Zelle D.</span><span class="sxs-lookup"><span data-stu-id="f251f-117">The  *x*  -coordinate of another point on the ellipse; paired with  *y*  -coordinate represented by the D cell.</span></span>  <br/> |
+|[<span data-ttu-id="f251f-118">D</span><span class="sxs-lookup"><span data-stu-id="f251f-118">D</span></span>](d-cell-geometry-section.md) <br/> |<span data-ttu-id="f251f-119">Die *y* -Koordinate eines anderen Punkts auf der Ellipse; gepaart mit der *y* -Koordinate, dargestellt durch die Zelle C.</span><span class="sxs-lookup"><span data-stu-id="f251f-119">The  *y*  -coordinate of another point on the ellipse; paired with  *y*  -coordinate represented by the C cell.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d27ff-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="d27ff-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f251f-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f251f-120">Remarks</span></span>
 
-<span data-ttu-id="d27ff-121">Ein Abschnitt Geometry, der eine Zeile Ellipse oder InfiniteLine enthält, sollte keine anderen Zeilen enthalten.</span><span class="sxs-lookup"><span data-stu-id="d27ff-121">A geometry section that contains an Ellipse or an InfiniteLine row should not contain any other rows.</span></span>
+<span data-ttu-id="f251f-121">Ein Abschnitt Geometry, der eine Zeile Ellipse oder InfiniteLine enthält, sollte keine anderen Zeilen enthalten.</span><span class="sxs-lookup"><span data-stu-id="f251f-121">A geometry section that contains an Ellipse or an InfiniteLine row should not contain any other rows.</span></span>
   
 

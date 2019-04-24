@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb76b147-6552-4cc4-920f-699170aea17f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3bcad4c236f71390f7a048eb66860720e9180e06
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c035780d3d790d94551860a418401e63da1c2151
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348048"
 ---
-# <a name="hrcomposemsgid"></a><span data-ttu-id="de704-103">HrComposeMsgID</span><span class="sxs-lookup"><span data-stu-id="de704-103">HrComposeMsgID</span></span>
+# <a name="hrcomposemsgid"></a><span data-ttu-id="a9e11-103">HrComposeMsgID</span><span class="sxs-lookup"><span data-stu-id="a9e11-103">HrComposeMsgID</span></span>
 
   
   
-<span data-ttu-id="de704-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="de704-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="a9e11-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a9e11-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="de704-105">Erstellt eine ASCII-Zeichenfolge, die eine zusammengesetzter Eintrags-ID für ein Objekt, das in der Regel eine Meldung in einem Nachrichtenspeicher darstellt.</span><span class="sxs-lookup"><span data-stu-id="de704-105">Creates an ASCII string representing a compound entry identifier for an object, usually a message in a message store.</span></span> 
+<span data-ttu-id="a9e11-105">Erstellt eine ASCII-Zeichenfolge, die eine verknüpfte Eintrags-ID für ein Objekt darstellt, in der Regel eine Nachricht in einem Nachrichtenspeicher.</span><span class="sxs-lookup"><span data-stu-id="a9e11-105">Creates an ASCII string representing a compound entry identifier for an object, usually a message in a message store.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="de704-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="de704-106">Header file:</span></span>  <br/> |<span data-ttu-id="de704-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="de704-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="de704-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="de704-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="de704-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="de704-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="de704-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="de704-110">Called by:</span></span>  <br/> |<span data-ttu-id="de704-111">Clientanwendungen</span><span class="sxs-lookup"><span data-stu-id="de704-111">Client applications</span></span>  <br/> |
+|<span data-ttu-id="a9e11-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="a9e11-106">Header file:</span></span>  <br/> |<span data-ttu-id="a9e11-107">Mapiutil. h</span><span class="sxs-lookup"><span data-stu-id="a9e11-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="a9e11-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="a9e11-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="a9e11-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="a9e11-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="a9e11-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="a9e11-110">Called by:</span></span>  <br/> |<span data-ttu-id="a9e11-111">Client Anwendungen</span><span class="sxs-lookup"><span data-stu-id="a9e11-111">Client applications</span></span>  <br/> |
    
 ```cpp
 HrComposeMsgID(
@@ -44,42 +44,42 @@ HrComposeMsgID(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="de704-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="de704-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a9e11-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="a9e11-112">Parameters</span></span>
 
- <span data-ttu-id="de704-113">_psession_</span><span class="sxs-lookup"><span data-stu-id="de704-113">_psession_</span></span>
+ <span data-ttu-id="a9e11-113">_psession_</span><span class="sxs-lookup"><span data-stu-id="a9e11-113">_psession_</span></span>
   
-> <span data-ttu-id="de704-114">[in] Zeiger auf die Sitzung von der Clientanwendung verwendet.</span><span class="sxs-lookup"><span data-stu-id="de704-114">[in] Pointer to the session in use by the client application.</span></span> 
+> <span data-ttu-id="a9e11-114">in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="a9e11-114">[in] Pointer to the session in use by the client application.</span></span> 
     
- <span data-ttu-id="de704-115">_cbStoreRecordKey_</span><span class="sxs-lookup"><span data-stu-id="de704-115">_cbStoreRecordKey_</span></span>
+ <span data-ttu-id="a9e11-115">_cbStoreRecordKey_</span><span class="sxs-lookup"><span data-stu-id="a9e11-115">_cbStoreRecordKey_</span></span>
   
-> <span data-ttu-id="de704-116">[in] Größe in Bytes des Schlüssels Datensatz des Nachrichtenspeichers, die die Nachricht oder eines anderen Objekts enthält.</span><span class="sxs-lookup"><span data-stu-id="de704-116">[in] Size, in bytes, of the record key of the message store that contains the message or other object.</span></span> <span data-ttu-id="de704-117">Wenn 0 (null) im _CbStoreRecordKey_ -Parameter übergeben wird, wird der _PszMsgID_ Parameter verweist auf eine Kopie des Eintrags-ID in Text konvertiert.</span><span class="sxs-lookup"><span data-stu-id="de704-117">If zero is passed in the  _cbStoreRecordKey_ parameter, the  _pszMsgID_ parameter points to a copy of the entry identifier converted to text.</span></span> 
+> <span data-ttu-id="a9e11-116">in Größe (in Bytes) des Daten Satz Schlüssels des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält.</span><span class="sxs-lookup"><span data-stu-id="a9e11-116">[in] Size, in bytes, of the record key of the message store that contains the message or other object.</span></span> <span data-ttu-id="a9e11-117">Wenn NULL im _cbStoreRecordKey_ -Parameter übergeben wird, zeigt der _pszMsgID_ -Parameter auf eine Kopie der Eintrags-ID, die in Text konvertiert wurde.</span><span class="sxs-lookup"><span data-stu-id="a9e11-117">If zero is passed in the  _cbStoreRecordKey_ parameter, the  _pszMsgID_ parameter points to a copy of the entry identifier converted to text.</span></span> 
     
- <span data-ttu-id="de704-118">_pStoreRecordKey_</span><span class="sxs-lookup"><span data-stu-id="de704-118">_pStoreRecordKey_</span></span>
+ <span data-ttu-id="a9e11-118">_pStoreRecordKey_</span><span class="sxs-lookup"><span data-stu-id="a9e11-118">_pStoreRecordKey_</span></span>
   
-> <span data-ttu-id="de704-119">[in] Zeiger auf den Eintrag Schlüssel des Nachrichtenspeichers, die die Nachricht oder eines anderen Objekts enthält.</span><span class="sxs-lookup"><span data-stu-id="de704-119">[in] Pointer to the record key of the message store that contains the message or other object.</span></span> 
+> <span data-ttu-id="a9e11-119">in Zeiger auf den Datensatzschlüssel des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält.</span><span class="sxs-lookup"><span data-stu-id="a9e11-119">[in] Pointer to the record key of the message store that contains the message or other object.</span></span> 
     
- <span data-ttu-id="de704-120">_cbMsgEID_</span><span class="sxs-lookup"><span data-stu-id="de704-120">_cbMsgEID_</span></span>
+ <span data-ttu-id="a9e11-120">_cbMsgEID_</span><span class="sxs-lookup"><span data-stu-id="a9e11-120">_cbMsgEID_</span></span>
   
-> <span data-ttu-id="de704-121">[in] Größe des Eintrags-ID der Nachricht oder eines anderen Objekts in Bytes.</span><span class="sxs-lookup"><span data-stu-id="de704-121">[in] Size, in bytes, of the entry identifier of the message or other object.</span></span> 
+> <span data-ttu-id="a9e11-121">in Größe (in Bytes) der Eintrags-ID der Nachricht oder eines anderen Objekts.</span><span class="sxs-lookup"><span data-stu-id="a9e11-121">[in] Size, in bytes, of the entry identifier of the message or other object.</span></span> 
     
- <span data-ttu-id="de704-122">_pMsgEID_</span><span class="sxs-lookup"><span data-stu-id="de704-122">_pMsgEID_</span></span>
+ <span data-ttu-id="a9e11-122">_pMsgEID_</span><span class="sxs-lookup"><span data-stu-id="a9e11-122">_pMsgEID_</span></span>
   
-> <span data-ttu-id="de704-123">[in] Zeiger auf die Eintrags-ID des Objekts.</span><span class="sxs-lookup"><span data-stu-id="de704-123">[in] Pointer to the entry identifier of the object.</span></span> 
+> <span data-ttu-id="a9e11-123">in Zeiger auf die Eintrags-ID des Objekts.</span><span class="sxs-lookup"><span data-stu-id="a9e11-123">[in] Pointer to the entry identifier of the object.</span></span> 
     
- <span data-ttu-id="de704-124">_pszMsgID_</span><span class="sxs-lookup"><span data-stu-id="de704-124">_pszMsgID_</span></span>
+ <span data-ttu-id="a9e11-124">_pszMsgID_</span><span class="sxs-lookup"><span data-stu-id="a9e11-124">_pszMsgID_</span></span>
   
-> <span data-ttu-id="de704-125">[out] Zeiger auf die zurückgegebene ASCII-Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="de704-125">[out] Pointer to the returned ASCII string.</span></span> <span data-ttu-id="de704-126">Wenn der Parameter _CbStoreRecordKey_ größer als NULL ist, wird der _PszMsgID_ Parameter verweist auf ein zusammengesetzter Eintrags-ID in Text konvertiert.</span><span class="sxs-lookup"><span data-stu-id="de704-126">If the  _cbStoreRecordKey_ parameter is greater than zero, the  _pszMsgID_ parameter points to a compound entry identifier converted to text.</span></span> <span data-ttu-id="de704-127">Wenn _CbStoreRecordKey_ gleich NULL ist, _PszMsgID_ verweist auf eine noncompound Eintrags-ID in Text konvertiert.</span><span class="sxs-lookup"><span data-stu-id="de704-127">If  _cbStoreRecordKey_ is zero,  _pszMsgID_ points to a noncompound entry identifier converted to text.</span></span> 
+> <span data-ttu-id="a9e11-125">Out Zeiger auf die zurückgegebene ASCII-Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="a9e11-125">[out] Pointer to the returned ASCII string.</span></span> <span data-ttu-id="a9e11-126">Wenn der _cbStoreRecordKey_ -Parameter größer als NULL ist, zeigt der _pszMsgID_ -Parameter auf eine verknüpfte Eintrags-ID, die in Text konvertiert wurde.</span><span class="sxs-lookup"><span data-stu-id="a9e11-126">If the  _cbStoreRecordKey_ parameter is greater than zero, the  _pszMsgID_ parameter points to a compound entry identifier converted to text.</span></span> <span data-ttu-id="a9e11-127">Wenn _cbStoreRecordKey_ ist, verweist _pszMsgID_ auf eine nicht zusammengesetzte Eintrags-ID, die in Text konvertiert wurde.</span><span class="sxs-lookup"><span data-stu-id="a9e11-127">If  _cbStoreRecordKey_ is zero,  _pszMsgID_ points to a noncompound entry identifier converted to text.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="de704-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="de704-128">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a9e11-128">Return value</span><span class="sxs-lookup"><span data-stu-id="a9e11-128">Return value</span></span>
 
-<span data-ttu-id="de704-129">None.</span><span class="sxs-lookup"><span data-stu-id="de704-129">None.</span></span>
+<span data-ttu-id="a9e11-129">Keine.</span><span class="sxs-lookup"><span data-stu-id="a9e11-129">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="de704-130">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="de704-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a9e11-130">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a9e11-130">Remarks</span></span>
 
-<span data-ttu-id="de704-131">Wenn die Nachricht oder eines anderen Objekts für die die zusammengesetzter Eintrags-ID erstellt wird, wird in einem Nachrichtenspeicher befindet, wird die Bezeichnerzeichenfolge aus Eintrags-ID für das Objekt und den Store-Eintrag Schlüssel erstellt.</span><span class="sxs-lookup"><span data-stu-id="de704-131">If the message or other object for which the compound entry identifier is being created resides in a message store, the identifier string is created from the object's entry identifier and the store's record key.</span></span> <span data-ttu-id="de704-132">Ist das Objekt nicht in einem Speicher, d. h., ist wenn die Byteanzahl für den Store-Eintrag Schlüssel in der _CbStoreRecordKey_ -Parameter übergeben NULL ist, ist Eintrags-ID für das Objekt einfach kopiert und in eine Zeichenfolge konvertiert.</span><span class="sxs-lookup"><span data-stu-id="de704-132">If the object is not in a store, that is, if the byte count for the store record key passed in the  _cbStoreRecordKey_ parameter is zero, the object's entry identifier is simply copied and converted into a string.</span></span> 
+<span data-ttu-id="a9e11-131">Wenn die Nachricht oder ein anderes Objekt, für das die verknüpfte Eintrags-ID erstellt wird, in einem Nachrichtenspeicher gespeichert ist, wird die ID-Zeichenfolge aus der Eintrags-ID des Objekts und dem Record-Schlüssel des Speichers erstellt.</span><span class="sxs-lookup"><span data-stu-id="a9e11-131">If the message or other object for which the compound entry identifier is being created resides in a message store, the identifier string is created from the object's entry identifier and the store's record key.</span></span> <span data-ttu-id="a9e11-132">Wenn sich das Objekt nicht in einem Speicher befindet, das heißt, wenn die Bytezahl für den im _cbStoreRecordKey_ -Parameter übergebenen Speicher Eintragsschlüssel 0 (null) ist, wird die Eintrags-ID des Objekts einfach kopiert und in eine Zeichenfolge konvertiert.</span><span class="sxs-lookup"><span data-stu-id="a9e11-132">If the object is not in a store, that is, if the byte count for the store record key passed in the  _cbStoreRecordKey_ parameter is zero, the object's entry identifier is simply copied and converted into a string.</span></span> 
   
-<span data-ttu-id="de704-133">Aufrufen der Funktion **HrComposeMsgID** entspricht dem Aufrufen der [HrComposeEID](hrcomposeeid.md) und klicken Sie dann die Funktion [HrSzFromEntryID](hrszfromentryid.md) .</span><span class="sxs-lookup"><span data-stu-id="de704-133">Calling the **HrComposeMsgID** function is equivalent to calling the [HrComposeEID](hrcomposeeid.md) function and then the [HrSzFromEntryID](hrszfromentryid.md) function.</span></span> 
+<span data-ttu-id="a9e11-133">Das Aufrufen der **HrComposeMsgID** -Funktion entspricht dem Aufrufen der [HrComposeEID](hrcomposeeid.md) -Funktion und dann der [HrSzFromEntryID](hrszfromentryid.md) -Funktion.</span><span class="sxs-lookup"><span data-stu-id="a9e11-133">Calling the **HrComposeMsgID** function is equivalent to calling the [HrComposeEID](hrcomposeeid.md) function and then the [HrSzFromEntryID](hrszfromentryid.md) function.</span></span> 
   
- <span data-ttu-id="de704-134">**HrComposeMsgID** von Clientanwendungen-Objekte in mehreren Informationsspeichern mithilfe von zusammengesetzten-Eintragsbezeichner entwickelt.</span><span class="sxs-lookup"><span data-stu-id="de704-134">**HrComposeMsgID** enables client applications to work with objects in multiple stores through the use of compound entry identifiers.</span></span> <span data-ttu-id="de704-135">Eine Anwendung kann die [HrDecomposeMsgID](hrdecomposemsgid.md) -Funktion, um die zusammengesetzter Eintrags-ID in seiner ursprünglichen Bestandteile aufgeteilt aufrufen.</span><span class="sxs-lookup"><span data-stu-id="de704-135">An application can call the [HrDecomposeMsgID](hrdecomposemsgid.md) function to split the compound entry identifier into its original constituents.</span></span> 
+ <span data-ttu-id="a9e11-134">Mit **HrComposeMsgID** können Clientanwendungen mit Objekten in mehreren speichern arbeiten, die mit verknüpften Eingabe Bezeichnern verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="a9e11-134">**HrComposeMsgID** enables client applications to work with objects in multiple stores through the use of compound entry identifiers.</span></span> <span data-ttu-id="a9e11-135">Eine Anwendung kann die [HrDecomposeMsgID](hrdecomposemsgid.md) -Funktion aufrufen, um den verknüpften Eintragsbezeichner in seine ursprünglichen Bestandteile aufzuteilen.</span><span class="sxs-lookup"><span data-stu-id="a9e11-135">An application can call the [HrDecomposeMsgID](hrdecomposemsgid.md) function to split the compound entry identifier into its original constituents.</span></span> 
   
 

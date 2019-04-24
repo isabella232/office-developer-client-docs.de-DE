@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b3ce4b0e-4f48-4a7e-a30c-c4754bccb12c
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6324dcc567aee48f190f8568c6c94b5ee87c731f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d8caa503e557d35e259db743505d39ea4809dbfd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348657"
 ---
-# <a name="itnefencoderecips"></a><span data-ttu-id="9814c-103">ITnef::EncodeRecips</span><span class="sxs-lookup"><span data-stu-id="9814c-103">ITnef::EncodeRecips</span></span>
+# <a name="itnefencoderecips"></a><span data-ttu-id="2594e-103">ITnef::EncodeRecips</span><span class="sxs-lookup"><span data-stu-id="2594e-103">ITnef::EncodeRecips</span></span>
 
   
   
-<span data-ttu-id="9814c-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9814c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2594e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2594e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9814c-105">Codiert eine Ansicht für die Empfänger einer Nachricht-Tabelle in der Datenstrom Transport-Neutral Encapsulation Format (TNEF) für die Nachricht an.</span><span class="sxs-lookup"><span data-stu-id="9814c-105">Encodes a view for a message's recipient table in the Transport-Neutral Encapsulation Format (TNEF) data stream for the message.</span></span>
+<span data-ttu-id="2594e-105">Codiert eine Ansicht für die Empfängertabelle einer Nachricht im TNEF-Datenstrom (Transport-Neutral Encapsulation Format) für die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="2594e-105">Encodes a view for a message's recipient table in the Transport-Neutral Encapsulation Format (TNEF) data stream for the message.</span></span>
   
 ```cpp
 HRESULT EncodeRecips(
@@ -34,41 +34,41 @@ HRESULT EncodeRecips(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9814c-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="9814c-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2594e-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="2594e-106">Parameters</span></span>
 
- <span data-ttu-id="9814c-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="9814c-107">_ulFlags_</span></span>
+ <span data-ttu-id="2594e-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="2594e-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="9814c-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="9814c-108">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="2594e-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="2594e-108">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="9814c-109">_lpRecipientTable_</span><span class="sxs-lookup"><span data-stu-id="9814c-109">_lpRecipientTable_</span></span>
+ <span data-ttu-id="2594e-109">_lpRecipientTable_</span><span class="sxs-lookup"><span data-stu-id="2594e-109">_lpRecipientTable_</span></span>
   
-> <span data-ttu-id="9814c-110">[in] Ein Zeiger auf die Empfänger Tabelle, für die die Ansicht codiert ist.</span><span class="sxs-lookup"><span data-stu-id="9814c-110">[in] A pointer to the recipient table for which the view is encoded.</span></span> <span data-ttu-id="9814c-111">Der Parameter _LpRecipientTable_ kann NULL sein.</span><span class="sxs-lookup"><span data-stu-id="9814c-111">The  _lpRecipientTable_ parameter can be NULL.</span></span> 
+> <span data-ttu-id="2594e-110">in Ein Zeiger auf die Empfängertabelle, für die die Ansicht codiert ist.</span><span class="sxs-lookup"><span data-stu-id="2594e-110">[in] A pointer to the recipient table for which the view is encoded.</span></span> <span data-ttu-id="2594e-111">Der _lpRecipientTable_ -Parameter kann NULL sein.</span><span class="sxs-lookup"><span data-stu-id="2594e-111">The  _lpRecipientTable_ parameter can be NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="9814c-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="9814c-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2594e-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2594e-112">Return value</span></span>
 
-<span data-ttu-id="9814c-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="9814c-113">S_OK</span></span> 
+<span data-ttu-id="2594e-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="2594e-113">S_OK</span></span> 
   
-> <span data-ttu-id="9814c-114">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9814c-114">The call succeeded and returned the expected value or values.</span></span>
+> <span data-ttu-id="2594e-114">Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2594e-114">The call succeeded and returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="9814c-115">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="9814c-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2594e-115">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2594e-115">Remarks</span></span>
 
-<span data-ttu-id="9814c-116">Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::EncodeRecips** -Methode zum Ausführen von TNEF-Codierung für eine bestimmte Empfänger Tabelle-Ansicht.</span><span class="sxs-lookup"><span data-stu-id="9814c-116">Transport providers, message store providers, and gateways call the **ITnef::EncodeRecips** method to perform TNEF encoding for a particular recipient table view.</span></span> <span data-ttu-id="9814c-117">TNEF-Codierung ist nützlich, beispielsweise wenn für einen Anbieter oder ein Gateway einer bestimmten Spalte festlegen, die Sortierreihenfolge oder die Einschränkung für die Empfänger Tabelle erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="9814c-117">TNEF encoding is useful, for example, if a provider or gateway requires a particular column set, sort order, or restriction for the recipient table.</span></span> 
+<span data-ttu-id="2594e-116">Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:: EncodeRecips** -Methode auf, um die TNEF-Codierung für eine bestimmte Empfänger Tabellenansicht durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="2594e-116">Transport providers, message store providers, and gateways call the **ITnef::EncodeRecips** method to perform TNEF encoding for a particular recipient table view.</span></span> <span data-ttu-id="2594e-117">Die TNEF-Codierung ist beispielsweise nützlich, wenn ein Anbieter oder ein Gateway eine bestimmte Spaltengruppe, Sortierreihenfolge oder Einschränkung für die Empfängertabelle erfordert.</span><span class="sxs-lookup"><span data-stu-id="2594e-117">TNEF encoding is useful, for example, if a provider or gateway requires a particular column set, sort order, or restriction for the recipient table.</span></span> 
   
-<span data-ttu-id="9814c-118">Einen Anbieter oder Gateway übergibt die Tabellenansicht im Parameter _LpRecipientTable_ codiert werden.</span><span class="sxs-lookup"><span data-stu-id="9814c-118">A provider or gateway passes the table view to be encoded in the  _lpRecipientTable_ parameter.</span></span> <span data-ttu-id="9814c-119">Die TNEF-Implementierung codiert Empfänger Tabelle, indem Sie die angegebene Ansicht, mit der angegebenen Spalte festlegen, Sortierreihenfolge, Einschränkung und Position.</span><span class="sxs-lookup"><span data-stu-id="9814c-119">The TNEF implementation encodes the recipient table with the given view, using the given column set, sort order, restriction, and position.</span></span> <span data-ttu-id="9814c-120">Wenn Sie einen Anbieter oder Gateway NULL _LpRecipientTable_übergibt, TNEF Ruft die Empfänger Tabelle aus der Nachricht mit der [IMessage::GetRecipientTable](imessage-getrecipienttable.md) -Methode codiert und verarbeitet jede Zeile der Tabelle in die TNEF-Stream mithilfe der Tabelle des aktuellen Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="9814c-120">If a provider or gateway passes NULL in  _lpRecipientTable_, TNEF gets the recipient table from the message being encoded by using the [IMessage::GetRecipientTable](imessage-getrecipienttable.md) method, and processes every row of the table into the TNEF stream by using the table's current settings.</span></span> 
+<span data-ttu-id="2594e-118">Ein Anbieter oder Gateway übergibt die Tabellenansicht, die im Parameter _lpRecipientTable_ codiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="2594e-118">A provider or gateway passes the table view to be encoded in the  _lpRecipientTable_ parameter.</span></span> <span data-ttu-id="2594e-119">Die TNEF-Implementierung codiert die Empfängertabelle mit der angegebenen Ansicht, wobei der angegebene Spaltensatz, die Sortierreihenfolge, die Einschränkung und die Position verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="2594e-119">The TNEF implementation encodes the recipient table with the given view, using the given column set, sort order, restriction, and position.</span></span> <span data-ttu-id="2594e-120">Wenn ein Anbieter oder ein Gateway in _LPRECIPIENTTABLE_NULL übergibt, ruft TNEF die Empfängertabelle aus der zu codierenden Nachricht mithilfe der [IMessage::](imessage-getrecipienttable.md) getrecipientable-Methode ab und verarbeitet jede Zeile der Tabelle im TNEF-Stream mithilfe der Aktuelle Einstellungen der Tabelle.</span><span class="sxs-lookup"><span data-stu-id="2594e-120">If a provider or gateway passes NULL in  _lpRecipientTable_, TNEF gets the recipient table from the message being encoded by using the [IMessage::GetRecipientTable](imessage-getrecipienttable.md) method, and processes every row of the table into the TNEF stream by using the table's current settings.</span></span> 
   
-<span data-ttu-id="9814c-121">Aufrufen von **EncodeRecips** mit NULL in _LpRecipientTable_ daher codiert alle Empfänger der Nachricht und entspricht dem Aufrufen der [ITnef::AddProps](itnef-addprops.md) -Methode mit dem TNEF_PROP_INCLUDE-Flag in seiner _UlFlags_ -Parameter und der **PR_ MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))-Eigenschaft im Parameter _LpPropList_ .</span><span class="sxs-lookup"><span data-stu-id="9814c-121">Calling **EncodeRecips** with NULL in  _lpRecipientTable_ thus encodes all message recipients and is equivalent to calling the [ITnef::AddProps](itnef-addprops.md) method with the TNEF_PROP_INCLUDE flag in its  _ulFlags_ parameter and the **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) property in its  _lpPropList_ parameter.</span></span> 
+<span data-ttu-id="2594e-121">Das Aufrufen von **EncodeRecips** mit NULL in _lpRecipientTable_ codiert daher alle Nachrichtenempfänger und entspricht dem Aufrufen der [ITnef::](itnef-addprops.md) AddProps-Methode mit dem TNEF_PROP_INCLUDE-Flag im _ulFlags_ -Parameter und dem **PR_ MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md))-Eigenschaft im _lpPropList_ -Parameter.</span><span class="sxs-lookup"><span data-stu-id="2594e-121">Calling **EncodeRecips** with NULL in  _lpRecipientTable_ thus encodes all message recipients and is equivalent to calling the [ITnef::AddProps](itnef-addprops.md) method with the TNEF_PROP_INCLUDE flag in its  _ulFlags_ parameter and the **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) property in its  _lpPropList_ parameter.</span></span> 
   
-<span data-ttu-id="9814c-122">Beachten Sie, dass es nur selten **EncodeRecips** aufrufen, es sei denn, es eine Voraussetzung zum Codieren von einer bestimmten Empfänger Tabellenansicht ist erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="9814c-122">Note that it is rarely necessary to call **EncodeRecips** unless there is a requirement to encode a particular recipient table view.</span></span> <span data-ttu-id="9814c-123">Fremde Messagingsysteme haben fast immer Funktionen für die Verarbeitung der Empfängerlisten, die leistungsstark genug, um den allgemeinen Anforderungen Codierung Empfängerlisten zu behandeln sind. Diese Systeme erfordern deshalb fast nie TNEF für diesen Zweck.</span><span class="sxs-lookup"><span data-stu-id="9814c-123">Foreign messaging systems almost always have facilities for handling recipient lists that are powerful enough to handle the common needs of encoding recipient lists; therefore, these systems almost never require TNEF for this purpose.</span></span> 
+<span data-ttu-id="2594e-122">Beachten Sie, dass es selten erforderlich ist, **EncodeRecips** aufzurufen, es sei denn, eine bestimmte Empfänger Tabellenansicht muss codiert werden.</span><span class="sxs-lookup"><span data-stu-id="2594e-122">Note that it is rarely necessary to call **EncodeRecips** unless there is a requirement to encode a particular recipient table view.</span></span> <span data-ttu-id="2594e-123">Ausländische Messagingsysteme verfügen fast immer über Einrichtungen für die Verarbeitung von Empfängerlisten, die leistungsfähig genug sind, um die allgemeinen Anforderungen der Codierung von Empfängerlisten zu bewältigen. Daher benötigen diese Systeme für diesen Zweck fast nie TNEF.</span><span class="sxs-lookup"><span data-stu-id="2594e-123">Foreign messaging systems almost always have facilities for handling recipient lists that are powerful enough to handle the common needs of encoding recipient lists; therefore, these systems almost never require TNEF for this purpose.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="9814c-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9814c-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2594e-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2594e-124">See also</span></span>
 
 
 
-[<span data-ttu-id="9814c-125">IMessage::GetRecipientTable</span><span class="sxs-lookup"><span data-stu-id="9814c-125">IMessage::GetRecipientTable</span></span>](imessage-getrecipienttable.md)
+[<span data-ttu-id="2594e-125">IMessage::GetRecipientTable</span><span class="sxs-lookup"><span data-stu-id="2594e-125">IMessage::GetRecipientTable</span></span>](imessage-getrecipienttable.md)
   
-[<span data-ttu-id="9814c-126">ITnef::AddProps</span><span class="sxs-lookup"><span data-stu-id="9814c-126">ITnef::AddProps</span></span>](itnef-addprops.md)
+[<span data-ttu-id="2594e-126">ITnef::AddProps</span><span class="sxs-lookup"><span data-stu-id="2594e-126">ITnef::AddProps</span></span>](itnef-addprops.md)
   
-[<span data-ttu-id="9814c-127">PidTagMessageRecipients (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="9814c-127">PidTagMessageRecipients Canonical Property</span></span>](pidtagmessagerecipients-canonical-property.md)
+[<span data-ttu-id="2594e-127">Kanonische Pidtagmessagerecipients (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2594e-127">PidTagMessageRecipients Canonical Property</span></span>](pidtagmessagerecipients-canonical-property.md)
   
-[<span data-ttu-id="9814c-128">ITnef : IUnknown</span><span class="sxs-lookup"><span data-stu-id="9814c-128">ITnef : IUnknown</span></span>](itnefiunknown.md)
+[<span data-ttu-id="2594e-128">ITnef : IUnknown</span><span class="sxs-lookup"><span data-stu-id="2594e-128">ITnef : IUnknown</span></span>](itnefiunknown.md)
 

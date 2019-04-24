@@ -8,31 +8,31 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0aab3e56bb8519d99b498521153923b024cfe26e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357687"
 ---
-# <a name="tasks"></a><span data-ttu-id="f8b16-102">Aufgaben</span><span class="sxs-lookup"><span data-stu-id="f8b16-102">Tasks</span></span>
+# <a name="tasks"></a><span data-ttu-id="f6430-102">Aufgaben</span><span class="sxs-lookup"><span data-stu-id="f6430-102">Tasks</span></span>
 
-<span data-ttu-id="f8b16-p101">In diesem Abschnitt finden Sie Beispiele im Zusammenhang mit Aufgaben. Aufgaben werden in Microsoft Outlook als ein effizientes System für die Zeitplanung verwendet.</span><span class="sxs-lookup"><span data-stu-id="f8b16-p101">This section provides examples that involve tasks. Tasks are used in Microsoft Outlook as a convenient time-management system.</span></span>
+<span data-ttu-id="f6430-p101">In diesem Abschnitt finden Sie Beispiele im Zusammenhang mit Aufgaben. Aufgaben werden in Microsoft Outlook als ein effizientes System für die Zeitplanung verwendet.</span><span class="sxs-lookup"><span data-stu-id="f6430-p101">This section provides examples that involve tasks. Tasks are used in Microsoft Outlook as a convenient time-management system.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="f8b16-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="f8b16-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="f6430-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="f6430-105">In this section</span></span>
 
-|<span data-ttu-id="f8b16-106">Thema</span><span class="sxs-lookup"><span data-stu-id="f8b16-106">Topic</span></span>|<span data-ttu-id="f8b16-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f8b16-107">Description</span></span>|
+|<span data-ttu-id="f6430-106">Thema</span><span class="sxs-lookup"><span data-stu-id="f6430-106">Topic</span></span>|<span data-ttu-id="f6430-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f6430-107">Description</span></span>|
 |:----|:----------|
-|[<span data-ttu-id="f8b16-108">Erstellen eines Aufgabenelements</span><span class="sxs-lookup"><span data-stu-id="f8b16-108">Create a task item</span></span>](how-to-create-a-task-item.md)  |<span data-ttu-id="f8b16-109">Erstellt ein Aufgabenelement mithilfe der [MarkAsTask(OlMarkInterval)](https://msdn.microsoft.com/library/bb609068\(v=office.15\))-Methode.</span><span class="sxs-lookup"><span data-stu-id="f8b16-109">Creates a task item by using the [MarkAsTask(OlMarkInterval)](https://msdn.microsoft.com/library/bb609068\(v=office.15\)) method.</span></span>|
-|[<span data-ttu-id="f8b16-110">Zuordnen einer Aufgabe zu einem Empfänger</span><span class="sxs-lookup"><span data-stu-id="f8b16-110">Assign a task to a recipient</span></span>](how-to-assign-a-task-to-a-recipient.md)  |<span data-ttu-id="f8b16-111">Erstellt eine Aufgabe und weist sie einem Empfänger zu.</span><span class="sxs-lookup"><span data-stu-id="f8b16-111">Creates a task and assigns it to a recipient.</span></span>|
-|[<span data-ttu-id="f8b16-112">Anzeigen der an einen Empfänger gesendeten Aufgabeanfragenelemente</span><span class="sxs-lookup"><span data-stu-id="f8b16-112">Display the task request items sent to a recipient</span></span>](how-to-display-the-task-request-items-sent-to-a-recipient.md)  |<span data-ttu-id="f8b16-113">Zeigt alle Elemente der Aufgabenanforderung an, die sich im Postfach eines Empfängers befinden.</span><span class="sxs-lookup"><span data-stu-id="f8b16-113">Displays all of the task request items that are in a recipient's Inbox.</span></span>|
-|[<span data-ttu-id="f8b16-114">Antworten auf ein Aufgabenanforderungselement</span><span class="sxs-lookup"><span data-stu-id="f8b16-114">Respond to a task request item</span></span>](how-to-respond-to-a-task-request-item.md)  |<span data-ttu-id="f8b16-115">Ruft Aufgabenanforderungselemente ab und antwortet darauf.</span><span class="sxs-lookup"><span data-stu-id="f8b16-115">Gets and responds to a task request item.</span></span>|
-|[<span data-ttu-id="f8b16-116">Erstellen eines periodischen Vorgangs</span><span class="sxs-lookup"><span data-stu-id="f8b16-116">Create a recurring task</span></span>](how-to-create-a-recurring-task.md)  |<span data-ttu-id="f8b16-117">Erstellt einen periodischen Vorgang.</span><span class="sxs-lookup"><span data-stu-id="f8b16-117">Creates a recurring task.</span></span>|
-|[<span data-ttu-id="f8b16-118">Kennzeichnen von E-Mail-Elementen von einem Vorgesetzten zur Nachverfolgung</span><span class="sxs-lookup"><span data-stu-id="f8b16-118">Flag mail items from a manager for follow-up</span></span>](how-to-flag-mail-items-from-a-manager-for-follow-up.md)  |<span data-ttu-id="f8b16-119">Kennzeichnet E-Mail-Elemente, die vom Vorgesetzten des Benutzers gesendet wurden, für die Nachverfolgung.</span><span class="sxs-lookup"><span data-stu-id="f8b16-119">Flags email items that were received from the user’s manager for follow-up.</span></span>|
+|[<span data-ttu-id="f6430-108">Erstellen eines Aufgabenelements</span><span class="sxs-lookup"><span data-stu-id="f6430-108">Create a task item</span></span>](how-to-create-a-task-item.md)  |<span data-ttu-id="f6430-109">Erstellt ein Aufgabenelement mithilfe der [MarkAsTask(OlMarkInterval)](https://msdn.microsoft.com/library/bb609068\(v=office.15\))-Methode.</span><span class="sxs-lookup"><span data-stu-id="f6430-109">Creates a task item by using the [MarkAsTask(OlMarkInterval)](https://msdn.microsoft.com/library/bb609068\(v=office.15\)) method.</span></span>|
+|[<span data-ttu-id="f6430-110">Zuordnen einer Aufgabe zu einem Empfänger</span><span class="sxs-lookup"><span data-stu-id="f6430-110">Assign a task to a recipient</span></span>](how-to-assign-a-task-to-a-recipient.md)  |<span data-ttu-id="f6430-111">Erstellt eine Aufgabe und weist sie einem Empfänger zu.</span><span class="sxs-lookup"><span data-stu-id="f6430-111">Creates a task and assigns it to a recipient.</span></span>|
+|[<span data-ttu-id="f6430-112">Anzeigen der an einen Empfänger gesendeten Aufgabeanfragenelemente</span><span class="sxs-lookup"><span data-stu-id="f6430-112">Display the task request items sent to a recipient</span></span>](how-to-display-the-task-request-items-sent-to-a-recipient.md)  |<span data-ttu-id="f6430-113">Zeigt alle Elemente der Aufgabenanforderung an, die sich im Postfach eines Empfängers befinden.</span><span class="sxs-lookup"><span data-stu-id="f6430-113">Displays all of the task request items that are in a recipient's Inbox.</span></span>|
+|[<span data-ttu-id="f6430-114">Antworten auf ein Aufgabenanforderungselement</span><span class="sxs-lookup"><span data-stu-id="f6430-114">Respond to a task request item</span></span>](how-to-respond-to-a-task-request-item.md)  |<span data-ttu-id="f6430-115">Ruft Aufgabenanforderungselemente ab und antwortet darauf.</span><span class="sxs-lookup"><span data-stu-id="f6430-115">Gets and responds to a task request item.</span></span>|
+|[<span data-ttu-id="f6430-116">Erstellen eines periodischen Vorgangs</span><span class="sxs-lookup"><span data-stu-id="f6430-116">Create a recurring task</span></span>](how-to-create-a-recurring-task.md)  |<span data-ttu-id="f6430-117">Erstellt einen periodischen Vorgang.</span><span class="sxs-lookup"><span data-stu-id="f6430-117">Creates a recurring task.</span></span>|
+|[<span data-ttu-id="f6430-118">Kennzeichnen von E-Mail-Elementen von einem Vorgesetzten zur Nachverfolgung</span><span class="sxs-lookup"><span data-stu-id="f6430-118">Flag mail items from a manager for follow-up</span></span>](how-to-flag-mail-items-from-a-manager-for-follow-up.md)  |<span data-ttu-id="f6430-119">Kennzeichnet E-Mail-Elemente, die vom Vorgesetzten des Benutzers gesendet wurden, für die Nachverfolgung.</span><span class="sxs-lookup"><span data-stu-id="f6430-119">Flags email items that were received from the user’s manager for follow-up.</span></span>|
 
 
-## <a name="see-also"></a><span data-ttu-id="f8b16-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f8b16-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f6430-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f6430-120">See also</span></span>
 
-- [<span data-ttu-id="f8b16-121">Kalender</span><span class="sxs-lookup"><span data-stu-id="f8b16-121">Calendar</span></span>](calendar.md)
-- [<span data-ttu-id="f8b16-122">Empfänger</span><span class="sxs-lookup"><span data-stu-id="f8b16-122">Recipients</span></span>](recipients.md)
-- [<span data-ttu-id="f8b16-123">Gewusst wie... (Outlook 2013 PIA-Referenz)</span><span class="sxs-lookup"><span data-stu-id="f8b16-123">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
+- [<span data-ttu-id="f6430-121">Kalender</span><span class="sxs-lookup"><span data-stu-id="f6430-121">Calendar</span></span>](calendar.md)
+- [<span data-ttu-id="f6430-122">Empfänger</span><span class="sxs-lookup"><span data-stu-id="f6430-122">Recipients</span></span>](recipients.md)
+- [<span data-ttu-id="f6430-123">Gewusst wie... (Outlook 2013 PIA-Referenz)</span><span class="sxs-lookup"><span data-stu-id="f6430-123">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
 
