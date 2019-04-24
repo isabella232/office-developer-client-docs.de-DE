@@ -1,5 +1,5 @@
 ---
-title: Connection.Execute-Methode (DAO)
+title: Connection. Execute-Methode (DAO)
 TOCTitle: Execute Method
 ms:assetid: d6140d4e-fa14-6455-525e-49d8aab3dff7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835040(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8140dbe9bc0c68d467c011d77bc0c00cec7ad560
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295912"
 ---
-# <a name="connectionexecute-method-dao"></a>Connection.Execute-Methode (DAO)
+# <a name="connectionexecute-method-dao"></a>Connection. Execute-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt aus.
+Führt eine Aktionsabfrage oder eine SQL-Anweisung zu dem angegebenen Objekt aus.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Führen Sie (***Abfrage***, ***Optionen***)
+*Ausdruck* . Execute (***Abfrage***, ***Optionen***)
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 
@@ -38,7 +38,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -105,7 +105,7 @@ Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeratio
 <td><p>Führt die Abfrage asynchron aus (nur ODBCDirect-Connection- und -QueryDef-Objekte).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Bei der Ausführung</strong></p></td>
+<td><p><strong>dbExecDirect</strong></p></td>
 <td><p>Führt die Anweisung aus, ohne zuvor die SQLPrepare ODBC-API-Funktion aufzurufen (nur ODBCDirect Connection- und QueryDef-Objekte).</p></td>
 </tr>
 </tbody>
@@ -117,13 +117,13 @@ Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeratio
 > [!NOTE]
 > [!HINWEIS] Die Konstanten **dbConsistent** und **dbInconsistent** schließen sich gegenseitig aus. Sie können eins von beiden, jedoch nicht beide in einer angegebenen Instanz von **OpenRecordset** verwenden. Durch die Verwendung der **dbConsistent** - und **dbInconsistent** -Konstanten wird ein Fehler erzeugt.
 
-Die **Execute**-Methode gilt nur für Aktionsabfragen. Wenn Sie **Execute** mit einem anderen Abfragetyp verwenden, tritt ein Fehler auf. Da bei einer Aktionsabfrage keine Datensätze zurückgegeben werden, gibt **Execute** kein **Recordset**-Objekt zurück. (Das Durchführen einer SQL Pass-Through-Abfrage in einem ODBCDirect-Arbeitsbereich gibt keinen Fehler zurück, wenn kein **Recordset** zurückgegeben wird.)
+Die **Execute** -Methode ist nur für Aktionsabfragen gültig. Wenn Sie die **Execute** -Methode mit einem anderen Abfragetyp verwenden, tritt ein Fehler auf. Da eine Aktionsabfrage keine Datensätze zurückgibt, gibt die **Execute** -Methode keinen **Datensatz** zurück. (Durch Ausführen einer SQL-Pass-Through-Abfrage in einem ODBCDirect-Arbeitsbereich wird kein Fehler zurückgegeben, wenn kein **Datensatz** zurückgegeben wird).
 
-Mit der **RecordsAffected**-Eigenschaft des **Connection**-, **Database**- oder **QueryDef**-Objekts können Sie die Anzahl von Datensätzen bestimmen, die von der aktuellsten **Execute**-Methode betroffen sind. So umfasst **RecordsAffected** beispielsweise die Anzahl von Datensätzen, die beim Ausführen einer Aktionsabfrage gelöscht, aktualisiert oder eingefügt wurden. Wenn Sie zum Ausführen einer Abfrage die **Execute**-Methode verwenden, ist die **RecordsAffected**-Eigenschaft des **QueryDef**-Objekts auf die Anzahl von betroffenen Datensätzen festgelegt.
+Verwenden Sie die **RecordsAffected** -Eigenschaft des **Connection** -, **Database** - oder **QueryDef** -Objekts, um die Anzahl der von der aktuellsten **Execute** -Methode betroffenen Datensätze zu ermitteln. **RecordsAffected** enthält beispielsweise die Anzahl gelöschter, aktualisierter oder eingefügter Datensätze bei der Ausführung einer Aktionsabfrage. Wenn Sie zum Ausführen einer Abfrage die **Execute** -Methode verwenden, wird bei der **RecordsAffected** -Eigenschaft des **QueryDef** -Objekts die Anzahl der betroffenen Datensätze festgelegt.
 
-Wenn Sie in einem Microsoft Access-Arbeitsbereich eine syntaktisch richtige SQL-Anweisung angeben und über die entsprechenden Berechtigungen verfügen, schlägt die **Execute**-Methode nicht fehl, auch wenn keine einzelne Zeile geändert oder gelöscht werden kann. Daher sollten Sie immer mit der **dbFailOnError**-Option arbeiten, wenn Sie mit der **Execute**-Methode eine Aktualisierung ausführen oder eine Abfrage löschen. Mit dieser Option wird ein Laufzeitfehler generiert, und für alle erfolgreichen Änderungen wird ein Rollback durchgeführt, wenn einer der betroffenen Datensätze gesperrt ist und nicht aktualisiert oder gelöscht werden kann.
+In einem Microsoft Access-Arbeitsbereich erzeugt die **Execute** -Methode keinen Fehler, wenn Sie eine syntaktisch korrekte SQL-Anweisung angeben und über die entsprechenden Berechtigungen verfügen - sogar dann, wenn keine einzige Zeile bearbeitet oder gelöscht werden kann. Verwenden Sie deshalb immer die **dbFailOnError** -Option, wenn Sie zum Ausführen eines Updates oder zum Löschen einer Abfrage die **Execute** -Methode. Diese Option generiert einen Laufzeitfehler und setzt alle erfolgreichen Änderungen zurück, wenn einer der betroffenen Datensätze gesperrt ist und deshalb nicht aktualisiert oder gelöscht werden kann.
 
-In früheren Versionen des Microsoft Jet-Datenbankmoduls wurden SQL-Anweisungen automatisch in implizite Transaktionen eingebettet. Würde ein Teil einer mit **dbFailOnError** ausgeführten Anweisung fehlschlagen, würde für die Anweisung ein Rollback durchgeführt. Zur Leistungssteigerung wurden diese impliziten Transaktionen ab Version 3.5 entfernt. Wenn Sie älteren DAO-Code aktualisieren, sollten Sie auf jeden Fall explizite Transaktionen bei **Execute**-Anweisungen verwenden.
+In früheren Versionen des Microsoft Jet-Datenbankmoduls werden SQL-Anweisungen automatisch in implizite Transaktionen integriert. Wenn ein Teil einer Anweisung, die mit **dbFailOnError** ausgeführt wurde, einen Fehler verursacht, würde die gesamte Anweisung zurückgesetzt. Um die Leistung zu verbessern, wurden diese impliziten Transaktionen ab Version 3.5 entfernt. Wenn Sie einen älteren DAO-Code aktualisieren, sollten Sie erwägen, explizite Transaktionen um **Execute** -Anweisungen zu verwenden.
 
 Die beste Leistung erzielen Sie in einem Microsoft Access-Arbeitsbereich, insbesondere in einer Mehrbenutzerumgebung, indem Sie die **Execute**-Methode in einer Transaktion schachteln. Verwenden Sie die **BeginTrans**-Methode für das aktuelle **Workspace**-Objekt und dann die **Execute**-Methode. Schließen Sie die Transaktion mithilfe der **CommitTrans**-Methode für **Workspace** ab. Damit werden die Änderungen auf einem Datenträger gespeichert, und mögliche Sperren, die beim Ausführen der Abfrage angewendet wurden, werden aufgehoben.
 

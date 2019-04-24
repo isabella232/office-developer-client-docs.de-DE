@@ -1,5 +1,5 @@
 ---
-title: DatensatzErstellen-Datenblock
+title: CreateRecord-Datenblock
 TOCTitle: CreateRecord data block
 ms:assetid: e18f47f8-2aad-9a14-ad63-ab603a4d5b07
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835671(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 63e189143e77f9fcc42fa8d48c3ebfb2feda6633
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295352"
 ---
-# <a name="createrecord-data-block"></a>DatensatzErstellen-Datenblock
+# <a name="createrecord-data-block"></a>CreateRecord-Datenblock
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Mit dem **DatensatzErstellen** -Datenblock können Sie einen neuen Datensatz in der angegebenen Tabelle erstellen.
+Mit dem **DatensatzErstellen**-Datenblock können Sie einen neuen Datensatz in der angegebenen Tabelle erstellen.
 
 > [!NOTE]
-> [!HINWEIS] Der **DatensatzErstellen** -Datenblock ist nur in Datenmakros verfügbar.
+> Der **DatensatzErstellen**-Datenblock ist nur in Datenmakros verfügbar.
 
 ## <a name="setting"></a>Einstellung
 
-Der **DatensatzLöschen** -Datenblock kann mit den folgenden Argumenten verwendet werden.
+Der **DatensatzErstellen**-Datenblock kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -37,7 +37,7 @@ Der **DatensatzLöschen** -Datenblock kann mit den folgenden Argumenten verwende
 <thead>
 <tr class="header">
 <th><p>Argument</p></th>
-<th><p>Eingabe erforderlich</p></th>
+<th><p>Erforderlich</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -56,11 +56,11 @@ Der **DatensatzLöschen** -Datenblock kann mit den folgenden Argumenten verwende
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der mit **DatensatzErstellen** erstellte Datensatz wird automatisch als aktueller Datensatz festgelegt.
 
-Nach der **DatensatzErstellen** -Anweisung können Sie einen Block von Befehlen einfügen, die ausgeführt wird, bevor ein Commit für der neue Datensatz ausgeführt wird. In einem **DatensatzErstellen** -Datenblock sind die folgenden Aktionen verfügbar.
+Nach **** der CreateRecord-Anweisung können Sie einen Block von Befehlen Einfügen, die ausgeführt werden, bevor der neue Datensatz übergeben wird. In einem **DatensatzErstellen**-Datenblock sind die folgenden Aktionen verfügbar.
 
 <table>
 <colgroup>
@@ -77,7 +77,7 @@ Nach der **DatensatzErstellen** -Anweisung können Sie einen Block von Befehlen 
 <td><p><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Else-makroanweisung</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">If... Dann... Else-Makroanweisung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
@@ -95,7 +95,7 @@ Anschließend können Sie mit einer **Wenn...Dann...Sonst** -Anweisung Vorgänge
 
 Wenn Sie das Erstellen eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **DatensatzErstellen** -Datenblock wird beendet.
 
-Nachdem der neue Datensatz ein Commit ausgeführt wird, können Sie die lokale Variable **LastCreateRecordIdentity** den Eintrag entwickelt verwenden. Verwenden Sie beispielsweise die folgende Syntax, um des Felds AssignedTo die zuletzt erstellte Datensatz zu verweisen.
+Once the new record is committed, you can use the **LastCreateRecordIdentity** local variable to work with the record. Verwenden Sie beispielsweise die folgende Syntax, um auf das Feld ZugewiesenAn des zuletzt erstellten Datensatzes zu verweisen.
 
 `[LastCreateRecordIdentity].[AssignedTo]`
 

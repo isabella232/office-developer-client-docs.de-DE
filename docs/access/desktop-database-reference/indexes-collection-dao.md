@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f731862e12a75f91d07ea7d012cc33dad5be0b55
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291566"
 ---
 # <a name="indexes-collection-dao"></a>Indexes-Auflistung (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Eine **Indexes**-Auflistung enthält alle gespeicherten **Index**-Objekte eines **TableDef**-Objekts (nur für Microsoft Access-Arbeitsbereiche).
+Eine **Indexes**-Auflistung enthält alle gespeicherten **Index**-Objekte eines **TableDef**-Objekte (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie ein Recordset-Objekt vom Typ Tabelle zugreifen, verwenden Sie das Objekt **Index** -Eigenschaft, um die Reihenfolge der Datensätze anzugeben. Festlegen Sie diese Eigenschaft auf die Einstellung der **Name** -Eigenschaft eines vorhandenen **Index** -Objekts in der **Indexes** -Auflistung des **[TableDef](tabledef-object-dao.md)** -Objekts zugrunde liegenden des **[Recordset](recordset-object-dao.md)** -Objekts.
+When you access a table-type Recordset object, use the object's **Index** property to specify the order of records. Set this property to the **Name** property setting of an existing **Index** object in the **Indexes** collection of the **[TableDef](tabledef-object-dao.md)** object underlying the **[Recordset](recordset-object-dao.md)** object.
 
 > [!NOTE]
 > [!HINWEIS] Sie können die Methode **Append** oder **Delete** nur für eine **Indexes**-Auflistung verwenden, wenn die Einstellung der **[Updatable](connection-updatable-property-dao.md)** -Eigenschaft für das enthaltende **TableDef**-Objekt **True** lautet.
@@ -30,11 +30,11 @@ Wenn Sie ein Recordset-Objekt vom Typ Tabelle zugreifen, verwenden Sie das Objek
 Nachdem Sie ein neues **Index**-Objekt erstellt haben, sollten Sie es mit der **Append**-Methode der **Indexes**-Auflistung des **TableDef**-Objekts hinzufügen.
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass Ihre Daten mit den Attributen des neuen Indexes kompatibel sind. Wenn der Index eindeutige Werte erfordert, dürfen vorhandene Datensätze keine Duplikate enthalten. Wenn Duplikate vorhanden sind, kann das Microsoft Access-Datenbankmodul den Index nicht erstellen. Beim Versuch, die Append-Methode auf den neuen Index anzuwenden, tritt ein abfangbarer Fehler auf.
+> Make sure your data complies with the attributes of your new index. If your index requires unique values, make sure that there are no duplicates in existing data records. If duplicates exist, the Microsoft Access database engine can't create the index; a trappable error results when you attempt to use the Append method on the new index.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel erstellt ein neues Index-Objekt, fügt es der Indexes-Auflistung des TableDef-Objekts der Employees-Tabelle (Personal) an und führt die Indexes-Auflistung des TableDef-Objekts auf. Zuletzt listet es ein Recordset-Objekt auf, zuerst unter Verwendung des primären Index-Objekts und dann unter Verwendung des neuen Index-Objekts. Die IndexOutput-Prozedur ist zum Ausführen dieser Prozedur erforderlich.
+This example creates a new **Index** object, appends it to the **Indexes** collection of the Employees **TableDef**, and then enumerates the **Indexes** collection of the **TableDef**. Finally, it enumerates a **Recordset**, first using the primary **Index**, and then using the new **Index**. The IndexOutput procedure is required for this procedure to run.
 
 ```vb
     Sub IndexObjectX() 
@@ -117,7 +117,7 @@ Dieses Beispiel erstellt ein neues Index-Objekt, fügt es der Indexes-Auflistung
 
 <br/>
 
-Dieses Beispiel verwendet die **CreateIndex** -Methode, um zwei neue **Index** -Objekte zu erstellen, und fügt sie dann der **Indexes** -Auflistung des **TableDef** -Objekts der Employees-Tabelle (Personal) an. Klicken Sie dann der **Indexes** -Auflistung des **TableDef** -Objekts, der **Fields** -Auflistung der neuen **Index** -Objekte und der Properties-Auflistung der neuen **Index** -Objekte aufgelistet. Zum Ausführen dieser Prozedur ist die CreateIndexOutput-Funktion erforderlich.
+This example uses the **CreateIndex** method to create two new **Index** objects and then appends them to the **Indexes** collection of the Employees **TableDef** object. It then enumerates the **Indexes** collection of the **TableDef** object, the **Fields** collection of the new **Index** objects, and the Properties collection of the new **Index** objects. The CreateIndexOutput function is required for this procedure to run.
 
 ```vb
     Sub CreateIndexX() 

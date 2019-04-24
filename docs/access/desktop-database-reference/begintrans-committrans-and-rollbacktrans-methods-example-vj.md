@@ -1,5 +1,5 @@
 ---
-title: BeginTrans, CommitTrans, RollbackTrans Methoden) (Beispiel) (VJ++)
+title: BeginTrans-, CommitTrans-, RollbackTrans-Methoden (Beispiel) (VJ + +)
 TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods example (VJ++)
 ms:assetid: 8c1ca470-792e-4792-8913-fa7d3b46218f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249616(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 976de07f293e4160ac8946205504498931cbdd07
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296843"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vj"></a>BeginTrans-, CommitTrans- and RollbackTrans-Methode (Beispiel) (VJ++)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird der Buchtyp aller Psychologiebücher in der Tabelle ***Titles*** der Datenbank geändert. Nachdem durch die [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode eine Transaktion gestartet wurde, durch die alle an der Tabelle ***Titles*** vorgenommenen Änderungen isoliert werden, werden die Änderungen mit der [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode gespeichert. Sie können die [Rollback](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode verwenden, um mit der [Update](update-method-ado.md)-Methode gespeicherte Änderungen rückgängig zu machen.
 

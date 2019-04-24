@@ -1,5 +1,5 @@
 ---
-title: Indizes Mitglieder (DAO)
+title: Indexes-Elemente (DAO)
 TOCTitle: Indexes Members
 ms:assetid: 7b145a20-5cc9-57c3-7c6f-89cebdab7ea2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196191(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ae3358c499e4f730758f9c3aaf420725cc6efd96
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291538"
 ---
-# <a name="indexes-members-dao"></a>Indizes Mitglieder (DAO)
+# <a name="indexes-members-dao"></a>Indexes-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine Indexes-Auflistung enthält alle gespeicherten Index-Objekte eines TableDef-Objekts (nur für Microsoft Access-Arbeitsbereiche).
 
@@ -36,7 +36,7 @@ Eine Indexes-Auflistung enthält alle gespeicherten Index-Objekte eines TableDef
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="indexes-append-method-dao.md">Anfügen</a></strong></p></td>
+<td><p><strong><a href="indexes-append-method-dao.md">Append</a></strong></p></td>
 <td><p>Fügt der <strong>Indexes</strong>-Auflistung ein neues <strong>Index</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Eine Indexes-Auflistung enthält alle gespeicherten Index-Objekte eines TableDef
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="indexes-count-property-dao.md">Count</a></strong></p></td>
-<td><p>Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
+<td><p>Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
 </tr>
 </tbody>
 </table>

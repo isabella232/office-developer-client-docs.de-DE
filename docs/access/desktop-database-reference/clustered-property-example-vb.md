@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 75556927bc5d3e10526da6a45bfe1e4f6d8abea2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296269"
 ---
 # <a name="clustered-property-example-vb"></a>Clustered-Eigenschaft (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Dieses Beispiel veranschaulicht die [Clustered](clustered-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md). Beachten Sie, dass Microsoft Jet-Datenbanken gruppierte Indizes nicht unterstützen, sodass in diesem Beispiel wird für alle Indizes in der *Nordwind* -Datenbank die **Clustered** -Eigenschaft **False** zurückgibt.
+In diesem Beispiel wird die Verwendung der [Clustered](clustered-property-adox.md)-Eigenschaft eines [Index](index-object-adox.md)-Objekts veranschaulicht. Microsoft Jet-Datenbanken unterstützen keine gruppierten Indizes. In diesem Beispiel wird daher für alle Indizes in der *Northwind*-Datenbank für die **Clustered**-Eigenschaft **False** zurückgegeben.
 
 ```vb 
  

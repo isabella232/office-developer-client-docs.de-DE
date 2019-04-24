@@ -1,5 +1,5 @@
 ---
-title: Close-Methode - ActiveX Data Objects (ADO)
+title: Methode "beenden"-ActiveX Data Objects (ADO)
 TOCTitle: Close method (ADO)
 ms:assetid: 26a7cced-ebeb-70be-f5de-96a35711bc37
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249029(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 269a782e85fab1e5dc47cd32f2e2c11306e11470
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296311"
 ---
-# <a name="close-method-ado"></a>Close-Methode (ADO)
+# <a name="close-method-ado"></a>Schließ-Methode (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein geöffnetes Objekt und alle abhängigen Objekte werden geschlossen.
 
@@ -25,9 +25,9 @@ Ein geöffnetes Objekt und alle abhängigen Objekte werden geschlossen.
 
 *Objekt*.Close
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **Close** -Methode, um eine [Verbindung](connection-object-ado.md), einen [Datensatz](record-object-ado.md), ein [Recordset-Objekt](recordset-object-ado.md)oder ein [Stream](stream-object-ado.md) -Objekt, um alle zugeordneten Systemressourcen frei zu schließen. Ein Objekt schließen, wird es nicht aus dem Speicher entfernt; Sie können ändern, dessen Eigenschaft und einem späteren Zeitpunkt erneut öffnen. Um ein Objekt aus dem Speicher vollständig zu entfernen, legen Sie die Objektvariable auf *Nothing* (in Visual Basic) nach dem Schließen des Objekts.
+Verwenden Sie die **Schließ** -Methode, um eine [Verbindung](connection-object-ado.md), einen [Datensatz](record-object-ado.md), ein [Recordset](recordset-object-ado.md)oder ein [Stream](stream-object-ado.md) -Objekt zu beenden, um alle zugeordneten Systemressourcen freizugeben. Durch das Schließen eines Objekts wird es nicht aus dem Speicher entfernt. Sie können die Eigenschafteneinstellungen ändern und Sie später wieder öffnen. Um ein Objekt vollständig aus dem Arbeitsspeicher zu entfernen, legen Sie die Objektvariable auf *Nothing* (in Visual Basic) fest, nachdem Sie das Objekt geschlossen haben.
 
 **Connection**
 

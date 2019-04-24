@@ -1,5 +1,5 @@
 ---
-title: QueryDefs.Refresh-Methode (DAO)
+title: QueryDefs. Refresh-Methode (DAO)
 TOCTitle: Refresh Method
 ms:assetid: 4379a02a-cc92-7cc5-969d-7102b5356e88
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192942(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2073c2c45ee0df61dfee2b4df3587bd7c03e62c7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300931"
 ---
-# <a name="querydefsrefresh-method-dao"></a>QueryDefs.Refresh-Methode (DAO)
+# <a name="querydefsrefresh-method-dao"></a>QueryDefs. Refresh-Methode (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Wird für dieses Objekt nicht unterstützt.
 
@@ -25,7 +25,7 @@ Wird für dieses Objekt nicht unterstützt.
 
 *Ausdruck* . Aktualisieren
 
-*Ausdruck* Eine Variable, die ein **QueryDefs** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Querydefs** -Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

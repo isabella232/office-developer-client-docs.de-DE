@@ -1,5 +1,5 @@
 ---
-title: EditModeEnum (Access PC-Datenbank-Referenz)
+title: EditModeEnum (Access Desktop Database Reference)
 TOCTitle: EditModeEnum
 ms:assetid: 4da0e504-aca2-b769-04a2-0df687fa4422
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249248(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 246d9e29f084efb975783fd15c15993eba5a6e74
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293581"
 ---
 # <a name="editmodeenum"></a>EditModeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Bearbeitungsstatus eines Datensatzes an.
 
@@ -60,7 +60,7 @@ Gibt den Bearbeitungsstatus eines Datensatzes an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -75,16 +75,16 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.EditMode.NONE</p></td>
+<td><p>AdoEnums. EditMode. NONE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.EditMode.INPROGRESS</p></td>
+<td><p>AdoEnums. EditMode. inPROGRESS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.EditMode.ADD</p></td>
+<td><p>AdoEnums. EditMode. ADD</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.EditMode.DELETE</p></td>
+<td><p>AdoEnums. EditMode. DELETE</p></td>
 </tr>
 </tbody>
 </table>

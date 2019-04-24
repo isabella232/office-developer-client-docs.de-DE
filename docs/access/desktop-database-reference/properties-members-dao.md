@@ -1,5 +1,5 @@
 ---
-title: Elemente von Eigenschaften (DAO)
+title: Properties-Elemente (DAO)
 TOCTitle: Properties Members
 ms:assetid: 04cd45ae-3a1e-6090-534d-de10363744c4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844853(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 137616721dab202e0122ccf8947d2a20a7a0509d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301260"
 ---
-# <a name="properties-members-dao"></a>Elemente von Eigenschaften (DAO)
+# <a name="properties-members-dao"></a>Properties-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Eine Properties-Auflistung enthält alle **[Property](property-object-dao.md)**-Objekte einer bestimmten Instanz eines Objekts.
+Eine Properties-Auflistung enthält alle **[Property-](property-object-dao.md)** Objekte für eine bestimmte Instanz eines Objekts.
 
 ## <a name="methods"></a>Methoden
 
@@ -36,7 +36,7 @@ Eine Properties-Auflistung enthält alle **[Property](property-object-dao.md)**-
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="properties-append-method-dao.md">Anfügen</a></strong></p></td>
+<td><p><strong><a href="properties-append-method-dao.md">Append</a></strong></p></td>
 <td><p>Fügt der <strong>Properties</strong>-Auflistung ein neues <strong>Property</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">

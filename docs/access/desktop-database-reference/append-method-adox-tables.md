@@ -8,29 +8,29 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d2bf2479c2a34291f245783ebaecd75ba31d2ac8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297074"
 ---
 # <a name="append-method-adox-tables"></a>Append-Methode (ADOX Tables)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Fügt der [Tables](table-object-adox.md) Auflistung ein neues [Table](tables-collection-adox.md)-Objekt hinzu.
+Fügt der [Tables](tables-collection-adox.md) Auflistung ein neues [Table](table-object-adox.md)-Objekt hinzu.
 
 ## <a name="syntax"></a>Syntax
 
-*Tabellen*. *Tabelle* Anfügen
+*Tabellen*. Append-*Tabelle*
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*Table* | Ein **Variant** -Wert, der einen Verweis auf das anzufügende **Table** -Objekt enthält oder den Namen der zu erstellenden und anzufügenden Tabelle.|
+|*Table* | Ein **Variant**-Wert, der einen Verweis auf das anzufügende **Table**-Objekt enthält oder den Namen der zu erstellenden und anzufügenden Tabelle.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Anbieter das Erstellen von Tabellen nicht unterstützt, tritt ein Fehler auf.
 

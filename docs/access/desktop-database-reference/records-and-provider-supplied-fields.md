@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ebbfeb303bb575928f09858db5d3a34cf2171ce0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300756"
 ---
 # <a name="records-and-provider-supplied-fields"></a>Datensätze und vom Anbieter bereitgestellte Felder
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Wenn ein [Record](record-object-ado.md)-Objekt geöffnet wird, kann die Quelle die aktuelle Zeile eines geöffneten [Recordsets](recordset-object-ado.md), eine absolute URL oder eine relative URL in Verbindung mit einem geöffneten [Connection](connection-object-ado.md)-Objekt sein.
 
@@ -24,7 +24,7 @@ Wenn das **Record** -Objekt aus einem **Recordset** -Objekt geöffnet wird, enth
 
 Durch den Anbieter können zusätzliche Felder eingefügt werden, die als ergänzende Merkmale des **Record** -Objekts dienen. Daher verfügt ein **Record** -Objekt möglicherweise über eindeutige Felder, die im gesamten **Recordset** -Objekt oder in einem aus einer anderen Zeile des **Recordset** -Objekts abgeleiteten **Record** -Objekt nicht enthalten sind.
 
-Beispielsweise können alle Zeilen eines **Recordset-Objekt** aus einer e-Mail-Datenquelle abgeleiteten Spalten als aus zu haben, und Betreff. Ein **Datensatz** abgeleitet, **Recordset-Objekts** die gleichen Felder verwendet werden. Der **Datensatz** müssen jedoch auch andere Felder für die bestimmten Nachricht dargestellt durch diesen **Datensatz**, wie Anlagen und "Cc" (Carbon Copy, Blindkopie) eindeutig.
+Beispielsweise können alle Zeilen eines **Recordset-Objekts** , das von einer e-Mail-Datenquelle abgeleitet wurde, Spalten wie from, to und Subject aufweisen. A **Record** derived from that **Recordset** will have the same fields. However, the **Record** may also have other fields unique to the particular message represented by that **Record**, such as Attachment and Cc (carbon copy).
 
 Obwohl das **Record** -Objekt und die aktuelle Zeile des **Recordset** -Objekts die gleichen Felder enthalten, unterscheiden sie sich, da die Objekte **Record** und **Recordset** über verschiedene Methoden und Eigenschaften verfügen.
 
@@ -85,23 +85,23 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISHIDDEN</p></td>
-<td><p>AdBoolean</p></td>
+<td><p>Boolean</p></td>
 <td><p>True, wenn die Ressource ausgeblendet ist. Es werden nur Zeilen zurückgegeben, wenn durch den Befehl, durch den das Rowset erstellt wird, explizit Zeilen ausgewählt werden, bei denen RESOURCE_ISHIDDEN True entspricht.</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_ISREADONLY</p></td>
-<td><p>AdBoolean</p></td>
+<td><p>Boolean</p></td>
 <td><p>True, wenn die Ressource schreibgeschützt ist. Es wird versucht, diese Ressource mit DBBINDFLAG_WRITE zu öffnen, bei DB_E_READONLY schlägt der Vorgang fehl. Diese Eigenschaft kann auch dann bearbeitet werden, wenn die Ressource nur zum Lesen geöffnet wurde.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_CONTENTTYPE</p></td>
 <td><p>AdVarWChar</p></td>
-<td><p>Gibt die wahrscheinlich Verwendung des Dokuments an – beispielsweise ein Anwalt des kurze. Dies kann zum Erstellen des Dokuments verwendeten Office-Vorlage entsprechen.&quot;&quot;</p></td>
+<td><p>Die wahrscheinliche Verwendung des Dokuments wird angegeben - z. B. ein juristischer Schriftsatz. Dies entspricht möglicherweise der Office-Vorlage, die zum Erstellen des Dokuments verwendet wird.&quot;&quot;</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_CONTENTCLASS</p></td>
 <td><p>AdVarWChar</p></td>
-<td><p>Gibt den MIME-Typ des Dokuments, der das Format angibt, wie &quot;Text/html&quot;. "</p></td>
+<td><p>Gibt den MIME-Typ des Dokuments an, der das Format wie " &quot;Text/HTML&quot;" angibt.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_CONTENTLANGUAGE</p></td>
@@ -110,17 +110,17 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_CREATIONTIME</p></td>
-<td><p>adFileTime</p></td>
+<td><p>Dateien</p></td>
 <td><p>Schreibgeschützt. Es wird eine FILETIME-Struktur angegeben, die die Uhrzeit der Erstellung der Ressource enthält. Die Uhrzeit wird im UTC-Format (Coordinated Universal Time, koordinierte Weltzeit) angegeben.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_LASTACCESSTIME</p></td>
-<td><p>AdFileTime</p></td>
+<td><p>Dateien</p></td>
 <td><p>Schreibgeschützt. Es wird eine FILETIME-Struktur angegeben, die die Uhrzeit des letzten Zugriffs auf die Ressource enthält. Die Uhrzeit wird im UTC-Format angegeben. Die FILETIME-Elemente sind Null, wenn dieses Zeitelement vom Anbieter nicht unterstützt wird.</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_LASTWRITETIME</p></td>
-<td><p>AdFileTime</p></td>
+<td><p>Dateien</p></td>
 <td><p>Schreibgeschützt. Es wird eine FILETIME-Struktur angegeben, die die Uhrzeit des letzten Schreibvorgangs für die Ressource enthält. Die Uhrzeit wird im UTC-Format angegeben. Die FILETIME-Elemente sind Null, wenn dieses Zeitelement vom Anbieter nicht unterstützt wird.</p></td>
 </tr>
 <tr class="even">
@@ -130,12 +130,12 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_ISCOLLECTION</p></td>
-<td><p>AdBoolean</p></td>
+<td><p>Boolean</p></td>
 <td><p>Schreibgeschützt. True, wenn die Ressource eine Auflistung, z. B. ein Verzeichnis, ist. False, wenn die Ressource eine einfache Datei ist.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISSTRUCTUREDDOCUMENT</p></td>
-<td><p>AdBoolean</p></td>
+<td><p>Boolean</p></td>
 <td><p>True, wenn die Ressource ein strukturiertes Dokument ist. False, wenn die Ressource kein strukturiertes Dokument ist. Sie kann eine Auflistung oder eine einfache Datei sein.</p></td>
 </tr>
 <tr class="odd">
@@ -155,7 +155,7 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISROOT</p></td>
-<td><p>AdBoolean</p></td>
+<td><p>Boolean</p></td>
 <td><p>Schreibgeschützt. True, wenn die Ressource der Stamm einer Auflistung oder eines strukturierten Dokuments ist.</p></td>
 </tr>
 </tbody>

@@ -1,5 +1,5 @@
 ---
-title: Datenbank-Member (DAO)
+title: Datenbankelemente (DAO)
 TOCTitle: Database Members
 ms:assetid: 68b0c069-8ed9-64dc-ea68-0d323e24c79c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195257(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d2254aeff94aeb2b8b078fc4f4cd4d3ef807e597
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294925"
 ---
-# <a name="database-members-dao"></a>Datenbank-Member (DAO)
+# <a name="database-members-dao"></a>Datenbankelemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 
@@ -41,7 +41,7 @@ Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 </tr>
 <tr class="even">
 <td><p><strong><a href="database-createproperty-method-dao.md">CreateProperty</a></strong></p></td>
-<td><p>Erstellt ein neues, benutzerdefiniertes <strong><a href="property-object-dao.md">Property</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Erstellt ein neues, benutzerdefiniertes <strong><a href="property-object-dao.md">Property</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="database-createquerydef-method-dao.md">CreateQueryDef</a></strong></p></td>
@@ -49,15 +49,15 @@ Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 </tr>
 <tr class="even">
 <td><p><strong><a href="database-createrelation-method-dao.md">CreateRelation</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="relation-object-dao.md">Relation</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Erstellt ein neues <strong><a href="relation-object-dao.md">Relation</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="database-createtabledef-method-dao.md">CreateTableDef</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="tabledef-object-dao.md">TableDef</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Erstellt ein neues <strong><a href="tabledef-object-dao.md">TableDef</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="database-execute-method-dao.md">Ausführen</a></strong></p></td>
-<td><p>Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt aus.</p></td>
+<td><p><strong><a href="database-execute-method-dao.md">Execute</a></strong></p></td>
+<td><p>Führt eine Aktionsabfrage oder eine SQL-Anweisung zu dem angegebenen Objekt aus.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="database-makereplica-method-dao.md">MakeReplica</a></strong></p></td>
@@ -76,7 +76,7 @@ Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 <td><p>Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Repliktat, löscht alle Datensätze im Teilreplikat, und füllt dann das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf (gilt nur für Microsoft Access-Datenbanken).</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="database-synchronize-method-dao.md">Synchronisieren</a></strong></p></td>
+<td><p><strong><a href="database-synchronize-method-dao.md">Synchronize</a></strong></p></td>
 <td><p>Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 </tbody>
@@ -107,7 +107,7 @@ Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 </tr>
 <tr class="odd">
 <td><p><strong><a href="database-connection-property-dao.md">Verbindung</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt das <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt zurück, das der Datenbank entspricht (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
@@ -120,7 +120,7 @@ Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 </tr>
 <tr class="even">
 <td><p><strong><a href="database-name-property-dao.md">Name</a></strong></p></td>
-<td><p>Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter <strong>String</strong>-Wert.</p></td>
+<td><p>Gibt den Namen des angegebenen Objekts zurück. Read-only <strong>Zeichenfolge</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="database-properties-property-dao.md">Eigenschaften</a></strong></p></td>
@@ -156,7 +156,7 @@ Ein Database -Objekt stellt eine geöffnete Datenbank dar.
 </tr>
 <tr class="odd">
 <td><p><strong><a href="database-transactions-property-dao.md">Transaktionen</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter <strong>Boolean</strong>-Wert.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter <strong>boolescher</strong> Wert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="database-updatable-property-dao.md">Updatable</a></strong></p></td>

@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2698f00d68451870b06c1b5e9ed0b849e3950f11
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295884"
 ---
 # <a name="connectionname-property-dao"></a>Connection.Name-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Namen eines **[Connection](connection-object-dao.md)** -Objekts zurück.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Name
+*Ausdruck* . Namen
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 

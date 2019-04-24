@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 27a3e9b1905539a1ede534c6918334b97d45c305
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296829"
 ---
 # <a name="bof-eof-and-bookmark-properties-example-vb"></a>BOF-, EOF- und Bookmark-Eigenschaft (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird mithilfe der Eigenschaften [BOF](bof-eof-properties-ado.md) und [EOF](bof-eof-properties-ado.md) eine Nachricht angezeigt, falls ein Benutzer versucht, über den ersten oder letzten Datensatz eines [Recordset](recordset-object-ado.md)-Objekts hinaus zu navigieren. Mit der [Bookmark](bookmark-property-ado.md)-Eigenschaft kann der Benutzer einen Datensatz in einem **Recordset** -Objekt kennzeichnen und später zu diesem zurückkehren.
 

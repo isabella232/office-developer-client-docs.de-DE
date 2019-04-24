@@ -1,5 +1,5 @@
 ---
-title: Clear-Methode - ActiveX Data Objects (ADO)
+title: Clear-Methode-ActiveX Data Objects (ADO)
 TOCTitle: Clear method (ADO)
 ms:assetid: 5d51f42c-147b-1fcf-d05b-123e5714ecb7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249329(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b0d76480bdb5d5a3ab258e103a00707af303a4d3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296360"
 ---
 # <a name="clear-method-ado"></a>Clear-Methode (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Alle **Error** -Objekte werden aus der **Errors** -Auflistung entfernt.
+Alle **Error**-Objekte werden aus der **Errors**-Auflistung entfernt.
 
 ## <a name="syntax"></a>Syntax
 
-*Fehler*. Löschen
+*Fehler*. Deaktivieren
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **Clear** -Methode für die [Errors](errors-collection-ado.md)-Auflistung, um alle vorhandenen [Error](error-object-ado.md)-Objekte aus der Auflistung zu entfernen. Wenn ein Fehler auftritt, wird die **Errors** -Auflistung automatisch von ADO gelöscht und mit auf dem neuen Fehler basierenden **Error** -Objekten gefüllt.
 

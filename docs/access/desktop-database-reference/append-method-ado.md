@@ -8,38 +8,38 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a85faf900860dabb809a10a92985559b7a7cf2ef
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297130"
 ---
 # <a name="append-method-ado"></a>Append-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Objekt wird einer Auflistung angefügt. Bei einer [Fields](fields-collection-ado.md)-Auflistung wird möglicherweise ein neues [Field](field-object-ado.md)-Objekt erstellt, bevor es der Auflistung angefügt wird.
 
 ## <a name="syntax"></a>Syntax
 
-*Auflistung*. Fügen Sie *-Objekt*
+*Sammlung*. Append- *Objekt*
 
-*Felder*. *Name*, *Typ*, *DefinedSize*, *Attrib*, *FieldValue* Anfügen
+*Felder*. Append *Name*, *Type*, *DefinedSize*, *Attribute*, *FieldValue*
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*collection* |Ein Collection-Objekt.|
+|*collection* |A collection object.|
 |*fields* |Eine **Fields** -Auflistung.|
 |*Objekt* |Eine Objektvariable, durch die das anzufügende Objekt dargestellt wird.|
 |*Name* |Ein **String**-Wert, der den Namen des neuen **Field**-Objekts enthält und nicht mit dem Namen eines anderen Objekts in *fields* übereinstimmen darf.|
 |*Type* |Ein [DataTypeEnum](datatypeenum.md)-Wert, dessen Standardwert **adEmpty** ist und durch den der Datentyp des neuen Felds angegeben wird. Die folgenden Datentypen werden von ADO nicht unterstützt und sollten beim Anfügen neuer Felder an ein **Recordset** nicht verwendet werden: **adIDispatch**, **adIUnknown**, **adVariant**.|
-|*DefinedSize* |Optional. Ein Long-Wert, durch den die definierte Größe des neuen Felds in Zeichen oder Byte dargestellt wird. Der Standardwert für diesen Parameter wird von Type abgeleitet. Felder mit einem DefinedSize-Wert von mehr als 255 Bytes werden als Spalten mit variabler Länge behandelt. (Der Standardwert für DefinedSize ist nicht angegeben.)|
+|*DefinedSize* |Optional. A **Long** value that represents the defined size, in characters or bytes, of the new field. Der Standardwert für diesen Parameter ist vom *Typ*abgeleitet. Fields with a DefinedSize greater than 255 bytes, and treated as variable length columns. (Der Standardwert für *DefinedSize* ist nicht angegeben.)|
 |*Attrib* |Optional. Ein [FieldAttributeEnum](fieldattributeenum.md)-Wert, dessen Standardwert **adFldDefault** ist und durch den Attribute für das neue Feld angegeben werden. Wenn dieser Wert nicht angegeben ist, enthält das Feld von *Type* abgeleitete Werte.|
 |*FieldValue* |Optional. Ein **Variant** -Objekt, durch das der Wert für das neue Feld dargestellt wird. Wenn nichts angegeben ist, wird dem Feld ein Nullwert angefügt.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 ### <a name="parameters-collection"></a>Parameters-Auflistung
 
@@ -51,7 +51,7 @@ Verwenden Sie die [CreateParameter](createparameter-method-ado.md)-Methode, um *
 
 ### <a name="fields-collection"></a>Fields-Auflistung
 
-Der *FieldValue* -Parameter ist nur gültig, wenn ein **Field** -Objekt eines [Record](record-object-ado.md) -Objekts, um ein **Recordset** -Objekt nicht hinzufügen. Mit einem **Record** -Objekt können Sie gleichzeitig Felder anfügen und Werte bereitstellen. Bei einem **Recordset** -Objekt müssen Sie Felder erstellen, während das **Recordset** geschlossen ist, dann das **Recordset** öffnen und den Feldern Werte zuweisen.
+Der *FieldValue*-Parameter ist nur gültig, wenn ein **Field**-Objekt einem [Record](record-object-ado.md)-Objekt und nicht einem **Recordset**-Objekt hinzugefügt wird. Mit einem **Record**-Objekt können Sie gleichzeitig Felder anfügen und Werte bereitstellen. Bei einem **Recordset**-Objekt müssen Sie Felder erstellen, während das **Recordset** geschlossen ist, dann das **Recordset** öffnen und den Feldern Werte zuweisen.
 
 
 > [!NOTE]
@@ -62,7 +62,7 @@ Der *FieldValue* -Parameter ist nur gültig, wenn ein **Field** -Objekt eines [R
 
 ### <a name="recordset"></a>Recordset
 
-Wenn Sie die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft nicht festlegen, bevor Sie die **Append** -Methode aufrufen, wird **CursorLocation** automatisch auf **adUseClient** (einen [CursorLocationEnum](cursorlocationenum.md)-Wert) festgelegt, wenn die [Open](recordset-object-ado.md)-Methode des [Recordset](open-method-ado-recordset.md)-Objekts aufgerufen wird.
+Wenn Sie die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft nicht festlegen, bevor Sie die **Append**-Methode aufrufen, wird **CursorLocation** automatisch auf **adUseClient** (einen [CursorLocationEnum](cursorlocationenum.md)-Wert) festgelegt, wenn die [Open](open-method-ado-recordset.md)-Methode des [Recordset](recordset-object-ado.md)-Objekts aufgerufen wird.
 
 Ein Laufzeitfehler tritt auf, wenn die **Append** -Methode für die **Fields** -Auflistung eines geöffneten **Recordsets** oder für ein **Recordset**, für das die [ActiveConnection](activeconnection-property-ado.md)-Eigenschaft festgelegt wurde, aufgerufen wird. Sie können nur Felder zu einem **Recordset** hinzufügen, das nicht geöffnet ist und noch nicht mit einer Datenquelle verbunden wurde. Dies ist normalerweise der Fall, wenn ein **Recordset** -Objekt mit der [CreateRecordset](createrecordset-method-rds.md)-Methode erstellt oder einer Objektvariablen zugewiesen wird.
 

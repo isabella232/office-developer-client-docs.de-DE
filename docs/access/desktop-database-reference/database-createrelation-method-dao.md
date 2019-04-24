@@ -1,5 +1,5 @@
 ---
-title: Database.CreateRelation-Methode (DAO)
+title: Database. createRelation-Methode (DAO)
 TOCTitle: CreateRelation Method
 ms:assetid: e240c7e3-c293-5e19-afcc-34d9a5549c64
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835692(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 365835bc579a431d34b65cd27ed4de4e12bca309
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294953"
 ---
-# <a name="databasecreaterelation-method-dao"></a>Database.CreateRelation-Methode (DAO)
+# <a name="databasecreaterelation-method-dao"></a>Database. createRelation-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).
+Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (nur Microsoft Access-Arbeitsbereiche). .
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateRelation (***Name***, ***Tabelle***, ***ForeignTable***, ***Attribute***)
+*Ausdruck* . CreateRelation (***Name***, ***Table***, ***foreignable***, ***Attribute***)
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -42,7 +42,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -52,7 +52,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 <td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der das neue <strong>Relation</strong>-Objekt eindeutig benennt. Weitere Informationen zu gültigen <strong>Relation</strong>-Namen finden Sie in dem Thema zur <strong><a href="connection-name-property-dao.md">Name</a></strong>-Eigenschaft.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der das neue <strong>Relation</strong>-Objekt eindeutig benennt. Weitere Informationen zu gültigen Beziehungsnamen finden <strong></strong> Sie unter der <strong><a href="connection-name-property-dao.md">Name</a></strong> -Eigenschaft.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Table</em></p></td>
@@ -70,7 +70,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 <td><p><em>Attributes</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Konstante bzw. Kombination aus Konstanten, die Informationen über den Beziehungstyp enthält. Weitere Informationen finden Sie in dem Thema zur <strong><a href="field-attributes-property-dao.md">Attributes</a></strong>-Eigenschaft.</p></td>
+<td><p>Eine Konstante oder eine Kombination aus Konstanten, die Informationen zum Beziehungstyp enthalten. Details finden <strong><a href="field-attributes-property-dao.md"></a></strong> Sie unter der Attributes-Eigenschaft.</p></td>
 </tr>
 </tbody>
 </table>
@@ -78,7 +78,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 
 ## <a name="return-value"></a>Rückgabewert
 
-Relation
+Beziehung
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -88,7 +88,7 @@ Wenn Sie die **CreateRelation**-Methode verwenden und einen oder mehrere optiona
 
 Bevor Sie die **[Append](fields-append-method-dao.md)** -Methode für ein **Relation**-Objekt verwenden können, müssen Sie die entsprechenden **[Field](field-object-dao.md)** -Objekte anfügen, um die Tabellen für Primär- und Fremdschlüsselbeziehungen zu definieren.
 
-Wenn Name auf ein Objekt bezieht, das bereits ein Element der Auflistung ist oder wenn die Namen der **Felder** -Objekt in der untergeordneten **Fields** -Auflistung bereitgestellt, ungültig sind, tritt ein Laufzeitfehler auf, wenn Sie die **Append** -Methode verwenden.
+Wenn Name auf ein Objekt verweist, das bereits ein Element der Auflistung ist, oder wenn die **Field** -Objektnamen in der unterGeordneten **Fields** -Auflistung ungültig sind, tritt ein Laufzeitfehler auf, wenn Sie die **Append** -Methode verwenden.
 
 Zwischen einer replizierten und einer lokalen Tabelle können Sie keine Beziehung herstellen oder beibehalten.
 
@@ -96,7 +96,7 @@ Wenn Sie ein **Relation**-Objekt aus der **[Relations](relations-collection-dao.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die CreateRelation-Methode zum Erstellen eines Relation-Objekts zwischen dem TableDef-Objekt Employees (Personal) und einem neuen TableDef-Objekt namens Departments (Abteilungen) erstellt. Außerdem veranschaulicht das Beispiel, wie das Erstellen eines neuen Relation-Objekts das Erstellen erforderlicher Indexes-Objekte in der Fremdtabelle nach sich zieht (DepartmentsEmployees-Index in der Employees-Tabelle).
+This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. This example also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).
 
 ```vb
     Sub CreateRelationX() 

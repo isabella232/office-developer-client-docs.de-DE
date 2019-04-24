@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6578dbfc50ae8ffeaa31f49b694b37ba5fd534e8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296710"
 ---
 # <a name="calling-a-stored-procedure-with-a-command"></a>Aufrufen einer gespeicherten Prozedur mit einem Befehl
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Zum Aufrufen einer gespeicherten Prozedur können Sie auch einen Befehl verwenden. Mit dem folgenden Code wird in der Northwind-Beispiedatenbank die gespeicherte Prozedur CustOrdersOrders aufgerufen, die wie folgt definiert ist:
+You can also use a command when calling a stored procedure. The following code calls a stored procedure in the Northwind sample database, called CustOrdersOrders, which is defined as follows:
 
 ```vb 
  

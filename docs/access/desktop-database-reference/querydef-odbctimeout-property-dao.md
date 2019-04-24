@@ -1,5 +1,5 @@
 ---
-title: QueryDef.ODBCTimeout-Eigenschaft (DAO)
+title: QueryDef. ODBCTimeout-Eigenschaft (DAO)
 TOCTitle: ODBCTimeout Property
 ms:assetid: b251c4fb-64a8-aa95-deed-64425df3e00c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822019(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2d34aee30e649b1c25ddc6af8078da2af9dd3b84
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301001"
 ---
-# <a name="querydefodbctimeout-property-dao"></a>QueryDef.ODBCTimeout-Eigenschaft (DAO)
+# <a name="querydefodbctimeout-property-dao"></a>QueryDef. ODBCTimeout-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, wie viele Sekunden gewartet werden soll, bevor ein Timeoutfehler auftritt, wenn ein **[QueryDef](querydef-object-dao.md)** -Objekt in einer ODBC-Datenbank ausgeführt wird.
 
@@ -33,7 +33,7 @@ Gibt an, wie viele Sekunden gewartet werden soll, bevor ein Timeoutfehler auftri
 
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn die ODBCTimeout-Eigenschaft den Wert -1 erhält, wird für das Timeout standardmäßig die aktuelle Einstellung der QueryTimeout-Eigenschaft des Connection- oder Database-Objekts verwendet, das das QueryDef-Objekt enthält. Wenn die ODBCTimeout-Eigenschaft den Wert 0 hat, tritt kein Timeoutfehler auf.
+When the **ODBCTimeout** property is set to -1, the timeout defaults to the current setting of the **[QueryTimeout](database-querytimeout-property-dao.md)** property of the **[Connection](connection-object-dao.md)** or **[Database](database-object-dao.md)** object that contains the **QueryDef**. When the **ODBCTimeout** property is set to 0, no timeout error occurs.
 
 Wenn Sie eine ODBC-Datenbank verwenden, wie etwa Microsoft SQL Server, kann es aufgrund einer hohen Auslastung des Netzwerks oder des ODBC-Server zu Verzögerungen kommen. Anstatt zu warten, können Sie einen Zeitraum festlegen, nach dessen Ablauf ein Fehler zurückgegeben wird.
 

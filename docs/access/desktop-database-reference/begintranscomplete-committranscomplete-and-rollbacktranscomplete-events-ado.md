@@ -1,5 +1,5 @@
 ---
-title: BeginTransComplete-, CommitTransComplete, RollbackTransComplete-Ereignisse (ADO)
+title: BeginTransComplete-, CommitTransComplete-, RollbackTransComplete--Ereignisse (ADO)
 TOCTitle: BeginTransComplete, CommitTransComplete, and RollbackTransComplete events (ADO)
 ms:assetid: 9d0ae38e-530a-7a89-a344-f3ab401c2e35
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249713(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a6f86e17a44ec0813176a023a02710fded627488
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296822"
 ---
-# <a name="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado"></a>BeginTransComplete-, CommitTransComplete- und RollbackTransComplete-Ereignisse (ADO)
+# <a name="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado"></a>BeginTransComplete-, CommitTransComplete-und RollbackTransComplete--Ereignisse (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Diese Ereignisse werden aufgerufen, nachdem die zugeordnete Operation für das [Connection](connection-object-ado.md)-Objekt die Ausführung beendet hat.
 
@@ -28,24 +28,24 @@ Diese Ereignisse werden aufgerufen, nachdem die zugeordnete Operation für das [
 
 ## <a name="syntax"></a>Syntax
 
-BeginTransComplete-*TransactionLevel*, *pError*, *AdStatus*, *pConnection*
+BeginTransComplete*TransactionLevel*, *pError*, ** *pConnection*
 
-CommitTransComplete-*pError*, *AdStatus*, *pConnection*
+CommitTransComplete*pError*, ** *pConnection*
 
-RollbackTransComplete*pError*, *AdStatus*, *pConnection*
+RollbackTransComplete-*pError*, ** *pConnection*
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
 |*TransactionLevel* |Ein **Long** -Wert, der die neue Transaktionsebene von **BeginTrans** enthält, das zu diesem Ereignis führte.|
-|*pError* |Ein [Error](error-object-ado.md)-Objekt. Es beschreibt den Fehler, der aufgetreten sind, wenn der Wert von EventStatusEnum **AdStatusErrorsOccurred**ist. Andernfalls wird es nicht festgelegt.|
+|*pError* |Ein [Error](error-object-ado.md)-Objekt. Sie beschreibt den Fehler, der aufgetreten ist, wenn der Wert von EventStatusEnum **adStatusErrorsOccurred festgelegt**ist; Andernfalls wird nicht festgelegt.|
 |*adStatus* |[EventStatusEnum](eventstatusenum.md). Diese Ereignisse können nachfolgende Benachrichtigungen verhindern, indem dieser Parameter auf **AdStatusUnwantedEvent** festgelegt wird, bevor das Ereignis zurückgegeben wird.|
-|*pConnection* |Das **Connection** -Objekt, für das dieses Ereignis auftrat.|
+|*pConnection* |Das **Connection**-Objekt, für das dieses Ereignis auftrat.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-In Visual C++ können mehrere **Verbindungen** gleichen Ereignisbehandlung Methode freigeben. Die-Methode verwendet das zurückgegebene **Connection** -Objekt, um zu bestimmen, welches Objekt das Ereignis ausgelöst hat.
+In Visual C++, multiple **Connections** can share the same event handling method. The method uses the returned **Connection** object to determine which object caused the event.
 
-Wenn die [Attributes](attributes-property-ado.md)-Eigenschaft auf **adXactCommitRetaining** oder **adXactAbortRetaining** festgelegt ist, beginnt nach dem Commit oder Rollback eine neue Transaktion. Verwenden Sie das **BeginTransComplete** -Ereignis, um alle Transaktionsstartereignisse, mit Ausnahme des ersten, zu ignorieren.
+Wenn die [Attributes](attributes-property-ado.md)-Eigenschaft auf **adXactCommitRetaining** oder **adXactAbortRetaining** festgelegt ist, beginnt nach dem Commit oder Rollback eine neue Transaktion. Verwenden Sie das **BeginTransComplete**-Ereignis, um alle Transaktionsstartereignisse, mit Ausnahme des ersten, zu ignorieren.
 

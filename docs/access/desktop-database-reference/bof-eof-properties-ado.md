@@ -1,5 +1,5 @@
 ---
-title: BOF- und EOF-Eigenschaft (ADO)
+title: BOF-, EOF-Eigenschaft (ADO)
 TOCTitle: BOF, EOF properties (ADO)
 ms:assetid: f797e140-5572-1a4d-9afc-285f6a3868a8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250260(v=office.15)
@@ -8,40 +8,40 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d36a65ce8a6808f2128749bd7fbc6e468acbd279
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296787"
 ---
-# <a name="bof-eof-properties-ado"></a>BOF- und EOF-Eigenschaft (ADO)
+# <a name="bof-eof-properties-ado"></a>BOF-, EOF-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-**BOF** - Gibt an, dass die aktuelle Datensatzposition vor dem ersten Datensatz in einem [Recordset](recordset-object-ado.md)-Objekt liegt.
+**BOF** – Gibt an, dass die aktuelle Datensatzposition vor dem ersten Datensatz in einem [Recordset](recordset-object-ado.md)-Objekt liegt.
 
-**EOF** - Gibt an, dass die aktuelle Datensatzposition nach dem letzten Datensatz in einem **Recordset** -Objekt liegt.
+**EOF** – Gibt an, dass die aktuelle Datensatzposition nach dem letzten Datensatz in einem **Recordset**-Objekt liegt.
 
 ## <a name="return-value"></a>Rückgabewert
 
-Die **BOF** - und die **EOF** -Eigenschaft geben Werte vom Datentyp **Boolean** zurück.
+Die **BOF**- und die **EOF**-Eigenschaft geben Werte vom Datentyp **Boolean** zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Bestimmen Sie mithilfe der Eigenschaften **BOF** und **EOF**, ob ein **Recordset** -Objekt Datensätze enthält oder ob Sie beim Navigieren in den Datensätzen die Grenzen eines **Recordset** -Objekts überschritten haben.
+Bestimmen Sie mithilfe der Eigenschaften **BOF** und **EOF**, ob ein **Recordset**-Objekt Datensätze enthält oder ob Sie beim Navigieren in den Datensätzen die Grenzen eines **Recordset**-Objekts überschritten haben.
 
-Die **BOF** -Eigenschaft gibt **True** (-1) zurück, falls sich die aktuelle Datensatzposition vor dem ersten Datensatz befindet, und **False** (0), falls sich die aktuelle Datensatzposition im oder nach dem ersten Datensatz befindet.
+Die **BOF**-Eigenschaft gibt **True** (-1) zurück, falls sich die aktuelle Datensatzposition vor dem ersten Datensatz befindet, und **False** (0), falls sich die aktuelle Datensatzposition im oder nach dem ersten Datensatz befindet.
 
-Die **EOF** -Eigenschaft gibt **True** zurück, falls sich die aktuelle Datensatzposition nach dem letzten Datensatz befindet, und **False**, falls sich die aktuelle Datensatzposition im oder vor dem letzten Datensatz befindet.
+Die **EOF**-Eigenschaft gibt **True** zurück, falls sich die aktuelle Datensatzposition nach dem letzten Datensatz befindet, und **False**, falls sich die aktuelle Datensatzposition im oder vor dem letzten Datensatz befindet.
 
-Wenn die **BOF** - oder die **EOF** -Eigenschaft **True** ist, gibt es keinen aktuellen Datensatz.
+Wenn die **BOF**- oder die **EOF**-Eigenschaft **True** ist, gibt es keinen aktuellen Datensatz.
 
 Wenn Sie ein **Recordset**-Objekt öffnen, das keine Datensätze enthält, werden die Eigenschaften **BOF** und **EOF** auf **True** festgelegt (weitere Informationen zu diesem Status eines **Recordset**-Objekts finden Sie unter der [RecordCount](recordcount-property-ado.md)-Eigenschaft). Wenn Sie ein **Recordset**-Objekt öffnen, das mindestens einen Datensatz enthält, ist der erste Datensatz der aktuelle Datensatz, und die Eigenschaften **BOF** und **EOF** sind **False**.
 
-Wenn Sie den letzten verbleibenden Datensatz im **Recordset** -Objekt löschen, bleiben die Eigenschaften **BOF** und **EOF** so lange **False**, bis Sie versuchen, den aktuellen Datensatz neu zu positionieren.
+Wenn Sie den letzten verbleibenden Datensatz im **Recordset**-Objekt löschen, bleiben die Eigenschaften **BOF** und **EOF** so lange **False**, bis Sie versuchen, den aktuellen Datensatz neu zu positionieren.
 
-In dieser Tabelle ist dargestellt, welche **Move** -Methoden für verschiedene Kombinationen der Eigenschaften **BOF** und **EOF** zulässig sind.
+In dieser Tabelle ist dargestellt, welche **Move**-Methoden für verschiedene Kombinationen der Eigenschaften **BOF** und **EOF** zulässig sind.
 
 <table>
 <colgroup>
@@ -54,30 +54,30 @@ In dieser Tabelle ist dargestellt, welche **Move** -Methoden für verschiedene K
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst,<br />
+<th><p>MoveFirst<br />
 MoveLast</p></th>
-<th><p>MovePrevious,<br />
-Verschieben von &lt; 0</p></th>
+<th><p>MovePrevious<br />
+Verschieben &lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext,<br />
-Verschieben von &gt; 0</p></th>
+<th><p>MoveNext<br />
+Verschieben &gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = "true"</strong><br />
-<strong>EOF = False</strong></p></td>
-<td><p>Zulässig</p></td>
+<td><p><strong>BOF = true,</strong><br />
+<strong>EOF = false</strong></p></td>
+<td><p>Allowed</p></td>
 <td><p>Fehler</p></td>
 <td><p>Fehler</p></td>
-<td><p>Zulässig</p></td>
+<td><p>Allowed</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = "false"</strong><br />
-<strong>EOF = True</strong></p></td>
+<td><p><strong>BOF = false,</strong><br />
+<strong>EOF = true</strong></p></td>
 <td><p>Zulässig</p></td>
-<td><p>Zulässig</p></td>
+<td><p>Allowed</p></td>
 <td><p>Fehler</p></td>
 <td><p>Fehler</p></td>
 </tr>
@@ -93,15 +93,15 @@ Verschieben von &gt; 0</p></th>
 <td><p>Zulässig</p></td>
 <td><p>Zulässig</p></td>
 <td><p>Zulässig</p></td>
-<td><p>Zulässig</p></td>
+<td><p>Allowed</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Das Zulassen einer **Move** -Methode garantiert nicht, dass die Methode einen Datensatz erfolgreich findet. Es bedeutet nur, dass beim Aufrufen der angegebenen **Move** -Methode kein Fehler generiert wird.
+Das Zulassen einer **Move**-Methode garantiert nicht, dass die Methode einen Datensatz erfolgreich findet. Es bedeutet nur, dass beim Aufrufen der angegebenen **Move**-Methode kein Fehler generiert wird.
 
-Die folgende Tabelle zeigt, was mit den Einstellungen der Eigenschaften **BOF** und **EOF** passiert, wenn Sie verschiedene **Move** -Methoden aufrufen, einen Datensatz aber nicht finden können.
+Die folgende Tabelle zeigt, was mit den Einstellungen der Eigenschaften **BOF** und **EOF** passiert, wenn Sie verschiedene **Move**-Methoden aufrufen, einen Datensatz aber nicht finden können.
 
 <table>
 <colgroup>
@@ -119,8 +119,8 @@ Die folgende Tabelle zeigt, was mit den Einstellungen der Eigenschaften **BOF** 
 <tbody>
 <tr class="odd">
 <td><p><strong>MoveFirst</strong>, <strong>MoveLast</strong></p></td>
-<td><p>Auf <strong>True</strong> festgelegt</p></td>
-<td><p>Auf <strong>True</strong> festgelegt</p></td>
+<td><p>Festgelegt auf <strong>True</strong></p></td>
+<td><p>Festgelegt auf <strong>True</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Move</strong> 0</p></td>
@@ -128,12 +128,12 @@ Die folgende Tabelle zeigt, was mit den Einstellungen der Eigenschaften **BOF** 
 <td><p>Keine Änderung</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>MovePrevious</strong>, <strong>Verschieben Sie</strong> &lt; 0</p></td>
+<td><p><strong>MovePrevious</strong>, <strong>Move</strong> &lt; 0</p></td>
 <td><p>Festgelegt auf <strong>True</strong></p></td>
 <td><p>Keine Änderung</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>MoveNext</strong>, <strong>Verschieben Sie</strong> &gt; 0</p></td>
+<td><p><strong>MoveNext</strong>, <strong>Move</strong> &gt; 0</p></td>
 <td><p>Keine Änderung</p></td>
 <td><p>Festgelegt auf <strong>True</strong></p></td>
 </tr>

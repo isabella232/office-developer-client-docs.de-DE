@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6b875e2b5dff6f3b6927e73105b6732dfaa6fd0b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295443"
 ---
 # <a name="count-property-example-vj"></a>Count-Eigenschaft (Beispiel) (VJ++)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Dieses Beispiel veranschaulicht die [Count](count-property-ado.md) -Eigenschaft mit zwei Sammlungen in der ***Employees*** -Datenbank. Die Eigenschaft ruft die Anzahl der Objekte in der Auflistung ab und legt den oberen Grenzwert für Schleifen, die diese Auflistungen aufgezählt werden. Eine andere Möglichkeit, diese Auflistungen aufgezählt werden ohne Verwendung der **Count** -Eigenschaft wäre Anweisungen verwenden.
+In diesem Beispiel wird die [count](count-property-ado.md) -Eigenschaft mit zwei Auflistungen in der ***Employees*** -Datenbank veranschaulicht. Die-Eigenschaft ruft die Anzahl der Objekte in jeder Auflistung ab und legt die obere Grenze für Schleifen fest, die diese Auflistungen auflisten. Eine andere Möglichkeit zum Aufzählen dieser Auflistungen ohne Verwendung der **count** -Eigenschaft wäre das Verwenden von Anweisungen.
 
 ```java 
  

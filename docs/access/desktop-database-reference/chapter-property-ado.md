@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b4f4efc2ffab9f7996b2d805658b985badbaf87e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296395"
 ---
 # <a name="chapter-property-ado"></a>Chapter-Eigenschaft (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
  
-Ein **Chapter**-OLE DB-Objekt wird aus einem **ADORecordsetConstruction**-Objekt abgerufen oder für dieses festgelegt. Bei Verwendung **platzieren\_Kapitel** , um das **Kapitel** -Objekt festzulegen, eine Teilmenge von Zeilen in ein ADO- **Recordset** -Objekt aktiviert ist. Hierdurch wird das aktuelle Kapitel des **Rowset** -Objekt. Lese-/Schreibzugriff.
+Gets or sets an OLE DB **Chapter** object from/on an **ADORecordsetConstruction** object. Wenn Sie das **Chapter** -Objekt mithilfe von " **\_Chapter** " festlegen, wird eine Teilmenge von Zeilen in ein ADO- **Recordset** -Objekt umgewandelt. This sets the current chapter of the **Rowset** object. Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-HRESULT Get\_Kapitel (\[out Retval\] lang\* PlChapter);
+HRESULT get\_Chapter (\[Out, retval\] Long\* plChapter);
 
-Platzieren Sie HRESULT\_Kapitel (\[in\] lang lChapter);
+HRESULT put\_Chapter (\[in\] Long lChapter);
 
 ## <a name="parameters"></a>Parameter
 
@@ -35,7 +35,7 @@ Platzieren Sie HRESULT\_Kapitel (\[in\] lang lChapter);
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Diese Eigenschaftsmethode gibt die HRESULT-Standardwerte, einschließlich S\_OK und E\_fehl.
+Diese Property-Methode gibt die standardmäßigen HRESULT-\_Werte zurück,\_einschließlich S OK und e Fail.
 
 ## <a name="applies-to"></a>Betrifft
 

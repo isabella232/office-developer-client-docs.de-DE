@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f892349d2ddb9c8fc5063d3fbec37ca9ef0d469f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292482"
 ---
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter- und RecordCount-Eigenschaft (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird ein **Recordset-Objekt** in der Tabelle Publishers in der ***Pubs*** -Datenbank zu öffnen. Anschließend wird die [Filter](filter-property-ado.md) -Eigenschaft zur Begrenzung der Anzahl von sichtbaren Datensätze auf die Verleger in einem bestimmten Land/Region. Die **RecordCount** -Eigenschaft wird verwendet, um die Differenz zwischen der gefilterten und ungefilterten Recordsets anzeigen.
+In diesem Beispiel wird ein **Recordset** -Objekt in der Publishers-Tabelle in der ***Pubs*** -Datenbank geöffnet. It then uses the [Filter](filter-property-ado.md) property to limit the number of visible records to those publishers in a particular country/region. The **RecordCount** property is used to show the difference between the filtered and unfiltered recordsets.
 
 ```vb 
  

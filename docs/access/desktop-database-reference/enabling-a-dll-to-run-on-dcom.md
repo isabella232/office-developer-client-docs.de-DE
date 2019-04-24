@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b97f4e8050cf293621c7b7fc79437c89171d86fc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293546"
 ---
 # <a name="enabling-a-dll-to-run-on-dcom"></a>Aktivieren einer DLL zur Ausführung auf DCOM
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die folgenden Schritte beschreiben, wie eine Business-Objekt Dynamic Link Libraries DCOM und Microsoft Internet Informationen Services (HTTP) über Komponentendienste verwenden aktivieren.
+In den folgenden Schritten wird beschrieben, wie Sie mit den Dynamic-Link-Bibliotheken von Business-Objekten sowohl DCOM als auch Microsoft Internet Information Services (HTTP) über Komponentendienste verwenden können.
 
 1.  Erstellen Sie ein neues leeres Paket im MMC-Snap-In Komponentendienste. Mit dem MMC-Snap-In Komponentendienste erstellen Sie ein Paket und fügen dem Paket die DLL hinzu. Dadurch kann auf die DLL über DCOM zugegriffen werden, aber nicht mehr über IIS. (Wenn Sie die Registrierung für die DLL überprüfen, stellen Sie fest, dass der **Inproc** -Schlüssel jetzt leer ist. Durch Festlegen des Aktivierungsattributs wird dem **Inproc** -Schlüssel ein Wert hinzugefügt. Dies wird weiter unten in diesem Thema erläutert.)
 

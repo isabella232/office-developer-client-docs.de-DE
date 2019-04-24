@@ -1,5 +1,5 @@
 ---
-title: DBEngine.Idle-Methode (DAO)
+title: DbEngine. Idle-Methode (DAO)
 TOCTitle: Idle Method
 ms:assetid: c90b565e-626e-139d-102a-0386601ce0c8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823202(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7a84e3cc4b35886a12b2e6b4cf92b7483fea293a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294330"
 ---
-# <a name="dbengineidle-method-dao"></a>DBEngine.Idle-Methode (DAO)
+# <a name="dbengineidle-method-dao"></a>DbEngine. Idle-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Unterbricht die Datenverarbeitung und ermöglicht es dem Microsoft Access-Datenbankmodul, anstehende Aufgaben auszuführen, z. B. Speicheroptimierung oder Timeouts von Seiten (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Idle (***Aktion***)
+*Ausdruck* . Leerlauf (***Aktion***)
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
@@ -42,7 +42,7 @@ Unterbricht die Datenverarbeitung und ermöglicht es dem Microsoft Access-Datenb
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -52,7 +52,7 @@ Unterbricht die Datenverarbeitung und ermöglicht es dem Microsoft Access-Datenb
 <td><p><em>Action</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Gibt die auszuführende Aktion an. Kann eine der <strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong>-Konstanten sein.</p></td>
+<td><p>Gibt die auszuführende Aktion an. Dies kann eine der <strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong> -Konstanten sein.</p></td>
 </tr>
 </tbody>
 </table>
@@ -62,7 +62,7 @@ Unterbricht die Datenverarbeitung und ermöglicht es dem Microsoft Access-Datenb
 
 Mit der **Idle**-Methode kann das Microsoft Access-Datenbankmodul Hintergrundaufgaben ausführen, die wegen der umfangreichen Datenverarbeitung möglicherweise nicht mehr aktuell sind. Dies kommt oft in Multitaskingumgebungen mit mehreren Benutzern vor, in denen die Hintergrundverarbeitungszeit nicht ausreicht, um alls Datensätze in einem **[Recordset](recordset-object-dao.md)** auf dem aktuellen Stand zu halten.
 
-In der Regel dürfen keine anderen Aktionen ausgeführt werden (einschließlich Bewegungen des Mauszeigers), damit Lesesperren entfernt und Daten in lokalen Recordset-Objekten vom Typ Dynaset aktualisiert werden können. Wenn Sie regelmäßig die Idle-Methode verwenden, kann das Microsoft Access-Datenbankmodul die Hintergrundverarbeitung durch das Freigeben von unnötigen Lesesperren beschleunigen.
+Usually, read locks are removed and data in local dynaset-type **Recordset** objects are updated only when no other actions (including mouse movements) occur. If you periodically use the **Idle** method, the Microsoft Access database engine can catch up on background processing tasks by releasing unneeded read locks.
 
 Durch Angabe des optionalen Arguments **dbRefreshCache** wird der Speicher nur mit den aktuellsten Daten aus der Datenbank aktualisiert.
 
@@ -74,7 +74,7 @@ Sie müssen diese Methode nur dann in Einzelbenutzerumgebungen anrwenden, wenn m
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die Idle-Methode verwendet, um sicherzustellen, dass eine Ausgabeprozedur auf die aktuellsten Daten zugreift, die in der Datenbank verfügbar sind. Zum Ausführen dieses Vorgangs ist die IdleOutput-Prozedur erforderlich.
+This example uses the **Idle** method to ensure that an output procedure is accessing the most current data available from the database. The IdleOutput procedure is required for this procedure to run.
 
 ```vb 
 Sub IdleX() 

@@ -1,5 +1,5 @@
 ---
-title: DBEngine.RegisterDatabase-Methode (DAO)
+title: DbEngine. RegisterDatabase-Methode (DAO)
 TOCTitle: RegisterDatabase Method
 ms:assetid: ed87a694-2c89-0a78-5d8b-0cc7e09fadff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836347(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 632f6e10d79d74dfef295b34a52ce62f1690101b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294225"
 ---
-# <a name="dbengineregisterdatabase-method-dao"></a>DBEngine.RegisterDatabase-Methode (DAO)
+# <a name="dbengineregisterdatabase-method-dao"></a>DbEngine. RegisterDatabase-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt Verbindungsinformationen für eine ODBC-Datenquelle in die Windows-Registrierung ein. Der ODBC-Treiber benötigt Verbindungsinformationen, wenn die ODBC-Datenquelle während einer Sitzung geöffnet wird.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . RegisterDatabase (***Dsn***, ***Treiber***, ***Automatische***, ***Attribute***)
+*Ausdruck* . RegisterDatabase (***DSN***, ***Treiber***, ***Silent***, ***Attribute***)
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
@@ -42,7 +42,7 @@ Gibt Verbindungsinformationen für eine ODBC-Datenquelle in die Windows-Registri
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -52,7 +52,7 @@ Gibt Verbindungsinformationen für eine ODBC-Datenquelle in die Windows-Registri
 <td><p><em>DSN</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>Der in der <strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong>-Methode verwendete Name. Er verweist auf einen Block mit beschreibenden Informationen zur Datenquelle. Ist die Datenquelle beispielsweise eine ODBC-Remote-Datenquelle, könnte diese der Name des Servers sein.</p></td>
+<td><p>der Name, der in <strong><a href="dbengine-opendatabase-method-dao.md"></a></strong> der OpenDatabase-Methode verwendet wird. Er verweist auf einen Block mit beschreibenden Informationen zur Datenquelle. Ist die Datenquelle beispielsweise eine ODBC-Remote-Datenquelle, könnte diese der Name des Servers sein.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Driver</em></p></td>
@@ -64,10 +64,10 @@ Gibt Verbindungsinformationen für eine ODBC-Datenquelle in die Windows-Registri
 <td><p><em>Automatische</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Boolean</strong></p></td>
-<td><p><strong>True,</strong> Wenn Sie nicht möchten, um die ODBC-Treiber-Dialogfelder anzuzeigen, die Treiber-spezifische Informationen aufgefordert. oder <strong>False,</strong> Wenn Sie die ODBC-Treiber Dialogfelder anzeigen möchten. Wenn im Hintergrund ist <strong>True</strong>, Attribute müssen alle erforderliche Treiber-spezifische Informationen enthalten oder die Dialogfelder trotzdem angezeigt.</p></td>
+<td><p><strong>True</strong> , wenn Sie nicht möchten, dass die Dialogfelder ODBC-Treiber angezeigt werden, die für treiberspezifische Informationen aufgefordert werden; oder <strong>false</strong> , wenn die Dialogfelder ODBC-Treiber angezeigt werden sollen. Wenn Silent auf <strong>true</strong>festgelegt ist, müssen Attribute alle erforderlichen treiberspezifischen Informationen enthalten, oder die Dialogfelder werden trotzdem angezeigt.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Attribute</em></p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Eine Liste der Schlüsselwörter, die zur Windows-Registrierung hinzugefügt werden sollen. Die Schlüsselwörter sind in Zeichenfolgen enthalten, die durch Wagenrücklaufzeichen getrennt sind.</p></td>
