@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 79d4bcb9547cdfd9b72dda71c8591a1ad009890b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295345"
 ---
-# <a name="createrecordset-method-example-vb"></a><span data-ttu-id="28d80-102">CreateRecordset-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="28d80-102">CreateRecordset method example (VB)</span></span>
+# <a name="createrecordset-method-example-vb"></a><span data-ttu-id="9cb13-102">CreateRecordset-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="9cb13-102">CreateRecordset method example (VB)</span></span>
 
 
-<span data-ttu-id="28d80-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="28d80-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9cb13-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9cb13-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="28d80-p101">Sie können ein [Recordset](recordset-object-ado.md)-Objekt erstellen und die Spalteninformationen angeben. Anschließend können Sie Daten in das **Recordset** -Objekt einfügen. Die eingefügten Daten werden im zugrunde liegenden Rowset zwischengespeichert.</span><span class="sxs-lookup"><span data-stu-id="28d80-p101">You can create a [Recordset](recordset-object-ado.md) object and specify the column information. You can then insert data into the **Recordset** object; the underlying rowset buffers the inserts.</span></span>
+<span data-ttu-id="9cb13-p101">Sie können ein [Recordset](recordset-object-ado.md)-Objekt erstellen und die Spalteninformationen angeben. Anschließend können Sie Daten in das **Recordset** -Objekt einfügen. Die eingefügten Daten werden im zugrunde liegenden Rowset zwischengespeichert.</span><span class="sxs-lookup"><span data-stu-id="9cb13-p101">You can create a [Recordset](recordset-object-ado.md) object and specify the column information. You can then insert data into the **Recordset** object; the underlying rowset buffers the inserts.</span></span>
 
-<span data-ttu-id="28d80-p102">Im folgenden Codebeispiel wird veranschaulicht, wie ein **Recordset** -Objekt mithilfe des [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekts definiert wird. Dies kann auch mit dem [RDS.DataControl](datacontrol-object-rds.md)-Objekt durchgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="28d80-p102">The following code example shows how to define a **Recordset** by using the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. You can also do this with the [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
+<span data-ttu-id="9cb13-p102">Im folgenden Codebeispiel wird veranschaulicht, wie ein **Recordset** -Objekt mithilfe des [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekts definiert wird. Dies kann auch mit dem [RDS.DataControl](datacontrol-object-rds.md)-Objekt durchgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="9cb13-p102">The following code example shows how to define a **Recordset** by using the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. You can also do this with the [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
 
 ```vb 
  

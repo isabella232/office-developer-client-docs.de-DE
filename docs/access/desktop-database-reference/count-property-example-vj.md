@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6b875e2b5dff6f3b6927e73105b6732dfaa6fd0b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295443"
 ---
-# <a name="count-property-example-vj"></a><span data-ttu-id="4db91-102">Count-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="4db91-102">Count property example (VJ++)</span></span>
+# <a name="count-property-example-vj"></a><span data-ttu-id="37f4b-102">Count-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="37f4b-102">Count property example (VJ++)</span></span>
 
 
-<span data-ttu-id="4db91-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4db91-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="37f4b-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="37f4b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4db91-104">Dieses Beispiel veranschaulicht die [Count](count-property-ado.md) -Eigenschaft mit zwei Sammlungen in der ***Employees*** -Datenbank.</span><span class="sxs-lookup"><span data-stu-id="4db91-104">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employees*** database.</span></span> <span data-ttu-id="4db91-105">Die Eigenschaft ruft die Anzahl der Objekte in der Auflistung ab und legt den oberen Grenzwert für Schleifen, die diese Auflistungen aufgezählt werden.</span><span class="sxs-lookup"><span data-stu-id="4db91-105">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="4db91-106">Eine andere Möglichkeit, diese Auflistungen aufgezählt werden ohne Verwendung der **Count** -Eigenschaft wäre Anweisungen verwenden.</span><span class="sxs-lookup"><span data-stu-id="4db91-106">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
+<span data-ttu-id="37f4b-104">In diesem Beispiel wird die [count](count-property-ado.md) -Eigenschaft mit zwei Auflistungen in der ***Employees*** -Datenbank veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="37f4b-104">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employees*** database.</span></span> <span data-ttu-id="37f4b-105">Die-Eigenschaft ruft die Anzahl der Objekte in jeder Auflistung ab und legt die obere Grenze für Schleifen fest, die diese Auflistungen auflisten.</span><span class="sxs-lookup"><span data-stu-id="37f4b-105">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="37f4b-106">Eine andere Möglichkeit zum Aufzählen dieser Auflistungen ohne Verwendung der **count** -Eigenschaft wäre das Verwenden von Anweisungen.</span><span class="sxs-lookup"><span data-stu-id="37f4b-106">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
 
 ```java 
  

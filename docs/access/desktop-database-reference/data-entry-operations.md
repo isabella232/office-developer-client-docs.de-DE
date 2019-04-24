@@ -1,5 +1,5 @@
 ---
-title: Dateneingabe
+title: Dateneingabevorgänge
 TOCTitle: Data Entry operations
 ms:assetid: fb8b4ffe-affa-432c-9ba4-a6b1bc42a58b
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn180201(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 11b7a4c30ee2da4f047f74de31ac1d17c6adeaf8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295100"
 ---
-# <a name="data-entry-operations"></a><span data-ttu-id="afbd9-102">Dateneingabe</span><span class="sxs-lookup"><span data-stu-id="afbd9-102">Data Entry operations</span></span>
+# <a name="data-entry-operations"></a><span data-ttu-id="5a36c-102">Dateneingabevorgänge</span><span class="sxs-lookup"><span data-stu-id="5a36c-102">Data Entry operations</span></span>
 
-<span data-ttu-id="afbd9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="afbd9-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5a36c-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5a36c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="afbd9-104">DatensatzLöschen-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="afbd9-104">DeleteRecord macro action</span></span>](deleterecord-macro-action.md)
+- [<span data-ttu-id="5a36c-104">DeleteRecord-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="5a36c-104">DeleteRecord macro action</span></span>](deleterecord-macro-action.md)
 

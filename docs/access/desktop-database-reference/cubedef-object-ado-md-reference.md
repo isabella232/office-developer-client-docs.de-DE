@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f8115ef48423a51ae044e7832e3d429f8ebb5e11
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295331"
 ---
-# <a name="cubedef-object-ado-md-reference"></a><span data-ttu-id="ca46e-102">CubeDef-Objekt (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="ca46e-102">CubeDef object (ADO MD reference)</span></span>
+# <a name="cubedef-object-ado-md-reference"></a><span data-ttu-id="bc370-102">CubeDef-Objekt (ADO MD-Referenz)</span><span class="sxs-lookup"><span data-stu-id="bc370-102">CubeDef object (ADO MD reference)</span></span>
 
-<span data-ttu-id="ca46e-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ca46e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="bc370-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="bc370-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="ca46e-104">CubeDef-Objekt (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="ca46e-104">CubeDef object (ADO MD)</span></span>](cubedef-object-ado-md.md)
-- [<span data-ttu-id="ca46e-105">CubeDef-Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="ca46e-105">CubeDef properties, methods, and events (ADO MD)</span></span>](cubedef-properties-methods-and-events-ado-md.md)
+- [<span data-ttu-id="bc370-104">CubeDef-Objekt (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="bc370-104">CubeDef object (ADO MD)</span></span>](cubedef-object-ado-md.md)
+- [<span data-ttu-id="bc370-105">CubeDef-Eigenschaften,-Methoden und-Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="bc370-105">CubeDef properties, methods, and events (ADO MD)</span></span>](cubedef-properties-methods-and-events-ado-md.md)
 

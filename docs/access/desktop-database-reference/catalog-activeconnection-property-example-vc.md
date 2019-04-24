@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8839d436359a9d08c3ec1d31b1187d74701daac9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296598"
 ---
-# <a name="catalog-activeconnection-property-example-vc"></a><span data-ttu-id="4cd45-102">ActiveConnection-Eigenschaft (Catalog) (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="4cd45-102">Catalog ActiveConnection property example (VC++)</span></span>
+# <a name="catalog-activeconnection-property-example-vc"></a><span data-ttu-id="ccaa3-102">ActiveConnection-Eigenschaft (Catalog) (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="ccaa3-102">Catalog ActiveConnection property example (VC++)</span></span>
 
 
-<span data-ttu-id="4cd45-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4cd45-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="ccaa3-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ccaa3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4cd45-p101">Durch das Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Einstellung auf eine gültige, offene Verbindung wird der Katalog geöffnet. Über einen geöffneten Katalog können Sie auf die Schemaobjekte zugreifen, die in dem jeweiligen Katalog enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="4cd45-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to a valid, open connection "opens" the catalog. From an open catalog, you can access the schema objects contained within that catalog.</span></span>
+<span data-ttu-id="ccaa3-p101">Durch das Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Einstellung auf eine gültige, offene Verbindung wird der Katalog geöffnet. Über einen geöffneten Katalog können Sie auf die Schemaobjekte zugreifen, die in dem jeweiligen Katalog enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="ccaa3-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to a valid, open connection "opens" the catalog. From an open catalog, you can access the schema objects contained within that catalog.</span></span>
 
 ```cpp 
  

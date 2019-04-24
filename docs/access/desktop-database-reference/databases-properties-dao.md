@@ -1,5 +1,5 @@
 ---
-title: Datenbank-Eigenschaften (DAO)
+title: DataBases-Eigenschaften (DAO)
 TOCTitle: Properties
 ms:assetid: 724b5522-3cc5-4135-8d4f-23c254b44fe9
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn160984(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: bda43af87819a20e9765183747e9cf357c114f4e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294600"
 ---
-# <a name="databases-properties-dao"></a><span data-ttu-id="520aa-102">Datenbank-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="520aa-102">Databases properties (DAO)</span></span>
+# <a name="databases-properties-dao"></a><span data-ttu-id="52d14-102">DataBases-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="52d14-102">Databases properties (DAO)</span></span>
 
-<span data-ttu-id="520aa-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="520aa-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="52d14-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="52d14-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="520aa-104">Databases.Count-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="520aa-104">Databases.Count property (DAO)</span></span>](databases-count-property-dao.md)
+- [<span data-ttu-id="52d14-104">DataBases. Count-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="52d14-104">Databases.Count property (DAO)</span></span>](databases-count-property-dao.md)
 

@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7e18bb9ecb65e2664b082d5305196386c536b716
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296108"
 ---
-# <a name="comment-macro-statement"></a><span data-ttu-id="5a552-102">Kommentar-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="5a552-102">Comment macro statement</span></span>
+# <a name="comment-macro-statement"></a><span data-ttu-id="26a49-102">Kommentar-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="26a49-102">Comment macro statement</span></span>
 
 
-<span data-ttu-id="5a552-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5a552-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="26a49-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="26a49-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5a552-104">Die **Kommentar** -Anweisung kann zum Einfügen erläuternder Hinweise in einem Makro verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="5a552-104">The **Comment** statement can be used to provide explanatory remarks in a macro.</span></span>
+<span data-ttu-id="26a49-104">Die **Kommentar**-Anweisung kann zum Einfügen erläuternder Hinweise in einem Makro verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="26a49-104">The **Comment** statement can be used to provide explanatory remarks in a macro.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="5a552-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="5a552-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="26a49-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="26a49-105">Remarks</span></span>
 
-<span data-ttu-id="5a552-p101">Ein **Kommentar** kann eine Länge von bis zu 1000 Zeichen aufweisen. Standardmäßig wird jedoch nur die erste Zeile des Kommentars angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5a552-p101">A **Comment** may be up to 1000 characters in length. However, by default, only the first line of the comment is displayed.</span></span>
+<span data-ttu-id="26a49-p101">Ein **Kommentar** kann eine Länge von bis zu 1000 Zeichen aufweisen. Standardmäßig wird jedoch nur die erste Zeile des Kommentars angezeigt.</span><span class="sxs-lookup"><span data-stu-id="26a49-p101">A **Comment** may be up to 1000 characters in length. However, by default, only the first line of the comment is displayed.</span></span>
 
