@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c8f212c5e1f10f4270987c9453802575d88cebfa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292951"
 ---
 # <a name="fieldtype-property-dao"></a>Field.Type-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt einen solchen Wert zurück. Lese-/Schreibzugriff **Integer**.
+Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. **Ganze Zahl** mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Typ
+*expression* .Type
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Einstellungs- oder Rückgabewert ist eine Konstante, die einen Funktions- oder Datentyp angibt. Für ein **Field** -Objekt besteht für diese Eigenschaft Lese-/Schreibzugriff, bis das Objekt an eine Auflistung oder ein anderes Objekt angefügt wird; anschließend ist sie schreibgeschützt.
 
@@ -55,7 +55,7 @@ Die möglichen Einstellungs- und Rückgabewerte für ein **Field** -Objekt werde
 </tr>
 <tr class="odd">
 <td><p><strong>dbBoolean</strong></p></td>
-<td><p>Boolescher Wert</p></td>
+<td><p>Boolesch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbByte</strong></p></td>
@@ -63,7 +63,7 @@ Die möglichen Einstellungs- und Rückgabewerte für ein **Field** -Objekt werde
 </tr>
 <tr class="odd">
 <td><p><strong>dbChar</strong></p></td>
-<td><p>Zeichen</p></td>
+<td><p>Char</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbCurrency</strong></p></td>
@@ -75,15 +75,15 @@ Die möglichen Einstellungs- und Rückgabewerte für ein **Field** -Objekt werde
 </tr>
 <tr class="even">
 <td><p><strong>dbDecimal</strong></p></td>
-<td><p>Dezimal</p></td>
+<td><p>Decimal</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbDouble</strong></p></td>
-<td><p>Double</p></td>
+<td><p>Gleitkommawert mit doppelter Genauigkeit</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbFloat</strong></p></td>
-<td><p>Gleitkomma</p></td>
+<td><p>Gleitkommazahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbGUID</strong></p></td>
@@ -91,7 +91,7 @@ Die möglichen Einstellungs- und Rückgabewerte für ein **Field** -Objekt werde
 </tr>
 <tr class="even">
 <td><p><strong>dbInteger</strong></p></td>
-<td><p>Integer</p></td>
+<td><p>Ganze Zahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLong</strong></p></td>
@@ -102,12 +102,12 @@ Die möglichen Einstellungs- und Rückgabewerte für ein **Field** -Objekt werde
 <td><p>Langer Binärwert (OLE-Objekt)</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Wert dbMemo</strong></p></td>
+<td><p><strong>dbMemo</strong></p></td>
 <td><p>Memo</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbNumeric</strong></p></td>
-<td><p>Numerisch</p></td>
+<td><p>Numeric</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSingle</strong></p></td>
@@ -118,8 +118,8 @@ Die möglichen Einstellungs- und Rückgabewerte für ein **Field** -Objekt werde
 <td><p>Text</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Zeitpunkt</strong></p></td>
-<td><p>Zeit</p></td>
+<td><p><strong>dbTime</strong></p></td>
+<td><p>Time</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbTimeStamp</strong></p></td>

@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 79c8691fcea7cf04bac7d6cd05711730b510e215
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300644"
 ---
 # <a name="recordsetaddnew-method-dao"></a>Recordset.AddNew-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Erstellt einen neuen Datensatz für ein aktualisierbares **[Recordset](recordset-object-dao.md)** -Objekt.
+Erstellt einen neuen Datensatz für ein aktualisierbares **[Recordset](recordset-object-dao.md)**-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . AddNew
+*expression* .AddNew
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -37,10 +37,10 @@ Verwenden Sie die **AddNew**-Methode, um einen neuen Datensatz im **Recordset**-
 Verwenden Sie nach dem Ändern des neuen Datensatzes die **[Update](recordset-update-method-dao.md)** -Methode, um die Änderungen zu speichern und den Datensatz zum **Recordset** hinzuzufügen. In der Datenbank treten Änderungen erst dann auf, wenn Sie die **Update** -Methode verwenden.
 
 > [!NOTE]
-> [!HINWEIS] Wenn Sie **AddNew** ausgeben und dann einen Vorgang ausführen, der ohne Verwenden von **Update** zu einem anderen Datensatz springt, gehen Ihre Änderungen ohne Warnung verloren, Wenn Sie das **Recordset** schließen oder das Verfahren beenden, das das **Recordset** oder sein **[Datenbankobjekt](database-object-dao.md)** deklariert, wird der neue Datensatz ohne Warnung verworfen.
+> Wenn Sie **AddNew** ausgeben und dann einen Vorgang ausführen, der ohne Verwenden von **Update** zu einem anderen Datensatz springt, gehen Ihre Änderungen ohne Warnung verloren, Wenn Sie das **Recordset** schließen oder das Verfahren beenden, das das **Recordset** oder sein **[Datenbankobjekt](database-object-dao.md)** deklariert, wird der neue Datensatz ohne Warnung verworfen.
 
 > [!NOTE]
-> [!HINWEIS] Wenn Sie **AddNew** in einem Microsoft Access-Arbeitsbereich verwenden und das Datenbankmodul eine neue Seite für den aktuellen Datensatz erstellen muss, ist Seitensperrung pessimistisch. Wenn der neue Datensatz auf eine vorhandene Seite passt, ist Seitensperrung optimistisch.
+> Wenn Sie **AddNew** in einem Microsoft Access-Arbeitsbereich verwenden und das Datenbankmodul eine neue Seite für den aktuellen Datensatz erstellen muss, ist Seitensperrung pessimistisch. Wenn der neue Datensatz auf eine vorhandene Seite passt, ist Seitensperrung optimistisch.
 
 Wenn Sie noch nicht zum letzten Datensatz Ihres **Recordsets** gesprungen sind, sind Datensätze, die von anderen Prozessen Basistabellen hinzugefügt werden, möglicherweise enthalten, wenn sie nach dem aktuellen Datensatz positioniert sind. Wenn Sie Ihrem eigenen **Recordset** einen Datensatz hinzufügen, wird der Datensatz allerdings im **Recordset** angezeigt und in die zugrunde liegende Tabelle eingeschlossen, wo er für alle neuen **Recordset** -Objekte sichtbar wird.
 
@@ -53,11 +53,11 @@ Die Position des neuen Datensatzes hängt vom **Recordset** -Typ ab:
 Der Datensatz, der aktuell war, bevor Sie **AddNew** verwendet haben, bleibt aktuell. Wenn Sie den neuen Datensatz aktuell machen möchten, können Sie die **[Bookmark](recordset-bookmark-property-dao.md)** -Eigenschaft auf das Bookmark festlegen, das von der **[LastModified](recordset-lastmodified-property-dao.md)** -Eigenschaftseinstellung identifiziert wird.
 
 > [!NOTE]
-> [!HINWEIS] Um einen Datensatz hinzuzufügen, zu bearbeiten oder zu löschen, muss es einen eindeutigen Index im Datensatz in der zugrunde liegenden Datenquelle geben. Andernfalls tritt ein "Berechtigung verweigert"-Fehler im **AddNew** -, **Delete** - oder **Edit** -Methodenaufruf in einem Microsoft Access-Arbeitsbereich auf.
+> Es muss ein eindeutiger Index für den Datensatz in der zugrunde liegenden Datenquelle vorhanden sein, damit der Datensatz hinzugefügt, bearbeitet oder gelöscht werden kann. Andernfalls tritt im Aufruf der Methoden **AddNew**, **Delete** oder **Edit** in einem Microsoft Access-Arbeitsbereich ein Fehler vom Typ "Berechtigung verweigert" auf.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel verwendet die **AddNew** -Methode, um einen neuen Datensatz mit dem angegebenen Namen zu erstellen. Die "AddName"-Funktion ist zum Ausführen dieser Prozedur erforderlich.
+This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.
 
 ```vb
     Sub AddNewX() 

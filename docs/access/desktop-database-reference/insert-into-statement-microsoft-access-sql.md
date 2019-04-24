@@ -12,27 +12,27 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 4fee5e9e8878274f2c20dd83a3dbedaf2903ca62
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291333"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Fügt einen Datensatz oder mehrere Datensätze einer Tabelle hinzu. Dies wird als Anfügeabfrage bezeichnet.
+Fügt einer Tabelle einen oder mehrere Datensätze hinzu. Dies wird als Anfügeabfrage bezeichnet.
 
 ## <a name="syntax"></a>Syntax
 
 ### <a name="multiple-record-append-query"></a>Anfügeabfrage mit mehreren Datensätzen
 
-INSERT INTO *Ziel* \[(*Feld1*\[, *Feld2*\[,... \] \])\] \[IN *externe Datenbank* \] auswählen \[ *Quelle*. \] *Feld1*\[, *Feld2*\[,... \] FROM *Tabellenausdruck]*
+INSERT INTO *target* \[(*field1*\[, *field2*\[, …\]\])\] \[IN *externaldatabase*\] SELECT \[*source*.\]*field1*\[, *field2*\[, …\] FROM *tableexpression*
 
 ### <a name="single-record-append-query"></a>Anfügeabfrage mit einem Datensatz
 
-INSERT INTO *Ziel* \[(*Feld1*\[, *Feld2*\[,... \] \])\] Werte (*Wert1*\[, *Wert2*\[,... \])
+INSERT INTO *target* \[(*field1*\[, *field2*\[, …\]\])\] VALUES (*value1*\[, *value2*\[, …\])
 
 Die INSERT INTO-Anweisung besteht aus folgenden Teilen:
 
@@ -49,24 +49,24 @@ Die INSERT INTO-Anweisung besteht aus folgenden Teilen:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Ziel</em></p></td>
+<td><p><em>target</em></p></td>
 <td><p>Der Name der Tabelle oder Abfrage, an die Datensätze angefügt werden sollen.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Feld1</em>, <em>Feld2</em></p></td>
-<td><p>Namen der Felder, die angefügt werden, wenn ein Argument <em>Ziel</em> folgen, oder die Namen der Felder, die Daten abgerufen werden sollen, wenn ein Argument <em>Quelle</em> folgen.</p></td>
+<td><p>Namen der Felder, an die Daten angehängt werden sollen, falls nach einem <em>target</em>-Argument, oder die Namen von Feldern, aus denen Daten abgerufen werden sollen, falls nach einem <em>source</em>-Argument.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>externeDatenbank</em></p></td>
-<td><p>Der Pfad zu einer externen Datenbank. Eine Beschreibung des Pfads finden Sie unter der <a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN</a>-Klausel.  </p></td>
+<td><p>Ich bin für diese Woche leider bereits ausgebucht. Eine Beschreibung des Pfads finden Sie unter der <a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN</a>-Klausel.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Quelle</em></p></td>
+<td><p><em>source</em></p></td>
 <td><p>Der Name der Tabelle oder Abfrage, aus der Datensätze kopiert werden sollen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Tabellenausdruck</em></p></td>
-<td><p>Die Namen der Tabellen, aus denen Datensätze eingefügt werden. Dieses Argument kann ein einzelner Tabellenname oder eine Kombination aus den Vorgängen <a href="inner-join-operation-microsoft-access-sql.md">INNER JOIN</a>, <a href="left-join-right-join-operations-microsoft-access-sql.md">LEFT JOIN</a> oder <a href="left-join-right-join-operations-microsoft-access-sql.md">RIGHT JOIN</a> oder eine gespeicherte Abfrage sein.  </p></td>
+<td><p>Die Namen der Tabellen, aus denen Datensätze eingefügt werden. Dieses Argument kann ein einzelner Tabellenname oder eine Kombination aus den Vorgängen <a href="inner-join-operation-microsoft-access-sql.md">INNER JOIN</a>, <a href="left-join-right-join-operations-microsoft-access-sql.md">LEFT JOIN</a> oder <a href="left-join-right-join-operations-microsoft-access-sql.md">RIGHT JOIN</a> oder eine gespeicherte Abfrage sein.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Wert1</em>, <em>Wert2</em></p></td>
@@ -80,9 +80,9 @@ Die INSERT INTO-Anweisung besteht aus folgenden Teilen:
 
 Sie können die INSERT INTO-Anweisung verwenden, um einen einzelnen Datensatz einer Tabelle mit der Syntax der Anfügeabfrage für einzelne Datensätze hinzuzufügen. In diesem Fall gibt der Code den Namen und Wert für jedes Feld des Datensatzes an. Sie müssen jedes Feld des Datensatzes angeben, dem ein Wert zugewiesen werden soll, sowie einen Wert für dieses Feld. Wenn Sie nicht alle Felder angeben, wird der Standardwert oder **Null** für fehlende Spalten eingefügt. Datensätze werden am Ende der Tabelle hinzugefügt.
 
-INSERT INTO-Anweisung können Sie auch eine Gruppe von Datensätzen aus einer anderen Tabelle oder Abfrage mithilfe der auswählen anfügen... FROM-Klausel, wie oben dargestellt, in der mehrere Datensätze Append-Abfragesyntax. In diesem Fall gibt die SELECT-Klausel die Felder an die angegebene *Ziel* -Tabelle anfügen.
+Sie können auch INSERT INTO verwenden, um eine Gruppe von Datensätzen aus einer anderen Tabelle oder Abfrage mithilfe der SELECT … FROM-Klausel anzufügen, wie oben in der Syntax zur Anfügeabfrage für mehrere Datensätze gezeigt wird. In diesem Fall gibt die SELECT-Klausel die Felder an, die an die angegebene *target*-Tabelle angefügt werden sollen.
 
-Die *Quell-* oder *Ziel* -Tabelle kann eine Tabelle oder Abfrage angeben. Wenn eine Abfrage angegeben wird, fügt das Microsoft Access-Datenbankmodul Datensätze an alle in der Abfrage angegebenen Tabellen an.
+Die *source*- oder *target*-Tabelle kann eine Tabelle oder Abfrage angeben. Wenn eine Abfrage angegeben wird, fügt das Microsoft Access-Datenbankmodul Datensätze an alle in der Abfrage angegebenen Tabellen an.
 
 INSERT INTO ist optional. Wenn es eingeschlossen wird, steht es aber vor der [SELECT](select-statement-microsoft-access-sql.md)-Anweisung.
 
@@ -100,7 +100,7 @@ Eine Anfügeabfrage kopiert Datensätze aus einer oder mehreren Tabellen in eine
 
 Anstatt vorhandene Datensätze aus einer anderen Tabelle anzufügen, können Sie den Wert für die einzelnen Felder in einem einzigen neuen Datensatz mit der VALUES-Klausel angeben. Wenn Sie die Feldliste auslassen, muss die VALUES-Klausel einen Wert für jedes Feld in der Tabelle enthalten. Andernfalls schlägt der INSERT-Vorgang fehl. Verwenden Sie eine zusätzliche INSERT INTO-Anweisung mit einer VALUES-Klausel für jeden zusätzlichen Datensatz, den Sie erstellen möchten.
 
-**Links bereitgestellt werden, von** der Community [UtterAccess](https://www.utteraccess.com) . UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Links zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
 - [Generieren fortlaufender Nummern für INSERT/UPDATE-Anweisungen](https://www.utteraccess.com/forum/generating-sequential-num-t446039.html)
 

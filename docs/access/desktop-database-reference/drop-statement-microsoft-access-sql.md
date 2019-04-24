@@ -8,26 +8,26 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: f31067c96c19804352ca74957e064f9338b49260
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293651"
 ---
 # <a name="drop-statement-microsoft-access-sql"></a>DROP-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Löscht eine vorhandene Tabelle, Prozedur oder Sicht aus einer Datenbank, oder löscht einen vorhandenen Index aus einer Tabelle.
 
 > [!NOTE]
-> [!HINWEIS] Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der DROP-Anweisung oder anderer DDL-Anweisungen in Kombination mit Datenbanken, die nicht aus dem Microsoft Access-Datenbankmodul stammen. Verwenden Sie stattdessen die **Delete** -Methode für Datenzugriffsobjekte (DAO).
+> Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der DROP-Anweisung oder anderer DDL-Anweisungen in Kombination mit Datenbanken, die nicht aus dem Microsoft Access-Datenbankmodul stammen. Verwenden Sie stattdessen die **Delete**-Methode für Datenzugriffsobjekte (DAO).
 
 ## <a name="syntax"></a>Syntax
 
 DROP {TABLE *Tabelle* | INDEX *Index* ON *Tabelle* | PROCEDURE *Prozedur* | VIEW *Sicht*}
 
-Die DROP-Anweisung besteht aus folgenden Komponenten:
+Die DROP-Anweisung setzt sich wie folgt zusammen:
 
 <table>
 <colgroup>
@@ -36,21 +36,21 @@ Die DROP-Anweisung besteht aus folgenden Komponenten:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Komponente</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>table</em></p></td>
-<td><p>Der Name der zu löschenden Tabelle oder der Tabelle, die den zu löschenden Index enthält.</p></td>
+<td><p><em>Tabelle</em></p></td>
+<td><p>Der Name der zu löschenden Tabelle oder der Tabelle, aus der ein Index gelöscht werden soll.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Prozedur</em></p></td>
 <td><p>Der Name der zu löschenden Prozedur.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>view</em></p></td>
+<td><p><em>Sicht</em></p></td>
 <td><p>Der Name der zu löschenden Sicht.</p></td>
 </tr>
 <tr class="even">
@@ -61,9 +61,9 @@ Die DROP-Anweisung besteht aus folgenden Komponenten:
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Tabelle muss geschlossen werden, bevor ein Index daraus gelöscht oder entfernt werden kann.
+Sie müssen die Tabelle schließen, bevor Sie sie löschen oder einen Index daraus entfernen können.
 
 Sie können auch die [ALTER TABLE](alter-table-statement-microsoft-access-sql.md)-Anweisung verwenden, um einen Index aus einer Tabelle zu löschen.
 
@@ -71,13 +71,9 @@ Die [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisung kan
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird davon ausgegangen, dass der hypothetische NewIndex-Index zur Angabe eines neuen Indexes in der Employees-Tabelle (Personal) in der Datenbank Northwind.mdb (Nordwind.mdb) vorhanden ist. 
+The following example assumes the existence of a hypothetical NewIndex index on the Employees table in the Northwind database.
 
-
-
-Im folgenden Beispiel wird der MyIndex-Index aus der Employees-Tabelle (Personal) gelöscht.
-
-
+This example deletes the index MyIndex from the Employees table.
 
 ```vb
     Sub DropX1() 
@@ -98,9 +94,7 @@ Im folgenden Beispiel wird der MyIndex-Index aus der Employees-Tabelle (Personal
 
 <br/>
 
-Im folgenden Beispiel wird die Employees-Tabelle (Personal) aus der Datenbank gelöscht.
-
-
+This example deletes the Employees table from the database.
 
 ```vb
     Sub DropX2() 

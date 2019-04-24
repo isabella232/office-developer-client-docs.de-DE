@@ -1,5 +1,5 @@
 ---
-title: RecordsetOptionEnum-Auflistung (DAO)
+title: RecordsetOptionEnum-Enumeration (DAO)
 TOCTitle: RecordsetOptionEnum Enumeration
 ms:assetid: 3a9d8664-dcb6-cb60-7cf6-e229eb699ef1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192649(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: b9e2a69f6952feb892de736e7ff3c3ca94e9da64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307182"
 ---
-# <a name="recordsetoptionenum-enumeration-dao"></a>RecordsetOptionEnum-Auflistung (DAO)
+# <a name="recordsetoptionenum-enumeration-dao"></a>RecordsetOptionEnum-Enumeration (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Verwenden Sie die **OpenRecordset** -Methode, um die Merkmale eines neuen **Recordset** -Objekts anzugeben.
+Verwenden Sie die **OpenRecordset**-Methode, um die Merkmale eines neuen **Recordset**-Objekts anzugeben.
 
 <table>
 <colgroup>
@@ -56,7 +56,7 @@ Verwenden Sie die **OpenRecordset** -Methode, um die Merkmale eines neuen **Reco
 <td><p>Verhindert, dass andere Benutzer Recordset-Datensätze ändern.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bei der Ausführung</p></td>
+<td><p>dbExecDirect</p></td>
 <td><p>2048</p></td>
 <td><p>Führt die Abfrage aus, ohne zunächst die SQLPrepare ODBC-Funktion aufzurufen.</p></td>
 </tr>

@@ -14,34 +14,34 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 356620376658bb927c690056f4de9a01554aa47e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295646"
 ---
 # <a name="constraint-clause-microsoft-access-sql"></a>CONSTRAINT-Klausel (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine Einschränkung ähnelt einem Index, obwohl sie auch zur Verknüpfung mit einer anderen Tabelle verwendet werden kann.
 
 Verwenden Sie die CONSTRAINT-Klausel in den [ALTER TABLE](alter-table-statement-microsoft-access-sql.md)- und [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisungen, um Einschränkungen zu erstellen oder zu löschen. Es gibt zwei Arten von CONSTRAINT-Klauseln: eine zum Erstellen einer Einschränkung für ein einzelnes Feld oder zum Erstellen einer Einschränkung für mehrere Felder.
 
 > [!NOTE]
-> [!HINWEIS] Die Datenbank-Engine von Microsoft Access unterstützt CONSTRAINT-Klauseln nicht, genauso wie DDL-Anweisungen mit Datenbank-Engine-Datenbanken, die nicht auf Microsoft Access basieren. Verwenden Sie stattdessen Methoden DAO **Erstellen** .
+> Die Datenbank-Engine von Microsoft Access unterstützt CONSTRAINT-Klauseln nicht, genauso wie DDL-Anweisungen mit Datenbank-Engine-Datenbanken, die nicht auf Microsoft Access basieren. Verwenden Sie stattdessen die **Create**-Methoden von DAO.
 
 ## <a name="syntax"></a>Syntax
 
-### <a name="single-field-constraint"></a>Beschränkung für ein Feld
+### <a name="single-field-constraint"></a>Beschränkung für ein einzelnes Feld
 
-CONSTRAINT *Name* {PRIMARY KEY | EINDEUTIGE | NOT NULL | REFERENCES *Fremdtabelle* \[(*fremdfeld1, fremdfeld2*)\] \[ON UPDATE CASCADE | Legen Sie NULL\] \[ON DELETE CASCADE | Legen Sie NULL\]}
+CONSTRAINT *Name* {PRIMARY KEY | UNIQUE | NOT NULL | REFERENCES *fremde Tabelle* \[(*fremdesFeld1, fremdesFeld2*)\] \[ON UPDATE CASCADE | SET NULL\] \[ON DELETE CASCADE | SET NULL\]}
 
-### <a name="multiple-field-constraint"></a>Beschränkung für mehrere Felder
+### <a name="multiple-field-constraint"></a>Einschränkung für mehrere Felder
 
-CONSTRAINT *Name* {PRIMARY KEY (*primär1*\[, *primär2* \[,... \]\]) | EINDEUTIGE (*eindeutig1*\[, *eindeutig2* \[,... \]\]) | NOT NULL (*nichtnull1*\[, *nichtnull2* \[,... \]\]) | FREMDSCHLÜSSEL \[kein INDEX\] (*Bezug1*\[, *Bezug2* \[,... \] \]) Verweise *Foreigntable* \[(*fremdfeld1* \[, *fremdfeld2* \[,... \] \])\] \[ON UPDATE CASCADE | Legen Sie NULL\] \[ON DELETE CASCADE | Legen Sie NULL\]}
+CONSTRAINT-*Name*{PRIMARY KEY (*Primärschlüssel1*\[, *Primärschlüssel2* \[, …\]\]) |UNIQUE (*EindeutigesFeld1*\[, *EindeutigesFeld2* \[, …\]\]) |NOT NULL (*NichtNULLFeld1*\[, *NichtNULLFeld2* \[, …\]\]) |FOREIGN KEY \[NO INDEX\] (*Bezug1*\[, *Bezug2* \[, …\]\]) REFERENCES *Fremdtabelle* \[(*Fremdfeld1* \[, *Fremdfeld2* \[, …\]\])\] \[ON UPDATE CASCADE | SET NULL\]\[ON DELETE CASCADE | SET NULL\]}
 
-Die CONSTRAINT-Klausel enthält folgende Teile:
+Die CONSTRAINT-Klausel besteht aus diesen Teilen:
 
 <table>
 <colgroup>
@@ -50,67 +50,67 @@ Die CONSTRAINT-Klausel enthält folgende Teile:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Teil</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>name</em></p></td>
-<td><p>Der Name der zu erstellenden Einschränkung.</p></td>
+<td><p>Der Name der Einschränkung, die erstellt werden soll.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>primär1</em>, <em>primär2</em></p></td>
+<td><p><em>Primärschlüssel1</em>, <em>Primärschlüssel2</em></p></td>
 <td><p>Die Namen der Felder, die als Primärschlüssel gekennzeichnet werden sollen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>eindeutig1</em>, <em>eindeutig2</em></p></td>
-<td><p>Die Namen der Felder, die als eindeutiger Schlüssel gekennzeichnet werden sollen.</p></td>
+<td><p><em>EindeutigesFeld1</em>, <em>EindeutigesFeld2</em></p></td>
+<td><p>Der Name des Felds oder der Felder, die als Eindeutiger Schlüssel festgelegt werden.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>nichtNull1, nichtNull2</em></p></td>
-<td><p>Die Namen der Felder, deren Wert nicht Null sein darf.</p></td>
+<td><p><em>NichtNULLFeld1, NichtNULLFeld2</em></p></td>
+<td><p>Der Name des Felds/der Felder, die auf NULL ausschließende Werte eingeschränkt sind.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>ref1</em>, <em>ref2</em></p></td>
+<td><p><em>Bezug1</em>, <em>Bezug2</em></p></td>
 <td><p>Die Namen fremder Felder, die sich auf Felder in anderen Tabellen beziehen.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>fremdeTabelle</em></p></td>
+<td><p><em>Fremdtabelle</em></p></td>
 <td><p>Der Name der fremden Tabelle, in der die Felder <em>fremdesFeld</em> enthalten sind.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>fremdesFeld1</em>, <em>fremdesFeld2</em></p></td>
-<td><p>Die Namen der Felder in <em>fremdeTabelle</em>, angegeben in <em>ref1</em>, <em>ref2</em>. Sie können die Klausel auslassen, wenn das referenzierte Feld der Primärschlüssel von <em>fremdeTabelle</em> ist.</p></td>
+<td><p><em>Fremdfeld1</em>, <em>Fremdfeld2</em></p></td>
+<td><p>Der Name des Felds oder der Felder in <em>Fremdtabelle</em>, das bzw. die durch <em>Bezug1</em>, <em>Bezug2</em> angegeben wird/werden. Sie können diese Klausel fortlassen, wenn das Feld, auf das verwiesen wird, den Primärschlüssel der <em>Fremdtabelle</em> darstellt.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Es handelt sich um eine Beschränkung für ein Feld, wenn die Syntax in der Felddefinitionsklausel einer ALTER TABLE- oder CREATE TABLE-Anweisung direkt auf den Datentyp des Feldes folgt.
+Sie können die Syntax für die Einschränkung für ein einzelnes Feld in der Felddefinitionsklausel einer ALTER TABLE- oder CREATE TABLE-Anweisung unmittelbar im Anschluss an die Angabe des Datentyps des Felds verwenden.
 
 Es handelt sich um eine Einschränkung für mehrere Felder, wenn das Schlüsselwort CONSTRAINT in einer ALTER TABLE- oder CREATE TABLE-Anweisung außerhalb einer Felddefinitionsklausel vorkommt.
 
-Mit der Klausel CONSTRAINT können Sie ein Feld als einen der folgenden Ausnahmetypen kennzeichnen:
+Mithilfe von CONSTRAINT können Sie ein Feld als eine der folgenden Arten von Einschränkungen bestimmen:
 
-- Mit dem reservierten Wort UNIQUE können Sie ein Feld als eindeutigen Schlüssel kennzeichnen. Das bedeutet, dass zwei Datensätze in dieser Tabelle in diesem Feld nicht denselben Wert haben dürfen. Sie können ein beliebiges Feld oder eine beliebige Anzahl von Feldern mit dieser Einschränkung belegen. Wird eine Einschränkung für mehrere Felder als eindeutiger Schlüssel gekennzeichnet, müssen lediglich die kombinierten Werte aller Felder eindeutig sein, auch wenn zwei oder mehr Datensätze denselben Wert in einem Feld aufweisen.
+- Sie können das reservierte Wort UNIQUE verwenden, um ein Feld als eindeutigen Schlüssel zu bestimmen. Dies bedeutet, dass keine zwei Datensätze in der Tabelle in diesem Feld den gleichen Wert aufweisen können. Sie können ein beliebiges Feld oder eine beliebige Feldliste als eindeutig bestimmen. Wenn eine mehrere Felder umfassende Einschränkung als eindeutiger Schlüssel bestimmt wird, müssen die kombinierten Werte aller Felder im Index eindeutig sein, selbst wenn zwei oder mehr Datensätze in auch nur einem der Felder den gleichen Wert aufweisen.
 
-- Mit dem reservierten Wort PRIMARY KEY können Sie ein Feld oder eine Auswahl von Feldern in einer Tabelle als Primärschlüssel kennzeichnen. Es ist nur ein eindeutiger Primärschlüssel pro Tabelle zulässig, der zudem nicht **Null** sein darf.
+- Sie können die reservierten Wörter PRIMARY KEY verwenden, um ein Feld oder eine Menge von Feldern in einer Tabelle als Primärschlüssel festzulegen. Alle Werte im Primärschlüssel müssen eindeutig und dürfen nicht **NULL** sein, und es kann nur einen Primärschlüssel für eine Tabelle geben.
     
   > [!NOTE]
-  > [!HINWEIS] Legen Sie keine PRIMARY KEY-Einschränkung für eine Tabelle fest, die bereits einen Primärschlüssel hat. Ansonsten tritt ein Fehler auf.
+  > Legen Sie keine Einschränkung PRIMARY KEY für eine Tabelle fest, die bereits einen Primärschlüssel aufweist; andernfalls tritt ein Fehler auf.
 
 - Mit dem reservierten Word FOREIGN KEY können Sie ein Feld als fremden Schlüssel kennzeichnen. Wenn der Primärschlüssel der fremden Tabelle aus mehreren Felder besteht, müssen Sie eine Einschränkung für mehrere Felder definieren, in der alle referenzierten Felder, der Name der fremden Tabelle und die Namen der referenzierten Felder in der fremden Tabelle (in derselben Reihenfolge wie die referenzierten Felder) aufgeführt sind. Handelt es sich bei referenzierten Feldern um den Primärschlüssel der fremden Tabelle, müssen Sie die referenzierten Felder nicht angeben. Standardmäßig behandelt die Datenbank-Engine den Primärschlüssel der fremden Tabelle als referenzierte Felder. Einschränkungen für fremde Schlüssel legen bestimmte Aktionen fest, die durchgeführt werden, wenn sich der Wert des entsprechenden Primärschlüssels ändert:
 
-- Sie können festlegen, welche Aktionen auf die fremde Tabelle angewendet werden sollen. Diese Festlegung basiert auf der Aktion, die auf den Primärschlüssel angewendet wird, für den die CONSTRAINT-Klausel definiert wurde. Betrachten Sie beispielsweise die folgende Definition für die Tabelle "Customers":
+- Sie können Aktionen angeben, die für die Fremdtabelle ausgeführt werden sollen. Die Grundlage bildet eine entsprechende Aktion, die für den Primärschlüssel in der Tabelle ausgeführt wird, in der die CONSTRAINT-Einschränkung definiert ist. Als Beispiel kann die folgende Definition für die Tabelle "Customers" dienen:
     
   ``` sql
     CREATE TABLE Customers (CustId INTEGER PRIMARY KEY, CLstNm NCHAR VARYING (50))
   ```
     
-  Betrachten Sie die folgende Definition der Tabelle "Orders", bei eine Verknüpfung mit einem fremden Schlüssel erstellt wird, die den Primärschlüssel der Tabelle "Customers" referenziert:
+  Betrachten Sie die folgende Definition der Tabelle "Orders", die eine Fremdschlüsselbeziehung definiert, die auf den Primärschlüssel der Tabelle "Customers" verweist:
     
   ``` sql
     CREATE TABLE Orders (OrderId INTEGER PRIMARY KEY, CustId INTEGER, OrderNotes NCHAR VARYING (255), CONSTRAINT FKOrdersCustId FOREIGN KEY (CustId) REFERENCES Customers ON UPDATE CASCADE ON DELETE CASCADE
@@ -122,9 +122,9 @@ Mit der Klausel CONSTRAINT können Sie ein Feld als einen der folgenden Ausnahme
     CREATE TABLE Orders (OrderId INTEGER PRIMARY KEY, CustId INTEGER, OrderNotes NCHAR VARYING (255), CONSTRAINT FKOrdersCustId FOREIGN KEY (CustId) REFERENCES Customers ON UPDATE SET NULL ON DELETE SET NULL
   ```
     
-  Mit der ON UPDATE SET NULL-Klausel werden bei Änderung der Kundennummer (CustId) in der Tabelle "Customers" die entsprechenden Werte in der fremden Tabelle "Orders" automatisch auf "NULL" gesetzt. Dementsprechend werden bei der ON DELETE SET NULL-Klausel alle fremden Schlüssel in der Tabelle "Orders" automatisch auf NULL gesetzt, sobald der Kunde in der Tabelle "Customers" gelöscht wird.
+  Die Klausel ON UPDATE SET NULL bedeutet, dass im Fall der Aktualisierung eines Kundenbezeichners (CustId) in der Tabelle "Customer" die entsprechenden Fremdschlüsselwerte in der Tabelle "Orders" automatisch auf NULL festgelegt werden. Analog dazu bedeutet die Klausel ON DELETE SET NULL, dass bei Löschung eines Kunden aus der Tabelle "Customer" alle entsprechenden Fremdschlüssel in der Tabelle "Orders" automatisch auf NULL festgelegt werden.
 
-Um die automatische Erstellung von Indizes für Fremdschlüssel zu verhindern, kann der NO INDEX-Modifizierer verwendet werden. Diese Art der Fremdschlüsseldefinition sollte nur in Fällen verwendet werden, bei denen sich ergebenden Indexwerte häufig dupliziert würden. Werden fremde Indexwerte häufig dupliziert, ist ein Index möglichweise ineffizienter als ein ein Tabellenscan. Durch diese Art der Indizierung, bei der Zeilen eingefügt und aus der Tabelle gelöscht werden, beeinträchtigt die Leistung und bietet keinerlei Vorteile.
+Um die automatische Erstellung von Indizes für Fremdschlüssel zu verhindern, kann der Modifizierer NO INDEX verwendet werden. Diese Form der Fremdschlüsseldefinition sollte nur in Fällen verwendet werden, in denen die sich ergebenden Indexwerte häufig dupliziert würden. Wenn die Werte in einem Fremdschlüsselindex häufig dupliziert werden, kann die Verwendung eines Index weniger effizient sein als ein einfacher Tabellenscan. Die Wartung dieses Indextyps verringert die Leistung und bietet keinerlei Vorteile, wenn Zeilen in die Tabelle eingefügt und aus ihr gelöscht werden.
 
 ## <a name="example"></a>Beispiel
 

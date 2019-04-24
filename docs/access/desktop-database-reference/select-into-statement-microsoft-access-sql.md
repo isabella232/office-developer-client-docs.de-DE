@@ -1,5 +1,5 @@
 ---
-title: WÄHLEN SIE AUS. INTO-Anweisung (Microsoft Access SQL)
+title: SELECT.INTO-Anweisung (Microsoft Access SQL)
 TOCTitle: SELECT.INTO statement (Microsoft Access SQL)
 ms:assetid: 29f3bd55-52f5-a36e-4e33-4b3499c6ce8d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192059(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: fd7152eaa7dd29f6d0bf5621d1b8b8b6f648673c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308722"
 ---
-# <a name="selectinto-statement-microsoft-access-sql"></a>WÄHLEN SIE AUS. INTO-Anweisung (Microsoft Access SQL)
+# <a name="selectinto-statement-microsoft-access-sql"></a>SELECT.INTO-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt eine make-table-Abfrage.
 
 ## <a name="syntax"></a>Syntax
 
-SELECT *Feld1*\[, *Feld2*\[,... \] \] INTO *neue Tabelle* \[IN *externe Datenbank* \] aus der *Datenquelle*
+SELECT *field1*\[, *field2*\[, …\]\] INTO *newtable* \[IN *externaldatabase*\] FROM *source*
 
 Die Anweisung SELECT…INTO besteht aus den folgenden Teilen:
 
@@ -33,34 +33,34 @@ Die Anweisung SELECT…INTO besteht aus den folgenden Teilen:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Teil</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Feld1</em>, <em>Feld2</em></p></td>
+<td><p><em>field1</em>, <em>field2</em></p></td>
 <td><p>Die Namen der Felder, die in die neue Tabelle kopiert werden sollen.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>neueTabelle</em></p></td>
-<td><p>Der Name der zu erstellenden Tabelle. Er muss den üblichen Benennungskonventionen entsprechen. Wenn die <em>neue Tabelle</em> den Namen einer vorhandenen Tabelle identisch ist, tritt ein auffangbarer Fehler auf.</p></td>
+<td><p><em>neue_Tabelle</em></p></td>
+<td><p>Der Name der zu erstellenden Tabelle. Er muss den üblichen Benennungskonventionen entsprechen. Wenn <em>neueTabelle</em> denselben Namen wie eine bereits vorhanden Tabelle hat, tritt ein abfangbarer Fehler auf.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>externeDatenbank</em></p></td>
-<td><p>Der Pfad zu einer externen Datenbank. Eine Beschreibung des Pfads finden Sie unter der <a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN</a>-Klausel.  </p></td>
+<td><p>Ich bin für diese Woche leider bereits ausgebucht. Eine Beschreibung des Pfads finden Sie unter der <a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN</a>-Klausel.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Quelle</em></p></td>
-<td><p>Der Name einer bereits bestehenden Tabelle, in der Datensätze ausgewählt werden. Dabei kann es es sich um eine oder mehrere Tabellen sowie eine Abfrage handeln.</p></td>
+<td><p><em>source</em></p></td>
+<td><p>Der Name der vorhandenen Tabelle, in der Datensätze ausgewählt werden. Dabei kann es sich um eine einzelne oder mehrere Tabellen oder eine Abfrage handeln.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können make-table-Abfragen zur Archivierung von Datensätzen, Sicherung Ihrer Tabellen, Anlage von Kopien zum Export in eine andere Datenbank oder als Grundlage für Berichte auf Basis der Daten aus einem bestimmten Zeitraum verwenden. Beispielsweise könnten Sie  mithilfe derselben make-table-Abfrage monatlich einen Bericht über die Verkäufe in diesem Monat nach Region erstellen.
+Mithilfe von Tabellenerstellungsabfragen können Sie Datensätze archivieren, Sicherungskopien der Tabellen erstellen, Kopien zum Exportieren in eine andere Datenbank erstellen oder Berichte anfertigen, die Daten für einen bestimmten Zeitraum enthalten. Beispielsweise könnten Sie einen Bericht "Monatsumsatz nach Region" erstellen, indem Sie jeden Monat dieselbe Tabellenerstellungsabfrage ausführen.
 
 > [!NOTE]
 > - Möglicherweise sollten Sie einen Primärschlüssel für die neue Tabelle festlegen. Bei der Erstellung der Tabelle werden die Datentypen und Feldgrößen aller Felder der der Abfrage zugrunde liegenden Tabellen an die Felder der neuen Tabelle vererbt. Es werden jedoch keine weiteren Feld- oder Tabelleneigenschaften übertragen.

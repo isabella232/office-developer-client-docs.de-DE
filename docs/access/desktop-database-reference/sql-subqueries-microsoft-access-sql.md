@@ -14,16 +14,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 7beda04d1f18014101f00078de1d125c1fd67a69
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314567"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL-Unterabfragen (Microsoft Access SQL)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine Unterabfrage ist eine [SELECT](select-statement-microsoft-access-sql.md)-Anweisung, die in einer SELECT-, [SELECT…INTO](select-into-statement-microsoft-access-sql.md)-, [INSERT…INTO](insert-into-statement-microsoft-access-sql.md)-, [DELETE](delete-statement-microsoft-access-sql.md)- oder [UPDATE](update-statement-microsoft-access-sql.md)-Anweisung oder in einer anderen Unterabfrage geschachtelt ist.
 
@@ -31,11 +31,11 @@ Eine Unterabfrage ist eine [SELECT](select-statement-microsoft-access-sql.md)-An
 
 Zum Erstellen einer Unterabfrage können Sie eins der folgenden drei Syntaxformate verwenden:
 
-*Vergleich* \[ANY | ALLE | Einige\] (*SQL-Anweisung*)
+*comparison* \[ANY | ALL | SOME\] (*sqlstatement*)
 
-*Ausdruck* \[Nicht\] IN (*SQL-Anweisung*)
+*expression* \[NOT\] IN (*sqlstatement*)
 
-\[NICHT\] EXISTS (*SQL-Anweisung*)
+\[NOT\] EXISTS (*sqlstatement*)
 
 Eine Unterabfrage enthält die folgenden Bestandteile:
 
@@ -46,13 +46,13 @@ Eine Unterabfrage enthält die folgenden Bestandteile:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Argument</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Vergleich</em></p></td>
+<td><p><em>comparison</em></p></td>
 <td><p>Ein Ausdruck und ein Vergleichsoperator, der den Ausdruck mit den Ergebnissen einer Unterabfrage vergleicht.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Eine Unterabfrage enthält die folgenden Bestandteile:
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Anstelle eines Ausdrucks können Sie in der Feldliste einer SELECT-Anweisung oder in einer [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)- oder [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql)-Klausel auch eine Unterabfrage verwenden. In einer Unterabfrage geben Sie mithilfe einer SELECT-Anweisung mindestens einen genauen Wert an, der im Ausdruck in der WHERE- oder HAVING-Klausel ausgewertet wird.
 
@@ -95,7 +95,7 @@ Sie können das Prädikat IN jedoch nicht verwenden, um in der Hauptabfrage nur 
 
 Verwenden Sie das Prädikat EXISTS (mit dem optionalen reservierten Wort NOT) in Wahr/Falsch-Vergleichen, um zu ermitteln, ob die Unterabfrage Datensätze zurückgibt.
 
-Sie können auch mithilfe der Aliase für Tabellennamen in einer Unterabfrage auf Tabellen verweisen, die in einer FROM-Klausel außerhalb der Unterabfrage aufgeführt sind. Im folgenden Beispiel werden die Namen der Mitarbeiter zurückgegeben, deren Gehalt jeweils mindestens dem Durchschnittsgehalt aller Mitarbeiter in derselben Position entspricht. Die Employees-Tabelle erhält den Aliasnamen "T1":
+You can also use table name aliases in a subquery to refer to tables listed in a [FROM](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/from-clause-microsoft-access-sql) clause outside the subquery. The following example returns the names of employees whose salaries are equal to or greater than the average salary of all employees having the same job title. The Employees table is given the alias "T1":
 
 ```sql
 SELECT LastName,
@@ -112,7 +112,7 @@ Bestimmte Unterabfragen sind in Kreuztabellenabfragen zulässig, insbesondere al
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Namen und Kontaktdaten jedes Kunden aufgelistet, der im zweiten Quartal 1995 eine Bestellung aufgegeben hat. Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
+In diesem Beispiel werden die Namen und Kontaktdaten jedes Kunden aufgelistet, der im zweiten Quartal 1995 eine Bestellung aufgegeben hat. Dabei wird die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung enthalten ist.
 
 ```vb
     Sub SubQueryX() 

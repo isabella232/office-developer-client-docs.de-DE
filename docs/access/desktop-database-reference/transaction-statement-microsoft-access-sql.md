@@ -12,17 +12,17 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 828bccfad83320d27f9473d532ab86f73b2fde98
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314147"
 ---
 # <a name="transaction-statement-microsoft-access-sql"></a>TRANSACTION-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Wird zum Initiieren und Abschließen expliziter Transaktionen verwendet.
+Dient zum Auslösen und Abschließen expliziter Transaktionen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,19 +30,19 @@ Wird zum Initiieren und Abschließen expliziter Transaktionen verwendet.
 
 BEGIN TRANSACTION
 
-**Während der Transaktion ausgeführten Conclude eine Transaktion, indem ein Commit für alle arbeiten**:
+**Schließt eine Transaktion ab, indem für alle während der Transaktion ausgeführten Schritte ein Commit ausgeführt wird**:
 
-COMMIT \[Transaktion | ARBEIT\]
+COMMIT \[TRANSACTION | WORK\]
 
-**Conclude einer Transaktion, indem ein Rollback alle Arbeit während der Transaktion ausgeführten**:
+**Schließt eine Transaktion ab, indem für alle während der Transaktion ausgeführten Schritte ein Rollback ausgeführt wird**:
 
-ROLLBACK \[Transaktion | ARBEIT\]
+ROLLBACK \[TRANSACTION | WORK\]
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Transaktionen werden nicht automatisch gestartet. Zum Starten einer Transaktion müssen Sie explizit den Befehl BEGIN TRANSACTION verwenden.
+Transaktionen werden nicht automatisch gestartet. Um eine Transaktion zu starten, müssen Sie dazu BEGIN TRANSACTION explizit verwenden.
 
-Transaktionen können in bis zu fünf Ebenen geschachtelt sein. Zum Starten einer geschachtelten Transaktion verwenden Sie BEGIN TRANSACTION im Kontext einer vorhandenen Transaktion.
+Transaktionen können bis zu fünf Ebenen tief geschachtelt werden. Zum Starten einer geschachtelten Transaktion verwenden Sie BEGIN TRANSACTION im Kontext einer vorhandenen Transaktion.
 
-Für verknüpfte Tabellen werden Transaktionen nicht unterstützt.
+Transaktionen werden nicht für verknüpfte Tabellen unterstützt.
 

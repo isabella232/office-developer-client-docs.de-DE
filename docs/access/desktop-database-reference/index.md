@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 8d34553c4229c8ad737853439342a24ed3afd181
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291685"
 ---
 # <a name="access-desktop-database-reference"></a>Access-Desktopdatenbankreferenz
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-- [Konzepte (Access 2013-Entwicklerreferenz)](concepts.md)
-- [Microsoft Data Access Objects reference](microsoft-data-access-objects-reference.md)
+- [Konzepte](concepts.md)
+- [Referenz zu Microsoft-Datenzugriffsobjekten](microsoft-data-access-objects-reference.md)
 - [Referenz zu Microsoft ActiveX Data Objects](microsoft-activex-data-objects-reference.md)
 - [Microsoft Access SQL-Referenz](microsoft-access-sql-reference.md)
 - [Access-Makroaktionen](access-macro-actions-access-developer-reference.md)

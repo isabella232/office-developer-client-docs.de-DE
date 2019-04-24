@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 479eff80d25279a1c5e918a3b639443ad3b25c6c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294274"
 ---
 # <a name="dbengine-object-dao"></a>DBEngine-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Das **DBEngine**-Objekt ist im DAO-Objektmodell das Objekt der obersten Ebene.
+Das **DBEngine**-Objekt ist das Objekt auf oberster Ebene im DAO-Objektmodell.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -54,7 +54,7 @@ Wenn Sie die Einstellungen der Eigenschaften **DefaultType** und **IniPath** ge�
 
 Verwenden Sie die folgende Syntax, um auf eine zum **DBEngine**-Objekt gehörende Auflistung oder auf eine Methode oder Eigenschaft zu verweisen, die auf dieses Objekt angewendet wird:
 
-\[**DBEngine**. \] \[Auflistung | Methode | Eigenschaft\]
+\[**DBEngine**.\]\[collection | method | property\]
 
 ## <a name="example"></a>Beispiel
 

@@ -1,5 +1,5 @@
 ---
-title: Database-Objekt (DAO)
+title: Datenbankobjekt (DAO)
 TOCTitle: Database Object
 ms:assetid: 6cf2ddf8-3957-a15e-5eeb-85f81c1e415e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195520(v=office.15)
@@ -12,65 +12,65 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: c23772c54f2f980b8d10d4afc352687935840752
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294838"
 ---
-# <a name="database-object-dao"></a>Database-Objekt (DAO)
+# <a name="database-object-dao"></a>Datenbankobjekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Ein **Database** -Objekt stellt eine geöffnete Datenbank dar.
+Ein **Database**-Objekt stellt eine geöffnete Datenbank dar.
 
 ## <a name="remarks"></a>Hinweise
 
-Verwenden Sie das **Database** -Objekt und seine Methoden und Eigenschaften zum Bearbeiten einer geöffneten Datenbank. In jeder Art von Datenbank können Sie folgende Aktionen ausführen:
+Verwenden Sie das **Database**-Objekt und seine Methoden und Eigenschaften zum Bearbeiten einer geöffneten Datenbank. In jeder Art von Datenbank können Sie folgende Aktionen ausführen:
 
-  - Verwenden Sie die **Execute** -Methode, um eine Aktionsabfrage auszuführen.
+  - Verwenden Sie die **Execute**-Methode, um eine Aktionsabfrage auszuführen.
 
-  - Legen Sie die **Connect** -Eigenschaft fest, um eine Verbindung mit einer ODBC-Datenquelle herzustellen.
+  - Legen Sie die **Connect**-Eigenschaft fest, um eine Verbindung mit einer ODBC-Datenquelle herzustellen.
 
-  - Legen Sie die **QueryTimeout** -Eigenschaft fest, um die Wartezeit für eine Abfrage, die für eine ODBC-Datenquelle ausgeführt wird, zu beschränken.
+  - Legen Sie die **QueryTimeout**-Eigenschaft fest, um die Wartezeit für eine Abfrage, die für eine ODBC-Datenquelle ausgeführt wird, zu beschränken.
 
-  - Verwenden Sie die **RecordsAffected** -Eigenschaft, um zu bestimmen, wie viele Datensätze durch eine Aktionsabfrage geändert wurden.
+  - Verwenden Sie die **RecordsAffected**-Eigenschaft, um zu bestimmen, wie viele Datensätze durch eine Aktionsabfrage geändert wurden.
 
-  - Verwenden Sie die **OpenRecordset** -Methode, um eine Auswahlabfrage auszuführen und ein **Recordset** -Objekt zu erstellen.
+  - Verwenden Sie die **OpenRecordset**-Methode, um eine Auswahlabfrage auszuführen und ein **Recordset**-Objekt zu erstellen.
 
-  - Verwenden Sie die **Version** -Eigenschaft, um zu bestimmen, mit welcher Version eines Datenbankmoduls die Datenbank erstellt wurde.
+  - Verwenden Sie die **Version**-Eigenschaft, um zu bestimmen, mit welcher Version eines Datenbankmoduls die Datenbank erstellt wurde.
 
-Mit einem Microsoft Access-Datenbankmodul können Sie auch andere Methoden, Eigenschaften und Auflistungen verwenden, um ein **Database** -Objekt zu bearbeiten sowie Informationen zu den Tabellen, Abfragen und Beziehungen zu erstellen, zu ändern oder abzurufen. Sie können beispielsweise folgende Aktionen ausführen:
+Mit einem Microsoft Access-Datenbankmodul können Sie auch andere Methoden, Eigenschaften und Auflistungen verwenden, um ein **Database**-Objekt zu bearbeiten sowie Informationen zu den Tabellen, Abfragen und Beziehungen zu erstellen, zu ändern oder abzurufen. Sie können beispielsweise folgende Aktionen ausführen:
 
   - Verwenden Sie die Methoden **CreateTableDef** und **CreateRelation** zum Erstellen von Tabellen bzw. Beziehungen.
 
-  - Verwenden Sie die **CreateProperty** -Methode, um neue **Database** -Eigenschaften zu definieren.
+  - Verwenden Sie die **CreateProperty**-Methode, um neue **Database**-Eigenschaften zu definieren.
 
-  - Verwenden Sie die **CreateQueryDef** -Methode, um eine dauerhafte oder temporäre Abfragedefinition zu erstellen.
+  - Verwenden Sie die **CreateQueryDef**-Methode, um eine dauerhafte oder temporäre Abfragedefinition zu erstellen.
 
   - Verwenden Sie die Methoden **MakeReplica**, **Synchronize** und **PopulatePartial** zum Erstellen und Synchronisieren vollständiger oder teilweiser Replikate Ihrer Datenbank.
 
-  - Legen Sie die **CollatingOrder** -Eigenschaft fest, um die alphabetische Sortierreihenfolge für zeichenbasierte Felder in verschiedenen Sprachen einzurichten.
+  - Legen Sie die **CollatingOrder**-Eigenschaft fest, um die alphabetische Sortierreihenfolge für zeichenbasierte Felder in verschiedenen Sprachen einzurichten.
 
-Verwenden Sie die **CreateDatabase** -Methode, um ein dauerhaftes **Database** -Objekt zu erstellen, das automatisch an die **Databases** -Auflistung angefügt und dadurch auf dem Datenträger gespeichert wird.
+Verwenden Sie die **CreateDatabase**-Methode, um ein dauerhaftes **Database**-Objekt zu erstellen, das automatisch an die **Databases**-Auflistung angefügt und dadurch auf dem Datenträger gespeichert wird.
 
-Sie müssen das **DBEngine** -Objekt nicht angeben, wenn Sie die **OpenDatabase** -Methode verwenden.
+Sie müssen das **DBEngine**-Objekt nicht angeben, wenn Sie die **OpenDatabase**-Methode verwenden.
 
-Beim Öffnen einer Datenbank mit verknüpften Tabellen werden nicht automatisch Links zu den angegebenen externen Dateien erstellt. Sie müssen entweder auf die **TableDef** - oder **Field** -Objekte der Tabelle verweisen oder ein **Recordset** -Objekt öffnen. Wenn Sie keine Links zu diesen Tabellen herstellen können, tritt ein abfangbarer Fehler auf. Möglicherweise benötigen Sie auch die Berechtigung zum Zugriff auf die Datenbank, oder ein anderer Benutzer hat die Datenbank im Exklusivmodus geöffnet. In diesen Fällen treten abfangbare Fehler auf.
+Beim Öffnen einer Datenbank mit verknüpften Tabellen werden nicht automatisch Links zu den angegebenen externen Dateien erstellt. Sie müssen entweder auf die **TableDef**- oder **Field**-Objekte der Tabelle verweisen oder ein **Recordset**-Objekt öffnen. Wenn Sie keine Links zu diesen Tabellen herstellen können, tritt ein abfangbarer Fehler auf. Möglicherweise benötigen Sie auch die Berechtigung zum Zugriff auf die Datenbank, oder ein anderer Benutzer hat die Datenbank im Exklusivmodus geöffnet. In diesen Fällen treten abfangbare Fehler auf.
 
-Nach der Ausführung einer Prozedur, die ein **Database** -Objekt deklariert, werden lokale **Database** -Objekte sowie alle geöffneten **Recordset** -Objekte geschlossen. Ausstehende Aktualisierungen gehen verloren, und für alle ausstehenden Transaktionen wird ein Rollback durchgeführt. Es tritt jedoch kein abfangbarer Fehler auf. Sie sollten explizit alle ausstehenden Transaktionen oder Bearbeitungen abschließen und **Recordset** -Objekte und **Database** -Objekte vor dem Beenden von Verfahren schließen, in denen diese Objektvariablen lokal deklariert werden.
+Nach der Ausführung einer Prozedur, die ein **Database**-Objekt deklariert, werden lokale **Database**-Objekte sowie alle geöffneten **Recordset**-Objekte geschlossen. Ausstehende Aktualisierungen gehen verloren, und für alle ausstehenden Transaktionen wird ein Rollback durchgeführt. Es tritt jedoch kein abfangbarer Fehler auf. Sie sollten explizit alle ausstehenden Transaktionen oder Bearbeitungen abschließen und **Recordset**-Objekte und **Database**-Objekte vor dem Beenden von Verfahren schließen, in denen diese Objektvariablen lokal deklariert werden.
 
 Bei Verwendung einer der Transaktionsmethoden (**BeginTrans**, **CommitTrans** oder **Rollback**) für das **Workspace**-Objekt gelten diese Transaktionen für alle Datenbanken, die in dem **Workspace**-Objekt geöffnet wurden, aus dem das **Database**-Objekt geöffnet wurde. Wenn Sie unabhängige Transaktionen verwenden möchten, müssen Sie zuerst ein zusätzliches **Workspace**-Objekt öffnen und dann ein anderes **Database**-Objekt in diesem **Workspace**-Objekt öffnen.
 
 
 > [!NOTE]
-> [!HINWEIS] Sie können dieselbe Datenquelle oder Datenbank mehrmals öffnen, wodurch Duplikatnamen in der **Databases**-Auflistung erstellt werden. Sie sollten Objektvariablen **Database**-Objekte zuweisen und mit Variablennamen auf sie verweisen.
+> Sie können die gleiche Datenquelle oder Datenbank mehrmals öffnen, indem Sie doppelte Namen in der **Databases**-Auflistung erstellen. Sie sollten **Database**-Objekte zu Objektvariablen zuweisen und mit Variablennamen darauf verweisen.
 
 
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird ein neues **Database** -Objekt erstellt und ein vorhandenes **Database** -Objekt im standardmäßigen **Workspace** -Objekt geöffnet. Dann wird die **Database** -Auflistung und die **Properties** -Auflistung der einzelnen **Database** -Objekte aufgezählt.
+In diesem Beispiel wird ein neues **Database**-Objekt erstellt und ein vorhandenes **Database**-Objekt im standardmäßigen **Workspace**-Objekt geöffnet. Dann wird die **Database**-Auflistung und die **Properties**-Auflistung der einzelnen **Database**-Objekte aufgezählt.
 
 ```vb 
 Sub DatabaseObjectX() 
@@ -117,7 +117,7 @@ End Sub
 
 <br/>
 
-In diesem Beispiel wird **CreateDatabase** zum Erstellen eines neuen verschlüsselten **Database** -Objekts verwendet.
+In diesem Beispiel wird **CreateDatabase** zum Erstellen eines neuen verschlüsselten **Database**-Objekts verwendet.
 
 ```vb
     Sub CreateDatabaseX() 
