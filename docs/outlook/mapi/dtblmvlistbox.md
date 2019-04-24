@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c22f842-d0e7-44f0-a7d5-c9c2aa6b8820
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f7c1241f2ad31dee8277f3b3b77ac02137067a12
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ae8f3ab28837bf0579549ead46c28477f815f35c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338276"
 ---
-# <a name="dtblmvlistbox"></a><span data-ttu-id="e0b33-103">DTBLMVLISTBOX</span><span class="sxs-lookup"><span data-stu-id="e0b33-103">DTBLMVLISTBOX</span></span>
+# <a name="dtblmvlistbox"></a><span data-ttu-id="65082-103">DTBLMVLISTBOX</span><span class="sxs-lookup"><span data-stu-id="65082-103">DTBLMVLISTBOX</span></span>
 
   
   
-<span data-ttu-id="e0b33-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e0b33-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="65082-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="65082-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e0b33-105">Beschreibt eine mehrwertige Liste, die in einem Dialogfeld angezeigt werden, die aus einer Tabelle anzeigen erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="e0b33-105">Describes a multi-valued list that will be displayed in a dialog box that is built from a display table.</span></span>
+<span data-ttu-id="65082-105">Beschreibt eine Liste mit mehreren Werten, die in einem Dialogfeld angezeigt wird, das aus einer Anzeigetabelle erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="65082-105">Describes a multi-valued list that will be displayed in a dialog box that is built from a display table.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="e0b33-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="e0b33-106">Header file:</span></span>  <br/> |<span data-ttu-id="e0b33-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e0b33-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="65082-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="65082-106">Header file:</span></span>  <br/> |<span data-ttu-id="65082-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="65082-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _DTBLMVLISTBOX
@@ -40,32 +40,32 @@ typedef struct _DTBLMVLISTBOX
 
 ```
 
-## <a name="members"></a><span data-ttu-id="e0b33-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="e0b33-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="65082-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="65082-108">Members</span></span>
 
- <span data-ttu-id="e0b33-109">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="e0b33-109">**ulFlags**</span></span>
+ <span data-ttu-id="65082-109">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="65082-109">**ulFlags**</span></span>
   
-> <span data-ttu-id="e0b33-110">Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="e0b33-110">Reserved; must be zero.</span></span>
+> <span data-ttu-id="65082-110">Reserviert muss NULL sein.</span><span class="sxs-lookup"><span data-stu-id="65082-110">Reserved; must be zero.</span></span>
     
- <span data-ttu-id="e0b33-111">**ulMVPropTag**</span><span class="sxs-lookup"><span data-stu-id="e0b33-111">**ulMVPropTag**</span></span>
+ <span data-ttu-id="65082-111">**ulMVPropTag**</span><span class="sxs-lookup"><span data-stu-id="65082-111">**ulMVPropTag**</span></span>
   
-> <span data-ttu-id="e0b33-112">Eigenschaftentag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING.</span><span class="sxs-lookup"><span data-stu-id="e0b33-112">Property tag for a multi-valued property of type PT_MV_TSTRING.</span></span>
+> <span data-ttu-id="65082-112">Property-Tag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING.</span><span class="sxs-lookup"><span data-stu-id="65082-112">Property tag for a multi-valued property of type PT_MV_TSTRING.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="e0b33-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e0b33-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="65082-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="65082-113">Remarks</span></span>
 
-<span data-ttu-id="e0b33-114">Eine Struktur **DTBLMVLISTBOX** beschreibt eine standard mehrwertige Liste, die eine schreibgeschützte Liste der Elemente verfügt.</span><span class="sxs-lookup"><span data-stu-id="e0b33-114">A **DTBLMVLISTBOX** structure describes a standard multi-valued list that has a read-only list of items.</span></span> <span data-ttu-id="e0b33-115">Eine mehrwertige Liste verwenden, werden die Werte sofort angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e0b33-115">By using a standard multi-valued list, the values are displayed immediately.</span></span> 
+<span data-ttu-id="65082-114">Eine **DTBLMVLISTBOX** -Struktur beschreibt eine standardmäßige mehrwertige Liste mit einer schreibgeschützten Liste von Elementen.</span><span class="sxs-lookup"><span data-stu-id="65082-114">A **DTBLMVLISTBOX** structure describes a standard multi-valued list that has a read-only list of items.</span></span> <span data-ttu-id="65082-115">Bei Verwendung einer standardmäßigen mehrwertigen Liste werden die Werte sofort angezeigt.</span><span class="sxs-lookup"><span data-stu-id="65082-115">By using a standard multi-valued list, the values are displayed immediately.</span></span> 
   
-<span data-ttu-id="e0b33-116">Die Daten, die angezeigt werden, stammt aus der Eigenschaft im **UlMVPropTag** -Member identifiziert.</span><span class="sxs-lookup"><span data-stu-id="e0b33-116">The data that is displayed comes from the property identified in the **ulMVPropTag** member.</span></span> <span data-ttu-id="e0b33-117">Es ist nicht erforderlich zum Lesen aus der Eigenschaft-Schnittstelle, die das Display-Tabelle zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="e0b33-117">There is no requirement to read from the property interface that is associated with the display table.</span></span> <span data-ttu-id="e0b33-118">Darüber hinaus, da der Benutzer eine Auswahl aus Risiko dieser Arten von Listen nicht können, werden Daten nicht auf die Eigenschaft Schnittstelle geschrieben.</span><span class="sxs-lookup"><span data-stu-id="e0b33-118">Also, because users are not able to make selections from these types of lists, data is not written to the property interface.</span></span> 
+<span data-ttu-id="65082-116">Die angezeigten Daten stammen aus der im **ulMVPropTag** -Element angegebenen Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="65082-116">The data that is displayed comes from the property identified in the **ulMVPropTag** member.</span></span> <span data-ttu-id="65082-117">Es ist nicht erforderlich, von der Eigenschaften Schnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="65082-117">There is no requirement to read from the property interface that is associated with the display table.</span></span> <span data-ttu-id="65082-118">Da Benutzer keine Auswahl aus diesen Listentypen treffen können, werden auch keine Daten in die Eigenschaften Schnittstelle geschrieben.</span><span class="sxs-lookup"><span data-stu-id="65082-118">Also, because users are not able to make selections from these types of lists, data is not written to the property interface.</span></span> 
   
-<span data-ttu-id="e0b33-119">Nur mehrwertige Zeichenfolgeneigenschaften werden für die Liste mit mehreren Werten unterstützt. andere mehrwertige Eigenschaft werden nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e0b33-119">Only multi-valued string properties are supported for the multi-valued list; other multi-valued property types are not supported.</span></span> 
+<span data-ttu-id="65082-119">Nur mehrwertige Zeichenfolgeneigenschaften werden für die mehrwertige Liste unterstützt. andere mehrwertige Eigenschaftstypen werden nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="65082-119">Only multi-valued string properties are supported for the multi-valued list; other multi-valued property types are not supported.</span></span> 
   
-<span data-ttu-id="e0b33-120">Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md).</span><span class="sxs-lookup"><span data-stu-id="e0b33-120">For an overview of display tables, see [Display Tables](display-tables.md).</span></span> <span data-ttu-id="e0b33-121">Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).</span><span class="sxs-lookup"><span data-stu-id="e0b33-121">For information about how to implement a display table, see [Implementing a Display Table](display-table-implementation.md).</span></span>
+<span data-ttu-id="65082-120">Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md).</span><span class="sxs-lookup"><span data-stu-id="65082-120">For an overview of display tables, see [Display Tables](display-tables.md).</span></span> <span data-ttu-id="65082-121">Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).</span><span class="sxs-lookup"><span data-stu-id="65082-121">For information about how to implement a display table, see [Implementing a Display Table](display-table-implementation.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="e0b33-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e0b33-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="65082-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="65082-122">See also</span></span>
 
 
 
-[<span data-ttu-id="e0b33-123">DTCTL</span><span class="sxs-lookup"><span data-stu-id="e0b33-123">DTCTL</span></span>](dtctl.md)
+[<span data-ttu-id="65082-123">DTCTL</span><span class="sxs-lookup"><span data-stu-id="65082-123">DTCTL</span></span>](dtctl.md)
 
 
-[<span data-ttu-id="e0b33-124">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="e0b33-124">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="65082-124">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="65082-124">MAPI Structures</span></span>](mapi-structures.md)
 

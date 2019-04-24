@@ -8,22 +8,22 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6b39504f-6eed-2605-048d-2707f38a7d9a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9495caecd514656f6fd62fb5db6cd8ac2faf4b50
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 64e5cf31dffdc794a22bcbd6d503a2b688f9c733
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332207"
 ---
-# <a name="indexsearchpusherprocess"></a><span data-ttu-id="db88d-103">INDEX_SEARCH_PUSHER_PROCESS</span><span class="sxs-lookup"><span data-stu-id="db88d-103">INDEX_SEARCH_PUSHER_PROCESS</span></span>
+# <a name="indexsearchpusherprocess"></a><span data-ttu-id="58fac-103">INDEX_SEARCH_PUSHER_PROCESS</span><span class="sxs-lookup"><span data-stu-id="58fac-103">INDEX_SEARCH_PUSHER_PROCESS</span></span>
 
   
   
-<span data-ttu-id="db88d-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="db88d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="58fac-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="58fac-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="db88d-105">Gibt den Prozess, der an den MAPI-Protokollhandler einer Benachrichtigung sendet, dass ein Objekt in diesen Speicher für die Indizierung bereit ist.</span><span class="sxs-lookup"><span data-stu-id="db88d-105">Specifies the process that is sending a notification to the MAPI Protocol Handler that an object in that store is ready for indexing.</span></span>
+<span data-ttu-id="58fac-105">Gibt den Prozess an, der eine Benachrichtigung an den MAPI-Protokoll Handler sendet, dass ein Objekt in diesem Speicher für die Indizierung bereit ist.</span><span class="sxs-lookup"><span data-stu-id="58fac-105">Specifies the process that is sending a notification to the MAPI Protocol Handler that an object in that store is ready for indexing.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="db88d-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="db88d-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="58fac-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="58fac-106">Quick info</span></span>
 
 ```cpp
 typedef struct _INDEX_SEARCH_PUSHER_PROCESS {  
@@ -31,10 +31,10 @@ typedef struct _INDEX_SEARCH_PUSHER_PROCESS {
 } INDEX_SEARCH_PUSHER_PROCESS; 
 ```
 
-## <a name="members"></a><span data-ttu-id="db88d-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="db88d-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="58fac-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="58fac-107">Members</span></span>
 
- <span data-ttu-id="db88d-108">*dwPID*</span><span class="sxs-lookup"><span data-stu-id="db88d-108">*dwPID*</span></span> 
+ <span data-ttu-id="58fac-108">*dwPID*</span><span class="sxs-lookup"><span data-stu-id="58fac-108">*dwPID*</span></span> 
   
->  <span data-ttu-id="db88d-109">Prozess-ID für den Prozess, der an die Indizierung von der MAPI-Protokollhandler eine Indizierung Benachrichtigung sendet.</span><span class="sxs-lookup"><span data-stu-id="db88d-109">Process ID for the process that is sending an indexing notification to the indexer of the MAPI Protocol Handler.</span></span> 
+>  <span data-ttu-id="58fac-109">Prozess-ID für den Prozess, der eine Indizierungs Benachrichtigung an den Indexer des MAPI-Protokollhandlers sendet.</span><span class="sxs-lookup"><span data-stu-id="58fac-109">Process ID for the process that is sending an indexing notification to the indexer of the MAPI Protocol Handler.</span></span> 
     
 

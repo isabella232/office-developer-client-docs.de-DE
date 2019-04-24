@@ -1,5 +1,5 @@
 ---
-title: PidTagSearchFolderStorageType (kanonische Eigenschaft)
+title: Kanonische Pidtagsearchfolderstoragetype (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,64 +11,64 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1ec21942-47db-43a5-a6ee-ec6fd2135e8b
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: accea8bdea25ac44e6cc5d8fe88cb32caf1961be
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336407"
 ---
-# <a name="pidtagsearchfolderstoragetype-canonical-property"></a><span data-ttu-id="38423-103">PidTagSearchFolderStorageType (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="38423-103">PidTagSearchFolderStorageType Canonical Property</span></span>
+# <a name="pidtagsearchfolderstoragetype-canonical-property"></a><span data-ttu-id="183ac-103">Kanonische Pidtagsearchfolderstoragetype (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="183ac-103">PidTagSearchFolderStorageType Canonical Property</span></span>
 
   
   
-<span data-ttu-id="38423-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="38423-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="183ac-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="183ac-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="38423-105">Enthält Flags, die die angezeigte Binary Large Object (BLOB) Daten in der Eigenschaft **PR_WB_SF_DEFINITION** ([PidTagSearchFolderDefinition](pidtagsearchfolderdefinition-canonical-property.md)) angeben.</span><span class="sxs-lookup"><span data-stu-id="38423-105">Contains flags that specify the Binary Large Object (BLOB) data that appears in the **PR_WB_SF_DEFINITION** ([PidTagSearchFolderDefinition](pidtagsearchfolderdefinition-canonical-property.md)) property.</span></span>
+<span data-ttu-id="183ac-105">Enthält Flags, mit denen die BLOB-Daten (Binary Large Object) angegeben werden, die in der **PR_WB_SF_DEFINITION** ([pidtagsearchfolderdefinition (](pidtagsearchfolderdefinition-canonical-property.md))-Eigenschaft angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="183ac-105">Contains flags that specify the Binary Large Object (BLOB) data that appears in the **PR_WB_SF_DEFINITION** ([PidTagSearchFolderDefinition](pidtagsearchfolderdefinition-canonical-property.md)) property.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="38423-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="38423-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="38423-107">PR_WB_SF_STORAGE_TYPE</span><span class="sxs-lookup"><span data-stu-id="38423-107">PR_WB_SF_STORAGE_TYPE</span></span>  <br/> |
-|<span data-ttu-id="38423-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="38423-108">Identifier:</span></span>  <br/> |<span data-ttu-id="38423-109">0x6846</span><span class="sxs-lookup"><span data-stu-id="38423-109">0x6846</span></span>  <br/> |
-|<span data-ttu-id="38423-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="38423-110">Data type:</span></span>  <br/> |<span data-ttu-id="38423-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="38423-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="38423-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="38423-112">Area:</span></span>  <br/> |<span data-ttu-id="38423-113">Suche</span><span class="sxs-lookup"><span data-stu-id="38423-113">Search</span></span>  <br/> |
+|<span data-ttu-id="183ac-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="183ac-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="183ac-107">PR_WB_SF_STORAGE_TYPE</span><span class="sxs-lookup"><span data-stu-id="183ac-107">PR_WB_SF_STORAGE_TYPE</span></span>  <br/> |
+|<span data-ttu-id="183ac-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="183ac-108">Identifier:</span></span>  <br/> |<span data-ttu-id="183ac-109">0x6846</span><span class="sxs-lookup"><span data-stu-id="183ac-109">0x6846</span></span>  <br/> |
+|<span data-ttu-id="183ac-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="183ac-110">Data type:</span></span>  <br/> |<span data-ttu-id="183ac-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="183ac-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="183ac-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="183ac-112">Area:</span></span>  <br/> |<span data-ttu-id="183ac-113">Suche</span><span class="sxs-lookup"><span data-stu-id="183ac-113">Search</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="38423-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="38423-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="183ac-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="183ac-114">Remarks</span></span>
 
-<span data-ttu-id="38423-115">Die Definitionen der Flags werden in [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)angegeben.</span><span class="sxs-lookup"><span data-stu-id="38423-115">The definitions of the flags are specified in [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx).</span></span> <span data-ttu-id="38423-116">Suchen nach **PR_WB_SF_STORAGE_TYPE**.</span><span class="sxs-lookup"><span data-stu-id="38423-116">Search for **PR_WB_SF_STORAGE_TYPE**.</span></span>
+<span data-ttu-id="183ac-115">Die Definitionen der Flags werden in [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)angegeben.</span><span class="sxs-lookup"><span data-stu-id="183ac-115">The definitions of the flags are specified in [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx).</span></span> <span data-ttu-id="183ac-116">Suchen Sie nach **PR_WB_SF_STORAGE_TYPE**.</span><span class="sxs-lookup"><span data-stu-id="183ac-116">Search for **PR_WB_SF_STORAGE_TYPE**.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="38423-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="38423-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="183ac-117">Zugehörige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="183ac-117">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="38423-118">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="38423-118">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="183ac-118">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="183ac-118">Protocol specifications</span></span>
 
-<span data-ttu-id="38423-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="38423-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="183ac-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="183ac-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="38423-120">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="38423-120">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="183ac-120">Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.</span><span class="sxs-lookup"><span data-stu-id="183ac-120">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="38423-121">[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="38423-121">[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="183ac-121">[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="183ac-121">[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="38423-122">Gibt die Eigenschaften und Operationen für das Bearbeiten der Liste einer Suchkonfiguration-Ordner.</span><span class="sxs-lookup"><span data-stu-id="38423-122">Specifies the properties and operations for manipulating a search folder list configuration.</span></span>
+> <span data-ttu-id="183ac-122">Gibt die Eigenschaften und Vorgänge zum Bearbeiten einer Suchordner Listen Konfiguration an.</span><span class="sxs-lookup"><span data-stu-id="183ac-122">Specifies the properties and operations for manipulating a search folder list configuration.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="38423-123">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="38423-123">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="183ac-123">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="183ac-123">Header files</span></span>
 
-<span data-ttu-id="38423-124">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="38423-124">Mapidefs.h</span></span>
+<span data-ttu-id="183ac-124">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="183ac-124">Mapidefs.h</span></span>
   
-> <span data-ttu-id="38423-125">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="38423-125">Provides data type definitions.</span></span>
+> <span data-ttu-id="183ac-125">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="183ac-125">Provides data type definitions.</span></span>
     
-<span data-ttu-id="38423-126">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="38423-126">Mapitags.h</span></span>
+<span data-ttu-id="183ac-126">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="183ac-126">Mapitags.h</span></span>
   
-> <span data-ttu-id="38423-127">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="38423-127">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="183ac-127">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="183ac-127">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="38423-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="38423-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="183ac-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="183ac-128">See also</span></span>
 
 
 
-[<span data-ttu-id="38423-129">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="38423-129">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="183ac-129">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="183ac-129">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="38423-130">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="38423-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="183ac-130">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="183ac-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="38423-131">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="38423-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="183ac-131">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="183ac-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="38423-132">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="38423-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="183ac-132">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="183ac-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

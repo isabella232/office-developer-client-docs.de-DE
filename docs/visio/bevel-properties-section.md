@@ -1,25 +1,25 @@
 ---
-title: Bevel Properties Section
+title: Abschnitt "Fase Properties"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1e4bb1ca-1840-4053-86da-079e3a3313e8
-description: Zeigt die Attribute für alle abschrägungseffekte auf die Form angewendet.
-ms.openlocfilehash: ca6c6a7b8e001ab9971b53aea5d64856fb618abf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Zeigt die Attribute für alle abgeschrägten Effekte an, die auf das Shape angewendet werden.
+ms.openlocfilehash: c3affda74ecbeffa3b466a48274f65264018b930
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335637"
 ---
-# <a name="bevel-properties-section"></a><span data-ttu-id="d76b6-103">Bevel Properties Section</span><span class="sxs-lookup"><span data-stu-id="d76b6-103">Bevel Properties Section</span></span>
+# <a name="bevel-properties-section"></a><span data-ttu-id="acc4b-103">Abschnitt "Fase Properties"</span><span class="sxs-lookup"><span data-stu-id="acc4b-103">Bevel Properties Section</span></span>
 
-<span data-ttu-id="d76b6-104">Zeigt die Attribute für alle abschrägungseffekte auf die Form angewendet.</span><span class="sxs-lookup"><span data-stu-id="d76b6-104">Shows the attributes for any bevel effects applied to the shape.</span></span> 
+<span data-ttu-id="acc4b-104">Zeigt die Attribute für alle abgeschrägten Effekte an, die auf das Shape angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="acc4b-104">Shows the attributes for any bevel effects applied to the shape.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="d76b6-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d76b6-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="acc4b-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="acc4b-105">Remarks</span></span>
 
-<span data-ttu-id="d76b6-106">Sie können eine Abschrägung mit einer Form im Bereich **Shape formatieren** anwenden (**Home** > **Formenarten** > **Abschrägung** > **3-d-Optionen**, oder durch die Zellen im Abschnitt **Eigenschaften Abschrägung** der Änderung der ShapeSheet.</span><span class="sxs-lookup"><span data-stu-id="d76b6-106">You can apply a bevel to a shape in the **Format Shape** pane (**Home** > **Shape Styles** > **Bevel** > **3-D Options**, or by making changes to the cells in the **Bevel Properties** section of the ShapeSheet.</span></span> 
+<span data-ttu-id="acc4b-106">Sie können eine Abschrägung auf ein Shape im Bereich **Shape formatieren** (**Start** > **Shape Styles** > \*\*\*\* > **3-D-Optionen**oder durch vornehmen von Änderungen an den Zellen im Abschnitt **abgeflachte Eigenschaften** des ShapeSheet.</span><span class="sxs-lookup"><span data-stu-id="acc4b-106">You can apply a bevel to a shape in the **Format Shape** pane (**Home** > **Shape Styles** > **Bevel** > **3-D Options**, or by making changes to the cells in the **Bevel Properties** section of the ShapeSheet.</span></span> 
   
 
