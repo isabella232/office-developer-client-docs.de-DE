@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c472ce02-4ef4-40a9-51de-12b37f092342
-description: Dieser Member ist ein Platzhalter und wird nicht unterstützt. Es muss immer E_NOTIMPL zurückgegeben.
-ms.openlocfilehash: 417adb0526fe46bc60fb6dd606e66dd3c7004f3b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieser Member ist ein Platzhalter und wird nicht unterstützt. Es muss immer E_NOTIMPL zurückgeben.
+ms.openlocfilehash: 0c263039ed562763cef2ab5e5e3f3a3e5ca90ab2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322085"
 ---
-# <a name="iolkaccounthelperplaceholder1"></a><span data-ttu-id="5ce5d-104">IOlkAccountHelper::Placeholder1</span><span class="sxs-lookup"><span data-stu-id="5ce5d-104">IOlkAccountHelper::Placeholder1</span></span>
+# <a name="iolkaccounthelperplaceholder1"></a><span data-ttu-id="74fa1-104">IOlkAccountHelper::Placeholder1</span><span class="sxs-lookup"><span data-stu-id="74fa1-104">IOlkAccountHelper::Placeholder1</span></span>
 
-<span data-ttu-id="5ce5d-105">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-105">This member is a placeholder and is not supported.</span></span> <span data-ttu-id="5ce5d-106">Es muss immer E_NOTIMPL zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-106">It must always return E_NOTIMPL.</span></span>
+<span data-ttu-id="74fa1-105">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="74fa1-105">This member is a placeholder and is not supported.</span></span> <span data-ttu-id="74fa1-106">Es muss immer E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="74fa1-106">It must always return E_NOTIMPL.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="5ce5d-107">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="5ce5d-107">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="74fa1-107">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="74fa1-107">Quick info</span></span>
 
 ```cpp
 HRESULT IOlkAccountHelper::Placeholder1 (  
@@ -26,15 +26,15 @@ HRESULT IOlkAccountHelper::Placeholder1 (
 );
 ```
 
-## <a name="return-values"></a><span data-ttu-id="5ce5d-108">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="5ce5d-108">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="74fa1-108">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="74fa1-108">Return values</span></span>
 
-<span data-ttu-id="5ce5d-109">Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in [IOlkAccountHelper](iolkaccounthelper.md) und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-109">Always E_NOTIMPL, because this member is a placeholder in [IOlkAccountHelper](iolkaccounthelper.md) and is not supported.</span></span> 
+<span data-ttu-id="74fa1-109">Immer E_NOTIMPL, da dieser Member ein Platzhalter in [IOlkAccountHelper](iolkaccounthelper.md) ist und nicht unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="74fa1-109">Always E_NOTIMPL, because this member is a placeholder in [IOlkAccountHelper](iolkaccounthelper.md) and is not supported.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="5ce5d-110">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5ce5d-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="74fa1-110">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="74fa1-110">Remarks</span></span>
 
-<span data-ttu-id="5ce5d-111">Dieser Member muss immer E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-111">This member must always return E_NOTIMPL.</span></span>
+<span data-ttu-id="74fa1-111">Dieses Element muss immer E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="74fa1-111">This member must always return E_NOTIMPL.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="5ce5d-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5ce5d-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="74fa1-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="74fa1-112">See also</span></span>
 
-- [<span data-ttu-id="5ce5d-113">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="5ce5d-113">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="74fa1-113">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="74fa1-113">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

@@ -8,28 +8,28 @@ f1_keywords:
 - Vis_DSS.chm82251882
 localization_priority: Normal
 ms.assetid: 73dc5981-2c8c-e76e-e4bd-e65a7c8db242
-description: Gibt die Listentrennzeichen Zeichenfolge für das Gebietsschema des aktuellen Benutzers zurück.
-ms.openlocfilehash: 77610b2cf3cc515fb5d3e8b4c6c48de98ab4acc2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die Listentrennzeichen-Zeichenfolge für das aktuelle Benutzergebietsschema zurück.
+ms.openlocfilehash: 901442a3c2af8509855b8b038057e7f813634ea1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322344"
 ---
-# <a name="listsep-function"></a><span data-ttu-id="1a4dd-103">LISTSEP Function</span><span class="sxs-lookup"><span data-stu-id="1a4dd-103">LISTSEP Function</span></span>
+# <a name="listsep-function"></a><span data-ttu-id="3050c-103">LISTSEP Function</span><span class="sxs-lookup"><span data-stu-id="3050c-103">LISTSEP Function</span></span>
 
-<span data-ttu-id="1a4dd-104">Gibt die Listentrennzeichen Zeichenfolge für das Gebietsschema des aktuellen Benutzers zurück.</span><span class="sxs-lookup"><span data-stu-id="1a4dd-104">Returns the list-separator string for the current user locale.</span></span>
+<span data-ttu-id="3050c-104">Gibt die Listentrennzeichen-Zeichenfolge für das aktuelle Benutzergebietsschema zurück.</span><span class="sxs-lookup"><span data-stu-id="3050c-104">Returns the list-separator string for the current user locale.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="1a4dd-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1a4dd-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3050c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="3050c-105">Syntax</span></span>
 
-<span data-ttu-id="1a4dd-106">LISTSEP ()</span><span class="sxs-lookup"><span data-stu-id="1a4dd-106">LISTSEP ()</span></span>
+<span data-ttu-id="3050c-106">LISTSEP ()</span><span class="sxs-lookup"><span data-stu-id="3050c-106">LISTSEP ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="1a4dd-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1a4dd-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="3050c-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3050c-107">Return value</span></span>
 
-<span data-ttu-id="1a4dd-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="1a4dd-108">String</span></span>
+<span data-ttu-id="3050c-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3050c-108">String</span></span>
   
-## <a name="example"></a><span data-ttu-id="1a4dd-109">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1a4dd-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3050c-109">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3050c-109">Example</span></span>
 
-<span data-ttu-id="1a4dd-110">SETF(GETREF(User.Extent), "MAX (Breite" &amp; LISTENTRENNZ() &amp; "(Höhe)")</span><span class="sxs-lookup"><span data-stu-id="1a4dd-110">SETF(GETREF(user.extent), "MAX(Width" &amp; ListSep() &amp; "Height)")</span></span> 
+<span data-ttu-id="3050c-110">SETF (GETREF (User. Extent), "MAX (Breite" &amp; ListSep () &amp; "Height)")</span><span class="sxs-lookup"><span data-stu-id="3050c-110">SETF(GETREF(user.extent), "MAX(Width" &amp; ListSep() &amp; "Height)")</span></span> 
   
 

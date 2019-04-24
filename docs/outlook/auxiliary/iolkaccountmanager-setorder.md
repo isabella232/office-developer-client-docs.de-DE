@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e219adf6-e591-72e6-b9bd-2fc62eb5142d
-description: Ändert die Reihenfolge der angegebenen Kategorie von Konten.
-ms.openlocfilehash: fcb27404471c9b551320027b0ed6979926ad3d58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ändert die Reihenfolge der angegebenen Kontenkategorie.
+ms.openlocfilehash: 29dfe4fd1bda9e323481297167361650c3b3a173
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322043"
 ---
-# <a name="iolkaccountmanagersetorder"></a><span data-ttu-id="d2d50-103">IOlkAccountManager::SetOrder</span><span class="sxs-lookup"><span data-stu-id="d2d50-103">IOlkAccountManager::SetOrder</span></span>
+# <a name="iolkaccountmanagersetorder"></a><span data-ttu-id="ea347-103">IOlkAccountManager::SetOrder</span><span class="sxs-lookup"><span data-stu-id="ea347-103">IOlkAccountManager::SetOrder</span></span>
 
-<span data-ttu-id="d2d50-104">Ändert die Reihenfolge der angegebenen Kategorie von Konten.</span><span class="sxs-lookup"><span data-stu-id="d2d50-104">Modifies the ordering of the specified category of accounts.</span></span>
+<span data-ttu-id="ea347-104">Ändert die Reihenfolge der angegebenen Kontenkategorie.</span><span class="sxs-lookup"><span data-stu-id="ea347-104">Modifies the ordering of the specified category of accounts.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="d2d50-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="d2d50-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="ea347-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="ea347-105">Quick info</span></span>
 
-<span data-ttu-id="d2d50-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="d2d50-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
+<span data-ttu-id="ea347-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="ea347-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
   
 ```cpp
 HRESULT SetOrder(
@@ -31,39 +31,39 @@ HRESULT SetOrder(
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="d2d50-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="d2d50-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="ea347-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="ea347-107">Parameters</span></span>
 
-<span data-ttu-id="d2d50-108">_pclsidCategory_</span><span class="sxs-lookup"><span data-stu-id="d2d50-108">_pclsidCategory_</span></span>
+<span data-ttu-id="ea347-108">_pclsidCategory_</span><span class="sxs-lookup"><span data-stu-id="ea347-108">_pclsidCategory_</span></span>
   
-> <span data-ttu-id="d2d50-109">[in] Die Kategorie Klassen-ID für die die Reihenfolge festgelegt.</span><span class="sxs-lookup"><span data-stu-id="d2d50-109">[in] The category class ID for which to set the order.</span></span> <span data-ttu-id="d2d50-110">Der Wert muss eine der folgenden sein:</span><span class="sxs-lookup"><span data-stu-id="d2d50-110">The value must be one of the following:</span></span>
+> <span data-ttu-id="ea347-109">in Die Kategorie-Klassen-ID, für die die Reihenfolge festgelegt werden soll.</span><span class="sxs-lookup"><span data-stu-id="ea347-109">[in] The category class ID for which to set the order.</span></span> <span data-ttu-id="ea347-110">Bei dem Wert muss es sich um Folgendes handeln:</span><span class="sxs-lookup"><span data-stu-id="ea347-110">The value must be one of the following:</span></span>
     
-   - <span data-ttu-id="d2d50-111">CLSID_OlkAddressBook</span><span class="sxs-lookup"><span data-stu-id="d2d50-111">CLSID_OlkAddressBook</span></span>
+   - <span data-ttu-id="ea347-111">CLSID_OlkAddressBook</span><span class="sxs-lookup"><span data-stu-id="ea347-111">CLSID_OlkAddressBook</span></span>
     
-   - <span data-ttu-id="d2d50-112">CLSID_OlkStore</span><span class="sxs-lookup"><span data-stu-id="d2d50-112">CLSID_OlkStore</span></span>
+   - <span data-ttu-id="ea347-112">CLSID_OlkStore</span><span class="sxs-lookup"><span data-stu-id="ea347-112">CLSID_OlkStore</span></span>
     
-<span data-ttu-id="d2d50-113">_cAccts_</span><span class="sxs-lookup"><span data-stu-id="d2d50-113">_cAccts_</span></span>
+<span data-ttu-id="ea347-113">_cAccts_</span><span class="sxs-lookup"><span data-stu-id="ea347-113">_cAccts_</span></span>
   
-> <span data-ttu-id="d2d50-114">[in] Die Anzahl der Konten.</span><span class="sxs-lookup"><span data-stu-id="d2d50-114">[in] The number of accounts.</span></span>
+> <span data-ttu-id="ea347-114">in Die Anzahl der Konten.</span><span class="sxs-lookup"><span data-stu-id="ea347-114">[in] The number of accounts.</span></span>
     
-<span data-ttu-id="d2d50-115">_rgAccts_</span><span class="sxs-lookup"><span data-stu-id="d2d50-115">_rgAccts_</span></span>
+<span data-ttu-id="ea347-115">_rgAccts_</span><span class="sxs-lookup"><span data-stu-id="ea347-115">_rgAccts_</span></span>
   
-> <span data-ttu-id="d2d50-116">[in] Ein Array von Konto-IDs.</span><span class="sxs-lookup"><span data-stu-id="d2d50-116">[in] An array of account IDs.</span></span> <span data-ttu-id="d2d50-117">Die Größe des Arrays ist _cAccts_.</span><span class="sxs-lookup"><span data-stu-id="d2d50-117">The size of the array is  _cAccts_.</span></span>
+> <span data-ttu-id="ea347-116">in Ein Array von Konto-IDs.</span><span class="sxs-lookup"><span data-stu-id="ea347-116">[in] An array of account IDs.</span></span> <span data-ttu-id="ea347-117">Die Größe des Arrays ist _cAccts_.</span><span class="sxs-lookup"><span data-stu-id="ea347-117">The size of the array is  _cAccts_.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="d2d50-118">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="d2d50-118">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="ea347-118">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="ea347-118">Return values</span></span>
 
-|<span data-ttu-id="d2d50-119">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="d2d50-119">**HRESULT**</span></span>|<span data-ttu-id="d2d50-120">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d2d50-120">**Description**</span></span>|
+|<span data-ttu-id="ea347-119">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="ea347-119">**HRESULT**</span></span>|<span data-ttu-id="ea347-120">**Description**</span><span class="sxs-lookup"><span data-stu-id="ea347-120">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="d2d50-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="d2d50-121">S_OK</span></span>  <br/> |<span data-ttu-id="d2d50-122">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="d2d50-122">The call succeeded.</span></span>  <br/> |
-|<span data-ttu-id="d2d50-123">E_ACCT_WRONG_SORT_ORDER</span><span class="sxs-lookup"><span data-stu-id="d2d50-123">E_ACCT_WRONG_SORT_ORDER</span></span>  <br/> |<span data-ttu-id="d2d50-124">Der Sortierreihenfolge bei neuer verfügt über eine unterschiedliche Anzahl von Konten als die alte Sortierreihenfolge.</span><span class="sxs-lookup"><span data-stu-id="d2d50-124">The new sort order has a different number of accounts than the old sort order.</span></span>  <br/> |
-|<span data-ttu-id="d2d50-125">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="d2d50-125">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="d2d50-126">Mindestens ein Argument ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="d2d50-126">One or more arguments are invalid.</span></span>  <br/> |
-|<span data-ttu-id="d2d50-127">E_OLK_NOT_INITIALIZED</span><span class="sxs-lookup"><span data-stu-id="d2d50-127">E_OLK_NOT_INITIALIZED</span></span>  <br/> |<span data-ttu-id="d2d50-128">Konto-Manager wurde nicht für die Verwendung initialisiert.</span><span class="sxs-lookup"><span data-stu-id="d2d50-128">The account manager has not been initialized for use.</span></span>  <br/> |
+|<span data-ttu-id="ea347-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="ea347-121">S_OK</span></span>  <br/> |<span data-ttu-id="ea347-122">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="ea347-122">The call succeeded.</span></span>  <br/> |
+|<span data-ttu-id="ea347-123">E_ACCT_WRONG_SORT_ORDER</span><span class="sxs-lookup"><span data-stu-id="ea347-123">E_ACCT_WRONG_SORT_ORDER</span></span>  <br/> |<span data-ttu-id="ea347-124">Die neue Sortierreihenfolge hat eine unterschiedliche Anzahl von Konten als die alte Sortierreihenfolge.</span><span class="sxs-lookup"><span data-stu-id="ea347-124">The new sort order has a different number of accounts than the old sort order.</span></span>  <br/> |
+|<span data-ttu-id="ea347-125">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="ea347-125">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="ea347-126">Mindestens ein Argument ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="ea347-126">One or more arguments are invalid.</span></span>  <br/> |
+|<span data-ttu-id="ea347-127">E_OLK_NOT_INITIALIZED</span><span class="sxs-lookup"><span data-stu-id="ea347-127">E_OLK_NOT_INITIALIZED</span></span>  <br/> |<span data-ttu-id="ea347-128">Konto-Manager wurde nicht für die Verwendung initialisiert.</span><span class="sxs-lookup"><span data-stu-id="ea347-128">The account manager has not been initialized for use.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d2d50-129">Hinweise</span><span class="sxs-lookup"><span data-stu-id="d2d50-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ea347-129">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ea347-129">Remarks</span></span>
 
-<span data-ttu-id="d2d50-130">Der Aufrufer reserviert Speicher für das Array Zeiger _PrgAccts_ ebenso wie für das Array an welche _PrgAccts_ Punkten.</span><span class="sxs-lookup"><span data-stu-id="d2d50-130">The caller allocates memory for the array pointer  _prgAccts_ as well as for the array at which  _prgAccts_ points.</span></span> 
+<span data-ttu-id="ea347-130">Der Aufrufer reserviert Speicher für den Array Zeiger _prgAccts_ sowie für das Array, an dem _prgAccts_ zeigt.</span><span class="sxs-lookup"><span data-stu-id="ea347-130">The caller allocates memory for the array pointer  _prgAccts_ as well as for the array at which  _prgAccts_ points.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="d2d50-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d2d50-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ea347-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ea347-131">See also</span></span>
 
-- [<span data-ttu-id="d2d50-132">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="d2d50-132">Constants (Account management API)</span></span>](constants-account-management-api.md)  
-- [<span data-ttu-id="d2d50-133">IOlkAccountManager::GetOrder</span><span class="sxs-lookup"><span data-stu-id="d2d50-133">IOlkAccountManager::GetOrder</span></span>](iolkaccountmanager-getorder.md)
+- [<span data-ttu-id="ea347-132">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="ea347-132">Constants (Account management API)</span></span>](constants-account-management-api.md)  
+- [<span data-ttu-id="ea347-133">IOlkAccountManager::GetOrder</span><span class="sxs-lookup"><span data-stu-id="ea347-133">IOlkAccountManager::GetOrder</span></span>](iolkaccountmanager-getorder.md)
 

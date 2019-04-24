@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 883b1c5d-47dd-a006-b5f1-130691bdd019
-description: Legt den Wert der Eigenschaft angegebene Konto.
-ms.openlocfilehash: 2bb8a323f5f3399b9eac1cfdf9ac18faddfdb259
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Legt den Wert der angegebenen Account-Eigenschaft fest.
+ms.openlocfilehash: 94134cee7886177ab840a6caff7d70d65bf9d4cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322253"
 ---
-# <a name="iolkaccountsetprop"></a><span data-ttu-id="4f755-103">IOlkAccount::SetProp</span><span class="sxs-lookup"><span data-stu-id="4f755-103">IOlkAccount::SetProp</span></span>
+# <a name="iolkaccountsetprop"></a><span data-ttu-id="d4680-103">IOlkAccount::SetProp</span><span class="sxs-lookup"><span data-stu-id="d4680-103">IOlkAccount::SetProp</span></span>
 
-<span data-ttu-id="4f755-104">Legt den Wert der Eigenschaft angegebene Konto.</span><span class="sxs-lookup"><span data-stu-id="4f755-104">Sets the value of the specified account property.</span></span>
+<span data-ttu-id="d4680-104">Legt den Wert der angegebenen Account-Eigenschaft fest.</span><span class="sxs-lookup"><span data-stu-id="d4680-104">Sets the value of the specified account property.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="4f755-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="4f755-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="d4680-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="d4680-105">Quick info</span></span>
 
-<span data-ttu-id="4f755-106">Finden Sie unter [IOlkAccount](iolkaccount.md).</span><span class="sxs-lookup"><span data-stu-id="4f755-106">See [IOlkAccount](iolkaccount.md).</span></span>
+<span data-ttu-id="d4680-106">Siehe [IOlkAccount](iolkaccount.md).</span><span class="sxs-lookup"><span data-stu-id="d4680-106">See [IOlkAccount](iolkaccount.md).</span></span>
   
 ```cpp
 HRESULT IOlkAccount::SetProp(  
@@ -29,29 +29,29 @@ HRESULT IOlkAccount::SetProp(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="4f755-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="4f755-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d4680-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="d4680-107">Parameters</span></span>
 
-<span data-ttu-id="4f755-108">_dwProp_</span><span class="sxs-lookup"><span data-stu-id="4f755-108">_dwProp_</span></span>
+<span data-ttu-id="d4680-108">_dwProp_</span><span class="sxs-lookup"><span data-stu-id="d4680-108">_dwProp_</span></span>
   
-> <span data-ttu-id="4f755-109">[in] Die Eigenschaftstag der Konto-Eigenschaft festgelegt.</span><span class="sxs-lookup"><span data-stu-id="4f755-109">[in] The property tag of the account property to set.</span></span>
+> <span data-ttu-id="d4680-109">in Das Property-Tag der festzulegenden Account-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="d4680-109">[in] The property tag of the account property to set.</span></span>
     
-<span data-ttu-id="4f755-110">_pVar_</span><span class="sxs-lookup"><span data-stu-id="4f755-110">_pVar_</span></span>
+<span data-ttu-id="d4680-110">_pVar_</span><span class="sxs-lookup"><span data-stu-id="d4680-110">_pVar_</span></span>
   
-> <span data-ttu-id="4f755-111">[in] Der Wert der angegebenen Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="4f755-111">[in] The value of the specified property.</span></span>
+> <span data-ttu-id="d4680-111">in Der Wert der angegebenen Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="d4680-111">[in] The value of the specified property.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="4f755-112">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="4f755-112">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="d4680-112">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="d4680-112">Return values</span></span>
 
-|<span data-ttu-id="4f755-113">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="4f755-113">**HRESULT**</span></span>|<span data-ttu-id="4f755-114">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="4f755-114">**Description**</span></span>|
+|<span data-ttu-id="d4680-113">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="d4680-113">**HRESULT**</span></span>|<span data-ttu-id="d4680-114">**Description**</span><span class="sxs-lookup"><span data-stu-id="d4680-114">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="4f755-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="4f755-115">S_OK</span></span>  <br/> |<span data-ttu-id="4f755-116">Methodenaufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="4f755-116">The method call was successful.</span></span>  <br/> |
-|<span data-ttu-id="4f755-117">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="4f755-117">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="4f755-118">Eine ungültige Eigenschafts-Tag angegeben wurde.</span><span class="sxs-lookup"><span data-stu-id="4f755-118">An invalid property tag was specified.</span></span>  <br/> |
+|<span data-ttu-id="d4680-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="d4680-115">S_OK</span></span>  <br/> |<span data-ttu-id="d4680-116">Der Methodenaufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="d4680-116">The method call was successful.</span></span>  <br/> |
+|<span data-ttu-id="d4680-117">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="d4680-117">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="d4680-118">Es wurde ein ungültiges Property-Tag angegeben.</span><span class="sxs-lookup"><span data-stu-id="d4680-118">An invalid property tag was specified.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="4f755-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4f755-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d4680-119">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d4680-119">Remarks</span></span>
 
-<span data-ttu-id="4f755-120">Verwenden Sie [IOlkAccount::SaveChanges](iolkaccount-savechanges.md) , um Änderungen auf den Wert der Eigenschaften von Benutzerkonten zu speichern.</span><span class="sxs-lookup"><span data-stu-id="4f755-120">Use [IOlkAccount::SaveChanges](iolkaccount-savechanges.md) to save changes to the value of account properties.</span></span> 
+<span data-ttu-id="d4680-120">Verwenden Sie [IOlkAccount:: SaveChanges](iolkaccount-savechanges.md) , um Änderungen am Wert der Kontoeigenschaften zu speichern.</span><span class="sxs-lookup"><span data-stu-id="d4680-120">Use [IOlkAccount::SaveChanges](iolkaccount-savechanges.md) to save changes to the value of account properties.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="4f755-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4f755-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d4680-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d4680-121">See also</span></span>
 
-- [<span data-ttu-id="4f755-122">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="4f755-122">Constants (Account management API)</span></span>](constants-account-management-api.md) 
-- [<span data-ttu-id="4f755-123">IOlkAccount::GetProp</span><span class="sxs-lookup"><span data-stu-id="4f755-123">IOlkAccount::GetProp</span></span>](iolkaccount-getprop.md)
+- [<span data-ttu-id="d4680-122">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="d4680-122">Constants (Account management API)</span></span>](constants-account-management-api.md) 
+- [<span data-ttu-id="d4680-123">IOlkAccount::GetProp</span><span class="sxs-lookup"><span data-stu-id="d4680-123">IOlkAccount::GetProp</span></span>](iolkaccount-getprop.md)
 

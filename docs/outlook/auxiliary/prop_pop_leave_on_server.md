@@ -6,41 +6,41 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 22d7c1e8-48b9-4768-b4de-9a9f32a3aabb
-description: Gibt an, wobei eine Kopie einer Nachricht auf dem Server für ein POP-Konto.
-ms.openlocfilehash: 9f986ff60a5824ece0a8bb91619323b58ec8b87a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt an, dass eine Kopie einer Nachricht auf dem Server für ein POP-Konto hinterlassen werden soll.
+ms.openlocfilehash: e1bbddea0f10c07d630676960d1b330f6055e137
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326488"
 ---
-# <a name="proppopleaveonserver"></a><span data-ttu-id="91e43-103">PROP_POP_LEAVE_ON_SERVER</span><span class="sxs-lookup"><span data-stu-id="91e43-103">PROP_POP_LEAVE_ON_SERVER</span></span>
+# <a name="proppopleaveonserver"></a><span data-ttu-id="f3610-103">PROP_POP_LEAVE_ON_SERVER</span><span class="sxs-lookup"><span data-stu-id="f3610-103">PROP_POP_LEAVE_ON_SERVER</span></span>
 
-<span data-ttu-id="91e43-104">Gibt an, wobei eine Kopie einer Nachricht auf dem Server für ein POP-Konto.</span><span class="sxs-lookup"><span data-stu-id="91e43-104">Specifies leaving a copy of a message on the server for a POP account.</span></span>
+<span data-ttu-id="f3610-104">Gibt an, dass eine Kopie einer Nachricht auf dem Server für ein POP-Konto hinterlassen werden soll.</span><span class="sxs-lookup"><span data-stu-id="f3610-104">Specifies leaving a copy of a message on the server for a POP account.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="91e43-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="91e43-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f3610-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="f3610-105">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="91e43-106">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="91e43-106">Identifier:</span></span>  <br/> |<span data-ttu-id="91e43-107">0 x 1000</span><span class="sxs-lookup"><span data-stu-id="91e43-107">0x1000</span></span>  <br/> |
-|<span data-ttu-id="91e43-108">Der Eigenschaftentyp:</span><span class="sxs-lookup"><span data-stu-id="91e43-108">Property type:</span></span>  <br/> |<span data-ttu-id="91e43-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="91e43-109">PT_DWORD</span></span>  <br/> |
-|<span data-ttu-id="91e43-110">Eigenschafts-Tag:</span><span class="sxs-lookup"><span data-stu-id="91e43-110">Property tag:</span></span>  <br/> |<span data-ttu-id="91e43-111">0x10000003</span><span class="sxs-lookup"><span data-stu-id="91e43-111">0x10000003</span></span>  <br/> |
-|<span data-ttu-id="91e43-112">Access:</span><span class="sxs-lookup"><span data-stu-id="91e43-112">Access:</span></span>  <br/> |<span data-ttu-id="91e43-113">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="91e43-113">Read-only</span></span>  <br/> |
+|<span data-ttu-id="f3610-106">Kennung:</span><span class="sxs-lookup"><span data-stu-id="f3610-106">Identifier:</span></span>  <br/> |<span data-ttu-id="f3610-107">0x1000</span><span class="sxs-lookup"><span data-stu-id="f3610-107">0x1000</span></span>  <br/> |
+|<span data-ttu-id="f3610-108">Eigenschafts:</span><span class="sxs-lookup"><span data-stu-id="f3610-108">Property type:</span></span>  <br/> |<span data-ttu-id="f3610-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="f3610-109">PT_DWORD</span></span>  <br/> |
+|<span data-ttu-id="f3610-110">Property-Tag:</span><span class="sxs-lookup"><span data-stu-id="f3610-110">Property tag:</span></span>  <br/> |<span data-ttu-id="f3610-111">0x10000003</span><span class="sxs-lookup"><span data-stu-id="f3610-111">0x10000003</span></span>  <br/> |
+|<span data-ttu-id="f3610-112">Access</span><span class="sxs-lookup"><span data-stu-id="f3610-112">Access:</span></span>  <br/> |<span data-ttu-id="f3610-113">Schreibgeschützt</span><span class="sxs-lookup"><span data-stu-id="f3610-113">Read-only</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="91e43-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="91e43-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f3610-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f3610-114">Remarks</span></span>
 
-<span data-ttu-id="91e43-115">In der folgenden Tabelle sind die möglichen Werte aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="91e43-115">The following table lists the possible values.</span></span> <span data-ttu-id="91e43-116">Weitere Informationen zu Konstanten finden Sie unter [Konstanten (Konto Management-API)](constants-account-management-api.md) .</span><span class="sxs-lookup"><span data-stu-id="91e43-116">See [Constants (Account management API)](constants-account-management-api.md) for more information on the constants.</span></span> 
+<span data-ttu-id="f3610-115">In der folgenden Tabelle sind die möglichen Werte aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="f3610-115">The following table lists the possible values.</span></span> <span data-ttu-id="f3610-116">Weitere Informationen zu den Konstanten finden Sie unter [Constants (Account Management API)](constants-account-management-api.md) .</span><span class="sxs-lookup"><span data-stu-id="f3610-116">See [Constants (Account management API)](constants-account-management-api.md) for more information on the constants.</span></span> 
   
-|<span data-ttu-id="91e43-117">**Mögliche Werte**</span><span class="sxs-lookup"><span data-stu-id="91e43-117">**Possible values**</span></span>|<span data-ttu-id="91e43-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="91e43-118">**Description**</span></span>|
+|<span data-ttu-id="f3610-117">**Mögliche Werte**</span><span class="sxs-lookup"><span data-stu-id="f3610-117">**Possible values**</span></span>|<span data-ttu-id="f3610-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f3610-118">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="91e43-119">**LEAVE_ON_SERVER**</span><span class="sxs-lookup"><span data-stu-id="91e43-119">**LEAVE_ON_SERVER**</span></span> <br/> |<span data-ttu-id="91e43-120">Bewirkt, dass eine Kopie der Nachricht auf dem POP-Server nach dem Herunterladen der Nachricht zu einem Gerät.</span><span class="sxs-lookup"><span data-stu-id="91e43-120">Leaves a copy of the message on the POP server after downloading the message to a device.</span></span>  <br/> |
-|<span data-ttu-id="91e43-121">**REMOVE_AFTER**</span><span class="sxs-lookup"><span data-stu-id="91e43-121">**REMOVE_AFTER**</span></span> <br/> |<span data-ttu-id="91e43-122">Entfernt die Nachricht vom POP-Server nach dem Herunterladen zu einem Gerät.</span><span class="sxs-lookup"><span data-stu-id="91e43-122">Removes the message from the POP server after downloading it to a device.</span></span>  <br/> |
-|<span data-ttu-id="91e43-123">**REMOVE_ON_NUKE**</span><span class="sxs-lookup"><span data-stu-id="91e43-123">**REMOVE_ON_NUKE**</span></span> <br/> |<span data-ttu-id="91e43-124">Entfernt die Nachricht vom POP-Server, nur, nachdem der Benutzer die Nachricht aus dem Ordner Gelöschte Elemente löscht.</span><span class="sxs-lookup"><span data-stu-id="91e43-124">Removes the message from the POP server only after the user deletes the message from the Deleted Items folder.</span></span>  <br/> |
-|<span data-ttu-id="91e43-125">**GET_REMOVE_AFTER_DAYS** ( _Ul_)</span><span class="sxs-lookup"><span data-stu-id="91e43-125">**GET_REMOVE_AFTER_DAYS**( _ul_)</span></span>  <br/> |<span data-ttu-id="91e43-126">Ruft die Anzahl der Tage nach denen die Nachricht vom POP-Server entfernt wird.</span><span class="sxs-lookup"><span data-stu-id="91e43-126">Gets the number of days after which the message will be removed from the POP server.</span></span>  <br/> |
-|<span data-ttu-id="91e43-127">**SET_REMOVE_AFTER_DAYS** ( _Tage_)</span><span class="sxs-lookup"><span data-stu-id="91e43-127">**SET_REMOVE_AFTER_DAYS**( _days_)</span></span>  <br/> |<span data-ttu-id="91e43-128">Legt die Anzahl der Tage nach denen die Nachricht vom POP-Server entfernt wird.</span><span class="sxs-lookup"><span data-stu-id="91e43-128">Sets the number of days after which the message will be removed from the POP server.</span></span>  <br/> |
+|<span data-ttu-id="f3610-119">**LEAVE_ON_SERVER**</span><span class="sxs-lookup"><span data-stu-id="f3610-119">**LEAVE_ON_SERVER**</span></span> <br/> |<span data-ttu-id="f3610-120">HinTerlässt eine Kopie der Nachricht auf dem POP-Server nach dem Herunterladen der Nachricht auf ein Gerät.</span><span class="sxs-lookup"><span data-stu-id="f3610-120">Leaves a copy of the message on the POP server after downloading the message to a device.</span></span>  <br/> |
+|<span data-ttu-id="f3610-121">**REMOVE_AFTER**</span><span class="sxs-lookup"><span data-stu-id="f3610-121">**REMOVE_AFTER**</span></span> <br/> |<span data-ttu-id="f3610-122">Entfernt die Nachricht vom POP-Server, nachdem Sie Sie auf ein Gerät heruntergeladen hat.</span><span class="sxs-lookup"><span data-stu-id="f3610-122">Removes the message from the POP server after downloading it to a device.</span></span>  <br/> |
+|<span data-ttu-id="f3610-123">**REMOVE_ON_NUKE**</span><span class="sxs-lookup"><span data-stu-id="f3610-123">**REMOVE_ON_NUKE**</span></span> <br/> |<span data-ttu-id="f3610-124">Entfernt die Nachricht erst vom POP-Server, nachdem der Benutzer die Nachricht aus dem Ordner Gelöschte Elemente gelöscht hat.</span><span class="sxs-lookup"><span data-stu-id="f3610-124">Removes the message from the POP server only after the user deletes the message from the Deleted Items folder.</span></span>  <br/> |
+|<span data-ttu-id="f3610-125">**GET_REMOVE_AFTER_DAYS** ( _UL_)</span><span class="sxs-lookup"><span data-stu-id="f3610-125">**GET_REMOVE_AFTER_DAYS**( _ul_)</span></span>  <br/> |<span data-ttu-id="f3610-126">Ruft die Anzahl der Tage ab, nach denen die Nachricht vom POP-Server entfernt wird.</span><span class="sxs-lookup"><span data-stu-id="f3610-126">Gets the number of days after which the message will be removed from the POP server.</span></span>  <br/> |
+|<span data-ttu-id="f3610-127">**SET_REMOVE_AFTER_DAYS** ( _Tage_)</span><span class="sxs-lookup"><span data-stu-id="f3610-127">**SET_REMOVE_AFTER_DAYS**( _days_)</span></span>  <br/> |<span data-ttu-id="f3610-128">Legt die Anzahl der Tage fest, nach denen die Nachricht vom POP-Server entfernt wird.</span><span class="sxs-lookup"><span data-stu-id="f3610-128">Sets the number of days after which the message will be removed from the POP server.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="91e43-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="91e43-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f3610-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f3610-129">See also</span></span>
 
-- [<span data-ttu-id="91e43-130">Verwalten des Nachrichtendownloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="91e43-130">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md) 
-- [<span data-ttu-id="91e43-131">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="91e43-131">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="f3610-130">Verwalten des Nachrichtendownloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="f3610-130">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md) 
+- [<span data-ttu-id="f3610-131">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="f3610-131">Constants (Account management API)</span></span>](constants-account-management-api.md)
 
