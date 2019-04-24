@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 06803c1a37f848580025103914838d59f0b5f59a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292209"
 ---
 # <a name="getrows-method-example-vj"></a>GetRows-Methode (Beispiel) (VJ++)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die GetRows-Methode verwendet, um eine angegebene Anzahl von Zeilen aus einem Recordset-Objekt abzurufen und um ein Array mit den resultierenden Daten aufzufüllen. Die GetRows-Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn EOF erreicht wurde oder wenn GetRows versucht hat, einen Wert abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall False zurück. Die GetRowsOK-Funktion ist erforderlich, damit dieser Vorgang ausgeführt werden kann.
+This example uses the [GetRows](getrows-method-ado.md) method to retrieve a specified number of rows from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return less than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.
 
 ```java 
  

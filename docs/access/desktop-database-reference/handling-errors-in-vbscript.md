@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3f3da0d9e68024d7da9a0bcfca0fef30c7f646ed
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292048"
 ---
 # <a name="handling-errors-in-vbscript"></a>Behandeln von Fehlern in VBScript
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Es gibt kaum Unterschiede zwischen den in Visual Basic und VBScript verwendeten Methoden. Der wichtigste Unterschied ist, dass in VBScript das Konzept der Fehlerbehandlung durch Fortsetzen der Ausführung an einer Marke nicht unterstützt wird. Sie können nicht mit anderen Worten, On Error GoTo in VBScript verwenden. Verwenden Sie stattdessen in VBScript. In diesem Fall verwenden Sie On Error Resume Next, und überprüfen Sie **Err.Number** und die **Count** -Eigenschaft der **Errors** -Auflistung, wie im folgenden Beispiel dargestellt:
+Es gibt kaum Unterschiede zwischen den in Visual Basic und VBScript verwendeten Methoden. Der wichtigste Unterschied ist, dass in VBScript das Konzept der Fehlerbehandlung durch Fortsetzen der Ausführung an einer Marke nicht unterstützt wird. Anders ausgedrückt: Sie können On Error GoTo in VBScript nicht verwenden. Verwenden Sie stattdessen in VBScript. Verwenden Sie stattdessen bei Fehler Resume Next, und überprüfen Sie dann sowohl **Err. Number** als auch die **count** -Eigenschaft der **Errors** -Auflistung, wie im folgenden Beispiel dargestellt:
 
 ```vb 
  

@@ -1,5 +1,5 @@
 ---
-title: Field2.DefaultValue-Eigenschaft (DAO)
+title: Field2. DefaultValue-Eigenschaft (DAO)
 TOCTitle: DefaultValue Property
 ms:assetid: 709c9580-520e-46ce-7d70-e409872184bb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195744(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 845a2e0c7ffa5d54d73c4fcec1a6c785468d734e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292832"
 ---
-# <a name="field2defaultvalue-property-dao"></a>Field2.DefaultValue-Eigenschaft (DAO)
+# <a name="field2defaultvalue-property-dao"></a>Field2. DefaultValue-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt den Standardwert eines **Field2**-Objekts fest oder gibt den Wert zurück. Bei einem **Field2**-Objekt, das der **[Fields](fields-collection-dao.md)** -Auflistung noch nicht angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff (gilt nur für Microsoft Access-Arbeitsbereiche).
 
@@ -69,7 +69,7 @@ Die Verfügbarkeit der **DefaultValue**-Eigenschaft hängt vom Objekt ab, in dem
 </tr>
 <tr class="odd">
 <td><p>TableDef-Objekt</p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 </tbody>
 </table>
@@ -81,7 +81,7 @@ Die **DefaultValue**-Eigenschaft wird nicht auf Felder vom Datentyp **AutoNumber
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel verwendet die DefaultValue-Eigenschaft, um den Benutzer auf den üblichen Wert eines Felds hinzuweisen und ihn zur Eingabe eines Werts aufzufordern. Es zeigt außerdem, wie neue Datensätze bei fehlender Eingabe mithilfe der DefaultValue-Eigenschaft gefüllt werden. Zum Ausführen dieser Prozedur ist die DefaultPrompt-Funktion erforderlich.
+This example uses the **DefaultValue** property to alert the user of a field's normal value while prompting for input. In addition, it demonstrates how new records will be filled using **DefaultValue** in the absence of any other input. The DefaultPrompt function is required for this procedure to run.
 
 ```vb
     Sub DefaultValueX() 

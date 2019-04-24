@@ -1,5 +1,5 @@
 ---
-title: Recordset.RecordsetType-Eigenschaft (DAO)
+title: Recordset. RecordsetType-Eigenschaft (DAO)
 TOCTitle: RecordsetType Property
 ms:assetid: a66d4043-08cc-ead1-f9ff-efc7d7ea21bf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821178(v=office.15)
@@ -12,27 +12,27 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 64f7dda8bec7806ef510d265deab350dc3cdad6b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307630"
 ---
-# <a name="recordsetrecordsettype-property-dao"></a>Recordset.RecordsetType-Eigenschaft (DAO)
+# <a name="recordsetrecordsettype-property-dao"></a>Recordset. RecordsetType-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können mit der **RecordsetType** -Eigenschaft angeben, welche Art von Recordset für ein Formular bereit gestellt wird. **Byte** -Wert mit Lese-/Schreibzugriff.
+Sie können mit der **RecordsetType**-Eigenschaft angeben, welche Art von Recordset für ein Formular bereit gestellt wird. **Byte**-Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . RecordsetType
 
-*expression*  Eine Variable, die ein **Form**-Objekt darstellt.
+*expression* Eine Variable, die ein **Form**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in einer Microsoft Access-Datenbank.
+Die **RecordsetType**-Eigenschaft verwendet die folgenden Einstellungen in einer Microsoft Access-Datenbank.
 
 <table>
 <colgroup>
@@ -51,7 +51,7 @@ Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in eine
 <tr class="odd">
 <td><p>0</p></td>
 <td><p>Dynaset</p></td>
-<td><p>(Standardeinstellung) Sie können gebundene Steuerelemente auf der Basis einer einzigen Tabelle oder von Tabellen mit einer 1:1-Beziehung bearbeiten. Für auf Grundlage von Tabellen mit einer 1: n-Beziehung Felder gebundenen Steuerelemente, können nicht Sie Daten aus dem Feld Join bearbeiten, klicken Sie auf die &quot;eine&quot; Seite der Beziehung, es sei denn, Aktualisierungsweitergabe zwischen den Tabellen aktiviert ist.</p></td>
+<td><p>(Standardeinstellung) Sie können gebundene Steuerelemente auf der Basis einer einzigen Tabelle oder von Tabellen mit einer 1:1-Beziehung bearbeiten. Für Steuerelemente, die an Felder gebunden sind, die auf Tabellen mit einer 1: n-Beziehung basieren, können Sie Daten aus dem &quot;Join&quot; -Feld auf der 1-Seite der Beziehung nur bearbeiten, wenn die Cascade-Aktualisierung zwischen den Tabellen aktiviert ist.</p></td>
 </tr>
 <tr class="even">
 <td><p>1</p></td>
@@ -67,9 +67,9 @@ Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in eine
 </table>
 
 > [!NOTE]
-> [!HINWEIS] Wenn Sie vermeiden möchten, dass Daten in gebundenen Steuerelementen bearbeitet werden, wenn das Formular in der Formularansicht oder Datenblattansicht angezeigt wird, können Sie die **RecordsetType** -Eigenschaft auf 2 festlegen.
+> Wenn Sie vermeiden möchten, dass Daten in gebundenen Steuerelementen bearbeitet werden, wenn das Formular in der Formularansicht oder Datenblattansicht angezeigt wird, können Sie die **RecordsetType**-Eigenschaft auf 2 festlegen.
 
-Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in einem Microsoft Access-Projekt (ADP).
+Die **RecordsetType**-Eigenschaft verwendet die folgenden Einstellungen in einem Microsoft Access-Projekt (ADP).
 
 <table>
 <colgroup>
@@ -99,7 +99,7 @@ Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in eine
 </table>
 
 > [!NOTE]
-> [!HINWEIS] Wenn die **RecordsetType** -Eigenschaft eines geöffneten Formulars oder Berichts geändert wird, führt dies zu einer automatischen Neuerstellung der Datensatzgruppe.
+> Wenn die **RecordsetType**-Eigenschaft eines geöffneten Formulars oder Berichts geändert wird, führt dies zu einer automatischen Neuerstellung der Datensatzgruppe.
 
 Sie können Formulare erstellen, die auf mehreren zugrunde liegenden Tabellen basieren, an deren Felder Steuerelemente in den Formularen gebunden sind. Abhängig von der Einstellung der **RecordsetType** -Eigenschaft können Sie einschränken, welche gebundenen Steuerelemente bearbeitet werden können.
 

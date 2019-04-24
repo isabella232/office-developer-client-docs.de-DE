@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 43f248ba529991190ae3d322a65a158bd9a4e6e1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300379"
 ---
 # <a name="recordsetname-property-dao"></a>Recordset.Name-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter **String**-Wert.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Name
+*Ausdruck* . Namen
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 

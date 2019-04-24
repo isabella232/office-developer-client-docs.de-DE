@@ -1,5 +1,5 @@
 ---
-title: Field2.Size-Eigenschaft (DAO)
+title: Field2. Size-Eigenschaft (DAO)
 TOCTitle: Size Property
 ms:assetid: e252759a-cea9-25cb-667d-80b422fbf97e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835700(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f1467414729f4ea82bc2779eeb2bd162465b5ccd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292685"
 ---
-# <a name="field2size-property-dao"></a>Field2.Size-Eigenschaft (DAO)
+# <a name="field2size-property-dao"></a>Field2. Size-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die maximale Größe eines **Field2**-Objekts in Bytes angibt.
@@ -30,7 +30,7 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die max
 
 ## <a name="remarks"></a>Bemerkungen
 
-Für ein Objekt, das noch nicht an die **[Fields](fields-collection-dao.md)** -Auflistung angehängt wurde, besteht Lese-/Schreibzugriff für diese Eigenschaft.
+Bei einem Objekt, das noch nicht der **[Fields](fields-collection-dao.md)** -Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 
 Bei Feldern (außer Memofeldern), die Zeichendaten enthalten, gibt die **Size**-Eigenschaft die maximale Anzahl von Zeichen an, die ein Feld enthalten kann. Bei numerischen Feldern gibt die **Size**-Eigenschaft an, wie viel Speicherplatz in Bytes erforderlich ist.
 
@@ -54,11 +54,11 @@ Die Verwendung der **Size**-Eigenschaft hängt vom Objekt ab, das die **Fields**
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Beziehung</strong></p></td>
@@ -66,19 +66,19 @@ Die Verwendung der **Size**-Eigenschaft hängt vom Objekt ab, das die **Fields**
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Wenn Sie ein Field2-Objekt mit einem anderen Datentyp als Text erstellen, bestimmt die Einstellung der Type-Eigenschaft automatisch die Einstellung der Size-Eigenschaft, und Sie müssen die Eigenschaft nicht festlegen. Bei einem  Field2-Objekt mit dem Datentyp Text können Sie die Size-Eigenschaft jedoch auf eine ganze Zahl bis zu einer maximalen Textgröße festlegen (255 bei Microsoft Access-Datenbanken). Wenn Sie die Größe nicht festlegen, besitzt das Feld die in der Datenbank zulässige Größe.
+When you create a **Field2** object with a data type other than Text, the **Type** property setting automatically determines the **Size** property setting; you don't need to set it. For a **Field2** object with the Text data type, however, you can set **Size** to any integer up to the maximum text size (255 for Microsoft Access database engine databases). If you do not set the size, the field will be as large as the database allows.
 
-Bei Field2-Objekten vom Datentyp Long Binary und Memo ist die Size-Eigenschaft immer auf 0 festgelegt. Bestimmen Sie mit der FieldSize-Eigenschaft des Field2-Objekts den Umfang der Daten in einem bestimmten Datensatz. Die maximale Größe eines Felds vom Typ Long Binary oder Memo wird nur durch die Systemressourcen oder die maximal in der Datenbank zulässige Größe beschränkt.
+For Long Binary and Memo **Field2** objects, **Size** is always set to 0. Use the **FieldSize** property of the **Field2** object to determine the size of the data in a specific record. The maximum size of a Long Binary or Memo field is limited only by your system resources or the maximum size that the database allows.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel veranschaulicht die Size-Eigenschaft, indem es die Namen und Größen des Field2-Objekts in der Employees-Tabelle (Personal) aufzählt.
+This example demonstrates the **Size** property by enumerating the names and sizes of the **Field2** objects in the Employees table.
 
 ```vb
     Sub SizeX() 

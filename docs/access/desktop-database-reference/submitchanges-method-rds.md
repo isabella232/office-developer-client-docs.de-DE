@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ea7f3e27a75b4483cb8cf46e27d4492f831cff33
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314399"
 ---
 # <a name="submitchanges-method-rds"></a>SubmitChanges-Methode (RDS)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sendet ausstehende Änderungen des lokal zwischengespeicherten und aktualisierbaren [Recordset](recordset-object-ado.md)-Objekts an die in der [Connect](connect-property-rds.md)-Eigenschaft oder der [URL](url-property-rds.md)-Eigenschaft angegebene Datenquelle.
 
@@ -24,7 +24,7 @@ Sendet ausstehende Änderungen des lokal zwischengespeicherten und aktualisierba
 
 *DataControl*. SubmitChanges
 
-*DataFactory*. SubmitChanges*Connection*, *Recordset-Objekt*
+*DataFactory*. SubmitChanges-*Verbindung*, *Recordset*
 
 ## <a name="parameters"></a>Parameter
 
@@ -33,17 +33,17 @@ Sendet ausstehende Änderungen des lokal zwischengespeicherten und aktualisierba
 |*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
 |*DataFactory* |Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekt darstellt.|
 |*Connection* |Ein **String** -Wert, der die mit der **Connect** -Eigenschaft des **RDS.DataControl** -Objekts erstellte Verbindung darstellt.|
-|*Recordset* |Eine Objektvariable, die ein **Recordset** -Objekt darstellt.|
+|*Recordset* |Eine Objektvariable, die ein **Recordset**-Objekt darstellt.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Eigenschaften [Connect](connect-property-rds.md), [Server](server-property-rds.md) und [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) müssen festgelegt sein, bevor Sie die **SubmitChanges** -Methode für das **RDS.DataControl** -Objekt verwenden können.
+Die Eigenschaften [Connect](connect-property-rds.md), [Server](server-property-rds.md) und [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) müssen festgelegt sein, bevor Sie die **SubmitChanges**-Methode für das **RDS.DataControl**-Objekt verwenden können.
 
-Wenn Sie die [CancelUpdate](cancelupdate-method-rds.md)-Methode aufrufen, nachdem Sie die **SubmitChanges** -Methode für dasselbe **Recordset** -Objekt aufgerufen haben, schlägt der Aufruf von **CancelUpdate** fehl, da die Änderungen bereits übernommen wurden.
+Wenn Sie die [CancelUpdate](cancelupdate-method-rds.md)-Methode aufrufen, nachdem Sie die **SubmitChanges**-Methode für dasselbe **Recordset**-Objekt aufgerufen haben, schlägt der Aufruf von **CancelUpdate** fehl, da die Änderungen bereits übernommen wurden.
 
 Es werden nur die geänderten Objekte zur Änderung gesendet. Die Änderungen werden entweder alle erfolgreich vorgenommen oder sie schlagen alle fehl.
 
-Sie können nur mit dem *standardmäßigen* **RDSServer.DataFactory** -Objekt **SubmitChanges** verwenden. Diese Methode kann nicht für benutzerdefinierte Geschäftsobjekte verwendet werden.
+Sie können **SubmitChanges** nur mit dem **RDSServer. DataFactory-** *Standard* Objekt verwenden. Diese Methode kann nicht für benutzerdefinierte Geschäftsobjekte verwendet werden.
 
 Wenn die **URL** -Eigenschaft festgelegt wurde, sendet **SubmitChanges** Änderungen an den durch die URL angegebenen Speicherort.
 

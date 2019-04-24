@@ -1,5 +1,5 @@
 ---
-title: Error.Source-Eigenschaft (DAO)
+title: Error. Source-Eigenschaft (DAO)
 TOCTitle: Source Property
 ms:assetid: 3c101cac-278e-025e-55a4-8a9d1ee7db3c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192677(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 79c5fa1e01bbb6bce4f2cef705f23f3259bf0678
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293441"
 ---
-# <a name="errorsource-property-dao"></a>Error.Source-Eigenschaft (DAO)
+# <a name="errorsource-property-dao"></a>Error. Source-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Gibt den Namen des Objekts zurück, das den Fehler ursprünglich erzeugt hat.
@@ -32,17 +32,17 @@ Gibt den Namen des Objekts zurück, das den Fehler ursprünglich erzeugt hat.
 
 *expression* Eine Variable, die ein **Error**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert der **Source**-Eigenschaft ist gewöhnlich der Klassenname oder die Programm-ID des Objekts. Mit der **Source**-Eigenschaft können Sie dem Benutzer Informationen darüber liefern, ob der Code Fehler behandeln kann, die von einem Objekt in einer anderen Anwendung erzeugt wurden.
 
-Angenommen, wenn Sie auf Microsoft Excel zugreifen und ein "Division durch Null"-Fehler generiert, Microsoft Excel legt **Error.Number** auf die Microsoft Excel-Code für diesen Fehler und die **Source** -Eigenschaft auf Excel.Application. Beachten Sie, dass, wenn der Fehler in ein anderes Objekt von Microsoft Excel aufgerufen, generiert wird, wird Microsoft Excel den Fehler abfängt und **Error.Number** weiterhin auf die Microsoft Excel-Code festgelegt. Die anderen **Fehler** Objekteigenschaften (einschließlich **Quelle**) behalten die Werte als Satz durch das Objekt jedoch, die den Fehler verursacht hat. Die **Source** -Eigenschaft enthält immer den Namen des Objekts, das den Fehler ursprünglich erzeugt hat.
+Wenn Sie beispielsweise auf Microsoft Excel zugreifen und einen Fehler "Division durch Null" generiert haben, wird in Microsoft Excel **Error. Number** auf den Microsoft Excel-Code für diesen Fehler festgelegt und die **Source** -Eigenschaft auf Excel. Application festgelegt. Wenn ein Fehler von einem anderen von Microsoft Excel aufgerufenen Objekt erzeugt wird, fängt Microsoft Excel den Fehler ab und setzt **Error.Number** dennoch auf den Microsoft Excel-Code. Die anderen Eigenschaften des **Error**-Objekts (einschließlich **Source**) behalten jedoch ihre Werte, die von dem Objekt festgelegt wurden, das den Fehler erzeugt hat. Die **Source**-Eigenschaft enthält immer den Namen des Objekts, das den Fehler ursprünglich erzeugt hat.
 
 Basierend auf der gesamten Fehlerdokumentation können Sie Code schreiben, der den Fehler angemessen behandelt. Wenn Ihre Fehlerbehandlung fehlschlägt, können Sie den Fehler mithilfe der Informationen des **[Error](error-object-dao.md)** -Objekts für den Benutzer beschreiben. Hierzu können Sie die **Source**-Eigenschaft und die anderen **Error**-Eigenschaften verwenden, um den Benutzer darüber zu informieren, welches Objekt den Fehler ursprünglich verursacht hat, eine Fehlerbeschreibung zu liefern usw.
 
 
 > [!NOTE]
-> Das **On Error Resume Next**-Konstrukt ist möglicherweise **On Error GoTo** vorzuziehen, wenn Fehler behandelt werden, die während des Zugriffs auf andere Objekte erzeugt wurden. Wenn das **Error**-Objekt nach jeder Interaktion mit einem Objekt überprüft wird, kann jeder Zweifel darüber aus dem Weg geräumt werden, auf welches Objekt der Code beim Auftreten des Fehlers zugegriffen hat. Auf diese Weise wissen Sie, welches Objekt den Fehlercode in **Error.Number** geschrieben und welches Objekt den Fehler ursprünglich erzeugt hat (**Error.Source**).
+> [!HINWEIS] Das **On Error Resume Next**-Konstrukt ist möglicherweise **On Error GoTo** vorzuziehen, wenn Fehler behandelt werden, die während des Zugriffs auf andere Objekte erzeugt wurden. Wenn das **Error**-Objekt nach jeder Interaktion mit einem Objekt überprüft wird, kann jeder Zweifel darüber aus dem Weg geräumt werden, auf welches Objekt der Code beim Auftreten des Fehlers zugegriffen hat. Auf diese Weise wissen Sie, welches Objekt den Fehlercode in **Error.Number** geschrieben und welches Objekt den Fehler ursprünglich erzeugt hat (**Error.Source**).
 
 ## <a name="example"></a>Beispiel
 

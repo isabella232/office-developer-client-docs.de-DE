@@ -1,5 +1,5 @@
 ---
-title: QueryDefs.Append-Methode (DAO)
+title: QueryDefs. Append-Methode (DAO)
 TOCTitle: Append Method
 ms:assetid: 9b62a26b-3b7c-6d26-7707-177b00a23178
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198041(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b4183a7b438d3f55d73eb63adb2d124da7eeecc1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300938"
 ---
-# <a name="querydefsappend-method-dao"></a>QueryDefs.Append-Methode (DAO)
+# <a name="querydefsappend-method-dao"></a>QueryDefs. Append-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Fügt der **QueryDefs**-Auflistung ein neues **QueryDef**-Objekt hinzu.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Fügen Sie (***Objekt***)
+*Ausdruck* . Append (***Objekt***)
 
-*Ausdruck* Eine Variable, die ein **QueryDefs** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Querydefs** -Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -38,7 +38,7 @@ Fügt der **QueryDefs**-Auflistung ein neues **QueryDef**-Objekt hinzu.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -60,5 +60,5 @@ Das angefügte Objekt wird zu einem beständigen Objekt und auf einem Datenträg
 
 Das Hinzufügen eines neuen Objekts geschieht ohne Verzögerung. Trotzdem sollten Sie die **Refresh**-Methode auf alle weiteren Auflistungen anwenden, die von Änderungen an der Datenbankstruktur betroffen sein könnten.
 
-Wenn das Objekt an die, das Sie anfügen möchten (beispielsweise wenn Sie, alle **Field** -Objekte **Fields** -Auflistung eines **Index** -Objekts angefügt haben, bevor es an eine **Indexes** -Auflistung angehängt wird) abgeschlossen ist oder wenn die Eigenschaften in einem oder mehreren festlegen untergeordnete Objekte sind falsch ist, verwenden die **Append** -Methode einen Fehler verursacht. Angenommen, wenn Sie keinen Feldtyp angegeben und versuchen Sie es dann das **Field** -Objekt an die **Fields** -Auflistung in ein **TableDef** -Objekt angefügt werden soll, löst mit der **Append** -Methode einen Laufzeitfehler.
+Wenn das Objekt, das Sie anfügen, nicht vollständig ist (beispielsweise, wenn Sie keine **Field** -Objekte an eine **Fields** -Auflistung eines **Index** -Objekts angefügt haben, **** bevor es an eine Indexes-Auflistung angefügt wird) oder wenn die Eigenschaften, die in einem oder mehreren festgelegt sind untergeordnete Objekte sind falsch, bei Verwendung der **Append** -Methode wird ein Fehler verursacht. Wenn Sie beispielsweise noch keinen Feldtyp angegeben haben und dann versuchen, das **Field** -Objekt an die **Fields** -Auflistung in einem **TableDef** -Objekt anzufügen, löst mithilfe der **Append** -Methode ein Laufzeitfehler aus.
 

@@ -1,5 +1,5 @@
 ---
-title: Field.Size-Eigenschaft (DAO)
+title: Field. Size-Eigenschaft (DAO)
 TOCTitle: Size Property
 ms:assetid: 15e25201-87b6-f62f-ff18-259414a47891
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845510(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 16ce8a9e63c18ded2738035f23e9a1baeff4cc8c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293015"
 ---
-# <a name="fieldsize-property-dao"></a>Field.Size-Eigenschaft (DAO)
+# <a name="fieldsize-property-dao"></a>Field. Size-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Legt einen Wert fest, der die maximale Größe eines **[Field](field-object-dao.md)** -Objekts in Byte angibt, oder gibt den betreffenden Wert zurück.
@@ -34,9 +34,9 @@ Legt einen Wert fest, der die maximale Größe eines **[Field](field-object-dao.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Für ein Objekt, das noch nicht an die **[Fields](fields-collection-dao.md)** -Auflistung angehängt wurde, besteht Lese-/Schreibzugriff für diese Eigenschaft.
+Bei einem Objekt, das noch nicht der **[Fields](fields-collection-dao.md)** -Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 
-Bei Feldern (außer Memofeldern), die Zeichendaten enthalten, gibt die **Size**-Eigenschaft die maximale Anzahl von Zeichen an, die ein Feld enthalten kann. Bei numerischen Feldern gibt die **Size**-Eigenschaft an, wie viel Speicherplatz in Bytes erforderlich ist.
+For fields (other than Memo type fields) that contain character data, the **Size** property indicates the maximum number of characters that the field can hold. For numeric fields, the **Size** property indicates how many bytes of storage are required.
 
 Die Verwendung der **Size**-Eigenschaft hängt von dem Objekt ab, das die **Fields**-Auflistung enthält, an die das **Field**-Objekt angehängt ist, wie in der folgenden Tabelle dargestellt.
 
@@ -58,11 +58,11 @@ Die Verwendung der **Size**-Eigenschaft hängt von dem Objekt ab, das die **Fiel
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Beziehung</strong></p></td>
@@ -70,19 +70,19 @@ Die Verwendung der **Size**-Eigenschaft hängt von dem Objekt ab, das die **Fiel
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Wenn Sie ein Field-Objekt mit einem anderen Datentyp als Text erstellen, legt der Wert der Type-Eigenschaft automatisch die Einstellung des Size-Eigenschaft fest, sodass Sie diese Eigenschaft nicht festlegen müssen. Bei einem Field-Objekt vom Text-Datentyp können Sie jedoch Size auf eine Ganzzahl bis zur maximalen Textgröße festlegen (255 für Microsoft Access-Datenbanken). Wenn Sie die Größe nicht festlegen, hat das Feld die maximale von der Datenbank zugelassene Größe.
+When you create a **Field** object with a data type other than Text, the **[Type](field-type-property-dao.md)** property setting automatically determines the **Size** property setting; you don't need to set it. For a **Field** object with the Text data type, however, you can set **Size** to any integer up to the maximum text size (255 for Microsoft Access databases). If you do not set the size, the field will be as large as the database allows.
 
-Bei Field-Objekten der Datentypen Long Binary und Memo hat Size immer den Wert 0. Verwenden Sie die FieldSize-Eigenschaft des Field-Objekts, um die Größe der Daten in einem bestimmten Datensatz festzustellen. Die maximale Größe eines Felds vom Datentyp Long Binary oder Memo ist nur durch die Systemressourcen bzw. die maximale von der Datenbank erlaubte Größe begrenzt.
+For Long Binary and Memo **Field** objects, **Size** is always set to 0. Use the **[FieldSize](field-fieldsize-property-dao.md)** property of the **Field** object to determine the size of the data in a specific record. The maximum size of a Long Binary or Memo field is limited only by your system resources or the maximum size that the database allows.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die Size-Eigenschaft veranschaulicht, indem die Namen und Größen der Field-Objekte in der Tabelle Employees durchlaufen werden.
+This example demonstrates the **Size** property by enumerating the names and sizes of the **Field** objects in the Employees table.
 
 ```vb
     Sub SizeX() 

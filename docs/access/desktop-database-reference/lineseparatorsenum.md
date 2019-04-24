@@ -1,5 +1,5 @@
 ---
-title: LineSeparatorsEnum (Access PC-Datenbank-Referenz)
+title: LineSeparatorsEnum (Access Desktop Database Reference)
 TOCTitle: LineSeparatorsEnum
 ms:assetid: 3b0c58a8-1617-f9b1-c0c8-928580b2dade
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249148(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c5ab57cab4829d565ea0e9ac8bffdb0790a34c9f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289942"
 ---
 # <a name="lineseparatorsenum"></a>LineSeparatorsEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt das Zeichen an, das als Zeilentrennzeichen in [Stream](stream-object-ado.md)-Textobjekten verwendet wird.
 
@@ -55,7 +55,7 @@ Gibt das Zeichen an, das als Zeilentrennzeichen in [Stream](stream-object-ado.md
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

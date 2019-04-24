@@ -1,5 +1,5 @@
 ---
-title: Das Field-Objekt (Access PC-Datenbank-Referenz)
+title: Das Field-Objekt (Access-Desktop-Daten Bankreferenz)
 TOCTitle: The Field object
 ms:assetid: 55531e04-d74f-6394-df64-1660e5d572ca
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249284(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2cbd5752399e5a14f08b7eb944e3a028ba53f561
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314021"
 ---
 # <a name="field-object"></a>Field-Objekt
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Jedes **Field** -Objekt entspricht gewöhnlich einer Spalte in einer Datenbanktabelle. Ein **Field** -Objekt kann jedoch auch einen Zeiger auf ein anderes **Recordset** -Objekt darstellen, ein so genanntes Kapitel. Ausnahmen, wie z. B. Kapitelspalten, werden weiter unten in diesem Handbuch behandelt.
 
@@ -36,7 +36,7 @@ Die Auflistungen, Methoden und Eigenschaften eines **Field** -Objekts ermöglich
 
 - Bestimmen der für ein bestimmtes Feld unterstützten Funktionalitätstypen mithilfe der **Attributes** -Eigenschaft und der **Properties** -Auflistung.
 
-- Bearbeiten der Werte von Feldern, die Daten vom Typ Long Binary oder Long enthalten, mithilfe der Methoden AppendChunk und GetChunk.
+- Manipulate the values of fields containing long binary or long character data by using the **AppendChunk** and **GetChunk** methods.
 
 - Auflösen von Diskrepanzen in Feldwerten während der Batchaktualisierung mithilfe der Eigenschaften **OriginalValue** und **UnderlyingValue**, falls der Anbieter Batchaktualisierungen unterstützt.
 
@@ -46,7 +46,7 @@ In den folgenden Themen werden Eigenschaften des [Field](field-object-ado.md)-Ob
 
 ## <a name="discovering-the-data-type"></a>Ermitteln des Datentyps
 
-Die **Type** -Eigenschaft gibt den Datentyp des Felds an. Konstanten Typ, der Daten, die von ADO unterstützt werden, werden in [DataTypeEnum-Wert](datatypeenum.md) in der *ADO-Programmierreferenz*beschrieben.
+Die **Type** -Eigenschaft gibt den Datentyp des Felds an. Die von ADO unterstützten Aufzählungskonstanten des Datentyps werden in [DataTypeEnum](datatypeenum.md) im *ADO-Programmierhandbuch*beschrieben.
 
 Für numerische Gleitkomma-Datentypen wie z. B. **adNumeric** können Sie weitere Informationen abrufen. Die **NumericScale** -Eigenschaft gibt an, wie viele Stellen rechts des Dezimalzeichens zur Darstellung von Werten für das **Field** -Objekt verwendet werden. Die **Precision** -Eigenschaft gibt die maximale Anzahl von Stellen zur Darstellung von Werten für das **Field** -Objekt an.
 
@@ -58,32 +58,32 @@ Mithilfe der **ActualSize** -Eigenschaft geben Sie die tatsächliche Länge des 
 
 Die Eigenschaften **DefinedSize** und **ActualSize** haben unterschiedliche Verwendungszwecke. Angenommen, ein **Field** -Objekt mit dem deklarierten Typ **adVarChar** und einer **DefinedSize** -Eigenschaft von 50 enthält ein einzelnes Zeichen. Für die **ActualSize** -Eigenschaft wird als Wert die Länge in Bytes dieses Einzelzeichens zurückgegeben.
 
-## <a name="determining-field-contents"></a>Bestimmen der Inhalt des Felds
+## <a name="determining-field-contents"></a>Bestimmen von Feldinhalten
 
 Der Bezeichner der Spalte aus der Datenquelle wird durch die **Name** -Eigenschaft des **Field** -Objekts dargestellt. Mit der **Value** -Eigenschaft des **Field** -Objekts wird der tatsächliche Dateninhalt des Felds zurückgegeben oder festgelegt. Dies ist die Standardeigenschaft.
 
 Zum Ändern der Daten in einem Feld legen Sie die **Value** -Eigenschaft auf einen neuen Wert mit dem richtigen Datentyp fest. Der Cursortyp muss Aktualisierungen unterstützen, um die Inhalte eines Felds zu ändern. Die Überprüfung der Datenbank erfolgt in diesem Fall nicht im Batchmodus. Deshalb müssen Sie in einem solchen Fall beim Aufrufen von **UpdateBatch** nach Fehlern suchen. Manche Anbieter unterstützen auch die Eigenschaften **UnderlyingValue** und **OriginalValue** des **Field** -Objekts von ADO, damit Sie Konflikte beim Ausführen von Batchaktualisierungen lösen können. Weitere Informationen zum Lösen solcher Konflikte finden Sie in [Kapitel 4: Bearbeiten von Daten](chapter-4-editing-data.md).
 
 > [!NOTE]
-> Werte für ein Field-Objekt in einem Recordset-Objekt können nicht festgelegt werden, wenn neue Field-Objekte an ein Recordset-Objekt angefügt werden. Neue Field-Objekte können aber an ein geschlossenes Recordset-Objekt angefügt werden. Das Recordset-Objekt muss dann geöffnet werden, und erst dann können diesen Field-Objekten Werte zugewiesen werden.
+> **Recordset Field** values cannot be set when appending new **Fields** to a **Recordset**. Rather, new **Fields** can be appended to a closed **Recordset**. Then the **Recordset** must be opened, and only then can values be assigned to these **Fields**.
 
-## <a name="getting-more-field-information"></a>Abrufen weiterer Informationen zum field
+## <a name="getting-more-field-information"></a>Weitere Feld Informationen
 
 ADO-Objekte weisen zwei Arten von Eigenschaften auf, nämlich integrierte und dynamische Eigenschaften. Bisher wurden nur die integrierten Eigenschaften des **Field** -Objekts behandelt.
 
-Integrierte Eigenschaften sind diese Eigenschaften in ADO implementiert und für jedes neue Objekt mithilfe der Syntax. Sie werden nicht als **Property** -Objekte in der **Properties** -Auflistung eines Objekts angezeigt.
+Bei integrierten Eigenschaften handelt es sich um die Eigenschaften, die in ADO implementiert werden und die mit der Syntax sofort für jedes neue Objekt verfügbar sind. Sie werden nicht als **Property** -Objekte in der **Properties** -Auflistung eines Objekts angezeigt.
 
-Dynamische Eigenschaften werden durch den zugrunde liegenden Datenprovider definiert und in der **Properties** -Auflistung für das entsprechende ADO-Objekt angezeigt. Beispielsweise kann eine anbieterspezifische Eigenschaft anzeigen, ob Transaktionen oder Aktualisierungen von einem **Recordset** -Objekt unterstützt werden. Diese zusätzlichen Eigenschaften werden als **Property** -Objekte in der **Properties** -Auflistung dieses **Recordset** -Objekts angezeigt. Dynamische Eigenschaften kann nur über die Auflistung mithilfe der Syntax MyObject.Properties(0) verwiesen werden oder oder MyObject.Properties("Name").
+Dynamische Eigenschaften werden durch den zugrunde liegenden Datenprovider definiert und in der **Properties** -Auflistung für das entsprechende ADO-Objekt angezeigt. Beispielsweise kann eine anbieterspezifische Eigenschaft kennzeichnen, ob Transaktionen oder Aktualisierungen von einem **Recordset**-Objekt unterstützt werden. Diese zusätzlichen Eigenschaften werden als **Property**-Objekte in der **Properties**-Auflistung dieses **Recordset**-Objekts angezeigt. Auf dynamische Eigenschaften kann nur über die Auflistung verwiesen werden, wobei die Syntax MyObject. Properties (0) oder MyObject. Properties ("Name") verwendet wird.
 
 Keiner der beiden Eigenschaftstypen kann gelöscht werden.
 
-Ein dynamisches **Property** -Objekt weist vier integrierte Eigenschaften auf:
+Ein dynamisches **Property**-Objekt weist vier integrierte Eigenschaften auf:
 
-- Die **Name** -Eigenschaft ist eine Zeichenfolge zur Identifizierung der Eigenschaft.
+- Die **Name**-Eigenschaft ist eine Zeichenfolge zur Identifizierung der Eigenschaft.
 
-- Die **Type** -Eigenschaft ist eine ganze Zahl zur Angabe des Datentyps der Eigenschaft.
+- Die **Type**-Eigenschaft ist eine ganze Zahl zur Angabe des Datentyps der Eigenschaft.
 
-- Die Value-Eigenschaft ist vom Datentyp Variant und enthält die Eigenschaftseinstellung. Value ist die Standardeigenschaft für ein Property-Objekt.
+- The **Value** property is a variant that contains the property setting. **Value** is the default property for a **Property** object.
 
 - Die **Attributes** -Eigenschaft ist ein Wert vom Typ **Long** zur Angabe der Merkmale der anbieterspezifischen Eigenschaft.
 
@@ -104,17 +104,17 @@ Die **Properties** -Auflistung für das **Field** -Objekt enthält zusätzliche 
 'EndFieldProps 
 ```
 
-## <a name="dealing-with-binary-data"></a>Behandlung von binären Daten
+## <a name="dealing-with-binary-data"></a>Umgang mit Binärdaten
 
-Verwenden Sie die AppendChunk-Methode in einem Field-Objekt, um es mit Daten vom Typ Long Binary oder mit Zeichendaten zu füllen. Wenn der Arbeitsspeicher begrenzt ist, können Sie mit der AppendChunk-Methode umfangreiche Werte abschnittsweise anstatt in ihrer Gesamtheit bearbeiten.
+Use the [AppendChunk](appendchunk-method-ado.md) method on a **Field** object to fill it with long binary or character data. In situations where system memory is limited, you can use the **AppendChunk** method to manipulate long values in portions rather than in their entirety.
 
 Wenn das **adFldLong** -Bit in der **Attributes** -Eigenschaft eines **Field** -Objekts auf **True** festgelegt ist, können Sie die **AppendChunk** -Methode für dieses Feld verwenden.
 
 Der erste Aufruf von **AppendChunk** für ein **Field** -Objekt schreibt Daten in das Feld, wobei vorhandene Daten überschrieben werden. Bei nachfolgenden Aufrufen von **AppendChunk** wird an die vorhandenen Daten angefügt. Wenn Sie Daten an ein Feld anfügen und dann den Wert eines anderen Felds im aktuellen Datensatz festlegen oder lesen, geht ADO davon aus, dass Sie keine Daten mehr an das erste Feld anfügen möchten. Wenn Sie die **AppendChunk** -Methode erneut für das erste Feld aufrufen, interpretiert ADO den Aufruf als neuen **AppendChunk** -Vorgang und überschreibt die vorhandenen Daten. Durch den Zugriff auf Felder in anderen **Recordset** -Objekten, die keine Klone des ersten **Recordset** -Objekts sind, werden **AppendChunk** -Vorgänge nicht unterbrochen.
 
-Verwenden Sie die **GetChunk** -Methode für ein **Field** -Objekt, um einen Teil der bzw. die gesamten umfangreichen Binär- oder Zeichendaten abzurufen. In Situationen, bei denen der Systemspeicher beschränkt ist, können Sie die **GetChunk** -Methode verwenden, um umfangreiche Werte in kleinere Einheiten aufzuteilen, statt deren Gesamtheit beizubehalten.
+Use the **GetChunk** method on a **Field** object to retrieve part or all of its long binary or character data. In situations where system memory is limited, you can use the **GetChunk** method to manipulate long values in portions, rather than in their entirety.
 
-Die Daten, die von einem Aufruf von **GetChunk** zurückgegeben werden, werden einer *Variablen* zugewiesen. Falls die *Größe* die Größe der restlichen Daten überschreitet, gibt die **GetChunk**-Methode nur die restlichen Daten zurück, ohne die *Variable* mit Leerzeichen aufzufüllen. Falls das Feld leer ist, gibt die **GetChunk**-Methode einen NULL-Wert zurück.
+Die beim Aufrufen von **GetChunk** zurückgegebenen Daten werden *Variable* zugewiesen. Ist *Size* größer als die restlichen Daten, gibt die **GetChunk**-Methode nur die restlichen Daten zurück, ohne *Variable* mit Leerzeichen aufzufüllen. Ist das Feld leer, gibt die **GetChunk**-Methode einen Nullwert zurück.
 
 Mit jedem nachfolgenden Aufruf von **GetChunk** werden Daten ab dem Punkt abgerufen, an dem der vorherige Aufruf von **GetChunk** beendet wurde. Wenn Sie jedoch Daten aus einem Feld abrufen und dann den Wert eines anderen Felds im aktuellen Datensatz festlegen oder lesen, geht ADO davon aus, dass Sie keine Daten mehr aus dem ersten Feld abrufen möchten. Wenn Sie die **GetChunk** -Methode erneut für das erste Feld aufrufen, interpretiert ADO den Aufruf als neuen **GetChunk** -Vorgang und liest ausgehend vom Anfang der Daten. Durch den Zugriff auf Felder in anderen **Recordset** -Objekten, die keine Klone des ersten **Recordset** -Objekts sind, werden **GetChunk** -Vorgänge nicht unterbrochen.
 
@@ -122,5 +122,5 @@ Wenn das **adFldLong** -Bit in der **Attributes** -Eigenschaft eines **Field** -
 
 Der Fehler 3021 (kein aktueller Datensatz) wird generiert, falls kein aktueller Datensatz vorhanden ist, wenn Sie die Methode **GetChunk** oder **AppendChunk** für ein **Field** -Objekt verwenden.
 
-Ein Beispiel für die Verwendung dieser Methoden zum Bearbeiten von Binärdaten finden Sie in den Beispielen [AppendChunk-Methode](appendchunk-method-ado.md) und [GetChunk-Methode](getchunk-method-ado.md) in der *ADO-Programmierreferenz*.
+Ein Beispiel für die Verwendung dieser Methoden zum Bearbeiten von Binärdaten finden Sie in den Beispielen zur [AppendChunk-Methode](appendchunk-method-ado.md) und GetChunk [-Methode](getchunk-method-ado.md) im *ADO-Programmierhandbuch*.
 

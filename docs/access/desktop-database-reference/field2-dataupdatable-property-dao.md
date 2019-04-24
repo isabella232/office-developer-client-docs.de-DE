@@ -1,5 +1,5 @@
 ---
-title: Field2.DataUpdatable-Eigenschaft (DAO)
+title: Field2. dataAktualisierbar-Eigenschaft (DAO)
 TOCTitle: DataUpdatable Property
 ms:assetid: e6619c4e-26b1-777b-f0de-78fed3dbc890
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835966(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 88a57ff2daeaaaab202daad55f01eebc6bdf86dd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292839"
 ---
-# <a name="field2dataupdatable-property-dao"></a>Field2.DataUpdatable-Eigenschaft (DAO)
+# <a name="field2dataupdatable-property-dao"></a>Field2. dataAktualisierbar-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Gibt einen Wert zurück, der angibt, ob die Daten eines durch ein **Field2**-Objekt dargestellten Felds aktualisiert werden können.
@@ -36,7 +36,7 @@ Sie können die **DataUpdatable**-Eigenschaft bei **Field2**-Objekten verwenden,
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die DataUpdatable-Eigenschaft veranschaulicht, indem ihr Wert geändert und ein neues Recordsets-Objekt erstellt wird. Zum Ausführen dieser Prozedur ist die SortOutput-Funktion erforderlich.
+This example demonstrates the **DataUpdatable** property using the first field from six different **Recordsets**. The DataOutput function is required for this procedure to run.
 
 ```vb 
 Sub DataUpdatableX() 

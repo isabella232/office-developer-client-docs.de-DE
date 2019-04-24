@@ -1,5 +1,5 @@
 ---
-title: Field.CollatingOrder-Eigenschaft (DAO)
+title: Field. CollatingOrder-Eigenschaft (DAO)
 TOCTitle: CollatingOrder Property
 ms:assetid: a2607ace-a660-899b-eae8-4612ce2f87f8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff820980(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 3d016d779472ec9809d3ac5c77158c2c1d994f3c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293126"
 ---
-# <a name="fieldcollatingorder-property-dao"></a>Field.CollatingOrder-Eigenschaft (DAO)
+# <a name="fieldcollatingorder-property-dao"></a>Field. CollatingOrder-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den Zeichenfolgenvergleich oder die Sortierung angibt (gilt nur für Microsoft Access-Arbeitsbereiche). Schreibgeschützter **Long**-Wert.
 
@@ -61,7 +61,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 </tr>
 <tr class="even">
 <td><p><strong>dbSortChineseTraditional</strong></p></td>
-<td><p>Chinesisch (Traditionell)</p></td>
+<td><p>Traditionelles Chinesisch</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSortCyrillic</strong></p></td>
@@ -170,26 +170,26 @@ Die Verfügbarkeit der **CollatingOrder**-Eigenschaft hängt vom Objekt ab, in d
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong> -Objekt</p></td>
+<td><p><strong>Relation</strong>-Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong>-Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Die Einstellung der **CollatingOrder** -Eigenschaft entspricht dem Argument Locale der **CreateDatabase** -Methode, wenn die Datenbank erstellt wurde oder der **CompactDatabase** -Methode, wenn die Datenbank kürzlich komprimiert wurde.
+Die Einstellung der **CollatingOrder**-Eigenschaft entspricht dem Argument locale der **CreateDatabase**-Methode, wenn die Datenbank erstellt wurde,  oder der **CompactDatabase**-Methode, wenn die Datenbank kürzlich komprimiert wurde.
 
 Die Einstellungen der Eigenschaften **CollatingOrder** und **Attributes** eines **Field**-Objekts in einer **Fields**-Auflistung eines **Index** bestimmen zusammen die Sequenz und Richtung der Sortierreihenfolge in einem Index. Die Sortierreihenfolge kann nicht für einen einzelnen Index festgelegt werden, sondern nur für eine gesamte Tabelle.
 

@@ -8,39 +8,39 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4ea28efb8fdeaa0643d1d940419b7650527ddf6e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292188"
 ---
 # <a name="getstring-method-ado"></a>GetString-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt das [Recordset](recordset-object-ado.md)-Objekt als eine Zeichenfolge zurück.
 
 ## <a name="syntax"></a>Syntax
 
-*Variant* = *Recordset-Objekt*. GetString (*StringFormat*, *NumRows*, *ColumnDelimiter*, *RowDelimiter*, *NullExpr*)
+** = *Recordset*-Datentyp. GetString (*StringFormat*, *numRows*, *ColumnDelimiter*, *RowDelimiter*, *NullExpr*)
 
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt das **Recordset** -Objekt als eine **Variant** -Variable (BSTR) mit Zeichenfolgenwerten zurück.
+Gibt das **Recordset**-Objekt als eine **Variant**-Variable (BSTR) mit Zeichenfolgenwerten zurück.
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
 |*StringFormat* |Ein [StringFormatEnum](stringformatenum.md)-Wert, der angibt, wie das **Recordset**-Objekt in eine Zeichenfolge konvertiert werden soll. Die Parameter *RowDelimiter*, *ColumnDelimiter* und *NullExpr* werden nur mit einem *StringFormat* mit dem Wert **adClipString** verwendet.|
-|*NumRows* |Optional. Die Anzahl von im **Recordset** -Objekt zu konvertierenden Zeilen. Wenn *NumRows* nicht angegeben ist oder wenn es größer als die Gesamtzahl der Zeilen im **Recordset-Objekt**ist, werden alle Zeilen in das **Recordset-Objekt** konvertiert.|
+|*NumRows* |Optional. Die Anzahl von im **Recordset**-Objekt zu konvertierenden Zeilen. Ist *NumRows* nicht angegeben oder größer als die Gesamtanzahl der Zeilen im **Recordset**-Objekt, werden alle Zeilen im **Recordset**-Objekt konvertiert.|
 |*ColumnDelimiter* |Optional. Wenn angegeben, ein zwischen den Spalten verwendetes Trennzeichen, andernfalls das Tabulatorzeichen.|
 |*RowDelimiter* |Optional. Wenn angegeben, ein zwischen den Spalten verwendetes Trennzeichen, andernfalls das Wagenrücklaufzeichen.|
 |*NullExpr* |Optional. Wenn angegeben, ein statt des Nullwerts verwendeter Ausdruck, andernfalls die leere Zeichenfolge.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-In der Zeichenfolge werden Zeilendaten aber keine Schemadaten gespeichert. Daher kann ein **Recordset** -Objekt nicht erneut mithilfe dieser Zeichenfolge geöffnet werden.
+In der Zeichenfolge werden Zeilendaten aber keine Schemadaten gespeichert. Daher kann ein **Recordset**-Objekt nicht erneut mithilfe dieser Zeichenfolge geöffnet werden.
 
 Diese Methode entspricht der **GetClipString** -Methode in RDO.
 

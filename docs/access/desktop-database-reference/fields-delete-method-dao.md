@@ -1,5 +1,5 @@
 ---
-title: Fields.Delete-Methode (DAO)
+title: Fields. Delete-Methode (DAO)
 TOCTitle: Delete Method
 ms:assetid: a8e249e7-7526-3eff-a5cf-70cab2081970
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821417(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 8200d8ec7b10f33fe8bc1ef9faea122d3ff65409
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292559"
 ---
-# <a name="fieldsdelete-method-dao"></a>Fields.Delete-Methode (DAO)
+# <a name="fieldsdelete-method-dao"></a>Fields. Delete-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Löscht ein **[Field](field-object-dao.md)** -Objekt aus der **[Fields](fields-collection-dao.md)** -Auflistung.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Löschen Sie die (***Name***)
+*Ausdruck* . Delete (***Name***)
 
 *Ausdruck* Eine Variable, die ein **Fields** -Objekt darstellt.
 
@@ -42,7 +42,7 @@ Löscht ein **[Field](field-object-dao.md)** -Objekt aus der **[Fields](fields-c
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -60,11 +60,11 @@ Löscht ein **[Field](field-object-dao.md)** -Objekt aus der **[Fields](fields-c
 
 ## <a name="remarks"></a>Bemerkungen
 
-Das Löschen eines gespeicherten Objekts geschieht ohne Verzögerung. Dennoch sollten Sie die **Refresh** -Methode auf alle weiteren Auflistungen anwenden, die von Änderungen an der Datenbankstruktur betroffen sein könnten.
+Das Löschen eines gespeicherten Objekts geschieht ohne Verzögerung. Dennoch sollten Sie die **Refresh**-Methode auf alle weiteren Auflistungen anwenden, die von Änderungen an der Datenbankstruktur betroffen sein könnten.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird entweder die **Append** -Methode oder die **Delete** -Methode zum Ändern der **Fields** -Auflistung eines **TableDef** -Objekts verwendet. Zum Ausführen dieser Prozedur ist die AppendDeleteField-Prozedur erforderlich.
+In diesem Beispiel wird entweder die **Append**-Methode oder die **Delete**-Methode zum Ändern der **Fields**-Auflistung eines **TableDef**-Objekts verwendet. Zum Ausführen dieser Prozedur ist die AppendDeleteField-Prozedur erforderlich.
 
 ```vb
     Sub AppendX() 

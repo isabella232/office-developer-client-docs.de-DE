@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7534ae84b57d14450009865ea330a4c54d4cfb44
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292139"
 ---
 # <a name="gotorecord-macro-action"></a>GoToRecord-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Mit der **GeheZuDatensatz** -Aktion können Sie den angegebenen Datensatz zum aktuellen Datensatz in einer geöffneten Tabelle oder einem geöffneten Formular oder Abfrageresultset machen.
+Mit der **GeheZuDatensatz**-Aktion können Sie den angegebenen Datensatz zum aktuellen Datensatz in einer geöffneten Tabelle oder einem geöffneten Formular oder Abfrageresultset machen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **GeheZuDatensatz** -Aktion hat die folgenden Argumente.
+Die **GeheZuDatensatz**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -43,7 +43,7 @@ Die **GeheZuDatensatz** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Objekttyp</strong></p></td>
-<td><p>Der Typ des Objekts, das den Datensatz enthält, den Sie zum aktuellen Datensatz machen möchten. Klicken Sie auf Tabelle, auf Abfrage, auf Formular, auf Serversicht, auf Gespeicherte Prozedur oder auf Funktion im Feld Objekttyp im Abschnitt Aktionsargumente des Bereichs Makro-Generator. Lassen Sie dieses Argument leer, um das aktive Objekt auszuwählen.</p></td>
+<td><p>Der Objekttyp, der den Datensatz enthält, den Sie aktuell machen möchten. Klicken Sie im Feld <strong>Objekttyp</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator auf <strong>Tabelle</strong>, <strong>Abfrage</strong>, <strong>Formular</strong>, <strong>Server Ansicht</strong>, <strong>gespeicherte Prozedur</strong>oder <strong>Funktion</strong> . Lassen Sie dieses Argument leer, um das aktive Objekt auszuwählen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Objektname</strong></p></td>
@@ -55,11 +55,11 @@ Die **GeheZuDatensatz** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Offset</strong></p></td>
-<td><p>Eine ganze Zahl oder ein Ausdruck, der eine ganze Zahl ausgewertet wird. Ein Ausdruck muss ein Gleichheitszeichen vorangestellt werden (<strong>=</strong>). Dieses Argument gibt den Datensatz zum aktuellen Datensatz machen. Sie können das Argument <strong>Offset</strong> auf zwei Arten verwenden:</p>
+<td><p>Eine ganze Zahl oder ein Ausdruck, der zu einer ganzen Zahl ausgewertet wird. Einem Ausdruck muss ein Gleichheitszeichen vorangestellt werden (<strong>=</strong>). Mit diesem Argument wird der Datensatz angegeben, der zum aktuellen Datensatz werden soll. Sie können das Argument <strong>Offset</strong> auf zwei Arten verwenden:</p>
 <ul>
 <li><p>Wenn das Argument <strong>Datensatz</strong> auf <strong>Nächster</strong> oder <strong>Vorheriger</strong> festgelegt ist, verschiebt Microsoft Office Access 2007 den Fokus um die Anzahl von Datensätzen nach vorn oder hinten, die im Argument <strong>Offset</strong> angegeben ist.</p></li>
 <li><p>Wenn das Argument <strong>Datensatz</strong> auf <strong>Gehe zu</strong> festgelegt ist, wechselt Access zu dem Datensatz mit der Nummer, die dem Argument <strong>Offset</strong> entspricht. Die Datensatznummer wird im Datensatznummernfeld am unteren Rand des Fensters angezeigt.</p>
-<p><strong>Hinweis</strong>: Wenn Sie die <strong>ersten</strong>, <strong>letzten</strong>oder <strong>neue</strong> Einstellung für das Argument <strong>Datensatz</strong> verwenden, ignoriert Access das Argument <strong>Offset</strong> . Wenn Sie ein Argument <strong>Offset</strong> , die zu groß ist eingeben, wird von Access eine Fehlermeldung angezeigt. Sie können nicht negative Zahlen für das Argument <strong>Offset</strong> eingeben.</p></li>
+<p><strong>Hinweis</strong>: Wenn Sie die <strong>erste</strong>, <strong>Letzte</strong>oder <strong>neue</strong> Einstellung für das Argument <strong>Record</strong> verwenden, ignoriert Access das <strong>Offset</strong> -Argument. Wenn Sie einen Wert für <strong>Offset</strong> eingeben, der zu groß ist, zeigt Access eine Fehlermeldung an. Sie können keine negative Zahlen für das Argument <strong>Offset</strong> eingeben.</p></li>
 <li><p>Wenn das Argument <strong>Datensatz</strong> auf <strong>Nächster</strong> oder <strong>Vorheriger</strong> festgelegt ist, verschiebt Microsoft Office Access 2007 den Fokus um die Anzahl von Datensätzen nach vorn oder hinten, die im Argument <strong>Offset</strong> angegeben ist.</p></li>
 <li><p>Wenn das Argument <strong>Datensatz</strong> auf <strong>Gehe zu</strong> festgelegt ist, wechselt Access zu dem Datensatz mit der Nummer, die dem Argument <strong>Offset</strong> entspricht. Die Datensatznummer wird im Datensatznummernfeld am unteren Rand des Fensters angezeigt.</p></li>
 </ul>
@@ -69,7 +69,7 @@ Die **GeheZuDatensatz** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn sich der Fokus in einem bestimmten Steuerelement in einem Datensatz befindet, belässt diese Aktion den Fokus im selben Steuerelement für den neuen Datensatz.
 

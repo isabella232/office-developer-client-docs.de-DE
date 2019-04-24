@@ -1,5 +1,5 @@
 ---
-title: PROCEDURE-Klausel (Microsoft Access SQL)
+title: PROCEDURe-Klausel (Microsoft Access SQL)
 TOCTitle: PROCEDURE clause (Microsoft Access SQL)
 ms:assetid: a718802c-9260-88d5-ec29-d5e5594927b0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821342(v=office.15)
@@ -14,46 +14,45 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 72f31c71e710cca79695a7221f0e033d18d2f420
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301379"
 ---
-# <a name="procedure-clause-microsoft-access-sql"></a>PROCEDURE-Klausel (Microsoft Access SQL)
+# <a name="procedure-clause-microsoft-access-sql"></a>PROCEDURe-Klausel (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Definiert einen Namen und optionale Parameter für eine Abfrage.
 
 > [!NOTE]
-> [!HINWEIS] Die PROCEDURE-Klausel wurde durch die PROCEDURE-Anweisung abgelöst. Zwar wird die PROCEDURE-Klausel noch unterstützt, doch die PROCEDURE-Anweisung stellt eine Übermenge der Funktionen der PROCEDURE-Klausel bereit und wird als Syntax empfohlen.
+> Die PROCEDURE-Klausel wurde durch die PROCEDURE-Anweisung abgelöst. Zwar wird die PROCEDURE-Klausel noch unterstützt, doch die PROCEDURE-Anweisung stellt eine Übermenge der Funktionen der PROCEDURE-Klausel bereit und wird als Syntax empfohlen.
 
 ## <a name="syntax"></a>Syntax
 
-*Name* der Prozedur \[ *param1 Datentyp*\[, *param2 Datentyp*\[,...\]\]
+Prozedur *Name* \[ *param1 DataType*\[, *Param2-Datentyp*\[,...\]\]
 
 Die PROCEDURE-Klausel enthält die folgenden Bestandteile:
 
-|Argument |Beschreibung |
+|Teil |Beschreibung |
 |:----|:-----------|
 |*name* |Ein Name für die Prozedur. Bei der Namensgebung müssen die Standardbenennungsregeln beachtet werden.|
-|*Param1*, *Param2* |Ein oder mehrere Feldnamen oder Parameter. Beispiel:
-<br/><br/>`PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>Weitere Informationen zu Parametern finden Sie unter [Parameter](parameters-declaration-microsoft-access-sql.md).|
+|*param1*, *Param2* |Ein oder mehrere Feldnamen oder Parameter. Beispiel:<br/><br/>`PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>Weitere Informationen zu Parametern finden Sie unter [Parameters](parameters-declaration-microsoft-access-sql.md).|
 |*Datentyp* | Einer der wichtigsten [Microsoft Access SQL-Datentypen](sql-data-types.md) oder eines der Synonyme. |
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine SQL-Prozedur besteht aus einer PROCEDURE-Klausel (die den Namen der Prozedur angibt), einer optionalen Liste mit Parameterdefinitionen und einer einzelnen SQL­Anweisung. Das Verfahren Get\_Teil\_Anzahl möglicherweise führen Sie eine Abfrage, die eine angegebene Teilenummer abruft.
+Eine SQL-Prozedur besteht aus einer PROCEDURE-Klausel (die den Namen der Prozedur angibt), einer optionalen Liste mit Parameterdefinitionen und einer einzelnen SQL-Anweisung. Die Prozedur Get\_-Teil\_Nummer kann beispielsweise eine Abfrage ausführen, die eine angegebene Teilenummer abruft.
 
 > [!NOTE]
-> - Wenn die Klausel mehr als eine Felddefinition (d. h., *Param-Datentyp* -Paare) enthält, müssen Sie diese durch Kommas getrennt werden.
+> - Wenn die Klausel mehrere Felddefinitionen (*Param-Datentyp*-Paare) enthält, müssen diese durch Kommas getrennt werden.
 > - Auf die PROCEDURE-Klausel muss eine SQL-Anweisung folgen (z. B. eine [SELECT](select-statement-microsoft-access-sql.md)- oder eine [UPDATE](update-statement-microsoft-access-sql.md)-Anweisung).
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die Abfrage categoryList verwendet, und es wird die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
+In diesem Beispiel wird die Abfrage CategoryList benannt und die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung gefunden werden kann.
 
 ```vb
     Sub ProcedureX() 

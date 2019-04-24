@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1ab0615d1c16900e86a844635fad4ac9a90751a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312041"
 ---
 # <a name="using-ado-with-scripting-languages"></a>Verwenden von ADO mit Skriptsprachen
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In einer Umgebung mit Skripting ermöglicht ADO Daten mithilfe von serverseitigen Skripts verfügbar zu machen. In diesem Szenario ADO die zugrunde liegende OLE DB-Anbieter, der es verwendet, und andere Komponenten erforderlich, um einen bestimmten Datenspeicher verweisen auf einem Server mit Internetinformationsdienste (Internet Information Services, IIS) installiert sind. ADO ist Active Server Pages (ASP) verwenden, eine Komponente, die in einem Skript die HTML, beispielsweise generieren kann verwiesen wird. Dieser HTML-Inhalt kann über HTTP in einem Clientwebbrowser übergeben werden. Mithilfe von Skripting kann die Webseite Aktionen zurück an das serverseitige Skript ermöglicht es Ihnen, aktualisieren, Traversieren oder anzeigen bestimmte Daten senden.
+In einer Skriptingumgebung können Sie mit ADO Daten mithilfe von serverseitigen Skripts verfügbar machen. In diesem Szenario werden ADO, der von ADO genutzte zugrunde liegende OLE DB-Anbieter und alle anderen Komponenten, die zum Verweisen auf einen bestimmten Datenspeicher verwendet werden, auf einem Server mit Internetinformationsdienste (Internet Information Services, IIS) installiert. ADO ist eine Komponente, auf die in einem Skript, das z. B. HTML erstellen kann, mithilfe von Active Server Pages (ASP) verwiesen wird. Dieser HTML-Inhalt kann über HTTP an einen Client Webbrowser übergeben werden. Durch die Verwendung von Skripts kann die Webseite Aktionen zurück an das serverseitige Skript senden, sodass Sie bestimmte Daten aktualisieren, durchsuchen oder anzeigen können.
 
 ## <a name="odbc-data-sources"></a>ODBC-Datenquellen
 

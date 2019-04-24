@@ -1,5 +1,5 @@
 ---
-title: Initialisieren des Text-Datenquellentreibers
+title: Initialisieren des Text Datenquellentreibers
 TOCTitle: Initializing the Text Data Source driver
 ms:assetid: cba0864e-5f94-bf43-4708-b1981e3acaff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834391(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2e76cc7d6b5254f2347e2264b0588ee1df643d05
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291421"
 ---
-# <a name="initializing-the-text-data-source-driver"></a>Initialisieren des Text-Datenquellentreibers
+# <a name="initializing-the-text-data-source-driver"></a>Initialisieren des Text Datenquellentreibers
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Derselben Datenbanktreiber wird für beide Datenquellen Text und HTML-Datenquellen verwendet.
+Derselbe Datenbanktreiber wird sowohl für Textdatenquellen als auch für HTML-Datenquellen verwendet.
 
-Bei der Installation des Textdatenquellen-Datenbanktreibers schreibt das Setupprogramm Standardwerte der Microsoft Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für die Textdatenquellen-Datenbanktreibers beschrieben.
+Wenn Sie den Datenquellentreiber der Text Datenbank installieren, schreibt das Setup Programm eine Reihe von Standardwerten in die Unterschlüssel Module und ISAM Formats in die Microsoft Windows-Registrierung. You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings. The following sections describe initialization and ISAM Format settings for the Text Data Source database driver.
 
-## <a name="text-data-source-initialization-settings"></a>Initialisierungseinstellungen für Text Textdatenquellen
+## <a name="text-data-source-initialization-settings"></a>Initialisierungseinstellungen für Text Datenquellen
 
-Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Ordner Text** enthält initialisierungseinstellungen für Acetxt.dll-Treiber für den externen Zugriff auf Daten Textdateien verwendet. Standardeinstellungen für die Einträge in diesem Ordner sind im folgenden Beispiel dargestellt.
+Der **Text Ordner Access\\Connectivity Engine\\ISAM Formats** enthält Initialisierungseinstellungen für den acetxt. dll-Treiber, der für den externen Zugriff auf Text Datendateien verwendet wird. Typical settings for the entries in this folder are shown in the following example.
 
 ```vb
     win32=<path>\ ACETXT.DLL 
@@ -48,7 +48,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Ordner Text** enthält in
 
 <br/>
 
-Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Text wie folgt.
+The Microsoft Access database engine uses the Text folder entries as follows.
 
 <table>
 <colgroup>
@@ -75,24 +75,24 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Text wie f
 <td><p>Ein binärer Wert, der angibt, ob die erste Zeile der Tabelle Spaltennamen enthält. Der Wert 01 gibt an, dass beim Importieren die Spaltennamen aus der ersten Zeile verwendet werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>UTF</p></td>
+<td><p>CharacterSet</p></td>
 <td><p>Ein Indikator dazu, wie Textseiten gespeichert werden. Folgende Einstellungen sind möglich:</p>
 <p></p>
 <ul>
 <li><p>ANSI: Die ANSI-Codepage des Computers. AnsiToUnicode- und UnicodeToAnsi-Konvertierungen werden durchgeführt.</p></li>
 <li><p>OEM: Die OEM-Codepage des Computers. OemToUnicode- und UnicodeToOem-Konvertierungen werden durchgeführt.</p></li>
 <li><p>Unicode: Es werden keine Codepagekonvertierungen durchgeführt.</p></li>
-<li><p>&lt;Dezimalzahl&gt; – die Seitenzahl Code, der einen bestimmten Zeichensatz. In und aus Unicode konvertiert werden ausgeführt.</p></li>
+<li><p>&lt;Dezimalzahl&gt; – die Codepage-Nummer eines bestimmten Zeichensatzes. Konvertierungen von und nach Unicode werden durchgeführt.</p></li>
 </ul>
 <p></p>
 <p>Der Standardwert ist ANSI. Die Werte sind vom Typ REG_SZ.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Format</p></td>
-<td><p>Kann eine der folgenden sein: TabDelimited, CSVDelimited, mit Trennzeichen (&lt;einzelnes Zeichen&gt;). Einzelnes Zeichen als Trennzeichen in das Format mit Trennzeichen kann ein beliebiges einzelnes Zeichen außer doppelte Anführungszeichen (&quot;). Der Standardwert ist CSVDelimited. Werte sind vom Typ REG_SZ.</p></td>
+<td><p>Kann eine der folgenden sein: TabDelimited, CSVDelimited, Delimited (&lt;Single Character&gt;). Das einfarbige Trennzeichen im begrenzten Format kann ein beliebiges einzelnes Zeichen außer einem doppelten Anführungszeichen (&quot;) sein. Die Standardeinstellung ist CSVDelimited. Die Werte sind vom Typ REG_SZ.</p></td>
 </tr>
 <tr class="even">
-<td><p>Extensions</p></td>
+<td><p>Erweiterungen</p></td>
 <td><p>Die Erweiterung von Dateinamen, die bei der Suche nach textbasierten Daten verwendet werden soll. Die Standardeinstellung ist txt, csv, tab, asc. Die Werte sind vom Typ REG_SZ.</p></td>
 </tr>
 <tr class="odd">
@@ -103,9 +103,9 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Text wie f
 </table>
 
 
-## <a name="text-data-source-isam-formats"></a>Text Data Source-ISAM-Formate
+## <a name="text-data-source-isam-formats"></a>Text Datenquellen-ISAM-Formate
 
-Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Text** Ordner enthält die folgenden Einträge.
+Der **Text Ordner der\\Access Connectivity\\Engine-ISAM-Formate** enthält die folgenden Einträge.
 
 <table>
 <colgroup>
@@ -116,13 +116,13 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Text** Ordner enthält di
 <thead>
 <tr class="header">
 <th><p>Name des Eintrags</p></th>
-<th><p>Type</p></th>
+<th><p>Typ</p></th>
 <th><p>Wert</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Engine</p></td>
+<td><p>Modul</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Text</p></td>
 </tr>
@@ -147,7 +147,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Text** Ordner enthält di
 <td><p>01</p></td>
 </tr>
 <tr class="even">
-<td><p>IsamType</p></td>
+<td><p>Isamtype</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>2</p></td>
 </tr>
@@ -190,7 +190,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Text** Ordner enthält di
 
 ## <a name="html-import-isam-formats"></a>HTML-Import-ISAM-Formate
 
-Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Import** Ordner enthält die folgenden Einträge.
+Der **HTML-Import\\Ordner "\\Access Connectivity Engine ISAM Formats** " enthält die folgenden Einträge.
 
 <table>
 <colgroup>
@@ -201,20 +201,20 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Import** Ordner enth
 <thead>
 <tr class="header">
 <th><p>Name des Eintrags</p></th>
-<th><p>Type</p></th>
+<th><p>Typ</p></th>
 <th><p>Wert</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Engine</p></td>
+<td><p>Modul</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Text</p></td>
 </tr>
 <tr class="even">
 <td><p>ImportFilter</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>HTML-Dateien (*.HT **)</p></td>
+<td><p>HTML-Dateien (*. HT*)</p></td>
 </tr>
 <tr class="odd">
 <td><p>CanLink</p></td>
@@ -227,7 +227,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Import** Ordner enth
 <td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>IsamType</p></td>
+<td><p>Isamtype</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>2</p></td>
 </tr>
@@ -264,7 +264,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Import** Ordner enth
 
 ## <a name="html-export-isam-formats"></a>HTML-Export-ISAM-Formate
 
-Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Export** Ordner enthält die folgenden Einträge.
+Der **HTML-Export\\Ordner "\\Access Connectivity Engine ISAM Formats** " enthält die folgenden Einträge.
 
 <table>
 <colgroup>
@@ -275,13 +275,13 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Export** Ordner enth
 <thead>
 <tr class="header">
 <th><p>Name des Eintrags</p></th>
-<th><p>Type</p></th>
+<th><p>Typ</p></th>
 <th><p>Wert</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Engine</p></td>
+<td><p>Modul</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Text</p></td>
 </tr>
@@ -301,7 +301,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Export** Ordner enth
 <td><p>01</p></td>
 </tr>
 <tr class="odd">
-<td><p>IsamType</p></td>
+<td><p>Isamtype</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>2</p></td>
 </tr>
@@ -331,9 +331,9 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Export** Ordner enth
 > [!NOTE]
 > Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
 
-## <a name="customizing-the-schemaini-file-for-text-and-html-data"></a>Anpassen der Datei "Schema.ini" für Text- und HTML-Daten
+## <a name="customizing-the-schemaini-file-for-text-and-html-data"></a>Anpassen der Datei "Schema. ini" für Text-und HTML-Daten
 
-Zum Lesen, Importieren oder Exportieren von Text- und HTML-Daten müssen Sie die Datei Schema.ini erstellen und die Text-ISAM-Informationen in die INI-Datei eingeben. Schema.ini enthält Angaben zur Datenquelle: wie der Text formatiert wird, wie er beim Importieren gelesen wird und welches Standardexportformat für Dateien verwendet wird. Im folgenden Beispiel ist das Layout für Filename.txt, eine Datei fester Breite, dargestellt:
+To read, import, or export text and HTML data, you need to create a Schema.ini file in addition to including the Text ISAM information in the .ini file. Schema.ini contains the specifics of a data source: how the text file is formatted, how it is read at import time, and what the default export format is for files. The following examples show the layout for a fixed-width file, Filename.txt:
 
 ```text
     [Filename.txt] 
@@ -440,19 +440,18 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge in der Datei Schema.
 </tr>
 <tr class="even">
 <td><p>Format</p></td>
-<td><p>Kann auf einen der folgenden Werte festgelegt werden: TabDelimited, CSVDelimited, mit Trennzeichen (&lt;einzelnes Zeichen&gt;), oder FixedLength. Das Trennzeichen für das Dateiformat mit Trennzeichen ein beliebiges einzelnes Zeichen außer doppelte Anführungszeichen werden kann (&quot;).</p></td>
+<td><p>Kann auf einen der folgenden Werte festgelegt werden: TabDelimited, CSVDelimited, Delimited&lt;(einzelnes&gt;Zeichen) oder FixedLength. Das für das Dateiformat mit Trennzeichen angegebene Delimiter kann ein beliebiges, außer einem doppelten Anführungszeichen (&quot;) sein.</p></td>
 </tr>
 <tr class="odd">
 <td><p>FixedFormat</p></td>
-<td><p>Diese Option wird nur für das Format FixedLength verwendet und kann einen der folgenden Werte aufweisen: RaggedEdge oder TrueFixedLength.
- Mit RaggedEdge können Zeilen mit einem Wagenrücklaufzeichen beendet werden. Mit TrueFixedLength muss jede Zeile eine ganz bestimmte Anzahl von Zeichen enthalten, und alle Wagenrücklaufzeichen, die sich nicht am Zeilenende befinden, werden als in ein Feld eingebettet interpretiert. Wenn diese Einstellung nicht vorhanden ist, wird der Standardwert RaggedEdge verwendet.</p></td>
+<td><p>Diese Option wird nur für das Format FixedLength verwendet und kann einen der folgenden Werte aufweisen: RaggedEdge oder TrueFixedLength. Mit RaggedEdge können Zeilen mit einem Wagenrücklaufzeichen beendet werden. Mit TrueFixedLength muss jede Zeile eine ganz bestimmte Anzahl von Zeichen enthalten, und alle Wagenrücklaufzeichen, die sich nicht am Zeilenende befinden, werden als in ein Feld eingebettet interpretiert. Wenn diese Einstellung nicht vorhanden ist, wird der Standardwert RaggedEdge verwendet.</p></td>
 </tr>
 <tr class="even">
 <td><p>MaxScanRows</p></td>
 <td><p>Gibt die Anzahl der Zeilen an, die beim Ermitteln des Spaltentyps geprüft werden. Mit dem Wert 0 wird die gesamte Datei durchsucht.</p></td>
 </tr>
 <tr class="odd">
-<td><p>UTF</p></td>
+<td><p>CharacterSet</p></td>
 <td><p>Mögliche Werte sind OEM, ANSI, UNICODE oder die Dezimalzahl einer gültigen Codepage. Gibt den Zeichensatz der Quelldatei an.</p></td>
 </tr>
 <tr class="even">
@@ -465,7 +464,7 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge in der Datei Schema.
 </tr>
 <tr class="even">
 <td><p>CurrencyPosFormat</p></td>
-<td><p>Kann auf einen der folgenden Werte festgelegt werden: mit kein Trennung ($1) Währung Symbol Suffix mit keine Trennung (1$) mit einem Zeichen voneinander getrennt zu halten ($ 1) Währung Symbol Suffix Währungssymbolpräfix mit einem Leerzeichen (1 $) Wenn dieser Eintrag nicht vorhanden ist, wird der Standardwert in der Windows-Systemsteuerung verwendet.</p></td>
+<td><p>Kann auf einen der folgenden Werte festgelegt werden: Währungssymbolpräfix ohne Trennung ($1) Währungssymbolsuffix ohne Trennung ($1) Währungssymbolpräfix mit einem Zeichenabstand ($1) Währungssymbolsuffix mit einer Zeichen Trennung ($1), wenn dieser Eintrag abwesend ist, wird der Standardwert in der Windows-Systemsteuerung verwendet.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CurrencyDigits</p></td>
@@ -473,7 +472,7 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge in der Datei Schema.
 </tr>
 <tr class="even">
 <td><p>CurrencyNegFormat</p></td>
-<td><p>Kann eine der folgenden Werte sein: ($1) – $1 – 1 $ $1 – (1$) – 1$ 1 – 1$ $– – 1 $ – $ 1-1 $– $ 1 – $-1-1 – $ ($ 1) (1 $) wird das Dollarzeichen aus Gründen der in diesem Beispiel wird gezeigt, aber mit den entsprechenden CurrencySymbol-Wert in die tatsächliche Anwendung ersetzt werden muss. Wenn dieser Eintrag nicht vorhanden ist, wird der Standardwert aus der Windows-Systemsteuerung verwendet.</p></td>
+<td><p>Kann einer der folgenden Werte sein: ($1) – $1 $ – $1 1 – ($1) – $1 1 – $1 $ – – $1 – $1 $1 – $1 – $ – 1 1 – $ ($1) ($1) das Dollarzeichen wird für die Zwecke dieses Beispiels angezeigt, aber es sollte durch den entsprechenden CurrencySymbol-Wert im tatsächlichen Programm ersetzt werden. Wenn dieser Eintrag nicht vorhanden ist, wird der Standardwert aus der Windows-Systemsteuerung verwendet.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CurrencyThousandSymbol</p></td>
@@ -496,18 +495,17 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge in der Datei Schema.
 <td><p>Gibt an, ob ein Dezimalwert, der kleiner als 1 und größer als –1 ist, führende Nullen enthalten soll. Mögliche Werte sind False (keine führende Nullen) oder True.</p></td>
 </tr>
 <tr class="even">
-<td><p>Col1, Col2, …</p></td>
-<td><p>Listet die Spalten in der Textdatei gelesen werden sollen. Das Format dieses Eintrags werden sollten: <em>Spalte</em>=<em>Spaltenname</em> Typ [Width <em> #</em>] <em>Spaltenname</em>: Spaltennamen mit eingebetteten Leerzeichen in Anführungszeichen eingeschlossen werden soll. <em>Typ</em>: kann Bit, Byte, Short, Long, Decimal, Currency, Single, Double, DateTime. Binary, OLE, Text oder Memo. Darüber hinaus werden die folgenden ODBC-Texttreibertypen unterstützt: Char (identisch mit Text) Float (identisch mit Double) Integer (identisch mit Short) LongChar (identisch mit Memo) Date <em>Datumsformat</em> beim Typ Memo eine zusätzliche Format Markierung [Attribute Hyperlink kann] verwendet, um Spalten angeben, die in Microsoft Access aktive URLs sein sollte. Beim Typ Decimal müssen die zusätzlichen Formatmarkierungen [Scale #] Precision #] verwendet werden.</p></td>
+<td><p>Col1, col2,...</p></td>
+<td><p>Die in der Textdatei zu lesenden Spalten. Das Format dieses Eintrags sollte sein: <em>coln</em>=<em>ColumnName</em> Type [Width <em> #</em>] <em>ColumnName</em>: Spaltennamen mit eingebetteten Leerzeichen sollten in Anführungszeichen eingeschlossen werden. <em>Typ</em>: kann Bit, Byte, Short, Long, Decimal, Currency, Single, Double, DateTime sein. Binary, OLE, Text oder Memo. Darüber hinaus werden die folgenden ODBC-Text Treibertypen unterstützt: char (identisch mit Text) float (identisch mit Double) Integer (identisch mit Short) LongChar (identisch mit Memo) Datums <em>Format</em> im Fall eines Memo Typs eine zusätzliche Formatmarkierung [Attribut Hyperlink] wird verwendet, um Spalten anzugeben, die aktive URLs in Microsoft Access sein sollen. Beim Typ Decimal müssen die zusätzlichen Formatmarkierungen [Scale #] Precision #] verwendet werden.</p></td>
 </tr>
 <tr class="odd">
-<td><p>TextDelimiter</p></td>
-<td><p>Hierfür kann jedes beliebige einzelne Zeichen zum Trennen von Zeichenfolgen verwendet werden, die eines der anderen Sonderzeichen enthalten.
- Beispiel: &quot;ABC&quot;,&quot;Xyz Pqr&quot;,&quot;Hij&quot; Wenn dieser Eintrag nicht vorhanden ist, werden das Standardtrennzeichen doppelte Anführungszeichen. Wenn dieser Eintrag die Zeichenfolge ist &quot;keine&quot; und keines der Zeichen als Trennzeichen behandelt werden sollen.</p></td>
+<td><p>Texttrenner</p></td>
+<td><p>Hierfür kann jedes beliebige einzelne Zeichen zum Trennen von Zeichenfolgen verwendet werden, die eines der anderen Sonderzeichen enthalten. Beispiel: &quot;ABC&quot;,&quot;XYZ, PQR&quot;,&quot;hij&quot; wenn dieser Eintrag nicht vorhanden ist, ist das Standardtrennzeichen ein doppeltes Anführungszeichen. Wenn dieser Eintrag die Zeichenfolge &quot;None&quot; ist, werden keine Zeichen als Begrenzer behandelt.</p></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> Wenn Sie Einstellungen in der Datei Schema.ini ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
+> When you change Schema.ini file settings, you must exit and then restart the database engine for the new settings to take effect.
 
 

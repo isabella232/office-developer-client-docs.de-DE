@@ -1,5 +1,5 @@
 ---
-title: TableDef.Attributes-Eigenschaft (DAO)
+title: TableDef. Attributes-Eigenschaft (DAO)
 TOCTitle: Attributes Property
 ms:assetid: d01588c3-e94e-06bd-6568-974873411f2d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834701(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: abdb0d07f2293a53fccaf0d628c301750027acc6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314392"
 ---
-# <a name="tabledefattributes-property-dao"></a>TableDef.Attributes-Eigenschaft (DAO)
+# <a name="tabledefattributes-property-dao"></a>TableDef. Attributes-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Legt einen Wert fest, der ein oder mehrere Merkmale eines **TableDef**-Objekts angibt, oder gibt den betreffenden Wert zurück. **Long**-Wert mit Lese-/Schreibzugriff.
@@ -34,7 +34,7 @@ Für ein Objekt, das noch nicht an eine Auflistung angehängt wurde, besteht Les
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel zeigt die **Attributes**-Eigenschaft für die Objekte **Field**, **Relation** und **TableDef** in der Nordwind-Datenbank an.
+In diesem Beispiel wird die **Attributes**-Eigenschaft für **Field**-, **Relation**- und **TableDef**-Objekte in der Northwind-Datenbank angezeigt.
 
 ```vb 
 Sub AttributesX() 

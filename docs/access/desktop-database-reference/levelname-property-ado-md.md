@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8238bb0f732189d35de3327fcef42b89f8217ef8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290050"
 ---
 # <a name="levelname-property-ado-md"></a>LevelName-Eigenschaft (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Namen der Ebene eines Elements an.
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Gibt einen schreibgeschützten **String** -Wert zurück.
+Gibt einen schreibgeschützten **String**-Wert zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **LevelName** -Eigenschaft, um den Namen der Ebene abzurufen, zu der ein Element gehört. Dies entspricht der [Name](name-property-ado-md.md)-Eigenschaft eines [Level](level-object-ado-md.md)-Objekts.
+Verwenden Sie die **LevelName**-Eigenschaft, um den Namen der Ebene abzurufen, zu der ein Element gehört. Dies entspricht der [Name](name-property-ado-md.md)-Eigenschaft eines [Level](level-object-ado-md.md)-Objekts.
 

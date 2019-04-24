@@ -1,5 +1,5 @@
 ---
-title: Field2.ValidateOnSet-Eigenschaft (DAO)
+title: Field2. ValidateOnSet-Eigenschaft (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 07612730-8dad-4ef0-b19b-f76845973fc3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844969(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 427903186cce0f2ce3adf7690682a793fb417873
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292643"
 ---
-# <a name="field2validateonset-property-dao"></a>Field2.ValidateOnSet-Eigenschaft (DAO)
+# <a name="field2validateonset-property-dao"></a>Field2. ValidateOnSet-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, ob der Wert eines **Field2**-Objekts sofort beim Festlegen der **Value**-Eigenschaft überprüft wird (gilt nur für Microsoft Access-Arbeitsbereiche).
@@ -32,11 +32,11 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt,
 
 Nur **Field2**-Objekte in **Recordset**-Objekten unterstützen den Lese-/Schreibzugriff der **ValidateOnSet**-Eigenschaft.
 
-In Situationen, in denen ein Benutzer Datensätze eingibt, die umfangreiche Daten vom Typ Memo einschließen, kann es nützlich sein, die ValidateOnSet-Eigenschaft auf True festzulegen. Falls gewartet wird, bis die Daten mit dem Update-Aufruf überprüft werden, geht gegebenenfalls unnötig viel Zeit mit der Eingabe langer Memodaten in die Datenbank verloren. Letztendlich stellt sich möglicherweise heraus, dass die Daten aufgrund eines Verstoßes gegen eine Gültigkeitsregel in einem anderen Feld ungültig sind.
+Setting the **ValidateOnSet** property to **True** can be useful in a situation when a user is entering records that include substantial Memo data. Waiting until the **Update** call to validate the data can result in unnecessary time spent writing the lengthy Memo data to the database if it turns out that the data was invalid anyway because a validation rule was broken in another field.
 
 ## <a name="example"></a>Beispiel
 
-Diese Beispiel veranschaulicht mit der ValidateOnSet-Eigenschaft, wie Fehler bei der Dateneingabe abgefangen werden können. Zum Ausführen dieser Prozedur ist die ValidateData-Funktion erforderlich.
+This example uses the **ValidateOnSet** property to demonstrate how one might trap for errors during data entry. The ValidateData function is required for this procedure to run.
 
 ```vb
     Sub ValidateOnSetX() 

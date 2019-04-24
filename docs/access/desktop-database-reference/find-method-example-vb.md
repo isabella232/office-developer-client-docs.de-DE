@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d7149cd3ac9fe32d56cd0f5e75a7d718c02e9e46
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292384"
 ---
 # <a name="find-method-example-vb"></a>Find-Methode (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird mithilfe des [Recordset](recordset-object-ado.md) -Objekts [Suchen](find-method-ado.md) -Methode suchen und die Anzahl der Business Titel in der ***Pubs*** -Datenbank. In diesem Beispiel wird davon ausgegangen, dass der zugrunde liegende Anbieter keine ähnliche Funktion unterstützt.
+In diesem Beispiel wird die [Find](find-method-ado.md)-Methode des [Recordset](recordset-object-ado.md)-Objekts verwendet, um in der ***Pubs***-Datenbank nach Geschäftstiteln zu suchen und deren Anzahl zu ermitteln. In diesem Beispiel wird davon ausgegangen, dass der zugrunde liegende Anbieter keine ähnliche Funktion unterstützt.
 
 ```vb 
  

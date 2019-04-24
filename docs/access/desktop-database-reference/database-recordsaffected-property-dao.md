@@ -1,5 +1,5 @@
 ---
-title: Database.RecordsAffected-Eigenschaft (DAO)
+title: Database. RecordsAffected-Eigenschaft (DAO)
 TOCTitle: RecordsAffected Property
 ms:assetid: 1c591231-21dd-f0b1-4ba6-87784c5890d3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845732(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a1bcb9ac1140b275d0c7a2441f58d2ced0e0f82c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294743"
 ---
-# <a name="databaserecordsaffected-property-dao"></a>Database.RecordsAffected-Eigenschaft (DAO)
+# <a name="databaserecordsaffected-property-dao"></a>Database. RecordsAffected-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Anzahl der Datensätze zurück, die von der zuletzt aufgerufenen **[Execute](connection-execute-method-dao.md)** -Methode betroffen waren.
 
@@ -29,7 +29,7 @@ Gibt die Anzahl der Datensätze zurück, die von der zuletzt aufgerufenen **[Exe
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die RecordsAffected-Eigenschaft mit Aktionsabfragen für ein Database-Objekt und ein QueryDef-Objekt ausgeführt. Zum Ausführen dieser Prozedur ist die RecordsAffectedOutput-Funktion erforderlich.
+This example uses the **RecordsAffected** property with action queries executed from a **Database** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.
 
 ```vb
     Sub RecordsAffectedX() 

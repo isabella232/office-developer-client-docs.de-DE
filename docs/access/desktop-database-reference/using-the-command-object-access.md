@@ -1,5 +1,5 @@
 ---
-title: Using the Command Object (Access)
+title: Verwenden des Command-Objekts (Access)
 TOCTitle: Using the Command Object
 ms:assetid: dab6f0dd-1efa-3a5c-b192-c6d6afcaabfb
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250102(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9b89d292d86035e565ad18413062274dfbfc74db
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312026"
 ---
 # <a name="using-the-command-object-access"></a>Verwenden des Command-Objekts (Access)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Nachdem Sie eine Verbindung mit einer Datenquelle hergestellt haben, müssen Sie Anforderungen dafür ausführen, um Resultsets zu erhalten. ADO kapselt diese Befehlsfunktionalität im **Command** -Objekt.
 
-Mit dem Command-Objekt können Sie jede Art von Vorgang vom Anbieter anfordern, vorausgesetzt der Anbieter kann die Befehlszeichenfolge ordnungsgemäß interpretieren. Ein gängiger Vorgang für Datenprovider ist das Abfragen einer Datenbank und das Zurückgeben von Datensätzen in einem Recordset-Objekt. Recordset-Objekte werden weiter unten in diesem Kapitel und in anderen Kapiteln behandelt. Stellen Sie sich Recordset-Objekte für den Moment als Tools zum Speichern und Anzeigen von Resultsets vor. Wie bei vielen ADO-Objekten können in Abhängigkeit von der Funktionalität des Anbieters manche Auflistungen, Methoden oder Eigenschaften des Command-Objekts Fehler generieren.
+You can use the **Command** object to request any type of operation from the provider, assuming that the provider can interpret the command string properly. A common operation for data providers is to query a database and return records in a **Recordset** object. **Recordset**s wird später in diesem und anderen Kapiteln besprochen; Betrachten Sie Sie im Moment als Tools zum Speichern und Anzeigen von Resultsets. As with many ADO objects, depending on the functionality of the provider, some **Command** object collections, methods, or properties might generate errors when referenced.
 
-Es ist nicht immer erforderlich ein **Command** -Objekt zu erstellen, um einen Befehl für eine Datenquelle auszuführen. Sie können die **Execute** -Methode im **Connection** -Objekt oder die **Open** -Methode im **Recordset** -Objekt verwenden. Allerdings sollten Sie ein **Command** -Objekt verwenden, wenn Sie einen Befehl im Code wiederverwenden oder wenn Sie detaillierte Parameterinformationen mit dem Befehl übergeben müssen. Diese Szenarien werden weiter unten in diesem Kapitel ausführlicher behandelt.
+Es ist nicht immer erforderlich ein **Command**-Objekt zu erstellen, um einen Befehl für eine Datenquelle auszuführen. Sie können die **Execute**-Methode im **Connection**-Objekt oder die **Open**-Methode im **Recordset**-Objekt verwenden. Allerdings sollten Sie ein **Command**-Objekt verwenden, wenn Sie einen Befehl im Code wiederverwenden oder wenn Sie detaillierte Parameterinformationen mit dem Befehl übergeben müssen. Diese Szenarien werden weiter unten in diesem Kapitel ausführlicher behandelt.
 
 > [!NOTE]
-> Bestimmte Befehle können ein Resultset als binären Datenstrom oder als einen einzigen Datensatz und nicht als ein Recordset-Objekt zurück, wenn dies vom Anbieter unterstützt wird. Darüber hinaus einige Befehle nicht für die Verwendung von Resultsets überhaupt (beispielsweise eine SQL-Update-Abfrage) zurückgegeben. In diesem Kapitel werden das häufigste Szenario jedoch behandelt: Ausführen von Befehlen, die Ergebnisse in einem Recordset-Objekt zurückgeben. Weitere Informationen zum Zurückgeben von Ergebnissen in Datensätze oder Streams finden Sie unter [Kapitel 10: Datensätze und Datenströme](chapter-10-records-and-streams.md).
+> Bestimmte Command-Objekte können ein Resultset als binären Datenstrom oder als einzelnes Record-Objekt zurückgeben, und nicht als Recordset-Objekt, falls dies vom Anbieter unterstützt wird. Außerdem sind manche Command-Objekte nicht für das Zurückgeben von Resultsets vorgesehen (z. B. eine UPDATE-SQL-Abfrage). In diesem Kapitel wird jedoch das typischste Szenario behandelt, nämlich das Ausführen von Command-Objekten, die Ergebnisse in einem Recordset-Objekt zurückgeben. Weitere Informationen zum Zurückgeben von Ergebnissen in Record- oder Stream-Objekten finden Sie in [Kapitel 10: Datensätze und Datenströme](chapter-10-records-and-streams.md).
 
 Dieser Abschnitt enthält die folgenden Themen:
 

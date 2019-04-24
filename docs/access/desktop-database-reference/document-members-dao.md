@@ -1,5 +1,5 @@
 ---
-title: Document-Member (DAO)
+title: Document-Elemente (DAO)
 TOCTitle: Document Members
 ms:assetid: 8de770e6-e4d1-372a-3ef8-8539c921b41f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197365(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cd50ec72113b0615849ff6b8b2e8d73c0e61c3ce
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293791"
 ---
-# <a name="document-members-dao"></a>Document-Member (DAO)
+# <a name="document-members-dao"></a>Document-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Document-Objekt schließt Informationen zu einer Objektinstanz ein. Bei dem Objekt kann es sich um eine Datenbank, gespeicherte Tabelle, Abfrage oder Beziehung handeln (gilt nur für Microsoft Access-Datenbanken).
 
@@ -59,11 +59,11 @@ Ein Document-Objekt schließt Informationen zu einer Objektinstanz ein. Bei dem 
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="document-container-property-dao.md">Container</a></strong></p></td>
-<td><p>Gibt den Namen des <strong><a href="container-object-dao.md">Container</a></strong> -Objekts zurück, zu dem ein <strong>Document</strong>-Objekt gehört (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Gibt den Namen des <strong><a href="container-object-dao.md">Container</a></strong> -Objekts zurück, zu dem ein <strong>Document</strong> -Objekt gehört (nur Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="document-datecreated-property-dao.md">DateCreated</a></strong></p></td>
-<td><p>Gibt das Datum und die Uhrzeit zurück, zu der ein Objekt erstellt wurde. Schreibgeschützter <strong>Variant</strong>-Wert.</p></td>
+<td><p>Gibt das Datum und die Uhrzeit zurück, zu der ein Objekt erstellt wurde. Read-only <strong>Variant</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="document-lastupdated-property-dao.md">LastUpdated</a></strong></p></td>
@@ -71,7 +71,7 @@ Ein Document-Objekt schließt Informationen zu einer Objektinstanz ein. Bei dem 
 </tr>
 <tr class="even">
 <td><p><strong><a href="document-name-property-dao.md">Name</a></strong></p></td>
-<td><p>Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter <strong>String</strong>-Wert.</p></td>
+<td><p>Gibt den Namen des angegebenen Objekts zurück. Read-only <strong>Zeichenfolge</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="document-properties-property-dao.md">Eigenschaften</a></strong></p></td>

@@ -14,26 +14,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b37fb96ddfeaabc97c6f445f8951876e8026fbfe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296857"
 ---
 # <a name="before-change-macro-event"></a>Makroereignis "Vor Änderung"
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Ereignis **Vor Änderung** tritt ein, wenn ein Datensatz geändert wird, jedoch bevor der Commit für die Änderung erfolgt ist.
 
 > [!NOTE]
-> [!HINWEIS] Das Ereignis **Vor Änderung** ist nur in Datenmakros verfügbar.
+> Das Ereignis **Vor Änderung** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit dem Ereignis **Vor Änderung** führen Sie sämtliche Aktionen vor dem Ändern eines Datensatzes aus. Das Ereignis **Vor Änderung** wird häufig verwendet, um Überprüfungen auszuführen und benutzerdefinierte Fehlermeldungen auszugeben.
 
-Die **aktualisierte ("der*Name des Felds*")** -Funktion können bestimmen, ob ein Feld geändert hat. Im folgenden Codebeispiel wird veranschaulicht, wie eine **If** -Anweisung verwenden, um festzustellen, ob das Feld PaidInFull geändert wurde.
+Sie können die **aktualisierte ("*Feldname*")-** Funktion verwenden, um zu bestimmen, ob ein Feld geändert wurde. Im folgenden Codebeispiel wird gezeigt, wie mit einer **if** -Anweisung bestimmt wird, ob das PaidInFull-Feld geändert wurde.
 
 ```vb
     If  Updated("PaidInFull")   Then 
@@ -65,7 +65,7 @@ Mit der folgenden Syntax können Sie auf einen vorherigen Wert in einem Feld zug
     [Old].[Field Name]
 ```
 
-Zugriff auf den vorherigen Wert des QuantityInStock-Felds verwenden Sie beispielsweise die folgende Syntax.
+For example, to access the previous value of the QuantityInStock field, use the following syntax.
 
 ```vb
     [Old].[QuantityInStock]
@@ -73,7 +73,7 @@ Zugriff auf den vorherigen Wert des QuantityInStock-Felds verwenden Sie beispiel
 
 Am Ende des Ereignisses **Vor Änderung** werden die vorherigen Werte dauerhaft gelöscht.
 
-Mit der **AuslösenFehler** -Aktion können Sie das Ereignis **Vor Änderung** abbrechen. Bei einem Fehler werden die Änderungen im Ereignis **Vor Änderung** verworfen.
+Mit der **AuslösenFehler**-Aktion können Sie das Ereignis **Vor Änderung** abbrechen. Bei einem Fehler werden die Änderungen im Ereignis **Vor Änderung** verworfen.
 
 In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderung** verwendet werden können.
 
@@ -103,7 +103,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Makroaktion</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -143,7 +143,7 @@ Im Makro-Designer wird ein leeres Datenmakro angezeigt.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Codebeispiel wird wird das Ereignis **Vor Änderung** verwendet, um die Felder Status überprüfen. Ein Fehler wird ausgelöst, wenn ein ungültiger Wert in das Feld Auflösung enthalten ist.
+Im folgenden Codebeispiel wird das **Before Change** -Ereignis verwendet, um die Status Felder zu überprüfen. An error is raised if an inappropriate value is contained in the Resolution field.
 
 ```vb 
  
@@ -178,9 +178,9 @@ Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 
 2.  Klicken Sie auf der Registerkarte **Tabelle** in der Gruppe **Vorabereignisse** auf **Vor Änderung**.
 
-3.  Wählen Sie den Code im folgenden Codebeispiel wird ein, und drücken Sie **STRG + C** , um ihn in die Zwischenablage zu kopieren.
+3.  Wählen Sie den Code im folgenden Codebeispiel aus, und drücken Sie dann **STRG + C** , um ihn in die Zwischenablage zu kopieren.
 
-4.  Aktivieren Sie das Makro-Designer-Fenster, und drücken Sie **STRG + V**.
+4.  Aktivieren Sie das Makro-Designer-Fenster, und drücken Sie dann **STRG + V**.
 
 
 
@@ -228,9 +228,9 @@ Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 </DataMacros>
 ```
 
-Das folgende Beispiel veranschaulicht die Auslösenfehler-Aktion verwenden, um das Ereignis vor Änderung Daten Makro abzubrechen. Wenn das Feld AssignedTo aktualisiert wird, wird mit einem NachschlagenDatensatz-Datenblock verwendet, um festzustellen, ob der zugewiesene Techniker eine open Service-Anforderung derzeit zugewiesen ist. Wenn dies der Fall ist, klicken Sie dann das Ereignis vor Änderung abgebrochen, und der Datensatz nicht aktualisiert.
+Das folgende Beispiel zeigt, wie Sie die Auslösenfehler-Aktion verwenden, um das makroereignis Before Change Data abzubrechen. Wenn das Feld ZugewiesenAn aktualisiert wird, wird ein LookupRecord-Datenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer offenen Serviceanforderung zugeordnet ist. Wenn dies auf true festgelegt ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     /* Get the name of the technician  */

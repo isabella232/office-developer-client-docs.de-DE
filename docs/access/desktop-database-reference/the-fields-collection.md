@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ce08ac5952151471ce74afd9a8a49600d8e8f633
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314133"
 ---
 # <a name="fields-collection"></a>Fields-Auflistung
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Die **Fields** -Auflistung ist eine der systeminternen Auflistungen von ADO. Eine Auflistung ist eine geordnete Menge von Elementen, auf die als Einheit Bezug genommen werden kann.
 
@@ -73,11 +73,11 @@ Wenn diese Methoden gleichwertig sind, welches ist dann die beste Methode? Nun, 
 
 ## <a name="using-the-refresh-method"></a>Verwenden der Refresh-Methode
 
-Im Gegensatz zu manch anderen ADO-Auflistungen hat das Verwenden der **Refresh** -Methode in der **Fields** -Auflistung keinen sichtbaren Effekt. Zum Abrufen von Änderungen aus der zugrunde liegenden Datenbankstruktur müssen Sie entweder die **Requery** -Methode verwenden, oder falls Lesezeichen vom **Recordset** -Objekt nicht unterstützt werden, die **MoveFirst** -Methode, mit der der Befehl erneut für den Anbieter ausgeführt wird.
+Im Gegensatz zu manch anderen ADO-Auflistungen hat das Verwenden der **Refresh**-Methode in der **Fields**-Auflistung keinen sichtbaren Effekt. Zum Abrufen von Änderungen aus der zugrunde liegenden Datenbankstruktur müssen Sie entweder die **Requery**-Methode verwenden, oder falls Lesezeichen vom **Recordset**-Objekt nicht unterstützt werden, die **MoveFirst**-Methode, mit der der Befehl erneut für den Anbieter ausgeführt wird.
 
 ## <a name="adding-fields-to-a-recordset"></a>Hinzufügen von Feldern zu einem Recordset
 
-Mit der **Append** -Methode werden einem **Recordset** -Objekt Felder hinzugefügt.
+Mit der **Append**-Methode werden einem **Recordset**-Objekt Felder hinzugefügt.
 
 Mithilfe der **Append** -Methode können Sie ein **Recordset** -Objekt programmgesteuert erstellen, ohne eine Verbindung mit einer Datenquelle zu öffnen. Ein Laufzeitfehler wird gemeldet, falls die **Append** -Methode in der **Fields** -Auflistung eines geöffneten **Recordset** -Objekts oder eines **Recordset** -Objekts, in dem die **ActiveConnection** -Eigenschaft festgelegt wurde, aufgerufen wird. Felder können nur an ein **Recordset** -Objekt angefügt werden, das nicht geöffnet ist und noch nicht mit einer Datenquelle verbunden wurde. Das **Recordset** -Objekt muss jedoch zuerst geöffnet werden, um Werte für das neu angefügte **Fields** -Objekt anzugeben.
 

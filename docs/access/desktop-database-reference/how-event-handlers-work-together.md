@@ -8,39 +8,39 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e772e93f27d6bb5f30d865e3435d4bde6bdc5e73
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291922"
 ---
 # <a name="how-event-handlers-work-together"></a>Zusammenspiel von Ereignishandlern
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Wenn Sie nicht in Visual Basic programmieren, müssen, unabhängig davon, ob Sie tatsächlich alle Ereignisse verarbeiten, alle Ereignishandler für die Ereignisse **Connection** und **Recordset** implementiert werden. Der Implementierungsaufwand hängt von der Programmiersprache ab. Weitere Informationen finden Sie unter [ADO-Ereignisinstanziierung nach Sprache](https://docs.microsoft.com/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado).
 
-## <a name="paired-event-handlers"></a>Kombinierte Ereignishandler
+## <a name="paired-event-handlers"></a>Paarweise Ereignishandler
 
-Jedem Will-Ereignishandler ist ein Complete-Ereignishandler zugeordnet. Wenn z. B. durch die Anwendung der Wert eines Felds geändert wird, wird der WillChangeField-Ereignishandler aufgerufen. Wenn die Änderung akzeptabel ist, bleibt der adStatus-Parameter unverändert, und die Operation wird ausgeführt. Wenn die Operation abgeschlossen ist, wird die Anwendung durch ein FieldChangeComplete-Ereignis benachrichtigt, dass die Operation beendet ist. Wenn sie erfolgreich abgeschlossen wurde, enthält adStatus den Wert adStatusOK; andernfalls enthält adStatus den Wert adStatusErrorsOccurred, und Sie müssen das Error-Objekt überprüfen, um die Ursache des Fehlers zu ermitteln.
+Each Will event handler has an associated Complete event handler. For example, when your application changes the value of a field, the **WillChangeField** event handler is called. If the change is acceptable, your application leaves the **adStatus** parameter unchanged and the operation is performed. When the operation completes, a **FieldChangeComplete** event notifies your application that the operation has finished. If it completed successfully, **adStatus** contains **adStatusOK**; otherwise, **adStatus** contains **adStatusErrorsOccurred** and you must check the **Error** object to determine the cause of the error.
 
 Wenn **WillChangeField** aufgerufen wird, ermitteln Sie möglicherweise, dass die Änderung nicht vorgenommen werden soll. Legen Sie in diesen Fall **adStatus** auf **adStatusCancel** fest. Die Operation wird abgebrochen, und das **FieldChangeComplete** -Ereignis empfängt für **adStatus** den Wert **adStatusErrorsOccurred**. Das **Error** -Objekt enthält **adErrOperationCancelled**, sodass dem **FieldChangeComplete** -Handler mitgeteilt wird, dass die Operation abgebrochen wurde. Sie müssen jedoch den Wert des **adStatus** -Parameters vor dem Ändern überprüfen, da das Festlegen von **adStatus** auf **adStatusCancel** keine Auswirkung hat, wenn der Parameter bei Beginn des Verfahrens auf **adStatusCantDeny** festgelegt war.
 
-Manchmal wird von einer Operation mehr als ein Ereignis ausgelöst. Beispielsweise verfügt das Recordset-Objekt über kombinierte Ereignisse für Field- und Record-Änderungen. Wenn der Wert eines Field-Objekts von der Anwendung geändert wird, wird der WillChangeField-Ereignishandler aufgerufen. Wenn durch ihn bestimmt wird, dass die Operation fortgesetzt werden kann, wird außerdem der WillChangeRecord-Ereignishandler ausgelöst. Wenn auch durch diesen Handler das Fortsetzen des Ereignisses zugelassen wird, wird die Änderung vorgenommen, und die Ereignishandler FieldChangeComplete und RecordChangeComplete werden aufgerufen. Da die Reihenfolge, in der die Will-Ereignishandler für eine bestimmte Operation aufgerufen werden, nicht definiert ist, sollten Sie das Schreiben von Code vermeiden, der davon abhängt, dass Handler in einer bestimmten Reihenfolge aufgerufen werden.
+Sometimes an operation can raise more than one event. For example, the **Recordset** object has paired events for **Field** changes and **Record** changes. When your application changes the value of a **Field**, the **WillChangeField** event handler is called. If it determines that the operation can continue, the **WillChangeRecord** event handler is also raised. If this handler also allows the event to continue, the change is made and the **FieldChangeComplete** and **RecordChangeComplete** event handlers are called. The order in which the Will event handlers for a particular operation are called is not defined, so you should avoid writing code that depends on calling handlers in a particular sequence.
 
-In Fällen, in denen mehrere Will-Ereignisse ausgelöst werden, wird die Operation möglicherweise durch eines der Ereignisse abgebrochen. Wenn die Anwendung z. B. den Wert eines Field-Objekts ändert, werden normalerweise die Ereignishandler WillChangeField und WillChangeRecord aufgerufen. Wenn die Operation jedoch im ersten Ereignishandler abgebrochen wird, wird sofort der diesem zugeordnete Complete-Handler mit adStatusOperationCancelled aufgerufen. Der zweite Handler wird nie aufgerufen. Wenn jedoch durch den ersten Ereignishandler die Fortsetzung des Ereignisses zugelassen wird, wird der andere Ereignishandler aufgerufen. Wenn dann von diesem die Operation abgebrochen wird, werden wie in den vorherigen Beispielen beide Complete-Ereignisse aufgerufen.
+In instances when multiple Will events are raised, one of the events might cancel the pending operation. For example, when your application changes the value of a **Field**, both **WillChangeField** and **WillChangeRecord** event handlers would normally be called. However, if the operation is canceled in the first event handler, its associated Complete handler is immediately called with **adStatusOperationCancelled**. The second handler is never called. If, however, the first event handler allows the event to proceed, the other event handler will be called. If it then cancels the operation, both Complete events will be called as in the earlier examples.
 
-## <a name="unpaired-event-handlers"></a>Nicht kombinierte Ereignishandler
+## <a name="unpaired-event-handlers"></a>Nicht gekoppelte Ereignishandler
 
-Solange der dem Ergebnis übergebene Status nicht adStatusCantDeny entspricht, können Sie Ereignisbenachrichtigungen für ein Ereignis deaktivieren, indem Sie adStatusUnwantedEvent im Status-Parameter zurückgeben. Wenn z. B. der Complete-Ereignishandler zum ersten Mal aufgerufen wird, können Sie adStatusUnwantedEvent zurückgeben. Anschließend empfangen Sie nur Will-Ereignisse. Manche Ereignisse können jedoch aus mehreren Gründen ausgelöst werden. In diesem Fall hat das Ereignis einen Reason-Parameter. Wenn Sie adStatusUnwantedEvent zurückgeben, empfangen Sie für dieses Ereignis nur dann keine Benachrichtigungen mehr, wenn sie aus dem jeweiligen Grund auftreten. Mit anderen Worten: Sie empfangen potenziell Benachrichtigungen für jeden möglichen Grund, durch den das Ereignis ausgelöst werden kann.
+Solange der an das Ereignis übergebene Status nicht **adStatusCantDeny festgelegt**ist, können Sie Ereignisbenachrichtigungen für jedes Ereignis deaktivieren, indem Sie **adStatusUnwantedEvent** im Parameter *Status* zurückgeben. For example, when your Complete event handler is called the first time, you can return **adStatusUnwantedEvent**. You will subsequently receive only Will events. However, some events can be triggered for more than one reason. In diesem Fall hat das Ereignis einen *reason* -Parameter. When you return **adStatusUnwantedEvent**, you will stop receiving notifications for that event only when they occur for that particular reason. In other words, you will potentially receive notification for each possible reason that the event could be triggered.
 
-Einzelne Will-Ereignishandler können hilfreich sein, wenn Sie die Parameter überprüfen möchten, die in einer Operation verwendet werden sollen. Sie können diese Operationsparameter ändern oder die Operation abbrechen.
+Single Will event handlers can be useful when you want to examine the parameters that will be used in an operation. You can modify those operation parameters or cancel the operation.
 
-Lassen Sie alternativ die Benachrichtigung für Complete-Ereignisse aktiviert. Wenn der erste Will-Ereignishandler aufgerufen wird, geben Sie adStatusUnwantedEvent zurück. Anschließend empfangen Sie nur Complete-Ereignisse.
+Alternatively, leave Complete event notification enabled. When your first Will event handler is called, return **adStatusUnwantedEvent**. You will subsequently receive only Complete events.
 
-Einzelne Complete-Ereignishandler können hilfreich sein beim Verwalten asynchroner Operationen. Jede asynchrone Operation hat ein entsprechendes Complete-Ereignis.
+Single Complete event handlers can be useful for managing asynchronous operations. Each asynchronous operation has an appropriate Complete event.
 
-Beispielsweise kann das Auffüllen eines großen [Recordset](recordset-object-ado.md)-Objekts viel Zeit beanspruchen. Wenn die Anwendung entsprechend geschrieben ist, können Sie einen Vorgang starten und andere Verarbeitung fort. Sie werden schließlich benachrichtigt, wenn das **Recordset** mit einem **ExecuteComplete** -Ereignis aufgefüllt ist.
+Beispielsweise kann das Auffüllen eines großen [Recordset](recordset-object-ado.md)-Objekts viel Zeit beanspruchen. Wenn die Anwendung ordnungsgemäß geschrieben ist, können Sie einen Vorgang starten und mit anderer Verarbeitung fortfahren. Sie werden schließlich benachrichtigt, wenn das **Recordset** mit einem **ExecuteComplete** -Ereignis aufgefüllt ist.
 
 ## <a name="single-event-handlers-and-multiple-objects"></a>Einzelne Ereignishandler und mehrere Objekte
 

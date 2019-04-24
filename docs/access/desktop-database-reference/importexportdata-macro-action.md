@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: e0cdf85461276d26005bc3066a387031a1086691
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291887"
 ---
 # <a name="importexportdata-macro-action"></a>ImportExportData-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Verwenden Sie die **ImportierenExportierenDaten** -Aktion zum Importieren oder Exportieren von Daten zwischen der aktuellen Access-Datenbank (MDB oder ACCDB) oder dem aktuellen Access-Projekt (ADP) und anderen Datenbanken. Microsoft Access-Datenbanken lassen auch das Verknüpfen einer Tabelle mit der aktuellen Access-Datenbank aus anderen Datenbanken zu. Bei einer verknüpften Tabelle können Sie auf die Daten der Tabelle zugreifen, während die Tabelle selbst in der anderen Datenbank verbleibt.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="settings"></a>Einstellungen
 
-Die **ImportierenExportierenDaten** -Aktion hat die folgenden Argumente.
+Die **ImportierenExportierenDaten**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -45,27 +45,27 @@ Die **ImportierenExportierenDaten** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Transfertyp</strong></p></td>
-<td><p>Der Transfertyp, den Sie vornehmen möchten. Wählen Sie <strong>Importieren</strong>, <strong>Exportieren</strong> oder <strong>Verknüpfen</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Importieren</strong>.  </p><p><strong>Hinweis</strong>: Der Transfertyp <strong>Verknüpfen</strong> wird für Access-Projekte (ADP) nicht unterstützt.</p></td>
+<td><p>Der Transfertyp, den Sie vornehmen möchten. Wählen Sie <strong>Importieren</strong>, <strong>Exportieren</strong> oder <strong>Verknüpfen</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Importieren</strong>.  </p><p><strong>HINWEIS</strong>: Der <strong>Link</strong>-Transfertyp wird für Access-Projekte (ADP) nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Datenbanktyp</strong></p></td>
+<td><p><strong>Datenbankformat</strong></p></td>
 <td><p>Der Typ der Datenbank für den Import, Export oder die Verknüpfung. Sie können im Feld <strong>Datenbankformat</strong> die Option <strong>Microsoft Access</strong> oder eines der verschiedenen anderen Datenbankformate auswählen. Die Standardeinstellung ist <strong>Microsoft Access</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Datenbankname</strong></p></td>
-<td><p>Der Name der Datenbank an, aus der Sie importieren exportieren oder Verknüpfen an. Enthalten Sie den vollständigen Pfad. Dies ist ein erforderliches Argument. Arten von Datenbanken, die verwenden separate Dateien für jede Tabelle, wie FoxPro, Paradox und dBASE, geben Sie in das Verzeichnis mit der Datei. Geben Sie den Dateinamen ein, in das Argument <strong>Source</strong> (zum Importieren oder verknüpfen) oder kein <strong>Destination</strong> -Argument (zum Exportieren). Geben Sie für ODBC-Datenbanken die vollständige Verbindungszeichenfolge Open Database Connectivity (ODBC).</p>
+<td><p>Der Name der Datenbank für den Import, Export oder die Verknüpfung. Schließen Sie den vollständigen Pfad ein. Dies ist ein erforderliches Argument. Geben Sie bei Datenbankformaten, bei denen für jede Tabelle gesonderte Dateien verwendet werden (wie FoxPro, Paradox oder dBASE), das Verzeichnis ein, das die Datei enthält. Geben Sie den Dateinamen für das Argument <strong>Quelle</strong> (zum Importieren oder Verknüpfen) oder für das Argument <strong>Ziel</strong> (zum Exportieren) ein. Geben Sie für ODBC-Datenbanken die vollständige ODBC-Verbindungszeichenfolge (Open Database Connectivity) ein.</p>
 <p>Verknüpfen Sie eine externe Tabelle mit Access, um ein Beispiel für eine Verbindungszeichenfolge anzuzeigen:</p>
 <ol>
-<li><p>Geben Sie im Dialogfeld <strong>Externe Daten</strong> den Pfad der Quelldatenbank in das Feld <strong>Dateiname</strong> ein.</p></li>
+<li><p>Geben Sie im Dialogfeld <strong>externe Daten</strong> den Pfad der Quelldatenbank in das Feld <strong>Dateiname</strong> ein.</p></li>
 <li><p>Klicken Sie auf <strong>Erstellen Sie eine Verknüpfung zur Datenquelle, indem Sie eine verknüpfte Tabelle erstellen</strong>, und klicken Sie dann auf <strong>OK</strong>.</p></li>
 <li><p>Wählen Sie im Dialogfeld <strong>Tabellen verknüpfen</strong> eine Tabelle aus, und klicken Sie auf <strong>OK</strong>.</p></li>
 </ol>
 <p>Öffnen Sie die neu verknüpfte Tabelle in der Entwurfsansicht. Zeigen Sie die Tabelleneigenschaften an, indem Sie auf der Registerkarte <strong>Entwurf</strong> unter <strong>Tools</strong> auf <strong>Eigenschaftenblatt</strong> klicken. Der Text in der Eigenschafteneinstellung <strong>Beschreibung</strong> ist die Verbindungszeichenfolge für diese Tabelle.</p>
-<p>Weitere Informationen zu ODBC-Verbindungszeichenfolgen finden Sie unter der Hilfedatei oder der Dokumentation zum ODBC-Treiber für diese Art von ODBC-Datenbank.</p></td>
+<p>Weitere Informationen zu ODBC-Verbindungszeichenfolgen finden Sie in der Hilfedatei oder in einer anderen Dokumentation für den ODBC-Treiber dieser Art von ODBC-Datenbank.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Objekttyp</strong></p></td>
-<td><p>Der zu importierende oder exportierende Objekttyp. Wenn Sie <strong>Microsoft Access</strong> für das Argument <strong>Datenbankformat</strong> auswählen, können Sie auswählen <strong>Tabelle</strong>, <strong>Abfrage</strong>, <strong>Formular</strong>, <strong>Bericht</strong>, <strong>Makro</strong>, <strong>Modul</strong>, <strong>Datenzugriffsseite</strong>, <strong>Serversicht</strong>, <strong> Diagramm</strong>, <strong>Gespeicherte Prozedur</strong>oder <strong>Funktion</strong> im Feld <strong>Objekttyp</strong> . Der Standardwert ist <strong>Tabelle</strong>. Wenn Sie eine andere Art von Datenbank auswählen, oder wenn Sie im Feld <strong>Transfertyp</strong> <strong>Verknüpfen</strong> auswählen, wird dieses Argument ignoriert. Wenn Sie eine select-Abfrage in einer Access-Datenbank exportieren, wählen Sie <strong>Tabelle</strong> in diesem Argument die Ergebnisgruppe der Abfrage zu exportieren, und wählen <strong>Abfrage</strong> die Abfrage selbst zu exportieren. Wenn Sie eine select-Abfrage in einen anderen Typ der Datenbank exportieren, wird dieses Argument wird ignoriert, und die Ergebnisgruppe der Abfrage exportiert.</p></td>
+<td><p>Der Typ des Objekts, das Sie importieren oder exportieren möchten. Wenn Sie <strong>Microsoft Access</strong> für das Argument <strong>Datenbankformat</strong> auswählen, können Sie im Feld <strong>Objekttyp</strong> die Option <strong>Tabelle</strong>, <strong>Abfrage</strong>, <strong>Formular</strong>, <strong>Bericht</strong>, <strong>Makro</strong>, <strong>Modul</strong>, <strong>Datenzugriffsseite</strong>, <strong>Serversicht</strong>, <strong>Datenbankdiagramm</strong>, <strong>Gespeicherte Prozedur</strong> oder <strong>Funktion</strong> auswählen. Die Standardeinstellung ist <strong>Tabelle</strong>. Wenn Sie ein anderes Datenbankformat auswählen oder wenn Sie im Feld <strong>Transfertyp</strong> die Option <strong>Verknüpfen</strong> auswählen, wird dieses Argument ignoriert. Wenn Sie eine Auswahlabfrage in eine Access-Datenbank exportieren, wählen Sie die <strong>Tabelle</strong> in diesem Argument aus, um das Resultset der Abfrage zu exportieren, und wählen Sie <strong>Query</strong> aus, um die Abfrage selbst zu exportieren. Wenn Sie eine Auswahlabfrage in einen anderen Datenbanktyp exportieren, wird dieses Argument ignoriert, und das Resultset der Abfrage wird exportiert.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Source</strong></p></td>
@@ -73,7 +73,7 @@ Die **ImportierenExportierenDaten** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Destination</strong></p></td>
-<td><p>Der Name des importierten, exportierten oder verknüpften Tabelle, Auswahlabfrage oder des Access-Objekts in der Zieldatenbank. Bei einigen Datenbanktypen wie FoxPro, Paradox oder dBASE ist dies einen Dateinamen ein. Der Dateiname die Dateinamenerweiterung (beispielsweise .dbf) einschließen. Dies ist ein erforderliches Argument. Wenn Sie <strong>Importieren</strong> für das Argument <strong>Transfertyp</strong> und <strong>Tabelle</strong> für das Argument <strong>Objekttyp</strong> auswählen, wird von Access eine neue Tabelle erstellt, die die Daten der importierten Tabelle enthält. Wenn Sie eine Tabelle oder ein anderes Objekt importieren, fügt Access eine Zahl auf den Namen, wenn es mit einem vorhandenen Namen in Konflikt steht. Wenn beim Importieren und Mitarbeiter bereits vorhanden ist, benennt Access beispielsweise der importierten Tabelle oder ein anderes Objekt Personal1. Beim Exportieren in eine Access-Datenbank oder eine andere Datenbank ersetzt Access automatisch vorhandene Tabellen oder andere Objekte mit demselben Namen.</p></td>
+<td><p>Der Name der importierten, exportierten oder verknüpften Tabelle, der Auswahlabfrage oder des Access-Objekts in der Zieldatenbank. Bei einigen Datenbankformaten (z. B. FoxPro, Paradox oder dBASE) handelt es sich hierbei um einen Dateinamen. Schließen Sie die Dateinamenerweiterung (wie DBF) in den Dateinamen ein. Dies ist ein erforderliches Argument. Wenn Sie <strong>Importieren</strong> für das Argument <strong>Transfertyp</strong> und <strong>Tabelle</strong> für das Argument <strong>Objekttyp</strong> auswählen, wird von Access eine neue Tabelle erstellt, die die Daten der importierten Tabelle enthält. Wenn Sie eine Tabelle oder ein anderes Objekt importieren, fügt Access dem Namen eine Zahl hinzu, falls Konflikte mit vorhandenen Namen auftreten. Wenn beispielsweise beim Importieren von Personal der Name "Personal" bereits vorhanden ist, wird die importierte Tabelle oder das andere Objekt von Access in Personal1 umbenannt. Beim Exportieren in eine Access-Datenbank oder eine andere Datenbank ersetzt Access automatisch vorhandene Tabellen oder andere Objekte mit demselben Namen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Nur Struktur</strong></p></td>
@@ -83,7 +83,7 @@ Die **ImportierenExportierenDaten** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können Tabellen zwischen Access und anderen Datenbanktypen importieren und exportieren. Sie können auch Access-Auswahlabfragen in andere Datenbanktypen exportieren. In Access wird das Resultset der Abfrage in Form einer Tabelle exportiert. Sie können jedes beliebige Datenbankobjekt von Access importieren und exportieren, wenn es sich bei beiden Datenbanken um Access-Datenbanken handelt.
 

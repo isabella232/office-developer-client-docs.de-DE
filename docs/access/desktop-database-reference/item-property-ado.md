@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9cc38101cb17c52bf2c8c08c08c14163c3772b2f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290793"
 ---
 # <a name="item-property-ado"></a>Item-Eigenschaft (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt ein bestimmtes Element einer Auflistung nach Name oder Ordnungszahl an.
 
 ## <a name="syntax"></a>Syntax
 
-Legen Sie*Objekt* = *Auflistung*. Item (Index)
+*Objekt* = *Sammlung*festlegen. Item (Index)
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -34,11 +34,11 @@ Gibt einen Objektverweis zurück.
 |:--------|:----------|
 |*Index* |Ein **Variant** -Ausdruck, der als Name oder Ordnungszahl eines Objekts in einer Auflistung ausgewertet wird.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **Item** -Eigenschaft, um ein bestimmtes Objekt in einer Auflistung zurückzugeben. Wenn das **Element** ein Objekt in der Auflistung entspricht dem *Index* -Argument nicht finden kann, tritt ein Fehler auf. Darüber hinaus unterstützen einige Sammlungen nicht benannte Objekte; für diese Auflistungen müssen Sie die Ordnungszahl Verweise verwenden.
+Verwenden Sie die **Item**-Eigenschaft, wenn ein bestimmtes Objekt in einer Auflistung zurückgegeben werden soll. Wenn **Item** kein Objekt in der Auflistung findet, das dem Argument *Index* entspricht, tritt ein Fehler auf. Außerdem unterstützen einige Auflistungen keine benannten Objekte. Für diese Auflistungen müssen Sie Ordnungszahlverweise verwenden.
 
-Die **Item** -Eigenschaft ist die Standardeigenschaft für alle Auflistungen. Die folgenden Syntaxformen sind deshalb austauschbar:
+Die **Item**-Eigenschaft ist die Standardeigenschaft für alle Auflistungen. Die folgenden Syntaxformen sind deshalb austauschbar:
 
 ```vb
     collection.Item (Index)

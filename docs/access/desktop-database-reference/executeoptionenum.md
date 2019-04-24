@@ -1,5 +1,5 @@
 ---
-title: ExecuteOptionEnum (Access PC-Datenbank-Referenz)
+title: ExecuteOptionEnum (Access Desktop Database Reference)
 TOCTitle: ExecuteOptionEnum
 ms:assetid: bd6d44a3-e471-7aa0-3e65-6775334de2ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249915(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: febeb3b52eb579647c995b01d6723a5c1f1b0c1f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293245"
 ---
 # <a name="executeoptionenum"></a>ExecuteOptionEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
 
@@ -38,31 +38,28 @@ Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
 <tbody>
 <tr class="odd">
 <td><p><strong>adAsyncExecute</strong></p></td>
-<td><p>0 x 10</p></td>
-<td><p>Gibt an, dass der Befehl asynchron ausgeführt werden soll.
- Dieser Wert kann nicht mit dem <a href="commandtypeenum.md">ExecuteOptionEnum</a>-Wert <strong>adAsyncExecute</strong> kombiniert werden.</p></td>
+<td><p>0x10</p></td>
+<td><p>Gibt an, dass der Befehl asynchron ausgeführt werden soll. Dieser Wert kann nicht mit dem <a href="commandtypeenum.md">ExecuteOptionEnum</a>-Wert <strong>adAsyncExecute</strong> kombiniert werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adAsyncFetch</strong></p></td>
-<td><p>0 x 20</p></td>
+<td><p>0x20</p></td>
 <td><p>Gibt an, dass die verbleibenden Zeilen nach der ersten, in der <a href="cachesize-property-ado.md">CacheSize</a>-Eigenschaft angegebenen Menge asynchron abgerufen werden sollten.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adAsyncFetchNonBlocking</strong></p></td>
-<td><p>0 x 40</p></td>
-<td><p>Gibt an, dass der Hauptthread beim Abrufen nie blockiert. Wenn die angeforderte Zeile nicht abgerufen worden ist, wird die aktuelle Zeile automatisch an das Ende der Datei verschoben.
-</p><p>Wenn Sie ein <a href="recordset-object-ado.md">Recordset-Objekt</a> aus einem <a href="stream-object-ado.md">Stream</a> , der ein dauerhaft gespeichertes <strong>Recordset</strong>enthält öffnen, wird <strong>AdAsyncFetchNonBlocking</strong> keinen Einfluss; der Vorgang wird synchron und blockiert werden. <strong>AdAsynchFetchNonBlocking</strong> hat keine Auswirkung, wenn die <a href="commandtypeenum.md">AdCmdTableDirect</a> -Option zum Öffnen des <strong>Recordset-Objekt</strong>verwendet wird.</p></td>
+<td><p>0x40</p></td>
+<td><p>Gibt an, dass der Hauptthread beim Abrufen nie blockiert. Wenn die angeforderte Zeile nicht abgerufen worden ist, wird die aktuelle Zeile automatisch an das Ende der Datei verschoben.</p><p>Wenn Sie ein <a href="recordset-object-ado.md">Recordset</a> -Objekt aus einem <a href="stream-object-ado.md">Stream</a> -Objekt mit einem persistent gespeicherten <strong>Recordset</strong>-Objekt öffnen, hat <strong>adAsyncFetchNonBlocking</strong> keine Auswirkung; der Vorgang wird synchron und blockiert. <strong>adAsynchFetchNonBlocking</strong> hat keine Auswirkungen, wenn die <a href="commandtypeenum.md">adCmdTableDirect</a> -Option zum Öffnen des <strong>Recordset-Objekts</strong>verwendet wird.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteNoRecords</strong></p></td>
-<td><p>0 x 80</p></td>
-<td><p>Gibt an, dass der Befehlstext ist, einen Befehl oder eine gespeicherte Prozedur, der gibt keine Zeilen (beispielsweise einen Befehl, der nur Daten einfügt) zurück. Wenn alle Zeilen abgerufen werden, werden sie verworfen und nicht zurückgegeben. <strong>AdExecuteNoRecords</strong> kann nur als optionaler Parameter an die <strong>Command-</strong> oder <strong>Connection</strong> <strong>Execute</strong> -Methode übergeben werden.</p></td>
+<td><p>0x80</p></td>
+<td><p>Zeigt an, dass der Befehlstext ein Befehl oder eine gespeicherte Prozedur ist, der keine Zeilen zurückgibt (beispielsweise ein Befehl, der nur Daten einfügt). Wenn alle Zeilen abgerufen werden, werden sie verworfen und nicht zurückgegeben. <strong>adExecuteNoRecords</strong> kann nur als optionaler Parameter an die <strong>Command</strong> -oder <strong>Connection</strong> <strong>Execute</strong> -Methode übergeben werden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adExecuteStream</strong></p></td>
-<td><p>0 x 400</p></td>
-<td><p>Gibt an, dass die Ergebnisse einer Befehlsausführung als Datenstrom zurückgegeben werden sollten.
- <strong>AdExecuteStream</strong> können nur als optionaler Parameter an den <strong>Befehl</strong> <strong>Execute</strong> -Methode übergeben werden.</p></td>
+<td><p>0x400</p></td>
+<td><p>Gibt an, dass die Ergebnisse einer Befehlsausführung als Datenstrom zurückgegeben werden sollten. <strong>adExecuteStream</strong> kann nur als optionaler Parameter an die <strong>Command</strong> <strong>Execute</strong> -Methode übergeben werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteRecord</strong></p></td>
@@ -79,7 +76,7 @@ Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -94,19 +91,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.ExecuteOption.ASYNCEXECUTE</p></td>
+<td><p>AdoEnums. ExecuteOption. ASYNCEXECUTE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ExecuteOption.ASYNCFETCH</p></td>
+<td><p>AdoEnums. ExecuteOption. ASYNCFETCH</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ExecuteOption.ASYNCFETCHNONBLOCKING</p></td>
+<td><p>AdoEnums. ExecuteOption. ASYNCFETCHNONBLOCKING</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ExecuteOption.NORECORDS</p></td>
+<td><p>AdoEnums. ExecuteOption. noRECORDs</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ExecuteOption.UNSPECIFIED</p></td>
+<td><p>AdoEnums. ExecuteOption. unSPECIFIED</p></td>
 </tr>
 </tbody>
 </table>

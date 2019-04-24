@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3c7d9be9b91b3f847516eb3c22aa37e46c8a551d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292020"
 ---
 # <a name="hellodata-a-simple-ado-application"></a>HelloData: Eine einfache ADO-Anwendung
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Als Grundlage für eine Erläuterung der ADO-Bibliothek wird im Folgenden eine einfache ADO-Anwendung mit dem Namen HelloData vorgestellt. HelloData durchläuft die vier wichtigsten ADO-Vorgänge (Abrufen, Überprüfen, Bearbeiten und Aktualisieren von Daten). In dem Beispiel wird eine minimale Fehlerbehandlung ausgeführt, um die ADO-Grundlagen darzustellen und Code-Durcheinander zu vermeiden.
+To lay the groundwork for an exploration of the ADO library, consider a simple ADO application called "HelloData." HelloData steps through each of the four major ADO operations (getting, examining, editing, and updating data). In order to focus on the fundamentals of ADO and prevent code clutter, minimal error handling is done in the example.
 
 Die Anwendung fragt die Northwind-Beispieldatenbank ab, die mit Microsoft SQL Server 2000 ausgeliefert wird.
 
@@ -28,16 +28,16 @@ Die Anwendung fragt die Northwind-Beispieldatenbank ab, die mit Microsoft SQL Se
 
 2.  Erstellen Sie oben auf dem Formular vier Befehlsschaltflächen, indem Sie die Eigenschaften **Name** und **Caption** auf die Werte der folgenden Tabelle festlegen.
 
-3.  Fügen Sie unterhalb der Schaltflächen ein **DataGrid-Steuerelement von Microsoft** (Msdatgrd.ocx). Die Datei Msdatgrd.ocx im Lieferumfang von Visual Basic und befindet sich Ihrer \\Windows\\system32 oder \\Winnt\\Ordner System32. Um Ihre Visual Basic-Bereich Toolbox DataGrid-Steuerelement hinzuzufügen, wählen Sie im Menü **Projekt** **Komponenten...** aus. Aktivieren Sie das Kontrollkästchen neben "Microsoft DataGrid Control 6.0 (SP3) (OLEDB)", und klicken Sie auf **OK**. Um das Steuerelement dem Projekt hinzuzufügen, ziehen Sie das DataGrid-Steuerelement aus der Toolbox auf das Visual Basic-Formular.
+3.  Fügen Sie unterhalb der Schaltflächen ein **Microsoft DataGrid-Steuerelement** (msdatgrd. ocx) hinzu. Die Datei msdatgrd. ocx wird mit Visual Basic geliefert und befindet sich in \\Ihrem\\Windows System32 \\-\\oder winnt system32-Verzeichnis. Zum Hinzufügen des DataGrid-Steuerelements zum Visual Basic-Toolboxbereich wählen Sie im Menü **Projekt** die Option Components.. **.** aus. Aktivieren Sie dann das Kontrollkästchen neben "Microsoft DataGrid-Steuerelement 6,0 (SP3) (OLEDB)", und klicken Sie auf **OK**. Um dem Projekt das Steuerelement hinzuzufügen, ziehen Sie das DataGrid-Steuerelement aus der Toolbox in das Visual Basic-Formular.
 
 4.  Erstellen Sie ein **TextBox** -Objekt auf dem Formular unterhalb des Rasters, und legen Sie seine Eigenschaften auf die in der folgenden Tabelle angegebenen Werte fest. Das Formular sollte bei seiner Fertigstellung ähnlich der folgenden Abbildung aussehen.
 
-5.  Schließlich, kopieren Sie den Code in [HelloData-Code](hellodata-code.md) , und fügen Sie ihn in das Code-Editor-Fenster des Formulars. Drücken Sie **F5**, um den Code auszuführen.
+5.  Kopieren Sie schließlich den im HelloData- [Code](hellodata-code.md) aufgeführten Code, und fügen Sie ihn in das Code-Editor-Fenster des Formulars ein. Drücken Sie **F5**, um den Code auszuführen.
 
 > [!NOTE]
 > [!HINWEIS] Im folgenden Beispiel und im gesamten Handbuch werden die Benutzer-ID "MyId" und das Kennwort "123aBc" zum Authentifizieren am Server verwendet. Sie sollten diese Werte durch gültige Anmeldeinformationen für Ihren Server ersetzen. Außerdem sollten Sie den Wert "MyServer" durch den Namen Ihres Servers ersetzen.
 
-Eine ausführliche Beschreibung des Codes finden Sie unter [Informationen zu HelloData](hellodata-details.md).
+Eine ausführliche Beschreibung des Codes finden Sie unter [HelloData Details](hellodata-details.md).
 
 <table>
 <colgroup>
@@ -76,7 +76,7 @@ Eine ausführliche Beschreibung des Codes finden Sie unter [Informationen zu Hel
 <td><p>grdDisplay1</p></td>
 </tr>
 <tr class="odd">
-<td><p>TextBox-Steuerelement</p></td>
+<td><p>TextBox</p></td>
 <td><p>Name</p></td>
 <td><p>txtDisplay1</p></td>
 </tr>
@@ -94,7 +94,7 @@ Eine ausführliche Beschreibung des Codes finden Sie unter [Informationen zu Hel
 <tr class="even">
 <td><p><br />
 </p></td>
-<td><p>Caption</p></td>
+<td><p>Beschriftung</p></td>
 <td><p>Get Data</p></td>
 </tr>
 <tr class="odd">
@@ -105,7 +105,7 @@ Eine ausführliche Beschreibung des Codes finden Sie unter [Informationen zu Hel
 <tr class="even">
 <td><p><br />
 </p></td>
-<td><p>Caption</p></td>
+<td><p>Beschriftung</p></td>
 <td><p>Examine Data</p></td>
 </tr>
 <tr class="odd">
@@ -116,7 +116,7 @@ Eine ausführliche Beschreibung des Codes finden Sie unter [Informationen zu Hel
 <tr class="even">
 <td><p><br />
 </p></td>
-<td><p>Caption</p></td>
+<td><p>Beschriftung</p></td>
 <td><p>Edit Data</p></td>
 </tr>
 <tr class="odd">
@@ -127,7 +127,7 @@ Eine ausführliche Beschreibung des Codes finden Sie unter [Informationen zu Hel
 <tr class="even">
 <td><p><br />
 </p></td>
-<td><p>Caption</p></td>
+<td><p>Beschriftung</p></td>
 <td><p>Update Data</p></td>
 </tr>
 </tbody>

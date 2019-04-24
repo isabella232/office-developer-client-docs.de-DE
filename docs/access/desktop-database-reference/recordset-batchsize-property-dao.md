@@ -1,5 +1,5 @@
 ---
-title: Recordset.BatchSize-Eigenschaft (DAO)
+title: Recordset. BatchSize-Eigenschaft (DAO)
 TOCTitle: BatchSize Property
 ms:assetid: f03dc505-682f-4b60-62f2-1bd088d873c4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836544(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7693f89f07413772ea961a61c86e9c5448c4c449
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300665"
 ---
-# <a name="recordsetbatchsize-property-dao"></a>Recordset.BatchSize-Eigenschaft (DAO)
+# <a name="recordsetbatchsize-property-dao"></a>Recordset. BatchSize-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,7 +35,7 @@ Die **BatchSize**-Eigenschaft stellt die Batchgröße fest, die beim Senden von 
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Eigenschaften **BatchSize** und **UpdateOptions** verwendet, um Aspekte von Batchaktualisierungen für das angegebene Recordset-Objekt zu steuern.
+This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.
 
 ```vb 
 Sub BatchSizeX() 

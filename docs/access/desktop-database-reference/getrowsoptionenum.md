@@ -1,5 +1,5 @@
 ---
-title: GetRowsOptionEnum (Access PC-Datenbank-Referenz)
+title: GetRowsOptionEnum (Access Desktop Database Reference)
 TOCTitle: GetRowsOptionEnum
 ms:assetid: 5c1665bb-555c-f83f-066c-d6de2dd0343f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249323(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 16a878aaded9368d89f935df5a7ae9575c31f480
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292195"
 ---
 # <a name="getrowsoptionenum"></a>GetRowsOptionEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, wie viele Datensätze aus einem [Recordset](recordset-object-ado.md) abgerufen werden sollen.
 
@@ -39,13 +39,13 @@ Gibt an, wie viele Datensätze aus einem [Recordset](recordset-object-ado.md) ab
 <tr class="odd">
 <td><p><strong>adGetRowsRest</strong></p></td>
 <td><p>-1</p></td>
-<td><p>Ruft die restlichen Datensätze im <strong>Recordset-Objekt</strong>aus der aktuellen Position oder einer vom <em>Start</em> -Parameter der <a href="getrows-method-ado.md">GetRows</a> -Methode angegebenen Textmarke ab.</p></td>
+<td><p>Ruft die restlichen Datensätze im <strong>Recordset</strong>-Objekt aus der aktuellen Position oder aus einer Textmarke ab, die durch den <em>Start</em> -Parameter der GetRows-Methode angegeben wird. <a href="getrows-method-ado.md"></a></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -60,7 +60,7 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.GetRowsOption.REST</p></td>
+<td><p>AdoEnums. GetRowsOption. REST</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: Field.AppendChunk-Methode (DAO)
+title: Field. AppendChunk-Methode (DAO)
 TOCTitle: AppendChunk Method
 ms:assetid: f98c6862-fecf-06cb-a7c0-42b0d3150a06
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837014(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b1ce1c359582194ce87dfaf4f409be4303486e09
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293168"
 ---
-# <a name="fieldappendchunk-method-dao"></a>Field.AppendChunk-Methode (DAO)
+# <a name="fieldappendchunk-method-dao"></a>Field. AppendChunk-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Fügt Daten aus einem Zeichenfolgenausdruck an ein Field-Objekt vom Typ Memo oder Long Binary in einem Recordset an.
+Appends data from a string expression to a Memo or Long Binary **[Field](field-object-dao.md)** object in a **[Recordset](recordset-object-dao.md)**.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,7 +38,7 @@ Fügt Daten aus einem Zeichenfolgenausdruck an ein Field-Objekt vom Typ Memo ode
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -56,9 +56,9 @@ Fügt Daten aus einem Zeichenfolgenausdruck an ein Field-Objekt vom Typ Memo ode
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können die Methoden AppendChunk und GetChunk verwenden, um auf Teilmengen der Daten in einem Memo- oder Long Binary-Feld zuzugreifen.
+You can use the **AppendChunk** and **[GetChunk](field-getchunk-method-dao.md)** methods to access subsets of data in a Memo or Long Binary field.
 
-Mithilfe dieser Methoden können Sie auch Zeichenfolgenspeicher freigeben, wenn Sie mit Memo- und Long Binary-Feldern arbeiten. Für bestimmte Vorgänge (z. B. Kopieren) sind temporäre Zeichenfolgen erforderlich. Bei begrenztem Zeichenfolgenspeicher müssen Sie evtl. Abschnitte eines Felds statt das ganze Feld verwenden.
+You can also use these methods to conserve string space when you work with Memo and Long Binary fields. Certain operations (copying, for example) involve temporary strings. If string space is limited, you may need to work with chunks of a field instead of the entire field.
 
 Wenn Sie **AppendChunk** verwenden, ohne dass ein aktueller Datensatz vorhanden ist, tritt ein Fehler auf.
 

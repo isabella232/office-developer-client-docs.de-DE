@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8344e530528d31a37752e863c596977d5e170ef8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297018"
 ---
 # <a name="appendix-b-ado-errors"></a>Anhang B: ADO-Fehler
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Weitere Informationen zu bestimmten Fehlermeldungen finden Sie in den folgenden Themen:
 
 - [ADO-Fehlercodes](ado-error-codes.md)
 - [DataControl-Fehlercodes](datacontrol-error-codes.md)
 - [Internet Explorer-Fehlercodes](internet-explorer-error-codes.md)
-- [IIS-Fehlercodes](internet-information-services-error-codes.md)
+- [Fehlercodes der Internetinformationsdienste](internet-information-services-error-codes.md)
 

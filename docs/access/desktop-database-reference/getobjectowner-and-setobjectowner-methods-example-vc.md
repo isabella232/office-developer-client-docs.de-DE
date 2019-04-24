@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b1227d60555dcb8da919e75bfa773fd64103a956
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292279"
 ---
 # <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a>GetObjectOwner- und SetObjectOwner-Methode (VC++-Beispiel)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Dieses Beispiel veranschaulicht die Methoden [GetObjectOwner](getobjectowner-method-adox.md) und [SetObjectOwner verwenden](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) . Dieser Code wird vorausgesetzt, dass die Gruppe Accounting (siehe die [Gruppen und Benutzer anzufügen, ChangePassword-Methoden (VC++-Beispiel)](groups-and-users-append-changepassword-methods-example-vc.md) wie das System dieser Gruppe hinzugefügt angezeigt). Der Besitzer der Kategorientabelle wird auf Buchhaltung festgelegt.
+This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods. In diesem Code wird davon ausgegangen, dass die Gruppen Abrechnung vorhanden ist (siehe [Append-, ChangePassword-Methoden (Groups und users) (VC + +)](groups-and-users-append-changepassword-methods-example-vc.md) , um zu sehen, wie diese Gruppe dem System hinzugefügt wird). The owner of the Categories table is set to Accounting.
 
 ```cpp 
  

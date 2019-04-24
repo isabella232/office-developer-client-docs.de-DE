@@ -1,5 +1,5 @@
 ---
-title: CursorTypeEnum (Access PC-Datenbank-Referenz)
+title: CursorTypeEnum (Access Desktop Database Reference)
 TOCTitle: CursorTypeEnum
 ms:assetid: 7c5fa8b2-85ea-a0a7-41f1-a78650aced3e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249519(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0bcaaa1298f12d72c5e836dcfe1e74cdcda68d19
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295163"
 ---
 # <a name="cursortypeenum"></a>CursorTypeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den in einem [Recordset](recordset-object-ado.md)-Objekt verwendeten Cursortyp an.
 
@@ -39,17 +39,17 @@ Gibt den in einem [Recordset](recordset-object-ado.md)-Objekt verwendeten Cursor
 <tr class="odd">
 <td><p><strong>adOpenDynamic</strong></p></td>
 <td><p>2</p></td>
-<td><p>Verwendet einen dynamischen Cursor. Hinzufügen, ändern und Löschen von anderen Benutzern angezeigt werden, und alle Arten von Bewegung durch das <strong>Recordset-Objekt</strong> sind zulässig, mit Ausnahme von Lesezeichen, wenn der Anbieter sie nicht unterstützt.</p></td>
+<td><p>Verwendet einen dynamischen Cursor. Hinzufügungen, Änderungen und Löschungen von anderen Benutzern sind sichtbar, und alle Arten der Navigation durch das Recordset sind zulässig, mit Ausnahme von Textmarken, falls diese vom Anbieter nicht unterstützt werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adOpenForwardOnly</strong></p></td>
 <td><p>0</p></td>
-<td><p>Standard. Ein Vorwärtscursor verwendet. Identisch mit einer statischen Cursor, außer dass Sie nur vorwärts durch die Datensätze blättern können. Dies verbessert die Leistung, wenn Sie nur eine Pass-through-ein <strong>Recordset</strong>treffen müssen.</p></td>
+<td><p>Standardwert. Verwendet einen Vorwärtscursor. Mit einem statischen Cursor identisch, außer dass Sie in den Datensätzen nur einen Bildlauf vorwärts ausführen können. Wenn Sie nur einen Durchlauf durch ein Recordset ausführen müssen, wird die Leistung dadurch verbessert.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adOpenKeyset</strong></p></td>
 <td><p>1</p></td>
-<td><p>Verwendet einen Keysetcursor. Wie Sie einen dynamischen Cursor mit der Ausnahme, dass Sie keine Datensätze, die andere Benutzer anzeigen hinzufügen, obwohl Datensätze, die andere Benutzer löschen aus dem <strong>Recordset-Objekt</strong>zugegriffen werden kann. Datenänderungen durch andere Benutzer werden weiterhin angezeigt.</p></td>
+<td><p>Verwendet einen Keysetcursor. Wie bei einem dynamischen Cursor, außer, dass Sie keine Datensätze anzeigen können, die von anderen Benutzern hinzugefügt werden, obwohl die von anderen Benutzern gelöschten Datensätze von Ihrem Recordset aus nicht zugänglich sind. Die Datenänderungen durch andere Benutzer sind weiterhin sichtbar.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adOpenStatic</strong></p></td>
@@ -65,7 +65,7 @@ Gibt den in einem [Recordset](recordset-object-ado.md)-Objekt verwendeten Cursor
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -80,19 +80,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.CursorType.DYNAMIC</p></td>
+<td><p>AdoEnums. CursorType. DYNAMIC</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CursorType.FORWARDONLY</p></td>
+<td><p>AdoEnums. CursorType. FORWARDONLY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CursorType.KEYSET</p></td>
+<td><p>AdoEnums. CursorType. KEYSet</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CursorType.STATIC</p></td>
+<td><p>AdoEnums. CursorType. STATIC</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CursorType.UNSPECIFIED</p></td>
+<td><p>AdoEnums. CursorType. unSPECIFIED</p></td>
 </tr>
 </tbody>
 </table>

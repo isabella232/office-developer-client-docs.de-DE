@@ -1,5 +1,5 @@
 ---
-title: ConnectComplete- und Disconnect-Ereignisse (ADO)
+title: ConnectComplete-und disConnect-Ereignisse (ADO)
 TOCTitle: ConnectComplete and Disconnect events (ADO)
 ms:assetid: 8ecb080b-7fc9-7565-25bd-bd57b983750d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249629(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e1e1d4487eb113c25e25ce6b9de051e33a4536b3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295989"
 ---
-# <a name="connectcomplete-and-disconnect-events-ado"></a>ConnectComplete- und Disconnect-Ereignisse (ADO)
+# <a name="connectcomplete-and-disconnect-events-ado"></a>ConnectComplete-und disConnect-Ereignisse (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das **ConnectComplete**-Ereignis wird aufgerufen, nachdem eine Verbindung *gestartet* wurde. Das **Disconnect**-Ereignis wird aufgerufen, nachdem eine Verbindung *beendet* wurde.
 
 ## <a name="syntax"></a>Syntax
 
-ConnectComplete-*pError*, *AdStatus*, *pConnection*
+ConnectComplete*pError*, ** *pConnection*
 
-Trennen Sie*AdStatus*, *pConnection*
+DisConnect-*Status*, *pConnection*
 
 ## <a name="parameters"></a>Parameter
 

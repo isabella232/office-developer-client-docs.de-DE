@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c82c95a430da76694fe26300e877e86f86a2eb4b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295310"
 ---
 # <a name="cubedef-object-ado-md"></a>CubeDef-Objekt (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt einen Cube aus einem multidimensionalen Schema dar, das eine Reihe verknüpfter Dimensionen enthält.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Auflistungen und Eigenschaften eines **CubeDef** -Objekts ermöglichen Folgendes:
+Die Auflistungen und Eigenschaften eines **CubeDef**-Objekts ermöglichen Folgendes:
 
   - Identifizieren eines **CubeDef** -Objekts, indem Sie die [Name](name-property-ado-md.md)-Eigenschaft verwenden.
 
@@ -33,7 +33,7 @@ Die Auflistungen und Eigenschaften eines **CubeDef** -Objekts ermöglichen Folge
 
   - Abrufen zusätzlicher Informationen zum **CubeDef** -Objekt, indem Sie die [Properties](properties-collection-ado.md)-ADO-Standardauflistung verwenden.
 
-Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
+Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Katalogname</p></td>
+<td><p>CatalogName</p></td>
 <td><p>Der Name des Katalogs, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="even">
@@ -80,7 +80,7 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 <td><p>Datum und Uhrzeit der letzten Schemaaktualisierung.</p></td>
 </tr>
 <tr class="odd">
-<td><p>SchemaName</p></td>
+<td><p>Instanzschema</p></td>
 <td><p>Der Name des Schemas, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="even">

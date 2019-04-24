@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 87d380fdc52cdee2aa834fd6e78ff1b761a0e93a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312117"
 ---
 # <a name="using-rds-with-odbc-connection-pooling"></a>Verwenden von RDS mit ODBC-Verbindungs-Pooling
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Wenn Sie eine ODBC-Datenquelle verwenden, können Sie die Verbindungs-Pool-Option in Internetinformationsdienste (IIS) dazu verwenden, eine sehr effiziente Verarbeitung von Clientlast zu erreichen. Verbindungs-Pool (Verbindungspooling) ist ein Ressourcen-Manager für Verbindungen, der häufig verwendete Verbindungen im geöffneten Status hält.
 
 Informationen zum Aktivieren des Verbindungspoolings finden Sie in der Dokumentation zu Internetinformationsdienste.
 
-Beachten Sie, dass Aktivieren von Verbindungspooling den Webserver anderen Einschränkungen Subject-möglicherweise wie bereits erwähnt in der Dokumentation zu Microsoft Internet Information Services.
+Beachten Sie, dass das Aktivieren des Verbindungspools den Webserver anderen Einschränkungen unterwerfen kann, wie in der Microsoft Internet Information Services-Dokumentation beschrieben.
 
 Konfigurieren Sie Microsoft SQL Server für die Verwendung der TCP/IP-Sockets-Netzwerkbibliothek, um ein stabiles Verbindungspooling sicherzustellen, das eine höhere Effizienz bereitstellt.
 
@@ -31,7 +31,7 @@ Führen Sie dazu die folgenden Aktionen aus:
 
   - Konfigurieren Sie den Computer, auf dem SQL Server installiert ist, für die Verwendung von TCP/IP-Sockets.
 
-  - Konfigurieren des Webservers zur Verwendung von TCP/IP-Sockets.
+  - Konfigurieren Sie den Webserver für die Verwendung von TCP/IP-Sockets.
 
 ## <a name="configuring-the-sql-server-computer-to-use-tcpip-sockets"></a>Konfigurieren des Computers mit SQL Server für die Verwendung von TCP/IP-Sockets
 
@@ -41,7 +41,7 @@ Führen Sie auf dem Computer mit SQL Server das Setup-Programm von SQL Server au
 
 **In Microsoft SQL Server 6.5:**
 
-1.  Im Menü **Start** zeigen Sie auf **Programme**, zeigen Sie auf **Microsoft SQL Server 6.5**, und klicken Sie dann auf **SQL Setup**.
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 6.5**, and then click **SQL Setup**.
 
 2.  Klicken Sie zweimal auf **Weiter**.
 
@@ -53,7 +53,7 @@ Führen Sie auf dem Computer mit SQL Server das Setup-Programm von SQL Server au
 
 **In Microsoft SQL Server 7.0:**
 
-1.  Im Menü **Start** zeigen Sie auf **Programme**, zeigen Sie auf **Microsoft SQL Server 7.0**, und klicken Sie dann auf **SQL Server-Netzwerkkonfiguration**.
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 7.0**, and then click **Server Network Utility**.
 
 2.  Klicken Sie auf der Registerkarte **Allgemein** des Dialogfelds auf **Hinzufügen**.
 
@@ -63,17 +63,17 @@ Führen Sie auf dem Computer mit SQL Server das Setup-Programm von SQL Server au
 
 5.  Klicken Sie auf **OK**, um den Vorgang abzuschließen, und beenden Sie Setup.
 
-## <a name="configuring-the-web-server-to-use-tcpip-sockets"></a>Konfigurieren das Web Server auf TCP/IP-Sockets verwenden
+## <a name="configuring-the-web-server-to-use-tcpip-sockets"></a>Konfigurieren des webServers für die Verwendung von TCP/IP-Sockets
 
-Es gibt zwei Optionen für das Konfigurieren des Webservers zur Verwendung von TCP/IP-Sockets. Was Sie tun, hängt davon, ob alle SQL Server aus dem Webserver zugegriffen wird oder nur eine bestimmte SQL Server erfolgt über den Webserver.
+Es gibt zwei Optionen zum Konfigurieren des Webservers für die Verwendung von TCP/IP-Sockets. Was Sie tun, hängt davon ab, ob auf alle SQL-Server vom Webserver zugegriffen wird, oder auf einen bestimmten SQL Server wird vom Webserver zugegriffen.
 
-Wenn alle SQL Server aus dem Webserver zugegriffen wird, müssen Sie die SQL Server-Clientkonfigurationsprogramm auf dem Webservercomputer ausgeführt. Die folgenden Schritte ändern die Standard-Netzwerkbibliothek für alle SQL Server-Verbindungen, die mit der Verwendung der TCP/IP-Sockets-Netzwerkbibliothek IIS-Webservers.
+Wenn auf alle SQL-Server über den Webserver zugegriffen wird, müssen Sie das SQL Server-Client Konfigurationsprogramm auf dem Webservercomputer ausführen. Die folgenden Schritte ändern die standardmäßige Netzwerkbibliothek für alle SQL Server-Verbindungen, die von diesem IIS-Webserver ausgeführt werden, um die TCP/IP-Sockets-Netzwerkbibliothek zu verwenden.
 
-**So konfigurieren Sie den Webserver (alle SQL Server)**
+**So konfigurieren Sie den Webserver (alle SQL-Server)**
 
 **Für Microsoft SQL Server 6.5:**
 
-1.  Im Menü **Start** zeigen Sie auf **Programme**, zeigen Sie auf **Microsoft SQL Server 6.5**, und klicken Sie dann auf **SQL Clientkonfigurationsprogramm**.
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 6.5**, and then click **SQL Client Configuration Utility**.
 
 2.  Klicken Sie auf die Registerkarte **Netzwerkbibliothek**.
 
@@ -83,7 +83,7 @@ Wenn alle SQL Server aus dem Webserver zugegriffen wird, müssen Sie die SQL Ser
 
 **Für Microsoft SQL Server 7.0:**
 
-1.  Im Menü **Start** zeigen Sie auf **Programme**, zeigen Sie auf **Microsoft SQL Server 7.0**, und klicken Sie dann auf **Server-Clientkonfiguration**.
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 7.0**, and then click **Client Network Utility**.
 
 2.  Klicken Sie auf die Registerkarte **Allgemein**.
 
@@ -91,13 +91,13 @@ Wenn alle SQL Server aus dem Webserver zugegriffen wird, müssen Sie die SQL Ser
 
 4.  Klicken Sie auf **OK**, um die Änderungen zu speichern und das Hilfsprogramm zu beenden.
 
-Wenn eine bestimmte SQL Server auf einem Webserver zugegriffen wird, müssen Sie die SQL Server-Clientkonfigurationsprogramm auf dem Webservercomputer ausgeführt. Um die Netzwerkbibliothek für eine bestimmte SQL Server-Verbindung zu ändern, konfigurieren Sie die SQL Server-Clientsoftware wie folgt auf dem Webservercomputer aus.
+Wenn auf einen bestimmten SQL Server von einem Webserver zugegriffen wird, müssen Sie das SQL Server-Client Konfigurationsprogramm auf dem Webservercomputer ausführen. Konfigurieren Sie die SQL Server-Client Software auf dem Webservercomputer wie folgt, um die Netzwerkbibliothek für eine bestimmte SQL Server-Verbindung zu ändern.
 
-**So konfigurieren Sie die Webserver (eine bestimmte SQL Server)**
+**So konfigurieren Sie den Webserver (ein bestimmter SQL Server)**
 
 **Für Microsoft SQL Server 6.5:**
 
-1.  Im Menü **Start** zeigen Sie auf **Programme**, zeigen Sie auf **Microsoft SQL Server 6.5**, und klicken Sie dann auf **SQL Clientkonfigurationsprogramm**.
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 6.5**, and then click **SQL Client Configuration Utility**.
 
 2.  Klicken Sie auf die Registerkarte **Erweitert**.
 
@@ -111,7 +111,7 @@ Wenn eine bestimmte SQL Server auf einem Webserver zugegriffen wird, müssen Sie
 
 **Für Microsoft SQL Server 7.0:**
 
-1.  Zeigen Sie über **das Startmenü** auf **Programme**, zeigen Sie auf **Microsoft SQL Server 7.0**, und klicken Sie dann auf **Clientkonfigurationsprogramm**.
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 7.0**, and then click **Client Configuration Utility**.
 
 2.  Klicken Sie auf die Registerkarte **Allgemein**.
 

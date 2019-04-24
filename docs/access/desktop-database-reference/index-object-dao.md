@@ -1,5 +1,5 @@
 ---
-title: Index-Objekt - Data Access Objects (DAO)
+title: Index-Objekt-Datenzugriffsobjekte (DAO)
 TOCTitle: Index object
 ms:assetid: 92c32cad-ec8a-1243-1d18-83f50b269ecb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197655(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ca0a975017b5c5396d23817716689b37433d8f97
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291768"
 ---
 # <a name="index-object-dao"></a>Index-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 **Index**-Objekte geben die Reihenfolge an, in der auf Datensätze aus Datenbanktabellen zugegriffen wird, und sie geben an, ob doppelte Datensätze akzeptiert werden. Dadurch stellen sie einen effizienten Zugriff auf Daten sicher. Bei externen Datenbanken beschreiben **Index**-Objekte die für externe Tabellen eingerichteten Indizes (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="remarks"></a>Bemerkungen
 
-Im Microsoft Access-Datenbankmodul werden beim Verknüpfen von Tabellen und Erstellen von Recordset-Objekten Indizes verwendet. Indizes bestimmen die Reihenfolge, in der Recordset-Objekte vom Typ Tabelle Objekte zurückgeben, sie bestimmen jedoch nicht die Reihenfolge, in der Datensätze in der Basistabelle im Microsoft Access-Datenbankmodul gespeichert werden, oder die Reihenfolge, in der ein anderer Typ von Recordset-Objekten Datensätze zurückgibt.
+The Microsoft Access database engine uses indexes when it joins tables and creates **[Recordset](recordset-object-dao.md)** objects. Indexes determine the order in which table-type **Recordset** objects return records, but they don't determine the order in which the Microsoft Access database engine stores records in the base table or the order in which any other type of **Recordset** object returns records.
 
 Bei einem **Index**-Objekt können Sie die folgenden Aktionen ausführen:
 
@@ -32,7 +32,7 @@ Bei einem **Index**-Objekt können Sie die folgenden Aktionen ausführen:
 
 Das Microsoft Access-Datenbankmodul verwaltet alle Indizes von Basistabellen automatisch. Bei jedem Hinzufügen, Ändern oder Löschen von Datensätzen in der Basistabelle werden die Indizes aktualisiert. Nachdem Sie die Datenbank erstellt haben, bringen Sie die Indexstatistiken mit der **[CompactDatabase](dbengine-compactdatabase-method-dao.md)** -Methode regelmäßig auf den neuesten Stand.
 
-Wenn Sie auf ein Recordset-Objekt vom Typ Tabelle zugreifen, geben Sie mit der Index-Eigenschaft des Objekts die Reihenfolge der Datensätze an. Legen Sie diese Eigenschaft auf die Einstellung der Name-Eigenschaft eines vorhandenen Index-Objekts in der Indexes-Auflistung fest. Diese Auflistung ist im TableDef-Objekt enthalten, das dem zu füllenden Recordset-Objekt zugrunde liegt.
+When accessing a table-type **Recordset** object, you specify the order of records using the object's **Index** property. Set this property to the **Name** property setting of an existing **Index** object in the **Indexes** collection. This collection is contained by the **[TableDef](tabledef-object-dao.md)** object underlying the **Recordset** object that you're populating.
 
 > [!NOTE]
 > [!HINWEIS] Sie müssen für Tabellen keine Indizes erstellen, jedoch kann der Zugriff auf einen bestimmten Datensatz oder die Verarbeitung von Verknüpfungen bei großen Tabellen ohne Index lange dauern. Zu viele Indizes hingegen können Aktualisierungen der Datenbank verlangsamen, da jeder der Tabellenindizes ergänzt wird.
@@ -47,7 +47,7 @@ Jedes **Field**-Objekt in der **Fields**-Auflistung eines **Index**-Objekts ist 
 Wenn Sie einen Primärschlüssel für eine Tabelle festlegen, wird er vom Microsoft Access-Datenbankmodul automatisch als Primärindex definiert. Ein Primärindex besteht aus einem oder mehreren Feldern, die alle Datensätze einer Tabelle in einer vordefinierten Reihenfolge eindeutig anordnen. Da das Primärindexfeld eindeutig sein muss, wird die **Unique**-Eigenschaft des primären **Index**-Objekts vom Microsoft Access-Datenbankmodul automatisch auf **True** festgelegt. Wenn der Primärindex aus mehreren Feldern besteht, kann jedes Feld doppelte Werte enthalten, die Kombination der Werte aus allen indizierten Feldern muss jedoch eindeutig sein. Ein Primärindex besteht aus einem Schüssel für die Tabelle und enthält stets dieselben Felder wie der Primärschlüssel.
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass die Daten mit den Attributen des neuen Indexes übereinstimmen. Wenn der Index eindeutige Werte erfordert, stellen Sie sicher, dass vorhandene Datensätze keine Duplikate enthalten. Bei Duplikaten kann das Microsoft Access-Datenbankmodul den Index nicht erstellen, und bei dem Versuch, die Append-Methode des neuen Indexes zu verwenden, tritt ein abfangbarer Fehler auf.
+> Make sure your data complies with the attributes of your new index. If your index requires unique values, make sure that there are no duplicates in existing data records. If duplicates exist, the Microsoft Access database engine can't create the index; a trappable error results when you attempt to use the Append method on the new index.
 
 Wenn Sie eine Beziehung erstellen, die die referentielle Integrität erzwingt, erstellt das Microsoft Access-Datenbankmodul automatisch einen Index, wobei die **Foreign**-Eigenschaft in der referenzierenden Tabelle als Fremdschlüssel festgelegt wird. Nachdem Sie eine Tabellenbeziehung erstellt haben, verhindert das Microsoft Access-Datenbankmodul Ergänzungen oder Änderungen der Datenbank, die nicht zu der Beziehung passen. Wenn Sie die **Attributes**-Eigenschaft des **[Relation](relation-object-dao.md)** -Objekts so festlegen, dass Aktualisierungsweitergaben und Löschweitergaben zulässig sind, werden Datensätze in verknüpften Tabellen automatisch vom Microsoft Access-Datenbankmodul aktualisiert oder gelöscht.
 
@@ -66,7 +66,7 @@ Wenn Sie eine Beziehung erstellen, die die referentielle Integrität erzwingt, e
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel erstellt ein neues Index-Objekt, fügt es der Indexes-Auflistung des TableDef-Objekts der Employees-Tabelle (Personal) an und führt die Indexes-Auflistung des TableDef-Objekts auf. Zuletzt listet es ein Recordset-Objekt auf, zuerst unter Verwendung des primären Index-Objekts und dann unter Verwendung des neuen Index-Objekts. Die IndexOutput-Prozedur ist zum Ausführen dieser Prozedur erforderlich.
+This example creates a new **Index** object, appends it to the **Indexes** collection of the Employees **TableDef**, and then enumerates the **Indexes** collection of the **TableDef**. Finally, it enumerates a **Recordset**, first using the primary **Index**, and then using the new **Index**. The IndexOutput procedure is required for this procedure to run.
 
 ```vb
     Sub IndexObjectX() 
@@ -149,7 +149,7 @@ Dieses Beispiel erstellt ein neues Index-Objekt, fügt es der Indexes-Auflistung
 
 <br/>
 
-Dieses Beispiel verwendet die **CreateIndex** -Methode, um zwei neue **Index** -Objekte zu erstellen, und fügt sie dann der **Indexes** -Auflistung des **TableDef** -Objekts der Employees-Tabelle (Personal) an. Klicken Sie dann der **Indexes** -Auflistung des **TableDef** -Objekts, der **Fields** -Auflistung der neuen **Index** -Objekte und der Properties-Auflistung der neuen **Index** -Objekte aufgelistet. Zum Ausführen dieser Prozedur ist die CreateIndexOutput-Funktion erforderlich.
+This example uses the **CreateIndex** method to create two new **Index** objects and then appends them to the **Indexes** collection of the Employees **TableDef** object. It then enumerates the **Indexes** collection of the **TableDef** object, the **Fields** collection of the new **Index** objects, and the Properties collection of the new **Index** objects. The CreateIndexOutput function is required for this procedure to run.
 
 ```vb
     Sub CreateIndexX() 

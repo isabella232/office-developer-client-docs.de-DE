@@ -1,5 +1,5 @@
 ---
-title: Index.IgnoreNulls-Eigenschaft (DAO)
+title: Index. IgnoreNulls-Eigenschaft (DAO)
 TOCTitle: IgnoreNulls Property
 ms:assetid: f49f17b8-d7c1-18ab-07a8-e1be61488519
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836698(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 6c306f76e34e24abb5065c627d9325b48c3acead
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291803"
 ---
-# <a name="indexignorenulls-property-dao"></a>Index.IgnoreNulls-Eigenschaft (DAO)
+# <a name="indexignorenulls-property-dao"></a>Index. IgnoreNulls-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert fest, der angibt, ob Datensätze, deren Indexfelder Nullwerte enthalten, über Indexeinträge verfügen (nur Microsoft Access-Arbeitsbereiche).
 
@@ -49,7 +49,7 @@ Die Einstellungen der **IgnoreNulls**-Eigenschaft und der **[Required](field-req
 <tr class="header">
 <th><p>IgnoreNulls-Wert</p></th>
 <th><p>Required-Wert</p></th>
-<th><p>Dann</p></th>
+<th><p>Then</p></th>
 </tr>
 </thead>
 <tbody>

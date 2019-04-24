@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c4faa664ed9001c1c06906f58c7d873faf75a5d0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288890"
 ---
-# <a name="microsoft-ole-db-provider-for-sql-server"></a>Microsoft OLE DB-Anbieter für SQL Server
+# <a name="microsoft-ole-db-provider-for-sql-server"></a>Microsoft OLE DB Provider for SQL Server
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 SQLOLEDB, der OLE DB-Anbieter für SQL Server, ermöglicht ADO den Zugriff auf Microsoft SQL Server.
 
 ## <a name="connection-string-parameters"></a>Verbindungszeichenfolgen-Parameter
 
-Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das *Provider* -Argument der [ConnectionString](connectionstring-property-ado.md) -Eigenschaft fest auf:
+Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das *Provider*-Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
 
 ```sql 
  
@@ -83,7 +83,7 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 
 ## <a name="provider-specific-connection-parameters"></a>Anbieterspezifische Verbindungsparameter
 
-Der Anbieter unterstützt neben den von ADO definierten verschiedene anbieterspezifische Verbindungsparameter. Wie die ADO-Verbindungseigenschaften können diese anbieterspezifischen Eigenschaften über die [Properties](properties-collection-ado.md)-Auflistung eines [Connection](connection-object-ado.md)-Objekts oder als Teil der **ConnectionString** -Eigenschaft festgelegt werden.
+Der Anbieter unterstützt neben den von ADO definierten verschiedene anbieterspezifische Verbindungsparameter. Wie die ADO-Verbindungseigenschaften können diese anbieterspezifischen Eigenschaften über die [Properties](properties-collection-ado.md)-Auflistung eines [Connection](connection-object-ado.md)-Objekts oder als Teil der **ConnectionString**-Eigenschaft festgelegt werden.
 
 <table>
 <colgroup>
@@ -111,7 +111,7 @@ Der Anbieter unterstützt neben den von ADO definierten verschiedene anbieterspe
 </tr>
 <tr class="even">
 <td><p>Network Library</p></td>
-<td><p>Gibt den Namen der Netzwerkbibliothek (Dynamic Link Libraries) verwendet, um eine Kommunikation mit dem SQL Server. Der Name darf nicht den Pfad oder der DLL-Erweiterung enthalten. Der Standardwert ist von der SQL Server-Clientkonfigurationsprogramm bereitgestellt.</p></td>
+<td><p>Gibt den Namen der Netzwerkbibliothek (Dynamic Link Libraries) an, die für die Kommunikation mit dem Computer mit SQL Server verwendet wird. Der Name darf weder den Pfad noch die Dateinamenerweiterung (DLL) enthalten. Der Standardwert wird von der SQL Server-Clientkonfiguration bereitgestellt.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Use Procedure for Prepare</p></td>
@@ -181,13 +181,13 @@ SQL Server-Cursor unterstützen scrollfähige SQLOLEDB-Datensatzgruppen. SQL Ser
 
 ## <a name="dynamic-properties"></a>Dynamische Eigenschaften
 
-Der Microsoft OLE DB-Anbieter für SQL Server fügt verschiedene Eigenschaften in die **Properties** -Auflistung der nicht geöffneten Objekte [Connection](connection-object-ado.md), [Recordset](recordset-object-ado.md) und [Command](command-object-ado.md) ein.
+Der Microsoft OLE DB-Anbieter für SQL Server fügt verschiedene Eigenschaften in die **Properties**-Auflistung der nicht geöffneten Objekte [Connection](connection-object-ado.md), [Recordset](recordset-object-ado.md) und [Command](command-object-ado.md) ein.
 
-Bei den folgenden Tabellen handelt es sich um ein Cross-Index-System der ADO- und OLE DB-Namen für alle dynamischen Eigenschaften. In OLE DB Programmer's Reference wird ein ADO-Eigenschaftenname als "Description" bezeichnet. Weitere Informationen zu diesen Eigenschaften finden Sie in OLE DB Programmer's Reference. Suchen Sie im Index nach dem OLE DB-Eigenschaftennamen, oder lesen Sie Appendix C: OLE DB Properties (in Englisch).
+The following tables are a cross-index of the ADO and OLE DB names for each dynamic property. The OLE DB Programmer's Reference refers to an ADO property name by the term "Description." You can find more information about these properties in the OLE DB Programmer's Reference. Search for the OLE DB property name in the Index or see Appendix C: OLE DB Properties.
 
 ## <a name="connection-dynamic-properties"></a>Dynamische Eigenschaften von "Connection"
 
-Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Connection** -Objekts hinzugefügt.
+Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Connection**-Objekts hinzugefügt.
 
 <table>
 <colgroup>
@@ -275,7 +275,7 @@ Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Connecti
 </tr>
 <tr class="odd">
 <td><p>Initial Catalog</p></td>
-<td><p>NULL</p></td>
+<td><p>DBPROP_INIT_CATALOG</p></td>
 </tr>
 <tr class="even">
 <td><p>Isolation Levels</p></td>
@@ -447,7 +447,7 @@ Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Connecti
 
 ## <a name="recordset-dynamic-properties"></a>Dynamische Eigenschaften von "Recordset"
 
-Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Recordset** -Objekts hinzugefügt.
+Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset**-Objekts hinzugefügt.
 
 <table>
 <colgroup>
@@ -731,7 +731,7 @@ Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Recordse
 
 ## <a name="command-dynamic-properties"></a>Dynamische Eigenschaften von "Command"
 
-Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Command** -Objekts hinzugefügt.
+Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**-Objekts hinzugefügt.
 
 <table>
 <colgroup>

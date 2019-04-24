@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Microsoft Access als DDE-Server
 TOCTitle: Use Microsoft Access as a DDE Server
-description: Microsoft Access unterstützt dynamischem Datenaustausch (DDE) als eine Anwendung Ziel (Client) oder quellanwendung (Server).
+description: Microsoft Access unterstützt Dynamic Data Exchange (DDE) als Ziel-(Client-) Anwendung oder als Quellanwendung (Server).
 ms:assetid: a3e82bf7-94b5-8eec-86bc-2d5387d66738
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821067(v=office.15)
 ms:contentKeyID: 48546801
@@ -13,54 +13,54 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 0750bdce0e1cda383c48f9c16e62e00997fdfb0a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313391"
 ---
 # <a name="use-microsoft-access-as-a-dde-server"></a>Verwenden von Microsoft Access als DDE-Server
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
 
-Microsoft Access unterstützt dynamischem Datenaustausch (DDE) als eine Anwendung Ziel (Client) oder quellanwendung (Server). Beispielsweise kann eine Anwendung wie Microsoft Word, der als ein Client fungiert Daten über DDE aus einer Microsoft Access-Datenbank anfordern, der als Server fungiert.
+Microsoft Access unterstützt Dynamic Data Exchange (DDE) als Ziel-(Client-) Anwendung oder als Quellanwendung (Server). Beispielsweise kann eine Anwendung wie Microsoft Word, die als Client fungiert, Daten über DDE aus einer Microsoft Access-Datenbank anfordern, die als Server fungiert.
 
 > [!TIP]
-> Wenn Sie Microsoft Access-Objekte aus einer anderen Anwendung bearbeiten müssen, können Sie Automatisierung verwenden möchten.
+> Wenn Sie Microsoft Access-Objekte aus einer anderen Anwendung bearbeiten müssen, sollten Sie die Automatisierung verwenden.
 
-Eine DDE-Verbindung zwischen einem Client und Server wird zu einem bestimmten Thema eingerichtet. Ein Thema kann entweder eine Datendatei im Format von der Serveranwendung unterstützt werden, oder es kann sein, das Thema "System", die Informationen über die Serveranwendung selbst bereitstellt. Nachdem Sie eine Unterhaltung zu einem bestimmten Thema begonnen hat, kann nur ein mit diesem Thema verbundenes Datenelement übertragen werden.
+Eine DDE-Unterhaltung zwischen einem Client und einem Server wird zu einem bestimmten Thema hergestellt. Bei einem Thema kann es sich entweder um eine Datendatei im von der Serveranwendung unterstützten Format oder um das System Thema handeln, das Informationen zur Serveranwendung selbst bereitstellt. Nachdem eine Unterhaltung zu einem bestimmten Thema begonnen hat, kann nur ein diesem Thema zugeordnetes Datenelement übertragen werden.
 
-Nehmen wir beispielsweise bei Microsoft Word ausgeführt werden und Daten aus einer bestimmten Microsoft Access-Datenbank in ein Dokument einfügen möchten. Sie zunächst eine DDE-Verbindung mit Microsoft Access öffnen einen DDE-Kanal mit der **DDEInitiate** -Funktion und der Name der Datenbankdatei als Thema angeben. Sie können dann Daten aus dieser Datenbank an Microsoft Word über den Kanal übertragen.
+Angenommen, Sie führen Microsoft Word aus und möchten Daten aus einer bestimmten Microsoft Access-Datenbank in ein Dokument einfügen. Sie beginnen eine DDE-Unterhaltung mit Microsoft Access, indem Sie einen DDE-Kanal mit der **DDEInitiate** -Funktion öffnen und den Namen der Datenbankdatei als Thema angeben. Sie können dann Daten aus dieser Datenbank über diesen Kanal zu Microsoft Word übertragen.
 
 Als DDE-Server unterstützt Microsoft Access die folgenden Themen:
 
-- Das Thema "System"
+- Das Thema System
 
-- Der Name einer Datenbank (Thema*Datenbank* )
+- Der Name einer Datenbank (*Daten Bank* Thema)
 
-- Der Name einer Tabelle (Thema*Tabellenname* )
+- Der Name einer Tabelle (TableName-Thema)**
 
-- Der Name einer Abfrage (Thema*Abfragename* )
+- Der Name einer Abfrage (Thema** "QueryName")
 
-- Eine Microsoft Access SQL-Zeichenfolge (Thema*SQLZeichenfolge* )
+- Eine Microsoft Access-SQL-Zeichenfolge (*SqlString* -Thema)
 
-Nachdem Sie eine DDE-Verbindung hergestellt haben, können Sie die Anweisung **DDEExecute** , einen Befehl vom Client an die Server-Anwendung zu senden. Wenn als DDE-Server verwendet wird, erkennt Microsoft Access die folgenden Befehle als gültig:
+Nachdem Sie eine DDE-Unterhaltung erstellt haben, können Sie die **DDEExecute** -Anweisung verwenden, um einen Befehl vom Client an die Serveranwendung zu senden. Bei Verwendung als DDE-Server erkennt Microsoft Access die folgenden als gültigen Befehl:
 
 - Der Name eines Makros in der aktuellen Datenbank.
 
-- Alle Aktionen, die Sie in Visual Basic können mithilfe der Methoden des **DoCmd** -Objekts.
+- Jede Aktion, die Sie in Visual Basic ausführen können, indem Sie eine der Methoden des **DoCmd** -Objekts verwenden.
 
-- Die OpenDatabase und SchließenDatenbank-Aktionen, die nur für DDE-Vorgänge verwendet werden. (Ein Beispiel dafür, wie Sie diese Aktionen verwenden, finden Sie weiter unten in diesem Thema.)
-
-> [!NOTE]
-> Wenn Sie eine Makroaktion als Anweisung **DDEExecute** angeben, die Aktion und Argumenten führen Sie die Syntax der **DoCmd** -Objekt und müssen in Klammern ([]) eingeschlossen werden. Allerdings erkennen, die DDE unterstützen keine systeminterne Konstanten in DDE-Vorgänge. Darüber hinaus Zeichenfolgenargumente müssen in Anführungszeichen eingeschlossen werden (""), wenn die Zeichenfolge ein Komma enthält. Anderenfalls sind Anführungszeichen nicht erforderlich.
-
-Die Client-Anwendung können Sie die **DDERequest** -Funktion Textdaten aus der Serveranwendung über einen geöffneten DDE-Kanal verwenden. Oder der Client kann die Anweisung **DDEPoke** zum Senden von Daten an die Serveranwendung verwenden. Nachdem die Datenübertragung abgeschlossen ist, kann der Client die Anweisung **DDETerminate** zum Schließen des DDE-Kanals oder der **DDETerminateAll** -Anweisung zum Schließen aller offenen Kanäle verwenden.
+- Die openDatabase-und SchließenDatenbank-Aktionen, die nur für DDE-Vorgänge verwendet werden. (Ein Beispiel für die Verwendung dieser Aktionen finden Sie im Beispiel weiter unten in diesem Thema.)
 
 > [!NOTE]
-> Wenn die Clientanwendung empfangen von Daten über einen DDE-Kanal beendet wurde, sollte es den Kanal um Speicherressourcen zu sparen schließen.
+> Wenn Sie eine Makroaktion als **DDEExecute** -Anweisung angeben, folgen die Aktion und alle Argumente der **DoCmd** -Objektsyntax und müssen in eckige Klammern ([]) eingeschlossen werden. Anwendungen, die DDE unterstützen, erkennen jedoch keine systeminternen Konstanten in DDE-Vorgängen. Auch Zeichenfolgenargumente müssen in Anführungszeichen ("") eingeschlossen werden, wenn die Zeichenfolge ein Komma enthält. Andernfalls sind keine Anführungszeichen erforderlich.
 
-Im folgenden Beispiel wird veranschaulicht, wie Sie eine Microsoft Word-Prozedur mit Visual Basic erstellen, die Microsoft Access als DDE-Server verwendet. (Für das Beispiel funktioniert, muss Microsoft Access ausgeführt werden.)
+Die Clientanwendung kann die **DDERequest** -Funktion verwenden, um Text Daten aus der Serveranwendung über einen geöffneten DDE-Kanal anzufordern. Oder der Client kann die **DDEPoke** -Anweisung verwenden, um Daten an die Serveranwendung zu senden. Nach Abschluss der Datenübertragung kann der Client die **DDETerminate** -Anweisung verwenden, um den DDE-Kanal zu schließen, oder die **DDETerminateAll** -Anweisung, um alle geöffneten Kanäle zu schließen.
+
+> [!NOTE]
+> Wenn die Clientanwendung den Empfang von Daten über einen DDE-Kanal abgeschlossen hat, sollte dieser Kanal geschlossen werden, um Speicherressourcen zu sparen.
+
+Das folgende Beispiel veranschaulicht, wie Sie eine Microsoft Word-Prozedur mit Visual Basic erstellen, die Microsoft Access als DDE-Server verwendet. (Damit dieses Beispiel funktioniert, muss Microsoft Access ausgeführt werden.)
 
 ```vb
     Sub AccessDDE() 
@@ -91,11 +91,11 @@ Im folgenden Beispiel wird veranschaulicht, wie Sie eine Microsoft Word-Prozedur
 
 <br/>
 
-Die folgenden Abschnitte enthalten Informationen zu den gültigen DDE-Themen, die von Microsoft Access unterstützt.
+Die folgenden Abschnitte enthalten Informationen zu den gültigen DDE-Themen, die von Microsoft Access unterstützt werden.
 
-## <a name="the-system-topic"></a>Das Thema "System"
+## <a name="the-system-topic"></a>Das Thema System
 
-Das Systemthema befindet sich standard für alle Microsoft Windows-basierten Anwendungen. Es liefert Informationen zu den anderen Themen, die von der Anwendung unterstützt. Zugriff auf diese Informationen muss Code rufen Sie zunächst die **DDEInitiate** -Funktion mit dem Argument *Thema* , und klicken Sie dann die **DDERequest** -Anweisung mit einer der folgenden Angaben für das Argument *Element* ausführen.
+Das Thema System ist ein Standardthema für alle Microsoft Windows-basierten Anwendungen. Sie liefert Informationen zu den anderen von der Anwendung unterstützten Themen. Um auf diese Informationen zuzugreifen, muss der Code zunächst die **DDEInitiate** -Funktion mit dem *Thema* -Argument aufrufen und dann die **DDERequest** -Anweisung mit einem der folgenden für das Argument *Item* bereitgestellt ausführen.
 
 <table>
 <colgroup>
@@ -110,19 +110,19 @@ Das Systemthema befindet sich standard für alle Microsoft Windows-basierten Anw
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>"SysItems" verwenden</p></td>
-<td><p>Eine Liste der Elemente, die von dem Thema "System" in Microsoft Access unterstützt.</p></td>
+<td><p>SysItems</p></td>
+<td><p>Eine Liste der vom Thema "System" unterstützten Elemente in Microsoft Access.</p></td>
 </tr>
 <tr class="even">
-<td><p>Formate</p></td>
-<td><p>Eine Liste der Formate können Microsoft Access in die Zwischenablage kopieren.</p></td>
+<td><p>Formats</p></td>
+<td><p>Eine Liste der Formate, die Microsoft Access in die Zwischenablage kopieren kann.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Status</p></td>
-<td><p>&quot;Ausgelastet&quot; oder &quot;bereit&quot;.</p></td>
+<td><p>&quot;Besetzt&quot; oder &quot;bereit&quot;.</p></td>
 </tr>
 <tr class="even">
-<td><p>Topics</p></td>
+<td><p>Themen</p></td>
 <td><p>Eine Liste aller geöffneten Datenbanken.</p></td>
 </tr>
 </tbody>
@@ -130,7 +130,7 @@ Das Systemthema befindet sich standard für alle Microsoft Windows-basierten Anw
 
 <br/>
 
-Das folgende Beispiel veranschaulicht die Verwendung der Funktionen **DDEInitiate** und **DDERequest** mit dem Thema System:
+Das folgende Beispiel veranschaulicht die Verwendung der **DDEInitiate** -und **DDERequest** -Funktionen mit dem Thema System:
 
 ```vb
     ' In Visual Basic, initiate DDE conversation with Microsoft Access. 
@@ -144,14 +144,14 @@ Das folgende Beispiel veranschaulicht die Verwendung der Funktionen **DDEInitiat
     DDEExecute intChan1, "[OpenDatabase C:\Access\Samples\Northwind.mdb]"
 ```
 
-## <a name="the-database-topic"></a>Das Thema Datenbank
+## <a name="the-database-topic"></a>Das Daten Bank Thema
 
-Das Thema *Datenbank* ist der Dateiname einer vorhandenen Datenbank. Sie können entweder nur den Namen der (Nordwind) oder den Pfad der Erweiterung eingeben (C:\\Access\\Beispiele\\Nordwind.mdb). Nach dem start einer DDE-Verbindung mit der Datenbank können Sie eine Liste der Objekte in der Datenbank anfordern.
+Das Thema *Datenbank* ist der Dateiname einer vorhandenen Datenbank. Sie können entweder nur den Basisnamen (Northwind) oder den Pfad und die MDB-Erweiterung (C:\\Access\\Samples\\Northwind. mdb) eingeben. Nachdem Sie eine DDE-Unterhaltung mit der Datenbank gestartet haben, können Sie eine Liste der Objekte in dieser Datenbank anfordern.
 
 > [!NOTE]
-> Sie können keine DDE verwenden, um Microsoft Access-Arbeitsgruppen-Informationsdatei abzufragen.
+> Sie können DDE nicht verwenden, um die Microsoft Access-Arbeitsgruppen-Informationsdatei abzufragen.
 
-Das Thema *Datenbank* unterstützt die folgenden Elemente.
+Das *Daten Bank* Thema unterstützt die folgenden Elemente.
 
 <table>
 <colgroup>
@@ -170,23 +170,23 @@ Das Thema *Datenbank* unterstützt die folgenden Elemente.
 <td><p>Eine Liste der Tabellen</p></td>
 </tr>
 <tr class="even">
-<td><p>QueryList</p></td>
+<td><p>Abfragelist</p></td>
 <td><p>Eine Liste von Abfragen</p></td>
 </tr>
 <tr class="odd">
-<td><p>FormList</p></td>
-<td><p>Eine Liste von Formularen</p></td>
+<td><p>Formularlist</p></td>
+<td><p>Eine Liste der Formulare</p></td>
 </tr>
 <tr class="even">
 <td><p>ReportList</p></td>
 <td><p>Eine Liste der Berichte</p></td>
 </tr>
 <tr class="odd">
-<td><p>MacroList</p></td>
-<td><p>Eine Liste mit Makros</p></td>
+<td><p>Makroliste</p></td>
+<td><p>Eine Liste von Makros</p></td>
 </tr>
 <tr class="even">
-<td><p>ModuleList</p></td>
+<td><p>Katalogisiert</p></td>
 <td><p>Eine Liste der Module</p></td>
 </tr>
 <tr class="odd">
@@ -195,18 +195,18 @@ Das Thema *Datenbank* unterstützt die folgenden Elemente.
 </tr>
 <tr class="even">
 <td><p>StoredProcedureList</p></td>
-<td><p>Eine Liste von gespeicherten Prozeduren</p></td>
+<td><p>Eine Liste der gespeicherten Prozeduren</p></td>
 </tr>
 <tr class="odd">
 <td><p>DatabaseDiagramList</p></td>
-<td><p>Eine Liste der Datenbankdiagramme</p></td>
+<td><p>Eine Liste von Datenbankdiagrammen</p></td>
 </tr>
 </tbody>
 </table>
 
 <br/>
 
-Das folgende Beispiel zeigt, wie Sie das Formular Personal in der Northwind-Beispieldatenbank aus einer Visual Basic-Prozedur öffnen können:
+Das folgende Beispiel zeigt, wie Sie das Employees-Formular in der Northwind-Beispieldatenbank aus einer Visual Basic-Prozedur öffnen können:
 
 ```vb
     ' In Visual Basic, initiate DDE conversation with 
@@ -219,15 +219,15 @@ Das folgende Beispiel zeigt, wie Sie das Formular Personal in der Northwind-Beis
     DDEExecute intChan2, "[OpenForm Employees,0,,,1,0]"
 ```
 
-## <a name="the-table-topic"></a>Das Thema Tabelle
+## <a name="the-table-topic"></a>Das Thema "Tabelle"
 
-In diesen Themen verwenden Sie die folgende Syntax:
+In diesen Themen wird die folgende Syntax verwendet:
 
-_Databasename_ ; **Tabelle** _TableName_
+_DatabaseName_ ; **Tabelle** _TableName_
 
-_Databasename_ ; **Abfrage** _Abfragename_
+_DatabaseName_ ; **Abfrage** _Abfragename_
 
-_Databasename_ ; **SQL** [ _Sqlstring_ ]
+_DatabaseName_ ; **SQL** [ _SqlString_ ]
 
 <br/>
 
@@ -244,8 +244,8 @@ _Databasename_ ; **SQL** [ _Sqlstring_ ]
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Datenbankname</em></p></td>
-<td><p>Der Name der Datenbank, die die Tabelle oder Abfrage in ist oder, die die SQL-Anweisung betrifft, gefolgt von einem Semikolon (;). Der Name der Datenbank kann nur den Namen der (Nordwind) oder der vollständige Pfad und MDB-Erweiterung (C:\Access\Samples\Northwind.mdb) sein.</p></td>
+<td><p><em>DatabaseName</em></p></td>
+<td><p>Der Name der Datenbank, in der sich die Tabelle oder Abfrage befindet oder für die die SQL-Anweisung gilt, gefolgt von einem Semikolon (;). Bei dem Datenbanknamen kann es sich um den Basisnamen (Northwind) oder den vollständigen Pfad und die MDB-Erweiterung (C:\Access\Samples\Northwind.mdb) handeln.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>TableName</em></p></td>
@@ -257,14 +257,14 @@ _Databasename_ ; **SQL** [ _Sqlstring_ ]
 </tr>
 <tr class="even">
 <td><p><em>SqlString</em></p></td>
-<td><p>Eine gültige SQL­Anweisung bis zu 256 Zeichen lang sein, mit einem Semikolon enden. Um mehr als 256 Zeichen austauschen möchten, geben Sie dieses Argument und stattdessen verwenden Sie aufeinander folgenden <strong>DDEPoke</strong> -Anweisungen zum Erstellen einer SQL-Anweisung. Der folgenden Visual Basic-Code wird beispielsweise die Anweisung <strong>DDEPoke</strong> So erstellen eine SQL-Anweisung, und fordern Sie dann die Ergebnisse der Abfrage verwendet.</p></td>
+<td><p>Eine gültige SQL-Anweisung bis zu 256 Zeichen lang, endend mit einem Semikolon. Wenn Sie mehr als 256 Zeichen austauschen möchten, lassen Sie dieses Argument aus, und verwenden Sie stattdessen aufeinanderfolgende <strong>DDEPoke</strong> -Anweisungen, um eine SQL-Anweisung zu erstellen. Im folgenden Visual Basic-Code wird beispielsweise die <strong>DDEPoke</strong> -Anweisung verwendet, um eine SQL-Anweisung zu erstellen und dann die Ergebnisse der Abfrage anzufordern.</p></td>
 </tr>
 </tbody>
 </table>
 
 <br/>
 
-In der folgenden Tabelle sind die gültigen Elemente für die Tabelle *Tabellenname*, QUERY *Abfragename*und SQL *SQLZeichenfolge* Themen.
+In der folgenden Tabelle sind die gültigen Elemente für die ** Tabellen TableName-, Query *QueryName*-und SQL *SqlString* -Themen aufgeführt.
 
 <table>
 <colgroup>
@@ -280,19 +280,19 @@ In der folgenden Tabelle sind die gültigen Elemente für die Tabelle *Tabellenn
 <tbody>
 <tr class="odd">
 <td><p>Alle</p></td>
-<td><p>Die Daten in der Tabelle, einschließlich Feldnamen.</p></td>
+<td><p>Alle Daten in der Tabelle, einschließlich Feldnamen.</p></td>
 </tr>
 <tr class="even">
 <td><p>Daten</p></td>
-<td><p>Alle Zeilen mit Daten, ohne Feldnamen.</p></td>
+<td><p>Alle Datenzeilen ohne Feldnamen.</p></td>
 </tr>
 <tr class="odd">
 <td><p>FieldNames</p></td>
 <td><p>Eine einzeilige Liste von Feldnamen.</p></td>
 </tr>
 <tr class="even">
-<td><p>FieldNames; T</p></td>
-<td><p>Eine zwei Zeilen Liste von Feldnamen (erste Zeile) und deren Datentypen (zweite Zeile).</p>
+<td><p>FieldNames T</p></td>
+<td><p>Eine zweireihige Liste von Feldnamen (erste Zeile) und deren Datentypen (zweite Zeile).</p>
 <p>Dies sind die zurückgegebenen Werte:</p>
 <p>Wert</p>
 <p><ul>
@@ -315,11 +315,11 @@ In der folgenden Tabelle sind die gültigen Elemente für die Tabelle *Tabellenn
 </tr>
 <tr class="even">
 <td><p>NextRow</p></td>
-<td><p>Die Daten in der nächsten Zeile in der Tabelle oder Abfrage. Wenn Sie einen Kanal öffnen, gibt NextRow die Daten in der ersten Zeile. Wenn die aktuelle Zeile der letzte Datensatz ist und Ausführung von NextRow, schlägt die Anforderung fehl.</p></td>
+<td><p>Die Daten in der nächsten Zeile in der Tabelle oder Abfrage. Wenn Sie einen Kanal öffnen, gibt NextRow die Daten in der ersten Zeile zurück. Wenn die aktuelle Zeile der letzte Datensatz ist und Sie NextRow ausführen, schlägt die Anforderung fehl.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Fehl</p></td>
-<td><p>Die Daten in der vorherigen Zeile in der Tabelle oder Abfrage. Wenn fehl die erste Anforderung über einen neuen Kanal ist, werden die Daten in der letzten Zeile der Tabelle oder Abfrage zurückgegeben. Wenn der erste Datensatz der aktuelle Zeile ist, schlägt die Anforderung fehl.</p></td>
+<td><p>PrevRow</p></td>
+<td><p>Die Daten in der vorherigen Zeile in der Tabelle oder Abfrage. Wenn PrevRow die erste Anforderung eines neuen Kanals ist, werden die Daten in der letzten Zeile der Tabelle oder Abfrage zurückgegeben. Wenn der erste Datensatz die aktuelle Zeile ist, schlägt die Anforderung für PrevRow fehl.</p></td>
 </tr>
 <tr class="even">
 <td><p>FirstRow</p></td>
@@ -335,18 +335,18 @@ In der folgenden Tabelle sind die gültigen Elemente für die Tabelle *Tabellenn
 </tr>
 <tr class="odd">
 <td><p>SQLText</p></td>
-<td><p>Eine SQL-Anweisung, die die Tabelle oder Abfrage darstellt. Für Tabellen, gibt dieses Element eine SQL-Anweisung in der Form &quot;auswählen `*` FROM <em>Tabelle</em>; &quot;.</p></td>
+<td><p>Eine SQL-Anweisung, die die Tabelle oder Abfrage darstellt. Bei Tabellen gibt dieses Element eine SQL-Anweisung im Formular &quot;Select `*` from <em>Table</em>zurück; &quot;.</p></td>
 </tr>
 <tr class="even">
-<td><p>SQLText; <em>n</em></p></td>
-<td><p>Eine SQL­Anweisung in <em>n</em>-Segmenten für eine Tabelle oder Abfrage, wobei <em>n</em> eine ganze Zahl bis zu 256 ist Zeichen. Nehmen wir beispielsweise bei eine Abfrage wird durch die folgende SQL-Anweisung dargestellt: das Element &quot;SQLText; 7&quot; gibt die folgenden Abschnitte Tabstopp-getrennt: das Element &quot;SQLText; 7&quot; gibt die folgenden Abschnitte Tabstopp-getrennt:</p></td>
+<td><p>SQLTEXT <em>n</em></p></td>
+<td><p>Eine SQL-Anweisung in <em>n</em>-Zeichen-Chunks, die die Tabelle oder Abfrage darstellt, wobei <em>n</em> eine ganze Zahl bis zu 256 ist. Angenommen, eine Abfrage wird durch die folgende SQL-Anweisung dargestellt &quot;: das Element SQLTEXT; 7&quot; gibt die folgenden durch Tabulatoren getrennten Segmente zurück: das Element &quot;SQLTEXT; 7&quot; gibt die folgenden durch Tabstopps getrennten Abschnitte zurück:</p></td>
 </tr>
 </tbody>
 </table>
 
 <br/>
 
-Das folgende Beispiel zeigt, wie Sie DDE in einer Visual Basic-Prozedur das Abrufen von Daten aus einer Tabelle in der Northwind-Beispieldatenbank verwenden und diese Daten in eine Textdatei einfügen:
+Das folgende Beispiel zeigt, wie Sie mithilfe von DDE in einer Visual Basic-Prozedur Daten aus einer Tabelle in der Northwind-Beispieldatenbank anfordern und diese Daten in eine Textdatei einfügen können:
 
 ```vb
     Sub NorthwindDDE 

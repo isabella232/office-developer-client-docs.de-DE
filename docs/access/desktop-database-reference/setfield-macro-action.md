@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4fbf7252729c7b376da6ebe67f59941c1caf924d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314616"
 ---
 # <a name="setfield-macro-action"></a>SetField-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **FestlegenFeld** -Aktion können Sie einem Feld einen Wert zuweisen.
 
 > [!NOTE]
-> [!HINWEIS] Die **FestlegenFeld** -Aktion ist nur in Datenmakros verfügbar.
+> Die **FestlegenFeld**-Aktion ist nur in Datenmakros verfügbar.
 
 ## <a name="setting"></a>Einstellung
 
-Die **FestlegenFeld** -Aktion kann mit den in der folgenden Tabelle aufgeführten Argumenten verwendet werden.
+Die **FestlegenFeld**-Aktion kann mit den in der folgenden Tabelle aufgeführten Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -45,13 +45,13 @@ Die **FestlegenFeld** -Aktion kann mit den in der folgenden Tabelle aufgeführte
 </tr>
 <tr class="even">
 <td><p><strong>Wert</strong></p></td>
-<td><p>Ein Ausdruck, der angibt, den Wert in das Feld zugewiesen.</p></td>
+<td><p>Ein Ausdruck, der den Wert angibt, der dem Feld zugewiesen werden soll.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **FestlegenFeld** -Aktion kann nicht außerhalb eines **[DatensatzErstellen](createrecord-data-block.md)** - oder **[BearbeitenDatensatz](editrecord-data-block.md)** -Datenblocks verwendet werden.
 

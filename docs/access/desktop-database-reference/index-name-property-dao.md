@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 78bc22e424312f7d834b3a9ba389e3d82210dd6d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291810"
 ---
 # <a name="indexname-property-dao"></a>Index.Name-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest. **String**-Wert mit Lese-/Schreibzugriff, wenn das Objekt noch keiner Auflistung angefügt wurde. Schreibgeschützter **String**-Wert, wenn das Objekt einer Auflistung angefügt wurde.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Name
+*Ausdruck* . Namen
 
 *Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.
 

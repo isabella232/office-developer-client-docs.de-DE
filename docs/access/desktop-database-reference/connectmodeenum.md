@@ -1,5 +1,5 @@
 ---
-title: ConnectModeEnum (Access PC-Datenbank-Referenz)
+title: ConnectModeEnum (Access Desktop Database Reference)
 TOCTitle: ConnectModeEnum
 ms:assetid: a15aa733-f899-5fe9-e705-67a4301706d1
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249743(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 453d84e687a31f7df5082e17b80fe2a1bda756be
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295695"
 ---
 # <a name="connectmodeenum"></a>ConnectModeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt die verfügbaren Berechtigungen zum Ändern von Daten in einer [Verbindung](connection-object-ado.md) an, wobei ein [Datensatz](record-object-ado.md) geöffnet wird oder Werte für die [Mode](mode-property-ado.md)-Eigenschaft der **Record** - und [Stream](stream-object-ado.md)-Objekte angegeben werden.
+Gibt die verfügbaren Berechtigungen zum Ändern von Daten in einer [Verbindung](connection-object-ado.md) an, wobei ein [Datensatz](record-object-ado.md) geöffnet wird oder Werte für die [Mode](mode-property-ado.md)-Eigenschaft der **Record**- und [Stream](stream-object-ado.md)-Objekte angegeben werden.
 
 <br/>
 
@@ -48,8 +48,8 @@ Gibt die verfügbaren Berechtigungen zum Ändern von Daten in einer [Verbindung]
 </tr>
 <tr class="odd">
 <td><p><strong>adModeRecursive</strong></p></td>
-<td><p>0 x 400000</p></td>
-<td><p>In Verbindung mit anderen <em>*ShareDeny*</em> Werte (<strong>AdModeShareDenyNone</strong>, <strong>AdModeShareDenyWrite</strong>oder <strong>AdModeShareDenyRead</strong>) weitergegeben sharing Einschränkungen auf alle untergeordneten Datensätze des aktuellen <strong>Datensatzes</strong>verwendet. Es hat keine Auswirkung, wenn der <strong>Datensatz</strong> keine untergeordneten Elemente verfügt.</p><p>Ein Laufzeitfehler wird generiert, wenn sie nur <strong>AdModeShareDenyNone</strong> verwendet wird. Sie können jedoch mit <strong>AdModeShareDenyNone</strong> in Kombination mit anderen Werte verwendet werden. Sie können beispielsweise verwenden &quot; <strong>AdModeRead</strong> oder <strong>AdModeShareDenyNone</strong> oder <strong>AdModeRecursive</strong>&quot;.</p></td>
+<td><p>0x400000</p></td>
+<td><p>Wird zusammen mit den anderen <em>*ShareDeny*</em> -Werten (<strong>adModeShareDenyNone</strong>, <strong>adModeShareDenyWrite</strong>oder <strong>adModeShareDenyRead</strong>) verwendet, um Freigabeeinschränkungen an alle Unterdatensätze des aktuellen <strong>Datensatzes</strong>zu verteilen. Sie hat keine Auswirkungen, wenn der <strong>Datensatz</strong> keine untergeordneten Elemente aufweist.</p><p>Wenn es nur mit <strong>adModeShareDenyNone</strong> verwendet wird, wird ein Laufzeitfehler generiert. Sie kann jedoch mit <strong>adModeShareDenyNone</strong> verwendet werden, wenn Sie mit anderen Werten kombiniert wird. Sie können beispielsweise &quot; <strong>adModeRead</strong> oder <strong>adModeShareDenyNone</strong> oder <strong>adModeRecursive</strong>&quot;verwenden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adModeShareDenyNone</strong></p></td>
@@ -85,7 +85,7 @@ Gibt die verfügbaren Berechtigungen zum Ändern von Daten in einer [Verbindung]
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -100,31 +100,31 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.ConnectMode.READ</p></td>
+<td><p>AdoEnums. ConnectMode. READ</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ConnectMode.READWRITE</p></td>
+<td><p>AdoEnums. ConnectMode. READWRITE</p></td>
 </tr>
 <tr class="odd">
 <td><p>(There is no equivalent of AdoEnums.ConnectMode.RECURSIVE)</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ConnectMode.SHAREDENYNONE</p></td>
+<td><p>AdoEnums. ConnectMode. SHAREDENYNONE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ConnectMode.SHAREDENYREAD</p></td>
+<td><p>AdoEnums. ConnectMode. SHAREDENYREAD</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ConnectMode.SHAREDENYWRITE</p></td>
+<td><p>AdoEnums. ConnectMode. SHAREDENYWRITE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ConnectMode.SHAREEXCLUSIVE</p></td>
+<td><p>AdoEnums. ConnectMode. SHAREEXCLUSIVE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ConnectMode.UNKNOWN</p></td>
+<td><p>AdoEnums. ConnectMode. UNKNOWN</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ConnectMode.WRITE</p></td>
+<td><p>AdoEnums. ConnectMode. WRITE</p></td>
 </tr>
 </tbody>
 </table>

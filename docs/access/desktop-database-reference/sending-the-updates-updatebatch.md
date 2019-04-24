@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ca97f3ec2cbddfae4d62a72e5e6148a57abb4325
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308715"
 ---
 # <a name="sending-the-updates-updatebatch"></a>Senden von Updates: UpdateBatch
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="sending-the-updates-updatebatch-method"></a>Senden der Aktualisierungen: UpdateBatch-Methode
 
-Mit dem folgenden Code wird ein **Recordset** -Objekt im Batchmodus geöffnet, indem die **LockType** -Eigenschaft auf **adLockBatchOptimistic** und die **CursorLocation** auf **adUseClient** festgelegt wird. Zwei neue Datensätze werden hinzugefügt, und der Wert eines Felds in einem vorhandenen Datensatz wird geändert, wobei die ursprünglichen Werte gespeichert werden. Anschließend wird **UpdateBatch** aufgerufen, um die Änderungen an die Datenquelle zurückzusenden.
+Mit dem folgenden Code wird ein **Recordset**-Objekt im Batchmodus geöffnet, indem die **LockType**-Eigenschaft auf **adLockBatchOptimistic** und die **CursorLocation** auf **adUseClient** festgelegt wird. Zwei neue Datensätze werden hinzugefügt, und der Wert eines Felds in einem vorhandenen Datensatz wird geändert, wobei die ursprünglichen Werte gespeichert werden. Anschließend wird **UpdateBatch** aufgerufen, um die Änderungen an die Datenquelle zurückzusenden.
 
 ```vb 
  
@@ -50,5 +50,5 @@ Mit dem folgenden Code wird ein **Recordset** -Objekt im Batchmodus geöffnet, i
 'EndBatchUpdate 
 ```
 
-Wenn Sie den aktuellen Datensatz bearbeiten oder beim Aufrufen der **UpdateBatch** -Methode einen neuen Datensatz hinzufügen, ruft ADO automatisch die **Update** -Methode auf, um ausstehende Änderungen am aktuellen Datensatz zu speichern, bevor die Batchänderungen an den Anbieter übertragen werden.
+Wenn Sie den aktuellen Datensatz bearbeiten oder beim Aufrufen der **UpdateBatch**-Methode einen neuen Datensatz hinzufügen, ruft ADO automatisch die **Update**-Methode auf, um ausstehende Änderungen am aktuellen Datensatz zu speichern, bevor die Batchänderungen an den Anbieter übertragen werden.
 

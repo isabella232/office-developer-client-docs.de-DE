@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 25f52489430465235a928fff3c38469ec6ba83ad
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297193"
 ---
 # <a name="aggregate-functions-the-calc-function-and-the-new-keyword"></a>Aggregatfunktionen, die CALC-Funktion und das NEUE Schlüsselwort
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Die Datenstrukturierung unterstützt die folgenden Funktionen. Der Name, der dem Kapitel mit der zu bearbeitenden Spalte zugewiesen wird, ist der *Kapitelalias*.
 
-Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspaltennamen bestehen, die zu dem jeweiligen Kapitel führen, das den Spaltennamen enthält, wobei alle Elemente durch Punkte voneinander getrennt werden. Wenn z. B. das übergeordnete Kapitel chap1 das untergeordnete Kapitel chap2 mit einer Spalte für den Betrag (amt) enthält, würde der qualifizierte Name chap1.chap2.amt lauten.
+Ein Kapitel-Alias kann vollständig qualifiziert sein, bestehend aus jedem Kapitelspalten Namen, der zu dem Kapitel mit dem *Spaltennamen führt,* alle durch Punkte getrennt. For example, if the parent chapter, chap1, contains a child chapter, chap2, that has an amount column, amt, then the qualified name would be chap1.chap2.amt.
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspa
 <td><p>Berechnet den Minimalwert in der angegebenen Spalte.</p></td>
 </tr>
 <tr class="odd">
-<td><p>COUNT (<em>Kapitel-Alias</em>[.<em> Spaltenname</em>])</p></td>
+<td><p>COUNT (<em>Chapter-Alias</em>[.<em> Spaltenname</em>])</p></td>
 <td><p>Berechnet die Anzahl von Zeilen im angegebenen Alias. Falls eine Spalte angegeben wird, werden nur Zeilen, für die diese Spalte ungleich NULL ist, in die Anzahl eingeschlossen.</p></td>
 </tr>
 <tr class="even">
@@ -60,9 +60,8 @@ Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspa
 <td><p>Berechnet die Standardabweichung in der angegebenen Spalte.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Alle (<em>Kapitel-Alias</em>.<em> Spaltenname</em>)</p></td>
-<td><p>Ein Wert der angegebenen Spalte. ANY hat nur dann einen vorhersagbaren Wert, wenn der Wert der Spalte für alle Zeilen im Kapitel identisch ist.
-</p><p><strong>Hinweis</strong>: Wenn die Spalte nicht den gleichen Wert für alle Zeilen im Kapitel enthält, gibt der SHAPE-Befehl willkürlich einen der Werte der Wert der ANY-Funktion werden.</p></td>
+<td><p>ANY (<em>Kapitel-Alias</em>.<em> Spaltenname</em>)</p></td>
+<td><p>Ein Wert der angegebenen Spalte. ANY hat nur dann einen vorhersagbaren Wert, wenn der Wert der Spalte für alle Zeilen im Kapitel identisch ist.</p><p><strong>Hinweis</strong>: Wenn die Spalte nicht den gleichen Wert für alle Zeilen im Kapitel enthält, gibt der Shape-Befehl willkürlich einen der Werte als Wert der any-Funktion zurück.</p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +81,7 @@ Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>CALC(<em>Ausdruck</em>)</p></td>
+<td><p>CALC (<em>Ausdruck</em>)</p></td>
 <td><p>Berechnet einen beliebigen Ausdruck, jedoch nur in der Zeile des <strong>Recordset</strong>-Objekts, das die CALC-Funktion enthält. Jeder Ausdruck, der diese <a href="visual-basic-for-applications-functions.md">VIA-Funktionen (Visual Basic für Applikationen)</a> verwendet, ist zulässig.</p></td>
 </tr>
 </tbody>
@@ -103,7 +102,7 @@ Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>NEW <em>Feldtyp</em> [(<em>Breite</em> | <em>Skalierung</em> | <em>Genauigkeit</em> | <em>Fehler</em> [, <em>Scale</em> | <em>Fehler</em>])]</p></td>
+<td><p>Neuer <em>Feldtyp</em> [(<em></em> | <em></em> | <em></em> | <em>Fehler beim</em> Skalieren der Genauigkeit [, <em>Skalierungs</em> | <em>Fehler</em>])]</p></td>
 <td><p>Fügt dem <strong>Recordset</strong> eine leere Spalte des angegebenen Typs hinzu.</p></td>
 </tr>
 </tbody>
@@ -127,11 +126,11 @@ Für den mit dem NEW-Schlüsselwort übergebenen *Feldtyp* sind die folgenden Da
 <tbody>
 <tr class="odd">
 <td><p>DBTYPE_BSTR</p></td>
-<td><p>adBSTR</p></td>
+<td><p>-BSTR</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_BOOL</p></td>
-<td><p>adBoolean</p></td>
+<td><p>Boolean</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_DECIMAL</p></td>
@@ -143,7 +142,7 @@ Für den mit dem NEW-Schlüsselwort übergebenen *Feldtyp* sind die folgenden Da
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_I1</p></td>
-<td><p>adTinyInt</p></td>
+<td><p>addTinyInt</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_UI2</p></td>
@@ -155,7 +154,7 @@ Für den mit dem NEW-Schlüsselwort übergebenen *Feldtyp* sind die folgenden Da
 </tr>
 <tr class="even">
 <td><p>DBTYPE_I8</p></td>
-<td><p>adBigInt</p></td>
+<td><p>Bigint</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_UI8</p></td>
@@ -163,19 +162,19 @@ Für den mit dem NEW-Schlüsselwort übergebenen *Feldtyp* sind die folgenden Da
 </tr>
 <tr class="even">
 <td><p>DBTYPE_GUID</p></td>
-<td><p>adGuid</p></td>
+<td><p>GUID</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_BYTES</p></td>
-<td><p>AdBinary, AdVarBinary, adLongVarBinary</p></td>
+<td><p>adLongVarBinary</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_STR</p></td>
-<td><p>AdChar, AdVarChar, adLongVarChar</p></td>
+<td><p>adLongVarChar</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_WSTR</p></td>
-<td><p>AdWChar, AdVarWChar, adLongVarWChar</p></td>
+<td><p>adWChar, adVarWChar, adLongVarWChar</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_NUMERIC</p></td>
@@ -194,20 +193,20 @@ Für den mit dem NEW-Schlüsselwort übergebenen *Feldtyp* sind die folgenden Da
 <td><p>adDBTimeStamp</p></td>
 </tr>
 <tr class="even">
-<td><p>DBTYPE_VARNUMERIC ENTSPRECHENDE</p></td>
+<td><p>DBTYPE_VARNUMERIC</p></td>
 <td><p>adVarNumeric</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_FILETIME</p></td>
-<td><p>adFileTime</p></td>
+<td><p>Dateien</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_ERROR</p></td>
-<td><p>adError</p></td>
+<td><p>Fehler</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Wenn das neue Feld vom Typ Decimal ist (in OLE DB DATENBANKTYP\_Dezimal oder AdDecimal in ADO), müssen Sie die Genauigkeit und einem festen Maßstab Werte angeben.
+Wenn das neue Feld vom Typ Decimal (in OLE DB, DBTYPE\_Decimal oder in ADO, Decimal) ist, müssen Sie die Genauigkeit und die Skalierungswerte angeben.
 

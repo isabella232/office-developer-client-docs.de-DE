@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 86834cd8b6132e8939067c0e34037ca1b0ef8bad
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314609"
 ---
 # <a name="setorderby-macro-action"></a>SetOrderBy-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Mit der **FestlegenSortiertNach** -Aktion legen Sie fest, wie die Datensätze in einem Formular, einem Bericht, einer Tabelle oder einem Abfrageergebnis sortiert werden sollen.
+Mit der **FestlegenSortiertNach**-Aktion legen Sie fest, wie die Datensätze in einem Formular, einem Bericht, einer Tabelle oder einem Abfrageergebnis sortiert werden sollen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **FestlegenSortiertNach** -Aktion kann mit den folgenden Argumenten verwendet werden.
+Die **FestlegenSortiertNach**-Aktion kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -53,7 +53,7 @@ Die **FestlegenSortiertNach** -Aktion kann mit den folgenden Argumenten verwende
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Ausführen dieser Makroaktion wird die Sortierung auf die Tabelle, das Formular, den Bericht oder das Datenblatt (Abfrageergebnis) angewendet, das aktiv ist und den Fokus besitzt.
 

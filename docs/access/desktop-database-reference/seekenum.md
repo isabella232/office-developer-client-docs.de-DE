@@ -1,5 +1,5 @@
 ---
-title: SeekEnum (Access PC-Datenbank-Referenz)
+title: SeekEnum (Access Desktop Database Reference)
 TOCTitle: SeekEnum
 ms:assetid: a0574809-db2d-8759-18cc-fb1cf776e8fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249737(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2f8334cbfc8e0f6a362a36e03984739d1d52b6f6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314658"
 ---
 # <a name="seekenum"></a>SeekEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Art der auszuführenden [Suche](seek-method-ado.md) an.
 
@@ -37,7 +37,7 @@ Gibt die Art der auszuführenden [Suche](seek-method-ado.md) an.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Nordwind.mdb</p></td>
+<td><p>adSeekFirstEQ</p></td>
 <td><p>1</p></td>
 <td><p>Sucht den ersten Schlüssel, der <em>KeyValues</em> entspricht.</p></td>
 </tr>
@@ -70,7 +70,7 @@ Gibt die Art der auszuführenden [Suche](seek-method-ado.md) an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -85,22 +85,22 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.Seek.FIRSTEQ</p></td>
+<td><p>AdoEnums. Seek. FIRSTEQ</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.Seek.LASTEQ</p></td>
+<td><p>AdoEnums. Seek. LASTEQ</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.Seek.AFTEREQ</p></td>
+<td><p>AdoEnums. Seek. AFTEREQ</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.Seek.AFTER</p></td>
+<td><p>AdoEnums. Seek. AFTER</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.Seek.BEFOREEQ</p></td>
+<td><p>AdoEnums. Seek. BEFOREEQ</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.Seek.BEFORE</p></td>
+<td><p>AdoEnums. Seek. BEFORE</p></td>
 </tr>
 </tbody>
 </table>

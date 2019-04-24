@@ -1,5 +1,5 @@
 ---
-title: FieldStatusEnum (Access PC-Datenbank-Referenz)
+title: FieldStatusEnum (Access Desktop Database Reference)
 TOCTitle: FieldStatusEnum
 ms:assetid: 49570042-8435-8618-3ba1-7006c47735e0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249225(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0ccf98f2a740e2a077d6e2451102bfc72bcd1b40
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292517"
 ---
 # <a name="fieldstatusenum"></a>FieldStatusEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Status eines **Field** -Objekts an.
 
@@ -61,7 +61,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 <tr class="odd">
 <td><p><strong>adFieldCantConvertValue</strong></p></td>
 <td><p>2</p></td>
-<td><p>Gibt an, dass das Feld nicht ohne Datenverlust abgerufen oder gespeichert werden kann.</p></td>
+<td><p>Gibt an, dass das Feld ohne Datenverlust nicht abgerufen oder gespeichert werden kann.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldCantCreate</strong></p></td>
@@ -71,12 +71,12 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 <tr class="odd">
 <td><p><strong>adFieldDataOverflow</strong></p></td>
 <td><p>6</p></td>
-<td><p>Gibt an, dass die vom Anbieter zurückgegebenen Daten einen Überlauf beim Datentyp des Felds verursachten.</p></td>
+<td><p>Gibt an, dass die vom Anbieter zurückgegebenen Daten einen Datentypüberlauf des Felds verursacht haben.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldDefault</strong></p></td>
 <td><p>13</p></td>
-<td><p>Gibt an, dass beim Festlegen von Daten der Standardwert verwendet wurde.</p></td>
+<td><p>Gibt an, dass beim Festlegen von Daten der Standardwert für das Feld verwendet wurde.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldDoesNotExist</strong></p></td>
@@ -91,7 +91,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 <tr class="odd">
 <td><p><strong>adFieldIntegrityViolation</strong></p></td>
 <td><p>10</p></td>
-<td><p>Gibt an, dass das Feld nicht geändert werden kann, da es eine berechnete oder abgeleitete Entität ist.</p></td>
+<td><p>Gibt an, dass das Feld nicht geändert werden kann, da es eine berechnete oder abgeleitete Einheit ist.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldInvalidURL</strong></p></td>
@@ -111,31 +111,31 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 <tr class="odd">
 <td><p><strong>adFieldOutOfSpace</strong></p></td>
 <td><p>22</p></td>
-<td><p>Gibt an, dass der Anbieter nicht genügend Speicherplatz abrufen kann, um einen Verschiebe- oder Kopiervorgang abzuschließen.</p></td>
+<td><p>Gibt an, dass der Anbieter nicht genügend Speicherplatz zum Abschließen eines Verschiebe- oder Kopiervorgangs in Anspruch nehmen kann.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldPendingChange</strong></p></td>
-<td><p>0 x 40000</p></td>
-<td><p>Gibt an, dass das Feld entweder gelöscht und dann erneut hinzugefügt wurde, gegebenenfalls mit einem anderen Datentyp, oder dass sich der Wert des Felds geändert hat, das zuvor einen Status von adFieldOK aufwies. Die endgültige Form des Felds bedeutet eine Änderung der Fields-Auflistung, nachdem die Update-Methode aufgerufen wurde.</p></td>
+<td><p>0x40000</p></td>
+<td><p>Gibt an, dass das Feld gelöscht und dann erneut hinzugefügt wurde, möglicherweise mit einem anderen Datentyp, oder dass der Wert des Felds, das zuvor den Status adFieldOK hatte, geändert wurde. Das endgültige Formular des Felds ändert die Fields <a href="fields-collection-ado.md"></a> -Auflistung, nachdem die <a href="update-method-ado.md">Update</a> -Methode aufgerufen wurde.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldPendingDelete</strong></p></td>
-<td><p>0 x 20000</p></td>
+<td><p>0x20000</p></td>
 <td><p>Gibt an, dass der <strong>Delete</strong>-Vorgang zum Festlegen des Status führte. Nachdem die <strong>Update</strong>-Methode aufgerufen wurde, wurde das Feld zum Löschen aus der <strong>Fields</strong>-Auflistung markiert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldPendingInsert</strong></p></td>
-<td><p>0 x 10000</p></td>
-<td><p>Gibt an, dass der <strong>Append</strong> -Vorgang zum Festlegen den Status verursacht. Das <strong>Feld</strong> wurde markiert, der <strong>Fields</strong> -Auflistung hinzugefügt werden soll, nachdem die <strong>Update</strong> -Methode aufgerufen wird.</p></td>
+<td><p>0x10000</p></td>
+<td><p>Gibt an, dass durch den <strong>Append</strong> -Vorgang der Status festgelegt wurde. Das <strong>Feld</strong> wurde zur <strong>Fields</strong> -Auflistung hinzugefügt, nachdem die <strong>Update</strong> -Methode aufgerufen wurde.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldPendingUnknown</strong></p></td>
-<td><p>0 x 80000</p></td>
+<td><p>0x80000</p></td>
 <td><p>Gibt an, dass der Anbieter nicht ermitteln kann, welcher Vorgang zum Festlegen des Feldstatus führte.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldPendingUnknownDelete</strong></p></td>
-<td><p>0 x 100000</p></td>
+<td><p>0x100000</p></td>
 <td><p>Gibt an, dass der Anbieter nicht ermitteln kann, welcher Vorgang zum Festlegen des Status führte, und dass das Feld aus der <strong>Fields</strong>-Auflistung gelöscht wird, nachdem die <strong>Update</strong>-Methode aufgerufen wurde.</p></td>
 </tr>
 <tr class="odd">
@@ -192,7 +192,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

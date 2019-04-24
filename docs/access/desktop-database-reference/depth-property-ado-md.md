@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a8866c325669eda9e915566d98dee7c815a1dbfe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293987"
 ---
 # <a name="depth-property-ado-md"></a>Depth-Eigenschaft (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Anzahl von Ebenen zwischen dem [Level](level-object-ado-md.md)-Objekt und der Hierarchiewurzel an.
 
@@ -25,7 +25,7 @@ Gibt die Anzahl von Ebenen zwischen dem [Level](level-object-ado-md.md)-Objekt u
 
 Gibt einen ganzzahligen, schreibgeschützten Wert zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein **Level** -Objekt auf der Ebene der Hierarchiewurzel verfügt über einen **Depth** -Wert von Null (0).
+Ein **Level**-Objekt auf der Ebene der Hierarchiewurzel verfügt über einen **Depth**-Wert von Null (0).
 

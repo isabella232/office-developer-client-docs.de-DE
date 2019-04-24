@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b977fc4273068ac52efe8960761a9e28a6234e2e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314070"
 ---
 # <a name="understanding-the-customization-file"></a>Grundlegendes zur Anpassungsdatei
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Jeder Abschnittsheader in der Anpassungsdatei besteht aus eckigen Klammern (**\[**), die einen Typ und einen Parameter enthält. Die vier Abschnittstypen werden durch die Literalzeichenfolgen **connect**, **sql**, **userlist** oder **logs** angegeben. Der Parameter ist die Literalzeichenfolge, der Standardwert, ein benutzerdefinierter Bezeichner oder nichts.
+Jeder Abschnittskopf in der Anpassungsdatei besteht aus eckigen Klammern**\[**() mit einem Typ und Parameter. Die vier Abschnittstypen werden durch die Literalzeichenfolgen **connect**, **sql**, **userlist** oder **logs** angegeben. Der Parameter ist die Literalzeichenfolge, der Standardwert, ein benutzerdefinierter Bezeichner oder nichts.
 
 Jeder Abschnitt wird daher durch einen der folgenden Abschnittsheader gekennzeichnet:
 
@@ -42,25 +42,25 @@ Die Abschnittsheader bestehen aus den folgenden Teilen.
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Argument</p></th>
+<th><p>Teil</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>connect</strong></p></td>
+<td><p><strong>verbinden</strong></p></td>
 <td><p>Eine Literalzeichenfolge, durch die eine Verbindungszeichenfolge geändert wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>sql</strong></p></td>
+<td><p><strong>SQL</strong></p></td>
 <td><p>Eine Literalzeichenfolge, durch die eine Befehlszeichenfolge geändert wird.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>userlist</strong></p></td>
+<td><p><strong>UserList</strong></p></td>
 <td><p>Eine Literalzeichenfolge, durch die die Zugriffsrechte eines bestimmten Benutzers geändert werden.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>logs</strong></p></td>
+<td><p><strong>Protokolle</strong></p></td>
 <td><p>Eine Literalzeichenfolge, durch die eine Protokolldatei angegeben wird, in der Ausführungsfehler aufgezeichnet werden.</p></td>
 </tr>
 <tr class="odd">
@@ -68,9 +68,8 @@ Die Abschnittsheader bestehen aus den folgenden Teilen.
 <td><p>Eine Literalzeichenfolge, die verwendet wird, wenn kein Bezeichner angegeben ist oder gefunden wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>identifier</em></p></td>
-<td><p>Eine Zeichenfolge, die mit einer Zeichenfolge in der <strong>connect</strong>- oder <strong>command</strong>-Zeichenfolge übereinstimmt.
-</p>
+<td><p><em>Bezeichner</em></p></td>
+<td><p>Eine Zeichenfolge, die mit einer Zeichenfolge in der <strong>connect</strong>- oder <strong>command</strong>-Zeichenfolge übereinstimmt.</p>
 <p></p>
 <ul>
 <li><p>Verwenden Sie diesen Abschnitt, wenn der Abschnittsheader <strong>connect</strong> enthält und die Bezeichnerzeichenfolge in der Verbindungszeichenfolge gefunden wird.</p></li>
@@ -87,7 +86,7 @@ Durch **DataFactory** wird der Handler aufgerufen, dabei werden Clientparameter 
 
 Unter den folgenden Bedingungen wird ein bestimmter Abschnitt verwendet:
 
-  - Ein Abschnitt **Verbinden** wird verwendet, wenn der Wertteil des Clients-Schlüsselworts, verbinden "**Data Source = *** Wert*", mit einem Abschnittsbezeichner **Verbinden** *.* übereinstimmt
+  - Ein **Connect** -Abschnitt wird verwendet, wenn der Wert Teil des Schlüsselwortes Client Connect String, "**Data Source = * * * * value*", **mit einem Connect** -Abschnitts Bezeichner übereinstimmt *.*
 
   - Ein **sql** -Abschnitt wird verwendet, wenn die Clientbefehlszeichenfolge eine Zeichenfolge enthält, die mit einem **sql** -Abschnittsbezeichner übereinstimmt.
 

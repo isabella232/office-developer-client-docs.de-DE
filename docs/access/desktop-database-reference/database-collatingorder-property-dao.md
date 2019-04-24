@@ -1,5 +1,5 @@
 ---
-title: Database.CollatingOrder-Eigenschaft (DAO)
+title: Database. CollatingOrder-Eigenschaft (DAO)
 TOCTitle: CollatingOrder Property
 ms:assetid: 7f6c35bf-e5f9-8423-608e-bc072ca09141
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196459(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 21d775c0abac5d2afddd6b0930816c8d6d381ff0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295016"
 ---
-# <a name="databasecollatingorder-property-dao"></a>Database.CollatingOrder-Eigenschaft (DAO)
+# <a name="databasecollatingorder-property-dao"></a>Database. CollatingOrder-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den Zeichenfolgenvergleich oder die Sortierung angibt (gilt nur für Microsoft Access-Arbeitsbereiche). Schreibgeschützter **Long**-Wert.
 
@@ -57,7 +57,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 </tr>
 <tr class="even">
 <td><p><strong>dbSortChineseTraditional</strong></p></td>
-<td><p>Chinesisch (Traditionell)</p></td>
+<td><p>Traditionelles Chinesisch</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSortCyrillic</strong></p></td>
@@ -147,7 +147,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 </table>
 
 
-Die Einstellung der **CollatingOrder** -Eigenschaft entspricht dem Argument Locale der **CreateDatabase** -Methode, wenn die Datenbank erstellt wurde oder der **CompactDatabase** -Methode, wenn die Datenbank kürzlich komprimiert wurde.
+Die Einstellung der **CollatingOrder** -Eigenschaft entspricht dem Argument locale **** der CreateDatabase-Methode, wenn die Datenbank erstellt wurde, oder die **CompactDatabase** -Methode, wenn die Datenbank zuletzt komprimiert wurde.
 
 Überprüfen Sie die Einstellung der **CollatingOrder**-Eigenschaft eines **Database**- oder **Field**-Objekts, um die Methode des Zeichenfolgenvergleichs für die Datenbank oder das Feld zu ermitteln. Sie können die **CollatingOrder**-Eigenschaft eines neuen, noch nicht angefügten **Field**-Objekts festlegen, wenn sich die Einstellung des **Field**-Objekts und des **Database**-Objekts, in dem es enthalten ist, unterscheiden soll.
 

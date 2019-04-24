@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c056f2b0922402ea7cde7cf767969b73f912f572
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292167"
 ---
 # <a name="gotocontrol-macro-action"></a>GoToControl-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die **GeheZuSteuerelement** -Aktion verwenden, um den Fokus auf das angegebene Feld oder Steuerelement im aktuellen Datensatz des geöffneten Formulars, Datenblattes, Tabellendatenblatt oder Datenblatt Abfragen. Sie können diese Aktion verwenden, wenn ein bestimmtes Feld oder Steuerelement den Fokus haben soll. Dieses Feld oder Steuerelement kann dann für Vergleiche oder **SuchenDatensatz** -Aktionen verwendet. Sie können die Aktion auch zum Navigieren in einem Formular basierend auf bestimmten Bedingungen verwenden. Wenn der Benutzer z. B. im Steuerelement „Verheiratet“ auf einem Versicherungsformular „Nein“ angibt, kann der Fokus automatisch das Steuerelement „Name des Partners/der Partnerin“ überspringen und zum nächsten Steuerelement wechseln.
+Sie können die **GoToControl** -Aktion verwenden, um den Fokus auf das angegebene Feld oder Steuerelement im aktuellen Datensatz des geöffneten Formulars, des Formulardatenblatts, des Tabellendatenblatts oder des Abfragedatenblatts zu verschieben. Sie können diese Aktion verwenden, wenn ein bestimmtes Feld oder Steuerelement den Fokus haben soll. Dieses Feld oder Steuerelement kann dann zu Vergleichszwecken oder für **FindRecord**-Aktionen verwendet werden. Sie können die Aktion auch zum Navigieren in einem Formular basierend auf bestimmten Bedingungen verwenden. Wenn der Benutzer z. B. im Steuerelement „Verheiratet“ auf einem Versicherungsformular „Nein“ angibt, kann der Fokus automatisch das Steuerelement „Name des Partners/der Partnerin“ überspringen und zum nächsten Steuerelement wechseln.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 > [!NOTE]
-> Diese Aktion ist nicht für die Verwendung mit Datenzugriffsseiten verfügbar.
+> Diese Aktion steht nicht für die Verwendung mit Datenzugriffsseiten zur Verfügung.
 
 Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 
@@ -41,8 +41,8 @@ Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Steuerelementname</strong></p></td>
-<td><p>Der Name des Felds oder Steuerelements, das den Fokus erhalten soll. Geben Sie den Namen Feld oder Steuerelement in das Feld <strong>Steuerelementname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators ein. Dies ist ein erforderliches Argument.</p>
-<p><strong>Hinweis</strong>: Geben Sie nur den Namen des Felds oder Steuerelements in das Argument <strong>Steuerelementname</strong> nicht den vollqualifizierten Bezeichner wie Formulare! Produkte! [Produkt-ID].</p></td>
+<td><p>Der Name des Felds oder Steuerelements, das den Fokus erhalten soll. Geben Sie das Feld oder den Steuerelementnamen in das Feld <strong>Steuerelementname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Dies ist ein erforderliches Argument.</p>
+<p><strong>Hinweis</strong>: Geben Sie in das Argument <strong>Steuerelementname</strong> nur den Namen des Felds oder Steuerelements ein, nicht den vollqualifizierten Bezeichner, wie beispielsweise Formulare! Produkte! [Produkt-ID].</p></td>
 </tr>
 </tbody>
 </table>
@@ -50,18 +50,18 @@ Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können die **GeheZuSteuerelement** -Aktion um den Fokus auf ein Steuerelement in einem ausgeblendeten Formular zu verschieben.
+Sie können die **GoToControl** -Aktion nicht verwenden, um den Fokus auf ein Steuerelement in einem ausgeblendeten Formular zu verschieben.
 
 > [!TIP]
-> Die **GeheZuSteuerelement** -Aktion können Sie auf ein Unterformular setzen, das eine Art von Steuerelement ist. Die **GeheZuDatensatz** -Aktion können dann um auf einen bestimmten Datensatz im Unterformular zu verschieben. Sie können auch auf ein Steuerelement eines Unterformulars verschieben, mit die **GeheZuSteuerelement** -Aktion um auf das Unterformular, und klicken Sie dann auf das Steuerelement des Unterformulars zuerst zu verschieben.
+> Sie können die **GoToControl** -Aktion verwenden, um zu einem Unterformular zu wechseln, bei dem es sich um einen Steuerelementtyp handelt. Sie können dann die **GoToRecord** -Aktion verwenden, um zu einem bestimmten Datensatz im Unterformular zu wechseln. Sie können auch zu einem Steuerelement in einem Unterformular wechseln, indem **** Sie die GoToControl-Aktion verwenden, um zuerst zum Unterformular und dann zum Steuerelement des Unterformulars zu wechseln.
 
-Führen Sie die **GeheZuSteuerelement** -Aktion in einem Visual Basic für Applikationen (VBA) Modul mit **der GoToControl** -Methode des **DoCmd** -Objekts. Sie können auch die **SetFocus** -Methode verwenden, um den Fokus auf ein Steuerelement eines Formulars oder eines seiner Unterformulare oder an ein Feld in einer geöffneten Tabelle, Abfrage oder Formulardatenblatt.
+Verwenden Sie die GoToControl-Methode des **DoCmd** -Objekts, um die **GoToControl** -Aktion in **** einem VBA-Modul (Visual Basic für Applikationen) auszuführen. Sie können die SetFocus **** -Methode auch verwenden, um den Fokus auf ein Steuerelement in einem Formular oder einem seiner Unterformulare oder auf ein Feld in einem geöffneten Tabellen-, Abfrage-oder Formulardatenblatt zu verschieben.
 
 ## <a name="examples"></a>Beispiele
 
 **Festlegen des Werts eines Steuerelements mithilfe eines Makros**
 
-Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche auf dem Formular Lieferanten geöffnet. Es wird die Verwendung der **Echo**, **CloseWindow**, **ÖffnenFormular**, **SetzenWert**und **GeheZuSteuerelement** -Aktionen. Die **SetzenWert** -Aktion wird das Steuerelement Lieferanten-ID auf dem Formular auf den aktuellen Lieferanten im Formular Suppliers angezeigt. Klicken Sie dann die **GeheZuSteuerelement** -Aktion verschiebt den Fokus auf das Feld Kategorie-ID, beginnen Sie können Daten für das neue Produkt eingeben. Dieses Makro sollte der Schaltfläche Artikel hinzufügen im Formular Lieferanten zugeordnet werden.
+Das folgende Makro öffnet das Formular zum Hinzufügen von Produkten über eine Schaltfläche im Formular für Lieferanten. Es zeigt die Verwendung der Aktionen **Echo**, **FensterSchließen**, **ÖffnenFormular**, **SetzenWert ** und **GeheZuSteuerelement**. Mit **** der SetValue-Aktion wird das Lieferanten-ID-Steuerelement im Formular Produkte auf den aktuellen Lieferanten im Formular Lieferanten festgelegt. Die **gotoCONTROL** -Aktion verschiebt dann den Fokus auf das Feld Kategorie-ID, in dem Sie mit der Eingabe von Daten für das neue Produkt beginnen können. Dieses Makro sollte der Schaltfläche zum Hinzufügen von Produkten im Formular für Lieferanten zugeordnet werden.
 
 <table>
 <colgroup>
@@ -83,32 +83,32 @@ Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche
 <td><p>Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>FensterSchließen</strong></p></td>
-<td><p><strong>Objekttyp</strong>: <strong>FormObject Name</strong>: Produkt Liste <strong>Speichern</strong>: <strong>Nein</strong></p></td>
-<td><p>Produktliste Formular zu schließen.</p></td>
+<td><p><strong>Fenster schließen</strong></p></td>
+<td><p><strong>Objekttyp</strong>: <strong>Formularobjekt Name</strong>: Produktlisten <strong>Speicher</strong>: <strong>Nein</strong></p></td>
+<td><p>Produktlisten Formular abschließen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>ÖffnenFormular</strong></p></td>
-<td><p><strong>Formularname</strong>: Produkte <strong>Anzeigen</strong>: <strong>FormData Modus</strong>: <strong>Fenster hinzufügen Modus</strong>: <strong>Normal</strong></p></td>
+<td><p><strong>OpenForm</strong></p></td>
+<td><p><strong>Formular Name</strong>: Produkt <strong>Ansicht</strong>: <strong>FormData Modus</strong>: <strong>addwindow Mode</strong>: <strong>Normal</strong></p></td>
 <td><p>Öffnen des Produktformulars</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SetzenWert</strong></p></td>
-<td><p><strong>Artikel</strong>: [Formulare]! [Artikel]! [Lieferanten-Nr] <strong>Ausdruck</strong>: SupplierID</p></td>
-<td><p>Legen Sie das Steuerelement auf den aktuellen Lieferanten im Formular Suppliers angezeigt.</p></td>
+<td><p><strong>Element</strong>: [Formulare]! [Products]! LieferantenNr <strong>Ausdruck</strong>: Lieferanten-Nr.</p></td>
+<td><p>Legen Sie das Lieferanten-ID-Steuerelement auf den aktuellen Lieferanten im Formular Lieferanten fest.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>GoToControl</strong></p></td>
 <td><p><strong>Steuerelementname</strong>: CategoryID</p></td>
-<td><p>Wechseln Sie auf die Kategorie-ID-Steuerelement.</p></td>
+<td><p>Wechseln Sie zum Steuerelement Category ID.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-** Überprüfen der Gültigkeit von Daten mithilfe eines Makros**
+**Validate data by using a macro**
 
-Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprüft, die im Lieferantenformular eingegeben werden. Es zeigt die Verwendung der Aktionen **StopMacro**, **MessageBox**, **CancelEvent** und **GoToControl**. Mit einem Bedingungsausdruck werden das Land, die Region und die Postleitzahl überprüft, die im Formular in einem Datensatz eingegeben werden. Wenn die Postleitzahl nicht das richtige Format für das Land/Region ist, wird das Makro ein Meldungsfeld angezeigt und Speichern des Datensatzes wird abgebrochen. Das Makro gibt dann Sie auf das Steuerelement Postleitzahl, in dem Sie den Fehler korrigieren. Dieses Makro sollte mit der **BeforeUpdate** -Eigenschaft des Lieferantenformulars verbunden sein.
+Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprüft, die im Lieferantenformular eingegeben werden. Es zeigt die Verwendung der Aktionen **StopMacro**, **MessageBox**, **CancelEvent** und **GoToControl**. A conditional expression checks the country/region and postal code entered in a record on the form. If the postal code is not in the right format for the country/region, the macro displays a message box and cancels saving the record. Das Makro gibt Sie dann an das Postleitzahl-Steuerelement zurück, in dem Sie den Fehler korrigieren können. Dieses Makro sollte mit der  **BeforeUpdate**-Eigenschaft des Lieferantenformulars verbunden sein.
 
 <table>
 <colgroup>
@@ -127,16 +127,16 @@ Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprü
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>IsNull([CountryRegion])</p></td>
+<td><p>IsNull ([CountryRegion])</p></td>
 <td><p><strong>StopMacro</strong></p></td>
 <td><p></p></td>
-<td><p>Wenn Land/Region <strong>Null</strong>ist, kann die Postleitzahl nicht überprüft werden.</p></td>
+<td><p>Wenn CountryRegion ist <strong></strong>, kann die Postleitzahl nicht validiert werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Land/Region] In (&quot;Frankreich&quot;,&quot;Italien&quot;,&quot;Spanien&quot;) und Len ([Postleitzahl]) &lt; &gt; 5</p></td>
+<td><p>CountryRegion In (&quot;Frankreich&quot;,&quot;Italien&quot;,&quot;Spanien&quot;) und Len ([Postleitzahl] &lt; &gt; ) 5</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message</strong>: Die Postleitzahl muss 5 Zeichen lang sein. <strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl fehlerhaft</p></td>
-<td><p>Wenn die Postleitzahl nicht 5 Zeichen lang ist, wird eine Meldung angezeigt.</p></td>
+<td><p><strong>Message</strong>: Die Postleitzahl muss 5 Zeichen lang sein. <strong>Beep</strong>: <strong>jatyp</strong>: <strong>informationtitel</strong>: PLZ-Fehler</p></td>
+<td><p>Wenn die Postleitzahl nicht 5 Zeichen ist, wird eine Meldung angezeigt.</p></td>
 </tr>
 <tr class="odd">
 <td><p>...</p></td>
@@ -151,10 +151,10 @@ Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprü
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>[Land/Region] In (&quot;Australien&quot;,&quot;Singapur&quot;) und Len ([Postleitzahl]) &lt; &gt; 4</p></td>
+<td><p>CountryRegion In (&quot;Australien&quot;,&quot;Singapur&quot;) und Len ([Postleitzahl] &lt; &gt; ) 4</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p>Message: Die Postleitzahl muss 4 Zeichen lang sein. <strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl fehlerhaft</p></td>
-<td><p>Wenn die Postleitzahl nicht 4 Zeichen lang ist, wird eine Meldung angezeigt.</p></td>
+<td><p>Meldung: Die Postleitzahl muss 4 Zeichen lang sein. <strong>Beep</strong>: <strong>jatyp</strong>: <strong>informationtitel</strong>: PLZ-Fehler</p></td>
+<td><p>Wenn die Postleitzahl nicht 4 Zeichen ist, zeigen Sie eine Nachricht an.</p></td>
 </tr>
 <tr class="even">
 <td><p>...</p></td>
@@ -169,10 +169,10 @@ Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprü
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>([Land/Region] = &quot;Kanada&quot;) Und ([Postleitzahl] nicht wie&quot;[A-Z] [0-9] [A-Z] [0-9] [A-Z] [0-9]&quot;)</p></td>
+<td><p>([CountryRegion] = &quot;Kanada&quot;) Und ([Postleitzahl] nicht&quot;wie [A-z] [0-9] [A-z] [0-9] [A-z] [0-9&quot;])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Meldung</strong>: Die Postleitzahl ist ungültig. Beispiel für kanadische Postleitzahl: H1J 1 c 3 <strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: PLZ Codefehler</p></td>
-<td><p>Wenn die Postleitzahl nicht korrekt für Kanada ist, wird eine Meldung angezeigt. (Beispiel für eine kanadische Postleitzahl: H1J 1C3).</p></td>
+<td><p><strong>Meldung</strong>: Die Postleitzahl ist ungültig. Beispiel für kanadischen Code: H1J 1C3 <strong>Beep</strong>: <strong>jatyp</strong>: <strong>informationtitel</strong>: PLZ Error</p></td>
+<td><p>Wenn die Postleitzahl für Kanada nicht korrekt ist, zeigen Sie eine Nachricht an. (Beispiel für eine kanadische Postleitzahl: H1J 1C3).</p></td>
 </tr>
 <tr class="odd">
 <td><p>...</p></td>

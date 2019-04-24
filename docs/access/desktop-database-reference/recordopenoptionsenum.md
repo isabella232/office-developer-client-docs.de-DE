@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: caaf755ebd63f1805d0c77ef79a0f5863a85050e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300686"
 ---
 # <a name="recordopenoptionsenum"></a>RecordOpenOptionsEnum
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt Optionen zum Öffnen eines [Datensatzes](record-object-ado.md) an. Diese Werte können mit OR kombiniert werden.
 
@@ -37,13 +37,13 @@ Gibt Optionen zum Öffnen eines [Datensatzes](record-object-ado.md) an. Diese We
 <tbody>
 <tr class="odd">
 <td><p><strong>adDelayFetchFields</strong></p></td>
-<td><p>0 x 8000</p></td>
-<td><p>Der Anbieter zeigt, dass die Felder, die dem <strong>Eintrag</strong> zugeordnete zunächst nicht abgerufen werden müssen, aber beim ersten Versuch Zugriff auf das Feld abgerufen werden können. Das Standardverhalten, durch die Abwesenheit dieses Flags ist die <strong>Datensatz</strong> -Objektfelder abgerufen.</p></td>
+<td><p>0X8000</p></td>
+<td><p>Gibt an, dass der Anbieter die mit dem <strong>Datensatz</strong> verknüpften Felder nicht anfänglich abgerufen werden muss, aber beim ersten Zugriff auf das Feld abgerufen werden kann. Das Standardverhalten, das durch das Fehlen dieses Flags angegeben wird, besteht darin, alle <strong>Record</strong> -Objektfelder abzurufen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adDelayFetchStream</strong></p></td>
 <td><p>0x4000</p></td>
-<td><p>Der Anbieter zeigt, dass der dem <strong>Eintrag</strong> zugeordnete Standarddatenstrom zunächst nicht abgerufen werden muss. Das Standardverhalten, durch die Abwesenheit dieses Flags ist abzurufenden den Standarddatenstrom das <strong>Record</strong> -Objekt zugeordnet.</p></td>
+<td><p>Gibt dem Anbieter an, dass der dem <strong>Datensatz</strong> zugeordnete Standarddatenstrom nicht anfänglich abgerufen werden muss. Das Standardverhalten, das durch das Fehlen dieses Flags angegeben wird, besteht darin, den Standarddatenstrom abzurufen, der dem <strong>Record</strong> -Objekt zugeordnet ist.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adOpenAsync</strong></p></td>
@@ -52,7 +52,7 @@ Gibt Optionen zum Öffnen eines [Datensatzes](record-object-ado.md) an. Diese We
 </tr>
 <tr class="even">
 <td><p><strong>adOpenExecuteCommand</strong></p></td>
-<td><p>0 x 10000</p></td>
+<td><p>0x10000</p></td>
 <td><p>Gibt an, dass die Quellzeichenfolge Befehlstext enthält, der ausgeführt werden sollte. Dieser Wert entspricht der <strong>adCmdText</strong>-Option von <strong>Recordset.Open</strong>.</p></td>
 </tr>
 <tr class="odd">
@@ -62,14 +62,14 @@ Gibt Optionen zum Öffnen eines [Datensatzes](record-object-ado.md) an. Diese We
 </tr>
 <tr class="even">
 <td><p><strong>adOpenOutput</strong></p></td>
-<td><p>0 x 800000</p></td>
-<td><p>Gibt an, dass, wenn die Datenquelle an einen Knoten verweist, der ein ausführbares Skript enthält (z. B. ein. ASP-Seite), und klicken Sie dann die geöffnete <strong>Datensatz</strong> die Ergebnisse des ausgeführten Skripts enthalten soll. Dieser Wert ist nur gültig, wenn nicht der Auflistung Datensätze.</p></td>
+<td><p>0x800000</p></td>
+<td><p>Wenn die Quelle auf einen Knoten verweist, der ein ausführbares Skript (z. B. eine ASP-Seite) enthält, dann enthält der geöffnete Datensatz die Ergebnisse des ausgeführten Skripts. Dieser Wert ist nur gültig mit Datensätzen, die nicht der Auflistung angehören.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e8142d4fc4fc0036f80693f0bff779d9f3f2a62e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294099"
 ---
 # <a name="delete-method-ado-recordset"></a>Delete-Methode (ADO-Recordset)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Löscht den aktuellen Datensatz oder eine Gruppe von Datensätzen.
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset-Objekt*. *AffectRecords* löschen
+*Recordset*. *AffectRecords* löschen
 
 ## <a name="parameters"></a>Parameter
 
@@ -33,7 +33,7 @@ Löscht den aktuellen Datensatz oder eine Gruppe von Datensätzen.
 > [!NOTE]
 > [!HINWEIS] **adAffectAll** und **adAffectAllChapters** sind keine gültigen Argumente für **Delete**.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mithilfe der **Delete** -Methode kann der aktuelle Datensatz oder eine Gruppe von Datensätzen in einem [Recordset](recordset-object-ado.md)-Objekt zum Löschen markiert werden. Lässt das **Recordset** -Objekt das Löschen von Datensätzen nicht zu, tritt ein Fehler auf. Wenn Sie sich im Modus der unmittelbaren Aktualisierung befinden, werden die Löschvorgänge unmittelbar in der Datenbank angezeigt. Kann ein Datensatz nicht gelöscht werden (z. B. aufgrund von Verletzungen der Datenbankintegrität), verbleibt der Datensatz nach dem Aufrufen von **Update** im Bearbeitungsmodus. Folglich müssen Sie die Aktualisierung mithilfe von [CancelUpdate](cancelupdate-method-ado.md) abbrechen, bevor Sie den aktuellen Datensatz verlassen können (z. B. mithilfe von [Close](close-method-ado.md), [Move](move-method-ado.md) oder [NextRecordset](nextrecordset-method-ado.md)).
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1fa0ca559c63e1786f55607d94b45f3cc01503dc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294022"
 ---
 # <a name="deleterecord-and-moverecord-methods-example-vb"></a>DeleteRecord- und MoveRecord-Methoden (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird veranschaulicht, wie kopieren, verschieben, bearbeiten und löschen Sie den Inhalt einer Textdatei in einem Webordner veröffentlicht. Andere verwendete Eigenschaften und Methoden umfassen [GetChildren](getchildren-method-ado.md), [ParentURL](parenturl-property-ado.md), [Source](source-property-ado-record.md) und [Flush](flush-method-ado.md).
+In diesem Beispiel wird veranschaulicht, wie der Inhalt einer Textdatei, die in einem Webordner veröffentlicht wird, kopiert, verschoben, bearbeitet und gelöscht wird. Andere verwendete Eigenschaften und Methoden umfassen [GetChildren](getchildren-method-ado.md), [ParentURL](parenturl-property-ado.md), [Source](source-property-ado-record.md) und [Flush](flush-method-ado.md).
 
 ```vb 
  

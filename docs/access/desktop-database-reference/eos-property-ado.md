@@ -1,5 +1,5 @@
 ---
-title: EOS-Eigenschaft (ADO - Access-desktop-Datenbank (engl.)))
+title: EOS-Eigenschaft (ADO-Access-Desktop-Daten Bankreferenz))
 TOCTitle: EOS property (ADO)
 ms:assetid: 97cd23ef-cca8-4dcc-2641-082a0e1b853c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249676(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a35503fb0ad320e82ed385c7014b2a18de586064
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293525"
 ---
 # <a name="eos-property-ado"></a>EOS-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt an, ob sich die aktuelle Position am Ende des Datenstroms befindet.
+Es wird angegeben, ob sich die aktuelle Position am Ende des Datenstroms befindet.
 
 ## <a name="return-values"></a>Rückgabewerte
 

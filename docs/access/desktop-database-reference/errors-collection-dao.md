@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cf8e891936d4f8bd03535fa199026bc4ad8ff9ba
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293413"
 ---
 # <a name="errors-collection-dao"></a>Errors-Auflistung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine **Errors**-Auflistung enthält alle gespeicherten **Error**-Objekte, die sich jeweils auf eine einzelne DAO-Operation beziehen.
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b6da2dc9ff721adbb4bc0e533a02085adb534b0b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292230"
 ---
 # <a name="getrows-method-example-jscript"></a>GetRows-Methode (Beispiel) (JScript)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die [GetRows](getrows-method-ado.md) -Methode alle Zeilen der Tabelle *Custiomers* aus einem [Recordset-Objekt](recordset-object-ado.md) abgerufen und um ein Array mit den resultierenden Daten aufzufüllen. Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einen anderen Texteditor ein, und speichern Sie die Datei unter dem Namen **GetRowsJS.asp**.
+In diesem Beispiel wird die [GetRows](getrows-method-ado.md)-Methode verwendet, um alle Zeilen der *Custiomers*-Table aus einem [Recordset](recordset-object-ado.md)-Objekt abzurufen, und um ein Array mit den resultierenden Daten aufzufüllen. Die **GetRows**-Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Wert abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einen anderen Texteditor ein, und speichern Sie die Datei unter dem Namen **GetRowsJS.asp**.
 
 ```javascript 
  

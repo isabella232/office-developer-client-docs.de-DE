@@ -1,5 +1,5 @@
 ---
-title: DatabaseTypeEnum (Aufzählung) (DAO)
+title: DatabaseTypeEnum-Aufzählung (DAO)
 TOCTitle: DatabaseTypeEnum enumeration
 ms:assetid: a9bfc7cd-63d2-a012-bd3b-4cec072706c2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821447(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b58a36ca581b7c932aeff0e36391827a27d865b7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294561"
 ---
-# <a name="databasetypeenum-enumeration-dao"></a>DatabaseTypeEnum (Aufzählung) (DAO)
+# <a name="databasetypeenum-enumeration-dao"></a>DatabaseTypeEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Version des Datenformats für eine komprimierte Datenbank an.
 
@@ -41,7 +41,7 @@ Gibt die Version des Datenformats für eine komprimierte Datenbank an.
 <td><p>Entschlüsselt die Datenbank beim Komprimieren</p></td>
 </tr>
 <tr class="even">
-<td><p>dbEncrypt</p></td>
+<td><p>Dbencrypt einschließen</p></td>
 <td><p>2</p></td>
 <td><p>Verschlüsselt die Datenbank</p></td>
 </tr>

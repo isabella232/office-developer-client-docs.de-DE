@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e2b66f6001ed0c8446cb3dac0da9fbd6b43a3f90
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314672"
 ---
 # <a name="section-ii-remote-data-service"></a>Abschnitt II: Remote Data Service (RDS)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Dieser Abschnitt enthält die folgenden Kapitel:
 
 - [Kapitel 11: RDS-Grundlagen](chapter-11-rds-fundamentals.md)
 - [Kapitel 12: RDS-Lernprogramm](chapter-12-rds-tutorial.md)
-- [Kapitel 13: RDS-Verwendung und-Sicherheit](chapter-13-rds-usage-and-security.md)
+- [Kapitel 13: RDS-Auslastung und -Sicherheit](chapter-13-rds-usage-and-security.md)
 

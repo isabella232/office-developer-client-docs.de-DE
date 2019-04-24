@@ -1,5 +1,5 @@
 ---
-title: Typen von Sperren (Access PC-Datenbank-Referenz)
+title: Sperrtypen (Access-Desktop-Daten Bankreferenz)
 TOCTitle: Types of Locks
 ms:assetid: 8276edca-f603-2487-a2ca-73e618c0f11e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249565(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 47b212be1922f783889f1e5be436a616909dc5c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314161"
 ---
 # <a name="types-of-locks"></a>Typen von Sperren
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 
@@ -29,7 +29,7 @@ Viele Anwendungen rufen eine Reihe von Zeilen gleichzeitig ab und müssen dann k
 
 ## <a name="adlockoptimistic"></a>adLockOptimistic
 
-Gibt an, dass der Anbieter optimistische Sperren verwendet. Datensätze werden also nur gesperrt, wenn Sie die **Update** -Methode aufrufen. Es besteht deshalb die Möglichkeit, dass Daten zwischen Ihrer Bearbeitung des Datensatzes und dem Aufrufen von **Update** von einem anderen Benutzer geändert werden. Dadurch entstehen Konflikte. Verwenden Sie diesen Sperrtyp in Fällen, in denen die Chance von Konflikten niedrig ist oder in denen Konflikte auf einfache Weise gelöst werden können.
+Gibt an, dass der Anbieter optimistische Sperren verwendet. Datensätze werden also nur gesperrt, wenn Sie die **Update**-Methode aufrufen. Es besteht deshalb die Möglichkeit, dass Daten zwischen Ihrer Bearbeitung des Datensatzes und dem Aufrufen von **Update** von einem anderen Benutzer geändert werden. Dadurch entstehen Konflikte. Verwenden Sie diesen Sperrtyp in Fällen, in denen die Chance von Konflikten niedrig ist oder in denen Konflikte auf einfache Weise gelöst werden können.
 
 ## <a name="adlockpessimistic"></a>adLockPessimistic
 

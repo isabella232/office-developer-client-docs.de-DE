@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8ae259589cc8d4945068901c59105425599edc64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295135"
 ---
 # <a name="customization-file-sql-section"></a>Anpassungsdatei – SQL-Abschnitt
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Der **sql** -Abschnitt kann eine neue SQL-Zeichenfolge enthalten, durch die die Clientbefehlszeichenfolge ersetzt wird. Wenn im Abschnitt keine SQL-Zeichenfolge vorhanden ist, wird der Abschnitt ignoriert.
 
 Die neue SQL-Zeichenfolge kann *parametrisiert* sein. Das heißt, die Parameter in der SQL-Zeichenfolge im **sql**-Abschnitt (die durch das Zeichen "?" angegeben werden) können durch entsprechende Argumente in einem *Bezeichner* in der Clientbefehlszeichenfolge (die durch eine durch Trennzeichen getrennte Liste in Klammern angegeben wird) ersetzt werden. Das Verhalten des Bezeichners und der Argumentliste entspricht dem eines Funktionsaufrufs.
 
-Nehmen wir beispielsweise an die Clientbefehlszeichenfolge ist "CustomerByID(4)", die SQL-Abschnittsheader lautet \[SQL CustomerByID\] , und die neue Zeichenfolge der SQL-Abschnitt ist "Wählen Sie \* FROM Kunden WHERE CustomerID = ?". Den Ereignishandler zu generieren, die SQL-Abschnittsheader lautet \[SQL CustomerByID\] , und die neue Zeichenfolge der SQL-Abschnitt ist "Wählen Sie \* FROM Kunden WHERE CustomerID = ?". Der Ereignishandler generiert "Wählen Sie \* FROM Kunden WHERE CustomerID = 4" generiert und zum Abfragen der Datenquelle verwendet.
+Nehmen wir beispielsweise an, dass die Clientbefehlszeichenfolge "CustomerByID (4)" lautet, der SQL \[-Abschnitts\] Header SQL CUSTOMERBYID und die neue SQL-Abschnitts Zeichenfolge \* "SELECT FROM Customers WHERE CustomerID = ?" ist. Der Handler generiert, der SQL-Abschnittsheader ist \[SQL CustomerByID\] , und die neue SQL-Abschnitts Zeichenfolge lautet " \* SELECT FROM Customers WHERE CustomerID = ?". Der Handler generiert "SELECT \* from Customers WHERE CustomerID = 4" und verwendet diese Zeichenfolge zum Abfragen der Datenquelle.
 
 Wenn die neue SQL-Anweisung die leere Zeichenfolge ("") ist, wird der Abschnitt ignoriert.
 
@@ -39,7 +39,7 @@ SQL = " "
 
 Ein Eintrag für eine SQL-Zeichenfolge hat folgendes Format:
 
-**SQL = * SqlString***
+**SQL = * sqlString***
 
 <table>
 <colgroup>

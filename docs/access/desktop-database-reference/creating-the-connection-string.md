@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f43207edec0c0acb58c66318e5dc7668a28ea595
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295327"
 ---
 # <a name="creating-the-connection-string"></a>Erstellen der Verbindungszeichenfolge
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ADO unterstützt direkt fünf Argumente in einer Verbindungszeichenfolge. Andere Argumente werden ohne Verarbeitung durch ADO an den Anbieter übergeben, der im Argument *Provider* angegeben ist.
 
@@ -37,7 +37,7 @@ ADO unterstützt direkt fünf Argumente in einer Verbindungszeichenfolge. Andere
 <td><p>Gibt den Namen eines Anbieters an, der für die Verbindung verwendet werden soll.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Dateiname</em></p></td>
+<td><p><em>File Name</em></p></td>
 <td><p>Gibt den Namen einer anbieterspezifischen Datei an (z. B. ein gespeichertes Datenquellenobjekt), die voreingestellte Verbindungsinformationen enthält.</p></td>
 </tr>
 <tr class="odd">
@@ -50,7 +50,7 @@ ADO unterstützt direkt fünf Argumente in einer Verbindungszeichenfolge. Andere
 </tr>
 <tr class="odd">
 <td><p><em>Remote Server</em></p></td>
-<td><p>Gibt den Pfadnamen des Servers an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll (nur Remote Data Service).</p></td>
+<td><p>Gibt den Pfadnamen des Servers an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll. (Nur Remote Datendienst.)</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +58,7 @@ ADO unterstützt direkt fünf Argumente in einer Verbindungszeichenfolge. Andere
 
 
 > [!NOTE]
-> In den folgenden Beispielen und in der gesamten das ADO-Programmierhandbuch wird die Benutzer-Id "MyId" und das Kennwort "123abc" zum Authentifizieren am Server verwendet. Sie sollten diese Werte durch gültige Anmeldeinformationen für Ihren Server ersetzen. Ersetzen Sie außerdem "MySqlServer" durch den Namen Ihres Servers.
+> In den folgenden Beispielen und im ADO-Programmierhandbuch wird die Benutzer-ID "MyId" mit dem Kennwort "123aBc" zur Authentifizierung beim Server verwendet. Sie sollten diese Werte durch gültige Anmeldeinformationen für Ihren Server ersetzen. Ersetzen Sie außerdem "MySqlServer" durch den Namen Ihres Servers.
 
 Für die HelloData-Anwendung in Kapitel 1 wurde die folgende Verbindungszeichenfolge verwendet:
 
@@ -68,7 +68,7 @@ m_sConnStr = "Provider='SQLOLEDB';Data Source='MySqlServer';" & _
  "Initial Catalog='Northwind';Integrated Security='SSPI';" 
 ```
 
-In dieser Verbindungszeichenfolge wurde nur der ADO-Parameter "Provider=SQLOLEDB" bereitgestellt, der für den Microsoft OLE DB-Anbieter für SQL Server steht. Weitere gültige Parameter, die in der Verbindungszeichenfolge übergeben werden können, können mithilfe der Dokumentation des jeweiligen Anbieters bestimmt werden. Gemäß den OLE DB-Anbieter für SQL Server-Dokumentation können Sie für den Parameter *Initial Catalog* "Server" für den Parameter *Datenquelle* und "Database" ersetzen. Die folgende Verbindungszeichenfolge würde demnach die gleichen Ergebnisse wie die erste Verbindungszeichenfolge liefern:
+In dieser Verbindungszeichenfolge wurde nur der ADO-Parameter "Provider=SQLOLEDB" bereitgestellt, der für den Microsoft OLE DB-Anbieter für SQL Server steht. Weitere gültige Parameter, die in der Verbindungszeichenfolge übergeben werden können, können mithilfe der Dokumentation des jeweiligen Anbieters bestimmt werden. Gemäß der Dokumentation zum OLE DB-Anbieter für SQL Server können Sie den *Data Source*-Parameter durch "Server" und den *Initial Catalog*-Parameter durch "Database" ersetzen. Die folgende Verbindungszeichenfolge würde demnach die gleichen Ergebnisse wie die erste Verbindungszeichenfolge liefern:
 
 ```vb 
  

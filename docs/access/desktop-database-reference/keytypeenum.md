@@ -1,5 +1,5 @@
 ---
-title: Diesen zurück (Access PC-Datenbank-Referenz)
+title: KeyTypeEnum (Access Desktop Database Reference)
 TOCTitle: KeyTypeEnum
 ms:assetid: 333fe365-ff74-9a12-63a7-f3e3f5eff7f4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249103(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 995c04a154f68c5889e089cea7575bd522b0ea5d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290243"
 ---
 # <a name="keytypeenum"></a>KeyTypeEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Typ des [Schlüssel](key-object-adox.md)-Objekts an: primär, fremd oder eindeutig.
 

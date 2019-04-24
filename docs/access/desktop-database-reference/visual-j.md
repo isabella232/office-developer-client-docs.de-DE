@@ -1,5 +1,5 @@
 ---
-title: Visual J++ (Access PC-Datenbank-Referenz)
+title: Visual J++ (Access Desktop Database Reference)
 TOCTitle: Visual J++
 ms:assetid: 5c05db85-cdf2-9a73-fbc5-3dbfa6752376
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249320(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: da13ae0f10e2338b961f2f12686bd378580a69d7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311333"
 ---
 # <a name="visual-j"></a>Visual J++
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Dieses kurze Microsoft Visual J++-Beispiel zeigt, wie Sie einem bestimmten Ereignis Ihre eigene Funktion zuordnen können.
 
@@ -53,7 +53,7 @@ public class EventExampleVJ
 // EndEventExampleVJ 
 ```
 
-Zunächst wird die Klasse-Methode *OnConnectionComplete* erstellen ein neues **ConnectionEventHandler** -Objekt, und weisen die *OnConnectComplete* -Funktion, um das Objekt dem **ConnectionComplete** -Ereignis zugeordnet.
+Zunächst wird die *onConnectionComplete*-Klassenmethode dem **ConnectionComplete**-Ereignis zugeordnet, indem ein neues **ConnectionEventHandler**-Objekt erstellt und die *onConnectComplete*-Funktion diesem Objekt zugewiesen wird.
 
-Die *main* -Funktion wird dann ein **Connection** -Objekt erstellt und ermöglicht die Ereignisbehandlung durch Aufrufen der **AddOnConnectComplete** -Methode und durch Übergeben der Adresse der *Handler* -Funktion.
+Die *main*-Funktion erstellt dann ein **Connection**-Objekt und ermöglicht die Ereignisbehandlung durch Aufrufen der **addOnConnectComplete**-Methode und durch Übergeben der Adresse der *handler*-Funktion.
 

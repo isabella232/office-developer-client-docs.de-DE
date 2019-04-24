@@ -1,5 +1,5 @@
 ---
-title: Index-Member (DAO)
+title: Index Elemente (DAO)
 TOCTitle: Index Members
 ms:assetid: e261c5fa-ca7d-0d63-1c29-48e9231b39d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835712(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 895f29a5dd3e7ed267b96d6a46dc2c8710b4998e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291796"
 ---
-# <a name="index-members-dao"></a>Index-Member (DAO)
+# <a name="index-members-dao"></a>Index Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Index-Objekte geben die Reihenfolge an, in der auf Datensätze aus Datenbanktabellen zugegriffen wird, und sie geben an, ob doppelte Datensätze akzeptiert werden. Dadurch stellen sie einen effizienten Zugriff auf Daten sicher. Bei externen Datenbanken beschreiben Index-Objekte die für externe Tabellen eingerichteten Indizes (gilt nur für Microsoft Access-Arbeitsbereiche).
 
@@ -37,7 +37,7 @@ Index-Objekte geben die Reihenfolge an, in der auf Datensätze aus Datenbanktabe
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="index-createfield-method-dao.md">CreateField</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="index-createproperty-method-dao.md">CreateProperty</a></strong></p></td>
@@ -70,12 +70,12 @@ Index-Objekte geben die Reihenfolge an, in der auf Datensätze aus Datenbanktabe
 <td><p>Gibt einen Wert zurück, der die Anzahl von eindeutigen, in der verknüpften Tabelle eingeschlossen Werten für das <strong><a href="index-object-dao.md">Index</a></strong> -Objekt angibt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="index-fields-property-dao.md">Felder</a></strong></p></td>
+<td><p><strong><a href="index-fields-property-dao.md">Fields</a></strong></p></td>
 <td><p>Gibt eine <strong>Fields</strong>-Auflistung zurück, die alle gespeicherten <strong>Field</strong>-Objekte für das angegebene Objekt enthält. Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="index-foreign-property-dao.md">Foreign</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob ein <strong><a href="index-object-dao.md">Index</a></strong> -Objekt einen Fremdschlüssel in einer Tabelle angibt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob ein <strong><a href="index-object-dao.md">Index</a></strong> -Objekt einen Fremdschlüssel in einer Tabelle darstellt (nur Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="index-ignorenulls-property-dao.md">IgnoreNulls</a></strong></p></td>
@@ -95,10 +95,10 @@ Index-Objekte geben die Reihenfolge an, in der auf Datensätze aus Datenbanktabe
 </tr>
 <tr class="odd">
 <td><p><strong><a href="index-required-property-dao.md">Erforderlich</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob ein <strong><a href="field-object-dao.md">Field</a></strong> -Objekt einen Nicht-Null-Wert erfordert, oder legt den betreffenden Wert fest.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob für ein <strong><a href="field-object-dao.md">Field</a></strong> -Objekt ein Nicht-Null-Wert erforderlich ist, oder legt den betreffenden Wert fest.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="index-unique-property-dao.md">Unique</a></strong></p></td>
+<td><p><strong><a href="index-unique-property-dao.md">Eigen</a></strong></p></td>
 <td><p>Legt einen Wert fest, der angibt, ob ein <strong><a href="index-object-dao.md">Index</a></strong> -Objekt einen eindeutigen Index (Schlüssel) für eine Tabelle darstellt, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 </tbody>

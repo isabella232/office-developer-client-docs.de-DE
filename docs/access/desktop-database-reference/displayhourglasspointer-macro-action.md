@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a5635b2b97066394b8596dbcdb50c84abf429719
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293833"
 ---
 # <a name="displayhourglasspointer-macro-action"></a>DisplayHourglassPointer-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **AnzeigenSanduhrzeiger** -Aktion können Sie den Mauszeiger so ändern, dass er in Form einer Sanduhr (oder eines anderen Symbols, das Sie ausgewählt haben) angezeigt wird, während ein Makro ausgeführt wird. Diese Aktion bietet einen visuellen Hinweis darauf, dass ein Makro ausgeführt wird. Dies ist besonders nützlich, wenn die Ausführung einer Makroaktion oder des Makros selbst sehr viel Zeit in Anspruch nimmt.
 
 ## <a name="setting"></a>Einstellung
 
-Die **AnzeigenSanduhrzeiger** -Aktion hat das folgende Argument.
+Die **AnzeigenSanduhrzeiger**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -43,15 +43,15 @@ Die **AnzeigenSanduhrzeiger** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Sanduhr</strong></p></td>
-<td><p>Klicken Sie im Feld Sanduhr des Abschnitts Aktionsargumente des Bereichs Makro-Generator auf Ja (Anzeige des Symbols) oder auf Nein (Anzeige des normalen Mauszeigers). Die Standardeinstellung ist Ja.</p></td>
+<td><p>Klicken Sie im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator auf <strong>Ja</strong> (Symbol) oder <strong>Nein</strong> (zeigen Sie den normalen Mauszeiger) im Feld <strong>Sanduhr on</strong> im Bereich Action Arguments. Die Standardeinstellung ist <strong>Ja</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie verwenden diese Aktion häufig, wenn Sie das Echo mithilfe der **Echo** -Aktion deaktiviert haben. Wenn Echo deaktiviert ist, unterbricht Access Bildschirm Updates, bis das Makro beendet ist.
+Sie verwenden diese Aktion häufig, wenn Sie das Echo mithilfe der **Echo** -Aktion deaktiviert haben. Wenn Echo deaktiviert ist, werden die Bildschirmaktualisierungen von Access angehalten, bis das Makro abgeschlossen ist.
 
 Access setzt das Argument **Sanduhr** automatisch auf **Nein** zurück, wenn die Makroausführung beendet ist.
 

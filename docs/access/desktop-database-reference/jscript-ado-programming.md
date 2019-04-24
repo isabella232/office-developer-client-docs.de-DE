@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 88a84f6fa3604286ca27651cefc999c96ff41d0e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290891"
 ---
 # <a name="jscript-ado-programming"></a>JScript ADO-Programmierung
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 ## <a name="creating-an-ado-project"></a>Erstellen eines ADO-Projekts
@@ -26,11 +26,11 @@ Da von Microsoft JScript keine Typbibliotheken unterstützt werden, müssen Sie 
 
 In ADO werden jedoch zwei Includedateien bereitgestellt, die die folgenden Definitionen enthalten, die mit JScript verwendet werden können:
 
-- Verwenden, Sie für serverseitiges Skripting Datei Adojavas.inc ist das Laufwerk c: installiert\\Program Files\\gemeinsame Dateien\\System\\Ado\\ Ordner standardmäßig.
+- Für die serverseitige Skripterstellung verwenden Sie Datei adojavas. Inc, die standardmäßig im Ordner\\c:\\Program Files\\Common\\Files\\ System ADO installiert ist.
 
-- Verwenden, Sie für clientseitiges Skripting Datei Adcjavas.inc ist das Laufwerk c: installiert\\Program Files\\gemeinsame Dateien\\System\\Msdac\\ Ordner standardmäßig.
+- Für die clientseitige Skripterstellung verwenden Sie Adcjavas. Inc, die standardmäßig im Ordner\\c:\\Program Files\\Common\\Files\\ System msdac installiert ist.
 
-Sie können entweder kopieren und Konstantendefinitionen aus diesen Dateien in ASP-Seiten einfügen, oder, wenn Sie serverseitiges Skripting, kopieren Sie die Datei Adojavas.inc-Datei in einen Ordner auf Ihrer Website, und es von der ASP verweist:
+Sie können entweder kopieren und Einfügen von Konstanten Definitionen aus diesen Dateien in Ihre ASP-Seiten oder, wenn Sie serverseitige Skripterstellung durchführen, kopieren Sie die Datei Datei adojavas. Inc in einen Ordner auf Ihrer Website, und verweisen Sie auf Ihre ASP-Seite wie folgt:
 
 ```javascript  
  
@@ -39,7 +39,7 @@ Sie können entweder kopieren und Konstantendefinitionen aus diesen Dateien in A
 
 ## <a name="creating-ado-objects-in-jscript"></a>Erstellen von ADO-Objekten in JScript
 
-Sie müssen stattdessen den **CreateObject** -Funktionsaufruf verwenden:
+Sie müssen stattdessen den **CreateObject**-Funktionsaufruf verwenden:
 
 ```javascript  
  
@@ -49,7 +49,7 @@ Rs1 = Server.CreateObject("ADODB.Recordset");
 
 ## <a name="jscript-example"></a>JScript (Beispiel)
 
-Der folgende Code ist ein allgemeines Beispiel für die serverseitige JScript-Programmierung in einer ASP-Datei (Active Server Page), durch die ein **Recordset** -Objekt geöffnet wird:
+Der folgende Code ist ein allgemeines Beispiel für die serverseitige JScript-Programmierung in einer ASP-Datei (Active Server Page), durch die ein **Recordset**-Objekt geöffnet wird:
 
 ```javascript 
  

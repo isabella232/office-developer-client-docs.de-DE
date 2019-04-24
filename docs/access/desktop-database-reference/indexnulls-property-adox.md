@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1419abb5dc66a59594284cf319487ef980bf62f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291476"
 ---
 # <a name="indexnulls-property-adox"></a>IndexNulls-Eigenschaft (ADOX)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, ob Datensätze mit nullwertigen Indexfeldern über Indexeinträge verfügen.
 
@@ -25,7 +25,7 @@ Gibt an, ob Datensätze mit nullwertigen Indexfeldern über Indexeinträge verf�
 
 Legt einen [AllowNullsEnum](allownullsenum.md)-Wert fest und gibt diesen zurück. Der Standardwert lautet **adIndexNullsDisallow**.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist schreibgeschützt für [Index](index-object-adox.md)-Objekte, die bereits an eine Auflistung angefügt wurden.
 

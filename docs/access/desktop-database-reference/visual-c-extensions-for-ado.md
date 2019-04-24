@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fc69d3244cf6faf3aa91fe954e4b39323cf13abf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302753"
 ---
 # <a name="visual-c-extensions-for-ado"></a>Visual C++-Erweiterungen für ADO
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die bevorzugte Methode zum Programmieren von ADO mit Visual C++ wird mithilfe der ** \#importieren** Richtlinie, wie in [Microsoft Visual C++-ADO-Programmierung](visual-c-ado-programming.md)erläutert. Jedoch frühere Versionen von ADO mit einer alternativen Methode der-Programmierung mit Visual C++ geliefert: die Visual C++-Erweiterungen. Dieser Abschnitt beschreibt dieses Feature für diejenigen, die Visual C++-Erweiterungen Code verwalten müssen, aber neuer ADO-Code geschrieben werden soll, mithilfe von \# **Importieren**.
+Die bevorzugte Methode zum Programmieren von ADO mit Visual c++ ist die Verwendung der ** \#Import** -Direktive, wie in der [Microsoft Visual c++-ADO-Programmierung](visual-c-ado-programming.md)erläutert. Frühere Versionen von ADO wurden jedoch mit einer alternativen Programmiermethode mit Visual C++ geliefert: den Visual C++-Erweiterungen. Dieser Abschnitt dokumentiert dieses Feature für diejenigen, die Visual C++-Erweiterungen-Code beibehalten müssen, aber der neue ADO- \#Code sollte mithilfe von **Import**geschrieben werden.
 
 Eine der mühsamsten Aufgaben, der sich Visual C++-Programmierer beim Abrufen von Daten mit ADO gegenübersehen, ist das Konvertieren der als VARIANT-Datentyp zurückgegebenen Daten in einen C++-Datentyp und das anschließende Speichern der konvertierten Daten in einer Klasse oder Struktur. Das Abrufen von C++-Daten über einen VARIANT-Datentyp ist nicht nur aufwändig, sondern es verringert auch die Leistung.
 

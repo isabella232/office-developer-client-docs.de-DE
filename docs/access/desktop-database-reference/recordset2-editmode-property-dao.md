@@ -1,5 +1,5 @@
 ---
-title: Recordset2.EditMode-Eigenschaft (DAO)
+title: Recordset2. EditMode-Eigenschaft (DAO)
 TOCTitle: EditMode Property
 ms:assetid: fd61ea2b-e7d7-195f-4114-87e54eba2451
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837240(v=office.15)
@@ -12,18 +12,18 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: d4043a442bec8c5ce421d85de6256eb9c5cb353f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307350"
 ---
-# <a name="recordset2editmode-property-dao"></a>Recordset2.EditMode-Eigenschaft (DAO)
+# <a name="recordset2editmode-property-dao"></a>Recordset2. EditMode-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt einen Wert zurück, der den Status der Bearbeitung für den aktuellen Datensatz angibt.
+Gibt einen Wert zurück, der den Bearbeitungsstatus für den aktuellen Datensatz angibt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,15 +33,15 @@ Gibt einen Wert zurück, der den Status der Bearbeitung für den aktuellen Daten
 
 ## <a name="remarks"></a>Bemerkungen
 
-Der Rückgabewert ist vom Datentyp **Long** und gibt den Status der Bearbeitung an. Der Wert kann eine der **[EditModeEnum](editmodeenum-enumeration-dao.md)** -Konstanten sein.
+Der Rückgabewert ist ein **Long**-Datentyp, der den Bearbeitungsstatus angibt. Der Wert kann eine der **[EditModeEnum](editmodeenum-enumeration-dao.md)** -Konstanten sein.
 
-Die **EditMode**-Eigenschaft ist nützlich, wenn ein Bearbeitungsvorgang unterbrochen wird, z. B. durch einen Fehler während der Überprüfung. Sie können mit dem Wert der **EditMode**-Eigenschaft ermitteln, ob Sie die Methode **[Update](recordset2-update-method-dao.md)** oder **[CancelUpdate](recordset2-cancelupdate-method-dao.md)** verwenden sollten.
+Die **EditMode**-Eigenschaft ist nützlich, wenn ein Bearbeitungsvorgang unterbrochen wurde, wie z. B. bei einem Fehler bei der Gültigkeitsprüfung. Sie können mit dem Wert der **EditMode**-Eigenschaft feststellen, ob die **[Update](recordset2-update-method-dao.md)** - oder die **[CancelUpdate](recordset2-cancelupdate-method-dao.md)** -Methode verwendet werden soll.
 
-Sie können auch überprüfen, ob die Einstellung der **[LockEdits](recordset2-lockedits-property-dao.md)** -Eigenschaft auf **True** und die Einstellung der **EditMode**-Eigenschaft auf **dbEditInProgress** festgelegt ist, um festzustellen, ob die aktuelle Seite gesperrt ist.
+Sie können auch überprüfen, ob der Wert der **[LockEdits](recordset2-lockedits-property-dao.md)** -Einstellung **True** und der Wert der **EditMode**-Einstellung **dbEditInProgress** ist, um festzustellen, ob die aktuelle Seite gesperrt ist.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird der Wert der EditMode-Eigenschaft unter verschiedenen Bedingungen veranschaulicht. Zum Ausführen dieser Prozedur ist die EditModeOutput-Funktion erforderlich.
+This example shows the value of the **EditMode** property under various conditions. The EditModeOutput function is required for this procedure to run.
 
 ```vb
     Sub EditModeX() 

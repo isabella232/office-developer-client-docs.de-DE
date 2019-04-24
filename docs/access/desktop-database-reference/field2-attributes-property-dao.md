@@ -1,5 +1,5 @@
 ---
-title: Field2.Attributes-Eigenschaft (DAO)
+title: Field2. Attributes-Eigenschaft (DAO)
 TOCTitle: Attributes Property
 ms:assetid: 08ae9b6b-21e4-9b7e-0852-cfc6639027a7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845025(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a655cfa5c6f0427b1a26a01f01e991564ab8e387
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292888"
 ---
-# <a name="field2attributes-property-dao"></a>Field2.Attributes-Eigenschaft (DAO)
+# <a name="field2attributes-property-dao"></a>Field2. Attributes-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der ein oder mehrere Merkmale eines **Field2**-Objekts angibt. **Long**-Wert mit Lese-/Schreibzugriff.
@@ -49,31 +49,31 @@ Dieser Wert gibt die Merkmale des Felds an, das durch das **Field2**-Objekt darg
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbAutoIncrField festgelegt</strong></p></td>
+<td><p><strong>Dbautoincrfield festgelegt</strong></p></td>
 <td><p>Der Feldwert für neue Datensätze wird automatisch auf einen eindeutigen Long Integer-Wert erhöht, der nicht geändert werden kann (wird in einem Microsoft Access-Arbeitsbereich nur bei Microsoft Access-Datenbanktabellen unterstützt).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbDescending</strong></p></td>
-<td><p>Das Feld wird in absteigender Reihenfolge sortiert (von Z bis A oder von 100 bis 0). Diese Option trifft nur auf ein <strong>Field2</strong>-Objekt in einer <strong>Fields</strong>-Auflistung eines <strong>Index</strong>-Objekts zu. Wenn Sie diese Konstante auslassen, wird das Feld in aufsteigender Reihenfolge sortiert (von A bis Z oder von 0 bis 100). Das ist der Standardwert für <strong>Index</strong>- und <strong>TableDef</strong>-Felder (gilt nur für Microsoft Access-Arbeitsbereiche)..</p></td>
+<td><p><strong>dbAbsteigend</strong></p></td>
+<td><p>Das Feld wird absteigend sortiert (Z-bis A-oder 100-0). Diese Option gilt nur für ein <strong>Field2</strong> -Objekt in <strong></strong> einer Fields-Auflistung eines <strong>Index</strong> -Objekts. Wenn Sie diese Konstante weglassen, wird das Feld aufsteigend sortiert (A-Z oder 0 bis 100). Dies ist der Standardwert für <strong>Index</strong> -und <strong>TableDef</strong> -Felder (nur Microsoft Access-Arbeitsbereiche)..</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbFixedField</strong></p></td>
+<td><p><strong>dbFixedfield</strong></p></td>
 <td><p>Die Feldgröße ist fest (Standard bei numerischen Feldern).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbHyperlinkField</strong></p></td>
+<td><p><strong>dbHyperlinkfield</strong></p></td>
 <td><p>Das Feld enthält Hyperlinkinformation (nur Memofelder).</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbSystemField</strong></p></td>
+<td><p><strong>dbSystemfield</strong></p></td>
 <td><p>Das Feld speichert Replikationsinformationen für Replikate. Dieser Feldtyp kann nicht gelöscht werden (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbUpdatableField</strong></p></td>
+<td><p><strong>dbAktualisierfield</strong></p></td>
 <td><p>Der Feldwert kann geändert werden.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbVariableField</strong></p></td>
+<td><p><strong>dbVariablefield</strong></p></td>
 <td><p>Die Feldgröße ist variabel (nur Textfelder).</p></td>
 </tr>
 </tbody>
@@ -99,20 +99,20 @@ Bei Objekten, die noch keiner Auflistung angefügt sind, besteht für diese Eige
 <td><p>Mit Lese-/Schreibzugriff bis das <strong>TableDef</strong>-Objekt, dem das <strong>Index</strong>-Objekt angefügt wird, einem <strong>Database</strong>-Objekt angefügt wird; dann ist die Eigenschaft schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong> -Objekt</p></td>
+<td><p><strong>Relation</strong>-Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TableDef</strong> -Objekt</p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p><strong>TableDef</strong>-Objekt</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 </tbody>
 </table>

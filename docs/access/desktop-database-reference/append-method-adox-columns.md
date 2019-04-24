@@ -8,32 +8,32 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 48bc100b7b56265a570ce963b80f569f1d827150
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297123"
 ---
 # <a name="append-method-adox-columns"></a>Append-Methode (ADOX Columns)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Fügt der [Columns](column-object-adox.md)-Auflistung ein neues [Column](columns-collection-adox.md)-Objekt hinzu.
 
 ## <a name="syntax"></a>Syntax
 
-*Spalten*. Fügen Sie die*Spalte* \[,*Typ* \] \[,*DefinedSize*\]
+*Spalten*. Append-*Spalte* \[,*Type* \] \[,*DefinedSize*\]
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
 |*Column* |Das anzufügende **Column** -Objekt oder der Name der zu erstellenden und anzufügenden Spalte.|
-|*Type* |Optional. Ein **Long** -Wert, der den Datentyp der Spalte angibt. Die [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox) -Eigenschaft ein **Column** -Objekt entspricht der *Type* -Parameter.|
-|*DefinedSize* |Optional. Ein **Long** -Wert, der die Größe einer Spalte angibt. Der Parameter *DefinedSize* entspricht der [DefinedSize](definedsize-property-adox.md) -Eigenschaft eines **Column** -Objekts.|
+|*Type* |Optional. Ein **Long**-Wert, der den Datentyp der Spalte angibt. Der *Type*-Parameter entspricht der [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox)-Eigenschaft eines **Column**-Objekts.|
+|*DefinedSize* |Optional. Ein **Long**-Wert, der die Größe einer Spalte angibt. Der *DefinedSize*-Parameter entspricht der [DefinedSize](definedsize-property-adox.md)-Eigenschaft eines **Column**-Objekts.|
 
 
 > [!NOTE]
-> [!HINWEIS] Es tritt ein Fehler auf, wenn ein **Column** -Objekt an die **Columns** -Auflistung eines [Index](index-object-adox.md)-Objekts angefügt wird und das **Column** -Objekt nicht in einem [Table](table-object-adox.md)-Objekt vorhanden ist, das bereits an die [Tables](tables-collection-adox.md)-Auflistung angefügt wurde.
+> Es tritt ein Fehler auf, wenn ein **Column**-Objekt an die **Columns**-Auflistung eines [Index](index-object-adox.md)-Objekts angefügt wird und das **Column**-Objekt nicht in einem [Table](table-object-adox.md)-Objekt vorhanden ist, das bereits an die [Tables](tables-collection-adox.md)-Auflistung angefügt wurde.
 
 

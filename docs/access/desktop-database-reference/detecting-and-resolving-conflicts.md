@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ddd7566be2581fe449872eb576bf7f11e5a806fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293924"
 ---
 # <a name="detecting-and-resolving-conflicts"></a>Erkennen und Lösen von Konflikten
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-## <a name="detecting-and-resolving-conflicts"></a>Detecting and Resolving Conflicts
+## <a name="detecting-and-resolving-conflicts"></a>Erkennen und Lösen von Konflikten
 
 Wenn Sie das **Recordset** -Objekt im sofortigen Aktualisierungsmodus verwenden, ist die Wahrscheinlichkeit von Parallelitätsproblemen wesentlich geringer. Wenn die Anwendung andererseits den Batchaktualisierungsmodus verwendet, besteht eine relativ hohe Wahrscheinlichkeit, dass ein Benutzer einen Datensatz ändert, bevor Änderungen eines anderen Benutzers, der denselben Datensatz bearbeitet, gespeichert werden. In diesem Fall sollte der Konflikt von der Anwendung problemlos behoben werden. Möglicherweise möchten Sie, dass die letzte Person, die eine Aktualisierung an den Server sendet, "gewinnt". Oder Sie möchten, dass der letzte Benutzer entscheidet, welche Aktualisierung Vorrang haben soll, indem Sie ihm die Wahl zwischen den miteinander in Konflikt stehenden Werten lassen.
 
@@ -26,11 +26,11 @@ In jedem Fall stellt ADO die Eigenschaften **UnderlyingValue** und **OriginalVal
 
 ## <a name="detecting-errors"></a>Erkennen von Fehlern
 
-Wenn ADO während einer Batchaktualisierung einen Konflikt findet, wird der **Errors** -Auflistung eine Warnung hinzugefügt. Deshalb sollten Sie unmittelbar nach dem Aufrufen von **BatchUpdate** stets auf Fehler überprüfen. Falls Sie Fehler finden, sollten Sie testen, ob ein Konflikt vorliegt. Im ersten Schritt sollten Sie die **Filter** -Eigenschaft im **Recordset** -Objekt auf **adFilterConflictingRecords** festlegen (die **Filter** -Eigenschaft wird im vorherigen Kapitel behandelt). Dadurch werden im **Recordset** -Objekt nur die Datensätze angezeigt, die einen Konflikt verursachen. Falls die **RecordCount** -Eigenschaft nach diesem Schritt gleich Null ist, wissen Sie, dass der Fehler nicht durch einen Konflikt verursacht wurde.
+Wenn ADO während einer Batchaktualisierung einen Konflikt findet, wird der **Errors**-Auflistung eine Warnung hinzugefügt. Deshalb sollten Sie unmittelbar nach dem Aufrufen von **BatchUpdate** stets auf Fehler überprüfen. Falls Sie Fehler finden, sollten Sie testen, ob ein Konflikt vorliegt. Im ersten Schritt sollten Sie die **Filter**-Eigenschaft im **Recordset**-Objekt auf **adFilterConflictingRecords** festlegen (die **Filter**-Eigenschaft wird im vorherigen Kapitel behandelt). Dadurch werden im **Recordset**-Objekt nur die Datensätze angezeigt, die einen Konflikt verursachen. Falls die **RecordCount**-Eigenschaft nach diesem Schritt gleich Null ist, wissen Sie, dass der Fehler nicht durch einen Konflikt verursacht wurde.
 
 Wenn Sie **BatchUpdate** aufrufen, generieren ADO und der Anbieter SQL-Anweisungen, um Aktualisierungen in der Datenquelle auszuführen. Beachten Sie, dass für bestimmte Datenquellen Einschränkungen bezüglich der Spaltentypen gelten, die in einer WHERE-Klausel verwendet werden können.
 
-Rufen Sie im nächsten Schritt die **Resync** -Methode für das **Recordset-Objekt** mit dem *AffectRecords* -Argument **AdAffectGroup** gleich festgelegt und das *ResyncValues* Argument **AdResyncUnderlyingValues**gleich festgelegt. Die **Resync** -Methode aktualisiert die Daten im aktuellen **Recordset** -Objekt in der zugrunde liegenden Datenbank. Mithilfe von **adAffectGroup** stellen Sie sicher, dass nur die Datensätze, die mit der aktuellen Filtereinstellung angezeigt werden (also nur die miteinander in Konflikt stehenden Datensätze), erneut mit der Datenbank synchronisiert werden. Dies könnte bei einem umfangreichen **Recordset** -Objekt einen erheblichen Unterschied hinsichtlich der Leistung ausmachen. Indem Sie das Argument *ResyncValues* auf **AdResyncUnderlyingValues** beim Aufruf von **Resync**, Sie sicherstellen, dass die **UnderlyingValue** -Eigenschaft den Wert (miteinander in Konflikt stehende) aus der Datenbank enthalten soll, die den **Wert** Eigenschaft wird beibehalten, der vom Benutzer eingegebene Wert, und halten Sie die **OriginalValue** -Eigenschaft wird den ursprünglichen Wert des Felds (der Wert, der vor der letzte erfolgreiche **UpdateBatch** -Anruf getätigt wurde). Anschließend können Sie mithilfe dieser Werte den Konflikt programmgesteuert lösen oder den Benutzer auffordern, den gewünschten Wert auszuwählen.
+Rufen Sie anschließend die **Resync**-Methode für das **Recordset**-Objekt auf, wobei das Argument *AffectRecords* auf **adAffectGroup** sowie das Argument *ResyncValues* auf **adResyncUnderlyingValues** festgelegt sind. Die **Resync**-Methode aktualisiert die Daten im aktuellen **Recordset**-Objekt in der zugrunde liegenden Datenbank. Mithilfe von **adAffectGroup** stellen Sie sicher, dass nur die Datensätze, die mit der aktuellen Filtereinstellung angezeigt werden (also nur die miteinander in Konflikt stehenden Datensätze), erneut mit der Datenbank synchronisiert werden. Dies könnte bei einem umfangreichen **Recordset**-Objekt einen erheblichen Unterschied hinsichtlich der Leistung ausmachen. Wenn Sie beim Aufrufen von **Resync** das Argument *ResyncValues* auf **adResyncUnderlyingValues** festlegen, stellen Sie sicher, dass die **UnderlyingValue**-Eigenschaft den Wert (der den Konflikt verursacht) aus der Datenbank enthält, dass die **Value**-Eigenschaft den vom Benutzer eingegebenen Wert beibehält und dass die **OriginalValue**-Eigenschaft den ursprünglichen Wert für das Feld enthält (der Wert, der vor dem letzten erfolgreichen **UpdateBatch**-Aufruf vorhanden war). Anschließend können Sie mithilfe dieser Werte den Konflikt programmgesteuert lösen oder den Benutzer auffordern, den gewünschten Wert auszuwählen.
 
 Diese Technik wird im folgenden Codebeispiel dargestellt. In diesem Beispiel wird künstlich ein Konflikt erzeugt, indem mithilfe eines separaten **Recordset** -Objekts ein Wert in der zugrunde liegenden Tabelle geändert wird, bevor **UpdateBatch** aufgerufen wird.
 

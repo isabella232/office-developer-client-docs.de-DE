@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9fcf837a02c40d11fecfa56b8aa34ac80a848411
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296458"
 ---
 # <a name="chapter-3-examining-data"></a>Kapitel 3: Untersuchen von Daten
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In Kapitel 2 wird erläutert, wie Sie Daten aus einer Datenquelle als **Recordset** -Objekt abrufen können. Dieses Kapitel beschreibt das **Recordset** -Objekt detaillierter und erklärt, wie Sie das **Recordset** -Objekt und seine Daten in einer Schleife durchlaufen.
 
@@ -72,43 +72,43 @@ Name = ProductID</p></th>
 <th><p>FELD 1<br />
 Name = ProductName</p></th>
 <th><p>FELD 2<br />
-Name = UnitPrice</p></th>
+Name = Einzelpreis</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>7</p></td>
 <td><p>Uncle Bob's Organic Dried Pears</p></td>
-<td><p>30.0000</p></td>
+<td><p>30,0000</p></td>
 </tr>
 <tr class="even">
 <td><p>14</p></td>
 <td><p>Tofu</p></td>
-<td><p>23.2500</p></td>
+<td><p>23,2500</p></td>
 </tr>
 <tr class="odd">
 <td><p>28</p></td>
 <td><p>Rssle Sauerkraut</p></td>
-<td><p>45.6000</p></td>
+<td><p>45,6000</p></td>
 </tr>
 <tr class="even">
 <td><p>51</p></td>
 <td><p>Manjimup Dried Apples</p></td>
-<td><p>53.0000</p></td>
+<td><p>53,0000</p></td>
 </tr>
 <tr class="odd">
 <td><p>74</p></td>
 <td><p>Longlife Tofu</p></td>
-<td><p>10.0000</p></td>
+<td><p>10,0000</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Im nächste Abschnitt wird erläutert, wie die aktuelle Position des Cursors in diesem Beispiel **Recordset**gesucht werden soll.
+Im nächsten Abschnitt wird erläutert, wie Sie die aktuelle Position des Cursors in diesem **Recordset**-Beispiel finden.
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
 - [Suchen des aktuellen Datensatzes (ADO)](locating-the-current-record.md)
-- [Navigieren in den Daten (ADO)](navigating-through-the-data.md)
-- [Grundlegendes zur Struktur von Recordset-Objekt (ADO)](understanding-recordset-structure.md)
+- [Navigieren durch die Daten (ADO)](navigating-through-the-data.md)
+- [Grundlegendes zur Recordset-Struktur (ADO)](understanding-recordset-structure.md)

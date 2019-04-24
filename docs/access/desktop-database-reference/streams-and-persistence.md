@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5a6f49368def305964119edcb06b5bcc80c278d2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314434"
 ---
 # <a name="streams-and-persistence"></a>Datenströme und Speicherung
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der [Save](save-method-ado.md)-Methode des [Recordset](recordset-object-ado.md)-Objekts wird ein **Recordset**-Objekt in einer Datei gespeichert (*permanent gespeichert*), und mit der [Open](open-method-ado-recordset.md)-Methode wird das **Recordset**-Objekt aus dieser Datei wiederhergestellt.
 
@@ -25,11 +25,11 @@ Mit ADO 2.5 kann ein **Recordset** -Objekt auch mit den Methoden **Save** und **
 
 Weitere Informationen zur alleinigen Verwendung von Permanenz auf ASP-Seiten finden Sie in der aktuellen ASP-Dokumentation.
 
-Die folgenden Szenarios zeigen, wie **Stream** -Objekte und Permanenz verwendet werden können.
+Die folgenden Szenarios zeigen, wie **Stream**-Objekte und Permanenz verwendet werden können.
 
 ## <a name="scenario-1"></a>Szenario 1
 
-In diesem Szenario wird einfach ein **Recordset** -Objekt in einer Datei und dann in einem **Stream** -Objekt gespeichert. Dann wird der permanent gespeicherte Datenstrom in einem anderen **Recordset** -Objekt geöffnet.
+In diesem Szenario wird einfach ein **Recordset**-Objekt in einer Datei und dann in einem **Stream**-Objekt gespeichert. Dann wird der permanent gespeicherte Datenstrom in einem anderen **Recordset**-Objekt geöffnet.
 
 ```vb 
  
@@ -51,7 +51,7 @@ rs2.Open stm
 
 ## <a name="scenario-2"></a>Szenario 2
 
-In diesem Szenario wird ein **Recordset** -Objekt permanent in einem **Stream** -Objekt im XML-Format gespeichert. Dann wird das **Stream** -Objekt in eine Zeichenfolge eingelesen, die Sie untersuchen, bearbeiten oder anzeigen können.
+In diesem Szenario wird ein **Recordset**-Objekt permanent in einem **Stream**-Objekt im XML-Format gespeichert. Dann wird das **Stream**-Objekt in eine Zeichenfolge eingelesen, die Sie untersuchen, bearbeiten oder anzeigen können.
 
 ```vb 
  
@@ -79,7 +79,7 @@ strRst = stm.ReadText(adReadAll)
 
 ## <a name="scenario-3"></a>Szenario 3
 
-In diesem Beispielcode wird gezeigt, wie mit ASP-Code ein **Recordset** -Objekt permanent als XML direkt im **Response** -Objekt gespeichert wird:
+In diesem Beispielcode wird gezeigt, wie mit ASP-Code ein **Recordset**-Objekt permanent als XML direkt im **Response**-Objekt gespeichert wird:
 
 ```vb 
  
@@ -109,7 +109,7 @@ In diesem Szenario wird vom ASP-Code der Inhalt des **Recordset** -Objekts im AD
 
 Eine neue Eigenschaft für das [DataControl](datacontrol-object-rds.md)-RDS-Objekt, [URL](url-property-rds.md), zeigt auf die ASP, durch die das **Recordset** -Objekt generiert wird. Das heißt, dass ein **Recordset** -Objekt ohne RDS mithilfe des serverseitigen [DataFactory](datafactory-object-rdsserver.md)-Objekts oder mithilfe eines vom Benutzer geschriebenen Geschäftsobjekts abgerufen werden kann. Dadurch wird das RDS-Programmiermodell erheblich vereinfacht.
 
-Serverseitigen Code, mit dem Namenhttps://server/directory/recordset.asp:
+Server-side code, named https://server/directory/recordset.asp:
 
 ```vb 
  

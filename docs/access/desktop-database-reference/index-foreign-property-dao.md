@@ -1,5 +1,5 @@
 ---
-title: Index.Foreign-Eigenschaft (DAO)
+title: Index. Foreign-Eigenschaft (DAO)
 TOCTitle: Foreign Property
 ms:assetid: 81272436-a506-4b72-fd28-2d68e76d6d9b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196489(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a3c6adfaf9648147a763f997ce2a91aadc4f7637
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291817"
 ---
-# <a name="indexforeign-property-dao"></a>Index.Foreign-Eigenschaft (DAO)
+# <a name="indexforeign-property-dao"></a>Index. Foreign-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt einen Wert zurück, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Fremdschlüssel in einer Tabelle angibt (gilt nur für Microsoft Access-Arbeitsbereiche).
+Gibt einen Wert zurück, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Fremdschlüssel in einer Tabelle darstellt (nur Microsoft Access-Arbeitsbereiche). .
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Fremdschlüssel
+*Ausdruck* . Außen
 
 *Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.
 
@@ -40,7 +40,7 @@ Das Microsoft Access-Datenbankmodul erstellt ein **Index**-Objekt für die Fremd
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel veranschaulicht, wie mit der Foreign-Eigenschaft angeben werden kann, bei welchen Index-Objekten in einem TableDef-Objekt es sich um Fremdschlüsselindizes handelt. Diese Indizes werden beim Erstellen eines Relation-Objekts vom Microsoft Access-Datenbankmodul erstellt. Der Standardname für die Fremdschlüsselindizes setzt sich aus dem Namen der Primärtabelle und dem Namen der Fremdtabelle zusammen. Zum Ausführen dieser Prozedur ist die ForeignOutput-Funktion erforderlich.
+This example shows how the **Foreign** property can indicate which **Index** objects in a **TableDef** are foreign key indexes. Such indexes are created by the Microsoft Access database engine when a **Relation** is created. The default name for the foreign key indexes is the name of the primary table plus the name of the foreign table. The ForeignOutput function is required for this procedure to run.
 
 ```vb
     Sub ForeignX() 

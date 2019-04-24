@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ff9f6841b50b70f8846c829f0ee7b911c84c0e04
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314903"
 ---
 # <a name="tabledef-members-dao"></a>TableDef-Member (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein TableDef -Objekt stellt die gespeicherte Definition einer Basistabelle oder einer verknüpften Tabelle dar (nur Microsoft Access-Arbeitsbereiche).
 
@@ -37,11 +37,11 @@ Ein TableDef -Objekt stellt die gespeicherte Definition einer Basistabelle oder 
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="tabledef-createfield-method-dao.md">CreateField</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
+<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="tabledef-createindex-method-dao.md">CreateIndex</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="index-object-dao.md">Index</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Erstellt ein neues <strong><a href="index-object-dao.md">Index</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="tabledef-createproperty-method-dao.md">CreateProperty</a></strong></p></td>
@@ -74,7 +74,7 @@ Ein TableDef -Objekt stellt die gespeicherte Definition einer Basistabelle oder 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="tabledef-attributes-property-dao.md">Attribute</a></strong></p></td>
+<td><p><strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong></p></td>
 <td><p>Legt einen Wert fest, der ein oder mehrere Merkmale eines <strong>TableDef</strong>-Objekts angibt, oder gibt den betreffenden Wert zurück. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
@@ -90,8 +90,8 @@ Ein TableDef -Objekt stellt die gespeicherte Definition einer Basistabelle oder 
 <td><p>Gibt das Datum und die Uhrzeit der Objekterstellung zurück (nur Microsoft Access-Arbeitsbereiche). Schreibgeschützter <strong>Variant</strong>-Wert.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="tabledef-fields-property-dao.md">Felder</a></strong></p></td>
-<td><p>Gibt eine <strong>Fields</strong>-Auflistung zurück, die alle gespeicherten <strong>Field</strong>-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
+<td><p><strong><a href="tabledef-fields-property-dao.md">Fields</a></strong></p></td>
+<td><p>Gibt eine <strong>Fields</strong> -Auflistung zurück, die alle gespeicherten <strong>Field</strong> -Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="tabledef-indexes-property-dao.md">Indizes</a></strong></p></td>
@@ -99,11 +99,11 @@ Ein TableDef -Objekt stellt die gespeicherte Definition einer Basistabelle oder 
 </tr>
 <tr class="odd">
 <td><p><strong><a href="tabledef-lastupdated-property-dao.md">LastUpdated</a></strong></p></td>
-<td><p>Gibt das Datum und die Uhrzeit der letzten Änderung eines Objekts zurück. Schreibgeschützter <strong>Variant</strong>-Wert.</p></td>
+<td><p>Gibt das Datum und die Uhrzeit der letzten Änderung eines Objekts zurück. Read-only <strong>Variant</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="tabledef-name-property-dao.md">Name</a></strong></p></td>
-<td><p>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest. <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
+<td><p>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest. <strong>Zeichenfolge</strong> mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="tabledef-properties-property-dao.md">Eigenschaften</a></strong></p></td>

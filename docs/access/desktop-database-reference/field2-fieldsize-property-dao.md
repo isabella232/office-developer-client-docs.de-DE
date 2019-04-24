@@ -1,5 +1,5 @@
 ---
-title: Field2.FieldSize-Eigenschaft (DAO)
+title: Field2. Fieldes-Eigenschaft (DAO)
 TOCTitle: FieldSize Property
 ms:assetid: d609801d-7761-663f-2840-de5923bb120c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835039(v=office.15)
@@ -12,19 +12,19 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a7dfeb33568664a6a75f9f43de64e0c24abeb09a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292804"
 ---
-# <a name="field2fieldsize-property-dao"></a>Field2.FieldSize-Eigenschaft (DAO)
+# <a name="field2fieldsize-property-dao"></a>Field2. Fieldes-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
-Gibt die in der Datenbank (nicht im Arbeitsspeicher) verwendete Anzahl von Bytes eines Field2-Objekts vom Typ Memo oder Long Binary in der Fields-Auflistung eines Recordset-Objekts zurück.
+Returns the number of bytes used in the database (rather than in memory) of a Memo or Long Binary **Field2** object in the **[Fields](fields-collection-dao.md)** collection of a **[Recordset](recordset-object-dao.md)** object.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,9 +36,9 @@ Gibt die in der Datenbank (nicht im Arbeitsspeicher) verwendete Anzahl von Bytes
 
 Sie können die **FieldSize**-Eigenschaft mit den Methoden **[AppendChunk](field-appendchunk-method-dao.md)** und **[GetChunk](field-getchunk-method-dao.md)** zum Bearbeiten großer Felder verwenden.
 
-Da die Größe eines Felds vom Datentyp Long Binary oder Memo 64 KB überschreiten kann, sollten Sie den von der FieldSize-Eigenschaft zurückgegebenen Wert einer Variablen zuordnen, deren Größe zum Speichern einer Long-Variablen ausreicht.
+Because the size of a Long Binary or Memo field can exceed 64K, you should assign the value returned by **FieldSize** to a variable large enough to store a **Long** variable.
 
-Wenn Sie die Größe eines Field2-Objekts eines anderen Typs als Memo and Long Binary ermitteln möchten, verwenden Sie die Size-Eigenschaft.
+To determine the size of a **Field2** object other than Memo and Long Binary types, use the **[Size](field-size-property-dao.md)** property.
 
   - Der Datenbankserver oder ODBC-Treiber unterstützt keine serverseitigen Cursor.
 
@@ -50,7 +50,7 @@ Die **FieldSize**-Eigenschaft und die VBA-Funktionen **Len()** oder **LenB()** g
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel veranschaulicht, wie Sie mit der FieldSize-Eigenschaft die Anzahl von Bytes auflisten, die in Field-Objekten vom Typ Memo und Long Binary in zwei verschiedenen Tabellen verwendet werden.
+This example uses the **FieldSize** property to list the number of bytes used by the Memo and Long Binary Field objects in two different tables.
 
 ```vb
     Sub FieldSizeX() 

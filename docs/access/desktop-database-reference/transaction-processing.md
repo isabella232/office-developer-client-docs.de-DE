@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c13f25df31bea1eb742b4a7e7c958ccdbfb7274a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314007"
 ---
 # <a name="transaction-processing"></a>Verarbeitung von Transaktionen
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ADO stellt die folgenden Methoden zur Steuerung von Transaktionen bereit: **BeginTrans**, **CommitTrans** und **RollbackTrans**. Verwenden Sie diese Methoden mit einem **Connection** -Objekt, wenn Sie Änderungen an den Quelldaten als eine Einheit speichern oder abbrechen möchten. Um z. B. Geld zwischen Konten zu überweisen, subtrahieren Sie einen Betrag von einem Konto und addieren ihn zu einem anderen Konto. Wenn bei einer der Aktualisierungen ein Fehler gemeldet wird, stimmen die Konten nicht mehr. Wenn Sie diese Änderungen in einer geöffneten Transaktion vornehmen, ist sichergestellt, dass entweder alle oder keine Änderungen ausgeführt werden.
 
 > [!NOTE]
-> Transaktionen werden nicht von allen Anbietern unterstützt. Überprüfen Sie, ob die vom Anbieter definierte "**Transaction DDL**"-Eigenschaft in der [Properties](properties-collection-ado.md)-Auflistung des **Connection**-Objekts angezeigt wird und damit angibt, dass Transaktionen vom Anbieter unterstützt werden. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
+> Nicht alle Anbieter unterstützen Transaktionen. Überprüfen Sie, ob die anbieterdefinierte **Transaction DDL**-Eigenschaft in der [Properties](properties-collection-ado.md)-Auflistung des **Connection**-Objekts angezeigt wird. In diesem Fall werden vom Anbieter Transaktionen unterstützt. Falls der Anbieter keine Transaktionen unterstützt, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
 
-Nachdem Sie die **BeginTrans** -Methode aufgerufen haben, führt der Anbieter erst wieder einen sofortigen Commit für Ihre Änderungen aus, wenn Sie **CommitTrans** oder **RollbackTrans** zum Beenden der Transaktion aufrufen.
+Nachdem Sie die **BeginTrans**-Methode aufgerufen haben, führt der Anbieter erst wieder einen sofortigen Commit für Ihre Änderungen aus, wenn Sie **CommitTrans** oder **RollbackTrans** zum Beenden der Transaktion aufrufen.
 
 Durch Aufrufen der **CommitTrans** -Methode werden Änderungen gespeichert, die in einer geöffneten Transaktion für die Verbindung vorgenommen wurden, und die Transaktion wird beendet. Durch Aufrufen der **RollbackTrans** -Methode werden alle Änderungen, die in einer geöffneten Transaktion vorgenommen wurden, rückgängig gemacht, und die Transaktion wird beendet. Ein Fehler wird generiert, wenn eine der Methoden ohne geöffnete Transaktion aufgerufen wird.
 
@@ -31,7 +31,7 @@ In Abhängigkeit von der **Attributes**-Eigenschaft des [Connection](attributes-
 
 ## <a name="transaction-isolation-level"></a>Transaktionsisolationsstufe
 
-Mithilfe der **IsolationLevel** -Eigenschaft legen Sie die Isolationsstufe einer Transaktion in einem **Connection** -Objekt fest. Diese Einstellung wird erst nach dem nächsten Aufruf der [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode wirksam. Falls die angeforderte Isolationsstufe nicht verfügbar ist, gibt der Anbieter möglicherweise die nächsthöhere Isolationsstufe zurück. Verweisen Sie auf die **IsolationLevel** -Eigenschaft in der ADO-Programmierreferenz für Weitere Informationen zu gültigen Werten.
+Mithilfe der **IsolationLevel** -Eigenschaft legen Sie die Isolationsstufe einer Transaktion in einem **Connection** -Objekt fest. Diese Einstellung wird erst nach dem nächsten Aufruf der [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode wirksam. Falls die angeforderte Isolationsstufe nicht verfügbar ist, gibt der Anbieter möglicherweise die nächsthöhere Isolationsstufe zurück. Weitere Informationen zu gültigen Werten finden Sie in der **IsolationLevel** -Eigenschaft im ADO-Programmierhandbuch.
 
 ## <a name="nested-transactions"></a>Geschachtelte Transaktionen
 

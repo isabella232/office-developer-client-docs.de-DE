@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8fb20068052972696b09ea0d2165b344e97ea922
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294015"
 ---
 # <a name="deleterecord-macro-action"></a>DeleteRecord-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Mit der **DatensatzLöschen** -Aktion können Sie einen Datensatz löschen.
+Mit der **DatensatzLöschen**-Aktion können Sie einen Datensatz löschen.
 
 ## <a name="setting"></a>Einstellung
 
-Der **DatensatzLöschen** -Datenblock kann mit den folgenden Argumenten verwendet werden.
+Der **DatensatzErstellen**-Datenblock kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -43,9 +43,9 @@ Der **DatensatzLöschen** -Datenblock kann mit den folgenden Argumenten verwende
 </tbody>
 </table>
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Beispielsweise verwenden Sie die folgende Syntax, um auf die zuletzt erstellte Datensatz zu verweisen:
+Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf den zuletzt erstellten Datensatz zu verweisen:
 
 `[LastCreateRecordIdentity]`
 

@@ -8,32 +8,32 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c6668dfd40f7d0d26bcfa2ca4149acdc713e14c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291929"
 ---
 # <a name="hierarchy-object-ado-md"></a>Hierarchy-Objekt (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt eine Möglichkeit dar, die Elemente einer [Dimension](dimension-object-ado-md.md) zu aggregieren (Rollup). Eine Dimension kann entlang einer oder mehrerer Hierarchien aggregiert werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Auflistungen und Eigenschaften eines **Hierarchy** -Objekts ermöglichen Folgendes:
+Die Auflistungen und Eigenschaften eines **Hierarchy**-Objekts ermöglichen Folgendes:
 
-  - Identifizieren der**** Hierarchie, indem Sie die Eigenschaften [Name](name-property-ado-md.md) und [UniqueName](uniquename-property-ado-md.md) verwenden.
+  - Identify the **Hierarchy** with the [Name](name-property-ado-md.md) and [UniqueName](uniquename-property-ado-md.md) properties.
 
-  - Zurückgeben einer sinnvollen Zeichenfolge, die die**** Hierarchie beschreibt, indem Sie die [Description](description-property-ado-md.md)-Eigenschaft verwenden.
+  - Return a meaningful string that describes the **Hierarchy** with the [Description](description-property-ado-md.md) property.
 
-  - Zurückgeben der [Level](level-object-ado-md.md)-Objekte, die die**** Hierarchie bilden, indem Sie die [Levels](levels-collection-ado-md.md)-Auflistung verwenden.
+  - Return the [Level](level-object-ado-md.md) objects that make up the **Hierarchy** with the [Levels](levels-collection-ado-md.md) collection.
 
   - Verwenden der [Properties](properties-collection-ado.md)-ADO-Standardauflistung, um zusätzliche Informationen zum **Hierarchy** -Objekt abzurufen.
 
-Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
+Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
 
 <table>
 <colgroup>
@@ -48,11 +48,11 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Member</p></td>
+<td><p>AllMember</p></td>
 <td><p>Das Element auf der höchsten Rollupebene in der Hierarchie.</p></td>
 </tr>
 <tr class="even">
-<td><p>Katalogname</p></td>
+<td><p>CatalogName</p></td>
 <td><p>Der Name des Katalogs, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="odd">
@@ -88,7 +88,7 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 <td><p>Die GUID der Hierarchie.</p></td>
 </tr>
 <tr class="odd">
-<td><p>HierarchyName</p></td>
+<td><p>Hierarchie</p></td>
 <td><p>Der Name der Hierarchie.</p></td>
 </tr>
 <tr class="even">
@@ -96,7 +96,7 @@ Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitge
 <td><p>Der eindeutige Name der Hierarchie.</p></td>
 </tr>
 <tr class="odd">
-<td><p>SchemaName</p></td>
+<td><p>Instanzschema</p></td>
 <td><p>Der Name des Schemas, zu dem dieser Cube gehört.</p></td>
 </tr>
 </tbody>

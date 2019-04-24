@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fe8ba97e3d8306b8dc8b0415fdf50e4c7041d7f2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314084"
 ---
 # <a name="tabledefs-members-dao"></a>TableDefs-Member (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine TableDefs -Sammlung enthält alle gespeicherten TableDef -Objekte in einer Datenbank (nur Microsoft Access-Arbeitsbereiche).
 
@@ -36,7 +36,7 @@ Eine TableDefs -Sammlung enthält alle gespeicherten TableDef -Objekte in einer 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="tabledefs-append-method-dao.md">Anfügen</a></strong></p></td>
+<td><p><strong><a href="tabledefs-append-method-dao.md">Append</a></strong></p></td>
 <td><p>Fügt der <strong>TableDefs</strong>-Auflistung ein neues <strong>TableDef</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Eine TableDefs -Sammlung enthält alle gespeicherten TableDef -Objekte in einer 
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="tabledefs-count-property-dao.md">Count</a></strong></p></td>
-<td><p>Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
+<td><p>Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
 </tr>
 </tbody>
 </table>

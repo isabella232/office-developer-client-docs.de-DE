@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9d269a9012588a7b82505ac2e28466151715cbb0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313576"
 ---
 # <a name="updatebatch-method-ado"></a>UpdateBatch-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Schreibt alle ausstehenden Batchaktualisierungen auf einen Datenträger.
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset-Objekt*. UpdateBatch*AffectRecords*
+*Recordset*. UpdateBatch*AffectRecords*
 
 ## <a name="parameters"></a>Parameter
 
@@ -30,9 +30,9 @@ Schreibt alle ausstehenden Batchaktualisierungen auf einen Datenträger.
 |:--------|:----------|
 |*AffectRecords* |Optional. Ein [AffectEnum](affectenum.md)-Wert, der angibt, wie viele Datensätze von der **UpdateBatch** -Methode betroffen sind.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **UpdateBatch** -Methode, wenn Sie ein **Recordset** -Objekt im Batchaktualisierungsmodus ändern, um alle in einem **Recordset** -Objekt vorgenommenen Änderungen an die zugrunde liegende Datenbank zu übertragen.
+Verwenden Sie die **UpdateBatch**-Methode, wenn Sie ein **Recordset**-Objekt im Batchaktualisierungsmodus ändern, um alle in einem **Recordset**-Objekt vorgenommenen Änderungen an die zugrunde liegende Datenbank zu übertragen.
 
 Wenn das **Recordset** -Objekt die Batchaktualisierung unterstützt, können Sie mehrere Änderungen an mindestens einem Datensatz bis zum Aufrufen der **UpdateBatch** -Methode lokal speichern. Falls Sie den aktuellen Datensatz bearbeiten oder einen neuen Datensatz hinzufügen, wenn Sie die **UpdateBatch** -Methode aufrufen, ruft ADO automatisch die [Update](update-method-ado.md)-Methode auf, um ausstehende Änderungen am aktuellen Datensatz zu speichern, bevor die Batchänderungen an den Anbieter übertragen werden. Sie sollten die Batchaktualisierung nur mit einem Keysetcursor oder einem statischen Cursor verwenden.
 

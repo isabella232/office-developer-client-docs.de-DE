@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e53cd4b6d4a61a226103eb443bac7f3b4f92d908
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314049"
 ---
 # <a name="tables-collection-adox"></a>Tables-Auflistung (ADOX)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Enthält alle [Table](table-object-adox.md)-Objekte eines Katalogs.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die [Append](append-method-adox-tables.md)-Methode für eine **Tables** -Auflistung wird nur für ADOX bereitgestellt. Sie haben folgende Möglichkeiten:
 
@@ -37,5 +37,5 @@ Die verbleibenden Eigenschaften und Methoden sind Standardbestandteile von ADO-A
 
   - Aktualisieren der Objekte in der Auflistung entsprechend dem aktuellen Datenbankschema, indem Sie die [Refresh](refresh-method-ado.md)-Methode verwenden.
 
-Einige Anbieter geben möglicherweise andere Schemaobjekte in der Tables-Auflistung zurück, z. B. eine Sicht. Bestimmte ADOX-Auflistungen können daher Verweise auf dasselbe Objekt enthalten. Wenn Sie das Objekt aus einer Auflistung löschen, wird diese Änderung in einer anderen Auflistung, die auf das gelöschte Objekt verweist, erst sichtbar, wenn für diese Auflistung die Refresh-Methode aufgerufen wird. Mit dem OLE DB-Anbieter für Microsoft Jet werden beispielsweise Sichten zusammen mit der Tables-Auflistung zurückgegeben. Wenn Sie eine Sicht löschen, müssen Sie die Tables-Auflistung zunächst aktualisieren, damit die Änderung für diese Auflistung angezeigt wird.
+Some providers may return other schema objects, such as a View, in the Tables collection. Therefore, some ADOX collections may contain references to the same object. Should you delete the object from one collection, the change will not be visible in another collection that references the deleted object until the Refresh method is called on the collection. For example, with the OLE DB Provider for Microsoft Jet, Views are returned with the Tables collection. If you drop a View, you must Refresh the Tables collection before the collection will reflect the change.
 

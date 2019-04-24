@@ -1,5 +1,5 @@
 ---
-title: Index.DistinctCount-Eigenschaft (DAO)
+title: Index. DistinctCount-Eigenschaft (DAO)
 TOCTitle: DistinctCount Property
 ms:assetid: 24cb7247-76b4-1fce-c3c4-892f16634eff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191836(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 3264ea010db12f3fee6c16bd82fb19ed9bda1992
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291845"
 ---
-# <a name="indexdistinctcount-property-dao"></a>Index.DistinctCount-Eigenschaft (DAO)
+# <a name="indexdistinctcount-property-dao"></a>Index. DistinctCount-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der die Anzahl von eindeutigen, in der verknüpften Tabelle eingeschlossen Werten für das **[Index](index-object-dao.md)** -Objekt angibt (gilt nur für Microsoft Access-Arbeitsbereiche).
 
@@ -38,7 +38,7 @@ Die **DistinctCount**-Eigenschaft gibt nicht immer die tatsächliche Anzahl von 
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel veranschaulicht, wie Sie mit der DistinctCount-Eigenschaft die Anzahl von eindeutigen Werten in einem Index-Objekt ermitteln können. Dieser Wert stimmt jedoch nur direkt nachdem Sie das Index-Objekt erstellt haben. Er bleibt richtig, falls sich keine Schlüssel ändern oder wenn neue Schlüssel hinzugefügt und keine alten Schlüssel gelöscht werden; andernfalls ist er nicht zuverlässig. (Wenn diese Prozedur mehrmals ausgeführt wird, zeigt sich die Auswirkung auf die Werte der DistinctCount-Eigenschaft der vorhandenen Index-Objekte.)
+This example uses the **DistinctCount** property to show how you can determine the number of unique values in an **Index** object. However, this value is only accurate immediately after creating the **Index**. It will remain accurate if no keys change, or if new keys are added and no old keys are deleted; otherwise, it will not be reliable. (If this procedure is run several times, you can see the effect on the **DistinctCount** property values of the existing Index objects.)
 
 ```vb
     Sub DistinctCountX() 

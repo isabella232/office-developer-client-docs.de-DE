@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 0bcf0a37f8c1596856f5d7b921430371d620f7a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296773"
 ---
 # <a name="browseto-macro-action"></a>BrowseTo-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **WechselnZu** -Aktion können Sie zwischen Objekten an ihrem Ort wechseln. Zudem können Sie das Quellobjekt eines Unterformular-Steuerelements ändern, indem Sie das Argument Path to Subform Control angeben. Verwenden Sie **WechselnZu**, um von Formular1 zu Formular2 zu wechseln, ohne ein neues Fenster zu öffnen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **WechselnZu** -Aktion wird mit den folgenden Argumenten verwendet.
+Die **WechselnZu**-Aktion wird mit den folgenden Argumenten verwendet.
 
 <table>
 <colgroup>
@@ -42,27 +42,27 @@ Die **WechselnZu** -Aktion wird mit den folgenden Argumenten verwendet.
 <tbody>
 <tr class="odd">
 <td><p>Objekttyp</p></td>
-<td><p>Der Typ des Objekts, zu dem gewechselt werden soll.</p></td>
+<td><p>Der Objekttyp, zu dem navigiert werden soll.</p></td>
 </tr>
 <tr class="even">
 <td><p>Objektname</p></td>
-<td><p>Das Objekt, das in dem Unterformular-Steuerelement geladen wird, auf das das Argument Pfad zu Unterformular-Steuerelement verweist.</p></td>
+<td><p>Das Objekt, das in dem Unterformular-Steuerelement geladen wird, auf das durch das Argument path to Subform Control verwiesen wird.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Pfad zu Unterformular-Steuerelement</p></td>
-<td><p>Wenn angegeben, der Pfad vom Hauptformular der Anwendung zum Unterformular steuern, lädt das Objekt, das durch das Argument Objektname angegeben.</p></td>
+<td><p>Path to Subform Control</p></td>
+<td><p>Wenn angegeben, der Pfad vom Hauptformular der Anwendung zum Ziel Unterformular-Steuerelement, das das durch das Argument Object Name angegebene Objekt lädt.</p></td>
 </tr>
 <tr class="even">
-<td><p>Where Condition</p></td>
-<td><p>Ersetzt, wenn angegeben, die Bedingung der Datensatzquelle des Objekts.</p></td>
+<td><p>Bedingung</p></td>
+<td><p>Ersetzt die WHERE-Bedingung (sofern angegeben) der Objektdatenquelle.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Seite</p></td>
-<td><p>Legt, wenn angegeben, die Seite des Endlosformulars fest, die als aktuelle Seite festgelegt wird. Dieses Argument ist nur Web.</p></td>
+<td><p>Legt die Seite des Endlosformulars fest, die als aktuelle Seite bestimmt wird. Dieses Argument ist nur Web.</p></td>
 </tr>
 <tr class="even">
-<td><p>Data Mode</p></td>
-<td><p>Wenn angegeben, der Dateneingabemodus des Formulars.</p></td>
+<td><p>Datenmodus</p></td>
+<td><p>Der Dateneingabemodus des Formulars (sofern angegeben).</p></td>
 </tr>
 </tbody>
 </table>
@@ -70,19 +70,19 @@ Die **WechselnZu** -Aktion wird mit den folgenden Argumenten verwendet.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Das Argument PathToSubFormControl muss mit der Syntax im folgenden Codebeispiel wird angegeben werden:
+Das Argument PathToSubFormControl muss mit der Syntax im folgenden Codebeispiel angegeben werden:
 
 ```vb
     Main Form.SubForm Ctrl 1>Form 2.SubForm Ctrl 2>Form 3.SubFormCtrl3
 ```
 
-In diesem Beispiel bildet das Hauptformular in der Access-Clientanwendung das Formular der obersten Ebene. Der Pfad zum Formularsteuerelement Sub-Argument muss auch angeben und Unterformular Steuerelementnamen führende aus dem Hauptformular auf das Unterformular-Steuerelement, das den Container des Objekts, das durch das Argument Objektname angegeben ist. Jedes angegebene Unterformular-Steuerelement muss ein Steuerelement für das Formular darstellen, das ihm vorangestellt ist. Der Pfad muss mit einem Unterformular-Steuerelement enden.
+In this example, the Main Form is the top level form in the Access client application. Das Argument path to Sub Form Control muss die Namen von Formular-und subformular-Steuerelementen, die vom Hauptformular zum Unterformular-Steuerelement führen, als Container des durch das Argument Object Name angegebenen Objekts angeben. Each subform control specified must be a control on the form that precedes it. Der Pfad muss mit einem Unterformular-Steuerelement enden.
 
 ## <a name="example"></a>Beispiel
 
 Das folgende Beispiel zeigt, wie Sie die BrowseTo-Aktion zum Öffnen eines Berichts in einem Unterformular-Steuerelement oder in einem Navigationssteuerelement verwenden.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     OnError

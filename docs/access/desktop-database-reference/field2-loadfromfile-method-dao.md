@@ -1,5 +1,5 @@
 ---
-title: Field2.LoadFromFile-Methode (DAO)
+title: Field2. LoadFrom-Methode (DAO)
 TOCTitle: LoadFromFile Method
 ms:assetid: 8ffe4636-d4da-0579-f4b5-14f423647562
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197396(v=office.15)
@@ -12,25 +12,25 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: bdb1ba92c4a0f4fbee7204b2f4fee8a96c87cc1b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292790"
 ---
-# <a name="field2loadfromfile-method-dao"></a>Field2.LoadFromFile-Methode (DAO)
+# <a name="field2loadfromfile-method-dao"></a>Field2. LoadFrom-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Lädt die angegebene Datei vom Datenträger.
 
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Access 2007
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . LoadFromFile (***FileName***)
+*Ausdruck* . LoadFromdatei (***filename***)
 
 *Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
 
@@ -46,7 +46,7 @@ Hinzugefügte Version: Access 2007
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -91,7 +91,7 @@ Im folgenden Codeausschnitt wird mithilfe der **LoadFromFile**-Methode das Bild 
 
 Das folgende Beispiel zeigt, wie Sie Dateien aus einem angegebenen Ordnerpfad zu einem Anlagenfeld hinzufügen.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Public Function LoadAttachments(strPath As String, Optional strPattern As String = "*.*") As Long

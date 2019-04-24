@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 080281ae0deb25fa10fcdccd8577d3aab076c2cd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312068"
 ---
 # <a name="visual-c-extensions-example"></a>Visual C++--Erweiterungen (Beispiel)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Programm wird gezeigt, wie Werte aus Feldern abgerufen und in C/C++-Variablen konvertiert werden.
 
-In diesem Beispiel nutzt außerdem "intelligente Zeiger" dem automatisch die COM-spezifischen Details zum Aufrufen und Verweis für die **IADORecordBinding** -Schnittstelle zählen behandeln.
+In diesem Beispiel werden auch die "intelligenten Zeiger" verwendet, die die COM-spezifischen Details des Aufrufs und der Verweiszählung für die **IADORecordBinding** -Schnittstelle automatisch behandeln.
 
 Ohne intelligente Zeiger würden Sie diesen Code schreiben:
 
@@ -35,7 +35,7 @@ TESTHR(pRs->QueryInterface(
 if (picRs) picRs->Release(); 
 ```
 
-Mit intelligenten Zeigern leiten Sie den Typ IADORecordBindingPtr vom Typ aus die IADORecordBinding-Schnittstelle mit dieser Anweisung ab:
+Mit intelligenten Zeigern leiten Sie den IADORecordBindingPtr-Typ von der IADORecordBinding-Schnittstelle mit dieser Anweisung ab:
 
 ```cpp 
  
@@ -49,7 +49,7 @@ Außerdem instanziieren Sie den Zeiger folgendermaßen:
 IADORecordBindingPtr picRs(pRs); 
 ```
 
-Da die Visual C++-Erweiterungen durch das **Recordset** -Objekt implementiert werden, akzeptiert der Konstruktor für den intelligenten Zeiger, PicRs, die \_RecordsetPtr Zeiger, pRs. Der Konstruktor ruft pRs Suchen von QueryInterface, akzeptiert der \_RecordsetPtr Zeiger, pRs. Der Konstruktor ruft QueryInterface pRs verwenden, um die IADORecordBinding-Schnittstelle finden.
+Da die Visual C++-Erweiterungen durch das **Recordset** -Objekt implementiert werden, akzeptiert der Konstruktor für den intelligenten Zeiger, picRs \_, den RecordsetPtr-Zeiger, pRs. Der Konstruktor ruft QueryInterface mit pRs auf, um den zu finden \_, der den RecordsetPtr-Zeiger verwendet. Der Konstruktor ruft QueryInterface mit pRs auf, um die IADORecordBinding-Schnittstelle zu suchen.
 
 ```cpp 
  

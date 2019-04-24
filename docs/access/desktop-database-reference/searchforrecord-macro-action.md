@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: efa763a77250e1d5c617358f31421804c772468b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314644"
 ---
 # <a name="searchforrecord-macro-action"></a>SearchForRecord-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die **SuchenNachDatensatz** -Aktion verwenden, um nach einem bestimmten Datensatz in einer Tabelle, einer Abfrage, einem Formular oder einem Bericht zu suchen.
+Sie können die **SuchenNachDatensatz**-Aktion verwenden, um nach einem bestimmten Datensatz in einer Tabelle, einer Abfrage, einem Formular oder einem Bericht zu suchen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **SuchenNachDatensatz** -Aktion verwendet die folgenden Argumente.
+Die **SuchenNachDatensatz**-Aktion verwendet die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -66,19 +66,19 @@ Die **SuchenNachDatensatz** -Aktion verwendet die folgenden Argumente.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Vorherige</strong></p></td>
+<td><p><strong>Previous</strong></p></td>
 <td><p>Sucht vom aktuellen Datensatz ausgehend rückwärts.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Nächste</strong></p></td>
+<td><p><strong>Next</strong></p></td>
 <td><p>Sucht vom aktuellen Datensatz ausgehend vorwärts.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Erster</strong></p></td>
+<td><p><strong>First</strong></p></td>
 <td><p>Sucht vom ersten Datensatz ausgehend vorwärts. Das ist der Standardwert für dieses Argument.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Letzter</strong></p></td>
+<td><p><strong>Last</strong></p></td>
 <td><p>Sucht vom letzten Datensatz ausgehend rückwärts.</p></td>
 </tr>
 </tbody>
@@ -87,23 +87,23 @@ Die **SuchenNachDatensatz** -Aktion verwendet die folgenden Argumente.
 </div></td>
 </tr>
 <tr class="even">
-<td><p><strong>Where Condition</strong></p></td>
-<td><p>Geben Sie die Kriterien für die Suche mit derselben Syntax wie eine SQL WHERE-Klausel ohne das Wort nur &quot;, in dem&quot;. Beispiel:</p>
+<td><p><strong>Bedingung</strong></p></td>
+<td><p>Geben Sie die Suchkriterien unter Verwendung derselben Syntax wie eine SQL-WHERE-Klausel nur ohne das Wort &quot;Where&quot;ein. For example,</p>
 <p>`Description = "Beverages"`</p>
-<p>Um ein Kriterium erstellen, die einen Wert aus einem Textfeld auf einem Formular enthält, müssen Sie einen Ausdruck erstellen, der mit dem Namen des Textfelds mit dem Wert für die Suche den ersten Teil der Kriterien verkettet. Das folgende Kriterium wird beispielsweise das Feld Beschreibung für den Wert in das Textfeld mit dem Namen auf dem Formular mit dem Namen FrmCategories TxtDescription gesucht. Ein Gleichheitszeichen (<strong>=</strong>) am Anfang des Ausdrucks und die Verwendung von Hochkommas (<strong>'</strong>) auf beiden Seiten des Verweises im Feld Text:</p>
+<p>Zum Erstellen eines Kriteriums, das einen Wert aus einem Textfeld in einem Formular enthält, müssen Sie einen Ausdruck erstellen, der den ersten Teil des Kriteriums mit dem Namen des Textfelds verkettet, das den zu durchsuchenden Wert enthält. Mit dem folgenden Kriterium wird beispielsweise das Feld Beschreibung nach dem Wert im Textfeld mit dem Namen txtDescription im Formular mit dem Namen frmCategories durchsucht. NoTieren Sie sich<strong>=</strong>das Gleichheitszeichen () am Anfang des Ausdrucks und die Verwendung von einfachen Anführungszeichen (<strong>'</strong>) auf beiden Seiten des Text Feldverweises:</p>
 <p>`="Description = ' " & Forms![frmCategories]![txtDescription] & "'"`</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Falls mehrere Datensätze mit den Kriterien im Argument **Bedingung** übereinstimmen, legen die folgenden Einstellungen fest, welcher Datensatz gefunden wird:
     
-  - **Der Datensatz argumenteinstellung** Finden Sie in der Tabelle im Abschnitt Einstellungen für Weitere Informationen zum Argument **Datensatz** .
+  - **Die Einstellung des Arguments Record** Weitere Informationen zum Argument **Record** finden Sie in der Tabelle im Abschnitt "Einstellungen".
     
-  - **Die Sortierreihenfolge der Datensätze** Angenommen, wenn das Argument **Datensatz** auf der **ersten**festgelegt ist, kann die Sortierreihenfolge der Datensätze ändern welcher Datensatz gefunden wird.
+  - **Die Sortierreihenfolge der Datensätze** Wenn beispielsweise das Argument **Record** auf **First**festgelegt ist, kann sich durch Ändern der Sortierreihenfolge der Datensätze der gefundene Datensatz ändern.
 
 - Das im Argument **Objektname** angegebene Argument muss vor dem Ausführen dieser Aktion geöffnet werden. Sonst treten Fehler auf.
 
@@ -119,13 +119,13 @@ Die **SuchenNachDatensatz** -Aktion verwendet die folgenden Argumente.
         
     `Description = "Beverages" and CategoryID = 11`
     
-  - Sie können auf Felder verweisen, die zwar in der Datensatzquelle eines Formulars oder Berichts angezeigt werden, nicht aber im Formular oder Bericht. Im vorstehenden Beispiel muss Beschreibung weder CategoryID auf das Formular oder der Bericht für die Kriterien funktionieren angezeigt werden.
+  - Sie können auf Felder verweisen, die zwar in der Datensatzquelle eines Formulars oder Berichts angezeigt werden, nicht aber im Formular oder Bericht. Im vorherigen Beispiel müssen weder Description noch Kategoriename im Formular oder Bericht angezeigt werden, damit die Kriterien funktionieren.
     
   - Sie können logische Operatoren verwenden, z. B. **\<**, **\>**, **AND**, **OR** und **BETWEEN**. Mit der **SuchenDatensatz** -Aktion werden nur Zeichenfolgen gefunden, die der gesuchten Zeichenfolge entsprechen, mit dieser beginnen oder sie enthalten.
 
 ## <a name="example"></a>Beispiel
 
-Mit dem folgenden Makro wird durch Verwendung der ÖffnenTabelle-Aktion zuerst die Tabelle Kategorien geöffnet. Anschließend sucht das Makro mithilfe der SuchenNachDatensatz-Aktion nach dem ersten Datensatz in der Tabelle, dessen Feld Description dem Wert "Getränke" entspricht.
+The following macro first opens the Categories table by using the **OpenTable** action. The macro then uses the **SearchForRecord** action to find the first record in the table where the Description field equals "Beverages."
 
 <table>
 <colgroup>
@@ -141,11 +141,11 @@ Mit dem folgenden Makro wird durch Verwendung der ÖffnenTabelle-Aktion zuerst d
 <tbody>
 <tr class="odd">
 <td><p><strong>OpenTable</strong></p></td>
-<td><p><strong>Tabellenname</strong>: Kategorien<strong>Anzeigen</strong>: <strong>DatasheetData Modus</strong>: <strong>Bearbeiten</strong></p></td>
+<td><p><strong>Tabellen Name</strong>: Kategorien<strong>Ansicht</strong>: <strong>DatasheetData-Modus</strong>: <strong>Bearbeiten</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SearchForRecord</strong></p></td>
-<td><p><strong>Objekttyp</strong>: <strong>TableObject Name</strong>: Kategorien<strong>Record</strong>: <strong>FirstWhere Bedingung</strong>: Description = &quot;Getränke&quot;</p></td>
+<td><p><strong>Objekttyp</strong>: <strong>Table Object Name</strong>: categories<strong>Record</strong>: <strong>FirstWhere Condition</strong>: Description = &quot;beverages&quot;</p></td>
 </tr>
 </tbody>
 </table>

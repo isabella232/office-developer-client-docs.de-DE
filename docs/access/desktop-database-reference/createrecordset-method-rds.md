@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3dda0840617c32e9dceea3bd1baa362c5652a373
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295338"
 ---
 # <a name="createrecordset-method-rds"></a>CreateRecordset-Methode (RDS)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt ein leeres, getrenntes [Recordset](recordset-object-ado.md)-Objekt.
 
@@ -31,25 +31,25 @@ Erstellt ein leeres, getrenntes [Recordset](recordset-object-ado.md)-Objekt.
 |*Object* |Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)- oder [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
 |*ColumnsInfos* |Ein **Variant** -Array mit Attributen, das alle Spalten im erstellten **Recordset** -Objekt definiert. Jede Spaltendefinition enthält ein Array mit vier erforderlichen Attributen und einem optionalen Attribut. Der Satz der Spaltenarrays wird anschließend in einem Array gruppiert, das das **Recordset** -Objekt angibt. Eine Liste der Attribute finden Sie in der folgenden Tabelle.|
 
-### <a name="variant-array-attributes"></a>Variant-Array-Attribute
+### <a name="variant-array-attributes"></a>Variant-Array Attribute
 
 |Attribut|Beschreibung|
 |:--------|:----------|
 |Name |Bezeichnung des Spaltenkopfs|
-|Type |Ganzzahl des Datentyps.|
-|Size |Ganzzahl der Breite in Zeichen, unabhängig vom Datentyp.|
-|Nullability |Boolescher Wert.|
+|Typ |Ganzzahl des Datentyps.|
+|Größe |Ganzzahl der Breite in Zeichen, unabhängig vom Datentyp.|
+|Zulässigkeit |Boolescher Wert.|
 |Skalierung (optional) |Dieses optionale Attribut definiert die Dezimalstellen von numerischen Feldern. Ist dieser Wert nicht angegeben, werden numerische Werte auf drei Dezimalstellen beschränkt. Dies wirkt sich nicht auf die Genauigkeit aus, die Anzahl der Ziffern nach dem Dezimaltrennzeichen ist jedoch auf drei Stellen beschränkt.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das serverseitige Geschäftsobjekt kann das resultierende **Recordset** -Objekt mit Daten von einem Nicht-OLE DB-Datenanbieter wie einer Betriebssystemdatei, die Bestandsquoten enthält, auffüllen.
+Das serverseitige Geschäftsobjekt kann das resultierende **Recordset**-Objekt mit Daten von einem Nicht-OLE DB-Datenanbieter wie einer Betriebssystemdatei, die Bestandsquoten enthält, auffüllen.
 
 In der folgenden Liste sind die [DataTypeEnum](datatypeenum.md)-Werte aufgeführt, die von der **CreateRecordset** -Methode unterstützt werden. Bei der angegebenen Zahl handelt es sich um die Referenznummer, die zum Definieren von Feldern verwendet wird.
 
 Die einzelnen Datentypen haben entweder eine feste oder eine variable Länge. Bei Typen mit fester Länge sollte die Größe auf den Wert -1 festgelegt werden, da die Größe vorher festgelegt werden muss und eine Definition der Größe noch erforderlich ist. Bei Datentypen mit variabler Länge ist eine Größe zwischen 1 und 32767 zulässig.
 
-Bei einigen Datentypen mit variabler Länge wird der Typ möglicherweise in den Typ umgewandelt, der in der Spalte Ersetzung angegeben ist. Diese Ersetzungen werden erst angezeigt, nachdem das Recordset-Objekt erstellt und aufgefüllt wurde. Anschließend können Sie bei Bedarf den tatsächlichen Datentyp anzeigen.
+For some of the variable data types, the type may be coerced to the type noted in the Substitution column. You won't see the substitutions until after the **Recordset** is created and filled. Then you can check for the actual data type, if necessary.
 
 <table>
 <colgroup>
@@ -69,25 +69,25 @@ Bei einigen Datentypen mit variabler Länge wird der Typ möglicherweise in den 
 <tbody>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>adTinyInt</strong></p></td>
+<td><p><strong>addTinyInt</strong></p></td>
 <td><p>16</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>adSmallInt</strong></p></td>
+<td><p><strong>SmallInt</strong></p></td>
 <td><p>2</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>adInteger</strong></p></td>
+<td><p><strong>Ganzzahl</strong></p></td>
 <td><p>3</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>adBigInt</strong></p></td>
+<td><p><strong>Bigint</strong></p></td>
 <td><p>20</p></td>
 <td><p></p></td>
 </tr>
@@ -117,7 +117,7 @@ Bei einigen Datentypen mit variabler Länge wird der Typ möglicherweise in den 
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>adSingle</strong></p></td>
+<td><p><strong>Einzel</strong></p></td>
 <td><p>4</p></td>
 <td><p></p></td>
 </tr>
@@ -129,7 +129,7 @@ Bei einigen Datentypen mit variabler Länge wird der Typ möglicherweise in den 
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>adCurrency</strong></p></td>
+<td><p><strong>Währung</strong></p></td>
 <td><p>6</p></td>
 <td><p></p></td>
 </tr>
@@ -147,25 +147,25 @@ Bei einigen Datentypen mit variabler Länge wird der Typ möglicherweise in den 
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>adBoolean</strong></p></td>
+<td><p><strong>Boolean</strong></p></td>
 <td><p>11</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>adError</strong></p></td>
+<td><p><strong>Fehler</strong></p></td>
 <td><p>10</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>adGuid</strong></p></td>
+<td><p><strong>GUID</strong></p></td>
 <td><p>72</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>adDate</strong></p></td>
+<td><p><strong>Datum</strong></p></td>
 <td><p>7</p></td>
 <td><p></p></td>
 </tr>
@@ -188,61 +188,61 @@ Bei einigen Datentypen mit variabler Länge wird der Typ möglicherweise in den 
 <td><p>7</p></td>
 </tr>
 <tr class="odd">
-<td><p>Variabel</p></td>
-<td><p><strong>adBSTR</strong></p></td>
+<td><p>Variable</p></td>
+<td><p><strong>-BSTR</strong></p></td>
 <td><p>8</p></td>
 <td><p>130</p></td>
 </tr>
 <tr class="even">
-<td><p>Variabel</p></td>
-<td><p><strong>adChar</strong></p></td>
+<td><p>Variable</p></td>
+<td><p><strong>Char</strong></p></td>
 <td><p>129</p></td>
 <td><p>200</p></td>
 </tr>
 <tr class="odd">
-<td><p>Variabel</p></td>
-<td><p><strong>adVarChar</strong></p></td>
+<td><p>Variable</p></td>
+<td><p><strong>-VarChar</strong></p></td>
 <td><p>200</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>Variabel</p></td>
+<td><p>Variable</p></td>
 <td><p><strong>adLongVarChar</strong></p></td>
 <td><p>201</p></td>
 <td><p>200</p></td>
 </tr>
 <tr class="odd">
-<td><p>Variabel</p></td>
+<td><p>Variable</p></td>
 <td><p><strong>adWChar</strong></p></td>
 <td><p>130</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>Variabel</p></td>
+<td><p>Variable</p></td>
 <td><p><strong>adVarWChar</strong></p></td>
 <td><p>202</p></td>
 <td><p>130</p></td>
 </tr>
 <tr class="odd">
-<td><p>Variabel</p></td>
+<td><p>Variable</p></td>
 <td><p><strong>adLongVarWChar</strong></p></td>
 <td><p>203</p></td>
 <td><p>130</p></td>
 </tr>
 <tr class="even">
-<td><p>Variabel</p></td>
-<td><p><strong>adBinary</strong></p></td>
+<td><p>Variable</p></td>
+<td><p><strong>die Binärdatei</strong></p></td>
 <td><p>128</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>Variabel</p></td>
-<td><p><strong>adVarBinary</strong></p></td>
+<td><p>Variable</p></td>
+<td><p><strong>VarBinary</strong></p></td>
 <td><p>204</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>Variabel</p></td>
+<td><p>Variable</p></td>
 <td><p><strong>adLongVarBinary</strong></p></td>
 <td><p>205</p></td>
 <td><p>204</p></td>

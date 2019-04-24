@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 10d55b435a59594eaf3e8380b6690ebbda63a258
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292160"
 ---
 # <a name="gotopage-macro-action"></a>GoToPage-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **GeheZuSeite** -Aktion können Sie den Fokus im aktiven Formular auf das erste Steuerelement auf einer angegebenen Seite verschieben. Sie können diese Aktion verwenden, wenn Sie ein Formular mit Seitenumbrüchen erstellt haben, das Gruppen verwandter Informationen enthält. Sie könnten Sie z. B. ein Mitarbeiterformular verwenden, das persönliche Informationen auf der einen Seite, firmenbezogene Informationen auf einer weiteren Seite und Umsatzinformationen auf einer dritten Seite enthält. Mit der **GeheZuSeite** -Aktion können Sie den Fokus auf die gewünschte Seite verschieben. Sie können auch Registersteuerelemente verwenden, um mehrere Seiten mit Informationen auf einem einzigen Formular darzustellen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **GeheZuSeite** -Aktion verwendet die folgenden Argumente.
+Die **GeheZuSeite**-Aktion verwendet die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -42,7 +42,7 @@ Die **GeheZuSeite** -Aktion verwendet die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Seitenzahl</strong></p></td>
-<td><p>Die Seitenzahl der Seite, auf die der Fokus verschoben werden soll. Geben Sie die Seitenzahl im Feld Seitenzahl im Abschnitt Aktionsargumente des Bereichs Makro-Generator ein. Wenn Sie dieses Argument leer lassen, bleibt der Fokus auf der aktuellen Seite. Sie können die Argumente Rechts und Abwärts verwenden, um den gewünschten Teil der Seite anzuzeigen.</p></td>
+<td><p>Die Nummer der Seite, auf die Sie den Fokus verschieben möchten. Geben Sie die Seitenzahl im Feld <strong>Seitenzahl</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Wenn Sie dieses Argument nicht angeben, bleibt der Fokus auf der aktuellen Seite. Sie können die Argumente <strong>right</strong> und <strong>down</strong> verwenden, um den Teil der Seite anzuzeigen, den Sie anzeigen möchten.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Right</strong></p></td>
@@ -56,13 +56,13 @@ Die **GeheZuSeite** -Aktion verwendet die folgenden Argumente.
 </table>
 
 > [!NOTE]
-> [!HINWEIS] Die Argumente **Rechts** und **Abwärts** werden, abhängig von den regionalen Einstellungen in der Windows-Systemsteuerung, in Zoll oder Zentimetern gemessen.
+> Die Argumente **Rechts** und **Abwärts** werden, abhängig von den regionalen Einstellungen in der Windows-Systemsteuerung, in Zoll oder Zentimetern gemessen.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können diese Aktion verwenden, um das erste Steuerelement (gemäß Definition in der Aktivierreihenfolge des Formulars) auf der angegebenen Seite auszuwählen. Verwenden Sie die **GeheZuSteuerelement** -Aktion, um den Fokus auf ein bestimmtes Steuerelement im Formular zu verschieben.
+Sie können diese Aktion verwenden, um das erste Steuerelement (gemäß Definition in der Aktivierreihenfolge des Formulars) auf der angegebenen Seite auszuwählen. Verwenden Sie die **GeheZuSteuerelement**-Aktion, um den Fokus auf ein bestimmtes Steuerelement im Formular zu verschieben.
 
-Sie können die Argumente **rechts** und **unten** für Formulare mit Seiten größer als das Access-Fenster verwenden. Verwenden Sie das Argument **Seitenzahl**, um sich zur gewünschten Seite zu bewegen, und verwenden Sie dann die Argumente **Rechts** und **Abwärts**, um den gewünschten Teil der Seite anzuzeigen. Access zeigt den Teil der Seite an, dessen obere linke Ecke den angegebenen Abstand von der linken oberen Ecke der Seite hat.
+Sie können die Argumente **right** und **down** für Formulare mit Seiten größer als das Access-Fenster verwenden. Verwenden Sie das Argument **Seitenzahl**, um sich zur gewünschten Seite zu bewegen, und verwenden Sie dann die Argumente **Rechts** und **Abwärts**, um den gewünschten Teil der Seite anzuzeigen. Access zeigt den Teil der Seite an, dessen obere linke Ecke den angegebenen Abstand von der linken oberen Ecke der Seite hat.
 
 In den folgenden Fällen können Sie die **GeheZuSeite** -Aktion nicht verwenden:
 

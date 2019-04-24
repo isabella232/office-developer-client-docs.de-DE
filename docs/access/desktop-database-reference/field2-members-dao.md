@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cf3deac487f1e114bea2a69d5423a210a51a5944
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292797"
 ---
 # <a name="field2-members-dao"></a>Field2-Member (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und einer typischen Gruppe von Eigenschaften dar.
 
@@ -36,8 +36,8 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="field2-appendchunk-method-dao.md">Methoden "AppendChunk"</a></strong></p></td>
-<td><p>Fügt Daten aus einem Zeichenfolgenausdruck an ein Field2-Objekt vom Typ Memo oder Long Binary in einem Recordset an.</p></td>
+<td><p><strong><a href="field2-appendchunk-method-dao.md">AppendChunk</a></strong></p></td>
+<td><p>Appends data from a string expression to a Memo or Long Binary <strong>Field2</strong> object in a <strong><a href="recordset-object-dao.md">Recordset</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-createproperty-method-dao.md">CreateProperty</a></strong></p></td>
@@ -45,7 +45,7 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field2-getchunk-method-dao.md">GetChunk</a></strong></p></td>
-<td><p>Gibt den gesamten oder einen Teil des Inhalts eines Objekts <strong>vom Typ Memo</strong> oder <strong>Long Field2</strong> in der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung eines <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts.</p></td>
+<td><p>Gibt den gesamten Inhalt oder einen Teil des Inhalts eines field2-Objekts von <strong>Memo</strong> oder <strong>Long</strong> in der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung eines <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts zurück.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-loadfromfile-method-dao.md">LoadFromFile</a></strong></p></td>
@@ -75,14 +75,14 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="field2-allowzerolength-property-dao.md">AllowZeroLength</a></strong></p></td>
-<td><p>Legt fest oder gibt einen Wert, der angibt, ob eine leere Zeichenfolge (&quot;&quot;) ist eine gültige Einstellung für die <strong><a href="field-value-property-dao.md">Value</a></strong> -Eigenschaft das <strong>Field2</strong> -Objekt mit einem Text- oder Memo-Datentyp (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Legt fest oder gibt einen Wert zurück, der angibt, ob eine leere&quot;&quot;Zeichenfolge () eine gültige Einstellung für die <strong><a href="field-value-property-dao.md">value</a></strong> -Eigenschaft des <strong>Field2</strong> -Objekts mit einem Datentyp Text oder Memo (nur Microsoft Access-Arbeitsbereiche) ist.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-appendonly-property-dao.md">AppendOnly</a></strong></p></td>
 <td><p>Ruft einen <strong>Boolean</strong>-Wert ab oder legt diesen fest, der angibt, ob für das angegebene Feld festgelegt ist, dass neue Werte beim Hinzufügen an vorhandene Inhalte des Felds angefügt werden. Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="field2-attributes-property-dao.md">Attribute</a></strong></p></td>
+<td><p><strong><a href="field2-attributes-property-dao.md">Attributes</a></strong></p></td>
 <td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der ein oder mehrere Merkmale eines <strong>Field2</strong>-Objekts angibt. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
@@ -103,11 +103,11 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-expression-property-dao.md">Ausdruck</a></strong></p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field2-fieldsize-property-dao.md">Feldgröße</a></strong></p></td>
-<td><p>Gibt die Anzahl von Bytes in der Datenbank (nicht im Arbeitsspeicher) verwendete eines Objekts vom Typ Memo oder Long Binary <strong>Field2</strong> in der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung eines <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts.</p></td>
+<td><p>Returns the number of bytes used in the database (rather than in memory) of a Memo or Long Binary <strong>Field2</strong> object in the <strong><a href="fields-collection-dao.md">Fields</a></strong> collection of a <strong><a href="recordset-object-dao.md">Recordset</a></strong> object.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-foreignname-property-dao.md">ForeignName</a></strong></p></td>
@@ -123,12 +123,12 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field2-ordinalposition-property-dao.md">OrdinalPosition</a></strong></p></td>
-<td><p>Mit dieser Eigenschaft wird die relative Position eines <strong>Field2</strong>-Objekts in einer <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung festgelegt oder zurückgegeben.</p></td>
+<td><p>Legt die relative Position eines <strong>Field2</strong> -Objekts in einer Fields <strong><a href="fields-collection-dao.md"></a></strong> -Auflistung fest oder gibt Sie zurück. .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-originalvalue-property-dao.md">OriginalValue</a></strong></p></td>
 <td><p>Einer der <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> -Werte.</p>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt den Wert eines <strong>Field2</strong>-Objekts in der Datenbank zurück, der bei Beginn der letzten Batchaktualisierung vorhanden war (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
@@ -140,7 +140,7 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 <td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, ob ein <strong>Field2</strong>-Objekt einen Nicht-Nullwert erfordert.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="field2-size-property-dao.md">Größe</a></strong></p></td>
+<td><p><strong><a href="field2-size-property-dao.md">Size</a></strong></p></td>
 <td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die maximale Größe eines <strong>Field2</strong>-Objekts in Bytes angibt.</p></td>
 </tr>
 <tr class="even">
@@ -153,7 +153,7 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-type-property-dao.md">Typ</a></strong></p></td>
-<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt einen solchen Wert zurück. Lese-/Schreibzugriff <strong>Integer</strong>.</p></td>
+<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. <strong>Integer</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field2-validateonset-property-dao.md">ValidateOnSet</a></strong></p></td>
@@ -161,7 +161,7 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 </tr>
 <tr class="even">
 <td><p><strong><a href="field2-validationrule-property-dao.md">ValidationRule</a></strong></p></td>
-<td><p>Legt einen Wert fest, der die Daten in einem Feld überprüft, wenn es geändert oder einer Tabelle hinzugefügt wird, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche). <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
+<td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die Daten in einem Feld direkt bei der Eingabe oder dem Hinzufügen zu einer Tabelle überprüft (gilt nur für Microsoft Access-Arbeitsbereiche). <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field2-validationtext-property-dao.md">ValidationText</a></strong></p></td>
@@ -174,8 +174,8 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 <tr class="odd">
 <td><p><strong><a href="field2-visiblevalue-property-dao.md">VisibleValue</a></strong></p></td>
 <td><p>Einer der <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> -Werte.</p>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
-<p>Gibt einen Wert zurück, der aktuell in der Datenbank vorhanden und neuer ist als die <strong>OriginalValue</strong>-Eigenschaft, wie von einem Konflikt der Batchaktualisierung festgestellt wurde (nur ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<p>Gibt einen aktuellen Wert in der Datenbank zurück, der neuer ist als die durch einen Konflikt bei der Batchaktualisierung ermittelte <strong>OriginalValue</strong>-Eigenschaft (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 </tbody>
 </table>

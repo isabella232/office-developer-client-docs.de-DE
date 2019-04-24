@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9b4f1c46b390e1f059e57f3b7a70fc667da4b09b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288925"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-jet"></a>Microsoft OLE DB-Anbieter für Microsoft Jet
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mithilfe des OLE DB-Anbieters für Microsoft Jet kann ADO auf Microsoft Jet-Datenbanken zugreifen.
 
 ## <a name="connection-string-parameters"></a>Verbindungszeichenfolgen-Parameter
 
-Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das *Provider* -Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
+Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das *Provider*-Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
 
 ```vb 
  
@@ -64,11 +64,11 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>
-<td><p>Gibt den Benutzernamen an. Wenn dieses Schlüsselwort nicht angegeben ist, wird die Zeichenfolge &quot;Admin&quot;, wird standardmäßig verwendet.</p></td>
+<td><p>Gibt den Benutzernamen an. Wenn dieses Schlüsselwort nicht angegeben ist, wird die &quot;Zeichen&quot;Folge "admin" standardmäßig verwendet.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Password</strong></p></td>
-<td><p>Gibt das Benutzerkennwort an. Wenn dieses Schlüsselwort nicht angegeben ist, die leere Zeichenfolge (&quot;&quot;), wird standardmäßig verwendet.</p></td>
+<td><p>Gibt das Benutzerkennwort an. Wenn dieses Schlüsselwort nicht angegeben ist, wird die leere&quot;&quot;Zeichenfolge () standardmäßig verwendet.</p></td>
 </tr>
 </tbody>
 </table>
@@ -76,7 +76,7 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 
 ## <a name="provider-specific-connection-parameters"></a>Anbieterspezifische Verbindungsparameter
 
-Der OLE DB-Anbieter für Microsoft Jet unterstützt neben den von ADO definierten auch mehrere anbieterspezifische dynamische Eigenschaften. Diese können wie alle anderen **Connection** -Parameter über die **Properties** -Auflistung des **Connection** -Objekts oder als Teil der Verbindungszeichenfolge festgelegt werden.
+Der OLE DB-Anbieter für Microsoft Jet unterstützt neben den von ADO definierten auch mehrere anbieterspezifische dynamische Eigenschaften. Diese können wie alle anderen **Connection**-Parameter über die **Properties**-Auflistung des **Connection**-Objekts oder als Teil der Verbindungszeichenfolge festgelegt werden.
 
 In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Eigenschaftennamen aufgeführt.
 
@@ -93,22 +93,22 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Jet OLEDB:Compact freigegebenen Speicherplatz Betrag<br />
+<td><p>Jet OLEDB: Compact reclaimed Space Amount<br />
 (DBPROP_JETOLEDB_COMPACTFREESPACESIZE)</p></td>
 <td><p>Gibt einen Schätzwert für den Speicherplatz in Bytes an, der durch Komprimieren der Datenbank verfügbar gemacht werden kann. Dieser Wert ist erst dann gültig, wenn eine Datenbankverbindung hergestellt wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB:Connection-Steuerelement<br />
+<td><p>Jet OLEDB: Connection Control<br />
 (DBPROP_JETOLEDB_CONNECTIONCONTROL)</p></td>
 <td><p>Gibt an, ob Benutzer eine Verbindung mit der Datenbank herstellen können.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Systemdatenbank erstellen<br />
+<td><p>Jet OLEDB: Create System Database<br />
 (DBPROP_JETOLEDB_CREATESYSTEMDATABASE)</p></td>
 <td><p>Gibt an, ob beim Erstellen einer neuen Datenquelle eine Systemdatenbank erstellt werden muss.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Database Sperrmodus<br />
+<td><p>Jet OLEDB: Daten Bank Sperrmodus<br />
 (DBPROP_JETOLEDB_DATABASELOCKMODE)</p></td>
 <td><p>Gibt den Sperrmodus für diese Datenbank an. Der erste Benutzer, der die Datenbank öffnet, legt den Modus fest, der verwendet wird, solange die Datenbank geöffnet ist.</p></td>
 </tr>
@@ -140,15 +140,15 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <tr class="even">
 <td><p>Jet OLEDB:Flush Transaction Timeout<br />
 (DBPROP_JETOLEDB_FLUSHTRANSACTIONTIMEOUT)</p></td>
-<td><p>Gibt die Zeitdauer an, die gewartet wird, bevor Daten in einem Cache für asynchrones Schreiben tatsächlich auf den Datenträger geschrieben wird. Mit dieser Einstellung werden die Werte für <strong>Jet OLEDB:Shared Async Delay</strong> und <strong>Jet OLEDB:Exclusive Async Delay</strong> außer Kraft gesetzt.  </p></td>
+<td><p>Gibt die Zeitdauer an, die gewartet wird, bevor Daten in einem Cache für asynchrones Schreiben tatsächlich auf den Datenträger geschrieben wird. Mit dieser Einstellung werden die Werte für <strong>Jet OLEDB:Shared Async Delay</strong> und <strong>Jet OLEDB:Exclusive Async Delay</strong> außer Kraft gesetzt.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: globale Bulk Transaktionen<br />
+<td><p>Jet OLEDB: globale Massentransaktionen<br />
 (DBPROP_JETOLEDB_GLOBALBULKNOTRANSACTIONS)</p></td>
 <td><p>Gibt an, ob SQL-Massentransaktionen durchgeführt werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: globale teilweise Massen-Vorgängen<br />
+<td><p>Jet OLEDB: Global Partial Bulk OPS<br />
 (DBPROP_JETOLEDB_GLOBALBULKPARTIAL)</p></td>
 <td><p>Gibt das Kennwort an, das zum Öffnen der Datenbank verwendet wird.</p></td>
 </tr>
@@ -178,17 +178,17 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <td><p>Gibt die maximale Anzahl von Sperren an, die Jet in einer Datenbank setzen kann. Der Standardwert beträgt 9500.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: neue Datenbankkennwort<br />
+<td><p>Jet OLEDB: New Database Password<br />
 (DBPROP_JETOLEDB_NEWDATABASEPASSWORD)</p></td>
-<td><p>Gibt das neue Kennwort an, das für diese Datenbank festgelegt werden muss. Das alte Kennwort wird in <strong>Jet OLEDB:Database Password</strong> gespeichert.  </p></td>
+<td><p>Gibt das neue Kennwort an, das für diese Datenbank festgelegt werden muss. Das alte Kennwort wird in <strong>Jet OLEDB:Database Password</strong> gespeichert.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: ODBC-Befehlstimeout<br />
+<td><p>Jet OLEDB: ODBC Command Timeout<br />
 (DBPROP_JETOLEDB_ODBCCOMMANDTIMEOUT)</p></td>
 <td><p>Gibt die Zeitdauer in Millisekunden an, die verstreicht, bevor eine ODBC-Remoteabfrage von Jet das Zeitlimit überschreitet.</p></td>
 </tr>
 <tr class="even">
-<td><p>Sperren von Jet OLEDB:Page Tabelle zu sperren<br />
+<td><p>Jet OLEDB: Seitensperren für die Tabellensperre<br />
 (DBPROP_JETOLEDB_PAGELOCKSTOTABLELOCK)</p></td>
 <td><p>Gibt an, wie viele Seiten in einer Transaktion gesperrt werden müssen, bevor Jet versucht, die Sperre auf eine Tabellensperre höherzustufen. Wenn dieser Wert 0 ist, wird die Sperre nie höhergestuft.</p></td>
 </tr>
@@ -208,7 +208,7 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <td><p>Gibt den Windows-Registrierungsschlüssel an, der die Werte für das Jet-Datenbankmodul enthält.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB:Reset ISAM Stats<br />
+<td><p>Jet OLEDB: Reset ISAM stats<br />
 (DBPROP_JETOLEDB_RESETISAMSTATS)</p></td>
 <td><p>Gibt an, ob das Schema <strong>Recordset</strong> DBSCHEMA_JETOLEDB_ISAMSTATS die Leistungsindikatoren nach dem Zurückgeben von Leistungsinformationen zurücksetzen soll.</p></td>
 </tr>
@@ -223,7 +223,7 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <td><p>Gibt den Pfad und den Dateinamen für die Arbeitsgruppen-Informationsdatei (Systemdatenbank) an.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB:Transaction Commit-Modus<br />
+<td><p>Jet OLEDB: Transaction Commit Mode<br />
 (DBPROP_JETOLEDB_TXNCOMMITMODE)</p></td>
 <td><p>Gibt an, ob Jet Daten beim Ausführen einer Transaktion synchron oder asynchron auf Datenträger schreibt.</p></td>
 </tr>
@@ -238,7 +238,7 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 
 ## <a name="provider-specific-recordset-and-command-properties"></a>Anwenderspezifische Recordset- und Command-Eigenschaften
 
-Der Jet-Anbieter unterstützt zudem auch mehrere anwenderspezifische **Recordset** - und **Command** -Eigenschaften. Diese Eigenschaften werden über die **Properties** -Auflistung der Objekte **Recordset** oder **Command** festgelegt. In der Tabelle ist der ADO-Eigenschaftenname sowie der entsprechende OLE DB-Eigenschaftenname in Klammern angegeben.
+Der Jet-Anbieter unterstützt zudem auch mehrere anwenderspezifische **Recordset**- und **Command**-Eigenschaften. Diese Eigenschaften werden über die **Properties**-Auflistung der Objekte **Recordset** oder **Command** festgelegt. In der Tabelle ist der ADO-Eigenschaftenname sowie der entsprechende OLE DB-Eigenschaftenname in Klammern angegeben.
 
 <table>
 <colgroup>
@@ -253,49 +253,49 @@ Der Jet-Anbieter unterstützt zudem auch mehrere anwenderspezifische **Recordset
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Jet OLEDB:Bulk Transaktionen<br />
+<td><p>Jet OLEDB: Massentransaktionen<br />
 (DBPROP_JETOLEDB_BULKNOTRANSACTIONS)</p></td>
 <td><p>Gibt an, ob SQL-Massenvorgänge durchgeführt werden. Umfangreiche Massenvorgänge können aufgrund von Ressourcenverzögerungen möglicherweise nicht durchgeführt werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Enable Fat Cursor<br />
+<td><p>Jet OLEDB: enable FAT Cursors<br />
 (DBPROP_JETOLEDB_ENABLEFATCURSOR)</p></td>
 <td><p>Gibt an, ob Jet beim Auffüllen einer Datensatzgruppe für eine Remote-Datensatzherkunft mehrere Zeilen zwischenspeichern soll.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB:Fat Cursor Cachegröße<br />
+<td><p>Jet OLEDB: FAT Cursor Cache Größe<br />
 (DBPROP_JETOLEDB_FATCURSORMAXROWS)</p></td>
-<td><p>Gibt die Anzahl von Zeilen an, die beim Zwischenspeichern von Zeilen von Remotedatenspeichern zwischengespeichert werden sollen. Dieser Wert wird nur beachtet, wenn <strong>Jet OLEDB:Enable Fat Cursors</strong> auf True gesetzt ist.  </p></td>
+<td><p>Gibt die Anzahl von Zeilen an, die beim Zwischenspeichern von Zeilen von Remotedatenspeichern zwischengespeichert werden sollen. Dieser Wert wird nur beachtet, wenn <strong>Jet OLEDB:Enable Fat Cursors</strong> auf True gesetzt ist.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: inkonsistente<br />
+<td><p>Jet OLEDB: inkonsistent<br />
 (DBPROP_JETOLEDB_INCONSISTENT)</p></td>
 <td><p>Gibt an, ob in Abfrageergebnissen inkonsistente Aktualisierungen zulässig sind.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Granularität der Sperren<br />
+<td><p>Jet OLEDB: Sperrgranularität<br />
 (DBPROP_JETOLEDB_LOCKGRANULARITY)</p></td>
 <td><p>Gibt an, ob eine Tabelle mithilfe von Sperren auf Zeilenebene geöffnet wird.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: ODBC Pass-Through-Anweisung<br />
+<td><p>Jet OLEDB: ODBC-Passthrough-Anweisung<br />
 (DBPROP_JETOLEDB_ODBCPASSTHROUGH)</p></td>
-<td><p>Gibt an, dass Jet den SQL-Text in einem <strong>Command</strong> -Objekt unverändert an das Back-End übergeben muss.</p></td>
+<td><p>Gibt an, dass Jet den SQL-Text in einem <strong>Command</strong>-Objekt unverändert an das Back-End übergeben muss.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB:Partial Massen-Vorgängen<br />
+<td><p>Jet OLEDB: Partial Bulk OPS<br />
 (DBPROP_JETOLEDB_BULKPARTIAL)</p></td>
 <td><p>Gibt das Verhalten von Jet für den Fall an, dass SQL DML-Vorgänge nicht ausgeführt werden können.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet-OLEDB:Pass über Massen Abfrage ausgeführt<br />
+<td><p>Jet OLEDB: Durchlauf-Abfrage-BULK-OP<br />
 (DBPROP_JETOLEDB_PASSTHROUGHBULKOP)</p></td>
-<td><p>Gibt an, ob Abfragen, die kein <strong>Recordset</strong> -Objekt zurückgeben, unverändert an die Datenquelle übergeben werden.</p></td>
+<td><p>Gibt an, ob Abfragen, die kein <strong>Recordset</strong>-Objekt zurückgeben, unverändert an die Datenquelle übergeben werden.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet-OLEDB:Pass durch Abfrage für die Verbindungszeichenfolge<br />
+<td><p>Jet OLEDB: Durchlauf-Abfrage-Verbindungszeichenfolge<br />
 (DBPROP_JETOLEDB_ODBCPASSTHROUGHCONNECTSTRING)</p></td>
-<td><p>Gibt die Jet-Verbindungszeichenfolge an, die für die Verbindung mit einem Remotedatenspeicher verwendet wird. Dieser Wert wird nur beachtet, wenn <strong>Jet OLEDB:ODBC Pass-Through Statement</strong> auf True gesetzt ist.  </p></td>
+<td><p>Gibt die Jet-Verbindungszeichenfolge an, die für die Verbindung mit einem Remotedatenspeicher verwendet wird. Dieser Wert wird nur beachtet, wenn <strong>Jet OLEDB:ODBC Pass-Through Statement</strong> auf True gesetzt ist.</p></td>
 </tr>
 <tr class="even">
 <td><p>Jet OLEDB: gespeicherte Abfrage<br />
@@ -303,7 +303,7 @@ Der Jet-Anbieter unterstützt zudem auch mehrere anwenderspezifische **Recordset
 <td><p>Gibt an, ob der Befehlstext nicht als SQL-Befehl, sondern als gespeicherte Abfrage interpretiert werden soll.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Regeln auf Satz überprüfen<br />
+<td><p>Jet OLEDB: Validate Rules on Set<br />
 (DBPROP_JETOLEDB_VALIDATEONSET)</p></td>
 <td><p>Gibt an, ob die Jet-Gültigkeitsregeln beim Festlegen der Spaltendaten oder bei der Übergabe der Änderungen an die Datenbank ausgewertet werden.</p></td>
 </tr>
@@ -323,13 +323,13 @@ Das Microsoft Jet-Datenbankmodul unterstützt keine dynamischen Cursor. Daher un
 
 ## <a name="dynamic-properties"></a>Dynamische Eigenschaften
 
-Der OLE DB-Anbieter für Microsoft Jet fügt verschiedene Eigenschaften in die **Properties** -Auflistung der nicht geöffneten Objekte [Connection](connection-object-ado.md), [Recordset](recordset-object-ado.md) und [Command](command-object-ado.md) ein.
+Der OLE DB-Anbieter für Microsoft Jet fügt verschiedene Eigenschaften in die **Properties**-Auflistung der nicht geöffneten Objekte [Connection](connection-object-ado.md), [Recordset](recordset-object-ado.md) und [Command](command-object-ado.md) ein.
 
 Bei den folgenden Tabellen handelt es sich um ein Cross-Index-System der ADO- und OLE DB-Namen für alle dynamischen Eigenschaften. In OLE DB Programmer's Reference wird ein ADO-Eigenschaftenname als "Description" bezeichnet. Weitere Informationen zu diesen Eigenschaften finden Sie in OLE DB Programmer's Reference. Suchen Sie im Index nach dem OLE DB-Eigenschaftennamen, oder lesen Sie Appendix C: OLE DB Properties.
 
 ## <a name="connection-dynamic-properties"></a>Dynamische Eigenschaften von "Connection"
 
-Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Connection** -Objekts hinzugefügt.
+Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Connection**-Objekts hinzugefügt.
 
 <table>
 <colgroup>
@@ -577,7 +577,7 @@ Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Connecti
 
 ## <a name="recordset-dynamic-properties"></a>Dynamische Eigenschaften von "Recordset"
 
-Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Recordset** -Objekts hinzugefügt.
+Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset**-Objekts hinzugefügt.
 
 <table>
 <colgroup>
@@ -885,7 +885,7 @@ Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Recordse
 
 ## <a name="command-dynamic-properties"></a>Dynamische Eigenschaften von "Command"
 
-Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Command** -Objekts hinzugefügt.
+Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**-Objekts hinzugefügt.
 
 <table>
 <colgroup>
@@ -1185,5 +1185,5 @@ Die folgenden Eigenschaften werden der **Properties** -Auflistung des **Command*
 
 ## <a name="see-also"></a>Siehe auch
 
-Implementierung und funktionale Informationen zu den OLE DB-Anbieter für Microsoft Jet finden Sie in der OLE DB-Anbieter für Microsoft Jet im MDAC SDK-Dokumentation.
+Weitere Informationen zur Implementierung und zur Funktionsweise des OLE DB-Anbieters für Microsoft Jet finden Sie in der Dokumentation zum OLE DB-Anbieter für Microsoft Jet im MDAC SDK.
 

@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c0fa220b3088cde46b0e82631c06520afd839c64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314651"
 ---
 # <a name="sendemail-macro-action"></a>SendEmail-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die **SendenEMail** -Aktion sendet eine e-Mail-Nachricht.
+Die **sendenemail** -Aktion sendet eine e-Mail-Nachricht.
 
 > [!NOTE]
-> [!HINWEIS] Die **SendenEMail** -Aktion ist nur in Datenmakros verfügbar.
+> Die **SendenEMail**-Aktion ist nur in Datenmakros verfügbar.
 
 ## <a name="setting"></a>Einstellung
 
-Die **SendenEMail** -Aktion kann mit den folgenden Argumenten verwendet werden.
+Die **SendenEMail**-Aktion kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -36,25 +36,25 @@ Die **SendenEMail** -Aktion kann mit den folgenden Argumenten verwendet werden.
 <thead>
 <tr class="header">
 <th><p>Argument</p></th>
-<th><p>Eingabe erforderlich</p></th>
+<th><p>Erforderlich</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>To</strong></p></td>
+<td><p><strong>Ziel</strong></p></td>
 <td><p>Ja</p></td>
-<td><p>Die Empfänger der Nachricht, deren Namen Sie in der Zeile <strong>an</strong> , in der Nachricht aufnehmen möchten. Trennen Sie die Namen die Empfänger, die Sie in diesem Argument (und in den Argumenten <em>Cc</em> und <em>Bcc</em> ) durch ein Semikolon (;) angeben.</p></td>
+<td><p>Die Empfänger der Nachricht, deren Namen Sie in der Nachricht an die <strong>an</strong> -Stelle setzen möchten. Trennen Sie die in diesem Argument angegebenen Empfängernamen (und in den Argumenten <em>CC</em> und <em>Bcc</em> ) mit einem Semikolon (;).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Cc</strong></p></td>
 <td><p>Nein</p></td>
-<td><p>Die Empfänger der Nachricht, deren Namen Sie in der Cc aufnehmen möchten (&quot;Carbon Copy, Blindkopie&quot;) Zeile der Nachricht.</p></td>
+<td><p>Die Empfänger der Nachricht, deren Namen Sie der CC-Zeile (&quot;Carbon Copy&quot;) in der Nachricht hinzufügen möchten.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Bcc</strong></p></td>
 <td><p>Nein</p></td>
-<td><p>Die Empfänger der Nachricht, deren Namen Sie in der Bcc aufnehmen möchten (&quot;blind Carbon Copy, Blindkopie&quot;) Zeile der Nachricht.</p></td>
+<td><p>Die Empfänger der Nachricht, deren Namen Sie der Bcc-Zeile (&quot;Blind Carbon Copy&quot;) in der Nachricht hinzufügen möchten.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Subject</strong></p></td>
@@ -70,7 +70,7 @@ Die **SendenEMail** -Aktion kann mit den folgenden Argumenten verwendet werden.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **SendenEMail** -Aktion ist nur in den Makroereignissen **[Nach Löschvorgang](after-delete-macro-event.md)**, **[Nach Eingabe](after-insert-macro-event.md)** und **[Nach Aktualisierung](after-update-macro-event.md)** verfügbar.
 

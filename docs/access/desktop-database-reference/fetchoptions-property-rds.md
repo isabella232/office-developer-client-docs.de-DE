@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ddd2ecf0d7d3df6d1caffd906cf318916a2a8882
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293196"
 ---
 # <a name="fetchoptions-property-rds"></a>FetchOptions-Eigenschaft (RDS)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Typ für asynchrone Abrufvorgänge an.
 
@@ -55,11 +55,11 @@ Legt einen der folgenden Werte fest oder gibt ihn zurück.
 
 
 > [!NOTE]
-> Jede mithilfe der clientseitigen ausführbare Datei, die die folgenden Konstanten verwendet, muss Deklarationen bereitstellen. Sie können Ausschneiden und Einfügen aus der Datei Datei Adcvbs.inc, befindet sich im Ordner C:\Program Files\Common Dateien\System\MSADC gewünschten Konstantendeklarationen.
+> Each client-side executable file that uses these constants must provide declarations for them. You can cut and paste the constant declarations you want from the file Adcvbs.inc, located in the C:\Program Files\Common Files\System\MSADC folder.
 
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-In einer Webanwendung werden Sie in der Regel **AdcFetchAsync** (Standardwert) verwenden möchten, da es sich um eine bessere Leistung bietet. In einer kompilierten Clientanwendung wird meist **adcFetchBackground** verwendet.
+In einer Webanwendung möchten Sie normalerweise **adcFetchAsync** (den Standardwert) verwenden, da dadurch eine bessere Leistung erzielt wird. In einer kompilierten Clientanwendung wird meist **adcFetchBackground** verwendet.
 

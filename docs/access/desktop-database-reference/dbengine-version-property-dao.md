@@ -1,5 +1,5 @@
 ---
-title: DBEngine.Version-Eigenschaft (DAO)
+title: DbEngine. Version-Eigenschaft (DAO)
 TOCTitle: Version Property
 ms:assetid: b2807dc1-604f-4423-289a-ff38a3d9f31b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822024(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7e22645127f18ad815c398fd38f9ac4615dfadc9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294190"
 ---
-# <a name="dbengineversion-property-dao"></a>DBEngine.Version-Eigenschaft (DAO)
+# <a name="dbengineversion-property-dao"></a>DbEngine. Version-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die aktuell verwendete DAO-Version zurück. Schreibgeschützter **String**-Wert.
 
@@ -33,5 +33,5 @@ Gibt die aktuell verwendete DAO-Version zurück. Schreibgeschützter **String**-
 
 ## <a name="remarks"></a>Bemerkungen
 
-Der Rückgabewert ist ein String-Wert, der eine Versionsnummer im Format "Größer.Kleiner" ergibt, z. B. "3.0". Die Versionsnummer des Produkts besteht aus der Versionsnummer (3), einem Punkt und der Versionsnummer (0).
+Der Rückgabewert ist eine Zeichenfolge, die zu einer Versionsnummer im Format "Major. Minor" ausgewertet wird. For example, "3.0". The product version number consists of the version number (3), a period, and the release number (0).
 

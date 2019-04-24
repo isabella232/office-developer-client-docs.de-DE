@@ -1,5 +1,5 @@
 ---
-title: Index.Unique-Eigenschaft (DAO)
+title: Index. Unique-Eigenschaft (DAO)
 TOCTitle: Unique Property
 ms:assetid: a4486da5-8a1a-b4fc-0e07-e65cd2e726f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821087(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 5c94200245b4736ad244cb37beec617a98d6c367
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291692"
 ---
-# <a name="indexunique-property-dao"></a>Index.Unique-Eigenschaft (DAO)
+# <a name="indexunique-property-dao"></a>Index. Unique-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert fest, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen eindeutigen Index (Schlüssel) für eine Tabelle darstellt, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).
 
@@ -43,11 +43,11 @@ Wenn sowohl die **Unique**- als auch die **[Primary](index-primary-property-dao.
 > - Datensätze, die aus Tabellen ohne Indizes abgerufen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.
 > - Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft der einzelnen **[Field](field-object-dao.md)** -Objekte im **Index**-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher das für das betreffende **Index**-Objekt zu verwendende Zugriffsverfahren.
 > - Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.
-> - Indizes wirken sich nicht auf die physische Reihenfolge einer Basistabelle aus; Indexes-wirkt sich nur wie die Datensätze durch das **[Recordset](recordset-object-dao.md)** -Objekt vom Typ Tabelle zugegriffen werden, wenn ein bestimmter Index ausgewählt ist oder wenn das Microsoft Access-Datenbankmodul **Recordset** -Objekte erstellt.
+> - Indizes wirken sich nicht auf die physische Reihenfolge einer Basistabelle aus. Indizes wirken sich nur auf die Verwendung des **[Recordset](recordset-object-dao.md)** -Objekts vom Typ "Tabelle" aus, wenn ein bestimmter Index ausgewählt wird oder wenn das Microsoft Access-Datenbankmodul **Recordset** -Objekte erstellt.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die Unique-Eigenschaft eines neuen Index-Objekts auf den Wert True festgelegt, und der Index wird an die Indexes-Auflistung der Employees-Tabelle angefügt. Anschließend werden die Indexes-Auflistung des TableDef-Objekts und die Properties-Auflistungen aller Index-Objekte in einer Schleife durchlaufen. Das neue Index-Objekt lässt nur einen Datensatz mit einer bestimmten Kombination der Werte von Country, LastName und FirstName im TableDef-Objekt zu.
+This example sets the **Unique** property of a new **Index** object to **True**, and appends the Index to the **Indexes** collection of the Employees table. It then enumerates the **Indexes** collection of the **TableDef** and the **Properties** collection of each **Index**. The new **Index** will only allow one record with a particular combination of Country, LastName, and FirstName in the **TableDef**.
 
 ```vb
     Sub UniqueX() 

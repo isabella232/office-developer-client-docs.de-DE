@@ -1,5 +1,5 @@
 ---
-title: Field2.Expression-Eigenschaft (DAO)
+title: Field2. Expression-Eigenschaft (DAO)
 TOCTitle: Expression Property
 ms:assetid: 8ae9db2c-7460-5bfc-0dc4-3f87e5ab30ff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197109(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 603dfaa9a54ddfe769b96a57b790b4657abbeb14
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292818"
 ---
-# <a name="field2expression-property-dao"></a>Field2.Expression-Eigenschaft (DAO)
+# <a name="field2expression-property-dao"></a>Field2. Expression-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Ruft ab oder legt diesen fest einen Ausdruck, der die Formel für ein berechnetes Feld darstellt. **Zeichenfolge** mit Lese-/Schreibzugriff.
+Dient zum Abrufen oder Festlegen eines Ausdrucks, der die Formel für ein berechnetes Feld darstellt. **Zeichenfolge** mit Lese-/Schreibzugriff.
 
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Access 2010
 
@@ -32,9 +32,9 @@ Hinzugefügte Version: Access 2010
 
 ## <a name="remarks"></a>Bemerkungen
 
-In Access 2013 können Sie Felder der Tabelle erstellen, die Werte berechnen. Die Berechnung können Werte aus Feldern in derselben Tabelle als auch integrierte Funktionen enthalten.
+In Access 2013 können Sie Tabellen Felder erstellen, die Werte berechnen. Die Berechnungen können Werte aus Feldern in derselben Tabelle sowie integrierte Access-Funktionen einbeziehen.
 
-Die Berechnung kann keine Felder aus anderen Tabellen oder Abfragen enthalten.
+Die Berechnung darf keine Felder aus anderen Tabellen oder Abfragen aufnehmen.
 
 Die Ergebnisse der Berechnung sind schreibgeschützt.
 
@@ -42,7 +42,7 @@ Die Ergebnisse der Berechnung sind schreibgeschützt.
 
 Im folgenden Beispiel wird veranschaulicht, wie Sie ein berechnetes Feld erstellen. Die CreateField-Methode erstellt ein Feld namens **FullName**. Die Expression-Eigenschaft wird dann auf den Ausdruck festgelegt, der den Wert des Felds berechnet.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub CreateCalculatedField()

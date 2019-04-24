@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 086993095daef3ff4ad87aed9f572a09124a9d31
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292374"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **SuchenDatensatz** -Aktion suchen Sie die erste Instanz der Daten, die den in den Argumenten von **SuchenDatensatz** angegebenen Kriterien entsprechen. Diese Daten können sich in dem aktuellen Datensatz, einem nachfolgenden oder früheren Datensatz oder dem ersten Datensatz befinden. Sie können Datensätze in dem aktiven Datenblatt, dem Abfragedatenblatt, dem Formulardatenblatt oder dem Formular suchen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
+Die **SuchenDatensatz**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -42,7 +42,7 @@ Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Suchen nach</strong></p></td>
-<td><p>Gibt an, die Daten, die im Datensatz ermittelt werden soll. Geben Sie den Text, Zahl oder Datum, die Sie suchen möchten oder einen Ausdruck, dem ein Gleichheitszeichen vorangestellt wird (<strong>=</strong>), in das Feld <strong>Suchen nach</strong> im <strong>Abschnitt</strong> Bereich des Makro-Generators. Sie können Platzhalterzeichen verwenden. Dies ist ein erforderliches Argument.</p></td>
+<td><p>Gibt die Daten an, die im Datensatz gesucht werden sollen. Geben Sie den Text, die Zahl oder das Datum ein, die Sie suchen möchten, oder geben Sie einen Ausdruck ein, dem ein<strong>=</strong>Gleichheitszeichen () vorangestellt ist, im Feld <strong>Suchen</strong> nach im Abschnitt <strong>aktionsArgumente</strong> des Bereichs Makro-Generator. Sie können Platzhalterzeichen verwenden. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Match</strong></p></td>
@@ -53,13 +53,13 @@ Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
 <td><p>Gibt an, ob bei der Suche die Groß- und Kleinschreibung beachtet wird. Klicken Sie auf <strong>Ja</strong> (Suche mit Beachtung der Groß- und Kleinschreibung) oder auf <strong>Nein</strong> (Suche ohne Beachtung der genauen Groß- und Kleinschreibung). Die Standardeinstellung ist <strong>Nein</strong>.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Suche</strong></p></td>
+<td><p><strong>Search</strong></p></td>
 <td><p>Gibt an, ob die Suche vom aktuellen Datensatz nach oben bis zum Anfang der Datensätze (<strong>Aufwärts</strong>), nach unten bis zum Ende der Datensätze (<strong>Abwärts</strong>) oder bis zum Ende der Datensätze und weiter vom Anfang der Datensätze bis zum aktuellen Datensatz fortfährt, sodass letztlich alle Datensätze durchsucht wurden (<strong>Alle</strong>). Die Standardeinstellung ist <strong>Alle</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Wie formatiert</strong></p></td>
-<td><p>Gibt an, ob die Suche formatierte Daten enthält. Klicken Sie auf <strong>Ja</strong> (Microsoft Office Access 2007 sucht sich nach den Daten, wie sie formatiert und im Feld angezeigt wird) oder auf <strong>Nein</strong> (Access sucht nach Daten an, in der Datenbank gespeichert wird, die nicht immer die gleichen wie es angezeigt wird). Die Standardeinstellung ist <strong>Nein</strong>. Dieses Feature können Sie um die Suche auf Daten in einem bestimmten Format zu beschränken. Angenommen, klicken Sie auf <strong>Ja</strong> , und geben Sie <strong>1,234</strong> in das Argument <strong>Suchen</strong> nach einem 1,234 in einem Feld so formatiert, dass Kommas enthalten. Klicken Sie auf <strong>Nein</strong> , wenn Sie <strong>1234</strong> für die Daten in diesem Feld Suchen eingeben möchten. Um nach Datumsangaben zu suchen, klicken Sie auf <strong>Ja,</strong> um ein Datum zu suchen, genau wie, beispielsweise 08 Juli 2003 formatiert. Klicken Sie auf <strong>Nein</strong>, geben Sie das Datum für das Argument <strong>Suchen nach</strong> im Format, das in den regionalen Einstellungen in Windows-Systemsteuerung festgelegt ist. Dieses Format ist im <strong>kurzen Datumsformat</strong> finden Sie auf der Registerkarte <strong>Datum</strong> in den regionalen Einstellungen angezeigt. Angenommen, wenn das Feld <strong>kurzen Datumsformat</strong> auf <strong>m/JJ</strong>festgelegt ist, können Sie 7/8/03 eingeben und Access findet alle Einträge in einem Datumsfeld, die entsprechen, 8. Juli 2003, unabhängig davon, wie das Feld formatiert ist.</p>
-<p><strong>Hinweis</strong>: das Argument <strong>WieFormatiert</strong> wird wirksam, nur wenn das aktuelle Feld ein gebundenes Steuerelement ist, das Argument <strong>Übereinstimmung</strong> auf <strong>Ganzes Feld</strong>festgelegt ist, wird das Argument <strong>Nur aktuelles Feld</strong> auf <strong>Ja</strong>und die <strong>Übereinstimmung festgelegt Fall</strong> Argument auf <strong>Nein</strong>festgelegt ist.</p>
+<td><p>Gibt an, ob die Suche formatierte Daten einschließt. Klicken Sie auf <strong>Ja</strong> (Microsoft Office Access 2007 sucht nach den Daten, wie sie im Feld formatiert sind und angezeigt werden) oder auf <strong>Nein</strong> (Access sucht nach den Daten, wie sie in der Datenbank gespeichert sind, was nicht immer mit der Anzeige der Daten übereinstimmt). Die Standardeinstellung ist <strong>Nein</strong>. Verwenden Sie dieses Feature, um die Suche auf Daten in einem bestimmten Format zu beschränken. Klicken Sie beispielsweise auf <strong>Ja</strong>, und geben Sie <strong>1,234</strong> für das Argument <strong>Suchen nach</strong> ein, um den Wert 1,234 in einem Feld zu suchen, das so formatiert ist, dass es Kommas enthalten kann. Klicken Sie auf <strong>Nein</strong>, wenn Sie <strong>1234</strong> eingeben möchten, um in diesem Feld nach den Daten zu suchen. Wenn Sie nach Datumsangaben suchen möchten, klicken Sie auf <strong>Ja</strong> , um ein Datum genau nach der Formatierung zu suchen, beispielsweise 08-July-2003. Wenn Sie auf <strong>Nein</strong>klicken, geben Sie das Datum für das Argument <strong>Suchen</strong> nach in dem Format ein, das in den regionalen Einstellungen in der Windows-Systemsteuerung festgelegt ist. Dieses Format wird im Feld <strong>Kurzes Datumsformat</strong> auf der Registerkarte <strong>Datum</strong> in den Ländereinstellungen angezeigt. Wenn beispielsweise das Feld <strong>Kurzes Datumsformat</strong> auf <strong>M/d/yy</strong>festgelegt ist, können Sie 7/8/03 eingeben, und Access findet alle Einträge in einem Date-Feld, die dem 8. Juli 2003 entsprechen, unabhängig davon, wie dieses Feld formatiert ist.</p>
+<p><strong>Hinweis</strong>: das Argument <strong>Search as formatiert</strong> wird nur dann wirksam, wenn das aktuelle Feld ein gebundenes Steuerelement ist, das <strong>Match</strong> -Argument auf <strong>vollständiges Feld</strong>festgelegt ist, das <strong>einzige aktuelle Field</strong> -Argument auf <strong>Ja</strong>und die <strong>Übereinstimmung festgelegt ist. Case</strong> -Argument ist auf <strong>Nein</strong>festgelegt.</p>
 <p>Wenn Sie <strong>Groß-/Kleinschreibung beachten</strong> auf <strong>Ja</strong> oder <strong>Nur aktuelles Feld</strong> auf <strong>Nein</strong> festlegen, müssen Sie außerdem <strong>Wie formatiert</strong> auf <strong>Ja</strong> festlegen.</p></td>
 </tr>
 <tr class="even">
@@ -74,11 +74,11 @@ Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein Makro die **SuchenDatensatz** -Aktion ausführt, sucht Access nach den angegebenen Daten in den Datensätzen (die Reihenfolge der Suche wird durch die Einstellung des Arguments **Suchen** bestimmt). Kann Access die angegebenen Daten finden, sind die Daten im Datensatz markiert.
 
-Die SuchenDatensatz-Aktion hat dieselbe Wirkung wie das Klicken auf Suchen auf der Registerkarte Daten. Die Argumente stimmen mit den Optionen im Dialogfeld Suchen und Ersetzen überein. Wenn Sie die Argumente für SuchenDatensatz im Bereich Makro-Generator festlegen und das Makro dann ausführen, werden die entsprechenden Optionen im Dialogfeld Suchen und Ersetzen aktiviert anzeigt, sobald Sie auf Suchen klicken.
+The **FindRecord** action is equivalent to clicking **Find** on the **Home** tab, and its arguments are the same as the options in the **Find and Replace** dialog box. If you set the **FindRecord** arguments in the Macro Builder pane and then run the macro, you will see the corresponding options selected in the **Find and Replace** dialog box when you click **Find**.
 
 Access behält während einer Datenbanksitzung die letzten Argumente von **SuchenDatensatz** bei, sodass Sie dieselben Kriterien nicht erneut eingeben müssen, wenn Sie nachfolgend Vorgänge mit der **SuchenDatensatz** -Aktion ausführen. Wenn Sie ein Argument leer lassen, verwendet Access die letzte Einstellung für das Argument, basierend auf der vorherigen **SuchenDatensatz** -Aktion oder der Einstellung im Dialogfeld **Suchen und Ersetzen**.
 
@@ -99,9 +99,7 @@ Beachten Sie jedoch Folgendes: Wenn Sie eine Befehlsschaltfläche zum Ausführen
 </thead>
 <tbody>
 <tr class="odd">
-<td>
-      Vermeiden Sie bei sensiblen oder vertraulichen Informationen die Verwendung der <strong>SendKeys</strong>-Anweisung oder eines AutoKeys-Makros. Ein bösartiger Benutzer könnte die Tastenfolgen abfangen und die Sicherheit Ihres Computers und Ihrer Daten gefährden.
-</td>
+<td>Vermeiden Sie die <strong>SendKeys</strong>-Anweisung oder ein AutoKeys-Makro mit sensiblen oder vertraulichen Informationen. Ein böswilliger Benutzer kann die Tastatureingaben abfangen und die Sicherheit von Computer und Daten gefährden.</td>
 </tr>
 </tbody>
 </table>

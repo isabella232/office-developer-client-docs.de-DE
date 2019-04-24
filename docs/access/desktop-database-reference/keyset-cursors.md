@@ -1,5 +1,5 @@
 ---
-title: Keysetcursor (Access PC-Datenbank-Referenz)
+title: Keyset-Cursor (Access-Desktop-Daten Bankreferenz)
 TOCTitle: Keyset cursors
 ms:assetid: 4b6e5f90-4413-4fb3-0a08-2cb89d3c61f7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249236(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 200b10599683a5b5877952664c04e94b2523cfee
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290715"
 ---
 # <a name="keyset-cursors"></a>Keysetcursor
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Der Keysetcursor stellt Funktionalität zwischen einem statischen und einem dynamischen Cursor bereit, um Änderungen zu erkennen. Wie ein statischer Cursor erkennt er nicht immer Änderungen an der Mitgliedschaft und der Reihenfolge des Resultsets. Wie ein dynamischer Cursor erkennt er keine Änderungen an den Werten von Zeilen im Resultset.
 

@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c5972ad630efe3afe27565924c7c6a8a2230a9f2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314574"
 ---
 # <a name="setproperty-macro-action"></a>SetProperty-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können die **FestlegenEigenschaft** -Aktion verwenden, um eine Eigenschaft für ein Steuerelement in einem Formular oder Bericht festzulegen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **FestlegenEigenschaft** -Aktion verwendet die folgenden Argumente.
+Die **FestlegenEigenschaft**-Aktion verwendet die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -42,7 +42,7 @@ Die **FestlegenEigenschaft** -Aktion verwendet die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p>Steuerelementname</p></td>
-<td><p>Geben Sie den Namen des Felds oder der Steuerung für den Wert der Eigenschaft festgelegt werden soll. Verwenden Sie nur den Namen des Steuerelements nicht die vollständige Syntax. Lassen Sie dieses Argument leer, um die-Eigenschaft für das aktuelle Formular oder Bericht festgelegt.</p></td>
+<td><p>Geben Sie den Namen des Felds oder Steuerelements ein, für das Sie den Eigenschaftswert festlegen möchten. Verwenden Sie lediglich den Namen des Steuerelements, nicht die vollständige Syntax. Lassen Sie das Argument leer, um die Eigenschaft für das aktuelle Formular oder den aktuellen Bericht festzulegen.</p></td>
 </tr>
 <tr class="even">
 <td><p>Eigenschaft</p></td>
@@ -50,15 +50,15 @@ Die **FestlegenEigenschaft** -Aktion verwendet die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p>Wert</p></td>
-<td><p>Geben Sie den Wert ein, auf den diese Eigenschaft festgelegt werden soll. Verwenden Sie bei Eigenschaften, deren Werte entweder Ja oder Nein lauten, -1 für Ja und 0 für Nein.</p></td>
+<td><p>Geben Sie den Wert ein, auf den die Eigenschaft festgelegt werden soll. Für Eigenschaften, deren Werte entweder "Ja" oder "Nein" sind, verwenden Sie <strong>-1</strong> für Yes und <strong>0</strong> für Nein.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-- Mithilfe der **FestlegenEigenschaft** -Aktion können Sie die folgenden Eigenschaften eines Steuerelements festlegen: **Aktiviert**, **Sichtbar**, **Gesperrt**, **Links**, **Oben**, **Breite**, **Höhe**, **Textfarbe**, **Hintergrundfarbe** oder **Beschriftung**.
+- Mithilfe der **FestlegenEigenschaft**-Aktion können Sie die folgenden Eigenschaften eines Steuerelements festlegen: **Aktiviert**, **Sichtbar**, **Gesperrt**, **Links**, **Oben**, **Breite**, **Höhe**, **Textfarbe**, **Hintergrundfarbe** oder **Beschriftung**.
 
 - Wenn Sie einen ungültigen Wert für das Argument ***Wert*** eingeben, tritt kein Fehler auf. Allerdings kann es passieren, dass Access die Eigenschaft in einen anderen Wert ändert. Dies hängt davon ab, wie das Argument interpretiert wird.
 
@@ -68,9 +68,9 @@ Die **FestlegenEigenschaft** -Aktion verwendet die folgenden Argumente.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird veranschaulicht, wie die FestlegenEigenschaft-Aktion verwenden, um die Sichtbarkeit des Textfelds **MyTextBox** ein-.
+Das folgende Beispiel zeigt, wie Sie mit der SetProperty-Aktion die Sichtbarkeit des **** Textfelds myTextBox umschalten.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Submacro: TestVisible

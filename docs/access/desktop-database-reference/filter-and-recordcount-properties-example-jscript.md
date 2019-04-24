@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 993209478d18d013771de8239d8e8cd10efc5da2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292489"
 ---
 # <a name="filter-and-recordcount-properties-example-jscript"></a>Filter- und RecordCount-Eigenschaft (Beispiel) (JScript)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird ein Recordset-Objekt der Companies-Tabelle der Northwind-Datenbank geöffnet und die Filter-Eigenschaft verwendet, um die sichtbaren Datensätze auf die Felder einzuschränken, die mit dem Buchstaben D beginnen. Schneiden Sie den folgenden Code aus, kopieren Sie ihn in den Editor von Windows oder einen anderen Texteditor, und speichern Sie ihn als FilterJS.asp.
+This example opens a **Recordset** on the Companies table of the Northwind database and then uses the [Filter](filter-property-ado.md) property to limit the records visible to those where the CompanyName field starts with the letter D. Cut and paste the following code to Notepad or another text editor, and save it as **FilterJS.asp**.
 

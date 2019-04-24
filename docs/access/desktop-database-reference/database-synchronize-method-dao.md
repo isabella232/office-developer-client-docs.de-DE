@@ -1,5 +1,5 @@
 ---
-title: Database.Synchronize-Methode (DAO)
+title: Database. Synchronize-Methode (DAO)
 TOCTitle: Synchronize Method
 ms:assetid: 5e716a4a-2430-8106-5c34-a02dd28bc4f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194659(v=office.15)
@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 411948f3c0ac4d6c353cd2722136dffb6a25fb17
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294708"
 ---
-# <a name="databasesynchronize-method-dao"></a>Database.Synchronize-Methode (DAO)
+# <a name="databasesynchronize-method-dao"></a>Database. Synchronize-Methode (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Synchronisieren Sie (***DbPathName***, ***ExchangeType***)
+*Ausdruck* . Synchronize (****** DbPathName, ***Exchanger***)
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -43,14 +43,14 @@ Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>DbPathName</em></p></td>
+<td><p><em>DbPathname</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Der Pfad zum Zielreplikat, mit dem die Datenbank synchronisiert wird.</p></td>
@@ -59,7 +59,7 @@ Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).
 <td><p><em>ExchangeType</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="synchronizetypeenum-enumeration-dao.md">SynchronizeTypeEnum</a></strong>-Konstante, die angibt, in welche Richtung Änderungen zwischen den beiden Datenbanken synchronisiert werden sollen.</p></td>
+<td><p>Eine <strong><a href="synchronizetypeenum-enumeration-dao.md">SynchronizeTypeEnum</a></strong> -Konstante, die angibt, in welche Richtung Änderungen zwischen den beiden Datenbanken synchronisiert werden sollen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -67,11 +67,11 @@ Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="remarks"></a>Bemerkungen
 
-Mit **Synchronize** können Sie Daten und Entwurfsänderungen zwischen zwei Datenbanken austauschen. Entwurfsänderungen werden grundsätzlich zuerst vorgenommen. Beide Datenbanken müssen sich auf derselben Entwurfsebene befinden, damit Daten ausgetauscht werden können. Beispielsweise möglicherweise ein Austausch von Typ **DbRepExportChanges** Designänderungen bei einem Replikat, obwohl die Daten in DbPathName Fluss nur aus der Datenbank ändert.
+Mit **Synchronize** können Sie Daten und Entwurfsänderungen zwischen zwei Datenbanken austauschen. Entwurfsänderungen werden grundsätzlich zuerst vorgenommen. Beide Datenbanken müssen sich auf derselben Entwurfsebene befinden, damit Daten ausgetauscht werden können. Ein Exchange vom Typ **dbRepExportChanges** kann beispielsweise Entwurfsänderungen an einem Replikat verursachen, obwohl Datenänderungen nur von der Datenbank zu DbPathName fließen.
 
-DbPathName angegebene Replikat muss Teil derselben Replikatgruppe sein. Wenn beide Replikate über dieselbe **ReplicaID**-Eigenschafteneinstellung verfügen oder Designmaster für zwei verschiedene Replikatgruppen sind, schlägt die Synchronisierung fehl.
+Das in dbPathname angegebene Replikat muss Teil derselben Replikatgruppe sein. Wenn beide Replikate über dieselbe **ReplicaID**-Eigenschafteneinstellung verfügen oder Designmaster für zwei verschiedene Replikatgruppen sind, schlägt die Synchronisierung fehl.
 
-Verwenden Sie die **dbRepSyncInternet**-Konstante, um zwei Replikate über das Internet zu synchronisieren. In diesem Fall geben Sie eine Adresse Uniform Resource Locator (URL) für das Argument DbPathName anstelle von angeben eines Pfads lokales Netzwerk.
+Verwenden Sie die **dbRepSyncInternet**-Konstante, um zwei Replikate über das Internet zu synchronisieren. In diesem Fall geben Sie eine URL-Adresse (Uniform Resource Locator) für das Argument dbPathname an, anstatt einen lokalen Netzwerkpfad anzugeben.
 
 
 > [!NOTE]

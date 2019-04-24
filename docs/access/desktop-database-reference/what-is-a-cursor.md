@@ -1,5 +1,5 @@
 ---
-title: Was ist ein Cursor?  (Access PC-Datenbank-Referenz)
+title: Was ist ein Cursor?  (Access Desktop Database Reference)
 TOCTitle: What is a Cursor?
 ms:assetid: cc70d941-05e0-9b14-1c5d-6b1a5802f546
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250013(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2023b39620f80e6f770153e381c74d5285d027c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302744"
 ---
 # <a name="what-is-a-cursor"></a>Was ist ein Cursor?
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Vorgänge in einer relationalen Datenbank fungieren auf einem vollständigen Zeilensatz. Der Zeilensatz, der von einer SELECT-Anweisung zurückgegeben wird, besteht aus allen Zeilen, die den Bedingungen in der WHERE-Klausel der Anweisung entsprechen. Dieser vollständige Zeilensatz, der von der Anweisung zurückgegeben wird, wird als Resultset bezeichnet. Anwendungen, insbesondere interaktive Anwendungen und Onlineanwendungen, können nicht immer effizient mit dem gesamten Resultset als eine Einheit arbeiten. Diese Anwendungen benötigen einen Mechanismus, um jeweils mit einer Zeile oder einem kleinen Zeilenblock zu arbeiten. Cursor sind eine Erweiterung für Resultsets, die diesen Mechanismus anbieten.
 
@@ -73,5 +73,5 @@ Ein Cursor verfolgt auch die aktuelle Position in einem Resultset. Stellen Sie s
 
 ## <a name="scrollability"></a>Bildlauffähigkeit
 
-Der Typ des Cursors, die von der Anwendung verwendete wirkt sich auch die Möglichkeit, die die Zeilen in einem Resultset vorwärts- und Rückwärtssuche durchlaufen; Dies wird manchmal als Scrollfähigkeit bezeichnet. Die Möglichkeit zum Vorwärts- *und* Rückwärtsblättern durch ein Resultset Verschieben der Komplexität des Cursors hinzugefügt und ist deshalb teurer implementieren. Aus diesem Grund sollten Sie einen Cursor mit dieser Funktionalität nur bei Bedarf erhalten.
+Der von der Anwendung verwendete Cursortyp beeinflusst auch die Möglichkeit, in den Zeilen eines Resultsets vorwärts und rückwärts zu navigieren. Dies wird manchmal als Bildlauffähigkeit bezeichnet. Durch die Möglichkeit, in einem Resultset vorwärts *und* rückwärts zu navigieren, wird der Cursor komplexer und ist deshalb teurer in der Implementierung. Aus diesem Grund sollten Sie einen Cursor mit dieser Funktionalität nur im Bedarfsfall verwenden.
 

@@ -1,5 +1,5 @@
 ---
-title: DBEngine.CreateDatabase-Methode (DAO)
+title: DbEngine. CreateDatabase-Methode (DAO)
 TOCTitle: CreateDatabase Method
 ms:assetid: d5821a4b-483a-b8fa-e929-5f036057d8c4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835033(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 13e41dcd182f720b3611108311db6cd56fb4847e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294365"
 ---
-# <a name="dbenginecreatedatabase-method-dao"></a>DBEngine.CreateDatabase-Methode (DAO)
+# <a name="dbenginecreatedatabase-method-dao"></a>DbEngine. CreateDatabase-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die Datenbank auf einem Datenträger und gibt ein geöffnetes **Database**-Objekt zurück (gilt nur für Microsoft Access-Arbeitsbereiche).
+Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die Datenbank auf einem Datenträger und gibt ein geöffnetes **Database**-Objekt zurück (gilt nur für Microsoft Access-Arbeitsbereiche). .
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateDatabase (***Name***, ***Gebietsschema***, ***Option***)
+*Ausdruck* . CreateDatabase (***Name***, ***locale***, ***Option***)
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
@@ -42,7 +42,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -52,7 +52,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 <td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>Eine Zeichenfolge bis zu 255 Zeichen lang sein darf, die den Namen der Datenbankdatei ist, den Sie erstellen. Der vollständige Pfad und der Dateiname kann sein. Wenn Ihr Netzwerk unterstützt, Sie können auch angeben einen Netzwerkpfad wie &quot; \\server1\share1\dir1\db1&quot;. Sie können mit dieser Methode nur Microsoft Access-Datenbankdateien erstellen.</p></td>
+<td><p>Eine aus bis zu 255 Zeichen bestehende Zeichenfolge, die den Namen der Datenbankdatei darstellt, die Sie erstellen. Dies kann der vollständige Pfad- und Dateiname sein. Wenn Ihr Netzwerk diese unterstützt, können Sie auch einen Netzwerkpfad angeben, Beispiels &quot; \\Weise&quot;server1\share1\dir1\db1. Mit dieser Methode können Sie nur Microsoft Access-Datenbankdateien erstellen.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Gebietsschema</em></p></td>
@@ -60,11 +60,11 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 <td><p><strong>String</strong></p></td>
 <td><ul>
 <li><p>Ein Zeichenfolgenausdruck, der eine Sortierreihenfolge zum Erstellen der Datenbank angibt, wie unter Einstellungen festgelegt. Wenn Sie dieses Argument nicht angeben, tritt ein Fehler auf.</p></li>
-<li><p>Sie können auch ein Kennwort für das neue <strong>Database</strong> -Objekt erstellen, indem Sie die Kennwortzeichenfolge (beginnend mit &quot;; Pwd =&quot; ) mit einer Konstante im Argument <em>Locale</em> verknüpfen, wie folgt:</p></li>
-<li><p>DbLangSpanish &amp; &quot;; Pwd = NewPassword&quot;</p></li>
+<li><p>Sie können auch ein Kennwort für das neue <strong>Database</strong> -Objekt erstellen, indem Sie die Kennwortzeichenfolge ( &quot;beginnend mit;p&quot; WD =) mit einer Konstanten <em></em> im Argument locale wie folgt verketten:</p></li>
+<li><p>dbLangSpanish &amp; &quot;;p wd = neues kennwort&quot;</p></li>
 <li><p>Wenn Sie das standardmäßige <em>locale</em> verwenden möchten, aber ein Kennwort angeben, geben Sie für das Argument <em>locale</em> einfach eine Kennwortzeichenfolge an:</p></li>
-<li><p>&quot;; Pwd = NewPassword&quot;</p></li>
-<li><p>[!HINWEIS] Verwenden Sie sichere Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbolen. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</p></li>
+<li><p>&quot;;p WD = neues Kennwort&quot;</p></li>
+<li><p>Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Ziffern und Symbole kombinieren. Schwache Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Schwaches Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie sich merken können, damit Sie es nicht aufschreiben müssen.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können eine der folgenden Konstanten für das Argument locale verwenden, um die **[CollatingOrder](database-collatingorder-property-dao.md)**-Eigenschaft von Text für Zeichenfolgenvergleiche anzugeben.
+Sie können eine der folgenden Konstanten für das Argument locale verwenden, um die **[CollatingOrder](database-collatingorder-property-dao.md)** -Eigenschaft von Text für Zeichenfolgenvergleiche anzugeben.
 
 <table>
 <colgroup>
@@ -196,7 +196,7 @@ Sie können eine oder mehrere der folgenden Konstanten im Argument options verwe
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbEncrypt</strong></p></td>
+<td><p><strong>Dbencrypt einschließen</strong></p></td>
 <td><p>Erstellt eine verschlüsselte Datenbank.</p></td>
 </tr>
 <tr class="even">

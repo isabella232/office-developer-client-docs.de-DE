@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5e291650b99146a8fee22de4651cdfd174e2e48a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314126"
 ---
 # <a name="understanding-recordset-structure"></a>Grundlegendes zur Struktur von Recordsets
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Jedes **Recordset** -Objekt weist eine **Fields** -Auflistung auf, die aus mindestens einem **Field** -Objekt besteht. Ein **Field** -Objekt stellt in der Regel eine Tabellenspalte dar. 
 
-In den folgenden Themen wird erläutert, wie der **Fields** -Auflistung navigieren und Abrufen von Informationen über jedes Feld. Sie werden dann erläutert, welche Art von Informationen über das **Field** -Objekt verfügbar ist und wie sie mit.
+In den folgenden Themen wird erläutert, wie Sie **** durch die Fields-Auflistung navigieren und Informationen zu den einzelnen Feldern abrufen. Anschließend wird erläutert, welche Art von Informationen Ihnen über das **Field** -Objekt zur Verfügung stehen und wie Sie es verwenden.
 
 - [Fields-Auflistung](the-fields-collection.md)
 - [Field-Objekt](the-field-object.md)

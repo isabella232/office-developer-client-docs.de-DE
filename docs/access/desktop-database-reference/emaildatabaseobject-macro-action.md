@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 15cb7d6c422a9d7b0fae17ab649b6cfbc1b497a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293567"
 ---
 # <a name="emaildatabaseobject-macro-action"></a>EMailDatenbankobjekt-Makroaktion
 
-**Gilt für:** Access 2013 | Office 2013
+**Gilt für:** Zugriff 2013 | Office 2013
 
 Verwenden Sie die **EMailDatenbankobjekt** -Aktion, um ein angegebenes Datenblatt, ein Formular, einen Bericht, ein Modul oder eine Datenzugriffsseite von Microsoft Access zum Anzeigen oder Weiterleiten in eine E-Mail-Nachricht einzuschließen.
 
@@ -29,7 +29,7 @@ Verwenden Sie die **EMailDatenbankobjekt** -Aktion, um ein angegebenes Datenblat
 
 ## <a name="settings"></a>Einstellungen
 
-Die **EMailDatenbankobjekt** -Aktion hat die folgenden Argumente.
+Die **EMailDatenbankobjekt**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ Die **EMailDatenbankobjekt** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Objekttyp</strong></p></td>
-<td><p>Der in die E-Mail-Nachricht einzuschließende Objekttyp. Klicken Sie im Feld Objekttyp im Abschnitt Aktionsargumente des Bereichs Makro-Generator auf Tabelle (für ein Tabellendatenblatt), auf Abfrage (für ein Abfragedatenblatt), auf Formular (für ein Formular oder Formulardatenblatt), auf Bericht, auf Modul oder auf Datenzugriffsseite, auf Serversicht, auf Gespeicherte Prozedur oder auf Funktion. Sie können kein Makro senden. Wenn Sie das aktive Objekt einschließen möchten, wählen Sie dessen Typ mit diesem Argument aus, lassen Sie jedoch das Argument Objektname leer.</p></td>
+<td><p>The type of object to include in the mail message. Click <strong>Table</strong> (for a table datasheet), <strong>Query</strong> (for a query datasheet), <strong>Form</strong> (for a form or form datasheet), <strong>Report</strong>, <strong>Module</strong>, or <strong>Data Access Page</strong>, <strong>Server View</strong>, <strong>Stored Procedures</strong>, or <strong>Function</strong> in the <strong>Object Type</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane. You can't send a macro. If you want to include the active object, select its type with this argument, but leave the <strong>Object Name</strong> argument blank.  </p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Objektname</strong></p></td>
@@ -53,7 +53,7 @@ Die **EMailDatenbankobjekt** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Ausgabeformat</strong></p></td>
-<td><p>Der Typ des Formats soll für das eingeschlossene Objekt verwendet. Je nachdem, was Sie für das Argument <strong>Objekttyp</strong> auswählen ändert sich die Liste der Formate, die, denen Sie auswählen können. <strong>Excel 97 - 2003-Arbeitsmappe (*.xls)</strong>, <strong>Excel-Binärarbeitsmappe (.xlsb)</strong>, <strong>Excel-Arbeitsmappe (*.xlsx)</strong>verfügbaren Formate gehören <strong>HTML (*.htm, * .html)</strong>, <strong>Microsoft Excel 5.0/95-Arbeitsmappe (*.xls)</strong>, <strong>PDF-Format </strong>, <strong>Dialog: Rich Text Format (*.RTF)</strong>, <strong>Textdateien (*.txt)</strong>oder <strong>XPS-Format (*.XPS)</strong>. im Feld <strong>Ausgabeformat</strong> . Module können nur im Textformat gesendet werden. Datenzugriffsseiten können nur im HTML-Format gesendet werden. Wenn Sie dieses Argument leer lassen, werden Sie von Access zur Angabe eines Dateiformats aufgefordert.</p></td>
+<td><p>Der Formattyp, der für das eingeschlossene Objekt verwendet werden soll. Die Liste der Formate, aus denen Sie auswählen können, ändert sich je nachdem, was Sie für das Argument <strong>Objekttyp</strong> ausgewählt haben. Zu den verfügbaren Formaten kann <strong>excel 97-excel 2003-Arbeitsmappe (*. xls)</strong>, <strong>Excel-Binär Arbeitsmappe (*. xlsb)</strong>, <strong>Excel-Arbeitsmappe (*. xlsx)</strong>, <strong>HTML (*. htm, *. html)</strong>, <strong>Microsoft Excel 5.0/95-Arbeitsmappe (*. xls)</strong>, <strong>PDF-Format </strong>, <strong>Rich-Text-Formats (*. RTF)</strong>, <strong>Textdateien (*. txt)</strong>oder <strong>XPS-Format (*. Xps)</strong>. im Feld <strong>Ausgabe Format</strong> . Module können nur im Text Format gesendet werden. Datenzugriffsseiten können nur im HTML-Format gesendet werden. Wenn Sie dieses Argument leer lassen, werden Sie von Access zur Angabe eines Dateiformats aufgefordert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>An</strong></p></td>
@@ -61,11 +61,11 @@ Die **EMailDatenbankobjekt** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Cc</strong></p></td>
-<td><p>Die Empfänger der Nachricht, deren Namen Sie in der <strong>Cc</strong> aufnehmen möchten (&quot;Carbon Copy, Blindkopie&quot;) Zeile in der e-Mail-Nachricht. Wenn Sie dieses Argument leer lassen, bleibt die <strong>Cc</strong>-Zeile der E-Mail-Nachricht leer.</p></td>
+<td><p>Die Empfänger der Nachricht, deren Namen Sie der <strong>CC</strong> -Zeile (&quot;Carbon Copy&quot;) in der e-Mail-Nachricht hinzufügen möchten. Wenn Sie für dieses Argument keinen Wert angeben, ist die  <strong>Cc</strong>-Zeile der E-Mail-Nachricht leer.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Bcc</strong></p></td>
-<td><p>Die Empfänger der Nachricht, deren Namen Sie in der <strong>Bcc</strong> aufnehmen möchten (&quot;blind Carbon Copy, Blindkopie&quot;) Zeile in der e-Mail-Nachricht. Wenn Sie dieses Argument leer lassen, bleibt die <strong>Bcc</strong>-Zeile der E-Mail-Nachricht leer.</p></td>
+<td><p>Die Empfänger der Nachricht, deren Namen Sie der <strong>Bcc</strong> -Zeile (&quot;Blind Carbon Copy&quot;) in der e-Mail-Nachricht hinzufügen möchten. Wenn Sie für dieses Argument keinen Wert angeben, ist die  <strong>Bcc</strong>-Zeile der E-Mail-Nachricht leer.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Betreff</strong></p></td>
@@ -87,7 +87,7 @@ Die **EMailDatenbankobjekt** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Objekt in der E-Mail-Nachricht ist das ausgewählte Ausgabeformat. Beim Doppelklicken auf das Objekt wird die entsprechende Software gestartet und das Objekt geöffnet.
 
@@ -111,7 +111,7 @@ Verwenden Sie die **SendObject** -Methode des **DoCmd** -Objekts, um die **EMail
 
 ### <a name="about-the-contributor"></a>Über den Autor
 
-**Verknüpfung von bereitgestellt.** Luke Chung, [FMS, Inc.](https://www.fmsinc.com/), Gründer und Präsident von FMS, Inc., dem führenden Anbieter von kundendatenbanklösungen und Entwickler-Tools.
+**Link bereitgestellt von** Luke Chung, [FMS, Inc.](https://www.fmsinc.com/), der Gründer und President von FMS, Inc., ein führender Anbieter von benutzerdefinierten Datenbanklösungen und Entwicklertools.
 
 - [Merkmale und Begrenzungen in Bezug auf die Verwendung der Methode „SendObject" zum Senden](https://www.fmsinc.com/microsoftaccess/email/sendobject.html)
 

@@ -1,5 +1,5 @@
 ---
-title: BearbeitenDatensatz-Datenblock
+title: Bearbeitendatensatz-Datenblock
 TOCTitle: EditRecord data block
 ms:assetid: fe9f55eb-d7ed-1914-65a9-fa2fcb332b98
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837277(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 32ddfbbf21e62d5967fa1f2f31bab0222664eb39
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293595"
 ---
-# <a name="editrecord-data-block"></a>BearbeitenDatensatz-Datenblock
+# <a name="editrecord-data-block"></a>Bearbeitendatensatz-Datenblock
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit dem **BearbeitenDatensatz** -Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern.
 
 > [!NOTE]
-> [!HINWEIS] Der **BearbeitenDatensatz** -Datenblock ist nur in Datenmakros verfügbar.
+> Der **BearbeitenDatensatz**-Datenblock ist nur in Datenmakros verfügbar.
 
 
 ## <a name="setting"></a>Einstellung
 
-Der **BearbeitenDatensatz** -Datenblock kann mit den folgenden Argumenten verwendet werden.
+Der **BearbeitenDatensatz**-Datenblock kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -47,7 +47,7 @@ Der **BearbeitenDatensatz** -Datenblock kann mit den folgenden Argumenten verwen
 </tbody>
 </table>
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen einfügen, die ausgeführt werden, bevor für die Änderungen am Datensatz ein Commit erfolgt. In einem **BearbeitenDatensatz** -Datenblock sind die folgenden Aktionen verfügbar.
 
@@ -66,7 +66,7 @@ Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen
 <td><p><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Else-makroanweisung</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">If... Dann... Else-Makroanweisung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
@@ -83,7 +83,7 @@ Anschließend können Sie mit einer **Wenn...Dann...Sonst** -Anweisung Vorgänge
 
 Wenn Sie das Bearbeiten eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **BearbeitenDatensatz** -Datenblock wird beendet.
 
-Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um des Felds AssignedTo die zuletzt erstellte Datensatz zu verweisen:
+Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf das Feld ZugewiesenAn des zuletzt erstellten Datensatzes zu verweisen:
 
 `[LastCreateRecordIdentity].[AssignedTo]`
 

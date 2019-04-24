@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f4c1cb1379d1faec39fd44fa8273fba4aadca548
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293189"
 ---
 # <a name="fetchcomplete-event-ado"></a>FetchComplete-Ereignis (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Das **FetchComplete** -Ereignis wird aufgerufen, nachdem alle Datensätze in einer langen asynchronen Operation in das [Recordset](recordset-object-ado.md) abgerufen wurden.
+Das **FetchComplete**-Ereignis wird aufgerufen, nachdem alle Datensätze in einer langen asynchronen Operation in das [Recordset](recordset-object-ado.md) abgerufen wurden.
 
 ## <a name="syntax"></a>Syntax
 
-FetchComplete*pError*, *AdStatus*, *pCommand*
+FetchComplete*pError*, *Status*, precordset **
 
 ## <a name="parameters"></a>Parameter
 
@@ -30,9 +30,9 @@ FetchComplete*pError*, *AdStatus*, *pCommand*
 |:--------|:----------|
 |*pError* |Ein [Error](error-object-ado.md)-Objekt. Es beschreibt den Fehler, der auftritt, wenn der **adStatus** -Wert **adStatusErrorsOccurred** lautet. Andernfalls wird er nicht festgelegt.|
 |*adStatus* |[EventStatusEnum](eventstatusenum.md). Bevor dieses Ereignis zurückgegeben wird, legen Sie diesen Parameter auf **adStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.|
-|*pCommand* |Ein **Recordset** -Objekt. Das Objekt, für das die Datensätze abgerufen wurden.|
+|*precordset* |Ein **Recordset** -Objekt. Das Objekt, für das die Datensätze abgerufen wurden.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um **FetchComplete** mit Microsoft Visual Basic zu verwenden, ist Visual Basic 6.0 oder höher erforderlich.
 

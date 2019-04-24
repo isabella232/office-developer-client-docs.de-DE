@@ -8,40 +8,40 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 99f381ad2f38dc7d2c467ed1e40e4084032006d1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290867"
 ---
 # <a name="item-property-ado-md-cellset"></a>Item-Eigenschaft (ADO MD-Zellmenge)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ruft eine Zelle aus einer Zellmenge mithilfe der entsprechenden Koordinaten ab.
 
 ## <a name="syntax"></a>Syntax
 
-*Zielzelle* = *Zellmenge*. Item (*Positionen*)
+*Zellmenge* = ** festlegen. Element (*Positionen*)
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*Positions* |Ein **Variant-Array** von Werten, die eine Zelle eindeutig angeben. *Positionen* kann eine der folgenden sein:<br/><br/>– Ein Array mit Positionsnummern<br/>– Ein Array mit Elementnamen<br/>-Die Ordnungsposition |
+|*Positions* |Ein **Variant-Array** mit Werten, die eine Zelle eindeutig angeben. *Positionen* können eine der folgenden sein:<br/><br/>-Ein Array von Positionsnummern<br/>-Ein Array von Elementnamen<br/>-Die Ordnungsposition |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **Item** -Eigenschaft, um ein [Cell](cell-object-ado-md.md)-Objekt in einem [Cellset](cellset-object-ado-md.md)-Objekt zurückzugeben. Wenn die **Item** -Eigenschaft auf die Zelle entspricht dem Argument *Positionen* finden kann, tritt ein Fehler auf.
+Verwenden Sie die **Item**-Eigenschaft, um ein [Cell](cell-object-ado-md.md)-Objekt in einem [Cellset](cellset-object-ado-md.md)-Objekt zurückzugeben. Wenn die **Item**-Eigenschaft die Zelle, die dem Argument *Positions* entspricht, nicht finden kann, tritt ein Fehler auf.
 
-Die **Item** -Eigenschaft ist die Standardeigenschaft für das **Cellset** -Objekt. Die folgenden Syntaxformen sind austauschbar:
+Die **Item**-Eigenschaft ist die Standardeigenschaft für das **Cellset**-Objekt. Die folgenden Syntaxformen sind austauschbar:
 
 ```vb
     Cellset.Item ( Positions )
     Cellset ( Positions )
 ```
 
-Das Argument *Positionen* gibt an, welche Zelle zurückgegeben. Sie können die Zelle anhand ihrer Ordnungsposition oder anhand der einzelnen Achsenpositionen angeben. Wenn Sie die Zelle anhand der Achsenpositionen angeben, können Sie den numerischen Wert der Position oder die Namen der einzelnen Positionselemente angeben.
+Durch das Argument *Positions* wird angegeben, welche Zelle zurückgegeben wird. Sie können die Zelle anhand ihrer Ordnungsposition oder anhand der einzelnen Achsenpositionen angeben. Wenn Sie die Zelle anhand der Achsenpositionen angeben, können Sie den numerischen Wert der Position oder die Namen der einzelnen Positionselemente angeben.
 
 Die Ordnungsposition ist eine Zahl, durch die eine Zelle innerhalb der**** Zellmenge eindeutig bestimmt wird. Bei diesem Konzept sind die Zellen in einer**** Zellmenge nummeriert, als wäre die**** Zellmenge ein *p*-dimensionales Array, wobei *p* die Anzahl der Achsen darstellt. Zellen sind zeilenweise strukturiert.
 

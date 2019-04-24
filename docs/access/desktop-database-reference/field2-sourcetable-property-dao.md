@@ -1,5 +1,5 @@
 ---
-title: Field2.SourceTable-Eigenschaft (DAO)
+title: Field2. sourceable-Eigenschaft (DAO)
 TOCTitle: SourceTable Property
 ms:assetid: 24d2fdda-d924-d95e-8458-063dd1d36d5d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191839(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a3ecf8b6655bb9f1dd2b25d264708112834e8a90
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292671"
 ---
-# <a name="field2sourcetable-property-dao"></a>Field2.SourceTable-Eigenschaft (DAO)
+# <a name="field2sourcetable-property-dao"></a>Field2. sourceable-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der den Namen einer Tabelle enthält, bei der es sich um die ursprüngliche Datenquelle für ein **Field2**-Objekt handelt. Schreibgeschützter **String**-Wert.
 
@@ -49,11 +49,11 @@ Bei einem **Field2**-Objekt hängt die Verwendung der Eigenschaften **SourceFiel
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Beziehung</strong></p></td>
@@ -61,7 +61,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der Eigenschaften **SourceFiel
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
@@ -71,6 +71,6 @@ Diese Eigenschaften geben das ursprüngliche Feld und die Tabellennamen an, die 
 
 
 > [!NOTE]
-> Die SourceTable-Eigenschaft gibt keinen sinnvollen Tabellenamen zurück, wenn sie für ein Field2-Objekt in der Fields-Auflistung eines Recordset-Objekts vom Typ Tabelle verwendet wird.
+> The **SourceTable** property will not return a meaningful table name if used on a **Field2** object in the **Fields** collection of a table-type **Recordset** object.
 
 

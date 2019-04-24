@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 65eaafe805eabbac1681aa6dcd08b6b99bb056fa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292293"
 ---
 # <a name="forward-only-cursors"></a>Vorwärtscursor
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Der typische Standardcursortyp, der so genannte Vorwärtscursor (oder Cursor ohne Bildlauf), kann im Resultset nur vorwärts navigieren. Der Bildlauf (die Möglichkeit, im Resultset vorwärts und rückwärts zu navigieren) wird von diesem Cursortyp nicht unterstützt. Es können vielmehr nur Zeilen vom Anfang bis zum Ende des Resultsets abgerufen werden. Bei einigen Vorwärtscursorn (z. B. bei der SQL Server-Cursorbibliothek), werden alle Einfügungs-, Aktualisierungs- und Löschanweisungen des aktuellen Benutzers (oder anderer Benutzer), die Zeilen im Resultset betreffen, beim Abrufen der Zeilen angezeigt. Für den Cursor ist kein Bildlauf rückwärts möglich, weshalb Änderungen, die nach dem Abrufen von Zeilen in der Datenbank an diesen vorgenommen werden, mit diesem Cursor nicht angezeigt werden.
 

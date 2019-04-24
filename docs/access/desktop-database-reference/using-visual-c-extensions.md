@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8bf2234e5935c2a1a13871e7e45c980fb9f33109
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312061"
 ---
 # <a name="using-visual-c-extensions"></a>Verwenden von Visual C++-Erweiterungen
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="the-iadorecordbinding-interface"></a>Die IADORecordBinding-Schnittstelle
 
-Durch die Microsoft Visual C++-Erweiterungen für ADO werden Felder eines [Recordset](recordset-object-ado.md)-Objekts C/C++-Variablen zugeordnet bzw. an diese gebunden. Wenn die aktuelle Zeile des gebundenen **Recordset** -Objekts geändert wird, werden alle gebundenen Felder in **Recordset** in die C/C++-Variablen kopiert. Gegebenenfalls werden die kopierten Daten in den deklarierten Typ der C/C++-Variablen konvertiert.
+Durch die Microsoft Visual C++-Erweiterungen für ADO werden Felder eines [Recordset](recordset-object-ado.md)-Objekts C/C++-Variablen zugeordnet bzw. an diese gebunden. Wenn die aktuelle Zeile des gebundenen **Recordset**-Objekts geändert wird, werden alle gebundenen Felder in **Recordset** in die C/C++-Variablen kopiert. Gegebenenfalls werden die kopierten Daten in den deklarierten Typ der C/C++-Variablen konvertiert.
 
 Durch die **BindToRecordset** -Methode der **IADORecordBinding** -Schnittstelle werden Felder an C/C++-Variablen gebunden. Durch die **AddNew** -Methode wird eine neue Zeile dem gebundenen **Recordset** hinzugefügt. Durch die **Update** -Methode werden Felder in neuen Zeilen des **Recordset** -Objekts mit dem Wert der C/C++-Variablen aufgefüllt oder Felder in vorhandenen Zeilen mit diesem Wert aktualisiert.
 
@@ -48,7 +48,7 @@ Schließen Sie die folgende Datei in die Anwendung ein, um die Visual C++-Erweit
 
 1.  Erstellen Sie eine Klasse, die von der **CADORecordBinding** -Klasse abgeleitet wird.
 
-2.  Geben Sie Bindungseinträge und entsprechende C/C++-Variablen in der abgeleiteten Klasse an. Die Bindungseinträge zwischen **beginnen\_ADO\_BINDUNG** und **END\_ADO\_BINDUNG** Makros. Beenden Sie die Makros nicht mit Kommas oder Semikolons. Die entsprechenden Trennzeichen werden automatisch durch die einzelnen Makros angegeben. Geben Sie einen Bindungseintrag für jedes Feld an, das einer C/C++-Variablen zugeordnet werden soll. Verwenden Sie einen entsprechenden Member aus der **ADO\_FIXED\_Länge\_Eintrag**, **ADO\_numerischen\_Eintrag**, oder **ADO\_VARIABLE\_Länge\_Eintrag** Produktfamilie von Makros.
+2.  Geben Sie Bindungseinträge und entsprechende C/C++-Variablen in der abgeleiteten Klasse an. Klammern Sie die Bindungs **Einträge\_zwischen\_BEGIN ADO-Bindung** und **\_End ADO\_-Bindungs** Makros. Beenden Sie die Makros nicht mit Kommas oder Semikolons. Die entsprechenden Trennzeichen werden automatisch durch die einzelnen Makros angegeben. Geben Sie einen Bindungseintrag für jedes Feld an, das einer C/C++-Variablen zugeordnet werden soll. Verwenden Sie ein entsprechendes Mitglied **aus\_dem\_ADO\_**-Eintrag mit fester Länge, dem **numerischen\_\_ADO-Eintrag**oder der ADO **\_-Eingabe Familie mit Variablen\_Längen\_** von Makros.
 
 3.  Erstellen Sie in der Anwendung eine Instanz der von **CADORecordBinding** abgeleiteten Klasse. Rufen Sie die **IADORecordBinding** -Schnittstelle aus dem **Recordset** -Objekt ab. Rufen Sie dann die **BindToRecordset** -Methode auf, um die **Recordset** -Felder an die C/C++-Variablen zu binden.
 
@@ -68,7 +68,7 @@ Durch die **AddNew** -Methode wird die gleichnamige ADO-Methode, [AddNew](addnew
 
 `AddNew(CADORecordBinding *binding)` 
 
-Durch die **Update** -Methode wird die gleichnamige ADO-Methode, [Update](update-method-ado.md), aufgerufen, um das **Recordset** -Objekt zu aktualisieren.
+Durch die **Update**-Methode wird die gleichnamige ADO-Methode, [Update](update-method-ado.md), aufgerufen, um das **Recordset**-Objekt zu aktualisieren.
 
 `Update(CADORecordBinding *binding)` 
 
@@ -78,32 +78,32 @@ Durch Bindungseintragsmakros wird die Zuordnung eines **Recordset** -Felds und e
 
 Für Daten mit fester Länge (z. B. **adDate** oder **adBoolean** ), numerische Daten (z. B. **adTinyInt**, **adInteger** oder **adDouble** ) und Daten mit variabler Länge (z. B. **adChar**, **adVarChar** oder **adVarBinary** ) werden Makrofamilien bereitgestellt. Alle numerischen Typen, mit Ausnahme von **adVarNumeric**, sind auch Typen mit fester Länge. Jede Familie enthält unterschiedliche Parametersätze, sodass Sie Bindungsinformationen, die nicht von Interesse sind, ausschließen können.
 
-Finden Sie unter *OLE DB Programmer's Reference* Anhang A: Datentypen für zusätzliche Informationen.
+Weitere Informationen finden Sie unter *OLE DB-Programmierreferenz*, "Anhang A: Datentypen".
 
 _**Bindungsanfangseinträge**_
 
-**BEGINNEN\_ADO\_binden**(*Klasse*)
+**\_ADO\_-Bindung beginnen**(*Klasse*)
 
-_**Daten mit variabler Länge**_
+_**Daten mit fester Länge**_
 
-**ADO\_FIXED\_Länge\_Eintrag**(*Ordnungszahl, Datentyp, Puffer Status, ändern*)  
-**ADO\_FIXED\_Länge\_ENTRY2**(*Ordnungszahl, Datentyp, Puffer ändern*)
+**ADO\_-\_Eintrag\_mit fester Länge**(*Ordnungszahl, Datentyp, Puffer, Status, Änderung*)  
+**ADO\_-\_ENTRY2\_mit fester Länge**(*Ordnungszahl, Datentyp, Puffer, Änderung*)
 
 _**Numerische Daten**_
 
-**ADO\_numerischen\_Eintrag**(*Ordnungszahl, Datentyp, Puffer, Genauigkeit, Skalierung, Status, ändern*)  
-**ADO\_numerischen\_ENTRY2**(*Ordnungszahl, Datentyp, Puffer, Genauigkeit, Skalierung ändern*)
+**\_NUMERISCHEr\_ADO-Eintrag**(Ordnungs*Zahl, Datentyp, Puffer, Genauigkeit, Skalierung, Status, Änderung*)  
+**ADO\_-\_numerische ENTRY2**(*Ordnungszahl, Datentyp, Puffer, Genauigkeit, Skalierung, Änderung*)
 
 _**Daten mit variabler Länge**_
 
-**ADO\_VARIABLE\_Länge\_Eintrag**(*Ordnungszahl, Datentyp, Puffer, Größe, Status, Länge ändern*)  
-**ADO\_VARIABLE\_Länge\_ENTRY2**(*Ordnungszahl, Datentyp, Puffer, Größe, Status, ändern*)  
-**ADO\_VARIABLE\_Länge\_ENTRY3**(*Ordnungszahl, Datentyp, Puffer, Größe, Länge, ändern*)  
-**ADO\_VARIABLE\_Länge\_ENTRY4**(*Ordnungszahl, Datentyp, Puffer, Größe ändern*)
+**\_VARIABLEr\_ADO\_-Eintrag**(*Ordnungszahl, Datentyp, Puffer, Größe, Status, Länge, Änderung*)  
+**ADO\_-\_Variable\_Länge ENTRY2**(*Ordinal, DataType, Buffer, Size, Status, Modify*)  
+**ADO\_-\_Variable\_Länge ENTRY3**(*Ordnungszahl, Datentyp, Puffer, Größe, Länge, ändern*)  
+**ADO\_-\_Variable\_Länge ENTRY4**(*Ordinal, DataType, Buffer, Size, Modify*)
 
-_**Bindungsendeinträge**_
+_**End-Bindungseinträge**_
 
-**END\_ADO\_binden** ()
+**Beenden\_der\_ADO-Bindung** ()
 
 <table>
 <colgroup>
@@ -134,21 +134,19 @@ _**Bindungsendeinträge**_
 <td><p>Name der C/C++-Variablen, in der das <strong>Recordset</strong>-Feld gespeichert wird.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Größe</em></p></td>
+<td><p><em>Size</em></p></td>
 <td><p>Maximale Größe von <em>Buffer</em> in Byte. Wenn <em>Buffer</em> eine Zeichenfolge mit variabler Länge enthält, lassen Sie Platz für eine Null am Ende.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Status</em></p></td>
-<td><p>Name einer Variablen, durch die angegeben wird, ob der Inhalt von <em>Buffer</em> gültig ist und ob die Konvertierung des Felds in <em>DataType</em> erfolgreich war.
- Die beiden wichtigsten Werte für diese Variable sind <strong>adFldOK</strong> (die Konvertierung war erfolgreich) und <strong>adFldNull</strong> (der Wert des Felds wäre ein VARIANT vom Typ VT_NULL und nicht lediglich leer). Mögliche Werte für <em>Status</em> in der folgenden Tabelle aufgelisteten &quot;Statuswerte.&quot;</p></td>
+<td><p>Name einer Variablen, durch die angegeben wird, ob der Inhalt von <em>Buffer</em> gültig ist und ob die Konvertierung des Felds in <em>DataType</em> erfolgreich war. Die beiden wichtigsten Werte für diese Variable sind <strong>adFldOK</strong> (die Konvertierung war erfolgreich) und <strong>adFldNull</strong> (der Wert des Felds wäre ein VARIANT vom Typ VT_NULL und nicht lediglich leer). Mögliche Werte für <em>Status</em> werden in der nächsten Tabelle, Status &quot;Werte, aufgeführt.&quot;</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Modify</em></p></td>
-<td><p>Boolesches Flag; durch TRUE wird angegeben, dass ADO das entsprechende <strong>Recordset</strong>-Feld mit dem in <em>Buffer</em> enthaltenen Wert aktualisieren darf.
- Legen Sie den booleschen <em>modify</em>-Parameter auf TRUE fest, um zu ermöglichen, dass das gebundene Feld durch ADO aktualisiert wird. Legen Sie ihn auf FALSE fest, wenn Sie das Feld untersuchen möchten, ohne es zu ändern.</p></td>
+<td><p>Boolesches Flag; durch TRUE wird angegeben, dass ADO das entsprechende <strong>Recordset</strong>-Feld mit dem in <em>Buffer</em> enthaltenen Wert aktualisieren darf. Legen Sie den booleschen <em>modify</em>-Parameter auf TRUE fest, um zu ermöglichen, dass das gebundene Feld durch ADO aktualisiert wird. Legen Sie ihn auf FALSE fest, wenn Sie das Feld untersuchen möchten, ohne es zu ändern.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Precision</em></p></td>
+<td><p><em>Genauigkeit</em></p></td>
 <td><p>Anzahl der Ziffern, die in einer numerischen Variablen dargestellt werden können.</p></td>
 </tr>
 <tr class="odd">
@@ -165,7 +163,7 @@ _**Bindungsendeinträge**_
 
 ## <a name="status-values"></a>Statuswerte
 
-Der Wert der Variablen *Status* gibt an, ob ein Feld erfolgreich in eine Variable kopiert wurde.
+Durch den Wert der *Status*-Variablen wird angegeben, ob ein Feld erfolgreich in eine Variable kopiert wurde.
 
 Beim Festlegen von Daten kann *Status* auf **adFldNull** festgelegt werden, um anzugeben, dass das **Recordset**-Feld auf Null festgelegt werden soll.
 
@@ -201,8 +199,7 @@ Beim Festlegen von Daten kann *Status* auf **adFldNull** festgelegt werden, um a
 <tr class="even">
 <td><p><strong>adFldNull</strong></p></td>
 <td><p>3</p></td>
-<td><p>Beim Abrufen eines Felds wird angegeben, dass ein Nullwert zurückgegeben wurde.
- Beim Festlegen eines Felds wird angegeben, dass das Feld auf <strong>NULL</strong> festgelegt werden soll, wenn <strong>NULL</strong> selbst vom Feld nicht codiert werden kann (z. B. ein Zeichenarray oder eine Ganzzahl).</p></td>
+<td><p>Beim Abrufen eines Felds wird angegeben, dass ein Nullwert zurückgegeben wurde. Beim Festlegen eines Felds wird angegeben, dass das Feld auf <strong>NULL</strong> festgelegt werden soll, wenn <strong>NULL</strong> selbst vom Feld nicht codiert werden kann (z. B. ein Zeichenarray oder eine Ganzzahl).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFldTruncated</strong></p></td>

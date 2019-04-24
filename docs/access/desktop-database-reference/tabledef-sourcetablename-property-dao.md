@@ -1,5 +1,5 @@
 ---
-title: TableDef.SourceTableName-Eigenschaft (DAO)
+title: TableDef. SourceTableName-Eigenschaft (DAO)
 TOCTitle: SourceTableName Property
 ms:assetid: 3c02f5f6-70ae-39ec-0984-8d6b81992418
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192675(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: bd2610e728d97d3a9fc2f6359a42fd3cdccb11e5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314259"
 ---
-# <a name="tabledefsourcetablename-property-dao"></a>TableDef.SourceTableName-Eigenschaft (DAO)
+# <a name="tabledefsourcetablename-property-dao"></a>TableDef. SourceTableName-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
 
 Legt einen Wert fest, der den Namen einer verknüpften Tabelle oder den Namen einer Basistabelle angibt, oder gibt den betreffenden Namen zurück (nur Microsoft Access-Arbeitsbereiche).
 
@@ -37,7 +37,7 @@ Der Wert dieser Eigenschaft ist für eine Basistabelle schreibgeschützt. Für e
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden mithilfe der Eigenschaften Connect und SourceTableName verschiedene externe Tabellen mit einer Microsoft Access-Datenbank verknüpft. Zum Ausführen dieser Prozedur ist die ConnectOutput-Prozedur erforderlich.
+This example uses the **Connect** and **SourceTableName** properties to link various external tables to a Microsoft Access database. The ConnectOutput procedure is required for this procedure to run.
 
 ```vb 
 Sub ConnectX() 

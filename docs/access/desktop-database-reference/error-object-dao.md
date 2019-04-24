@@ -1,5 +1,5 @@
 ---
-title: Error-Objekt - Datenzugriff Objekte (DAO)
+title: Error-Objekt-Data Access Objects (DAO)
 TOCTitle: Error Object
 ms:assetid: e2608bc9-bece-9b47-4562-7a2689601f75
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835711(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3fdfe2091dc2be562f60e5e9cc1935291a74a11d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293476"
 ---
 # <a name="error-object-dao"></a>Error-Objekt (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das **Error**-Objekt enthält Details zu Datenzugriffsfehlern. Dabei bezieht sich jeder Fehler auf eine einzelne Operation, an der DAO beteiligt ist.
 
@@ -27,13 +27,13 @@ Jede Operation, an der DAO beteiligt ist, kann mindestens einen Fehler generiere
 
 Generiert eine anschließende DAO-Operation einen Fehler, wird die **Errors**-Auflistung gelöscht, und die neuen **Error**-Objekte werden in die **Errors**-Auflistung aufgenommen. DAO-Operationen, die keinen Fehler generieren, wirken sich nicht auf die **Errors**-Auflistung aus.
 
-Die Gruppe der **Error**-Objekte in der **Errors**-Auflistung beschreibt einen Fehler. Das erste **Error**-Objekt ist der Fehler der niedrigsten Ebene (der verursachende Fehler), das zweite Objekt ist der Fehler der nächsten Ebene usw. Tritt z. B. ein ODBC-Fehler beim Öffnen eines **[Recordset](recordset-object-dao.md)** -Objekts auf, enthält das erste **Error**-Objekt, **Errors**(0), den ODBC-Fehler der niedrigsten Ebene; die folgenden Fehler enthalten ODBC-Fehler, die von den verschiedenen ODBC-Schichten zurückgegeben werden. In diesem Fall geben der ODBC-Treibermanager und möglicherweise direkt der Treiber gesonderte **Error**-Objekte zurück. Das letzte **Error**-Objekt, **Errors.Count-** 1, enthält den DAO-Fehler mit dem Hinweis, dass das Objekt nicht geöffnet werden konnte.
+Die Gruppe der **Error**-Objekte in der **Errors**-Auflistung beschreibt einen Fehler. Das erste **Error**-Objekt ist der Fehler der niedrigsten Ebene (der verursachende Fehler), das zweite Objekt ist der Fehler der nächsten Ebene usw. Wenn beispielsweise beim Versuch, ein **[Recordset](recordset-object-dao.md)** -Objekt zu öffnen, ein ODBC-Fehler auftritt, enthält das erste **Error** -Objekt ( **Fehler**(0)) den ODBC-Fehler der niedrigsten Ebene; nachfolgende Fehler enthalten die ODBC-Fehler, die von den verschiedenen ODBC-Schichten zurückgegeben werden. In diesem Fall geben der ODBC-Treibermanager und möglicherweise direkt der Treiber gesonderte **Error**-Objekte zurück. Das letzte **Error** -Objekt – **Errors. count-** 1 – enthält den DAO-Fehler, der angibt, dass das Objekt nicht geöffnet werden konnte.
 
 Das Auflisten der speziellen Fehler in der **Errors**-Auflistung ermöglicht den Fehlerbehandlungsroutinen eine präzisere Ermittlung der Fehlerursache und das Durchführen der richtigen Schritte zur Wiederherstellung. Sie können die Eigenschaften des **Error**-Objekts lesen, um die folgenden Details zu den einzelnen Fehlern zu erhalten:
 
   - Die **[Description](error-description-property-dao.md)** -Eigenschaft mit dem Text der Fehlermeldung, die beim Abfangen des Fehlers auf dem Bildschirm angezeigt wird.
 
-  - Die **[Anzahl](error-number-property-dao.md)** -Eigenschaft, die den Long Integer-Wert der Fehlerkonstante enthält.
+  - The **[Number](error-number-property-dao.md)** property, which contains the Long integer value of the error constant.
 
   - Die **[Source](error-source-property-dao.md)** -Eigenschaft, die das Objekt identifiziert, das den Fehler verursacht hat. Das ist besonders nützlich, wenn sich nach einem Aufruf der ODBC-Datenquelle mehrere **Error**-Objekte in der **Errors**-Auflistung befinden.
 
@@ -41,9 +41,9 @@ Das Auflisten der speziellen Fehler in der **Errors**-Auflistung ermöglicht den
     
 
     > [!NOTE]
-    > Wenn in Microsoft Visual Basic für Applikationen (VBA) programmieren, wenn Sie das **New** -Schlüsselwort verwenden, um ein Objekt zu erstellen, die anschließend, tritt ein Fehler vor hat dieses Objekt einer Auflistung, das **DBEngine** -Objekt **Fehler** angefügt wurden Auflistung enthalten keinen Eintrag für dieses Objekt Fehler; sein, da das neue Objekt nicht das **DBEngine** -Objekt zugeordnet ist. Die Fehlerinformationen sind jedoch im VBA-Objekt **Err** verfügbar. Der VBA-Code für die Fehlerbehandlung sollten die **Errors** -Auflistung untersuchen, wenn Sie einen Fehler beim Datenzugriff erwarten. 
+    > Wenn Sie in Microsoft Visual Basic für Applikationen (VBA) programmieren, verwenden Sie das Schlüsselwort **New** , um ein Objekt zu erstellen, das anschließend einen Fehler verursacht, bevor dieses Objekt an eine Auflistung angefügt wurde, die **Fehler** des DBEngine-Objekts **** die Auflistung enthält keinen Eintrag für den Fehler des Objekts, da das neue Objekt nicht dem DBEngine- **** Objekt zugeordnet ist. Die Fehlerinformationen sind jedoch im VBA-Objekt **Err** verfügbar. Ihr VBA-Fehlerbehandlungscode sollte die **Errors** -Auflistung immer dann untersuchen, wenn Sie einen Datenzugriffsfehler antizipieren. 
     > 
-    > Wenn Sie einen zentralen Fehlerhandler schreiben, testen Sie die VBA **Err** -Objekts, um festzustellen, ob die Fehlerinformationen in der **Errors** -Auflistung gültig ist. Wenn die **Number** -Eigenschaft des letzten Elements der **Errors** -Auflistung (DBEngine.Errors.Count - 1) und der Wert der Übereinstimmung **Err** -Objekt, anschließend können Sie eine Reihe von **Select Case** -Anweisung zum Identifizieren des bestimmten DAO-Fehlers oder aufgetretenen Fehler. Wenn sie nicht übereinstimmen, verwenden Sie die [Refresh](errors-refresh-method-dao.md) -Methode auf die **Errors** -Auflistung.
+    > Wenn Sie eine zentrale Fehlerbehandlungsroutine schreiben, testen Sie das VBA- **Err** -Objekt, um zu ermitteln, ob die Fehlerinformationen in der **Errors** -Auflistung gültig sind. Wenn die **Number** -Eigenschaft des letzten Elements der **Errors** -Auflistung (dbengine. Errors. Count-1) und der Wert des **Err** -Objekts übereinstimmen, können Sie dann eine Reihe von **Select Case** -Anweisungen verwenden, um den jeweiligen DAO-Fehler zu identifizieren oder Fehler. Wenn Sie nicht übereinstimmen, verwenden Sie die [Refresh](errors-refresh-method-dao.md) -Methode für die **Errors** -Auflistung.
 
 
 

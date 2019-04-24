@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f42386674ff76d550fb47a971860b4e1a5905236
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296374"
 ---
 # <a name="clearmacroerror-macro-action"></a>ClearMacroError-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Die **ClearMacroError** -Aktion können Sie um Informationen zu einem Fehler zu löschen, die im **MacroError** -Objekt gespeichert ist.
@@ -30,7 +30,7 @@ Die **ClearMacroError** -Aktion können Sie um Informationen zu einem Fehler zu 
 
 Die **ClearMacroError** -Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Tritt ein Fehler in einem Makro, werden Informationen zu dem Fehler im **MacroError** -Objekt gespeichert. Wenn Sie Fehlermeldungen unterdrückt nicht die **[BeiFehler](onerror-macro-action.md)** -Aktion verwendet haben, wird das Makro beendet und die Fehlerinformationen in eine Standardfehlermeldung angezeigt. Wenn Sie Fehlermeldungen unterdrückt die **BeiFehler** -Aktion verwendet haben, sollten Sie die im **MacroError** -Objekt in einer Bedingung oder in einer benutzerdefinierten Fehlermeldung gespeicherte Informationen verwenden.
     
@@ -44,7 +44,7 @@ Die **ClearMacroError** -Aktion hat keine Argumente.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Makro verwendet die **BeiFehler** -Aktion mit dem **nächsten** Argument Fehlermeldungen unterdrückt, und klicken Sie dann die **ÖffnenFormular** -Aktion zum Öffnen eines Formulars verwendet. In diesem Beispiel wird ein Fehler absichtlich erstellt, durch die **GeheZuDatensatz** -Aktion verwenden, um zum vorherigen Datensatz zu wechseln. Die Bedingung ** \[MacroError\].\[ Anzahl\]\<\>0** testet **MacroError** -Objekt. Wenn ein Fehler aufgetreten ist, die Fehlernummer ungleich NULL ist, und die **Abfrageergebnis** -Aktion ausführt. Das Meldungsfeld zeigt den Namen der Aktion, die (in diesem Fall die **GeheZuDatensatz** -Aktion) den Fehler verursacht hat, und die Fehlernummer wird angezeigt. Schließlich werden beim Ausführen der Aktion **ClearMacroError** **MacroError** -Objekt gelöscht.
+Das folgende Makro verwendet die **BeiFehler** -Aktion mit dem **nächsten** Argument Fehlermeldungen unterdrückt, und klicken Sie dann die **ÖffnenFormular** -Aktion zum Öffnen eines Formulars verwendet. In diesem Beispiel wird ein Fehler absichtlich erstellt, durch die **GeheZuDatensatz** -Aktion verwenden, um zum vorherigen Datensatz zu wechseln. Die Bedingung ** \[MacroError\].\[ \>Zahl\]\<0** testet das **MacroError** -Objekt. Wenn ein Fehler aufgetreten ist, die Fehlernummer ungleich NULL ist, und die **Abfrageergebnis** -Aktion ausführt. Das Meldungsfeld zeigt den Namen der Aktion, die (in diesem Fall die **GeheZuDatensatz** -Aktion) den Fehler verursacht hat, und die Fehlernummer wird angezeigt. Schließlich werden beim Ausführen der Aktion **ClearMacroError** **MacroError** -Objekt gelöscht.
 
 <table>
 <colgroup>
@@ -67,18 +67,18 @@ Das folgende Makro verwendet die **BeiFehler** -Aktion mit dem **nächsten** Arg
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><strong>ÖffnenFormular</strong></p></td>
-<td><p><strong>Formularname</strong>: CategoryForm-<strong>Ansicht</strong>: <strong>FormWindow Modus</strong>: <strong>Normal</strong></p></td>
+<td><p><strong>OpenForm</strong></p></td>
+<td><p><strong>Formular Name</strong>: CategoryForm-<strong>Ansicht</strong>: <strong>FormWindow-Modus</strong>: <strong>Normal</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>GoToRecord</strong></p></td>
-<td><p><strong>Objekttyp</strong>: <strong>FormObject Name</strong>: CategoryForm<strong>Datensatz</strong>: vorherigen</p></td>
+<td><p><strong>Objekttyp</strong>: <strong>formobject Name</strong>: CategoryForm<strong>Record</strong>: Previous</p></td>
 </tr>
 <tr class="even">
 <td><p>[MacroError].[Number]&lt;&gt;0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Meldung</strong>: =&quot;Fehler # &quot; &amp; [MacroError]. [Anzahl] &amp; &quot; auf &quot; &amp; [MacroError]. [Aktionsname] &amp; &quot; Aktion. &quot; <strong>Signalton</strong>: <strong>YesType</strong>: Informationen</p></td>
+<td><p><strong>Message</strong>: =&quot;Error # &quot; &amp; [MacroError]. Anzahl &amp; &quot; [ &quot; MacroError &amp; ]. ActionName &amp; &quot; &quot; <strong>Beep</strong>: <strong>jatyp</strong>: Informationen</p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

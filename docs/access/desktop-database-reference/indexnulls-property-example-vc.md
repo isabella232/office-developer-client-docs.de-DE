@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c94ef7da07a9d68fe04dade18e1e54f8277ace6c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291428"
 ---
 # <a name="indexnulls-property-example-vc"></a>IndexNulls-Eigenschaft (VC++-Beispiel)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Dieses Beispiel veranschaulicht die [IndexNulls](indexnulls-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md). Der Code erstellt einen neuen Index und legt den Wert der **IndexNulls** basierend auf Benutzereingaben. Anschließend wird der **Index** der **Employees** - [Tabelle](table-object-adox.md) in der *Northwind* - [Katalog](catalog-object-adox.md)angefügt. Der neue **Index** auf ein [Recordset-Objekt](recordset-object-ado.md) basierend auf der **Employees** -Tabelle angewendet wird, und das **Recordset-Objekt** wird geöffnet. Ein neuer Datensatz wird der **Employees** -Tabelle mit dem Wert **Null** im indizierten Feld hinzugefügt. Gibt an, ob dieser neue Datensatz angezeigt wird, hängt von der Einstellung der **IndexNulls** -Eigenschaft ab.
+In diesem Beispiel wird die Verwendung der [IndexNulls](indexnulls-property-adox.md)-Eigenschaft eines [Index](index-object-adox.md)-Objekts veranschaulicht. Der Code erstellt einen neuen Index und legt den Wert von **IndexNulls** basierend auf der Benutzereingabe fest. Anschließend wird der **Index** der [Tabelle](table-object-adox.md) Employees im **** *Northwind* - [Katalog](catalog-object-adox.md)angefügt. Das neue **Index**-Objekt wird auf ein [Recordset](recordset-object-ado.md)-Objekt basierend auf der **Employees**-Tabelle angewendet, und das **Recordset**-Objekt wird geöffnet. Der **Employees**-Tabelle wird ein neuer Datensatz mit einem **Null**-Wert im indizierten Feld hinzugefügt. Ob dieser neue Datensatz angezeigt wird, hängt von der Einstellung der **IndexNulls**-Eigenschaft ab.
 
 ```cpp 
  
@@ -216,7 +216,7 @@ void IndexNullsX(_bstr_t strSel)
 
 <br/>
 
-**IndexNullX.h**
+**IndexNullX. h**
 
 ```cpp
     // BeginIndexNullsH 

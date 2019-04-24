@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: acf541bde41c282b752532cb74d5ec4fa4a13ca9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308659"
 ---
 # <a name="setwarnings-macro-action"></a>SetWarnings-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Verwenden Sie die **Warnmeldungen** -Aktion, um Systemmeldungen an- oder auszuschalten.
 
@@ -29,7 +29,7 @@ Verwenden Sie die **Warnmeldungen** -Aktion, um Systemmeldungen an- oder auszusc
 
 ## <a name="setting"></a>Einstellung
 
-Die **Warnmeldungen** -Aktion hat das folgende Argument.
+Die **Warnmeldungen**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -45,13 +45,13 @@ Die **Warnmeldungen** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Warnmeldungen An</strong></p></td>
-<td><p>Gibt an, ob Systemmeldungen angezeigt werden. Klicken Sie im Abschnitt Aktionsargumente des Bereichs Makro-Generator im Feld Warnmeldungen An auf Ja (zum Einschalten von Systemmeldungen) oder Nein (zum Ausschalten von Systemmeldungen). Die Standardeinstellung ist Nein.</p></td>
+<td><p>Gibt an, ob Systemmeldungen angezeigt werden. Klicken Sie auf <strong>Ja</strong> (zum Aktivieren von Systemmeldungen) oder <strong>Nein</strong> (zum Deaktivieren von Systemmeldungen) im Feld <strong>Warnungen</strong> im im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator. Die Standardeinstellung ist <strong>Nein</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mithilfe dieser Aktion können Sie verhindern, dass gebundene Warnmeldungen und Meldungsfelder das Makro anhalten. Fehlermeldungen werden jedoch immer angezeigt. Außerdem werden von Microsoft Access nur Dialogfelder angezeigt, in denen nicht nur eine Schaltfläche ausgewählt werden muss (wie **OK**, **Abbrechen**, **Ja** oder **Nein**), sondern eine Eingabe erforderlich ist. Dazu gehören z. B. alle Dialogfelder, in denen Sie Text eingeben oder unter verschiedenen Optionen auswählen müssen.
 

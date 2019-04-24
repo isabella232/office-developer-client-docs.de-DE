@@ -12,31 +12,31 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b3460786785ae7b21184b6d96384ecc59e89d287
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291407"
 ---
 # <a name="initializing-the-microsoft-exchange-data-source-driver"></a>Initialisieren des Microsoft Exchange-Datenquellentreibers
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Bei der Installation von Microsoft Exchange-Datenquellentreibers schreibt das Setupprogramm Standardwerte der Microsoft Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für Microsoft Exchange-Datenquellentreibers beschrieben.
+Bei der Installation des Microsoft Exchange-Datenquellentreibers schreibt das Setup Programm in der Unterschlüssel Module und ISAM Formate eine Reihe von Standardwerten in die Microsoft Windows-Registrierung. You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings. The following sections describe initialization and ISAM Format settings for the Microsoft Exchange Data Source driver.
 
-## <a name="microsoft-exchange-data-source-initialization-settings"></a>Initialisierungseinstellungen für Microsoft Exchange-Datenquelle
+## <a name="microsoft-exchange-data-source-initialization-settings"></a>Microsoft Exchange-Datenquellen-Initialisierungseinstellungen
 
-Die **Konnektivitätsmodul für Access\\Module\\Exchange** Ordner enthält initialisierungseinstellungen für Aceexch.dll-Treiber für den externen Zugriff auf Microsoft Outlook und Microsoft Exchange-Ordner verwendet. Der einzige Eintrag in diesem Ordner lautet wie folgt:
+Der Exchange-Ordner **Access Connectivity Engine\\Engines enthält Initialisierungseinstellungen für den Aceexch. dll-Treiber, der für den externen Zugriff auf Microsoft Outlook-und Microsoft Exchange-Ordner verwendet wird.\\** The only entry in this folder is the following:
 
 `win32=<path>\ACEEXCH.DLL`
 
-Microsoft Access-Datenbankmodul verwendet diese Einstellung, um den Speicherort der Aceexch.dll anzugeben. Der vollständige Pfad wird bei der Installation bestimmt. Werte sind vom Typ REG\_su.
+The Microsoft Access database engine uses this setting to indicate the location of Aceexch.dll. Der vollständige Pfad wird bei der Installation festgelegt. Werte sind vom Typ REG\_SZ.
 
 Die Verwendung des Outlook-ISAM-Formats und des Exchange-Client-ISAM-Formats liefert ähnliche Ergebnisse. Der einzige Unterschied besteht darin, dass die beiden unterschiedlichen Clients für dieselben Spalten unterschiedliche Namen verwenden. Die beiden ISAM-Formate wurden erstellt, damit das Microsoft Access-Datenbankmodul die Spaltennamen in dem vom Benutzer gewünschten Format zurückgeben kann.
 
 ## <a name="microsoft-outlook-client-isam-formats"></a>Microsoft Outlook-Client-ISAM-Formate
 
-Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Outlook 9.0** Ordner enthält die folgenden Einträge.
+Der Ordner " **Access\\Connectivity Engine\\ISAM Formats Outlook 9,0** " enthält die folgenden Einträge.
 
 <table>
 <colgroup>
@@ -47,20 +47,20 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Outlook 9.0** Ordner enth
 <thead>
 <tr class="header">
 <th><p>Name des Eintrags</p></th>
-<th><p>Type</p></th>
+<th><p>Typ</p></th>
 <th><p>Wert</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Engine</p></td>
+<td><p>Modul</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Exchange</p></td>
 </tr>
 <tr class="even">
 <td><p>ImportFilter</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Outlook()</p></td>
+<td><p>Outlook ()</p></td>
 </tr>
 <tr class="odd">
 <td><p>CanLink</p></td>
@@ -73,7 +73,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Outlook 9.0** Ordner enth
 <td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>IsamType</p></td>
+<td><p>Isamtype</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>3</p></td>
 </tr>
@@ -104,7 +104,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Outlook 9.0** Ordner enth
 
 ## <a name="microsoft-exchange-client-isam-formats"></a>Microsoft Exchange-Client-ISAM-Formate
 
-Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Exchange 4.0** Ordner enthält die folgenden Einträge.
+Der Ordner **Access Connectivity\\Engine ISAM\\Exchange 4,0** enthält die folgenden Einträge.
 
 <table>
 <colgroup>
@@ -115,20 +115,20 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Exchange 4.0** Ordner ent
 <thead>
 <tr class="header">
 <th><p>Name des Eintrags</p></th>
-<th><p>Type</p></th>
+<th><p>Typ</p></th>
 <th><p>Wert</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Engine</p></td>
+<td><p>Modul</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Exchange</p></td>
 </tr>
 <tr class="even">
 <td><p>ImportFilter</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Exchange()</p></td>
+<td><p>Exchange ()</p></td>
 </tr>
 <tr class="odd">
 <td><p>CanLink</p></td>
@@ -141,7 +141,7 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Exchange 4.0** Ordner ent
 <td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>IsamType</p></td>
+<td><p>Isamtype</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>3</p></td>
 </tr>
@@ -170,9 +170,9 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Exchange 4.0** Ordner ent
 
 
 
-## <a name="customizing-the-schemaini-file-for-outlook-and-exchange-data"></a>Anpassen der Datei "Schema.ini" für Outlook- und Exchange-Daten
+## <a name="customizing-the-schemaini-file-for-outlook-and-exchange-data"></a>Anpassen der Datei "Schema. ini" für Outlook und Exchange-Daten
 
-Die Datei Schema.ini wird von Outlook- und Exchange-ISAM weitgehend wie von Text-ISAM verwendet. Schema.ini enthält die Angaben zur Datenquelle: wie die Daten formatiert werden und die Namen der zu verwendenden Spalten.
+The Schema.ini file is used by the Outlook and Exchange ISAM in much the same way that it is used by the Text ISAM. Schema.ini contains the specifics of a data source: how the data is formatted, and the names of columns that should be accessed.
 
-Es ist nicht erforderlich, die Datei Schema.ini zu ändern, um Daten für Outlook und Exchange zu lesen, zu importieren oder zu exportieren. Viele der Einstellungen für Outlook und Exchange in der Datei Schema.ini beziehen sich auf interne Tags, die für MAPI benötigt werden. Sie sollten nicht versuchen, diese Tagwerte zu ändern.
+It is not necessary to modify the Schema.ini file before data can be read, imported, or exported for Outlook and Exchange. Many of the settings inside the Schema.ini file for Outlook and Exchange are specific to internal tags that MAPI requires. You should not attempt to modify those tag values.
 

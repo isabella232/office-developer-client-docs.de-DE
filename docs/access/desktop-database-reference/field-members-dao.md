@@ -1,5 +1,5 @@
 ---
-title: Elemente des (DAO)
+title: Field-Elemente (DAO)
 TOCTitle: Field Members
 ms:assetid: 4b6a587f-1fd0-37fb-db7d-75b587a8dc60
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193511(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1a0e448662384572163fca074e554a5e30be30a7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293091"
 ---
-# <a name="field-members-dao"></a>Elemente des (DAO)
+# <a name="field-members-dao"></a>Field-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und einer typischen Gruppe von Eigenschaften dar.
 
@@ -36,8 +36,8 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="field-appendchunk-method-dao.md">Methoden "AppendChunk"</a></strong></p></td>
-<td><p>Fügt Daten aus einem Zeichenfolgenausdruck an ein Field-Objekt vom Typ Memo oder Long Binary in einem Recordset an.</p></td>
+<td><p><strong><a href="field-appendchunk-method-dao.md">AppendChunk</a></strong></p></td>
+<td><p>Appends data from a string expression to a Memo or Long Binary <strong><a href="field-object-dao.md">Field</a></strong> object in a <strong><a href="recordset-object-dao.md">Recordset</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-createproperty-method-dao.md">CreateProperty</a></strong></p></td>
@@ -45,7 +45,7 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-getchunk-method-dao.md">GetChunk</a></strong></p></td>
-<td><p>Gibt den gesamten Inhalt oder einen Teil des Inhalts eines <strong><strong>Field</strong></strong> -Objekts vom Typ <a href="field-object-dao.md">Memo</a> oder <strong>Long Binary</strong> in der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung eines <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts zurück.</p></td>
+<td><p>Gibt den Inhalt eines <strong>Memo</strong> -oder <strong>Long Binary</strong> <strong><a href="field-object-dao.md">Field</a></strong> -Objekts in der Fields-Auflistung <strong><a href="fields-collection-dao.md"></a></strong> eines <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts ganz oder teilweise zurück.</p></td>
 </tr>
 </tbody>
 </table>
@@ -67,10 +67,10 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="field-allowzerolength-property-dao.md">AllowZeroLength</a></strong></p></td>
-<td><p>Legt fest oder gibt einen Wert, der angibt, ob eine leere Zeichenfolge (&quot;&quot;) ist eine gültige Einstellung für die <strong><a href="field-value-property-dao.md">Value</a></strong> -Eigenschaft des <strong><a href="field-object-dao.md">Field</a></strong> -Objekts mit einem Text- oder Memo-Datentyp (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Legt fest oder gibt einen Wert zurück, der angibt, ob eine leere&quot;&quot;Zeichenfolge () eine gültige Einstellung für die <strong><a href="field-value-property-dao.md">value</a></strong> -Eigenschaft des <strong><a href="field-object-dao.md">Field</a></strong> -Objekts mit einem Datentyp Text oder Memo (nur Microsoft Access-Arbeitsbereiche) ist.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="field-attributes-property-dao.md">Attribute</a></strong></p></td>
+<td><p><strong><a href="field-attributes-property-dao.md">Attributes</a></strong></p></td>
 <td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der ein oder mehrere Merkmale eines <strong><a href="field-object-dao.md">Field</a></strong> -Objekts angibt. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
@@ -87,7 +87,7 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-fieldsize-property-dao.md">Feldgröße</a></strong></p></td>
-<td><p>Gibt die Anzahl von Bytes in der Datenbank (nicht im Arbeitsspeicher) verwendete eines Objekts vom Typ Memo oder Long Binary- <strong><a href="field-object-dao.md">Feld</a></strong> in der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung eines <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts.</p></td>
+<td><p>Returns the number of bytes used in the database (rather than in memory) of a Memo or Long Binary <strong><a href="field-object-dao.md">Field</a></strong> object in the <strong><a href="fields-collection-dao.md">Fields</a></strong> collection of a <strong><a href="recordset-object-dao.md">Recordset</a></strong> object.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-foreignname-property-dao.md">ForeignName</a></strong></p></td>
@@ -99,12 +99,12 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-ordinalposition-property-dao.md">OrdinalPosition</a></strong></p></td>
-<td><p>Legt die relative Position eines <strong><a href="field-object-dao.md">Field</a></strong> -Objekts innerhalb einer <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung fest oder gibt die relative Position zurück.</p></td>
+<td><p>Legt die relative Position eines <strong><a href="field-object-dao.md">Field</a></strong> -Objekts in einer Fields <strong><a href="fields-collection-dao.md"></a></strong> -Auflistung fest oder gibt Sie zurück. .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-originalvalue-property-dao.md">OriginalValue</a></strong></p></td>
 <td><p>Einer der <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> -Werte.</p>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt den Wert eines <strong>Field</strong>-Objekts in der Datenbank zurück, das vorhanden war, als die letzte Batchaktualisierung begann (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
@@ -113,11 +113,11 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-required-property-dao.md">Erforderlich</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob ein <strong><a href="field-object-dao.md">Field</a></strong> -Objekt einen Nicht-Null-Wert erfordert, oder legt den betreffenden Wert fest.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob für ein <strong><a href="field-object-dao.md">Field</a></strong> -Objekt ein Nicht-Null-Wert erforderlich ist, oder legt den betreffenden Wert fest.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="field-fieldsize-property-dao.md">Größe</a></strong></p></td>
-<td><p>Gibt die Anzahl von Bytes in der Datenbank (nicht im Arbeitsspeicher) verwendete eines Objekts vom Typ Memo oder Long Binary- <strong><a href="field-object-dao.md">Feld</a></strong> in der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung eines <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts.</p></td>
+<td><p><strong><a href="field-fieldsize-property-dao.md">Size</a></strong></p></td>
+<td><p>Returns the number of bytes used in the database (rather than in memory) of a Memo or Long Binary <strong><a href="field-object-dao.md">Field</a></strong> object in the <strong><a href="fields-collection-dao.md">Fields</a></strong> collection of a <strong><a href="recordset-object-dao.md">Recordset</a></strong> object.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-sourcefield-property-dao.md">SourceField</a></strong></p></td>
@@ -129,7 +129,7 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-type-property-dao.md">Typ</a></strong></p></td>
-<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt einen solchen Wert zurück. Lese-/Schreibzugriff <strong>Integer</strong>.</p></td>
+<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. <strong>Integer</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-validateonset-property-dao.md">ValidateOnSet</a></strong></p></td>
@@ -137,7 +137,7 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-validationrule-property-dao.md">ValidationRule</a></strong></p></td>
-<td><p>Legt einen Wert fest, der die Daten in einem Feld überprüft, wenn es geändert oder einer Tabelle hinzugefügt wird, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche). <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
+<td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die Daten in einem Feld direkt bei der Eingabe oder dem Hinzufügen zu einer Tabelle überprüft (gilt nur für Microsoft Access-Arbeitsbereiche). <strong>String</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-validationtext-property-dao.md">ValidationText</a></strong></p></td>
@@ -150,8 +150,8 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 <tr class="odd">
 <td><p><strong><a href="field-visiblevalue-property-dao.md">VisibleValue</a></strong></p></td>
 <td><p>Einer der <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> -Werte.</p>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
-<p>Gibt einen Wert zurück, der aktuell in der Datenbank vorhanden und neuer ist als die <strong>OriginalValue</strong>-Eigenschaft, wie von einem Konflikt der Batchaktualisierung festgestellt wurde (nur ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<p>Gibt einen aktuellen Wert in der Datenbank zurück, der neuer ist als die durch einen Konflikt bei der Batchaktualisierung ermittelte <strong>OriginalValue</strong>-Eigenschaft (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 </tbody>
 </table>

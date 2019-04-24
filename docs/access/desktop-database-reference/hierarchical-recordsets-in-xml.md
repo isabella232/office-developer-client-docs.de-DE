@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e0aafaa1f7f49d34d647ec0f733e68de21cb5369
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292013"
 ---
-# <a name="hierarchical-recordsets-in-xml"></a>Hierarchische Recordset-Objekte in XML
+# <a name="hierarchical-recordsets-in-xml"></a>Hierarchische Recordsets in XML
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-## <a name="hierarchical-recordsets-in-xml"></a>Hierarchische Recordsets in XML
+## <a name="hierarchical-recordsets-in-xml"></a>Hierarchische Recordset-Objekte in XML
 
 ADO ermöglicht das Speichern von hierarchischen **Recordset** -Objekten in XML. Bei hierarchischen **Recordset** -Objekten ist der Wert eines Felds im übergeordneten **Recordset** -Objekt ein weiteres **Recordset** -Objekt. Solche Felder werden nicht als Attribut, sondern als untergeordnete Elemente im XML-Datenstrom dargestellt. Das folgende Beispiel veranschaulicht diesen Fall:
 

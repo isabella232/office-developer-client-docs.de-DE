@@ -1,5 +1,5 @@
 ---
-title: Referenz-Objekt (ADO)
+title: Property-Objekt (ADO)-Referenz
 TOCTitle: Property object (ADO)
 ms:assetid: 595d2afb-1d5b-4138-9066-b5d14cdceeb2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249303(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cb445252bcced6e363c12908daa0178e0e297acd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301204"
 ---
-# <a name="property-object-ado-reference"></a>Referenz-Objekt (ADO)
+# <a name="property-object-ado-reference"></a>Property-Objekt (ADO)-Referenz
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [Property-Objekt (ADO)](property-object-ado.md)
-- [Eigenschaft Eigenschaften, Methoden und Ereignisse (ADO)](property-properties-methods-and-events-ado.md)
+- [Eigenschafts Eigenschaften, Methoden und Ereignisse (ADO)](property-properties-methods-and-events-ado.md)
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9018ae314f814f3adca3268beba2f82e4e0ea2fa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312159"
 ---
 # <a name="views-refresh-method-example-vb"></a>Refresh-Methode (Views) (VB-Beispiel)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Im folgenden Code wird die Aktualisierung der [Views](views-collection-adox.md)-Auflistung eines [Catalog](catalog-object-adox.md)-Objekts gezeigt. Dies ist erforderlich, um auf [View](view-object-adox.md)-Objekte im **Catalog** -Objekt zugreifen zu können.
 

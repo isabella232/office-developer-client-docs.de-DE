@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 26c259452e23bed8d2937f9d86c78d4d52be2993
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294085"
 ---
 # <a name="delete-method-example-vbscript"></a>Delete-Methode (Beispiel) (VBScript)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Delete](delete-method-ado-recordset.md)-Methode verwendet, um einen angegebenen Datensatz aus einem [Recordset](recordset-object-ado.md)-Objekt zu entfernen.
 
 Verwenden Sie das folgende Beispiel für eine Active Server Page-Datei (ASP).
 
-Verwenden Sie Suchen, um nach der Datei Adovbs.inc zu suchen, und speichern Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Text-Editor ein, und speichern Sie die Datei unter dem Namen DeleteVBS.asp. Sie können das Ergebnis in einem beliebigen Clientbrowser anzeigen.
+Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code into Notepad or another text editor, and save it as **DeleteVBS.asp**. You can view the result in any client browser.
 
 Verwenden Sie zum Ausführen dieses Beispiels zunächst das [AddNew](addnew-method-example-vbscript.md)-Beispiel, um einige Datensätze hinzuzufügen. Versuchen Sie anschließend, diese zu löschen. Zeigen Sie die Ergebnisse in einem beliebigen Clientbrowser an.
 

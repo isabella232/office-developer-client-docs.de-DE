@@ -1,5 +1,5 @@
 ---
-title: ConnectOptionEnum (Access PC-Datenbank-Referenz)
+title: ConnectOptionEnum (Access Desktop Database Reference)
 TOCTitle: ConnectOptionEnum
 ms:assetid: 803d3fd6-93cf-85ea-eeb0-ca1bc965577d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249544(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 95b622d2216b085ffd0f76c8a26533187c17bd7b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295681"
 ---
 # <a name="connectoptionenum"></a>ConnectOptionEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, ob die [Open](open-method-ado-connection.md)-Methode eines [Connection](connection-object-ado.md)-Objekts zurückgegeben werden soll, nachdem (synchron) oder bevor (asynchron) die Verbindung hergestellt wird.
 
@@ -50,7 +50,7 @@ Gibt an, ob die [Open](open-method-ado-connection.md)-Methode eines [Connection]
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
 Paket: **com.ms.wfc.data**
 
@@ -65,10 +65,10 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.ConnectOption.ASYNCCONNECT</p></td>
+<td><p>AdoEnums. ConnectOption. ASYNCCONNECT</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ConnectOption.CONNECTUNSPECIFIED</p></td>
+<td><p>AdoEnums. ConnectOption. CONNECTUNSPECIFIED</p></td>
 </tr>
 </tbody>
 </table>

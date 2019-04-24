@@ -1,5 +1,5 @@
 ---
-title: QueryDef.Type-Eigenschaft (DAO)
+title: QueryDef. Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 03db891d-b958-7cf9-56c1-524d9ff2b9b5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844814(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cb8856194d0b2ed14577bdc275adeb50ebdde212
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300945"
 ---
-# <a name="querydeftype-property-dao"></a>QueryDef.Type-Eigenschaft (DAO)
+# <a name="querydeftype-property-dao"></a>QueryDef. Type-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Schreibgeschützter **Integer**-Wert.
+Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Read-Only**Integer**.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,15 +49,15 @@ Die möglichen Einstellungen und Rückgabewerte für ein **QueryDef**-Objekt sin
 </tr>
 <tr class="even">
 <td><p><strong>dbQAppend</strong></p></td>
-<td><p>Anfügeabfrage</p></td>
+<td><p>Append</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQCompound</strong></p></td>
-<td><p>Verbundabfrage</p></td>
+<td><p>Zusammengesetzter</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbQCrosstab</strong></p></td>
-<td><p>Kreuztabellenabfrage</p></td>
+<td><p>Kreuztabellen</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQDDL</strong></p></td>
@@ -69,19 +69,19 @@ Die möglichen Einstellungen und Rückgabewerte für ein **QueryDef**-Objekt sin
 </tr>
 <tr class="odd">
 <td><p><strong>dbQMakeTable</strong></p></td>
-<td><p>Tabellenerstellung</p></td>
+<td><p>Make-Table</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbQProcedure</strong></p></td>
-<td><p>Prozedur (nur ODBCDirect-Arbeitsbereiche)</p><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
+<td><p>Prozedur (nur ODBCDirect-Arbeitsbereiche)</p><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQSelect</strong></p></td>
-<td><p>Auswahlabfrage</p></td>
+<td><p>Auswählen</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbQSetOperation</strong></p></td>
-<td><p>Union-Abfrage</p></td>
+<td><p>Union</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQSPTBulk</strong></p></td>

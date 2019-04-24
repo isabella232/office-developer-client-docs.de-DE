@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f644f25a04c5573a93aa106884473fed6b45440e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293203"
 ---
 # <a name="fabricating-hierarchical-recordsets"></a>Fabrizieren hierarchischer Recordsets
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Im folgenden Beispiel wird veranschaulicht, wie ein hierarchisches Recordset ohne eine zugrunde liegende Datenquelle bereitzustellen, mit der Datenstrukturierungssyntax Spalten für übergeordnete und untergeordnete untergeordneten **Recordset-Objekte**definiert.
+The following example shows how to fabricate a hierarchical Recordset without an underlying data source by using the data shaping grammar to define columns for parent, child, and grandchild **Recordsets**.
 
 Zum Erstellen eines hierarchischen **Recordset** -Objekts müssen Sie den Microsoft Data Shaping Dienst für OLE DB (MSDataShape) angeben. Außerdem können Sie im Verbindungszeichenfolgen-Parameter der [Open](connection-object-ado.md)-Methode des [Connection](open-method-ado-connection.md)-Objekts NONE als Datenproviderwert angeben. Weitere Informationen finden Sie unter [Erforderliche Anbieter für die Datenstrukturierung](required-providers-for-data-shaping.md).
 
@@ -48,5 +48,5 @@ Zum Erstellen eines hierarchischen **Recordset** -Objekts müssen Sie den Micros
     rsCustomers.Open strShape, cn, adOpenStatic, adLockOptimistic, -1
 ```
 
-Nachdem das **Recordset-Objekt** erstellt haben, können werden aufgefüllt, bearbeitet oder in einer Datei gespeichert.
+Nachdem das **Recordset** -Objekt erstellt wurde, kann es aufgefüllt, bearbeitet oder in einer Datei gespeichert werden.
 

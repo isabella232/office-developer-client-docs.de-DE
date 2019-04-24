@@ -1,5 +1,5 @@
 ---
-title: DriverPromptEnum (Aufzählung) (DAO)
+title: DriverPromptEnum-Aufzählung (DAO)
 TOCTitle: DriverPromptEnum Enumeration
 ms:assetid: 8dda5e9f-a58f-a62d-eb49-5966d4a1e086
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197361(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9612c0713a86ed6ad34a5eff61e45efcddf6cf24
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293665"
 ---
-# <a name="driverpromptenum-enumeration-dao"></a>DriverPromptEnum (Aufzählung) (DAO)
+# <a name="driverpromptenum-enumeration-dao"></a>DriverPromptEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, ob und zu welchem Zeitpunkt der Benutzer aufgefordert wird, eine Verbindung herzustellen.
 

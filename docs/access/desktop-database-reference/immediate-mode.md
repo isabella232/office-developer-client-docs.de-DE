@@ -1,5 +1,5 @@
 ---
-title: Sofortiger Aktualisierungsmodus (Access PC-Datenbank-Referenz)
+title: Direktmodus (Access Desktop Database Reference)
 TOCTitle: Immediate mode
 ms:assetid: 61bd3645-6e84-2e3a-7814-37d8c1247df0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249362(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3abc2e8365c60987fedc0d306b274df74c7ee551
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291880"
 ---
 # <a name="immediate-mode"></a>Unmittelbarer Modus
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Der sofortige Aktualisierungsmodus ist aktiviert, wenn die **LockType** -Eigenschaft auf **adLockOptimistic** oder **adLockPessimistic** festgelegt ist. Im sofortigen Aktualisierungsmodus werden Änderungen an einem Datensatz an die Datenquelle weitergegeben, sobald Sie die Bearbeitung einer Zeile als abgeschlossen deklarieren, indem Sie die **Update** -Methode aufrufen.
 
@@ -25,7 +25,7 @@ Der sofortige Aktualisierungsmodus ist aktiviert, wenn die **LockType** -Eigensc
 
 Wenn Sie den Datensatz verlassen, den Sie hinzufügen oder bearbeiten, bevor Sie die **Update** -Methode aufrufen, ruft ADO zum Speichern der Änderungen automatisch **Update** auf. Sie müssen vor der Navigation die **CancelUpdate** -Methode aufrufen, falls Sie Änderungen am aktuellen Datensatz abbrechen oder einen neu hinzugefügten Datensatz verwerfen möchten.
 
-Der aktuelle Datensatz bleibt aktuell, nachdem Sie die **Update** -Methode aufgerufen haben.
+Der aktuelle Datensatz bleibt aktuell, nachdem Sie die **Update**-Methode aufgerufen haben.
 
 ## <a name="cancelupdate"></a>CancelUpdate
 

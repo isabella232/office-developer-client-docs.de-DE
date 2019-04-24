@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0556c40823facf5bdddbbe67874d6417b416674e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293259"
 ---
 # <a name="execute-requery-and-clear-methods-example-jscript"></a>Execute-, Requery- und Clear-Methode (Beispiel) (JScript)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Ausführung der **Execute** -Methode aus einem [Command](command-object-ado.md)-Objekt und einem [Connection](connection-object-ado.md)-Objekt dargestellt. Außerdem wird die [Requery](requery-method-ado.md)-Methode zum Abrufen von aktuellen Daten in einem [Recordset](recordset-object-ado.md)-Objekt und die [Clear](clear-method-ado.md)-Methode zum Löschen des Inhalts der [Errors](errors-collection-ado.md)-Auflistung verwendet. (Auf die **Errors** -Auflistung wird mithilfe des **Connection** -Objekts der [ActiveConnection](activeconnection-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts zugegriffen.) Benennen Sie die Datei **ExecuteJS.asp**.
 

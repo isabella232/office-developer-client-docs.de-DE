@@ -1,5 +1,5 @@
 ---
-title: Field.SourceTable-Eigenschaft (DAO)
+title: Field. sourceable-Eigenschaft (DAO)
 TOCTitle: SourceTable Property
 ms:assetid: 9564ea1c-eafd-0b72-fd68-d88fcc3ea189
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197694(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a557a4941f5b4aa511489c5d057871df5fa72c08
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292986"
 ---
-# <a name="fieldsourcetable-property-dao"></a>Field.SourceTable-Eigenschaft (DAO)
+# <a name="fieldsourcetable-property-dao"></a>Field. sourceable-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der den Namen einer Tabelle enthält, bei der es sich um die ursprüngliche Datenquelle für ein **Field**-Objekt handelt. Schreibgeschützter **String**-Wert.
 
@@ -53,11 +53,11 @@ Bei einem **Field**-Objekt hängt die Verwendung der Eigenschaften **SourceField
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Beziehung</strong></p></td>
@@ -65,7 +65,7 @@ Bei einem **Field**-Objekt hängt die Verwendung der Eigenschaften **SourceField
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong></p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
@@ -75,6 +75,6 @@ Diese Eigenschaften geben das ursprüngliche Feld und die Tabellennamen an, die 
 
 
 > [!NOTE]
-> Die SourceTable-Eigenschaft gibt keinen sinnvollen Tabellenamen zurück, wenn sie für ein Field-Objekt in der Fields-Auflistung eines Recordset-Objekts vom Typ Tabelle verwendet wird.
+> The **SourceTable** property will not return a meaningful table name if used on a **Field** object in the **Fields** collection of a table-type **Recordset** object.
 
 

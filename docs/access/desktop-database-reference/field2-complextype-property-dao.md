@@ -1,5 +1,5 @@
 ---
-title: Field2.complexType-Eigenschaft (DAO)
+title: Field2. ComplexType-Eigenschaft (DAO)
 TOCTitle: ComplexType Property
 ms:assetid: 9b4ebabf-22de-0ab8-73ea-10c496eedf97
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198034(v=office.15)
@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 10cb2df307cf8c8df429454b98fba4a90115243f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292853"
 ---
-# <a name="field2complextype-property-dao"></a>Field2.complexType-Eigenschaft (DAO)
+# <a name="field2complextype-property-dao"></a>Field2. ComplexType-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt ein **[ComplexType](complextype-object-dao.md)** -Objekt zurück, das ein mehrwertiges Feld darstellt. Schreibgeschützt.
 
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Access 2007
 

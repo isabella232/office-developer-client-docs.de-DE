@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a92ffe9b4b713518330d9dbfd9979d904a5abe8e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301099"
 ---
 # <a name="provider-support-for-adox"></a>Anbieterunterstützung für ADOX
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nicht unterstützt. ADOX wird vollständig mit dem [OLE DB-Anbieter für Microsoft Jet](microsoft-ole-db-provider-for-microsoft-jet.md) unterstützt. Die nicht unterstützten Features bei Verwendung des [Microsoft OLE DB-Anbieters für SQL Server](microsoft-ole-db-provider-for-sql-server.md), des [Microsoft OLE DB-Anbieters für ODBC](microsoft-ole-db-provider-for-odbc.md) oder des [Microsoft OLE DB-Anbieters für Oracle](microsoft-ole-db-provider-for-oracle.md) werden im Folgenden aufgeführt. ADOX wird nicht von anderen Microsoft OLE DB-Anbietern unterstützt.
 
@@ -48,23 +48,23 @@ Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nic
 <td><p><strong>Views</strong> wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Procedures</strong> -Auflistung</p></td>
+<td><p><strong>Procedures</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Procedure</strong> -Objekt</p></td>
+<td><p><strong>Procedure</strong>-Objekt</p></td>
 <td><p>Die  <strong>Command</strong>-Eigenschaft wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Keys</strong> -Auflistung</p></td>
+<td><p><strong>Keys</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Users</strong> -Auflistung</p></td>
+<td><p><strong>Users</strong>-Auflistung</p></td>
 <td><p><strong>Users</strong> wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Groups</strong> -Auflistung</p></td>
+<td><p><strong>Groups</strong>-Auflistung</p></td>
 <td><p><strong>Groups</strong> wird nicht unterstützt.</p></td>
 </tr>
 </tbody>
@@ -90,32 +90,31 @@ Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nic
 <td><p>Die <strong>Create</strong>-Methode wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Tables</strong> -Auflistung</p></td>
-<td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.
- Eigenschaften verfügen vor der Objekterstellung über Lese-/Schreibzugriff und sind beim Verweisen auf ein bestehendes Objekt schreibgeschützt.</p></td>
+<td><p><strong>Tables</strong>-Auflistung</p></td>
+<td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt. Eigenschaften verfügen vor der Objekterstellung über Lese-/Schreibzugriff und sind beim Verweisen auf ein bestehendes Objekt schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Procedures</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Procedure</strong> -Objekt</p></td>
+<td><p><strong>Procedure</strong>-Objekt</p></td>
 <td><p>Die  <strong>Command</strong>-Eigenschaft wird nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Indexes</strong> -Auflistung</p></td>
+<td><p><strong>Indexes</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Keys</strong> -Auflistung</p></td>
+<td><p><strong>Keys</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Users</strong> -Auflistung</p></td>
+<td><p><strong>Users</strong>-Auflistung</p></td>
 <td><p><strong>Users</strong> wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Groups</strong> -Auflistung</p></td>
+<td><p><strong>Groups</strong>-Auflistung</p></td>
 <td><p><strong>Groups</strong> wird nicht unterstützt.</p></td>
 </tr>
 </tbody>
@@ -141,16 +140,15 @@ Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nic
 <td><p>Die <strong>Create</strong>-Methode wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Tables</strong> -Auflistung</p></td>
-<td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.
- Eigenschaften verfügen vor der Objekterstellung über Lese-/Schreibzugriff und sind beim Verweisen auf ein bestehendes Objekt schreibgeschützt.</p></td>
+<td><p><strong>Tables</strong>-Auflistung</p></td>
+<td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt. Eigenschaften verfügen vor der Objekterstellung über Lese-/Schreibzugriff und sind beim Verweisen auf ein bestehendes Objekt schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Views</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>View</strong> -Objekt</p></td>
+<td><p><strong>View</strong>-Objekt</p></td>
 <td><p>Die  <strong>Command</strong>-Eigenschaft wird nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
@@ -158,23 +156,23 @@ Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nic
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Procedure</strong> -Objekt</p></td>
+<td><p><strong>Procedure</strong>-Objekt</p></td>
 <td><p>Die  <strong>Command</strong>-Eigenschaft wird nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Indexes</strong> -Auflistung</p></td>
+<td><p><strong>Indexes</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Keys</strong> -Auflistung</p></td>
+<td><p><strong>Keys</strong>-Auflistung</p></td>
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Users</strong> -Auflistung</p></td>
+<td><p><strong>Users</strong>-Auflistung</p></td>
 <td><p><strong>Users</strong> wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Groups</strong> -Auflistung</p></td>
+<td><p><strong>Groups</strong>-Auflistung</p></td>
 <td><p><strong>Groups</strong> wird nicht unterstützt.</p></td>
 </tr>
 </tbody>
