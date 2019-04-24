@@ -8,27 +8,27 @@ api_type:
 - COM
 ms.assetid: 4fa47824-b4ef-41e1-9096-c1b1cdacd7ac
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6845c3d86fb3d34119a296ebbae76a7322d7d8c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 01fd66033da0f24948913f47a752d555eca655fe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339746"
 ---
 # <a name="sending-a-message"></a>Senden einer Nachricht
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie eine Nachricht senden möchten, rufen Sie die [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode. **SubmitMessage** platziert die Nachricht in der ausgehenden Warteschlange und das Flag MSGFLAG_SUBMIT in der Nachricht **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft festgelegt.
+Wenn Sie bereit sind, eine Nachricht zu senden, rufen Sie die zugehörige [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf. **SubmitMessage** platziert die Nachricht in der ausgehenden Warteschlange und legt das MSGFLAG_SUBMIT-Flag in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht fest.
   
-Die Nachricht Speicheranbieter gibt, wenn eng mit eines Transportdienstes verknüpft die Nachricht direkt an die Übertragung, die es an die messaging-System übermittelt. Wenn dies nicht eng gekoppelt, der Speicheranbieter Nachricht informiert die MAPI-Warteschlange, die die ausgehende Warteschlange geändert hat und die MAPI-Warteschlange übermittelt die Nachricht an einen entsprechenden Transport-Dienstanbieter.
+Wenn der Nachrichtenspeicher Anbieter eng mit einem Transportanbieter gekoppelt ist, gibt er die Nachricht direkt an den Transport, der Sie an das Messagingsystem übermittelt. Wenn nicht eng gekoppelt, informiert der Nachrichtenspeicher Anbieter die MAPI-Spooler, dass die ausgehende Warteschlange geändert wurde und der MAPI-Spooler die Nachricht an einen geeigneten Transportanbieter überträgt.
   
-Wenn Sie einen Sendevorgang Abbrechen Benutzern ermöglichen, rufen Sie [IMsgStore::AbortSubmit](imsgstore-abortsubmit.md) , um dieses Feature zu implementieren. **AbortSubmit** entfernt die Nachricht aus der ausgehenden Warteschlange. Können Benutzer so beenden Sie einen Send auftritt, bis die Nachricht an die zugrunde liegenden messaging-System erhält. 
+Wenn Sie Benutzern das Abbrechen eines Sendevorgangs gestatten, rufen Sie [IMsgStore:: AbortSubmit](imsgstore-abortsubmit.md) auf, um dieses Feature zu implementieren. **AbortSubmit** entfernt die Nachricht aus der ausgehenden Warteschlange. Benutzer können das Senden von Ereignissen beenden, bis die Nachricht an das zugrunde liegende Messagingsystem gesendet wird. 
   
-Wenn **SubmitMessage** MAPI_E_CORRUPT_DATA zurückgibt, wird davon ausgegangen Sie, dass die gesendeten Daten ist jetzt verloren. Bevor Sie versuchen, ein zweites Mal senden, müssen schreiben Sie die Nachricht erneut durch Aufrufen von [IMAPIProp::SetProps](imapiprop-setprops.md) und [IMAPIProp::SaveChanges](imapiprop-savechanges.md). Für den Benutzer ein Fehler angezeigt, wenn diese **IMAPIProp** Aufrufe fehlschlagen oder **SubmitMessage** ein zweites Mal fehlschlägt. 
+Wenn **SUBMITMESSAGE** MAPI_E_CORRUPT_DATA zurückgibt, gehen Sie davon aus, dass die gesendeten Daten jetzt verloren gehen. Bevor Sie versuchen, ein zweites Mal zu senden, schreiben Sie die Nachricht erneut, indem Sie [IMAPIProp::](imapiprop-setprops.md) SetProps und [IMAPIProp:: SaveChanges](imapiprop-savechanges.md)aufrufen. Zeigt dem Benutzer einen Fehler an, wenn diese **IMAPIProp** -Aufrufe fehlschlagen oder wenn **SubmitMessage** ein zweites Mal fehlschlägt. 
   
-Freien Sie nach einem erfolgreichen Aufruf von **SubmitMessage**Speicher, für die Empfängerliste zugewiesen wurde, und freigeben Sie die Nachricht und ihre Anhänge. Nachdem eine Nachricht gesendet wurde, lässt MAPI keine weiteren Operationen auf den Zeiger für diese Objekte. Die einzige Ausnahme ist **IUnknown**aufrufen. Keine anderen Aufrufe sind zulässig, da viele Nachricht Anbieter Eintragsbezeichner für Nachrichten für ungültig erklärt, die gesendet wurden.
+Geben Sie nach einem erfolgreichen Anruf bei **SubmitMessage**den Speicherplatz frei, der für die Empfängerliste reserviert wurde, und geben Sie die Nachricht und ihre Anlagen frei. Nachdem eine Nachricht gesendet wurde, lässt MAPI keine weiteren Vorgänge für die Zeiger für diese Objekte zu. Die einzige Ausnahme ist das Aufrufen von **IUnknown:: Release**. Es sind keine weiteren Anrufe zulässig, da viele Nachrichtenspeicher Anbieter Eintragsbezeichner für gesendete Nachrichten ungültig machen.
   
 

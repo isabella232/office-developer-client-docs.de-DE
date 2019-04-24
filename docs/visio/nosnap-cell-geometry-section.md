@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0e6c8621-868c-9eac-926b-3049f18023b0
 description: Definiert, ob andere Shapes an einem Pfad einrasten.
-ms.openlocfilehash: 111f3773cb1df9033ed5a7b0b146d40ce6b26df0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 60a6532aee0f391eb38609f6ed87577e5558d5c2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341131"
 ---
-# <a name="nosnap-cell-geometry-section"></a>NoSnap Cell (Geometry Section)
+# <a name="nosnap-cell-geometry-section"></a>Zelle "NoSnap" (Abschnitt "Geometry")
 
 Definiert, ob andere Shapes an einem Pfad einrasten.
   
@@ -25,20 +25,20 @@ Definiert, ob andere Shapes an einem Pfad einrasten.
 | TRUE  <br/> | Andere Shapes können nicht an diesem Pfad einrasten.  <br/> |
 | FALSE  <br/> | Andere Shapes können an diesem Pfad einrasten.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle NoSnap aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle noSnap aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Geometrie *i* . NoSnap wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Geometrie *i* . NoSnap, wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoSnap aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle noSnap aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Abschnittsindex:  <br/> |**visSectionFirstComponent** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visRowComponent** <br/> |
-| Zellenindex:  <br/> |**visCompNoSnap** <br/> |
+| Zeilenindex:  <br/> |**visCompNoSnap** <br/> |
    
 

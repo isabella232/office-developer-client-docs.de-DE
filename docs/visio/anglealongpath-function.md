@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d7f8ca9a-3a89-abab-9805-bd1e24075c3f
 description: Gibt den Winkel der Tangenten zum Pfad an einem gegebenen Punkt zurück.
-ms.openlocfilehash: ec5529037275fc8661972cc7403886cd33150b38
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0d38fc0e123a7e38b7826b55415cfc09c1789c0e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341419"
 ---
 # <a name="anglealongpath-function"></a>ANGLEALONGPATH Function
 
@@ -25,26 +25,26 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-ANGLEALONGPATH (** *Abschnitt* **, ** *Reisen* ** ** *[, Segment]* **) 
+ANGLEALONGPATH (* * *section* * *, * * *Reise* * * * * *[, Segment]* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
-| _Reisen_ <br/> |Erforderlich  <br/> |**Double** <br/> |Der Prozentsatz entlang des Pfads vom Anfangs- zum Endpunkt. Muss zwischen 0 und 1 liegen.  <br/> |
+| _Reise_ <br/> |Erforderlich  <br/> |**Double** <br/> |Der Prozentsatz entlang des Pfads vom Anfangs- zum Endpunkt. Muss zwischen 0 und 1 liegen.  <br/> |
 | _Segment_ <br/> |Optional  <br/> |**Integer** <br/> |Das 1-basierte Segment des Pfads, an dem der Tangentenwinkel berechnet werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
  **Double**
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Wert für _Segment_ eingeschlossen, gibt ANGLEALONGPATH den Wert für dieses Segment nur zurück. 
+Wenn Sie einen _Segment_ Wert angeben, gibt ANGLEALONGPATH nur den Wert für dieses Segment zurück. 
   
-Wenn Sie einen Wert für _Segment_ eingeschlossen, bestimmt ANGLEALONGPATH den Punkt der Tangente mithilfe von _unterwegs sind_ , um den Prozentsatz entlang _Segment_zu berechnen.
+Wenn Sie einen _Segment_ Wert angeben, bestimmt ANGLEALONGPATH den Punkt der Tangente, indem Sie die Option _Reisen_ zum Berechnen der percertage im _Segment_verwenden.
   
-Wenn _Section_ oder _Segment_ nicht vorhanden ist, gibt Microsoft Visio #REF! zurück. 
+Wenn ein _Abschnitt_ oder _Segment_ nicht vorhanden ist, gibt Microsoft Visio #REF! zurück. 
   
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 143bd3c6-5a55-4122-8522-9c48473aa781
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 943dab0141581adc32c184b0042a063a4ec05c3e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9764be2788db8d2649be8708cad4ec67a85af845
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340999"
 ---
 # <a name="fbadproptag"></a>FBadPropTag
 
@@ -25,11 +25,11 @@ ms.locfileid: "22582882"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft ein Tag für die angegebene Eigenschaft. 
+Überprüft ein angegebenes Property-Tag. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -43,21 +43,21 @@ ULONG FBadPropTag(
 
  _ulPropTag_
   
-> [in] Die Eigenschaftentag überprüft werden soll.
+> in Das zu überprüfende Property-Tag.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Das Tag für die angegebene Eigenschaft ist kein gültiges Tag der MAPI-Eigenschaft. 
+> Das angegebene Property-Tag ist kein gültiges MAPI-Eigenschafts. 
     
 FALSE 
   
-> Das Tag für die angegebene Eigenschaft ist ein gültiges Tag der MAPI-Eigenschaft.
+> Das angegebene Property-Tag ist ein gültiges MAPI-Eigenschafts.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **FBadPropTag** überprüft das angegebene Eigenschaftstag basierend auf MAPI-Definitionen. Sures, die von der Eigenschaftstyp ist eine der Typen, die durch MAPI und die Bezeichner der wird definiert, um dieses Typs werden, erleichtern. 
+Die **FBadPropTag** -Funktion überprüft das angegebene Property-Tag basierend auf MAPI-Definitionen. Sie stellen sicher, dass der Eigenschaftentyp einer der von MAPI definierten Typen ist und dass der Eigenschaftenbezeichner für diesen Typ definiert ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6a0dff65-1055-487c-9d15-4cfe336f2ad7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: dc90f15835de35354a271d87a736366a4caf8dd9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9d9fd04776742383f40c6989bcf588b24b33d84b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339795"
 ---
 # <a name="sdatetimearray"></a>SDateTimeArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeitwerte, mit denen eine Eigenschaft vom Typ PT_MV_SYSTIME beschrieben.
+Enthält ein Array von Zeitwerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_SYSTIME verwendet werden.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SDateTimeArray
@@ -44,15 +44,15 @@ typedef struct _SDateTimeArray
 
  **cValues**
   
-> Anzahl der Werte im Array auf den Member **Lpft** zeigt. 
+> Die Anzahl der Werte im Array, auf die durch das **lpft** -Element verwiesen wird. 
     
  **lpft**
   
-> Zeiger auf ein Array von [FILETIME](filetime.md) -Strukturen, die Zeitwerte enthalten. 
+> Zeiger auf ein Array von [FILETIME](filetime.md) -Strukturen, die die Zeitwerte enthalten. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zu PT_MV_SYSTIME finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
+Weitere Informationen zu PT_MV_SYSTIME finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 6797cd1c-8a0b-4f42-ba56-6162d8e7b058
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5803441486f01883d08cd99048d8eae133cd3f14
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9b44337a4bc9615558ac6337e99ea206ba063b1a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341258"
 ---
 # <a name="imapisyncprogresscallbackprogress"></a>IMAPISyncProgressCallback : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktualisiert den Status im Dialogfeld senden/empfangen. Diese Funktion wird in regelmäßigen Abständen Speicheranbieter aufgerufen.
+Aktualisiert den Status im Dialogfeld senden/empfangen. Der Informationsspeicher Anbieter ruft diese Funktion regelmäßig auf.
   
 ```cpp
 HRESULT Progress(
@@ -39,17 +39,17 @@ HRESULT Progress(
 
  **pwczsProgress**
   
-> Ein Zeiger auf eine Zeichenfolge, die den aktuellen Status Schritt wird angezeigt. Zum Aktualisieren des Fortschritts NULL kann sein.
+> Ein Zeiger auf eine Zeichenfolge, die den aktuellen Status Schritt anzeigt. Es kann NULL sein, um den Fortschritt zu aktualisieren.
     
  **ulIndex**
   
-> Die aktuelle Position in Bearbeitung.
+> Aktuelle Position.
     
  **ulIndexMax**
   
-> Der Index, der Fortschritt der Fertigstellung angibt.
+> Der Index, der den vollständigen Fortschritt angibt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   

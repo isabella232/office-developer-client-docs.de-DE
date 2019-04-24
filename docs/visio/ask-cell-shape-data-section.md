@@ -9,42 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b499a5eb-db8f-ebd0-d505-c9a002205e7d
 description: Bestimmt, ob der Benutzer beim Erstellen einer Instanz oder beim Duplizieren oder Kopieren eines Shapes aufgefordert wird, Shape-Daten einzugeben.
-ms.openlocfilehash: 94e84be4bef5c8c13d5c8ef5108ab89b71f251b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0aa270ff918866d8f683a6408ccd71b6a22d555d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341440"
 ---
-# <a name="ask-cell-shape-data-section"></a>Ask Cell (Shape Data Section)
+# <a name="ask-cell-shape-data-section"></a>Zelle "Ask" (Abschnitt "Shape Data")
 
 Bestimmt, ob der Benutzer beim Erstellen einer Instanz oder beim Duplizieren oder Kopieren eines Shapes aufgefordert wird, Shape-Daten einzugeben.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |
-          Der Benutzer wird aufgefordert, Shape-Daten in das Dialogfeld **Shape-Daten definieren** einzugeben.
-  <br/> |
-|FALSE  <br/> |
-          Benutzer nicht zur Dateneingabe auffordern.
-  <br/> |
+|TRUE  <br/> |Der Benutzer wird aufgefordert, Shape-Daten in das Dialogfeld **Shape-Daten definieren** einzugeben.  <br/> |
+|FALSE  <br/> |Benutzer nicht zur Dateneingabe auffordern.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
 Der Wert in dieser Zelle entspricht dem Kontrollkästchen **Beim Ablegen fragen** im Dialogfeld **Shape-Daten definieren**. (Klicken Sie mit der rechten Maustaste auf das Shape, zeigen Sie auf **Daten**, und klicken Sie dann auf **Shape-Daten definieren**.)
   
-Wenn Sie einen Verweis auf die Zelle Ask aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Ask aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Eigenschaft. *Name* . Stellen Sie sicher, auf dem Prop.  *Name* ist der Name der Zeile mit der benutzerdefinierten Eigenschaft.  <br/> |
+|Zellenname:  <br/> |Prop. *Name* . Überprüfen Sie, wo Prop.  *Name* ist der Name der benutzerdefinierten Eigenschaftenzeile.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Ask aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Ask nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionProp** <br/> |
-|Zeilenindex:  <br/> |**VisRowProp** +  *i* wobei *i* = 0, 1, 2,...  <br/> |
+|Zeilenindex:  <br/> |**visRowProp** +  *i* , wobei *i* = 0, 1, 2,...  <br/> |
 |Zellenindex:  <br/> |**visCustPropsAsk** <br/> |
    
 

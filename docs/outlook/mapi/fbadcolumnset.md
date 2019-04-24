@@ -11,25 +11,25 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 15be5a8c-4299-4434-b521-c901215b9dda
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4e5f19258fb7716e741928f02a0a87f3939c74e0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b0260ffe5dc4806cb627fd71c78866bf96796455
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341006"
 ---
 # <a name="fbadcolumnset"></a>FBadColumnSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legen Sie die Gültigkeit einer Tabellenspalte für Tests verwenden, indem Sie einem Dienstanbieter in einem nachfolgenden Aufruf der [IMAPITable::SetColumns](imapitable-setcolumns.md) -Methode. 
+Testet die Gültigkeit eines Tabellenspalten Satzes, der von einem Dienstanbieter bei einem nachfolgenden Aufruf der [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -43,20 +43,20 @@ ULONG FBadColumnSet(
 
  _lpptaCols_
   
-> [in] Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Eigenschaftentags definieren die Tabellenspalten überprüfen enthält. 
+> in Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags enthält, die die zu überprüfenden Tabellenspalten definieren. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Der angegebene Spalte ist ungültig. 
+> Der angegebene Spaltensatz ist ungültig. 
     
 FALSE 
   
-> Der angegebene Spalte ist ungültig.
+> Der angegebene Spaltensatz ist gültig.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **FBadColumnSet** -Funktion wird vom Typ PT_ERROR als ungültig und Spalten vom Typ PT_NULL als ungültig behandelt. 
+Die **FBadColumnSet** -Funktion behandelt Spalten vom Typ PT_ERROR als ungültig und Spalten vom Typ PT_NULL als gültig. 
   
 

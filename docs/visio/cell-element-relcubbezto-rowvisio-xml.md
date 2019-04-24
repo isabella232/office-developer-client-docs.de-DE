@@ -1,31 +1,31 @@
 ---
-title: Zellenelement (RelCubBezTo Zeile) ("Visio XML")
+title: Cell-Element (RelCubBezTo-Zeile) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: daa5c527-65fe-a1e4-ab3e-24e77bdb522b
-description: Enthält die x- oder y-Koordinaten des Endpunkts des eine kubische Bézierkurve relativ zur Höhe und Breite des Shapes, die x- oder y-Koordinaten des Kontrollpunkts des Anfang der Höhe und Breite für die Kurve relative Form oder die x- oder y-Koordinaten des Kontrollpunkts der beenden, Breite und Höhe des relativen Kurve-Shapes.
+description: Enthält die x-oder y-Koordinate des Endpunkts einer kubischen Bézier-Kurve relativ zur Breite und Höhe der Form, die x-oder y-Koordinaten des Steuerelements am Anfang der Breite und Höhe des Kurven relativen Shapes oder die x-oder y-Koordinate des Kontrollpunkts. des Endes der Breite und Höhe der Kurven relativen Form.
 ms.openlocfilehash: 15cfbbfd9b773169e338d7d364540582229a4ac7
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339557"
 ---
-# <a name="cell-element-relcubbezto-row-visio-xml"></a>Zellenelement (RelCubBezTo Zeile) ("Visio XML")
+# <a name="cell-element-relcubbezto-row-visio-xml"></a>Cell-Element (RelCubBezTo-Zeile) (' Visio XML ')
 
-Enthält die x- oder y-Koordinaten des Endpunkts des eine kubische Bézierkurve relativ zur Höhe und Breite des Shapes, die x- oder y-Koordinaten des Kontrollpunkts des Anfang der Höhe und Breite für die Kurve relative Form oder die x- oder y-Koordinaten des Kontrollpunkts der beenden, Breite und Höhe des relativen Kurve-Shapes.
+Enthält die x-oder y-Koordinate des Endpunkts einer kubischen Bézier-Kurve relativ zur Breite und Höhe der Form, die x-oder y-Koordinaten des Steuerelements am Anfang der Breite und Höhe des Kurven relativen Shapes oder die x-oder y-Koordinate des Kontrollpunkts. des Endes der Breite und Höhe der Kurven relativen Form.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Master #. XML, Page #. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,41 +36,41 @@ Enthält die x- oder y-Koordinaten des Endpunkts des eine kubische Bézierkurve 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Row-Element ("Geometry")](row-element-geometry-sectionvisio-xml.md) <br/> |[RelCubBezTo_Type](relcubbezto_type-complextypevisio-xml.md) <br/> |Enthält die x- oder y-Koordinaten des Endpunkts des eine kubische Bézierkurve relativ zur Höhe und Breite des Shapes, die x- oder y-Koordinaten des Kontrollpunkts des Anfang der Höhe und Breite für die Kurve relative Form oder die x- oder y-Koordinaten des Kontrollpunkts der beenden, Breite und Höhe des relativen Kurve-Shapes.  <br/> |
+|[Row-Element (Geometry)](row-element-geometry-sectionvisio-xml.md) <br/> |[RelCubBezTo_Type](relcubbezto_type-complextypevisio-xml.md) <br/> |Enthält die x-oder y-Koordinate des Endpunkts einer kubischen Bézier-Kurve relativ zur Breite und Höhe der Form, die x-oder y-Koordinaten des Steuerelements am Anfang der Breite und Höhe des Kurven relativen Shapes oder die x-oder y-Koordinate des Kontrollpunkts. des Endes der Breite und Höhe der Kurven relativen Form.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[RefBy](refby-element-cell_type-complextypevisio-xml.md) <br/> |[RefBy_Type](refby_type-complextypevisio-xml.md) <br/> |Gibt einen Verweis auf ein Zeichenblatt.  <br/> |
+|[RefBy](refby-element-cell_type-complextypevisio-xml.md) <br/> |[RefBy_Type](refby_type-complextypevisio-xml.md) <br/> |Gibt einen Verweis auf ein Zeichenblatt an.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|E  <br/> |XSD: String  <br/> |Optional  <br/> |Gibt an, dass die Formel einen Fehler zurückgibt. Der Wert von **E** ist der aktuelle Wert (Zeichenfolge mit einer Fehlermeldung); der Wert des Attributs **V** ist der letzte gültige Wert.  <br/> |Zeichenfolge mit einer Fehlermeldung.  <br/> |
-|F  <br/> |XSD: String  <br/> |Optional  <br/> | Formel für das Element darstellt. Dieses Attribut kann eine der folgenden Zeichenfolgen enthalten:  <br/>  "(einige Formel)" Wenn die Formel lokal vorhanden ist.  <br/>  `No Formula`Wenn die Formel lokal gelöscht oder blockiert ist.  <br/>  `Inh`Wenn die Formel geerbt wird.  <br/> |Eine Formel.  <br/> |
-|N  <br/> |XSD: String  <br/> |erforderlich  <br/> |Der Name der ShapeSheet-Zelle darstellt.  <br/> |Der Name der ShapeSheet-Zelle.  <br/> Siehe Abschnitt "Hinweise".  <br/> |
-|U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
-|V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
+|E  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt an, dass die Formel zu einem Fehler ausgewertet wird. Der Wert von **E** ist der aktuelle Wert (eine Fehler Meldungszeichenfolge); der Wert des **V** -Attributs ist der letzte gültige Wert.  <br/> |Eine Fehlermeldungs-Zeichenfolge.  <br/> |
+|F  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> | Stellt die Formel des Elements dar. Dieses Attribut kann eine der folgenden Zeichenfolgen enthalten:  <br/>  ' (eine Formel) ', wenn die Formel lokal vorhanden ist  <br/>  `No Formula`Wenn die Formel lokal gelöscht oder gesperrt ist  <br/>  `Inh`Wenn die Formel geerbt wird.  <br/> |Eine Formel.  <br/> |
+|N  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Stellt den Namen der ShapeSheet-Zelle dar.  <br/> |Der Name der ShapeSheet-Zelle.  <br/> Weitere Informationen finden Sie im Abschnitt "Hinweise" unten.  <br/> |
+|U  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
+|V  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt den Wert der Zelle dar.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
+Das **N** -Attribut dieses **Cell** -Elements muss einer einer begrenzten Menge von Werten sein, die ShapeSheet-Zellen entsprechen. In der nachstehenden Tabelle finden Sie die Werte des **N** -Attributs, die für dieses **Cell** -Element zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
-|X  <br/> |Die X-Koordinate des Endscheitelpunkts einer kubischen Bézier-Kurve relativ zu der Breite der Form.  <br/> |[RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md) <br/> |
-|v  <br/> |Die y-Koordinate des Endscheitelpunkts einer kubischen Bézier-Kurve relativ zur Höhe des Shapes.  <br/> |[RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md) <br/> |
-|A  <br/> |Die X-Koordinate des Steuerelements für die Kurve Anfang zeigen relativ zu der Breite des Shapes. ein Punkt auf dem Bogen. Kontrollpunkts befindet sich am besten zwischen dem ersten und letzten Scheitelpunkt des Bogens.  <br/> |[RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md) <br/> |
-|B  <br/> |Die y-Koordinate des Steuerelements für eine Kurve Anfang zeigen relativ zur Höhe des Shapes.  <br/> |[RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md) <br/> |
-|C  <br/> |Die X-Koordinate des Endzeichens Kontrollpunkts der Kurve relativ zu der Breite des Shapes; ein Punkt auf dem Bogen. Der Steuerpunkt befindet sich am besten zwischen die Anfang-Steuerelement Punkt und Beenden der Scheitelpunkte des Bogens.  <br/> |[RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md) <br/> |
-|D  <br/> |Die y-Koordinate des letzten Kontrollpunkts einer Kurve relativ zur Höhe des Shapes.  <br/> |[RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md) <br/> |
+|X  <br/> |Die x-Koordinate des Endpunkts einer kubischen Bézier-Kurve relativ zur Breite der Form.  <br/> |[Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md) <br/> |
+|v  <br/> |Die y-Koordinate des Endpunkts einer kubischen Bézier-Kurve relativ zur Höhe der Form.  <br/> |[Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md) <br/> |
+|A  <br/> |Die x-Koordinate des Anfangs Kontrollpunkts der Kurve relativ zur Breite der Form; ein Punkt auf dem Bogen. Der Steuerpunkt befindet sich am besten zwischen dem Anfangs-und Endscheitel des Bogens.  <br/> |[Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md) <br/> |
+|B  <br/> |Die y-Koordinate des Anfangs Steuerpunkts einer Kurve relativ zur Höhe der Form.  <br/> |[Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md) <br/> |
+|C  <br/> |Die x-Koordinate des Endpunkts der Kurve, relativ zur Breite der Form; ein Punkt auf dem Bogen. Der Steuerpunkt befindet sich am besten zwischen dem Anfangs Steuerpunkt und den Endknoten des Bogens.  <br/> |[Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md) <br/> |
+|D  <br/> |Die y-Koordinate des Endpunkts eines Bogens relativ zur Höhe der Form.  <br/> |[Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md) <br/> |
    
 

@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm82251396
 localization_priority: Normal
 ms.assetid: 19b77fbb-32c9-4fc9-4c07-a0a713f7fdca
-description: Gibt den Arkustangens einer Zahl, beispielsweise der Winkel, dessen Tangens Zahl ist. Der resultierende Winkel liegt im Bereich-PI/2 < = Winkel < = PI/2 Bogenmaß (-90 < = Winkel < = 90 Grad).
-ms.openlocfilehash: aa49b3b6e5e6227ed219563e3ff7e8e8bb85ef45
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Arctangent einer Zahl zurück, beispielsweise den Winkel, dessen Tangente eine Zahl ist. Der resultierende Winkel befindet sich im Range-PI/2 < = Angle < = PI/2 Radiant (-90 < = Winkel < = 90 Grad).
+ms.openlocfilehash: b690d1267503e704549bd74eacf06b414db98137
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341315"
 ---
 # <a name="atan-function"></a>ATAN Function
 
-Gibt den Arkustangens einer Zahl, beispielsweise der Winkel, dessen Tangens _Zahl_ist. Der resultierende Winkel liegt im Bereich-PI/2 < = Winkel < = PI/2 Bogenmaß (-90 < = Winkel < = 90 Grad). 
+Gibt den Arctangent einer Zahl zurück, beispielsweise den Winkel, dessen Tangente eine _Zahl_ist. Der resultierende Winkel befindet sich im Range-PI/2 < = Angle < = PI/2 Radiant (-90 < = Winkel < = 90 Grad). 
   
 ## <a name="syntax"></a>Syntax
 
-ATAN (** *Anzahl* **) 
+(* * *Number* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Tangens des Winkels.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Tangens des Winkels.  <br/> |
    
 ## <a name="example"></a>Beispiel
 
-ATAN(1) 
+(1) 
   
 Gibt 45 deg zurück. 
   

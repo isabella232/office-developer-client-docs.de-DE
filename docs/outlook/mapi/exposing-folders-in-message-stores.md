@@ -1,5 +1,5 @@
 ---
-title: Verfügbarmachen von Ordnern in Nachrichtenspeichern
+title: Verf�gbarmachen von Ordnern in Nachrichtenspeicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: d9309e47-2a92-4576-9921-c89cc48472c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 62f50ed7925305eca7432da17130d2be0365ef03
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: HT
+ms.openlocfilehash: 457620dd0f805e78d12fc8feba09f8fc8aedc554
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341349"
 ---
 # <a name="exposing-folders-in-message-stores"></a>Verfügbarmachen von Ordnern in Nachrichtenspeichern
 
@@ -23,9 +23,9 @@ ms.locfileid: "22582595"
   
 Jeder Nachrichtenspeicheranbieter muss für Clientanwendungen eine [IMAPIFolder](imapifolderimapicontainer.md)-Schnittstelle auf oberster Ebene präsentieren. Der Ordner auf oberster Ebene entspricht dem gesamten Nachrichtenspeicher; er bietet Zugriff auf die Ordner, die Benutzer als die Inhalte des Nachrichtenspeichers sehen. Außerdem wird der Ordner auf oberster Ebene häufig als Standardempfangsordner für IPC-Nachrichten und als der Ordner verwendet, von dem aus Leseberichte gesendet werden. Nachrichtenspeicheranbieter müssen für Clientanwendungen auch eine IPM-Unterstruktur präsentieren, eine Reihe von Ordnern, in denen IPM-Nachrichten enthalten sind. 
   
-Clientanwendungen können Ordner auf der obersten Ebene durch Aufrufen der [IMsgStore::OpenEntry](imsgstore-openentry.md)-Methode mit 0 und NULL für die Parameter _cbEntryId_ und _lLpEntryId_ öffnen. In den meisten Fällen öffnen Clientanwendungen jedoch die Ordnergruppe, die IPM-Nachrichten enthalten. 
+Client-Anwendungen k�nnen durch Aufrufen der [IMsgStore::OpenEntry](imsgstore-openentry.md) -Methode mit 0 und NULL f�r die Parameter  _cbEntryId_ und  _lpEntryId_ jeweils Ordner den obersten Ebene �ffnen. In den meisten F�llen �ffnen Clientanwendungen jedoch den Satz von Ordnern, die IPM Nachrichten enthalten. 
   
-Um eine Liste von Ordnern im Nachrichtenspeicher der IPM-Ordnerstruktur abzurufen, gehen Sie folgendermaßen vor:
+Wenn Sie eine Liste der Ordner in den Nachrichtenspeicher IPM Ordnerstruktur erhalten m�chten, verwenden Sie die folgende Schritte aus:
   
 1. Rufen Sie die [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)-Methode mithilfe der MAPI-Sitzung auf. 
     

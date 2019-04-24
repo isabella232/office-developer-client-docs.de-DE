@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: c12b4409-da6f-480b-87af-1e5baea2e8bd
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5f8a76cb317ac9bf1b6a4dc4a92b6d6f0098e1d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a2a6d273495df52adb83393dc5549b0872c8f6f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341741"
 ---
 # <a name="srestriction"></a>SRestriction
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt einen Filter zum Einschränken der Ansicht in bestimmten Zeilen einer Tabelle. 
+Beschreibt einen Filter zum Einschränken der Ansicht einer Tabelle auf bestimmte Zeilen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SRestriction
@@ -57,59 +57,59 @@ typedef struct _SRestriction
 
  **RT**
   
-> Der Typ der Einschränkung. Mögliche Werte sind wie folgt: 
+> Der Einschränkungs. Folgende Werte sind möglich: 
     
 RES_AND 
   
-> Eine **AND** -Einschränkung, die eine bitweise **AND** -Operation für eine Beschränkung gilt. 
+> Eine **and-** Einschränkung, die eine bitweise **and-** Operation auf eine Einschränkung anwendet. 
     
 RES_BITMASK 
   
-> Eine Bitmaske-Einschränkung, die eine Bitmaske mit einem Eigenschaftswert angewendet wird.
+> Eine Bitmasken Einschränkung, die eine Bitmaske auf einen Eigenschaftswert anwendet.
     
 RES_COMMENT 
   
-> Eine Einschränkung Kommentar, die einen Kommentar mit einer Einschränkung verknüpft.
+> Eine Kommentar Einschränkung, die einer Einschränkung einen Kommentar zuordnet.
     
 RES_COMPAREPROPS 
   
-> Einen Vergleich eigenschaftseinschränkung, die zwei Eigenschaftswerten vergleicht.
+> Eine Eigenschafts Vergleichs Einschränkung, die zwei Eigenschaftswerte vergleicht.
     
 RES_CONTENT 
   
-> Eine Content Einschränkung, die einen Eigenschaftswert nach bestimmten Inhalten sucht.
+> Eine Inhaltseinschränkung, die einen Eigenschaftswert nach bestimmten Inhalten durchsucht.
     
 RES_EXIST 
   
-> Eine Einschränkung vorhanden, die bestimmt, ob eine Eigenschaft unterstützt wird.
+> Eine exist-Einschränkung, die bestimmt, ob eine Eigenschaft unterstützt wird.
     
 RES_NOT 
   
-> Eine **nicht** Einschränkung, die eine logische **NOT** -Operation für eine Beschränkung gilt. 
+> Eine **nicht** -Einschränkung, die einen logischen **Not** -Vorgang auf eine Einschränkung anwendet. 
     
 RES_OR 
   
-> Eine **oder** -Einschränkung, die eine logische **OR** -Operation für eine Beschränkung gilt. 
+> Eine **oder** -Einschränkung, die eine logische **or** -Operation auf eine Einschränkung anwendet. 
     
 RES_PROPERTY 
   
-> Eine eigenschaftseinschränkung, die bestimmt, ob der Wert einer Eigenschaft mit einem bestimmten Wert übereinstimmt.
+> Eine Eigenschaftseinschränkung, die bestimmt, ob ein Eigenschaftswert einem bestimmten Wert entspricht.
     
 RES_SIZE 
   
-> Eine Einschränkung Größe, die bestimmt, ob der Wert einer Eigenschaft eine bestimmte Größe ist.
+> Eine Größeneinschränkung, die bestimmt, ob ein Eigenschaftswert eine bestimmte Größe aufweist.
     
 RES_SUBRESTRICTION 
   
-> Eine Einschränkung Sub-Objekt, die eine Beschränkung auf Anlagen oder Empfänger einer Nachricht angewendet wird.
+> Eine Unterobjekt Einschränkung, die eine Einschränkung auf die Anlagen oder Empfänger einer Nachricht anwendet.
     
  **res**
   
-> Union der Einschränkung Strukturen zur Beschreibung des Filters angewendet werden soll. Die spezifische Struktur im **Res** -Member enthalten, hängt von den Wert des Elements **rt** ab. Die Zuordnung zwischen mygal und Struktur wird in der folgenden Tabelle aufgeführt. 
+> Vereinigung von Einschränkungs Strukturen zur Beschreibung des anzuwendenden Filters. Die im **Res** -Element enthaltene spezifische Struktur hängt vom Wert des **RT** -Members ab. Die Zuordnung zwischen dem Einschränkungs und der Struktur ist in der folgenden Tabelle aufgeführt. 
     
 |||
 |:-----|:-----|
-|**Einschränkungstyp** <br/> |**Struktur der Einschränkung** <br/> |
+|**Einschränkungs** <br/> |**Einschränkungs Struktur** <br/> |
 |RES_AND  <br/> |[SAndRestriction](sandrestriction.md) <br/> |
 |RES_BITMASK  <br/> |[SBitMaskRestriction](sbitmaskrestriction.md) <br/> |
 |RES_COMMENT  <br/> |[SCommentRestriction](scommentrestriction.md) <br/> |
@@ -122,9 +122,9 @@ RES_SUBRESTRICTION
 |RES_SIZE  <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |
 |RES_SUBRESTRICTION  <br/> |[SSubRestriction](ssubrestriction.md) <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clients verwenden eine **SRestriction** -Struktur, Anzahl und Typ der Zeilen in einer Tabelle ihre Ansicht einzuschränken und bestimmte Nachrichten in einem Ordner suchen. Um die Einschränkung für eine Tabelle zu erzwingen, rufen Clients [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md). Um die Einschränkung für einen Ordner zu erzwingen, rufen Clients auf den Ordner [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md) -Methode. 
+Clients verwenden eine **SRestriction** -Struktur, um die Anzahl und den Typ von Zeilen in der Ansicht einer Tabelle zu begrenzen und nach bestimmten Nachrichten in einem Ordner zu suchen. Um die Einschränkung für eine Tabelle aufzuerlegen, rufen die Clients entweder [IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable:: FindRow](imapitable-findrow.md)auf. Um die Einschränkung für einen Ordner aufzuerlegen, rufen die Clients die [IMAPIContainer:: SetSearchCriteria](imapicontainer-setsearchcriteria.md) -Methode des Ordners auf. 
   
 Informationen zur Verwendung von Einschränkungen mit Tabellen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   

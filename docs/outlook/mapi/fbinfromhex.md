@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 47e6c576-bd99-4410-8e41-7dd3159b23b7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 87a470c1c682225eb1deefba9ccc8c12fbdc49c9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 55c7deec9d29ae22a07b2f5ccd1c832d56782c03
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341643"
 ---
 # <a name="fbinfromhex"></a>FBinFromHex
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeichenfolgendarstellung einer eine hexadezimale Zahl konvertiert um Binärdaten. 
+Konvertiert eine Zeichenfolgendarstellung einer hexadezimalen Zahl in Binärdaten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FBinFromHex(
@@ -42,15 +42,15 @@ BOOL FBinFromHex(
 
 ## <a name="parameters"></a>Parameter
 
- _su_
+ _SZ_
   
-> [in] Zeiger auf Null endende ASCII-Zeichenfolge konvertiert werden soll. Es ist keine Unicode-Zeichenfolge. Gültige Zeichen umfassen die Hexadezimalzeichen 0 (null) bis neun und sowohl Groß- und Kleinbuchstaben Zeichen A bis F.
+> in Zeiger auf die zu konvertierende NULL-terminierte ASCII-Zeichenfolge. Es handelt sich nicht um eine Unicode-Zeichenfolge. Gültige Zeichen sind die Hexadezimalzeichen 0 bis 9 und groß-und Kleinbuchstaben A bis F.
     
  _pb_
   
-> [out] Zeiger auf das zurückgegebene binäre Zahl.
+> Out Zeiger auf die zurückgegebene binäre Zahl.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
@@ -58,7 +58,7 @@ TRUE
     
 FALSE 
   
-> Die eingegebene Zeichenfolge enthält ungültige hexadezimale ASCII-Zeichen.
+> Die Eingabezeichenfolge enthält ungültige ASCII-Hexadezimalzeichen.
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -9,17 +9,17 @@ localization_priority: Normal
 ms.assetid: 098743a5-f265-639a-8ba6-1412705bee0a
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
 ms.openlocfilehash: a7588d5fed2e059be7e628d8a76a12f76aea734d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339186"
 ---
 # <a name="upmov"></a>UPMOV
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen von Elementen, die verschoben wurden. Diese Informationen werden während der [Upload löschen Status Zustand](upload-delete-status-state.md) und [Status Tabelle hochladen](upload-table-state.md)verwendet.
+Informationen zum Hochladen von Elementen, die verschoben wurden. Diese Informationen werden während des Status [](upload-delete-status-state.md) Status des Uploads und zum [Hochladen von Tabellen](upload-table-state.md)verwendet.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -43,58 +43,58 @@ struct UPMOV
 
 _ulFlags_
   
-> [in] Kennzeichen, die um das entsprechende Verhalten beim Hochladen zu bestimmen.
+> in Flags zum Bestimmen des geeigneten Verhaltens während des Uploads.
     
   - UPV_ERROR
     
-    - [in] Problem beim Öffnen von Serverordner.
+    - in Problem beim Öffnen des Serverordners.
     
   - UPV_DIRTY
     
-    - [in] Der Upload-Status hat sich geändert. Dies wird vom Client verwendet, um die Änderung im Zustand für den lokalen Speicher zu verfolgen.
+    - in Der Uploadstatus wurde geändert. Dies wird vom Client verwendet, um die Zustandsänderung für den lokalen Speicher nachzuverfolgen.
     
   - UPV_COMMIT
     
-    - [in] Commit Upload Zustand.
+    - in Commit-Uploadstatus.
     
 _Beibehalten_
   
->  [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pstmReserved_
   
->  [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pszName_
   
->  [out] Name des Zielordners. 
+>  Out Name des Zielordners. 
     
   > [!NOTE]
-  > Dieser Member wird UNICODE nicht unterstützt. 
+  > Dieser Member unterstützt UNICODE nicht. 
   
 _feid_
   
->  [out] Eintrags-ID der Zielordner. 
+>  Out Eintrags-ID des Zielordners. 
     
 _pfld_
   
->  [in] Zeiger auf den Ordner auf dem Server. 
+>  in Zeiger auf Serverordner. 
     
 _pxicc_
   
->  [in] Zeiger auf die Schnittstelle der **IExchangeImportContentsChanges** -Inhalt, die Hochladen von Änderungen bei Verwendung von inkrementelle Änderung Synchronisierung (ICS) unterstützt. Weitere Informationen zu **IExchangeImportContentsChanges** und ICS finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
+>  in Zeiger auf die **IExchangeImportContentsChanges** -Inhalts Oberfläche, die das Hochladen von Inhaltsänderungen unterstützt, wenn die inkrementelle Änderungs Synchronisierung verwendet wird. Weitere Informationen zu **IExchangeImportContentsChanges** und ICS finden Sie unter [ICS Evaluation Criteria](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
     
 _dwReserved_
   
->  [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pupmovNext_
   
->  [out] Als Nächstes Kontext zu verschieben. 
+>  Out Nächster Verschiebungs Kontext. 
     
 _cEntMov_
   
->  [in] Anzahl der Elemente hier verschoben. 
+>  in Die Anzahl der Elemente, die hierhin verschoben wurden. 
     
 ## <a name="see-also"></a>Siehe auch
 

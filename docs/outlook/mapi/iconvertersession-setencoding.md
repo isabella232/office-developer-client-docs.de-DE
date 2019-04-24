@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a9624d3f-a636-0267-5cbd-de0db42f9c22
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 5a81e04d112e0adf201dcacf03673daac77a04ab
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341300"
 ---
 # <a name="iconvertersessionsetencoding"></a>IConverterSession::SetEncoding
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initialisiert die Codierung, um bei der Umwandlung verwendet werden.
+Initialisiert die Codierung, die während der Konvertierung verwendet werden soll.
   
 ```cpp
 HRESULT IConverterSession:: SetEncoding ( 
@@ -35,7 +35,7 @@ HRESULT IConverterSession:: SetEncoding (
 
 _et_
   
-> Ein [ENCODINGTYPE](https://msdn.microsoft.com/library/aa374936%28VS.85%29.aspx) -Wert. Nur die folgenden Werte werden unterstützt: 
+> Ein [EncodingType](https://msdn.microsoft.com/library/aa374936%28VS.85%29.aspx) -Wert. Nur die folgenden Werte werden unterstützt: 
     
    - IET_BASE64
    - IET_UUENCODE
@@ -47,22 +47,22 @@ _et_
 
 E_INVALIDARG
   
-> Der Typ der Codierung übergeben war ungültig.
+> Der übergebene Codierungs war ungültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie **SetEncoding** vor der Nutzung [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) Konvertierung ausführen. 
+Rufen **** Sie die setEncoding vor der Verwendung von [IConverterSession:: MAPItoMIMEStm](iconvertersession-mapitomimestm.md) für die Konvertierung auf. 
   
-Verwenden Sie zum Festlegen der Codierung für eine e-Mail-Elements nur die äußerste Nachrichtentext **SetEncoding** . Microsoft Outlook 2010 und Microsoft Outlook 2013 wählen Sie die Codierung für jede einzelnen Anlagen. 
+Verwenden **** Sie setEncoding, um die Codierung nur für den äußersten Nachrichtentext eines e-Mail-Elements festzulegen. Microsoft Outlook 2010 und Microsoft Outlook 2013 wählen die Codierung für einzelne Anlagen aus. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI (engl.) wandelt MimeToMAPI eine EML-Datei an einen MAPI-Nachricht.  <br/> |
-|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI (engl.) wird MAPIToMIMEStm verwendet, um eine MAPI-Nachricht in einer EML-Datei zu konvertieren.  <br/> |
+|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.  <br/> |
+|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

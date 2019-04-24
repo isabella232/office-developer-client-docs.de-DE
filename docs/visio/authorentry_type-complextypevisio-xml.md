@@ -1,5 +1,5 @@
 ---
-title: AuthorEntry_Type ComplexType ("Visio XML")
+title: AuthorEntry_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6ea7b946-ecd3-1524-5e36-a2c35cb11d7a
 ms.openlocfilehash: 7d43d34559f212e3de1a91291cbf14b75a3b2e0c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341384"
 ---
-# <a name="authorentrytype-complextype-visio-xml"></a>AuthorEntry_Type ComplexType ("Visio XML")
+# <a name="authorentrytype-complextype-visio-xml"></a>AuthorEntry_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -46,7 +46,7 @@ ms.locfileid: "25386838"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -56,9 +56,9 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|Initialen  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|Name  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|ResolutionID  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
+|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|Initialen  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|Lösungs-Nr  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
    
 

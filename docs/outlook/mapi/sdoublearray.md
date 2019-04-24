@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: b63b26de-faf9-453c-ab8b-fb703ed09ae8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6986ed7c9ab9932c5d95fcfb7f74f80088f21971
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 91440d619c8ad8a64b2bac7463a26d9c196a3c0f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339732"
 ---
 # <a name="sdoublearray"></a>SDoubleArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Double-Werte verwendet, um eine Eigenschaft vom Typ PT_MV_DOUBLE beschrieben.
+Enthält ein Array von Doubles, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_DOUBLE verwendet werden.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SDoubleArray
@@ -44,15 +44,15 @@ typedef struct _SDoubleArray
 
  **cValues**
   
-> Anzahl der Werte im Array auf den Member **Lpdbl** zeigt. 
+> Die Anzahl der Werte im Array, auf die durch das **lpdbl** -Element verwiesen wird. 
     
  **lpdbl**
   
-> Zeiger auf ein Array von double-Werte.
+> Zeiger auf ein Array von Double-Werten.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zu PT_MV_DOUBLE finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
+Weitere Informationen zu PT_MV_DOUBLE finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

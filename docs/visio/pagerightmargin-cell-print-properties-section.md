@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f864c759-ed94-8ab7-d664-cc04b3ed743e
 description: Gibt den rechten Rand der gedruckten Seite an.
-ms.openlocfilehash: 951a16ff20e294b68ed5447d330f4e7cbc100c82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d30669626fe07379521d61554010ae1bd7b0e83a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339494"
 ---
-# <a name="pagerightmargin-cell-print-properties-section"></a>PageRightMargin Cell (Print Properties Section)
+# <a name="pagerightmargin-cell-print-properties-section"></a>Zelle "PageRightMargin" (Abschnitt "Print Properties")
 
 Gibt den rechten Rand der gedruckten Seite an.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Durch diesen Wert werden physische Einheiten dargestellt, und er wird weder durch Skalierung noch durch Zeichnungseinheiten beeinflusst. Wenn diese Zelle beispielsweise den Wert 0,25 cm aufweist, beträgt der Rand 0,25 Zentimeter, selbst wenn als Einheit der Seite Dezimeter angegeben werden. Wenn keine Einheiten explizit angegeben sind, ist die Standardeinstellung Seiteneinheiten. 
   
-Wenn Sie einen Verweis auf die Zelle PageRightMargin aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PageRightMargin aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageRightMargin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageRightMargin aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PageRightMargin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
-| Zellenindex:  <br/> |**visPrintPropertiesRightMargin** <br/> |
+| Zeilenindex:  <br/> |**visPrintPropertiesRightMargin** <br/> |
    
 

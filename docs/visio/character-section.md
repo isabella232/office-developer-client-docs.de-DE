@@ -9,21 +9,21 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f5afe93a-9217-a9ec-76ce-daf12afbb0f7
 description: Zeigt die Formatierungsattribute für den Text des Shapes an. Dazu zählen Schriftart, Farbe, Textformat, Groß- und Kleinschreibung, die Position relativ zur Grundlinie und der Schriftgrad.
-ms.openlocfilehash: 41d7b92e1465f6fd0deef366862f2a4c533414a7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4ff7dfce0ec25f3db0738bc63014f2cf4321ac2e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341881"
 ---
-# <a name="character-section"></a>Character Section
+# <a name="character-section"></a>Abschnitt "Character"
 
 Zeigt die Formatierungsattribute für den Text des Shapes an. Dazu zählen Schriftart, Farbe, Textformat, Groß- und Kleinschreibung, die Position relativ zur Grundlinie und der Schriftgrad.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Für jede Zeichenformatvorlage in einem Shape ist eine entsprechende Zeile im Abschnitt " **Character** ", wie Sie in das ShapeSheet-Fenster angezeigt. Der Name der Zeile stellt die Anzahl der Zeichen an, denen die Zeichenformatvorlage angewendet wird. 
+Jedes Zeichenformat in einem Shape hat eine entsprechende Zeile im Abschnitt **Character** , wie im ShapeSheet-Fenster angezeigt. Der Name der Zeile stellt die Anzahl von Zeichen dar, auf die die Zeichenformatvorlage angewendet wird. 
   
-Sie können Textformate (klicken Sie in der **Schriftart** der Dialogfeld-Startprogramms zu gruppieren, auf der Registerkarte **Start** ), im Dialogfeld **Text** festlegen, durch Anwenden einer Formatvorlage oder einen Eintrag in einer Zelle des Abschnitts **Character** erstellen. 
+Sie können Textformate im Dialogfeld **Text** festlegen (Klicken Sie auf der Registerkarte **Start** in der Gruppe **Schriftart** auf das Startprogramm für das Dialogfeld), indem Sie eine Formatvorlage anwenden oder einen Eintrag in einer Zelle des **Zeichen** Abschnitts vornehmen. 
   
 

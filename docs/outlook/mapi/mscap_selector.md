@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f28ac144-f5ac-fd83-2b72-8d6e5fd74b6e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8c23788d64fe3703c7c46998cade0bd40d2f3dd2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9c5d8ab5bbac91250f3b8c552ad891c62134526e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338675"
 ---
 # <a name="mscapselector"></a>MSCAP_SELECTOR
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, das die Funktionen für einen Speicher zurückgegeben.
+Gibt die Funktionen an, die für einen Speicher zurückgegeben werden sollen.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,11 +40,11 @@ typedef enum
 
  *MSCAP_SEL_RESERVED1* 
   
-> Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
  *MSCAP_SEL_RESERVED2* 
   
-> Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
  *MSCAP_SEL_FOLDER* 
   
@@ -52,7 +52,7 @@ typedef enum
     
  *MSCAP_SEL_RESERVED3* 
   
-> Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
  *MSCAP_SEL_RESTRICTION* 
   

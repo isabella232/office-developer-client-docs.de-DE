@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f01fce7b-a038-4002-8bad-0e6a51ae9d05
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: de9b5e377840b1fbfa3b6dd73fd952c0c72efeb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a8b49d0b80102f6295f3f717fb123a6581854d5a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341118"
 ---
 # <a name="extendednotification"></a>EXTENDED_NOTIFICATION
 
@@ -25,11 +25,11 @@ ms.locfileid: "22580642"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt die Informationen, die auf ein Ereignis bezieht, die anbieterspezifische-Dienst ist. 
+Beschreibt Informationen, die sich auf ein Ereignis beziehen, das Dienstanbieter spezifisch ist. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _EXTENDED_NOTIFICATION
@@ -45,31 +45,31 @@ typedef struct _EXTENDED_NOTIFICATION
 
  **ulEvent**
   
-> Erweiterte Ereigniscode, die vom Anbieter definiert ist.
+> Erweiterter Ereigniscode, der vom Anbieter definiert wird.
     
  **cb**
   
-> Anzahl der Bytes in der Ereignis-spezifischen Parametern auf **PbEventParameters**zeigt. 
+> Die Anzahl der Bytes in den ereignisspezifischen Parametern, auf die von **pbEventParameters**verwiesen wird. 
     
  **pbEventParameters**
   
-> Zeiger auf Ereignis-spezifischen Parametern. Der Typ von Parametern, die verwendet werden, hängt von den Wert des Elements **UlEvent** ab. Diese Parameter sind vom Anbieter dokumentiert, die das Ereignis ausgegeben. 
+> Zeiger auf ereignisspezifische Parameter. Welcher Typ von Parametern verwendet wird, hängt vom Wert des **ulEvent** -Elements ab; Diese Parameter werden vom Anbieter dokumentiert, der das Ereignis ausgelöst hat. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **EXTENDED_NOTIFICATION** -Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Wenn **Info** Mitglied eine **Benachrichtigung** Struktur eine **EXTENDED_NOTIFICATION** -Struktur enthält, wird das **UlEventType** Mitglied der **Benachrichtigung** Struktur auf _FnevExtended_festgelegt.
+Die **EXTENDED_NOTIFICATION** -Struktur ist ein Mitglied der Vereinigung von Strukturen, die im **Info** -Element der Benachrichtigungs [](notification.md) Struktur enthalten sind. Wenn der **Info** -Member einer **Benachrichtigungs** Struktur eine **EXTENDED_NOTIFICATION** -Struktur enthält, wird das **ulEventType** -Element der **Benachrichtigungs** Struktur auf _fnevExtended_festgelegt.
   
-Das erweiterte-Ereignis wird durch einen Dienstanbieter, eine Art der Änderung darstellen, die von keiner anderen vordefinierten Ereignisse behandelt werden kann nicht definiert. Für dieses Ereignis können nur Clients, die wissen, bevor sie registrieren, dass es sich bei ein Dienstanbieter ein erweiterte Ereignis unterstützt registrieren. Es ist nicht möglich für Clients ohne guten Kenntnissen zu bestimmen, ob es sich bei ein Dienstanbieter ein erweiterte Ereignis unterstützt. Wenn ein Dienstanbieter ein erweiterte Ereignis unterstützt, wird gezeigt, wie ein Ereignis beim Empfang zu behandeln.
+Das Extended-Ereignis wird von einem Dienstanbieter definiert, der eine Art von Änderung darstellt, die von keinem der anderen vordefinierten Ereignisse abgedeckt werden kann. Nur Clients, die vor Ihrer Registrierung wissen, dass ein Dienstanbieter ein erweitertes Ereignis unterstützt, können sich für dieses Ereignis registrieren. Es ist für Clients nicht möglich, ohne Erweitertes Wissen zu ermitteln, ob ein Dienstanbieter ein Extended-Ereignis unterstützt. Wenn ein Dienstanbieter ein Extended-Ereignis unterstützt, wird gezeigt, wie ein solches Ereignis beim Empfang behandelt wird.
   
-Wenn ein Client abmeldet eine erweiterte Benachrichtigung von der Sitzung gesendet. Registrieren Sie für diese Benachrichtigung durch Aufrufen von [IMAPISession::Advise](imapisession-advise.md) mit der _LpEntryID_ -Parameter auf NULL und der _CbEntryID_ -Parameter auf 0 (null) festgelegt. 
+Eine erweiterte Benachrichtigung wird von der Sitzung gesendet, wenn sich ein Client abmeldet. Registrieren Sie sich für diese Benachrichtigung, indem Sie [IMAPISession:: Advise](imapisession-advise.md) aufrufen, wobei der _lpEntryID_ -Parameter auf NULL festgelegt ist und der _cbEntryID_ -Parameter auf NULL festgelegt ist. 
   
-Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der folgenden Tabelle beschrieben.
+Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methoden verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methoden zum Generieren von Benachrichtigungen verwenden können.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

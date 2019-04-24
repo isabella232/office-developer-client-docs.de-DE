@@ -1,5 +1,5 @@
 ---
-title: Window_Type ComplexType ("Visio XML")
+title: Window_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c514ce79-0920-4f1b-5332-0bdef146e802
 ms.openlocfilehash: 340326213de4029201d21e627ed4b27c53b33d1e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339928"
 ---
-# <a name="windowtype-complextype-visio-xml"></a>Window_Type ComplexType ("Visio XML")
+# <a name="windowtype-complextype-visio-xml"></a>Window_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -170,7 +170,7 @@ ms.locfileid: "25400586"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -186,7 +186,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |[SnapAngles](snapangles-element-window_type-complextypevisio-xml.md) <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> ||
 |[SnapExtensions](snapextensions-element-window_type-complextypevisio-xml.md) <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> ||
 |[SnapSettings](snapsettings-element-window_type-complextypevisio-xml.md) <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> ||
-|[StencilGroup](stencilgroup-element-window_type-complextypevisio-xml.md) <br/> |[StencilGroup_Type](stencilgroup_type-complextypevisio-xml.md) <br/> ||
+|[Stencilgroup](stencilgroup-element-window_type-complextypevisio-xml.md) <br/> |[StencilGroup_Type](stencilgroup_type-complextypevisio-xml.md) <br/> ||
 |[StencilGroupPos](stencilgrouppos-element-window_type-complextypevisio-xml.md) <br/> |[StencilGroupPos_Type](stencilgrouppos_type-complextypevisio-xml.md) <br/> ||
 |[TabSplitterPos](tabsplitterpos-element-window_type-complextypevisio-xml.md) <br/> |[TabSplitterPos_Type](tabsplitterpos_type-complextypevisio-xml.md) <br/> ||
    
@@ -194,23 +194,23 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Container  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|ContainerType  <br/> |XSD:Token  <br/> |Optional  <br/> ||Werte des Typs Xsd:token.  <br/> |
-|Document  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|Master  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|Page  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|ParentWindow  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|ReadOnly  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |
-|Blatt  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|ViewCenterX  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|ViewCenterY  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|ViewScale  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|WindowHeight  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|WindowLeft  <br/> |XSD:Short  <br/> |Optional  <br/> ||Werte des Typs Xsd:short.  <br/> |
-|WindowState  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|WindowTop  <br/> |XSD:Short  <br/> |Optional  <br/> ||Werte des Typs Xsd:short.  <br/> |
-|Fenstertyp  <br/> |XSD:Token  <br/> |erforderlich  <br/> ||Werte des Typs Xsd:token.  <br/> |
-|WindowWidth  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
+|Container  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|ContainerType  <br/> |XSD: Token  <br/> |Optional  <br/> ||Werte des XSD: Token-Typs.  <br/> |
+|Dokument  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|Master  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|Seite  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|ParentWindow  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|ReadOnly  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|Blatt  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|ViewCenterX  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|ViewCenterY  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|ViewScale  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|WindowHeight  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|WindowLeft  <br/> |XSD: kurz  <br/> |Optional  <br/> ||Werte des XSD: Short-Typs.  <br/> |
+|WindowState  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|WindowTop  <br/> |XSD: kurz  <br/> |Optional  <br/> ||Werte des XSD: Short-Typs.  <br/> |
+|WindowType  <br/> |XSD: Token  <br/> |erforderlich  <br/> ||Werte des XSD: Token-Typs.  <br/> |
+|WindowWidth  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
    
 

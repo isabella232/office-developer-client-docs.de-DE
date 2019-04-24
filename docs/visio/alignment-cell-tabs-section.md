@@ -9,39 +9,39 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 84234177-a2df-6acc-2761-230bc5d12627
 description: Legt die Tabausrichtung fest.
-ms.openlocfilehash: a2178c63d0005ee8b2f0c8ebcfbc25854a5b1567
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 461357c9c838fb4c0e5b0159bf027dd6adce26f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341538"
 ---
-# <a name="alignment-cell-tabs-section"></a>Alignment Cell (Tabs Section)
+# <a name="alignment-cell-tabs-section"></a>Zelle "Alignment" (Abschnitt "Tabs")
 
 Legt die Tabausrichtung fest.
   
-|**Wert**|**Ausrichtung**|**Automatisierungskonstante**|
+|**Wert**|**Alignment**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| 0  <br/> | Links  <br/> |**visTabStopLeft** <br/> |
-| 1  <br/> | Mittig  <br/> |**visTabStopCenter** <br/> |
+| 0  <br/> | Left  <br/> |**visTabStopLeft** <br/> |
+| 1  <br/> | Zentriert  <br/> |**visTabStopCenter** <br/> |
 | 2  <br/> | Nach rechts  <br/> |**visTabStopRight** <br/> |
-| 3  <br/> | Dezimalwert  <br/> |**visTabStopDecimal** <br/> |
+| 3  <br/> | Dezimal  <br/> |**visTabStopDecimal** <br/> |
 | 4  <br/> | Komma  <br/> |**visTabStopComma** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Alignment aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Alignment aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Registerkarten.  *Ij* , in dem *i und j =* < 1 >, 2, 3  <br/> |
+| Zellenname:  <br/> | Registerkarten.  *IJ* , wobei *i und j =* <1>, 2, 3  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Alignment aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Alignment aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionTab** <br/> |
-| Zeilenindex:  <br/> |**VisRowTab +** *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> | (*j* * 3) **+ VisTabAlign** <br/> |
+| Zeilenindex:  <br/> |**visRowTab +** *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zellenindex:  <br/> | (*j* * 3) **+ visTabAlign** <br/> |
    
 

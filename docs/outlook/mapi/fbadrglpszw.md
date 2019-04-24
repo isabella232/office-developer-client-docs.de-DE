@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 880eb35d-7045-4fdd-bb33-0f14557a7316
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3b3b6b5ca0b06fc55a60e035ffd9118391cab8f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ca436bc83d5170d55475c1dd9702a9d54e4b9d5a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341055"
 ---
 # <a name="fbadrglpszw"></a>FBadRglpszW
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Überprüft alle Zeichenfolgen in einem Array von Unicode-Zeichenfolgen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -44,20 +44,20 @@ BOOL FBadRglpszW(
 
  _lppszW_
   
-> [in] Zeiger auf ein Array mit Null terminierte Unicode-Zeichenfolgen. 
+> in Zeiger auf ein Array von null-terminierten Unicode-Zeichenfolgen. 
     
- _CString_
+ _cStrings_
   
-> [in] Anzahl der Zeichenfolgen im Array auf den durch den Parameter _LppszW_ verwiesen. 
+> in Anzahl der Zeichenfolgen im Array, auf die durch den _lppszW_ -Parameter verwiesen wird. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Eine oder mehrere der Zeichenfolgen in das angegebene Array ist ungültig. 
+> Mindestens eine der Zeichenfolgen im angegebenen Array ist ungültig. 
     
 FALSE 
   
-> Die Zeichenfolgen im angegebenen Array sind ungültig.
+> Die Zeichenfolgen im angegebenen Array sind gültig.
     
 

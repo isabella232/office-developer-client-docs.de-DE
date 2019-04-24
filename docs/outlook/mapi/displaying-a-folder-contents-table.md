@@ -1,5 +1,5 @@
 ---
-title: Anzeigen einer Tabelle der Ordner-Inhalt
+title: Anzeigen einer Ordnerinhaltstabelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,37 +8,37 @@ api_type:
 - COM
 ms.assetid: 14a4c123-776d-4a32-9688-8a4402dd1f53
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 51c88e8c062a409db305e893b82f43d8c8ac7094
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 56847283afaf41c1d45cdb875ddf49eaa5881175
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339935"
 ---
-# <a name="displaying-a-folder-contents-table"></a>Anzeigen einer Tabelle der Ordner-Inhalt
+# <a name="displaying-a-folder-contents-table"></a>Anzeigen einer Ordnerinhaltstabelle
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Inhaltstabelle eines Ordners enthält zusammenfassende Informationen zu allen Nachrichten. Zusammenfassende Informationen zu neuen eingehenden Nachrichten in der Inhaltstabelle des Ordners "empfangen" für die Nachrichtenklasse wird angezeigt. Um diese Informationen für Benutzer verfügbar machen, Abrufen der Tabelle und die Spalten und Zeilen nach Bedarf angezeigt.
+Die Inhaltstabelle eines Ordners enthält zusammenfassende Informationen zu allen Nachrichten. Zusammenfassende Informationen zu neuen eingehenden Nachrichten werden in der Tabelle Inhalt des Empfänger Ordners für die Nachrichtenklasse angezeigt. Um diese Informationen Benutzern zur Verfügung zu stellen, rufen Sie die Tabelle ab, und zeigen Sie die Spalten und Zeilen entsprechend an.
   
-**Zum Anzeigen einer Tabelle der Ordner-Inhalt**
+**So zeigen Sie eine Ordnerinhaltstabelle an**
   
-1. Rufen Sie [IMsgStore::OpenEntry](imsgstore-openentry.md), die Eintrags-ID des Ordners mit der Tabelle übergeben.
+1. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md)auf, und übergeben Sie den Eintragsbezeichner des Ordners, der die Tabelle enthält.
     
-2. Rufen Sie den Ordner [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) -Methode, um seine Inhaltstabelle zu öffnen. 
+2. Rufen Sie die [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable-Methode des Ordners auf, um die Inhaltstabelle zu öffnen. 
     
-3. Beschränken Sie Ihre Ansicht der Inhaltstabelle bei Bedarf durch Aufrufen der Tabelle [IMAPITable::SetColumns](imapitable-setcolumns.md) -Methode bestimmte Spalten angegeben werden. 
+3. Schränken Sie die Ansicht der Inhaltstabelle auf Wunsch ein, indem Sie die [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode der Tabelle aufrufen, um bestimmte Spalten anzugeben. 
     
-4. Beschränken Sie Ihre Ansicht der Inhaltstabelle bei Bedarf durch Aufrufen der Tabelle [Methode IMAPITable:: Restrict](imapitable-restrict.md) -Methode, um bestimmte Zeilen zu filtern. Wenn Sie beispielsweise nur Nachrichten mit einer bestimmten Nachrichtenklasse anzeigen, die noch nicht gelesen werden möchten: 
+4. Begrenzen Sie die Ansicht der Inhaltstabelle auf Wunsch, indem Sie die [IMAPITable:: Restrict](imapitable-restrict.md) -Methode der Tabelle zum Filtern bestimmter Zeilen aufrufen. Wenn Sie beispielsweise nur Nachrichten mit einer bestimmten Nachrichtenklasse anzeigen möchten, die noch nicht gelesen werden müssen: 
     
-    1. Erstellen Sie eine eigenschaftseinschränkung in eine [SPropertyRestriction](spropertyrestriction.md) -Struktur, die die Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) mit der gewünschten Nachrichtenklasse entspricht. 
+    1. Erstellen Sie eine Eigenschaftseinschränkung in einer [SPropertyRestriction](spropertyrestriction.md) -Struktur, die mit der **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft mit der gewünschten Nachrichtenklasse übereinstimmt. 
         
-    2. Erstellen Sie eine Bitmaske Beschränkung in eine [SBitMaskRestriction](sbitmaskrestriction.md) -Struktur, die **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) als das Eigenschafts-Tag und den Wert MSGFLAG_UNREAD als Maske verwendet wird.
+    2. Erstellen Sie eine Bitmasken Einschränkung in einer [SBitMaskRestriction](sbitmaskrestriction.md) -Struktur, die **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) als Property-Tag und den MSGFLAG_UNREAD-Wert als Maske verwendet.
         
-    3. Erstellen Sie eine Einschränkung in eine [SAndRestriction](sandrestriction.md) -Struktur, die die Einschränkungen-Eigenschaft und Bitmaske teilnimmt. 
+    3. Erstellen Sie eine Einschränkung in einer [SAndRestriction](sandrestriction.md) -Struktur, die die Eigenschaften-und Bitmasken Einschränkungen verknüpft. 
     
-5. Sortieren der Inhaltstabelle bei Bedarf durch Aufrufen der Tabelle [SortTable](imapitable-sorttable.md) -Methode. 
+5. Sortieren Sie die Inhaltstabelle nach Bedarf, indem Sie die [IMAPITable:: sortable](imapitable-sorttable.md) -Methode der Tabelle aufrufen. 
     
-6. Rufen Sie [IMAPITable::QueryRows](imapitable-queryrows.md) , um alle Zeilen aus der Inhaltstabelle für die Verarbeitung abzurufen. 
+6. Rufen Sie [IMAPITable:: QueryRows](imapitable-queryrows.md) auf, um alle Zeilen aus der Tabelle Contents zur Verarbeitung abzurufen. 
     
 

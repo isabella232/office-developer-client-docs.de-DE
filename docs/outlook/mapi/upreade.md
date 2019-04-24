@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d146ee74-0c3a-5fdd-b1aa-af6498550801
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fd593b68ef7ca25b1f8ceec613786cdbdd03fd76
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1df2c665f8e9d7a0bd6d47ec59b2adf706bead75
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338864"
 ---
 # <a name="upreade"></a>UPREADE
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erweiterte Informationen zum Hochladen eines Elements Zustand "gelesen" während der [Upload lesen Status Zustand](upload-read-status-state.md).
+Erweiterte Informationen zum Hochladen des Lesestatus eines Elements während des [Uploadstatus](upload-read-status-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -35,27 +35,27 @@ struct UPREADE
 
 _ulFlags_
   
->  [Out] / [in] Flags, um das entsprechende Verhalten beim Hochladen zu bestimmen. 
+>  [out]/[in] Flags, um das entsprechende Verhalten während des Uploads zu bestimmen. 
     
   - UPR_ASSOC
     
-    - [out] Element ausgeblendet ist.
+    - Out Element ist ausgeblendet.
     
   - UPR_READ
     
-    - [out] Der schreibgeschützte Status des Elements wurde geändert.
+    - Out Der Lesestatus des Elements wurde geändert.
     
   - UPR_OK
     
-    - [in] Der Upload war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen an den Server.
+    - in Der Upload war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
     
   - UPR_COMMIT
     
-    - [in] Hochladen des lesen Status des Elements jetzt, anstatt zu warten, bis zum Ende der [Tabelle Zustand hochladen](upload-table-state.md) zur Stapelverarbeitung mehr als ein Element. 
+    - in Laden Sie jetzt den Lesestatus des Elements hoch, statt auf das Ende des Upload- [Tabellenstatus](upload-table-state.md) zu warten, um mehr als ein Element zu verarbeiten. 
     
-_SKEY_
+_skey_
   
-> [out] Quellschlüssel des Elements.
+> Out Der Quellschlüssel des Elements.
     
 ## <a name="see-also"></a>Siehe auch
 

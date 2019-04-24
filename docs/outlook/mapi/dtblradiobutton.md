@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 64cef938-ef6f-43bb-8f6e-d4cd4d6c9888
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 493176029be3e7b154188aa164a95a8bc9c0e7d9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 94e412f2f542298adcedf4414c19b5303330cf2f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339417"
 ---
 # <a name="dtblradiobutton"></a>DTBLRADIOBUTTON
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Optionsfeld, die an eine Gruppe von Optionsfeldern werden sollen. Die Gruppe von Optionsfeldern wird in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird.
+Beschreibt ein Optionsfeld, das Teil einer Optionsfeldgruppe sein wird. Die Optionsschaltfläche-Gruppe wird in einem Dialogfeldverwendet, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _DTBLRADIOBUTTON
@@ -47,35 +47,35 @@ typedef struct _DTBLRADIOBUTTON
 
  **ulbLpszLabel**
   
-> Die Position im Speicher der Zeichen Zeichenfolge Bezeichnung für das Optionsfeld.
+> Position im Speicher der Zeichenfolgenbezeichnung für das Optionsfeld.
     
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format der Beschriftung festzulegen, auf die der **UlbLpszLabel** Member. Das folgende Flag kann festgelegt werden: 
+> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabel** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Beschriftung wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
     
  **ulcButtons**
   
-> Anzahl der Schaltflächen in der Gruppe von Optionsfeldern. Die **DTBLRADIOBUTTON** Strukturen für die anderen Schaltflächen in der Gruppe müssen in aufeinander folgenden Zeilen der Tabelle anzeigen enthalten sein. Jeder dieser Zeilen sollte den gleichen Wert für das **UlcButtons** -Element enthalten. 
+> Anzahl der Schaltflächen in der Optionsfeldgruppe. Die **DTBLRADIOBUTTON** -Strukturen für die anderen Schaltflächen in der Gruppe müssen in aufeinanderfolgenden Zeilen der Anzeigetabelle enthalten sein. Jede dieser Zeilen sollte den gleichen Wert für das **ulcButtons** -Element enthalten. 
     
  **ulPropTag**
   
-> Eigenschaftentag für eine Eigenschaft vom Typ PT_LONG. Die ursprüngliche Auswahl in die Gruppe von Optionsfeldern basiert auf den ursprünglichen Wert dieser Eigenschaft. Jede Schaltfläche in der Gruppe benötigen **UlPropTag** auf dieselbe Eigenschaft festgelegt. 
+> Property-Tag für eine Eigenschaft vom Typ PT_LONG. Die anfängliche Auswahl in der Optionsfeldgruppe basiert auf dem Anfangswert dieser Eigenschaft. Für jede Schaltfläche in der Gruppe muss **ulPropTag** auf dieselbe Eigenschaft festgelegt sein. 
     
  **lReturnValue**
   
 > Eindeutige Zahl, die die ausgewählte Schaltfläche identifiziert.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLRADIOBUTTON** beschreibt ein Optionsfeld ein Button-Steuerelement, das eine Gruppe von Schaltflächen zugeordnet ist. Es kann nur eine Schaltfläche in der Gruppe überprüft werden soll; Festlegen einer Schaltfläche bewirkt, dass die anderen Schaltflächen in der Gruppe nicht festgelegt werden. 
+Eine **DTBLRADIOBUTTON** -Struktur beschreibt ein Optionsfeld-Steuerelement, das einer Gruppe von Schaltflächen zugeordnet ist. Nur eine Schaltfläche in der Gruppe kann überprüft werden; durch Festlegen einer Schaltfläche werden die anderen Schaltflächen in der Gruppe festgelegt. 
   
-Der Wert der Schaltfläche wird die Anzahl der Optionsfelder in der Gruppe. Die Strukturen für die anderen Optionsfelder in der Gruppe müssen in folgenden Zeilen in der Tabelle angezeigt werden. Jedes dieser Strukturen sollte den gleichen Wert für die Anzahl der Schaltfläche aufweisen.
+Die Schaltflächen Anzahl ist die Anzahl der Optionsfelder in der Gruppe. Die Strukturen für die anderen Optionsfelder in der Gruppe müssen sich in nachfolgenden Zeilen in der Anzeigetabelle befinden. Jede dieser Strukturen sollte den gleichen Wert für die Schaltflächen Anzahl aufweisen.
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

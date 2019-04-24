@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7d2ec869-7ffa-3b41-8126-3f4889501e0c
 description: Legt fest, ob Shapes auf Seitenumbrüchen platziert werden können, wenn die Shapes schrittweise ausgerichtet werden, der Abstand schrittweise festgelegt oder beides.
-ms.openlocfilehash: 045ceca430c6c285ad4e454b9d17f9dbd7492a4c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5ff5a31e26cc1ab9415eb69b76fc9f64ccd1ae7d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338724"
 ---
-# <a name="avoidpagebreaks-cell-page-layout-section"></a>AvoidPageBreaks Cell (Page Layout Section)
+# <a name="avoidpagebreaks-cell-page-layout-section"></a>Zelle "AvoidPageBreaks" (Abschnitt "Page Layout")
 
 Legt fest, ob Shapes auf Seitenumbrüchen platziert werden können, wenn die Shapes schrittweise ausgerichtet werden, der Abstand schrittweise festgelegt oder beides.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie eine Referenz auf die Zelle AvoidPageBreaks nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
+Wenn Sie einen Verweis auf die Zelle AvoidPageBreaks aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |AvoidPageBreaks  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle AvoidPageBreaks aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle AvoidPageBreaks aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

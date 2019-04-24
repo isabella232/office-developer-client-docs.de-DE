@@ -1,5 +1,5 @@
 ---
-title: PidTagPhysicalRenditionAttributes (kanonische Eigenschaft)
+title: Kanonische Pidtagphysicalrenditionattributes (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6cef620b-e3b7-47b9-9727-8e609465c268
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8b6c95093715f484bafd35c5836bb5790ce5b994
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f66d0f06112d95cb5adb2a9e7419c1d20f71bfc2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338668"
 ---
-# <a name="pidtagphysicalrenditionattributes-canonical-property"></a>PidTagPhysicalRenditionAttributes (kanonische Eigenschaft)
+# <a name="pidtagphysicalrenditionattributes-canonical-property"></a>Kanonische Pidtagphysicalrenditionattributes (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen ASN. 1 Objektbezeichner, der für das rendering von Nachrichtenanlagen verwendet wird.
+Enthält einen ASN. 1-Objektbezeichner, der für das Rendern von Nachrichtenanlagen verwendet wird.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält einen ASN. 1 Objektbezeichner, der für das rendering von Nachrichtenan
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

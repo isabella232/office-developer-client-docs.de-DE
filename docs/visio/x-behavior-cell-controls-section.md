@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251285
 localization_priority: Normal
 ms.assetid: 82423d08-b6ce-0f23-8b61-354c3e5f323e
-description: Steuert das Verhalten, das die X-Koordinate der Steuerpunkt Steuerpunkts zeigt, wenn dieser verschoben wird.
-ms.openlocfilehash: 004ad407941aa15cec3ae94188f590ec6513c4da
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Steuert die Art des Verhaltens, das die x-Koordinate des Steuerpunkts zeigt, nachdem der Ziehpunkt verschoben wurde.
+ms.openlocfilehash: 50b08664deec69659ff70a0bf9a17a148ed0e110
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338843"
 ---
-# <a name="x-behavior-cell-controls-section"></a>X Behavior Cell (Controls Section)
+# <a name="x-behavior-cell-controls-section"></a>Zelle "X Behavior" (Abschnitt "Controls")
 
-Steuert das Verhalten, das die *X* -Koordinate der Steuerpunkt Steuerpunkts zeigt, wenn dieser verschoben wird. 
+Steuert die Art des Verhaltens, das die *x* -Koordinate des Steuerpunkts zeigt, nachdem der Ziehpunkt verschoben wurde. 
   
 |**Wert**|**Verhalten**|**Definition**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|:-----|
@@ -35,18 +35,18 @@ Steuert das Verhalten, das die *X* -Koordinate der Steuerpunkt Steuerpunkts zeig
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle X Behavior aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle X Behavior aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Steuerelemente.  *Name* . XConwhere-Steuerelemente.  *Name* ist der Name der Zeile mit Steuerelementen.  <br/> |
+| Zellenname:  <br/> | Steuerelemente.  *Name* . XConwhere-Steuerelemente.  *Name* ist der Name der Zeile Controls.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle X Behavior aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle X Behavior aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionControls** <br/> |
-| Zeilenindex:  <br/> |**VisRowControl** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowControl** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCtlXCon** <br/> |
    
 

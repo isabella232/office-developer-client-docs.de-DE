@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 92ec9b11-f53f-a1c9-832a-6cac08aa5379
 description: Legt den Abstand in Seiteneinheiten fest, den der Schlagschatten eines Shapes auf horizontaler Ebene vom Shape entfernt ist.
-ms.openlocfilehash: 9aec108146e329d7a8161acc4ca7cdcb19424eff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fbc7d37fc8ba45f3219af6a4350301102954f23d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338752"
 ---
-# <a name="shdwoffsetx-cell-page-properties-section"></a>ShdwOffsetX Cell (Page Properties Section)
+# <a name="shdwoffsetx-cell-page-properties-section"></a>Zelle "ShdwOffsetX" (Abschnitt "Page Properties")
 
 Legt den Abstand in Seiteneinheiten fest, den der Schlagschatten eines Shapes auf horizontaler Ebene vom Shape entfernt ist.
   
@@ -24,13 +24,13 @@ Legt den Abstand in Seiteneinheiten fest, den der Schlagschatten eines Shapes au
 
 Dieser Wert wird im Dialogfeld **Seite einrichten** festgelegt (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**). Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Bei Größenänderung der Zeichnung bleibt der Schattenabstand gleich. 
   
-Wenn Sie einen Verweis auf die Zelle ShdwOffsetX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "ShdwOffsetX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ShdwOffsetX  <br/> |
+| Zellenname:  <br/> | "ShdwOffsetX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShdwOffsetX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "ShdwOffsetX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

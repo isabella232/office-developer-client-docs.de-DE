@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4eee4382-98c3-4714-8920-8d72edef00b8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e240ec4e7a61b9e7484f467926501f8c5f5a59f8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5fbd20a6b5d5598b8fa51f9c369eefac9a1ea2e9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341720"
 ---
 # <a name="iaddrbookdetails"></a>IAddrBook::Details
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Dialogfeld, das Details zu einem bestimmten Buch Adresseintrag anzeigt.
+Zeigt ein Dialogfeld an, in dem Details zu einem bestimmten Adressbucheintrag angezeigt werden.
   
 ```cpp
 HRESULT Details(
@@ -45,75 +45,75 @@ HRESULT Details(
 
  _lpulUIParam_
   
-> [in] Ein Zeiger auf ein Handle für das übergeordnete Fenster für das Dialogfeld.
+> in Ein Zeiger auf ein Handle des übergeordneten Fensters für das Dialogfeld.
     
  _lpfnDismiss_
   
-> [in] Ein Zeiger auf eine Funktion, die basierend auf dem [DISMISSMODELESS](dismissmodeless.md) Prototyp oder NULL. Dieser Member gilt nur für die im Dialogfeld ohne Modus Version durch das DIALOG_SDI-Flag festgelegt wird. MAPI-Aufrufen die **DISMISSMODELESS** -Funktion, wenn der Benutzer schließt das Dialogfeld ohne Modus Adresse informiert einen Client, der **Details** anruft, dass das Dialogfeld nicht mehr aktiv ist. 
+> in Ein Zeiger auf eine Funktion, die auf dem [DISMISSMODELESS](dismissmodeless.md) -Prototyp basiert, oder NULL. Dieses Element gilt nur für die nicht modale Version des Dialogfelds, wie durch das festgelegte DIALOG_SDI-Flag angegeben. MAPI Ruft die **DISMISSMODELESS** -Funktion auf, wenn der Benutzer das Dialogfeld nicht modale Adresse zurückweist und einen Client darüber informiert, **** dass das Dialogfeld nicht mehr aktiv ist. 
     
  _lpvDismissContext_
   
-> [in] Ein Zeiger auf Kontextinformationen zum Übergeben an die Funktion **DISMISSMODELESS** an, durch den Parameter _LpfnDismiss_ auf. Dieser Parameter gilt nur für die im Dialogfeld ohne Modus Version durch das DIALOG_SDI-Flag in den Parameter _UlFlags_ einschließen. 
+> in Ein Zeiger auf Kontextinformationen, die an die **DISMISSMODELESS** -Funktion übergeben werden, auf die durch den _lpfnDismiss_ -Parameter verwiesen wird. Dieser Parameter gilt nur für die nicht modale Version des Dialogfelds, indem das DIALOG_SDI-Flag im _ulFlags_ -Parameter eingeschlossen wird. 
     
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID für den Eintrag für den Details angezeigt werden.
+> in Ein Zeiger auf die Eintrags-ID für den Eintrag, für den Details angezeigt werden.
     
  _lpfButtonCallback_
   
-> [in] Ein Zeiger auf eine Funktion, die basierend auf den [LPFNBUTTON](lpfnbutton.md) Funktionsprototyp. Eine **LPFNBUTTON** -Funktion hinzugefügt im Dialogfeld Details der eine Schaltfläche. 
+> in Ein Zeiger auf eine Funktion, die auf dem Prototyp der [LPFNBUTTON](lpfnbutton.md) -Funktion basiert. Mit einer **LPFNBUTTON** -Funktion wird dem Dialogfeld Details eine Schaltfläche hinzugefügt. 
     
  _lpvButtonContext_
   
-> [in] Ein Zeiger auf Daten, die als Parameter für die Funktion, die durch den _LpfButtonCallback_ -Parameter angegebenen verwendet wurde. 
+> in Ein Zeiger auf Daten, die als Parameter für die durch den _lpfButtonCallback_ -Parameter angegebene Funktion verwendet wurden. 
     
  _lpszButtonText_
   
-> [in] Ein Zeiger auf eine Zeichenfolge mit Text auf die Schaltfläche hinzugefügt, angewendet werden soll, wenn diese Schaltfläche erweiterbar ist. Der Parameter _LpszButtonText_ sollte NULL sein, wenn Sie nicht über eine Schaltfläche extensible benötigen. 
+> in Ein Zeiger auf eine Zeichenfolge, die den Text enthält, der auf die hinzugefügte Schaltfläche angewendet werden soll, wenn diese Schaltfläche erweiterbar ist. Der _lpszButtonText_ -Parameter sollte NULL sein, wenn Sie keine erweiterbare Schaltfläche benötigen. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des Texts für den Parameter _LpszButtonText_ steuert. Die folgenden Kennzeichen können festgelegt werden: 
+> in Eine Bitmaske von Flags, die den Texttyp für den _lpszButtonText_ -Parameter steuert. Die folgenden Flags können festgelegt werden: 
     
 AB_TELL_DETAILS_CHANGE
   
-> Gibt an, dass **Details** gibt S_OK zurück, wenn die Adresse; tatsächlich geändert werden **Details** haben andernfalls S_FALSE. 
+> Gibt an, dass **Details** S_OK zurückgegeben werden, wenn tatsächlich Änderungen an der Adresse vorgenommen werden. Andernfalls gibt **Details** S_FALSE zurück. 
     
 DIALOG_MODAL
   
-> Anzeigen der modalen Version allgemeine Adresse im Dialogfeld, der immer in nicht-Outlook-Clients angezeigt wird. Dieses Kennzeichen ist mit DIALOG_SDI gegenseitig aus.
+> Zeigt die modale Version des Dialogfelds allgemeine Adresse an, das immer in nicht-Outlook-Clients angezeigt wird. Dieses Flag ist mit DIALOG_SDI gegenseitig ausschließen.
     
 DIALOG_SDI
   
->  Die ohne Modus Version von der Adresse Standarddialogfeld angezeigt. Dieses Kennzeichen werden für nicht-Outlook-Clients ignoriert. 
+>  Zeigt die nicht modale Version des Dialogfelds allgemeine Adresse an. Dieses Flag wird für nicht-Outlook-Clients ignoriert. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Im Dialogfeld Details der wurde erfolgreich für den Adresseintrag Adressbuch angezeigt.
+> Das Dialogfeld Details wurde erfolgreich für den Adressbucheintrag angezeigt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen rufen Sie die **Details** -Methode, um ein Dialogfeld angezeigt, das Details zu einem bestimmten Eintrag im Adressbuch bereitstellt. Der Parameter _LpfButtonCallback_, _LpvButtonContext_und _LpszButtonText_ können, um das Dialogfeld eine Schaltfläche Client definiert hinzuzufügen. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die Callback-Funktion, die auf den _LpfButtonCallback_, sowohl die Eintrags-ID für die Schaltfläche und die Daten in _LpvButtonContext_übergeben. Wenn Sie eine extensible Schaltfläche nicht erforderlich ist, sollte _LpszButtonText_ NULL sein. 
+Client Anwendungen rufen die **Details** -Methode auf, um ein Dialogfeld anzuzeigen, das Details zu einem bestimmten Eintrag im Adressbuch bereitstellt. Sie können die Parameter _lpfButtonCallback_, _lpvButtonContext_und _lpszButtonText_ verwenden, um dem Dialogfeld eine Client definierte Schaltfläche hinzuzufügen. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die Rückruffunktion auf, auf die von _lpfButtonCallback_verwiesen wird, wobei sowohl die Eintrags-ID der Schaltfläche als auch die Daten in _lpvButtonContext_übergeben werden. Wenn Sie keine erweiterbare Schaltfläche benötigen, sollte _LPSZBUTTONTEXT_ NULL sein. 
   
- **Details** unterstützt Unicode-Zeichenfolgen. Unicode-Zeichenfolgen werden in der multibyte-Zeichenfolge handeln Zeichenformat konvertiert, bevor sie im Dialogfeld Details angezeigt werden. 
+ **Details** unterstützt Unicode-Zeichenfolgen; Unicode-Zeichenfolgen werden in das Multibyte Character String-Format (MBCS) konvertiert, bevor Sie im Dialogfeld Details angezeigt werden. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|BaseDialog.cpp  <br/> |CBaseDialog::OnOpenEntryID  <br/> |MFCMAPI (engl.) verwendet die **Details** -Methode, um ein Dialogfeld angezeigt, das Details für ein Buch Adresseintrag anzeigt.  <br/> |
+|BaseDialog. cpp  <br/> |CBaseDialog:: OnOpenEntryID  <br/> |MFCMAPI verwendet die **Details** -Methode, um ein Dialogfeld anzuzeigen, in dem die Details für einen Adressbucheintrag angezeigt werden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

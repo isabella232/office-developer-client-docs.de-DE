@@ -11,36 +11,36 @@ api_name:
 api_type:
 - COM
 ms.assetid: c14d1012-f3d4-47eb-8a90-3160331f94e8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8e2e7a3f9279485d862fac5bb6413b3d3eb1343e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4d46152136f3806c79f0dd454ed9fd41fc845721
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341279"
 ---
 # <a name="imapisync--iunknown"></a>IMAPISync : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet einen Mechanismus zum Synchronisieren von e-Mail statt der Transport-API. Diese Schnittstelle wird auf ein Store-Objekt verfügbar gemacht. Mithilfe dieser Schnittstelle und [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md), ein Transportdienstes bieten eine bessere Bearbeitung und Fehlermeldungen als die, die im Dialogfeld senden/empfangen in Microsoft Outlook angezeigt werden.
+Stellt einen Mechanismus zum Synchronisieren von e-Mails anstelle der Transport-API bereit. Diese Schnittstelle wird für ein Store-Objekt verfügbar gemacht. Mithilfe dieser Schnittstelle und [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)kann ein Transportanbieter bessere Fortschritte und Fehlermeldungen als die anzeigen, die im Dialogfeld senden/empfangen in Microsoft Outlook angezeigt werden.
   
-Im Ordner Postausgang ist noch in der Standard-Informationsspeichers. Outlook wird weiterhin die Transport-APIs verwenden, um e-Mail-Nachrichten senden, da die ausgehende Nachricht im externen Speicher ist.
+Der Postausgang befindet sich noch im Standardspeicher. Outlook verwendet weiterhin die Transport-APIs zum Senden von e-Mails, da sich die ausgehende Nachricht nicht im externen Speicher befinden kann.
   
 |||
 |:-----|:-----|
-|Verfügbar gemacht von:  <br/> |Anbieter für Speicher und transport  <br/> |
+|Verf�gbar gemacht von:  <br/> |Speicher-und Transportanbieter  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
-|Aufgerufen von:  <br/> |Anbieter für Speicher und Transport  <br/> |
+|Aufgerufen von:  <br/> |Speicher-und Transport Anbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPISync  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[SynchronizeInBackground](imapisyncsynchronizeinbackground.md) <br/> |Nachricht Zeichenfolgeneigenschaften implementiert. Diese Methode wird von Outlook 2010 und Outlook 2013, um die Synchronisierung starten aufgerufen.  <br/> |
+|[SynchronizeInBackground](imapisyncsynchronizeinbackground.md) <br/> |Von Nachrichtenspeicher Anbietern implementiert. Diese Methode wird von Outlook 2010 und Outlook 2013 aufgerufen, um die Synchronisierung zu starten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

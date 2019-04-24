@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 444bf9e2-80e8-cbe5-6855-b445f16e7920
 description: Legt die vertikale Position einer horizontalen Führung (oder eines Führungspunkts) relativ zum Ursprung des übergeordneten Objekts fest, an der (bzw. dem) die horizontale Mitte des Shapes ausgerichtet ist.
-ms.openlocfilehash: dd982f716fdd98c684b1668063516de07eb965e6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c49142e0e612ebee98d989acc0b878eb73f2f892
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341706"
 ---
-# <a name="alignmiddle-cell-alignment-section"></a>AlignMiddle Cell (Alignment Section)
+# <a name="alignmiddle-cell-alignment-section"></a>Zelle "AlignMiddle" (Abschnitt "Alignment")
 
 Legt die vertikale Position einer horizontalen Führung (oder eines Führungspunkts) relativ zum Ursprung des übergeordneten Objekts fest, an der (bzw. dem) die horizontale Mitte des Shapes ausgerichtet ist.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle AlignMiddle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle AlignMiddle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | AlignMiddle  <br/> |
+| Zellenname:  <br/> | Zelle AlignMiddle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle AlignMiddle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle AlignMiddle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

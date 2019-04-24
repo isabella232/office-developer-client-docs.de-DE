@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachDataObject (kanonische Eigenschaft)
+title: Kanonische Pidtagattachdataobject (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b76312c6-7682-4ded-be25-55e21b0b091b
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 3961330476cad8947f94152e49c90adb1e8f8b21
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339284"
 ---
-# <a name="pidtagattachdataobject-canonical-property"></a>PidTagAttachDataObject (kanonische Eigenschaft)
+# <a name="pidtagattachdataobject-canonical-property"></a>Kanonische Pidtagattachdataobject (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Attachment-Objekt in der Regel über die Schnittstelle Object Linking and Embedding (OLE) **IStorage** zugegriffen. 
+Enthält ein Attachment-Objekt, auf das normalerweise über die OLE- **IStorage** -Schnittstelle (Object Linking and Embedding) zugegriffen wird. 
   
 |||
 |:-----|:-----|
@@ -34,39 +34,39 @@ Enthält ein Attachment-Objekt in der Regel über die Schnittstelle Object Linki
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft enthält das Attachment-Objekt, wenn der Wert der Eigenschaft **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) **ATTACH_EMBEDDED_MSG** oder **ATTACH_OLE**ist. Das Codierungstyp OLE kann aus **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) bestimmt werden. 
+Diese Eigenschaft enthält die Anlage, wenn der Wert der **PR_ATTACH_METHOD** ([pidtagattachmethod (](pidtagattachmethod-canonical-property.md))-Eigenschaft **ATTACH_EMBEDDED_MSG** oder **ATTACH_OLE**ist. Der OLE-Codierungs kann von **PR_ATTACH_TAG** ([pidtagattachtag (](pidtagattachtag-canonical-property.md)) bestimmt werden. 
   
-Für eine Anlage **ATTACH_EMBEDDED_MSG** Wert zugeordnet ist kann die [IMessage:IMAPIProp](imessageimapiprop.md) -Schnittstelle für einen schnelleren Zugriff verwendet werden. 
+Für eine Anlage, die mit dem **ATTACH_EMBEDDED_MSG** -Wert verknüpft ist, kann die [IMessage: IMAPIProp](imessageimapiprop.md) -Schnittstelle für einen schnelleren Zugriff verwendet werden. 
   
-Bei einem eingebetteten dynamische OLE-Objekt die **PR_ATTACH_DATA_OBJ** -Eigenschaft enthält eine eigenen Renderinginformationen und die **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md))-Eigenschaft sollte entweder nicht vorhanden oder leer sein. 
+Bei einem eingebetteten dynamischen OLE-Objekt enthält die **PR_ATTACH_DATA_OBJ** -Eigenschaft eigene Renderinginformationen, und die **PR_ATTACH_RENDERING** ([pidtagattachrendering (](pidtagattachrendering-canonical-property.md))-Eigenschaft sollte entweder nicht vorhanden oder leer sein. 
   
-Für ein OLE-Dokument-Dateianlage Anbieter die Nachricht muss auf einen Aufruf [IMAPIProp::OpenProperty](imapiprop-openproperty.md) **PR_ATTACH_DATA_OBJ** reagieren und reagiert optional zu einem Anruf auf **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md) ). Die Eigenschaften **PR_ATTACH_DATA_BIN** und **PR_ATTACH_DATA_OBJ** Freigeben der Bezeichner für die gleichen und daher sind zwei Darstellungen der gleichen-Eigenschaft. 
+Bei einer OLE-Dokumentdatei Anlage muss der Nachrichtenspeicher Anbieter auf einen [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Aufruf für **PR_ATTACH_DATA_OBJ** reagieren und optional auf einen Aufruf von **PR_ATTACH_DATA_BIN** ([pidtagattachdatabinary (](pidtagattachdatabinary-canonical-property.md) ). Die Eigenschaften **PR_ATTACH_DATA_BIN** und **PR_ATTACH_DATA_OBJ** verwenden denselben Eigenschaftenbezeichner und sind daher zwei Darstellungen derselben Eigenschaft. 
   
-Für ein Speicherobjekt können beispielsweise eine Verbunddatei in OLE 2.0-Dokumentdatei-Format, einige Dienstanbieter geöffnet werden, mit der MAPI- **IStreamDocfile** -Schnittstelle eine Unterklasse der **IStream** ohne zusätzliche Mitglieder, entwickelt, um die Leistung zu optimieren. Das potenzielle speichern reicht zu rechtfertigen Versuch **PR_ATTACH_DATA_OBJ** über **IStreamDocfile**zu öffnen. Wenn **MAPI_E_INTERFACE_NOT_SUPPORTED** zurückgegeben wurde, kann der Client **PR_ATTACH_DATA_BIN** mit **IStream**öffnen. 
+Bei einem Speicherobjekt, wie beispielsweise einer Verbunddatei im DOCFILE-Format von OLE 2,0, können einige Dienstanbieter diese mit der MAPI- **IStreamDocfile** -Schnittstelle öffnen, eine Unterklasse von **IStream** ohne zusätzliche Mitglieder, die die Leistung optimieren soll. Das potenzielle speichern reicht aus, um das Öffnen von **PR_ATTACH_DATA_OBJ** über **IStreamDocfile**zu rechtfertigen. Wenn **MAPI_E_INTERFACE_NOT_SUPPORTED** zurückgegeben wird, kann der Client **PR_ATTACH_DATA_BIN** mit **IStream**öffnen. 
   
-Wenn der Clientanwendung oder Dienstanbieter ein Unterobjekt Anlage nicht öffnen kann mithilfe von **PR_ATTACH_DATA_OBJ** mit Hilfe von **PR_ATTACH_METHOD**, sollte **PR_ATTACH_DATA_BIN**verwendet werden. 
+Wenn die Clientanwendung oder der Dienstanbieter ein Attachment-Unterobjekt nicht mithilfe von **PR_ATTACH_DATA_OBJ** mit der Hilfe von **PR_ATTACH_METHOD**öffnen kann, sollte es **PR_ATTACH_DATA_BIN**verwenden. 
   
-Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter [OLE und Daten übertragen](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx).
+Weitere Informationen zu OLE-Schnittstellen und Formaten finden Sie unter [OLE und Daten Transfer](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx).
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
-## <a name="header-files"></a>Header-Dateien
+## <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,5 +78,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

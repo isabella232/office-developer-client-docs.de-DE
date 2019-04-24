@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: fec5d5ac-bca6-4fff-b264-45cdb6b37f55
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 96dddc438df67b76f854827eab4dc3e210523243
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4eef7c0b1078cb9e7ced21e2403f0b3948362d6c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341034"
 ---
 # <a name="fbadrglpnameid"></a>FBadRglpNameID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Array von Strukturen, die beschreiben, benannte Eigenschaften überprüft und deren Zuordnung überprüft. 
+Überprüft ein Array von Strukturen, die benannte Eigenschaften beschreiben und deren Zuordnung überprüfen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -44,24 +44,24 @@ BOOL FBadRglpNameID(
 
  _lppNameId_
   
-> [in] Zeiger auf ein Array von [MAPINAMEID](mapinameid.md) -Strukturen, die die benannten Eigenschaften beschreiben. 
+> in Zeiger auf ein Array von [MAPINAMEID](mapinameid.md) -Strukturen, die die benannten Eigenschaften beschreiben. 
     
  _cNames_
   
-> [in] Anzahl der benannten Eigenschaft Strukturen im Array auf den durch den Parameter _LppNameId_ verwiesen. 
+> in Die Anzahl der benannten Eigenschaftsstrukturen im Array, auf die durch den _lppNameId_ -Parameter verwiesen wird. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Eine oder mehrere der angegebenen Eigenschaft Name Strukturen ist ungültig. 
+> Mindestens eine der angegebenen Strukturen für den Eigenschaftennamen ist ungültig. 
     
 FALSE 
   
-> Die angegebene Eigenschaft Name Strukturen sind gültig.
+> Die angegebenen Strukturen für den Eigenschaftennamen sind alle gültig.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **FBadRglpNameID** -Funktion kann verwendet werden, wenn für einen Anruf an [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) oder [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)einrichten. 
+Die **FBadRglpNameID** -Funktion kann verwendet werden, wenn Sie einen Aufruf von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) oder [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md)einrichten. 
   
 

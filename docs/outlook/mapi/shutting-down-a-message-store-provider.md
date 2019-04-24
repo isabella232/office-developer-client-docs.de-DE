@@ -1,5 +1,5 @@
 ---
-title: Herunterfahren eines Nachrichtenspeicheranbieters
+title: Herunterfahren eines Nachrichtenspeicher Anbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,37 +9,37 @@ api_type:
 ms.assetid: e38219db-f867-4c1d-9973-0e025779e8b6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 8e4712572eaff465bb23b55eccc3670f637c0f9c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339200"
 ---
-# <a name="shutting-down-a-message-store-provider"></a>Herunterfahren eines Nachrichtenspeicheranbieters
+# <a name="shutting-down-a-message-store-provider"></a>Herunterfahren eines Nachrichtenspeicher Anbieters
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn der Anbieter einen Anbieter für die Nachricht Anmelden ist, kann es in einem der folgenden Methoden heruntergefahren werden:
+Wenn es sich bei Ihrem Anbieter um einen Nachrichtenspeicher Anbieter handelt, kann er auf eine der folgenden Arten heruntergefahren werden:
   
-- Wenn ein Client oder die MAPI-Warteschlange [IMsgStore::StoreLogoff](imsgstore-storelogoff.md)aufruft. Beenden einer Nachricht Store-Anbieters mit **StoreLogoff** bewirkt, dass das Herunterfahren ein ordnungsgemäßes und gesteuerte Weise erfolgen. 
+- Wenn ein Client oder der MAPI-Spooler [IMsgStore:: StoreLogoff](imsgstore-storelogoff.md)aufruft. Das Herunterfahren eines Nachrichtenspeicher Anbieters mit **StoreLogoff** bewirkt, dass das Herunterfahren auf geordnete und kontrollierte Weise erfolgt. 
     
-- Wenn ein Client [IMAPISession::Logoff](imapisession-logoff.md)aufruft. 
+- Wenn ein Client [IMAPISession:: Logoff](imapisession-logoff.md)aufruft. 
     
-Durch Aufrufen von [IMAPISupport::StoreLogoffTransports](imapisupport-storelogofftransports.md) um MAPI zu informieren, dass es heruntergefahren wird, der angibt, dass alle verknüpften Transportanbieter sollen, deaktivieren protokolliert werden, sollte die Implementierung von **IMsgStore::StoreLogoff** beginnen. Wenn **IMsgStore::StoreLogoff** zurückgegeben wird, wird der Aufrufer des Nachrichtenspeichers [IUnknown](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode aufgerufen. Implementieren Sie diese **Version** -Methode, durch die des Unterstützungsobjekts **IUnknown** -Methode aufrufen. 
+Die Implementierung von **IMsgStore:: StoreLogoff** sollte zunächst [IMAPISupport:: StoreLogoffTransports](imapisupport-storelogofftransports.md) aufrufen, um MAPI zu informieren, dass Sie heruntergefahren wird, was darauf hinweist, dass alle zugehörigen Transportanbieter abgemeldet werden sollen. Wenn **IMsgStore:: StoreLogoff** zurückgegeben wird, ruft der Aufrufer die [IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode des Nachrichtenspeichers auf. Implementieren Sie diese **Release** -Methode, indem Sie die **IUnknown:: Release** -Methode des Support-Objekts aufrufen. 
   
-MAPI führt die folgenden Aufgaben bei der Implementierung der **IUnknown** für Nachrichtenspeicher: 
+MAPI führt die folgenden Aufgaben in der Implementierung von **IUnknown:: Release** für Nachrichtenspeicher aus: 
   
-1. Entfernt alle der [MAPIUID](mapiuid.md) Strukturen vom Anbieter Store Nachricht registriert. 
+1. Entfernt alle vom Nachrichtenspeicher Anbieter registrierten [MAPIUID](mapiuid.md) -Strukturen. 
     
-2. Entfernt die Nachricht Speicheranbieter Zeile aus der Tabelle "Status".
+2. Entfernt die Zeile des Nachrichtenspeicher Anbieters aus der Statustabelle.
     
-3. Ruft die [IMSLogon::Logoff](imslogon-logoff.md) , um alle geöffneten Objekte, Unterobjekte und Status Objekte freizugeben. 
+3. Ruft [IMSLogon:: Logoff](imslogon-logoff.md) auf, um alle geöffneten Objekte, unter Objekte und Statusobjekte zu veröffentlichen. 
     
-4. Ruft die [IUnknown](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) , um die Nachricht Speicheranbieter Anmeldung-Objekt freizugeben. 
+4. Ruft [IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) auf, um das Anmeldeobjekt des Nachrichtenspeicher Anbieters zu veröffentlichen. 
     
-Einige Clients können ausgelassen werden, den Anruf an **IMsgStore::StoreLogoff**, das Herunterfahren des Anbieters Ihrer Nachricht mit dem Aufruf der Nachrichtenspeicher **IUnknown** -Methode. Ein Herunterfahren unter diesen Umständen ohne den Aufruf von **StoreLogoff** ist kleiner ordnungsgemäßes und kontrolliert. Schreiben des Nachrichtenspeichers **Release** -Methode, um diese Möglichkeit behandeln und Nachverfolgen der unabhängig davon, ob ein Aufruf von **IMAPISupport::StoreLogoffTransports** aufgetreten ist. **StoreLogoffTransports** muss einmal während des Herunterfahrens aufgerufen werden. Wenn Sie in der **Version** -Methode erkennen, dass **StoreLogoffTransports** noch nicht aufgerufen wurde, können rufen sie mit dem LOGOFF_ABORT-Flag auf. 
+Einige Clients können den Aufruf von **IMsgStore:: StoreLogoff**weglassen, indem Sie das Herunterfahren des Nachrichtenspeicher Anbieters mit dem Aufruf der **IUnknown:: Release** -Methode des Nachrichtenspeichers initiieren. Ein Herunterfahren unter diesen Umständen ohne den Aufruf von **StoreLogoff** ist weniger geordnet und gesteuert. Schreiben Sie die **Release** -Methode des Nachrichtenspeichers, um diese Möglichkeit zu behandeln, und verfolgen Sie, ob ein Aufruf von **IMAPISupport:: StoreLogoffTransports** aufgetreten ist. **StoreLogoffTransports** muss beim Herunterfahren einmal aufgerufen werden. Wenn Sie in Ihrer **Release** -Methode feststellen, dass **StoreLogoffTransports** noch nicht aufgerufen wurde, rufen Sie Sie mit dem LOGOFF_ABORT-Flag auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

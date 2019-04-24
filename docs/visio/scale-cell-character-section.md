@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d6fe2574-b719-f38e-b1f1-592a812f1682
 description: Steuert die Schriftartbreite. Der Standardwert für diese Zelle ist 100%.
-ms.openlocfilehash: fedbc0aec23320d03ca358f34babda56eaab31e4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 60e896772ddd1d59e1a1da7f2c0e90893658c624
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341629"
 ---
-# <a name="scale-cell-character-section"></a>Scale Cell (Character Section)
+# <a name="scale-cell-character-section"></a>Zelle "Scale" (Abschnitt "Character")
 
 Steuert die Schriftartbreite. Der Standardwert für diese Zelle ist 100%.
   
@@ -26,18 +26,18 @@ Legen Sie einen Prozentsatz zwischen 1% und 99% fest, um die Schriftartbreite zu
   
 Sie können den Wert dieser Zelle auch festlegen, indem Sie das Dialogfeld **Text** verwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Wenn Sie einen Verweis auf die Zelle Scale aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Bezug auf die Zelle Scale aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Char.FontScale [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+|Zellenname:  <br/> |Char. FontScale [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Scale aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Scale nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-|Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCharacterFontScale** <br/> |
    
 

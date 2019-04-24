@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: cf60584c-4357-44c7-9d51-f30f7e510c0c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3307bb252ca4436999a541f85657fed9878c798a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 244aaea4902d6be8eda4cdca176436af9b002ba7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340103"
 ---
 # <a name="dtblddlbx"></a>DTBLDDLBX
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Dropdown-Listenfeld-Steuerelement, das in einem Dialogfeld erstellt aus einer Tabelle anzeigen verwendet wird.
+Beschreibt ein Dropdownlisten-Steuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _DTBLDDLBX
@@ -50,27 +50,27 @@ typedef struct _DTBLDDLBX
     
  **ulPRDisplayProperty**
   
-> Eigenschaftentag für eine Eigenschaft vom Typ PT_TSTRING. Diese Eigenschaft ist eine der Spalten in der Tabelle, die durch das **UlPRTableName** -Element identifiziert. Die Werte für diese Eigenschaft sind in der Liste angezeigt. 
+> Property-Tag für eine Eigenschaft vom Typ PT_TSTRING. Diese Eigenschaft ist eine der Spalten in der Tabelle, die durch das **ulPRTableName** -Element identifiziert wird. Die Werte für diese Eigenschaft werden in der Liste angezeigt. 
     
  **ulPRSetProperty**
   
-> Eigenschaftentag für eine Eigenschaft eines beliebigen Typs. Diese Eigenschaft ist eine der Spalten in der Tabelle, die durch das **UlPRTableName** -Element identifiziert. Wenn der Benutzer der Liste einen Eigenschaftswert für das Element **UlPRDisplayProperty** aus den Zeilen der Tabelle der Member **UlPRTableName** identifizierten auswählt, wird der entsprechende **UlPRSetProperty** Member festgelegt. 
+> Property-Tag für eine Eigenschaft eines beliebigen Typs. Diese Eigenschaft ist eine der Spalten in der Tabelle, die durch das **ulPRTableName** -Element identifiziert wird. Wenn der Benutzer der Liste einen Eigenschaftswert für das **ulPRDisplayProperty** -Element aus den Zeilen der Tabelle auswählt, die durch das **ulPRTableName** -Element identifiziert wird, wird das entsprechende **ulPRSetProperty** -Element festgelegt. 
     
  **ulPRTableName**
   
-> Rufen Sie die Eigenschaftentag für ein Table-Eigenschaft vom Typ PT_OBJECT, die mithilfe einer **OpenProperty** geöffnet werden können. Die Tabelle sollte zwei Spalten: **UlPRDisplayProperty** und **UlPRSetProperty**. Die Zeilen der Tabelle sollten die Elemente in der Liste entsprechen.
+> Property-Tag für eine Table-Eigenschaft vom Typ PT_OBJECT, die mithilfe eines **openProperty** -Aufrufs geöffnet werden kann. Die Tabelle sollte zwei Spalten aufweisen: **ulPRDisplayProperty** und **ulPRSetProperty**. Die Zeilen der Tabelle sollten den Elementen in der Liste entsprechen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLDDLBX** beschreibt ein Dropdown-Listenfeld-Steuerelement, das als einzelnes Element angezeigt wird, bis der Benutzer entscheidet, um ihn zu erweitern. 
+Eine **DTBLDDLBX** -Struktur beschreibt ein Dropdownlisten-Steuerelement, das als einzelnes Element angezeigt wird, bis der Benutzer die Erweiterung auswählt. 
   
-Die Eigenschaftentags identifizierten drei Eigenschaften arbeiten zusammen, um die Informationen in der Liste anzuzeigen, und legen Sie eine verknüpfte-Eigenschaft. Der **UlPRTableName** -Member ist ein Table-Objekt, das durch einen Aufruf von [IMAPIProp::OpenProperty](imapiprop-openproperty.md)zugegriffen wird. Die Tabelle enthält zwei Spalten: eine Spalte für die Eigenschaft durch das **UlPRDisplayProperty** -Element, und das andere für die identifizierten **UlPRSetProperty** Members-Eigenschaft identifiziert. 
+Die drei durch die Property-Tags identifizierten Eigenschaften arbeiten zusammen, um die Informationen in der Liste anzuzeigen und eine zugehörige Eigenschaft festzulegen. Der **ulPRTableName** -Member ist ein Table-Objekt, auf das über einen Aufruf von [IMAPIProp:: OpenProperty](imapiprop-openproperty.md)zugegriffen wird. Die Tabelle enthält zwei Spalten: eine Spalte für die Eigenschaft, die vom **ulPRDisplayProperty** -Element identifiziert wird, und die andere für die Eigenschaft, die vom **ulPRSetProperty** -Element identifiziert wird. 
   
-Die **UlPRDisplayProperty** -Eigenschaft steuert die Anzeige der Browserliste. Wenn ein Benutzer einen der Werte aus der Anzeige auswählt, ruft MAPI [IMAPIProp::SetProps](imapiprop-setprops.md) , um die entsprechende Eigenschaft festzulegen, wie durch das **UlPRSetProperty** -Element identifiziert. Dies bedeutet, dass die Eigenschaft in der gleichen Zeile wie die ausgewählten Anzeigeeigenschaft. Das **UlPRSetProperty** -Element kann nicht auf **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) festgelegt werden.
+Die **ulPRDisplayProperty** -Eigenschaft steuert die Listenanzeige. Wenn ein Benutzer einen der Werte aus der Anzeige auswählt, ruft MAPI [IMAPIProp::](imapiprop-setprops.md) SetProps auf, um die entsprechende Eigenschaft festzulegen, die vom **ulPRSetProperty** -Mitglied identifiziert wird. Dies hat zur Folge, dass die Eigenschaft in derselben Zeile wie die ausgewählte Anzeigeeigenschaft angezeigt wird. Das **ulPRSetProperty** -Element kann nicht auf **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)) festgelegt werden.
   
-Anfangswert wird in der Liste angezeigt, wenn MAPI dargestellte vom **UlPRSetProperty** Member durch einen Aufruf von [IMAPIProp::GetProps](imapiprop-getprops.md) Eigenschaft abgerufen und befindet sich eine Zeile in der Tabelle mit dem Wert für den **UlPRSetProperty** Member hat. Der erste angezeigte Wert entspricht dem Inhalt der **UlPRDisplayProperty** Spalte aus dieser Zeile, die die Eigenschaft im **UlPRDisplayProperty** -Member der Struktur entspricht. Der von **GetProps** für die identifizierten **UlPRDisplayProperty** Members-Eigenschaft zurückgegebene Wert wird der erste Wert, der angezeigt wird, wenn die Liste zuerst angezeigt wird. 
+In der Liste wird ein Anfangswert angezeigt, wenn MAPI die vom **ulPRSetProperty** -Element dargestellte Eigenschaft durch einen Aufruf von [IMAPIProp::](imapiprop-getprops.md) GetProps abgerufen und eine Zeile in der Tabelle mit dem Wert für das **ulPRSetProperty** -Element gefunden hat. Der anfänglich angezeigte Wert ist der Inhalt der **ulPRDisplayProperty** -Spalte aus dieser Zeile, die mit der-Eigenschaft im **ulPRDisplayProperty** -Element der Struktur übereinstimmt. Der von getProps zurückgegebene Wert für die durch das **ulPRDisplayProperty** -Element angegebene Eigenschaft wird zum Anfangswert, der angezeigt wird, wenn die Liste zum ersten Mal angezeigt wird. **** 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md). Informationen zu Eigenschaftstypen finden Sie unter [MAPI-Eigenschaft Type Overview](mapi-property-type-overview.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md). Weitere Informationen zu Eigenschaftstypen finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -87,9 +87,9 @@ Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt]
 
 [MAPI-Strukturen](mapi-structures.md)
   
-[Anzeigen der Tabellenimplementierung](display-table-implementation.md)
+[Anzeigen der Tabellen Implementierung](display-table-implementation.md)
   
-[Anzeigetabellen](display-tables.md)
+[Anzeige Tabellen](display-tables.md)
   
-[Übersicht über Typ von MAPI-Eigenschaft](mapi-property-type-overview.md)
+[Übersicht über die MAPI-EigenschaftsTypen](mapi-property-type-overview.md)
 

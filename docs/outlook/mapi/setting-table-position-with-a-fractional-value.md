@@ -1,5 +1,5 @@
 ---
-title: Festlegen der Tabellenposition mit einem Bruchwert
+title: Festlegen der Tabellen Position mit einem Bruchwert
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 80d31611-e508-4b17-b482-bedf76db26ff
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8ffed8070c219e6611aebbcb1dd5cd181b662850
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7800a58cad7b4e2b0b1696706c8e1d401ed424d7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339263"
 ---
-# <a name="setting-table-position-with-a-fractional-value"></a>Festlegen der Tabellenposition mit einem Bruchwert
+# <a name="setting-table-position-with-a-fractional-value"></a>Festlegen der Tabellen Position mit einem Bruchwert
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Tabelle Benutzer können auf eine Position verschieben, die einen ungefähren Prozentsatz der Zeilen in Bezug auf die Summe darstellt. Statt auf eine genaue Zeile verschoben wurde, auf der Grundlage dieser Methode für die Positionierung teilt der Tabelle in Teile Brüche. Benutzer können beispielsweise auf halb, zeigen Sie eine Tabelle oder in die Zeile, die die Art und Weise, durch die Tabelle die 7/8 ist verschieben. 
+Tabellen Benutzer können zu einer Position verschoben werden, die einen ungefähren Prozentsatz der Zeilen im Verhältnis zur Gesamtsumme darstellt. Anstatt zu einer exakten Zeile zu wechseln, wird die Tabelle durch diese Positionierungsmethode in Teile aufgeteilt, die auf Bruchteilen basieren. Tabellen Benutzer können beispielsweise in den halben Punkt einer Tabelle oder in die Zeile, die sich in der Tabelle von 7/8 befindet, verschieben. 
   
- **So verschieben Sie den Cursor eine ungefähre Anzahl der Zeilen**
+ **So verschieben Sie den Cursor um eine ungefähre Anzahl von Zeilen**
   
-- Rufen Sie [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md). **SeekRowApprox** verschiebt in die Zeile, die einen bestimmten Prozentsatz der Zeilen in Bezug auf den Anfang der Tabelle darstellt. Dieser Prozentsatz ist in den _UlNumerator_ und _UlDenominator_ -Parameter angegeben. **SeekRowApprox** wird häufig zum Implementieren von Bildlaufleisten verwendet. 
+- Rufen Sie [IMAPITable:: SeekRowApprox](imapitable-seekrowapprox.md)auf. **SeekRowApprox** wechselt zu der Zeile, die einen bestimmten Prozentsatz von Zeilen relativ zum Anfang der Tabelle darstellt. Dieser Prozentsatz wird in den Parametern _ulNumerator_ und _ulDenominator_ angegeben. **SeekRowApprox** wird häufig zum Implementieren von Bildlaufleisten verwendet. 
     
- **Um die ungefähre Position einer Tabelle bestimmen**
+ **So bestimmen Sie die ungefähre Position einer Tabelle**
   
-- Rufen Sie [IMAPITable::QueryPosition](imapitable-queryposition.md). **QueryPosition** kann verwendet werden, um den Benutzer über die aktuelle Position zu informieren. Einen Bruch Wert basierend auf der Anzahl der Zeilen in der Tabelle und die Anzahl der aktuellen Zeile festgelegt. Davon ausgehen Sie, dass dieser Wert eine Annäherung darstellt. Tabelle Implementierer sollten sich nicht um die genaue Position zu berechnen, da präzise Implementierungen aufzurufen, insbesondere für kategorisierten Tabellen kostspielig sein können. 
+- Rufen Sie [IMAPITable:: QueryPosition](imapitable-queryposition.md)auf. **QueryPosition** kann verwendet werden, um den Benutzer über die aktuelle Position zu informieren. Es wird ein Bruchwert basierend auf der Anzahl der Zeilen in der Tabelle und der Nummer der aktuellen Zeile festgelegt. Erwarten Sie, dass dieser Wert eine Näherung darstellt. Tabellen Implementierer werden dazu angehalten, die genaue Position nicht zu berechnen, da genaue Implementierungen vor allem bei kategorisierten Tabellen kostspielig sein können. 
     
 ## <a name="see-also"></a>Siehe auch
 

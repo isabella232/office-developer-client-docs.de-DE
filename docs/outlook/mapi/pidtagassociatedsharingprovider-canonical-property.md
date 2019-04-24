@@ -1,5 +1,5 @@
 ---
-title: PidTagAssociatedSharingProvider (kanonische Eigenschaft)
+title: Kanonische Pidtagassociatedsharingprovider (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,32 +7,32 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 88a3356c-0b53-4401-8fcc-64071723c226
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3e965b787c32ea87a06c375cc82f25e385eea8de
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 39d98972c22bd49549bf370ce1699b15cf1e27d2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339907"
 ---
-# <a name="pidtagassociatedsharingprovider-canonical-property"></a>PidTagAssociatedSharingProvider (kanonische Eigenschaft)
+# <a name="pidtagassociatedsharingprovider-canonical-property"></a>Kanonische Pidtagassociatedsharingprovider (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt, ob ein Anbieter für Persönliche Ordner-Datei (PST) Anmelden als eine PST-Datei von Microsoft SharePoint 2010 konfiguriert ist.
+Bestimmt, ob ein PST-Informationsspeicher Anbieter als Microsoft SharePoint 2010 PST konfiguriert ist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ASSOCIATED_SHARING_PROVIDER  <br/> |
 |Kennung:  <br/> |0x0EA00048  <br/> |
 |Datentyp:  <br/> |PT_CLSID  <br/> |
-|Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
+|Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft gibt an, ob eine PST-Datei für Microsoft SharePoint 2010 konfiguriert ist. Wenn die Eigenschaft nicht vorhanden ist, wurde die PST-Datei als eine Microsoft SharePoint 2010-PST-Datei nicht konfiguriert.
+Diese Eigenschaft gibt an, ob eine PST-Datei für Microsoft SharePoint 2010 konfiguriert ist. Wenn die Eigenschaft nicht vorhanden ist, wurde die PST-Datei nicht als Microsoft SharePoint 2010 PST-Datei konfiguriert.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -44,5 +44,5 @@ Diese Eigenschaft gibt an, ob eine PST-Datei für Microsoft SharePoint 2010 konf
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

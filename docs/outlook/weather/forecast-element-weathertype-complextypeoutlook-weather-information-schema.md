@@ -1,5 +1,5 @@
 ---
-title: Forecast-Element (WeatherType ComplexType) (Outlook Wetter Informationen-Schema)
+title: Forecast-Element (weathertype complexType) (Outlook Wetter Information-Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,25 +7,25 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9124fa30-d58b-8354-91e9-8d2237a8251d
-description: 'Gibt an, die Wetterbedingungen zukünftigen mindestens drei Tage im Voraus einschließlich heute: heute, morgen, übermorgen.'
+description: 'Gibt die zukünftigen Wetterbedingungen von mindestens drei Tagen im Voraus an: heute, morgen, übermorgen.'
 ms.openlocfilehash: 01604796d4460cc14005ee00ea6b8f46f04d4742
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339564"
 ---
-# <a name="forecast-element-weathertype-complextype-outlook-weather-information-schema"></a>Forecast-Element (WeatherType ComplexType) (Outlook Wetter Informationen-Schema)
+# <a name="forecast-element-weathertype-complextype-outlook-weather-information-schema"></a>Forecast-Element (weathertype complexType) (Outlook Wetter Information-Schema)
 
-Gibt an, die Wetterbedingungen zukünftigen mindestens drei Tage im Voraus einschließlich heute: heute, morgen, übermorgen.
+Gibt die zukünftigen Wetterbedingungen von mindestens drei Tagen im Voraus an: heute, morgen, übermorgen.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
-|**Elementtyp** <br/> |[forecastType](forecasttype-complextype-outlook-weather-information-schema.md) <br/> |
+|**Elementtyp** <br/> |[forecasttype](forecasttype-complextype-outlook-weather-information-schema.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
-|**Schemadatei** <br/> |GetWeatherInfo.xsd  <br/> |
+|**Schemadatei** <br/> |GetWeatherInfo. xsd  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -37,13 +37,13 @@ Gibt an, die Wetterbedingungen zukünftigen mindestens drei Tage im Voraus einsc
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Wetterbericht](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weatherType](weathertype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die Wetterbedingungen einen Speicherort an.  <br/> |
+|[Wetter](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weathertype](weathertype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die Wetterbedingungen für einen Standort an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -53,13 +53,13 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|date  <br/> |xs: Date  <br/> |erforderlich  <br/> |Gibt das Datum für die Planung.  <br/> |Ein Wert, der den Typ xs: Date  <br/> |
-|Tag  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt einen Tag für die Planung.  <br/> |Ein Wert, der den Typ xs:  <br/> |
-|hohe  <br/> |xs:integer  <br/> |erforderlich  <br/> |Gibt die höchste prognostizierten Temperatur an.  <br/> |Der Wert der Type-xs  <br/> |
-|Niedrig  <br/> |xs:integer  <br/> |erforderlich  <br/> |Gibt die geplanten niedrigsten Temperatur an.  <br/> |Der Wert der Type-xs  <br/> |
-|precip  <br/> |xs:integer  <br/> |erforderlich  <br/> |Gibt die Möglichkeit Prozentsatz Niederschlagsmenge an.  <br/> |Der Wert der Type-xs  <br/> |
-|shortday  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt einen Tag in abgekürzter Form an.  <br/> |Ein Wert, der den Typ xs:  <br/> |
-|skycodeday  <br/> |xs:integer  <br/> |erforderlich  <br/> |Gibt einen Code für die geplanten Bedingungen an.  <br/> |Der Wert der Type-xs  <br/> |
-|skytextday  <br/> |xs:string  <br/> |erforderlich  <br/> |Gibt ein bis zwei Wörter, die die geplanten Bedingungen zu beschreiben.  <br/> |Ein Wert, der den Typ xs:  <br/> |
+|Datum  <br/> |xs: Datum  <br/> |erforderlich  <br/> |Gibt das Datum für die Prognose an.  <br/> |Ein Wert vom Typ xs: Date  <br/> |
+|Tag  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Tag für die Prognose an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|hohe  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die prognostizierte höchste Temperatur an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|mit niedriger  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die prognostizierte niedrigste Temperatur an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|Precip  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die prozentuale Niederschlagswahrscheinlichkeit an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|shortday  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Tag in abgekürzter Form an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|skycodeday  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt einen Code für die prognostizierten Bedingungen an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|skytextday  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt ein bis zwei Wörter an, in denen die prognostizierten Bedingungen beschrieben werden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
    
 

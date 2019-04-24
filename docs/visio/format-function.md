@@ -8,38 +8,38 @@ f1_keywords:
 - Vis_DSS.chm82251424
 localization_priority: Normal
 ms.assetid: 52f5ef4d-07c6-ab36-bf74-b30b50eea221
-description: Gibt das Ergebnis von Expression als Zeichenfolge entsprechend der Formatierungsangabe formatiert.
-ms.openlocfilehash: dcb898b3cb21d8cc5ebee7e56540d9e2eefcffdb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt das Ergebnis des Ausdrucks als Zeichenfolge zurück, die gemäß Formatierungsangabe formatiert ist.
+ms.openlocfilehash: 5eb2195c2bc52e9cc8e7aa8bc4068826a5cd14c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339893"
 ---
 # <a name="format-function"></a>FORMAT Function
 
-Gibt das Ergebnis von _Expression_ als eine _Formatierungsangabe_Zeichenfolge zurück.
+Gibt das Ergebnis des _Ausdrucks_ als Zeichenfolge zurück, die gemäß _Formatierungsangabe_formatiert ist.
   
 ## <a name="syntax"></a>Syntax
 
-FORMAT (** *Ausdruck* **, "** *Formatierungsangabe* **") 
+Format (* * *Expression* * *, * * *Formatierungsangabe* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine Kombination aus Konstanten, Operatoren, Funktionen und Bezügen auf ShapeSheet-Zellen, die einen Wert ergeben.  <br/> |
-| _die Funktion_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Formatierungsangabe zum Formatieren der Zeichenfolge.  <br/> |
+| _Formatierungsangabe_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Formatierungsangabe zum Formatieren der Zeichenfolge.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Typ des Ausdrucks und der in der Formatierungsangabe angegebene Typ bestimmen das Verhalten der zurückgegebenen Zeichenfolge. Die _Formatierungsangabe_ muss für den Typ des Ausdrucks sein. Weitere Informationen zu Formatierungsangaben angeben finden Sie unter [Informationen zu Formatierungsangaben](about-format-pictures.md).
+Der Typ des Ausdrucks und der in der Formatierungsangabe angegebene Typ bestimmen das Verhalten der zurückgegebenen Zeichenfolge. Die _Formatierungsangabe_ muss für den Typ des Ausdrucks geeignet sein. Weitere Informationen zum Angeben von Format Bildern finden Sie unter [Informationen zum Formatieren von Bildern](about-format-pictures.md).
   
-Gibt einen Fehler zurück, wenn das Ergebnis von _Expression_ und der erwartete Typ in _Formatpicture_ unterschiedlich sind oder wenn _Formatpicture_Syntaxfehler vorhanden sind.
+Gibt einen Fehler zurück, wenn das Ergebnis von _Expression_ und der in _Formatierungsangabe_ erwarteten Typ eine andere Art haben oder wenn es in _Formatierungsangabe_Syntaxfehler gibt.
   
 ## <a name="example-1"></a>Beispiel 1
 

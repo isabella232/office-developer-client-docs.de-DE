@@ -4,16 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a9c2f3d9-cea2-49a3-b709-40dc614b9f86
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. In diesem Dokument, einschließlich URLs und anderer Verweise auf Internetwebsites, enthaltenen Informationen und Sichten können ohne vorherige Ankündigung geändert werden. Die Verwendung erfolgt auf eigenes Risiko.
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die in diesem Dokument enthaltenen Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internet Websites, können ohne vorherige Ankündigung geändert werden. Sie tragen das volle Risiko der Verwendung.
 ms.openlocfilehash: 75aff5503f4caf0c8455a58bcda481e0c5e803fd
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339606"
 ---
 # <a name="office-2013-documentation-copyright-notice"></a>Office-2013 Dokumentation copyright-Hinweis
 
@@ -21,12 +20,12 @@ Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die In
   
 Einige der hier dargestellten Beispiele dienen nur zu Illustrationszwecken und sind fiktional. Jegliche Ähnlichkeiten mit oder Verbindungen zur Realität sind rein zufällig.
   
-Dieses Dokument überträgt Ihnen keinerlei Rechte an geistigem Eigentum an jeglichen Microsoft-Produkten. Sie dürfen dieses Dokument für Ihre internen Zwecke und Verweise nutzen und kopieren. 
+Mit diesem Dokument erhalten Sie keine Rechte an geistigem Eigentum in einem beliebigen Microsoft-Produkt. Sie können dieses Dokument als Kopie für eigene interne Referenzzwecke verwenden. 
   
 © 2013 Microsoft Corporation. Alle Rechte vorbehalten.
   
 Microsoft, Access, ActiveX, ClearType, Excel, FrontPage, InfoPath, IntelliSense, JScript, MSDN, MS-DOS, MSN, OneNote, Outlook, PowerPoint, SharePoint, Silverlight, SmartArt, SQL Server, Visio, Visual Basic, Visual C#, Visual C++, Visual Studio, Win32, Windows, Windows PowerShell, Windows Server und Windows Vista sind Marken der Microsoft-Unternehmensgruppe.
   
-Alle anderen Marken sind Eigentum ihrer jeweiligen Inhaber.
+Alle anderen Marken sind Eigentum der jeweiligen Inhaber.
   
 

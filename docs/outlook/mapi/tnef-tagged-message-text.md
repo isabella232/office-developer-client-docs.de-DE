@@ -1,5 +1,5 @@
 ---
-title: TNEF-markierter Nachrichtentext
+title: Nachrichten Text mit TNEF-Tags
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: 8c65339e-240c-412d-9b71-69c746468bfb
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1d514dc8b50183e5d07d71b421a441487e933580
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2b4d4cd790870a024cac6f2ed9952d18a970235a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339592"
 ---
-# <a name="tnef-tagged-message-text"></a>TNEF-markierter Nachrichtentext
+# <a name="tnef-tagged-message-text"></a>Nachrichten Text mit TNEF-Tags
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Markierte des Nachrichtentexts wird von TNEF zum Anlage Positionen in der übergeordneten Nachricht zu beheben. Dies erfolgt durch ein Platzhalter im Nachrichtentext an der Position der Anlage hinzufügen. Dieser Platzhalter oder ein Attachment-Tag beschreibt die Anlage in einer Weise, dass TNEF weiß, wie Sie das Attachment-Objekt und seine Position auflösen können. Die Tags sind wie folgt formatiert:
+Der getaggte Nachrichtentext wird von TNEF verwendet, um die Anlagen Positionen in der übergeordneten Nachricht aufzulösen. Dies geschieht durch Hinzufügen eines Platzhalters im Nachrichtentext an der Position der Anlage. Dieser Platzhalter oder das Attachment-Tag beschreibt die Anlage so, dass TNEF weiß, wie die Anlage und ihre Position aufgelöst werden kann. Die Tags werden wie folgt formatiert:
   
  `[[ <Object Title> : <KeyNum> in <Stream Name> ]] [[ <File Name> : <KeyNum> in <Transport Name> ]]`
   
- ** \<Objekt Titel\> ** und ** \<Dateinamen\> ** sind Variablen, die mit den Werten, die aus der Anlage selbst ausgeführt werden. In Fällen, in dem diese Werte nicht verfügbar sind, wird der Titel von TNEF basierend auf den Anlagetyp übernommen. 
+ **Objekt Titel\> und Dateiname sind Variablen mit Werten, die aus der Anlage selbst entnommen werden. \<** **\> \<** In Fällen, in denen diese Werte nicht verfügbar sind, wird der Titel von TNEF basierend auf dem Anlagentyp standardmäßig verwendet. 
   
-Die ** \<KeyNum\> ** Variable enthält die Textdarstellung des Schlüssels Anlage, die die Anlage durch TNEF zugewiesen. Der Basiswert des Schlüssels übergeben wird in den [OpenTnefStreamEx](opentnefstreamex.md) -Aufruf. Der Basiswert darf nicht NULL sein und sollte nicht für jeden Aufruf von **OpenTnefStreamEx**identisch sein. Es reicht, um basierend auf der Systemzeit aus den Zufallszahlengenerator Ihrer Laufzeitbibliothek bereitstellt, solange Sie sicherstellen, dass sie nie NULL sind Pseudo-Zufallszahlen zu verwenden.
+Die ** \<KeyNum\> ** -Variable enthält die Textdarstellung des Anlagen Schlüssels, der der Anlage von TNEF zugewiesen wurde. Der Basiswert des Schlüssels wird an den [OpenTnefStreamEx](opentnefstreamex.md) -Aufruf übergeben. Der Basiswert darf nicht NULL sein und sollte bei jedem Aufruf von **OpenTnefStreamEx**nicht identisch sein. Es sollte ausreichen, Pseudozufallszahlen basierend auf der Systemzeit von beliebigen Zufallszahlengeneratoren ihrer Laufzeitbibliothek zu verwenden, sofern Sie sicherstellen, dass Sie niemals NULL sind.
   
-Die ** \<Transport Namen\> ** Variable enthält entweder den Stream Namen in der [OpenTnefStreamEx](opentnefstreamex.md) -Anruf oder der Wert der Eigenschaft **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) übergeben.
+Die ** \<Variable Transport\> Name** enthält entweder den Streamnamen, der an den [OpenTnefStreamEx](opentnefstreamex.md) -Aufruf übergeben wird, oder den Wert der **PR_ATTACH_TRANSPORT_NAME** ([pidtagattachtransportname (](pidtagattachtransportname-canonical-property.md))-Eigenschaft.
   
 > [!NOTE]
-> Die **PR_ATTACH_TRANSPORT_NAME** -Eigenschaft und die ** \<Transport Namen\> ** Variable in einem Text-Tag Nachricht haben nichts tun mit dem Namen des Anbieters Transport Sie implementieren. Diese Elemente stellen den Namen der Anlage für den Transportdienst und messaging-System. 
+> Die **PR_ATTACH_TRANSPORT_NAME** -Eigenschaft und die ** \<Transport\> Name** -Variable in einem Nachrichten texttag haben nichts mit dem Namen des Transportanbieters zu tun, den Sie implementieren. Diese Elemente stellen den Namen einer Anlage für den Transportanbieter und das Messagingsystem dar. 
   
-Der Nachrichtentext gekennzeichnet ist, wenn für einen markierten Text ein Transportdienstes auffordert, durch die [ITnef::OpenTaggedBody](itnef-opentaggedbody.md) -Methode aufrufen. Beim Lesen aus dem markierten Textstream ersetzt TNEF das einzelne Zeichen, das im Nachrichtentext im Index in der Eigenschaft **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) mit dem entsprechenden Tag bereitgestellt wurde. Beim Schreiben in den markierten Textstream TNEF überprüft die eingehenden Daten für Tags zugeordnete Anlage gesucht und ersetzt das Tag durch ein einzelnes Leerzeichen.
+Der Nachrichtentext wird gekennzeichnet, wenn ein Transportanbieter einen markierten Nachrichtentext durch Aufrufen der [ITnef:: OpenTaggedBody](itnef-opentaggedbody.md) -Methode anfordert. Beim Lesen aus dem markierten Textstream ersetzt TNEF das einzelne Zeichen, das sich im Nachrichtentext des in der **PR_RENDERING_POSITION** ([pidtagrenderingposition (](pidtagrenderingposition-canonical-property.md))-Eigenschaft angegebenen Index befand, durch das entsprechende Tag. Beim Schreiben in den getaggten Textstream prüft TNEF die eingehenden Daten nach Tags, sucht die zugehörige Anlage und ersetzt das Tag durch ein einzelnes Leerzeichen.
   
-Beachten Sie, dass mithilfe des Nachrichtentexts markierte ein Transportdienstes die Positionierung von Anlagen unabhängig von den meisten Änderungen an den Nachrichtentext beibehalten kann von messaging-Systeme.
+Beachten Sie, dass ein Transportanbieter mithilfe des markierten Nachrichtentexts die Positionierung von Anlagen unabhängig von den meisten am Nachrichtentext durch Messagingsysteme vorgenommenen Änderungen beibehalten kann.
   
 

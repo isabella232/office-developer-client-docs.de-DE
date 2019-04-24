@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251581
 localization_priority: Normal
 ms.assetid: 519d79d4-9178-2231-c26d-aa7f31a43412
-description: Gibt den Namen eines Zeichenblatts Master-Shape als Zeichenfolge zurück, oder gibt die Zeichenfolge "kein Master-Shape" zurück, wenn das Blatt nicht über ein Master-Shape verfügt.
-ms.openlocfilehash: c1d5891fba0f967cde4a4e9ca58d07f87239f0b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Masternamen eines Blatts als Zeichenfolge zurück oder gibt die Zeichenfolge "kein Master" zurück, wenn das Blatt keinen Master hat.
+ms.openlocfilehash: 7732cf9e8b23e2fd0fc2e3f2cc8d9ef4f39fd67f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341797"
 ---
 # <a name="mastername-function"></a>MASTERNAME Function
 
-Gibt den Namen eines Zeichenblatts Master-Shape als Zeichenfolge zurück oder die Zeichenfolge "\<kein Master-Shape\>" Wenn das Blatt nicht über ein Master-Shape verfügt.
+Gibt den Masternamen eines Blatts als Zeichenfolge zurück oder gibt die Zeichen\<Folge "\>kein Master" zurück, wenn das Blatt keinen Master hat.
   
 ## <a name="syntax"></a>Syntax
 
-MASTERNAME ([** *LangID_opt* **]) 
+MASTERname ([* * *langID_opt* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _langID_opt_ <br/> |Optional  <br/> |**Nummer** <br/> |Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.  <br/> |
+| _langID_opt_ <br/> |Optional  <br/> |**Number** <br/> |Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 77db2dff-4534-440f-a05c-635711cbc2c3
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cc0039cf2210446704d25b2156bd4ff50041a524
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5fced633023ebf00efaf5b667dc7994eeb5de316
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338829"
 ---
 # <a name="imapisessiongetmsgstorestable"></a>IMAPISession::GetMsgStoresTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Zugriff auf die Nachricht Store Tabelle mit Informationen zu allen Nachrichtenspeichern im Profil der Sitzung.
+Ermöglicht den Zugriff auf die Nachrichtenspeichertabelle, die Informationen zu allen Nachrichten speichern im Sitzungsprofil enthält.
   
 ```cpp
 HRESULT GetMsgStoresTable(
@@ -38,17 +38,17 @@ HRESULT GetMsgStoresTable(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die bestimmt das Format für Spalten, die Zeichenfolgen sind. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die das Format für Spalten bestimmt, die Zeichen Zeichenfolgen sind. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, werden die Zeichenfolgenspalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Zeichenfolgenspalten im ANSI-Format.
     
  _lppTable_
   
-> [out] Ein Zeiger auf einen Zeiger auf die Nachricht Store-Tabelle.
+> Out Ein Zeiger auf einen Zeiger auf die Nachrichtenspeichertabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -56,27 +56,27 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Die Option MAPI_UNICODE wurde festgelegt, und die Sitzung Unicode nicht unterstützt.
+> Das MAPI_UNICODE-Flag wurde festgelegt, und die Sitzung unterstützt Unicode nicht.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISession::GetMsgStoresTable** -Methode ruft einen Zeiger auf die Nachricht Store-Tabelle, eine Tabelle von MAPI verwaltet wird, enthält Informationen zu jeder geöffneten Nachrichtenspeicher im Profil. 
+Die **IMAPISession:: GetMsgStoresTable** -Methode ruft einen Zeiger auf die Nachrichtenspeichertabelle ab, eine von MAPI verwaltete Tabelle, die Informationen zu jedem geöffneten Nachrichtenspeicher im Profil enthält. 
   
-Speichern Sie eine vollständige Liste der erforderlichen und optionalen Spalten in der Nachricht Tabelle, finden Sie unter [Nachricht speichern Tabellen](message-store-tables.md). 
+Eine vollständige Liste der erforderlichen und optionalen Spalten in der Nachrichtenspeichertabelle finden Sie unter [nachrichtenspeichertabellen](message-store-tables.md). 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Da MAPI die Tabelle Store während der Sitzung aktualisiert immer Änderungen auftreten, rufen Sie die **Advise** -Methode der Nachricht Store Tabelle registrieren, um diese Änderungen benachrichtigt werden. Mögliche Änderungen zählen das Hinzufügen von neuen Nachrichtenspeicher, Entfernen vorhandener speichert und in der Standard-Informationsspeichers geändert. 
+Da MAPI die Nachrichtenspeichertabelle während der Sitzung aktualisiert, sobald Änderungen auftreten, rufen Sie die **Advise** -Methode der Nachrichtenspeichertabelle auf, um die Benachrichtigung über diese Änderungen zu registrieren. Zu den möglichen Änderungen gehört das Hinzufügen neuer Nachrichtenspeicher, das Entfernen vorhandener Speicher und Änderungen am Standardspeicher. 
   
-Festlegen der Option MAPI_UNICODE im Parameter _UlFlags_ wirkt sich auf das Format der von den Methoden [IMAPITable::QueryColumns](imapitable-querycolumns.md) und [IMAPITable::QueryRows](imapitable-queryrows.md) zurückgegebenen Spalten aus. Dieses Kennzeichen steuert auch die Eigenschaftentypen in der Sortierreihenfolge, die von der [IMAPITable::QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegeben. 
+Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf das Format der Spalten aus, die von den Methoden [IMAPITable:: QueryColumns](imapitable-querycolumns.md) und [IMAPITable:: QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftentypen in der von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegebenen Sortierreihenfolge. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnOpenMessageStoreTable  <br/> |MFCMAPI (engl.) verwendet die **IMAPISession::GetMsgStoresTable** -Methode, um die Nachricht Store-Tabelle zu erhalten, damit es im Hauptdialogfeld von MFCMAPI (engl.) gerendert werden kann.  <br/> |
+|MainDlg. cpp  <br/> |CMainDlg:: OnOpenMessageStoreTable  <br/> |MFCMAPI verwendet die **IMAPISession:: GetMsgStoresTable** -Methode, um die Nachrichtenspeichertabelle so abzurufen, dass Sie im Hauptdialogfeld von MfcMapi gerendert werden kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -96,10 +96,10 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable::SortTable](imapitable-sorttable.md)
   
-[IMAPISession: IUnknown](imapisessioniunknown.md)
+[IMAPISession : IUnknown](imapisessioniunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Nachrichtenspeichertabellen](message-store-tables.md)
 

@@ -8,32 +8,32 @@ f1_keywords:
 - Vis_DSS.chm82251746
 localization_priority: Normal
 ms.assetid: 11c69600-4e1f-4c52-ff35-b6a7cc6c734c
-description: Stellt die X-Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar.
-ms.openlocfilehash: 27821f9aa94f97d8e019d7c7307c036549bf807b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Stellt die x-Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar.
+ms.openlocfilehash: 496e5af6ea5b7ba99730b23dcbb510db6af9b23b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339879"
 ---
-# <a name="x-cell-connection-points-section"></a>X Cell (Connection Points Section)
+# <a name="x-cell-connection-points-section"></a>Zelle "X" (Abschnitt "Connection Points")
 
-Stellt die *X* -Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar. 
+Stellt die *x* -Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle X aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle X aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Connections.X *i* wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Connections. X *i* Where *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle X aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle X aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionConnectionPts** <br/> |
-| Zeilenindex:  <br/> |**VisRowConnectionPts** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowConnectionPts** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visX** <br/> |
    
 

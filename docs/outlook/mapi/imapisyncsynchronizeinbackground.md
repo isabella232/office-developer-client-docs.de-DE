@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c4aaca65-d553-476c-8c6d-5f880b6efdc1
-description: 'Zuletzt geändert: 26 Juni 2012'
-ms.openlocfilehash: ee6fe07df894213331ab51f9abaa4008247dac07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte Änderung: 26. Juni 2012'
+ms.openlocfilehash: 108073f5e4833d9641e67065eb642320352fffe4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341370"
 ---
 # <a name="imapisync--synchronizeinbackground"></a>IMAPISync : SynchronizeInBackground
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- Initiiert eine Synchronisierung. Diese Methode wird von Microsoft Outlook 2010 und Microsoft Outlook 2013 aufgerufen und Zeichenfolgeneigenschaften Nachricht implementiert. 
+ Initiiert eine Synchronisierung. Diese Methode wird von Microsoft Outlook 2010 und Microsoft Outlook 2013 aufgerufen und von Nachrichtenspeicher Anbietern implementiert. 
   
 ```cpp
 HRESULT SynchronizeInBackground (
@@ -37,9 +37,9 @@ HRESULT SynchronizeInBackground (
 
  _psibpb_
   
-> Informiert den Anbieter von Was synchronisiert werden soll, und ermöglicht den Zugriff auf Schnittstellen, die während der Synchronisierung verwendet werden können. Es ist eine [MAPISIB](mapisib.md) -Struktur. 
+> Informiert den Anbieter darüber, was synchronisiert wird, und gibt Zugriff auf Schnittstellen, die während der Synchronisierung verwendet werden können. Es handelt sich um eine [MAPISIB](mapisib.md) -Struktur. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   

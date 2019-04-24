@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 05f8c191-db2b-4174-8b3c-a9fdabfe6ac8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b2caa70600bd32234e38420f274bcd5c46ffb070
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 01b42c04244d35d72dd856222b4bab543b84db45
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339662"
 ---
 # <a name="smessageclassarray"></a>SMessageClassArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeigern auf Nachricht Klasse Zeichenfolgen.
+Enthält ein Array von Zeigern für Nachrichtenklassen Zeichenfolgen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verwandte Makro:  <br/> |[CbMessageClassArray](cbmessageclassarray.md) <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Zugehöriges Makro:  <br/> |[CbMessageClassArray](cbmessageclassarray.md) <br/> |
    
 ```cpp
 typedef struct 
@@ -45,15 +45,15 @@ typedef struct
 
  **cValues**
   
-> Anzahl der Nachricht Klasse Zeichenfolgenzeiger im Array.
+> Anzahl der Nachrichtenklassen-Zeichenfolgenzeiger im Array.
     
  **aMessageClass**
   
-> Array von Zeigern auf Nachricht Klasse Zeichenfolgen.
+> Array von Zeigern auf Nachrichtenklassen Zeichenfolgen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **SMessageClassArray** wird als Parameter in der folgenden Methoden übergeben: 
+Die **SMessageClassArray** -Struktur wird als Parameter in den folgenden Methoden übergeben: 
   
 - [IMAPIFormContainer::ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md)
     

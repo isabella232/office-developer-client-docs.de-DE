@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 218b957e-5af6-e53b-1453-a84164ae456e
 description: Sperrt die Höhe des Shapes, sodass sich diese nicht ändert, wenn die Größe des Shapes geändert wird.
-ms.openlocfilehash: f6afe6037ff3d0810cc532bbc18bb749ee589bb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 099f6597656d4389476818253f34e741ddd404de
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341776"
 ---
-# <a name="lockheight-cell-protection-section"></a>LockHeight Cell (Protection Section)
+# <a name="lockheight-cell-protection-section"></a>Zelle "LockHeight" (Abschnitt "Protection")
 
 Sperrt die Höhe des Shapes, sodass sich diese nicht ändert, wenn die Größe des Shapes geändert wird.
   
@@ -25,15 +25,15 @@ Sperrt die Höhe des Shapes, sodass sich diese nicht ändert, wenn die Größe d
 | TRUE  <br/> | Höhe ist gesperrt.  <br/> |
 | FALSE  <br/> | Höhe ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockHeight aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockHeight aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockHeight  <br/> |
+| Zellenname:  <br/> | Zelle LockHeight  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockHeight aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockHeight aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

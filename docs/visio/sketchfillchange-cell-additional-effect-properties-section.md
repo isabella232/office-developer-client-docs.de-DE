@@ -1,28 +1,28 @@
 ---
-title: SketchFillChange Cell (Additional Effect Properties Section)
+title: SketchFillChange Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 939f8f90-dee5-4175-b32a-e2964eb40681
-description: Bestimmt die Menge der zufälligen Anordnung von der Füllung der Form aus der Shape-Geometrie an, wenn Sie einen Effekt Skizze als Prozentwert der Länge eines Abschnitts verwenden. Wenn der Wert der Zelle SketchFillChange auf 0 % festgelegt ist, entspricht die umgebende Geometrie Füllung einer Form der Shape-Geometrie. Ist der Wert auf 100 %, folgt die umgebende Geometrie der Füllung der Form die Geometrie des Shapes nicht.
-ms.openlocfilehash: 8dda34e03188909e167a4abda6f62da3d43c4dd7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Menge der Zufallsgenerierung der Formfüllung aus der Geometrie der Form bei Verwendung eines Skizzen Effekts als Prozentsatz der Länge eines Abschnitts. Wenn der Wert der Zelle SketchFillChange auf 0% festgelegt ist, entspricht die umschließende Geometrie der Füllung einer Form der Geometrie der Form. Wenn der Wert 100% ist, folgt die begrenzungsgeometrie der Füllung der Form nicht der Geometrie der Form.
+ms.openlocfilehash: 8726e9dd6ca6257fb8dbbbef3dce1d4ec344e28b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339812"
 ---
-# <a name="sketchfillchange-cell-additional-effect-properties-section"></a>SketchFillChange Cell (Additional Effect Properties Section)
+# <a name="sketchfillchange-cell-additional-effect-properties-section"></a>SketchFillChange Cell (Additional Effect Properties section)
 
-Bestimmt die Menge der zufälligen Anordnung von der Füllung der Form aus der Shape-Geometrie an, wenn Sie einen Effekt Skizze als Prozentwert der Länge eines Abschnitts verwenden. Wenn der Wert der Zelle **SketchFillChange** auf 0 % festgelegt ist, entspricht die umgebende Geometrie Füllung einer Form der Shape-Geometrie. Ist der Wert auf 100 %, folgt die umgebende Geometrie der Füllung der Form die Geometrie des Shapes nicht. 
+Bestimmt die Menge der Zufallsgenerierung der Formfüllung aus der Geometrie der Form bei Verwendung eines Skizzen Effekts als Prozentsatz der Länge eines Abschnitts. Wenn der Wert der Zelle **SketchFillChange** auf 0% festgelegt ist, entspricht die umschließende Geometrie der Füllung einer Form der Geometrie der Form. Wenn der Wert 100% ist, folgt die begrenzungsgeometrie der Füllung der Form nicht der Geometrie der Form. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die besten Ergebnisse zu erzielen ist ideale Wertebereich für die Zelle **SketchFillChange** zwischen 15 % und 50 %. Es wird ein Wert weniger als 15 % kaum Renderingzeit; ein Wert größer als 50 % ist immer mehr zufällige. 
+Optimale Ergebnisse erzielen Sie, wenn der optimale Wert für die **SketchFillChange** -Zelle zwischen 15% und 50% liegt. Ein Wert unter 15% ist kaum spürbar; ein Wert größer als 50% wird zunehmend randomisiert. 
   
-Wenn Sie einen Verweis auf die Zelle **SketchFillChange** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **SketchFillChange** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

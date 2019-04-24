@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3890dd50-e6ca-4859-bada-f6752ab61d41
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e86e9fbf4901b5944775886f38db1ba12c4b122d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 49e6c8254cbd527635685c3f974da57ee3ac82a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341020"
 ---
 # <a name="fbadrowset"></a>FBadRowSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft alle Tabellenzeilen in einer Tabellenzeilen enthalten.
+Überprüft alle Tabellenzeilen, die in einem Satz von Tabellenzeilen enthalten sind.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -43,17 +43,17 @@ BOOL FBadRowSet(
 
  _lpRowSet_
   
-> [in] Zeiger auf eine [SRowSet](srowset.md) -Struktur, die den zu überprüfenden Rowset identifiziert. Wenn der Zeiger NULL ist, ist die Struktur ungültig. 
+> in Zeiger auf eine [SRowSet](srowset.md) -Struktur, die den zu überprüfenden Zeilensatz identifiziert. Wenn der Zeiger NULL ist, ist die Struktur ungültig. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Eine Zeile mit der angegebenen Zeile Set ist ungültig, oder die Rowset selbst ist ungültig. 
+> Eine Zeile des angegebenen Zeilen Satzes ist ungültig, oder der Zeilensatz selbst ist ungültig. 
     
 FALSE 
   
-> Die Zeilen der angegebenen Zeile Menge und die Zeile selbst festgelegt sind gültig.
+> Die Zeilen des angegebenen Zeilen Satzes und des Zeilen Satzes selbst sind gültig.
     
 ## <a name="see-also"></a>Siehe auch
 

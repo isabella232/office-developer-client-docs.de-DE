@@ -1,5 +1,5 @@
 ---
-title: PidTagServiceInstallId (kanonische Eigenschaft)
+title: Kanonische Pidtagserviceinstallid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1dd14858-2ce6-4629-a2f1-82d23cd6576b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 273796430cb2ed1badd96ddb9c8fae8b251e5802
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 159a25347cd64b44f42dbb5052425ebb67894a9b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341128"
 ---
-# <a name="pidtagserviceinstallid-canonical-property"></a>PidTagServiceInstallId (kanonische Eigenschaft)
+# <a name="pidtagserviceinstallid-canonical-property"></a>Kanonische Pidtagserviceinstallid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Komponenten-ID des Anbieters.
   
@@ -34,21 +34,21 @@ Die Komponenten-ID des Anbieters.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften können als Komponentenparameter eines Aufrufs **MsiProvideQualifiedComponent** So installieren Sie den Provider verwendet werden. 
+Diese Eigenschaften können als Komponentenparameter eines **MsiProvideQualifiedComponent** -Aufrufs verwendet werden, um den Anbieter zu installieren. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

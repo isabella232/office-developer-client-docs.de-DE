@@ -1,5 +1,5 @@
 ---
-title: PidTagSupplementaryInfo (kanonische Eigenschaft)
+title: Kanonische Pidtagsupplementaryinfo (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d4231b5-4096-4c0d-b694-65e2d04172b8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f9800b1822ca6881c451e01e890d582c77b64546
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: de9635fa77cd0c282723e0f76eabd6bc0d0dbab9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339347"
 ---
-# <a name="pidtagsupplementaryinfo-canonical-property"></a>PidTagSupplementaryInfo (kanonische Eigenschaft)
+# <a name="pidtagsupplementaryinfo-canonical-property"></a>Kanonische Pidtagsupplementaryinfo (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Weitere Informationen zur Verwendung in einem Bericht enthält.
+Enthält zusätzliche Informationen zur Verwendung in einem Bericht.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Weitere Informationen zur Verwendung in einem Bericht enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften enthalten Informationen, die vom Message Transfer Agent generiert oder Adressbuchhierarchie im Zusammenhang mit dem Bericht. Es wird in der Regel für Lieferung oder Nondelivery Berichtstext verwendet, die mit der zugrunde liegenden messaging-System stammt.
+Diese Eigenschaften enthalten Informationen, die vom Nachrichtenübermittlungs-Agent oder dem Transportanbieter im Zusammenhang mit dem Bericht generiert wurden. Sie wird in der Regel für Übermittlungs-oder Unzustellbarkeitsbericht Text verwendet, der mit dem zugrunde liegenden Messagingsystem stammt.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

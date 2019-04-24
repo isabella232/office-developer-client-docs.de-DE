@@ -1,5 +1,5 @@
 ---
-title: PidTagRecipientReassignmentProhibited (kanonische Eigenschaft)
+title: Kanonische Pidtagrecipientreassignmentprohibited (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,21 +9,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8636774b-1fff-4b29-bc12-4d0bd63fcba2
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 2dac2cb1d40fadbe0cad67b144891b0ece54aae9
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341111"
 ---
-# <a name="pidtagrecipientreassignmentprohibited-canonical-property"></a>PidTagRecipientReassignmentProhibited (kanonische Eigenschaft)
+# <a name="pidtagrecipientreassignmentprohibited-canonical-property"></a>Kanonische Pidtagrecipientreassignmentprohibited (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob weitere Empfänger hinzufügen, wenn die Nachricht weitergeleitet für die e-Mail-Nachricht nicht zulässig ist.
+Gibt an, ob das Hinzufügen zusätzlicher Empfänger bei der Übermittlung der Nachricht für die e-Mail-Nachricht nicht zulässig ist.
   
 |||
 |:-----|:-----|
@@ -32,31 +32,31 @@ Gibt an, ob weitere Empfänger hinzufügen, wenn die Nachricht weitergeleitet f�
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird basierend auf der e-Mail-Nachricht **PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md)) Wert festgelegt. **PR_SENSITIVITY** festgelegt ist "0 x 00000000" (normal) oder "0 x 00000003" (vertraulich), diese Eigenschaft auf "0 x 00" oder nicht vorhanden ist, was bedeutet, dass das Hinzufügen festgelegt werden muss zusätzliche oder andere Empfänger der e-Mail-Nachricht zulässig ist. Wenn die e-Mail-Objekts **PR_SENSITIVITY** auf "0 x 00000001" (personal) oder "0 x 00000002" (privat) festgelegt ist, diese Eigenschaft muss festgelegt werden "0 x 01" zum Hinzufügen von zusätzlicher oder anderen Empfängern dieser e-Mail über Weiterleitung zu verhindern. 
+Diese Eigenschaft wird basierend auf dem Wert der e-Mail-Nachricht **PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md)) festgelegt. Wenn **PR_SENSITIVITY** auf "0x00000000" (normal) oder "0x00000003" (vertraulich) festgelegt ist, muss diese Eigenschaft auf "$ 00" festgelegt werden oder nicht, was bedeutet, dass das Hinzufügen von zusätzlichen oder unterschiedlichen Empfängern zur e-Mail-Nachricht zulässig ist. Wenn das **PR_SENSITIVITY** des e-Mail-Objekts auf "0x00000001" (persönlich) oder "0x00000002" (privat) festgelegt ist, muss diese Eigenschaft auf "0x01" festgelegt werden, um das Hinzufügen zusätzlicher oder anderer Empfänger dieser e-Mail durch die Weiterleitung zu verhindern. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichten zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für e-Mail-Nachrichten zulässig sind.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,5 +68,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

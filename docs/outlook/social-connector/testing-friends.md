@@ -7,79 +7,79 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 109c34b6-911b-4dfc-9799-aadf47172e84
-description: In diesem Thema wird beschrieben, Tests und Szenarien, um sicherzustellen, dass der Anbieter Outlook Social Connector (OSC) entsprechend Daten des Freunde und nicht-Freunde, zurückgibt, sofern zutreffend, je nach den vom Anbieter unterstützten Synchronisierungsmodus.
-ms.openlocfilehash: 232977836833a9ef981ebef38c9ee243ea2dd2ed
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Thema werden Tests und Szenarien beschrieben, um zu überprüfen, ob der Outlook-Anbieter für soziale Netzwerke (OSC) entsprechend der vom Anbieter unterstützten Synchronisierungsmodus Daten von Freunden und nicht-Freunden zurückgibt.
+ms.openlocfilehash: 1c97342fd5b219b15b1f58dbc065fc268f8e81d7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338787"
 ---
 # <a name="testing-friends"></a>Testen von Freunden
 
-In diesem Thema wird beschrieben, Tests und Szenarien, um sicherzustellen, dass der Anbieter Outlook Social Connector (OSC) entsprechend Daten des Freunde und nicht-Freunde, zurückgibt, sofern zutreffend, je nach den vom Anbieter unterstützten Synchronisierungsmodus.
+In diesem Thema werden Tests und Szenarien beschrieben, um zu überprüfen, ob der Outlook-Anbieter für soziale Netzwerke (OSC) entsprechend der vom Anbieter unterstützten Synchronisierungsmodus Daten von Freunden und nicht-Freunden zurückgibt.
 
 <a name="olosc_TestingFriends_CachedSync"> </a>
 
-## <a name="cached-synchronization"></a>Cache-Synchronisierung
+## <a name="cached-synchronization"></a>Zwischengespeicherte Synchronisierung
 
-Ein OSC-Anbieter implementiert [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md), die die OSC aufruft, um zu bestimmen, ob der Anbieter zwischengespeicherten Synchronisierung Freunde Daten unterstützt. Nach dem Aufruf von [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md), speichert das osc bilden die zurückgegebene Freunde Daten in einem Kontakteordner speziell für das soziale Netzwerke in Outlook-Standardspeicher des angemeldeten Benutzers. Die OSC ruft auch [ISocialSession::GetPerson](isocialsession-getperson.md) und [ISocialPerson::GetPicture](isocialperson-getpicture.md) , um ein Profilbild für jede Friend erhalten. 
+Ein OSC-Anbieter implementiert [ISocialProvider:: getCapabilities](isocialprovider-getcapabilities.md), die von OSC aufgerufen werden, um zu bestimmen, ob der Anbieter die zwischengespeicherte Synchronisierung von Freunden-Daten unterstützt. Nach dem Aufruf von [ISocialPerson:: GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)speichert osc die Daten der zurückgegebenen Freunde in einem für das soziale netzwerkspezifischen Kontakteordner im Outlook-Standardspeicher des angemeldeten Benutzers. OSC ruft auch [ISocialSession:: GetPerson](isocialsession-getperson.md) und [ISocialPerson:: GetPicture](isocialperson-getpicture.md) auf, um ein Profilbild für jeden Freund abzurufen. 
   
-### <a name="initiate-synchronization"></a>Initiieren Sie die Synchronisierung
+### <a name="initiate-synchronization"></a>Initiieren der Synchronisierung
 
-Um die Synchronisierung einzuleiten können Sie aktivieren und die Schaltfläche Debuggen **Kontakte synchronisieren** in der Menübandkomponente der Microsoft Office Fluent-Benutzeroberfläche verwenden. Weitere Informationen zu OSC Debug Schaltflächen finden Sie unter [Debuggen eines Providers](debugging-a-provider.md). 
+Um die Synchronisierung zu initiieren, können Sie die Schaltfläche " **** Debuggen" in der Menüband-Komponente der Microsoft Office Fluent-Benutzeroberfläche aktivieren und verwenden. Weitere Informationen zu OSC-Debug-Schaltflächen finden Sie unter [Debuggen eines Anbieters](debugging-a-provider.md). 
   
 ### <a name="test-scenarios"></a>Testszenarien
 
-Testen Sie die folgenden Elemente, um sicherzustellen, dass Freunde Daten ordnungsgemäß zwischengespeichert werden.
+Testen Sie die folgenden Elemente, um sicherzustellen, dass die Daten von Freunden korrekt zwischengespeichert werden.
   
-|**Zu überprüfende Element**|**Erwartetes Verhalten**|
+|**Zu testendes Element**|**Erwartetes Verhalten**|
 |:-----|:-----|
-|Ordner "Kontakte"  <br/> |Der Ordner sozialen Netzwerk-spezifischen Kontakte in Outlook-Standardspeicher des Benutzers vorhanden ist.  <br/> |
-|Freunde von **ISocialPerson::GetFriendsAndColleagues** zurückgegebenen Daten <br/> |Jeder Freund entspricht einem Kontakt in den Kontakteordner von Netzwerk-spezifische.  <br/> |
-|Freunde Daten  <br/> |Für jede Friend Kontaktfelder haben die richtigen Daten.  <br/> |
-|Freunde Profilbilder zurückgegebene **ISocialPerson::GetPicture** <br/> |Das Kontaktelement für jede Friend enthält das Profilbild.  <br/> |
+|Ordner "Kontakte"  <br/> |Der soziale netzwerkspezifische Kontakteordner ist im Outlook-Standardspeicher des Benutzers vorhanden.  <br/> |
+|Von ISocialPerson zurückgegebene Daten von Freunden **:: GetFriendsAndColleagues** <br/> |Jeder Freund entspricht einem Kontakt im netzwerkspezifischen Ordner Kontakte.  <br/> |
+|Freundes Daten  <br/> |Kontaktfelder für jeden Freund haben die richtigen Daten.  <br/> |
+|Von **ISocialPerson:: GetPicture** zurückgegebene Profil Bilder von Freunden <br/> |Das Kontaktelement für jeden Freund enthält das Profilbild.  <br/> |
 
 <a name="olosc_TestingFriends_OnDemandSync"> </a>
 
 ## <a name="on-demand-synchronization"></a>Bedarfsgesteuerte Synchronisierung
 
-Ein OSC-Anbieter implementiert **ISocialProvider::GetCapabilities**, die die OSC aufruft, um zu bestimmen, ob der Anbieter bedarfsgesteuerten Synchronisierung von Freunde und Freunde-nicht unterstützt. Für die Personen, die im Bereich Personen Outlook angezeigt wird erhält der OSC und Hashes, die Ihre SMTP-Adressen, ruft [ISocialSession2::GetPeopleDetails](isocialsession2-getpeopledetails.md)und speichert (im Arbeitsspeicher) die Daten, für diese Personen zurückgegeben. 
+Ein OSC-Anbieter implementiert **ISocialProvider:: getCapabilities**, die von OSC aufgerufen werden, um zu bestimmen, ob der Anbieter die bedarfsgesteuerte Synchronisierung von Freunden und nicht-Freunden unterstützt. Für die Personen, die im Outlook-Personen Bereich angezeigt werden, ruft OSC Ihre SMTP-Adressen ab, hasht Sie [ISocialSession2:: GetPeopleDetails](isocialsession2-getpeopledetails.md)und speichert (im Arbeitsspeicher) die für diese Personen zurückgegebenen Daten. 
   
-### <a name="determining-friends-and-non-friends"></a>Bestimmen der Freunde und nicht-Freunde
+### <a name="determining-friends-and-non-friends"></a>Bestimmen von Freunden und nicht-Freunden
 
-Hash SMTP-Adressen an **GetPeopleDetails** übergeben werden die Taste, um zu bestimmen, ob eine Person ein Freund oder nicht Friend ist. Wenn eine Person die SMTP-Adresse nicht in seinem für soziale Netzwerkkonto enthalten ist, oder, auch wenn diese Person einen Freund durch eine andere e-Mail-Adresse im sozialen Netzwerk ist, gibt **GetPeopleDetails** noch **Nonfriend** für diese Person als der ** FriendStatus** im _PersonsCollection_ -Parameter. Darüber hinaus enthält für eine Person, ist nicht mit einem Freund, gibt die SMTP-Adresse im sozialen Netzwerk-Konto, die zurückgegebenen Daten nur an einen nicht-Freund, wie durch die datenschutzeinstellungen der betreffenden Person zugelassen verfügbar sind. 
+Die an **GetPeopleDetails** übergebenen Hash-SMTP-Adressen sind der Schlüssel, um zu bestimmen, ob eine Person ein Freund oder nicht Freund ist. Wenn eine Person diese SMTP-Adresse nicht in Ihrem sozialen Netzwerkkonto einschließt oder wenn diese Person ein Freund mit einer anderen e-Mail-Adresse im sozialen Netzwerk ist, gibt **GetPeopleDetails** für diese Person noch keinen **Friend** als ** friendStatus** im persons-Parameter. __ Auch für eine Person, die kein Freund ist, aber die SMTP-Adresse in seinem sozialen Netzwerkkonto angibt, enthält die zurückgegebenen Daten nur die Verfügbarkeit eines nicht-Freundes, wie in den Datenschutzeinstellungen dieser Person zulässig. 
   
-### <a name="creating-test-subjects-for-friends-and-non-friends"></a>Erstellen von Test-Themen für Freunde und nicht Freunde
+### <a name="creating-test-subjects-for-friends-and-non-friends"></a>Erstellen von Testthemen für Freunde und nicht-Freunde
 
-So erstellen Sie einen Test Betreff für einen Freund, identifizieren Sie die SMTP-Adresse einer Person, die diese Adresse enthält, in Konto für soziale Netzwerke und wer hat einen Freund Status mit der angemeldete Benutzer auf das Netzwerk. Erstellen Sie eine e-Mail-Nachricht, die diese SMTP-Adresse enthält. Identifizieren Sie entsprechend um einen Test Betreff für einen Freund zu erstellen, die SMTP-Adresse einer Person, die keinen Freund des angemeldeten Benutzers von dieser Adresse, und angegeben, die noch in seinem datenschutzeinstellungen auf nicht-Freunde deren Aktivitäten auf die soziale Netzwerke anzeigen zulassen k. Erstellen Sie eine e-Mail-Nachricht, die diese SMTP-Adresse enthält. 
+Wenn Sie einen Test Betreff für einen Freund erstellen möchten, identifizieren Sie die SMTP-Adresse einer Person, die diese Adresse in Ihrem sozialen Netzwerkkonto einschließt und die über einen Friend-Status mit dem angemeldeten Benutzer in diesem Netzwerk verfügt. Erstellen Sie eine e-Mail-Nachricht, die diese SMTP-Adresse enthält. Auf ähnliche Weise können Sie einen Test Betreff für einen nicht-Freund erstellen, indem Sie die SMTP-Adresse einer Person identifizieren, die von dieser Adresse nicht als Freund des angemeldeten Benutzers verwendet wird, und doch wer in seinen Datenschutzeinstellungen angegeben hat, dass nicht-Freunde ihre Aktivitäten im sozialen Networ anzeigen können. k. Erstellen Sie eine e-Mail-Nachricht, die diese SMTP-Adresse enthält. 
   
-Wenn Sie die e-Mail-Nachricht auswählen, die ein Friend (oder nicht Friend) enthält, zeigt den Bereich Personen im Outlook-Explorer die Empfänger an. Auswählen der Friend (oder nicht Friend) im Bereich Personen können Sie testen, dass der Anbieter, Informationen über die Person bereitstellt.
+Wenn Sie im Outlook-Explorer die e-Mail-Nachricht auswählen, die einen Freund (oder nicht-Freund) enthält, werden im Bereich Personen die Empfänger angezeigt. Durch Auswählen des Freundes (oder nicht-Freundes) im Personen Bereich können Sie testen, ob der Anbieter Informationen zur Person bereitstellt.
   
 ### <a name="test-scenarios"></a>Testszenarien
 
-Testen Sie um zu überprüfen, dass der Anbieter Informationen über Freunde und nicht-Freunde entsprechend bereitstellt, für die folgenden Szenarien.
+Um zu überprüfen, ob Ihr Anbieter entsprechende Informationen zu Freunden und nicht-Freunden bereitstellt, testen Sie die folgenden Szenarien.
   
 |**Szenario**|**Erwartetes Verhalten**|
 |:-----|:-----|
-|Person, die Sie im Bereich Personen ausgewählt ist ein Freund mit dem angemeldeten Benutzer im sozialen Netzwerk.  <br/> |Bereich Personen diese Person Aktivitäten auf dem sozialen Netzwerk angezeigt.  <br/> |
-|Person, die Sie im Bereich Personen ausgewählt ist ein nicht-Freund des angemeldeten Benutzers im sozialen Netzwerk, jedoch hat seine Aktivitäten aus, die von nicht-Freunde angezeigt werden zulässig.  <br/> |Bereich Personen diese Person Aktivitäten auf dem sozialen Netzwerk angezeigt.  <br/> |
+|Person, die im Personen Bereich ausgewählt ist, ist ein Freund des angemeldeten Benutzers im sozialen Netzwerk.  <br/> |Im Bereich Personen werden die Aktivitäten dieser Person im sozialen Netzwerk angezeigt.  <br/> |
+|Person, die im Personen Bereich ausgewählt ist, ist ein nicht-Freund des angemeldeten Benutzers im sozialen Netzwerk, hat jedoch zugelassen, dass seine Aktivitäten von nicht-Freunden angezeigt werden.  <br/> |Im Bereich Personen werden die Aktivitäten dieser Person im sozialen Netzwerk angezeigt.  <br/> |
 
 <a name="olosc_TestingFriends_OnDemandSync"> </a>
 
-## <a name="hybrid-synchronization"></a>Hybrid-Synchronisierung
+## <a name="hybrid-synchronization"></a>Hybrid Synchronisierung
 
-Wenn ein OSC-Anbieter Hybrid Synchronisierung von Freunde und Freunde-nicht unterstützt, führt der OSC Folgendes aus: 
+Wenn ein OSC-Anbieter die Hybrid Synchronisierung von Freunden und nicht-Freunden unterstützt, führt der OSC folgende Aktionen aus: 
   
-- Die OSC speichert Informationen für Freunde des angemeldeten Benutzers in der sozialen Netzwerk-spezifische Kontaktordner.
+- OSC speichert Informationen für Freunde des angemeldeten Benutzers im sozialen netzwerkspezifischen Kontaktordner.
     
-- Die OSC Ruft Informationen für nicht-Freunde auf Abruf aus dem sozialen Netzwerk und nur im Arbeitsspeicher, aber nicht in einem Ordner gespeichert.
+- OSC Ruft Informationen für nicht-Freunde bei Bedarf aus dem sozialen Netzwerk ab und speichert Sie nur im Arbeitsspeicher, jedoch nicht in einem Ordner.
     
-Führen Sie zum Testen der Synchronisierung Hybrid testing Vorschläge im Abschnitt [Synchronisierung Cache](#olosc_TestingFriends_CachedSync) für Freunde und die in den Abschnitt [Bedarfsgesteuerten Synchronisierung](#olosc_TestingFriends_OnDemandSync) für nicht-Freunde aus. 
+Führen Sie zum Testen der Hybrid Synchronisierung die Testvorschläge im Abschnitt [zwischengespeicherte Synchronisierung](#olosc_TestingFriends_CachedSync) für Freunde und die im Abschnitt [on-Demand-Synchronisierung](#olosc_TestingFriends_OnDemandSync) für nicht-Freunde aus. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Synchronisieren von Freunde und Aktivitäten](synchronizing-friends-and-activities.md) 
-- [XML-Code für Freunde](xml-for-friends.md)
+- [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md) 
+- [XML für Freunde](xml-for-friends.md)
 - [Vorbereitung der Freigabe eines OSC-Providers](getting-ready-to-release-an-osc-provider.md)
 

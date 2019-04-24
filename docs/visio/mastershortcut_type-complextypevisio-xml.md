@@ -1,5 +1,5 @@
 ---
-title: MasterShortcut_Type ComplexType ("Visio XML")
+title: MasterShortcut_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0192c733-09b8-d9ce-1d88-b4d97e2e1a36
 ms.openlocfilehash: 23d5de92be151b9ab6819296456746087573e7c0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341692"
 ---
-# <a name="mastershortcuttype-complextype-visio-xml"></a>MasterShortcut_Type ComplexType ("Visio XML")
+# <a name="mastershortcuttype-complextype-visio-xml"></a>MasterShortcut_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -79,7 +79,7 @@ ms.locfileid: "25396484"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -91,17 +91,17 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|AlignName  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedShort.  <br/> |
-|IconSize  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedShort.  <br/> |
-|ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|IsCustomName  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |
-|IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |
-|MasterType  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedShort.  <br/> |
-|Name  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|NameU  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|PatternFlags  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedShort.  <br/> |
-|Eingabeaufforderung  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|ShortcutHelp  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|ShortcutURL  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
+|AlignName  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> ||Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|IconSize  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> ||Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|IsCustomname  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|MasterType Direktive  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> ||Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|NameU  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|PatternFlags  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> ||Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|Eingabeaufforderung  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|ShortcutHelp  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|ShortcutURL  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
    
 

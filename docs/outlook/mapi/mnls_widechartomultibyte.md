@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f64cde12-7ed1-444f-8ca4-51cb3ea514cf
-description: 'Zuletzt geändert: 21 Februar 2012'
+description: 'Zuletzt geändert: 21, 2012'
 ms.openlocfilehash: ad41f9b6060e5cfbabecfd9bb29a47815929d6b5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338731"
 ---
 # <a name="mnlswidechartomultibyte"></a>MNLS_WideCharToMultiByte
 
@@ -21,7 +21,7 @@ ms.locfileid: "25385515"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Funktion ähnelt **WideCharToMultiByte**, der eine Zeichenfolge mit UTF-16 (Breitzeichen) in eine neue Zeichenfolge zugeordnet ist. Die neue Zeichenfolge ist nicht unbedingt aus einem multibyte-Zeichen festgelegt.
+Diese Funktion ähnelt **WideCharToMultiByte**, wodurch eine Zeichenfolge vom Typ UTF-16 (Breitzeichen) einer neuen Zeichenfolge zugeordnet wird. Die neue Zeichenfolge ist nicht unbedingt aus einem Mehrbyte-Zeichensatz.
   
 ```cpp
 int MNLS_WideCharToMultiByte(
@@ -39,19 +39,19 @@ int MNLS_WideCharToMultiByte(
 
  _uCodePage_
   
-> [in] Codepage verwendet wird, in die Konvertierung ausgeführt.
+> in Codepage, die beim Ausführen der Konvertierung verwendet werden soll.
     
  _dwFlags_
   
-> [in] Flags, die den Typ für die Konvertierung angibt.
+> in Flags, die den Konvertierungs angeben.
     
  _lpWideCharStr_
   
-> [in] Zeiger auf die Unicode-Zeichenfolge konvertiert.
+> in Zeiger auf die zu konvertierende Unicode-Zeichenfolge.
     
  _cchWideChar_
   
-> [in] Flags, die den Typ für die Konvertierung angibt.
+> in Flags, die den Konvertierungs angeben.
     
  _lpMultiByteStr_
   
@@ -59,23 +59,23 @@ int MNLS_WideCharToMultiByte(
     
  _cchMultiByte_
   
-> [in] Größe des Puffers durch _LpMultiByteStr_in Bytes.
+> in Die Größe des von _lpMultiByteStr_angegebenen Puffers in Byte.
     
  _lpDefaultChar_
   
-> [in] Optional. Zeiger auf das Zeichen verwenden, wenn ein Zeichen in der angegebenen Codepage dargestellt werden kann.
+> [in] Optional. Zeiger auf das Zeichen, das verwendet werden soll, wenn ein Zeichen nicht auf der angegebenen Codepage dargestellt werden kann.
     
  _lpfUsedDefaultChar_
   
-> [out] Optional. Zeiger auf ein Flag, das angibt, ob die Funktion einer Standardwerte für die Zeichen in der Konvertierung verwendet hat.
+> [out] Optional. Zeiger auf ein Flag, das angibt, ob die Funktion in der Konvertierung ein Standardzeichen verwendet hat.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt die Anzahl der in den Puffer auf den _LpMultiByteStr_ bei erfolgreicher geschriebenen Bytes zurück. 
+Gibt die Anzahl der in den Puffer geschriebenen Bytes zurück, auf die durch _lpMultiByteStr_ , wenn erfolgreich, verwiesen wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen. Weitere Informationen finden Sie unter [WideCharToMultiByte](https://msdn.microsoft.com/library/dd374130%28VS.85%29.aspx).
+Diese Funktion umschließt die **WideCharToMultiByte** -Funktion. Weitere Informationen finden Sie unter [WideCharToMultiByte](https://msdn.microsoft.com/library/dd374130%28VS.85%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 

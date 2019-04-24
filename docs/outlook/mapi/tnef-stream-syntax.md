@@ -1,5 +1,5 @@
 ---
-title: TNEF-Streamsyntax
+title: TNEF-Datenstrom Syntax
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,46 +8,46 @@ api_type:
 - COM
 ms.assetid: 1353d494-c266-4715-afe7-14543a1bbe1b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ce2b2497bd89f00ce7f063d3e482752fabfeb731
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 12d2a92ff80897456707c7ab8af8f704605c85d0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339634"
 ---
-# <a name="tnef-stream-syntax"></a>TNEF-Streamsyntax
+# <a name="tnef-stream-syntax"></a>TNEF-Datenstrom Syntax
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird ein Bakus-Nauer wie Beschreibung der Syntax der TNEF-Stream. In dieser Beschreibung werden nicht terminale Elemente, die eine weitere Definition kursiv angezeigt. Konstanten und Literale Elemente sind fett dargestellt. Sequences-Elemente sind in der Reihenfolge, in einer separaten Zeile aufgeführt. Das _Stream_ -Element umfasst beispielsweise die Konstante **TNEF_SIGNATURE**, gefolgt von einem _Schlüssel_, gefolgt von einem _Objekt_. Wenn ein Element mehr als eine mögliche Implementierung aufweist, werden die alternativen in aufeinander folgenden Zeilen aufgeführt. Ein _Objekt_ kann beispielsweise eine _Message_Seq_, eine _Message_Seq_ gefolgt von einer _Attach_Seq_oder nur ein _Attach_Seq_bestehen.
+Dieses Thema stellt eine Bakus-Nauer-ähnliche Beschreibung der TNEF-Stream-Syntax dar. In dieser Beschreibung sind nicht-Terminal Elemente, die eine weitere Definition aufweisen, kursiv formatiert. Konstanten und Literale Elemente sind fett formatiert. Sequenzen von Elementen werden in einer bestimmten Reihenfolge aufgelistet. Das _Stream_ -Element besteht beispielsweise aus der Konstanten **TNEF_SIGNATURE**, gefolgt von einem _Schlüssel_und einem _Objekt_. Wenn ein Element mehr als eine mögliche Implementierung aufweist, werden die Alternativen in aufeinanderfolgenden Zeilen aufgeführt. Ein _Objekt_ kann beispielsweise aus einem _Message_Seq_, einem _Message_Seq_ gefolgt von einem _Attach_Seq_oder nur einem _Attach_Seq_bestehen.
   
  _TNEF_Stream:_
   
 > **TNEF_SIGNATURE** _Schlüssel_ _Objekt_
     
- _Wichtige Punkte:_
+ _Schlüssel_
   
-> eine ungleich NULL 16-Bit-Ganzzahl ohne Vorzeichen
+> eine unsignierte 16-Bit-Ganzzahl ohne Vorzeichen
     
-TNEF aktiviert Transporten Generieren dieser Wert vor der Verwendung von TNEF-Implementierung zum Generieren der TNEF-Stream.
+TNEF-aktivierte Übertragungen generieren diesen Wert, bevor Sie die TNEF-Implementierung zum Generieren eines TNEF-Streams verwenden.
   
- _Objekt:_
+ _Objekt_
   
 >  _Message_Seq Message_Seq Attach_Seq Attach_Seq_
     
  _Message_Seq:_
   
->  _AttTnefVersion AttTnefVersion Msg_Attribute_Seq AttTnefVersion AttMessageClass AttTnefVersion AttMessageClass Msg_Attribute_Seq AttMessageClass AttMessageClass Msg_Attribute_Seq Msg_Attribute_Seq_
+>  _attTnefVersion attTnefVersion Msg_Attribute_Seq attTnefVersion attMessageClass attTnefVersion attMessageClass Msg_Attribute_Seq attMessageClass attMessageClass Msg_Attribute_Seq Msg_Attribute_Seq_
     
- _AttTnefVersion:_
+ _attTnefVersion:_
   
-> **LVL_MESSAGE AttTnefVersion sizeof(ULONG)** **0 x 00010000** Prüfsumme 
+> **LVL_MESSAGE attTnefVersion sizeof (ULONG)** **0x00010000** -Prüfsumme 
     
- _AttMessageClass:_
+ _attMessageClass:_
   
-> **LVL_MESSAGE attMessageClass** _Msg_class_length Msg_class_ Prüfsumme 
+> **LVL_MESSAGE attMessageClass** _msg_class_length msg_class_ -Prüfsumme 
     
  _Msg_Attribute_Seq:_
   
@@ -55,19 +55,19 @@ TNEF aktiviert Transporten Generieren dieser Wert vor der Verwendung von TNEF-Im
     
  _Msg_Attribute:_
   
-> **LVL_MESSAGE** Attribut-ID-Attribut Länge Attributdaten Prüfsumme 
+> **LVL_MESSAGE** -Attribut-ID Attribut-length-Attribut-Daten Prüfsumme 
     
-Attribut-ID ist eine der TNEF-Attribut Bezeichner, wie beispielsweise **AttSubject**. Attribut Länge hat die Länge der Attributdaten in Bytes. Attributdaten ist das Attribut zugeordneten Daten.
+Attribut-ID ist eine der TNEF-Attributbezeichner wie **attSubject**. Attribut Länge ist die Länge der Attributdaten in Byte. Attribut-Data ist die dem Attribut zugeordneten Daten.
   
  _Attach_Seq:_
   
->  _AttRenddata AttRenddata Att_Attribute_Seq_
+>  _attRenddata attRenddata Att_Attribute_Seq_
     
- _AttRenddata:_
+ _attRenddata:_
   
-> **LVL_ATTACHMENT attRenddata** **sizeof(RENDDATA)** Renddata Prüfsumme 
+> **LVL_ATTACHMENT attRenddata** **sizeof (RENDDATA) RENDDATA-** Prüfsumme 
     
-Renddata ist die zugehörigen Daten für die **RENDDATA** -Struktur, die Renderinginformationen für die entsprechende Anlage enthält. Die Struktur **RENDDATA** ist in die TNEF definiert. H-Headerdatei. 
+Renddata ist die Daten, die der **Renddata** -Struktur zugeordnet sind, die die Renderinginformationen für die entsprechende Anlage enthält. Die **RENDDATA** -Struktur ist im TNEF definiert. H-Headerdatei. 
   
  _Att_Attribute_Seq:_
   
@@ -75,8 +75,8 @@ Renddata ist die zugehörigen Daten für die **RENDDATA** -Struktur, die Renderi
     
  _Att_Attribute:_
   
-> **LVL_ATTACHMENT** Attribut-ID-Attribut Länge Attributdaten Prüfsumme 
+> **LVL_ATTACHMENT** -Attribut-ID Attribut-length-Attribut-Daten Prüfsumme 
     
-Attribut-ID-Attribut Länge und Attributdaten haben die dieselbe Bedeutung wie für das Msg_Attribute-Element.
+Attribut-ID, Attribut Länge und Attribut-Data haben die gleichen Bedeutungen wie für das Msg_Attribute-Element.
   
 

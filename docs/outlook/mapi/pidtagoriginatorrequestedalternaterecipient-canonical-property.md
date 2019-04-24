@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginatorRequestedAlternateRecipient (kanonische Eigenschaft)
+title: Kanonische Pidtagoriginatorrequestedalternaterecipient (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c85b7862-18bc-4e17-94db-9097e0ac4a02
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 463f2eb6e730c9250861ce50515a7f662bb75d23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 45cd0e8a95f908d7ef56d03b3ecab5d5df5bcae1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342000"
 ---
-# <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>PidTagOriginatorRequestedAlternateRecipient (kanonische Eigenschaft)
+# <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>Kanonische Pidtagoriginatorrequestedalternaterecipient (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID für einen alternativen Empfänger vom Absender festgelegt.
+Enthält eine Eintrags-ID für einen vom Absender angegebenen alternativen Empfänger.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält die Eintrags-ID für einen alternativen Empfänger vom Absender festgel
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird in Autoforwarded Nachrichten verwendet. Wenn die automatische Weiterleitung nicht zulässig ist oder keine alternativer Empfänger vorgesehen ist, sollte ein Unzustellbarkeitsbericht generiert werden.
+Diese Eigenschaft wird in Nachrichten mit Auto Weiterleitung verwendet. Wenn die Auto Weiterleitung nicht zulässig ist oder kein alternativer Empfänger festgelegt wurde, sollte ein Unzustellbarkeitsbericht generiert werden.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Senden eine Antwort
+title: Senden einer Antwort
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,84 +7,84 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 90dafeae-6b61-40e3-8341-d6a11799d0f2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4d8c995f5fbca322fca44cdcbb0de224af6b2fbf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f47741369b1091c0dd24358e063de8f4675000fa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339781"
 ---
-# <a name="sending-a-reply"></a>Senden eine Antwort
+# <a name="sending-a-reply"></a>Senden einer Antwort
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
--Clientanwendungen unterstützt zwei Arten von Antworten in der Regel: eine, die gesendet wird, nur für den Absender der ursprünglichen Nachricht, die an alle Empfänger, die in der ursprünglichen Nachricht zusätzlich zu den Absender der Empfängerliste enthalten gesendet wird. In diesem zweiten Art von Antwort wird häufig eine Antwort genannt, die alle Nachrichten.
+Client Anwendungen unterstützen in der Regel zwei Arten von Antworten: eine, die nur an den Absender der ursprünglichen Nachricht gesendet wird, und eine, die an alle anderen Empfänger gesendet wird, die in der Empfängerliste der ursprünglichen Nachricht zusätzlich zum Absender enthalten sind. Dieser zweite Antworttyp wird gemeinhin als "alle Antworten"-Nachricht bezeichnet.
   
-Um eine Antwort eines beliebigen Typs zu senden, implementieren Sie einige der Aufgaben, die Sie würde, wenn Sie eine ursprüngliche Nachricht senden. Angenommen, öffnen Sie den standardmäßigen Nachrichtenspeicher und der ausgehende Nachrichtenordner, in der Regel im Ordner Postausgang, und rufen Sie den ausgehenden Ordner [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) -Methode, um die Antwort zu erstellen. Darüber hinaus öffnen Sie den Ordner, der die ursprüngliche Nachricht, typischerweise im Posteingang. Informationen zum Öffnen von verschiedenen Ordnern finden Sie unter [Öffnen einen Speicherordner Nachricht](opening-a-message-store-folder.md).
+Um eine Antwort von einem der beiden Typen zu senden, implementieren Sie einige der gleichen Aufgaben wie beim Senden einer ursprünglichen Nachricht. Sie können beispielsweise den standardmäßigen Nachrichtenspeicher und den Ordner für ausgehende Nachrichten öffnen, normalerweise den Postausgang, und die [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode des ausgehenden Ordners aufrufen, um die Antwort zu erstellen. Außerdem öffnen Sie den Ordner, der die ursprüngliche Nachricht enthält, in der Regel den Posteingang. Informationen zum Öffnen unterschiedlicher Ordner finden Sie unter [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md).
   
-Der Hauptunterschied zwischen erstellen eine Antwort und erstellen eine ursprüngliche Nachricht ist, dass mit eine Antwort die, die meisten Eigenschaften sind entweder basierend auf, oder direkt über die Eigenschaften der ursprünglichen Nachricht kopiert. Anlagen – eine Nachricht **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))-Eigenschaft – insbesondere ausgeschlossen werden. Die Empfängerliste für eine Antwort, die alle Nachrichten mit dem Empfänger, dargestellt durch die Eigenschaft **PR_RECEIVED_BY_SEARCH_KEY** ([PidTagReceivedBySearchKey](pidtagreceivedbysearchkey-canonical-property.md)) und entfernt alle Bcc-Empfänger aus der ursprünglichen Nachricht erstellt wird. Die **PR_RECEIVED_BY_SEARCH_KEY** -Eigenschaft stellt den aktuellen Benutzer. 
+Der Hauptunterschied zwischen dem Erstellen einer Antwort und dem Erstellen einer ursprünglichen Nachricht besteht darin, dass die meisten Eigenschaften mit einer Reply-Eigenschaft entweder auf oder direkt aus den Eigenschaften der ursprünglichen Nachricht kopiert werden. Attachments – die **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md))-Eigenschaft einer Nachricht ist ausdrücklich ausgeschlossen. Die Empfängerliste für eine alle Antworten Nachricht wird aus der ursprünglichen Liste der Nachricht mit dem Empfänger von der **PR_RECEIVED_BY_SEARCH_KEY** ([pidtagreceivedbysearchkey (](pidtagreceivedbysearchkey-canonical-property.md))-Eigenschaft dargestellt und alle Blind Carbon Copy-Empfänger entfernt erstellt. Die **PR_RECEIVED_BY_SEARCH_KEY** -Eigenschaft stellt den aktuellen Benutzer dar. 
   
-### <a name="to-send-a-reply"></a>Um eine Antwort zu senden.
+### <a name="to-send-a-reply"></a>So senden Sie eine Antwort
   
-1. Öffnen Sie die Standard-Informationsspeicher. Weitere Informationen finden Sie unter [Standard-Informationsspeicher zu öffnen](opening-the-default-message-store.md).
+1. Öffnen Sie den Standardnachrichtenspeicher. Weitere Informationen finden Sie unter [Öffnen des Standardnachrichten Speichers](opening-the-default-message-store.md).
     
-2. Öffnen Sie den Ordner Postausgang. Weitere Informationen finden Sie unter [Öffnen einen Speicherordner Nachricht](opening-a-message-store-folder.md).
+2. Öffnen Sie den Ordner Postausgang. Weitere Informationen finden Sie unter [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md).
     
-3. Rufen Sie den Postausgang [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) -Methode, um die Antwort zu erstellen. 
+3. Rufen Sie die [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode des Postausgangs auf, um die Antwort zu erstellen. 
     
-4. Rufen Sie die ursprüngliche Nachricht [IMAPIProp::CopyTo](imapiprop-copyto.md) -Methode, um die folgenden Eigenschaften in die Antwortnachricht zu kopieren: 
+4. Rufen Sie die [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Methode der ursprünglichen Nachricht auf, um die folgenden Eigenschaften in die Antwortnachricht zu kopieren: 
     
-   - **Kurs\_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) oder **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)), je nachdem, ob die Rich-Text-Format unterstützt.
+   - **PR\_-Textkörper** ([pidtagbody (](pidtagbody-canonical-property.md)) oder **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)), je nachdem, ob Sie das Rich-Text-Format unterstützen oder nicht.
     
-   - **Kurs\_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)), wenn die Antwort an die gesamte Empfängerliste gesendet wird.
+   - **PR\_-MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md)), wenn die Antwort in der gesamten Empfängerliste angezeigt wird.
     
-   - **Kurs\_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)).
+   - **PR\_-NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)).
     
-5. Nehmen Sie die folgenden Eigenschaften nicht in den Anruf auf **IMAPIProp::CopyTo**aus:
+5. Schließen Sie die folgenden Eigenschaften nicht in den Aufruf von **IMAPIProp:: CopyTo**ein:
     
     |||
     |:-----|:-----|
-    |**Kurs\_CLIENT\_SUBMIT\_Zeit** <br/> |**Kurs\_Nachricht\_Übermittlung\_Zeit** <br/> |
-    |**Kurs\_Nachricht\_herunterladen\_Zeit** <br/> |**Kurs\_Nachricht\_FLAGS** <br/> |
-    |**Kurs\_Absender\_Übermittlung\_ REPORT\REQUESTED** <br/> |**PR\_empfangene\_REPRESENTING** Eigenschaften  <br/> |
-    |**Kurs\_lesen\_Bestätigung\_ENTRYID** <br/> |**Kurs\_lesen\_Bestätigung\_angefordert** <br/> |
-    |**PR\_RECEIVED\_BY** Eigenschaften  <br/> |**PR\_Antwort\_Empfänger** Eigenschaften  <br/> |
-    |**Kurs\_Bericht\_ENTRYID** <br/> |**PR\_Absender** Eigenschaften  <br/> |
-    |**PR\_gesendete\_REPRESENTING** Eigenschaften  <br/> |**Kurs\_SENTMAIL\_ENTRYID** <br/> |
-    |**Kurs\_Betreff\_Präfix** <br/> | <br/> |
+    |**Zeit\_für\_die\_Einreichung des PR-Clients** <br/> |**Liefer\_\_Zeit\_für PR-Nachrichten** <br/> |
+    |**Download\_\_Zeit\_der PR-Nachricht** <br/> |**PR\_-\_Nachrichtenkennzeichen** <br/> |
+    |**PR\_-\_Absender\_ REPORT\REQUESTED** <br/> |**PR\_-\_RCVD** , die Eigenschaften darstellen  <br/> |
+    |**PR\_-\_Lese\_Bestätigung-Eintrags-Nr.** <br/> |**PR\_-\_Lese\_Bestätigung angefordert** <br/> |
+    |**Von\_Eigenschaften\_empfangene PR**  <br/> |**Empfänger\_Eigenschaften\_für PR-Antworten**  <br/> |
+    |**PR\_-\_Bericht-Eintrags-Nr.** <br/> |**PR\_-Absender** Eigenschaften  <br/> |
+    |**PR\_gesendet\_** , die Eigenschaften darstellt  <br/> |**PR\_-\_SENTMAIL-Eintrags-Nr.** <br/> |
+    |**PR\_-\_Betreff-Präfix** <br/> | <br/> |
    
-6. Hinzufügen von Trennzeichen Text günstigsten Nachricht-Body-Eigenschaft, die Sie unterstützen – **PR_BODY**, **PR_HTM**L oder **PR_RTF_COMPRESSED**.
+6. Hinzufügen von Trennzeichen zu jeder Nachrichtentext Eigenschaft, die Sie unterstützen – **PR_BODY**, **PR_HTM**L oder **PR_RTF_COMPRESSED**.
     
-7. Rufen Sie [ScCreateConversationIndex](sccreateconversationindex.md), übergeben den Wert der Eigenschaft für die ursprüngliche Nachricht **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)).
+7. Rufen Sie [ScCreateConversationIndex](sccreateconversationindex.md)auf, und übergeben Sie den Wert der **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))-Eigenschaft der ursprünglichen Nachricht.
     
-8. Legen Sie ein Präfix für die Antwort. Bei Verwendung den Standard "AW:", diese Zeichen auf den Anfang der **PR_NORMALIZED_SUBJECT** verketten und **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) auf die neue Zeichenfolge festgelegt. **PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) nicht festgelegt. Bei Verwendung ein nicht standardmäßigen Präfixes, wie eine Zeichenfolge mit mehr als drei Zeichen im **PR_SUBJECT_PREFIX**speichern. 
+8. Legen Sie ein Präfix für die Antwort fest. Wenn Sie den Standard "RE:" verwenden, verketten Sie diese Zeichen am Anfang von **PR_NORMALIZED_SUBJECT** , und legen Sie **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md)) auf diese neue Zeichenfolge fest. Legen Sie **PR_SUBJECT_PREFIX** ([pidtagsubjectprefix (](pidtagsubjectprefix-canonical-property.md)) nicht fest. Wenn Sie ein nicht standardmäßiges Präfix verwenden, wie etwa eine Zeichenfolge mit mehr als drei Zeichen, speichern Sie es in **PR_SUBJECT_PREFIX**. 
     
-9. Legen Sie die **PR_SENT_REPRESENTING** -Eigenschaften auf die entsprechenden Werte in den Eigenschaften des **PR_RCVD_REPRESENTING** . 
+9. Legen Sie die **PR_SENT_REPRESENTING** -Eigenschaften auf die entsprechenden Werte in den **PR_RCVD_REPRESENTING** -Eigenschaften fest. 
     
-10. Legen Sie jedes der Einträge im **PR\_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) und **PR_REPLY\_RECIPIENT_NAMES** ([PidTagReplyRecipientNames](pidtagreplyrecipientnames-canonical-property.md)) auf den Eintrag Bezeichner und Anzeigename den Namen des ein primäre Empfänger – eines Empfängers, dessen Typ MAPI_TO ist. Lassen Sie diese Eigenschaften synchronisiert. D. h., **PR_REPLY_RECIPIENT\_Einträge** **PR_REPLY_RECIPIENT_NAMES** muss die gleiche Anzahl von Einträgen aus der enthalten und ein Eintrag an einer bestimmten Position in der Eigenschaften eines Eintrags an derselben Position in der anderen entsprechen -Eigenschaft. 
+10. Legen Sie alle Einträge in **PR\_REPLY_RECIPIENT_ENTRIES** ([pidtagreplyrecipiententries (](pidtagreplyrecipiententries-canonical-property.md)) und **PR_REPLY\_RECIPIENT_NAMES** ([pidtagreplyrecipientnames (](pidtagreplyrecipientnames-canonical-property.md)) auf die Eintrags-ID und den Anzeigenamen eines primärer Empfänger – ein Empfänger, dessen Typ MAPI_TO ist. Halten Sie diese Eigenschaften synchronisiert. Das heißt, **PR_REPLY_RECIPIENT\_-Einträge** und **PR_REPLY_RECIPIENT_NAMES** müssen die gleiche Anzahl von Einträgen enthalten, und ein Eintrag an einer bestimmten Position in einer der Eigenschaften muss einem Eintrag an derselben Position in der anderen entsprechen. Eigenschaft. 
     
-11. Wenn die Antwort nur an den Absender der ursprünglichen Nachricht gesendet wird, erstellen Sie eine einzelnen Eintrag Empfängerliste mit dem Empfänger, dargestellt durch die ursprüngliche Nachricht **PR_SENT_REPRESENTING** -Eigenschaft. Weitere Informationen zum Erstellen einer Empfängerliste finden Sie unter [Erstellen einer Empfängerliste](creating-a-recipient-list.md).
+11. Wenn die Antwort nur an den Absender der ursprünglichen Nachricht gesendet wird, erstellen Sie eine einzelne Eintrags Empfängerliste mit dem Empfänger, der von der **PR_SENT_REPRESENTING** -Eigenschaft der ursprünglichen Nachricht dargestellt wird. Weitere Informationen zum Erstellen einer Empfängerliste finden Sie unter [Erstellen einer Empfängerliste](creating-a-recipient-list.md).
     
-12. Wenn die Antwort auf eine Antwort, die alle ist, erstellen Sie eine Empfängerliste wie folgt:
+12. Wenn die Antwort eine Antwort ist, erstellen Sie eine Empfängerliste wie folgt:
     
-    1. Rufen Sie die ursprüngliche Nachricht [IMessage::GetRecipientTable](imessage-getrecipienttable.md) -Methode zum Zugriff auf die Empfänger Tabelle. 
+    1. Rufen Sie die [IMessage::](imessage-getrecipienttable.md) getrecipientable-Methode der ursprünglichen Nachricht auf, um auf die Empfängertabelle zuzugreifen. 
         
-    2. Rufen Sie [HrQueryAllRows](hrqueryallrows.md) , um alle Zeilen in der Tabelle abzurufen. Bestimmen Sie, wenn jede Zeile einen Primär- oder Carbon Copy, Blindkopie Empfänger stellt und in der Liste bleiben soll, oder wenn er einen Bcc-Empfänger oder der Benutzer stellt und aus der Liste entfernt werden soll. 
+    2. Rufen Sie [HrQueryAllRows](hrqueryallrows.md) auf, um alle Zeilen in der Tabelle abzurufen. Bestimmen Sie, ob jede Zeile einen Primär-oder Kohlenstoff Kopie-Empfänger darstellt und in der Liste verbleiben soll, oder ob es sich um einen Blind Carbon Copy-Empfänger oder den Benutzer handelt und aus der Liste entfernt werden sollte. 
         
-    3. Unterscheiden Sie zwischen Empfängertypen anhand der Spalte **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)). Diese Spalte wird MAPI_TO für primären Empfänger, MAPI_CC für Cc-Empfänger und MAPI_BCC für blind Carbon Copy, Blindkopie Empfänger festgelegt. 
+    3. UnterScheiden Sie zwischen Empfängertypen, indem Sie sich die Spalte **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md)) ansehen. Diese Spalte wird für primäre Empfänger, MAPI_CC für MAPI_TO-Empfänger und MAPI_BCC für blinde Kopie-Empfänger festgelegt. 
         
-    4. Vergleichen der Spalte **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) mit der **PR_RECEIVED_BY_SEARCH_KEY** -Eigenschaft der ursprünglichen Nachricht zu ermitteln, ob die Zeile den Benutzer darstellt. 
+    4. Vergleichen Sie die **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Spalte mit der **PR_RECEIVED_BY_SEARCH_KEY** -Eigenschaft der ursprünglichen Nachricht, um zu bestimmen, ob die Zeile den Benutzer darstellt. 
         
-    5. Entfernen Sie unerwünschte Zeilen aus der Empfängerliste durch Aufrufen von [MAPIFreeBuffer](mapifreebuffer.md) , um die entsprechenden Einträge in der Empfänger [SRowSet](srowset.md) Tabellenstruktur zugeordneten Arbeitsspeicher freizugeben. Alle Werte im Array Eigenschaft Wert, alle Mitglieder **cValues** 0 (null), 0 (null) und alle Mitglieder **LpProps** in jedem [SRow](srow.md) Struktur in der **SRowSet** auf NULL festgelegt wurde. 
+    5. Entfernen Sie unerwünschte Zeilen aus der Empfängerliste, indem Sie [mapifreebufferfreigegeben](mapifreebuffer.md) aufrufen, um den Arbeitsspeicher freizugeben, der den entsprechenden Einträgen in der [SRowSet](srowset.md) -Struktur der Empfängertabelle zugeordnet ist. Legen Sie alle Werte im Eigenschaftswert Array auf 0 (null), alle **cValues** -Elemente auf 0 (null) und alle **lpProps** -Elemente in jeder [SRow](srow.md) -Struktur in der **SRowSet** auf NULL fest. 
         
-    6. Den Absender der Empfängerliste hinzufügen, dargestellt durch der ursprünglichen Nachricht **PR\_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)) und **PR_SENT_REPRESENTING_ENTRYID** ([PidTagSentRepresentingEntryId](pidtagsentrepresentingentryid-canonical-property.md)) Eigenschaften. Überprüfen Sie, dass der Absender in der Liste nicht dupliziert werden.
+    6. Hinzufügen des Absenders zur Empfängerliste gemäß der **PR\_-SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)) und **PR_SENT_REPRESENTING_ENTRYID** ([pidtagsentrepresentingentryid (](pidtagsentrepresentingentryid-canonical-property.md)) der ursprünglichen Nachricht Eigenschaften. Stellen Sie sicher, dass der Absender nicht in der Liste dupliziert wird.
         
-    7. Rufen Sie die Antwortnachricht [IMessage::ModifyRecipients](imessage-modifyrecipients.md) -Methode, wenn der Parameter _UlFlags_ auf 0 (null), um eine neue Empfängerliste zur Beantwortung erstellen oder weitergeleitete Nachricht basierend auf der Liste aus der ursprünglichen Nachricht. 
+    7. Rufen Sie die [IMessage:: ModifyRecipients](imessage-modifyrecipients.md) -Methode der Antwortnachricht auf, und legen Sie den Parameter _ulFlags_ auf NULL fest, um eine neue Empfängerliste für die Antwort oder weitergeleitete Nachricht zu erstellen, die auf der Liste der ursprünglichen Nachricht basiert. 
     
-13. Rufen Sie die Antwort [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode zum Speichern der Nachricht oder [IMessage::SubmitMessage](imessage-submitmessage.md) zu speichern und senden. 
+13. Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Antwort auf, um die Nachricht zu speichern, oder [IMessage:: SubmitMessage](imessage-submitmessage.md) , um Sie zu speichern und zu senden. 
     
 > [!NOTE]
-> Bevor Sie **IMessage::ModifyRecipients** zum Speichern der Änderungen in der Empfängerliste aufrufen, können Sie Benutzer über das Nachrichtenformular Modifikationen gestatten. Benutzer können der Liste hinzufügen oder Entfernen von bestimmten Mitglieder. Ermöglichen, dass Benutzer eine Empfängerliste ändern ist eine optionale Clientfunktion. 
+> Bevor Sie **IMessage:: ModifyRecipients** zum Speichern von Änderungen in der Empfängerliste aufrufen, können Sie Benutzern erlauben, Änderungen über das Nachrichtenformular vorzunehmen. Benutzer können der Liste hinzufügen oder bestimmte Mitglieder entfernen. Wenn Benutzer Änderungen an einer Empfängerliste vornehmen können, ist dies ein optionales Client Feature. 
   
 

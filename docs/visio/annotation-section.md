@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 616c822e-1bb2-4980-7e45-0c2be77dd801
 description: Enthält Informationen zu Kommentaren, die in eine Dokumentseite eingefügt wurden.
-ms.openlocfilehash: 1824c8f087d999ae76ecc4227df44a0ba7001f6a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f874a574940a5f56b1d1680b9b4b32730e1e79f7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341398"
 ---
-# <a name="annotation-section"></a>Annotation Section
+# <a name="annotation-section"></a>Abschnitt "Annotation"
 
 Enthält Informationen zu Kommentaren, die in eine Dokumentseite eingefügt wurden. 
   
 > [!NOTE]
-> In diesem Abschnitt wird für Kommentare zur Überwachung nur, wenn eine VSD-Datei in Microsoft Visio 2013 öffnen oder eine vsdx-Datei im VSD-Format speichern. Es wird nicht zum Nachverfolgen von Kommentaren in neuen vsdx-Dokumenten in Visio 2013 verwendet. 
+> Dieser Abschnitt dient nur zum Nachverfolgen von Kommentaren beim Öffnen einer VSD-Datei in Microsoft Visio 2013 oder beim Speichern einer. vsdx-Datei im VSD-Dateiformat. Sie wird nicht zum Nachverfolgen von Kommentaren in neuen vsdx-Dokumenten in Visio 2013 verwendet. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Abschnitt **Annotation** des ShapeSheets einer Seite enthält eine Zeile für jeden Kommentar zu einer Seite in der Zeichnung hinzugefügt, ob es sich um ein ursprünglichen Zeichenblatt oder ein Markup Überlagerung Seite (eine Seite mit Markup, das der Zeichnung durch einen Bearbeiter hinzugefügt wurde). Informationen über Markup, das per Freihand oder mit anderen Shapes anstelle von Kommentaren hinzugefügt wurde, ist nicht in den Abschnitt " **Annotation** " enthalten. 
+Der Abschnitt **Annotation** des ShapeSheets einer Seite enthält eine Zeile für jeden Kommentar, der einer Seite in der Zeichnung hinzugefügt wurde, unabhängig davon, ob es sich um ein Originalzeichen Blatt oder eine Markup Überlagerungs Seite handelt (eine Seite mit Markup, das von einem Prüfer zur Zeichnung hinzugefügt wurde). Informationen zu Markups, die mit Freihandeingaben oder anderen Formen anstelle von Kommentaren hinzugefügt wurden, sind im Abschnitt **Annotation** nicht enthalten. 
   
 Wenn ein ShapeSheet für eine Seite angezeigt werden soll, dürfen keine Elemente der Seite ausgewählt sein. Klicken Sie mit der rechten Maustaste auf die Seite, und klicken Sie dann auf die Option **ShapeSheet anzeigen**.
   
-Informationen über bestimmte Bearbeiter finden Sie im Abschnitt **Reviewer** des ShapeSheet im Dokument. 
+Informationen zu bestimmten Bearbeiter finden Sie im Abschnitt **** Reviewer im ShapeSheet des Dokuments. 
   
 

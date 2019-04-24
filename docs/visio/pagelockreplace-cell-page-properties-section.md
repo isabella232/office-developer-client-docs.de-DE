@@ -1,31 +1,31 @@
 ---
-title: PageLockReplace Cell (Page Properties Section)
+title: PageLockReplace Cell (Page Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 59c36555-42af-4729-aea7-0332d1da6e3b
-description: Gibt an, ob für diese Seite die Schaltfläche Form ersetzen deaktiviert werden soll.
-ms.openlocfilehash: b3956b3e2f2fcd5c4f82089e08a6e32200374778
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt an, ob die Schaltfläche Shape ersetzen für diese Seite deaktiviert werden soll.
+ms.openlocfilehash: c0495d47a81ed7a23e758c531f7d754291c47852
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339480"
 ---
-# <a name="pagelockreplace-cell-page-properties-section"></a>PageLockReplace Cell (Page Properties Section)
+# <a name="pagelockreplace-cell-page-properties-section"></a>PageLockReplace Cell (Page Properties section)
 
-Gibt an, ob für diese Seite die Schaltfläche **Form ersetzen** deaktiviert werden soll. 
+Gibt an, ob die Schaltfläche **Shape ersetzen** für diese Seite deaktiviert werden soll. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Die **Form ändern** -Schaltfläche ist nicht verfügbar, wenn diese Seite aktiv ist.  <br/> |
-|FALSE  <br/> |Auf dieser Seite wird nicht die Schaltfläche **Form ändern** deaktiviert. Die Schaltfläche kann weiterhin ausgeführt, wenn abgeblendet werden: die **DocLockReplace** auf die **DocumentSheet** auf **TRUE**; festgelegt ist die Zelle **LockReplace** für das ausgewählte Shape wird auf **TRUE**festgelegt.  <br/> |
+|TRUE  <br/> |Die Schaltfläche **Shape ändern** ist ausgeblendet, wenn diese Seite aktiv ist.  <br/> |
+|FALSE  <br/> |Die Schaltfläche **Shape ändern** ist von dieser Seite nicht deaktiviert. Die Schaltfläche ist möglicherweise noch abgeblendet, wenn: der **DocLockReplace** auf dem **DocumentSheet** auf **true**festgelegt ist; die **LockReplace** -Zelle für die ausgewählte Form ist auf **true**festgelegt.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **PageLockReplace** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **PageLockReplace** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

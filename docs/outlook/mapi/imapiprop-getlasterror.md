@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: f64a765d-c653-4eef-a0fc-24a54968757c
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f67dbb4d883f2f66099f2e2b9bc06b6c35b98236
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8c31cbf0472d3d64c7327fcfc80480ef27a1638e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342049"
 ---
 # <a name="imapipropgetlasterror"></a>IMAPIProp::GetLastError
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler enthält. 
+Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,47 +39,47 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in] Ein Handle für den im vorherigen Methodenaufruf generierten Fehlercode.
+> in Ein Handle für den im vorherigen Methodenaufruf generierten Fehlercode.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die das Format für den Text in der **MAPIERROR** -Struktur, die auf den _LppMAPIError_zurückgegeben angibt. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die das Format für den Text angibt, der in der **MAPIERROR** -Struktur zurückgegeben wird, auf die durch _lppMAPIError_verwiesen wird. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgen sollte im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sollte die Zeichenfolgen in ANSI-Format.
+> Die Zeichenfolgen sollten im Unicode-Format vorliegen. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sollten die Zeichenfolgen im ANSI-Format sein.
     
  _lppMAPIError_
   
-> [out] Ein Zeiger auf einen Zeiger auf die **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält. Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn keine Fehler Informationen zurückgeben. 
+> Out Ein Zeiger auf einen Zeiger auf die **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der Parameter _lppMAPIError_ kann auf NULL festgelegt werden, wenn keine Fehlerinformationen zurückgegeben werden sollen. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Fehlerinformationen wurde zurückgegeben.
+> Die Fehlerinformationen wurden zurückgegeben.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIProp::GetLastError** -Methode stellt Informationen zu einem Aufruf der vorherigen-Methode, die nicht zur Verfügung. Clients können die Benutzer einschließlich der Daten aus der **MAPIERROR** -Struktur in einem Dialogfeld mit ausführlichen Informationen zu dem Fehler bereitstellen. 
+Die **IMAPIProp:: getlasterroraufzurufen** -Methode liefert Informationen zu einem vorherigen Methodenaufruf, der fehlgeschlagen ist. Clients können Ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem Sie die Daten aus der **MAPIERROR** -Struktur in ein Dialogfeld einschließen. 
   
-Alle Implementierungen der **GetLastError** von MAPI bereitgestellt sind ANSI Implementierungen, mit Ausnahme der [IAddrBook](iaddrbookimapiprop.md) -Implementierung. Die enthaltene **IAddrBook** **GetLastError** -Methode unterstützt Unicode. 
+Alle von MAPI bereitgestellten Implementierungen von **getlasterroraufzurufen** sind ANSI-Implementierungen, mit Ausnahme der [IAddrBook](iaddrbookimapiprop.md) -Implementierung. Die **getlasterroraufzurufen** -Methode, die in **IAddrBook** enthalten ist, unterstützt Unicode. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die Details eines Remote-transport-Implementierung dieser Methode und worauf Nachrichten von die dieser Methode zurückgegebenen bis zu der Adressbuchhierarchie des Anbieters, da die bestimmten fehlerbedingungen, die zu verschiedenen HRESULT-Werte für verschiedene Transport abweichen Anbieter.
+Die Details der Implementierung der Methode eines Remote Transportanbieters und der von dieser Methode zurückgegebenen Nachrichten sind für den Transportanbieter, da die besonderen Fehlerbedingungen, die zu verschiedenen HRESULT-Werten führen, für unterschiedliche Transportvorgänge unterschiedlich sind. Anbieter.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die **MAPIERROR** -Struktur auf durch den Parameter _LppMAPIError_ zeigt, wenn **GetLastError** bereitstellt, nur, wenn S_OK zurückgegeben wird. In einigen Fällen kann **GetLastError** nicht ermitteln, was letzten Fehlers wurde oder nicht mehr zu dem Fehler gemeldet wurde. In diesem Fall wird ein Zeiger auf NULL stattdessen in _LppMAPIError_ zurückgegeben. 
+Sie können die **MAPIERROR** -Struktur, auf die durch den _lppMAPIError_ -Parameter verwiesen wird, verwenden, wenn **getlasterroraufzurufen** eine bereitstellt, nur, wenn der Rückgabewert S_OK ist. Manchmal kann **getlasterroraufzurufen** nicht ermitteln, was der letzte Fehler war oder nicht mehr über den Fehler berichtet. In dieser Situation wird stattdessen ein Zeiger auf NULL in _lppMAPIError_ zurückgegeben. 
   
-Um den Speicher für die Struktur **MAPIERROR** freizugeben, rufen Sie die [MAPIFreeBuffer](mapifreebuffer.md) -Funktion. 
+Zum Freigeben des Speichers für die **MAPIERROR** -Struktur rufen Sie die [Mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf. 
   
-Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Extended MAPI-Fehler](mapi-extended-errors.md).
+Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -94,5 +94,5 @@ Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Exte
 [IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
-[Fehler Extended MAPI](mapi-extended-errors.md)
+[Erweiterte MAPI-Fehler](mapi-extended-errors.md)
 

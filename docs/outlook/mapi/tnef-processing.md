@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 4d324fb3-d917-4502-b3a4-179c479deb79
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
 ms.openlocfilehash: 066ad3dfb64161e326b92fef7774d5b3b9461d8a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339599"
 ---
 # <a name="tnef-processing"></a>TNEF-Verarbeitung
 
@@ -21,34 +21,34 @@ ms.locfileid: "25399569"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgende Reihe von Aktionen wird beschrieben, wie Transporten TNEF-Methoden zum Verarbeiten von eingehender und ausgehender Nachrichten verwenden.
+In der folgenden Reihe von Aktionen wird beschrieben, wie mithilfe von TNEF-Methoden ausgehende und eingehende Nachrichten verarbeitet werden.
   
- **Senden eine Nachricht, die einen TNEF-Stream enthält**
+ **So senden Sie eine Nachricht mit einem TNEF-Datenstrom**
   
-1. Verarbeiten von den Eigenschaften der Nachricht, die von der messaging-System unterstützt werden.
+1. Verarbeiten Sie die Nachrichteneigenschaften, die vom Messagingsystem unterstützt werden.
     
-2. Markieren Sie die Nachricht in einer Implementierung bestimmte Weise, damit der empfangenden Adressbuchhierarchie ermitteln kann, dass die Nachricht TNEF-Verarbeitung erforderlich ist. Eine TNEF-Transportdienst senden an eine SMTP-messaging-System möglicherweise beispielsweise ein benutzerdefinierter Header-Feld wie "X-enthält-TNEF" um anzugeben, dass die Nachricht TNEF-Daten enthält hinzufügen.
+2. Markieren Sie die Nachricht in einer implementierungsspezifischen Weise, sodass der empfangende Transportanbieter bestimmen kann, dass die Nachricht die TNEF-Verarbeitung erfordert. Beispielsweise kann ein TNEF-Transportanbieter, der an ein SMTP-Messagingsystem sendet, ein benutzerdefiniertes Kopfzeilenfeld wie "X-CONTAINs-TNEF" hinzufügen, um anzugeben, dass die Nachricht TNEF-Daten enthält.
     
-3. Abrufen eines TNEF-Objekts, und verwenden Sie es zum Kapseln der Nachrichteneigenschaften von messaging-System in einem Stream TNEF nicht unterstützt.
+3. Rufen Sie ein TNEF-Objekt ab, und verwenden Sie es, um die vom Messagingsystem nicht unterstützten Nachrichteneigenschaften in einen TNEF-Datenstrom einzukapseln.
     
-4. Codieren Sie mit der messaging-System Anlage Objektmodell TNEF-Stream. Beispielsweise wenn das zugrunde liegende Anlage Modell Uuencode Anlagen und den Nachrichtentext anfügen, muss dann der Adressbuchhierarchie Uuencode TNEF-Stream in einer anderen Anlage. Der Transportdienst muss auch eine Methode für die Erkennung von welche Anlage den codierten TNEF-Stream enthält, wenn sie eine Nachricht empfängt implementieren. Standardverfahren zum Kennzeichnen dieser Anlage ist, damit es erhält ein Dateiname der Anlage von "WINMAIL. FILTERN". Wenn der Adressbuchhierarchie dies der Fall ist, werden können mit ihm interagieren alle Transportanbieter TNEF-aktiviert, die dieser Konvention.
+4. Codieren Sie den TNEF-Stream mithilfe des Attachment-Modells des Messagingsystems. Wenn das zugrunde liegende Anlagenmodell beispielsweise UUEncode-Anlagen ist und diese an den Nachrichtentext angefügt wird, muss der TNEF-Stream vom Transportanbieter in eine andere Anlage eingefügt werden. Der Transportanbieter muss außerdem eine Methode implementieren, um zu erkennen, welche Anlage den codierten TNEF-Stream enthält, wenn er eine Nachricht empfängt. Die Standardmethode zum Markieren dieser Anlage besteht darin, ihr einen Dateinamen "WINMAIL" zuzuweisen. DAT ". Wenn Ihr Transportanbieter dies tut, können alle anderen TNEF-fähigen Transportanbieter, die dieser Konvention folgen, mit dieser zusammenarbeiten.
     
-5. Verwendung [ITnef: IUnknown](itnefiunknown.md) Schnittstellenmethoden, beschreibt die Positionen der e-Mail-Anlagen im Nachrichtentext Tags einfügen. 
+5. Verwenden Sie [ITnef: IUnknown](itnefiunknown.md) -Schnittstellenmethoden, um Tags einzufügen, die die Positionen von Nachrichtenanlagen im Nachrichtentext beschreiben. 
     
-6. Greifen Sie auf den markierten Nachrichtentext über [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Methoden, und senden Sie sie an die messaging-System. 
+6. Zugreifen auf den markierten Nachrichtentext über [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Methoden und senden an das Messagingsystem. 
     
- **Zum Abrufen von gekapselte Eigenschaften**
+ **So rufen Sie gekapselte Eigenschaften ab**
   
-1. Schreiben von Eigenschaften in eine neue Nachricht, einschließlich Nachrichtentext für die markierte, die die gekapselten Eigenschaften enthält, die messaging-System unterstützt.
+1. Schreiben Sie die vom Messagingsystem unterstützten Eigenschaften in eine neue Nachricht, einschließlich des markierten Nachrichtentexts, der die gekapselte Eigenschaften enthält.
     
-2. Decodiert den TNEF-Stream aus der entsprechenden Anlage.
+2. DeCodieren Sie den TNEF-Datenstrom aus der richtigen Anlage.
     
-3. Alle anderen Anlagen decodieren und in neue MAPI-Anlagen auf eine Nachricht zu schreiben.
+3. DeCodieren Sie alle anderen Anlagen, und schreiben Sie Sie in neue MAPI-Anlagen in einer Nachricht.
     
-4. Öffnen Sie den TNEF-Stream für die Decodierung mit der Funktion [OpenTnefStreamEx](opentnefstreamex.md) . 
+4. Öffnen Sie den TNEF-Stream zur Decodierung mithilfe der [OpenTnefStreamEx](opentnefstreamex.md) -Funktion. 
     
-5. Verwenden Sie die [ITnef::ExtractProps](itnef-extractprops.md) -Methode zum Decodieren des TNEF-Streams und die gekapselten Eigenschaften in die neue Nachricht zu schreiben. Codierten Eigenschaften, die Duplikate der nonencoded Eigenschaften sind überschreibt die nonencoded Eigenschaften, wenn die codierten Eigenschaften decodiert werden. 
+5. Verwenden Sie die [ITnef:: ExtractProps](itnef-extractprops.md) -Methode, um den TNEF-Stream zu decodieren und die gekapselte Eigenschaften in die neue Nachricht zu schreiben. Alle codierten Eigenschaften, die Duplikate von nicht codierten Eigenschaften sind, überschreiben die nicht codierten Eigenschaften, wenn die codierten Eigenschaften decodiert werden. 
     
-6. Verwenden Sie die [ITnef::OpenTaggedBody](itnef-opentaggedbody.md) -Methode zum Analysieren des Nachrichtentext Anlage Positionen von Tags in den Nachrichtentext wiederhergestellt werden. 
+6. Verwenden Sie die [ITnef:: OpenTaggedBody](itnef-opentaggedbody.md) -Methode, um den Nachrichtentext zu analysieren, um die Anlagen Positionen der Tags im Nachrichtentext wiederherzustellen. 
     
 

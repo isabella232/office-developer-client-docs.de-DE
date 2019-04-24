@@ -9,21 +9,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f84c6e70-e74e-4ca2-961c-0260ea277b00
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8ba845143d962b3627f57a60f45742227bc9f35
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5290cc871f47d9410651492fd520520d7f2e5e77
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339914"
 ---
 # <a name="mapi-structures"></a>MAPI-Strukturen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden Einträge alphabetisch sortierte werden MAPI-Strukturen beschrieben. Weitere detaillierte Informationen sind auch Querverweise andere Publikationen oder auf andere Themen in dieser Dokumentation enthalten.
+Die folgenden alphabetischen Einträge beschreiben MAPI-Strukturen. Ausführlichere Informationen finden Sie auch unter Querverweise zu anderen Publikationen oder zu anderen Themen in dieser Dokumentation.
   
 |||
 |:-----|:-----|
@@ -76,7 +76,7 @@ Die folgenden Einträge alphabetisch sortierte werden MAPI-Strukturen beschriebe
 
 
 
-[MAPI-Funktionen, Rückrufe und Makros](mapi-functions-callbacks-and-macros.md)
+[MAPI-Funktionen, R�ckrufe und Makros](mapi-functions-callbacks-and-macros.md)
 
 
 [MAPI Reference](mapi-reference.md)

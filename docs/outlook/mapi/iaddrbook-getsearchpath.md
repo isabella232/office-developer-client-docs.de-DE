@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 43b51a66-71fa-4e10-93e4-d533b48af4de
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7bf69e560142ab282d6545389e02766389e4d018
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f8c129e772870804ef464765b2035a3582317a09
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341391"
 ---
 # <a name="iaddrbookgetsearchpath"></a>IAddrBook::GetSearchPath
 
@@ -25,7 +25,7 @@ ms.locfileid: "22580698"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine geordnete Liste von Eintrags-IDs der Container in der [IAddrBook::ResolveName](iaddrbook-resolvename.md) -Methode initiiert Vorgang der Lösung enthalten sein. 
+Gibt eine sortierte Liste von Eintrags Bezeichnern der Container zurück, die in den von der [IAddrBook::](iaddrbook-resolvename.md) ResolveName-Methode initiierten namens Auflösungsprozess eingeschlossen werden sollen. 
   
 ```cpp
 HRESULT GetSearchPath(
@@ -38,17 +38,17 @@ HRESULT GetSearchPath(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der Zeichenfolgen steuert, die in den Suchpfad zurückgegeben. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der im Suchpfad zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _lppSearchPath_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine sortierte Liste der Container-Eintragsbezeichner. **GetSearchPath** speichert die sortierte Liste in eine [SRowSet](srowset.md) -Struktur. Wenn keine Container in der Adressbuchhierarchie vorhanden sind, wird 0 (null) in der Struktur **SRowSet** zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf eine sortierte Liste von Container Eintrags-IDs. **GetSearchPath** speichert die sortierte Liste in einer [SRowSet](srowset.md) -Struktur. Wenn es in der Adressbuchhierarchie keine Container gibt, wird in der **SRowSet** -Struktur NULL zurückgegeben. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -56,19 +56,19 @@ S_OK
     
 ## <a name="remarks"></a>Bemerkungen
 
-Clients und Dienstanbieter rufen Sie die **GetSearchPath-** Methode, um den Suchpfad abzurufen, der zum Auflösen von Namen mit der **ResolveName** -Methode verwendet wird. In der Regel rufen Clients die [IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md) -Methode, um einen Container Suchpfad im Profil herzustellen, vor dem Aufruf von **GetSearchPath** , um sie abzurufen. Aufrufen von **SetSearchPath** ist jedoch optional. 
+Clients und Dienstanbieter rufen die **GetSearchPath** -Methode auf, um den Suchpfad abzurufen, der zum Auflösen **** von Namen mit der ResolveName-Methode verwendet wird. In der Regel rufen Clients die [IAddrBook:: SetSearchPath](iaddrbook-setsearchpath.md) -Methode auf, um einen Container Suchpfad im Profil einzurichten, bevor Sie **GetSearchPath** aufrufen, um Sie abzurufen. Das Aufrufen von **SetSearchPath** ist jedoch optional. 
   
-Wenn **SetSearchPath** noch nie aufgerufen wurde, werden erstellt **GetSearchPath** einen Pfad durcharbeiten die Adresse des Buchs Hierarchietabellen. Der Standardsuchpfad **GetSearchPath** eingesetzten umfasst die folgenden Container in der folgenden Reihenfolge: 
+Wenn **SetSearchPath** nie aufgerufen wurde, erstellt **GetSearchPath** einen Pfad, indem Sie die Hierarchietabellen des Adressbuches durcharbeiten. Der von **GetSearchPath** eingerichtete Standardsuchpfad besteht aus den folgenden Containern in der folgenden Reihenfolge: 
   
-1. Der erste Container mit Lese-/Schreibzugriff, normalerweise über das persönliche Adressbuch (PAB).
+1. Der erste Container mit Berechtigung zum Lesen/Schreiben, in der Regel das persönliche Adressbuch (PAB).
     
-2. Jedes Container, dessen **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))-Eigenschaft auf DT_GLOBAL festgelegt ist. Diese Einstellung gibt an, dass der Container Empfänger enthält. 
+2. Jeder Container, dessen **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))-Eigenschaft auf DT_GLOBAL festgelegt ist. Diese Einstellung gibt an, dass der Container Empfänger enthält. 
     
-3. Der Container als Standard, festgelegt werden, wenn es sind keine Container, die die in ihrer **PR_DISPLAY_TYPE** -Eigenschaft und der Standardcontainer DT_GLOBAL gekennzeichnet sind unterscheidet sich von den ersten Container mit Lese-/Schreibzugriff. 
+3. Der als Standard bezeichnete Container, wenn keine Container vorhanden sind, für die das DT_GLOBAL-Flag in der **PR_DISPLAY_TYPE** -Eigenschaft festgelegt ist, und der Standardcontainer sich vom ersten Container mit Berechtigung zum Lesen/Schreiben unterscheidet. 
     
-Wenn **SetSearchPath** aufgerufen wurde, erstellt **GetSearchPath** einen Pfad mit Address Book Container, die im Profil gespeichert wurden. **GetSearchPath** überprüft dieser Pfad, bevor sie ihn an den Aufrufer zurückgibt. 
+Wenn **SetSearchPath** aufgerufen wurde, erstellt **GetSearchPath** einen Pfad mithilfe der Adressbuchcontainer, die im Profil gespeichert wurden. **GetSearchPath** überprüft diesen Pfad, bevor er an den Aufrufer zurückgegeben wird. 
   
-Nach dem ersten Aufruf von **SetSearchPath**müssen nachfolgende Aufrufe von **SetSearchPath** so ändern Sie den zurückgegebene **GetSearchPath**Suchpfad verwendet werden. Anders ausgedrückt, erhält die aufrufende Client oder Anbieter den Standardpfad für die Suche nach dem ersten Aufruf von **SetSearchPath**keine.
+Nach dem ersten Aufruf von **SetSearchPath**müssen nachfolgende Aufrufe an **SetSearchPath** verwendet werden, um den von **GetSearchPath**zurückgegebenen Suchpfad zu ändern. Anders ausgedrückt erhält der aufrufende Client oder Anbieter nach dem ersten Aufruf von **SetSearchPath**nicht den Standardsuchpfad.
   
 ## <a name="see-also"></a>Siehe auch
 

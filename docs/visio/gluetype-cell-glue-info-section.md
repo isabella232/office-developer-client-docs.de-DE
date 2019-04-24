@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fffbefd6-8b0b-0023-6b03-026d1c6e885e
 description: Bestimmt, ob ein 1D-Shape statischen (Punkt-zu-Punkt) oder dynamischen (Shape-zu-Shape) Kleber verwendet, wenn es an ein anderes Shape geklebt wird.
-ms.openlocfilehash: 162827521cda6fe4a37d17a8f7d36d7a36718519
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ae4eddf17c6e7b5e56cb3397f03d0721d965c9b7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339515"
 ---
-# <a name="gluetype-cell-glue-info-section"></a>GlueType Cell (Glue Info Section)
+# <a name="gluetype-cell-glue-info-section"></a>Zelle "GlueType" (Abschnitt "Glue Info")
 
 Bestimmt, ob ein 1D-Shape statischen (Punkt-zu-Punkt) oder dynamischen (Shape-zu-Shape) Kleber verwendet, wenn es an ein anderes Shape geklebt wird.
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| &amp;H0  <br/> | Standardeinstellung. Dynamischen Kleber nur für dynamische Verbinder zulassen, sonst statischen Kleber verwenden.  <br/> |**visGlueTypeDefault** <br/> |
+| &amp;H0  <br/> | Standardwert. Dynamischen Kleber nur für dynamische Verbinder zulassen, sonst statischen Kleber verwenden.  <br/> |**visGlueTypeDefault** <br/> |
 | &amp;H1  <br/> | Dynamischen Kleber zulassen.  <br/> | Wird ab Visio 2002 nicht mehr verwendet.  <br/> |
-| &amp;H2  <br/> | Dynamischen Kleber zulassen.  <br/> |**visLOFlagsRoutable** <br/> |
+| &amp;H2  <br/> | Dynamischen Kleber zulassen.  <br/> |**visGlueTypeWalking** <br/> |
 | &amp;H4  <br/> | Dynamischen Kleber nicht zulassen.  <br/> |**visGlueTypeNoWalking** <br/> |
 | &amp;H8  <br/> | Dieses 2D-Shape darf nicht mit dynamischem Kleber verbunden werden.  <br/> |**visGlueTypeNoWalkingTo** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Zelle den Wert 1, 2 oder 3 enthält, wird dynamischer Kleber verwendet, wenn eine der folgenden Bedingungen vorliegt:
   
@@ -40,13 +40,13 @@ Wenn Shapes von einem Programm an Shape-Zellen außer PinX oder PinY geklebt wer
   
 Wenn Sie diesen Wert ändern, sodass dynamisches Kleben nicht mehr zulässig ist, werden bereits vorhandene dynamisch geklebte Verbindungen weder getrennt noch verändert. Programme können dynamischen Kleber verwenden, auch wenn das dynamische Kleben in der Zelle GlueType deaktiviert ist.
   
-Wenn Sie einen Verweis auf die Zelle GlueType aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle GlueType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | GlueType  <br/> |
+| Zellenname:  <br/> | Zelle GlueType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle GlueType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle GlueType nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

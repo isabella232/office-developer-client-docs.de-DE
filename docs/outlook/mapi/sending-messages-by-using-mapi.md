@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: 3edfbfff-ea15-4926-bf0f-47137251d921
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6a3172dcd962c04d72aacd14d2e42990fb0f78c7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bf6324b89f06ef7f0553d3de1eaa24ae31a329ba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339753"
 ---
 # <a name="sending-messages-by-using-mapi"></a>Senden von Nachrichten mithilfe von MAPI
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clientanwendungen rufen Sie die [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode, um eine Nachricht senden. **SubmitMessage** ruft [IMAPIProp::SaveChanges](imapiprop-savechanges.md) , um die Nachricht vor der Weiterleitung Steuerelement entweder der MAPI-Warteschlange oder direkt an eines Transportdienstes zu speichern. 
+Client Anwendungen rufen die [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf, um eine Nachricht zu senden. **SubmitMessage** ruft [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) auf, um die Nachricht zu speichern, bevor die Steuerung an den MAPI-Spooler oder direkt an einen Transportanbieter übertragen wird. 
   
-Die MAPI-Warteschlange empfängt die Nachricht, wenn eines der folgenden auftreten:
+Der MAPI-Spooler empfängt die Nachricht, wenn eine der folgenden Aktionen Eintritt:
   
-- Die Nachrichtenanbieter und Adressbuchhierarchie sind nicht eng verknüpft.
+- Der Nachrichtenspeicher Anbieter und der Transportanbieter sind nicht eng gekoppelt.
     
-- Die Nachricht muss der vorverarbeitung.
+- Die Nachricht erfordert die Vorverarbeitung.
     
-- Die eng gekoppelten Nachrichtenspeicher und Transport können nicht alle Empfänger behandeln, die an die Nachricht adressiert ist.
+- Der eng gekoppelte Nachrichtenspeicher und der Transport können nicht alle Empfänger verarbeiten, an die die Nachricht adressiert ist.
     
-Ein eng gekoppelten Nachrichtenspeicher muss eine Nachricht den Status berücksichtigen, bevor sie es für die MAPI-Warteschlange auf eines Transportdienstes heruntergeladen werden anzeigt. Es gibt Situationen, in dem möglicherweise eine Meldung angezeigt, die MAPI-Warteschlange erforderlich ist, aber die MAPI-Warteschlange sollte wirklich nicht einbezogen werden.
+Bei einem eng gekoppelten Nachrichtenspeicher muss der Status einer Nachricht berücksichtigt werden, bevor Sie dem MAPI-Spooler zum Herunterladen an einen Transportanbieter präsentiert wird. Es gibt Situationen, in denen eine Nachricht möglicherweise die MAPI-Spooler erfordert, aber die MAPI-Spooler sollte wirklich nicht beteiligt sein.
   
-Betrachten Sie beispielsweise die Situation, in dem ein Benutzer eine Nachricht aus dem Posteingang übermittelt. Der Client ist eng gekoppelten Speicher und Transport verwendet. Wenn der eng gekoppelten Nachrichtenspeicher Speicherort der Nachricht als einzige Kriterium für um dazu, ob die MAPI-Warteschlange zu entscheiden verwendet, um die Nachricht zu verarbeiten, erhält die MAPI-Warteschlange immer die Nachricht. Um diese Art des Problems zu vermeiden, muss ein eng gekoppelten Nachrichtenspeicher neben den Speicherort für Nachrichten die Nachricht den Status überprüfen. Der Transportdienst sollten insbesondere nicht anfordern, dass die MAPI-Warteschlange eine beliebige Nachricht herunterladen, die aktiv übermittelt wird.
+Betrachten Sie beispielsweise die Situation, in der ein Benutzer eine Nachricht aus dem Posteingang übermittelt. Der Client verwendet einen eng gekoppelten Speicher und Transport. Wenn der eng gekoppelte Nachrichtenspeicher den Speicherort der Nachricht als alleiniges Kriterium verwendet, um zu entscheiden, ob der MAPI-Spooler die Nachricht verarbeiten darf, wird die Nachricht vom MAPI-Spooler immer angezeigt. Um diese Art von Problem zu vermeiden, muss ein eng gekoppelter Nachrichtenspeicher zusätzlich zum Nachrichten Speicherort den Nachrichtenstatus überprüfen. Insbesondere sollte der Transportanbieter nicht anfordern, dass der MAPI-Spooler eine Nachricht herunterlädt, die aktiv übermittelt wird.
   
-Die Übertragung Nachricht umfasst die Nachricht Speicheranbieter, mindestens einen Transportanbieter und MAPI. Die Themen in diesem Abschnitt enthalten ausführliche Informationen zu speziellen Positionen bei der Übertragung.
+Der Nachrichtenübertragungsprozess umfasst den Nachrichtenspeicher Anbieter, einen oder mehrere Transportanbieter und MAPI. Die Themen in diesem Abschnitt enthalten detaillierte Informationen zu bestimmten Rollen im Nachrichtenübertragungsprozess.
   
 ## <a name="see-also"></a>Siehe auch
 

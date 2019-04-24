@@ -1,30 +1,30 @@
 ---
-title: Change Shape Behavior Section
+title: Abschnitt "Shape-Verhalten ändern"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a9e97f45-2a5c-40c3-8282-a345ae6249d9
-description: Bestimmt die Eigenschaften, die von der alten Form zum Ersatz-Shape während einer Ersetzungsoperation übertragen werden. Die Werte der Zellen im Abschnitt Verhalten der Shapes ändern des Master-Shapes werden während der Ersetzung Shape Form der Ersatz gelesen.
-ms.openlocfilehash: 3b4b3cac37b8415309a2433c19c2b420fd652df7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Eigenschaften, die während eines Ersetzungsvorgangs von der alten Form auf die Ersatzform übertragen werden. Die Werte der Zellen im Abschnitt Shape-Verhalten ändern des Master-Shapes der Ersetzung werden während der Form Ersetzung gelesen.
+ms.openlocfilehash: 74519b27ab5b2b5bafc7c00010a65769061bf691
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341923"
 ---
-# <a name="change-shape-behavior-section"></a>Change Shape Behavior Section
+# <a name="change-shape-behavior-section"></a>Abschnitt "Shape-Verhalten ändern"
 
-Bestimmt die Eigenschaften, die von der alten Form zum Ersatz-Shape während einer Ersetzungsoperation übertragen werden. Die Werte der Zellen im Abschnitt **Verhalten der Shapes ändern** des Master-Shapes werden während der Ersetzung Shape Form der Ersatz gelesen. 
+Bestimmt die Eigenschaften, die während eines Ersetzungsvorgangs von der alten Form auf die Ersatzform übertragen werden. Die Werte der Zellen im Abschnitt **Shape-Verhalten ändern** des Master-Shapes der Ersetzung werden während der Form Ersetzung gelesen. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Durch Festlegen der Zellen im Abschnitt **Shape-Verhalten ändern** , können Sie sicherstellen, dass bestimmte Eigenschaften des Ersatz-Shapes während der Ersetzung unverändert. Eigenschaften, die nicht geschützt werden werden während des Vorgangs mit der lokalen Shape-Werte von der alten Form aktualisiert. 
+Wenn Sie die Zellen im Abschnitt **Shape-Verhalten ändern** festlegen, können Sie sicherstellen, dass bestimmte Eigenschaften des Ersatz-Shapes während des Ersetzungsvorgangs unverändert bleiben. Nicht geschützte Eigenschaften werden während des Vorgangs mit den lokalen Shape-Werten aus der alten Form aktualisiert. 
   
-Sie können die Ersetzung ändern Verhalten Einstellungen eines Master-shape durch das Master-Shape bearbeiten Shape (das Fenster **Shapes** , mit der Maustaste des Shapes, zeigen Sie auf **Master-Shape bearbeiten**und klicken Sie dann auf **Master-Shape bearbeiten**) und Ändern der Werte von der [ ReplaceCopyCells](replacecopycells-cell-change-shape-behavior-section.md), [ReplaceLockFormat](replacelockformat-cell-change-shape-behavior-section.md), [ReplaceLockShapeData](replacelockshapedata-cell-change-shape-behavior-section.md)und [ReplaceLockText](replacelocktext-cell-change-shape-behavior-section.md) Zellen im ShapeSheet-das Master-Shape. 
+Sie können die Einstellungen für das Ersetzungs Verhalten eines Master-Shapes ändern, indem Sie das Master-Shape bearbeiten (Klicken Sie im Fenster **Shapes** mit der rechten Maustaste auf das Shape, zeigen Sie auf **Master bearbeiten**, und klicken Sie dann auf **Master-Shape bearbeiten**), und ändern Sie die Werte [der ReplaceCopyCells](replacecopycells-cell-change-shape-behavior-section.md)-, [ReplaceLockFormat](replacelockformat-cell-change-shape-behavior-section.md)-, [ReplaceLockShapeData](replacelockshapedata-cell-change-shape-behavior-section.md)-und [ReplaceLockText](replacelocktext-cell-change-shape-behavior-section.md) -Zellen im ShapeSheet des Masters. 
   
 > [!NOTE]
-> Die Form Replacement Verhaltensweisen der Formen, die mit den integrierten Schablonen in Microsoft Visio 2013 enthalten sind, kann nicht geändert werden. Um die Form Replacement Verhaltensweisen der integrierten Visio-Shapes zu ändern, erstellen Sie eine neue Schablone, und fügen Sie das Shape, das Sie auf die neue Schablone ändern möchten. 
+> Sie können das Verhalten der Form Ersetzung der Shapes, die in den integrierten Schablonen in Microsoft Visio 2013 enthalten sind, nicht ändern. Um das Verhalten der Form Ersetzung der integrierten Visio-Shapes zu ändern, erstellen Sie eine neue Schablone, und fügen Sie die zu ändernde Form der neuen Schablone hinzu. 
   
 

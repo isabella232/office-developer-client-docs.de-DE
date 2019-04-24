@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 493c87a4-317d-47ec-850b-342cac59594b
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 9db1f8e163e44a44df1e798cebccb3639325275e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340082"
 ---
 # <a name="mapi-profiles"></a>MAPI-Profile
 
@@ -21,56 +21,56 @@ ms.locfileid: "25391430"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Profil speichert Informationen zu Dienstanbietern und Message-Dienste, die auf einem Computer installiert sind. Für jede Sitzung wählt ein Client bei der Anmeldung ein Profil, das den Anbieter und die Dienste zu verwendende beschreibt. Ein Client kann eine als Standard auswählen aus einer Auflistung von Benutzerprofilen und, bei Bedarf einrichten. Das Standardprofil ist das Profil, das automatisch ausgewählt wird, wenn ein Client eine Sitzung startet und ein Profil nicht explizit angegeben wurde.
+In einem Profil werden Informationen zu Dienstanbietern und Nachrichtendiensten gespeichert, die auf einem Computer installiert sind. Bei jeder Sitzung wählt ein Client bei der Anmeldung ein Profil aus, das die zu verwendenden Anbieter und Dienste beschreibt. Ein Client kann aus einer Auflistung von Profilen auswählen und, falls gewünscht, eine als Standard festlegen. Das Standardprofil ist das Profil, das automatisch ausgewählt wird, wenn ein Client eine Sitzung startet und nicht explizit ein Profil angegeben hat.
   
-Auch in diesen Themen finden eine Erläuterung der Nickname-Cache Sie die in einem binären Stream gespeichert ist.
+Auch in diesen Themen finden Sie eine Erläuterung des Spitznamen Caches, der in einem binären Stream gespeichert wird.
   
 - [Cache für Spitznamen](nickname-cache.md)
     
-- [Stream für automatisches Vervollständigen](autocomplete-stream.md)
+- [AutoVervollständigen-Stream](autocomplete-stream.md)
     
-- [Analysieren der Binärdatei](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+- [Analyse von Binärdateien](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
     
-## <a name="profile-sections"></a>Profil Abschnitte
+## <a name="profile-sections"></a>Profilabschnitte
 
-Profile sind in Abschnitten dieser Clients unterteilt und Dienstanbieter für Benutzer Profileigenschaften anzeigen oder Ändern der Konfiguration zugreifen. Ein Profilabschnitt ist ein MAPI-Objekt, das die **IProfSect** -Schnittstelle implementiert wird, eine Schnittstelle, die von **IMAPIProp** abgeleitet und verfügt über keine zusätzlichen Methoden. Weitere Informationen finden Sie unter [IProfSect: IMAPIProp](iprofsectimapiprop.md). Der Zweck ist die Eigenschaften eines Abschnitts Profil bearbeiten. Rufen Sie zum Abrufen eines **IProfSect** Zeigers auf einem bestimmten Profilabschnitt Clients und -Dienstanbieter die folgenden Methoden. 
+Profile sind in Abschnitte unterteilt, über die Clients und Dienstanbieter Benutzerprofileigenschaften anzeigen oder Konfigurationsänderungen vornehmen können. Ein Profil Abschnitt ist ein MAPI-Objekt, das die **IProfSect** -Schnittstelle implementiert, eine Schnittstelle, die von **IMAPIProp** abgeleitet wird und keine zusätzlichen Methoden aufweist. Weitere Informationen finden Sie unter [IProfSect: IMAPIProp](iprofsectimapiprop.md). Der einzige Zweck besteht darin, die Eigenschaften eines Profil Abschnitts zu ändern. Zum Abrufen eines **IProfSect** -Zeigers zu einem bestimmten Profil Abschnitt rufen Clients und Dienstanbieter die folgenden Methoden auf. 
   
 |||
 |:-----|:-----|
-|Clients können aufrufen:  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
-|Dienstanbieter aufrufen können:  <br/> |[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) <br/> |
-|Clients oder Anbieter können anrufen:  <br/> |[IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |
+|Clients können Folgendes aufrufen:  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
+|Dienstanbieter können Folgendes aufrufen:  <br/> |[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) <br/> |
+|Entweder Clients oder Anbieter können Folgendes aufrufen:  <br/> |[IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |
    
-Profile sind wie die Datei MAPISVC hierarchisch viel angeordnet. INF-Datei. Klicken Sie oben in der Hierarchie sind Profil Abschnitte, die Informationen im Zusammenhang mit dem Profil enthalten. Die mittlere Ebene enthält Abschnitte, die Informationen zu einem Dienst bestimmte Nachricht enthalten, und die untere Ebene enthält Abschnitte, die Informationen über einen-Dienstanbieter in einem Nachrichtendienst enthalten. 
+Profile werden hierarchisch ähnlich wie die MAPISVC organisiert. INF-Datei. Oben in der Hierarchie gibt es Profilabschnitte mit Informationen, die für das Profil relevant sind. Die mittlere Ebene enthält Abschnitte, die Informationen zu einem bestimmten Nachrichtendienst enthalten, und die untere Ebene enthält Abschnitte, die Informationen zu einem der Dienstanbieter in einem Nachrichtendienst enthalten. 
   
-Jedes Profil hat mehrere erforderliche Eigenschaften, die in eine oder mehrere der in den Abschnitten des Profils gespeichert sind. Jedes Profil verfügt beispielsweise über die **PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md)) und **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaften. Ein Profil suchen-Taste wird auf die in MAPIGUID definierten Wert festgelegt. H als MUID_PROFILE_INSTANCE und ist immer gewährleistet, dass für alle Profile eindeutig sein. Obwohl zwei Profile denselben Namen haben können, können sie nicht den gleichen Suche Schlüssel haben. Suche Schlüssel sollte als Binärdaten anstelle von Daten, die keinen bestimmten Typ behandelt werden.
+Jedes Profil verfügt über mehrere erforderliche Eigenschaften, die in einem oder mehreren Abschnitten des Profils gespeichert werden. Jedes Profil verfügt beispielsweise über die Eigenschaften **PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md)) und **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md)). Der Suchschlüssel eines Profils wird auf den in MAPIGUID definierten Wert festgelegt. H als MUID_PROFILE_INSTANCE und ist immer garantiert einzigartig unter allen Profilen. Obwohl zwei Profile denselben Namen haben können, können Sie nicht denselben Suchschlüssel haben. Suchschlüssel sollten als binäre Daten anstelle von Daten eines bestimmten Typs behandelt werden.
   
-Nachricht Anbieter sind erforderlich, fügen Sie ihren Nachrichtenspeicher **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft in den Abschnitten Profil für das Profil und für ihre Nachricht Speicheranbieter und diese Einträge synchronisiert halten. Wenn ein Nachrichtenspeicher erstellt wird, wird der Anbieter **PR_DISPLAY_NAME** basierend auf dem Wert in den folgenden Abschnitten Profil gespeichert. 
+Nachrichtenspeicher Anbieter müssen die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des Nachrichtenspeichers in die Profilabschnitte für das Profil und für den Nachrichtenspeicher Anbieter aufnehmen und diese Einträge synchron halten. Wenn ein Nachrichtenspeicher erstellt wird, legt der Anbieter **PR_DISPLAY_NAME** basierend auf dem in diesen Profil Abschnitten gespeicherten Wert fest. 
   
-Es gibt zwei Hauptunterschiede zwischen Profil Abschnitte und andere Objekte, die von **IMAPIProp**erben: 
+Es gibt zwei Hauptunterschiede zwischen Profil Abschnitten und anderen Objekten, die von **IMAPIProp**erben: 
   
-- Profil Abschnitte unterstützen keine Transaktionen.
+- Profilabschnitte unterstützen keine Transaktionen.
     
-- Profil Abschnitte unterstützen keine benannte Eigenschaften zurückgeben MAPI_E_NO_SUPPORT aus ihrer **IMAPIProp::GetIDsFromNames** und **IMAPIProp::GetNamesFromIDs** Implementierungen. Weitere Informationen finden Sie unter [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) und [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md).
+- Profilabschnitte unterstützen keine benannten Eigenschaften und geben MAPI_E_NO_SUPPORT aus Ihren **IMAPIProp:: GetIDsFromNames** -und **IMAPIProp:: GetNamesFromIDs** -Implementierungen zurück. Weitere Informationen finden Sie unter [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) und [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md).
     
-Profil Abschnitte Transaktionen mit Aufrufen **IMAPIProp::CopyProps**, vorgenommenen Änderungen bieten keine Unterstützung **CopyTo**oder **SetProps** sofort wirksam. Weitere Informationen finden Sie unter [IMAPIProp::CopyProps](imapiprop-copyprops.md). Clients und Dienstanbieter können einem Profilabschnitt **IMAPIProp::SaveChanges** -Methode aufrufen und es wird erfolgreich ausgeführt, aber es hat keinen Einfluss auf die im Abschnitt Profildaten. Weitere Informationen finden Sie unter [IMAPIProp::SaveChanges](imapiprop-savechanges.md). Ändert sich sofort durchgeführt haben, kann die wie Dienstanbieter Eigenschaftenblätter implementieren, die Clients verwenden, die Benutzern Profileigenschaften angezeigt beeinträchtigen. Dienstanbieter, die Benutzern möglich Zurückstellen oder rückgängig machen möchten, müssen ihre Eigenschaftenseiten mit Kopien von Abschnitten anstelle der echten Abschnitte Profil implementieren. Benutzer können mithilfe von Kopien Änderungen vornehmen und später diese Änderungen Abbrechen verlassen die ursprünglichen Profil Abschnitte unverändert. 
+Da Profilabschnitte keine Transaktionen unterstützen, werden alle mit Aufrufen von **IMAPIProp:: CopyProps**, **CopyTo**oder SetProps vorgenommenen Änderungen sofort wirksam. **** Weitere Informationen finden Sie unter [IMAPIProp:: CopyProps](imapiprop-copyprops.md). Clients und Dienstanbieter können die **IMAPIProp:: SaveChanges** -Methode eines Profil Abschnitts aufrufen, die erfolgreich ausgeführt wird, aber keine Auswirkung auf die Profil Abschnittsdaten hat. Weitere Informationen finden Sie unter [IMAPIProp:: SaveChanges](imapiprop-savechanges.md). Wenn Änderungen sofort auftreten, kann sich dies auf die Implementierung der Eigenschaftenblätter auswirken, die von Clients zum Anzeigen von Profileigenschaften für Benutzer verwendet werden. Dienstanbieter, die möchten, dass Benutzer Änderungen verschieben oder rückgängig machen können, müssen ihre Eigenschaftenblätter mit Kopien von Profil Abschnitten anstelle der tatsächlichen Abschnitte implementieren. Mithilfe von Kopien können Benutzer Änderungen vornehmen und diese Änderungen später abbrechen, sodass die ursprünglichen Profilabschnitte unverändert bleiben. 
   
-Die Reihenfolge, in der Informationen in einem Profil angezeigt, wirkt sich auf wie MAPI Ressourcen konfiguriert, und macht Zuordnungen in einer Sitzung. Die folgenden Zuordnungen unterliegen Profil Reihenfolge:
+Die Reihenfolge, in der Informationen in einem Profil angezeigt werden, wirkt sich darauf aus, wie MAPI Ressourcen konfiguriert und Zuordnungen in einer Sitzung vornimmt. Die folgenden Zuordnungen sind von der Profilreihenfolge betroffen:
   
-- Standard-Informationsspeicher
+- Standardnachrichtenspeicher
     
 - Persönliches Adressbuch
     
-- Nachricht Store Suchpfad Standard
+- Standardsuchpfad für Nachrichtenspeicher
     
-- Default Address Book Suchpfad
+- Standardsuchpfad des Adressbuchs
     
-- Die Reihenfolge der Transport-Anbieter
+- Transport Anbieter Reihenfolge
     
-MAPI legt den Standard-Nachrichtenspeicher auf dem ersten Nachrichtenspeicher im Profil ist, ist das STATUS_DEFAULT_STORE-Flag festlegen in dessen **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))-Eigenschaft, die angibt, dass sie die Standard-Informationsspeichers werden kann. Clients können diese Einstellung außer Kraft setzen, indem Sie **IMAPISession::SetDefaultStore**aufrufen. Weitere Informationen finden Sie unter [IMAPISession::SetDefaultStore](imapisession-setdefaultstore.md).
+MAPI legt den Standardnachrichtenspeicher als ersten Nachrichtenspeicher im Profil fest, für den das STATUS_DEFAULT_STORE-Flag in seiner **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Eigenschaft festgelegt ist, was darauf hinweist, dass es sich um den Standardspeicher handeln kann. Clients können diese Einstellung außer Kraft setzen, indem Sie **IMAPISession:: SetDefaultStore**aufrufen. Weitere Informationen finden Sie unter [IMAPISession:: SetDefaultStore](imapisession-setdefaultstore.md).
   
-MAPI erstellt einen Transport-Auftrag für die Verarbeitung von eingehender und ausgehender Nachrichten. Wenn mehr als eine Adressbuchhierarchie für eine Nachricht eines bestimmten Typs registriert hat, verwendet MAPI angegebenen Reihenfolge um zu bestimmen, welcher Anbieter die Nachricht behandelt werden sollen. MAPI wird die Transport die Reihenfolge, in der die sind das Transportprotokoll Anbieter auf das Profil mit einer Ausnahme – die Transporten hinzugefügt wurden, die das Flag STATUS_XP_PREFER_LAST in ihrer **PR_RESOURCE_FLAGS** -Eigenschaft festgelegt in der Reihenfolge zuletzt positioniert, werden. Clients können die Reihenfolge der Transport durch Aufrufen von **IMsgServiceAdmin::MsgServiceTransportOrder**festgelegt. Weitere Informationen finden Sie unter [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md).
+MAPI erstellt einen Transportauftrag für die Verarbeitung von ausgehenden und eingehenden Nachrichten. Wenn mehr als ein Transportanbieter für eine Nachricht eines bestimmten Typs registriert ist, verwendet MAPI diese Reihenfolge, um zu bestimmen, welcher Anbieter die Nachricht behandeln soll. MAPI legt den Transportauftrag auf die Reihenfolge fest, in der die Transportanbieter dem Profil mit einer Ausnahme hinzugefügt wurden: die Übertragungen, die das STATUS_XP_PREFER_LAST-Flag in Ihrer **PR_RESOURCE_FLAGS** -Eigenschaft festgelegt haben, werden zuletzt in der Reihenfolge positioniert. Clients können den Transportauftrag durch Aufrufen von **IMsgServiceAdmin:: MsgServiceTransportOrder**festlegen. Weitere Informationen finden Sie unter [IMsgServiceAdmin:: MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md).
   
-Diese Richtlinien für die Sortierung Dienstanbieter und Message-Dienste können manchmal Konflikte auftreten. Wenn ein Konflikt vorliegt, sollte Ihr Code den Konflikt zu lösen. Die Mail-Systemsteuerung Anwendung können Sie um ein Profil zu prüfen, die Sie erstellt haben, um zu bestimmen, ob der Anbieter erwartungsgemäß konfiguriert wurden.
+Diese Richtlinien für die Bestellung von Dienstanbietern und Nachrichtendiensten können manchmal zu Konflikten kommen. Wenn ein Konflikt vorliegt, sollte der Code den Konflikt beheben. Sie können das Programm für die e-Mail-Systemsteuerung verwenden, um ein Profil zu prüfen, das Sie erstellt haben, um zu ermitteln, ob die Anbieter erwartungsgemäß konfiguriert wurden.
   
 

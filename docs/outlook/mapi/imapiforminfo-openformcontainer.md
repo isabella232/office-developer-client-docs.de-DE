@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 1d6eec99-59f9-4700-9b83-7f7f8787a9f8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 16e1d45806755bad8caff6847b0ecdea5b4ba78b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a76d0c554d7cf06aceeaa2925c199e45411b999d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342091"
 ---
 # <a name="imapiforminfoopenformcontainer"></a>IMAPIFormInfo::OpenFormContainer
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf den Formular-Container, in dem ein bestimmtes Formular installiert ist.
+Gibt einen Zeiger auf den Formular Container zurück, in dem ein bestimmtes Formular installiert ist.
   
 ```cpp
 HRESULT OpenFormContainer(
@@ -37,9 +37,9 @@ HRESULT OpenFormContainer(
 
  _ppformcontainer_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Form Container-Objekt.
+> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Container-Objekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   

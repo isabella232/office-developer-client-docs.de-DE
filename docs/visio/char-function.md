@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0803d5d3-d804-5ffe-604d-661b35d1fc01
 description: Gibt das ANSI-Zeichen für eine Zahl zurück.
-ms.openlocfilehash: 209614d20dd663ed2f7ca030c25500d43f925c95
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6f1c459892331ec30ad93bbc860fcd038e8f4732
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341909"
 ---
 # <a name="char-function"></a>CHAR Function
 
@@ -22,21 +22,21 @@ Gibt das ANSI-Zeichen für eine Zahl zurück.
   
 ## <a name="syntax"></a>Syntax
 
-CHAR (** *Anzahl* **) 
+CHAR (* * *Number* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die Anzahl, dessen ANSI-Zeichen, die Sie abrufen möchten.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Zahl, deren ANSI-Zeichen abgerufen werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Die resultierende Zeichenfolge wird einem Zeichen besteht. Der _Anzahl_ -Parameter muss eine ganze Zahl zwischen 1 und 255 (einschließlich) sein, oder die Funktion gibt einen Fehler zurück. 
+Die resultierende Zeichenfolge ist ein Zeichen lang. Der _Number_ -Parameter muss eine ganze Zahl zwischen 1 und 255 (einschließlich) sein, oder die Funktion gibt einen Fehler zurück. 
   
 ## <a name="example"></a>Beispiel
 
-CHAR(9) 
+CHAR (9) 
   
 Gibt das Tabulatorzeichen zurück. 
   

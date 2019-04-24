@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachLongPathname (kanonische Eigenschaft)
+title: Kanonische Pidtagattachlongpathname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3262cf95-48b5-4764-a96e-d752ce35b2dc
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: d8fe8525cf4fc11ac17ed6d73fb5d97e4f2d003e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339368"
 ---
-# <a name="pidtagattachlongpathname-canonical-property"></a>PidTagAttachLongPathname (kanonische Eigenschaft)
+# <a name="pidtagattachlongpathname-canonical-property"></a>Kanonische Pidtagattachlongpathname (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einer Anlage voll qualifizierte lange Pfad- und Dateiname. 
+Enthält den vollqualifizierten Long-Pfad und Dateinamen einer Anlage. 
   
 |||
 |:-----|:-----|
@@ -34,39 +34,39 @@ Enthält einer Anlage voll qualifizierte lange Pfad- und Dateiname.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften sind anwendbar, wenn Sie einen der Werte der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))-Eigenschaft verwenden, die Anlage per Verweis angeben: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE**oder **ATTACH_BY _REF_ONLY**. Plattformen, die Unterstützung von langen Dateinamen fest **PR_ATTACH_LONG_PATHNAME** oder zugeordnete Eigenschaften und **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) Eigenschaften beim Senden und **PR_ATTACH_LONG_PATHNAME sollten überprüfen **oder Eigenschaften zuerst beim empfangen. 
+Diese Eigenschaften sind anwendbar, wenn Sie einen der Werte der **PR_ATTACH_METHOD** ([pidtagattachmethod (](pidtagattachmethod-canonical-property.md))-Eigenschaft verwenden, die die Anlage anhand des Verweises anzeigen: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE**oder **ATTACH_BY _REF_ONLY**. Plattformen, die lange Dateinamen unterstützen, sollten sowohl **PR_ATTACH_LONG_PATHNAME** -als auch zugehörige Eigenschaften und **PR_ATTACH_PATHNAME** ([pidtagattachpathname (](pidtagattachpathname-canonical-property.md))-Eigenschaften beim Senden festlegen und PR_ATTACH_LONG_PATHNAME überprüfen. ** **oder zugeordnete Eigenschaften beim Empfang. 
   
-Die Clientanwendung sollte legen diese Eigenschaften einer vorgeschlagenen lange Pfad und Dateinamen für verwendet werden, wenn das Hostsystem Empfangen einer Nachricht lange Dateinamen unterstützt. Festlegen dieser Eigenschaften gibt an, dass die Anlagedaten nicht mit der Nachrichten enthalten ist, aber auf einem gemeinsamen Dateiserver verfügbar ist. 
+Die Clientanwendung sollte diese Eigenschaften auf einen vorgeschlagenen Long-Pfad und Dateinamen festlegen, die verwendet werden sollen, wenn der Hostcomputer, der eine Nachricht empfängt, lange filenames unterstützt. Durch Festlegen dieser Eigenschaften wird angegeben, dass die Anlagendaten nicht in der Nachricht enthalten sind, aber auf einem gemeinsamen Dateiserver verfügbar sind. 
   
-Im Gegensatz zu den Verzeichnissen und Dateinamen von **PR_ATTACH_PATHNAME**bereitgestellt sind diese Verzeichnisse und Dateinamen nicht auf ein Verzeichnis acht Zeichen oder Filename plus Erweiterung aus drei Zeichen beschränkt. Stattdessen kann jede Verzeichnis oder Filename werden bis zu 256 Zeichen lange, einschließlich Name, Erweiterung und Trennzeichen Zeitraum. Jedoch ist der gesamte Pfad auf 256 Zeichen beschränkt. 
+Im Gegensatz zu den von **PR_ATTACH_PATHNAME**bereitgestellten Verzeichnissen und Dateinamen sind diese Verzeichnisse und filenames nicht auf ein Verzeichnis oder einen filename mit acht Zeichen und eine Erweiterung mit drei Zeichen beschränkt. Stattdessen kann jedes Verzeichnis oder jeder Dateiname bis zu 256 Zeichen lang sein, einschließlich des Namens, der Erweiterung und des Trenn Zeitraums. Der Gesamt Pfad ist jedoch auf 256 Zeichen beschränkt. 
   
-Clients sollten in den meisten Fällen eine universelle Benennungskonvention (UNC) verwenden, wenn die Datei gemeinsam verwendet wird und einen absoluten Pfad verwenden sollte, wenn die Datei lokal ist.
+Clients sollten in den meisten Fällen eine Universal Naming Convention (UNC) verwenden, wenn die Datei freigegeben ist, und einen absoluten Pfad verwenden, wenn die Datei lokal ist.
   
-MAPI-funktioniert nur mit Pfaden und Dateinamen des ANSI-Zeichensatz. Clientanwendungen, die Pfade und Dateinamen in einem OEM-Zeichensatz verwenden, müssen diese in ANSI konvertieren, vor dem Aufruf von MAPI. 
+MAPI kann nur mit Pfaden und Dateinamen im ANSI-Zeichensatz verwendet werden. Client Anwendungen, die Pfade und Dateinamen in einem OEM-Zeichensatz verwenden, müssen Sie vor dem Aufrufen von MAPI in ANSI konvertieren. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften der codierten Nachrichten, deren Rechte verwaltet werden.
+> Gibt die Eigenschaften von Nachrichten mit verwalteten Rechten an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,5 +78,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

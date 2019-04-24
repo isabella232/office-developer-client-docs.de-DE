@@ -1,36 +1,36 @@
 ---
-title: Überwachen von Änderungen am Status von Verbindung mit einer offline-Status-add-in
+title: Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-in
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c482ddce-f2b6-222b-aa30-824b1c6f3b14
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d8385b2379f2fde8689ae2c7fc5d177af696f22e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d24a6d93943883a5503b57ef223d9be777af13d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338815"
 ---
-# <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>Überwachen von Änderungen am Status von Verbindung mit einer offline-Status-add-in
+# <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-in
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bevor Sie zum Überwachen von Änderungen am Status der Verbindung eine offline-Status-Add-in verwenden können, müssen Sie die Funktionen zum Einrichten und initialisieren Sie das Add-in implementieren. Weitere Informationen finden Sie unter [Einstellung Up eine Offline-Status-Add-in](setting-up-an-offline-state-add-in.md).
+Bevor Sie ein Offlinestatus-Add-in zum Überwachen von Verbindungsstatusänderungen verwenden können, müssen Sie Funktionen implementieren, um das Add-in einzurichten und zu initialisieren. Weitere Informationen finden Sie unter [Einrichten eines Offline Status-Add-ins](setting-up-an-offline-state-add-in.md).
   
-Nach dem Einrichten des offline-Status-add-Ins, müssen Sie die **[HrOpenOfflineObj](hropenofflineobj.md)** -Funktion verwenden, um eine offline-Objekt abzurufen. Verwenden diese offline-Objekts, können Sie Ihren Monitor Zustand initialisieren und dann abrufen und Festlegen des aktuellen Zustands. 
+Nachdem Sie das Offlinestatus-Add-in eingerichtet haben, müssen Sie die **[HrOpenOfflineObj](hropenofflineobj.md)** -Funktion verwenden, um ein Offlineobjekt abzurufen. Mithilfe dieses Offline Objekts können Sie den Status Monitor initialisieren und dann den aktuellen Status abrufen und festlegen. 
   
-In diesem Thema werden die folgenden Überwachungsfunktionen Status mithilfe der Offline-Status Beispiel-Add-in Codebeispielen veranschaulicht. Das Offline-Status Beispiel-Add-in ist ein COM-add-in, die ein Menü **Status als offline anzeigen** zu Outlook hinzugefügt und State-API verwendet. Über das Menü **Offline-Status** können Sie aktivieren oder Deaktivieren der Status der Überwachung, überprüfen Sie den aktuellen Status und ändern den aktuellen Status. Weitere Informationen zum Herunterladen und Installieren der Offline-Status Beispiel-Add-Ins finden Sie unter [Installieren der Offline-Status Beispiel-Add-Ins](installing-the-sample-offline-state-add-in.md). Weitere Informationen zur Status-API finden Sie unter [Über die Offline Zustand-API](about-the-offline-state-api.md).
+In diesem Thema werden diese Statusüberwachungsfunktionen mithilfe von Codebeispielen aus dem Offline Status-Add-in-Beispiel demonstriert. Das Beispiel für Offlinestatus-Add-in ist ein COM-Add-in, das ein **Offlinestatus** Menü zu Outlook hinzufügt und die OFFLINESTATUS-API verwendet. Über das Menü **Offline Status** können Sie die Statusüberwachung aktivieren oder deaktivieren, den aktuellen Status überprüfen und den aktuellen Status ändern. Weitere Informationen zum Herunterladen und Installieren des Offlinestatus-Add-In-Beispiels finden Sie unter [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md). Weitere Informationen zur Offlinestatus-API finden Sie unter [Informationen zur Offlinestatus-API](about-the-offline-state-api.md).
   
-Wenn das Add-in offline-Status getrennt ist, müssen Sie implementieren Funktionen zum ordnungsgemäß beendet und bereinigen Sie das Add-in. Weitere Informationen finden Sie unter [Trennen eines Status Offline-Add-Ins](disconnecting-an-offline-state-add-in.md).
+Wenn das Offlinestatus-Add-In getrennt wird, müssen Sie Funktionen implementieren, um das Add-In ordnungsgemäß zu beenden und zu bereinigen. Weitere Informationen finden Sie unter [Trennen eines Offline Status-Add-ins](disconnecting-an-offline-state-add-in.md).
   
-## <a name="open-offline-object-routine"></a>Open Offline-Objekt routine
+## <a name="open-offline-object-routine"></a>Offline Objekt Routine öffnen
 
-Für den Client benachrichtigt werden, wenn Verbindung Status geändert wird müssen Sie die Funktion **[HrOpenOfflineObj](hropenofflineobj.md)** aufrufen. Diese Funktion öffnet ein offline-Objekt, das **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** unterstützt. Die **HrOpenOfflineObj** -Funktion ist in der Headerdatei ConnectionState.h definiert. 
+Damit der Client beim Auftreten einer Verbindungsstatusänderung benachrichtigt wird, müssen Sie die **[HrOpenOfflineObj](hropenofflineobj.md)** -Funktion aufrufen. Diese Funktion öffnet ein Offline-Objekt, das **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** unterstützt. Die **HrOpenOfflineObj** -Funktion ist in der Headerdatei ConnectionState. h definiert. 
   
 > [!NOTE]
-> Die **HrOpenOfflineObj** -Funktion wird in der Headerdatei ImportProcs.h wie folgt deklariert: `extern HROPENOFFLINEOBJ* pfnHrOpenOfflineObj;`. 
+> Die **HrOpenOfflineObj** -Funktion wird in der Headerdatei ImportProcs. h wie folgt deklariert `extern HROPENOFFLINEOBJ* pfnHrOpenOfflineObj;`:. 
   
 ### <a name="hropenofflineobj-example"></a>HrOpenOfflineObj-Beispiel
 
@@ -44,11 +44,11 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
 );
 ```
 
-## <a name="initialize-monitor-routine"></a>Initialisieren der Monitor routine
+## <a name="initialize-monitor-routine"></a>Initialisieren der Überwachungsroutine
 
-Die `InitMonitor` Funktion ruft die **HrOpenOfflineObj** -Funktion. Die `InitMonitor` Funktion **CMyOfflineNotify** aufruft, damit Outlook Rückruf Benachrichtigungen an den Client senden kann, und den Rückruf über die Variable **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** registriert `AdviseInfo`.
+Die `InitMonitor` Funktion Ruft die **HrOpenOfflineObj** -Funktion auf. Die `InitMonitor` Funktion ruft **CMyOfflineNotify** auf, sodass Outlook Rückrufbenachrichtigungen an den Client senden und den Rückruf über die **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** -Variable `AdviseInfo`registrieren kann.
   
-### <a name="initmonitor-example"></a>InitMonitor()-Beispiel
+### <a name="initmonitor-example"></a>InitMonitor ()-Beispiel
 
 ```cpp
 void InitMonitor(LPCWSTR szProfile) 
@@ -115,11 +115,11 @@ void InitMonitor(LPCWSTR szProfile)
 }
 ```
 
-## <a name="get-current-state-routine"></a>Abrufen aktueller Zustand routine
+## <a name="get-current-state-routine"></a>Aktuelle Status Routine abrufen
 
-Die `GetCurrentState` Funktion ruft die **HrOpenOfflineObj** -Funktion, und klicken Sie dann das offline-Objekt verwendet, um den aktuellen Verbindungsstatus abzurufen. Der aktuelle Status wird zurückgegeben, der `ulCurState` Variable, die in verwendet wird die `CButtonEventHandler::Click` Funktion, um den aktuellen Status für den Benutzer anzuzeigen. 
+Die `GetCurrentState` Funktion Ruft die **HrOpenOfflineObj** -Funktion auf und verwendet dann das Offline-Objekt, um den aktuellen Verbindungsstatus abzurufen. Der aktuelle Status wird in der `ulCurState` Variablen zurückgegeben, die in der `CButtonEventHandler::Click` -Funktion verwendet wird, um den aktuellen Status für den Benutzer anzuzeigen. 
   
-### <a name="getcurrentstate-example"></a>GetCurrentState()-Beispiel
+### <a name="getcurrentstate-example"></a>GetCurrentState ()-Beispiel
 
 ```cpp
 ULONG (LPCWSTR szProfile) 
@@ -172,11 +172,11 @@ ULONG (LPCWSTR szProfile)
 }
 ```
 
-## <a name="set-current-state-routine"></a>Set Aktueller Zustand routine
+## <a name="set-current-state-routine"></a>Aktuelle Status Routine festlegen
 
-Die `SetCurrentState` Funktion ruft die **HrOpenOfflineObj** -Funktion, und klicken Sie dann das offline-Objekt verwendet, um den aktuellen Verbindungsstatus festzulegen. Die `CButtonEventHandler::Click` Funktionsaufrufe der `SetCurrentState` -Funktion und den neuen Zustand übergeben wird über die `ulState` Variable. 
+Die `SetCurrentState` Funktion Ruft die **HrOpenOfflineObj** -Funktion auf und verwendet dann das Offline-Objekt, um den aktuellen Verbindungsstatus festzulegen. Die `CButtonEventHandler::Click` Funktion Ruft die `SetCurrentState` Funktion auf, und der neue Status wird durch die `ulState` Variable übergeben. 
   
-### <a name="setcurrentstate-example"></a>SetCurrentState()-Beispiel
+### <a name="setcurrentstate-example"></a>SetCurrentState ()-Beispiel
 
 ```cpp
 HRESULT SetCurrentState(LPCWSTR szProfile, ULONG ulFlags, ULONG ulState) 
@@ -239,11 +239,11 @@ HRESULT SetCurrentState(LPCWSTR szProfile, ULONG ulFlags, ULONG ulState)
 }
 ```
 
-## <a name="notification-routine"></a>Benachrichtigungsroutine
+## <a name="notification-routine"></a>Benachrichtigungs Routine
 
-Die Funktion **[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)** wird von Outlook zum Senden von Benachrichtigungen bei Änderungen in den Verbindungsstatus an einen Client verwendet. 
+Die **[IMAPIOfflineNotify:: notify](imapiofflinenotify-notify.md)** -Funktion wird von Outlook zum Senden von Benachrichtigungen an einen Client verwendet, wenn sich Änderungen im Verbindungsstatus befinden. 
   
-### <a name="cmyofflinenotifynotify-example"></a>CMyOfflineNotify::Notify()-Beispiel
+### <a name="cmyofflinenotifynotify-example"></a>CMyOfflineNotify:: notify ()-Beispiel
 
 ```cpp
 void CMyOfflineNotify::Notify(const MAPIOFFLINE_NOTIFY *pNotifyInfo) 
@@ -308,9 +308,9 @@ void CMyOfflineNotify::Notify(const MAPIOFFLINE_NOTIFY *pNotifyInfo)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
+- [Informationen zur Offlinestatus-API](about-the-offline-state-api.md)
 - [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
 - [Informationen zum Offlinestatus-Add-In-Beispiel](about-the-sample-offline-state-add-in.md)
 - [Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md)
-- [Trennen eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
+- [Trennen eines Offline Status-Add-ins](disconnecting-an-offline-state-add-in.md)
 

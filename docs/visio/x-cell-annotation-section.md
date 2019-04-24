@@ -8,35 +8,35 @@ f1_keywords:
 - Vis_DSS.chm1028735
 localization_priority: Normal
 ms.assetid: f9db8623-9fcf-7037-2d11-d509f463025d
-description: Die x - Koordinate des kommentarmarkers in Seitenkoordinaten.
-ms.openlocfilehash: 454c28c6f15c705148155751d533a516aae7d2d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Die x-Koordinate des Kommentarmarkers in Seitenkoordinaten.
+ms.openlocfilehash: fdd9e2850a3285a2fcf4cc05fa056accd71052a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341308"
 ---
-# <a name="x-cell-annotation-section"></a>X Cell (Annotation Section)
+# <a name="x-cell-annotation-section"></a>Zelle "X" (Abschnitt "Annotation")
 
-Die *X* -Koordinate des kommentarmarkers in Seitenkoordinaten. 
+Die *x* -Koordinate des Kommentarmarkers in Seitenkoordinaten. 
   
 > [!NOTE]
-> Diese Zelle wird für Kommentare zur Überwachung nur, wenn eine VSD-Datei in Microsoft Visio 2013 öffnen oder eine vsdx-Datei im VSD-Format speichern. Es wird nicht zum Nachverfolgen von Kommentaren in .vsdx Dokumente in Visio 2013 verwendet. 
+> Diese Zelle wird zum Nachverfolgen von Kommentaren nur beim Öffnen einer VSD-Datei in Microsoft Visio 2013 oder beim Speichern einer. vsdx-Datei im VSD-Dateiformat verwendet. Sie wird nicht zum Nachverfolgen von Kommentaren in vsdx-Dokumenten in Visio 2013 verwendet. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle X aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle X aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Annotation.X [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Annotation. X [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle X aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle X aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionAnnotation** <br/> |
-| Zeilenindex:  <br/> |**VisRowAnnotation** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> |**visAnnotationX** <br/> |
+| Zeilenindex:  <br/> |**visRowAnnotation** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visAnnotationX** <br/> |
    
 

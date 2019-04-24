@@ -1,5 +1,5 @@
 ---
-title: OSC-Anbieter XML-Beispielen
+title: OSC-Anbieter-XML-Beispiele
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,26 +7,26 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 65d0c111-b090-4b1b-a747-44285b7c16b2
-description: Dieser Abschnitt enthält XML-Beispielen, in denen die Funktionen, Freunde und ActivityFeed XML-Elemente, die Einhaltung des Outlook Social Connector (OSC)-Anbieter-XML-Schemas verwendet.
-ms.openlocfilehash: d740ba5528e9e9de384d748f3b6a18e4f0831051
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieser Abschnitt enthält XML-Beispiele, in denen die XML-Elemente capabilities, friends und activityFeed verwendet werden, die dem XML-Schema des Outlook Social Connector (OSC)-Anbieters entsprechen.
+ms.openlocfilehash: fe8d88d70a8fc593016f4aa6ac5acb0c79fcbf30
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339585"
 ---
-# <a name="osc-provider-xml-examples"></a>OSC-Anbieter XML-Beispielen
+# <a name="osc-provider-xml-examples"></a>OSC-Anbieter-XML-Beispiele
 
-Dieser Abschnitt enthält XML-Beispielen, in denen die **Funktionen**, **Freunde**und **ActivityFeed** XML-Elemente, die Einhaltung des Outlook Social Connector (OSC)-Anbieter-XML-Schemas verwendet. 
+Dieser Abschnitt enthält XML-Beispiele, in denen die XML-Elemente **Capabilities**, **friends**und **activityFeed** verwendet werden, die dem XML-Schema des Outlook Social Connector (OSC)-Anbieters entsprechen. 
   
-- [Funktionen XML-Beispiel](capabilities-xml-example.md) zeigt die **Funktionen** XML ein OSC-Anbieter angeben, die Funktionen und Anforderungen für das osc bilden. 
+- [Capabilities-XML-Beispiel](capabilities-xml-example.md) zeigt die XML- **Funktionen** eines osc-Anbieters, der seine Funktionen und Anforderungen für den osc angibt. 
     
-- [Freunde XML-Beispiel](friends-xml-example.md) zeigt die **Freunde** XML für zwei Personen im sozialen Netzwerk. 
+- [Freundes-XML-Beispiel](friends-xml-example.md) zeigt die **Freunde** -XML für zwei Personen im sozialen Netzwerk. 
     
-- [Aktivität Feed XML-Beispiel](activity-feed-xml-example.md) zeigt **ActivityFeed** XML-Code der vier Aktivitäten: zwei Bild Updates, Statusinformationen und Blogbeiträgen profile. Der XML-Code gibt zudem drei Aktivität Anzeigevorlagen für den zugehörigen Aktivitäten anzeigen. 
+- [XML-Beispiel für Aktivitätsfeeds](activity-feed-xml-example.md) zeigt den **activityFeed** -XML-Code mit vier Aktivitäten an: zwei Profilbild Aktualisierungen, eine Statusaktualisierung und ein Blogbeitrag. Der XML-Code gibt außerdem drei Aktivitätsanzeige Vorlagen für die Anzeige der entsprechenden Aktivitäten an. 
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook Connector für soziale Netzwerke Anbieter XML-Schema](outlook-social-connector-provider-xml-schema.md)
+- [XML-Schema des Anbieters für soziale Netzwerke in Outlook](outlook-social-connector-provider-xml-schema.md)
 - [Entwickeln eines Providers mit dem OSC-XML-Schema](developing-a-provider-with-the-osc-xml-schema.md)
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 923fb879-5f32-4fe2-8920-2ec17002256c
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b3850da2917dbf463590643b9e7ba8420f4ea219
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a623ef24f76dae93bfc13e6613e885a120f3278e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341286"
 ---
 # <a name="imapisupportwrapstoreentryid"></a>IMAPISupport::WrapStoreEntryID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert einen Nachrichtenspeicher interne Eintrags-ID auf einen Eintrag Bezeichner MAPI-Standardformat.
+Konvertiert die interne Eintrags-ID eines Nachrichtenspeichers in eine Eintrags-ID im MAPI-Standardformat.
   
 ```cpp
 HRESULT WrapStoreEntryID(
@@ -40,37 +40,37 @@ LPENTRYID FAR * lppWrappedEntry
 
  _cbOrigEntry_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpOrigEntry_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpOrigEntry_ -Parameter verwiesen wird. 
     
  _lpOrigEntry_
   
-> [in] Ein Zeiger auf die private Eintrags-ID für den Nachrichtenspeicher.
+> in Ein Zeiger auf die ID des privaten Eintrags für den Nachrichtenspeicher.
     
  _lpcbWrappedEntry_
   
-> [out] Ein Zeiger auf die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LppWrappedEntry_ verwiesen. 
+> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppWrappedEntry_ -Parameter verwiesen wird. 
     
  _lppWrappedEntry_
   
-> [out] Ein Zeiger auf einen Zeiger auf den Eintrag gepackten Bezeichner.
+> Out Ein Zeiger auf einen Zeiger auf den eingebundenen Eintragsbezeichner.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Eintrags-ID wurde erfolgreich umbrochen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::WrapStoreEntryID** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter verwenden **WrapStoreEntryID** MAPI einen Eintrag Bezeichner für einen Nachrichtenspeicher zu erstellen, der den Speicher interne Eintrags-ID umbrochen wird. 
+Die **IMAPISupport:: WrapStoreEntryID** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter verwenden **WrapStoreEntryID** , um MAPI eine Eintrags-ID für einen Nachrichtenspeicher zu generieren, der die interne Eintrags-ID des Speichers umschließt. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn ein Client den Nachrichtenspeicher [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode aufruft, um die **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))-Eigenschaft und Nachrichtenspeichers abzurufen verwendet eine Eintrags-ID in einem privaten Format, rufen Sie **WrapStoreEntryID **und die Eintrags-ID auf das durch den Parameter _LppWrappedEntry_ zurückzukehren. 
+Wenn ein Client die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Nachrichtenspeichers zum Abrufen seiner **PR_STORE_ENTRYID** ([pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md))-Eigenschaft aufruft und Ihr Nachrichtenspeicher eine Eintrags-ID in einem privaten Format verwendet, rufen Sie WrapStoreEntryID auf. ** **, und geben Sie die Eintrags-ID zurück, auf die durch den _lppWrappedEntry_ -Parameter verwiesen wird. 
   
-Aufrufe der Methoden [IMSProvider::Logon](imsprovider-logon.md) und [IMSLogon::CompareEntryIDs](imslogon-compareentryids.md) abrufen immer private Eintrags-ID für den Speicher. Die gepackten Version wird nur zwischen Clientanwendungen und MAPI verwendet. 
+Aufrufe der [IMSProvider:: Login](imsprovider-logon.md) -und [IMSLogon:: CompareEntryIDs](imslogon-compareentryids.md) -Methoden rufen immer den privaten Eintragsbezeichner des Speichers ab; die Wrapped-Version wird nur zwischen Clientanwendungen und MAPI verwendet. 
   
-Freigeben des Speichers für die Eintrags-ID mithilfe der Funktion [MAPIFreeBuffer](mapifreebuffer.md) Sie abschließend mithilfe der Eintrags-ID auf durch den Parameter _LppWrappedEntry_ zeigt. 
+Freigeben des Speichers für die Eintrags-ID, auf die durch den _lppWrappedEntry_ -Parameter verwiesen wird, mithilfe der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, wenn Sie die Eintrags-ID nicht mehr verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: ab302bfd-5cff-49b4-b0d2-308ae5af478d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5380b6541e609c17a9005c3390c6d5db06155306
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bf072aba27c90b7cea80c464e17fafb47524b695
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342084"
 ---
 # <a name="imapiformmgrcalcformpropset"></a>IMAPIFormMgr::CalcFormPropSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein Array von Eigenschaften, die eine Gruppe von Formularen verwendet.
+Gibt ein Array der Eigenschaften zurück, die eine Gruppe von Formularen verwendet.
   
 ```cpp
 HRESULT CalcFormPropSet(
@@ -39,45 +39,45 @@ HRESULT CalcFormPropSet(
 
  _pfrminfoarray_
   
-> [in] Ein Zeiger auf ein Array von Formular Informationen-Objekten, mit denen die Formulare für die Eigenschaften zurückgegeben.
+> in Ein Zeiger auf ein Array von Formular Informationsobjekten, die die Formulare identifizieren, für die Eigenschaften zurückgegeben werden sollen.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Array im Parameter _PpResults_ -Eigenschaft zurückgegeben werden. Die folgenden Kennzeichen können festgelegt werden: 
+> in Eine Bitmaske von Flags, die steuert, wie das Eigenschaftenarray im _ppResults_ -Parameter zurückgegeben wird. Die folgenden Flags können festgelegt werden: 
     
 FORMPROPSET_INTERSECTION 
   
-> Das zurückgegebene Array enthält die Schnittmenge der Eigenschaften des Formulars.
+> Das zurückgegebene Array enthält den Schnittpunkt der Eigenschaften des Formulars.
     
 FORMPROPSET_UNION 
   
-> Das zurückgegebene Array enthält die Union der Eigenschaften des Formulars.
+> Das zurückgegebene Array enthält die Vereinigung der Eigenschaften des Formulars.
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgen, die in das Array zurückgegeben werden im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die im Array zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _ppResults_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur, die Eigenschaften enthält, die die Formularen verwendet werden. 
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur, die die Eigenschaften enthält, die von den Formularen verwendet werden. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormMgr::CalcFormPropSet** -Methode, um ein Array der Eigenschaften abzurufen, die eine Gruppe von Formularen verwendet. **CalcFormPropSet** übernimmt entweder eine Schnittmenge oder Kombination dieser Formulare-Eigenschaft festgelegt, je nachdem das Flag festlegen in der _UlFlags_ -Parameter, und es gibt eine **SMAPIFormPropArray** -Struktur, die resultierende Gruppe von enthält Eigenschaften. 
+Formular Betrachter rufen die **IMAPIFormMgr:: CalcFormPropSet** -Methode auf, um ein Array der Eigenschaften abzurufen, die eine Gruppe von Formularen verwendet. **CalcFormPropSet** nimmt entweder einen Schnittpunkt oder eine Vereinigung dieser Formulareigenschaften Sätze an, je nach dem im _ulFlags_ -Parameter festgelegten Flag und gibt eine **SMAPIFormPropArray** -Struktur zurück, die die resultierende Gruppe von Eigenschaften. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Formular Viewer die Option MAPI_UNICODE im Parameter _UlFlags_ übergibt, sollten alle Zeichenfolgen als Unicode-Zeichenfolgen zurückgegeben werden soll. Formular Bibliothek Anbieter, die keine für Unicode-Zeichenfolgen Unterstützung sollte MAPI_E_BAD_CHARWIDTH zurückgegeben, wenn der Parameter MAPI_UNICODE übergeben wird. 
+Wenn ein Formular Betrachter das MAPI_UNICODE-Flag im _ulFlags_ -Parameter übergibt, sollten alle Zeichenfolgen als Unicode-Zeichenfolgen zurückgegeben werden. Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

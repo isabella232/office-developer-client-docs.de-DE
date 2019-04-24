@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 4daeddd7-3f0c-4178-ae8d-f74814090d40
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 30f55044327eecee3ab0d8ee2509d7132ab6e8ee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 418056f7222d5ab05f43a3661c1811bf2ae15be8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342112"
 ---
 # <a name="imapiforminfomakeiconfrombinary"></a>IMAPIFormInfo::MakeIconFromBinary
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein Symbol aus der Symboleigenschaften eines Formulars an.
+Erstellt ein Symbol aus einer der Symbol Eigenschaften eines Formulars.
   
 ```cpp
 HRESULT MakeIconFromBinary(
@@ -38,21 +38,21 @@ HRESULT MakeIconFromBinary(
 
  _nPropID_
   
-> [in] Ein Bezeichner für ein Icon-Eigenschaft.
+> in Ein Eigenschaftenbezeichner für eine Icon-Eigenschaft.
     
  _phicon_
   
-> [out] Ein Zeiger auf das zurückgegebene Symbol.
+> Out Ein Zeiger auf das zurückgegebene Symbol.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen rufen Sie die **IMAPIFormInfo::MakeIconFromBinary** -Methode, um ein Symbol aus der Symboleigenschaften eines Formulars zu erstellen. In den _nPropID_ -Parameter akzeptiert **MakeIconFromBinary** der Bezeichner der der Symboleigenschaften eines Formulars. Mit dieser Eigenschaftenbezeichner, erstellt er ein Symbol, das in der Tabelle angezeigt werden kann, die Eigenschaftenspalten für Symbole enthalten. 
+Client Anwendungen rufen die **IMAPIFormInfo:: MakeIconFromBinary** -Methode auf, um ein Symbol aus einer der Symbol Eigenschaften eines Formulars zu erstellen. Im _nPropID_ -Parameter übernimmt **MakeIconFromBinary** den Eigenschaftenbezeichner einer der Symbol Eigenschaften eines Formulars. Mit dieser Eigenschaftskennung wird ein Symbol erstellt, das in Tabellen Ansichten angezeigt werden kann, die Eigenschaftsspalten für Symbole enthalten. 
   
 ## <a name="see-also"></a>Siehe auch
 

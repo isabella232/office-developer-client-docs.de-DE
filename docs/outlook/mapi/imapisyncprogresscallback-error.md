@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 4860992d-65d7-4cb0-a874-ceccb153dbac
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8cff424e3b589af292e56cef1ca19198e9c80d1f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 80010ca19999ba519f051e914f02f240abb524e2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341335"
 ---
 # <a name="imapisyncprogresscallbackerror"></a>IMAPISyncProgressCallback::Error
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ausführliche Informationen, die im Dialogfeld Senden/Empfangen angezeigt werden. Wenn während der Synchronisierung Fehler auftreten, ruft der Anbieter diese Funktion.
+Stellt Details bereit, die im Dialogfeld senden/empfangen angezeigt werden. Wenn während der Synchronisierung Fehler auftreten, ruft der Informationsspeicher Anbieter diese Funktion auf.
   
 ```cpp
 HRESULT Error(
@@ -42,9 +42,9 @@ HRESULT Error(
     
  **pwcszErrorStr**
   
-> Ein Zeiger auf die Zeichenfolge, die die anzuzeigende Fehler zugeordnet ist.
+> Ein Zeiger auf die Zeichenfolge, die mit dem Fehler verknüpft ist, der angezeigt werden soll.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   

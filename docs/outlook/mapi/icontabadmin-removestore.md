@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 2a5fcf5c-8a5a-4774-b8c9-1ac1ff27947d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2ec8a28dc52e2aa1f1fa63410b6bd6c13fb5bd57
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4865c1c867dd73514ab22ac4e8da628caf154ee7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339270"
 ---
 # <a name="icontabadminremovestore"></a>IContabAdmin::RemoveStore
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt den Kontakt Adresse Buch (CAB) mit der angegebenen Eintrags-ID aus der Adressbuchhierarchie angegeben.
+Entfernt das von der angegebenen Eintrags-ID angegebene Kontakt Adressbuch (CAB) aus der Adressbuchhierarchie.
   
 ```cpp
 HRESULT RemoveStore(
@@ -38,10 +38,10 @@ LPENTRYID lpEntryID
 
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Objekts zu öffnen.
+> in Ein Zeiger auf die Eintrags-ID des zu öffnenden Objekts.
     
 

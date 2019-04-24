@@ -1,5 +1,5 @@
 ---
-title: Senden über Nachrichtendomänen
+title: Senden über Messaging-Domänen hinweg
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,23 +8,23 @@ api_type:
 - COM
 ms.assetid: 65594253-66cd-486a-aa5b-0bc719f761f0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 40c12a4010d51cb433b62558b5fe1d12afb583dd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ddbaa4aeacf17f2c266ccc0ff963d005f9e403ec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339718"
 ---
-# <a name="sending-across-messaging-domains"></a>Senden über Nachrichtendomänen
+# <a name="sending-across-messaging-domains"></a>Senden über Messaging-Domänen hinweg
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine messaging Domäne stellt eine oder mehrere messaging-Systemen, die ein gemeinsames Adresse Format dar. Die Kommunikation über mehrere Domänen messaging umfasst eine Nachricht in das Format der ursprünglichen messaging-Domäne in das Format des der Zieldomäne messaging übersetzen. Da nicht alle Adressformate kompatibel sind, ist ein Gateway erforderlich, um die Adressinformationen sowie das Format der Quelle in das Zielformat übersetzt wird. Um die Gültigkeit messaging domänenübergreifend sicherzustellen, speichern Clientanwendungen wichtige Adressinformationen in MAPI-Eigenschaften. Führen Sie darüber hinaus Gateways die Übersetzung, überprüft die Eigenschaften bekanntermaßen benötigen Übersetzung und ändern Sie diese in ein Format, die die Zieldomäne messaging verwenden können.
+Eine Messaging Domäne stellt ein oder mehrere Messagingsysteme dar, die ein gemeinsames Adressformat aufweisen. Die Kommunikation über mehrere Messaging Domänen umfasst die Übersetzung einer Nachricht, die im Format der ursprünglichen Messaging Domäne gesendet wurde, in das Format der Ziel Messaging Domäne. Da nicht alle Adressformate kompatibel sind, ist ein Gateway erforderlich, um die Adressierungsinformationen aus dem Quellformat in das Zielformat zu übersetzen. Um die Gültigkeit über Messaging-Domänen hinweg sicherzustellen, speichern Clientanwendungen wichtige Adressinformationen in MAPI-Eigenschaften. Darüber hinaus führen Gateways die Übersetzung aus, untersuchen die Eigenschaften, die Übersetzung benötigt werden, und ändern Sie in ein Format, das von der Ziel Messaging Domäne verwendet werden kann.
   
-Bisher zulässig MAPI diese Adressinformationen, nur die Benutzer zugeordnet werden soll, die aktuelle Empfängerliste eine Nachricht umfassen. Die Beschreibung jedes Mitglied die Empfängerliste Eigenschaften vorgenommen wurden die erforderliche Übersetzung vom Gateway messaging domänenübergreifend Gültigkeit sicherzustellen. Einige Anwendungen erfordern jedoch, dass ihre Nachrichten enthalten Informationen zu Benutzern, die möglicherweise Empfänger in der Vergangenheit wurden Adressierung, Empfänger in der Zukunft werden oder nie Empfänger werden. Beispielsweise einbetten routing bereit, mit die Senden von Nachrichten an eine Gruppe von Benutzern in einer bestimmten Reihenfolge reagieren auf Informationen über diese Benutzer in den Nachrichten. Die eingebettete Informationen umfasst in der Regel die Adresse und den Adresstyp zukünftige Empfänger, und möglicherweise auch ihre Rollen und Positionen in der Reihenfolge der Weiterleitung, deren Namen und eine oder mehrere binäre Kennungen pro Empfänger.
+Zuvor erlaubte MAPI, dass diese Adressinformationen nur den Benutzern zugeordnet werden, die die aktuelle Empfängerliste einer Nachricht enthalten. Die Eigenschaften, die jedes Mitglied der Empfängerliste beschreiben, wurden der erforderlichen Übersetzung durch das Gateway unterzogen, um die Gültigkeit zwischen Messaging Domänen sicherzustellen. Einige Anwendungen erfordern jedoch, dass Ihre Nachrichten Adressinformationen zu Benutzern aufweisen, die möglicherweise in der Vergangenheit Empfänger waren, die Empfänger in der Zukunft oder nie Empfänger sind. Routing Anwendungen, die Nachrichten in einer bestimmten Reihenfolge an eine Gruppe von Benutzern senden, können beispielsweise Adressinformationen zu diesen Benutzern in die Nachrichten einbetten. Die eingebetteten Informationen enthalten in der Regel den Adress-und Adresstyp der zukünftigen Empfänger, und möglicherweise auch Ihre Rollen und Positionen in der Routing Reihenfolge, deren Namen und mindestens einen binären Bezeichner pro Empfänger.
   
-Um Nachrichten mit Informationen zu diesen nonrecipient Benutzer aktivieren möchten, enthält die MAPI nun eine Strategie zum sicherstellen, dass diese nonrecipient Informationen auch ordnungsgemäß über messaging Domänen übersetzt wird. Diese Strategie basiert auf das Konzept der Gateway sämtliche Eigenschaften.
+Damit Nachrichten Informationen zu diesen nicht Empfänger Benutzern enthalten, enthält MAPI jetzt eine Strategie, um sicherzustellen, dass diese nicht Empfängerinformationen auch über Messaging Domänen korrekt übersetzt werden. Diese Strategie basiert auf dem Konzept der Gateway-zuzuordnende-Eigenschaften.
   
 

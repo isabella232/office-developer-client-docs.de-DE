@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b6951a92-f32a-5829-5e07-b277b7934df3
 description: Sie können in Formeln Operationen mit Werten für Datum, Uhrzeit und Dauer ausführen. In Microsoft Visio können Ausdrücke für Datum und Uhrzeit als einzelne Werte ausgewertet werden. Bei einem Ausdruck für Daume und Uhrzeit handelt es sich um einen beliebigen Ausdruck, der üblicherweise als Datum und/oder Uhrzeit erkannt wird, oder um einen Bezug auf eine Zelle mit Informationen zu Datum und/oder Uhrzeit. Dazu gehören Zeichenfolgen und Zahlen, die wie Datums- und Uhrzeitangaben aussehen sowie Werte für Datum und Uhrzeit, die von Funktionen zurückgegeben werden.
-ms.openlocfilehash: 936055ed6d13b75bd0c42c95564046a76082ec0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 56de919fa713c0948bb87f794d1c6e0a5d727aef
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341580"
 ---
-# <a name="about-date-time-and-duration-values"></a>Informationen zu Datum, Uhrzeit und Dauerwerten
+# <a name="about-date-time-and-duration-values"></a>Informationen zu Werten für Datum, Uhrzeit und Dauer
 
 Sie können in Formeln Operationen mit Werten für Datum, Uhrzeit und Dauer ausführen. In Microsoft Visio können Ausdrücke für Datum und Uhrzeit als einzelne Werte ausgewertet werden. Bei einem Ausdruck für Daume und Uhrzeit handelt es sich um einen beliebigen Ausdruck, der üblicherweise als Datum und/oder Uhrzeit erkannt wird, oder um einen Bezug auf eine Zelle mit Informationen zu Datum und/oder Uhrzeit. Dazu gehören Zeichenfolgen und Zahlen, die wie Datums- und Uhrzeitangaben aussehen sowie Werte für Datum und Uhrzeit, die von Funktionen zurückgegeben werden.
   
@@ -38,29 +38,29 @@ Um Datums- und Zeitangaben in einem Ausdruck (anstelle einer einzelnen Konstante
 
 ||||
 |:-----|:-----|:-----|
-| "3:45"  <br/> | "3: 45:27"  <br/> | "7a"  <br/> |
+| "3:45"  <br/> | "3:45:27"  <br/> | 7a  <br/> |
 | "7 am"  <br/> | "7 p"  <br/> | "7:30 PM"  <br/> |
    
 ## <a name="date-and-time-functions"></a>Datums- und Uhrzeitfunktionen
 
 |**Funktion**|**Beschreibung**|
 |:-----|:-----|
-|[DATUM](date-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Datumswert.  <br/> |
+|[Datum](date-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Datumswert.  <br/> |
 |[DATETIME](datetime-function.md) <br/> | Konvertiert eine Zeichenfolge in einen Datums- oder Uhrzeitwert.  <br/> |
-|[DATWERT](datevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Datumswert.  <br/> |
+|[DATEVALUE](datevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Datumswert.  <br/> |
 |[NOW](now-function-visioshapesheet.md) <br/> | Gibt das aktuelle Systemdatum als Datums- und Uhrzeitwert zurück.  <br/> |
-|[ZEIT](time-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Uhrzeitwert.  <br/> |
-|[ZEITWERT](timevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Uhrzeitwert.  <br/> |
-|[TAG](day-function-visioshapesheet.md) <br/> | Gibt die Tageskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[Zeit](time-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Uhrzeitwert.  <br/> |
+|[TIMEVALUE](timevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Uhrzeitwert.  <br/> |
+|[Tag](day-function-visioshapesheet.md) <br/> | Gibt die Tageskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
 |[DAYOFYEAR](dayofyear-function.md) <br/> | Gibt den Tag des Jahres in sequenzieller Zählung in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[STUNDE](hour-function-visioshapesheet.md) <br/> | Gibt die Stundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[Stunde](hour-function-visioshapesheet.md) <br/> | Gibt die Stundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
 |[MINUTE](minute-function-visioshapesheet.md) <br/> | Gibt die Minutenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[MONAT](month-function-visioshapesheet.md) <br/> | Gibt die Monatskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[SEKUNDE](second-function-visioshapesheet.md) <br/> | Gibt die Sekundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[WEEKDAY](weekday-function-visioshapesheet.md) <br/> | Gibt die Zahl für den Wochentag in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[JAHR](year-function-visioshapesheet.md) <br/> | Gibt die Jahreskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[Monat](month-function-visioshapesheet.md) <br/> | Gibt die Monatskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[ZWEITEN](second-function-visioshapesheet.md) <br/> | Gibt die Sekundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[Wochentag](weekday-function-visioshapesheet.md) <br/> | Gibt die Zahl für den Wochentag in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[Jahr](year-function-visioshapesheet.md) <br/> | Gibt die Jahreskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
    
-## <a name="duration"></a>Duration
+## <a name="duration"></a>Dauer
 
 Sie können Operationen durchführen, mit denen die Dauer oder die vergangene Zeit berechnet wird. Die Dauer wird intern als Tage und Bruchteil eines Tages gespeichert. Beispielsweise wird 1 vergangene Woche, 7 vergangene Tage und 168 vergangene Stunden intern als 7,0 gespeichert, jedoch in den entsprechenden Einheiten angezeigt.
   

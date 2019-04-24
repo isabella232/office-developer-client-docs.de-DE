@@ -1,5 +1,5 @@
 ---
-title: Kurzfristige-Eintragsbezeichner
+title: Kurzfristige Eintragsbezeichner
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,39 +8,39 @@ api_type:
 - COM
 ms.assetid: 948e007a-ad68-4abd-9720-204c6584beb5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 03352b55589138d406ad3e4ee0756fc44bca8c78
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1b361e025b631418eb63c5c74da264beadec2974
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339193"
 ---
-# <a name="short-term-entry-identifiers"></a>Kurzfristige-Eintragsbezeichner
+# <a name="short-term-entry-identifiers"></a>Kurzfristige Eintragsbezeichner
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kurzfristige Eintrags-ID wird von einem Dienstanbieter zu einem Objekt zugewiesen, wenn der Bezeichner schnell erstellt werden muss und muss nicht über die Zeit oder Abstand letzten. Die Eindeutigkeit von kurzfristige Eintrags-ID ist nur während der Lebensdauer der aktuellen Sitzung auf der aktuellen Arbeitsstation garantiert. In der Regel ist eine kurzfristige Eintrags-ID gültig nur, bis das Objekt, das es darstellt freigegeben wird. 
+Eine kurzfristige Eintrags-ID wird einem Objekt von einem Dienstanbieter zugewiesen, wenn der Bezeichner schnell erstellt werden muss und nicht über die Zeit oder den Abstand zu halten ist. Die Eindeutigkeit einer kurzfristigen Eintrags-ID wird nur über die Lebensdauer der aktuellen Sitzung auf der aktuellen Arbeitsstation gewährleistet. NormalerWeise ist eine kurzfristige Eintrags-ID nur gültig, bis das Objekt, das es darstellt, freigegeben wird. 
   
-Kurzfristige-Eintragsbezeichner zugewiesenen auf Zeilen in Tabellen und den Einträgen in Dialogfeldern, in dem sie Daten zum Durchsuchen von schnell bereitstellen benötigt wird. Beispielsweise weisen Nachricht Anbieter kurzfristige-Eintragsbezeichner an Zeilen von Nachrichten in einer Inhaltstabelle und Empfänger in einer Empfängertabelle. 
+Kurzfristige Eintrags-IDs werden Zeilen in Tabellen und Einträgen in Dialogfeldern zugewiesen, in denen Daten schnell zum Browsen bereitgestellt werden müssen. Beispielsweise weisen Nachrichtenspeicher Anbieter kurzfristige Eintragsbezeichner zu Zeilen von Nachrichten in einer Inhaltstabelle und Empfängern in einer Recipients-Tabelle zu. 
 
-Clients können diese kurzfristige-Eintragsbezeichner verwenden, um die Zeilen der Tabelle dargestellte Objekte zu öffnen. Im Gegensatz zu langfristige Eintragsbezeichner, die mit einer der Methoden **OpenEntry** verwendet werden können, sollte kurzfristige-Eintragsbezeichner mit dem Container **OpenEntry** -Methode verwendet werden. 
+Clients können diese kurzfristigen Eintragsbezeichner verwenden, um die Objekte zu öffnen, die von den Tabellenzeilen dargestellt werden. Im Gegensatz zu langfristigen Eintrags Bezeichnern, die mit einer der openEntry **** -Methoden verwendet werden können, sollten jedoch kurzfristige Eintragsbezeichner mit der OpenEntry-Methode des Containers verwendet werden. **** 
   
-## <a name="implementing-short-term-entry-identifiers"></a>Implementieren von kurzfristige-Eintragsbezeichner
+## <a name="implementing-short-term-entry-identifiers"></a>Implementieren von kurzfristigen Eintrags Bezeichnern
 
-Die am häufigsten verwendeten Methoden, um kurzfristige-Eintragsbezeichner implementieren umfassen Folgendes:
+Die gängigsten Methoden zum Implementieren von kurzfristigen Eintrags-IDs sind folgende:
   
-- Stellt die kurzfristige-Eintragsbezeichner dieselbe wie die langfristige Bezeichner, wobei alle Kennzeichen nicht festgelegt. 
+- Festlegen, dass die kurzfristigen Eintragsbezeichner mit den langfristigen Bezeichnern identisch sind, sodass alle Flags nicht mehr verfügbar sind. 
     
-- Stellt die kurzfristige-Eintragsbezeichner langfristige-IDs festlegen aller die Kennzeichen anders. 
+- Unterscheiden sich die kurzfristigen Eintragsbezeichner von den langfristigen Bezeichnern, wobei alle Flags festgelegt werden. 
     
-Clients können einen kurzfristigen Eintrag Bezeichner des zweiten Typs identifiziert, anhand dessen **AbFlags** Member wie folgt: 
+Clients können eine kurzfristige Eintrags-ID des zweiten Typs identifizieren, indem Sie das **abFlags** -Element wie folgt untersuchen: 
   
 ```cpp
 abFlags[0] = 0xFF;
  
 ```
 
-Einige Dienstanbieter deaktivieren Sie ein oder mehrere Flags zum kurzfristige-Eintragsbezeichner erstellen, die größer Gültigkeit haben. Die folgenden **AbFlags** Elemente darstellen beispielsweise kurzfristige Eintragsbezeichner, die für mehrere Tage oder mehrerer Sitzungen verwendet werden können: 
+Einige Dienstanbieter löschen ein oder mehrere Flags, um kurzfristige Eintragsbezeichner mit höherer Gültigkeit zu erstellen. Die folgenden **abFlags** -Elemente stellen beispielsweise kurzfristige Eintragsbezeichner dar, die für mehrere Tage oder für mehrere Sitzungen verwendet werden können: 
   
 ```cpp
 abFlags[0] = 0xFF & ~MAPI_NOW;
@@ -48,9 +48,9 @@ abFlags[0] = 0xFF & ~MAPI_THISSESSION;
  
 ```
 
-Clients schnell zu erwerben, verwenden und kurzfristige-Eintragsbezeichner verwerfen. In den meisten Fällen können sie die gleiche Weise wie langfristige-Eintragsbezeichner verwendet werden. Sie können aus einer Tabelle, die **OpenEntry** -Methode übergeben, und im Vergleich mit **dem Eintragsbezeichner** abgerufen werden. Die einzige Ausnahme ist, dass sie nie aus der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode zurückgegeben werden. Die Eigenschaften von **GetProps** zurückgegeben werden immer langfristige-Eintragsbezeichner. 
+Clients können kurzfristige Eintrags-IDs schnell erfassen, verwenden und verwerfen. In den meisten Fällen können Sie auf die gleiche Weise wie langfristige Eintragsbezeichner verwendet werden. Sie können aus einer Tabelle abgerufen werden, an die **OpenEntry** -Methode übergeben und mit der **CompareEntryIDs** -Methode verglichen werden. Die einzige Ausnahme besteht darin, dass Sie nie von der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode zurückgegeben werden. Die von getProps zurückgegebenen Eigenschaften sind immer langfristige Eintragsbezeichner. **** 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Eintragsbezeichner](mapi-entry-identifiers.md)
+- [MAPI-Eintrags-IDs](mapi-entry-identifiers.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen, Ändern oder Löschen von Zeilen im ShapeSheet
+title: Hinzufügen, ändern oder Löschen von Zeilen im ShapeSheet
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,37 +8,37 @@ f1_keywords:
 - Vis_DSS.chm82253110
 localization_priority: Normal
 ms.assetid: 47aa9737-363b-b57f-14cf-c007f6dbb8be
-description: Sie können neue Zeilen hinzufügen, ändern Sie den Typ für die vorhandenen Zeilen oder Löschen von Zeilen im ShapeSheet in Microsoft Visio.
-ms.openlocfilehash: 7a3b20d1dbdfa36b414877202a7b1dce358a0ffe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sie können neue Zeilen hinzufügen, den Typ für vorhandene Zeilen ändern oder Zeilen im ShapeSheet in Microsoft Visio löschen.
+ms.openlocfilehash: 385d1040527f8c4322fb1f158c1de2deb0e6f59c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338765"
 ---
-# <a name="add-change-or-delete-rows-in-the-shapesheet"></a>Hinzufügen, Ändern oder Löschen von Zeilen im ShapeSheet
+# <a name="add-change-or-delete-rows-in-the-shapesheet"></a>Hinzufügen, ändern oder Löschen von Zeilen im ShapeSheet
 
-Sie können neue Zeilen hinzufügen, ändern Sie den Typ für die vorhandenen Zeilen oder Löschen von Zeilen im ShapeSheet in Microsoft Visio.
+Sie können neue Zeilen hinzufügen, den Typ für vorhandene Zeilen ändern oder Zeilen im ShapeSheet in Microsoft Visio löschen.
   
-### <a name="to-add-a-new-row-to-a-section-in-the-shapesheet"></a>So fügen Sie eine neue Zeile zu einem Abschnitt im ShapeSheet hinzu
+### <a name="to-add-a-new-row-to-a-section-in-the-shapesheet"></a>So fügen Sie einem Abschnitt im ShapeSheet eine neue Zeile hinzu
 
 1. Markieren Sie in der vorhandenen Zeile eine Zelle.
     
-2. Klicken Sie in der Gruppe **Zeilen** auf der Registerkarte **Entwurf** unter **ShapeSheet-Tools**auf **Einfügen** , um die Zeile hinter der vorhandenen Zeile einzufügen. 
+2. Klicken Sie auf der Registerkarte **Entwurf** unter **ShapeSheet-Tools**in der Gruppe **Zeilen** auf **Einfügen** , um die Zeile nach der vorhandenen Zeile einzufügen. 
     
-    Oder Maustaste auf die Zelle, und klicken Sie dann im Kontextmenü auf **Zeile einfügen** oder **Nach der Zeile einfügen** (nur Abschnitt ["Geometry"](geometry-section.md) ). 
+    Oder klicken Sie mit der rechten Maustaste auf die Zelle, und klicken Sie dann im Kontextmenü auf **Zeile einfügen** oder **Zeile nach** (nur [Geometrie](geometry-section.md) Abschnitt) einfügen. 
     
 ### <a name="to-change-a-rows-type-in-the-shapesheet"></a>So ändern Sie den Typ einer Zeile im ShapeSheet
 
-- Maustaste auf eine zeilenbeschriftung oder eine Zelle, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern** . 
+- Klicken Sie mit der rechten Maustaste auf eine Zeilenbeschriftung oder Zelle, und klicken Sie dann im Kontextmenü auf **zeilenTyp ändern** . 
     
     > [!NOTE]
-    > Wenn der **Zeilentyp ändern** nicht verfügbar ist, kann der ShapeSheet-Abschnitt andere Zeilentypen nicht zulassen. 
+    > Wenn **Änderungs Zeilentyp** nicht verfügbar ist, lässt der ShapeSheet-Abschnitt möglicherweise keine anderen Zeilentypen zu. 
   
-### <a name="to-delete-a-row-in-the-shapesheet"></a>Zum Löschen einer Zeile im ShapeSheet
+### <a name="to-delete-a-row-in-the-shapesheet"></a>So löschen Sie eine Zeile im ShapeSheet
 
 1. Markieren Sie eine Zelle in der Zeile, die Sie löschen möchten.
     
-2. Klicken Sie in der Gruppe **Zeilen** auf der Registerkarte **Entwurf** unter **ShapeSheet-Tools**auf **Löschen**. Oder Maustaste auf die Zelle, und klicken Sie dann im Kontextmenü auf **Zeile löschen** . Die folgenden Zeilen Bewegen im Abschnitt eine Zeile nach oben 
+2. Klicken Sie auf der Registerkarte **Entwurf** unter **ShapeSheet-Tools**in der Gruppe **Zeilen** auf **Löschen**. Oder klicken Sie mit der rechten Maustaste auf die Zelle, und klicken Sie dann im Kontextmenü auf **Zeile löschen** . Die nachfolgenden Zeilen werden in dem Abschnitt um eine Zeile nach oben verschoben. 
     
 

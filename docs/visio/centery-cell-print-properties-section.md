@@ -9,38 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7ce0bf66-dc8b-9646-7b04-50c969ecd67a
 description: Bestimmt, ob das Zeichenblatt vertikal zentriert auf der Druckseite ausgerichtet wird.
-ms.openlocfilehash: 2fde1d6301d7b9de4540cd12f21e5af01d7a6239
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 858bf41c74fdcbd82d271a379df7c5816a7796fd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341916"
 ---
-# <a name="centery-cell-print-properties-section"></a>CenterY Cell (Print Properties Section)
+# <a name="centery-cell-print-properties-section"></a>Zelle "CenterY" (Abschnitt "Print Properties")
 
 Bestimmt, ob das Zeichenblatt vertikal zentriert auf der Druckseite ausgerichtet wird. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| WAHR  <br/> | Zeichenblatt wird vertikal zentriert auf der Druckseite ausgerichtet.  <br/> |
-| FALSCH  <br/> | Zeichenblatt wird nicht vertikal zentriert auf der Druckseite ausgerichtet (Standardeinstellung).  <br/> |
+| TRUE  <br/> | Zeichenblatt wird vertikal zentriert auf der Druckseite ausgerichtet.  <br/> |
+| FALSE  <br/> | Zeichenblatt wird nicht vertikal zentriert auf der Druckseite ausgerichtet (Standardeinstellung).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In der Standardeinstellung werden Zeichenblätter am oberen und linken Rand der Druckseite ausgerichtet. Durch das Festlegen der Zellen CenterX und CenterY auf WAHR wird das Zeichenblatt auf der Druckseite zentriert (bzw. auf den Druckseiten, wenn eine Unterteilung erforderlich ist). 
   
-Wenn Sie einen Verweis auf die Zelle CenterY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "CenterY" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | CenterY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle CenterY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "CenterY" aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
-| Zellenindex:  <br/> |**visPrintPropertiesCenterY** <br/> |
+| Zeilenindex:  <br/> |**visPrintPropertiesCenterY** <br/> |
    
 

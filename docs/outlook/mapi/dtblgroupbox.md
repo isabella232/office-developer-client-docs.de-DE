@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e444b62-d6b6-4cfc-8601-d34aa004c1e6
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ef38893c9ad44556cc9220809b5e407f86fd2642
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 324cfe9d7c412b3bb0e3150b8eec51aaeb6a0e93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338661"
 ---
 # <a name="dtblgroupbox"></a>DTBLGROUPBOX
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Gruppenfeld-Steuerelement, das in einem Dialogfeld erstellt aus einer Tabelle anzeigen verwendet wird.
+Beschreibt ein Gruppenfeld-Steuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makro:  <br/> |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehöriges Makro:  <br/> |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |
    
 ```cpp
 typedef struct _DTBLGROUPBOX
@@ -45,21 +45,21 @@ typedef struct _DTBLGROUPBOX
 
  **ulbLpszLabel**
   
-> Die Position im Speicher der Zeichenfolge, die das Gruppenfeld begleitet. Wenn angezeigt wird, wird diese auf der oberen, linken Seite des Felds angezeigt.
+> Position im Arbeitsspeicher der Zeichenfolge, die das Gruppenfeld begleitet. Wenn diese Option angezeigt wird, wird Sie oben links im Feld angezeigt.
     
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format der Beschriftung festzulegen, auf die der **UlbLpszLabel** Member. Das folgende Flag kann festgelegt werden: 
+> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabel** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Beschriftung wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLGROUPBOX** beschreibt ein Gruppenfeld-Steuerelement, das verwendet wird, um andere Steuerelemente im Dialogfeld visuell zuzuordnen. Das Hervorheben Verfahren besteht im angrenzenden die andere Steuerelemente als Feld. 
+Eine **DTBLGROUPBOX** -Struktur beschreibt ein Gruppenfeld-Steuerelement, mit dem andere Steuerelemente im Dialogfeld visuell zugeordnet werden. Die Hervorhebungs Technik umfasst das umschließen der anderen Steuerelemente durch ein Feld. 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

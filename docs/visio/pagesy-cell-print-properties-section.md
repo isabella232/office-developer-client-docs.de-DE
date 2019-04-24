@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 396a0f3e-dbbb-3f5b-3c5d-f7dd454a765f
 description: Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt vertikal dargestellt werden soll.
-ms.openlocfilehash: 1663fac8efdf06599d1e3c00d5eb0d00ec52e476
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 43d4081439525c516d3da28b6c0e46e9273d85c4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339977"
 ---
-# <a name="pagesy-cell-print-properties-section"></a>PagesY Cell (Print Properties Section)
+# <a name="pagesy-cell-print-properties-section"></a>Zelle "PagesY" (Abschnitt "Print Properties")
 
 Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt vertikal dargestellt werden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Wert wird nur dann verwendet, wenn die Zelle OnPage auf WAHR festgelegt ist. 
   
-Wenn Sie einen Verweis auf die Zelle PagesY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PagesY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PagesY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PagesY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PagesY nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
-| Zellenindex:  <br/> |**visPrintPropertiesPagesY** <br/> |
+| Zeilenindex:  <br/> |**visPrintPropertiesPagesY** <br/> |
    
 

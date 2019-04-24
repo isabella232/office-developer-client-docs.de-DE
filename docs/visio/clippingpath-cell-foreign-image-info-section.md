@@ -1,31 +1,31 @@
 ---
-title: ClippingPath Cell (Foreign Image Info Section)
+title: ClippingPath Cell (Foreign Image Info section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0ec70417-5b23-45af-95a0-1b26f6791699
-description: Enthält einen Verweis auf die Geometrie des Pfads, der ein Bild durch begrenzt wird.
-ms.openlocfilehash: 9f1c159e303c1d7bc3467c36756a422a3f325c7b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält einen Verweis auf die Geometrie des Pfads, an den ein Bild gebunden ist.
+ms.openlocfilehash: cfbbb3ca7294f751f088df7c3284bf6461270af7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341860"
 ---
-# <a name="clippingpath-cell-foreign-image-info-section"></a>ClippingPath Cell (Foreign Image Info Section)
+# <a name="clippingpath-cell-foreign-image-info-section"></a>ClippingPath Cell (Foreign Image Info section)
 
-Enthält einen Verweis auf die Geometrie des Pfads, der ein Bild durch begrenzt wird. 
+Enthält einen Verweis auf die Geometrie des Pfads, an den ein Bild gebunden ist. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn die Zelle **ClippingPath** auf einen gültigen Pfad verweist, wird das Bild abgeschnitten, damit das Bild in den Pfad gerendert wird. Wenn die Zelle **ClippingPath** leer ist oder einen ungültigen Eintrag enthält, wird das Bild mit einem rechteckigen Clip unter Verwendung der Skalierung und Offset-Werte gerendert werden. 
+Wenn die **ClippingPath** -Zelle auf einen gültigen Pfad zeigt, wird das Bild abgeschnitten, sodass das Bild innerhalb des Pfads gerendert wird. Wenn die Zelle **ClippingPath** leer ist oder einen ungültigen Eintrag enthält, wird das Bild mit einem rechteckigen Clip mit den Werten Scale und Offset gerendert. 
   
 > [!NOTE]
-> Nur von einem Abschnitt [Geometry](geometry-section.md) des Bilds ShapeSheet definierten Pfade sind gültige Einträge für die Zelle **ClippingPath** . Cross-Tabellenbezüge können nicht verwendet werden, um ein Bild Clipping Pfad zu definieren. 
+> Nur Pfade, die durch einen [Geometry](geometry-section.md) -Abschnitt im ShapeSheet des Bilds definiert sind, sind gültige Einträge für die Zelle **ClippingPath** . Für die Definition eines Bild Beschneidungspfads können keine Kreuz Blatt Referenzen verwendet werden. 
   
-Wenn Sie einen Verweis auf die Zelle **ClippingPath** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **ClippingPath** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
@@ -41,22 +41,22 @@ Wenn Sie einen Verweis auf die Zelle **ClippingPath** aus einem Programm nach In
    
 ## <a name="example"></a>Beispiel
 
-Sie können die umgebende Form eines Bilds in ein Oval ändern, die folgenden Schritte durch:
+Sie können die Begrenzungsform eines Bilds in ein Oval ändern, indem Sie folgendermaßen vorgehen:
   
-- Fügen Sie das Bild auf Zeichenbereich.
+- Fügen Sie das Bild in den Zeichenbereich ein.
     
-- Maustaste auf das Bild, und wählen Sie dann auf **ShapeSheet anzeigen**.
+- Klicken Sie mit der rechten Maustaste auf das Bild, und klicken Sie dann auf **ShapeSheet anzeigen**.
     
-- Mit der rechten Sie Maustaste in das ShapeSheet, und wählen Sie **Im Abschnitt einfügen**.
+- Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im ShapeSheet, und wählen Sie **Einfügen**aus.
     
-- Klicken Sie im Dialogfeld **Abschnitt einfügen** wählen Sie **Geometrie aus** , und klicken Sie dann auf **OK**.
+- Wählen Sie im Dialogfeld **Abschnitt einfügen** die Option **Geometrie** aus, und klicken Sie dann auf **OK**.
     
-- Löschen Sie alle Zeilen in der neuen Geometrie-Abschnitt (z. B. "Geometry2").
+- Löschen Sie im Abschnitt neue Geometrie (beispielsweise "Geometry2") nur eine Zeile.
     
-- Mit der rechten Maustaste der verbleibenden Zeile, und klicken Sie dann auf **Zeilentyp ändern**.
+- Klicken Sie mit der rechten Maustaste auf die verbleibende Zeile, und klicken Sie dann auf **zeilenTyp ändern**.
     
-- Klicken Sie im Dialogfeld **Zeilentyp ändern** wählen **Ellipse** aus, und klicken Sie dann auf **OK**.
+- Wählen Sie im Dialogfeld **zeilenTyp ändern** die Option **Ellipse** aus, und klicken Sie dann auf **OK**.
     
-- Legen Sie im Abschnitt **Foreign Image** , die Formel für die Zelle **ClippingPath** `="Geometry2.Path"` und akzeptieren Sie die Formel. 
+- Legen Sie im Abschnitt **fremdes Bild** die Formel für die Zelle **ClippingPath** auf `="Geometry2.Path"` fest, und akzeptieren Sie die Formel. 
     
 

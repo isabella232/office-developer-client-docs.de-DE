@@ -1,31 +1,31 @@
 ---
-title: Seiten-Element ("Visio XML")
+title: Pages-Element (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 365e302f-3822-dccd-df8c-6e528d10b22b
-description: Elemente des für das Dokument enthält.
+description: Enthält die Seitenelemente für das Dokument.
 ms.openlocfilehash: f4062c83f4b017fde7e1d5d4c568f7c9728e3334
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339578"
 ---
-# <a name="pages-element-visio-xml"></a>Seiten-Element ("Visio XML")
+# <a name="pages-element-visio-xml"></a>Pages-Element (' Visio XML ')
 
-Elemente des für das Dokument enthält.
+Enthält die Seitenelemente für das Dokument.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Pages_Type](pages_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Pages.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Pages. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Elemente des für das Dokument enthält.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -46,7 +46,7 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Page](page-element-pages_type-complextypevisio-xml.md) <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die eine Seite im Dokument zu definieren.  <br/> |
+|[Page](page-element-pages_type-complextypevisio-xml.md) <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die eine Seite im Dokument definieren.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

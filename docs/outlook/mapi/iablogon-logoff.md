@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: a36465e2-7be9-4bd6-8091-685f0a045aa9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a20fdd45c39cc2147f8fdc7b1998ff6d1b0797bb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: af3c1f5135e90274c0251c5a0addf339c14f36c0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339298"
 ---
 # <a name="iablogonlogoff"></a>IABLogon::Logoff
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initiiert den Prozess abmelden.
+Initiiert den ABMELDEPROZESS.
   
 ```cpp
 HRESULT Logoff(
@@ -39,23 +39,23 @@ HRESULT Logoff(
   
 > [in] Reserviert. NULL muss sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Prozess für die Abmeldung wurde erfolgreich initiiert.
+> Der ABMELDEPROZESS wurde erfolgreich initiiert.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Prozess für die Abmeldung wird in der Regel gestartet, wenn ein Client beenden eine Sitzung die [IMAPISession::Logoff](imapisession-logoff.md) Methode aufruft. MAPI ruft dann jede Adressbuchanbieter **IABLogon::Logoff** -Methode, um den Abmeldung zu starten. 
+Der ABMELDEPROZESS wird in der Regel gestartet, wenn ein Client die [IMAPISession:: Abmelde](imapisession-logoff.md) Methode aufruft, um eine Sitzung zu beenden. MAPI ruft dann die **IABLogon:: Abmelde** Methode jedes Adressbuch Anbieters auf, um den ABMELDEPROZESS zu starten. 
   
-Die **IABLogon::Logoff** -Methode führt Folgendes aus: 
+Die **IABLogon:: Logout** -Methode führt die folgenden Aktionen aus: 
   
-- Gibt alle geöffneten Objekte, wie alle Unterobjekte oder das Statusobjekt frei.
+- Gibt alle geöffneten Objekte wie alle unter Objekte oder das Status-Objekt frei.
     
-- Gibt den Anbieter DSO-Objekt frei.
+- Gibt das Support Objekt des Anbieters frei.
     
-Weitere Informationen zum Abmeldevorgang, von adressbuchanbietern implementierte finden Sie unter [Herunterfahren nach unten a Service Provider](shutting-down-a-service-provider.md).
+Weitere Informationen zum ABMELDEPROZESS von Adressbuch Anbietern finden Sie unter [Herunterfahren eines Dienstanbieters](shutting-down-a-service-provider.md).
   
 ## <a name="see-also"></a>Siehe auch
 

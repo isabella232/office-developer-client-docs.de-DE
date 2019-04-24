@@ -1,31 +1,31 @@
 ---
-title: AttachedToolbars-Element (DocumentSettings_Type ComplexType) ("Visio XML")
+title: AttachedToolbars-Element (DocumentSettings_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: cd7d8a06-5661-d515-f106-ff8275a04f40
-description: Ein MIME (Multipurpose Internet Mail Extensions) codierte Microsoft Visio-Schnittstelle (VSU) Benutzerdatei, benutzerdefinierte Symbolleisten darstellt.
+description: Eine MIME (Multipurpose Internet Mail Extensions)-codierte Microsoft Visio-Benutzeroberfläche (VSU), die benutzerdefinierte Symbolleisten darstellt.
 ms.openlocfilehash: a769204c7e13bacc147689803b31bf898e6de71a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341363"
 ---
-# <a name="attachedtoolbars-element-documentsettingstype-complextype-visio-xml"></a>AttachedToolbars-Element (DocumentSettings_Type ComplexType) ("Visio XML")
+# <a name="attachedtoolbars-element-documentsettingstype-complextype-visio-xml"></a>AttachedToolbars-Element (DocumentSettings_Type complexType) (' Visio XML ')
 
-Ein MIME (Multipurpose Internet Mail Extensions) codierte Microsoft Visio-Schnittstelle (VSU) Benutzerdatei, benutzerdefinierte Symbolleisten darstellt.
+Eine MIME (Multipurpose Internet Mail Extensions)-codierte Microsoft Visio-Benutzeroberfläche (VSU), die benutzerdefinierte Symbolleisten darstellt.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[AttachedToolbars_Type](attachedtoolbars_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Ein MIME (Multipurpose Internet Mail Extensions) codierte Microsoft Visio-Schnit
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die dokumenteinstellungen angeben.  <br/> |
+|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die Dokumenteinstellungen angeben.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

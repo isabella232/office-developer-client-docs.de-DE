@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: f899f434-a5d7-4b4f-98f9-c14c9f21b24b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bd0caff8a6c7834bdd01ef4be64805bde66dd6d9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6f3d98a3133d79f78f4eb676d49ec85ef5a359f1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340117"
 ---
 # <a name="dtblpage"></a>DTBLPAGE
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Seite, die in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird. 
+Beschreibt eine Registerkartenseite, die in einem Dialogfeldverwendet wird, das aus einer Anzeigetabelle erstellt wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makro:  <br/> |[SizedDtblPage](sizeddtblpage.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehöriges Makro:  <br/> |[SizedDtblPage](sizeddtblpage.md) <br/> |
    
 ```cpp
 typedef struct _DTBLPAGE
@@ -47,31 +47,31 @@ typedef struct _DTBLPAGE
 
  **ulbLpszLabel**
   
-> Die Position im Speicher der Zeichen Zeichenfolge Beschriftung für die Registerkarte Seite.
+> Position im Speicher der Zeichenfolgenbezeichnung für die Registerkarte Seite.
     
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format der Beschriftung festzulegen, auf die der **UlbLpszLabelName** Member. Das folgende Flag kann festgelegt werden: 
+> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabelName** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Beschriftung wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
     
  **ulbLpszComponent**
   
-> Die Position im Arbeitsspeicher einer Zeichenfolge, die im Abschnitt **[Help File Mappings]** in die Datei MAPISVC identifiziert. INF-Konfigurationsdatei oder 0. Der Dateiname in die Datei MAPISVC angezeigt werden. INF-Abschnitt kann von einem Benutzer verwendet werden, um erweiterte Hilfe für die Seite zugreifen, indem Sie auf die Schaltfläche **Hilfe** klicken, im Dialogfeld. Weitere Informationen zu den Einträgen in der Datei MAPISVC. INF-Datei, finden Sie unter [File Format der Datei MAPISVC. INF-Datei](file-format-of-mapisvc-inf.md).
+> Position im Speicher einer Zeichenfolge, die den Abschnitt **[Hilfedatei Zuordnungen]** im Mapisvc identifiziert. INF-Konfigurationsdatei oder 0. Der Dateiname, der im MAPISVC angezeigt wird. Der Abschnitt INF kann von Benutzern verwendet werden, um auf die erweiterte Hilfe für die Registerkartenseite zuzugreifen, indem Sie im Dialogfeld auf die Schaltfläche " **Hilfe** " klicken. Weitere Informationen zu den Einträgen in MAPISVC. INF finden Sie unter [Datei Format von MAPISVC. INF](file-format-of-mapisvc-inf.md).
     
  **ulContext**
   
-> Ein eindeutiger Bezeichner für die Seite in der Zeichenfolge, die durch das **UlbLpszComponent** -Element definiert. Das Element **UlbLpszComponent** und der **UlContext** Member müssen beide ungleich NULL für die Schaltfläche **Hilfe** zu sein. Wenn dieser Bezeichner 0 (null ist) und die Komponente Zeichenfolge NULL ist, ist keine Hilfe mit der Seite verknüpft ist. 
+> Ein eindeutiger Bezeichner für die Registerkartenseite in der vom **ulbLpszComponent** -Element definierten Zeichenfolge. Das **ulbLpszComponent** -Element und das **ulContext** -Element müssen beide ungleich NULL sein, damit die Schaltfläche " **Hilfe** " funktioniert. Wenn dieser Bezeichner NULL ist und die Komponenten Zeichenfolge NULL ist, ist der Seite keine Hilfe zugeordnet. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLPAGE** beschreibt eine Seite ein Steuerelement, das verwendet wird, um mehrere zugehörige Dialogfelder zu trennen. In der Regel werden diese Dialogfelder Eigenschaftenseiten für die Konfiguration, Nachricht oder Empfänger Optionen anzeigen. Durch Klicken auf die Registerkarte, kann der Benutzer von einem Arbeitsblatt wechseln. 
+Eine **DTBLPAGE** -Struktur beschreibt ein Steuerelement mit Registerkarten, das zum Trennen mehrerer verwandter Dialogfelder verwendet wird. In der Regel sind diese Dialogfelder Eigenschaftenblätter zum Anzeigen von Konfigurations-, Nachrichten-oder Empfängeroptionen. Durch Klicken auf die Registerkarte kann der Benutzer von einem Blatt zu einem anderen wechseln. 
   
-Die Komponente Zeichenfolge und Kontext-ID finden Sie Informationen, ob erweiterte Hilfe für die Seite verfügbar ist. Wenn erweiterte Hilfe verfügbar ist, bietet die Komponente Zeichenfolge und Kontext-ID Informationen dazu, wie Sie darauf zugreifen. Die Komponente Zeichenfolge ordnet der Hilfedatei. die Kontext-ID wird die ursprüngliche Hilfethema zugeordnet. Wenn die Kontext-ID 0 (null ist) und die Komponente Zeichenfolge NULL ist, ist die erweiterte Hilfe nicht verfügbar.
+Die Komponenten Zeichenfolge und die Kontext-ID enthalten Informationen darüber, ob die erweiterte Hilfe für die Registerkartenseite verfügbar ist. Wenn die erweiterte Hilfe verfügbar ist, enthält die Komponenten Zeichenfolge und die Kontext-ID Informationen dazu, wie Sie darauf zugreifen können. Die Komponenten Zeichenfolge wird der Hilfedatei zugeordnet; der Kontextbezeichner wird dem anfänglichen Hilfethema zugeordnet. Wenn der Kontextbezeichner NULL ist und die Komponenten Zeichenfolge NULL ist, ist die erweiterte Hilfe nicht verfügbar.
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 
