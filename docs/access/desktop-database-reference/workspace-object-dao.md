@@ -1,5 +1,5 @@
 ---
-title: Workspace-Objekt (DAO)
+title: Arbeitsbereichsobjekt (DAO)
 TOCTitle: Workspace Object
 ms:assetid: bf3ab863-5e9a-4842-1f82-2ccf958d9779
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822782(v=office.15)
@@ -8,53 +8,53 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 2c734d5e0f022faec4ebb9efe2dfc2f7dd7b7979
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308358"
 ---
-# <a name="workspace-object-dao"></a>Workspace-Objekt (DAO)
+# <a name="workspace-object-dao"></a>Arbeitsbereichsobjekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Ein **Arbeitsbereichs** objekt definiert eine benannte Sitzung für einen Benutzer. Es enthält geöffnete Datenbanken und stellt Mechanismen für gleichzeitige Transaktionen und in Microsoft Access Arbeitsbereiche für den sicheren Arbeitsgruppen-Support bereit.
+Ein **Arbeitsbereichs**objekt definiert eine benannte Sitzung für einen Benutzer. Es enthält geöffnete Datenbanken und stellt Mechanismen für gleichzeitige Transaktionen und in Microsoft Access Arbeitsbereiche für den sicheren Arbeitsgruppen-Support bereit.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein **Arbeitsbereich** ist ein nicht persistentes Objekt, das definiert, wie die Anwendung mit Daten interagiert, indem es das Microsoft Access-Datenbank verwendet. Verwenden Sie ein **Arbeitsbereichs** objekt, um die aktuelle Sitzung zu verwalten oder eine zusätzliche Sitzung zu starten. In einer SItzung können Sie mehrere Datenbanken oder Verbindungen öffnen und Transaktionen verwalten. Sie können beispielsweise folgende Aktionen durchführen:
+Ein **Arbeitsbereich** ist ein nicht persistentes Objekt, das definiert, wie die Anwendung mit Daten interagiert, indem es das Microsoft Access-Datenbank verwendet. Verwenden Sie ein **Arbeitsbereichs**objekt, um die aktuelle Sitzung zu verwalten oder eine zusätzliche Sitzung zu starten. In einer SItzung können Sie mehrere Datenbanken oder Verbindungen öffnen und Transaktionen verwalten. Sie können beispielsweise folgende Aktionen durchführen:
 
-- Verwenden Sie die **Name** -, **UserName** - und **Type** -Eigenschaften, um eine benannte Sitzung einzurichten. Die Sitzung erstellt einen Bereich, in dem Sie mehrere Datenbanken öffnen und eine Instanz verschachtelter Transaktionen durchführen.
+- Verwenden Sie die **Name**-, **UserName**- und **Type**-Eigenschaften, um eine benannte Sitzung einzurichten. Die Sitzung erstellt einen Bereich, in dem Sie mehrere Datenbanken öffnen und eine Instanz verschachtelter Transaktionen durchführen.
 
-- Verwenden Sie die **Close** -Methode, um eine Sitzung zu beenden.
+- Verwenden Sie die **Close**-Methode, um eine Sitzung zu beenden.
 
-- Verwenden Sie die **OpenDatabase** -Methode, um eine oder mehrere vorhandene Datenbanken eines **Arbeitsbereichs** zu öffnen.
+- Verwenden Sie die **OpenDatabase**-Methode, um eine oder mehrere vorhandene Datenbanken eines **Arbeitsbereichs** zu öffnen.
 
-- Verwenden Sie die **BeginTrans** -, **CommitTrans** - und **Rollback** -methoden, um das Verarbeiten von verschachtelten Transaktionen innerhalb eines **Arbeitsbereichs** und mehrere **Arbeitsbereichs** objekte zum Durchführen mehrerer gleichzeitiger sich überschneidender Transaktionen zu verwenden.
+- Verwenden Sie die **BeginTrans**-, **CommitTrans**- und **Rollback**-methoden, um das Verarbeiten von verschachtelten Transaktionen innerhalb eines **Arbeitsbereichs** und mehrere **Arbeitsbereichs**objekte zum Durchführen mehrerer gleichzeitiger sich überschneidender Transaktionen zu verwenden.
 
-Wenn Sie zuerst finden Sie unter oder ein **Workspace** -Objekt verwenden, erstellen Sie automatisch den Standard-Arbeitsbereich DBEngine.Workspaces(0). Die Einstellungen der Eigenschaften **Name** und **UserName** des Standard-Arbeitsbereich sind "\#Standard-Arbeitsbereich\#" und "Admin" fest. Wenn die Sicherheit aktiviert ist, lautet ist die **UserName** -Eigenschaftseinstellung der Name des angemeldeten Benutzers.
+Wenn Sie zunächst auf ein **Arbeitsbereichsobjekt** verweisen oder es verwenden, erstellen Sie automatisch den Standardarbeitsbereich, DBEngine.Workspaces(0). Die Einstellungen für die Eigenschaften **Name** und **UserName** des standardmäßigen Arbeitsbereichs sind „\#Standardarbeitsbereich\#" bzw. „Admin“. Wenn die Sicherheit aktiviert ist, lautet ist die **UserName** -Eigenschaftseinstellung der Name des angemeldeten Benutzers.
 
 Bei der Verwendung von Transaktionen sind alle im **Arbeitsbereich** angegebenen Datenbanken betroffen - sogar wenn mehrere **Datenbank** objekte im **Arbeitsbereich** geöffnet sind. Wenn Sie beispielsweise eine **BeginTrans** -Methode verwenden, aktualisieren Sie mehrere Datensätze in einer Datenbank und löschen Sie anschließend die Datensätze in einer anderen Datenbank. Wenn Sie anschließend die **Rollback** -Methode verwenden, werden die Aktualisierungs- und Löschvorgänge abgebrochen und zurückgesetzt. Sie können zusätzliche **Arbeitsbereichs** objekte erstellen, um Transaktionen unabhängig zwischen **Datenbank** objekten zu verwalten.
 
-Sie können **Arbeitsbereichs** objekte mit der **CreateWorkspace** -Methode erstellen. Nachdem Sie ein neues **Arbeitsbereichs** objekt erstellt haben, müssen Sie es an die **Arbeitsbereichs** auflistung anhängen, wenn Sie aus der **Arbeitsbereichs** auflistung darauf verweisen müssen.
+Sie können **Arbeitsbereichs**objekte mit der **CreateWorkspace**-Methode erstellen. Nachdem Sie ein neues **Arbeitsbereichs**objekt erstellt haben, müssen Sie es an die **Arbeitsbereichs**auflistung anhängen, wenn Sie aus der **Arbeitsbereichs**auflistung darauf verweisen müssen.
 
-Sie können ein neu erstelltes **Arbeitsbereichs** objekt verwenden, ohne es an die **Arbeitsbereichs** auflistung anhängen zu müssen. Sie müssen jedoch durch die Objektvariable darauf verweisen, der sie es zugewiesen haben.
+Sie können ein neu erstelltes **Arbeitsbereichs**objekt verwenden, ohne es an die **Arbeitsbereichs**auflistung anhängen zu müssen. Sie müssen jedoch durch die Objektvariable darauf verweisen, der sie es zugewiesen haben.
 
-Um auf ein **Arbeitsbereichs** objekt in einer Auflistung durch die Ordinalzahl oder die **Name** -Eigenschaftseinstellung zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
+Um auf ein **Arbeitsbereichs**objekt in einer Auflistung durch die Ordinalzahl oder die **Name**-Eigenschaftseinstellung zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
 
-**DBEngine**. **Arbeitsbereiche** (0)
+**DBEngine**.**Arbeitsbereiche**(0)
 
-**DBEngine**. **Arbeitsbereiche** ("Name")
+**DBEngine**.**Arbeitsbereiche**(„name“)
 
-**DBEngine**. **Arbeitsbereiche** \! \[Namen\]
+**DBEngine**.**Workspaces**\!\[name\]
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
+> ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
 
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird ein neues Microsoft Access-Arbeitsbereichsobjekt erstellt und an die **Arbeitsbereichs** auflistung angehängt. Anschließend werden die **Arbeitsbereichs** auflistungen und die **Eigenschafts** auflistung des **Arbeitsbereichs** objekts aufgezählt.
+In diesem Beispiel wird ein neues Microsoft Access-Arbeitsbereichsobjekt erstellt und an die **Arbeitsbereichs**auflistung angehängt. Anschließend werden die **Arbeitsbereichs**auflistungen und die **Eigenschafts**auflistung des **Arbeitsbereichs**objekts aufgezählt.
 
 ```vb 
 Sub WorkspaceX() 
@@ -132,7 +132,7 @@ End Sub
 
 Im folgenden Beispiel wird aufgezeigt, wie eine Transaktion in einem Data Access Objects (DAO)-Arbeitsbereich verwendet werden kann.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 
 ```vb

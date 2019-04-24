@@ -8,26 +8,26 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 73fac5ff9dd1f5cf277b8cb241044af23609b764
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295366"
 ---
 # <a name="create-view-statement-microsoft-access-sql"></a>CREATE VIEW-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt eine neue Sicht.
 
 > [!NOTE]
-> [!HINWEIS] Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der CREATE VIEW-Anweisung oder anderer DDL-Anweisungen in Kombination mit Datenbanken, die nicht aus dem Microsoft Access-Datenbankmodul stammen.
+> Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung von CREATE VIEW oder einer der DDL-Anweisungen für Datenbanken, die nicht mit dem Microsoft Access-Datenbankmodul erstellt wurden.
 
 ## <a name="syntax"></a>Syntax
 
-CREATE VIEW *Sicht* \[(*Feld1*\[, *Feld2*\[,... \] \])\] AS *SELECT-Anweisung*
+CREATE VIEW *view* \[(*field1*\[, *field2*\[, …\]\])\] AS *selectstatement*
 
-Die CREATE VIEW-Anweisung besteht aus folgenden Komponenten:
+Die CREATE VIEW-Anweisung setzt sich wie folgt zusammen:
 
 <table>
 <colgroup>
@@ -36,7 +36,7 @@ Die CREATE VIEW-Anweisung besteht aus folgenden Komponenten:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Komponente</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -47,25 +47,25 @@ Die CREATE VIEW-Anweisung besteht aus folgenden Komponenten:
 </tr>
 <tr class="even">
 <td><p><em>Feld1</em>, <em>Feld2</em></p></td>
-<td><p>Der Name des oder der Felder, die den Feldern aus der <em>Select-Anweisung</em> entsprechen.</p></td>
+<td><p>Die Namen der Felder für die entsprechenden in der <em>SELECT-Anweisung</em> angegebenen Felder.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>SelectAnweisung</em></p></td>
-<td><p>Eine SQL SELECT-Anweisung. Weitere Informationen finden Sie in der <a href="select-statement-microsoft-access-sql.md">SELECT-Anweisung</a>.</p></td>
+<td><p><em>SELECT-Anweisung</em></p></td>
+<td><p>Eine SQL SELECT-Anweisung. Weitere Informationen finden Sie unter <a href="select-statement-microsoft-access-sql.md">SELECT-Anweisung</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Bei einer SELECT-Anweisung zur Definition einer Sicht kann es sich nicht um eine [SELECT INTO](select-into-statement-microsoft-access-sql.md)-Anweisung handeln.
 
-Die SELECT-Anweisung zur Definition einer Sicht kann keine Parameter enthalten.
+Die SELECT-Anweisung, die die Sicht definiert, darf keine Parameter enthalten.
 
-Der Name der Sicht darf nicht mit dem Namen einer vorhandenen Tabelle identisch sein.
+Der Name der Sicht darf nicht mit dem Namen einer vorhandenen Tabelle übereinstimmen.
 
-Wenn die durch die SELECT-Anweisung definierte Abfrage aktualisiert werden kann, wird die Ansicht auch aktualisiert. Andernfalls ist die Sicht schreibgeschützt.
+Handelt es sich bei der über die SELECT-Anweisung definierten Abfrage um eine Abfrage, die aktualisiert werden kann, ist die Aktualisierung der Sicht ebenfalls möglich. Andernfalls ist die Sicht schreibgeschützt.
 
-Verfügen zwei Felder in der über die SELECT-Anweisung definierten Abfrage über den gleichen Namen, muss die Definition der Sicht eine Feldliste einschließen, die für jedes der Felder in der Abfrage einen eindeutigen Namen angibt.
+Wenn zwei beliebige Felder in der durch die SELECT-Anweisung definierten Abfrage denselben Namen haben, muss die Sichtdefinition eine Feldliste mit eindeutigen Namen für jedes Feld in der Abfrage enthalten.
 

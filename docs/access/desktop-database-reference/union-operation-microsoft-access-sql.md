@@ -14,23 +14,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: f842e662f2576d8aab5f3857877f45e380d3d3b0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314700"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION-Operation (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt eine Union-Abfrage, in der die Ergebnisse von mindestens zwei unabhängigen Abfragen oder Tabellen miteinander kombiniert werden.
 
 ## <a name="syntax"></a>Syntax
 
-\[Tabelle\] *Abfrage1* UNION \[alle\] \[Tabelle\] *abfrage2* \[UNION \[alle\] \[Tabelle\] *Abfragen* \[ ... \]\]
+\[TABLE\] *query1* UNION \[ALL\] \[TABLE\] *query2* \[UNION \[ALL\] \[TABLE\] *queryn* \[ … \]\]
 
-Die UNION-Operation enthält die folgenden Bestandteile:
+Der UNION-Vorgang besteht aus den folgenden Teilen:
 
 <table>
 <colgroup>
@@ -39,22 +39,22 @@ Die UNION-Operation enthält die folgenden Bestandteile:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Argument</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Abfrage1-N</em></p></td>
+<td><p><em>Abfrage1-n</em></p></td>
 <td><p>Eine SELECT-Anweisung, der Name einer gespeicherten Abfrage oder der Name einer gespeicherten Tabelle, der das Schlüsselwort TABLE vorangestellt ist.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können die Ergebnisse von zwei oder mehr Abfragen, Tabellen und SELECT-Anweisungen in jeder beliebigen Kombination in einer einzelnen UNION-Operation zusammenführen. Im folgenden Beispiel wird die vorhandene New Accounts-Tabelle mit einer SELECT-Anweisung zusammengeführt:
+Sie können die Ergebnisse von mindestens zwei Abfragen, Tabellen und SELECT-Anweisungen in einer beliebigen Kombination in einem einzigen UNION-Vorgang zusammenführen. Im folgenden Beispiel werden die vorhandene Tabelle "Neue Konten" und eine SELECT-Anweisung zusammengeführt:
 
 ```sql
 TABLE [New Accounts] UNION ALL 
@@ -67,15 +67,15 @@ Standardmäßig werden bei Verwendung einer UNION-Operation keine duplizierten D
 
 Alle Abfragen in einer UNION-Operation müssen dieselbe Anzahl von Feldern anfordern. Doch die Felder müssen nicht dieselbe Größe oder denselben Datentyp besitzen.
 
-Verwenden Sie Aliase nur in der ersten SELECT-Anweisung, da sie in anderen Anweisungen ignoriert werden. In der ORDER BY-Klausel verweisen Sie auf ein Feld unter dem Namen, der in der ersten SELECT-Anweisung verwendet wird.
+Verwenden Sie Aliase nur in der ersten SELECT-Anweisung, weil sie in anderen Anweisungen ignoriert werden. Verweisen Sie in der ORDER BY-Klausel so auf die Felder, wie sie in der ersten SELECT-Anweisung bezeichnet werden.
 
 > [!NOTE]
-> - Eine [GROUP BY-](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) oder [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) -Klausel können in *jedem Abfrageargument* Sie um die zurückgegebenen Daten zu gruppieren.
-> - [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql) -Klausel können am Ende des *letzten abfragearguments* Sie die zurückgegebenen Daten in einer bestimmten Reihenfolge angezeigt.
+> - Sie können in jedem *Abfrage*argument eine [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql)- oder eine [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql)-Klausel verwenden, um die zurückgegebenen Daten zu gruppieren.
+> - Sie können am Ende des letzten *Abfrage*arguments eine [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql)-Klausel verwenden, um die zurückgegebenen Daten in einer bestimmten Reihenfolge anzuzeigen.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Namen und Städte aller Lieferanten und Kunden in Brasilien abgerufen. Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
+In diesem Beispiel werden die Namen und Städte aller Händler und Kunden in Brasilien abgerufen. Dabei wird die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung enthalten ist.
 
 ```vb
     Sub UnionX() 

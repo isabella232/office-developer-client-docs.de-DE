@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: bf064212e71019f303b6fa7e9bb9360306dfa3c8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300483"
 ---
 # <a name="recordset-methods-dao"></a>Recordset-Methoden (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [Recordset.AddNew-Methode (DAO)](recordset-addnew-method-dao.md)
 - [Recordset.Cancel-Methode (DAO)](recordset-cancel-method-dao.md)

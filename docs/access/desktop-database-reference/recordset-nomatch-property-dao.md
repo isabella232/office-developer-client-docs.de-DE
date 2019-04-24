@@ -12,40 +12,40 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: e54f8c51787e51785bdaacaecd28a8d24e2cb5b1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300427"
 ---
 # <a name="recordsetnomatch-property-dao"></a>Recordset.NoMatch-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt an, ob ein bestimmter Datensatz mithilfe der **[Seek](recordset-seek-method-dao.md)** -Methode oder einer der **[Find](recordset-findfirst-method-dao.md)** -Methoden gefunden wurde (nur Microsoft Access-Arbeitsbereiche).
+Gibt an, ob ein bestimmter Datensatz mithilfe der **[Seek](recordset-seek-method-dao.md)**-Methode oder einer der **[Find](recordset-findfirst-method-dao.md)**-Methoden gefunden wurde (nur Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . NoMatch
+*Ausdruck* .NoMatch
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie ein **[Recordset](recordset-object-dao.md)** -Objekt öffnen oder erstellen, hat seine **NoMatch**-Eigenschaft den Wert **False**.
+Wenn Sie ein **[Recordset](recordset-object-dao.md)**-Objekt öffnen oder erstellen, hat seine **NoMatch**-Eigenschaft den Wert **False**.
 
-Verwenden Sie für die Suche nach einem Datensatz die **Seek** -Methode für ein **Recordset** -Objekt vom Tabellentyp oder die **Find** -Methoden für ein **Recordset** -Objekt vom Dynaset- oder Momentaufnahmentyp. Überprüfen Sie die **NoMatch** -Eigenschaftseinstellung, um festzustellen, ob der Datensatz gefunden wurde.
+Verwenden Sie für die Suche nach einem Datensatz die **Seek**-Methode für ein **Recordset**-Objekt vom Tabellentyp oder die **Find**-Methoden für ein **Recordset**-Objekt vom Dynaset- oder Momentaufnahmentyp. Überprüfen Sie die **NoMatch**-Eigenschaftseinstellung, um festzustellen, ob der Datensatz gefunden wurde.
 
-Wenn die Methoden **Seek** und **Find** nicht erfolgreich sind und die **NoMatch**-Eigenschaft den Wert **True** hat, ist der aktuelle Datensatz nicht mehr gültig. Rufen Sie das Lesezeichen des aktuellen Datensatzes ab, bevor Sie die **Seek**-Methode oder eine **Find**-Methode verwenden, falls Sie zu diesem Datensatz zurückkehren müssen.
+Wenn die **Seek**- oder **Find**-Methode nicht erfolgreich war und die **NoMatch**-Eigenschaft auf **True** festgelegt ist, ist der aktuelle Datensatz nicht länger gültig. Rufen Sie die Textmarke des aktuellen Datensatzes ab, bevor Sie die **Seek**- oder **Find**-Methode verwenden, wenn Sie zu diesem Datensatz zurückkehren müssen.
 
 
 > [!NOTE]
-> [!HINWEIS] Das Verwenden einer der **[Move](recordset-movefirst-method-dao.md)** -Methoden für ein **Recordset**-Objekt hat keinen Einfluss auf die Einstellung seiner **NoMatch**-Eigenschaft.
+> Das Verwenden einer der **[Move](recordset-movefirst-method-dao.md)**-Methoden für ein **Recordset**-Objekt hat keinen Einfluss auf die Einstellung seiner **NoMatch**-Eigenschaft.
 
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **NoMatch** -Eigenschaft verwendet, um zu bestimmen, ob **Seek** und **FindFirst** erfolgreich waren, und falls nicht, entsprechendes Feedback zu geben. Die Vorgehensweisen SeekMatch und FindMatch sind erforderlich, damit dieses Verfahren ausgeführt wird.
+This example uses the **NoMatch** property to determine whether a **Seek** and a **FindFirst** were successful, and if not, to give appropriate feedback. The SeekMatch and FindMatch procedures are required for this procedure to run.
 
 ```vb
     Sub NoMatchX() 
@@ -170,7 +170,7 @@ In diesem Beispiel wird die **NoMatch** -Eigenschaft verwendet, um zu bestimmen,
 
 Im folgenden Beispiel wird gezeigt, wie Sie mithilfe der Seek-Methode einen Datensatz in einer verknüpften Tabelle finden.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub TestSeek()
