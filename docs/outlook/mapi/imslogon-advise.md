@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a3c5d937-642b-463b-b5a0-5d099e651895
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: abe4867b965f05e781f931d2e72920474d007d78
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317311"
 ---
 # <a name="imslogonadvise"></a>IMSLogon::Advise
 
@@ -25,7 +25,7 @@ ms.locfileid: "25382757"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert ein Objekt mit einem Anbieter für Benachrichtigungen zu Änderungen im Nachrichtenspeicher Nachricht. Nachrichtenspeicher sendet dann Benachrichtigungen zu Änderungen an das registrierte Objekt.
+Registriert ein Objekt bei einem Nachrichtenspeicher Anbieter für Benachrichtigungen zu Änderungen im Nachrichtenspeicher. Der Nachrichtenspeicher sendet dann Benachrichtigungen zu Änderungen am registrierten Objekt.
   
 ```cpp
 HRESULT Advise(
@@ -41,20 +41,20 @@ HRESULT Advise(
 
  _cbEntryID_
   
-> [in] Die Größe des Eintrags-ID, die auf das durch den Parameter _LpEntryID_ in Bytes. 
+> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird, in Bytes. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Objekts darüber, welche Benachrichtigungen generiert werden soll. Dieses Objekt kann es sich um einen Ordner, eine Nachricht oder ein anderes Objekt in der Nachrichtenspeicher sein. Alternativ MAPI der _CbEntryID_ -Parameter auf 0 festgelegt, und übergibt **null** für _LpEntryID_, werden der Advise-Empfänger Benachrichtigungen zu Änderungen an den Speicher für die gesamte Nachricht bereitgestellt.
+> in Ein Zeiger auf die Eintrags-ID des Objekts, über das Benachrichtigungen generiert werden sollen. Bei diesem Objekt kann es sich um einen Ordner, eine Nachricht oder ein beliebiges anderes Objekt im Nachrichtenspeicher handeln. Wenn MAPI den Parameter _cbEntryID_ auf 0 festlegt und für _lpEntryID_den Wert **null** übergibt, stellt die Advise-Senke Benachrichtigungen zu Änderungen am gesamten Nachrichtenspeicher bereit.
     
  _ulEventMask_
   
-> [in] Ein Ereignismaske der Typen der Benachrichtigungsereignisse für das Objekt zu dem MAPI-Benachrichtigungen generiert wird. Die Maske Filter Sonderfälle. Jeder Ereignistyp hat eine Struktur zugeordnet, die zusätzliche Informationen über das Ereignis enthält. Die folgende Tabelle enthält die möglichen Ereignistypen zusammen mit ihren entsprechenden Strukturen.
+> in Eine Ereignismaske der Typen von Benachrichtigungsereignissen, die für das Objekt auftreten, über das MAPI Benachrichtigungen generiert. Die Maske filtert bestimmte Fälle. Jedem Ereignistyp ist eine Struktur zugeordnet, die zusätzliche Informationen über das Ereignis enthält. In der folgenden Tabelle sind die möglichen Ereignistypen zusammen mit den entsprechenden Strukturen aufgeführt.
     
-|**Benachrichtigungstyp-Ereignis**|**Entsprechende Struktur**|
+|**Benachrichtigungs Ereignistyp**|**Entsprechende Struktur**|
 |:-----|:-----|
 |fnevCriticalError  <br/> |[ERROR_NOTIFICATION](error_notification.md) <br/> |
-|fnevNewMail  <br/> |[NEWMAIL_NOTIFICATION](newmail_notification.md) <br/> |
+|Uleventmaskfnevnewmail  <br/> |[NEWMAIL_NOTIFICATION](newmail_notification.md) <br/> |
 |fnevObjectCreated  <br/> |[OBJECT_NOTIFICATION](object_notification.md) <br/> |
 |fnevObjectDeleted  <br/> |[OBJECT_NOTIFICATION](object_notification.md) <br/> |
 |fnevObjectModified  <br/> |[OBJECT_NOTIFICATION](object_notification.md) <br/> |
@@ -65,11 +65,11 @@ HRESULT Advise(
    
  _lpAdviseSink_
   
-> [in] Ein Zeiger auf eine Advise-Empfängerobjekt aufgerufen werden, wenn ein Ereignis für das Sitzungsobjekt auftritt darüber, welche Benachrichtigung angefordert wurde. Diese Advise-Empfängerobjekt muss bereits vorhanden sein.
+> in Ein Zeiger auf ein Advise-Senke-Objekt, das aufgerufen werden soll, wenn ein Ereignis für das Session-Objekt auftritt, über das die Benachrichtigung angefordert wurde. Dieses Advise-Senke-Objekt muss bereits vorhanden sein.
     
  _lpulConnection_
   
-> [out] Ein Zeiger auf eine Variable, die bei einer erfolgreichen Rückgabe die Anzahl der Verbindung für die benachrichtigungsregistrierung enthält. Die Nummer muss ungleich NULL sein.
+> Out Ein Zeiger auf eine Variable, die bei erfolgreicher Rückgabe die Verbindungsnummer für die Benachrichtigungs Registrierung enthält. Die Verbindungsnummer muss ungleich NULL sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -79,19 +79,19 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Der Vorgang wird durch MAPI oder durch eine oder mehrere Dienstanbieter nicht unterstützt.
+> Der Vorgang wird nicht von MAPI oder von einem oder mehreren Dienstanbietern unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Nachricht-Anbieter implementiert die **IMSLogon::Advise** -Methode, um ein Objekt für Benachrichtigung Rückrufe registrieren. Wenn eine Änderung für das angegebene Objekt auftritt, überprüft der Anbieter finden Sie unter welche Ereignis Maskenbit im Parameter _UlEventMask_ gesetzt wurde und somit die Art der Änderung. Wenn ein bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfängerobjekt durch den Parameter _LpAdviseSink_ Sie das Ereignis melden angegeben. Daten, die in der Benachrichtigungsstruktur der **OnNotify** Routine übergeben wird das Ereignis beschrieben. 
+Nachrichtenspeicher Anbieter implementieren die **IMSLogon:: Advise** -Methode, um ein Objekt für Benachrichtigungsrückrufe zu registrieren. Wenn eine Änderung für das angegebene Objekt auftritt, überprüft der Anbieter, um zu sehen, welches Ereignis Masken Bit im _ulEventMask_ -Parameter festgelegt wurde, und daher, welche Art von Änderung aufgetreten ist. Wenn ein Bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode für das vom _lpAdviseSink_ -Parameter angegebene Advise-Senke-Objekt auf, um das Ereignis zu melden. Die Daten, die in der Benachrichtigungs **** Struktur an die OnNotify-Routine übergeben werden, beschreiben das Ereignis. 
   
-Der Aufruf von **OnNotify** kann auftreten, während des Anrufs, der das Objekt geändert wird, oder zu einem späteren Zeitpunkt. Auf Systemen, die mehreren Threads der Ausführung zu unterstützen, kann der Aufruf von **OnNotify** auf einem beliebigen Thread auftreten. Um einen Anruf an **OnNotify** sicher zu behandeln, die zu einem ungünstigen Zeitpunkt auftreten, sollte eine Clientanwendung die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion verwenden. 
+Der Aufruf von **OnNotify** kann während des Anrufs auftreten, der das Objekt oder zu einem späteren Zeitpunkt ändert. Auf Systemen, die mehrere Threads der Ausführung unterstützen, kann **** der Aufruf von OnNotify in jedem Thread auftreten. Um einen Anruf von onNotify **** sicher zu behandeln, der zu einem ungünstigen Zeitpunkt geschehen kann, sollte eine Clientanwendung die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion verwenden. 
   
-Um Benachrichtigungen zu ermöglichen, der Nachricht Speicher-Anbieter, der **Advise** muss eine Kopie des Zeigers auf das _LpAdviseSink_ implementiert advise-Empfängerobjekt; Hierzu ruft der Anbieter die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode für die Advise-Empfänger, dessen Objektzeiger verwalten, bis benachrichtigungsregistrierung mit einem Aufruf der Methode [IMSLogon::Unadvise](imslogon-unadvise.md) abgebrochen wird. Die **Advise** -Implementierung sollte weisen eine Verbindungsnummer zu der benachrichtigungsregistrierung und rufen **AddRef** für diese Verbindungsnummer vor der Rückgabe im _LpulConnection_ -Parameter. Dienstanbieter können das Empfängerobjekt Advise freigeben, müssen sie die Nummer nicht freigeben, bis **Unadvise** aufgerufen wurde, bevor die Registrierung wird abgebrochen. 
+Um Benachrichtigungen bereitzustellen, muss der Nachrichtenspeicher Anbieter, der **Advise** implementiert, eine Kopie des Zeigers auf das _lpAdviseSink_ -Advise-Senke-Objekt aufbewahren; Hierzu ruft der Anbieter die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode für die Advise-Senke auf, um den Objektzeiger zu warten, bis die Benachrichtigungs Registrierung mit einem Aufruf der [IMSLogon:: Unadvise](imslogon-unadvise.md) -Methode abgebrochen wird. Die **Advise** -Implementierung sollte der Benachrichtigungs Registrierung eine Verbindungsnummer zuweisen und **AddRef** für diese Verbindungsnummer aufrufen, bevor Sie im _lpulConnection_ -Parameter zurückgegeben wird. Dienstanbieter können das Advise-Senke-Objekt freigeben, bevor die Registrierung abgebrochen wird, aber Sie dürfen **** die Verbindungsnummer erst freigeben, wenn Unadvise aufgerufen wurde. 
   
-Nachdem ein Aufruf von **Advise** erfolgreich abgeschlossen wurde und bevor **Unadvise** aufgerufen wurde, müssen für das Empfängerobjekt Advise freigegeben werden muss Anbieter vorbereitet werden. Daher sollte ein Anbieter seine Advise-Empfängerobjekt freigeben, nachdem **Advise** zurückgegeben wird, sofern eine bestimmte langfristige Verwendung dafür ist. 
+Nachdem ein Aufruf von **Advise** erfolgreich war und bevor **Unadvise** aufgerufen wurde, müssen Anbieter für das Advise-Senke-Objekt freigegeben werden vorbereitet werden. Daher sollte ein Anbieter seine Advise-Senke-Objekt nach der Rückgabe von **Advise** freigeben, es sei denn, es hat eine bestimmte langfristige Verwendung für Sie. 
   
-Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event Notification in MAPI](event-notification-in-mapi.md). 
+Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

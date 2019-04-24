@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - InitFramework
 keywords:
-- Initframework-Funktion [excel 2007]
+- initframework-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: c472a14a-92a6-46f6-924c-db8d6199d6fb
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 2d7e3286d794d6f21da9ef83ca44d18ec242c063
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 34fe8f4a606956b90a0d005b0bc523cea460153f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310682"
 ---
 # <a name="initframework"></a>InitFramework
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliothek-Funktion, die der Framework-Klassenbibliothek initialisiert die einfach die temporäre **XLOPER**initialisiert/ **XLOPER12** Arbeitsspeicher Datenstrukturen, Freigeben von Speicher, der bereits zugeordnet wurde. 
+Framework Library-Funktion, die die Framework-Bibliothek initialisiert, die lediglich die temporären **XLOPER**/ -**XLOPER12** -Speicherdaten Strukturen initialisiert, die bereits zugewiesene Speicher freigeben. 
   
 ```cs
 short WINAPI InitFramework(void);
@@ -30,15 +30,15 @@ short WINAPI InitFramework(void);
 
 ## <a name="parameters"></a>Parameter
 
-Diese Funktion hat keine Argumente.
+Diese Funktion verwendet keine Parameter.
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Diese Funktion gibt keinen Wert zurück.
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **InitFramework** -Funktion verwendet, alle temporären Speicherplatz freizugeben. 
+In diesem Beispiel wird die **InitFramework** -Funktion verwendet, um den gesamten temporären Arbeitsspeicher freizugeben. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

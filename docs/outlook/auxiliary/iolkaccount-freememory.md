@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3b2ee5aa-7639-d86d-447e-50bda54aa3ec
-description: Durch die Schnittstelle IOlkAccount Arbeitsspeicher frei.
-ms.openlocfilehash: ce3046db29cb2cac7d7ee72a3e4e9125346a4ac4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt von der IOlkAccount-Schnittstelle zugewiesene Arbeitsspeicher frei.
+ms.openlocfilehash: a7f763ba4fc260a517f8b7df4d3791f4a8fd23b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321336"
 ---
 # <a name="iolkaccountfreememory"></a>IOlkAccount::FreeMemory
 
-Durch die Schnittstelle [IOlkAccount](iolkaccount.md) Arbeitsspeicher frei. 
+Gibt von der [IOlkAccount](iolkaccount.md) -Schnittstelle zugewiesene Arbeitsspeicher frei. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 ```cpp
 HRESULT IOlkAccount::FreeMemory (  
@@ -31,17 +31,17 @@ HRESULT IOlkAccount::FreeMemory (
 
 ## <a name="parameters"></a>Parameter
 
-_PV_
+_pv_
   
-> [in] Ein Zeiger auf den Speicher freigegeben werden.
+> in Ein Zeiger auf den zu speichernden Speicher.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie diese Methode, um Arbeitsspeicher freizugeben, die von [IOlkAccount::GetProp](iolkaccount-getprop.md) (wenn der Wert der Eigenschaft angegebene Konto einen Typ Binär oder eine Zeichenfolge ist) und [IOlkAccount::GetAccountInfo](iolkaccount-getaccountinfo.md)zugeordnet.
+Verwenden Sie diese Methode, um den von [IOlkAccount:: getprop](iolkaccount-getprop.md) reservierten Arbeitsspeicher freizugeben (wenn der Wert der angegebenen Account-Eigenschaft ein binary-oder String-Typ ist) und [IOlkAccount:: GetAccountInfo](iolkaccount-getaccountinfo.md).
   
 ## <a name="see-also"></a>Siehe auch
 

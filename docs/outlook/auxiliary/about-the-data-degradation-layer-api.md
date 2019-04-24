@@ -6,16 +6,16 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: e3ad18be-9547-9811-73e0-aca9c0fc7f76
-description: Die Data-Beeinträchtigung Layer-API bietet die Möglichkeit zum Ausblenden des zugrunde liegenden systemeigenen Zeichenformat eines Outlook-Objekts Client auf das Objekt in einem bevorzugten Zeichenformat, anstatt im systemeigenen Zeichenformat des Objekts zugreifen kann.
-ms.openlocfilehash: 4f1b76857616f006af6adee3492f759492b6ae50
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Die API für die Daten Degradations Schicht bietet die Möglichkeit, das zugrunde liegende systemeigene Zeichenformat eines Outlook-Objekts auszublenden, sodass ein Client auf das Objekt in einem bevorzugten Zeichenformat und nicht im systemeigenen Zeichenformat des Objekts zugreifen kann.
+ms.openlocfilehash: 8cfe9f1243e4f0bbef21386b5b523015b7383552
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316933"
 ---
 # <a name="about-the-data-degradation-layer-api"></a>Informationen zur Datendegradationsschicht-API
 
-Die Data-Beeinträchtigung Layer-API bietet die Möglichkeit zum Ausblenden des zugrunde liegenden systemeigenen Zeichenformat eines Outlook-Objekts Client auf das Objekt in einem bevorzugten Zeichenformat, anstatt im systemeigenen Zeichenformat des Objekts zugreifen kann. Es bietet die Konstantendefinitionen dargestellt in [Konstanten (Beeinträchtigung Datenebene API)](constants-data-degradation-layer-api.md)und die Funktion [HrCreateNewWrappedObject](hrcreatenewwrappedobject.md) , der in einem angegebenen Format ein umfließendem Outlook-Objekt zurückgibt. 
+Die API für die Daten Degradations Schicht bietet die Möglichkeit, das zugrunde liegende systemeigene Zeichenformat eines Outlook-Objekts auszublenden, sodass ein Client auf das Objekt in einem bevorzugten Zeichenformat und nicht im systemeigenen Zeichenformat des Objekts zugreifen kann. Sie enthält die Konstanten Definitionen, die in [Konstanten (Data Degradation Layer API)](constants-data-degradation-layer-api.md)gezeigt werden, und die Funktion [HrCreateNewWrappedObject](hrcreatenewwrappedobject.md) , die ein Outlook-Objekt zurückgibt, das in einem angegebenen Format umschlossen ist. 
   
 

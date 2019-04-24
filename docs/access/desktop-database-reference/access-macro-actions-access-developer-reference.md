@@ -8,15 +8,15 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: ccf94d51160aebcae8644def4433ace4f369b205
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280622"
 ---
 # <a name="access-macro-actions-access-developer-reference"></a>Access-Makroaktionen (Access-Entwicklerreferenz)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [ADP-Objekte](adp-objects.md)
 - [Datenaktionen](data-actions.md)

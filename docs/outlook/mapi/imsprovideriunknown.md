@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0f17aa44-abcb-4732-b013-d91652847cf6
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1c00e54d02ba494c94c9826eabe142e1bd3b9a80
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c5305ddd20b690f5c2e5807fb7ce2410549f7124
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317249"
 ---
 # <a name="imsprovider--iunknown"></a>IMSProvider : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf eine Nachricht-Anbieter über eine Nachricht Speicher-Anbieter-Objekt. Dieses Objekt "Message" Speicher-Anbieter wird bei der Anmeldung Anbieter von der Nachricht Informationsdienst [MSProviderInit](msproviderinit.md) Eintrag-Funktion zurückgegeben. Message-Speicher-Anbieter-Objekts wird hauptsächlich von Clientanwendungen und die MAPI-Warteschlange zum Nachrichtenspeicher zu öffnen. 
+Ermöglicht den Zugriff auf einen Nachrichtenspeicher Anbieter über ein Objekt des Nachrichtenspeicher Anbieters. Dieses Objekt des Nachrichtenspeicher Anbieters wird bei der Anbieter Anmeldung von der [MSProviderInit](msproviderinit.md) -Einstiegspunktfunktion des Nachrichtenspeicher Anbieters zurückgegeben. Das Nachrichtenspeicher-Anbieterobjekt wird hauptsächlich von Clientanwendungen und dem MAPI-Spooler zum Öffnen von Nachrichten speichern verwendet. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Message-Speicher-Anbieter-Objekte  <br/> |
-|Implementiert von:  <br/> |Nachricht-Anbieter  <br/> |
-|Aufgerufen von:  <br/> |MAPI- und die MAPI-Warteschlange  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Nachrichtenspeicheranbieter-Objekte  <br/> |
+|Implementiert von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|Aufgerufen von:  <br/> |MAPI und der MAPI-Spooler  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMSProvider  <br/> |
 |Zeigertyp:  <br/> |LPMSPROVIDER  <br/> |
    
@@ -40,22 +40,22 @@ Ermöglicht den Zugriff auf eine Nachricht-Anbieter über eine Nachricht Speiche
 
 |||
 |:-----|:-----|
-|[Herunterfahren](imsprovider-shutdown.md) <br/> |Schließt einen Anbieter für Nachricht Anmelden in einer bestimmten Reihenfolge.  <br/> |
-|[Logon](imsprovider-logon.md) <br/> |Protokolle MAPI an eine Instanz der Anbieter eine Nachricht.  <br/> |
-|[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |Die MAPI-Warteschlange an einen Nachrichtenspeicher protokolliert.  <br/> |
-|[CompareStoreIDs](imsprovider-comparestoreids.md) <br/> |Vergleicht zwei e-Mail-Store-Eintragsbezeichner, um zu bestimmen, ob sie auf das gleiche Store-Objekt verweisen.  <br/> |
+|[Herunterfahren](imsprovider-shutdown.md) <br/> |Schließt einen Nachrichtenspeicher Anbieter ordnungsgemäß.  <br/> |
+|[Logon](imsprovider-logon.md) <br/> |Protokolliert MAPI für eine Instanz eines Nachrichtenspeicher Anbieters.  <br/> |
+|[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |Protokolliert den MAPI-Spooler in einem Nachrichtenspeicher.  <br/> |
+|[CompareStoreIDs](imsprovider-comparestoreids.md) <br/> |Vergleicht zwei Nachrichtenspeicher Eintrags-IDs, um zu bestimmen, ob Sie auf dasselbe Store-Objekt verweisen.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI verwendet einen Speicher-Anbieterobjekt "Message" pro Sitzung, unabhängig davon, wie viele Nachricht Speicher Speicheranbieter geöffnet werden. Wenn eine zweite MAPI-Sitzung anmeldet alle geöffneten Informationsspeicher, ruft MAPI zum Erstellen eines neuen Nachricht Speicher-Anbieter-Objekts für diese Sitzung verwendet ein zweites Mal an **MSProviderInit** . 
+MAPI verwendet ein Nachrichtenspeicher-Anbieterobjekt pro Sitzung, unabhängig davon, wie viele Nachrichtenspeicher vom Informationsspeicher Anbieter geöffnet werden. Wenn sich eine zweite MAPI-Sitzung bei einem geöffneten Speicher anmeldet, ruft MAPI **MSProviderInit** ein zweites Mal auf, um ein neues Nachrichtenspeicher-Anbieterobjekt für die zu verwendende Sitzung zu erstellen. 
   
-Ein Objekt "Message" Speicher-Anbieter muss die folgenden ordnungsgemäß funktioniert enthalten:
+Ein Nachrichtenspeicher-Anbieterobjekt muss Folgendes enthalten, damit es ordnungsgemäß funktioniert:
   
-- Ein _LpMalloc_ -Zuweisung von virtuellem Speicher routinemäßige Zeiger für die Verwendung durch alle Speicher, die mit diesem Anbieterobjekt geöffnet. 
+- Ein _lpMalloc_ -Routine Zeiger zur Speicherzuweisung für die Verwendung durch alle Speicher, die mithilfe dieses Anbieterobjekts geöffnet werden. 
     
-- Die _LpfAllocateBuffer_, _ LpfAllocateMore _ und _LpfFreeBuffer_ routinemäßige Zeiger auf die Speicherverwaltungsfunktionen [MAPIAllocateBuffer](mapiallocatebuffer.md), [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer](mapifreebuffer.md) . 
+- Die _lpfAllocateBuffer_-, _ lpfAllocateMore _-und _lpfFreeBuffer_ -Routine Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md)-, [MAPIAllocateMore](mapiallocatemore.md)-und [mapifreebufferfreigegeben](mapifreebuffer.md) -Speicher Zuordnungsfunktionen. 
     
-- Eine verknüpfte Liste aller Geschäfte mit diesem Anbieterobjekt geöffnet und noch nicht geschlossen.
+- Eine verknüpfte Liste aller Speicher, die mithilfe dieses Anbieterobjekts geöffnet und noch nicht geschlossen wurden.
     
 ## <a name="see-also"></a>Siehe auch
 

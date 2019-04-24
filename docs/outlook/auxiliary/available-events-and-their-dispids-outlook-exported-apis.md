@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 1fd848c7-038e-4e2f-8997-c8509b31df79
-description: Dieser Abschnitt beschreibt die Versendung Bezeichner für die Ereignisse, die Outlook verfügbar gemacht werden.
+description: In diesem Abschnitt werden die Dispatch-IDs für die Ereignisse beschrieben, die Outlook zur Verfügung stellt.
 ms.openlocfilehash: 31843a2eb8f91eabdc0dbf54a269270eb172baa7
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316877"
 ---
 # <a name="available-events-and-their-dispids-outlook-exported-apis"></a>Verfügbaren Ereignisse und ihrer Dispids (Outlook exportierter APIs)
 
-Dieser Abschnitt beschreibt die Versendung Bezeichner für die Ereignisse, die Outlook verfügbar gemacht werden.
+In diesem Abschnitt werden die Dispatch-IDs für die Ereignisse beschrieben, die Outlook zur Verfügung stellt.
   
-Outlook macht die folgenden Versendung-IDs (Dispids) um C++-add-ins zum Abhören von und behandeln die entsprechenden Ereignisse aus der [IDispatch:: Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) -Funktion zu ermöglichen. 
+Outlook macht die folgenden Dispatch-IDs (DispIds) verfügbar, damit C++-Add-Ins die entsprechenden Ereignisse über die [IDispatch:: Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) -Funktion abhören und behandeln können. 
   
-|**Konstante**|**DISPID für-Ereignis**|**Beschreibung**|**Parameter**|**Hinweise**|
+|**Konstante**|**DISPID für Ereignis**|**Beschreibung**|**Parameter**|**Hinweise**|
 |:-----|:-----|:-----|:-----|:-----|
-|**dispidBeforePrint** <br/> |0xFC8E  <br/> |Verwendet, um das Ereignis auf Anwendungsebene aus der **IDispatch:: Invoke** -Funktion zu behandeln, die vor einem Druckvorgang ausgelöst.  <br/> | Es gibt 2 unbenannte Parameter:  <br/>  Der erste Parameter des Typs ist ** VT_BOOL|VT_BREF **. Geben Sie in diesem Parameter wird das Ereignis abgebrochen **VARIANT_TRUE** zurück.  <br/>  Der zweite Parameter wird nicht verwendet und sollte ignoriert werden.  <br/> |Diese Dispid ist ab Outlook 2010 verfügbar.  <br/> |
-|**dispidEventReadComplete** <br/> |0xFC8F  <br/> |Verwendet, um das Ereignis Elementebene die **IDispatch:: Invoke** -Funktion zu behandeln, das ausgelöst wird, wenn Outlook abgeschlossen ist, lesen die Eigenschaften des Elements.  <br/> |Es gibt nur einen Parameter vom Typ ist _Abbrechen_ ** VT_BOOL|VT_BREF **. Geben Sie in diesem Parameter lesen-Vorgang Abbrechen **VARIANT_TRUE** zurück.  <br/> |Diese Dispid ist ab Outlook 2010 verfügbar.  <br/> Dieses Ereignis entspricht dem Exchange Client Extensions (ECE)-Ereignis **IExchExtMessageEvents::OnReadComplete**, und auch auf die **"ReadComplete** "-Ereignis hinzugefügt wurde auf das Objektmodell seit Outlook 2013.  <br/> |
+|**dispidBeforePrint** <br/> |0xFC8E  <br/> |Wird verwendet, um das Ereignis auf Anwendungsebene aus der **IDispatch:: Invoke** -Funktion zu behandeln, die vor einem Druckvorgang ausgelöst wird.  <br/> | Es gibt zwei unbenannte Parameter:  <br/>  Der erste Parameter hat den Typ * * VT_BOOL|VT_BREF * *. Geben Sie **VARIANT_TRUE** in diesem Parameter zurück, um das Ereignis abzubrechen.  <br/>  Der zweite Parameter wird nicht verwendet und sollte ignoriert werden.  <br/> |Diese DISPID ist seit Outlook 2010 verfügbar.  <br/> |
+|**dispidEventReadComplete** <br/> |0xFC8F  <br/> |Wird verwendet, um das Ereignis auf Elementebene aus der **IDispatch:: Invoke** -Funktion zu behandeln, die ausgelöst wird, wenn Outlook die Eigenschaften des Elements gelesen hat.  <br/> |Es gibt nur einen Parameter _Cancel_ , der vom Typ * * VT_BOOL|VT_BREF * *. Geben Sie **VARIANT_TRUE** in diesem Parameter zurück, um den Lesevorgang abzubrechen.  <br/> |Diese DISPID ist seit Outlook 2010 verfügbar.  <br/> Dieses Ereignis entspricht dem Ereignis **IExchExtMessageEvents:: OnReadComplete**für Exchange-Client Erweiterungen (ECE) und auch dem **ReadComplete** -Ereignis, das dem objektmodell seit Outlook 2013 hinzugefügt wurde.  <br/> |
    
-Ein Beispiel dafür, wie Sie mit einer Dispid anhören und Verarbeiten eines Ereignisses, finden Sie unter der `CAppEventListener::Invoke` -Funktion in der C++-Outlook-Lösung in der [Implementierung von Outlook 2002/XP Ereignissenken in MFC C++ 2003 .NET](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)beschrieben.
+Ein Beispiel für die Verwendung einer DispID zum Abhören und behandeln eines Ereignisses finden Sie in der in `CAppEventListener::Invoke` [Implementieren von Outlook 2002/XP-Ereignissenken in MFC c++ 2003 .net](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)beschriebenen Funktion in der c++-Outlook-Lösung.
   
 ## <a name="see-also"></a>Siehe auch
 
 - [Aus Outlook exportierte APIs](outlook-exported-apis.md)
 - [Konstanten (Outlook exportierter APIs)](constants-outlook-exported-apis.md)
 - [Informationen zu von Outlook exportierten APIs](about-apis-exported-by-outlook.md)
-- [Implementieren von Outlook 2002/XP-Ereignis in MFC C++ 2003 .NET senken](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)
+- [Implementieren von Outlook 2002/XP-Ereignissenken in MFC C++ 2003 .NET](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)
 

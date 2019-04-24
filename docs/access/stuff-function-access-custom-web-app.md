@@ -1,41 +1,41 @@
 ---
-title: Dinge-Funktion (Access benutzerdefinierte Web app)
+title: Stuff-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4d8d6a34-f884-40a4-b330-5c104d16cf97
-description: Fügt eine Textzeichenfolge in einer anderen Zeichenfolge. Löscht eine angegebene Anzahl von Zeichen in der ersten Zeichenfolge an der Startposition und klicken Sie dann in der ersten Zeichenfolge an der Startposition die zweite Zeichenfolge eingefügt.
-ms.openlocfilehash: 5540bb5936803370835a0c3d80b420edc13d0de6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Fügt eine Textzeichenfolge in eine andere Textzeichenfolge ein. Sie löscht eine angegebene Zeichen Länge in der ersten Zeichenfolge an der Startposition und fügt dann die zweite Zeichenfolge in die erste Zeichenfolge an der Startposition ein.
+ms.openlocfilehash: 591823952faa0d593b6db1f5bfb00cc68a894a8d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311025"
 ---
-# <a name="stuff-function-access-custom-web-app"></a>Dinge-Funktion (Access benutzerdefinierte Web app)
+# <a name="stuff-function-access-custom-web-app"></a>Stuff-Funktion (Access Custom Web App)
 
-Fügt eine Textzeichenfolge in einer anderen Zeichenfolge. Löscht eine angegebene Anzahl von Zeichen in der ersten Zeichenfolge an der Startposition und klicken Sie dann in der ersten Zeichenfolge an der Startposition die zweite Zeichenfolge eingefügt.
+Fügt eine Textzeichenfolge in eine andere Textzeichenfolge ein. Sie löscht eine angegebene Zeichen Länge in der ersten Zeichenfolge an der Startposition und fügt dann die zweite Zeichenfolge in die erste Zeichenfolge an der Startposition ein.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- **Sammlung (engl.)** (*IntoTextExpression*, *Starten*, *Länge*, *ThisTextExpression*) 
+ **Stuff** (*IntoTextExpression*, *Start*, *length*, *ThisTextExpression*) 
   
-Die **Dinge** -Funktion enthält die folgenden Argumente. 
+Die **stuff** -Funktion enthält die folgenden Argumente. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *IntoTextExpression*  <br/> |Ein Ausdruck, der den Text angibt, in dem der durch die *ThisTextExpression* angegebene Text eingefügt werden.  <br/> |
-| *Start*  <br/> |Ein Ganzzahlwert, der den Speicherort zum Löschen und Einfügen begonnen angibt. Wenn Start oder Length negativ ist, wird eine null-Zeichenfolge zurückgegeben. Wenn Start länger als die erste *IntoTextExpression* ist, wird eine null-Zeichenfolge zurückgegeben.  <br/> |
-| *Length*  <br/> |Eine ganze Zahl, die die Anzahl der zu löschenden Zeichen angibt. Wenn Length länger als die erste *IntoTextExpression* ist, erfolgt die Löschung bis zum letzten Zeichen in der letzten *IntoTextExpression* .  <br/> |
-| *ThisTextExpression*  <br/> |Hat einen Text-Ausdruck gibt den Text in *IntoTextExpression* einfügen. Dieser Ausdruck ersetzt Length Zeichen des *IntoTextExpression* , beginnend am *Starten* .  <br/> |
+| *IntoTextExpression*  <br/> |Ein Textausdruck, der den Text angibt, in den der durch das *ThisTextExpression* angegebene Text eingefügt wird.  <br/> |
+| *Start*  <br/> |Ein ganzzahliger Wert, der die Position angibt, zu der gelöscht und eingefügt werden soll. Wenn Start oder length negativ ist, wird eine NULL-Zeichenfolge zurückgegeben. Wenn Start länger als der erste *IntoTextExpression* ist, wird eine NULL-Zeichenfolge zurückgegeben.  <br/> |
+| *Length*  <br/> |Eine ganze Zahl, die die Anzahl der zu löschenden Zeichen angibt. Wenn length länger als der erste *IntoTextExpression* ist, wird der Löschvorgang bis zum letzten Zeichen im letzten *IntoTextExpression* ausgeführt.  <br/> |
+| *ThisTextExpression*  <br/> |Ein Text Ausdrucks-Hut gibt den Text an, der in *IntoTextExpression* eingefügt werden soll. Dieser Ausdruck ersetzt die Länge der Zeichen von *IntoTextExpression* , die am Anfang *beginnen* .  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn die Argumente *Start* oder *Length* negativ sind oder die Startposition größer als die Länge der ersten Zeichenfolge ist, wird eine leere Zeichenfolge zurückgegeben. Wenn die Startposition 0 ist, wird ein Nullwert zurückgegeben. Wenn die Länge zu löschenden länger als die erste Zeichenfolge ist, wird es auf das erste Zeichen in der ersten Zeichenfolge gelöscht. 
+Wenn die Argumente *Start* oder *length* negativ sind oder wenn die Anfangsposition größer als die Länge der ersten Zeichenfolge ist, wird eine NULL-Zeichenfolge zurückgegeben. Wenn die Startposition 0 ist, wird ein NULL-Wert zurückgegeben. Wenn die zu löschende Länge länger als die erste Zeichenfolge ist, wird Sie in das erste Zeichen in der ersten Zeichenfolge gelöscht. 
   
 

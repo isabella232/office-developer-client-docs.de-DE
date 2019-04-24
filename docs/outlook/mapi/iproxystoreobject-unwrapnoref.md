@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 1122b6e0-e7e1-e68a-e090-435777343d04
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: ef9f506c1a95fec86c7f092b0299198e6149d3ba
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320153"
 ---
 # <a name="iproxystoreobjectunwrapnoref"></a>IProxyStoreObject::UnwrapNoRef
 
@@ -25,7 +25,7 @@ ms.locfileid: "25382932"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft einen Zeiger auf ein allein stehenden Internet Message Access Protocol (IMAP) Store-Objekt, das Zugriff auf die zugrunde liegende Persönliche Ordner-Datei (PST) bietet ohne Synchronisation aufrufen und die Elemente herunterladen.
+Ruft einen Zeiger auf ein nicht umbrochenes IMAP-Speicherobjekt (Internet Message Access Protocol) ab, das den Zugriff auf die zugrunde liegende persönliche Ordner-Datei (PST) ermöglicht, ohne die Synchronisierung zu aufrufen und die Elemente herunterzuladen.
   
 ```cpp
 HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject ); 
@@ -35,19 +35,19 @@ HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject );
 
  _ppvObject_
   
-> [out] Zeiger auf eine [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) allein stehenden ist Store-Objekt. 
+> Out Zeiger auf ein [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) Store-Objekt, das nicht umbrochen wird. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK
   
-- Der Aufruf war erfolgreich, und ein Zeiger auf eine allein stehenden-Schnittstelle in _PpvObject_zurückgegeben wurden.
+- Der Aufruf wurde erfolgreich ausgeführt, und ein Zeiger auf eine nicht umbrochene Schnittstelle wurde in _ppvObject_zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ohne den ersten Entpacken einen IMAP-Speicher, kann den Zugriff auf eine Nachricht im Speicher eine Synchronisierung erzwingen, die versucht, laden Sie die gesamte Nachricht. Ermöglicht den Zugriff auf die Nachricht im aktuellen Zustand ohne Auslösen der Download mit den allein stehenden Speicher.
+Ohne das erste Auspacken eines IMAP-Speichers kann der Zugriff auf eine Nachricht im Speicher eine Synchronisierung erzwingen, die versucht, die gesamte Nachricht herunterzuladen. Die Verwendung des unwrapped-Speichers ermöglicht den Zugriff auf die Nachricht im aktuellen Zustand, ohne einen Download auszulösen.
   
-Da **UnwrapNoRef** nicht den Referenzzähler für diese neuen Zeiger auf das allein stehenden Store-Objekt, nach dem erfolgreichen Aufruf von **UnwrapNoRef**erhöht, sollten Sie [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) zum Verwalten von des Referenzzähler aufrufen. 
+Da **UnwrapNoRef** den Verweiszähler für diesen neuen Zeiger nicht auf das unwrapped Store-Objekt erhöht, sollten Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef**die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um den Verweiszähler zu verwalten. 
   
 ## <a name="see-also"></a>Siehe auch
 

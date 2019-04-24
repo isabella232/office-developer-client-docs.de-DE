@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9e3c8d6e-74be-46a7-94ed-74a969caf165
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3c2db9284c0e014101bc3a3d2114a187d7cb3b4b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 302aebd0be78c833acf4f82d2bb815ba46ae6f77
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317393"
 ---
 # <a name="imsgserviceadmingetlasterror"></a>IMsgServiceAdmin::GetLastError
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den letzten Fehler enthält, die für ein Objekt "Message" Service Administration aufgetreten sind. 
+Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum letzten Fehler enthält, der für ein Nachrichtendienst-Verwaltungsobjekt aufgetreten ist. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,21 +39,21 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in] Ein HRESULT-Datentyp, der den Fehlerwert durch den vorherigen Methodenaufruf von generiert enthält.
+> in Ein HRESULT-Datentyp, der den vom vorherigen Methodenaufruf generierten Fehlerwert enthält.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur zurückgegeben, die im Parameter _LppMAPIError_ sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält. Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn es keine **MAPIERROR** -Struktur ist zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn keine **MAPIERROR** -Struktur zurückgegeben werden soll. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Die Option MAPI_UNICODE wurde festgelegt, und das Objekt "Message" Service Administration Unicode nicht unterstützt.
+> Das MAPI_UNICODE-Flag wurde festgelegt, und das Nachrichtendienst-Verwaltungsobjekt unterstützt Unicode nicht.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgServiceAdmin::GetLastError** -Methode ruft Informationen über den letzten Fehler, der durch einen Aufruf der Methode [IMsgServiceAdmin](imsgserviceadminiunknown.md) zurückgegeben wurde. Clients können die Benutzer mit ausführlichen Informationen zu dem Fehler bereitstellen, indem Sie diese Informationen in einem Dialogfeld einschließlich. 
+Die **IMsgServiceAdmin:: getlasterroraufzurufen** -Methode ruft Informationen zum letzten Fehler ab, der von einem Aufruf der [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Methode zurückgegeben wurde. Clients können Ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem Sie diese Informationen in ein Dialogfeld einschließen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können nutzen Sie die **MAPIERROR** Struktur, wenn MAPI bereitstellt, auf das durch den Parameter _LppMAPIError_ nur, wenn **GetLastError** gibt S_OK zurück. In einigen Fällen kann MAPI nicht ermitteln, was letzten Fehlers wurde oder nicht mehr zu dem Fehler gemeldet wurde. In diesem Fall gibt **GetLastError** einen Zeiger auf NULL in _LppMAPIError_ stattdessen. 
+Sie können die **MAPIERROR** -Struktur verwenden, wenn MAPI eine bereitstellt, auf die durch den _lppMAPIError_ -Parameter verwiesen wird, nur, wenn **getlasterroraufzurufen** S_OK zurückgibt. Manchmal kann MAPI nicht ermitteln, was der letzte Fehler war oder nicht mehr über den Fehler berichtet hat. In dieser Situation gibt **getlasterroraufzurufen** stattdessen einen Zeiger auf NULL in _lppMAPIError_ zurück. 
   
-Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Erweiterte Fehler verwenden](mapi-extended-errors.md).
+Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [using Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 

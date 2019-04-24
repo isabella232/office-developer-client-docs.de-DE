@@ -6,28 +6,28 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 24e3cf95-88f1-444a-b9b9-738077db714a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e5b3b7ac38e4e6b217779190fd652c7a223792b8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e685c178a4ecf9b5526780c514fd4a0dcf6559f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318935"
 ---
 # <a name="mapi-concepts"></a>MAPI-Konzepte
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieser Abschnitt enthält einen Leitfaden zu verstehen und Programmieren mit MAPI.
+Dieser Abschnitt enthält eine Anleitung zum Verständnis und zur Programmierung mit MAPI.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [MAPI-Features und die Architektur](mapi-features-and-architecture.md): enthält Informationen zu den Konzepten und allgemeine MAPI-Entwurf.
+- [MAPI-Features und-Architektur](mapi-features-and-architecture.md): enthält Informationen zu allgemeinen MAPI-Designs und-Konzepten.
     
-- [MAPI-Anwendungsentwicklung](mapi-application-development.md): enthält Informationen zum Entwickeln von Clientanwendungen und Dienstanbieter mithilfe von MAPI.
+- [MAPI-Anwendungsentwicklung](mapi-application-development.md): enthält Informationen zum Entwickeln von Clientanwendungen und Dienstanbietern mithilfe von MAPI.
     
-- [MAPI-Programmierung Elemente](mapi-programming-elements.md): enthält eine konzeptionelle Übersicht der Programmierung Elemente in der [MAPI-Referenz](mapi-reference.md).
+- [MAPI-Programmierelemente](mapi-programming-elements.md): enthält konzeptionelle Übersichten der Programmierelemente in der [MAPI-Referenz](mapi-reference.md).
     
-- [MAPI-Dienstanbieter](mapi-service-providers.md): enthält grundlegende Informationen zu MAPI-Dienstanbieter.
+- [MAPI-Dienstanbieter](mapi-service-providers.md): enthält grundlegende Informationen zu MAPI-Dienstanbietern.
     
 ## <a name="related-sections"></a>Verwandte Abschnitte
 

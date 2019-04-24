@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a416762b-7294-c99f-d9f1-332c3ed35dff
 description: Definiert das Linienmuster eines Shapes. Der in die Zelle LinePattern eingegebene Wert ist eine Zahl, die einen Index für eine Linienmustersammlung darstellt.
-ms.openlocfilehash: cccc6028de21299942e62c53aba48622baa95f98
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eec5bed18777f7822f9544d59dce7722f2f732bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316443"
 ---
-# <a name="linepattern-cell-line-format-section"></a>LinePattern Cell (Line Format Section)
+# <a name="linepattern-cell-line-format-section"></a>Zelle "LinePattern" (Abschnitt "Line Format")
 
 Definiert das Linienmuster eines Shapes. Der in die Zelle LinePattern eingegebene Wert ist eine Zahl, die einen Index für eine Linienmustersammlung darstellt.
   
@@ -32,13 +32,13 @@ Sie können sich die Linienmustersammlung auch im Dialogfeld **Linie** ansehen (
   
 Um ein benutzerdefiniertes Linienmuster anzugeben, verwenden Sie die Funktion VERWENDUNG in dieser Zelle.
   
-Wenn Sie einen Verweis auf die Zelle LinePattern aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "LinePattern aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LinePattern  <br/> |
+|Zellenname:  <br/> |"LinePattern  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LinePattern aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "LinePattern aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

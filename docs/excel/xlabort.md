@@ -1,5 +1,5 @@
 ---
-title: Bereichsgröße
+title: xlAbort
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlAbort
 keywords:
-- Bereichsgröße-Funktion [excel 2007]
+- xlAbort-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 0fe71454-6b00-464b-8abf-afb209d57754
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e90cbe496404b4cc602dee1ad21c91c8f5f91bfd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 08ab69252520e76a5631c5e32a3970d2d95b1ff4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310255"
 ---
-# <a name="xlabort"></a>Bereichsgröße
+# <a name="xlabort"></a>xlAbort
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Ergibt den Prozessor an anderen Vorgängen im System und überprüft, ob der Benutzer die **ESC-Taste** , um ein Makro abzubrechen gedrückt hat. Wenn der Benutzer während einer neuberechnung Arbeitsmappe die **ESC-Taste** gedrückt wurde, können sie auch aus innerhalb einer Tabellenfunktion erkannt werden durch Aufrufen dieser Funktion. 
+Liefert den Prozessor anderen Aufgaben im System und überprüft, ob der Benutzer **ESC** gedrückt hat, um ein Makro abzubrechen. Wenn der Benutzer während einer Neuberechnung der Arbeitsmappe **ESC** gedrückt hat, kann er auch aus einer Arbeitsblattfunktion durch Aufrufen dieser Funktion erkannt werden. 
   
 ```cs
 Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
@@ -30,29 +30,29 @@ Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
 
 ## <a name="parameters"></a>Parameter
 
- _pxRetain_ (**XltypeBool**)
+ _pxRetain_ (**xltypeBool**)
   
-(Optional). Wenn **FALSE**, diese Funktion für die Unterbrechung überprüft und löscht alle ausstehenden Umbruch. Dies ermöglicht dem Benutzer trotz der Unterbrechung fortgesetzt. Wenn dieses Argument ausgelassen wird oder den Wert **TRUE**, überprüft die Funktion für den Abbruch eines Benutzers ohne löschen.
+(Optional). Wenn **false**, prüft diese Funktion auf die Unterbrechungsbedingung und löscht alle ausstehenden Breaks. Dadurch kann der Benutzer trotz der Unterbrechungsbedingung fortfahren. Wenn dieses Argument ausgelassen oder **true**ist, prüft die Funktion, ob ein Benutzer abgebrochen wird, ohne Sie zu löschen.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt **TRUE** (**XltypeBool**) zurück, wenn der Benutzer die **ESC-Taste**gedrückt wurde.
+Gibt **true** (**xltypeBool**) zurück, wenn der Benutzer **ESC**gedrückt hat.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 ### 
 
-#### <a name="frequent-calls-may-be-needed"></a>Häufig ist eventuell erforderlich
+#### <a name="frequent-calls-may-be-needed"></a>Häufige Anrufe sind MöglicherWeise erforderlich
 
-Funktionen und Befehle, die eine lange dauern konnte sollte diese Funktion häufig, um den Prozessor an anderen Vorgängen im System zu erzielen aufrufen.
+Funktionen und Befehle, die längere Zeit in Anspruch nehmen können, sollten diese Funktion häufig aufrufen, um den Prozessor an andere Aufgaben im System zu übergeben.
   
-#### <a name="avoid-sensitive-language"></a>Vermeiden Sie vertrauliche Sprache
+#### <a name="avoid-sensitive-language"></a>Vermeiden von vertraulichen Sprachen
 
-Vermeiden der Verwendung des Begriffs "Abbrechen" auf der Benutzeroberfläche. Erwägen, "Abbrechen", "Anhalten", "Unterbrochen" oder "Stop" stattdessen.
+Vermeiden Sie die Verwendung des Ausdrucks "Abort" auf Ihrer Benutzeroberfläche. Verwenden Sie stattdessen "Abbrechen", "anhalten", "Break" oder "Stop".
   
 ## <a name="example"></a>Beispiel
 
-Mit dem folgende Code wird die aktive Zelle wiederholt auf einem Blatt verschoben, bis eine Minute vergangen ist oder der Benutzer die **ESC-Taste**drückt. Sie ruft die Funktion **Bereichsgröße** gelegentlich. Dies ergibt Prozessor, gemeinsame Multitasking Beschleunigung. 
+Mit dem folgenden Code wird die aktive Zelle wiederholt auf einem Blatt verschoben, bis eine Minute abgelaufen ist oder der Benutzer **ESC**drückt. Die Funktion **XlAbort** wird gelegentlich aufgerufen. Dadurch erhält der Prozessor eine Vereinfachung des kooperativen Multitaskings. 
   
  `\SAMPLES\GENERIC\GENERIC.C`
   

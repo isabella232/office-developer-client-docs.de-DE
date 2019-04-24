@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 581db5d9-35f7-43ad-aef3-a5d5da310150
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7176f3547c18ec72e4bfc0a749b3814d1e906b7b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dbf9f9f73d9e3860b482f81fb942673e6d373267
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321553"
 ---
 # <a name="imapigetsessiongetmapisession"></a>IMAPIGetSession::GetMAPISession
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf die MAPI-Sitzung, die das MAPI-Support-Objekt zugeordnet.
+Gibt einen Verweis auf die MAPI-Sitzung zurück, die dem MAPI-Unterstützungsobjekt zugeordnet ist.
   
 ```cpp
 HRESULT GetMAPISession(
@@ -37,7 +37,7 @@ HRESULT GetMAPISession(
 
  _lppSession_
   
-> [out] Ein Zeiger auf den aktuellen MAPI-Sitzung.
+> Out Ein Zeiger auf die aktuelle MAPI-Sitzung.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -46,5 +46,5 @@ HRESULT GetMAPISession(
 [IMAPIGetSession : IUnknown](imapigetsessioniunknown.md)
 
 
-[Übersicht über Unterstützungsobjekte](support-object-overview.md)
+[Übersicht über das Support Objekt](support-object-overview.md)
 

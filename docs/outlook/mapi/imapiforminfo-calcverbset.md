@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0170dc9d-dc72-48e2-a522-374f199b18ea
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: db3cc987b20a76116f2591485f57afae017d3e15
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: babff746af16d51ca154d049943f6be7e9fab589
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321694"
 ---
 # <a name="imapiforminfocalcverbset"></a>IMAPIFormInfo::CalcVerbSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf den vollständigen Satz von Verben, die ein Formular verwendet wird.
+Gibt einen Zeiger auf den vollständigen Satz von Verben zurück, die ein Formular verwendet.
   
 ```cpp
 HRESULT CalcVerbSet(
@@ -38,17 +38,17 @@ HRESULT CalcVerbSet(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _ppMAPIVerbArray_
   
-> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIVerbArray](smapiverbarray.md) -Struktur, die dem Formular zugrunde Verben enthält. 
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIVerbArray](smapiverbarray.md) -Struktur, die die Verben des Formulars enthält. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -56,19 +56,19 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen rufen Sie die **IMAPIFormInfo::CalcVerbSet** -Methode, um einen Zeiger auf den Satz von Verben, die von einem Formular verwendeten abrufen. In der **SMAPIVerbArray** -Struktur, die in der _PpMAPIVerbArray_ -Parameter zurückgegeben werden die Verben in der Reihenfolge der Indexnummer zurückgegeben. Index des Verbs wird in seinem **lVerb** Mitglied gefunden. Clientanwendungen können das Verb Array dynamisch erstellen Menüs, ausblenden oder Schaltflächen anzeigen, und so weiter. 
+Client Anwendungen rufen die **IMAPIFormInfo:: CalcVerbSet** -Methode auf, um einen Zeiger auf die von einem Formular verwendete Verben abzurufen. In der **SMAPIVerbArray** -Struktur, die im Parameter _ppMAPIVerbArray_ zurückgegeben wird, werden die Verben in der Reihenfolge der Indexnummer zurückgegeben. jeder Verb Index wird im **lVerb** -Element gefunden. Client Anwendungen können das Verb-Array verwenden, um Menüs dynamisch zu erstellen, Schaltflächen ein-oder auszublenden usw. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MFCOutput.cpp  <br/> |_OutputFormInfo  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormInfo::CalcVerbSet** -Methode beim Schreiben der Debugausgabe für Formular Informationen-Objekte.  <br/> |
+|MFCOutput. cpp  <br/> |_OutputFormInfo  <br/> |MFCMAPI verwendet die **IMAPIFormInfo:: CalcVerbSet** -Methode beim Schreiben der Debug-Ausgabe für Formular Informationsobjekte.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

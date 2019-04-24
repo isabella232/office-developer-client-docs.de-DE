@@ -11,34 +11,34 @@ api_name:
 api_type:
 - COM
 ms.assetid: f8858fcf-315e-dc62-60ad-f9782676e51d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 75a876d38e7fd7447058d70ec96f709f84812dae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: abc0afa30aaac75d7980d7de83705ae4c3b43f99
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315047"
 ---
 # <a name="ipstx2--ipstx"></a>IPSTX2 : IPSTX
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Schnittstelle stellt Hilfsfunktionen beim Ausführen einer Replikation über die **[IOSTX](iostxiunknown.md)** -Schnittstelle. 
+Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die **[IOSTX](iostxiunknown.md)** -Schnittstelle. 
   
 |||
 |:-----|:-----|
-|Bereitgestellt von  <br/> |Abfrage für [IMsgStore](imsgstoreimapiprop.md) <br/> |
+|Bereitgestellt von  <br/> |Abfrage auf [IMsgStore](imsgstoreimapiprop.md) <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTX2  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-| *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
-| *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
-|**[SetSpoolSuspendState](ipstx2-setspoolsuspendstate.md)** <br/> |Legt den angehaltenen Zustand auf die Warteschlange.  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[SetSpoolSuspendState](ipstx2-setspoolsuspendstate.md)** <br/> |Legt den angehalten-Status für den Spooler fest.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

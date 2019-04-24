@@ -1,31 +1,31 @@
 ---
-title: RuleTest-Element (Rule_Type ComplexType) ("Visio XML")
+title: RuleTest-Element (Rule_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0cb95b34-3ce0-07a5-5d57-8ac9b0570b9a
-description: Gibt den logischen Ausdruck, der bestimmt, ob das Zielobjekt der Überprüfungsregel erfüllt.
+description: Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Validierungsregel entspricht.
 ms.openlocfilehash: 8fd37040bec383ab61edfa62a09bb766ed8cd3c5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319082"
 ---
-# <a name="ruletest-element-ruletype-complextype-visio-xml"></a>RuleTest-Element (Rule_Type ComplexType) ("Visio XML")
+# <a name="ruletest-element-ruletype-complextype-visio-xml"></a>RuleTest-Element (Rule_Type complexType) (' Visio XML ')
 
-Gibt den logischen Ausdruck, der bestimmt, ob das Zielobjekt der Überprüfungsregel erfüllt.
+Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Validierungsregel entspricht.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RuleTest_Type](ruletest_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Validation.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Validation. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt den logischen Ausdruck, der bestimmt, ob das Zielobjekt der Überprüfungsr
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Formel  <br/> |XSD: String  <br/> |Optional  <br/> |Formel für das Element darstellt.  <br/> |Die Werte für die XSD: String.  <br/> |
+|Formel  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der XSD:-Zeichenfolge.  <br/> |
    
 

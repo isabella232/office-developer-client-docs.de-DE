@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 864dbc3e-2039-435a-a279-385d79d1d13f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 2c8244180a5cafedc887fa72f36f233fb5084f79
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316632"
 ---
 # <a name="imapipropsavechanges"></a>IMAPIProp::SaveChanges
 
@@ -25,7 +25,7 @@ ms.locfileid: "25398843"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Macht dauerhaft entfernt alle Änderungen, die seit dem letzten Speichervorgang auf ein Objekt vorgenommen wurden. 
+Macht alle Änderungen, die an einem Objekt seit dem letzten Speichervorgang vorgenommen wurden, dauerhaft. 
   
 ```cpp
 HRESULT SaveChanges(
@@ -37,90 +37,90 @@ HRESULT SaveChanges(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, was auf das Objekt geschieht, wenn die **IMAPIProp::SaveChanges** -Methode aufgerufen wird. Die folgenden Kennzeichen können festgelegt werden: 
+> in Eine Bitmaske von Flags, die steuert, was mit dem Objekt geschieht, wenn die **IMAPIProp:: SaveChanges** -Methode aufgerufen wird. Die folgenden Flags können festgelegt werden: 
     
 NON_EMS_XP_SAVE
   
-> Gibt an, dass die Nachricht von einem Microsoft Exchange Server nicht übermittelt werden konnte. Dieses Flag in Kombination mit der [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) -Methode verwendet werden soll, und das Flag ITEMPROC_FORCE, um eine PST-Speichers anzuzeigen, die die Nachricht ist für Regeln für die Verarbeitung vor der Informationsspeicher für Persönliche Ordner-Datei (PST) eine benachrichtigt überwachungs-Client, der die Nachricht empfangen hat. Diese Regeln, die Verarbeitung gilt nur für neue Nachrichten, die erstellt werden mit [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) auf einem Server, der keinem Exchange-Server in diesem Fall ist der Exchange-Server würde bereits Regeln für die Nachricht verarbeitet. 
+> Gibt an, dass die Nachricht nicht von einem Microsoft Exchange-Server übermittelt wurde. Dieses Flag sollte in Kombination mit der [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode und dem ITEMPROC_FORCE-Flag verwendet werden, um einem PST-Speicher anzuzeigen, dass die Nachricht für die Verarbeitung von Regeln berechtigt ist, bevor der PST-Speicher (Personal Folders) benachrichtigt wird. Überwachen des Clients, dass die Nachricht eingegangen ist. Diese Regelverarbeitung gilt nur für neue Nachrichten, die mit [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) auf einem Server erstellt werden, der kein Exchange-Server ist, in dem der Exchange-Server bereits Regeln für die Nachricht verarbeitet hätte. 
     
 FORCE_SAVE 
   
-> Änderungen geschrieben werden soll, auf das Objekt, das Überschreiben alle vorherigen Änderungen, die auf das Objekt vorgenommen wurden, und das Objekt geschlossen werden sollte. Lese-/Schreibberechtigung für muss für den Vorgang festgelegt werden. Das Flag FORCE_SAVE wird verwendet, nachdem ein vorherigen Aufruf von **SaveChanges** MAPI_E_OBJECT_CHANGED zurückgegeben. 
+> Änderungen sollten in das Objekt geschrieben werden, wobei alle vorherigen Änderungen, die an dem Objekt vorgenommen wurden, überschrieben werden und das Objekt geschlossen werden sollte. Die Berechtigung Lese-/Schreibzugriff muss festgelegt werden, damit der Vorgang erfolgreich ausgeführt werden kann. Das FORCE_SAVE-Flag wird verwendet, nachdem ein vorheriger Aufruf von **SaveChanges** MAPI_E_OBJECT_CHANGED zurückgegeben wurde. 
     
 KEEP_OPEN_READONLY 
   
-> Änderungen ein Commit ausgeführt werden soll, und das Objekt zum Lesen geöffnet beibehalten werden sollten. Keine zusätzlichen Änderungen werden vorgenommen werden. 
+> Änderungen sollten zugesichert werden, und das Objekt sollte zum Lesen geöffnet bleiben. Es werden keine weiteren Änderungen vorgenommen. 
     
 KEEP_OPEN_READWRITE 
   
-> Änderungen ein Commit ausgeführt werden soll, und das Objekt für die Berechtigung Lese-/Schreibzugriff geöffnet beibehalten werden sollten. Dieses Kennzeichen werden in der Regel festgelegt, wenn das Objekt zum ersten Mal Lese-/Schreibzugriff geöffnet wurde. Nachfolgende Änderungen am Objekt sind zulässig. 
+> Änderungen sollten zugesichert werden, und das Objekt sollte für Lese-/Schreibzugriff geöffnet bleiben. Dieses Flag wird in der Regel festgelegt, wenn das Objekt zum ersten Mal für Lese-/Schreibzugriff geöffnet wurde. Nachfolgende Änderungen am Objekt sind zulässig. 
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **SaveChanges** erfolgreich, möglicherweise beendet, bevor die Änderungen vollständig übertragen wurden. 
+> Ermöglicht **** , dass SaveChanges erfolgreich zurückgegeben wird, möglicherweise bevor die Änderungen vollständig übernommen wurden. 
     
 SPAMFILTER_ONSAVE
   
-> Ermöglicht die Spamfilterung für eine Nachricht ein, die gespeichert wird. Unterstützung der Spamfilterung steht nur, wenn der Absender e-Mail-Adresstyp Simple Mail Transfer Protocol (SMTP ist), und die Nachricht einen Speicher für Persönliche Ordner-Datei (PST) gespeichert werden.
+> Aktiviert die Spamfilterung für eine Nachricht, die gespeichert wird. Spamfilter-Unterstützung ist nur verfügbar, wenn der E-Mail-Adressentyp des Absenders Simple Mail Transfer Protocol (SMTP) ist und die Nachricht auf einem Speicher für eine Persönliche Ordner-Datei (PST) gespeichert wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Engagement der Änderungen erfolgreich war.
+> Die Verpflichtung der Änderungen war erfolgreich.
     
 MAPI_E_NO_ACCESS 
   
-> **SaveChanges** kann nicht das Objekt geöffnet lassen für nur-Lese-Berechtigung Wenn KEEP_OPEN_READONLY festgelegt, oder Lese-/Schreibberechtigung für Wenn KEEP_OPEN_READWRITE festgelegt ist. Es sind keine Änderungen ein Commit ausgeführt. 
+> **SaveChanges** kann das Objekt nur mit Leseberechtigung öffnen, wenn KEEP_OPEN_READONLY festgelegt ist, oder Lese-/Schreibzugriff Berechtigung, wenn KEEP_OPEN_READWRITE festgelegt ist. Es werden keine Änderungen übernommen. 
     
 MAPI_E_OBJECT_CHANGED 
   
-> Das Objekt wurde geändert seit es geöffnet wurde.
+> Das Objekt wurde seit dem Öffnen geändert.
     
 MAPI_E_OBJECT_DELETED 
   
-> Das Objekt wurde gelöscht, da es geöffnet wurde.
+> Das Objekt wurde seit dem Öffnen gelöscht.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIProp::SaveChanges** -Methode ändert Eigenschaft permanente für Objekte, die Unterstützung für das Transaktionsmodell verarbeiten, wie Nachrichten, Anlagen, Address Book-Container und messaging User-Objekte. Objekte, die keine für Transaktionen im Ordner, Nachrichtenspeicher und Profil Abschnitte Unterstützung, nehmen Sie Änderungen permanente sofort. Kein Aufruf von **SaveChanges** ist erforderlich. 
+Die **IMAPIProp:: SaveChanges** -Methode macht Änderungen an Eigenschaften für Objekte dauerhaft, die das Transaktionsmodell der Verarbeitung unterstützen, wie Nachrichten, Anlagen, Adressbuchcontainer und Messaging-Benutzerobjekte. Objekte, die keine Transaktionen unterstützen, wie beispielsweise Ordner, Nachrichtenspeicher und Profilabschnitte, nehmen Änderungen permanent vor. Es ist kein **** Aufruf von SaveChanges erforderlich. 
   
-Da Dienstanbieter keine generieren einen Eintrag Bezeichner für Objekte, bis alle Eigenschaften gespeichert wurden, ein Objekt **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft möglicherweise nicht verfügbar erst nach seiner **SaveChanges** -Methode wurde aufgerufen. Einige Anbieter warten Sie, bis das Flag KEEP_OPEN_READONLY festgelegt ist auf der **SaveChanges** -Anruf. KEEP_OPEN_READONLY gibt an, dass die Änderungen in den aktuellen Anruf gespeichert werden die letzten Änderungen eingefügt werden, die auf dem Objekt vorgenommen wird. 
+Da Dienstanbieter keine Eintrags-ID für Ihre Objekte generieren müssen, bis alle Eigenschaften gespeichert wurden, ist die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft eines Objekts möglicherweise erst nach der **SaveChanges** -Methode verfügbar. aufgerufen wurde. Einige Anbieter warten, bis das KEEP_OPEN_READONLY-Flag für den **SaveChanges** -Aufruf festgelegt ist. KEEP_OPEN_READONLY gibt an, dass die Änderungen, die im aktuellen Aufruf gespeichert werden sollen, die letzten Änderungen sind, die für das Objekt vorgenommen werden. 
   
-Einige Nachricht Store Implementierungen führen keine Nachrichten in einem Ordner anzeigen, die neu erstellte bis zu einem Client speichert die Nachricht mithilfe von **SaveChanges** geändert und Nachrichtenobjekte mithilfe der [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode frei. Darüber hinaus können nicht einige Implementierungen Objekt eine **PR_ENTRYID** -Eigenschaft für ein neu erstelltes Objekt erst nach dem Erstellen **SaveChanges** aufgerufen wurde, und einige können dies tun, wenn **SaveChanges** mithilfe von KEEP_OPEN_READONLY aufgerufen wurde Legen Sie in _UlFlags_.
+In einigen Nachrichtenspeicher Implementierungen werden nicht neu erstellte Nachrichten in einem Ordner angezeigt, bis ein Client die Nachrichten **** Änderungen mithilfe von SaveChanges speichert und die Message-Objekte mithilfe der [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode freigibt. Darüber hinaus können einige Objekt Implementierungen eine **PR_ENTRYID** -Eigenschaft für ein neu erstelltes Objekt erst generieren, nachdem **SaveChanges** aufgerufen wurde, und einige können dies nur tun, nachdem **SaveChanges** mithilfe von KEEP_OPEN_READONLY aufgerufen wurde. festgelegt in _ulFlags_.
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn Sie die Kennzeichen KEEP_OPEN_READONLY erhalten, müssen Sie die Option verlassen das Objekt Zugriff mit Lese-/Schreibzugriff. Jedoch kann ein Anbieter nie lassen Sie ein Objekt in einem schreibgeschützten Zustand, wenn das Flag KEEP_OPEN_READWRITE übergeben wird.
+Wenn Sie das KEEP_OPEN_READONLY-Flag erhalten, haben Sie die Möglichkeit, den Zugriff des Objekts als Lese-/Schreibzugriff zu lassen. Ein Anbieter kann jedoch nie ein Objekt in einem schreibgeschützten Zustand lassen, wenn das KEEP_OPEN_READWRITE-Flag übergeben wird.
   
-Wenn ein Client mehrere Anlagen auf mehrere Nachrichten speichert, ruft es die **SaveChanges** -Methode für jede Anlage und jede Nachricht. Häufig Clients werden für jede dieser Anrufe mit Ausnahme der letzten MAPI_DEFERRED_ERRORS festgelegt. Sie können entweder mit dem letzten Aufruf oder einem früheren Anrufe Fehler zurückgeben. Sie können auch die Kennzeichen ignorieren. 
+Wenn ein Client mehrere Anlagen in mehreren Nachrichten speichert, ruft er **** die SaveChanges-Methode für jede Anlage und jede Nachricht auf. Häufig werden Clients MAPI_DEFERRED_ERRORS für jeden dieser Anrufe festlegen, mit Ausnahme des letzten. Sie können entweder mit dem letzten Anruf oder früheren anrufen Fehler zurückgeben. Sie können die Kennzeichnung sogar ignorieren. 
   
-Wenn KEEP_OPEN_READWRITE oder KEEP_OPEN_READONLY zusammen mit MAPI_DEFERRED_ERRORS festgelegt ist, können Sie die Fehler Aufschiebung Anforderung ignorieren. Wenn MAPI_DEFERRED_ERRORS in _UlFlags_nicht festgelegt ist, ein zuvor zurückgestellte Fehler zurückgegeben werden für den Anruf **SaveChanges** . 
+Wenn KEEP_OPEN_READWRITE oder KEEP_OPEN_READONLY zusammen mit MAPI_DEFERRED_ERRORS festgelegt ist, können Sie die Anforderung zur Fehler begärung ignorieren. Wenn MAPI_DEFERRED_ERRORS nicht in _ulFlags_festgelegt ist, kann einer der zuvor verzögerten Fehler für den SaveChanges **** -Aufruf zurückgegeben werden. 
   
-Gibt an, ob ein remote-Transport-Anbieter eine funktionsfähige Implementierung dieser Methode bietet ist optional und hängt von anderen Designentscheidungen in Ihrer Implementierung. Wenn Sie diese Methode implementieren, führen Sie entsprechend der Dokumentation zur. Da Ordnerobjekten und Status Objekte nicht durchgeführt werden, muss mindestens eines remote Transportdienstes Implementierung der **SaveChanges** S_OK zurückgeben ohne tatsächlich keine Arbeit. 
+Ob ein Remote Transportanbieter eine funktionale Implementierung dieser Methode bereitstellt, ist optional und hängt von anderen Entwurfsentscheidungen in ihrer Implementierung ab. Wenn Sie diese Methode implementieren, tun Sie dies gemäß der Dokumentation hier. Da Ordnerobjekte und Statusobjekte nicht transformiert werden, muss mindestens die Implementierung von SaveChanges durch einen **** Remote Transportanbieter S_OK zurückgeben, ohne dass tatsächlich eine Arbeit ausgeführt wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn ein Client KEEP_OPEN_READONLY übergibt, die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode aufgerufen und ruft dann erneut die **SaveChanges** , kann die gleiche Implementierung fehlschlagen. 
+Wenn ein Client KEEP_OPEN_READONLY übergibt, die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode aufruft und **** dann SaveChanges erneut aufruft, kann für dieselbe Implementierung ein Fehler auftreten. 
   
-Nach Eingang eines Anrufs MAPI_E_NO_ACCESS in dem Sie KEEP_OPEN_READWRITE festgelegt, Sie haben weiterhin Lese-/Schreibberechtigung für das Objekt. Sie können auch das Kennzeichen KEEP_OPEN_READONLY oder keine Flags mit KEEP_OPEN_SUFFIX übergeben **SaveChanges** aufrufen. 
+Nachdem Sie MAPI_E_NO_ACCESS von einem Aufruf empfangen haben, in dem Sie KEEP_OPEN_READWRITE festgelegt haben, verfügen Sie weiterhin über Lese-/Schreibzugriff für das Objekt. Sie können **SaveChanges** erneut aufrufen, indem Sie entweder das KEEP_OPEN_READONLY-Flag oder keine Flags mit KEEP_OPEN_SUFFIX übergeben. 
   
-Ob das Flag KEEP_OPEN_READWRITE von einem Anbieter unterstützt, hängt von der Anbieter-Implementierung. 
+Ob ein Anbieter das KEEP_OPEN_READWRITE-Flag unterstützt, hängt von der Implementierung des Anbieters ab. 
   
-Legen Sie keine Flags für den Parameter _UlFlags_ aus, um anzugeben, dass nur beim Aufruf von auf das Objekt nach **SaveChanges** vorgenommen werden **IUnknown**wird. Ein Fehler aus **SaveChanges** gibt an, dass es nicht die ausstehenden Änderungen dauerhaft entfernt wird konnte. Verschiedene Anbieter behandeln fehlen Kennzeichen für den Aufruf der **SaveChanges** unterschiedlich. Einige Anbieter behandelt diesen Zustand als KEEP_OPEN_READONLY. andere Anbieter interpretieren KEEP_OPEN_READWRITE identisch. Noch andere Anbieter das Objekt herunter, wenn sie keine Kennzeichen für den Aufruf der **SaveChanges** erhalten. 
+Um anzugeben, dass der einzige Aufruf für das Objekt nach SaveChanges **** ist **IUnknown:: Release**, legen Sie keine Flags für den _ulFlags_ -Parameter. Ein Fehler von **SaveChanges** gibt an, dass die ausstehenden Änderungen nicht dauerhaft vorgenommen werden konnten. Unterschiedliche Anbieter behandeln das Fehlen von Flags für **** den SaveChanges-Aufruf anders. Einige Anbieter behandeln diesen Status genauso wie KEEP_OPEN_READONLY; andere Anbieter interpretieren es genauso wie KEEP_OPEN_READWRITE. Andere Anbieter haben das Objekt jedoch heruntergefahren, wenn Sie keine Flags für den **SaveChanges** -Aufruf erhalten. 
   
-Einige Eigenschaften, die in der Regel berechnete Eigenschaften können nicht verarbeitet werden, bis Sie **SaveChanges** aufrufen und in einigen Fällen **Version**.
+Einige Eigenschaften, in der Regel berechnete Eigenschaften, können erst verarbeitet **** werden, wenn Sie SaveChanges aufrufen und in einigen Fällen **Freigeben**.
   
-Wenn Sie von massenänderungen vornehmen, wie Anlagen auf mehrere Nachrichten gespeichert zurückstellen Sie Fehler bei der Verarbeitung durch das Flag MAPI_DEFERRED_ERRORS in _UlFlags_festgelegt. Wenn Sie mehrere Anlagen auf mehrere Nachrichten speichern, stellen Sie eine **SaveChanges** Aufruf für jede Anlage und eine **SaveChanges** auf jede Nachricht aufrufen. Legen Sie das MAPI_DEFERRED_ERRORS-Flag für jeden Anruf Anlage und für alle Nachrichten mit Ausnahme der letzten. 
+Wenn Sie Massenänderungen vornehmen, wie das Speichern von Anlagen in mehreren Nachrichten, verschieben Sie die Fehlerverarbeitung, indem Sie das MAPI_DEFERRED_ERRORS-Flag in _ulFlags_festlegen. Wenn Sie mehrere Anlagen in mehreren Nachrichten speichern, führen **** Sie einen SaveChanges-Aufruf jeder Anlage und einen **SaveChanges** -Aufruf jeder Nachricht aus. Legen Sie das MAPI_DEFERRED_ERRORS-Flag für jeden Anlagen Aufruf und für alle Nachrichten mit Ausnahme des letzten fest. 
   
-Wenn **SaveChanges** MAPI_E_OBJECT_CHANGED zurückgegeben wird, überprüfen Sie, ob das ursprüngliche Objekt geändert wurde. In diesem Fall warnen Sie, und Benutzer entweder, dass die Änderungen die vorherigen Änderungen zu überschreiben, oder speichern Sie das Objekt an anderer Stelle angefordert werden kann. Wenn das ursprüngliche Objekt gelöscht wurde, warnen Sie den Benutzer um ihnen die Möglichkeit, speichern Sie das Objekt in einen anderen Speicherort zu verleihen. 
+Wenn **SaveChanges** MAPI_E_OBJECT_CHANGED zurückgibt, überprüfen Sie, ob das ursprüngliche Objekt geändert wurde. Wenn dies der Fall ist, warnen Sie den Benutzer, der entweder die Änderung der Änderungen überschreiben oder das Objekt an einer anderen Stelle speichern kann. Wenn das ursprüngliche Objekt gelöscht wurde, warnen Sie den Benutzer, Ihnen die Möglichkeit zu geben, das Objekt an einem anderen Speicherort zu speichern. 
   
-Sie können nicht mit dem FORCE_SAVE-Flag auf ein geöffnetes Objekt **SaveChanges** aufrufen, die gelöscht wurde. 
+Sie können **SaveChanges** nicht mit dem FORCE_SAVE-Flag für ein geöffnetes Objekt aufrufen, das gelöscht wurde. 
   
-Wenn **SaveChanges** einen Fehler zurückgibt, das Objekt, dessen Änderungen wurden zu speichernde bleibt, öffnen, unabhängig von den im Parameter _UlFlags_ festgelegten Flags. 
+Wenn **SaveChanges** einen Fehler zurückgibt, bleibt das Objekt, dessen Änderungen gespeichert werden sollen, unabhängig von den im _ulFlags_ -Parameter festgelegten Flags geöffnet. 
   
 > [!IMPORTANT]
-> Die _UlFlags_ NON_EMS_XP_SAVE und SPAMFILTER_ONSAVE möglicherweise nicht in der herunterladbaren Headerdatei derzeit definiert werden, in diesem Fall können Sie es dem Code mithilfe der folgenden Werte hinzufügen: >`#define SPAMFILTER_ONSAVE ((ULONG) 0x00000080)`>  `#define NON_EMS_XP_SAVE ((ULONG) 0x00001000)`
+> Die _ulFlags_ NON_EMS_XP_SAVE und SPAMFILTER_ONSAVE sind möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben, in diesem Fall können Sie Sie mit den folgenden Werten zu Ihrem Code hinzufügen: >`#define SPAMFILTER_ONSAVE ((ULONG) 0x00000080)`>  `#define NON_EMS_XP_SAVE ((ULONG) 0x00001000)`
   
 Weitere Informationen finden Sie unter [Speichern von MAPI-Eigenschaften](saving-mapi-properties.md).
   
@@ -130,7 +130,7 @@ Weitere Informationen finden Sie unter [Speichern von MAPI-Eigenschaften](saving
 
 [IMAPIProp::SetProps](imapiprop-setprops.md)
   
-[PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
+[Kanonische PidTagEntryId-Eigenschaft](pidtagentryid-canonical-property.md)
   
 [IMAPIProp : IUnknown](imapipropiunknown.md)
 

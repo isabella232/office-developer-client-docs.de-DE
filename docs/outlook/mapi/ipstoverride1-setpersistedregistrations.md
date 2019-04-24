@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f4b62db-a759-41a2-9bea-29fc04b2962b
-description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 3592584a08bf14725c0289831740e91fb8f1a5b2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 20 November, 2011'
+ms.openlocfilehash: 6583765d4df7c7bfae9e7a62606beaa857874954
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315477"
 ---
 # <a name="ipstoverride1setpersistedregistrations"></a>IPSTOVERRIDE1::SetPersistedRegistrations
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert persönlichen Ordner (PST)-Dateien für die automatische Entsperren Weitere Anrufe an die HrTrustedPSTOverrideHandlerCallback zu vermeiden.
+Registriert persönliche Ordner-Dateien (PST) für die automatische Entriegelung und verhindert weitere Aufrufe des HrTrustedPSTOverrideHandlerCallback.
   
 ```cpp
 HRESULT SetPersistedRegistrations(
@@ -35,27 +35,27 @@ HRESULT SetPersistedRegistrations(
 
 _pmval_
   
-> [in] Eine [SPropValue](spropvalue.md) -Struktur, die einen Zeiger auf den Pfad zu der Dynamic Link Library (DLL enthält) registriert. Die Struktur weist folgende Merkmale auf: 
+> in Eine [SPropValue](spropvalue.md) -Struktur, die einen Zeiger auf den Pfad der zu registrierende Dynamic Link Library (dll) enthält. Die Struktur weist die folgenden Merkmale auf: 
     
-   - Ein UlPropTag des [PROP_TAG](prop_tag.md)(PT_MV_UNICODE, PROP_ID_NULL).
+   - Ein ulPropTag von [PROP_TAG](prop_tag.md)(PT_MV_UNICODE, PROP_ID_NULL).
     
-   - Eine MVszW Value-Eigenschaft, die auf ein Array von Zeichenfolgen mit Null terminierte Unicode-Zeichen festgelegt ist. Weitere Informationen finden Sie unter dem Thema [SWStringArray](swstringarray.md) . 
+   - Eine MVszW-Werteigenschaft, die auf ein Array von Zeichenfolgen mit null-terminierten Unicode-Zeichensätzen festgelegt ist. Weitere Informationen finden Sie im Thema [SWStringArray](swstringarray.md) . 
     
 > [!NOTE]
-> Die SPropValue wird in einem MAPI-Eigenschaft im internen Bereich der PST-Datei gespeichert. Diese Eigenschaft ist nicht möglich, für normale MAPI-Clientanwendungen. 
+> Das SPropValue wird in einer MAPI-Eigenschaft im internen Datenbereichen des PST-Speichers gespeichert. Auf diese Eigenschaft kann für normale MAPI-Anwendungen nicht zugegriffen werden. 
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Funktionsaufruf war erfolgreich.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Beibehaltene Registrierungen können die Leistung der Anwendung, wie Outlook und Windows-Desktopsuche beeinträchtigen, die PST-Dateien öffnen. Berücksichtigen Sie die Auswirkung auf die Leistung bei der Verwendung oder die Verwendung der permanenten Registrierungen erweitern.
+Dauerhafte Registrierungen können sich negativ auf die Leistung von Anwendungen wie Outlook und Windows-Desktop Suche auswirken, die PST öffnen. Berücksichtigen Sie die Leistungsauswirkung bei der Verwendung oder Erweiterung der Nutzung dauerhafter Registrierungen.
   
 > [!IMPORTANT]
-> Diese Methode ist nur für Unicode implementiert. Darüber hinaus wird es präventiv fehl, wenn Pfade, die im Array Erweiterung DLL nicht verfügen. 
+> Diese Methode ist nur für Unicode implementiert. Außerdem kann es zu einem vorbeugenden Fehler führen, wenn einer der Pfade im Array keine Dateinamenerweiterung von dll aufweist. 
   
 ## <a name="see-also"></a>Siehe auch
 

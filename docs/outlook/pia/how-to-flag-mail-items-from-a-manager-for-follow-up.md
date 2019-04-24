@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fa3cf00a116b51f88f47ef48eab566155626dbbe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320244"
 ---
 # <a name="flag-mail-items-from-a-manager-for-follow-up"></a>Kennzeichnen von E-Mail-Elementen von einem Vorgesetzten zur Nachverfolgung
 
@@ -23,9 +23,9 @@ Dieses Beispiel zeigt, wie E-Mail-Elemente gekennzeichnet werden, die vom Vorges
 > [!NOTE] 
 > Das folgende Codebeispiel ist ein Auszug aus [Programming Applications für Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493).
 
-In Microsoft Outlook wird ein System zur Aufgabenkennzeichnung bereitgestellt, bei dem bestimmte Outlook-Elemente, wie E-Mail- oder Kontaktelemente, zur Nachverfolgung gekennzeichnet werden können. Wenn ein Outlook-Element zur Nachverfolgung gekennzeichnet wird, werden in den Navigationsmodulen **Aufgabenleiste** und Kalender der Outlook-Benutzeroberfläche zusätzlich zu anderen aufgabenspezifischen Angaben auch Informationen zu diesem Outlook-Element angezeigt. Die **Aufgabenleiste** wird als vertikaler Bereich in einer Standardkonfiguration des Outlook-Explorer-Fensters angezeigt. Sie enthält ein Steuerelement für den Datumsnavigator, anstehende Termine und Elemente, die zur Nachverfolgung gekennzeichnet wurden. Die **Aufgabenleiste** selbst ist nicht erweiterbar, und Sie können die Konfigurationsoptionen für die **Aufgabenleiste** nur über die Outlook-Benutzeroberfläche festlegen. Das Kennzeichnen von Elementen ermöglicht die Organisation und Priorisierung von Aufgaben und Aufgabenelementen.
+Microsoft Outlook provides a task flagging system in which certain Outlook items such as mail items or contact items can be flagged for follow-up. When you flag an Outlook item for follow-up, information about that Outlook item, along with other task-based information, is displayed on the **To-Do Bar** and Calendar navigation module in the Outlook user interface. The **To-Do Bar** is displayed as a vertical pane in a typical configuration of the Outlook explorer window. It contains a date navigator control, upcoming appointments, and items that have been flagged for follow-up. The **To-Do Bar** itself is not extensible, and you can set configuration options for the **To-Do Bar** only through the Outlook user interface. Flagging items allows to you organize and prioritize tasks and to-do items.
 
-Im folgenden Codebeispiel wird eine Gruppe von Elementen für ein bestimmtes Zeitintervall zur Nachverfolgung gekennzeichnet. Das Beispiel ruft alle Elemente im Posteingang des aktuellen Benutzers ab, die von dessen Vorgesetzten stammen, indem eine DASL-Abfrage (DAV Searching and Locating) zum Filtern nach Nachrichten vom Typ „IPM.NOTE“ mit dem Namen des Vorgesetzten als Absender ausgeführt wird. Anschließend werden alle Elemente entsprechend dem [OlImportance](https://msdn.microsoft.com/library/bb609592\(v=office.15\))-Wert der [Importance](https://msdn.microsoft.com/library/bb611974\(v=office.15\))-Eigenschaft gekennzeichnet. Alle Elemente mit hoher Wichtigkeit werden für heute zur Nachverfolgung gekennzeichnet und alle Elemente mit normaler Wichtigkeit werden für diese Woche zur Nachverfolgung mithilfe der [MarkAsTask(OlMarkInterval)](https://msdn.microsoft.com/library/bb609068\(v=office.15\))-Methode gekennzeichnet.
+Das folgende Codebeispiel markiert eine Gruppe von Elementen für ein angegebenes Nachverfolgungsintervall. Das Beispiel ruft alle Elemente im Posteingang des aktuellen Benutzers ab, die von dessen Vorgesetzten stammen, indem eine DASL-Abfrage (DAV Searching and Locating) zum Filtern nach Nachrichten vom Typ „IPM.NOTE“ mit dem Namen des Vorgesetzten als Absender ausgeführt wird. Anschließend werden alle Elemente entsprechend dem [OlImportance](https://msdn.microsoft.com/library/bb609592\(v=office.15\))-Wert der [Importance](https://msdn.microsoft.com/library/bb611974\(v=office.15\))-Eigenschaft gekennzeichnet. Alle Elemente mit hoher Wichtigkeit werden für heute zur Nachverfolgung gekennzeichnet und alle Elemente mit normaler Wichtigkeit werden für diese Woche zur Nachverfolgung mithilfe der [MarkAsTask(OlMarkInterval)](https://msdn.microsoft.com/library/bb609068\(v=office.15\))-Methode gekennzeichnet.
 
 
 > [!NOTE]

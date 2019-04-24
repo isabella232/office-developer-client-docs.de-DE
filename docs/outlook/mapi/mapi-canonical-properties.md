@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 29151beb-7436-401a-8072-58d4facd8458
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 4b017089a675727703de9e2ed4d584e7f77a778a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319054"
 ---
 # <a name="mapi-canonical-properties"></a>Kanonische MAPI-Eigenschaften
 
@@ -21,35 +21,35 @@ ms.locfileid: "25401566"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine kanonische-Eigenschaft ist eine virtuelle Eigenschaft, die ein MAPI-Eigenschaft oder mehrere MAPI-Eigenschaften definiert, mit der gleichen Eigenschaftenbezeichner darstellt. Kanonische Eigenschaften sind nur zur Erleichterung der konsistente Identifizierung der MAPI-Eigenschaften in Diskussionen oder Dokumentation außerhalb Code vorgesehen. Im Gegensatz zu MAPI-defined markierte Eigenschaftennamen sind kanonische Eigenschaftennamen als globale Konstanten in MAPI-Headerdateien nicht definiert.
+Eine kanonische Eigenschaft ist eine virtuelle Eigenschaft, die eine MAPI-Eigenschaft darstellt, oder mehrere MAPI-Eigenschaften, die mit demselben Eigenschaftsbezeichner definiert sind. Kanonische Eigenschaften dienen lediglich der konsistenten Identifizierung von MAPI-Eigenschaften in Diskussionen oder Dokumentationen außerhalb von Code. Im Gegensatz zu MAPI-definierten gekennzeichneten Eigenschaftsnamen werden kanonische Eigenschaftennamen nicht als globale Konstanten in MAPI-Headerdateien definiert.
   
-## <a name="naming-conventions"></a>Benennungskonventionen
+## <a name="naming-conventions"></a>BeNennungsKonventionen
 
-Kanonische Eigenschaftennamen beginnen mit dem Präfix, "Pid", womit "Eigenschaftenbezeichner." Je nachdem, ob die Eigenschaft eine bereichsspezifische-Eigenschaft, eine benannte Eigenschaft durch eine numerische Kennung oder eine benannte Eigenschaft mit einem Zeichenfolgennamen ist, wird das Präfix weiter als "PidTag," qualifiziert "PidLid" und "PidName" fest. Beispielsweise stellt [PidTagAccount](pidtagaccount-canonical-property.md) die markierten Eigenschaften, **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)), **PR_ACCOUNT_A** ([PidTagAccount](pidtagaccount-canonical-property.md)) und **PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)), die eines Empfängers angeben Kontoname. Die **DispidContacts** -Eigenschaft, eine benannte Eigenschaft an, die einen numerischen Bezeichner hat und den Namen der Kontakte im Zusammenhang mit einer Meldung festlegt, stellt [PidLidContacts](pidlidcontacts-canonical-property.md) dar. und [PidNamePhishingStamp](pidnamephishingstamp-canonical-property.md) stellt "https://schemas.microsoft.com/outlook/phishingstamp," eine benannte Eigenschaft an, die ein Name vom Typ String hat und die Zeichenfolge Markieren von Nachrichten, die wahrscheinlich Phishing sind angibt. 
+Kanonische Eigenschaftennamen beginnen mit einem Präfix, "PID", das "Property Identifier" darstellt. Je nachdem, ob die Eigenschaft eine gekennzeichnete Eigenschaft, eine benannte Eigenschaft mit einem numerischen Bezeichner oder eine benannte Eigenschaft mit einem Zeichenfolgennamen ist, wird das Präfix weiter als "PidTag", "" PidLid "und" PidName "bezeichnet. [PidTagAccount](pidtagaccount-canonical-property.md) stellt beispielsweise die markierten Eigenschaften **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)), **PR_ACCOUNT_A** ([PidTagAccount](pidtagaccount-canonical-property.md)) und **PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)) dar, mit denen ein Empfänger Kontoname; [Pidlidcontacts (](pidlidcontacts-canonical-property.md) stellt die **dispidContacts** -Eigenschaft dar, eine benannte Eigenschaft mit einem numerischen Bezeichner, die den Namen der Kontakte angibt, die einer Nachricht zugeordnet sind. und [pidnamephishingstamp (](pidnamephishingstamp-canonical-property.md) stellt "https://schemas.microsoft.com/outlook/phishingstamp," eine benannte Eigenschaft mit einem Zeichenfolgennamen dar und gibt die Zeichenfolge an, die Nachrichten mit hoher Wahrscheinlichkeit für Phishing angibt. 
   
-## <a name="representing-similar-properties-using-one-canonical-property"></a>Ähnliche Eigenschaften, die mithilfe einer Kanonischer-Eigenschaft darstellt
+## <a name="representing-similar-properties-using-one-canonical-property"></a>Darstellen ähnlicher Eigenschaften mit einer kanonischen Eigenschaft
 
 ### <a name="identifying-properties-in-mapi"></a>Identifizieren von Eigenschaften in MAPI
 
-Alle Eigenschaften in MAPI werden durch einen Eigenschaftenbezeichner identifiziert, die einen 16-Bit-Wert ohne Vorzeichen ist. Der Bezeichner für die und den Eigenschaftentyp (eine andere nicht signierte 16-Bit-Wert) bilden eine Eigenschaftentag für die Eigenschaft. 
+Alle Eigenschaften in MAPI werden durch einen Eigenschaftenbezeichner identifiziert, bei dem es sich um einen nicht signierten 16-Bit-Wert handelt. Der Eigenschaftenbezeichner und der Eigenschaftentyp (ein anderer nicht signierter 16-Bit-Wert) stellen ein Eigenschaftentag für die Eigenschaft dar. 
   
-MAPI verwendet ein Eigenschaftentag Eigenschaften eindeutig definiert. Eigenschaften, die das gleiche Eigenschafts-Tag, wie **PR_BUSINESS2_TELEPHONE_NUMBER** ([PidTagBusiness2TelephoneNumber](pidtagbusiness2telephonenumber-canonical-property.md)) und **PR_OFFICE2_TELEPHONE_NUMBER** ([PidTagBusiness2TelephoneNumber](pidtagbusiness2telephonenumber-canonical-property.md)) gelten identische Eigenschaften in MAPI. Eine Liste der Eigenschaftentags, die MAPI für ihre eigenen Eigenschaften definiert wurde, finden Sie unter der MAPI-Headerdatei Mapitags.h.
+MAPI verwendet ein Property-Tag, um Eigenschaften eindeutig zu definieren. Eigenschaften, die dasselbe Property-Tag aufweisen, wie **PR_BUSINESS2_TELEPHONE_NUMBER** ([Pidtagbusiness2telephonenumber (](pidtagbusiness2telephonenumber-canonical-property.md)) und **PR_OFFICE2_TELEPHONE_NUMBER** ([pidtagbusiness2telephonenumber (](pidtagbusiness2telephonenumber-canonical-property.md)), werden als identisch betrachtet. Eigenschaften in MAPI. Eine Liste der Eigenschaftentags, die MAPI für eigene Eigenschaften definiert hat, finden Sie in der MAPI-Headerdatei Mapitags. h.
   
-Beachten Sie, dass MAPI-IDs in Bereiche unterteilt. Gibt an, bei denen ein Bezeichner des Bereichs liegt, seine Verwendung und den Besitz. Die Eigenschaftenbezeichner der markierten Eigenschaften liegen im Bereich von 0 x 0001 zu 0x7FFF. Innerhalb dieses Bereichs liegen die Eigenschaftenbezeichner der MAPI-benutzerdefinierte Eigenschaften, die im Bereich von 0 x 0001 bis 0x3FFF fallen. Die Eigenschaftenbezeichner eines benannten Eigenschaften rückfalls im Bereich von 0 x 8000 zu 0x8FFF. 
+Beachten Sie, dass MAPI Eigenschaftsbezeichner in Bereiche unterteilt. Wo ein Bezeichner in den Range fällt, gibt seine Verwendung und seinen Besitz an. Die Eigenschaftenbezeichner der markierten Eigenschaften fallen im Range von 0x0001 zu 0x7FFF. Innerhalb dieses Bereiches befinden sich die Eigenschaftenbezeichner von MAPI-definierten Eigenschaften, die in den Bereich von 0x0001 zu 0x3FFF fallen. Die Eigenschaftenbezeichner von benannten Eigenschaften fallen in den Bereichen von 0X8000 zu 0x8FFF. 
   
-Benannte Eigenschaften werden außerdem durch einen Eigenschaftensatz und entweder ein long-ID (Abdeckung), der eine nicht signierte 32-Bit-Wert ist, oder eine Zeichenfolge zugeordnet. Ein Eigenschaftensatz ist eine GUID, die eine Gruppe von benannten Eigenschaften mit einem ähnlichen Zweck identifiziert werden kann. Die Eigenschaftensatz und Abdeckung oder Zeichenfolge Namen dienen zum Abrufen oder Festlegen der benannten Eigenschaft.
+Benannte Eigenschaften werden zusätzlich von einem Eigenschaftensatz und entweder einer Long-ID (LID), bei der es sich um einen unsignierten 32-Bit-Wert oder eine Zeichenfolge handelt, zurückgeführt. Ein Eigenschaftensatz ist eine GUID, die eine Gruppe benannter Eigenschaften mit einem ähnlichen Zweck identifiziert. Der Eigenschaftensatz und der Deckel oder der Zeichenfolgenname werden zum Abrufen oder Festlegen der benannten Eigenschaft verwendet.
   
 ### <a name="property-type"></a>Eigenschaftentyp
 
-Neben dem Bezeichner ist eine Eigenschaft durch einen Datentyp Ergebnisarray als Attribut zugewiesen, die den Typ der zulässigen Werte für diese Eigenschaft angibt.
+Neben Bezeichnern wird eine Eigenschaft durch einen Datentyp zurückgegeben, der den Typ der für diese Eigenschaft zulässigen Werte angibt.
   
-Für Eigenschaften, die vom Typ String, abhängig von der Unterstützung von Unicode in der zugrunde liegenden Plattform, sind die-Eigenschaft vom Typ PT_STRING8 werden kann (8-Bit-Zeichen Null endende Zeichenfolge) oder PT_UNICODE (Null terminierte Unicode-Zeichenfolge). Eine Eigenschaft mit dem Typ PT_TSTRING definiert werden kann, und von den Einstellungen für Kompilierung, PT_TSTRING wird standardmäßig auf eine Unicode-Zeichenfolge für Plattformen, die Unterstützung für Unicode oder in einen String PT_STRING8 für Plattformen, die ANSI oder DBCS unterstützen. Eine Zeichenfolge typisierten-Eigenschaft ist der Regel wird identifiziert durch drei ähnliche Namen wie **PR_ACCOUNT**, **PR_ACCOUNT_A**und **PR_ACCOUNT_W**, sind vom Typ PT_TSTRING, PT_STRING8 und PT_UNICODE fest.
+Bei Eigenschaften, die vom Typ String sind, kann die Eigenschaft abhängig von der Unterstützung für Unicode in der zugrunde liegenden Plattform vom Typ PT_STRING8 (NULL-terminierte 8-Bit-Zeichenfolge) oder PT_UNICODE (NULL-terminierte Unicode-Zeichenfolge) sein. Eine Eigenschaft kann mit dem PT_TSTRING-Typ definiert werden, und je nach Kompilierungseinstellungen PT_TSTRING standardmäßig eine Unicode-Zeichenfolge für Plattformen, die Unicode unterstützen, oder eine PT_STRING8-Zeichenfolge für Plattformen, die ANSI oder DBCS unterstützen. Es ist üblich, dass eine Zeichenfolge typisierte Eigenschaft durch drei ähnliche Namen wie **PR_ACCOUNT**, **PR_ACCOUNT_A**und **PR_ACCOUNT_W**identifiziert wird, die vom Typ PT_TSTRING, PT_STRING8 und PT_UNICODE sind.
   
-Weitere Informationen zu Eigenschaftstypen und Makros im Zusammenhang mit Typen finden Sie unter der MAPI-Headerdatei Mapidefs.h.
+Weitere Informationen zu Eigenschaftentypen und Makros im Zusammenhang mit Typen finden Sie in der MAPI-Headerdatei Mapidefs. h.
   
-### <a name="identifying-similar-properties"></a>Identifizieren von ähnlichen Eigenschaften
+### <a name="identifying-similar-properties"></a>Identifizieren ähnlicher Eigenschaften
 
-In der aktuellen MAPI-Eigenschaft im Querformat ist es nicht ungewöhnlich, feststellen, dass eine Eigenschaft unter verschiedenen Eigenschaftennamen, ausgesetzt ist die mit der gleichen Eigenschaftenbezeichner definiert sind. Beispielsweise werden die markierten Eigenschaften, **PR_BUSINESS2_TELEPHONE_NUMBER** und **PR_OFFICE2_TELEPHONE_NUMBER**, in Mapitags.h haben den gleichen Eigenschaftenbezeichner und den Typ definiert. Eng mit diesen beiden Eigenschaften sind:
+In der aktuellen MAPI-Eigenschaften Landschaft ist es nicht unüblich, festzustellen, dass eine Eigenschaft unter verschiedenen Eigenschaftennamen verfügbar gemacht wurde, die alle mit demselben Eigenschaftsbezeichner definiert sind. Beispielsweise sind die getaggten Eigenschaften **PR_BUSINESS2_TELEPHONE_NUMBER** und **PR_OFFICE2_TELEPHONE_NUMBER**in Mapitags. h definiert, um denselben Eigenschaftenbezeichner und-Typ zu haben. Die folgenden beiden Eigenschaften sind eng miteinander verbunden:
   
 - **PR_BUSINESS2_TELEPHONE_NUMBER_A**
     
@@ -61,25 +61,25 @@ In der aktuellen MAPI-Eigenschaft im Querformat ist es nicht ungewöhnlich, fest
     
 Die Eigenschaften mit dem Suffix "_A" werden als PT_STRING8 eingegeben, und die mit dem Suffix "_W" werden als PT_UNICODE eingegeben.
   
-Dient der kanonische **PidTagBusiness2TelephoneNumber** in diesem Beispiel-Eigenschaft zum Verweisen auf eine solche eng verbundenen MAPI-Eigenschaften, die mit einem Bezeichner zu vereinfachen und einheitlich (mit dem Präfix "Pid") über alle MAPI Eigenschaften. Welche realen MAPI-Eigenschaften eine kanonische Eigenschaft darstellt, finden Sie unter [Zuordnen kanonische Eigenschaftennamen MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md). Die kanonische-Eigenschaft, der eine MAPI-Eigenschaft verknüpft ist, finden Sie unter [Zuordnen von MAPI-Objektnamen kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md).
+Der Zweck einer kanonischen Eigenschaft, die in diesem Beispiel **pidtagbusiness2telephonenumber (** wird, ist die Erleichterung der Referenzierung solcher eng verbundenen MAPI-Eigenschaften mit einem Bezeichner und konsistent (mit dem Präfix "PID") für alle MAPI- Eigenschaften. Informationen zu den tatsächlichen MAPI-Eigenschaften, die eine kanonische Eigenschaft darstellt, finden Sie unter [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md). Informationen zur kanonischen Eigenschaft, mit der eine MAPI-Eigenschaft verknüpft ist, finden Sie unter [Zuordnen von MAPI-Namen zu kanonischEn Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md).
   
-## <a name="mapi-support-of-canonical-property-names"></a>MAPI-Unterstützung von kanonische Eigenschaftennamen
+## <a name="mapi-support-of-canonical-property-names"></a>MAPI-Unterstützung für kanonische Eigenschaftennamen
 
-Da kanonische Eigenschaften keine Real Eigenschaften sind und nicht in MAPI-Headerdateien definiert sind, sollten Sie nicht kanonische Eigenschaftennamen im Code verwenden. Sie sollten fahren Sie stattdessen die genauen Namen der MAPI-Eigenschaft im Code verwenden. Angenommen, können Sie finden Sie unter **PR_BUSINESS2_TELEPHONE_NUMBER** und **PR_OFFICE2_TELEPHONE_NUMBER** außerhalb von Code als **PidTagBusiness2TelephoneNumber**und **PR_BUSINESS2_TELEPHONE_NUMBER** oder **PR_OFFICE2_ verwenden TELEPHONE_NUMBER** im Code. 
+Da kanonische Eigenschaften keine tatsächlichen Eigenschaften sind und nicht in MAPI-Headerdateien definiert sind, sollten Sie kanonische Eigenschaftennamen nicht im Code verwenden. Stattdessen sollten Sie weiterhin die genauen MAPI-Eigenschaftsnamen im Code verwenden. Sie können beispielsweise **PR_BUSINESS2_TELEPHONE_NUMBER** und **PR_OFFICE2_TELEPHONE_NUMBER** außerhalb von Code als **pidtagbusiness2telephonenumber (** verweisen und entweder **PR_BUSINESS2_TELEPHONE_NUMBER** oder **PR_OFFICE2_ TELEPHONE_NUMBER** im Code. 
   
-Wenn Sie kanonische Eigenschaftennamen in Ihrem Code verwenden müssen, müssen Sie zuerst in Ihren eigenen Headerdateien definieren.
+Wenn Sie kanonische Eigenschaftennamen in Ihrem Code verwenden müssen, müssen Sie diese zuerst in ihren eigenen Headerdateien definieren.
   
-## <a name="canonical-property-names-and-exchange-protocol-specifications"></a>Kanonische Eigenschaftsnamen und Exchange-Spezifikationen
+## <a name="canonical-property-names-and-exchange-protocol-specifications"></a>Kanonische Eigenschaftennamen und Exchange-Protokollspezifikationen
 
-Kanonische Namen werden in Microsoft Exchange Server-Spezifikationen verwiesen, die vom Exchange-Server für die Kommunikation mit anderen Microsoft-Produkten verwendet werden. Weitere Informationen zu Nachrichteneigenschaften-Objekt auf die Exchange-Spezifikationen verweist finden Sie unter [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx).
+Auf kanonische Namen wird in Microsoft Exchange Server Protocol-Spezifikationen verwiesen, die von Exchange Server für die Kommunikation mit anderen Microsoft-Produkten verwendet werden. Weitere Informationen zu Nachrichtenobjekt Eigenschaften, auf die von Exchange-Protokollspezifikationen verwiesen wird, finden Sie unter [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[MAPI-Eigenschaftentags](mapi-property-tags.md)
+[MAPI-Eigenschafts Tags](mapi-property-tags.md)
   
-[Übersicht über die Bezeichner des MAPI-Eigenschaft](mapi-property-identifier-overview.md)
+[Übersicht über die MAPI-EigenschaftsKennung](mapi-property-identifier-overview.md)
   
-[Übersicht über Typ von MAPI-Eigenschaft](mapi-property-type-overview.md)
+[Übersicht über die MAPI-EigenschaftsTypen](mapi-property-type-overview.md)
 

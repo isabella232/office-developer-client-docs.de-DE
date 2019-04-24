@@ -7,54 +7,54 @@ ms.topic: reference
 f1_keywords:
 - xlfCaller
 keywords:
-- XlfCaller-Funktion [excel 2007]
+- xlfCaller-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: de4b119c-ae2e-4207-9783-8d5692a4d052
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 92d2d1877d7b315d178ef1fa36b47bd5f9f8e661
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fb788375504cefab75fde9513147c1d54acdaa07
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310227"
 ---
 # <a name="xlfcaller"></a>xlfCaller
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt Informationen zu der Zelle, einen Bereich von Zellen, Befehl auf ein Menü, das Tool auf einer Symbolleiste oder das Objekt, das aufgerufen wird, die DLL-Befehl oder eine Funktion, die derzeit ausgeführt wird.
+Gibt Informationen zu der Zelle, dem Zellbereich, dem Befehl in einem Menü, dem Tool auf einer Symbolleiste oder einem Objekt zurück, das den DLL-Befehl oder die aktuell laufende Funktion aufgerufen hat.
   
-|**Aufgerufen von Code**|**gibt zurück**|
+|**Code aufgerufen von**|**gibt zurück**|
 |:-----|:-----|
-|DLL-DATEI  <br/> |Die Register-ID.  <br/> |
-|Eine einzelne Zelle  <br/> |Bezug auf eine einzelne Zelle.  <br/> |
-|Eine Zelle mit mehreren Arrayformel  <br/> |Ein mit mehreren Zellbezug.  <br/> |
-|Eine bedingte Formatierung Ausdruck  <br/> |Ein Verweis auf die Zelle, die auf der die Formatierung Bedingung angewendet wird.  <br/> |
-|Ein Menü  <br/> | Ein Array mit vier Elementen einzeilige:  <br/>  Die Leiste-ID.  <br/>  Die Menüposition im.  <br/>  Die Position des Untermenü.  <br/>  Die Position des Befehls.  <br/> |
-|Eine Symbolleiste  <br/> | Eine einzeilige Matrix mit zwei Elementen:  <br/>  Die Anzahl der Symbolleiste für die integrierten Symbolleisten oder den Namen der Symbolleiste für benutzerdefinierte Symbolleisten.  <br/>  Die Position auf der Symbolleiste.  <br/> |
-|Ein Graphic-Objekt  <br/> |Der Objektbezeichner (Objektname).  <br/> |
-|Ein Befehl eine XlcOnEnter auf zugeordnet. Geben SIE Ereignis Trapping  <br/> |Ein Verweis auf die Zelle oder die Zellen eingegeben werden.  <br/> |
-|Ein Befehl eine XlcOnDoubleclick auf zugeordnet. DOUBLECLICK, Ereignis Trapping.  <br/> |Die Zelle, die wurde doppelgeklickt (was nicht notwendigerweise die aktive Zelle).  <br/> |
-|Auto_öffnen-, AutoClose-, Auto_aktivieren- oder Auto_deaktivieren-Makro  <br/> |Der Name des Blatts aufrufen.  <br/> |
+|DLL  <br/> |Die Register-ID.  <br/> |
+|Eine einzelne Zelle  <br/> |Ein Einzelzellen Verweis.  <br/> |
+|Eine Arrayformel mit mehreren Zellen  <br/> |Ein mehr zellenverweis.  <br/> |
+|Ein Ausdruck für bedingte Formatierung  <br/> |Ein Verweis auf die Zelle, auf die die Formatierungsbedingung angewendet wird.  <br/> |
+|Ein Menü  <br/> | Ein Einreihiges Array mit vier Elementen:  <br/>  Die ID des Barcodes.  <br/>  Die Menü Position.  <br/>  Die unter Menü Position.  <br/>  Die Befehlsposition.  <br/> |
+|Eine Symbolleiste  <br/> | Ein Array mit zwei Elementen mit einer einzelnen Zeile:  <br/>  Die Symbolleisten Nummer für integrierte Symbolleisten oder den Namen der Symbolleiste für benutzerdefinierte Symbolleisten.  <br/>  Die Position auf der Symbolleiste.  <br/> |
+|Ein Grafikobjekt  <br/> |Der Objektbezeichner (Objektname).  <br/> |
+|Ein Befehl, der mit einem xlcOnEnter verknüpft ist, ON. ENTER, Ereignistrap  <br/> |Ein Verweis auf die Zelle oder die Zellen, die eingegeben werden.  <br/> |
+|Ein Befehl, der mit einem xlcOnDoubleclick verknüpft ist, ON. DOUBLECLICK, Ereignistrap.  <br/> |Die Zelle, auf die doppelgeklickt wurde (nicht unbedingt die aktive Zelle).  <br/> |
+|Auto_Open-, autoSchließ-, Auto_Activate-oder Auto_Deactivate-Makro  <br/> |Der Name des aufrufenden Blatts.  <br/> |
 |Andere Methoden nicht aufgeführt  <br/> |#REF! Fehler  <br/> |
    
 ```cs
 Excel12(xlfCaller, (LPXLOPER12) pxRes,0);
 ```
 
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Der Rückgabewert ist eines der folgenden **XLOPER**/ **XLOPER12** Datentypen: **XltypeRef**, **XltypeSRef**, **XltypeNum**, **XltypeStr**, **XltypeErr**oder **XltypeMulti**. Da drei der folgenden Arten auf reservierter Speicher zeigen, sollten der Rückgabewert der **XlfCaller** immer freigegeben werden in einem Aufruf der [Funktion XlFree](xlfree.md) Wenn es nicht mehr benötigt wird. 
+Der Rückgabewert ist einer der folgenden **XLOPER**/ **-XLOPER12** -Datentypen: **externen xltypeRef**, **xltypeSRef**, **xltypeNum**, **xltypeStr**, **xltypeErr**oder **xltypeMulti**. Da drei dieser Typen auf den zugewiesenen Arbeitsspeicher zeigen, sollte der Rückgabewert von **xlfCaller** immer in einem Aufruf der xlFree- [Funktion](xlfree.md) freigegeben werden, wenn er nicht mehr benötigt wird. 
   
 Weitere Informationen zu **XLOPERs**/ **XLOPER12s** finden Sie unter [Speicherverwaltung in Excel](memory-management-in-excel.md).
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Funktion ist nur nicht-Arbeitsblatt, die aus einer Tabellenfunktion DLL/XLL aufgerufen werden können. Andere XLM-Informationsfunktionen können nur von Befehlen oder Makroblatt Äquivalent aufgerufen werden Funktionen.
+Diese Funktion ist die einzige nicht-Arbeitsblattfunktion, die von einer DLL/XLL-Arbeitsblattfunktion aufgerufen werden kann. Andere XML-Informationsfunktionen können nur über Befehle oder äquivalente Funktionen des Makros aufgerufen werden.
   
 ## <a name="example"></a>Beispiel
 
- `\SAMPLES\EXAMPLE\EXAMPLE.C`. Diese Funktion ruft ein Makro mit Befehlen (XlcSelect) und funktionieren ordnungsgemäß nur, wenn von einem Makroblatt aufgerufen.
+ `\SAMPLES\EXAMPLE\EXAMPLE.C`. Diese Funktion Ruft ein Befehlsmakro (xlcSelect) auf und funktioniert nur dann ordnungsgemäß, wenn es von einem Makroblatt aufgerufen wird.
   
 ```cs
 short WINAPI CallerExample(void)

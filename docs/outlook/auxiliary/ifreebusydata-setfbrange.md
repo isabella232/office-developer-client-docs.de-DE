@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4e7147ea-0eb0-324a-80d8-4f0eef654c32
-description: Legt die Zeitspanne für eine Enumeration der Datenblöcke Frei/Gebucht-Informationen für einen Benutzer fest.
-ms.openlocfilehash: 84a25a2dd43f594caa075d90e4f183086452184a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Legt den Zeitraum für eine Enumeration von Frei/Gebucht-Datenblöcken für einen Benutzer fest.
+ms.openlocfilehash: 4647453acb0e530521aa808f7f017e3e311644bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317479"
 ---
 # <a name="ifreebusydatasetfbrange"></a>IFreeBusyData::SetFBRange
 
-Legt die Zeitspanne für eine Enumeration der Datenblöcke Frei/Gebucht-Informationen für einen Benutzer fest.
+Legt den Zeitraum für eine Enumeration von Frei/Gebucht-Datenblöcken für einen Benutzer fest.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IFreeBusyData](ifreebusydata.md).
+Siehe [IFreeBusyData](ifreebusydata.md).
   
 ```cpp
 HRESULT SetFBRange(
@@ -33,19 +33,19 @@ HRESULT SetFBRange(
 
 _rtmStart_
   
-> [in] Ein relative Zeitwert für den Anfang des Frei/Gebucht-Informationen. Dieser Wert ist die Anzahl der Minuten seit dem 1. Januar 1601.
+> in Ein relativer Zeitwert für den Beginn der Frei/Gebucht-Informationen. Dieser Wert ist die Anzahl der Minuten seit dem 1. Januar 1601.
     
 _rtmEnd_
   
-> [in] Ein relative Zeitwert für das Ende des Frei/Gebucht-Informationen. Dieser Wert ist die Anzahl der Minuten seit dem 1. Januar 1601.
+> in Ein relativer Zeitwert für das Ende der Frei/Gebucht-Informationen. Dieser Wert ist die Anzahl der Minuten seit dem 1. Januar 1601.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Bemerkungen
 
-Diese Methode wird verwendet, um den Zeitbereich des Kalenderelemente für das Abrufen von Details anzuzeigen. Die Werte der *FtmStart* und *FtmEnd* werden zwischengespeichert und in einem nachfolgenden Aufruf der [IFreeBusyData::GetFBPublishRange](ifreebusydata-getfbpublishrange.md)zurückgegeben.
+Diese Methode wird verwendet, um den Zeitintervall der Kalenderelemente anzugeben, für die Details abgerufen werden sollen. Die Werte von *ftmStart* und *ftmEnd* werden zwischengespeichert und in einem nachfolgenden Aufruf von [IFreeBusyData:: GetFBPublishRange](ifreebusydata-getfbpublishrange.md)zurückgegeben.
   
 ## <a name="see-also"></a>Siehe auch
 

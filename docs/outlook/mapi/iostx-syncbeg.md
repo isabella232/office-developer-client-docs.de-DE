@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 4a935df3-98c4-2742-206e-4e16eda7b9bc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 37d37d6402b165ea57626fe4791cfb1a4bcf76cc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ae4497295328155780fc5208d1699169698e02d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317171"
 ---
 # <a name="iostxsyncbeg"></a>IOSTX::SyncBeg
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bereitet den lokalen Speicher für die Synchronisierung in einen bestimmten Status und die erforderliche Informationen zum Replizieren von abgerufen.
+Bereitet den lokalen Speicher für die Synchronisierung in einem bestimmten Zustand vor und ruft die erforderlichen Informationen zum Replizieren ab.
   
 ```cpp
 HRESULT SyncBeg( 
@@ -38,7 +38,7 @@ HRESULT SyncBeg(
 
  _uiSync_
   
->  [in] Der Zustand, den der lokale Speicher eingeben möchten. Es folgt eine Liste mit IDs Status: 
+>  in Der Zustand, der vom lokalen Speicher eingegeben wird. Es folgt eine Liste der Status Identifier: 
     
 LR_SYNC_IDLE
   
@@ -84,9 +84,9 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
- _ppv_
+ _PPV_
   
->  [in] / [out] Zeiger auf die Datenstruktur, die den Status entspricht eingeben. 
+>  [in]/[out] Zeiger auf die Datenstruktur, die dem zu gebenden Zustand entspricht. 
     
 [DNHIER](dnhier.md)
   
@@ -148,11 +148,11 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Client ruft **[IOSTX::SetSyncResult](iostx-setsyncresult.md)** , um das Ergebnis der Synchronisierung festzulegen, und ruft dann **[IOSTX::SyncEnd](iostx-syncend.md)** , um diesen Zustand zu beenden. Der Client muss **[IOSTX::SyncEnd](iostx-syncend.md)** für jeden Anruf, um zu bestimmen, ob der Zustand erfolgreich repliziert wurde, **IOSTX::SyncBeg** aufrufen. Nachdem dies ermittelt wurde, kann Outlook beginnen, bereinigen Sie den internen Zustand. 
+Der Client ruft **[IOSTX:: SetSyncResult](iostx-setsyncresult.md)** auf, um das Ergebnis der Synchronisierung festzulegen, und ruft dann **[IOSTX:: SyncEnd](iostx-syncend.md)** auf, um diesen Status zu beenden. Der Client muss **[IOSTX:: SyncEnd](iostx-syncend.md)** für jeden Aufruf von **IOSTX:: SyncBeg** aufrufen, um zu bestimmen, ob der Status erfolgreich repliziert wurde. Nachdem dies bestimmt wurde, kann Outlook beginnen, den internen Status zu bereinigen. 
   
-Die meisten dieser Strukturen enthalten [out] / [in] Informationen, sodass Outlook zum Übergeben von Informationen an den Client und Client zum Übergeben von Informationen an Outlook. Wenn der Client **IOSTX::SyncBeg**aufruft, Outlook weist die Datenstruktur für einen bestimmten Status und mit Informationen für diesen Zustand initialisiert. Dies ist die [Out] Informationen. Klicken Sie in einem Zustand befindet, aktualisiert den Client Datenstruktur des entsprechenden für diesen Zustand. Dies ist die [in] Informationen. 
+Die meisten dieser Strukturen enthalten [out]/[in]-Informationen, sodass Outlook Informationen an den Client und den Client weitergeleitet werden kann, um Informationen an Outlook zu übermitteln. Wenn der Client **IOSTX:: SyncBeg**aufruft, weist Outlook die Datenstruktur für einen bestimmten Zustand zu und initialisiert sie mit Informationen für diesen Status. Dies sind die [out]-Informationen. In einem Zustand aktualisiert der Client die entsprechende Datenstruktur für diesen Status. Dies sind die [in]-Informationen. 
   
 ## <a name="see-also"></a>Siehe auch
 

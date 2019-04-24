@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal649b5400-8dc5-cc5c-3455-f462e2d31689
 ms.assetid: ''
-description: Identifiziert ein Benutzer, der möglicherweise keinen Daten Frei/Gebucht-Informationen verfügbar.
+description: Identifiziert einen Benutzer, der Frei/Gebucht-Daten möglicherweise nicht zur Verfügung hat.
 ms.openlocfilehash: 2511a94678f9ef8f2cb6be868db4f718d92ecb6d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317661"
 ---
 # <a name="fbuser"></a>FBUser
 
-Identifiziert ein Benutzer, der möglicherweise keinen Daten Frei/Gebucht-Informationen verfügbar.
+Identifiziert einen Benutzer, der Frei/Gebucht-Daten möglicherweise nicht zur Verfügung hat.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -35,22 +35,22 @@ typedef struct tagFBUser
 
 _m_cbEid_
   
-> Die Länge des Eintrags-ID des e-Mail-Benutzers dargestellt durch die [IMailUser](https://docs.microsoft.com/previous-versions/windows/desktop/wab/-wab-imailuser-deleteprops) -Schnittstelle. 
+> Die Länge der Eintrags-ID des e-Mail-Benutzers, der von der [IMailUser](https://docs.microsoft.com/previous-versions/windows/desktop/wab/-wab-imailuser-deleteprops) -Schnittstelle dargestellt wird. 
     
 _m_lpEid_
   
-> Die Eintrags-ID des e-Mail-Benutzers dargestellt durch die **IMailUser** -Schnittstelle. 
+> Die Eintrags-ID des e-Mail-Benutzers, der von der **IMailUser** -Schnittstelle dargestellt wird. 
     
 _m_ulReserved_
   
-> Dieser Parameter ist für die Outlook interne Verwendung reserviert und wird nicht unterstützt.
+> Dieser Parameter ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
 _m_pwszReserved_
   
-> Dieser Parameter ist für die Outlook interne Verwendung reserviert und wird nicht unterstützt.
+> Dieser Parameter ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zur Frei/Gebucht-API](about-the-free-busy-api.md)  
+- [Über die Frei/Gebucht-API](about-the-free-busy-api.md)  
 - [IFreeBusySupport](ifreebusysupport.md)
 

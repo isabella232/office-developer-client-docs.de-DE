@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7180bff2-91ad-4e11-923e-2a9acefa3215
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 834b010dc4810e26264bb418de9630bc83b99810
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1185a35df471fc3f85cbf50fd8ad3baa3927e72b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317381"
 ---
 # <a name="imsgserviceadmingetprovidertable"></a>IMsgServiceAdmin::GetProviderTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Zugriff auf die Tabelle Dienstanbieter, eine Liste der Dienstanbieter im Profil.
+Ermöglicht den Zugriff auf die Anbieter Tabelle, eine Liste der Dienstanbieter im Profil.
   
 ```cpp
 HRESULT GetProviderTable(
@@ -38,51 +38,51 @@ HRESULT GetProviderTable(
 
  _ulFlags_
   
-> [in] Immer NULL.
+> in Immer NULL.
     
  _lppTable_
   
-> [out] Ein Zeiger auf einen Zeiger auf den Anbieter-Tabelle.
+> Out Ein Zeiger auf einen Zeiger auf die Anbieter Tabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Anbieter Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgServiceAdmin::GetProviderTable** -Methode ermöglicht den Zugriff auf die MAPI-Anbieter-Tabelle eine Tabelle, die alle Adressbuch, Nachrichtenspeicher und Transportanbieter, die derzeit im Profil installiert aufgeführt sind. 
+Die **IMsgServiceAdmin:: GetProvider** Table-Methode ermöglicht den Zugriff auf die MAPI-Anbieter Tabelle, eine Tabelle, in der das gesamte Adressbuch, der Nachrichtenspeicher und die Transportanbieter aufgelistet sind, die aktuell im Profil installiert sind. 
   
-Im Gegensatz zu der Tabelle der Dienstanbieter über die [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md) -Methode zurückgegeben kann nicht die Anbieter zurückgegebenen **IMsgServiceAdmin::GetProviderTable** zusätzliche Zeilen einzubeziehen, die Informationen im Zusammenhang darstellen mit mindestens -Dienstanbietern im Profil 
+Im Gegensatz zur Anbieter Tabelle, die über die [IProviderAdmin:: GetProvider](iprovideradmin-getprovidertable.md) Table-Methode zurückgegeben wird, kann die durch **IMsgServiceAdmin::** getproviderable zurückgegebene Anbieter Tabelle keine zusätzlichen Zeilen mit zugeordneten Informationen darstellen. mit einem oder mehreren Dienstanbietern im Profil. 
   
-Anbieter, die gelöscht wurden, oder verwendet werden, doch zum Löschen markiert wurden, sind nicht in der Provider-Tabelle enthalten. Provider-Tabellen sind statisch, was bedeutet, dass nachfolgende Ergänzungen oder Löschvorgänge aus dem Profil in der Tabelle nicht wiedergegeben werden. 
+Anbieter, die gelöscht oder verwendet wurden, aber zum Löschen markiert wurden, sind nicht in der Anbieter Tabelle enthalten. Anbieter Tabellen sind statisch, was bedeutet, dass nachfolgende Ergänzungen oder Löschungen aus dem Profil nicht in der Tabelle wiedergegeben werden. 
   
-Wenn das Profil keine Anbieter aufweist, gibt **GetProviderTable** eine Tabelle mit 0 (null) Zeilen und den Rückgabewert S_OK zurück. 
+Wenn das Profil keine Anbieter hat, **** gibt getproviderable eine Tabelle mit null Zeilen und dem RÜCKGABEwert S_OK zurück. 
   
-Eine vollständige Liste der Spalten in der Tabelle Anbieter finden Sie unter [Provider-Tabelle](provider-tables.md). 
+Eine vollständige Liste der Spalten in der Anbieter Tabelle finden Sie unter [Provider Table](provider-tables.md). 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie die Zeilen einer Tabelle Anbieter in Transport Reihenfolge verwenden Sie die folgende Schritte aus:
+Gehen Sie folgendermaßen vor, um die Zeilen einer Anbieter Tabelle in der Transport Reihenfolge abzurufen:
   
-1. Rufen Sie die [Methode IMAPITable:: Restrict](imapitable-restrict.md) -Methode, um eine eigenschaftseinschränkung zugrunde liegen, die die **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))-Eigenschaft mit MAPI_TRANSPORT_PROVIDER entspricht.
+1. Rufen Sie die [IMAPITable:: Restrict](imapitable-restrict.md) -Methode auf, um eine Eigenschaftseinschränkung aufzuerlegen, die der **PR_RESOURCE_TYPE** ([PIDTAGRESOURCETYPE (](pidtagresourcetype-canonical-property.md))-Eigenschaft mit MAPI_TRANSPORT_PROVIDER entspricht.
     
-2. Aufrufen der [SortTable](imapitable-sorttable.md) -Methode, um die Tabelle nach der **PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md))-Spalte zu sortieren. 
+2. Rufen Sie die [IMAPITable:: sortable](imapitable-sorttable.md) -Methode auf, um die Tabelle nach der **PR_PROVIDER_ORDINAL** ([pidtagproviderordinal (](pidtagproviderordinal-canonical-property.md))-Spalte zu sortieren. 
     
-3. Rufen Sie [die QueryRows, um die Zeilen der Tabelle zu erhalten](imapitable-queryrows.md) . 
+3. Rufen Sie die [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode auf, um die Zeilen der Tabelle abzurufen. 
     
-Eine Alternative zu diesen anrufen ist auf einen einzigen Aufruf der Funktion [HrQueryAllRows](hrqueryallrows.md) mit aller entsprechenden Daten ansetzen, die Strukturen in übergeben. 
+Eine Alternative zu diesen Aufrufen besteht darin, einen einzelnen Aufruf der [HrQueryAllRows](hrqueryallrows.md) -Funktion mit allen entsprechenden Datenstrukturen vorzunehmen. 
   
-Wenn Sie die Spalten **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) in den einzelnen Zeilen abrufen, können Sie dieses Array von **MAPIUID** -Strukturen, die Transport-Reihenfolge in einem Aufruf von [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)festgelegt.
+Wenn Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Spalten in den einzelnen Zeilen abrufen, können Sie dieses Array von **MAPIUID** -Strukturen zum Festlegen der Transport Reihenfolge in einem Aufruf von [IMsgServiceAdmin:: MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)verwenden.
   
-Festlegen der Option MAPI_UNICODE im Parameter _UlFlags_ bewirkt Folgendes: 
+Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter führt zu folgenden Aktionen: 
   
-- Legt den Typ String in Unicode für von der [IMAPITable::QueryColumns](imapitable-querycolumns.md) -Methode für die anfänglichen aktiven Spalten der Tabelle vom Anbieter zurückgegebenen Daten fest. Die ersten aktiven Spalten für eine Tabelle Anbieter sind die Spalten, die die **QueryColumns** -Methode vor der Anbieter zurückgibt, die die Tabelle Aufrufe die [IMAPITable::SetColumns](imapitable-setcolumns.md) -Methode enthält. 
+- Legt den Zeichenfolgentyp für Daten fest, die für die anfänglichen aktiven Spalten der Anbieter Tabelle von der [IMAPITable:: QueryColumns](imapitable-querycolumns.md) -Methode zurückgegeben werden. Die ersten aktiven Spalten für eine Anbieter Tabelle sind die Spalten, die die **QueryColumns** -Methode zurückgibt, bevor der Anbieter, der die Tabelle enthält, die [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode aufruft. 
     
-- Legt den Typ String in Unicode für von **QueryRows**für die anfänglichen aktiven Zeilen der Tabelle vom Anbieter zurückgegebenen Daten fest. Die anfänglichen aktiven Zeilen, die für eine Anbieter-Tabelle sind die Zeilen, die **QueryRows** vor der Anbieter zurückgibt, das die Tabelle Aufrufe **SetColumns**enthält. 
+- Legt den Zeichenfolgentyp auf Unicode für Daten fest, die für die anfänglichen aktiven Zeilen der Anbieter Tabelle von **QueryRows**zurückgegeben werden. Die ersten aktiven Zeilen für eine Anbieter Tabelle sind die Zeilen, die **QueryRows** zurückgibt, bevor der Anbieter, der die Tabelle enthält, SetColumns aufruft. **** 
     
-- Steuert die Eigenschaftentypen der Sortierreihenfolge von der [IMAPITable::QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegeben wird, bevor der Client, der die Anbieter-Tabelle enthält die [SortTable](imapitable-sorttable.md) -Methode aufruft. 
+- Steuert die Eigenschaftentypen der Sortierreihenfolge, die von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegeben wird, bevor der Client, der die Anbieter Tabelle enthält, die [IMAPITable:: sortable](imapitable-sorttable.md) -Methode aufruft. 
     
 ## <a name="see-also"></a>Siehe auch
 

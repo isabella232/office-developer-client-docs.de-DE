@@ -1,5 +1,5 @@
 ---
-title: PidTagExplicitConversion (kanonische Eigenschaft)
+title: Kanonische Pidtagexplicitconversion (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8aabcec6-f735-41fe-a5f4-61d4635b2c58
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cf4fe916d93d330b43c0acd76be2db44687a4da7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 52d4bdbd7dbd44f2957b3efc20cba393dc0eb2f5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316359"
 ---
-# <a name="pidtagexplicitconversion-canonical-property"></a>PidTagExplicitConversion (kanonische Eigenschaft)
+# <a name="pidtagexplicitconversion-canonical-property"></a>Kanonische Pidtagexplicitconversion (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass ein Absender eine Nachricht inhaltskonvertierung für einen bestimmten Empfänger angefordert hat.
+Gibt an, dass ein Nachrichtenabsender eine Nachrichteninhalts Konvertierung für einen bestimmten Empfänger angefordert hat.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Gibt an, dass ein Absender eine Nachricht inhaltskonvertierung für einen bestim
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

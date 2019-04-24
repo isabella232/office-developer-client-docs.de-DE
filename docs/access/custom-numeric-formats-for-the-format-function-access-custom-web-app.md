@@ -7,18 +7,18 @@ ms.assetid: 97efe972-d873-47d7-be81-8ae3461870c4
 description: Hier erfahren Sie, wie Sie die Darstellung einer Zahl durch das Erstellen eines benutzerdefinierten Zahlenformats steuern.
 localization_priority: Priority
 ms.openlocfilehash: b23b1f7ee806a03df8f1c0d6ec1de0f3282b427b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282201"
 ---
 # <a name="custom-numeric-formats-for-the-format-function-access-custom-web-app"></a>Benutzerdefinierte numerische Formate für die Formatfunktion (benutzerdefinierte Access-Web-App)
 
 Hier erfahren Sie, wie Sie die Darstellung einer Zahl durch das Erstellen eines benutzerdefinierten Zahlenformats steuern.
   
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
 
 Sie können die Darstellung einer Zahl ändern, indem Sie ein benutzerdefiniertes Zahlenformat erstellen. Ein benutzerdefiniertes Zahlenformat kann über ein bis drei Teile, die durch ein Semikolon (;) getrennt sind, verfügen. Wenn das Formatargument der [Format-Funktion (Access benutzerdefinierte Web app)](format-function-access-custom-web-app.md)-Funktion eines der vordefinierten numerischen Formate enthält, ist nur ein Teil zulässig. 
   

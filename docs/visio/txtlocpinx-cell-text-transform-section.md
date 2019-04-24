@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm82251275
 localization_priority: Normal
 ms.assetid: cbfc4e91-10d1-d50e-3e8a-f269f7123276
-description: 'Legt die X--Koordinate des Textblocks des Drehung im Verhältnis zum Ursprung des Textblocks. Die Standardformel lautet:'
-ms.openlocfilehash: 6eb48532bb19bce5b0d22ed2cd0997014721df88
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Bestimmt die x-Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung des Textblocks. Die Standardformel lautet:'
+ms.openlocfilehash: 390f8129e8000a043969eda0ab1c8e4ef62515ef
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316450"
 ---
-# <a name="txtlocpinx-cell-text-transform-section"></a>TxtLocPinX Cell (Text Transform Section)
+# <a name="txtlocpinx-cell-text-transform-section"></a>Zelle "TxtLocPinX" (Abschnitt "Text Transform")
 
-Legt die *X* --Koordinate des Textblocks des Drehung im Verhältnis zum Ursprung des Textblocks. Die Standardformel lautet: 
+Bestimmt die *x* -Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung des Textblocks. Die Standardformel lautet: 
   
-= TxtWidth \* 0,5
+= Zelle TxtWidth \* 0,5
   
 Diese Formel berechnet die horizontale Mitte des Textblocks.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle TxtLocPinX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle TxtLocPinX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | TxtLocPinX  <br/> |
+| Zellenname:  <br/> | Zelle TxtLocPinX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TxtLocPinX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle TxtLocPinX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

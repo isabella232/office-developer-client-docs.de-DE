@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3e758acfa1cf0c11be666dd730d9bf589d2e9d77
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7e445646477ad1fc56b41141b541358d9b9f9616
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321695"
 ---
 # <a name="imapiformmgrloadform"></a>IMAPIFormMgr::LoadForm
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Startet ein Formular, um eine vorhandene Nachricht zu öffnen.
+Startet ein Formular zum Öffnen einer vorhandenen Nachricht.
   
 ```cpp
 HRESULT LoadForm(
@@ -47,57 +47,57 @@ HRESULT LoadForm(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster der Statusanzeige, die angezeigt wird, während das Formular geöffnet wird. Der Parameter _UlUIParam_ wird ignoriert, es sei denn, das Flag MAPI_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Handle für das übergeordnete Fenster der Statusanzeige, das angezeigt wird, während das Formular geöffnet wird. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das MAPI_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Formular geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie das Formular geöffnet wird. Die folgenden Flags können festgelegt werden:
     
 MAPI_DIALOG 
   
-> Zeigt eine Benutzeroberfläche zum Bereitstellen von Status oder auffordern, Weitere Informationen. Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
+> Zeigt eine Benutzeroberfläche an, um den Status anzugeben oder den Benutzer aufzufordern, weitere Informationen zu erhalten. Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachricht Klasse Zeichenfolgen, die eine genaue Übereinstimmung sollten aufgelöst werden.
+> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
     
  _lpszMessageClass_
   
-> [in] Ein Zeiger auf eine Zeichenfolge, die den Namen die Nachrichtenklasse der Nachricht geladen werden. Wenn NULL in der _LpszMessageClass_ -Parameter übergeben wird, wird die Nachrichtenklasse aus der Nachricht auf das durch den Parameter _Pmsg_ bestimmt. 
+> in Ein Zeiger auf eine Zeichenfolge, die die Nachrichtenklasse der zu ladenden Nachricht benennt. Wenn NULL im _lpszMessageClass_ -Parameter übergeben wird, wird die Nachrichtenklasse aus der Nachricht bestimmt, auf die durch den _pmsg_ -Parameter verwiesen wird. 
     
  _ulMessageStatus_
   
-> [in] Eine Bitmaske vom Client definiert oder vom Anbieter definiertes Flags, kopiert aus der **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft der Nachricht bereitstellt, die Informationen zum Status der Nachricht. Der Parameter _UlMessageStatus_ muss festgelegt werden, wenn _LpszMessageClass_ ungleich NULL ist. Andernfalls wird _UlMessageStatus_ ignoriert. 
+> in Eine Bitmaske von Client definierten oder Anbieter definierten Flags, die aus der **PR_MSG_STATUS** ([pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md))-Eigenschaft der Nachricht kopiert wurden, die Informationen zum Status der Nachricht bereitstellt. Der Parameter _ulMessageStatus_ muss festgelegt werden, wenn _LPSZMESSAGECLASS_ ungleich NULL ist; Andernfalls wird _ulMessageStatus_ ignoriert. 
     
  _ulMessageFlags_
   
-> [in] Ein Zeiger auf eine Bitmaske aus Flags, die von der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht, die angibt, den aktuellen Status der Nachricht kopiert. Der Parameter _UlMessageFlags_ muss festgelegt werden, wenn _LpszMessageClass_ ungleich NULL ist. Andernfalls wird _UlMessageFlags_ ignoriert. 
+> in Ein Zeiger auf eine Bitmaske von Flags, die aus der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht kopiert werden, die den aktuellen Status der Nachricht angibt. Der Parameter _ulMessageFlags_ muss festgelegt werden, wenn _LPSZMESSAGECLASS_ ungleich NULL ist; Andernfalls wird _ulMessageFlags_ ignoriert. 
     
  _pFolderFocus_
   
-> [in] Ein Zeiger auf den Ordner, der die Nachricht direkt enthält. Der Parameter _pFolderFocus_ kann NULL sein, wenn eine solche ein Ordner nicht vorhanden ist (z. B., wenn die Nachricht in eine andere Nachricht eingebettet ist). 
+> in Ein Zeiger auf den Ordner, der die Nachricht direkt enthält. Der _pFolderFocus_ -Parameter kann NULL sein, wenn ein solcher Ordner nicht vorhanden ist (beispielsweise, wenn die Nachricht in eine andere Nachricht eingebettet ist). 
     
  _pMessageSite_
   
-> [in] Ein Zeiger auf die Website Nachricht der Nachricht.
+> in Ein Zeiger auf die Nachrichtenwebsite der Nachricht.
     
  _pmsg_
   
-> [in] Ein Zeiger auf die Nachricht.
+> in Ein Zeiger auf die Nachricht.
     
  _pViewContext_
   
-> [in] Ein Zeiger auf den Ansichtskontext für die Nachricht. Der Parameter _pViewContext_ kann NULL sein. 
+> in Ein Zeiger auf den Ansichtskontext für die Nachricht. Der _pViewContext_ -Parameter kann NULL sein. 
     
  _riid_
   
-> [in] Die Schnittstelle Identifier (IID) der Schnittstelle für das zurückgegebene Form-Objekt verwendet werden soll. Der Parameter _Riid_ darf nicht NULL sein. 
+> in Der Schnittstellenbezeichner (IID) der Schnittstelle, die für das zurückgegebene Form-Objekt verwendet werden soll. Der _riid_ -Parameter darf nicht NULL sein. 
     
  _ppvObj_
   
-> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -105,39 +105,39 @@ S_OK
     
 MAPI_E_NO_INTERFACE 
   
-> Das Formular unterstützt die angeforderte Schnittstelle nicht.
+> Die angeforderte Schnittstelle wird vom Formular nicht unterstützt.
     
 MAPI_E_NOT_FOUND 
   
-> Die Nachrichtenklasse übergebenen _LpszMessageClass_ stimmt nicht mit die Nachrichtenklasse für jedes Formular in der Formularbibliothek überein. 
+> Die Nachrichtenklasse, die in _lpszMessageClass_ übergeben wird, stimmt nicht mit der Nachrichtenklasse für ein Formular in der Formularbibliothek überein. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormMgr::LoadForm** -Methode zum Öffnen eines Formulars für eine vorhandene Nachricht. **LoadForm** Öffnet das Form-Objekt, wird die Nachricht in das Form-Objekt geladen, richtet die entsprechenden Ansichtskontext bei Bedarf und die angeforderte Schnittstelle für das Form-Objekt zurückgibt. 
+Formular Betrachter rufen die **IMAPIFormMgr:: LoadForm** -Methode auf, um ein Formular für eine vorhandene Nachricht zu öffnen. **LoadForm** öffnet das Form-Objekt, lädt die Nachricht in das Form-Objekt, richtet gegebenenfalls den entsprechenden Ansichtskontext ein und gibt die angeforderte Schnittstelle für das Form-Objekt zurück. 
   
-Der _pFolderFocus_ -Parameter verweist auf den Ordner, der die Nachricht enthält. Wenn die Nachricht in einer anderen Nachricht eingebettet ist, sollte _pFolderFocus_ NULL sein. 
+Der _pFolderFocus_ -Parameter zeigt auf den Ordner, der die Nachricht enthält. Wenn die Nachricht in eine andere Nachricht eingebettet ist, sollte _PFOLDERFOCUS_ NULL sein. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn NULL in _LpszMessageClass_übergeben wird, erhält die Implementierung der Nachricht Nachrichtenklasse, Status und Flags aus der Nachricht **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), **PR_MSG_STATUS** und **PR_MESSAGE_FLAGS **Eigenschaften. Wenn eine Meldungszeichenfolge-Klasse in _LpszMessageClass_bereitgestellt wird, muss die Implementierung der Werte in _UlMessageStatus_ und _UlMessageFlags_verwenden.
+Wenn NULL in _lpszMessageClass_übergeben wird, ruft die Implementierung die Nachrichtenklasse, den Status und die Flags der Nachricht aus **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), **PR_MSG_STATUS** und **PR_MESSAGE_FLAGS **Eigenschaften. Wenn in _lpszMessageClass_eine Nachrichtenklassen Zeichenfolge bereitgestellt wird, muss die Implementierung die Werte in _ulMessageStatus_ und _ulMessageFlags_verwenden.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormMgr::LoadForm** -Methode, um ein Formular zu laden, bevor es angezeigt.  <br/> |
+|MAPIFormFunctions. cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI verwendet die **IMAPIFormMgr:: LoadForm** -Methode, um ein Formular zu laden, bevor es angezeigt wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagMessageClass (kanonische Eigenschaft)](pidtagmessageclass-canonical-property.md)
+[Kanonische PidTagMessageClass-Eigenschaft](pidtagmessageclass-canonical-property.md)
   
-[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
+[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
   
-[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
+[Kanonische Pidtagmessagestatus (-Eigenschaft](pidtagmessagestatus-canonical-property.md)
   
 [IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

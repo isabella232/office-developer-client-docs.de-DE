@@ -1,31 +1,31 @@
 ---
-title: Rel-Element (Page_Type ComplexType) ("Visio XML")
+title: Rel-Element (Page_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d61b1b97-c360-4d9d-217f-e6f45f760e42
-description: Gibt eine Beziehung mit einem Webpart mit der entsprechenden Seite XML.
+description: Gibt eine Beziehung zu einem Webpart mit dem entsprechenden Seiten-XML-Code an.
 ms.openlocfilehash: 7a45764817175f670cdb009157e21a1a25f31cc5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319999"
 ---
-# <a name="rel-element-pagetype-complextype-visio-xml"></a>Rel-Element (Page_Type ComplexType) ("Visio XML")
+# <a name="rel-element-pagetype-complextype-visio-xml"></a>Rel-Element (Page_Type complexType) (' Visio XML ')
 
-Gibt eine Beziehung mit einem Webpart mit der entsprechenden Seite XML.
+Gibt eine Beziehung zu einem Webpart mit dem entsprechenden Seiten-XML-Code an.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Pages.XML, masters.xml, recordsets.xml, Seite # .xml, Master-Shape # .xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Pages. XML, Masters. XML, Recordsets. XML, Page #. XML, Master #. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt eine Beziehung mit einem Webpart mit der entsprechenden Seite XML.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Page](page-element-pages_type-complextypevisio-xml.md) <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz der Seite, die in der Zeichnung XML gespeichert.  <br/> |
+|[Page](page-element-pages_type-complextypevisio-xml.md) <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz von Seiten-XML an, die in der Zeichnung gespeichert ist.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,12 +52,12 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|R-Id:  <br/> |XSD: String  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |erforderlich  <br/> |Gibt eine Beziehung mit einem Webpart an.  <br/> |"befassen #"  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |
+|r:ID  <br/> |XSD: Zeichenfolge  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |erforderlich  <br/> |Gibt eine Beziehung zu einem Webpart an.  <br/> |"rId #"  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert des **R: Id** -Attributs muss vom Typ **ST_RelationshipID** . Der Typ **ST_RelationshipID** ist eine Zeichenfolge, die im Format sein muss "entfernen #", wobei muss das letzte Zeichen eine Zahl sein. Die Nummer muss unter allen gleichgeordneten Elementen des Elements **Rel** eindeutig sein. 
+Der Wert des **r:ID** -Attributs muss ein **ST_RelationshipID** -Typ sein. Der **ST_RelationshipID** -Typ ist eine Zeichenfolge, die das Format "rId #" aufweisen muss, wobei das letzte Zeichen eine Zahl sein muss. Die Zahl muss unter allen nebengeordneten Elementen des **rel** -Elements eindeutig sein. 
   
-Weitere Informationen zu den Typ ST_RelationshipID finden Sie in der [Spezifikation ISO/IEC 29500 Teil 1](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750).
+Weitere Informationen zum ST_RelationshipID-Typ finden Sie in der [Spezifikation ISO/IEC 29500, Abschnitt 1](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750).
   
 

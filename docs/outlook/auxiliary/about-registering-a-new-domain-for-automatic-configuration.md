@@ -6,38 +6,38 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: a7ab8a50-dd30-4ba5-b6d8-e6d1f482e6f1
-description: Outlook bietet eine Möglichkeit zum Angeben einer neuen Nachricht Service-Domäne für die automatische Konfiguration und ermöglichen die Nachricht-Dienstanbieters für das Dienstkonto konfiguriert.
+description: Outlook bietet eine Möglichkeit zum Angeben einer neuen Nachrichtendienst Domäne für die automatische Konfiguration und ermöglicht es dem Nachrichtendienst Anbieter, das Konto zu konfigurieren.
 ms.openlocfilehash: bf06ff8d145ed6173e3545f784f8b5b7b5f433be
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316968"
 ---
 # <a name="about-registering-a-new-domain-for-automatic-configuration"></a>Informationen zum Registrieren einer neuen Domäne für die automatische Konfiguration
 
-Outlook bietet eine Möglichkeit zum Angeben einer neuen Nachricht Service-Domäne für die automatische Konfiguration und ermöglichen die Nachricht-Dienstanbieters für das Dienstkonto konfiguriert.
+Outlook bietet eine Möglichkeit zum Angeben einer neuen Nachrichtendienst Domäne für die automatische Konfiguration und ermöglicht es dem Nachrichtendienst Anbieter, das Konto zu konfigurieren.
   
-Beim Entwerfen eines Nachricht-Dienstanbieters können den folgenden Schlüssel in der Windows-Registrierung Sie eine neue Domäne automatisch konfiguriert werden, durch die entsprechende Nachricht-Dienstanbieter angeben: 
+Beim Entwerfen eines Nachrichtendienst Anbieters können Sie den folgenden Schlüssel in der Windows-Registrierung verwenden, um eine neue Domäne anzugeben, die automatisch vom entsprechenden Nachrichtendienst Anbieter konfiguriert werden soll: 
   
 `HKLM\Software\Microsoft\Office\Outlook\AutoConfigDomains\<domain name>\`
   
-In den Schlüssel `<domain name>` ist die Domäne für die automatische Konfiguration. Diesen Domänennamen ein Platzhalterzeichen unterstützt \* am Anfang nur. In der folgenden Tabelle sind die Werte dieser Schlüssel unterstützt. 
+Im Schlüssel `<domain name>` ist die Domäne für die automatische Konfiguration. Dieser Domänenname unterstützt nur \* am Anfang einen Platzhalter. In der folgenden Tabelle sind die von diesem Schlüssel unterstützten Werte aufgeführt. 
   
-| Value | Typ | Beschreibung |
+| Wert | Typ | Beschreibung |
 |:-----|:-----|:-----|
-|Anzeigename  <br/> |REG_SZ  <br/> |Der Domänenname, der während der automatischen Konfiguration für den Benutzer angezeigt wird.  <br/> |
-|Dienstname  <br/> |REG_SZ  <br/> |Der Nachrichtendienst registriert in mapisvc.inf, die von dieser Domäne unterstützt.  <br/> |
-|Installationsspeicherort  <br/> |REG_SZ  <br/> |Die URL des Speicherorts den Nachricht-Dienstanbieter zu installieren, wenn es nicht bereits installiert ist.  <br/> |
-|Mindestversion  <br/> |REG_DWORD  <br/> |Die minimale Version der DLL-Datei des Dienstanbieters Nachricht, die erforderlich ist. Dieser Wert ist optional.  <br/> |
+|Anzeigename  <br/> |REG_SZ  <br/> |Der Domänenname, der dem Benutzer während der automatischen Konfiguration angezeigt wird.  <br/> |
+|Dienst Name  <br/> |REG_SZ  <br/> |Der in MAPISVC. inf registrierte Nachrichtendienst, der diese Domäne unterstützt.  <br/> |
+|Installationsspeicherort  <br/> |REG_SZ  <br/> |Die URL des Speicherorts, an dem der Nachrichtendienst Anbieter installiert werden soll, falls er noch nicht installiert ist.  <br/> |
+|MindestVersion  <br/> |REG_DWORD  <br/> |Die mindestens erforderliche Version der DLL des Nachrichtendienst Anbieters. Dieser Wert ist optional.  <br/> |
    
-Wenn Outlook die automatische Konfiguration für ein e-Mail-Konto beginnt, überprüft die Windows-Registrierung für die Registrierung von der Domäne, die durch die e-Mail-Adresse angegeben. Wenn die Domäne bereits in der Windows-Registrierung angegeben wird, überprüft Outlook an, ob der Nachrichtendienst in Mapisvc.inf registriert ist. Outlook kann nicht mit der automatischen Konfiguration der Domäne fortgesetzt, es sei denn, es in der Windows-Registrierung angegeben wurde.
+Wenn Outlook die automatische Konfiguration für ein e-Mail-Konto startet, prüft es die Windows-Registrierung nach der Registrierung der Domäne, die von der e-Mail-Adresse angegeben wird. Wenn die Domäne bereits in der Windows-Registrierung angegeben ist, überprüft Outlook, ob der Nachrichtendienst in MAPISVC. inf registriert ist. Outlook kann nicht mit der automatischen Konfiguration der Domäne fortfahren, es sei denn, es wurde in der Windows-Registrierung angegeben.
   
-Wenn Sie der angegebenen Dienst ist derzeit nicht in Mapisvc.inf, registriert oder der Nachricht-Dienstanbieter installiert ist, aber die DLL-Datei verfügt über eine Version vor dem angegebenen Mindestwert, Outlook verwendet den angegebenen Anzeigenamen und fordert den Benutzer zum Installieren der Anbieter. Wenn der Benutzer annimmt, leitet Outlook den Benutzer zum angegebenen Installationsspeicherort, damit der Benutzer den Anbieter installieren kann. Installieren den Anbieter registriert den Dienst in Mapisvc.inf.
+Wenn der angegebene Nachrichtendienst derzeit nicht in MAPISVC. inf registriert ist oder wenn der Nachrichtendienst Anbieter installiert ist, aber die DLL eine Version vor dem angegebenen Minimum hat, verwendet Outlook den angegebenen Anzeigenamen und fordert den Benutzer auf, die Anbieter. Wenn der Benutzer akzeptiert, leitet Outlook den Benutzer an den angegebenen Installationsspeicherort um, sodass der Benutzer den Anbieter installieren kann. Durch die Installation des Anbieters wird der Nachrichtendienst in MAPISVC. inf registriert.
   
-Wenn der Nachrichtendienst ist derzeit in Mapisvc.inf registriert, und die Service Provider DLL-Datei eine geeignete Version ist, Outlook Message-Dienst mithilfe von [IMsgServiceAdmin:: CreateMsgService](https://msdn.microsoft.com/library/0135f049-0311-45e5-9685-78597d599a4e%28Office.15%29.aspx)erstellt und konfiguriert es anschließend mithilfe von [ IMsgServiceAdmin::ConfigureMsgService](https://msdn.microsoft.com/library/a08f5905-2585-49ca-abb7-a77f2736f604%28Office.15%29.aspx). Automatische Konfiguration von Outlook verwendet die folgenden drei Eigenschaften zum Zulassen des Dienstanbieters für das Konto eingerichtet: [PidTagAutoConfigurationUserName](https://msdn.microsoft.com/library/05dfa0e2-4ab1-4f57-9009-6a815aca87bd%28Office.15%29.aspx), [PidTagAutoConfigurationUserEmail](https://msdn.microsoft.com/library/845140c8-5454-4b47-acec-ab5aff00b768%28Office.15%29.aspx)und [PidTagAutoConfigurationUserPassword ](https://msdn.microsoft.com/library/d33e7c45-55d8-4dc1-ade9-605542d87e61%28Office.15%29.aspx).
+Wenn der Nachrichtendienst derzeit in MAPISVC. inf registriert ist und die Dienstanbieter. dll eine geeignete Version ist, erstellt Outlook den Nachrichtendienst mithilfe von [IMsgServiceAdmin:: CreateMsgService](https://msdn.microsoft.com/library/0135f049-0311-45e5-9685-78597d599a4e%28Office.15%29.aspx)und konfiguriert ihn dann mithilfe von [ IMsgServiceAdmin:: ConfigureMsgService](https://msdn.microsoft.com/library/a08f5905-2585-49ca-abb7-a77f2736f604%28Office.15%29.aspx). Die automatische Outlook-Konfiguration verwendet die folgenden drei Eigenschaften, damit der Anbieter das Konto einrichten kann: [pidtagautoconfigurationusername (](https://msdn.microsoft.com/library/05dfa0e2-4ab1-4f57-9009-6a815aca87bd%28Office.15%29.aspx), [pidtagautoconfigurationuseremail (](https://msdn.microsoft.com/library/845140c8-5454-4b47-acec-ab5aff00b768%28Office.15%29.aspx)und [pidtagautoconfigurationuserpassword ( ](https://msdn.microsoft.com/library/d33e7c45-55d8-4dc1-ade9-605542d87e61%28Office.15%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Dateiformat von MapiSvc.inf](https://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
+- [Datei Format von MapiSvc. inf](https://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
 

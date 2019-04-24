@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 70fbdb41-46ea-d016-25a2-37e94962095d
-description: Überspringt eine angegebene Anzahl von Blöcken des Frei/Gebucht-Daten.
-ms.openlocfilehash: 63f699d09e143a879702e8dc76beb8a969a77b82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Überspringt eine angegebene Anzahl von Frei/Gebucht-Datenblöcken.
+ms.openlocfilehash: cf8ae18b5ed2c24a48d44d9e8d461da7d95054d2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317549"
 ---
 # <a name="ienumfbblockskip"></a>IEnumFBBlock::Skip
 
-Überspringt eine angegebene Anzahl von Blöcken des Frei/Gebucht-Daten.
+Überspringt eine angegebene Anzahl von Frei/Gebucht-Datenblöcken.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IEnumFBBlock](ienumfbblock.md).
+Siehe [IEnumFBBlock](ienumfbblock.md).
   
 ```cpp
 HRESULT Skip(  
@@ -32,7 +32,7 @@ HRESULT Skip(
 
 _celt_
   
->  [in] Die Anzahl der Frei/Gebucht-Blöcke überspringen. 
+>  in Die Anzahl der frei/gebucht-Blöcke, die übersprungen werden sollen. 
     
 ## <a name="return-values"></a>Rückgabewerte
 

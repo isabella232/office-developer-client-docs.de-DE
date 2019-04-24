@@ -8,22 +8,22 @@ f1_keywords:
 - TempNum
 - TempNum12
 keywords:
-- tempnum12-Funktion [excel 2007], TempNum-Funktion [Excel 2007]
+- tempnum12-Funktion [Excel 2007], TempNum-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 5b74d618-db3a-4d84-bd17-4fee7ae3b51e
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 5ebe58dba32c2cf0382bf0811713eaa0a5471dda
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cabd44ab828a2cfe22253e9aaf12abf7b7709d69
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310360"
 ---
 # <a name="tempnumtempnum12"></a>TempNum/TempNum12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliothek-Funktion, die eine temporäre **XLOPER**erstellt/ **XLOPER12** mit einer Microsoft Excel-Arbeitsblatt-Zahl (einer IEEE-8-Byte-Double). 
+Framework-Bibliotheksfunktion, mit der ein temporäres **XLOPER**/ -**XLOPER12** mit einer Microsoft Excel-Arbeitsblatt Nummer (ein IEEE 8-Byte-Double) erstellt wird. 
   
 ```cs
 LPXLOPER TempNum(double d);
@@ -32,17 +32,17 @@ LPXLOPER12 TempNum12(double d);
 
 ## <a name="parameters"></a>Parameter
 
- _d_ (**double**)
+ _d_ (**Double**)
   
-Der vorgesehene Wert. Beachten Sie, dass IEEE Unterseite normale Zahlen derzeit nicht unterstützt werden und sind auf 0 (null) gerundet. Negativ unendlich wird unterstützt.
+Der vorgesehene Wert. Beachten Sie, dass IEEE-Sub-normal zahlen derzeit nicht unterstützt werden und auf NULL gerundet werden. Negative Unendlichkeit wird unterstützt.
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Gibt einen numerischen **XltypeNum** mit dem Wert übergeben, oder NULL, wenn der übergebene Wert Unterseite normalen wurde. 
+Gibt eine numerische **XltypeNum** zurück, die den übergebenen Wert enthält, oder NULL, wenn der übergebene Wert unter normal ist. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **TempNum12** -Funktion verwendet, um **XlfGetWorkspace**ein Argument übergeben.
+In diesem Beispiel wird die **TempNum12** -Funktion verwendet, um ein Argument an **xlfGetWorkspace**zu übergeben.
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

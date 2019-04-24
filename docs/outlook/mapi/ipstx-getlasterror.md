@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 68dc0ecc-881e-de69-faaa-90acb9857031
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f45b070464fe1b3c177088ff6aa3295f961d45f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1d0fb16ba63548a44dba3920670c0e65f8c700a1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315099"
 ---
 # <a name="ipstxgetlasterror"></a>IPSTX::GetLastError
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft Informationen über den letzten Fehler erweitert.
+Ruft erweiterte Informationen zum letzten Fehler ab.
   
 ```cpp
 HRESULT GetLastError( 
@@ -39,7 +39,7 @@ HRESULT GetLastError(
 
  _hResult_
   
->  [in] Fehlercode. 
+>  in Fehlercode. 
     
  _ulFlags_
   
@@ -47,7 +47,7 @@ HRESULT GetLastError(
     
  _lppMAPIError_
   
->  [out] Zeiger auf die **MAPIERROR** -Struktur, die erweiterte Informationen für den Fehler enthält. Finden Sie unter mapidefs.h für die Definition des **LPMAPIERROR**Typs. 
+>  Out Zeiger auf die **MAPIERROR** -Struktur, die die erweiterten Informationen für den Fehler enthält. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMAPIERROR**. 
     
 ## <a name="see-also"></a>Siehe auch
 

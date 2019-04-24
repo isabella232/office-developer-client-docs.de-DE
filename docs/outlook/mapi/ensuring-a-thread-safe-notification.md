@@ -1,5 +1,5 @@
 ---
-title: Sicherstellen einer threadsicheren Benachrichtigung
+title: Sicherstellen einer Thread sicheren Benachrichtigung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,21 +8,21 @@ api_type:
 - COM
 ms.assetid: d46ce99a-4d7f-45b0-ba21-154498c15775
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ad10b2ebd835b21f207fd43ecd8aebc7e1f475f4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 88c58d14893f2ac561dc56441eb38b7f4bd0db32
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316592"
 ---
-# <a name="ensuring-a-thread-safe-notification"></a>Sicherstellen einer threadsicheren Benachrichtigung
+# <a name="ensuring-a-thread-safe-notification"></a>Sicherstellen einer Thread sicheren Benachrichtigung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn der Client auf eine Multithread-Plattform ausgeführt wird, benötigen Sie möglicherweise die Assurance, dass Anrufe an Ihre [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) Methoden für einen bestimmten Thread auftreten. Da Anrufe an **OnNotify** in der Regel auf einem beliebigen Thread auftreten können, ist es möglich, Benachrichtigung bei unerwarteten und unerwünschte Threads, führt zu Fehlern, die schwierig zu debuggen sind. 
+Wenn Ihr Client auf einer Multithread-Plattform ausgeführt wird, müssen Sie möglicherweise sicherstellen, dass Aufrufe an Ihre [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methoden in einem bestimmten Thread stattfinden. Da Aufrufe von **OnNotify** in der Regel in einem beliebigen Thread auftreten können, ist es möglich, Benachrichtigungen zu unerwarteten und unerwünschten Threads zu erhalten, was zu Fehlern führt, die schwierig zu Debuggen sind. 
   
-Sicherstellen, dass Anrufe an **OnNotify** für eine bestimmte Benachrichtigung rufen Sie auf dem gleichen Thread, der für die **Advise** verwendet wurde, rufen Sie [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) vor **Advise**vorgenommen werden. ** ** HrThisThreadAdviseSink *** erstellt ein neues Advise-Empfänger-Objekt aus der Advise-Empfängerobjekt. Übergeben Sie den Anruf an **Advise**dieses neue Objekt. Alle Clients mit Advise-Empfänger,-Objekten, die möglicherweise nicht außerhalb des Kontexts von einem bestimmten Thread verwendet werden sollte immer registrieren, advise-Empfängerobjekten mit **HrThisThreadAdviseSink**erstellt.
+Um sicherzustellen, dass Aufrufe von onNotify für eine bestimmte Benachrichtigung für den gleichen Thread ausgeführt werden, der für den **Advise** -Aufruf verwendet wurde, rufen Sie [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) auf, bevor **Sie** **Advise**aufrufen. * * * * HrThisThreadAdviseSink * * * * erstellt ein neues Advise-Senke-Objekt aus dem Advise-Senke-Objekt. Führen Sie dieses neue Objekt im Aufruf von **Advise**aus. Alle Clients mit Advise-Senke-Objekten, die möglicherweise nicht außerhalb des Kontexts eines bestimmten Threads funktionieren, sollten immer Advise-Senke-Objekte registrieren, die mit **HrThisThreadAdviseSink**erstellt wurden.
   
 

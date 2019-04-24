@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9ca1861d-9bc9-485a-9807-a598b869e5a2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 342b87a3a8f0349631e64600e294d4f19ab1099c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 77688f8a09c1d990201a247a3c4e3a11ba0963b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317262"
 ---
 # <a name="imsprovidershutdown"></a>IMSProvider::Shutdown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Schließt einen Anbieter für Nachricht Anmelden in einer bestimmten Reihenfolge.
+Schließt einen Nachrichtenspeicher Anbieter ordnungsgemäß.
   
 ```cpp
 HRESULT Shutdown(
@@ -37,17 +37,17 @@ HRESULT Shutdown(
 
  _lpulFlags_
   
-> [in] Reserviert. Ein Zeiger auf 0 (null) muss sein.
+> in Reserviert muss ein Zeiger auf NULL sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-Aufrufen die **IMSProvider::Shutdown** -Methode unmittelbar vor der Freigabe des Message-Speicher-Anbieter-Objekts. MAPI-Freigaben für alle Logon-Objekten für einen Anbieter vor dem **Herunterfahren** für diesen Anbieter aufrufen. 
+MAPI Ruft die **IMSProvider:: Shutdown** -Methode unmittelbar vor dem Freigeben des Nachrichtenspeicher-Anbieterobjekts auf. MAPI gibt alle Anmeldeobjekte für einen Anbieter frei, bevor das **Herunterfahren** für diesen Anbieter aufgerufen wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

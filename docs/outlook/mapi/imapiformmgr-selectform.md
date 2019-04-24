@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1cfe71b-01f3-429a-8b4c-73191a2ffea0
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3c6242c9a926341908cb86645a8ea8586a9ca598
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c25f352e7fa607a46741164574a4ba91d4026edf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321672"
 ---
 # <a name="imapiformmgrselectform"></a>IMAPIFormMgr::SelectForm
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Dialogfeld, mit dem den Benutzer ein Formular auswählen an und gibt ein Form-Informationen-Objekt, das dieses Formular beschreibt.
+Zeigt ein Dialogfeld an, in dem der Benutzer ein Formular auswählen und ein Formular Informationsobjekt zurückgibt, das dieses Formular beschreibt.
   
 ```cpp
 HRESULT SelectForm(
@@ -41,29 +41,29 @@ HRESULT SelectForm(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster im angezeigten Dialogfeld. 
+> in Ein Handle für das übergeordnete Fenster des angezeigten Dialogfelds. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _pszTitle_
   
-> [in] Ein Zeiger auf eine Zeichenfolge, die Beschriftung des Dialogfelds enthält. Wenn der Parameter _PszTitle_ NULL ist, stellt der Form Library Anbieter einen Standardtitel. 
+> in Ein Zeiger auf eine Zeichenfolge, die die Beschriftung des Dialogfelds enthält. Wenn der _pszTitle_ -Parameter NULL ist, stellt der Formularbibliothek Anbieter eine Standardbeschriftung bereit. 
     
  _pfld_
   
-> [in] Ein Zeiger auf den Ordner aus der das Formular auswählen. Wenn der Parameter _Pfld_ NULL ist, kann das Formular aus dem lokalen persönlich oder Organisation Formular Container ausgewählt werden. 
+> in Ein Zeiger auf den Ordner, aus dem das Formular ausgewählt werden soll. Wenn der _pfld_ -Parameter NULL ist, kann das Formular aus dem Container für lokale, persönliche oder organisatorische Formulare ausgewählt werden. 
     
  _ppfrminfoReturned_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Informationen Formularobjekt.
+> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Informationsobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -71,27 +71,27 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in der Regel auf die Schaltfläche **Abbrechen** im Dialogfeld geklickt hat. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormMgr::SelectForm** -Methode zum ersten Gegenwart ein Dialogfeld, mit dem den Benutzer ein Formular auswählen, und klicken Sie dann zum Abrufen eines Formulars Informationen-Objekts, die das ausgewählte Formular beschreibt. Das Dialogfeld schränkt des Benutzers ein einzelnes Formular auswählen. 
+Formular Betrachter rufen die **IMAPIFormMgr:: SelectForm** -Methode auf, um zuerst ein Dialogfeld darzustellen, das es dem Benutzer ermöglicht, ein Formular auszuwählen und dann ein Formular Informationsobjekt abzurufen, das das ausgewählte Formular beschreibt. Das Dialogfeld schränkt den Benutzer ein, um ein einzelnes Formular auszuwählen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Das Dialogfeld **SelectForm** zeigt nur für Formulare, die nicht ausgeblendet werden (d. h., deaktivieren Sie Formulare, die ihre ausgeblendeten Eigenschaften haben). Wenn ein Formular Viewer die Option MAPI_UNICODE im Parameter _UlFlags_ übergibt, werden alle Zeichenfolgen Unicode. Formular Bibliothek Anbieter, die keine für Unicode-Zeichenfolgen Unterstützung sollte MAPI_E_BAD_CHARWIDTH zurückgegeben, wenn der Parameter MAPI_UNICODE übergeben wird. 
+Im Dialogfeld **SelectForm** werden nur Formulare angezeigt, die nicht ausgeblendet sind (also Formulare, deren ausgeblendete Eigenschaften deaktiviert sind). Wenn ein Formular Betrachter das MAPI_UNICODE-Flag im _ulFlags_ -Parameter übergibt, sind alle Zeichenfolgen Unicode. Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |CFolderDlg::OnSelectForm  <br/> |MFCMAPI (engl.) wird die **IMAPIFormMgr::SelectForm** -Methode verwendet, um ein Formular auswählen und die Informationen zum Formular an einen oder mehrere Protokolle senden.  <br/> |
+|FolderDlg. cpp  <br/> |CFolderDlg:: OnSelectForm  <br/> |MFCMAPI verwendet die **IMAPIFormMgr:: SelectForm** -Methode, um ein Formular auszuwählen und Informationen zum Formular an ein oder mehrere Protokolle zu senden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

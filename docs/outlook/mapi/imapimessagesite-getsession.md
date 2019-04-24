@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c35d9e38-f4cf-4908-aaa1-a4263b58f7e8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d5d86af111bc778839a78f9b56ba7126e6c973d5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e1ea68a7690a93915cd80ad5406c4d71d3a97400
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321441"
 ---
 # <a name="imapimessagesitegetsession"></a>IMAPIMessageSite::GetSession
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die MAPI-Sitzung, in der die aktuelle Nachricht erstellt oder geöffnet wurde.
+Gibt die MAPI-Sitzung zurück, in der die aktuelle Nachricht erstellt oder geöffnet wurde.
   
 ```cpp
 HRESULT GetSession(
@@ -37,9 +37,9 @@ HRESULT GetSession(
 
  _ppSession_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Session-Objekt.
+> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Session-Objekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -49,17 +49,17 @@ S_FALSE
   
 > Für die aktuelle Nachricht ist keine Sitzung vorhanden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern, finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI (engl.) verwendet die **IMAPIMessageSite::GetSession** -Methode den aktuell zwischengespeicherten Sitzung Zeiger zurückgegeben, wenn es zur Verfügung steht.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: getSession** -Methode, um den derzeit zwischengespeicherten Sitzungs Zeiger zurückzugeben, sofern dieser verfügbar ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

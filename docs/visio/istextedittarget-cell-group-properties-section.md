@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 355cef8b-9213-479a-af95-b591f4bc51ad
 description: Definiert die Textzuweisung für eine Gruppe.
-ms.openlocfilehash: 65baf90254f6b213efea04739d8e4a66952b2856
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 78a70dc0398745765bca12a1e768390b35fce8ce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314917"
 ---
-# <a name="istextedittarget-cell-group-properties-section"></a>IsTextEditTarget Cell (Group Properties Section)
+# <a name="istextedittarget-cell-group-properties-section"></a>Zelle "IsTextEditTarget" (Abschnitt "Group Properties")
 
 Definiert die Textzuweisung für eine Gruppe.
   
@@ -31,13 +31,13 @@ Sie können diesen Wert auch festlegen, indem Sie die Gruppe auswählen, auf der
   
 Bei Gruppen, die mit Versionen vor Visio 2000 erstellt wurden, ist der Standardwert FALSE vorgegeben. Ab Visio 2000-Versionen wird der Standardwert TRUE verwendet. 
   
-Wenn Sie einen Verweis auf die Zelle IsTextEditTarget aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle IsTextEditTarget aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |IsTextEditTarget  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle IsTextEditTarget aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle IsTextEditTarget aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

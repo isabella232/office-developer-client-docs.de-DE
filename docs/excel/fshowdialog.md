@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - fShowDialog
 keywords:
-- fShowDialog-Funktion [excel 2007]
+- fShowDialog-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 6cc01075-7221-488e-870f-433da62930e6
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: ae6d8b2f0b95641678947e9bd75daa2237b080b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6122e4b99c69cd1bd878c9267ff85f59d0f61998
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310850"
 ---
 # <a name="fshowdialog"></a>fShowDialog
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Beispiel benutzerdefinierter Befehl, der geladen und ein Beispiel systemeigenen Windows-Dialogfeld angezeigt. Wenn GENERIC.xll geladen wird, erstellt es ein Menü benutzerdefinierte allgemeine, über die auf diesen Befehl zugegriffen wird.
+Beispiel für einen benutzerdefinierten Befehl, mit dem ein Beispiel systemeigenes Windows-Dialogfeld angezeigt wird. Wenn GENERIC. XLL geladen wird, wird ein benutzerdefiniertes Menü generisch erstellt, über das auf diesen Befehl zugegriffen wird.
   
 ```cs
 int WINAPI fShowDialog(void);
@@ -30,27 +30,27 @@ int WINAPI fShowDialog(void);
 
 ## <a name="parameters"></a>Parameter
 
-Die Funktion akzeptiert keine Parameter.
+Die Funktion verwendet keine Parameter.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Die Funktion return ganze Zahl 0 (null) an, dass erfolgreiche Abschluss
+Die Funktion gibt Integer Zero zurück, um den erfolgreichen Abschluss anzuzeigen.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Schritte zum Anzeigen des systemeigenen Windows-Dialogfeld sind wie folgt:
+Die Schritte zum Anzeigen des systemeigenen Windows-Dialogfelds lauten wie folgt:
   
-1. Abrufen von **GetHwnd**Hauptfenster Microsoft Excel-Windows-Handles.
+1. Abrufen des Microsoft Excel-Haupt Windows- **** Handles mithilfe von GetHwnd.
     
-2. Das Excel-Hauptfenster mit **HookExcelWindow**zu verknüpfen.
+2. Verknüpfen Sie das Excel-Hauptfenster mit **HookExcelWindow**.
     
-3. Zeigt das Dialogfeld **DialogBox**verwenden.
+3. Zeigen Sie das Dialogfeld mit der **Dialogbox**an.
     
-4. Aufzuheben Sie das Excel-Hauptfenster mit **UnhookExcelWindow**.
+4. Enthaken des Excel-Hauptfensters mithilfe von **UnhookExcelWindow**.
     
 ### <a name="example"></a>Beispiel
 
-Finden Sie unter `\SAMPLES\GENERIC\GENERIC.C` für den Quellcode für diese Funktion. 
+Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

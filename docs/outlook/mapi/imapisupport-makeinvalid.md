@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c630ecaf-b19c-4991-9779-e13cc492c755
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 75771670f58f4cd65e15a02d08e6f78ab9d71755
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 84e87f8a8d3c419afc4b86e200aeaba57e6a85f1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316660"
 ---
 # <a name="imapisupportmakeinvalid"></a>IMAPISupport::MakeInvalid
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Markiert ein Objekt als nicht mehr verwendet werden.
+Markiert ein Objekt als unbrauchbar.
   
 ```cpp
 HRESULT MakeInvalid(
@@ -40,39 +40,39 @@ ULONG cMethods
 
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  _lpObject_
   
-> [in] Ein Zeiger auf das Objekt, das ungültig gemacht werden. Die Schnittstelle des Objekts muss von **IUnknown**abgeleitet werden.
+> in Ein Zeiger auf das Objekt, das ungültig werden soll. Die Schnittstelle des Objekts muss von **IUnknown**abgeleitet werden.
     
  _ulRefCount_
   
-> [in] Das Objekt vorhanden Referenzzähler.
+> in Der aktuelle Verweiszähler des Objekts.
     
  _cMethods_
   
-> [in] Die Anzahl der Methoden in der Vtable des Objekts.
+> in Die Anzahl der Methoden in der Vtable des Objekts.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Objekt wurde erfolgreich als nicht verwendbar gekennzeichnet.
+> Das Objekt wurde erfolgreich als unbrauchbar gekennzeichnet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::MakeInvalid** -Methode wird für alle Unterstützungsobjekte implementiert. Das Objekt, das ungültig gemacht werden muss aus die **IUnknown** -Schnittstelle oder von einer Schnittstelle abgeleitet von **IUnknown**abgeleitet werden.
+Die **IMAPISupport:: MakeInvalid** -Methode wird für alle Support-Objekte implementiert. Das Objekt, das ungültig werden soll, muss von der **IUnknown** -Schnittstelle oder von einer von **IUnknown**abgeleiteten Schnittstelle abgeleitet werden.
   
- **MakeInvalid** markiert ein Objekt als nicht verwendbar durch Ersetzen des Objekts Vtable durch eine Stub Vtable ähnlicher Größe, in dem die **IUnknown:: AddRef** und **IUnknown** -Methoden wie erwartet ausgeführt werden. Alle anderen Methoden Fehler jedoch auftreten, den Wert MAPI_E_INVALID_OBJECT. 
+ **MakeInvalid** markiert ein Objekt als unbrauchbar, indem die Vtable des Objekts durch eine Stub-Vtable mit ähnlicher Größe ersetzt wird, in der die Methoden **IUnknown:: AddRef** und **IUnknown:: Release** wie erwartet ausgeführt werden. Allerdings schlagen alle anderen Methoden fehl, wobei der Wert MAPI_E_INVALID_OBJECT zurückgegeben wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Dienstanbieter und Message-Dienste in der Regel Aufrufen **MakeInvalid** Zeitpunkt zum Herunterfahren von. **MakeInvalid** kann jedoch jederzeit aufgerufen werden. Wenn ein Client ein Objekt ohne Freigabe einiger seiner Unterobjekte veröffentlicht, können Sie beispielsweise **MakeInvalid** sofort, um diese Unterobjekte release aufrufen. 
+Dienstanbieter und Nachrichtendienste rufen **MakeInvalid** in der Regel beim Herunterfahren auf. **MakeInvalid** kann jedoch jederzeit aufgerufen werden. Wenn ein Client beispielsweise ein Objekt freigibt, ohne einige seiner unter Objekte freizugeben, können Sie **MakeInvalid** sofort aufrufen, um diese unter Objekte freizugeben. 
   
-Sie müssen das Objekt verfügen, das Sie versuchen, die als ungültig zu erklären. Es muss mindestens 16 Byte lang sein und mindestens drei Methoden in der Vtable haben. 
+Sie müssen das Objekt besitzen, das Sie ungültig machen möchten. Sie muss mindestens 16 Bytes lang sein und mindestens drei Methoden in ihrer vtable aufweisen. 
   
-Rufen Sie **MakeInvalid** und klicken Sie dann führt alle Herunterfahren, z. B. durch verwerfen zugehörigen Datenstrukturen, die während der Freigabe eines Objekts in der Regel erfolgt. Code, um das Objekt unterstützt muss nicht im Speicher aufbewahrt werden, da MAPI Speicher durch Aufrufen von [MAPIFreeBuffer](mapifreebuffer.md) freigibt, und das Objekt dann frei. Ressourcen freizugeben, rufen Sie **MakeInvalid**, und klicken Sie dann das Objekt ungültig zu ignorieren. 
+Sie können **MakeInvalid** aufrufen und dann alle Aufgaben zum Herunterfahren ausführen, wie das Verwerfen zugeordneter Datenstrukturen, die in der Regel während der Freigabe eines Objekts ausgeführt werden. Code zur Unterstützung des Objekts muss nicht im Arbeitsspeicher aufbewahrt werden, da MAPI den Arbeitsspeicher durch Aufrufen von [mapifreebufferfreigegeben](mapifreebuffer.md) freigibt und das Objekt dann frei gibt. Sie können Ressourcen freigeben, **MakeInvalid**aufrufen und dann das Invalidated-Objekt ignorieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

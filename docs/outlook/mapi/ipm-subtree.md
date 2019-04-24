@@ -1,5 +1,5 @@
 ---
-title: IPM-Teilstruktur
+title: IPM-unterStruktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: b5fc6084-722d-44e8-8637-f4160a4fb19b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6fe642d10a50d25874aee170441a07c184b46575
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 92c7a09d9d608ac31920d49b20f78bedd26f5fcd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317108"
 ---
-# <a name="ipm-subtree"></a>IPM-Teilstruktur
+# <a name="ipm-subtree"></a>IPM-unterStruktur
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI erstellt eine Struktur von Ordnern unter den Stammordner eines Nachrichtenspeichers für alle Clients, die Nachrichten senden und Empfangen von Nachrichten von Menschen, statt die Computer, die Empfänger. Nachrichten zwischen Empfängern human ausgetauscht werden, werden als Nachrichten zwischen Personen, und diese Struktur ist bezeichnet als zwischen Personen Nachricht oder IPM, subtree. 
+MAPI erstellt eine Baumstruktur von Ordnern unterhalb des Stammordners eines Nachrichtenspeichers für alle Clients, die Nachrichten an den Menschen senden und von diesen empfangen, statt aus dem Computer, Empfänger. Nachrichten, die zwischenmenschlichen Empfängern ausgetauscht werden, werden als zwischenmenschliche Nachrichten bezeichnet, und diese Struktur wird als zwischen Person (IPM, subtree) bezeichnet. 
   
-Eine IPM-Unterstruktur für einen übermittlungsspeicher besteht aus mindestens die folgenden Ordner:
+Eine IPM-Unterstruktur für einen zustellspeicher besteht aus mindestens den folgenden Ordnern:
   
 - Posteingang
     
@@ -33,11 +33,11 @@ Eine IPM-Unterstruktur für einen übermittlungsspeicher besteht aus mindestens 
     
 - Gelöschte Elemente
     
-Dies sind die Standardnamen und die Rollen für jedes dieser Ordner. ein Client kann einen eigenen Namen angeben, wenn die Standardnamen nicht geeignet sind. MAPI weist den Standardnamen und Zuordnungen für diese Ordner zu verhindern, dass Nachrichten versehentlich ausgeblendet wird, wenn ein Client bildschirmaktualisierung Empfang von Ordnern für Nachrichten herstellen. 
+Hierbei handelt es sich um die Standardnamen und-Rollen für jeden dieser Ordner; ein Client kann eigene Namen angeben, wenn die Standardnamen nicht geeignet sind. MAPI weist Standardnamen und Zuordnungen für diese Ordner zu, um zu verhindern, dass Nachrichten versehentlich ausgeblendet werden, wenn ein Client die Einrichtung von empfangenden Ordnern für Nachrichten vernachlässigt. 
   
-In einem Microsoft Office Outlook-Kontext besteht aus eine IPM-Unterstruktur zusätzliche Standardordner für Kalender, Kontakte, Aufgaben, Notizen und Journal.
+In einem Microsoft Office Outlook-Kontext besteht eine IPM-Unterstruktur aus zusätzlichen Standardordnern für Kalender, Kontakte, Aufgaben, Notizen und Journal.
   
-Posteingang enthält normalerweise eingehende Nachrichten, und im Ordner Postausgang enthält ausgehende Nachrichten (d. h., Nachrichten gesendet werden). Ordner Gesendete Objekte enthält eine Kopie jeder gesendeten Nachricht, wenn der Client die Eintrags-ID dieses Ordners die **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))-Eigenschaft festgelegt wurde. Ordner Gelöschte Elemente enthält Nachrichten, die zur Löschung markiert. 
+Der Posteingang enthält in der Regel eingehende Nachrichten, und der postAusgang enthält ausgehende Nachrichten (also Nachrichten, die darauf warten, gesendet zu werden). Der Ordner "Gesendete Elemente" enthält eine Kopie jeder gesendeten Nachricht, wenn der Client die **PR_SENTMAIL_ENTRYID** ([pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md))-Eigenschaft auf die Eintrags-ID dieses Ordners festgelegt hat. Der Ordner Gelöschte Elemente enthält Nachrichten, die zum Entfernen markiert sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

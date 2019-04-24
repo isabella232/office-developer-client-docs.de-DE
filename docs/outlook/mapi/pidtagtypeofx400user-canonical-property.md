@@ -1,5 +1,5 @@
 ---
-title: PidTagTypeOfX400User (kanonische Eigenschaft)
+title: Kanonische Pidtagtypeofx400user (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1351ec3c-984d-4b3e-8009-7c39f18d71a5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 41c95147a0bc5a62a4f3a103fccaf0751f89c731
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5732cd5c2b0b8dc26d699c3567f7cd9be3495184
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320419"
 ---
-# <a name="pidtagtypeofx400user-canonical-property"></a>PidTagTypeOfX400User (kanonische Eigenschaft)
+# <a name="pidtagtypeofx400user-canonical-property"></a>Kanonische Pidtagtypeofx400user (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält den Typ der Empfänger einer Nachricht für die Verwendung in einem Bericht.
+Diese Eigenschaft enthält den Typ eines Nachrichtenempfängers für die Verwendung in einem Bericht.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Diese Eigenschaft enthält den Typ der Empfänger einer Nachricht für die Verwe
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

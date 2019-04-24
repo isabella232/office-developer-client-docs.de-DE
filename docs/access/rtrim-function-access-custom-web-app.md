@@ -1,34 +1,34 @@
 ---
-title: "\"RTrim\"-Funktion (Access benutzerdefinierte Web app)"
+title: RTrim-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0b6cc5b2-342d-45dd-ba5e-aa29f1face48
-description: Gibt einen Textwert nach dem Kürzen alle nachfolgende Leerzeichen.
-ms.openlocfilehash: a8b54eda8b6d801355c88b543a45df2716a22742
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt nach dem Abschneiden aller nachstehenden Leerzeichen einen Textwert zurück.
+ms.openlocfilehash: 4510ccc37399e0a10504dc39c4f455461269872d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311046"
 ---
-# <a name="rtrim-function-access-custom-web-app"></a>"RTrim"-Funktion (Access benutzerdefinierte Web app)
+# <a name="rtrim-function-access-custom-web-app"></a>RTrim-Funktion (Access Custom Web App)
 
-Gibt einen Textwert nach dem Kürzen alle nachfolgende Leerzeichen.
+Gibt nach dem Abschneiden aller nachstehenden Leerzeichen einen Textwert zurück.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- **"RTrim"** (*TextExpression*) 
+ **RTrim** (*Text*) 
   
-Die Funktion **"RTrim"** enthält das folgende Argument. 
+Die **RTrim** -Funktion enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *TextExpression*  <br/> |Ein Zeichenfolgenausdruck.  <br/> |
+| *Text*  <br/> |Ein Zeichenfolgenausdruck.  <br/> |
    
 

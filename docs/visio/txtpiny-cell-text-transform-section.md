@@ -8,29 +8,29 @@ f1_keywords:
 - vis_sdr.chm1045
 localization_priority: Normal
 ms.assetid: 88ddf4b5-8248-8c1a-c387-09a607639d26
-description: 'Legt die y--Koordinate des Textblocks des Drehung im Verhältnis zum Ursprung des Shapes. Die Standardformel lautet:'
-ms.openlocfilehash: e8101463413b177bf8ddd80ed52964d3eeae788f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Bestimmt die y-Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet:'
+ms.openlocfilehash: fc62ac76aa24a698d956690df6e5d1e7cff3fb5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316422"
 ---
-# <a name="txtpiny-cell-text-transform-section"></a>TxtPinY Cell (Text Transform Section)
+# <a name="txtpiny-cell-text-transform-section"></a>Zelle "TxtPinY" (Abschnitt "Text Transform")
 
-Legt die *y* --Koordinate des Textblocks des Drehung im Verhältnis zum Ursprung des Shapes. Die Standardformel lautet: 
+Bestimmt die *y* -Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet: 
   
 = Höhe \* 0,5
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle TxtPinY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle TxtPinY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | TxtPinY  <br/> |
+| Zellenname:  <br/> | Zelle TxtPinY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TxtPinY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle TxtPinY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

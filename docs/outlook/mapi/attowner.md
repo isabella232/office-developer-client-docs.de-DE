@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: 3c6a4050-fd97-42ce-abb1-118254b367bd
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 865d929f3348710b7786f4182670f3304a3a9244
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 17e900ac28481388379133a95b4b206ca4bc1805
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318424"
 ---
 # <a name="attowner"></a>attOwner
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gezählte Zeichenfolgen End-to-End-festgelegten, wird das Attribut **AttOwner** codiert. Das Format für **AttOwner** lautet wie folgt: 
+Das **attOwner** -Attribut wird als gezählte Zeichenfolge mit End-to-End-Codierung codiert. Das Format für **attOwner** lautet wie folgt: 
   
- **AttOwner**: 
+ **attOwner**: 
   
-> Display Name Länge Anzeigename Adresse Länge- _e-Mail-Adresse_
+> Anzeigename-length-Anzeigename-Adresslänge- _e-Mail-Adresse_
     
  _e-Mail-Adresse_
   
-> Adresse vom Typ **:** 
+> Typ **:** Address 
     
-Im Gegensatz zu anderen Länge sind Werte, die Anzeige-Namen- und Adresse Länge 16-Bit-Werte ohne Vorzeichen, anstatt lange ganze Zahlen ohne Vorzeichen. Dazu gehören weiterhin Null-Zeichen jedoch beendet. Die Typ und die Adresse Zeichenfolgen in den Eintrag _e-Mail-Adresse_ werden durch einen Doppelpunkt (:)) Literalzeichen wie "smtp:joe@nowhere.com" getrennt. Nur die kombinierten Typ **:** Adresszeichenfolge ist Null endende.
+Im Gegensatz zu anderen Längenwerten sind die Anzeigename-length und die Address-length nicht signierte lange ganze Zahlen, 16-Bit-Werte ohne Vorzeichen. Sie enthalten jedoch weiterhin NULL-Zeichen. Die Typ-und Adress Zeichenfolgen im _e-Mail-Adress_ Eintrag werden durch einen Literalwert (:) Zeichen, wie "SMTP:Joe@nowhere.com". Nur der kombinierte Typ **:** Address String is null-terminated.
   
-Die Zuordnung der MAPI-Eigenschaften in das Attribut **AttOwner** ist abhängig von der Nachrichtenklasse der Nachricht codiert. 
+Die Zuordnung von MAPI-Eigenschaften zum **attOwner** -Attribut hängt von der Nachrichtenklasse der zu codierenden Nachricht ab. 
   
 

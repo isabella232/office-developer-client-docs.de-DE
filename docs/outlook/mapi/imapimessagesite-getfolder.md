@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9f4b4147-ed98-47cb-a799-ddf028f8e826
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 78fb610c5afc3cac4f6de84240f734e5ae196110
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 24461099877af683109c8627eacd22a657d6e156
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321385"
 ---
 # <a name="imapimessagesitegetfolder"></a>IMAPIMessageSite::GetFolder
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Ordner, in dem die aktuelle Nachricht geöffnet oder erstellt wurde, zurückgegeben, wenn solche ein Ordner vorhanden ist. Diese Methode gibt NULL zurück, in der _PpFolder_ -Parameter für eingebettete Nachrichten, die nicht direkt in einem Ordner gespeichert werden. 
+Gibt den Ordner zurück, in dem die aktuelle Nachricht erstellt oder geöffnet wurde, wenn ein solcher Ordner vorhanden ist. Diese Methode gibt NULL im _ppFolder_ -Parameter für eingebettete Nachrichten zurück, die nicht direkt in einem Ordner gespeichert werden. 
   
 ```cpp
 HRESULT GetFolder(
@@ -37,9 +37,9 @@ HRESULT GetFolder(
 
  _ppFolder_
   
-> [out] Ein Zeiger auf einen Zeiger auf den zurückgegebenen Ordner.
+> Out Ein Zeiger auf einen Zeiger auf den zurückgegebenen Ordner.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,19 +47,19 @@ S_OK
     
 S_FALSE 
   
-> Kein Ordner für die Nachricht vorhanden ist.
+> Für die Nachricht ist kein Ordner vorhanden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern, finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetFolder  <br/> |MFCMAPI (engl.) wird die **IMAPIMessageSite::GetFolder** -Methode verwendet, um die aktuell zwischengespeicherten Zeiger auf den angegebenen Ordner zurückzugeben.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getFolder  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: GetFolder** -Methode, um den aktuell zwischengespeicherten Zeiger auf den angegebenen Ordner zurückzugeben.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,7 +68,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formularoberflächen](mapi-form-interfaces.md)
+[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
 

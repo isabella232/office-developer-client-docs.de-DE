@@ -1,56 +1,56 @@
 ---
-title: Was ist neu in der C-API für Excel
+title: Neuerungen in der C-API für Excel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- C-api [excel 2007], was ist neu
+- c-API [Excel 2007], What es New
 localization_priority: Normal
 ms.assetid: f11552e1-b8ea-4933-b6fc-c452b07eb59d
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e80b667296af59f4d3f18238cd498830fcdc35a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 64e3933ec25f0771db5bd36bbf57f3f259cdc8a1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19790571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310269"
 ---
-# <a name="whats-new-in-the-c-api-for-excel"></a>Was ist neu in der C-API für Excel
+# <a name="whats-new-in-the-c-api-for-excel"></a>Neuerungen in der C-API für Excel
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-In Verbindung mit Microsoft Excel 2013 unterstützt der Microsoft Excel 2013 XLL Software Development Kit (SDK) für die folgenden Features.
+In Verbindung mit Microsoft Excel 2013 enthält das Microsoft Excel 2013 XLL Software Development Kit (SDK) Unterstützung für die folgenden Features.
   
 - **Neue Funktionen**
     
-    Microsoft Excel 2013 XLL SDK unterstützt Rückrufen aller der neuer Excel-Arbeitsblattfunktionen in Excel 2013. Weitere Informationen zu Excel 2013-Funktionen aufrufen finden Sie unter [in Excel aus der DLL oder XLL aufgerufen](calling-into-excel-from-the-dll-or-xll.md).
+    Das Microsoft Excel 2013 XLL-SDK unterstützt das Aufrufen von zurück zu allen neuen Arbeitsblattfunktionen in Excel 2013. Weitere Informationen zum Aufrufen von Excel 2013-Funktionen finden Sie unter [Aufrufen von Excel aus der DLL oder XLL](calling-into-excel-from-the-dll-or-xll.md).
     
 - **Asynchrone benutzerdefinierte Funktionen**
     
-    Excel 2013 unterstützt das Aufrufen von benutzerdefinierten Funktionen (UDF) asynchron die kann die Leistung verbessern, indem mehrere Berechnungen zur selben Zeit ausführen aktivieren. Weitere Informationen zu asynchronen UDFs finden Sie unter [Asynchronous User-Defined-Funktionen](asynchronous-user-defined-functions.md).
+    Excel 2013 unterstützt das Aufrufen von benutzerdefinierten Funktionen (UDF) asynchron, wodurch die Leistung verbessert werden kann, da mehrere Berechnungen gleichzeitig ausgeführt werden können. Weitere Informationen zu asynchronen UDFs finden Sie unter [asynchrone benutzerdefinierte Funktionen](asynchronous-user-defined-functions.md).
     
-- **Clusterconnectoren**
+- **Cluster-Konnektoren**
     
-    Clusterconnectors Aktivieren von UDFs auf High Performance Computecluster ausführen. Weitere Informationen zum Erstellen von clusterconnectoren finden Sie unter [Entwickeln von Excel-Clusterconnectoren](developing-excel-cluster-connectors.md).
+    Cluster-Konnektoren ermöglichen UDFs die Ausführung auf Hochleistungs-Compute-Clustern. Weitere Informationen zum Erstellen von Cluster-Konnektoren finden Sie unter [developIng Excel Cluster Connectors](developing-excel-cluster-connectors.md).
     
     > [!NOTE]
-    > XLL-add-ins, die Sie auf Computecluster ausführen möchten, müssen nur clustersichere Funktionen aufrufen. Weitere Informationen zu den Funktionen, die Sie verwenden können, finden Sie unter [Excel XLL SDK-API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md) und [Clustersichere Funktionen](cluster-safe-functions.md). 
+    > XLL-Add-Ins, die Sie in Compute-Clustern ausführen möchten, müssen nur Cluster sichere Funktionen aufrufen. Weitere Informationen zu den Funktionen, die Sie verwenden können, finden Sie unter [Excel XLL SDK API Function Reference](excel-xll-sdk-api-function-reference.md) und [Cluster Safe Functions](cluster-safe-functions.md). 
   
 - **64-Bit-Unterstützung**
     
-    Sie können jetzt kompilieren und Verknüpfen von 32-Bit- und 64-Bit-XLLs. Weitere Informationen finden Sie unter [Erstellen von XLLs](creating-xlls.md).
+    Sie können nun sowohl 32-Bit-als auch 64-Bit-XLLs kompilieren und verknüpfen. Weitere Informationen finden Sie unter [Creating XLLs](creating-xlls.md).
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
   
 [Programmieren mit der C-API in Excel](programming-with-the-c-api-in-excel.md)
   
-[Multithreading und Arbeitsspeicher Konflikte in Excel](multithreading-and-memory-contention-in-excel.md)
+[Multithreading und Speicherkonflikte in Excel](multithreading-and-memory-contention-in-excel.md)
 
 
-[Erste Schritte mit Excel XLL SDK](getting-started-with-the-excel-xll-sdk.md)
+[Erste Schritte mit dem Excel XLL SDK](getting-started-with-the-excel-xll-sdk.md)
 

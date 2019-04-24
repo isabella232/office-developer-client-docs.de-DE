@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachContentId (kanonische Eigenschaft)
+title: Kanonische Pidtagattachcontentid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 46f31089-3b66-41a2-8094-e3db52464b9f
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 5fc7360e3070ed4d20be7ac0155ebdcb04cf2048
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319208"
 ---
-# <a name="pidtagattachcontentid-canonical-property"></a>PidTagAttachContentId (kanonische Eigenschaft)
+# <a name="pidtagattachcontentid-canonical-property"></a>Kanonische Pidtagattachcontentid (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Header Content Identification Multipurpose Internet Mail Extensions (MIME) e-Mail-Anlagen enthält. 
+Enthält den Inhalts-ID-Header einer MIME-Nachricht (Multipurpose Internet Mail Extensions). 
   
 |||
 |:-----|:-----|
@@ -34,27 +34,27 @@ Header Content Identification Multipurpose Internet Mail Extensions (MIME) e-Mai
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften werden verwendet für MHTML-Unterstützung. Sie stellen die Kopfzeile Content Kennung für die entsprechenden MIME-Textkörper dar. 
+Diese Eigenschaften werden für die MHTML-Unterstützung verwendet. Sie stellen den Inhalts-ID-Header für den entsprechenden MIME-Textteil dar. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
-## <a name="header-files"></a>Header-Dateien
+## <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,5 +66,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

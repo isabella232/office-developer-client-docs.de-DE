@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 469f0412-1343-47ce-b6e8-e0d5e56c29bb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4e2d4f76fe436fd18b439bbbb558b1169094b438
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: efa5d60098fd5f16328669249a8445a124d9878b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317339"
 ---
 # <a name="imsgstoresetreceivefolder"></a>IMsgStore::SetReceiveFolder
 
@@ -25,7 +25,7 @@ ms.locfileid: "22589462"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt einen Ordner als Ziel für eingehende Nachrichten von einer bestimmten Nachrichtenklasse her.
+Richtet einen Ordner als Ziel für eingehende Nachrichten einer bestimmten Nachrichtenklasse ein.
   
 ```cpp
 HRESULT SetReceiveFolder(
@@ -40,45 +40,45 @@ HRESULT SetReceiveFolder(
 
  _lpszMessageClass_
   
-> [in] Empfangsordner für ein Zeiger auf die Nachrichtenklasse, die mit dem neuen zugeordnet werden soll. Wenn der _LpszMessageClass_ -Parameter auf NULL oder eine leere Zeichenfolge, **SetReceiveFolder** festgelegt werden standardmäßig Ordner für den Nachrichtenspeicher empfangen. 
+> in Ein Zeiger auf die Nachrichtenklasse, die dem neuen Empfänger Ordner zugeordnet werden soll. Wenn der Parameter _lpszMessageClass_ auf NULL oder eine leere Zeichenfolge festgelegt ist, legt **SetReceiveFolder** den standardmäßigen Empfangsordner für den Nachrichtenspeicher fest. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des Texts in den übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Texttyp in den übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Klasse Meldungszeichenfolge ist im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, wird die Zeichenfolge der Klasse im ANSI-Format.
+> Die Zeichenfolge der Nachrichtenklasse ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Zeichenfolge der Nachrichtenklasse im ANSI-Format.
     
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Ordners, der als den Empfangsordner einzurichten. Der _LpEntryID_ -Parameter auf NULL **SetReceiveFolder** ersetzt festgelegt ist empfangen die aktuelle Ordner mit der Nachrichtenspeicher Standard. 
+> in Ein Zeiger auf die Eintrags-ID des Ordners, der als Empfänger Ordner eingerichtet werden soll. Wenn der Parameter _lpEntryID_ auf NULL festgelegt ist, ersetzt **SetReceiveFolder** den aktuellen Empfänger Ordner durch den Standardwert des Nachrichtenspeichers. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Eine Empfangsordner wurde erfolgreich hergestellt.
+> Ein Empfangsordner wurde erfolgreich eingerichtet.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::SetReceiveFolder** -Methode legt oder ändert den Empfangsordner für eine bestimmte Nachrichtenklasse. Mit **SetReceiveFolder**kann einen Client mithilfe von aufeinander folgenden Aufrufen angeben, ein anderes Empfangsordner für jede definierte Nachrichtenklasse oder angeben, dass eingehende Nachrichten für mehrere Nachrichtenklassen alle im gleichen Ordner wechseln. Ein Client kann beispielsweise eine eigene Klasse von Nachrichten in einem eigenen Ordner eintreffen haben. Eine Anwendung Fax kann festlegen, einen Ordner, in dem Speicheranbieter eingehende Faxe versetzt, und einen anderen Ordner, in dem der Anbieter Ausgehende Faxnachrichten versetzt.
+Mit der **IMsgStore:: SetReceiveFolder** -Methode wird der Empfangsordner für eine bestimmte Nachrichtenklasse festgelegt oder geändert. Mit **SetReceiveFolder**kann ein Client mithilfe aufeinanderfolgender Aufrufe einen anderen Empfangsordner für jede definierte Nachrichtenklasse angeben oder angeben, dass eingehende Nachrichten für mehrere Nachrichtenklassen in denselben Ordner gelangen. Beispielsweise kann ein Client eine eigene Klasse von Nachrichten in seinem eigenen Ordner eingehen lassen. Eine Fax-Anwendung kann einen Ordner festlegen, in dem der Informationsspeicher Anbieter eingehende Faxe eingibt, und einen anderen Ordner, in dem der Anbieter ausgehende Faxe platziert.
   
-Wenn ein Fehler während des Aufrufs von **SetReceiveFolder**auftritt, bleibt die Einstellung für den empfangen unverändert. 
+Wenn während des Anrufs an **SetReceiveFolder**ein Fehler auftritt, bleibt die Einstellung für den Empfangsordner unverändert. 
   
-Wenn **SetReceiveFolder** ändert festgelegt die Einstellung für den Empfang mit _LpEntryID_ auf NULL wurde, was bedeutet, dass im Standardordner empfangen festgelegt werden sollte, **SetReceiveFolder** gibt S_OK zurück, auch wenn es wurde keine Einstellung für die angegebene Message-Klasse. 
+Wenn **SetReceiveFolder** die Einstellung für den Empfänger Ordner mit _lpEntryID_ auf NULL festgelegt ändert, was darauf hinweist, dass der standardmäßige Empfangsordner festgelegt werden soll, gibt **SetReceiveFolder** S_OK zurück, auch wenn keine Einstellung für die angegebene Nachrichtenklasse. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnSetReceiveFolder  <br/> |MFCMAPI (engl.) verwendet die **IMsgStore::SetReceiveFolder** -Methode, um einen Ordner als den Empfangsordner für eine bestimmte Nachrichtenklasse festzulegen.  <br/> |
+|MsgStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnSetReceiveFolder  <br/> |MFCMAPI verwendet die **IMsgStore:: SetReceiveFolder** -Methode, um einen Ordner als Empfangsordner für eine bestimmte Nachrichtenklasse festzulegen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

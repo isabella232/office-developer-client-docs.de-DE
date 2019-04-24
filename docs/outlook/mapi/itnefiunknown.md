@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: eddca896-9497-4425-9904-87ef3cbae298
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1803707b46b9b58e7372e7e58cc36241d0ebdb4d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1f815a914deb5e21f3d913abe46a84cc7a32b4ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315036"
 ---
 # <a name="itnef--iunknown"></a>ITnef : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Methoden zum Kapseln von MAPI-Eigenschaften, die nicht von einem messaging-System in binären Streams unterstützt werden, die Nachrichten zugeordnet werden kann. Das Format für diese Kapselung ist der Transport-Neutral Encapsulation Format (TNEF). Die Ziel-Transport-Anbieter oder MAPI-basierter Client-Anwendung können Sie dann auf Empfangen einer Nachricht, die TNEF-Anlage enthält, die Eigenschaften aus der Anlage wiederherstellen.
+Stellt Methoden zum Kapseln von MAPI-Eigenschaften bereit, die von einem Messagingsystem nicht in binäre Streams unterstützt werden, die an Nachrichten angefügt werden können. Das für diese Kapselung verwendete Format ist das Transport neutrale Encapsulation Format (TNEF). Der Ziel Transportanbieter oder die MAPI-basierte Clientanwendung kann dann beim Empfang einer Nachricht, die eine TNEF-Anlage enthält, die Eigenschaften aus der Anlage wiederherstellen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF.h  <br/> |
-|Verfügbar gemacht von:  <br/> |TNEF-Objekte  <br/> |
+|Headerdatei  <br/> |TNEF. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |TNEF-Objekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Transport-Provider, Anbieter Nachricht und gateways  <br/> |
+|Aufgerufen von:  <br/> |Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_ITNEF  <br/> |
 |Zeigertyp:  <br/> |LPTNEF  <br/> |
    
@@ -40,13 +40,13 @@ Bietet Methoden zum Kapseln von MAPI-Eigenschaften, die nicht von einem messagin
 
 |||
 |:-----|:-----|
-|[AddProps](itnef-addprops.md) <br/> |Ermöglicht die aufrufende Dienstanbieter oder Gateway Eigenschaften, die Kapselung einer Nachricht oder eine Anlage hinzuzufügen.  <br/> |
-|[ExtractProps](itnef-extractprops.md) <br/> |Extrahiert die Eigenschaften von TNEF-Kapselung.  <br/> |
-|[Finish](itnef-finish.md) <br/> |Beendet Verarbeitung für alle TNEF-Vorgänge, die sich in der Warteschlange und wartet.  <br/> |
-|[OpenTaggedBody](itnef-opentaggedbody.md) <br/> |Öffnet eine Stream-Schnittstelle für den Text der Fehlermeldung der gekapselte.  <br/> |
-|[SetProps](itnef-setprops.md) <br/> |Legt den Wert einer oder mehrerer Eigenschaften für eine gekapselte Nachricht oder Anlage ohne Ändern der ursprünglichen Nachricht oder Anlage fest.  <br/> |
-|[EncodeRecips](itnef-encoderecips.md) <br/> |Codiert eine Ansicht für die Empfänger einer Nachricht-Tabelle in der TNEF-Datenstrom für die Nachricht an.  <br/> |
-|[FinishComponent](itnef-finishcomponent.md) <br/> |Verarbeitet aus einer Nachricht an eine einzelne Komponenten zu einem Zeitpunkt in einem TNEF-Stream.  <br/> |
+|[AddProps](itnef-addprops.md) <br/> |Ermöglicht dem aufrufenden Dienstanbieter oder Gateway das Hinzufügen von Eigenschaften zur Kapselung einer Nachricht oder Anlage.  <br/> |
+|[ExtractProps](itnef-extractprops.md) <br/> |Extrahiert die Eigenschaften aus einer TNEF-Kapselung.  <br/> |
+|[Finish](itnef-finish.md) <br/> |Die Verarbeitung für alle in der Warteschlange befindlichen TNEF-Vorgänge wird abgeschlossen.  <br/> |
+|[OpenTaggedBody](itnef-opentaggedbody.md) <br/> |Öffnet eine Stream-Schnittstelle für den Text einer gekapselte Nachricht.  <br/> |
+|[SetProps](itnef-setprops.md) <br/> |Legt den Wert einer oder mehrerer Eigenschaften für eine gekapselte Nachricht oder Anlage fest, ohne die ursprüngliche Nachricht oder Anlage zu ändern.  <br/> |
+|[EncodeRecips](itnef-encoderecips.md) <br/> |Codiert eine Ansicht für die Empfängertabelle einer Nachricht im TNEF-Datenstrom für die Nachricht.  <br/> |
+|[FinishComponent](itnef-finishcomponent.md) <br/> |Verarbeitet einzelne Komponenten aus einer Nachricht nacheinander in einem TNEF-Stream.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

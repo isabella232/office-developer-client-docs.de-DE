@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8e4ce129-137d-4618-80a6-88781a578d01
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6781209cd1bf87f4becf1893b7cba5618549fbce
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 95a2b7b9bac11404817fb6848d58c45251c141f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309674"
 ---
 # <a name="inbox-and-outbox-folders-in-message-stores"></a>Posteingang und Postausgang-Ordner in Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Um Standard-Informationsspeicher, muss ein Anbieter f�r Nachricht anmelden Posteingang zu implementieren und Ordner Postausgang. Sie werden in der Regel in der IPM-Unterstruktur eines Speichers Nachricht gespeichert. Diese Ordner sind spezielle darin, dass sie, dass Nachrichten an und von gesendet werden, aber keine besondere Funktionalit�t Ihnen ist als die Ordner eingesetzt werden. Senden und Empfangen von Nachrichten geschieht �ber definierten Aufrufsequenzen zwischen Clientanwendungen, die MAPI-Warteschlange und die Nachricht Speicheranbieter. Der Ordner Posteingang und Postausgang sind einfach Ordner, die verwendet werden, um Nachrichten zu speichern, w�hrend die Sequenzen aufrufen. Wichtig ist nicht, dass die Ordner sind spezielle oder sogar, dass sie den Posteingang und Postausgang benannt werden. die wichtig ist, dass der Nachricht Speicheranbieter im Rahmen des Supports verwendet zum Senden und Empfangen von Nachrichten.
   
@@ -31,5 +31,5 @@ To support sending messages, the message store provider must support the [IMsgSt
 
 
 
-[Implementieren von Ordnern in Nachrichtenspeicher](implementing-folders-in-message-stores.md)
+[Implementieren von Ordnern in Nachrichtenspeichern](implementing-folders-in-message-stores.md)
 

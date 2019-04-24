@@ -8,22 +8,22 @@ f1_keywords:
 - TempMissing
 - TempMissing12
 keywords:
-- Tempmissing-Funktion [excel 2007], TempMissing12-Funktion [Excel 2007]
+- tempmissing-Funktion [Excel 2007], TempMissing12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: d9cb6afc-1fbb-45d6-88e5-84eba3af3c60
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: a6db2e1f2917ecd9361043577f4bf203b3267a5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 37c127b2252f18643b34dfc72fd9929885a68d01
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310493"
 ---
 # <a name="tempmissingtempmissing12"></a>TempMissing/TempMissing12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliothek-Funktion, die eine temporäre **XLOPER**erstellt/ **XLOPER12** des Typs **XltypeMissing**.
+Framework-Bibliotheksfunktion, die eine temporäre **XLOPER**/ -**XLOPER12** vom Typ **xltypeMissing**erstellt.
   
 ```cs
 LPXLOPER TempMissing(void);
@@ -34,13 +34,13 @@ LPXLOPER12 TempMissing12(void);
 
 Diese Funktion verwendet keine Parameter.
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Gibt einen Zeiger auf eine **XLOPER** **XltypeMissing** / **XLOPER12**.
+Gibt einen Zeiger auf eine **xltypeMissing** **XLOPER**/ **XLOPER12**zurück.
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird **TempMissing12** drei Fehlende Argumente für **XlcWorkspace** gefolgt von einem **booleschen** **FALSE** unterdrückt die Anzeige der Bildlaufleisten Arbeitsblatt bereitstellen. Die ersten drei Argumente entsprechen andere Workspace-Einstellungen nicht betroffen sind. 
+In diesem Beispiel wird **TempMissing12** verwendet, um drei fehlende Argumente für **xlcWorkspace** gefolgt von einem **booleschen Wert** **false** bereitzustellen, um die Anzeige von Arbeitsblatt-Bildlaufleisten zu unterdrücken. Die ersten drei Argumente entsprechen anderen Arbeitsbereichseinstellungen, die nicht betroffen sind. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

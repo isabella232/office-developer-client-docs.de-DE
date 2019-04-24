@@ -1,5 +1,5 @@
 ---
-title: PidTagAbProviderId (kanonische Eigenschaft)
+title: Kanonische Pidtagabproviderid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 23cfd1d0-8e9d-4508-93dd-a88c0ef77c51
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f3aad4a5b3ba815d3e4f91e990bb63d75502f94b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 820df61ec23e2dd1459582e5a7bb35ad9525e0b4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315820"
 ---
-# <a name="pidtagabproviderid-canonical-property"></a>PidTagAbProviderId (kanonische Eigenschaft)
+# <a name="pidtagabproviderid-canonical-property"></a>Kanonische Pidtagabproviderid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Adressbuchanbieter [MAPIUID](mapiuid.md) Struktur. 
+Enthält die [MAPIUID](mapiuid.md) -Struktur eines Adressbuch Anbieters. 
   
 |||
 |:-----|:-----|
@@ -34,25 +34,25 @@ Enthält ein Adressbuchanbieter [MAPIUID](mapiuid.md) Struktur.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **MAPIUID** identifiziert, welche Adressbuchanbieter diesem Container in der Containerhierarchie bereitstellt. Der Wert ist für jeden Anbieter eindeutig. 
+Die **MAPIUID** -Struktur gibt an, welcher Adressbuchanbieter diesen Container in der Containerhierarchie bereitstellt. Der Wert ist für jeden Anbieter eindeutig. 
   
-Adressbuch-Dienstanbieter kann mehrere Bezeichner bereit. Beispielsweise kann ein Anbieter, der zwei verschiedene Container liefert in **PR_AB_PROVIDER_ID** eindeutigen Bezeichnern für jeden Container veröffentlichen. 
+Ein Adressbuchanbieter kann mehr als einen Bezeichner bereitstellen. Beispielsweise kann ein Anbieter, der zwei verschiedene Container bereitstellt, in **PR_AB_PROVIDER_ID** eindeutige Bezeichner für jeden Container veröffentlichen. 
   
- **PR_AB_PROVIDER_ID** ist vergleichbar mit der **PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))-Eigenschaft für Nachrichtenspeicher. Clientanwendungen können **PR_AB_PROVIDER_ID** um verwandte Zeilen in einer Address Book Hierarchie-Tabelle zu finden. 
+ **PR_AB_PROVIDER_ID** ist analog zur **PR_MDB_PROVIDER** ([pidtagstoreprovider (](pidtagstoreprovider-canonical-property.md))-Eigenschaft für Nachrichtenspeicher. Client Anwendungen können **PR_AB_PROVIDER_ID** verwenden, um verwandte Zeilen in einer Adressbuch-Hierarchietabelle zu suchen. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,12 +60,12 @@ Mapidefs.h
 
 [MAPIUID](mapiuid.md)
   
-[PidTagStoreProvider (kanonische Eigenschaft)](pidtagstoreprovider-canonical-property.md)
+[Kanonische Pidtagstoreprovider (-Eigenschaft](pidtagstoreprovider-canonical-property.md)
 
 
 [Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

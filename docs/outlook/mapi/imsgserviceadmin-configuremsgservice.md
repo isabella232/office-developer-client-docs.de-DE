@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a08f5905-2585-49ca-abb7-a77f2736f604
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a599a6fe5093e52e50d33a1761df5689b7335138
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 87ac394f9ab77b092cdfcd44f65b040a039319e7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317409"
 ---
 # <a name="imsgserviceadminconfiguremsgservice"></a>IMsgServiceAdmin::ConfigureMsgService
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konfiguriert einen Message-Dienst neu.
+Konfiguriert einen Nachrichtendienst neu.
   
 ```cpp
 HRESULT ConfigureMsgService(
@@ -41,41 +41,41 @@ HRESULT ConfigureMsgService(
 
  _lpUID_
   
-> [in] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den Dienst so konfigurieren Sie enthält. 
+> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu konfigurierenden Nachrichtendienst enthält. 
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster im Eigenschaftsfenster Konfiguration.
+> in Ein Handle für das übergeordnete Fenster des Konfigurationseigenschaften Blatts.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die die Anzeige des Eigenschaftenfensters steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Anzeige des Eigenschaftenblatts steuert. Die folgenden Flags können festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
 MSG_SERVICE_UI_READ_ONLY 
   
-> Der Nachrichtendienst sollte das Eigenschaftenfenster Konfiguration anzuzeigen, aber nicht ermöglichen Benutzern das ändern. Die meisten Message Dienste ignoriert dieses Flag.
+> Der Nachrichtendienst sollte sein Konfigurationseigenschaften Blatt anzeigen, den Benutzer jedoch nicht ändern. Die meisten Nachrichtendienste ignorieren dieses Flag.
     
 SERVICE_UI_ALLOWED 
   
-> Der Nachrichtendienst sollte das Eigenschaftenblatt Konfiguration angezeigt werden nur, wenn der Dienst nicht vollständig konfiguriert ist.
+> Der Nachrichtendienst sollte sein Konfigurationseigenschaften Blatt nur anzeigen, wenn der Dienst nicht vollständig konfiguriert ist.
     
 SERVICE_UI_ALWAYS 
   
-> Message-Dienst muss immer das Eigenschaftenblatt Konfiguration anzeigen. Wenn SERVICE_UI_ALWAYS nicht festgelegt ist, kann ein Eigenschaftenblatt Konfiguration weiterhin angezeigt, wenn SERVICE_UI_ALLOWED festgelegt ist und gültige Konfigurationsinformationen nicht verfügbar aus Array-Eigenschaft den Wert im _LpProps_ -Parameter ist. SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS muss für ein Eigenschaftenfenster, angezeigt werden soll, festgelegt werden. 
+> Der Nachrichtendienst muss immer sein Konfigurationseigenschaften Blatt anzeigen. Wenn SERVICE_UI_ALWAYS nicht festgelegt ist, kann ein Konfigurationseigenschaften Blatt weiterhin angezeigt werden, wenn SERVICE_UI_ALLOWED festgelegt ist und gültige Konfigurationsinformationen im Eigenschaftswert Array im _lpProps_ -Parameter nicht verfügbar sind. Entweder SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS muss festgelegt werden, damit ein Eigenschaftenblatt angezeigt wird. 
     
  _cValues_
   
-> [in] Die Anzahl der Eigenschaftswerte in der Struktur [SPropValue](spropvalue.md) auf _LpProps_zeigt. 
+> in Die Anzahl der Eigenschaftswerte in der [SPropValue](spropvalue.md) -Struktur, auf die durch _lpProps_verwiesen wird. 
     
  _lpProps_
   
-> [in] Ein Zeiger auf ein Array der Eigenschaftswerte, die beschreiben, die Eigenschaften im Eigenschaftenfenster angezeigt. Der Parameter _LpProps_ darf nicht NULL sein, wenn der Nachrichtendienst ohne Benutzeroberfläche konfiguriert werden soll. 
+> in Ein Zeiger auf ein Array von Eigenschaftswerten, die die Eigenschaften beschreiben, die im Eigenschaftenfenster angezeigt werden sollen. Der _lpProps_ -Parameter sollte nicht NULL sein, wenn der Nachrichtendienst ohne Benutzeroberfläche konfiguriert werden soll. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -83,41 +83,41 @@ S_OK
     
 MAPI_E_EXTENDED_ERROR 
   
-> Fehler, die speziell für eine Message Service. Wenn die Struktur [MAPIERROR](mapierror.md) erhalten möchten, die den Fehler beschreibt, sollte die Client-Anwendung die [IMsgServiceAdmin::GetLastError](imsgserviceadmin-getlasterror.md) -Methode aufrufen. 
+> Ein Fehler, der für einen Nachrichtendienst spezifisch ist. Zum Abrufen der [MAPIERROR](mapierror.md) -Struktur, die den Fehler beschreibt, sollte die Clientanwendung die [IMsgServiceAdmin:: getlasterroraufzurufen](imsgserviceadmin-getlasterror.md) -Methode aufrufen. 
     
 MAPI_E_NOT_FOUND 
   
-> Die auf den _LpUID_ **MAPIUID** stimmt nicht überein, die einem vorhandenen Meldung-Dienst. 
+> Die **MAPIUID** , auf die durch _lpUID_ verwiesen wird, stimmt nicht mit dem eines vorhandenen Nachrichtendiensts überein. 
     
 MAPI_E_NOT_INITIALIZED 
   
-> Message-Dienst hat keine Funktion bei Einstiegspunkt.
+> Der Nachrichtendienst verfügt nicht über eine Einstiegspunktfunktion.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Eigenschaftenfenster abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Eigenschaftenfenster. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgServiceAdmin::ConfigureMsgService** -Methode ermöglicht eine Message Service mit oder ohne ein Eigenschaftenblatt Konfiguration konfiguriert werden soll. 
+Mit der **IMsgServiceAdmin:: ConfigureMsgService** -Methode kann ein Nachrichtendienst mit oder ohne Konfigurationseigenschaften Blatt konfiguriert werden. 
   
-Um ohne Eigenschaft Blatt Bildschirm Konfiguration zu ermöglichen, Vorbereiten Message-Dienste in der Regel eine Headerdatei, die Konstanten für alle erforderlichen und optionalen Eigenschaften und deren Werte enthält.
+Um die Konfiguration ohne Eigenschaftenblatt Anzeige zuzulassen, bereiten Nachrichtendienste in der Regel eine Headerdatei vor, die Konstanten für alle erforderlichen und optionalen Eigenschaften und deren Werte enthält.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie die **MAPIUID** -Struktur für den Dienst so konfigurieren abgerufen Sie die **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))-Spalte aus der Nachrichtendienst Zeile in der Tabelle der Dienste. Weitere Informationen finden Sie unter dem Verfahren in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode. 
+Um die **MAPIUID** -Struktur für den Nachrichtendienst zum Konfigurieren abzurufen, rufen Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Spalte aus der Zeile des Nachrichtendiensts in der Nachrichtendienst Tabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode beschriebenen Prozedur. 
   
-Sie können eine Message Service konfigurieren, ohne ein Eigenschaftenfenster, die einem Benutzer, nur, wenn Sie Advance Informationen über die Eigenschaftswerte festgelegt werden soll. Wenn Sie einen Nachrichtendienst ohne ein Eigenschaftenblatt konfigurieren, valid-Eigenschaftswerte im _LpProps_ -Parameter übergeben, und die Kennzeichen MSG_SERVICE_UI_READ_ONLY, SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS nicht festlegen. 
+Sie können einen Nachrichtendienst nur konfigurieren, ohne ein Eigenschaftenblatt für einen Benutzer anzuzeigen, wenn Sie über Vorabinformationen zu den festzulegenden Eigenschaftswerten verfügen. Wenn Sie einen Nachrichtendienst ohne Anzeige eines Eigenschaftenblatts konfigurieren, übergeben Sie gültige Eigenschaftswerte im _lpProps_ -Parameter, und legen Sie die Flags MSG_SERVICE_UI_READ_ONLY, SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS nicht fest. 
   
-Wenn Sie von der Benutzer über ein Eigenschaftenblatt aller oder einiger der Konfigurationsinformationen erhalten haben, legen Sie SERVICE_UI_ALLOWED in _UlFlags_. Wenn Sie vorhandene Eigenschafteninformationen nur für die Standardeinstellungen einrichten und der Benutzer die Einstellungen zu ändern kann, legen Sie SERVICE_UI_ALWAYS in _UlFlags_.
+Wenn Sie alle oder einen Teil der Konfigurationsinformationen des Benutzers über ein Eigenschaftenblatt erhalten, legen Sie SERVICE_UI_ALLOWED in _ulFlags_fest. Wenn Sie vorhandene Eigenschaftsinformationen nur zum Einrichten von Standardeinstellungen verwenden und der Benutzer in der Lage ist, die Einstellungen zu ändern, legen Sie SERVICE_UI_ALWAYS in _ulFlags_fest.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions.cpp  <br/> |HrAddServiceToProfile  <br/> |MFCMAPI (engl.) verwendet die **IMsgServiceAdmin::ConfigureMsgService** -Methode, um einen Dienst zu konfigurieren, der zu einem Profil hinzugefügt wurde.  <br/> |
+|MAPIProfileFunctions. cpp  <br/> |HrAddServiceToProfile  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin:: ConfigureMsgService** -Methode, um einen Dienst zu konfigurieren, der einem Profil hinzugefügt wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

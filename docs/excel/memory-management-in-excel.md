@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 3bf5195b-6235-43cf-8795-0c7b0a63a095
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 97c76d762fdc5e575c571804816e5581a7bec8bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: f129dac2971f01c8ada15f0028958132b1945746
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310458"
 ---
 # <a name="memory-management-in-excel"></a>Speicherverwaltung in Excel
 

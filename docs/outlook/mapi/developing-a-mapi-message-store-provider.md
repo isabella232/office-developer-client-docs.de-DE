@@ -1,5 +1,5 @@
 ---
-title: Entwickeln von einem Anbieter MAPI-Nachricht
+title: Entwickeln eines MAPI-Nachrichtenspeicheranbieteres
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,36 +8,36 @@ api_type:
 - COM
 ms.assetid: 83692674-0b5a-468d-9cd7-a2ac3d140bda
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 36233d51f47c53d6a69494c0fcd799a7c83add29
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 76332b57b2957b5682efb415121ea6db42409c30
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316760"
 ---
-# <a name="developing-a-mapi-message-store-provider"></a>Entwickeln von einem Anbieter MAPI-Nachricht
+# <a name="developing-a-mapi-message-store-provider"></a>Entwickeln eines MAPI-Nachrichtenspeicheranbieteres
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wie andere MAPI-Dienstanbieter sind Nachrichtenspeicher Dynamic Link Libraries (DLLs), die die Dienste eines zugrunde liegende Speichermechanismus MAPI-Clientanwendungen und die MAPI-Warteschlange darstellen. Der Nachricht-Speicher-Anbieter bietet den zugrunde liegende Speichermechanismus als hierarchisch strukturierter Satz von Ordnern und Nachrichten, die MAPI-Clients und die MAPI-Warteschlange verwenden können.
+Wie andere MAPI-Dienstanbieter sind Nachrichtenspeicher auch DLLs (Dynamic Link Libraries), die die Dienste eines zugrunde liegenden Speichermechanismus für MAPI-Clientanwendungen und die MAPI-Spooler darstellen. Der Nachrichtenspeicher Anbieter stellt den zugrunde liegenden Speichermechanismus als hierarchische Gruppe von Ordnern und Nachrichten dar, die MAPI-Clients und der MAPI-Spooler verwenden können.
   
-Die folgende Abbildung zeigt die grundlegende Architektur des Nachrichtenspeichers MAPI.
+Die folgende Abbildung zeigt die grundlegende MAPI-Nachrichtenspeicher Architektur.
   
 **Architektur des Nachrichtenspeichers**
   
-![Architektur des Nachrichtenspeichers] (media/storearc.gif "Architektur des Nachrichtenspeichers")
+![Nachrichtenspeicher Architektur] (media/storearc.gif "Nachrichtenspeicher Architektur")
   
-Sie können eine Nachricht Speicheranbieter mithilfe von irgendeiner zugrunde liegende Speichermechanismus aus, die Sie implementieren. Sie müssen jedoch Leistungsbedenken berücksichtigen. Darüber hinaus muss der zugrunde liegende Speichermechanismus als eine hierarchische Auflistung von MAPI-Objekten dargestellt werden. Diese Anforderungen bedeuten, dass Nachrichtenspeicher in der Regel mit einem vorhandenen Datenbankprodukt unterstützt, die hierarchische Speicherung von Objekten in der Datenbank sowie, eine Programmierschnittstelle oder eindeutig definierter Dateistruktur implementiert werden. Microsoft Office Access, SQL und Oracle-Datenbanken können beispielsweise als der zugrunde liegende Speichermechanismus verwendet werden. Einige Datenbankprodukte haben Featuregruppen, mit die leichter MAPI-Funktionen zu implementieren, damit Ihrer Wahl des Datenbankprodukts durch die Features, die Ihre Nachricht Speicheranbieter zur Unterstützung von muss beeinträchtigt werden kann.
+Sie können einen Nachrichtenspeicher Anbieter mit einer beliebigen Art zugrunde liegender Speichermechanismus implementieren. Sie müssen jedoch auf Leistungsprobleme achten. Darüber hinaus muss der zugrunde liegende Speichermechanismus als hierarchische Auflistung von MAPI-Objekten dargestellt werden. Diese Anforderungen bedeuten, dass Nachrichtenspeicher in der Regel mit einem vorhandenen Datenbankprodukt implementiert werden, das die hierarchische Speicherung von Objekten in der Datenbank unterstützt und über eine Programmierschnittstelle oder eine definierte Dateistruktur verfügt. Beispielsweise können Microsoft Office Access-, SQL-und Oracle-Datenbanken als zugrunde liegender Speichermechanismus verwendet werden. Einige Datenbankprodukte verfügen über Featuregruppen, die die Implementierung von MAPI-Funktionen vereinfachen, sodass die Auswahl des Datenbankprodukts von den Features beeinflusst werden kann, die der Nachrichtenspeicher Anbieter unterstützen muss.
   
-Verwenden eine vorhandene Datenbank als die zugrunde liegende Speicher Mechanismus speichert, an denen Sie arbeiten, da es in der Regel leichter vorhanden Datenbankobjekte MAPI-Clients als MAPI-Objekten ist als zu implementieren einen eigenen Mechanismus hierarchisches Speicher. Auf diese Weise können Sie MAPI-Vorgänge auf einer höheren Ebene als, wenn Sie einen eigenen Mechanismus hierarchisches Speicher implementieren zu behandeln. Suchen einer Nachricht mit einer bestimmten Betreffzeile wird beispielsweise recht einfach wenigen erstellen und Senden von einer Abfrage für die gewünschte Datenbank, anstatt implementieren komplexe Routinen, um hierarchische Speichermechanismus zu suchen.
+Die Verwendung einer vorhandenen Datenbank als zugrunde liegender Speichermechanismus spart Ihre Arbeit, da es in der Regel einfacher ist, MAPI-Clients Datenbankobjekte als MAPI-Objekte darzustellen, als ihren eigenen hierarchischen Speichermechanismus zu implementieren. Auf diese Weise können Sie MAPI-Vorgänge auf einer höheren Ebene behandeln, als wenn Sie einen eigenen hierarchischen Speichermechanismus implementieren. Wenn Sie beispielsweise nach einer Nachricht mit einer bestimmten Betreffzeile suchen, wird es relativ einfach, eine entsprechende Datenbankabfrage zu erstellen und zu übermitteln, statt komplexe Routinen zum Durchsuchen des hierarchischen Speichermechanismus zu implementieren.
   
-Nachricht-Anbieter kommunizieren mit MAPI-Clients und die MAPI-Warteschlange zum Ausführen von Vorgängen für Ordner und Objekte. Der Nachricht Speicheranbieter übersetzt diese Vorgänge in die zugrunde liegende Speicher Mechanismus Vorgänge auf niedriger Ebene. Die MAPI-Warteschlange kommuniziert normalerweise mit der Nachricht Informationsdienst beim Senden und Empfangen von Nachrichten. MAPI-Clients kommunizieren normalerweise mit der Nachricht-Anbieter die Ordnerhierarchie bearbeiten und zu lesen, bearbeiten, löschen und Senden von Nachrichten.
+Nachrichtenspeicher Anbieter kommunizieren mit MAPI-Clients und dem MAPI-Spooler, um Vorgänge für Ordner und Objekte auszuführen. Der Nachrichtenspeicher Anbieter übersetzt diese Vorgänge in Vorgänge auf niedrigeren Ebenen des zugrunde liegenden Speichermechanismus. Der MAPI-Spooler kommuniziert beim Senden und empfangen von Nachrichten in der Regel mit dem Nachrichtenspeicher Anbieter. MAPI-Clients kommunizieren in der Regel mit Nachrichtenspeicher Anbietern, um die Ordnerhierarchie zu bearbeiten und Nachrichten zu lesen, zu bearbeiten, zu löschen und zu senden.
   
-Die MAPI-Warteschlange und die MAPI-Clients kommunizieren mit dem Anbieter Nachricht anmelden, um neue Nachrichten zu erstellen. Clientanwendungen dazu beim Verfassen einer Nachricht. Die MAPI-Warteschlange führt dies, wenn sie eine eingehende Nachricht empfängt. In beiden Fällen wird die neue Nachricht in der Regel im Ordner Posteingang des Nachrichtenspeichers, erstellt, sofern vorhanden.
+Sowohl die MAPI-Spooler-als auch die MAPI-Clients kommunizieren mit dem Nachrichtenspeicher Anbieter, um neue Nachrichten zu erstellen. Client Anwendungen tun dies, wenn Benutzer eine Nachricht verfassen. Der MAPI-Spooler führt dies aus, wenn er eine eingehende Nachricht empfängt. In beiden Fällen wird die neue Nachricht in der Regel im Posteingang-Ordner des Nachrichtenspeichers erstellt, sofern vorhanden.
   
-Nachricht Anbieter stellen Sie bei der umfassenden Verwendung von MAPI-Tabellen, Ordnern, Nachrichten und Eigenschaften. Die Implementierungsdetails für diese Objekte werden in [MAPI-Tabellen](mapi-tables.md), [MAPI-Ordner](mapi-folders.md), [MAPI-Nachrichten](mapi-messages.md)und [MAPI-Eigenschaften im Überblick](mapi-property-overview.md)dokumentiert. Sie sollten sich mit diesem Material vertraut machen bevor Sie versuchen, einen Anbieter für die Nachricht anmelden zu implementieren.
+Nachrichtenspeicher Anbieter nutzen die MAPI-Tabellen,-Ordner,-Nachrichten und-Eigenschaften stark. Die Implementierungsdetails für diese Objekte sind in [MAPI-Tabellen](mapi-tables.md), [MAPI-Ordnern](mapi-folders.md), MAPI- [Nachrichten](mapi-messages.md)und der [MAPI-Eigenschaftsübersicht](mapi-property-overview.md)dokumentiert. Sie sollten sich mit diesem Material vertraut machen, bevor Sie versuchen, einen Nachrichtenspeicher Anbieter zu implementieren.
   
-Es gibt zwei wichtige Arten von Anbietern Nachricht: diejenigen, die als Standard für einen Benutzer fungieren können e-Mail-Speicher und die nicht. Ein Standardnachrichtenspeicher ist eine der in der sich Client-Anwendungen und die MAPI-Warteschlange alle messaging Aufgaben wie das Empfangen von Nachrichten oder Erstellen von Ordnern ausführen können. Nachricht Store Standardanbieter muss als die für alle Anbieter für Nachricht Store erforderlichen Mindestanzahl Weitere Features unterstützen.
+Es gibt zwei wichtige Arten von Nachrichtenspeicher Anbietern: solche, die als Standardnachrichtenspeicher eines Benutzers fungieren können, und solche, die nicht möglich sind. Ein Standardnachrichtenspeicher ist einer, in dem Clientanwendungen und der MAPI-Spooler beliebige Messagingaufgaben ausführen können, beispielsweise das Empfangen von Nachrichten oder das Erstellen von Ordnern. Ein standardmäßiger Nachrichtenspeicher Anbieter muss mehrere Features unterstützen als die Mindestanzahl, die für alle Nachrichtenspeicher Anbieter erforderlich ist.
   
 ## <a name="see-also"></a>Siehe auch
 

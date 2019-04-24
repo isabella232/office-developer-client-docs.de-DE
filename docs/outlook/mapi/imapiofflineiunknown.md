@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 211281ff-3c22-1b51-4b72-ca1e313c7202
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 20d8c39765b0dbbfdde530361894d0a27876010a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321266"
 ---
 # <a name="imapioffline--iunknown"></a>IMAPIOffline : IUnknown
 
@@ -25,11 +25,11 @@ ms.locfileid: "25401279"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen für eine offline-Objekt.
+Stellt Informationen für ein Offlineobjekt bereit.
   
 |||
 |:-----|:-----|
-|Bereitgestellt von:  <br/> |Abfrage für [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md) <br/> |
+|Bereitgestellt von:  <br/> |Abfrage auf [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md) <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIOffline  <br/> |
    
@@ -37,16 +37,16 @@ Enthält Informationen für eine offline-Objekt.
 
 |||
 |:-----|:-----|
-|**[SetCurrentState](imapioffline-setcurrentstate.md)** <br/> |Legt den aktuellen Zustand eines offline-Objekts zu online oder offline.  <br/> |
-|**[GetCapabilities](imapioffline-getcapabilities.md)** <br/> |Ruft die Bedingungen für die Rückrufe durch eine offline-Objekt unterstützt werden.  <br/> |
-|**[GetCurrentState](imapioffline-getcurrentstate.md)** <br/> |Ruft den aktuellen online oder offline-Status eines offline-Objekts ab.  <br/> |
-| *Platzhalter-member*  <br/> |Dieser Member ist ein Platzhalter und wird nicht unterstützt.  <br/> |
+|**[SetCurrentState](imapioffline-setcurrentstate.md)** <br/> |Legt den aktuellen Status eines Offline Objekts auf Online oder offline fest.  <br/> |
+|**[GetCapabilities](imapioffline-getcapabilities.md)** <br/> |Ruft die Bedingungen ab, für die Rückrufe von einem Offlineobjekt unterstützt werden.  <br/> |
+|**[GetCurrentState](imapioffline-getcurrentstate.md)** <br/> |Ruft den aktuellen Online-oder Offlinestatus eines Offline Objekts ab.  <br/> |
+| *Platzhalterelement*  <br/> |Dieser Member ist ein Platzhalter und wird nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Client verwendet **[HrOpenOfflineObj](hropenofflineobj.md)** zu öffnen, und erhalten eine offline-Objekt, das **IMAPIOfflineMgr**unterstützt. Da **IMAPIOfflineMgr** von [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)erbt, kann der Client (mithilfe von [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)) diese Schnittstelle Abfragen um einen Zeiger auf den Zeiger der Schnittstelle für **IMAPIOffline** für das offline-Objekt abzurufen. Der Client kann dann abzurufen oder festzulegen den aktuellen Status des Objekts zugreifen, oder informieren Sie sich über die Callback-Funktionen des Objekts (durch Aufrufen von **IMAPIOffline::GetCapabilities** ) und auf Rückrufe mithilfe von **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** eingerichtet werden sollen. 
+Ein Client verwendet **[HrOpenOfflineObj](hropenofflineobj.md)** zum Öffnen und Abrufen eines Offline Objekts, das **IMAPIOfflineMgr**unterstützt. Da **IMAPIOfflineMgr** von [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)erbt, kann der Client diese Schnittstelle Abfragen (mithilfe von [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)), um einen Zeiger auf den Schnittstellenzeiger für **IMAPIOffline** für das Offlineobjekt abzurufen. Der Client kann dann den aktuellen Status des Objekts abrufen oder festlegen oder sich über die Rückruffunktionen des Objekts informieren (durch Aufrufen von **IMAPIOffline:: getCapabilities** ) und das Einrichten von Rückrufen mithilfe von **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)**. 
   
-Ein Element in dieser Schnittstelle ist ein Platzhalter für die interne Verwendung von Microsoft Outlook 2013 reserviert und kann geändert werden. Andere Member in dieser Schnittstelle müssen nur gemäß Dokumentation verwendet werden. 
+Ein Mitglied dieser Schnittstelle ist ein Platzhalter für die interne Verwendung von Microsoft Outlook 2013 und kann geändert werden. Andere Elemente in dieser Schnittstelle dürfen nur wie dokumentiert verwendet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -55,7 +55,7 @@ Ein Element in dieser Schnittstelle ist ein Platzhalter für die interne Verwend
 [IMAPIOfflineMgr : IMAPIOffline](imapiofflinemgrimapioffline.md)
 
 
-[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
+[Informationen zur Offlinestatus-API](about-the-offline-state-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   

@@ -11,48 +11,48 @@ api_name:
 api_type:
 - COM
 ms.assetid: 678bdc52-3404-48b2-9154-64ce2a941555
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: be41a9916b6b231d5715cf18fe2b0d804434f2ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 069cb41ceac70a2eaaa08440e43745605890f071
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318039"
 ---
 # <a name="bookmark"></a>BOOKMARK
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert die Textmarken Daten zum Erinnern an einer Position in einer Tabelle. 
+Definiert Lesezeichen Daten für die Erinnerung an eine Position in einer Tabelle. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Zusammenhängenden Methoden:  <br/> |[IMAPITable::CreateBookmark](imapitable-createbookmark.md) [IMAPITable::FreeBookmark](imapitable-freebookmark.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Verwandte Methoden:  <br/> |[IMAPITable:: CreateBookMark](imapitable-createbookmark.md) [IMAPITable:: FreeBookmark](imapitable-freebookmark.md) <br/> |
    
 ```cpp
 typedef ULONG_PTR BOOKMARK;
 ```
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI sind drei Textmarken, wie folgt definiert:
+MAPI definiert drei Lesezeichen, die wie folgt aufgelistet sind:
   
 BOOKMARK_BEGINNING 
   
-> Speichert die Anfangsposition der Tabelle an. 
+> Merkt sich die Anfangsposition der Tabelle. 
     
 BOOKMARK_CURRENT 
   
-> Speichert die aktuelle Position in der Tabelle.
+> Merkt sich die aktuelle Position der Tabelle.
     
 BOOKMARK_END 
   
-> Speichert die Endposition der Tabelle an.
+> Merkt sich die Endposition der Tabelle.
     
-Clients können weitere Textmarken zum Erinnern an andere Positionen Tabelle erstellen. Textmarken sind nur ab, wenn die Tabelle geöffnet ist ungültig. Clients müssen Textmarken frei, die sie vor dem Schließen der verknüpften Tabelle erstellt haben. 
+Clients können andere Lesezeichen zum erinnern anderer Tabellenpositionen erstellen. Textmarken sind nur gültig, wenn die Tabelle geöffnet ist. Clients müssen alle Lesezeichen freigeben, die Sie erstellt haben, bevor Sie die zugeordnete Tabelle schließen. 
   
 ## <a name="see-also"></a>Siehe auch
 

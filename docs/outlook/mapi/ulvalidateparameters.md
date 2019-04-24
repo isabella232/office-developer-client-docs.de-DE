@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: fb9050c9-5797-44f0-8bf5-6264f4e6d7c3
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 297b5a516f8275b236092f9f385afcb673c95de0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 465069f08e2026dcbf98e24f0f5f59e12ed17eca
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315288"
 ---
 # <a name="ulvalidateparameters"></a>UlValidateParameters
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine interne Funktion, um zu überprüfen, dass die Parameter-Clientanwendungen zu Dienstanbietern und MAPI-vergangen sind. 
+Ruft eine interne Funktion auf, um die Parameter zu überprüfen, die von Clientanwendungen an Dienstanbieter und MAPI übergeben wurden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -44,13 +44,13 @@ HRESULT UlValidateParameters(
 
  _eMethod_
   
-> [in] Gibt den-Enumeration zurück, die-Methode, um zu überprüfen. 
+> in Gibt die zu überprüfende Methode an. 
     
- _Erster_
+ _First_
   
-> [in] Zeiger auf das erste Argument im Stapel.
+> in Zeiger auf das erste Argument im Stapel.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -58,10 +58,10 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs.
+> Der Vorgang konnte nicht abgeschlossen werden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **UlValidateParameters** wurde durch das Makro [UlValidateParms](ulvalidateparms.md) ersetzt. **UlValidateParameters** funktioniert nicht ordnungsgemäß auf RISC-Plattformen und wird nun auf diese zu kompilieren verhindert. Immer noch kompiliert und auf Intel-Plattformen ordnungsgemäß funktioniert, aber **UlValidateParms** wird auf allen Plattformen empfohlen. 
+Das **UlValidateParameters** -Makro wurde vom [UlValidateParms](ulvalidateparms.md) -Makro abgelöst. **UlValidateParameters** funktioniert auf RISC-Plattformen nicht ordnungsgemäß und kann nun nicht mehr kompiliert werden. Es wird weiterhin auf Intel-Plattformen kompiliert und funktioniert, aber **UlValidateParms** wird auf allen Plattformen empfohlen. 
   
 

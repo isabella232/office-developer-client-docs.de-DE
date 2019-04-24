@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6922cb38-a9e3-e4a9-d4a3-e11b81fc77e2
 description: 'Zuletzt geändert: 07. Dezember 2015'
-ms.openlocfilehash: ce25c6777c8a71da0fe11e0bbf34eefafe2ca50d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: HT
+ms.openlocfilehash: c665bae57a72428df7acd92e080f7c31b131253b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316653"
 ---
 # <a name="disconnecting-an-offline-state-add-in"></a>Trennen eines Offlinestatus-Add-Ins
 

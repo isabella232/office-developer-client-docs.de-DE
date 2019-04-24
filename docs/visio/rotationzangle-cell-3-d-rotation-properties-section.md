@@ -1,26 +1,26 @@
 ---
-title: RotationZAngle Cell (3-D Rotation Properties Section)
+title: RotationZAngle Cell (3-D Rotation Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3c39b7f7-1cd7-4e0d-946c-356705194583
-description: Bestimmt den Winkel der Drehung entlang der z-Achse in Grad (0,0 - 359.9).
-ms.openlocfilehash: c0a3ab4eec54ec6cf1f534eef1a620a1b5ea2c11
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den Drehwinkel entlang der Z-Achse in Grad (0,0-359,9).
+ms.openlocfilehash: 8cabf6995b523cdbd91e7ac54085ad02a2521191
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315561"
 ---
-# <a name="rotationzangle-cell-3-d-rotation-properties-section"></a>RotationZAngle Cell (3-D Rotation Properties Section)
+# <a name="rotationzangle-cell-3-d-rotation-properties-section"></a>RotationZAngle Cell (3-D Rotation Properties section)
 
-Bestimmt den Winkel der Drehung entlang der z-Achse in Grad (0,0 - 359.9).
+Bestimmt den Drehwinkel entlang der Z-Achse in Grad (0,0-359,9).
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **RotationZAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **RotationZAngle** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

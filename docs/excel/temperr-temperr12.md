@@ -8,22 +8,22 @@ f1_keywords:
 - TempErr
 - TempErr12
 keywords:
-- Temperr-Funktion [excel 2007], TempErr12-Funktion [Excel 2007]
+- temperer-Funktion [Excel 2007], TempErr12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: cf8c26b2-ca2b-4dda-a02d-0ccbeac19106
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 22c0ff1b8259fc0e5ee70edb06bb3db53781ff8c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 68a0addc36ecf1b4491ab1e4f5b10f359bbc59c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310346"
 ---
 # <a name="temperrtemperr12"></a>TempErr/TempErr12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliothek-Funktion, die eine temporäre **XLOPER**erstellt/ **XLOPER12** mit einer Microsoft Excel-Arbeitsblatt-Fehler. 
+Framework-Bibliotheksfunktion, mit der ein temporäres **XLOPER**/ -**XLOPER12** mit einem Microsoft Excel-Arbeitsblattfehler erstellt wird. 
   
 ```cs
 LPXLOPER TempErr(WORD err);
@@ -32,11 +32,11 @@ LPXLOPER12 TempErr12(BOOL err);
 
 ## <a name="parameters"></a>Parameter
 
- _Err_
+ _err_
   
-Die gewünschte Fehlercode oder deren Literale numerische Entsprechung, wie in der folgenden Tabelle dargestellt.
+Den gewünschten Fehlercode oder dessen numerisches Äquivalent, wie in der folgenden Tabelle dargestellt.
   
-|**Fehler**|**Fehlercode in XLCALL definiert. H**|**Dezimalzahl**|
+|**Error**|**In XLCALL definierter Fehlercode. H**|**Decimal-Äquivalent**|
 |:-----|:-----|:-----|
 |#NULL  <br/> |**xlerrNull** <br/> |0  <br/> |
 |#DIV/0!  <br/> |**xlerrDiv0** <br/> |7  <br/> |
@@ -46,16 +46,16 @@ Die gewünschte Fehlercode oder deren Literale numerische Entsprechung, wie in d
 |#NUM!  <br/> |**xlerrNum** <br/> |36  <br/> |
 |#N/A  <br/> |**xlerrNA** <br/> |42  <br/> |
    
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Gibt ein **XltypeBool** mit den Fehlercode übergeben wird. 
+Gibt einen **xltypeBool** -Wert zurück, der den übergebenen Fehlercode enthält. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **TempErr12** -Funktion verwendet, um eine #VALUE zurück! Fehler in Excel. 
+In diesem Beispiel wird die **TempErr12** -Funktion verwendet, um eine #VALUE zurückzugeben. Fehler bei Excel. 
   
 > [!NOTE]
-> Die Bibliothek Framework-Funktion **TempErr12** reserviert Speicher aus einem internen Puffer, die normalerweise freigegeben wird, wenn die Framework-Funktion **Excel12f** aufgerufen wird. Wenn diese Beispielfunktion ohne **Excel12f** aufgerufen wird wiederholt aufgerufen wird, tritt ein, Speicherverluste. 
+> Die Framework-Bibliotheksfunktion **TempErr12** reserviert Arbeitsspeicher aus einem internen Puffer, der normalerweise freigegeben wird, wenn die Frameworkfunktion **Excel12f** aufgerufen wird. Wenn diese Beispielfunktion wiederholt aufgerufen wird, ohne dass **Excel12f** aufgerufen wird, tritt ein Speicherverlust auf. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

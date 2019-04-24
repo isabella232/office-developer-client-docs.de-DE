@@ -1,5 +1,5 @@
 ---
-title: Zugreifen auf Objekte durch eine Sitzung
+title: Zugreifen auf Objekte mithilfe der Sitzung
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,55 +7,55 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ecada707-2960-41ec-be7e-619cad257c57
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f0696ad4d15274e4af18d2246dd124c1bfee1a2c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a76397b74642aedf9ad5c9704735d869f61db7e3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321707"
 ---
-# <a name="accessing-objects-by-using-the-session"></a>Zugreifen auf Objekte durch eine Sitzung
+# <a name="accessing-objects-by-using-the-session"></a>Zugreifen auf Objekte mithilfe der Sitzung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Sitzung Zeiger, den Sie aus den Anruf auf [MAPILogonEx](mapilogonex.md) erhalten kann verwendet werden, um eine Vielzahl von Objekten zuzugreifen. Die folgende Tabelle enthält die Methoden, die verwendet werden, um verschiedene Objekte zuzugreifen: 
+Der Sitzungs Zeiger, den Sie von Ihrem Aufruf an [MAPILogonEx](mapilogonex.md) erhalten, kann für den Zugriff auf eine Vielzahl von Objekten verwendet werden. In der folgenden Tabelle sind die Methoden aufgeführt, die für den Zugriff auf verschiedene Objekte verwendet werden: 
   
 |**Objekt**|**Session-Methode**|
 |:-----|:-----|
-|Profilabschnitt  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
+|Profil Abschnitt  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
 |Nachrichtenspeicher  <br/> |[IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) <br/> |
 |Adressbuch  <br/> |[IMAPISession::OpenAddressBook](imapisession-openaddressbook.md) <br/> |
-|Objekt "Message" Service-Verwaltung  <br/> |[IMAPISession::AdminServices](imapisession-adminservices.md) <br/> |
-|Ordner, Nachricht, Adressbuchcontainer, Verteilerliste oder messaging-Benutzer  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
+|Nachrichtendienst-Verwaltungsobjekt  <br/> |[IMAPISession::AdminServices](imapisession-adminservices.md) <br/> |
+|Ordner, Nachricht, Adressbuchcontainer, Verteilerliste oder Messagingbenutzer  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
    
-Mit der Methode **OpenEntry** und eine gültige Eintrags-ID können Sie alle Address Book oder einer Nachricht Store Anbieter-Objekt öffnen. Es sind andere Methoden **OpenEntry** in MAPI, zusätzlich zu der **IMAPISession** -Methode. **OpenEntry** wird in den folgenden Objekten implementiert: 
+Mit der **OpenEntry** -Methode und einer gültigen Eintrags-ID können Sie ein beliebiges Adressbuch-oder Nachrichtenspeicher-Anbieterobjekt öffnen. Es gibt weitere **OpenEntry** -Methoden in MAPI, zusätzlich zur **IMAPISession** -Methode. **OpenEntry** wird in den folgenden Objekten implementiert: 
   
 |**Objekt**|**Methode**|
 |:-----|:-----|
-|--Adressbuchanbieter Anmeldung-Objekt  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
+|Anmeldeobjekt des Adressbuch Anbieters  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
 |Adressbuch  <br/> |[IAddrBook::OpenEntry](iaddrbook-openentry.md) <br/> |
 |Adressbuchcontainer  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
 |Sitzung  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
 |Nachrichtenspeicher  <br/> |[IMsgStore::OpenEntry](imsgstore-openentry.md) <br/> |
-|Nachricht-Speicheranbieter Anmeldung-Objekt  <br/> |[IMSLogon::OpenEntry](imslogon-openentry.md) <br/> |
+|Anmeldeobjekt des Nachrichtenspeicher Anbieters  <br/> |[IMSLogon::OpenEntry](imslogon-openentry.md) <br/> |
 |Ordner  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
 |Support-Objekt  <br/> |[IMAPISupport::OpenEntry](imapisupport-openentry.md) <br/> |
    
-Einige Methoden **OpenEntry** erforderlich einen Eintrag Bezeichner des Objekts geöffnet werden, **IMAPISession::OpenEntry**. andere Methoden ermöglichen NULL angegeben werden. Eine NULL-Eintrags-ID wird je nach dem Objekt unterschiedlich interpretiert. Wenn Sie einen NULL-Eintrags-ID **IAddrBook::OpenEntry** aufrufen, wird MAPI beispielsweise den Stammcontainer des Adressbuchs geöffnet. Der Nachrichtenspeicher **OpenEntry** -Methode verhält sich wie; Es wird im Stammordner des Nachrichtenspeichers geöffnet. **IMAPIContainer::OpenEntry**, von Ordnern und Address Book-Containern und implementiert möglicherweise MAPI_E_INVALID_PARAMETER oder die Stammcontainer, je nach der Implementierung zurück. 
+Einige **OpenEntry** -Methoden erfordern eine Eintrags-ID des zu öffnenden Objekts, ebenso wie **IMAPISession:: OpenEntry**; andere Methoden lassen die Angabe von NULL zu. Eine NULL-Eintrags-ID wird je nach Objekt unterschiedlich interpretiert. Wenn Sie beispielsweise **IAddrBook:: OpenEntry** mit einer NULL-Eintrags-ID aufrufen, wird der Stammcontainer des Adressbuchs von MAPI geöffnet. Die openEntry- **** Methode des Nachrichtenspeichers verhält sich ähnlich; der Stammordner des Nachrichtenspeichers wird geöffnet. **IMAPIContainer:: OpenEntry**, implementiert von Ordnern und Adressbuch Containern, kann MAPI_E_INVALID_PARAMETER oder den Stammcontainer abhängig von der Implementierung zurückgeben. 
   
-Zusätzlich zum Ablehnen von eines NULL-Werts für die Eintrags-ID, unterscheidet sich die Sitzung **OpenEntry** -Methode von anderen Methoden **OpenEntry** , da ihre Arbeit ist nicht für Objekte zu öffnen. Stattdessen untersucht die Eintrags-ID, und leitet den Anruf an eine andere **OpenEntry** -Methode, die von den entsprechenden Dienstanbieter implementiert wird. Angenommen, wenn Sie mit der Eintrags-ID einer Nachricht **IMAPISession::OpenEntry** aufrufen, ruft MAPI die **IMSLogon::OpenEntry** -Methode des Nachrichtenspeichers verantwortlich für die Nachricht. 
+Zusätzlich zur Unzulässigkeit eines NULL-Werts für die Eintrags-ID unterscheidet sich die **OpenEntry** -Methode der Sitzung von anderen OpenEntry-Methoden, da ihre Aufgabe nicht das Öffnen von Objekten ist. **** Stattdessen wird die Eintrags-ID untersucht und der Aufruf an eine andere **OpenEntry** -Methode weitergeleitet, die vom entsprechenden Dienstanbieter implementiert wird. Wenn Sie beispielsweise **IMAPISession:: OpenEntry** mit der Eintrags-ID einer Nachricht aufrufen, ruft MAPI die **IMSLogon:: OpenEntry** -Methode des Nachrichtenspeichers auf, der für die Nachricht zuständig ist. 
   
-Zusätzlich zur Verwendung der Sitzung auf um Objekte zu öffnen, verwenden sie Clients um zu vergleichen. Die [IMAPISession::CompareEntryIDs](imapisession-compareentryids.md) -Methode vergleicht Objekte, indem ihre Eintragsbezeichner vergleichen. Wenn die [MAPIUID](mapiuid.md) Strukturen innerhalb der Eintragsbezeichner mit der gleichen Dienstanbieter gehören, leitet MAPI den Anruf an diesen Anbieter. **CompareEntryIDs** gibt einen Fehlerwert zurück, wenn die zwei-Eintragsbezeichner nicht übereinstimmen. Obwohl diese Methode Eintragsbezeichner, die für jede Art von Objekt gehören vergleichen kann, die besten Ergebnisse **CompareEntryIDs** für übergeordnete Objekte wie Nachrichtenspeicher und Address Book Container. Zum Vergleichen von untergeordneten Objekte vergleichen Sie direkt, die für die Objekte Search (**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))) oder aufzeichnen Schlüssel (**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))). 
+Zusätzlich zur Verwendung der Sitzung zum Öffnen von Objekten verwenden Clients diese, um Sie zu vergleichen. Die [IMAPISession:: CompareEntryIDs](imapisession-compareentryids.md) -Methode vergleicht Objekte durch Vergleichen Ihrer Eintrags-IDs. Wenn die [MAPIUID](mapiuid.md) -Strukturen, die in den Eintrags-IDs enthalten sind, zum gleichen Dienstanbieter gehören, leitet MAPI den Anruf an diesen Anbieter weiter. **CompareEntryIDs** gibt einen Fehlerwert zurück, wenn die beiden Eintragsbezeichner nicht übereinstimmen. Diese Methode kann zwar Eintragsbezeichner vergleichen, die zu einem beliebigen Objekttyp gehören, **CompareEntryIDs** eignet sich jedoch für Objekte höherer Ebene wie Nachrichtenspeicher und Adressbuchcontainer. Um Objekte mit niedrigerer Ebene zu vergleichen, vergleichen Sie direkt die Suchschlüssel der Objekte (**PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))) oder Record Keys (**PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md))). 
   
-**CompareEntryIDs** wird durch mehrere Objekte wie **OpenEntry**implementiert. Wählen Sie die **OpenEntry** und **CompareEntryID** Methode geöffnet oder verglichen werden entsprechend den Umfang der Informationen, die Ihnen zu einem oder mehreren Objekten verwenden. Verwenden Sie bei der Entscheidung, welche Schnittstellenmethode aufrufen, die folgenden Richtlinien: 
+Wie **** bei OpenEntry wird **CompareEntryIDs** von mehreren Objekten implementiert. Wählen Sie **** die OpenEntry-und die **CompareEntryID** -Methode entsprechend der Menge der Informationen, die Sie zu den zu öffnenden oder zu vergleichenden Objekten haben. Verwenden Sie die folgenden Richtlinien, wenn Sie entscheiden, welche Schnittstellenmethode aufgerufen werden soll: 
   
-- Wenn Sie keine Informationen über die Zielobjekte haben, rufen Sie [IMAPISession::OpenEntry](imapisession-openentry.md) oder [IMAPISession::CompareEntryIDs](imapisession-compareentryids.md). Dieser Ansatz ermöglicht den Zugriff auf ein beliebiges Objekt, jedoch ist der langsamste der drei.
+- Wenn Sie keine Informationen zu den Zielobjekten haben, rufen Sie [IMAPISession:: OpenEntry](imapisession-openentry.md) oder [IMAPISession:: CompareEntryIDs](imapisession-compareentryids.md)auf. Dieser Ansatz ermöglicht den Zugriff auf ein beliebiges Objekt, ist jedoch die langsamste der drei.
     
-- Wenn Sie wissen, dass die Zielobjekte Adressbucheinträge statt, beispielsweise Ordner sind, rufen Sie die [IAddrBook::OpenEntry](iaddrbook-openentry.md) oder [IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md) -Methode. **IAddrBook::OpenEntry** öffnet den Stammcontainer des Adressbuchs, wenn NULL als Zielobjekt angegeben ist. Dieser Ansatz ermöglicht den Zugriff auf ein beliebiges Address Book-Objekt und schneller als die Verwendung von **IMAPISession**, aber langsamer als die Verwendung von **IMAPIContainer**ist.
+- Wenn Sie wissen, dass die Zielobjekte Adressbucheinträge und nicht beispielsweise Ordner sind, rufen Sie die [IAddrBook:: OpenEntry](iaddrbook-openentry.md) -oder [IAddrBook:: CompareEntryIDs](iaddrbook-compareentryids.md) -Methode auf. **IAddrBook:: OpenEntry** öffnet den Stammcontainer des Adressbuchs, wenn NULL als Zielobjekt angegeben wird. Dieser Ansatz ermöglicht den Zugriff auf ein beliebiges Adressbuchobjekt und ist schneller als die Verwendung von **IMAPISession**, aber langsamer als die Verwendung von **IMAPIContainer**.
     
-- Rufen Sie Wenn die Eintrags-ID verwendeten kurzfristige Eintrags-ID ist oder wenn Sie wissen, dass die Zielobjekte in einer bestimmten Adressbuchcontainer oder einen Ordner gehören, die [IMAPIContainer::OpenEntry](imapicontainer-openentry.md) -Methode. Dieser Ansatz ergibt sich die schnellste Leistung, aber nur für Objekte in einem bestimmten Container oder Ordner Zugriff wird aktiviert. 
+- Wenn es sich bei der verwendeten Eintrags-ID um eine kurzfristige Eintrags-ID handelt oder Sie wissen, dass die Zielobjekte zu einem bestimmten Adressbuchcontainer oder-Ordner gehören, rufen Sie die [IMAPIContainer:: OpenEntry](imapicontainer-openentry.md) -Methode auf. Dieser Ansatz führt zu einer schnellsten Leistung, ermöglicht jedoch nur den Zugriff auf Objekte in einem bestimmten Container oder Ordner. 
     
 

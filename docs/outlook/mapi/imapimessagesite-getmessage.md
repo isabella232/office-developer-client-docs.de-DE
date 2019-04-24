@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 49d12c49-84f8-44ac-bc4a-2ee44a46f8c1
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3612c12a503174484d4a469ffa167922a015ed5b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 03dd0553d0203585850ac5c4f8c91c86ef60236a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321280"
 ---
 # <a name="imapimessagesitegetmessage"></a>IMAPIMessageSite::GetMessage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die aktuelle Nachricht zurück.
   
@@ -37,9 +37,9 @@ HRESULT GetMessage(
 
  _ppmsg_
   
-> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle für die Nachricht.
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle für die Nachricht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,23 +47,23 @@ S_OK
     
 S_FALSE 
   
-> Keine Meldung, die derzeit für das aufrufende Formular vorhanden ist.
+> Für das Anruf Formular ist derzeit keine Nachricht vorhanden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formulare rufen Sie die **IMAPIMessageSite::GetMessage** -Methode, um eine Nachricht-Schnittstelle für die aktuelle Nachricht zu erhalten. Die aktuelle Nachricht ist die gleiche Nachricht an, wie zuvor in der [IPersistMessage::InitNew](ipersistmessage-initnew.md), [IPersistMessage::Load](ipersistmessage-load.md)oder [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md) -Methode übergeben wurde. 
+Formulare rufen die **IMAPIMessageSite:: getMessage** -Methode auf, um eine Nachrichten Schnittstelle für die aktuelle Nachricht abzurufen. Die aktuelle Nachricht ist dieselbe Nachricht, die zuvor in der [IPersistMessage:: InitNew](ipersistmessage-initnew.md), [IPersistMessage:: Laden](ipersistmessage-load.md)oder [IPersistMessage: SaveCompleted](ipersistmessage-savecompleted.md) -Methode übergeben wurde. 
   
- **GetMessage** gibt S_FALSE zurück, wenn derzeit keine Meldung befindet. Dieser Status kann auftreten, nach dem Anrufe an die [IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) -Methode oder vor dem nächsten Aufruf von **IPersistMessage::Load** oder **IPersistMessage::SaveCompleted** erfolgt. 
+ **GetMessage** gibt S_FALSE zurück, wenn keine Nachricht vorhanden ist. Dieser Zustand kann nach Aufrufen der [IPersistMessage:: HandsOffMessage](ipersistmessage-handsoffmessage.md) -Methode oder vor dem nächsten Aufruf von **IPersistMessage:: Laden** oder **IPersistMessage:: SaveCompleted** erfolgen. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit der Formular-Servern finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI (engl.) verwendet die **IMAPIMessageSite::GetMessage** -Methode den Zeiger aktuell zwischengespeicherten Meldung zurückgegeben, sofern es vorhanden ist.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: getMessage** -Methode, um den aktuell zwischengespeicherten Nachrichten Zeiger zurückzugeben, sofern dieser verfügbar ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -82,7 +82,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formularoberflächen](mapi-form-interfaces.md)
+[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
 

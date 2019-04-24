@@ -1,5 +1,5 @@
 ---
-title: Bestimmen des Tabelleendes
+title: Bestimmen des Endes einer Tabelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,27 +8,27 @@ api_type:
 - COM
 ms.assetid: c879e972-05f4-4716-8fc2-db5b22f34ca8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f9979baf144b6106adcec416ee04439404e05d19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 28892e2d351b8dc9aa864c9eff52c94bb0f20e8f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316716"
 ---
-# <a name="determining-a-tables-end"></a>Bestimmen des Tabelleendes
+# <a name="determining-a-tables-end"></a>Bestimmen des Endes einer Tabelle
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- Ein häufiger Fehler ist, wird davon ausgegangen, dass das Ende der Tabelle erreicht wurde hat: 
+ Eine häufige Fehlermeldung ist, dass das Ende der Tabelle erreicht wurde, wenn: 
   
-- [IMAPITable::QueryRows](imapitable-queryrows.md) wurde in einer Schleife, mit dem Ende der Schleife durch die Anzahl der Zeilen von [IMAPITable::GetRowCount](imapitable-getrowcount.md)zurückgegebene bestimmt aufgerufen. Anzahl die **GetRowCount** gibt stellt keine immer die genaue Anzahl der Zeilen in der Tabelle dar; Es ist eine ungefähre Anzahl. 
+- [IMAPITable:: QueryRows](imapitable-queryrows.md) wurde in einer Schleife aufgerufen, wobei das Ende der Schleife durch die von [IMAPITable:: GetRowCount](imapitable-getrowcount.md)zurückgegebene Zeilenanzahl bestimmt wird. Die von **GetRowCount** zurückgegebene Anzahl stellt nicht immer die genaue Anzahl der Zeilen in der Tabelle dar. Es handelt sich um eine ungefähre Anzahl. 
     
-- **QueryRows** mit einer festen Anzahl von Zeilen aufgerufen wurde, und es werden weniger Zeilen zurückgegeben. Erst **QueryRows** ein Rowset mit einer Zeilenanzahl gleich 0 (null), die es keine weiteren Zeilen gibt sind abgerufen wird. 
+- **QueryRows** wurde mit einer festen Anzahl von Zeilen aufgerufen, und es werden weniger Zeilen zurückgegeben. Erst wenn **QueryRows** einen Zeilensatz mit einer Zeilenanzahl gleich 0 (null) zurückgibt, dass keine weiteren Zeilen abgerufen werden sollen. 
     
 > [!IMPORTANT]
-> Die einzige Zeit, die ein Anrufer übernehmen kann, dass sich der Cursor am Ende der Tabelle für eine positive Zeilenanzahl oder am Anfang der Tabelle eine negative Zeilenanzahl befindet ist, wenn der Wert S_OK und keine Zeilen zurückgegeben werden. Der Wert wird nie MAPI_E_NOT_FOUND zurückgegeben. 
+> Ein Anrufer kann nur davon ausgehen, dass der Cursor am Ende der Tabelle für eine positive Zeilenanzahl oder am Anfang der Tabelle für eine negative Zeilenanzahl positioniert ist, wenn der Wert S_OK und null Zeilen zurückgegeben werden. Der Wert MAPI_E_NOT_FOUND wird nie zurückgegeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

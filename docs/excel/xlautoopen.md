@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlAutoOpen
 keywords:
-- XlAutoOpen-Funktion [excel 2007]
+- xlAutoOpen-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 748cecb6-61d0-496b-a1a4-a73d22eb29e2
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: bf64841cbd75e25443abe5cfc7d3d7419757e245
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bf02f71458f2f4d8514f69a6b6f0921b5318303a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310290"
 ---
 # <a name="xlautoopen"></a>xlAutoOpen
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Callback-Funktion, die implementiert und von jedem gültigen XLL exportiert werden muss. Die **XlAutoOpen** -Funktion ist der empfohlene Ausgangspunkt woher Register XLL-Funktionen und Befehle, Initialisieren von Datenstrukturen, Anpassen der Benutzeroberfläche und so weiter. 
+Rückruffunktion, die von jeder gültigen XLL implementiert und exportiert werden muss. Die **xlAutoOpen** -Funktion wird empfohlen, um die XLL-Funktionen und-Befehle zu registrieren, Datenstrukturen zu initialisieren, die Benutzeroberfläche anzupassen usw. 
   
 ```cs
 int WINAPI xlAutoOpen(void);
@@ -30,35 +30,35 @@ int WINAPI xlAutoOpen(void);
 
 ## <a name="parameters"></a>Parameter
 
-Diese Funktion hat keine Argumente.
+Diese Funktion verwendet keine Parameter.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Die Implementierung dieser Funktion muss 1 (**Int**) zurückgeben.
+Die Implementierung dieser Funktion muss 1 zurückgeben (**Int**).
   
 ## <a name="remarks"></a>Hinweise
 
-Microsoft Excel **XlAutoOpen** aufgerufen, wenn die XLL aktiviert wird. Die XLL wird in den folgenden Situationen aktiviert: 
+Microsoft Excel ruft **xlAutoOpen** auf, wenn die XLL aktiviert wird. Die XLL wird in den folgenden Situationen aktiviert: 
   
-- Am Anfang einer Excel-Sitzung, wenn es in der letzten Excel-Sitzung aktiv war, die normalerweise beendet.
+- Am Anfang einer Excel-Sitzung, wenn Sie in der letzten Excel-Sitzung aktiv war, die normal beendet wurde.
     
-- Wenn während einer Sitzung Excel geladen.
+- Wenn es während einer Excel-Sitzung geladen wird.
     
-- Eine XLL kann auf verschiedene Weise geladen werden:
+- Eine XLL kann auf verschiedene Arten geladen werden:
     
-- Wählen Sie **Öffnen** im Menü **Datei** (wobei die Version von Excel diese Methode des Ladens XLLs unterstützt). 
+- Durch Auswählen von **Öffnen** im Menü **Datei** (wobei die Version von Excel diese Methode zum Laden von XLLs unterstützt). 
     
-- Verwenden Sie den Add-In-Manager.
+- Verwenden des Add-In-Managers.
     
-- Aus einer anderen XLL aufruft, [XlfRegister](xlfregister-form-1.md) mit dem Namen dieser DLL als einziges Argument. 
+- Von einer anderen XLL, die [xlfRegister](xlfregister-form-1.md) mit dem Namen dieser DLL als das einzige Argument aufruft. 
     
-- Aus einer XLM-Makrovorlage aufruft, [Registrieren](xlfregister-form-1.md) mit dem Namen dieser DLL als einziges Argument. 
+- Aus einem XML-Makroblatt, das [Register](xlfregister-form-1.md) mit dem Namen dieser DLL als einziges Argument aufruft. 
     
-- Wenn das Add-in deaktiviert und während einer Sitzung Excel erneut aktiviert ist, wird diese Funktion für eine erneute Aktivierung aufgerufen.
+- Wenn das Add-in während einer Excel-Sitzung deaktiviert und reaktiviert wird, wird diese Funktion bei der Reaktivierung aufgerufen.
     
 ### <a name="example"></a>Beispiel
 
-Finden Sie die Dateien `SAMPLES\EXAMPLE\EXAMPLE.C` und `SAMPLES\GENERIC\GENERIC.C`, beispielsweise die Implementierung dieser Funktion und.
+Sehen Sie sich `SAMPLES\EXAMPLE\EXAMPLE.C` die `SAMPLES\GENERIC\GENERIC.C`Dateien und, und zum Beispielimplementierungen dieser Funktion an.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,8 +66,8 @@ Finden Sie die Dateien `SAMPLES\EXAMPLE\EXAMPLE.C` und `SAMPLES\GENERIC\GENERIC.
 
 [xlAutoClose](xlautoclose.md)
   
-[XlAutoRegister/xlAutoRegister12](xlautoregister-xlautoregister12.md)
+[xlAutoRegister/xlAutoRegister12](xlautoregister-xlautoregister12.md)
 
 
-[Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
+[Add-In-Manager und XLL-Benutzeroberflächenfunktionen](add-in-manager-and-xll-interface-functions.md)
 

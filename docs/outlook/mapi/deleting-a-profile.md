@@ -8,25 +8,25 @@ api_type:
 - COM
 ms.assetid: 4d01ab2e-40fd-409d-a69d-163b7d5462ca
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d13af3a2d0293641fd87d1065bceedfa4b62a3b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1cd87b92a9d289f06e466f4e44ce757c93074336
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316828"
 ---
 # <a name="deleting-a-profile"></a>Löschen eines Profils
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- **Zum Löschen eines Profils**
+ **So löschen Sie ein Profil**
   
-- Rufen Sie [IProfAdmin::DeleteProfile](iprofadmin-deleteprofile.md).
+- Rufen Sie [IProfAdmin auf::D eleteprofile](iprofadmin-deleteprofile.md).
     
- **DeleteProfile** markiert das Profil zum Löschen, wenn es derzeit warten verwendet wird, bis es nicht mehr entfernen aktiv ist. Das Profil wird nicht tatsächlich ausgeblendet, bis jeder Client mit einer aktiven Sitzung unterbrochen hat. 
+ **DeleteProfile** kennzeichnet das Profil zum Löschen, wenn es derzeit verwendet wird, und wartet, bis es nicht mehr aktiv ist, um es zu entfernen. Das Profil wird nicht tatsächlich ausgeblendet, bis jeder Client mit einer aktiven Sitzung die Verbindung getrennt hat. 
   
- **DeleteProfile** Ruft die Eintrags-Funktion von jeder Nachrichtendienst im Profil mit dem _UlContext_ -Parameter auf MSG_SERVICE_DELETE festgelegt. Die Aufrufe an den Eintrag Punktfunktionen tritt auf, bevor die Dienste physisch aus dem Profil entfernt werden. 
+ **DeleteProfile** Ruft die Einstiegspunktfunktion jedes Nachrichtendiensts im Profil auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_DELETE festgelegt ist. Die Aufrufe der Einstiegspunktfunktionen treten auf, bevor die Dienste physisch aus dem Profil entfernt werden. 
   
 

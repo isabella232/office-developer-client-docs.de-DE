@@ -8,28 +8,28 @@ f1_keywords:
 - Excel12v
 - Excel4v
 keywords:
-- Excel12v-Funktion [excel 2007], Excel4v-Funktion [Excel 2007]
+- Excel12v-Funktion [Excel 2007], Excel4v-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: e3e96b98-c5a7-4625-95b6-a1e2d09c6d3d
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 7ffa0bc3ae6222af1ecd7f65de66d026ea178c87
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11ab86a95dde2ad52840822b28ce4d74dd05d148
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310899"
 ---
 # <a name="excel4vexcel12v"></a>Excel4v/Excel12v
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Ruft auf einer internen Microsoft Excel-Arbeitsblatt-Funktion, Blatt Makrofunktion oder Befehls, oder XLL-only Sonderfunktion bzw., innerhalb einer DLL, XLL oder Code-Ressource aus.
+Ruft eine interne Microsoft Excel-Arbeitsblattfunktion, eine Makroblatt Funktion oder einen Befehl oder eine XLL-spezifische Funktion oder einen Befehl aus einer DLL-, XLL-oder Coderessource auf.
   
-Alle aktuelle Versionen von Excel unterstützen **Excel4v**. Ab Excel 2007 wird **Excel12v** unterstützt. 
+Alle neueren Versionen von Excel unterstützen **Excel4v**. Ab Excel 2007 wird **Excel12v** unterstützt. 
   
-Nur, wenn Excel Steuerelement an die DLL oder XLL übergeben wurde, können diese Funktionen aufgerufen werden. Sie können auch aufgerufen werden, wenn Excel Steuerelement indirekt über einen Aufruf zu Visual Basic für Applikationen (VBA) übergeben wurde. Sie können nicht zu einem anderen Zeitpunkt aufgerufen werden. Beispielsweise können nicht sie während der Anrufe von der DllMain-Funktion oder anderen Zeiten, wenn das Betriebssystem die DLL aufgerufen wurde, oder von der DLL erstellten Thread aufgerufen werden. 
+Diese Funktionen können nur aufgerufen werden, wenn Excel die Steuerung an die DLL oder XLL übergeben hat. Sie können auch aufgerufen werden, wenn Excel die Steuerung indirekt über einen Aufruf von Visual Basic für Applikationen (VBA) übergeben hat. Sie können nicht zu einem anderen Zeitpunkt aufgerufen werden. Beispielsweise können Sie nicht während der Aufrufe an die DllMain-Funktion oder zu anderen Zeiten aufgerufen werden, wenn das Betriebssystem die DLL aufgerufen hat, oder aus einem von der DLL erstellten Thread. 
   
-Die Funktionen [Excel4 und Excel12](excel4-excel12.md) annehmen deren Argumente als Liste variabler Länge auf dem Stapel, während die Funktionen **Excel4v** und **Excel12v** deren Argumente als Array annehmen. In jeder anderen Hinsicht **Excel4** verhält sich wie **Excel4v**und **Excel12** verhält sich **Excel12v**identisch.
+Die [Excel4-und Excel12](excel4-excel12.md) -Funktionen akzeptieren ihre Argumente als Variable Längen Liste im Stapel, wohingegen die **Excel4v** -und die **Excel12v** -Funktion Ihre Argumente als Array akzeptieren. In allen anderen Aspekten verhält sich **Excel4** wie **Excel4v**, und **Excel12** verhält sich genauso wie **Excel12v**.
   
 ```cs
 int _cdecl Excel4v(int iFunction, LPXLOPER pxRes, int iCount, LPXLOPER rgx[]);
@@ -38,33 +38,33 @@ int _cdecl Excel12v(int iFunction, LPXLOPER12 pxRes, int iCount, LPXLOPER12 rgx[
 
 ## <a name="parameters"></a>Parameter
 
- _iFunction_ (**Int**)
+ _iFunction_ (**int**)
   
-Eine Zahl, die den Befehl, Function- oder Sonderfunktion gibt an, die Sie anrufen möchten. Eine Liste der gültigen _iFunction_ Werte finden Sie unter den folgenden Hinweisen. 
+Eine Zahl, die den Befehl, die Funktion oder die spezielle Funktion angibt, die Sie aufrufen möchten. Eine Liste gültiger _iFunction_ -Werte finden Sie im folgenden Abschnitt. 
   
  _pxRes_ (**LPXLOPER** oder **LPXLOPER12**)
   
-Ein Zeiger auf eine **XLOPER** (im Fall von **Excel4v**) oder ein **XLOPER12** (im Fall von **Excel12v**), die das Ergebnis der ausgewertete Funktion enthalten soll.
+Ein Zeiger auf ein **XLOPER** (im Fall von **Excel4v**) oder ein **XLOPER12** (im Fall von **Excel12v**), das das Ergebnis der ausgewerteten Funktion enthält.
   
- _iCount_ (**Int**)
+ _iCount_ (**int**)
   
-Die Anzahl der nachfolgenden Argumente, die an die Funktion übergeben werden. In Versionen von Excel bis zu 2003 kann dies eine beliebige Zahl von 0 bis 30 sein. Ab Excel 2007, kann dies eine beliebige Zahl zwischen 0 und 255 sein.
+Die Anzahl der nachfolgenden Argumente, die an die Funktion übergeben werden. In Excel-Versionen bis zu 2003 kann es sich um eine beliebige Zahl zwischen 0 und 30 handeln. Ab Excel 2007 kann es sich um eine beliebige Zahl zwischen 0 und 255 handeln.
   
- _rgx_ (**LPXLOPER []** oder **[LPXLOPER12]**)
+ _RGX_ (**LPXLOPER []** oder **LPXLOPER12 []**)
   
-Ein Array, das die Argumente für die Funktion enthält. Alle Argumente im Array müssen Zeiger auf **XLOPER** oder **XLOPER12** Werten sein. 
+Ein Array, das die Argumente für die Funktion enthält. Alle Argumente im Array müssen Zeiger auf **XLOPER** -oder **XLOPER12** -Werte sein. 
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Diese Funktionen geben dieselben Werte wie **Excel4** und **Excel12**.
+Diese Funktionen geben dieselben Werte wie **Excel4** und **Excel12**zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Funktionen sind nützlich, in dem die Anzahl von Argumenten, die an den Operator übergeben Variable ist. Beispielsweise sind **Excel4v** und **Excel12v** hilfreich beim Registrieren Funktionen mithilfe von [XlfRegister](xlfregister-form-1.md) , in dem die Anzahl der Argumente, die von der Funktion registrierende geschaltet hängt der Anzahl der insgesamt Argumente. **Excel4v** und **Excel12v** sind ebenfalls hilfreich, wenn Sie eine Wrapperfunktion für **Excel4** oder **Excel12**schreiben. In diesen Fällen müssen Sie eine Variable Argumentliste convert-normalerweise für einen einzelnen Array-Argument variabler Größe einen Rückruf in Excel mithilfe von **Excel4v** oder **Excel12v** **Excel4** oder **Excel12**bereitgestellt werden würde.
+Diese Funktionen sind nützlich, wenn die Anzahl der an den Operator übergebenen Argumente variabel ist. Beispielsweise sind **Excel4v** und **Excel12v** hilfreich, wenn Sie Funktionen mithilfe von [xlfRegister](xlfregister-form-1.md) registrieren, wobei die Anzahl der Gesamt Argumente von der Anzahl von Argumenten abhängt, die von der registrierten Funktion übernommen wurden. **Excel4v** und **Excel12v** sind auch nützlich, wenn Sie eine Wrapperfunktion für **Excel4** oder **Excel12**schreiben. In diesen Fällen müssen Sie eine Variable Argumentliste, wie normalerweise an **Excel4** oder **Excel12**, in ein einzelnes Array Argument mit variabler Größe konvertieren, um mithilfe von **Excel4v** oder **Excel12v**zurück in Excel aufzurufen.
   
 ### <a name="example"></a>Beispiel
 
-Codebeispiele finden Sie in den Code für die **Excel** und **Excel12f** Funktionen in Excel 2010 XLL SDK am folgenden Speicherort, in dem Sie das SDK installiert: 
+Codebeispiele finden Sie im Code für die **Excel** -und **Excel12f** -Funktionen im Excel 2010 XLL-SDK an der Stelle, an der Sie das SDK installiert haben: 
   
 Samples\Framewrk\Framewrk.c
   

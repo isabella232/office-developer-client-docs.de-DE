@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 3e296f6d-4833-4c68-9b84-df0b09878474
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 811be1f6506cee092e487af3bd43bdf6e136d4eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 472502d0f033370b06a69596944350152ab794f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317297"
 ---
 # <a name="imslogongetlasterror"></a>IMSLogon::GetLastError
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den letzten Fehler enthält, die für das Store-Nachrichtenspeicherobjekt aufgetreten sind. 
+Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum letzten Fehler enthält, der für das Nachrichtenspeicherobjekt aufgetreten ist. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,21 +39,21 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in] Ein HRESULT-Datentyp, der den Fehlerwert generiert, die in der vorherigen Aufruf-Methode für die Nachricht Store-Objekt enthält.
+> in Ein HRESULT-Datentyp, der den im vorherigen Methodenaufruf für das Nachrichtenspeicherobjekt generierten Fehlerwert enthält.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur zurückgegeben, die im Parameter _LppMAPIError_ sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält. Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn es keine **MAPIERROR ist** zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn keine **MAPIERROR** zurückgegeben werden soll. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -61,15 +61,15 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **IMSLogon::GetLastError** -Methode zum Abrufen von Informationen in einer Nachricht an den Benutzer über den letzten Fehler zurückgegeben, die von einem Methodenaufruf für das Objekt "Message" Store angezeigt. 
+Verwenden Sie die **IMSLogon:: getlasterroraufzurufen** -Methode, um Informationen abzurufen, die dem Benutzer in einer Nachricht bezüglich des letzten von einem Methodenaufruf für das Nachrichtenspeicherobjekt zurückgegebenen Fehlers angezeigt werden sollen. 
   
-Um alle für die zurückgegebene **MAPIERROR** -Struktur von MAPI reservierten Arbeitsspeicher freizugeben, müssen Clientanwendungen nur die Funktion [MAPIFreeBuffer](mapifreebuffer.md) aufrufen. 
+Um den gesamten von MAPI reservierten Arbeitsspeicher für die zurückgegebene **MAPIERROR** -Struktur freizugeben, müssen Clientanwendungen nur die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen. 
   
-Der Rückgabewert von **GetLastError** muss S_OK für eine Anwendung für die **MAPIERROR**verwenden. Selbst wenn der Rückgabewert S_OK ist, kann ein **MAPIERROR** nicht zurückgegeben werden. Wenn die Implementierung nicht bestimmen kann, was letzten Fehlers wurde oder wenn ein **MAPIERROR** ist nicht verfügbar für Fehler; **GetLastError** einen Zeiger auf NULL in _LppMAPIError_ stattdessen zurück. 
+Der Rückgabewert von **getlasterroraufzurufen** muss S_OK sein, damit eine Anwendung den **MAPIERROR**verwenden kann. Auch wenn der Rückgabewert S_OK ist, wird möglicherweise kein **MAPIERROR** zurückgegeben. Wenn die Implementierung nicht ermitteln kann, was der letzte Fehler war, oder wenn ein **MAPIERROR** für diesen Fehler nicht verfügbar ist, gibt **getlasterroraufzurufen** in _LPPMAPIERROR_ stattdessen einen Zeiger auf NULL zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

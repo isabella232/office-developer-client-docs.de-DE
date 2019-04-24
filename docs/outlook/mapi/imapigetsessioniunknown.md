@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: d1b662e2-1516-46b2-ba94-4092d79b5a39
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 90fe316bfd11d712f02187b6a569450b747a6409
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0b861a11b6bc1d590225a0c99b20f8be38edfd2b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321581"
 ---
 # <a name="imapigetsession--iunknown"></a>IMAPIGetSession : IUnknown
 
@@ -25,7 +25,7 @@ ms.locfileid: "22587929"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Zugriff auf die aktuellen MAPI-Sitzung mit dem Support-Objekt verknüpft ist. MAPI-Anbieter können ihre MAPI-Support-Objekt für diese Schnittstelle Abfragen. Weitere Informationen zu Support-Objekten finden Sie unter [Unterstützung-(Übersicht)](support-object-overview.md).
+Ermöglicht den Zugriff auf die aktuelle MAPI-Sitzung, die dem Support Objekt zugeordnet ist. MAPI-Anbieter können Ihr MAPI-UnterstützungsObjekt für diese Schnittstelle Abfragen. Weitere Informationen zu Support Objekten finden Sie unter [Support Object Overview](support-object-overview.md).
   
 |||
 |:-----|:-----|
@@ -37,7 +37,7 @@ Bietet Zugriff auf die aktuellen MAPI-Sitzung mit dem Support-Objekt verknüpft 
 
 |||
 |:-----|:-----|
-|[GetMAPISession](imapigetsession-getmapisession.md) <br/> |Wird aufgerufen, um einen Zeiger auf den aktuellen MAPI-Sitzung zu erhalten.  <br/> |
+|[GetMAPISession](imapigetsession-getmapisession.md) <br/> |Wird aufgerufen, um einen Zeiger auf die aktuelle MAPI-Sitzung abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -50,5 +50,5 @@ Bietet Zugriff auf die aktuellen MAPI-Sitzung mit dem Support-Objekt verknüpft 
 
 [MAPI-Schnittstellen](mapi-interfaces.md)
   
-[Übersicht über Unterstützungsobjekte](support-object-overview.md)
+[Übersicht über das Support Objekt](support-object-overview.md)
 

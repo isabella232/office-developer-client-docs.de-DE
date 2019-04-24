@@ -9,18 +9,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 68f5edbd-9040-46d3-acd5-dd51ca82f6fa
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 030c4e501e8a9eb4b6ce29d7fe0e171324b50b5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 014db553156849d84bd07e0e416f8cb3fefb4e0b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310241"
 ---
 # <a name="xlfgetdef"></a>xlfGetDef
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt den Namen als Text, der für einen bestimmten Bereich, Wert oder eine Formel in einer Arbeitsmappe definiert ist. In Excel-dieser Wert wird angezeigt, in der Spalte **Name** des Dialogfelds **Namens-Manager** angezeigt wird, wenn Sie im Abschnitt **Definierte Namen** auf der Registerkarte **Formeln** verwenden **XlfGetDef** **Namens-Manager** zum Abrufen klicken Sie auf der Namen, die eine Definition entspricht. Wenn Sie die Definition eines Namens erhalten möchten, verwenden Sie [XlfGetName](xlfgetname.md).
+Gibt den Namen als Text zurück, der für einen bestimmten Bereich, Wert oder eine Formel in einer Arbeitsmappe definiert ist. In Excel wird dieser Wert in der Spalte **Name** des Dialogfelds **Name Manager** angezeigt, das angezeigt wird, wenn Sie auf der Registerkarte **Formeln** im Abschnitt **definierte Namen** auf **Name Manager** klicken. verwenden Sie **xlfGetDef** , um die Name, der einer Definition entspricht. Verwenden Sie [xlfGetName](xlfgetname.md), um die Definition eines Namens abzurufen.
   
 ```cpp
 Excel12(xlfGetDef, LPXLOPER12 pxRes, 3, LPXLOPER12 pxDefText, LPXLOPER12 pxDocumentText, LPXLOPER12 pxTypeNum);
@@ -28,42 +28,42 @@ Excel12(xlfGetDef, LPXLOPER12 pxRes, 3, LPXLOPER12 pxDefText, LPXLOPER12 pxDocum
 
 ## <a name="parameters"></a>Parameter
 
-_pxDefText_ (**XltypeStr**)
+_pxDefText_ (**xltypeStr**)
   
-Kann sein Suchzeichenfolge Sie verweisen auf, einen Namen definieren können, einschließlich einen Verweis, einen Wert, ein Objekt oder eine Formel.
+Kann alles sein, auf das Sie einen Namen definieren können, auf den verwiesen werden kann, einschließlich eines Verweises, eines Werts, eines Objekts oder einer Formel.
   
-Verweise müssen wie in Z1S1-Bezugsart angegeben werden `"R3C5"`. Wenn _PxDefText_ einen Wert oder eine Formel ist, ist es nicht erforderlich, Gleichheitszeichen enthalten, das in der Spalte **Bezieht sich auf** das Dialogfeld **Namens-Manager** angezeigt wird. Wenn mehr als einen Namen für die _PxDefText_vorhanden ist, gibt **XlfGetDef** den Vornamen zurück. Wenn kein Name eines _PxDefText_entspricht, gibt **XlfGetDef** die `#NAME?` Fehlerwert. 
+Verweise müssen im Z1S1-Format angegeben werden, Beispiels `"R3C5"`Weise. Wenn _pxDefText_ ein Wert oder eine Formel ist, ist es nicht erforderlich, das Gleichheitszeichen einzuschließen, das **** in der Spalte bezieht sich im Dialogfeld **Name Manager** angezeigt wird. Wenn mehrere Namen für _pxDefText_vorhanden sind, gibt **xlfGetDef** den Vornamen zurück. Wenn kein Name mit _pxDefText_überein **** stimmt, gibt `#NAME?` xlfGetDef den Fehlerwert zurück. 
   
-_pxDocumentText_ (**XltypeStr**)
+_pxDocumentText_ (**xltypeStr**)
   
-Gibt das Blatt an diesem _PxDefText_ ist auf. Wenn _PxDocumentText_ ausgelassen wird, wird angenommen, dass das aktive Blatt sein. 
+Gibt das Blatt an, in dem sich _pxDefText_ befindet. Wenn _pxDocumentText_ ausgelassen wird, wird davon ausgegangen, dass es sich um das aktive Blatt handelt. 
   
-_pxTypeNum_ (**XltypeNum**)
+_pxTypeNum_ (**xltypeNum**)
   
-Eine Zahl zwischen 1 und 3 angeben, welche Arten von Namen zurückgegeben werden.
+Eine Zahl zwischen 1 und 3, die angibt, welche Typen von Namen zurückgegeben werden.
   
 |**_pxTypeNum_**|**gibt zurück**|
 |:-----|:-----|
-|1 (oder Auslassung)  <br/> |Normale Namen.  <br/> |
-|2  <br/> |Ausgeblendete Namen.  <br/> |
+|1 (oder Auslassung)  <br/> |Nur normale Namen.  <br/> |
+|2  <br/> |Nur versteckte Namen.  <br/> |
 |3  <br/> |Alle Namen.  <br/> |
    
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
- _pxRes_ (**XltypeStr** oder **XltypeErr**)
+ _pxRes_ (**xltypeStr** oder **xltypeErr**)
   
-Gibt den Namen der angegebenen Rollendefinition zugeordnet.
+Gibt den Namen zurück, der der angegebenen Definition zugeordnet ist.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die folgende Tabelle enthält Beispiele für vier durch einen Aufruf von **XlfGetDef** mit den angegebenen Argumenten zurückgegebenen Werte sind. 
+Die folgende Tabelle enthält vier Beispiele für die Werte, die von einem Aufruf von **xlfGetDef** mit den angegebenen Argumenten zurückgegeben werden. 
   
-|**In Excel definierten Namen**|**_pxDefText_**|**_pxDocumentText_**|**_pxTypeNum_**|**Zurückgegebener Wert**|
+|**In Excel definierter Name**|**_pxDefText_**|**_pxDocumentText_**|**_pxTypeNum_**|**ZurückgeGebener Wert**|
 |:-----|:-----|:-----|:-----|:-----|
-|Im angegebene Bereich Tabelle4 heißt Sales.  <br/> |"R2C2:R9C6"  <br/> |"Sheet4"  <br/> |\<ausgelassen\>  <br/> |"Sales"  <br/> |
-|Der Wert 100 in Tabelle4 wird als Konstante definiert.  <br/> |"100"  <br/> |"Sheet4"  <br/> |\<ausgelassen\>  <br/> |"Constant"  <br/> |
-|Die angegebene Formel in Tabelle4 heißt SumTotal.  <br/> |"SUM(R1C1:R10C1)"  <br/> |"Sheet4"  <br/> |\<ausgelassen\>  <br/> |"SumTotal"  <br/> |
-|3 ist definiert als die ausgeblendeten Namen Leistungsindikator im aktiven Blatt.  <br/> |"3"  <br/> |\<ausgelassen\>  <br/> |2  <br/> |"Counter"  <br/> |
+|Der angegebene Bereich in Sheet4 heißt Sales.  <br/> |"R2C2: R9C6"  <br/> |Sheet4  <br/> |\<weggelassen\>  <br/> |Sales  <br/> |
+|Der Wert 100 in Sheet4 ist als Konstante definiert.  <br/> |"100"  <br/> |Sheet4  <br/> |\<weggelassen\>  <br/> |Konstante  <br/> |
+|Die angegebene Formel in Sheet4 hat den Namen SumTotal.  <br/> |"SUM (Z1S1: R10C1)"  <br/> |Sheet4  <br/> |\<weggelassen\>  <br/> |SumTotal  <br/> |
+|3 wird als ausgeblendeter namens Zähler im aktiven Blatt definiert.  <br/> |3  <br/> |\<weggelassen\>  <br/> |2  <br/> |Zähler  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

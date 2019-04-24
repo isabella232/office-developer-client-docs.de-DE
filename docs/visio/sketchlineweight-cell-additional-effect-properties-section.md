@@ -1,26 +1,26 @@
 ---
-title: SketchLineWeight Cell (Additional Effect Properties Section)
+title: SketchLineWeight Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6cb838be-1d6d-48e1-8e9e-bd126f0c2385
-description: Bestimmt die zusätzliche Stärke als Ergebnis einer Skizze Wirkung in Punkt im Bereich von 0 bis 50 Linienbreite hinzugefügt. Die Stärke der Linie ein Shape wird als der Wert der Zelle erhöht SketchLineWeight erhöht.
-ms.openlocfilehash: 9ab99faab907ddf0d944abbeea39672906b4c03d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die zusätzliche Dicke, die der Linienstärke als Ergebnis eines Skizzen Effekts in Punkt zwischen 0 und 50 hinzugefügt wurde. Die Stärke der Linien einer Form nimmt zu, wenn sich der Wert der SketchLineWeight-Zelle erhöht.
+ms.openlocfilehash: 0ee71bbaec59f5c79b72314b08478f8028b4e0ba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315120"
 ---
-# <a name="sketchlineweight-cell-additional-effect-properties-section"></a>SketchLineWeight Cell (Additional Effect Properties Section)
+# <a name="sketchlineweight-cell-additional-effect-properties-section"></a>SketchLineWeight Cell (Additional Effect Properties section)
 
-Bestimmt die zusätzliche Stärke als Ergebnis einer Skizze Wirkung in Punkt im Bereich von 0 bis 50 Linienbreite hinzugefügt. Die Stärke der Linie ein Shape erhöht als Wert des **SketchLineWeight** Zelle erhöht. 
+Bestimmt die zusätzliche Dicke, die der Linienstärke als Ergebnis eines Skizzen Effekts in Punkt zwischen 0 und 50 hinzugefügt wurde. Die Stärke der Linien einer Form nimmt zu, wenn sich der Wert der **SketchLineWeight** -Zelle erhöht. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **SketchLineWeight** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **SketchLineWeight** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

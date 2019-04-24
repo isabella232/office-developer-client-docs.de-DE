@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e9059739-51b4-4574-bd0f-709eb5144ae7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ce0e109aad52bfc4d7f4f55abfe1001d76276f64
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 172cbf9478d3206742df61d211051594e69ab173
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321777"
 ---
 # <a name="imapiform--iunknown"></a>IMAPIForm : IUnknown
 
@@ -25,14 +25,14 @@ ms.locfileid: "22587131"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht das Formular Viewer Formular anzeigen Kontexten und Formular-Benachrichtigung zum Formular Verben ausführen und Herunterfahren Formulare entwickelt.
+Ermöglicht es den Formular Viewern, mit Formular Ansichts Kontexten und Formular Benachrichtigungen zu arbeiten, Formular Verben auszuführen und Formulare herunterzufahren.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Formular-Objekte  <br/> |
-|Implementiert von:  <br/> |Formular-Servern  <br/> |
-|Aufgerufen von:  <br/> |Formular-Viewer  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Formularobjekte  <br/> |
+|Implementiert von:  <br/> |Formularserver  <br/> |
+|Aufgerufen von:  <br/> |Formular Betrachter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIForm  <br/> |
 |Zeigertyp:  <br/> |LPMAPIFORM  <br/> |
    
@@ -40,13 +40,13 @@ Ermöglicht das Formular Viewer Formular anzeigen Kontexten und Formular-Benachr
 
 |||
 |:-----|:-----|
-|[SetViewContext](imapiform-setviewcontext.md) <br/> |Stellt ein Ansichtskontext für das Formular her.  <br/> |
-|[GetViewContext](imapiform-getviewcontext.md) <br/> |Gibt den aktuellen Ansichtskontext für das Formular zurück.  <br/> |
+|[SetViewcontext](imapiform-setviewcontext.md) <br/> |Richtet einen Ansichtskontext für das Formular ein.  <br/> |
+|[GetViewcontext](imapiform-getviewcontext.md) <br/> |Gibt den aktuellen Ansichtskontext für das Formular zurück.  <br/> |
 |[ShutdownForm](imapiform-shutdownform.md) <br/> |Schließt das Formular.  <br/> |
-|[DoVerb](imapiform-doverb.md) <br/> |Fordert, dass das Formular ausführen, was es Aufgaben ein bestimmtes Verb zugeordnet.  <br/> |
-|[Beraten](imapiform-advise.md) <br/> |Registriert einen Formular-Viewer für Benachrichtigungen über Ereignisse, die Einfluss auf das Formular.  <br/> |
-|[Heben Sie diesen Vorgang](imapiform-unadvise.md) <br/> |Eine Registrierung für Benachrichtigungen mit einem Formular Viewer zuvor durch Aufrufen der **Advise**hergestellt werden abgebrochen.  <br/> |
-|[GetLastError](imapiform-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler auftritt, der das Form-Objekt enthält.  <br/> |
+|[DoVerb](imapiform-doverb.md) <br/> |Fordert, dass das Formular alle Aufgaben ausführt, die es einem bestimmten Verb zuordnet.  <br/> |
+|[Beraten](imapiform-advise.md) <br/> |Registriert einen Formular-Viewer für Benachrichtigungen zu Ereignissen, die das Formular betreffen.  <br/> |
+|[Unadvise](imapiform-unadvise.md) <br/> |Bricht eine Registrierung für Benachrichtigungen mit einem Formular Betrachter ab, der zuvor durch Aufrufen von **Advise**eingerichtet wurde.  <br/> |
+|[Getlasterroraufzurufen](imapiform-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält, der für das Form-Objekt auftritt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

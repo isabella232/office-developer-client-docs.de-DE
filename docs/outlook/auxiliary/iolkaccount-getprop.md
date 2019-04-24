@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5725eb52-3a78-897d-f9e3-c5a494fb78c0
-description: Ruft den Wert der Eigenschaft angegebene Konto.
-ms.openlocfilehash: 2c0756f416a209d37eff2209a82c298837f85f3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft den Wert der angegebenen Account-Eigenschaft ab.
+ms.openlocfilehash: d24df8cfa9d54bee4614c1f31e12268748b8c986
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321234"
 ---
 # <a name="iolkaccountgetprop"></a>IOlkAccount::GetProp
 
-Ruft den Wert der Eigenschaft angegebene Konto.
+Ruft den Wert der angegebenen Account-Eigenschaft ab.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 ```cpp
 HRESULT IOlkAccount::GetProp(  
@@ -33,23 +33,23 @@ ACCT_VARIANT *pVar
 
 _dwProp_
   
-> [in] Die Eigenschaftstag der Konto-Eigenschaft abrufen.
+> in Das Property-Tag der abzurufenden Account-Eigenschaft.
     
 _pVar_
   
-> [out] Der Wert der angegebenen Eigenschaft.
+> Out Der Wert der angegebenen Eigenschaft.
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |Die Eigenschaft ist für das angegebene Konto nicht gefunden.  <br/> |
-|E_INVALIDARG  <br/> |Ein ungültiger Eigenschafts-Tag es wurde angegeben.  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |Die Eigenschaft wurde für das angegebene Konto nicht gefunden.  <br/> |
+|E_INVALIDARG  <br/> |Es wurde ein ungültiges Property-Tag angegeben.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Nachdem diese Methode zurückgegeben, wenn der Wert der Eigenschaft Konto einen Typ Binär oder eine Zeichenfolge handelt, müssen Sie *pVar* mithilfe von [IOlkAccount::FreeMemory](iolkaccount-freememory.md)freigeben.
+Nachdem diese Methode zurückgegeben hat, müssen Sie, wenn der Wert der Account-Eigenschaft ein binary-oder String-Typ ist, *pVar* mit [IOlkAccount:: freier Arbeitsspeicher](iolkaccount-freememory.md)freigeben.
   
 ## <a name="see-also"></a>Siehe auch
 

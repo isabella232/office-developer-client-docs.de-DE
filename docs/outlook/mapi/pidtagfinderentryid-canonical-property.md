@@ -1,5 +1,5 @@
 ---
-title: PidTagFinderEntryId (kanonische Eigenschaft)
+title: Kanonische Pidtagfinderentryid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a3895f90-7561-4b41-92af-ecc8614e4211
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2ec8b776bddc21d356d6e803f56f6f26738a9747
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 99c94a5afbb6a5011f17443b3d6305be261c9b1d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316324"
 ---
-# <a name="pidtagfinderentryid-canonical-property"></a>PidTagFinderEntryId (kanonische Eigenschaft)
+# <a name="pidtagfinderentryid-canonical-property"></a>Kanonische Pidtagfinderentryid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID für den Ordner, in dem die Suchergebnisse in der Regel erstellt werden.
+Enthält die Eintrags-ID für den Ordner, in dem die Suchergebnisse normalerweise erstellt werden.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält die Eintrags-ID für den Ordner, in dem die Suchergebnisse in der Regel
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-In dieser Eigenschaft enthaltenen Eintrags-ID hat das gleiche Format wie die [ENTRYID](entryid.md) -Struktur. 
+Die Eintrags-ID, die in dieser Eigenschaft enthalten ist, [](entryid.md) hat das gleiche Format wie die Eintragsstruktur. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

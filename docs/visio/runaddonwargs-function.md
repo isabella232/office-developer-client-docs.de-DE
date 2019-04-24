@@ -8,32 +8,32 @@ f1_keywords:
 - Vis_DSS.chm82251493
 localization_priority: Normal
 ms.assetid: c154413f-c366-a66b-94e3-ed71ad23f325
-description: Führt String aus und übergibt die Befehlszeilenargumente für das Programm als Zeichenfolge.
-ms.openlocfilehash: 7bc05a0cbf32550d1e39bee39bec83101882cf19
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Führt eine Zeichenfolge aus und übergibt die Befehlszeilenargumente als Zeichenfolge an das Programm.
+ms.openlocfilehash: bc05a4480438875c348373059f57bf04f82c9eca
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318949"
 ---
 # <a name="runaddonwargs-function"></a>RUNADDONWARGS Function
 
-Führt _String_ aus und übergibt die Befehlszeile _Argumente_ an die Anwendung als Zeichenfolge. 
+Führt eine _Zeichenfolge_ aus und übergibt die Befehlszeilen _Argumente_ als Zeichenfolge an das Programm. 
   
 ## <a name="syntax"></a>Syntax
 
-RUNADDONWARGS ("** *Zeichenfolge* **","** *Argumente* **") 
+RUNADDONWARGS ("* * *String* * *", "* * *Argumente* * *") 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _string_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name eines Add-Ons.  <br/> |
+| _Zeichenfolge_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name eines Add-Ons.  <br/> |
 | _Argumente_ <br/> |Erforderlich  <br/> |**String** <br/> |Die an das Programm zu übergebenden Argumente.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-In der Praxis sollten für _Arguments_ 50 oder weniger Zeichen werden. Verwenden der RUNADDONWARGS-Funktion ein Programm, wie ein Add-on, auf eine Zelle, eine Aktion oder Ereignisse Zelle einzubinden. 
+In der Praxis sollten _argumente_ 50 oder weniger Zeichen sein. Verwenden Sie die RUNADDONWARGS-Funktion, um ein Programm wie ein Add-on an eine Zelle zu binden, beispielsweise an eine Aktions-oder Ereignis Zelle. 
   
 Mit der RUNADDONWARGS-Funktion können nur Add-Ons ausgeführt werden, die Elemente der **Addons**-Auflistung der Anwendung sind. Add-Ons in dieser Auflistung müssen EXE- oder VSL-Dateien sein, für die Folgendes gilt: 
   
@@ -47,7 +47,7 @@ In früheren Versionen von Visio wird diese Funktion in der Form _RUNADDONWARGS 
   
 ## <a name="example"></a>Beispiel
 
-RUNADDONWARGS ("GRAPHMKR. EXE-Datei"," / GraphMaker = Stack ") 
+RUNADDONWARGS ("GRAPHMKR. EXE ","/GraphMaker = Stack ") 
   
 Führt das Add-On Graphmkr.exe aus und übergibt diesem das Argument /GraphMaker=Stack. 
   

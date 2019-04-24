@@ -1,5 +1,5 @@
 ---
-title: PidTagFormClassId (kanonische Eigenschaft)
+title: Kanonische Pidtagformclassid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ca2bbfab-6f4f-4a9a-b3ef-61d7c41e4767
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9c3260e51d9a52de13a187110eb50334c601fc86
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7e3ee8abcf15c8b7697a29e844d838891fe22310
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316261"
 ---
-# <a name="pidtagformclassid-canonical-property"></a>PidTagFormClassId (kanonische Eigenschaft)
+# <a name="pidtagformclassid-canonical-property"></a>Kanonische Pidtagformclassid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den 128-Bit-Object Linking and Embedding (OLE) global eindeutigen Bezeichner (GUID) eines Formulars an. 
+Enthält den global eindeutigen Bezeichner (GUID) eines Formulars mit 128-Bit-Objektverknüpfung und-Einbettung (OLE). 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_FORM_CLSID  <br/> |
 |Kennung:  <br/> |0x3302  <br/> |
 |Datentyp:  <br/> |PT_CLSID  <br/> |
-|Bereich:  <br/> |Allgemeine MAPI  <br/> |
+|Bereich:  <br/> |MAPI allgemein  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die [MAPIUID](mapiuid.md) -Datenstruktur enthält die Definition des eindeutigen Bezeichners. 
+Die [MAPIUID](mapiuid.md) -Struktur enthält die Definition des eindeutigen Bezeichners. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

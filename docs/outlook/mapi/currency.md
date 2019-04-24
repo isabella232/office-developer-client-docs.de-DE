@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: cffc05a0-95e4-4b9f-bf8f-c4272a75afa8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b5a2cd09942559167300d8a921987864b8c5e48f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: dccb6b19af72d0f748a3a513b7f3d78904ebc789
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315134"
 ---
 # <a name="currency"></a>CURRENCY
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine 64-Bit-Ganzzahl, die einen Währungswert darstellt. 
+Enthält eine signierte 64-Bit-Ganzzahl, die einen Währungswert darstellt. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct tagCY
@@ -44,17 +44,17 @@ typedef struct tagCY
 
  **Lo**
   
-> Niederwertige 32 Bit der Währungswert. 
+> Low-Order 32 Bits des Currency-Werts. 
     
  **Hallo**
   
-> Obere 32 Bit der Währungswert.
+> High-Order 32 Bits des Currency-Werts.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **Währung** -Struktur ist eine skalierte Ganzzahl Darstellung einer ganzen Zahl mit vier Stellen rechts vom Dezimalkomma. Beispielsweise ist der gespeicherter Wert 327500, ausgelegt werden als einen Währungswert des 32.7500 darstellt. 
+Die **Währungs** Struktur ist eine skalierte ganzzahlige Darstellung einer Dezimalzahl mit vier Ziffern rechts vom Dezimaltrennzeichen. Beispielsweise ist ein gespeicherter Wert von 327500 so auszulegen, dass er einen Währungswert von 32,7500 darstellt. 
   
-Die **Währung** Struktur wird verwendet, um eine Eigenschaft vom Typ PT_CURRENCY beschrieben. Informationen zu Eigenschaftstypen finden Sie unter [MAPI-Eigenschaft Type Overview](mapi-property-type-overview.md).
+Die **Currency** -Struktur dient zur Beschreibung einer Eigenschaft vom Typ PT_CURRENCY. Weitere Informationen zu Eigenschaftstypen finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md).
   
 ## <a name="see-also"></a>Siehe auch
 

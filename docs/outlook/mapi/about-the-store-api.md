@@ -1,29 +1,29 @@
 ---
-title: Informationen zur Store-API
+title: Informationen zur Speicher-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 166a8e60-e09d-7473-b61b-35d78a863192
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: d72df30eab5fde4288b5feba1d7045da05117bde
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: fb9b0a4c8ac1a2f41a0fddcd746dba5fc4bae1a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321749"
 ---
-# <a name="about-the-store-api"></a>Informationen zur Store-API
+# <a name="about-the-store-api"></a>Informationen zur Speicher-API
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die speichern-API bietet verschiedene Speicherfunktionalität zum Speichern von Anbietern. Es bietet die folgenden Definitionen Datentypen, Eigenschaften und Schnittstellen.
+Die Informationsspeicher-API bietet Speicheranbietern verschiedene Speicherfunktionen. Es bietet die folgenden Definitionen, Datentypen, Eigenschaften und Schnittstellen.
   
 Definitionen:
   
-- [Konstanten für den API-Speicher](mapi-constants.md)
+- [Konstanten für die Speicher-API](mapi-constants.md)
     
 Datentypen:
   
@@ -37,16 +37,16 @@ Benannte Eigenschaften:
     
 - **[CrawlSourceSupportMask](crawlsourcesupportmask.md)**
     
-- **[Ordnergröße Server anzeigen](display-server-folder-sizes-property.md)**
+- **[Größe des Anzeige Server Ordners](display-server-folder-sizes-property.md)**
     
-- **[Ausblenden der Besprechung Update-Option](hide-meeting-update-option-property.md)**
+- **[Option "Besprechungs Update ausblenden"](hide-meeting-update-option-property.md)**
     
-- **[Stellen Sie Store Typ Private](make-store-type-private-property.md)**
+- **[Speichertyp als privat festlegen](make-store-type-private-property.md)**
     
 - **[NoFolderScan](nofolderscan.md)**
     
 > [!NOTE]
-> Anbieter, die nicht über die Funktionalität dieser benannten Eigenschaften erfordern können einfach ignoriert werden sollen und nicht Support in der **IMAPIProp** -Schnittstelle implementieren. Da diese Eigenschaften in Microsoft Outlook 2003 Service Pack 1 beginnende verfügbar sind, hat einen Speicher in einer früheren Version von Microsoft Outlook hinzugefügt keine Auswirkung. Wenn sie nicht vorhanden sind oder deren Wert **false**ist, werden sie ignoriert. 
+> Speicheranbieter, die keine der von diesen benannten Eigenschaften angebotenen Funktionen erfordern, können diese einfach ignorieren und keine Unterstützung in der **IMAPIProp** -Schnittstelle implementieren. Da diese Eigenschaften ab Microsoft Outlook 2003 Service Pack 1 bereitgestellt werden, hat das Hinzufügen zu einem Speicher in einer früheren Version von Microsoft Outlook keine Auswirkungen. Sie werden ignoriert, wenn Sie nicht vorhanden sind oder ihr Wert **false**ist. 
   
 Eigenschaften:
   
@@ -66,12 +66,12 @@ Schnittstellen:
     
 - **[IProxyStoreObject](iproxystoreobject.md)**
     
-## <a name="registering-stores-for-indexing"></a>Registrieren Speicher für die Indizierung
+## <a name="registering-stores-for-indexing"></a>Registrieren von Speichern für die Indizierung
 
-Der MAPI-Protokollhandler überprüft die Windows-Registrierung für Geschäfte, die indiziert werden soll für die Suche. Speicheranbieter, die indiziert werden soll, müssen in der Windows-Registrierung registriert werden. Weitere Informationen zum Registrieren von Anbietern für die Indizierung in Outlook 2013 oder Outlook 2010 finden Sie unter [Informationen zum Registrieren-Speicher für die Indizierung](about-registering-stores-for-indexing.md).
+Der MAPI-Protokoll Handler überprüft die Windows-Registrierung auf Speicher, die für Suchzwecke indiziert werden sollen. Speicheranbieter, die indiziert werden sollen, müssen in der Windows-Registrierung registriert werden. Weitere Informationen zum Registrieren von Speicheranbietern für die Indizierung in Outlook 2013 oder Outlook 2010 finden Sie unter Informationen [zum Registrieren](about-registering-stores-for-indexing.md)von Speicher für die Indizierung.
   
-## <a name="indexing-stores"></a>Speichert die Indizierung
+## <a name="indexing-stores"></a>Indexspeicher
 
-MAPI-Anbieter können wahlweise den MAPI-Protokollhandler zum Durchforsten und Indizieren von Nachrichten im Speicher zulassen oder Senden von Benachrichtigungen an die Indizierung, nur, wenn Nachrichten indiziert werden kann. Weitere Informationen zu Benachrichtigungen-basierte Indizierung finden Sie unter [About Notification-Based Store indizieren](about-notification-based-store-indexing.md).
+MAPI-Speicheranbieter können festlegen, dass der MAPI-Protokoll Handler Nachrichten im Speicher Crawlen und indizieren soll, oder Benachrichtigungen an den Indexer senden, wenn Nachrichten indiziert werden sollen. Weitere Informationen zur Benachrichtigungen-basierten Indizierung finden Sie unter [Informationen zu Benachrichtigungs basiertEr Speicher Indizierung](about-notification-based-store-indexing.md).
   
 

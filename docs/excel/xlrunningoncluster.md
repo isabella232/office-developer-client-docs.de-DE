@@ -9,18 +9,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 7662f255-4184-4af0-97f5-9a89347a201a
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: f42ccbeb94e1fc6b6cf880f1b32ee1bfeb24997e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f5c630c73899b07e2727a7d42b18eb1891797bab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310101"
 ---
 # <a name="xlrunningoncluster"></a>xlRunningOnCluster
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt einen Wert, der angibt, ob die benutzerdefinierte Funktion in einem Cluster ausgeführt wird. 
+Gibt einen Wert zurück, der angibt, ob die benutzerdefinierte Funktion in einem Cluster läuft. 
   
 ```cpp
 Excel12(xlRunningOnCluster, LPXLOPER12 pxRes, 0);
@@ -30,13 +30,13 @@ Excel12(xlRunningOnCluster, LPXLOPER12 pxRes, 0);
 
 Diese Funktion hat keine Argumente.
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Wenn die Funktion in einer Excel-Prozess ausgeführt wird, zurückgegeben in eine **XLOPER12** des Typs **vom Typ XlTypeInt**0. Wenn die Funktion in einem Cluster ausgeführt wird, wird der Rückgabetyp und der Wert von Cluster-Connector-Anbieter bestimmt.
+Wenn die Funktion in einem Excel-Prozess ausgeführt wird, gibt 0 in einem **XLOPER12** vom Typ **xlTypeInt**zurück. Wenn die Funktion in einem Cluster läuft, wird der Rückgabetyp und der Wert vom Cluster-Connector-Anbieter bestimmt.
   
 ## <a name="requirements"></a>Anforderungen
 
-Diese Funktion ist in der Headerdatei Xlcall.h definiert.
+Diese Funktion ist in der Headerdatei xlcall. h definiert.
   
 ## <a name="see-also"></a>Siehe auch
 

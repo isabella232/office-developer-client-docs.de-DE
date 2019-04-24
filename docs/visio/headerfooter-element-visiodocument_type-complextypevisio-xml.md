@@ -1,31 +1,31 @@
 ---
-title: HeaderFooter-Element (VisioDocument_Type ComplexType) ("Visio XML")
+title: HeaderFooter-Element (VisioDocument_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 026926cf-3d0b-984c-897e-9d28346b7ba7
-description: Enthält Elemente für Kopf- und Fußzeile eines Dokuments.
+description: Enthält Elemente für die Kopf-und Fußzeile eines Dokuments.
 ms.openlocfilehash: eabb19100c4b37a546c0a271cfba5a0c865a7e83
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319026"
 ---
-# <a name="headerfooter-element-visiodocumenttype-complextype-visio-xml"></a>HeaderFooter-Element (VisioDocument_Type ComplexType) ("Visio XML")
+# <a name="headerfooter-element-visiodocumenttype-complextype-visio-xml"></a>HeaderFooter-Element (VisioDocument_Type complexType) (' Visio XML ')
 
-Enthält Elemente für Kopf- und Fußzeile eines Dokuments.
+Enthält Elemente für die Kopf-und Fußzeile eines Dokuments.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält Elemente für Kopf- und Fußzeile eines Dokuments.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,20 +48,20 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[FooterCenter](footercenter-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterCenter_Type](footercenter_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die in der Mitte der Fußzeile eines Dokuments angezeigt wird.  <br/> |
+|[FooterCenter](footercenter-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterCenter_Type](footercenter_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die im mittleren Bereich der Fußzeile eines Dokuments angezeigt wird.  <br/> |
 |[FooterLeft](footerleft-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterLeft_Type](footerleft_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die im linken Bereich der Fußzeile eines Dokuments angezeigt wird.  <br/> |
 |[FooterMargin](footermargin-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterMargin_Type](footermargin_type-complextypevisio-xml.md) <br/> |Gibt den Rand der Fußzeile eines Dokuments an.  <br/> |
-|[FooterRight](footerright-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterRight_Type](footerright_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die im rechten Bereich der Fußzeile eines Dokuments angezeigt wird.  <br/> |
+|[FooterRight](footerright-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterRight_Type](footerright_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die im rechten Teil der Fußzeile eines Dokuments angezeigt wird.  <br/> |
 |[HeaderCenter](headercenter-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderCenter_Type](headercenter_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die im mittleren Bereich der Kopfzeile eines Dokuments angezeigt wird.  <br/> |
-|[HeaderFooterFont](headerfooterfont-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderFooterFont_Type](headerfooterfont_type-complextypevisio-xml.md) <br/> |Gibt die Schriftart für den Text Kopf- und Fußzeile verwendet.  <br/> |
+|[HeaderFooterFont](headerfooterfont-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderFooterFont_Type](headerfooterfont_type-complextypevisio-xml.md) <br/> |Gibt die Schriftart an, die für den Text in der Kopf- und Fußzeile verwendet wird.  <br/> |
 |[HeaderLeft](headerleft-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderLeft_Type](headerleft_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die im linken Bereich der Kopfzeile eines Dokuments angezeigt wird.  <br/> |
-|[HeaderMargin](headermargin-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderMargin_Type](headermargin_type-complextypevisio-xml.md) <br/> |Gibt den Rand der Kopfzeile des Dokuments an.  <br/> |
+|[HeaderMargin](headermargin-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderMargin_Type](headermargin_type-complextypevisio-xml.md) <br/> |Gibt den Rand der Kopfzeile eines Dokuments an.  <br/> |
 |[HeaderRight](headerright-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderRight_Type](headerright_type-complextypevisio-xml.md) <br/> |Enthält die Textzeichenfolge, die im rechten Bereich der Kopfzeile eines Dokuments angezeigt wird.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|HeaderFooterColor  <br/> |XSD: String  <br/> |Optional  <br/> |Der RGB-Wert der Textfarbe für die Kopf- und Fußzeile in hexadezimaler Schreibweise; beispielsweise #rrggbb.  <br/> |Werte des Typs xsd: String.  <br/> |
+|HeaderFooterColor  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der RGB-Wert der Textfarbe für die Kopf-und Fußzeile in hexadezimaler Notation; beispielsweise #rrggbb.  <br/> |Werte des XSD: String-Typs.  <br/> |
    
 

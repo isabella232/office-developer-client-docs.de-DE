@@ -7,24 +7,24 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: d83e39f0-b259-4c33-8f3e-e03e94c2403d
 description: In diesem Thema werden die Schnittstellen, die Sie zum programmgesteuerten Anpassung des Dialogfelds Quick Ablegen in OneNote 2013 verwenden können.
-ms.openlocfilehash: d2647ed4d7b9f4487c033260eba8df1e4281c6ef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dd6b28ae6cb2acb007bae26ea661facaf1f8d4be
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317098"
 ---
 # <a name="quick-filing-dialog-box-interfaces-onenote"></a>Für schnelle Ablage Dialogfeld Feld Schnittstellen (OneNote 2013)
 
 In diesem Thema werden die Schnittstellen, die Sie zum programmgesteuerten Anpassung des Dialogfelds Quick Ablegen in OneNote 2013 verwenden können.
   
-## <a name="quick-filing-dialog-box"></a>Dialogfeld "Schnellablage"
+## <a name="quick-filing-dialog-box"></a>Dialogfeld "schnell Ablage"
 
 Das Dialogfeld Quick Ablegen in OneNote 2013 ist anpassbare Dialogfeld, in dem Benutzer eine Position in der Hierarchiestruktur OneNote auswählen kann. Auswählbar Speicherorte enthalten Notebooks, Abschnittsgruppen, Abschnitte, Seiten und Unterseiten. Das Dialogfeld wird sowohl in der OneNote-Anwendung und externen Anwendungen über die OneNote 2013 API verwendet. Abbildung 1 zeigt das Dialogfeld Quick Ablegen im Standardzustand.
   
 **Abbildung 1. Dialogfeld für schnelle Ablage ohne Anpassungen**
 
-![Dialogfeld ohne Anpassungen schnell ablegen] (media/ON15Con_quick_filing_dialog.jpg "Dialogfeld ohne Anpassungen schnell ablegen")
+![Dialogfeld "schnell Ablage" ohne Anpassungen] (media/ON15Con_quick_filing_dialog.jpg "Dialogfeld \"schnell Ablage\" ohne Anpassungen")
   
 Innerhalb des Dialogfelds können Benutzer die Hierarchie alle Notizbücher zum Suchen für bestimmte Standorte oder die OneNote-Struktur durch Eingabe in das Textfeld Suchen navigieren. Aspekten im Dialogfeld angepasst werden kann, gehören Titel, Beschreibung, letzte Liste "Suchergebnisse", das Kontrollkästchen Text und Zustand, Strukturtiefe, Schaltflächen und auswählbar Speicherorttypen.
 
@@ -37,7 +37,7 @@ Diese Schnittstelle ermöglicht es dem Benutzer anpassen, und führen Sie das Di
   
 **Eigenschaften**
 
-|**Name**|**Typ**|**Description**|
+|**Name**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**Title** <br/> |string  <br/> |Dient zum Abrufen oder wird der Titeltext, der angezeigt wird in der Titelleiste des Fensters Feld Dialogfeld.  <br/> |
 |**Description** <br/> |string  <br/> |Dient zum Abrufen oder Festlegen der Textbeschreibung und was Sie wählen den Benutzer auffordern. Dieser Wert kann mehrere Zeilen Text sein.  <br/> |
@@ -58,7 +58,7 @@ Diese Schnittstelle ermöglicht es dem Benutzer anpassen, und führen Sie das Di
 |:-----|:-----|
 |**Beschreibung** <br/> |Legt fest, welche Ergebnisliste der zuletzt verwendeten im Dialogfeld Quick ablegen angezeigt wird, und gibt an, ob einige besondere Einreichung Speicherorten in der Liste enthalten. Benutzer können eine Ergebnisliste der zuletzt verwendeten aus der [RecentResultType](enumerations-onenote-developer-reference.md#odc_RecentResultType) -Enumeration auswählen. Benutzer können auch die folgenden Optionen zur Liste hinzufügen: aktuellen Abschnitt, die aktuelle Seite oder abgelegte Notizen. Wenn **RecentResultType.rrtNone** ausgewählt ist, wird keine Ergebnisliste der zuletzt verwendeten angezeigt.  <br/> |
 |**Syntax** <br/> | `HRESULT SetRecentResults (`<br/>`[in]RecentResultType recentResults,`<br/>`[in]VARIANT_BOOL fShowCurrentSection,`<br/>`[in]VARIANT_BOOL fShowCurrentPage,`<br/>`[in]VARIANT_BOOL fShowUnfiledNotes);` <br/> |
-|**Parameter** <br/> | _recentResults_ &ndash; Ein Objekt vom Typ **RecentResultType** , der angibt, welche Ergebnisliste der zuletzt verwendeten, falls vorhanden, angezeigt werden soll. Wenn **rrtNone** ausgewählt ist, wird keine Ergebnisliste der zuletzt verwendeten im Dialogfeld angezeigt.<br/><br/>  _fShowCurrentSection_ &ndash; Ein boolescher Wert, der angibt, ob im aktuelle Abschnitt in der Ergebnisliste der zuletzt geöffneten enthalten sein sollen.<br/><br/>  _fShowCurrentPage_ &ndash; Ein boolescher Wert, der angibt, ob die aktuelle Seite in der Ergebnisliste der zuletzt geöffneten enthalten sein sollen.<br/><br/>  _fShowUnfiledNotes_ &ndash; Ein boolescher Wert, der angibt, ob OneNote in der Ergebnisliste der zuletzt geöffneten enthalten sein sollen.  <br/> |
+|**Parameter** <br/> | _recentResults_ &ndash; Ein Objekt vom Typ **RecentResultType** , das angibt, welche Liste der zuletzt geöffneten Ergebnisse angezeigt werden soll. Wenn **rrtNone** ausgewählt ist, wird keine Ergebnisliste der zuletzt verwendeten im Dialogfeld angezeigt.<br/><br/>  _fShowCurrentSection_ &ndash; Ein boolescher Wert, der angibt, ob der aktuelle Abschnitt in der Liste der zuletzt verwendeten Ergebnisse enthalten sein soll.<br/><br/>  _fShowCurrentPage_ &ndash; Ein boolescher Wert, der angibt, ob die aktuelle Seite in der Liste der zuletzt verwendeten Ergebnisse enthalten sein soll.<br/><br/>  _fShowUnfiledNotes_ &ndash; Ein boolescher Wert, der angibt, ob der Abschnitt nicht gegebene Notizen in der Liste der zuletzt verwendeten Ergebnisse enthalten sein soll.  <br/> |
    
 > [!NOTE]
 > [!HINWEIS] Wenn Sie ein speziellen Einreichung Speicherort mithilfe einer der Schaltflächen im Dialogfeld aktiviert werden kann, wird es nicht in der Liste angezeigt. Wenn kein Element ausgewählt werden in der Ergebnisliste der zuletzt geöffneten gefunden wird, wird keine Ergebnisliste der zuletzt verwendeten angezeigt. 
@@ -87,7 +87,7 @@ Das folgende Beispiel verwendet die **SetRecentResults** -Methode des aktuellen 
 |:-----|:-----|
 |**Beschreibung** <br/> |Ermöglicht Benutzern das Hinzufügen und Schaltflächen im Dialogfeld anpassen. Benutzer können Geben Sie den Text auf die Schaltflächen und welche Elemente der OneNote-Hierarchie von jede Schaltfläche ausgewählt werden können.  <br/> |
 |**Syntax** <br/> | `HRESULT AddButton (`<br/>`[in]BSTR bstrText,`<br/>`[in]HierarchyElement allowedElements,`<br/>`[in]HierarchyElement allowedReadOnlyElements,`<br/>`[in]VARIANT_BOOL fDefault);` <br/> |
-|**Parameter** <br/> | _bstrText_ &ndash; Eine Zeichenfolge, die den Text angezeigt wird, auf die Schaltfläche angibt. Um die Standardschaltfläche **OK** anzupassen, übergeben Sie einen null-Wert als **bstrText**.  <br/><br/>_allowedElements_ &ndash; Ein **HierarchyElement** , der angibt, welche Elemente nicht schreibgeschützte OneNote-Hierarchie einen Benutzer mithilfe der Schaltfläche auswählen. Für die Auswahl mehrere Elemente, sollte der Benutzer für alle Uint äquivalente **HierarchyElement** Typen als eine **HierarchyElement**zulässig Operators **OR** übergeben.<br/><br/>  _allowedReadOnlyElements_ &ndash; Ein **HierarchyElement** , der angibt, welche Elemente der OneNote-Hierarchie schreibgeschützt einen Benutzer mithilfe der Schaltfläche auswählen. Für die Auswahl mehrere Elemente, sollte der Benutzer nach allen Werten **Uint** -Entsprechungen **HierarchyElement** Typen als eine **HierarchyElement**zulässig Operators **OR** übergeben.<br/><br/>  _fDefault_ &ndash; Ein Boolean-Wert, der angibt, ob diese Schaltfläche die Standardschaltfläche sein soll. Wenn mehrere Schaltflächen als Standard festgelegt sind, wird die letzte angegebene Schaltfläche die Standardschaltfläche.  <br/> |
+|**Parameter** <br/> | _bstrText_ &ndash; Eine Zeichenfolge, die den Text angibt, der auf der Schaltfläche angezeigt werden soll. Um die Standardschaltfläche **OK** anzupassen, übergeben Sie einen null-Wert als **bstrText**.  <br/><br/>_allowedElements_ &ndash; Ein **hierarchyelement** , das angibt, welche nicht-schreibgeschützten OneNote-Hierarchieelemente ein Benutzer mithilfe der-Schaltfläche auswählen kann. Für die Auswahl mehrere Elemente, sollte der Benutzer für alle Uint äquivalente **HierarchyElement** Typen als eine **HierarchyElement**zulässig Operators **OR** übergeben.<br/><br/>  _allowedReadOnlyElements_ &ndash; Ein **hierarchyelement** , das angibt, welche OneNote-schreibgeschützten Hierarchieelemente ein Benutzer mithilfe der-Schaltfläche auswählen kann. Für die Auswahl mehrere Elemente, sollte der Benutzer nach allen Werten **Uint** -Entsprechungen **HierarchyElement** Typen als eine **HierarchyElement**zulässig Operators **OR** übergeben.<br/><br/>  _fDefault_ &ndash; Ein boolescher Wert, der angibt, ob diese Schaltfläche als Standardschaltfläche verwendet werden soll. Wenn mehrere Schaltflächen als Standard festgelegt sind, wird die letzte angegebene Schaltfläche die Standardschaltfläche.  <br/> |
    
 Im folgenden Beispiel wird das Dialogfeld Quick ablegen drei Schaltflächen hinzugefügt. Das erste aus, die **alle**, kann von allen Elementen in der Hierarchiestruktur OneNote ausgewählt werden. Andere, **Notebooks** und **Seiten** anzeigen, können ausgewählt werden nur, wenn ihre entsprechenden Elemente, Notebooks und Seiten, ausgewählt sind.
   
@@ -121,7 +121,7 @@ Im folgenden Beispiel wird das Dialogfeld Quick ablegen drei Schaltflächen hinz
 |:-----|:-----|
 |**Beschreibung** <br/> |Zeigt das Dialogfeld Quick ablegen, von einem neuen Thread an. Es erfordert einen Verweis auf die **IQuickFilingDialogCallback** -Schnittstelle, deren **OnDialogClosed** -Methode aufgerufen wird, sobald das Dialogfeld wird geschlossen.  <br/> |
 |**Syntax** <br/> | `HRESULT Run (`<br/>`[in]IQuickFilingDialogCallback piCallback);` <br/> |
-|**Parameter** <br/> | _piCallback_ &ndash; Einen Verweis auf die **IQuickFilingDialogCallback** -Schnittstelle, die instanziiert wird, sobald das Dialogfeld wird geschlossen.  <br/> |
+|**Parameter** <br/> | _piCallback_ &ndash; Ein Verweis auf die **IQuickFilingDialogCallback** -Schnittstelle, die instanziiert wird, sobald das Dialogfeld geschlossen wird.  <br/> |
    
 Im folgenden Beispiel wird mithilfe die **Run** -Methode das Dialogfeld Quick Ablegen von einem neuen Thread an. 
   
@@ -207,7 +207,7 @@ Im folgende Abschnitt werden die Schnittstellen im zuvor zugeordneten Methoden b
 |:-----|:-----|
 |**Beschreibung** <br/> |Ermöglicht Benutzern das Hinzufügen von Funktionen zum Erfassen und verwenden Sie die Auswahl des Benutzers aus dem Dialogfeld. Diese Methode wird aufgerufen, nachdem das Dialogfeld Quick ablegen geschlossen wurde. Diese Methode ist eine Funktion, die **IQuickFilingDialogCallback** Schnittstellen definieren.  <br/> |
 |**Syntax** <br/> | `HRESULT OnDialogClosed (`<br/>`[in]IQuickFilingDialog dialog);` <br/> |
-|**Parameter** <br/> | _Dialogfeld_ &ndash; Das **IQuickFilingDialog** -Objekt, das die **OnDialogClose** -Methode aufgerufen.  <br/> |
+|**Parameter** <br/> | _Dialogfeld_ &ndash; Das **IQuickFilingDialog** -Objekt, das die **OnDialogClose** -Methode aufgerufen hat.  <br/> |
    
 Das folgende Beispiel ist ein Beispiel **IQuickFilingDialogCallback** -Schnittstelle. Die **OnDialogClose** -Methode wird die Auswahl des Benutzers aus dem Dialogfeld Quick Ablegen in der Konsole gedruckt. 
   

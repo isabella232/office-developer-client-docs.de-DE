@@ -1,32 +1,32 @@
 ---
-title: StoppMakro-Makroaktion (Access benutzerdefinierte Web app)
+title: Stopmakro-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: af28534b-6f0d-43ee-ae89-ee2f85da1af1
-description: Die StoppMakro-Aktion können Sie das derzeit ausgeführte Makro anzuhalten.
-ms.openlocfilehash: 54501b65eb1847287e810ae43742a2e6e5384264
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sie können die Stopmakro-Aktion verwenden, um das derzeit ausgeführte Makro zu beenden.
+ms.openlocfilehash: 8b80422a297647d556fb4b20cc15fb93e8853466
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311018"
 ---
-# <a name="stopmacro-macro-action-access-custom-web-app"></a>StoppMakro-Makroaktion (Access benutzerdefinierte Web app)
+# <a name="stopmacro-macro-action-access-custom-web-app"></a>Stopmakro-Makroaktion (benutzerdefinierte Access-Web-App)
 
-Die **StoppMakro** -Aktion können Sie das derzeit ausgeführte Makro anzuhalten. 
+Sie können die **stopmakro** -Aktion verwenden, um das derzeit ausgeführte Makro zu beenden. 
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="setting"></a>Einstellung
 
-Die **StoppMakro** -Aktion verfügt nicht über keine Argumente. 
+Die **stopmakro** -Aktion hat keine Argumente. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Normalerweise verwenden Sie diese Aktion, wenn eine Bedingung das Makro anzuhalten vornimmt. Beispielsweise können Sie ein Benutzer Benutzeroberfläche (UI)-Makro erstellen, das eine Ansicht mit der täglichen Summen Reihenfolge für das Datum in der aktuellen Ansicht geöffnet wird. Sie können einen bedingten Ausdruck verwenden, um sicherzustellen, dass das Steuerelement Bestelldatum im Dialogfeld ein gültiges Datum enthält. Wenn dies nicht der Fall, die **Abfrageergebnis** -Aktion kann eine Fehlermeldung angezeigt, und die **StoppMakro** -Aktion kann das UI-Makro beenden. 
+Diese Aktion wird in der Regel verwendet, wenn eine Bedingung das Beenden des Makros erforderlich macht. Sie können beispielsweise ein Benutzeroberflächen Makro erstellen, das eine Ansicht öffnet, in der die Gesamtsummen für das in der aktuellen Ansicht eingegebene Datum angezeigt werden. Sie können einen bedingten Ausdruck verwenden, um sicherzustellen, dass das Steuerelement Order Date im Dialogfeld ein gültiges Datum enthält. Wenn dies nicht der Fall ist, kann die **MessageBox** -Aktion eine Fehlermeldung anzeigen, und die **stopmakro** -Aktion kann das Benutzeroberflächen Makro beenden. 
   
 

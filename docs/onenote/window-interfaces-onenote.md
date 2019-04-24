@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: e6900ad7-c147-4816-93a9-5773170b115a
 description: Die Schnittstellen Window und Windows sind OneNote 2013-API-Objekte, die Benutzern die Arbeit mit OneNote-Fenster ermöglicht. Diese Objekte ermöglichen Benutzern bestimmte Fenstereigenschaften zu durchlaufen, den Satz von OneNote-Fenster.
 ms.openlocfilehash: efc34312def588ecff54c63b3db84f8bf909352b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317035"
 ---
 # <a name="window-interfaces-onenote"></a>Fenster-Schnittstellen (OneNote 2013)
 
@@ -30,38 +30,38 @@ Die folgende Liste enthält die vier Ansichtsmodi, die Sie für OneNote-Fenster 
     
 - Andocken auf Desktop - ein OneNote-Fenster, das Sie andocken können auf jeder Seite des Desktops (vergleichbar mit der Taskleiste) angezeigt. Diese Ansicht reduziert die Größe des Desktops, um das Fenster passt. Sie können nur ein Fenster andocken, können Sie jederzeit und das Fenster ist immer sichtbar, ohne den Desktop blockieren. 
     
-Die folgende Abbildung zeigt, welche die Ganzseitenansicht, Andocken Desktop-Ansicht und Kurznotizen auf dem Desktop wie folgt aussehen.
+Die folgende Abbildung zeigt, wie die vollständige Seitenansicht, die anDocken an die Desktop Ansicht und schnell Notizen auf Ihrem Desktop aussehen.
   
 **OneNote-Ansichten**
 
-![OneNote-Fensteransichten] (media/ON15Con_views.jpg "OneNote-Fensteransichten")
+![OneNote-Fenster Ansichten] (media/ON15Con_views.jpg "OneNote-Fenster Ansichten")
   
 ## <a name="interfaces"></a>Schnittstellen
 
 In diesem Abschnitt werden die Schnittstellen und Member, die Sie zum programmgesteuerten Ändern der OneNote-Fenster verwenden können.
   
-### <a name="windows-interface"></a>Windows-Benutzeroberfläche
+### <a name="windows-interface"></a>Windows-Oberfläche
 
 Die **Windows** -Schnittstelle ermöglicht es dem Benutzer, die den Satz von geöffnete OneNote-Fenster zuzugreifen. Es ist eine Eigenschaft der OneNote- **Application** -Klasse über **Application.Windows**zugegriffen. Dies gibt den aufgelisteten Satz von OneNote-Fenster zurück. 
   
 **Eigenschaften**
 
-|**Name**|**Typ**|**Description**|
+|**Name**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**Count** <br/> |ulong  <br/> |Ruft die Anzahl der **Window** -Objekte in der Gruppe **Windows**.  <br/> |
 |**CurrentWindow** <br/> |**Window** <br/> |Ruft das **Window** -Objekt des aktiven Fensters OneNote.  <br/> |
 |**Items** <br/> |**Window** <br/> |Gibt das Objekt **Window**, das entspricht dem Index-Wert übergeben. Diese Eigenschaft kann nicht direkt zugegriffen werden. Verwenden Sie **Windows [(uint) index]**, um ein **Window** -Objekt zurückzugeben.  <br/> |
    
-### <a name="window-interface"></a>Fenster-Schnittstelle
+### <a name="window-interface"></a>Fenster Schnittstelle
 
 Die **Window** -Schnittstelle ermöglicht es dem Benutzer Zugriff auf bestimmte Eigenschaften der einzelnen Fenster. Jedes Fenster OneNote kann durch Auflisten der **Windows** -Eigenschaft der **Application** -Klasse zugegriffen werden. 
   
 **Eigenschaften**
 
-|**Name**|**Typ**|**Description**|
+|**Name**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**Active** <br/> |bool  <br/> |Dient zum Abrufen oder Festlegen eines Werts, das angibt, ob das Fenster das aktive Fenster OneNote.  <br/> |
-|**Application** <br/> |**Application** <br/> |Ruft das OneNote **Application** -Objekt, das dem Fenster zugeordnet ist.  <br/> |
+|**Anwendung** <br/> |**Anwendung** <br/> |Ruft das OneNote **Application** -Objekt, das dem Fenster zugeordnet ist.  <br/> |
 |**CurrentPageId** <br/> |string  <br/> |Ruft die Objekt-ID der aktiven OneNote-Seite des Fensters ab.  <br/> |
 |**CurrentSectionId** <br/> |string  <br/> |Ruft die Objekt-ID des aktiven OneNote-Abschnitt des Fensters ab.  <br/> |
 |**CurrentSectionGroupId** <br/> |string  <br/> |Ruft die Objekt-ID der aktiven OneNote im Abschnittsgruppe des Fensters ab.  <br/> |
@@ -87,7 +87,7 @@ Die folgenden Methoden der **Window** -Schnittstelle können Sie angegebenen Obj
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn der Link eine externe Verknüpfung, wie https:// oder file:///, ist wird jedoch ein Sicherheitsdialogfeld angezeigt. Bei Kündigung OneNote versucht, um den Link zu öffnen, und ein HResult.hrObjectDoesNotExist-Fehler zurückgegeben.  <br/> |
+|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn es sich bei dem Link jedoch um einen externen Link handelt, beispielsweise https://oder file://, wird ein Sicherheitsdialogfeld angezeigt. Bei Kündigung OneNote versucht, um den Link zu öffnen, und ein HResult.hrObjectDoesNotExist-Fehler zurückgegeben.  <br/> |
 |**Syntax** <br/> | `HRESULT NavigateToUrl (`           ` [in]BSTR bstrUrl); ` <br/> |
 |**Parameter** <br/> | _bstrUrl_- die URL zu navigieren.  <br/> |
    

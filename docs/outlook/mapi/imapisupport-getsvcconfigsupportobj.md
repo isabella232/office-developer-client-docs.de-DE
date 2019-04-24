@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 56c3bdae-a3a8-4334-b6d2-a89c6820d72e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1c48ceefa84658b236b8dfa4e10df18c175d920e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6de0fed4df9d23e67c3520ffb019a961b890f988
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316557"
 ---
 # <a name="imapisupportgetsvcconfigsupportobj"></a>IMAPISupport::GetSvcConfigSupportObj
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein Objekt "Message" Service Support.
+Erstellt ein Support Objekt für den Nachrichtendienst.
   
 ```cpp
 HRESULT GetSvcConfigSupportObj(
@@ -42,19 +42,19 @@ HRESULT GetSvcConfigSupportObj(
     
  _lppSvcSupport_
   
-> [out] Ein Zeiger auf einen Zeiger auf das neue Nachricht Support-Objekt.
+> Out Ein Zeiger auf einen Zeiger auf das Support Objekt des neuen Nachrichtendiensts.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Support-Konfigurationsobjekt wurde erfolgreich erstellt.
+> Das Konfigurations Unterstützungsobjekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::GetSvcConfigSupportObj** -Methode wird für alle Unterstützungsobjekte implementiert. Dienstanbieter anrufen **GetSvcConfigSupportObj** zum Erstellen eines Objekts Konfiguration Unterstützung, um auf eine Nachricht Service Entry Point-Funktion zu übergeben. 
+Die **IMAPISupport:: GetSvcConfigSupportObj** -Methode wird für alle Support-Objekte implementiert. Dienstanbieter rufen **GetSvcConfigSupportObj** auf, um ein Konfigurations Unterstützungsobjekt zu erstellen, das an eine Nachrichtendienst-Einstiegspunktfunktion weitergegeben wird. 
   
-Eine Nachricht Service Entry Point-Funktion basiert auf den [MSGSERVICEENTRY](msgserviceentry.md) Prototyp und von Methoden der [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle aufgerufen wird. Eine Nachricht Service Entry Point-Funktion ermöglicht Message Dienste so konfigurieren selbst oder andere Aktionen durchführen, wenn das Profil geändert wird. Nachricht Service-Einstiegspunkt, dass Funktionen konfigurationsänderungen unterstützen können durch Anzeigen eines Eigenschaftenblatts oder über ein Array-Eigenschaft Wert an die [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) -Methode übergeben. 
+Eine Nachrichtendienst-Einstiegspunktfunktion basiert auf dem [MSGSERVICEENTRY](msgserviceentry.md) -Prototyp und wird von Methoden der [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle aufgerufen. Eine Nachrichtendienst-Einstiegspunktfunktion ermöglicht es Nachrichtendiensten, sich selbst zu konfigurieren oder andere Aktionen auszuführen, wenn das Profil geändert wird. Einstiegspunktfunktionen für den Nachrichtendienst können Konfigurationsänderungen unterstützen, indem ein Eigenschaftenblatt oder ein Eigenschafts Wertarray angezeigt wird, das an die [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) -Methode übergeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

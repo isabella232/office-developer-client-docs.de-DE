@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c33daad6-52c4-4968-ac56-415178c9bf12
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f66d0fb1fc9d252ff8b6985c4a54de79313266d1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: bfddc24e6a9c7cf8bdeae1e5ea730ecdb116f564
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321588"
 ---
 # <a name="imapiformmgrselectformcontainer"></a>IMAPIFormMgr::SelectFormContainer
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Dialogfeld an, die ermöglicht dem Benutzer das Formular Container auswählen, und gibt eine Schnittstelle für das Containerobjekt der ausgewählten Benutzer an.
+Zeigt ein Dialogfeld an, in dem der Benutzer einen Formular Container auswählen und eine Schnittstelle für das Containerobjekt zurückgibt, das der Benutzer ausgewählt hat.
   
 ```cpp
 HRESULT SelectFormContainer(
@@ -39,45 +39,45 @@ HRESULT SelectFormContainer(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster im angezeigten Dialogfeld. 
+> in Ein Handle für das übergeordnete Fenster des angezeigten Dialogfelds. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Formularbibliothek aktiviert ist (d. h., wie der Formular Container ausgewählt ist). Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie die Formularbibliothek ausgewählt wird (das heißt, wie der Formular Container ausgewählt ist). Die folgenden Flags können festgelegt werden:
     
 MAPIFORM_SELECT_ALL_REGISTRIES 
   
-> Auswahl kann von allen Containern vorgenommen werden. Dies ist der Standard-Auswahltyp. 
+> Die Auswahl kann aus allen Containern vorgenommen werden. Dies ist der Standard Auswahltyp. 
     
 MAPIFORM_SELECT_FOLDER_REGISTRY_ONLY 
   
-> Auswahl kann nur von Ordner Containern vorgenommen werden.
+> Die Auswahl kann nur aus Ordner Containern vorgenommen werden.
     
 MAPIFORM_SELECT_NON_FOLDER_REGISTRY_ONLY 
   
-> Auswahl kann nur aus den Containern vorgenommen werden, die keine Ordner zugeordnet sind.
+> Die Auswahl kann nur aus Containern vorgenommen werden, die nicht mit Ordnern verknüpft sind.
     
  _lppfcnt_
   
-> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle. Diese Schnittstelle ist für das Containerobjekt, das vom Benutzer ausgewählt ist.
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle. Diese Schnittstelle ist für das Containerobjekt, das vom Benutzer ausgewählt wird.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer aufrufen in der Regel die **IMAPIFormMgr::SelectFormContainer** -Methode, um ein Formular Container auszuwählen, in dem einem Formular installiert ist. **SelectFormContainer** kann nicht aus dem Container lokale Formular mit dem Wert HFRMREG_LOCAL verwendet werden. 
+Formular Betrachter rufen in der Regel die **IMAPIFormMgr:: SelectFormContainer** -Methode auf, um einen Formular Container auszuwählen, in dem ein Formular installiert ist. **SelectFormContainer** kann nicht verwendet werden, um den lokalen Formular Container auszuwählen, der den Wert HFRMREG_LOCAL hat. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnSelectFormContainer  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormMgr::SelectFormContainer** -Methode, um ein Formular Container wählen Sie vor dem Rendern seinen Inhalt.  <br/> |
+|MainDlg. cpp  <br/> |CMainDlg:: OnSelectFormContainer  <br/> |MFCMAPI verwendet die **IMAPIFormMgr:: SelectFormContainer** -Methode, um einen Formular Container auszuwählen, bevor der Inhalt gerendert wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

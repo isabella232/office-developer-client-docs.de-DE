@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 5b4290d9-230f-416a-9644-188578565c7b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3e641842dd8264c0cd3556c498bd74c77bda32f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c34c175c43ada03e982f08a27f675448ea24a567
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316596"
 ---
 # <a name="imapisupportgetlasterror"></a>IMAPISupport::GetLastError
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen zu dem Fehler der vorherigen Support-Objekt enthält. 
+Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Support Objekt Fehler enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,41 +39,41 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in] Ein Handle für den Fehlerwert generiert, die in der vorherigen Aufruf-Methode für das Objekt unterstützt.
+> in Ein Handle für den Fehlerwert, der im vorherigen Methodenaufruf für das Support-Objekt generiert wurde.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur zurückgegeben, die im Parameter _LppMAPIError_ sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> [out] Ein Zeiger auf einen Zeiger auf die **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält. Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn eine **MAPIERROR** -Struktur mit den entsprechenden Fehlerinformationen bereitgestellt werden kann. 
+> Out Ein Zeiger auf einen Zeiger auf die **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn eine **MAPIERROR** -Struktur mit entsprechenden Fehlerinformationen nicht bereitgestellt werden kann. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und MAPI unterstützt keine Unicode oder Parameter MAPI_UNICODE wurde nicht festgelegt und MAPI unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und MAPI unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und MAPI unterstützt nur Unicode.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::GetLastError** -Methode wird für alle Unterstützungsobjekte implementiert. Anrufer können die Benutzer einschließlich der Daten aus der **MAPIERROR** -Struktur in einem Dialogfeld mit ausführlichen Informationen zu dem Fehler bereitstellen. 
+Die **IMAPISupport:: getlasterroraufzurufen** -Methode wird für alle Support-Objekte implementiert. Aufrufer können Ihren Benutzern detaillierte Informationen zum Fehler bereitstellen, indem Sie die Daten aus der **MAPIERROR** -Struktur in ein Dialogfeld einschließen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können den Zeiger auf die Struktur **MAPIERROR** verwenden, wenn MAPI eine in der _LppMAPIError_ -Parameter stellt nur, wenn **GetLastError** gibt S_OK zurück. Manchmal MAPI kann nicht bestimmen, welche letzten Fehlers wurde oder es wurde keine weiteren Bericht zu dem Fehler. In diesem Fall gibt _LppMAPIError_ einen Zeiger stattdessen auf NULL. 
+Sie können den Zeiger auf die **MAPIERROR** -Struktur verwenden, wenn MAPI eine bereitstellt, im Parameter _lppMAPIError_ nur, wenn **getlasterroraufzurufen** S_OK zurückgibt. Manchmal kann MAPI nicht ermitteln, was der letzte Fehler war, oder er hat nichts mehr über den Fehler zu berichten. In dieser Situation gibt _lppMAPIError_ stattdessen einen Zeiger auf NULL zurück. 
   
-Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Extended MAPI-Fehler](mapi-extended-errors.md).
+Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
-Um alle durch MAPI Arbeitsspeicher freizugeben, rufen Sie die [MAPIFreeBuffer](mapifreebuffer.md) -Funktion für die zurückgegebene **MAPIERROR** -Struktur. 
+Um den gesamten von MAPI reservierten Arbeitsspeicher freizugeben, rufen Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion für die zurückgeGebene **MAPIERROR** -Struktur auf. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -86,5 +86,5 @@ Um alle durch MAPI Arbeitsspeicher freizugeben, rufen Sie die [MAPIFreeBuffer](m
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[Fehler Extended MAPI](mapi-extended-errors.md)
+[Erweiterte MAPI-Fehler](mapi-extended-errors.md)
 

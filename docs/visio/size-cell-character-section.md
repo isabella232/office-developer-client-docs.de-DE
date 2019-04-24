@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a61b50fe-eacb-b3d4-0e4e-ab3e7c972ee9
 description: Definiert die Größe des Texts im Textblock des Shapes.
-ms.openlocfilehash: f3077441844b859cf224eccc8180d0d56cce851f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ea747620301a07cafaf179106b54510edb95f7ed
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314798"
 ---
-# <a name="size-cell-character-section"></a>Size Cell (Character Section)
+# <a name="size-cell-character-section"></a>Zelle "Size" (Abschnitt "Character")
 
 Definiert die Größe des Texts im Textblock des Shapes.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Größe des Texts ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Textgröße unverändert.
   
-Wenn Sie einen Verweis auf die Zelle Size aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle size aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Char.Size [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Char. Size [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Size aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Size nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-| Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCharacterSize** <br/> |
    
 

@@ -9,21 +9,21 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7c414f9c-a7f2-3404-326e-acd4026c7684
 description: Enthält die Zellen, die die Formatierung (das Erscheinungsbild) des Zeichenblatts auf der Druckseite steuern.
-ms.openlocfilehash: 37ef70e27d20f9ad9856f51a8cf3b83aeb58ae5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0ec5eabf3f9d03f704e2a9ea03099eba1e09afd0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315211"
 ---
-# <a name="print-properties-section"></a>Print Properties Section
+# <a name="print-properties-section"></a>Abschnitt "Print Properties"
 
 Enthält die Zellen, die die Formatierung (das Erscheinungsbild) des Zeichenblatts auf der Druckseite steuern. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie den Abschnitt **Print Eigenschaften** zum Drucken auf der Seitenebene steuern. Diese Einstellungen sind pro Seite und unabhängig von der Zeichnung seiteneinstellungen, beispielsweise ein Zeichenblatt angezeigt, dass verwendet im Querformat im Hochformat gedruckt werden kann. Darüber hinaus können Dokumente mit einer Kombination von Ausrichtung gedruckt werden. 
+Verwenden Sie den Abschnitt **Druckeigenschaften** , um das Drucken auf Seitenebene zu steuern. Diese Einstellungen sind pro Seite und unabhängig von den Zeichenblatteinstellungen, beispielsweise kann ein Zeichenblatt, das die Querformatausrichtung verwendet, im Hochformat gedruckt werden. Außerdem können Dokumente mit einer Kombination aus Orientierungen gedruckt werden. 
   
-Die Einstellungen im Abschnitt **Druckeigenschaften** entsprechen den Werten, die auf der Registerkarte **Druckeinrichtung** im Dialogfeld **Seite einrichten** festlegen (klicken Sie auf der Registerkarte **Entwurf** auf das Dialogfeld-Startprogramms in der Gruppe **Seite einrichten** ). Finden Sie im Abschnitt **Page Properties** Einstellungen, die auf dem Zeichenblatt anwenden. 
+Die Einstellungen im Abschnitt **Print Properties** entsprechen den im Dialogfeld **Seite einrichten** auf der Registerkarte **Druckeinrichtung** festgelegten Werten (Klicken Sie auf der Registerkarte **Entwurf** auf der **Seite Setup** Gruppe auf das Dialogfeldstartprogramm). Im Abschnitt **Seiteneigenschaften** finden Sie Einstellungen für das Zeichenblatt. 
   
 

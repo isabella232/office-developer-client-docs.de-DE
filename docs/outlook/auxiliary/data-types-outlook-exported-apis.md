@@ -1,27 +1,27 @@
 ---
-title: Datentypen (Outlook exportiert APIs)
+title: Datentypen (Outlook-exportierte APIs)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 11833823-35fa-4bed-8dda-e5c74c320d46
-description: Dieser Abschnitt beschreibt die Datentypen, die Outlook exportiert.
-ms.openlocfilehash: 25cf9e80c66f5c985510f7c0afe7492da32d1d9d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Abschnitt werden die Datentypen beschrieben, die Outlook exportiert.
+ms.openlocfilehash: adca0b613adc887df7a73ea4809b61bb70cf28b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319845"
 ---
-# <a name="data-types-outlook-exported-apis"></a>Datentypen (Outlook exportiert APIs)
+# <a name="data-types-outlook-exported-apis"></a>Datentypen (Outlook-exportierte APIs)
 
-Dieser Abschnitt beschreibt die Datentypen, die Outlook exportiert.
+In diesem Abschnitt werden die Datentypen beschrieben, die Outlook exportiert.
   
 |**Datentyp**|**Beschreibung**|
 |:-----|:-----|
-|[TZDEFINITION](tzdefinition.md) <br/> |Stellt eine gesamte Zeitzone, einschließlich aller historischen, aktuellen und zukünftigen Zeitzone UMSCHALT Regeln Sommerzeit.  <br/> |
-|[TZREG](tzreg.md) <br/> |Definiert, wenn Sommerzeit Uhrzeit gestartet wird, tritt die Rückkehr zur Standardzeit und wie viele Stunden der Sommerzeit UMSCHALT ist.  <br/> |
-|[TZRULE](tzrule.md) <br/> |Gibt Informationen für eine Regel zur Zeitzone Sommerzeit beim Starten und das Jahr, in dem diese Regel Time-Zone zuerst wirksam wird.  <br/> |
+|[TZDEFINITION](tzdefinition.md) <br/> |Stellt eine gesamte Zeitzone einschließlich aller historischen, aktuellen und zukünftigen Zeitzone-Schicht Regeln für Sommerzeit dar.  <br/> |
+|[TZREG](tzreg.md) <br/> |Legt fest, wann die Sommerzeit beginnt, wann die Rückkehr zur Standardzeit erfolgt und wie viele Stunden die Sommer-Speicherschicht ist.  <br/> |
+|[TZRULE](tzrule.md) <br/> |Gibt Informationen zu einer Zeitzone an, in der die Sommerzeit beginnt, und das Jahr, in dem diese zeitzonenregel erstmals wirksam wird.  <br/> |
    
 

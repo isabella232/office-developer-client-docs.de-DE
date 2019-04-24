@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 763cab41-f6f6-4cb0-8cb8-170fdf2a92e6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 92807cb216e8a7f4eef6b4d95a8d12826b176e6e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b237a57dfea020c7bfcb66d49d43428c1f6506c2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317360"
 ---
 # <a name="imsgserviceadminsetprimaryidentity"></a>IMsgServiceAdmin::SetPrimaryIdentity
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt eine Message Service hat der Hersteller der primäre Identität für das Profil sein.
+Legt fest, dass ein Nachrichtendienst der Lieferant der primären Identität für das Profil ist.
   
 ```cpp
 HRESULT SetPrimaryIdentity(
@@ -38,37 +38,37 @@ HRESULT SetPrimaryIdentity(
 
  _lpUID_
   
-> [in] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den Dienst angeben die primäre Identität enthält, oder NULL, gibt an, dass die aktuelle Identität **SetPrimaryIdentity** gelöscht werden sollte. 
+> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den Nachrichtendienst enthält, um die primäre Identität anzugeben, oder NULL, die angibt, dass **SetPrimaryIdentity** die aktuelle Identität löschen soll. 
     
  _ulFlags_
   
 > [in] Reserviert. NULL muss sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Nachrichtendienst wurde erfolgreich hat den Hersteller der primären Identität zugewiesen.
+> Dem Nachrichtendienst wurde der Lieferant mit der primären Identität erfolgreich zugewiesen.
     
 MAPI_E_NO_ACCESS 
   
-> **SetPrimaryIdentity** wurde versucht, eine Message Service angeben, die das SERVICE_NO_PRIMARY_IDENTITY-Flag, das in der **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))-Eigenschaft festgelegt wurde.
+> **SetPrimaryIdentity** hat versucht, einen Nachrichtendienst mit dem SERVICE_NO_PRIMARY_IDENTITY-Flag in seiner **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Eigenschaft festzulegen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Methode **IMsgServiceAdmin::SetPrimaryIdentity** richtet einen Nachrichtendienst zur als hat der Hersteller der primäre Identität für das Profil. Die primäre Identität ist in der Regel der Benutzer, die den Dienst angemeldet ist. Es wird durch drei Eigenschaften dargestellt: 
+Die **IMsgServiceAdmin:: SetPrimaryIdentity** -Methode richtet einen Nachrichtendienst als Anbieter der primären Identität für das Profil ein. Die primäre Identität ist in der Regel der Benutzer, der beim Nachrichtendienst angemeldet ist. Es wird durch drei Eigenschaften dargestellt: 
   
-- **PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md))
+- **PR_IDENTITY_DISPLAY** ([Pidtagidentitydisplay (](pidtagidentitydisplay-canonical-property.md))
     
-- **PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md))
+- **PR_IDENTITY_ENTRYID** ([Pidtagidentityentryid (](pidtagidentityentryid-canonical-property.md))
     
-- **PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md))
+- **PR_IDENTITY_SEARCH_KEY** ([Pidtagidentitysearchkey (](pidtagidentitysearchkey-canonical-property.md))
     
-Jeder Dienstanbieter in der festgelegten Messagingdiensts wird diese drei Eigenschaften auf die Anzeigenamen sowie die Eintrags-ID und Suche Schlüssel des Benutzers messaging, das die primäre Identität bereitstellt. Clients können die primäre Identität Eintrags-ID abrufen, durch die [IMAPISession::QueryIdentity](imapisession-queryidentity.md) -Methode aufrufen. 
+Jeder Dienstanbieter im angegebenen Nachrichtendienst legt diese drei Eigenschaften auf den Anzeigenamen, die Eintrags-ID und den Suchschlüssel des Messaging Benutzers fest, der die primäre Identität bereitstellt. Clients können die Eintrags-ID der primären Identität abrufen, indem Sie die [IMAPISession:: QueryIdentity](imapisession-queryidentity.md) -Methode aufrufen. 
   
-Die **PR_RESOURCE_FLAGS** -Eigenschaft wird festgelegt, um STATUS_PRIMARY_IDENTITY für die einzelnen Anbieter, die den Dienst gehört, das die primäre Identität bereitstellt und SERVICE_PRIMARY_IDENTITY für den Dienst. Bei ein Dienstanbieter die primäre Identität für die Message-Dienst angegeben werden kann, wird es auf STATUS_NO_PRIMARY_IDENTITY **PR_RESOURCE_FLAGS** . **SetPrimaryIdentity** wird die **PR_RESOURCE_FLAGS** -Eigenschaft der einzelnen Nachricht-Dienste, die nicht der primäre Identitätswert SERVICE_NO_PRIMARY_IDENTITY bereitstellt. 
+Die **PR_RESOURCE_FLAGS** -Eigenschaft wird für jeden Anbieter, der ein Mitglied des Nachrichtendiensts ist, der die primäre Identität bereitstellt, und SERVICE_PRIMARY_IDENTITY für den Nachrichtendienst auf STATUS_PRIMARY_IDENTITY festgelegt. Wenn ein Dienstanbieter die primäre Identität für seinen Nachrichtendienst nicht angeben kann, wird **PR_RESOURCE_FLAGS** auf STATUS_NO_PRIMARY_IDENTITY festgelegt. **SetPrimaryIdentity** legt die **PR_RESOURCE_FLAGS** -Eigenschaft der einzelnen Nachrichtendienste fest, die nicht die primäre Identität für SERVICE_NO_PRIMARY_IDENTITY bereitstellen. 
   
-Jeder Nachricht-Dienstanbieter, die MAPI Informationen zu verfügt kann beim Anmelden eines Clients mit dem Dienst auf eine Identität für jeden Benutzer einrichten. Da MAPI-Verbindungen mit mehreren Dienstanbieter für jede MAPI-Sitzung unterstützt, ist es jedoch keine feste Definition der Identität eines bestimmten Benutzers für die MAPI-Sitzung als Ganzes. Identität des Benutzers, hängt davon ab, welcher Dienst beteiligt ist. Clients können **SetPrimaryIdentity** zum Bestimmen von einer der vielen Identitäten eingerichtet für einen Benutzer von den Diensten für die Nachricht als primäre Identität für diesen Benutzer aufrufen. 
+Jeder Nachrichtendienst Anbieter, über den MAPI Informationen enthält, kann für jeden seiner Benutzer eine Identität festlegen, wenn sich ein Client beim Dienst anmeldet. Da MAPI jedoch Verbindungen mit mehreren Dienstanbietern für jede MAPI-Sitzung unterstützt, gibt es keine feste Definition der Identität eines bestimmten Benutzers für die MAPI-Sitzung als Ganzes; die Identität eines Benutzers hängt davon ab, welcher Dienst beteiligt ist. Clients können **SetPrimaryIdentity** aufrufen, um eine der vielen Identitäten festzulegen, die von Nachrichtendiensten für einen Benutzer als primäre Identität für diesen Benutzer erstellt wurden. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b2d51f4b-d64e-fd14-4ff1-ed67c69213bc
 description: Aktiviert bzw. deaktiviert die Anzeige des Auswahlrechtecks für das ausgewählte Shape.
-ms.openlocfilehash: c8e5fe28197a72b4cdb5306732dd155dc8f4f810
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2ff9f051df54f4d424589332b9fbaea973552edc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319859"
 ---
-# <a name="noalignbox-cell-miscellaneous-section"></a>NoAlignBox Cell (Miscellaneous Section)
+# <a name="noalignbox-cell-miscellaneous-section"></a>Zelle "NoAlignBox" (Abschnitt "Miscellaneous")
 
 Aktiviert bzw. deaktiviert die Anzeige des Auswahlrechtecks für das ausgewählte Shape.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| WAHR  <br/> | Markierungsrechteck wird nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
-| FALSCH  <br/> | Markierungsrechteck wird angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
+| TRUE  <br/> | Markierungsrechteck wird nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
+| FALSE  <br/> | Markierungsrechteck wird angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle NoAlignBox aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle noAlignbox aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | NoAlignBox  <br/> |
+| Zellenname:  <br/> | Zelle NoAlignBox  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoAlignBox aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle noAlignbox nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 09e4b427-316b-4630-9f3d-81e74f040d7b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 81f9388b67d3194fe1442091b9f4f75a7671cb6d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f7372830624d774fb914ae956e86a9e4476cf487
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315043"
 ---
 # <a name="itnefsetprops"></a>ITnef::SetProps
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den Wert einer oder mehrerer Eigenschaften für eine gekapselte Nachricht oder Anlage ohne Ändern der ursprünglichen Nachricht oder Anlage fest. 
+Legt den Wert einer oder mehrerer Eigenschaften für eine gekapselte Nachricht oder Anlage fest, ohne die ursprüngliche Nachricht oder Anlage zu ändern. 
   
 ```cpp
 HRESULT SetProps(
@@ -40,38 +40,38 @@ HRESULT SetProps(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die-Eigenschaftswerte festgelegt sind. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie Eigenschaftswerte festgelegt werden. Das folgende Flag kann festgelegt werden:
     
 TNEF_PROP_CONTAINED 
   
-> Nur Eigenschaften aus der Nachricht oder einer Anlage, die durch den _UlElemID_ -Parameter angegebenen codiert. 
+> Codiert nur Eigenschaften aus der Nachricht oder Anlage, die durch den _ulElemID_ -Parameter angegeben wird. 
     
  _ulElemID_
   
-> [in] Eine Anlage **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft, die eine Zahl, eindeutig enthält identifiziert die Anlage in der übergeordneten Nachricht.
+> in Die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft einer Anlage, die eine Zahl enthält, die die Anlage in der übergeordneten Nachricht eindeutig identifiziert.
     
  _cValues_
   
-> [in] Durch den Parameter _LpProps_ auf zeigt die Anzahl der Eigenschaftswerte in der Struktur [SPropValue](spropvalue.md) . 
+> in Die Anzahl der Eigenschaftswerte in der [SPropValue](spropvalue.md) -Struktur, auf die durch den _lpProps_ -Parameter verwiesen wird. 
     
  _lpProps_
   
-> [in] Ein Zeiger auf eine **SPropValue** -Struktur, die Eigenschaftswerte der Eigenschaften enthält festlegen. 
+> in Ein Zeiger auf eine **SPropValue** -Struktur, die die Eigenschaftswerte der festzulegenden Eigenschaften enthält. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::SetProps** -Methode zum Festlegen der Eigenschaften zum Einschließen in die Kapselung einer Nachricht oder einer Anlage, ohne die ursprüngliche Nachricht oder Anlage zu ändern. Mit diesem Anruf festgelegten Eigenschaften außer Kraft setzen vorhandene Eigenschaften in die gekapselte Nachricht. 
+Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef::** SetProps-Methode auf, um die Eigenschaften festzulegen, die in die Kapselung einer Nachricht oder Anlage eingeschlossen werden sollen, ohne die ursprüngliche Nachricht oder Anlage zu ändern. Alle Eigenschaften, die mit diesem Aufruf festgelegt wurden, überschreiben vorhandene Eigenschaften in der gekapselte Nachricht. 
   
- **SetProps** wird nur für TNEF-Objekten unterstützt, die mit dem TNEF_ENCODE-Flag für die Funktion [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) oder [OpenTnefStreamEx](opentnefstreamex.md) geöffnet werden. Mit diesem Anruf kann eine beliebige Anzahl von Eigenschaften festgelegt werden. 
+ **** SetProps wird nur für TNEF-Objekte unterstützt, die mit dem TNEF_ENCODE-Flag für die [OpenTnefStream](opentnefstream.md) -oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet werden. Mit diesem Aufruf kann eine beliebige Anzahl von Eigenschaften festgelegt werden. 
   
 > [!NOTE]
-> Keine tatsächlichen TNEF-Codierung für **SetProps** geschieht erst, nachdem die [ITnef::Finish](itnef-finish.md) -Methode aufgerufen wird. Dies bedeutet, dass Zeiger in **SetProps** übergeben gültig bis bleiben müssen nach dem Anruf auf **Fertig stellen** . An dieser Stelle können alle Objekte und Daten in **SetProps** Aufrufe übergeben freigegeben oder freigegeben werden. 
+> Es erfolgt keine tatsächliche TNEF **** -Codierung für SetProps, bevor die [ITnef:: Finish](itnef-finish.md) -Methode aufgerufen wird. Diese Funktionalität bedeutet, dass Zeiger, **** die an SetProps übergeben werden, gültig bleiben müssen, bis der Aufruf **beendet** wurde. An diesem Punkt können alle Objekte und Daten, die **** an SetProps-Aufrufe übergeben werden, freigegeben oder freigeschaltet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -83,7 +83,7 @@ Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::SetProps
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
+[Kanonische Pidtagattachnumber (-Eigenschaft](pidtagattachnumber-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 784b6218-548d-817a-caaa-cf9be6bc3d2f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e0c8c4c6251581506c7bdd78c009bb12e8291c81
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3ca7fdc39da8d3ee8ecf6f0f253284df10a392e5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321427"
 ---
 # <a name="imapiofflinemgradvise"></a>IMAPIOfflineMgr::Advise
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert einen Client für Rückrufe für eine offline-Objekt zu erhalten.
+Registriert einen Client für den Empfang von Rückrufen für ein Offlineobjekt.
   
 ```cpp
 HRESULT COfflineObj::Advise( 
@@ -39,33 +39,33 @@ HRESULT COfflineObj::Advise(
 
  _ulFlags_
   
->  [in] Kennzeichen, die Verhalten zu ändern. Nur der Wert MAPIOFFLINE_ADVISE_DEFAULT wird unterstützt. 
+>  in Kennzeichen, die das Verhalten ändern. Nur der Wert MAPIOFFLINE_ADVISE_DEFAULT wird unterstützt. 
     
  _pAdviseInfo_
   
-> [in] Informationen zu den Typ des Rückrufs, wann ein Rückruf, eine Callback-Schnittstelle für den Anrufer sowie andere Details zu erhalten. Sie enthält außerdem eine Clienttoken, die Outlook verwendet, nachfolgende Benachrichtigung Rückrufe an den Client Anrufer senden.
+> in Informationen zum Rückruftyp, zum Empfang eines Rückrufs, eine Rückrufschnittstelle für den Anrufer und weitere Details. Außerdem enthält es ein Clienttoken, das Outlook beim Senden von nachfolgenden Benachrichtigungs Rückrufen an den Client Aufrufer verwendet.
     
  _pulAdviseToken_
   
-> [out] Ein Advise-Token an den Clientaufrufer für anschließend stornieren Rückruf für das Objekt zurückgegeben.
+> Out Ein Advise-Token, das an den Aufrufer des Clients zurückgegeben wird, um den Rückruf für das Objekt abzubrechen.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Der Aufruf war erfolgreich.
+> Der Anruf wurde erfolgreich ausgeführt.
     
 E_INVALIDARG
   
-> Ein ungültiger Parameter es wurde angegeben.
+> Es wurde ein ungültiger Parameter angegeben.
     
 E_NOINTERFACE
   
-> Die Callback-Schnittstelle in *pAdviseInfo* angegebenen ist ungültig. 
+> Die in *pAdviseInfo* angegebene Rückrufschnittstelle ist ungültig. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Beim Öffnen einer offline-Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)**, erhält ein Client eine offline-Objekt, das **IMAPIOfflineMgr**unterstützt. Der Client kann für die Arten von mithilfe von **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** durch das Objekt unterstützt Rückrufe überprüfen. Der Client kann bestimmen, den Typ sowie andere Details zu den Rückruf es möchte, und rufen Sie dann **IMAPIOfflineMgr::Advise** registrieren, um eine solche Rückrufe zum Objekt empfangen. 
+Beim Öffnen eines Offline Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)** Ruft ein Client ein Offlineobjekt ab, das **IMAPIOfflineMgr**unterstützt. Der Client kann die vom Objekt unterstützten Rückruf Typen mithilfe von **[IMAPIOffline:: getCapabilities](imapioffline-getcapabilities.md)** überprüfen. Der Client kann den Typ und weitere Details zu dem gewünschten Rückruf ermitteln und dann **IMAPIOfflineMgr:: Advise** aufrufen, um sich für das empfangen solcher Rückrufe über das Objekt zu registrieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

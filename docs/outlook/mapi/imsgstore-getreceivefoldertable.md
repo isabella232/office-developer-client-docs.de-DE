@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d115ab58-07d2-4b49-8e08-2881c2924102
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 681fd68fc068633912df1cb7f060b8c4111b5de8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 303c2ef855d5cfc1d6614bda92b46c2da97717c8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317353"
 ---
 # <a name="imsgstoregetreceivefoldertable"></a>IMsgStore::GetReceiveFolderTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Zugriff auf die empfangen Ordnertabelle Tabelle Informationen zu allen der Ordner für den Nachrichtenspeicher empfangen enthält.
+Ermöglicht den Zugriff auf die Tabelle Receive Folder, eine Tabelle mit Informationen zu allen Empfangs Ordnern für den Nachrichtenspeicher.
   
 ```cpp
 HRESULT GetReceiveFolderTable(
@@ -37,47 +37,47 @@ HRESULT GetReceiveFolderTable(
 
  _ulFlags_
   
-> [in] Eine Bitmaske der Werte, dass Steuerelemente Access-Tabelle. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die den Tabellenzugriff steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **GetReceiveFolderTable** erfolgreich, möglicherweise beendet, bevor die Tabelle mit dem Anrufer vollständig verfügbar ist. Wenn die Tabelle nicht vollständig verfügbar ist, kann die nachfolgenden Tabelle Anrufen ein Fehler ausgelöst. 
+> Ermöglicht es **GetReceiveFolderTable** , erfolgreich zurückzugeben, möglicherweise bevor die Tabelle vollständig für den Aufrufer verfügbar ist. Wenn die Tabelle nicht vollständig verfügbar ist, kann durch einen nachfolgenden Tabellen Aufruf ein Fehler ausgelöst werden. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _lppTable_
   
-> [out] Ein Zeiger auf einen Zeiger auf den Ordner-empfangen-Tabelle.
+> Out Ein Zeiger auf einen Zeiger auf die Tabelle des Empfangs Ordners.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Ordner-Tabelle empfangen wurde erfolgreich zurückgegeben.
+> Die Tabelle des Empfangs Ordners wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::GetReceiveFolderTable** -Methode ermöglicht den Zugriff auf eine Tabelle, die anzeigt, dass die Einstellungen für alle des Nachrichtenspeicher Ordner erhalten. 
+Die **IMsgStore:: GetReceiveFolderTable** -Methode ermöglicht den Zugriff auf eine Tabelle, in der die Eigenschafteneinstellungen für alle Empfangsordner des Nachrichtenspeichers angezeigt werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Eine Liste der erforderlichen Spalten in einem Ordner empfangen finden Sie unter [Ordner Tabellen erhalten](receive-folder-tables.md). 
+Eine Liste der erforderlichen Spalten in einer Tabelle mit einem Receive-Ordner finden Sie unter [Receive Folder Tables](receive-folder-tables.md). 
   
-Implementieren der Ordner Tabellen Suchkriterien in Eigenschaft die Einstellung für die Eigenschaft **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) Unterstützung erhalten. Diese einfache ermöglicht den Zugriff auf bestimmte empfangen Ordner.
+Implementieren Sie die Tabellen des Empfangs Ordners, um Einstellungs Einschränkungen für die **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md))-Eigenschaft zu unterstützen. Dies ermöglicht den einfachen Zugriff auf bestimmte Empfangsordner.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Festlegen der Option MAPI_UNICODE im Parameter _UlFlags_ wirkt sich auf das Format der von den Methoden [IMAPITable::QueryColumns](imapitable-querycolumns.md) und [IMAPITable::QueryRows](imapitable-queryrows.md) zurückgegebenen Spalten aus. Dieses Kennzeichen steuert auch die Eigenschaftentypen in der Sortierreihenfolge, die von der [IMAPITable::QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegeben. 
+Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf das Format der Spalten aus, die von den Methoden [IMAPITable:: QueryColumns](imapitable-querycolumns.md) und [IMAPITable:: QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftentypen in der von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegebenen Sortierreihenfolge. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnDisplayReceiveFolderTable  <br/> |MFCMAPI (engl.) verwendet die **IMsgStore::GetReceiveFolderTable** -Methode zum Abrufen der empfangen Ordnertabelle angezeigt.  <br/> |
+|MsgStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnDisplayReceiveFolderTable  <br/> |MFCMAPI verwendet die **IMsgStore:: GetReceiveFolderTable** -Methode, um die anzuzeigende Ordnertabelle abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,33 +1,33 @@
 ---
-title: Initialisieren von einem gepackten PST-Anbieter
+title: Initialisieren eines Anbieters von umschlossenem PST-Speicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 07633717-ba4c-b146-ad65-60b37ab98ab6
-description: 'Zuletzt geändert: 05 Oktober 2012'
-ms.openlocfilehash: c39f66917ecc080785b3a3e91506d3994427ca62
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 05 Oktober, 2012'
+ms.openlocfilehash: 31114e4082fbc5e4c57da95eb6b32339822b1645
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317241"
 ---
-# <a name="initializing-a-wrapped-pst-store-provider"></a>Initialisieren von einem gepackten PST-Anbieter
+# <a name="initializing-a-wrapped-pst-store-provider"></a>Initialisieren eines Anbieters von umschlossenem PST-Speicher
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um einen gepackten Anbieter für Persönliche Ordner-Datei (PST) anmelden zu implementieren, müssen Sie den gepackten PST-Speicheranbieter mithilfe der **[MSProviderInit](msproviderinit.md)** -Funktion als Einstiegspunkt initialisieren. Nachdem die DLL des Anbieters initialisiert wurde, konfiguriert die **[MSGSERVICEENTRY](msgserviceentry.md)** -Funktion den gepackten PST-Anbieter. 
+Um einen eingebundenen PST-Speicheranbieter zu implementieren, müssen Sie den eingebundenen PST-Speicheranbieter initialisieren, indem Sie die **[MSProviderInit](msproviderinit.md)** -Funktion als Einstiegspunkt verwenden. Nachdem die DLL des Anbieters initialisiert wurde, konfiguriert die **[MSGSERVICEENTRY](msgserviceentry.md)** -Funktion den einGEBUNDENen PST-Speicheranbieter. 
   
-In diesem Thema werden die **MSProviderInit** und der **MSGSERVICEENTRY** -Funktion mithilfe von Codebeispielen aus der umbrochen PST Store Beispielanbieter veranschaulicht. Das Beispiel implementiert einen gepackten PST-Anbieter, der in Verbindung mit der API für die Replikation verwendet werden soll. Weitere Informationen zum Herunterladen und Installieren der umbrochen PST Store Beispielanbieter finden Sie unter [Sample umfließendem PST Store Provider installieren](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikation-API finden Sie unter [Über die Replikation-API](about-the-replication-api.md).
+In diesem Thema werden die **MSProviderInit** -Funktion und die **MSGSERVICEENTRY** -Funktion mithilfe von codeBeispielen aus dem einGebundenen PST-Speicheranbieter demonstriert. Im Beispiel wird ein eingebundener PST-Anbieter implementiert, der in Verbindung mit der Replikations-API verwendet werden soll. Weitere Informationen zum herunterladen und Installieren des eingeWickelten Beispiel-PST-Speicheranbieters finden Sie unter [Installing the Sample Wrapped Store Provider](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikations-API finden Sie unter Informationen zur [Replikations-API](about-the-replication-api.md).
   
-Nachdem Sie einen gepackten PST-Anbieter initialisiert haben, müssen Sie Funktionen implementieren, sodass MAPI- und die MAPI-Warteschlange auf den Anbieter für die Nachricht anmelden anmelden können. Weitere Informationen finden Sie unter [Protokollierung für den Zugriff auf einen Anbieter umfließendem PST anmelden](logging-on-to-a-wrapped-pst-store-provider.md).
+Nachdem Sie einen eingebundenen PST-Speicheranbieter initialisiert haben, müssen Sie Funktionen implementieren, damit MAPI und der MAPI-Spooler sich beim Nachrichtenspeicher Anbieter anmelden können. Weitere Informationen finden Sie unter [Anmelden bei einem EingebundenEN PST-Speicheranbieter](logging-on-to-a-wrapped-pst-store-provider.md).
   
 ## <a name="initialization-routine"></a>Initialisierungsroutine
 
-Alle gepackten PST-Speicher-Anbieter müssen die **[MSProviderInit](msproviderinit.md)** -Funktion als Einstiegspunkt für die DLL des Anbieters initialisieren implementieren. **MSProviderInit** überprüft, ob die Versionsnummer der Anbieterschnittstelle Service `ulMAPIVer`, ist kompatibel mit die aktuelle Versionsnummer `CURRENT_SPI_VERSION`. Die Funktion speichert den MAPI-Speicher Management Routinen in die `g_lpAllocateBuffer`, `g_lpAllocateMore`, und `g_lpFreeBuffer` Parameter. Diese Speicher Management Routinen sollte während der gesamten Implementierung gepackten PST-Speicher für die Zuweisung von Arbeitsspeicher und Freigabe verwendet werden. 
+Alle eingebundenen PST-Speicheranbieter müssen die **[MSProviderInit](msproviderinit.md)** -Funktion als Einstiegspunkt implementieren, um die DLL des Anbieters zu initialisieren. **MSProviderInit** überprüft, ob die Versionsnummer der Dienstanbieter-Schnittstelle `ulMAPIVer`, mit der aktuellen Versionsnummer kompatibel ist. `CURRENT_SPI_VERSION` Die-Funktion speichert die MAPI-Speicherverwaltungsroutinen `g_lpAllocateMore`in den `g_lpFreeBuffer` `g_lpAllocateBuffer`Parametern, und. Diese Speicherverwaltungsroutinen sollten während der eingebundenen PST-Speicherimplementierung für die Arbeitsspeicherzuweisung und-Zuordnung verwendet werden. 
   
-### <a name="msproviderinit-example"></a>MSProviderInit()-Beispiel
+### <a name="msproviderinit-example"></a>MSProviderInit ()-Beispiel
 
 ```cpp
 STDINITMETHODIMP MSProviderInit ( 
@@ -106,9 +106,9 @@ STDINITMETHODIMP MSProviderInit (
 }
 ```
 
-### <a name="wrapped-pst-and-unicode-paths"></a>Gepackten PST- und Unicode-Pfade
+### <a name="wrapped-pst-and-unicode-paths"></a>UmSchlossene PST-und Unicode-Pfade
 
-Um das ursprüngliche Beispiel in Microsoft Visual Studio 2008 Verwendung von Unicode-Pfade zum NST für die Verwendung in Unicode-aktivierten Microsoft Outlook 2010 und Outlook 2013 vorbereitete überarbeiten, sollten die **CreateStoreEntryID** -Routine, die die Eintrags-ID erstellt, das verwenden. ein Format für die ASCII-Pfade und ein weiteres für Unicode-Pfade. Diese werden als Strukturen im folgenden Beispiel dargestellt. 
+Zur Nachrüstung des in Microsoft Visual Studio 2008 vorbereiteten Original Beispiels zur Verwendung von Unicode-Pfaden zur NST zur Verwendung in Unicode-fähigen Microsoft Outlook 2010 und Outlook 2013 sollte die **CreateStoreEntryID** -Routine, die die Eintrags-ID erzeugt, ein Format für ASCII-Pfade und ein weiteres für Unicode-Pfade. Diese werden im folgenden Beispiel als Strukturen dargestellt. 
   
 ```cpp
 typedef struct                              // short format
@@ -131,13 +131,13 @@ typedef struct                              // Long format to support Unicode pa
 ```
 
 > [!IMPORTANT]
-> Die Unterschiede zwischen diesen Strukturen sind zwei NULL-Bytes vor einem Unicode-Pfad. Wenn Sie interpretiert die Eintrags-ID in der "Service Eintrag routinemäßige", der die befolgt werden müssen, wäre eine Möglichkeit zum bestimmen, ob dies der Fall ist, wandeln Sie wie EIDMS zuerst, überprüfen Sie, ob die SzPath [0] NULL ist. Es ist, stattdessen als EIDMSW umgewandelt. 
+> Die Unterschiede in diesen Strukturen sind zwei NULL-Bytes vor einem Unicode-Pfad. Wenn Sie die Eintrags-ID in der folgenden "Dienst Eingabe Routine" interpretieren müssen, können Sie eine Möglichkeit ermitteln, ob dies der Fall ist, oder nicht, wenn Sie zuerst als eIDM, dann überprüfen Sie, ob die szPath [0] NULL ist. Wenn dies der Fall ist, wandeln Sie ihn stattdessen als EIDMSW. 
   
-## <a name="service-entry-routine"></a>Diensteintrag routine
+## <a name="service-entry-routine"></a>Diensteintrags Routine
 
-Die **[MSGSERVICEENTRY](msgserviceentry.md)** -Funktion ist der Einstiegspunkt des Nachricht, in der gepackten PST Informationsdienst konfiguriert ist. Die Funktionsaufrufe `GetMemAllocRoutines()` an den MAPI-Speicher Management Routinen abzurufen. Die Funktion verwendet die `lpProviderAdmin` Parameter Abschnitts Profile für den Anbieter und legt die Eigenschaften im Benutzerprofil zu finden. 
+Die **[MSGSERVICEENTRY](msgserviceentry.md)** -Funktion ist der Einstiegspunkt des Nachrichtendiensts, in dem der eingebundene PST-Speicheranbieter konfiguriert ist. Die Funktion ruft `GetMemAllocRoutines()` die MAPI-Speicherverwaltungsroutinen ab. Die-Funktion verwendet `lpProviderAdmin` den-Parameter, um den Profil Abschnitt für den Anbieter zu suchen, und legt die Eigenschaften im Profil fest. 
   
-### <a name="serviceentry-example"></a>ServiceEntry()-Beispiel
+### <a name="serviceentry-example"></a>ServiceEntry ()-Beispiel
 
 ```cpp
 HRESULT STDAPICALLTYPE ServiceEntry ( 
@@ -243,9 +243,9 @@ HRESULT STDAPICALLTYPE ServiceEntry (
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher](about-the-sample-wrapped-pst-store-provider.md)
-- [Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher](installing-the-sample-wrapped-pst-store-provider.md)
-- [Anmelden bei einem Anbieter von umschlossenem PST-Speicher](logging-on-to-a-wrapped-pst-store-provider.md)
-- [Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
-- [Herunterfahren eines Anbieters von umschlossenem PST-Speicher](shutting-down-a-wrapped-pst-store-provider.md)
+- [Informationen zum einGebundenen PST-Speicheranbieter](about-the-sample-wrapped-pst-store-provider.md)
+- [Installieren des eingeWickelten Beispiel-PST-Speicheranbieters](installing-the-sample-wrapped-pst-store-provider.md)
+- [Anmelden bei einem einGebundenen PST-Speicheranbieter](logging-on-to-a-wrapped-pst-store-provider.md)
+- [Verwenden eines einGebundenen PST-Speicheranbieters](using-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines einGebundenen PST-Speicheranbieters](shutting-down-a-wrapped-pst-store-provider.md)
 

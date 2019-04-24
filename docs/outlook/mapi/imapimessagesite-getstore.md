@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d1ca619e-8bdc-417b-aed6-23dd30e6eafa
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1f4e6c49ca1c537f78ccce708c4a0b00f81ad7e4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0c78574f213245a5c30ff589ade824e5c5bd84ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321434"
 ---
 # <a name="imapimessagesitegetstore"></a>IMAPIMessageSite::GetStore
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Nachrichtenspeicher, der die aktuelle Nachricht enthält zurück, wenn eine solche ein Speicher vorhanden ist. Diese Methode gibt NULL im Parameter _PpStore_ für eingebettete Nachrichten zurück, die in eine andere Nachricht anstatt direkt in einem Nachrichtenspeicher gespeichert werden. 
+Gibt den Nachrichtenspeicher zurück, der die aktuelle Nachricht enthält, wenn ein solcher Speicher vorhanden ist. Diese Methode gibt NULL im _ppStore_ -Parameter für eingebettete Nachrichten zurück, die in einer anderen Nachricht statt direkt in einem Nachrichtenspeicher gespeichert werden. 
   
 ```cpp
 HRESULT GetStore(
@@ -37,9 +37,9 @@ HRESULT GetStore(
 
  _ppStore_
   
-> [out] Ein Zeiger auf einen Zeiger auf den Nachrichtenspeicher.
+> Out Ein Zeiger auf einen Zeiger auf den Nachrichtenspeicher.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,19 +47,19 @@ S_OK
     
 S_FALSE 
   
-> Es ist kein Speicher, die die Nachricht enthält.
+> Es ist kein Speicher vorhanden, der die Nachricht enthält.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Liste der Schnittstellen im Zusammenhang mit der Formular-Servern finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetStore  <br/> |MFCMAPI (engl.) verwendet die **IMAPIMessageSite::GetStore** -Methode den aktuell zwischengespeicherten Zeiger auf den angegebenen Speicher, abgerufen, sofern es vorhanden ist.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getStore  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: GetStore** -Methode, um den aktuell zwischengespeicherten Zeiger auf den angegebenen Speicher abzurufen, sofern dieser verfügbar ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,7 +68,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formularoberflächen](mapi-form-interfaces.md)
+[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
 

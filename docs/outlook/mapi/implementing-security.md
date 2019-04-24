@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Sicherheitsmaßnahmen
+title: Implementieren von Sicherheit
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: 62db34a0-887c-4607-94ad-d8cae68b35c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c2926e7c94178d5a3135f34e2ab3b3ae11d145dd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c430160ee508a86f36d840c7916c0516cfc10fbd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310059"
 ---
-# <a name="implementing-security"></a>Implementieren von Sicherheitsmaßnahmen
+# <a name="implementing-security"></a>Implementieren von Sicherheit
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn das messaging-System erforderlich sind, ist der Adressbuchhierarchie verantwortlich für die Implementierung der Sicherheit für den Zugriff auf die messaging-System einer angemessene Lautstärke. Jedes ein- oder ausgehende Nachricht über einen Transportanbieter durch die MAPI-Warteschlange wird im Zusammenhang mit einer Sitzung Anbieter behandelt. Der Adressbuchhierarchie kann ein Anmeldedialogfeld für den Benutzer angezeigt, die für die Anmeldeinformationen des Benutzers aufgefordert werden, bevor er eine solche Verbindung. Alternativ kann der Adressbuchhierarchie zuvor eingegebenen Anmeldeinformationen des Benutzers im Bereich diese Eigenschaft in einem Profilabschnitt speichern und verwenden sie für den Zugriff ohne Bestätigung.
+Wenn das Messagingsystem dies erfordert, ist der Transportanbieter für die Implementierung einer angemessenen Sicherheitsstufe für den Zugriff auf das Messagingsystem verantwortlich. Jede eingehende oder ausgehende Nachricht, die über den MAPI-Spooler über einen Transportanbieter gesendet wird, wird im Kontext einer Anbieter Anmeldesitzung behandelt. Der Transportanbieter kann dem Benutzer ein Anmeldedialogfeld anzeigen, das die Anmeldeinformationen eines Benutzers anfordert, bevor eine solche Verbindung hergestellt wird. Alternativ kann der Transportanbieter die zuvor eingegebenen Anmeldeinformationen des Benutzers im Secure-Eigenschaftsbereich eines Profil Abschnitts speichern und für den Zugriff ohne Eingabeaufforderungen verwenden.
   
-Berücksichtigen Sie beim Implementieren von Ihrer Adressbuchhierarchie Sicherheit Folgendes:
+Berücksichtigen Sie beim Implementieren der Sicherheit Ihres Transportanbieters Folgendes:
   
-- Mit mehreren installierten Dienstanbieter können eine Vielzahl von Namen und Kennwörter, die einem Benutzer zugeordnet werden.
+- Bei mehreren installierten Dienstanbietern kann es eine Vielzahl von Namen und Kennwörtern geben, die einem Benutzer zugeordnet sind.
     
-- MAPI ermöglicht mehrerer Sitzungen mit mehreren Identitäten. Anbieter werden empfohlen, die Unterstützung mehrerer Sitzungen aber nicht dazu erforderlich sind.
+- MAPI ermöglicht mehrere Sitzungen mit mehreren Identitäten. Anbieter werden aufgefordert, mehrere Sitzungen zu unterstützen, sind jedoch nicht dazu verpflichtet.
     
-- Jede Sitzung mit eines Transportdienstes ist MAPI einen getrennten Abschnitt im Profil des Benutzers zugeordnet. Der Transportdienst kann die [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) -Methode verwenden, den Zugriff auf die in diesem Abschnitt, die verwendet werden kann, um alle Informationen im Zusammenhang mit dieser Sitzung, einschließlich der Anmeldeinformationen zu speichern. 
+- Jede Sitzung mit einem Transportanbieter wird von MAPI mit einem diskreten Abschnitt im Profil des Benutzers verknüpft. Der Transportanbieter kann die [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) -Methode verwenden, um Zugriff auf diesen Abschnitt zu erhalten, der zum Speichern der dieser Sitzung zugeordneten Informationen, einschließlich der Anmeldeinformationen, verwendet werden kann. 
     
-- Mit mehreren Anbietern installierten Transport gilt es nicht unbedingt, dass der Benutzer nur eine einzelne e-Mail-Adresse verfügt. Ein Benutzer kann eine separate e-Mail-Adresse für jeden Transportanbieter installierten haben oder eine andere Adresse für jede Sitzung auf einen einzigen Anbieter aufweisen kann.
+- Bei mehreren installierten Transportanbietern ist es nicht unbedingt wahr, dass der Benutzer nur eine einzige e-Mail-Adresse hat. Ein Benutzer kann eine separate e-Mail-Adresse für jeden installierten Transportanbieter haben oder eine andere Adresse für jede Sitzung in einem einzelnen Anbieter haben.
     
-Weitere Informationen zum Speichern von Anmeldeinformationen in Profil Abschnitten finden Sie unter [Message-Dienste und -Profilen](message-services-and-profiles.md) und [IProfSect: IMAPIProp](iprofsectimapiprop.md).
+Weitere Informationen zum Speichern von Anmeldeinformationen in Profil Abschnitten finden Sie unter [Message Services and Profiles](message-services-and-profiles.md) and [IProfSect: IMAPIProp](iprofsectimapiprop.md).
   
 

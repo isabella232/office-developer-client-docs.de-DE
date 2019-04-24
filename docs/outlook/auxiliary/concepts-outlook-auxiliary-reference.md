@@ -1,22 +1,22 @@
 ---
-title: Konzepte (Outlook-zusatzreferenz)
+title: Konzepte (Outlook-Hilfsreferenz)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: fa68a055-9e58-40ef-886e-4e8ebb08a2a9
-description: In diesem Abschnitt wird beschrieben, die vier APIs in Outlook 2013-Zusatzreferenz und finden Sie Beispielaufgaben, die diese APIs verwenden.
-ms.openlocfilehash: 9c62f4fe6593b0d58e5ab29305292537d289d69d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Abschnitt werden die vier APIs in der Outlook 2013-hilfsReferenz beschrieben, und es werden Beispiel Aufgaben bereitgestellt, die diese APIs verwenden.
+ms.openlocfilehash: c546166c42742fc54ee43eef7d006183b7c8a40e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316856"
 ---
-# <a name="concepts-outlook-auxiliary-reference"></a>Konzepte (Outlook-zusatzreferenz)
+# <a name="concepts-outlook-auxiliary-reference"></a>Konzepte (Outlook-Hilfsreferenz)
 
-In diesem Abschnitt wird beschrieben, die vier APIs in Outlook 2013-Zusatzreferenz und finden Sie Beispielaufgaben, die diese APIs verwenden.
+In diesem Abschnitt werden die vier APIs in der Outlook 2013-hilfsReferenz beschrieben, und es werden Beispiel Aufgaben bereitgestellt, die diese APIs verwenden.
 
 - [Outlook-Account-management](outlook-account-management.md)
     

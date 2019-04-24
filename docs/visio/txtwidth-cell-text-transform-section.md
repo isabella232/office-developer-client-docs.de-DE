@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e2215c67-25fa-1d75-9cce-f126bb8760a1
 description: 'Definiert die Breite eines Textblocks. Die Standardformel lautet:'
-ms.openlocfilehash: ecba66aaf1f7eeb6d16c6b0d4c6569aed051910f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 806307166035ebc2f8e20e7025d5ecb03c4d6e79
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316002"
 ---
-# <a name="txtwidth-cell-text-transform-section"></a>TxtWidth Cell (Text Transform Section)
+# <a name="txtwidth-cell-text-transform-section"></a>Zelle "TxtWidth" (Abschnitt "Text Transform")
 
 Definiert die Breite eines Textblocks. Die Standardformel lautet:
   
@@ -24,13 +24,13 @@ Definiert die Breite eines Textblocks. Die Standardformel lautet:
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle TxtWidth aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle TxtWidth aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | TxtWidth  <br/> |
+| Zellenname:  <br/> | Zelle TxtWidth  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TxtWidth aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle TxtWidth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

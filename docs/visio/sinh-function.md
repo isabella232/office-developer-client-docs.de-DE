@@ -9,36 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: de2aca1d-a591-cf39-990c-a24666764a6f
 description: Gibt den hyperbolischen Sinus eines Winkels zurück.
-ms.openlocfilehash: d45473b0d900c04580aa1dbc4c206fe70fa7318b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 305dd9e62a32db3a91724cd182964012e482442e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314805"
 ---
 # <a name="sinh-function"></a>SINHYP-Funktion
 
-Gibt den hyperbolischen Sinus eines Winkels zurück.
-    
- 
+Gibt den hyperbolischen Sinus eines Winkels zurück. 
   
 ## <a name="syntax"></a>Syntax
 
-SINH (** *Winkel* **) 
+SINH (* * *Winkel* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen hyperbolischen Sinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen Hyperbolischer Sinus abgerufen werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die SINH-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in _Winkel_angeben.
+Die SINH-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im _Winkel_an.
   
 ## <a name="example"></a>Beispiel
 

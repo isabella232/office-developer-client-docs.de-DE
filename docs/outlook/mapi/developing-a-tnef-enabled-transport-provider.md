@@ -1,5 +1,5 @@
 ---
-title: Entwickeln eines TNEF-fähigen Transportanbieters
+title: Entwickeln eines TNEF-fähigen Transport Anbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,33 +8,33 @@ api_type:
 - COM
 ms.assetid: 7525eee1-4016-49b8-9509-5ebbe1db819f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4d4f7ed75bb1144b7cd4a813b0d093246a30cca5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 282b1866699b695c647caedd130ce5abc1bcbc2c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316695"
 ---
-# <a name="developing-a-tnef-enabled-transport-provider"></a>Entwickeln eines TNEF-fähigen Transportanbieters
+# <a name="developing-a-tnef-enabled-transport-provider"></a>Entwickeln eines TNEF-fähigen Transport Anbieters
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um Interoperabilität zwischen Messagingsystemen zu fördern, die unterschiedliche Gruppen von MAPI-Funktionen zu unterstützen, stellt MAPI Transport Neutral Encapsulation Format (TNEF) als standard Möglichkeit zum Übertragen von Daten an. Dieses Format kapselt MAPI-Eigenschaften, die von einem zugrunde liegenden Messagingsystem in einen binären Datenstrom, der beim Senden eines Transportdienstes zusammen mit der Nachricht übertragen werden nicht unterstützt. Der Adressbuchhierarchie, die die Nachricht empfängt kann dann decodieren den binären Stream zum Abrufen aller Eigenschaften der ursprünglichen Nachricht und deren Clientanwendungen zur Verfügung zu stellen. Das betriebliche Modell für TNEF wird:
+Zur Förderung der Interoperabilität zwischen Messagingsystemen, die unterschiedliche MAPI-Funktionen unterstützen, stellt MAPI das Transport Neutral Encapsulation Format (TNEF) als Standardmethode zum Übertragen von Daten bereit. Dieses Format kapselt MAPI-Eigenschaften, die nicht von einem zugrunde liegenden Messagingsystem unterstützt werden, in einen binären Datenstrom, der zusammen mit der Nachricht übertragen werden kann, wenn ein Transportanbieter Sie sendet. Der Transportanbieter, der die Nachricht empfängt, kann dann den binären Datenstrom decodieren, um alle Eigenschaften der ursprünglichen Nachricht abzurufen und für Clientanwendungen zur Verfügung zu stellen. Das Betriebsmodell für TNEF lautet:
   
-- Messaging-Clients senden und Empfangen von Nachrichten in einem TNEF Transport wie gewohnt.
+- Messaging-Clients senden und empfangen Nachrichten wie gewohnt an einen TNEF-Transport.
     
-- Das Übertragungsprotokoll trennt die Eigenschaften für ausgehende Nachrichten in zwei Kategorien:, die das zugrunde liegenden Nachrichtensystem unterstützt und Prozeduren, die es nicht der Fall ist. Die Werte der Eigenschaften, die von der zugrunde liegenden messaging-System unterstützt werden, werden in das erforderliche Format übersetzt.
+- Der Transport trennt die Eigenschaften von ausgehenden Nachrichten in zwei Kategorien: die, die vom zugrunde liegenden Nachrichtensystem unterstützt werden, und die nicht. Die Werte der Eigenschaften, die vom zugrunde liegenden Messagingsystem unterstützt werden, werden in das erforderliche Format übersetzt.
     
-- Der Transport verwendet die MAPI TNEF-Methoden zum Codieren von nicht unterstützten Eigenschaften in einen einzelnen Datenstrom. Das Übertragungsprotokoll verwandelt klicken Sie dann diesen Datenstrom Daten in eine spezielle Anlage die ausgehende Nachricht, die mithilfe des Objektmodells für die zugrunde liegenden messaging-System-Anlage, vor dem Senden der Nachricht.
+- Der Transport verwendet die MAPI-TNEF-Methoden, um alle nicht unterstützten Eigenschaften in einem einzelnen Datenstrom zu codieren. Der Transport wandelt dann diesen Datenstrom in eine spezielle Anlage der ausgehenden Nachricht um, wobei das Anlagenmodell des zugrunde liegenden Messagingsystems verwendet wird, bevor die Nachricht gesendet wird.
     
-- Ein Transport TNEF aktiviert, der eine solche Nachricht empfängt hat zwei Funktionen. Erstens übersetzt es der eingehenden Nachricht Eigenschaften – unterstützt werden vom zugrunde liegenden Nachrichtensystem – in MAPI-Eigenschaften. Zweitens Wenn spezielle Anlage vorhanden ist, verwendet er die MAPI TNEF-Methoden zum Abrufen von zusätzlicher MAPI-Eigenschaften aus der Anlage vor dem übermitteln der Nachricht an eine Clientanwendung.
+- Ein TNEF-fähiger Transport, der eine solche Nachricht empfängt, hat zwei Möglichkeiten. Zunächst werden die Eigenschaften der eingehenden Nachricht, die vom zugrunde liegenden Nachrichtensystem unterstützt werden, in MAPI-Eigenschaften übersetzt. Zweitens verwendet es die MAPI-TNEF-Methoden, um zusätzliche MAPI-Eigenschaften aus der Anlage abzurufen, bevor die Nachricht an eine Clientanwendung übermittelt wird.
     
-MAPI stellt eine Implementierung der **ITnef** -Schnittstelle für die Verwendung von MAPI-Transport-Anbietern beim Arbeiten mit TNEF-Objekten. Die [OpenTnefStreamEx](opentnefstreamex.md) -Funktion wird verwendet, um TNEF-Objekte erstellen und Zuordnen einer Nachricht. TNEF-Streams basieren auf der Basis der OLE- **IStream** -Schnittstelle 
+MAPI stellt eine Implementierung der **ITnef** -Schnittstelle zur Verwendung durch MAPI-Transportanbieter beim Arbeiten mit TNEF-Objekten bereit. Die [OpenTnefStreamEx](opentnefstreamex.md) -Funktion wird verwendet, um TNEF-Objekte zu erstellen und diese einer Nachricht zuzuordnen. TNEF-Streams basieren auf der OLE **IStream** -Schnittstelle. 
   
 > [!NOTE]
-> Verwenden Sie **OpenTnefStreamEx** zum Erstellen von TNEF-Objekten. Die alte **OpenTNEFStream nicht ausgeführt werden** -Funktion noch vorhanden ist, für die Kompatibilität mit alten Quellcode und sollte nicht verwendet werden in einem anderen Element neu. 
+> Verwenden Sie **OpenTnefStreamEx** zum Erstellen von TNEF-Objekten. Die alte **OpenTnefStream** -Funktion ist weiterhin zur Kompatibilität mit altem Quellcode vorhanden und sollte in nichts neuem verwendet werden. 
   
 Die **ITnef** -Schnittstelle stellt die folgenden Methoden bereit: 
   
@@ -52,10 +52,10 @@ Die **ITnef** -Schnittstelle stellt die folgenden Methoden bereit:
     
 - [SetProps](itnef-setprops.md)
     
-Das Implementierungsmodell MAPI TNEF unterstützt:
+Das MAPI-TNEF-Implementierungsmodell unterstützt:
   
-- Alle MAPI-Eigenschaften wirkt sich weitere Nachrichteneigenschaften. In der Reihenfolge für MAPI-Nachrichten über einem messaging-System Transport überstehen müssen alle Eigenschaften, die als Eigenschaften des Messagingsystems codiert wird, können nicht gekapselte werden. Da fast nie zum Zeitpunkt bekannt ist, die eine Nachricht gesendet wird, unabhängig davon, ob ein MAPI-kompatibles Client die Meldung angezeigt wird, kann das Schema Kapselung ein Transportdienstes nur MAPI-Nachrichteneigenschaften zu codieren, die das messaging-System nicht der Fall ist systemintern unterstützt. Dies bedeutet, dass Nachrichten, die TNEF verwenden nicht "transparent" messaging-Systemen, die nicht auf MAPI wie UNIX SMTP-basierte messaging-Systeme. Diese Systeme erhalten die Eigenschaften, die sie unterstützen, in welcher Weise typisch ist für diese und andere Eigenschaften als eine codierte TNEF-Datenstrom empfangen werden. Der Transportdienst TNEF ist verantwortlich für die Unterscheidung zwischen diesen zwei Sätze von Eigenschaften und senden die unterstützte Gruppe in der richtigen Form für die messaging-System. TNEF Annahmen keine über die Ebene der Unterstützung von einem messaging-System aus. Jedoch ist in den Beispielen in diesem Abschnitt enthalten TNEF-Auslastung der Annahme ausgegangen, dass das messaging-System abgesehen davon, dass die Nachricht mindestens eine Anlage unterstützt. In einigen Fällen kann die Anlage nur über einen Datenstrom UUENCODE unterstützt und als Teil des Nachrichtentexts übertragen werden. Nur in seltenen Fällen müssen das messaging-System so wenig Unterstützung für Nachrichteneigenschaften, vollständige TNEF-Codierung alle Eigenschaften erforderlich ist.
+- Alle MAPI-Eigenschaften ohne Auswirkungen auf andere Nachrichteneigenschaften. Damit MAPI-Nachrichten den Transport über ein Messagingsystem überstehen, müssen alle Eigenschaften gekapselt werden, die nicht als Eigenschaften des Messagingsystems codiert werden können. Da es fast nie zu dem Zeitpunkt bekannt ist, zu dem eine Nachricht gesendet wird, unabhängig davon, ob ein MAPI-kompatibler Client die Nachricht empfängt, ermöglicht das Kapselungs Schema einem Transportanbieter, nur die MAPI-Nachrichteneigenschaften zu codieren, die das Messagingsystem nicht nativ unterstützt. Dies führt dazu, dass Nachrichten, die TNEF verwenden, nicht für Messagingsysteme, die nicht auf MAPI basieren, wie SMTP-basierte UNIX-Messagingsysteme, undurchsichtig sind. Diese Systeme erhalten die Eigenschaften, die Sie unterstützen, in welcher Weise auch immer, und andere Eigenschaften werden als codierter TNEF-Datenstrom empfangen. Der TNEF-Transportanbieter ist für die Differenzierung zwischen diesen beiden Eigenschaftensätzen und dem Senden der unterstützten Gruppe für das Messagingsystem verantwortlich. TNEF stellt keine Annahmen hinsichtlich der von einem Messagingsystem bereitgestellten Unterstützungsstufe dar. In den Beispielen für die TNEF-Verwendung in diesem Abschnitt wird jedoch davon ausgegangen, dass das Messagingsystem mindestens eine einzelne Anlage neben der Nachricht unterstützt. In einigen Fällen kann die Anlage nur über einen UUEncode-Stream unterstützt und als Teil des Nachrichtentexts übertragen werden. Nur in sehr seltenen Fällen wird das Messagingsystem so wenig Unterstützung für Nachrichteneigenschaften haben, dass die vollständige TNEF-Codierung aller Eigenschaften erforderlich ist.
     
-- Ein Mechanismus zum Bestimmen basierend, ob ein TNEF-Stream auf eine eingehende Nachricht an die Nachricht gehört auf der MAPI-Eigenschaft **PR_TNEF_CORRELATION_KEY** ([PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md)). Diese Eigenschaft sollte sowohl in der TNEF-Stream eine entsprechende Meldung-Kopfzeile gefunden werden. Wenn die-Eigenschaft denselben Wert an beiden Stellen hat oder an beiden Stellen fehlt, wird angenommen, dass der TNEF-Stream an die Nachricht gehören. Andernfalls wird der TNEF-Stream ignoriert. TNEF aktiviert Transporten sind verantwortlich für die Auswahl eines Wertes für diese Eigenschaft für ausgehende Nachrichten und codiert ihn in eine entsprechende Meldung-Kopfzeile (beispielsweise der Nachrichten-ID: Kopfzeile für SMTP-Nachrichten) und in der TNEF-Stream.
+- Ein Mechanismus zum bestimmen, ob ein TNEF-Stream für eine eingehende Nachricht zu der Nachricht gehört, basierend auf der MAPI-Eigenschaft **PR_TNEF_CORRELATION_KEY** ([pidtagtnefcorrelationkey (](pidtagtnefcorrelationkey-canonical-property.md)). Diese Eigenschaft sollte sowohl im TNEF-Stream als auch in einem entsprechenden Nachrichtenkopf gefunden werden. Wenn die Eigenschaft an beiden Stellen denselben Wert aufweist oder fehlt, wird davon ausgegangen, dass der TNEF-Stream zur Nachricht gehört. Andernfalls wird der TNEF-Stream ignoriert. TNEF-aktivierte Übertragungen sind für die Auswahl eines Werts für diese Eigenschaft in ausgehenden Nachrichten und die Codierung in einem entsprechenden Nachrichtenkopf (beispielsweise der Message-ID:-Kopfzeile für SMTP-Nachrichten) und im TNEF-Datenstrom verantwortlich.
     
 

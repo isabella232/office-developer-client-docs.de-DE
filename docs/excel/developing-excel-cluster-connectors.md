@@ -1,5 +1,5 @@
 ---
-title: Entwickeln von Excel-Clusterconnectoren
+title: Entwickeln von Excel-Cluster-Konnektoren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,34 +7,34 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: b538ae44-37d2-496b-b6e7-b0e39f6e38cb
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 8c9a166ac06685c0a450e1e0bd60b2fbef67d336
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e1c70713586a7a143f119a2c3e9d34b982dcedba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310955"
 ---
-# <a name="developing-excel-cluster-connectors"></a>Entwickeln von Excel-Clusterconnectoren
+# <a name="developing-excel-cluster-connectors"></a>Entwickeln von Excel-Cluster-Konnektoren
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Excel-clusterconnectoren bieten eine Möglichkeit zum Aufrufen der clustersichere benutzerdefinierte Funktion in einer XLL für einen gruppierten Server automatisch verlagern. Eine Beschreibung der benutzerdefinierten Funktionen clustersichere finden Sie unter [Clustersichere Funktionen](cluster-safe-functions.md). Diese Verschiebung kann Leistung verbessern, indem Sie weitere Netzwerke-Ressourcen verwendet werden. Ein Clusterconnector wird in der Regel durch eine hohe Leistung Compute Cluster Hersteller entwickelt.
+Excel-Cluster-Konnektoren bieten eine Möglichkeit, Cluster sichere benutzerdefinierte Funktionsaufrufe in einer XLL automatisch an einen gruppierten Server zu verschieben. Eine Beschreibung der Cluster sicheren benutzerdefinierten Funktionen finden Sie unter [Cluster Safe Functions](cluster-safe-functions.md). Diese Verschiebung kann die Leistung verbessern, indem mehr Computerressourcen verwendet werden können. Ein Cluster-Konnektor wird in der Regel von einem Hochleistungs-Compute-Cluster-Anbieter entwickelt.
   
-## <a name="cluster-connectors"></a>Clusterconnectoren
+## <a name="cluster-connectors"></a>Cluster-Konnektoren
 
-Ein Clusterconnector ist, dass eine DLL, die definierten Einstiegspunkte, um Excel bietet wird verwendet, um benutzerdefinierte Funktion clustersichere Anrufe zu koordinieren. Dient als Schnittstelle zwischen Excel und leistungsfähige Computerclusters für Sitzung Management, zum Beschleunigen des Funktion aufruft (durch das übergeben den Namen der Funktion voll qualifizierte und den Anruf übergebene Argumente) und für die Rückgabe der Ergebnisse nach Excel über eine Rückrufmechanismus.
+Ein Cluster-Konnektor ist eine DLL, die definierte Einstiegspunkte bereitstellt, die Excel zum Koordinieren von Cluster sicheren benutzerdefinierten Funktionsaufrufen verwendet. Sie dient als Schnittstelle zwischen Excel und dem Hochleistungs-Compute-Cluster, für die Sitzungsverwaltung, für Funktionsaufrufe (durch Übergeben des vollqualifizierten Funktionsnamens und der tatsächlichen Argumente des Aufrufs) sowie für das Zurückgeben von Anruf Ergebnissen an Excel über eine Callback-Mechanismus.
   
-Um einen Clusterconnector zu erstellen, erstellen Sie eine DLL, die die Einstiegspunkte aufgeführt, die in [Excel-Clusterconnector-Funktionen](excel-cluster-connector-functions.md)verfügbar macht.
+Erstellen Sie zum Erstellen eines Cluster-Konnektors eine DLL, die die in den [Excel-Cluster](excel-cluster-connector-functions.md)-konnektorfunktionen aufgeführten Einstiegspunkte verfügbar macht.
   
-## <a name="installing-a-cluster-connector"></a>Installieren eines Clusterconnectors
+## <a name="installing-a-cluster-connector"></a>Installieren eines Cluster-Konnektors
 
-Der Setupcode der Verbindung muss einen Clusterconnector in Excel zur Verfügung zu stellen, die DLL der Verbindung auf dem Computer installieren, auf dem Excel installiert ist. Darüber hinaus muss der Setup-Code der Verbindung einen Eintrag für den Connector unter den folgenden Registrierungsschlüssel hinzufügen:
+Damit ein Cluster-Konnektor in Excel verfügbar ist, muss der Setup-Code des Connectors die DLL des Connectors auf dem Computer installieren, auf dem Excel installiert ist. Darüber hinaus muss der Setup-Code des Connectors einen Eintrag für den Connector unter dem folgenden Registrierungsschlüssel hinzufügen:
   
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Excel Cluster Connectors\
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Excel\Excel-Cluster-Connectors \
   
-Fügen Sie einen Knoten auf diesen Schlüssel für den Clusterconnector, der angibt, die in der folgenden Zeichenfolgen:
+Fügen Sie diesem Schlüssel einen Knoten für den Cluster-Konnektor hinzu, der die folgenden Zeichenfolgen angibt:
   
--  `Name`– der Name, der in der Liste der clusterconnectoren in Excel angezeigt wird.
+-  `Name`– der Name, der in der Liste der Cluster-Konnektoren in Excel angezeigt wird.
     
 -  `Filename`– der vollständige Pfad für die DLL.
     

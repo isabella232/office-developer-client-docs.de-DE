@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 09955996-b904-4c0d-8ba5-954a8875c055
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 7b2761e20444c51d08380aee01c41eee797733eb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321413"
 ---
 # <a name="imapimessagesitedeletemessage"></a>IMAPIMessageSite::DeleteMessage
 
@@ -38,11 +38,11 @@ HRESULT DeleteMessage(
 
  _pViewContext_
   
-> [in] Ein Zeiger auf eine Ansicht Context-Objekt.
+> in Ein Zeiger auf ein View-Kontextobjekt.
     
  _prcPosRect_
   
-> [in] Ein Zeiger auf ein [Rechteck](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx) -Struktur, die im Fenstergröße und Position des aktuellen Formulars enthält. Das nächste Formular angezeigt wird auch dieses Fenster Rechteck verwendet. 
+> in Ein Zeiger auf eine [Rect](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx) -Struktur, die die Größe und Position des aktuellen Formulars enthält. Das nächste Formular wird auch dieses Fensterrechteck verwendet. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -52,41 +52,41 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Der Vorgang wird von dieser Site Nachricht nicht unterstützt.
+> Der Vorgang wird von dieser Nachrichtenwebsite nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Form-Objekt die **IMAPIMessageSite::DeleteMessage** -Methode aufgerufen, um die Nachricht zu löschen, die das Formular derzeit angezeigt wird. 
+Ein Form-Objekt ruft die **IMAPIMessageSite::D eletemessage** -Methode auf, um die Nachricht zu löschen, die vom Formular derzeit angezeigt wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Nach der Rückgabe von **DeleteMessage**müssen Formular-Objekte für eine neue Nachricht überprüfen und anschließend schließen, wenn keines vorhanden ist. Um zu bestimmen, ob die Nachricht, der **DeleteMessage** reagiert in einen Ordner **Gelöschte Objekte** verschoben oder gelöscht wurde, kann ein Form-Objekt rufen Sie die [IMAPIMessageSite::GetSiteStatus](imapimessagesite-getsitestatus.md) -Methode, um zu bestimmen, ob das Flag DELETE_IS_MOVE zurückgegeben wurde. 
+Nach der Rückgabe von **DeleteMessage**müssen Formularobjekte nach einer neuen Nachricht suchen und dann selbst entlassen werden, wenn keine vorhanden ist. Um zu ermitteln, ob die Nachricht, auf die **DeleteMessage** gehandelt wurde, gelöscht oder in einen Ordner " **Gelöschte Elemente** " verschoben wurde, kann ein Form-Objekt die [IMAPIMessageSite:: GetSiteStatus](imapimessagesite-getsitestatus.md) -Methode aufrufen, um zu bestimmen, ob das DELETE_IS_MOVE-Flag zurückgegeben wurde. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Formular Viewer Implementierung der **DeleteMessage** -Methode auf die nächste Nachricht verschiebt, nachdem sie eine Nachricht gelöscht, sollten die Implementierung rufen Sie die [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) -Methode und übergeben die Kennzeichen VCDIR_DELETE vor dem Ausführen das tatsächliche löschen. Wenn ein Formular Viewer Implementierung der **DeleteMessage** gelöschte Nachricht (beispielsweise in einem Ordner **Gelöschte Elemente** ) verschoben wird, muss die Implementierung der Nachricht speichern, wenn die Nachricht geändert wurde. 
+Wenn die Implementierung der **DeleteMessage** -Methode eines Formular Viewers zur nächsten Nachricht wechselt, nachdem eine Nachricht gelöscht wurde, sollte die Implementierung die [IMAPIViewContext:: ActivateNext](imapiviewcontext-activatenext.md) -Methode aufrufen und das VCDIR_DELETE-Flag vor dem Ausführen von der tatsächliche Löschvorgang. Wenn die **DeleteMessage** -Implementierung eines Formular Viewers die gelöschte Nachricht (beispielsweise in einen Ordner " **Gelöschte Elemente** ") verschiebt, muss die Implementierung Änderungen an der Nachricht speichern, wenn die Nachricht geändert wurde. 
   
-**DeleteMessage** eine normale Implementierung werden die folgenden Aufgaben ausgeführt: 
+Eine typische Implementierung von **DeleteMessage** führt die folgenden Aufgaben aus: 
   
-1. Wenn die Implementierung die Nachricht verschoben wird, wird die [IPersistMessage::Save](ipersistmessage-save.md) -Methode **null** im _pMessage_ -Parameter und **true** im _fSameAsLoad_ -Parameter übergeben. 
+1. Wenn die Implementierung die Nachricht verschiebt, ruft Sie die [IPersistMessage:: Save](ipersistmessage-save.md) -Methode auf und **übergibt NULL** im _pMessage_ -Parameter und **true** im _fSameAsLoad_ -Parameter. 
     
-2. Sie ruft die **IMAPIViewContext::ActivateNext** -Methode, die das VCDIR_DELETE-Flag in der _UlDir_ -Parameter übergeben. 
+2. Die **IMAPIViewContext:: ActivateNext** -Methode wird aufgerufen, und das VCDIR_DELETE-Flag wird im _ulDir_ -Parameter übergeben. 
     
-3. Wenn der **ActivateNext** -Aufruf fehlschlägt, wird zurückgegeben. Wenn **ActivateNext** S_FALSE zurückgibt, wird die [IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) -Methode. 
+3. Wenn der **ActivateNext** -Aufruf fehlschlägt, wird zurückgegeben. Wenn **ActivateNext** den Wert S_FALSE zurückgibt, wird die [IPersistMessage:: HandsOffMessage](ipersistmessage-handsoffmessage.md) -Methode aufgerufen. 
     
-4. Löscht oder verschiebt die Nachricht.
+4. Die Nachricht wird gelöscht oder verschoben.
     
-Rufen Sie die Windows [GetWindowRect](https://msdn.microsoft.com/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten. 
+Rufen Sie die Windows- [GetWindowRect](https://msdn.microsoft.com/library/ms633519) -Funktion auf, um die vom Fenster eines Formulars verwendete **Rect** -Struktur abzurufen. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit der Formular-Servern finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::DeleteMessage  <br/> |Nicht implementiert.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer::D eleteMessage  <br/> |Nicht implementiert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -103,7 +103,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formularoberflächen](mapi-form-interfaces.md)
+[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
 

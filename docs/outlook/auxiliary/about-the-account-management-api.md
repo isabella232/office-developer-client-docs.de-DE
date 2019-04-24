@@ -6,33 +6,33 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: eb6b921d-ecf8-3ce5-87ba-ac1632416b05
-description: 'Der Konto-Verwaltungs-API ermöglicht den Zugriff auf Kontoinformationen und Benachrichtigungen von kontoänderungen unterstützt. E-Mail-Anbieter Sie als dieser API-Clients wie folgt:'
-ms.openlocfilehash: 678143def25395c47f1c17cc99dcdcd1fb145e1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Die Account Management-API bietet Zugriff auf Kontoinformationen und unterstützt Benachrichtigungen über Kontoänderungen. Als Clients dieser API führen e-Mail-Anbieter folgende Aktionen aus:'
+ms.openlocfilehash: 76520b7cc7f28ede28257729e4e4fbe2d5096290
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316940"
 ---
 # <a name="about-the-account-management-api"></a>Informationen zur Kontoverwaltungs-API
 
-Der Konto-Verwaltungs-API ermöglicht den Zugriff auf Kontoinformationen und Benachrichtigungen von kontoänderungen unterstützt. E-Mail-Anbieter Sie als dieser API-Clients wie folgt:
+Die Account Management-API bietet Zugriff auf Kontoinformationen und unterstützt Benachrichtigungen über Kontoänderungen. Als Clients dieser API führen e-Mail-Anbieter folgende Aktionen aus:
   
-1. Verwenden Sie zum Verwalten des Zugriffs auf Konten und Einrichten von Benachrichtigungen bezüglich kontoänderungen [IOlkAccountManager](iolkaccountmanager.md) . 
+1. Verwenden Sie [IOlkAccountManager](iolkaccountmanager.md) , um den Zugriff auf Konten zu verwalten und Benachrichtigungen zu Kontoänderungen einzurichten. 
     
-2. Implementieren und [IOlkAccountNotify](iolkaccountnotify.md) zum Senden von Benachrichtigungen bezüglich kontoänderungen verwenden. 
+2. Implementieren und Verwenden von [IOlkAccountNotify](iolkaccountnotify.md) zum Senden von Benachrichtigungen zu Kontoänderungen. 
     
 3. Verwenden Sie [IOlkEnum](iolkenum.md) zum Aufzählen von Konten. 
     
-4. Verwenden Sie [IOlkAccount](iolkaccount.md) zum Abrufen und Festlegen von Eigenschaften und andere Informationen über ein Konto an. Clients erhalten diese Schnittstelle über [IOlkAccountManager::FindAccount](iolkaccountmanager-findaccount.md) oder [IOlkEnum::GetNext](iolkenum-getnext.md) ein individuelles Konto Zugriff auf. 
+4. Verwenden Sie [IOlkAccount](iolkaccount.md) , um Eigenschaften und andere Informationen zu einem Konto abzurufen und festzulegen. Clients rufen diese Schnittstelle über [IOlkAccountManager:: FindAccount](iolkaccountmanager-findaccount.md) oder [IOlkEnum:: GetNext](iolkenum-getnext.md) ab, um auf ein einzelnes Konto zuzugreifen. 
     
-5. Implementieren und [IOlkAccountHelper](iolkaccounthelper.md) zum Bereitstellen der Konto-Manager-Hilfsprogramm-Funktionen, einschließlich erste ein Konto Profilname und der aktuellen MAPI-Sitzung verwenden. 
+5. Implementieren und verwenden Sie [IOlkAccountHelper](iolkaccounthelper.md) , um die Hilfsfunktion des Konto-Managers bereitzustellen, einschließlich dem Profilnamen eines Kontos und der aktuellen MAPI-Sitzung. 
     
-6. Implementieren Sie und verwenden Sie [IOlkErrorUnknown](iolkerrorunknown.md) , um zusätzliche Informationen zu einem Fehler in **IOlkAccountManager**, **IOlkAccountNotify**und **IOlkAccount**bereitzustellen. 
+6. Implementieren und verwenden Sie [IOlkErrorUnknown](iolkerrorunknown.md) , um zusätzliche Informationen zu einem Fehler in **IOlkAccountManager**, **IOlkAccountNotify**und **IOlkAccount**bereitzustellen. 
 
-##  <a name="account-management-api-components"></a>Konto-Verwaltungs-API-Komponenten
+##  <a name="account-management-api-components"></a>API-Komponenten für die Kontoverwaltung
 
-Die Konto-Management-API bietet die folgenden Definitionen, die Datentypen, die Schnittstellen, die mit dem Namen, und Eigenschaften.
+Die Account Management-API bietet die folgenden Definitionen, Datentypen, Schnittstellen, benannten Eigenschaften und Eigenschaften.
   
 ### <a name="definitions"></a>Definitionen
   

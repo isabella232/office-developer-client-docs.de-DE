@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c77a8ef1-0730-d458-b35f-451d3f450fac
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0211a326e94c5847c040040e0e0e4e9ddd1d760d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b76c55fd9ddc3aa7698f75aa6ce965544b2c9aae
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317437"
 ---
 # <a name="imscapabilitiesgetcapabilities"></a>IMSCapabilities::GetCapabilities
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft Informationen zu was ein Speicher unterstützt werden kann, basierend auf die angegebene Auswahl.
+Ruft Informationen darüber ab, was ein Informationsspeicher basierend auf der angegebenen Auswahl unterstützenkann.
   
 ```cpp
 ULONG GetCapabilities( 
@@ -37,20 +37,20 @@ MSCAP_SELECTOR mscapSelector
 
  *mscapSelector* 
   
-> [in] Selektor, der angibt, welche Funktionen zurückgegeben.
+> in Selector, der angibt, welche Funktionen zurückgegeben werden sollen.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 MSCAP_SECURE_FOLDER_HOMEPAGES
   
-> Unterstützung für Homepages in einem Speicher nicht standardmäßigen Ordners. Dies kann zurückgegeben werden, wenn **MSCAP_SEL_FOLDER** im *MscapSelector* angegeben ist. 
+> Unterstützung für Ordner-Homepages in einem nicht standardmäßigen Speicher. Dies kann zurückgegeben werden, wenn **MSCAP_SEL_FOLDER** in *mscapSelector* angegeben ist. 
     
 MSCAP_RES_ANNOTATION
   
-> Wenn eine Einschränkung ungültige Argumente wie ungültige Eigenschaften enthält, der Informationsspeicher ignoriert die ungültige Argumente und verarbeitet nur die gültigen Argumente. Dies kann zurückgegeben werden, wenn **MSCAP_SEL_RESTRICTION** im *MscapSelector* angegeben ist. 
+> Wenn eine Einschränkung ungültige Argumente wie ungültige Eigenschaften enthält, ignoriert der Speicher die ungültigen Argumente und verarbeitet nur die gültigen Argumente. Dies kann zurückgegeben werden, wenn **MSCAP_SEL_RESTRICTION** in *mscapSelector* angegeben ist. 
     
 NULL
   
-> Jede Funktion basierend auf dem angegebenen Selektor unterstützt der Speicher nicht.
+> Der Informationsspeicher unterstützt keine Funktionen basierend auf der angegebenen Auswahl.
     
 

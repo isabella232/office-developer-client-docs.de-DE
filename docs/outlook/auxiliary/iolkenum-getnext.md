@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b387f896-c213-fc07-a12a-33917e620837
-description: Ruft das nächste Konto in den Enumerator ab.
-ms.openlocfilehash: 496a4d787916d051c051b3a19a7113d9d50c6fe7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft das nächste Konto im Enumerator ab.
+ms.openlocfilehash: e2ad98f7d7e71bd91d48b3824423e305baab429a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321896"
 ---
 # <a name="iolkenumgetnext"></a>IOlkEnum::GetNext
 
-Ruft das nächste Konto in den Enumerator ab.
+Ruft das nächste Konto im Enumerator ab.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkEnum](iolkenum.md).
+Siehe [IOlkEnum](iolkenum.md).
   
 ```cpp
 HRESULT IOlkEnum:: GetNext( 
@@ -31,20 +31,20 @@ HRESULT IOlkEnum:: GetNext(
 
 ## <a name="parameters"></a>Parameter
 
-_ppunk_
+_ppUnk_
   
-> [in] Ein Zeiger auf eine **IUnknown** -Schnittstelle, die der Client Abfragen kann, um eine [IOlkAccount](iolkaccount.md) -Schnittstelle zu erhalten. 
+> in Ein Zeiger auf eine **IUnknown** -Schnittstelle, die der Client Abfragen kann, um eine [IOlkAccount](iolkaccount.md) -Schnittstelle abzurufen. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|S_FALSE  <br/> |Das Ende wurde der Enumerator erreicht werden.  <br/> |
+|S_FALSE  <br/> |Der Enumerator hat das Ende erreicht.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Die angegebene *Ppunk* Schnittstelle erbt von **IUnknown**. Der Client kann diese Schnittstelle (Verwendung von **QueryInterface**) Abfragen, um einen Zeiger auf eine Schnittstelle **IOlkAccount** erhalten und Abrufen oder Festlegen von Informationen für dieses Konto. 
+Die von *ppUnk* angegebene Schnittstelle erbt von **IUnknown**. Der Client kann diese Schnittstelle Abfragen (mithilfe von **IUnknown:: QueryInterface**), um einen Zeiger auf eine **IOlkAccount** -Schnittstelle abzurufen und Informationen für dieses Konto abzurufen oder festzulegen. 
   
 ## <a name="see-also"></a>Siehe auch
 

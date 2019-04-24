@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: 628745f4-82e9-4838-9726-6f3e506a654f
 localization_priority: Priority
 ms.openlocfilehash: d7d27e98189a5b6784e4db48c81a545b85f01fc1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306119"
 ---
 # <a name="create-and-customize-a-web-app-in-access"></a>Erstellen und Anpassen einer Web-App in Access
 
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 Access 2013 umfasst ein neues Anwendungsmodell, das Experten das schnelle Erstellen webbasierter Anwendungen ermöglicht. In Access sind eine Reihe an Vorlagen enthalten, die Sie für den schnellen Einstieg beim Erstellen Ihrer Anwendung verwenden können.
 
@@ -67,7 +67,7 @@ Die durch Auswahl des Schemas für Probleme erstellten Tabellen werden im Kachel
   
 In einer Access-Desktop-PC-Datenbank (.accdb) werden die Beziehungen zwischen Tabellen im Fenster **Beziehungen** verwaltet. Access 2013-Apps verwalten Beziehungen durch die Verwendung von Feldern, die auf den Datentyp **Nachschlagen** festgelegt sind. Im Folgenden überprüfen wir die Beziehungen für die Tabelle „Probleme", indem wir mit der rechten Maustaste auf die Kachel **Probleme** klicken und **Tabelle bearbeiten** auswählen.
   
-Das Feld **Kunde** steht im Zusammenhang mit der Tabelle **Kunden**. Wählen Sie zum Überprüfen der Beziehung das Feld **Kunde** und dann die Option zum Ändern der Nachschlagefunktion**** aus. Der**** Nachschlage-Assistent wird analog zur Darstellung in Abbildung 2 angezeigt. 
+Das Feld **Kunde** steht im Zusammenhang mit der Tabelle **Kunden**. Wählen Sie zum Überprüfen der Beziehung das Feld **Kunde** und dann die Option zum Ändern der Nachschlagefunktion aus. Der Nachschlage-Assistent wird analog zur Darstellung in Abbildung 2 angezeigt. 
   
 **Abbildung 2. Der die Beziehung zur Tabelle „Kunden“ anzeigende Nachschlage-Assistent**
 
@@ -97,7 +97,7 @@ Verwenden Sie die Ansichtsauswahl zum Auswählen einer der drei verfügbaren Ans
   
 Durch das Auswählen von **Liste** wird die Ansicht **Kundenliste** aktiviert, die eine Ansicht vom Typ „Detailinformationen" ist. „Detailinformationen" ist eine der durch Access automatisch generierten Ansichten, wenn Sie eine Tabelle erstellen. Das Hauptmerkmal einer Ansicht vom Typ „Detailinformationen" ist der Listenbereich, der im linken Bereich der Ansicht angezeigt wird. Der Listenbereich wird zum Filtern und Navigieren der in der Ansicht enthaltenen Datensätze verwendet. Für das Implementieren einer durchsuchbaren Liste in einer Access-Desktop-PC-Datenbank müsste benutzerdefinierter Code geschrieben werden. 
   
-Wenn Sie **Datenblatt** auswählen, wird die Ansicht **Kundendatenblatt** angezeigt. Das Datenblatt ist die andere Ansicht, die Access automatisch generiert, wenn Sie eine Tabelle erstellen. In Datenblattansichten können Sie Daten ähnlich wie bei einer Kalkulationstabelle eingeben, sortieren und filtern. 
+Choosing **Datasheet** opens the **Customers Datasheet** view. Datasheet is the other kind of view Access automatically generates when you create a table. Datasheet views are useful for those who find it easier to enter, sort, and filter data in a spreadsheet-like manner. 
   
 Durch das Auswählen von „Gruppen“ wird eine Ansicht vom Typ „Zusammenfassung“ geöffnet. Ansichten vom Typ „Zusammenfassung“ können zum Gruppieren von Datensätzen auf Grundlage eines Felds und zum optionalen Berechnen einer Summe oder eines Mittelwerts verwendet werden.
   

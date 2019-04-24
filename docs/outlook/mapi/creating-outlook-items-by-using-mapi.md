@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Outlook-Elementen mit MAPI
+title: Erstellen von Outlook-Elementen mithilfe von MAPI
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,39 +8,39 @@ api_type:
 - COM
 ms.assetid: 92070b45-33cf-4b19-a899-7956bda79752
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 52adb2b4e09b520eda956891974e6d8e434422ff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e5279bb2d948e1b1f5ab252e49e766ebc0f1845a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315113"
 ---
-# <a name="creating-outlook-items-by-using-mapi"></a>Erstellen von Outlook-Elementen mit MAPI
+# <a name="creating-outlook-items-by-using-mapi"></a>Erstellen von Outlook-Elementen mithilfe von MAPI
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In den Themen in diesem Abschnitt wird gezeigt, wie Outlook-Elementen per MAPI zu erstellen.
+Die Themen in diesem Abschnitt veranschaulichen das Erstellen von Outlook-Elementen mithilfe von MAPI.
   
 - [Installieren der in diesem Abschnitt verwendeten Beispiele](how-to-install-the-samples-used-in-this-section.md)
     
-    In diesem Thema wird das Installieren und die Beispiele in diesem Abschnitt behandelten anzeigen.
+    In diesem Thema wird gezeigt, wie Sie die in diesem Abschnitt erläuterten Beispiele installieren und anzeigen.
     
-- [Erstellen eines einfachen E-Mail-Elements](how-to-create-a-simple-mail-item.md)
+- [Erstellen eines einfachen e-Mail-Elements](how-to-create-a-simple-mail-item.md)
     
-    In diesem Thema veranschaulicht, wie eine einfache e-Mail-Element zu erstellen, die eine lesebestätigung anfordert.
+    In diesem Thema wird gezeigt, wie Sie ein einfaches e-Mail-Element erstellen, das eine Lesebestätigung anfordert.
     
 - [Erstellen eines einfachen wiederkehrenden Aufgabenelements](how-to-create-a-simple-recurrent-task-item.md)
     
-    In diesem Thema veranschaulicht, wie ein einfaches Aufgabenelement erstellen, die jede Woche auftritt.
+    In diesem Thema wird gezeigt, wie Sie ein einfaches Aufgabenelement erstellen, das wöchentlich stattfindet.
     
-- [Erstellen eines komplexen Terminserienelements](how-to-create-a-complex-recurrent-appointment-item.md)
+- [Erstellen eines komplexen wiederkehrenden Terminelements](how-to-create-a-complex-recurrent-appointment-item.md)
     
-    In diesem Thema wird wie ein Weekly wiederkehrenden Terminelement erstellt, die auch in Erwägung Probleme im Zusammenhang mit Zeitzonen akzeptiert.
+    In diesem Thema wird gezeigt, wie Sie ein wöchentlich wiederkehrendes Terminelement erstellen, das auch Probleme im Zusammenhang mit Zeitzonen berücksichtigt.
     
 - [Lesen und Analysieren eines Serienmusters](how-to-read-and-parse-a-recurrence-pattern.md)
     
-    In diesem Thema wird das Lesen und Analysieren eines Serienmusters, das für ein Terminelement.
+    In diesem Thema wird gezeigt, wie Sie ein Serienmuster für ein Terminelement lesen und analysieren.
     
 

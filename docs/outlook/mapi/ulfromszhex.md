@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: e2d6b6bf-f96d-460c-859a-21961ac9237c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e6de4be29811dafaf5288b2ccb39c0342a314bad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 950f5513696a9dd9d52db7b7ee912d3f7d12cc48
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315365"
 ---
 # <a name="ulfromszhex"></a>UlFromSzHex
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert eine mit Null endende Zeichenfolge von Hexadezimalzahlen in eine lange Ganzzahl ohne Vorzeichen. 
+Konvertiert eine NULL-terminierte Zeichenfolge mit Hexadezimalziffern in eine nicht signierte lange ganze Zahl. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 ULONG UlFromSzHex(
@@ -43,16 +43,16 @@ LPCSTR lpsz
 
  _lpsz_
   
-> [in] Zeiger auf die Null-Zeichenfolge konvertiert werden soll. Der Parameter _Lpsz_ muss 65536 Zeichen nicht überschreiten. 
+> in Zeiger auf die zu konvertierende NULL-terminierte Zeichenfolge. Der _lpsz_ -parameter darf 65536 Zeichen nicht überschreiten. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
- **UlFromSzHex** gibt eine lange Ganzzahl ohne Vorzeichen zurück. Wenn die Zeichenfolge nicht mit mindestens eine hexadezimale Ziffer beginnt, wird 0 (null) zurückgegeben. 
+ **UlFromSzHex** gibt eine lange ganze Zahl ohne Vorzeichen zurück. Wenn die Zeichenfolge nicht mit mindestens einer Hexadezimalzahl beginnt, wird NULL zurückgegeben. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **UlFromSzHex** beendet konvertieren, wenn das erste Zeichen in der Zeichenfolge, die keine hexadezimale Ziffer ist erreicht. Beispielsweise gibt **UlFromSzHex** die Zeichenfolge "5a" wird angegeben, den Ganzzahlwert 90. Die Zeichenfolge "5g5h" angegeben, gibt die Funktion den ganzzahligen Wert 5 zurück. Wenn die Zeichenfolge "g5h5", gibt **UlFromSzHex** 0 (null) zurück. 
+Die **UlFromSzHex** -Funktion wird nicht mehr konvertiert, wenn Sie das erste Zeichen in der Zeichenfolge erreicht, die keine hexadezimale Ziffer ist. Beispiel: bei der Zeichenfolge "5A" gibt **UlFromSzHex** den ganzzahligen Wert 90 zurück. Bei der Zeichenfolge "5g5h" gibt die Funktion den ganzzahligen Wert 5 zurück. Bei der Zeichenfolge "g5h5" gibt **UlFromSzHex** NULL zurück. 
   
- **UlFromSzHex** wird entsprechend diakritischen Unterschiede ermöglicht aber auch "a" bis "f" und "A" bis "F" für Hexadezimalzahlen. In den Formaten Unicode und DBCS Zeichenfolgen werden unterstützt. Die maximale Länge _Lpsz_ ist in Zeichen, was nicht notwendigerweise Bytes. 
+ **UlFromSzHex** ist anfällig für diakritische Unterschiede, ermöglicht jedoch sowohl "a" bis "f" als auch "a" bis "f" für Hexadezimalziffern. Zeichenfolgen im Unicode-und DBCS-Format werden unterstützt. Die Längenbeschränkung für _lpsz_ ist in Zeichen, nicht unbedingt in Bytes. 
   
 

@@ -1,5 +1,5 @@
 ---
-title: ShowGrid-Element (Window_Type ComplexType) ("Visio XML")
+title: ShowGrid-Element (Window_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ localization_priority: Normal
 ms.assetid: d0f6d0ee-ae3b-f871-11fd-dc5b955c1bf3
 description: Gibt an, ob ein Raster im Zeichnungsfenster angezeigt wird.
 ms.openlocfilehash: a34ba3503cc8995554f1f6d696b27a6a4be37359
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315141"
 ---
-# <a name="showgrid-element-windowtype-complextype-visio-xml"></a>ShowGrid-Element (Window_Type ComplexType) ("Visio XML")
+# <a name="showgrid-element-windowtype-complextype-visio-xml"></a>ShowGrid-Element (Window_Type complexType) (' Visio XML ')
 
 Gibt an, ob ein Raster im Zeichnungsfenster angezeigt wird.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ShowGrid_Type](showgrid_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Windows.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Windows. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,14 +36,13 @@ Gibt an, ob ein Raster im Zeichnungsfenster angezeigt wird.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.
-  <br/> |
+|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

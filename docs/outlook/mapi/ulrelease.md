@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95db96ef-f95f-41da-b216-f717c23bffd2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 46c37dbcf1aa3b0469281b8db99f210bda0918be
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 288e34a159db48b1344524b87f02b045259f1565
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315295"
 ---
 # <a name="ulrelease"></a>UlRelease
 
@@ -25,13 +25,13 @@ ms.locfileid: "22582301"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown**. 
+Bietet eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown:: Release**. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 ULONG UlRelease(
@@ -41,11 +41,11 @@ ULONG UlRelease(
 
 ## <a name="parameters"></a>Parameter
 
- _pUnk_
+ _Punk_
   
-> [in] Zeiger auf eine Schnittstelle abgeleitet die **IUnknown** -Schnittstelle, mit anderen Worten alle MAPI-Schnittstelle. 
+> in Zeiger auf eine von der **IUnknown** -Schnittstelle abgeleitete Schnittstelle, also jede MAPI-Schnittstelle. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -53,16 +53,16 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs.
+> Der Vorgang konnte nicht abgeschlossen werden.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die Anzahl der Verweise ist die Anzahl der vorhandenen Zeiger auf das Objekt, das freigegeben werden muss. 
+Der Verweiszähler ist die Anzahl der vorhandenen Zeiger auf das Objekt, das freigegeben werden soll. 
   
-Wenn der Parameter _Punk_ NULL ist, gibt die Funktion sofort ohne einen Aufruf **IUnknown**
+Wenn der _Punk_ -Parameter NULL ist, wird die Funktion sofort zurückgegeben, ohne **IUnknown:: Release** zu aufrufen.
   
- **UlRelease** gibt den Wert zurückgegeben, die von der **IUnknown** -Methode, die den Referenzzähler für das Objekt, das freigegeben werden muss gleich sein kann. 
+ **UlRelease** gibt den von der **IUnknown:: Release** -Methode zurückgegebenen Wert zurück, der mit dem Verweiszähler für das freizugebende Objekt übereinstimmen kann. 
   
-Weitere Informationen zu **IUnknown**finden Sie unter [die IUnknown-Schnittstelle implementieren](implementing-the-iunknown-interface.md). 
+Weitere Informationen zu **IUnknown:: Release**finden Sie unter [Implementieren der IUnknown-Schnittstelle](implementing-the-iunknown-interface.md). 
   
 

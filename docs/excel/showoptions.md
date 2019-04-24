@@ -7,18 +7,18 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 51acac58-ec39-488f-979c-1887dc2ab94b
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: dbf6f0f50e9f7fa988e83f3b58012e9deac13eac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5b58b71dc4f2441448eb3e0dac2c3c5763675927
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310427"
 ---
 # <a name="showoptions"></a>ShowOptions
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Zeigt ein modales Dialogfeld zum Sammeln von Informationen vom Benutzer. Dieser Einstiegspunkt wird aufgerufen, wenn ein Benutzer auf die Schaltfläche **Optionen** neben dem Feld **Clustertyp** für die ausgewählten Clusterconnector (in der Kategorie **Erweitert** im Abschnitt **Formeln** ) im Dialogfeld **Excel-Optionen** klickt. Clusterconnectoren sind verantwortlich für die Implementierung ihrer eigenen Optionen Dialogfeld-Schnittstelle und zum Speichern der verknüpften Daten in der Registrierung oder an anderer Stelle. Die Optionen sind in der Clusterconnector interne. Excel ist nicht bekannt. 
+Zeigt ein modales Dialogfeld zum Erfassen von Informationen vom Benutzer an. Dieser Einstiegspunkt wird aufgerufen, wenn ein Benutzer auf die Schaltfläche **Optionen** neben **** dem Feld Clustertyp für den ausgewählten Cluster-Konnektor im Dialogfeld **Excel-Optionen** klickt (in der Kategorie **erweitert** unter dem Abschnitt **Formeln** ). Cluster-Konnektoren sind für die Implementierung einer eigenen Options Dialogfeld-Schnittstelle und zum Speichern der zugehörigen Daten in der Registrierung oder an einem anderen Ort zuständig. Die Optionen sind intern für den Cluster-Konnektor. Excel erkennt Sie nicht. 
   
 ```cpp
 int ShowOptions(HWND hWndParent)
@@ -30,13 +30,13 @@ _hWndParent_
   
 > Ein Handle für das Excel-Fenster.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-**XlHpcRetSuccess** , wenn das Dialogfeld angezeigt wurde; **XlHpcRetCallFailed** , wenn er nicht angezeigt wurde. 
+**xlHpcRetSuccess** , wenn das Dialogfeld angezeigt wurde; **xlHpcRetCallFailed** , wenn Sie nicht angezeigt wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-In diesem Dialogfeld können clusterconnectoren zum Abrufen von Informationen, beispielsweise welche Clusterserver aus der Benutzer verwenden.
+Cluster-Konnektoren können dieses Dialogfeldverwenden, um Informationen wie den zu verwendenden Cluster Server vom Benutzer abzurufen.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,33 +1,33 @@
 ---
-title: RelQuadBezTo Row (Geometry Section)
+title: Zeile "RelQuadBezTo" (Abschnitt "Geometry")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5ae57707-5a50-43f0-8c78-516790b5034e
-description: Enthält die X - und y - Koordinate des Endpunkts des eine quadratische Bézier-Kurve relativ zu der Breite des Shapes und Höhe und die X- und y-Koordinaten des Kontrollpunkts des Breite und Höhe des relativen Kurve-Shapes.
-ms.openlocfilehash: 99796e85a857fd320598cb48993fc29bdfa4964d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält die x-und y-Koordinaten des Endpunkts einer quadratischen Bézier-Kurve relativ zur Breite und Höhe des Shapes sowie die x-und y-Koordinaten des Steuerelements der Breite und Höhe der Kurven relativen Form.
+ms.openlocfilehash: f517fa006c6630a26e9162adfbb1be2139487e63
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319929"
 ---
-# <a name="relquadbezto-row-geometry-section"></a>RelQuadBezTo Row (Geometry Section)
+# <a name="relquadbezto-row-geometry-section"></a>Zeile "RelQuadBezTo" (Abschnitt "Geometry")
 
-Enthält die *X* - und *y* - Koordinate des Endpunkts des eine quadratische Bézier-Kurve relativ zu der Breite des Shapes und Höhe und die *X* - und *y* -Koordinaten des Kontrollpunkts des Breite und Höhe des relativen Kurve-Shapes. 
+Enthält die *x* -und *y* -Koordinaten des Endpunkts einer quadratischen Bézier-Kurve relativ zur Breite und Höhe des Shapes sowie die *x* -und *y* -Koordinaten des Steuerelements der Breite und Höhe der Kurven relativen Form. 
   
 > [!NOTE]
-> Eine Zeile **RelQuadBezTo** kann nur in den Dateiformaten .vsdx, .vsdm, .vstx, .vstm, .vssx und .vssm beibehalten werden. Wenn eine Datei in das Visio 2003-2010-Formate gespeichert wird, wird die Zeile **RelQuadBezTo** in [eine Zeile NURBSTo](nurbsto-row-geometry-section.md) konvertiert. 
+> Eine **RelQuadBezTo** -Zeile kann nur im. vsdx-, vsdm-, vstx-, VSTM-, vssx-und VSSM-Dateiformat gespeichert werden. Wenn eine Datei im Visio 2003-2010-Format gespeichert wird, wird die **RelQuadBezTo** -Zeile in eine [NURBSTo](nurbsto-row-geometry-section.md) -Zeile konvertiert. 
   
-Eine Zeile **RelQuadBezTo** enthält folgende Zellen. 
+Eine **RelQuadBezTo** -Zeile enthält die folgenden Zellen. 
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |Die *X* -Koordinate des Endscheitelpunkts eine quadratische Bézier-Kurve relativ zu der Breite der Form.  <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Endscheitelpunkts eine quadratische Bézier-Kurve relativ zur Höhe des Shapes.  <br/> |
-|[A](a-cell-geometry-section.md) <br/> |Die *X* -Koordinate des Kontrollpunkts relativ zu der Breite des Shapes, die sich dem Kurvenpfad ein Punkt auf dem Bogen. Kontrollpunkts ist die beste in der Mitte zwischen dem ersten und letzten Scheitelpunkt des Bogens.  <br/> |
-|[B](b-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Kontrollpunkts relativ zur Höhe des Shapes einer Kurve.  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |Die *x* -Koordinate des Endpunkts einer quadratischen Bézier-Kurve relativ zur Breite der Form.  <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Endpunkts einer quadratischen Bézier-Kurve relativ zur Höhe der Form.  <br/> |
+|[A](a-cell-geometry-section.md) <br/> |Die *x* -Koordinate des Kontrollpunkts der Kurve relativ zur Breite der Form; ein Punkt auf dem Bogen. Der Steuerpunkt befindet sich am besten in der Mitte zwischen dem Anfangs-und Endscheitel des Bogens.  <br/> |
+|[B](b-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Steuerpunkts eines Bogens relativ zur Höhe der Form.  <br/> |
    
 

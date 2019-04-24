@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: af60dae9-1e55-db73-1bb4-cdedcbb21bc6
 description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
-ms.openlocfilehash: 675dfd88b663643c4a923835edc3866f3b4d64e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7aa4ad750009f74cd342242854bb2a55675c4d67
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317494"
 ---
 # <a name="ifreebusydataplaceholder3"></a>IFreeBusyData::Placeholder3
 
@@ -20,7 +20,7 @@ Dieser Member ist ein Platzhalter und wird nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IFreeBusyData](ifreebusydata.md).
+Siehe [IFreeBusyData](ifreebusydata.md).
   
 ```cpp
 HRESULT Placeholder3( 
@@ -30,7 +30,7 @@ HRESULT Placeholder3(
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in **IFreeBusyData** und wird nicht. 
+Immer E_NOTIMPL, da dieser Member ein Platzhalter in **IFreeBusyData** ist und nicht unterstützt wird. 
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -38,7 +38,7 @@ Dieser Member muss E_NOTIMPL zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Konstanten (Frei/Gebucht-API)](constants-free-busy-api.md)
+- [Konstanten (frei/gebucht-API)](constants-free-busy-api.md)
 - [IFreeBusyData::EnumBlocks](ifreebusydata-enumblocks.md)
 - [IFreeBusyData::GetFBPublishRange](ifreebusydata-getfbpublishrange.md)
 - [IFreeBusyData::SetFBRange](ifreebusydata-setfbrange.md)

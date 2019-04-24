@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: e22244a2-ac5f-910a-501f-4483ea0667c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5a0632ffd892c08fdf19de2c9b34607c27534f19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b9086383b45d40d5839284ac785d72438be60e00
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317192"
 ---
 # <a name="iostxinitsync"></a>IOSTX::InitSync
 
@@ -25,7 +25,7 @@ ms.locfileid: "22594040"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informiert dem lokalen Nachrichtenspeicher, dass Synchronisierung gestartet.
+Informiert den lokalen Nachrichtenspeicher über die Synchronisierung, die gestartet werden soll.
   
 ```cpp
 HRESULT InitSync( 
@@ -37,7 +37,7 @@ HRESULT InitSync(
 
  _ulFlags_
   
-> [in] Kennzeichen, die um entsprechende Verhalten während der Synchronisierung zu bestimmen. Outlook verwendet diese Flags in jedem Status des Computers Zustand Replikation, um die Informationen zu ermitteln, die für den Client bereitgestellt werden sollen. Angenommen, wenn der Client **SYNC_ONLY_ASSOCIATED**übergibt, wird Outlook nur Informationen im Zusammenhang mit der zugehörigen (oder ausgeblendet) Elemente zurück. 
+> in Flags zum Bestimmen des geeigneten Verhaltens während der Synchronisierung. Outlook verwendet diese Flags in jedem Status des Replikationsstatus Computers, um die Informationen zu ermitteln, die für den Client bereitgestellt werden sollen. Wenn der Client beispielsweise **SYNC_ONLY_ASSOCIATED**übergibt, gibt Outlook nur Informationen zurück, die sich auf zugeordnete (oder ausgeblendete) Elemente beziehen. 
     
 ## <a name="see-also"></a>Siehe auch
 

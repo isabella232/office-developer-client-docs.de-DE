@@ -7,18 +7,18 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 159bc9bf-8dd5-4cd2-8384-474c74a3f112
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e7ba37629ff2198339394448410ffd16477d4766
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 32d5075af34cda9753c5d082bd4ab00afab1ecff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310248"
 ---
 # <a name="xlasyncreturn"></a>xlAsyncReturn
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird verwendet, um das Ergebnis einer asynchronen benutzerdefinierte Funktion (UDF) zurückzugeben.
+Wird verwendet, um das Ergebnis einer asynchronen benutzerdefinierten Funktion (UDF) zurückzugeben.
   
 ```cpp
 Excel12(xlAsyncReturn, LPXLOPER12 pxRes, 2, LPXLOPER12 pxAsyncHandle, LPXLOPER12 pxFunctionResult);
@@ -26,25 +26,25 @@ Excel12(xlAsyncReturn, LPXLOPER12 pxRes, 2, LPXLOPER12 pxAsyncHandle, LPXLOPER12
 
 ## <a name="parameters"></a>Parameter
 
-_pxAsyncHandle_ (**XltypeBigData**)
+_pxAsyncHandle_ (**xltypeBigData**)
   
-Die asynchrone Handle der UDF-Datei an die das Ergebnis zurückgegeben wird.
+Der asynchrone Handle des UDF, an das das Ergebnis zurückgegeben wird.
   
 _pxFunctionResult_
   
-Der Rückgabewert der UDF-Datei.
+Der Rückgabewert des UDF.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Wenn erfolgreich ist, gibt **"true"** (**XltypeBool**). Wenn nicht erfolgreich ist, gibt **FALSE**zurück.
+Wenn der Wert erfolgreich ist, wird **true** (**xltypeBool**) zurückgegeben. Wenn nicht erfolgreich, gibt **false**zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-**XlAsyncReturn** ist der einzige Rückruf Excel auf nicht-Berechnungsthreads während einer neuberechnung ermöglicht. Der asynchrone Teil einer asynchrones UDF muss keine Rückrufe als **XlAsyncReturn**ausführen. XLL muss, um den Rückgabewert halten belegten Arbeitsspeicher freizugeben.
+**xlAsyncReturn** ist der einzige Rückruf, den Excel für nicht-Berechnungs-Threads während der Neuberechnung ermöglicht. Der asynchrone Teil einer asynchronen UDF darf keine Rückrufe außer **xlAsyncReturn**durchführen. Die XLL muss Arbeitsspeicher freigeben, der für den Rückgabewert reserviert ist.
   
-Der Typ **XltypeMulti** Wenn verwendet, um ein Array von Handles und die entsprechenden Werte in einem einzigen Rückruf zurückgegeben können auch die Parameter _PxAsyncHandle_ und _PxFunctionResult_ sein. Wenn Sie einen einzelnen Rückruf verwenden, übergeben Sie eine LPXLOPER12, die auf XLOPER12 Strukturen verweist, die eine dimensionale Arrays enthalten, die Rückgabewerte und enthalten die asynchronen werden. Diese Arrays muss in der gleichen Reihenfolge für Excel ordnungsgemäß ein asynchrones Handle mit den entsprechenden Wert übereinstimmen. 
+Die Parameter _pxAsyncHandle_ und _pxFunctionResult_ können auch vom Typ **xltypeMulti** sein, wenn Sie verwendet werden, um ein Array von Handles und entsprechenden Werten in einem einzelnen Rückruf zurückzugeben. Wenn Sie einen einzelnen Rückruf verwenden, übergeben Sie ein LPXLOPER12, das auf XLOPER12-Strukturen verweist, die eindimensionale Arrays enthalten, die die asynchronen Handles und Rückgabewerte enthalten. Diese Arrays müssen in der gleichen Reihenfolge für Excel ordnungsgemäß mit einem asynchronen Handle mit dem entsprechenden Wert übereinstimmen. 
   
-Das folgende Beispiel zeigt, wie Sie einen Batch Anrufen über **XlAsyncReturn**machen können.
+Das folgende Beispiel zeigt, wie Sie einen Batch Aufruf mit **xlAsyncReturn**durchführen können.
   
 ```cpp
 int batchSize = 10;

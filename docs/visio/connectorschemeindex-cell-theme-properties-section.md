@@ -1,26 +1,26 @@
 ---
-title: ConnectorSchemeIndex Cell (Theme Properties Section)
+title: ConnectorSchemeIndex Cell (Theme Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 48ab98bd-2966-443c-b3db-befeb271550f
-description: Bestimmt das Schema Connector eines Designs, das dem Shape als ganze Zahl angewendet wird.
-ms.openlocfilehash: 3d918a7e8cc9c4134ccf25894367b24eaccf43b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt das Verbinder-Schema eines Designs, das auf die Form angewendet wird, als ganze Zahl.
+ms.openlocfilehash: 77d16632db63d187477ba62a1a6f4b9319e156fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319712"
 ---
-# <a name="connectorschemeindex-cell-theme-properties-section"></a>ConnectorSchemeIndex Cell (Theme Properties Section)
+# <a name="connectorschemeindex-cell-theme-properties-section"></a>ConnectorSchemeIndex Cell (Theme Properties section)
 
-Bestimmt das Schema Connector eines Designs, das dem Shape als ganze Zahl angewendet wird. 
+Bestimmt das Verbinder-Schema eines Designs, das auf die Form angewendet wird, als ganze Zahl. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **ConnectorSchemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **ConnectorSchemeIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
@@ -32,6 +32,6 @@ Wenn Sie einen Verweis auf die Zelle **ConnectorSchemeIndex** aus einem Programm
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowThemeProperties** <br/> |
-| Zellenindex:  <br/> |** VisConnectorSchemeIndex ** <br/> |
+| Zellenindex:  <br/> |* * visConnectorSchemeIndex * * <br/> |
    
 

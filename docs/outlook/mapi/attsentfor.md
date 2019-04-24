@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: aa8c8d64-d2a0-4cdf-a8aa-21c8d0a0a3fc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b292e65ddabcbe052832687a3dcf01658de5e379
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f961348e7be474202273aa97a2922566ef40c3a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318116"
 ---
 # <a name="attsentfor"></a>attSentFor
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gezählte Zeichenfolgen End-to-End-festgelegten, wird das Attribut **AttSentFor** codiert. Das Format für **AttSentFor** lautet wie folgt: 
+Das **attSentFor** -Attribut wird als gezählte Zeichenfolge mit End-to-End-Codierung codiert. Das Format für **attSentFor** lautet wie folgt: 
   
- **AttSentFor**: 
+ **attSentFor**: 
   
-> Display Name Länge Anzeigename Adresse Länge- _e-Mail-Adresse_
+> Anzeigename-length-Anzeigename-Adresslänge- _e-Mail-Adresse_
     
  _e-Mail-Adresse_
   
-> Adresse vom Typ **:** 
+> Typ **:** Address 
     
-Im Gegensatz zu anderen Länge sind Werte, die Anzeige-Namen- und Adresse Länge 16-Bit-Werte ohne Vorzeichen, anstatt lange ganze Zahlen ohne Vorzeichen. Dazu gehören weiterhin Null-Zeichen jedoch beendet. Die Typ und die Adresse Zeichenfolgen in den Eintrag _e-Mail-Adresse_ werden durch einen Doppelpunkt (:)) Literalzeichen wie "smtp:joe@nowhere.com" getrennt. Nur die kombinierten Typ **:** Adresszeichenfolge ist Null endende.
+Im Gegensatz zu anderen Längenwerten sind die Anzeigename-length und die Address-length nicht signierte lange ganze Zahlen, 16-Bit-Werte ohne Vorzeichen. Sie enthalten jedoch weiterhin NULL-Zeichen. Die Typ-und Adress Zeichenfolgen im _e-Mail-Adress_ Eintrag werden durch einen Literalwert (:) Zeichen, wie "SMTP:Joe@nowhere.com". Nur der kombinierte Typ **:** Address String is null-terminated.
   
 

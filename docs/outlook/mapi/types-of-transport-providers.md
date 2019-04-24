@@ -1,5 +1,5 @@
 ---
-title: Arten von Transportanbietern
+title: Arten von Transport Anbietern
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,39 +7,39 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 772ecab1-7e91-415b-bae8-af8ffb7b7ed9
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a9bba55b585b09d6a5779ba41a283b20c645656f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ca224658552af105d95794b4dd01d2ac76fe084f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315379"
 ---
-# <a name="types-of-transport-providers"></a>Arten von Transportanbietern
+# <a name="types-of-transport-providers"></a>Arten von Transport Anbietern
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Alle Transportanbieter für unterstützen einen Bereich von Standardfeatures, z. B.:
+Alle Transportanbieter unterstützen eine Reihe von Standardfunktionen, wie zum Beispiel:
   
-- Bereitstellen von ordnungsgemäße Sicherheit für die zugrunde liegenden messaging-System.
+- Bereitstelleneiner ordnungsgemäßen Sicherheit für das zugrunde liegende Messagingsystem
     
-- Senden und Empfangen von Nachrichten aus dem zugrunde liegenden messaging-System.
+- Senden und empfangen von Nachrichten vom zugrunde liegenden Messagingsystem.
     
-- Verfügbarmachen der Adresstypen unterstützen die Transportanbieter, damit der MAPI-Warteschlange und Clientanwendungen entsprechend verwendet können.
+- Verfügbar machen der Adresstypen, die von den Transportanbietern unterstützt werden, damit die MAPI-Spooler-und Clientanwendungen Sie entsprechend verwenden können.
     
-- Akzeptieren von Übermittlung für bestimmte Empfänger.
+- Annehmen der Lieferung für bestimmte Empfänger.
     
-MAPI unterstützt darüber hinaus zwei spezielle Arten von Anbietern für bestimmte messaging-Systeme.
+Darüber hinaus unterstützt MAPI zwei spezielle Typen von Anbietern für bestimmte Messagingsysteme.
   
-|**Transporttyp**|**Zusätzliche Funktionalität**|
+|**Transporttyp**|**HinzugeFügte Funktionalität**|
 |:-----|:-----|
-|Remote-Transport  <br/> |Ermöglicht die Interoperabilität mit Clients Remote verbunden.  <br/> |
-|TNEF-Transport  <br/> |MAPI-Eigenschaften auf die messaging-Systeme, die diese nicht unterstützen beibehalten werden können.  <br/> |
+|Remote Transport  <br/> |Ermöglicht die Interoperabilität mit Clients, die Remote verbunden sind.  <br/> |
+|TNEF-Transport  <br/> |Ermöglicht die Bewahrung von MAPI-Eigenschaften auf Messagingsystemen, die Sie nicht unterstützen.  <br/> |
    
-TNEF Transporten dienen zum Übersetzen von Nachrichten zwischen messaging-Systemen, die verschiedene Sätze von MAPI-Eigenschaften zu unterstützen. TNEF Transporten verwenden Sie die MAPI [ITnef: IUnknown](itnefiunknown.md) -Schnittstelle für alle Eigenschaften, die das Zielsystem darstellen kann nicht direkt in einem binären Datenstrom zu konvertieren, die an die Nachricht angefügt werden können. Eine andere TNEF Transport kann später **ITnef** verwenden, um den Datenstrom decodieren und die ursprünglichen MAPI-Eigenschaften-Clientanwendungen zur Verfügung stellen. Darüber hinaus ist die TNEF-Unterstützung erforderlich, wenn Ihre Transport benutzerdefinierte Nachrichtenklassen unterstützen muss. Informationen zum Implementieren von TNEF Transporten finden Sie unter [Developing eines Transportdienstes TNEF-Enabled](developing-a-tnef-enabled-transport-provider.md).
+TNEF-Übertragungen werden zum Übersetzen von Nachrichten zwischen Messagingsystemen verwendet, die unterschiedliche MAPI-Eigenschaften unterstützen. TNEF-Übertragungen verwenden die MAPI- [ITnef: IUnknown](itnefiunknown.md) -Schnittstelle zum Konvertieren von Eigenschaften, die vom Zielsystem nicht direkt in einen binären Datenstrom, der an die Nachricht angefügt werden kann, dargestellt werden können. Später kann ein anderer TNEF-Transport **ITnef** verwenden, um den Datenstrom zu decodieren und die ursprünglichen MAPI-Eigenschaften für Clientanwendungen zur Verfügung zu stellen. Darüber hinaus ist die TNEF-Unterstützung erforderlich, wenn der Transport benutzerdefinierte Nachrichtenklassen unterstützen muss. Weitere Informationen zum Implementieren von TNEF-Transporten finden Sie unter [Entwickeln eines TNEF-fähigen](developing-a-tnef-enabled-transport-provider.md)Transportanbieters.
   
-Wenn Ihre Adressbuchhierarchie nicht dieser Typen ist, müssen Sie mit den grundlegenden MAPI-Funktionen und Netzwerkfunktionen der Zielplattform verfügbar zu implementieren.
+Wenn es sich bei Ihrem Transportanbieter nicht um einen dieser Typen handelt, müssen Sie ihn mit den grundlegenden MAPI-Funktionen und Netzwerkfunktionen implementieren, die auf der Zielplattform zur Verfügung stehen.
   
 

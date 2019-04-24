@@ -11,32 +11,32 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43052e57-4712-410a-eb07-2a7c5bc124bd
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5f80b67caa803c5e89de6cd74baaebd3a9f2b2a5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 387a7bdf2939f9ec618b0e86eeb00f3fddc9caa2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309688"
 ---
 # <a name="ipstx5--ipstx4"></a>IPSTX5 : IPSTX4
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Schnittstelle stellt Hilfsfunktionen beim Ausführen einer Replikation über die IOSTX-Schnittstelle.
+Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die IOSTX-Schnittstelle.
   
 |||
 |:-----|:-----|
-|Bereitgestellt von  <br/> |Abfrage für [IMsgStore](imsgstoreimapiprop.md) <br/> |
+|Bereitgestellt von  <br/> |Abfrage auf [IMsgStore](imsgstoreimapiprop.md) <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTX5  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-| *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

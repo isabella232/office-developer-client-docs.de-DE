@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 588d002b-8412-4ab9-9757-04ad89e0a6f8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d978b7a6bd8af9a505fa025aef2e5da68308468f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3468e4a92787e440f230d60ab31f37526fe7d5e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316643"
 ---
 # <a name="imapisupportnewentry"></a>IMAPISupport::NewEntry
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt einen neuen Empfänger direkt an einen Adressbuchcontainer oder die Empfängerliste von ausgehenden Nachrichten.
+Fügt einen neuen Empfänger direkt einem Adressbuchcontainer oder der Empfängerliste einer ausgehenden Nachricht hinzu.
   
 ```cpp
 HRESULT NewEntry(
@@ -44,7 +44,7 @@ HRESULT NewEntry(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster des Dialogfelds.
+> in Ein Handle für das übergeordnete Fenster des Dialogfelds.
     
  _ulFlags_
   
@@ -52,57 +52,57 @@ HRESULT NewEntry(
     
  _cbEIDContainer_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEIDContainer_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEIDContainer_ -Parameter verwiesen wird. 
     
  _lpEIDContainer_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Containers, um den neuen Eintrag zu erhalten. Wenn _CbEIDContainer_ 0 und _LpEIDContainer_ NULL ist, erstellt **NewEntry** einen Eingangs-Bezeichner, der den gleichen Typ ist, wie durch einen Aufruf an die [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md) -Methode generiert wird. 
+> in Ein Zeiger auf die Eintrags-ID des Containers, um den neuen Eintrag zu empfangen. Wenn _cbEIDContainer_ 0 ist und _LPEIDCONTAINER_ den Wert NULL **** hat, erstellt der Neueintrag eine einmalige Eintrags-ID, die denselben Typ aufweist wie bei einem Aufruf der [IMAPISupport:: CreateOneOff](imapisupport-createoneoff.md) -Methode. 
     
  _cbEIDNewEntryTpl_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEIDNewEntryTpl_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEIDNewEntryTpl_ -Parameter verwiesen wird. 
     
  _lpEIDNewEntryTpl_
   
-> [in] Ein Zeiger auf die Eintrags-ID der Vorlage, die verwendet werden, um den neuen Eintrag erstellen. Wenn _CbEIDNewEntryTpl_ 0 und _LpEIDNewEntryTpl_ NULL ist, zeigt **NewEntry** ein Dialogfeld, mit dem den Benutzer aus einer Liste von Vorlagen für neue Einträge auswählen kann. 
+> in Ein Zeiger auf den Eintragsbezeichner der Vorlage, die zum Erstellen des neuen Eintrags verwendet werden soll. Wenn _cbEIDNewEntryTpl_ 0 und _lpEIDNewEntryTpl_ ist, zeigt der neue **Eintrag** ein Dialogfeld an, in dem der Benutzer aus einer Liste von Vorlagen zum Hinzufügen neuer Einträge auswählen kann. 
     
  _lpcbEIDNewEntry_
   
-> [out] Ein Zeiger auf die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LppEIDNewEntry_ verwiesen. 
+> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppEIDNewEntry_ -Parameter verwiesen wird. 
     
  _lppEIDNewEntry_
   
-> [out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID des neu erstellten Eintrags.
+> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID des neu erstellten Eintrags.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der neue Eintrag wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::NewEntry** -Methode wird für Address Book Anbieter Unterstützungsobjekte implementiert. Von adressbuchanbietern implementierte Aufrufen **NewEntry** zum Erstellen eines neuen Address Book Eintrags direkt in einem Container hinzugefügt werden soll oder verwendet werden, um eine ausgehende Nachricht zu adressieren. 
+Die **IMAPISupport:: neuentry** -Methode wird für Support Objekte des Adressbuch Anbieters implementiert. Adressbuchanbieter rufen **** den neueintrags auf, um einen neuen Adressbucheintrag zu erstellen, der direkt zu einem Container hinzugefügt oder zur Behebung einer ausgehenden Nachricht verwendet werden soll. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie den neuen Eintrag auf einen bestimmten Container hinzugefügt werden soll, legen Sie _LpEIDContainer_ Eintrags-ID und _CbEIDContainer_ , um die Byteanzahl von in die Eintrags-ID des Containers. 
+Wenn der neue Eintrag einem bestimmten Container hinzugefügt werden soll, legen Sie _lpEIDContainer_ auf die Eintrags-ID des Containers und _cbEIDContainer_ auf die Bytezahl in der Eintrags-ID fest. 
   
-Wenn Sie den neuen Eintrag der Empfängerliste von ausgehenden Nachrichten hinzugefügt werden soll, legen Sie _LpEIDContainer_ auf NULL und _CbEIDContainer_ auf 0. 
+Wenn der neue Eintrag der Empfängerliste einer ausgehenden Nachricht hinzugefügt werden soll, legen Sie _lpEIDContainer_ auf NULL und _cbEIDContainer_ auf 0 fest. 
   
-Wenn den Benutzer von einer Clientanwendung aus, wählen Sie den Typ der Eintrag erstellt werden soll, übergeben Sie 0 in _CbEIDNewEntryTpl_ und NULL in _LpEIDNewEntryTpl_. **NewEntry** zeigt die einmalige MAPI-Tabelle, die eine Liste der Vorlagen, die MAPI und aller der adressbuchanbietern implementierte in der Sitzung zu unterstützen. Jede Vorlage kann ein Empfänger Eintrag für einen oder mehrere Adresstypen erstellt. 
+Wenn Sie zulassen möchten, dass der Benutzer einer Clientanwendung den Typ des zu erstellenden Eintrags auswählen kann, geben Sie 0 in _cbEIDNewEntryTpl_ und NULL in _lpEIDNewEntryTpl_. Bei der erneuten **Eingabe** wird die MAPI-einmalige Tabelle, eine Liste der Vorlagen, die MAPI und die einzelnen Adressbuchanbieter in der Sitzung unterstützen, angezeigt. Jede Vorlage kann einen Empfängereintrag für einen oder mehrere Adresstypen erstellen. 
   
-Wenn Sie die Eintrags-ID des neuen Eintrags beibehalten möchten, übergeben Sie die Parameter _LpcbEIDNewEntry_ und _LppEIDNewEntry_ gültige Zeiger. Sie sind verantwortlich für das Freigeben von dieses Eintrags-ID, wenn Sie mit ihm fertig sind, durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion. 
+Wenn Sie die Eintrags-ID des neuen Eintrags behalten möchten, übergeben Sie gültige Zeiger in den Parametern _lpcbEIDNewEntry_ und _lppEIDNewEntry_ . Sie sind für die Freigabe dieser Eintrags-ID verantwortlich, wenn Sie damit fertig sind, indem Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen. 
   
-Um eine bestimmte Vorlage verwenden, um einen neuen Eintrag einem änderbare Container hinzuzufügen, verwenden Sie die folgende Schritte aus:
+Gehen Sie folgendermaßen vor, um eine bestimmte Vorlage zum Hinzufügen eines neuen Eintrags zu einem änderbaren Container zu verwenden:
   
-1. Rufen Sie die [IMAPISupport::OpenEntry](imapisupport-openentry.md) -Methode zum Öffnen den Zielcontainer, und legen Sie den Parameter _LpEntryID_ auf die Eintrags-ID des Containers. 
+1. Rufen Sie die [IMAPISupport:: OpenEntry](imapisupport-openentry.md) -Methode auf, um den Zielcontainer zu öffnen, und legen Sie den Parameter _lpEntryID_ auf den Eintragsbezeichner des Containers fest. 
     
-2. Rufen Sie das Ziel des Containers [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode, und legen Sie den Parameter _UlPropTag_ **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) und der Parameter _Lpiid_ auf IID_IMAPITable. Der Container gibt eine einmalige Tabelle zurück, die alle Vorlagen aufgeführt werden, die sie zum Erstellen neuer Einträge unterstützt. 
+2. Rufen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Zielcontainers auf, und legen Sie den Parameter _ulPropTag_ auf **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md)) und den _lpIID_ -Parameter auf IID_IMAPITable fest. Der Container gibt eine einmalige Tabelle zurück, in der alle Vorlagen aufgeführt sind, die für das Erstellen neuer Einträge unterstützt werden. 
     
-3. Rufen Sie die Zeile, die die Vorlage für den angegebenen Typ des Eintrags darstellt, den Sie erstellen möchten. Die **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))-Spalte gibt den Typ der Adresse, der von der Vorlage unterstützt wird. 
+3. Rufen Sie die Zeile ab, die die Vorlage für den jeweiligen Eintragstyp darstellt, den Sie erstellen möchten. Die **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md)) gibt den von der Vorlage unterstützten Adresstyp an. 
     
-4. Rufen Sie **IMAPISupport::NewEntry** , und legen Sie den Parameter _LpEIDNewEntryTpl_ auf die Eintrags-ID der ausgewählten Vorlage. Die Eintrags-ID ist die Spalte **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) aus der Vorlage Zeile in der einmaligen Tabelle. Übergeben Sie 0 in _CbEIDContainer_ und NULL in _LpEIDContainer_. Übergeben Sie einen gültigen Zeiger im _LppEIDNewEntry_ -Parameter, wenn Sie den neuen Eintrag Eintrags-ID beibehalten möchten. 
+4. Rufen Sie **IMAPISupport:: neuentry** auf, und legen Sie den Parameter _lpEIDNewEntryTpl_ auf den Eintragsbezeichner der ausgewählten Vorlage fest. Die Eintrags-ID ist die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Spalte aus der Zeile der Vorlage in der einmaligen Tabelle. Übergibt 0 in _cbEIDContainer_ und NULL in _lpEIDContainer_. Übergeben Sie einen gültigen Zeiger im _lppEIDNewEntry_ -Parameter, wenn Sie die Eintrags-ID des neuen Eintrags aufbewahren möchten. 
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -112,7 +112,7 @@ Um eine bestimmte Vorlage verwenden, um einen neuen Eintrag einem änderbare Con
   
 [IMAPISupport::OpenEntry](imapisupport-openentry.md)
   
-[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
+[Kanonische Pidtagcreatetemplates (-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

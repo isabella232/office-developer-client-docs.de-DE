@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: aa8dc48b-9e1c-8da0-9579-10b7174e99de
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 699e77479e0d09e7549c0d2741d5ba54ecc8ce33
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 48d59d17d81da2ae78348a57ad8b1cb75486b1a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321315"
 ---
 # <a name="imapiofflinegetcapabilities"></a>IMAPIOffline::GetCapabilities
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die Bedingungen für die Rückrufe durch eine offline-Objekt unterstützt werden.
+Ruft die Bedingungen ab, für die Rückrufe von einem Offlineobjekt unterstützt werden.
   
 ```cpp
 HRESULT GetCapabilities( 
@@ -37,23 +37,23 @@ HRESULT GetCapabilities(
 
  _pulCapablities_
   
-> [out] Eine Bitmaske der folgenden Funktion Flags:
+> Out Eine Bitmaske der folgenden Capability Flags:
     
 MAPIOFFLINE_CAPABILITY_OFFLINE
   
-> Das offline-Objekt ist offline Benachrichtigungen bereitstellen können.
+> Das Offline-Objekt kann offline Benachrichtigungen bereitstellen.
     
 MAPIOFFLINE_CAPABILITY_ONLINE
   
-> Das offline-Objekt ist online Benachrichtigungen bereitstellen können.
+> Das Offline-Objekt kann online Benachrichtigungen bereitstellen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Beim Öffnen einer offline-Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)**, kann ein Client eine Abfrage auf [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md) an, um einen Zeiger auf eine **IMAPIOffline** -Schnittstelle, und rufen **IMAPIOffline::GetCapabilities** , um die Rückrufe unterstützt zu erhalten durch das Objekt. Der Client kann, wählen Sie dann mithilfe von **IMAPIOfflineMgr**Rückrufe eingerichtet.
+Beim Öffnen eines Offline Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)** kann ein Client [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md) Abfragen, um einen Zeiger auf eine **IMAPIOffline** -Schnittstelle abzurufen, und **IMAPIOffline::** getcapabilitiess aufrufen, um die unterstützten Rückrufe herauszufinden. durch das Objekt. Der Client kann dann Rückrufe mithilfe von **IMAPIOfflineMgr**einrichten.
   
-Beachten Sie, dass je nach den Mailserver für eine offline-Objekt, ein Objekt, das Rückrufe für den Onlinemodus wechseln unterstützt keine unbedingt Rückrufe unterstützt für den Wechsel in den Offlinemodus.
+Beachten Sie, dass abhängig vom e-Mail-Server für ein Offlineobjekt ein Objekt, das Rückrufe für das Online schalten unterstützt, nicht notwendigerweise Rückrufe für das offline schalten unterstützen wird.
   
-Beachten Sie, dass auch während ein offline-Objekt kann Rückrufe für Änderungen als online/offline unterstützen, die Offline Zustand-API nur online/offline ändert sich unterstützt und Clients müssen für nur solche Funktionen überprüfen.
+Beachten Sie, dass ein Offlineobjekt Rückrufe für andere Änderungen als Online/Offline möglicherweise unterstützt, die Offlinestatus-API jedoch nur Online/Offline-Änderungen und Clients nur für solche Funktionen überprüfen muss.
   
 ## <a name="see-also"></a>Siehe auch
 

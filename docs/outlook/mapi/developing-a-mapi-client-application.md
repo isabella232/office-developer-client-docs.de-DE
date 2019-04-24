@@ -1,5 +1,5 @@
 ---
-title: Entwickeln einer MAPI-Clientanwendung
+title: Entwickeln einer MAPI-Client Anwendung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,39 +8,39 @@ api_type:
 - COM
 ms.assetid: bcb59b08-e6d7-4739-8cb5-e545bd0d478f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bffcfdd6d688c483655b97d61075b147430e3fcc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7f66d2e4d46519dd186a676a0d0fbb836322893b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316688"
 ---
-# <a name="developing-a-mapi-client-application"></a>Entwickeln einer MAPI-Clientanwendung
+# <a name="developing-a-mapi-client-application"></a>Entwickeln einer MAPI-Client Anwendung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Clientanwendungen werden mit der objektorientierte MAPI-Client-Schnittstelle geschrieben. MAPI-Clients interagieren mit Messagingsystemen über die MAPI-Subsystems und MAPI-kompatible-Dienstanbieter. Diese Interaktion kann auf verschiedene Weise auftreten. Es gibt eine enorme Vielfalt an in-Clientanwendungen. Die meisten Clients werden entweder Integration von messaging in ihren eingerichteten Featuregruppe oder Ausführen als ihre primäre Feature messaging-Clients messaging. Andere Features, die möglicherweise MAPI-Clients bereitstellen sind profilverwaltung oder Adressbuch und Nachricht Management zu speichern.
+MAPI-Clientanwendungen werden mit der objektorientierten MAPI-Clientschnittstelle geschrieben. MAPI-Clients interagieren mit einem oder mehreren Messagingsystemen über das MAPI-Subsystem und die MAPI-kompatiblen Dienstanbieter. Diese Interaktion kann auf viele verschiedene Arten erfolgen. Es gibt eine enorme Vielfalt in Clientanwendungen. Bei den meisten Clients handelt es sich um Messagingclients, die entweder Messaging in den festgelegten Featuresatz integrieren oder Messaging als primäres Feature ausführen. Zu den weiteren Features, die MAPI-Clients bieten können, gehören die Profilverwaltung oder das Adressbuch-und Nachrichtenspeicher Management.
   
-Alle Messagingclients initialisieren die MAPI-Bibliotheken und starten Sie eine **Sitzung** mit MAPI-Subsystems. Weitere Informationen finden Sie unter [Zugreifen auf Objekte mithilfe der Sitzung](accessing-objects-by-using-the-session.md). Nachdem eine Sitzung eingerichtet wurde, können ein Client:
+Alle Messagingclients initialisieren die MAPI-Bibliotheken und starten eine **Sitzung** mit dem MAPI-Subsystem. Weitere Informationen finden Sie unter [zugreifen auf Objekte mithilfe der Sitzung](accessing-objects-by-using-the-session.md). Nachdem eine Sitzung eingerichtet wurde, kann ein Client:
   
-- Ausgehende Nachrichten, einschließlich Antworten, Nachrichten und hohem weitergeleitet behandelt.
+- Behandeln Sie ausgehende Nachrichten, einschließlich Antworten, weitergeleiteten Nachrichten und erneuten Übertragungen.
     
-- Eingehende Nachrichten behandelt.
+- Behandeln eingehender Nachrichten.
     
-- Behandeln des Nachrichtenspeichers durch Öffnen Ordner und Nachrichten, erstellen, ändern, kopieren, und Senden von Nachrichten, Nachverfolgen von Unterhaltungen, und suchen einen oder mehrere Ordner.
+- Behandeln Sie den Nachrichtenspeicher, indem Sie Ordner und Nachrichten öffnen, Nachrichten erstellen, ändern, kopieren und senden, Unterhaltungen nachverfolgen und einen oder mehrere Ordner durchsuchen.
     
-- Behandeln Sie das Adressbuch durch Erstellen und Ändern von Empfängern, Einträge suchen und Durchlaufen der Containerhierarchie.
+- Behandeln des Adressbuchs durch Erstellen und Ändern von Empfängern, Suchen von Einträgen und durchlaufen der Containerhierarchie.
     
-- Behandeln eines Transportdienstes Neukonfiguration durchführen, Optionen und Transport-Reihenfolge festlegen und Senden von Nachrichten bei Bedarf.
+- Behandeln eines Transportanbieters durch Ausführen einer Neukonfiguration, Festlegen von Optionen und Transport Reihenfolge und Senden von Nachrichten bei Bedarf.
     
-- Benachrichtigung zu behandeln.
+- Ereignisbenachrichtigung behandeln.
     
-- Behandeln von Formularen.
+- Behandeln von Formularen
     
-- Behandeln von Benutzerprofilen und Message-Dienste.
+- Behandeln von Profilen und Nachrichtendiensten
     
-Mithilfe der Themen in diesem Abschnitt können Sie das Implementieren dieser grundlegenden Aufgaben und Features, die MAPI-Client eindeutige zuständig ist.
+Verwenden Sie die Themen in diesem Abschnitt, um Sie bei der Implementierung dieser grundlegenden Aufgaben und der spezifischen Features zu unterstützen, mit denen Ihr MAPI-Client eindeutig wird.
   
 

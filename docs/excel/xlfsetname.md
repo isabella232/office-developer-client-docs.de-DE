@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlfSetName
 keywords:
-- XlfSetName-Funktion [excel 2007]
+- xlfSetName-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: ea7fd713-7c1b-4648-a609-3334f595c61a
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 48ce927f6bcb328a90779948a660cf9d0b460205
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e6327ccf2cd18e42c3ef9abe538e6f669e498352
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310276"
 ---
 # <a name="xlfsetname"></a>xlfSetName
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Verwendet zum Erstellen und Löschen von definierten Namen der DLL zugeordnet.
+Wird zum Erstellen und löschen definierter Namen verwendet, die der DLL zugeordnet sind.
   
 ```cs
 Excel12(xlfSetName, LPXLOPER12 pxRes, 2, LPXLOPER12 pxNameText, LPXLOPER12 pxNameDefinition);
@@ -30,27 +30,27 @@ Excel12(xlfSetName, LPXLOPER12 pxRes, 2, LPXLOPER12 pxNameText, LPXLOPER12 pxNam
 
 ## <a name="parameters"></a>Parameter
 
-_pxNameText_ (**XltypeStr**)
+_pxNameText_ (**xltypeStr**)
   
-Der Name des Bereichs, die der üblichen eingeschränkten in Microsoft Excel gültigen Namen entsprechen soll.
+Der Name des Bereichen, der den üblichen Einschränkungen in Microsoft Excel für gültige Namen entsprechen sollte.
   
-_pxNameDefinition_ (**XltypeStr**, **XltypeNum**, **XltypeBool**, **XltypeErr**, **XltypeMulti**, **XltypeSRef**, **XltypeRef**oder **vom Typ XltypeInt**)
+_pxNameDefinition_ (**xltypeStr**, **xltypeNum**, **xltypeBool**, **xltypeErr**, **xltypeMulti**, **xltypeSRef**, **externen xltypeRef**oder **xltypeInt**)
   
-(Optional). Der Wert, den Satz von Werten, Zelle oder einen Zellbereich ist als dieser _PxNameText_ definiert. Wenn Length angegeben, wird der Name gelöscht. 
+(Optional). Der Wert, der Satz von Werten, die Zelle oder der Zellbereich, in dem _pxNameText_ definiert ist. Wenn dieser Wert nicht angegeben wird, wird der Name gelöscht. 
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-_pxRes_ (**XltypeBool** oder **XltypeErr**)
+_pxRes_ (**xltypeBool** oder **xltypeErr**)
   
-True, wenn der Vorgang erfolgreich war oder FALSE, wenn der Name nicht erstellt oder gelöscht werden konnte. Gibt #VALUE! Wenn eine oder mehrere der Argumente ungültig war.
+TRUE, wenn der Vorgang erfolgreich war, oder FALSE, wenn der Name nicht erstellt oder gelöscht werden konnte. Gibt #VALUE zurück. , wenn eines oder mehrere der Argumente ungültig waren.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn eine Funktion oder einen Befehl mit einem gültigen _PxFunctionText_ -Argument **XlfRegister** verwenden registriert ist, erstellt Excel einen Namen der DLL-Ressource zugeordnet sind. Die DLL entladen wird, sollten diese Namen mit der [Funktion XlfSetName](xlfsetname.md)gelöscht werden. Jedoch aufgrund ein bekanntes Problem in Excel schlägt dieser Löschvorgang. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md).
+Wenn eine Funktion oder ein Befehl mithilfe von **xlfRegister** mit einem gültigen _pxFunctionText_ -Argument registriert wird, erstellt Excel einen Namen, der der dll-Ressource zugeordnet ist. Wenn Ihre DLL entladen wird, sollten solche Namen mit der [xlfSetName-Funktion](xlfsetname.md)gelöscht werden. Aufgrund eines bekannten Problems in Excel schlägt dieser Löschvorgang jedoch fehl. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md).
   
 ### <a name="example"></a>Beispiel
 
-Finden Sie im Code die Funktion **XlAutoClose** in `\SAMPLES\GENERIC\GENERIC.C`.
+Weitere Informationen finden Sie im **** Code für die `\SAMPLES\GENERIC\GENERIC.C`xlAutoClose-Funktion in.
   
 ## <a name="see-also"></a>Siehe auch
 

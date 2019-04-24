@@ -1,5 +1,5 @@
 ---
-title: PidTagFormVersion (kanonische Eigenschaft)
+title: Kanonische Pidtagformversion (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f2220060-65ea-4969-88d7-8348bd5aa242
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8017094f6af95940aab8352d52cd1160f0b7a827
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ec806ed3ab871d6a36778b0898b2977628ccdcec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316205"
 ---
-# <a name="pidtagformversion-canonical-property"></a>PidTagFormVersion (kanonische Eigenschaft)
+# <a name="pidtagformversion-canonical-property"></a>Kanonische Pidtagformversion (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Version eines Formulars an. 
+Enthält die Version eines Formulars. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_FORM_VERSION, PR_FORM_VERSION_A, PR_FORM_VERSION_W  <br/> |
 |Kennung:  <br/> |0x3301  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Allgemeine MAPI  <br/> |
+|Bereich:  <br/> |MAPI allgemein  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften geben an, welche Version Design derzeit ist Effekt für das Formular. Die Version definiert ist und vom Formular verwaltet den Designer und nicht notwendigerweise bezieht sich auf eine beliebige Version der MAPI-Komponente. 
+Diese Eigenschaften geben an, welche Entwurfsversion derzeit für das Formular gültig ist. Die Version wird vom Designer des Formulars definiert und verwaltet und ist nicht zwangsläufig mit einer MAPI-Komponentenversion verknüpft. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

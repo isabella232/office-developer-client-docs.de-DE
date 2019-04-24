@@ -6,19 +6,19 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: ffdfdff8-985d-35de-73b1-c34e1932cb9f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 23e68d18a6de93a99d2db32c1d93dac33d9a1225
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7123b2deaa9ae0f26002b486df229ad589009f53
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321819"
 ---
 # <a name="about-the-mapi-mime-conversion-api"></a>Informationen über die MAPI-MIME-Konvertierungs-API
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die MAPI-MIME-Konvertierung-API ermöglicht es e-Mail-Anbieter für die Konvertierung zwischen MIME-Objekte und MAPI-Nachrichten. Softwareentwicklern Konstantendefinitionen Klassenbezeichner und Schnittstellenbezeichner Siehe [MAPI-Konstanten](mapi-constants.md). E-Mail-Anbieter müssen eine Instanz des **[IConverterSession](iconvertersessioniunknown.md)** durch Aufrufen der Funktion **CoCreateInstance** cocreate. 
+Die MAPI-MIME-Konvertierungs-API ermöglicht es e-Mail-Anbietern, zwischen MIME-Objekten und MAPI-Nachrichten zu konvertieren. Es stellt Konstante Definitionen, Klassenbezeichner und Schnittstellenbezeichner bereit, wie in [MAPI-Konstanten](mapi-constants.md)dargestellt. E-Mail-Anbieter müssen eine Instanz von **[IConverterSession](iconvertersessioniunknown.md)** erstellen, indem Sie die **CoCreateInstance** -Funktion aufrufen. 
   
 

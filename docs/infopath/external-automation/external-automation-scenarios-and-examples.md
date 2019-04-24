@@ -1,82 +1,82 @@
 ---
-title: Szenarios für die externe Automatisierung und Beispiele
+title: Szenarien für die externe Automatisierung und Beispiele
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Automatisieren von Infopath 2007, Formularen [InfoPath 2007], Programmgesteuertes Hinzufügen von Daten, Automatisierung [InfoPath 2007], externe Szenarien
+- Automatisieren von InfoPath 2007, Formularen [InfoPath 2007], Hinzufügen von Daten programmgesteuert, Automatisierung [InfoPath 2007], externe Szenarien
 localization_priority: Normal
 ms.assetid: dfa880e6-de23-41c4-b80b-6935e0c8563d
-description: Die Member bereitgestellt von Microsoft Office InfoPath-primären interop-Assembly (Microsoft.Office.Interop.InfoPath.dll) und der InfoPath XML-Interopassembly (Microsoft.Office.Interop.InfoPath.Xml.dll) Schreiben von verwaltetem Code für die Automatisierung von Support InfoPath.
+description: Die Mitglieder, die von der primären Interop-Assembly von Microsoft Office InfoPath (Microsoft. Office. Interop. InfoPath. dll) und der InfoPath-XML-Interop-Assembly (Microsoft. Office. Interop. InfoPath. Xml. dll) bereitgestellt werden, unterstützen das Schreiben von verwaltetem Code für die Automatisierung InfoPath.
 ms.openlocfilehash: af8bfbb0322b9d70fb85ba21a757a581ba423a44
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310199"
 ---
-# <a name="external-automation-scenarios-and-examples"></a>Szenarios für die externe Automatisierung und Beispiele
+# <a name="external-automation-scenarios-and-examples"></a>Szenarien für die externe Automatisierung und Beispiele
 
-Die Member bereitgestellt von Microsoft Office InfoPath-primären interop-Assembly (Microsoft.Office.Interop.InfoPath.dll) und der InfoPath XML-Interopassembly (Microsoft.Office.Interop.InfoPath.Xml.dll) Schreiben von verwaltetem Code für die Automatisierung von Support InfoPath. 
+Die Mitglieder, die von der primären Interop-Assembly von Microsoft Office InfoPath (Microsoft. Office. Interop. InfoPath. dll) und der InfoPath-XML-Interop-Assembly (Microsoft. Office. Interop. InfoPath. Xml. dll) bereitgestellt werden, unterstützen das Schreiben von verwaltetem Code für die Automatisierung InfoPath. 
   
-## <a name="establishing-references-to-the-microsoft-office-infopath-primary-interop-and-infopath-xml-interop-assemblies"></a>Einrichten von Verweisen auf die primäre Interopassembly für Microsoft Office InfoPath und InfoPath-XML-Interop-Assemblys
+## <a name="establishing-references-to-the-microsoft-office-infopath-primary-interop-and-infopath-xml-interop-assemblies"></a>Einrichten von Verweisen auf die XML-Interop-Assemblys von Microsoft Office InfoPath Primary Interop und InfoPath
 
-Zum Schreiben von verwalteten Codes für die Automatisierung von InfoPath müssen Sie Verweise auf die primären Interop-Microsoft InfoPath und InfoPath XML-interop-Assemblys einrichten. Die primäre Interopassembly für Microsoft InfoPath bietet Unterstützung für die Interoperabilität mit dem COM-Objektmodell von IPEDITOR verfügbar gemacht werden. DLL-Datei mithilfe der Member des [Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) -Namespace. InfoPath XML-interop-Assembly bietet Unterstützung für die Interoperabilität mit dem COM-Objektmodell verfügbar gemacht werden von Microsoft XML Core Services (MSXML) mithilfe der Member des Namespaces [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml) . 
+Zum Schreiben von verwaltetem Code für die Automatisierung von InfoPath müssen Sie Verweise auf die Microsoft InfoPath Primary Interoperability und die XML-Interop-Assemblys von InfoPath erstellen. Die primäre Interop-Assembly von Microsoft InfoPath bietet Unterstützung für die Interoperabilität mit dem von IPEDITOR verfügbar gemachten COM-Objektmodell. DLL mithilfe der Member des [Microsoft. Office. Interop. InfoPath-](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) Namespaces. Die XML-Interop-Assembly von InfoPath bietet Unterstützung für die Interoperabilität mit dem COM-Objektmodell, das von Microsoft XML Core Services (MSXML) mithilfe der Member des [Microsoft. Office. Interop. InfoPath. XML-](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml) Namespaces verfügbar gemacht wird. 
   
 > [!IMPORTANT]
-> Benutzer von verwaltetem Code Anwendungen, die Automatisierung von InfoPath müssen InfoPath, die primäre Interopassembly für Microsoft Office InfoPath und InfoPath XML Interop-Assembly auf ihren Computern installiert haben. Die Option **.NET-Programmierunterstützung für** im InfoPath-Setupprogramm wird für eine Standardinstallation von InfoPath auf **vom Arbeitsplatz starten** festgelegt.
+> Benutzer von Anwendungen mit verwaltetem Code, die InfoPath automatisieren, müssen InfoPath, die primäre Interop-Assembly von Microsoft Office InfoPath und die InfoPath-XML-Interop-Assembly auf ihren Computern installiert haben. Die Option **.NET-Programmierunterstützung** im InfoPath-Setupprogramm wird für eine typische Installation von InfoPath auf " **Arbeitsplatz** " festgelegt.
 >  
-> Daher werden wie lange als .NET Framework 1.1 Redistributable oder .NET Framework 1.1 Software Development Kit (SDK) oder höher installiert ist, diese Interop-Assemblys auch standardmäßig installiert. Wenn diese Interop-Assemblys nicht auf dem Computer eines Benutzers verfügbar sind, müssen Sie bestätigen, dass das .NET Framework 1.1 oder höher installiert ist, und führen Sie **Programme und Funktionen** aus der **Systemsteuerung** ändern Sie Setup und Festlegen der **.NET-Programmierung Unterstützung** Option von InfoPath auf **vom Arbeitsplatz starten**. 
+> Solange das .NET Framework 1,1 Redistributable oder .NET Framework 1,1 Software Development Kit (SDK) oder höher installiert ist, werden diese Interop-Assemblys auch standardmäßig installiert. Wenn diese Interop-Assemblys auf dem Computer eines Benutzers nicht verfügbar sind, müssen Sie bestätigen, dass .NET Framework 1,1 oder höher installiert ist, und dann **Programme und Funktionen** aus der **System** Steuerung ausführen, um das Setup zu ändern und die **.net-Programmierbarkeit festzulegen. Support** Option von InfoPath, die **von meinem Computer aus ausgeführt**werden soll. 
   
-Die folgenden Verfahren wird beschrieben, wie Verweise auf die primären Interop-Microsoft Office InfoPath und InfoPath XML Interop-Assemblys in Visual Studio-Projekt festlegen.
+In den folgenden Verfahren wird beschrieben, wie Sie Verweise auf Microsoft Office InfoPath Primary Interop und die InfoPath-XML-Interop-Assemblys in einem Visual Studio-Projekt festlegen.
   
-Wenn Sie einen Verweis auf die primäre Interopassembly für Microsoft.Office.Interop.InfoPath festgelegt, legen Sie einen Verweis auf **Die Typbibliothek von Microsoft InfoPath 3.0** auf der Registerkarte **COM** im Dialogfeld **Verweis hinzufügen** . Auch wenn Sie einen Verweis auf die Registerkarte **COM** festgelegt, wird ein Verweis auf die primäre Interopassembly für Microsoft.Office.Interop.InfoPath.dll eingerichtet, die das InfoPath-Setup-Programm in den globalen Assemblycache (GAC) installiert ist. 
+Wenn Sie einen Verweis auf die primäre Interop-Assembly von Microsoft. Office. Interop. InfoPath festlegen möchten, legen Sie auf der Registerkarte **com** des Dialogfelds **Verweis hinzufügen** einen Verweis auf die **microsoft InfoPath-Typbibliothek 3,0** fest. Auch wenn Sie einen Verweis auf der Registerkarte **com** festlegen, wird ein Verweis auf die primäre Interop-Assembly von Microsoft. Office. Interop. InfoPath. dll festgelegt, die im globalen ASSEMBLYCACHE (GAC) vom InfoPath-Setupprogramm installiert wird. 
   
-### <a name="set-a-reference-to-the-microsoftofficeinteropinfopath-primary-interop-assembly"></a>Legen Sie einen Verweis auf die primäre Interopassembly für Microsoft.Office.Interop.InfoPath
+### <a name="set-a-reference-to-the-microsoftofficeinteropinfopath-primary-interop-assembly"></a>Festlegen eines Verweises auf die primäre Interop-Assembly von Microsoft. Office. Interop. InfoPath
 
-1. Öffnen Sie ein Projekt mit verwaltetem Code Visual Studio.
+1. Öffnen Sie ein Visual Studio-Projekt mit verwaltetem Code.
     
-2. Klicken Sie im **Projektmappen-Explorer**Maustaste auf **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
+2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
     
-3. Doppelklicken Sie auf **Microsoft InfoPath 3.0-Typbibliothek**auf der Registerkarte **COM** , und klicken Sie dann auf **OK**.
+3. Doppelklicken Sie auf der Registerkarte **com** auf **Microsoft InfoPath 3,0**-Typbibliothek, und klicken Sie dann auf **OK**.
     
-Wenn Sie einen Verweis auf die Interop-Assembly Microsoft.Office.Interop.InfoPath.Xml festgelegt, navigieren Sie zur Microsoft.Office.Interop.InfoPath.Xml.dll-Datei, die standardmäßig im < _Laufwerk_> installiert ist: \Programme\Microsoft Office\OFFICE14 Ordner . Auch wenn Sie die Kopie der Assembly im lokalen Dateisystem angeben, richtet dieses Verfahren einen Verweis auf die Microsoft.Office.Interop.InfoPath.Xml.dll-Assembly, die das InfoPath-Setup-Programm in den globalen Assemblycache (GAC) installiert ist.
+Wenn Sie einen Verweis auf die Interop-Assembly Microsoft. Office. Interop. InfoPath. XML festlegen möchten, navigieren Sie zur Datei Microsoft. Office. Interop. InfoPath. Xml. dll, die standardmäßig im Ordner < _Drive_>: \Programme\Microsoft Office\OFFICE14 installiert ist. . Auch wenn Sie die Kopie der Assembly im lokalen Dateisystem angeben, richtet dieses Verfahren einen Verweis auf die Microsoft. Office. Interop. InfoPath. Xml. dll-Assembly ein, die vom InfoPath-Setupprogramm im globalen Assemblycache (GAC) installiert wird.
   
-### <a name="set-a-reference-to-the-microsoftofficeinteropinfopathxml-interop-assembly"></a>Stellen Sie einen Verweis auf die Microsoft.Office.Interop.InfoPath.Xml-Interopassembly
+### <a name="set-a-reference-to-the-microsoftofficeinteropinfopathxml-interop-assembly"></a>Festlegen eines Verweises auf die Microsoft. Office. Interop. InfoPath. XML-Interop-Assembly
 
-1. Öffnen Sie oder erstellen Sie ein Projekt Visual Studio mit verwaltetem Code, wie ein **Konsolenanwendungsprojekt** oder **Windows-Anwendung**.
+1. Öffnen oder erstellen Sie ein Visual Studio-Projekt mit verwaltetem Code, beispielsweise eine **Konsolenanwendung** oder eine **Windows-Anwendung**.
     
-2. Klicken Sie im **Projektmappen-Explorer**Maustaste auf **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
+2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
     
-3. Klicken Sie auf der Registerkarte **.NET** auf **Durchsuchen**, navigieren Sie zu dem < _Laufwerk_>: \Programme\Microsoft Office\OFFICE14-Ordner, und klicken Sie dann auf Microsoft.Office.Interop.InfoPath.Xml.dll.
+3. Klicken Sie auf der Registerkarte **.net** auf **Durchsuchen**, navigieren Sie zum Ordner < _Drive_>: \Programme\Microsoft Office\OFFICE14, und klicken Sie dann auf Microsoft. Office. Interop. InfoPath. Xml. dll.
     
 4. Klicken Sie auf **OK**.
     
-## <a name="automate-changing-the-value-of-a-field"></a>Automatisieren Sie ändern des Werts eines Felds
+## <a name="automate-changing-the-value-of-a-field"></a>Automatisieren des Änderns des Werts eines Felds
 
-Angenommen Sie, einen Kunden des Benutzers von einer InfoPath-Formularvorlage Umsatzbericht kürzlich seinen Namen von "Company A" die "Unternehmen b" geändert. Ein Entwickler wird gefragt, Code schreiben, der die Umsatzbericht Formulare aus dieser Formularvorlage entsprechend ändern gespeichert automatisch aktualisiert wird. Im folgende Szenario wird vorausgesetzt, ein Formular, das ein Textfeld enthält, das an ein Feld mit dem Namen CustomerName gebunden ist.
+Angenommen, einer der Kunden des Benutzers einer InfoPath-Formularvorlage für den Umsatzbericht hat kürzlich seinen Namen von "Firma A" in "Firma B" geändert. Ein Entwickler wird aufgefordert, Code zu schreiben, mit dem die von dieser Formularvorlage gespeicherten Umsatzberichtsformulare automatisch aktualisiert werden, um die Namensänderung widerzuspiegeln. Im folgenden Szenario wird davon ausgegangen, dass ein Formular, das ein Textfeld enthält, das an ein Feld mit dem Namen CustomerName gebunden ist.
   
-### <a name="create-the-sample-form-template-and-form"></a>Erstellen Sie die Beispielvorlage Formular und das Formular
+### <a name="create-the-sample-form-template-and-form"></a>Erstellen der Beispielformularvorlage und des Formulars
 
-1. Öffnen von InfoPath und erstellen Sie eine leere Formularvorlage.
+1. Öffnen Sie InfoPath, und erstellen Sie eine leere Formularvorlage.
     
-2. Hinzufügen eines **Textfeld** -Steuerelements auf das Formular, und nennen Sie das Feld auf das Steuerelement CustomerName gebunden.
+2. Fügen Sie dem Formular ein **Textfeld** -Steuerelement hinzu, und nennen Sie das Feld, das an das Steuerelement customerName gebunden ist.
     
-3. Klicken Sie im Aufgabenbereich **Felder** mit der rechten Maustaste in des Ordners **MyFields** , und klicken Sie dann auf **Eigenschaften**.
+3. Klicken Sie im Aufgabenbereich **Felder** mit der rechten Maustaste auf den Ordner myFields, und klicken Sie dann auf **Eigenschaften**. ****
     
-4. Wählen Sie auf der Registerkarte **Details** , und fügen Sie den folgenden Wert **Namespace:**, und fügen Sie diese in Editor oder einem anderen Speicherort, in dem Sie es abrufen können. Dieser Wert benötigen später Sie für den Wert der Eigenschaft **SelectionNamespaces** in Ihrem Code festlegen. 
+4. Wählen Sie auf der Registerkarte **Details** den folgenden **Namespace**aus, und kopieren Sie ihn, und fügen Sie diesen in den Editor oder einen anderen Speicherort ein, an dem Sie ihn abrufen können. Sie benötigen diesen Wert später zum Festlegen des Werts der **SelectionNamespaces** -Eigenschaft im Code. 
     
-5. Veröffentlichen Sie die Formularvorlage in einen Ordner namens C:\Test, und akzeptieren Sie den Standardnamen Vorlage1. 
+5. Veröffentlichen Sie die Formularvorlage in einem Ordner mit dem Namen C:\Test, und übernehmen Sie den Standardnamen Template1. 
     
-6. Öffnen Sie die Formularvorlage, fügen Sie den Namen "Firma A" zum Textfeld an das CustomerName-Feld gebunden, und speichern Sie das Formular als "Form1". 
+6. Öffnen Sie die Formularvorlage, fügen Sie den Namen "Firma A" zum Textfeld hinzu, das an das Feld CustomerName gebunden ist, und speichern Sie das Formular dann als "Form1". 
     
-### <a name="create-a-managed-code-console-application-to-change-the-name-from-company-a-to-company-b"></a>Erstellen Sie eine verwaltetem Code zum Ändern des Namens von 'Unternehmen A' auf 'Unternehmen B'
+### <a name="create-a-managed-code-console-application-to-change-the-name-from-company-a-to-company-b"></a>Erstellen Sie eine Konsolenanwendung mit verwaltetem Code, um den Namen von "Firma A" zu "Firma B" zu ändern.
 
-1. Öffnen Sie Visual Studio, und erstellen Sie eine neue Visual c# oder Visual Basic-Konsolenanwendungsprojekt mit dem Namen UpdateCustomer.
+1. Öffnen Sie Visual Studio, und erstellen Sie eine neue Visual C#-oder Visual Basic-Konsolenanwendung mit dem Namen UpdateCustomer.
     
-2. Richten Sie Verweise auf die primären Interop-Microsoft Office InfoPath und InfoPath XML Interop-Assemblys, wie oben beschrieben.
+2. Stellen Sie, wie oben beschrieben, Verweise auf die Microsoft Office InfoPath Primary Interop-und InfoPath-Interop-Assemblys her.
     
-3. Fügen Sie den folgenden Code, um die Datei Program.cs oder Module1.vb ein und stellt sicher, dass den Wert des Namespaces in der Einstellung für die **SelectionNamespaces** -Eigenschaft mit dem Wert aktualisiert, die Sie beim Erstellen des Beispielformulars kopiert. 
+3. Fügen Sie der Datei Program.cs oder Module1. vb den folgenden Code hinzu, und stellen Sie sicher, dass der Wert des Namespaces in der Einstellung für die **SelectionNamespaces** -Eigenschaft mit dem Wert aktualisiert wird, den Sie beim Erstellen des Beispielformulars kopiert haben. 
     
    ```cs
     using System;
@@ -188,35 +188,35 @@ Angenommen Sie, einen Kunden des Benutzers von einer InfoPath-Formularvorlage Um
     
    ```
 
-4. Klicken Sie zum Kompilieren und Ausführen der Konsolenanwendung im Menü **Debuggen** auf **Debuggen starten** . 
+4. Klicken Sie im Menü **Debuggen** auf **Debuggen starten** , um die Konsolenanwendung zu kompilieren und auszuführen. 
     
-   Die Anwendung öffnet das Formular gespeichert wird, als Form1.xml und Durchlaufen aller CustomerName-Elemente, die den Wert Unternehmen A enthalten und ändert diesen Wert in Unternehmen B. Wenn der Vorgang abgeschlossen ist, wird eine neue Kopie des Formulars als Form2.xml im Ordner "C:\Test" gespeichert. 
+   Die Anwendung öffnet das als Form1. xml gespeicherte Formular und durchläuft alle customerName-Elemente, die den Wert Company A enthalten, und ändert diesen Wert in Firma B. Wenn der Vorgang abgeschlossen ist, wird eine neue Kopie des Formulars im Ordner C:\Test als Form2. XML gespeichert. 
     
-## <a name="automate-opening-a-form-and-populating-field-values"></a>Öffnen eines Formulars und Auffüllen von Feldwerten automatisieren
+## <a name="automate-opening-a-form-and-populating-field-values"></a>Automatisieren des Öffnens eines Formulars und Auffüllen von Feldwerten
 
-Im folgenden Beispiel wird ein leeres Formular öffnen, und füllen den Vornamen, Nachnamen und Adressfelder im Formular automatisiert werden. In diesem Szenario wird ein Formular mit drei Textfeldern, die an die Felder FirstName, LastName und Adresse gebunden sind.
+Im folgenden Beispiel wird das Öffnen eines leeren Formulars und das Auffüllen der Felder Vorname, Nachname und Adresse im Formular automatisiert. In diesem Szenario wird davon ausgegangen, dass ein Formular drei Textfelder enthält, die an Felder mit dem Namen FirstName, LastName und Address gebunden sind.
   
-### <a name="create-the-sample-form-template-and-form"></a>Erstellen Sie die Beispielvorlage Formular und das Formular
+### <a name="create-the-sample-form-template-and-form"></a>Erstellen der Beispielformularvorlage und des Formulars
 
-1. Öffnen von InfoPath und erstellen Sie ein leeres Formular.
+1. Öffnen Sie InfoPath, und erstellen Sie ein leeres Formular.
     
-2. Drei Textfeld-Steuerelemente auf dem Formular hinzufügen, und nennen Sie die Felder gebundenen Steuerelemente: FirstName, LastName und Adresse. Fügen Sie die gewünschten Felder hinzu.
+2. Fügen Sie dem Formular drei Textfeld-Steuerelemente hinzu, und nennen Sie die Felder, die an die Steuerelemente gebunden sind: FirstName, LastName und Address. Fügen Sie alle anderen gewünschten Felder hinzu.
     
-3. Klicken Sie im Aufgabenbereich **Felder** mit der rechten Maustaste in des Ordners **MyFields** , und klicken Sie dann auf **Eigenschaften**.
+3. Klicken Sie im Aufgabenbereich **Felder** mit der rechten Maustaste auf den Ordner myFields, und klicken Sie dann auf **Eigenschaften**. ****
     
-4. Wählen Sie auf der Registerkarte **Details** , und fügen Sie den folgenden Wert **Namespace:**, und fügen Sie diese in Editor oder einem anderen Speicherort, in dem Sie es abrufen können. Dieser Wert benötigen später Sie für den Wert der Eigenschaft **SelectionNamespaces** in Ihrem Code festlegen. 
+4. Wählen Sie auf der Registerkarte **Details** den folgenden **Namespace**aus, und kopieren Sie ihn, und fügen Sie diesen in den Editor oder einen anderen Speicherort ein, an dem Sie ihn abrufen können. Sie benötigen diesen Wert später zum Festlegen des Werts der **SelectionNamespaces** -Eigenschaft im Code. 
     
-5. Veröffentlichen Sie die Formularvorlage in einen Ordner namens C:\Temp, und akzeptieren Sie den Standardnamen Vorlage1.
+5. Veröffentlichen Sie die Formularvorlage in einem Ordner mit dem Namen C:\Temp, und übernehmen Sie den Standardnamen Template1.
     
-6. Öffnen Sie die Formularvorlage, und speichern Sie ein leeres Formular als "Form1" c:\temp.
+6. Öffnen Sie die Formularvorlage, und speichern Sie ein leeres Formular als "Form1" in C:\Temp.
     
-### <a name="create-a-managed-code-console-application-to-open-the-form-and-populate-the-fields"></a>Erstellen einer Anwendung mit verwaltetem Code Konsole zum Öffnen des Formulars, und füllen Sie die Felder
+### <a name="create-a-managed-code-console-application-to-open-the-form-and-populate-the-fields"></a>Erstellen einer Konsolenanwendung mit verwaltetem Code zum Öffnen des Formulars und zum Auffüllen der Felder
 
-1. Öffnen Sie Visual Studio, und erstellen Sie eine neue Visual c# oder Visual Basic-Konsolenanwendungsprojekt mit dem Namen OpenForm.
+1. Öffnen Sie Visual Studio, und erstellen Sie eine neue Visual C#-oder Visual Basic-Konsolenanwendung mit dem Namen OpenForm.
     
-2. Richten Sie Verweise auf die primären Interop-Microsoft Office InfoPath und InfoPath XML Interop-Assemblys, wie oben beschrieben.
+2. Stellen Sie, wie oben beschrieben, Verweise auf die Microsoft Office InfoPath Primary Interop-und InfoPath-Interop-Assemblys her.
     
-3. Fügen Sie den folgenden Code, um die Datei Program.cs oder Module1.vb ein und stellt sicher, dass den Wert des Namespaces in der Einstellung für die **SelectionNamespaces** -Eigenschaft mit dem Wert aktualisiert, die Sie beim Erstellen des Beispielformulars kopiert. 
+3. Fügen Sie der Datei Program.cs oder Module1. vb den folgenden Code hinzu, und stellen Sie sicher, dass der Wert des Namespaces in der Einstellung für die **SelectionNamespaces** -Eigenschaft mit dem Wert aktualisiert wird, den Sie beim Erstellen des Beispielformulars kopiert haben. 
     
    ```cs
     using System;
@@ -292,9 +292,9 @@ Im folgenden Beispiel wird ein leeres Formular öffnen, und füllen den Vornamen
     
    ```
 
-4. Klicken Sie im Menü **Debuggen** auf **Debuggen starten** , um zu kompilieren und Ausführen der Konsolenanwendung. 
+4. Klicken Sie im Menü **Debuggen** auf **Debuggen starten** , um die Konsolenanwendung zu kompilieren und auszuführen. 
     
-   Die Anwendung wird beim Öffnen des Formulars als Form1.xml gespeichert und füllen Sie die Felder FirstName, LastName und Adresse mit den Werten, die im Code angegebene und speichern Sie das Formular, das InfoPath geöffnet lassen. 
+   Die Anwendung öffnet das als Form1. xml gespeicherte Formular und füllt die Felder FirstName, LastName und Address mit den im Code angegebenen Werten, und speichern Sie das Formular, und lassen Sie InfoPath geöffnet. 
     
 ## <a name="see-also"></a>Siehe auch
 

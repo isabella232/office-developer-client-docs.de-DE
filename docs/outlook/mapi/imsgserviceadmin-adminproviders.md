@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0d605e2c-10db-46e1-95d5-12fabd524baa
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1b03245d7af4c6fb3879e597d8345e5d9888e164
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6b7360995a781824b50ff02b5d2dec8e481e7ba7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317423"
 ---
 # <a name="imsgserviceadminadminproviders"></a>IMsgServiceAdmin::AdminProviders
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger, der Zugriff auf ein Anbieter Administration-Objekt bietet.
+Gibt einen Zeiger zurück, der Zugriff auf ein Anbieter Verwaltungsobjekt bereitstellt.
   
 ```cpp
 HRESULT AdminProviders(
@@ -39,51 +39,51 @@ HRESULT AdminProviders(
 
  _lpUID_
   
-> [in] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den Dienst zu verwaltenden enthält. 
+> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu verwaltenden Nachrichtendienst enthält. 
     
  _ulFlags_
   
-> [in] Immer NULL. 
+> in Immer NULL. 
     
  _lppProviderAdmin_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Anbieter Administration-Objekt.
+> Out Ein Zeiger auf einen Zeiger auf ein Anbieter Verwaltungsobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Anbieter Verwaltungsobjekt wurde erfolgreich zurückgegeben.
+> Das Anbieter Verwaltungsobjekt wurde erfolgreich zurückgegeben.
     
 MAPI_E_NOT_FOUND 
   
-> Die **MAPIUID** auf den _LpUID_ ist nicht vorhanden. 
+> Die **MAPIUID** , auf die durch _lpUID_ verwiesen wird, ist nicht vorhanden. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgServiceAdmin::AdminProviders** -Methode ermöglicht den Zugriff auf ein Anbieter Administration-Objekt. Eine Anbieter Verwaltung ist ein Objekt, das die [IProviderAdmin](iprovideradminiunknown.md) -Schnittstelle unterstützt und ermöglicht es Clients, die folgenden Schritte aus: 
+Die **IMsgServiceAdmin:: AdminProviders** -Methode ermöglicht den Zugriff auf ein Anbieter Verwaltungsobjekt. Eine Anbieterverwaltung ist ein Objekt, das die [IProviderAdmin](iprovideradminiunknown.md) -Schnittstelle unterstützt und Clients folgende Aktionen ermöglicht: 
   
-- Fügen Sie eine Message Service-Dienstanbieter hinzu.
+- Hinzufügen von Dienstanbietern zu einem Nachrichtendienst
     
-- Dienstanbieter aus einem Nachrichtendienst zu löschen.
+- Löschen von Dienstanbietern aus einem Nachrichtendienst.
     
-- Profil Abschnitte zu öffnen.
+- Öffnen Sie Profilabschnitte.
     
-- Zugriff auf die Tabelle Nachricht-Dienstanbieter.
+- Zugreifen auf die Tabelle des Nachrichtendienst Anbieters.
     
-Die Arten von Änderungen, die mit einer Messagingdiensts tatsächlich hergestellt werden können, während das Profil verwendet wird, hängt von den Dienst. Die meisten Message Dienste unterstützen nicht jedoch Änderungen wie hinzufügen und Löschen von Anbietern, während das Profil verwendet wird.
+Die Typen von Änderungen, die an einem Nachrichtendienst vorgenommen werden können, während das Profil verwendet wird, hängen vom Nachrichtendienst ab. Die meisten Nachrichtendienste unterstützen jedoch keine Änderungen wie das Hinzufügen und Löschen von Anbietern, während das Profil verwendet wird.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Zum Abrufen der **MAPIUID** -Struktur für den Dienst zu verwalten, Abrufen die Spalte **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) aus der Nachrichtendienst Zeile in der Tabelle der Dienste. Weitere Informationen finden Sie unter dem Verfahren in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode. 
+Um die **MAPIUID** -Struktur für den zu verwaltenden Nachrichtendienst abzurufen, rufen Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Eigenschaftsspalte aus der Zeile des Nachrichtendiensts in der Nachrichtendienst Tabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode beschriebenen Prozedur. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDisplayItem  <br/> |MFCMAPI (engl.) wird die **IMsgServiceAdmin::AdminProviders** -Methode verwendet, um einen Anbieter Administration-Objekt für einen Dienst zu öffnen.  <br/> |
+|MsgServiceTableDlg. cpp  <br/> |CMsgServiceTableDlg:: OnDisplayItem  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin:: AdminProviders** -Methode, um ein Anbieter Verwaltungsobjekt für einen Dienst zu öffnen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

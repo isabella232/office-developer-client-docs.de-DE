@@ -6,20 +6,20 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b9ae6679-99b7-6509-74d4-12aa13d54928
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4d3ca89ea7d3d72f625d38e37494e253b05b1569
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6c39fe513be122f265fdc316629a3e64a156fdc1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318179"
 ---
 # <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Anbieter anmelden kann im Rahmen einer MAPI-Uniform Resource Locator (URL) senden eine Eintrags-ID und eine Anlage-ID an der MAPI-Protokollhandler, um ein Objekt zu identifizieren, die für die Indizierung bereit ist. Speicheranbieter codiert die Eintrags-ID und Anlagen-ID als Unicode-Zeichenfolgen. In diesem Thema wird einen Algorithmus, der eine kompakte Darstellung des Eintrags-ID oder der Anlage-ID generiert.
+Ein Informationsspeicher Anbieter kann als Teil einer MAPI-URL (Uniform Resource Locator) eine Eintrags-ID und eine Anlagen-ID an den MAPI-Protokoll Handler senden, um ein Objekt zu identifizieren, das für die Indizierung bereit ist. Der Informationsspeicher Anbieter codiert die Eintrags-ID und die Anlagen-ID als Unicode-Zeichenfolgen. In diesem Thema wird ein Algorithmus gezeigt, der eine kompakte Darstellung der Eintrags-ID oder der Anlagen-ID generiert.
   
 ```cpp
 const WORD kwBaseOffset = 0xAC00;  // Hangul char range (AC00-D7AF) 
@@ -56,7 +56,7 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 
 
 
-[Informationen zum benachrichtigungsbasierten Indizieren von Stores](about-notification-based-store-indexing.md)
+[Informationen zu Benachrichtigungs basierter Speicher Indizierung](about-notification-based-store-indexing.md)
   
-[Informationen zu MAPI-URLs für das benachrichtigungsbasierte Indizieren](about-mapi-urls-for-notification-based-indexing.md)
+[Informationen zu MAPI-URLs für die Benachrichtigungs basierte Indizierung](about-mapi-urls-for-notification-based-indexing.md)
 

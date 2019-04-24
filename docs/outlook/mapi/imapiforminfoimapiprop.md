@@ -11,45 +11,45 @@ api_name:
 api_type:
 - COM
 ms.assetid: a9fda518-11ba-42aa-85ef-dd2279e0319d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2b2abf4440ee2d81a8e95dcdb5fde2daeaa6e6f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3913cb04f1f2f61ba6835b704f430d872756b227
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321735"
 ---
 # <a name="imapiforminfo--imapiprop"></a>IMAPIFormInfo : IMAPIProp
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Client Applications Zugriff auf Eigenschaften, die speziell für Formulardefinition gelten. Hält Formularinformationen in einem separaten Objekt, kann der Formular Bibliotheksanbieter ein Formulars an einen Client beschreiben, ohne das Formular aktivieren.
+Ermöglicht Clientanwendungen den Zugriff auf Eigenschaften, die speziell für die Formulardefinition gelten. Wenn Formular Informationen in einem separaten Objekt enthalten sind, kann der Formularbibliothek Anbieter ein Formular für einen Client ohne Aktivierung des Formulars beschreiben.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Formular Informationen-Objekte  <br/> |
-|Implementiert von:  <br/> |Anbieter für Formular-Bibliothek  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Formular Informationsobjekte  <br/> |
+|Implementiert von:  <br/> |Formular Bibliotheks Anbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIFormInfo  <br/> |
 |Zeigertyp:  <br/> |LPMAPIFORMINFO  <br/> |
-|Transaktionsmodell:  <br/> |Nontransacted  <br/> |
+|Transaktionsmodell:  <br/> |Nicht durchgeführten  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[CalcFormPropSet](imapiforminfo-calcformpropset.md) <br/> |Gibt einen Zeiger auf den vollständigen Satz von Eigenschaften, die einem Formular verwendet wird.  <br/> |
-|[CalcVerbSet](imapiforminfo-calcverbset.md) <br/> |Gibt einen Zeiger auf den vollständigen Satz von Verben, die ein Formular verwendet wird.  <br/> |
-|[MakeIconFromBinary](imapiforminfo-makeiconfrombinary.md) <br/> |Erstellt ein Symbol aus einer Icon-Eigenschaft eines Formulars an.  <br/> |
+|[CalcFormPropSet](imapiforminfo-calcformpropset.md) <br/> |Gibt einen Zeiger auf den vollständigen Satz von Eigenschaften zurück, die ein Formular verwendet.  <br/> |
+|[CalcVerbSet](imapiforminfo-calcverbset.md) <br/> |Gibt einen Zeiger auf den vollständigen Satz von Verben zurück, die ein Formular verwendet.  <br/> |
+|[MakeIconFromBinary](imapiforminfo-makeiconfrombinary.md) <br/> |Erstellt ein Symbol aus einer Icon-Eigenschaft eines Formulars.  <br/> |
 |[SaveForm](imapiforminfo-saveform.md) <br/> |Speichert eine Beschreibung eines bestimmten Formulars in einer Konfigurationsdatei.  <br/> |
-|[OpenFormContainer](imapiforminfo-openformcontainer.md) <br/> |Gibt einen Zeiger auf den Formular-Container, in dem ein bestimmtes Formular installiert ist.  <br/> |
+|[OpenFormContainer](imapiforminfo-openformcontainer.md) <br/> |Gibt einen Zeiger auf den Formular Container zurück, in dem ein bestimmtes Formular installiert ist.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Im Gegensatz zu den meisten Schnittstellen in der Headerdatei MapiForm.h definiert erbt **IMAPIFormInfo** über die Benutzeroberfläche [IMAPIProp](imapipropiunknown.md) , da es die meisten Formularinformationen über Aufrufe der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode exportiert. 
+Im Gegensatz zu den meisten in der Headerdatei MapiForm. h definierten Schnittstellen erbt **IMAPIFormInfo** von der [IMAPIProp](imapipropiunknown.md) -Schnittstelle, da die meisten Formular Informationen über Aufrufe an die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode exportiert werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

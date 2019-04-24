@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 10cda14a-8f93-41e0-b1fb-500098bdc392
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 92d5dcdf3e5e3fbdb7490d777a24976c9ae4af1a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b104c62eb617e6c68f85dea4ef6379c831733844
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317115"
 ---
 # <a name="iprofadmincreateprofile"></a>IProfAdmin::CreateProfile
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Erstellt ein neues Profil.
   
@@ -40,57 +40,57 @@ HRESULT CreateProfile(
 
  _lpszProfileName_
   
-> [in] Ein Zeiger auf den Namen des neuen Profils.
+> in Ein Zeiger auf den Namen des neuen Profils.
     
  _lpszPassword_
   
-> [in] Ein Zeiger auf das Kennwort für das neue Profil. 
+> in Ein Zeiger auf das Kennwort des neuen Profils. 
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, die diese Methode anzeigt.
+> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Profil erstellt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Erstellung des Profils steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFAULT_SERVICES 
   
-> MAPI sollte das neue Profil mit den Diensten Nachricht aufgefüllt, die in der die Datei "Mapisvc.inf" im Abschnitt [Default Services] enthalten sind.
+> MAPI sollte das neue Profil mit den Nachrichtendiensten auffüllen, die im Abschnitt [Default Services] der Datei MAPISVC. inf enthalten sind.
     
 MAPI_DIALOG 
   
-> Konfigurationsblätter-Eigenschaft der einzelnen die Rollenanbieter in der Nachrichtendienste hinzugefügt werden soll, können angezeigt werden. 
+> Die Konfigurationseigenschaften Blätter der einzelnen Anbieter in den Nachrichtendiensten, die hinzugefügt werden sollen, können angezeigt werden. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das neue Profil erstellt wurde.
+> Das neue Profil wurde erstellt.
     
 MAPI_E_NO_ACCESS 
   
 > Das angegebene neue Profil ist bereits vorhanden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IProfAdmin::CreateProfile** -Methode erstellt ein neues Profil. 
+Die **IProfAdmin::** CreateProfile-Methode erstellt ein neues Profil. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können **CreateProfile** bei der Installation oder können Sie jederzeit während einer Sitzung aufrufen. Bei der Installation diese Methode aufgerufen wird, werden viele der Konfigurationseinstellungen für die aus der Konfigurationsdatei Mapisvc.inf Vordergrund angezeigt. Wenn diese Methode während einer aktiven Sitzung aufgerufen wird, stammen die Einstellungen der Benutzer, der durch eine Reihe von Eigenschaftenseiten aufgefordert wird. 
+Sie können **CreateProfile** während der Anwendungsinstallation oder zu einem beliebigen Zeitpunkt während einer Sitzung aufrufen. Wenn diese Methode zur Installation aufgerufen wird, stammen viele Konfigurationseinstellungen aus der Konfigurationsdatei MAPISVC. inf. Wenn diese Methode während einer aktiven Sitzung aufgerufen wird, stammen die Einstellungen vom Benutzer, der durch eine Reihe von Eigenschaftenblättern dazu aufgefordert wird. 
   
-Wenn das Flag MAPI_DEFAULT_SERVICES im _UlFlags_ -Parameter festgelegt ist, ruft **CreateProfile** die Nachricht Service Eintrag-Funktion für jeden Nachrichtendienst im Abschnitt [Default Services] in der Datei "Mapisvc.inf". Jede Nachricht Service Eintrag Point-Funktion wird mit der _UlContext_ -Parameter auf MSG_SERVICE_CREATE aufgerufen. 
+Wenn das MAPI_DEFAULT_SERVICES-Flag im Parameter _ulFlags_ festgelegt ist, ruft CreateProfile die Entry Point-Funktion des Nachrichtendiensts für jeden Nachrichtendienst im Abschnitt [Default Services] in der Datei MAPISVC. inf auf. **** Jede Nachrichtendienst-Einstiegspunktfunktion wird aufgerufen, wobei der _ulContext_ -Parameter auf MSG_SERVICE_CREATE festgelegt ist. 
   
-Wenn die MAPI_DIALOG und die MAPI_DEFAULT_SERVICES Flags festgelegt sind, werden die Werte in den _UlUIParam_ und _UlFlags_ auch an die Nachricht Service Eintrag-Funktion übergeben. Die Nachricht Service Entry Point-Funktionen werden aufgerufen, nur, nachdem alle verfügbaren Informationen aus der Datei "Mapisvc.inf" auf das Profil hinzugefügt wurde. 
+Wenn sowohl die MAPI_DIALOG-als auch die MAPI_DEFAULT_SERVICES-Flags festgelegt werden, werden die Werte in den Parametern _ulUIParam_ und _ulFlags_ ebenfalls an die Einstiegspunktfunktion des Nachrichtendiensts übergeben. Die Nachrichtendienst-Einstiegspunktfunktionen werden nur aufgerufen, nachdem dem Profil alle verfügbaren Informationen aus der Datei MAPISVC. inf hinzugefügt wurden. 
   
-Der Name der dem neuen Profil und das zugehörige Kennwort kann bis zu 64 Zeichen lang sein und kann die folgenden Zeichen enthalten:
+Der Name des neuen Profils und sein Kennwort können bis zu 64 Zeichen lang sein und die folgenden Zeichen enthalten:
   
-- Alle alphanumerischen Zeichen, einschließlich Akzent-Zeichen und das Unterstrichzeichen.
+- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und der Unterstrich.
     
-- Leerzeichen, jedoch nicht führende oder nachfolgende Leerzeichen.
+- Eingebettete Leerzeichen, aber keine führenden oder nachstehenden Leerzeichen.
     
-Der Parameter _LpszPassword_ muss NULL oder einen Zeiger auf eine leere Zeichenfolge. 
+Der _lpszPassword_ -Parameter muss NULL oder ein Zeiger auf eine leere Zeichenfolge sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

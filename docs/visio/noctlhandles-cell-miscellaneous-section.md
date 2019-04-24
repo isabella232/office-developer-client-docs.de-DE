@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4345b3e5-f522-e300-307c-4f8992a3ddce
 description: Aktiviert bzw. deaktiviert die Anzeige der Steuerpunkte für das ausgewählte Shape.
-ms.openlocfilehash: 897e4cd97eeab8797f2652285ba395603c41a8e7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cbe4d6a8b6fdd4b66acf064884d20999ff7e3b4f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319803"
 ---
-# <a name="noctlhandles-cell-miscellaneous-section"></a>NoCtlHandles Cell (Miscellaneous Section)
+# <a name="noctlhandles-cell-miscellaneous-section"></a>Zelle "NoCtlHandles" (Abschnitt "Miscellaneous")
 
 Aktiviert bzw. deaktiviert die Anzeige der Steuerpunkte für das ausgewählte Shape.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| WAHR  <br/> | Steuerpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
-| FALSCH  <br/> | Steuerpunkte werden angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
+| TRUE  <br/> | Steuerpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
+| FALSE  <br/> | Steuerpunkte werden angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle NoCtlHandles aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle NoCtlHandles aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | NoCtlHandles  <br/> |
+| Zellenname:  <br/> | Zelle NoCtlHandles  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoCtlHandles aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle NoCtlHandles aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

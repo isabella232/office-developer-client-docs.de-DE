@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm60100
 localization_priority: Normal
 ms.assetid: 6574edeb-eb6f-afd9-89c4-eb5996dffa30
-description: Führt den angegebenen Befehl.
-ms.openlocfilehash: e425dd9605c18d4647787c5df7aeaa4fd5f9e4cd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Führt den identifizierten Befehl aus.
+ms.openlocfilehash: 9e5c02c9a90f3aab66c5d582c83d7d9d892f964c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315232"
 ---
 # <a name="docmd-function"></a>DOCMD Function
 
-Führt den angegebenen Befehl.
+Führt den identifizierten Befehl aus.
   
 ## <a name="syntax"></a>Syntax
 
- **DOCMD** ( _CommandID_)
+ **DoCmd** ( _CommandID_)
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _commandID_ <br/> |Erforderlich  <br/> |**Nummer** <br/> | Der auszuführende Befehl.  <br/> |
+| _commandID_ <br/> |Erforderlich  <br/> |**Number** <br/> | Der auszuführende Befehl.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Eine Liste der Befehle, die mit der DOCMD-Funktion unterstützt werden, finden Sie unter dem Thema "DoCmd/DOCMD-Befehle" in der Microsoft Visio 2013-Automatisierungsreferenz. 
+Eine Liste der Befehle, die mit der DOCMD-Funktion unterstützt werden, finden Sie im Thema "DoCmd/DOCMD-Befehle" in der Microsoft Visio 2013-AutomatisierungsReferenz. 
   
 ## <a name="example"></a>Beispiel
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagFormDesignerGuid (kanonische Eigenschaft)
+title: Kanonische Pidtagformdesignerguid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,46 +11,46 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8d7f5789-610c-47f6-a109-5513d677ef60
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 30c8f31c104be52da2900eb81c7b7c29dfa55015
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b0e0847a3a9e21f080a852738ec8afbc98a2263f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316233"
 ---
-# <a name="pidtagformdesignerguid-canonical-property"></a>PidTagFormDesignerGuid (kanonische Eigenschaft)
+# <a name="pidtagformdesignerguid-canonical-property"></a>Kanonische Pidtagformdesignerguid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den eindeutigen Bezeichner für das Objekt, das verwendet wird, ein Formular entwerfen.
+Enthält den eindeutigen Bezeichner für das Objekt, das zum Entwerfen eines Formulars verwendet wird.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_FORM_DESIGNER_GUID  <br/> |
 |Kennung:  <br/> |0x3309  <br/> |
 |Datentyp:  <br/> |PT_GUID  <br/> |
-|Bereich:  <br/> |Allgemeine MAPI  <br/> |
+|Bereich:  <br/> |MAPI allgemein  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft enthält in der Regel den global eindeutigen Bezeichner (GUID) des Programms entwerfen, die zum Erstellen des Formulars verwendet wird. Diese Eigenschaft kann leer sein. 
+Diese Eigenschaft enthält in der Regel die GUID (Globally Unique Identifier) des Entwurfsprogramms, das zum Erstellen des Formulars verwendet wird. Diese Eigenschaft kann leer sein. 
   
-Die [MAPIUID](mapiuid.md) -Datenstruktur enthält die Definition des eindeutigen Bezeichners. 
+Die [MAPIUID](mapiuid.md) -Struktur enthält die Definition des eindeutigen Bezeichners. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -7,11 +7,11 @@ ms.assetid: beba316b-1dfe-4e1b-adae-42418906c177
 description: In diesem Artikel wird beschrieben, wie Sie eine Clientanwendung für Sofortnachrichten konfigurieren, sodass Features für soziale Netzwerke in Office 2013 integriert sind,u. a. Anzeigen von Anwesenheitsinformationen und Senden von Sofortnachrichten von der Visitenkarte aus.
 localization_priority: Priority
 ms.openlocfilehash: b3add86f011e016b1b6ea1a74f425f3f1deab002
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270116"
 ---
 # <a name="integrating-im-applications-with-office"></a>Integrieren von Chatanwendungen in Office
 
@@ -661,7 +661,7 @@ Die **IAutomation**-Schnittstelle automatisiert Funktionen der Clientanwendung f
 In Tabelle 4 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **IAutomation** erbt.
   
 > [!NOTE]
-> Elemente der **IAutomation**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
+> Elemente der **IAutomation**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
 > 
 > Weitere Informationen zu der **IAutomation**-Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IAutomation](https://msdn.microsoft.com/library/UCCollaborationLib.IAutomation). 
   
@@ -698,7 +698,7 @@ Die **IContact**-Schnittstelle stellt einen Benutzer der Clientanwendung für Ch
 In Tabelle 5 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **IContact** erbt.
   
 > [!NOTE]
-> Elemente der **IContact**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
+> Elemente der **IContact**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben. 
 >
 > Weitere Informationen zu der **IContact**-Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContact](https://msdn.microsoft.com/library/UCCollaborationLib.IContact). 
   
@@ -936,7 +936,7 @@ Das **IGroup**-Objekt gibt eine Sammlung von Kontakten mit zusätzlichen Eigensc
 In Tabelle 9 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **IGroup** und **IGroupCollection** in der folgenden Tabelle erben. 
   
 > [!NOTE]
-> Elemente der **IGroup**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
+> Elemente der **IGroup**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben. 
 >
 > Weitere Informationen zu den **IGroup**- und **IGroupCollection**-Schnittstellen und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IGroup](https://msdn.microsoft.com/library/UCCollaborationLib.IGroup) und [UCCollaborationLib.IGroupCollection](https://msdn.microsoft.com/library/UCCollaborationLib.IGroupCollection). 
   
@@ -958,7 +958,7 @@ Mit der **IContactSubscription**-Schnittstelle können Sie die Kontakte angeben,
 In Tabelle 10 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **IContactSubscription** erben.
   
 > [!NOTE]
-> Elemente der **IContactSubscription**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben.
+> Elemente der **IContactSubscription**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
 > Weitere Informationen zu der **IContactSubscription**Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactSubscription](https://msdn.microsoft.com/library/UCCollaborationLib.IContactSubscription). 
   
@@ -991,7 +991,7 @@ Das **IContactEndPoint**-Objekt gibt eine Telefonnummer aus der Sammlung von Tel
 In Tabelle 11 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **IContactEndPoint** erben.
   
 > [!NOTE]
-> Elemente der **IContactEndPoint**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben.
+> Elemente der **IContactEndPoint**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
 > Weitere Informationen zu der **IContactEndPoint**Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactEndpoint](https://msdn.microsoft.com/library/UCCollaborationLib.IContactEndpoint). 
   
@@ -1011,7 +1011,7 @@ In Tabelle 11 werden die Elemente aufgeführt, die in den Klassen implementiert 
 In Tabelle 12 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **ILocaleString** erben.
   
 > [!NOTE]
-> Elemente der **ILocaleString**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben.
+> Elemente der **ILocaleString**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
 > Weitere Informationen zu der **ILocalString**-Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.ILocaleString](https://msdn.microsoft.com/library/UCCollaborationLib.ILocaleString). 
   

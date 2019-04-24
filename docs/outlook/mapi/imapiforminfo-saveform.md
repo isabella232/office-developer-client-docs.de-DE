@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 18a10f14-0795-4d4d-b590-f4cef4f2902a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7fec6b6236d26789a3ec9abee7d2ae1c620f89b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 391ea3ef4f44db2a9d007241232f58db27647ba2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321714"
 ---
 # <a name="imapiforminfosaveform"></a>IMAPIFormInfo::SaveForm
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Speichert eine Beschreibung eines bestimmten Formulars in einer Konfigurationsdatei.
   
@@ -37,9 +37,9 @@ HRESULT SaveForm(
 
  _szFileName_
   
-> [in] Eine Zeichenfolge, die das Formular Nachricht Beschreibungsdatei benennt, in dem die Beschreibung gespeichert ist. Gibt den Dateinamen muss die .fdm-Erweiterung aufweisen.
+> in Eine Zeichenfolge, die die Beschreibungsdatei des Formulars benennt, in der die Beschreibung gespeichert wird. Dieser Dateiname muss die. FDM-Erweiterung aufweisen.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,21 +47,21 @@ S_OK
     
 MAPI_E_EXTENDED_ERROR 
   
-> Die Konfigurationsdatei konnte nicht geschrieben werden. Um die Struktur [MAPIERROR](mapierror.md) abzurufen, die dem Fehler zugeordnet ist, rufen Sie die [IMAPIProp::GetLastError](imapiprop-getlasterror.md) -Methode. 
+> Die Konfigurationsdatei konnte nicht geschrieben werden. Rufen Sie die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode auf, um die [MAPIERROR](mapierror.md) -Struktur abzurufen, die dem Fehler zugeordnet ist. 
     
 MAPI_E_NO_SUPPORT 
   
-> **SaveForm** wurde wahrscheinlich aufgerufen, um ein Formular im Container lokale Formular zu speichern. **SaveForm** wird für den Container lokale Formular nicht unterstützt. 
+> **SaveForm** wurde wahrscheinlich aufgerufen, um ein Formular im lokalen Formular Container zu speichern. **SaveForm** wird für den lokalen Formular Container nicht unterstützt. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen rufen Sie die **IMAPIFormInfo::SaveForm** -Methode, um eine Beschreibung des aktuellen Formulars in der Datei zu speichern, die den angegebenen Dateinamen hat. **SaveForm** erstellt eine Konfigurationsdatei. 
+Client Anwendungen rufen die **IMAPIFormInfo:: SaveForm** -Methode auf, um eine Beschreibung des aktuellen Formulars in der Datei mit dem angegebenen Dateinamen zu speichern. **SaveForm** erstellt eine Konfigurationsdatei. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können Formulare, indem Sie sie aus einer Liste von Formular Deskriptor Nachrichten in einem Dialogfeld, die Bibliothek Anbieter Anzeige bilden auswählen installieren. Die empfohlene Erweiterung für das Formular Deskriptor Nachrichten ist .fdm.
+Sie können Formulare neu installieren, indem Sie Sie in einer Liste von Formular Deskriptor-Nachrichten in einem Dialogfeld auswählen, das von Formularbibliothek Anbietern angezeigt wird. Die empfohlene Erweiterung für Formular Deskriptor-Nachrichten ist. fdm.
   
-Rufen Sie die Methode [IMAPIProp::GetLastError](imapiprop-getlasterror.md) **SaveForm** MAPI_E_EXTENDED_ERROR zurück, und überprüfen Sie die zurückgegebene **MAPIERROR** -Struktur, um die Bedingung zu ermitteln, die den Fehler verursacht hat. 
+Rufen Sie die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode, wenn **SaveForm** MAPI_E_EXTENDED_ERROR zurückgibt, und überprüfen Sie die zurückgegebene **MAPIERROR** -Struktur, um die Bedingung zu bestimmen, die den Fehler verursacht hat. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,25 +8,25 @@ api_type:
 - COM
 ms.assetid: 346608d7-f7de-497e-9852-4d4d7696177e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f39f721d434f4e54cbfa5d25a3ba626858f2b13e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 27c20242417e51886ab184b1cc87d6ebb185e4bf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316863"
 ---
 # <a name="deleting-a-message-service"></a>Löschen eines Nachrichtendiensts
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So löschen Sie eine Message Service aus einem Profil**
+ **So löschen Sie einen Nachrichtendienst aus einem Profil**
   
-1. Rufen Sie **IMAPISession::GetMsgServiceTable** die Tabelle der Dienste für den Zugriff auf. 
+1. Rufen Sie **IMAPISession:: GetMsgServiceTable** auf, um auf die Nachrichtendienst Tabelle zuzugreifen. 
     
-2. Suchen Sie die Zeile für den Dienst, und übergeben Sie die Spalte **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) im Parameter _Lpuid_ an [IMsgServiceAdmin::DeleteMsgService](imsgserviceadmin-deletemsgservice.md). 
+2. Suchen Sie die Zeile für den Nachrichtendienst, und übergeben Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Spalte im _lpuid_ -Parameter an [IMsgServiceAdmin::D eletemsgservice](imsgserviceadmin-deletemsgservice.md). 
     
- **DeleteMsgService** Ruft die Messagingdiensts Eintrag Point-Funktion mit dem _UlContext_ -Parameter auf MSG_SERVICE_DELETE festgelegt. Message-Dienste Ausführen von Aufgaben zu diesem Zeitpunkt aus, bevor sie aus dem Profil entfernt werden. 
+ **DeleteMsgService** Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_DELETE festgelegt ist. Nachrichtendienste führen zu diesem Zeitpunkt Aufräumvorgänge aus, bevor Sie aus dem Profil entfernt werden. 
   
 

@@ -1,26 +1,26 @@
 ---
-title: EffectSchemeIndex Cell (Theme Properties Section)
+title: EffectSchemeIndex Cell (Theme Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 366ade40-e89f-49b6-b4be-4e4967dbacbf
-description: Bestimmt das Effektschema des Designs auf eine Form, als ganze Zahl angewendet.
-ms.openlocfilehash: 369eb059633a7efc27ee670c400f383205bceea6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt das Effektschema des Designs, das auf eine Form angewendet wird, als ganze Zahl.
+ms.openlocfilehash: 0d8ed18ca960868b1cd27abe517bfea99e1f2318
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321448"
 ---
-# <a name="effectschemeindex-cell-theme-properties-section"></a>EffectSchemeIndex Cell (Theme Properties Section)
+# <a name="effectschemeindex-cell-theme-properties-section"></a>EffectSchemeIndex Cell (Theme Properties section)
 
-Bestimmt das Effektschema des Designs auf eine Form, als ganze Zahl angewendet.
+Bestimmt das Effektschema des Designs, das auf eine Form angewendet wird, als ganze Zahl.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **EffectSchemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **EffectSchemeIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
@@ -32,6 +32,6 @@ Wenn Sie einen Verweis auf die Zelle **EffectSchemeIndex** aus einem Programm na
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowThemeProperties** <br/> |
-| Zellenindex:  <br/> |** VisEffectSchemeIndex ** <br/> |
+| Zellenindex:  <br/> |* * visEffectSchemeIndex * * <br/> |
    
 

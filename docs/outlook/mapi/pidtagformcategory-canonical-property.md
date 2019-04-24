@@ -1,5 +1,5 @@
 ---
-title: PidTagFormCategory (kanonische Eigenschaft)
+title: Kanonische Pidtagformcategory (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f4bd5ddb-f1e7-4e2a-b312-b1884f78cc1a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 47978ca84bb6a3f542134b8fba4f8521ed3645bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3b9d1d76be6f61a1b8e60c2553d74424672d1a6f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316275"
 ---
-# <a name="pidtagformcategory-canonical-property"></a>PidTagFormCategory (kanonische Eigenschaft)
+# <a name="pidtagformcategory-canonical-property"></a>Kanonische Pidtagformcategory (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Kategorie eines Formulars enthält. 
+Enthält die Kategorie eines Formulars. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_FORM_CATEGORY, PR_FORM_CATEGORY_A, PR_FORM_CATEGORY_W  <br/> |
 |Kennung:  <br/> |0x3304  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Allgemeine MAPI  <br/> |
+|Bereich:  <br/> |MAPI allgemein  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Den Namen der Kategorie wird von einer Clientanwendung an eine Möglichkeit definiert, die an die Anwendung geeignet ist. 
+Der Kategoriename wird von einer Clientanwendung in einer für die Anwendung geeigneten Weise definiert. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

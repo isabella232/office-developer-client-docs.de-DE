@@ -11,25 +11,25 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0846415b-6fe1-4504-8620-108af6719015
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3b5268f0b033126083a463f72e47c64957df07eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8c5e6078be05ff846b7737ff53e9a6338fcb2141
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318095"
 ---
 # <a name="builddisplaytable"></a>BuildDisplayTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine zeigt die Tabelle aus der Eigenschaftendaten-Seite, die in eine oder mehrere [DTPAGE](dtpage.md) Strukturen enthalten sind. 
+Erstellt eine Anzeigetabelle aus den Eigenschaftenseiten Daten, die in einer oder mehreren [DTPAGE](dtpage.md) -Strukturen enthalten sind. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -52,66 +52,66 @@ STDAPI BuildDisplayTable(
 
  _lpAllocateBuffer_
   
-> [in] Zeiger auf die Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) , Speicher verwendet werden soll. 
+> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Reservieren von Arbeitsspeicher verwendet werden soll. 
     
  _lpAllocateMore_
   
-> [in] Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, mit der zusätzlichen Arbeitsspeicher zugewiesen werden. 
+> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die zum Zuweisen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer](mapifreebuffer.md) -Funktion verwendet werden, um Arbeitsspeicher freizugeben. 
+> in Zeiger auf die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, die verwendet werden, um Arbeitsspeicher freizugeben. 
     
  _lpMalloc_
   
-> Nicht verwendete; sollte auf NULL festgelegt werden. 
+> Nicht verwendete sollte auf NULL festgelegt werden. 
     
  _hInstance_
   
-> [in] Eine Instanz eines MAPI-Objekts aus dem **BuildDisplayTable** Ressourcen abruft. 
+> in Eine Instanz eines MAPI-Objekts, aus dem **BuildDisplayTable** Ressourcen abruft. 
     
  _cPages_
   
-> [in] Anzahl der [DTPAGE](dtpage.md) Strukturen im Array auf den durch den Parameter _LpPage_ verwiesen. 
+> in Die Anzahl der [DTPAGE](dtpage.md) -Strukturen im Array, auf die durch den _lpPage_ -Parameter verwiesen wird. 
     
  _lpPage_
   
-> [in] Zeiger auf ein Array von **DTPAGE** -Strukturen, die enthalten Informationen zu den Seiten des Display-Tabelle erstellt werden. 
+> in Zeiger auf ein Array von **DTPAGE** -Strukturen, die Informationen zu den darzustellenden Tabellenseiten enthalten. 
     
  _ulFlags_
   
-> [in] Bitmaske der Kennzeichen. Das folgende Flag kann festgelegt werden:
+> in Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format. 
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
     
  _lppTable_
   
-> [out] Zeiger auf einen Zeiger auf die Tabelle anzeigen, die die [IMAPITable](imapitableiunknown.md) -Schnittstelle verfügbar macht. 
+> Out Zeiger auf einen Zeiger auf die Anzeigetabelle, die die [IMAPITable](imapitableiunknown.md) -Schnittstelle verfügbar macht. 
     
  _lppTblData_
   
-> [in, out] Zeiger auf einen Zeiger auf eine Tabelle Datenobjekt Verfügbarmachen der [ITableData](itabledataiunknown.md) -Schnittstelle in der Tabelle, die in der _LppTable_ -Parameter zurückgegeben. Keine Tabelle Datenobjekt gewünscht wird, sollte _LppTblData_ anstatt einen Zeigerwert auf NULL festgelegt werden. 
+> [in, out] Zeiger auf einen Zeiger auf ein Tabellendaten Objekt, das die [ITableData](itabledataiunknown.md) -Schnittstelle für die im _lppTable_ -Parameter zurückgegebene Tabelle verfügbar macht. Wenn kein Tabellendaten Objekt gewünscht wird, sollte _lppTblData_ auf NULL statt auf einen Zeigerwert festgelegt werden. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Keine
   
 ## <a name="remarks"></a>Bemerkungen
 
-MAPI verwendet, die auf den _LpAllocateBuffer_, _LpAllocateMore_und _LpFreeBuffer_ für die meisten Zuweisung von virtuellem Speicher und zur Freigabe, insbesondere für die Verwendung von Clientanwendungen Speicher beim Aufruf von Schnittstellen, um Funktionen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md). 
+MAPI verwendet die Funktionen, auf die durch _lpAllocateBuffer_, _lpAllocateMore_und _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und-Aufhebungen, insbesondere für die Zuweisung von Speicher für die Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::](imapiprop-getprops.md) GetProps und [IMAPITable:: QueryRows](imapitable-queryrows.md). 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Alles möglich aus die Ressource lesen ist, einschließlich:
+Alles mögliche wird aus der Dialog-Ressource gelesen, einschließlich:
   
-- Titel der Seite, die, die _UlbLpszLabel_ Member der [DTBLPAGE](dtblpage.md) -Struktur aus dem Dialogfeldtitel in der Ressource lesen. 
+- Der Seitentitel, der das _ulbLpszLabel_ -Element der [DTBLPAGE](dtblpage.md) -Struktur aus dem Dialogfeldtitel in der Ressource liest. 
     
-- Alle Steuerelement Titel, der, die _UlbLpszLabel_ Mitglieder der anderen Steuerstrukturen Lesen aus dem Steuerelementtext in der Ressource. 
+- Alle Steuerelement Titel das heißt, die _ulbLpszLabel_ -Elemente anderer Steuerelementstrukturen Lesen aus dem Steuerelementtext in der Ressource. 
     
- **BuildDisplayTable** überschreibt Suchzeichenfolge übergeben in die Strukturen Eingabesteuerelement mit Informationen über die Ressource, was bedeutet, dass der Aufrufer **BuildDisplayTable** dynamisch Seite oder ein Steuerelement Titel angegeben werden kann. Anrufer, die werden müssen, die **BuildDisplayTable** haben, können das Table-Datenobjekt in _LppTableData_ zurückgeben und ändern Sie Zeilen darin; oder sie können die Anzeige Tabelle stattdessen manuell in einem Table-Datenobjekt erstellen. 
+ **BuildDisplayTable** überschreibt alles, was in den Eingabe Steuerstrukturen mit Informationen aus der Dialog-Ressource übergeben wurde, was besagt, dass der Aufrufer von **BuildDisplayTable** die Seiten-oder Steuerelement Titel nicht dynamisch angeben kann. Aufrufer, die dies tun müssen, können **BuildDisplayTable** das Tabellendaten Objekt in _lppTableData_ zurückgeben und Zeilen darin ändern; Sie können stattdessen die Anzeigetabelle manuell in einem Tabellendaten Objekt erstellen. 
   
-Wenn _LppTableData_ nicht auf NULL festgelegt ist, ist der Anbieter verantwortlich für die Freigabe des Tabellenobjekts Daten Beendigung mit der Tabelle anzeigen. 
+Wenn _lppTableData_ nicht auf NULL festgelegt ist, ist der Anbieter für das Freigeben des Table-Datenobjekts verantwortlich, wenn es mit der Anzeigetabelle abgeschlossen ist. 
   
 

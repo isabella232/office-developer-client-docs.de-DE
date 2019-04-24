@@ -8,43 +8,43 @@ api_type:
 - COM
 ms.assetid: c5a7c137-393e-40ff-a2b9-afe02da2435a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a2ab44081c79e72e082687006ab06d0f83b8367e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3dd55d8ee3cb2751fb27184f0069ae831e2164ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319583"
 ---
 # <a name="mapi-sessions"></a>MAPI-Sitzungen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bevor der Clientanwendung aus eine zugrunde liegenden messaging-System aufrufen kann, m�ssen sie eine Sitzung oder bei einer Verbindung mit der MAPI-Subsystems einrichten.
   
 Sessions are initiated when a user logs on, a process that accesses a valid profile and validates the messaging system and the message service credentials. Then, the process ensures that all of the profile's message services are correctly configured. The client interface you use determines the logon call. MAPI clients call the [MAPILogonEx](mapilogonex.md) function. 
   
-Dienstkonfiguration Nachricht ist eine der interessantesten Teile des Anmeldevorgangs. Das Profil ist die urspr�ngliche Quelle f�r Konfigurationsinformationen. Wenn f�r eine bestimmte Nachrichtendienst nicht vorhanden ist, versucht der Anmeldevorgang den Benutzer auffordern, die sie bereitstellen. Dies ist nicht immer erfolgreich aus zwei Gr�nden: zuerst, den Benutzer aufzufordern, erfordert die Anzeige eines Dialogfelds. Es ist m�glich f�r Clients, um die Anzeige einer Benutzeroberfl�che deaktivieren, indem Sie ein Flag in den Anruf Anmeldung �bergeben. Zweitens kann der Benutzer das Dialogfeld abbrechen, bevor die ben�tigte Informationen hinzugef�gt werden kann.
+Die Nachrichtendienst Konfiguration ist einer der wichtigsten Teile des Anmeldevorgangs. Das Profil ist die erste Quelle für Konfigurationsinformationen. Wenn Informationen für einen bestimmten Nachrichtendienst fehlen, versucht der Anmeldeprozess, den Benutzer aufzufordern, ihn bereitzustellen. Dies ist aus zwei Gründen nicht immer erfolgreich: Erstens erfordert die Bestätigung des Benutzers, dass ein Dialogfeld angezeigt wird. Clients können die Anzeige einer Benutzeroberfläche nicht zulassen, indem Sie eine Kennzeichnung an den Anmelde Anruf übergeben. Zweitens könnte der Benutzer das Dialogfeld abbrechen, bevor die benötigten Informationen hinzugefügt werden können.
   
-Bei ein Anmeldevorgang einmal fehlschl�gt, wird der Benutzer des Fehlers dar�ber informiert und erhalten die M�glichkeit zum Wiederholen oder Fehlerbedingung zu korrigieren. Auch hier wird eine Benutzeroberfl�che angezeigt, wenn der Client dies zul�sst und der Benutzer aufgefordert wird, geben die Daten nicht vorhanden ist. Wenn diese zweite Versuch nicht erfolgreich ist, wird die MAPI alle-Dienstanbieter in der Nachricht Service f�r die Dauer der Sitzung deaktiviert. Im Grunde ist der gesamte Nachricht-Dienst deaktiviert. Dies bedeutet, dass keines der Dienstanbieter in der Nachrichtendienst arbeiten k�nnen. Dies erfolgt, da, wenn ein Anbieter Fehler bei der Anmeldung, die anderen Anbieter in der Regel auch fehl. Des Anmeldevorgangs kann aufgrund einer ung�ltigen Pfad f�r eine erforderliche Ressource eine inkompatible Version der MAPI, messaging-Server nicht verf�gbar oder besch�digte Daten fehlschlagen. 
+Wenn ein Anmeldevorgang einmal fehlschlägt, wird der Benutzer über den Fehler informiert und hat die Möglichkeit, den Fehler zu wiederholen oder zu korrigieren. Erneut wird eine Benutzeroberfläche angezeigt, wenn der Client dies zulässt, und der Benutzer wird aufgefordert, alle fehlenden Daten einzugeben. Wenn dieser zweite Versuch nicht erfolgreich ist, deaktiviert MAPI alle Dienstanbieter im Nachrichtendienst für die Dauer der Sitzung. Der gesamte Nachrichtendienst ist tatsächlich deaktiviert. Dies führt dazu, dass keiner der Dienstanbieter im Nachrichtendienst funktionieren kann. Der Grund dafür ist, dass bei einem Ausfall eines Anbieters bei der Anmeldung die anderen Anbieter in der Regel auch fehlschlagen. Der Anmeldeprozess kann aufgrund eines ungültigen Pfads für eine erforderliche Ressource, einer inkompatiblen MAPI-Version, eines nicht verfügbaren Messaging Servers oder einer Datenbeschädigung fehlschlagen. 
   
-Clients k�nnen einen von zwei Typen der Sitzungen in den Anruf Anmeldung eingerichtet werden angeben: eine einzelne Sitzung oder einer Freigabesitzung. Einzelne Sitzungen sind VPN-Verbindungen. Es ist eine 1: 1-Beziehung zwischen einer Clientanwendung und die Sitzungen, in denen, die es verwendet wird. Folglich freigeben Clientanwendungen, die eine Sitzung teilen auch ein Profil. Freigabesitzungen einmal hergestellt werden, aber Sie k�nnen von anderen Clientanwendungen, die sie verwenden m�ssen verwendet werden. Das Profil und die Anmeldeinformationen werden nur bei der ersten Anmeldung angegeben. 
+Clients können einen von zwei Sitzungstypen angeben, die im Anmelde Anruf festgelegt werden sollen: eine einzelne Sitzung oder eine freigegebene Sitzung. Einzelne Sitzungen sind private Verbindungen; zwischen einer Clientanwendung und der verwendeten Sitzung besteht eine 1:1-Beziehung. Clientanwendungen, die eine Sitzung gemeinsam nutzen, können daher auch ein Profil verwenden. FreigeGebene Sitzungen werden einmalig eingerichtet, können jedoch von anderen Clientanwendungen verwendet werden, die Sie verwenden müssen. Das Profil und die Anmeldeinformationen werden nur bei der erstmaligen Anmeldung angegeben. 
   
-Clients k�nnen mehrere Male als derselbe Benutzer oder mehrere Benutzer anmelden. MAPI wird dies nicht verhindert. Einige Dienstanbieter, jedoch nicht so flexibel m�glicherweise den Fehlerwert MAPI_E_SESSION_LIMIT f�r nachfolgende Anmeldeversuche zur�ck. -Dienstanbietern mit zugrunde liegenden Hardwareeinschr�nkungen k�nnen es erforderlich sein, einen Grenzwert f�r Videositzung zu erzwingen.
+Clients können sich mehrmals als derselbe Benutzer oder mehrere Benutzer anmelden. Dies wird durch MAPI nicht verhindert. Einige Dienstanbieter sind jedoch möglicherweise nicht so flexibel, und der Fehlerwert MAPI_E_SESSION_LIMIT wird bei nachfolgenden Anmeldeversuchen zurückgegeben. Dienstanbieter mit zugrunde liegenden Hardwareeinschränkungen können zum Erzwingen eines Sitzungslimits erforderlich sein.
   
-Aufrufe der Funktionen zum Einrichten einer Sitzung verf�gen �ber eine Auflistung von Flags und Parameter das Steuerelement, wie die Sitzung erstellt wird. Der Client gibt eine optionale Profilname und ein Fensterhandle, das als �bergeordnetes Fenster f�r alle Dialogfelder fungiert, die angezeigt werden. Die Kennzeichen z�hlen MAPI_NEW_SESSION, mit dem angefordert wird, dass eine neue, einzelne Sitzung (anstelle einer Freigabesitzung) hergestellt werden, und die MAPI_LOGON_UI Benutzer Schnittstelle-Flag. Die Benutzer-Flag-Schnittstelle wird festgelegt, so fordern Sie ein Anmeldedialogfeld an.
+Die Funktionsaufrufe zum Einrichten einer Sitzung haben eine Auflistung von Flags und Parametern, die Steuern, wie die Sitzung erstellt wird. Der Client gibt einen optionalen Profilnamen und ein Fensterhandle an, das als übergeordnetes Fenster für alle angezeigten Dialogfelder fungiert. Zu den Flags gehört MAPI_NEW_SESSION, das eine neue, einzelne Sitzung (anstelle einer freigegebenen Sitzung) und das MAPI_LOGON_UI-Benutzeroberflächen Kennzeichen anfordert. Das Benutzeroberflächen Kennzeichen ist so festgelegt, dass ein Anmeldedialogfeld angefordert wird.
   
-Die folgende Abbildung zeigt, wie diese verschiedenen Parameter und Flags eine MAPI-Sitzung herzustellen.
+In der folgenden Abbildung wird gezeigt, wie diese verschiedenen Parameter und Flags eine MAPI-Sitzung herstellen.
   
-**Flussdiagramm f�r MAPI-Sitzung**
+**Flussdiagramm für MAPI-Sitzung**
   
-![Flussdiagramm für MAPI-Sitzung] (media/amapi_47.gif "Flussdiagramm für MAPI-Sitzung")
+![MAPI-Sitzungs Flussdiagramm] (media/amapi_47.gif "MAPI-Sitzungs Flussdiagramm")
   
-For information about handling sessions from within a client application, see [MAPI-Sitzung-Verarbeitung](mapi-session-handling.md)
+Informationen zur Behandlung von Sitzungen innerhalb einer Clientanwendung finden Sie unter [MAPI-Sitzungs Verarbeitung](mapi-session-handling.md)
   
 ## <a name="see-also"></a>Siehe auch
 
 - [MAPILogonEx](mapilogonex.md)  
-- [IMAPISession: IUnknown](imapisessioniunknown.md)
-- [MAPI-Sitzung-Verarbeitung](mapi-session-handling.md)  
+- [IMAPISession : IUnknown](imapisessioniunknown.md)
+- [MAPI-Sitzungs Verarbeitung](mapi-session-handling.md)  
 - [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
 

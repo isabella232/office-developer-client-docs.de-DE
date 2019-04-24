@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 33bef4ea-d6c0-4455-b95d-4b29edb9c0bc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b16730681b5414f28ae45be7195b4fa551bf0e82
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4c296b12d2dc98c4ff8d94349298e9dda0fb9409
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316602"
 ---
 # <a name="imapisupportmodifyprofile"></a>IMAPISupport::ModifyProfile
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ändert eine Nachricht Profilabschnitt permanent gespeichert.
+Änderungen an einem Abschnitt des Nachrichtenspeicher Profils bleiben permanent.
   
 ```cpp
 HRESULT ModifyProfile(
@@ -37,25 +37,25 @@ ULONG ulFlags
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der Nachricht gibt an, speichern. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ des Nachrichtenspeichers angibt. Das folgende Flag kann festgelegt werden:
     
 MDB_TEMPORARY 
   
-> Der Nachrichtenspeicher ist vorübergehend und sollten nicht auf die Nachricht Store-Tabelle hinzugefügt werden. Wenn MDB_TEMPORARY festgelegt ist, gibt **ModifyProfile** sofort S_OK zurück. 
+> Der Nachrichtenspeicher ist temporär und sollte nicht der Nachrichtenspeichertabelle hinzugefügt werden. Wenn MDB_TEMPORARY festgelegt ist, gibt **MODIFYPROFILE** S_OK sofort zurück. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Änderungen in den Profilabschnitt waren erfolgreich.
+> Die Änderungen am Profil Abschnitt waren erfolgreich.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::ModifyProfile** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. E-Mail-Speicher-Anbieter Aufruf **ModifyProfile** auffordern, MAPI, um ihre Profilinformationen zu ändern. 
+Die **IMAPISupport:: ModifyProfile** -Methode wird für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter rufen **ModifyProfile** auf, um MAPI aufzufordern, Ihre Profilinformationen zu ändern. 
   
- **ModifyProfile** fügt Abschnitts Profile, die der aufrufende Anbieter zur Liste der installierten Nachricht Store Anbieter Ressourcen zugeordnet ist. Daraufhin wird den Nachrichtenspeicher in der Nachricht Store-Tabelle aufgelistet werden die Clients durch die [IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode zur Verfügung steht, und ohne die Anzeige von einem Dialogfeld geöffnet werden soll. 
+ **ModifyProfile** fügt den dem anrufenden Anbieter zugeordneten Profil Abschnitt der Liste der installierten Ressourcen des Nachrichtenspeicher Anbieters hinzu. Dies führt dazu, dass der Nachrichtenspeicher in der Nachrichtenspeichertabelle aufgeführt wird, die Clients über die [IMAPISession:: GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode zur Verfügung steht, und die geöffnet werden soll, ohne dass ein Dialogfeld angezeigt wird. 
   
-Wenn das Flag MDB_TEMPORARY festgelegt ist, MAPI hat keine Auswirkung, und die Methode gibt sofort mit S_OK zurück.
+Wenn das MDB_TEMPORARY-Flag festgelegt ist, bewirkt MAPI nichts, und die Methode gibt sofort mit S_OK zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

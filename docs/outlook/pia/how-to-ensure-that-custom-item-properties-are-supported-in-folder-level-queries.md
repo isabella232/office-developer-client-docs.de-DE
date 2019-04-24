@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9fcba2648988d2de3c208079d2845e2cb4c2f549
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319089"
 ---
 # <a name="ensure-that-custom-item-properties-are-supported-in-folder-level-queries"></a>Sicherstellen, dass benutzerdefinierte Elementeigenschaften in Abfragen auf Ordnerebene unterstützt werden
 
@@ -143,5 +143,5 @@ private void DemoUserDefinedProperty()
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ordner](folders.md)
+- [Folders](folders.md)
 

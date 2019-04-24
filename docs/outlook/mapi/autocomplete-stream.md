@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: d4f380fa-2ed9-4c7c-9ef3-b32f8409f657
 description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8b5c5fee71db0fc7bdd6e01c58e9c9a9c3d9fa22
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318081"
 ---
 # <a name="autocomplete-stream"></a>Stream für automatisches Vervollständigen
 
@@ -79,7 +79,7 @@ Das allgemeine Layout des Streams für automatisches Vervollständigen lautet wi
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Metadaten  <br/> |4  <br/> |
+|Metadata  <br/> |4  <br/> |
 |Nummer der Hauptversion  <br/> |4  <br/> |
 |Nummer der Nebenversion  <br/> |4  <br/> |
 |Zeilensatz  <br/> |Variable  <br/> |

@@ -7,26 +7,26 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f7e052a-4270-4b83-b1ed-feabf6dbeaa2
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 4f5495648c9012b0e028358037090f7e10ef5219
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f387d5ddb184c681ab5e005a6eb24058f6f52f9a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310388"
 ---
 # <a name="multithreading-and-memory-management"></a>Multithreading und Speicherverwaltung
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Korrekte Handhabung von Arbeitsspeicher ist entscheidend für zuverlässige XLL-add-ins für Microsoft Excel erstellen. Fehler beim Zuweisen der entsprechenden Speicherpuffern und diese frei, wenn sie nicht mehr benötigt werden reduziert die Leistung, Ressourcenkonflikte erstellt und Excel Dienstausfall.
+Die OrdnungsGemäße Handhabung des Arbeitsspeichers ist unerlässlich, um zuverlässige XLL-Add-Ins für Microsoft Excel zu erstellen. Wenn Sie keine geeigneten Arbeitsspeicherpuffer zuweisen und freigeben, wenn Sie nicht mehr benötigt werden, wird die Leistung reduziert, Ressourcenkonflikte erstellt und Excel destabilisiert.
   
-Beginnen mit Microsoft Office Excel 2007, können Sie Excel, um bis zu 1.024 gleichzeitigen Threads verwenden, wenn Neuberechnen konfigurieren. In einigen Fällen können insbesondere dann, wenn mehrere Prozessoren verfügbar sind oder mit benutzerdefinierten Funktionen unter Servercluster multithreading Leistung verbessern.
+Beginnend mit Microsoft Office Excel 2007 können Sie Excel so konfigurieren, dass bis zu 1.024 gleichzeitige Threads bei der Neuberechnung verwendet werden. In einigen Fällen kann das Multithreading die Leistung verbessern, insbesondere, wenn mehrere Prozessoren verfügbar sind oder benutzerdefinierte Funktionen auf gruppierten Servern ausgeführt werden.
   
-In den folgenden Themen wird beschrieben, wie Arbeitsspeicher und Threads im XLLs verwalten:
+In den folgenden Themen wird beschrieben, wie Sie Arbeitsspeicher und Threads in XLLs verwalten:
   
 - [Speicherverwaltung in Excel](memory-management-in-excel.md)
     
-- [Multithreading und Arbeitsspeicher Konflikte in Excel](multithreading-and-memory-contention-in-excel.md)
+- [Multithreading und Speicherkonflikte in Excel](multithreading-and-memory-contention-in-excel.md)
     
 - [Multithread-Neuberechnung in Excel](multithreaded-recalculation-in-excel.md)
     
@@ -34,5 +34,5 @@ In den folgenden Themen wird beschrieben, wie Arbeitsspeicher und Threads im XLL
 
 
 
-[Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 

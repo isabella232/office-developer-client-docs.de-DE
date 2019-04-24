@@ -1,42 +1,42 @@
 ---
-title: BevelTopType Cell (Bevel Properties Section)
+title: Zelle "BevelTopType" (Abschnitt "Fase Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3e29af0d-4183-41d1-8b0f-96450089f882
-description: Bestimmt den Typ der Abschrägung auf oberen Rand eines Shapes.
-ms.openlocfilehash: 6fea6f119e4948634edf8fd1fc22b2fd6e7675d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den abschrägtyp für den oberen Rand eines Shapes.
+ms.openlocfilehash: 225600a3e39ec58622bcd8597e1115a52cb62a3f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315729"
 ---
-# <a name="beveltoptype-cell-bevel-properties-section"></a>BevelTopType Cell (Bevel Properties Section)
+# <a name="beveltoptype-cell-bevel-properties-section"></a>Zelle "BevelTopType" (Abschnitt "Fase Properties")
 
-Bestimmt den Typ der Abschrägung auf oberen Rand eines Shapes. 
+Bestimmt den abschrägtyp für den oberen Rand eines Shapes. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Keine Abschrägung  <br/> |
-|1  <br/> |Abgerundete Abschrägung an  <br/> |
-|2  <br/> |Leichte Absenkung Abschrägung  <br/> |
-|3  <br/> |Rechtwinklige Kante als Abschrägung  <br/> |
-|4  <br/> |Coole schräg Abschrägung  <br/> |
-|5  <br/> |Flache Abschrägung an  <br/> |
-|6  <br/> |Weiche abgerundete Abschrägung  <br/> |
-|7  <br/> |Konvexe Kante als Abschrägung  <br/> |
-|8  <br/> |Steigung Abschrägung  <br/> |
-|9  <br/> |Abrundung mit Einschnitt als Abschrägung an  <br/> |
-|10  <br/> |Säule auf abgerundetem Sockel Abschrägung  <br/> |
-|11  <br/> |Festplatte Edge Abschrägung  <br/> |
-|12  <br/> |Art Deko Abschrägung  <br/> |
+|1  <br/> |Kreis-Abschrägung  <br/> |
+|2  <br/> |GeLockerte Abschrägung  <br/> |
+|3  <br/> |Kreuz Abschrägung  <br/> |
+|4  <br/> |Kühle schräg Fase  <br/> |
+|5  <br/> |Winkel Abschrägung  <br/> |
+|6  <br/> |Weiche Rundung  <br/> |
+|7  <br/> |Konvexe Abschrägung  <br/> |
+|8  <br/> |Neigungs Abschrägung  <br/> |
+|9  <br/> |Divot-Abschrägung  <br/> |
+|10  <br/> |Abrundung-Abschrägung  <br/> |
+|11  <br/> |Kanten Abschrägung  <br/> |
+|12  <br/> |Art-Deco-Fase  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **BevelTopType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **BevelTopType** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

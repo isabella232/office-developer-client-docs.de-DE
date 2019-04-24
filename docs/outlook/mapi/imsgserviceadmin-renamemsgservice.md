@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: eba0e7f2-03c1-4713-aa36-3d0b398cd197
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a6eba20fb346f53052808abf8fcae8993d423d34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2f0f1fb94ea36512bbc40df8a4877e89d2613a25
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309982"
 ---
 # <a name="imsgserviceadminrenamemsgservice"></a>IMsgServiceAdmin::RenameMsgService
 
@@ -25,7 +25,7 @@ ms.locfileid: "22589560"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Veraltet. Weist einen neuen Namen zu einem Nachrichtendienst. 
+Veraltet. Weist einem Nachrichtendienst einen neuen Namen zu. 
   
 ```cpp
 HRESULT RenameMsgService(
@@ -39,7 +39,7 @@ HRESULT RenameMsgService(
 
  _lpUID_
   
-> [in] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den Dienst zum Umbenennen enthält. 
+> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den umzubenennenden Nachrichtendienst enthält. 
     
  _ulFlags_
   
@@ -47,17 +47,17 @@ HRESULT RenameMsgService(
     
  _lpszDisplayName_
   
-> [in] Ein Zeiger auf den neuen Namen für den Dienst.
+> in Ein Zeiger auf den neuen Namen für den Nachrichtendienst.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 MAPI_E_NO_SUPPORT 
   
-> Dieser Nachrichtendienst umbenennen unterstützt MAPI nicht. Dieser Wert wird immer **RenameMsgService** zurückgegeben. 
+> MAPI unterstützt das Umbenennen dieses Nachrichtendiensts nicht. **RenameMsgService** gibt immer diesen Wert zurück. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Um eine Message Service einen neuen Namen zuzuweisen, sollten Clients die **PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md))-Eigenschaft des Diensts Nachricht verwenden. Die Namen der Dienstanbieter in einem Nachrichtendienst werden in deren Eigenschaften **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) gespeichert. 
+Um einem Nachrichtendienst einen neuen Namen zuzuweisen, sollten Clients die **PR_SERVICE_NAME** ([pidtagservicename (](pidtagservicename-canonical-property.md))-Eigenschaft des Nachrichtendiensts verwenden. Die Namen von Dienstanbietern in einem Nachrichtendienst werden in Ihren **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaften gespeichert. 
   
 ## <a name="see-also"></a>Siehe auch
 

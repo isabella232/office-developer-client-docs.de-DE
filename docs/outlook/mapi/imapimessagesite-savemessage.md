@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 94c44952-d297-4705-9778-90373dfa5ad6
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9fa7c7226c4ddb5acf5c6b73f55c46829d959eef
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 938eaa6c1a39d24157d5d690c42b435af6192cb6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321420"
 ---
 # <a name="imapimessagesitesavemessage"></a>IMAPIMessageSite::SaveMessage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Anforderungen, die die aktuelle Nachricht gespeichert werden soll.
+Fordert, dass die aktuelle Nachricht gespeichert wird.
   
 ```cpp
 HRESULT SaveMessage( void );
@@ -35,25 +35,25 @@ HRESULT SaveMessage( void );
 
 None.
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Return value
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Formulare rufen Sie die **IMAPIMessageSite::SaveMessage** -Methode, um anzufordern, dass eine Nachricht gespeichert werden. 
+Formulare rufen die **IMAPIMessageSite:: SaveMessage** -Methode auf, um das Speichern einer Nachricht anzufordern. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit der Formular-Servern finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SaveMessage  <br/> |MFCMAPI (engl.) verwendet die **IMAPIMessageSite::SaveMessage** -Methode, um die Nachricht zu speichern.  <br/> |
+|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: SaveMessage  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: SaveMessage** -Methode, um die Nachricht zu speichern.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,7 +62,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formularoberflächen](mapi-form-interfaces.md)
+[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
 

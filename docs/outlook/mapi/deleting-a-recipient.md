@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: f7495030-e3b8-4c7c-9e19-284ba820e846
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 03917ad52f1dc1ce4d0b59cd54fe33f58f352061
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bd01c66d9fff7c94ffb1ce9f956f1951bc482020
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316814"
 ---
 # <a name="deleting-a-recipient"></a>Löschen eines Empfängers
 
@@ -21,10 +21,10 @@ ms.locfileid: "22582945"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So entfernen einen oder mehrere Einträge im Adressbuch aus einem Container geändert werden**
+ **So entfernen Sie Adressbucheinträge aus einem änderbaren Container**
   
-- Rufen Sie die [IABContainer::DeleteEntries](iabcontainer-deleteentries.md) -Methode übergeben ein Array von Eintragsbezeichner, die zu löschenden Adressbucheinträge darstellen. **DeleteEntries** kann eine Warnung MAPI_W_PARTIAL_COMPLETION, um anzugeben, dass sie eine oder mehrere Einträge löschen konnte nicht zurückgeben. Für diesen Rückgabewert mit dem Makro **HR_FAILED** testen Sie, und rufen Sie den Container [IMAPIProp::GetLastError](imapiprop-getlasterror.md) -Methode, wenn weitere Informationen zu dem Problem benötigt wird. 
+- Rufen Sie die [IABContainer::D eleteentries](iabcontainer-deleteentries.md) -Methode auf, und übergeben Sie ein Array von Eintrags Bezeichnern, die die zu löschenden Adressbucheinträge darstellen. **DeleteEntries** kann eine Warnung zurückgeben, MAPI_W_PARTIAL_COMPLETION, um anzugeben, dass ein oder mehrere Einträge nicht gelöscht werden konnten. Testen Sie diesen Rückgabewert mit dem **HR_FAILED** -Makro, und rufen Sie die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode des Containers auf, wenn weitere Informationen zum Problem erforderlich sind. 
     
-Wenn Sie einen Zeiger auf einen gelöschten Eintrag [ADRENTRY](adrentry.md) -Struktur in den Cache gespeichert werden, werden Sie dennoch zum Abrufen von Eigenschaften mithilfe des Bezeichners Eintrag sein. Dies ist, da der Eintrag nur zum Löschen markiert ist. MAPI verwaltet eine Zugriffsebene für diese markierte Einträge Verhalten ist erwünscht. 
+Wenn Sie einen Zeiger auf die [Miet](adrentry.md) Struktur eines gelöschten Eintrags in Ihrem Cache speichern, können Sie die Eigenschaften weiterhin mithilfe des Eintrags Bezeichners abrufen. Der Grund ist, dass der Eintrag nur zum Löschen markiert ist. MAPI verwaltet eine Ebene des Zugriffs auf diese markierten Einträge nach Design. 
   
 

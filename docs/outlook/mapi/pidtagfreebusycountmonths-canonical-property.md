@@ -1,5 +1,5 @@
 ---
-title: PidTagFreeBusyCountMonths (kanonische Eigenschaft)
+title: Kanonische Pidtagfreebusycountmonths (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,34 +11,34 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 278a77f2-65ec-4281-b406-942cc416a476
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 610e9d396442f981b7bcbf126e3086e6885399d6
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316191"
 ---
-# <a name="pidtagfreebusycountmonths-canonical-property"></a>PidTagFreeBusyCountMonths (kanonische Eigenschaft)
+# <a name="pidtagfreebusycountmonths-canonical-property"></a>Kanonische Pidtagfreebusycountmonths (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Wert für die Berechnung der Start- und Enddatum des Bereichs der Frei/Gebucht-Daten auf Öffentliche Ordner veröffentlicht werden soll.
+Enthält den Wert für das Berechnen des Start-und Enddatums des Frei/Gebucht-Datenbereiches, der in öffentlichen Ordnern veröffentlicht werden soll.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_FREEBUSY_COUNT_MONTHS  <br/> |
 |Kennung:  <br/> |0x6869  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
+|Bereich:  <br/> |Nachrichtenklassen definierte transmitable  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert dieser Eigenschaft muss größer als oder gleich 0 und kleiner oder gleich 36. Dies ist keine erforderliche Eigenschaft.
+Der Wert dieser Eigenschaft muss größer oder gleich 0 und kleiner als oder gleich 36 sein. Dies ist keine erforderliche Eigenschaft.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
@@ -48,17 +48,17 @@ Der Wert dieser Eigenschaft muss größer als oder gleich 0 und kleiner oder gle
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs-und Antwortnachrichten an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,5 +70,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

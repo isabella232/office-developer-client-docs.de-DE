@@ -7,11 +7,11 @@ ms.assetid: 6828485c-040b-4278-923f-4cc7c8fe0fb1
 description: Bei dem clientseitigen Objektmodell (CSOM) handelt es sich um eine Gruppe von APIs für Project Server 2013, die zur Verwendung in Online-Apps und in lokalen Apps konzipiert wurden, die für PCs, mobile Geräte und Tablets entwickelt werden können. Dieser Artikel enthält einige typische Szenarien für die Verwendung des CSOM und auch die Einschränkungen des CSOM.
 localization_priority: Priority
 ms.openlocfilehash: 6cdcb72c24e352365b6dcc9268ddf0bd249369af
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315225"
 ---
 # <a name="what-the-csom-does-and-does-not-do"></a>Was das CSOM durchführen kann und was nicht
 

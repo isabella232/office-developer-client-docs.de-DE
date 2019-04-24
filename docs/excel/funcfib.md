@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - FuncFib
 keywords:
-- Funcfib-Funktion [excel 2007]
+- funcfib-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 6a719f04-b2d1-4f87-a227-be561cbd3e49
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 8d1c97ea57e968aaedffca6b37ded3d875e87413
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fb8f0c12c27fb2c95007eb5006c1d8b90970f3ad
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310836"
 ---
 # <a name="funcfib"></a>FuncFib
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Beispiel Arbeitsblatt benutzerdefinierte Funktion, die die n-te Fibonacci-Zahl berechnet. Wenn GENERIC.xll geladen wird, registriert sie diese Funktion, damit sie aus dem Arbeitsblatt aufgerufen werden kann.
+Beispiel für eine benutzerdefinierte Arbeitsblattfunktion, die die n-te Fibonacci-Zahl berechnet. Wenn generische. XLL geladen wird, wird diese Funktion registriert, sodass Sie vom Arbeitsblatt aufgerufen werden kann.
   
 ```cs
 LPXLOPER12 WINAPI FuncFib (LPXLOPER12 pxN);
@@ -32,21 +32,21 @@ LPXLOPER12 WINAPI FuncFib (LPXLOPER12 pxN);
 
  _pxN_ (**LPXLOPER12**)
   
-Der Wert von N für die die n-te Fibonacci-Zahl erforderlich ist.
+Der Wert von N, für den die te Fibonacci-Zahl erforderlich ist.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-(**XltypeNum LPXLOPER12** bei erfolgreicher oder **XltypeErr** andernfalls) 
+(**XLTYPENUM LPXLOPER12** wenn erfolgreich oder **xltypeErr** andernfalls) 
   
 Die n-te Fibonacci-Zahl.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktion verwendet eine statische Variable in der Funktionsblock als Rückgabewert **XLOPER12**definiert sind. Dies ist nicht threadsicheren und also diese Funktion und alle Arbeitsblattfunktion, die diese Strategie verwendet für die Rückgabe **XLOPER**s oder **XLOPER12**s, sollten nicht registriert werden als threadsicheren ab Excel 2007.
+Die Funktion verwendet eine statische Variable, die innerhalb des Funktionsblocks als Rückgabewert **XLOPER12**definiert ist. Dies ist nicht threadsicher, und diese Funktion und jede Arbeitsblattfunktion, die diese Strategie zum Zurückgeben von **XLOPER**s oder **XLOPER12**s verwendet, sollten ab Excel 2007 nicht als threadsicher registriert werden.
   
 ### <a name="example"></a>Beispiel
 
-Finden Sie unter `\SAMPLES\GENERIC\GENERIC.C` für den Quellcode für diese Funktion. 
+Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlSheetId
 keywords:
-- Xlsheetid-Funktion [excel 2007]
+- xlsheetid-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: cb32059c-b899-49cf-8028-ff828998ab75
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e4e184d4e456ffe26292fe31b1b41463834216f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a2ca1bb478c5c985ad7032e30ed0cfe3aef31406
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310304"
 ---
 # <a name="xlsheetid"></a>xlSheetId
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Sucht nach der Blatt-ID eines benannten Blatts, um externe Verweise zu erstellen.
+Sucht die Blatt-ID eines benannten Blatts, um externe Verweise zu erstellen.
   
 ```cs
 Excel12(xlSheetId, LPXLOPER12 pxRes, 1, LPXLOPER12 pxSheetName);
@@ -30,20 +30,20 @@ Excel12(xlSheetId, LPXLOPER12 pxRes, 1, LPXLOPER12 pxSheetName);
 
 ## <a name="parameters"></a>Parameter
 
-_pxSheetName_ (**XltypeStr**)
+_pxSheetName_ (**xltypeStr**)
   
-(Optional). Der Name des Adressbuchs und Blatt, das Sie informieren möchten. Wenn Length angegeben, gibt die Funktion **XlSheetId** Blatt-ID des Blatts aktiv (vorne) zurück. 
+(Optional). Der Name des Buches und des Blatts, über das Sie sich informieren möchten. Wenn kein Wert angegeben wird, gibt die **XLSHEETID** -Funktion die Blatt-ID des aktiven (Front-) Blatts zurück. 
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Gibt die Blatt-ID im _PxRes -\>val.mref.idSheet_. 
+Gibt die Blatt-ID in _pxRes\>-Val. mref. idSheet_zurück. 
   
 > [!NOTE]
-> Die _PxRes -\>val.mref.lpmref_ Array Zeiger ist auf NULL festgelegt wurde nach diesem Aufruf, damit besteht keine Notwendigkeit Aufrufen **XlFree** , um den Arbeitsspeicher, die normalerweise dieses Typs enthält, freizugeben, obwohl es dazu vollständig sicher ist. 
+> Der _pxRes-\>Val. mref. lpmref-_ Array Zeiger wird nach diesem Aufruf auf NULL festgelegt, sodass es nicht erforderlich ist, **xlFree** aufzurufen, um den von diesem Typ normalerweise enthaltenen Speicher freizugeben, obwohl dies vollständig sicher ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Arbeitsmappe mit dem angegebenen Blatt muss diese Funktion geöffnet sein. Es ist nicht möglich, einen Verweis auf eine nicht geöffneten Arbeitsmappe aus einer DLL zu erstellen. Weitere Informationen zur Verwendung von **XlSheetId** zum Referenzen zu erzeugen finden Sie unter [Speicherverwaltung in Excel](memory-management-in-excel.md) Beispiele für **XltypeRef** zuzugreifen. 
+Die Arbeitsmappe mit dem angegebenen Blatt muss geöffnet sein, um diese Funktion verwenden zu können. Es gibt keine Möglichkeit, einen Verweis auf eine nicht geöffnete Arbeitsmappe aus einer DLL zu erstellen. Weitere Informationen zur Verwendung von **xlSheetId** zum Erstellen von Verweisen finden Sie unter [Memory Management in Excel](memory-management-in-excel.md) for examples of **externen xltypeRef** Construction. 
   
 ## <a name="example"></a>Beispiel
 

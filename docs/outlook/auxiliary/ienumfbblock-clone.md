@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5af36a87-e782-df63-4190-a608758fef50
-description: Erstellt eine Kopie der Enumerator, verwenden die gleichen zeitliche Beschränkung jedoch festlegen des Cursors an den Anfang des den Enumerator.
-ms.openlocfilehash: 51503be2091fa01da6f636bf6944274068617f05
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Erstellt eine Kopie des Enumerators, wobei dieselbe Zeiteinschränkung verwendet wird, der Cursor jedoch auf den Anfang des Enumerators festgelegt wird.
+ms.openlocfilehash: 1a279430bf6a29611fa223bebbf8023c34967139
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317598"
 ---
 # <a name="ienumfbblockclone"></a>IEnumFBBlock::Clone
 
-Erstellt eine Kopie der Enumerator, verwenden die gleichen zeitliche Beschränkung jedoch festlegen des Cursors an den Anfang des den Enumerator.
+Erstellt eine Kopie des Enumerators, wobei dieselbe Zeiteinschränkung verwendet wird, der Cursor jedoch auf den Anfang des Enumerators festgelegt wird.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IEnumFBBlock](ienumfbblock.md).
+Siehe [IEnumFBBlock](ienumfbblock.md).
   
 ```cpp
 HRESULT Clone(  
@@ -32,18 +32,18 @@ HRESULT Clone(
 
 _ppclone_
   
-> [out] Ein Zeiger auf Zeiger auf die Kopie der [IEnumFBBlock](ienumfbblock.md) -Schnittstelle. 
+> Out Ein Zeiger auf die Kopie der [IEnumFBBlock](ienumfbblock.md) -Schnittstelle. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_OUTOFMEMORY  <br/> |Es ist nicht genügend Speicherplatz für die Kopie.  <br/> |
+|E_OUTOFMEMORY  <br/> |Es ist nicht genügend Arbeitsspeicher für die Kopie vorhanden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Konstanten (Frei/Gebucht-API)](constants-free-busy-api.md)
+- [Konstanten (frei/gebucht-API)](constants-free-busy-api.md)
 - [IEnumFBBlock::Next](ienumfbblock-next.md)  
 - [IEnumFBBlock::Reset](ienumfbblock-reset.md)  
 - [IEnumFBBlock::Restrict](ienumfbblock-restrict.md)  

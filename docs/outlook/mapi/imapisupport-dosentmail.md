@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4bb65c2a-9926-42da-9161-47836e8de40a
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 82490dbe597ebd3f7198aa7e0c904a10202ecd77
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8289b8dd2e0ab3c760e77a37b821d2fe74e4abe9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315969"
 ---
 # <a name="imapisupportdosentmail"></a>IMAPISupport::DoSentMail
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Verarbeitet eine gesendete Nachricht.
   
@@ -44,19 +44,19 @@ HRESULT DoSentMail(
   
 > [in] Ein Zeiger auf die ge�ffneten Nachricht f�r die eine Nachricht im Ordner speichern gesendete Elemente vorgesehen generiert werden soll.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 The **IMAPISupport::DoSentMail** method is implemented for message store provider support objects. Message store providers call **DoSentMail** from their implementation of the [IMsgStore::FinishedMsg](imsgstore-finishedmsg.md) method, which is called by the MAPI spooler when it has finished processing a message. **FinishedMsg** unlocks the message, ensures that the message's reference count is 1, and calls **DoSentMail**.
   
  **DoSentMail** f�hrt die folgenden Aufgaben: 
   
-- Überprüft die Nachricht für die **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md))-Eigenschaft, um festzustellen, ob die Nachricht nach dem Senden gelöscht werden soll.
+- Überprüft die Nachricht für die **PR_DELETE_AFTER_SUBMIT** ([pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md))-Eigenschaft, um zu bestimmen, ob die Nachricht nach dem Senden gelöscht werden soll.
     
 - Bestimmt den Speicherort des Ordners "Gesendete Elemente".
     

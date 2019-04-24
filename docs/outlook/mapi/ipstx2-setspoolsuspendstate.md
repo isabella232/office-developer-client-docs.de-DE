@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 396db029-1d4a-203d-2256-3353d03c6767
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b6a36c1e0c3854342b627b6fddd6eb5459211f62
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e988114e8e71ad1f80d20ab0d5a30c37425f5952
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315057"
 ---
 # <a name="ipstx2setspoolsuspendstate"></a>IPSTX2::SetSpoolSuspendState
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den angehaltenen Zustand auf die Warteschlange.
+Legt den angehalten-Status für den Spooler fest.
   
 ```cpp
 void SetSpoolSuspendState( 
@@ -37,7 +37,7 @@ void SetSpoolSuspendState(
 
  _ulState_
   
-> [in] Der Zustand, legen Sie die Warteschlange auf. Es muss eine der folgenden Werte sein:
+> in Der Zustand, auf den der Spooler festgelegt werden soll. Dabei muss es sich um einen der folgenden Werte handeln:
     
  **SS_ACTIVE**
   

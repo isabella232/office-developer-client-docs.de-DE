@@ -1,26 +1,26 @@
 ---
-title: GlowColor Cell (Additional Effect Properties Section)
+title: GlowColor Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 640d18c0-5b6a-4a2f-9c81-f74de5ba9eb1
-description: Legt die Farbe für den Strich von der externen Leuchten auf ein Shape, als Wert RGB oder ein Design angewendet.
-ms.openlocfilehash: 167b08815f345903aed7ff1e92dd750461839dcf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Farbe, die für den Strich des externen Glühens verwendet wird, der auf eine Form angewendet wird, als RGB-oder Design Wert.
+ms.openlocfilehash: 726dbef7ae006af1a6ff9956d16eb73cfdd02974
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314952"
 ---
-# <a name="glowcolor-cell-additional-effect-properties-section"></a>GlowColor Cell (Additional Effect Properties Section)
+# <a name="glowcolor-cell-additional-effect-properties-section"></a>GlowColor Cell (Additional Effect Properties section)
 
-Legt die Farbe für den Strich von der externen Leuchten auf ein Shape, als Wert RGB oder ein Design angewendet.
+Bestimmt die Farbe, die für den Strich des externen Glühens verwendet wird, der auf eine Form angewendet wird, als RGB-oder Design Wert.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **GlowColor** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **GlowColor** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

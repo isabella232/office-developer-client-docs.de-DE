@@ -8,53 +8,53 @@ api_type:
 - COM
 ms.assetid: 806270c1-30e4-494e-9b03-7d1f2fc04099
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 72f252791e374ed4b9b2a40c9b151ef2b91fefe6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 185bfbb151c4f8d4e36b40b94393d14d50c33edf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318123"
 ---
 # <a name="attmapiprops"></a>attMAPIProps
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Attribut **AttMAPIProps** werden spezielle zum Codieren von MAPI-Eigenschaften, die kein Gegenstück in der Gruppe von vorhandenen TNEF benutzerdefinierte Attribute verwendet werden können. Die Attributdaten ist ein gezählte festgelegten End-to-End-MAPI-Eigenschaften. Das Format dieser Codierung, die für jeden Satz von MAPI-Eigenschaften werden kann, ist wie folgt:  
+Das **attMAPIProps** -Attribut ist insofern besonders, als dass es verwendet werden kann, um jede MAPI-Eigenschaft zu codieren, die kein Gegenstück zu den vorhandenen TNEF-definierten Attributen hat. Die Attributdaten sind ein gezählter Satz von MAPI-Eigenschaften, die End-to-End festgelegt wurden. Das Format dieser Codierung, das eine beliebige Gruppe von MAPI-Eigenschaften zulässt, lautet wie folgt:  
   
  _Property_Seq:_
   
-> Eigenschaft Count _Property_Value..._
+> Eigenschaft-Count _Property_Value,..._
     
-Gibt an, der Wert der Eigenschaft Count _Property_Value_ Elemente muss vorhanden sein. 
+Es muss so viele _Property_Value_ -Elemente geben, wie der Wert der Eigenschafts Anzahl angibt. 
   
  _Property_Value:_
   
-> Eigenschafts-Tag _Property_property-Tag _Proptag_Name-Eigenschaft_
+> Property-Tag _Property_property- _Proptag_Name-Eigenschaft_
     
-Das Eigenschaft-Tag ist einfach den Wert der Eigenschaft-ID, wie etwa 0x0037001F für **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) zugeordnet.
+Das Property-Tag ist einfach der Wert, der dem Eigenschaftenbezeichner zugeordnet ist, beispielsweise 0x0037001F für **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md)).
   
- _Eigenschaft:_
+ _Eigenschaft_
   
->  _Wert_ Wert-Count _Value..._
+>  __ Value-count-Wert _,..._
     
  _Wert:_
   
-> Wertdaten Wert Größe Wertdaten Abstand Wert Größe Wert-IID Wertdaten Textabstand
+> Wert-Data Value-size value-Data Padding Value-size value-IID Value-Data Padding
     
  _Proptag_Name:_
   
-> Name-Guid Namen Art: Name Name-Id-Guid Namen Art Namen Zeichenfolgenlänge-Zeichenfolge Textabstand
+> Name-GUID-Name-kindname-ID Name-GUID Name-Art Name-String-length Name-String Padding
     
-Die Kapselung jeder Eigenschaft hängt von der Eigenschaftenbezeichner und den Eigenschaftentyp. Eigenschaftentags, Bezeichner und Typen werden in den Headerdateien Mapitags.h und Mapidefs.h definiert.
+Die Kapselung der einzelnen Eigenschaften variiert basierend auf dem Eigenschaftenbezeichner und dem Eigenschaftentyp. Eigenschaftentags, Bezeichner und Typen werden in den Headerdateien Mapitags. h und Mapidefs. h definiert.
   
-Wenn die Eigenschaft eine benannte Eigenschaft ist, wird das Eigenschafts-Tag sofort mit dem Namen der MAPI-Eigenschaft, bestehend aus einen global eindeutigen Bezeichner (GUID), einen Typ und eine Kennung oder eine Unicode-Zeichenfolge verfolgt.
+Wenn es sich bei der Eigenschaft um eine benannte Eigenschaft handelt, folgt sofort der MAPI-Eigenschaften Name, bestehend aus einem global eindeutigen Bezeichner (GUID), einem Typ und einem Bezeichner oder einer Unicode-Zeichenfolge.
   
-Mehrwertige Eigenschaften und Eigenschaften mit variabler Längenwerte wie die Eigenschaftentypen PT_BINARY, PT_STRING8, PT_UNICODE oder PT_OBJECT werden auf folgende Weise behandelt. Zunächst wird die Anzahl der Werte, die als eine lange, nicht signierte 32-Bit-codierte im TNEF-Stream, gefolgt von den einzelnen Werten platziert. Jede Eigenschaft Wertdaten ist als die Größe in Byte, gefolgt von der Datenwert selbst codiert. Der Datenwert ist 4-Byte-Begrenzung, aufgefüllt Obwohl die den Abstand in die Wert-Größe nicht enthalten ist.
+Mehrwertige Eigenschaften und Eigenschaften mit Variablen Längenwerten wie den PT_BINARY-, PT_STRING8-, PT_UNICODE-oder PT_OBJECT-Eigenschaftstypen werden folgendermaßen behandelt. Zuerst wird die Anzahl der Werte, die als 32-Bit unsigned long codiert wurden, im TNEF-Stream, gefolgt von den einzelnen Werten, angegeben. Die Wert Daten der einzelnen Eigenschaften werden als Größe in Bytes codiert, gefolgt von den Wert Daten selbst. Die Wertdaten werden zu einer 4-Byte-Grenze aufgefüllt, obwohl die Menge an Abstand nicht in der Wertgröße enthalten ist.
   
-Wenn die Eigenschaft vom Typ PT_OBJECT ist, folgt die Wert-Größe der Identifier, der das Objekt. Die aktuelle Implementierung von TNEF unterstützt nur die IID_IMessage, IID_IStorage und IID_Istream Schnittstelle-Bezeichner. Die Größe des Bezeichners Schnittstelle ist in die Wert-Größe enthalten.
+Wenn die Eigenschaft vom Typ PT_OBJECT ist, folgt die Wertgröße dem Schnittstellenbezeichner des Objekts. Die aktuelle Implementierung von TNEF unterstützt nur die IID_IMessage-, IID_IStorage-und IID_Istream-Schnittstellenbezeichner. Die Größe des Schnittstellen Bezeichners ist in der Wertgröße enthalten.
   
-Wenn das Objekt eingebettete Nachricht ist (d. h., sie hat einen Eigenschaftentyp PT_OBJECT und eine Schnittstellenbezeichner des IID_Imessage), die Daten des Werts als ein eingebettetes TNEF-Stream codiert. Die eigentliche Codierung der eingebettete Nachricht in TNEF-Implementierung erfolgt durch ein zweites TNEF-Objekt für den ursprünglichen Datenstrom öffnen und verarbeiten den Stream Inline.
+Wenn es sich bei dem Objekt um eine eingebettete Nachricht handelt (also einen Eigenschaftentyp von PT_OBJECT und einen Schnittstellenbezeichner von IID_Imessage), werden die Wertdaten als eingebetteter TNEF-Stream codiert. Die tatsächliche Codierung einer eingebetteten Nachricht in der TNEF-Implementierung erfolgt durch Öffnen eines zweiten TNEF-Objekts für den ursprünglichen Stream und Inline Verarbeitung des Streams.
   
 

@@ -8,22 +8,22 @@ f1_keywords:
 - TempBool
 - TempBool12
 keywords:
-- Tempbool-Funktion [excel 2007], TempBool12-Funktion [Excel 2007]
+- tempbool-Funktion [Excel 2007], TempBool12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 0cf1fa58-416f-4692-a2e3-422473c19492
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 30874e7b918d8cd780bef60b4b02de1319f0f9ab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c8c917f0004fe091413ea670f1cc562f1d701fa0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310353"
 ---
 # <a name="tempbooltempbool12"></a>TempBool/TempBool12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliothek-Funktion, die eine temporäre **XLOPER**erstellt/ **XLOPER12** mit **booleschen Wert** **TRUE** oder **FALSE**.
+Framework-Bibliotheksfunktion, die ein temporäres **XLOPER**/ **XLOPER12** mit dem booleschen **Wert** **true** oder **false**erstellt.
   
 ```cs
 LPXLOPER TempBool(int b);
@@ -32,17 +32,17 @@ LPXLOPER12 TempBool12(int b);
 
 ## <a name="parameters"></a>Parameter
 
- _b_ (**Int**)
+ _b_ (**int**)
   
-Verwenden Sie 0 **FALSE**zurückgegeben. Verwenden Sie einen anderen Wert **TRUE**zurückgibt.
+Verwenden Sie 0, um **false**zurückzugeben; Verwenden Sie einen anderen Wert, um **true**zurückzugeben.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt ein **XltypeBool** **Boolean** mit den logischen übergebenen Wert zurück. 
+Gibt einen **xltypeBool** **** -booleschen Wert zurück, der den in übergebenen Logical value enthält. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgende Beispiel wird mithilfe die Funktion **TempBool12** die Statusleiste gelöscht. Temporärer Speicher freigegeben wird, wenn die [Excel/Excel12f](excel-excel12f.md) -Funktion aufgerufen wird. 
+Im folgenden Beispiel wird die **TempBool12** -Funktion verwendet, um die Statusleiste zu löschen. Temporärer Arbeitsspeicher wird freigegeben, wenn die [Excel/Excel12f-](excel-excel12f.md) Funktion aufgerufen wird. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

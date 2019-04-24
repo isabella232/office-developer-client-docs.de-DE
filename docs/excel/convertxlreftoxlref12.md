@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - ConvertXLRefToXLRef12
 keywords:
-- convertxlreftoxlref12-Funktion [excel 2007]
+- convertxlreftoxlref12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 94580044-9497-425f-a31e-53bb4d94dc30
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: f2830633482e5329d285907b610386b708c406a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 530cb9cce5b0023318ff6b8a0ff73472f8250aa3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310990"
 ---
 # <a name="convertxlreftoxlref12"></a>ConvertXLRefToXLRef12
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Funktion, die versucht, eine **XLREF** in einer **XLREF12**zu konvertieren.
+Framework-Funktion, die versucht, ein **XLREF** in ein **XLREF12**zu konvertieren.
   
 ```cs
 BOOL ConvertXLRefToXLRef12(LPXLREF pxRef, LPXLREF12 pxRef12);
@@ -32,19 +32,19 @@ BOOL ConvertXLRefToXLRef12(LPXLREF pxRef, LPXLREF12 pxRef12);
 
  _pxRef_ (**LPXLREF**)
   
-Zeiger auf die Struktur der Datenquelle Verweis.
+Zeiger auf die Quellverweis Struktur.
   
  _pxRef12_ (**LPXLREF12**)
   
-Zeiger auf die Ziel-Referenz-Struktur in den konvertierte Wert platziert werden.
+Zeiger auf die Zielverweis Struktur, in die der konvertierte Wert eingefügt werden soll.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
- **True,** Wenn **die Konvertierung erfolgreich; andernfalls** . 
+ **True** , wenn die Konvertierung erfolgreich war, andernfalls **false** . 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Vorausgesetzt, dass die übergebenen **XLREF** gültig ist, sollte dieser Vorgang immer erfolgreich durchgeführt werden. Im Gegensatz dazu schlägt Konvertierung die andere Möglichkeit von **XLREF12** , **XLREF**, [ConvertXLRef12ToXLRef](convertxlref12toxlref.md), die von der angegebene Verweis auf Bestandteil einer Excel 2007-Arbeitsblatt bezieht, die in früheren Versionen nicht unterstützt wird.
+Sofern die übergebene **XLREF** gültig ist, sollte dieser Vorgang immer erfolgreich sein. Im Gegensatz dazu schlägt die Konvertierung in die andere Richtung von **XLREF12** zu **XLREF**, die von [ConvertXLRef12ToXLRef](convertxlref12toxlref.md)ausgeführt wird, fehl, wenn der angegebene verweis auf einen Teil eines Excel 2007-Arbeitsblatts verweist, das in früheren Versionen nicht unterstützt wird.
   
 ## <a name="example"></a>Beispiel
 

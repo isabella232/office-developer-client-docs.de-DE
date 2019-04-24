@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a41f707a-5c84-49aa-aeb6-469b2600e181
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 41066d4418760a676fbc02241bfc12d83275da9d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c7124c8e3f2ced66d303321ff7aee8592a723a2b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317122"
 ---
 # <a name="iprofadminchangeprofilepassword"></a>IProfAdmin::ChangeProfilePassword
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Veraltet. Ändert das Kennwort für ein Profil.
   
@@ -40,31 +40,31 @@ HRESULT ChangeProfilePassword(
 
  _lpszProfileName_
   
-> [in] Ein Zeiger auf den Namen des Profils, das Kennwort zu ändernden zugeordnet.
+> in Ein Zeiger auf den Namen des Profils, das dem zu ändernden Kennwort zugeordnet ist.
     
  _lpszOldPassword_
   
-> [in] Ein Zeiger auf das aktuelle Kennwort.
+> in Ein Zeiger auf das aktuelle Kennwort.
     
  _lpszNewPassword_
   
-> [in] Ein Zeiger auf das neue Kennwort ein.
+> in Ein Zeiger auf das neue Kennwort.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Der Name der Benutzerprofildienst und Kennwörter werden im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind diese Zeichenfolgen in ANSI-Format.
+> Der Profilname und die Kennwörter sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Wenn diese Methode aufgerufen wird, wird S_OK zurückgegeben. Es wird jedoch keine Aktion ausgeführt werden.
+> Wenn diese Methode aufgerufen wird, wird S_OK zurückgegeben. Es wird jedoch keine Aktion ausgeführt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Methode nicht. MAPI unterstützt keine Kennwörter für Profile.
   

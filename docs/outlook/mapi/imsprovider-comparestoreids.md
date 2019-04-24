@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c3e3cfaa-9c4a-482a-9411-9c4ab01d312f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 57b8438d655b3bc5b708fd7ed6734554a3a23ac4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 734e53c1e897c902c72319aa6f2d3d7af2d23fb6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317269"
 ---
 # <a name="imsprovidercomparestoreids"></a>IMSProvider::CompareStoreIDs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei e-Mail-Store-Eintragsbezeichner, um zu bestimmen, ob sie auf das gleiche Store-Objekt verweisen.
+Vergleicht zwei Nachrichtenspeicher Eintrags-IDs, um zu bestimmen, ob Sie auf dasselbe Store-Objekt verweisen.
   
 ```cpp
 HRESULT CompareStoreIDs(
@@ -42,19 +42,19 @@ HRESULT CompareStoreIDs(
 
  _cbEntryID1_
   
-> [in] Die Größe in Bytes für die Eintrags-ID auf das durch den Parameter _lpEntryID1_ _._
+> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird, in Bytes _._
     
  _lpEntryID1_
   
-> [in] Ein Zeiger auf die erste Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
     
  _cbEntryID2_
   
-> [in] Die Größe in Bytes für die Eintrags-ID auf das durch den Parameter _lpEntryID2_ _._
+> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird, in Bytes _._
     
  _lpEntryID2_
   
-> [in] Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
     
  _ulFlags_
   
@@ -62,21 +62,21 @@ HRESULT CompareStoreIDs(
     
  _lpulResult_
   
-> [out] Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. True, wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen. andernfalls, FALSE.
+> Out Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, andernfalls false. andernfalls FALSE.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI ruft die **IMSProvider::CompareStoreIDs** -Methode auf, wenn sie einen Anruf an die [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) -Methode verarbeitet. **CompareStoreIDs** ist zu diesem Zeitpunkt aufgerufen, um zu bestimmen, welcher Profilabschnitt gegebenenfalls zugeordnet Nachrichtenspeicher wird geöffnet ist. **CompareStoreIDs** können aufgerufen werden, wenn keine Nachrichtenspeicher für einen bestimmten Anbieter geöffnet sind. Darüber hinaus ruft MAPI auch **CompareStoreIDs** bei der Verarbeitung eines Speicher-Anbieter Aufrufs der [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) -Methode. 
+MAPI Ruft die **IMSProvider:: CompareStoreIDs** -Methode auf, wenn ein Aufruf der [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md) -Methode verarbeitet wird. **CompareStoreIDs** wird an dieser Stelle aufgerufen, um zu bestimmen, welcher Profil Abschnitt, falls vorhanden, dem zu öffnenden Nachrichtenspeicher zugeordnet ist. Ein **CompareStoreIDs** -Aufruf kann vorgenommen werden, wenn kein Nachrichtenspeicher für einen bestimmten Speicheranbieter geöffnet ist. Außerdem ruft MAPI **CompareStoreIDs** auf, wenn ein Speicheranbieter Aufruf an die [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) -Methode verarbeitet wird. 
   
-Die **CompareStoreIDs** bei einem Vergleich Eintragsbezeichner sind sowohl für die aktuelle Speichern des Anbieters Dynamic Link Library (DLL) und sind beide allein stehenden Store-Eintragsbezeichner. Weitere Informationen zum Umfließen eines Store-Eintragsbezeichner finden Sie unter [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md).
+Die Eintrags-IDs, die von **CompareStoreIDs** verglichen werden, sind sowohl für die Dynamic Link Library (dll) des aktuellen Speicheranbieters als auch für unwrappede Speicher Eintrags-IDs. Weitere Informationen zum Einbinden von Speicher Eintrags Bezeichnern finden Sie unter [IMAPISupport:: WrapStoreEntryID](imapisupport-wrapstoreentryid.md).
   
-Vergleichen von Eintragsbezeichner ist hilfreich, da ein Objekt mehr als eine gültige Eingabe Bezeichner haben kann. Dies kann beispielsweise vorkommen, nach der Installation einer neuen Version des Anbieters einer Nachricht. 
+Das Vergleichen von Eintrags Bezeichnern ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. Dies kann beispielsweise der Fall sein, nachdem eine neue Version eines Nachrichtenspeicher Anbieters installiert wurde. 
   
 ## <a name="see-also"></a>Siehe auch
 

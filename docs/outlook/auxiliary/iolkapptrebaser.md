@@ -6,35 +6,35 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d67bd395-d324-217d-8ddc-1d48dd724383
-description: Neuzuordnen von Terminen in einem Kalenderordner unterstützt.
-ms.openlocfilehash: 57ca59121f74c7b64a84282c7493e4aed3179f7a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Unterstützt das erneute belegen von Terminen in einem Kalenderordner.
+ms.openlocfilehash: cf4f7c790a8561f149160c83418a0d5ebd91a455
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321861"
 ---
 # <a name="iolkapptrebaser"></a>IOlkApptRebaser
 
-Neuzuordnen von Terminen in einem Kalenderordner unterstützt.
+Unterstützt das erneute belegen von Terminen in einem Kalenderordner.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Erbt:  <br/> |**IUnknown** <br/> |
-|Headerdatei  <br/> |tzmovelib.h  <br/> |
-|Implementiert von:  <br/> |tzmovelib.dll  <br/> |
+|Erbt von:  <br/> |**IUnknown** <br/> |
+|Headerdatei  <br/> |tzmovelib. h  <br/> |
+|Implementiert von:  <br/> |tzmovelib. dll  <br/> |
 |Aufgerufen von:  <br/> |MAPI-Clientanwendungen  <br/> |
-|Eingeblendet auf:  <br/> |Basisadressen Outlook-Objekt  <br/> |
+|Verfügbar unter:  <br/> |Outlook-Objekt wird erneut basiert  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|**[BeginEnumerateAppointments](iolkapptrebaser-beginenumerateappointments.md)** <br/> |Beginnt eine Aufgabe für die Enumeration der Termin im Kalenderordner Termine zu finden, die neuen Basisadressen benötigen.  <br/> |
-|**[EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)** <br/> |Termin-Enumeration in einem Kalenderordner Abschluss wartet, und gibt einer Liste von Terminen, müssen neuen Basisadressen.  <br/> |
-|**[BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)** <br/> |Beginnt mit einer Aufgabe zum Termin Neuzuordnen anhand einer Liste von Terminen, in der Regel von **EndEnumerateAppointments**abgerufen.  <br/> |
+|**[Beginenumerateappointmentsabgerufen](iolkapptrebaser-beginenumerateappointments.md)** <br/> |Beginnt eine Aufgabe für die Enumeration der Termin im Kalenderordner Termine zu finden, die neuen Basisadressen benötigen.  <br/> |
+|**[Endenumerateappointmentsabgerufen](iolkapptrebaser-endenumerateappointments.md)** <br/> |Termin-Enumeration in einem Kalenderordner Abschluss wartet, und gibt einer Liste von Terminen, müssen neuen Basisadressen.  <br/> |
+|**[Beginrebaseappointmentsabgerufen](iolkapptrebaser-beginrebaseappointments.md)** <br/> |Beginnt eine Aufgabe für die Ernennung, die anhand einer Liste von Terminen, die in der Regel von **endenumerateappointmentsabgerufen**abgerufen werden.  <br/> |
 |**[EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)** <br/> |Führen Sie neuen Basisadressen Termin wartet, und ruft die Ergebnisse ab.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

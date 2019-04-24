@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 064dd5ca-0108-4045-b17b-0bb29cb93346
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5d8e91490cc39c3f259d35a923bb3bcbb2bf6011
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: fcaebb96d4dca4e6bfbee7491dabeafcbd93a2eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309975"
 ---
 # <a name="imsgserviceadmingetmsgservicetable"></a>IMsgServiceAdmin::GetMsgServiceTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Zugriff auf die Nachricht Service Tabelle eine Liste der Nachrichtendienste im Profil.
+Ermöglicht den Zugriff auf die Nachrichtendienst Tabelle, eine Liste der Nachrichtendienste im Profil.
   
 ```cpp
 HRESULT GetMsgServiceTable(
@@ -38,31 +38,31 @@ HRESULT GetMsgServiceTable(
 
  _ulFlags_
   
-> [in] Immer NULL.
+> in Immer NULL.
     
  _lppTable_
   
-> [out] Ein Zeiger auf einen Zeiger auf die Nachricht Service-Tabelle.
+> Out Ein Zeiger auf einen Zeiger auf die Nachrichtendienst Tabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Tabelle der Dienste wurde erfolgreich zurückgegeben.
+> Die Nachrichtendienst Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgServiceAdmin::GetMsgServiceTable** -Methode ermöglicht den Zugriff auf die Nachricht Service Tabelle eine Tabelle, die MAPI verwaltet, die Message-Dienste im Profil der Sitzung derzeit installiert aufgeführt. Eine vollständige Liste der Spalten in der Tabelle der Dienste finden Sie unter [Message Service-Tabelle](message-service-tables.md).
+Die **IMsgServiceAdmin:: GetMsgServiceTable** -Methode ermöglicht den Zugriff auf die Nachrichtendienst Tabelle, eine Tabelle, die von MAPI verwaltet wird, die die im Sitzungsprofil installierten Nachrichtendienste auflistet. Eine vollständige Liste der Spalten in der Tabelle "Nachrichtendienst" finden Sie unter [Message Service Table](message-service-tables.md).
   
-Die Tabelle der Dienste sind statisch. Nachdem ein Client Zugriff darauf gewährt wurde, wirkt nachfolgende Meldung Dienst hinzufügen oder Löschen nicht sich. Wenn keine Message-Dienste in das aktuelle Profil vorhanden sind, gibt **GetMsgServiceTable** eine Tabelle mit 0 (null) Zeilen zurück. 
+Die Nachrichtendienst Tabelle ist statisch. Nachdem ein Clientzugriff darauf erhalten hat, hat der nachfolgende Nachrichtendienst keine Auswirkungen darauf. Wenn im aktuellen Profil keine Nachrichtendienste vorhanden sind, gibt **GetMsgServiceTable** eine Tabelle mit null Zeilen zurück. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnRefreshView  <br/> |MFCMAPI (engl.) verwendet die **IMsgServiceAdmin::GetMsgServiceTable** -Methode zum Laden der Tabelle der Dienste in einem Profil in der Ansicht gerendert werden soll.  <br/> |
+|MsgServiceTableDlg. cpp  <br/> |CMsgServiceTableDlg:: OnRefreshView  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin:: GetMsgServiceTable** -Methode, um die Tabelle mit Diensten in einem Profil zu laden, das in der Ansicht gerendert werden soll.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

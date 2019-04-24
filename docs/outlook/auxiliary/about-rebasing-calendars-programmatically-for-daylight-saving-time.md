@@ -6,25 +6,25 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 38b342d9-ab10-04b6-5490-9a45f847a60f
-description: 'In diesem Thema wird in diesem Zeitraum zwischen dem: Spirale und werden, die als die sommerzeitperiode bezeichnet.'
+description: In diesem Thema wird dieser Zeitraum zwischen Frühling und Herbst als DST-Zeitraum bezeichnet.
 ms.openlocfilehash: 8d9a0ffda89ee9d8847cde59181747588a50e947
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316954"
 ---
 # <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>Informationen zum Ausführen eines programmgesteuerten Kalender-Rebase für Sommerzeit
 
-Viele Länder beobachten Sommerzeit (Ziel) von Uhren vorwärts verschoben, sodass abends länger Sommerzeit haben. Dies erfolgt in der Regel durch Festlegen der Uhr eine Stunde lang in die Spirale und Einstellen der Uhr eine Stunde wieder in den fallen. In diesem Thema wird in diesem Zeitraum zwischen dem: Spirale und werden, die als die sommerzeitperiode bezeichnet. Die meisten Ländern haben ihre eigenen Vorschriften Sommerzeit beginnt und endet. Das Datum, von die sommerzeitperiode können von Jahr zu Jahr ändern, und Benutzer müssen Aktualisieren ihrer Microsoft Outlook-Kalender jedes Mal, dass die neuen Sommerzeitregeln Vorschriften ändern. 
+Viele Länder beobachten Sommerzeit (DST) durch Fortschreiten von Uhren, sodass Abende längeres Tageslicht aufweisen. Dies erfolgt in der Regel durch Festlegen der Uhr eine Stunde vor dem Frühjahr, und Festlegen der Uhr eine Stunde zurück im Herbst. In diesem Thema wird dieser Zeitraum zwischen Frühling und Herbst als DST-Zeitraum bezeichnet. Die meisten Länder verfügen über eigene Regeln für den Beginn und das Ende der SOMMERzeit. Die Datumsangaben des DST-Zeitraums können sich von Jahr zu Jahr ändern, und Benutzer müssen Ihren Microsoft Outlook-Kalender jedes Mal aktualisieren, wenn sich die Sommerzeitregelungen ändern. 
   
-Wenn Sie eine Version von Windows verwenden, Windows Vista ist, oder höher, oder Windows automatische Updates aktiviert haben, können Sie nicht durch die Änderung der Sommerzeit betroffen. Anderenfalls sollten Sie die neuen Sommerzeitregeln Updates für Windows installieren. Unabhängig davon, ob die Updates automatisch in Ihrem Auftrag von der IT-Abteilung oder von sich selbst als ein Privatbenutzer installiert sind möglicherweise einige vorhandene Termine, die auftreten, bei die sommerzeitperiode angezeigt, nach der Installation der Updates Sommerzeit für Windows falsche mehrmals . Dies gilt für Termine wiederkehrende und Einzel-Instanz. Aktualisieren Sie diese Termine um korrekt angezeigt wird in Outlook, Outlook Web App und Anwendungen, die auf der Windows-Verwaltungsinstrumentation (Collaboration Data Objects, CDO) basieren. Aktualisieren falsch angezeigten Termine in Kalendern aufgrund der Sommerzeit wird als Neuzuordnen von Kalendern bezeichnet.
+Wenn Sie eine Windows Vista-Version oder höher verwenden oder Windows Automatic Update aktiviert haben, sind Sie möglicherweise nicht von der Änderung im DST betroffen. Andernfalls sollten Sie DST-Updates für Windows installieren. Unabhängig davon, ob die Updates automatisch, in Ihrem Namen von einer IT-Abteilung oder von Ihnen als Privatbenutzer installiert werden, werden einige vorhandene Termine, die während des DST-Zeitraums auftreten, möglicherweise fehlerhaft angezeigt, nachdem die DST-Updates für Windows installiert wurden. . Dies gilt sowohl für Terminserien als auch für Einzelinstanzen. Sie müssen diese Termine aktualisieren, damit Sie in Outlook, in Outlook Web App und in Anwendungen, die auf Collaboration Data Objects (CDO) basieren, korrekt angezeigt werden. Das Aktualisieren falsch angezeigter Termine in Kalendern aufgrund der SOMMERzeit wird als Kalender erneute Aktualisierung bezeichnet.
   
-Outlook bietet Tools für Benutzer und Exchange Server bietet Tools für Administratoren Rebase Kalender. Outlook bietet die Zeit Zeitzonendaten für Outlook-Benutzer. Mit diesem Tool können Benutzer ihre eigenen Kalender aktualisieren. Exchange Server bietet Exchange Calendar Update-Tool, das hilft Administratoren, um Probleme zu vermeiden, die bei der Bereitstellung des Outlook-Tools großem Maß an alle Benutzer und dafür sorgen, dass jeder Benutzer das Outlook-Tool ordnungsgemäß ausgeführt wird.
+Outlook bietet Tools für Benutzer und Exchange Server stellt Tools für Administratoren zur Verfügung. Outlook stellt das Time Zone Data Update-Tool für Outlook-Benutzer bereit. Mit diesem Tool können Benutzer ihre eigenen Kalender aktualisieren. Exchange Server stellt das Exchange-Kalender Aktualisierungstool bereit, mit dem Administratoren Schwierigkeiten vermeiden können, die sich aus der Bereitstellung des Outlook-Tools für alle Benutzer ergeben, und um sicherzustellen, dass jeder Benutzer das Outlook-Tool ordnungsgemäß ausführt.
   
-Zusätzlich zum Vertrauen in Benutzern das Ausführen der Zeit Zeitzonendaten oder Administratoren den Exchange Calendar Update-Tool ausführen, können Drittanbieter-MAPI-Client-Software-Entwicklern eine DLL sein; Tzmovelib.dll herunterladen. Mithilfe dieser Assembly können Entwickler die gleichen APIs, die Outlook und Exchange Server in ihren Kalender Neuzuordnen von Tools verwenden. 
+Zusätzlich dazu, dass Benutzer das Time Zone Data Update-Tool oder Administratoren ausführen, um das Exchange-Kalender Aktualisierungstool auszuführen, können Entwickler von Drittanbieter-MAPI-Client Software eine DLL, Tzmovelib. dll, herunterladen. Mithilfe dieser Assembly können Entwickler dieselben APIs verwenden, die Outlook und Exchange Server in Ihren Kalender-Wiederverwendungs Tools verwenden. 
 
-In der folgenden Liste werden die APIs Neuzuordnen:
+In der folgenden Liste sind die Kalender-wiederbasierten APIs aufgeführt:
   
 - [HrCreateApptRebaser](hrcreateapptrebaser.md)
     
@@ -38,13 +38,13 @@ In der folgenden Liste werden die APIs Neuzuordnen:
     
 - [IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)
     
-- [PidLidAppointmentTimeZoneDefinitionEndDisplay](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)
+- [Pidlidappointmenttimezonedefinitionenddisplay (](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)
     
-- [PidLidAppointmentTimeZoneDefinitionRecur](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)
+- [Pidlidappointmenttimezonedefinitionrecur (](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)
     
-- [PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)
+- [Pidlidappointmenttimezonedefinitionstartdisplay (](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)
     
-- [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)
+- [Pidlidtimezonestruct (](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)
     
 - [RebaseTaskComplete](rebasetaskcomplete.md)
     
@@ -56,13 +56,13 @@ In der folgenden Liste werden die APIs Neuzuordnen:
     
 - [TZRULE](tzrule.md)
     
-Um einen Termin zurücksetzungstool mithilfe des Kalenders Neuzuordnen von APIs zu schreiben, können Sie die folgende Schritte aus:
+Sie können das folgende Verfahren verwenden, um ein Termin-Wiederverwendungs Tool mithilfe der APIs für die Kalender Zurücksetzung zu schreiben:
   
-1. Verwenden Sie **IOlkApptRebaser::BeginEnumerateAppointments** und **IOlkApptRebaser::EndEnumerateAppointments** , um Termine zu erhalten, die zum Neuzuordnen von geeignet sind. Bei Bedarf Informationen zum Aktivieren des Benutzers entscheiden, welche Termine Rebase präsentieren. Verwenden Sie alternativ MAPI oder Outlook-Objektmodell, um die Zeit- und Serie Informationen für einen Termin zu überprüfen, indem Sie die Analyse der **PidLidAppointmentTimeZoneDefinitionStartDisplay**, **PidLidAppointmentTimeZoneDefinitionEndDisplay**, und **PidLidAppointmentTimeZoneDefinitionRecur** -Eigenschaften. 
+1. Verwenden Sie **IOlkApptRebaser:: beginenumerateappointmentsabgerufen** und **IOlkApptRebaser:: endenumerateappointmentsabgerufen** , um Termine zu finden, die Kandidaten für die neubasis sind. Geben Sie gegebenenfalls Informationen an, damit der Benutzer entscheiden kann, welche Termine erneut festgelegt werden sollen. Alternativ können Sie MAPI oder das Outlook-Objektmodell verwenden, um die Zeit-und Serieninformationen für einen Termin zu untersuchen, indem Sie die **pidlidappointmenttimezonedefinitionstartdisplay (**, **pidlidappointmenttimezonedefinitionenddisplay (**, -und **pidlidappointmenttimezonedefinitionrecur (** -Eigenschaft. 
     
-2. Verwenden Sie **HrCreateApptRebaser**, **IOlkApptRebaser::BeginRebaseAppointments**und **IOlkApptRebaser::EndRebaseAppointments** auf Basis des Termins. 
+2. Verwenden Sie **HrCreateApptRebaser**, **IOlkApptRebaser:: beginrebaseappointmentsabgerufen**und **IOlkApptRebaser:: EndRebaseAppointments** , um den Termin aufzuteilen. 
     
-Die Assembly Tzmovelib.dll Herunterladen der OutlookTimeZoneMoveLibRedist.exe redistributable Installer und Headerdatei Tzmovelib.h am [Outlook 2010: Hilfs-Referenz Redistributable Installer und Headerdatei zum Neuzuordnen von Kalendern](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b) . Dieser Download kann für Outlook 2010 und höheren Versionen von Outlook. OutlookTimeZoneMoveLibRedist.exe installiert die Assemblydatei Tzmovelib.dll in c:\Programme\Microsoft Files\MsExTmz. Beachten Sie diesen Neuzuordnen von Anwendungen von Drittanbietern Kalender kann nur das Installationsprogramm OutlookTimeZoneMoveLibRedist.exe, verteilen und muss nicht die Assembly, Tzmovelib.dll oder andere extrahierten Komponenten separat vom Installer verteilen.
+Um die Tzmovelib. dll-Assembly abzurufen, laden Sie das Redistributable-Installationsprogramm von OutlookTimeZoneMoveLibRedist. exe und die Tzmovelib. h-Headerdatei unter [Outlook 2010: Erweiterungs Verweis redistributAble Installer and Header File for Recalendar](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b) . Dieser Download funktioniert für Outlook 2010 und spätere Versionen von Outlook. OutlookTimeZoneMoveLibRedist. exe installiert die Tzmovelib. dll-Assemblydatei in C:\Program Files\MsExTmz. Beachten Sie, dass Drittanbieter-Kalender, die Anwendungen neu bebauen können, nur das Installationsprogramm OutlookTimeZoneMoveLibRedist. exe verteilen dürfen und die Assembly, die Tzmovelib. dll oder alle anderen extrahierten Komponenten nicht separat vom Installationsprogramm verteilen müssen.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,7 +70,7 @@ Die Assembly Tzmovelib.dll Herunterladen der OutlookTimeZoneMoveLibRedist.exe re
 - [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
 - [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
 - [Lesen von Zeitzoneneigenschaften aus einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
-- [Sommerzeit Hilfe- und Supportcenter](https://support.microsoft.com/gp/cp_dst)
-- [Gewusst wie: Sommerzeit mithilfe des Exchange Calendar Update-Tools](https://support.microsoft.com/kb/941018)
-- [Wie Adresse, Zeitzone Änderungen mithilfe der Zeit Zeitzonendaten für Microsoft Office Outlook](https://support.microsoft.com/kb/931667)
+- [Hilfe-und Support Center für Sommerzeit](https://support.microsoft.com/gp/cp_dst)
+- [Behandeln von Sommerzeit mithilfe des Exchange-Kalender Aktualisierungstools](https://support.microsoft.com/kb/941018)
+- [So adressieren Sie Zeitzonenänderungen mithilfe des Time Zone Data Update-Tools für Microsoft Office Outlook](https://support.microsoft.com/kb/931667)
 

@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm82251494
 localization_priority: Normal
 ms.assetid: 407817fb-9e4a-d2ca-6125-2440d2a417c6
-description: Gibt den Wert der Sättigung-Komponente eine Farbe zurück.
-ms.openlocfilehash: 54f3fa68c567c2a32e8cfd37c406387cd6973ce3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Wert der Sättigungskomponente einer Farbe zurück.
+ms.openlocfilehash: 3b3fd8e13ca9af4f0aea00d2f78c7b5c27be1932
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318998"
 ---
 # <a name="sat-function"></a>SAT Function
 
-Gibt den Wert der Sättigung-Komponente eine Farbe zurück. 
+Gibt den Wert der Sättigungskomponente einer Farbe zurück. 
   
 ## <a name="syntax"></a>Syntax
 
-SAT (** *Ausdruck* **) 
+SAT (* * *Expression* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Varies** <br/> |Ein Index einer Farbe aus der Farbtabelle des Dokuments, ein Ausdruck, der zu einer benutzerdefinierten Farbe (wie RGB oder HSL) aufgelöst wird, oder ein Bezug auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Index einer Farbe aus der Farbtabelle des Dokuments, ein Ausdruck, der zu einer benutzerdefinierten Farbe (wie RGB oder HSL) aufgelöst wird, oder ein Bezug auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -40,13 +40,13 @@ Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 240. Bei ei
   
 ## <a name="example-1"></a>Beispiel 1
 
-SAT (Sheet4! FillForegnd)
+SA (Blatt. 4! Zelle FillForegnd
   
 Gibt den Wert der Sättigung der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-SAT(8)
+SAT (8)
   
 Gibt 240 zurück, wenn das Dokument die Farbpalette von Visio verwendet, wobei Dunkelrot die Farbe mit Index 8 ist.
   

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 172f8f53-b837-4286-9236-3f72806d7f1f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b974b733c24e61cb256ac0cf7b377d5630966fdf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c40d853c49645638c2ec4001d86e64a1b2d2e381
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321595"
 ---
 # <a name="imapiformmgrselectmultipleforms"></a>IMAPIFormMgr::SelectMultipleForms
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Dialogfeld, mit dem den Benutzer mehrere Formulare auswählen kann, und gibt ein Array von Formular Informationsobjekten, die diesen Formularen zu beschreiben.
+Zeigt ein Dialogfeld an, in dem der Benutzer mehrere Formulare auswählen kann, und es wird ein Array von Formular Informationsobjekten zurückgegeben, die diese Formulare beschreiben.
   
 ```cpp
 HRESULT SelectMultipleForms(
@@ -42,53 +42,53 @@ HRESULT SelectMultipleForms(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster im angezeigten Dialogfeld. 
+> in Ein Handle für das übergeordnete Fenster des angezeigten Dialogfelds. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _pszTitle_
   
-> [in] Ein Zeiger auf eine Zeichenfolge, die Beschriftung des Dialogfelds enthält. Wenn der Parameter _PszTitle_ NULL ist, stellt der Formular-Bibliotheksanbieter, der die Formulare enthält einen Standardtitel. 
+> in Ein Zeiger auf eine Zeichenfolge, die die Beschriftung des Dialogfelds enthält. Wenn der _pszTitle_ -Parameter NULL ist, liefert der Formularbibliothek Anbieter, der die Formulare bereitstellt, eine Standardbeschriftung. 
     
  _pfld_
   
-> [in] Ein Zeiger auf den Ordner aus, wählen Sie die Formulare. Wenn der Parameter _Pfld_ NULL ist, werden die Formulare aus dem lokalen persönlich oder Organisation Formular Container ausgewählt. 
+> in Ein Zeiger auf den Ordner, aus dem die Formulare ausgewählt werden sollen. Wenn der _pfld_ -Parameter NULL ist, werden die Formulare im Formular Container local, Personal oder Organization ausgewählt. 
     
  _pfrminfoarray_
   
-> [in] Ein Zeiger auf ein Array von Formular Informationen-Objekten, die für den Benutzer bereits ausgewählt sind.
+> in Ein Zeiger auf ein Array von Formular Informationsobjekten, die für den Benutzer vorgewählt sind.
     
  _ppfrminfoarray_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Array von Formular Informationen-Objekte.
+> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Array von Formular Informationsobjekten.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in der Regel auf die Schaltfläche **Abbrechen** im Dialogfeld geklickt hat. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormMgr::SelectMultipleForms** -Methode zum ersten vorhanden ein Dialogfeld, mit dem den Benutzer mehrere Formulare auswählen kann, und klicken Sie dann Informationen zum Abrufen eines Arrays des Formulars Objekte, die die ausgewählten Formulare beschreiben. Das Dialogfeld **SelectMultipleForms** zeigt alle Formulare, unabhängig davon, ob sie ausgeblendet werden (d. h., ob ihre ausgeblendeten Eigenschaften deaktiviert sind). 
+Formular Betrachter rufen die **IMAPIFormMgr:: SelectMultipleForms** -Methode auf, um zuerst ein Dialogfeld zu öffnen, in dem der Benutzer mehrere Formulare auswählen und dann ein Array von Formular Informationsobjekten abrufen kann, die die ausgewählten Formulare beschreiben. Im Dialogfeld **SelectMultipleForms** werden alle Formulare angezeigt, unabhängig davon, ob Sie ausgeblendet sind (d..., ob Ihre ausgeblendeten Eigenschaften deaktiviert sind). 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Formular Viewer die Option MAPI_UNICODE im Parameter _UlFlags_ übergibt, werden alle Zeichenfolgen Unicode. Formular Bibliothek Anbieter, die keine für Unicode-Zeichenfolgen Unterstützung sollte MAPI_E_BAD_CHARWIDTH zurückgegeben, wenn der Parameter MAPI_UNICODE übergeben wird. 
+Wenn ein Formular Betrachter das MAPI_UNICODE-Flag im _ulFlags_ -Parameter übergibt, sind alle Zeichenfolgen Unicode. Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

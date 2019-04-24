@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5676981b-a465-4b89-b818-1eb88333b639
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8e26340c4a4c80210b61f777ad00dbe3897b4f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 06fe8d33b98d9d2a211dba497bd99ff0ec21bbf7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318046"
 ---
 # <a name="cbflatentrylist"></a>CbFLATENTRYLIST
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes in einer vorhandenen [FLATENTRYLIST](flatentrylist.md) Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [FLATENTRYLIST](flatentrylist.md) -Struktur. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**FLATENTRYLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**FLATENTRYLIST** <br/> |
    
 ```cpp
 CbFLATENTRYLIST(_lplist)
@@ -40,7 +40,7 @@ CbFLATENTRYLIST(_lplist)
 
  __lplist_
   
-> Zeiger auf die betreffende **FLATENTRYLIST** Struktur. 
+> Zeiger auf die fragliche **FLATENTRYLIST** -Struktur. 
     
 ## <a name="see-also"></a>Siehe auch
 

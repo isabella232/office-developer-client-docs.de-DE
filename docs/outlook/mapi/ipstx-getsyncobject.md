@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b93dae79-4305-9a3a-7b93-42319f7e26ba
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e0e27d86098ec55849fa96cc150c60934ef2810b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 31ef1f5c6af498f042ab766ae90fcfbce805700a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315085"
 ---
 # <a name="ipstxgetsyncobject"></a>IPSTX::GetSyncObject
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Startet eine Sitzung Synchronisierung und ruft die zugehörige **[IOSTX](iostxiunknown.md)** Schnittstelle ab. 
+Startet eine Synchronisierungssitzung und ruft die zugehörige **[IOSTX](iostxiunknown.md)** -Schnittstelle ab. 
   
 ```cpp
 HRESULT GetSyncObject( 
@@ -37,11 +37,11 @@ HRESULT GetSyncObject(
 
  _ppostx_
   
->  [out] Zeiger auf die **IOSTX** -Schnittstelle zu erhalten. 
+>  Out Zeiger auf die **IOSTX** -Schnittstelle abrufen. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Aufrufer muss sicherstellen, dass im gleiche Ordner nicht gleichzeitig auf mehreren Threads synchronisiert ist.
+Der Aufrufer muss sicherstellen, dass derselbe Ordner nicht gleichzeitig für mehrere Threads synchronisiert ist.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 027092f0-f2d6-49e8-a8d0-8926824953a2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 548ec33e39e181aba8a72b5325f3f426b9d51762
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 822b4164737aa6010ccce108b544410104ac023d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315470"
 ---
 # <a name="ipstoverride1getpersistedregistrations"></a>IPSTOVERRIDE1::GetPersistedRegistrations
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die Liste von Einträgen für den persönlichen Ordner (PST) Datei ab.
+Ruft die Liste der Registrierungen für die persönliche Ordner-Datei (PST) ab.
   
 ```cpp
 HRESULT GetPersistedRegistration(SPropValue **ppmval);
@@ -35,12 +35,12 @@ HRESULT GetPersistedRegistration(SPropValue **ppmval);
 
  _ppmval_
   
-> [in] Ein Zeiger auf einen Zeiger auf eine [SPropValue](spropvalue.md) -Struktur. Der Member UlPropTag diese Struktur ist vom Typ PT_MV_UNICODE, und das MVszW Element wird ein Array mit Null terminierte Unicode-Zeichenfolgen sein. Diese Zeichenfolgen sind Pfade zu DLLs für die Registrierung beibehalten wurde. 
+> in Ein Zeiger auf einen Zeiger auf eine [SPropValue](spropvalue.md) -Struktur. Das ulPropTag-Element dieser Struktur hat den Typ PT_MV_UNICODE, und der MVszW-Wert Member ist ein Array von null-terminierten Unicode-Zeichenfolgen. Diese Zeichenfolgen sind Pfade zu DLLs, für die die Registrierung beibehalten wurde. 
     
 > [!NOTE]
-> Unterstützung von ANSI PST-Dateien ist nicht implementiert. 
+> die PST-Unterstützung für ANSI ist nicht implementiert. 
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   

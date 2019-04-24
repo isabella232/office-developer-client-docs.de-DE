@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: ea8c003f-91d6-4641-aff9-fcf807150c6f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d32f5c7c25b2569a23bed77d48257f4d0394cb1f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9681a2af2997ad03b73ae07bc7bac05e5f0c780e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315463"
 ---
 # <a name="ipstoverride1overridepstdisablegrow"></a>IPSTOVERRIDE1::OverridePSTDisableGrow
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Hebt die Sperre persönlichen Ordner (PST) für eine Sitzung, die Richtlinie PSTDisableGrow überschreiben.
+Hebt die Sperre für eine persönliche Ordner-Datei (PST) für eine Sitzung auf und überschreibt die PSTDisableGrow-Richtlinie.
   
 ```cpp
 HRESULT OverridePSTDisableGrow();
 ```
 
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   

@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4664df83-cf81-36d4-189d-4a09be371638
-description: Eine Variable dieses Typs Daten enthält den Wert einer Eigenschaft, die einen variant-Datentyp ist.
-ms.openlocfilehash: c85af4bd4fefffb4fadf671bb7cf5b7f072d5e95
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Eine Variable dieses Datentyps enthält den Wert einer Eigenschaft, die einen Variant-Datentyp hat.
+ms.openlocfilehash: 124cfaef40e63d60e2e9c6681884bfb57a043dde
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316919"
 ---
 # <a name="acctvariant"></a>ACCT_VARIANT
 
-Eine Variable dieses Typs Daten enthält den Wert einer Eigenschaft, die einen variant-Datentyp ist.
+Eine Variable dieses Datentyps enthält den Wert einer Eigenschaft, die einen Variant-Datentyp hat.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -38,7 +38,7 @@ typedef struct
 
 _dwType_
   
-> Typ Variante:
+> Typ der Variante:
     
     - PT_LONG
     
@@ -46,16 +46,16 @@ _dwType_
     
     - PT_BINARY
     
-_dw_
+_DW_
   
-> DWORD-Wert von Variant-Wert.
+> DWORD-Wert von Variant.
     
-_pwsz_
+_Pwsz_
   
-> String-Wert von Variant-Wert.
+> Zeichenfolgenwert von Variant.
     
-_Papierkorb_
+_bin_
   
-> Binärer Wert der Variante.
+> Binärwert des Variant-Werts.
     
 

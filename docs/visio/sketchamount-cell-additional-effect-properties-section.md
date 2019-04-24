@@ -1,31 +1,31 @@
 ---
-title: SketchAmount Cell (Additional Effect Properties Section)
+title: SketchAmount Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7c7353b7-f28e-4004-bf13-6e9714fbed37
-description: Bestimmt die Menge des Distortion für einen Effekt Skizze als ganze Zahl zwischen 0 und 25.
-ms.openlocfilehash: d5ae954f2eab48722c48c9bc4b3f640403dbb3ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Verzerrung für einen skizzeneffekt als ganze Zahl zwischen 0 und 25.
+ms.openlocfilehash: fd9ee3390d05f24d81d9c6677160155b0f0f0d35
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314770"
 ---
-# <a name="sketchamount-cell-additional-effect-properties-section"></a>SketchAmount Cell (Additional Effect Properties Section)
+# <a name="sketchamount-cell-additional-effect-properties-section"></a>SketchAmount Cell (Additional Effect Properties section)
 
-Bestimmt die Menge des Distortion für einen Effekt Skizze als ganze Zahl zwischen 0 und 25. 
+Bestimmt die Verzerrung für einen skizzeneffekt als ganze Zahl zwischen 0 und 25. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|0  <br/> |Das Shape ist wirkungslos Skizze angewendet wird.  <br/> |
-|1-25  <br/> |Die Form angewendet wird, wobei die meisten Distortion, wird ein Wert von 1 und 25 Skizze Distortion hat die geringste.  <br/> |
+|0  <br/> |Auf die Form wurde kein skizzeneffekt angewendet.  <br/> |
+|1-25  <br/> |Die Form hat eine Skizzen Verzerrung, die auf Sie angewendet wurde, wobei der Wert 1 die meisten Verzerrungen und 25 die geringste ist.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **SketchAmount** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **SketchAmount** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

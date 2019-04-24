@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: c2af7516-3a97-4422-874d-b1e3a0d4f316
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3cd84e4ddb6d722d9f3de11d65b100d86e69ecae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e99cff77fe872018722395c53c605e4d8fabfdde
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321609"
 ---
 # <a name="imapiformmgrresolvemessageclass"></a>IMAPIFormMgr::ResolveMessageClass
 
@@ -25,7 +25,7 @@ ms.locfileid: "22571815"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Nachrichtenklasse in seiner Form innerhalb eines Containers Formular aufgelöst wird, und gibt ein Formular Informationen-Objekt für das Formular zurück.
+Löst eine Nachrichtenklasse in Ihrem Formular innerhalb eines Formular Containers auf und gibt ein Formular Informationsobjekt für dieses Formular zurück.
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -40,25 +40,25 @@ HRESULT ResolveMessageClass(
 
  _szMsgClass_
   
-> [in] Eine Zeichenfolge, die den Namen die Nachrichtenklasse aufgelöst wird.
+> in Eine Zeichenfolge, die die zu lösende Nachrichtenklasse benennt.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Nachrichtenklasse aufgelöst wird. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklasse steuert. Das folgende Flag kann festgelegt werden:
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachricht Klasse Zeichenfolgen, die eine genaue Übereinstimmung sollten aufgelöst werden.
+> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
     
  _pFolderFocus_
   
-> [in] Ein Zeiger auf den Ordner mit der Nachricht aufgelöst wird. Der Parameter _pFolderFocus_ kann NULL sein. 
+> in Ein Zeiger auf den Ordner, der die zu bearbeitende Nachricht enthält. Der _pFolderFocus_ -Parameter kann NULL sein. 
     
  _ppResult_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Formular zurückgegebenen Informationen-Objekt.
+> Out Ein Zeiger auf einen Zeiger auf ein zurückgegebenes Formular Informationsobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -66,21 +66,21 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die Nachrichtenklasse in der _SzMsgClass_ -Parameter übergeben stimmt nicht mit die Nachrichtenklasse für jedes Formular in der Formularbibliothek überein. 
+> Die Nachrichtenklasse, die im _szMsgClass_ -Parameter übergeben wird, stimmt nicht mit der Nachrichtenklasse für ein Formular in der Formularbibliothek überein. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormMgr::ResolveMessageClass** -Methode, um auf die Form in einem Formular Container eine Nachrichtenklasse zu beheben. Das Formular Informationen-Objekt zurückgegeben, die im Parameter _PpResult_ bietet weitere Zugriff auf die Eigenschaften des Formulars, das die angegebenen Nachrichtenklasse hat. 
+Formular Betrachter rufen die **IMAPIFormMgr:: ResolveMessageClass** -Methode auf, um eine Nachrichtenklasse in Ihr Formular innerhalb eines Formular Containers aufzulösen. Das im _ppResult_ -Parameter zurückgegebene Formular Informationsobjekt bietet weiteren Zugriff auf die Eigenschaften des Formulars, das über die angegebene Nachrichtenklasse verfügt. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Nachrichtenklasse zu einem Formular zu beheben, ein Formular Viewer übergibt den Namen der Nachrichtenklasse aufgelöst, z. B. " `IPM.HelpDesk.Software`". So erzwingen Sie die Auflösung genau sein (d. h., um auf eine Basisklasse der Nachrichtenklasse, wenn ein Formular genau übereinstimmenden Lösung zu verhindern Server ist nicht verfügbar), die Kennzeichen MAPIFORM_EXACTMATCH im _UlFlags_ -Parameter übergeben werden können. Wenn der Parameter _pFolderFocus_ NULL ist, führt der Nachrichtenklasse Auflösungsprozess keine Ordnercontainer Suche. 
+Um eine Nachrichtenklasse in ein Formular aufzulösen, übergibt ein Formular Betrachter den Namen der zu lösenden Nachrichtenklasse, beispielsweise " `IPM.HelpDesk.Software`". Um die Auflösung genau zu erzwingen (das heißt, um die Auflösung einer Basisklasse der Nachrichtenklasse zu verhindern, wenn ein genau übereinstimmender Formularserver nicht verfügbar ist), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden. Wenn der _pFolderFocus_ -Parameter NULL ist, durchsucht der Prozess der Nachrichtenklassen Auflösung keinen Ordner Container. 
   
-Die Reihenfolge der Container durchsucht, hängt von der Implementierung des Anbieters Bibliothek Formular ab. Der Formular Bibliothek Standardanbieter sucht zunächst den lokalen Container, und klicken Sie dann auf den Ordnercontainer für die übergebenen Ordner, den persönlichen Formular Container und schließlich Organisations-Container.
+Die Reihenfolge der gesuchten Container hängt von der Implementierung des Formularbibliothek Anbieters ab. Der Standardanbieter für Formularbibliotheken durchsucht zuerst den lokalen Container, dann den Ordner Container für den übergebenen Ordner, den persönlichen Formular Container und schließlich den Organisationscontainer.
   
-Nachrichtenklassennamen sind immer noch nie Unicode-ANSI-Zeichenfolgen.
+Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
   
-Die Klassen-ID für die Nachrichtenklasse aufgelöst wird als Teil des Formulars Informationen-Objekts zurückgegeben. Ein Formular Viewer sollte nicht auf der Annahme verwendet werden, dass die Klassen-ID in der OLE-Bibliothek erst vorhanden ist, nachdem der Formular-Viewer die [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md) -Methode oder die [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) -Methode aufgerufen hat. 
+Der Klassenbezeichner für die aufgelöste Nachrichtenklasse wird als Teil des Form Information-Objekts zurückgegeben. Ein Formular Betrachter sollte nicht davon ausgehen, dass der Klassenbezeichner in der OLE-Bibliothek vorhanden ist, bis die [IMAPIFormMgr::P repareform](imapiformmgr-prepareform.md) -Methode oder die [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) -Methode aufgerufen wurde. 
   
 ## <a name="see-also"></a>Siehe auch
 

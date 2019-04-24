@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a63c42cf-36af-466b-b41e-d6b53ce1c9fb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 611680db87c02b9370d6c1b3ac7a8d68b47f3050
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 07667558a21a9110d684164d2e6c143d6a519368
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309695"
 ---
 # <a name="imsgstoreopenentry"></a>IMsgStore::OpenEntry
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet einen Ordner oder eine Nachricht, und gibt einen Schnittstellenzeiger für den weiteren Zugriff. 
+Öffnet einen Ordner oder eine Nachricht und gibt einen Schnittstellenzeiger für den weiteren Zugriff zurück. 
   
 ```cpp
 HRESULT OpenEntry(
@@ -42,41 +42,41 @@ HRESULT OpenEntry(
 
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf das durch den Parameter _LpEntryID_ _._
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird _._
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des-Objekts zum Öffnen oder NULL. Wenn _LpEntryID_ auf NULL festgelegt ist, wird **OpenEntry** Stammordner für den Nachrichtenspeicher geöffnet. 
+> in Ein Zeiger auf die Eintrags-ID des zu öffnenden Objekts oder NULL. Wenn _lpEntryID_ auf NULL festgelegt ist **** , öffnet OpenEntry den Stammordner für den Nachrichtenspeicher. 
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle verwendet werden, den Zugriff auf die geöffnete Objekt darstellt. Bei Übergabe von NULL führt das Objekt des standard-Schnittstelle ([IMAPIFolder](imapifolderimapicontainer.md) für Ordner) und [IMessage](imessageimapiprop.md) für Nachrichten zurückgegeben wird. 
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf das geöffnete Objekt verwendet werden soll. Das übergeben von NULL-Ergebnissen in der Standardschnittstelle des Objekts ([IMAPIFolder](imapifolderimapicontainer.md) für Ordner und [IMessage](imessageimapiprop.md) für Nachrichten) wird zurückgegeben. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Werte können verwendet werden:
+> in Eine Bitmaske von Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Flags können verwendet werden:
     
 MAPI_BEST_ACCESS 
   
-> Fordert an, dass das Objekt geöffnet werden, mithilfe der maximale Netzwerkberechtigungen für den Benutzer und die maximale Clientzugriff Anwendung zulässig. Wenn der Client über Lese-/Schreibberechtigung verfügt, sollte beispielsweise das Objekt geöffnet werden mithilfe von Lese-/Schreibberechtigung für; Wenn der Client nur-Lese-Berechtigung verfügt, sollte das Objekt mithilfe von schreibgeschützt geöffnet werden. 
+> Fordert, dass das Objekt unter Verwendung der maximal für den Benutzer zulässigen Netzwerkberechtigungen und des maximalen Client Anwendungszugriffs geöffnet wird. Wenn der Client beispielsweise über Lese-/Schreibzugriff verfügt, sollte das Objekt mithilfe der Lese-/Schreibzugriff-Berechtigung geöffnet werden. Wenn der Client schreibgeschützte Berechtigung hat, sollte das Objekt mithilfe der Read-Only-Berechtigung geöffnet werden. 
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **OpenEntry** erfolgreich, möglicherweise beendet, bevor das Objekt an den aufrufenden Client vollständig verfügbar ist. Wenn das Objekt nicht verfügbar ist, kann die nachfolgenden Objekt Anrufen ein Fehler ausgelöst. 
+> Ermöglicht **** das erfolgreiche zurückgeben von OpenEntry, bevor das Objekt vollständig für den aufrufenden Client verfügbar ist. Wenn das Objekt nicht verfügbar ist, kann durch einen nachfolgenden Objektaufruf ein Fehler ausgelöst werden. 
     
 MAPI_MODIFY 
   
-> Anfragen Lese-/Schreibberechtigung. Standardmäßig werden Objekte mit Leseberechtigung geöffnet, und Clients sollte nicht verwendet werden, unter der Voraussetzung, die Lese-/Schreibzugriff, dass die Berechtigung erteilt wurde. 
+> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte mit Schreibschutz Berechtigung geöffnet, und Clients sollten nicht mit der Annahme arbeiten, dass Lese-/Schreibzugriff erteilt wird. 
     
  _lpulObjType_
   
-> [out] Ein Zeiger auf den Typ des Objekts geöffnet.
+> Out Ein Zeiger auf den Typ des geöffneten Objekts.
     
  _lppUnk_
   
-> [out] Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
+> Out Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -84,34 +84,34 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, ein schreibgeschütztes Objekt zu ändern oder auf ein Objekt zuzugreifen, für den der Benutzer nicht über ausreichende Berechtigungen verfügt.
+> Es wurde versucht, ein schreibgeschütztes Objekt zu ändern oder auf ein Objekt zuzugreifen, für das der Benutzer nicht über ausreichende Berechtigungen verfügt.
     
 MAPI_NO_CACHE
   
-> Wenn ein Speichers im Cache-Modus geöffnet wird, kann ein Client oder Dienstanbieter **IMsgStore::OpenEntry**, das MAPI_NO_CACHE-Flag zum Öffnen eines Elements oder einen Ordner auf dem remote-Speicher aufrufen. Wenn Sie den Nachrichtenspeicher mit dem MDB_ONLINE-Flag auf dem Remoteserver öffnen, müssen Sie nicht das Flag MAPI_NO_CACHE verwenden.
+> Wenn ein Speicher im Cache-Modus geöffnet wird, kann ein Client oder Dienstanbieter **IMsgStore:: OpenEntry**aufrufen und das MAPI_NO_CACHE-Flag festlegen, um ein Element oder einen Ordner im Remotespeicher zu öffnen. Wenn Sie den Nachrichtenspeicher mit dem MDB_ONLINE-Flag auf dem Remoteserver öffnen, müssen Sie das MAPI_NO_CACHE-Flag nicht verwenden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::OpenEntry** -Methode öffnet ein Ordner oder eine Nachricht und gibt einen Zeiger auf eine Schnittstelle, die für eine zusätzliche Access verwendet werden kann. 
+Die **IMsgStore:: OpenEntry** -Methode öffnet einen Ordner oder eine Nachricht und gibt einen Zeiger auf eine Schnittstelle zurück, die für weiteren Zugriff verwendet werden kann. 
   
 > [!IMPORTANT]
-> Beim Öffnen der Einträge im Ordner in einem öffentlichen Speicher, wie Ordner und Nachrichten, verwenden Sie anstelle von [IMAPISession::OpenEntry](imapisession-openentry.md) **IMsgStore::OpenEntry** . Dadurch wird die Funktion für Öffentliche Ordner ordnungsgemäß sichergestellt, wenn in einem Profil mehrere Exchange-Konten definiert sind. 
+> Beim Öffnen von Ordnereinträgen in einem öffentlichen Informationsspeicher wie Ordner und Nachrichten verwenden Sie **IMsgStore:: OpenEntry** anstelle von [IMAPISession:: OpenEntry](imapisession-openentry.md). Dadurch wird sichergestellt, dass öffentliche Ordner ordnungsgemäß funktionieren, wenn mehrere Exchange-Konten in einem Profil definiert sind. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Ordner und Nachrichten werden automatisch mit Leseberechtigung, geöffnet, es sei denn, Sie die Kennzeichen MAPI_MODIFY oder MAPI_BEST_ACCESS in der _UlFlags_ -Parameter festlegen. Festlegen einer dieser Flags garantiert keine bestimmte Art von Berechtigung. die Berechtigungen, die Sie erteilt werden, abhängig von der Nachricht Informationsdienst, Ihre Zugriffsebene und das Objekt ab. Rufen Sie zum Bestimmen der Zugriffsebene des geöffneten-Objekts, dessen **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md))-Eigenschaft ab.
+Ordner und Nachrichten werden automatisch mit Schreibschutz Berechtigung geöffnet, es sei denn, Sie legen das MAPI_MODIFY-oder MAPI_BEST_ACCESS-Flag im _ulFlags_ -Parameter fest. Durch Festlegen eines dieser Flags kann kein bestimmter Berechtigungstyp garantiert werden. die Berechtigungen, die Ihnen erteilt werden, hängen vom Nachrichtenspeicher Anbieter, der Zugriffsebene und dem Objekt ab. Um die Zugriffsebene des geöffneten Objekts zu bestimmen, rufen Sie die **PR_ACCESS_LEVEL** ([pidtagaccesslevel (](pidtagaccesslevel-canonical-property.md))-Eigenschaft ab.
   
-Obwohl **IMsgStore::OpenEntry** zum Öffnen eines beliebigen Ordners oder einer Nachricht verwendet werden können, ist es in der Regel schneller die [IMAPIContainer::OpenEntry](imapicontainer-openentry.md) -Methode verwenden, wenn Sie haben Zugriff auf den übergeordneten Ordner des Ordners oder Nachricht geöffnet werden soll. 
+Obwohl **IMsgStore:: OpenEntry** zum Öffnen von Ordnern oder Nachrichten verwendet werden kann, ist es in der Regel schneller, die [IMAPIContainer:: OpenEntry](imapicontainer-openentry.md) -Methode zu verwenden, wenn Sie Zugriff auf den übergeordneten Ordner des Ordners oder der Nachricht haben, der geöffnet werden soll. 
   
-Überprüfen Sie den Wert im _LpulObjType_ -Parameter bestimmt, ob der zurückgegebene Objekttyp ist, was Sie erwartet zurückgegeben. Wenn der Objekttyp nicht dem erwarteten Typ ist, wandeln Sie den Zeiger auf einen Zeiger des entsprechenden Typs aus dem _LppUnk_ -Parameter. Angenommen, wenn Sie einen Ordner öffnen, _LppUnk_ auf einen Zeiger vom Typ **LPMAPIFOLDER**umgewandelt.
+Überprüfen Sie den Wert, der im _lpulObjType_ -Parameter zurückgegeben wird, um zu bestimmen, ob der zurückgegebene Objekttyp Ihren Erwartungen entspricht. Wenn der Objekttyp nicht der erwartete Typ ist, wandeln Sie den Zeiger vom _lppUnk_ -Parameter in einen Zeiger des entsprechenden Typs um. Wenn Sie beispielsweise einen Ordner öffnen, werfen Sie _lppUnk_ in einen Zeiger vom Typ **LPMAPIFOLDER**.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |CallOpenEntry  <br/> |MFCMAPI (engl.) verwendet die **IMsgStore::OpenEntry** -Methode zum Öffnen des Objekts eines Eintrags-ID zugeordnet  <br/> |
+|MAPIFunctions. cpp  <br/> |CallOpenEntry  <br/> |MFCMAPI verwendet die **IMsgStore:: OpenEntry** -Methode, um das Objekt zu öffnen, das einer EINTRAGS-ID zugeordnet ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

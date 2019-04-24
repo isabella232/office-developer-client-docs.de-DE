@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 78edd549-d557-489a-85f5-adfb5c44a7d4
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 379fdc47f35fb183dd0bf551e421422abb106c0e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 105219fe430cd8746c3aa6cf5cd90629d5f72080
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316527"
 ---
 # <a name="imapisupportexpandrecips"></a>IMAPISupport::ExpandRecips
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Schließt eine Nachricht Empfängerliste bestimmten Verteilerlisten erweitern.
+Vervollständigt die Empfängerliste einer Nachricht und erweitert bestimmte Verteilerlisten.
   
 ```cpp
 HRESULT ExpandRecips(
@@ -38,45 +38,45 @@ HRESULT ExpandRecips(
 
  _lpMessage_
   
-> [in] Ein Zeiger auf die Nachricht mit der Empfängerliste verarbeitet werden.
+> in Ein Zeiger auf die Nachricht, die die Empfängerliste hat, die verarbeitet werden soll.
     
  _lpulFlags_
   
-> [out] Ein Zeiger auf eine Bitmaske aus Flags, die den Typ der Verarbeitung steuert, das auftritt. Die folgenden Kennzeichen können festgelegt werden:
+> Out Ein Zeiger auf eine Bitmaske von Flags, die die Art der Verarbeitung steuert. Die folgenden Flags können festgelegt werden:
     
 NEEDS_PREPROCESSING 
   
-> Die Nachricht muss vorverarbeitet werden, bevor es gesendet wird.
+> Die Nachricht muss vorverarbeitet werden, bevor Sie gesendet wird.
     
 NEEDS_SPOOLER 
   
-> Die MAPI-Warteschlange (anstelle der Adressbuchhierarchie, dem der Aufrufer eng verknüpft ist) muss die Nachricht zu senden.
+> Die MAPI-Warteschlange (anstelle des Transportanbieters, an den der Aufrufer eng gekoppelt ist) muss die Nachricht senden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Liste der Empfänger die Nachricht wurde erfolgreich verarbeitet.
+> Die Empfängerliste der Nachricht wurde erfolgreich verarbeitet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::ExpandRecips** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht Anbieter Aufrufen **ExpandRecips** um auffordern, MAPI, um die folgenden Aufgaben ausführen: 
+Die **IMAPISupport:: ExpandRecips** -Methode wird für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter rufen **ExpandRecips** auf, um MAPI aufzufordern, die folgenden Aufgaben auszuführen: 
   
-- Erweitern Sie bestimmte persönlichen Verteilerlisten, an die Empfänger der Komponente.
+- Erweitern Sie bestimmte persönliche Verteilerlisten zu ihren Komponenten Empfängern.
     
-- Ersetzen Sie alle Anzeigenamen, die geändert wurden mit den ursprünglichen Namen.
+- Ersetzen Sie alle Anzeigenamen, die mit den ursprünglichen Namen geändert wurden.
     
-- Doppelte Einträge zu kennzeichnen.
+- Markieren Sie alle doppelten Einträge.
     
-- Alle einmalige-Adressen aufgelöst werden. 
+- Lösen Sie alle einmaligen Adressen. 
     
-- Überprüfen Sie, ob die Nachricht vorverarbeitung benötigt, und wenn dies der Fall ist, legen Sie das Flag auf _LpulFlags_ auf NEEDS_PREPROCESSING zeigt. 
+- Überprüfen Sie, ob die Nachricht eine Vorverarbeitung erfordert, und legen Sie, falls dies der Fall ist, die Kennzeichnung fest, auf die durch _lpulFlags_ auf NEEDS_PREPROCESSING verwiesen wird. 
     
- **ExpandRecips** erweitert alle Verteilerlisten, die den messaging Adresstyp MAPIPDL aufweisen. 
+ **ExpandRecips** erweitert alle Verteilerlisten mit dem Nachrichten Adresstyp MAPIPDL. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie immer **ExpandRecips** als Teil der Verarbeitung von Nachrichten. Rufen Sie **ExpandRecips** eine der ersten Aufrufe in der Implementierung der [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode. 
+Rufen Sie **ExpandRecips** immer als Teil der Nachrichtenverarbeitung auf. Rufen Sie einen der ersten Aufrufe in der **ExpandRecips** -Implementierung der [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

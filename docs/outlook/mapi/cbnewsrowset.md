@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3b8b8d9f-33e1-45c3-b024-9afcaab8839c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f31bccb9c975bbbccb079e40526f6c16eda37474
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: de6836c036c1b8c80a030a8a49009b8899267aa0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317969"
 ---
 # <a name="cbnewsrowset"></a>CbNewSRowSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes, die für eine neue [SRowSet](srowset.md) Struktur zugeordnet werden, die eine angegebene Anzahl von Zeilen dargestellt durch [SRow](srow.md) Strukturen enthält. 
+Berechnet die Anzahl der Bytes, die für eine neue [SRowSet](srowset.md) -Struktur reserviert werden sollen, die eine angegebene Anzahl von Zeilen enthält, die durch [SRow](srow.md) -Strukturen dargestellt werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 CbNewSRowSet (_crow)
@@ -38,9 +38,9 @@ CbNewSRowSet (_crow)
 
 ## <a name="parameters"></a>Parameter
 
- __crow_
+ __Crow_
   
-> Anzahl der **SRow** Strukturen, die die Anzahl der Zeilen, die in die neue Struktur **' srowset '** eingeschlossen werden. 
+> Anzahl der **SRow** -Strukturen, die die Anzahl der Zeilen angeben, die in die neue **SRowSet** -Struktur eingeschlossen werden sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

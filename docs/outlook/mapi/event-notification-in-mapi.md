@@ -9,56 +9,56 @@ api_type:
 ms.assetid: 7b3b625b-6dea-4b12-99a9-152935bdfe39
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 30d4ad5e0fc1ecdc4c8eb06f75d39e38dd481269
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321396"
 ---
 # <a name="event-notification-in-mapi"></a>Ereignisbenachrichtigung in MAPI
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigung bei ist die Kommunikation des Informationsflusses zwischen zwei MAPI-Objekte. Registriert über eines der Objekte ein Client oder Dienstanbieter für die Benachrichtigung über eine Änderung oder einen Fehler, aufgerufen, ein Ereignis, die in dem anderen Objekt erfolgen kann. Nachdem das Ereignis auftritt, wird das erste Objekt ändern oder Fehler benachrichtigt. Das Objekt, das die Benachrichtigung empfangen, wird den Advise-Empfänger aufgerufen. das Objekt, die verantwortlich für die Benachrichtigung wird die Advise-Quelle bezeichnet.
+Ereignisbenachrichtigung ist die Kommunikation zwischen zwei MAPI-Objekten. Durch eines der Objekte registriert ein Client-oder Dienstanbieter die Benachrichtigung über eine Änderung oder einen Fehler, die als Ereignis bezeichnet wird, die im anderen Objekt erfolgen kann. Nachdem das Ereignis eintritt, wird das erste Objekt über die Änderung oder den Fehler benachrichtigt. Das Objekt, das die Benachrichtigung empfängt, wird als Advise-Senke bezeichnet. das für die Benachrichtigung zuständige Objekt wird als Advise-Quelle bezeichnet.
   
-Es gibt drei Typen von Advise Empfängerobjekten (alle Typen sind standard MAPI-Objekte):
+Es gibt drei Typen von Advise-Senke-Objekten (alle Typen sind Standard-MAPI-Objekte):
   
-- Empfehlen Sie Empfängerobjekten.   
-- Formular advise-Empfängerobjekten.  
-- Ansicht advise-Empfängerobjekten.
+- Advise-Objekte.   
+- Formular Advise Sink-Objekte.  
+- View Advise-Senke-Objekte.
     
-Informieren Sie die am häufigsten verwendeten Empfängerobjekten sind. Advise-Senken sind in der Regel von Clientanwendungen Adressbuch und Benachrichtigungen über Textnachrichten Store and Support erhalten implementiert die [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md) Schnittstelle. **IMAPIAdviseSink** enthält eine einzige Methode auf, [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md). Formular- und darauf hinzuweisen, dass senken seltener sind; Sie werden implementiert Erhalt von Benachrichtigungen zu Änderungen für benutzerdefinierte Formulare. Formular advise-senken Unterstützung der [IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md) senken Support advise-Schnittstelle und Anzeigen der [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md) Schnittstelle. Da die meisten Clients Einst advise-Empfängerobjekten, wird davon ausgegangen Sie, dass der Benachrichtigungen an Diskussionen mit Adressbuch und Benachrichtigungen über Textnachrichten Store statt Forms Benachrichtigungen verknüpft sind. Weitere Informationen zu Formularen Benachrichtigungen finden Sie unter [MAPI-Formulare Benachrichtigungen](mapi-forms-notifications.md) und [Schreiben von Formularcode Server](writing-form-server-code.md).
+Advise-Senke-Objekte sind der häufigste Typ. Advise-Senken werden in der Regel von Clientanwendungen implementiert, um Benachrichtigungen über Adressbuch-und Nachrichtenspeicher zu erhalten und die [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md) -Schnittstelle zu unterstützen. **IMAPIAdviseSink** enthält eine einzelne Methode, [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md). Formular-und Ansichts-Advise-Senken sind seltener; Sie werden implementiert, um Benachrichtigungen zu Änderungen an benutzerdefinierten Formularen zu erhalten. Form Advise-Senken unterstützen die [IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md) -Schnittstelle und View Advise-Senken unterstützen die [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md) -Schnittstelle. Da die meisten Clients standardmäßige Advise-Objekt Objekte implementieren, gehen Sie davon aus, dass sich die Diskussionen über Benachrichtigungen auf Adressbuch-und Nachrichtenspeicher Benachrichtigungen beziehen, statt auf Formular Benachrichtigungen. Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [MAPI](mapi-forms-notifications.md) -Formular Benachrichtigungen und [Schreiben von Formular Server Code](writing-form-server-code.md).
   
-Informieren Sie die Objekte implementiert werden, indem Dienstanbieter und MAPI-Quelle. Nicht alle Dienstanbieter unterstützen ereignisbenachrichtigung; Es ist optional, aber dringend empfohlen. Nachrichtenspeicher und Adressbucheinträge Anbieter Benachrichtigungen von Support-Objekt in der Regel für mehrere Objekte und Benachrichtigungen auf ihren Inhalt und Hierarchietabellen Tabelle. Transportanbieter unterstützen Benachrichtigungen nicht direkt. geschäftswichtige alternativer Methoden der Kommunikation mit Clients.
+Advise-Quellobjekte werden von Dienstanbietern und von MAPI implementiert. Nicht alle Dienstanbieter unterstützen Ereignisbenachrichtigungen; Sie ist optional, wird jedoch dringend empfohlen. Nachrichtenspeicher-und Adressbuchanbieter unterstützen in der Regelobjekt Benachrichtigungen für mehrere Objekte und Tabellen Benachrichtigungen in ihren Inhalts-und Hierarchietabellen. Transport Anbieter unterstützen keine Benachrichtigungen direkt; Sie setzen auf Alternative Kommunikationsmethoden mit Clients.
   
-Im Gegensatz zu Advise-senken empfehlen Sie, dass die Source-Objekten nicht über einen eindeutigen Objekttyp MAPI sind. Viele MAPI-Objekte, wie Nachrichtenspeicher und Tabellen, dauert die Rolle des Advise-Quelle. Eine Advise-Datenquelle ist jedes MAPI-Objekt mit den folgenden Funktionen:
+Im Gegensatz zu Advise-Senken sind Quellobjekte kein eindeutiger MAPI-Objekttyp. Viele MAPI-Objekte, wie Nachrichtenspeicher und Tabellen, können die Rolle der Advise-Quelle übernehmen. Eine Advise-Quelle ist ein MAPI-Objekt, das folgende Aktionen ausführt:
   
-- Implementiert eine **Advise** -Methode, um Registrierungen Benachrichtigung zu erhalten. 
+- Implementiert eine **Advise** -Methode, um Benachrichtigungs Registrierungen zu erhalten. 
     
-- Implementiert eine **Unadvise** -Methode zum absagen Benachrichtigung zu erhalten. 
+- Implementiert eine **Unadvise** -Methode, um Benachrichtigungs Abbruch zu erhalten. 
     
-- Generiert Benachrichtigungen des entsprechenden Typs auf die entsprechenden Advise-Empfänger-Objekte, die durch den Aufruf ihrer **IMAPIAdviseSink::OnNotify** Methoden registriert. 
+- Generiert Benachrichtigungen des entsprechenden Typs für die entsprechenden Advise-Empfängerobjekte, die sich registriert haben, indem **Sie Ihre IMAPIAdviseSink:: OnNotify** -Methoden aufrufen. 
     
-Clients, die implementiert werden ausschließlich Empfängerobjekten **Advise** aufrufen, wenn sie möchten, registrieren Sie sich für eine Benachrichtigung, in den meisten Fällen in die Eintrags-ID des Objekts mit der Registrierung erfolgen soll, und **Unadvise** übergeben, wenn sie abbrechen möchten die Registrierung. Clients übergeben Sie einen Parameter an **anweisen** , die verschiedene Typen von Ereignissen gibt an, die sie überwachen möchten. **Advise** gibt eine Zahl ungleich NULL, die eine erfolgreiche Verbindung zwischen der Advise-Empfänger und Advise-Quelle darstellt. 
+Clients, die Advise-Senke-Objekte implementieren, rufen **Advise** auf, wenn Sie sich für eine Benachrichtigung registrieren möchten, in den meisten Fällen übergeben Sie die Eintrags-ID **** des Objekts, mit dem die Registrierung erfolgen soll, und deaktivieren Sie, wenn Sie den Registrierung. Clients übergeben einen Parameter, **** der angibt, welche der verschiedenen Ereignistypen überwacht werden sollen. **Advise** gibt eine Zahl ungleich NULL zurück, die eine erfolgreiche Verbindung zwischen der Advise-Senke und der Advise-Quelle darstellt. 
   
-Vor dem Aufruf von **anweisen**, können Clients bestimmen, ob eine Nachricht Speicheranbieter Benachrichtigung Mobilgeräts unterstützt, die das Flag STORE_NOTIFY_OK in den Nachrichtenspeicher **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) festgelegt ist -Eigenschaft. Besteht keine Möglichkeit für Clients, um feststellen, ob ein Adressbuchanbieter Benachrichtigungen unterstützt. Clients müssen versuchen, registrieren, und wenn der Versuch ein Fehler auftritt, sie können davon ausgegangen, dass Benachrichtigungen nicht unterstützt werden.
+Vor dem Aufrufen von **Advise**können Clients ermitteln, ob ein Nachrichtenspeicher Anbieter eine Benachrichtigung unterstützt, indem Sie überprüfen, dass das STORE_NOTIFY_OK-Flag im **PR_STORE_SUPPORT_MASK** des Nachrichtenspeichers ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) festgelegt ist. Eigenschaft. Es gibt keine Möglichkeit für Clients, vorab zu bestimmen, ob ein Adressbuchanbieter Benachrichtigungen unterstützt. Clients müssen sich registrieren, und wenn der Versuch fehlschlägt, können Sie davon ausgehen, dass Benachrichtigungen nicht unterstützt werden.
   
-Tritt ein Ereignis für die Clientidentität registriert hat, benachrichtigt die Advise-Quelle Advise-Empfänger, indem er seine [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode mit einer Benachrichtigung-Datenstruktur Informationen über das Ereignis enthält. Implementierung von **OnNotify** Advise-Empfänger kann als Antwort auf die Benachrichtigung, wie das Aktualisieren von Daten im Arbeitsspeicher oder Aktualisieren einer Bildschirmanzeige Aufgaben ausführen. 
+Tritt ein Ereignis ein, für das ein Client registriert wurde, benachrichtigt die Advise-Quelle die Advise-Senke, indem [Sie die IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode mit einer Benachrichtigungsdatenstruktur aufruft, die Informationen über das Ereignis enthält. Die Implementierung von onNotify durch **** eine Advise-Senke kann Aufgaben als Reaktion auf die Benachrichtigung ausführen, beispielsweise das Aktualisieren von Daten im Arbeitsspeicher oder das Aktualisieren einer Bildschirmanzeige. 
   
-Dienstanbieter implementieren die Unterstützung für Benachrichtigungen manuell oder der Hilfe in drei **IMAPISupport** Methoden nutzen können: [IMAPISupport::Subscribe](imapisupport-subscribe.md), [IMAPISupport::Unsubscribe](imapisupport-unsubscribe.md)und [IMAPISupport::Notify ](imapisupport-notify.md). Die Methoden **Abonnieren** und **kündigen** benachrichtigungsregistrierung behandeln und für Anbieter für die Registrierung aufgehoben; die Methode **Benachrichtigen** verarbeitet sendende Benachrichtigungen bei Bedarf. 
+Dienstanbieter können die Unterstützung für Benachrichtigungen manuell implementieren oder die Hilfe in drei **IMAPISupport** -Methoden nutzen: [IMAPISupport:: subscribe](imapisupport-subscribe.md), [IMAPISupport:: unsubscribe](imapisupport-unsubscribe.md)und [IMAPISupport:: notify ](imapisupport-notify.md). Die **subscribe** - **** und die Unsubscribe-Methode behandeln die Benachrichtigungs Registrierung und-Deregistrierung für Anbieter. die **Notify** -Methode verarbeitet bei Bedarf das Senden von Benachrichtigungen. 
   
-Für die Verwendung der Methoden des Support-Objekts für benachrichtigungsregistrierung-Dienstanbieter [IMAPISupport::Subscribe](imapisupport-subscribe.md) in ihren **Advise** -Methoden aufrufen und übergeben Sie **Abonnieren** den Advise-Empfängerzeiger, den Clients an **Advise**übergeben. Wenn eine Eintrags-ID als Eingabeparameter an einer Datenquelle Advise übergeben wird, von Dienstanbietern zu einem binären Schlüssel konvertieren. **Subscribe** erstellt eine eindeutige Verbindung Reihe, und diese Nummer, die an die Clients Dienstanbieter zurückgeben kann. Dienstanbieter können des Clients freigeben advise-Empfängerzeiger jederzeit nach Abschluss der **Advise** -Anruf. 
+Um die Support-Objektmethoden für die Benachrichtigungs Registrierung zu verwenden, rufen Dienstanbieter [IMAPISupport:: subscribe](imapisupport-subscribe.md) in Ihren **Advise** -Methoden auf und geben den Advise-Senke-Zeiger an, den die Clients an **Advise**übermitteln. **** Wenn eine Eintrags-ID als Eingabeparameter übergeben wird, um eine Advise-Quelle anzugeben, werden Sie von Dienstanbietern in einen Binär Schlüssel konvertiert. **Subscribe** erstellt eine eindeutige Verbindungsnummer, und diese Nummer wird von Dienstanbietern an Clients zurückgegeben. Dienstanbieter können den Objektzeiger des Advise-Objekts des Clients jederzeit freigeben, nachdem der **Advise** -Aufruf abgeschlossen wurde. 
   
-Wenn Clients **Unadvise** Abbrechen eine Registrierung Dienstanbieter aufrufen entweder die verweiszählung auf des Clients verringern advise-Empfängerzeiger, oder rufen Sie **kündigen** , um diesen Vorgang auszuführen. 
+Wenn Clients **Unadvise** aufrufen, um eine Registrierung abzubrechen, verringern die Dienstanbieter entweder den Verweiszähler auf den Zeiger der Advise-Senke des Clients oder rufen das **Abonnement** ab, um dasselbe zu tun. 
   
-Wenn eine Benachrichtigung generiert wird, führen Sie Dienstanbieter interne Verarbeitung, bezieht sich auf die Benachrichtigung, die eine [Benachrichtigung](notification.md) Struktur initialisiert, indem Sie alle nicht verwendeten Member auf 0 (null) festlegen. Dieses Verfahren für die Initialisierung der **Benachrichtigung** Struktur hilft Clients kleiner, schneller und weniger fehleranfällig **OnNotify** Implementierungen zu erstellen. 
+Wenn es Zeit ist, eine Benachrichtigung zu generieren, führen Dienstanbieter jede interne Verarbeitung aus, die sich auf die Benachrichtigung [](notification.md) bezieht, und Initialisiert eine Benachrichtigungsstruktur, indem alle nicht verwendeten Member auf NULL festgelegt werden. Diese Technik für die Initialisierung **** der Benachrichtigungsstruktur kann Clients helfen, kleinere, schnellere und weniger fehleranfällige OnNotify-Implementierungen zu erstellen. **** 
   
-Die folgende Abbildung zeigt der Kommunikation zwischen Empfängerobjekten darauf hinzuweisen, advise-Source-Objekten und MAPI. MAPI ist beteiligt, nur, wenn die Advise-Quelle die **IMAPISupport** -Methoden für die Benachrichtigung Unterstützung aufruft. 
+Die folgende Abbildung zeigt die Kommunikation zwischen den Advise-Senke-Objekten, Advise-Quellobjekten und MAPI. MAPI ist nur dann beteiligt, wenn die Advise-Quelle die **IMAPISupport** -Methoden für die Benachrichtigungsunterstützung aufruft. 
   
 **Ereignisbenachrichtigungsaufrufe**
   
-![Ereignisbenachrichtigungsaufrufe] (media/amapi_51.gif "Ereignisbenachrichtigungsaufrufe")
+![Ereignis Benachrichtigungsaufrufe] (media/amapi_51.gif "Ereignis Benachrichtigungsaufrufe")
   
-(Bei Verwendung der AdviseSink.h und AdviseSink.cpp-Dateien) MFCMAPI (engl.) **CAdviseSink** -Klasse implementiert das Advise-Empfängerobjekt für alle Anrufe **Advise**. Weitere Informationen zu MFCMAPI (engl.) finden Sie unter [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md) und [MFCMAPI (engl.)](https://go.microsoft.com/fwlink/?LinkId=124154).
+Die MFCMAPI- **CAdviseSink** -Klasse (mit den Dateien AdviseSink. h und AdviseSink. cpp) implementiert das Advise-Senke-Objekt für alle Aufrufe von **Advise**. Weitere Informationen zu MFCMAPI finden Sie unter [MfcMapi als Code Beispiel](mfcmapi-as-a-code-sample.md) und [MfcMapi](https://go.microsoft.com/fwlink/?LinkId=124154).
   
 

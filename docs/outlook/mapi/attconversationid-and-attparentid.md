@@ -7,29 +7,29 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: bed36900-e44d-434b-a4f2-d10f2d6f70da
-description: 'Zuletzt geändert: 12 März 2013'
-ms.openlocfilehash: 14b93a952e4776716c333dc730144b55bcc61259
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte Änderung: 12. März 2013'
+ms.openlocfilehash: c5880aefe7c2dba2e5e4c5405aae2020bb86c711
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318417"
 ---
 # <a name="attconversationid-and-attparentid"></a>attConversationID und attParentID
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Fenster für Arbeitsgruppen 3.1 e-Mail-Unterhaltung Schlüssel ist eine Textzeichenfolge. MAPI-entspricht einem Binärwert. Um Abwärtskompatibilität zu ermöglichen, die TNEF-Implementierung Binärdaten in Text konvertiert und Endzeichen Null hinzugefügt.
+Der Schlüssel Windows für Workgroups 3,1-e-Mail-Unterhaltung ist eine Textzeichenfolge. Die MAPI-Entsprechung ist ein Binärwert. Um die Abwärtskompatibilität zu gewährleisten, wandelt die TNEF-Implementierung die Binärdaten in Text um und fügt ein endgültiges NULL-Zeichen hinzu.
   
 > [!NOTE]
-> Die entsprechenden Eigenschaften in MAPI, dem diese Attribute TNEF zugeordnet sind, PR_CONVERSATION_KEY und PR_PARENT_KEY, sind veraltet in Microsoft Exchange Server: Verwendung von **PR_CONVERSATION_KEY**, die kanonische PidTagConversationKey [ Eigenschaft](pidtagconversationkey-canonical-property.md), nur für die Suche nach **IPM in Outlook beibehalten. Nachrichten-Managers** Nachrichten. 
+> Die entsprechenden Eigenschaften in MAPI, denen diese TNEF-Attribute zugeordnet sind, PR_CONVERSATION_KEY und PR_PARENT_KEY, sind in Microsoft Exchange Server veraltet: Verwendung von **PR_CONVERSATION_KEY**, der [kanonischen pidtagconversationkey ( -Eigenschaft](pidtagconversationkey-canonical-property.md), bleibt in Outlook nur für die Suche nach **IPM. MessageManager** -Nachrichten. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **PR_CONVERSATION_KEY** -Eigenschaft ist die andernfalls veraltet Vorläufer der **PR_CONVERSATION_INDEX**, [Kanonische-Eigenschaft PidTagConversationIndex](pidtagconversationindex-canonical-property.md) und **PR_CONVERSATION_TOPIC**, [Eigenschaftpidtagconversationtopic kanonische Eigenschaft](pidtagconversationtopic-canonical-property.md), die stattdessen verwendet werden soll.
+Die **PR_CONVERSATION_KEY** -Eigenschaft ist der andernfalls veraltete Vorläufer der **PR_CONVERSATION_INDEX**, [PidTagConversationIndex kanonischen Eigenschaft](pidtagconversationindex-canonical-property.md) und **PR_CONVERSATION_TOPIC**, [eigenschaftpidtagconversationtopic kanonischen -Eigenschaft](pidtagconversationtopic-canonical-property.md), die stattdessen verwendet werden sollte.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IPM-Teilstruktur](ipm-subtree.md)
+- [IPM-unterStruktur](ipm-subtree.md)
 - [MAPI-Spezialordner](mapi-special-folders.md)
 

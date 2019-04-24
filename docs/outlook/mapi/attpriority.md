@@ -7,26 +7,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ff63b5b5-fde8-4e5b-a5be-b19e805ac7ed
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d59faeb303806dcc1368eb46f2bcf4bfa893e0e2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c900f3a4d16b5a71cdff1973b7fd5b4bc46fd4c4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318151"
 ---
 # <a name="attpriority"></a>attPriority
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Nachrichtenprioritäten werden TNEF-Werte für die Abwärtskompatibilität wie folgt zugeordnet:
+MAPI-Nachrichtenprioritäten werden TNEF-Werten aus Gründen der Abwärtskompatibilität wie folgt zugeordnet:
   
 |**Priority**|**MAPI-Wert**|**TNEF-Wert**|
 |:-----|:-----|:-----|
 |normal  <br/> |-1  <br/> |3  <br/> |
 |hohe  <br/> |0  <br/> |2  <br/> |
-|Niedrig  <br/> |1  <br/> |1  <br/> |
+|mit niedriger  <br/> |1  <br/> |1  <br/> |
    
 

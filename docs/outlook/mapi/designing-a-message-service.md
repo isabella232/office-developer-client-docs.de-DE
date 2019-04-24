@@ -1,5 +1,5 @@
 ---
-title: Entwerfen einer Messagingdiensts
+title: Entwerfen eines Nachrichtendiensts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,38 +8,38 @@ api_type:
 - COM
 ms.assetid: 32627ebb-547f-4fac-a406-e7243ec5521b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b572ebcec0a33d2134f4cf19b88e3132cbd47117
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 19a8a939685c440901f3f57d72baf673a579e590
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316723"
 ---
-# <a name="designing-a-message-service"></a>Entwerfen einer Messagingdiensts
+# <a name="designing-a-message-service"></a>Entwerfen eines Nachrichtendiensts
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bevor Sie beginnen, dem Schreiben von Code, um Ihre Nachrichtendienst zu unterstützen, ist es wichtig, einen Entwurf erstellen. Beheben Sie die folgenden Probleme in Ihrer Entwurfsprozess:
+Bevor Sie mit dem Schreiben von Code beginnen, um den Nachrichtendienst zu unterstützen, ist es wichtig, einen Entwurf zu erstellen. Beheben Sie die folgenden Probleme in Ihrem Entwurfsprozess:
   
-1. Bestimmen Sie, wie viele Dienstanbieter in der Nachrichtendienst enthalten sein sollen. Enthalten Sie nur verwandte-Dienstanbieter (d. h., Providers, mit denen die selben Nachrichtensystem zusammenarbeiten) in Ihrem Dienst. Damit nicht zusammenhängenden-Dienstanbietern gehören nicht in der gleichen Message-Dienst. Verwenden Sie das Profil für die Integration von unabhängigen Dienstanbietern und Message-Dienste.
+1. Legen Sie fest, wie viele Dienstanbieter in den Nachrichtendienst aufgenommen werden sollen. Schließen Sie nur Verwandte Dienstanbieter (also Anbieter, die mit demselben Messagingsystem arbeiten) in ihren Dienst ein. Nicht verwandte Dienstanbieter gehören nicht in den gleichen Nachrichtendienst. Verwenden Sie das Profil für die Integration nicht zusammenhängender Dienstanbieter und Nachrichtendienste.
     
-2. Bestimmen Sie, welche Art von Dienstanbietern in den Dienst enthalten sein sollen. Die meisten Messge Dienste enthalten einen Anbieter der einzelnen die Ressourcentypen. D. h., hat der normalen Messagingdiensts eine Adressbuchanbieter, eine Nachricht Speicheranbieter und eine Adressbuchhierarchie.
+2. Legen Sie fest, welche Art von Dienstanbietern in den Nachrichtendienst aufgenommen werden soll. Die meisten Messge-Dienste verfügen über einen Anbieter der einzelnen allgemeinen Typen. Das heißt, der typische Nachrichtendienst verfügt über einen Adressbuchanbieter, einen Nachrichtenspeicher Anbieter und einen Transportanbieter.
     
-3. Bestimmen, wie viele DLLs sollte die Messagingdiensts enthalten. Die Anzahl von DLLs, die ein Nachrichtendienst verwendet hängt von folgendem ab:
+3. Bestimmen Sie, wie viele DLLs den Nachrichtendienst enthalten sollen. Die Anzahl der DLLs, die ein Nachrichtendienst verwendet, hängt von den folgenden:
     
-   - Der Grad der Komplexität, die Sie als Writer des Diensts Nachricht bereit sind, zu behandeln sind.
+   - Der Grad an Komplexität, den Sie als Verfasser des Nachrichtendiensts bereit sind.
     
-   - Der Typ der Dienstanbieter in der Nachrichtendienst.
+   - Der Typ der Dienstanbieter im Nachrichtendienst.
     
-   - Die Beziehung, die der Dienst möglicherweise mit einem anderen Messagingdiensts muss.
+   - Die Beziehung, die der Nachrichtendienst möglicherweise mit einem anderen Nachrichtendienst hat.
     
-   Da MAPI nur über einen Einstiegspunkt für jeden Anbietertyp speichert, nehmen Sie mehrere Anbieter des gleichen Typs nicht in einer einzigen DLL. Wenn es sinnvoll, mehrere Anbieter eines Typs enthalten ist, in separaten DLLs zu implementieren, oder haben sie eine Eintrag Funktion freizugeben. Eine andere Option besteht darin, implementieren Sie verwandte Message Dienste oder Message-Dienste, die die gleiche Installation verwenden können, und Konfigurationscode und Seitenverweisen auf dieselbe DLL zeigen-Funktion in einer DLL.
+   Da MAPI nur einen Einstiegspunkt für jeden Anbietertyp speichert, dürfen Sie nicht mehrere Anbieter desselben Typs in eine einzelne DLL einbeziehen. Wenn es sinnvoll ist, mehrere Anbieter eines Typs einzuschließen, implementieren Sie Sie entweder in separaten DLLs, oder lassen Sie Sie eine Einstiegspunktfunktion freigeben. Eine weitere Option ist die Implementierung zugehöriger Nachrichtendienste oder Nachrichtendienste, die in der Lage sind, denselben Installations-und Konfigurationscode und dieselbe DLL-Einstiegspunktfunktion in einer DLL zu verwenden.
     
-   Wenn möglich, ganz einfach, und verwenden Sie eine DLL, die die Implementierung der der Dienstanbieter in der Nachrichtendienst und der gesamte Code zum Installieren und Konfigurieren des Diensts Nachricht enthält. Wenn dies nicht möglich ist, können Sie eine DLL für die Installation und Konfiguration von Code und entweder eine einzelne DLL für alle-Dienstanbieter oder eine DLL für jeden Anbieter implementieren.
+   Wenn möglich, halten Sie es einfach, und verwenden Sie eine DLL, die die Implementierung aller Dienstanbieter im Nachrichtendienst und den gesamten Code zum Installieren und Konfigurieren des Nachrichtendiensts enthält. Wenn dies nicht möglich ist, können Sie eine DLL für den Installations-und Konfigurationscode und entweder eine einzelne DLL für alle Dienstanbieter oder eine DLL für jeden Anbieter implementieren.
     
-4. Bestimmen Sie einen Namen für den Dienst DLL oder DLLs. 
+4. Bestimmen Sie einen Namen für die Nachrichtendienst-DLL oder DLLs. 
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Nachrichtendienstimplementierung](message-service-implementation.md)
+- [Nachrichtendienst Implementierung](message-service-implementation.md)
 

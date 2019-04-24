@@ -1,32 +1,32 @@
 ---
-title: ReplaceCopyCells Cell (Change Shape Behavior Section)
+title: Zelle "ReplaceCopyCells" (Abschnitt "Shape-Verhalten ändern")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2f36aefd-da49-47ea-9b90-2fa1a2298849
-description: Gibt eine Liste der Zellen im ShapeSheet, die während ein Shape Ersetzungsvorgang aus einer alten Form zum Ersatz-Shape kopiert werden.
-ms.openlocfilehash: 1e3b5e4dbc29372f75b7a7ed8013a7dd82d94e1d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine Liste der Zellen im ShapeSheet an, die während einer Form Ersetzung aus einem alten Shape in die Ersatzform kopiert werden.
+ms.openlocfilehash: f2a7908a623c861d0284821b2d8ae5fc71690685
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320174"
 ---
-# <a name="replacecopycells-cell-change-shape-behavior-section"></a>ReplaceCopyCells Cell (Change Shape Behavior Section)
+# <a name="replacecopycells-cell-change-shape-behavior-section"></a>Zelle "ReplaceCopyCells" (Abschnitt "Shape-Verhalten ändern")
 
-Gibt eine Liste der Zellen im ShapeSheet, die während ein Shape Ersetzungsvorgang aus einer alten Form zum Ersatz-Shape kopiert werden. 
+Gibt eine Liste der Zellen im ShapeSheet an, die während einer Form Ersetzung aus einem alten Shape in die Ersatzform kopiert werden. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Das master-Shape die Ersetzung muss einen Funktionsaufruf **DEPENDSON** in der Zelle **ReplaceCopyCells** enthalten, wobei jedes Argument in der Funktion einen Verweis auf eine Zelle ist. Betroffenen Zellen werden von der alten Form mit dem Shape kopiert, die eine Form Ersetzungsoperation, unabhängig davon, wo sie sich im ShapeSheet sind ergibt. 
+Die Master-Form der Ersetzung muss einen **DependsOn** -Funktionsaufruf in der **ReplaceCopyCells** -Zelle enthalten, wobei jedes Argument in der Funktion ein Verweis auf eine Zelle ist. Diese Zellen werden von der alten Form in die Form kopiert, die aus einem Shape-Ersetzungsvorgang resultiert, unabhängig davon, wo Sie sich im ShapeSheet befinden. 
   
-Werte und/oder Formeln, die von anderen Zellen referenziert werden im resultierenden Shape kopiert. Wenn das resultierende Shape die referenzierte Zelle nicht vorhanden ist, enthält die kopierte Zelle nur den Wert. 
+Werte und/oder Formeln, die auf andere Zellen verweisen, werden in die resultierende Form kopiert. Wenn die resultierende Form nicht über die Zelle referenziert wird, enthält die kopierte Zelle nur den Wert. 
   
-Verweise in der Zelle **ReplaceCopyCells** außer Kraft setzen Schutz auf Zellen gemäß Definition im Abschnitt " **Protection** " und die **ReplaceLockFormat**, **ReplaceLockShapeData**und **ReplaceLockText** Zellen festgelegt. 
+Verweise in der **ReplaceCopyCells** Zellen Außerkraftsetzung für Zellen wie im Abschnitt **Protection** und die Zellen **ReplaceLockFormat**, **ReplaceLockShapeData**und **ReplaceLockText** definiert. 
   
-Wenn Sie einen Verweis auf die Zelle **ReplaceCopyCells** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **ReplaceCopyCells** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

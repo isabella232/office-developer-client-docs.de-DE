@@ -9,39 +9,39 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f8354d0d-0ce2-fb33-ddf7-611a2c24a8be
 description: Bestimmt, ob die Seite im Hoch- oder im Querformat gedruckt wird.
-ms.openlocfilehash: 2adc7dadcb3702e6c5307bb569b2ae1df7aee54e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f7e73bea5120d878a1b2dbf553a66b349d247fce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315183"
 ---
-# <a name="printpageorientation-cell-print-properties-section"></a>PrintPageOrientation Cell (Print Properties Section)
+# <a name="printpageorientation-cell-print-properties-section"></a>Zelle "PrintPageOrientation" (Abschnitt "Print Properties")
 
 Bestimmt, ob die Seite im Hoch- oder im Querformat gedruckt wird.
   
 |**Wert**|**Orientation**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Druckereinstellungen übernehmen  <br/> |**visPPOSameAsPrinter** <br/> |
-| 1  <br/> | Hochformat  <br/> |**visPPOPortrait** <br/> |
-|2  <br/> |Querformat  <br/> |**visPPOLandscape** <br/> |
+| 1  <br/> | Portrait  <br/> |**visPPOPortrait** <br/> |
+|2  <br/> |Landschaft  <br/> |**visPPOLandscape** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Beim Einfügen neuer Seiten in einem Dokument ist die Standardeinstellung die Einstellung in der aktiven Seite.
+Wenn Sie neue Seiten in ein Dokument einfügen, ist diese Einstellung standardmäßig die Einstellung auf der aktiven Seite.
   
-Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PrintPageOrientation  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
-| Zellenindex:  <br/> |**visPrintPropertiesPageOrientation** <br/> |
+| Zeilenindex:  <br/> |**visPrintPropertiesPageOrientation** <br/> |
    
 

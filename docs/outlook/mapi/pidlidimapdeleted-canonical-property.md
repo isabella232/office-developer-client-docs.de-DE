@@ -1,5 +1,5 @@
 ---
-title: PidLidImapDeleted (kanonische Eigenschaft)
+title: Kanonische Pidlidimapdeleted (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,47 +11,47 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee929306-8962-494d-bc47-9b4069f01267
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3008422420dc9bd02f32cbb6900ffe4ebba38877
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 790aa363522b9562f8f06c0806c87bba3816f566
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319943"
 ---
-# <a name="pidlidimapdeleted-canonical-property"></a>PidLidImapDeleted (kanonische Eigenschaft)
+# <a name="pidlidimapdeleted-canonical-property"></a>Kanonische Pidlidimapdeleted (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Internet Mail Access Protocol (IMAP)-Elementen, die zum Löschen markiert sind.
+Kennzeichnet IMAP-Elemente (Internet Mail Access Protocol), die zum Löschen markiert sind.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidImapDeleted  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008570  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
+|Long-ID (Deckel):  <br/> |0x00008570  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |IMAP  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn festgelegt auf einen anderen Wert, der das Element ist wurden zum Löschen markiert.
+Bei Festlegung auf einen Wert ungleich NULL wurde das Element zum Löschen markiert.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,5 +63,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

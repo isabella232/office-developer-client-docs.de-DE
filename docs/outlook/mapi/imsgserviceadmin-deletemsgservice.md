@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3a6b34eb-9d46-488f-8d02-91b27c35de67
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e0d3d669982bee309901f913612ac1fb1622e60a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6cef03e33abab81a407698b73a007f247ef88194
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309989"
 ---
 # <a name="imsgserviceadmindeletemsgservice"></a>IMsgServiceAdmin::DeleteMsgService
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Löscht eine Message Service aus einem Profil.
+Löscht einen Nachrichtendienst aus einem Profil.
   
 ```cpp
 HRESULT DeleteMsgService(
@@ -37,9 +37,9 @@ HRESULT DeleteMsgService(
 
  _lpuid_
   
-> [in] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu löschenden Nachrichtendienst enthält. 
+> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu löschenden Nachrichtendienst enthält. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -47,33 +47,33 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die auf den _Lpuid_ **MAPIUID** stimmt nicht mit einer vorhandenen Messagingdiensts überein. 
+> Die **MAPIUID** , auf die durch _lpuid_ verwiesen wird, stimmt nicht mit einem vorhandenen Nachrichtendienst überein. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgServiceAdmin::DeleteMsgService** -Methode löscht eine Message Service aus einem Profil. **DeleteMsgService** entfernt alle Profil Abschnitte im Zusammenhang mit den Dienst. 
+Die **IMsgServiceAdmin::D eletemsgservice** -Methode löscht einen Nachrichtendienst aus einem Profil. **DeleteMsgService** entfernt alle Profilabschnitte im Zusammenhang mit dem Nachrichtendienst. 
   
- **DeleteMsgService** führt die folgenden Schritte aus, um den Dienst zu löschen: 
+ **DeleteMsgService** führt die folgenden Schritte aus, um den Nachrichtendienst zu löschen: 
   
-1. Ruft die Messagingdiensts Eintrag Point-Funktion mit dem _UlContext_ -Parameter auf MSG_SERVICE_DELETE festgelegt werden, bevor die Abschnitte Profil entfernt werden. Dadurch wird den Dienst dienstspezifische Aufgaben ausgeführt. 
+1. Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_DELETE festgelegt ist, bevor die Profilabschnitte entfernt werden. Dadurch kann der Dienst dienstspezifische Aufgaben ausführen. 
     
-2. Löscht den Dienst an.
+2. Löscht den Nachrichtendienst.
     
-3. Löscht die Messagingdiensts Profilabschnitt.
+3. Löscht den Profil Abschnitt des Nachrichtendiensts.
     
-Die Messagingdiensts Eintrag Point-Funktion wird nicht erneut aufgerufen, nachdem der Dienst gelöscht wurde.
+Die Einstiegspunktfunktion des Nachrichtendiensts wird nicht erneut aufgerufen, nachdem der Dienst gelöscht wurde.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Zum Abrufen der **MAPIUID** -Struktur für den Dienst zu löschen, Abrufen die Spalte **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) aus der Nachrichtendienst Zeile in der Tabelle der Dienste. Weitere Informationen finden Sie unter dem Verfahren in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode. 
+Um die **MAPIUID** -Struktur für den zu löschenden Nachrichtendienst abzurufen, rufen Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Eigenschaftsspalte aus der Zeile des Nachrichtendiensts in der Nachrichtendienst Tabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode beschriebenen Prozedur. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDeleteSelectedItem  <br/> |MFCMAPI (engl.) verwendet die **IMsgServiceAdmin::DeleteMsgService** -Methode, um die ausgewählte dienstanwendung zu löschen.  <br/> |
+|MsgServiceTableDlg. cpp  <br/> |CMsgServiceTableDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin::D-eletemsgservice** -Methode, um den ausgewählten Dienst zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

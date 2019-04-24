@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die MAPI-Client-Anwendung
+title: Übersicht über die MAPI-Client Anwendung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: ad2e1f2d-57c3-4fb5-9e0f-db51640df84d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 12fb03ed5a165592113f49a202f777b0f301736d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 100d1339ade8e5983c89695afbd85592cc2a4e43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318970"
 ---
-# <a name="mapi-client-application-overview"></a>Übersicht über die MAPI-Client-Anwendung
+# <a name="mapi-client-application-overview"></a>Übersicht über die MAPI-Client Anwendung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine MAPI-Client-Anwendung ist eine Anwendung, die die MAPI-Programmierschnittstelle verwendet. Clientanwendungen implementieren messaging Aufgaben entweder als ihren primären oder sekundären Fokus. Messaging-Clientanwendungen, wie Anwendungen, die senden und Empfangen von e-Mails, die Implementierung der Nachrichtenübermittlung als ihre primäre Fokus. Für nicht-messaging-Clientanwendungen wie Inventar oder Konfiguration Applikationen ist messaging eines sekundären Features.
+Eine MAPI-Clientanwendung ist eine beliebige Anwendung, die die MAPI-Programmierschnittstelle verwendet. Client Anwendungen implementieren Messagingaufgaben entweder als primären oder sekundären Fokus. Messaging-Clientanwendungen, beispielsweise Anwendungen, die e-Mails senden und empfangen, implementieren Messaging als primären Fokus. Für nicht-Messaging-Clientanwendungen wie Inventar-oder Konfigurationsanwendungen ist Messaging ein sekundäres Feature.
   
-Messaging Aktivitäten kann, beispielsweise eine Textverarbeitungsdokument-Anwendung enthalten, die einen Befehl **Senden** , in dessen im Menü **Datei** auf Dokumente gesendet werden können, Microsoft Office Outlook-e-Mail-, Arbeit Fluss Automation Programme und Bulletin Board-Dienste verfügt. 
+Zu den Messaging Aktivitäten gehört beispielsweise eine Textverarbeitungsanwendung mit einem Befehl " **senden** " im Menü " **Datei** ", um die Übermittlung von Dokumenten, Microsoft Office Outlook-e-Mail, Workflow-Automatisierungsprogramme und Bulletin Board-Dienste zu ermöglichen. 
   
-Clientanwendungen können entweder den Benutzer zum Erstellen einer interaktiven Umgebung oder ausgeführt werden, ohne dass ein Benutzer in einer automatisierten Umgebung enthalten. Obwohl MAPI eine Reihe von häufig verwendeten Dialogfeldern mit der standard-Benutzeroberfläche bereitstellt, müssen Clientanwendungen keiner Benutzeroberfläche. Tatsächlich kann alle Verarbeitung in der Anwendung behandelt werden, wenn Sie möchten. Ein Beispiel für eine automatisierte Clientanwendung wäre eine Inventory Management-Anwendung, die mit Elementen eines bestimmten Typs an standard Empfänger in regelmäßigen Abständen Route programmiert ist.
+Client Anwendungen können den Benutzer entweder dazu verwenden, eine interaktive Umgebung zu erstellen oder ohne einen Benutzer in einer automatisierten Umgebung zu arbeiten. Obwohl MAPI eine Reihe allgemeiner Dialogfelder mit der standardmäßigen Benutzeroberfläche bereitstellt, ist es nicht erforderlich, dass Clientanwendungen eine Benutzeroberfläche darstellen. Tatsächlich kann die gesamte Verarbeitung in der Anwendung verarbeitet werden, wenn Sie möchten. Ein Beispiel für eine automatisierte Clientanwendung wäre eine Inventur Verwaltungsanwendung, die so programmiert ist, dass Elemente eines bestimmten Typs regelmäßig an Standardempfänger weitergeleitet werden.
   
 ## <a name="see-also"></a>Siehe auch
 

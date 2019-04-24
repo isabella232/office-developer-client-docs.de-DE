@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer Dienstanbieteranmeldung
+title: Implementieren der Dienstanbieter Anmeldung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,61 +9,61 @@ api_type:
 ms.assetid: 3d3c309f-fe60-43a9-beda-16b09ec769db
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 533c00a0c994e7dfc5adc476899553bc39a2a9ab
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310087"
 ---
-# <a name="implementing-service-provider-logon"></a>Implementieren einer Dienstanbieteranmeldung
+# <a name="implementing-service-provider-logon"></a>Implementieren der Dienstanbieter Anmeldung
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Aufrufen eine Methode in Ihrem Anbieterobjekt Beginn des Anmeldevorgangs mithilfe des Mauszeigers, mit dem Sie von Ihrem Eintrag Point-Funktion zurückgegeben. Die Methode hängt wie folgt auf den Typ des vom-Dienstanbieter:
+MAPI Ruft eine Methode in Ihrem Provider-Objekt auf, um den Anmeldevorgang mithilfe des Zeigers zu beginnen, den Sie von der Einstiegspunktfunktion zurückgeben. Je nach Typ des Dienstanbieters variiert die Methode wie folgt:
   
-- [IABProvider::Logon](iabprovider-logon.md) für adressbuchanbietern implementierte 
+- [IABProvider:: Anmeldung](iabprovider-logon.md) für Adressbuchanbieter 
     
-- [IMSProvider::Logon](imsprovider-logon.md) für Nachricht-Anbieter 
+- [IMSProvider:: Anmeldung](imsprovider-logon.md) für Nachrichtenspeicher Anbieter 
     
-- [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) für Transportanbieter 
+- [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md) für Transportanbieter 
     
-Führen Sie die folgenden Aufgaben in jegliches Logon-Methode, die Sie implementieren:
+Führen Sie die folgenden Aufgaben in der von Ihnen implementierten Anmeldemethode aus:
   
-1. Erhöhen Sie die Anzahl der Verweise auf die Support-Objekt, das als Eingabeparameter übergeben wird, durch dessen [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode aufrufen. 
+1. Inkrementieren Sie die Verweisanzahl für das Support Objekt, das als Eingabeparameter übergeben wird, indem Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode aufrufen. 
     
-2. Rufen Sie die des Unterstützungsobjekts [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) -Methode zum Zugriff auf Ihr Profilabschnitt. 
+2. Rufen Sie die [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) -Methode des Support Objekts auf, um auf Ihren Profil Abschnitt zuzugreifen. 
     
-3. Rufen Sie den Profilabschnitt [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode, um die folgenden Eigenschaften festlegen: 
+3. Rufen Sie die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des profile-Abschnitts auf, um die folgenden Eigenschaften festzulegen: 
     
   - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
   - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
-  - **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
+  - **PR_PROVIDER_DISPLAY** ([Pidtagproviderdisplay (](pidtagproviderdisplay-canonical-property.md))
     
-  - **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))
+  - **PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md))
     
   > [!NOTE]
-  > Versuchen Sie nicht den Profil Eigenschaften des Abschnitts **PR_RESOURCE_FLAGS** oder **PR_PROVIDER_DLL_NAME** festgelegt. Bei der Anmeldung sind diese Eigenschaften schreibgeschützt. 
+  > Versuchen Sie nicht, die **PR_RESOURCE_FLAGS** -oder **PR_PROVIDER_DLL_NAME** -Eigenschaften des profilbereichs festzulegen. Bei der Anmeldung sind diese Eigenschaften schreibgeschützt. 
   
-4. Überprüfen Sie, dass die Eigenschaften für die Konfiguration benötigten entweder im Profil gespeichert werden oder vom Benutzer verfügbar sind. Weitere Informationen zum Überprüfen der Konfigurations finden Sie unter [Überprüfen der Dienstkonfiguration Anbieter](verifying-service-provider-configuration.md).
+4. Stellen Sie sicher, dass die Eigenschaften, die Sie für die Konfiguration benötigen, entweder im Profil gespeichert sind oder vom Benutzer zur Verfügung stehen. Weitere Informationen zum Überprüfen der Konfiguration finden Sie unter [verifyIng Service Provider Configuration](verifying-service-provider-configuration.md).
     
-5. Rufen Sie die Support-Objekt [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) -Methode, um eine eindeutige Kennung oder [MAPIUID](mapiuid.md), registrieren, wenn der Anbieter einen Address Book oder einer Nachricht-Anbieter ist. Transportanbieter registrieren **MAPIUID** Strukturen, wenn MAPI ihre [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode aufruft. Weitere Informationen zum Registrieren einer **MAPIUID**finden Sie unter [Registrieren Service Provider eindeutige Bezeichner](registering-service-provider-unique-identifiers.md).
+5. Rufen Sie die [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md) -Methode des Support Objekts auf, um einen eindeutigen Bezeichner oder [MAPIUID](mapiuid.md)zu registrieren, wenn es sich bei Ihrem Anbieter um ein Adressbuch oder einen Nachrichtenspeicher Anbieter handelt. Transport Anbieter registrieren **MAPIUID** -Strukturen, wenn MAPI Ihre [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode aufruft. Weitere Informationen zum Registrieren eines **MAPIUID**finden Sie unter [Registrieren von eindeutigen Bezeichnern des Dienstanbieters](registering-service-provider-unique-identifiers.md).
     
-6. Instanziieren Sie ein Objekt Anmeldung und mit einem der folgenden Werte zurück:
+6. Instanziieren Sie ein LOGON-Objekt, und geben Sie mit einem der folgenden Werte zurück:
     
-  - S_OK erfolgreichen Anmeldung an.
+  - S_OK, um eine erfolgreiche Anmeldung anzuzeigen.
     
-  - Um anzugeben, dass eine oder mehrere der die Konfigurationseigenschaften MAPI_E_UNCONFIGURED waren nicht verfügbar.
+  - MAPI_E_UNCONFIGURED, um anzugeben, dass mindestens eine der Konfigurationseigenschaften nicht verfügbar war.
     
-  - MAPI_E_USER_CANCEL, um anzugeben, dass der Benutzer das Dialogfeld Konfiguration abgebrochen verursacht Konfigurationseigenschaften nicht verfügbar zu sein.
+  - MAPI_E_USER_CANCEL, um anzugeben, dass der Benutzer das Konfigurationsdialogfeld abgebrochen hat, sodass die Konfigurationseigenschaften nicht verfügbar sind.
     
-  - MAPI_E_FAILONEPROVIDER, um anzugeben, dass der Anbieter nicht konfiguriert werden konnte, aber die MAPI, unabhängig davon verwendet werden dürfen. Anmeldemethoden sollte diesen Wert, um eine ein nicht schwerwiegender Fehler, beispielsweise wenn der Anbieter ist ein Kennwort erforderlich und kann nicht für sie Benutzer auffordern, da die Benutzeroberfläche deaktiviert ist melden zurückgegeben. 
+  - MAPI_E_FAILONEPROVIDER, um anzugeben, dass der Anbieter nicht konfiguriert werden konnte, dass MAPI jedoch unabhängig davon verwendet werden sollte. Anmeldemethoden sollten diesen Wert zurückgeben, um einen nicht schwerwiegenden Fehler zu melden, beispielsweise wenn der Anbieter ein Kennwort erfordert und den Benutzer nicht dazu auffordern kann, da die Benutzeroberfläche deaktiviert ist. 
     
-Die obigen Liste der Vorgänge wird eine minimale Implementierung für eine Service Provider Logon-Methode beschrieben. Sie können zusätzliche Funktionen bei Bedarf einschließen. Einige Anbieter rufen beispielsweise [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) zum Aktualisieren der Tabelle "Status" in ihre Logon (Methode). 
+Die vorangehende Aufgabenliste beschreibt eine Mindestimplementierung für eine Dienstanbieter-Anmeldemethode. Sie können bei Bedarf zusätzliche Funktionalitäten hinzufügen. Einige Anbieter rufen beispielsweise [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) auf, um die Statustabelle in ihrer Anmeldemethode zu aktualisieren. 
   
 > [!NOTE]
-> Um bei der Anmeldung die beste Leistung zu erzielen, vermeiden Sie [IMAPISupport::PrepareSubmit](imapisupport-preparesubmit.md) oder [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)aufrufen. Bevor dieser Anrufe können und die Steuerung an Ihre Logon (Methode) zurück, muss die MAPI-Warteschlange gestartet werden. 
+> Um die beste Leistung zur Anmeldezeit zu erzielen, müssen Sie entweder [IMAPISupport::P reparesubmit](imapisupport-preparesubmit.md) oder [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md)aufrufen. Bevor diese Aufrufe abgeschlossen und die Steuerung an Ihre Anmeldemethode zurückgegeben werden können, muss der MAPI-Spooler gestartet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

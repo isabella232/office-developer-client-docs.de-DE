@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 0dec535d-d48f-39a5-97d5-0bd109134b3b
-description: Die Eigenschaften der Zeitzone, PidLidAppointmentTimeZoneDefinitionEndDisplay, PidLidAppointmentTimeZoneDefinitionRecur und PidLidAppointmentTimeZoneDefinitionStartDisplay sind binär benannte Eigenschaften, von denen jedes enthält einen Datenstrom, der zugeordnet ist die beibehaltenen Format einer TZDEFINITION Struktur.
+description: Die Zeitzoneneigenschaften Pidlidappointmenttimezonedefinitionenddisplay (, Pidlidappointmenttimezonedefinitionrecur (und Pidlidappointmenttimezonedefinitionstartdisplay (sind binäre benannte Eigenschaften, die jeweils einen Stream enthalten, der dem dauerhaftes Format einer TZDEFINITION-Struktur.
 ms.openlocfilehash: f94b751a55aa852c962eebe5d46968e9e622e315
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316975"
 ---
 # <a name="about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property"></a>Informationen zur Persistenz von TZDEFINITION für einen Stream, um ein Commit zu einer binären Eigenschaft durchzuführen
 
-Die Eigenschaften der Zeitzone, [PidLidAppointmentTimeZoneDefinitionEndDisplay](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx), [PidLidAppointmentTimeZoneDefinitionRecur](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)und [PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx) sind binäre benannte Eigenschaften, von denen jedes enthält einen Datenstrom, der die beibehaltenen Format einer [TZDEFINITION](tzdefinition.md) Struktur zugeordnet ist. 
+Die Zeitzoneneigenschaften [pidlidappointmenttimezonedefinitionenddisplay (](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx), [pidlidappointmenttimezonedefinitionrecur (](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)und [pidlidappointmenttimezonedefinitionstartdisplay (](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx) sind binäre benannte Eigenschaften, die jeweils enthält einen Stream, der dem beibehaltenen Format einer [TZDEFINITION](tzdefinition.md) -Struktur zugeordnet ist. 
   
-In diesem Thema wird ein little-endian-Format, die auf eine der drei binäre Eigenschaften commit für beim Speichern von **TZDEFINITION** in ein Stream-Objekt verwendet werden kann. Verwenden Sie das gleiche endian-Format in ein Parser interpretiert einen Streamwert, der von einem der folgenden Eigenschaften abgerufen werden. 
+In diesem Thema wird ein kleines Endian-Format beschrieben, das beim Speichern von **TZDEFINITION** in einem Stream verwendet werden kann, um eine der drei binären Eigenschaften zu übernehmen. Verwenden Sie das gleiche Endian-Format in einem Parser, um einen Datenstromwert zu interpretieren, der von einer dieser Eigenschaften abgerufen wurde. 
   
 ```cpp
 BYTE  bMajorVersion;    // breaking change
@@ -45,21 +45,21 @@ if (TZDEFINITION_FLAG_VALID_KEYNAME)
    SYSTEMTIME  stDaylightDate;       // time to switch to daylight time
 ```
 
-Die Nummer der Hauptversion wird verwendet, um stellen eine wichtige ändern. Clients, die mit die Hauptversionsnummer nicht vertraut sind, sollten die-Eigenschaft behandeln, sofern er nicht vorhanden ist. Schreiben die Struktur Clients sollten die Konstante **TZ_BIN_VERSION_MAJOR**angeben. 
+Die Hauptversionsnummer wird verwendet, um eine unterbrechende Änderung vorzunehmen. Clients, die mit der Hauptversionsnummer nicht vertraut sind, sollten die Eigenschaft so behandeln, als ob Sie nicht vorhanden ist. Clients, die die Struktur schreiben, sollten die Konstante **TZ_BIN_VERSION_MAJOR**angeben. 
   
-Die Nummer der Nebenversion wird für die Erweiterbarkeit verwendet. Clients, die mit der Nummer der Nebenversion nicht vertraut sind, sollten die Daten lesen, die sie verstehen, und überspringen die Daten, die jeder Regel oder in der gesamten Stream-Objekt angefügt werden soll möglicherweise. Schreiben die Struktur Clients sollten die Konstante **TZ_BIN_VERSION_MINOR**angeben. 
+Die Nebenversionsnummer wird zur Erweiterbarkeit verwendet. Clients, die mit der Nebenversionsnummer nicht vertraut sind, sollten die Daten lesen, die Sie verstehen, und die Daten überspringen, die möglicherweise jeder Regel oder dem Gesamtdaten Strom angefügt werden. Clients, die die Struktur schreiben, sollten die Konstante **TZ_BIN_VERSION_MINOR**angeben. 
   
-Wenn ein Parser nicht die Hauptversion der Kopfzeile verstehen, muss Sie nicht den Rest der Struktur lesen und Verhalten, als ob die Daten nicht vorhanden ist. Wenn ein Parser nicht die Nebenversion der Kopfzeile verstehen, sollte **CbHeader** verwenden, um die Teile, die nicht erkannt und Advance, die Teile des Stream-Objekts lesen, die es versteht ignorieren. 
+Wenn ein Parser die Hauptversion der Kopfzeile nicht versteht, sollte er nicht den Rest der Struktur lesen und sich Verhalten, als ob die Daten fehlen. Wenn ein Parser die Nebenversion des Headers nicht versteht, sollte er **cbHeader** verwenden, um die Teile zu ignorieren, die er nicht versteht, und um die Teile des Streams zu lesen, die er versteht. 
   
-Der Wert der **wFlags** ist immer **TZDEFINITION_FLAG_VALID_KEYNAME**. Der Name des Schlüssels weist eine maximale Größe von **MAX_PATH**. 
+Der Wert von **wFlags** ist immer **TZDEFINITION_FLAG_VALID_KEYNAME**. Der Schlüsselname hat eine maximale Größe von **MAX_PATH**. 
   
-Wenn ein Parser die Hauptversion einer Regel nicht erkannt wird, sollte der Client die Regel ignoriert und **CbRule** verwenden, um die Regel der nächsten zu wechseln. Wenn ein Parser die Nebenversion einer Regel nicht erkannt wird, sollte der Client nur die Teile der Regel analysieren, die es versteht. 
+Wenn ein Parser die Hauptversion einer Regel nicht erkennt, sollte der Client die Regel ignorieren und **cbRule** verwenden, um zur nächsten Regel zu wechseln. Wenn ein Parser die Nebenversion einer Regel nicht erkennt, sollte der Client nur die Teile der Regel analysieren, die er versteht. 
   
-Wenn eine **TZDEFINITION** -Struktur in einem Stream-Objekt gespeichert, sollten ein Parser keine Informationen zu schreiben, die nicht erkannt werden. 
+Wenn Sie eine **TZDEFINITION** -Struktur in einem Stream beibehalten, sollte ein Parser nicht versuchen, Informationen zu schreiben, die er nicht versteht. 
   
-Die maximale Anzahl von Regeln lautet 1024.
+Die maximale Anzahl von Regeln ist 1024.
   
-Beachten Sie, dass die Struktur [TZREG](tzreg.md) hier anders beibehalten wird, als wenn alleine beibehalten, also desselben Codes verwendet werden kann, es zu analysieren. 
+Beachten Sie, dass die [TZREG](tzreg.md) -Struktur hier unterschiedlich gespeichert wird, als bei Beibehaltung allein, sodass derselbe Code nicht zum Analysieren verwendet werden kann. 
   
 ## <a name="see-also"></a>Siehe auch
 

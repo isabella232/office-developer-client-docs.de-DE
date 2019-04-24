@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlDefineBinaryName
 keywords:
-- XlDefineBinaryName-Funktion [excel 2007]
+- xlDefineBinaryName-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: e3e8f91b-cc31-4f09-9941-f950ae96820a
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 14515cc262ea398a9f200c0de3a1f6b64c758b3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3c7fc4f6b6fc7179c1ca84043895273b2781f8b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310213"
 ---
 # <a name="xldefinebinaryname"></a>xlDefineBinaryName
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Verwendet, um ein beständiger Speicher für eine **XltypeBigData** **XLOPER**verteilen/ **XLOPER12**. Mit einem definierten Namen für die binäre Daten werden mit der Arbeitsmappe gespeichert und namentlich jederzeit zugegriffen werden können. Weitere Informationen finden Sie unter "Binary Namen Bereich Einschränkung" unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md).
+Wird verwendet, um persistenten Speicher für ein **xltypeBigData** **XLOPER**/ -**XLOPER12**zu reservieren. Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen aufgerufen werden. Weitere Informationen finden Sie unter "Beschränkung des binären Namensbereichs" in [bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlDefineBinaryName, 0, 2, LPXLOPER12 pxName, LPXLOPER12 pxData);
@@ -30,15 +30,15 @@ Excel12(xlDefineBinaryName, 0, 2, LPXLOPER12 pxName, LPXLOPER12 pxData);
 
 ## <a name="parameters"></a>Parameter
 
- _pxName_ (**XltypeStr**)
+ _pxName_ (**xltypeStr**)
   
-Eine Zeichenfolge zur Angabe der Name der Daten. Die Zeichenfolge ist, gelten die gleichen Einschränkungen wie definierte Namen benennen.
+Eine Zeichenfolge, die den Namen der Daten angibt. Die Zeichenfolge unterliegt denselben Benennungseinschränkungen wie definierte Namen.
   
- _pxData_ (**XltypeBigData**)
+ _pxData_ (**xltypeBigData**)
   
-Bigdata-Struktur, die die zu speichernden Daten angibt. Wenn Sie diese Funktion aufrufen, sollte das **LpbData** Mitglied der **Bigdata** -Struktur zeigen Sie auf die Daten für die der Namen definiert wird, und der **CbData** Member sollte die Länge der Daten in Bytes enthalten. 
+Eine Struktur, die die zu speichernden Daten angibt. Wenn Sie diese Funktion aufrufen, sollte das **lpbData** -Element der Struktur von **gdata** auf die Daten verweisen, für die der Name definiert wird, und das **cbData** -Element sollte die Länge der Daten in Byte enthalten. 
   
-Wenn das Argument _PxData_ nicht angegebenen (**XltypeMissing**) ist, wird die benannte Zuweisung von _PxName_ angegebenen gelöscht. 
+Wenn das _pxData_ -Argument nicht angegeben wird (**xltypeMissing**), wird die durch _pxName_ angegebene benannte Zuordnung gelöscht. 
   
 ## <a name="see-also"></a>Siehe auch
 

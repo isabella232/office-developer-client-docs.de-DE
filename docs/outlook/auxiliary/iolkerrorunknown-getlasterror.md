@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f332de3-470d-9bc2-0c65-684bb58bcd7a
-description: Ruft eine Meldungszeichenfolge für den angegebenen Fehler.
-ms.openlocfilehash: 7b00392cdf65d1d4990f2231769e5126c9ae26dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft eine Meldungszeichenfolge für den angegebenen Fehler ab.
+ms.openlocfilehash: 4d2aa3a7513687484988921734eb4c0e6f91226b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321882"
 ---
 # <a name="iolkerrorunknowngetlasterror"></a>IOlkErrorUnknown::GetLastError
 
-Ruft eine Meldungszeichenfolge für den angegebenen Fehler. 
+Ruft eine Meldungszeichenfolge für den angegebenen Fehler ab. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkErrorUnknown](iolkerrorunknown.md).
+Siehe [IOlkErrorUnknown](iolkerrorunknown.md).
   
 ```cpp
 HRESULT IOlkErrorUnknown::GetLastError(  
@@ -32,17 +32,17 @@ HRESULT IOlkErrorUnknown::GetLastError(
 
 ## <a name="parameters"></a>Parameter
 
-_Personalwesen_
+_hr_
   
-> [in] Der Fehlercode nachzuschlagen.
+> in Der Fehlercode, nach dem gesucht werden soll.
     
 _ppwszError_
   
-> [out] Die Fehlermeldung, die entspricht, *hr* . 
+> Out Die Fehlermeldung, die *HR* entspricht. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |E_INVALIDARG  <br/> |Mindestens ein Argument ist ungültig.  <br/> |

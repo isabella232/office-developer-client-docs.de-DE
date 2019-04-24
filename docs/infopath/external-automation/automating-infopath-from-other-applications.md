@@ -1,28 +1,28 @@
 ---
-title: Automatisieren von InfoPath aus anderen Programmen
+title: Automatisieren von InfoPath aus anderen Anwendungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Automatisierung [Infopath 2007] externen, Automatisieren von InfoPath 2007 InfoPath 2007, automatisieren aus anderen Programmen
+- Automatisierung [InfoPath 2007], extern, Automatisieren von InfoPath 2007, InfoPath 2007, Automatisieren von anderen Anwendungen
 localization_priority: Normal
 ms.assetid: c82daa2d-59d2-44d0-9e82-40483df6dad0
-description: In diesem Abschnitt werden die primären Interopassembly von Microsoft InfoPath und XML-Interop-Assemblys und deren Verwendung zugehörigen Typen und Member zum Automatisieren von InfoPath aus externen Anwendungen mithilfe von verwaltetem Code.
-ms.openlocfilehash: 5534fcc73970107baaacdced7cfc3be8396a42a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Abschnitt werden die primären Interop-und XML-Interop-Assemblys von Microsoft InfoPath sowie deren Typen und Member zum Automatisieren von InfoPath aus externen Anwendungen mithilfe von verwaltetem Code erläutert.
+ms.openlocfilehash: b6618dbe838446555920bf9e79c07712bc66fdda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310178"
 ---
-# <a name="automating-infopath-from-other-applications"></a>Automatisieren von InfoPath aus anderen Programmen
+# <a name="automating-infopath-from-other-applications"></a>Automatisieren von InfoPath aus anderen Anwendungen
 
-In diesem Abschnitt werden die primären Interopassembly von Microsoft InfoPath und XML-Interop-Assemblys und deren Verwendung zugehörigen Typen und Member zum Automatisieren von InfoPath aus externen Anwendungen mithilfe von verwaltetem Code.
+In diesem Abschnitt werden die primären Interop-und XML-Interop-Assemblys von Microsoft InfoPath sowie deren Typen und Member zum Automatisieren von InfoPath aus externen Anwendungen mithilfe von verwaltetem Code erläutert.
 
-- [Über die Microsoft Office InfoPath Primary Interop Assembly](about-the-microsoft-office-infopath-primary-interop-assembly.md): Beschreibt die Microsoft Office InfoPath primären Interop-Assembly und des Objektmodells für die externe Automatisierung Softwareentwicklern.
+- [Informationen zur primären Interop-Assembly von Microsoft Office InfoPath](about-the-microsoft-office-infopath-primary-interop-assembly.md): Beschreibt die primäre Interop-Assembly von Microsoft Office InfoPath und das Objektmodell für die externe Automatisierung.
     
-- [Über die InfoPath XML-Interop-Assembly](about-the-infopath-xml-interop-assembly.md): Beschreibt die InfoPath XML Interop-Assembly und des Objektmodells für die Verwendung in externe Automatisierung Applications Softwareentwicklern.
+- [Informationen zur InfoPath-XML-Interop-Assembly](about-the-infopath-xml-interop-assembly.md): Beschreibt die InfoPath-XML-Interop-Assembly und das Objektmodell, das für die Verwendung in externen Automatisierungsanwendungen bereitgestellt wird.
     
-- [Szenarios für die externe Automatisierung und Beispiele](external-automation-scenarios-and-examples.md): Beschreibt allgemeine externe Automatisierungsszenarien und Beispiele.
+- [Externe Automatisierungsszenarien und-Beispiele](external-automation-scenarios-and-examples.md): Beschreibt allgemeine Szenarien und Beispiele für die externe Automatisierung.
     
 

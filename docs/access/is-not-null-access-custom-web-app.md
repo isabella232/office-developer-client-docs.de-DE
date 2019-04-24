@@ -8,18 +8,18 @@ ms.assetid: b941a0c7-9753-4920-bb6d-cbba94ba9422
 description: Bestimmt, ob ein angegebener Ausdruck NULL ist.
 localization_priority: Priority
 ms.openlocfilehash: fe6a0fe4f182a1385304b783e7cfaaf515f732d4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311137"
 ---
 # <a name="is-not-null-access-custom-web-app"></a>IS [NOT] NULL (benutzerdefinierte Access-Web-App)
 
 Bestimmt, ob ein angegebener Ausdruck NULL ist.
   
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 

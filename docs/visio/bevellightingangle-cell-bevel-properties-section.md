@@ -1,26 +1,26 @@
 ---
-title: BevelLightingAngle Cell (Bevel Properties Section)
+title: Zelle "BevelLightingAngle" (Abschnitt "Fase Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 537f5100-a8cf-4e29-81a5-bb71a80a7178
-description: Bestimmt den Winkel der Blitz in Bezug auf die Abschrägung in Grad.
-ms.openlocfilehash: 85610b40010664f30360f2b82252a31fa4129a17
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den Blitzwinkel in Grad.
+ms.openlocfilehash: 984cae54d8a688b96642552355e9e1d011f4f9b9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315806"
 ---
-# <a name="bevellightingangle-cell-bevel-properties-section"></a>BevelLightingAngle Cell (Bevel Properties Section)
+# <a name="bevellightingangle-cell-bevel-properties-section"></a>Zelle "BevelLightingAngle" (Abschnitt "Fase Properties")
 
-Bestimmt den Winkel der Blitz in Bezug auf die Abschrägung in Grad. 
+Bestimmt den Blitzwinkel in Grad. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **BevelLightingAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **BevelLightingAngle** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

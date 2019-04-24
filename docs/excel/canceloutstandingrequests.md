@@ -7,18 +7,18 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0de9d4e2-eb3f-40e7-aa24-f430892eb9ec
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 65d4257037b18c8fa68cabe0c08091ec67343fa5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 882458ab096cbced8e0635dab65fe0b1d680388f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310997"
 ---
 # <a name="canceloutstandingrequests"></a>CancelOutstandingRequests
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Informiert den Clusterconnector eine Excel-Berechnung abgebrochen wurde, und daher alle ausstehenden Funktionsaufrufe in dieser Sitzung sowie abgebrochen werden kann (und dass Excel davon ausgehen, dass Rückrufe durch ihre Ergebnisse).
+Informiert den Cluster-Konnektor darüber, dass eine Excel-Berechnung abgebrochen wurde, und daher können alle ausstehenden Funktionsaufrufe innerhalb dieser Sitzung ebenfalls abgebrochen werden (und Excel erwarte keine Rückrufe mit ihren Ergebnissen).
   
 ```cpp
 int CancelOutstandingRequests(int SessionId)
@@ -26,17 +26,17 @@ int CancelOutstandingRequests(int SessionId)
 
 ## <a name="parameters"></a>Parameter
 
-_Sitzungs-ID_
+_SessionID_
   
-> Die ID der Sitzung verwendet wird, durch die Berechnung der abgebrochen. Dieser Wert stimmt den von [OpenSession](opensession.md)zurückgegebenen Wert.
+> Die ID der Sitzung, die von der abgebrochenen Berechnung verwendet wird. Dieser Wert entspricht dem von OpenSession [](opensession.md)zurückgegebenen Wert.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-**XlHpcRetSuccess** Wenn das Argument _SessionId_ gültig ist; **XlHpcRetInvalidSessionId** Wenn das _SessionId_ -Argument ungültig ist; **XlHpcRetCallFailed** zu anderen Fehlern. 
+**xlHpcRetSuccess** , wenn das _SessionID_ -Argument gültig ist; **xlHpcRetInvalidSessionId** , wenn das _SessionID_ -Argument ungültig ist; **xlHpcRetCallFailed** bei anderen Fehlern. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Implementierer sollten beenden Sie alle Prozesse für die Sitzung für verbesserte Leistung als Ergebnisse erhalten, nachdem dieser Aufruf von Excel verworfen wird.
+Implementierer sollten alle Prozesse für die Sitzung für eine verbesserte Leistung beenden, da alle Ergebnisse nach diesem Aufruf von Excel verworfen werden.
   
 ## <a name="see-also"></a>Siehe auch
 

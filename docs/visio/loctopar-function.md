@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ce1028d6-0293-e8dd-b79d-3f02c50f6250
 description: Gibt einen transformierten Punkt in übergeordneten Koordinaten im Zielkoordinatensystem zurück.
-ms.openlocfilehash: 7d882ec34de93db2828fc751f99d87fc3e961d64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 65a08837d7d026836ebc8d5e35938ea049d005e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314847"
 ---
 # <a name="loctopar-function"></a>LOCTOPAR Function
 
@@ -22,17 +22,17 @@ Gibt einen transformierten Punkt in übergeordneten Koordinaten im Zielkoordinat
   
 ## <a name="syntax"></a>Syntax
 
-LOCTOPAR (** *Quellpunkt* **, ** *SrcRef* **, ** *Zielbezug* **) 
+LOCTOPAR (* * *srcPoint* * *, * * *srcRef* * *, * * *Zielbezug* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Quellpunkt_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt in den lokalen Koordinaten des Quellkoordinatensystems.  <br/> |
+| _srcPoint_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt in den lokalen Koordinaten des Quellkoordinatensystems.  <br/> |
 | _srcRef_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Quellobjekt.  <br/> |
 | _Zielbezug_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Zielobjekt.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   

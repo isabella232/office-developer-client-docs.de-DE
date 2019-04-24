@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9c9252e83ce212bacf185d0eedb75d30617f9807
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6d7de4d6c14179ddaba4e2ad907f1acc1c53b125
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317178"
 ---
 # <a name="iostx--iunknown"></a>IOSTX : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt Synchronisierungsmethoden bereit. Diese Schnittstelle ruft die erforderlichen Informationen zum Replizieren von lokaler Änderungen auf den Server und Server Änderungen an den lokalen Speicher ab.
+Stellt Synchronisierungsmethoden bereit. Diese Schnittstelle ruft die erforderlichen Informationen ab, um lokale Änderungen an den Server-und Server Änderungen im lokalen Speicher zu replizieren.
   
 |||
 |:-----|:-----|
@@ -36,34 +36,34 @@ Stellt Synchronisierungsmethoden bereit. Diese Schnittstelle ruft die erforderli
 
 |||
 |:-----|:-----|
-|[GetLastError](iostx-getlasterror.md) <br/> |Ruft Informationen über den letzten Fehler erweitert.  <br/> |
-|[InitSync](iostx-initsync.md) <br/> |Informiert dem lokalen Speicher, dass Synchronisierung gestartet.  <br/> |
-|[SyncBeg](iostx-syncbeg.md) <br/> |Bereitet den lokalen Speicher für die Synchronisierung in einen bestimmten Status und die erforderliche Informationen zum Replizieren von abgerufen.  <br/> |
-|[SyncEnd](iostx-syncend.md) <br/> |Synchronisierung in den aktuellen Status beendet und diesen Status beendet.  <br/> |
-|[SyncHdrBeg](iostx-synchdrbeg.md) <br/> |Synchronisierung für ein Nachrichtenkopf gestartet.  <br/> |
-|[SyncHdrEnd](iostx-synchdrend.md) <br/> |Synchronisierung für ein Nachrichtenkopf endet.  <br/> |
-|[SetSyncResult](iostx-setsyncresult.md) <br/> |Das Ergebnis der Synchronisierung festgelegt.  <br/> |
-| *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
+|[Getlasterroraufzurufen](iostx-getlasterror.md) <br/> |Ruft erweiterte Informationen zum letzten Fehler ab.  <br/> |
+|[InitSync](iostx-initsync.md) <br/> |Informiert den lokalen Speicher über die Synchronisierung, die gestartet werden soll.  <br/> |
+|[SyncBeg](iostx-syncbeg.md) <br/> |Bereitet den lokalen Speicher für die Synchronisierung in einem bestimmten Zustand vor und ruft die erforderlichen Informationen zum Replizieren ab.  <br/> |
+|[SyncEnd](iostx-syncend.md) <br/> |Beendet die Synchronisierung im aktuellen Zustand und beendet diesen Status.  <br/> |
+|[SyncHdrBeg](iostx-synchdrbeg.md) <br/> |Startet die Synchronisierung für einen Nachrichtenkopf.  <br/> |
+|[SyncHdrEnd](iostx-synchdrend.md) <br/> |Beendet die Synchronisierung für einen Nachrichtenkopf.  <br/> |
+|[SetSyncResult](iostx-setsyncresult.md) <br/> |Legt das Ergebnis der Synchronisierung fest.  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn ein Client hochgeladen oder Ordner und Ordnerinhalte in einem lokalen Speicher synchronisiert, verschiebt es den lokalen Speicher von einem Zustand zu einem anderen wie in der Statusübergangsdiagramm in [Über die Replikation Zustandsautomat](about-the-replication-state-machine.md)dargestellt. Es folgt der Reihenfolge von Ereignissen für den Client auf den lokalen Speicher von einem Zustand in einen anderen verschieben:
+Wenn ein Clientordner und Ordnerinhalte in einem lokalen Speicher hochlädt oder synchronisiert, verschiebt er den lokalen Speicher von einem Status in einen anderen, wie er im Zustandsübergang-Diagramm in [über den Replikationsstatus Computer](about-the-replication-state-machine.md)dargestellt ist. Im folgenden finden Sie die Reihenfolge der Ereignisse für den Client zum Verschieben des lokalen Speichers von einem Status in einen anderen:
   
-1. Der Client ruft **IOSTX::InitSync** , um dem lokalen Speicher zu informieren, dass die Replikation zu starten. 
+1. Der Client ruft **IOSTX:: InitSync** auf, um den lokalen Speicher zu informieren, dass die Replikation gestartet werden soll. 
     
-2. Abhängig von der Richtung der Replikation und die Objekte repliziert werden ruft der Client **IOSTX::SyncBeg** , um die Replikation in den entsprechenden Status zu beginnen. Outlook bietet des Clients die erforderliche Informationen und der Client führt die Replikation. 
+2. Abhängig von der Replikationsrichtung und den zu replizierenden Objekten ruft der Client **IOSTX:: SyncBeg** auf, um die Replikation im entsprechenden Zustand zu starten. Outlook stellt dem Client die erforderlichen Informationen bereit, und der Client führt die Replikation aus. 
     
-3. Der Client ruft **IOSTX::SetSyncResult** , um das Ergebnis der Replikation zurückzugeben. 
+3. Der Client ruft **IOSTX:: SetSyncResult** auf, um das Ergebnis der Replikation zurückzugeben. 
     
-4. Der Client ruft **IOSTX::SyncEnd** zum Beenden der Replikations Outlook die erforderliche Informationen für die nachfolgende Replikation bereitstellen. 
+4. Der Client ruft **IOSTX:: SyncEnd** auf, um die Replikation zu beenden, sodass Outlook die erforderlichen Informationen für die nachfolgende Replikation bereitstellt. 
     
-Insbesondere verwendet beim Download von Nachrichtenelemente der Client **IOSTX::SyncHdrBeg** und **IOSTX::SyncHdrEnd** so aktualisieren Sie eine vollständige e-Mail-Element mit der Nachrichtenkopf auf dem lokalen Speicher: 
+Insbesondere verwendet der Client beim Herunterladen von Nachrichtenelementen **IOSTX:: SyncHdrBeg** und **IOSTX:: SyncHdrEnd** , um ein vollständiges Nachrichtenelement mit dem Nachrichtenkopf im lokalen Speicher zu aktualisieren: 
   
-1. Bei **IOSTX::SyncHdrBeg**Speichern der lokalen Kopie Übergänge in den Downloadstatus der Nachricht Kopfzeile. Outlook ermöglicht dem Client mit der aktuellen Nachrichtenkopf anfangs auf dem lokalen Speicher.
+1. Bei **IOSTX:: SyncHdrBeg**wechselt der lokale Speicher in den Status des Download Nachrichtenkopfs. Outlook stellt dem Client anfänglich den aktuellen Nachrichtenkopf des lokalen Speichers zur Verfügung.
     
-2. Der Client finden Sie eine vollständige e-Mail-Element zusammen mit der Nachrichtenkopf downloads.
+2. Der Client lädt ein vollständiges Nachrichtenelement zusammen mit dem Nachrichtenkopf herunter.
     
-3. Outlook aktualisiert das Element auf dem lokalen Speicher mit dem vollständigen Nachrichtenelement.
+3. Outlook aktualisiert das Element im lokalen Speicher mit dem vollständigen Nachrichtenelement.
     
 ## <a name="see-also"></a>Siehe auch
 

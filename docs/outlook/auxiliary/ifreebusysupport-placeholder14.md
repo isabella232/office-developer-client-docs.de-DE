@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d21aba9d-71a2-f090-d930-05fc6d84b673
 description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
-ms.openlocfilehash: da58fe82b12a0fb3e941c9b7d3de2bdcc5f4af07
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 06d52f43d585529c1cb7ecf65ea961e6e40d683b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319852"
 ---
 # <a name="ifreebusysupportplaceholder14"></a>IFreeBusySupport::Placeholder14
 
@@ -20,7 +20,7 @@ Dieser Member ist ein Platzhalter und wird nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IFreeBusySupport](ifreebusysupport.md).
+Siehe [IFreeBusySupport](ifreebusysupport.md).
   
 ```cpp
 HRESULT Placeholder14( 
@@ -31,7 +31,7 @@ HRESULT Placeholder14(
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter und wird nicht.
+Immer E_NOTIMPL, da dieser Member ein Platzhalter ist und nicht unterstützt wird.
   
 ## <a name="remarks"></a>Bemerkungen
 

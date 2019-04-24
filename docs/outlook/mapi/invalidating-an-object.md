@@ -1,5 +1,5 @@
 ---
-title: Unwirksammachen eines Objekts
+title: Invalidieren eines Objekts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 7d601cee-ffc4-4c7c-8006-40b717dee247
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2346ec8541e1a8b7f5ea198722833447f9f5a289
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bf7ef15ccfd9cd015771785bda9d6ad79415736b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317199"
 ---
-# <a name="invalidating-an-object"></a>Unwirksammachen eines Objekts
+# <a name="invalidating-an-object"></a>Invalidieren eines Objekts
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Als Teil des Herunterfahrens des Anbieters sollten Sie ein Objekt ungültig. Ein Objekt ungültig umfasst, und Ersetzen Sie die vtable des Objekts durch eine Vtable, die Implementierungen für die drei **IUnknown** -Methoden enthält: **QueryInterface**, **AddRef**und **Release**. Ein Objekt ungültig wird durch Aufrufen von [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md), eine Methode, die im jedes der drei allgemeine Providertypen Support-Objekt enthalten ist. Anbieter stellen dieses Anrufs in der Regel in der Implementierung von ihrer Anmeldung-Objekt **Logoff (** Methode). 
+Im Rahmen des Herunterfahrens des Anbieters möchten Sie möglicherweise ein Objekt ungültig machen. Für die Invalidierung eines Objekts wird die Vtable durch eine Vtable ersetzt, die Implementierungen für die drei **IUnknown** -Methoden enthält: **AddRef**, **Release**und **QueryInterface**. Ein Objekt wird ungültig, indem [IMAPISupport:: MakeInvalid](imapisupport-makeinvalid.md), eine Methode aufgerufen wird, die im Support Objekt der drei gängigen Anbietertypen enthalten ist. Anbieter führen diesen Aufruf in der Regel in der Implementierung der **Logout** -Methode Ihres LOGON-Objekts aus. 
   
-Ein Objekt ungültig bietet MAPI die ultimative Verantwortung für ein Objekt zugeordneten Arbeitsspeicher freizugeben. Sie können alle Ressourcen verbunden mit einem Objekt frei, und rufen Sie dann **MakeInvalid** , um alle Methoden in seiner geerbten Schnittstellen ungültig. Anrufe an eine der folgenden Methoden gibt MAPI_E_INVALID_OBJECT zurück. Verwenden von **MakeInvalid** ist eine Option, die viele Dienstanbieter ignoriert werden sollen. 
+Durch die Invalidierung eines Objekts wird MAPI die ultimative Verantwortung für die Freigabe des Arbeitsspeichers zugewiesen, der einem Objekt zugeordnet ist. Sie können alle mit einem Objekt verbundenen Ressourcen freigeben und dann **MakeInvalid** aufrufen, um alle Methoden in den geerbten Schnittstellen zu invalidieren. Aufrufe einer dieser Methoden geben MAPI_E_INVALID_OBJECT zurück. Die Verwendung von **MakeInvalid** ist eine Option, die von vielen Dienstanbietern ignoriert werden kann. 
   
 ## <a name="see-also"></a>Siehe auch
 

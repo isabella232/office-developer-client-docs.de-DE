@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 2a575cac-dbfd-4f42-9c10-4b7e355a065e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4453465c04d7a5a3de79f2ae34d13095863487cf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 162f20485fc21cf8523b6d4a653e52c35f4b3d9a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317080"
 ---
 # <a name="iprofadminrenameprofile"></a>IProfAdmin::RenameProfile
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Weist einen neuen Namen zu einem Profil.
+Weist einem Profil einen neuen Namen zu.
   
 ```cpp
 HRESULT RenameProfile(
@@ -41,25 +41,25 @@ HRESULT RenameProfile(
 
  _lpszOldProfileName_
   
-> [in] Ein Zeiger auf den aktuellen Namen des Profils umbenennen.
+> in Ein Zeiger auf den aktuellen Namen des umzubenennenden Profils.
     
  _lpszOldPassword_
   
-> [in] Immer NULL.
+> in Immer NULL.
     
  _lpszNewProfileName_
   
-> [in] Ein Zeiger auf den neuen Namen des Profils umbenennen.
+> in Ein Zeiger auf den neuen Namen des umzubenennenden Profils.
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, die diese Methode anzeigt. 
+> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster. 
     
  _ulFlags_
   
-> [in] Immer NULL.
+> in Immer NULL.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -71,19 +71,19 @@ MAPI_E_LOGON_FAILED
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IProfAdmin::RenameProfile** -Methode weist einen neuen Namen zu einem Profil, sofern vorhanden. Wenn das Profil Umbenennen von einem Client wird **RenameProfile** aufgerufen wird, **RenameProfile** markiert das Profil und S_OK wird anstelle den Umbenennungsvorgang versucht, während das Profil verwendet wird. Wenn das Profil nicht mehr verwendet wird, weist ihm **RenameProfile** den neuen Namen zu. 
+Die **IProfAdmin:: RenameProfile** -Methode weist einem Profil einen neuen Namen zu, sofern vorhanden. Wenn das umzubenennende Profil von einem Client verwendet wird, wenn **RenameProfile** aufgerufen wird, kennzeichnet **RenameProfile** das Profil und gibt S_OK zurück, anstatt den Umbenennungsvorgang zu versuchen, während das Profil verwendet wird. Wenn das Profil nicht mehr verwendet wird, weist **RenameProfile** dem neuen Namen zu. 
   
-Die alten und neuen Namen des Profils können bis zu 64 Zeichen lang sein und können die folgenden Zeichen enthalten:
+Die alten und neuen Namen des Profils können bis zu 64 Zeichen lang sein und die folgenden Zeichen enthalten:
   
-- Alle alphanumerischen Zeichen, einschließlich Akzent-Zeichen und das Unterstrichzeichen.
+- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und der Unterstrich.
     
-- Leerzeichen, jedoch nicht führende oder nachfolgende Leerzeichen.
+- Eingebettete Leerzeichen, aber keine führenden oder nachstehenden Leerzeichen.
     
-Die _LpszPassword_ sollte immer NULL oder einen Zeiger auf eine leere Zeichenfolge sein. 
+Die _lpszPassword_ sollte immer NULL oder ein Zeiger auf eine leere Zeichenfolge sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

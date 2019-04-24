@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 79d5af23-efad-4013-a330-56babfb2bb0f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 56c025713b0cc2b41a4bf4463f48f8d7c3d2124b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 794674df38266743cac8c947ec93dc1fcfff438b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309737"
 ---
 # <a name="imsproviderspoolerlogon"></a>IMSProvider::SpoolerLogon
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die MAPI-Warteschlange an einen Nachrichtenspeicher protokolliert.
+Protokolliert den MAPI-Spooler in einem Nachrichtenspeicher.
   
 ```cpp
 HRESULT SpoolerLogon(
@@ -48,69 +48,69 @@ HRESULT SpoolerLogon(
 
  _lpMAPISup_
   
-> [in] Ein Zeiger auf die MAPI unterstützt Objekt für den Nachrichtenspeicher.
+> in Ein Zeiger auf das MAPI-Unterstützungsobjekt für den Nachrichtenspeicher.
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster des alle Dialogfelder oder Fenster zeigt diese Methode an. 
+> in Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. 
     
  _lpszProfileName_
   
-> [in] Ein Zeiger auf eine Zeichenfolge mit dem Namen des Profils, das für die Anmeldung des MAPI-Warteschlange verwendet wird. Diese Zeichenfolge kann in Dialogfeldern angezeigt, in eine Protokolldatei geschrieben oder einfach ignoriert werden. Es muss im Unicode-Format sein, wenn die Option MAPI_UNICODE im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Zeiger auf eine Zeichenfolge, die den Namen des Profils enthält, das für die MAPI-Spooler-Anmeldung verwendet wird. Diese Zeichenfolge kann in Dialogfeldern angezeigt werden, in eine Protokolldatei geschrieben oder einfach ignoriert werden. Sie muss im Unicode-Format vorliegen, wenn das MAPI_UNICODE-Flag im _ulFlags_ -Parameter festgelegt ist. 
     
  _cbEntryID_
   
-> [in] Die Größe des Eintrags-ID, die auf das durch den Parameter _LpEntryID_ in Bytes. 
+> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird, in Bytes. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID für den Nachrichtenspeicher. NULL in der _LpEntryID_ -Parameter übergeben gibt an, dass ein Nachrichtenspeicher noch nicht ausgewählt wurden und Dialogfelder, mit denen den Benutzer die Auswahl ein Nachrichtenspeichers präsentiert werden können. 
+> in Ein Zeiger auf die Eintrags-ID für den Nachrichtenspeicher. Das übergeben von NULL im Parameter _lpEntryID_ gibt an, dass noch kein Nachrichtenspeicher ausgewählt wurde und dass Dialogfelder, in denen der Benutzer einen Nachrichtenspeicher auswählen kann, angezeigt werden können. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Anmeldung ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Ausführung der Anmeldung steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Der Aufruf ist zulässig, erfolgreich ausgeführt werden kann, auch wenn das zugrunde liegende Objekt nicht an die Implementierung der aufrufenden verfügbar ist. Wenn das Objekt nicht verfügbar ist, kann ein nachfolgender Aufruf für das Objekt ein Fehler ausgelöst.
+> Der Aufruf kann auch dann erfolgreich ausgeführt werden, wenn das zugrunde liegende Objekt für die aufrufende Implementierung nicht verfügbar ist. Wenn das Objekt nicht verfügbar ist, kann bei einem nachfolgenden Aufruf des Objekts ein Fehler ausgelöst werden.
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn der Parameter MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn MAPI_UNICODE nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
 MDB_NO_DIALOG 
   
-> Verhindert die Anzeige von Dialogfeldern für die Anmeldung. Wenn dieses Flag festgelegt ist, wird der Fehlerwert MAPI_E_LOGON_FAILED zurückgegeben, wenn die Anmeldung nicht erfolgreich ist. Wenn dieses Flag nicht festgelegt ist, kann die Nachricht Speicher-Anbieter den Benutzer an den richtigen einen Namen oder ein Kennwort, zum Einfügen von eines Datenträgers oder zum Ausführen anderer Aktionen erforderlich sind, um die Verbindung zu den Speicher auffordern.
+> Verhindert die Anzeige von Anmelde Dialogfeldern. Wenn dieses Flag festgelegt ist, wird der Fehlerwert MAPI_E_LOGON_FAILED zurückgegeben, wenn die Anmeldung nicht erfolgreich ist. Wenn dieses Flag nicht festgelegt ist, kann der Nachrichtenspeicher Anbieter den Benutzer auffordern, einen Namen oder ein Kennwort zu korrigieren, einen Datenträger einzufügen oder andere erforderliche Aktionen auszuführen, um eine Verbindung mit dem Speicher herzustellen.
     
 MDB_WRITE 
   
-> Anfragen Lese-/Schreibberechtigung.
+> Fordert Lese-/Schreibzugriff-Berechtigung an.
     
  _lpInterface_
   
-> [in] Ein Zeiger auf der Benutzeroberfläche IID (Identifier) für den Nachrichtenspeicher anmelden. Übergeben von NULL gibt an, dass die MAPI-Schnittstelle für den Nachrichtenspeicher ([IMsgStore](imsgstoreimapiprop.md)) zurückgegeben wird. Der Parameter _LpInterface_ kann auch auf einen Bezeichner für eine entsprechende Schnittstelle für den Nachrichtenspeicher (beispielsweise IID_IUnknown oder IID_IMAPIProp) festgelegt werden. 
+> in Ein Zeiger auf die Schnittstellen-ID (IID) für den Nachrichtenspeicher, an dem sich die Anmeldung anmeldet. Übergeben von NULL gibt an, dass die MAPI-Schnittstelle für den Nachrichtenspeicher ([IMsgStore](imsgstoreimapiprop.md)) zurückgegeben wird. Der _lpInterface_ -Parameter kann auch auf einen Bezeichner für eine entsprechende Schnittstelle für den Nachrichtenspeicher festgelegt werden (beispielsweise IID_IUnknown oder IID_IMAPIProp). 
     
  _cbSpoolSecurity_
   
-> [in] Ein Zeiger auf die Größe des im Parameter _LppbSpoolSecurity_ Überprüfungsdaten in Bytes. 
+> in Ein Zeiger auf die Größe der Validierungsdaten im _lppbSpoolSecurity_ -Parameter in Byte. 
     
  _lpbSpoolSecurity_
   
-> [in] Ein Zeiger auf einen Zeiger auf Überprüfungsdaten. Die **SpoolerLogon** -Methode verwendet diese Daten zur Anmeldung bei der MAPI-Warteschlange an den gleichen Speicher als dem Anbieter für anmelden zuvor für die Anmeldung mithilfe der [IMSProvider::Logon](imsprovider-logon.md) -Methode. 
+> in Ein Zeiger auf einen Zeiger auf Validierungsdaten. Die **SpoolerLogon** -Methode verwendet diese Daten, um den MAPI-Spooler in demselben Speicher wie der zuvor angemeldete Nachrichtenspeicher Anbieter mithilfe der [IMSProvider:: Login](imsprovider-logon.md) -Methode zu protokollieren. 
     
  _lppMAPIError_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene [MAPIERROR](mapierror.md) Struktur, falls vorhanden, die Angaben zu Version, Komponente und Kontext für einen Fehler enthält. Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn es keine **MAPIERROR** -Struktur ist zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [MAPIERROR](mapierror.md) -Struktur, die Versions-, Komponenten-und Kontextinformationen für einen Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn keine **MAPIERROR** -Struktur zurückgegeben werden soll. 
     
  _lppMSLogon_
   
-> [out] Ein Zeiger auf den Zeiger auf die Nachricht speichern Objekt für die MAPI anmelden anmelden.
+> Out Ein Zeiger auf den Zeiger auf das Nachrichtenspeicher-Anmeldeobjekt für die Anmeldung bei MAPI.
     
  _lppMDB_
   
-> [out] Ein Zeiger auf den Zeiger auf die Nachricht speichern-Objekt für die MAPI-Warteschlange und Clientanwendungen anmelden.
+> Out Ein Zeiger auf den Zeiger auf das Nachrichtenspeicherobjekt für die MAPI-Spooler und Clientanwendungen, die sich bei anmelden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -118,19 +118,19 @@ S_OK
     
 MAPI_E_UNCONFIGURED 
   
-> Das Profil enthält nicht ausreichend Informationen für die Anmeldung für die Durchführung. Wenn dieser Wert zurückgegeben wird, ruft MAPI der Nachricht Informationsdienst Nachricht Service Entry Point-Funktion.
+> Das Profil enthält nicht genügend Informationen, damit die Anmeldung abgeschlossen werden kann. Wenn dieser Wert zurückgegeben wird, ruft MAPI die Nachrichtendienst-Einstiegspunktfunktion des Nachrichtenspeicher Anbieters auf.
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war erfolgreich, aber der Nachricht Speicheranbieter hat Fehlerinformationen verfügbar. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md). Wenn Sie die Fehlerinformationen vom Anbieter erhalten möchten, rufen Sie die [IMAPISession::GetLastError](imapisession-getlasterror.md) -Methode. 
+> Der Aufruf war erfolgreich, aber der Nachrichtenspeicher Anbieter hat Fehlerinformationen. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md). Rufen Sie die [IMAPISession:: getlasterroraufzurufen](imapisession-getlasterror.md) -Methode auf, um die Fehlerinformationen vom Anbieter abzurufen. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Warteschlange Ruft die **IMSProvider::SpoolerLogon** -Methode zur Anmeldung bei einem Nachrichtenspeicher. Die MAPI-Warteschlange sollten das Nachricht Store-Objekt von der Nachricht Informationsdienst im _LppMDB_ -Parameter zurückgegeben werden, während und nach der Anmeldung verwenden. 
+Der MAPI-Spooler Ruft die **IMSProvider:: SpoolerLogon** -Methode auf, um sich bei einem Nachrichtenspeicher anzumelden. Der MAPI-Spooler sollte das vom Nachrichtenspeicher Anbieter zurückgegebene Nachrichtenspeicherobjekt während und nach der Anmeldung im Parameter _lppMDB_ verwenden. 
   
-Aus Gründen der Konsistenz mit der [IMSProvider::Logon](imsprovider-logon.md) -Methode gibt der Anbieter auch ein Message Store Anmeldung-Objekt im Parameter _LppMSLogon_ zurück. Die Verwendung von das Store-Objekt und das Anmeldeobjekt sind für die Anmeldung üblichen Store identisch. So, dass die Objekte fungieren, als wären sie ein Objekt, das zwei Schnittstellen verfügbar macht sollte eine 1: 1-Beziehung zwischen der Anmeldung-Objekt und das Store-Objekt sein. Die zwei Objekte werden zusammen und freigegebenen zusammen erstellt. 
+Aus Gründen der Konsistenz mit der [IMSProvider:: Login](imsprovider-logon.md) -Methode gibt der Anbieter auch ein Anmeldeobjekt für den Nachrichtenspeicher im Parameter _lppMSLogon_ zurück. Die Verwendung des Store-Objekts und des LOGON-Objekts sind für die übliche Speicher Anmeldung identisch. Es sollte eine 1:1-Entsprechung zwischen dem Logon-Objekt und dem Store-Objekt vorhanden sein, sodass die Objekte so handeln, als ob es sich um ein Objekt handelt, das zwei Schnittstellen verfügbar macht. Die beiden Objekte werden zusammen erstellt und gemeinsam freigegeben. 
   
-Speicheranbieter sollten intern kennzeichnen zurückgegebene Message Store-Objekts, um anzugeben, dass der Speicher von den MAPI-Warteschlange verwendet wird. Einige der Methoden für dieses Objekt Store Verhalten sich anders als für die Nachricht Clientanwendungen bereitgestellte Objekt speichern. Nachhaltiger Schutz von dieser internen Mark ist am häufigsten das Verhalten, das speziell für die MAPI-Warteschlange auslösen.
+Der Informationsspeicher Anbieter sollte das zurückgegebene Nachrichtenspeicherobjekt intern kennzeichnen, um anzugeben, dass der Speicher vom MAPI-Spooler verwendet wird. Einige der Methoden für dieses Store-Objekt verhalten sich anders als für das Nachrichtenspeicherobjekt, das für Clientanwendungen bereitgestellt wird. Diese interne Markierung beizubehalten, ist die häufigste Methode zum Auslösen des Verhaltens, das für den MAPI-Spooler spezifisch ist.
   
 ## <a name="see-also"></a>Siehe auch
 

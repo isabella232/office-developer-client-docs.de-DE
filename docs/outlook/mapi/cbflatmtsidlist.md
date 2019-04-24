@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1ecc7c15-ca8a-4af2-9256-b572b70be093
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 52e9454f9743311a83ee78aa28e1e81dbb569c64
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7495b2e24f31b4409c69a429d50b79c8e5f220eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318060"
 ---
 # <a name="cbflatmtsidlist"></a>CbFLATMTSIDLIST
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes in einer vorhandenen [FLATMTSIDLIST](flatmtsidlist.md) Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [FLATMTSIDLIST](flatmtsidlist.md) -Struktur. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**FLATMTSIDLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**FLATMTSIDLIST** <br/> |
    
 ```cpp
 CbFLATMTSIDLIST (_lplist)
@@ -40,7 +40,7 @@ CbFLATMTSIDLIST (_lplist)
 
  __lplist_
   
-> Zeiger auf die vorhandenen **FLATMTSIDLIST** Struktur. 
+> Zeiger auf die vorhandene **FLATMTSIDLIST** -Struktur. 
     
 ## <a name="see-also"></a>Siehe auch
 

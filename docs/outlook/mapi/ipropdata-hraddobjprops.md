@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 683cf476-3c02-4b3b-939f-6fff6611f9aa
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ae0d6d58f96738a9686dbdda86336c040c2e2f68
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: df63f08d3d453575816c4f7ab043f802023e21d0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315533"
 ---
 # <a name="ipropdatahraddobjprops"></a>IPropData::HrAddObjProps
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.
+Fügt dem Objekt eine oder mehrere Eigenschaften vom Typ PT_OBJECT hinzu.
   
 ```cpp
 HRESULT HrAddObjProps(
@@ -38,13 +38,13 @@ HRESULT HrAddObjProps(
 
  _lpPropTagArray_
   
-> [in] Ein Zeiger auf ein Array von Eigenschaftentags, die angeben, die Eigenschaften hinzufügen.
+> in Ein Zeiger auf ein Array von Property-Tags, die die hinzuzufügenden Eigenschaften Kennzeichen.
     
  _lppProblems_
   
-> [in, out] Klicken Sie auf Eingaben, einen gültigen Zeiger auf eine Struktur [SPropProblemArray](spropproblemarray.md) oder NULL. Klicken Sie auf Ausgabe, einen Zeiger auf einen Zeiger auf eine Struktur, die Informationen zu Eigenschaften enthält, die nicht hinzugefügt werden konnte, oder NULL. Nur, wenn ein gültiger Zeiger übergeben wird, wird ein Zeiger auf eine Eigenschaft Problem Array-Struktur zurückgegeben. 
+> [in, out] Bei der Eingabe ein gültiger Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur oder NULL. Bei der Ausgabe ein Zeiger auf einen Zeiger auf eine Struktur, die Informationen zu Eigenschaften enthält, die nicht hinzugefügt werden konnten, oder NULL. Ein Zeiger auf eine Eigenschaften Problem-Array Struktur wird nur zurückgegeben, wenn ein gültiger Zeiger übergeben wird. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -52,25 +52,25 @@ S_OK
     
 MAPI_E_INVALID_TYPE 
   
-> Geben Sie eine Eigenschaft außer PT_OBJECT im Array übergeben wurde, die auf der _LpPropTagArray_ -Parameter verweist. 
+> Ein anderer Eigenschaftentyp als PT_OBJECT wurde in dem Array übergeben, auf das der _lpPropTagArray_ -Parameter zeigt. 
     
 MAPI_E_NO_ACCESS 
   
-> Das Objekt wurde nicht für Lese-/Schreibberechtigung zulassen festgelegt.
+> Das Objekt wurde so festgelegt, dass die Berechtigung Lese-/Schreibzugriff nicht zulässig ist.
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Einige, jedoch nicht alle Eigenschaften wurden hinzugefügt.
+> Einige, aber nicht alle Eigenschaften wurden hinzugefügt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IPropData::HrAddObjProps** -Methode fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt. **HrAddObjProps** stellt eine Alternative zur die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode für Objekteigenschaften, da Objekteigenschaften durch Aufrufen von **SetProps**nicht erstellt werden können. Hinzufügen einer Object-Eigenschaft führt das Eigenschafts-Tag eingeschlossen werden, in der Liste der Eigenschaftentags, die die [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode zurückgibt. 
+Die **IPropData:: HrAddObjProps** -Methode fügt dem Objekt eine oder mehrere Eigenschaften vom Typ PT_OBJECT hinzu. **HrAddObjProps** bietet eine Alternative zur [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode für Objekteigenschaften, da Objekteigenschaften nicht durch Aufrufen von **** SetProps erstellt werden können. Wenn Sie eine Objekteigenschaft hinzufügen, wird das Property-Tag in die Liste der Eigenschaftstags aufgenommen, die von der [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode zurückgegeben wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **HrAddObjProps** MAPI_W_PARTIAL_COMPLETION zurückgegeben, und Sie _LppProblems_ auf einen gültigen Zeiger festgelegt haben, überprüfen Sie die zurückgegebene [SPropProblemArray](spropproblemarray.md) -Struktur, um zu ermitteln, welche Eigenschaften nicht hinzugefügt wurden. In der Regel ist das einzige Problem, dass nicht genügend Speicherplatz verfügbar. Freigeben der Struktur **SPropProblemArray** durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion, wenn Sie mit ihm fertig sind. 
+Wenn **HRADDOBJPROPS** MAPI_W_PARTIAL_COMPLETION zurückgibt und Sie _lppProblems_ auf einen gültigen Zeiger festgelegt haben, überprüfen Sie die zurückgegebene [SPropProblemArray](spropproblemarray.md) -Struktur, um herauszufinden, welche Eigenschaften nicht hinzugefügt wurden. NormalerWeise ist das einzige Problem, das auftritt, mangelnder Arbeitsspeicher. Geben Sie die **SPropProblemArray** -Struktur frei, indem Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen, wenn Sie damit fertig sind. 
   
-Zum Hinzufügen einer Eigenschaft muss das Zielobjekt Lese-/Schreibberechtigung haben. Wenn **HrAddObjProps** MAPI_E_NO_ACCESS zurückgibt, können nicht Sie Eigenschaften für das Objekt hinzufügen, da diese Änderung nicht zulässig ist. Lese-/Schreibberechtigung für ein Objekt vor dem Aufrufen von **HrAddObjProps**zu erhalten, rufen Sie [IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md) , und legen Sie den Parameter _UlAccess_ auf IPROP_READWRITE. 
+Zum Hinzufügen einer Eigenschaft muss das Zielobjekt Lese-/Schreibzugriff besitzen. Wenn **HRADDOBJPROPS** MAPI_E_NO_ACCESS zurückgibt, können Sie dem Objekt keine Eigenschaften hinzufügen, da es keine Änderung zulässt. Wenn Sie vor dem Aufrufen von **HrAddObjProps**Lese-/Schreibzugriff auf ein Objekt erhalten möchten, rufen Sie [IPropData:: HrSetObjAccess](ipropdata-hrsetobjaccess.md) auf, und legen Sie den Parameter _ulAccess_ auf IPROP_READWRITE fest. 
   
 ## <a name="see-also"></a>Siehe auch
 

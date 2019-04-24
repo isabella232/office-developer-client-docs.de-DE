@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 890d9cbe-3570-4cf0-aeae-667c0e5ba181
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 9c7f62c69c7a06f7ca0e4bfddcf789cddc536ea6
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309667"
 ---
 # <a name="imsproviderlogon"></a>IMSProvider::Logon
 
@@ -25,7 +25,7 @@ ms.locfileid: "25386565"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Protokolle MAPI an eine Instanz der Anbieter eine Nachricht.
+Protokolliert MAPI für eine Instanz eines Nachrichtenspeicher Anbieters.
   
 ```cpp
 HRESULT Logon(
@@ -48,75 +48,75 @@ HRESULT Logon(
 
  _lpMAPISup_
   
-> [in] Ein Zeiger auf den aktuellen MAPI unterstützt Objekt für den Nachrichtenspeicher.
+> in Ein Zeiger auf das aktuelle MAPI-Unterstützungsobjekt für den Nachrichtenspeicher.
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster des alle Dialogfelder oder Fenster zeigt diese Methode an. 
+> in Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. 
     
  _lpszProfileName_
   
-> [in] Ein Zeiger auf eine Zeichenfolge mit dem Namen des Profils, das für die Anmeldung des Store verwendet wird. Diese Zeichenfolge kann in Dialogfeldern angezeigt, in eine Protokolldatei geschrieben oder einfach ignoriert werden. Es muss im Unicode-Format sein, wenn die Option MAPI_UNICODE im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Zeiger auf eine Zeichenfolge, die den Namen des Profils enthält, das für die Speicheranbieter Anmeldung verwendet wird. Diese Zeichenfolge kann in Dialogfeldern angezeigt werden, in eine Protokolldatei geschrieben oder einfach ignoriert werden. Sie muss im Unicode-Format vorliegen, wenn das MAPI_UNICODE-Flag im _ulFlags_ -Parameter festgelegt ist. 
     
  _cbEntryID_
   
-> [in] Die Größe des Eintrags-ID, die auf das durch den Parameter _LpEntryID_ in Bytes. 
+> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird, in Bytes. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID für den Nachrichtenspeicher. Übergeben von **null** in _LpEntryID_ gibt an, dass ein Nachrichtenspeicher noch nicht ausgewählt wurde und Dialogfelder, mit denen den Benutzer die Auswahl ein Nachrichtenspeichers präsentiert werden können. 
+> in Ein Zeiger auf die Eintrags-ID für den Nachrichtenspeicher. Durch das Übergeben von **null** in _lpEntryID_ wird angegeben, dass noch kein Nachrichtenspeicher ausgewählt wurde und dass Dialogfelder angezeigt werden können, in denen der Benutzer einen Nachrichtenspeicher auswählen kann. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Anmeldung ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Ausführung der Anmeldung steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Der Aufruf ist zulässig, erfolgreich ausgeführt werden kann, auch wenn das zugrunde liegende Objekt nicht an die Implementierung der aufrufenden verfügbar ist. Wenn das Objekt nicht verfügbar ist, kann ein nachfolgender Aufruf für das Objekt ein Fehler ausgelöst.
+> Der Aufruf kann auch dann erfolgreich ausgeführt werden, wenn das zugrunde liegende Objekt für die aufrufende Implementierung nicht verfügbar ist. Wenn das Objekt nicht verfügbar ist, kann bei einem nachfolgenden Aufruf des Objekts ein Fehler ausgelöst werden.
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn der Parameter MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn MAPI_UNICODE nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
 MDB_NO_DIALOG 
   
-> Verhindert die Anzeige von Dialogfeldern für die Anmeldung. Wenn dieses Flag festgelegt ist, wird der Fehlerwert MAPI_E_LOGON_FAILED zurückgegeben, wenn die Anmeldung nicht erfolgreich ist. Wenn dieses Flag nicht festgelegt ist, kann der Nachricht Speicheranbieter fordert den Benutzer an den richtigen einen Namen oder das Kennwort, das zum Einfügen von eines Datenträgers oder andere Aktionen auszuführen, die Verbindung zu den Speicher erforderlich sind.
+> Verhindert die Anzeige von Anmelde Dialogfeldern. Wenn dieses Flag festgelegt ist, wird der Fehlerwert MAPI_E_LOGON_FAILED zurückgegeben, wenn die Anmeldung nicht erfolgreich ist. Wenn dieses Flag nicht festgelegt ist, kann der Nachrichtenspeicher Anbieter den Benutzer auffordern, einen Namen oder ein Kennwort zu korrigieren, einen Datenträger einzufügen oder andere Aktionen auszuführen, die erforderlich sind, um eine Verbindung mit dem Speicher herzustellen.
     
 MDB_NO_MAIL 
   
-> Der Nachrichtenspeicher sollte nicht für das Senden oder Empfangen von e-Mail verwendet werden. Das Flag signalisiert MAPI nicht für der MAPI-Warteschlange benachrichtigen, dass dieses Nachrichtenspeichers geöffnet wird. Wenn dieses Attribut festgelegt, und der Nachrichtenspeicher ist eng mit eines Transportdienstes gekoppelt, muss der Anbieter nicht die [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) -Methode aufrufen. 
+> Der Nachrichtenspeicher sollte nicht zum Senden oder empfangen von e-Mails verwendet werden. Das Flag signalisiert, dass MAPI den MAPI-Spooler nicht benachrichtigt, dass dieser Nachrichtenspeicher geöffnet wird. Wenn dieses Flag festgelegt ist und der Nachrichtenspeicher eng mit einem Transportanbieter gekoppelt ist, muss der Anbieter die [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode nicht aufrufen. 
     
 MDB_TEMPORARY 
   
-> Protokolle für den Speicher, sodass Informationen aus dem Profilabschnitt programmgesteuert abgerufen werden kann verwenden, ohne Dialogfelder. Dieses Kennzeichen weist MAPI, dass der Speicher ist nicht für die Nachricht Store-Tabelle hinzugefügt werden und der Speicher permanent hergestellt werden kann. Wenn dieses Flag festgelegt ist, müssen Nachricht Anbieter nicht die [IMAPISupport::ModifyProfile](imapisupport-modifyprofile.md) -Methode aufrufen. 
+> Protokolliert den Speicher, sodass Informationen programmgesteuert aus dem Abschnitt profile abgerufen werden können, ohne dass Dialogfelder verwendet werden. Dieses Flag weist MAPI darauf hin, dass der Informationsspeicher nicht der Nachrichtenspeichertabelle hinzugefügt werden soll und dass der Speicher nicht dauerhaft festgelegt werden kann. Wenn dieses Flag festgelegt ist, müssen die Nachrichtenspeicher Anbieter die [IMAPISupport:: ModifyProfile](imapisupport-modifyprofile.md) -Methode nicht aufrufen. 
     
 MDB_WRITE 
   
-> Anfragen Lese-/Schreibberechtigung.
+> Fordert Lese-/Schreibzugriff-Berechtigung an.
     
  _lpInterface_
   
-> [in] Ein Zeiger auf der Benutzeroberfläche IID (Identifier) für den Nachrichtenspeicher anmelden. Übergeben von **null** gibt an, dass die MAPI-Schnittstelle für den Nachrichtenspeicher ( [IMsgStore](imsgstoreimapiprop.md)) zurückgegeben wird. Der Parameter _LpInterface_ kann auch auf einen Bezeichner für eine entsprechende Schnittstelle für den Nachrichtenspeicher (beispielsweise IID_IUnknown oder IID_IMAPIProp) festgelegt werden. 
+> in Ein Zeiger auf die Schnittstellen-ID (IID) für den Nachrichtenspeicher, an dem sich die Anmeldung anmeldet. Übergeben von **null** gibt an, dass die MAPI-Schnittstelle für den Nachrichtenspeicher ( [IMsgStore](imsgstoreimapiprop.md)) zurückgegeben wird. Der _lpInterface_ -Parameter kann auch auf einen Bezeichner für eine entsprechende Schnittstelle für den Nachrichtenspeicher festgelegt werden (beispielsweise IID_IUnknown oder IID_IMAPIProp). 
     
  _lpcbSpoolSecurity_
   
-> [out] Ein Zeiger auf die Variable, die in der Speicheranbieter die Größe in Bytes, der im Parameter _LppbSpoolSecurity_ Validierungsdaten zurückgibt. 
+> Out Ein Zeiger auf die Variable, in der der Informationsspeicher Anbieter die Größe (in Bytes) der Validierungsdaten im _lppbSpoolSecurity_ -Parameter zurückgibt. 
     
  _lppbSpoolSecurity_
   
-> [out] Ein Zeiger auf den Zeiger auf das zurückgegebene Überprüfungsdaten. Diese Überprüfungsdaten werden bereitgestellt, sodass die [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) -Methode die MAPI-Warteschlange an den gleichen Speicher als den Anbieter für die Nachricht anmelden anmelden kann. 
+> Out Ein Zeiger auf den Zeiger auf die zurückgegebenen Validierungsdaten. Diese Validierungsdaten werden bereitgestellt, damit die [IMSProvider:: SpoolerLogon](imsprovider-spoolerlogon.md) -Methode den MAPI-Spooler in demselben Speicher wie der Nachrichtenspeicher Anbieter protokollieren kann. 
     
  _lppMAPIError_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene [MAPIERROR](mapierror.md) Struktur, falls vorhanden, die Angaben zu Version, Komponente und Kontext für einen Fehler enthält. Der Parameter _LppMAPIError_ kann auf **null** festgelegt werden, wenn es keine **MAPIERROR** -Struktur ist zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [MAPIERROR](mapierror.md) -Struktur, die Versions-, Komponenten-und Kontextinformationen für einen Fehler enthält. Der _lppMAPIError_ -Parameter kann auf **null** festgelegt werden, wenn keine **MAPIERROR** -Struktur zurückgegeben werden soll. 
     
  _lppMSLogon_
   
-> [out] Ein Zeiger auf den Zeiger auf die Nachricht speichern Objekt für die MAPI anmelden anmelden.
+> Out Ein Zeiger auf den Zeiger auf das Nachrichtenspeicher-Anmeldeobjekt für die Anmeldung bei MAPI.
     
  _lppMDB_
   
-> [out] Ein Zeiger auf den Zeiger auf die Nachricht speichern-Objekt für die MAPI-Warteschlange und Clientanwendungen anmelden.
+> Out Ein Zeiger auf den Zeiger auf das Nachrichtenspeicherobjekt für die MAPI-Spooler und Clientanwendungen, die sich bei anmelden.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -126,97 +126,97 @@ S_OK
     
 MAPI_E_FAILONEPROVIDER 
   
-> Diesen Anbieter können sich nicht anmelden, aber dieser Fehler sollten Sie den Dienst nicht deaktivieren. 
+> Dieser Anbieter kann sich nicht anmelden, aber dieser Fehler sollte den Dienst nicht deaktivieren. 
     
 MAPI_E_LOGON_FAILED 
   
-> Eine Sitzung konnte nicht hergestellt werden.
+> Es konnte keine Anmeldesitzung hergestellt werden.
     
 MAPI_E_UNCONFIGURED 
   
-> Das Profil enthält nicht ausreichend Informationen für die Anmeldung für die Durchführung. Wenn dieser Wert zurückgegeben wird, ruft MAPI-Funktion die Nachricht Speicheranbieter Messagingdiensts Eintrag.
+> Das Profil enthält nicht genügend Informationen, damit die Anmeldung abgeschlossen werden kann. Wenn dieser Wert zurückgegeben wird, ruft MAPI die Nachrichtendienst-Einstiegspunktfunktion des Nachrichtenspeicher Anbieters auf.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
     
 MAPI_E_UNKNOWN_CPID 
   
-> Der Server ist nicht zur Unterstützung der Codeseite für den Client konfiguriert.
+> Der Server ist nicht für die Unterstützung der Codeseite des Clients konfiguriert.
     
 MAPI_E_UNKNOWN_LCID 
   
-> Der Server ist nicht konfiguriert, um Gebietsschemainformationen des Clients zu unterstützen.
+> Der Server ist nicht für die Unterstützung der Gebietsschemainformationen des Clients konfiguriert.
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war erfolgreich, aber der Nachricht Speicheranbieter hat Fehlerinformationen verfügbar. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md). Wenn Sie die Fehlerinformationen vom Anbieter erhalten möchten, rufen Sie die [IMAPISession::GetLastError](imapisession-getlasterror.md) -Methode. 
+> Der Aufruf war erfolgreich, aber der Nachrichtenspeicher Anbieter hat Fehlerinformationen. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md). Rufen Sie die [IMAPISession:: getlasterroraufzurufen](imapisession-getlasterror.md) -Methode auf, um die Fehlerinformationen vom Anbieter abzurufen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-Aufrufen die **IMSProvider::Logon** -Methode dazu die Mehrzahl der Verarbeitung erforderlich sind, um Zugriff auf einen Nachrichtenspeicher zu erhalten. Nachricht Anbieter Überprüfen von Anmeldeinformationen erforderlich sind, um Zugriff auf einen bestimmten Speicher und ein Message Store-Objekt zurückzugeben, der _LppMDB_ -Parameter, der die MAPI-Warteschlange und Clientanwendungen anmelden können. 
+MAPI Ruft die **IMSProvider:: LOGON** -Methode auf, um die Mehrzahl der erforderlichen Verarbeitungsschritte für den Zugriff auf einen Nachrichtenspeicher auszuführen. Nachrichtenspeicher Anbieter überprüfen alle für den Zugriff auf einen bestimmten Speicher erforderlichen Benutzeranmeldeinformationen und geben ein Nachrichtenspeicherobjekt im _lppMDB_ -Parameter zurück, an dem sich die MAPI-Warteschlange und die Clientanwendungen anmelden können. 
   
-Zusätzlich zu den zurückgegebenen Message Store-Objekts für Client- und MAPI-Warteschlange verwendet gibt den Anbieter auch ein Message Store Anmeldung-Objekt für die MAPI zum Steuern des geöffneten Speichers verwenden. Message Store Anmeldung-Objekts und Message Store-Objekts sollte eng innerhalb der Nachricht Informationsdienst verknüpft werden, sodass jede der anderen auswirken kann. Die Verwendung von das Store-Objekt und das Anmeldeobjekt sollten identisch sein. So, dass die Objekte fungieren, als wären sie ein Objekt, das zwei Schnittstellen verfügbar macht sollte eine 1: 1-Beziehung zwischen der Anmeldung-Objekt und das Store-Objekt sein. Zwei Objekte sollten auch zusammen und freigegebenen zusammen erstellt werden. 
+Zusätzlich zum zurückgegebenen Nachrichtenspeicherobjekt für die Verwendung von Client-und MAPI-Spoolern gibt der Anbieter auch ein Nachrichtenspeicher-Anmeldeobjekt für MAPI zurück, das beim Steuern des geöffneten Speichers verwendet werden soll. Das Nachrichtenspeicher-Anmeldeobjekt und das Nachrichtenspeicherobjekt sollten eng innerhalb des Nachrichtenspeicher Anbieters miteinander verknüpft sein, damit sich jeder auf die andere auswirken kann. Die Verwendung des Store-Objekts und des LOGON-Objekts sollte identisch sein; Es sollte eine 1:1-Entsprechung zwischen dem Logon-Objekt und dem Store-Objekt vorhanden sein, sodass die Objekte so handeln, als ob es sich um ein Objekt handelt, das zwei Schnittstellen verfügbar macht. Die beiden Objekte sollten auch zusammen erstellt und freigegeben werden. 
   
-Das MAPI-Support-Objekt von MAPI erstellt und an den Anbieter in der _LpMAPISup_ -Parameter übergebene bietet Zugriff auf Funktionen in MAPI, die der Anbieter erforderlich sind. Dazu gehören Funktionen, die zu speichern und Abrufen von Profilinformationen, Zugriff auf Adressbücher und so weiter. Der Mauszeiger _LpMAPISup_ kann für jeden Speicher unterschiedlich sein, das geöffnet wird. Während der Verarbeitung für einen Nachrichtenspeicher nach der Anmeldung aufruft, sollten Speicheranbieter die Variable _LpMAPISup_ verwenden, die speziell für diesen Speicher ist. Für jeden Anruf **Anmeldung** , die einen Nachrichtenspeicher öffnet und erfolgreich abgeschlossen wird, bei der Erstellung einer Nachricht Store Anmeldung-Objekt der Anbieter muss einen Zeiger auf das MAPI-Support-Objekt im Speicher Anmeldung Objekt speichern und muss die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode zum Hinzufügen eines Verweises für aufrufen das Objekt unterstützt. 
+Das MAPI-Unterstützungsobjekt, erstellt von MAPI und im _lpMAPISup_ -Parameter an den Anbieter übergeben, ermöglicht den Zugriff auf Funktionen in MAPI, die vom Anbieter benötigt werden. Hierzu gehört auch die Funktion zum Speichern und Abrufen von Profilinformationen, Zugriffs Adressbüchern usw. Der _lpMAPISup_ -Zeiger kann für jeden geöffneten Speicher unterschiedlich sein. Während der Verarbeitung von Aufrufen für einen Nachrichtenspeicher nach der Anmeldung sollte der Informationsspeicher Anbieter die _lpMAPISup_ -Variable verwenden, die für diesen Speicher spezifisch ist. Bei einem **Anmelde** Anruf, bei dem ein Nachrichtenspeicher geöffnet und ein Nachrichtenspeicher-Anmeldeobjekt erstellt werden kann, muss der Anbieter einen Zeiger auf das MAPI-Unterstützungsobjekt im Store-Anmeldeobjekt speichern und die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode aufrufen, um einen Verweis auf das Support Objekt. 
   
-Der Parameter _UlUIParam_ sollte verwendet werden, wenn der Anbieter während des Anrufs **Anmeldung** Dialogfelder angezeigt. Dialogfelder sollte jedoch nicht angezeigt werden, wenn _UlFlags_ das MDB_NO_DIALOG-Flag enthält. Wenn eine Benutzeroberfläche aufgerufen werden muss, aber _UlFlags_ nicht zulassen oder einem anderen Grund eine Benutzeroberfläche angezeigt werden kann, sollte der Anbieter MAPI_E_LOGON_FAILED zurückgegeben. Wenn **Anmeldung** zeigt ein Dialogfeld an, und der Benutzer die Anmeldung abbricht, sollte in der Regel durch Klicken auf das Dialogfeld Schaltfläche **Abbrechen** des Anbieters MAPI_E_USER_CANCEL zurückgegeben werden. 
+Der Parameter _ulUIParam_ sollte verwendet werden, wenn der Anbieter während des **Anmelde** Aufrufs Dialogfelder anzeigt. Dialogfelder sollten jedoch nicht angezeigt werden, wenn _ulFlags_ das MDB_NO_DIALOG-Flag enthält. Wenn eine Benutzeroberfläche aufgerufen werden muss, aber _ulFlags_ dies nicht zulässt, oder wenn aus irgendeinem anderen Grund eine Benutzeroberfläche nicht angezeigt werden kann, sollte der Anbieter MAPI_E_LOGON_FAILED zurückgeben. Wenn bei der **Anmeldung** ein Dialogfeld angezeigt wird und der Benutzer die Anmeldung abbricht, in der Regel durch Klicken auf die Schaltfläche **Abbrechen** des Dialogfelds, sollte der Anbieter MAPI_E_USER_CANCEL zurückgeben. 
   
-Der Parameter _LpEntryID_ kann entweder **null** sein oder zeigen Sie auf eine allein stehenden Store Eintrags-ID, die diese Meldung speichern zuvor erstellt haben. Wenn _LpEntryID_ auf einen Bezeichner allein stehenden Eintrag zeigt, kann die Eintrags-ID aus eine der verschiedenen Orten stammen: 
+Der _lpEntryID_ -Parameter kann entweder **null** sein oder auf eine nicht eingeschlossene Speicher Eintrags-ID verweisen, die dieser Nachrichtenspeicher zuvor erstellt hat. Wenn _lpEntryID_ auf eine nicht umbrochene Eintrags-ID zeigt, kann diese Eintrags-ID von einer von mehreren Stellen stammen: 
   
-- Eine Eintrags-ID kann sein, die Speicheranbieter zuvor eingeschlossen und in den Profilabschnitt als Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) geschrieben haben.
+- Dabei kann es sich um eine Eintrags-ID handeln, die der Store-Anbieter zuvor verpackt und in den profile-Abschnitt als **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft geschrieben hat.
     
-- Eine Eintrags-ID kann sein, die der Anbieter zuvor eingeschlossen und an einen aufrufenden Client als Eigenschaft **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) zurückgegeben. 
+- Es kann sich um eine Eintrags-ID handeln, die der Anbieter zuvor umschlossen und an einen aufrufenden Client als **PR_STORE_ENTRYID** ([pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md))-Eigenschaft zurückgegeben hat. 
     
-- Es kann eine Eintrags-ID sein, die der Anbieter zuvor eingeschlossen und an einen aufrufenden Client als die **PR_ENTRYID** -Eigenschaft des Store-Objekt "Message" zurückgegeben. 
+- Es kann sich um eine Eintrags-ID handeln, die der Anbieter zuvor umschlossen und an einen aufrufenden Client als **PR_ENTRYID** -Eigenschaft eines Nachrichtenspeicher Objekts zurückgegeben hat. 
     
-In einen dieser Fälle ist es möglich, dass die Eintrags-ID auf einem anderen Computer als die aktuell verwendeten erstellt wurde.
+In einem dieser Fälle ist es möglich, dass die Eintrags-ID auf einem anderen Computer erstellt wurde als der, der derzeit verwendet wird.
   
-Wenn _LpEntryID_ nicht **null**ist, sollten sie alle Informationen zum Identifizieren und Auffinden des Nachrichtenspeichers benötigt enthalten. Diese Informationen kann Volume Netzwerknamen, Rufnummern, Benutzerkontonamen usw. enthalten. Wenn die Verbindung mit den Speicher mit den Daten in die Eintrags-ID festgelegt werden kann, sollte der Anbieter ein Dialogfeld angezeigt, die dem Benutzer ermöglicht, wählen Sie den Speicher geöffnet werden soll. Ein Dialogfeld wäre erforderlich, zum Beispiel ein Server umbenannt wurde, ein Kontonamen geändert wurde oder Teile des Netzwerks sind nicht verfügbar.
+Wenn _lpEntryID_ nicht **null**ist, sollte es alle erforderlichen Informationen enthalten, um den Nachrichtenspeicher zu identifizieren und zu suchen. Diese Informationen können Netzwerknamen, Telefonnummern, Benutzerkontonamen usw. aufweisen. Wenn die Verbindung mit dem Speicher nicht mithilfe der Daten in der Eintrags-ID hergestellt werden kann, sollte der Informationsspeicher Anbieter ein Dialogfeld anzeigen, in dem der Benutzer den zu öffnenden Speicher auswählen können. Möglicherweise ist ein Dialogfeld erforderlich, beispielsweise, wenn ein Server umbenannt wurde, ein Kontoname geändert oder Teile des Netzwerks nicht verfügbar sind.
   
-Wenn _LpEntryID_ **null**ist, hat der Nachrichtenspeicher verwenden Sie noch nicht ausgewählt. Der Anbieter kann weiterhin einen Speicher zugreifen, ohne dass ein Dialogfeld angezeigt, wenn weitere Methoden zum Angeben der Speichers unterstützt. Beispielsweise der Anbieter seine Initialisierungsdatei überprüfen kann, oder es kann Suchen nach zusätzlichen Eigenschaften, die an den oder die Nachricht des Dienstes Profilabschnitt an der Konfiguration vom abgelegt wurden.
+Wenn _lpEntryID_ ist ****, wurde der zu verwendende Nachrichtenspeicher noch nicht ausgewählt. Der Anbieter kann weiterhin auf einen Speicher zugreifen, ohne ein Dialogfeld anzuzeigen, wenn weitere Methoden zum Angeben des Speichers unterstützt werden. Beispielsweise kann der Anbieter seine Initialisierungsdatei überprüfen oder nach zusätzlichen Eigenschaften suchen, die im Profil Abschnitt des Nachrichtendiensts unter Konfiguration gespeichert wurden.
   
-Wenn ein Anbieter, dass alle erforderliche Informationen ist nicht im Profil feststellt, sollte MAPI_E_UNCONFIGURED zurückgegeben werden. MAPI ruft dann den Anbieter Nachricht Service Eintrag Point-Funktion zum Aktivieren des Benutzers einen Speicher auswählen, oder sogar zu erstellen und benötigt, um einen Kontonamen und ein Kennwort, als einzugeben. MAPI erstellt automatisch einen neuen Profilabschnitt für einen neuen Speicher. In diesem Profilabschnitt der neuen möglicherweise temporär oder dauerhaft, je nachdem, wie er hinzugefügt wurde. Wenn der Anbieter die **IMAPISupport::ModifyProfile** -Methode aufruft, der neuen Profilabschnitt dauerhaft entfernt wird, und der Speicher wird hinzugefügt, um die Liste der Informationsspeicher, die von der [IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode zurückgegeben. 
+Wenn ein Anbieter feststellt, dass alle erforderlichen Informationen nicht im Profil sind, sollte MAPI_E_UNCONFIGURED zurückgegeben werden. MAPI ruft dann die Nachrichtendienst-Einstiegspunktfunktion des Anbieters auf, um dem Benutzer zu ermöglichen, einen Speicher auszuwählen oder sogar einen zu erstellen, und bei Bedarf einen Kontonamen und ein Kennwort einzugeben. MAPI erstellt automatisch einen neuen Profil Abschnitt für einen neuen Speicher; Dieser neue Profil Abschnitt kann temporär oder permanent sein, je nachdem, wie er hinzugefügt wurde. Wenn der Informationsspeicher Anbieter die **IMAPISupport:: ModifyProfile** -Methode aufruft, wird der neue Profil Abschnitt permanent, und der Speicher wird der Liste der Nachrichtenspeicher hinzugefügt, die von der [IMAPISession:: GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode zurückgegeben werden. 
   
-Der _LpInterface_ -Parameter gibt die ID der Schnittstelle für die neu geöffnete Store-Objekt erforderlich. Übergeben von **null** in _LpInterface_ gibt an, dass die MAPI-Nachricht Store Schnittstelle **IMsgStore**, erforderlich ist. Übergeben das Objekt "Message" Store, IID_IMsgStore, gibt, dass **IMsgStore** erforderlich ist. Wenn IID_IUnknown _LpInterface_übergeben wird, sollte der Anbieter den Speicher öffnen Sie mithilfe der jeweilige Schnittstelle abgeleitet [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) ist am besten für den Anbieter (in diesem Fall ist dies in der Regel **IMsgStore**). Wenn IID_IUnknown übergeben wird, verwendet die aufrufende Implementierung die [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) -Methode, eine Schnittstelle auszuwählen, nachdem der Vorgang zum Öffnen von Store erfolgreich war. 
+Der Parameter _lpInterface_ gibt die IID der Schnittstelle an, die für das neu geöffnete Store-Objekt erforderlich ist. Durch das Übergeben von **null** in _lpInterface_ wird festgelegt, dass die MAPI-Nachrichtenspeicher Schnittstelle **IMsgStore**erforderlich ist. Das Übergeben des Nachrichtenspeicher Objekts, IID_IMsgStore, gibt auch an, dass **IMsgStore** erforderlich ist. Wenn IID_IUnknown in _lpInterface_übergeben wird, sollte der Anbieter den Speicher mithilfe der von [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) abgeleiteten Schnittstelle für den Anbieter öffnen (Dies ist in der Regel **IMsgStore**). Wenn IID_IUnknown übergeben wird, verwendet die aufrufende Implementierung die [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) -Methode, um eine Schnittstelle auszuwählen, nachdem der Store Open-Vorgang erfolgreich abgeschlossen wurde. 
   
-Der Anruf **IMSProvider::Logon** sollte über ausreichend Informationen, wie beispielsweise einen Pfad zu den Speicher und die Anmeldeinformationen für den Zugriff auf den Speicher, damit die MAPI-Warteschlange an den gleichen Speicher, die Speicheranbieter ausführt, ohne dass ein Dialogfeld anmelden können zurückgegeben werden. Die Parameter _LpcbSpoolSecurity_ und _LppbSpoolSecurity_ werden verwendet, um diese Informationen zurückzugeben. Der Anbieter weist den Speicher für diese Daten, indem Sie einen Zeiger auf einen Puffer in die [MSProviderInit](msproviderinit.md) -Funktion _LpfAllocateBuffer_ -Parameter übergeben; der Anbieter platziert die Größe dieses Puffers in _LpcbSpoolSecurity_. 
+Der **IMSProvider:: LOGON** -Aufruf sollte genügend Informationen zurückgeben, beispielsweise einen Pfad zum Speicher und die Anmeldeinformationen für den Zugriff auf den Speicher, damit sich der MAPI-Spooler an demselben Speicher anmelden kann, den der Informationsspeicher Anbieter ausführt, ohne ein Dialogfeld zu präsentieren. Die Parameter _lpcbSpoolSecurity_ und _lppbSpoolSecurity_ werden verwendet, um diese Informationen zurückzugeben. Der Anbieter ordnet den Speicher für diese Daten an, indem er einen Zeiger auf einen Puffer im _lpfAllocateBuffer_ -Parameter der [MSProviderInit](msproviderinit.md) -Funktion übergibt. der Anbieter platziert die Größe dieses Puffers in _lpcbSpoolSecurity_. 
   
-MAPI gibt dieser Puffer bei Bedarf frei. Wenn die MAPI-Warteschlange melden Sie sich an den Speicher von den Informationen im Profilabschnitt allein durchgeführt werden kann, kann der Anbieter in _LppbSpoolSecurity_ und 0 für die Informationen Größe in _LpcbSpoolSecurity_null zurück. Die MAPI-Warteschlange Anmeldung tritt im Rahmen von einem anderen Prozess als die Anmeldung Store; Da der Puffer, der die übergebene Informationen enthält, zwischen Prozessen kopiert Ruft ab, nicht im Arbeitsspeicher am selben Speicherort für den MAPI-Warteschlange Prozess wie bei der Speichervorgang Anbieter wird möglicherweise. Aus diesem Grund sollten kein Anbieter Adressen in dieser Puffer eingefügt. Weitere Informationen zu MAPI-Warteschlange Anmeldung finden Sie unter der [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) -Methode. 
+MAPI gibt diesen Puffer bei Bedarf frei. Wenn die Anmeldung des MAPI-Spoolers an den Speicher allein aus den Informationen im Profil Abschnitt erfolgen kann, kann der Anbieter in _lppbSpoolSecurity_ und 0 für die Größe der Informationen in _lpcbSpoolSecurity_NULL zurückgeben. Die MAPI-Spooler-Anmeldung tritt als Teil eines anderen Prozesses als die Speicher Anmeldung auf. Da der Puffer, der die übergebenen Informationen enthält, zwischen Prozessen kopiert wird, befindet er sich möglicherweise nicht am selben Speicherort für den MAPI-Spooler-Prozess wie für den Speicheranbieter Prozess. Daher sollte ein Anbieter keine Adressen in diesen Puffer setzen. Weitere Informationen zur MAPI-Spooler-Anmeldung finden Sie unter der [IMSProvider:: SpoolerLogon](imsprovider-spoolerlogon.md) -Methode. 
   
-Die meisten Anbieter verwenden die [IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) -Methode des im Parameter _LpMAPISup_ zum Speichern und Abrufen von Benutzeranmeldeinformationen und Optionen übergebenen Support-Objekts. **"OpenProfileSection"** können einen Anbieter anmelden zum Speichern beliebiger Zusatzinformationen in einem Profilabschnitt, und ordnen Sie ihm eine bestimmte Ressource. Ein Anbieter anmelden kann beispielsweise den Benutzernamen und das Kennwort zugeordnet einer Ressource und Pfade oder andere Informationen, die für diese Ressource Zugriff auf Speichern. 
+Die meisten Speicheranbieter verwenden die [IMAPISession:: OpenProfileSection](imapisession-openprofilesection.md) -Methode des Support-Objekts, das im _lpMAPISup_ -Parameter zum Speichern und Abrufen von Benutzeranmeldeinformationen und-Optionen übergeben wird. **OpenProfileSection** ermöglicht einem Speicheranbieter das Speichern zusätzlicher beliebiger Informationen in einem Profil Abschnitt und das Zuordnen zu einer bestimmten Ressource. Ein Speicheranbieter kann beispielsweise den Namen und das Kennwort eines Benutzers speichern, die einer Ressource zugeordnet sind, sowie alle Pfade oder andere Informationen, die für den Zugriff auf diese Ressource benötigt werden. 
   
-Eigenschaften mit Eigenschaftenbezeichner 0x6600 über 0x67FF sind sicheren Eigenschaften an den Anbieter zur eigenen Verwendung zum Speichern privater Daten im Profil Abschnitte zur Verfügung. Weitere Informationen zu den Verwendungsmöglichkeiten von Eigenschaften im Benutzerprofil Section-Objekten, finden Sie unter der [IProfSect: IMAPIProp](iprofsectimapiprop.md) Methode. 
+Eigenschaften mit Eigenschafts Bezeichnern 0x6600 bis 0x67FF sind sichere Eigenschaften, die dem Anbieter zur eigenen Verwendung zum Speichern privater Daten in Profil Abschnitten zur Verfügung stehen. Weitere Informationen zu den Verwendungsmöglichkeiten von Eigenschaften in Profil Abschnitts Objekten finden Sie unter der [IProfSect: IMAPIProp](iprofsectimapiprop.md) -Methode. 
   
-Zusätzlich zu privaten Daten in Eigenschaften mit Bezeichnern 0x6600 über 0x67FF sollten Speicheranbieter Informationen für die Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) in einem Profilabschnitt bereitstellen. Sie sollten in **PR_DISPLAY_NAME** den Anzeigenamen des Anbieters selbst – eine Zeichenfolge zur Identifizierung (z. B. "Microsoft Personal Information Store"), die Benutzern angezeigt werden, damit sie dieses Nachrichtenspeichers von anderen unterscheiden können, sie möglicherweise Zugriff haben An. **PR_DISPLAY_NAME** enthält häufig Servernamen, den Namen des Benutzerkontos oder den Pfad. 
+Zusätzlich zu privaten Daten in Eigenschaften mit Bezeichnern 0x6600 bis 0x67FF sollte der Informationsspeicher Anbieter Informationen für die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft im Profil Abschnitt bereitstellen. Sie sollte den Anzeigenamen des Anbieters selbst **PR_DISPLAY_NAME** – eine identifizierende Zeichenfolge (beispielsweise "Microsoft Personal Information Store"), die für die Benutzer angezeigt wird, damit Sie diesen Nachrichtenspeicher von anderen Benutzern unterscheiden können, auf die Sie möglicherweise Zugriff haben. An. **PR_DISPLAY_NAME** enthält häufig einen Servernamen, einen Benutzerkontonamen oder einen Pfad. 
   
-Einige im Abschnitt Benutzerprofileigenschaften sind in der Nachricht Store Tabelle angezeigt. andere Benutzer werden während des Setups, Installation und Konfiguration des MAPI-Subsystems angezeigt. Der Anbieter enthält in der Regel Informationen für diese sichtbaren Eigenschaften für einen neuen Profilabschnitt, der noch enthält keine gespeicherten Anmeldeinformationen und privaten Informationen, und wenn es findet, dass Eigenschaftsinformationen geändert hat. Weitere Informationen über Profil Abschnitte finden Sie unter [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md).
+Einige Profil Abschnittseigenschaften sind in der Nachrichtenspeichertabelle sichtbar. andere sind während der Installation und Konfiguration des MAPI-Subsystems sichtbar. Der Anbieter bietet in der Regel Informationen zu diesen sichtbaren Eigenschaften für einen neuen Profil Abschnitt, der noch keine gespeicherten Anmeldeinformationen oder privaten Informationen enthält, und wenn er feststellt, dass sich Eigenschaftsinformationen geändert haben. Weitere Informationen zu Profil Abschnitten finden Sie unter [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md).
   
-Nach der erfolgreichen Anmeldung eines Benutzers und vor der Rückgabe MAPI, sollte der Anbieter das Array von Eigenschaften für die Statuszeile für die Ressource zu erstellen und die [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode aufzurufen. 
+Nach der erfolgreichen Anmeldung eines Benutzers und vor der Wiederherstellung an MAPI sollte der Anbieter das Array von Eigenschaften für die Statuszeile für die Ressource erstellen und die [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode aufrufen. 
   
- **Anmeldung** -Anrufe, die Nachrichtenspeicher zu öffnen, die bereits für die aktuelle MAPI-Sitzung geöffnet sind überspringen Großteil der Verarbeitung weiter oben beschrieben. Bei diesen anrufen führen Sie nicht Status Zeilen erstellen, Message Store Anmeldung Objekte zurückgeben, aufrufen, **AddRef** für das MAPI-Support-Objekt oder Daten für die MAPI-Warteschlange Anmeldung zurück. Bei diesen anrufen S_OK zurück und eine Nachricht Store-Objekt mit der angeforderten Schnittstelle zurück. 
+ **Anmelde** Anrufe, die bereits für die aktuelle MAPI-Sitzung geöffnete Nachrichtenspeicher öffnen, überspringen einen Großteil der zuvor beschriebenen Verarbeitung. Mit diesen Aufrufen werden keine Statuszeilen erstellt, Anmeldeobjekte für den Nachrichtenspeicher zurückgegeben, **AddRef** für das MAPI-Support Objekt aufgerufen oder Daten für die MAPI-Spooler-Anmeldung zurückgegeben. Diese Aufrufe geben S_OK zurück und geben ein Nachrichtenspeicherobjekt mit der angeforderten Schnittstelle zurück. 
   
-Um solcher Anrufe zu erkennen, sollte der Anbieter eine Liste in Message-Speicher-Anbieter-Objekts der Speicher für dieses Anbieterobjekt bereits geöffnet zu verwalten. Bei der Verarbeitung eines Anrufs **Anmeldung** sollte der Anbieter dieser Liste der open-Speicher zu überprüfen und bestimmen, ob der Speicher auf protokolliert werden bereits geöffnet ist. Wenn dies der Fall, Benutzeranmeldeinformationen müssen nicht überprüft werden soll, und die Anzeige eines Dialogfelds sollte vermieden werden, wenn möglich. Wenn Dialogfelder angezeigt werden müssen, sollte der Anbieter zurückgegebenen Informationen, um festzustellen, ob ein Speicher ein zweites Mal geöffnet wurde überprüfen. Darüber hinaus der Anbieter sollte prüfen, ob doppelte öffnen mithilfe von _LpEntryID_ am Anfang der **Anmeldung** Anruf verarbeitet. 
+Um solche Aufrufe zu identifizieren, sollte der Anbieter eine Liste im Nachrichtenspeicher-Anbieterobjekt von Speichern verwalten, die bereits für dieses Anbieterobjekt geöffnet sind. Bei der Verarbeitung eines **Anmelde** Anrufs sollte der Anbieter diese Liste der geöffneten Speicher überprüfen und ermitteln, ob der zu angemeldete Speicher bereits geöffnet ist. Wenn dies der Fall ist, müssen die Benutzeranmeldeinformationen nicht überprüft werden, und die Anzeige eines Dialogfelds sollte möglichst vermieden werden. Wenn Dialogfelder angezeigt werden müssen, sollte der Anbieter zurückgegebene Informationen überprüfen, um festzustellen, ob ein Speicher ein zweites Mal geöffnet wurde. Darüber hinaus sollte der Anbieter mithilfe von _lpEntryID_ zu Beginn der Verarbeitung von **Anmelde** anrufen nach doppelten Öffnungen suchen. 
   
-Verarbeitung für eine **Anmeldung** Aufruf, der geöffneten Shop greift auf Standard lautet wie folgt: 
+Standard Verarbeitung für einen **Anmelde** Anruf, der auf einen geöffneten Speicher zugreift, lautet wie folgt: 
   
-1. Speicheranbieter ruft **AddRef** für das vorhandene Store-Objekt, wenn die neue Benutzeroberfläche angefordert wird die Schnittstelle für den vorhandenen Store identisch ist. Andernfalls wird die **QueryInterface** , um die neue Benutzeroberfläche zu erhalten. Wenn der Informationsspeicher die neue Benutzeroberfläche nicht unterstützt, sollte der Anbieter den Fehlerwert MAPI_E_INTERFACE_NOT_SUPPORTED zurückgegeben. 
+1. Der Informationsspeicher Anbieter ruft **AddRef** für das vorhandene Store-Objekt auf, wenn die angeforderte neue Schnittstelle mit der Schnittstelle für den vorhandenen Speicher identisch ist. Andernfalls wird **QueryInterface** aufgerufen, um die neue Schnittstelle abzurufen. Wenn der Informationsspeicher die neue Schnittstelle nicht unterstützt, sollte der Anbieter den Fehlerwert MAPI_E_INTERFACE_NOT_SUPPORTED zurückgeben. 
     
-2. Der Anbieter gibt einen Zeiger auf die erforderliche Schnittstelle des vorhandenen Store-Objekts in _LppMDB_.
+2. Der Anbieter gibt einen Zeiger auf die erforderliche Schnittstelle des vorhandenen Store-Objekts in _lppMDB_zurück.
     
-3. Der Anbieter gibt in _LppMSLogon_ **null** zurück.
+3. Der Anbieter gibt in _lppMSLogon_ **null** zurück.
     
-4. Der Anbieter sollte das Profil für den Anruf übergebenen Support-Objekt nicht geöffnet werden. Darüber hinaus sollten nicht registrieren ein eindeutigen Bezeichners für Anbieter, Registrieren einer Statuszeile oder MAPI-Warteschlange Anmeldung Daten zurückgeben.
+4. Der Anbieter sollte das Profil für das im Aufruf übergebene Support Objekt nicht öffnen. Darüber hinaus sollte er keinen Anbieter eindeutigen Bezeichner registrieren, eine Statuszeile registrieren oder MAPI-Spooler-Anmeldedaten zurückgeben.
     
-5. Der Anbieter sollte keine **AddRef** für das Objekt Support aufrufen, da einen Zeiger auf das Objekt nicht erforderlich ist. 
+5. Der Anbieter sollte nicht **AddRef** für das Support-Objekt aufrufen, da es keinen Zeiger auf das Objekt erfordert. 
     
-Wenn möglich, Anbieter sollte die entsprechende Fehlermeldung zurückgegeben und Warnung Zeichenfolgen für die **Anmeldung** Aufrufe, da dies erheblich erleichtert die Last der Benutzer bei der Bestimmung, warum etwas nicht funktioniert. Wenn diese Zeichenfolgen zurückgeben möchten, legt ein Anbieter für die Mitglieder in der Struktur **MAPIERROR** fest. MAPI für sucht, verwendet und die Struktur **MAPIERROR** frei, wenn es von einem Anbieter zurückgegeben wird. 
+Wenn möglich, sollten Anbieter entsprechende Fehler-und Warn Zeichenfolgen für **Anmelde** Aufrufe zurückgeben, da dadurch die Benutzerbelastung erheblich erleichtert wird, wenn Sie ermitteln, warum etwas nicht funktioniert hat. Um diese Zeichenfolgen zurückzugeben, legt ein Anbieter die Member in der **MAPIERROR** -Struktur fest. MAPI sucht, verwendet und veröffentlicht die **MAPIERROR** -Struktur, wenn Sie von einem Anbieter zurückgegeben wird. 
   
-Arbeitsspeicher für diese Struktur **MAPIERROR** sollte mit dem Gespräch **MSProviderInit** _LpfAllocateBuffer_ übergebene Puffer zugewiesen werden. Etwaige Fehler, die Zeichenfolgen in der zurückgegebenen Struktur enthalten im Unicode-Format werden soll, wenn der Parameter MAPI_UNICODE in die **Anmeldung** _UlFlags;_ andernfalls festgelegt ist, sollten sie in das ANSI-Zeichen festgelegt werden. 
+Der Speicher für diese **MAPIERROR** -Struktur sollte mithilfe des Puffers zugewiesen werden, der in _LpfAllocateBuffer_ für den **MSProviderInit** -Aufruf übergeben wird. Alle in der zurückgegebenen Struktur enthaltenen Fehlerzeichenfolgen sollten im Unicode-Format vorliegen, wenn MAPI_UNICODE in der **Anmelde** _ulFlags_ festgelegt ist; andernfalls sollten Sie sich im ANSI-Zeichensatz befinden. 
   
-Für die meisten zurückgegebenen Fehlerwerte von **Anmeldung**deaktiviert MAPI die Message-Dienste zu denen der fehlerhaften Anbieter gehört. MAPI rufen keine Anbieter, die zu dieser Dienste während der Lebensdauer der MAPI-Sitzung gehören. Im Gegensatz dazu bei der **Anmeldung** von dessen Anmeldung den Fehlerwert MAPI_E_FAILONEPROVIDER zurückgibt, wird MAPI nicht den Dienst deaktiviert zu dem der Anbieter gehört. **Anmeldung** sollte MAPI_E_FAILONEPROVIDER zurückgegeben, wenn ein Fehler auftritt, der nicht den gesamten Dienst für die Lebensdauer der Sitzung deaktivieren rechtfertigen ist. Beispielsweise könnte ein Anbieter dieser Fehler zurück, wenn nicht die Anzeige einer Benutzeroberfläche lässt und ein Kennwort erforderlich nicht verfügbar ist. 
+Bei den meisten Fehlerwerten, die von der **Anmeldung**zurückgegeben werden, deaktiviert MAPI die Nachrichtendienste, zu denen der fehlerhafte Anbieter gehört. MAPI Ruft für die Lebensdauer der MAPI-Sitzung keine Anbieter auf, die zu diesen Diensten gehören. Wenn der MAPI_E_FAILONEPROVIDER- **** Fehlerwert von der Anmeldung zurückgegeben wird, deaktiviert MAPI hingegen den Nachrichtendienst, zu dem der Anbieter gehört. Bei der **Anmeldung** sollte MAPI_E_FAILONEPROVIDER zurückgegeben werden, wenn ein Fehler auftritt, der die Deaktivierung des gesamten Diensts für die Dauer der Sitzung nicht zulässt. Beispielsweise kann ein Anbieter diesen Fehler zurückgeben, wenn er die Anzeige einer Benutzeroberfläche nicht zulässt und ein erforderliches Kennwort nicht verfügbar ist. 
   
-Wenn ein Anbieter von dessen Anmeldung MAPI_E_UNCONFIGURED zurückgibt, wird MAPI Aufrufen des Anbieters Nachricht Service Eintrag-Funktion und wiederholen Sie die Anmeldung. MAPI übergibt MSG_SERVICE_CONFIGURE als Kontext aus, um dem Dienst selbst konfigurieren kann. Wenn der Client sich entschieden hat, um eine Benutzeroberfläche für die Anmeldung zu ermöglichen, kann der Dienst das Eigenschaftenblatt Konfiguration darstellen, damit der Benutzer Informationen eingeben kann.
+Wenn ein Anbieter MAPI_E_UNCONFIGURED von seiner Anmeldung zurückgibt, ruft MAPI die Nachrichtendienst-Eintrags Funktion des Anbieters auf und wiederholt die Anmeldung. MAPI übergibt MSG_SERVICE_CONFIGURE als Kontext, um dem Dienst die Möglichkeit zu geben, sich selbst zu konfigurieren. Wenn der Client eine Benutzeroberfläche für die Anmeldung zulässt, kann der Dienst sein Konfigurationseigenschaften Blatt anzeigen, damit der Benutzerkonfigurationsinformationen eingeben kann.
   
 ## <a name="see-also"></a>Siehe auch
 

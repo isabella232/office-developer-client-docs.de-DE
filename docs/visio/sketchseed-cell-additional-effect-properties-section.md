@@ -1,26 +1,26 @@
 ---
-title: SketchSeed Cell (Additional Effect Properties Section)
+title: SketchSeed Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f62650d-36f8-4c6e-b79f-c9c397a5954d
-description: Stellt einen zufällige Wert verwendet, um die Geometrie einer Skizze Auswirkung, wie eine positive ganze Zahl zu bestimmen. Der Wert der Zelle SketchSeed wird nach dem Zufallsprinzip erstellt, wenn eine Skizze Auswirkung auf die Form angewendet wird.
-ms.openlocfilehash: 7c9d23e19da1a94bb37f1fc916e2f08095976d09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Stellt einen Zufallswert dar, der verwendet wird, um die Geometrie eines Skizzen Effekts als positive Ganzzahl zu bestimmen. Der Wert der SketchSeed-Zelle wird nach dem Zufallsprinzip erstellt, wenn ein skizzeneffekt auf die Form angewendet wird.
+ms.openlocfilehash: 3ec58fbfa183d1a6d7bb6960672658f9a6cca073
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315148"
 ---
-# <a name="sketchseed-cell-additional-effect-properties-section"></a>SketchSeed Cell (Additional Effect Properties Section)
+# <a name="sketchseed-cell-additional-effect-properties-section"></a>SketchSeed Cell (Additional Effect Properties section)
 
-Stellt einen zufällige Wert verwendet, um die Geometrie einer Skizze Auswirkung, wie eine positive ganze Zahl zu bestimmen. Der Wert der Zelle **SketchSeed** wird nach dem Zufallsprinzip erstellt, wenn eine Skizze Auswirkung auf die Form angewendet wird. 
+Stellt einen Zufallswert dar, der verwendet wird, um die Geometrie eines Skizzen Effekts als positive Ganzzahl zu bestimmen. Der Wert der **SketchSeed** -Zelle wird nach dem Zufallsprinzip erstellt, wenn ein skizzeneffekt auf die Form angewendet wird. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **SketchSeed** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **SketchSeed** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

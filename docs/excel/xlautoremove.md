@@ -7,26 +7,26 @@ ms.topic: reference
 f1_keywords:
 - xlAutoRemove
 keywords:
-- Xlautoremove-Funktion [excel 2007]
+- xlAutoRemove-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: fff0de4d-605d-49e6-a5be-a000410c09d8
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 6e5daac21a6d89472a7d84a25e9aeaea56db1ae1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: af8bd2d44883b1820be42b82d4fe4794fa29caab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310283"
 ---
 # <a name="xlautoremove"></a>xlAutoRemove
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird von Microsoft Excel aufgerufen, wenn der Benutzer mit dem Add-In-Manager die XLL während einer Sitzung Excel deaktiviert. Diese Funktion ist nicht aufgerufen, wenn eine Excel-Sitzung, ordnungsgemäß oder nicht ordnungsgemäß, mit der Add-in installiert wird geschlossen.
+Wird von Microsoft Excel aufgerufen, wenn der Benutzer die XLL während einer Excel-Sitzung mithilfe des Add-in-Managers deaktiviert. Diese Funktion wird nicht aufgerufen, wenn eine Excel-Sitzung mit dem installierten Add-In (ordnungsgemäß oder unerwartet) beendet wird.
   
-Diese Funktion kann zum Anzeigen eines benutzerdefinierten Dialogfelds, die den Anwender darüber, dass das Add-in deaktiviert wurde, oder zum Lesen oder Schreiben in die Registrierung, zum Beispiel verwendet werden.
+Diese Funktion kann verwendet werden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer mitteilt, dass das Add-in deaktiviert wurde, oder beispielsweise in die Registrierung zu lesen oder zu schreiben.
   
-Excel erfordert eine XLL zu implementieren und exportieren Sie diese Funktion nicht. 
+Excel benötigt keine XLL, um diese Funktion zu implementieren und zu exportieren. 
   
 ```cs
 int WINAPI xlAutoRemove(void);
@@ -34,19 +34,19 @@ int WINAPI xlAutoRemove(void);
 
 ## <a name="parameters"></a>Parameter
 
-Diese Funktion hat keine Argumente.
+Diese Funktion verwendet keine Parameter.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Die Implementierung dieser Funktion muss 1 (**Int**) zurückgeben.
+Die Implementierung dieser Funktion muss 1 zurückgeben (**Int**).
   
 ## <a name="remarks"></a>Hinweise
 
-Verwenden Sie diese Funktion, wenn Ihre XLL muss jede Aufgabe abschließen, wenn es vom Add-In-Manager entfernt wird.
+Verwenden Sie diese Funktion, wenn Ihre XLL eine Aufgabe ausführen muss, wenn Sie vom Add-in-Manager entfernt wird.
   
 ## <a name="example"></a>Beispiel
 
-Finden Sie die Dateien `\SAMPLES\EXAMPLE\EXAMPLE.C` und `\SAMPLES\GENERIC\GENERIC.C` beispielsweise Implementierungen von dieser Funktion. Der folgende Code ist aus `\SAMPLES\EXAMPLE\EXAMPLE.C`.
+Schauen Sie sich die Dateien `\SAMPLES\EXAMPLE\EXAMPLE.C` und `\SAMPLES\GENERIC\GENERIC.C` für Beispiel-Implementierungen dieser Funktion an. Der folgende Code stammt aus `\SAMPLES\EXAMPLE\EXAMPLE.C`.
   
 ```cs
 int WINAPI xlAutoRemove(void)
@@ -66,5 +66,5 @@ int WINAPI xlAutoRemove(void)
 [xlAutoAdd](xlautoadd.md)
 
 
-[Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
+[Add-In-Manager und XLL-Benutzeroberflächenfunktionen](add-in-manager-and-xll-interface-functions.md)
 

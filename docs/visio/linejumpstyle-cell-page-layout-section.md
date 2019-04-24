@@ -9,23 +9,23 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 89f16674-ee1f-f5f9-9830-7bcc52e3a068
 description: Bestimmt das Liniensprungformat für sämtliche Verbinder auf dem Zeichenblatt, die kein lokales Liniensprungformat haben.
-ms.openlocfilehash: 96941f675b67b38a8575bd712db5ad0eb76cd50f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 066c96f659061290b825684a479432e6d71f518c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316436"
 ---
-# <a name="linejumpstyle-cell-page-layout-section"></a>LineJumpStyle Cell (Page Layout Section)
+# <a name="linejumpstyle-cell-page-layout-section"></a>Zelle "LineJumpStyle" (Abschnitt "Page Layout")
 
 Bestimmt das Liniensprungformat für sämtliche Verbinder auf dem Zeichenblatt, die kein lokales Liniensprungformat haben.
   
 |**Wert**|**Liniensprungformat**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|0  <br/> |Bogen  <br/> |**visLOJumpStyleDefault** <br/> |
-|1  <br/> |Bogen  <br/> |**visLOJumpStyleArc** <br/> |
+|0  <br/> |Bogens  <br/> |**visLOJumpStyleDefault** <br/> |
+|1  <br/> |Bogens  <br/> |**visLOJumpStyleArc** <br/> |
 |2  <br/> |Lücke  <br/> |**visLOJumpStyleGap** <br/> |
-|3  <br/> |Quadrat  <br/> |**visLOJumpStyleSquare** <br/> |
+|3  <br/> |Square  <br/> |**visLOJumpStyleSquare** <br/> |
 |4  <br/> |2 Seiten  <br/> |**visLOJumpStyleTriangle** <br/> |
 |5  <br/> |3 Seiten  <br/> |**visLOJumpStyle2Point** <br/> |
 |6  <br/> |4 Seiten  <br/> |**visLOJumpStyle3Point** <br/> |
@@ -37,13 +37,13 @@ Bestimmt das Liniensprungformat für sämtliche Verbinder auf dem Zeichenblatt, 
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle LineJumpStyle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineJumpStyle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LineJumpStyle  <br/> |
+|Zellenname:  <br/> |Zelle LineJumpStyle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineJumpStyle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineJumpStyle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

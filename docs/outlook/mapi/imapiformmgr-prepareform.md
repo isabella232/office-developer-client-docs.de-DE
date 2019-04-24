@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 8f8ee2cb-1c2a-4958-b01e-2f4aab689f89
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6e8ea7230ae86dee99cc4413715055fc53afa900
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d0d5d8fe13a3c192dc0b0a8ddc0f5f945fa16f15
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321812"
 ---
 # <a name="imapiformmgrprepareform"></a>IMAPIFormMgr::PrepareForm
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Downloads für ein Formular zu öffnen.
+Lädt ein Formular zum Öffnen herunter.
   
 ```cpp
 HRESULT PrepareForm(
@@ -39,31 +39,31 @@ HRESULT PrepareForm(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster der Statusanzeige, die angezeigt wird, während das Formular heruntergeladen wird. Der Parameter _UlUIParam_ wird ignoriert, es sei denn, das Flag MAPI_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Handle für das übergeordnete Fenster der Statusanzeige, das angezeigt wird, während das Formular heruntergeladen wird. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das MAPI_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Formular heruntergeladen wird. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die das Herunterladen des Formulars steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_DIALOG 
   
-> Zeigt eine Benutzeroberfläche zum Bereitstellen von Status oder auffordern, Weitere Informationen. Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
+> Zeigt eine Benutzeroberfläche an, um den Status anzugeben oder den Benutzer aufzufordern, weitere Informationen zu erhalten. Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
     
  _pfrmiInfo_
   
-> [in] Ein Zeiger auf ein Formular Informationen-Objekt für das Formular heruntergeladen werden.
+> in Ein Zeiger auf ein Formular Informationsobjekt für das Formular heruntergeladen werden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormMgr::PrepareForm** -Methode, um ein Formular Container für das Öffnen ein Formulars heruntergeladen werden. Die meisten Formular Viewer müssen nicht **PrepareForm**, aufrufen, da die [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) und die [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md) Methoden **PrepareForm**, rufen Sie bei Bedarf. 
+Formular Betrachter rufen die **IMAPIFormMgr::P repareform** -Methode auf, um ein Formular aus einem Formular Container zum Öffnen herunterzuladen. Die meisten Formular Betrachter müssen **PrepareForm**nicht aufrufen, da die Methoden [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) und [IMAPIFormMgr:: LoadForm](imapiformmgr-loadform.md) **PrepareForm**bei Bedarf aufrufen. 
   
-Sie können **PrepareForm** verwenden, um die Dynamic Link Libraries (DLLs) und andere Dateien, die sie zum Ändern eines Formulars zugeordnet abzurufen. Wenn das geänderte Formular wieder in dessen Container Formular geladen wird, muss es neu installiert werden. 
+Sie können **PrepareForm** verwenden, um die DLLs (Dynamic Link Libraries) und andere Dateien abzurufen, die einem Formular zugeordnet sind, um Sie zu ändern. Wenn das geänderte Formular wieder in seinen Formular Container geladen wird, muss es erneut installiert werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
