@@ -5,149 +5,149 @@ ms.date: 11/08/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5b48958e-6dab-4121-871f-fb15f58f1b24
-description: 'Anwendungsentwickler kann eine Project Online Site (SharePoint gehostet) mithilfe von eigenständigen Applications und/oder Projekt-add-ins anpassen. Eine Vielzahl von Clientanwendungen ist möglich, die im Bereich von Adressierung Beteiligten in einem Projekt auf PMO Support-Funktionen, beispielsweise eine der folgenden Anforderungen:'
+description: 'Ein Anwendungsentwickler kann eine Project Online-Website (in SharePoint gehostet) mithilfe eigenständiger Anwendungen und/oder Projekt-Add-Ins anpassen. Es gibt eine Vielzahl von Anwendungen, die von den Anforderungen der Beteiligten an einem Projekt bis hin zu PMO-Supportfunktionen reichen, wie beispielsweise einem der folgenden:'
 ms.openlocfilehash: 00f79b05b886bfd2c54c118245e22f10bb5451bf
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344408"
 ---
 # <a name="from-0-to-60-with-project-online"></a>Von 0 auf 100 mit Project Online
 
-Anwendungsentwickler kann eine Project Online Site (SharePoint gehostet) mithilfe von eigenständigen Applications und/oder Projekt-add-ins anpassen. Eine Vielzahl von Clientanwendungen ist möglich, die im Bereich von Adressierung Beteiligten in einem Projekt auf PMO Support-Funktionen, beispielsweise eine der folgenden Anforderungen:
+Ein Anwendungsentwickler kann eine Project Online-Website (in SharePoint gehostet) mithilfe eigenständiger Anwendungen und/oder Projekt-Add-Ins anpassen. Es gibt eine Vielzahl von Anwendungen, die von den Anforderungen der Beteiligten an einem Projekt bis hin zu PMO-Supportfunktionen reichen, wie beispielsweise einem der folgenden:
   
-- Optimierte Zeitkarte Dateneingabe für Mitarbeiter
-- Effiziente Zeitkarte Genehmigung für Vorgesetzte
-- Aufsicht über ermöglicht (Beschaffung und Status) für ein Projekt erforderlich ist
-- Status/Überprüfung des aktiven Projekte
+- Optimierter Zeitkarten Dateneintrag für Arbeitskräfte
+- Effiziente Zeitkarten Genehmigung für Vorgesetzte
+- Aufsicht über Genehmigungen (Beschaffung und Status), die für ein Projekt erforderlich sind
+- Status/Integritätsprüfung aktiver Projekte
 - Problembericht
-- Ändern von Management Statusbericht
+- Change Management-Status Bericht
     
-Project Online enthält die API-Unterstützung, um die folgenden Szenarien zu ermöglichen:
+Project Online umfasst API-Unterstützung für die folgenden Szenarien:
   
-- Für ein Projekt (SharePoint) gehostet add-in:
+- Für ein gehostetes Projekt (SharePoint):
     
-  - Code (JavaScript, HTML, CSS), die in SharePoint Online gehostet wird
-  - Anlagen, die in den Browser heruntergeladen und in SharePoint Online ausgeführt werden.  
+  - Code (JavaScript, HTML, CSS), der in SharePoint Online gehostet wird
+  - Objekte, die in den Browser heruntergeladen und für SharePoint Online ausgeführt werden.  
   - Geschäftslogik in JavaScript   
-  - Zugreifen auf Daten, die in/gespeichert in Project Online oder SharePoint wie (aber nicht beschränkt auf):  
-  - Benutzerdefinierte Felder  
+  - Zugreifen auf Daten, die in Project Online oder SharePoint wie (aber nicht beschränkt auf) in gespeichert sind:  
+  - Custom fields (benutzerdefinierte Felder)  
   - Listen
     
-- Für ein Projekt (SharePoint) vom Anbieter gehosteten add-in:
+- Für ein von einem Projekt (SharePoint) vom Anbieter gehostetes Add-in:
     
-  - Code, der auf einer Website, die außerhalb der Project Online-Website vorhanden ist 
-  - Eine externe Website, die werden kann (jedoch nicht auf beschränkt ist):  
-  - Anderen SharePoint-Website  
-  - App/Webdienst integriert auf einer beliebigen Plattform  
-  - Die externe Website enthält die Geschäftslogik  
-  - Der Browser wird von Project Online an externe Website mit Zugriffstoken mit Project Online umgeleitet.  
-  - Die externe Website kann Anrufe auf SharePoint und Project Online tätigen.
+  - Code, der auf einer Website außerhalb der Project Online-Website vorhanden ist 
+  - Eine externe Website, die (aber nicht beschränkt auf) sein kann:  
+  - Eine andere SharePoint-Website  
+  - Web-App/Dienst auf einer beliebigen Plattform  
+  - Die externe Website enthält Geschäftslogik  
+  - Der Browser wird von Project online zu externer Website mit Zugriffstoken zu Project Online umgeleitet.  
+  - Die externe Website kann Aufrufe an SharePoint und Project online tätigen
     
-- Für eine externe/Standalone-add-in:
+- Für ein externes/eigenständiges Add-in:
     
-  - Benutzer führt eine Anwendung auf ihrem Gerät aus.
-  - Anwendung authentifiziert und Project Online-APIs direkt anrufen
+  - Der Benutzer führt eine Anwendung auf dem Gerät aus.
+  - Anwendung authentifiziert und ruft Project Online-APIs direkt auf
     
 
-|Art der Anwendung|API-Implementierung|Zielumgebung|Beispiele für die Anwendung|
+|Art der Anwendung|API-Implementierung|Zielumgebung|Anwendungsbeispiele|
 |:-----|:-----|:-----|:-----|
-|Projekt gehostet  <br/> |JSOM (Java Script-Objektmodell)  <br/> REST  <br/> |Browser  <br/> |Zeitkarteneintrag  <br/> Zeitkarte Genehmigung  <br/> Projektstatus  <br/> Problembericht  <br/> |
-|Project-Anbieter gehostet  <br/> |CSOM-Clientbibliothek  <br/> |Azure-Website-App  <br/> Nicht-Windows-Umgebung (LAMP usw.)  <br/> |Externe Arbeitszeittabelle validator  <br/> Projekt zu verwendenden Importprogramms  <br/> |
-|Extern/eigenständige  <br/> |REST  <br/> CSOM  <br/> |REST - jeder Plattform  <br/> CSOM - jeder .NET unterstützten Plattform  <br/> |Zeitkarteneintrag  <br/> Migration von Projekten zu einem neuen Standort  <br/> Ändern Sie Verwaltungsstatus.  <br/> |
+|Projekt gehostet  <br/> |JSOM (Java Script Object Model)  <br/> REST  <br/> |Browser  <br/> |Zeitkarten Eintrag  <br/> Zeitkarten Genehmigung  <br/> Projekt Status  <br/> Problembericht  <br/> |
+|Gehosteter Projektanbieter  <br/> |CSOM-Clientbibliothek  <br/> |Azure-Website/-App  <br/> Nicht-Windows-Umgebung (Lampe usw.)  <br/> |Externe Validierung in der Arbeitszeittabelle  <br/> Projekt-Importierer  <br/> |
+|Extern/eigenständig  <br/> |REST  <br/> CSOM  <br/> |REST – beliebige Plattform  <br/> CSOM-beliebige von .NET unterstützte Plattform  <br/> |Zeitkarten Eintrag  <br/> Migration von Projekten zu einer neuen Website  <br/> Change Management Status.  <br/> |
    
-## <a name="what-does-it-take-to-start-developing-applications-for-project-online"></a>Was dauert es der Entwicklung von Anwendungen für Project Online beginnen?
+## <a name="what-does-it-take-to-start-developing-applications-for-project-online"></a>Was wird benötigt, um die Entwicklung von Anwendungen für Project online zu beginnen?
 
-Die gemeinsame Elemente für das Entwickeln von Project Online-Applikationen erforderlich sind ein Konto mit Project Online und Testdaten – Projekte und projektbezogenen Informationen, die Zuordnungen, Aufgaben, Ressourcen und benutzerdefinierte Felder enthalten. Eine Entwicklungsumgebung ist auch erforderlich, aber Einzelheiten der Development Environment hängt vom Typ der Anwendung und der API-Schnittstelle für die Anwendung erforderlich ist. Die nächsten Abschnitten werden die Entwicklung von Anforderungen für die drei API-Schnittstellen.
+Die allgemeinen Elemente, die für die Entwicklung von Project Online-Anwendungen erforderlich sind, sind Project Online-Konto und Testdaten--Projekte und projektbezogene Informationen, die Zuordnungen, Aufgaben, Ressourcen und benutzerdefinierte Felder einbeziehen. Eine Entwicklungsumgebung ist ebenfalls erforderlich, aber die Spezifik der Entwicklungsumgebung hängt vom Typ der Anwendung und der API-Schnittstelle ab, die für die Anwendung benötigt wird. In den nächsten Abschnitten werden die Entwicklungsanforderungen für die drei API-Schnittstellen beschrieben.
   
-Referenzdokumentation für die beschreibt das Objektmodell, die für alle drei Schnittstellen als auch eine Entität-Zuordnung, die Beziehungen zwischen den Komponenten der Objekt-Modell anzeigt.
+In der Referenzdokumentation wird das für alle drei Schnittstellen gängige Objektmodell sowie eine Entitätszuordnung beschrieben, in der die Beziehungen zwischen den Objektmodell Komponenten angezeigt werden.
   
-## <a name="project-hosted-add-in-development-environment"></a>Projekt-add-in-Entwicklungsumgebung gehostet
+## <a name="project-hosted-add-in-development-environment"></a>Projekt gehostete Add-in-Entwicklungsumgebung
 
-Eine gehostete-Add-in ist ein Add-in, die auf dem Server befindet und an einen Browser für die Ausführung zur Laufzeit heruntergeladen wird. Gehostete-add-ins können die JSOM oder REST-Schnittstelle und in JavaScript geschrieben. Project Online enthält Verweise auf die JSOM-Bibliothek für die Ausführung zur Laufzeit. Wird vorausgesetzt Entwicklung befindet sich in einer Windows-Plattform, die benötigten Ressourcen gehen Sie folgendermaßen vor:
+Ein gehostetes Add-in ist ein Add-in, das sich auf dem Server befindet und zur Laufzeitausführung in einen Browser heruntergeladen wird. Gehostete Add-Ins können die JSOM-oder REST-Schnittstellen verwenden und in JavaScript geschrieben werden. Project Online stellt Verweise auf die JSOM-Bibliothek für die Laufzeitausführung bereit. Unter der Voraussetzung, dass die Entwicklung auf einer Windows-Plattform erfolgt, folgen die erforderlichen Ressourcen:
   
-- Visual Studio 2015 (empfohlen) oder Visual Studio 2013
+- Visual Studio 2015 (bevorzugt) oder Visual Studio 2013
     
 - Office-Entwicklungstools für Visual Studio
     
 - JavaScript-Sprache
     
-Besuchen Sie https://github.com/OfficeDev/Project-JSOM-Copy-Work-Packages für eine beispielanwendung. 
+Besuchen https://github.com/OfficeDev/Project-JSOM-Copy-Work-Packages Sie für eine Beispielanwendung. 
   
-Sie können herunterladen und Ausführen des Beispiels in ein paar einfachen Schritten:
+Sie können das Beispiel in wenigen einfachen Schritten herunterladen und ausführen:
   
-1. Herunterladen Sie und öffnen Sie die beispielanwendung
+1. Herunterladen und Öffnen der Beispielanwendung
     
-2. Aktualisieren Sie das SiteURL im Fenster Eigenschaften
+2. Aktualisieren des SiteURL im Eigenschaftenfenster
     
-   Project Online untersucht sowohl die Anwendungsbereich des Add-Ins und die Berechtigungen eines Benutzers mit Zugriff auf Informationen auf dem Project Online-Host gesteuert. Wenn in einer oder beide Einstellungen explizit Zugriff verweigert wird, verweigert Project Online Zugriff auf Informationen. Andernfalls wird der Zugriff gewährt.
+   Project Online untersucht sowohl den Anwendungsbereich des Add-Ins als auch die Benutzerberechtigungen für den Zugriff auf Informationen auf dem Project Online-Host. Wenn der Zugriff explizit in einer oder beiden Einstellungen verweigert wird, verweigert Project Online den Zugriff auf die Informationen. Andernfalls wird der Zugriff gewährt.
     
-3. [Sideloading](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins) auf Ihrer Website zu aktivieren.  
+3. Aktivieren Sie [querladen](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins) auf Ihrer Website.  
     
 4. Erstellen Sie das Projekt.
     
 5. Führen Sie das Projekt aus.
     
-## <a name="project-provider-hosted-add-in-development-environment"></a>Projekt-add-in Entwicklung vom Anbieter gehostete Umgebung
+## <a name="project-provider-hosted-add-in-development-environment"></a>Projektanbieter-gehostete Add-in-Entwicklungsumgebung
 
-Vom Anbieter gehosteten-add-ins sind Applications geschrieben und auf allen Plattformen Web darstellen. Sie können eine Verbindung herstellen und Datenvorgänge mithilfe der REST (oder CSOM für Microsoft-Plattformen) API. Jede Sprache und die Umgebung, die die REST-Schnittstelle unterstützt können für die Entwicklung verwendet werden. 
+Vom Anbieter gehostete Add-Ins sind Anwendungen, die auf einer beliebigen Webplattform geschrieben wurden. Sie können mithilfe der REST-API (oder CSOM für Microsoft-Plattformen) eine Verbindung herstellen und Datenvorgänge ausführen. Jede Sprache und Umgebung, die die REST-Schnittstelle unterstützt, kann für die Entwicklung verwendet werden. 
   
-Ein Beispiel für die Windows-Entwicklungsumgebung für diese Art Anwendung umfasst die folgenden Elemente:
+Ein Beispiel für die Windows-Entwicklungsumgebung für diesen Anwendungstyp umfasst die folgenden Elemente:
   
--  Visual Studio 2015 (empfohlen) oder Visual Studio 2013 
+-  Visual Studio 2015 (bevorzugt) oder Visual Studio 2013 
     
-- Microsoft Office-Entwicklungstools für Visual Studio (im Lieferumfang von Visual Studio 2015 Professional- und Enterprise Edition)
+- Microsoft Office-Entwicklungs Tools für Visual Studio (im Lieferumfang von Visual Studio 2015 Professional und Enterprise Edition)
     
-- .NET Framework 4.0 oder höher
+- .NET Framework 4,0 oder höher
     
-- [SharePoint Online-CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM) (für CSOM-Aufrufe) 
+- [SHAREPOINTONLINE CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM) (für CSOM-Aufrufe) 
     
-- Eine Programmiersprache wie c# 
+- Eine Programmiersprache wie C# 
     
-Besuchen Sie https://github.com/OfficeDev/Project-Add-in-REST-BasicDataOperations für Beispielskripts arbeiten. 
+Besuchen https://github.com/OfficeDev/Project-Add-in-REST-BasicDataOperations Sie für funktionsfähige Beispielskripts. 
   
 Sie können das Beispiel in wenigen Schritten ausführen:
   
-1. Herunterladen Sie und öffnen Sie die beispielanwendung
+1. Herunterladen und Öffnen der Beispielanwendung
     
-2. Aktualisieren Sie das SiteURL im Fenster Eigenschaften
+2. Aktualisieren des SiteURL im Eigenschaftenfenster
     
-   Project Online untersucht sowohl die Anwendungsbereich des Add-Ins und die Berechtigungen eines Benutzers mit Zugriff auf Informationen auf dem Project Online-Host gesteuert. Wenn in einer oder beide Einstellungen explizit Zugriff verweigert wird, verweigert Project Online Zugriff auf Informationen. Andernfalls wird der Zugriff gewährt.
+   Project Online untersucht sowohl den Anwendungsbereich des Add-Ins als auch die Benutzerberechtigungen für den Zugriff auf Informationen auf dem Project Online-Host. Wenn der Zugriff explizit in einer oder beiden Einstellungen verweigert wird, verweigert Project Online den Zugriff auf die Informationen. Andernfalls wird der Zugriff gewährt.
     
-3. [Sideloading](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins) auf Ihrer Website zu aktivieren. 
+3. Aktivieren Sie [querladen](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins) auf Ihrer Website. 
     
 4. Erstellen Sie das Projekt.
     
 5. Führen Sie das Projekt aus.
     
-## <a name="externalstandalone-application-development-environment"></a>Extern/eigenständige Anwendung-Entwicklungsumgebung
+## <a name="externalstandalone-application-development-environment"></a>Entwicklungsumgebung für externe/eigenständige Anwendungen
 
-Eine eigenständige Anwendung kann rufen Sie Project Online mit dem Client Side-Objekt Objektmodell (CSOM) oder REST kommunizieren mit Project Online erstellen, abrufen, aktualisieren und Löschen von Informationen, die sich auf dem Server befinden. Dies ist eine eigenständige-Clientanwendung, die Zugriff auf Benutzerebene ausgeführt abhängig ist. 
+Eine eigenständige Anwendung kann Project Online mithilfe des Client seitigen Objektmodells (CSOM) oder REST für die Kommunikation mit Project Online aufrufen, um Informationen auf dem Server zu erstellen, abzurufen, zu aktualisieren und zu löschen. Hierbei handelt es sich um eine eigenständige Clientanwendung, die von der Benutzerzugriffsebene abhängig ist. 
   
-Ein Beispiel für die Windows-Entwicklungsumgebung für diese Art Anwendung umfasst die folgenden Elemente:
+Ein Beispiel für die Windows-Entwicklungsumgebung für diesen Anwendungstyp umfasst die folgenden Elemente:
   
-- Visual Studio 2015 (empfohlen) oder Visual Studio 2013 
+- Visual Studio 2015 (bevorzugt) oder Visual Studio 2013 
     
-- Microsoft Office-Entwicklungstools für Visual Studio (im Lieferumfang von Visual Studio 2015 Professional- und Enterprise Edition)
+- Microsoft Office-Entwicklungs Tools für Visual Studio (im Lieferumfang von Visual Studio 2015 Professional und Enterprise Edition)
     
-- .NET Framework 4.0 oder höher
+- .NET Framework 4,0 oder höher
     
-- [SharePoint Online-CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM) (für CSOM-Aufrufe) 
+- [SHAREPOINTONLINE CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM) (für CSOM-Aufrufe) 
     
-- Eine Programmiersprache wie c# 
+- Eine Programmiersprache wie C# 
     
-Besuchen Sie https://github.com/OfficeDev/Project-CSOM-Read-Enterprise-CustomFields für eine beispielanwendung. 
+Besuchen https://github.com/OfficeDev/Project-CSOM-Read-Enterprise-CustomFields Sie für eine Beispielanwendung. 
   
 Sie können das Beispiel in wenigen Schritten ausführen:
   
-1. Laden Sie die beispielanwendung aus
+1. Herunterladen der Beispielanwendung
     
-2. Stellen Sie eine Reihe von Änderungen an Ihrer Project Online-Website zugreifen – den Namen des Standorts, Benutzerkonto und Kennwort.
+2. Führen Sie einige Änderungen aus, um auf Ihre Project Online-Website zuzugreifen: den Websitenamen, das Benutzerkonto und das Kennwort.
     
-   Stellen Sie sicher, dass der Benutzer Zugriff auf alle Projekte. Project Online verwendet Benutzerberechtigungen zum Zugriff auf Informationen im Datenspeicher steuern.
+   Stellen Sie sicher, dass der Benutzer Zugriff auf alle Projekte hat. Project Online verwendet Benutzerberechtigungen, um den Zugriff auf Informationen im Datenspeicher zu steuern.
     
-3. Fügen Sie die Verweise mit der Nuget Package Manager-Konsole zur Verfügung, indem Sie Folgendes in der Konsole Nuget eingeben im Menü Extras die SharePoint-Assembly hinzu: 
+3. Fügen Sie die SharePoint-Assembly den verweisen mithilfe der Nuget-Paket-Manager-Konsole hinzu, die im Menü Extras verfügbar ist, indem Sie Folgendes in der Nuget-Konsole eingeben: 
     
    `Install-Package Microsoft.SharePointOnline.CSOM`
 
@@ -157,16 +157,16 @@ Sie können das Beispiel in wenigen Schritten ausführen:
     
 ## <a name="next-steps"></a>Nächste Schritte
 
-Jede beispielanwendung verfügt über einen Artikel erläutern die wichtigsten arbeiten mit der einzelnen Project-API. Die Artikel in der folgenden Liste zusammen mit ein paar Artikeln, die entitätsbeziehungen Informationen zu den Abfragesystem und den Zugriff auf benutzerdefinierte Felder angezeigt werden. 
+Jede Beispielanwendung enthält einen Artikel, in dem die Highlights der Arbeit mit der einzelnen Projekt-API erläutert werden. Die Artikel werden in der folgenden Liste zusammen mit einigen Artikeln angezeigt, in denen die Entitätsbeziehungen, Informationen zum Abfragesystem und der Zugriff auf benutzerdefinierte Felder beschrieben werden. 
   
-- [Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmodell](developing-a-project-online-application-using-the-client-side-object-model.md)
+- [Entwickeln einer Project Online-Anwendung mithilfe des Client seitigen Objektmodells](developing-a-project-online-application-using-the-client-side-object-model.md)
     
-- [Entwickeln eines Project Online add-Ins mithilfe der JavaScript-Objektmodell (JSOM)](developing-a-project-online-add-in-using-the-javascript-object-model-jsom.md)
+- [Entwickeln eines Project Online-Add-Ins mithilfe des JavaScript-Objektmodells (JSOM)](developing-a-project-online-add-in-using-the-javascript-object-model-jsom.md)
     
 - [Zugriff auf benutzerdefinierte Project Online-Unternehmensfelder](accessing-project-online-enterprise-custom-fields.md)
     
 ## <a name="see-also"></a>Siehe auch
 
-Dokumentation und Beispiele im Zusammenhang mit Project Online und die Anwendungsentwicklung mithilfe von CSOM finden Sie im [Projekt Development Portal](https://developer.microsoft.com/en-us/project).
+Dokumentation und Beispiele zu Project Online und Anwendungsentwicklung mit CSOM finden Sie im [Project-Entwicklungsportal](https://developer.microsoft.com/en-us/project).
     
 

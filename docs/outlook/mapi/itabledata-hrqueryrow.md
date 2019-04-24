@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 66ce8f36-2b2b-4a8e-b9b2-43782d8357a1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ef0dc212a6a6f761cd8dd0cae5312c548c02ae50
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: da41fadc9a71a410dd115e28ce2cf9c81442b104
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348643"
 ---
 # <a name="itabledatahrqueryrow"></a>ITableData::HrQueryRow
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine Tabellenzeile.
+Ruft eine Tabellenzeile ab.
   
 ```cpp
 HRESULT HrQueryRow(
@@ -39,17 +39,17 @@ HRESULT HrQueryRow(
 
  _lpSPropValue_
   
-> [in] Ein Zeiger auf eine Eigenschaft-Wert-Struktur, die beschreibt die Indexspalte der Zeile abgerufen werden sollen. Der **UlPropTag** Member der Eigenschaft Wert Struktur sollte das gleiche Eigenschafts-Tag als _UlPropTagIndexColumn_ -Parameter aus dem Aufruf der Funktion [CreateTable](createtable.md) enthalten, die greift auf die [ITableData](itabledataiunknown.md) Implementierung. 
+> in Ein Zeiger auf eine Eigenschaftswert Struktur, die die Indexspalte für die abgerufene Zeile beschreibt. Das **ulPropTag** -Element der Eigenschaftswert Struktur sollte das gleiche Property-Tag wie der _ulPropTagIndexColumn_ -Parameter aus dem Aufruf der [createable](createtable.md) -Funktion enthalten, die auf die [ITableData](itabledataiunknown.md) -Implementierung zugreift. 
     
  _lppSRow_
   
-> [out] Ein Zeiger auf einen Zeiger auf die abgerufenen Zeile. 
+> Out Ein Zeiger auf einen Zeiger auf die abgerufene Zeile. 
     
  _lpuliRow_
   
-> [in, out] Auf Eingabe, ein gültiger Zeiger oder NULL der angibt, dass keine Informationen zurückgegeben werden soll. Bei der Ausgabe zeigt, die ein gültiger Zeiger auf die Zeile Zeilennummer, eine fortlaufende Zahl, die die Zeilenposition in der Tabelle identifiziert.
+> [in, out] Bei der Eingabe ein gültiger Zeiger oder NULL, der angibt, dass keine Informationen zurückgegeben werden müssen. Bei der Ausgabe ein gültiger Zeiger, der auf die Zeilennummer der Zeile verweist, eine fortlaufende Nummer, die die Position der Zeile in der Tabelle identifiziert.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -57,13 +57,13 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Die [SPropValue](spropvalue.md) -Struktur, _LpSPropValue_ verweist, enthält nicht die Index-Spalte-Eigenschaft. 
+> Die [SPropValue](spropvalue.md) -Struktur, auf die _lpSPropValue_ verweist, enthält nicht die Index Column-Eigenschaft. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **ITableData::HrQueryRow** -Methode ruft alle Eigenschaften für die Zeile, die eine Indexspalte vorhanden ist, die den Wert der Indexspalte in der Eigenschaft Struktur auf den _LpSPropValue_enthalten entspricht. **HrQueryRow** gibt auch die Nummer der Zeile zurück, wenn der Anrufer, anfordert, auf dem die Zeilenposition in der Tabelle identifiziert. 
+Die **ITableData:: HrQueryRow** -Methode ruft alle Eigenschaften für die Zeile mit einer Indexspalte ab, die mit dem Wert der Indexspalte übereinstimmt, die in der Eigenschaften Struktur enthalten ist, auf die von _lpSPropValue_verwiesen wird. **HrQueryRow** gibt auch die Zeilennummer zurück, wenn der Anrufer Sie anfordert, der die Position der Zeile in der Tabelle identifiziert. 
   
-Da **HrQueryRow** nicht die **SPropValue** -Struktur, die auf den _LpSPropValue_ändert, müssen Anrufer die Struktur frei, wenn **HrQueryRow** zurückgegeben. Anrufer müssen auch die Struktur **SRow** frei, die die abgerufene Zeile enthält. 
+Da **HrQueryRow** die **SPropValue** -Struktur, auf die durch _lpSPropValue_verwiesen wird, nicht ändert, müssen Aufrufer die Struktur freigeben, wenn **HrQueryRow** zurückgegeben wird. Aufrufer müssen auch die **SRow** -Struktur freigeben, die die abgerufene Zeile enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

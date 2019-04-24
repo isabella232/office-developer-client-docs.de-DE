@@ -1,5 +1,5 @@
 ---
-title: PidTagOrgEmailAddress (kanonische Eigenschaft)
+title: Kanonische Pidtagorgemailaddress (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,40 +11,40 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a7c596d-a8e1-46df-aabe-ac96027876eb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2c1119ea2b1b8db0f4671894730dce76b18b4f5c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: daccc16e314be865c5f0f152a9a1b746e0978869
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342490"
 ---
-# <a name="pidtagorgemailaddress-canonical-property"></a>PidTagOrgEmailAddress (kanonische Eigenschaft)
+# <a name="pidtagorgemailaddress-canonical-property"></a>Kanonische Pidtagorgemailaddress (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die e-Mail-Adresse des sendenden e-Mail-Kontos.
+Enthält die e-Mail-Adresse des Absender-e-Mail-Kontos.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ORG_EMAIL_ADDRESS, PR_ORG_EMAIL_ADDRESS_A, PR_ORG_EMAIL_ADDRESS_W  <br/> |
 |Kennung:  <br/> |Noch nicht festgelegt  <br/> |
-|Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
+|Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

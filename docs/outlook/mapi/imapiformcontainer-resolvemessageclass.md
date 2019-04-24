@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ce13f11-5787-4ea5-a84f-b1e3824529ee
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: db4b8d99c960deb3de3d228b2bf9549738501bcc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c0954d6f8b14b4088ece2ac276b045b6c163ed98
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342161"
 ---
 # <a name="imapiformcontainerresolvemessageclass"></a>IMAPIFormContainer::ResolveMessageClass
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Löst eine Nachrichtenklasse in seiner Form in einem Formular Container und ein Formular Informationen-Objekt für dieses Formular zurückgegeben.
+Löst eine Nachrichtenklasse in Ihrem Formular in einem Formular Container auf und gibt ein Formular Informationsobjekt für dieses Formular zurück.
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -39,21 +39,21 @@ HRESULT ResolveMessageClass(
 
  _szMessageClass_
   
-> [in] Eine Zeichenfolge, die den Namen die Nachrichtenklasse aufgelöst wird. Nachrichtenklassennamen sind immer noch nie Unicode-ANSI-Zeichenfolgen.
+> in Eine Zeichenfolge, die die zu lösende Nachrichtenklasse benennt. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Nachrichtenklasse aufgelöst wird. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklasse steuert. Das folgende Flag kann festgelegt werden:
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachricht Klasse Zeichenfolgen, die eine genaue Übereinstimmung sollten aufgelöst werden.
+> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
     
  _ppforminfo_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Informationen Formularobjekt.
+> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Informationsobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -61,25 +61,25 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die Nachrichtenklasse in der _SzMessageClass_ -Parameter übergeben entspricht nicht die Nachrichtenklasse für jedes Formular im Formular-Container. 
+> Die Nachrichtenklasse, die im _szMessageClass_ -Parameter übergeben wird, stimmt nicht mit der Nachrichtenklasse für alle Formulare im Formular Container überein. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen rufen Sie die **IMAPIFormContainer::ResolveMessageClass** -Methode, um eine Nachrichtenklasse zu einem Formular in einem Formular Container zu beheben. Das Formular Informationen-Objekt zurückgegeben, die im Parameter _Ppforminfo_ bietet weitere Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse. 
+Client Anwendungen rufen die **IMAPIFormContainer:: ResolveMessageClass** -Methode auf, um eine Nachrichtenklasse in ein Formular in einem Formular Container aufzulösen. Das im _ppforminfo_ -Parameter zurückgegebene Formular Informationsobjekt bietet weiteren Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Nachrichtenklasse zu einem Formular zu beheben, übergeben Sie den Namen der Nachrichtenklasse aufgelöst werden (beispielsweise `IPM.HelpDesk.Software`). So erzwingen Sie die Auflösung genau sein (d. h., um auf eine Basisklasse der Nachrichtenklasse Lösung zu verhindern), die Kennzeichen MAPIFORM_EXACTMATCH im _UlFlags_ -Parameter übergeben werden können. 
+Um eine Nachrichtenklasse in ein Formular aufzulösen, geben Sie den Namen der zu lösenden Nachrichtenklasse ein (beispielsweise `IPM.HelpDesk.Software`). Um die Genauigkeit der Auflösung zu erzwingen (das heißt, um eine Lösung für eine Basisklasse der Nachrichtenklasse zu verhindern), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden. 
   
-Die Klassen-ID für die Nachrichtenklasse aufgelöst wird als Teil des Formulars Informationen-Objekts zurückgegeben. Nehmen Sie nicht an, dass die Klassen-ID in der OLE-Bibliothek erst vorhanden ist, nachdem Sie die [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md) oder [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) -Methode aufgerufen haben. 
+Der Klassenbezeichner für die aufgelöste Nachrichtenklasse wird als Teil des Form Information-Objekts zurückgegeben. Gehen Sie nicht davon aus, dass der Klassenbezeichner in der OLE-Bibliothek vorhanden ist, bis Sie die [IMAPIFormMgr::P repareform](imapiformmgr-prepareform.md) -oder [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) -Methode aufgerufen haben. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMessageClass  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormContainer::ResolveMessageClass** -Methode, um ein Formular zu suchen, die mit einer Nachrichtenklasse zugeordnet ist.  <br/> |
+|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: OnResolveMessageClass  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: ResolveMessageClass** -Methode, um ein Formular zu suchen, das einer Nachrichtenklasse zugeordnet ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

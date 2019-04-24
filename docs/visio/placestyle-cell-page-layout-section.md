@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7dcd5a35-bd3d-447f-e4aa-986091d129de
 description: Gibt an, wie Shapes auf dem Zeichenblatt platziert werden, wenn sie im Dialogfeld Layout konfigurieren (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie anschließend auf Weitere Layoutoptionen) angeordnet werden.
-ms.openlocfilehash: 251bee427c732fe782c85c4991df07a1deb2a4dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b3159b765922d6656d12dd42a377322e4a91fc04
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346865"
 ---
-# <a name="placestyle-cell-page-layout-section"></a>PlaceStyle Cell (Page Layout Section)
+# <a name="placestyle-cell-page-layout-section"></a>Zelle "PlaceStyle" (Abschnitt "Page Layout")
 
 Gibt an, wie Shapes auf dem Zeichenblatt platziert werden, wenn sie im Dialogfeld **Layout konfigurieren** (klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu anordnen**, und klicken Sie anschließend auf **Weitere Layoutoptionen**) angeordnet werden.
   
@@ -22,13 +22,13 @@ Gibt an, wie Shapes auf dem Zeichenblatt platziert werden, wenn sie im Dialogfel
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Layout konfigurieren** festlegen. 
   
-Wenn Sie eine Referenz auf die Zelle PlaceStyle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
+Wenn Sie einen Verweis auf die Zelle PlaceStyle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PlaceStyle  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle PlaceStyle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PlaceStyle nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

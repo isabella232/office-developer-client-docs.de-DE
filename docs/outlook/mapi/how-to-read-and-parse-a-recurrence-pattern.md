@@ -9,37 +9,37 @@ api_type:
 ms.assetid: 75113097-b3ae-4d20-9796-85c62a592ef0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c226fe79fd002cda3c557fc8416c25f98ad33626
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345927"
 ---
 # <a name="read-and-parse-a-recurrence-pattern"></a>Lesen und Analysieren eines Serienmusters
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI kann zum Lesen und Analysieren eines Serienmusters, das für einen Termin verwendet werden.
+MAPI kann zum Lesen und Analysieren eines Serienmusters für einen Termin verwendet werden.
   
-Informationen zum Herunterladen, anzeigen, und führen Sie den Code aus dem MFCMAPI (engl.) Anwendung-Projekt verwiesen, die in diesem Thema finden Sie unter [Installieren der Beispiele in diesem Abschnitt verwendet](how-to-install-the-samples-used-in-this-section.md).
+Informationen zum herunterladen, anzeigen und Ausführen des Codes aus dem MFCMAPI-Anwendungsprojekt, auf das in diesem Thema verwiesen wird, finden Sie unter [Installieren der in diesem Abschnitt verwendeten Beispiele](how-to-install-the-samples-used-in-this-section.md).
 
-### <a name="to-parse-a-recurrence-blob"></a>Analysieren einen Serienblob
+### <a name="to-parse-a-recurrence-blob"></a>So analysieren Sie einen Serien-BLOB
 
 1. Öffnen Sie ein Terminelement. Informationen zum Öffnen einer Nachricht finden Sie unter [Öffnen einer Nachricht](opening-a-message.md).
     
-2. Rufen Sie die benannte Eigenschaft **DispidApptRecur** ([PidLidAppointmentRecur kanonische-Eigenschaft](pidlidappointmentrecur-canonical-property.md)) ab. Informationen zum Abrufen von benannten Eigenschaften finden Sie unter [MAPI-Eigenschaften mit dem Namen](mapi-named-properties.md).
+2. Rufen Sie die benannte Eigenschaft **dispidApptRecur** ([Pidlidappointmentrecur (kanonische Eigenschaft](pidlidappointmentrecur-canonical-property.md)) ab. Informationen zum Abrufen benannter Eigenschaften finden Sie unter [MAPI Named Properties](mapi-named-properties.md).
     
-3. Führen Sie die Anweisungen in [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28EXCHG.80%29.aspx) die Termin Serie Muster-Struktur zu lesen. 
+3. Folgen Sie den Anweisungen in [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28EXCHG.80%29.aspx) , um die Struktur des Terminserien Musters zu lesen. 
     
-Die MFCMAPI (engl.)-Referenz-Anwendung veranschaulicht den letzten Schritt mit der `BinToAppointmentRecurrencePatternStruct` Funktion in der Quelldatei InterpretProp2.cpp des Projekts MFCMAPI (engl.). Die `BinToAppointmentRecurrencePatternStruct` Funktion einen Zeiger auf einem Puffer im Arbeitsspeicher als Parameter akzeptiert. Die Anwendung MFCMAPI (engl.) abruft dieses Puffers durch Zuordnen von der **DispidApptRecur** -Eigenschaft auf ein Eigenschaftentag klicken Sie dann mit der durch den Wert der Eigenschaft mithilfe der Methode [IMAPIProp::GetProps](imapiprop-getprops.md) anfordern. Wenn die Eigenschaft rufen Sie mithilfe der Methode **GetProps** zu groß ist, wird MFCMAPI (engl.) eine Stream-Schnittstelle zum Abrufen der Eigenschaft mithilfe der Methode [IMAPIProp::OpenProperty](imapiprop-openproperty.md) geöffnet. Klicken Sie dann die MFCMAPI (engl.) Anwendung liest die Daten aus dem Datenstrom Puffer zu erstellen. 
+Die MFCMAPI-Referenzanwendung demonstriert den letzten Schritt mit `BinToAppointmentRecurrencePatternStruct` der Funktion in der InterpretProp2. cpp-Quelldatei des MfcMapi-Projekts. Die `BinToAppointmentRecurrencePatternStruct` Funktion verwendet einen Zeiger auf einen Puffer im Arbeitsspeicher als Parameter. Die MFCMAPI-Anwendung ruft diesen Puffer ab, indem zunächst die benannte Eigenschaft **dispidApptRecur** einem Property-Tag zugeordnet und dann der Wert der Eigenschaft mithilfe der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode angefordert wird. Wenn die Eigenschaft zu umfangreich ist, um Sie **** mit der GetProps-Methode abzurufen, öffnet MfcMapi eine Stream-Schnittstelle zum Abrufen der Eigenschaft mithilfe der [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode. Die MFCMAPI-Anwendung liest dann die Daten aus dem Stream, um den Puffer zu erstellen. 
   
-Informationen über das Format des Puffers finden Sie unter der [PidLidAppointmentRecur kanonische-Eigenschaft](pidlidappointmentrecur-canonical-property.md). Der Großteil der Daten im Puffer besteht aus Feldern eine festgelegte Anzahl von Bytes, die nach dem anderen gelesen werden muss. Einige Felder sind vorhanden, nur, wenn andere Felder bestimmte Werte enthalten, und die Größe der einige Felder kann der Wert der anderen Felder abhängen. Analysieren den Puffer zum Lesen der verschiedenen Felder umfasst viele Buchhaltung. MFCMAPI (engl.) verwendet wird, als interne Hilfsklasse, die mit dem Namen `CBinaryParser` dieser Buchhaltung kapseln. Beispielsweise die `CBinaryParser::GetDWORD` Funktion überprüft, ob genügend Bytes im Puffer zum Lesen von eines DWORD-Wert bleiben, und klicken Sie dann den Wert liest und die Zeiger aktualisiert. 
+Informationen zum Format des Puffers finden Sie unter der [kanonischEn Eigenschaft pidlidappointmentrecur (](pidlidappointmentrecur-canonical-property.md). Der größte Teil der Daten im Puffer besteht aus Feldern mit einer festen Anzahl von Bytes, die nacheinander gelesen werden müssen. Einige Felder sind nur vorhanden, wenn andere Felder bestimmte Werte enthalten, und die Größe einiger Felder hängt möglicherweise vom Wert anderer Felder ab. Das Analysieren des Puffers zum Lesen der verschiedenen Felder erfordert viel Buchhaltung. MFCMAPI verwendet eine interne Hilfsklasse namens `CBinaryParser` zum Kapseln dieser Buchhaltung. Die `CBinaryParser::GetDWORD` -Funktion überprüft beispielsweise, ob genügend Bytes im Puffer verbleiben, um einen DWORD-Wert zu lesen, und liest dann den Value und aktualisiert die Zeiger. 
   
-Nachdem Sie der Puffer in einer Struktur analysiert wurde, verwendet die Anwendung MFCMAPI (engl.) der `AppointmentRecurrencePatternStructToString` Funktion zum Konvertieren der Struktur in eine Zeichenfolge, die für den Benutzer anzuzeigen. Dies ist nicht dieselbe Zeichenfolge, die Outlook angezeigt würden, die jedoch ist stattdessen eine unformatierte Ansicht der Daten auf denen Outlook seine Logik aufbaut. 
+Nachdem der Puffer in eine Struktur analysiert wurde, verwendet die MFCMAPI-Anwendung die `AppointmentRecurrencePatternStructToString` -Funktion, um die Struktur in eine Zeichenfolge umzuwandeln, die dem Benutzer angezeigt wird. Dabei handelt es sich nicht um dieselbe Zeichenfolge, die Outlook anzeigen würde, sondern stattdessen eine RAW-Ansicht der Daten, bei denen Outlook Ihre Logik erstellt. 
   
-Es ist möglich, einen Puffer auftreten, der beschädigte Daten oder mehr Daten als benötigt werden, um ein Serienmuster codieren enthält. Um diese Szenarien zu identifizieren, verfolgt die Anwendung MFCMAPI (engl.) über wie viele Daten erfolgreich analysiert wurde und wie viel im Puffer bleibt. Wenn Daten im Puffer bleibt, nachdem die Analyse abgeschlossen ist, einschließlich der MFCMAPI (engl.) dieses "Junk-e-Daten" in der Struktur, damit er untersucht werden kann.
+Es kann ein Puffer auftreten, der entweder beschädigte Daten oder mehr Daten enthält, als zur Codierung eines Serienmusters erforderlich ist. Um diese Szenarien zu identifizieren, verfolgt die MFCMAPI-Anwendung, wie viele Daten erfolgreich analysiert wurden und wie viel im Puffer verbleiben. Wenn die Daten nach Abschluss der Analyse im Puffer bleiben, enthält MFCMAPI diese "Junk-Daten" in der Struktur, damit Sie untersucht werden können.
   
-Im folgenden finden Sie eine vollständige Liste der der `BinToAppointmentRecurrencePatternStruct` Funktion. 
+Nachfolgend finden Sie eine vollständige Liste `BinToAppointmentRecurrencePatternStruct` der Funktionen. 
   
 ```cpp
 AppointmentRecurrencePatternStruct* BinToAppointmentRecurrencePatternStruct(ULONG cbBin, LPBYTE lpBin)
@@ -212,5 +212,5 @@ AppointmentRecurrencePatternStruct* BinToAppointmentRecurrencePatternStruct(ULON
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von Outlook 2007-Elementen mithilfe von MAPI](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
+- [Verwenden von MAPI zum Erstellen von Outlook 2007-Elementen](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

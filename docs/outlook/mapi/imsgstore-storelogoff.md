@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 3773c98e-531e-4bdc-a39a-2c3bb7378cd3
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a55fc361120472473bcba70152c153fb7824fb9e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: be11c536804682d1baec8188b6d7487c71d411e1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348741"
 ---
 # <a name="imsgstorestorelogoff"></a>IMsgStore::StoreLogoff
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht das ordnungsgemäße Abmelden des Nachrichtenspeichers.
+Aktiviert die ordnungsgemäße Abmeldung des Nachrichtenspeichers.
   
 ```cpp
 HRESULT StoreLogoff(
@@ -37,57 +37,57 @@ HRESULT StoreLogoff(
 
  _lpulFlags_
   
-> [in, out] Eine Bitmaske aus Flags, die aus dem Nachrichtenspeicher Abmeldung steuert. Bei der Eingabe sind alle Flags für diesen Parameter festlegen schließen sich gegenseitig aus. ein Anrufer muss nur ein Flag pro Aufruf angeben. Die folgenden Kennzeichen sind bei der Eingabe gültig:
+> [in, out] Eine Bitmaske von Flags, die die Abmeldung aus dem Nachrichtenspeicher steuert. Bei der Eingabe schließen sich alle für diesen Parameter festgelegten Flags gegenseitig aus; ein Anrufer muss nur ein Flag pro Anruf angeben. Die folgenden Flags sind bei der Eingabe gültig:
     
 LOGOFF_ABORT 
   
-> Alle Anbieter transportaktivität für diesen Nachrichtenspeicher sollten vor der Abmeldung beendet werden. Steuerelement wird mit dem Anrufer zurückgegeben, nachdem Aktivität beendet wurde. Wenn alle Anbieter transportaktivität stattfindet, die Abmeldung tritt nicht auf, und keine Änderung des Verhaltens der MAPI-Warteschlange oder Transport Anbieter tritt auf. Wenn der Anbieter transportaktivität im Leerlauf befindet, gibt die MAPI-Warteschlange den Speicher frei. 
+> Alle Transportanbieter Aktivitäten für diesen Nachrichtenspeicher sollten vor dem Abmelden angehalten werden. Das Steuerelement wird an den Aufrufer zurückgegeben, nachdem Activity beendet wurde. Wenn eine Transportanbieter Aktivität stattfindet, wird die Abmeldung nicht ausgeführt, und es tritt keine Änderung des Verhaltens der MAPI-Spooler-oder Transportanbieter auf. Wenn sich die Transportanbieter Aktivität im Leerlauf befindet, gibt der MAPI-Spooler den Speicher frei. 
     
 LOGOFF_NO_WAIT 
   
-> Der Nachrichtenspeicher sollte nicht für Nachrichten von Anbietern vor dem Schließen Transport warten. Ausgehende Nachrichten, die gesendet werden können, werden gesendet. Wenn dieser Speicher der standardmäßige Posteingang enthält, werden alle Nachrichten in-Process empfangen, und klicken Sie dann weitere Empfang deaktiviert. Wenn alle Aktivitäten abgeschlossen ist, die MAPI-Warteschlange gibt den Speicher und Steuerelement wird mit dem Anrufer sofort zurückgegeben. 
+> Der Nachrichtenspeicher sollte vor dem Schließen nicht auf Nachrichten von Transportanbietern warten. Ausgehende Nachrichten, die gesendet werden können, werden gesendet. Wenn dieser Speicher den Standard Posteingang enthält, werden alle in-Process-Nachrichten empfangen, und dann wird der weitere Empfang deaktiviert. Wenn alle Aktivitäten abgeschlossen sind, gibt der MAPI-Spooler den Speicher frei, und das Steuerelement wird sofort an den Aufrufer zurückgegeben. 
     
 LOGOFF_ORDERLY 
   
-> Der Nachrichtenspeicher sollten Informationen von Transport Anbietern vor dem Schließen nicht warten. Nachrichten, die aktuell verarbeitet werden abgeschlossen sind, jedoch keine neuen Nachrichten verarbeitet werden. Wenn alle Aktivitäten abgeschlossen ist, die MAPI-Warteschlange gibt den Speicher und Steuerung sofort auf den Anbieter zurückgegeben wird. 
+> Der Nachrichtenspeicher sollte vor dem Schließen nicht auf Informationen von Transportanbietern warten. Nachrichten, die gerade verarbeitet werden, werden abgeschlossen, es werden jedoch keine neuen Nachrichten verarbeitet. Wenn alle Aktivitäten abgeschlossen sind, gibt der MAPI-Spooler den Speicher frei, und das Steuerelement wird sofort an den Speicheranbieter zurückgegeben. 
     
 LOGOFF_PURGE 
   
-> Das Abmelden sollte dieselbe funktionieren das Flag LOGOFF_NO_WAIT festgelegt ist, wobei jedoch die [IXPLogon::FlushQueues](ixplogon-flushqueues.md) oder [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) -Methode für die entsprechenden Transportanbieter sollte aufgerufen werden. Das Flag LOGOFF_PURGE gibt das Steuerelement mit dem Anrufer nach Abschluss zurück. 
+> Die Abmeldung sollte genauso funktionieren, als ob das LOGOFF_NO_WAIT-Flag festgelegt ist, aber entweder die [IXPLogon:: FlushQueues](ixplogon-flushqueues.md) oder [IMAPIStatus:: FlushQueues](imapistatus-flushqueues.md) -Methode für die entsprechenden Transportanbieter aufgerufen werden soll. Das LOGOFF_PURGE-Flag gibt nach Abschluss die Steuerung an den Aufrufer zurück. 
     
 LOGOFF_QUIET 
   
-> Wenn alle Anbieter transportaktivität stattfindet, sollte das Abmelden nicht erfolgen.
+> Wenn eine Transportanbieter Aktivität stattfindet, sollte die Abmeldung nicht erfolgen.
     
     The following flags are valid on output:
     
 LOGOFF_INBOUND 
   
-> Eingehende Nachrichten werden derzeit erhältlich.
+> Eingehende Nachrichten werden gerade ankommen.
     
 LOGOFF_OUTBOUND 
   
-> Ausgehende Nachrichten werden gerade gesendet werden.
+> Ausgehende Nachrichten werden gerade gesendet.
     
 LOGOFF_OUTBOUND_QUEUE 
   
-> Ausgehende Nachrichten werden ausstehende (d. h., sie sind in den Postausgang).
+> Ausgehende Nachrichten sind ausstehend (das heißt, Sie befinden sich im Postausgang).
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Abmeldung wurde erfolgreich abgeschlossen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::StoreLogoff** -Methode beim Ausrichten ausübt Steuerelement über die Interaktion der Nachricht speichern und transport-Anbieter während des Abmeldevorgangs. Aufrufen von **StoreLogoff** gilt nur für Nachrichtenspeicher, die nur vom Anrufer verwendet werden. Beispielsweise wenn zwei Clients den gleichen Nachrichtenspeicher verwenden und einer von ihnen **StoreLogoff**aufruft, der Nachrichtenspeicher wird sofort freigegeben und wird die Steuerung an den aufrufenden Client zurückgegeben.
+Die **IMsgStore:: StoreLogoff** -Methode übt während des Abmeldevorgangs die Steuerung der Interaktion zwischen dem Nachrichtenspeicher und den Transportanbietern aus. Das Aufrufen von **StoreLogoff** ist nur für Nachrichtenspeicher zulässig, die nur vom Aufrufer verwendet werden. Wenn beispielsweise zwei Clients denselben Nachrichtenspeicher verwenden und einer von Ihnen **StoreLogoff**aufruft, wird der Nachrichtenspeicher sofort freigegeben, und die Steuerung wird an den aufrufenden Client zurückgegeben.
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Speichern Sie die Kennzeichen, die an **StoreLogoff** übergeben werden, und übergeben Sie diese Option, wenn Sie die [IMAPISupport::StoreLogoffTransports](imapisupport-storelogofftransports.md) -Methode aufrufen. Rufen Sie nicht **StoreLogoffTransports** , bis der Nachrichtenspeicher Referenzzähler auf Null fällt. Mehrere Aufrufe von **StoreLogoffTransports** überschreiben einfach die gespeicherten Kennzeichen. 
+Speichern Sie die Flags, die an **StoreLogoff** übergeben werden, und übergeben Sie diese, wenn Sie die [IMAPISupport:: StoreLogoffTransports](imapisupport-storelogofftransports.md) -Methode aufrufen. Rufen Sie **StoreLogoffTransports** erst auf, wenn der Verweiszähler des Nachrichtenspeichers auf Null sinkt. Bei mehreren Aufrufen von **StoreLogoffTransports** werden die gespeicherten Flags einfach überschrieben. 
   
-Wenn kein Aufruf an **StoreLogoff** vorgenommen wurde vor der Meldung des Informationsspeichers Referenzzähler 0 (null) erreicht, legen Sie das Flag LOGOFF_ABORT im _UlFlags_ -Parameter, den an **StoreLogoffTransports**übergeben.
+Wenn kein Aufruf an **StoreLogoff** vorgenommen wurde, bevor der Verweiszähler des Nachrichtenspeichers 0 (null) erreicht, legen Sie das LOGOFF_ABORT-Flag im _ulFlags_ -Parameter, den Sie an **StoreLogoffTransports**übergeben.
   
 ## <a name="see-also"></a>Siehe auch
 

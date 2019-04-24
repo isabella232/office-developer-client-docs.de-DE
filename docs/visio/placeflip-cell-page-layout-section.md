@@ -9,20 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: df014b98-cfd5-b6d3-4b8a-b0acb3b94412
 description: Legt fest, wie platzierbare Shapes auf einem Zeichenblatt gekippt und/oder gedreht werden, wenn Sie das Dialogfeld Layout konfigurieren verwenden (klicken Sie dazu auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie dann auf Weitere Layoutoptionen).
-ms.openlocfilehash: fb16849c7a496a4277133c68453d94d6fd2e67f8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d1c31654782012b3536d35f3a12a923c2cc7a8f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346872"
 ---
-# <a name="placeflip-cell-page-layout-section"></a>PlaceFlip Cell (Page Layout Section)
+# <a name="placeflip-cell-page-layout-section"></a>Zelle "PlaceFlip" (Abschnitt "Page Layout")
 
 Legt fest, wie platzierbare Shapes auf einem Zeichenblatt gekippt und/oder gedreht werden, wenn Sie das Dialogfeld **Layout konfigurieren** verwenden (klicken Sie dazu auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu anordnen**, und klicken Sie dann auf **Weitere Layoutoptionen**).
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|&amp;H0  <br/> |Standard. Nicht kippen.  <br/> |**visLOFlipDefault** <br/> |
+|&amp;H0  <br/> |Standardwert. Nicht kippen.  <br/> |**visLOFlipDefault** <br/> |
 |&amp;H1  <br/> |Horizontal kippen.  <br/> |**visLOFlipX** <br/> |
 |&amp;H2  <br/> |Vertikal kippen.  <br/> |**visLOFlipY** <br/> |
 |&amp;H4  <br/> |In 90-Grad-Schritten kippen.  <br/> |**visLOFlipRotate** <br/> |
@@ -34,13 +34,13 @@ Der Wert in der Zelle PlaceFlip hilft bei der Ausrichtung eines platzierbaren Sh
   
 Wenn Sie dieses Verhalten für ein bestimmtes Shape festlegen möchten, verwenden Sie die Zelle ShapePlaceFlip im Abschnitt Shape Layout.
   
-Wenn Sie einen Verweis auf die Zelle PlaceFlip aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle placeflip aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |PlaceFlip  <br/> |
+|Zellenname:  <br/> |Zelle placeflip  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PlaceFlip aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle placeflip aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

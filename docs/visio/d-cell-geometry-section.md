@@ -9,43 +9,43 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5f1fdf59-db58-561c-e187-1af72a8b87f2
 description: Stellt die Informationen in den verschiedenen Zeilen dar. Diese Tabelle beschreibt die Zelle D anhand der Zeile, in der sie sich befindet.
-ms.openlocfilehash: ed67197e46ee159ba2175b0e86623fe1704992d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1da6ac19e6a50ea87f07bf3e3c9f96378b512ba8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346515"
 ---
 # <a name="d-cell-geometry-section"></a>Zelle "D" (Abschnitt "Geometry")
 
 Stellt die Informationen in den verschiedenen Zeilen dar. Diese Tabelle beschreibt die Zelle D anhand der Zeile, in der sie sich befindet.
   
-|**Row**|**Beschreibung**|
+|**Zeile**|**Beschreibung**|
 |:-----|:-----|
-|[EllipticalArcTo](ellipticalarcto-row-geometry-section.md) <br/> | Das Verhältnis der größeren zur kleineren Achse eines Bogens. Im Gegensatz zu der normalen Bedeutung der Bezeichnungen muss die als "große" Achse bezeichnete Achse nicht unbedingt größer als die "kleine" Achse sein, sodass das Größenverhältnis nicht größer als 1 sein muss. Beim Festlegen des Zellwerts gleich 0 bzw. größer als 1000 können unvorhergesehene Ergebnisse auftreten.  <br/> |
+|[EllipticalArcTo](ellipticalarcto-row-geometry-section.md) <br/> | Das Verhältnis zwischen der größeren und der kleineren Achse eines Bogens. Im Gegensatz zu der normalen Bedeutung der Bezeichnungen muss die mit dem Ausdruck "große" Achse bezeichnete Achse nicht unbedingt größer als die "kleine" Achse sein, sodass das Größenverhältnis nicht größer als 1 sein muss. Wenn der Zellwert auf höchstens 0 bzw. auf größer als 1000 festgelegt wird, können unvorhersehbare Ergebnisse auftreten.  <br/> |
 |[NURBSTo](nurbsto-row-geometry-section.md) <br/> | Die erste Stärke des nicht einheitlichen rationalen B-Splines (Nonuniform Rational B-spline, NURBS).  <br/> |
-|[SplineStart](splinestart-row-geometry-section.md) <br/> | Der Grad eines Splines (eine Ganzzahl von 1 bis 25).  <br/> |
-|[Ellipse](ellipse-row-geometry-section.md) <br/> | Eine *y* -Koordinate eines Punkts auf der Ellipse; gepaart mit einer *X* -Koordinate, dargestellt durch die Zelle [C](c-cell-geometry-section.md) .  <br/> |
+|[Zeile SplineStart](splinestart-row-geometry-section.md) <br/> | Der Grad eines Splines (eine ganze Zahl von 1 bis 25).  <br/> |
+|[Ellipse](ellipse-row-geometry-section.md) <br/> | Eine *y* -Koordinate eines Punkts auf einer Ellipse; gepaart mit der *x* -Koordinate, dargestellt durch die Zelle [C](c-cell-geometry-section.md) .  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie eine Referenz auf die Zelle D nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle D aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Geometrie *i* . D *j* wobei *i* und *j* = < 1 >, 2, 3...  <br/> |
-|| Geometrie *i* . D1 (Zeile Ellipse) wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Geometrie *i* . D *j* wobei *i* und *j* = <1>, 2, 3...  <br/> |
+|| Geometrie *i* . D1 (Ellipsen Zeile) wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle D aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle D nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zeilenindex:  <br/> |**VisRowVertex** +  *j* wobei *j* = 0, 1, 2...  <br/> |
-||visRowVertex (Zeile Ellipse)  <br/> |
-| Zellenindex  <br/> |visAspectRatio (Zeile EllipticalArcTo)  <br/> |
-||visNURBSWeightPrev (Zeile NURBSTo)  <br/> |
-||visSplineDegree (Zeile SplineStart)  <br/> |
-||visEllipseMinorY (Zeile Ellipse)  <br/> |
+| Abschnittsindex:  <br/> |**visSectionFirstComponent** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowVertex** +  *j* = ** 0, 1, 2...  <br/> |
+||**visRowVertex** (Zeile Ellipse)  <br/> |
+| Zellenindex  <br/> |**visAspectRatio** (EllipticalArcTo-Zeile)  <br/> |
+||**visNURBSWeightPrev** (NURBSTo-Zeile)  <br/> |
+||**visSplineDegree** (Zeile SplineStart-Zeile)  <br/> |
+||**visEllipseMinorY** (Zeile Ellipse)  <br/> |
    
 

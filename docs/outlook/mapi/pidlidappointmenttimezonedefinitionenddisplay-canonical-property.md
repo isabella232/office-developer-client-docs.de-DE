@@ -1,5 +1,5 @@
 ---
-title: PidLidAppointmentTimeZoneDefinitionEndDisplay (kanonische Eigenschaft)
+title: Kanonische Pidlidappointmenttimezonedefinitionenddisplay (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,57 +11,57 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7b6193cb-612b-408e-b9bc-285df313e2cc
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 24ccd25a1d799f3146bd230e5156be0051104f47
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345381"
 ---
-# <a name="pidlidappointmenttimezonedefinitionenddisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionEndDisplay (kanonische Eigenschaft)
+# <a name="pidlidappointmenttimezonedefinitionenddisplay-canonical-property"></a>Kanonische Pidlidappointmenttimezonedefinitionenddisplay (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINITION](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) ist der die Beschreibung für die Zeitzone gespeichert, die verwendet wird, wenn das Ende einer Einzelinstanz-Termin oder eine Besprechungsanfrage ausgewählt ist. 
+Enthält einen Stream, der dem beibehaltenen Format einer [TZDEFINITION](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) -Struktur zugeordnet wird, in der die Beschreibung für die Zeitzone gespeichert wird, die verwendet wird, wenn die Endzeit eines einzelnen Termins oder einer Besprechungsanfrage ausgewählt ist. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidApptTZDefEndDisplay  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x0000825F  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Appointment  <br/> |
+|Long-ID (Deckel):  <br/> |0x0000825F  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Microsoft Office Outlook 2003 oder früher und Lösungen, basieren auf Collaboration Data Objects (CDO) 1.2.1 und, die das Calendar Update-Tool nicht für Microsoft Outlook und Microsoft Exchange Server ausgeführt haben, Speichern der Start- und Endzeit der Einzel-Instanz Termine und Besprechungsanfragen in koordinierter Weltzeit (UTC). Diese Clients speichern keine Informationen für die Zeitzone, in dem die Termin- oder Besprechungsanfragen erstellt wird.
+Microsoft Office Outlook 2003 oder früher und Lösungen, die auf Collaboration Data Objects (CDO) 1.2.1 basieren und nicht das Kalender Aktualisierungstool für Outlook oder Microsoft Exchange Server ausgeführt haben, speichern Sie die Startzeit und die Endzeit der einzelnen Instanz. Termine und Besprechungsanfragen in koordinierter weltZeit (UTC). Diese Clients speichern keine Informationen für die Zeitzone, in der der Termin oder die Besprechungsanfrage erstellt wird.
   
-Versionen von Microsoft Outlook seit Microsoft Office Outlook 2007 und CDO 1.2.1-basierter Lösungen, die im Kalender von Outlook oder Exchange Server ausgeführt haben aktualisieren Tool verwenden **DispidApptTZDefEndDisplay** , um die Zeitzone für die Endzeit zu speichern. **DispidApptTZDefEndDisplay** zeigt Termin oder eine Besprechung in der ursprünglichen Zeitzone, die es geplant wurde, und legt fest, ob die Endzeit angepasst werden sollten, wenn die Regeln der Zeitzone ändern. Wenn diese Eigenschaft nicht vorhanden ist, wird der Zeitzone angegeben, die von der **DispidApptTZDefStartDisplay** ([PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md))-Eigenschaft verwendet. Wenn **DispidApptTZDefStartDisplay** fehlt oder ist ungültig ist, wird davon ausgegangen, dass die aktuellen Ortszeitzone. **DispidApptTZDefEndDisplay** wird nur für die Anzeige verwendet und ist nicht in Serie Erweiterung verwendet. 
+Versionen von Microsoft Outlook seit Microsoft Office Outlook 2007 und auf CDO 1.2.1 basierende Lösungen, die das Outlook-oder Exchange Server-Kalender Aktualisierungstool ausgeführt haben, verwenden **dispidApptTZDefEndDisplay** zum Speichern der Zeitzone für die Endzeit. **dispidApptTZDefEndDisplay** zeigt den Termin oder die Besprechung in der ursprünglich geplanten Zeitzone an und bestimmt, ob die Endzeit angepasst werden sollte, wenn sich die Regeln der Zeitzone ändern. Fehlt diese Eigenschaft, wird die von der **dispidApptTZDefStartDisplay** ([pidlidappointmenttimezonedefinitionstartdisplay (](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md))-Eigenschaft angegebene Zeitzone verwendet. Wenn **dispidApptTZDefStartDisplay** fehlt oder ungültig ist, wird die aktuelle lokale Zeitzone angenommen. **dispidApptTZDefEndDisplay** wird nur zu Anzeigezwecken verwendet und nicht in der Serienerweiterung verwendet. 
   
-Ein Parser wird beim Lesen eines Streams von **DispidApptTZDefEndDisplay**abgerufen, oder wenn er in ein Stream-Objekt für eine binäre Eigenschaft wie **DispidApptTZDefEndDisplay**Engagement **TZDEFINITION** beibehalten. Weitere Informationen finden Sie unter [Speichern von TZDEFINITION in ein Stream-Objekt an eine binäre Eigenschaft übermittelt werden](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
+Ein Parser muss beim Lesen eines von **dispidApptTZDefEndDisplay**abgerufenen Streams oder beim Speichern von **TZDEFINITION** in einem Stream für die Verpflichtung zu einer binären Eigenschaft wie **dispidApptTZDefEndDisplay**vorsichtig sein. Weitere Informationen finden Sie unter [Informationen zum Speichern von TZDEFINITION in einem Stream, um eine binäre Eigenschaft zu über](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx)nehmen.
   
- **DispidApptTZDefEndDisplay** gibt die Informationen zur Zeitzone für die Eigenschaft **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)). Das Format, Einschränkungen und Berechnung von **DispidApptTZDefEndDisplay** sind identisch mit der in der **DispidApptTZDefStartDisplay** -Eigenschaft angegeben. 
+ **dispidApptTZDefEndDisplay** gibt Zeitzoneninformationen für die **dispidApptEndWhole** ([pidlidappointmentendwhole (](pidlidappointmentendwhole-canonical-property.md))-Eigenschaft an. Das Format, die Einschränkungen und die Berechnung von **dispidApptTZDefEndDisplay** sind identisch mit den Angaben in der **dispidApptTZDefStartDisplay** -Eigenschaft. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs-und Antwortnachrichten an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -73,5 +73,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

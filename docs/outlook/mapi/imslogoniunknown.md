@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: d87093dc-f705-465f-ab3c-944ca0cd3e54
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 013903f36bf648c4aed194c88104e7dd981b199f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 991e48aa458a58ad2d7d688e81dbb357ef9bda5b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348713"
 ---
 # <a name="imslogon--iunknown"></a>IMSLogon : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Greift auf Ressourcen in einer Nachricht speichern Anmeldeobjekt.
+Greift auf Ressourcen in einem Nachrichtenspeicher-Anmeldeobjekt zu.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Nachricht Store Logon-Objekten  <br/> |
-|Implementiert von:  <br/> |Nachricht-Anbieter  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Nachrichtenspeicher-Anmeldeobjekte  <br/> |
+|Implementiert von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMSLogon  <br/> |
 |Zeigertyp:  <br/> |LPMSLOGON  <br/> |
@@ -40,17 +40,17 @@ Greift auf Ressourcen in einer Nachricht speichern Anmeldeobjekt.
 
 |||
 |:-----|:-----|
-|[GetLastError](imslogon-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den letzten Fehler enthält, die für das Store-Nachrichtenspeicherobjekt aufgetreten sind.  <br/> |
-|[Logoff](imslogon-logoff.md) <br/> |Eine Nachricht Abmeldung Speicheranbieter.  <br/> |
-|[OpenEntry](imslogon-openentry.md) <br/> |Öffnet einen Ordner oder Message-Objekt und gibt einen Zeiger auf das Objekt, das Zugriff zu ermöglichen.  <br/> |
-|[CompareEntryIDs](imslogon-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen.  <br/> |
-|[Beraten](imslogon-advise.md) <br/> |Registriert ein Objekt mit einem Anbieter für Benachrichtigungen zu Änderungen im Nachrichtenspeicher Nachricht.  <br/> |
-|[Heben Sie diesen Vorgang](imslogon-unadvise.md) <br/> |Entfernt ein Objekt Anmeldungsseite für Benachrichtigung über Message Store Änderungen, die zuvor durch einen Aufruf an die **IMSLogon::Advise** -Methode festgelegt.  <br/> |
-|[OpenStatusEntry](imslogon-openstatusentry.md) <br/> |Öffnet ein Statusobjekt.  <br/> |
+|[Getlasterroraufzurufen](imslogon-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum letzten Fehler enthält, der für das Nachrichtenspeicherobjekt aufgetreten ist.  <br/> |
+|[Logoff](imslogon-logoff.md) <br/> |Meldet einen Nachrichtenspeicher Anbieter ab.  <br/> |
+|[OpenEntry](imslogon-openentry.md) <br/> |Öffnet ein Folder-oder Message-Objekt und gibt einen Zeiger auf das Objekt zurück, um weiteren Zugriff zu ermöglichen.  <br/> |
+|[CompareEntryIDs](imslogon-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen.  <br/> |
+|[Beraten](imslogon-advise.md) <br/> |Registriert ein Objekt bei einem Nachrichtenspeicher Anbieter für Benachrichtigungen zu Änderungen im Nachrichtenspeicher.  <br/> |
+|[Unadvise](imslogon-unadvise.md) <br/> |Entfernt die Registrierung eines Objekts für die Benachrichtigung über Änderungen am Nachrichtenspeicher, die zuvor mithilfe eines Aufrufs der **IMSLogon:: Advise** -Methode festgelegt wurden.  <br/> |
+|[OpenStatusEntry](imslogon-openstatusentry.md) <br/> |Öffnet ein Status-Objekt.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Message Store Anmeldung-Objekts ist der Teil einer geöffneten Nachricht Speicheranbieter, die MAPI direkt aufruft. Es gibt eine 1: 1-Beziehung zwischen Message Store Anmeldung-Objekts, die MAPI-Aufrufe und die Nachricht Objekt speichern, die Clientanwendungen aufrufen. Sie können vorstellen der Anmeldung und Speichern von Objekten als ein Objekt, das zwei Schnittstellen verfügbar macht. Die zwei Objekte werden zusammen und freigegebenen zusammen erstellt.
+Das Nachrichtenspeicher-Anmeldeobjekt ist der Teil eines geöffneten Nachrichtenspeicher Anbieters, der von MAPI direkt aufgerufen wird. Es gibt eine 1:1-Entsprechung zwischen dem Nachrichtenspeicher-Anmeldeobjekt, das von MAPI aufgerufen wird, und dem Nachrichtenspeicherobjekt, das von Clientanwendungen aufgerufen wird; Sie können sich die Anmelde-und Speicherobjekte als ein Objekt vorstellen, das zwei Schnittstellen verfügbar macht. Die beiden Objekte werden zusammen erstellt und gemeinsam freigegeben.
   
 ## <a name="see-also"></a>Siehe auch
 

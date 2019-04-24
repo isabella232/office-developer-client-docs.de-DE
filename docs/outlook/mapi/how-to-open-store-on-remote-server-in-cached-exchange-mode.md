@@ -1,31 +1,31 @@
 ---
-title: Öffnen Sie einen Speicher auf dem Remoteserver, wenn Outlook im Exchange-Cache-Modus befindet
+title: Öffnen eines Speichers auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf01eab7-164d-c3b3-8bb0-9281e2119bc5
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 7c1b3d3d5eed6bc991f8e4fd702fa197d610c104
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: 419c9ae734e8b58d0958970e7127b94d220b8382
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345948"
 ---
-# <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Öffnen Sie einen Speicher auf dem Remoteserver, wenn Outlook im Exchange-Cache-Modus befindet
+# <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Öffnen eines Speichers auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, die zeigt, wie das Flag **MDB_ONLINE** verwenden, um einen Nachrichtenspeicher auf dem Remoteserver zu öffnen, wenn Microsoft Outlook 2010 oder Microsoft Outlook 2013 im Exchange-Cache-Modus befindet. 
+Dieses Thema enthält ein Codebeispiel in C++, in dem gezeigt wird, wie das **MDB_ONLINE** -Flag zum Öffnen eines Nachrichtenspeichers auf dem Remoteserver verwendet wird, wenn sich microsoft Outlook 2010 oder microsoft Outlook 2013 im Exchange-Cache-Modus befindet. 
   
-Exchange-Cache-Modus ermöglicht Outlook 2010 und Outlook 2013 eine lokale Kopie des Postfachs eines Benutzers zu verwenden, während Outlook 2010 oder Outlook 2013 eine online-Verbindung zu einer remote-Kopie des Postfachs des Benutzers, auf dem Exchange-Remoteserver verwaltet. Wenn Outlook 2010 oder Outlook 2013 standardmäßig im Exchange-Cache-Modus ausgeführt wird werden alle MAPI-Lösungen, die auf der gleichen Sitzung melden Sie sich auch mit den zwischengespeicherten Nachrichtenspeicher verbunden. Anhand der lokalen Kopie des Postfachs werden alle Daten, die zugegriffen werden kann und alle vorgenommenen Änderungen vorgenommen.
+Der Exchange-Cache-Modus ermöglicht es Outlook 2010 und Outlook 2013, eine lokale Kopie des Postfachs eines Benutzers zu verwenden, während Outlook 2010 oder Outlook 2013 eine Onlineverbindung mit einer Remotekopie des Postfachs des Benutzers auf dem Exchange-Remoteserver verwaltet. Wenn Outlook 2010 oder Outlook 2013 im Exchange-Cache-Modus ausgeführt wird, werden standardmäßig alle MAPI-Lösungen, die sich bei derselben Sitzung anmelden, auch mit dem zwischengespeicherten Nachrichtenspeicher verbunden. Alle Daten, auf die zugegriffen wird, und alle vorgenommenen Änderungen werden mit der lokalen Kopie des Postfachs vorgenommen.
   
-Ein Client oder Dienstanbieter kann die Verbindung mit den lokalen Nachrichtenspeicher überschreiben und öffnen Sie den Speicher auf dem Remoteserver durch das Bit beim Aufruf von [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)für **MDB_ONLINE** im *UlFlags* -Parameter festlegen. Nachdem Sie der Speicher erfolgreich auf dem Remoteserver für diese Sitzung geöffnet wurde, können Sie [IMAPISession::OpenEntry](imapisession-openentry.md) zum Öffnen von Elementen oder Ordnern auf den remote-Speicher verwenden. 
+Ein Client oder Dienstanbieter kann die Verbindung mit dem lokalen Nachrichtenspeicher außer Kraft setzen und den Speicher auf dem Remoteserver öffnen, indem er das Bit für **MDB_ONLINE** im Parameter *ulFlags* beim Aufrufen von [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md). Nachdem der Informationsspeicher auf dem Remoteserver für diese Sitzung erfolgreich geöffnet wurde, können Sie [IMAPISession:: OpenEntry](imapisession-openentry.md) verwenden, um Elemente oder Ordner im Remotespeicher zu öffnen. 
   
-Sie können keinen Exchange-Speicher gleichzeitig in derselben MAPI-Sitzung im Cache-Modus und im nicht-Cache-Modus öffnen. Wenn Sie den zwischengespeicherten Nachrichtenspeicher bereits geöffnet haben, müssen Sie entweder den Speicher schließen, bevor Sie dieses Flag zu öffnen, oder öffnen eine neue MAPI-Sitzung, in dem Sie den Exchange-Speicher auf dem Remoteserver mithilfe dieses Flag öffnen können.
+Sie können einen Exchange-Speicher nicht im Cache-Modus und gleichzeitig im nicht-Cache-Modus in derselben MAPI-Sitzung öffnen. Wenn Sie den zwischengespeicherten Nachrichtenspeicher bereits geöffnet haben, müssen Sie entweder den Speicher schließen, bevor Sie ihn mit dieser Kennzeichnung öffnen, oder eine neue MAPI-Sitzung öffnen, in der Sie den Exchange-Speicher auf dem Remoteserver mit dieser Kennzeichnung öffnen können.
   
-Das folgende Codebeispiel zeigt, wie **IMAPISession::OpenMsgStore** aufrufen, mit dem **MDB_ONLINE** -Flag, legen Sie in der *UlFlags* -Parameter auf den Standardinformationsspeicher auf dem Remoteserver zu öffnen. 
+Im folgenden Codebeispiel wird gezeigt, wie Sie **IMAPISession:: OpenMsgStore** mit dem **MDB_ONLINE** -Flag aufrufen, das im Parameter *ulFlags* festgelegt ist, um den Standardspeicher auf dem Remoteserver zu öffnen. 
   
 ```cpp
 HRESULT HrRemoteMessageStore( 
@@ -92,5 +92,5 @@ HRESULT HrRemoteMessageStore(
 
 - [Informationen zu MAPI-Ergänzungen](about-mapi-additions.md) 
 - [MAPI-Konstanten](mapi-constants.md)
-- [Zugreifen auf einen Store auf dem Remote-Server, wenn Outlook sich Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
+- [Zugreifen auf einen Speicher auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
 

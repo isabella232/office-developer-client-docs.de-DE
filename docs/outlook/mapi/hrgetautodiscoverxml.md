@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 77f28654ffe0f6f459fde229bb7428f2c39e96c0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347803"
 ---
 # <a name="hrgetautodiscoverxml"></a>HrGetAutoDiscoverXML
 
@@ -25,13 +25,13 @@ ms.locfileid: "25400719"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Stream Extensible Markup Language (XML), der Informationen aus den Auto-Discovery-Dienst eines Microsoft Exchange 2007-Servers abgerufen darstellt zurück.
+Gibt einen XML-Stream (Extensible Markup Language) zurück, der vom automatischen Ermittlungsdienst eines Microsoft Exchange 2007-Servers abgerufene Informationen darstellt.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Vom exportiert werden:  <br/> |olmapi32.dll  <br/> |
+|Exportiert von:  <br/> |olmapi32. dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
    
@@ -49,23 +49,23 @@ HRESULT HrGetAutoDiscoverXML(
 
  _pwzAddress_
   
-> [in] Eine Null endende Simple Mail Transfer Protocol (SMTP) e-Mail-Adresse des Kontos ein, für die Sie die automatische Ermittlung Informationen abrufen möchten.
+> in Eine NULL-terminierte SMTP-e-Mail-Adresse (Simple Mail Transfer Protocol) des Kontos, für das Sie die Informationen zur automatischen Suche abrufen möchten.
     
  _pwzPassword_
   
-> [in] Ein optionales Kennwort für das Konto durch _PwzAddress_angegeben. Beachten Sie, dass jedes beliebige Kennwort übergeben hat keine Auswirkung, wenn das durch _PwzAddress_ angegebene Konto ein Kennwort nicht erforderlich sind. 
+> in Ein optionales Kennwort für das durch _pwzAddress_angegebene Konto. Beachten Sie, dass das Übergeben eines beliebigen Kennworts keine Auswirkung hat, wenn das von _pwzAddress_ angegebene Konto kein Kennwort erfordert. 
     
  _hCancelEvent_
   
-> [in] Ein nicht festgelegte Win32-Ereignishandle, das ist optional und kann verwendet werden, um den Vorgang abzubrechen. Um den Vorgang abzubrechen, legen Sie das Ereignis, und übergeben Sie das Ereignishandle als _hCancelEvent_; übergeben Sie **null** , wenn Sie nicht, um den Vorgang abzubrechen möchten. Beachten Sie, dass ein Wert übergeben, die ein Ereignishandle nicht darstellen hat keine Auswirkung und wird von der Funktion ignoriert. 
+> in Ein nicht festgelegter Win32-Ereignishandler, der optional ist und zum Abbrechen des Vorgangs verwendet werden kann. Um den Vorgang abzubrechen, legen Sie das Ereignis fest, und geben Sie den Ereignishandler als _hCancelEvent_; gibt **null** zurück, wenn der Vorgang nicht abgebrochen werden soll. Beachten Sie, dass das Übergeben eines Werts, der keinen Ereignishandler darstellt, keine Auswirkung hat und von der Funktion ignoriert wird. 
     
  _ulFlags_
   
-> [in] Dieser Parameter wird nicht verwendet. Es muss 0 sein.
+> in Dieser Parameter wird nicht verwendet. Es muss 0 sein.
     
  _ppXmlStream_
   
-> [out] Ein Zeiger auf ein [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt, das die AutoErmittlung XML enthält. Gibt **null** zurück, wenn der AutoErmittlung-Vorgang fehlschlägt. Wenn Sie mit ihm fertig sind, müssen Sie [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt freigeben. 
+> Out Ein Zeiger auf ein [ISTREAM](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt, das den AUTODISCOVERY-XML-Code enthält. Gibt **null** zurück, wenn der Auto Ermittlungsvorgang fehlschlägt. Sie müssen das [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt freigeben, wenn Sie damit fertig sind. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -75,18 +75,18 @@ S_OK
     
 E_INVALIDARG 
   
--  _PwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _PpXmlStream_ ist ein **null** -Zeiger auf eine [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt. 
+-  _pwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _ppXmlStream_ ist ein **null** -Zeiger auf ein [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt. 
     
 MAPI_E_NOT_FOUND 
   
-- Clientcomputer ist nicht mit dem Netzwerk verbunden, Client-Computer ist nicht mit einem Microsoft Exchange 2007-Server verbunden, _PwzAddress_ ist nicht mit einem Konto auf einem Exchange 2007-Server oder _PwzAddress_ ist ein Konto, das Exchange nicht unterstützt Auto-Discovery-Dienst. 
+- Der Clientcomputer ist nicht mit dem Netzwerk verbunden, der Clientcomputer ist nicht mit einem Microsoft Exchange 2007-Server verbunden, _pwzAddress_ ist kein Konto auf einem Exchange 2007-Server, oder _pwzAddress_ ist ein Konto, das Exchange nicht unterstützt. AutoErmittlungsdienst. 
     
 MAPI_E_USER_CANCEL 
   
-- Ein Ereignishandle wurde übergeben, _hCancelEvent_ , um den Vorgang abzubrechen. 
+- Ein Ereignishandle wurde an _hCancelEvent_ übergeben, um den Vorgang abzubrechen. 
     
 STRSAFE_E_INSUFFICIENT_BUFFER
   
-- Der _PwzAddress_ oder _PwzPassword_ übergebene Wert ist zu lang, so, dass er den internen Puffer Größe 256 Bytes überschreitet. 
+- Der an _pwzAddress_ oder _pwzPassword_ übergebene Wert ist zu lang, sodass er den internen Puffer der Größe 256 Byte überschreitet. 
     
 
