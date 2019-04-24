@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 467242e3-96c9-4280-9cbc-9ecfe3f279cf
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5f45a6457bba738b290d967260bbd34c0f88f93f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 738eb346ec5388cbd94b32598236ef2ca05740f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326320"
 ---
 # <a name="imapisupportpreparesubmit"></a>IMAPISupport::PrepareSubmit
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bereitet eine Nachricht für die Übermittlung an die MAPI-Warteschlange.
+Bereitet eine Nachricht für die Übermittlung an den MAPI-Spooler vor.
   
 ```cpp
 HRESULT PrepareSubmit(
@@ -38,33 +38,33 @@ ULONG FAR * lpulFlags
 
  _lpMessage_
   
-> [in] Ein Zeiger auf die Nachricht zum Vorbereiten.
+> in Ein Zeiger auf die Nachricht, die vorbereitet werden soll.
     
  _lpulFlags_
   
-> [in, out] Bei der Eingabe der Parameter _LpulFlags_ ist reserviert und muss NULL sein. _LpulFlags_ muss NULL sein, bei der Ausgabe. 
+> [in, out] Bei der Eingabe ist der _lpulFlags_ -Parameter reserviert und muss NULL sein. Bei der Ausgabe muss _LPULFLAGS_ NULL sein. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Nachricht wurde erfolgreich vorbereitet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::PrepareSubmit** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter anrufen **PrepareSubmit** in ihrer Implementierung der [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode, um eine Nachricht für die Übermittlung an die Warteschlange MAPI vorbereiten. 
+Die **IMAPISupport::P reparesubmit** -Methode wird für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter rufen **PrepareSubmit** in ihrer Implementierung der [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf, um eine Nachricht für die Übermittlung an den MAPI-Spooler vorzubereiten. 
   
- **PrepareSubmit** wird verwendet, um die Verarbeitung von Nachrichten, die die in ihrer **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft MSGFLAG_RESEND gekennzeichnet sind. MSGFLAG_RESEND wird für Nachrichten festgelegt, die eine Anforderung erneut gesendet werden, wenn eine anfängliche Übertragung fehlschlägt enthalten. **PrepareSubmit** bestimmt, dem der Empfänger in der Liste der Empfänger die Nachricht erfolgreich empfangen und die nicht der Fall. 
+ **PrepareSubmit** wird verwendet, um Nachrichten zu verarbeiten, für die das MSGFLAG_RESEND-Flag in Ihrer **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft festgelegt ist. MSGFLAG_RESEND wird für Nachrichten festgelegt, die eine Anforderung zum erneuten Senden einer anfänglichen Übertragung aufweisen. **PrepareSubmit** bestimmt, welche Empfänger in der Empfängerliste die Nachricht erfolgreich empfangen haben und welche nicht. 
   
-**PrepareSubmit** die Nachricht [IMessage::GetRecipientTable](imessage-getrecipienttable.md) Methode aufgerufen, um Zugriff auf die Empfängerliste. Zum Abrufen der Empfängerdaten ruft **PrepareSubmit** [QueryRows der Empfänger Tabelle](imapitable-queryrows.md) . Für jede Zeile in der Tabelle **PrepareSubmit** die **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))-Eigenschaft überprüft und akzeptiert einen der folgenden Aktionen:
+Um auf die Empfängerliste zuzugreifen, ruft **PrepareSubmit** die [IMessage::](imessage-getrecipienttable.md) getrecipientable-Methode der Nachricht auf. Zum Abrufen der Empfängerdaten ruft **PrepareSubmit** die [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode der Empfängertabelle auf. Für jede Zeile in der Tabelle prüft **PrepareSubmit** die **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md))-Eigenschaft und führt eine der folgenden Aktionen aus:
   
-- Wenn das Flag MAPI_SUBMITTED festgelegt ist, löscht das Flag **PrepareSubmit** , und die **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))-Eigenschaft auf FALSE festgelegt.
+- Wenn das MAPI_SUBMITTED-Flag festgelegt ist, löscht **PrepareSubmit** das Flag und legt die **PR_RESPONSIBILITY** ([PIDTAGRESPONSIBILITY (](pidtagresponsibility-canonical-property.md))-Eigenschaft auf false fest.
     
-- Wenn das Flag MAPI_SUBMITTED nicht festgelegt ist, wird **PrepareSubmit** **PR_RECIPIENT_TYPE** in MAPI_P1 geändert und **PR_RESPONSIBILITY** auf TRUE festgelegt. 
+- Wenn das MAPI_SUBMITTED-Flag nicht festgelegt ist, ändert **PrepareSubmit** **PR_RECIPIENT_TYPE** zu MAPI_P1 und legt **PR_RESPONSIBILITY** auf true fest. 
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Bevor Sie **PrepareSubmit**aufrufen, müssen Sie unbedingt, haben die [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) -Methode aufgerufen und legen Sie die Kennzeichen NOTIFY_READYTOSEND im _UlFlags_ -Parameter. Die **SpoolerNotify** muss einmal pro Sitzung vor dem Aufruf von **PrepareSubmit**aufgerufen werden. **SpoolerNotify** synchronisiert die MAPI-Warteschlange und wird sichergestellt, dass alle erforderlichen Transportanbieter angemeldet sind und ihre Adresstypen registriert sind. 
+Stellen Sie vor dem Aufrufen von **PrepareSubmit**sicher, dass Sie die [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode aufgerufen und das NOTIFY_READYTOSEND-Flag im Parameter _ulFlags_ festgelegt haben. Der **SpoolerNotify** -Aufruf muss einmal pro Sitzung vor dem Aufruf von **PrepareSubmit**durchgeführt werden. **SpoolerNotify** synchronisiert den MAPI-Spooler und stellt sicher, dass alle erforderlichen Transportanbieter angemeldet sind und ihre Adresstypen registriert sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

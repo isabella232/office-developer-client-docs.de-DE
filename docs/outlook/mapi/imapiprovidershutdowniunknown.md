@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: fd86c8a5-f251-46c3-ace9-515e94e504ac
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 81b7b0c235f610e7aaa0c17ecd1760df5d382552
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 92067b5badfb2aab40f3b3735a164bc09321702c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322406"
 ---
 # <a name="imapiprovidershutdown--iunknown"></a>IMAPIProviderShutdown : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht das MAPI-Subsystem, um einen MAPI-Anbieter für das schnelle Herunterfahren von einem MAPI-Client zu informieren, damit der MAPI-Anbieter auf das Herunterfahren reagieren kann.
+Ermöglicht dem MAPI-Subsystem, einen MAPI-Anbieter über das schnelle Herunterfahren eines MAPI-Clients zu informieren, damit der MAPI-Anbieter auf das Herunterfahren reagieren kann.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Provider-Objekte: [IXPProvider](ixpprovideriunknown.md), [IABProvider](iabprovideriunknown.md)oder [IMSProvider](imsprovideriunknown.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Anbieterobjekte: [IXPProvider](ixpprovideriunknown.md), [IABProvider](iabprovideriunknown.md)oder [IMSProvider](imsprovideriunknown.md) <br/> |
 |Implementiert von:  <br/> |MAPI-Anbieter  <br/> |
-|Aufgerufen von:  <br/> |MAPI-Subsystems  <br/> |
+|Aufgerufen von:  <br/> |MAPI-Subsystem  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIProviderShutdown  <br/> |
 |Zeigertyp:  <br/> |LPMAPIPROVIDERSHUTDOWN  <br/> |
    
@@ -40,21 +40,21 @@ Ermöglicht das MAPI-Subsystem, um einen MAPI-Anbieter für das schnelle Herunte
 
 |||
 |:-----|:-----|
-|[QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md) <br/> |Abfragen der MAPI-Anbieter für Schnelles Herunterfahren unterstützen.  <br/> |
-|[NotifyProcessShutdown](imapiprovidershutdown-notifyprocessshutdown.md) <br/> |Zeigt den MAPI-Anbieter, dass ein MAPI-Client ausführt, ein Schnelles Herunterfahren, so dass der Anbieter Aktionen, um Datenverlust zu vermeiden nutzen kann.  <br/> |
-|[DoFastShutdown](imapiprovidershutdown-dofastshutdown.md) <br/> |Gibt an, an den MAPI-Anbieter, dass der MAPI-Client sofort beendet wird, damit der MAPI-Anbieter ändert sich, um Datenverlust zu vermeiden beibehalten wird.  <br/> |
+|[QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md) <br/> |Fragt den MAPI-Anbieter ab, um das schnelle Herunterfahren zu unterstützen.  <br/> |
+|[NotifyProcessShutdown](imapiprovidershutdown-notifyprocessshutdown.md) <br/> |Gibt dem MAPI-Anbieter an, dass ein MAPI-Client ein schnelles Herunterfahren durchführen soll, damit der Anbieter Maßnahmen ergreifen kann, um Datenverluste zu verhindern.  <br/> |
+|[DoFastShutdown](imapiprovidershutdown-dofastshutdown.md) <br/> |Gibt dem MAPI-Anbieter an, dass der MAPI-Client sofort beendet wird, sodass der MAPI-Anbieter Änderungen anhält, um Datenverluste zu vermeiden.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Schnelles Herunterfahren kann ein MAPI-Client seine in kurzer Zeit zu beenden, hoffentlich geladen, nachdem sich der Client und MAPI-Anbieter haben gespeichert MAPI-Einstellungen und Daten. Der MAPI-Client initiiert ein Schnelles Herunterfahren immer und sollte Abfragen des MAPI-Subsystems für Schnelles Herunterfahren Unterstützung von MAPI-Anbieter geladen. Ein Administrator kann die Windows-Registrierung können Sie die anbieterunterstützung angeben, die erforderlich sind, um das Schnelles Herunterfahren aller MAPI-Clients zulassen wird auf Benutzerebene festgelegt. Weitere Informationen zu den Einstellungen in der Registrierung finden Sie unter [Fast Herunterfahren Benutzeroptionen](fast-shutdown-user-options.md). Für schnelle Herunterfahren ohne Datenverlust erfolgreich ausgeführt wurde, sollte MAPI-Anbieter jedoch die **IMAPIProviderShutdown** -Schnittstelle implementieren. 
+Das schnelle Herunterfahren ermöglicht es einem MAPI-Client, seinen Prozess innerhalb kurzer Zeit zu beenden, hoffentlich nachdem der Client und die geladenen MAPI-Anbieter MAPI-Einstellungen und-Daten gespeichert haben. Der MAPI-Client initiiert immer ein schnelles Herunterfahren und sollte das MAPI-Subsystem Abfragen, um die Unterstützung für das schnelle Herunterfahren von den geladenen MAPI-Anbietern zu erhalten. Ein Administrator kann die Windows-Registrierung auf Benutzerebene festlegen, um die Ebene der Anbieterunterstützung anzugeben, die erforderlich ist, um das schnelle Herunterfahren aller MAPI-Clients zu ermöglichen. Weitere Informationen zu den Registrierungseinstellungen finden Sie unter [Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md). Damit jedoch das schnelle Herunterfahren ohne Datenverlust erfolgreich ausgeführt werden kann, sollten MAPI-Anbieter die **IMAPIProviderShutdown** -Schnittstelle implementieren. 
   
-Ein MAPI-Anbieter, der schnelle Herunterfahren von Clients unterstützen muss, sollte zu MAPI-Subsystems in der **IMAPIProviderShutdown::QueryFastShutdown** -Methode S_OK zurück. Wenn MAPI-Subsystems anschließend die Methoden **IMAPIProviderShutdown::NotifyProcessShutdown** und **IMAPIProviderShutdown::DoFastShutdown** aufruft, dauert der MAPI-Anbieter erforderliche Aktionen für das MAPI-Einstellungen und Daten zu speichern und Vorbereiten der Client beenden. 
+Ein MAPI-Anbieter, der das schnelle Herunterfahren des Clients unterstützen muss, sollte S_OK in der **IMAPIProviderShutdown:: QueryFastShutdown** -Methode an das MAPI-Subsystem zurückgeben. Wenn das MAPI-Subsystem anschließend die Methoden **IMAPIProviderShutdown:: NotifyProcessShutdown** und **IMAPIProviderShutdown::D ofastshutdown** aufruft, sollte der MAPI-Anbieter die erforderlichen Aktionen zum Speichern von MAPI-Einstellungen und-Daten ergreifen und bereiten Sie den Exit des Clients vor. 
   
-MAPI-Anbieter, die keine schnelle Herunterfahren von Clients unterstützen müssen sollten weiterhin die **IMAPIProviderShutdown** -Schnittstelle implementieren, und haben die **IMAPIProviderShutdown::QueryFastShutdown** -Methode MAPI_E_NO_SUPPORT zurückgeben. Für Outlook als MAPI-Client bewirkt, dass dieser Outlook warten, dass alle externen Verweise freigegeben werden muss, bevor sie beendet wird. 
+MAPI-Anbieter, die das schnelle Herunterfahren des Clients nicht unterstützen müssen, sollten weiterhin die **IMAPIProviderShutdown** -Schnittstelle implementieren und die **IMAPIProviderShutdown:: QUERYFASTSHUTDOWN** -Methode MAPI_E_NO_SUPPORT zurückgeben. Für Outlook als MAPI-Client bewirkt dies, dass Outlook auf alle externen Verweise wartet, bevor es beendet wird. 
   
-Je nach Windows-Registrierung des Benutzers verhindert Einstellung für das schnelle Herunterfahren nicht implementieren der **IMAPIProviderShutdown** -Schnittstelle nicht unbedingt ein schnelle Herunterfahren von Clients. 
+Abhängig von der Windows-Registrierungseinstellung des Benutzers für das schnelle Herunterfahren verhindert die Implementierung der **IMAPIProviderShutdown** -Schnittstelle nicht unbedingt, dass ein Client schnell heruntergefahren wird. 
   
-Weitere Informationen über den Prozess der Schnelles Herunterfahren finden Sie unter [Übersicht über die schnelle Herunterfahren](fast-shutdown-overview.md). Informationen dazu, wie Sie das schnelle Herunterfahren erfolgreich durchzuführen finden Sie unter [Bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md).
+Weitere Informationen zum Prozess des schnellen Herunterfahrens finden Sie unter [Übersicht über Schnelles Herunterfahren](fast-shutdown-overview.md). Weitere Informationen dazu, wie Sie das schnelle Herunterfahren erfolgreich ausführen können, finden Sie unter [bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md).
   
 ## <a name="see-also"></a>Siehe auch
 

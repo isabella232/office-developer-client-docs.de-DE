@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 31004aec-7bd2-6e12-83eb-1a32da121c54
-description: Gibt ein Konto mit Eigenschaftswert ist.
-ms.openlocfilehash: a7d016ab7e265e547b33940c16f96979bd5fa87a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sucht nach einem Eigenschaftswert.
+ms.openlocfilehash: d09bce88413f85ee3ccc332c3cb88bb545a0ccaf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322078"
 ---
 # <a name="iolkaccountmanagerfindaccount"></a>IOlkAccountManager::FindAccount
 
-Gibt ein Konto mit Eigenschaftswert ist.
+Sucht nach einem Eigenschaftswert.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -34,24 +34,24 @@ HRESULT IOlkAccountManager::FindAccount (
 
 _dwProp_
   
-> [in] Die Eigenschaft für die Suche. [PROP_ACCT_ID](prop_acct_id.md) oder [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)muss sein.
+> in Die Eigenschaft, nach der gesucht werden soll. Muss [PROP_ACCT_ID](prop_acct_id.md) oder [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)sein.
     
 _pVar_
   
-> [in] Der Wert übereinstimmen.
+> in Der Wert, der abgeglichen werden soll.
     
 _ppAccount_
   
-> [out] Das Konto gefunden. Dieses Objekt unterstützt eine [IOlkAccount](iolkaccount.md) -Schnittstelle. 
+> Out Das Konto wurde gefunden. Dieses Objekt unterstützt eine [IOlkAccount](iolkaccount.md) -Schnittstelle. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto kann nicht gefunden werden.  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto wurde nicht gefunden.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
-|E_OLK_PARAM_NOT_SUPPORTED  <br/> |Ein oder mehrere Parameter sind ungültig.  <br/> |
+|E_OLK_PARAM_NOT_SUPPORTED  <br/> |Mindestens ein Parameter ist ungültig.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

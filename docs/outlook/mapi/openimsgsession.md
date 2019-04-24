@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f75229e3-5f44-4298-8706-9eddf0ef124c
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 607105bd58a14a3510f1ae71246069440a4f05cb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326194"
 ---
 # <a name="openimsgsession"></a>OpenIMsgSession
 
@@ -25,13 +25,13 @@ ms.locfileid: "25389624"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt und öffnet eine Sofortnachrichtensitzung, die darin enthaltenen erstellten Nachrichten gruppiert. 
+Erstellt eine nachrichtensitzung, in der die darin erstellten Nachrichten gruppiert werden, und öffnet sie. 
   
 |||
 |:-----|:-----|
-|Headerdatei:  <br/> |IMessage.h  <br/> |
+|Headerdatei  <br/> |IMessage. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE OpenIMsgSession(
@@ -45,7 +45,7 @@ SCODE OpenIMsgSession(
 
  _lpMalloc_
   
-> [in] Zeiger auf ein Speicherobjekt-Zuweisung die OLE [IMalloc](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-imalloc) -Schnittstelle verfügbar macht. MAPI muss diese Zuordnungsmethode verwenden, bei der Arbeit mit der OLE- [IStorage](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istorage) -Schnittstelle. 
+> in Zeiger auf ein Speicher Reservierungs Objekt, das die OLE [IMalloc](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-imalloc) -Schnittstelle verfügbar macht. MAPI muss diese Zuordnungsmethode beim Arbeiten mit der OLE- [IStorage](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istorage) -Schnittstelle verwenden. 
     
  _ulFlags_
   
@@ -53,34 +53,34 @@ SCODE OpenIMsgSession(
     
  _lppMsgSess_
   
-> [out] Zeiger auf einen Zeiger auf das zurückgegebene Nachricht Session-Objekt.
+> Out Zeiger auf einen Zeiger auf das zurückgegebene Nachrichten Sitzungsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Die Sitzung geöffnet wurde.
+> Die Sitzung wurde geöffnet.
     
 MAPI_E_INVALID_PARAMETER
   
->  _LpMalloc_ oder _LppMsgSess_ ist NULL. 
+>  _lpMalloc_ oder _lppMsgSess_ ist NULL. 
     
 MAPI_E_INVALID_FLAGS
   
-> Es wurden ungültige Flags übergeben.
+> Ungültige Flags wurden übergeben.
     
-PARAMETER MAPI_UNICODE
+MAPI_UNICODE
   
-> Beim Aufruf von dieser Funktion wird ein Client oder Dienstanbieter die Option MAPI_UNICODE Unicode MSG-Dateien zu erstellen. Die resultierende [Imessage](imessageimapiprop.md) Datei zeigt STORE_UNICODE_OK in seiner PR_STORE_SUPPORT_MASK und Unicode-Eigenschaften unterstützt. 
+> Beim Aufrufen dieser Funktion legt ein Client oder Dienstanbieter das MAPI_UNICODE-Flag fest, um Unicode-msg-Dateien zu erstellen. Die resultierende [IMessage](imessageimapiprop.md) -Datei zeigt STORE_UNICODE_OK in der PR_STORE_SUPPORT_MASK und unterstützt Unicode-Eigenschaften. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Sofortnachrichtensitzung wird von Clientanwendungen und Dienstanbieter, die für den Umgang mit mehreren möchten verwandte MAPI [IMessage: IMAPIProp](imessageimapiprop.md) Objekte auf der Basis zugrunde liegenden OLE **IStorage** -Objekte. Der Client oder Anbieter verwendet die Funktionen **OpenIMsgSession** und [CloseIMsgSession](closeimsgsession.md) um die Erstellung solcher Nachrichten innerhalb einer Sofortnachrichtensitzung zu umschließen. Sobald die Nachricht Sitzung geöffnet ist, übergibt der Client oder der Anbieter einen Zeiger auf es in einem Aufruf von [OpenIMsgOnIStg](openimsgonistg.md) zum Erstellen einer neuen **IMessage**- auf - **IStorage** -Objekt. 
+Eine nachrichtensitzung wird von Clientanwendungen und Dienstanbietern verwendet, die mehrere zugehörige MAPI- [IMessage: IMAPIProp](imessageimapiprop.md) -Objekte befassen möchten, die auf zugrunde liegenden OLE- **IStorage** -Objekten basieren. Der Client oder Anbieter verwendet die **OpenIMsgSession** -und [CloseIMsgSession](closeimsgsession.md) -Funktionen, um die Erstellung solcher Nachrichten innerhalb einer nachrichtensitzung umzubrechen. Nach dem Öffnen der nachrichtensitzung übergibt der Client oder Anbieter einen Zeiger an diesen in einem Aufruf an [OpenIMsgOnIStg](openimsgonistg.md) , um ein neues **IMessage**-on- **IStorage** -Objekt zu erstellen. 
   
-Eine Sofortnachrichtensitzung werden von nachverfolgt alle **IMessage**- auf - **IStorage** -Objekten, die während der Dauer der Sitzung, zusätzlich zu aller Anlagen und andere Eigenschaften der Nachrichten erstellt. Wenn ein Client oder Anbieter **CloseIMsgSession**aufruft, wird dieser Objekte geschlossen. **CloseIMsgSession** aufrufen, ist die einzige Möglichkeit **IMessage**- auf - **IStorage** -Objekte zu schließen. 
+Eine nachrichtensitzung verfolgt alle **IMessage**-on- **IStorage** -Objekte, die während der Dauer der Sitzung erstellt werden, sowie alle Anlagen und anderen Eigenschaften der Nachrichten. Wenn ein Client oder Anbieter **CloseIMsgSession**aufruft, werden alle diese Objekte geschlossen. Das Aufrufen von **CloseIMsgSession** ist die einzige Möglichkeit zum Beenden von **IMessage**-on- **IStorage** -Objekten. 
   
- **OpenIMsgSession** wird von Clients und Anbietern, die die Möglichkeit, mehrere verwandte Nachrichten als OLE- **IStorage** Objekte behandelt werden müssen. Wenn nur eine dieser Nachrichten gleichzeitig geöffnet sein, besteht es keine Notwendigkeit zum Nachverfolgen von mehrere Nachrichten und keinen Grund eine Sofortnachrichtensitzung mit **OpenIMsgSession**zu erstellen. 
+ **OpenIMsgSession** wird von Clients und Anbietern verwendet, die die Möglichkeit zur Verarbeitung mehrerer verwandter Nachrichten als OLE- **IStorage** -Objekte erfordern. Wenn nur eine solche Nachricht gleichzeitig geöffnet werden soll, müssen nicht mehrere Nachrichten nachverfolgt werden, und es besteht kein Grund, eine nachrichtensitzung mit **OpenIMsgSession**zu erstellen. 
   
-Da Umgang mit einem zugrunde liegenden OLE-Objekt muss MAPI OLE Zuweisung von virtuellem Speicher verwenden. Weitere Informationen zu OLE strukturierte Speicherobjekte und OLE-arbeitsspeicherreservierung, finden Sie unter [OLE und Daten übertragen](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx). 
+Da es sich um ein zugrunde liegendes OLE-Objekt handelt, muss MAPI die OLE-Speicherbelegung verwenden. Weitere Informationen zu OLE-strukturierten Speicherobjekten und zur OLE-Speicherzuordnung finden Sie unter [OLE-und Datenübertragung](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx). 
   
 

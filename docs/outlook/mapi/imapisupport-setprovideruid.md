@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 58855843-9a2b-4e5d-9332-b1bfad8b45e4
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: df842e633f1586d6d77441126d51b2ce44ec3beb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a60ac0d7ab139f77aea87080e1ce37fee870e97b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326313"
 ---
 # <a name="imapisupportsetprovideruid"></a>IMAPISupport::SetProviderUID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Registriert eine [MAPIUID](mapiuid.md) -Struktur, die den Dienstanbieter eindeutig darstellt. 
   
@@ -38,27 +38,27 @@ ULONG ulFlags
 
  _lpProviderID_
   
-> [in] Ein Zeiger auf die **MAPIUID** -Struktur, die den Anbieter Address Book oder einer Nachricht Store identifiziert. 
+> in Ein Zeiger auf die **MAPIUID** -Struktur, die das Adressbuch oder den Nachrichtenspeicher Anbieter identifiziert. 
     
  _ulFlags_
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Struktur **MAPIUID** wurde erfolgreich registriert. 
+> Die **MAPIUID** -Struktur wurde erfolgreich registriert. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::SetProviderUID** -Methode wird für Adresse Adressbuch und Nachricht Store Anbieter Unterstützungsobjekte implementiert. Diese Anbieter Aufrufen **SetProviderUID** zum Registrieren eines eindeutigen Bezeichners beschrieben in der **MAPIUID** -Struktur, die mit _LpProviderID_gezeigt wird. Anbieter: Dieser Bezeichner in allen den Eintrag-IDs, die sie erstellen. 
+Die **IMAPISupport:: SetProviderUID** -Methode wird für Support Objekte des Adressbuchs und des Nachrichtenspeichers implementiert. Diese Anbieter rufen **SetProviderUID** auf, um einen eindeutigen Bezeichner zu registrieren, der in der **MAPIUID** -Struktur beschrieben ist, auf die von _lpProviderID_verwiesen wird. Anbieter schließen diesen Bezeichner in alle Eintrags-IDs ein, die Sie erstellen. 
   
-MAPI verwendet die **MAPIUID** -Struktur beim Senden ausgehender Nachrichten die Warteschlange MAPI und den entsprechenden Anbieter für die Verarbeitung von Clientanforderungen bestimmen. Beispiel: Wenn ein Client die [IMAPISession::OpenEntry](imapisession-openentry.md) -Methode aufruft, MAPI untersucht den **MAPIUID** Teil des Eintrags-ID, ordnet sie den Anbieter, der sie **SetProviderUID**übergeben, und ruft diesen Anbieter **OpenEntry** . 
+MAPI verwendet die **MAPIUID** -Struktur beim Senden ausgehender Nachrichten an den MAPI-Spooler und zum Bestimmen des geeigneten Anbieters für die Verarbeitung von Clientanforderungen. Wenn ein Client beispielsweise die [IMAPISession:: OpenEntry](imapisession-openentry.md) -Methode aufruft, untersucht MAPI **den MAPIUID** -Teil der Eintrags-ID, ordnet ihn dem Anbieter zu, der ihn an **SetProviderUID**übergeben hat, und ruft den OpenEntry- **Eintrag** des Anbieters auf. . 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **SetProviderUID** bei der Anmeldung die **MAPIUID** -Struktur zu registrieren. MAPI ermöglicht Adresse Adressbuch und Nachricht Speicheranbieter mehrere Bezeichner registriert. Wenn Sie mehrere Aufrufe von **SetProviderUID**vornehmen, hinzugefügt immer die **MAPIUID** -Struktur des Anbieters Satz von **MAPIUID** -Strukturen, auch wenn die **MAPIUID** ein Duplikat ist. **SetProviderUID** kann keiner **MAPIUID**entfernt werden. 
+Rufen Sie **SetProviderUID** bei der Anmeldung auf, um Ihre **MAPIUID** -Struktur zu registrieren. MAPI ermöglicht es Adressbuch-und Nachrichtenspeicher Anbietern, mehrere Bezeichner zu registrieren. Wenn Sie mehrere Aufrufe an **SetProviderUID**durchführen, wird die **MAPIUID** -Struktur immer dem Satz von **MAPIUID** -Strukturen des Anbieters hinzugefügt, auch wenn die **MAPIUID** ein Duplikat ist. **SetProviderUID** kann keine **MAPIUID**entfernen. 
   
 ## <a name="see-also"></a>Siehe auch
 

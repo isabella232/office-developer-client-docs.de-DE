@@ -1,5 +1,5 @@
 ---
-title: PidLidOfflineStatus (kanonische Eigenschaft)
+title: Kanonische Pidlidofflinestatus (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,55 +11,55 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee69f0c4-b552-4cfd-8a39-a822d414549e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7d9f8cf4fbdeab70e40447411ed8efd35ef7899e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 537b45420390903d67722c074a1edcc04a0aede8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326299"
 ---
-# <a name="pidlidofflinestatus-canonical-property"></a>PidLidOfflineStatus (kanonische Eigenschaft)
+# <a name="pidlidofflinestatus-canonical-property"></a>Kanonische Pidlidofflinestatus (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt den Status einer Dokumentdatei auf einem Server, der [MS-LISTSWS] implementiert wird.
+Bestimmt den Status einer Dokumentdatei auf einem Server, der [MS-LISTSWS] implementiert.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften  <br/> |dispidOfflineStatus  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x000085B9  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
+|Long-ID (Deckel):  <br/> |0x000085B9  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Allgemeine messaging  <br/> |
+|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-In der folgenden Tabelle sind die möglichen Werte dieser Eigenschaft.
+In der folgenden Tabelle sind die möglichen Werte dieser Eigenschaft aufgeführt.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Dokument ist nicht ausgecheckt.  <br/> |
-|1  <br/> |Dokument wird für den aktuellen Benutzer ausgecheckt.  <br/> |
-|2  <br/> |Dokument ist nicht ausgecheckt, aber der aktuelle Benutzer verfügt über eine Kopie der Datei zur Bearbeitung auf dem aktuellen Computer gespeichert.  <br/> |
+|1  <br/> |Dokument ist für den aktuellen Benutzer ausgecheckt.  <br/> |
+|2  <br/> |Dokument ist nicht ausgecheckt, aber der aktuelle Benutzer verfügt über eine Kopie der Datei, die zum Bearbeiten auf dem aktuellen Computer gespeichert wurde.  <br/> |
    
-Diese Eigenschaft wird lokal berechnet und wird nicht gesendet auf einen Server können Sie jederzeit, wenn ein Benutzer das Element an ein anderes Konto zieht. In diesem Fall wird es als benutzerdefinierte Eigenschaft benutzerdefinierte behandelt.
+Diese Eigenschaft wird lokal berechnet und wird nicht an einen Server gesendet, es sei denn, ein Benutzer zieht das Element in ein anderes Konto. In diesem Fall wird es als benutzerdefinierte benutzerdefinierte Eigenschaft behandelt.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -71,5 +71,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

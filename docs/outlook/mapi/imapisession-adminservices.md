@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 487fab39-5c2c-4e1a-9f90-4da64f5e198b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cb7fa7bb7dc17a89fc7cc40ae370accc40fa3941
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c639523a02047bf00c378dafd7bc698d7d4e5fff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322414"
 ---
 # <a name="imapisessionadminservices"></a>IMAPISession::AdminServices
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger [IMsgServiceAdmin](imsgserviceadminiunknown.md) für die Änderung Message-Dienste. 
+Gibt einen [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Zeiger zurück, um Änderungen an den Nachrichtendiensten vorzunehmen. 
   
 ```cpp
 HRESULT AdminServices(
@@ -42,25 +42,25 @@ HRESULT AdminServices(
     
  _lppServiceAdmin_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Objekt "Message" Service-Verwaltung.
+> Out Ein Zeiger auf einen Zeiger auf ein Nachrichtendienst-Verwaltungsobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Ein Zeiger auf ein Objekt "Message" Service Administration wurde erfolgreich zurückgegeben.
+> Ein Zeiger auf ein Nachrichtendienst-Verwaltungsobjekt wurde erfolgreich zurückgegeben.
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **IMAPISession::AdminServices** -Methode erstellt ein Service Administration Meldungsobjekt, ein Objekt, das die **IMsgServiceAdmin** -Schnittstelle unterstützt und gibt einen Zeiger zurück. Rufen Sie mithilfe dieser Zeiger **IMsgServiceAdmin** -Methoden, um die Nachrichtendienste im Profil der Sitzung zu ändern. Beachten Sie, dass diese Änderungen nicht übernommen, bis der nächste Sitzung werden; die aktuelle Sitzung ist nicht betroffen. 
+Die **IMAPISession:: AdminServices** -Methode erstellt ein Nachrichtendienst-Verwaltungsobjekt, ein Objekt, das die **IMsgServiceAdmin** -Schnittstelle unterstützt und einen Zeiger zurückgibt. Mithilfe dieses Zeigers können Sie **IMsgServiceAdmin** -Methoden aufrufen, um einen beliebigen Nachrichtendienst im Sitzungsprofil zu ändern. Beachten Sie, dass diese Änderungen erst in der nächsten Sitzung wirksam werden. die aktuelle Sitzung ist nicht betroffen. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIStoreFunctions.cpp  <br/> |GetServerName  <br/> |MFCMAPI (engl.) wird die **IMAPISession::AdminServices** -Methode verwendet, Zugriff auf das Profil, um den Namen des Servers zu lesen.  <br/> |
+|MAPIStoreFunctions. cpp  <br/> |GetServerName  <br/> |MFCMAPI verwendet die **IMAPISession:: AdminServices** -Methode, um auf das Profil zuzugreifen, um den Servernamen zu lesen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,7 +70,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IProfAdmin::AdminServices](iprofadmin-adminservices.md)
   
-[IMAPISession: IUnknown](imapisessioniunknown.md)
+[IMAPISession : IUnknown](imapisessioniunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

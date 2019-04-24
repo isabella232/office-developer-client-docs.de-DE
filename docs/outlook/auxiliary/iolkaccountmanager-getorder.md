@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: bd22026c-e4f7-2f25-0ef2-5d9539fd7eee
-description: Ruft die Reihenfolge der angegebenen Kategorie von Konten.
-ms.openlocfilehash: d05e354e25d49a51b3d3f8f053c2b39dc37b333f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft die Reihenfolge der angegebenen Kategorie von Konten ab.
+ms.openlocfilehash: 3eb6dd96caa43f81eba86a389c938ef90c9533b2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322029"
 ---
 # <a name="iolkaccountmanagergetorder"></a>IOlkAccountManager::GetOrder
 
-Ruft die Reihenfolge der angegebenen Kategorie von Konten.
+Ruft die Reihenfolge der angegebenen Kategorie von Konten ab.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccountManager](iolkaccountmanager.md)
+Siehe [IOlkAccountManager](iolkaccountmanager.md)
   
 ```cpp
 HRESULT IOlkAccountManager::GetOrder (  
@@ -34,7 +34,7 @@ HRESULT IOlkAccountManager::GetOrder (
 
 _pclsidCategory_
   
-> [in] Die Kategorie Klassen-ID für die die Reihenfolge abgerufen. Der Wert muss eine der folgenden sein:
+> in Die Kategorie-Klassen-ID, für die die Bestellung abgerufen werden soll. Der Wert muss eine der folgenden sein:
     
    - CLSID_OlkMail
     
@@ -44,23 +44,23 @@ _pclsidCategory_
     
 _pcAccts_
   
->  [out] Die Anzahl der Konten. 
+>  Out Die Anzahl der Konten. 
     
 _prgAccts_
   
-> [out] Ein Zeiger auf ein Array von Konten.
+> Out Ein Zeiger auf ein Array von Konten.
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Der Aufruf war erfolgreich  <br/> |
+|S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |E_INVALIDARG  <br/> |Mindestens ein Argument ist ungültig.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Vor dem Aufrufen dieser Methode weist der Anrufer nur ein Array Zeiger *PrgAccts* jedoch kein Speicher für Arrays, an den *PrgAccts* zeigt. Nachdem diese Methode zurückgegeben wird, muss der Aufrufer [IOlkAccountManager::FreeMemory](iolkaccountmanager-freememory.md) verwenden, um Arbeitsspeicher für *PrgAccts* freizugeben. 
+Vor dem Aufrufen dieser Methode reserviert der Aufrufer nur einen Array Zeiger *prgAccts* , aber kein Speicher für das Array, an dem *prgAccts* Punkt. Nach der Rückgabe dieser Methode muss der Aufrufer [IOlkAccountManager:: freier Arbeitsspeicher](iolkaccountmanager-freememory.md) verwenden, um den für *prgAccts* reservierten Arbeitsspeicher freizugeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 92bfe604-18dd-46a1-9ae8-0b04167606bd
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4843a52d7441de1e1ab545e80346db8dd308c4bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6da488408d3be9464d6ae1e016d5095707d451e4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325648"
 ---
 # <a name="imapisupport--iunknown"></a>IMAPISupport : IUnknown
 
@@ -25,12 +25,12 @@ ms.locfileid: "22590204"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Implementierungen für Aufgaben vorgestellt, die in der Regel vom Dienstanbieter und Nachricht Webdienstfunktionen Entry Point ausgeführt werden. -Dienstanbieter erhalten einen Zeiger auf ihre Support-Objekt, wenn MAPI-ihre Anbieterobjekt Logon-Methode aufrufen. Message-Dienste erhalten den Anruf an ihre Funktion Eintrag Zeiger Objekt Unterstützung.
+Stellt Implementierungen für Aufgaben bereit, die normalerweise von Dienstanbietern und Nachrichtendienst-Einstiegspunktfunktionen ausgeführt werden. Dienstanbieter erhalten einen Zeiger auf Ihr Support Objekt, wenn MAPI die Anmeldemethode des Anbieterobjekts aufruft. Nachrichtendienste erhalten Ihren Support Objektzeiger im Aufruf ihrer Einstiegspunktfunktion.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Unterstützungsobjekte  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Unterstützungsobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPISup  <br/> |
@@ -40,97 +40,97 @@ Bietet Implementierungen für Aufgaben vorgestellt, die in der Regel vom Diensta
 
 |||
 |:-----|:-----|
-|[GetLastError](imapisupport-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen zu dem Fehler der vorherigen Support-Objekt enthält.  <br/> |
-|[GetMemAllocRoutines](imapisupport-getmemallocroutines.md) <br/> |Ruft die Adressen der MAPI-Speicher Reservierung und Freigabe Funktionen ([MAPIAllocateBuffer](mapiallocatebuffer.md), [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer](mapifreebuffer.md)).  <br/> |
-|[Abonnieren](imapisupport-subscribe.md) <br/> |Registriert ein Advise-Empfänger Erhalt von Benachrichtigungen über MAPI an.  <br/> |
-|[Abonnement kündigen](imapisupport-unsubscribe.md) <br/> |Hebt die Verantwortung für Benachrichtigungen gesendet werden, die zuvor mit einem Aufruf der **Subscribe** -Methode festgelegt wurde.  <br/> |
-|[Benachrichtigen](imapisupport-notify.md) <br/> |Sendet eine Benachrichtigung über ein bestimmtes Ereignis mit einer Advise-Datenquelle, die ursprünglich für die Benachrichtigung über die **Subscribe** -Methode registriert.  <br/> |
-|[ModifyStatusRow](imapisupport-modifystatusrow.md) <br/> |Ändert die Statustabelle durch eine neue Zeile hinzufügen oder Ändern einer vorhandenen Zeile.  <br/> |
-|["OpenProfileSection"](imapisupport-openprofilesection.md) <br/> |Öffnet einen Abschnitt des aktuellen Profils und gibt einen Zeiger [IProfSect](iprofsectimapiprop.md) für den weiteren Zugriff  <br/> |
-|[RegisterPreprocessor](imapisupport-registerpreprocessor.md) <br/> |Registriert einen Adressbuchhierarchie Präprozessor-Funktion (eine Funktion, die den [PreprocessMessage](preprocessmessage.md) Prototyp entspricht).  <br/> |
-|[NewUID](imapisupport-newuid.md) <br/> |Erstellt eine neue [MAPIUID](mapiuid.md) -Struktur, die als eindeutiger Bezeichner verwendet werden.  <br/> |
-|[MakeInvalid](imapisupport-makeinvalid.md) <br/> |Markiert ein Objekt als nicht mehr verwendet werden.  <br/> |
-|[SpoolerYield](imapisupport-spooleryield.md) <br/> |Bietet Kontrolle über die CPU auf die MAPI-Warteschlange, damit sie alle Aufgaben ausführen kann, notwendig hält.  <br/> |
-|[SpoolerNotify](imapisupport-spoolernotify.md) <br/> |Benachrichtigt die MAPI-Warteschlange von einer Änderung im Status oder eine Anforderung für den Dienst an.  <br/> |
-|[CreateOneOff](imapisupport-createoneoff.md) <br/> |Erstellt einen Eintrag Bezeichner für eine einmalige Adresse.  <br/> |
+|[Getlasterroraufzurufen](imapisupport-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Support Objekt Fehler enthält.  <br/> |
+|[GetMemAllocRoutines](imapisupport-getmemallocroutines.md) <br/> |Ruft die Adressen der MAPI-Speicher Zuweisungs-und-Zuordnungsfunktionen ([MAPIAllocateBuffer](mapiallocatebuffer.md), [MAPIAllocateMore](mapiallocatemore.md)und [mapifreebufferfreigegeben](mapifreebuffer.md)) ab.  <br/> |
+|[Abonnieren](imapisupport-subscribe.md) <br/> |Registriert eine Advise-Senke, um Benachrichtigungen über MAPI zu empfangen.  <br/> |
+|[Unsubscribe](imapisupport-unsubscribe.md) <br/> |Bricht die Verantwortung für das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der **subscribe** -Methode eingerichtet wurden.  <br/> |
+|[Benachrichtigen](imapisupport-notify.md) <br/> |Sendet eine Benachrichtigung über ein angegebenes Ereignis an eine Advise-Quelle, die ursprünglich für die Benachrichtigung über die **subscribe** -Methode registriert wurde.  <br/> |
+|[ModifyStatusRow](imapisupport-modifystatusrow.md) <br/> |Ändert die Statustabelle, indem eine neue Zeile hinzugefügt oder eine vorhandene Zeile geändert wird.  <br/> |
+|[OpenProfileSection](imapisupport-openprofilesection.md) <br/> |Öffnet einen Abschnitt des aktuellen Profils und gibt einen [IProfSect](iprofsectimapiprop.md) -Zeiger für den weiteren Zugriff zurück.  <br/> |
+|[RegisterPreprocessor](imapisupport-registerpreprocessor.md) <br/> |Registriert die präprozessorfunktion eines Transportanbieters (eine Funktion, die dem [PreprocessMessage](preprocessmessage.md) -Prototyp entspricht).  <br/> |
+|[NewUID](imapisupport-newuid.md) <br/> |Erstellt eine neue [MAPIUID](mapiuid.md) -Struktur, die als eindeutiger Bezeichner verwendet werden soll.  <br/> |
+|[MakeInvalid](imapisupport-makeinvalid.md) <br/> |Markiert ein Objekt als unbrauchbar.  <br/> |
+|[SpoolerYield](imapisupport-spooleryield.md) <br/> |Gibt die CPU-Steuerung für den MAPI-Spooler an, sodass Sie alle für erforderlich erachteten Aufgaben ausführen kann.  <br/> |
+|[SpoolerNotify](imapisupport-spoolernotify.md) <br/> |Benachrichtigt den MAPI-Spooler über eine Änderung des Status oder eine Anforderung für Dienst.  <br/> |
+|[CreateOneOff](imapisupport-createoneoff.md) <br/> |Erstellt eine Eintrags-ID für eine einmalige Adresse.  <br/> |
 |[SetProviderUID](imapisupport-setprovideruid.md) <br/> |Registriert eine **MAPIUID** -Struktur, die den Dienstanbieter eindeutig darstellt.  <br/> |
-|[CompareEntryIDs](imapisupport-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen.  <br/> |
-|[OpenTemplateID](imapisupport-opentemplateid.md) <br/> |Öffnet einen Empfänger Eintrag in einem fremden Adressbuchanbieter.  <br/> |
-|[OpenEntry](imapisupport-openentry.md) <br/> |Öffnet ein Objekt und gibt einen Schnittstellenzeiger für den weiteren Zugriff.  <br/> |
-|[GetOneOffTable](imapisupport-getoneofftable.md) <br/> |Gibt einen Zeiger auf die einmaligen MAPI-Tabelle (eine Liste der Vorlagen, dass alle Anbieter für die Unterstützung für das Erstellen von neuen Empfänger Adressbuch).  <br/> |
-|[Adresse](imapisupport-address.md) <br/> |Zeigt das Dialogfeld allgemeine Adresse an.  <br/> |
-|[Details](imapisupport-details.md) <br/> |Zeigt ein Dialogfeld, das Details zu einem bestimmten Buch Adresseintrag anzeigt.  <br/> |
-|[NewEntry](imapisupport-newentry.md) <br/> |Fügt einen neuen Empfänger direkt an einen Adressbuchcontainer oder die Empfängerliste von ausgehenden Nachrichten.  <br/> |
-|[DoConfigPropsheet](imapisupport-doconfigpropsheet.md) <br/> |Zeigt eine Konfiguration Eigenschaftenblatt.  <br/> |
+|[CompareEntryIDs](imapisupport-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen.  <br/> |
+|[OpenTemplate-Nr.](imapisupport-opentemplateid.md) <br/> |Öffnet einen Empfängereintrag in einem fremden Adressbuchanbieter.  <br/> |
+|[OpenEntry](imapisupport-openentry.md) <br/> |Öffnet ein Objekt und gibt einen Schnittstellenzeiger für den weiteren Zugriff zurück.  <br/> |
+|[GetOneOffTable](imapisupport-getoneofftable.md) <br/> |Gibt einen Zeiger auf die MAPI-einmalige Tabelle zurück (eine Liste von Vorlagen, die von allen Adressbuch Anbietern für das Erstellen neuer Empfänger unterstützt werden).  <br/> |
+|[Adresse](imapisupport-address.md) <br/> |Zeigt das Dialogfeld Allgemeine Adresse an.  <br/> |
+|[Details](imapisupport-details.md) <br/> |Zeigt ein Dialogfeld an, in dem Details zu einem bestimmten Adressbucheintrag angezeigt werden.  <br/> |
+|[NeuEintrag](imapisupport-newentry.md) <br/> |Fügt einen neuen Empfänger direkt einem Adressbuchcontainer oder der Empfängerliste einer ausgehenden Nachricht hinzu.  <br/> |
+|[DoConfigPropsheet](imapisupport-doconfigpropsheet.md) <br/> |Zeigt ein Konfigurationseigenschaften Fenster an.  <br/> |
 |[CopyMessages](imapisupport-copymessages.md) <br/> |Kopiert oder verschiebt Nachrichten aus einem Ordner in einen anderen Ordner.  <br/> |
-|[CopyFolder](imapisupport-copyfolder.md) <br/> |Kopiert oder Verschiebt einen Ordner von seinem aktuellen übergeordneten Ordner in einer anderen übergeordneten Ordner.  <br/> |
-|[DoCopyTo](imapisupport-docopyto.md) <br/> |Kopiert oder verschiebt alle Eigenschaften eines Objekts, mit Ausnahme von speziell Ausgeschlossene Eigenschaften in ein anderes Objekt.  <br/> |
-|[DoCopyProps](imapisupport-docopyprops.md) <br/> |Kopiert oder Verschiebt einen oder mehrere Eigenschaften eines Objekts in ein anderes Objekt.  <br/> |
-|[DoProgressDialog](imapisupport-doprogressdialog.md) <br/> |Ruft ein Fortschritt-Objekt, das eine Statusanzeige wird angezeigt.  <br/> |
-|[ReadReceipt](imapisupport-readreceipt.md) <br/> |Generiert einen Lese- oder nonread Bericht für eine Nachricht.  <br/> |
-|[PrepareSubmit](imapisupport-preparesubmit.md) <br/> |Bereitet eine Nachricht für die Übermittlung an die MAPI-Warteschlange.  <br/> |
-|[ExpandRecips](imapisupport-expandrecips.md) <br/> |Schließt eine Nachricht Empfängerliste bestimmten Verteilerlisten erweitern.  <br/> |
+|[CopyFolder](imapisupport-copyfolder.md) <br/> |Kopiert oder verschiebt einen Ordner aus dem aktuellen übergeordneten Ordner in einen anderen übergeordneten Ordner.  <br/> |
+|[DoCopyTo](imapisupport-docopyto.md) <br/> |Kopiert oder verschiebt alle Eigenschaften eines Objekts, mit Ausnahme der explizit ausgeschlossenen Eigenschaften, in ein anderes Objekt.  <br/> |
+|[DoCopyProps](imapisupport-docopyprops.md) <br/> |Kopiert oder verschiebt eine oder mehrere Eigenschaften eines Objekts in ein anderes Objekt.  <br/> |
+|[DoProgressDialog](imapisupport-doprogressdialog.md) <br/> |Ruft ein Progress-Objekt ab, das eine Statusanzeige anzeigt.  <br/> |
+|[ReadReceipt](imapisupport-readreceipt.md) <br/> |Generiert einen Lese-oder nicht gelesenen Bericht für eine Nachricht.  <br/> |
+|[PrepareSubmit](imapisupport-preparesubmit.md) <br/> |Bereitet eine Nachricht für die Übermittlung an den MAPI-Spooler vor.  <br/> |
+|[ExpandRecips](imapisupport-expandrecips.md) <br/> |Vervollständigt die Empfängerliste einer Nachricht und erweitert bestimmte Verteilerlisten.  <br/> |
 |[DoSentMail](imapisupport-dosentmail.md) <br/> |Verarbeitet eine gesendete Nachricht.  <br/> |
-|[OpenAddressBook](imapisupport-openaddressbook.md) <br/> |Bietet Zugriff auf das Adressbuch.  <br/> |
-|[CompleteMsg](imapisupport-completemsg.md) <br/> |Führt Nachbearbeitung für eine Nachricht aus.  <br/> |
-|[StoreLogoffTransports](imapisupport-storelogofftransports.md) <br/> |Fordert die ordnungsgemäße Version von eines Nachrichtenspeichers.  <br/> |
-|[StatusRecips](imapisupport-statusrecips.md) <br/> |Bereitstellung und Nondelivery Berichte generiert.  <br/> |
-|[WrapStoreEntryID](imapisupport-wrapstoreentryid.md) <br/> |Konvertiert einen Nachrichtenspeicher interne Eintrags-ID auf einen Eintrag Bezeichner MAPI-Standardformat.  <br/> |
-|[ModifyProfile](imapisupport-modifyprofile.md) <br/> |Ändert eine Nachricht Profilabschnitt permanent gespeichert.  <br/> |
-|[IStorageFromStream](imapisupport-istoragefromstream.md) <br/> |Zugriff auf einen Datenstrom ein Speicherobjekt implementiert.  <br/> |
-|[GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) <br/> |Erstellt ein Objekt "Message" Service Support.  <br/> |
+|[OpenAddressBook](imapisupport-openaddressbook.md) <br/> |Ermöglicht den Zugriff auf das Adressbuch.  <br/> |
+|[CompleteMsg](imapisupport-completemsg.md) <br/> |Führt die Nachbearbeitung für eine Nachricht aus.  <br/> |
+|[StoreLogoffTransports](imapisupport-storelogofftransports.md) <br/> |Fordert die ordnungsgemäße Freigabe eines Nachrichtenspeichers an.  <br/> |
+|[StatusRecips](imapisupport-statusrecips.md) <br/> |Generiert Unzustellbarkeitsberichte.  <br/> |
+|[WrapStoreEntryID](imapisupport-wrapstoreentryid.md) <br/> |Konvertiert die interne Eintrags-ID eines Nachrichtenspeichers in eine Eintrags-ID im MAPI-Standardformat.  <br/> |
+|[ModifyProfile](imapisupport-modifyprofile.md) <br/> |Änderungen an einem Abschnitt des Nachrichtenspeicher Profils bleiben permanent.  <br/> |
+|[IStorageFromStream](imapisupport-istoragefromstream.md) <br/> |Implementiert ein Storage-Objekt, um auf einen Stream zuzugreifen.  <br/> |
+|[GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) <br/> |Erstellt ein Support Objekt für den Nachrichtendienst.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Beheben Sie, Bücher, Nachrichtenspeicher, Transportanbieter und Nachricht, dass jede Services eigene Unterstützungsobjekte verfügen. Dienstanbieter und Message-Dienste werden die Methoden in ihre Unterstützungsobjekte im Rahmen der Implementierung von anderen Schnittstellenmethoden aufgerufen. Jedes verschiedene Support-Objekt verfügt über vollständigen Implementierungen der Methoden, die an die aufrufende gelten; die Methoden, die nicht anwendbar sind zurückgeben MAPI_E_NO_SUPPORT. Address Book Anbieter Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
+Adressbücher, Nachrichtenspeicher, Transportanbieter und Nachrichtendienste verfügen jeweils über eigene Support Objekte. Dienstanbieter und Nachrichtendienste rufen die Methoden in Ihren Support-Objekten als Teil ihrer Implementierungen anderer Schnittstellenmethoden auf. Jedes unterschiedliche Unterstützungsobjekt verfügt über vollständige Implementierungen der Methoden, die für den Aufrufer gelten. die Methoden, die nicht anwendbar sind, geben MAPI_E_NO_SUPPORT zurück. Adressbuchanbieter-Support Objekte verfügen über Implementierungen für die folgenden Methoden:
   
 ||||
 |:-----|:-----|:-----|
 |**Adresse** <br/> |**CompareEntryIDs** <br/> |**CreateOneOff** <br/> |
 |**Details** <br/> |**DoConfigPropsheet** <br/> |**DoProgressDialog** <br/> |
-|**GetLastError** <br/> |**GetMemAllocRoutines** <br/> |**GetOneOffTable** <br/> |
+|**Getlasterroraufzurufen** <br/> |**GetMemAllocRoutines** <br/> |**GetOneOffTable** <br/> |
 |**IStorageFromStream** <br/> |**GetSvcConfigSupportObj** <br/> |**MakeInvalid** <br/> |
-|**ModifyStatusRow** <br/> |**NewEntry** <br/> |**NewUID** <br/> |
+|**ModifyStatusRow** <br/> |**NeuEintrag** <br/> |**NewUID** <br/> |
 |**Benachrichtigen** <br/> |**OpenAddressBook** <br/> |**OpenEntry** <br/> |
-|**"OpenProfileSection"** <br/> |**OpenTemplateID** <br/> |**SetProviderUID** <br/> |
-|**Abonnieren** <br/> |**Abonnement kündigen** <br/> |**WrapStoreEntryID** <br/> |
+|**OpenProfileSection** <br/> |**OpenTemplate-Nr.** <br/> |**SetProviderUID** <br/> |
+|**Abonnieren** <br/> |**Unsubscribe** <br/> |**WrapStoreEntryID** <br/> |
    
-Nachricht Store Anbieter Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
+Nachrichtenspeicher Anbieter-Support Objekte verfügen über Implementierungen für die folgenden Methoden:
   
 ||||
 |:-----|:-----|:-----|
 |**CompareEntryIDs** <br/> |**CompleteMsg** <br/> |**CopyFolder** <br/> |
 |**CopyMessages** <br/> |**CreateOneOff** <br/> |**DoCopyProps** <br/> |
 |**DoCopyTo** <br/> |**DoConfigPropsheet** <br/> |**DoProgressDialog** <br/> |
-|**DoSentMail** <br/> |**ExpandRecips** <br/> |**GetLastError** <br/> |
+|**DoSentMail** <br/> |**ExpandRecips** <br/> |**Getlasterroraufzurufen** <br/> |
 |**GetMemAllocRoutines** <br/> |**GetSvcConfigSupportObj** <br/> |**MakeInvalid** <br/> |
 |**IStorageFromStream** <br/> |**ModifyProfile** <br/> |**ModifyStatusRow** <br/> |
 |**NewUID** <br/> |**Benachrichtigen** <br/> |**OpenAddressBook** <br/> |
-|**OpenEntry** <br/> |**"OpenProfileSection"** <br/> |**PrepareSubmit** <br/> |
+|**OpenEntry** <br/> |**OpenProfileSection** <br/> |**PrepareSubmit** <br/> |
 |**ReadReceipt** <br/> |**SetProviderUID** <br/> |**SpoolerNotify** <br/> |
-|**StoreLogoffTransports** <br/> |**Abonnieren** <br/> |**Abonnement kündigen** <br/> |
+|**StoreLogoffTransports** <br/> |**Abonnieren** <br/> |**Unsubscribe** <br/> |
 |**WrapStoreEntryID** <br/> |
    
-Transport-Anbieter Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
+Transport Anbieter-Support Objekte verfügen über Implementierungen für die folgenden Methoden:
   
 ||||
 |:-----|:-----|:-----|
 |**DoConfigPropsheet** <br/> |**CompareEntryIDs** <br/> |**CreateOneOff** <br/> |
-|**GetMemAllocRoutines** <br/> |**GetSvcConfigSupportObj** <br/> |**GetLastError** <br/> |
+|**GetMemAllocRoutines** <br/> |**GetSvcConfigSupportObj** <br/> |**Getlasterroraufzurufen** <br/> |
 |**IStorageFromStream** <br/> |**MakeInvalid** <br/> |**ModifyStatusRow** <br/> |
 |**OpenAddressBook** <br/> |**RegisterPreprocessor** <br/> |**NewUID** <br/> |
-|**Benachrichtigen** <br/> |**"OpenProfileSection"** <br/> |**OpenEntry** <br/> |
+|**Benachrichtigen** <br/> |**OpenProfileSection** <br/> |**OpenEntry** <br/> |
 |**StatusRecips** <br/> |**SpoolerNotify** <br/> |**SpoolerYield** <br/> |
-|**WrapStoreEntryID** <br/> |**Abonnieren** <br/> |**Abonnement kündigen** <br/> |
+|**WrapStoreEntryID** <br/> |**Abonnieren** <br/> |**Unsubscribe** <br/> |
    
-Nachricht Service Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
+Nachrichtendienst-Support Objekte verfügen über Implementierungen für die folgenden Methoden:
   
 |||
 |:-----|:-----|
-|**DoConfigPropsheet** <br/> |**GetLastError** <br/> |
+|**DoConfigPropsheet** <br/> |**Getlasterroraufzurufen** <br/> |
 |**GetMemAllocRoutines** <br/> |**GetSvcConfigSupportObj** <br/> |
 |**MakeInvalid** <br/> |**NewUID** <br/> |
-|**"OpenProfileSection"** <br/> |
+|**OpenProfileSection** <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

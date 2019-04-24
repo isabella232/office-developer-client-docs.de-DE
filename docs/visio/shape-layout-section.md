@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 9410f78f-a3da-d48a-b6bf-8b53d50b03bc
 description: Enthält Zellen zum Steuern der Einstellungen für die Shape-Platzierung und das Verbinderrouting.
-ms.openlocfilehash: de7ca60d78ea9775f60450357f05618b727ee34a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 172a2dae3bd5a316b5f1462a0580e7a86b17d216
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325808"
 ---
-# <a name="shape-layout-section"></a>Shape Layout Section
+# <a name="shape-layout-section"></a>Abschnitt "Shape Layout"
 
 Enthält Zellen zum Steuern der Einstellungen für die Shape-Platzierung und das Verbinderrouting.
   
@@ -24,6 +24,6 @@ Enthält Zellen zum Steuern der Einstellungen für die Shape-Platzierung und das
 
 Sie können die Werte für die Shape-spezifischen Zellen in diesem Abschnitt auch im Dialogfeld **Verhalten** auf der Registerkarte **Platzierung** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**). Sie können die Werte für die Verbinder-spezifischen Zellen in diesem Abschnitt auch im Dialogfeld **Verhalten** auf der Registerkarte **Verbinder** festlegen. (Sie zeigen die Registerkarte **Verbinder** an, indem Sie im Zeichnungsfenster den Verbinder markieren und anschließend das Dialogfeld **Verhalten** öffnen.) 
   
-Werte können im Abschnitt **Shape Layout** Sie die um Standardwerte aus dem Abschnitt **Page Layout** zu überschreiben. 
+Sie können Werte im Abschnitt **Shape Layout** verwenden, um die im Abschnitt **Seitenlayout** enthaltenen Standardwerte zu überschreiben. 
   
 

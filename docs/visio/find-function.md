@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm60101
 localization_priority: Normal
 ms.assetid: c827ecd4-5593-6d4f-2746-d13b02b098fe
-description: Sucht eine Zeichenfolge innerhalb einer anderen Zeichenfolge und gibt die Startposition der gesuchten relativ zu seiner Position in der Zeichenfolge, die er enthält Textzeichenfolge zurück.
-ms.openlocfilehash: e29e8e89418f0162cae0ec9904c2205218e799ea
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sucht eine Textzeichenfolge, die in einer anderen Textzeichenfolge enthalten ist, und gibt die Anfangsposition der Textzeichenfolge zurück, die Sie relativ zu ihrer Position in der Textzeichenfolge, die Sie enthält, suchen.
+ms.openlocfilehash: 40d65af25d89774c1bdf7b235cf653dbb61dd1c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322498"
 ---
 # <a name="find-function"></a>FIND Function
 
-Sucht eine Zeichenfolge innerhalb einer anderen Zeichenfolge und gibt die Startposition der gesuchten relativ zu seiner Position in der Zeichenfolge, die er enthält Textzeichenfolge zurück.
+Sucht eine Textzeichenfolge, die in einer anderen Textzeichenfolge enthalten ist, und gibt die Anfangsposition der Textzeichenfolge zurück, die Sie relativ zu ihrer Position in der Textzeichenfolge, die Sie enthält, suchen.
   
 ## <a name="syntax"></a>Syntax
 
-Suchen Sie nach (** *Suchtext* **, ** *Within_text* **, [** *Erstes_Zeichen* **], [** *Ignore_case* **]) 
+Find (* * *Suchtext* * *, * * *within_text* * *, [* * *start_num* * *], [* * *ignore_case* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,28 +30,28 @@ Suchen Sie nach (** *Suchtext* **, ** *Within_text* **, [** *Erstes_Zeichen* **]
 |:-----|:-----|:-----|:-----|
 | _Suchtext_ <br/> |Erforderlich  <br/> |**String** <br/> |Die gesuchte Zeichenfolge.  <br/> |
 | _format_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Zeichenfolge, die den gesuchten Text enthält.  <br/> |
-| _Erstes_Zeichen_ <br/> |Optional  <br/> |**Nummer** <br/> |Das Zeichen, für die Suche zu starten. Das erste Zeichen in _Within_text_ ist 1. Wenn _Start_num_ nicht vorhanden ist, wird angenommen, 1 sein.  <br/> |
+| _start_num_ <br/> |Optional  <br/> |**Number** <br/> |Das Zeichen, bei dem die Suche beginnen soll. Das erste Zeichen in _within_text_ ist 1. Wenn _start_num_ fehlt, wird davon ausgegangen, dass es 1 ist.  <br/> |
 | _ignore_case_ <br/> |Optional  <br/> |**Boolean** <br/> |In der Standardeinstellung ist bei der FIND-Funktion Groß- und Kleinschreibung zu beachten. Wenn die Groß- und Kleinschreibung ignoriert werden soll, legen Sie für dieses Argument den Wert TRUE fest.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn mehrere Übereinstimmungen gefunden werden, gibt die FIND-Funktion die Anfangsposition der die erste Übereinstimmung in der Zeichenfolge. Das Argument _Suchtext_ berücksichtigt Zeichen als Platzhalter werden nicht. 
+Wenn mehrere Übereinstimmungen gefunden werden, gibt FIND die Anfangsposition der ersten Übereinstimmung in der Zeichenfolge zurück. Das _Suchtext_ -Argument berücksichtigt keine Zeichen als Platzhalter. 
   
-Wenn _Suchtext_:
+If _Suchtext_:
   
--  Ist leer (""), suchen entspricht das erste Zeichen in der Suchzeichenfolge (d. h., das Zeichen mit dem _Erstes_Zeichen_ oder 1). 
+-  Leer (""), sucht die Suche nach dem ersten Zeichen in der Suchzeichenfolge (das Zeichen _start_num_ oder 1). 
     
-- Erscheint nicht in _Within_text_, FIND gibt die #VALUE! Fehlerwert. 
+- Nicht in _within_text_angezeigt, gibt FIND den #VALUE zurück! Ist dies nicht der Fall, gibt INDEX den Fehlerwert #REF! zurück. 
     
-Wenn _Start_num_:
+If _start_num_:
   
 - nicht größer als 0 (null) ist, gibt FIND den Fehlerwert #WERT! zurück. 
     
-- Ist größer als die Länge von _Text ist_, gibt die #VALUE! Fehlerwert. 
+- Ist größer als die Länge von _within_text_, FINDreturns die #VALUE! zurück. 
     
 ## <a name="example"></a>Beispiel
 

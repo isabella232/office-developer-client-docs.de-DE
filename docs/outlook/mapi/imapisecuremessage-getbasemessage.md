@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 573f40c5-e0d2-4281-8c22-10a1ae1f0dee
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d246fc0cfc60d0a2b9ff12ee70eae2366cf9b53a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a2da3f6851e45a70dcd4604396a85430c539a830
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322393"
 ---
 # <a name="imapisecuremessagegetbasemessage"></a>IMAPISecureMessage::GetBaseMessage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die zugrunde liegende [IMessage: IMAPIProp](imessageimapiprop.md) , das von diesem [IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md) encapsulating ist. 
+Ruft die zugrunde liegende [IMessage: IMAPIProp](imessageimapiprop.md) ab, die dieser [IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md) kapselt. 
   
 ```cpp
 HRESULT GetBaseMessage(
@@ -37,9 +37,9 @@ HRESULT GetBaseMessage(
 
  _ppmsg_
   
-> [out] Ein sicherer Message-Objekt.
+> Out Ein sicheres Nachrichtenobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   

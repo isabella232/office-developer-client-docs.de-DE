@@ -8,19 +8,19 @@ api_type:
 - COM
 ms.assetid: ec3c023b-7c99-489c-8217-78b303dc10df
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 93d959bf41b5d18610d77c6b5573895b0e3880d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 49ffe6b45002aec6660130132321559fc07c01c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326250"
 ---
 # <a name="naming-folders-by-using-character-strings"></a>Benennen von Ordnern mit Zeichenfolgen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie einen oder mehrere Ordner während einer Sitzung häufig zugreifen, sollten Sie zum Zuweisen von Namen in die Ordner mit der [IMsgStore::SetReceiveFolder](imsgstore-setreceivefolder.md) -Methode. Obwohl **IMsgStore::SetReceiveFolder** in erster Linie herstellen Spezialordner Empfang eingehende Nachrichten für bestimmte Nachrichtenklassen verwendet wird, kann sie auch ein beliebiger Ordner mit einem Namen zuordnen verwendet werden. Der Name kann die Nachrichtenklasse identisch sein, oder es kann eine beliebige Zeichenfolge, die für die Verwendung des Clients angepasst werden. Zuordnen eines Namens zu einem Ordner verringert den Zeitaufwand zum Suchen und öffnen Sie den Ordner. 
+Wenn Sie während einer Sitzung häufig auf einen oder mehrere Ordner zugreifen, können Sie den Ordnern mit der [IMsgStore:: SetReceiveFolder](imsgstore-setreceivefolder.md) -Methode Namen zuweisen. Obwohl **IMsgStore:: SetReceiveFolder** hauptsächlich zum Erstellen spezieller Ordner zum Empfangen eingehender Nachrichten für bestimmte Nachrichtenklassen verwendet wird, kann Sie auch verwendet werden, um einen Ordner mit einem Namen zu verknüpfen. Der Name kann mit der Nachrichtenklasse identisch sein, oder es kann sich um eine beliebige Zeichenfolge handeln, die für die Verwendung durch den Client angepasst wurde. Das Zuordnen eines Namens zu einem Ordner verringert die Zeit, die zum Suchen und Öffnen des Ordners benötigt wird. 
   
 

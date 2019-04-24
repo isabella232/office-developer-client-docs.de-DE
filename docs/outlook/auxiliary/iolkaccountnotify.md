@@ -6,22 +6,22 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 360854bb-e9be-a784-e80b-3f18418ded1b
-ms.openlocfilehash: f4b57ad1062df9aa1809e8eb422a2c983adcac4a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ab24feca84e7049a9800b860c332db52d19cf929
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322071"
 ---
 # <a name="iolkaccountnotify"></a>IOlkAccountNotify
 
-Stellt einen Rückruf an dem Client für Änderungen an einem Konto an.
+Stellt dem Client einen Rückruf für Änderungen an einem Konto bereit.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Erbt:  <br/> |[IOlkErrorUnknown](iolkerrorunknown.md) <br/> |
+|Erbt von:  <br/> |[IOlkErrorUnknown](iolkerrorunknown.md) <br/> |
 |Bereitgestellt von:  <br/> | Client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IOlkAccountNotify  <br/> |
    
@@ -29,11 +29,11 @@ Stellt einen Rückruf an dem Client für Änderungen an einem Konto an.
 
 |||
 |:-----|:-----|
-|[Benachrichtigen](iolkaccountnotify-notify.md) <br/> |Benachrichtigt den Client von Änderungen an das angegebene Konto.  <br/> |
+|[Benachrichtigen](iolkaccountnotify-notify.md) <br/> |Benachrichtigt den Client über Änderungen am angegebenen Konto.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Schnittstelle wird an [IOlkAccountManager::Advise](iolkaccountmanager-advise.md) übergeben, beim Einrichten von Benachrichtigungen. 
+Diese Schnittstelle wird an [IOlkAccountManager:: Advise](iolkaccountmanager-advise.md) beim Einrichten von Benachrichtigungen übergeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

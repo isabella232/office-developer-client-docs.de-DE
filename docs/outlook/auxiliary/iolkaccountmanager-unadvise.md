@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ea5cbf9f-25cc-9cca-9be0-d2deed576153
-description: Hebt die Registrierung einer-Clients mit der Konto-Manager für Benachrichtigungen für alle Konten.
-ms.openlocfilehash: 0632bc6bd98e218cf323262ea480b020185438f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Hebt die Registrierung eines Clients mit dem Kontomanager für Benachrichtigungen für alle Konten auf.
+ms.openlocfilehash: 0b954413b06cb1aa1b6fc4e0e9666f108bf81fbe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322008"
 ---
 # <a name="iolkaccountmanagerunadvise"></a>IOlkAccountManager::Unadvise
 
-Hebt die Registrierung einer-Clients mit der Konto-Manager für Benachrichtigungen für alle Konten. 
+Hebt die Registrierung eines Clients mit dem Kontomanager für Benachrichtigungen für alle Konten auf. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -33,11 +33,11 @@ HRESULT Unadvise(
 
 _dwCookie_
   
-> [in] Das Cookie von [IOlkAccountManager::Advise](iolkaccountmanager-advise.md)zurückgegeben.
+> in Das von [IOlkAccountManager:: Advise](iolkaccountmanager-advise.md)zurückgegebene Cookie.
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |E_INVALIDARG  <br/> |Mindestens ein Argument ist ungültig.  <br/> |

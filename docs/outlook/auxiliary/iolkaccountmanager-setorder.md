@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e219adf6-e591-72e6-b9bd-2fc62eb5142d
-description: Ändert die Reihenfolge der angegebenen Kategorie von Konten.
-ms.openlocfilehash: fcb27404471c9b551320027b0ed6979926ad3d58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ändert die Reihenfolge der angegebenen Kontenkategorie.
+ms.openlocfilehash: 29dfe4fd1bda9e323481297167361650c3b3a173
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322043"
 ---
 # <a name="iolkaccountmanagersetorder"></a>IOlkAccountManager::SetOrder
 
-Ändert die Reihenfolge der angegebenen Kategorie von Konten.
+Ändert die Reihenfolge der angegebenen Kontenkategorie.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -35,7 +35,7 @@ HRESULT SetOrder(
 
 _pclsidCategory_
   
-> [in] Die Kategorie Klassen-ID für die die Reihenfolge festgelegt. Der Wert muss eine der folgenden sein:
+> in Die Kategorie-Klassen-ID, für die die Reihenfolge festgelegt werden soll. Bei dem Wert muss es sich um Folgendes handeln:
     
    - CLSID_OlkAddressBook
     
@@ -43,24 +43,24 @@ _pclsidCategory_
     
 _cAccts_
   
-> [in] Die Anzahl der Konten.
+> in Die Anzahl der Konten.
     
 _rgAccts_
   
-> [in] Ein Array von Konto-IDs. Die Größe des Arrays ist _cAccts_.
+> in Ein Array von Konto-IDs. Die Größe des Arrays ist _cAccts_.
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_ACCT_WRONG_SORT_ORDER  <br/> |Der Sortierreihenfolge bei neuer verfügt über eine unterschiedliche Anzahl von Konten als die alte Sortierreihenfolge.  <br/> |
+|E_ACCT_WRONG_SORT_ORDER  <br/> |Die neue Sortierreihenfolge hat eine unterschiedliche Anzahl von Konten als die alte Sortierreihenfolge.  <br/> |
 |E_INVALIDARG  <br/> |Mindestens ein Argument ist ungültig.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Aufrufer reserviert Speicher für das Array Zeiger _PrgAccts_ ebenso wie für das Array an welche _PrgAccts_ Punkten. 
+Der Aufrufer reserviert Speicher für den Array Zeiger _prgAccts_ sowie für das Array, an dem _prgAccts_ zeigt. 
   
 ## <a name="see-also"></a>Siehe auch
 

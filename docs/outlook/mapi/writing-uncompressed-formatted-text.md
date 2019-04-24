@@ -1,5 +1,5 @@
 ---
-title: Schreiben von nicht komprimiertem formatierten Text
+title: Schreiben von nicht komprimiertem formatiertem Text
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: c78d4d00-bc31-4d0b-8af0-dd0b8f3febfe
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d34168743926681ee7169a593e302755b193aae7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7ad12fbc9671d0a21c6c6e6d4615b45a17a72fce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325753"
 ---
-# <a name="writing-uncompressed-formatted-text"></a>Schreiben von nicht komprimiertem formatierten Text
+# <a name="writing-uncompressed-formatted-text"></a>Schreiben von nicht komprimiertem formatiertem Text
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bei der Vorbereitung zum Senden einer Nachricht mit formatierten Text, legen Sie entweder die Nachricht **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft in komprimierten oder nicht komprimierten Text. Schreiben von komprimierten Text in der **PR_RTF_COMPRESSED** -Eigenschaft ist ein sehr CPU-intensiver Vorgang und kann die Leistung erheblich beeinträchtigen. 
+Beim Vorbereiten des Sendens einer Nachricht mit formatiertem Text legen Sie die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft der Nachricht auf komprimierten oder nicht komprimierten Text fest. Das Schreiben von komprimiertem Text in der **PR_RTF_COMPRESSED** -Eigenschaft ist ein sehr CPU-intensiver Vorgang und kann die Leistung erheblich beeinträchtigen. 
   
-Zur Verbesserung der Leistung der formatierte Nachrichten entweder senden:
+Um die Leistung beim Senden formatierter Nachrichten zu verbessern, können Sie Folgendes tun:
   
-- Aktualisieren Sie die CPU, eine Lösung, die nicht immer plausibel ist.
+- Upgraden Sie die CPU, eine Lösung, die nicht immer plausibel ist.
     
-    - Oder -
+    - Oder
     
-- Schreiben von nicht komprimierten Text in der **PR_RTF_COMPRESSED** -Eigenschaft. 
+- Schreiben Sie unkomprimierten Text in der **PR_RTF_COMPRESSED** -Eigenschaft. 
     
-Das Verfahren zum Festlegen von **PR_RTF_COMPRESSED** mit nicht komprimierten Text ist die gleichen wie für das Festlegen der Steuerelementvorlage mit komprimierten Text mit einer Ausnahme. Beim Aufruf von [WrapCompressedRTFStream](wrapcompressedrtfstream.md)festlegen Sie STORE_UNCOMPRESSED_RTF das Flag im _UlFlags_ -Parameter. Festlegen der nicht komprimierten Text hat den Nachteil, dass sie die Größe der Nachrichten erhöht. 
+Die Vorgehensweise zum Festlegen von **PR_RTF_COMPRESSED** mit unkomprimiertem Text ist identisch mit der Einstellung für den komprimierten Text mit einer Ausnahme. Legen Sie beim Aufrufen von [WrapCompressedRTFStream](wrapcompressedrtfstream.md)die STORE_UNCOMPRESSED_RTF-Kennzeichnung im _ulFlags_ -Parameter fest. Das Festlegen von nicht komprimiertem Text hat den Nachteil, dass die Größe der Nachrichten erhöht wird. 
   
 

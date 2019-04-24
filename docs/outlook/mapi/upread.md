@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 568f2336-cb4d-3f2c-a304-d29cdb0bcbcc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 887c66277b54e2e14c7f67c76b8e9dd4fa8bc719
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7338edc13227e303ec5fa47da4a5d9ee611c6749
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326152"
 ---
 # <a name="upread"></a>UPREAD
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen von Elementen Zustand "gelesen" während der [Upload lesen Status Zustand](upload-read-status-state.md).
+Informationen zum Hochladen des Lesestatus von Elementen während des [Uploadstatus](upload-read-status-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -37,11 +37,11 @@ struct UPREAD
 
  _pupre_
   
->  [out] Vektor **[UPREADE](upreade.md)** Einträge. 
+>  Out Vektor der **[](upreade.md)** upreade-Einträge. 
     
- _cEnt_
+ _Prozent_
   
->  [out] Anzahl der Einträge **UPREADE** . 
+>  Out Anzahl der **** upreade-Einträge. 
     
 ## <a name="see-also"></a>Siehe auch
 

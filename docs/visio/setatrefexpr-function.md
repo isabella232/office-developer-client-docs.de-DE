@@ -8,33 +8,33 @@ f1_keywords:
 - Vis_DSS.chm1027317
 localization_priority: Normal
 ms.assetid: c1bd7819-b53b-bff1-69c1-6d78e8fb278b
-description: Speichert einen Wert, der durch eine Aktion in der Benutzeroberfläche (UI) oder Automatisierung festgelegt ist.
-ms.openlocfilehash: c664717afcc2b81e55495fd1957a86ef1b021d0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Speichert einen Wert, der durch eine Aktion in der Benutzeroberfläche (UI) oder der Automatisierung festgelegt wird.
+ms.openlocfilehash: 5ca7b59d0ced9c3da346c416826ac89e6b4001da
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326005"
 ---
 # <a name="setatrefexpr-function"></a>SETATREFEXPR Function
 
-Speichert einen Wert, der durch eine Aktion in der Benutzeroberfläche (UI) oder Automatisierung festgelegt ist.
+Speichert einen Wert, der durch eine Aktion in der Benutzeroberfläche (UI) oder der Automatisierung festgelegt wird.
   
 ## <a name="syntax"></a>Syntax
 
-SETATREFEXPR ([** *Expr_opt* **]) 
+SETATREFEXPR ([* * *expr_opt* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expr_opt_ <br/> |Optional  <br/> |**Variiert** <br/> |Ein Ausdruck, der durch den Wert oder ein Ausdruck, der in der SETATREF-Funktion referenzierten Zelle zugewiesen wird ersetzt wird. Wenn nicht angegeben haben, ist der Anfangswert 0 (null).  <br/> |
+| _expr_opt_ <br/> |Optional  <br/> |**Variiert** <br/> |Ein Ausdruck, der durch den Wert oder den Ausdruck ersetzt wird, der der in der SETATREF-Funktion referenzierten Zelle zugewiesen wird. Wenn nicht angegeben, ist der Anfangswert 0 (null).  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
 Der Wert eines SETATREFEXPR-Ausdrucks kann auch über eine SETATREF-Funktion einer anderen Zelle, die auf die Zelle mit dem SETATREFEXPR-Ausdruck verweist, festgelegt werden. 
   
-Sie sind nicht auf die Verwendung der SETATREFEXPR-Funktion als Parameter der SETATREF-Funktion beschränkt. 
+Sie sind nicht auf die Verwendung der SETATREFEXPR-Funktion als Parameter für die SETATREF-Funktion beschränkt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
@@ -50,11 +50,11 @@ User.GridX =2 in
   
 User.GridY =2 in
   
-PinX = INT (SETATREFEXPR /User.GridX () +.5)\*User.GridX
+PinX = INT (SETATREFEXPR ()/User.GridX + 5)\*User. GridX
   
-PinY = INT (SETATREFEXPR /User.GridY () +.5)\*User.GridY
+PinY = INT (SETATREFEXPR ()/User.GridY + 0,5)\*User. GridY
   
-## <a name="example-3"></a>Beispiel 3
+## <a name="example-3"></a>Beispiel 3
 
 Ein Beispiel zur Verwendung der SETATREFEXPR-Funktion zusammen mit der SETATREF-Funktion finden Sie unter der [SETATREF ](setatref-function.md)-Funktion. 
   

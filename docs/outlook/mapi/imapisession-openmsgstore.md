@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f73b5cf-7093-42e9-8acc-63d73df77cf5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fdf75787153f9a85e6a7bcddff44cf2c468a7975
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 19d3df004676a71e2bf6243d9288efd824d99c33
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325767"
 ---
 # <a name="imapisessionopenmsgstore"></a>IMAPISession::OpenMsgStore
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet einen Nachrichtenspeicher und gibt einen Zeiger [IMsgStore](imsgstoreimapiprop.md) für den weiteren Zugriff. 
+Öffnet einen Nachrichtenspeicher und gibt einen [IMsgStore](imsgstoreimapiprop.md) -Zeiger für den weiteren Zugriff zurück. 
   
 ```cpp
 HRESULT OpenMsgStore(
@@ -40,43 +40,43 @@ HRESULT OpenMsgStore(
 
 _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster der Adresse Standarddialogfeld und anderer weiterführende zeigt.
+> in Ein Handle für das übergeordnete Fenster des Dialogfelds "allgemeine Adresse" und andere zugehörige anzeigen.
     
 _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
 _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Nachrichtenspeichers geöffnet werden soll. Der Parameter _LpEntryID_ darf nicht NULL sein. 
+> in Ein Zeiger auf die Eintrags-ID des zu öffnenden Nachrichtenspeichers. Der _lpEntryID_ -Parameter darf nicht NULL sein. 
     
 _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstellenbezeichner (IID), der die Schnittstelle für verwendet werden, um die Nachrichtenspeicher zugreifen darstellt. Übergeben von NULL bewirkt, dass den _LppMDB_ -Parameter, um einen Zeiger auf die Standardschnittstelle für einen Nachrichtenspeicher (**IMsgStore**) zurückzugeben.
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf den Nachrichtenspeicher verwendet werden soll. Übergeben von NULL bewirkt, dass der Parameter _lppMDB_ einen Zeiger auf die Standardschnittstelle für einen Nachrichtenspeicher (**IMsgStore**) zurückgibt.
     
 _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Werte können verwendet werden:
+> in Eine Bitmaske von Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Flags können verwendet werden:
     
-  - MAPI_BEST_ACCESS: Fordert, dass der Nachrichtenspeicher mit den Netzwerkberechtigungen maximale geöffnet werden zulässig für den Benutzer und die maximale Client Anwendungsberechtigungen. Beispielsweise sollte der Client Lese-/Schreibberechtigung verfügt, der Nachrichtenspeicher mit Lese-/Schreibzugriff geöffnet werden; Wenn der Client nur-Lese-Berechtigung verfügt, sollte der Nachrichtenspeicher mit Leseberechtigung geöffnet werden. 
+  - MAPI_BEST_ACCESS: fordert, dass der Nachrichtenspeicher mit den maximal zulässigen Netzwerkberechtigungen für den Benutzer und den maximalen Client Anwendungsberechtigungen geöffnet wird. Wenn der Client beispielsweise über Lese-/Schreibzugriff verfügt, sollte der Nachrichtenspeicher mit Lese-/Schreibzugriff geöffnet werden. Wenn der Client schreibgeschützte Berechtigung hat, sollte der Nachrichtenspeicher mit Leseberechtigung geöffnet werden. 
       
-  - MAPI_DEFERRED_ERRORS: Ermöglicht **OpenMsgStore** zurückgegeben wurde, ist möglicherweise vor der Meldung Store an den aufrufenden Client vollständig verfügbar. Wenn der Nachrichtenspeicher nicht verfügbar ist, kann die nachfolgende Objekt Anrufen ein Fehler ausgelöst. 
+  - MAPI_DEFERRED_ERRORS: ermöglicht es **OpenMsgStore** , erfolgreich zurückzugeben, möglicherweise, bevor der Nachrichtenspeicher für den aufrufenden Client vollständig verfügbar ist. Wenn der Nachrichtenspeicher nicht verfügbar ist, kann durch einen nachfolgenden Objektaufruf ein Fehler ausgelöst werden. 
       
-  - MDB\_NO_DIALOG: verhindert, dass die Anzeige von Dialogfeldern für die Anmeldung. Wenn dieses Flag festgelegt ist, und **OpenMsgStore** hat nicht genügend Konfigurationsinformationen des Nachrichtenspeichers ohne die Benutzer Hilfe öffnen, wird die MAPI_E_LOGON_FAILED zurückgegeben. Wenn dieses Flag nicht festgelegt ist, kann der Nachricht Speicheranbieter auffordern, um einen Namen oder das Kennwort zu korrigieren oder andere Aktionen auszuführen, die zum Herstellen einer Verbindung mit dem Nachrichtenspeicher benötigt werden. 
+  - MDB\_-NO_DIALOG: verhindert die Anzeige von Anmelde Dialogfeldern. Wenn dieses Flag festgelegt ist und **OpenMsgStore** nicht über genügend Konfigurationsinformationen zum Öffnen des Nachrichtenspeichers ohne die Hilfe des Benutzers verfügt, wird MAPI_E_LOGON_FAILED zurückgegeben. Wenn dieses Flag nicht festgelegt ist, kann der Nachrichtenspeicher Anbieter den Benutzer auffordern, einen Namen oder ein Kennwort zu korrigieren oder andere Aktionen auszuführen, die zum Herstellen einer Verbindung mit dem Nachrichtenspeicher erforderlich sind. 
       
-  - MDB\_NO_MAIL: Nachrichtenspeicher sollte nicht für das Senden oder Empfangen von e-Mail verwendet werden. Wenn dieses Flag festgelegt ist, benachrichtigt MAPI nicht der MAPI-Warteschlange, dass dieses Nachrichtenspeichers geöffnet wird.
+  - MDB\_-NO_MAIL: der Nachrichtenspeicher sollte nicht zum Senden oder empfangen von e-Mails verwendet werden. Wenn dieses Flag festgelegt ist, wird die MAPI-Spooler nicht benachrichtigt, dass dieser Nachrichtenspeicher geöffnet wird.
       
-  - MDB\_ONLINE: In Cached Exchange Mode ein Client oder Dienstanbieter kann diese Methode mit MDB_ONLINE Überschreiben der Verbindungs mit den lokalen Nachrichtenspeicher und öffnen Sie den Speicher auf dem Remoteserver aufrufen. Sie können keinen Exchange-Speicher gleichzeitig in derselben MAPI-Sitzung im Cache-Modus und im nicht-Cache-Modus öffnen. Wenn Sie den zwischengespeicherten Nachrichtenspeicher bereits geöffnet haben, müssen Sie entweder den Speicher schließen, bevor Sie dieses Flag zu öffnen, oder öffnen eine neue MAPI-Sitzung, in dem Sie den Exchange-Speicher auf dem Remoteserver mithilfe dieses Flag öffnen können.
+  - MDB\_online: im Exchange-Cache-Modus kann ein Client oder Dienstanbieter diese Methode mit MDB_ONLINE aufrufen, um die Verbindung mit dem lokalen Nachrichtenspeicher zu überschreiben und den Speicher auf dem Remoteserver zu öffnen. Sie können einen Exchange-Speicher nicht im Cache-Modus und gleichzeitig im nicht-Cache-Modus in derselben MAPI-Sitzung öffnen. Wenn Sie den zwischengespeicherten Nachrichtenspeicher bereits geöffnet haben, müssen Sie entweder den Speicher schließen, bevor Sie ihn mit dieser Kennzeichnung öffnen, oder eine neue MAPI-Sitzung öffnen, in der Sie den Exchange-Speicher auf dem Remoteserver mit dieser Kennzeichnung öffnen können.
       
-  - MDB_TEMPORARY: Weist MAPI an, dass der Nachrichtenspeicher ist jedoch nicht dauerhaft und nicht die Nachricht Store-Tabelle hinzugefügt werden sollte. Dieses Kennzeichen werden verwendet, um den Nachrichtenspeicher anmelden, damit Informationen aus dem Profilabschnitt programmgesteuert abgerufen werden kann. 
+  - MDB_TEMPORARY: gibt MAPI an, dass der Nachrichtenspeicher nicht permanent ist und nicht der Nachrichtenspeichertabelle hinzugefügt werden sollte. Dieses Flag wird verwendet, um sich beim Nachrichtenspeicher anzumelden, damit Informationen programmgesteuert aus dem Abschnitt profile abgerufen werden können. 
       
-  - MDB_WRITE: Anforderungen Lese-/Schreibberechtigung auf den Nachrichtenspeicher.
+  - MDB_WRITE: fordert Lese-/Schreibzugriff für den Nachrichtenspeicher an.
     
 _lppMDB_
   
-> [out] Zeiger auf einen Zeiger des Nachrichtenspeichers.
+> Out Zeiger auf einen Zeiger des Nachrichtenspeichers.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -84,41 +84,41 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, auf einen Nachrichtenspeicher zugreifen, für den der Benutzer nicht über ausreichende Berechtigungen verfügt.
+> Es wurde versucht, auf einen Nachrichtenspeicher zuzugreifen, für den der Benutzer nicht über ausreichende Berechtigungen verfügt.
     
 MAPI_E_NOT_FOUND 
   
-> Der Nachrichtenspeicher angegeben durch _LpEntryID_ ist nicht vorhanden. 
+> Der von _lpEntryID_ angegebene Nachrichtenspeicher ist nicht vorhanden. 
     
 MAPI_E_UNKNOWN_CPID 
   
-> Der Server ist nicht zur Unterstützung der Codeseite für den Client konfiguriert.
+> Der Server ist nicht für die Unterstützung der Codeseite des Clients konfiguriert.
     
 MAPI_E_UNKNOWN_LCID 
   
-> Der Server ist nicht konfiguriert, um Gebietsschemainformationen des Clients zu unterstützen.
+> Der Server ist nicht für die Unterstützung der Gebietsschemainformationen des Clients konfiguriert.
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war erfolgreich, aber der Nachricht Speicheranbieter hat Fehlerinformationen verfügbar. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Wenn Sie die Fehlerinformationen vom Anbieter erhalten möchten, rufen Sie die [IMAPISession::GetLastError](imapisession-getlasterror.md) -Methode. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf war erfolgreich, aber der Nachrichtenspeicher Anbieter hat Fehlerinformationen. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Rufen Sie die [IMAPISession:: getlasterroraufzurufen](imapisession-getlasterror.md) -Methode auf, um die Fehlerinformationen vom Anbieter abzurufen. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISession::OpenMsgStore** -Methode wird die einen bestimmten Nachrichtenspeicher geöffnet. 
+Mit der **IMAPISession:: OpenMsgStore** -Methode wird ein bestimmter Nachrichtenspeicher geöffnet. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die Standardberechtigungsstufe für Nachrichtenspeicher ist schreibgeschützt. Wenn Sie das MDB_WRITE-Flag festlegen, können Sie noch nicht Lese-/Schreibberechtigung erteilt werden. Die endgültige Zugriffsebene, die MAPI-weist mit dem Nachrichtenspeicher hängt von Ihrer Berechtigungsstufe, die Nachricht selbst und die Nachricht Speicheranbieter gespeichert. 
+Die Standardberechtigungsstufe für Nachrichtenspeicher ist schreibgeschützt. Wenn Sie das MDB_WRITE-Flag festlegen, werden Ihnen möglicherweise weiterhin keine Lese-/Schreibzugriff erteilt. Die letzte Zugriffsebene, die MAPI dem Nachrichtenspeicher zuweist, hängt von Ihrer Berechtigungsstufe, dem Nachrichtenspeicher selbst und dem Nachrichtenspeicher Anbieter ab. 
   
-Wenn Sie **OpenMsgStore** zum Öffnen eines Nachrichtenspeichers mit Leseberechtigung aufrufen, geschieht Folgendes: 
+Wenn Sie **OpenMsgStore** aufrufen, um einen Nachrichtenspeicher mit Schreibschutz Berechtigung zu öffnen, wird Folgendes ausgeführt: 
   
-- Des Speichers **PR\_STORE_SUPPORT_MASK** -Eigenschaft ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) haben keinen dessen Speicher\_MODIFY_OK und STORE\_CREATE_OK bits festlegen. 
+- Die **PR\_-STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft des Stores hat nicht\_die Speicher MODIFY_OK\_und speichert CREATE_OK-Bits festgelegt. 
     
-- Anrufe an des Nachrichtenspeicher Nachrichten oder Ordner öffnen, indem Sie [IMAPISession::OpenEntry](imapisession-openentry.md) mit dem Flag MAPI_MODIFY schlägt fehl. 
+- Aufrufe zum Öffnen eines der Nachrichten oder Ordner des Nachrichtenspeichers mithilfe von [IMAPISession:: OpenEntry](imapisession-openentry.md) mit dem MAPI_MODIFY-Flagsatz schlagen fehl. 
     
-- Anrufe an eine der Eigenschaften des Nachrichtenspeicher Nachrichten oder Ordner öffnen, indem Sie das Kennzeichen MAPI_MODIFY [IMAPIProp::OpenProperty](imapiprop-openproperty.md) mit schlägt fehl. 
+- Aufrufe zum Öffnen einer der Eigenschaften der Nachrichten oder Ordner des Nachrichtenspeichers mithilfe von [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) mit dem MAPI_MODIFY-Flag schlagen fehl. 
     
-- Aufrufe an eine der folgenden Methoden schlagen fehl: 
+- Bei Aufrufen einer der folgenden Methoden tritt ein Fehler auf: 
     
   - [IMAPIFolder::CreateMessage](imapifolder-createmessage.md)
     
@@ -134,7 +134,7 @@ Wenn Sie **OpenMsgStore** zum Öffnen eines Nachrichtenspeichers mit Leseberecht
     
   - [IMAPIProp::DeleteProps](imapiprop-deleteprops.md)
   
-- Aufrufe der folgenden Methoden schlägt fehl, wenn das Ziel für die kopierte Nachricht schreibgeschützt ist, ob das Ziel identisch mit der Quelle Nachrichtenspeicher ist oder einen anderen nur-Lese-Speicher.
+- Bei Aufrufen der folgenden Methoden tritt ein Fehler auf, wenn das Ziel für die kopierte Nachricht schreibgeschützt ist, unabhängig davon, ob das Ziel mit dem Quell Nachrichtenspeicher identisch ist oder wenn es sich um einen anderen schreibgeschützten Speicher handelt.
     
   - [IMAPIFolder::CopyMessages](imapifolder-copymessages.md)
     
@@ -142,13 +142,13 @@ Wenn Sie **OpenMsgStore** zum Öffnen eines Nachrichtenspeichers mit Leseberecht
     
   - [IMAPIProp::CopyTo](imapiprop-copyto.md)
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIStoreFunctions.cpp  <br/> |CallOpenMsgStore  <br/> |MFCMAPI (engl.) verwendet die **IMAPISession::OpenMsgStore** -Methode, um einen Nachrichtenspeicher zu öffnen.  <br/> |
+|MAPIStoreFunctions. cpp  <br/> |CallOpenMsgStore  <br/> |MFCMAPI verwendet die **IMAPISession:: OpenMsgStore** -Methode, um einen Nachrichtenspeicher zu öffnen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -156,7 +156,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 - [IMAPISession::GetLastError](imapisession-getlasterror.md)
 - [IMAPISession::OpenEntry](imapisession-openentry.md)
 - [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
-- [IMAPISession: IUnknown](imapisessioniunknown.md)
-- [MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+- [IMAPISession : IUnknown](imapisessioniunknown.md)
+- [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
 - [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
 

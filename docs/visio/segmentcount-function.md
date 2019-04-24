@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 792ec0e4-4a48-136b-904c-fe269e355070
 description: Gibt die Anzahl der Liniensegmente zurück, aus denen der Pfad besteht.
-ms.openlocfilehash: 93a77d9085e6900f502a75401847ad685d25effd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 947e37c13de638e4f281bc17376a253a8ca07e04
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326040"
 ---
 # <a name="segmentcount-function"></a>SEGMENTCOUNT Function
 
@@ -20,7 +20,7 @@ Gibt die Anzahl der Liniensegmente zurück, aus denen der Pfad besteht.
   
 ## <a name="syntax"></a>Syntax
 
-SEGMENTCOUNT (** *PathRef* **) 
+Segment count (* * *pathRef* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -28,7 +28,7 @@ SEGMENTCOUNT (** *PathRef* **)
 |:-----|:-----|:-----|:-----|
 | _pathRef_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf die Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Ganze Zahl
   

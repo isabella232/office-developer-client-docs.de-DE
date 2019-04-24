@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251592
 localization_priority: Normal
 ms.assetid: df88c55f-c098-dd4c-bf53-c7d7b60cf719
-description: Gibt eine Formatierungsangabe Zeichenfolge, die dem internen Textfeld-Formatcode von Microsoft Visio entspricht.
-ms.openlocfilehash: 1528cefd65ed0c7c1dde02fa390babf26442b4d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine Zeichenfolge zum Formatieren von Bildern zurück, die dem internen Textfeld-Formatcode von Microsoft Visio entspricht.
+ms.openlocfilehash: 1ab24c602c7975cf6be22a564a8b9ee9aa0d6f46
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322547"
 ---
 # <a name="fieldpicture-function"></a>FIELDPICTURE Function
 
-Gibt eine Formatierungsangabe Zeichenfolge, die dem internen Textfeld-Formatcode von Microsoft Visio entspricht.
+Gibt eine Zeichenfolge zum Formatieren von Bildern zurück, die dem internen Textfeld-Formatcode von Microsoft Visio entspricht.
   
 ## <a name="syntax"></a>Syntax
 
-FIELDPICTURE (** *Code* **) 
+FIELDPICTURE (* * *Code* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _code_ <br/> |Erforderlich  <br/> |**Nummer** <br/> | Ein Textfeld-Formatcode.  <br/> |
+| _code_ <br/> |Erforderlich  <br/> |**Number** <br/> | Ein Textfeld-Formatcode.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
@@ -40,7 +40,7 @@ Zeichenfolgen für Formatierungsangaben werden in der FORMAT-Funktion verwendet,
   
 ## <a name="example"></a>Beispiel
 
-FIELDPICTURE(0) 
+FIELDPICTURE (0) 
   
 Gibt die Zeichenfolge für eine Formatierungsangabe "0,0" zurück, die eine Zahl mit einer Dezimalstelle und eine Einheitenbeschreibung in Kleinbuchstaben festlegt, wenn sie in der FORMAT-Funktion verwendet wird. 
   

@@ -7,11 +7,11 @@ ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
 description: Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen für Desktopanwendungen mit dem .NET Framework 4.0. Die in diesem Artikel beschriebene Anwendung ruft Informationen vom hostenden Server ab.
 localization_priority: Priority
 ms.openlocfilehash: 3d3c2dd5b896c10dab9a0494288f38610cbc99e1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322621"
 ---
 # <a name="developing-a-project-online-application-using-the-client-side-object-model"></a>Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmodell
 

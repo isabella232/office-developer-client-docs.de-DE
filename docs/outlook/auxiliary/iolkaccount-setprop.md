@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 883b1c5d-47dd-a006-b5f1-130691bdd019
-description: Legt den Wert der Eigenschaft angegebene Konto.
-ms.openlocfilehash: 2bb8a323f5f3399b9eac1cfdf9ac18faddfdb259
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Legt den Wert der angegebenen Account-Eigenschaft fest.
+ms.openlocfilehash: 94134cee7886177ab840a6caff7d70d65bf9d4cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322253"
 ---
 # <a name="iolkaccountsetprop"></a>IOlkAccount::SetProp
 
-Legt den Wert der Eigenschaft angegebene Konto.
+Legt den Wert der angegebenen Account-Eigenschaft fest.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 ```cpp
 HRESULT IOlkAccount::SetProp(  
@@ -33,22 +33,22 @@ HRESULT IOlkAccount::SetProp(
 
 _dwProp_
   
-> [in] Die Eigenschaftstag der Konto-Eigenschaft festgelegt.
+> in Das Property-Tag der festzulegenden Account-Eigenschaft.
     
 _pVar_
   
-> [in] Der Wert der angegebenen Eigenschaft.
+> in Der Wert der angegebenen Eigenschaft.
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Methodenaufruf war erfolgreich.  <br/> |
-|E_INVALIDARG  <br/> |Eine ungültige Eigenschafts-Tag angegeben wurde.  <br/> |
+|S_OK  <br/> |Der Methodenaufruf war erfolgreich.  <br/> |
+|E_INVALIDARG  <br/> |Es wurde ein ungültiges Property-Tag angegeben.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie [IOlkAccount::SaveChanges](iolkaccount-savechanges.md) , um Änderungen auf den Wert der Eigenschaften von Benutzerkonten zu speichern. 
+Verwenden Sie [IOlkAccount:: SaveChanges](iolkaccount-savechanges.md) , um Änderungen am Wert der Kontoeigenschaften zu speichern. 
   
 ## <a name="see-also"></a>Siehe auch
 

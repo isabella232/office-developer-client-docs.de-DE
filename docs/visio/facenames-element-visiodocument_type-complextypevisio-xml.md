@@ -1,5 +1,5 @@
 ---
-title: FaceNames-Element (VisioDocument_Type ComplexType) ("Visio XML")
+title: FaceNames-Element (VisioDocument_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ localization_priority: Normal
 ms.assetid: 61e30f57-abd6-9378-45ed-51236ab3d3ee
 description: Enthält eine Auflistung von FaceName-Elementen.
 ms.openlocfilehash: 5d6f2ffbf54dd04e744e85909fbc8a6bd4a387a3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322582"
 ---
-# <a name="facenames-element-visiodocumenttype-complextype-visio-xml"></a>FaceNames-Element (VisioDocument_Type ComplexType) ("Visio XML")
+# <a name="facenames-element-visiodocumenttype-complextype-visio-xml"></a>FaceNames-Element (VisioDocument_Type complexType) (' Visio XML ')
 
 Enthält eine Auflistung von **FaceName** -Elementen. 
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält eine Auflistung von **FaceName** -Elementen.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

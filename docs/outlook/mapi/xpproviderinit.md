@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: df6eacf4-1cf9-4c25-806f-f87c38dad597
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 38b60180ae7c417bf34998e72f96b353ace02859
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ee0ff8d32436f71020be2cdc91d6677bd4ec8e43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325655"
 ---
 # <a name="xpproviderinit"></a>XPProviderInit
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initialisiert eine Adressbuchhierarchie für Vorgang.
+Initialisiert einen Transportanbieter für den Vorgang.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Implementiert von:  <br/> |Transportanbieter  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Implementiert von:  <br/> |Transport Anbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
    
 ```cpp
@@ -51,45 +51,45 @@ HRESULT XPProviderInit(
 
  _hInstance_
   
-> [in] Die Instanz der Adressbuchhierarchie Dynamic Link Library (DLL), MAPI verwendet, wenn sie die DLL-Datei geladen.
+> in Die Instanz der Dynamic Link Library (DLL) des Transportanbieters, die MAPI beim Laden der DLL verwendet hat.
     
  _lpMalloc_
   
-> [in] Zeiger auf ein Speicherobjekt-Zuweisung die OLE **IMalloc** -Schnittstelle verfügbar macht. Der Transportdienst müssen möglicherweise beim Arbeiten mit bestimmte Schnittstellen wie **IStream**diese Zuordnungsmethode verwenden. 
+> in Zeiger auf ein Speicher Reservierungs Objekt, das die OLE **IMalloc** -Schnittstelle verfügbar macht. Der Transportanbieter muss diese Zuordnungsmethode möglicherweise beim Arbeiten mit bestimmten Schnittstellen wie **IStream**verwenden. 
     
  _lpAllocateBuffer_
   
-> [in] Zeiger auf die Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) , Speicher verwendet werden soll. 
+> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Reservieren von Arbeitsspeicher verwendet werden soll. 
     
  _lpAllocateMore_
   
-> [in] Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, mit der zusätzlichen Arbeitsspeicher zugewiesen werden. 
+> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die zum Zuweisen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer](mapifreebuffer.md) -Funktion verwendet werden, um Arbeitsspeicher freizugeben. 
+> in Zeiger auf die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, die verwendet werden, um Arbeitsspeicher freizugeben. 
     
  _ulFlags_
   
-> [in] Bitmaske der Kennzeichen. Das folgende Flag kann festgelegt werden:
+> in Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
     
 MAPI_NT_SERVICE 
   
-> Der Anbieter wird im Kontext eines Windows-Diensts, eine spezielle Art von Vorgang ohne Zugriff auf eine beliebige Benutzeroberfläche geladen. 
+> Der Anbieter wird im Kontext eines Windows-Diensts, einem speziellen Prozesstyp ohne Zugriff auf eine beliebige Benutzeroberfläche, geladen. 
     
  _ulMAPIVer_
   
-> [in] Versionsnummer der der Dienstanbieter-Schnittstelle (SPI), die die Datei MAPI verwendet. Die aktuelle Versionsnummer finden Sie unter der Headerdatei Mapispi.h. 
+> in Versionsnummer der Dienstanbieterschnittstelle (SPI), die von MAPI. dll verwendet wird. Die aktuelle Versionsnummer finden Sie in der Headerdatei Mapispi. h. 
     
  _lpulProviderVer_
   
-> [out] Zeiger auf die Versionsnummer der SPI, die dieser Transportdienst verwendet. 
+> Out Zeiger auf die Versionsnummer des SPI, die dieser Transportanbieter verwendet. 
     
  _lppXPProvider_
   
-> [out] Zeiger auf einen Zeiger auf den initialisierten Transportobjekt Anbieter.
+> Out Zeiger auf einen Zeiger auf das initialisierte Transportanbieter Objekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -97,21 +97,21 @@ S_OK
     
 MAPI_E_VERSION 
   
-> Die SPI-Version von MAPI verwendet wird, ist nicht kompatibel mit der SPI, die von diesem Anbieter verwendet wird.
+> Die SPI-Version, die von MAPI verwendet wird, ist nicht mit dem SPI kompatibel, der von diesem Anbieter verwendet wird.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-aufrufen, die Eintrags-Funktion **XPProviderInit** ein Transportdienstes nach einer Clientanmeldung nicht initialisiert werden. **XPProviderInit** wird einmal für jede Adressbuchhierarchie im Profil des Clients angegebene aufgerufen. 
+MAPI Ruft die Einstiegspunktfunktion **XPProviderInit** auf, um einen Transportanbieter nach einer Clientanmeldung zu initialisieren. **XPProviderInit** wird einmal für jeden Transportanbieter aufgerufen, der im Profil des Clients angegeben ist. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Ein Transportdienstes muss als Funktion Entry Point in die DLL des Anbieters **XPProviderInit** implementieren. Die Implementierung der **XPPROVIDERINIT** Funktionsprototyp auch im angegebenen Mapispi.h basieren. MAPI definiert **XPPROVIDERINIT** Verwendung standard MAPI Initialisierung Aufruftyps, STDMAPIINITCALLTYPE, wodurch **XPProviderInit** CDECL-Aufrufkonvention folgen. Ein Vorteil CDECL ist, dass Anrufe versucht werden können, selbst wenn die Anzahl der aufrufenden Parameter nicht die Anzahl der definierten Parameter übereinstimmt. 
+Ein Transportanbieter muss **XPProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem **XPPROVIDERINIT** -Funktionsprototyp basieren, der auch in Mapispi. h angegeben ist. MAPI definiert **XPPROVIDERINIT** für die Verwendung des standardMÄßIGen MAPI-Initialisierungsaufruf Typs STDMAPIINITCALLTYPE, wodurch **XPPROVIDERINIT** der Cdecl-Aufrufkonvention folgt. Ein Vorteil von CDECL besteht darin, dass Aufrufe auch dann versucht werden können, wenn die Anzahl der Anruf Parameter nicht mit der Anzahl der definierten Parameter übereinstimmt. 
   
-Ein Anbieter kann mehrmals initialisiert werden, als Ergebnis in mehrere Profile angezeigt wird, in der gleichzeitigen Verwendung oder nur einmal in das gleiche Profil angezeigt werden. Da das Anbieterobjekt Kontext enthält, muss **XPProviderInit** in _LppXPProvider_ für jede Initialisierung, auch für mehrere wie in demselben Prozess einer anderen Anbieter-Objekt zurückgeben. 
+Ein Anbieter kann mehrmals initialisiert werden, wenn er in mehreren Profilen gleichzeitig verwendet wird oder mehr als einmal im gleichen Profil angezeigt wird. Da das Provider-Objekt den Kontext enthält, muss **XPProviderInit** für jede Initialisierung ein anderes Anbieterobjekt in _lppXPProvider_ zurückgeben, auch für mehrere Initialisierungen im selben Prozess. 
   
-Der Transportdienst sollten die Funktionen, die auf den _LpAllocateBuffer_, _LpAllocateMore_und _LpFreeBuffer_ für die meisten arbeitsspeicherreservierung und Freigabe verwenden. Insbesondere muss den Anbieter diese Funktionen für die Verwendung von Clientanwendungen Speicher beim Aufruf von wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md)-Schnittstellen verwenden. Wenn der Anbieter auch erwartet, verwenden Sie die Zuweisung der OLE-Speicher, sollten sie die **IUnknown:: AddRef** -Methode, der das Zuordnungsobjekt auf das durch den Parameter _LpMalloc_ aufrufen. 
+Der Transportanbieter sollte die Funktionen, auf die von _lpAllocateBuffer_, _lpAllocateMore_und _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und-Aufhebungen verwenden. Insbesondere muss der Anbieter diese Funktionen verwenden, um Arbeitsspeicher für die Verwendung durch Clientanwendungen zu reservieren, wenn Objektschnittstellen wie [IMAPIProp::](imapiprop-getprops.md) GetProps und [IMAPITable:: QueryRows](imapitable-queryrows.md)aufgerufen werden. Wenn der Anbieter auch die Verwendung der OLE-Speicherzuweisung erwartet, sollte er die **IUnknown:: AddRef** -Methode des Zuweisungs Objekts aufrufen, auf die durch den _lpMalloc_ -Parameter verwiesen wird. 
   
-Weitere Informationen über das Schreiben von **XPProviderInit**finden Sie unter [der Adressbuchhierarchie initialisieren](initializing-the-transport-provider.md). Weitere Informationen zu Entry Point-Funktionen finden Sie unter [Implementieren einer Service Provider Eintrag zeigen-Funktion](implementing-a-service-provider-entry-point-function.md). 
+Weitere Informationen zum Schreiben von **XPProviderInit**finden Sie unter [Initialisieren des Transport Anbieters](initializing-the-transport-provider.md). Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementieren einer Dienstanbieter-Einstiegspunktfunktion](implementing-a-service-provider-entry-point-function.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

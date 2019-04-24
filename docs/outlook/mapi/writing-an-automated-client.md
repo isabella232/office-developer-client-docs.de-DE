@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: b8f9ac1a-b377-4f83-8fb6-ed85ab9053d0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 504e10efa4f540d64469f6aaab22b3f9e9e1157d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f9ce3452bbc2d3297cc67168835a9387235746a8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325592"
 ---
 # <a name="writing-an-automated-client"></a>Schreiben eines automatisierten Clients
 
@@ -21,18 +21,18 @@ ms.locfileid: "22582553"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine automatisierte Client-Anwendung ist eine Anwendung, die unbeaufsichtigte, ohne Benutzeroberfläche ausgeführt wird.
+Eine automatisierte Clientanwendung ist eine unbeaufsichtigte Anwendung, die keine Benutzeroberfläche anzeigt.
   
- Standardmäßig an vielen MAPI-Schnittstellenmethoden eine Benutzeroberfläche. Alle diese Methoden haben Flags, die einen Client zulassen oder unterdrückt diese Anzeige zulassen. Obwohl MAPI-Dienstanbieter diese Flags berücksichtigt erwartet, sind einige Anbieter, die diese Erwartungen nicht immer entsprechen. Ein legitimer Grund nicht berücksichtigt die Kennzeichen ist die Abhängigkeit des Dienstanbieters einer anderen Dienst, der keine Benutzer Schnittstelle Unterdrückung zulässt. Wenn Sie einen automatisierten Client entwickeln, achten Sie darauf achten auf der Dienstanbieter, die Sie verwenden und wie diese konfiguriert werden. Gehen Sie nicht, dass alle Ihre Anrufe an eine Benutzeroberfläche unterdrücken hergestellt werden kann. 
+ Standardmäßig zeigen viele MAPI-Schnittstellenmethoden eine Benutzeroberfläche an. Alle diese Methoden verfügen über Flags, mit denen ein Client diese Anzeige zulassen oder unterdrücken kann. Obwohl MAPI davon ausgeht, dass Dienstanbieter diese Flags honorieren, gibt es einige Anbieter, die diese Erwartungen nicht immer erfüllen. Ein legitimer Grund für die Nichtanerkennung der Flags ist die Abhängigkeit des Dienstanbieters in einem anderen Dienst, der die Unterdrückung der Benutzeroberfläche nicht zulässt. Wenn Sie einen automatisierten Client entwickeln, achten Sie sorgfältig auf die von Ihnen verwendeten Dienstanbieter und deren Konfiguration. Gehen Sie nicht davon aus, dass alle Aufrufe zum unterdrücken einer Benutzeroberfläche erfolgreich ausgeführt werden. 
   
-Automatisierte Clients benötigen in das Profil die erforderliche Informationen für die ordnungsgemäße Konfiguration der einzelnen Message-Dienste zur Verfügung. Es gibt zwei Methoden, um Konfigurationsinformationen bei der Anmeldung angeben:
+Automatisierte Clients müssen über die erforderlichen Informationen für die ordnungsgemäße Konfiguration der einzelnen Nachrichtendienste im Profil verfügen. Es gibt zwei Möglichkeiten, Konfigurationsinformationen zur Anmeldezeit bereitzustellen:
   
 - Der Dienstanbieter kann Informationen aus dem Profil abrufen.
     
-- Der Dienstanbieter kann der Benutzer Informationen aufgefordert. 
+- Der Dienstanbieter kann den Benutzer auffordern, Informationen zu erhalten. 
     
-Da die zweite Option für automatisierte Clients als nicht verfügbar ist, müssen diese Clients die erste Option verwenden. Clients müssen ihre Profile sorgfältig durch, um sicherzustellen, dass diese Option immer konfigurieren.
+Da die zweite Option für automatisierte Clients nicht verfügbar ist, müssen diese Clients die erste Option verwenden. Clients müssen ihre Profile sorgfältig konfigurieren, um sicherzustellen, dass diese Option immer funktioniert.
   
-Automatisierte Clients legen Sie das MAPI_NO_MAIL-Flag immer im Funktionsaufruf [MAPILogonEx](mapilogonex.md) um einen MAPI-Sitzung zu starten. 
+Automatisierte Clients legen immer das MAPI_NO_MAIL-Flag im [MAPILogonEx](mapilogonex.md) -Funktionsaufruf fest, um eine MAPI-Sitzung zu starten. 
   
 

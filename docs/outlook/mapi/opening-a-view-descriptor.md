@@ -1,5 +1,5 @@
 ---
-title: Öffnen eine Beschreibung der Ansicht
+title: Öffnen einer Ansichtsbeschreibung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: 1940feb0-9e0f-4d96-9fb9-b9a35a0aa661
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 680d80c0827399f3b7a0ea5819e51be654a05810
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ce53e5a91f6fa340728872457eae7f6514e287aa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326208"
 ---
-# <a name="opening-a-view-descriptor"></a>Öffnen eine Beschreibung der Ansicht
+# <a name="opening-a-view-descriptor"></a>Öffnen einer Ansichtsbeschreibung
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Viele Ordner können mit einer Normalansicht, eine Standardansicht oder eine beliebige Anzahl von personalisierte Ansichten geöffnet werden. Eine Ansicht wird beschrieben, wie der Inhalt eines Ordners angezeigt wird. Die Normalansicht wird verwendet, wenn keine alternativen Ansicht vorhanden ist und wenn Sie den Ordner zum ersten Mal öffnen. Wenn Sie eine alternative Ansicht vorhanden ist, müssen Sie es zum Öffnen des Ordners verwenden.
+Viele Ordner können mit einer Normalansicht, einer Standardansicht oder einer beliebigen Anzahl von personalisierten Ansichten geöffnet werden. In einer Ansicht wird beschrieben, wie der Inhalt eines Ordners angezeigt wird. Die Normalansicht wird verwendet, wenn keine Alternative Ansicht vorhanden ist und Sie den Ordner zum ersten Mal öffnen. Wenn eine Alternative Ansicht vorhanden ist, müssen Sie Sie verwenden, um den Ordner zu öffnen.
   
-Eine Ansicht wird in einer Nachricht als ein Deskriptor Ansicht bezeichnet beschrieben. Ansicht Deskriptoren werden in der Regel als zugeordneten Nachrichten erstellt und in den allgemeinen oder persönliche Ansicht-Ordnern oder in einem Ordner IPM können angezeigt werden.
+Eine Ansicht wird in einer Nachricht beschrieben, die als Ansichts Deskriptor bezeichnet wird. Ansichts Deskriptoren werden in der Regel als zugeordnete Nachrichten erstellt und können in den Ordnern allgemeine oder persönliche Ansicht oder in einem beliebigen IPM-Ordner angezeigt werden.
   
-### <a name="to-open-a-view-descriptor"></a>Eine Beschreibung der Ansicht öffnen
+### <a name="to-open-a-view-descriptor"></a>So öffnen Sie einen Ansichts Deskriptor
   
-1. Rufen Sie [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) zum Abrufen des zugehörigen Inhaltsverzeichnisses für den Ordner. 
+1. Rufen Sie [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable auf, um die zugeordnete Inhaltstabelle für den Ordner abzurufen. 
     
-2. Erstellen Sie eine Beschränkung, der nur Nachrichten mit der Nachrichtenklasse für die Ansicht Deskriptoren reserviert ermittelt und rufen Sie die [Methode IMAPITable:: Restrict](imapitable-restrict.md) zur Begrenzung der Tabelle und [IMAPITable::QueryRows](imapitable-queryrows.md) zum Abrufen der entsprechenden Zeilen, oder...
+2. Erstellen Sie eine Einschränkung, die nur Nachrichten sucht, deren Nachrichtenklasse für Ansichts Deskriptoren reserviert ist, und rufen Sie [IMAPITable:: Restrict](imapitable-restrict.md) auf, um die Tabelle zu begrenzen, und [IMAPITable:: QueryRows](imapitable-queryrows.md) , um die entsprechenden Zeilen abzurufen, oder...
     
-   Rufen Sie den Ordner [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode zum Abrufen der Eigenschaft **PR_DEFAULT_VIEW_ENTRYID** ([PidTagDefaultViewEntryId](pidtagdefaultviewentryid-canonical-property.md)). **PR_DEFAULT_VIEW_ENTRYID** enthält die Eintrags-ID für die Nachricht mit der standardmäßigen Ansicht Deskriptor für einen Ordner. Dieser Aufruf erfolgreich, wenn der Ordner die Verwendung des MAPI_ASSOCIATED-Flags für Aufrufe von [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) und [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)unterstützt.
+   Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Ordners auf, um die zugehörige **PR_DEFAULT_VIEW_ENTRYID** ([pidtagdefaultviewentryid (](pidtagdefaultviewentryid-canonical-property.md))-Eigenschaft abzurufen. **PR_DEFAULT_VIEW_ENTRYID** enthält die Eintrags-ID für die Nachricht, die den Standard Ansichts Deskriptor für einen Ordner enthält. Dieser Aufruf kann erfolgreich ausgeführt werden, wenn der Ordner die Verwendung des MAPI_ASSOCIATED-Flags für Aufrufe von [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) und [IMAPIContainer::](imapicontainer-getcontentstable.md)getcontentable unterstützt.
     
-3. Rufen Sie [IMsgStore::OpenEntry](imsgstore-openentry.md) , wobei die Eintrags-ID der Ansicht Deskriptor zu öffnen. 
+3. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md) mit der Eintrags-ID des Ansichts Deskriptors auf, um Sie zu öffnen. 
     
 

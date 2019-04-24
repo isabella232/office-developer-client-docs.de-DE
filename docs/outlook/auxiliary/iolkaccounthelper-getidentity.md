@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ea8b8f02-959f-cd71-9cfe-5ebdf4bae2bc
 description: Ruft den Profilnamen eines Kontos ab.
 ms.openlocfilehash: d725f309a29b026395e2795a49d31b45a4a49562
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322106"
 ---
 # <a name="iolkaccounthelpergetidentity"></a>IOlkAccountHelper::GetIdentity
 
@@ -20,7 +20,7 @@ Ruft den Profilnamen eines Kontos ab.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccountHelper](iolkaccounthelper.md).
+Siehe [IOlkAccountHelper](iolkaccounthelper.md).
   
 ```cpp
 HRESULT IOlkAccountHelper::GetIdentity (  
@@ -33,23 +33,23 @@ HRESULT IOlkAccountHelper::GetIdentity (
 
 _pwszIdentity_
   
-> [in] [out] Der Profilname.
+> in Out Der Profilname.
     
 _pcch_
   
-> [in] [out] Beim Aufrufen dieser Methode enthält die Größe (in Anzahl von Zeichen) der _PwszIdentity_ , der zugeordnet wurde. Bei der Rückgabe enthält die tatsächliche Länge, einschließlich des Zeichens 0 zum Abbruch des Namens zurückgegebene Profil. 
+> in Out Beim Aufrufen dieser Methode enthält die Größe (in Zeichen) von _pwszIdentity_ , die zugeordnet wurde. Bei Rückgabe enthält die tatsächliche Länge des zurückgegebenen Profilnamens, einschließlich des 0-Abschlusszeichens. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_OUTOFMEMORY  <br/> |Der zurückgegebene Profilname ist länger als die Größe der _PwszIdentity_.  <br/> |
-|E_INVALIDARG  <br/> | _Pcch_ ist NULL.  <br/> |
+|E_OUTOFMEMORY  <br/> |Der zurückgegebene Profilname ist länger als die Größe von _pwszIdentity_.  <br/> |
+|E_INVALIDARG  <br/> | _pcch_ ist NULL.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn _PwszIdentity_ zu klein, um den Profilnamen enthalten ist, wird bei der Rückgabe nicht festgelegt werden, und _Pcch_ verweist auf die Größe für _PwszIdentity_erforderlich.
+Wenn _pwszIdentity_ zu klein für den Profilnamen ist, wird er bei der Rückgabe nicht festgelegt, und _pcch_ zeigt auf die für _pwszIdentity_erforderliche Größe.
   
 ## <a name="see-also"></a>Siehe auch
 

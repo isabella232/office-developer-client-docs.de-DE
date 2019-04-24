@@ -6,34 +6,34 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 12cfe096-6882-c0be-b248-87567cb71e83
-description: Stellt transporteinstellungen, die Outlook verwendet, um die erforderlichen Aufgaben zu ermitteln und die Elemente der Benutzeroberfläche (UI) zu deaktivieren, die das Konto nicht unterstützt.
-ms.openlocfilehash: 95b61ea994557be76303f8b9b0541353b6ed13f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Stellt Transporteinstellungen dar, die Outlook zum Ermitteln der erforderlichen Synchronisierungsaufgaben verwendet, und zum Deaktivieren der Benutzeroberflächenelemente, die das Konto nicht unterstützt.
+ms.openlocfilehash: 707306c3bfbeebdd18f82bacfc121274be08aa50
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326481"
 ---
 # <a name="propmapitransportflags"></a>PROP_MAPI_TRANSPORT_FLAGS
 
-Stellt transporteinstellungen, die Outlook verwendet, um die erforderlichen Aufgaben zu ermitteln und die Elemente der Benutzeroberfläche (UI) zu deaktivieren, die das Konto nicht unterstützt.
+Stellt Transporteinstellungen dar, die Outlook zum Ermitteln der erforderlichen Synchronisierungsaufgaben verwendet, und zum Deaktivieren der Benutzeroberflächenelemente, die das Konto nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter [IOlkAccount](iolkaccount.md).
+Siehe [IOlkAccount](iolkaccount.md).
   
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0x2010  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_BINARY  <br/> |
-|Eigenschafts-Tag:  <br/> |0x20100102  <br/> |
-|Access:  <br/> |Lese-/Schreibzugriff  <br/> |
+|Kennung:  <br/> |0x2010  <br/> |
+|Eigenschafts:  <br/> |PT_BINARY  <br/> |
+|Property-Tag:  <br/> |0x20100102  <br/> |
+|Access  <br/> |Lesen/Schreiben  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Abrufen Sie oder festlegen Sie dieser Eigenschaft mithilfe von [IOlkAccount::GetProp](iolkaccount-getprop.md) oder [IOlkAccount::SetProp](iolkaccount-setprop.md), jeweils.
+Abrufen oder Festlegen dieser Eigenschaft mithilfe von [IOlkAccount:: getprop](iolkaccount-getprop.md) oder [IOlkAccount:: setprop](iolkaccount-setprop.md), beziehungsweise.
   
-Gibt **MAPIACCT_SEND_ONLY** zurück, wenn das Konto nur Nachrichten senden kann, jedoch keine Nachrichten empfangen. In diesem Fall wird Outlook Benutzeroberfläche, die auf diese Art von Konten (beispielsweise die Benutzeroberfläche für **Senden/Empfangen**) nicht anwendbar ist deaktiviert.
+Gibt **MAPIACCT_SEND_ONLY** zurück, wenn das Konto nur Nachrichten senden, aber keine Nachrichten empfangen kann. In diesem Fall deaktiviert Outlook die Benutzeroberfläche, die für diese Art von Konten nicht gilt (beispielsweise die Benutzeroberfläche für **senden/empfangen**).
   
 ## <a name="see-also"></a>Siehe auch
 

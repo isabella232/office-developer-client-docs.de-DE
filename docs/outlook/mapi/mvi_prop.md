@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: d7f07524-6935-4a60-aaf3-3f753ea8d86a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6a3d0d79d190b318d36fd9be8a3ec39d6aa7ad29
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 087d38face72e1e067350b1959b37313ebbd7c44
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326292"
 ---
 # <a name="mviprop"></a>MVI_PROP
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Legt die MVI_FLAG für eine angegebene Eigenschaft fest. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 MVI_PROP (tag)
@@ -40,15 +40,15 @@ MVI_PROP (tag)
 
  _Tag_
   
-> Die Eigenschaftentag geändert werden soll.
+> Das zu ändernde Property-Tag.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MVI_FLAG kombiniert die Einstellung der MV_FLAG, Identifizieren einer Eigenschaft als mehrwertige, und MV_INSTANCE vorhanden, anfordern, dass eine mehrwertige Eigenschaft in einer Tabelle in mehrere Zeilen angezeigt werden. Der Eigenschaftentyp der betroffenen-Eigenschaft wird so geändert, aber der Bezeichner bleibt unverändert. 
+Das MVI_FLAG kombiniert die Einstellung von MV_FLAG, identifiziert eine Eigenschaft als mehrwertige und MV_INSTANCE und fordert, dass eine mehrwertige Eigenschaft in einer Tabelle in mehreren Zeilen angezeigt wird. Der Eigenschaftentyp der betroffenen Eigenschaft wird geändert, aber der Bezeichner bleibt unverändert. 
   
-Wenn das Makro MVI_PROP auf eine Eigenschaft vom Typ PT_FLOAT angewendet wird, wird dieses Typs PT_MV_FLOAT geändert. Wenn in einer Tabelle enthalten, werden mehrere Zeilen verwendet, um die Eigenschaft darstellen, die eine Zeile für jeden Wert hat. Die Eigenschaften für die anderen Spalten werden wiederholt. 
+Wenn beispielsweise das MVI_PROP-Makro auf eine Eigenschaft vom Typ PT_FLOAT angewendet wird, wird der Typ in PT_MV_FLOAT geändert. Wenn Sie in einer Tabelle enthalten sind, werden mehrere Zeilen verwendet, um die Eigenschaft darzustellen, die eine Zeile für jeden Wert enthält. Die Eigenschaften für die anderen Spalten werden wiederholt. 
   
-Weitere Informationen zu diesen Flags finden Sie unter [MAPI-Eigenschaft Type Overview](mapi-property-type-overview.md) und [Arbeiten mit Spalten mit mehreren Werten](working-with-multivalued-columns.md).
+Weitere Informationen zu diesen Flags finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md) und [Working with mehrwertig Columns](working-with-multivalued-columns.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,20 +6,20 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 78e2806d-bb6f-cd96-21f1-b7c667c73c33
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5f4aa6444eb02831b299a5ca6e0c54b6b2d0a6fa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fefa77a15cc2b8c72a41b29e6299f159a893cee8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322162"
 ---
 # <a name="about-mapi-additions"></a>Informationen zu MAPI-Ergänzungen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Ergänzungen sind APIs, die gehören zu MAPI Messaging Application Programming Interface (), wie Datentypen, Funktionen und Eigenschaften, die zuvor nicht verfügbar gemacht werden und wurden als Teil der MAPI-Programmer's Reference dokumentiert. Dazu gehören die folgenden Definitionen und Eigenschaften.
+MAPI-Ergänzungen sind APIs, die zur MAPI (Messaging Application Programming Interface) gehören, wie Datentypen, Funktionen und Eigenschaften, die zuvor nicht verfügbar gemacht und als Teil der MAPI-Programmierreferenz dokumentiert wurden. Sie enthalten die folgenden Definitionen und Eigenschaften.
   
-## <a name="constant-definitions"></a>Konstantendefinitionen
+## <a name="constant-definitions"></a>Konstante Definitionen
 
 - **[Zusätzliche MAPI-Konstanten](mapi-constants.md)**
   
@@ -39,7 +39,7 @@ MAPI-Ergänzungen sind APIs, die gehören zu MAPI Messaging Application Programm
     
 ## <a name="properties"></a>Eigenschaften
 
-Die folgenden Eigenschaften werden im Allgemeinen von Message-Objekten verfügbar gemacht.
+Die folgenden Eigenschaften werden im Allgemeinen von Message-Objekten offen gelegt.
   
 - **[PR_BODY_W](pidtagbody-canonical-property.md)**
     
@@ -79,11 +79,11 @@ Die folgenden Eigenschaften werden im Allgemeinen von Message-Objekten verfügba
     
 - **[PR_SUBJECT_W](pidtagsubject-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Address Book Inhalt Table-Objekte verfügbar gemacht.
+Die folgenden Eigenschaften werden durch die Table-Objekte des Address Book-Inhalts verfügbar gemacht.
   
 - **[PR_DISPLAY_TYPE_EX](pidtagdisplaytypeex-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Address Book Container-Objekte verfügbar gemacht.
+Die folgenden Eigenschaften werden durch Adressbuchcontainer-Objekte verfügbar gemacht.
   
 - **[PR_EMS_AB_SERVER](pidtagemsabserver-canonical-property.md)**
     
@@ -91,13 +91,13 @@ Die folgenden Eigenschaften werden von Address Book Container-Objekte verfügbar
     
 - **[PR_EMS_AB_SERVER_W](pidtagemsabserver-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Folder-Objekten verfügbar gemacht.
+Die folgenden Eigenschaften werden von Folder-Objekten zur Verfügung gestellt.
   
 - **[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)**
     
 - **[PR_AGING_PERIOD](pidtagagingperiod-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von messaging User-Objekte verfügbar gemacht werden.
+Die folgenden Eigenschaften werden von Messaging-Benutzerobjekten zur Verfügung gestellt.
   
 - **[PR_ASSISTANT_TELEPHONE_NUMBER_W](pidtagassistanttelephonenumber-canonical-property.md)**
     
@@ -189,7 +189,7 @@ Die folgenden Eigenschaften werden von messaging User-Objekte verfügbar gemacht
     
 - **[PR_WEDDING_ANNIVERSARY](pidtagweddinganniversary-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Profil Section-Objekten verfügbar gemacht.
+Die folgenden Eigenschaften werden von Profil Abschnitts Objekten verfügbar gemacht.
   
 - **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)**
     
@@ -207,7 +207,7 @@ Die folgenden Eigenschaften werden von Profil Section-Objekten verfügbar gemach
     
 - **[PR_ROH_PROXY_SERVER](pidtagrpcoverhttpproxyserver-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Store-Objekten verfügbar gemacht.
+Die folgenden Eigenschaften werden durch Store-Objekte verfügbar gemacht.
   
 - **[PR_IPM_APPOINTMENT_ENTRYID](pidtagipmappointmententryid-canonical-property.md)**
     
@@ -221,7 +221,7 @@ Die folgenden Eigenschaften werden von Store-Objekten verfügbar gemacht.
     
 - **[PR_IPM_TASK_ENTRYID](pidtagipmtaskentryid-canonical-property.md)**
     
-Die folgenden Eigenschaften von Store-Objekten verfügbar gemacht werden und werden in der Suche bestimmte Elemente einer e-Mail auf den Speicher verwendet.
+Die folgenden Eigenschaften werden von Store-Objekten zur Verfügung gestellt und zum Durchsuchen bestimmter Elemente einer e-Mail im Speicher verwendet.
   
 - **[PR_SEARCH_ATTACHMENTS_W](pidtagsearchattachments-canonical-property.md)**
     
@@ -233,8 +233,8 @@ Die folgenden Eigenschaften von Store-Objekten verfügbar gemacht werden und wer
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Zugreifen auf einen Store auf dem Remote-Server, wenn Outlook sich Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
-- [Ermitteln der Version des Exchange-Servers in einem Outlook-Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
-- [Öffnen eines Speichers auf dem Remote-Server, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Zugreifen auf einen Speicher auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
+- [Feststellen der Exchange Server-Version in einem Outlook-Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
+- [Öffnen eines Speichers auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
 - [Verwalten einer Nachricht in einem OST ohne Aufrufen einer Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

@@ -7,50 +7,50 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4949aef9-4c96-82cc-cd13-57981e07cc40
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3416bc50e4628df2be09f9fe1a22d19530bcdff8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: fc5f5a42e2b1e57374ff80a9333b927cc8dba120
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326264"
 ---
 # <a name="nofolderscan"></a>NoFolderScan
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob Microsoft Office Outlook-Ordner Kontakte in einem Speicher gescannt werden sollen.
+Gibt an, ob Microsoft Office Outlook Kontakteordner in einem Speicher überprüfen soll.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Eingeblendet auf:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) Objekt  <br/> |
-|Erstellt:  <br/> |Speicheranbieter  <br/> |
-|Durch zugegriffen:  <br/> |Outlook und andere clients  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_LONG  <br/> |
-|Zugriffstyp:  <br/> |Nur-Lese- oder Lese-/Schreibzugriff, je nach Speicheranbieter  <br/> |
+|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
+|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
+|Eigenschafts:  <br/> |PT_LONG  <br/> |
+|Zugriffstyp:  <br/> |Je nach Speicheranbieter schreibgeschützt oder Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Um die Store-Funktionalität bereitzustellen, Speicheranbieter implementieren muss [IMAPIProp: IUnknown](imapipropiunknown.md) und ein Tag valid-Eigenschaft für alle diese Eigenschaften übergeben Sie einen Anruf [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) zurückzukehren. Wenn das Eigenschafts-Tag für alle diese Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss Speicheranbieter auch den richtige Wert zurückgeben. [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) , zum Abrufen oder Festlegen dieser Eigenschaften Anbieter aufgerufen. 
+Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMAPIProp: IUnknown](imapipropiunknown.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zunächst mit dem [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) um das Eigenschafts-Tag zu erhalten und geben Sie in [IMAPIProp::GetProps](imapiprop-getprops.md) zum Abrufen des Werts dieser Eigenschaftentag. Beim Aufruf von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md), geben Sie die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, das Eingabeparameter _LppPropNames_auf zeigt:
+Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
   
 |||
 |:-----|:-----|
-|x LpGuid:  <br/> |PSETID_Common  <br/> |
-|UlKind:  <br/> |MNID_STRING  <br/> |
-|Kind.lpwstrName:  <br/> |L "NoFolderScan"  <br/> |
+|lpGuid:  <br/> |PSETID_Common  <br/> |
+|ulKind:  <br/> |MNID_STRING  <br/> |
+|Art. lpwstrName:  <br/> |L "NoFolderScan"  <br/> |
    
-Diese Eigenschaft bietet eine Möglichkeit für Anbieter, um Outlook anzugeben, nicht zum Scannen Kontakteordner im Speicher um eine leistungsbeeinträchtigung zu vermeiden. Es wird im Seriendruck-Vorgänge in denen Outlook überprüft das Vorhandensein und der Wert dieser Eigenschaft verwendet, bevor Sie mit der Überprüfung.
+Diese Eigenschaft bietet Speicheranbietern die Möglichkeit, Outlook nicht zu überprüfen, um die Leistungsbeeinträchtigung zu vermeiden. Sie wird in Seriendruck Vorgängen verwendet, in denen Outlook vor dem Initiieren der Überprüfung auf Anwesenheit und Wert dieser Eigenschaft prüft.
   
-Standardmäßig ist diese Eigenschaft nicht in einem Speicher verfügbar gemacht bedeutet, dass Outlook den Ordner Kontakte für den Speicher gescannt werden kann. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden die möglichen Werte:
+Standardmäßig ist diese Eigenschaft nicht in einem Speicher verfügbar, was bedeutet, dass Outlook den Ordner "Kontakte" im Speicher überprüfen kann. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden Werte möglich:
   
-- Null (0): Outlook kann die Überprüfung ausführen.
+- NULL (0): Outlook kann die Überprüfung ausführen.
     
-- Wert ungleich NULL: Outlook sollte Kontakteordner im Store nicht überprüft.
+- Wert unGleich NULL: Outlook sollte Kontakteordner im Speicher nicht überprüfen.
     
 

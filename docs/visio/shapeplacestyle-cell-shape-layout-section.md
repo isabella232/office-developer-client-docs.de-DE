@@ -8,17 +8,17 @@ f1_keywords:
 - vis_sdr.chm70007
 localization_priority: Normal
 ms.assetid: 29bfe8ec-ca12-8fbf-b62b-ece3710dfe2e
-description: Gibt an, wie Shapes auf der Seite platziert werden, wenn im Dialogfeld Layout konfigurieren von Shapes Layout (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout, klicken Sie auf der Seite Re-Layout, und klicken Sie dann auf Weitere Layoutoptionen). Speichert Layout Stil und Ausrichtung Werte VisCellIndices.
-ms.openlocfilehash: f160c09eae3a3135360f2b8bf6df86c78ba0968c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt an, wie Shapes auf der Seite eingefügt werden, wenn Shapes im Dialogfeldlayout konfigurieren angezeigt werden (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu Layout, und klicken Sie dann auf Weitere Layoutoptionen). Speichert Layoutformat-und Ausrichtungs Werte aus VisCellIndices.
+ms.openlocfilehash: 381f74912b64395f33a2dc55c0bad24d36a16286
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326509"
 ---
-# <a name="shapeplacestyle-cell-shape-layout-section"></a>ShapePlaceStyle Cell (Shape Layout Section)
+# <a name="shapeplacestyle-cell-shape-layout-section"></a>Zelle "ShapePlaceStyle" (Abschnitt "Shape Layout")
 
-Gibt an, wie Shapes auf der Seite platziert werden, wenn im Dialogfeld **Layout konfigurieren** von Shapes Layout (klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** , klicken Sie auf **Der Seite Re-Layout**, und klicken Sie dann auf **Weitere Layoutoptionen**). Speichert Layout Stil und Ausrichtung Werte **VisCellIndices**. 
+Gibt an, wie Shapes auf der Seite eingefügt werden, wenn Shapes im Dialogfeld **Layout konfigurieren** angezeigt werden (Klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu Layout**, und klicken Sie dann auf **Weitere Layoutoptionen**). Speichert Layoutstil- und Ausrichtungswerte aus **VisCellIndices**. 
   
 |**Konstante**|**Wert**|
 |:-----|:-----|
@@ -51,17 +51,13 @@ Gibt an, wie Shapes auf der Seite platziert werden, wenn im Dialogfeld **Layout 
 |**visLOPlaceRightToLeft** <br/> |5  <br/> |
 |**visLOPlaceTopToBottom** <br/> |1  <br/> |
    
-Wenn Sie auf die Zelle ShapePlaceStyle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:
-
- 
+Wenn Sie auf die Zelle ShapePlaceStyle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePlaceStyle  <br/> |
    
-Wenn Sie aus einem Programm heraus nach Index auf die Zelle ShapePlaceStyle verweisen möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:
-
- 
+Wenn Sie aus einem Programm aus nach Index auf die Zelle ShapePlaceStyle verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

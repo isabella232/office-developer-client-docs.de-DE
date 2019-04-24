@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: cd1fa994-9531-46c4-94e5-505e7f90b884
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2e1f546d33d4781f60df56b12fce437d1e7bd675
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e7f13acc34a77b79057d32fd4049db7222dadf49
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326446"
 ---
 # <a name="imapisupportopenprofilesection"></a>IMAPISupport::OpenProfileSection
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet einen Abschnitt des aktuellen Profils und gibt einen Zeiger [IProfSect](iprofsectimapiprop.md) für den weiteren Zugriff. 
+Öffnet einen Abschnitt des aktuellen Profils und gibt einen [IProfSect](iprofsectimapiprop.md) -Zeiger für den weiteren Zugriff zurück. 
   
 ```cpp
 HRESULT OpenProfileSection(
@@ -39,51 +39,51 @@ LPPROFSECT FAR * lppProfileObj
 
  _lpUid_
   
-> [in] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die identifiziert den Profilabschnitt geöffnet werden soll. Übergeben NULL für den Parameter _LpUid_ wird des Anrufers Profilabschnitt geöffnet. 
+> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den zu öffnenden Profil Abschnitt identifiziert. Durch das Übergeben von NULL für den Parameter _lpUid_ wird der Profil Abschnitt des Anrufers geöffnet. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie im Profilabschnitt geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Art des Öffnens des Profil Abschnitts steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **"OpenProfileSection"** zurückgegeben wurde, ist möglicherweise vor dem Profil Abschnitt vollständig mit dem Anrufer zugegriffen werden. Wenn der Profilabschnitt nicht möglich ist, kann nachfolgende Objekt Anrufen ein Laufzeitfehler. 
+> Ermöglicht es **OpenProfileSection** , erfolgreich zurückzugeben, möglicherweise bevor der Profil Abschnitt vollständig für den Aufrufer zugänglich ist. Wenn der Profil Abschnitt nicht zugänglich ist, kann durch einen nachfolgenden Objektaufruf zu einem Fehler führen. 
     
 MAPI_MODIFY 
   
-> Anfragen Lese-/Schreibberechtigung. In der Standardeinstellung Objekte werden als schreibgeschützt geöffnet, und Anrufer sollte nicht verwendet werden, unter der Voraussetzung, die Lese-/Schreibzugriff, dass die Berechtigung erteilt wurde. 
+> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte als schreibgeschützt geöffnet, und Anrufer sollten nicht unter der Annahme arbeiten, dass die Berechtigung "Lese-/Schreibzugriff" erteilt wurde. 
     
  _lppProfileObj_
   
-> [out] Ein Zeiger auf einen Zeiger auf den Profilabschnitt geöffnete.
+> Out Ein Zeiger auf einen Zeiger auf den geöffneten Profil Abschnitt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Profilabschnitt wurde erfolgreich geöffnet.
+> Der Profil Abschnitt wurde erfolgreich geöffnet.
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, einen Profilabschnitt schreibgeschützt ändern oder auf ein Objekt zuzugreifen, für den der Anrufer nicht über ausreichende Berechtigungen verfügt.
+> Es wurde versucht, einen schreibgeschützten Profil Abschnitt zu ändern oder auf ein Objekt zuzugreifen, für das der Aufrufer nicht über ausreichende Berechtigungen verfügt.
     
 MAPI_E_NOT_FOUND 
   
-> Es ist kein Profilabschnitt _LpEntryID_übergebenen Eintrags-ID zugeordnet.
+> Der Eintrags-ID, die in _lpEntryID_übergeben wurde, ist kein Profil Abschnitt zugeordnet.
     
 MAPI_E_UNKNOWN_FLAGS 
   
-> Reservierte oder nicht unterstützte Flags verwendet wurden und daher der Vorgang konnte nicht abgeschlossen werden.
+> ReServierte oder nicht unterstützte Flags wurden verwendet, daher wurde der Vorgang nicht abgeschlossen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::OpenProfileSection** -Methode wird für alle Unterstützungsobjekte implementiert. Rufen **"OpenProfileSection"** zum Öffnen eines Abschnitts Profil und Abrufen eines Zeigers auf seine Implementierung **IProfSect** Dienstanbieter und Message-Dienste. 
+Die **IMAPISupport:: OpenProfileSection** -Methode wird für alle Support-Objekte implementiert. Dienstanbieter und Nachrichtendienste rufen **OpenProfileSection** auf, um einen Profil Abschnitt zu öffnen und einen Zeiger auf die **IProfSect** -Schnittstellenimplementierung abzurufen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **"OpenProfileSection"** öffnet Profil Abschnitte mit Schreibschutz, es sei denn, Sie die Kennzeichen MAPI_MODIFY im _UlFlags_ -Parameter festgelegt und die Berechtigung ausreichend ist. Wenn Sie dieses Flag garantiert nicht Lese-/Schreibberechtigung. die Berechtigungen, die Sie erteilt werden, hängt von Ihrer Zugriffsebene und das Objekt ab. 
+ **OpenProfileSection** öffnet Profilabschnitte als schreibgeschützt, es sei denn, Sie legen das MAPI_MODIFY-Flag im _ulFlags_ -Parameter fest, und ihre Berechtigung genügt. Das Festlegen dieses Kennzeichens garantiert keine Lese-/Schreibzugriff; die Berechtigungen, die Ihnen erteilt werden, hängen von ihrer Zugriffsebene und dem Objekt ab. 
   
-Wenn **"OpenProfileSection"** versucht, einen nicht vorhandenen Profilabschnitt im schreibgeschützten Modus zu öffnen, wird die MAPI_E_NOT_FOUND zurückgegeben. Wenn **"OpenProfileSection"** versucht, einen nicht vorhandenen Profilabschnitt mit Lese-/Schreibzugriff zu öffnen, Profilabschnitt erstellt und gibt den **IProfSect** Zeiger zurück. 
+Wenn **OpenProfileSection** versucht, einen nicht vorhandenen Profil Abschnitt als schreibgeschützt zu öffnen, wird MAPI_E_NOT_FOUND zurückgegeben. Wenn **OpenProfileSection** versucht, einen nicht vorhandenen Profil Abschnitt als Lese-/Schreibzugriff zu öffnen, erstellt er den profile-Abschnitt und gibt den **IProfSect** -Zeiger zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: da67dcf4-1411-4fc9-992c-115485019bd3
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 101e74f3e35e3664dd29e59f166b2f0af6e1dcba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 46e87caa68a45a188272340db408c52546f02a57
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322127"
 ---
 # <a name="accelerateabsdi"></a>ACCELERATEABSDI
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Callback-Funktion zum Prozess Zugriffstasten in ein Dialogfeld ohne Modus Address Book. 
+Definiert eine Rückruffunktion zum Verarbeiten von Zugriffstasten in einem nicht modalen Adressbuch Dialogfeld. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Definierte Funktion von implementiert:  <br/> |MAPI  <br/> |
-|Definierte Funktion aufgerufen:  <br/> |Clientanwendungen  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Definierte Funktion, implementiert von:  <br/> |MAPI  <br/> |
+|Definierte Funktion, aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)( 
@@ -42,22 +42,22 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
 
  _ulUIParam_
   
-> [in] Einen implementierungsspezifischen Wert für die Übergabe von Informationen zur Benutzeroberfläche auf eine Funktion verwendet. In Clientanwendungen unter Microsoft Windows _UlUIParam_ ist das übergeordnete Fensterhandle für ein Dialogfeld und vom Typ HWND in eine **ULONG_PTR**umgewandelt. Der Wert 0 gibt an, dass kein übergeordnetes Fenster vorhanden ist. 
+> in Ein implementierungsspezifischer Wert, der zum Übergeben von Benutzeroberflächeninformationen an eine Funktion verwendet wird. In Anwendungen, die unter Microsoft Windows laufen, ist _ulUIParam_ das übergeordnete Fensterhandle für ein Dialogfeld und vom Typ HWND und wird in eine **ULONG_PTR**umgewandelt. Der Wert 0 (null) gibt an, dass kein übergeordnetes Fenster vorhanden ist. 
     
  _lpvmsg_
   
-> [in] Zeiger auf eine Windows-Nachricht.
+> in Zeiger auf eine Windows-Nachricht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Eine Funktion mit dem Prototyp **ACCELERATEABSDI** gibt TRUE zurück, wenn die Meldung behandelt. 
+Eine Funktion mit dem **ACCELERATEABSDI** -Prototyp gibt true zurück, wenn Sie die Nachricht verarbeitet. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Funktion basierend auf den **ACCELERATEABSDI** Prototyp ist nur mit einem modalen Dialogfeld, d. h., nur verwendet, wenn die Clientanwendung das Flag DIALOG_SDI im _UlFlags_ -Member der [ADRPARM](adrparm.md) -Struktur eingerichtet hat. 
+Eine auf dem **ACCELERATEABSDI** -Prototyp basierende Funktion wird nur mit einem nicht modalen Dialogfeldverwendet, das heißt nur, wenn die Clientanwendung das DIALOG_SDI-Flag im _ulFlags_ -Element der [ADRPARM](adrparm.md) -Struktur festgelegt hat. 
   
-Nicht modales Dialogfeld teilt die Clientanwendung Windows Nachrichtenschleife, anstatt einen eigenen Schleife. Die Anwendung, die die Nachrichtenschleife steuert, weiß nicht welche Zugriffstasten der Dialogfeld verwendet, damit es ein **ACCELERATEABSDI** aufruft, Grundlage Zugriffstasten wie STRG + P für den Druck Funktion zum Testen und fungieren. 
+Ein nicht modales Dialogfeld teilt die Windows-Meldungsschleife der Clientanwendung, statt eine eigene Schleife zu haben. Die Anwendung, die die Nachrichtenschleife steuert, weiß nicht, welche Tastenkombinationen im Dialogfeldverwendet werden, und ruft daher eine **ACCELERATEABSDI** -basierte Funktion auf, um Zugriffstasten wie STRG + P zum Drucken zu testen und zu reagieren. 
   
-Ein Client Nachricht Schleife Aufrufe der **ACCELERATEABSDI** basierend Funktion, wenn der Client einen nicht modalen Adressbücher in Dialogfeldern mit der [IAddrBook::Address](iaddrbook-address.md) -Methode aufruft. In diesem Anruf wird beendet, wenn MAPI eine Funktion basierend auf den Prototyp [DISMISSMODELESS](dismissmodeless.md) -Funktion aufruft. 
+Die Meldungsschleife eines Clients Ruft die **ACCELERATEABSDI** -basierte Funktion auf, wenn der Client ein nicht modales Adressbuch-Dialogfeld mit der [IAddrBook:: Address](iaddrbook-address.md) -Methode aufruft. Dieser Aufruf wird beendet, wenn MAPI eine Funktion aufruft, die auf dem Prototyp der [DISMISSMODELESS](dismissmodeless.md) -Funktion basiert. 
   
 

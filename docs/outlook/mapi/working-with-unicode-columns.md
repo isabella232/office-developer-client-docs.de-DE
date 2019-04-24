@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 2cd55464-263f-4f83-b874-524271773934
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ffeee38920bf1c864b93e6513913c140cb658d8b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 76d1afb750dc81b889ca8e5eb3639145c061bfc2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325571"
 ---
 # <a name="working-with-unicode-columns"></a>Arbeiten mit Unicode-Spalten
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeichenfolgen in Tabellen können mit 8-Bit-Zeichen, die Eigenschaftentyp PT_STRING8 sind, oder 16-Bit-Unicode-Zeichen werden Eigenschaftstyp PT_UNICODE dargestellt werden. Tabelle Implementierer können entscheiden, ob ihre Tabellen Unicode-Zeichenfolgen unterstützen. Da Unicode Wert für Clients und -Dienstanbieter hinzugefügt werden durch die Featuregruppe erweitern, wird empfohlen, mit Unicode-Unterstützung, wann immer möglich. 
+Zeichenfolgen in Tabellen können mit standardmäßigen 8-Bit-Zeichen, die Eigenschaftentyp PT_STRING8, oder 16-Bit-Unicode-Zeichen, die Eigenschaftentyp PT_UNICODE sind, dargestellt werden. Tabellen Implementierer können wählen, ob Ihre Tabellen Unicode-Zeichenfolgen unterstützen. Da Unicode für Clients und Dienstanbieter einen Wert hinzufügt, indem der Featuresatz erweitert wird, wird empfohlen, Unicode möglichst zu unterstützen. 
   
-Viele Table-Methoden akzeptieren eine Kennung, die bestimmt, ob Zeichenfolgenwerte-Eigenschaft erwartet Unicode werden oder nicht. Bei der Eingabe gibt an, die Option MAPI_UNICODE angeben der Tabelle Implementierer, dass alle Zeichenfolgenwerte für-Eigenschaft zusammen mit dem Aufruf übergeben Unicode-Zeichenfolgen werden und Eigenschaftentypen von PT_UNICODE haben. Bei der Ausgabe gibt dieses Flag an, dass alle Eigenschaftswerte der zurückgegebenen Zeichenfolge Unicode-Zeichenfolgen, wenn möglich sein soll. Gibt an, ob das Flag für die Eingabe oder Ausgabe eine Bedeutung hat, hängt von der Methode ab. Tabelle Implementierer, die Unicode nicht unterstützt und sind die Option MAPI_UNICODE übergeben zurück den MAPI_E_BAD_CHAR_WIDTH-Wert.
+Viele Table-Methoden akzeptieren ein Flag, das angibt, ob Zeichenfolgen-Eigenschaftswerte als Unicode erwartet werden. Bei der Eingabe gibt das MAPI_UNICODE-Flag der Tabellen Implementierung an, dass alle mit dem Aufruf übergebenen Zeichenfolgen-Eigenschaftswerte Unicode-Zeichenfolgen und Eigenschaftentypen von PT_UNICODE aufweisen. Bei der Ausgabe gibt dieses Flag an, dass alle zurückgegebenen Zeichenfolgen Eigenschaftswerte nach Möglichkeit Unicode-Zeichenfolgen sein sollten. Ob die Kennzeichnung eine Bedeutung für Eingabe oder Ausgabe hat, hängt von der Methode ab. Tabellen Implementierer, die Unicode nicht unterstützen und übergeben werden das MAPI_UNICODE-Flag gibt den MAPI_E_BAD_CHAR_WIDTH-Wert zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Von Formularmanagern nicht unterstützte Funktionen
+title: Von Formular Managern nicht unterstützte Funktionen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,32 +8,32 @@ api_type:
 - COM
 ms.assetid: b51e9e03-a333-4fdc-b6fe-87bd4e947b9f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a84c0a93f80080b71f6049e73f0a0094c38c28ef
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e31eacaae54968fbdbd9fe0345130a8d09c3509f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326376"
 ---
-# <a name="capabilities-not-supported-by-form-managers"></a>Von Formularmanagern nicht unterstützte Funktionen
+# <a name="capabilities-not-supported-by-form-managers"></a>Von Formular Managern nicht unterstützte Funktionen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden Features werden von der Standard-Formular-Manager aus Gründen der Systemleistung nicht unterstützt, aber können benutzerdefiniertes Formular-Manager unterstützt werden.
+Die folgenden Features werden vom standardmäßigen Formular-Manager aus Leistungsgründen nicht unterstützt, können jedoch von benutzerdefinierten Formular-Managern unterstützt werden.
   
-- Eine Hierarchie, mit die Formulare gruppiert oder in einer Formularbibliothek kategorisiert werden kann. Eine Formularbibliothek bietet eine Flatfile Datenbank von Formularen.
+- Eine Hierarchie, die das Gruppieren oder Kategorisieren von Formularen in einer Formularbibliothek ermöglicht. Eine Formularbibliothek ist eine Flatfile-Datenbank mit Formularen.
     
-- Steuerung des Zugriffs für Kategorien von Formularen, Nachrichtenklassen oder Klassen entspricht.
+- Zugriffssteuerung für Formular Kategorien, die Nachrichtenklassen oder übergeordneten Klassen entsprechen.
     
 - Unterstützung für mehrere Sprachversionen desselben Formulars in einer einzelnen Formularbibliothek.
     
-Dies sind die Implementierungsprobleme. Es gibt nichts zu verhindern, dass einen benutzerdefiniertes Formular-Manager Implementieren dieser Features.
+Dies sind Implementierungsprobleme. Es gibt nichts, was verhindert, dass ein benutzerdefinierter Formular-Manager diese Features implementiert.
   
-Die MAPI-Formular-Architektur bietet keine Unterstützung für mehrere Formular-Manager werden gleichzeitig ausgeführt. Obwohl MAPI mehrere gleichzeitige Nachricht-Anbieter, Transport Provider und adressbuchanbietern implementierte unterstützt, wird nur ein einzelnes Formular-Manager unterstützt.
+Die MAPI-Formulararchitektur unterstützt nicht mehrere Formular-Manager, die gleichzeitig laufen. Obwohl MAPI mehrere gleichzeitige Nachrichtenspeicher Anbieter, Transportanbieter und Adressbuchanbieter unterstützt, wird nur ein einziger Formular-Manager unterstützt.
   
-Da nur ein Formular-Manager auf einmal ausgeführt werden kann, wenn Sie einen benutzerdefiniertes Formular-Manager implementieren müssen Sie alle Funktionen aus der Standard-Formular-Manager erneut zu implementieren, die Sie benötigen. Da Ihr benutzerdefiniertes Formular-Manager den Standard-Formular-Manager vollständig ersetzt werden sollen, werden Funktionen von der Standard-Formular-Manager nicht verfügbar, es sei denn, sie in Ihrem benutzerdefinierten Formular-Manager dupliziert werden.
+Da möglicherweise nur ein Formular-Manager gleichzeitig gestartet wird, müssen Sie, wenn Sie einen benutzerdefinierten Formular-Manager implementieren, alle Funktionen aus dem standardmäßigen Formular-Manager, den Sie benötigen, erneut implementieren. Da Ihr benutzerdefinierter Formular-Manager den standardmäßigen Formular-Manager vollständig ersetzen wird, sind die Funktionen des Standardformular-Managers nur dann verfügbar, wenn Sie in Ihrem benutzerdefinierten Formular-Manager dupliziert werden.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,26 +1,26 @@
 ---
-title: GlowColorTrans Cell (Additional Effect Properties Section)
+title: GlowColorTrans Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d6cf67cb-f9e6-43a5-918a-f9151821ab4d
-description: Bestimmt die Transparenzstufe für die Farbe für die Kontur des das Shape Leuchten, als Prozentsatz an.
-ms.openlocfilehash: b4826c4b398198c48f908324f56b7b9a3156d881
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Transparenzstufe für die Farbe, die für den Strich des Glühens der Form verwendet wird, als Prozentsatz.
+ms.openlocfilehash: 81b734de6212540e0f50df05aca11dc535fc49ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326089"
 ---
-# <a name="glowcolortrans-cell-additional-effect-properties-section"></a>GlowColorTrans Cell (Additional Effect Properties Section)
+# <a name="glowcolortrans-cell-additional-effect-properties-section"></a>GlowColorTrans Cell (Additional Effect Properties section)
 
-Bestimmt die Transparenzstufe für die Farbe für die Kontur des das Shape Leuchten, als Prozentsatz an. 
+Bestimmt die Transparenzstufe für die Farbe, die für den Strich des Glühens der Form verwendet wird, als Prozentsatz. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **GlowColorTrans** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **GlowColorTrans** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

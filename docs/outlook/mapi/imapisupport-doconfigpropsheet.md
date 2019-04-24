@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 3899c49c-a0ec-4dca-92e8-e801cd4908cf
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3b3499de9446c83cfc3b97b4d6b02e7c430b65f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cd8727104af694d456074614b5ea7c222c9b91b9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322372"
 ---
 # <a name="imapisupportdoconfigpropsheet"></a>IMAPISupport::DoConfigPropsheet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt eine Konfiguration Eigenschaftenblatt.
+Zeigt ein Konfigurationseigenschaften Fenster an.
   
 ```cpp
 HRESULT DoConfigPropsheet(
@@ -42,7 +42,7 @@ HRESULT DoConfigPropsheet(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster im Eigenschaftsfenster.
+> in Ein Handle für das übergeordnete Fenster des Eigenschaftenblatts.
     
  _ulFlags_
   
@@ -50,35 +50,35 @@ HRESULT DoConfigPropsheet(
     
  _lpszTitle_
   
-> [in] Ein Zeiger auf den Titel des Eigenschaftenblatts.
+> in Ein Zeiger auf den Titel des Eigenschaftenblatts.
     
  _lpDisplayTable_
   
-> [in] Ein Zeiger auf den zeigt die Tabelle, die angezeigt werden, um die Steuerelemente auf der Eigenschaftenseite beschreibt.
+> in Ein Zeiger auf die Anzeigetabelle, in der die Steuerelemente beschrieben werden, die im Eigenschaftenfenster angezeigt werden sollen.
     
  _lpConfigData_
   
-> [in] Ein Zeiger auf die Implementierung [IMAPIProp](imapipropiunknown.md) , für den Zugriff auf die Konfigurationseigenschaften verwendet werden, auf der Eigenschaftenseite angezeigt werden. 
+> in Ein Zeiger auf die [IMAPIProp](imapipropiunknown.md) -Implementierung, die für den Zugriff auf die Konfigurationseigenschaften verwendet werden soll, die im Eigenschaftenfenster angezeigt werden sollen. 
     
  _ulTopPage_
   
-> [in] Ein nullbasierter Index der oberen Standardseite des Eigenschaftenblatts.
+> in Ein nullbasierter Index auf der oberen Standardseite des Eigenschaftenblatts.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Eigenschaftenblatt Konfiguration wurde angezeigt.
+> Das Konfigurationseigenschaften Blatt wurde angezeigt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::DoConfigPropsheet** -Methode wird für alle Unterstützungsobjekte implementiert. **DoConfigPropSheet** stellt eine Standardbenutzeroberfläche zum Anzeigen der Eigenschaften der Dienstanbieter und Message-Dienste. Sie sollten dieses Dialogfeld standard für alle Konfiguration-Eigenschaft zeigt verwenden, damit Benutzer eine konsistente Schnittstelle Windows nutzen. 
+Die **IMAPISupport::D oconfigpropsheet** -Methode wird für alle Support-Objekte implementiert. **DoConfigPropSheet** bietet eine Standardbenutzeroberfläche zum Anzeigen der Eigenschaften von Dienstanbietern und Nachrichtendiensten. Sie sollten dieses Standarddialogfeld für alle Konfigurationseigenschaften anzeigen verwenden, damit die Benutzer von einer konsistenten Windows-Oberfläche profitieren. 
   
-Dienstanbieter anrufen **DoConfigPropSheet** als Teil ihrer Implementierung [der SettingsDialog](imapistatus-settingsdialog.md) oder eine Schaltfläche zum Anzeigen von Details auf Eigenschaften. Nachricht Services Aufrufen **DoConfigPropSheet** aus ihrer Nachricht Service Entry Point-Funktion. 
+Dienstanbieter rufen **DoConfigPropSheet** als Teil ihrer Implementierung der [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) -Methode oder einer Schaltfläche auf, die zum Anzeigen von Details zu Eigenschaften verwendet wird. Nachrichtendienste rufen **DoConfigPropSheet** über die Einstiegspunktfunktion des Nachrichtendiensts auf. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die Anzeige-Tabelle der _LpDisplayTable_ -Parameter auf das durch Aufrufen der [BuildDisplayTable](builddisplaytable.md) -Funktion oder mit benutzerdefiniertem Code erstellen. 
+Sie können die Anzeigetabelle, auf die durch den _lpDisplayTable_ -Parameter verwiesen wird, durch Aufrufen der [BuildDisplayTable](builddisplaytable.md) -Funktion oder mit benutzerdefiniertem Code erstellen. 
   
 ## <a name="see-also"></a>Siehe auch
 

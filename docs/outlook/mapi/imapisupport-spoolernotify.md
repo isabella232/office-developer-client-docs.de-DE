@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d4f153b2-939f-4153-85fb-dc510193848c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a2837e5470729ae3cdd0b83e17d0342620c986e8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 99377d63b4b5cf8731809446b70770f0c24231ed
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326285"
 ---
 # <a name="imapisupportspoolernotify"></a>IMAPISupport::SpoolerNotify
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigt die MAPI-Warteschlange von einer Änderung im Status oder eine Anforderung für den Dienst an. 
+Benachrichtigt den MAPI-Spooler über eine Änderung des Status oder eine Anforderung für Dienst. 
   
 ```cpp
 HRESULT SpoolerNotify(
@@ -38,85 +38,85 @@ LPVOID lpvData
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der Benachrichtigung angibt. Transportanbieter können alle außer NOTIFY_NEWMAIL_RECEIVED Kennzeichen festgelegt. nur NOTIFY_NEWMAIL_RECEIVED und NOTIFY_READTOSEND sind gültig für eine Nachricht-Anbieter. Die folgenden Kennzeichen sind für den Parameter _UlFlags_ gültig: 
+> in Eine Bitmaske von Flags, die den Benachrichtigungstyp angibt. Transport Anbieter können alle Flags festlegen, mit Ausnahme von NOTIFY_NEWMAIL_RECEIVED; nur NOTIFY_NEWMAIL_RECEIVED und NOTIFY_READTOSEND sind für Nachrichtenspeicher Anbieter gültig. Die folgenden Flags sind für den _ulFlags_ -Parameter gültig: 
     
 NOTIFY_CONFIG_CHANGE 
   
-> Eine Anforderung zum Ändern der Konfiguration der Adressbuchhierarchie registriert. 
+> Registriert eine Anforderung zum Ändern der Konfiguration des Transportanbieters. 
     
 NOTIFY_CRITICAL_ERROR 
   
-> Der Transportdienst aufgetretenen Fehler nicht wiederhergestellt. Da NOTIFY_SENTDEFERRED und NOTIFY_CRITICAL_ERROR den Parameter _LpvData_ für Transport Anbieter Anrufe verwenden, sind diese Flags schließen sich gegenseitig aus. 
+> Ein nicht behebbarer Fehler ist beim Transportanbieter aufgetreten. Da sowohl NOTIFY_SENTDEFERRED als auch NOTIFY_CRITICAL_ERROR den _lpvData_ -Parameter für Transportanbieter Aufrufe verwenden, schließen sich diese Flags gegenseitig aus. 
     
 NOTIFY_CRITSEC 
   
-> Fordert einen kritischen Abschnitt für den Transportanbieter. Der Parameter _LpvData_ ist nicht definiert und NULL sein. 
+> Fordert einen kritischen Abschnitt für den Transportanbieter an. Der _lpvData_ -Parameter ist nicht definiert und sollte NULL sein. 
     
 NOTIFY_NEWMAIL 
   
-> Die MAPI-Warteschlange sollten unter der nächsten verfügbaren Zeit neu empfangenen Nachrichten herunterladen. Der Parameter _LpvData_ ist nicht definiert und auf NULL festgelegt werden sollte. 
+> Der MAPI-Spooler sollte alle neu empfangenen Nachrichten zum nächsten verfügbaren Zeitpunkt herunterladen. Der Parameter _lpvData_ ist nicht definiert und sollte auf NULL festgelegt werden. 
     
 NOTIFY_NEWMAIL_RECEIVED 
   
-> Eine neue Nachricht wurde im Nachrichtenspeicher empfangen. Der Parameter _LpvData_ verweist auf eine [NEWMAIL_NOTIFICATION](newmail_notification.md) -Struktur, die die Nachricht beschreibt. Dieses Kennzeichen werden für die Nachricht-Anbieter, die eng mit Anbietern Transport verknüpft sind, und werden ignoriert, wenn der Anbieter mit dem Flag MAPI_NO_MAIL angemeldet ist. 
+> Im Nachrichtenspeicher wurde eine neue Nachricht empfangen. Der _lpvData_ -Parameter verweist auf eine [NEWMAIL_NOTIFICATION](newmail_notification.md) -Struktur, die die Nachricht beschreibt. Dieses Flag wird für Nachrichtenspeicher Anbieter verwendet, die eng mit Transportanbietern gekoppelt sind, und wird ignoriert, wenn der Informationsspeicher Anbieter mit dem MAPI_NO_MAIL-Kennzeichen Satz angemeldet ist. 
     
 NOTIFY_NONCRIT 
   
-> Gibt einen kritischen Abschnitt, der mit einem vorherigen Aufruf von **SpoolerNotify** , mit _UlFlags_ auf NOTIFY_CRITSEC festgelegt abgerufen wurde. Der Parameter _LpvData_ ist nicht definiert und auf NULL festgelegt werden sollte. 
+> Gibt einen kritischen Abschnitt zurück, der mit einem vorherigen Aufruf von **SpoolerNotify** abgerufen wurde, wobei _ulFlags_ auf NOTIFY_CRITSEC festgelegt ist. Der Parameter _lpvData_ ist nicht definiert und sollte auf NULL festgelegt werden. 
     
 NOTIFY_READYTOSEND 
   
-> Der Informationsdienst Transport oder einer Nachricht ist bereit zum Senden von Nachrichten. Der Parameter _LpvData_ ist nicht definiert und auf NULL festgelegt werden sollte. 
+> Der Transport-oder Nachrichtenspeicher Anbieter ist bereit, Nachrichten zu senden. Der Parameter _lpvData_ ist nicht definiert und sollte auf NULL festgelegt werden. 
     
 NOTIFY_SENTDEFERRED 
   
-> Jetzt sollte eine zuvor zurückgestellte Nachricht gesendet werden, und der Adressbuchhierarchie benachrichtigt werden soll, wenn die Nachricht bereitgestellt werden, mit einem Aufruf der [IXPLogon::SubmitMessage](ixplogon-submitmessage.md) -Methode ist. Die Eintrags-ID der zurückgestellte Nachricht ist in eine [SBinary](sbinary.md) -Struktur, die auf den _LpvData_enthalten. Da NOTIFY_SENTDEFERRED und NOTIFY_CRITICAL_ERROR den _LpvData_ -Parameter verwenden, sind diese Flags schließen sich gegenseitig aus. 
+> Eine zuvor verzögerte Nachricht sollte jetzt gesendet werden, und der Transportanbieter sollte benachrichtigt werden, wenn die Nachricht mithilfe eines Aufrufs der [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md) -Methode bereitgestellt werden kann. Der Eintragsbezeichner der verzögerten Nachricht ist in einer [SBinary](sbinary.md) -Struktur enthalten, auf die durch _lpvData_verwiesen wird. Da sowohl NOTIFY_SENTDEFERRED als auch NOTIFY_CRITICAL_ERROR den _lpvData_ -Parameter verwenden, schließen sich diese Flags gegenseitig aus. 
     
  _lpvData_
   
-> [in] Ein Zeiger auf die zugehörigen Daten für eine Benachrichtigung gelten. Der _LpvData_ -Parameter verweist auf gültige Daten nur, wenn die folgenden Kennzeichen festgelegt werden (_LpvData_ ist NULL, wenn _UlFlags_ auf anderen Benachrichtigungstypen festgelegt ist): 
+> in Ein Zeiger auf zugeordnete Daten, die für eine Benachrichtigung gelten. Der Parameter _lpvData_ zeigt nur dann auf gültige Daten, wenn die folgenden Flags festgelegt sind (_lpvData_ ist NULL, wenn _ulFlags_ auf andere Benachrichtigungstypen festgelegt ist): 
     
-|**_UlFlags_ -Einstellung**|**_LpvData_ Wert**|
+|**_ulFlags_ -Einstellung**|**_lpvData_ -Wert**|
 |:-----|:-----|
 |NOTIFY_CRITICAL_ERROR  <br/> |Informationen zu dem Fehler.  <br/> |
-|NOTIFY_NEWMAIL_RECEIVED  <br/> |Eine **NEWMAIL_NOTIFICATION** -Struktur, die Informationen über die neu gesendete Nachricht enthält.  <br/> |
-|NOTIFY_SENTDEFERRED  <br/> |Eine **SBinary** -Struktur, die Eintrags-ID der zurückgestellte Nachricht enthält.  <br/> |
+|NOTIFY_NEWMAIL_RECEIVED  <br/> |Eine **NEWMAIL_NOTIFICATION** -Struktur, die Informationen über die neu zugestellte Nachricht enthält.  <br/> |
+|NOTIFY_SENTDEFERRED  <br/> |Eine **SBinary** -Struktur, die den Eintragsbezeichner der verzögerten Nachricht enthält.  <br/> |
    
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigung war erfolgreich.
+> Die Benachrichtigung wurde erfolgreich ausgeführt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISupport::SpoolerNotify** -Methode wird für die Nachricht implementiert speichern und transport-Provider Unterstützungsobjekte. Diese Anbieter rufen Sie **SpoolerNotify** , um die MAPI-Warteschlange von einer Änderung im Status oder eine Anforderung für den Dienst zu benachrichtigen. **SpoolerNotify** wird hauptsächlich von Transportanbieter aufgerufen und können jederzeit während der Sitzung aufgerufen werden. 
+Die **IMAPISupport:: SpoolerNotify** -Methode wird für Nachrichtenspeicher-und Transportanbieter-Support Objekte implementiert. Diese Anbieter rufen **SpoolerNotify** auf, um den MAPI-Spooler über eine Änderung des Status oder eine Anforderung für Dienst zu informieren. **SpoolerNotify** wird in erster Linie von Transportanbietern aufgerufen und kann jederzeit während der Sitzung aufgerufen werden. 
   
-## <a name="notes-to-transport-providers"></a>Hinweise für Transport-Anbieter
+## <a name="notes-to-transport-providers"></a>Hinweise für Transport Anbieter
 
-Wenn Sie Ihrer Anbieterkonfiguration Transport geändert haben, rufen Sie **SpoolerNotify** und _UlFlags_ auf NOTIFY_CONFIG_CHANGED festgelegt. Durch Aufrufen der [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode, um die Abfrage für eine Änderung in unterstützte-Adresstypen auf **SpoolerNotify** reagiert. 
+Wenn Sie Ihre Transportanbieter Konfiguration geändert haben, rufen Sie **SpoolerNotify** auf, und legen Sie _ulFlags_ auf NOTIFY_CONFIG_CHANGED. **SpoolerNotify** antwortet durch Aufrufen der [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode, um eine Änderung der unterstützten Adresstypen abzufragen. 
   
-Wenn Sie einen kritischen Abschnitt um sicherzustellen, dass ununterbrochenen Verarbeitung benötigen, rufen Sie **SpoolerNotify** mit _UlFlags_ auf NOTIFY_CRITSEC festgelegt. Dieses Flag festlegen informiert der MAPI-Warteschlange an, dass die Methoden [IXPLogon::Idle](ixplogon-idle.md) und [IXPLogon::Poll](ixplogon-poll.md) nicht aufgerufen werden soll. Während Sie einen kritischen Abschnitt öffnen haben, MAPI_E_BUSY zurückgeben, wenn die [IMAPIStatus::ValidateState](imapistatus-validatestate.md) -Methode aufgerufen wird. Wenn Sie mit den kritischen Abschnitt fertig sind, stellen Sie einen weiteren Anruf zu **SpoolerNotify** mit _UlFlags_ auf NOTIFY_NONCRIT festgelegt. 
+Wenn Sie einen kritischen Abschnitt benötigen, um eine ununterbrochene Verarbeitung sicherzustellen, rufen Sie **SpoolerNotify** mit _ulFlags_ auf NOTIFY_CRITSEC festgelegt. Wenn Sie dieses Flag festlegen, wird der MAPI-Spooler darüber informiert, dass die [IXPLogon:: idle](ixplogon-idle.md) -und [IXPLogon::P-oll](ixplogon-poll.md) -Methoden nicht aufgerufen werden sollen. Wenn ein kritischer Abschnitt geöffnet ist, geben Sie MAPI_E_BUSY immer dann zurück, wenn die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode aufgerufen wird. Wenn Sie den kritischen Abschnitt beendet haben, führen Sie einen weiteren Aufruf von **SpoolerNotify** aus, wobei _ulFlags_ auf NOTIFY_NONCRIT festgelegt ist. 
   
-Wenn Ihre remote Adressbuchhierarchie wird gerade Nachrichten hochladen, müssen Sie einen Benutzer geben Sie eine Telefonnummer ein, um die remote-Verbindung zu ermöglichen. Bevor Sie das Dialogfeld Feld Verfahren durchlaufen haben, sollten Sie einen kritischen Abschnitt deklarieren. Wenn der Benutzer das Dialogfeld geschlossen wird, sollte, auf dem Sie den kritischen Abschnitt freigeben wird das Dialogfeld Feld Verfahren beendet.
+Wenn beispielsweise der Remote Transport-Anbieter Nachrichten hochgeladen hat, müssen Sie möglicherweise einem Benutzer die Eingabe einer Telefonnummer gestatten, um die Remoteverbindung herzustellen. Bevor Sie die Dialogfeldprozedur durchlaufen, sollten Sie einen kritischen Abschnitt deklarieren. Wenn der Benutzer das Dialogfeld schließt und die Dialogfeldprozedur beendet, sollten Sie den kritischen Abschnitt freigeben.
   
-Wenn Sie _UlFlags_ auf NOTIFY_CRITICAL_ERROR festlegen, wird die MAPI-Warteschlange keine weiteren Aufrufe an den Anbieter mit Ausnahme von an freigegeben werden soll. Wenn Sie **SpoolerNotify** mit NOTIFY_CRITICAL_ERROR legen Sie die [IXPLogon::StartMessage](ixplogon-startmessage.md) oder [IXPLogon::SubmitMessage](ixplogon-submitmessage.md) -Methoden aufrufen, mit einem entsprechenden Fehlerwert zurückgeben, aus der **StartMessage** oder ** SubmitMessage ** aufrufen unmittelbar nach dem Aufruf **SpoolerNotify** . 
+Wenn Sie _ulFlags_ auf NOTIFY_CRITICAL_ERROR festlegen, führt der MAPI-Spooler keine weiteren Aufrufe an den Anbieter aus, außer dass dieser freigegeben wird. Wenn Sie **SpoolerNotify** mit NOTIFY_CRITICAL_ERROR-Set aus der [IXPLogon:: StartMessage](ixplogon-startmessage.md) -oder [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md) -Methode aufrufen, geben Sie mit einem entsprechenden Fehlerwert aus dem **StartMessage** oder * * SubmitMessage * * Call zurück. unmittelbar nach dem **SpoolerNotify** -Aufruf. 
   
-Wenn Ihre Adressbuchhierarchie aus einer Bedingung, die zuvor Fehler verursacht hat wiederhergestellt, rufen Sie **SpoolerNotify** mit _UlFlags_ auf NOTIFY_READYTOSEND festgelegt. Dieses Kennzeichen gibt an, dass der Anbieter erneut bereit, um Nachrichten zu verarbeiten. 
+Wenn der Transportanbieter von einer Bedingung wiederhergestellt wurde, die zuvor einen Fehler verursacht hat, rufen Sie **SpoolerNotify** mit _ulFlags_ auf NOTIFY_READYTOSEND festgelegt. Dieses Flag gibt an, dass der Anbieter wieder für die Verarbeitung von Nachrichten bereit ist. 
   
-## <a name="notes-to-message-store-providers"></a>Hinweise für Nachrichtenspeicher-Anbieter
+## <a name="notes-to-message-store-providers"></a>Hinweise für Nachrichtenspeicher Anbieter
 
-Rufen Sie **SpoolerNotify**, das NOTIFY_READYTOSEND-Flag in _UlFlags_, übergeben, bevor Sie Ihre erste [IMAPISupport::PrepareSubmit](imapisupport-preparesubmit.md) in **IMessage::SubmitMessage**aufrufen. Dieser Aufruf von **SpoolerNotify** muss nur einmal pro Sitzung vorgenommen werden sollen. 
+Rufen Sie **SpoolerNotify**auf, und übergeben Sie das NOTIFY_READYTOSEND-Flag in _ulFlags_, bevor Sie den ersten aufruf an [IMAPISupport::P Reparesubmit](imapisupport-preparesubmit.md) in **IMessage:: SubmitMessage**durchführen. Dieser Aufruf von **SpoolerNotify** muss nur einmal pro Sitzung erfolgen. 
   
-Wenn Ihre Nachrichtenanbieter eng verknüpft ist mit einer Transport-Anbieter und Sie rufen **SpoolerNotify** _UlFlags_ auf NOTIFY_NEWMAIL_RECEIVED festgelegt, die MAPI-Warteschlange wird die neue Nachricht geöffnet, und mit der Verarbeitung der neuen Nachricht Hook-Funktion beginnt. Nach Abschluss der Verarbeitung Ruft die MAPI-Warteschlange die [IMsgStore::NotifyNewMail](imsgstore-notifynewmail.md) -Methode, um Sie der neuen Nachricht informiert. 
+Wenn der Nachrichtenspeicher Anbieter eng mit einem Transportanbieter gekoppelt ist und Sie **SpoolerNotify** aufrufen, wobei _ulFlags_ auf NOTIFY_NEWMAIL_RECEIVED festgelegt ist, wird die neue Nachricht vom MAPI-Spooler geöffnet und mit der Verarbeitung der neuen Nachrichten Hookfunktion begonnen. Nach Abschluss der Verarbeitung ruft der MAPI-Spooler die [IMsgStore:: NotifyNewMail](imsgstore-notifynewmail.md) -Methode auf, um Sie über Ihre eigene neue Nachricht zu informieren. 
   
-Weitere Informationen zum Aufrufen von **SpoolerNotify**finden Sie unter den folgenden Themen:
+Weitere Informationen zum Aufrufen von **SpoolerNotify**finden Sie in den folgenden Themen:
   
 - [Implementieren der FlushQueues-Methode](implementing-the-flushqueues-method.md)
     
 - [Interaktion mit dem MAPI-Spooler](interacting-with-the-mapi-spooler.md)
     
-- [Nachrichtenempfangsmodell](message-reception-model.md)
+- [Nachrichtenempfangs Modell](message-reception-model.md)
     
 ## <a name="see-also"></a>Siehe auch
 

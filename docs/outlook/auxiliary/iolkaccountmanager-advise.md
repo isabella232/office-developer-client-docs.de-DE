@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c88f087e-4ff4-0837-186d-b6e761468a4d
-description: Registriert einen Client mit dem Kontomanager für Benachrichtigungen bezüglich alle Konten.
-ms.openlocfilehash: 1fb697fef44b9ed32888527c3c9e467be69ba4c7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Registriert einen Client mit dem Kontomanager für Benachrichtigungen zu allen Konten.
+ms.openlocfilehash: 5460d55d906d382ce40ecd3fd9277cf370295680
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322197"
 ---
 # <a name="iolkaccountmanageradvise"></a>IOlkAccountManager::Advise
 
-Registriert einen Client mit dem Kontomanager für Benachrichtigungen bezüglich alle Konten.
+Registriert einen Client mit dem Kontomanager für Benachrichtigungen zu allen Konten.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -33,18 +33,18 @@ HRESULT IOlkAccountManager::Advise (
 
 _pNotify_
   
-> [in] Eine [IOlkAccountNotify](iolkaccountnotify.md) -Schnittstelle, die der Konto-Manager zum Senden von Benachrichtigungen an den Client verwenden. 
+> in Eine [IOlkAccountNotify](iolkaccountnotify.md) -Schnittstelle, die der Kontomanager zum Senden von Benachrichtigungen an den Client verwendet. 
     
 _pdwCookie_
   
-> [out] Ein Cookie, das [IOlkAccountManager::Unadvise](iolkaccountmanager-unadvise.md) verwendet wird, wenn Sie die Registrierung für das Konto zu entfernen. 
+> Out Ein Cookie, das [IOlkAccountManager:: Unadvise](iolkaccountmanager-unadvise.md) verwendet, wenn die Registrierung für das Konto entfernt wird. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
-|**[HRESULT]**|**Beschreibung**|
+|**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_INVALIDARG  <br/> |Ein ungültiges Argument wurde bereitgestellt.  <br/> |
+|E_INVALIDARG  <br/> |Es wurde ein ungültiges Argument bereitgestellt.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

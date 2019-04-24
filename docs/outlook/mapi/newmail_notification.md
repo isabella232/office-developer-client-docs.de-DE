@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 49913050-900a-4b05-84c4-c596a93ce68b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 779585f73a7032ae0259b30ebfc16868c733c7fc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 25af1c1b05618d4f36a43721e71be6ff5c7c597f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326243"
 ---
 # <a name="newmailnotification"></a>NEWMAIL_NOTIFICATION
 
@@ -25,11 +25,11 @@ ms.locfileid: "22569512"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt die Informationen, die über den Eingang einer neuen Nachricht beziehen. 
+Beschreibt Informationen, die sich auf das Eintreffen einer neuen Nachricht beziehen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _NEWMAIL_NOTIFICATION
@@ -49,49 +49,49 @@ typedef struct _NEWMAIL_NOTIFICATION
 
  **cbEntryID**
   
-> Anzahl der Bytes in die Eintrags-ID auf den Member **LpEntryID** zeigt. 
+> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpEntryID** -Element verwiesen wird. 
     
  **lpEntryID**
   
-> Zeiger auf die Eintrags-ID der neu empfangene Meldung.
+> Zeiger auf die Eintrags-ID der neu angekommenen Nachricht.
     
  **cbParentID**
   
-> Anzahl der Bytes in die Eintrags-ID auf den Member **LpParentID** zeigt. 
+> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpParentID** -Element verwiesen wird. 
     
  **lpParentID**
   
-> Zeiger auf die Eintrags-ID des Ordners für die neu empfangene Nachricht empfangen.
+> Zeiger auf die Eintrags-ID des Empfangs Ordners für die neu eingetroffene Nachricht.
     
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format der Zeichenfolgeneigenschaften der Nachricht enthaltene beschreiben. Das folgende Flag kann festgelegt werden:
+> Bitmaske von Flags zur Beschreibung des Formats der Zeichenfolgeneigenschaften, die in der Nachricht enthalten sind. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  **lpszMessageClass**
   
-> Zeiger auf die Nachrichtenklasse der neu empfangene Meldung. 
+> Zeiger auf die Nachrichtenklasse der neu angekommenen Nachricht. 
     
  **ulMessageFlags**
   
-> Bitmaske aus Flags, die den aktuellen Status der neu empfangene Nachricht beschreibt. Der **UlMessageFlags** -Member ist eine Kopie der Nachricht **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft.
+> Bitmaske von Flags, die den aktuellen Status der neu angekommenen Nachricht beschreibt. Das **ulMessageFlags** -Element ist eine Kopie der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **NEWMAIL_NOTIFICATION** -Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Wenn das **Info** Mitglied einer **Benachrichtigung** Struktur eine **NEWMAIL_NOTIFICATION** Struktur enthält, das **UlEventType** Mitglied der **Benachrichtigung** Struktur auf festgelegt ist _FnevNewMail._
+Die **NEWMAIL_NOTIFICATION** -Struktur ist ein Mitglied der Vereinigung von Strukturen, die im **Info** -Element der Benachrichtigungs [](notification.md) Struktur enthalten sind. Wenn der **Info** -Member einer **Benachrichtigungs** Struktur eine **NEWMAIL_NOTIFICATION** -Struktur enthält, wird das **ulEventType** -Element der **Benachrichtigungs** Struktur auf uleventmaskfnevnewmail festgelegt _._
   
-MAPI verwendet die **NEWMAIL_NOTIFICATION** -Struktur nur als Mitglied der **Benachrichtigung** -Struktur, die Informationen zu einem Benachrichtigungsereignis für die Advise-Empfänger enthält. 
+MAPI verwendet die **NEWMAIL_NOTIFICATION** -Struktur nur als Mitglied der **Benachrichtigungs** Struktur, die Informationen zu einem Benachrichtigungsereignis für die Advise-Senke enthält. 
   
-Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der folgenden Tabelle beschrieben.
+Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -99,7 +99,7 @@ Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der fo
 
 [Benachrichtigung](notification.md)
   
-[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
+[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

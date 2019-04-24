@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 369cf384-94b6-4d41-8938-afdcbd13f132
-description: Dieser Abschnitt beschreibt die Konto-Verwaltungs-API ermöglicht den Zugriff auf Kontoinformationen und Konto ändern Benachrichtigungen unterstützt. Es enthält auch Informationen zum Schützen von Konten vor Spam und Verwalten von Nachricht Downloads für POP3-Konten.
-ms.openlocfilehash: 7348e73dfaf510bd7726586ba55ab2b37c2c893c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Abschnitt wird die Account Management-API beschrieben, die Zugriff auf Kontoinformationen bietet und Konto Änderungsbenachrichtigungen unterstützt. Sie enthält auch Informationen zum Schutz von Konten vor Spam und zum Verwalten von Nachrichten Downloads für POP3-Konten.
+ms.openlocfilehash: 425739639562a91586d23b41de119916886e2c4a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322113"
 ---
 # <a name="outlook-account-management"></a>Outlook-Kontoverwaltung
 
-Dieser Abschnitt beschreibt die Konto-Verwaltungs-API ermöglicht den Zugriff auf Kontoinformationen und Konto ändern Benachrichtigungen unterstützt. Es enthält auch Informationen zum Schützen von Konten vor Spam und Verwalten von Nachricht Downloads für POP3-Konten.
+In diesem Abschnitt wird die Account Management-API beschrieben, die Zugriff auf Kontoinformationen bietet und Konto Änderungsbenachrichtigungen unterstützt. Sie enthält auch Informationen zum Schutz von Konten vor Spam und zum Verwalten von Nachrichten Downloads für POP3-Konten.
 
 - [Über die Konto-API](about-the-account-management-api.md)
     

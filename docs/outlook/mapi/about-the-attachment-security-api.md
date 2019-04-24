@@ -6,20 +6,20 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a70c1445-03d5-9585-2bdb-d03c608b313b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 83123e1794070ecd545c8983750a21349e77cb31
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6b8b3e8a41c52fef5b3ff4050292740a01216761
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322148"
 ---
 # <a name="about-the-attachment-security-api"></a>Informationen zur Anlagensicherheits-API
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Anlage Security-API ermöglicht die Outlook-Lösungen zu ermitteln, ob eine Anlage von Outlook nicht sicher angesehen wird und wird zum Anzeigen und Indizierung blockiert. Es bietet die folgenden Definitionen und -Schnittstelle.
+Die Attachment Security API ermöglicht es Outlook-Lösungen zu ermitteln, ob eine Anlage von Outlook als unsicher betrachtet wird und für die Anzeige und Indizierung gesperrt ist. Es bietet die folgenden Definitionen und Schnittstellen.
   
 Definitionen
   
@@ -27,6 +27,6 @@ Definitionen
     
 Schnittstelle
   
-- **["IAttachmentSecurity"](iattachmentsecurityiunknown.md)**
+- **[IAttachmentSecurity](iattachmentsecurityiunknown.md)**
     
 

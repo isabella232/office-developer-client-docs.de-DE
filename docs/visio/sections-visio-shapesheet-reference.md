@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 982ed30a-bdf3-4c1a-9788-43b5933ff631
-ms.openlocfilehash: f08441035eee81c8e5b4059626759c68e74f9d70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dbfb770b86f768bf4860c7298f27b7b79413fd5a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326033"
 ---
 # <a name="sections-visio-shapesheet-reference"></a>Abschnitte (Visio-ShapeSheet-Referenz)
 
@@ -19,21 +19,21 @@ ms.locfileid: "19797980"
 
 - [Abschnitt "1-D Endpoints"](1-d-endpoints-section.md)
     
-- [3-D Rotation Properties Section](3-d-rotation-properties-section.md)
+- [3D-Rotations Eigenschaften (Abschnitt)](3-d-rotation-properties-section.md)
     
 - [Im Abschnitt Aktion-Tag](action-tag-section.md)
     
 - [Abschnitt "Actions"](actions-section.md)
     
-- [Additional Effect Properties Section](additional-effect-properties-section.md)
+- [Abschnitt "Additional Effect Properties"](additional-effect-properties-section.md)
     
 - [Abschnitt "Alignment"](alignment-section.md)
     
 - [Abschnitt "Annotation"](annotation-section.md)
     
-- [Bevel Properties Section](bevel-properties-section.md)
+- [Abschnitt "Fase Properties"](bevel-properties-section.md)
     
-- [Change Shape Behavior Section](change-shape-behavior-section.md)
+- [Abschnitt "Shape-Verhalten ändern"](change-shape-behavior-section.md)
     
 - [Abschnitt "Character"](character-section.md)
     
@@ -47,7 +47,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Fill Format"](fill-format-section.md)
     
-- [Fill Gradient Section](fill-gradient-section.md)
+- [Abschnitt "Füll Verlauf"](fill-gradient-section.md)
     
 - [Abschnitt "Foreign Image Info"](foreign-image-info-section.md)
     
@@ -55,7 +55,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Glue Info"](glue-info-section.md)
     
-- [Gradient Properties Section](gradient-properties-section.md)
+- [Abschnitt "Gradient Properties"](gradient-properties-section.md)
     
 - [Abschnitt "Group Properties"](group-properties-section.md)
     
@@ -69,7 +69,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Line Format"](line-format-section.md)
     
-- [Line Gradient Section](line-gradient-section.md)
+- [Linien Gradient (Abschnitt)](line-gradient-section.md)
     
 - [Abschnitt "Miscellaneous"](miscellaneous-section.md)
     
@@ -83,11 +83,11 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Protection"](protection-section.md)
     
-- [Quick Style Section](quick-style-section.md)
+- [Abschnitt "Schnellformatvorlage"](quick-style-section.md)
     
 - [Abschnitt "Reviewer"](reviewer-section.md)
     
-- [Lineal &amp; Rasterabschnitt](rulergrid-section.md)
+- [Lineal &amp; -Raster (Abschnitt)](rulergrid-section.md)
     
 - [Abschnitt "Scratch"](scratch-section.md)
     
@@ -107,7 +107,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Text Transform"](text-transform-section.md)
     
-- [Theme Properties Section](theme-properties-section.md)
+- [Abschnitt "Design Properties"](theme-properties-section.md)
     
 - [Abschnitt "User-defined Cells"](user-defined-cells-section.md)
     

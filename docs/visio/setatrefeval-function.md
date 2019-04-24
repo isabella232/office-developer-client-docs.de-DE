@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm1042150
 localization_priority: Normal
 ms.assetid: b3f3a0a0-7b14-0b71-d247-ada81b93b66b
-description: In der Set_expression-Parameter der SETATREF-Funktion verwendet, um anzugeben, dass diese Set_expression berechnet werden soll, bevor Sie Reference-Parameter in SETATREF zuweisen.
-ms.openlocfilehash: 0826ef9ca91e180576c0b2611452758b238736a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Wird im set_expression-Parameter der SETATREF-Funktion verwendet, um anzugeben, dass set_expression vor dem Zuweisen zum Verweisparameter in SETATREF ausgewertet werden soll.
+ms.openlocfilehash: a11a7485e04d4deb31e9497476bb198d675bc68f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326159"
 ---
 # <a name="setatrefeval-function"></a>SETATREFEVAL Function
 
-In der _Set_expression_ -Parameter der SETATREF-Funktion verwendet, um anzugeben, dass _Set_expression_ vor dem Zuweisen zum _Reference_ -Parameter in SETATREF ausgewertet werden soll. 
+Wird im _set_expression_ -Parameter der SETATREF-Funktion verwendet, um anzugeben, dass _set_expression_ vor dem Zuweisen zum _Verweis_ Parameter in SETATREF ausgewertet werden soll. 
   
 ## <a name="syntax"></a>Syntax
 
-SETATREFEVAL (** *Ausdr* **) 
+SETATREFEVAL (* * *expr* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expr_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Ein Ausdruck, der ausgewertet wird, wenn die SETATREF-Funktion _Set_expression_ in eine andere Zelle umleitet.  <br/> |
+| _expr_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Ein Ausdruck, der ausgewertet wird, wenn die SETATREF-Funktion _set_expression_ in eine andere Zelle umleitet.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Beim Zuweisen des *Set_expression* -Parameters der SETATREF-Funktion zu einer referenzierten Zelle wird *Set_expression* von Microsoft Visio eine Standard auf die Zelle geschrieben. Wenn ein Teil von *Set_expression* -Parameters durch die SETATREFEVAL-Funktion umbrochen wird, Visio wertet den Ausdruck und ersetzt die SETATREFEVAL-Funktion durch das Ergebnis vor dem Auflösen des SETATREF-Ausdrucks. 
+Wenn Sie den *set_expression* -Parameter der SETATREF-Funktion einer referenzierten Zelle zuweisen, schreibt Microsoft Visio *set_expression* standardmäßig als Ausdruck in die Zelle. Wenn jedoch ein Teil des *set_expression* -Parameters von der SETATREFEVAL-Funktion umschlossen wird, wertet Visio den Ausdruck aus und ersetzt die SETATREFEVAL-Funktion durch das Ergebnis vor dem Auflösen des SETATREF-Ausdrucks. 
   
 ## <a name="example"></a>Beispiel
 
