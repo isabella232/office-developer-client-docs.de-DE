@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ce13f11-5787-4ea5-a84f-b1e3824529ee
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: db4b8d99c960deb3de3d228b2bf9549738501bcc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c0954d6f8b14b4088ece2ac276b045b6c163ed98
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342161"
 ---
-# <a name="imapiformcontainerresolvemessageclass"></a><span data-ttu-id="06932-103">IMAPIFormContainer::ResolveMessageClass</span><span class="sxs-lookup"><span data-stu-id="06932-103">IMAPIFormContainer::ResolveMessageClass</span></span>
+# <a name="imapiformcontainerresolvemessageclass"></a><span data-ttu-id="5ca0c-103">IMAPIFormContainer::ResolveMessageClass</span><span class="sxs-lookup"><span data-stu-id="5ca0c-103">IMAPIFormContainer::ResolveMessageClass</span></span>
 
   
   
-<span data-ttu-id="06932-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="06932-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5ca0c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5ca0c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="06932-105">Löst eine Nachrichtenklasse in seiner Form in einem Formular Container und ein Formular Informationen-Objekt für dieses Formular zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="06932-105">Resolves a message class to its form in a form container and returns a form information object for that form.</span></span>
+<span data-ttu-id="5ca0c-105">Löst eine Nachrichtenklasse in Ihrem Formular in einem Formular Container auf und gibt ein Formular Informationsobjekt für dieses Formular zurück.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-105">Resolves a message class to its form in a form container and returns a form information object for that form.</span></span>
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -35,61 +35,61 @@ HRESULT ResolveMessageClass(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="06932-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="06932-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5ca0c-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="5ca0c-106">Parameters</span></span>
 
- <span data-ttu-id="06932-107">_szMessageClass_</span><span class="sxs-lookup"><span data-stu-id="06932-107">_szMessageClass_</span></span>
+ <span data-ttu-id="5ca0c-107">_szMessageClass_</span><span class="sxs-lookup"><span data-stu-id="5ca0c-107">_szMessageClass_</span></span>
   
-> <span data-ttu-id="06932-108">[in] Eine Zeichenfolge, die den Namen die Nachrichtenklasse aufgelöst wird.</span><span class="sxs-lookup"><span data-stu-id="06932-108">[in] A string that names the message class being resolved.</span></span> <span data-ttu-id="06932-109">Nachrichtenklassennamen sind immer noch nie Unicode-ANSI-Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="06932-109">Message class names are always ANSI strings, never Unicode.</span></span>
+> <span data-ttu-id="5ca0c-108">in Eine Zeichenfolge, die die zu lösende Nachrichtenklasse benennt.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-108">[in] A string that names the message class being resolved.</span></span> <span data-ttu-id="5ca0c-109">Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-109">Message class names are always ANSI strings, never Unicode.</span></span>
     
- <span data-ttu-id="06932-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="06932-110">_ulFlags_</span></span>
+ <span data-ttu-id="5ca0c-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="5ca0c-110">_ulFlags_</span></span>
   
-> <span data-ttu-id="06932-111">[in] Eine Bitmaske aus Flags, die steuert, wie die Nachrichtenklasse aufgelöst wird.</span><span class="sxs-lookup"><span data-stu-id="06932-111">[in] A bitmask of flags that controls how the message class is resolved.</span></span> <span data-ttu-id="06932-112">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="06932-112">The following flag can be set:</span></span>
+> <span data-ttu-id="5ca0c-111">in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklasse steuert.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-111">[in] A bitmask of flags that controls how the message class is resolved.</span></span> <span data-ttu-id="5ca0c-112">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="5ca0c-112">The following flag can be set:</span></span>
     
-<span data-ttu-id="06932-113">MAPIFORM_EXACTMATCH</span><span class="sxs-lookup"><span data-stu-id="06932-113">MAPIFORM_EXACTMATCH</span></span> 
+<span data-ttu-id="5ca0c-113">MAPIFORM_EXACTMATCH</span><span class="sxs-lookup"><span data-stu-id="5ca0c-113">MAPIFORM_EXACTMATCH</span></span> 
   
-> <span data-ttu-id="06932-114">Nur Nachricht Klasse Zeichenfolgen, die eine genaue Übereinstimmung sollten aufgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="06932-114">Only message class strings that are an exact match should be resolved.</span></span>
+> <span data-ttu-id="5ca0c-114">Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-114">Only message class strings that are an exact match should be resolved.</span></span>
     
- <span data-ttu-id="06932-115">_ppforminfo_</span><span class="sxs-lookup"><span data-stu-id="06932-115">_ppforminfo_</span></span>
+ <span data-ttu-id="5ca0c-115">_ppforminfo_</span><span class="sxs-lookup"><span data-stu-id="5ca0c-115">_ppforminfo_</span></span>
   
-> <span data-ttu-id="06932-116">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Informationen Formularobjekt.</span><span class="sxs-lookup"><span data-stu-id="06932-116">[out] A pointer to a pointer to the returned form information object.</span></span>
+> <span data-ttu-id="5ca0c-116">Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Informationsobjekt.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-116">[out] A pointer to a pointer to the returned form information object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="06932-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="06932-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5ca0c-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5ca0c-117">Return value</span></span>
 
-<span data-ttu-id="06932-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="06932-118">S_OK</span></span> 
+<span data-ttu-id="5ca0c-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="5ca0c-118">S_OK</span></span> 
   
-> <span data-ttu-id="06932-119">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="06932-119">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="5ca0c-119">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-119">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="06932-120">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="06932-120">MAPI_E_NOT_FOUND</span></span> 
+<span data-ttu-id="5ca0c-120">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="5ca0c-120">MAPI_E_NOT_FOUND</span></span> 
   
-> <span data-ttu-id="06932-121">Die Nachrichtenklasse in der _SzMessageClass_ -Parameter übergeben entspricht nicht die Nachrichtenklasse für jedes Formular im Formular-Container.</span><span class="sxs-lookup"><span data-stu-id="06932-121">The message class passed in the  _szMessageClass_ parameter does not match the message class for any form in the form container.</span></span> 
+> <span data-ttu-id="5ca0c-121">Die Nachrichtenklasse, die im _szMessageClass_ -Parameter übergeben wird, stimmt nicht mit der Nachrichtenklasse für alle Formulare im Formular Container überein.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-121">The message class passed in the  _szMessageClass_ parameter does not match the message class for any form in the form container.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="06932-122">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="06932-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5ca0c-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5ca0c-122">Remarks</span></span>
 
-<span data-ttu-id="06932-123">Clientanwendungen rufen Sie die **IMAPIFormContainer::ResolveMessageClass** -Methode, um eine Nachrichtenklasse zu einem Formular in einem Formular Container zu beheben.</span><span class="sxs-lookup"><span data-stu-id="06932-123">Client applications call the **IMAPIFormContainer::ResolveMessageClass** method to resolve a message class to a form within a form container.</span></span> <span data-ttu-id="06932-124">Das Formular Informationen-Objekt zurückgegeben, die im Parameter _Ppforminfo_ bietet weitere Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse.</span><span class="sxs-lookup"><span data-stu-id="06932-124">The form information object returned in the  _ppforminfo_ parameter provides further access to the properties of the form with the given message class.</span></span> 
+<span data-ttu-id="5ca0c-123">Client Anwendungen rufen die **IMAPIFormContainer:: ResolveMessageClass** -Methode auf, um eine Nachrichtenklasse in ein Formular in einem Formular Container aufzulösen.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-123">Client applications call the **IMAPIFormContainer::ResolveMessageClass** method to resolve a message class to a form within a form container.</span></span> <span data-ttu-id="5ca0c-124">Das im _ppforminfo_ -Parameter zurückgegebene Formular Informationsobjekt bietet weiteren Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-124">The form information object returned in the  _ppforminfo_ parameter provides further access to the properties of the form with the given message class.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="06932-125">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="06932-125">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="5ca0c-125">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="5ca0c-125">Notes to callers</span></span>
 
-<span data-ttu-id="06932-126">Um eine Nachrichtenklasse zu einem Formular zu beheben, übergeben Sie den Namen der Nachrichtenklasse aufgelöst werden (beispielsweise `IPM.HelpDesk.Software`).</span><span class="sxs-lookup"><span data-stu-id="06932-126">To resolve a message class to a form, pass in the name of the message class to be resolved (for example,  `IPM.HelpDesk.Software`).</span></span> <span data-ttu-id="06932-127">So erzwingen Sie die Auflösung genau sein (d. h., um auf eine Basisklasse der Nachrichtenklasse Lösung zu verhindern), die Kennzeichen MAPIFORM_EXACTMATCH im _UlFlags_ -Parameter übergeben werden können.</span><span class="sxs-lookup"><span data-stu-id="06932-127">To force the resolution to be exact (that is, to prevent resolution to a base class of the message class), the MAPIFORM_EXACTMATCH flag can be passed in the  _ulFlags_ parameter.</span></span> 
+<span data-ttu-id="5ca0c-126">Um eine Nachrichtenklasse in ein Formular aufzulösen, geben Sie den Namen der zu lösenden Nachrichtenklasse ein (beispielsweise `IPM.HelpDesk.Software`).</span><span class="sxs-lookup"><span data-stu-id="5ca0c-126">To resolve a message class to a form, pass in the name of the message class to be resolved (for example,  `IPM.HelpDesk.Software`).</span></span> <span data-ttu-id="5ca0c-127">Um die Genauigkeit der Auflösung zu erzwingen (das heißt, um eine Lösung für eine Basisklasse der Nachrichtenklasse zu verhindern), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-127">To force the resolution to be exact (that is, to prevent resolution to a base class of the message class), the MAPIFORM_EXACTMATCH flag can be passed in the  _ulFlags_ parameter.</span></span> 
   
-<span data-ttu-id="06932-128">Die Klassen-ID für die Nachrichtenklasse aufgelöst wird als Teil des Formulars Informationen-Objekts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="06932-128">The class identifier for the resolved message class is returned as part of the form information object.</span></span> <span data-ttu-id="06932-129">Nehmen Sie nicht an, dass die Klassen-ID in der OLE-Bibliothek erst vorhanden ist, nachdem Sie die [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md) oder [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) -Methode aufgerufen haben.</span><span class="sxs-lookup"><span data-stu-id="06932-129">Do not assume that the class identifier exists in the OLE library until after you call either the [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md) or [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) method.</span></span> 
+<span data-ttu-id="5ca0c-128">Der Klassenbezeichner für die aufgelöste Nachrichtenklasse wird als Teil des Form Information-Objekts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-128">The class identifier for the resolved message class is returned as part of the form information object.</span></span> <span data-ttu-id="5ca0c-129">Gehen Sie nicht davon aus, dass der Klassenbezeichner in der OLE-Bibliothek vorhanden ist, bis Sie die [IMAPIFormMgr::P repareform](imapiformmgr-prepareform.md) -oder [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) -Methode aufgerufen haben.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-129">Do not assume that the class identifier exists in the OLE library until after you call either the [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md) or [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) method.</span></span> 
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="06932-130">MFCMAPI (engl.) (engl.)</span><span class="sxs-lookup"><span data-stu-id="06932-130">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="5ca0c-130">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="5ca0c-130">MFCMAPI reference</span></span>
 
-<span data-ttu-id="06932-131">Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="06932-131">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="5ca0c-131">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-131">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="06932-132">**Datei**</span><span class="sxs-lookup"><span data-stu-id="06932-132">**File**</span></span>|<span data-ttu-id="06932-133">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="06932-133">**Function**</span></span>|<span data-ttu-id="06932-134">**Comment**</span><span class="sxs-lookup"><span data-stu-id="06932-134">**Comment**</span></span>|
+|<span data-ttu-id="5ca0c-132">**Datei**</span><span class="sxs-lookup"><span data-stu-id="5ca0c-132">**File**</span></span>|<span data-ttu-id="5ca0c-133">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="5ca0c-133">**Function**</span></span>|<span data-ttu-id="5ca0c-134">**Comment**</span><span class="sxs-lookup"><span data-stu-id="5ca0c-134">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="06932-135">FormContainerDlg.cpp</span><span class="sxs-lookup"><span data-stu-id="06932-135">FormContainerDlg.cpp</span></span>  <br/> |<span data-ttu-id="06932-136">CFormContainerDlg::OnResolveMessageClass</span><span class="sxs-lookup"><span data-stu-id="06932-136">CFormContainerDlg::OnResolveMessageClass</span></span>  <br/> |<span data-ttu-id="06932-137">MFCMAPI (engl.) verwendet die **IMAPIFormContainer::ResolveMessageClass** -Methode, um ein Formular zu suchen, die mit einer Nachrichtenklasse zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="06932-137">MFCMAPI uses the **IMAPIFormContainer::ResolveMessageClass** method to locate a form that is associated with a message class.</span></span>  <br/> |
+|<span data-ttu-id="5ca0c-135">FormContainerDlg. cpp</span><span class="sxs-lookup"><span data-stu-id="5ca0c-135">FormContainerDlg.cpp</span></span>  <br/> |<span data-ttu-id="5ca0c-136">CFormContainerDlg:: OnResolveMessageClass</span><span class="sxs-lookup"><span data-stu-id="5ca0c-136">CFormContainerDlg::OnResolveMessageClass</span></span>  <br/> |<span data-ttu-id="5ca0c-137">MFCMAPI verwendet die **IMAPIFormContainer:: ResolveMessageClass** -Methode, um ein Formular zu suchen, das einer Nachrichtenklasse zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="5ca0c-137">MFCMAPI uses the **IMAPIFormContainer::ResolveMessageClass** method to locate a form that is associated with a message class.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="06932-138">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="06932-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5ca0c-138">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5ca0c-138">See also</span></span>
 
 
 
-[<span data-ttu-id="06932-139">IMAPIFormInfo : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="06932-139">IMAPIFormInfo : IMAPIProp</span></span>](imapiforminfoimapiprop.md)
+[<span data-ttu-id="5ca0c-139">IMAPIFormInfo : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="5ca0c-139">IMAPIFormInfo : IMAPIProp</span></span>](imapiforminfoimapiprop.md)
   
-[<span data-ttu-id="06932-140">IMAPIFormMgr::CreateForm</span><span class="sxs-lookup"><span data-stu-id="06932-140">IMAPIFormMgr::CreateForm</span></span>](imapiformmgr-createform.md)
+[<span data-ttu-id="5ca0c-140">IMAPIFormMgr::CreateForm</span><span class="sxs-lookup"><span data-stu-id="5ca0c-140">IMAPIFormMgr::CreateForm</span></span>](imapiformmgr-createform.md)
   
-[<span data-ttu-id="06932-141">IMAPIFormMgr::PrepareForm</span><span class="sxs-lookup"><span data-stu-id="06932-141">IMAPIFormMgr::PrepareForm</span></span>](imapiformmgr-prepareform.md)
+[<span data-ttu-id="5ca0c-141">IMAPIFormMgr::PrepareForm</span><span class="sxs-lookup"><span data-stu-id="5ca0c-141">IMAPIFormMgr::PrepareForm</span></span>](imapiformmgr-prepareform.md)
   
-[<span data-ttu-id="06932-142">IMAPIFormContainer : IUnknown</span><span class="sxs-lookup"><span data-stu-id="06932-142">IMAPIFormContainer : IUnknown</span></span>](imapiformcontaineriunknown.md)
+[<span data-ttu-id="5ca0c-142">IMAPIFormContainer : IUnknown</span><span class="sxs-lookup"><span data-stu-id="5ca0c-142">IMAPIFormContainer : IUnknown</span></span>](imapiformcontaineriunknown.md)
 
