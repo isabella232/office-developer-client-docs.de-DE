@@ -11,46 +11,46 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30b8ae9e-0c0c-4468-b286-29e083696fed
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c320b2c42b9a14c6dc428fc3df59991528cdbe36
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: aed9120ac264a6c47c9d02502093e56d3268d08a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279542"
 ---
 # <a name="ipropdata--imapiprop"></a>IPropData : IMAPIProp
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet die Möglichkeit zum Abrufen und ändern Sie den Zugriff für die Eigenschaften eines Objekts. 
+Ermöglicht das Abrufen und Ändern des Zugriffs für die Eigenschaften eines Objekts. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Property-Daten-Objekt  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Eigenschaftendaten Objekt  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Dienstanbieter und -Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Dienstanbieter und Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIPropData  <br/> |
 |Zeigertyp:  <br/> |LPPROPDATA  <br/> |
-|Transaktionsmodell:  <br/> |Nontransacted  <br/> |
+|Transaktionsmodell:  <br/> |Nicht durchgeführten  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
 |[HrSetObjAccess](ipropdata-hrsetobjaccess.md) <br/> |Legt die Zugriffsebene f�r das Objekt fest.  <br/> |
-|[HrSetPropAccess](ipropdata-hrsetpropaccess.md) <br/> |Die Zugriffsebene und den Status für eine oder mehrere der Eigenschaften des Objekts festgelegt.  <br/> |
+|[HrSetPropAccess](ipropdata-hrsetpropaccess.md) <br/> |Legt die Zugriffsebene und den Status für eine oder mehrere Eigenschaften des Objekts fest.  <br/> |
 |[HrGetPropAccess](ipropdata-hrgetpropaccess.md) <br/> |Ruft die Zugriffsebene und den Status f�r eine oder mehrere der Eigenschaften des Objekts an.  <br/> |
-|[HrAddObjProps](ipropdata-hraddobjprops.md) <br/> |Fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.  <br/> |
+|[HrAddObjProps](ipropdata-hraddobjprops.md) <br/> |Fügt dem Objekt eine oder mehrere Eigenschaften vom Typ PT_OBJECT hinzu.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IPropData::IMAPIProp** -Schnittstelle wird von MAPI implementierte und in erster Linie vom Dienstanbieter, die dieser Implementierung zugreifen, indem die [CreateIProp](createiprop.md) -Funktion verwendet. 
+Die **IPropData:: IMAPIProp** -Schnittstelle wird von MAPI implementiert und in erster Linie von Dienstanbietern verwendet, die auf diese Implementierung zugreifen, indem Sie die [CreateIProp](createiprop.md) -Funktion aufrufen. 
   
-Weitere Informationen zu Zugriffsebenen-Objekten und Eigenschaften finden Sie unter [Berechtigungen für Objekte und Eigenschaften](permissions-for-mapi-objects-and-properties.md).
+Weitere Informationen zu Zugriffsebenen für Objekte und Eigenschaften finden Sie unter [Berechtigungen für Objekte und Eigenschaften](permissions-for-mapi-objects-and-properties.md).
   
 ## <a name="see-also"></a>Siehe auch
 

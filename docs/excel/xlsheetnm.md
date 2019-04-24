@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlSheetNm
 keywords:
-- Xlsheetnm-Funktion [excel 2007]
+- xlsheetnm-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: bcb16207-5499-4474-b006-51ccde1002d7
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 815565d886b1aea203f6b3b9774325d6b534abd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5d62be7ebef71547de3a903db4c1a030984b8640
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303871"
 ---
 # <a name="xlsheetnm"></a>xlSheetNm
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt den Namen des ein Arbeitsblatt oder eine Makrovorlage aus der internen Blatt-ID, die ein externer Verweis oder den Namen des aktuellen Blatts enthaltenen, wenn einen internen Verweis übergeben zurück.
+Gibt den Namen eines Arbeitsblatts oder einer Makrovorlage aus der internen Blatt-ID zurück, die in einem externen Verweis enthalten ist, oder den Namen des aktuellen Blatts, wenn ein interner Verweis übergeben wird.
   
 ```cs
 Excel12(xlSheetNm, LPXLOPER12 pxRes, 1, LPXLOPER12 pxExtref);
@@ -30,21 +30,21 @@ Excel12(xlSheetNm, LPXLOPER12 pxRes, 1, LPXLOPER12 pxExtref);
 
 ## <a name="parameters"></a>Parameter
 
-_pxExtref_ (**XltypeRef** oder **XltypeSRef**)
+_pxExtref_ (**externen xltypeRef** oder **xltypeSRef**)
   
-Ein Verweis auf das Blatt, deren Namen Sie möchten.
+Ein Verweis auf das Blatt, dessen Name Sie wünschen.
   
-Wenn Sie einen externen Verweis (**XltypeRef**) übergeben müssen sie nur die ID des Blatts enthalten. Die Datenstrukturen, die die Zellen im Arbeitsblatt beschreiben werden ignoriert und müssen nicht angegeben werden. Wenn die ID 0 (null) festgelegt ist, wird der Name des das aktuelle Blatt von **XlSheetNm** zurückgegeben. 
+Wenn Sie einen externen Verweis (**externen xltypeRef**) übergeben, muss er nur die ID des Blatts enthalten. Die Datenstrukturen, die die Zellen im Arbeitsblatt beschreiben, werden ignoriert und müssen nicht bereitgestellt werden. Wenn die ID auf NULL festgelegt ist, gibt **xlSheetNm** den Namen des aktuellen Blatts zurück. 
   
-Wenn Sie einen internen Verweis (**XltypeSef**) übergeben, wird der Name des aktuellen Blatts von **XlSheetNm** zurückgegeben. 
+Wenn Sie einen internen Verweis (**xltypeSef**) übergeben, gibt **xlSheetNm** den Namen des aktuellen Blatts zurück. 
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt den Namen des Blatts (**XltypeStr**) in das Formular `[Book1]Sheet1`.
+Gibt den Namen des Blatts (**xltypeStr**) im Formular `[Book1]Sheet1`zurück.
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt den Namen des Blatts, von dem die Funktion aufgerufen wurde. Die Funktion funktioniert nur, wenn Sie von einem Makroblatt aufgerufen wird, während der Ausführung eines XLM-Makros Befehl. Dies ist, da es aufruft, **XlcAlert**, die nur Befehle führen können, und sie muss von einem Blatt statt ein Dialogfeld, im Menü oder Befehlsleiste in der Reihenfolge für **XlfCaller** zum Zurückgeben eines Verweises aufgerufen werden. 
+Im folgenden Beispiel wird der Name des Blatts angezeigt, aus dem die Funktion aufgerufen wurde. Die Funktion funktioniert nur dann ordnungsgemäß, wenn Sie beim Ausführen eines XML-Befehlsmakros aus einer Makrovorlage aufgerufen wird. Der Grund ist, dass **xlcAlert**aufgerufen wird, die nur von Befehlen ausgeführt werden können und die von einem Arbeitsblatt und nicht von einem Dialogfeld, einem Menü oder einer Befehlsleiste abgerufen werden müssen, damit **xlfCaller** einen Verweis zurückgibt. 
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

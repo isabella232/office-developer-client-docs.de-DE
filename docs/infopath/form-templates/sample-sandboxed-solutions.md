@@ -1,43 +1,43 @@
 ---
-title: Beispiele für sandkastenlösungen
+title: Beispiel-Sandkastenlösungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 415fa0fa-b7b7-4acb-a437-f54c34064004
-description: Dieses Thema enthält zwei Beispiele, in denen der Art der Code zeigt an, dass Sie in einer InfoPath-sandkastenlösung und zum Veröffentlichen der Formularvorlage schreiben können.
-ms.openlocfilehash: b0874e34d843850df55eee87d689ce0d01112635
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieses Thema enthält zwei Beispiele, in denen die Art von Code angezeigt wird, den Sie in einer Sandbox-Lösung in InfoPath schreiben können, und wie die Formularvorlage veröffentlicht wird.
+ms.openlocfilehash: 56a9a2a765100ef327790265c7cf734903268bed
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303500"
 ---
-# <a name="sample-sandboxed-solutions"></a>Beispiele für sandkastenlösungen
+# <a name="sample-sandboxed-solutions"></a>Beispiel-Sandkastenlösungen
 
-InfoPath-Formulare mit verwaltetem Code können aus dem InfoPath-Designer mit der SharePoint-Infrastruktur sandkastenlösung veröffentlicht werden. Dieses Thema enthält zwei Beispiele, in denen der Art der Code zeigt an, dass Sie in einer InfoPath-sandkastenlösung und zum Veröffentlichen der Formularvorlage schreiben können.
+InfoPath-Formulare mit verwaltetem Code können im InfoPath-Designer in der SharePoint-Sandbox-Lösungsinfrastruktur veröffentlicht werden. Dieses Thema enthält zwei Beispiele, in denen die Art von Code angezeigt wird, den Sie in einer Sandbox-Lösung in InfoPath schreiben können, und wie die Formularvorlage veröffentlicht wird.
   
-## <a name="example-1-sorting-data-in-an-order-form"></a>In Beispiel 1: Sortieren von Daten in einem Bestellformular
+## <a name="example-1-sorting-data-in-an-order-form"></a>Beispiel 1: Sortieren von Daten in einem Bestellformular
 
-Eine nützliche Aufgabe, die Sie ausführen können, mithilfe von Code in einem InfoPath-Formular ist zum Sortieren von Daten in einer wiederholten Tabelle. Zu diesem Zweck ordnet der Code die Knoten in der zugrunde liegenden XML-Dokument, das im InfoPath-Formular angezeigt wird. Obwohl das in diesem Thema beschriebene Szenario für die Veröffentlichung direkt in InfoPath als sandkastenlösung gerichtet ist, können sie auch als vom Administrator genehmigten Formularvorlage bereitgestellt werden.
+Eine sinnvolle Aufgabe, die Sie mithilfe von Code in einem InfoPath-Formular ausführen können, besteht darin, Daten in einer wiederholten Tabelle zu sortieren. Hierzu werden die Knoten im zugrunde liegenden XML-Dokument, die im InfoPath-Formular angezeigt werden, neu angeordnet. Obwohl das in diesem Thema beschriebene Szenario für die Veröffentlichung direkt aus InfoPath als sandkastenlösung vorgesehen ist, kann es auch als vom Administrator genehmigte Formularvorlage bereitgestellt werden.
   
 Stellen Sie vor Beginn sicher, dass die folgenden Anforderungen erfüllt sind.
   
-- Sie sind Administrator einer Websitesammlung auf der SharePoint Server 2010 oder SharePoint Foundation 2010-Website, in dem Sie das Formular veröffentlichen möchten.
+- Sie sind Websitesammlungsadministrator auf der SharePoint Server 2010-oder SharePoint Foundation 2010-Website, auf der Sie das Formular veröffentlichen möchten.
     
-- Überprüfen Sie mit dem Farmadministrator, um sicherzustellen, dass der Microsoft SharePoint Foundation Sandboxed Code-Dienst auf dem Server ausgeführt wird. Weitere Informationen finden Sie unter [Publishing Forms with Code](publishing-forms-with-code.md).
+- Erkundigen Sie sich beim Farmadministrator, ob der Microsoft SharePoint Foundation-Sandkasten-Code Dienst auf dem Server ausgeführt wird. Weitere Informationen finden Sie unter [Veröffentlichen von Formularen mit Code](publishing-forms-with-code.md).
     
-- Die Programmiersprache, die Sie für die Formularvorlage ausgewählt haben ist entweder **c#** oder **Visual Basic** nach dem ohne einen beliebigen Versionsnamen der früheren. Die InfoPath 2007-kompatiblen und InfoPath 2003-kompatiblen Versionen der Programmiersprachen und Objektmodelle werden für sandkastenlösungen nicht unterstützt. Weitere Informationen zum Angeben der Programmiersprache finden Sie unter [Entwickeln mit Visual Studio](how-to-develop-with-visual-studio.md).
+- Sie haben als Programmiersprache für die Formularvorlage **C#** oder **Visual Basic** ohne früheren Versionsnamen dahinter ausgewählt. Die InfoPath 2007-kompatiblen und InfoPath 2003-kompatiblen Versionen der Programmiersprachen und Objektmodelle werden für sandkastenlösungen nicht unterstützt. Weitere Informationen dazu, wie Sie die Programmiersprache angeben, finden Sie unter [develop with Visual Studio](how-to-develop-with-visual-studio.md).
     
-Führen Sie die folgenden Schritte aus, um eine Formularvorlage zu erstellen, die die Daten in einem **Wiederholte Tabelle** -Steuerelement im Formular sortiert. 
+Führen Sie die folgenden Schritte aus, um eine Formularvorlage zu erstellen, durch die die Daten in einem **Wiederholte Tabelle**-Steuerelement im Formular sortiert werden. 
   
 ### <a name="to-create-a-form-template-that-programmatically-sorts-data-in-the-form"></a>So erstellen Sie eine Formularvorlage zum programmatischen Sortieren von Daten im Formular
 
-1. Erstellen Sie eine neue Formularvorlage im InfoPath-Designer, und fügen Sie ein Steuerelement **Wiederholte Tabelle** auf das Formular. Der Beispielcode in diesem Beispiel werden die Zeilen basierend auf der ersten Spalte in der Tabelle sortiert, aber Sie können den Code zum Arbeiten mit einer beliebigen Spalte ganz einfach ändern. 
+1. Erstellen Sie eine neue Formularvorlage im InfoPath-Designer, und fügen Sie dem Formular ein Steuerelement für **wiederholte Tabellen** hinzu. Im Beispielcode für dieses Beispiel werden die Zeilen basierend auf der ersten Spalte in der Tabelle sortiert, aber Sie können den Code leicht ändern, um mit einer beliebigen Spalte zu arbeiten. 
     
-2. Fügen Sie dem Formular ein **Button** -Steuerelement. Der Code zum Sortieren der Tabelle wird der Ereignishandler für die Schaltfläche **Clicked** -Ereignis hinzugefügt werden, aber Sie können auch ein anderes Ereignis für diesen Zweck verwenden. 
+2. Fügen Sie dem Formular ein **Schaltfläche**-Steuerelement hinzu. Der Code zum Sortieren der Tabelle wird dem Ereignishandler für das Clicked-Ereignis der **** Schaltfläche hinzugefügt, aber Sie können zu diesem Zweck auch ein anderes Ereignis verwenden. 
     
-3. Wählen Sie die Schaltfläche aus, klicken Sie auf der Registerkarte **Eigenschaften** , und klicken Sie dann auf **Benutzerdefinierter Code**. Wenn das Formular noch nicht gespeichert wurde, Sie werden aufgefordert, ihn zu speichern, und klicken Sie dann im Code-Editor wird mit dem Mauszeiger in-Ereignishandler der Schaltfläche geöffnet.
+3. Wählen Sie die Schaltfläche aus, klicken Sie auf die Registerkarte **Eigenschaften**, und klicken Sie dann auf **Benutzerdefinierter Code**. Wenn das Formular noch nicht gespeichert wurde, werden Sie zum Speichern aufgefordert. Anschließend wird der Code-Editor mit dem Cursor im Ereignishandler der Schaltfläche geöffnet.
     
 4. Fügen Sie den folgenden Code in den Ereignishandler der Schaltfläche ein. Durch den Code werden die Elemente aus der ersten Spalte in einem Array platziert, das Array wird sortiert, und dann wird die Tabelle basierend auf dem sortierten Array neu angeordnet. Bei diesem Code wird angenommen, dass es sich bei den zu sortierenden Daten um Zeichenfolgedaten handelt.
     
@@ -133,74 +133,74 @@ Führen Sie die folgenden Schritte aus, um eine Formularvorlage zu erstellen, di
         Me.NamespaceManager).InnerXml = newTableXML
    ```
 
-5. Veröffentlichen Sie das Formular mithilfe der folgenden Schritte aus:
+5. Veröffentlichen Sie das Formular mithilfe der folgenden Schritte:
     
-    1. Klicken Sie auf der Registerkarte **Veröffentlichen** in der Backstage-Ansicht auf **SharePoint Server** . 
+    1. Klicken Sie auf der Registerkarte **veröffentlichen** in der backStaging auf **SharePoint Server** . 
         
-    2. Geben Sie die URL der SharePoint-Website veröffentlichen, und klicken Sie dann auf **Weiter**. 
+    2. Geben Sie die URL der SharePoint-Website ein, auf der das Formular veröffentlicht werden soll, und klicken Sie dann auf **Weiter**. 
         
        > [!IMPORTANT]
-       > Sie müssen ein Websitesammlungsadministrator auf dieser Website zum Veröffentlichen dieser Formularvorlage als sandkastenlösung sein. 
+       > Sie müssen Websitesammlungsadministrator auf dieser Website sein, um diese Formularvorlage als sandkastenlösung zu veröffentlichen. 
     
-    3. Wählen Sie **Formularbibliothek**aus, und klicken Sie dann auf **Weiter**.
+    3. Wählen Sie **Formularbibliothek** aus, und klicken Sie dann auf **Weiter**.
         
-    4. Wählen Sie **eine neue Formularbibliothek erstellen**aus, und klicken Sie dann auf **Weiter**.
+    4. Wählen Sie **Neue Formularbibliothek erstellen** aus, und klicken Sie dann auf **Weiter**.
         
-    5. Geben Sie den Namen und eine Beschreibung für die Formularbibliothek ein, und klicken Sie dann auf **Weiter**.
+    5. Geben Sie den Namen und die Beschreibungen für die Formularbibliothek ein, und klicken Sie dann auf **Weiter**.
         
     6. Klicken Sie auf **Veröffentlichen**.
     
-## <a name="example-2-managing-vendors-in-a-sharepoint-list"></a>Beispiel 2: Verwalten von Anbietern in einer SharePoint-Liste
+## <a name="example-2-managing-vendors-in-a-sharepoint-list"></a>Beispiel 2: Verwalten von Kreditoren in einer SharePoint-Liste
 
-In diesem Beispiel umfasst Programmieren mit dem Microsoft SharePoint Foundation 2010-Objektmodell. Zu diesem Zweck müssen Sie einen Verweis auf die Microsoft.SharePoint.dll-Assembly einrichten, die mit eine lizenzierte Version von SharePoint Server 2010 installiert wird.
+Dieses Beispiel umfasst das Programmieren mit dem Microsoft SharePoint Foundation 2010-Objektmodell. Hierzu müssen Sie einen Verweis auf die Microsoft. SharePoint. dll-Assembly erstellen, die mit einer lizenzierten Kopie von SharePoint Server 2010 installiert wird.
   
-Microsoft.SharePoint.Server.dll wird in C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI standardmäßig installiert. Diese DLL muss in Projekten, in dem Programmieren der SharePoint-Objektmodell, enthalten sein. Wenn Sie einen Verweis auf die Microsoft.SharePoint.dll in einem Projekt auf Visual Studio 2012 eingerichtet haben, öffnen Sie den **Code-Editor**, und klicken Sie dann im Menü **Extras** auf **Verweis hinzufügen** . Klicken Sie im Dialogfeld **Verweis hinzufügen** klicken Sie auf die Registerkarte **Durchsuchen** , geben Sie den Speicherort der Microsoft.SharePoint.dll-Datei, und klicken Sie dann auf **OK**. Dadurch wird die Microsoft.SharePoint.dll in das Projektverzeichnis kopiert, damit Sie SharePoint Foundation 2010 Objektmodellelemente in InfoPath-Lösung verwenden können.
+Microsoft. SharePoint. Server. dll wird standardmäßig in C:\Programme\Microsoft Shared\Web Server Extensions\14\ISAPI installiert. Diese DLL muss in Projekten enthalten sein, in denen Sie das SharePoint-Objektmodell programmieren. Wenn Sie einen Verweis auf die Microsoft. SharePoint. dll in einem Visual Studio 2012-Projekt erstellen möchten, öffnen Sie den **Code-Editor**, und klicken Sie dann im Menü **Extras** auf **Verweis hinzufügen** . Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Durchsuchen** , geben Sie den Speicherort der Datei Microsoft. SharePoint. dll an, und klicken Sie dann auf **OK**. Dadurch wird die Microsoft. SharePoint. dll in das Projektverzeichnis kopiert, sodass Sie die SharePoint Foundation 2010-Objektmodellelemente in Ihrer InfoPath-Lösung verwenden können.
   
-### <a name="designing-the-form-and-developing-the-code"></a>Das Formular entwerfen und Entwickeln des Codes
+### <a name="designing-the-form-and-developing-the-code"></a>Entwerfen des Formulars und entwickeln des Codes
 
-Über Code in einem InfoPath-Formular können Sie das SharePoint-Objektmodell verwenden, Erstellen von Elementen in Nachschlagelisten. Dies ist nützlich, wenn Sie ein Dropdown-Listenfeld aus einer SharePoint-Liste füllen und neue Werte es hinzufügen, ohne zu ein gesonderten Formular erstellen möchten. In diesem Beispiel wird ein Kombinationsfeld verwendet, um alle der Werte, die derzeit in der Liste angezeigt und erstellt die Programmierlogik der Wert der Liste hinzu, wenn er nicht bereits vorhanden ist.
+Anhand von Code in einem InfoPath-Formular können Sie das SharePoint-Objektmodell verwenden, um Elemente in Nachschlagelisten zu erstellen. Dies ist hilfreich, wenn Sie ein Dropdownfeld aus einer SharePoint-Liste auffüllen und neue Werte hinzufügen möchten, ohne ein separates Formular zu erstellen. In diesem Beispiel wird ein Kombinationsfeld verwendet, um alle Werte anzuzeigen, die derzeit in der Liste enthalten sind, und es wird eine Programmierlogik erstellt, um den Wert zur Liste hinzuzufügen, falls dieser noch nicht vorhanden ist.
   
 ### <a name="to-create-a-form-template-that-can-add-new-items-to-a-combo-box-based-on-a-sharepoint-list"></a>So erstellen Sie eine Formularvorlage zum Hinzufügen neuer Elemente zu einem Kombinationsfeld, das auf einer SharePoint-Liste basiert
 
-1. Erstellen Sie eine einfache benutzerdefinierte Liste auf einer SharePoint Server 2010-Server, und nennen Sie es MyList. Im folgenden Beispiel wird ein **Kombinationsfeld** an das Feld **Titel** dieser Liste gebunden. 
+1. Erstellen Sie eine einfache benutzerdefinierte Liste auf einem SharePoint Server 2010-Server, und nennen Sie Sie myList. Im folgenden Beispiel wird ein **Kombinationsfeld** verwendet, das an das Feld **Title** dieser Liste gebunden ist. 
     
-2. Erstellen Sie ein neues **Leeres Formular** im InfoPath-Designer, fügen Sie ein **Kombinationsfeld** -Steuerelement auf Ihrem Formular ein, und benennen Sie das Feld, an das Kombinationsfeld, um in MyCombo gebunden.
+2. Erstellen Sie ein neues **leeres Formular** in InfoPath Designer, fügen Sie ein **Kombinationsfeld** -Steuerelement in das Formular ein, und benennen Sie das Feld, das an das Kombinationsfeld gebunden ist, in mycombo um.
     
-3. Herstellen der Verbindungs zu der Liste, die zum Auffüllen des Kombinationsfelds mit den folgenden Schritten verwendet werden:
+3. Erstellen Sie die Datenverbindung mit der Liste, die zum Auffüllen des Kombinationsfelds verwendet werden soll, indem Sie die folgenden Schritte ausführen:
     
-    1. Klicken Sie auf der Registerkarte **Daten** auf Schaltfläche in der Gruppe **Externe Daten** **Aus SharePoint-Liste** . 
+    1. Klicken Sie auf der Registerkarte **Daten** in der Gruppe **Externe Daten** auf die Schaltfläche**Aus SharePoint-Liste**. 
         
-    2. Geben Sie die URL für die Website, die die Liste enthält, und klicken Sie dann auf **Weiter**.
+    2. Geben Sie die URL der Website ein, die die Liste enthält, und klicken Sie dann auf **Weiter**.
         
-    3. Wählen Sie aus der Liste, und klicken Sie dann auf **Weiter**.
+    3. Wählen Sie die Liste aus, und klicken Sie dann auf **Weiter**.
         
-    4. Wählen Sie die Felder, die Sie aufnehmen möchten, für die in diesem Beispiel wird, wählen Sie Titel und die gleiche ID. Titel enthält die Werte für die Suche. Klicken Sie auf **Weiter**.
+    4. Wählen Sie die einzuschließenden Felder aus (in diesem Beispiel Title und ID). Title enthält die Werte zum Nachschlagen. Klicken Sie auf **Weiter**.
         
-    5. Klicken Sie auf dem folgenden Bildschirm auf **Weiter** . 
+    5. Klicken Sie auf dem folgenden Bildschirm auf **Weiter**. 
         
-    6. Nennen Sie die Datenverbindung LookupList, und klicken Sie dann auf **Fertig stellen**.
+    6. Benennen Sie die Datenverbindung Lookuplist, und klicken Sie dann auf **Fertig stellen**.
     
-4. Füllen Sie die Werte im Kombinationsfeld aus der Liste mit den folgenden Schritten:
+4. Füllen Sie die Werte im Kombinationsfeld aus der Liste aus, indem Sie die folgenden Schritte ausführen:
     
     1. Wählen Sie das in Schritt 1 erstellte Kombinationsfeld aus.
         
-    2. Klicken Sie auf der Registerkarte **Eigenschaften von Tools** des Menübands auf **Auswahlmöglichkeiten bearbeiten** . 
+    2. Klicken Sie auf der Registerkarte **Eigenschaften von Steuerelementtools** des Menübands auf **Auswahlmöglichkeiten bearbeiten**. 
         
-    3. Wählen Sie **Auswahl aus einer externen Datenquelle abrufen**.
+    3. Wählen Sie **Auswahl aus einer externen Datenquelle abrufen** aus.
         
-    4. Stellen Sie sicher, dass **Datenquelle** auf die Datenverbindung festgelegt ist, die Sie in Schritt 2 erstellt haben. 
+    4. Stellen Sie sicher, dass **Datenquelle** auf die in Schritt 2 erstellte Datenverbindung festgelegt ist. 
         
     5. Legen Sie den Wert und den Anzeigenamen auf Title fest.
         
-    6. Klicken Sie auf der Registerkarte **browserformularen** **immer** unter **Postback Einstellungen**wählen Sie aus, und klicken Sie dann auf **OK** , um das Dialogfeld Eigenschaften zu schließen. 
+    6. Wählen Sie auf der Registerkarte **Browser Formulare** **immer** unter **Postfacheinstellungen**aus, und klicken Sie dann auf **OK** , um das DialogfeldEigenschaften zu schließen. 
     
-5. Stellen Sie sicher, dass im Kombinationsfeld noch ausgewählt ist, und klicken Sie dann auf der Registerkarte **Entwicklertools** des Menübands auf **Ausgelöstes Ereignis** . 
+5. Stellen Sie sicher, dass das Kombinationsfeld weiterhin ausgewählt ist, und klicken Sie dann auf der Registerkarte **Entwicklertools** des Menübands auf **geändert** . 
     
-    Wenn das Formular noch nicht gespeichert ist, werden Sie aufgefordert, zu speichern. Und klicken Sie dann Code-Editor-Fenster wird geöffnet, mit dem Mauszeiger in der `myCombo_Changed` -Ereignishandler. 
+    Wenn das Formular noch nicht gespeichert wurde, werden Sie zum Speichern aufgefordert. Und dann wird das Code-Editor-Fenster mit dem Cursor im `myCombo_Changed` Ereignishandler geöffnet. 
     
-6. Fügen Sie wie weiter oben in diesem Thema beschrieben einen Verweis auf die Microsoft.SharePoint.dll-Assembly hinzu. Weitere Informationen zum Verweisen auf die Microsoft.SharePoint-Assembly finden Sie unter [SharePoint-Objektmodellmember verwenden](how-to-use-sharepoint-object-model-members.md).
+6. Fügen Sie wie weiter oben in diesem Thema beschrieben einen Verweis auf die Microsoft.SharePoint.dll-Assembly hinzu. Weitere Informationen zum Verweisen auf die Microsoft. SharePoint-Assembly finden Sie unter [use SharePoint Object Model Members](how-to-use-sharepoint-object-model-members.md).
     
-7. Fügen Sie den folgenden Code in die `myCombo_Changed` -Ereignishandler. 
+7. Fügen Sie den folgenden Code in `myCombo_Changed` den Ereignishandler ein. 
     
    ```cs
     // Use InfoPath OM's ServerInfo.SharePointSiteUrl property to programmatically
@@ -262,7 +262,7 @@ Microsoft.SharePoint.Server.dll wird in C:\Program Files\Common Files\Microsoft 
     End Using
    ```
 
-8. Im vorherigen Codebeispiel hängt von der `GetDomValue` Hilfsfunktion. Fügen Sie den folgenden Code für die `GetDomValue` Hilfsfunktion unten die `myCombo_Changed` -Ereignishandlerfunktion. 
+8. Das obige Codebeispiel hängt von der `GetDomValue` Hilfsfunktion ab. Fügen Sie den folgenden Code für `GetDomValue` die Hilfsfunktion unter `myCombo_Changed` der Ereignishandlerfunktion ein. 
     
    ```cs
     private string GetDomValue(string XpathToGet)
@@ -277,23 +277,23 @@ Microsoft.SharePoint.Server.dll wird in C:\Program Files\Common Files\Microsoft 
     End Function
    ```
 
-9. Veröffentlichen Sie das Formular mithilfe der folgenden Schritte aus:
+9. Veröffentlichen Sie das Formular mithilfe der folgenden Schritte:
     
-    1. Klicken Sie auf der Registerkarte **Veröffentlichen** in der Backstage-Ansicht auf **SharePoint Server** . 
+    1. Klicken Sie auf der Registerkarte **veröffentlichen** in der backStaging auf **SharePoint Server** . 
         
-    2. Geben Sie die URL der SharePoint-Website veröffentlichen, und klicken Sie dann auf **Weiter**. 
+    2. Geben Sie die URL der SharePoint-Website ein, auf der das Formular veröffentlicht werden soll, und klicken Sie dann auf **Weiter**. 
         
        > [!IMPORTANT]
-       > Sie müssen ein Websitesammlungsadministrator auf dieser Website zum Veröffentlichen dieser Formularvorlage als sandkastenlösung sein. 
+       > Sie müssen Websitesammlungsadministrator auf dieser Website sein, um diese Formularvorlage als sandkastenlösung zu veröffentlichen. 
     
-    3. Wählen Sie **Formularbibliothek**aus, und klicken Sie dann auf **Weiter**.
+    3. Wählen Sie **Formularbibliothek** aus, und klicken Sie dann auf **Weiter**.
         
-    4. Wählen Sie **eine neue Formularbibliothek erstellen**aus, und klicken Sie dann auf **Weiter**.
+    4. Wählen Sie **Neue Formularbibliothek erstellen** aus, und klicken Sie dann auf **Weiter**.
         
-    5. Geben Sie den Namen und eine Beschreibung für die Formularbibliothek ein, und klicken Sie dann auf **Weiter**.
+    5. Geben Sie den Namen und die Beschreibung für die Formularbibliothek ein, und klicken Sie dann auf **weiter**.
         
     6. Klicken Sie auf **Veröffentlichen**.
         
-    7. Nachdem das Formular erfolgreich veröffentlicht wurde, öffnen Sie das Formular in der Formularbibliothek, und fügen Sie einen neuen Wert in das Kombinationsfeld zum Testen des Codes. Wenn Sie das Feld in MyCombo beenden, wird der neue Wert in der SharePoint-Liste geschrieben werden. 
+    7. Nachdem das Formular erfolgreich veröffentlicht wurde, öffnen Sie das Formular aus der Formularbibliothek, und fügen Sie im Kombinationsfeld einen neuen Wert hinzu, um den Code zu testen. Wenn Sie das myCombo-Feld beenden, wird der neue Wert in die SharePoint-Liste geschrieben. 
     
 

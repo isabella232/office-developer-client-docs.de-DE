@@ -1,38 +1,38 @@
 ---
-title: Verwenden Sie nicht kompatibel mit InfoPath Microsoft.Office.Interop.InfoPath.SemiTrust-Elemente
+title: Verwenden von Microsoft. Office. Interop. InfoPath. SemiTrust-Membern, die nicht mit InfoPath kompatibel sind
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- InfoPath 2003-kompatible Formularvorlagen mithilfe von Infopath 2007-features
+- InfoPath 2003-kompatible Formularvorlagen mit InfoPath 2007-Features
 localization_priority: Normal
 ms.assetid: d082f3a3-387a-4db1-bbad-495c326b8ee3
-description: Das vom Microsoft.Office.Interop.InfoPath.SemiTrust-Namespace bereitgestellten Objektmodell enthält Objekte und Elemente, die neuen Funktionen bereitstellen, der die Office InfoPath 2007 und InfoPath hinzugefügt wurde.
-ms.openlocfilehash: 3d0e9b450dab6a821af1f698d9859b21e85abf81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Das vom Microsoft. Office. Interop. InfoPath. SemiTrust-Namespace bereitgestellte Objektmodell enthält Objekte und Elemente, die neue Funktionalität bereitstellen, die Office InfoPath 2007 und InfoPath hinzugefügt wurde.
+ms.openlocfilehash: 45f7607aec8ccfd653780a550df0823730835a86
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300084"
 ---
-# <a name="use-microsoftofficeinteropinfopathsemitrust-members-not-compatible-with-infopath"></a>Verwenden Sie nicht kompatibel mit InfoPath Microsoft.Office.Interop.InfoPath.SemiTrust-Elemente
+# <a name="use-microsoftofficeinteropinfopathsemitrust-members-not-compatible-with-infopath"></a>Verwenden von Microsoft. Office. Interop. InfoPath. SemiTrust-Membern, die nicht mit InfoPath kompatibel sind
 
-Beim Hinzufügen von Code zu einer Formularvorlage, die mit dem Microsoft Office InfoPath 2003 Toolkit erstellt wurde, oder erstellen eine neue Formularvorlage, die mit dem InfoPath 2003-kompatible Objektmodell (gemäß [erstellen, die ein Formular mithilfe des InfoPath 2003-Objekts verwendet Modell](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)), in der Standardeinstellung Microsoft InfoPath verwendet eine Teilmenge der Objekte und Member vom [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace bereitgestellt, identisch mit denen von InfoPath 2003 verwendet werden. Dies erfolgt, um Kompatibilität mit InfoPath 2003 bereitzustellen. Das vom [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace bereitgestellten Objektmodell enthält jedoch zusätzliche Objekte und Elemente, die neuen Funktionen bereitstellen, der die Office InfoPath 2007 und InfoPath hinzugefügt wurde. 
+Beim Hinzufügen von Code zu einer Formularvorlage, die mit dem Microsoft Office InfoPath 2003 Toolkit erstellt wurde, oder erstellen Sie eine neue Formularvorlage, die mit dem InfoPath 2003-kompatiblen Objektmodell verwendet werden kann (siehe [Erstellen einer Formularvorlage mit dem infopath 2003-Objekt Model](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)) standardmäßig verwendet Microsoft InfoPath eine Teilmenge der vom [Microsoft. Office. Interop. InfoPath. SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace bereitgestellten Objekte und Member, die mit denen von InfoPath 2003 identisch sind. Dies dient der Kompatibilität mit InfoPath 2003. Das vom [Microsoft. Office. Interop. InfoPath. SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace bereitgestellte Objektmodell enthält jedoch zusätzliche Objekte und Elemente, die neue Funktionalität bereitstellen, die Office InfoPath 2007 und InfoPath hinzugefügt wurde. 
   
-Beispielsweise bieten die [Berechtigung](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Permission.aspx) und [PermissionObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.PermissionObject.aspx) -Schnittstellen neue Informationen Rights Management Funktionalität, die in InfoPath 2003 nicht verfügbar ist. Beim Öffnen oder erstellen Sie die Formularvorlage mit verwaltetem Code mit InfoPath 2003-kompatible Objektmodell sind diese und andere neue Objekte, Microsoft.Office.Interop.InfoPath.SemiTrust-Namespace hinzugefügt wurde nicht standardmäßig verfügbar. 
+Die PermissionObject- [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.PermissionObject.aspx) und [Permission](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Permission.aspx) -Schnittstellen bieten beispielsweise neue Funktionen zur Verwaltung von Informationsrechten, die in InfoPath 2003 nicht verfügbar sind. Dies und andere neue Objekte, die dem Microsoft. Office. Interop. InfoPath. SemiTrust-Namespace hinzugefügt werden, sind nicht standardmäßig verfügbar, wenn Sie eine Formularvorlage mit InfoPath 2003-kompatiblen Objektmodell öffnen oder erstellen. 
   
-Ähnlich wie, während die [_XDocument2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.aspx) -Schnittstelle bietet die gleiche Funktionalität wie InfoPath 2003; die Schnittstelle [_XDocument3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument3.aspx) wurde mit Versionsangabe Einbeziehung zusätzliche Eigenschaften und Methoden, die in Office InfoPath 2007 hinzugefügt wurden, und die [_XDocument4](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument4.aspx) wurde mit Versionsangabe Einbeziehung zusätzliche Eigenschaften und Methoden, die in InfoPath hinzugefügt wurden . 
+Entsprechend stellt die [_XDocument2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.aspx) -Schnittstelle dieselbe Funktionalität wie InfoPath 2003 bereit. die [_XDocument3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument3.aspx) -Schnittstelle wurde so erweitert, dass Sie zusätzliche Eigenschaften und Methoden enthält, die in Office InfoPath 2007 hinzugefügt wurden, und die [_XDocument4](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument4.aspx) wurde mit zusätzlichen Eigenschaften und Methoden erweitert, die in InfoPath hinzugefügt wurden. . 
   
-Wenn Sie Objekte und Elemente, die in Office InfoPath 2007 hinzugefügt wurden verwenden möchten oder InfoPath in ein Formularvorlagenprojekt erstellt mithilfe des Objektmodells, das vom **Microsoft.Office.Interop.InfoPath.SemiTrust** -Namespace bereitgestellt, können Sie jedoch Code dazu, die verwendet Dieser Member werden nicht mit InfoPath 2003 kompatibel sein. 
+Wenn Sie in einem Formularvorlagenprojekt, das mit dem vom **Microsoft. Office. Interop. InfoPath. SemiTrust** -Namespace bereitgestellten Objektmodell erstellt wurde, Objekte und Elemente verwenden möchten, die in Office InfoPath 2007 oder InfoPath hinzugefügt wurden, können Sie dies tun, aber Code, der Diese Member sind nicht mit InfoPath 2003 kompatibel. 
   
 > [!NOTE]
-> Alle Formularvorlagen mit Geschäftslogik, die mit dem Objektmodell, das vom **Microsoft.Office.Interop.InfoPath.SemiTrust** -Namespace bereitgestellt, ob sie oder nicht, Objekte und Member kompatibel mit InfoPath verwenden erstellt werden für nicht unterstützt. browserfähige Formularvorlagen für Microsoft SharePoint Server 2010 mit InfoPath Forms Services bereitgestellt. Geschäftslogik für browserfähige Formularvorlagen muss das neue InfoPath verwaltetem Code Objektmodell des [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) -Namespace verwenden. 
+> Alle Formularvorlagen mit Geschäftslogik, die mit dem vom **Microsoft. Office. Interop. InfoPath. SemiTrust** -Namespace bereitgestellten Objektmodell erstellt wurden, unabhängig davon, ob Sie Objekte und Member verwenden, die mit InfoPath kompatibel sind oder nicht, werden für browserfähige Formularvorlagen, die für Microsoft SharePoint Server 2010 mit InfoPath Forms Services bereitgestellt werden. Die Geschäftslogik für browserfähige Formularvorlagen muss das neue InfoPath-Objektmodell mit verwaltetem Code verwenden, das vom [Microsoft. Office. InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) -Namespace bereitgestellt wird. 
   
 ## <a name="example"></a>Beispiel
 
 ### <a name="creating-an-xdocument-or-application-object-variable-to-access-new-object-model-members"></a>Erstellen einer XDocument- oder Anwendungsobjektvariablen zum Zugreifen auf neue Objektmodellmember
 
-Zugriff auf die neuen Objekte und Elemente, die in der **Microsoft.Office.Interop.InfoPath.SemiTrust** -Namespace zur Verfügung stehen, müssen Sie deklarieren und Objektvariablen auf die richtige Version der Schnittstelle, die diese Member implementiert umgewandelt. Standardmäßig die `thisXDocument` und `thisApplication` Variablen zugreifen, die InfoPath 2003-kompatible Versionen der entsprechenden **_XDocument2** und [_Application2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.aspx) Schnittstellen. Zugriff auf die **_XDocument3** und [_Application3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application3.aspx) Schnittstellen, die Zugriff auf die neue Funktionalität bereitstellen müssen Sie deklarieren Sie eine Objektvariable des Typs **_XDocument3** oder **_Application3** , und klicken Sie dann das von der `thisXDocument`oder `thisApplication` Variable auf den gleichen Typ wie in den folgenden Beispielen gezeigt. 
+Damit Sie auf die neuen im **Microsoft.Office.Interop.InfoPath.SemiTrust**-Namespace verfügbaren Objekte und Member zugreifen können, müssen Sie Objektvariablen deklarieren und in die richtige Version der Schnittstelle umwandeln, die diese Member implementiert. Standardmäßig greifen die `thisXDocument` und `thisApplication` -variablen auf die InfoPath 2003-kompatiblen Versionen der entsprechenden **_XDocument2** -und [_Application2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.aspx) -Schnittstellen zu. Für den Zugriff auf die **_XDocument3** -und [_Application3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application3.aspx) -Schnittstellen, die den Zugriff auf neue Funktionen ermöglichen, müssen Sie eine Objektvariable des **_XDocument3** -oder **_Application3** -Typs deklarieren und dann das von der `thisXDocument`oder `thisApplication` Variable auf den gleichen Typ, wie in den folgenden Beispielen gezeigt. 
   
 ```cs
 // Declare an object variable of type _XDocument3 and
@@ -66,9 +66,9 @@ Dim thisDocument As _XDocument3 = _
 
 ### <a name="accessing-a-new-object-from-the-xdocument-or-application-object-variable-using-an-accessor-property"></a>Zugreifen auf ein neues Objekt von der XDocument- oder Anwendungsobjektvariable aus mithilfe einer Accessoreigenschaft
 
-Nachdem Sie eine Variable, die spätere Version _ **XDocument3** oder **_Application3** Typ erstellt haben, können Sie es verwenden, greifen Sie auf ein Objekt oder Element, das neuen InfoPath-Funktionen bereitstellt. 
+Nachdem Sie eine Variable mit der höheren **XDocument3** -oder **_Application3** -Typ-Version erstellt haben, können Sie Sie für den Zugriff auf ein Objekt oder einen Member verwenden, das neue InfoPath-Funktionen bereitstellt. 
   
-Das folgende Beispiel zeigt, wie Sie eine Objektvariable vom Typ _ **XDocument3** mit der [Berechtigung](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument3.Permission.aspx) Accessor-Eigenschaft zum Zugriff auf die neue **Berechtigung** -Schnittstelle und dessen [Enabled](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Permission.Enabled.aspx) -Eigenschaft, um festzustellen, ob berechtigungseinstellungen sind für das Formular aktiviert. 
+Das folgende Beispiel zeigt, wie Sie eine Objektvariable vom Typ _ **XDocument3** mit der [Permission](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument3.Permission.aspx) -Accessor-Eigenschaft für den Zugriff auf die neue **Permission** -Schnittstelle und Ihre [Enabled](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Permission.Enabled.aspx) -Eigenschaft verwenden, um zu bestimmen, ob Berechtigungseinstellungen für das Formular aktiviert. 
   
 ```cs
 // Declare an object variable of type _XDocument3 and
@@ -95,9 +95,9 @@ thisXDocument.UI.Alert(thisDocument3.Permission.Enabled.ToString())
 
 Wenn einem Objekt, das im InfoPath 2003-Objektmodell vorhanden war, neue Eigenschaften oder Methoden hinzugefügt werden, hat das Objekt, das diese neuen Member implementiert, einen Versionsnamen.
   
-Das [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo.aspx) -Objekt stellt beispielsweise keinen Zugriff auf zwei neue Eigenschaften, die nur verfügbar sind, wenn Sie die [ViewInfo2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo2.aspx) -Versionsobjekt verwenden: die Eigenschaften [Caption](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo2.Caption.aspx) und [HideName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo2.HideName.aspx) . 
+Das [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo.aspx) -Objekt bietet beispielsweise keinen Zugriff auf zwei neue Eigenschaften, die nur verfügbar sind, wenn das [ViewInfo2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo2.aspx) -Objekt mit Versionsverwaltung verwendet wird: die Eigenschaften [Caption](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo2.Caption.aspx) und [HideName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfo2.HideName.aspx) . 
   
-Um diese Eigenschaften zuzugreifen, müssen Sie deklarieren Sie eine Objektvariable vom Typ **ViewInfo2** und wandeln Sie das Objekt, das durch die [ViewInfos](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument3.ViewInfos.aspx) -Eigenschaft der Objektvariablen _ **XDocument3** den **ViewInfo2** -Typ zurückgegeben, wie im folgenden Beispiel Beispiel. 
+Für den Zugriff auf diese Eigenschaften müssen Sie eine Objektvariable vom Typ **ViewInfo2** deklarieren und das von der ViewInfos [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument3.ViewInfos.aspx) -Eigenschaft der _ **XDocument3** -Objektvariable zurückgegebene Objekt in den **ViewInfo2** -Typ umwandeln, wie im folgenden dargestellt. Beispiel. 
   
 ```cs
 // Declare an object variable of type _XDocument3 and

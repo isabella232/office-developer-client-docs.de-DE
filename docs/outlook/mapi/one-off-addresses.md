@@ -1,5 +1,5 @@
 ---
-title: Einmal-Adressen
+title: Einmaladressen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,50 +7,50 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9224c694-b26f-42c7-9404-ee2dd832cfbb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 504ae8dddbddb1c7049574b1bdcc575a10a62c8f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e6bda55951d8df5c5da272750c631ec105b2ccf2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279636"
 ---
-# <a name="one-off-addresses"></a>Einmal-Adressen
+# <a name="one-off-addresses"></a>Einmaladressen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einmalige-Adressen dienen zum Senden von Nachrichten an Empfänger einmaligen Empfänger, die nicht über einen entsprechenden Eintrag in einer der der Sitzung Address Book Container verfügen. Clients können einmalige-Adressen erstellen, wenn sie neue Einträge Adressbuch oder neue Empfänger an die Empfängerliste von ausgehenden Nachrichten hinzufügen. Einmalige-Adressen können Container hinzugefügt werden, die geändert werden kann.
+Einmalige Adressen werden verwendet, um Nachrichten an einmalige Empfänger zu senden, Empfänger, die keinen entsprechenden Eintrag in einem der Adressbuchcontainer der Sitzung haben. Clients können einmalige Adressen erstellen, wenn Sie dem Adressbuch oder neuen Empfängern neue Einträge zur Empfängerliste einer ausgehenden Nachricht hinzufügen. Einmaladressen können jedem Container hinzugefügt werden, der änderbar ist.
   
-Zum Erstellen einer einmaligen Adresse verwenden Clients eine spezielle Vorlage mit Bearbeitungssteuerelementen für die Eingabe alle Informationen, die eine einmal Adresse darstellt. Einmalige-Adressen, wie Adressen anderer Typen verwenden ein vordefiniertes Formats ein. Das einmaligen Adressformat wird durch MAPI wie folgt definiert:
+Um eine einmalige Adresse zu erstellen, verwenden Clients eine spezielle Vorlage mit Bearbeitungssteuerelementen zum Eingeben aller Informationen, aus denen eine einmalige Adresse besteht. Einmalige Adressen, wie Adressen anderer Typen, verwenden ein vordefiniertes Format. Das einmalige Adressformat wird von MAPI wie folgt definiert:
   
 `Display name[Address type:Email address]`
   
-Es gibt sechs Komponenten in diesem Format und einige Regeln darüber, wie Sie Zeichen. In der folgenden Tabelle werden die Komponenten beschrieben.
+Es gibt sechs Komponenten in diesem Format und einige Regeln zum Zitieren von Zeichen. Die Komponenten werden in der folgenden Tabelle beschrieben.
   
-|**Komponente**|**Nutzung**|**Beschreibung**|
+|**Komponente**|**Verwendung**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Anzeigename  <br/> |Optional  <br/> |Wenn nicht vorhanden ist, wird **IAddrBook::ResolveName** sichtbaren Teil der e-Mail-Adresse als Anzeigename verwendet. Kann Leerzeichen enthalten. Weitere Informationen finden Sie unter [IAddrBook::ResolveName](iaddrbook-resolvename.md).  <br/> |
-|[  <br/> |Erforderlich  <br/> |Starten des Typ und die Adresse bezeichnet.  <br/> |
-|]  <br/> |Erforderlich  <br/> |Bezeichnet das Ende des Typ und die Adresse an. Wenn keine Leerzeichen dieses Zeichen folgt, wird der Eintrag nicht als ein benutzerdefinierter Empfänger behandelt.  <br/> |
-|Adresstyp  <br/> |Erforderlich  <br/> |Art der Adresse. wird ein bestimmtes Adressformat. Weitere Informationen finden Sie unter [MAPI-Adresstypen](mapi-address-types.md).  <br/> |
-|:  <br/> |Erforderlich  <br/> |Trennt den Adresstyp aus der e-Mail-Adresse.  <br/> |
-|E-Mail-Adresse  <br/> |Erforderlich  <br/> |Die Adresse des Empf�ngers. Kann Leerzeichen enthalten.  <br/> |
+|Distinguished Name (DN)  <br/> |Optional  <br/> |Wenn nicht vorhanden, verwendet **IAddrBook::** ResolveName den sichtbaren Teil der e-Mail-Adresse als Anzeigenamen. Kann Leerzeichen aufweisen. Weitere Informationen finden Sie unter [IAddrBook::](iaddrbook-resolvename.md)ResolveName.  <br/> |
+|[  <br/> |Erforderlich  <br/> |Gibt den Anfang der Typen-und Adressinformationen an.  <br/> |
+|]  <br/> |Erforderlich  <br/> |Gibt das Ende der Typen-und Adressinformationen an. Wenn ein anderer als Leerraum diesem Zeichen folgt, wird der Eintrag nicht als benutzerdefinierter Empfänger behandelt.  <br/> |
+|Adresstyp  <br/> |Erforderlich  <br/> |Adresstyp; ordnet einem bestimmten Adressformat zu. Weitere Informationen finden Sie unter [MAPI-Adresstypen](mapi-address-types.md).  <br/> |
+|:  <br/> |Erforderlich  <br/> |Trennt den Adresstyp von der e-Mail-Adresse.  <br/> |
+|E-Mail-Adresse  <br/> |Erforderlich  <br/> |Die Adresse des Empf�ngers. Kann Leerzeichen aufweisen.  <br/> |
    
-MAPI-Adressen an, wie Komma (,), Klammern ([]), von links Sonderzeichen kann verwendet werden bestimmte Gruppen von Anführungszeichen Zeichen und Doppelpunkt (:)) und einige untypeable Zeichen wie etwa die Wagenrücklauf zurück oder line Feed oder eine andere hexadezimale entsprechende. Das Angabe Zeichen ist die umgekehrten Schrägstrich (\). Aus diesem Grund, wenn Clients oder Anbieter einen umgekehrten Schrägstrich in einer Adresse einfügen müssen, müssen sie Länderkürzel es mit der Angabe Zeichen ("\\").
+MAPI verwendet bestimmte Sätze von Anführungszeichen, damit Adressen Sonderzeichen wie Komma (,), linke eckige Klammer ([) und Doppelpunkt (:) und einige nicht typisierte Zeichen wie die Wagenrücklauf-oder Zeilenvorschub oder eine andere hexadezimale Entsprechung. Das Anführungszeichen ist der\)umgekehrte Schrägstrich (. Wenn also Clients oder Anbieter einen umgekehrten Schrägstrich in eine Adresse einfügen müssen, müssen Sie ihn mit dem Anführungs\\Zeichen ("") bevorstehen.
   
-Clients und Dienstanbieter können diese Angabe Technik in die Felder nonfixed, darstellbares verwenden. Beispielsweise wird der folgende Eintrag in Bill Lee als Anzeigename, MSPEER als Adresstyp, übersetzt und \\Billll\in als die e-Mail-Adresse:
+Clients und Dienstanbieter können diese Angebots Methode in einem der nicht fixierten Felder verwenden. Der folgende Eintrag wird beispielsweise in Bill Lee als Anzeigename, MSPEER als Adresstyp und \\billll\in als e-Mail-Adresse übersetzt:
   
 `Bill Lee[MSPEER:\\\\billl\in]`
 
-Clients und -Dienstanbieter verwenden eine Angabe Zeichen, gefolgt von einem x und zwei hexadezimale Stellen, um spezielle Nontypeable Zeichen einzufügen, um die entsprechenden hexadezimalen darzustellen. Beispielsweise, wenn eine Adresse ein Nontypeable Zeichen enthält, der ein Wagenrücklauf entspricht zurückgegeben, (\0d) Hexadezimal, ein Client Geben sie als:
+Zum Einfügen spezieller nicht typisierter Zeichen verwenden Clients und Dienstanbieter ein Anführungszeichen, gefolgt von einem x-und zwei Hexadezimalziffern, um Ihre Hexadezimalentsprechung darzustellen. Wenn eine Adresse beispielsweise ein nicht typfähiges Zeichen hat, das einem Wagenrücklauf (\0d) in hexadezimaler Form entspricht, würde ein Client Sie wie folgt eingeben:
   
 `Fax Recipient[fax:recipient\x0dbuilding\x0doffice\x0d555-1212\x0d]`
 
-**IAddrBook::ResolveName** analysiert auch automatisch die meisten SMTP-Adressen, die Adressen mit dem folgenden Format gesucht: 
+**IAddrBook::** ResolveName analysiert auch automatisch die meisten SMTP-Adressen und sucht nach Adressen mit dem folgenden Format: 
   
 `XXX@YYY.ZZZ`
 
-Zwar nicht alle möglichen RFC822-Formate behandelt werden, ist die automatische Analyse für die meisten Benutzer ausreichend. **ResolveName** enthält diese Funktionalität, damit Benutzer SMTP-Adressen direkt in eine Nachricht eingeben und die Nachricht an das Internet-Benutzer umgeleitet wird. Die XXX YYY und ZZZ Komponenten der Adresse können eine oder mehrere Zeichen lang sein. Das @-Zeichen (@) kann nicht eingeschlossen werden in XXX, YYY oder ZZZ Adresse Komponenten und die Komponente YYY auch können nicht enthalten, den Zeitraum an. Da die folgenden Zeichen Sonderzeichen im SMTP-Adressen sind, konvertiert MAPI automatisch einen Anzeigenamen ein, die diese Zeichen in einer einmaligen Adresse enthält: 
+Obwohl nicht alle möglichen RFC822-Formate behandelt werden, ist diese automatische Analyse für die meisten Benutzer ausreichend. **** ResolveName enthält diese Funktionalität, mit der Benutzer SMTP-Adressen direkt in eine Nachricht eingeben können, und die Nachricht wird an den Internet Benutzer gesendet. Die XXX-, YYY-und ZZZ-Komponenten der Adresse können ein oder mehrere Zeichen sein. Das at-Zeichen (@) kann nicht in die Adresskomponenten XXX, YYY oder ZZZ eingeschlossen werden, und die YYY-Komponente kann auch den Zeitraum nicht enthalten. Da die folgenden Zeichen Sonderzeichen in SMTP-Adressen sind, konvertiert MAPI automatisch einen Anzeigenamen, der diese Zeichen enthält, in eine einmalige Adresse: 
   
 - \>\>
     
@@ -60,9 +60,9 @@ Zwar nicht alle möglichen RFC822-Formate behandelt werden, ist die automatische
     
 - .
     
-Jede einmaligen Adresse wird eine entsprechende einmaligen Eintrags-ID zugewiesen. Um diese Zuordnung zu machen, Clients **IAddrBook::CreateOneOff** aufrufen und Transportanbieter Aufrufen **IMAPISupport::CreateOneOff**. Weitere Informationen finden Sie unter [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md) und [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md). Bei der Verarbeitung eingehender Nachrichten erstellen Transportanbieter einmaligen-Eintragsbezeichner für Gateway-Adressen und Adressen, die von der Transport zugeordneten adressbuchanbietern implementierte bearbeitet werden können. Transportanbieter überprüfen Sie den Typ jeder Adresse in einer Nachricht zu ermitteln, ob es von der Transport zugeordnete Adressbuch-Dienstanbieter behandelt werden kann. Ist es nicht möglich, rufen Sie Transportanbieter **IMAPISupport::CreateOneOff** , um die Adresse einer einmaligen Eintrags-ID zuzuordnen. 
+Jeder einmaligen Adresse wird eine entsprechende einmalige Eintrags-ID zugewiesen. Um diese Zuweisung vorzunehmen, rufen die Clients **IAddrBook:: CreateOneOff** und Transportanbieter rufen **IMAPISupport:: CreateOneOff**auf. Weitere Informationen finden Sie unter [IAddrBook:: CreateOneOff](iaddrbook-createoneoff.md) und [IMAPISupport:: CreateOneOff](imapisupport-createoneoff.md). Bei der Verarbeitung eingehender Nachrichten erstellen Transportanbieter einmalige Eintrags-IDs für Gateway-Adressen und für Adressen, die von den zugeordneten Adressbuch Anbietern des Transports nicht bearbeitet werden können. Transport Anbieter überprüfen den Typ jeder Adresse in einer Nachricht, um zu bestimmen, ob Sie von einem Adressbuchanbieter verarbeitet werden kann, der dem Transport zugeordnet ist. Wenn dies nicht möglich ist, rufen Transportanbieter **IMAPISupport:: CreateOneOff** auf, um die Adresse mit einem einmaligen Eintragsbezeichner zu verknüpfen. 
   
-Einmaligen-Eintragsbezeichner enthalten die folgenden Informationen in der folgenden Reihenfolge:
+Einmalige Eintrags-IDs bieten die folgenden Informationen in der folgenden Reihenfolge:
   
 1. **MAPIUID**
     
@@ -70,13 +70,13 @@ Einmaligen-Eintragsbezeichner enthalten die folgenden Informationen in der folge
     
 3. Flags
     
-4. Anzeigename
+4. Distinguished Name (DN)
     
 5. Adresstyp
     
 6. E-Mail-Adresse
     
-In der Anrufe für **IAddrBook::CreateOneOff** und **IMAPISupport::CreateOneOff**können Clients und Transportanbieter ein Flag festlegen, der angibt, ob der Empfänger, dargestellt durch die einmaligen Adresse formatierten Text verarbeitet werden kann oder nicht oder eingebettete OLE Objekte. Um anzugeben, dass ein Empfänger formatierter Text und OLE-Objekte, Clients und Transport Anbieter Set das Flag MAPI_SEND_NO_RICH_INFO im Parameter _UlFlags_ verarbeitet werden kann. MAPI wird dann der einmaligen Empfänger **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md))-Eigenschaft auf false festgelegt. Wenn dieses Flag nicht festgelegt ist, wird MAPI **PR_SEND_RICH_INFO** auf TRUE festgelegt, es sei denn, die als eine SMTP-Adresse die Adresse der einmalige interpretiert wird. In diesem Fall eine wird standardmäßig auf "false" **PR_SEND_RICH_INFO** . 
+In den Aufrufen von **IAddrBook:: CreateOneOff** und **IMAPISupport:: CreateOneOff**können Clients und Transportanbieter ein Flag festlegen, das angibt, ob der durch die einmalige Adresse dargestellte Empfänger formatierten Text oder eingebettete OLE verarbeiten kann. Objekte. Um anzugeben, dass ein Empfänger formatierten Text und OLE-Objekte verarbeiten kann, legen Clients und Transportanbieter das MAPI_SEND_NO_RICH_INFO-Flag im _ulFlags_ -Parameter fest. Anschließend wird die **PR_SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md))-Eigenschaft des einmaligen Empfängers auf false festgelegt. Wenn dieses Flag nicht festgelegt ist, legt MAPI **PR_SEND_RICH_INFO** auf true fest, es sei denn, die einmalige Adresse wird als SMTP-Adresse interpretiert. In diesem Fall ist **PR_SEND_RICH_INFO** standardmäßig auf FALSE festgelegt. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 371b48c5-6d77-4d2d-890c-bb234c7eaabc
-description: Ruft eine ISocialSession-Schnittstelle.
-ms.openlocfilehash: 59e6f61e1954f64d875c6336b211dcb530100252
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft eine ISocialSession-Schnittstelle ab.
+ms.openlocfilehash: afa13bddd5cbbc53081f6ae7ddcc1671d1c40303
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285772"
 ---
 # <a name="isocialprovidergetsession"></a>ISocialProvider::GetSession
 
-Ruft eine [ISocialSession](isocialsessioniunknown.md) -Schnittstelle. 
+Ruft eine [ISocialSession](isocialsessioniunknown.md) -Schnittstelle ab. 
   
 ```cpp
 HRESULT _stdcall GetSession([out, retval] ISocialSession** session);
@@ -25,13 +25,13 @@ HRESULT _stdcall GetSession([out, retval] ISocialSession** session);
 
 ## <a name="parameters"></a>Parameter
 
-_Sitzung_
+_session_
   
-> [out] Eine **ISocialSession** -Schnittstelle. 
+> [out] Eine **ISocialSession**-Schnittstelle. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Outlook Social Connector (OSC) verwendet die **ISocialSession** -Schnittstelle in sozialen Netzwerken anmelden. 
+Der Outlook Connector für soziale Netzwerke (OSC) verwendet die **ISocialSession** -Schnittstelle zum Anmelden am sozialen Netzwerk. 
   
 ## <a name="see-also"></a>Siehe auch
 

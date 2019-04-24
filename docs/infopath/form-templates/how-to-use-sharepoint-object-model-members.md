@@ -1,30 +1,30 @@
 ---
-title: Verwenden von SharePoint-Objektmodellmember
+title: Verwenden von Mitgliedern des SharePoint-Objektmodells
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8cbafca3-7831-4231-8e61-38330b5ad61b
-description: Bevor Sie Mitglied der SharePoint-Objektmodell aus in eine InfoPath-Formularvorlage ausgeführten Code programmieren können, müssen Sie für Ihr Formular die Microsoft.SharePoint.dll-Assembly in Visual Studio 2012-Projekt referenzieren. Klicken Sie dazu benötigen Sie Zugriff auf das Dateisystem der eine lizenzierte Version von Microsoft SharePoint Server 2010 oder einen Server, auf der Microsoft SharePoint Foundation 2010 ausgeführt wird, damit Sie eine Kopie der Microsoft.SharePoint.dll-Assembly abrufen können.
-ms.openlocfilehash: c496f603f50a55ae2eaee237d6910d92612e1761
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bevor Sie Elemente des SharePoint-Objektmodells aus Code programmieren können, der in einer InfoPath-Formularvorlage läuft, müssen Sie im Visual Studio 2012-Projekt für Ihr Formular auf die Microsoft. SharePoint. dll-Assembly verweisen. Zu diesem Zweck benötigen Sie Zugriff auf das Dateisystem einer lizenzierten Kopie von Microsoft SharePoint Server 2010 oder eines Servers, auf dem Microsoft SharePoint Foundation 2010 ausgeführt wird, damit Sie eine Kopie der Microsoft. SharePoint. dll-Assembly abrufen können.
+ms.openlocfilehash: e29725450a6a1bdcba99215e337493f8686491e3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303591"
 ---
-# <a name="use-sharepoint-object-model-members"></a>Verwenden von SharePoint-Objektmodellmember
+# <a name="use-sharepoint-object-model-members"></a>Verwenden von Mitgliedern des SharePoint-Objektmodells
 
-Bevor Sie Mitglied der SharePoint-Objektmodell aus in eine InfoPath-Formularvorlage ausgeführten Code programmieren können, müssen Sie für Ihr Formular die Microsoft.SharePoint.dll-Assembly in Visual Studio 2012-Projekt referenzieren. Klicken Sie dazu benötigen Sie Zugriff auf das Dateisystem der eine lizenzierte Version von Microsoft SharePoint Server 2010 oder einen Server, auf der Microsoft SharePoint Foundation 2010 ausgeführt wird, damit Sie eine Kopie der Microsoft.SharePoint.dll-Assembly abrufen können. 
+Bevor Sie Elemente des SharePoint-Objektmodells aus Code programmieren können, der in einer InfoPath-Formularvorlage läuft, müssen Sie im Visual Studio 2012-Projekt für Ihr Formular auf die Microsoft. SharePoint. dll-Assembly verweisen. Zu diesem Zweck benötigen Sie Zugriff auf das Dateisystem einer lizenzierten Kopie von Microsoft SharePoint Server 2010 oder eines Servers, auf dem Microsoft SharePoint Foundation 2010 ausgeführt wird, damit Sie eine Kopie der Microsoft. SharePoint. dll-Assembly abrufen können. 
   
-Darüber hinaus muss die Formularvorlage auf dem Server als Sandkastenmodus oder vom Administrator genehmigten Lösung bereitgestellt werden. Weitere Informationen zu diesen Bereitstellungsoptionen finden Sie unter [Publishing Forms with Code](publishing-forms-with-code.md).
+Darüber hinaus muss Ihre Formularvorlage auf dem Server als Sandkasten- oder vom Administrator genehmigte Lösung bereitgestellt werden. Weitere Informationen zu diesen Bereitstellungsoptionen finden Sie unter [Publishing Forms with Code](publishing-forms-with-code.md).
   
 ## <a name="add-and-reference-the-microsoftsharepoint-assembly-from-an-infopath-form-template"></a>Hinzufügen von und Verweisen auf die Microsoft.SharePoint-Assembly in einer InfoPath-Formularvorlage
 
 > [!IMPORTANT]
-> Kopieren Sie zum Vermeiden von eines Konflikts mit wie das InfoPath-Projektsystem Dateien verwaltet wird, die die Formularvorlagendatei hinzugefügt werden, keine Assemblys, die Sie in den Ordner der obersten Ebene des ein Formularvorlagenprojekt verweisen möchten. Standardmäßig wird dies einen Pfad in folgendem Format sein: < *Laufwerk* >: \Users\ *UserName* \Documents\InfoPath Projects\ *Projektname* > Wenn Sie Assemblys, die Sie verweisen auf eine Position im Projektordner, verschieben möchten, Sie muss erstellen Sie einen Unterordner unter dem Hauptfenster *Projektname* Projektordner, und klicken Sie dann kopieren und Verweisassemblys aus diesem Unterordner. Beachten Sie jedoch, dass erstellen einen Unterordner für Verweisassemblys nicht erforderlich ist. Solange eine referenzierte Assembly nicht im Ordner der obersten Ebene des Projekts gefunden wird, wird die InfoPath-Projektsystems kopieren Sie die Assembly in der Formularvorlagendatei (XSN), wenn das Projekt kompiliert und veröffentlicht wird. 
+> Um einen Konflikt bei der Verwaltung von Dateien durch das InfoPath-Projektsystem zu vermeiden, die der Formularvorlagendatei hinzugefügt werden, kopieren Sie keine Assemblys, auf die Sie im Ordner auf höchster Ebene des Formularvorlagenprojekts verweisen möchten. Standardmäßig handelt es sich dabei um einen Pfad im folgenden Format: < *Drive* >: \Users\ *username* \Documents\InfoPath projects ** \ ProjectName > Wenn Sie Assemblys verschieben möchten, die Sie auf eine Position innerhalb des Projektordners verweisen, Erstellen Sie einen Unterordner im Project ** -Hauptprojektordner, und kopieren Sie dann die Assemblys aus diesem Ordner, und verweisen Sie darauf. Beachten Sie jedoch, dass das Erstellen eines Unterordners für Assemblys, auf die verwiesen wird, nicht erforderlich ist. Sofern sich eine Assembly, auf die verwiesen wird, nicht im Ordner auf der höchsten Ebene des Projekts befindet, wird sie vom InfoPath-Projektsystem beim Kompilieren und Veröffentlichen des Projekts automatisch in die Formularvorlagendatei (XSN) kopiert. 
   
-Standardmäßig ist die Microsoft.SharePoint.Server.dll in C:\Program Files\Common Files\Microsoft Shared\Web Server\Extensions\14\ISAPI im Dateisystem des SharePoint Server 2010 oder einen Server mit SharePoint Foundation 2010 installiert.
+Microsoft. SharePoint. Server. dll wird standardmäßig im Dateisystem von SharePoint Server 2010 oder auf einem Server mit SharePoint Foundation 2010 in C:\Programme\Microsoft Dateien\Microsoft Shared\Web Server\Extensions\14\ISAPI installiert.
   
 ### <a name="to-reference-the-microsoftsharepoint-assembly-from-an-infopath-forms-code-project"></a>So verweisen Sie im Codeprojekt eines InfoPath-Formulars auf die Microsoft.SharePoint-Assembly
 
@@ -32,9 +32,9 @@ Standardmäßig ist die Microsoft.SharePoint.Server.dll in C:\Program Files\Comm
     
 2. Öffnen Sie das Formularvorlagenprojekt in Visual Studio 2012.
     
-3. On the **Project** menu, click **Add Reference**.
+3. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen**.
     
-4. Klicken Sie auf die Registerkarte **Durchsuchen** , suchen Sie und geben Sie die Assembly, und klicken Sie dann auf **OK** , um den Verweis hinzuzufügen. 
+4. Klicken Sie auf die Registerkarte **Durchsuchen**, bestimmen Sie die Assembly, und klicken Sie dann auf **OK**, um den Verweis hinzuzufügen. 
     
-Jetzt können Sie Code für Member des SharePoint-Objektmodells in Ihrem Formularcode schreiben. Hinzufügen, um zum Verweisen auf Elemente des Microsoft.SharePoint-Namespace erleichtern, `using Microsoft.SharePoint;` oder `Imports Microsoft.SharePoint` an die Direktiven am Anfang der Codedatei. Ein Beispiel, das zeigt, wie Sie Mitglieder des SharePoint-Objektmodells in einem InfoPath-Formular zu verwenden, finden Sie unter "Beispiel 2: Verwalten von Anbietern in einer SharePoint-Liste" in [Beispiele für Sandkastenlösungen](sample-sandboxed-solutions.md).
+Jetzt können Sie Code für Elemente des SharePoint-Objektmodells aus Ihrem Formularcode schreiben. Um die Verweise auf Member des Microsoft. SharePoint-Namespaces zu vereinfachen, `using Microsoft.SharePoint;` fügen `Imports Microsoft.SharePoint` Sie die Direktiven am Anfang der Codedatei hinzu. Ein Beispiel, das zeigt, wie Sie Elemente des SharePoint-Objektmodells in einem InfoPath-Formular verwenden, finden Sie unter "Beispiel 2: Verwalten von Anbietern in einer SharePoint-Liste" in [Beispiel sandkastenlösungen](sample-sandboxed-solutions.md).
 

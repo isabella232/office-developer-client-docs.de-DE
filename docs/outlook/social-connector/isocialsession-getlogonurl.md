@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d61bab07-acb3-433b-8783-c3fe110a5582
-description: Ruft eine Zeichenfolge, die eine URL darstellt, die für die Darstellung eines Formulars browserbasierte für dem Benutzer während der Webauthentifizierung verwendet wird.
-ms.openlocfilehash: 343919f194b238fc519bb8f6d808b44a8ab6e7b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft eine Zeichenfolge ab, die eine URL darstellt, die zum Anzeigen eines browserbasierten Formulars für den Benutzer während der Webauthentifizierung verwendet wird.
+ms.openlocfilehash: 83867282922ea136b9673609cc2ba2f1a206f6ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285378"
 ---
 # <a name="isocialsessiongetlogonurl"></a>ISocialSession::GetLogonUrl
 
-Ruft eine Zeichenfolge, die eine URL darstellt, die für die Darstellung eines Formulars browserbasierte für dem Benutzer während der Webauthentifizierung verwendet wird.
+Ruft eine Zeichenfolge ab, die eine URL darstellt, die zum Anzeigen eines browserbasierten Formulars für den Benutzer während der Webauthentifizierung verwendet wird.
   
 ```cpp
 HRESULT _stdcall GetLogonUrl([out, retval] BSTR* url);
@@ -27,11 +27,11 @@ HRESULT _stdcall GetLogonUrl([out, retval] BSTR* url);
 
 _url_
   
-> [out] Eine Zeichenfolge, die eine URL für das Formular in der Webauthentifizierung enthält.
+> Out Eine Zeichenfolge, die eine URL für das in der Webauthentifizierung verwendete Formular enthält.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Nachdem das Formular für den Benutzer angezeigt wird, wird die [ISocialSession::LogonWeb](isocialsession-logonweb.md) -Methode mit einer leeren Zeichenfolge für den Parameter _ConnectIn_ aufgerufen. 
+Nachdem das Formular dem Benutzer angezeigt wurde, wird die [ISocialSession:: LogonWeb](isocialsession-logonweb.md) -Methode mit einer leeren Zeichenfolge für den __ Parameter connectin aufgerufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

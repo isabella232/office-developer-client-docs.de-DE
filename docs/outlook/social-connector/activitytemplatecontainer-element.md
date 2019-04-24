@@ -1,5 +1,5 @@
 ---
-title: ActivityTemplateContainer Element
+title: activityTemplateContainer-Element
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 74662f25-5e18-4d0b-999c-a144427ad9e3
-description: Ein ActivityTemplateContainer-Element ist eine Vorlage, mit dem Sie Ihre Aktivitätsfeed Elemente formatieren und Wiederverwendung von XML, das ein Layout angibt.
-ms.openlocfilehash: e744bb1bdb828003cdda7086468533b32b4bf20f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ein activityTemplateContainer-Element ist eine Vorlage, mit der Sie Ihre Aktivitätsfeed-Elemente formatieren und XML wieder verwenden können, das ein Layout angibt.
+ms.openlocfilehash: c2540b1d871e440e8f8f343a1788194c32d7dcc2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281120"
 ---
-# <a name="activitytemplatecontainer-element"></a>ActivityTemplateContainer Element
+# <a name="activitytemplatecontainer-element"></a>activityTemplateContainer-Element
 
-Ein **ActivityTemplateContainer** -Element ist eine Vorlage, mit dem Sie Ihre Aktivitätsfeed Elemente formatieren und Wiederverwendung von XML, das ein Layout angibt. Verwenden Sie IDs (**ApplicationID** und **TemplateID**), der ein feed-Element (**ActivityDetails**) zu einer Vorlage (**ActivityTemplateContainer**) entspricht. Speichern Sie die Layoutdaten als Teil des **ActivityTemplate** -Elements. Verwenden von Vorlagenvariablen Daten verweisen möchten, die von den einzelnen Aktivitätsfeed-Element abgerufen wird, als Platzhalter für Informationen wie Personen, Links und Text. 
+Ein **activityTemplateContainer** -Element ist eine Vorlage, mit der Sie Ihre Aktivitätsfeed-Elemente formatieren und XML wieder verwenden können, das ein Layout angibt. Verwenden Sie IDs (**applicationID** und **Template**-ID), um ein Feedelement (**ActivityDetails**) einer Vorlage (**activityTemplateContainer**) zuzuordnen. Speichern Sie die Layoutdaten als Teil des **activityTemplate** -Elements. Wenn Sie auf Daten verweisen möchten, die aus dem einzelnen Aktivitäts Feedelement abgerufen werden, verwenden Sie Vorlagenvariablen als Platzhalter für Informationen wie Personen, Links und Text. 
   
-In der folgenden Tabelle werden die drei Elemente, die das **ActivityTemplateContainer** -Element muss beschrieben. 
-  
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|**applicationID** <br/> |Einer der beiden eindeutigen IDs, Abgleich mit dem feed Element mit der Vorlage verwendet werden. Wenn Sie mehrere Anwendungen oder andere Gruppen verfügen, kann dies als Organisator einer Vorlage der ersten Ebene verwendet werden.  <br/> |
-|**templateID** <br/> |Die zweite eindeutige ID, die entsprechend das feed Element mit der Vorlage verwendet wird. Dies kann als Organisator einer L2-Vorlage verwendet werden.  <br/> |
-|**activityTemplate** <br/> |Das Layout der Vorlage (**Symbol**, **Titel**und **Daten** Elemente) und den Typ der Aktivität (**Type** -Element).  <br/> |
-   
-In der folgenden Tabelle werden die untergeordneten Elemente des **ActivityTemplate**, die beschreiben, die das Layout und den Typ einer Vorlage beschrieben.
+In der folgenden Tabelle werden die drei Elemente beschrieben, die das **activityTemplateContainer** -Element benötigt. 
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**icon** <br/> |Ein Link-Token, die die URL für das Symbol für den feed Artikel verweist.  <br/> |
-|**title** <br/> |Die erforderlichen Informationen für den feed Artikel.  <br/> |
-|**type** <br/> |Der Typ der Aktivität, wie etwa die Aktualisierung von Status, Foto oder Dokument.  <br/> |
-|**data** <br/> |Zusätzliche Informationen für den feed Artikel, wie Bilder, Text oder Links.  <br/> |
+|**applicationID** <br/> |Eine von zwei eindeutigen IDs, die verwendet werden, um das Feedelement mit seiner Vorlage abzugleichen. Wenn Sie mehrere Anwendungen oder andere Gruppierungen haben, kann dies als eine Vorlage Organizer der ersten Ebene verwendet werden.  <br/> |
+|**templateID** <br/> |Die zweite eindeutige ID, die verwendet wird, um das Feedelement mit seiner Vorlage abzugleichen. Dieser kann als Organisator einer Vorlage für die zweite Ebene verwendet werden.  <br/> |
+|**activityTemplate** <br/> |Das Layout der Vorlage (**Symbol**-, **Titel**-und **Daten** Elemente) und der Aktivitätstyp (**Type** -Element).  <br/> |
    
-Ein Beispiel der Aktivität XML-feed, finden Sie unter [Aktivität Feed XML-Beispiel](activity-feed-xml-example.md)
+In der folgenden Tabelle werden die untergeordneten Elemente von **activityTemplate**beschrieben, die das Layout und den Typ einer Vorlage beschreiben.
+  
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|**icon** <br/> |Ein Link-Token, das die URL für das Symbol für dieses Feed-Element referenziert.  <br/> |
+|**title** <br/> |Die erforderlichen Informationen für das Feedelement.  <br/> |
+|**type** <br/> |Der Aktivitätstyp, beispielsweise eine Aktualisierung des Status, des Fotos oder Dokuments.  <br/> |
+|**data** <br/> |Alle zusätzlichen Informationen für das Feed-Element, wie Bilder, Text oder Links.  <br/> |
+   
+Ein Beispiel für Aktivitäts-Feed-XML finden Sie unter [Aktivitätsfeed-XML-Beispiel](activity-feed-xml-example.md)
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über XML-Code für eine Aktivität Element-Feed](overview-of-xml-for-an-activity-feed-item.md)  
-- [ActivityDetails Element](activitydetails-element.md)  
+- [Übersicht über XML für ein Aktivitäts Feed-Element](overview-of-xml-for-an-activity-feed-item.md)  
+- [activityDetails-Element](activitydetails-element.md)  
 - [Vorlagenvariablen](template-variables.md)  
-- [Richtlinien für das Aktivitäten ordnungsgemäß anzeigen](guidelines-for-properly-displaying-activities.md)  
-- [XML-Code für Aktivitäten](xml-for-activities.md)  
-- [Outlook Connector für soziale Netzwerke Anbieter XML-Schema](outlook-social-connector-provider-xml-schema.md)
+- [Richtlinien für die OrdnungsGemäße Anzeige von Aktivitäten](guidelines-for-properly-displaying-activities.md)  
+- [XML für Aktivitäten](xml-for-activities.md)  
+- [XML-Schema des Anbieters für soziale Netzwerke in Outlook](outlook-social-connector-provider-xml-schema.md)
 - [Entwickeln eines Providers mit dem OSC-XML-Schema](developing-a-provider-with-the-osc-xml-schema.md)
 

@@ -1,27 +1,27 @@
 ---
-title: DatensatzLöschen-Makroaktion (Access benutzerdefinierte Web app)
+title: DeleteRecord-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 071ef6c8-ee0a-4092-8f41-bbb115f5eeea
 description: Mit der DatensatzLöschen -Aktion können Sie einen Datensatz löschen.
-ms.openlocfilehash: 7511de86b68c35921462e538e26c670d3a5e0ca8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3b7d501f8b784b7df2250ffdd80ca7184e539616
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280781"
 ---
-# <a name="deleterecord-macro-action-access-custom-web-app"></a>DatensatzLöschen-Makroaktion (Access benutzerdefinierte Web app)
+# <a name="deleterecord-macro-action-access-custom-web-app"></a>DeleteRecord-Makroaktion (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-Mit der **DatensatzLöschen** -Aktion können Sie einen Datensatz löschen. 
+Mit der **DatensatzLöschen**-Aktion können Sie einen Datensatz löschen. 
   
 ## <a name="setting"></a>Einstellung
 
-Die **DatensatzLöschen** -Aktion enthält keine Argumente in einem Makro der Benutzer-Benutzeroberfläche (UI) verwendet. 
+Die **DeleteRecord** -Aktion enthält keine Argumente, wenn Sie in einem Benutzeroberflächen-Makro verwendet wird. 
   
 

@@ -1,34 +1,34 @@
 ---
-title: LOWER-Funktion (Access benutzerdefinierte Web app)
+title: Lower-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d2607bdd-6694-4b37-983e-020e175d230a
-description: Gibt einen Zeichenfolgenausdruck Zeichen von Großbuchstaben in Kleinbuchstaben an.
-ms.openlocfilehash: a0cccdc524ab11e7126395278b70d7b765d0300c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen Zeichenausdruck zurück, nachdem Großbuchstaben in KleinbuchstabenKonvertiert wurden.
+ms.openlocfilehash: 17d53706eb6c6089e9f7f99a4b26f10776b9cb08
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301813"
 ---
-# <a name="lower-function-access-custom-web-app"></a>LOWER-Funktion (Access benutzerdefinierte Web app)
+# <a name="lower-function-access-custom-web-app"></a>Lower-Funktion (Access Custom Web App)
 
-Gibt einen Zeichenfolgenausdruck Zeichen von Großbuchstaben in Kleinbuchstaben an.
+Gibt einen Zeichenausdruck zurück, nachdem Großbuchstaben in KleinbuchstabenKonvertiert wurden.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- **Niedrigere** (*TextExpression*) 
+ **Niedriger** (*Text*) 
   
-**Lower** -Funktion enthält das folgende Argument. 
+Die **Lower** -Funktion enthält das folgende Argument. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *TextExpression*  <br/> |Ein Textausdruck.  <br/> |
+| *Text*  <br/> |Ein Textausdruck.  <br/> |
    
 

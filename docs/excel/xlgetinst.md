@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlGetInst
 keywords:
-- Xlgetinst-Funktion [excel 2007]
+- xlgetinst-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 631a8f4e-ea7c-4743-9ee1-b2233fd7d98d
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 9484f7bbc1f5e0fc5b0def17f2ce79ef226dcd17
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e113ddbf55e2b4651d578549802c44e2c6413a18
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303850"
 ---
 # <a name="xlgetinst"></a>xlGetInst
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt die Instanzzugriffsnummer der Instanz von Microsoft Excel, die derzeit eine DLL aufruft.
+Gibt den Instanz-Handle der Instanz von Microsoft Excel zurück, die derzeit eine DLL aufruft.
   
 ```cs
 Excel4(xlGetInst, LPXLOPER pxRes, 0); /* returns low part only */
@@ -33,22 +33,22 @@ Excel12(xlGetInst, LPXLOPER12 pxRes, 0); /* returns full handle */
 
 Diese Funktion hat keine Argumente.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Die Instanzzugriffsnummer (**vom Typ XltypeInt**) werden im Feld **val.w** . 
+Der Instanz-handle (**xltypeInt**) befindet sich im **Val. w** -Feld. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Funktion kann mehrere ausgeführten Instanzen von Excel unterscheiden, die die DLL aufruft, sind verwendet werden.
+Diese Funktion kann verwendet werden, um zwischen mehreren laufenden Instanzen von Excel zu unterscheiden, die die DLL aufrufen.
   
-Wenn Sie diese Funktion mit [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, wird die zurückgegebene XLOPER ganzzahlige Variable einer signierten 16-Bit-short int Dies ist nur die unteren 16 Bits der 32-Bit-Windows-Handle enthalten kann. Ab Excel 2007, die ganzzahlige Variable der **XLOPER12** ist eine signierte 32-Bit-Int und aus diesem Grund enthält das gesamte Handle, entfernen alle geöffneten Fenster durchlaufen werden müssen. 
+Wenn Sie diese Funktion mithilfe von [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, handelt es sich bei der zurückgegebenen XLOPER-ganzzahligen Variablen um einen signierten 16-Bit-short-int-Wert. Dies kann nur die niedrigen 16 Bits des Windows-Handles von 32-Bit enthalten. Beginnend mit Excel 2007 ist die ganzzahlige Variable des **XLOPER12** ein signiertes 32-Bit int und enthält daher das gesamte handle, sodass nicht alle geöffneten Fenster durchlaufen werden müssen. 
   
 > [!IMPORTANT]
-> Wenn die **XlGetInst** -Funktion mit der 64-Bit-Version von Microsoft Excel verwendet wird, schlägt die Funktion fehl. Dies ist, da der Werttyp **vom Typ XltypeInt** nicht breit genug für das lange 64-Bit-Handle zurückgegeben von Excel in diesem Fall enthalten ist. Für diesen Zweck eingeführt Excel 2010 eine neue Funktion mit dem Namen [XlGetInstPtr](xlgetinstptr.md), der mit der 32-Bit- und 64-Bit-Versionen von Excel ordnungsgemäß ausgeführt wird. 
+> Wenn die **xlGetInst** -Funktion mit der 64-Bit-Version von Microsoft Excel verwendet wird, schlägt die Funktion fehl. Der Grund ist, dass der **xltypeInt** -Werttyp nicht breit genug ist, um das von Excel zurückgegebene 64-Bit Long-Handle in diesem Fall zu speichern. Zu diesem Zweck hat Excel 2010 eine neue Funktion namens [xlGetInstPtr](xlgetinstptr.md)eingeführt, die sowohl mit der 32-Bit-als auch der 64-Bit-Version von Excel ordnungsgemäß ausgeführt wird. 
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel vergleicht die Instanz der letzten Kopie von Excel, die sie an der aktuellen Version von Excel aufgerufen, die diese aufgerufen. Wenn sie identisch sind, gibt 1 zurück. Wenn dies nicht der Fall ist, sie gibt 0 zurück; Wenn die Funktion fehlschlägt, gibt-1 zurück.
+Im folgenden Beispiel wird die Instanz der letzten Excel-Kopie, die Sie aufgerufen hat, mit der aktuellen Excel-Kopie verglichen, die Sie aufgerufen hat. Wenn Sie identisch sind, wird 1 zurückgegeben; Wenn dies nicht der Fall ist, wird 0 zurückgegeben; Wenn die Funktion fehlschlägt, gibt Sie-1 zurück.
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

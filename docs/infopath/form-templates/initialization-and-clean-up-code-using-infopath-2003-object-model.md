@@ -7,22 +7,22 @@ keywords:
 - InfoPath 2003-kompatible Formularvorlagen, Bereinigungscode, InfoPath 2003-kompatible Formularvorlagen, Initialisierungscode
 localization_priority: Normal
 ms.assetid: 8d19e8fa-4e5c-40bb-ae89-7a552cc7914d
-description: Standardmäßig enthält die "FormCode.cs" oder "FormCode.vb" erstellte Datei wird für ein Formularvorlagenprojekt, das mit InfoPath 2003 kompatibel ist den Quellcode für die Programmierlogik des Formulars. Die Vorlage für das Projekt erstellt eine Klasse in der Datei "FormCode.cs" oder "FormCode.vb" ähnlich wie die Klassen in den folgenden Beispielen, in dem Sie die Initialisierung und Bereinigungscode sowie Handler für Formularereignisse definieren können. Die Dateien "FormCode.cs" und "FormCode.vb" Anwenden einer Assembly-Ebene System.ComponentModel.DescriptionAttribute-Attribut, das die Klasse als einzige Klasse identifiziert, auf dem Ereignishandler implementiert sind. Das Attribut "InfoPathNamespace" (die vom Typ InfoPathNamespaceAttribute implementiert wird) wird auf eine Klasse innerhalb der Klasse verwendeten XML-DOM-Auswahl Namespaces identifiziert angewendet. Die Namespaces verwiesen wird, in der "InfoPathNamespace" werden von der InfoPath-Projektsystems verwaltet.
+description: Standardmäßig enthält die Datei "FormCode.cs" oder "FormCode.vb", die für ein mit InfoPath 2003 kompatibles Formularvorlagenprojekt erstellt wird, den gesamten Quellcode für die Programmierlogik des Formulars. Die Vorlage für das Projekt generiert eine Klasse in der Datei "FormCode.cs" oder "FormCode.vb", vergleichbar mit den Klassen in den folgenden Beispielen, in denen Sie Initialisierungs- und Bereinigungscode sowie Handler für Formularereignisse definieren können. Die Dateien "FormCode.cs" und "FormCode.vb" wenden ein System.ComponentModel.DescriptionAttribute-Attribut auf Assemblyebene an, das die Klasse als einzige Klasse identifiziert, in der Ereignishandler implementiert werden. Das InfoPathNamespace-Attribut (das vom InfoPathNamespaceAttribute-Typ implementiert wird) wird auf eine Klasse angewendet, um die in der Klasse verwendeten XML-DOM-Auswahl-Namespaces zu identifizieren. Die Namespaces, auf die in InfoPathNamespace verwiesen wird, werden vom InfoPath-Projektsystem verwaltet.
 ms.openlocfilehash: 1ae81c261ad9927195c0a4ac6d80f58a16a6ebf1
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299742"
 ---
-# <a name="initialization-and-clean-up-code-using-infopath-2003-object-model"></a>Initialisieren und Bereinigen von Code mit dem InfoPath 2003-Objektmodell
+# <a name="initialization-and-clean-up-code-using-infopath-2003-object-model"></a>Initialisierungs- und Bereinigungscode mit dem InfoPath 2003-Objektmodell
 
-Standardmäßig enthält die "FormCode.cs" oder "FormCode.vb" erstellte Datei wird für ein Formularvorlagenprojekt, das mit InfoPath 2003 kompatibel ist den Quellcode für die Programmierlogik des Formulars. Die Vorlage für das Projekt erstellt eine Klasse in der Datei "FormCode.cs" oder "FormCode.vb" ähnlich wie die Klassen in den folgenden Beispielen, in dem Sie die Initialisierung und Bereinigungscode sowie Handler für Formularereignisse definieren können. Die Dateien "FormCode.cs" und "FormCode.vb" Anwenden einer Assembly-Ebene **System.ComponentModel.DescriptionAttribute** -Attribut, das die Klasse als einzige Klasse identifiziert, auf dem Ereignishandler implementiert sind. Das Attribut **"InfoPathNamespace"** (die vom Typ [InfoPathNamespaceAttribute](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathNamespaceAttribute.aspx) implementiert wird) wird auf eine Klasse innerhalb der Klasse verwendeten XML-DOM-Auswahl Namespaces identifiziert angewendet. Die Namespaces verwiesen wird, in der **"InfoPathNamespace"** werden von der InfoPath-Projektsystems verwaltet. 
+Standardmäßig enthält die Datei "FormCode.cs" oder "FormCode.vb", die für ein mit InfoPath 2003 kompatibles Formularvorlagenprojekt erstellt wird, den gesamten Quellcode für die Programmierlogik des Formulars. Die Vorlage für das Projekt generiert eine Klasse in der Datei "FormCode.cs" oder "FormCode.vb", vergleichbar mit den Klassen in den folgenden Beispielen, in denen Sie Initialisierungs- und Bereinigungscode sowie Handler für Formularereignisse definieren können. Die Dateien "FormCode.cs" und "FormCode.vb" wenden ein **System.ComponentModel.DescriptionAttribute**-Attribut auf Assemblyebene an, das die Klasse als einzige Klasse identifiziert, in der Ereignishandler implementiert werden. Das **INFOPATHNAMESPACE** -Attribut (das vom [InfoPathNamespaceAttribute](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathNamespaceAttribute.aspx) -Typ implementiert wird) wird auf eine Klasse angewendet, um die in der Klasse verwendeten XML-DOM-Auswahl-Namespaces zu identifizieren. Die Namespaces, auf die in **InfoPathNamespace** verwiesen wird, werden vom InfoPath-Projektsystem verwaltet. 
   
-Die FormCode-Klasse selbst bietet `_Startup` und `_Shutdown` Methoden, die verwendet werden, zum Ausführen von Initialisierungs- und Bereinigungscode Routinen für alle Komponenten, die zusätzlich zum standard InfoPath-Funktionalität erforderlich sind, während das Formular geöffnet ist. 
+Die FormCode-Klasse selbst `_Startup` stellt `_Shutdown` Methoden bereit, die zum Ausführen von Initialisierungs-und Bereinigungsroutinen für alle Komponenten verwendet werden, die zusätzlich zu den standardmäßigen InfoPath-Funktionen erforderlich sind, während das Formular geöffnet ist. 
   
 > [!IMPORTANT]
-> Rufen Sie die Member des InfoPath-Objektmodells nicht innerhalb der `_Startup` und `_Shutdown` Methoden. Sie sollten initialisieren und nur Mitglieder der externe Komponenten in diesen Methoden aufrufen. 
+> Rufen Sie Member des InfoPath-Objektmodells nicht innerhalb der `_Startup` and- `_Shutdown` Methoden auf. Mit diesen Methoden sollten Sie nur Member externer Komponenten initialisieren und aufrufen. 
   
 ```cs
 using System;
@@ -83,7 +83,7 @@ End Namespace
 
 ## <a name="the-startup-method"></a>_Startup (Methode)
 
-Neben der Bereitstellung von eines Ort zum Schreiben von Code für die Initialisierung für zusätzliche Komponenten, die `_Startup` -Methode initialisiert die `thisXDocument` und `thisApplication` Variablen, die den Zugriff auf Member der [XDocument-Objekt](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) und [Anwendung im Formularcode verwendet werden können ](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx)Klassen im InfoPath-Objektmodell. Der Code erforderlich sind, um die zwei Variablen initialisieren wird automatisch von der Projektvorlage generiert. 
+Zusätzlich zur Bereitstellungeines Orts zum Schreiben von Initialisierungscode für zusätzliche Komponenten `_Startup` initialisiert die Methode `thisXDocument` die `thisApplication` und-Variablen, die in Ihrem Formularcode verwendet werden können, um auf die Member von [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) und Anwendung zuzugreifen. [ ](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx)Klassen im InfoPath-Objektmodell. Der für die Initialisierung der beiden Variablen erforderliche Code wird automatisch von der Projektvorlage generiert. 
   
 ```cs
     private XDocument thisXDocument;
@@ -107,7 +107,7 @@ Neben der Bereitstellung von eines Ort zum Schreiben von Code für die Initialis
 
 ```
 
-Die folgenden Beispiele zeigen einen einfachen Ereignishandler für eine Schaltfläche, verwendet die `thisXDocument` Variable auf die [Alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) -Methode des [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) -Typs zugreifen. 
+Die folgenden Beispiele zeigen einen einfachen Ereignishandler für eine Schaltfläche, die `thisXDocument` die Variable für den Zugriff auf die [Alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) -Methode des [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) -Typs verwendet. 
   
 ```cs
 [InfoPathEventHandler(MatchPath="CTRL1_5", EventType=InfoPathEventType.OnClick)]
@@ -126,11 +126,11 @@ Public Sub CTRL1_5_OnClick(ByVal e As DocActionEvent)
 End Sub
 ```
 
-Informationen zum Erstellen eines ereignishandlers finden Sie unter [Hinzufügen einer Event Handler mithilfe des InfoPath 2003-Objektmodells](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md).
+Weitere Informationen zum Erstellen eines Ereignishandlers finden Sie unter [Hinzufügen eines Ereignishandlers mit dem InfoPath-Objektmodell 2003](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md).
   
 ## <a name="the-shutdown-method"></a>_ShutDown (Methode)
 
-Die `_Shutdown` -Methode ist die letzte-Methode aufgerufen, wenn ein Formular geschlossen wird. Sie können in dieser Methode keinen Code schreiben, die zum Bereinigen oder Abschließen von im Formular verwendeten Komponenten erforderlich ist. 
+Die `_Shutdown` Methode ist die letzte Methode, die aufgerufen wird, wenn ein Formular geschlossen wird. In dieser Methode können Sie beliebigen Code schreiben, der zum Bereinigen oder Fertigstellen von im Formular verwendeten Komponenten benötigt wird. 
   
 ```cs
     public void _Shutdown()
@@ -145,10 +145,10 @@ Die `_Shutdown` -Methode ist die letzte-Methode aufgerufen, wenn ein Formular ge
 
 ## <a name="initialization-and-clean-up-code-example"></a>Beispiel für Initialisierungs- und Bereinigungscode
 
-Das folgende Beispiel zeigt, wie Sie eine Verbindung mit einer Microsoft SQL Server-Datenbank initialisieren die `_Startup` Methode, und schließen Sie die Verbindung der `_Shutdown` Methode. In der Reihenfolge für das Beispiel ordnungsgemäß funktioniert müssen Sie zuerst einen Verweis auf die Assembly System.Data von .NET Framework festlegen, indem Sie im Menü **Projekt** auf **Verweis hinzufügen** klicken und anschließend die Komponente System.Data.dll auf **.NET** Registerkarte. Beachten Sie, dass auch die `using System.Data.SqlClient` (oder `Imports System.Data.SqlClient)` -Direktive am oberen Rand der Formularcodedatei zur Reduzierung der Tastaturbefehle hinzugefügt wurde. 
+Das folgende Beispiel zeigt, wie Sie eine Verbindung mit einer Microsoft SQL Server-Datenbank in `_Startup` der-Methode initialisieren und die Verbindung `_Shutdown` in der-Methode beenden. Damit dieses Beispiel ordnungsgemäß funktioniert, müssen Sie zuerst einen Verweis auf die System. Data-Assembly von .NET Framework festlegen, indem Sie im Menü **Projekt** auf **Verweis hinzufügen** klicken und dann die Komponente System. Data. dll auf **.net** auswählen. Registerkarte. Beachten Sie außerdem, `using System.Data.SqlClient` dass die `Imports System.Data.SqlClient)` (oder-Direktive oben in der Formular Codedatei hinzugefügt wurde, um Tastenkombinationen zu reduzieren. 
   
 > [!NOTE]
-> Benutzer eines InfoPath-Formulars, die Formularcode enthält, die mit einer SQL Server-Datenbank verbunden wird möglicherweise Sicherheitsberechtigungen abhängig von der Bereitstellung des Formulars und Codezugriffssicherheits-Richtlinie definiert ist. Weitere Informationen zur Sicherheit finden Sie unter [Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md)und [Über das Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md) . 
+> Benutzer eines InfoPath-Formulars mit Formularcode, der eine Verbindung mit einer SQL Server-Datenbank herstellt, benötigen möglicherweise Sicherheitsberechtigungen, abhängig von der Art der Bereitstellung des Formulars und der Definition der Sicherheitsrichtlinien. Weitere Informationen zur Sicherheit finden Sie unter Informationen zum [Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md) und zum [Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md). 
   
 ```cs
 using System;
@@ -221,5 +221,5 @@ End Namespace
 
 
 
-[Hinzufügen eines Ereignishandlers mit dem InfoPath 2003-Objektmodell](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
+[Hinzufügen eines Ereignishandlers mit dem InfoPath-Objektmodell 2003](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
 

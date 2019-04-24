@@ -1,5 +1,5 @@
 ---
-title: MAPI-Warteschlange (Übersicht)
+title: MAPI-Spooler-Übersicht
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,50 +8,50 @@ api_type:
 - COM
 ms.assetid: 5866b202-883e-454e-aeb1-61526c43dae9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ec581e2170b92721410106eae00e2d36b3c775a0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 162957ea17b5a82d4da68340e971d328c85cd9f7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309580"
 ---
-# <a name="mapi-spooler-overview"></a>MAPI-Warteschlange (Übersicht)
+# <a name="mapi-spooler-overview"></a>MAPI-Spooler-Übersicht
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Warteschlange ergibt sich aus der Microsoft Office Outlook-Prozess, der für das Senden von Nachrichten an und Empfangen von Nachrichten aus einem messaging-System verantwortlich ist. MAPI-Warteschlange spielt eine wichtige Rolle in der Nachricht und die Zustellung. Bei einem messaging-System nicht verfügbar ist, MAPI-Warteschlange werden die Nachrichten gespeichert und automatisch zu einem späteren Zeitpunkt weiterleitet. Die Möglichkeit, halten Sie sich oder Senden von Daten bei Bedarf wird als speichern und weiterleiten, ein wichtiges Feature in Umgebungen, in denen Remoteverbindungen sind häufige und Netzwerkdatenverkehr ist hoch, bezeichnet. MAPI-Warteschlange in Outlook als Hintergrundthread ausgeführt wird.
+MAPI-Spooler ist eine Funktion des Microsoft Office Outlook-Prozesses, der für das Senden von Nachrichten an und das Empfangen von e-Mails von einem Messagingsystem zuständig ist. MAPI-Spooler spielt eine wichtige Rolle bei Nachrichtenempfang und-Zustellung. Wenn ein Messagingsystem nicht verfügbar ist, werden die Nachrichten von der MAPI-Warteschlange gespeichert und zu einem späteren Zeitpunkt automatisch weitergeleitet. Diese Fähigkeit, Daten bei Bedarf beizubehalten oder zu senden, wird als "Store" und "Forward" bezeichnet, eine wichtige Funktion in Umgebungen, in denen Remoteverbindungen gängig sind und der Netzwerkdatenverkehr hoch ist. MAPI-Spooler wird als Hintergrundthread in Outlook ausgeführt.
   
-MAPI-Warteschlange verfügt über zusätzliche Aufgaben im Zusammenhang mit der Verteilung von Nachrichten. Diese zusätzlichen Aufgaben umfassen Folgendes:
+MAPI-Spooler hat zusätzliche Aufgaben im Zusammenhang mit der Nachrichtenverteilung. Zu diesen zusätzlichen Aufgaben gehört Folgendes:
   
-- Verfolgen von die Empfängertypen, die vom Anbieter von spezifischen Transport verarbeitet werden.
+- Nachverfolgen der Empfängertypen, die von bestimmten Transportanbietern verarbeitet werden.
     
-- Eine Clientanwendung informiert, wenn eine neue Nachricht übermittelt wurde.
+- Informieren einer Clientanwendung, wenn eine neue Nachricht zugestellt wurde.
     
-- Nachricht der vorverarbeitung und Traditionsgemäß aufrufen.
+- Aufrufen der Nachrichten Vorverarbeitung und nach Verarbeitung.
     
-- Generieren von Berichten, die angeben, Nachrichtenübermittlung ist aufgetreten.
+- Generieren von Berichten, die darauf hindeuten, dass die Nachrichtenübermittlung stattgefunden hat.
     
-- Verwalten von Status auf verarbeiteten Empfänger.
+- Verwalten des Status von verarbeiteten Empfängern.
     
-Die folgende Abbildung zeigt auf allgemeiner Ebene, wie eine Nachricht von einem Client an die messaging-System fließt.
+Die folgende Abbildung zeigt auf einer hohen Ebene, wie eine Nachricht von einem Client zum Messagingsystem fließt.
   
 **Flussdiagramm für ausgehende Nachrichten**
   
-![Ausgehende Nachrichtenfluss] (media/amapi_46.gif "Ausgehende Nachrichtenfluss")
+![Ablauf der ausgehenden Nachrichten] (media/amapi_46.gif "Ablauf der ausgehenden Nachrichten")
   
-Der Benutzer von einer Clientanwendung sendet eine Nachricht an einen oder mehrere Empfänger an. Die Nachricht speichern Anbieter initiiert im Sendevorgang Formatierung der Nachricht mit zusätzlichen Informationen für die Übertragung benötigt.
+Der Benutzer einer Clientanwendung sendet eine Nachricht an einen oder mehrere Empfänger. Der Nachrichtenspeicher Anbieter initiiert den Sendevorgang und formatiert die Nachricht mit zusätzlichen Informationen, die für die Übertragung benötigt werden.
   
-MAPI-Warteschlange empfängt die Meldung verarbeiten, wenn einer der folgenden Situationen auftreten:
+MAPI-Spooler empfängt die zu verarbeitende Nachricht, wenn eine der folgenden Bedingungen eintritt:
   
-- Der Nachricht Speicheranbieter ist nicht eng mit eines Transportdienstes verknüpft.
+- Der Nachrichtenspeicher Anbieter ist nicht eng mit einem Transportanbieter gekoppelt.
     
-- Die Nachricht muss der vorverarbeitung.
+- Die Nachricht erfordert die Vorverarbeitung.
     
-- Die Nachrichtenspeicher und Transport Anbieter eng verknüpft sind, aber sie können nicht alle Empfänger, an die Nachricht adressiert ist, behandeln.
+- Der Nachrichtenspeicher und der Transportanbieter sind eng gekoppelt, können jedoch nicht alle Empfänger verarbeiten, an die die Nachricht adressiert ist.
     
-Wenn MAPI-Warteschlange die Nachricht empfängt, führt der erforderlichen vorverarbeitung und übermittelt die Nachricht an den entsprechenden Adressbuchhierarchie. Der Adressbuchhierarchie bietet die Nachricht an die messaging-System, an den Empfänger sendet.
+Wenn die Nachricht vom MAPI-Spooler empfangen wird, wird die erforderliche Vorverarbeitung ausgeführt und die Nachricht an den entsprechenden Transportanbieter übermittelt. Der Transportanbieter übergibt die Nachricht an das Messagingsystem, das Sie an den beabsichtigten Empfänger sendet.
   
-Mit eingehenden Nachrichten wird der Ablauf umgekehrt. Der Transportdienst empfängt eine Nachricht von messaging-System und MAPI-Warteschlange benachrichtigt. Warteschlange führt alle erforderlichen Nachbearbeitung und dem Speicheranbieter Nachricht informiert werden, dass eine neue Nachricht empfangen hat. Diese Benachrichtigung wird vom Client zum Aktualisieren der Nachricht-Display, dem der Benutzer die neue Nachricht lesen.
+Bei eingehenden Nachrichten wird der Fluss umgekehrt. Der Transportanbieter empfängt eine Nachricht von seinem Messagingsystem und benachrichtigt MAPI-Spooler. Spooler führt alle erforderlichen Nachbearbeitung aus und informiert den Nachrichtenspeicher Anbieter darüber, dass eine neue Nachricht eingegangen ist. Diese Benachrichtigung veranlasst den Client, seine Nachrichtenanzeige zu aktualisieren, sodass der Benutzer die neue Nachricht lesen kann.
   
 ## <a name="see-also"></a>Siehe auch
 

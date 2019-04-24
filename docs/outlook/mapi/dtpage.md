@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 500f60ed-fdec-4d70-8cf5-664c46643956
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 769ae984e4b6e8610ca7909ea2ac714d9d04d698
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ad8aec8d015849965bea6ac011c8a45e75c69ca1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287106"
 ---
 # <a name="dtpage"></a>DTPAGE
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt das Dialogfeld, die aus einer Tabelle anzeigen von der Funktion [BuildDisplayTable](builddisplaytable.md) erstellt wird. 
+Beschreibt das Dialogfeld, das von der [BuildDisplayTable](builddisplaytable.md) -Funktion aus einer Anzeigetabelle erstellt wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct DTPAGE
@@ -50,33 +50,33 @@ typedef struct DTPAGE
 
  **cctl**
   
-> Anzahl der Steuerelemente auf das Element **Lpctl** zeigt. 
+> Die Anzahl der Steuerelemente, auf die durch das **lpctl** -Element verwiesen wird. 
     
  **lpszResourceName**
   
-> Zeiger auf den Namen oder die ganze Zahl Bezeichner für die Feld-Ressource. 
+> Zeiger auf den Namen oder ganzzahligen Bezeichner für die Dialogfeldressource. 
     
  **lpszComponent**
   
-> Zeiger auf die Zeichenfolge, die im Abschnitt **[Help File Mappings]** in MAPISVC.INF angezeigt wird. Da **LpszComponent** in einer Union mit dem **UlItemID** -Element ist, muss nur einer der folgenden Member gültige Daten. 
+> Zeiger auf die Zeichenfolge, die im Abschnitt **[Hilfedatei Zuordnungen]** in MAPISVC. inf angezeigt wird. Da sich **lpszComponent** in einer Union mit dem **ulItemID** -Element befindet, verfügt nur einer dieser Member über gültige Daten. 
     
  **ulItemID**
   
-> Ganzzahlige Ressourcenbezeichner mit kleiner oder gleich 65535, von denen der Name der Hilfedatei gelesen werden kann. Da **UlItemID** in einer Union mit dem **LpszComponent** -Element ist, muss nur einer der folgenden Member gültige Daten. 
+> Integer-Ressourcenbezeichner mit einem Wert kleiner oder gleich 65535, aus dem der Name der Hilfedatei gelesen werden kann. Da sich **ulItemID** in einer Union mit dem **lpszComponent** -Element befindet, verfügt nur einer dieser Member über gültige Daten. 
     
  **lpctl**
   
-> Zeiger auf ein Array von [DTCTL](dtctl.md) -Strukturen, einen für jedes Steuerelements auf der Seite. 
+> Zeiger auf ein Array von [DTCTL](dtctl.md) -Strukturen, eines für jedes Steuerelement auf der Seite. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Legen Sie die Hilfedatei für die Seite um zu ermitteln, **LpszComponent** Mitglieds eine hartcodierte Zeichenfolge oder der **UlItemID** Member zu einem ganzzahligen Ressourcenbezeichner. 
+Um die Hilfedatei für die Registerkartenseite zu identifizieren, legen Sie entweder das **lpszComponent** -Element auf eine hart codierte Zeichenfolge oder das **ulItemID** -Element auf einen ganzzahligen Ressourcenbezeichner fest. 
   
-Jeder Eintrag im Abschnitt **[Help File Mappings]** in MAPISVC. INF-Datei besteht aus einer Zeichenfolge Komponente, die nicht mehr als 30 Zeichen, klicken Sie auf der linken Seite und ein Hilfe Dateipfad auf der rechten Seite. **UlItemID** und **LpszResourceName** sind im _hInstance_ -Parameter der **BuildDisplayTable**gefunden. Weitere Informationen finden Sie unter [MAPISVC. INF [Hilfe Dateizuordnungen] Abschnitt](mapisvc-inf-help-file-mappings-section.md).
+Jeder Eintrag im Abschnitt **[Hilfedatei Zuordnungen]** in MAPISVC. INF besteht aus einer Komponenten Zeichenfolge, die nicht länger als 30 Zeichen ist, auf der linken Seite und einem Pfad rechts für die Hilfedatei. Sowohl **ulItemID** als auch **lpszResourceName** befinden sich im _HINSTANCE_ -Parameter von **BuildDisplayTable**. Weitere Informationen finden Sie unter [MAPISVC. Abschnitt "INF [Hilfedatei Zuordnungen]"](mapisvc-inf-help-file-mappings-section.md).
   
-Obwohl **BuildDisplayTable** diese Struktur verwendet, um der Anzeige-Tabelle aus der Steuerelementressourcen, erstellen die Struktur **DTPAGE** wird nie angezeigt, in der Anzeige Tabelle selbst. 
+Obwohl **BuildDisplayTable** diese Struktur verwendet, um die Anzeigetabelle aus den Steuerelementressourcen zu erstellen, wird die **DTPAGE** -Struktur nie in der Anzeigetabelle selbst angezeigt. 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

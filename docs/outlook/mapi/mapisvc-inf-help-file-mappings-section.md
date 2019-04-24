@@ -1,5 +1,5 @@
 ---
-title: Abschnitt [Help File Mappings] in MapiSvc.inf
+title: Abschnitt "MapiSvc. inf [Hilfedatei Zuordnungen]"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 62aee641-b73f-4f53-9e8d-adf010c9ea1a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 91c69489e1a72c5cd702a3c4d0392220a89c38fd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4760c9965975bb5d950e51b707d28bee647ef99a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32269972"
 ---
-# <a name="mapisvcinf-help-file-mappings-section"></a>Abschnitt [Help File Mappings] in MapiSvc.inf
+# <a name="mapisvcinf-help-file-mappings-section"></a>Abschnitt "MapiSvc. inf [Hilfedatei Zuordnungen]"
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Im Abschnitt **[Help File Mappings]** enthält Einträge, dass jeweils eine Messagingdiensts die Datei zuzuordnen, die für Fehler, die vom Dienst bereitstellt. Einträge in diesem Abschnitt verwenden Sie das folgende Format: 
+Der Abschnitt **[Help File Mappings]** enthält Einträge, die jeweils einen Nachrichtendienst der Datei zuordnen, die Hilfe für vom Dienst generierte Fehler bereitstellt. Die Einträge in diesem Abschnitt verwenden das folgende Format: 
   
- **[Hilfe Dateizuordnungen]** _Nachricht Dienstname_  =   _Name der Hilfedatei_
+ **[Hilfedatei Zuordnungen]** _Name des Nachrichtendiensts_  =   _Name der Hilfedatei_
   
-Der Dienstname Nachricht ist der Name des Diensts installierten Nachricht. der Name der Hilfedatei ist der Name der Datei, in dem die Fehlerinformationen befindet. Im folgenden Beispiel zeigt einen typischen **[Help File Mappings]** -Abschnitt, der Einträge für drei Dienste enthält: MAPI, die MsgService-Dienst und das MS-Dienst. 
+Der Name des Nachrichtendiensts ist der Name des installierten Nachrichtendiensts. der Name der Hilfedatei ist der Name der Datei, in der sich die Fehlerinformationen befinden. Das folgende Beispiel zeigt einen typischen Abschnitt **[Help File Mappings]** , der Einträge für drei Dienste enthält: MAPI, den MsgService-Dienst und den MS-Dienst. 
   
 ```cpp
 [Help File Mappings]

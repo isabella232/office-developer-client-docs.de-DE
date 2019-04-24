@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: 491170af-db35-4d7e-a912-44ffe8c7506b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d797acdbf2abfb88151d69d0c93e743f07afc5c9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 88cf91330dea82dda490b81cc8de6fea0504baf7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282684"
 ---
 # <a name="sizedentryid"></a>SizedENTRYID
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [ENTRYID](entryid.md) -Struktur, die ein Element **Ab** einer angegebenen Größe enthält. 
+Erstellt eine benannte [Eintrags](entryid.md) -Struktur, die ein **ab** -Element einer angegebenen Größe enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**ENTRYID** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**ENTRYID** <br/> |
    
 ```cpp
 SizedENTRYID (_cb, _name)
@@ -36,19 +36,19 @@ SizedENTRYID (_cb, _name)
 
 ## <a name="parameters"></a>Parameter
 
-__cb_
+__CB_
   
-> Die Anzahl von Bytes in die neue Struktur Mitglied **Ab** . 
+> Die Anzahl der Bytes im **ab** -Element der neuen Struktur. 
     
-__Namen_
+__Name_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **SizedENTRYID** können Sie eine Eintrags-ID zu definieren, nach dem Array Länge Anforderungen bekannt sind. Verwenden Sie dieses Makro mit expliziten Grenzen eines Eintrags-ID zu erstellen. 
+Mit dem **SizedENTRYID** -Makro können Sie eine Eintrags-ID definieren, nachdem die Anforderungen an die Arraylänge bekannt sind. Verwenden Sie dieses Makro, um eine Eintrags-ID mit expliziten Begrenzungen zu erstellen. 
   
-Um die neue Struktur verwenden, die als Zeiger auf eine **ENTRYID** -Struktur aus dem Makro **SizedENTRYID** erzeugt, führen Sie die folgende Umwandlung: 
+Um die neue Struktur zu verwenden, die aus dem **SizedENTRYID** -Makro als Zeiger auf eine **Eintrags** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpENTRYID = (LPENTRYID) &SizedENTRYID;

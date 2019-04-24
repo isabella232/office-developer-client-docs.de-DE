@@ -4,36 +4,36 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- InfoPath 2003-kompatible Formularvorlagen, mit msxml5 MSXML5 [InfoPath 2007] MSXML5-Skript [InfoPath 2007], InfoPath 2007 mithilfe von MSXML5
+- InfoPath 2003-kompatible Formularvorlagen mit MSXML5, MSXML5 [InfoPath 2007], MSXML5-Skript [InfoPath 2007], InfoPath 2007, verwenden von MSXML5
 localization_priority: Normal
 ms.assetid: f7a0cac5-26f9-49ed-b52c-0240ef0c9d38
-description: Formular Vorlagenprojekte, die mit dem InfoPath 2003-Objektmodell arbeiten verwenden Microsoft XML Core Services (MSXML) intern XML entwickelt. In verwaltetem Code ist es oft einfacher mithilfe die XML-Unterstützung durch den System.Xml-Namespace in der .NET Framework-Klassenbibliothek. MSXML und System.Xml kann nicht Objekte systemintern unterstützt, exchange, wenn Sie XML-Daten zwischen InfoPath und anderen verwalteten Code übergeben möchten, muss die XML-Daten, konvertiert werden soll. Sie können die XML-Daten aus System.Xml-Objekte mit InfoPath-Formularcode austauschen, mithilfe der Verfahren in diesem Thema.
-ms.openlocfilehash: 345aeb3dcb6e9621657bd2b21f98c87cb5e61993
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Formularvorlagenprojekte, die mit dem InfoPath 2003-Objektmodell arbeiten, verwenden Microsoft XML Core Services (MSXML) intern für XML. Bei verwaltetem Code ist es häufig einfacher, die vom System.Xml-Namespace bereitgestellte XML-Unterstützung in der .NET Framework-Bibliothek zu verwenden. Es ist für MSXML und System.Xml kein systemeigener Objektaustausch möglich, sodass die XML-Daten jedes Mal konvertiert werden müssen, wenn XML-Daten an InfoPath und anderen verwalteten Code übergeben werden sollen. Sie können XML-Daten von System.Xml-Objekten mit InfoPath-Formularcode austauschen, indem Sie die in diesem Thema beschriebenen Techniken verwenden.
+ms.openlocfilehash: c56939a0cf03b5de6466de37013e154529afd1ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299720"
 ---
 # <a name="working-with-msxml-and-systemxml-using-the-infopath-2003-object-model"></a>Arbeiten mit MSXML und System.Xml mit dem InfoPath 2003-Objektmodell
 
-Formular Vorlagenprojekte, die mit dem InfoPath 2003-Objektmodell arbeiten verwenden Microsoft XML Core Services (MSXML) intern XML entwickelt. In verwaltetem Code ist es oft einfacher mithilfe die XML-Unterstützung durch den **System.Xml** -Namespace in der .NET Framework-Klassenbibliothek. MSXML und **System.Xml** kann nicht Objekte systemintern unterstützt, exchange, wenn Sie XML-Daten zwischen InfoPath und anderen verwalteten Code übergeben möchten, muss die XML-Daten, konvertiert werden soll. Sie können die XML-Daten aus **System.Xml** -Objekte mit InfoPath-Formularcode austauschen, mithilfe der Verfahren in diesem Thema. 
+Formularvorlagenprojekte, die mit dem InfoPath 2003-Objektmodell arbeiten, verwenden Microsoft XML Core Services (MSXML) intern für XML. Bei verwaltetem Code ist es häufig einfacher, die vom **System.Xml**-Namespace bereitgestellte XML-Unterstützung in der .NET Framework-Bibliothek zu verwenden. Es ist für MSXML und **System.Xml** kein systemeigener Objektaustausch möglich, sodass die XML-Daten jedes Mal konvertiert werden müssen, wenn XML-Daten an InfoPath und anderen verwalteten Code übergeben werden sollen. Sie können XML-Daten von **System.Xml**-Objekten mit InfoPath-Formularcode austauschen, indem Sie die in diesem Thema beschriebenen Techniken verwenden. 
   
-Um die Mitglieder der **System.Xml** -Namespace in ein Projekt mit verwaltetem Code verwenden zu können, die das InfoPath 2003-Objektmodell verwendet, müssen Sie einen Verweis auf **"System.xml"** auf der Registerkarte **.NET** des Dialogfelds **Verweis hinzufügen** in Visual Studio 2012 hinzufügen. 
+Wenn Sie Member des Namespace **System. XML** in einem Projekt mit verwaltetem Code verwenden möchten, das das InfoPath 2003-Objektmodell verwendet, müssen Sie auf der Registerkarte **.net** des Dialogfelds **Verweis hinzufügen** in Visual Studio 2012 einen Verweis auf **System. XML** hinzufügen. 
   
- **Anmerkungen**
+ **Hinweise**
   
-- Referenzinformationen zu MSXML finden Sie unter MSXML SDK.
+- Informationen zu MSXML finden Sie im MSXML SDK.
     
-- Member des MSXML-Objektmodells, die vom [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace eingebunden sind können nicht Delegaten im Formularcode von Formularvorlagen mit verwaltetem Code zugewiesen werden. 
+- Elemente des MSXML-Objektmodells, die vom [Microsoft. Office. Interop. InfoPath. SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace umschlossen werden, können Delegaten im Formularcode von Formularvorlagen mit verwaltetem Code nicht zugewiesen werden. 
     
-- Wenn Sie den Code der Formularvorlage, verwenden Sie die Member des [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) -Namespace bereitgestellte Objektmodell aktualisieren, wird eine systemeigene **System.Xml** verwendet. Allerdings müssen dabei Sie manuell alle des Codes mit dem neuen Objektmodell konvertieren. Klicken Sie auf **OM aktualisieren**, um die Formularvorlage so verwenden Sie das neue Objektmodell in der Kategorie **Programmierung** im Dialogfeld **Formularoptionen** zu konvertieren.
+- Wenn Sie den Code Ihrer Formularvorlage aktualisieren, um das von Mitgliedern des [Microsoft. Office. InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) -Namespace bereitgestellte Objektmodell zu verwenden, wird **System. XML** nativ verwendet. Sie müssen in diesem Fall jedoch den kompletten Code konvertieren, um das neue Objektmodell verwenden zu können. Klicken Sie zum Konvertieren der Formularvorlage zum Verwenden des neuen Objektmodells im Dialogfeld **Formularoptionen** in der Kategorie **Programmierung** auf **OM aktualisieren**.
     
 ## <a name="loading-an-entire-xml-document-object-model-dom-from-systemxml"></a>Laden eines vollständigen XML-DOMs (Document Object Model) aus System.Xml
 
-Im folgenden Codebeispiel veranschaulicht, wie eine gesamte XML-DOM aus **System.Xml** -Code mithilfe der InfoPath- [CreateDOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.CreateDOM.aspx) -Methode und die Mitglieder von Microsoft XML Core Services, die durch ein Mitglied der [eingebunden sind laden Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) Namespace. 
+Im folgenden Codebeispiel wird veranschaulicht, wie ein vollständiges XML-DOM aus dem **System. XML** -Code mithilfe der InfoPath-Methode [CreateDOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.CreateDOM.aspx) und den Mitgliedern von Microsoft XML Core Services geladen wird, die von Mitgliedern [des Microsoft. Office. Interop. InfoPath. SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace. 
   
-In den folgenden Beispielen ist eine **Using-** oder **Imports** -Direktive für **System.Xml** im Deklarationsabschnitt des formularcodemoduls erforderlich. Darüber hinaus, da die **Load** -Methode der **XmlDocument** -Klasse **System.Security.Permissions.FileIOPermission**erfordert, müssen Sie die Sicherheitsstufe der Formularvorlage als **Voll vertrauenswürdig** mithilfe der **Sicherheit konfigurieren und Vertrauensstellung** Kategorie im Dialogfeld **Formularoptionen** . 
+Bei den folgenden Beispielen ist eine **using**- oder **Imports**-Direktive für **System.Xml** im Deklarationsabschnitt des Formularcodemoduls erforderlich. Da die **Last** -Methode der XmlDocument **** -Klasse **System. Security. Permissions. FileIOPermission**erfordert, müssen Sie zusätzlich die Sicherheitsstufe der Formularvorlage als **voll vertrauenswürdig** konfigurieren, indem Sie die Sicherheitseinstellungen verwenden. ** und Vertrauens** Kategorie des Dialogfelds **Formularoptionen** . 
   
 ```cs
 // Create a System.Xml XmlDocument and load an XML file.
@@ -57,9 +57,9 @@ newDoc.loadXML(doc.DocumentElement.OuterXml)
 
 ## <a name="loading-a-single-node-from-systemxml"></a>Laden eines einzelnen Knotens aus System.Xml
 
-Das folgende Codebeispiel zeigt eine Funktion, die einen einzelnen Knoten aus einer **System.Xml**Klonen veranschaulicht. **XmlElement** mithilfe der eingebundenen **CreateNode** -Methode für die MSXML. 
+Das folgende Beispiel zeigt eine Funktion, mit der dargestellt wird, wie ein einzelner Knoten aus einem **System.Xml**. **XmlElement** mithilfe der eingebundenen **createNode**-Methode von MSXML geklont wird. 
   
-In den folgenden Beispielen ist eine **Using-** oder **Imports** -Direktive für **System.Xml** im Deklarationsabschnitt des formularcodemoduls erforderlich. 
+Bei den folgenden Beispielen ist eine **using**- oder **Imports**-Direktive für **System.Xml** im Deklarationsabschnitt des Formularcodemoduls erforderlich. 
   
 ```cs
 // This function takes a System.Xml XmlElement object and 

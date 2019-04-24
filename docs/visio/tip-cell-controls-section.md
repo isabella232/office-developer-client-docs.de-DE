@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7fd11650-fffa-1316-d302-3122ac5feb14
 description: Enthält einen beschreibenden Text, der als QuickInfo angezeigt wird, wenn ein Benutzer den Mauszeiger über dem Steuerpunkt eines Shapes platziert. Die Anwendung schließt diese Beschreibung in der Zelle automatisch in Anführungszeichen ein, doch diese Anführungszeichen werden in der QuickInfo nicht angezeigt.
-ms.openlocfilehash: ff593ee95dc27ba7192ee31d35791127b666eac0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b9b0c19aff5e3ab8a4c1e29d319eb42f7ee4a271
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307721"
 ---
-# <a name="tip-cell-controls-section"></a>Tip Cell (Controls Section)
+# <a name="tip-cell-controls-section"></a>Zelle "Tip" (Abschnitt "Controls")
 
 Enthält einen beschreibenden Text, der als QuickInfo angezeigt wird, wenn ein Benutzer den Mauszeiger über dem Steuerpunkt eines Shapes platziert. Die Anwendung schließt diese Beschreibung in der Zelle automatisch in Anführungszeichen ein, doch diese Anführungszeichen werden in der QuickInfo nicht angezeigt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Tip aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Tip aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Steuerelemente.  *Name* . Tipwhere-Steuerelemente.  *Name* ist der Name der Zeile mit Steuerelementen.  <br/> |
+| Zellenname:  <br/> | Steuerelemente.  *Name* . Tipwhere-Steuerelemente.  *Name* ist der Name der Zeile Controls.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Tip aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Tip aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionControls** <br/> |
-| Zeilenindex:  <br/> |**VisRowControl** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowControl** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCtlTip** <br/> |
    
 

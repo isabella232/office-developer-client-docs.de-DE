@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte zur Entwicklung von Formularvorlagen mit Code
+title: Erste Schritte beim Entwickeln von Formularvorlagen mit Code
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 66468447-2012-4497-b371-c61f64a8bb49
 description: 'Dieser Abschnitt bietet Informationen zu den ersten Schritten beim Erstellen von Formularvorlagen mit verwaltetem Code, die das InfoPath-Objektmodell verwenden, das von Mitgliedern des N: Microsoft.Office.InfoPath-Namespace bereitgestellt wird.'
-ms.openlocfilehash: a4e4e8a4e01dc8d0fbfe9c5cbed0ae4b85b51e94
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 59167533eba6dd3537b6c5c0170ef32b795b02cc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19790734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303703"
 ---
 # <a name="getting-started-developing-form-templates-with-code"></a>Erste Schritte zur Entwicklung von Formularvorlagen mit Code
 

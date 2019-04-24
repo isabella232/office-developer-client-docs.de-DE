@@ -8,22 +8,22 @@ f1_keywords:
 - FreeXLOper12T
 - FreeXLOperT
 keywords:
-- Freexlopert-Funktion [excel 2007], FreeXLOper12T-Funktion [Excel 2007]
+- freexlopert-Funktion [Excel 2007], FreeXLOper12T-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 8fb3fdfd-8a43-4c50-82ff-e701fed3d83f
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: b7411bc51770dadc7c2d4a5c2c65d2d546f6025f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0b604cbe5cb24ac7d8de28278dfbcf0d4fd92c7d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304074"
 ---
 # <a name="freexlopertfreexloper12t"></a>FreeXLOperT/FreeXLOper12T
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Funktion, die ein **XLOPER**zugeordneten Arbeitsspeicher frei/ **XLOPER12**. Die Funktion wird davon ausgegangen, dass der Speicher mit Aufrufen in der DLL Malloc belegt wurde. Wenn der Speicher von Microsoft Excel oder auf andere Weise oder von einem anderen Prozess belegt wurde, sollte diese Funktion nicht verwendet werden, um den Arbeitsspeicher freizugeben. Mit der Speicher von Excel für **XLOPER** [XlFree](xlfree.md) / **XLOPER12**s. 
+Framework-Funktion, die Arbeitsspeicher frei gibt, der einem **XLOPER**/ **XLOPER12**zugeordnet ist. Die Funktion geht davon aus, dass der Arbeitsspeicher mit Aufrufen von malloc innerhalb der DLL reserviert wurde. Wenn der Arbeitsspeicher von Microsoft Excel oder auf andere Weise oder durch einen anderen Prozess zugewiesen wurde, sollte diese Funktion nicht zum Freigeben des Speichers verwendet werden. Verwenden Sie [xlFree](xlfree.md) , um von Excel für **XLOPER**/ **XLOPER12**s zugewiesene Arbeitsspeicher freizugeben. 
   
 ```cs
 void FreeXLOperT(LPXLOPER pxloper);
@@ -36,7 +36,7 @@ void FreeXLOper12T(LPXLOPER12 pxloper12);
   
  _pxloper12_ (**LPXLOPER12**)
   
-Zeiger auf die **XLOPER**/ **XLOPER12** freigegeben werden. 
+Zeiger auf die **XLOPER**/ -**XLOPER12** , die freigegeben werden soll. 
   
 ## <a name="example"></a>Beispiel
 

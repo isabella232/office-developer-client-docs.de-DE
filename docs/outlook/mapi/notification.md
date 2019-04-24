@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01b6e695-a649-4efd-a893-7586b476467e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0d427adde72c24d4ca879c7bd883af09c4ecad53
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a3235c2305d61318f482943167e5f307e5da0d70
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280099"
 ---
 # <a name="notification"></a>NOTIFICATION
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen über ein Ereignis, das aufgetreten ist und die Daten, die das Ereignis betroffen ist.
+Enthält Informationen zu einem aufgetretenen Ereignis und den Daten, die vom Ereignis betroffen waren.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct
@@ -50,57 +50,57 @@ typedef struct
 
 **ulEventType**
   
-> Typ der Benachrichtigungsereignis, das aufgetreten ist. Der Wert des Elements **UlEventType** entspricht der Struktur, die in der Union **Info** enthalten ist. Das Element **UlEventType** kann auf einen der folgenden Werte festgelegt werden: 
+> Typ des aufgetretenen Benachrichtigungsereignisses. Der Wert des **ulEventType** -Elements entspricht der Struktur, die in der **Info** -Union enthalten ist. Das **ulEventType** -Element kann auf einen der folgenden Werte festgelegt werden: 
     
  _fnevCriticalError_
   
-> Ein globaler Fehler ist aufgetreten, wie eine Sitzung Herunterfahren ausgeführt. Das **Info** -Element enthält eine [ERROR_NOTIFICATION](error_notification.md) -Struktur. 
+> Ein globaler Fehler ist aufgetreten, beispielsweise eine Sitzung wurde ausgeführt. Der **Info** -Member enthält eine [ERROR_NOTIFICATION](error_notification.md) -Struktur. 
     
  _fnevExtended_
   
-> Ein internes Ereignis von einem bestimmten Dienstanbieter definierten ist aufgetreten. Das **Info** -Element enthält eine [EXTENDED_NOTIFICATION](extended_notification.md) -Struktur. 
+> Ein internes Ereignis, das von einem bestimmten Dienstanbieter definiert wurde, ist aufgetreten. Der **Info** -Member enthält eine [EXTENDED_NOTIFICATION](extended_notification.md) -Struktur. 
     
- _fnevNewMail_
+ _Uleventmaskfnevnewmail_
   
-> Eine Nachricht übermittelt wurde, um den entsprechenden Ordner für die Nachrichtenklasse empfangen und wartet auf Verarbeitung. Das **Info** -Element enthält eine [NEWMAIL_NOTIFICATION](newmail_notification.md) -Struktur. 
+> Eine Nachricht wurde an den entsprechenden Empfänger Ordner für die Nachrichtenklasse übermittelt und wartet auf die Verarbeitung. Der **Info** -Member enthält eine [NEWMAIL_NOTIFICATION](newmail_notification.md) -Struktur. 
     
  _fnevObjectCopied_
   
-> Ein MAPI-Objekt wurde kopiert. Das **Info** -Element enthält eine [OBJECT_NOTIFICATION](object_notification.md) -Struktur. 
+> Ein MAPI-Objekt wurde kopiert. Der **Info** -Member enthält eine [OBJECT_NOTIFICATION](object_notification.md) -Struktur. 
     
  _fnevObjectCreated_
   
-> Ein MAPI-Objekt wurde erstellt. Das **Info** -Element enthält eine **OBJECT_NOTIFICATION** -Struktur. 
+> Es wurde ein MAPI-Objekt erstellt. Der **Info** -Member enthält eine **OBJECT_NOTIFICATION** -Struktur. 
     
  _fnevObjectDeleted_
   
-> Ein MAPI-Objekt wurde gelöscht. Das **Info** -Element enthält eine **OBJECT_NOTIFICATION** -Struktur. 
+> Ein MAPI-Objekt wurde gelöscht. Der **Info** -Member enthält eine **OBJECT_NOTIFICATION** -Struktur. 
     
  _fnevObjectModified_
   
-> Ein MAPI-Objekt geändert wurde. Das **Info** -Element enthält eine **OBJECT_NOTIFICATION** -Struktur. 
+> Ein MAPI-Objekt wurde geändert. Der **Info** -Member enthält eine **OBJECT_NOTIFICATION** -Struktur. 
     
  _fnevObjectMoved_
   
-> Einen Nachrichtenspeicher oder Adresse Adressbuch-Objekt verschoben wurde. Das **Info** -Element enthält eine **OBJECT_NOTIFICATION** -Struktur. 
+> Ein Nachrichtenspeicher-oder Adressbuchobjekt wurde verschoben. Der **Info** -Member enthält eine **OBJECT_NOTIFICATION** -Struktur. 
     
  _fnevSearchComplete_
   
-> Suchvorgang beendet wurde, und die Ergebnisse verfügbar sind. Das **Info** -Element enthält eine **OBJECT_NOTIFICATION** -Struktur. 
+> Ein Suchvorgang wurde abgeschlossen, und die Ergebnisse sind verfügbar. Der **Info** -Member enthält eine **OBJECT_NOTIFICATION** -Struktur. 
     
  _fnevTableModified_
   
-> Die Informationen in einer Tabelle wurde geändert. Das **Info** -Element enthält eine [TABLE_NOTIFICATION](table_notification.md) -Struktur. 
+> Informationen in einer Tabelle wurden geändert. Der **Info** -Member enthält eine [TABLE_NOTIFICATION](table_notification.md) -Struktur. 
     
-**Info**
+**info**
   
-> Union der Benachrichtigung Strukturen zur Beschreibung der betreffenden Daten für einen bestimmten Typ des Ereignisses. Die Struktur im **Info** -Member enthalten, hängt von den Wert des Elements **UlEventType** ab. 
+> Vereinigung von Benachrichtigungs Strukturen, die die betroffenen Daten für einen bestimmten Ereignistyp beschreiben. Die im **Info** -Element enthaltene Struktur hängt vom Wert des **ulEventType** -Members ab. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ein oder mehrere **Benachrichtigung** Strukturen werden als Eingabeparameter mit jedem Aufruf einer registrierten Advise-Empfänger [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode übergeben. Die **Benachrichtigung** Strukturen enthalten Informationen zu den bestimmte Ereignisse, die aufgetreten sind, und der betroffene Objekte beschreiben. 
+Mindestens eine **Benachrichtigungs** Struktur wird bei jedem Aufruf der [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode einer registrierten Advise-Senke als Eingabeparameter übergeben. Die **Benachrichtigungs** Strukturen enthalten Informationen zu den bestimmten Ereignissen, die aufgetreten sind, und beschreiben die betroffenen Objekte. 
   
-Bevor Clients oder -Dienstanbieter erhalten eine Benachrichtigung die Struktur verwenden können Verarbeitung des Ereignisses, müssen sie den Ereignistyp überprüfen, wie im **UlEventType** -Member angegeben. Beispielsweise druckt das Codebeispiel, das hier gezeigte überprüft, ob das Eintreffen einer neuen Nachricht und beim Erkennen eines Ereignisses dieser Art, die Nachrichtenklasse der Nachricht. 
+Bevor Clients oder Dienstanbieter, die eine Benachrichtigung erhalten, die Struktur zum Verarbeiten des Ereignisses verwenden können, müssen Sie den Ereignistyp wie im **ulEventType** -Element angegeben überprüfen. Das Codebeispiel, das hier gezeigt wird, prüft beispielsweise, ob eine neue Nachricht eingeht, und gibt die Nachrichtenklasse der Nachricht aus, wenn ein solches Ereignis ermittelt wird. 
   
 ```cpp
 if (pNotif -> ulEventType == fnevNewMail)
@@ -110,13 +110,13 @@ printf("%s\n", pNotif -> newmail.lpszMessageClass)
 
 ```
 
-Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der folgenden Tabelle beschrieben.
+Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

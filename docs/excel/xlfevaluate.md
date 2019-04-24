@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlfEvaluate
 keywords:
-- Xlfevaluate-Funktion [excel 2007]
+- xlfevaluate-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: deea3ee6-2a32-47ef-bfa4-914891538633
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e468dc18b8f78f56acaa67c2f23dd53254088ad0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 527f7e932a41103c374e327a1bd0dd4c7d8e92a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303927"
 ---
 # <a name="xlfevaluate"></a>xlfEvaluate
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Verwendet Microsoft Excel-Parser und der Funktion Auswertung für ein beliebiger Ausdruck ausgewertet werden soll, die in einer Arbeitsblattzelle eingegeben werden konnte.
+Verwendet den Microsoft Excel-Parser und die Funktionsauswertung zum Auswerten eines Ausdrucks, der in eine Arbeitsblattzelle eingegeben werden kann.
   
 ```cs
 Excel12(xlfEvaluate, LPXLOPER12 pxRes, 1, LPXLOPER12 pxFormulaText);
@@ -30,27 +30,27 @@ Excel12(xlfEvaluate, LPXLOPER12 pxRes, 1, LPXLOPER12 pxFormulaText);
 
 ## <a name="parameters"></a>Parameter
 
- _PxFormulaText (XltypeStr)_
+ _pxFormulaText (xltypeStr)_
   
-Die Zeichenfolge ausgewertet werden soll. Ein führendes Gleichheitszeichen (=) ist optional. Die Zeichenfolge kann Text sein, der in ein Arbeitsblatt oder Makroblatt Blatt Zelle gesetzlich eingegeben werden können.
+Die zu bewertende Zeichenfolge. Ein führendes Gleichheitszeichen (=) ist optional. Die Zeichenfolge kann ein beliebiger Text sein, der rechtlich in eine Arbeitsblatt-oder Makroblatt Zelle eingegeben werden kann.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt das Ergebnis der Überprüfung der Zeichenfolge, die Typen **XltypeNum**, **XltypeStr**, **XltypeBool**, **XltypeErr**, **XltypeNil**, **XltypeMulti**angegeben werden kann.
+Gibt das Ergebnis der Auswertung der Zeichenfolge zurück, die einen der Typen **xltypeNum**, **xltypeStr**, **xltypeBool**, **xltypeErr**, **xltypeNil**, **xltypeMulti**sein kann.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Zeichenfolge kann nur Funktionen, nicht Befehl Entsprechungen enthalten. Es ist gleichbedeutend mit dem Drücken von **F9** aus der Bearbeitungsleiste angezeigt. Wenn **XlfEvaluate** eine XLL-Arbeitsblattfunktion aufgerufen wird, die als threadsicheren registriert wurde, muss der Ausdruck nur threadsicheren Funktionen enthalten. 
+Die Zeichenfolge kann nur Funktionen, keine Befehlsäquivalente enthalten. Dies entspricht dem Drücken von **F9** aus der Bearbeitungsleiste. Wenn **xlfEvaluate** von einer XLL-Arbeitsblattfunktion aufgerufen wird, die als threadsicher registriert wurde, muss der Ausdruck nur threadsichere Funktionen enthalten. 
   
-Die primäre Verwendung der **XlfEvaluate** -Funktion ist mit ermöglichen DLLs erhalten Sie Informationen zu einem definierten Namen, die entweder in einem Blatt zugewiesene Wert oder einen ausgeblendeten Namen in der DLL-Datei definiert sind. Beachten Sie, dass innerhalb einer DLL/XLL, ein Arbeitsblatt mit dem Präfix werden muss mindestens ein Ausrufezeichen (!), um sicherzustellen, dass er auf die DLL als extern interpretiert wird. Weitere Informationen finden Sie unter [Namen bewerten und andere Arbeitsblatt Formel Ausdrücke](evaluating-names-and-other-worksheet-formula-expressions.md).
+Die primäre Verwendung der **xlfEvaluate** -Funktion besteht darin, DLLs zu ermöglichen, den Wert zu ermitteln, der einem definierten Namen zugewiesen ist, der sich auf einem Blatt oder einem in der dll definierten ausgeblendeten Namen befindet. Beachten Sie, dass in einer DLL/XLL einem Arbeitsblattnamen mindestens ein Ausrufezeichen (!) vorangestellt werden muss, um sicherzustellen, dass es als extern für die DLL interpretiert wird. Weitere Informationen finden Sie unter ausWerten von [Namen und anderen Formeln](evaluating-names-and-other-worksheet-formula-expressions.md).
   
- **XlfEvaluate** kann nicht verwendet werden, um Verweise auf einem externen Blatt ausgewertet werden soll, die nicht geöffnet ist. 
+ **xlfEvaluate** kann nicht zum Auswerten von Verweisen auf ein externes Blatt verwendet werden, das nicht geöffnet ist. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **XlfEvaluate** umzuwandelnde den Text "! B38 "auf den Inhalt der Zelle B38. 
+In diesem Beispiel wird **xlfEvaluate** verwendet, um den Text zu erzwingen. "! B38 "auf den Inhalt der Zelle B38. 
   
- `\SAMPLES\EXAMPLE\EXAMPLE.C`. Diese Funktion ruft ein Makro mit Befehlen (**XlcAlert**) und funktionieren ordnungsgemäß nur, wenn von einem Makroblatt oder als Makrobefehl aufgerufen.
+ `\SAMPLES\EXAMPLE\EXAMPLE.C`. Diese Funktion Ruft ein Befehlsmakro (**xlcAlert**) auf und funktioniert nur dann ordnungsgemäß, wenn es von einem Makroblatt oder als Makrobefehl aufgerufen wird.
   
 ```cs
 short WINAPI EvaluateExample(void)

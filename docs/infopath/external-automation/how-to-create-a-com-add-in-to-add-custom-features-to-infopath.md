@@ -1,164 +1,164 @@
 ---
-title: Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Funktionen in InfoPath
+title: Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Features zu InfoPath
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- InfoPath 2007, Erstellen von COM-add-ins und InfoPath 2007, Hinzufügen von benutzerdefinierten Funktionen, COM-add-ins [InfoPath 2007]
+- InfoPath 2007, Erstellen von COM-Add-Ins, InfoPath 2007, Hinzufügen von benutzerdefinierten Features, COM-Add-Ins [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: af0b0bc9-20ef-4503-8b3b-8f2a97b671a2
-description: Microsoft InfoPath unterstützt COM-Add-ins zur Erweiterung des Formulars Benutzererlebnis bearbeiten. Obwohl die Unterstützung für COM-Add-ins in InfoPath, andere Office-Clientanwendungen zuerst hinzugefügt wurde, wie Microsoft Office Word und Microsoft Office Excel COM-add-ins seit Office 2000 unterstützt haben.
+description: Microsoft InfoPath unterstützt COM-Add-Ins für die Erweiterung der Benutzerumgebung zum Bearbeiten von Formularen. Obwohl die Unterstützung für COM-Add-ins erstmals in InfoPath hinzugefügt wurde, haben andere Office-Anwendungen wie Microsoft Office Word und Microsoft Office Excel seit Office 2000 COM-Add-Ins unterstützt.
 ms.openlocfilehash: f8dd16b161c4ea862cf3b15e56e26a2547c1fc4c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303787"
 ---
-# <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Funktionen in InfoPath
+# <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Features zu InfoPath
 
-Microsoft InfoPath unterstützt COM-Add-ins zur Erweiterung des Formulars Benutzererlebnis bearbeiten. Obwohl die Unterstützung für COM-Add-ins in InfoPath, andere Office-Clientanwendungen zuerst hinzugefügt wurde, wie Microsoft Office Word und Microsoft Office Excel COM-add-ins seit Office 2000 unterstützt haben.
+Microsoft InfoPath unterstützt COM-Add-Ins für die Erweiterung der Benutzerumgebung zum Bearbeiten von Formularen. Obwohl die Unterstützung für COM-Add-ins erstmals in InfoPath hinzugefügt wurde, haben andere Office-Anwendungen wie Microsoft Office Word und Microsoft Office Excel seit Office 2000 COM-Add-Ins unterstützt.
   
-COM-Add-in-Unterstützung in InfoPath ist für das Formular bearbeiten einer Umgebung zur Verfügung. Die Formular-Design-Umgebung kann nicht mithilfe von COM-Add-ins erweitert werden.
+Die COM-Add-in-Unterstützung in InfoPath ist für die Formularbearbeitungsumgebung verfügbar. Die Formularentwurfsumgebung kann nicht mithilfe von COM-Add-Ins erweitert werden.
   
-## <a name="the-idtextensibility2-interface"></a>Der IDTExtensibility2-Schnittstelle
+## <a name="the-idtextensibility2-interface"></a>Die IDTExtensibility2-Schnittstelle
 
-Die InfoPath-Umgebung zum Bearbeiten der **IDTExtensibility2** -Schnittstelle unterstützt die von Entwicklern von COM-Add-Ins **IDTExtensibility2** implementiert werden müssen, ist ein Dual-Schnittstelle-Objekt, das fünf Methoden bereitstellt, die als Ereignisse fungieren innerhalb der Umgebung bearbeiten. Diese Methoden ermöglichen das COM-add-in zur Beantwortung der Umgebung starten und Herunterfahren Situationen, in der folgenden Tabelle aufgeführt. 
+Die InfoPath-Bearbeitungsumgebung bietet Unterstützung für die **IDTExtensibility2** -Schnittstelle, die von Entwicklern von COM-Add-Ins implementiert werden muss. **IDTExtensibility2** ist ein Dual-Interface-Objekt, das fünf Methoden bereitstellt, die als Ereignisse fungieren. innerhalb der Bearbeitungsumgebung. Diese Methoden ermöglichen es dem COM-Add-in, auf Umgebungsstart-und-herunter fahrenbedingungen zu reagieren, die in der folgenden Tabelle aufgeführt sind. 
   
 |**Schnittstelle**|**Beschreibung**|
 |:-----|:-----|
-|**OnAddInsUpdate (ByVal custom() als Variant-Wert)** <br/> |Tritt auf, wenn ein Add-In geladen oder entladen wird in der Umgebung.  <br/> |
-|**Geladen (ByVal custom() als Variant-Wert)** <br/> |Tritt auf, wenn die Umgebung heruntergefahren wird.  <br/> |
-|**OnConnection (ByVal als Anwendungsobjekt, ByVal ConnectMode als Ext_ConnectMode, ByVal AddInInst As Object, ByVal custom() als Variant)** <br/> |Tritt auf, wenn ein Add-in, in der Umgebung geladen wird.  <br/> |
-|**OnDisconnection (ByVal RemoveMode als Ext_DisconnectMode, ByVal custom() als Variant)** <br/> |Tritt auf, wenn ein Add-in aus der Umgebung entladen wird.  <br/> |
-|**OnStartupComplete (ByVal custom() als Variant-Wert)** <br/> |Tritt auf, wenn die Umgebung starten abgeschlossen ist.  <br/> |
+|**OnAddInsUpdate (ByVal Custom () As Variant)** <br/> |Tritt ein, wenn ein Add-in in der Umgebung geladen oder entladen wird.  <br/> |
+|**OnBeginShutdown (ByVal Custom () As Variant)** <br/> |Tritt ein, wenn die Umgebung heruntergefahren wird.  <br/> |
+|**OnConnection (ByVal Application as Object, ByVal ConnectMode as ext_ConnectMode, ByVal AddInInst as Object, ByVal Custom () As Variant)** <br/> |Tritt auf, wenn ein Add-in in der Umgebung geladen wird.  <br/> |
+|**Disconnection (ByVal RemoveMode as ext_DisconnectMode, ByVal Custom () As Variant)** <br/> |Tritt auf, wenn ein Add-in aus der Umgebung entladen wird.  <br/> |
+|**OnStartupComplete (ByVal Custom () As Variant)** <br/> |Tritt ein, wenn die Umgebung gestartet wurde.  <br/> |
    
-## <a name="registering-com-add-ins"></a>Registrieren des COM-Add-ins
+## <a name="registering-com-add-ins"></a>Registrieren von COM-Add-ins
 
-Alle Office-Clientanwendungen, InfoPath, einschließlich verwenden die Registrierung, um die Liste-add-ins in der Auflistung COM-Add-Ins Sie zum Speichern von des Verbindungsstatus und zum Speichern der Start- oder bei Bedarf laden Informationen. Für InfoPath-COM-Add-ins, wird der Name der einzelnen Add-Ins angezeigt, unter dem folgenden Schlüssel:
+Alle Office-Anwendungen, einschließlich InfoPath, verwenden die Registrierung, um Add-Ins in der COM-Add-Ins-Auflistung aufzulisten, den Verbindungsstatus zu speichern und die Start-oder Demand-Lade Informationen zu speichern. Bei InfoPath-COM-Add-Ins wird der Name der einzelnen Add-Ins unter dem folgenden Schlüssel angezeigt:
   
 `HKEY_CURRENT_USER\Software\Microsoft\Office\InfoPath\AddIns\`
   
-Für COM-Add-ins für die Verwendung von jedem Benutzer des Clientcomputers installiert, befindet sich der Registrierungsschlüssel in der Registrierungsstruktur HKLM:
+Für COM-Add-Ins, die von jedem Benutzer des Clientcomputers installiert werden, befindet sich der Registrierungsschlüssel in der Registrierungsstruktur HKLM:
   
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\InfoPath\AddIns\`
   
-Der Name des Registrierungsschlüssels entspricht **ProgIdAttribute** des Add-Ins und enthält die folgenden Werte. 
+Der Registrierungsschlüsselname entspricht dem **ProgIdAttribute** des Add-Ins und enthält die folgenden Werte. 
   
 |**Name**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**FriendlyName** <br/> |**String** <br/> |Der Name, der im Dialogfeld **COM-Add-ins** angezeigt und in die Seite **-Add-ins** im **Sicherheitscenter**aufgeführt ist.  <br/> |
-|**Beschreibung** <br/> |**String** <br/> |Die Zeichenfolge, die angezeigt wird, wenn das Add-in im **Trust Center**ausgewählt ist.  <br/> |
-|**LoadBehavior** <br/> |**EIN DWORD-WERT** <br/> |Gibt an, wie das COM-Add-in geladen ist. Der Wert kann eine Kombination von 0, 1, 2, 8 und 16 sein. Siehe Tabelle unten für Weitere Informationen.  <br/> |
+|**FriendlyName** <br/> |**String** <br/> |Der Name, der im Dialogfeld **com-Add-ins** angezeigt wird und auf der Seite **Add-ins** des **Trust Centers**aufgeführt wird.  <br/> |
+|**Beschreibung** <br/> |**String** <br/> |Die Zeichenfolge, die angezeigt wird, wenn das Add-in im **Vertrauensstellungs Center**ausgewählt wird.  <br/> |
+|**LoadBehavior** <br/> |**DWORD** <br/> |Gibt an, wie das COM-Add-in geladen wird. Der Wert kann eine Kombination aus 0, 1, 2, 8 und 16 sein. Weitere Informationen finden Sie in der Tabelle unten.  <br/> |
    
-Der **DWORD-** Wert für **LoadBehavior** sollte einen Wert in der Bearbeitung Umgebung wie das COM-Add-in geladen, beschreibt enthalten. Der Wert kann aus der folgenden Tabelle oder eine Kombination von Werten aus der Tabelle entsprechen. Zum Beispiel erstellt ein COM-Add-in in Visual Studio 2005 müssen beim Starten der Anwendung eine **LoadBehavior** "3" geladen und verbunden sein. 
+Der **DWORD** -Wert für **LoadBehavior** sollte einen Wert enthalten, der beschreibt, wie das COM-Add-in in der Bearbeitungsumgebung geladen wird. Der Wert kann aus der folgenden Tabelle oder aus einer Kombination von Werten aus der Tabelle sein. Ein COM-Add-in, das in Visual Studio 2005 erstellt wurde, hat beispielsweise eine **LoadBehavior** von "3", die beim Anwendungsstart geladen und verbunden werden kann. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|0  <br/> |Getrennt. Das Add-in zeigt als inaktiv im Dialogfeld **COM-Add-in** .  <br/> |
-|1  <br/> |Verbunden. Das Add-in zeigt als aktiv im Dialogfeld **COM-Add-in** .  <br/> |
-|2  <br/> |Beim Start laden. Das Add-in ist geladen und beim Starten der hostanwendung verbunden.  <br/> |
-|8  <br/> |Bei Bedarf laden. Das Add-In wird geladen und verbunden, wenn die Host-Anwendung ist, beispielsweise notwendig Wenn ein Benutzer auf eine Schaltfläche klickt, die in der Add-in-Funktionen verwendet.  <br/> |
-|16  <br/> |Verbinden Sie beim ersten Mal. Das Add-In wird geladen und verbunden erstmalig der Benutzer die Host-Anwendung nach dem registrieren das Add-in ausgeführt wird.  <br/> |
+|0  <br/> |Getrennt. Das Add-in wird im Dialogfeld **com-Add-in** als inaktiv angezeigt.  <br/> |
+|1  <br/> |Verbunden. Das Add-in wird im Dialogfeld **com-Add-in** als aktiv angezeigt.  <br/> |
+|2  <br/> |Laden beim Start. Das Add-in wird geladen und verbunden, wenn die Hostanwendung gestartet wird.  <br/> |
+|8  <br/> |Bei Bedarf laden. Das Add-in wird geladen und verbunden, wenn die Hostanwendung es benötigt, beispielsweise wenn ein Benutzer auf eine Schaltfläche klickt, die Funktionalität im Add-in verwendet.  <br/> |
+|16  <br/> |Verbindung bei der ersten Ausführung. Das Add-in wird geladen und verbunden, wenn der Benutzer die Hostanwendung zum ersten Mal ausführt, nachdem das Add-in registriert wurde.  <br/> |
    
 ## <a name="creating-a-managed-com-add-in-with-visual-studio-2005-or-visual-studio-2008"></a>Erstellen eines verwalteten COM-Add-Ins mit Visual Studio 2005 oder Visual Studio 2008
 
-Um ein verwaltetes COM-add-Ins mithilfe von Microsoft Visual Studio 2005 oder Visual Studio 2008, erstellen Sie ein gemeinsames Add-In-Projekt wie folgt: 
+Erstellen Sie ein FreigeGebenes Add-in-Projekt wie folgt, um ein verwaltetes COM-Add-in mithilfe von Microsoft Visual Studio 2005 oder Visual Studio 2008 zu erstellen: 
   
 1. Starten Sie Visual Studio.
     
 2. Klicken Sie im Menü **Datei** auf **Neues Projekt**.
     
-3. Klicken Sie im Bereich **Projekttypen** im Dialogfeld **Neues Projekt** auf den Ordner **Andere Projekttypen** , und klicken Sie dann auf **Erweiterbarkeit**.
+3. Klicken Sie im Dialogfeld **Neues Projekt** im Bereich **Projekttypen** auf den Ordner **andere Projekttypen** , und klicken Sie dann **** auf Erweiterbarkeit.
     
-4. Klicken Sie im Bereich **Vorlagen** auf **Gemeinsames Add-in**.
+4. Klicken Sie im Bereich **Vorlagen** auf **freigegebenes Add-in**.
     
 5. Geben Sie im Feld **Name** einen Namen für das Projekt ein. 
     
-6. Geben Sie im Feld **Speicherort** einen Ordnerpfad oder klicken Sie auf **Durchsuchen** und wählen Sie einen Ordnerpfad und klicken Sie dann auf **OK**. Der **Assistent für gemeinsames Add-in** wird angezeigt. 
+6. Geben Sie im Feld **Speicherort** einen Ordnerpfad ein, oder klicken Sie auf **Durchsuchen** , und wählen Sie einen Ordnerpfad aus, und klicken Sie dann auf **OK**. Der **Assistent für gemeinsame Add-ins** wird angezeigt. 
     
-7. Klicken Sie auf **nächste** in der **Assistent für gemeinsames Add-in**. Die Seite **Wählen Sie eine Programmiersprache** wird angezeigt. 
+7. Klicken Sie im **Assistenten für freiGegebene Add-ins**auf **weiter** . Die Seite **Programmiersprache auswählen** wird angezeigt. 
     
-8. Klicken Sie auf **ein Add-in mit Visual Basic**und dann auf **Weiter**. Die Seite **Wählen Sie einen Anwendungshost** wird angezeigt. 
+8. Klicken Sie auf **Add-in mit Visual Basic erstellen**, und klicken Sie dann auf **weiter**. Die Seite **Anwendungs Host auswählen** wird angezeigt. 
     
-9. Deaktivieren Sie die Kontrollkästchen neben jedem Anwendung außer **Microsoft InfoPath**, und klicken Sie dann auf **Weiter**. Die Seite **Geben Sie einen Namen und eine Beschreibung** wird angezeigt. 
+9. Deaktivieren Sie die Kontrollkästchen neben den einzelnen Anwendungen, außer **Microsoft InfoPath**, und klicken Sie dann auf **weiter**. Die Seite **Name und Beschreibung eingeben** wird angezeigt. 
     
-10. Geben Sie im Feld **wie lautet der Name des Add-In** den Namen des Ihre COM-Add-Ins. 
+10. Geben Sie im Feld **wie lautet der Name Ihres Add-ins** den Namen des COM-Add-Ins ein. 
     
-11. Geben Sie im Feld **Beschreibung von Ihrem Add-in -** die Beschreibung für die COM-Add-in, und klicken Sie auf **Weiter**. Die Seite **Wählen Sie die Add-In-Optionen** wird angezeigt. 
+11. Geben Sie im Feld **wie lautet die Beschreibung Ihres Add-ins** ein, und klicken Sie auf **weiter**. Die Seite **Add-in-Optionen auswählen** wird angezeigt. 
     
-12. Das Kontrollkästchen Sie **ich würde gerne Add-In laden, wenn die hostanwendung geladen wird** und Feldern **sollte Add-In für alle Benutzer des Computers an, die er nicht nur die Person installiert wurde, die sie installiert, verfügbar sein** . 
+12. Aktivieren Sie das Kontrollkästchen Ich möchte, dass das **Add-in geladen wird, wenn die Hostanwendung** geladen **wird und mein Add-in für alle Benutzer des Computers, auf dem Sie installiert wurde, verfügbar sein soll, nicht nur für die Person, die die IT** -Box installiert. 
     
-13. Klicken Sie auf **Weiter** , um der Seite **Zusammenfassung** der überprüfen und dann auf **Fertig stellen**.
+13. Klicken Sie auf **weiter** , um die Seite **Zusammenfassung** zu überarbeiten, und klicken Sie auf **Fertig stellen**.
     
-Nachdem das Projekt von Visual Studio erstellt wurde, werden zwei Projekte im Projektmappen-Explorer-Fenster angezeigt. Das erste Projekt ist das Projekt für das COM-Add-in. Das zweite Projekt ist ein Setup-Projekt für das COM-Add-in bereitstellen. Den **Assistenten für gemeinsames Add-in -** fügt nur einen Verweis auf die **Microsoft Office 14.0-Objektbibliothek**, so dass es notwendig ist, fügen Sie einen Verweis auf die InfoPath-Objektbibliothek mit den folgenden Schritten:
+Nachdem das Projekt von Visual Studio erstellt wurde, werden zwei Projekte im Projektmappen-Explorer angezeigt. Das erste Projekt ist das Projekt für das COM-Add-in; Das zweite Projekt ist ein Setupprojekt für die Bereitstellung des COM-Add-Ins. Der **Assistent für freiGegebene Add-ins** fügt nur einen Verweis auf die **Microsoft Office 14,0-Objektbibliothek**ein, daher muss mithilfe der folgenden Schritte ein Verweis auf die InfoPath-Objektbibliothek eingefügt werden:
   
-1. Doppelklicken Sie auf **Mein Projekt** , um die Add-in-Projekteigenschaften anzuzeigen. Klicken Sie auf der Registerkarte **Referenzen** zum Anzeigen der Verweise automatisch dem Projekt hinzugefügt. 
+1. Doppelklicken Sie auf **mein Projekt** , um die Eigenschaften des Add-in-Projekts anzuzeigen. Klicken Sie auf die Registerkarte **Verweise** , um die Verweise anzuzeigen, die dem Projekt automatisch hinzugefügt werden. 
     
-2. Klicken Sie auf die Schaltfläche **Hinzufügen** , um das Dialogfeld **Verweis hinzufügen** angezeigt. 
+2. Klicken Sie auf die Schaltfläche **Hinzufügen** , um das Dialogfeld **Verweis hinzufügen** anzuzeigen. 
     
-3. Doppelklicken Sie auf **Microsoft.InfoPath 2.0-Typenbibliothek**auf der Registerkarte **COM** , und klicken Sie auf **OK**.
+3. Doppelklicken Sie auf der Registerkarte **com** auf **Microsoft. InfoPath 2,0**-Typbibliothek, und klicken Sie dann auf **OK**.
     
-4. Hinzufügen eines Verweises auf die **Typbibliothek von Microsoft InfoPath 3.0** Verweise auf drei Assemblys, die entfernt werden, müssen auch hinzugefügt: **ADODB** **MSHTML**und **MSXML2**. Klicken Sie im **Projektmappen-Explorer** unter **Verweise**Maustaste auf jeden dieser Verweise, und klicken Sie dann auf **Entfernen**.
+4. Wenn Sie einen Verweis auf die **Microsoft InfoPath 3,0** -Typbibliothek hinzufügen, werden auch Verweise auf drei Assemblys hinzugefügt, die entfernt werden müssen: **ADODB**, **MSHTML**und **msxml2**. Klicken Sie im **Projektmappen-Explorer** unter **Verweise**mit der rechten Maustaste auf jeden dieser Verweise, und klicken Sie dann auf **Entfernen**.
     
-## <a name="viewing-the-registry-settings"></a>Anzeigen von Registrierungseinstellungen
+## <a name="viewing-the-registry-settings"></a>Anzeigen der Registrierungseinstellungen
 
-Um die registrierungseinstellungen anzuzeigen, die erstellt werden, wenn das COM-Add-in installiert ist, gehen Sie folgendermaßen vor:
+Führen Sie die folgenden Schritte aus, um die Registrierungseinstellungen anzuzeigen, die bei der Installation des COM-Add-Ins erstellt werden:
   
-1. Klicken Sie auf den Stammknoten des Setup-Projekts im **Projektmappen-Explorer**, klicken Sie auf **Ansicht**, klicken Sie dann- **Editor**, und klicken Sie auf **Registrierung**.
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Stammknoten des Setup-Projekts, klicken Sie auf **Ansicht**, dann auf **Editor**, und klicken Sie dann auf **Registrierung**.
     
-2. Klicken Sie im linken Bereich auf das Pluszeichen, um **HKEY_LOCAL_MACHINE**, **Software**, **Microsoft**, **InfoPath**und dann **Add-Ins**zu erweitern.
+2. Klicken Sie im linken Bereich auf das Plus, um **HKEY_LOCAL_MACHINE**, **Software**, **Microsoft**, **InfoPath**und dann AddIns **** zu erweitern.
     
-3. Klicken Sie auf den Namen Ihres freigegebenen Add-In-Projekts **ProgID**entspricht.
+3. Klicken Sie auf den Namen, der der **ProgID**des freigegebenen Add-in-Projekts entspricht.
     
-Um diese Eigenschaften zu ändern, mit der rechten Maustaste der-Eigenschaft, klicken Sie **Im Fenster Eigenschaften**auf, und ändern Sie den **Wert** im **Fenster Eigenschaften**.
+Um diese Eigenschaften zu ändern, klicken Sie mit der rechten Maustaste auf die Eigenschaft, klicken Sie auf **Eigenschaftenfenster**, und ändern Sie das Feld **Wert** im **Fenster Eigenschaften**.
   
-## <a name="compiling-and-distributing-the-shared-add-in"></a>Kompilieren und Verteilen von gemeinsamem Add-in
+## <a name="compiling-and-distributing-the-shared-add-in"></a>Kompilieren und Verteilen des freigegebenen Add-ins
 
-Zum Kompilieren des verwalteten COM-Add-Ins zu Testzwecken auf dem Computer, auf dem das gemeinsames Add-In-Projekt entwickelt wurde, klicken Sie auf den Stammknoten des Shared-Add-In-Projekts im Projektmappen-Explorer, und klicken Sie auf erstellen. Wenn das Projekt ohne Fehler erstellt wird, können Sie die Bearbeitung InfoPath-Umgebung zu starten und Verwenden des verwalteten COM-Add-Ins. Wenn Sie eine Instanz von InfoPath ausgeführt haben, schließen sie vor dem Erstellen des Projekts. Es ist auch möglich, öffnen Sie das Dialogfeld COM-Add-ins, um sicherzustellen, dass das COM-Add-in registriert ist. Gehen Sie folgendermaßen vor, um das Dialogfeld COM-Add-ins zu öffnen:
+Zum Kompilieren des verwalteten COM-Add-Ins zu Testzwecken auf dem Computer, auf dem das FreigeGebene Add-in-Projekt entwickelt wurde, klicken Sie im projektMappen-Explorer mit der rechten Maustaste auf den Stammknoten des freigegebenen Add-in-Projekts, und klicken Sie auf erstellen. Wenn das Projekt ohne Fehler erstellt wird, können Sie die InfoPath-Bearbeitungsumgebung starten und mit der Verwendung des verwalteten COM-Add-ins beginnen. Wenn Sie eine Instanz von InfoPath haben, schließen Sie Sie, bevor Sie das Projekt erstellen. Möglicherweise muss auch das Dialogfeld COM-Add-Ins geöffnet werden, um zu überprüfen, ob das COM-Add-in registriert ist. Gehen Sie folgendermaßen vor, um das Dialogfeld COM-Add-Ins zu öffnen:
   
-1. Öffnen Sie die Bearbeitung InfoPath-Umgebung. Die einfachste Möglichkeit hierzu ist zum Öffnen einer vorhandenen Formularvorlage, die basierend auf dieser Formularvorlage ein neues Formular erstellt wird.
+1. Öffnen Sie die InfoPath-Bearbeitungsumgebung. Die einfachste Möglichkeit hierzu ist das Öffnen einer vorhandenen Formularvorlage, mit der ein neues Formular erstellt wird, das auf dieser Formularvorlage basiert.
     
-2. Klicken Sie im Menü **Extras** auf **Sicherheitscenter** . 
+2. Klicken Sie im Menü **Extras** auf **Vertrauensstellungs Center** . 
     
-3. Klicken Sie auf die Kategorie **-Add-ins** auf der linken Seite. 
+3. Klicken Sie Links auf die Kategorie **Add-ins** . 
     
-4. Wählen Sie im Abschnitt **Verwalten** im unteren Bereich des Dialogfelds **Sicherheitscenter** aus der Liste **COM-Add-ins** , und klicken Sie auf die Schaltfläche **Gehe zu** . 
+4. Wählen Sie im Abschnitt **Verwalten** am unteren Rand des Dialogfelds **Vertrauensstellungs Center** die Option **com-Add-ins** aus der Liste aus, und klicken Sie auf die Schaltfläche **Gehe** zu. 
     
-5. Klicken Sie im Dialogfeld **COM-Add-ins** sehen Sie den Namen des Ihr Add-in vor kurzem erstellten und sollte ein Kontrollkästchen vorhanden sein. Wenn keine Kontrollkästchen vorhanden ist, konnte nicht das COM-Add-in aufgrund eines Fehlers zu laden, das im Abschnitt **Verhalten laden** des Dialogfelds aufgeführt wird. 
+5. Im Dialogfeld **com-Add-ins** wird der Name des kürzlich erstellten Add-Ins angezeigt, und daneben sollte ein Kontrollkästchen vorhanden sein. Wenn kein Kontrollkästchen angezeigt wird, konnte das COM-Add-in aufgrund eines Fehlers nicht geladen werden, der im Abschnitt **Ladeverhalten** des Dialogfelds aufgeführt wird. 
     
-Um die verwalteten COM-add-in für die Verwendung auf einem anderen Computer als dem Computer zu kompilieren auf dem das gemeinsames Add-In-Projekt entwickelt wurde, müssen Sie zusätzliche Schritte zum Sichern des Codes ausführen. Informationen zum Sichern von gemeinsames Add-in-Projekte für die Verwendung auf anderen Computern finden Sie unter den folgenden drei Artikeln:
+Zum Kompilieren des verwalteten COM-Add-Ins zur Verwendung auf einem anderen Computer als dem Computer, auf dem das FreigeGebene Add-in-Projekt entwickelt wurde, müssen Sie zusätzliche Schritte ausführen, um den Code zu sichern. Informationen zum Sichern von Projekten für FreigeGebene Add-Ins zur Verwendung auf anderen Computern finden Sie in den folgenden drei Artikeln:
   
 - [Bereitstellung von verwalteten COM-Add-Ins in Office XP](https://go.microsoft.com/fwlink/?LinkID=73473)
   
-- [Verwenden die COM-Add-in-Shim-Lösung zum Bereitstellen von verwalteten COM-Add-ins in Office XP](https://go.microsoft.com/fwlink/?LinkID=73474)
+- [Verwenden der COM-Add-in-Shimlösung zum Bereitstellen von verwalteten COM-Add-Ins in Office XP](https://go.microsoft.com/fwlink/?LinkID=73474)
   
-- [Isolieren von Office-Erweiterungen mit COM Shim-Assistenten](https://go.microsoft.com/fwlink/?LinkID=73475)
+- [Isolieren von Office-Erweiterungen mit dem COM-Shim-Assistenten](https://go.microsoft.com/fwlink/?LinkID=73475)
   
 > [!IMPORTANT]
-> Isolieren von nicht das COM-Add-in kann Speicherverluste und Anwendung instabil führen. 
+> Das nicht isolieren des COM-Add-Ins kann zu Speicherlecks und Anwendungsinstabilität führen. 
   
 > [!NOTE]
-> Wenn .NET Framework oder andere erforderliche Assemblys aus dem Setup-Projekt noch nicht auf den Zielcomputern installiert sind, wird die MSI-Datei möglicherweise nicht ordnungsgemäß installiert. Darüber hinaus nicht verteilen Sie die MSI-Datei und dann versuchen, die MSI-Datei installieren. Sie müssen auch die anderen Unterstützungsdateien im gleichen Ordner wie die ursprüngliche MSI-Datei, die von Visual Studio generierte verteilen. 
+> Wenn .NET Framework oder andere erforderliche Assemblys aus dem Setup-Projekt nicht bereits auf den Zielcomputern installiert sind, wird die MSI-Datei möglicherweise nicht richtig installiert. Außerdem können Sie die MSI-Datei nicht verteilen und dann versuchen, die MSI-Datei zu installieren. Außerdem müssen Sie die anderen Supportdateien im selben Ordner wie die von Visual Studio generierte Original-MSI-Datei verteilen. 
   
-## <a name="coding-in-the-com-add-in"></a>Codieren im COM-Add-Ins
+## <a name="coding-in-the-com-add-in"></a>Codieren im COM-Add-in
 
-Anwendungsereignisse, die in der InfoPath-formularbearbeitungsumgebung auftreten können mithilfe eines COM-Add-Ins erfasst werden. Die folgenden Ereignisse des [ApplicationEvents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx) -Objekts können mithilfe des COM-Add-Ins auf Benutzeraktionen reagieren verwendet werden: 
+Anwendungsereignisse, die in der InfoPath-Formularbearbeitungsumgebung auftreten, können von einem COM-Add-in erfasst werden. Die folgenden Ereignisse des [ApplicationEvents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx) -Objekts können vom COM-Add-in verwendet werden, um auf Benutzeraktionen zu reagieren: 
   
-|Document.SelectionChanged **-Ereignis**|**Beschreibung**|
+|**Event**|**Beschreibung**|
 |:-----|:-----|
-|[NewXDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument.aspx) Ereignis  <br/> |Tritt ein, wenn ein neues Formular erstellt wird.  <br/> |
+|[Neuxdocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument.aspx) Ereignis  <br/> |Tritt ein, wenn ein neues Formular erstellt wird.  <br/> |
 |[Beenden](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.Quit.aspx) Ereignis  <br/> |Tritt ein, wenn der Benutzer InfoPath beendet.  <br/> |
-|[WindowActivate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate.aspx) Ereignis  <br/> |Tritt ein, wenn ein Dokumentfenster aktiviert wird.  <br/> |
+|[WindowDeactivate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate.aspx) Ereignis  <br/> |Tritt ein, wenn ein Dokumentfenster aktiviert wird.  <br/> |
 |[WindowDeactivate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate.aspx) Ereignis  <br/> |Tritt ein, wenn ein Dokumentfenster deaktiviert wird.  <br/> |
-|[WindowSize](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowSize.aspx) Ereignis  <br/> |Tritt ein, wenn die Größe eines Dokumentfensters geändert wird oder das Dokumentfenster verschoben wird.  <br/> |
+|[Windowsisieren](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowSize.aspx) Ereignis  <br/> |Tritt ein, wenn die Größe eines Dokumentfensters geändert wird oder das Dokumentfenster verschoben wird.  <br/> |
 |[XDocumentBeforeClose](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose.aspx) Ereignis  <br/> |Tritt unmittelbar vor dem Schließen eines Dokuments ein.  <br/> |
 |[XDocumentBeforePrint](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforePrint.aspx) Ereignis  <br/> |Tritt unmittelbar vor dem Drucken eines geöffneten Dokuments auf.  <br/> |
 |[XDocumentBeforeSave](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeSave.aspx) Ereignis  <br/> |Tritt unmittelbar vor dem Speichern eines geöffneten Dokuments auf.  <br/> |
 |[XDocumentChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentChange.aspx) Ereignis  <br/> |Tritt ein, wenn ein neues Formular erstellt wird, wenn ein vorhandenes Formular geöffnet wird oder wenn ein anderes Formular als aktives Formular festgelegt wird.  <br/> |
 |[XDocumentOpen](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen.aspx) Ereignis  <br/> |Tritt ein, wenn ein Dokument geöffnet wird.  <br/> |
    
-Um diese Ereignisse in der COM-Add-in zu erfassen, müssen Sie in der **Connect** -Klasse die folgenden Variablen auf Klassenebene deklarieren: 
+Um diese Ereignisse im COM-Add-in aufzuzeichnen, müssen Sie die folgenden Variablen auf Klassenebene in der **Connect** -Klasse deklarieren: 
   
 ```vb
 InfoPathApplication = DirectCast( _
@@ -176,9 +176,9 @@ InfoPathApplicationEvents =
    InfoPathApplication.Events;
 ```
 
-Die erste Zeile in der **durch das Add-in das Objekt [_Application3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.aspx) empfangene** allgemeine Anwendungsobjekt umwandelt. Die zweite Zeile wandelt die [Ereignisse](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.Events.aspx) -Eigenschaft des Objekts **_Application3** (dargestellt durch die Variable **InfoPathApplication** ) auf das [ApplicationEvents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx) -Objekt. 
+Die erste Codezeile wandelt das generische Application- **Objekt** , das vom Add-in empfangen wird, in das [_Application3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.aspx) -Objekt um. Die zweite Leitung wandelt die [Events](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.Events.aspx) -Eigenschaft des **_Application3** -Objekts (dargestellt durch die **InfoPathApplication** -Variable) in das [ApplicationEvents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx) -Objekt um. 
   
-So erstellen Sie Ereignishandler, wählen Sie **InfoPathApplicationEvents** aus dem Dropdown-Feld **Klassenname** , im oberen Bereich des Visual Studio-Fensters, und wählen Sie dann das Ereignis im Dropdown- **Methodenname** im oberen Bereich des visuellen behandeln möchten Studio-Fenster. Wenn Sie möchten steuern, wenn ein Formular gespeichert wird, behandeln Sie das **XDocumentBeforeSave** -Ereignis. Fügt ein **XDocumentBeforeSave** automatisch aus der Dropdownliste **Methodennamen** auswählen die folgende Schritte aus: 
+Zum Erstellen von Ereignishandlern wählen Sie im Dropdownfeld **Klassenname** oben im Visual Studio-Fenster **InfoPathApplicationEvents** aus, und wählen Sie dann das zu behandelnde Ereignis im Dropdownfeld **methodenName** am oberen Rand des visuellen Studio-Fenster. Wenn Sie beispielsweise steuern möchten, wann ein Formular gespeichert wird, behandeln Sie das **XDocumentBeforeSave** -Ereignis. Durch Auswählen von **XDocumentBeforeSave** aus der Dropdownliste **Methoden Name** wird automatisch das folgende Verfahren eingefügt: 
   
 ```vb
 Private Sub InfoPathApplicationEvents_XDocumentBeforeSave( _
@@ -196,14 +196,14 @@ private void InfoPathApplicationEvents_XDocumentBeforeSave(
 
 ```
 
-Eines der Ereignisse des **ApplicationEvents** -Objekts kann mithilfe der COM-Add-in mit demselben Verfahren behandelt werden. 
+Ereignisse des **ApplicationEvents** -Objekts können vom COM-Add-in mit derselben Methode verarbeitet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen eine Microsoft Office 2000 COM-Add-in](https://go.microsoft.com/fwlink/?LinkID=73468) 
-- [Erstellen von Office verwalteten COM-Add-Ins mit Visual Studio .NET](https://go.microsoft.com/fwlink/?LinkID=73470)
-- [Arbeiten mit der IDTExtensibility2-Ereignisprozeduren](https://go.microsoft.com/fwlink/?LinkID=73471)
-- [Erstellen eines Office COM-Add-Ins mit Visual Basic .NET](https://go.microsoft.com/fwlink/?LinkID=73469)
-- [Erstellen eines Office COM-add-Ins mithilfe von Visual c#](https://support.microsoft.com/en-us/help/302901/how-to-build-an-office-com-add-in-by-using-visual-c-net)
-- [Erstellen von InfoPath 2007-Add-Ins mithilfe von Visual Studio 2005-Tools für Office System SE (engl.)](https://msdn.microsoft.com/library/bb968857%28office.12%29.aspx)
+- [Erstellen eines Microsoft Office 2000-COM-Add-ins](https://go.microsoft.com/fwlink/?LinkID=73468) 
+- [Erstellen von Office-verwalteten COM-Add-Ins mit Visual Studio .NET](https://go.microsoft.com/fwlink/?LinkID=73470)
+- [Arbeiten mit den IDTExtensibility2-Ereignisprozeduren](https://go.microsoft.com/fwlink/?LinkID=73471)
+- [Erstellen eines Office-COM-Add-Ins mit Visual Basic .NET](https://go.microsoft.com/fwlink/?LinkID=73469)
+- [Erstellen eines Office-COM-Add-Ins mithilfe von Visual C# .NET](https://support.microsoft.com/en-us/help/302901/how-to-build-an-office-com-add-in-by-using-visual-c-net)
+- [Erstellen von InfoPath 2007-Add-Ins mithilfe von Visual Studio 2005 Tools für Office System SE](https://msdn.microsoft.com/library/bb968857%28office.12%29.aspx)
 

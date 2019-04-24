@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c53170f-03a6-4a05-913e-de8eeadea692
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 87696ceea96bd2f51bfe5a0b062499946179c8b3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ace31079c51aac169f6091af0cb363e7f05f0d14
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270147"
 ---
 # <a name="mapiopenlocalformcontainer"></a>MAPIOpenLocalFormContainer
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Schnittstellenzeiger auf den lokalen Formularbibliothek. 
+Gibt einen Schnittstellenzeiger auf die lokale Formularbibliothek zurück. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 MAPIOpenLocalFormContainer(
@@ -43,23 +43,23 @@ MAPIOpenLocalFormContainer(
 
  _ppfcnt_
   
-> [out] Zeiger auf einen Zeiger auf die lokale Formular Library-Schnittstelle.
+> Out Zeiger auf einen Zeiger auf die Schnittstelle der lokalen Formularbibliothek.
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Schnittstelle, an die ein Zeiger zurückgegeben wird, kann anwendungsspezifische-Formularen in die Bibliothek installieren, ohne das Programm zuvor zur Anmeldung bei MAPI von Programmen von Drittanbietern verwendet werden. 
+Die Schnittstelle, an die ein Zeiger zurückgegeben wird, kann von Drittanbieter-Installationsprogrammen verwendet werden, um anwendungsspezifische Formulare in der Bibliothek zu installieren, ohne dass sich das Programm zuerst bei MAPI anmelden muss. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnMAPIOpenLocalFormContainer  <br/> |MFCMAPI (engl.) verwendet die **MAPIOpenLocalFormContainer** -Methode, um den lokalen Formular Container zum Rendern in einem neuen Fenster öffnen.  <br/> |
+|MainDlg. cpp  <br/> |CMainDlg:: OnMAPIOpenLocalFormContainer  <br/> |MFCMAPI verwendet die **MAPIOpenLocalFormContainer** -Methode, um den lokalen Formular Container zu öffnen, der in einem neuen Fenster gerendert werden soll.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

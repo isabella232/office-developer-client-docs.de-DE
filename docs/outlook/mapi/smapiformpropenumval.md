@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 694d40e9-cff2-435e-ad90-446044c306d2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2c49a17389a9bfc998f892e0becf96dca4cd773f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 353bc574ca5987d71faf4841744de30a3d6c3f19
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309492"
 ---
 # <a name="smapiformpropenumval"></a>SMAPIFormPropEnumVal
 
@@ -25,11 +25,11 @@ ms.locfileid: "22578717"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ordnet einen enumerierten ganzzahligen Wert einen Anzeigenamen für diesen Wert. 
+Ordnet einen aufgezählten ganzzahligen Wert einem Anzeigenamen für diesen Wert zu. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
    
 ```cpp
 typedef struct _SMAPIFormPropEnumVal
@@ -44,15 +44,15 @@ typedef struct _SMAPIFormPropEnumVal
 
  **pszDisplayName**
   
-> Zeichenfolge, die den Anzeigenamen für die in das **nVal** -Element angegebenen Wert enthält. 
+> Zeichenfolge, die den Anzeigenamen für den im **NVAL** -Element angegebenen Wert enthält. 
     
  **nVal**
   
-> Ein Enumerationswert für den Anzeigenamen auf den Member **PszDisplayName** zeigt. 
+> Ein Enumerationswert für den Anzeigenamen, auf den vom **pszDisplayName** -Element verwiesen wird. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn ein Benutzer einen Anzeigenamen aus einem Formular auswählt, wird den Namen des entsprechenden-Enumerationswert gespeichert, mithilfe der Implementierung der [IMAPIProp](imapipropiunknown.md) -Schnittstelle, die dem Formular zugeordnet ist. 
+Wenn ein Benutzer einen Anzeigenamen aus einem Formular auswählt, wird der entsprechende Enumerationswert des Namens mithilfe der [IMAPIProp](imapipropiunknown.md) -Schnittstellenimplementierung gespeichert, die dem Formular zugeordnet ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

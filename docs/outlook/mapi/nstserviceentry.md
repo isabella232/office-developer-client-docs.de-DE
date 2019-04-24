@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ada6363-2406-4c0a-8326-a299a8bbefe1
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 96c04a242c477204ea1447fb78c31d189eeac59a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280054"
 ---
 # <a name="nstserviceentry"></a>NSTServiceEntry
 
@@ -21,7 +21,7 @@ ms.locfileid: "25392417"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachricht Service Entry Point-Funktion für MAPI-Speicheranbieter umfließt einen PST-basierten lokalen Speicher als NST Speicher. 
+Nachrichtendienst-Einstiegspunktfunktion für einen MAPI-Speicheranbieter zum Umschließen eines PST-basierten lokalen Speichers als NST-Speicher. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -47,37 +47,37 @@ HRESULT NSTServiceEntry(
 
 ## <a name="parameters"></a>Parameter
 
- **NSTServiceEntry** verwendet den **[MSGSERVICEENTRY](msgserviceentry.md)** Funktionsprototyp. Informationen zu den Parametern finden Sie unter **[MSGSERVICEENTRY](msgserviceentry.md)**. 
+ **NSTServiceEntry** verwendet den Prototyp der **[MSGSERVICEENTRY](msgserviceentry.md)** -Funktion. Informationen zu den Parametern finden Sie unter **[MSGSERVICEENTRY](msgserviceentry.md)**. 
   
 ## <a name="return-values"></a>Rückgabewerte
 
-Informationen zu Rückgabewerte finden Sie unter **[MSGSERVICEENTRY](msgserviceentry.md)**. 
+Informationen zu Rückgabewerten finden Sie unter **[MSGSERVICEENTRY](msgserviceentry.md)**. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn **[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)** für die Adresse des dieser Funktion in msmapi32.dll suchen, geben Sie "NSTServiceEntry" als den Namen der Prozedur. 
+Wenn Sie **[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)** verwenden, um nach der Adresse dieser Funktion in msmapi32. dll zu suchen, geben Sie "NSTServiceEntry" als Prozedurnamen an. 
   
-Um die Replikation-API verwenden, muss ein MAPI-Anbieter zuerst öffnen und in eine PST-basierten lokalen Speicher durch Aufrufen von **[NSTServiceEntry](nstserviceentry.md)** umgebrochen. Der Anbieter können Sie die wichtigsten Schnittstellen der API, **[IOSTX](iostxiunknown.md)** und **[IPSTX](ipstxiunknown.md)**, um die Replikation auszuführen. 
+Um die Replikations-API verwenden zu können, muss ein MAPI-Speicheranbieter zunächst einen PST-basierten lokalen Speicher durch Aufrufen von **[NSTServiceEntry](nstserviceentry.md)** öffnen und einbinden. Der Anbieter kann dann die wichtigsten Schnittstellen der API, **[IOSTX](iostxiunknown.md)** und **[IPSTX](ipstxiunknown.md)** verwenden, um die Replikation durchzuführen. 
   
-Die folgenden Anmerkungen gelten für einen Speicher NST:
+Die folgenden Hinweise gelten für einen NST-Speicher:
   
-- Speichern Sie alle Informationen nicht im Abschnitt globale Profile beim Implementieren von eines MAPI-Anbieters, der die **NSTServiceEntry**verwendet. Abschnitt globale Profile von vielen Anbietern freigegeben und können in diesem Profil gespeicherte Daten überschrieben werden. 
+- Speichern Sie keine Informationen im Abschnitt globaler Profil beim Implementieren eines MAPI-Anbieters, der **NSTServiceEntry**verwendet. Der Abschnitt globaler Profil wird von vielen Anbietern gemeinsam genutzt, und in diesem Profil gespeicherte Daten können überschrieben werden. 
     
-- Nur Elemente mit vorhandenen Änderung Zeitstempel erhalten ihre Stempel aktualisiert, wenn sie gespeichert werden. 
+- Nur Elemente mit vorhandenen Änderungszeit Stempeln erhalten ihre Stempel beim Speichern aktualisiert. 
     
-- Überprüfung von Konflikt tritt nicht automatisch auf Wenn Elemente gespeichert werden.
+- Die Konfliktüberprüfung tritt nicht automatisch auf, wenn Elemente gespeichert werden.
     
--  Erkennung von Duplikaten tritt nicht auf, wenn Elemente gespeichert werden. 
+-  Doppelte Erkennung tritt nicht auf, wenn Elemente gespeichert werden. 
     
--  Die Datei, die die zwischengespeicherte Version des Servers darstellt angehängt ist. NST. 
+-  Die Datei, die die zwischengespeicherte Version des Servers darstellt, wird angefügt. NST. 
     
-- Um einen Zeiger auf den Profilabschnitt globale zu ermitteln, ruft eine Message Service **[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** im Support-Objekt mit **PbNSTGlobalProfileSectionGuid** wie unten definiert: 
+- Wenn Sie einen Zeiger auf den Abschnitt globales Profil erhalten möchten, Ruft ein Nachrichtendienst **[IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md)** im Support-Objekt mithilfe von **pbNSTGlobalProfileSectionGuid** wie folgt auf: 
     
   ```
   #define  pbNSTGlobalProfileSectionGuid "\x85\xED\x14\x23\x9D\xF7\x42\x66\x8B\xF2\xFB\xD4\xA5\x21\x29\x41"
   ```
 
-- In diesem Fall sollten das Support-Objekt des Diensts Nachricht sicherstellen, dass **IMAPISupport::OpenProfileSection** Profilabschnitt zurückgegeben, der von der **[PR_SERVICE_UID](pidtagserviceuid-canonical-property.md)** -Eigenschaft in den Abschnitt für das Standardprofil identifiziert wird. Wenn in diesem Profilabschnitt erhalten möchten, kann das Support-Objekt öffnen Sie den Abschnitt für das Standardprofil, **PR_SERVICE_UID**abrufen und übergeben Sie das Ergebnis an **IMAPISupport::OpenProfileSection** den richtige globale Profilabschnitt abgerufen. Die Support-Objekts gibt einen Zeiger wiederum für diesen Profilabschnitt globale mit dem Nachrichtendienst. 
+- In diesem Fall sollte das Unterstützungsobjekt des Nachrichtendiensts sicherstellen, dass **IMAPISupport:: OpenProfileSection** den Profil Abschnitt zurückgibt, der durch die **[PR_SERVICE_UID](pidtagserviceuid-canonical-property.md)** -Eigenschaft im Standardprofil Abschnitt identifiziert wird. Zum Abrufen dieses Profil Abschnitts kann das Support Objekt den Standardprofil Abschnitt öffnen, **PR_SERVICE_UID**abrufen und das Ergebnis an **IMAPISupport:: OpenProfileSection** zum Abrufen des richtigen globalen Profil Abschnitts weitergeben. Das Support-Objekt gibt wiederum einen Zeiger auf diesen Abschnitt des globalen Profils an den Nachrichtendienst zurück. 
     
 ## <a name="see-also"></a>Siehe auch
 

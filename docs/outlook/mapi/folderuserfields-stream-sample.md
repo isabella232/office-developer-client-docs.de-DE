@@ -1,29 +1,29 @@
 ---
-title: FolderUserFields Stream-Beispiel
+title: Beispiel für folderuserfields-Stream-Beispiel
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 30e5e887-a324-4ed2-ba2a-eb4c19ba38d2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 76ad693b05e3989bd64ba66565ae4def22110ad0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e5251a619c70221987847830897ba349d63fd9cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281366"
 ---
-# <a name="folderuserfields-stream-sample"></a>FolderUserFields Stream-Beispiel
+# <a name="folderuserfields-stream-sample"></a>Beispiel für folderuserfields-Stream-Beispiel
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird ein Beispiel eines FolderUserFields Stream-Objekts. Das Stream-Objekt enthält eine Definition eines benutzerdefinierten Felds `TextField1`. Der **Text**ist, und der Stream FolderUserFields FolderUserFieldsAnsi und FolderUserFieldsUnicode Teile enthält. Weitere Informationen finden Sie unter [Ordner Felder Stream Strukturen](folder-fields-stream-structures.md).
+In diesem Thema wird ein Beispiel für einen Beispiel für folderuserfields-Stream beschrieben. Der Stream enthält eine Definition eines benutzerdefinierten Felds `TextField1`. Der Typ ist **Text**, und der Beispiel für folderuserfields-Datenstrom enthält sowohl FolderUserFieldsAnsi-als auch FolderUserFieldsUnicode-Parts. Weitere Informationen finden Sie unter [Ordner Fields Stream Structures](folder-fields-stream-structures.md).
   
-## <a name="data-dump"></a>Daten dump
+## <a name="data-dump"></a>Daten Dump
 
-Im folgenden finden ein Abbild der Daten des Stream-Objekts, wie er in einem binären-Editor angezeigt.
+Es folgt ein Daten Dump des Streams, wie er in einem binären Editor angezeigt würde.
   
-|Stream-offset|Datenbytes|ASCII-Daten|
+|Datenstrom Offset|Datenbytes|ASCII-Daten|
 |:-----|:-----|:-----|
 | `0000000000` <br/> | `02 00 00 00 01 00 00 00 0A 00 54 65 78 74 46 69` <br/> | `..........TextFi` <br/> |
 | `0000000010` <br/> | `65 6C 64 31 29 03 02 00 00 00 00 00 C0 00 00 00` <br/> | `eld1).......A...` <br/> |
@@ -41,131 +41,131 @@ Im folgenden finden ein Abbild der Daten des Stream-Objekts, wie er in einem bin
 | `00000000D0` <br/> | `00 00 00 00 00 00` <br/> | `......` <br/> |
    
 
-Es folgt eine Analyse der Beispieldaten für den Datenstrom **FolderUserFields** :
+Es folgt eine Analyse der Beispieldaten für den **Beispiel für folderuserfields** -Stream:
   
-- FolderUserFieldsAnsi: Offset 0 x 0.
+- FolderUserFieldsAnsi: Offset 0x0 festlegen.
     
-  - FieldDefinitionCount: Offset 0 x 0, 4 Bytes: 0 x 00000002 (2).
+  - FieldDefinitionCount: Offset 0x0 festlegen, 4 Bytes: 0x00000002 (2).
     
-  - FieldDefinitions: Offset 0 x 4, Array 2 FolderFieldDefinitionA Datenströme.
+  - FieldDefinitions: Offset 0x4, Array von 2 FolderFieldDefinitionA-Streams.
     
-    **Erste Arrayelement**:
+    **Erstes Arrayelement**:
     
-    - FieldType: Offset 0, 4 Bytes x 4: 0 x 00000001 (FtString).
+    - FieldType: Offset 0x4 bytes: 0x00000001 (ftString).
       
-    - FieldNameLength: Offset 0 x 8, 2 Bytes: 0x000A (10)
+    - FieldNameLength: Offset 0x8, 2 Bytes: 0x000A (10)
       
-    - FieldName: Offset 0xA Array von 10 Zeichen. ANSI-String-Wert: "TextField1".
+    - FieldName: Offset 0xA, Array of 10 CHARs. ANSI-Zeichenfolgenwert: "TextField1".
       
-    - Allgemeine: Offset 0 x 14.
+    - Common: Offset-0x14.
     
-      - PropSetGuid: Offset 0 x 14, 16 Byte: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS).
+      - PropSetGuid: Offset 0x14, 16 Bytes: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS).
         
-      - Fcapm: Offset 0 x 24, 4 Bytes: 0x80000007 (FCAPM_CAN_EDIT | FCAPM_CAN_SORT | FCAPM_CAN_GROUP | FCAPM_CAN_EDIT_IN_ITEM).
+      - fcapm: Offset 0x24, 4 Bytes: 0x80000007 (FCAPM_CAN_EDIT | FCAPM_CAN_SORT | FCAPM_CAN_GROUP | FCAPM_CAN_EDIT_IN_ITEM).
         
-      - DwString: Offset 0, 4 Bytes x 28: 0 x 00000000.
+      - dwString: Offset 0x28, 4 Bytes: 0x00000000.
         
-      - DwBitmap: Offset 0x2C 4 Bytes: 0 x 00000000.
+      - dwBitmap: Offset 0X2c beansprucht, 4 Bytes: 0x00000000.
         
-      - DwDisplay: Offset 0, 4 Bytes x 30: 0 x 00000000.
+      - dwDisplay: Offset 0x30, 4 Bytes: 0x00000000.
         
-      - iFmt: Offset 0 x 34, 4 Bytes: 0 x 00000000.
+      - iFmt: Offset 0x34, 4 Bytes: 0x00000000.
         
-      - WszFormulaLength: Offset 0x38 2 Bytes: 0 x 0000 (0).
+      - wszFormulaLength: Offset 0x38, 2 Bytes: 0x0000 (0).
         
-      - WszFormula: Offset 0x3A, Array von 0 WCHARs so lang wie. Leerer String-Wert.
+      - wszFormula: Offset 0x3A, Array von 0 WCHARs. Leerer String-Wert.
     
-    **Zweite Arrayelement**:
+    **Zweites Arrayelement**:
     
-    - FieldType: Offset 0x3A 4 Bytes: 0 x 00000000 (FtNone).
+    - FieldType: Offset 0x3A bytes: 0x00000000 (ftNone).
       
-    - FieldNameLength: Offset 0x3E 2 Bytes: 0 x 0000 (0).
+    - FieldNameLength: Offset 0x3E, 2 Bytes: 0x0000 (0).
       
-    - FieldName: Offset 0 x 40, 0 char-Array. Leerer String-Wert.
+    - FieldName: Offset 0x40, Array of 0 CHARs. Leerer String-Wert.
       
-    - Allgemeine: Offset 0 x 40.
+    - Common: Offset-0x40.
     
-      - PropSetGuid: Offset 0 x 40, 16 Byte: {00000000-0000-0000-0000-000000000000} (GUID_NULL).
+      - PropSetGuid: Offset 0x40, 16 Byte: {00000000-0000-0000-0000-000000000000} (GUID_NULL).
         
-      - Fcapm: Offset 0 x 50, 4 Bytes: 0 x 00000000 (0).
+      - fcapm: Offset 0x50, 4 Bytes: 0x00000000 (0).
         
-      - DwString: Offset 0, 4 Bytes x 54: 0 x 00000000.
+      - dwString: Offset 0x54, 4 Bytes: 0x00000000.
         
-      - DwBitmap: Offset 0x58 4 Bytes: 0 x 00000000.
+      - dwBitmap: Offset 0x58, 4 Bytes: 0x00000000.
         
-      - DwDisplay: Offset 0x5C 4 Bytes: 0 x 00000000.
+      - dwDisplay: Offset 0x5C, 4 Bytes: 0x00000000.
         
-      - iFmt: Offset 0 x 60, 4 Bytes: 0 x 00000000.
+      - iFmt: Offset 0x60, 4 Bytes: 0x00000000.
         
-      - WszFormulaLength: Offset 0x64 2 Bytes: 0 x 0000 (0).
+      - wszFormulaLength: Offset 0x64, 2 Bytes: 0x0000 (0).
         
-      - WszFormula: Offset 0x66, Array von 0 WCHARs so lang wie. Leerer String-Wert.
+      - wszFormula: Offset 0x66, Array von 0 WCHARs. Leerer String-Wert.
     
 - FolderUserFieldsUnicode: Offset 0x66.
     
-  - FieldDefinitionCount: Offset 0x66 4 Bytes: 0 x 00000002 (2).
+  - FieldDefinitionCount: Offset 0x66, 4 Bytes: 0x00000002 (2).
     
-  - FieldDefinitions: Offset 0x6A Array 2 FolderFieldDefinitionW Datenströme.
+  - FieldDefinitions: Offset 0x6A, Array von 2 FolderFieldDefinitionW-Streams.
     
-    **Erste Arrayelement**:
+    **Erstes Arrayelement**:
     
-    - FieldType: Offset 0x6A 4 Bytes: 0 x 00000001 (FtString).
+    - FieldType: Offset 0x6A bytes: 0x00000001 (ftString).
       
-    - FieldNameLength: Offset 0x6E 2 Bytes: 0x000A (10).
+    - FieldNameLength: Offset 0x6E, 2 Bytes: 0x000A (10).
       
-    - FieldName: Offset 0x70 Array von 10 WCHARs so lang wie. Unicode-Zeichenfolgenwert: "TextField1".
+    - FieldName: Offset 0x70, Array of 10 WCHARs. Unicode-Zeichenfolgenwert: "TextField1".
       
-    - Allgemeine: Offset 0 x 84.
+    - Common: Offset-0x84.
     
-      - PropSetGuid: Offset 0 x 84, 16 Byte: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS).
+      - PropSetGuid: Offset 0x84, 16 Bytes: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS).
         
-      - Fcapm: Offset 0x94 4 Bytes: 0x80000007 (FCAPM_CAN_EDIT | FCAPM_CAN_SORT | FCAPM_CAN_GROUP | FCAPM_CAN_EDIT_IN_ITEM).
+      - fcapm: Offset 0x94, 4 Bytes: 0x80000007 (FCAPM_CAN_EDIT | FCAPM_CAN_SORT | FCAPM_CAN_GROUP | FCAPM_CAN_EDIT_IN_ITEM).
         
-      - DwString: Offset 0x98 4 Bytes: 0 x 00000000.
+      - dwString: Offset 0x98, 4 Bytes: 0x00000000.
         
-      - DwBitmap: Offset 0x9C MACHINE_CHECK_EXCEPTION, 4 Bytes: 0 x 00000000.
+      - dwBitmap: Offset 0x9C, 4 Bytes: 0x00000000.
         
-      - DwDisplay: Offset 0xA0 4 Bytes: 0 x 00000000.
+      - dwDisplay: Offset 0xA0, 4 Bytes: 0x00000000.
         
-      - iFmt: Offset 0xA4 4 Bytes: 0 x 00000000.
+      - iFmt: Offset 0xA4, 4 Bytes: 0x00000000.
         
-      - WszFormulaLength: Offset 0xA8 2 Bytes: 0 x 0000 (0).
+      - wszFormulaLength: Offset 0xA8, 2 Bytes: 0x0000 (0).
         
-      - WszFormula: Offset 0xAA, Array von 0 WCHARs so lang wie. Leerer String-Wert.
+      - wszFormula: Offset 0xAA, Array von 0 WCHARs. Leerer String-Wert.
     
-    **Zweite Arrayelement**:
+    **Zweites Arrayelement**:
     
-    - FieldType: Offset 0xAA 4 Bytes: 0 x 00000000 (FtNone).
+    - FieldType: Offset 0xAA bytes: 0x00000000 (ftNone).
       
-    - FieldNameLength: Offset 0xAE 2 Bytes: 0 x 0000 (0).
+    - FieldNameLength: Offset 0xAE, 2 Bytes: 0x0000 (0).
       
-    - FieldName: Offset 0xB0 Array von 0 WCHARs so lang wie. Leerer String-Wert.
+    - FieldName: Offset 0xB0, Array of 0 WCHARs. Leerer String-Wert.
       
-    - Allgemeine: Offset 0xB0.
+    - Common: Offset-0xB0.
     
-      - PropSetGuid: Offset 0xB0 16 Byte: {00000000-0000-0000-0000-000000000000} (GUID_NULL).
+      - PropSetGuid: Offset 0xB0, 16 Byte: {00000000-0000-0000-0000-000000000000} (GUID_NULL).
         
-      - Fcapm: Offset "0xC0", 4 Bytes: 0 x 00000000 (0).
+      - fcapm: Offset 0xC0, 4 Bytes: 0x00000000 (0).
         
-      - DwString: Offset 0xC4 4 Bytes: 0 x 00000000.
+      - dwString: Offset 0xC4, 4 Bytes: 0x00000000.
         
-      - DwBitmap: Offset 0xC8 4 Bytes: 0 x 00000000.
+      - dwBitmap: Offset 0xC8, 4 Bytes: 0x00000000.
         
-      - DwDisplay: Offset 0xCC 4 Bytes: 0 x 00000000.
+      - dwDisplay: Offset 0xCC, 4 Bytes: 0x00000000.
         
-      - iFmt: Offset 0xD0 4 Bytes: 0 x 00000000.
+      - iFmt: Offset 0xD0, 4 Bytes: 0x00000000.
         
-      - WszFormulaLength: Offset 0xD4 2 Bytes: 0 x 0000 (0).
+      - wszFormulaLength: Offset 0xD4, 2 Bytes: 0x0000 (0).
         
-      - WszFormula: Offset 0xD6, Array von 0 WCHARs so lang wie. Leerer String-Wert.
+      - wszFormula: Offset 0xD6, Array von 0 WCHARs. Leerer String-Wert.
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Elemente und Felder in Outlook](outlook-items-and-fields.md)
-- [PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md)
-- [FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
-- [SkipBlock-Streamstruktur](skipblock-stream-structure.md)
-- [FirstSkipBlockContent-Streamstruktur](firstskipblockcontent-stream-structure.md)
-- [PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
-- [PackedUnicodeString-Streamstruktur](packedunicodestring-stream-structure.md)
+- [Outlook-Elemente und-Felder](outlook-items-and-fields.md)
+- [PropertyDefinition-Datenstrom Struktur](propertydefinition-stream-structure.md)
+- [FieldDefinition streamstruktur-Datenstrom Struktur](fielddefinition-stream-structure.md)
+- [SkipBlock streamstruktur-Datenstrom Struktur](skipblock-stream-structure.md)
+- [Firstskipblockcontent streamstruktur-Datenstrom Struktur](firstskipblockcontent-stream-structure.md)
+- [Packedansistring streamstruktur-Datenstrom Struktur](packedansistring-stream-structure.md)
+- [Packedunicodestring streamstruktur-Datenstrom Struktur](packedunicodestring-stream-structure.md)
 

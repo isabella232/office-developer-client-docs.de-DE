@@ -4,32 +4,32 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Bereitstellen von Formularvorlagen [Infopath 2007] InfoPath 2007, Bereitstellen von Formularvorlagen, die Bereitstellung von .NET Framework-Sicherheitseinstellungen [InfoPath 2007], [InfoPath 2007]-Bereitstellung, Formularvorlagen Formularvorlagen [InfoPath 2007]
+- Bereitstellen von Formularvorlagen [InfoPath 2007], InfoPath 2007, Bereitstellen von Formularvorlagen, Formularvorlagen [InfoPath 2007], Deploying,. NET Framework-Sicherheitseinstellungen [InfoPath 2007], Bereitstellung [InfoPath 2007], Formularvorlagen
 localization_priority: Normal
 ms.assetid: ab66e26d-74ee-4211-b387-1385183a6803
-description: Für eine InfoPath-Formularvorlage verwaltetem Code Formularcode wird als eine Assembly kompiliert, die unter der common Language Runtime (CLR) ausgeführt wird. Dies bedeutet, wenn Sie dem Formularcode ändern müssen, müssen Sie öffnen Sie das Projekt in Visual Studio 2012, ändern im Code-Editor, kompilieren Sie die Formularvorlage erneut, und klicken Sie dann erneut bereitstellen die Formularvorlage. Darüber hinaus, da die private Assembly für eine Formularvorlage verwalteten Code unter einem gehosteten CLR-Anwendungsdomäne ausgeführt wird, unterscheiden sich die Sicherheitseinstellungen für Formulare, die volle Vertrauenswürdigkeit erfordern von Formularvorlagen, die nicht volle Vertrauenswürdigkeit erfordern.
-ms.openlocfilehash: 56af865a80df75c7e1d973767066a03310cdde1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Der Formularcode für eine InfoPath-Formularvorlage mit verwaltetem Code wird als Assembly kompiliert, die unter der Common Language Runtime (CLR) ausgeführt wird. Wenn Sie also Änderungen am Formularcode vornehmen müssen, müssen Sie das Projekt in Visual Studio 2012 öffnen, Änderungen im Code-Editor vornehmen, die Formularvorlage neu kompilieren und dann die Formularvorlage erneut bereitstellen. Da die private Assembly für eine Formularvorlage mit verwaltetem Code unter einer gehosteten CLR-Anwendungsdomäne ausgeführt wird, unterscheiden sich die Sicherheitseinstellungen für Formulare, die volle Vertrauenswürdigkeit erfordern, geringfügig von Formularvorlagen, für die keine volle Vertrauenswürdigkeit erforderlich ist.
+ms.openlocfilehash: ba3629e786a224ea950e78bbec9a9fe94d4499de
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303626"
 ---
 # <a name="deploy-infopath-form-templates-with-code"></a>Bereitstellen von InfoPath-Formularvorlagen mit Code
 
-Für eine InfoPath-Formularvorlage verwaltetem Code Formularcode wird als eine Assembly kompiliert, die unter der common Language Runtime (CLR) ausgeführt wird. Dies bedeutet, wenn Sie dem Formularcode ändern müssen, müssen Sie öffnen Sie das Projekt in Visual Studio 2012, ändern im Code-Editor, kompilieren Sie die Formularvorlage erneut, und klicken Sie dann erneut bereitstellen die Formularvorlage. Darüber hinaus, da die private Assembly für eine Formularvorlage verwalteten Code unter einem gehosteten CLR-Anwendungsdomäne ausgeführt wird, unterscheiden sich die Sicherheitseinstellungen für Formulare, die volle Vertrauenswürdigkeit erfordern von Formularvorlagen, die nicht volle Vertrauenswürdigkeit erfordern.
+Der Formularcode für eine InfoPath-Formularvorlage mit verwaltetem Code wird als Assembly kompiliert, die unter der Common Language Runtime (CLR) ausgeführt wird. Wenn Sie also Änderungen am Formularcode vornehmen müssen, müssen Sie das Projekt in Visual Studio 2012 öffnen, Änderungen im Code-Editor vornehmen, die Formularvorlage neu kompilieren und dann die Formularvorlage erneut bereitstellen. Da die private Assembly für eine Formularvorlage mit verwaltetem Code unter einer gehosteten CLR-Anwendungsdomäne ausgeführt wird, unterscheiden sich die Sicherheitseinstellungen für Formulare, die volle Vertrauenswürdigkeit erfordern, geringfügig von Formularvorlagen, für die keine volle Vertrauenswürdigkeit erforderlich ist.
   
 ## <a name="deploying-form-templates-that-do-not-require-full-trust"></a>Bereitstellen von Formularvorlagen, die nicht volle Vertrauenswürdigkeit erfordern
 
-Wenn die Formularcode für die Formularvorlage wird nicht verwendet, InfoPath-Objektmodellmember, die volle Vertrauenswürdigkeit erfordern, und die Formularvorlage wird nicht verwendet, Features, die volle Vertrauenswürdigkeit erfordern, können Sie die Formularvorlage direkt in InfoPath mithilfe des folgenden Verfahrens veröffentlichen. Informationen zum Sicherheitsmodell von InfoPath finden Sie unter [Informationen zum Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md).
+Wenn im Formularcode für eine Formularvorlage keine InfoPath-Objektmodellmember verwendet werden, für die volle Vertrauenswürdigkeit erforderlich ist, und in der Formularvorlage keine Features verwendet werden, für die volle Vertrauenswürdigkeit erforderlich ist, können Sie die Formularvorlage direkt aus InfoPath heraus mit dem folgenden Verfahren veröffentlichen. Informationen zum InfoPath-Sicherheitsmodell finden Sie unter Informationen zum [Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md).
   
 ### <a name="deploy-a-form-template-that-does-not-require-full-trust"></a>Bereitstellen einer Formularvorlage, die nicht volle Vertrauenswürdigkeit erfordert
 
-1. Erstellen Sie und Debuggen Sie die Formularvorlage in Visual Studio 2012.
+1. Erstellen und Debuggen Sie Ihre Formularvorlage in Visual Studio 2012.
     
-2. Wenn Sie im Code-Editor von Visual Studio 2012 arbeiten, wechseln Sie zu InfoPath, klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf die Schaltfläche für den gewünschten Veröffentlichungsort auf der Registerkarte **Veröffentlichen** (Wenn Sie zuvor die Formularvorlage veröffentlicht haben, klicken Sie auf der **Datei** Registerkarte, und klicken Sie dann auf **Schnell veröffentlichen** , um die Formularvorlage an den gleichen Speicherort erneut.) 
+2. Wenn Sie im Code-Editor von Visual Studio 2012 arbeiten, wechseln Sie zu InfoPath, klicken Sie auf die Registerkarte **Datei** , und klicken Sie dann auf der Registerkarte **veröffentlichen** auf die Schaltfläche für den gewünschten Veröffentlichungsort. (wenn Sie die Formularvorlage zuvor veröffentlicht haben, können Sie auf die Registerkarte **Datei** , und klicken Sie dann auf **schnell veröffentlichen** , um die Formularvorlage erneut an demselben Speicherort zu veröffentlichen.) 
     
-    Die Formularvorlage wird kompiliert und der **Veröffentlichen-Assistent** wird gestartet. Führen Sie die Schritte im **Veröffentlichen-Assistenten** , um das Formular für den Speicherort Ihrer Wahl bereitzustellen. Weitere Informationen zur Verwendung des **Veröffentlichungs-Assistenten**suchen Sie InfoPath-Hilfe nach "Veröffentlichen einer Formularvorlage".
+    Die Formularvorlage wird kompiliert und der Veröffentlichungs-Assistent gestartet. Folgen Sie den Schritten im Veröffentlichungs-Assistenten, um das Formular am gewünschten Speicherort bereitzustellen. Weitere Informationen zum Verwenden des Veröffentlichungs-Assistenten finden Sie in der InfoPath-Hilfe unter dem Suchbegriff "Veröffentlichen einer Formularvorlage".
     
 ## <a name="deploying-form-templates-that-require-full-trust"></a>Bereitstellen von Formularvorlagen, die volle Vertrauenswürdigkeit erfordern
 
@@ -37,26 +37,26 @@ Wenn im Formularcode für die Formularvorlage InfoPath-Objektmodellmember verwen
   
 ### <a name="compile-publish-and-digitally-sign-a-form-template"></a>Kompilieren, Veröffentlichen und digitales Signieren einer Formularvorlage
 
-1. Erstellen Sie und Debuggen Sie die Formularvorlage in Visual Studio 2012.
+1. Erstellen und Debuggen Sie Ihre Formularvorlage in Visual Studio 2012.
     
-2. Wenn Sie im Code-Editor von Visual Studio 2012 arbeiten, wechseln Sie zu InfoPath, klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Formularoptionen**.
+2. Wenn Sie im Code-Editor von Visual Studio 2012 arbeiten, wechseln Sie zu InfoPath, klicken Sie auf die Registerkarte **Datei** , und klicken Sie dann auf **Formularoptionen**.
     
-3. Klicken Sie auf die Kategorie **Sicherheit und Vertrauensstellung** . 
+3. Klicken Sie auf die Kategorie **Sicherheit und Vertrauensstellung**. 
     
-4. Klicken Sie unter **Sicherheitsstufe**deaktivieren Sie das Kontrollkästchen **Sicherheitsstufe automatisch ermitteln** , und wählen Sie **Voll vertrauenswürdig**.
+4. Deaktivieren Sie unter **Sicherheitsstufe** das Kontrollkästchen **Sicherheitsstufe automatisch ermitteln**, und wählen Sie dann **Voll vertrauenswürdig** aus.
     
-5. Klicken Sie unter **Signatur der Formularvorlage**wählen Sie **Diese Formularvorlage signieren**, klicken Sie auf **Zertifikat auswählen**, und geben Sie dann das Codesignierungszertifikat mit dem die Formularvorlage signiert.
+5. Aktivieren Sie unter **Signatur der Formularvorlage** das Kontrollkästchen **Diese Formularvorlage signieren**, klicken Sie auf **Zertifikat auswählen**, und geben Sie dann das Codesignierungszertifikat an, mit dem die Formularvorlage signiert werden soll.
     
-6. Klicken Sie auf **OK** zweimal ein, um das Dialogfeld **Formularoptionen** zu schließen, und klicken Sie dann speichern Sie Ihre Änderungen zu. 
+6. Klicken Sie zweimal auf **OK**, um das Dialogfeld **Formularoptionen** zu schließen, und speichern Sie dann die Änderungen. 
     
-7. Klicken Sie auf der Registerkarte **Veröffentlichen** , und klicken Sie dann auf die Schaltfläche für den gewünschten Veröffentlichungsort. 
+7. Klicken Sie auf die Registerkarte **Veröffentlichen** und dann auf die Schaltfläche für den gewünschten Veröffentlichungsort. 
     
-8. Die Formularvorlage wird kompiliert und der **Veröffentlichen-Assistent** wird gestartet. Führen Sie die Schritte des **Veröffentlichen-Assistenten** zum Bereitstellen der Formularvorlage ein. Weitere Informationen zur Verwendung Suchen des **Veröffentlichungs-Assistenten** zum Bereitstellen einer Formularvorlage, die volle Vertrauenswürdigkeit erfordert InfoPath-Hilfe nach "Veröffentlichen einer Formularvorlage mit vollständiger Vertrauenswürdigkeit". 
+8. Die Formularvorlage wird kompiliert und der**** Veröffentlichungs-Assistent gestartet. Befolgen Sie die Schritte im**** Veröffentlichungs-Assistenten, um die Formularvorlage bereitzustellen. Weitere Informationen zum Verwenden des**** Veröffentlichungs-Assistenten zum Bereitstellen einer Formularvorlage, die volle Vertrauenswürdigkeit erfordert, finden Sie in der InfoPath-Hilfe unter dem Suchbegriff "Veröffentlichen einer Formularvorlage mit voller Vertrauenswürdigkeit". 
     
- **Anmerkungen**
+ **Hinweise**
 - Zum digitalen Signieren eines Formulars muss ein authentifiziertes Codesignierungszertifikat auf dem Computer installiert sein. Wenden Sie sich an eine Zertifizierungsstelle oder den Netzwerkadministrator, um ein solches Zertifikat zu erhalten.
     
-- Wenn Sie das Formular nach dem Veröffentlichen ändern müssen, müssen Sie wiederholen Sie das Verfahren und die Formularvorlage signiert. Dies ist, da das Formular ändern die digitale Signatur ungültig wird. Das in der [Vorschau und Debuggen von Formularvorlagen, erfordern volle Vertrauenswürdigkeit](how-to-preview-and-debug-form-templates-that-require-full-trust.md) beschriebene Verfahren können Sie während der Entwicklung eines Formulars, das volle Vertrauenswürdigkeit erfordert um die Formularvorlage auf dem lokalen Computer zu registrieren. 
+- Wenn nach dem Veröffentlichen des Formulars Änderungen daran erforderlich sind, müssen Sie das Verfahren wiederholen und die Formularvorlage erneut signieren. Durch eine Änderung des Formulars wird die digitale Signatur ungültig. Während der Entwicklung eines Formulars, das die Berechtigung "voll vertrauenswürdig" erfordert, können Sie das in [Vorschau-und Debug-Formularvorlagen](how-to-preview-and-debug-form-templates-that-require-full-trust.md) beschriebene Verfahren verwenden, um die Formularvorlage auf dem lokalen Computer zu registrieren. 
     
 ## <a name="configuring-net-framework-security-settings"></a>Konfigurieren der .NET Framework-Sicherheitseinstellungen
 
@@ -67,13 +67,13 @@ Zur besseren Steuerung der Berechtigungen, die dem in einer InfoPath-Formularvor
   
 ### <a name="compile-publish-and-configure-net-security-settings-for-a-form-template"></a>Kompilieren, Veröffentlichen und Konfigurieren der .NET-Sicherheitseinstellungen für eine Formularvorlage
 
-1. Erstellen Sie und Debuggen Sie die Formularvorlage in Visual Studio 2012.
+1. Erstellen und Debuggen Sie Ihre Formularvorlage in Visual Studio 2012.
     
-2. Wenn Sie im Code-Editor von Visual Studio 2012 arbeiten, wechseln Sie zu InfoPath, klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Veröffentlichen**, und klicken Sie dann auf die Schaltfläche für den gewünschten Veröffentlichungsort.
+2. Wenn Sie im Code-Editor von Visual Studio 2012 arbeiten, wechseln Sie zu InfoPath, klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **veröffentlichen**, und klicken Sie dann auf die Schaltfläche für den gewünschten Veröffentlichungsort.
     
-    Die Formularvorlage wird kompiliert und der **Veröffentlichen-Assistent** wird gestartet. Führen Sie die Schritte des **Veröffentlichen-Assistenten** zum Bereitstellen der Formularvorlage ein. Weitere Informationen zur Verwendung des **Veröffentlichungs-Assistenten**suchen Sie InfoPath-Hilfe nach "Veröffentlichen einer Formularvorlage".
+    Die Formularvorlage wird kompiliert und der**** Veröffentlichungs-Assistent gestartet. Befolgen Sie die Schritte im**** Veröffentlichungs-Assistenten, um die Formularvorlage bereitzustellen. Weitere Informationen zum Verwenden des**** Veröffentlichungs-Assistenten finden Sie in der InfoPath-Hilfe unter dem Suchbegriff "Veröffentlichen einer Formularvorlage".
     
-3. Führen Sie die Schritte beschrieben, die im Abschnitt "Zuweisen von"voll vertrauenswürdig "an Formulare unter einer bestimmten URL oder UNC" [Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md)
+3. Führen Sie das im Abschnitt "Zuweisen von FullTrust zu Formularen in einer bestimmten URL oder UNC" beschriebene Verfahren unter [Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md) aus.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -84,5 +84,5 @@ Zur besseren Steuerung der Berechtigungen, die dem in einer InfoPath-Formularvor
 
 [Informationen zum Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md)
   
-[Anzeigen der Vorschau und Debuggen von Formularvorlagen, die volle Vertrauenswürdigkeit erfordern](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
+[Anzeigen einer Vorschau und Debuggen von Formularvorlagen, die vollständig vertrauenswürdig sein müssen](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
 

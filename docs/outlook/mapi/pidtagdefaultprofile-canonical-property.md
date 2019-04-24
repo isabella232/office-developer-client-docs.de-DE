@@ -1,5 +1,5 @@
 ---
-title: PidTagDefaultProfile (kanonische Eigenschaft)
+title: Kanonische Pidtagdefaultprofile (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 47f745a4-5a9c-42af-b076-a72548ef4d31
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a315f1564f2980ad16ce2ba3da2308960f7d4b88
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8295ae6904f503ca831a00c1f35ac08596b5358c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270000"
 ---
-# <a name="pidtagdefaultprofile-canonical-property"></a>PidTagDefaultProfile (kanonische Eigenschaft)
+# <a name="pidtagdefaultprofile-canonical-property"></a>Kanonische Pidtagdefaultprofile (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn ein Benutzerprofil messaging das MAPI-Standardprofil ist.
+Enthält TRUE, wenn ein Messaging-Benutzerprofil das MAPI-Standardprofil ist.
   
 |||
 |:-----|:-----|
@@ -34,27 +34,27 @@ Enthält True, wenn ein Benutzerprofil messaging das MAPI-Standardprofil ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird nicht als eine Eigenschaft eines Objekts, sondern nur als eine Spalte in einer Profiltabelle angezeigt. Die [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md) -Methode können eine Clientanwendung aus das Standardprofil auswählen. 
+Diese Eigenschaft wird nicht als Eigenschaft eines Objekts, sondern nur als Spalte in einer Profiltabelle angezeigt. Eine Clientanwendung kann die [IProfAdmin:: SetDefaultProfile](iprofadmin-setdefaultprofile.md) -Methode verwenden, um das Standardprofil festzulegen. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagDefaultStore (kanonische Eigenschaft)](pidtagdefaultstore-canonical-property.md)
+[Kanonische Pidtagdefaultstore (-Eigenschaft](pidtagdefaultstore-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -63,5 +63,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

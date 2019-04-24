@@ -1,29 +1,29 @@
 ---
-title: Zugriff auf einen Speicher auf dem Remoteserver, wenn Outlook im Exchange-Cache-Modus befindet
+title: Zugreifen auf einen Speicher auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5c6df156-4015-2d0f-26b7-07055a3f7810
-description: 'Zuletzt geändert: 02 Juli 2012'
-ms.openlocfilehash: c7994366000e323cc7d14a9c3a02b5229c5f08e7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 02 Juli, 2012'
+ms.openlocfilehash: cfc20c1a9ca4510ffec86bf16666f1fc50822321
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299440"
 ---
-# <a name="access-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Zugriff auf einen Speicher auf dem Remoteserver, wenn Outlook im Exchange-Cache-Modus befindet
+# <a name="access-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Zugreifen auf einen Speicher auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie Sie die Kennzeichen **MAPI_NO_CACHE** zum Öffnen eines Ordners oder einer Nachricht auf einen Nachrichtenspeicher auf dem Remoteserver, wenn Microsoft Office Outlook in der Exchange-Cache-Modus befindet. 
+Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie das **MAPI_NO_CACHE** -Flag zum Öffnen eines Ordners oder einer Nachricht in einem Nachrichtenspeicher auf dem Remoteserver verwendet wird, wenn sich Microsoft Office Outlook im Exchange-Cache-Modus befindet. 
   
-Exchange-Cache-Modus ermöglicht Outlook eine lokale Kopie des Postfachs eines Benutzers verwendet, während Outlook eine online-Verbindung zu einer remote-Kopie des Postfachs des Benutzers, auf dem Exchange-Remoteserver verwaltet. Wenn Outlook im Exchange-Cache-Modus, wird standardmäßig ausgeführt wird werden alle MAPI-Lösungen, die auf der gleichen Sitzung anmelden auch mit dem Cache Nachrichtenspeicher verbunden. Anhand der lokalen Kopie des Postfachs werden alle Daten, die zugegriffen werden kann und alle vorgenommenen Änderungen vorgenommen.
+Der Exchange-Cache-Modus ermöglicht es Outlook, eine lokale Kopie des Postfachs eines Benutzers zu verwenden, während Outlook eine Onlineverbindung mit einer Remotekopie des Postfachs des Benutzers auf dem Exchange-Remoteserver verwaltet. Wenn Outlook im Exchange-Cache-Modus ausgeführt wird, werden standardmäßig alle MAPI-Lösungen, die sich bei derselben Sitzung anmelden, auch mit dem zwischengespeicherten Nachrichtenspeicher verbunden. Alle Daten, auf die zugegriffen wird, und alle vorgenommenen Änderungen werden mit der lokalen Kopie des Postfachs vorgenommen.
   
-Ein Client oder Dienstanbieter kann die Verbindung mit den lokalen Nachrichtenspeicher überschreiben und öffnen Sie eine Nachricht oder einen Ordner auf dem remote-Speicher durch das Bit beim Aufruf von **[IMsgStore::OpenEntry](imsgstore-openentry.md)** für **MAPI_NO_CACHE** im *UlFlags* -Parameter festlegen. 
+Ein Client oder Dienstanbieter kann die Verbindung mit dem lokalen Nachrichtenspeicher außer Kraft setzen und eine Nachricht oder einen Ordner im Remotespeicher öffnen, indem das Bit für **MAPI_NO_CACHE** im Parameter *ulFlags* beim Aufrufen von **[IMsgStore:: OpenEntry](imsgstore-openentry.md)** festgelegt wird. 
   
-Das folgende Codebeispiel zeigt, wie **IMsgStore::OpenEntry** mit dem im Parameter *UlFlags* legen Sie zum Öffnen des Ordners "Root" auf dem remote-Nachrichtenspeicher **MAPI_NO_CACHE** -Flag aufrufen. 
+Im folgenden Codebeispiel wird gezeigt, wie Sie **IMsgStore:: OpenEntry** mit dem **MAPI_NO_CACHE** -Flag aufrufen, das im *ulFlags* -Parameter festgelegt ist, um den Stammordner im Remotenachrichtenspeicher zu öffnen. 
   
 ```cpp
 HRESULT HrOpenRootFolder ( 
@@ -44,11 +44,11 @@ HRESULT HrOpenRootFolder (
 }
 ```
 
-Wenn Sie mit dem **MDB_ONLINE** -Flag auf dem Remoteserver Nachrichtenspeicher geöffnet haben, müssen Sie keinen **MAPI_NO_CACHE** -Flag verwenden. 
+Wenn Sie den Nachrichtenspeicher mit dem **MDB_ONLINE** -Flag auf dem Remoteserver geöffnet haben, müssen Sie das **MAPI_NO_CACHE** -Flag nicht verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 
 - [Informationen zu MAPI-Ergänzungen](about-mapi-additions.md) 
-- [Öffnen eines Speichers auf dem Remote-Server, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Öffnen eines Speichers auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
 - [Verwalten einer Nachricht in einem OST ohne Aufrufen einer Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

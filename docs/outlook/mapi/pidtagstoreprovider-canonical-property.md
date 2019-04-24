@@ -1,5 +1,5 @@
 ---
-title: PidTagStoreProvider (kanonische Eigenschaft)
+title: Kanonische Pidtagstoreprovider (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6f6cc66f-a08e-4f8e-b33a-d3674319248e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 02d2c30fede7e554910a1bedb01b79c488447bb3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6266c9293f54ce764c5b5b0e41d43767490abcf7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278708"
 ---
-# <a name="pidtagstoreprovider-canonical-property"></a>PidTagStoreProvider (kanonische Eigenschaft)
+# <a name="pidtagstoreprovider-canonical-property"></a>Kanonische Pidtagstoreprovider (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine vom Anbieter definiertes [MAPIUID](mapiuid.md) -Struktur, die den Typ des Nachrichtenspeichers angibt. 
+Enthält eine vom Anbieter definierte [MAPIUID](mapiuid.md) -Struktur, die den Typ des Nachrichtenspeichers angibt. 
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält eine vom Anbieter definiertes [MAPIUID](mapiuid.md) -Struktur, die den 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur [MAPIUID](mapiuid.md) identifiziert den Typ des Nachrichtenspeichers. Der Wert ist Zeichenfolgeneigenschaften Nachricht auf Message Store Objekte berechnet und für jeden Anbieter eindeutig ist. Es wird normalerweise zum Durchsuchen der Nachricht Store-Tabelle verwendet, um einen Speicher mit den gewünschten Typ, wie Öffentliche Ordner zu finden. 
+Die [MAPIUID](mapiuid.md) -Struktur gibt den Typ des Nachrichtenspeichers an. Der Wert wird von Nachrichtenspeicher Anbietern auf Nachrichtenspeicher Objekten berechnet und ist für jeden Anbieter eindeutig. Sie wird in der Regel zum Durchsuchen der Nachrichtenspeichertabelle verwendet, um einen Speicher des gewünschten Typs zu finden, beispielsweise öffentliche Ordner. 
   
-Diese Eigenschaft entspricht der **PR_AB_PROVIDER_ID** ([PidTagAbProviderId](pidtagabproviderid-canonical-property.md))-Eigenschaft für Adressbücher. 
+Diese Eigenschaft entspricht der **PR_AB_PROVIDER_ID** ([pidtagabproviderid (](pidtagabproviderid-canonical-property.md))-Eigenschaft für Adressbücher. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

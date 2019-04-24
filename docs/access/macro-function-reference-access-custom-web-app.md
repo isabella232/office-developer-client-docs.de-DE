@@ -6,34 +6,34 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb1ef018-6ea4-46b4-b81a-c51f86d80180
-ms.openlocfilehash: 0fbb3cba6d7e3df74da4d7c549148e71e1084f80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fe8640c1ff9773a5ee7254434f39735cd95daff6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301771"
 ---
 # <a name="macro-function-reference-access-custom-web-app"></a>Makro-Funktionsreferenz (Access benutzerdefinierte Web app)
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-- [Datenblöcke (Access benutzerdefinierte Web app)](data-blocksaccess-custom-web-app.md)
+- [Datenblöcke (Access Custom Web App)](data-blocksaccess-custom-web-app.md)
     
-- [Geschäftsdatenaktionen (Access benutzerdefinierte Web app)](data-actions-access-custom-web-app.md)
+- [Daten Aktionen (Access Custom Web App)](data-actions-access-custom-web-app.md)
     
-- [Dateneingabe (Access benutzerdefinierte Web app)](data-entry-operations-access-custom-web-app.md)
+- [Dateneingabevorgänge (Access Custom Web App)](data-entry-operations-access-custom-web-app.md)
     
-- [Datenbankobjekte (Access benutzerdefinierte Web app)](database-objects-access-custom-web-app.md)
+- [Datenbankobjekte (Access Custom Web App)](database-objects-access-custom-web-app.md)
     
-- [Filter/Abfrage/Search (Access benutzerdefinierte Web app)](filter-query-search-access-custom-web-app.md)
+- [Filter/Abfrage/Suche (Access Custom Web App)](filter-query-search-access-custom-web-app.md)
     
-- [Makrobefehle (Access benutzerdefinierte Web app)](macro-commands-access-custom-web-app.md)
+- [Makrobefehle (Access Custom Web App)](macro-commands-access-custom-web-app.md)
     
-- [Programmablauf (Access benutzerdefinierte Web app)](program-flow-access-custom-web-app.md)
+- [Programmablauf (Access Custom Web App)](program-flow-access-custom-web-app.md)
     
-- [Befehlen der Benutzeroberfläche (Access benutzerdefinierte Web app)](user-interface-commands-access-custom-web-app.md)
+- [Benutzeroberflächenbefehle (Access Custom Web App)](user-interface-commands-access-custom-web-app.md)
     
 

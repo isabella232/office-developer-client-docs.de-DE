@@ -1,56 +1,56 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer einfachen Formularvorlage mit code'
+title: 'Exemplarische vorGehensWeise: Erstellen einer einfachen Formularvorlage mit Code'
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
 keywords:
-- 'Formularvorlagen [Infopath 2007], Erstellen von verwaltetem Code, verwalteten code von Formularvorlagen [InfoPath 2007], erstellen, Formularvorlagen [InfoPath 2007], exemplarische Vorgehensweisen, die InfoPath 2007: Erste Schritte'
+- Formularvorlagen [InfoPath 2007], Erstellen von verwaltetem Code, Formularvorlagen für verwalteten Code [InfoPath 2007], erstellen, Formularvorlagen [InfoPath 2007], Exemplarische Vorgehensweisen, InfoPath 2007, Exemplarische Vorgehensweisen
 localization_priority: Normal
 ms.assetid: 0f55c8be-8641-476a-b0c8-c88adb2ac2b9
-description: In Microsoft InfoPath können Sie Schreiben von Geschäftslogik in Visual Basic oder c# durch Öffnen einer Formularvorlage im InfoPath-Designer, und klicken Sie dann mit einer der den Befehlen der Benutzeroberfläche um einen Ereignishandler hinzuzufügen, der geöffnet wird, die Entwicklungsumgebung von Visual Studio 2012 für Schreiben des Codes.
-ms.openlocfilehash: 8c98d71c26f8e56c532b2a4467218c366072b2ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In Microsoft InfoPath können Sie Geschäftslogik in Visual Basic oder C# schreiben, indem Sie eine Formularvorlage im InfoPath-Designer öffnen und dann einen der Benutzeroberflächenbefehle verwenden, um einen Ereignishandler hinzuzufügen, der die Entwicklungsumgebung von Visual Studio 2012 öffnet. Schreiben des Codes.
+ms.openlocfilehash: cc09856750ced28d35c8da172a08a31c4e3cd4a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299734"
 ---
-# <a name="walkthrough-create-a-basic-form-template-with-code"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen Formularvorlage mit code
+# <a name="walkthrough-create-a-basic-form-template-with-code"></a>Exemplarische vorGehensWeise: Erstellen einer einfachen Formularvorlage mit Code
 
-In Microsoft InfoPath können Sie Schreiben von Geschäftslogik in Visual Basic oder c# durch Öffnen einer Formularvorlage im InfoPath-Designer, und klicken Sie dann mit einer der den Befehlen der Benutzeroberfläche um einen Ereignishandler hinzuzufügen, der geöffnet wird, die Entwicklungsumgebung von Visual Studio 2012 für Schreiben des Codes. Standardmäßig erstellt Formular Vorlagenprojekte mithilfe von Visual Studio 2012 funktionieren in Verbindung mit dem Objektmodell für verwalteten Code vom [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) -Namespace bereitgestellt. 
+In Microsoft InfoPath können Sie Geschäftslogik in Visual Basic oder C# schreiben, indem Sie eine Formularvorlage im InfoPath-Designer öffnen und dann einen der Benutzeroberflächenbefehle verwenden, um einen Ereignishandler hinzuzufügen, der die Entwicklungsumgebung von Visual Studio 2012 öffnet. Schreiben des Codes. Standardmäßig arbeiten Formularvorlagenprojekte, die mit Visual Studio 2012 erstellt wurden, mit dem vom [Microsoft. Office. InfoPath-](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) Namespace bereitgestellten Objektmodell mit verwaltetem Code. 
   
-Zuerst werden in dieser exemplarischen Vorgehensweise erstellen Sie eine einfache "Hello World"-Anwendung mit c# oder Visual Basic in der Entwicklungsumgebung von Visual Studio 2012 veranschaulicht. Die exemplarische Vorgehensweise endet mit dem ein Codebeispiel, in dem Sie zeigt, wie die [UserName](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) -Eigenschaft der [Benutzer](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.aspx) -Klasse verwenden, um den aktuellen Namen des Benutzers abrufen, und füllen Sie ein **Textfeld** -Steuerelement mit diesem Wert. 
+In dieser exemplarischen Vorgehensweise wird zunächst gezeigt, wie Sie eine einfache Hello World-Anwendung mit C# oder Visual Basic in der Visual Studio 2012-Entwicklungsumgebung erstellen. Die exemplarische Vorgehensweise endet mit einem Codebeispiel, in dem gezeigt wird, wie die [username](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) -Eigenschaft der [User](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.aspx) -Klasse verwendet wird, um den Namen des aktuellen Benutzers abzurufen und ein **Textfeld** -Steuerelement mit diesem Wert aufzufüllen. 
   
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Für die Durchführung dieser exemplarischen Vorgehensweise mithilfe der Visual Studio 2012-Entwicklungsumgebung benötigen Sie:
+Zum Ausführen dieser exemplarischen Vorgehensweise mithilfe der Visual Studio 2012-Entwicklungsumgebung benötigen Sie Folgendes:
   
 - Microsoft InfoPath mit Visual Studio 2012 installiert.
     
 ## <a name="hello-world-in-visual-studio-tools-for-applications"></a>Hello World in Visual Studio-Tools für Anwendungen
 
-In der folgenden exemplarischen Vorgehensweise erfahren Sie, wie das Schreiben von Code in der Entwicklungsumgebung von Visual Studio 2012 um ein einfaches Warnungsdialogfeld anzeigen, indem Sie einen Ereignishandler für das [Clicked](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.Clicked.aspx) -Ereignis der [ButtonEvent](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.aspx) -Klasse, die verbunden ist schreiben mit der **Schaltfläche** -Steuerelement. 
+In der folgenden exemplarischen Vorgehensweise erfahren Sie, wie Sie in der Visual Studio 2012-Entwicklungsumgebung Code schreiben, um ein einfaches Warnungsdialogfeld anzuzeigen, indem [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.Clicked.aspx) Sie einen Ereignishandler für das Clicked-Ereignis der [Button Event](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.aspx) -Klasse schreiben, das zugeordnet ist mit dem **Schaltflächen** -Steuerelement. 
   
 ### <a name="create-a-new-project-and-specify-the-programming-language"></a>Erstellen eines neuen Projekts und Angeben der Programmiersprache
 
-1. Starten Sie den InfoPath-Designer, und doppelklicken Sie dann auf die Formularvorlage **leer (InfoPath Editor)** . 
+1. Starten Sie den InfoPath-Designer, und doppelklicken Sie auf die Formularvorlage **Leer (InfoPath Editor)**. 
     
-2. Um anzugeben, welche Programmiersprache verwenden, klicken Sie auf die **Office-Schaltfläche**, klicken Sie auf **Formularoptionen**, klicken Sie in der Liste **Kategorie** auf **Programmierung** , und wählen Sie dann aus der Formularvorlage **aus **Visual Basic** oder **Visual c#** Sprache Code** Dropdown-Listenfeld. 
+2. Um anzugeben, welche Programmiersprache verwendet werden soll, klicken Sie auf die **Office-Schaltfläche**, klicken Sie auf **Formularoptionen**, klicken Sie in der Liste **Kategorie** auf **Programmierung** , und wählen Sie dann in der Formularvorlage entweder **Visual Basic** oder **C#** aus. ** Dropdownliste Codesprache** . 
     
    > [!NOTE]
-   > Die anderen programming Language-Optionen in der Dropdownliste **Codesprache der Formularvorlage** bieten Kompatibilität mit früheren Versionen von InfoPath. Die Verfahren in diesem Thema werden die Optionen für **c# (kompatibel mit InfoPath 2007)** und **Visual Basic (kompatibel mit InfoPath 2007)** entwickelt. Um die Optionen für **c# (kompatibel mit InfoPath 2003)** und **Visual Basic (kompatibel mit InfoPath 2003)** verwenden, jedoch finden Sie unter [Exemplarische Vorgehensweise: Erstellen und Debuggen einer grundlegenden Formular Vorlage mithilfe des InfoPath 2003-Objektmodells](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md). 
+   > Die anderen Optionen für die Programmiersprache in der Dropdownliste **Codesprache der Formularvorlage** dienen der Kompatibilität mit früheren Versionen von InfoPath. Die Optionen **C# (InfoPath 2007-kompatibel)** und **Visual Basic (InfoPath 2007-kompatibel)** können Sie für die Vorgehensweisen in diesem Thema verwenden. Wenn Sie die Optionen **C# (InfoPath 2003-kompatibel)** und **Visual Basic (InfoPath 2003-kompatibel)** verwenden möchten, lesen Sie bitte die Informationen unter [Exemplarische Vorgehensweise: Erstellen und Debuggen einer einfachen Formularvorlage mit dem InfoPath 2003-Objektmodell](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md). 
   
-    Sie sind jetzt bereit, die ein **Button** -Steuerelement hinzufügen und dessen Ereignishandler erstellen. 
+    Jetzt können Sie ein Steuerelement vom Typ **Schaltfläche** hinzufügen und dessen Ereignishandler erstellen. 
     
 ### <a name="add-a-button-control-and-event-handler"></a>Hinzufügen eines Steuerelements vom Typ "Schaltfläche" und eines Ereignishandlers
 
-1. Klicken Sie in der Gruppe **Steuerelemente** auf das **Schaltfläche** -Steuerelement, um dieses dem Formular hinzuzufügen. 
+1. Klicken Sie in der Gruppe **Steuerelemente** auf das Steuerelement **Schaltfläche**, um dieses dem Formular hinzuzufügen. 
     
-2. Doppelklicken Sie auf das **Button** -Steuerelement, geben Sie Hello für die **Label** -Eigenschaft auf der Registerkarte **Eigenschaften** des Menübands, und klicken Sie dann auf **Benutzerdefinierter Code**. Wenn Sie aufgefordert werden, speichern Sie das Formular, und nennen Sie sie "HelloWorld".
+2. Doppelklicken Sie auf das Steuerelement **Schaltfläche**, geben Sie auf der Registerkarte Eigenschaften des Menübands den Text **Hallo** für die Eigenschaft **Etikett** ein, und klicken Sie dann auf **Benutzerdefinierter Code**. Speichern Sie das Formular bei entsprechender Aufforderung, und nennen Sie es HelloWorld.
     
-   Dadurch wird die **Visual Studio Tools for Applications** -Umgebung mit dem Mauszeiger geöffnet, in der Ereignisprozedur Handler für das [Clicked](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.Clicked.aspx) -Ereignis der **Schaltfläche** steuern. 
+   Dadurch wird die **Visual Studio Tools for Applications** -Umgebung mit dem Cursor im Ereignishandler für das [clicked](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.Clicked.aspx) -Ereignis des **Schaltflächen** -Steuerelements geöffnet. 
     
-   Jetzt können Sie dem Ereignishandler für die Schaltfläche Formularcode hinzufügen.  
+   Jetzt können Sie dem Ereignishandler für die Schaltfläche Formularcode hinzufügen. 
     
 ### <a name="add-hello-world-code-to-the-event-handler-and-preview-the-form"></a>Hinzufügen von Code für "Hello World" zum Ereignishandler und Anzeigen einer Vorschau für das Formular
 
@@ -108,9 +108,9 @@ In der folgenden exemplarischen Vorgehensweise erfahren Sie, wie das Schreiben v
 
 2. Wechseln Sie zum InfoPath-Designer-Fenster.
     
-3. Klicken Sie auf die Schaltfläche **Vorschau** auf der Registerkarte **Start** . 
+3. Klicken Sie auf der Registerkarte **Start** auf die Schaltfläche **Vorschau**. 
     
-4. Klicken Sie auf die Schaltfläche Hallo auf dem Formular. 
+4. Klicken Sie auf dem Formular auf die Schaltfläche Hallo. 
     
    Ein Meldungsfeld mit dem Text "Hello World!" wird angezeigt.
     
@@ -118,7 +118,7 @@ In der folgenden exemplarischen Vorgehensweise erfahren Sie, wie das Schreiben v
     
 ### <a name="debug-form-code"></a>Debuggen von Formularcode
 
-1. Wechseln Sie in das Fenster des Visual Studio 2012.
+1. Wechseln Sie zurück zum Fenster von Visual Studio 2012.
     
 2. Klicken Sie auf die graue Leiste links der Zeile:
     
@@ -132,45 +132,45 @@ In der folgenden exemplarischen Vorgehensweise erfahren Sie, wie das Schreiben v
 
    Ein roter Kreis wird angezeigt, und die Codezeile wird hervorgehoben, um darauf hinzuweisen, dass die Laufzeit an diesem Haltepunkt im Formularcode angehalten wird.
     
-3. Klicken Sie im Menü **Debuggen** auf **Debuggen starten,** klicken Sie auf (oder drücken Sie F5). 
+3. Klicken Sie im Menü **Debuggen** auf **Debuggen starten** (oder drücken Sie F5). 
     
-4. Klicken Sie im InfoPath- **Vorschau** klicken Sie auf die Schaltfläche Hallo auf dem Formular. 
+4. Klicken Sie im Fenster **Vorschau** von InfoPath auf die Schaltfläche Hallo auf dem Formular.  
     
-5. Im Code-Editor von Visual Studio 2012 erhält den Fokus, und die haltepunktlinie wird hervorgehoben.
+5. Der Code-Editor von Visual Studio 2012 erhält den Fokus, und die Haltepunkt Linie wird hervorgehoben.
     
-6. Klicken Sie im Menü **Debuggen** auf **Prozedurschritt** (oder drücken Sie UMSCHALT + F8) um das schrittweise Durchlaufen des Codes fortzusetzen. 
+6. Klicken Sie im Menü **Debuggen** auf **Prozedurschritt** (oder drücken Sie UMSCHALT+F8), um das schrittweise Durchlaufen des Codes fortzusetzen. 
     
 7. Der Ereignishandlercode wird ausgeführt, und die Meldung "Hello World!" wird angezeigt.  
     
-8. Klicken Sie auf **OK** , um zurück zum Code-Editor von Visual Studio 2012, und klicken Sie im Menü **Debuggen** auf **Debuggen beenden** (oder drücken Strg + Alt + UNTBR). 
+8. Klicken Sie auf **OK** , um zum Code-Editor von Visual Studio 2012 zurückzukehren, und klicken Sie dann im Menü **Debuggen** auf **Debuggen beenden** (oder drücken Sie STRG + ALT + Unterbrechung). 
     
-## <a name="getting-the-current-users-name"></a>Abrufen des aktuellen Benutzers namens
+## <a name="getting-the-current-users-name"></a>Aufrufen des aktuellen Benutzernamens
 
-Im folgenden Beispiel erfahren Sie, wie Sie die [UserName](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) -Eigenschaft der [Benutzer](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.aspx) -Klasse verwenden, um den Namen des aktuellen Benutzers abrufen, und füllen Sie den Wert eines **Textfeld** -Steuerelements mit einem Ereignishandler für das [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) -Ereignis. 
+Im folgenden Beispiel erfahren Sie, wie Sie die [username](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) -Eigenschaft der [User](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.aspx) -Klasse verwenden, um den Namen des aktuellen Benutzers abzurufen und den Wert eines **Textfeld** -Steuerelements mithilfe eines Ereignishandlers für das [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) -Ereignis aufzufüllen. 
   
-Füllen das **Textfeld** -Steuerelement erfolgt mithilfe einer Instanz der [XPathNavigator](https://msdn.microsoft.com/library/system.xml.xpath.xpathnavigator%28v=vs.110%29.aspx) -Klasse zum Schreiben des aktuellen Benutzers Name in der XML-Knoten, das an das Steuerelement gebunden ist. 
+Das aufFüllen des **Textfeld** -Steuerelements erfolgt mithilfe einer Instanz der [XPathNavigator](https://msdn.microsoft.com/library/system.xml.xpath.xpathnavigator%28v=vs.110%29.aspx) -Klasse, um den Namen des aktuellen Benutzers in den XML-Knoten zu schreiben, an den das Steuerelement gebunden ist. 
   
-Zunächst wird die [MainDataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.MainDataSource.aspx) -Eigenschaft der [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) -Klasse aufgerufen, um eine Instanz der [DataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) -Klasse abrufen, die das zugrunde liegende XML-Dokument des Formulars darstellt. Das [DataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) -Objekt ruft dann die [CreateNavigator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) -Methode, die das **XPathNavigator** -Objekt erstellt und am Stammknoten der Hauptdatenquelle des Formulars positioniert. 
+Zuerst wird die [MainDataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.MainDataSource.aspx) -Eigenschaft der [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) XmlForm-Klasse aufgerufen, um eine Instanz der [DataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) -Klasse abzurufen, die das zugrunde liegende XML-Dokument des Formulars darstellt. Das [DataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) -Objekt ruft dann [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) die CreateNavigator-Methode auf, die das **XPathNavigator** -Objekt erstellt und am Stammknoten der Hauptdatenquelle des Formulars positioniert. 
   
-Die [SelectSingleNode](https://msdn.microsoft.com/library/system.xml.xpath.xpathnavigator.selectsinglenode%28v=vs.100%29.aspx) -Methode der **XPathNavigator** -Klasse aufgerufen, um Wählen Sie im Feld Employee in die Datenquelle des Formulars. Abschließend wird die [SetValue](https://msdn.microsoft.com/library/system.xml.xpath.xpathnavigator.setvalue%28v=vs.100%29.aspx) -Methode aufgerufen, um den Wert des Felds mit der [UserName](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) -Eigenschaft festzulegen. 
+Die [SelectSingleNode](https://msdn.microsoft.com/library/system.xml.xpath.xpathnavigator.selectsinglenode%28v=vs.100%29.aspx) -Methode der **XPathNavigator** -Klasse wird aufgerufen, um das Feld Employee in der Datenquelle des Formulars auszuwählen. Schließlich wird die [SetValue](https://msdn.microsoft.com/library/system.xml.xpath.xpathnavigator.setvalue%28v=vs.100%29.aspx) -Methode aufgerufen, um den Wert des Felds mit der [username](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) -Eigenschaft festzulegen. 
   
-Weitere Informationen zum Arbeiten mit **System.Xml** in Formularvorlagen mit verwaltetem Code finden Sie unter [Arbeiten mit dem XPathNavigator und XPathNodeIterator-Klassen](how-to-work-with-the-xpathnavigator-and-xpathnodeiterator-classes.md).
+Weitere Informationen zum Arbeiten mit " **System. XML** " in Formularvorlagen mit verwaltetem Code finden Sie unter [Arbeiten mit den Klassen "XPathNavigator" und "XPathNodeIterator"](how-to-work-with-the-xpathnavigator-and-xpathnodeiterator-classes.md).
   
-### <a name="add-a-loading-event-handler"></a>Hinzufügen eines Loading-Ereignishandlers 
+### <a name="add-a-loading-event-handler"></a>Hinzufügen eines Loading-Ereignishandlers
 
 1. Öffnen Sie die Formularvorlage "HelloWorld", die Sie in der vorherigen exemplarischen Vorgehensweise im InfoPath-Designer erstellt haben.
     
-2. Wählen Sie auf der Registerkarte **Ansicht** **Felder anzeigen**.
+2. Klicken Sie auf der Registerkarte **Ansicht** auf **Felder anzeigen**.
     
-3. Klicken Sie mit der rechten Maustaste auf den Ordner **MyFields** , und klicken Sie dann auf **Hinzufügen**.
+3. Klicken Sie mit der rechten Maustaste auf den Ordner **myFields**, und klicken Sie dann auf **Hinzufügen**.
     
-4. Klicken Sie im Feld **Name**Geben Sie Mitarbeiter, und klicken Sie dann auf **OK**.
+4. Geben Sie unter **Name den Namen**Employee ein, und klicken Sie dann auf **OK**.
     
-5. Ziehen Sie im Feld Employee in die Ansicht. 
+5. Ziehen Sie das Feld employee in die Ansicht. 
     
-6. Klicken Sie auf der Registerkarte **Entwicklertools** auf **Loading-Ereignis**.
+6. Klicken Sie auf der Registerkarte **Entwickler** auf **Loading-Ereignis**.
     
-   Erstellt einen Ereignishandler für das [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) -Ereignis, und verschieben Sie den Fokus auf diesen Ereignishandler im Code-Editor. 
+   Dadurch wird ein Ereignishandler für das [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) -Ereignis erstellt, und der Fokus wird auf diesen Ereignishandler im Code-Editor verschoben. 
     
 7. Geben Sie im Code-Editor Folgendes ein:
     
@@ -193,19 +193,19 @@ Weitere Informationen zum Arbeiten mit **System.Xml** in Formularvorlagen mit ve
     End Sub
    ```
 
-8. Wechseln Sie in der InfoPath-Formularentwurfsfenster, und klicken Sie dann auf die Schaltfläche **Vorschau** auf der Registerkarte **Start** auf Vorschau des Formulars anzuzeigen. 
+8. Wechseln Sie in das InfoPath-Formularentwurfsfenster, und klicken Sie auf der Registerkarte **Start** auf die Schaltfläche **Vorschau**, um eine Vorschau des Formulars anzuzeigen. 
     
-   Das Feld Employee sollte sich mit Ihrem Benutzernamen automatisch ausfüllen. 
+   Im Feld employee sollte automatisch Ihr Benutzername eingelesen werden. 
     
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Informationen zum Arbeiten mit Ereignishandlern für andere Steuerelemente und Ereignisse finden Sie unter [Hinzufügen eines Ereignishandlers](how-to-add-an-event-handler.md).
     
-- Weitere Informationen zum Anzeigen einer Vorschau und Debuggen von Code in Formularvorlagen finden Sie unter [Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code](how-to-preview-and-debug-infopath-form-templates-with-code.md).
+- Weitere Informationen zum Anzeigen und Debuggen von Code in Formularvorlagen finden Sie unter [Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code](how-to-preview-and-debug-infopath-form-templates-with-code.md).
     
-- Informationen zum Bereitstellen einer Formularvorlage mit verwaltetem Code finden Sie unter [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md).
+- Informationen zum Bereitstelleneiner Formularvorlage mit verwaltetem Code finden Sie unter [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md).
     
-- Informationen zu den InfoPath-Objektmodell und allgemeine Programmieraufgaben in Formularvorlagen mit verwaltetem Code finden Sie unter [Grundlegendes zum InfoPath-Objektmodell und zu allgemeinen Entwickleraufgaben](understanding-the-infopath-object-model-and-common-developer-tasks.md)
+- Weitere Informationen zum InfoPath-Objektmodell sowie zu allgemeinen Programmieraufgaben in Formularvorlagen mit verwaltetem Code finden Sie unter [Grundlegendes zum InfoPath-Objektmodell und zu allgemeinen Entwickleraufgaben](understanding-the-infopath-object-model-and-common-developer-tasks.md).
     
 ## <a name="see-also"></a>Siehe auch
 

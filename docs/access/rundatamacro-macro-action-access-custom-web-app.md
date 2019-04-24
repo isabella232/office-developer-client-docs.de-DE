@@ -1,37 +1,37 @@
 ---
-title: AusführenDatenmakro-Makroaktion (Access benutzerdefinierte Web app)
+title: Ausführendatenmakro-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: f6010ac5-6c08-4c1b-a811-ff81b30ed5f0
-description: Die AusführenDatenmakro-Aktion können Sie eine eigenständige Datenmakro ausführen.
-ms.openlocfilehash: 55a0ff4c731dc517c5d71aa20d8e46c3b4ff4611
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sie können die Ausführendatenmakro-Aktion verwenden, um ein eigenständiges datenmakro auszuführen.
+ms.openlocfilehash: 68c0e5a3837039bdab1165e686adb3bdf2a5b6f8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304242"
 ---
-# <a name="rundatamacro-macro-action-access-custom-web-app"></a>AusführenDatenmakro-Makroaktion (Access benutzerdefinierte Web app)
+# <a name="rundatamacro-macro-action-access-custom-web-app"></a>Ausführendatenmakro-Makroaktion (benutzerdefinierte Access-Web-App)
 
-Die **AusführenDatenmakro** -Aktion können Sie eine eigenständige Datenmakro ausführen. 
+Sie können die **ausführendatenmakro** -Aktion verwenden, um ein eigenständiges datenmakro auszuführen. 
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="setting"></a>Einstellung
 
-Die **AusführenDatenmakro** -Aktion kann mit dem folgenden Argument verwendet werden. 
+Die **AusführenDatenmakro**-Aktion kann mit dem folgenden Argument verwendet werden. 
   
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
 | _Makroname_ <br/> |Der Name des Datenmakros, das ausgeführt werden soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie das auszuführende Datenmakro im Makro-Designer auswählen, wird von Access ermittelt, ob das Datenmakro Parameter erfordert. Wenn das Datenmakro Parameter erfordert, erscheinen Textfelder, in dem Sie die Argumente eingeben können.
+Wenn Sie das auszuführende Datenmakro im Makro-Designer auswählen, wird von Access ermittelt, ob das Datenmakro Parameter erfordert. Wenn das datenmakro Parameter erfordert, werden Textfelder angezeigt, in denen Sie die Argumente eingeben können.
   
 Wenn Sie ein Makro ausführen, das die **AusführenDatenmakro** -Aktion enthält, und dieses die **AusführenDatenmakro** -Aktion erreicht, wird das aufgerufene Datenmakro in Access ausgeführt. Sobald das aufgerufene Datenmakro beendet wurde, kehrt Access zum ursprünglichen Makro zurück und führt die nächste Aktion aus. 
   

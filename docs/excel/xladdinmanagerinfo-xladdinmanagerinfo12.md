@@ -1,5 +1,5 @@
 ---
-title: XlAddInManagerInfo/xlAddInManagerInfo12
+title: xlAddInManagerInfo/xlAddInManagerInfo12
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,28 +7,28 @@ ms.topic: reference
 f1_keywords:
 - xlAddInManagerInfo
 keywords:
-- Xladdinmanagerinfo-Funktion [excel 2007]
+- xlAddInManagerInfo-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 63a73cd2-6479-4233-ad68-93379f940717
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e42cca809c4426ddf9a98b3b275d08490d31c8db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 66d2ac05b9603d6bb587a3898bde2545c1bb844a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303997"
 ---
-# <a name="xladdinmanagerinfoxladdinmanagerinfo12"></a>XlAddInManagerInfo/xlAddInManagerInfo12
+# <a name="xladdinmanagerinfoxladdinmanagerinfo12"></a>xlAddInManagerInfo/xlAddInManagerInfo12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird von Microsoft Excel aufgerufen, wenn der Add-In-Manager zum ersten Mal in einer Excel-Sitzung aufgerufen wird. Diese Funktion wird das Add-In-Manager Informationen über das Add-in bereitzustellen.
+Wird von Microsoft Excel aufgerufen, wenn der Add-in-Manager zum ersten Mal in einer Excel-Sitzung aufgerufen wird. Diese Funktion wird verwendet, um dem Add-in-Manager Informationen zu Ihrem Add-in bereitzustellen.
   
-Excel 2007 und spätere Versionen aufrufen **xlAddInManagerInfo12** anstelle von **XlAddInManagerInfo** , wenn durch die XLL exportiert. Die Funktion **xlAddInManagerInfo12** sollte auf die gleiche Weise als **XlAddInManagerInfo** zur Vermeidung von versionsspezifischen Unterschiede im Verhalten von XLL funktionieren. Excel erwartet **xlAddInManagerInfo12** einen **XLOPER12** -Datentyp zurück, während ein **XLOPER** **XlAddInManagerInfo** zurückgegeben werden soll.
+Excel 2007 und höhere Versionen rufen **xlAddInManagerInfo12** in der Voreinstellung für **xlAddInManagerInfo** auf, wenn Sie von der XLL exportiert werden. Die **xlAddInManagerInfo12** -Funktion sollte auf die gleiche Weise funktionieren wie **xlAddInManagerInfo** , um versionsspezifische Unterschiede im Verhalten der XLL zu vermeiden. Excel erwartet, dass **xlAddInManagerInfo12** einen **XLOPER12** -Datentyp zurückgibt, wohingegen **xlAddInManagerInfo** einen **XLOPER**zurückgeben sollte.
   
-Die **xlAddInManagerInfo12** -Funktion wird nicht von früheren Versionen von Excel als Excel 2007 aufgerufen, wie diese **XLOPER12**nicht unterstützen.
+Die **xlAddInManagerInfo12** -Funktion wird nicht von Excel-Versionen vor Excel 2007 aufgerufen, da diese die **XLOPER12**nicht unterstützen.
   
-Excel erforderlich keine XLL zu implementieren und exportieren Sie eine dieser Funktionen.
+Excel erfordert keine XLL zum Implementieren und Exportieren einer dieser Funktionen.
   
 ```cs
 LPXLOPER WINAPI xlAddInManagerInfo(LPXLOPER pxAction);
@@ -37,19 +37,19 @@ LPXLOPER12 WINAPI xlAddInManagerInfo12(LPXLOPER12 pxAction);
 
 ## <a name="parameters"></a>Parameter
 
- _PxAction:_ Ein Zeiger auf eine numerische **XLOPER/XLOPER12** (**vom Typ XltypeInt** oder **XltypeNum**).
+ _pxAction:_ Ein Zeiger auf eine numerische **XLOPER/XLOPER12** (**xltypeInt** oder **xltypeNum**).
   
-Die Informationen, der für Excel Listenbereich anfordert.
+Die von Excel geforderten Informationen.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-_PxAction_ umgewandelt werden kann, um die Zahl 1 oder ist, sollte die Implementierung von dieser Funktion eine Zeichenfolge mit einige Informationen über das Add-in, in der Regel seinen Namen und möglicherweise eine Versionsnummer zurückgegeben. Andernfalls sollte es #VALUE zurück!. 
+Wenn _pxAction_ die Zahl 1 ist, oder Sie kann dazu gezwungen werden, dann sollte Ihre Implementierung dieser Funktion eine Zeichenfolge zurückgeben, die einige Informationen über das Add-in enthält, in der Regel den Namen und vielleichteine Versionsnummer. Andernfalls sollte #VALUE zurückgegeben werden. 
   
-Wenn Sie keine Zeichenfolge zurückzugeben, versucht Excel den zurückgegebenen Wert in eine Zeichenfolge zu konvertieren.
+Wenn Sie keine Zeichenfolge zurückgeben, versucht Excel, den zurückgegebenen Wert in eine Zeichenfolge zu konvertieren.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn die zurückgegebene Zeichenfolge an dynamisch zugewiesenen Puffer verweist, müssen Sie sicherstellen, dass dieser Puffer schließlich freigegeben wird. Wenn die Zeichenfolge von Excel belegt wurde, Sie zu diesem Zweck **XlbitXLFree**festlegen. Wenn die Zeichenfolge von der DLL belegt wurde, zu diesem Zweck Einstellung **XlbitDLLFree**und müssen Sie auch in implementieren [XlAutoFree](xlautofree-xlautofree12.md) (Wenn Sie eine **XLOPER**zurückgeben) oder **xlAutoFree12** (Wenn Sie eine **XLOPER12**zurückgeben).
+Wenn die zurückgegebene Zeichenfolge auf dynamisch zugewiesenen Puffer zeigt, müssen Sie sicherstellen, dass dieser Puffer schließlich freigegeben wird. Wenn die Zeichenfolge von Excel zugewiesen wurde, tun Sie dies, indem Sie **xlbitXLFree**. Wenn die Zeichenfolge von der DLL zugewiesen wurde, tun Sie dies, indem Sie **xlbitDLLFree**, und Sie müssen auch in [xlAutoFree](xlautofree-xlautofree12.md) (wenn Sie ein **XLOPER**zurückgeben) oder **xlAutoFree12** (wenn Sie eine **XLOPER12**zurückgeben).
   
 ## <a name="example"></a>Beispiel
 
@@ -87,5 +87,5 @@ LPXLOPER12 WINAPI xlAddInManagerInfo12(LPXLOPER12 xAction)
 
 
 
-[Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
+[Add-In-Manager und XLL-Benutzeroberflächenfunktionen](add-in-manager-and-xll-interface-functions.md)
 

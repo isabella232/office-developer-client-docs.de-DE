@@ -1,5 +1,5 @@
 ---
-title: LEFT Function (VisioShapeSheet)
+title: LEFT-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,38 +8,38 @@ f1_keywords:
 - Vis_DSS.chm1021757
 localization_priority: Normal
 ms.assetid: 0c2f6e06-b772-2006-ec7b-8695d097f146
-description: Gibt das am weitesten links oder die Zeichen in einer Textzeichenfolge, basierend auf der Anzahl der Zeichen an, die Sie angeben.
-ms.openlocfilehash: 4e8deb3098ce6d217dcce0cae23d07ed723d9fb8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die am weitesten links liegenden Zeichen oder Zeichen in einer Textzeichenfolge basierend auf der Anzahl der Zeichen zurück, die Sie angeben.
+ms.openlocfilehash: aa4141cfc53bd41a6d58e8bc666b18a06fc80245
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309464"
 ---
-# <a name="left-function-visioshapesheet"></a>LEFT Function (VisioShapeSheet)
+# <a name="left-function-visioshapesheet"></a>LEFT-Funktion (VisioShapeSheet)
 
-Gibt das am weitesten links oder die Zeichen in einer Textzeichenfolge, basierend auf der Anzahl der Zeichen an, die Sie angeben.
+Gibt die am weitesten links liegenden Zeichen oder Zeichen in einer Textzeichenfolge basierend auf der Anzahl der Zeichen zurück, die Sie angeben.
   
 ## <a name="syntax"></a>Syntax
 
-Links (** *Text* **, [, ** *Num_chars_opt* **]) 
+Left (* * *Text* * *, [, * * *num_chars_opt* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Zeichenfolge mit den zu extrahierenden Zeichen.  <br/> |
-| _num_chars_opt_ <br/> |Optional  <br/> |**Numeric** <br/> |Die Anzahl der Zeichen, die extrahiert werden sollen.  <br/> |
+| _num_chars_opt_ <br/> |Optional  <br/> |**Numerisch** <br/> |Die Anzahl der Zeichen, die extrahiert werden sollen.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Wert von _Num_chars_opt_ muss größer als oder gleich 0 (null). 
+Der Wert von _num_chars_opt_ muss größer oder gleich NULL (0) sein. 
   
-Wenn _Num_chars_opt_ größer als die Länge des Texts ist, gibt links des gesamten Texts. Wenn _Num_chars_opt_ ausgelassen wird, wird angenommen, 1 sein. 
+Wenn _num_chars_opt_ größer als die Länge des Texts ist, gibt Left den gesamten Text zurück. Wenn _num_chars_opt_ ausgelassen wird, wird davon ausgegangen, dass es 1 ist. 
   
 ## <a name="example"></a>Beispiel
 

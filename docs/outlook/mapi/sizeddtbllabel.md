@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: c7cb8cf9-7abd-4ee3-b88c-d61695f4ed31
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8d960207e05b33efe55886166ff1322f7f4eedce
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1ae675d1d4adf841e18bbfc8990913136afe8b4b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282705"
 ---
 # <a name="sizeddtbllabel"></a>SizedDtblLabel
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLLABEL](dtbllabel.md) -Struktur für die Beschreibung ein Label-Steuerelement und das zugeordnete Beschriftung an einer angegebenen Länge enthält. 
+Erstellt eine benannte Struktur, die eine [DTBLLABEL](dtbllabel.md) -Struktur zur Beschreibung eines Label-Steuerelements und der zugeordneten Beschriftung einer angegebenen Länge enthält. 
   
 |||
 |:-----|:-----|
-|In der Headerdatei angegeben:  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur  <br/> |**DTBLLABEL** <br/> |
+|Angegeben in der Headerdatei:  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur  <br/> |**DTBLLABEL** <br/> |
    
 ```cpp
 SizedDtblLabel (n, u)
@@ -38,22 +38,22 @@ SizedDtblLabel (n, u)
 
 _n_
   
-> Länge der Beschriftung. Dazu gehört das letzte Zeichen NULL. 
+> Länge der Bezeichnung. Dazu gehört das endGÜLTIGes NULL-Zeichen. 
     
 _u_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **SizedDtblLabel** können Sie eine Beschriftung anzeigen Tabelle definieren, wenn die Anzahl der Zeichen in der Bezeichnung bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
+Mit dem **SizedDtblLabel** -Makro können Sie eine Anzeige Tabellenbeschriftung definieren, wenn die Anzahl der Zeichen in der Bezeichnung bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
   
 ```cpp
 DTBLLABEL dtbllabel;
 TCHAR lpszLabelName[n];
 ```
 
-Führen Sie einen Zeiger auf die resultierende Struktur aus dem Makro **SizedDtblLabel** als Zeiger Struktur **DTBLLABEL** die folgende Umwandlung: 
+Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblLabel** -Makro als **DTBLLABEL** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpDtblLabel = (LPDTBLLABEL) &SizedDtblLabel;

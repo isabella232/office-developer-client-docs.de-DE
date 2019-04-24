@@ -8,22 +8,22 @@ f1_keywords:
 - fDialog
 - fDialog12
 keywords:
-- Fdialog-Funktion [excel 2007], fDialog12-Funktion [Excel 2007]
+- fdialog-Funktion [Excel 2007], fDialog12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: a9a47408-07d1-4a00-9596-abc48b12392f
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 554b76d2d316110286e83158acfff33aa68e19c1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 58d0df500c38534ec1315d2dab1517c1f5272ad5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304067"
 ---
 # <a name="fdialogfdialog12"></a>fDialog/fDialog12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Beispiel benutzerdefinierter Befehl, der veranschaulicht, wie Sie eine Microsoft Excel-UDD (im Dialogfeld benutzerdefinierte) innerhalb einer DLL zu erstellen, indem Sie das Dialogfeld Feld-Funktionen in der C-API. Wenn GENERIC.xll geladen wird, erstellt es ein Menü benutzerdefinierte allgemeine, über die auf diesen Befehl zugegriffen wird.
+Beispiel für einen benutzerdefinierten Befehl, mit dem das Erstellen eines Microsoft Excel-UDD (benutzerdefiniertes Dialogfeld) in einer DLL mithilfe der Dialogfeldfunktionen in der C-API veranschaulicht wird. Wenn GENERIC. XLL geladen wird, wird ein benutzerdefiniertes Menü generisch erstellt, über das auf diesen Befehl zugegriffen wird.
   
 ```cs
 int WINAPI fDialog(void);
@@ -31,15 +31,15 @@ int WINAPI fDialog(void);
 
 ## <a name="parameters"></a>Parameter
 
-Die Funktion akzeptiert keine Parameter.
+Die Funktion verwendet keine Parameter.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
 Die Funktion gibt immer 1 zurück.
   
 ### <a name="example"></a>Beispiel
 
-Finden Sie unter `\SAMPLES\GENERIC\GENERIC.C` für den Quellcode für diese Funktion. 
+Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

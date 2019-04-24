@@ -1,39 +1,39 @@
 ---
-title: Geschäftsdatenaktionen (Access benutzerdefinierte Web app)
+title: Daten Aktionen (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1eb9fafe-4916-4ec5-8ea5-861abd48e5e2
 description: ''
-ms.openlocfilehash: 2adb311c918ae9b419fea52be9ca253cf4b8ce97
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4011c469456c26fd121c0ed34a1b5abc92593f92
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282194"
 ---
-# <a name="data-actions-access-custom-web-app"></a>Geschäftsdatenaktionen (Access benutzerdefinierte Web app)
+# <a name="data-actions-access-custom-web-app"></a>Daten Aktionen (Access Custom Web App)
 
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [StoppMakro-Makroaktion (Access benutzerdefinierte Web app)](stopmacro-macro-action-access-custom-web-app.md)
+- [Stopmakro-Makroaktion (benutzerdefinierte Access-Web-App)](stopmacro-macro-action-access-custom-web-app.md)
     
-- [Abbrechendatensatzänderung-Makroaktion (Access benutzerdefinierte Web app)](cancelrecordchange-macro-action-access-custom-web-app.md)
+- [Abbrechendatensatzänderung-Makroaktion (benutzerdefinierte Access-Web-App)](cancelrecordchange-macro-action-access-custom-web-app.md)
     
-- [Daten DatensatzLöschen-Makroaktion (Access benutzerdefinierte Web app)](deleterecord-data-macro-action-access-custom-web-app.md)
+- [DeleteRecord Data-Makroaktion (benutzerdefinierte Access-Web-App)](deleterecord-data-macro-action-access-custom-web-app.md)
     
-- [Auslösenfehler-Makroaktion (Access benutzerdefinierte Web app)](raiseerror-macro-action-access-custom-web-app.md)
+- [Auslösenfehler-Makroaktion (benutzerdefinierte Access-Web-App)](raiseerror-macro-action-access-custom-web-app.md)
     
-- [SetField-Makroaktion (Access benutzerdefinierte Web app)](setfield-macro-action-access-custom-web-app.md)
+- [SetField-Makroaktion (benutzerdefinierte Access-Web-App)](setfield-macro-action-access-custom-web-app.md)
     
-- [FestlegenLokaleVar-Makroaktion (Access benutzerdefinierte Web app)](setlocalvar-macro-action-access-custom-web-app.md)
+- [SetLocalVar-Makroaktion (benutzerdefinierte Access-Web-App)](setlocalvar-macro-action-access-custom-web-app.md)
     
-- [BeendenFürJedenDatensatz-Makroaktion (Access benutzerdefinierte Web app)](exitforeachrecord-macro-action-access-custom-web-app.md)
+- [Beendenfürjedendatensatz-Makroaktion (benutzerdefinierte Access-Web-App)](exitforeachrecord-macro-action-access-custom-web-app.md)
     
-- [SetReturnVar-Makroaktion (Access benutzerdefinierte Web app)](setreturnvar-macro-action-access-custom-web-app.md)
+- [SetReturnVar-Makroaktion (benutzerdefinierte Access-Web-App)](setreturnvar-macro-action-access-custom-web-app.md)
     
 

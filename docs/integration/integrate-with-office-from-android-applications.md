@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: a765fa49-a272-4047-9147-59cc68e5dd27
 description: Office für Android bietet eine erweiterbare Lösung, die die Integration in Drittanbieteranwendungen ermöglicht. Von Ihrer Android-Anwendung aus ist eine Integration in Office möglich, indem Sie Ihre Anwendungsbenutzer an Office übergeben.
 ms.openlocfilehash: 4e674b3d66f3acba7e9c9c19e716ff0d73d803b2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303150"
 ---
 # <a name="integrate-with-office-from-android-applications"></a>Integration in Office von Android-Anwendungen aus
 
@@ -71,7 +71,7 @@ Das folgende Beispiel zeigt eine Anforderung zum Aufrufen einer Word-Datei zur B
 
 Die folgende Tabelle enthält die Protokolle für jede Office-Anwendung.
   
-|**Anwendung**|**Protocol**|
+|**Anwendung**|**Protokoll**|
 |:-----|:-----|
 |Excel  <br/> |ms-excel:  <br/> |
 |PowerPoint  <br/> |ms-powerpoint:  <br/> |

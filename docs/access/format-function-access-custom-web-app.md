@@ -8,11 +8,11 @@ ms.assetid: 550fc235-f0b9-4d8e-805b-ce467821a8c9
 description: Gibt einen Wert zurück, der entsprechend einem bestimmten Muster formatiert ist.
 localization_priority: Priority
 ms.openlocfilehash: 5331df30f276a7edd0571e9bf24c759d57ec6a54
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308204"
 ---
 # <a name="format-function-access-custom-web-app"></a>Format-Funktion (benutzerdefinierte Access-Web-App)
 

@@ -1,5 +1,5 @@
 ---
-title: Darstellen einer Anlage als RTF-Text
+title: Rendern einer Anlage in RTF-Text
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,37 +8,37 @@ api_type:
 - COM
 ms.assetid: 26372539-e9fe-464d-95c7-90b58c20b98f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5d8fc10f876408d616c5acefb664ba5d61c927a2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b2a1a23f073d05e85c8203826e3407c5ae193f19
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22562974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280360"
 ---
-# <a name="rendering-an-attachment-in-rtf-text"></a>Darstellen einer Anlage als RTF-Text
+# <a name="rendering-an-attachment-in-rtf-text"></a>Rendern einer Anlage in RTF-Text
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Rich-Text-Format (RTF)-Clients unterstützen können Positionsinformationen Rendering von RTF des Nachrichtentexts anhand der folgenden Escapezeichen in der Nachricht **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft abrufen:
+Rich Text Format (RTF)-fähige Clients können Informationen zur Renderingposition aus RTF-Nachrichten Text abrufen, indem Sie in der **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft der Nachricht nach der folgenden Escapesequenz suchen:
   
  `\objattph`
   
- **Zum Suchen von Rendering-Informationen in formatierten text**
+ **So suchen Sie Informationen zur Darstellung in formatiertem Text**
   
-1. Rufen Sie **IMessage::GetAttachmentTable** Zugriff auf die Nachricht Anlage-Tabelle. For more information, see [IMessage::GetAttachmentTable](imessage-getattachmenttable.md).
+1. Rufen Sie **IMessage::** getattachmentable auf die Anlage Tabelle der Nachricht zugreifen. For more information, see [IMessage::GetAttachmentTable](imessage-getattachmenttable.md).
     
-2. Erstellen Sie eine eigenschaftseinschränkung, die die Tabelle, um Zeilen beschränkt, die nicht gleich-1 **PR_RENDERING_POSITION** aufweisen. Weitere Informationen finden Sie unter **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)).
+2. Erstellen Sie eine Eigenschaftseinschränkung, die die Tabelle auf Zeilen beschränkt, die **PR_RENDERING_POSITION** ungleich-1 aufweisen. Weitere Informationen finden Sie unter **PR_RENDERING_POSITION** ([pidtagrenderingposition (](pidtagrenderingposition-canonical-property.md)).
     
-3. Rufen Sie die **Methode IMAPITable:: Restrict** , um die Einschränkung zu erzwingen. Weitere Informationen finden Sie unter [Methode IMAPITable:: Restrict](imapitable-restrict.md).
+3. Rufen Sie **IMAPITable:: Restrict** auf, um die Einschränkung zu erzwingen. Weitere Informationen finden Sie unter [IMAPITable:: Restrict](imapitable-restrict.md).
     
-4. Rufen Sie **SortTable** , um die Anlagen zu sortieren. Weitere Informationen finden Sie unter [SortTable](imapitable-sorttable.md).
+4. Rufen Sie **IMAPITable:: sortable** auf, um die Anlagen zu sortieren. Weitere Informationen finden Sie unter [IMAPITable:: sortable](imapitable-sorttable.md).
     
-5. Rufen Sie **IMAPITable::QueryRows** zum Abrufen der entsprechenden Zeilen. Weitere Informationen finden Sie unter [IMAPITable::QueryRows](imapitable-queryrows.md).
+5. Rufen Sie **IMAPITable:: QueryRows** auf, um die entsprechenden Zeilen abzurufen. Weitere Informationen finden Sie unter [IMAPITable:: QueryRows](imapitable-queryrows.md).
     
-6. Rufen Sie die Nachricht **IMAPIProp::OpenProperty** -Methode zum Abrufen von **PR_RTF_COMPRESSED** mit der **IStream** -Schnittstelle. Weitere Informationen finden Sie unter [IMAPIProp::OpenProperty](imapiprop-openproperty.md) und **PR_RTF_COMPRESSED**.
+6. Rufen Sie die **IMAPIProp:: OpenProperty** -Methode der Nachricht auf, um **PR_RTF_COMPRESSED** mit der **IStream** -Schnittstelle abzurufen. Weitere Informationen finden Sie unter [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) und **PR_RTF_COMPRESSED**.
     
-7. Überprüfung den Stream, suchen Sie nach der Platzhalter Rendering `\objattph`. Das Zeichen nach dieser Platzhalter ist der Ort für die neue Anlage in der sortierten Tabelle.
+7. Überprüfen Sie den Stream, und suchen Sie nach `\objattph`dem Render-Platzhalter. Das Zeichen nach diesem Platzhalter ist die Stelle für die nächste Anlage in der sortierten Tabelle.
     
 

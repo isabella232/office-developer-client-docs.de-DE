@@ -1,5 +1,5 @@
 ---
-title: Pflegen einer Formularbibliothek
+title: Verwalten einer Formularbibliothek
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: 8488f7ec-e44b-4d1a-ba42-baea8c71d350
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6713055837e3b9b664d5fa1465c9a889919ee5ed
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 51c7c3f8ba70dcb3d35dc50806e984fd4b193818
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298460"
 ---
-# <a name="maintaining-a-form-library"></a>Pflegen einer Formularbibliothek
+# <a name="maintaining-a-form-library"></a>Verwalten einer Formularbibliothek
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Formularbibliothek enthält alle wichtigen Informationen zu einem Formular: seine Eigenschaften, seiner Verben und ausführbare Dateien des Servers. Einige Clients können ihre Benutzer verwalten, installieren oder Entfernen von Servern Formular. Wenn Sie dieses Feature Ihren Benutzern anbieten möchten, benötigen Sie Zugriff auf:
+Eine Formularbibliothek enthält alle wichtigen Informationen zu einem Formular: seine Eigenschaften, seine Verben und die ausführbaren Dateien des Servers. Einige Clients ermöglichen es Ihren Benutzern, Formularserver zu warten, zu installieren oder zu entfernen. Wenn Sie diese Funktion ihren Benutzern anbieten möchten, benötigen Sie Zugriff auf Folgendes:
   
-- Der Formular-Server-Konfigurationsdatei, eine Datei mit der. Erweiterung CFG.
+- Die Konfigurationsdatei des Formular Servers, eine Datei mit der. CFG-Erweiterung.
     
-- Der Formularbibliothek Container-Objekt, ein Objekt, das implementiert die [IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md) Schnittstelle. 
+- Das Container-Objekt der Formularbibliothek, ein Objekt, das die [IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md) -Schnittstelle implementiert. 
     
-Zugriff auf die Konfigurationsdatei oder einen Pfadnamen zu verwenden sind beliebige Weise praktisch. Clients stehen in der Regel dem Benutzer ein Dialogfeld zum Installieren und Entfernen von Servern Formular, die auch verwendet werden können, um den Benutzer für den Speicherort der Konfigurationsdatei aufzufordern.
+Um auf die Konfigurationsdatei oder einen Pfadnamen zu zugreifen, verwenden Sie alle Mittel, die bequem sind. In der Regel zeigen Clients dem Benutzer ein Dialogfeld zum Installieren und Entfernen von Formular Servern an, mit dem der Benutzer zur Bestätigung des Speicherorts der Konfigurationsdatei aufgefordert werden kann.
   
-Rufen Sie den Formular-Manager [IMAPIFormMgr::OpenFormContainer](imapiformmgr-openformcontainer.md) -Methode, um für den Zugriff auf die Formularbibliothek Container. Übergeben Sie eine Enumerationswert an, welche Formularbibliothek zu öffnen, und Sie bei Bedarf einen Zeiger auf das Objekt, das der Formular-Manager zum Öffnen der Formularbibliothek verwendet werden soll. Wenn Sie einen [Ordner von Formularbibliotheken](folder-form-libraries.md)öffnen, beispielsweise übergeben ein [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) Zeiger. 
+Um auf den Container der Formularbibliothek zuzugreifen, rufen Sie die [IMAPIFormMgr:: OpenFormContainer](imapiformmgr-openformcontainer.md) -Methode des Formular-Managers auf. Geben Sie einen Enumerationswert an, um anzugeben, welche Formularbibliothek geöffnet werden soll, und gegebenenfalls einen Zeiger auf das Objekt, das der Formular Manager zum Öffnen der Formularbibliothek verwenden soll. Wenn Sie beispielsweise eine [Ordner Formularbibliothek](folder-form-libraries.md)öffnen, führen Sie einen [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) -Zeiger aus. 
   
-Nach dem **OpenFormContainer** den **IMAPIFormContainer** Zeiger zurückgegeben wird, rufen Sie [IMAPIFormContainer::InstallForm](imapiformcontainer-installform.md) oder [IMAPIFormContainer::RemoveForm](imapiformcontainer-removeform.md), je nach der Wartung ausgeführt werden. **InstallForm** hinzugefügt der Bibliothek einen Formular Server; **RemoveForm** Löscht einen Formular Server aus der Bibliothek. 
+Nachdem **OpenFormContainer** den **IMAPIFormContainer** -Zeiger zurückgegeben hat, rufen Sie entweder [IMAPIFormContainer:: InstallForm](imapiformcontainer-installform.md) oder [IMAPIFormContainer:: RemoveForm](imapiformcontainer-removeform.md)auf, je nachdem, welche Wartung ausgeführt werden soll. **InstallForm** fügt der Bibliothek einen Formularserver hinzu; **RemoveForm** löscht einen Formularserver aus der Bibliothek. 
   
 

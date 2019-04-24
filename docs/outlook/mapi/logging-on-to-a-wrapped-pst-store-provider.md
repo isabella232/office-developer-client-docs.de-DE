@@ -1,35 +1,35 @@
 ---
-title: Anmelden bei einem gepackten PST-Anbieter
+title: Anmelden bei einem Anbieter von umschlossenem PST-Speicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 364bc5fd-2199-0bb2-142b-9b3b686b2268
-description: 'Zuletzt geändert: 02 Juli 2012'
-ms.openlocfilehash: 0716017788239c22f31007438089118d109010a3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 02 Juli, 2012'
+ms.openlocfilehash: 96f472d67f144a451046ff61a3ed6c6ff2ff9acf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307819"
 ---
-# <a name="logging-on-to-a-wrapped-pst-store-provider"></a>Anmelden bei einem gepackten PST-Anbieter
+# <a name="logging-on-to-a-wrapped-pst-store-provider"></a>Anmelden bei einem Anbieter von umschlossenem PST-Speicher
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bevor Sie zu einem gepackten PST-Speicher-Anbieter auf MAPI anmelden können, müssen Sie initialisieren und konfigurieren den gepackten Anbieter für Persönliche Ordner-Datei (PST) anmelden. Weitere Informationen finden Sie unter [einem umfließendem PST-Anbieter zu initialisieren](initializing-a-wrapped-pst-store-provider.md).
+Bevor Sie MAPI bei einem eingebundenen PST-Speicheranbieter anmelden können, müssen Sie den eingebundenen PST-Speicheranbieter initialisieren und konfigurieren. Weitere Informationen finden Sie unter [Initialisieren eines EingebundenEN PST-Speicheranbieters](initializing-a-wrapped-pst-store-provider.md).
   
-Nachdem Sie initialisiert und einen gepackten PST-Anbieter konfiguriert haben, müssen Sie zwei Anmeldung Routinen implementieren. Die Funktion **[IMSProvider::Logon](imsprovider-logon.md)** anmeldet MAPI auf die gepackten PST-Anbieter. Die Funktion **[IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)** meldet sich die MAPI-Warteschlange auf dem gepackten PST-Anbieter. 
+Nachdem Sie einen eingebundenen PST-Speicheranbieter initialisiert und konfiguriert haben, müssen Sie zwei Anmelde Routinen implementieren. Die **[IMSProvider:: LOGON](imsprovider-logon.md)** -Funktion meldet MAPI für den eingebundenen PST-Speicheranbieter an. Die **[IMSProvider:: SpoolerLogon](imsprovider-spoolerlogon.md)** -Funktion meldet den MAPI-Spooler für den eingebundenen PST-Speicheranbieter an. 
   
-In diesem Thema werden die **IMSProvider::Logon** und der **IMSProvider::SpoolerLogon** -Funktion mithilfe von Codebeispielen aus der umbrochen PST Store Beispielanbieter veranschaulicht. Das Beispiel implementiert einen gepackten PST-Anbieter, der in Verbindung mit der API für die Replikation verwendet werden soll. Weitere Informationen zum Herunterladen und Installieren der umbrochen PST Store Beispielanbieter finden Sie unter [Sample umfließendem PST Store Provider installieren](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikation-API finden Sie unter [Über die Replikation-API](about-the-replication-api.md).
+In diesem Thema werden die **IMSProvider:: LOGON** -Funktion und die **IMSProvider:: SpoolerLogon** -Funktion mithilfe von Codebeispielen aus dem beispielsWEISE einGebundenen PST-Speicheranbieter demonstriert. Im Beispiel wird ein eingebundener PST-Anbieter implementiert, der in Verbindung mit der Replikations-API verwendet werden soll. Weitere Informationen zum herunterladen und Installieren des eingeWickelten Beispiel-PST-Speicheranbieters finden Sie unter [Installing the Sample Wrapped Store Provider](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikations-API finden Sie unter Informationen zur [Replikations-API](about-the-replication-api.md).
   
-Nachdem MAPI- und die MAPI-Warteschlange angemeldet sind bei der gepackten PST-Speicheranbieter ist, verwendet werden. Weitere Informationen finden Sie unter [Verwenden von einem umfließendem PST-Anbieter](using-a-wrapped-pst-store-provider.md).
+Nachdem MAPI und der MAPI-Spooler beim eingebundenen PST-Speicheranbieter angemeldet sind, können Sie diese verwenden. Weitere Informationen finden Sie unter [Verwenden eines EingebundenEN PST-Speicheranbieters](using-a-wrapped-pst-store-provider.md).
   
-## <a name="mapi-logon-routine"></a>MAPI-Anmeldung routine
+## <a name="mapi-logon-routine"></a>MAPI-Anmelderoutine
 
-Nachdem der gepackten PST-Speicheranbieter initialisiert wurde, müssen Sie die **[IMSProvider::Logon](imsprovider-logon.md)** -Funktion zum Anmelden MAPI an den gepackten PST Store implementieren. Diese Funktion überprüft die Anmeldeinformationen und ruft die Konfigurationseigenschaften für den Anbieter. Sie müssen auch Implementieren der `SetOLFIInOST` -Funktion zum Festlegen der Offline Dateiinformationen (**[OLFI](olfi.md)** ). **OLFI** ist eine Warteschlange der langfristigen ID Strukturen, die von der gepackten PST-Anbieter verwendet wird, weisen Sie eine Eintrags-ID für eine neue Nachricht oder einen Ordner im Offlinemodus. Schließlich gibt die Funktion **IMSProvider::Logon** ein Nachricht Store-Objekt, das die MAPI-Warteschlange und Clientanwendungen in anmelden können der `ppMDB` Parameter. 
+Nachdem der eingebundene PST-Speicheranbieter initialisiert wurde, müssen Sie die **[IMSProvider:: LOGON](imsprovider-logon.md)** -Funktion implementieren, um sich bei MAPI im eingebundenen PST-Speicher anzumelden. Diese Funktion überprüft Benutzeranmeldeinformationen und ruft die Konfigurationseigenschaften für den Anbieter ab. Sie müssen auch die `SetOLFIInOST` Funktion zum Festlegen der Offline Datei Info (**[OLFI](olfi.md)** ) implementieren. **OLFI** ist eine Warteschlange von langfristigen ID-Strukturen, die vom eingebundenen PST-Speicheranbieter zum Zuweisen einer EINTRAGS-ID für eine neue Nachricht oder einen neuen Ordner im Offlinemodus verwendet wird. Schließlich gibt die **IMSProvider:: LOGON** -Funktion ein Nachrichtenspeicherobjekt zurück, das von der MAPI-Spooler-und der Client `ppMDB` Anwendung im Parameter angemeldet werden kann. 
   
-### <a name="cmsproviderlogon-example"></a>CMSProvider::Logon()-Beispiel
+### <a name="cmsproviderlogon-example"></a>CMSProvider:: LOGON () (Beispiel)
 
 ```cpp
 STDMETHODIMP CMSProvider::Logon( 
@@ -101,11 +101,11 @@ STDMETHODIMP CMSProvider::Logon(
 }
 ```
 
-## <a name="mapi-spooler-logon-routine"></a>MAPI-Warteschlange Anmeldung routine
+## <a name="mapi-spooler-logon-routine"></a>MAPI-Spooler-Anmelderoutine
 
-Ähnlich wie **IMSProvider::Logon**, müssen Sie die **[IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)** -Funktion, um die MAPI-Warteschlange an den gepackten PST-Speicher melden implementieren. Eine Nachricht Store-Objekt, das die MAPI-Warteschlange und Clientanwendungen anmelden können returned in der `ppMDB` Parameter. 
+Ähnlich wie **IMSProvider:: LOGON**müssen Sie die **[IMSProvider:: SpoolerLogon](imsprovider-spoolerlogon.md)** -Funktion implementieren, um den MAPI-Spooler für den eingebundenen PST-Speicher zu protokollieren. Ein Nachrichtenspeicherobjekt, an das sich die MAPI-Warteschlange und die Clientanwendungen anmelden können, `ppMDB` wird im-Parameter zurückgegeben. 
   
-### <a name="cmsproviderspoolerlogon-example"></a>CMSProvider::SpoolerLogon()-Beispiel
+### <a name="cmsproviderspoolerlogon-example"></a>CMSProvider:: SpoolerLogon ()-Beispiel
 
 ```cpp
 STDMETHODIMP CMSProvider::SpoolerLogon ( 
@@ -159,9 +159,9 @@ STDMETHODIMP CMSProvider::SpoolerLogon (
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher](about-the-sample-wrapped-pst-store-provider.md) 
-- [Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher](installing-the-sample-wrapped-pst-store-provider.md) 
-- [Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
-- [Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
-- [Herunterfahren eines Anbieters von umschlossenem PST-Speicher](shutting-down-a-wrapped-pst-store-provider.md)
+- [Informationen zum einGebundenen PST-Speicheranbieter](about-the-sample-wrapped-pst-store-provider.md) 
+- [Installieren des eingeWickelten Beispiel-PST-Speicheranbieters](installing-the-sample-wrapped-pst-store-provider.md) 
+- [Initialisieren eines einGebundenen PST-Speicheranbieters](initializing-a-wrapped-pst-store-provider.md)
+- [Verwenden eines einGebundenen PST-Speicheranbieters](using-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines einGebundenen PST-Speicheranbieters](shutting-down-a-wrapped-pst-store-provider.md)
 

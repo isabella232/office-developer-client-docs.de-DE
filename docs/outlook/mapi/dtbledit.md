@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: ec3566a0-75ad-466d-a61e-f7d61ccb946d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: eefd0c62314a35c4c6c956b8d4a4d92d5746d1c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b07ea265b5dcc6b9a9abb15c6be7ac9e0f94e8ed
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251598"
 ---
 # <a name="dtbledit"></a>DTBLEDIT
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Edit-Steuerelement, das in einem Dialogfeld erstellt aus einer Tabelle anzeigen verwendet wird.
+Beschreibt ein Bearbeitungssteuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makro:  <br/> |[SizedDtblEdit](sizeddtbledit.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehöriges Makro:  <br/> |[SizedDtblEdit](sizeddtbledit.md) <br/> |
    
 ```cpp
 typedef struct _DTBLEDIT
@@ -47,23 +47,23 @@ typedef struct _DTBLEDIT
 
  **ulbLpszCharsAllowed**
   
-> Ein Offset ab dem Anfang der **DTBLEDIT** -Struktur zu einem Zeichen Zeichenfolge Filter, der Einschränkungen, falls vorhanden, auf die Zeichen beschreibt, die in das Bearbeitungssteuerelement eingegeben werden können. Der Filter wird nicht als regulärer Ausdruck interpretiert und der gleiche Filter auf jedes eingegebene Zeichen angewendet wird. Das Format des Filters lautet wie folgt: 
+> Ein Offset vom Anfang der **DTBLEDIT** -Struktur zu einem Zeichenfolgenfilter, der ggf. Einschränkungen für die Zeichen beschreibt, die in das Bearbeitungssteuerelement eingegeben werden können. Der Filter wird nicht als regulärer Ausdruck interpretiert, und auf jedes eingegebene Zeichen wird derselbe Filter angewendet. Das Format des Filters lautet wie folgt: 
     
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-| `*` <br/> |Ein beliebiges Zeichen ist zulässig (z. B. `"*"`).  <br/> |
-| `[ ]` <br/> |Definiert eine Reihe von Zeichen (z. B. `"[0123456789]".`)  <br/> |
-| `-` <br/> |Gibt einen Bereich von Zeichen (z. B. `"[a-z]"`).  <br/> |
-| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind (beispielsweise `"[~0-9]"`).  <br/> |
-| `\` <br/> |Verwendet, um die vorherigen Zeichen quote (z. B. `"[\-\\\[\]]"` bedeutet-, \, [, und] Zeichen sind zulässig).  <br/> |
+| `*` <br/> |Ein beliebiges Zeichen ist zulässig (Beispiels `"*"`Weise).  <br/> |
+| `[ ]` <br/> |Definiert eine Gruppe von Zeichen (beispielsweise `"[0123456789]".`).  <br/> |
+| `-` <br/> |Gibt einen Zeichentyp an (beispielsweise `"[a-z]"`).  <br/> |
+| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind (Beispiels `"[~0-9]"`Weise).  <br/> |
+| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole zu zitieren ( `"[\-\\\[\]]"` beispielsweise sind \, means-, [und] characters zulässig).  <br/> |
    
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format des Filters Zeichen festzulegen. Das folgende Flag kann festgelegt werden:
+> Bitmaske von Flags, die zum Festlegen des Formats des Zeichen Filters verwendet werden. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE
+MAPI_UNICODE
   
-> Der Filter ist im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Filter im ANSI-Format.
+> Der Filter ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Filter im ANSI-Format.
     
  **ulNumCharsAllowed**
   
@@ -71,15 +71,15 @@ PARAMETER MAPI_UNICODE
     
  **ulPropTag**
   
-> Eigenschaftentag für eine Eigenschaft vom Typ PT_TSTRING. Der **UlPropTag** Member identifiziert die Zeichenfolgeneigenschaft, deren Daten angezeigt und im Bearbeitungssteuerelement bearbeitet werden. 
+> Property-Tag für eine Eigenschaft vom Typ PT_TSTRING. Das **ulPropTag** -Element identifiziert die String-Eigenschaft, deren Daten im Bearbeitungssteuerelement angezeigt und bearbeitet werden. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLEDIT** beschreibt ein Edit-Steuerelement einen Bereich in einem Dialogfeld, das alphanumerische Informationen enthält. Nahezu alle Dialogfelder verfügen über mindestens ein Edit-Steuerelement. Bearbeitungssteuerelemente können geändert werden, von einem Benutzer oder schreibgeschützt sein. 
+Eine **DTBLEDIT** -Struktur beschreibt ein Bearbeitungssteuerelement einen Bereich in einem Dialogfeld, das alphanumerische Informationen enthält. Fast alle Dialogfelder verfügen über mindestens ein Bearbeitungssteuerelement. Bearbeitungssteuerelemente können von einem Benutzer oder schreibgeschützt geändert werden. 
   
-Bearbeitungssteuerelemente können auch sein, einzelne Zeile oder die MultiLine-Eigenschaft. Mehrzeilige Bearbeitungssteuerelemente haben in der Regel eine Bildlaufleiste angezeigt. 
+Bearbeitungssteuerelemente können auch einzeilige oder Multiline sein. Multiline-Bearbeitungssteuerelemente haben normalerweise eine Bildlaufleiste zugeordnet. 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -89,7 +89,7 @@ Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt]
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
+[Kanonische Pidtagcontroltype (-Eigenschaft](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

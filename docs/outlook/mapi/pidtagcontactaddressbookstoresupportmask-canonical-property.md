@@ -1,5 +1,5 @@
 ---
-title: PidTagContactAddressBookStoreSupportMask (kanonische Eigenschaft)
+title: Kanonische Pidtagcontactaddressbookstoresupportmask (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 34f649c8-29bf-470f-9b05-31b69d069259
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7219a8936381c498e7b27898f5efae8e40697b59
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: fb40e2c191056fe164c6a06bfdcf4b8e3d6eb92c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283198"
 ---
-# <a name="pidtagcontactaddressbookstoresupportmask-canonical-property"></a>PidTagContactAddressBookStoreSupportMask (kanonische Eigenschaft)
+# <a name="pidtagcontactaddressbookstoresupportmask-canonical-property"></a>Kanonische Pidtagcontactaddressbookstoresupportmask (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagcontactaddressbookstoresupportmask-canonical-property.md))-Eigenschaft aus dem Speicher, der den Ordner Kontakte enthält, abgerufen.
+Enthält die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagcontactaddressbookstoresupportmask-canonical-property.md))-Eigenschaft, die aus dem Speicher abgerufen wurde, der den Ordner Kontakte enthält.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_STORE_SUPPORT_MASK  <br/> |
 |Kennung:  <br/> |0x6611  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
+|Bereich:  <br/> |Kontakt Adressbuch  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Kontakt-Adressbuchanbieter verwendet diese Eigenschaft für die Eignung der unterstützten Features für den Speicher ausgewertet werden soll. Dies ist eine Eigenschaft für einen Kontakt Adressbuch-Container und eine Spalte in der Tabelle der Kontakt-Adressbuch-Container.
+Der Kontakt Adressbuchanbieter verwendet diese Eigenschaft, um die Angemessenheit der unterstützten Features des Stores auszuwerten. Hierbei handelt es sich um eine Eigenschaft in einem Adressbuchcontainer des Kontakts und eine Spalte in der Tabelle mit Adressbuch Containern des Kontakts.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

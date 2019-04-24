@@ -7,32 +7,32 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e238f6bc-e9f6-4ea4-a2e4-ff5da2a04bd5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2ec5c2604c72d41078aa467764463e2659c62e65
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 68250c5cbeaa366ed4555bb469c4e68d62302f28
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281585"
 ---
 # <a name="allocating-and-freeing-memory-in-mapi"></a>Reservieren und Freigeben von Arbeitsspeicher in MAPI
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zusätzlich zum angeben, wie zuordnen und Freigeben von Arbeitsspeicher, definiert MAPI ein Modell zu wissen, wenn Speicher übergeben zwischen öffentliche Schnittstelle-Methode und die API-Funktion, die Anrufe freigegeben werden soll. Das Modell gilt nur für Arbeitsspeichers für Parameter, die nicht Zeigern auf Schnittstellen, wie Zeichenfolgen und Zeiger auf Strukturen sind. Schnittstellenzeiger verwenden Sie die Referenz zählen Mechanismus über **IUnknown**implementiert. Verwenden Sie beim Zuordnen und Freigeben von nicht-MAPI-Speicher intern innerhalb einer Clientanwendung oder -Dienstanbieter verbunden, geeigneter Mechanismus sinnvoll ist. 
+Zusätzlich zur Angabe, wie Arbeitsspeicher reserviert und freigegeben werden soll, definiert MAPI ein Modell, um zu wissen, wann der zwischen Public Interface Method und API-Funktionsaufruf übergebene Speicher freigegeben werden soll. Das Modell gilt nur für Arbeitsspeicher, der für Parameter reserviert ist, die keine Zeiger auf Schnittstellen sind, wie Zeichenfolgen und Zeiger auf Strukturen. Schnittstellenzeiger verwenden den Verweis Zählmechanismus, der über **IUnknown**implementiert wird. Wenn Sie nicht-MAPI-bezogenen Speicher intern innerhalb einer Clientanwendung oder eines Dienstanbieters zuweisen und freigeben, verwenden Sie, was sinnvoll ist. 
   
-Das Modell definiert Parameter als eine der drei Typen. Sie können Eingaben werden Parameter, festgelegt vom Anrufer mit Informationen, die von der aufgerufenen Funktion oder Methode verwendet werden Ausgabeparameter, von der aufgerufenen Funktion oder Methode festgelegt und an den Anrufer oder Input-Output-Parameter, eine Kombination aus den beiden Typen zurückgegeben. Ausgabeparameter sind häufig Zeiger auf Daten oder Zeiger auf Zeiger auf Daten. Obwohl die aufgerufene Funktion zur Zuweisung von Daten für Ausgabeparameter zuständig ist, weist der Anrufer den Speicher für den Zeiger. 
+Das Modell definiert Parameter als einen von drei Typen. Sie können Eingabeparameter sein, die vom Aufrufer mit Informationen festgelegt werden, die von der aufgerufenen Funktion oder Methode verwendet werden, Ausgabeparameter, die von der aufgerufenen Funktion oder Methode festgelegt und an den Aufrufer zurückgegeben werden, oder Eingabe-Ausgabeparameter, eine Kombination der beiden Typen. Ausgabeparameter sind häufig Zeiger auf Daten oder Zeiger auf Zeiger auf Daten. Obwohl die aufgerufene Funktion für die Zuordnung der Daten für Ausgabeparameter zuständig ist, weist der Aufrufer den Arbeitsspeicher für den Zeiger zu. 
   
-In der folgenden Tabelle werden die Regeln für das zuordnen und Freigeben von Arbeitsspeicher für diese Typen von Parametern erläutert.
+In der folgenden Tabelle werden die Regeln für die Zuordnung und Freigabe von Arbeitsspeicher für diese Typen von Parametern erläutert.
   
-|**Typ**|**Zuweisung von virtuellem Speicher**|**Arbeitsspeicher-Version**|
+|**Type**|**Speicherzuordnung**|**Speicherfreigabe**|
 |:-----|:-----|:-----|
-|Eingabe  <br/> |Anrufer ist dafür verantwortlich, und einen Mechanismus verwenden kann.  <br/> |Anrufer ist dafür verantwortlich, und einen Mechanismus verwenden kann.  <br/> |
-|Ausgabe  <br/> |Aufgerufene Funktion ist dafür verantwortlich, und muss **MAPIAllocateBuffer**verwenden. Weitere Informationen finden Sie unter [MAPIAllocateBuffer](mapiallocatebuffer.md).  <br/> |Anrufer ist dafür verantwortlich, und muss **MAPIFreeBuffer**verwenden. Weitere Informationen finden Sie unter [MAPIFreeBuffer](mapifreebuffer.md).  <br/> |
-|Ein-/ Ausgabe  <br/> |Anrufer ist verantwortlich für die ursprüngliche Zuordnung und aufgerufene Funktion bei Bedarf neu zuordnen können **MAPIAllocateBuffer**verwenden.  <br/> |Aufgerufene Funktion ist verantwortlich für die anfängliche freigeben, wenn Neubelegung notwendig wird. Anrufer muss den letzten Rückgabewert frei.  <br/> |
+|Input  <br/> |Der Anrufer ist verantwortlich und kann einen beliebigen Mechanismus verwenden.  <br/> |Der Anrufer ist verantwortlich und kann einen beliebigen Mechanismus verwenden.  <br/> |
+|Output  <br/> |Die aufgerufene Funktion ist verantwortlich und muss **MAPIAllocateBuffer**verwenden. Weitere Informationen finden Sie unter [MAPIAllocateBuffer](mapiallocatebuffer.md).  <br/> |Der Anrufer ist verantwortlich und muss **mapifreebufferfreigegeben**verwenden. Weitere Informationen finden Sie unter [mapifreebufferfreigegeben](mapifreebuffer.md).  <br/> |
+|Input-Output  <br/> |Der Aufrufer ist für die anfängliche Zuordnung verantwortlich, und die aufgerufene Funktion kann bei Bedarf mithilfe von **MAPIAllocateBuffer**neu zugewiesen werden.  <br/> |Die aufgerufene Funktion ist für die anfängliche Freigabe verantwortlich, wenn eine Neuzuordnung erforderlich ist. Der Anrufer muss den endgültigen Rückgabewert freigeben.  <br/> |
    
-Während der fehlerbedingungen müssen Implementierer Schnittstellenmethoden, da der Aufrufer im Allgemeinen keine Möglichkeit hat, diese zu bereinigen Ausgabe und Input Output-Parameter achten. Wenn ein Fehler zurückgegeben wird, darf klicken Sie dann jede Ausgabe oder Input Output-Parameter entweder gelassen werden am Wert initialisiert vom Anrufer oder einen Wert, die ohne alle Unternehmensbereiche der Aufrufer bereinigt werden können. Beispielsweise einen Zeiger-Ausgabeparameter des `void ** ppv` muss bleiben, wie sie bei der Eingabe wurde oder auf NULL festgelegt werden kann ( `*ppv = NULL`).
+Bei Fehlerbedingungen müssen Implementierer der Schnittstellenmethoden auf Ausgabe-und Eingabe Ausgabeparameter achten, da der Aufrufer im Allgemeinen keine Möglichkeit hat, Sie zu bereinigen. Wenn ein Fehler zurückgegeben wird, muss jeder Output-oder Input-Output-Parameter entweder auf den vom Aufrufer initialisierten Wert oder auf einen Wert festgelegt werden, der ohne Aktion des Anrufers bereinigt werden kann. Beispielsweise muss ein Ausgabezeiger-Parameter von `void ** ppv` wie bei der Eingabe bleiben, oder er kann auf NULL ( `*ppv = NULL`) festgelegt werden.
   
 

@@ -1,40 +1,40 @@
 ---
-title: Erstellen einer Formularvorlage mit dem InfoPath 2003-Objektmodell
+title: Erstellen einer Formularvorlage mit dem InfoPath-Objektmodell 2003
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- InfoPath 2003-kompatible Formularvorlagen Formularvorlagen [InfoPath 2007], Erstellen von InfoPath 2003-kompatible, InfoPath 2007, Erstellen von InfoPath 2003-kompatible Formularvorlagen
+- InfoPath 2003-kompatible Formularvorlagen, Formularvorlagen [InfoPath 2007], Erstellen von InfoPath 2003-kompatibel, InfoPath 2007, Erstellen von InfoPath 2003-kompatiblen Formularvorlagen
 localization_priority: Normal
 ms.assetid: c746aeb1-902c-440e-830b-5b9efad0ca04
 description: Die Verfahren in diesem Thema beschreiben das Erstellen einer Formularvorlage, die mit dem InfoPath 2003-kompatiblen Objektmodell kompatibel ist.
-ms.openlocfilehash: 0cea526c2d41674afc6fee152c3e0584e6b69564
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 35a9fcfbb0d93a19e013bde6980bc94af3bb5dd9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303640"
 ---
-# <a name="create-a-form-template-using-the-infopath-2003-object-model"></a>Erstellen einer Formularvorlage mit dem InfoPath 2003-Objektmodell
+# <a name="create-a-form-template-using-the-infopath-2003-object-model"></a>Erstellen einer Formularvorlage mit dem InfoPath-Objektmodell 2003
 
 Die Verfahren in diesem Thema beschreiben das Erstellen einer Formularvorlage, die mit dem InfoPath 2003-kompatiblen Objektmodell kompatibel ist.
   
 > [!IMPORTANT]
-> Zusätzlich zu den folgenden Verfahren müssen Sie auch klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Speichern**und wählen Sie dann im Feld **Dateityp** auf die Formularvorlage in InfoPath 2003-kompatible-Dateiformat speichern **InfoPath 2003-Formularvorlage** aus. Darüber hinaus wird Klicken Sie zum Öffnen des InfoPath 2003-kompatible Formularvorlagen in InfoPath erstellt ein alle InfoPath 2003-Benutzer müssen .NET Framework 2.0 oder höher auf ihren Computern installiert sein. 
+> Zusätzlich zu den folgenden Verfahren müssen Sie auch auf die Registerkarte **Datei** klicken, auf **Speichern**unter klicken und dann **InfoPath 2003-Formularvorlage** im Feld **Dateityp** auswählen, um die Formularvorlage im InfoPath 2003-kompatiblen Dateiformat zu speichern. Zum Öffnen von InfoPath 2003-kompatiblen Formularvorlagen, die mit InfoPath erstellt wurden, muss für alle InfoPath 2003-Benutzer auf ihren Computern .NET Framework 2,0 oder höher installiert sein. 
   
 ### <a name="to-create-an-infopath-2003-compatible-form-template-in-infopath-with-visual-studio-tools-for-applications"></a>So erstellen Sie eine InfoPath 2003-kompatible Formularvorlage in InfoPath mit Visual Studio Tools for Applications
 
 1. Starten Sie den InfoPath-Designer.
     
-2. Klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Formularoptionen**.
+2. Klicken Sie auf die Registerkarte **Datei**, und klicken Sie dann auf **Formularoptionen**.
     
-3. Wählen Sie in der Kategorie **Kompatibilität** **InfoPath 2003-Editorformulare**aus.
+3. Wählen Sie in der Kategorie **Kompatibilität** die Option **InfoPath 2003-Editorformulare** aus.
     
-4. Wählen Sie in der Kategorie **Programmierung** **c# (kompatibel mit InfoPath 2003)** oder **Visual Basic (kompatibel mit InfoPath 2003)** aus der Dropdownliste **Codesprache der Formularvorlage** ein. 
+4. Wählen Sie in der Kategorie **Programmierung** in der Dropdownliste **Codesprache der Formularvorlage** entweder **C# (kompatibel mit InfoPath 2003)** oder **Visual Basic (kompatibel mit InfoPath 2003)** aus. 
     
 5. Klicken Sie auf **OK**.
     
-6. Entwerfen der Formularvorlage, und fügen Sie Ereignishandler in Visual Studio 2012, wie beschrieben unter [Hinzufügen einer Event Handler mithilfe des InfoPath 2003-Objektmodells](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md).
+6. Entwerfen Sie Ihre Formularvorlage, und fügen Sie dann Ereignishandler in Visual Studio 2012, wie unter [Hinzufügen eines Ereignishandlers mit dem InfoPath 2003-Objektmodell](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)beschrieben.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -42,5 +42,5 @@ Die Verfahren in diesem Thema beschreiben das Erstellen einer Formularvorlage, d
 
 [Exemplarische Vorgehensweise: Erstellen und Debuggen einer einfachen Formularvorlage mit dem InfoPath 2003-Objektmodell](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md)
   
-[Erstellen von Formularvorlagen mithilfe des InfoPath 2003-Objektmodells](creating-form-templates-using-the-infopath-2003-object-model.md)
+[Erstellen von Formularvorlagen mit dem InfoPath-Objektmodell 2003](creating-form-templates-using-the-infopath-2003-object-model.md)
 

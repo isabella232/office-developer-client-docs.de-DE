@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: bcdd0688-0897-47d7-9601-f592ba453b39
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0242015680f11e5be6ae8ea9987e5778dc7cdf05
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c8dc10bdb8bcde15dccf7bab4d9e10d2481cef11
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278886"
 ---
 # <a name="itneffinishcomponent"></a>ITnef::FinishComponent
 
@@ -25,7 +25,7 @@ ms.locfileid: "22594362"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verarbeitet aus einer Nachricht an eine einzelne Komponenten zu einem Zeitpunkt in einem Stream Transport-Neutral Encapsulation Format (TNEF).
+Verarbeitet einzelne Komponenten aus einer Nachricht nacheinander in einen TNEF-Stream (Transport Neutral Encapsulation Format).
   
 ```cpp
 HRESULT FinishComponent(
@@ -42,55 +42,55 @@ HRESULT FinishComponent(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, welche Komponente abgeschlossen sein wird. Mindestens eine der anderen der folgenden Werte muss festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, welche Komponente beendet wird. Eine der folgenden Flags muss festgelegt werden:
     
 TNEF_COMPONENT_ATTACHMENT 
   
-> Für ein Attachment-Objekt wird die Verarbeitung abgeschlossen werden; der Parameter _UlComponentID_ enthält die **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage. 
+> Die Verarbeitung wird für ein Attachment-Objekt beendet; der Parameter _ulComponentID_ enthält die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage. 
     
 TNEF_COMPONENT_MESSAGE 
   
-> Wird die Verarbeitung für ein Meldungsobjekt abgeschlossen werden. 
+> Die Verarbeitung wird für ein Message-Objekt abgeschlossen. 
     
  _ulComponentID_
   
-> [in] 0 bis zur Verarbeitung für eine Nachricht oder die **PR_ATTACH_NUM** -Eigenschaft einer Anlage zu verarbeitenden anzugeben. Wenn das Flag TNEF_COMPONENT_MESSAGE im _UlFlags_ -Parameter festgelegt ist, muss _UlComponentID_ 0 sein. 
+> [in] 0, um die Verarbeitung für eine Nachricht anzugeben, oder die **PR_ATTACH_NUM** -Eigenschaft einer Anlage, die verarbeitet werden soll. Wenn das TNEF_COMPONENT_MESSAGE-Flag im _ulFlags_ -Parameter festgelegt ist, muss _ulComponentID_ 0 sein. 
     
  _lpCustomPropList_
   
-> [in] Ein Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die Eigenschaftentags enthält, mit denen die Eigenschaften im _LpCustomProps_ -Parameter übergeben. Es muss eine 1: 1-Beziehung zwischen den einzelnen Eigenschaftswert in _LpCustomProps_ und ein Tag-Eigenschaft im _LpCustomPropList_ -Parameter. 
+> in Ein Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die Eigenschaftstags enthält, die die im _lpCustomProps_ -Parameter übergebenen Eigenschaften identifizieren. Es muss eine 1:1-Entsprechung zwischen jedem Eigenschaftswert in _lpCustomProps_ und einem Property-Tag im _LpCustomPropList_ -Parameter vorhanden sein. 
     
  _lpCustomProps_
   
-> [in] Ein Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die Eigenschaftswerte für die Eigenschaften, die zu codierende enthält. 
+> in Ein Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die Eigenschaftswerte für die zu codierenden Eigenschaften enthält. 
     
  _lpPropList_
   
-> [in] Ein Zeiger auf eine **SPropTagArray** -Struktur, die für die Eigenschaften, die zu codierende Eigenschaftentags enthält. 
+> in Ein Zeiger auf eine **SPropTagArray** -Struktur, die Eigenschaftentags für die zu codierenden Eigenschaften enthält. 
     
  _lppProblems_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine zurückgegebenen [STnefProblemArray](stnefproblemarray.md) -Struktur. Die **STnefProblemArray** -Struktur gibt an, welche Eigenschaften, falls vorhanden, nicht ordnungsgemäß codiert wurden. Wenn NULL in der _LppProblems_ -Parameter übergeben wird, wird kein Problem Array-Eigenschaft zurückgegeben. 
+> Out Ein Zeiger auf einen Zeiger auf eine zurückgegebene [STnefProblemArray](stnefproblemarray.md) -Struktur. Die **STnefProblemArray** -Struktur gibt an, welche Eigenschaften, falls vorhanden, nicht ordnungsgemäß codiert wurden. Wenn NULL im _lppProblems_ -Parameter übergeben wird, wird kein Property-Problem-Array zurückgegeben. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::FinishComponent** -Methode von TNEF für eine Komponente, die eine Nachricht oder eine Anlage Verarbeitung ausführen, wie das Flag festlegen in der _UlFlags_ -Parameter angegeben. 
+Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:: FinishComponent** -Methode auf, um die TNEF-Verarbeitung für eine Komponente, entweder eine Nachricht oder eine Anlage auszuführen, wie durch das im _ulFlags_ -Parameter festgelegte Flag angegeben. 
   
-Für die Verarbeitung der Komponente aktiviert werden soll, übergeben die aufrufende Anbieter oder Gateway Sie die Kennzeichen TNEF_COMPONENT_ENCODING _UlFlags_ für die [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion, die das Objekt, um die Codierung wird geöffnet. 
+Zur Aktivierung der Komponentenverarbeitung übergibt der aufrufende Anbieter oder das Gateway das TNEF_COMPONENT_ENCODING-Flag in _ulFlags_ für die [OpenTnefStream](opentnefstream.md) -oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion, die das Objekt zum Empfangen der Codierung geöffnet hat. 
   
-Übergeben von Werten in den _LpCustomPropList_ und _LpCustomProps_ führt Komponente Codierung entspricht, die die [ITnef::SetProps](itnef-setprops.md) -Methode ausgeführt. Ein Wert in der _LpPropList_ -Parameter übergeben, führt Komponente Codierung entspricht, die von der [ITnef::AddProps](itnef-addprops.md) -Methode mit dem TNEF_PROP_INCLUDE-Flag festlegen in _UlFlags_erfolgen. Übergeben diese Werte können Sie mit einem einzigen Aufruf anstatt mehrere Aufrufe Codierungen ausführen.
+Das übergeben von Werten in den Parametern _lpCustomPropList_ und _lpCustomProps_ führt eine Komponenten Codierung aus, die der [ITnef::](itnef-setprops.md) SetProps-Methode entspricht. Durch das Übergeben eines Werts im _lpPropList_ -Parameter wird die Komponenten Codierung ausgeführt, die der [ITnef::](itnef-addprops.md) AddProps-Methode mit dem in _ULFLAGS_festgelegten TNEF_PROP_INCLUDE-Flag entspricht. Durch das Übergeben dieser Werte können Sie Codierungen mit einem einzelnen Aufruf anstelle mehrerer Aufrufe durchführen.
   
-Die TNEF-Implementierung Berichte TNEF-Stream Probleme ohne Anhalten des Prozesses **FinishComponent** -Codierung. Die **STnefProblemArray** -Struktur, die in _LppProblems_ zurückgegeben gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften, falls vorhanden, nicht verarbeitet werden konnte. Der im **Scode** -Member, eine der in **STnefProblemArray** enthaltenen **STnefProblem** Strukturen zurückgegebene Wert gibt an, das Problem. Der Anbieter oder Gateway kann auf der Annahme arbeiten, dass alle Eigenschaften oder Attribute, die für die **FinishComponent** kein Problemberichts zurückgibt erfolgreich verarbeitet wurden. 
+Die TNEF-Implementierung meldet TNEF-Datenstrom Codierungsprobleme, ohne den **FinishComponent** -Prozess zu beenden. Die in _lppProblems_ zurückgeGebene **STnefProblemArray** -Struktur gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften, falls vorhanden, nicht verarbeitet werden konnten. Der Wert, der im **SCODE** -Element einer der in **STnefProblemArray** enthaltenen **STnefProblem** -Strukturen zurückgegeben wird, gibt das spezifische Problem an. Der Anbieter oder das Gateway kann davon ausgehen, dass alle Eigenschaften oder Attribute, für die **FinishComponent** keinen Problembericht zurückgibt, erfolgreich verarbeitet wurden. 
   
-Wenn Sie einen Anbieter oder ein Gateway mit Problem Arrays nicht funktionsfähig ist, können sie NULL _LppProblems_übergeben; In diesem Fall wird kein Problem Array zurückgegeben.
+Wenn ein Anbieter oder Gateway nicht mit Problem Arrays funktioniert, kann er in _lppProblems_den Wert NULL überschreiten; in diesem Fall wird kein Problem Array zurückgegeben.
   
-Der in _LppProblems_ zurückgegebene Wert ist nur gültig, wenn der Aufruf gibt S_OK zurück. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder ein Gateway in der Struktur [STnefProblemArray](stnefproblemarray.md) zurückgegebenen Werte überprüfen. Bei einem beim Aufruf Fehler die **STnefProblemArray** -Struktur ist nicht ausgefüllt, und die aufrufende Anbieter oder das Gateway nicht verwenden oder die Struktur frei. Wenn dem Gespräch tritt kein Fehler auf, muss die aufrufende Anbieter oder Gateway den Speicher freizugeben für die **STnefProblemArray** durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion. 
+Der in _lppProblems_ zurückgegebene Wert ist nur gültig, wenn der Aufruf S_OK zurückgibt. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder das Gateway die in der [STnefProblemArray](stnefproblemarray.md) -Struktur zurückgegebenen Werte überprüfen. Wenn für den Anruf ein Fehler auftritt, wird die **STnefProblemArray** -Struktur nicht ausgefüllt, und der aufrufende Anbieter oder das Gateway sollte die Struktur nicht verwenden oder freigeben. Wenn beim Aufruf kein Fehler auftritt, muss der aufrufende Anbieter oder das Gateway den Speicher für das **STnefProblemArray** freigeben, indem er die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufruft. 
   
 ## <a name="see-also"></a>Siehe auch
 

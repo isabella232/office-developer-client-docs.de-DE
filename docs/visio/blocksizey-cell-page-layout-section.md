@@ -8,29 +8,29 @@ f1_keywords:
 - vis_sdr.chm110
 localization_priority: Normal
 ms.assetid: be51e18e-ea49-0788-1a17-866090afb9f4
-description: Bestimmt die vertikale Blockgröße, den Bereich in die jeweils auf dem Zeichenblatt passen müssen, wenn Sie Shapes mithilfe des Dialogfelds Layout konfigurieren (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout, klicken Sie auf der Seite Re-Layout, und klicken Sie dann auf Weitere Layoutoptionen).
-ms.openlocfilehash: 283723bf902c07cfb044ab73107491df3c170a4d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die vertikale Blockgröße, den Bereich, in dem jede Ihrer Shapes auf das Zeichenblatt passen muss, wenn Sie Shapes mithilfe des Dialogfelds Layout konfigurieren (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu Layout, und klicken Sie dann auf Weitere Layoutoptionen).
+ms.openlocfilehash: 08f2012bb027267810c21ef253a0073bb42d3a96
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297347"
 ---
-# <a name="blocksizey-cell-page-layout-section"></a>BlockSizeY Cell (Page Layout Section)
+# <a name="blocksizey-cell-page-layout-section"></a>Zelle "BlockSizeY" (Abschnitt "Page Layout")
 
-Bestimmt die vertikale Blockgröße, den Bereich in die jeweils auf dem Zeichenblatt passen müssen, wenn Sie Shapes mithilfe des Dialogfelds **Layout konfigurieren** (klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Re-Seitenlayout** und klicken Sie dann auf **Weitere Layoutoptionen**).
+Bestimmt die vertikale Blockgröße, den Bereich, in dem jede Ihrer Shapes auf das Zeichenblatt passen muss, wenn Sie Shapes mithilfe des Dialogfelds **Layout konfigurieren** (Klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu Layout**). und klicken Sie dann auf **Weitere Layoutoptionen**).
   
 ## <a name="remarks"></a>Bemerkungen
 
 Sie können diesen Wert auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** in der Gruppe **Seite einrichten** auf den Pfeil, wählen Sie die Registerkarte **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Wenn Sie einen Verweis auf die Zelle BlockSizeY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle BlockSizeY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | BlockSizeY  <br/> |
+| Zellenname:  <br/> | Zelle BlockSizeY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BlockSizeY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle BlockSizeY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

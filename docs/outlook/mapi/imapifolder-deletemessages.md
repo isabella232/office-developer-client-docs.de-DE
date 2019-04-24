@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a16e62b-9d33-41cd-af2b-9abd403b6f2e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bd0439c71df7083e3c4787a5d317fa11d2b99c61
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0f0523c01e163b57d9ed37d9b324ec858adbd685
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280120"
 ---
 # <a name="imapifolderdeletemessages"></a>IMAPIFolder::DeleteMessages
 
@@ -40,67 +40,67 @@ HRESULT DeleteMessages(
 
  _lpMsgList_
   
-> [in] Ein Zeiger auf eine [ENTRYLIST](entrylist.md) -Struktur, die enthält die Anzahl der Nachrichten löschen und ein Array von [ENTRYID](entryid.md) -Strukturen, die die Nachrichten zu identifizieren. 
+> in Ein Zeiger auf eine [entrylist](entrylist.md) -Struktur, die die Anzahl der zu löschenden Nachrichten und ein Array von [Eintrags](entryid.md) -ID-Strukturen enthält, die die Nachrichten identifizieren. 
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster der Statusanzeige. Der Parameter _UlUIParam_ wird ignoriert, es sei denn, das Flag MESSAGE_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Handle für das übergeordnete Fenster der Statusanzeige. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das MESSAGE_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _lpProgress_
   
-> [in] Ein Zeiger auf ein Fortschritt-Objekt, das eine Statusanzeige wird angezeigt. Wenn NULL _LpProgress_übergeben wird, wird der Nachricht Speicheranbieter eine Statusanzeige mithilfe der MAPI-Fortschritt objektimplementierung angezeigt. Der Parameter _LpProgress_ wird ignoriert, es sei denn, das Flag MESSAGE_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Zeiger auf ein Progress-Objekt, das eine Statusanzeige anzeigt. Wenn NULL in _lpProgress_übergeben wird, zeigt der Nachrichtenspeicher Anbieter mithilfe der MAPI-Progress-Objekt Implementierung eine Statusanzeige an. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das MESSAGE_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Nachrichten gelöscht werden. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie die Nachrichten gelöscht werden. Die folgenden Flags können festgelegt werden:
     
 DELETE_HARD_DELETE
   
-> Entfernt alle Nachrichten, einschließlich vorläufig Gelöschte Objekte.
+> Entfernt alle Nachrichten, einschließlich der gelöschten, dauerhaft.
     
 MESSAGE_DIALOG 
   
-> Eine Statusanzeige wird angezeigt, wie der-Vorgang fortgesetzt wird.
+> Zeigt eine Statusanzeige an, während der Vorgang fortgesetzt wird.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die angegebene Nachricht(en) wurden erfolgreich gelöscht.
+> Die angegebenen Nachrichten wurden erfolgreich gelöscht.
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Aufruf war erfolgreich, aber nicht alle Nachrichten erfolgreich gelöscht wurden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf wurde erfolgreich ausgeführt, aber nicht alle Nachrichten wurden erfolgreich gelöscht. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIFolder::DeleteMessages** -Methode löscht Nachrichten aus einem Ordner. Nachrichten, die nicht vorhanden sind, an anderer Stelle verschoben wurden, die mit Lese-/Schreibzugriff geöffnet sind oder, die derzeit übermittelt hat, können nicht gelöscht werden. 
+Mit der **IMAPIFolder::D eletemessages** -Methode werden Nachrichten aus einem Ordner gelöscht. Nachrichten, die nicht vorhanden sind, die an anderer Stelle verschoben wurden, die mit Lese-/Schreibzugriff-Berechtigung geöffnet oder derzeit übermittelt wurden, können nicht gelöscht werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn der Löschvorgang mehr als eine Nachricht umfasst, führen Sie den Vorgang möglichst vollständig für jeden Ordner, auch wenn eine oder mehrere Nachrichten nicht gelöscht werden kann. Beenden Sie den Vorgang nicht vorzeitig auf, es sei denn, ein Fehler, die außerhalb Ihrer Kontrolle auftritt, wie nicht genügend Arbeitsspeicher, nicht genügend Speicherplatz oder der Beschädigung im Nachrichtenspeicher ausgeführt wird.
+Wenn der Löschvorgang mehr als eine Nachricht umfasst, führen Sie den Vorgang für jeden Ordner so vollständig wie möglich aus, selbst wenn eine oder mehrere der Nachrichten nicht gelöscht werden können. Beenden Sie den Vorgang nicht vorzeitig, es sei denn, es tritt ein Fehler auf, der außerhalb Ihres Steuerelements liegt, beispielsweise ausgehender Arbeitsspeicher, unzureichender Festplattenspeicherplatz oder Beschädigung im Nachrichtenspeicher.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Diese Rückgabewerte unter folgenden Umständen zu erwarten.
+Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
   
-|**Bedingung**|**R�ckgabewert**|
+|**Bedingung**|**Rückgabewert**|
 |:-----|:-----|
-|Jede Nachricht **DeleteMessages** wurde gelöscht.  <br/> |S_OK  <br/> |
-|**DeleteMessages** konnte nicht erfolgreich jede Nachricht und Unterordner löschen.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |
-|**DeleteMessages** konnte nicht abgeschlossen.  <br/> |Einen Fehlerwert außer MAPI_E_NOT_FOUND  <br/> |
+|**DeleteMessages** hat jede Nachricht erfolgreich gelöscht.  <br/> |S_OK  <br/> |
+|**DeleteMessages** konnte nicht alle Nachrichten und Unterordner erfolgreich löschen.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |
+|**DeleteMessages** konnte nicht abgeschlossen werden.  <br/> |Beliebiger Fehlerwert außer MAPI_E_NOT_FOUND  <br/> |
    
-Wenn **DeleteMessages** konnte nicht abgeschlossen ist, gehen Sie nicht, dass keine Arbeit ausgeführt wurde. Möglicherweise wurden **DeleteMessages** können eine oder mehrere Nachrichten löschen, bevor der Fehler auftritt. 
+Wenn **DeleteMessages** nicht abgeschlossen werden kann, gehen Sie nicht davon aus, dass keine Arbeit ausgeführt wurde. **DeleteMessages** kann möglicherweise eine oder mehrere der Nachrichten löschen, bevor der Fehler auftritt. 
   
- **DeleteMessages** gibt MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND, je nach den Nachrichtenspeicher Implementierung zurück. 
+ **DeleteMessages** gibt MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND in Abhängigkeit von der Implementierung des Nachrichtenspeichers zurück. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |CFolderDlg::OnDeleteSelectedItem  <br/> |MFCMAPI (engl.) wird die **IMAPIFolder::DeleteMessages** -Methode zum Löschen der angegebenen Nachrichten verwendet.  <br/> |
+|FolderDlg. cpp  <br/> |CFolderDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMAPIFolder::D-eletemessages** -Methode, um die angegebenen Nachrichten zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -113,7 +113,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
 

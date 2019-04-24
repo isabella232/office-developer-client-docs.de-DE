@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - ExcelCursorProc
 keywords:
-- Excelcursorproc-Funktion [excel 2007]
+- excelcursorproc-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 43759617-998d-4030-a17d-c4bbe35ffaf9
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 07be8da4a07b988d5e848048a088859b58ea3a14
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d3cc41487f0cae31e110249fe148f5370319a39a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304095"
 ---
 # <a name="excelcursorproc"></a>ExcelCursorProc
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wenn ein modales Dialogfeld über das Microsoft Excel-Fenster angezeigt wird, ist der Cursor Mauszeiger über das Excel-Fenster. Diese **WndProc** Traps WM_SETCURSOR Geben Sie Windows-Nachrichten und ändert sich der Mauszeiger in einen normalen Pfeil sichern. 
+Wenn ein modales Dialogfeld über das Microsoft Excel-Fenster angezeigt wird, ist der Cursor ein Beschäftigter Cursor über das Excel-Fenster. Dieser **WndProc** -Traps WM_SETCURSOR Windows-Meldungen und ändert den Cursor zurück zu einem normalen Pfeil. 
   
 ```cs
 LRESULT CALLBACK ExcelCursorProc(HWND hwnd, UINT wMsg, WPARAM wParam, LPARAM lParam);
@@ -32,25 +32,25 @@ LRESULT CALLBACK ExcelCursorProc(HWND hwnd, UINT wMsg, WPARAM wParam, LPARAM lPa
 
  _hWndDlg_ (**HWND**)
   
-Enthält das HWND Windows Handle des Dialogfelds.
+Enthält das HWND-Windows-Handle des Dialogfelds.
   
- _Nachricht_ (**UINT**)
+ _Nachricht_ (**Uint**)
   
-Die Nachricht zu antworten.
+Die Nachricht, auf die geantwortet werden soll.
   
- _wParam_ (**WPARAM**)
+ _wParam_ (**WParam**)
   
- _lParam_ (**LPARAM**)
+ _LPARAM_ (**LPARAM**)
   
-Durch Windows übergebene Argumente.
+Von Windows übergebene Argumente.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-LRESULT: 0, wenn die Meldung behandelt wurde, zurückgegeben, andernfalls das Ergebnis standardmäßig **WndProc**.
+LRESULT: 0, wenn die Nachricht behandelt wurde, andernfalls das von der Standard- **WndProc**-Objekt zurückgegebene Ergebnis.
   
 ### <a name="example"></a>Beispiel
 
-Finden Sie unter `\SAMPLES\GENERIC\GENERIC.C` für den Quellcode für diese Funktion. 
+Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

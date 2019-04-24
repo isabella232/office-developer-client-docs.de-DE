@@ -1,5 +1,5 @@
 ---
-title: Ordner-Formularbibliotheken
+title: Ordner Formularbibliotheken
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 62b7480e-b3eb-45fb-b74d-62f1dc918a53
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f95aa26d6104da657c6ae6ab0c449d45c073223a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ec12cf567dbbd8c1710f835a3c19369dd3626fd4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281557"
 ---
-# <a name="folder-form-libraries"></a>Ordner-Formularbibliotheken
+# <a name="folder-form-libraries"></a>Ordner Formularbibliotheken
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In einigen Fällen können Sie ein oder mehrere Formulare mit einem bestimmten Ordner zuordnen möchten. Beispielsweise können Mitarbeiter in Ihrer Organisation alle einen Fortschrittsbericht Ordner in ihren persönlichen Nachrichtenspeicher für das Erstellen und Speichern von Fortschrittsberichte aufweisen. Da der Fortschrittsbericht Benutzerordner Fortschrittsbericht spezifisch sind, kann es nicht zum Speichern des Fortschritt Formulars in der Breite Formularbibliothek System geeignet sein. Eine Kopie des Formulars Bericht Aufgabenstatus kann jedoch in der Tabelle verknüpfte Inhalt des Ordners für jeden Benutzer Fortschrittsbericht aufbewahrt werden. Dies verhindert den Benutzer Formulare für Fortschritt außerhalb des festgelegten Ordners.
+In einigen Fällen möchten Sie möglicherweise ein oder mehrere Formulare einem bestimmten Ordner zuordnen. Mitarbeiter in Ihrer Organisation können beispielsweise über einen Statusberichts Ordner in Ihrem persönlichen Nachrichtenspeicher verfügen, um Fortschrittsberichte zu erstellen und zu speichern. Da der Fortschrittsbericht spezifisch für den fortSchrittsBericht Ordner der einzelnen Benutzer ist, ist es möglicherweise nicht angemessen, das Fortschrittsbericht-Formular in der systemweiten Formularbibliothek zu speichern. Es kann jedoch eine Kopie des Statusberichts Formulars in der Tabelle mit den zugehörigen Inhalten des Statusberichts Ordners der einzelnen Benutzer aufbewahrt werden. Dadurch wird der Benutzer auf die Verwendung von Fortschrittsberichts Formularen außerhalb des festgelegten Ordners beschränkt.
   
-Es ist im Prinzip eine Ordner-Formularbibliothek für jeden Ordner in einem Nachrichtenspeicher, auch wenn keine Formular Server darin installiert werden. Ordner Formularbibliotheken wie andere Formularbibliotheken implementiert werden – diese als verknüpften Inhalt Tabellen in der alternativen Teil des Ordners gespeichert sind. Da Formularbibliotheken Ordner im Ordner enthalten sind, werden sie zusammen mit den übergeordneten Ordner in von Vorgängen kopiert.
+Konzeptionell gibt es eine Ordner Formularbibliothek für jeden Ordner in einem Nachrichtenspeicher, auch wenn keine Formularserver installiert sind. Ordner Formularbibliotheken werden wie andere Formularbibliotheken implementiert – Sie werden als verknüpfte Inhaltstabellen im alternativen Teil des Ordners gespeichert. Da Ordner Formularbibliotheken im Ordner enthalten sind, werden Sie zusammen mit dem übergeordneten Ordner in Kopiervorgängen kopiert.
   
 ## <a name="see-also"></a>Siehe auch
 

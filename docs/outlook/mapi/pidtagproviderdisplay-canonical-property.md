@@ -1,5 +1,5 @@
 ---
-title: PidTagProviderDisplay (kanonische Eigenschaft)
+title: Kanonische Pidtagproviderdisplay (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - COM
 ms.assetid: 62e96db8-4c3e-4f73-b695-99eb4b2396fd
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9a37382cda1a96025f950d941f83fb5b6a0497bb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 58db944720817491420f2bcb1774e51e3842b4a6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286467"
 ---
-# <a name="pidtagproviderdisplay-canonical-property"></a>PidTagProviderDisplay (kanonische Eigenschaft)
+# <a name="pidtagproviderdisplay-canonical-property"></a>Kanonische Pidtagproviderdisplay (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den herstellerspezifischen Anzeigenamen für einen Dienstanbieter.
+Enthält den herstellerdefinierten Anzeigenamen für einen Dienstanbieter.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_PROVIDER_DISPLAY, PR_PROVIDER_DISPLAY_A, PR_PROVIDER_DISPLAY_W  <br/> |
 |Kennung:  <br/> |0x3006  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Allgemeine MAPI  <br/> |
+|Bereich:  <br/> |MAPI allgemein  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften und **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) sind nur für Profil Abschnitten, Dienstanbieter angehören definiert. Sie müssen in MAPISVC.INF vorhanden sein.
+Diese Eigenschaften und **PR_PROVIDER_DLL_NAME** ([pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md)) werden nur in Profil Abschnitten definiert, die Dienstanbietern gehören. Sie müssen in MAPISVC. INF vorhanden sein.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

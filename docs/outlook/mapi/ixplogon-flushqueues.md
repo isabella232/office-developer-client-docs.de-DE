@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c1f630c6-9e95-49c0-9757-4685c98184dc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 961ac2d26cd58e625c35d00bd1216cdee2ce57a0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fb26c7f366ce6a262362001773e825c60d0e4ec3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282831"
 ---
 # <a name="ixplogonflushqueues"></a>IXPLogon::FlushQueues
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fordert, dass der Adressbuchhierarchie sofort alle ausstehende eingehende oder ausgehende Nachrichten übermitteln.
+Fordert, dass der Transportanbieter alle ausstehenden eingehenden oder ausgehenden Nachrichten sofort bereitstellt.
   
 ```cpp
 HRESULT FlushQueues(
@@ -40,7 +40,7 @@ HRESULT FlushQueues(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, die diese Methode anzeigt.
+> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
     
  _cbTargetTransport_
   
@@ -48,39 +48,39 @@ HRESULT FlushQueues(
     
  _lpTargetTransport_
   
-> [in] Reserviert. NULL muss sein.
+> in Reserviert muss NULL sein.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie Nachrichten die Warteschlange das leeren erfolgt. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie die Nachrichten Warteschlangen Spülung durchgeführt wird. Die folgenden Flags können festgelegt werden:
     
 FLUSH_DOWNLOAD 
   
-> Die Warteschlange für eingehende Nachrichten oder Warteschlangen geleert werden sollte.
+> Die Warteschlange für eingehende Nachrichten oder Warteschlangen sollte geleert werden.
     
 FLUSH_FORCE 
   
-> Der Adressbuchhierarchie sollte Verarbeiten dieser Anforderung, wenn möglich, auch wenn dies also Zeit in Anspruch nehmen ist. 
+> Der Transportanbieter sollte diese Anforderung, wenn möglich, verarbeiten, auch wenn dies zeitaufwändig ist. 
     
 FLUSH_NO_UI 
   
-> Der Transportdienst keine Benutzeroberfläche angezeigt werden sollen.
+> Der Transportanbieter sollte keine Benutzeroberfläche anzeigen.
     
 FLUSH_UPLOAD 
   
-> Die Warteschlange für ausgehende Nachrichten oder Warteschlangen geleert werden sollte.
+> Die Warteschlange für ausgehende Nachrichten oder Warteschlangen sollte geleert werden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Warteschlange Ruft die **IXPLogon::FlushQueues** -Methode, um der Adressbuchhierarchie darauf hinzuweisen, dass die MAPI-Warteschlange ist dabei, die Verarbeitung von Nachrichten zu beginnen. Der Transportdienst sollte die [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode zum Festlegen einer entsprechenden Bit für den Zustand in die **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))-Eigenschaft des seine Statuszeile aufrufen. Nach dem Aktualisieren der Statuszeile, sollte der Adressbuchhierarchie für den Anruf **FlushQueues** S_OK zurückgegeben. Die MAPI-Warteschlange startet das Senden von Nachrichten, mit dem Vorgang synchron an die Warteschlange MAPI. 
+Der MAPI-Spooler Ruft die **IXPLogon:: FlushQueues** -Methode auf, um dem Transportanbieter zu raten, dass der MAPI-Spooler mit der Verarbeitung von Nachrichten beginnen soll. Der Transportanbieter sollte die [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode aufrufen, um ein entsprechendes Bit für seinen Status in der **PR_STATUS_CODE** ([pidtagstatuscode (](pidtagstatuscode-canonical-property.md))-Eigenschaft der Status Zeile festzulegen. Nach dem Aktualisieren der Statuszeile sollte der Transportanbieter S_OK für den **FlushQueues** -Aufruf zurückgeben. Der MAPI-Spooler startet dann das Senden von Nachrichten, wobei der Vorgang synchron mit dem MAPI-Spooler ausgeführt wird. 
   
-Unterstützung der Implementierung der [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) -Methode ruft die MAPI-Warteschlange **IXPLogon::FlushQueues** für alle Objekte, Anmeldung für aktiven Transport-Anbieter, die in einer Sitzung Profil ausgeführt werden. Wenn als Ergebnis einer Client-Anwendung **IMAPIStatus::FlushQueues**Aufruf eines Transportdienstes **FlushQueues** -Methode aufgerufen wird, tritt die Verarbeitung von Nachrichten asynchron an den Client.
+Zur Unterstützung der Implementierung der [IMAPIStatus:: FlushQueues](imapistatus-flushqueues.md) -Methode ruft der MAPI-Spooler **IXPLogon:: FlushQueues** für alle Anmeldeobjekte für aktive Transportanbieter auf, die in einer Profil Sitzung laufen. Wenn die **FlushQueues** -Methode eines Transportanbieters als Ergebnis eines Client Anwendungsaufrufs an **IMAPIStatus:: FlushQueues**aufgerufen wird, wird die Nachrichtenverarbeitung asynchron für den Client ausgeführt.
   
 ## <a name="see-also"></a>Siehe auch
 

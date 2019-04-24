@@ -5,21 +5,21 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a0d62047-bf08-9f70-de00-7f81ef1331f1
-description: Sie können ActiveX-Steuerelementen in InfoPath-Formulare hosten, die in der InfoPath-Editor geöffnet werden soll. Diese Steuerelemente können (mit einigen Einschränkungen) bereits vorhandene werden oder speziell für InfoPath geschrieben werden können.
+description: Sie können ActiveX-Steuerelemente in InfoPath-Formularen hosten, die im InfoPath-Editor geöffnet werden sollen. Diese Steuerelemente können bereits vorhanden sein (mit einigen Einschränkungen) oder speziell für InfoPath geschrieben werden.
 ms.openlocfilehash: 70ac6a16b305403ffa99d8fe840a165913642f57
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300189"
 ---
-# <a name="create-an-activex-control-that-can-bind-to-infopath-form-data"></a>Erstellen eines ActiveX-Steuerelements, das an InfoPath-Formulardaten anbinden kann
+# <a name="create-an-activex-control-that-can-bind-to-infopath-form-data"></a>Erstellen eines ActiveX-Steuerelements, das an InfoPath-Formulardaten gebunden werden kann
 
-Sie können ActiveX-Steuerelementen in InfoPath-Formulare hosten, die in der InfoPath-Editor geöffnet werden soll. Diese Steuerelemente können (mit einigen Einschränkungen) bereits vorhandene werden oder speziell für InfoPath geschrieben werden können.
+Sie können ActiveX-Steuerelemente in InfoPath-Formularen hosten, die im InfoPath-Editor geöffnet werden sollen. Diese Steuerelemente können bereits vorhanden sein (mit einigen Einschränkungen) oder speziell für InfoPath geschrieben werden.
   
 ## <a name="write-an-activex-control"></a>Schreiben eines ActiveX-Steuerelements
 
-Wie andere Steuerelemente in InfoPath sollten ActiveX-Steuerelemente vorhandene Component Object Model (COM) Schnittstellen unterstützen:
+Wie bei anderen Steuerelementen in InfoPath sollten ActiveX-Steuerelemente vorhandene COM-Schnittstellen (Component Object Model) unterstützen:
   
 - **IDispatch**
     
@@ -27,19 +27,19 @@ Wie andere Steuerelemente in InfoPath sollten ActiveX-Steuerelemente vorhandene 
     
 - **IPersistStreamInit**
     
-- **IPropertyPage-Schnittstelle**
+- **IPropertyPage**
     
 - **IObjectSafety**
     
 - **IPropertyNotifySink**
     
-- **Die IViewObject**
+- **IViewObject**
     
 - **IOleObject**
     
 - **IOleInPlaceObject**
     
-Damit InfoPath Eigenschaften in das Modell DOM (Document Object) zum Zeitpunkt aktualisiert, die sie im Steuerelement ändern kann, sollte das Steuerelement die folgenden Schnittstellen implementieren:
+Damit InfoPath Eigenschaften im DOM (Document Object Model) aktualisieren kann, wenn Sie sich im Steuerelement ändern, sollte das Steuerelement die folgenden Schnittstellen implementieren:
   
 - **IConnectionPointContainer**
     
@@ -49,7 +49,7 @@ Damit InfoPath Eigenschaften in das Modell DOM (Document Object) zum Zeitpunkt a
     
 - **IEnumConnections**
     
-Es gibt auch zwei InfoPath-spezifische COM-Schnittstellen, die eine engere Integration von Steuerelementen ermöglichen:
+Außerdem gibt es zwei InfoPath-spezifische COM-Schnittstellen, die eine engere Integration von Steuerelementen ermöglichen:
   
 - [IInfoPathControl](https://msdn.microsoft.com/library/bb264625.aspx)
     
@@ -57,7 +57,7 @@ Es gibt auch zwei InfoPath-spezifische COM-Schnittstellen, die eine engere Integ
     
 ## <a name="add-an-activex-control-to-the-infopath-design-environment"></a>Hinzufügen eines ActiveX-Steuerelements zur InfoPath-Entwicklungsumgebung
 
-Der **Steuerelemente hinzufügen oder Entfernen benutzerdefinierter** Befehl auf dem Aufgabenbereich **Steuerelemente** können Sie mithilfe des **Assistenten zum Hinzufügen eines benutzerdefinierten Steuerelements** ein benutzerdefiniertes Steuerelement hinzugefügt. Mithilfe des Assistenten können Sie ein ActiveX-Steuerelement auswählen, die bereits registriert wurde oder zusätzliche benutzerdefinierte Steuerelemente auf Office Marketplace finden. Nachdem Sie ein Steuerelement ausgewählt haben, können Sie die folgenden Elemente angeben. 
+Mit dem Befehl **benutzerdefinierte Steuerelemente hinzufügen oder entfernen** im Aufgabenbereich **Steuerelemente** können Sie den **Assistenten zum Hinzufügen** eines benutzerdefinierten Steuerelements verwenden, um ein benutzerdefiniertes Steuerelement hinzuzufügen. Mithilfe des Assistenten können Sie ein ActiveX-Steuerelement auswählen, das bereits registriert wurde, oder zusätzliche benutzerdefinierte Steuerelemente auf Office Marketplace finden. Nachdem Sie ein Steuerelement ausgewählt haben, können Sie die folgenden Elemente angeben. 
   
 - Angeben einer CAB-Datei zum Installieren des ActiveX-Steuerelements mit der Formularvorlage
     
@@ -68,15 +68,15 @@ Der **Steuerelemente hinzufügen oder Entfernen benutzerdefinierter** Befehl auf
 - Angeben der Datentypbindung
     
 > [!NOTE]
-> Wenn Sie ein ActiveX-Steuerelement entwickeln und es dem Aufgabenbereich **Steuerelemente** in InfoPath hinzugefügt haben, können Sie das ActiveX-Steuerelement neu erstellen, bis InfoPath geschlossen wird. 
+> Wenn Sie ein ActiveX-Steuerelement entwickeln und es dem Aufgabenbereich **Steuerelemente** in InfoPath hinzugefügt haben, können Sie das ActiveX-Steuerelement erst neu erstellen, nachdem InfoPath geschlossen wurde. 
   
 ## <a name="deploy-an-activex-control"></a>Bereitstellen eines ActiveX-Steuerelements
 
-Um ein ActiveX-Steuerelement zu verteilen, können Sie ein Installationsprogramm, das das Steuerelement auf dem Zielcomputer installiert wird und kopiert die Vorlage (ICT Datei InfoPath Control) und der CAB-Datei in den Ordner des Benutzers, Schreiben \Users\\< Username\>\AppData\Local\ Microsoft\InfoPath\Controls. Beachten Sie, dass, wenn mindestens zwei Entwickler sind zur Entwicklung von Formularen, die ActiveX-Steuerelemente verwenden zusammenarbeiten, jedes Entwicklers sollte die Steuerelemente, die das InfoPath-Design-Umgebung hinzugefügt wurden, oder nicht zum Ändern der Eigenschaften der Steuerelemente aus InfoPath.
+Um ein ActiveX-Steuerelement zu verteilen, können Sie ein Installationsprogramm schreiben, das das Steuerelement auf dem Zielcomputer installiert und die InfoPath-Steuerelementvorlage (ICT) und die CAB-Datei\\in\>den Ordner des Benutzers kopiert, \Users <username \AppData\Local\ Microsoft\InfoPath\Controls. Beachten Sie, dass, wenn zwei oder mehr Entwickler an der Entwicklung von Formularen arbeiten, die ActiveX-Steuerelemente verwenden, jeder Entwickler über die Steuerelemente verfügen sollte, die der InfoPath-Entwurfsumgebung hinzugefügt wurden, oder Sie können die Eigenschaften der Steuerelemente nicht ändern. InfoPath.
   
 ## <a name="see-also"></a>Siehe auch
 
-Übung 6: Hinzufügen von ActiveX-Steuerelementen in InfoPath 2003
+Lab 6: Hinzufügen von ActiveX-Steuerelementen in InfoPath 2003
   
-[Erstellen von benutzerdefinierten InfoPath-Steuerelements mit c# und .NET (Blog des InfoPath-Teams)](https://blogs.msdn.microsoft.com/infopath/2005/04/15/creating-an-infopath-custom-control-using-c-and-net/)
+[Erstellen eines benutzerdefinierten InfoPath-Steuerelements mithilfe von C# und .NET (InfoPath-teamBlog)](https://blogs.msdn.microsoft.com/infopath/2005/04/15/creating-an-infopath-custom-control-using-c-and-net/)
 

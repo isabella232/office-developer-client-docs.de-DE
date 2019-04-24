@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 88950eda-85ae-ad7a-46c6-0e1933d35e04
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 152afd68bea44f3485b2cc566f3f0d2768590704
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bf60b12a6e4575d3504a112aa2b54fb8c4ae23c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287035"
 ---
 # <a name="exchangestoreversionnum"></a>EXCHANGE_STORE_VERSION_NUM
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Speichert die Versionsinformationen für den Microsoft Exchange Server, die mit Konten in einem Microsoft Office Outlook-Profil verbunden sind.
+Speichert Versionsinformationen für den Microsoft Exchange-Server, mit dem Konten in einem Microsoft Office Outlook-Profil verbunden sind.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,19 +39,19 @@ typedef struct {
 
  _wMajorVersion_
   
-- Nummer der Hauptversion, die in der Regel erhöht wird, wenn eine Version signifikante neue Features und Änderungen in Funktionen enthält.
+- Die Hauptversionsnummer, die in der Regel erhöht wird, wenn eine Version wichtige neue Features und Änderungen an der Funktionalität enthält.
     
  _wMinorVersion_
   
-- Nummer der Nebenversion, die eine bestimmte Hauptversionsnummer entspricht und, wird im Allgemeinen erhöht, wenn eine Version minor neue Funktionen und wichtige Updates enthält.
+- Nebenversionsnummer, die einer bestimmten Hauptversionsnummer entspricht und in der Regel erhöht wird, wenn eine Version kleinere neue Features oder wichtige Fixes enthält.
     
  _wBuild_
   
-- Haupt-Buildnummer an, die bestimmte Haupt- und Hilfsintervalle Versionsnummern entspricht und, wird im Allgemeinen in eine interne Version, die neue Funktionen und Fixes enthält erhöht. Dieser Wert wird auch erhöht, wenn die Version einer Haupt-interner Code Zweigniederlassung oder Meilenstein, wie ein Release Candidate ist.
+- Große Buildnummer, die bestimmten Haupt-und Nebenversionsnummern entspricht und in der Regel in einer internen Version mit neuen Features oder Fixes erhöht wird. Dieser Wert wird auch erhöht, wenn es sich bei der Version um einen wichtigen internen Code Zweig oder einen Meilenstein handelt, beispielsweise einen Release Candidate.
     
  _wMinorBuild_
   
-- Minor Buildnummer an, die in der Regel in einer internen Veröffentlichung erhöht wird, die enthält neue Features oder korrigiert entspricht einem bestimmten Haupt-Build, der einer Haupt-Code Zweigniederlassung oder Meilenstein bezeichnet.
+- Minor Build number, die in der Regel in einer internen Version erhöht wird, die neue Features oder Fixes enthält, die einem bestimmten Haupt-Build entsprechen, der einen wichtigen Code Zweig oder Meilenstein kennzeichnet.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,5 +59,5 @@ typedef struct {
 
 [Informationen zu MAPI-Ergänzungen](about-mapi-additions.md)
   
-[PidTagProfileServerFullVersion (kanonische Eigenschaft)](pidtagprofileserverfullversion-canonical-property.md)
+[Kanonische Pidtagprofileserverfullversion (-Eigenschaft](pidtagprofileserverfullversion-canonical-property.md)
 

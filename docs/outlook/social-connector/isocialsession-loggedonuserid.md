@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 54377ab4-8c69-4d7a-b9b7-278241823c8d
-description: Gibt eine Zeichenfolge, die die sozialen Netzwerk-Benutzer-ID des Benutzers darstellt, der derzeit angemeldet ist.
-ms.openlocfilehash: dcc81d7acf8a839e7fe3249cc0eb06f96c113b56
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine Zeichenfolge, die die soziale Netzwerk-Benutzer-ID des derzeit angemeldeten Benutzers darstellt.
+ms.openlocfilehash: edb61569829f7690c2284a083d2cbd5cfe2d32a8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285288"
 ---
 # <a name="isocialsessionloggedonuserid"></a>ISocialSession::LoggedOnUserID
 
-Gibt eine Zeichenfolge, die die sozialen Netzwerk-Benutzer-ID des Benutzers darstellt, der derzeit angemeldet ist. 
+Gibt eine Zeichenfolge, die die soziale Netzwerk-Benutzer-ID des derzeit angemeldeten Benutzers darstellt. 
   
 ```cpp
 [propget] HRESULT _stdcall LoggedOnUserID([out, retval] BSTR* result);
@@ -25,7 +25,7 @@ Gibt eine Zeichenfolge, die die sozialen Netzwerk-Benutzer-ID des Benutzers dars
 
 ## <a name="property-value"></a>Eigenschaftswert
 
-Eine Zeichenfolge, die für soziale Netzwerke Benutzer-ID des angemeldeten Benutzers enthält.
+Eine Zeichenfolge, die die soziale Netzwerk-Benutzer-ID des angemeldeten Benutzers enthält.
   
 ## <a name="see-also"></a>Siehe auch
 

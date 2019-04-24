@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: edbf7623-a64e-43b8-8379-e3cde2433d91
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3fc72f008d1c2610de3c74762aabc6231dabbfbd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3cf639286a504b9edb600214d13dbe50710e76a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270301"
 ---
 # <a name="imapiprogressprogress"></a>IMAPIProgress::Progress
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktualisiert die Statusanzeige mit einer Anzeige des Fortschritts, sobald sie zum Abschluss des Vorgangs vorgenommen wird. 
+Aktualisiert die Statusanzeige mit einer Anzeige des Fortschritts beim Abschließen des Vorgangs. 
   
 ```cpp
 HRESULT Progress(
@@ -39,17 +39,17 @@ HRESULT Progress(
 
  _ulValue_
   
-> [in] Eine Zahl, die dem aktuellen Stand des Fortschritts (der Parameter _UlCount_ und _UlTotal_ oder der Parameter _LpulMin_ und _LpulMax_ der [IMAPIProgress::SetLimits](imapiprogress-setlimits.md) -Methode berechnet) zwischen der globalen an Untergrenze und der globalen Obergrenze. 
+> in Eine Zahl, die die aktuelle Fortschritts Ebene angibt (berechnet aus den Parametern _ulCount_ und _ulTotal_ oder aus den Parametern _lpulMin_ und _lpulMax_ der [IMAPIProgress::](imapiprogress-setlimits.md) setlimits-Methode) zwischen dem globalen untere Grenze und die globale obere Grenze. 
     
  _ulCount_
   
-> [in] Eine Zahl, die das Element derzeit verarbeitete relativ zur Summe angibt.
+> in Eine Zahl, die das aktuell verarbeitete Element relativ zum Gesamtwert angibt.
     
  _ulTotal_
   
-> [in] Die Gesamtanzahl von Elementen, die während des Vorgangs verarbeitet werden.
+> in Die Gesamtzahl der während des Vorgangs zu verarbeitenden Elemente.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -57,27 +57,27 @@ S_OK
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Der Parameter _UlValue_ werden gleich dem globalen minimalen Wert nur am Anfang des Vorgangs und dem globalen Höchstwert nur nach Abschluss des Vorgangs. 
+Der Parameter _ulValue_ ist gleich dem globalen Minimalwert nur zu Beginn des Vorgangs und zum globalen Maximalwert nur nach Abschluss des Vorgangs. 
   
-Verwenden Sie die Parameter _UlCount_ und _UlTotal_ , falls verfügbar, um eine optionale Nachricht wie "5 Elemente nicht genügend 10 abgeschlossen." angezeigt. Wenn _UlCount_ und _UlTotal_ auf 0 festgelegt sind, entscheiden Sie, ob die Statusanzeige visuell zu ändern. Einige Dienstanbieter legen Sie diesen Parameter auf 0, um anzugeben, dass sie ein Unterobjekt verarbeitet werden, deren Status relativ zu einem übergeordneten Objekt überwacht wird. In diesem Fall ist es sinnvoll, die Anzeige nur ändern, wenn das übergeordnete Objekt des Fortschritts meldet. Einige Dienstanbieter übergeben 0 für diese Parameter jedes Mal. 
+Verwenden Sie die _ulCount_ -und _ulTotal_ -Parameter, falls verfügbar, um eine optionale Meldung anzuzeigen, wie etwa "5 Elemente, die von 10 abgeschlossen wurden". Wenn _ulCount_ und _ulTotal_ auf 0 festgelegt sind, entscheiden Sie, ob die Statusanzeige visuell geändert werden soll. Einige Dienstanbieter haben diese Parameter auf 0 festgelegt, um anzugeben, dass Sie ein Unterobjekt verarbeiten, dessen Fortschritt relativ zu einem übergeordneten Objekt überwacht wird. In dieser Situation ist es sinnvoll, die Anzeige nur zu ändern, wenn das übergeordnete Objekt den Fortschritt meldet. Einige Dienstanbieter übergeben jedes Mal 0 für diese Parameter. 
   
-Weitere Informationen zur Verwendung **des Fortschritts** und der andere [IMAPIProgress](imapiprogressiunknown.md) -Methoden implementieren finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md).
+Weitere Informationen zum Implementieren des **Fortschritts** und der anderen [IMAPIProgress](imapiprogressiunknown.md) -Methoden finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md).
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Nicht alle drei Parameter zu **IMAPIProgress::Progress** sind erforderlich. Der einzige Parameter, der erforderlich ist ist _UlValue_, eine Zahl, die den Prozentsatz des Fortschritts angibt. Wenn das Flag MAPI_TOP_LEVEL festgelegt ist, können Sie auch die Anzahl der Objekte und ein Objekt insgesamt übergeben. Einige Implementierungen verwenden diese Werte, um einen Ausdruck wie "5 Elemente nicht genügend 10 abgeschlossen" mit der Statusanzeige anzuzeigen. 
+Nicht alle drei Parameter für **IMAPIProgress::P rogress** sind erforderlich. Der einzige erforderliche Parameter ist _ulValue_, eine Zahl, die den Prozentsatz des Fortschritts angibt. Wenn das MAPI_TOP_LEVEL-Flag festgelegt ist, können Sie auch eine Objektanzahl und ein Objekt insgesamt. Einige Implementierungen verwenden diese Werte, um einen Ausdruck wie "5 Elemente, die von 10 abgeschlossen wurden" mit der Statusanzeige anzuzeigen. 
   
-Wenn Sie alle Nachrichten in einem gemeinsamen Ordner kopieren möchten, legen Sie _UlTotal_ auf die Gesamtzahl der kopierten Nachrichten. Wenn Sie einen Ordner kopieren, legen Sie _UlTotal_ auf die Anzahl der Unterordner im Ordner. Wenn der Ordner kopiert werden keine Unterordner und nur Nachrichten enthält, setzen Sie _UlTotal_ auf 1 fest. 
+Wenn Sie alle Nachrichten in einem einzelnen Ordner kopieren, legen Sie _ulTotal_ auf die Gesamtzahl der kopierten Nachrichten fest. Wenn Sie einen Ordner kopieren, legen Sie _ulTotal_ auf die Anzahl der Unterordner im Ordner fest. Wenn der zu kopierende Ordner keine Unterordner und nur Nachrichten enthält, legen Sie _ulTotal_ auf 1 fest. 
   
-Weitere Informationen dazu, wie und wann ein Fortschritt-Objekt aufrufen finden Sie unter [Display eine Statusanzeige](how-to-display-a-progress-indicator.md).
+Weitere Informationen dazu, wie und wann Statusobjekte aufgerufen werden, finden Sie unter [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |CMAPIProgress::Progress  <br/> |MFCMAPI (engl.) verwendet die **IMAPIProgress::Progress** -Methode zum Aktualisieren der Statusleiste MFCMAPI (engl.) mit den aktuellen Prozentsatz des Fortschritts, aus _uValue_ und die aktuellen Werte der maximal- und Minimalwerte berechnet.  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress::P rogress  <br/> |MFCMAPI verwendet die **IMAPIProgress::P rogress** -Methode, um die MfcMapi-Statusleiste mit dem aktuellen prozentualen Fortschritt zu aktualisieren, berechnet von _uValue_ und den aktuellen maximalen und minimalen Werten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

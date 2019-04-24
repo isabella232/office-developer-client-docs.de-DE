@@ -7,26 +7,26 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: b67fcb83-a0e2-4349-88f5-bcc181306eac
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: c5508df8466932b6fb5c7e04164aa00a5ea31a8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c989bc39c22f4e566c18feb4fdeaa8582c5525f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304039"
 ---
 # <a name="handling-events"></a>Behandeln von Ereignissen
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Ab Excel 2010 können XLLs Ereignisse im Lebenszyklus des asynchronen Funktion verwalten soll empfangen. Die Ereignisse sind wie folgt:
+Ab Excel 2010 können XLLs Ereignisse empfangen, die zum Verwalten des asynchronen Funktions Lebenszyklus entwickelt wurden. Die Ereignisse lauten wie folgt:
   
-- **CalculationEnded**: ausgelöst, wenn Excel beendet ist berechnen. Nach diesem Ereignis können Sie Ressourcen, die während der Berechnung freigeben.
+- **CalculationEnded**: wird ausgelöst, wenn Excel nicht mehr berechnet wird. Nach diesem Ereignis können Sie während der Berechnung zugewiesene Ressourcen freigeben.
     
-- **CalculationCanceled**: ausgelöst, wenn der Benutzer die Berechnung unterbrochen wird. Die XLL beendet alle asynchronen Aktivitäten. Das **CalculationEnded** -Ereignis wird unmittelbar nach diesem Ereignis ausgelöst. 
+- **CalculationCanceled**: wird ausgelöst, wenn der Benutzer die Berechnung unterbricht. Die XLL beendet alle asynchronen Aktivitäten. Unmittelbar nach diesem Ereignis wird das **CalculationEnded** -Ereignis ausgelöst. 
     
-Um diese Ereignisse behandeln, verwendet die XLL der C-API-Funktion [XlEventRegister](xleventregister.md). 
+Zur Behandlung dieser Ereignisse verwendet die XLL die C-API-Funktion [xlEventRegister](xleventregister.md). 
   
 > [!NOTE]
-> **CalculationEnded** und **CalculationCanceled** werden während der programmgesteuerten neuberechnung nicht ausgelöst. 
+> **CalculationEnded** und **CalculationCanceled** werden während der programmgesteuerten Neuberechnung nicht ausgelöst. 
   
 

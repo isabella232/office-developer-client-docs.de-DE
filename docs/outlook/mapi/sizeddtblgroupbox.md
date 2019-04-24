@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7ca01bf7-5185-41cc-907e-01f256345997
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 882638d5359154a56fa4438e7a62f213159f916d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0a9bda8831f4a38b62d71a54115c40bb3374d97d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282733"
 ---
 # <a name="sizeddtblgroupbox"></a>SizedDtblGroupBox
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLGROUPBOX](dtblgroupbox.md) -Struktur für die Beschreibung ein Gruppenfeld-Steuerelement und ein Label mit einer angegebenen Länge enthält. 
+Erstellt eine benannte Struktur, die eine [DTBLGROUPBOX](dtblgroupbox.md) -Struktur zur Beschreibung eines Gruppenfeld-Steuerelements und einer Beschriftung einer angegebenen Länge enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**DTBLGROUPBOX** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**DTBLGROUPBOX** <br/> |
    
 ```cpp
 SizedDtblGroupBox (n, u)
@@ -38,15 +38,15 @@ SizedDtblGroupBox (n, u)
 
 _n_
   
-> Länge der im Gruppenfeld Bezeichnung. 
+> Länge der Beschriftung des Gruppenfelds. 
     
 _u_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **SizedDtblGroupBox** können Sie ein Gruppenfeld definieren, wenn die Länge des Bezeichnungsfelds bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
+Mit dem **SizedDtblGroupBox** -Makro können Sie ein Gruppenfeld-Steuerelement definieren, wenn die Länge der Bezeichnung bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
   
 ```cpp
 DTBLGROUPBOX dtblgroupbox;
@@ -54,7 +54,7 @@ TCHAR lpszLabel[n];
 
 ```
 
-Führen Sie einen Zeiger auf die resultierende Struktur aus dem Makro **SizedDtblGroupBox** als Zeiger Struktur **DTBLGROUPBOX** die folgende Umwandlung: 
+Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblGroupBox** -Makro als **DTBLGROUPBOX** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpDtblGroupBox = (LPDTBLGROUPBOX) &SizedDtblGroupBox;

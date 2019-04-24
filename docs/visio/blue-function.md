@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251402
 localization_priority: Normal
 ms.assetid: da9fb933-4e2c-3e2a-1879-6e70db0cd830
-description: Gibt die Blaukomponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Bereich von 0 bis einschließlich 255. Die Funktion gibt 0 für ungültige Eingabe.
-ms.openlocfilehash: 6a86a0ee91054c89f2def95c0e3521508462bdaa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die blaue Komponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Wertebereich von 0 bis 255. Bei einer ungültigen Eingabe wird 0 zurückgegeben.
+ms.openlocfilehash: adefbe0f8c2df0ead0f3e50cd5d4945501972865
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297354"
 ---
 # <a name="blue-function"></a>BLUE Function
 
-Gibt die Blaukomponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Bereich von 0 bis einschließlich 255. Die Funktion gibt 0 für ungültige Eingabe.
+Gibt die blaue Komponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Wertebereich von 0 bis 255. Bei einer ungültigen Eingabe wird 0 zurückgegeben.
   
 ## <a name="syntax"></a>Syntax
 
-BLUE (** *Ausdruck* **) 
+BLAU (* * *Ausdruck* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,19 +30,19 @@ BLUE (** *Ausdruck* **)
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Index einer Farbe aus der Farbtabelle des Dokuments, ein Ausdruck, der zu einer benutzerdefinierten Farbe (wie RGB oder HSL) aufgelöst wird, oder ein Bezug auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Integer
+Ganze Zahl
   
 ## <a name="example-1"></a>Beispiel 1
 
-Blau (Sheet4! FillForegnd)
+BLAU (Blatt. 4! Zelle FillForegnd
   
 Gibt die Blaukomponente der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-BLUE(13)
+BLAU (13)
   
 Gibt 128 zurück, wenn das Dokument die Standardfarbpalette von Visio verwendet, wobei Cyan die Farbe mit Index 13 ist.
   

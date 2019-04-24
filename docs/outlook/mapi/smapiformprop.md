@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80f1c2e0-3567-4b16-86cb-d5e6ac95c2ee
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4e8e2474d2adb882dd0ba43aeb0d8b05044a6ce6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 968f9e1dad3a233b31f0ce29d3ce935b1257948c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309499"
 ---
 # <a name="smapiformprop"></a>SMAPIFormProp
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine benannte Eigenschaft mit einem Formular verwendet. 
+Beschreibt eine benannte Eigenschaft, die mit einem Formular verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
    
 ```cpp
 typedef struct _SMAPIFormProp
@@ -56,19 +56,19 @@ typedef struct _SMAPIFormProp
 
  **ulFlags**
   
-> Kennzeichen, die das Format der Zeichenfolgen in der Struktur **SMAPIFormProp** zu unterscheiden. Das folgende Flag kann festgelegt werden: 
+> Flags, mit denen das Format der Zeichenfolgen in der **SMAPIFormProp** -Struktur unterschieden wird. Das folgende Flag kann festgelegt werden: 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn der Parameter MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn MAPI_UNICODE nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  **nPropType**
   
-> Typ der benannten Eigenschaft, mit dem wichtigste Wort auf 0 (null) festgelegt. 
+> Typ der benannten Eigenschaft, wobei das bedeutendste Wort auf NULL festgelegt ist. 
     
  **nmid**
   
-> Der Name für die benannte Eigenschaft, die enthält eine **GUID** -Struktur, identifiziert der Eigenschaftswert festlegen und einem numerischen oder Zeichenfolge, die ein Schnittstellennamen-ID und das Formular darstellt. 
+> Name für die benannte Eigenschaft, die eine **GUID** -Struktur enthält, die den Eigenschaftensatz identifiziert, und entweder einen numerischen oder einen String-Wert, der eine Schnittstellen-ID und einen Formularnamen darstellt. 
     
  **pszDisplayName**
   
@@ -76,11 +76,11 @@ PARAMETER MAPI_UNICODE
     
  **nSpecialType**
   
-> Wert, der den Typ der Daten enthalten im **u** -Member beschreibt. Mögliche Werte sind wie folgt: 
+> Wert, der den Typ der im **u** -Element enthaltenen Daten beschreibt. Folgende Werte sind möglich: 
     
 FPST_VANILLA 
   
-> Das **u** -Element enthält eine Enumeration nicht. 
+> Der **u** -Member enthält keine Enumeration. 
     
 FPST_ENUM_PROP 
   
@@ -88,7 +88,7 @@ FPST_ENUM_PROP
     
  **u**
   
-> Union, die die Zuordnung zwischen den Namen und die Anzahl der benannten Eigenschaft beschreibt. Einige Eigenschaften verwenden, ist der Member **u** leer. Mit anderen Eigenschaften wird in einer Struktur bestehend aus der folgenden Elemente dargestellt: 
+> Union, die die Zuordnung zwischen dem Namen und der Nummer der benannten Eigenschaft beschreibt. Bei Verwendung einiger Eigenschaften ist das **u** -Element leer. Mit anderen Eigenschaften wird es in einer Struktur dargestellt, die aus den folgenden Elementen besteht: 
     
  **nmidIdx**
   
@@ -96,15 +96,15 @@ FPST_ENUM_PROP
     
  **cfpevAvailable**
   
-> Anzahl der [SMAPIFormPropEnumVal](smapiformpropenumval.md) Strukturen im Array auf der Member **PfpevAvailable** zeigt. 
+> Die Anzahl der [SMAPIFormPropEnumVal](smapiformpropenumval.md) -Strukturen im Array, auf die vom **pfpevAvailable** -Element verwiesen wird. 
     
  **pfpevAvailable**
   
-> Zeiger auf ein Array von **SMAPIFormPropEnumVal** -Strukturen, von denen jeder einen Wert für die benannte Eigenschaft enthält. 
+> Zeiger auf ein Array von **SMAPIFormPropEnumVal** -Strukturen, die jeweils einen Wert für die benannte Eigenschaft enthält. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **SMAPIFormProp** -Datenstruktur enthält Informationen zu einer Formulareigenschaft als Teil der Definitionen der [IMAPIFormInfo](imapiforminfoimapiprop.md) Schnittstelle verwendet; **nSpecialType** enthält einen Tag, der für die Vereinigung **u** gilt, die Teil der **SMAPIFormProp**ist.
+Die **SMAPIFormProp** -Struktur enthält Informationen zu einer Formulareigenschaft, die als Teil der Definitionen der [IMAPIFormInfo](imapiforminfoimapiprop.md) -Schnittstelle verwendet wird. **nSpecialType** enthält ein Tag, das für die **u** -Union gilt, die Teil von **SMAPIFormProp**ist.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,49 +1,49 @@
 ---
-title: Textfunktionen (Access benutzerdefinierte Web app)
+title: Text Funktionen (Access Custom Web App)
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 31bda053-637f-4e1c-b9e0-817e5c3c5170
-ms.openlocfilehash: 225ad09c7920772468954e1d0e1d42d3c73553c1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cc911f9598b9c5586b5be727d28195ab5f2662cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307861"
 ---
-# <a name="text-functions-access-custom-web-app"></a>Textfunktionen (Access benutzerdefinierte Web app)
+# <a name="text-functions-access-custom-web-app"></a>Text Funktionen (Access Custom Web App)
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-- [CharIndex-Funktion (Access benutzerdefinierte Web app)](charindex-function-access-custom-web-app.md)
+- [CharIndex-Funktion (Access Custom Web App)](charindex-function-access-custom-web-app.md)
     
-- [Verketten-Funktion (benutzerdefinierte Access-Web-App)](concat-function-access-custom-web-app.md)
+- [Concat-Funktion (Access Custom Web App)](concat-function-access-custom-web-app.md)
     
-- [Left-Funktion (Access benutzerdefinierte Web app)](left-function-access-custom-web-app.md)
+- [Left-Funktion (Access Custom Web App)](left-function-access-custom-web-app.md)
     
-- [Len-Funktion (Access benutzerdefinierte Web app)](len-function-access-custom-web-app.md)
+- [Len-Funktion (Access Custom Web App)](len-function-access-custom-web-app.md)
     
-- [LOWER-Funktion (Access benutzerdefinierte Web app)](lower-function-access-custom-web-app.md)
+- [Lower-Funktion (Access Custom Web App)](lower-function-access-custom-web-app.md)
     
-- ["LTrim"-Funktion (Access benutzerdefinierte Web app)](ltrim-function-access-custom-web-app.md)
+- [LTrim-Funktion (Access Custom Web App)](ltrim-function-access-custom-web-app.md)
     
-- [Replace-Funktion (Access benutzerdefinierte Web app)](replace-function-access-custom-web-app.md)
+- [Replace-Funktion (Access Custom Web App)](replace-function-access-custom-web-app.md)
     
-- [Replicate-Funktion (Access benutzerdefinierte Web app)](replicate-function-access-custom-web-app.md)
+- [REPLICATE-Funktion (Access Custom Web App)](replicate-function-access-custom-web-app.md)
     
-- [Right-Funktion (Access benutzerdefinierte Web app)](right-function-access-custom-web-app.md)
+- [Right-Funktion (Access Custom Web App)](right-function-access-custom-web-app.md)
     
-- ["RTrim"-Funktion (Access benutzerdefinierte Web app)](rtrim-function-access-custom-web-app.md)
+- [RTrim-Funktion (Access Custom Web App)](rtrim-function-access-custom-web-app.md)
     
-- [Dinge-Funktion (Access benutzerdefinierte Web app)](stuff-function-access-custom-web-app.md)
+- [Stuff-Funktion (Access Custom Web App)](stuff-function-access-custom-web-app.md)
     
-- [Teilzeichenfolgefunktion (Access benutzerdefinierte Web app)](substring-function-access-custom-web-app.md)
+- [SUBSTRING-Funktion (Access Custom Web App)](substring-function-access-custom-web-app.md)
     
-- [UPPER-Funktion (Access benutzerdefinierte Web app)](upper-function-access-custom-web-app.md)
+- [Upper-Funktion (Access Custom Web App)](upper-function-access-custom-web-app.md)
     
 

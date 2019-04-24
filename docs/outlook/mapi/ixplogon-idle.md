@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 8f600db6-f6a6-44f9-aef7-c1309f61eb12
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 12aa8b79e38320d9767a6c333cb0197ea5669862
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ceca6a2dbe5f80f8a3499e509db8d5e6c35d72d0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298481"
 ---
 # <a name="ixplogonidle"></a>IXPLogon::Idle
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass das System im Leerlauf, der Adressbuchhierarchie niedriger Priorität Operationen aktivieren.
+Gibt an, dass das System im Leerlauf ist, sodass der Transportanbieter Vorgänge mit niedriger Priorität ausführen kann.
   
 ```cpp
 HRESULT Idle(
@@ -39,15 +39,15 @@ HRESULT Idle(
   
 > [in] Reserviert. NULL muss sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Warteschlange ruft in regelmäßigen Abständen die **IXPLogon::Idle** -Methode, wenn Zeiten angefordert, wenn das System ist, indem das Flag XP_LOGON_SP im Aufruf der [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) -Methode, die die aktuelle Sitzung geöffnet übergeben im Leerlauf. Bisweilen, wenn das System im Leerlauf befindet, kann der Adressbuchhierarchie Hintergrundvorgängen ausgeführt werden, die nicht richtig sind bei anderen anrufen oder, die in regelmäßigen Abständen auftreten, müssen. 
+Der MAPI-Spooler ruft in regelmäßigen Abständen die **IXPLogon:: idle** -Methode auf, wenn das System inaktiv ist, indem das XP_LOGON_SP-Flag im Aufruf an die [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md) -Methode übergeben wird, die die aktuelle Sitzung geöffnet hat. Wenn sich das System im Leerlauf befindet, kann der Transportanbieter Hintergrundvorgänge ausführen, die während anderer Aufrufe nicht geeignet sind oder die regelmäßig erfolgen müssen. 
   
 ## <a name="see-also"></a>Siehe auch
 

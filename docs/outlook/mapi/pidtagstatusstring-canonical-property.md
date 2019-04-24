@@ -1,5 +1,5 @@
 ---
-title: PidTagStatusString (kanonische Eigenschaft)
+title: Kanonische Pidtagstatusstring (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,52 +11,52 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42cd946c-c55a-4371-99ee-05e2248fdd5f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e8370a613162e3bc8d4395a18e9a7e177255b9b3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9b4510a32fe14e4316a6bcddafcc163ee899436e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278893"
 ---
-# <a name="pidtagstatusstring-canonical-property"></a>PidTagStatusString (kanonische Eigenschaft)
+# <a name="pidtagstatusstring-canonical-property"></a>Kanonische Pidtagstatusstring (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Meldung, die den aktuellen Status einer Sitzung Ressource angibt. 
+Enthält eine Meldung, die den aktuellen Status einer Sitzungs Ressource angibt. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_STATUS_STRING, PR_STATUS_STRING_A, PR_STATUS_STRING_W  <br/> |
 |Kennung:  <br/> |0x3E08  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |MAPI-status  <br/> |
+|Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften geben Dienstanbieter und MAPI-die Möglichkeit, bestimmte Informationen über den Status einer Sitzung Ressource, wie die integrierte Adressbuch oder einem bestimmten Dienstanbieter anzugeben. Diese Eigenschaft erläutert und liefert zusätzliche Informationen über einen Statuscode oder die Eigenschaft **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)). **PR_STATUS_CODE** für alle Status erforderlich ist, sind die **PR_STATUS_STRING** und die zugehörigen Eigenschaften optional. Wenn der Adressbuchhierarchie kein Wert angegeben, stellt die MAPI-Warteschlange einen Standardwert bereit. 
+Diese Eigenschaften bieten Dienstanbietern und MAPI die Möglichkeit, bestimmte Informationen zum Status einer Sitzungs Ressource anzugeben, beispielsweise das integrierte Adressbuch oder einen bestimmten Dienstanbieter. Diese Eigenschaft erläutert und bietet zusätzliche Informationen zu einem Statuscode oder der **PR_STATUS_CODE** ([pidtagstatuscode (](pidtagstatuscode-canonical-property.md))-Eigenschaft. Während **PR_STATUS_CODE** für alle Status-Objekte erforderlich ist, sind **PR_STATUS_STRING** und zugehörige Eigenschaften optional. Wenn der Transportanbieter keinen Wert angibt, stellt der MAPI-Spooler einen Standardwert bereit. 
   
-Die Zeichenfolge wird auf derselben Seite die remote Procedure call, als die MAPI-Warteschlange generiert. Übertragung über gemeinsam genutzten Speicher, statt über eine Prozessgrenze gemarshallt werden.
+Die Zeichenfolge wird auf derselben Seite des Remoteprozeduraufrufs als MAPI-Spooler generiert; Sie durchläuft Shared Memory, statt über eine Prozessgrenze hinweg gemarshallt zu werden.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagStatusCode (kanonische Eigenschaft)](pidtagstatuscode-canonical-property.md)
+[Kanonische Pidtagstatuscode (-Eigenschaft](pidtagstatuscode-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -65,5 +65,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

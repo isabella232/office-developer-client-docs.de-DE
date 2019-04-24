@@ -1,5 +1,5 @@
 ---
-title: Programmablauf (Access benutzerdefinierte Web app)
+title: Programmablauf (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bfc3548e-f4e5-4e07-896e-6884269085e5
 description: ''
-ms.openlocfilehash: 215f5c36d8fbda4c37e1854e0a30b6e531845d15
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eba94f7789ca8cb1cd809fdf3814f26e1d9bed27
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308022"
 ---
-# <a name="program-flow-access-custom-web-app"></a>Programmablauf (Access benutzerdefinierte Web app)
+# <a name="program-flow-access-custom-web-app"></a>Programmablauf (Access Custom Web App)
 
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Makro-Block auskommentieren (Access benutzerdefinierte Web app)](comment-macro-block-access-custom-web-app.md)
+- [Kommentar Makro Block (Access Custom Web App)](comment-macro-block-access-custom-web-app.md)
     
-- [If... Im Anschluss: Makroblock (Access benutzerdefinierte Web app)](ifthenelse-macro-block-access-custom-web-app.md)
+- [If... Dann... Else-Makro Block (Access Custom Web App)](ifthenelse-macro-block-access-custom-web-app.md)
     
-- [Makro-Blocks (Access benutzerdefinierte Web app)](group-macro-block-access-custom-web-app.md)
+- [Gruppen Makro Block (Access Custom Web App)](group-macro-block-access-custom-web-app.md)
     
 

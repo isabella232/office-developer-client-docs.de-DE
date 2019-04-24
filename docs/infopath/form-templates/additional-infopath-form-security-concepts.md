@@ -1,17 +1,17 @@
 ---
-title: Weitere Konzepte zur InfoPath-Formularsicherheit
+title: Zusätzliche Sicherheitskonzepte für InfoPath-Formulare
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 77425a61-bf33-b3d8-442a-caee48e54a48
-description: Das Sicherheitsmodell von Microsoft InfoPath basiert auf dem von Internet Explorer implementierten Sicherheitsmodell. Das Sicherheitsmodell von Internet Explorer schützt Ihren Computer mithilfe von Sicherheitszonen und -stufen vor unsicheren Vorgängen. Zusammen mit dem Sicherheitsmodell von Internet Explorer bietet InfoPath zwei Formularbereitstellungsarten, die die Funktionsweise eines InfoPath-Formulars innerhalb dieses Sicherheitsmodells beeinflussen.
+description: Das Sicherheitsmodell von Microsoft InfoPath basiert auf dem von Internet Explorer implementierten Sicherheitsmodell. Das Sicherheitsmodell von Internet Explorer schützt Ihren Computer mithilfe von Sicherheitszonen und -stufen vor unsicheren Vorgängen. Zusammen mit dem Sicherheitsmodell von Internet Explorer bietet InfoPath zwei Formularbereitstellungsmethoden, die die Funktionsweise eines InfoPath-Formulars innerhalb dieses Sicherheitsmodells bestimmen.
 ms.openlocfilehash: 00b0e306507db19f55059fba91277af1ad1714b9
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303773"
 ---
 # <a name="additional-infopath-form-security-concepts"></a>Weitere Konzepte zur InfoPath-Formularsicherheit
 
@@ -80,7 +80,7 @@ Das Sicherheitsmodell von Internet Explorer, auf dem Microsoft InfoPath basiert,
 |Internet  <br/> |Deaktiviert  <br/> |
 |Lokales Intranet  <br/> |Deaktiviert  <br/> |
 |Eingeschränkte Sites  <br/> |Deaktiviert  <br/> |
-|Vertrauenswürdige Websites  <br/> |Eingabeaufforderung  <br/> |
+|Vertrauenswürdige Sites  <br/> |Eingabeaufforderung  <br/> |
 |Arbeitsplatz  <br/> |Eingabeaufforderung  <br/> |
 |Voll vertrauenswürdiges Formular  <br/> |Aktivieren  <br/> |
    
@@ -98,7 +98,7 @@ Für den Schutz vor der Verwendung von InfoPath-Objektmodellmembern mit böswill
     
 - Alle Themen für die Eigenschaften und Methoden in der Referenz zum InfoPath-Objektmodell enthalten einen Abschnitt zur Sicherheit, in dem die für diesen Objektmodellmember geltende Sicherheitsstufe beschrieben wird.
     
-- Sicherheitsstufe **1** ist zur zukünftigen Verwendung reserviert. 
+- Die Sicherheitsstufe **1** ist für künftige Zwecke vorbehalten. 
     
 ## <a name="summary"></a>Zusammenfassung
 
@@ -107,10 +107,10 @@ Die folgende Tabelle enthält eine Zusammenfassung der Standardberechtigungen f�
 |**Sicherheitszone**|**Bereitstellung**|**Standardberechtigungen**|
 |:-----|:-----|:-----|
 ||**URL-basiert** <br/> |**URN-basiert** <br/> |**ActiveX als unsicher für Skripts markiert** <br/> |**Domänenübergreifender Datenzugriff** <br/> |**Objektmodell-Sicherheitsstufe** <br/> |
-|Eingeschränkte Sites  <br/> |–  <br/> |N/V  <br/> |N/V  <br/> |N/V  <br/> |–  <br/> |
+|Eingeschränkte Sites  <br/> |Nicht zutreffend  <br/> |Nicht zutreffend  <br/> |Nicht zutreffend  <br/> |Nicht zutreffend  <br/> |Nicht zutreffend  <br/> |
 |Internet  <br/> |X  <br/> ||Deaktivieren  <br/> |Deaktivieren  <br/> |2  <br/> |
 |Lokales Intranet  <br/> |X  <br/> ||Deaktivieren  <br/> |Eingabeaufforderung  <br/> |2  <br/> |
-|Vertrauenswürdige Websites  <br/> |X  <br/> ||Eingabeaufforderung  <br/> |Aktivieren  <br/> |2  <br/> |
+|Vertrauenswürdige Sites  <br/> |X  <br/> ||Eingabeaufforderung  <br/> |Aktivieren  <br/> |2  <br/> |
 |Lokaler Computer  <br/> |X  <br/> |X  <br/> |Deaktivieren  <br/> |Eingabeaufforderung  <br/> |2  <br/> |
 |Voll vertrauenswürdiges Formular  <br/> |X (signiert von einem vertrauenswürdigen Herausgeber)  <br/> |X  <br/> |Aktivieren  <br/> |Aktivieren  <br/> |3  <br/> |
 |Voll vertrauenswürdiges Formular  <br/> ||X  <br/> |Aktivieren  <br/> |Aktivieren  <br/> |3  <br/> |

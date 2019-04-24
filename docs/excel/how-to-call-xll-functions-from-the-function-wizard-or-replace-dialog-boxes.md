@@ -1,45 +1,45 @@
 ---
-title: Anruf XLL-Funktionen aus der Funktions-Assistenten oder Dialogfelder ersetzen
+title: Aufrufen von XLL-Funktionen im Funktions-Assistenten oder Ersetzen von Dialog Feldern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- XLL-Funktionen [excel 2007], ersetzen Sie im Dialogfeld Ersetzen Dialogfeld aufrufen Feld [Excel 2007] aufrufende XLL-Funktionen, Funktions-Assistenten [Excel 2007], [Excel 2007] XLL-Funktionen, XLL-Funktionen aufrufen Aufrufen in Funktions-Assistenten
+- XLL-Funktionen [Excel 2007], Aufruf von Dialogfeld ersetzen, Dialogfeld ersetzen [Excel 2007], Aufrufen von XLL-Funktionen, Funktions-Assistent [Excel 2007], Aufrufen von XLL-Funktionen, XLL-Funktionen [Excel 2007], aufrufen vom Funktions-Assistenten
 localization_priority: Normal
 ms.assetid: dc7e840e-6d1d-427b-97f9-7912e60ec954
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 7ebb33a5b98cebedfca7fb5923e62486bfd85696
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11189beed13e2ceb99ef04b7a2f966cb4171915c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304018"
 ---
-# <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>Anruf XLL-Funktionen aus der Funktions-Assistenten oder Dialogfelder ersetzen
+# <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>Aufrufen von XLL-Funktionen im Funktions-Assistenten oder Ersetzen von Dialog Feldern
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel ruft in der Regel XLL-Funktionen während der normalen neuberechnung der Arbeitsmappe oder einen Teil davon ein, wenn die Berechnung von einem Makro gesteuert wird. Denken Sie daran, dass die Funktion möglicherweise nicht in einer Formel der Zelle befinden sich jedoch möglicherweise Teil der Definition eines benannten Bereichs oder einer bedingten Formatierung Ausdruck.
+Microsoft Excel ruft in der Regel XLL-Funktionen während der normalen Neuberechnung der Arbeitsmappe oder einen Teil davon, wenn die Berechnung unter der Kontrolle eines Makros ist. Beachten Sie, dass sich die Funktion möglicherweise nicht in einer Zellformel befindet, aber möglicherweise Teil einer benannten Bereich-Definition oder ein bedingter Formatierungsausdruck ist.
   
-Es gibt zwei Situationen, in dem eine Funktion aus einer Excel-Dialogfeld aufgerufen werden kann. Eine ist im Dialogfeld **Funktionsargumente einfügen** , in dem Benutzer eine Funktion Anruf ein Argument zu einem Zeitpunkt erstellen können. Das andere ist Formeln werden geändert und erneut eingegeben von Excel in das Dialogfeld **Ersetzen** . Das Dialogfeld **Funktionsargumente einfügen** sollten Sie nicht der Funktion normal ausgeführt. Möglicherweise dauert sehr lange ausführen, und Sie möchten nicht die Verwendung des Dialogfelds verlangsamen. 
+Es gibt zwei Situationen, in denen eine Funktion von einem Excel-Dialogfeld aus aufgerufen werden kann. Eins ist das Dialogfeld " **Funktionsargumente einfügen** ", in dem Benutzer einen Funktionsaufruf eines Arguments gleichzeitig erstellen können. Das andere ist, wenn Formeln geändert und von Excel im Dialogfeld **ersetzen** erneut eingegeben werden. Für das Dialogfeld **Funktionsargumente einfügen** möchten Sie möglicherweise nicht, dass ihre Funktion normal ausgeführt wird. Möglicherweise dauert es lange, bis Sie ausgeführt werden, und Sie möchten die Verwendung des Dialogfelds nicht verlangsamen. 
   
-Das Dialogfeld **Funktion einfügen** und das Dialogfeld **Ersetzen** müssen das Windows-Klasse Namen **Bosa_sdm_XL**n, wobei n eine Zahl ist. Windows bietet eine API-Funktion, **GetClassName**, die dieser Name aus einem Windows-Handle eines HWND Variablentyp abruft. Es bietet auch eine andere Funktion, **EnumWindows**, die eine angegebene Callback-Funktion (innerhalb der DLL) aufruft einmal für jedes Fenster der obersten Ebene, das zurzeit geöffnet ist.
+Sowohl das Dialogfeld **Funktion einfügen** als auch das Dialogfeld **ersetzen** weisen den Windows-Klassennamen **bosa_sdm_XL**n auf, wobei n eine Zahl ist. Windows bietet eine API-Funktion ****, GetClassName, die diesen Namen aus einem Windows-Handle, einem Variablen Typ HWND, abruft. Es bietet auch eine weitere Funktion, **EnumWindows**, die eine bereitgestellte Rückruffunktion (innerhalb der dll) einmal für jedes Fenster der obersten Ebene aufruft, das derzeit geöffnet ist.
   
-Die Callback-Funktion muss nur die folgenden Schritte ausführen:
+Die Rückruffunktion muss nur die folgenden Schritte ausführen:
   
-1. Überprüfen Sie, ob das übergeordnete Element dieses Fenster der aktuellen Instanz von Excel ist (falls es mehrere Instanzen ausgeführt sind).
+1. Überprüfen Sie, ob das übergeordnete Element dieses Fensters die aktuelle Instanz von Excel ist (falls mehrere Instanzen vorhanden sind).
     
-2. Rufen Sie den Klassennamen aus dem Handle vom Windows übergeben.
+2. Rufen Sie den Klassennamen aus dem Handle ab, das von Windows übergeben wurde.
     
-3. Überprüfen Sie, ob der Klassenname des Formulars **Bosa_sdm_XL**n ist.
+3. Überprüfen Sie, ob der Klassenname das Format **bosa_sdm_XL**n hat.
     
-4. Wenn Sie zum unterscheiden zwischen den beiden Dialogfeldern müssen, überprüfen Sie, ob der Titel des Dialogfelds identifizierende Text enthält. Der Titel des Fensters wird mithilfe des Windows-API-Aufrufs **GetWindowText**abgerufen.
+4. Wenn Sie zwischen den beiden Dialogfeldern unterscheiden müssen, überprüfen Sie, ob der Titel des Dialogfelds einen identifizierenden Text enthält. Der Fenstertitel wird mithilfe des Windows-API-Aufrufs **GetWindowText**abgerufen.
     
-Der folgende C++-Code zeigt ein-Klasse und Rückruf an Windows übergeben werden, mit dem diese Schritte ausgeführt. Dies wird durch die Funktionen den Anruf Test speziell für entweder der betreffenden Dialogfelder bezeichnet. 
+Im folgenden C++-Code wird gezeigt, wie eine Klasse und ein Rückruf an Windows übergeben werden, die diese Schritte ausführen. Dies wird von den Funktionen aufgerufen, die Test speziell für eines der betreffenden Dialogfelder aufrufen. 
   
 > [!NOTE]
-> Fenstertitel für zukünftige Versionen von Excel können sich ändern, und dieser Code ungültig. Beachten Sie außerdem, dass wenn **Window_title_text** auf **null festgelegt** wird ignoriert Titel in der Callback-Suche, hat. 
+> Fenstertitel zukünftiger Excel-Versionen können sich ändern und diesen Code ungültig machen. Beachten Sie, dass das Festlegen von **window_title_text** auf **null** den Effekt hat, dass der Fenstertitel in der Rückruf Suche ignoriert wird. 
   
 ```cs
 #define CLASS_NAME_BUFFSIZE  50
@@ -98,7 +98,7 @@ BOOL CALLBACK xldlg_enum_proc(HWND hwnd, xldlg_enum_struct *p_enum)
 }
 ```
 
-Das Dialogfeld **Funktion einfügen** besitzt keines Titels, sodass die folgende Funktion eine Suchzeichenfolge Titel des übergibt "", d. h., eine leere Zeichenfolge an den Rückruf, um anzugeben, dass die Bedingung Übereinstimmung besteht darin, dass das Fenster keinen Titel haben sollen. 
+Das Dialogfeld **Funktion einfügen** verfügt nicht über einen Titel, sodass die folgende Funktion eine Such Titelzeichenfolge von "", also eine leere Zeichenfolge, an den Rückruf übergibt, um anzugeben, dass die übereinstimmungsbedingung darin besteht, dass das Fenster keinen Titel haben sollte. 
   
 ```cs
 bool called_from_paste_fn_dlg(void)
@@ -123,5 +123,5 @@ bool called_from_paste_fn_dlg(void)
   
 [Aufrufen von Excel von der DLL oder XLL aus](calling-into-excel-from-the-dll-or-xll.md)
   
-[Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 

@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 6703ba3f-54a5-4059-b10a-1d42a9e81be1
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: de63e728fbabf9c153f7a4faa68cad1d7a9331ec
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 14f9bff8dbf55456c37e70e1ae7a0c236471b6c0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298117"
 ---
 # <a name="mapi-address-book"></a>MAPI-Adressbuch
 
@@ -45,11 +45,11 @@ Messaging-Benutzer und Verteilerlisten weist eine Reihe von f�nf Eigenschaften
   
 |**Basisadresse-Eigenschaft**|**Beschreibung**|
 |:-----|:-----|
-|**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |Adresstyp f�r den Empf�nger. Jeden Adresstyp folgt ein bestimmtes Format und mit einem bestimmten messaging-System verwendet wird.  <br/> |
+|**PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))  <br/> |Adresstyp f�r den Empf�nger. Jeden Adresstyp folgt ein bestimmtes Format und mit einem bestimmten messaging-System verwendet wird.  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Anzeigename f�r den Empf�nger.  <br/> |
 |**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Die Adresse des Empf�ngers.  <br/> |
 |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Eintrags-ID verwendet, um den Empf�nger zuzugreifen.  <br/> |
-|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Bin�re vergleichbaren Schl�ssel verwendet, um den Empf�nger zu identifizieren.  <br/> |
+|**PR_SEARCH_KEY** ([Pidtagsearchkey (](pidtagsearchkey-canonical-property.md))  <br/> |Bin�re vergleichbaren Schl�ssel verwendet, um den Empf�nger zu identifizieren.  <br/> |
    
 MAPI definiert viele Gruppen von Eigenschaften, die Variationen der Basisadresse Eigenschaften sind. Diese anderen Gruppen werden messaging-Benutzer und Verteilerlisten in verschiedenen Situationen beschrieben. Beispielsweise wird eine Gruppe von Eigenschaften den Delegaten Absender eine Nachricht und eine andere Gruppe der Stellvertretung Empf�nger beschrieben.
   

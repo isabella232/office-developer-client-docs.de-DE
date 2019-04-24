@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bd6c0d8e-68cc-4d60-9029-13ed81c816cd
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fb0bfaba1ca0a0d7d34096b3b0b1db9863207097
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 243ab1e926171ee66b95cfd8e969cd77e2b31faf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279601"
 ---
 # <a name="rowentry"></a>ROWENTRY
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Zeile und den Vorgang, der für diese Zeile in einer Tabelle über die Schnittstelle [IExchangeModifyTable](iexchangemodifytableiunknown.md) ausgeführt wird. 
+Enthält eine Zeile und die Operation, die für diese Zeile in einer Tabelle über die [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle ausgeführt wird. 
   
 ```cpp
 typedef struct
@@ -38,31 +38,31 @@ typedef struct
 
 **ulRowFlags**
   
-> Einer der folgenden Vorgänge in die Daten ausgeführt werden: 
+> Einer der folgenden Vorgänge, die für die Daten ausgeführt werden sollen: 
     
-  - ROW_ADD: Fügen Sie die Daten als eine neue Zeile der Tabelle.
+  - ROW_ADD: Fügen Sie die Daten der Tabelle als neue Zeile hinzu.
       
-  - ROW_MODIFY: Ändern Sie diese Zeile in der Tabelle.
+  - ROW_MODIFY: diese Zeile in der Tabelle ändern.
       
-  - ROW_REMOVE: Entfernen Sie diese Zeile aus der Tabelle.
+  - ROW_REMOVE: diese Zeile aus der Tabelle entfernen.
       
-  - ROW_EMPTY: Fügen Sie die Zeilendaten nicht auf die Tabelle an. (Die Zeile ist leer).
+  - ROW_EMPTY: Fügen Sie die Zeilendaten nicht zur Tabelle hinzu. (Die Zeile ist leer.)
     
 **cValues**
   
-> Die Anzahl der Eigenschaftswerte in **RgPropvals**.
+> Die Anzahl der Eigenschaftswerte in **rgPropvals**.
     
 **rgPropVals**
   
-> Ein Array von [SPropValue](spropvalue.md) -Strukturen, die Darstellung der Werte der Spalten in der Tabelle eingefügt werden soll. 
+> Ein Array von [SPropValue](spropvalue.md) -Strukturen, das die Spaltenwerte darstellt, die in die Tabelle eingefügt werden sollen. 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |Verwendet, um eine Liste der ausgewählten Regeln für nachfolgende **ModifyTable** Aktionen zu erstellen.  <br/> |
+|RulesDlg. cpp  <br/> |CRulesDlg:: getSelectedItems  <br/> |Wird zum Erstellen einer Liste ausgewählter Regeln für nachfolg **** Ende modifyable-Aktionen verwendet.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
   

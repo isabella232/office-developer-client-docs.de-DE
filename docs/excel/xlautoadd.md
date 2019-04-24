@@ -7,26 +7,26 @@ ms.topic: reference
 f1_keywords:
 - xlAutoAdd
 keywords:
-- Xlautoadd-Funktion [excel 2007]
+- xlAutoAdd-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: c69299af-a28a-44d9-be10-9c9fb92e21f2
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: ae0b4ae2d5f5fc58c3e18ffa9d79ec4128cb4639
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9a38d5dafd30fda87dda5eadf8fa97ab6e6768a7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303990"
 ---
 # <a name="xlautoadd"></a>xlAutoAdd
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Von Microsoft Excel hinzugefügt, wenn der Benutzer die XLL während einer Sitzung Excel aktiviert, mit dem Add-In-Manager. Diese Funktion wird nicht aufgerufen, wenn Excel gestartet und ein vorinstallierte Add-In lädt.
+Von Microsoft Excel HinzugeFügt, wenn der Benutzer die XLL während einer Excel-Sitzung mithilfe des Add-in-Managers aktiviert. Diese Funktion wird nicht aufgerufen, wenn Excel gestartet wird und ein vorinstalliertes Add-in lädt.
   
-Diese Funktion kann verwendet werden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer teilt mit, dass das Add-In aktiviert wurde, oder zum Lesen oder Schreiben in die Registrierung Lizenzinformationen, beispielsweise überprüfen.
+Diese Funktion kann verwendet werden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer mitteilt, dass das Add-in aktiviert wurde, oder um aus der Registrierung zu lesen oder zu schreiben, oder beispielsweise Lizenzierungsinformationen zu überprüfen.
   
-Excel erfordert eine XLL zu implementieren und exportieren Sie diese Funktion nicht.
+Excel benötigt keine XLL, um diese Funktion zu implementieren und zu exportieren.
   
 ```cs
 int WINAPI xlAutoAdd(void);
@@ -34,19 +34,19 @@ int WINAPI xlAutoAdd(void);
 
 ## <a name="parameters"></a>Parameter
 
-Diese Funktion hat keine Argumente.
+Diese Funktion verwendet keine Parameter.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-1 sollte die Implementierung von dieser Funktion zurückgegeben werden. (**Int**).
+Ihre Implementierung dieser Funktion sollte 1 zurückgeben. (**int**).
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie diese Funktion, wenn vorhanden ist nichts, die Ihre XLL benötigt, wenn es vom Add-In-Manager hinzugefügt wird.
+Verwenden Sie diese Funktion, wenn Ihre XLL etwas tun muss, wenn Sie vom Add-in-Manager hinzugefügt wird.
   
 ## <a name="example"></a>Beispiel
 
-Finden Sie unter `\SAMPLES\EXAMPLE\EXAMPLE.C` und `\SAMPLES\GENERIC\GENERIC.C` beispielsweise Implementierungen von dieser Funktion. Der folgende Code ist aus `\SAMPLES\EXAMPLE\EXAMPLE.C`.
+Siehe `\SAMPLES\EXAMPLE\EXAMPLE.C` auch `\SAMPLES\GENERIC\GENERIC.C` Implementierungen dieser Funktion. Der folgende Code stammt aus `\SAMPLES\EXAMPLE\EXAMPLE.C`.
   
 ```cs
 int WINAPI xlAutoAdd(void)
@@ -67,5 +67,5 @@ int WINAPI xlAutoAdd(void)
 [xlAutoRemove](xlautoremove.md)
 
 
-[Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
+[Add-In-Manager und XLL-Benutzeroberflächenfunktionen](add-in-manager-and-xll-interface-functions.md)
 

@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f08f9212-af10-1287-477d-adde7674f523
-description: Das Feature Formulare zusammenführen von Microsoft InfoPath-Editor ist darauf ausgelegt, um die Daten aus mehreren Formularen in ein einziges Formular zu kombinieren.
+description: Das Feature "Formulare zusammenführen" des Microsoft InfoPath-Editors wurde entwickelt, um die Daten aus mehreren Formularen in einem einzigen Formular zu kombinieren.
 ms.openlocfilehash: 598c44bfe63a31237bf82ceb2212b001fbe7cc1f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303724"
 ---
 # <a name="enable-custom-merging-of-infopath-forms"></a>Aktivieren der benutzerdefinierten Zusammenführung von InfoPath-Formularen
 
-Das Feature **Formulare zusammenführen** von Microsoft InfoPath-Editor ist darauf ausgelegt, um die Daten aus mehreren Formularen in ein einziges Formular zu kombinieren. Dies ist auch bekannt als Datenaggregation. Zusammenführen von Formularen aktiviert ist, können Sie klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Speichern &amp; senden**, klicken Sie auf **Das Zusammenführen von Formularen** unter **Import &amp; Link**, und klicken Sie dann auf die Schaltfläche **Formulare zusammenführen** eines oder mehrere Formulare zum Zusammenführen auswählen die zurzeit geöffnete Formular. Das Formular, das zurzeit geöffnet ist ist das Ziel und die Formulare im Dialogfeld **Formulare zusammenführen** ausgewählt werden als die Quellformulare bezeichnet.
+Das Feature " **Formulare zusammenführen** " des Microsoft InfoPath-Editors wurde entwickelt, um die Daten aus mehreren Formularen in einem einzigen Formular zu kombinieren. Dieser Vorgang wird auch als Datenaggregation bezeichnet. Wenn das Zusammenführen von Formularen aktiviert ist, können Sie auf die Registerkarte **Datei** klicken, auf **senden speichern &amp; **klicken, unter **Link importieren &amp; **auf **Formulare zusammenführen** klicken und dann auf die Schaltfläche **Formulare zusammenführen** klicken, um ein oder mehrere Formulare auszuwählen, die mit dem derzeit geöffnetes Formular. Das Formular, das derzeit geöffnet ist, ist das Zielformular, und die im Dialogfeld **Formulare zusammenführen** ausgewählten Formulare werden als Quellformulare bezeichnet.
   
 Die Aggregation der Daten, die sich aus dem Zusammenführen von Formularen ergibt, kann alle Daten in den Quell- und Zielformularen oder nur einen Teil der Originaldaten einschließen. Nachstehend werden die Standardvorgänge beschrieben.
   
@@ -25,7 +25,7 @@ Die Aggregation der Daten, die sich aus dem Zusammenführen von Formularen ergib
     
 ## <a name="creating-a-custom-transform"></a>Erstellen einer benutzerdefinierten Transformation
 
-Der Standardvorgang beim Zusammenführen von Formularen eignet sich gut für Formulare, die auf das gleiche XML-Schema basieren. In einigen Fällen jedoch sollten Sie Formulare, die auf verschiedenen Schemas basieren zusammengeführt oder durch Überschreiben der standardmäßigen Zusammenführungsvorgang für Formulare, die auf das gleiche Schema basieren. Für diese Szenarien können Sie eine XSL-Transformation (XSLT), erstellen, die Aggregation von Anweisungen für den Zusammenführungsvorgang enthält. Die Transformation Merge Zeitpunkt zum Erstellen eines DOM-Dokuments mit den Informationen, die zusammen mit Anmerkungen angeben, wie diese Informationen in das Zieldokument integrieren importiert werden. Diese Anmerkungen sind XML-Attribute im Namespace `https://schemas.microsoft.com/office/InfoPath/2003/aggregation`.
+Der Standardvorgang beim Zusammenführen von Formularen eignet sich gut für Formulare, die auf dem gleichen XML-Schema basieren. In manchen Fällen möchten Sie jedoch möglicherweise Formulare zusammenführen, die auf anderen Schemas basieren oder den Standardzusammenführungsvorgang für auf dem gleichen Schema basierende Formulare außer Kraft setzen. Für diese Szenarien können Sie eine XSL-Transformation (XSLT) erstellen, die Aggregationsanweisungen für den Zusammenführungsvorgang enthält. Die Transformation wird bei der Zusammenführung angewendet, um ein DOM-Dokument zu erstellen, das die zu importierenden Informationen enthält sowie Anmerkungen, in denen angegeben wird, wie diese Informationen in das Zieldokument integriert werden sollen. Diese Anmerkungen sind XML-Attribute im Namespace `https://schemas.microsoft.com/office/InfoPath/2003/aggregation`.
   
 Die XML-Attribute und die entsprechenden Werte dienen als Aggregationsanweisungen für die Zusammenführung der einzelnen Knoten mit dem XML-Zieldokument. Diese Attribute werden in den folgenden Abschnitten beschrieben.
   
@@ -35,7 +35,7 @@ Das **agg:select**-Attribut enthält einen absoluten XPath-Ausdruck, durch den d
   
 ### <a name="insert"></a>insert
 
-Der Wert "Einfügen" für das **agg: Action** -Attribut weist InfoPath Quellelements als untergeordnetes Element des Zielelements einfügen, die mit dem **agg: Select** -Attribut angegeben ist. Die untergeordneten Elemente des Quellelements sind in der Einfügevorgang enthalten. Das Attribut **SelectChild** können Sie eine bestimmte Position für den Knoteneinfügevorgang auswählen. Das **Reihenfolge** -Attribut wird verwendet, um anzugeben, ob die Quellelemente vor einer vorhandenen eingefügt werden Ziel Elemente oder nachdem. Der Standardwert ist das **Reihenfolge** -Attribut nicht vorhanden ist, ist "nach". 
+Der Wert "Insert" für das **AGG: Action** -Attribut weist InfoPath an, das Source-Element als untergeordnetes Objekt des Zielelements einzufügen, das mithilfe des **AGG: SELECT** -Attributs angegeben wird. Die untergeordneten Elemente des Source-Elements sind im Insert-Vorgang enthalten. Mit dem **selectChild** -Attribut können Sie einen bestimmten Speicherort für den Insert Node-Vorgang auswählen. Das **Order** -Attribut wird verwendet, um anzugeben, ob die Quellelemente vor vorhandenen Zielelementen oder nach eingefügt werden. Der Standardwert, wenn das **Order** -Attribut nicht vorhanden ist, lautet "After". 
   
 ```XML
 <my:field1 agg:select="/my:myFields/my:field1"
@@ -45,7 +45,7 @@ Der Wert "Einfügen" für das **agg: Action** -Attribut weist InfoPath Quellelem
 
 ### <a name="replace"></a>replace
 
-Der Wert "ersetzen" für das **agg: Action** -Attribut weist InfoPath aller Zielelemente durch das Attribut **Wählen** mit Quellelements ersetzen. 
+Der Wert "Replace" für das **AGG: Action** -Attribut weist InfoPath an, alle Zielelemente, auf die durch das **Select** -Attribut verwiesen wird, durch das Source-Element zu ersetzen. 
   
 ```XML
 <my:field1 agg:select="/my:myFields/my:field1"
@@ -54,7 +54,7 @@ Der Wert "ersetzen" für das **agg: Action** -Attribut weist InfoPath aller Ziel
 
 ### <a name="mergeattributes"></a>mergeAttributes
 
-Wenn der Wert des agg:action-Attributs mergeAttributes entspricht, werden die Attribute des Quellelements mit den Attributen aller Zielelemente, auf die mit dem select-Attribut verwiesen wird, zusammengeführt. 
+Wenn der Wert des **AGG: Action** -Attributs "mergeAttributes" ist, werden die Attribute des Source-Elements mit den Attributen der einzelnen Zielelemente zusammengeführt, auf die durch das **Select** -Attribut verwiesen wird. 
   
 ```XML
 <my:PMAwS agg:action="mergeAttributes"
@@ -63,20 +63,18 @@ Wenn der Wert des agg:action-Attributs mergeAttributes entspricht, werden die At
 
 ### <a name="delete"></a>Löschen
 
-Wenn der Wert des agg:action-Attributs delete entspricht, werden alle Zielelemente, auf die mit dem select-Attribut verwiesen wird, aus dem Zieldokument gelöscht.  
+Wenn der Wert des **AGG: Action** -Attributs "Delete" lautet, werden alle Zielelemente, auf die mit dem **Select** -Attribut verwiesen wird, aus dem Zieldokument gelöscht. 
   
 ```XML
 <my:field1 agg:select="/my:myFields/my:field1"
  agg:action="delete"/>
 ```
 
-In Verbindung mit den Attributen angegeben, der `https://schemas.microsoft.com/office/InfoPath/2003/aggregation` -Namespace, verwenden Sie die `https://schemas.microsoft.com/office/infopath/2003/aggregation-target` Namespace zu versehen sind, wird ein XSL-Objekt, das die **IXMLDOMDocument**-Schnittstelle implementiert. Eine der nützlichsten Elemente dieser Schnittstelle ist die Methode **Get-DocumentElement**.
+In Verbindung mit den im `https://schemas.microsoft.com/office/InfoPath/2003/aggregation` Namespace angegebenen Attributen verwenden Sie den `https://schemas.microsoft.com/office/infopath/2003/aggregation-target` Namespace, um ein XSL-Objekt zu kennzeichnen, das die **IXMLDOMDocument**-Schnittstelle implementiert. Eines der nützlichsten Member dieser Schnittstelle ist die **get-documentElement**-Methode.
   
 ### <a name="get-documentelement"></a>get-documentElement
 
-Die **target:get-documentElement**-Funktion ermöglicht den Zugriff auf das DOM (Document Object Model) des Zieldokuments. Damit kann die Funktionsweise des Zusammenführungsvorgangs basierend auf dem aktuellen Inhalt des Zieldokuments geändert werden.   
- 
- 
+Die **target:get-documentElement**-Funktion ermöglicht den Zugriff auf das DOM (Document Object Model) des Zieldokuments. Damit kann die Funktionsweise des Zusammenführungsvorgangs basierend auf dem aktuellen Inhalt des Zieldokuments geändert werden. 
   
 ```XML
 <xsl:when test="function-available('target:get-documentElement')">
@@ -92,13 +90,13 @@ Die **target:get-documentElement**-Funktion ermöglicht den Zugriff auf das DOM 
 
 1. Wählen Sie die Typen der XML-Quelldokumente aus, aus denen Sie Daten zusammenführen möchten. Sammeln Sie repräsentative Beispiele für die einzelnen Quelldokumenttypen.
     
-2. Leiten Sie das XML-Schema für jede Art von XML-Quelldokument für ein vorhandenes InfoPath-Formular. Dieser Schritt erfolgt auf einfache Weise durch Exportieren von XML-Schema mit dem Befehl **Quelldateien exportieren** auf der Registerkarte **Veröffentlichen** die Backstage-Ansicht. Für XML-Dokumente, die nicht in InfoPath erstellt wurden, können einem Tool wie Microsoft Visual Studio zum Erstellen eines Schemas aus dem Beispiel-XML-Dokument oder Sie können das Erstellen eines Beispielformulars aus dem XML-Dokument in InfoPath und exportieren Sie das Schema, das InfoPath von t abgeleitet ist. er Dokumentstruktur. 
+2. Leiten Sie das XML-Schema für jede Art von XML-Quelldokument für ein vorhandenes InfoPath-Formular ab. Dieser Schritt kann problemlos durchgeführt werden, indem das XML-Schema mit dem Befehl **Export Source Files** auf der Registerkarte **veröffentlichen** der backstaging-Datei exportiert wird. Für XML-Dokumente, die nicht in InfoPath erstellt wurden, können Sie ein Tool wie Microsoft Visual Studio verwenden, um ein Schema aus dem XML-Beispieldokument zu erstellen, oder Sie können ein Beispielformular aus dem XML-Dokument in InfoPath erstellen und dann das von InfoPath abgeleitete Schema exportieren. Dokumentstruktur. 
     
-3. Identifizieren Sie die Daten, die Sie über jede Art von XML-Quelldokument zusammenführen möchten. Dieser Schritt ist nahezu vollständig die Anforderungen der Quelle und des Ziels Formulare abhängig. Für manche Formulare können Sie alle Daten aus dem Quellformular kopieren möchten. Für andere Benutzer sollten Sie nur ein oder zwei Elemente aus dem Formular zugrunde liegenden XML-Dokument. Beim Festlegen, welche Daten, die Sie zusammenführen möchten, achten Sie zusätzliche auf sowohl die Quell-als auch Dokumente, um sicherzustellen, dass die Elemente logisch zwischen den beiden Formularen zugeordnet.
+3. Identifizieren Sie die Daten, die Sie aus den einzelnen XML-Quelldokumenttypen zusammenführen möchten. Dieser Schritt hängt fast vollständig von den Anforderungen der Quell- und Zielformulare ab. Bei manchen Formularen möchten Sie möglicherweise alle Daten aus dem Quellformular kopieren. Bei anderen benötigen Sie möglicherweise nur ein oder zwei Elemente aus dem dem Formular zugrunde liegenden XML-Dokument. Achten Sie beim Identifizieren der zusammenzuführenden Daten besonders auf die Quell- und Zieldokumente, um sicherzustellen, dass die Elemente zwischen den beiden Formularen logisch zugeordnet sind.
     
-4. Erstellen Sie eine XSL-Transformation für jede Art von XML-Quelldokument. Wenn das Zusammenführen von Formularen konfigurieren, wird dieser Schritt die meiste Zeit dauern. Der Zweck der XSL-Transformation ist das Quell-XML-Dokument in ein Format umgewandelt, die mit dem Zielformular zusammengeführt werden können. Beim Entwerfen Ihrer Transform entscheiden Sie, ob Sie Zusammenführen von XML-Speicherortpfade oder Zusammenführen von InfoPath Aggregation Anweisungen verwenden möchten.
+4. Erstellen Sie für jeden XML-Quelldokumenttyp eine XSL-Transformation. Dieser Schritt beansprucht beim Konfigurieren der Zusammenführung von Formularen die meiste Zeit. Der Zweck der XSL-Transformation besteht darin, das XML-Quelldokument in ein Format zu transformieren, das mit dem Zielformular zusammengeführt werden kann. Entscheiden Sie beim Entwerfen Ihrer Transformation, ob Sie das Zusammenführen von XML-Pfad Pfaden oder das Zusammenführen von InfoPath-Aggregations Anweisungen verwenden möchten.
     
-    Visual Studio ist ein praktisches Tool zum Erstellen von XSL-Transformationen. Visual Studio bietet Syntax Codefarben und ein Dokument Gliederung an. Es bietet auch automatisch schließenden Tags für XSL-Elemente, die Abnahme redundante Eingaben und schwer zu suchenden Rechtschreibfehler helfen können. Sie können auch die XSL-Transformationen mit einem Text-Editor wie Editor erstellen.
+    Visual Studio ist ein bequemes Tool zum Erstellen von XSL-Transformationen. Visual Studio bietet Syntaxfarben und eine Dokumentgliederung. Außerdem werden automatisch schließende Tags für die XSL-Elemente bereitgestellt, sodass Sie redundante Eingaben und schwer zu findende Rechtschreibfehler vermeiden können. Sie können XSL-Transformationen auch mit einem Text-Editor wie beispielsweise Editor erstellen.
     
     Beginnen Sie mit der Identitätstransformation, bei der es sich einfach um eine XSL-Transformation handelt, mit der die eingegebene XML-Datei ausgegeben wird:
     
@@ -121,7 +119,7 @@ Die **target:get-documentElement**-Funktion ermöglicht den Zugriff auf das DOM 
         </xsl:stylesheet>
     ```
 
-    Fügen Sie überschreibende Bereiche der Dokumentvorlage für die Elemente, denen Sie besondere Behandlung für den hinzufügen möchten. Diese Vorlage beispielsweise ändert ein `<src:Task>` Element in einer `<my:field1>` -Element, und legt der Wert des **agg: Action** -Attribut, um "ersetzen". 
+    Fügen Sie dann überschreibende Vorlagenabschnitte für die Elemente hinzu, für die Sie eine spezielle Behandlung hinzufügen möchten. In dieser Vorlage wird beispielsweise ein `<src:Task>` Element in ein `<my:field1>` -Element geändert, und der Wert des **AGG: Action** -Attributs wird auf "Replace" festgelegt. 
     
     ```XML
         <xsl:template match="src:Task"> 
@@ -131,11 +129,11 @@ Die **target:get-documentElement**-Funktion ermöglicht den Zugriff auf das DOM 
         </xsl:template>
     ```
 
-5. Fügen Sie die XSL-Transformationsdateien und Schemadateien in der Formularvorlage ein. Nach-Schemas für jede Art von Quelldokument abgeleitet und erstellt eine XSL-Transformation zum Konvertieren jedes Dokumenttyps, damit die Daten von InfoPath zusammengeführt werden kann, fügen sie auf dem Formular als Ressourcen hinzu. Klicken Sie auf der Registerkarte **Daten** auf **Ressourcendateien** und klicken Sie dann auf **Hinzufügen** , klicken Sie im Dialogfeld **Ressourcendateien** , wechseln Sie zu Ihrem Schema oder XSL-Transformation-Datei, und klicken Sie dann auf **OK**. Führen Sie diese Option, um für jede Schemadatei und XSL-Transformation-Datei, die Sie erstellt haben.
+5. Fügen Sie die XSL-Transformationsdateien und Schemadateien in der Formularvorlage hinzu. Nachdem Sie Schemas für jede Art von Quelldokument abgeleitet und eine XSL-Transformation erstellt haben, um die einzelnen Dokumenttypen zu konvertieren, damit InfoPath Ihre Daten zusammenführen kann, fügen Sie Sie als Ressourcen zu Ihrem Formular hinzu. Klicken Sie auf der Registerkarte **Daten** auf **Ressourcendateien** , und klicken Sie dann im dialogFeld **Ressourcendateien** auf **Hinzufügen** , navigieren Sie zu Ihrem Schema oder der XSL-Transformationsdatei, und klicken Sie dann auf **OK**. Führen Sie dies für jede erstellte Schemadatei und XSL-Transformationsdatei aus.
     
-    Wenn die Schemas, die Sie hinzufügen das **TargetNamespace** -Attribut verwenden, müssen Sie ein Property-Element für das Formular XSF-Datei hinzufügen, sodass InfoPath den Namespace des Schemas kennt. Zugriff auf diese Datei, klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Veröffentlichen**, und klicken Sie dann auf **Quelldateien exportieren**. Wählen Sie einen Speicherort für die Dateien, und klicken Sie dann auf **OK**. Schließen Sie dann die InfoPath-Formularvorlage, die Sie entwerfen.
+    Wenn die Schemas, die Sie hinzufügen, das **targetNamespace** -Attribut verwenden, müssen Sie der XSF-Datei des Formulars ein Property-Element hinzufügen, damit InfoPath den Namespace des Schemas kennt. Zum Zugreifen auf diese Datei klicken Sie auf die Registerkarte **Datei**, auf **Veröffentlichen** und dann auf **Quelldateien exportieren**. Wählen Sie einen Speicherort für die Dateien aus, und klicken Sie dann auf **OK**. Schließen Sie dann die InfoPath-Formularvorlage, die Sie entwerfen.
     
-    Navigieren Sie zum Speicherort, den Sie für die extrahierten Dateien angegeben, und suchen Sie die Datei, die Erweiterung XSF-Datei hat. Normalerweise wird diese Datei manifest.xsf bezeichnet. Beim Suchen der Datei in Editor öffnen der `<xsf:file>` -Tag, das Ihrem Schema entspricht, und fügen eine "Namespace" Property-Element zum **TargetNamespace** angeben, wie im folgenden Beispiel dargestellt. 
+    Navigieren Sie zu dem Speicherort, den Sie für die extrahierten Dateien angegeben haben, und suchen Sie nach der Datei mit der Dateinamenerweiterung XSF. In der Regel wird diese Datei Manifest. xsf genannt. Öffnen Sie die Datei im Editor, suchen `<xsf:file>` Sie das Tag, das Ihrem Schema entspricht, und fügen Sie ein "Namespace"-Eigenschaftselement hinzu, um den **targetNamespace** anzugeben, wie im folgenden Beispiel gezeigt. 
     
     ```xml
         <xsf:file name="IndvTasks.xsd"> 
@@ -147,18 +145,18 @@ Die **target:get-documentElement**-Funktion ermöglicht den Zugriff auf das DOM 
         </xsf:file>
     ```
 
-6. Vorbereiten des Formulars zur Unterstützung von benutzerdefinierten Zusammenführung der letzte Schritt besteht darin, **ImportParameters** -Element in der XSF-Datei, die dem Formular zugeordneten aktualisieren. 
+6. Der letzte Schritt beim Vorbereiten des Formulars für die Unterstützung der benutzerdefinierten Zusammenführung besteht darin, das **importParameters**-Element in der dem Formular zugeordneten XSF-Datei zu aktualisieren. 
 
-    Suchen Sie zunächst die `<xsf:importParameters>` Tag in der XSF-Datei. Für jedes Schema-XSL-Transformationspaar Sie für Ihr Formular erstellt haben, fügen Sie **-Element ein** **importSource** -Element: `<xsf:importParameters enabled="yes"> <xsf:importSource name="" schema="IndvTasks.xsd" transform="ImportTasks.xsl"></xsf:importSource> </xsf:importParameters>`. 
+    Suchen Sie zuerst das `<xsf:importParameters>` -Tag in der XSF-Datei. Fügen Sie für jedes Schema/XSL-Transformations Paar, das Sie für Ihr Formular erstellt haben, ein **xsf: importSource** -Element zum `<xsf:importParameters enabled="yes"> <xsf:importSource name="" schema="IndvTasks.xsd" transform="ImportTasks.xsl"></xsf:importSource> </xsf:importParameters>` **xsf: importParameters** -Element: hinzu. 
     
-    **Name** -Attributs **der-Element** enthält die Namen der Formularvorlage, die in einem XML-Quelldokument gefunden werden kann. In der Regel können Sie dies leer lassen. Das **Schema** -Attribut enthält den Namen einer Schemadatei, die Sie die Formularvorlage im vorherigen Schritt hinzugefügt haben. Schließlich enthält das **transform** -Attribut den Namen der XSL-Transformation, die Sie zum Konvertieren von Formularen, die entsprechen dem Schema verwenden möchten. 
+    Das **Name** -Attribut des **xsf: importSource** -Elements enthält den Namen der Formularvorlage, der sich in einem XML-Quelldokument befindet. Normalerweise lassen Sie dies leer. Das **schema**-Attribut enthält den Namen einer Schemadatei, die Sie der Formularvorlage im vorherigen Schritt hinzugefügt haben. Das **transform**-Attribut schließlich enthält den Namen der XSL-Transformation, die Sie zum Konvertieren von dem Schema entsprechenden Formularen verwenden möchten. 
     
-    Sie können entweder mit dem [Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) -Ereignis oder auf einem eigenen eine benutzerdefinierte Transformation verwenden. 
+    Sie können eine benutzerdefinierte Transformation entweder mit dem [Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) -Ereignis oder eigenständig verwenden. 
     
 ## <a name="creating-a-custom-merge-in-code"></a>Erstellen einer benutzerdefinierten Zusammenführung in Code
 
-Benutzerdefinierte Zusammenführung mit Code wird mithilfe des ereignishandlers [Zusammenführen](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) mit seinem entsprechenden **UseScriptHandler** -Attribut des **ImportParameters** -Elements in der XSF-Datei, die dem Formular zugeordneten unterstützt. 
+Das benutzerdefinierte Zusammenführen mit Code wird mithilfe des [Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) -Ereignishandlers mit dem entsprechenden **useScriptHandler** -Attribut des **importParameters** -Elements in der XSF-Datei unterstützt, die dem Formular zugeordnet ist. 
 
-In verwaltetem Code können Sie das [Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) -Ereignis aktivieren, indem das Kontrollkästchen **Mithilfe benutzerdefiniertem Code Zusammenführen**, und dann auf die Schaltfläche **Bearbeiten** in der Kategorie **Erweitert** im Dialogfeld **Formularoptionen** aus der Backstage-Ansicht zur Verfügung. 
+In verwaltetem Code können Sie das zusammenFührungs Ereignis aktivieren, indem Sie das Kontrollkästchen **mit benutzerdefiniertem Code zusammenführen**überprüfen und dann auf die Schaltfläche **Bearbeiten** in der Kategorie **erweitert** des Dialogfelds **Formularoptionen** , das von backstaging aus verfügbar ist, klicken. [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) 
   
 

@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 40d7e38e-b3b0-8616-ed27-1f963a841e03
 description: Definiert die Position eines Tabstopps. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Tabstoppposition unverändert.
-ms.openlocfilehash: 06f3a9fd5cfdf78f5383e70f32f8514b0adab114
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ef17b38d708103ca004594ba04ff5b8d1ada13bf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307749"
 ---
 # <a name="position-cell-tabs-section"></a>Zelle "Position" (Abschnitt "Tabs")
 
 Definiert die Position eines Tabstopps. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Tabstoppposition unverändert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Position aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Position aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Registerkarten.  *Ij* wobei *i* und *j* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Registerkarten.  *IJ* , wobei *i* und *j* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Position aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Position nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionTab** <br/> |
-| Zeilenindex:  <br/> |**VisRowTab** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> | (*j* * 3) + **VisTabPos** <br/> |
+| Zeilenindex:  <br/> |**visRowTab** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zellenindex:  <br/> | (*j* * 3) + **visTabPos** <br/> |
    
 

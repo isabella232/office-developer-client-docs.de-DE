@@ -11,51 +11,51 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3c9e4e05-cd3a-4b56-9dff-879e33ff6fd5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a397ac9110429911755552298ffe244343d54a8a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6b0a8923ee5efe22584170ce9853698885527ee8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282471"
 ---
 # <a name="imapiprop--iunknown"></a>IMAPIProp : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht es Clients, Service Provider und MAPI-Eigenschaften entwickelt. Alle Objekte, Eigenschaften unterstützen, implementieren Sie diese Schnittstelle.
+Ermöglicht es Clients, Dienstanbietern und MAPI, mit Eigenschaften zu arbeiten. Alle Objekte, die Eigenschaften unterstützen, implementieren diese Schnittstelle.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Kein Objekt macht diese Schnittstelle direkt verfügbar.  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Diese Schnittstelle wird von keinem Objekt direkt verfügbar gemacht.  <br/> |
 |Implementiert von:  <br/> |Dienstanbieter und MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen, Service Provider und MAPI  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen, Dienstanbieter und MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIProp  <br/> |
 |Zeigertyp:  <br/> |LPMAPIPROP  <br/> |
-|Transaktionsmodell:  <br/> |Abstrakte Basisklasse, die nie implementiert  <br/> |
+|Transaktionsmodell:  <br/> |Abstrakte Klasse, nie implementiert  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[GetLastError](imapiprop-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler enthält.  <br/> |
-|[SaveChanges](imapiprop-savechanges.md) <br/> |Macht dauerhaft entfernt alle Änderungen, die seit dem letzten Speichervorgang auf ein Objekt vorgenommen wurden.  <br/> |
-|[GetProps](imapiprop-getprops.md) <br/> |Ruft den Wert der Eigenschaft um, der eine oder mehrere Eigenschaften eines Objekts an.  <br/> |
-|[GetPropList](imapiprop-getproplist.md) <br/> |Eigenschaftentags für alle Eigenschaften zurückgegeben.  <br/> |
-|[OpenProperty](imapiprop-openproperty.md) <br/> |Gibt einen Zeiger auf eine Schnittstelle, die Zugriff auf eine Eigenschaft verwendet werden können.  <br/> |
+|[Getlasterroraufzurufen](imapiprop-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält.  <br/> |
+|[SaveChanges](imapiprop-savechanges.md) <br/> |Macht alle Änderungen, die an einem Objekt seit dem letzten Speichervorgang vorgenommen wurden, dauerhaft.  <br/> |
+|[GetProps](imapiprop-getprops.md) <br/> |Ruft den Eigenschaftswert einer oder mehrerer Eigenschaften eines Objekts ab.  <br/> |
+|[GetProplist](imapiprop-getproplist.md) <br/> |Gibt Eigenschaftentags für alle Eigenschaften zurück.  <br/> |
+|[OpenProperty](imapiprop-openproperty.md) <br/> |Gibt einen Zeiger auf eine Schnittstelle zurück, die für den Zugriff auf eine Eigenschaft verwendet werden kann.  <br/> |
 |[SetProps](imapiprop-setprops.md) <br/> |Aktualisiert eine oder mehrere Eigenschaften.  <br/> |
-|["DeleteProps"](imapiprop-deleteprops.md) <br/> |Löscht eine oder mehrere Eigenschaften aus einem Objekt.  <br/> |
-|[CopyTo](imapiprop-copyto.md) <br/> |Kopiert oder verschiebt alle Eigenschaften, mit Ausnahme von speziell Ausgeschlossene Eigenschaften.  <br/> |
-|[CopyProps](imapiprop-copyprops.md) <br/> |Kopiert oder verschiebt ausgewählten Eigenschaften.  <br/> |
-|[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |Enthält die Eigenschaftennamen, die einen oder mehrere Eigenschaftenbezeichner entsprechen.  <br/> |
-|[GetIDsFromNames](imapiprop-getidsfromnames.md) <br/> |Enthält die Eigenschaftenbezeichner, die mindestens einen Eigenschaftennamen entsprechen.  <br/> |
+|[DeleteProps](imapiprop-deleteprops.md) <br/> |Löscht eine oder mehrere Eigenschaften aus einem Objekt.  <br/> |
+|[CopyTo](imapiprop-copyto.md) <br/> |Kopiert oder verschiebt alle Eigenschaften, mit Ausnahme der explizit ausgeschlossenen Eigenschaften.  <br/> |
+|[CopyProps](imapiprop-copyprops.md) <br/> |Kopiert oder verschiebt ausgewählte Eigenschaften.  <br/> |
+|[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |Stellt die Eigenschaftennamen bereit, die einem oder mehreren Eigenschafts Bezeichnern entsprechen.  <br/> |
+|[GetIDsFromNames](imapiprop-getidsfromnames.md) <br/> |Stellt die Eigenschaftenbezeichner bereit, die einem oder mehreren Eigenschaftsnamen entsprechen.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
- **IMAPIProp** ist die Basis-Schnittstelle für die folgenden Schnittstellen: 
+ **IMAPIProp** ist die Basisschnittstelle für die folgenden Schnittstellen: 
   
 - [IAttach](iattachimapiprop.md)
     

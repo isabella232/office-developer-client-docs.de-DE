@@ -7,18 +7,18 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6cfd3513-800f-4602-b3e6-6430920718d6
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 782843f11643e203488b313181d224443a1d36c5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3e4df0c5772f28ab4ab8d84eaddfe4409a88061b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301631"
 ---
 # <a name="opensession"></a>OpenSession
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Erstellt eine Sitzung in der benutzerdefinierten Funktionen ausgeführt werden können.
+Erstellt eine Sitzung, in der benutzerdefinierte Funktionen ausgeführt werden können.
   
 ```cpp
 int OpenSession(WCHAR *Params)
@@ -26,13 +26,13 @@ int OpenSession(WCHAR *Params)
 
 ## <a name="parameters"></a>Parameter
 
-_Params_
+_Parameter_
   
-> Ein Zeiger auf die durch Semikolons getrennte Unicode-Zeichenfolge der Parameter für die Sitzung. Excel wird dieses Argument nicht verwendet.
+> Ein Zeiger auf durch Semikolons getrennte UNICODE-Zeichenfolge von Parametern für die Sitzung. Excel verwendet dieses Argument nicht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Eine ID für eine Sitzung in anderen Aufrufe an den Konnektor Cluster verwenden, wenn die Sitzung erfolgreich erstellt wurde; andernfalls **XlHpcRetCallFailed**.
+Eine Sitzungs-ID, die in anderen Aufrufen des Cluster-Konnektors verwendet werden soll, wenn die Sitzung erfolgreich erstellt wurde; andernfalls **xlHpcRetCallFailed**.
   
 ## <a name="see-also"></a>Siehe auch
 

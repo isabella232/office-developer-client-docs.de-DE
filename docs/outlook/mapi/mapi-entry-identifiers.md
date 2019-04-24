@@ -1,5 +1,5 @@
 ---
-title: MAPI-Eintragsbezeichner
+title: MAPI-Eintrags-IDs
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: 84c37696-da7a-42e0-b8c0-29658a6c9a48
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d8c9fb0b24d8954fae75274bfbedca9d7c62de93
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4c414b9f8a1d70fd5eea94da326674a749ccefe2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297879"
 ---
-# <a name="mapi-entry-identifiers"></a>MAPI-Eintragsbezeichner
+# <a name="mapi-entry-identifiers"></a>MAPI-Eintrags-IDs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eintragsbezeichner sind Binärdaten in ein [ENTRYID](entryid.md) -Struktur gespeichert, mit denen eindeutig zu identifizieren, und öffnen Sie ein MAPI-Objekt. Die meisten MAPI-Objekte weisen Eintragsbezeichner. Eintragsbezeichner für Objekte sind analog zu Dateinamen für Dateien. Allerdings sind nicht Übertragungseinehit und kann nicht verwendet werden, auf anderen Systemen als das System, dem sie auf stammen. 
+Eintrags-IDs sind in einer Eintrags- [](entryid.md) ID gespeicherte Binärdaten, die zum eindeutigen identifizieren und Öffnen eines MAPI-Objekts verwendet werden. Die meisten MAPI-Objekte besitzen Eingabe-IDs. Eintragsbezeichner für Objekte sind analog zu Dateinamen für Dateien. Sie sind jedoch nicht übertragbar und können nicht auf anderen Systemen als dem System verwendet werden, auf dem Sie Ihren Ursprung hatten. 
   
-## <a name="entry-identifiers"></a>Eintragsbezeichner
+## <a name="entry-identifiers"></a>EintragsBezeichner
 
-Nachricht Anbieter Rolle Eintragsbezeichner Nachrichtenspeicher, Ordner und Nachrichten. von adressbuchanbietern implementierte weisen Sie diese Adresse Adressbuch Container, Verteilerlisten und messaging-Benutzer. Eintragsbezeichner dienen auch zum Öffnen eines Objekts, um eine Zeile in einer Tabelle, wie ein Statusobjekt in der Tabelle "Status" dargestellt. Speichern von Objekten ihre Eintragsbezeichner in ihre **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft. 
+Nachrichtenspeicher Anbieter weisen Nachrichten speichern, Ordnern und Nachrichten Eingabe Bezeichner zu. Adressbuchanbieter weisen Adressbuchcontainer, Verteilerlisten und Messagingbenutzer zu. Eintrags-IDs werden auch verwendet, um ein Objekt zu öffnen, das durch eine Zeile in einer Tabelle dargestellt wird, beispielsweise ein Status-Objekt in der Statustabelle. Objekte speichern Ihre Eintrags-IDs in Ihrer **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft. 
   
-Dienstanbieter erstellen, zuweisen und untersuchen-Eintragsbezeichner-Verwendung-Clientanwendungen deren nur als Tools für Objekte geöffnet. Clients Eintragsbezeichner undurchsichtig Datenelemente binary und nichts mit der zugrunde liegenden messaging-System zu tun haben. 
+Während Dienstanbieter Eintrags-IDs erstellen, zuweisen und untersuchen, verwenden Clientanwendungen diese nur als Tools zum Öffnen von Objekten. Für Clients sind Eingabe-IDs undurchsichtige Teile von Binärdaten und haben nichts mit dem zugrunde liegenden Messagingsystem zu tun. 
   
-Clients rufen Sie ein Objekt [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode, um dessen **PR_ENTRYID** -Eigenschaft abzurufen oder eine Tabelle [IMAPITable::QueryColumns](imapitable-querycolumns.md) -Methode, um die Spalte abzurufen, die die **PR_ENTRYID** -Eigenschaft enthält. 
+Clients rufen die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode eines Objekts auf, um die **PR_ENTRYID** -Eigenschaft oder die [IMAPITable:: QueryColumns](imapitable-querycolumns.md) -Methode einer Tabelle abzurufen, um die Spalte abzurufen, die die **PR_ENTRYID** -Eigenschaft enthält. 
   
-Eintragsbezeichner werden als Parameter an die Methoden **OpenEntry** und **CompareEntryIDs** übergeben. Mehrere MAPI-Objekte implementieren die **OpenEntry** und **CompareEntryIDs** -Methoden. Clients können mit **OpenEntry**ein Objekt zu öffnen. **CompareEntryIDs**können Clients im Vergleich zu zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. Da Eintragsbezeichner nicht notwendigerweise binary sind vergleichbar, Clients müssen sie vergleichen von der **CompareEntryIDs** -Methode. 
+Eintrags-IDs werden als Parameter an **** die OpenEntry-und **CompareEntryIDs** -Methoden übergeben. Mehrere MAPI-Objekte implementieren **** die OpenEntry-und die **CompareEntryIDs** -Methode. Mit **OpenEntry**können Clients ein Objekt öffnen. Mit **CompareEntryIDs**können Clients zwei Eintragsbezeichner vergleichen, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. Da Eintrags-IDs nicht unbedingt Binär vergleichbar sind, müssen Clients Sie mit der **CompareEntryIDs** -Methode vergleichen. 
   
-Clients sollte immer natürlich ausgerichtet-Eintragsbezeichner in ihre Anrufe für Dienstanbieter, übergeben werden, da zwar Dienstanbieter Eintragsbezeichner behandelt werden sollen, die willkürlich ausgerichtet werden, dies nicht immer der Fall ist. Eine Adresse natürlich ausgerichteten Speicher ermöglicht den Computer, der einen beliebigen Datentyp zugreifen, die an dieser Adresse ohne Ausrichtungsfehler durch eine generieren unterstützt. Faktor natürlichen Ausrichtung ist in der Regel den gleichen Ausrichtung Faktor durch das System Arbeitsspeicher Zuweisung verwendet und ist in der Regel 8 Bytes.
+Clients sollten in ihren Aufrufen an Dienstanbieter immer natürlich ausgerichtete Eintrags-IDs weiterleiten, da Dienstanbieter, die Eingabe-IDs, die willkürlich ausgerichtet werden, behandeln sollten, dies ist jedoch nicht immer der Fall. Eine natürlich ausgerichtete Speicheradresse ermöglicht es dem Computer, auf einen beliebigen Datentyp zuzugreifen, der an dieser Adresse unterstützt wird, ohne einen Ausrichtungsfehler zu generieren. Der natürliche Ausrichtungs Faktor ist in der Regel derselbe Ausrichtungs Faktor, der von der systemspeicherzuweisung verwendet wird und in der Regel 8 Bytes beträgt.
   
-Eintragsbezeichner gibt zwei Arten: kurzfristigen und langfristigen. Kurzfristige-Eintragsbezeichner sind schneller zu erstellen, aber ihre Eindeutigkeit wird sichergestellt, dass nur während der Lebensdauer der aktuellen Sitzung auf der Arbeitsstation. Langfristige-Eintragsbezeichner verfügen über einen längeren Lebensdauer. Kurzfristige-Eintragsbezeichner werden in erster Linie für Zeilen in Tabellen und Einträge in Dialogfeldern verwendet, während die langfristige-Eintragsbezeichner dienen für viele Objekte wie Dateien, Ordner und Verteilerlisten.
+Eintrags-IDs gibt es in zwei Arten: kurz-und langfristig. Kurzfristige Eintragsbezeichner sind schneller zu konstruieren, ihre Eindeutigkeit wird jedoch nur über die Lebensdauer der aktuellen Sitzung auf der aktuellen Arbeitsstation gewährleistet. Langfristige Eintrags-IDs haben eine längere Lebensdauer. Kurzfristige Eintragsbezeichner werden hauptsächlich für Zeilen in Tabellen und Einträgen in Dialogfeldern verwendet, während langfristige Eintragsbezeichner für viele Objekte wie Nachrichten, Ordner und Verteilerlisten verwendet werden.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: cb4a38ff-2fdd-40ac-a613-12c3f11a1df9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b161c8c0da78b5ca872b87cad9a297169426d4cd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 48ddb5a7c4e013c03138b08d9dadcdc0991faeec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279608"
 ---
 # <a name="iablogoncompareentryids"></a>IABLogon::CompareEntryIDs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen.
+Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen.
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _lpEntryID1_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird. 
     
  _lpEntryID1_
   
-> [in] Ein Zeiger auf die erste Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
     
  _cbEntryID2_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _lpEntryID2_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird. 
     
  _lpEntryID2_
   
-> [in] Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
     
  _ulFlags_
   
@@ -62,25 +62,25 @@ HRESULT CompareEntryIDs(
     
  _lpulRet_
   
-> [out] Ein Zeiger auf das Ergebnis des Vergleichs. True, um anzugeben, dass die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen. andernfalls, FALSE.
+> Out Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, um anzugeben, dass die beiden Eintragsbezeichner auf dasselbe Objekt verweisen; andernfalls FALSE.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Eintragsbezeichner wurden erfolgreich verglichen.
+> Die Eintrags-IDs wurden erfolgreich verglichen.
     
 MAPI_E_INVALID_ENTRYID 
   
-> Eine oder beide der Eintragsbezeichner gehören nicht zu den Adressbuchanbieter.
+> Eine oder beide der Eintrags-IDs gehören nicht zum Adressbuchanbieter.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Von adressbuchanbietern implementierte implementieren Sie die **CompareEntryIDs** -Methode zum Vergleichen von zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. 
+Adressbuchanbieter implementieren die **CompareEntryIDs** -Methode, um zwei Eintragsbezeichner zu vergleichen, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. 
   
- **CompareEntryIDs** eignet sich, da ein Objekt mehr als eine gültige Eingabe Bezeichner haben kann. Diese Situation kann beispielsweise auftreten, wenn Sie eine kurzfristigen Eintrags-ID mit langfristige Eintrags-ID vergleichen. 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. eine solche Situation kann beispielsweise auftreten, wenn Sie eine kurzfristige Eintrags-ID mit einer langfristigen Eintrags-ID vergleichen. 
   
-Weitere Informationen zum Erstellen von Eintragsbezeichner finden Sie unter [MAPI-Eintragsbezeichner](mapi-entry-identifiers.md).
+Weitere Informationen zum Erstellen von Eintrags Bezeichnern finden Sie unter [MAPI Entry Identifiers](mapi-entry-identifiers.md).
   
 ## <a name="see-also"></a>Siehe auch
 

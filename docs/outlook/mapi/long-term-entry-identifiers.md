@@ -1,5 +1,5 @@
 ---
-title: Langfristige Eintragsbezeichner
+title: Langfristige EintragsBezeichner
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,38 +8,38 @@ api_type:
 - COM
 ms.assetid: a514275e-40c2-48db-8072-1dfc392a7ac6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e624ab4f39ef5a5385119779b0780ee7173a3ee7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b65656992681618aa8a1c53217bdd7101bc2502b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307784"
 ---
-# <a name="long-term-entry-identifiers"></a>Langfristige Eintragsbezeichner
+# <a name="long-term-entry-identifiers"></a>Langfristige EintragsBezeichner
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Langfristige Eintrags-ID wird von einem Dienstanbieter zu einem Objekt zugewiesen, wenn ein Objekt einen Bezeichner mit längerer Lebensdauer erfordert. Langfristige-Eintragsbezeichner sind immer für Wochen oder Monate gültig und können auf anderen Arbeitsstationen, je nach den Anbieter gültig sein. Die langfristige Bezeichner von adressbuchanbietern implementierte für benutzerdefinierte Empfänger erstellt sind universell gültig. 
+Ein langfristiger Eintragsbezeichner wird einem Objekt von einem Dienstanbieter zugewiesen, wenn für ein Objekt ein Bezeichner mit einer längeren Lebensdauer erforderlich ist. Langfristige Eintrags-IDs sind immer für Wochen oder Monate gültig und können auf anderen Arbeitsstationen abhängig vom Anbieter gültig sein. Die langfristigen Bezeichner, die von Adressbuch Anbietern für benutzerdefinierte Empfänger erstellt wurden, sind universell gültig. 
   
-Langfristige-Eintragsbezeichner werden Nachrichtenspeicher, Ordner, Nachrichten, Address Book Containern, messaging-Benutzer und Verteilung Listen zugewiesen. Wenn Clientanwendungen die [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode dieser Objekte aufrufen, ist es immer eine langfristige Eintrags-ID, die zurückgegeben wird. 
+Langfristige Eintrags-IDs werden Nachrichten speichern, Ordnern, Nachrichten, Adressbuch Containern, Messaging Benutzern und Verteilerlisten zugewiesen. Wenn Clientanwendungen die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode dieser Objekte aufrufen, wird immer eine langfristige Eintrags-ID zurückgegeben. 
   
-Langfristige-Eintragsbezeichner müssen für alle Nachrichtenspeicher in das aktive Profil eindeutig sein; aus diesem Grund, wenn eine Nachricht oder einen Ordner aus einem Informationsspeicher in eine andere kopiert werden, muss es eine neuen Eintrags-ID zugewiesen werden. Wenn eine Nachricht Store-Objekt verschoben wird, bestimmt der Nachricht Speicher-Anbieter, der die Verschiebung implementiert, ob die ursprüngliche Eintrags-ID gültig ist. Einige Dienstanbieter weisen Sie neue-Eintragsbezeichner verschobene Objekte; andere nicht. Wenn eine Änderung vorhanden ist, wird die neuen Eintrags-ID in die Informationen an die Clients übergeben wird, wenn sie, der die Verschiebung benachrichtigt werden enthalten sein. 
+Langfristige Eintrags-IDs müssen für alle Nachrichtenspeicher im aktiven Profil eindeutig sein. Wenn eine Nachricht oder ein Ordner aus einem Nachrichtenspeicher in einen anderen kopiert wird, muss daher eine neue Eintrags-ID zugewiesen werden. Wenn ein Nachrichtenspeicherobjekt verschoben wird, bestimmt der Nachrichtenspeicher Anbieter, der die Verschiebung implementiert, ob der ursprüngliche Eintragsbezeichner gültig bleibt. Einige Dienstanbieter weisen verschobene Objekte neue Eintrags-IDs zu; andere nicht. Wenn eine Änderung vorliegt, wird die neue Eintrags-ID in die Informationen eingeschlossen, die an Clients übergeben werden, wenn Sie über die Verschiebung benachrichtigt werden. 
   
-Nachricht Anbieter implementieren in der Regel das folgende Verhalten beim Verschieben von Ordnern:
+In der Regel implementieren Nachrichtenspeicher Anbieter beim Verschieben von Ordnern das folgende Verhalten:
   
-- Wenn ein Ordner an einen anderen Informationsspeicher eines anderen Typs aus einem Informationsspeicher verschoben wird, wird die Eintrags-ID unbedingt ändern.
+- Wenn ein Ordner aus einem Nachrichtenspeicher in einen anderen Speicher eines anderen Typs verschoben wird, wird die Eintrags-ID garantiert geändert.
     
-- Wenn Sie ein Ordner aus einem Informationsspeicher in einen anderen Speicher des gleichen Typs verschoben wird, ändert die Eintrags-ID fast immer.
+- Wenn ein Ordner aus einem Nachrichtenspeicher in einen anderen Speicher desselben Typs verschoben wird, ändert sich die Eintrags-ID fast immer.
     
-- Wenn Sie ein Ordner an einen anderen Speicherort innerhalb der gleichen Nachrichtenspeicher verschoben wurde, die Eintrags-ID möglicherweise oder möglicherweise nicht geändert, je nach Anbieter die Nachricht.
+- Wenn ein Ordner an einen anderen Speicherort innerhalb desselben Nachrichtenspeichers verschoben wird, ändert sich möglicherweise die Eintrags-ID je nach Nachrichtenspeicher Anbieter.
     
-Umbenennen eines Ordners in der Regel ohne seines übergeordneten Ordners bewirkt keine Eintrags-ID zu ändern. 
+Wenn Sie einen Ordner umbenennen, ohne den übergeordneten Ordner zu ändern, wird der Eintragsbezeichner in der Regel nicht geändert. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[MAPI-Eintragsbezeichner](mapi-entry-identifiers.md)
+[MAPI-Eintrags-IDs](mapi-entry-identifiers.md)
 

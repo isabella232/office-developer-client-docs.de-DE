@@ -9,43 +9,43 @@ f1_keywords:
 - Project VBA
 - VBA
 keywords:
-- VBA, Object Model, Project, Programmierbarkeit, project-Programmierung, Project VBA, Visual Basic für Applikationen, Project-Objektmodell, VBA, Objekt Objektmodell, VBA, Visual Basic für Applikationen
+- VBA, Projektobjektmodell, Projekt, Programmierbarkeit, Programmierbarkeit, Projekt VBA, Visual Basic for Applications, Project-Objektmodell, VBA, Objektmodell, VBA, Visual Basic für Applikationen
 localization_priority: Normal
 ms.assetid: 0ad49ff6-8dff-4379-a52c-d292c53c2bc0
-description: Die Project 2013-desktop-Clientanwendungen – Project Standard 2013 und Project Professional 2013 – angepasst und mithilfe von VBA Makros schreiben erweitert werden kann. Visual Studio 2012 können zum Anpassen der Menüband-Benutzeroberfläche und Erstellen komplexer-add-ins Office-Add-ins ermöglicht eine neue Erweiterbarkeit modellieren für Aufgabenbereichen in Project, die auf einer gemeinsamen Plattform für Office 2013 integriert sind. Project Standard 2013 und Project Professional 2013 können allgemeine Office-Add-ins ausführen und Verwenden des Task Pane-add-ins, die speziell für das Projekt für die Integration von SharePoint, andere Websites und Webanwendungen und externe Daten entwickelt werden.
+description: Die Project 2013-Desktopclientanwendungen – Project Standard 2013 und Project Professional 2013 – können angepasst und erweitert werden, indem VBA zum Schreiben von Makros verwendet wird. Sie können Visual Studio 2012 verwenden, um die Menüband-Benutzeroberfläche anzupassen und komplexe Add-Ins zu erstellen. Office-Add-ins ermöglicht ein neues Erweiterbarkeitsmodell für Aufgabenbereiche in Project, die auf einer gemeinsamen Office 2013-Plattform aufbauen. Project Standard 2013 und Project Professional 2013 können allgemeine Office-Add-Ins ausführen und Aufgabenbereich-Add-Ins verwenden, die speziell für die Integration in SharePoint, andere Websites und Webanwendungen sowie externe Daten entwickelt wurden.
 ms.openlocfilehash: cc345f0ff91dfb573dd86c256e89df478edd4924
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301512"
 ---
 # <a name="project-client-programming"></a>Project-Clientprogrammierung
 
-Die Project 2013-desktop-Clientanwendungen – Project Standard 2013 und Project Professional 2013 – angepasst und mithilfe von VBA Makros schreiben erweitert werden kann. Visual Studio 2012 können zum Anpassen der Menüband-Benutzeroberfläche und Erstellen komplexer-add-ins Office-Add-ins ermöglicht eine neue Erweiterbarkeit modellieren für Aufgabenbereichen in Project, die auf einer gemeinsamen Plattform für Office 2013 integriert sind. Project Standard 2013 und Project Professional 2013 können allgemeine Office-Add-ins ausführen und Verwenden des Task Pane-add-ins, die speziell für das Projekt für die Integration von SharePoint, andere Websites und Webanwendungen und externe Daten entwickelt werden.
+Die Project 2013-Desktopclientanwendungen – Project Standard 2013 und Project Professional 2013 – können angepasst und erweitert werden, indem VBA zum Schreiben von Makros verwendet wird. Sie können Visual Studio 2012 verwenden, um die Menüband-Benutzeroberfläche anzupassen und komplexe Add-Ins zu erstellen. Office-Add-ins ermöglicht ein neues Erweiterbarkeitsmodell für Aufgabenbereiche in Project, die auf einer gemeinsamen Office 2013-Plattform aufbauen. Project Standard 2013 und Project Professional 2013 können allgemeine Office-Add-Ins ausführen und Aufgabenbereich-Add-Ins verwenden, die speziell für die Integration in SharePoint, andere Websites und Webanwendungen sowie externe Daten entwickelt wurden.
   
- **Verschieben in Visual Studio** VBA ist hilfreich für das Aufzeichnen von Makros und Entwickeln von Lösungen relativ einfach Automatisierung. Informationen zum Entwickeln von Task Pane-add-ins sollten-add-ins und weitere komplexe, sichere, skalierbare, und auf einfache Weise bereitgestellter Lösungen für die Verwendung von Visual Studio 2012. Microsoft .NET Framework 4.0 und die primäre Interopassembly für Project 2013 bieten viele Vorteile für das Entwickeln und Bereitstellen von Lösungen, die Automatisierung und Integration von Project 2013-desktop-Clients. 
+ **Wechseln zu Visual Studio** VBA eignet sich für die Aufzeichnung von Makros und die Entwicklung relativ einfacher Automatisierungslösungen. Es wird empfohlen, Visual Studio 2012 zu verwenden, um Aufgabenbereich-Add-Ins, Add-Ins und komplexere, sichere, skalierbare und einfach bereitgestellte Lösungen zu entwickeln. Microsoft .NET Framework 4,0 und die primäre Interop-Assembly von Project 2013 bieten zahlreiche Vorteile beim entwickeln und Bereitstellen von Lösungen, mit denen die Project 2013-Desktop Clients automatisiert und integriert werden. 
   
 > [!NOTE]
-> Visual Studio 2010 können Sie das um Projekt-add-ins zu entwickeln. Visual Studio 2012 enthält jedoch Vorlagen und Erweiterungen, die Office-Add-ins Clients erstellen sollen. 
+> Sie können Visual Studio 2010 zum Entwickeln von Project-Add-Ins verwenden. Visual Studio 2012 enthält jedoch Vorlagen und Erweiterungen, die für die Erstellung von Office-Add-ins-Clients vorgesehen sind. 
   
-Das **MSProject** -Objektmodell für VBA in Project 2013 ist im Wesentlichen identisch mit **Microsoft.Office.Interop.MSProject** -Objektmodell für verwalteten Code-Lösungen mit Office Developer Tools für Visual Studio 2013 (auch bekannt als VSTO). Visual Studio 2012 enthält Vorlagen für die Entwicklung von auf Anwendungsebene-add-ins für Project 2010 und Project 2013 (Project Standard oder Project Professional-Versionen). Entwickeln, testen und Bereitstellen von erweiterten Integration-Lösungen, die mit dem Project-desktop-Client und andere Office 2013-Anwendungen und Integration mit SharePoint-Websites, Listen, VSTO und Office Developer Tools für Visual Studio 2012 zu vereinfachen und Workflows. 
+Das **MSProject** -Objektmodell für VBA in Project 2013 ist im Wesentlichen identisch mit dem **Microsoft. Office. Interop. MSProject** -Objektmodell für Lösungen mit verwaltetem Code mit Office Developer Tools für Visual Studio 2013 (auch bekannt als VSTO). Visual Studio 2012 enthält Vorlagen zum Entwickeln von Add-Ins auf Anwendungsebene für Project 2010 und für Project 2013 (entweder die Project Standard-oder Project Professional-Versionen). VSTO und Office Developer Tools für Visual Studio 2012 vereinfachen das entwickeln, testen und Bereitstellen erweiterter Integrationslösungen, die den Project-Desktop Client und andere Office 2013-Anwendungen verwenden können, und die Integration in SharePoint-Websites,-Listen und Workflows. 
   
-Task Pane-add-ins und andere add-ins für Office und SharePoint im Office Store verkauft werden (siehe [https://office.microsoft.com/store/](https://office.microsoft.com/en-us/store/)) für die Verwendung mit Project Online und lokale Installationen. VBA-Makros und VSTO-add-ins können nicht im Office Store verteilt werden sollen; Sie dienen zur lokalen Verwendung mit Project Standard und Project Professional. Sie können VBA-Makros innerhalb eines Projekts verteilen. MPP-Datei, in der Datei Global.MPT auf Ihrem Computer zu installieren, oder in der Enterprise-global-Projektvorlage in Project Server 2013 zu verteilen. VSTO-add-ins können sicherer über [ClickOnce](https://msdn.microsoft.com/library/t71a733d.aspx) -Bereitstellung verteilt werden, wodurch einfache Updates. 
+Aufgabenbereich-Add-Ins und andere Add-Ins für Office und SharePoint können im Office Store (siehe [https://office.microsoft.com/store/](https://office.microsoft.com/en-us/store/)) für die Verwendung mit Project Online-und lokalen Installationen verkauft werden. VBA-Makros und VSTO-Add-Ins können nicht im Office Store verteilt werden. Sie sind für die lokale Verwendung mit Project Standard und Project Professional konzipiert. Sie können VBA-Makros in einem Projekt verteilen. MPP-Datei, installieren Sie Sie in der Datei Global. MPT auf Ihrem Computer, oder verteilen Sie Sie in der Enterprise-Global-Projektvorlage in Project Server 2013. VSTO-Add-Ins können sicherer über die [ClickOnce](https://msdn.microsoft.com/library/t71a733d.aspx) -Bereitstellung verteilt werden, was einfache Updates ermöglicht. 
   
 ## <a name="reference"></a>Referenz
 
-[Project-VBA-Entwicklerreferenz (engl.)](https://msdn.microsoft.com/library/ee861523%28office.15%29.aspx) Enthält einführende und VBA-Hilfe-Artikel. 
+[Projekt-VBA-Entwicklerreferenz](https://msdn.microsoft.com/library/ee861523%28office.15%29.aspx) Enthält Einführungs-und VBA-Hilfeartikel. 
   
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[Project Server 2013-Architektur](project-server-2013-architecture.md) Zeigt, wie die Project-Clients mit Project Server interagieren. 
+[Project Server 2013-Architektur](project-server-2013-architecture.md) Zeigt, wie die Projekt Clients mit Project Server interagieren. 
   
 ## <a name="see-also"></a>Siehe auch
 
 - [Project für Entwickler](https://msdn.microsoft.com/office/aa905469)
-- [Office Developercenter](https://dev.office.com)
-- [Visual Studio Developer center](https://msdn.microsoft.com/vstudio/aa718325.aspx)
-- [ClickOnce-Sicherheit und Bereitstellung](https://msdn.microsoft.com/library/t71a733d.aspx)
-- [Verfügbare Felder](https://support.office.com/en-us/article/available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
+- [Office Developer Center](https://dev.office.com)
+- [Visual Studio Developer Center](https://msdn.microsoft.com/vstudio/aa718325.aspx)
+- [ClickOnce-Sicherheit und-Bereitstellung](https://msdn.microsoft.com/library/t71a733d.aspx)
+- [Referenz: Verfügbare Felder](https://support.office.com/en-us/article/available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
 

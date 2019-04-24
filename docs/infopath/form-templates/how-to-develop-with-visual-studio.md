@@ -5,52 +5,52 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e39d633d-d8fb-4e2f-a396-6cb50beb8c3e
-description: Sie können die Funktionalität von InfoPath-Formularen erheblich verbessern, indem Sie sie mit verwaltetem Code in Visual Studio 2012 entwickelt erweitern. Sie können von Formularen mit Code klicken Sie dann auf SharePoint Server 2013 in Formularbibliotheken veröffentlichen.
+description: Sie können die Funktionalität Ihrer InfoPath-Formulare erheblich verbessern, indem Sie Sie mit verwaltetem Code erweitern, der in Visual Studio 2012 entwickelt wurde. Sie können Ihre Formulare dann mit Code veröffentlichen, um Bibliotheken auf SharePoint Server 2013 zu bilden.
 ms.openlocfilehash: 1c67b85823fe567b494366a505be5dad51d20b32
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300287"
 ---
 # <a name="develop-with-visual-studio"></a>Entwicklung mit Visual Studio
 
-Sie können die Funktionalität von InfoPath-Formularen erheblich verbessern, indem Sie sie mit verwaltetem Code in Visual Studio 2012 entwickelt erweitern. Sie können von Formularen mit Code klicken Sie dann auf SharePoint Server 2013 in Formularbibliotheken veröffentlichen.
+Sie können die Funktionalität Ihrer InfoPath-Formulare erheblich verbessern, indem Sie Sie mit verwaltetem Code erweitern, der in Visual Studio 2012 entwickelt wurde. Sie können Ihre Formulare dann mit Code veröffentlichen, um Bibliotheken auf SharePoint Server 2013 zu bilden.
   
 Wenn Sie InfoPath-Formulare mit verwaltetem Code programmieren und bereitstellen möchten, müssen Sie zunächst drei allgemeine Schritte ausführen:
   
-1. Installieren Sie Visual Studio 2012, mit dem [Microsoft Visual Studio Tools for Applications 2012](https://www.microsoft.com/en-us/download/details.aspx?id=38807) Add-on. 
+1. Installieren Sie Visual Studio 2012 mit dem Add-on [für Microsoft Visual Studio Tools for Applications 2012](https://www.microsoft.com/en-us/download/details.aspx?id=38807) . 
     
-2. Die Programmiersprache festlegen und Schreiben und Debuggen von Code im Code-Editor von Visual Studio 2012.
+2. Legen Sie Ihre Programmiersprache fest, und schreiben und Debuggen Sie dann Code im Code-Editor von Visual Studio 2012.
     
-3. Wenn Sie das Formular entwerfen und Entwickeln von Ihrem Code abgeschlossen haben, kann die Formularvorlage in SharePoint Server 2013 veröffentlicht werden.
+3. Nachdem Sie das Formular entworfen und den Code entwickelt haben, kann die Formularvorlage in SharePoint Server 2013 veröffentlicht werden.
     
-Es folgen einige Gründe Formulare erstellen, die mit SharePoint Server 2013 kompatibel sind:
+Im folgenden finden Sie einige Gründe für die Erstellung von Formularen, die mit SharePoint Server 2013 kompatibel sind:
   
-- Formulare, die in SharePoint Server 2013 mit InfoPath Forms Services bereitgestellt können in einem Browser ausgefüllt werden. Dies ermöglicht Benutzern, die nicht über InfoPath installiert sind, öffnen und Verwenden von Formularen verfügen.
+- Formulare, die in SharePoint Server 2013 mit InfoPath Forms Services bereitgestellt werden, können in einem Browser ausgefüllt werden. Dadurch können Benutzer, die InfoPath nicht installiert haben, ihre Formulare öffnen und verwenden.
     
-- Entwerfen Sie nur eine Version des Formulars. Formulare, die mit Microsoft SharePoint Server kompatibel sind, sind auch kompatibel mit InfoPath Filler, aber die Formulare, die nur mit InfoPath Filler kompatibel sind, können nicht im Browser geöffnet werden.
+- Sie entwerfen nur eine Version des Formulars. Formulare, die mit Microsoft SharePoint Server kompatibel sind, sind auch mit dem InfoPath-Filler kompatibel, aber Formulare, die nur mit dem InfoPath-Füllbereich kompatibel sind, können im Browser nicht geöffnet werden.
     
-Es gibt zwei Methoden, um das Formular in SharePoint veröffentlichen: SharePoint sandboxed Solutions und vom Administrator bereitgestellte Lösungen. Weitere Informationen zu den einzelnen Publikation-Methode und Vorschläge, welche Methode am besten für Ihr Szenario ist, finden Sie unter [Publishing Forms with Code](publishing-forms-with-code.md). Beispiel: Lösungen für sandkastenlösungen, [Beispiele für Sandkastenlösungen](sample-sandboxed-solutions.md)angezeigt.
+Es gibt zwei Möglichkeiten, Ihr Formular in SharePoint zu veröffentlichen: SharePoint-sandkastenlösungen und vom Administrator bereitgestellte Lösungen. Weitere Informationen zu den einzelnen Veröffentlichungsmethoden und Vorschlägen dazu, welche Methode für Ihr Szenario am besten geeignet ist, finden Sie unter [Veröffentlichen von Formularen mit Code](publishing-forms-with-code.md). Beispiele für Lösungen für sandkastenlösungen finden Sie unter [Beispiel für Sandkasten](sample-sandboxed-solutions.md)Lösungen.
   
-## <a name="developing-with-visual-studio"></a>Bei der Entwicklung mit Visual Studio
+## <a name="developing-with-visual-studio"></a>Entwickeln mit Visual Studio
 
-Mit Visual Studio 2012 und Microsoft Visual Studio Tools for Applications 2012 Add-on installiert können Sie zum Entwickeln von Lösungen für InfoPath managed Code beginnen.
+Mit Visual Studio 2012 und Microsoft Visual Studio Tools for Applications 2012 Add-on installiert sind, können Sie mit der Entwicklung von InfoPath-Lösungen mit verwaltetem Code beginnen.
   
 ### <a name="choosing-a-programming-language"></a>Auswählen einer Programmiersprache
 
-InfoPath finden Sie die Optionen zum Programmieren mit vier Versionen von InfoPath-Objektmodells in zwei Sprachen: Visual Basic und c#. Die vier Versionen des Objektmodells bieten die Kompatibilität mit InfoPath 2013, InfoPath, Office InfoPath 2007 und Microsoft InfoPath 2003.
+InfoPath bietet die Optionen zum Programmieren mit vier Versionen des InfoPath-Objektmodells in zwei Sprachen: Visual Basic und C#. Die vier Versionen des Objektmodells bieten Kompatibilität mit InfoPath 2013, InfoPath, Office InfoPath 2007 und Microsoft InfoPath 2003.
   
 ### <a name="to-specify-the-programming-language-and-object-model"></a>So geben Sie die Programmiersprache und das Objektmodell an
 
-1. Ein Formularvorlagenprojekt in InfoPath-Designer geöffnet klicken Sie auf der Registerkarte **Entwickler** auf **Sprache** . 
+1. Wenn ein Formularvorlagenprojekt im InfoPath-Designer geöffnet ist, klicken Sie auf der Registerkarte **Entwickler** auf **Sprache** . 
     
-2. Wählen Sie in der Kategorie **Programmierung** im Dialogfeld **Formularoptionen** die Sprache, die Sie aus der Dropdownliste **Codesprache der Formularvorlage** mit arbeiten möchten. Wählen Sie dann die Version des Objektmodells aus der Dropdownliste **Zielversion** . Eine Version Jahr nach dem Namen der **InfoPath** keinen die **Zielversion** -Option, die nur mit InfoPath 2013 kompatibel ist. 
+2. Wählen Sie in der Kategorie **Programmierung** des Dialogfelds **Formularoptionen** in der Dropdownliste **Codesprache der Formularvorlage** die Sprache aus, mit der Sie arbeiten möchten. Wählen Sie dann in der Dropdownliste **Zielversion** die Version des Objektmodells aus. Die Option **Zielversion** , die nur mit InfoPath 2013 kompatibel ist, verfügt nicht über ein Versions Jahr, das dem **InfoPath** -Namen folgt. 
     
     > [!NOTE]
-    > Nicht alle Formulartypen Vorlage unterstützen Code. Beispielsweise führen Sie die **SharePoint-Liste** Vorlage Formulartyp und **Vorlagenparts** Formularcode nicht unterstützt. Wenn Sie einen Vorlagentyp Formular entwerfen, der Code nicht unterstützt, wird die Registerkarte **Entwicklertools** nicht verfügbar. Darüber hinaus unterstützen nur einige Formulartypen Vorlage alle vier Versionen des Objektmodells. Beispielsweise der Vorlagentyp **Leeres Formular (InfoPath Filler)** unterstützt alle vier Versionen des Objektmodells (und erstellt die Formularvorlage, die nur mit InfoPath Filler in diesen Versionen kompatibel sind), aber die Vorlage **Leeres Formular** unterstützt nur InfoPath 2013 und InfoPath (und -Formularvorlagen, die mit InfoPath Filler und im Browser kompatibel sind erstellt). 
+    > Nicht alle Formularvorlagen Typen unterstützen Code. Beispielsweise unterstützen der Typ der **SharePoint-Listen** Formularvorlagen und **Vorlagen Parts** den Formularcode nicht. Beim Entwerfen eines Formularvorlagen Typs, der keinen Code unterstützt, ist die Registerkarte **Entwicklertools** nicht verfügbar. Außerdem unterstützen nur einige Formularvorlagen Typen alle vier Versionen des Objektmodells. Der Vorlagentyp **leeres Formular (InfoPath Filler)** unterstützt beispielsweise alle vier Versionen des Objektmodells (und erstellt Formularvorlagen, die nur mit dem InfoPath-Füller in diesen Versionen kompatibel sind), aber die **leere Formular** Vorlage unterstützt nur InfoPath 2013 und InfoPath (und erstellt Formularvorlagen, die sowohl mit dem InfoPath-Füller als auch mit dem Browser kompatibel sind). 
   
-    Sie können festlegen, dass eine Standardprogrammiersprache, sodass immer im InfoPath-Formular-Designer mit der Sprache und Objektmodellversion Ihrer Wahl gestartet wird.
+    Sie können eine Standard Programmiersprache festlegen, sodass der InfoPath-Formular-Designer immer mit der Sprach-und Objektmodellversion Ihrer Wahl beginnt.
     
 ### <a name="to-set-the-default-programming-language"></a>So legen Sie die Standardprogrammiersprache fest
 
@@ -62,15 +62,15 @@ InfoPath finden Sie die Optionen zum Programmieren mit vier Versionen von InfoPa
     
 ### <a name="writing-code"></a>Schreiben von Code
 
-Nun können Sie mit InfoPath 2013 und Visual Studio 2012 entwickeln. 
+Sie können nun mit InfoPath 2013 und Visual Studio 2012 entwickeln. 
   
-### <a name="to-start-the-visual-studio-code-editor"></a>Starten Sie im Code-Editor von Visual Studio
+### <a name="to-start-the-visual-studio-code-editor"></a>So starten Sie den Visual Studio-Code-Editor
 
 1. Öffnen Sie eine Formularvorlage im InfoPath-Designer.
     
 2. Klicken Sie auf der Registerkarte **Entwickler** auf **Code-Editor**. 
     
 > [!TIP]
-> Sie können auch im Code-Editor zu starten und automatisch hinzufügen Ereignishandler für Formular- und Ereignisse, die mithilfe der Befehle auf der Registerkarte **Entwicklertools** , Kontextmenüs und andere User Interface-Methoden. Weitere Informationen finden Sie unter [Hinzufügen eines Ereignishandlers](how-to-add-an-event-handler.md)
+> Sie können den Code-Editor auch starten und automatisch Ereignishandler für Formular-und Steuerelementereignisse mithilfe von Befehlen auf der Registerkarte **Entwickler** , Kontextmenüs und andere Benutzeroberflächenmethoden hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen eines Ereignishandlers](how-to-add-an-event-handler.md) .
   
 

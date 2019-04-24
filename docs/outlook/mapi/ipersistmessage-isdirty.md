@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 57f688db-3a1c-49ff-a15a-8508bda5de68
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0d2ae556f4dd98b5f6e274a21c608d4ea364d4ec
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 91985d3dc8a7816c3da3215e505097c57c63e035
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309611"
 ---
 # <a name="ipersistmessageisdirty"></a>IPersistMessage::IsDirty
 
@@ -25,7 +25,7 @@ ms.locfileid: "22576204"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft das Formular, damit die Änderungen, die seit dem letzten Speichervorgang vorgenommen wurden.
+Überprüft das Formular auf Änderungen, die seit dem letzten Speichern vorgenommen wurden.
   
 ```cpp
 HRESULT IsDirty( void );
@@ -35,19 +35,19 @@ HRESULT IsDirty( void );
 
 Keine
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Formular wurde geändert, die seit dem letzten Speichern vorgenommen wurden.
+> Das Formular enthält Änderungen, die seit dem letzten Speichern vorgenommen wurden.
     
 S_FALSE 
   
-> Das Formular hat keine Änderungen, die seit dem letzten Speichern vorgenommen wurden.
+> Das Formular verfügt nicht über Änderungen, die seit dem letzten Speichern vorgenommen wurden.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IPersistMessage::IsDirty** -Methode, um zu bestimmen, ob die Nachricht Daten vorliegen. 
+Formular Betrachter rufen die **IPersistMessage:: IsDirty** -Methode auf, um zu bestimmen, ob die Nachricht nicht gespeicherte Daten enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

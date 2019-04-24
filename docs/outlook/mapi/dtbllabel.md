@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5837facf-acd3-48fe-9610-f88085d99aef
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 09f0d7988f85a6d6018c45cb64245ab331cda052
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: aa3345740c534b5ff156f062e731c98bc6164eed
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287160"
 ---
 # <a name="dtbllabel"></a>DTBLLABEL
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Beschriftung, die in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird.
+Beschreibt eine Bezeichnung, die in einem Dialogfeldverwendet wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makro  <br/> |[SizedDtblLabel](sizeddtbllabel.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehöriges Makro  <br/> |[SizedDtblLabel](sizeddtbllabel.md) <br/> |
    
 ```cpp
 typedef struct _DTBLLABEL
@@ -45,27 +45,27 @@ typedef struct _DTBLLABEL
 
  **ulbLpszLabelName**
   
-> Die Position im Speicher der Beschriftung Zeichenfolge Zeichen.
+> Position im Speicher der Zeichenfolgenbezeichnung.
     
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format der Beschriftung festzulegen, auf die der **UlbLpszLabelName** Member. Das folgende Flag kann festgelegt werden: 
+> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabelName** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Beschriftung wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLLABEL** beschreibt einen Text im Bezeichnungsfeld-Steuerelement, der mit einer anderen Art von Steuerelement, das das Steuerelement Bedeutung hinzugefügt angezeigt wird. Beispielsweise sind die meisten Bearbeitungssteuerelemente neben Etiketten informiert den Benutzer über den Typ der Informationen eingegeben werden positioniert. Einige Steuerelemente, wie zum Beispiel Gruppenfelder und Optionsfelder, halten Sie ihre eigenen Beschriftungen. 
+Eine **DTBLLABEL** -Struktur beschreibt einen Beschriftungssteuerelement Text, der mit einem anderen Steuerelementtyp angezeigt wird, um diesem Steuerelement eine Bedeutung hinzuzufügen. Die meisten Bearbeitungssteuerelemente werden beispielsweise neben Bezeichnungen positioniert, um den Benutzer über den Typ der einzugebenden Informationen zu informieren. Einige Steuerelemente wie Gruppen-und Optionsfelder enthalten eigene Beschriftungen. 
   
-Die Bezeichnung kann einen Windows Accelerator, als das kaufmännische und-Zeichen folgende Zeichen enthalten (&amp;). Drücken der Zugriffstaste erhält den Fokus in der ersten Nonlabel, Nonbutton Steuerelement Befolgen dieser Beschriftung in der Tabelle anzeigen.
+Die Bezeichnung kann eine Windows-Schnellinfo aufweisen, die als Zeichen nach dem kaufmännischen und (&amp;) identifiziert wird. Durch Drücken der Tastenkombination wird der Fokus in das erste nicht-Schaltflächen-Steuerelement, das dieser Beschriftung folgt, in der Anzeigetabelle platziert.
   
-Keine Unterstützung für mehrzeilige Etiketten ist vorhanden. Zeigt mehrere Zeilen erfordert mehrere Beschriftungen.
+Mehrzeilige Beschriftungen werden nicht unterstützt. Das Anzeigen mehrerer Zeilen erfordert mehrere Bezeichnungen.
   
-Es ist nicht möglich, eine Beschriftung als einen schreibgeschützten Bearbeitungssteuerelement verwenden. Der Unterschied besteht darin, dass ein Edit-Steuerelement ausgewählt und während eine Bezeichnung kann nicht kopiert werden kann. 
+Eine Bezeichnung kann nicht als schreibgeschütztes Bearbeitungssteuerelement verwendet werden. Der Unterschied besteht darin, dass ein Bearbeitungssteuerelement ausgewählt und kopiert werden kann, während eine Bezeichnung nicht. 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,28 +1,28 @@
 ---
-title: Concat-Funktion (Access benutzerdefinierte Web app)
+title: Concat-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 38ad6365-79df-4342-9b76-ca27b8ab8952
 description: Gibt eine Zeichenfolge zurück, die das Ergebnis der Kombination von zwei oder mehr Zeichenfolgenwerte ist.
-ms.openlocfilehash: fc0de43e5e42cc1c39ee89cf76058b8039daf279
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b8f52c292e64939f9464bc666ecc4bc341580f94
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282292"
 ---
-# <a name="concat-function-access-custom-web-app"></a>Concat-Funktion (Access benutzerdefinierte Web app)
+# <a name="concat-function-access-custom-web-app"></a>Concat-Funktion (Access Custom Web App)
 
 Gibt eine Zeichenfolge zurück, die das Ergebnis der Kombination von zwei oder mehr Zeichenfolgenwerte ist.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
-**Concat** (*Wert1*, *Wert2*... [*ValueN*]) 
+**Concat** (*Wert1*, *value2*,... [*ValueN*]) 
   
 Die Funktion **Verketten** enthält die folgenden Argumente. 
   
@@ -32,13 +32,13 @@ Die Funktion **Verketten** enthält die folgenden Argumente.
    
 ## <a name="remarks"></a>Bemerkungen
 
-**Verketten** verwendet eine unterschiedliche Anzahl von Zeichenfolgenargumenten und verkettet diese zu einer einzigen Zeichenfolge. Mindestens zwei Zeichenfolgenargumente sind erforderlich. Andernfalls wird ein Fehler ausgelöst. 
+**Verketten ** verwendet eine unterschiedliche Anzahl von Zeichenfolgenargumenten und verkettet diese zu einer einzigen Zeichenfolge. Mindestens zwei Zeichenfolgenargumente sind erforderlich. Andernfalls wird ein Fehler ausgelöst. 
   
 Alle Argumente werden implizit in Zeichenfolgen-Datentypen konvertiert und dann verkettet.
   
 ## <a name="example"></a>Beispiel
 
-Der folgende Ausdruck kann verwendet werden, um den vollständigen Namen einer Person anzuzeigen, für welche die Tabelle die Felder "LastName", "FirstName" und "MiddleInitial" enthält. Wenn das Feld MiddleInitial leer ist, werden nur die Felder FirstName und LastName kombiniert, um den vollständigen Namen angezeigt.
+Der folgende Ausdruck kann verwendet werden, um den vollständigen Namen einer Person anzuzeigen, für welche die Tabelle die Felder "LastName", "FirstName" und "MiddleInitial" enthält. Wenn das Feld MiddleInitial leer ist, werden nur die Felder FirstName und LastName kombiniert, um den vollständigen Namen anzuzeigen.
   
 ```vb
 IIf([MiddleInitial] Is Null,Concat([FirstName]," ",[LastName]),Concat([FirstName]," ",[MiddleInitial]," ",[LastName]))

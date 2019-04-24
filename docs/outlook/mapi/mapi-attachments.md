@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: 6e6c6ad9-1e07-4234-a5ef-18020d7ce468
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fd8075d2fddb7ada6803c869cbbd282c464e75bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 90fbec8b61499f383228823d69b041a21199a22e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297872"
 ---
 # <a name="mapi-attachments"></a>MAPI-Anlagen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einige Anbieter Nachricht erm�glichen Clients Nachrichten Informationen hinzugef�gt, in Form von Dateien, OLE-Objekte, Nachrichten oder Bin�rdaten zugeordnet. Diese zus�tzlichen Informationen wird eine e-Mail-Nachrichtenanhang aufgerufen. Da Anlagen erstellt, verwaltet und auf die nur �ber ihre Nachrichten zugegriffen werden, werden sie Nachricht Unterobjekte betrachtet. Anlagen enthalten einen fortlaufende Zahlen bekannten statt eines Eintrags-ID f�r den Zugriff als Anlage Zahl. Diese Nummer wird die Anlage in der Nachricht, aber nicht notwendigerweise innerhalb der Nachrichtenspeicher eindeutig identifiziert. Zwei verschiedene Nachrichten k�nnen verschiedene Anlagen mit derselben Anlage Nummer aufweisen. Anlage Zahlen sind nur gültig, solange die Nachricht wird geöffnet und werden in der Eigenschaft **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) gespeichert.
+Einige Anbieter Nachricht erm�glichen Clients Nachrichten Informationen hinzugef�gt, in Form von Dateien, OLE-Objekte, Nachrichten oder Bin�rdaten zugeordnet. Diese zus�tzlichen Informationen wird eine e-Mail-Nachrichtenanhang aufgerufen. Da Anlagen erstellt, verwaltet und auf die nur �ber ihre Nachrichten zugegriffen werden, werden sie Nachricht Unterobjekte betrachtet. Anlagen enthalten einen fortlaufende Zahlen bekannten statt eines Eintrags-ID f�r den Zugriff als Anlage Zahl. Diese Nummer wird die Anlage in der Nachricht, aber nicht notwendigerweise innerhalb der Nachrichtenspeicher eindeutig identifiziert. Zwei verschiedene Nachrichten k�nnen verschiedene Anlagen mit derselben Anlage Nummer aufweisen. Anlagennummern sind nur gültig, solange die Nachricht geöffnet ist und in der **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft gespeichert werden.
   
 Zugriff auf zusammenfassende Informationen zu allen eine e-Mail-Anlagen abrufen Clients die Anlagentabelle. Die Anlagentabelle enth�lt Informationen, mit denen Clients eine Anlage direkt, wie die Anzahl der Anlage und aufzeichnen Schl�ssel zuzugreifen. Clients k�nnen eine Anlagentabelle durch Abrufen:
   
@@ -29,7 +29,7 @@ Zugriff auf zusammenfassende Informationen zu allen eine e-Mail-Anlagen abrufen 
     
 - Calling **IMAPIProp::OpenProperty**. For more information, see [IMAPIProp::OpenProperty](imapiprop-openproperty.md).
     
-Message store providers are expected to support both of these approaches. Der **OpenProperty** Ansatz erfordert, dass der Aufrufer IID_IMAPITable als das Eigenschafts-Tag als Schnittstellenbezeichner und **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) angeben. **PR_MESSAGE_ATTACHMENTS** is a table object property that represents a message's attachment table. Message store providers are required to set **PR_MESSAGE_ATTACHMENTS** for each message and include it in the array of property tags returned from the **IMAPIProp::GetPropList** method. For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
+Message store providers are expected to support both of these approaches. Der **OpenProperty** -Ansatz erfordert, dass der Aufrufer IID_IMAPITable als Schnittstellenbezeichner und **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md)) als das Property-Tag angibt. **PR_MESSAGE_ATTACHMENTS** is a table object property that represents a message's attachment table. Message store providers are required to set **PR_MESSAGE_ATTACHMENTS** for each message and include it in the array of property tags returned from the **IMAPIProp::GetPropList** method. For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
   
  **PR_MESSAGE_ATTACHMENTS** kann verwendet werden: 
   

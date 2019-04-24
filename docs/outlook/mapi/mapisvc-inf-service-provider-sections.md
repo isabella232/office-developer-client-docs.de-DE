@@ -1,5 +1,5 @@
 ---
-title: Dienstanbieterabschnitte in MapiSvc.inf
+title: Abschnitte des MapiSvc. inf-Dienstanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,44 +8,44 @@ api_type:
 - COM
 ms.assetid: ab17dcf2-409b-4a57-9cc4-5794f995cd3e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 05666d8d6b7279588b4b442151640fa1696aedda
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ea192ec6356cc3b929bf8379567144d3a54223f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309541"
 ---
-# <a name="mapisvcinf-service-provider-sections"></a>Dienstanbieterabschnitte in MapiSvc.inf
+# <a name="mapisvcinf-service-provider-sections"></a>Abschnitte des MapiSvc. inf-Dienstanbieters
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPISVC.inf enthält einen Dienst Anbieterabschnitt für jeden der Einträge in der **Anbieter** -Eintrag im vorherigen Abschnitt der Nachricht Dienste aufgeführt. **Service** Provider Abschnitte ähneln Nachricht Service Abschnitte, dass beide Arten von Abschnitten Einträge in diesem Format enthalten: 
+MAPISVC. inf enthält einen Abschnitt des Dienstanbieters für jeden Eintrag, der im Abschnitt **Anbieter** im vorherigen Nachrichtendienst aufgeführt ist. **Dienst** Anbieter Abschnitte ähneln den Nachrichtendienst Abschnitten darin, dass beide Typen von Abschnitten Einträge in diesem Format enthalten: 
   
-**Eigenschafts-Tag** = Wert-Eigenschaft 
+**Property Tag** = Eigenschaftswert 
   
-Unterscheiden sich jedoch Service Provider Abschnitte und Nachricht Service Abschnitte, solche Eigenschafteneinträge die einzige Art des Eintrags im Service Provider Abschnitte enthalten sind. Es kann keine zusätzliche oder verknüpfte Abschnitte für Dienstanbieter vorhanden sein. alle Informationen muss in einem Abschnitt enthalten sein. 
+Dienstanbieter Abschnitte und Nachrichtendienst Abschnitte unterscheiden sich jedoch darin, dass es sich bei diesen Eigenschaften Einträgen um den einzigen Eintrags handelt, der in Dienstanbieter Abschnitten enthalten ist. Es kann keine zusätzlichen oder verknüpften Abschnitte für Dienstanbieter geben; Alle Dienstanbieterinformationen müssen im ersten Abschnitt enthalten sein. 
   
-Einige der Eigenschaften in Nachricht Service Abschnitten festgelegt werden auch in Service Provider Abschnitten festgelegt, da diese Eigenschaften für beide sinnvoll. Die **PR_DISPLAY_NAME** -Eigenschaft ist ein Beispiel. Dienstanbieter und Message-Dienste haben einen Namen, der für die Anzeige in der Benutzeroberfläche für die Konfiguration verwendet wird. Je nach den Dienstanbieter diesem Namen oder möglicherweise nicht identisch. Andere Eigenschaften sind spezifisch für den Dienstanbieter. 
+Einige der Eigenschaften, die in Nachrichtendienst Abschnitten festgelegt sind, werden auch in Dienstanbieter Abschnitten festgelegt, da diese Eigenschaften für beides sinnvoll sind. Die **PR_DISPLAY_NAME** -Eigenschaft ist ein Beispiel. Sowohl Dienstanbieter als auch Nachrichtendienste haben einen Namen, der für die Anzeige in der Konfigurations-Benutzeroberfläche verwendet wird. Je nach Dienstanbieter kann dieser Name nicht identisch sein. Andere Eigenschaften sind für Dienstanbieter spezifisch. 
   
-Normalen Service Provider Abschnitte enthalten die folgenden Einträge, die alle erforderlich sind:
+Typische Dienstanbieter Abschnitte enthalten die folgenden Einträge, die alle erforderlich sind:
   
-**PR_DISPLAY_NAME** =  _Zeichenfolge_
+**PR_DISPLAY_NAME** =  -_Zeichenfolge_
   
-**PR_PROVIDER_DISPLAY** =  _Zeichenfolge_
+**PR_PROVIDER_DISPLAY** =  -_Zeichenfolge_
   
 **PR_PROVIDER_DLL_NAME** =  _Name der DLL-Datei_
   
 **PR_RESOURCE_TYPE** =  _lang_
   
-**PR_RESOURCE_FLAGS** =  _Bitmaske_
+**PR_RESOURCE_FLAGS** =  __ -Bitmaske
   
-**PR_SERVICE_DLL_NAME**entspricht der Eintrag **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) ist. Es gibt den Dateinamen für die DLL, die den Dienstanbieter enthält. Message Authentication Servicecode mit einem der der Dienstanbieter in der gleichen DLL-Datei gespeichert werden kann oder als eine separate DLL vorhanden ist. Beachten Sie, dass kein Suffix in den Eintrag unabhängig von der Zielplattform enthalten ist. MAPI kümmert ein Suffix hinzufügen, falls erforderlich. 
+Der **PR_PROVIDER_DLL_NAME** -Eintrag ([Pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md)) ähnelt **PR_SERVICE_DLL_NAME**; Es gibt den Dateinamen für die DLL an, die den Dienstanbieter enthält. Der Nachrichtendienst Code kann mit einem seiner Dienstanbieter in derselben DLL-Datei gespeichert werden oder als separate DLL vorhanden sein. Beachten Sie, dass in dem Eintrag kein Suffix enthalten ist, unabhängig von der Zielplattform; MAPI sorgt dafür, dass bei Bedarf ein Suffix hinzugefügt wird. 
   
-**PR_RESOURCE_TYPE** Eintrag ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) stellt den Typ des Dienstanbieters dar. Dienstanbieter, die jedoch auf die entsprechende vordefinierte Konstante festlegen. Gültige Werte sind MAPI_STORE_PROVIDER, MAPI_TRANSPORT_PROVIDER und "MAPI_AB_PROVIDER"..
+**PR_RESOURCE_TYPE** ([Pidtagresourcetype (](pidtagresourcetype-canonical-property.md))-Eintrag stellt den Typ des Dienstanbieters dar. Dienstanbieter legen Sie die entsprechende vordefinierte Konstante fest. Gültige Werte sind MAPI_STORE_PROVIDER, MAPI_TRANSPORT_PROVIDER und MAPI_AB_PROVIDER.
   
-Eine andere Eigenschafteneintrag, der auf Message-Dienste und -Dienstanbieter angewendet wird, gibt die Optionen der Eintrag **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) an. Die Einstellungen für diesen Eintrag-Eigenschaft können je nach den Dienstanbieter unterscheiden. Beispielsweise können einige Anbieter Nachricht **PR_RESOURCE_FLAGS** auf STATUS_NO_DEFAULT_STORE festgelegt, wenn sie nie als Standard-Informationsspeicher ausgeführt werden können. 
+Ein anderer Eigenschafteneintrag, der sowohl für Nachrichtendienste als auch für Dienstanbieter gilt, gibt der **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Eintrag Optionen an. Die Einstellungen für diesen Eigenschafteneintrag können je nach Dienstanbieter unterschiedlich sein. Einige Nachrichtenspeicher Anbieter können **PR_RESOURCE_FLAGS** beispielsweise auf STATUS_NO_DEFAULT_STORE festlegen, wenn Sie niemals als Standardnachrichtenspeicher fungieren dürfen. 
   
-Führen Sie die drei Beispiele für Service Provider Abschnitte. Im Abschnitt **[AB Provider]** ist für den Standard-Adressbuch-Dienst Bereich Service Provider. Die Abschnitte **[MsgService Prov1]** und **[MsgService Prov2]** gehören zu meine eigenen Dienst. der erste ist ein Adressbuch Anbieterabschnitt und die zweite ist eine Nachrichtenspeicher Anbieterabschnitt. 
+Es folgen drei Beispiele für Dienstanbieter Abschnitte. Der Abschnitt **[ab Provider]** ist der Abschnitt Dienstanbieter für den standardMäßigen Adressbuchdienst. Die Abschnitte **[MsgService Prov1]** und **[MsgService Prov2]** gehören zu meinem eigenen Dienst; bei dem ersten handelt es sich um einen Adressbuchanbieter-Abschnitt, und der zweite ist ein Abschnitt für Nachrichtenspeicher Anbieter. 
   
 ```cpp
 [AB Provider]

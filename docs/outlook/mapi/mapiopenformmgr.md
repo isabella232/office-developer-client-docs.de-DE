@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5b624954-d975-4d5e-84d7-74e096ac30af
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2ed71b5eef0c25a78d7c8ec695a756a02e796dbf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: de0c1181450c536dffd5a84242c17bd1dd612566
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270098"
 ---
 # <a name="mapiopenformmgr"></a>MAPIOpenFormMgr
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet eine [IMAPIFormMgr](imapiformmgriunknown.md) -Schnittstelle in einem Formular Bibliothek Anbieter-Objekt im Zusammenhang mit einer vorhandenen Sitzung an. 
+Öffnet eine [IMAPIFormMgr](imapiformmgriunknown.md) -Schnittstelle für ein Formularbibliothek-Anbieterobjekt im Kontext einer vorhandenen Sitzung. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 MAPIOpenFormMgr(
@@ -44,27 +44,27 @@ MAPIOpenFormMgr(
 
  _pSession_
   
-> [in] Zeiger auf die Sitzung von der Clientanwendung verwendet.
+> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird.
     
  _ppmgr_
   
-> [out] Zeiger auf die zurückgegebene Schnittstelle **IMAPIFormMgr** . 
+> Out Zeiger auf die zurückgegebene **IMAPIFormMgr** -Schnittstelle. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Nach eine Clientanwendung an die **MAPIOpenFormMgr** -Funktion aufruft, erfolgen die meisten nachfolgende Forms-bezogene Interaktionen über den Formular-Bibliothek-Anbieter oder eine Schnittstelle, die vom Formular Bibliotheksanbieter zurückgegeben. Die **IMAPIFormMgr** -Schnittstelle ermöglicht dem Client zum Arbeiten mit Message Handler und Ausführen von Lösungen zwischen Nachrichtenklassen und Formularbibliotheken. 
+Nachdem eine Clientanwendung die **MAPIOpenFormMgr** -Funktion aufgerufen hat, erfolgen die meisten nachfolgenden formularbezogenen Interaktionen über den Formularbibliothek Anbieter oder eine vom Formular Bibliotheks Anbieter zurückgegebene Schnittstelle. Die **IMAPIFormMgr** -Schnittstelle ermöglicht es dem Client, mit Nachrichten Handlern zu arbeiten und Lösungen zwischen Nachrichtenklassen und Formularbibliotheken auszuführen. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp öffnet den Formular-Manager aus, damit ein Formular ausgewählt werden kann.  <br/> |CMainDlg::OnSelectForm  <br/> |MFCMAPI (engl.) verwendet die **MAPIOpenFormMgr** -Methode, um den Formular-Manager zu öffnen, damit ein Formular ausgewählt werden kann.  <br/> |
+|MainDlg. cpp öffnet den Formular-Manager, damit ein Formular ausgewählt werden kann.  <br/> |CMainDlg:: OnSelectForm  <br/> |MFCMAPI verwendet die **MAPIOpenFormMgr** -Methode, um den Formular-Manager zu öffnen, damit ein Formular ausgewählt werden kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 60b4fa23-0075-4f6a-8bd0-9e53e99432d5
 description: Sie können Ihre Drittanbieter-Apps für die universelle Windows-App-Plattform in Excel Mobile, PowerPoint Mobile und Word Mobile integrieren. Universelle Apps lassen sich in Office-Apps über Windows-Verträge für die Dateiauswahl, Expando-Eigenschaften und Contracts für die Aktualisierung zwischengespeicherter Dateien integrieren.
 ms.openlocfilehash: ad04ccc3ceb6e0f1d53e4aebc12cf9724ab8ab66
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299768"
 ---
 # <a name="integrate-with-office-from-windows-universal-apps"></a>Integration in Office von universellen Windows-Apps aus
 
@@ -37,7 +37,7 @@ Legen Sie diese Eigenschaften im **System.ExpandoProperties**-Eigenschaftensatz 
   
 |**Eigenschaft**|**Beschreibung**|**Typ**|**Beispiel**|
 |:-----|:-----|:-----|:-----|
-|**AppDisplayName** <br/> |Anbietername, der dem Benutzer angezeigt wird. Wird an mehreren Stellen in Office angezeigt, z. B. in der Liste der zuletzt verwendeten Dokumente.  <br/> |Zeichenfolge  <br/> |Contoso  <br/> |
+|**AppDisplayName** <br/> |Anbietername, der dem Benutzer angezeigt wird. Wird an mehreren Stellen in Office angezeigt, z. B. in der Liste der zuletzt verwendeten Dokumente.  <br/> |String  <br/> |Contoso  <br/> |
 |**MicrosoftOfficeOwnershipType** <br/> |Geben Sie für die Lizenzierung an, ob der Dokumentspeicherort Persönlich/Verbraucher oder Geschäftlich/Unternehmen ist. Zulässige Werte sind 1 (persönlich) und 2 (geschäftlich). Wenn die Datei des Benutzers zum Beispiel in Contoso Business gespeichert ist, verwenden Sie den Wert "2" für "geschäftlich".  <br/> |Unit32  <br/> | 1 oder 2  <br/> Wenn die Datei des Benutzers zum Beispiel in Contoso Business gespeichert ist, sollte die Datei mit "2" für "geschäftlich" markiert werden.  <br/> |
 |**MicrosoftOfficeTermsOfUse** <br/> |Rechtliche Hinweise, mit denen Sie erklären, dass die von Ihnen bereitgestellten Informationen nach unseren Nutzungsbedingungen korrekt sind. Dieser Text wird dem Benutzer nicht angezeigt. Es ist ein Vertrag zwischen Ihnen, dem Anwendungsanbieter, und Microsoft.  <br/> Sehen Sie sich das folgende Beispiel an.  <br/> | Zeichenfolge  <br/> | Ich stimme den Nutzungsbedingungen unter [https://go.microsoft.com/fwlink/p/?LinkId=528381](third-party-applications-integrating-with-office-mobile-products.md) zu. <br/> |
    
@@ -79,7 +79,7 @@ In den folgenden Tabellen sind die Parameter aufgelistet, die zum Verarbeiten vo
    
 ## <a name="invoking-office-from-your-app"></a>Aufrufen von Office aus Ihrer App
 
-Wenn ein Benutzer ein Office-Dokument von der App aus öffnet, kann das Dokument in Excel Mobile, PowerPoint Mobile und Word Mobile geöffnet werden. Wählt ein Benutzer z. B. eine \*.docx-Datei in Ihrer App aus, wird Word Mobile mit der geöffneten \*.docx-Datei gestartet. Welche Office-App geöffnet wird, hängt davon ab, welche App der Benutzer dem Dateityp zugeordnet hat.
+When a user opens an Office document from your app, the document can open in Excel Mobile, PowerPoint Mobile, and Word Mobile. For example, when a user selects a \*.docx file in your app, Word Mobile launches with the \*.docx file opened. The Office app that opens is based on which app the user associated with the file type.
   
 Zum Öffnen einer Datei aus Ihrer App in Office empfehlen wir die Verwendung von **LaunchFileAsync()**. Es wird nicht empfohlen, die Datei mit **LaunchUriAsync()** zu starten, da dann die für das URI-Schema registrierte Anwendung (der Browser) anstelle von Office gestartet wird. Zwar kann **LaunchUriAsync()** mit der Option **LauncherOptions.ContentType()** Office aufrufen, in diesem Fall wird aber die geöffnete Datei als temporär markiert und ist in Office schreibgeschützt. 
   

@@ -1,31 +1,31 @@
 ---
-title: TP-Element (Text_Type ComplexType) ("Visio XML")
+title: TP-Element (text_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b13b9328-c6a0-e282-257c-2de55901df6a
-description: Gibt den Anfang der Eigenschaften eines Registerkarten ausführen. Die Ausführung wird an das Ende des Texts oder bis zum nächsten Tag definiert.
+description: Gibt den Anfang einer Eigenschaften von Tabs an. Die Ausführung wird am Ende des Texts oder bis zum nächsten Tag definiert.
 ms.openlocfilehash: 3f27ea0babefa0ea69cbbc361031c57602649107
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307700"
 ---
-# <a name="tp-element-texttype-complextype-visio-xml"></a>TP-Element (Text_Type ComplexType) ("Visio XML")
+# <a name="tp-element-texttype-complextype-visio-xml"></a>TP-Element (text_Type complexType) (' Visio XML ')
 
-Gibt den Anfang der Eigenschaften eines Registerkarten ausführen. Die Ausführung wird an das Ende des Texts oder bis zum nächsten Tag definiert.
+Gibt den Anfang einer Eigenschaften von Tabs an. Die Ausführung wird am Ende des Texts oder bis zum nächsten Tag definiert.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[tp_Type](tp_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Page #. XML, Master #. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -35,13 +35,13 @@ Gibt den Anfang der Eigenschaften eines Registerkarten ausführen. Die Ausführu
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |Enthält den Text eines Shapes.  <br/> |
+|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |Enthält den Text einer Form.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -51,6 +51,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|IX  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Der nullbasierte Index des Elements in seinem übergeordneten Element.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
+|IX  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Der nullbasierte Index des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
    
 

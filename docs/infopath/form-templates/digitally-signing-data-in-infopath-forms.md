@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7b396d9f-9a47-3170-367f-5d1f0144f927
 description: Bei einer digitalen Signatur handelt es sich um einen elektronischen, verschlüsselungsbasierten, sicheren Echtheitsstempel in einem Makro oder Dokument. Eine gültige digitale Signatur bestätigt, dass die Daten vom Signierer stammen und seit dem Signieren nicht geändert wurden. Wenn Dokumente oder bestimmte Daten in den Dokumenten signiert werden, wird die Signatur berechnet und dem Dokument hinzugefügt. Auf diese Weise werden die Signaturen immer zusammen mit den signierten Daten übertragen.
-ms.openlocfilehash: dc839d0751d2e7aeb6f9eaccc3a86ce95e5228e2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6c1f5a1c14c15bc88839dc44d9a5a595d8b52893
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300245"
 ---
 # <a name="digitally-signing-data-in-infopath-forms"></a>Digitales Signieren von Daten in InfoPath-Formularen
 
@@ -25,13 +25,13 @@ Digitale XML-Signaturen sind für Transaktionen vorgesehen, an denen XML-Dokumen
   
 ## <a name="types-of-digital-signatures-in-infopath-forms"></a>Typen digitaler Signaturen in InfoPath-Formularen
 
-Microsoft InfoPath implementiert digitale Signaturen, mit denen Daten in InfoPath-Formularen gesichert werden. In InfoPath werden zwei Arten von digitalen Signaturen Funktionsumfang:
+Microsoft InfoPath implementiert digitale Signaturen zur Sicherung von Daten in InfoPath-Formularen. InfoPath unterstützt die folgenden beiden Arten von digitalen Signaturen:
   
 - Digitale Signaturen, mit denen die Datenintegrität und Echtheit der Formularvorlage (XSN-Datei) sichergestellt werden.
     
 - Digitale Signaturen, mit denen die Integrität, Echtheit und Unterstützung der Nichtabstreitbarkeit im Zusammenhang mit Daten in XML-Formularen sichergestellt werden.
     
-Während die erste Kategorie von Signaturen, die Formularvorlage (XSN-Datei) abzielt, beruht die zweite Kategorie auf die aktuellen Benutzer eingegebenen Daten in InfoPath-Formulardateien (XML-Dateien), in dem der Formulardesigner Benutzer digitale Signaturen für das gesamte erstellen aktivieren können Formular oder für Abschnitte des Formulars. Es gibt grundlegende Unterschiede zwischen einer signierten Vorlage und einem signierten Formular. Obwohl einige Verweise auf signierte Vorlagen bestehen (als alternative Möglichkeit zum Erstellen eines Formulars, das ausgeführt wird, als voll vertrauenswürdige), werden keine Informationen zu dieser Art von Signieren bereitgestellt. Weitere Informationen zum Signieren von Formularvorlagen finden Sie unter [Bereitstellen signierter InfoPath Formularvorlagen](deploying-signed-infopath-form-templates.md) verwendet der Fokus in diesem Thema signierte InfoPath XML-Formulare. Digitale Signaturen von InfoPath zum Signieren von Daten in XML-Formularen erstellten erfüllen W3C XML digitale Signaturen Spezifikationen. 
+Während die erste Kategorie von Signaturen auf die Formularvorlage (XSN-Datei) zielt, zielt die zweite Kategorie auf die tatsächlichen vom Benutzer eingegebenen Daten in InfoPath-Formulardateien (XML-Dateien), wobei der Formular-Designer Benutzern das Erstellen digitaler Signaturen für die gesamte Formular oder für Abschnitte des Formulars. Es gibt grundlegende Unterschiede zwischen einer signierten Vorlage und einem signierten Formular. Obwohl dieses Dokument einige Verweise auf signierte Vorlagen enthält (als Alternative zum Erstellen eines Formulars, das als voll vertrauenswürdig ausgeführt wird), enthält es keine Details zu dieser Art der Signierung. Weitere Informationen zum Signieren von Formularvorlagen finden Sie unter [Bereitstellen von signiertEn InfoPath-Formularvorlagen](deploying-signed-infopath-form-templates.md) der Schwerpunkt in diesem Thema ist die Verwendung signierter InfoPath-XML-Formulare. Digitale Signaturen, die von InfoPath zum Signieren von Daten in XML-Formularen erstellt wurden, erfüllen die Spezifikationen des W3C-XML für digitale Signaturen. 
   
 ## <a name="digital-signatures-features"></a>Features für digitale Signaturen
 
@@ -45,7 +45,7 @@ Wenn ein Benutzer die Maus auf ein Steuerelement bewegt, das signierte Daten ent
   
 ## <a name="programmatic-support-for-digital-signatures"></a>Programmgesteuerte Unterstützung digitaler Signaturen
 
-Das InfoPath-Objektmodell umfasst Unterstützung für digitale Signaturen, wodurch Entwickler, die programmgesteuerten Zugriff auf den einzelnen signierbarer Daten in das Formular kann über die [SignedDataBlockCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlockCollection.aspx) -Klasse für die zugewiesenen jeder Gruppe von Signaturen definiert sind signiert Daten über die [SignatureCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) -Klasse, und klicken Sie auf das Zertifikat, das zum Erstellen einer Signatur über den [Zertifikat](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Certificate.aspx) -Klasse verwendet wird. Darüber hinaus ist der [Anmelde](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) -Ereignishandler in voll vertrauenswürdige Formulare, bietet Unterstützung für erweiterte Verarbeitung digitaler Signaturen in InfoPath-Formularen anpassbar. 
+Das InfoPath-Objektmodell bietet Unterstützung für digitale Signaturen, die Entwicklern den programmgesteuerten Zugriff auf die Gruppen von signierbaren Daten ermöglichen [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlockCollection.aspx) , die in der Form über die SignedDataBlockCollection-Klasse definiert werden, bis hin zu den Signaturen, die jeder Gruppe von signierte Daten über [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) die SignatureCollection-Klasse und das Zertifikat, das zum Erstellen einer Signatur über die [Certificate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Certificate.aspx) -Klasse verwendet wird. Darüber hinaus ist der [Sign](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) -Ereignishandler in voll vertrauenswürdigen Formularen anpassbar und bietet Unterstützung für die erweiterte Verarbeitung digitaler Signaturen in InfoPath-Formularen. 
   
 ## <a name="interoperability"></a>Interoperabilität
 

@@ -1,32 +1,32 @@
 ---
-title: Perspective Cell (3-D Rotation Properties Section)
+title: Perspektivische Zelle (3D-Rotations-Eigenschaften Abschnitt)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e07d97a4-9896-4b88-9e76-5a1b3f133094
-description: Bestimmt die Perspektive für eine Perspektive Drehung in Grad (0-359.9)
-ms.openlocfilehash: 6ab087b07dceda6e8f02a3ddb49a50d6159366d4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den Perspektiv Winkel für eine perspektivische Drehung in Grad (0 bis 359,9).
+ms.openlocfilehash: 4cbefc2fa147a418fa792542e1dc57c39ab2490c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307770"
 ---
-# <a name="perspective-cell-3-d-rotation-properties-section"></a>Perspective Cell (3-D Rotation Properties Section)
+# <a name="perspective-cell-3-d-rotation-properties-section"></a>Perspektivische Zelle (3D-Rotations-Eigenschaften Abschnitt)
 
-Bestimmt die Perspektive für eine Perspektive Drehung in Grad (0-359.9)
+Bestimmt den Perspektiv Winkel für eine perspektivische Drehung in Grad (0 bis 359,9).
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **Perspektive** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **Perspective** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Perspektive  <br/> |
+|Zellenname:  <br/> |Perspective  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **Perspektive** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle **Perspective** aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

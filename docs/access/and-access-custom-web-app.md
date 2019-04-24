@@ -1,35 +1,35 @@
 ---
-title: UND (Access benutzerdefinierte Web app)
+title: UND (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 44c11a0b-abca-4ea8-8770-f5c1375d8d76
-description: Verknüpft zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.
-ms.openlocfilehash: 04f7d3be3b0b0e00aeea1b1ae96b473b9b44fbad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Kombiniert zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.
+ms.openlocfilehash: 247b15b9f8039d06d08c0ce9b2fcb443e3212350
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270175"
 ---
-# <a name="and-access-custom-web-app"></a>UND (Access benutzerdefinierte Web app)
+# <a name="and-access-custom-web-app"></a>UND (Access Custom Web App)
 
-Verknüpft zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind. 
+Kombiniert zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind. 
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
  *Boolean_expression* **Und** *Boolean_expression* 
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn mehr als ein logischer Operator in einer Anweisung verwendet wird, werden die Operatoren zuerst ausgewertet. Sie können die Reihenfolge der Auswertung ändern, indem Sie Klammern verwenden.
+Wenn in einer Anweisung mehr als ein logischer Operator verwendet wird, werden die Operatoren und zuerst ausgewertet. Sie können die Reihenfolge der Auswertung mithilfe von Klammern ändern.
   
 

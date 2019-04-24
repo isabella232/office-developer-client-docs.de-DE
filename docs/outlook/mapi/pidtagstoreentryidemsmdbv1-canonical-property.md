@@ -1,5 +1,5 @@
 ---
-title: PidTagStoreEntryIdEmsmdbV1 (kanonische Eigenschaft)
+title: Kanonische Pidtagstoreentryidemsmdbv1 (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 40161358-4d41-43cf-83c7-fdd843bec87b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 505ea9ba5d7105f20f335035e42286fdab1cb1aa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c8bccbfeb7f04745a66831618deff490bc651b02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278771"
 ---
-# <a name="pidtagstoreentryidemsmdbv1-canonical-property"></a>PidTagStoreEntryIdEmsmdbV1 (kanonische Eigenschaft)
+# <a name="pidtagstoreentryidemsmdbv1-canonical-property"></a>Kanonische Pidtagstoreentryidemsmdbv1 (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält das alte Format von Eintrags-ID des Microsoft Exchange Server 2010 oder Exchange Server 2013-Nachrichtenspeichers (Microsoft Outlook 2002 und früheren Versionen).
+Enthält den alten Stil (Microsoft Outlook 2002 und frühere Versionen) der Eintrags-ID eines Microsoft Exchange Server 2010-oder Exchange Server 2013-Nachrichtenspeichers.
   
 |||
 |:-----|:-----|
@@ -30,17 +30,17 @@ Enthält das alte Format von Eintrags-ID des Microsoft Exchange Server 2010 oder
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ab Microsoft Outlook 2003, wurden in die Eintrags-IDs, wodurch Vermeidung von zusätzlichen RPCs für Verweise auf die Server-FQDNs integriert werden. Allerdings Dies macht die Eintrags-IDs länger und führt weitere Szenarien, in dem die **CompareEntryIDs** -Methode verwendet werden muss, um festzustellen, ob zwei Eintrag IDs gleichwertig sind. Die PR_STORE_ENTRYID_EMSMDB_V1-Eigenschaft (PidTagStoreIdEmsbdbV1) greift auf das ältere Format von der Exchange Server-Eintrags-ID, die von Microsoft Outlook 2002 (Microsoft Office XP) und früheren Versionen verwendet werden. Speicherplatz sparen Sie können und auch reduziert die Anzahl der **CompareEntryIDs** -Anrufe zu bestimmen, wann der Eintrag IDs gleichwertig sind erforderlich. Beachten Sie, dass mit älteren Eintrags-IDs Öffnen eines Postfachs einige zusätzliche RPCs anfallen kann, wenn ein Verweis erforderlich ist. 
+Beginnend mit Microsoft Outlook 2003 wurden die Server-FQDNs in die Eintrags-IDs integriert, wodurch zusätzliche RPCs für Verweise vermieden wurden. Dadurch werden die Eintrags-IDs jedoch länger und es werden weitere Szenarien eingeführt, in denen die **CompareEntryIDs** -Methode verwendet werden muss, um zu bestimmen, ob zwei Eintrags-IDs äquivalent sind. Die PR_STORE_ENTRYID_EMSMDB_V1 (PidTagStoreIdEmsbdbV1)-Eigenschaft greift auf das ältere Format der Exchange Server-Eintrags-ID zu, die von Microsoft Outlook 2002 (Microsoft Office XP) und früheren Versionen verwendet wird. Dies kann Speicherplatz sparen und auch die Anzahl der **CompareEntryIDs** -Aufrufe reduzieren, die erforderlich sind, um zu bestimmen, wann die Eintrags-IDs äquivalent sind. Beachten Sie, dass bei Verwendung der älteren Eintrags-IDs zum Öffnen eines Postfachs möglicherweise zusätzliche RPCs auftreten, wenn ein Verweis erforderlich ist. 
   
-Zugriff auf die Eigenschaft PR_STORE_ENTRYID_EMSMDB_V1 im Cache-Modus müssen Sie mit dem das Kennzeichen MAPI_NO_CACHE mit der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode im Cache umgehen. Wenn **PR_STORE_ENTRYID_EMSMDB_V1** nicht verfügbar ist, sollte der Code auf PR_STORE_ENTRYID zurückgreifen. Nur Outlook 2003 über Microsoft Outlook 2013 unterstützen die PR_STORE_ENTRYID_EMSMDB_V1-Eigenschaft. 
+Um im zwischengespeicherten Modus auf die PR_STORE_ENTRYID_EMSMDB_V1-Eigenschaft zuzugreifen, müssen Sie den Cache mithilfe des MAPI_NO_CACHE-Flags mit der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode umgehen. Wenn **PR_STORE_ENTRYID_EMSMDB_V1** nicht verfügbar ist, sollte der Code auf PR_STORE_ENTRYID zurückgreifen. Die PR_STORE_ENTRYID_EMSMDB_V1-Eigenschaft wird nur von Outlook 2003 über Microsoft Outlook 2013 unterstützt. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagStoreEntryId (kanonische Eigenschaft)](pidtagstoreentryid-canonical-property.md)
+[Kanonische Pidtagstoreentryid (-Eigenschaft](pidtagstoreentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -49,5 +49,5 @@ Zugriff auf die Eigenschaft PR_STORE_ENTRYID_EMSMDB_V1 im Cache-Modus müssen Si
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

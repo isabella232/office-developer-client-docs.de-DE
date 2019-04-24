@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: de3a2297-e0cc-427b-a978-52bade4d9bce
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 876c8fc3667929e3c2e7403e71e6d392981d34f1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c637b3b03a22f208123397f7277cf8968f2509a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279886"
 ---
 # <a name="objectnotification"></a>OBJECT_NOTIFICATION
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zu einem Objekt, die eine Änderung unterzogen, z. B. wird kopiert oder geändert.
+Enthält Informationen zu einem Objekt, das einer Änderung unterzogen wurde, beispielsweise kopiert oder geändert wurde.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _OBJECT_NOTIFICATION
@@ -52,15 +52,15 @@ typedef struct _OBJECT_NOTIFICATION
 
  **cbEntryID**
   
-> Anzahl der Bytes in die Eintrags-ID auf den Member **LpEntryID** zeigt. 
+> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpEntryID** -Element verwiesen wird. 
     
  **lpEntryID**
   
-> Zeiger auf die Eintrags-ID des betroffenen-Objekts.
+> Zeiger auf die Eintrags-ID des betroffenen Objekts.
     
  **ulObjType**
   
-> Typ des Objekts betroffen. Verfügbare Typen sind wie folgt:
+> Typ des betroffenen Objekts. Folgende Typen sind möglich:
     
 MAPI_STORE 
   
@@ -84,11 +84,11 @@ MAPI_MESSAGE
     
 MAPI_MAILUSER 
   
-> Messaging-Benutzer.
+> Messaging Benutzer.
     
 MAPI_ATTACH 
   
-> Attachment-Objekt.
+> Anlage.
     
 MAPI_DISTLIST 
   
@@ -96,11 +96,11 @@ MAPI_DISTLIST
     
 MAPI_PROFSECT 
   
-> Profilabschnitt.
+> Profil Abschnitt.
     
 MAPI_STATUS 
   
-> Statusobjekt.
+> Status-Objekt.
     
 MAPI_SESSION 
   
@@ -108,35 +108,35 @@ MAPI_SESSION
     
  **cbParentID**
   
-> Anzahl der Bytes in die Eintrags-ID auf den Member **LpParentID** zeigt. 
+> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpParentID** -Element verwiesen wird. 
     
  **lpParentID**
   
-> Zeiger auf die Eintrags-ID des übergeordneten Elements des betroffenen-Objekts.
+> Zeiger auf die Eintrags-ID des übergeordneten Elements des betroffenen Objekts.
     
  **cbOldID**
   
-> Anzahl der Bytes in die Eintrags-ID auf den Member **LpOldID** zeigt. 
+> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpOldID** -Element verwiesen wird. 
     
  **lpOldID**
   
-> Zeiger auf die Eintrags-ID des ursprünglichen-Objekts. Wenn das Ereignis ursprüngliche-Objekt nicht erforderlich sind, kann dieser Zeiger NULL sein.
+> Zeiger auf die Eintrags-ID des ursprünglichen Objekts. Dieser Zeiger kann NULL sein, wenn das Ereignis kein Originalobjekt erfordert.
     
  **cbOldParentID**
   
-> Anzahl der Bytes in die Eintrags-ID auf den Member **LpOldParentID** zeigt. 
+> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpOldParentID** -Element verwiesen wird. 
     
  **lpOldParentID**
   
-> Zeiger auf die Eintrags-ID des übergeordneten Elements des ursprünglichen-Objekts. Wenn das Ereignis ursprüngliche-Objekt nicht erforderlich sind, kann dieser Zeiger NULL sein.
+> Zeiger auf die Eintrags-ID des übergeordneten Elements des ursprünglichen Objekts. Dieser Zeiger kann NULL sein, wenn das Ereignis kein Originalobjekt erfordert.
     
  **lpPropTagArray**
   
-> Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die die Eigenschaft enthält tags identifizierende Eigenschaften, die von dem Ereignis betroffen. 
+> Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die die Eigenschaftstags enthält, die die vom Ereignis betroffenen Eigenschaften kennzeichnen. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **OBJECT_NOTIFICATION** -Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Wenn der Member **Info** eine **Benachrichtigung** Struktur eine **OBJECT_NOTIFICATION** -Struktur enthält, wird das **UlEventType** Mitglied der **Benachrichtigung** Struktur auf eine der folgenden Arten von Ereignissen festgelegt: 
+Die **OBJECT_NOTIFICATION** -Struktur ist ein Mitglied der Vereinigung von Strukturen, die im **Info** -Element der Benachrichtigungs [](notification.md) Struktur enthalten sind. Wenn der **Info** -Member einer **Benachrichtigungs** Struktur eine **OBJECT_NOTIFICATION** -Struktur enthält, wird das **ulEventType** -Element der **Benachrichtigungs** Struktur auf einen der folgenden Ereignistypen festgelegt: 
   
 - fnevObjectCreated
     
@@ -150,9 +150,9 @@ Die **OBJECT_NOTIFICATION** -Struktur ist ein Mitglied der Union der Strukturen,
     
 - fnevSearchComplete
     
-Das Search-complete-Ereignis, dargestellt durch den Ereignistyp FnevSearchComplete gibt an, dass die erste Suche der Domäne für ein Suchordner abgeschlossen wurde.
+Das durch den fnevSearchComplete-Ereignistyp dargestellte vollständige Suchereignis gibt an, dass die erste Suche der Domäne für einen Suchordner abgeschlossen wurde.
   
-Die folgenden Elemente, die Informationen zum ursprünglichen-Objekt enthalten sind nur in verschieben und kopieren Ereignisse verwendet. 
+Die folgenden Member, die Informationen zum ursprünglichen Objekt enthalten, werden nur in Verschiebungs-und Kopier Ereignissen verwendet. 
   
 - **cbOldID**
     
@@ -162,15 +162,15 @@ Die folgenden Elemente, die Informationen zum ursprünglichen-Objekt enthalten s
     
 - **lpOldParentID**
     
-Dieser Member gelten nicht für andere Arten von Ereignissen.
+Diese Elemente gelten nicht für die anderen Ereignistypen.
   
-Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der folgenden Tabelle beschrieben.
+Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

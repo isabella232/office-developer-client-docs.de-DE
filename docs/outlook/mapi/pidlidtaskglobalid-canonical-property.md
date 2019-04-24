@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskGlobalId (kanonische Eigenschaft)
+title: Kanonische Pidlidtaskglobalid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,51 +11,51 @@ api_name:
 api_type:
 - COM
 ms.assetid: 369d8c78-3cf6-4a55-ba14-9da0377d6ccf
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 295eb9dcc6da7b0fb6c6fd7ea0b73134ffaadb3f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303017"
 ---
-# <a name="pidlidtaskglobalid-canonical-property"></a>PidLidTaskGlobalId (kanonische Eigenschaft)
+# <a name="pidlidtaskglobalid-canonical-property"></a>Kanonische Pidlidtaskglobalid (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einer vorhandenen Aufgabe anhand einer GUID, beim Empfang einer Aufgabenantwort oder Vorgang aktualisiert.
+Sucht nach dem Empfang einer Aufgaben Antwort oder einer Vorgangsaktualisierung nach einer vorhandenen Aufgabe mithilfe einer GUID.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidTaskGlobalObjId  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008519  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
+|Long-ID (Deckel):  <br/> |0x00008519  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft bleibt für nicht zugewiesene Aufgaben nicht festgelegt ist.
+Diese Eigenschaft wird für nicht zugewiesene Vorgänge beibehalten.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
 [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.
+> Definiert mehrere Objekte, die das elektronische Äquivalent von Aufgaben, Vorgangszuordnungen und Vorgangsaktualisierungen modellieren.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -67,5 +67,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

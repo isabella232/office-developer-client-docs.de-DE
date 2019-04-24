@@ -7,53 +7,53 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d2dfaeed-7635-4c6b-9c35-b955ca1a85e9
-description: 'Sie haben verschiedene Möglichkeiten, die Sie einen Anbieter für Outlook Social Connector (OSC) debuggen können:'
+description: 'Es gibt mehrere Möglichkeiten zum Debuggen eines OSC-Anbieters (Outlook Social Connector):'
 ms.openlocfilehash: 39deb7b6c0b11460826bdbf1957ffd8404d926e5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281069"
 ---
 # <a name="debugging-a-provider"></a>Debuggen eines Providers
 
-Sie haben verschiedene Möglichkeiten, die Sie einen Anbieter für Outlook Social Connector (OSC) debuggen können: 
+Es gibt mehrere Möglichkeiten zum Debuggen eines OSC-Anbieters (Outlook Social Connector): 
   
-- Mithilfe von Debug-Befehle in der Menübandkomponente der Office Fluent-Benutzeroberfläche in Outlook oder der unterstützenden Office-Clientanwendung, die dazu führen, dass die OSC verschiedene Aktionen ausführen.
+- Durch Verwenden von Debug-Befehlen in der Menüband-Komponente der Office Fluent-Benutzeroberfläche in Outlook oder der unterstützenden Office-Clientanwendung, damit OSC verschiedene Aktionen ausführen kann.
     
-- Mithilfe von Fiddler Trace-API-Aufrufe und XML, die zwischen einem sozialen Netzwerk und den OSC-Anbieter gesendet
+- Durch die Verwendung von Fiddler zum Nachverfolgen von API-aufrufen und XML, die zwischen einem sozialen Netzwerk und seinem OSC-Anbieter gesendet werden
     
-## <a name="debug-buttons"></a>Debuggen von Schaltflächen
+## <a name="debug-buttons"></a>Debug-Schaltflächen
 
-Die Erweiterbarkeit des OSC-Providers bietet die Möglichkeit zum Debuggen eines OSC-Providers. Um einen Anbieter zu debuggen, Erstellen einer `DebugProviders` Wert des Typs DWORD-Wert in der Windows-Registrierung unter der `SocialConnector` wichtige (wie in der folgenden Zeile dargestellt), und legen Sie die `DebugProviders` Wert auf 1. 
+Die OSC-Anbieter Erweiterbarkeit bietet die Möglichkeit zum Debuggen eines OSC-Anbieters. Erstellen Sie zum Debuggen eines Anbieters `DebugProviders` in der Windows-Registrierung unter dem `SocialConnector` Schlüssel einen Wert vom Typ DWORD (wie in der folgenden Abbildung dargestellt), und `DebugProviders` legen Sie den Wert auf 1 fest. 
   
 `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector`
   
-Standardmäßig ist das Debuggen Anbieter deaktiviert. Wenn die `DebugProviders` Wert ist nicht vorhanden, oder es vorhanden ist und auf einen Wert von 0 Anbieter Debuggen festgelegt ist deaktiviert. 
+Standardmäßig ist das Anbieter Debugging deaktiviert. Wenn der `DebugProviders` Wert nicht vorhanden ist, oder er vorhanden ist und auf den Wert 0 festgelegt ist, wird das Anbieter Debugging deaktiviert. 
   
-Wenn der Anbieter das Debuggen aktiviert ist, zeigt die OSC ein Warnungsdialogfeld mit ausführlichen Fehlerinformationen, wenn ein Fehler tritt auf, und alle OSC-Anbieter XML für das OSC-Anbieter XML-Schema überprüft. Basierend auf den Namespace für eine XML-Zeichenfolge angegeben, wird der OSC 1.0-Schemadatei OutlookSocialProvider.xsd ein OSC-Anbieters mit OSC 1.0 entwickelt überprüft. Ein OSC-Anbieters mithilfe von OSC 1.1 entwickelt oder später anhand der Schemadatei OutlookSocialProvider_1.1.xsd überprüft wird. Bei Verwendung der `DebugProviders` -Wert, die Debug-Benachrichtigung wird für alle geladenen Anbieter anstelle eines bestimmten Anbieters angezeigt. 
+Wenn das Anbieter Debugging aktiviert ist, zeigt der OSC ein Warnungsdialogfeld mit ausführlichen Fehlerinformationen an, wenn ein Fehler auftritt, und überprüft alle OSC-Anbieter-XML-Daten anhand des OSC-Anbieter-XML-Schemas. Basierend auf dem für eine XML-Zeichenfolge angegebenen Namespace wird ein mit OSC 1,0 entwickelter OSC-Anbieter anhand der OSC 1,0-Schemadatei OutlookSocialProvider. xsd validiert. Ein OSC-Anbieter, der mit OSC 1,1 oder höher entwickelt wurde, wird anhand der Schemadatei OutlookSocialProvider_ 1.1. xsd validiert. Wenn Sie den `DebugProviders` Wert verwenden, wird die Debug-Warnung für alle geladenen Anbieter anstelle eines bestimmten Anbieters angezeigt. 
   
-Um Debug Schaltflächen anzuzeigen, die beim Debuggen eines Providers helfen kann, Erstellen einer `ShowDebugButtons` Wert des Typs DWORD-Wert in der Windows-Registrierung unter der `SocialConnector` -Taste, und legen Sie die `ShowDebugButtons` Wert auf 1. Legen Sie zum Ausblenden der Befehlsleisten-Schaltflächen Debuggen die `ShowDebugButtons` Wert auf 0. 
+Zum Anzeigen von Debug-Schaltflächen, die Ihnen beim Debuggen eines Anbieters helfen können, erstellen Sie in der Windows- `SocialConnector` Registrierung unter dem Schlüssel einen `ShowDebugButtons` `ShowDebugButtons` Wert vom Typ DWORD, und legen Sie den Wert auf 1 fest. Um die Debug-Befehlsleistenschaltflächen auszublenden, `ShowDebugButtons` legen Sie den Wert auf 0 fest. 
   
-Für Outlook 2010 und Clientanwendungen gegenüber Office 2013 werden die Debug-Schaltflächen auf der Registerkarte ' **Add-Ins** ' des Menübands Explorer angezeigt. Für Outlook 2007 und Outlook 2003 werden die Debug-Schaltflächen auf der standard-Befehlsleiste für das Outlook Explorer-Fenster angezeigt. 
+Für Outlook 2010-und Clientanwendungen seit Office 2013 werden die Debug-Schaltflächen auf der Registerkarte **Add-ins** des Explorer-Menübands angezeigt. Für Outlook 2007 und Outlook 2003 werden die Debug-Schaltflächen in der Standardbefehls Leiste des Outlook-Explorer-Fensters angezeigt. 
   
-Die folgende Tabelle beschreibt die Debug-Schaltflächen.
+In der folgenden Tabelle werden die Debug-Schaltflächen beschrieben.
   
-|**Schaltfläche Debuggen**|**Funktion**|
+|**Debug-Schaltfläche**|**Funktion**|
 |:-----|:-----|
-|Kontakte synchronisieren  <br/> |Bewirkt, dass das osc bilden den OSC-Anbieter zur zwischengespeicherten Kontakte nur aufgefordert.  <br/> |
-|Synchronisierung der globalen Adressliste  <br/> |Bewirkt, dass die OSC zum Auffüllen von Daten aus der globalen Adressliste von Exchange zu Outlook-Kontakten.  <br/> |
-|Kategorie Cache ungültig  <br/> |Bewirkt, dass das osc bilden, die Kategorieliste für jeden Speicher erneut zu laden, wenn die Aktivitätsfeed aktualisiert wird.  <br/> |
+|Kontakte synchronisieren  <br/> |Veranlasst OSC, den OSC-Anbieter nur für zwischengespeicherte Kontakte zu Fragen.  <br/> |
+|GAL-Synchronisierung  <br/> |Veranlasst OSC, Daten aus der globalen Exchange-Adressliste in Outlook-Kontakte aufzufüllen.  <br/> |
+|Ungültiger Category-Cache  <br/> |Veranlasst OSC, die Kategorienliste für jeden Speicher neu zu laden, wenn der Aktivitätsfeed aktualisiert wird.  <br/> |
    
 ## <a name="fiddler"></a>Fiddler
 
-Fiddler ist ein Tool zum Debuggen von über das Netzwerk, die API-Aufrufe, die von Ihrem Dienstanbieter in sozialen Netzwerken gesendet und dem sozialen Netzwerk an Ihren Anbieter gesendeten XML überprüfen. Fiddler steht unter [Fiddler Web Debugging Proxy](https://www.fiddler2.com/fiddler2/version.asp)zum Download zur Verfügung.
+Fiddler ist ein Over-The-Wire-Debugging-Tool zum Überprüfen der API-Aufrufe, die von Ihrem Anbieter an das soziale Netzwerk gesendet werden, und XML, die vom sozialen Netzwerk an Ihren Anbieter gesendet werden. Fiddler kann unter [Fiddler Web Debugging Proxy](https://www.fiddler2.com/fiddler2/version.asp)heruntergeladen werden.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [QuickSteps für Informationen zum Entwickeln eines Providers](quick-steps-for-learning-to-develop-a-provider.md)  
-- [Synchronisieren von Freunde und Aktivitäten](synchronizing-friends-and-activities.md) 
-- [Bewährte Methoden für das Entwickeln eines Providers](best-practices-for-developing-a-provider.md)
+- [Schnelle Schritte für die Entwicklung eines Anbieters](quick-steps-for-learning-to-develop-a-provider.md)  
+- [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md) 
+- [Bewährte Methoden für die Entwicklung eines Anbieters](best-practices-for-developing-a-provider.md)
 - [OSC - Typische Aufrufsequenzen](osc-typical-calling-sequences.md)  
 - [Entwickeln eines Providers mit dem OSC-XML-Schema](developing-a-provider-with-the-osc-xml-schema.md)  
 - [Vorbereitung der Freigabe eines OSC-Providers](getting-ready-to-release-an-osc-provider.md)

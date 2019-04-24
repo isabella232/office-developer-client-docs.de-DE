@@ -1,5 +1,5 @@
 ---
-title: YRulerOrigin Cell (Ruler &amp; Grid Section)
+title: Zelle YRulerOrigin Cell (Ruler &amp; Grid section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,28 +9,28 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5d21b64f-a559-76ef-06df-d24c048cc6ef
 description: Gibt den Nullpunkt auf dem Y-Achsenlineal des Zeichenblatts an.
-ms.openlocfilehash: 143f372d66ee25e90608a9b2eb252a99e7bcc52f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ead9ca453bfeb86f32a943950b297b9b629de95d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284965"
 ---
-# <a name="yrulerorigin-cell-ruler-amp-grid-section"></a>YRulerOrigin Cell (Ruler &amp; Grid Section)
+# <a name="yrulerorigin-cell-ruler-amp-grid-section"></a>Zelle YRulerOrigin Cell (Ruler &amp; Grid section)
 
 Gibt den Nullpunkt auf dem Y-Achsenlineal des Zeichenblatts an.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Zelle entspricht der vertikalen Option **Linealursprung** in die **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ). 
+Diese Zelle entspricht der Option vertikales **Lineal NULL** im Dialogfeld **** ** &amp; Lineal (Raster** ) (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil). 
   
-Wenn Sie einen Verweis auf die Zelle YRulerOrigin aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle YRulerOrigin aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |YRulerOrigin  <br/> |
+|Zellenname:  <br/> |Zelle YRulerOrigin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle YRulerOrigin aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle YRulerOrigin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

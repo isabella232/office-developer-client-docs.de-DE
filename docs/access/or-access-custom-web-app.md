@@ -1,45 +1,45 @@
 ---
-title: ODER (Access benutzerdefinierte Web app)
+title: ODER (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e7190523-87cf-4e04-aef4-d229776cd16b
-description: Kombiniert zwei mögliche Ursachen. Gibt TRUE zurück, wenn eine der beiden folgenden Bedingungen zutrifft.
-ms.openlocfilehash: 8ccf4a12644f45e80756f72013d42310fece07fd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Kombiniert zwei Bedingungen. Gibt TRUE zurück, wenn eine der beiden Bedingungen true ist.
+ms.openlocfilehash: ffa605d2403c5aa8396d89f78d0bb7dd11343540
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308071"
 ---
-# <a name="or-access-custom-web-app"></a>ODER (Access benutzerdefinierte Web app)
+# <a name="or-access-custom-web-app"></a>ODER (Access Custom Web App)
 
-Kombiniert zwei mögliche Ursachen. Gibt TRUE zurück, wenn eine der beiden folgenden Bedingungen zutrifft.
+Kombiniert zwei Bedingungen. Gibt TRUE zurück, wenn eine der beiden Bedingungen true ist.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- *Boolescher Ausdruck* **Oder** *Boolescher Ausdruck* 
+ *Boolean-Wert* **Oder** *Boolean-Wert* 
   
-Der **oder** -Operator verwendet das folgende Argument. 
+Der **or** -Operator verwendet das folgende Argument. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Boolescher Ausdruck*  <br/> |Ein beliebiger gültiger Ausdruck, der TRUE oder FALSE zurückgibt.  <br/> |
+| *BoolescherAusdruck*  <br/> |Ein beliebiger gültiger Ausdruck, der TRUE oder FALSE zurückgibt.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn mehr als ein logischer Operator in einer Anweisung verwendet wird, werden nach **und** Operatoren **oder** Operatoren ausgewertet. Jedoch können Sie die Reihenfolge der Auswertung ändern, indem Sie Klammern verwenden. 
+Wenn mehrere logische Operatoren in einer Anweisung verwendet werden, werden Operatoren **** **und** Operatoren ausgewertet. Sie können die Reihenfolge der Auswertung jedoch mithilfe von Klammern ändern. 
   
-Die folgende Tabelle zeigt das Ergebnis des Operators **oder** . 
+Die folgende Tabelle zeigt das Ergebnis des **or** -Operators. 
   
-||**"TRUE"**|**"FALSE"**|
+||**TRUE**|**FALSE**|
 |:-----|:-----|:-----|
-|**"TRUE"** <br/> |TRUE  <br/> |TRUE  <br/> |
-|**"FALSE"** <br/> |TRUE  <br/> |FALSE  <br/> |
+|**TRUE** <br/> |TRUE  <br/> |TRUE  <br/> |
+|**FALSE** <br/> |TRUE  <br/> |FALSE  <br/> |
    
 

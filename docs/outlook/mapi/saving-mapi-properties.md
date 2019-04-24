@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: ed0c14f9-3dcf-49ad-928e-ba872d4d6b5a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5125fc8f3e36087a05802c38127a8402ae67d468
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5d4653492028151d7e19a5d5490c8c8949002a4f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283086"
 ---
 # <a name="saving-mapi-properties"></a>Speichern von MAPI-Eigenschaften
 
@@ -21,17 +21,17 @@ ms.locfileid: "22576302"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Viele Objekte unterstützen eine Transaktionsmodell der Verarbeitung bei dem Eigenschaften nicht permanent geändert werden, bis sie zu einem späteren Zeitpunkt übernommen werden. Während die Änderungen an Eigenschaften von den Methoden [IMAPIProp::SetProps](imapiprop-setprops.md) und [IMAPIProp::DeleteProps](imapiprop-deleteprops.md) behandelt werden, wird der Schritt Commit von [IMAPIProp::SaveChanges](imapiprop-savechanges.md)behandelt. Es ist nicht erst nach einem erfolgreichen Aufruf von **SaveChanges** , dass die aktuellste Version von Eigenschaften eines Objekts zugegriffen werden kann. 
+Viele Objekte unterstützen ein Transaktionsmodell der Verarbeitung, wodurch Änderungen an Eigenschaften nicht dauerhaft vorgenommen werden, bis Sie zu einem späteren Zeitpunkt ein Commit ausgeführt werden. Während Änderungen an Eigenschaften von den [IMAPIProp::](imapiprop-setprops.md) SetProps-und [IMAPIProp::D-eleteprops](imapiprop-deleteprops.md) -Methoden verarbeitet werden, wird der Commit-Schritt von [IMAPIProp:: SaveChanges](imapiprop-savechanges.md)verarbeitet. Erst nach einem erfolgreichen Aufruf von SaveChanges **** kann auf die neueste Version der Eigenschaften eines Objekts zugegriffen werden. 
   
-Wenn **SaveChanges** den Fehlerwert MAPI_E_OBJECT_CHANGED zurückgegeben wird, ist dies eine Warnung, dass ein anderer Client gleichzeitig Änderungen auf das Objekt übergeben wird. Es ist möglich, und öffnen je nach der Anbieter das Objekt erfolgreich für mehrere Clients zum Implementieren eines Objekts durch Aufrufen seiner **OpenEntry** -Methode mit der MAPI_MODIFY-Flag, Gewähren von Lese-/Schreibzugriff. Das Objekt, das solcher zurückgegeben wird, dass ein Anruf **OpenEntry** eine Momentaufnahme der Speicherdaten ist. Jedem nachfolgenden Versuch, diese Daten ändern kann vorherige Versuch zu überschreiben. 
+Wenn **SaveChanges** den Fehlerwert MAPI_E_OBJECT_CHANGED zurückgibt, ist dies eine Warnung, dass ein anderer Client gleichzeitig Änderungen an dem Objekt ausführt. Abhängig vom Anbieter, der das Objekt implementiert, ist es möglich, dass mehrere Clients ein Objekt erfolgreich öffnen, indem Sie die **OpenEntry** -Methode mit dem MAPI_MODIFY-Flag-Satz aufrufen, um Ihnen Lese-/Schreibzugriff zu erteilen. Das Objekt, das von einem solchen **OpenEntry** -Aufruf zurückgegeben wird, ist eine Momentaufnahme der Speicherdaten. Jeder nachfolgende Versuch, diese Daten zu ändern, kann den vorherigen Versuch überschreiben. 
   
-Beimkontakt MAPI_E_OBJECT_CHANGED aus **SaveChanges**, muss der Client die Option aus, um: 
+Wenn Sie MAPI_E_OBJECT_CHANGED von **SaveChanges**empfangen, hat der Client folgende Möglichkeiten: 
   
-- Erstellen Sie eine Kopie des Objekts, um die Änderungen zu halten.
+- Erstellen Sie eine Kopie des Objekts, um die Änderungen zu speichern.
     
-- Stellen Sie einen weiteren Anruf zu **SaveChanges**, FORCE_SAVE angeben. 
+- Führen Sie einen weiteren **** Aufruf von SaveChanges aus, und geben Sie FORCE_SAVE. 
     
-Durch den Aufruf von **SaveChanges** das Flag FORCE_SAVE überschreibt das vorherige speichern ein und ändert ein Client dauerhaft entfernt. 
+Das **** Aufrufen von SaveChanges mit dem FORCE_SAVE-Flag überschreibt den vorherigen Speicher und macht die Änderungen eines Clients dauerhaft. 
   
 ## <a name="see-also"></a>Siehe auch
 

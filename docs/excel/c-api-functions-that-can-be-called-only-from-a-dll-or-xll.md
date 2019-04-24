@@ -5,26 +5,26 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Funktionen [excel 2007], C-api aus Dll oder Xll aufgerufen
+- Funktionen [Excel 2007], c-API, die von dll oder XLL aufgerufen wird
 localization_priority: Normal
 ms.assetid: 87c9e75b-c364-4428-a169-010886313b85
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 7935d86d1c0a460bcbec85157429d99242a73620
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e6d2d3c824c482e3726cdaefa869393002a80f44
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301652"
 ---
 # <a name="c-api-functions-that-can-be-called-only-from-a-dll-or-xll"></a>C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Der C-API enthält 15 Rückruffunktionen für Microsoft Excel, die nur mithilfe der **Excel4**, **Excel4v**, **Excel12**oder **Excel12v** Funktionen (oder durch eine dieser Funktionen indirekt mithilfe der Funktionen zum Framework **Excel aufgerufen werden können **oder **Excel12f**). Dies bedeutet, dass sie nur aus einer DLL oder XLL aufgerufen werden können.
+Die C-API bietet 15 Microsoft Excel-Rückruffunktionen, die nur mithilfe der **Excel4**-, **Excel4v**-, **Excel12**-oder **Excel12v** -Funktionen (oder durch eine dieser Funktionen indirekt mithilfe der Frameworkfunktionen Excel) aufgerufen werden können. ** **oder **Excel12f**). Das heißt, Sie können nur aus einer DLL oder XLL aufgerufen werden.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[Bereichsgröße](xlabort.md)
+[xlAbort](xlabort.md)
   
 [xlAsyncReturn](xlasyncreturn.md)
   
@@ -52,7 +52,7 @@ Der C-API enthält 15 Rückruffunktionen für Microsoft Excel, die nur mithilfe 
   
 [xlRunningOnCluster](xlrunningoncluster.md)
   
-[gleich xlSet](xlset.md)
+[xlSet](xlset.md)
   
 [xlSheetId](xlsheetid.md)
   

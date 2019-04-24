@@ -6,38 +6,38 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c67b46bb-0eb2-f094-2870-c320bd488705
-description: Mischt zwei Farben in dem Verhältnis, das vom Float-Parameter angegeben.
-ms.openlocfilehash: 61993cea9eed6583d62004e1c756368b67c7bb33
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Fügt zwei Farben in den durch den Parameter float angegebenen Anteil ein.
+ms.openlocfilehash: 0a231954370416be201183026424c79942204e12
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303297"
 ---
 # <a name="blend-function"></a>BLEND Function
 
-Mischt zwei Farben in dem Verhältnis, das vom _Float_ -Parameter angegeben. 
+Fügt zwei Farben in den durch den Parameter _float_ angegebenen Anteil ein. 
   
 ## <a name="syntax"></a>Syntax
 
-BLEND (** *color1* **, ** *color2* **, ** *Float [0,1]* **) 
+BLEND (* * *color1* * *, * * *color2* * *, * * *float [0, 1]* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _color1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Visio oder der RGB-Wert der ersten Farbe.  <br/> |
-| _color2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
-| _Float [0,1]_ <br/> |Erforderlich  <br/> |**Float** <br/> |Das Verhältnis, in dem _color2_ und _color1_, jeweils gemischt. Eine reelle Zahl zwischen 0 und 1.  <br/> |
+| _color1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex von Visio oder der RGB-Wert der ersten Farbe.  <br/> |
+| _color2_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex von Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
+| _float [0, 1]_ <br/> |Erforderlich  <br/> |**Float** <br/> |Der Anteil, in dem _color2_ und _color1_. Eine reelle Zahl zwischen 0 und 1.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
  **RGB**
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die zurückgegebene Farbe wird durch die relativen Proportionen in dem _color2_ und _color1_, als vom _Float_ -Parameter angegebenen gemischt bestimmt. Beispielsweise ist _Float_ 0,25, die zurückgegebene Farbe zusammengesetzten 75 % der _color1_ und 25 % der _color2_. 
+Die zurückgegebene Farbe wird durch die relativen Proportionen bestimmt, in denen _color2_ und _color1_, wie durch den _float_ -Parameter angegeben, gemischt werden sollen. Wenn _float_ beispielsweise 0,25 ist, besteht die zurückgegebene farbe aus 75% aus _color1_ und 25% aus _color2_. 
   
-Eine andere Möglichkeit, denken ist, dass der Punkt entlang der Color-Spektrum von _color1_ _color2_ _Float_ -Wert entspricht. Aus diesem Grund Zahlen kleiner (näher null) für _Float_ erzeugen Farbverlauf näher zu _color1_, während größere (näher 1) Zahlen Farbverlauf näher zu _color2_erstellen.
+Eine andere Möglichkeit, darüber nachzudenken, ist, dass der _float_ -Wert dem Punkt entlang des Farbspektrums von _color1_ zu _color2_entspricht. Daher werden kleinere Zahlen (näher an null) für _float_ -Produkte näher an _color1_angeglichen, während größere Zahlen (näher bei 1) eine Verschmelzung näher an _color2_erzeugen.
   
 

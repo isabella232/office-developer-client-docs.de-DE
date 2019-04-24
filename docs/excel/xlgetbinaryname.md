@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlGetBinaryName
 keywords:
-- Xlgetbinaryname-Funktion [excel 2007]
+- xlgetbinaryname-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 66af3f78-65b5-42e0-82f9-ffd639d41751
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: d2332967e798b43a350c0733cd7398e2a921add6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6d063213e3f83451e8a072e71f0878174214f73e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303836"
 ---
 # <a name="xlgetbinaryname"></a>xlGetBinaryName
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Verwendet, um ein Handle für das von der [Funktion "xlDefineBinaryName"](xldefinebinaryname.md)gespeicherte Daten zurückgeben. Mit einem definierten Namen für die binäre Daten werden mit der Arbeitsmappe gespeichert und namentlich jederzeit zugegriffen werden können. Weitere Informationen finden Sie unter "Binär nennen Bereich Einschränkung" unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md).
+Wird verwendet, um ein Handle für von der [xlDefineBinaryName-Funktion](xldefinebinaryname.md)gespeicherte Daten zurückzugeben. Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen aufgerufen werden. Weitere Informationen finden Sie unter "Beschränkung des binären Namensbereichs" in [bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlGetBinaryName, LPXLOPER12 pxRes, 1, LPXLOPER12 pxName);
@@ -30,17 +30,17 @@ Excel12(xlGetBinaryName, LPXLOPER12 pxRes, 1, LPXLOPER12 pxName);
 
 ## <a name="parameters"></a>Parameter
 
-_pxRes_ (**XltypeBigData** oder **XltypeErr**)
+_pxRes_ (**xltypeBigData** oder **xltypeErr**)
   
-Bigdata-Struktur, die angibt, dass die abgerufenen Daten oder ein Fehler ist die Daten konnten nicht abgerufen werden, oder der Name ist nicht definiert. Wenn die Funktion zurückgibt, das **Hdata** Mitglied der **XLOPER**/ **XLOPER12** enthält einen Handle für die benannten Daten.  _PxRes_ sollte in einem Aufruf von **XlFree** bei Bedarf nicht mehr freigegeben werden. 
+Eine Struktur, die die abgerufenen Daten angibt, oder ein Fehler ist, dass die Daten nicht abgerufen oder der Name nicht definiert ist. Wenn die Funktion zurückgibt, enthält das **hdata** -Element des **XLOPER**/ -**XLOPER12** ein Handle für die benannten Daten.  _pxRes_ sollte bei einem Aufruf von **xlFree** freigegeben werden, wenn Sie nicht mehr benötigt werden. 
   
-_pxName_ (**XltypeStr**)
+_pxName_ (**xltypeStr**)
   
-Eine Zeichenfolge zur Angabe der Name der Daten.
+Eine Zeichenfolge, die den Namen der Daten angibt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Microsoft Excel besitzt das Arbeitsspeicher-Handle in **Hdata**zurückgegeben. In Windows ist das Handle einer globalen Arbeitsspeicher Handle (von der Funktion **GlobalAlloc** zugewiesen). 
+Microsoft Excel besitzt das in **hdata**zurückgegebene Speicherhandle. In Windows ist das Handle ein globaler Speicherhandle (der von der **GlobalAlloc** -Funktion zugeordnet wird). 
   
 ## <a name="see-also"></a>Siehe auch
 

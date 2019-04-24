@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 70b3788d-d8cf-79bb-d929-86aceba49345
 description: Gibt den hyperbolischen Kosinus eines Winkels zurück.
-ms.openlocfilehash: dea8da40f72884b52dd6d845f9ed3d49f7310b3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 49582ba4b441b3eea1f860c3109b8d8d632e07b7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282936"
 ---
 # <a name="cosh-function"></a>COSHYP-Funktion
 
@@ -22,17 +22,17 @@ Gibt den hyperbolischen Kosinus eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-COSH ( *Winkel*) 
+COSH ( *Angle*) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen hyperbolischer Kosinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen hyperbolischer Kosinus abgerufen werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Die COSH-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in *Winkel* angeben. 
+Die COSH-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im *Winkel* an. 
   
 ## <a name="example"></a>Beispiel
 

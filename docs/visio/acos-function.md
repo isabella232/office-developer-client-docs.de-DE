@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251394
 localization_priority: Normal
 ms.assetid: 75807d66-6483-2785-567c-d238067e1e52
-description: Gibt den Arkuskosinus einer Zahl, beispielsweise der Winkel, dessen Kosinus Zahl ist.
-ms.openlocfilehash: 53dbf70793b463193fb038cdc5e51991b4332c16
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Arkuskosinus-Wert zurück, beispielsweise den Winkel, dessen Kosinus Zahl ist.
+ms.openlocfilehash: fbfb5f6d9879e2e398fb2ae66d8b5c8a76f9251c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283100"
 ---
 # <a name="acos-function"></a>ARCCOS-Funktion
 
-Gibt den Arkuskosinus einer Zahl, beispielsweise der Winkel, dessen Kosinus *Zahl* ist. 
+Gibt den Arkuskosinus-Wert zurück, beispielsweise den Winkel, dessen Kosinus *Zahl* ist. 
   
 ## <a name="syntax"></a>Syntax
 
-ACOS ( *Anzahl*) 
+ACOS ( *Zahl*) 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Wert muss im Bereich von-1 \<= Anzahl \<= 1 oder ein #NUM! Fehler wird zurückgegeben. Der resultierende Winkel liegt im Bereich von 0 bis \<= Winkel \<= PI Bogenmaß (0 \<= Winkel \<= 180 Grad).
+Der Eingabewert muss im Range-1 \<= Number \<= 1 oder ein #NUM! zurückgegeben. Der resultierende Winkel befindet sich im Range \<0 = \<Angle = Pi Radiant \<(0 \<= Angle = 180 Grad).
   
 ## <a name="example"></a>Beispiel
 
-ACOS(0) 
+ACOS (0) 
   
 Gibt 90 Grad zurück. 
   

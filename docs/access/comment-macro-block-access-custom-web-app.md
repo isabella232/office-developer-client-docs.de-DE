@@ -1,26 +1,26 @@
 ---
-title: Makro-Block auskommentieren (Access benutzerdefinierte Web app)
+title: Kommentar Makro Block (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1d8977a0-e787-415f-adc0-2e0c53a364a4
-description: Die Kommentar -Anweisung kann zum Einfügen erläuternder Hinweise in einem Makro verwendet werden.
-ms.openlocfilehash: 4dd8c869494fcc0dd038ef9414a625cffd9c23f1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Die Kommentar-Anweisung kann zum Einfügen erläuternder Hinweise in einem Makro verwendet werden.
+ms.openlocfilehash: 93404f24750fd63d42127f71d3593d863c2bf1ba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282278"
 ---
-# <a name="comment-macro-block-access-custom-web-app"></a>Makro-Block auskommentieren (Access benutzerdefinierte Web app)
+# <a name="comment-macro-block-access-custom-web-app"></a>Kommentar Makro Block (Access Custom Web App)
 
-Die **Kommentar** -Anweisung kann zum Einfügen erläuternder Hinweise in einem Makro verwendet werden. 
+Die **Kommentar**-Anweisung kann zum Einfügen erläuternder Hinweise in einem Makro verwendet werden. 
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein **Kommentar** kann eine Länge von bis zu 1000 Zeichen aufweisen. Standardmäßig wird jedoch nur die erste Zeile des Kommentars angezeigt. 
   

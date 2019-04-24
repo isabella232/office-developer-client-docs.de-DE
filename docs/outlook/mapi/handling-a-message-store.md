@@ -8,49 +8,49 @@ api_type:
 - COM
 ms.assetid: 7eca0e1f-a855-4ef7-b892-0bddee59de5e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0712407a7882c449c065cb6816694b4a1611036f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 933dbd95a4b2f82d78e6e8035936eb2be4ba09ec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299482"
 ---
 # <a name="handling-a-message-store"></a>Behandeln eines Nachrichtenspeichers
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Behandeln eines Nachrichtenspeichers stellen einen wichtigen Bestandteil des Clients Reihe von Aufgaben. Diese Aufgaben umfassen das Öffnen, kopieren, verschieben, hinzufügen und Löschen von Ordnern und Nachrichten, Anzeigen von verschiedenen Tabellen, Festlegen von Eigenschaften und Zugriffsebenen steuern.
+Die Behandlung eines Nachrichtenspeichers ist ein wichtiger Teil des Aufgaben Satzes eines beliebigen Clients. Zu diesen Aufgaben gehört das Öffnen, kopieren, bewegen, hinzufügen und Löschen von Ordnern und Nachrichten, das Anzeigen verschiedener Tabellen, das Festlegen von Eigenschaften und das Steuern von Zugriffsebenen.
 
-- [Öffnen Sie einen Nachrichtenspeicher](opening-a-message-store.md): Beschreibt, wie Sie eine oder mehrere Nachrichtenspeicher während einer Sitzung zu öffnen.
+- [Öffnen eines Nachrichtenspeichers](opening-a-message-store.md): Beschreibt, wie ein oder mehrere Nachrichtenspeicher während einer Sitzung geöffnet werden.
     
-- [Öffnen Sie den standardmäßigen Nachrichtenspeicher](opening-the-default-message-store.md): Beschreibt, wie Sie den Standard-Nachrichtenspeicher zu öffnen.
+- [Öffnen des Standardnachrichten Speichers](opening-the-default-message-store.md): Beschreibt das Öffnen des Standardnachrichten Speichers.
     
-- [Validating und Initialisieren eines Nachrichtenspeichers](validating-and-initializing-a-message-store.md): Initialisieren und Überprüfen eines Nachrichtenspeichers beschrieben.
+- Über [prüfen und Initialisieren eines Nachrichtenspeichers](validating-and-initializing-a-message-store.md): Beschreibt, wie ein Nachrichtenspeicher initialisiert und überprüft wird.
     
-- [Suchen Sie einen Nachrichtenspeicher](searching-a-message-store.md): Beschreibt, wie Sie sehen Sie sich einen oder mehrere Ordner suchen Sie nach Nachrichten, die den Suchkriterien entsprechen.
+- Durch [Suchen eines Nachrichtenspeichers](searching-a-message-store.md): Beschreibt, wie Sie in einem oder mehreren Ordnern nach Nachrichten suchen, die den Suchkriterien entsprechen.
     
-- [Auswählen eines Ordners empfangen](selecting-a-receive-folder.md): Beschreibt die Schritte zum Erstellen eines Ordners empfangen.
+- [Auswählen eines Empfangs Ordners](selecting-a-receive-folder.md): Beschreibt die Schritte zum Erstellen eines Empfangs Ordners.
     
-- [Öffnen Sie einen Speicherordner Nachricht](opening-a-message-store-folder.md): Beschreibt, wie Sie einen Ordner zu öffnen.
+- [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md): Beschreibt, wie ein Ordner geöffnet wird.
     
-- [Eine Tabelle der Ordner-Inhalt angezeigt](displaying-a-folder-contents-table.md): Beschreibt, wie der Ordner Inhaltstabelle anzuzeigen, zusammenfassende Informationen zu allen der Nachricht enthält.
+- [Anzeigen einer Ordnerinhaltstabelle](displaying-a-folder-contents-table.md): Beschreibt, wie die Tabelle mit den Ordnerinhalten angezeigt wird, die zusammenfassende Informationen zu allen Nachrichten enthält.
     
-- [Durchlaufen Sie den Ordner Posteingang](traversing-the-inbox-folder.md): Beschreibt, wie Sie alle Nachrichten im Posteingang zu durchlaufen.
+- Durch [laufen des Posteingangsordners](traversing-the-inbox-folder.md): Beschreibt, wie Sie alle Nachrichten im Posteingang durchgehen.
     
-- [Kopieren oder Verschieben einer Nachricht oder eines Ordners](copying-or-moving-a-message-or-a-folder.md): Beschreibt, wie Sie eine oder mehrere Nachrichten kopieren oder verschieben.
+- [Kopieren oder Verschieben einer Nachricht oder eines Ordners](copying-or-moving-a-message-or-a-folder.md): Beschreibt, wie eine oder mehrere Nachrichten kopiert oder verschoben werden.
     
-- [Öffnen einer Nachricht](opening-a-message.md): Beschreibt, wie Sie eine Nachricht zu öffnen.
+- [Öffnen einer Nachricht](opening-a-message.md): Beschreibt, wie eine Nachricht geöffnet wird.
     
-- [Suchen Sie das Symbol für eine Nachricht](finding-the-icon-for-a-message.md): Beschreibt, wie Sie ein Symbol zu suchen, die eine Nachricht zugeordnet ist.
+- [Suchen des Symbols für eine Nachricht](finding-the-icon-for-a-message.md): Beschreibt, wie Sie ein Symbol finden, das einer Nachricht zugeordnet ist.
     
-- [Öffnen Sie eine Ansicht Beschreibung](opening-a-view-descriptor.md): Beschreibt, wie Sie eine Beschreibung für die Ansicht zu öffnen.
+- [Öffnen eines Ansichts Deskriptors](opening-a-view-descriptor.md): Beschreibt, wie ein Ansichts Deskriptor geöffnet wird.
     
-- [Löschen einer Nachricht](deleting-a-message.md): Beschreibt, wie Sie eine Nachricht zu löschen.
+- [Löschen einer Nachricht](deleting-a-message.md): Beschreibt das Löschen einer Nachricht.
     
-- [Speichern einer Nachricht im Posteingang](saving-a-message-in-the-inbox.md): Beschreibt, wie Sie eine Nachricht im Posteingang zu speichern.
+- [Speichern einer Nachricht im Posteingang](saving-a-message-in-the-inbox.md): Beschreibt, wie eine Nachricht im Posteingang gespeichert wird.
     
-- [Suchen von gesendet oder gespeicherte Nachrichten](finding-sent-or-saved-messages.md): Beschreibt, wie Sie alle ausgehende Nachrichten suchen, die gespeichert oder gesendet wurden.
+- [Suchen nach gesendeten oder gespeicherten Nachrichten](finding-sent-or-saved-messages.md): Beschreibt, wie alle ausgehenden Nachrichten gefunden werden, die gespeichert oder gesendet wurden.
     
-- [Nachverfolgen der Unterhaltungen](tracking-conversations.md): Beschreibt, wie Unterhaltungen nachverfolgt.
+- [Nach](tracking-conversations.md)verfolgen von Unterhaltungen: Beschreibt, wie Konversationen nachverfolgt werden.
     
 

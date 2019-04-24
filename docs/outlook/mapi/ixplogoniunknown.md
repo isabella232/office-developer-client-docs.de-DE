@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4d24ecaf-11d0-4362-8207-be3407736d7b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ecfbf33641c86d4f162c521466ca2bf0b79a61d5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 46f4e3fc8f554f332ab9b1d8a6cb33e9e21dd9a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282796"
 ---
 # <a name="ixplogon--iunknown"></a>IXPLogon : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den MAPI-Warteschlange Zugriff auf einem Transportdienstes. 
+Gibt dem MAPI-Spooler Zugriff auf einen Transportanbieter. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Transport Logon-Objekten  <br/> |
-|Implementiert von:  <br/> |Transportanbieter  <br/> |
-|Aufgerufen von:  <br/> |Die MAPI-Warteschlange  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Transport Anmeldeobjekte  <br/> |
+|Implementiert von:  <br/> |Transport Anbieter  <br/> |
+|Aufgerufen von:  <br/> |Der MAPI-Spooler  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IXPLogon  <br/> |
 |Zeigertyp:  <br/> |LXPLOGON  <br/> |
    
@@ -40,18 +40,18 @@ Ermöglicht den MAPI-Warteschlange Zugriff auf einem Transportdienstes.
 
 |||
 |:-----|:-----|
-|[AddressTypes](ixplogon-addresstypes.md) <br/> |Gibt die Typen von Empfängern, die der Adressbuchhierarchie behandelt.  <br/> |
-|**RegisterOptions** <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
-|[TransportNotify](ixplogon-transportnotify.md) <br/> |Signalisiert das Auftreten eines Ereignisses zu den der Transportdienst Benachrichtigung angefordert.  <br/> |
-|[Im Leerlauf](ixplogon-idle.md) <br/> |Gibt an, dass das System im Leerlauf, der Adressbuchhierarchie niedriger Priorität Operationen aktivieren.  <br/> |
-|[TransportLogoff](ixplogon-transportlogoff.md) <br/> |Initiiert den Prozess abmelden.  <br/> |
-|[SubmitMessage](ixplogon-submitmessage.md) <br/> |Gibt an, dass die MAPI-Warteschlange eine Nachricht an der Adressbuchhierarchie übermittelt wurde.  <br/> |
-|[EndMessage](ixplogon-endmessage.md) <br/> |Der Transportdienst informiert werden, dass die MAPI-Warteschlange die Verarbeitung für eine ausgehende Nachricht abgeschlossen.  <br/> |
-|[Umfrage](ixplogon-poll.md) <br/> |Gibt an, ob der Adressbuchhierarchie mindestens eine eingehende Nachricht empfangen hat.  <br/> |
-|[StartMessage](ixplogon-startmessage.md) <br/> |Initiiert die Übertragung von einer eingehenden Nachricht aus der Adressbuchhierarchie auf die MAPI-Warteschlange.  <br/> |
-|[OpenStatusEntry](ixplogon-openstatusentry.md) <br/> |Öffnet die Adressbuchhierarchie Status-Objekt.  <br/> |
-|[ValidateState](ixplogon-validatestate.md) <br/> |Externe Status der Adressbuchhierarchie überprüft.  <br/> |
-|[FlushQueues](ixplogon-flushqueues.md) <br/> |Fordert, dass der Adressbuchhierarchie sofort alle ausstehende eingehende oder ausgehende Nachrichten übermitteln.  <br/> |
+|[AddressTypes](ixplogon-addresstypes.md) <br/> |Gibt die Empfängertypen zurück, die vom Transportanbieter verarbeitet werden.  <br/> |
+|**Registeroptions** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|[TransportNotify](ixplogon-transportnotify.md) <br/> |Signalisiert das Eintreffen eines Ereignisses, über das der Transportanbieter eine Benachrichtigung angefordert hat.  <br/> |
+|[Leerlauf](ixplogon-idle.md) <br/> |Gibt an, dass das System im Leerlauf ist, sodass der Transportanbieter Vorgänge mit niedriger Priorität ausführen kann.  <br/> |
+|[TransportLogoff](ixplogon-transportlogoff.md) <br/> |Initiiert den ABMELDEPROZESS.  <br/> |
+|[SubmitMessage](ixplogon-submitmessage.md) <br/> |Gibt an, dass der MAPI-Spooler eine Nachricht für den zu übermittelnden Transportanbieter hat.  <br/> |
+|[EndMessage](ixplogon-endmessage.md) <br/> |Informiert den Transportanbieter darüber, dass der MAPI-Spooler seine Verarbeitung für eine ausgehende Nachricht abgeschlossen hat.  <br/> |
+|[Abfragen](ixplogon-poll.md) <br/> |Gibt an, ob der Transportanbieter eine oder mehrere eingehende Nachrichten empfangen hat.  <br/> |
+|[StartMessage](ixplogon-startmessage.md) <br/> |Initiiert die Übertragung einer eingehenden Nachricht vom Transportanbieter an den MAPI-Spooler.  <br/> |
+|[OpenStatusEntry](ixplogon-openstatusentry.md) <br/> |Öffnet das Status-Objekt des Transportanbieters.  <br/> |
+|[ValidateState](ixplogon-validatestate.md) <br/> |Überprüft den externen Status des Transportanbieters.  <br/> |
+|[FlushQueues](ixplogon-flushqueues.md) <br/> |Fordert, dass der Transportanbieter alle ausstehenden eingehenden oder ausgehenden Nachrichten sofort bereitstellt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

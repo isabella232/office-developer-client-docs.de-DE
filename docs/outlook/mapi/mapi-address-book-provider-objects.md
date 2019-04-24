@@ -1,5 +1,5 @@
 ---
-title: MAPI-Address Book Anbieter-Objekten
+title: MAPI-Adressbuchanbieter-Objekte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 2fcff3b3-01e7-4758-9c49-0af41abf0d6b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2963e65f97534cbba368b909fef79c982e81ec26
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e7e4ef528716f05d198862afa61947fd3993042d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298156"
 ---
-# <a name="mapi-address-book-provider-objects"></a>MAPI-Address Book Anbieter-Objekten
+# <a name="mapi-address-book-provider-objects"></a>MAPI-Adressbuchanbieter-Objekte
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zusätzlich zu den standardmäßigen Provider und Logon-Objekten Implementieren von adressbuchanbietern implementierte Address Book Containern, Verteilerlisten, messaging Benutzer, Tabellen, Status-Objekten und Steuerelementen.
+Zusätzlich zu den standardmäßigen Anbieter-und anmeldeobjekten implementieren Adressbuchanbieter Adressbuchcontainer, Verteilerlisten, Messagingbenutzer, Tabellen, Statusobjekte und Steuerelemente.
   
-Die folgende Abbildung zeigt diese Objekte, die entsprechenden Schnittstellen und die MAPI-Komponenten, die sie verwenden.
+Die folgende Abbildung zeigt diese Objekte, ihre entsprechenden Schnittstellen und die MAPI-Komponenten, die Sie verwenden.
   
-![Objekte, die von adressbuchanbietern implementierte] (media/amapi_64.gif "Objekte, die von adressbuchanbietern implementierte")
+Von ![Adressbuch Anbietern implementierte Objekte] Von (media/amapi_64.gif "Adressbuch Anbietern implementierte Objekte")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Dienstanbieterobjekten](mapi-service-provider-objects.md)
+- [MAPI-Dienstanbieter Objekte](mapi-service-provider-objects.md)
 

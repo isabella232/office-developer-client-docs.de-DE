@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d0c54092-86a3-47e0-8133-72e119e74b65
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 88b6f220f812f419b3f881aaa7f70a22186b589e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: efc7f7a2fa703004afe361d766e0209ba40ffe46
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286939"
 ---
 # <a name="imapicontainergethierarchytable"></a>IMAPIContainer::GetHierarchyTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf den Container Hierarchietabelle.
+Gibt einen Zeiger auf die Hierarchietabelle des Containers zurück.
   
 ```cpp
 HRESULT GetHierarchyTable(
@@ -38,29 +38,29 @@ HRESULT GetHierarchyTable(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie Informationen in der Tabelle zurückgegeben werden. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie Informationen in der Tabelle zurückgegeben werden. Die folgenden Flags können festgelegt werden:
     
 CONVENIENT_DEPTH 
   
-> Füllt die Hierarchietabelle mit Container mit Daten aus mehreren Ebenen. Wenn CONVENIENT_DEPTH nicht festgelegt ist, enthält die Hierarchietabelle nur den Container direkt untergeordnete Container.
+> Füllt die Hierarchietabelle mit Containern aus mehreren Ebenen. Wenn CONVENIENT_DEPTH nicht festgelegt ist, enthält die Hierarchietabelle nur die unmittelbaren untergeordneten Containern des Behälters.
     
 MAPI_DEFERRED_ERRORS 
   
-> **GetHierarchyTable** können erfolgreich, möglicherweise beendet, bevor die Tabelle mit dem Anrufer verfügbar gemacht wird. Wenn die Tabelle nicht verfügbar ist, kann die nachfolgenden Tabelle Anrufen ein Fehler ausgelöst. 
+> **GetHierarchy** kann erfolgreich zurückgegeben werden, möglicherweise bevor die Tabelle dem Aufrufer zur Verfügung gestellt wird. Wenn die Tabelle nicht verfügbar ist, kann durch einen nachfolgenden Tabellen Aufruf ein Fehler ausgelöst werden. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Anforderungen, die die Spalten, die Zeichenfolgendaten enthalten im Unicode-Format zurückgegeben werden soll. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sollte die Zeichenfolgen in ANSI-Format zurückgegeben werden. 
+> Fordert an, dass die Spalten, die Zeichenfolgendaten enthalten, im Unicode-Format zurückgegeben werden. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sollten die Zeichenfolgen im ANSI-Format zurückgegeben werden. 
     
 SHOW_SOFT_DELETES
   
-> Zeigt Elemente, die derzeit als soft gekennzeichnet sind gelöscht – d. h., sie sind in der Aufbewahrungszeit für gelöschte Elemente Zeit Phase.
+> Zeigt Elemente an, die derzeit als weich gelöscht markiert sind, d. h., Sie befinden sich in der Aufbewahrungszeit für gelöschte Elemente.
     
  _lppTable_
   
-> [out] Ein Zeiger auf einen Zeiger auf die Hierarchietabelle.
+> Out Ein Zeiger auf einen Zeiger auf die Hierarchietabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -68,43 +68,43 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_NO_SUPPORT 
   
-> Der Container hat keine untergeordnete Container und keine Hierarchietabelle bereitstellen.
+> Der Container verfügt über keine untergeordneten Container und kann keine Hierarchietabelle bereitstellen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIContainer::GetHierarchyTable** -Methode gibt einen Zeiger auf die Hierarchietabelle eines Containers. Eine Hierarchietabelle enthält zusammenfassende Informationen zu der untergeordnete Container im Container. Ordner Hierarchietabellen enthalten Informationen über Unterordner; Address Book Hierarchietabellen enthalten Informationen über untergeordnete Address Book Container und Verteilerlisten. 
+Die **IMAPIContainer:: GetHierarchy** -Methode gibt einen Zeiger auf die Hierarchietabelle eines Containers zurück. Eine Hierarchietabelle enthält zusammenfassende Informationen zu den untergeordneten Containern im Container. Ordner Hierarchietabellen enthalten Informationen zu Unterordnern; Adressbuch-Hierarchietabellen enthalten Informationen zu untergeordneten Adressbuch Containern und Verteilerlisten. 
   
-Es ist möglich, dass einige Container haben keine untergeordnete Container. Diese Container zurück MAPI_E_NO_SUPPORT aus ihrer Implementierungen von **GetHierarchyTable**.
+Für einige Container ist es möglich, keine untergeordneten Container zu haben. Diese Container geben MAPI_E_NO_SUPPORT aus ihren Implementierungen **** von gethierarchyid zurück.
   
-Wenn das Flag CONVENIENT_DEPTH festgelegt ist, enthält jede Zeile in der Hierarchietabelle die **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md))-Eigenschaft auch als Spalte. **PR_DEPTH** gibt die Ebene der einzelnen Container relativ zum Container, der die Tabelle implementiert. Implementieren des Containers direkt untergeordnetes Element, für den Container Tiefe 0 (null), untergeordnete Container in NULL Tiefe Container sind finden Sie auf eine Tiefe usw.. Die Werte der **PR_DEPTH** sequenziell erhöht, wie die Hierarchie der Ebenen – Revcovery. 
+Wenn das CONVENIENT_DEPTH-Flag festgelegt ist, enthält jede Zeile in der Hierarchietabelle auch die **PR_DEPTH** ([pidtagdepth (](pidtagdepth-canonical-property.md))-Eigenschaft als Spalte. **PR_DEPTH** gibt die Ebene der einzelnen Container relativ zu dem Container an, der die Tabelle implementiert. Die unmittelbaren untergeordneten Container des implementierenden Containers befinden sich in der Tiefe Null, untergeordnete Container in den Containern mit der Tiefe 1 und so weiter. Die Werte von **PR_DEPTH** werden sequenziell erhöht, wenn sich die Hierarchie der Ebenen vertieft. 
   
-Eine vollständige Liste der erforderlichen und optionalen Spalten in Hierarchietabellen finden Sie unter [Hierarchietabellen](hierarchy-tables.md).
+Eine vollständige Liste der erforderlichen und optionalen Spalten in den Hierarchietabellen finden Sie unter [Hierarchietabellen](hierarchy-tables.md).
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn Sie eine Hierarchietabelle für den Container unterstützen, müssen Sie auch Folgendes:
+Wenn Sie eine Hierarchietabelle für ihren Container unterstützen, müssen Sie auch die folgenden Schritte ausführen:
   
-- Unterstützung von einem Aufruf des Containers [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode zum Öffnen der **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))-Eigenschaft.
+- Unterstützen Sie einen Aufruf der [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers, um die **PR_CONTAINER_HIERARCHY** ([pidtagcontainerhierarchy (](pidtagcontainerhierarchy-canonical-property.md))-Eigenschaft zu öffnen.
     
-- Geben Sie einen Anruf an den Container [IMAPIProp::GetPropList](imapiprop-getproplist.md) oder [IMAPIProp::GetProps](imapiprop-getprops.md) Methoden **PR_CONTAINER_HIERARCHY** zurück. 
+- Zurückgeben von **PR_CONTAINER_HIERARCHY** von einem Aufruf der [IMAPIProp::](imapiprop-getproplist.md) getproplist-oder [IMAPIProp::](imapiprop-getprops.md) GetProps-Methoden des Containers. 
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Zeichenfolge und der binären Inhalt Tabellenspalten können abgeschnitten werden. In der Regel zurückgeben Anbieter 255 Zeichen. Da Sie im Voraus wissen können nicht, ob eine Tabelle abgeschnittene Spalten enthält, wird davon ausgegangen Sie, dass eine Spalte abgeschnitten wird, wenn die Länge der Spalte 510 maximal 255 Bytes ist. Sie können immer den vollständigen Wert der abgeschnittene Spalte an, falls erforderlich, direkt aus dem Objekt mithilfe der Eintrags-ID um zu öffnen und anschließendes Aufrufen der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode abrufen. 
+Tabellenspalten für String-und Binary-Inhalte können abgeschnitten werden. In der Regel geben Anbieter 255 Zeichen zurück. Da Sie nicht vorher wissen können, ob eine Tabelle abgeschnittene Spalten enthält, wird davon ausgegangen, dass eine Spalte abgeschnitten wird, wenn die Länge der Spalte 255 oder 510 Byte beträgt. Sie können den vollständigen Wert einer abgeschnittenen Spalte, falls erforderlich, jederzeit direkt aus dem Objekt abrufen, indem Sie die Eintrags-ID verwenden, um Sie zu öffnen und dann die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode aufzurufen. 
   
-Je nach der Implementierung des Anbieters, Einschränkungen und Sortierung Vorgänge können auf die gesamte Zeichenfolge oder auf die abgeschnittene Version dieser Zeichenfolge anwenden. Darüber hinaus sind Anbieter nicht unbedingt festgelegten Reihenfolge sortieren berücksichtigt, [SSortOrderSet](ssortorderset.md) für Hierarchietabellen angegeben. 
+Abhängig von der Implementierung des Anbieters können Einschränkungen und Sortiervorgänge auf die gesamte Zeichenfolge oder auf die gekürzte Version dieser Zeichenfolge angewendet werden. Darüber hinaus werden die für die Hierarchietabellen angegebenen [SSortOrderSet](ssortorderset.md) für Speicheranbieter nicht unbedingt berücksichtigt. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|HierarchyTableTreeCtrl.cpp  <br/> |CHierarchyTableTreeCtrl::GetHierarchyTable  <br/> |Die CHierarchyTableTreeCtrl-Klasse wird mit **GetHierarchyTable** Hierarchietabellen anzeigen in einem Strukturansicht-Steuerelement abgerufen.  <br/> |
+|HierarchyTableTreeCtrl. cpp  <br/> |CHierarchyTableTreeCtrl:: getHierarchy.  <br/> |Die CHierarchyTableTreeCtrl-Klasse **** verwendet gethierarchyable, um Hierarchietabellen abzurufen, die in einem Strukturansicht-Steuerelement angezeigt werden sollen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -116,7 +116,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable : IUnknown](imapitableiunknown.md)
   
-[PidTagContainerHierarchy (kanonische Eigenschaft)](pidtagcontainerhierarchy-canonical-property.md)
+[Kanonische Pidtagcontainerhierarchy (-Eigenschaft](pidtagcontainerhierarchy-canonical-property.md)
   
 [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagListSubscribe (kanonische Eigenschaft)
+title: Kanonische Pidtaglistsubscribe (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,60 +11,60 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 97387a82-8e40-4c76-818c-2229fac12e01
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: bee11c495d7f1ef21f9af70e6aa89f8c0d0f78b4
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279657"
 ---
-# <a name="pidtaglistsubscribe-canonical-property"></a>PidTagListSubscribe (kanonische Eigenschaft)
+# <a name="pidtaglistsubscribe-canonical-property"></a>Kanonische Pidtaglistsubscribe (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Wert der Liste abonnieren Header ein Feld einer Nachricht Multipurpose Internet Mail Extensions (MIME).
+Enthält den Wert des Listen-subscribe-Kopf Felds für MIME-Nachrichten (Multipurpose Internet Mail Extensions).
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_LIST_SUBSCRIBE, PR_LIST_SUBSCRIBE_A, PR_LIST_SUBSCRIBE_W  <br/> |
 |Kennung:  <br/> |0x1044  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Verschiedenes  <br/> |
+|Bereich:  <br/> |Sonstiges  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um eine Liste abonnieren Kopfzeilenfeld generiert werden soll, müssen die Clients den Wert dieser Eigenschaften auf den gewünschten Wert festlegen. MIME-Writer müssen den Wert dieser Eigenschaften in der Liste abonnieren Kopfzeilenfeld kopieren.
+Um ein Listen-subscribe-Kopfzeilenfeld zu generieren, müssen Clients den Wert dieser Eigenschaften auf den gewünschten Wert festlegen. MIME-Writer müssen den Wert dieser Eigenschaften in das Kopfzeilenfeld Listen-subscribe kopieren.
   
-Wenn den Wert der Eigenschaften dieser Art Server-bezogene festlegen möchten, müssen MIME-Clients die Kopfzeile Felder wie in der folgenden Tabelle angegebenen schreiben.
+Um den Wert solcher serverbezogenen Eigenschaften festzulegen, müssen die in der folgenden Tabelle angegebenen Kopfzeilenfelder von MIME-Clients geschrieben werden.
   
-|**Eigenschaft**|**Bevorzugte Header-Feldname**|**Alternative Header-Feldname**|
+|**Eigenschaft**|**Bevorzugter Kopfzeilen Feldname**|**Name des alternativen Kopfzeilenfelds**|
 |:-----|:-----|:-----|
-|**PidTagListSubscribe** <br/> |Liste abonnieren  <br/> |Abonnieren von X-Liste  <br/> |
+|**Pidtaglistsubscribe (** <br/> |Liste abonnieren  <br/> |X-list-subscribe  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
+> Konvertiert von Internet Standard-e-Mail-Konventionen in Nachrichtenobjekte.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -76,5 +76,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

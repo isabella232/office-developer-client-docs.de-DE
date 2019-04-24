@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 594e3aac-a00f-422e-8e7a-949e4c9a3f8d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9c6a6d210230fc305aef46371c22f67b3d445a81
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ec1933f80f211c7c381f9de6b15d414932b9a78e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286587"
 ---
 # <a name="imapiformcontainercalcformpropset"></a>IMAPIFormContainer::CalcFormPropSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein Array der Eigenschaften verwendet, die für alle Formen in einem Formular Container installiert.
+Gibt ein Array der Eigenschaften zurück, die von allen in einem Formular Container installierten Formularen verwendet werden.
   
 ```cpp
 HRESULT CalcFormPropSet(
@@ -38,25 +38,25 @@ HRESULT CalcFormPropSet(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie das Array im Parameter _PpResults_ -Eigenschaft zurückgegeben werden. Die folgenden Kennzeichen können festgelegt werden: 
+> in Eine Bitmaske von Flags, die steuert, wie das Eigenschaftenarray im _ppResults_ -Parameter zurückgegeben wird. Die folgenden Flags können festgelegt werden: 
     
 FORMPROPSET_INTERSECTION 
   
-> Das zurückgegebene Array enthält die Schnittmenge der Eigenschaften der Forms.
+> Das zurückgegebene Array enthält den Schnittpunkt der Eigenschaften der Formulare.
     
 FORMPROPSET_UNION 
   
-> Das zurückgegebene Array enthält die Vereinigung der Forms-Eigenschaften.
+> Das zurückgegebene Array enthält die Vereinigung der Eigenschaften der Formulare.
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgen, die in das Array zurückgegeben werden im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die im Array zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _ppResults_
   
-> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur. Diese Struktur enthält alle Eigenschaften, die von den installierten Formularen verwendet. 
+> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur. Diese Struktur enthält alle Eigenschaften, die von den installierten Formularen verwendet werden. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -64,21 +64,21 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen rufen Sie die **IMAPIFormContainer::CalcFormPropSet** -Methode, um ein Array von Eigenschaften, die alle Formen in einem Formular Container installiert abzurufen. **IMAPIFormContainer::CalcFormPropSet** funktioniert wie die [IMAPIFormMgr::CalcFormPropSet](imapiformmgr-calcformpropset.md) -Methode, außer dass sie für jedes Formular, das in einem bestimmten Container registriert ausgeführt wird. 
+Client Anwendungen rufen die **IMAPIFormContainer:: CalcFormPropSet** -Methode auf, um ein Array von Eigenschaften abzurufen, die von allen in einem Formular Container installierten Formularen verwendet werden. **IMAPIFormContainer:: CalcFormPropSet** funktioniert wie die [IMAPIFormMgr:: CalcFormPropSet](imapiformmgr-calcformpropset.md) -Methode, mit der Ausnahme, dass Sie auf jedem in einem bestimmten Container registrierten Formular ausgeführt wird. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Formular Bibliothek Anbieter, die keine für Unicode-Zeichenfolgen Unterstützung sollte MAPI_E_BAD_CHARWIDTH zurückgegeben, wenn der Parameter MAPI_UNICODE übergeben wird.
+Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **IMAPIFormContainer::CalcFormPropSet** akzeptiert, Schnittmenge oder eine Union-Sätzen für die Formulare-Eigenschaft, je nachdem das Flag in den _UlFlags_ -Parameter festgelegt, und es gibt eine **SMAPIFormPropArray** -Struktur, enthält die resultierende Gruppe von Eigenschaften. 
+ **IMAPIFormContainer:: CalcFormPropSet** nimmt entweder eine Schnittmenge oder eine Vereinigung der Eigenschaftensätze der Formulare an, je nach dem im _ulFlags_ -Parameter festgelegten Flag und gibt eine **SMAPIFormPropArray** -Struktur zurück, die die die resultierende Gruppe von Eigenschaften. 
   
-Wenn ein Client die Option MAPI_UNICODE _UlFlags_übergibt, werden alle zurückgegebene Zeichenfolgen Unicode.
+Wenn ein Client das MAPI_UNICODE-Flag in _ulFlags_übergibt, sind alle zurückgegebenen Zeichenfolgen Unicode.
   
 ## <a name="see-also"></a>Siehe auch
 

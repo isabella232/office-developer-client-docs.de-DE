@@ -7,31 +7,31 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 22e3de8a-c4f2-41a4-a5b1-c5b1bf06f724
-description: 'Sie sollten die folgenden Methoden bei der Entwicklung eines Outlook Social Connector 2013 (OSC)-Anbieters erfüllen:'
-ms.openlocfilehash: a6ee9d54f33bbc855d178aba844a8f65ec92f964
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Beachten Sie beim Entwickeln eines Outlook Social Connector 2013 (OSC)-Anbieters die folgenden Methoden:'
+ms.openlocfilehash: 6a48a56d8065fb9a176ca6527340c99551cdb52a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281237"
 ---
 # <a name="best-practices-for-developing-a-provider"></a>Bewährte Methoden für die Entwicklung eines Anbieters
 
-Sie sollten die folgenden Methoden bei der Entwicklung eines Outlook Social Connector 2013 (OSC)-Anbieters erfüllen:
+Beachten Sie beim Entwickeln eines Outlook Social Connector 2013 (OSC)-Anbieters die folgenden Methoden:
   
-- Aus Sicherheitsgründen sollten Rollenanbieter, die Kommunikation über das Internet mit Servern das Protokoll HTTPS (Hypertext Transfer Protocol (HTTP) mit Secure Socket Layer (SSL)) verwenden. Anderenfalls besteht ein Risiko dar, ob e-Mail-Adressen, Aktivitäten für soziale Netzwerke und anderer Benutzer Daten abgefangen oder unterwegs verfügbar gemacht werden können.
+- Aus Sicherheitsgründen sollten Anbieter, die mit Servern über das Internet kommunizieren, das HTTPS (Hypertext Transfer Protocol (HTTP) mit Secure Socket Layer (SSL))-Protokoll verwenden. Andernfalls besteht das Risiko, dass e-Mail-Adressen, Aktivitäten für soziale Netzwerke und andere Benutzerdaten während der Übertragung abgefangen oder offen gelegt werden können.
     
-- Wenn Sie einen OSC-Anbieter für ein Drittanbieter-soziales Netzwerk entwickeln, muss der Anbieter Vertragsbedingungen für das soziale Netzwerk entsprechen.
+- Wenn Sie einen OSC-Anbieter für ein soziales Netzwerk eines Drittanbieters entwickeln, muss Ihr Anbieter die Nutzungsbedingungen für das soziale Netzwerk einhalten.
     
-- Um die Größe des Downloadpakets Anbieter zu minimieren, erstellen Sie den Anbieter mit einem systemeigenen Compiler wie C++ oder ein anderes Programm, das eine COM-Komponente erstellen kann.
+- Um die Größe des Anbieter-Downloadpakets zu minimieren, erstellen Sie den Anbieter mit einem systemeigenen Compiler wie C++ oder einem anderen Tool, das eine COM-Komponente erstellen kann.
     
-- Erstellen Sie in Ihren Anbieter einen eindeutigen Benutzer-Agent, der zum Nachverfolgen von Aufrufe durch den Anbieter für soziale Netzwerke in sozialen Netzwerken gesendet wird.
+- Erstellen Sie in Ihrem Anbieter einen eindeutigen Benutzer-Agent, der an das soziale Netzwerk gesendet wird, um Anrufe des Anbieters an das soziale Netzwerk nachzuverfolgen.
     
-- Die Methode [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) sollten nicht zum Aufrufen von sozialen Netzwerk über das Internet zum Abrufen der Funktionalität des Anbieters verlassen. Beispielsweise können Benutzer offline Starten von Outlook; Wenn die OSC- **GetCapabilities Anrufe** , und es keine Verbindung zum Netzwerk wird, wird der Anruf **GetCapabilities** keine gültige **Funktionen** XML zurück. Bewährt hat sich zum Speichern von **Funktionen** XML als Ressource in Ihrem Anbieter. 
+- Die [ISocialProvider:: getCapabilities](isocialprovider-getcapabilities.md) -Methode sollte sich nicht darauf verlassen, das soziale Netzwerk über das Internet aufzurufen, um die Funktionen des Anbieters zu erhalten. Beispielsweise können Benutzer Outlook offline starten; Wenn der OSC **getCapabilities** aufruft und keine Netzwerkverbindung besteht, gibt der getCapabilities-Aufruf keine gültigen XML- **Funktionen** zurück. **** Die bewährte Methode besteht darin, XML- **Funktionen** als Ressource in Ihrem Anbieter zu speichern. 
     
-- Ihre OSC-Anbieter kann Anrufe mit einem sozialen Netzwerk umfangreichem generieren. Erwägen Sie je nach der rechtlichen Hinweise für das soziale Netzwerk Zwischenspeichern Freunde zu einem Outlook-Ordner, um die Anzahl der Anrufe von der OSC an Ihren Anbieter und wiederum von Ihrem Anbieter in sozialen Netzwerken reduziert.
+- Ihr OSC-Anbieter kann eine beträchtliche Anzahl von Anrufen an ein soziales Netzwerk generieren. Ziehen Sie in Abhängigkeit von den Nutzungsbedingungen für Ihr soziales Netzwerk das Zwischenspeichern von Freunden in einen Outlook-Ordner in Betracht, um die Anzahl von Anrufen vom OSC zu Ihrem Anbieter zu verringern, und zwar von Ihrem Anbieter zum sozialen Netzwerk.
     
-- Office 2013 ist in 32-Bit- und 64-Bit-Versionen verfügbar. Office prior to Office 2010-Versionen stehen nur in einer 32-Bit-Version zur Verfügung. Die Standardinstallation von Office 2013 64-Bit-Version von Windows ist 32-Bit. Wenn Sie beabsichtigen, die 64-Bit-Version von der OSC zu unterstützen, die mit Office 2013 64-Bit-Version installiert ist, müssen Sie auch eine 64-Bit-Version des Anbieters freigeben. 
+- Office 2013 ist sowohl in 32-Bit-als auch in 64-Bit-Versionen verfügbar. Versionen von Office vor Office 2010 sind nur in einer 32-Bit-Version verfügbar. Die Standardinstallation von Office 2013 auf 64-Bit-Windows ist 32-Bit. Wenn Sie die 64-Bit-Version des mit 64-Bit Office 2013 installierten OSC unterstützen möchten, müssen Sie auch eine 64-Bit-Version Ihres Anbieters freigeben. 
     
 ## <a name="see-also"></a>Siehe auch
 

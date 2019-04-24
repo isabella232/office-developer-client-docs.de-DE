@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1d2dc6e9-735d-4b5b-af6f-adf6a32a666d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 363a85e1c6f111936b16e471eda6b9f962f8b65d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f873ad5234460f9f1781c7427b60d285f7486196
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282698"
 ---
 # <a name="sizedsproptagarray"></a>SizedSPropTagArray
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [SPropTagArray](sproptagarray.md) -Struktur, die eine angegebene Anzahl von Eigenschaftentags enthält. 
+Erstellt eine benannte [SPropTagArray](sproptagarray.md) -Struktur, die eine angegebene Anzahl von Property-Tags enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**SPropTagArray** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SPropTagArray** <br/> |
    
 ```cpp
 SizedSPropTagArray (_ctag, _name)
@@ -36,19 +36,19 @@ SizedSPropTagArray (_ctag, _name)
 
 ## <a name="parameters"></a>Parameter
 
-__ctag_
+__CTAG_
   
-> Anzahl der Eigenschaftentags in die neue Struktur enthalten sein.
+> Die Anzahl der Eigenschaftstags, die in die neue Struktur eingeschlossen werden sollen.
     
-__Namen_
+__Name_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie das Makro **SizedSPropTagArray** , um ein Array Tag-Eigenschaft mit expliziten Grenzen zu erstellen. 
+Verwenden Sie das **SizedSPropTagArray** -Makro, um ein Property-Tag-Array mit expliziten Begrenzungen zu erstellen. 
   
-Um die neue Struktur verwenden, die als Zeiger auf eine **SPropTagArray** -Struktur aus dem Makro **SizedSPropTagArray** erzeugt, führen Sie die folgende Umwandlung: 
+Um die neue Struktur zu verwenden, die aus dem **SizedSPropTagArray** -Makro als Zeiger auf eine **SPropTagArray** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpPropTagArray = (LPPropTagArray) &SizedSPropTagArray;

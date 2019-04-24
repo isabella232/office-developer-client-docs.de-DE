@@ -1,5 +1,5 @@
 ---
-title: Eigenschaft zum Ausblenden der Besprechungsaktualisierungsoption
+title: Option-Eigenschaft für Besprechungs Update ausblenden
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,46 +11,46 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9e7b413f-a88a-a4ec-8d57-1f3058cce4a4
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 65255e14fd849d730e92bd86027642eef2c687bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ac7c891fa05560231a257f9bd52ccbbfe564b49d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299510"
 ---
-# <a name="hide-meeting-update-option-property"></a>Eigenschaft zum Ausblenden der Besprechungsaktualisierungsoption
+# <a name="hide-meeting-update-option-property"></a>Option-Eigenschaft für Besprechungs Update ausblenden
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Blendet die Option zum besprechungsaktualisierungen auf nur hinzugefügte oder gelöschte Teilnehmer senden.
+Blendet die Option zum Senden von Besprechungs Updates an nur hinzugefügte oder gelöschte Teilnehmer aus.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Eingeblendet auf:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) Objekt  <br/> |
-|Erstellt:  <br/> |Speicheranbieter  <br/> |
-|Durch zugegriffen:  <br/> |Outlook und andere clients  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Zugriffstyp:  <br/> |Lese-/Schreibzugriff  <br/> |
+|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
+|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
+|Eigenschafts:  <br/> |PT_BOOLEAN  <br/> |
+|Zugriffstyp:  <br/> |Lesen/Schreiben  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Um die Store-Funktionalität bereitzustellen, Speicheranbieter implementieren muss [IMAPIProp: IUnknown](imapipropiunknown.md) und ein Tag valid-Eigenschaft für alle diese Eigenschaften übergeben Sie einen Anruf [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) zurückzukehren. Wenn das Eigenschafts-Tag für alle diese Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss Speicheranbieter auch den richtige Wert zurückgeben. [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) , zum Abrufen oder Festlegen dieser Eigenschaften Anbieter aufgerufen. 
+Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMAPIProp: IUnknown](imapipropiunknown.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zunächst mit dem [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) um das Eigenschafts-Tag zu erhalten und geben Sie in [IMAPIProp::GetProps](imapiprop-getprops.md) zum Abrufen des Werts dieser Eigenschaftentag. Beim Aufruf von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md), geben Sie die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, das Eingabeparameter _LppPropNames_auf zeigt:
+Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
   
 |||
 |:-----|:-----|
-|x LpGuid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|UlKind:  <br/> |MNID_STRING  <br/> |
-|Kind.lpwstrName:  <br/> |L "Urn: Schemas-Microsoft-Com:office:outlook #allornonemtgupdatedlg"  <br/> |
+|lpGuid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|ulKind:  <br/> |MNID_STRING  <br/> |
+|Art. lpwstrName:  <br/> |L "urn: Schemas-Microsoft-com: Office: Outlook # allornonemtgupdatedlg"  <br/> |
    
-Ein Anbieter anmelden, der einen Server verwendet, um die Besprechung aktualisiert senden kann das Dialogfeld **Aktualisierung an Teilnehmer senden** ändern. Diese Funktion ist hilfreich, da bei der Server eine besprechungsaktualisierung sendet, der Server nicht bekannt ist, welche Teilnehmer hinzugefügt oder vom Benutzer gegenüber der ursprünglichen Besprechungsanfrage gelöscht wurden. Wenn diese Eigenschaft auf **true**festgelegt ist, wird die Option **Update nur für hinzugefügten oder gelöschten Teilnehmer senden** nicht im Dialogfeld **Aktualisierung an Teilnehmer senden** angezeigt. 
+Ein Informationsspeicher Anbieter, der einen Server zum Senden von Besprechungs Updates verwendet, kann das Dialogfeld **Update an Teilnehmer senden** ändern. Diese Funktion ist nützlich, da der Server nicht weiß, welche Teilnehmer seit der anfänglichen Besprechungsanfrage vom Benutzer hinzugefügt oder gelöscht wurden. Wenn diese Eigenschaft auf **true**festgelegt ist, wird die Option **nur Update an hinzugefügte oder gelöschte Teilnehmer senden** nicht im Dialogfeld an **Teilnehmer senden** angezeigt. 
   
-Diese Eigenschaft wird ignoriert, wenn die Version von Outlook einer älteren Version als Microsoft Office Outlook 2003 Service Pack 1 ist oder wenn der Wert **false**lautet.
+Diese Eigenschaft wird ignoriert, wenn die Version von Outlook älter als Microsoft Office Outlook 2003 Service Pack 1 ist, oder wenn der Wert **false**ist.
   
 

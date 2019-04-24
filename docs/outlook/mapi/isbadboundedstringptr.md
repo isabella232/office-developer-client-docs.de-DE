@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 888c60e3-7376-4d66-8ee2-ce81abafb185
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 9d5ebb0e16138c3cc65ff6fd7c635e5498c9c1ba
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278834"
 ---
 # <a name="isbadboundedstringptr"></a>IsBadBoundedStringPtr
 
@@ -21,13 +21,13 @@ ms.locfileid: "25388903"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft, ob der aufrufende Prozess Lesezugriff auf den angegebenen Bereich des Arbeitsspeichers verfügt.
+Überprüft, ob der aufrufende Prozess über Lesezugriff auf den angegebenen Arbeitsspeicher verfügt.
   
 |||
 |:-----|:-----|
-|Headerdatei:  <br/> |mapiwin.h  <br/> |
+|Headerdatei  <br/> |mapiwin. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter.  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter.  <br/> |
    
 ```cpp
 BOOL IsBadBoundedStringPtr(
@@ -40,21 +40,21 @@ BOOL IsBadBoundedStringPtr(
 
  _lpsz_
   
-> [in] Zeiger auf eine mit Null endende ASCII-Zeichenfolge.
+> in Zeiger auf eine mit NULL endende ASCII-Zeichenfolge.
     
  _cchMax_
   
-> [in] Die maximale Größe der Zeichenfolge in Zeichen. Die Funktion für Lesezugriff für alle Zeichen bis zu abschließendes Null-Zeichen der Zeichenfolge überprüft, oder bis zu die Anzahl der Zeichen, die von diesem Parameter angegebene, je nachdem, was kleiner ist. Wenn dieser Parameter auf 0 (null) ist, ist der Rückgabewert 0 (null).
+> in Die maximale Größe der Zeichenfolge in CHARs. Die Funktion überprüft den Lesezugriff in allen Zeichen bis zum abschließenden NULL-Zeichen der Zeichenfolge oder bis zu der durch diesen Parameter angegebenen Anzahl von Zeichen, je nachdem, welcher Wert kleiner ist. Wenn dieser Parameter 0 (null) ist, ist der Rückgabewert NULL.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Der Rückgabewert ist 0 (null), wenn der aufrufende Prozess Lesezugriff für alle Zeichen bis zu abschließendes Null-Zeichen der Zeichenfolge oder Lesezugriff bis zu der Anzahl von Zeichen durch _CchMax_angegeben hat.
+Der Rückgabewert ist 0 (null), wenn der aufrufende Prozess Lesezugriff auf alle Zeichen bis zum beendenden NULL-Zeichen der Zeichenfolge hat, oder Lesezugriff bis zur Anzahl von Zeichen, die von _cchMax_angegeben werden.
   
-Der Rückgabewert ist ungleich NULL, wenn der aufrufende Prozess nicht Lesezugriff für alle Zeichen bis zu abschließendes Null-Zeichen der Zeichenfolge oder Lesezugriff bis zu der Anzahl von Zeichen durch _CchMax_angegeben wird.
+Der Rückgabewert ist ungleich NULL, wenn der aufrufende Prozess nicht über Lesezugriff auf alle Zeichen bis zum abschließenden NULL-Zeichen der Zeichenfolge verfügt, oder Lesezugriff bis zur Anzahl von Zeichen, die von _cchMax_angegeben werden.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **IsBadBoundedStringPtr** entspricht **IsBadStringPtr**verwenden.
+Die **IsBadBoundedStringPtr** -Funktion entspricht der Verwendung von **IsBadStringPtr**.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c599b444-4d0e-a855-b04b-dd9dcaedf263
 description: Bestimmt den Abstand zwischen dem oberen Rand des Textblocks und der ersten darin enthaltenen Textzeile. Der Standardwert beträgt 4,0000 Punkt. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt der obere Rand unverändert.
-ms.openlocfilehash: 71e8e3b41dc9c59c374111dcd442e55ab70330fa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 97d349fd4ddc3c76cda61e1ee7ce25909161e6fa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280924"
 ---
-# <a name="topmargin-cell-text-block-format-section"></a>TopMargin Cell (Text Block Format Section)
+# <a name="topmargin-cell-text-block-format-section"></a>Zelle "TopMargin" (Abschnitt "Text Block Format")
 
 Bestimmt den Abstand zwischen dem oberen Rand des Textblocks und der ersten darin enthaltenen Textzeile. Der Standardwert beträgt 4,0000 Punkt. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt der obere Rand unverändert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle TopMargin aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle oberRand aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | TopMargin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TopMargin aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle oberRand aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

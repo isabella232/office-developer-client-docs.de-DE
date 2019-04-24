@@ -1,38 +1,38 @@
 ---
-title: Var-Funktion (Access benutzerdefinierte Web app)
+title: Var-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: cb2aace1-fa2d-480e-bfc7-44ae399943f5
-description: Gibt die statistische Varianz für eine Populationsstichprobe als Menge von Werten zurück, die in einem angegebenen Feld einer Abfrage enthalten sind.
-ms.openlocfilehash: 9937f1985c0a7df5eb06977333ab889947891380
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die statistische Varianz für eine Populationsstichprobe zurück, die als Satz von Werten dargestellt wird, die in einem angegebenen Feld einer Abfrage enthalten sind.
+ms.openlocfilehash: 80cea512b0386d9b0461c927675ae51be3e0dcda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304200"
 ---
-# <a name="var-function-access-custom-web-app"></a>Var-Funktion (Access benutzerdefinierte Web app)
+# <a name="var-function-access-custom-web-app"></a>Var-Funktion (Access Custom Web App)
 
-Gibt die statistische Varianz für eine Populationsstichprobe als Menge von Werten zurück, die in einem angegebenen Feld einer Abfrage enthalten sind.
+Gibt die statistische Varianz für eine Populationsstichprobe zurück, die als Satz von Werten dargestellt wird, die in einem angegebenen Feld einer Abfrage enthalten sind.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- **Var** (*NumericExpression*) 
+ **Var** (*Numerischer Ausdruck*) 
   
-Die **Var** -Funktion enthält das folgende Argument. 
+Die **var** -Funktion enthält das folgende Argument. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *NumericExpression*  <br/> |Ein Ausdruck, identifiziert das Feld mit den numerischen Daten, die ausgewertet werden soll, oder ein Ausdruck, der mithilfe der Daten in diesem Feld eine Berechnung ausgeführt wird. Zu den Operanden von *NumericExpression* zählen der Name des Tabellenfelds, eine Konstante oder eine Funktion (die integrierte oder benutzerdefinierte sein kann jedoch keine der anderen SQL-Aggregatfunktionen).  <br/> |
+| *Numerischer Ausdruck*  <br/> |Ein Textausdruck, der das Feld identifiziert, das die numerischen Daten enthält, die ausgewertet werden sollen, oder ein Ausdruck, der eine Berechnung mithilfe der Daten in diesem Feld ausführt. Operanden in *numericive* können den Namen eines Tabellenfelds, eine Konstante oder eine Funktion enthalten (Dies kann entweder systeminterne oder benutzerdefinierte, aber nicht eine der anderen SQL-Aggregatfunktionen sein).  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
- **Var** kann nur bei numerischen Spalten verwendet werden. NULL-Werte werden ignoriert. 
+ **Var** kann nur mit numerischen Spalten verwendet werden. Nullwerte werden ignoriert. 
   
 

@@ -1,5 +1,5 @@
 ---
-title: XlfUnregister (Formular 1)
+title: xlfUnregister (Formular 1)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,32 +7,32 @@ ms.topic: reference
 f1_keywords:
 - xlfUnregister
 keywords:
-- Xlfunregister-Funktion [excel 2007]
+- xlfunregister-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 850bf65f-a151-44d6-b49f-d53ae2c83760
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 6077027a27c054c5a5e65a751373c41a87cb3836
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3f5ebc08f89651331186990d8574e3150d4f484a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303892"
 ---
-# <a name="xlfunregister-form-1"></a>XlfUnregister (Formular 1)
+# <a name="xlfunregister-form-1"></a>xlfUnregister (Formular 1)
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Kann aus einem Befehl DLL oder XLL aufgerufen werden, die selbst von Microsoft Excel aufgerufen wurde. Dies ist gleichbedeutend mit dem **UNREGISTER** aus einer Excel-XLM-Makrovorlage. 
+Kann von einem DLL-oder XLL-Befehl aufgerufen werden, der selbst von Microsoft Excel aufgerufen wurde. Dies entspricht dem Aufrufen der **AUFheben der Registrierung** aus einer Excel-XML-Makrovorlage. 
   
-**XlfUnregister** kann in zwei Formen aufgerufen werden: 
+**xlfUnregister** kann in zwei Formen aufgerufen werden: 
   
-- Formular 1: Hebt die Registrierung einen einzelnen Befehl oder eine Funktion.
+- Form 1: hebt die Registrierung eines einzelnen Befehls oder einer Funktion auf.
     
-- Formular 2: Entlädt und eine XLL deaktiviert.
+- Form 2: entladen und Deaktivieren einer XLL.
     
-In Form 1 aufgerufen, verringert diese Funktion die Verwendungsanzahl einer DLL-Funktion oder den Befehl, der zuvor mit **XlfRegister** oder **Registrieren**registriert wurde. Wenn die Anzahl der Nutzung bereits gleich NULL ist, hat diese Funktion keine Auswirkung. Wenn die Verwendung aller Funktionen in einer DLL erreicht, wird die DLL aus dem Speicher entfernt.
+In Form 1 aufgerufen, reduziert diese Funktion die Verwendungsanzahl einer DLL-Funktion oder eines Befehls, der zuvor mit **xlfRegister** oder **Register**registriert wurde. Wenn die Verwendungsanzahl bereits NULL ist, hat diese Funktion keine Auswirkung. Wenn die Verwendungsanzahl aller Funktionen in einer DLL 0 (null) erreicht, wird die DLL aus dem Arbeitsspeicher entladen.
   
-**xlfRegister** (Form 1) definiert ausgeblendeten Name der im Argument der Funktion Text _PxFunctionText_, und die ausgewertet wird auch für die Funktion oder des Befehls Registration-ID. Wenn die Funktion aus der Registrierung, sollte dieser Name mit **XlfSetName** , damit der Name der Funktion mithilfe des Funktions-Assistenten nicht mehr aufgeführt wird gelöscht werden. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md).
+**xlfRegister** (Form 1) definiert auch einen ausgeblendeten Namen, bei dem es sich um das Funktionstext Argument, _pxFunctionText_, handelt und das zur Registrierungs-ID der Funktion oder des Befehls ausgewertet wird. Beim Aufheben der Registrierung der Funktion sollte dieser Name mit **xlfSetName** gelöscht werden, damit der Funktionsname nicht mehr im Funktions-Assistenten aufgeführt wird. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel4(xlfUnregister, LPXLOPER pxRes, 1, LPXLOPER pxRegisterId);
@@ -40,21 +40,21 @@ Excel4(xlfUnregister, LPXLOPER pxRes, 1, LPXLOPER pxRegisterId);
 
 ## <a name="parameters"></a>Parameter
 
-_pxRegisterId_ (**XltypeNum**)
+_pxRegisterId_ (**xltypeNum**)
   
-Die Registrierung ID der Funktion nicht aufgehoben werden.
+Die Registrierungs-ID der Funktion, die aufgehoben werden soll.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Wenn erfolgreich ist, gibt **"true"** (**XltypeBool**), andernfalls wird FALSE zurückgegeben.
+Wenn erfolgreich, gibt **true** (**xltypeBool**) zurück, andernfalls wird false zurückgegeben.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Registrierung, die ID der Funktion von **XlfRegister** zurückgegeben wird, wenn die Funktion zuerst registriert. Es kann auch durch Aufrufen der [XlfRegisterId-Funktion](xlfregisterid.md) oder die [Funktion XlfEvaluate](xlfevaluate.md)abgerufen werden. Hinweis: Diese XlfRegisterId versucht, die Funktion zu registrieren, wenn sie noch nicht registriert wurde. Aus diesem Grund Wenn Sie nur die ID zu erhalten, damit Sie die Funktion, die Registrierung aufheben können versuchen empfiehlt sich diese abrufen, indem Sie den registrierten Namen an **XlfEvaluate**übergeben. Wenn die Funktion nicht registriert wurde, schlägt **XlfEvaluate** #NAME? Fehler. 
+Die Registrierungs-ID der Funktion wird von **xlfRegister** zurückgegeben, wenn die Funktion zuerst registriert wird. Sie kann auch abgerufen werden, indem die [xlfRegisterId-Funktion](xlfregisterid.md) oder die [xlfEvaluate-Funktion](xlfevaluate.md)aufgerufen wird. Beachten Sie, dass xlfRegisterId versucht, die Funktion zu registrieren, wenn Sie noch nicht registriert wurde. Aus diesem Grund sollten Sie, wenn Sie nur versuchen, die ID abzurufen, sodass Sie die Registrierung der Funktion aufheben können, diese abrufen, indem Sie den registrierten Namen an **xlfEvaluate**übergeben. Wenn die Funktion nicht registriert wurde, schlägt **xlfEvaluate** mit einem #NAME fehl? Fehler. 
   
 ## <a name="example"></a>Beispiel
 
-Anzeigen des Codes für die **fExit** -Funktion in `\SAMPLES\GENERIC\GENERIC.C`.
+Weitere Informationen finden Sie im **** Code für die `\SAMPLES\GENERIC\GENERIC.C`fExit-Funktion in.
   
 ```cs
 int WINAPI fExit(void)
@@ -91,8 +91,8 @@ int WINAPI fExit(void)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XlfRegister (Formular 1)](xlfregister-form-1.md)
+- [xlfRegister (Formular 1)](xlfregister-form-1.md)
 - [xlfRegisterId](xlfregisterid.md)
-- [XlfUnregister (Formular 2)](xlfunregister-form-2.md)
+- [xlfUnregister (Formular 2)](xlfunregister-form-2.md)
 - [Wichtige und n�tzliche C-API XLM-Funktionen](essential-and-useful-c-api-xlm-functions.md)
 

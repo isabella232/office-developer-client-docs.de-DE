@@ -1,25 +1,25 @@
 ---
-title: Today-Funktion (Access benutzerdefinierte Web app)
+title: Today-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8dbcb871-e133-4c98-91bd-b3a00b93bc0b
-description: Gibt den aktuellen Wert in der Zeitzone, die von der Anwendung definiert
-ms.openlocfilehash: b124fea303331a0e29a8bae10c812493a1307d81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den aktuellen Datumswert in der Zeitzone zurück, die von der Anwendung definiert wird.
+ms.openlocfilehash: 46acc3776653d7b37b2c73776a0caec3e480e551
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307847"
 ---
-# <a name="today-function-access-custom-web-app"></a>Today-Funktion (Access benutzerdefinierte Web app)
+# <a name="today-function-access-custom-web-app"></a>Today-Funktion (Access Custom Web App)
 
-Gibt den aktuellen Wert in der Zeitzone, die von der Anwendung definiert
+Gibt den aktuellen Datumswert in der Zeitzone zurück, die von der Anwendung definiert wird.
   
 > [!NOTE]
-> [!HINWEIS] Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
+> Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
   
 ## <a name="syntax"></a>Syntax
 
@@ -27,6 +27,6 @@ Gibt den aktuellen Wert in der Zeitzone, die von der Anwendung definiert
   
 ## <a name="remarks"></a>Bemerkungen
 
-**Now** -Funktion ähnelt jedoch gibt die genaue Uhrzeit zurück, während die Zeit **heute** zurückgibt Wert 12:00:00 Uhr nach allen Datumsangaben. 
+Die **Now** -Funktion ist ähnlich, gibt jedoch die genaue Uhrzeit zurück, wohingegen **heute** der Zeitwert 12:00:00 Uhr für alle Datumsangaben zurückgegeben wird. 
   
 

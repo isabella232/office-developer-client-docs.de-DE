@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 771a2ab4-578d-51c3-fabd-138f7952bb11
 description: Bestimmt die Papierzufuhr für die Seite.
-ms.openlocfilehash: f1dedf210dfe0dd8cac3d36fdec03fb497f6572c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eb6e7daccb1743c43a30b34598e47187496e4aac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301463"
 ---
-# <a name="papersource-cell-printproperties-section"></a>PaperSource Cell (PrintProperties Section)
+# <a name="papersource-cell-printproperties-section"></a>Zelle "PaperSource" (Abschnitt "Print Properties")
 
 Bestimmt die Papierzufuhr für die Seite. 
   
@@ -24,15 +24,15 @@ Bestimmt die Papierzufuhr für die Seite.
 
 Diese Einstellung entspricht der Einstellung **Papierzufuhr** im Dialogfeld **Druckeinrichtung** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** und anschließend auf der Registerkarte **Druckeinrichtung** auf **Einrichten**).
   
-Die numerischen Werte in dieser Zelle auf Konstanten (mit dem Präfix DMBIN) in der Microsoft Windows-Datei wingdi.h definiert; Beispielsweise steht für den Wert 7 Papierauswahl. 
+Die numerischen Werte in dieser Zelle werden Konstanten (vorangestellt mit DMBIN) zugeordnet, die für die bin-Auswahl in der Datei Microsoft Windows WinGDI. h definiert sind. der Wert 7 stellt beispielsweise DMBIN_AUTO dar. 
   
-Wenn Sie einen Verweis auf die Zelle PaperSource aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PaperSource aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PaperSource  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PaperSource aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PaperSource aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

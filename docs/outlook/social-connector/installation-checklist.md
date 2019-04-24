@@ -7,124 +7,124 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9dfb9b6d-2fb4-45bf-a12f-bd10a799ce29
-description: In diesem Thema werden die erforderlichen Komponenten für die Installation von einem Anbieter Outlook Social Connector (OSC) und die Installation überprüft, dass der Anbieter Installer ausführen sollten, um ordnungsgemäß funktionieren.
+description: In diesem Thema werden die Voraussetzungen für die erfolgreiche Installation des OSC-Anbieters (Outlook Social Connector) beschrieben, und die Installation überprüft, ob das Installationsprogramm des Anbieters ordnungsgemäß ausgeführt werden sollte.
 ms.openlocfilehash: 8fec8523e57ad2678d02a0c5cbc1ad57340e5267
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286340"
 ---
 # <a name="installation-checklist"></a>Checkliste für Installation
 
-In diesem Thema werden die erforderlichen Komponenten für die Installation von einem Anbieter Outlook Social Connector (OSC) und die Installation überprüft, dass der Anbieter Installer ausführen sollten, um ordnungsgemäß funktionieren.
+In diesem Thema werden die Voraussetzungen für die erfolgreiche Installation des OSC-Anbieters (Outlook Social Connector) beschrieben, und die Installation überprüft, ob das Installationsprogramm des Anbieters ordnungsgemäß ausgeführt werden sollte.
   
 ## <a name="installation-overview"></a>Übersicht über die Installation
 
-Benutzer sollten OSC-Anbieter installieren, nur, wenn eine unterstützende Version von Outlook vorhanden ist und die OSC installiert und auf dem Clientcomputer aktiviert ist. Unterstützende Versionen von Outlook werden Office Outlook 2003, Office Outlook 2007, Outlook 2010 und Outlook 2013 (auf dem Clientcomputer oder, im Fall von Outlook 2010 und Outlook 2013, übermittelt per Klick-und-Los auf dem Clientcomputer installiert). Um eine erfolgreiche Installation zu gewährleisten, sollte das Installationsprogramm der Anbieter die Folgendes bewirken:
+Benutzer sollten OSC-Anbieter nur dann installieren, wenn eine unterstützende Version von Outlook vorhanden ist und der OSC auf dem Clientcomputer installiert und aktiviert ist. Unterstützende Versionen von Outlook sind Office Outlook 2003, Office Outlook 2007, Outlook 2010 und Outlook 2013 (auf dem Clientcomputer oder, im Fall von Outlook 2010 und Outlook 2013, von Klick-und-Los auf dem Clientcomputer bereitgestellt). Zur Sicherstellungeiner erfolgreichen Installation sollte Ihr Anbieter Installationsprogramm folgende Schritte ausführen:
   
 - Überprüfen Sie, ob eine unterstützte Version von Outlook vorhanden ist.
     
-- Überprüfen Sie, ob die OSC installiert ist.
+- Überprüfen Sie, ob OSC installiert ist.
     
 > [!NOTE]
-> Klick-und-los ist eine virtuelle Umgebung in der Outlook 2010 (32-Bit) oder Outlook 2013 (32-Bit) ausgeführt werden kann. Überprüfen Sie für Outlook 2013, ob der Schlüssel virtualoutlook in der Windows-Registrierung HKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook vorhanden ist. Weitere Informationen zur Bereitstellung von Outlook als Produkt Klick-und-Los auf einem Clientcomputer finden Sie unter [Vorgehensweise überprüfen, ob Outlook auf einem Computer als Klick-und-Los-Produkt verfügbar ist](https://blogs.msdn.com/b/officedevdocs/archive/2010/03/09/how-to-verify-if-outlook-is-available-on-a-computer-as-a-click-to-run-product.aspx). 
+> Klick-und-los ist eine virtuelle Umgebung, in der Outlook 2010 (32-Bit) oder Outlook 2013 (32-Bit) ausgeführt werden kann. Überprüfen Sie für Outlook 2013, ob der VirtualOutlook-Schlüssel in HKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook der Windows-Registrierung vorhanden ist. Weitere Informationen zum Bereitstellen von Outlook als Klick-und-Los-Produkt auf einem Clientcomputer finden Sie unter [überprüfen, ob Outlook auf einem Computer als Klick-und-Los-Produkt verfügbar ist](https://blogs.msdn.com/b/officedevdocs/archive/2010/03/09/how-to-verify-if-outlook-is-available-on-a-computer-as-a-click-to-run-product.aspx). 
   
-Der Benutzer hat jedoch, um sicherzustellen, dass die OSC vor der Installation des Anbieters aktiviert ist.
+Der Benutzer muss jedoch sicherstellen, dass OSC vor der Installation des Anbieters aktiviert ist.
   
-Dritte, einschließlich der OSC-Anbieter kann nicht die OSC verteilen. Wenn die OSC nicht installiert ist, können das Installationsprogramm Anbieter geeigneten g-Links jedoch die OSC auf dem Clientcomputer zu installieren. Eine g-Verknüpfung ist eine speziell erstellte URL auf https://g.live.com , die einen Benutzer zu einer entsprechenden Webseite zum Herunterladen der OSC weiterleitet. Eine OSC g-Verknüpfung ist als formatiert https://g.live.com/0CR _LCID_/ _Glink_, wobei _LCID_ und _Glink_ Gebietsschema, Version und Bitness von Outlook auf dem Clientcomputer angeben. Jede g-Link verweist auf eine ausführbare Datei und sind spezifisch für den angegebenen Werten _LCID_ und _Glink_ . 
+Dritte, einschließlich OSC-Anbieter, können den OSC nicht weiterverteilen. Wenn der OSC jedoch nicht installiert ist, kann das Anbieter-Installationsprogramm mithilfe der entsprechenden g-Links den OSC auf dem Clientcomputer installieren. Ein g-Link ist eine speziell erstellte URL, https://g.live.com auf der ein Benutzer an eine entsprechende Webseite weitergeleitet wird, um den osc herunterzuladen. OSC g-Link ist als https://g.live.com/0CR _LCID_/ -_glink_formatiert, wobei _LCID_ und _glink_ das Gebietsschema, die Version und die Bitanzahl von Outlook auf dem Clientcomputer angeben. Jeder g-Link verweist auf eine ausführbare Datei und ist spezifisch für die angegebenen _LCID_ -und _glink_ -Werte. 
   
-Beispielsweise lautet der g-Link zur Installation der neuesten Version von der OSC für Outlook 2003 oder Outlook 2007 für die LCID 1033 (Englisch (USA)) wie folgt:
+Beispielsweise lautet der g-Link zum Installieren der neuesten Version von OSC für Outlook 2003 oder Outlook 2007 für die LCID 1033 (US-Englisch) wie folgt:
   
 https://g.live.com/0CR1033/80
   
-Ausführliche Informationen zu _Glink_ Werte für verschiedene Versionen und Bitness von Outlook und _LCID_ -Werte für die unterstützten Gebietsschemas finden Sie unter #7 im Abschnitt [Installationsprüfliste](#olosc_InstallationOverview_InstallationChecklist) unten. 
+Ausführliche Informationen zu _glink_ -Werten für verschiedene Versionen und Bitanzahl von Outlook sowie zu _LCID_ -Werten für unterstützte gebietsschemas finden Sie unter #7 im Abschnitt [Installationsprüfliste](#olosc_InstallationOverview_InstallationChecklist) unten. 
 
 <a name="olosc_InstallationOverview_InstallationChecklist"> </a>
 
 ## <a name="installation-checklist"></a>Checkliste für Installation
 
-Das Setup-Paket sollte eine Reihe von Installation Überprüfungen, ausführen, wie in Abbildung 1 dargestellt, um sicherzustellen, dass der Anbieter erfolgreich installiert.
+Das Anbieter Setuppaket sollte eine Reihe von Installations Überprüfungen durchführen, wie in Abbildung 1 dargestellt, um sicherzustellen, dass der Anbieter erfolgreich installiert wird.
   
-**Abbildung 1. Provider-Installationslogik**
+**Abbildung 1. Anbieter Installationslogik**
 
 ![Checkliste für Installation](media/odc_ol14_ta_OSC_Fig07.gif)
   
-Das folgende Verfahren beschreibt die Installation überprüft, die in Abbildung 1 beschrieben.
+Im folgenden Verfahren werden die in Abbildung 1 beschriebenen Installations Überprüfungen beschrieben.
   
-1. Als Voraussetzung erkennen Sie, ob Outlook installiert ist oder präsentieren Sie und installierten oder vorhanden, bestimmen Sie, ob die Version von Outlook die OSC unterstützt. Weitere Informationen zum Erkennen von die installierte Version von Outlook finden Sie unter [Überprüfen der Version von Outlook](https://msdn.microsoft.com/library/672fc380-a29b-4e99-9211-949fd5065723%28Office.15%29.aspx).
+1. Ermitteln Sie als Voraussetzung, ob Outlook installiert oder vorhanden ist, und falls installiert oder vorhanden, ob die Version von Outlook den OSC unterstützt. Weitere Informationen zum Erkennen der installierten Version von Outlook finden Sie unter [Überprüfen der Outlook-Version](https://msdn.microsoft.com/library/672fc380-a29b-4e99-9211-949fd5065723%28Office.15%29.aspx).
     
-   - Wenn die installierte Version von Outlook vor Outlook 2003 liegt, kann nicht die Anbieter Installation abgeschlossen. Informieren des Benutzers zum Abrufen einer unterstützten Version von Outlook und das osc bilden, bevor Sie fortfahren, den OSC-Anbieter installieren.
+   - Wenn die installierte Version von Outlook älter als Outlook 2003 ist, kann die Anbieter Installation nicht abgeschlossen werden. Informieren Sie den Benutzer, bevor Sie mit der Installation des OSC-Anbieters fortfahren, eine unterstützte Version von Outlook und OSC zu erhalten.
     
    - Wenn Outlook nicht installiert ist, fahren Sie mit Schritt 2 fort.
     
    - Wenn Outlook 2003 oder Outlook 2007 installiert ist, fahren Sie mit Schritt 3 fort. 
     
-   - Wenn Outlook 2010 oder Outlook 2013 installiert ist, fahren Sie mit Schritt 4 fort.
+   - Wenn Sie Outlook 2010 oder Outlook 2013 installiert haben, fahren Sie mit Schritt 4 fort.
     
-2. **Fahren Sie mit diesen Schritt, wenn Outlook auf dem Clientcomputer nicht installiert ist:**
+2. **Führen Sie diesen Schritt aus, wenn Outlook auf dem Clientcomputer nicht installiert ist:**
     
-   1. Überprüfen Sie, ob die OSC als Standardkomponente einer Klick-und-Los-Installation von Outlook 2010 oder Outlook 2013 installiert ist. Überprüfen Sie die `VirtualOutlook` Schlüssel in der Windows-Registrierung am folgenden Speicherort: 
+   1. Überprüfen Sie, ob OSC als Standardkomponente einer Klick-und-Los-Installation von Outlook 2010 oder Outlook 2013 installiert ist. Untersuchen `VirtualOutlook` Sie den Schlüssel an folgendem Speicherort in der Windows-Registrierung: 
       
       - Für Outlook 2010`HKEY_LOCAL_MACHINE\Software\Microsoft\Office\14.0\Common\InstallRoot\Virtual\VirtualOutlook`
       
-      - Für Outlook Connector für soziale Netzwerke 2013,`HKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook`
+      - Für Outlook Connector für soziale Netzwerke 2013`HKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook`
       
-      Die `VirtualOutlook` Schlüssel ist ein REG_SZ-Wert mit dem Gebietsschematag, z. B. "En-us", über das installierte Produkt. 
+      Der `VirtualOutlook` Schlüssel ist ein REG_SZ-Wert, der das Gebietsschematag enthält, beispielsweise "en-US" des installierten Produkts. 
       
-   2. Wenn die `VirtualOutlook` Schlüssel ist nicht vorhanden, Outlook nicht auf dem Clientcomputer vorhanden ist und der Anbieter Installation kann nicht abgeschlossen werden. Informieren des Benutzers zum Abrufen einer unterstützten Version von Outlook und das osc bilden, bevor Sie fortfahren, den OSC-Anbieter installieren. 
+   2. Wenn der `VirtualOutlook` Schlüssel nicht vorhanden ist, ist Outlook auf dem Clientcomputer nicht vorhanden, und die Anbieter Installation kann nicht abgeschlossen werden. Informieren Sie den Benutzer, bevor Sie mit der Installation des OSC-Anbieters fortfahren, eine unterstützte Version von Outlook und OSC zu erhalten. 
       
-   3. Wenn die `VirtualOutlook` Schlüssel vorhanden ist, Outlook per Klick-und-Los auf dem Clientcomputer bereitgestellt wurde. Fahren Sie mit Überprüfen Sie die installierte Version der Typbibliothek OSC durch Untersuchen der `OSCVersion` Schlüssel an folgendem Speicherort in der Windows-Registrierung: 
+   3. Wenn der `VirtualOutlook` Schlüssel vorhanden ist, wurde Outlook per Klick-und-Los auf dem Clientcomputer zugestellt. Gehen Sie wie folgt vor, um die installierte Version der OSC-Typbibliothek `OSCVersion` zu überprüfen, indem Sie den Schlüssel an folgendem Speicherort in der Windows-Registrierung untersuchen: 
       
       `HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Outlook\SocialConnector\OSCVersion`
       
-      Der Wert der `OSCVersion` ist eine Zeichenfolge, die Versionsnummer der Typbibliothek von Socialprovider.dll (z. B. "1.0", "1.1" oder "15") angibt. 
+      Der Wert von `OSCVersion` ist eine Zeichenfolge, die die Versionsnummer der Typbibliothek Socialprovider. dll angibt (beispielsweise "1,0", "1,1" oder "15"). 
       
-   4. Wenn `OSCVersion` "1.0", "1.1" oder "15" ist, wird eine entsprechende OSC-Version installiert ist. Fahren Sie mit Schritt 6, um das aktuelle Outlook Gebietsschema der Benutzeroberfläche zur Vorbereitung der Installation der aktuellen Version von der OSC suchen. 
+   4. Wenn `OSCVersion` "1,0", "1,1" oder "15" ist, wird eine entsprechende Version von OSC installiert. Fahren Sie mit Schritt 6 fort, um das aktuelle Gebietsschema der Outlook-Benutzeroberfläche für die Installation der neuesten Version des OSC vorzubereiten. 
       
-   5. Andernfalls `OSCVersion` enthält einen erwartete Wert nicht. Fahren Sie mit Schritt 6, um das aktuelle Outlook Gebietsschema der Benutzeroberfläche zur Vorbereitung der Installation einer entsprechenden Version der die OSC suchen. 
+   5. `OSCVersion` Andernfalls enthält keinen erwarteten Wert. Fahren Sie mit Schritt 6 fort, um das aktuelle Gebietsschema der Outlook-Benutzeroberfläche für die Installation einer geeigneten Version des OSC vorzubereiten. 
     
-3. **Fahren Sie mit diesen Schritt, wenn Outlook 2003 oder Outlook 2007 auf dem Clientcomputer installiert ist:**
+3. **Führen Sie diesen Schritt aus, wenn Outlook 2003 oder Outlook 2007 auf dem Clientcomputer installiert ist:**
     
-   1. Überprüfen Sie, ob die OSC installiert ist, indem Sie einen Installer schreiben benutzerdefinierte Aktion, um das Vorhandensein der folgenden gekennzeichneten Komponenten-ID:
+   1. Überprüfen Sie, ob der OSC installiert ist, indem Sie eine benutzerdefinierte Installer-Aktion schreiben, um das vorhanden sein der folgenden qualifizierten Komponenten-ID zu testen:
       
       `{A3B82DA3-8AD9-4935-AEA8-54B754459483}`
       
-      Die gekennzeichneten Komponenten-ID ist eine GUID, die eine Methode der einstufigen Dereferenzierung, ähnlich einem Zeiger bereitgestellt. Weitere Informationen zu Windows Installer finden Sie unter [Übersicht über die Windows Installer-Dokumentation](https://docs.microsoft.com/windows/desktop/msi/roadmap-to-windows-installer-documentation).
+      Die qualifizierte Komponenten-ID ist eine GUID, die eine Methode der Indirection mit einer Ebene bereitstellt, ähnlich wie ein Zeiger. Weitere Informationen zu Windows Installer finden Sie unter [Roadmap to Windows Installer Documentation](https://docs.microsoft.com/windows/desktop/msi/roadmap-to-windows-installer-documentation).
       
-   2. Wenn die angegebene qualifizierte Komponente vorhanden ist, wird eine Version der die OSC installiert. Wechseln Sie zu Schritt 5, um das aktuelle Outlook Gebietsschema der Benutzeroberfläche zur Vorbereitung der Installation der aktuellen Version von der OSC suchen.
+   2. Wenn die angegebene qualifizierte Komponente vorhanden ist, wird eine Version des OSC installiert. Fahren Sie mit Schritt 5 fort, um das aktuelle Gebietsschema der Outlook-Benutzeroberfläche für die Installation der neuesten Version des OSC vorzubereiten.
       
-   3. Andernfalls wird die OSC nicht installiert. Fahren Sie mit Schritt 6, um das aktuelle Outlook Gebietsschema der Benutzeroberfläche zur Vorbereitung der Installation einer entsprechenden Version der die OSC suchen.
+   3. Andernfalls ist der OSC nicht installiert. Fahren Sie mit Schritt 6 fort, um das aktuelle Gebietsschema der Outlook-Benutzeroberfläche für die Installation einer geeigneten Version des OSC vorzubereiten.
       
-4. **Fahren Sie mit diesen Schritt, wenn Outlook 2010 oder Outlook 2013 auf dem Clientcomputer installiert ist:**
+4. **Führen Sie diesen Schritt aus, wenn Outlook 2010 oder Outlook 2013 auf dem Clientcomputer installiert ist:**
     
-   1. Bestimmen die Bitness der installierten Version von Outlook durch Untersuchen der `Bitness` Schlüssel in der Windows-Registrierung am folgenden Speicherort: 
+   1. Bestimmen Sie die Bitanzahl der installierten Version von Outlook, indem Sie den `Bitness` Schlüssel an folgendem Speicherort in der Windows-Registrierung untersuchen: 
       
       - Sehen Sie sich für Outlook 2010`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\14.0\Outlook`
       
       - Sehen Sie sich für Outlook 2013`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Outlook`
       
-      Die `Bitness` Schlüssel "X86" für 32-Bit-Outlook oder "X64" für 64-Bit-Outlook ist. 
+      Der `Bitness` Schlüssel ist "x86" für 32-Bit-Outlook oder "x64" für 64-Bit-Outlook. 
       
-   2. Wenn der Anbieter einen verwalteten Anbieter ist und Sie kompiliert der Anbieterkomponente angeben der Zielplattform **Any**CPU, fahren Sie mit Schritt 6 aus, um das aktuelle Outlook Gebietsschema der Benutzeroberfläche zur Vorbereitung der Installation der aktuellen Version von der OSC suchen. Vom Dienstanbieter funktioniert auf 32-Bit- und 64-Bit-Versionen von der OSC.
+   2. Wenn Ihr Anbieter ein verwalteter Anbieter ist und Sie die Anbieterkomponente kompiliert haben, die die Zielplattform als **beliebige CPU**angibt, fahren Sie mit Schritt 6 fort, um das aktuelle gebietsSchema der Outlook-Benutzeroberfläche für die Installation der neuesten Version des osc vorzubereiten. Ihr Anbieter kann sowohl 32-Bit-als auch 64-Bit-Versionen des OSC verwenden.
       
-   3. Wenn der Anbieter eine systemeigene COM-Komponente ist, untersuchen Sie die Bitness der installierten Version von Outlook:
+   3. Wenn es sich bei Ihrem Anbieter um eine systemeigene COM-Komponente handelt, überprüfen Sie die Bitanzahl der installierten Outlook-Version:
       
-      - Ist die installierte Version von Outlook auf 32-Bit, müssen Ihre Installationsvorgang installieren einen 32-Bit-Anbieter (in Schritt 8), stellen Sie sicher, dass eine entsprechende OSC installiert ist.
+      - Wenn die installierte Version von Outlook 32-Bit ist, muss Ihr Installationsvorgang einen 32-Bit-Anbieter (in Schritt 8) installieren, nachdem Sie sichergestellt haben, dass ein entsprechender OSC installiert ist.
       
-      - Sie andernfalls die installierte Version von Outlook ist 64-Bit- und Ihre Installationsverfahren muss einen 64-Bit-Anbieter (in Schritt 8) zu installieren, stellen Sie sicher, dass eine entsprechende OSC installiert ist. 
+      - Andernfalls ist die installierte Version von Outlook 64-Bit, und Ihr Installationsvorgang muss einen 64-Bit-Anbieter (in Schritt 8) installieren, nachdem Sie sichergestellt haben, dass ein entsprechender OSC installiert ist. 
       
-   4. Fahren Sie mit Schritt 6 aus, um das aktuelle Outlook Gebietsschema der Benutzeroberfläche zur Vorbereitung der Installation einer entsprechenden Version der die OSC suchen.
+   4. Fahren Sie mit Schritt 6 fort, um das aktuelle Gebietsschema der Outlook-Benutzeroberfläche für die Installation einer geeigneten Version des OSC vorzubereiten.
     
-5. **Mit diesem Schritt fortgesetzt werden, wenn Outlook 2003 oder Outlook 2007 installiert ist, und die OSC auf dem Clientcomputer installiert ist:** Überprüfen Sie das aktuelle Gebietsschema der Benutzeroberfläche Outlook durch Untersuchen der `OSCLcid` Schlüssel in der Windows-Registrierung am folgenden Speicherort: 
+5. Führen Sie **diesen Schritt aus, wenn outlook 2003 oder outlook 2007 installiert ist und der osc auf dem Clientcomputer installiert ist:** Überprüfen Sie das aktuelle Gebietsschema der Outlook-Benutzer `OSCLcid` Oberfläche, indem Sie den Schlüssel an folgendem Speicherort in der Windows-Registrierung untersuchen: 
     
    `HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Outlook\SocialConnector\OSCLcid`
     
-   Die `OSCLcid` Schlüssel ist ein DWORD-Wert, die der Internet Engineering Task Force (IETF) Gebietsschematag (definiert durch [[RFC4646]](https://www.ietf.org/rfc/rfc4646.txt) und [[RFC4647]](https://www.ietf.org/rfc/rfc4647.txt)), gibt an, die das aktuelle Gebietsschema der Benutzeroberfläche Outlook darstellt. Fahren Sie mit Schritt 7, um die neuesten OSC auf dem Clientcomputer zu installieren.
+   Der `OSCLcid` Schlüssel ist ein DWORD-Wert, der das Gebietsschema-Tag (Internet Engineering Task Force, IETF) (definiert durch [[rfc4646]](https://www.ietf.org/rfc/rfc4646.txt) und [[RFC4647]](https://www.ietf.org/rfc/rfc4647.txt)) angibt, das das aktuelle Gebietsschema der Outlook-Benutzeroberfläche darstellt. Fahren Sie mit Schritt 7 fort, um den neuesten OSC auf dem Clientcomputer zu installieren.
     
-6. **Fahren Sie mit diesen Schritt, wenn Outlook 2003 oder Outlook 2007 installiert ist, oder Outlook 2010 oder Outlook 2013 vorhanden ist, aber die neuesten OSC nicht unbedingt auf dem Clientcomputer installiert ist:**
+6. **Fahren Sie mit diesem Schritt fort, wenn Outlook 2003 oder Outlook 2007 installiert ist oder Outlook 2010 oder Outlook 2013 vorhanden ist, aber der neueste OSC nicht unbedingt auf dem Clientcomputer installiert ist:**
     
-   Verwenden Sie das **LanguageSettings** -Objekt, um die LCID der Outlook-Schnittstelle vom Gebietsschema des Benutzers zu bestimmen. Im folgende Visual Basic Scripting Edition (VBScript) Codeausschnitt veranschaulicht, wie die LCID der das Gebietsschema der Benutzeroberfläche Outlook zu erhalten. 
+   Verwenden Sie das **LanguageSettings** -Objekt, um die LCID des Gebietsschemas der Outlook-Benutzeroberfläche zu bestimmen. Der folgende Visual Basic Scripting Edition (VBScript)-Codeausschnitt veranschaulicht, wie die LCID des Outlook-Benutzeroberflächen Gebietsschemas abgerufen wird. 
     
    ```vb
     Function GetOutlookUI_LCID()
@@ -137,25 +137,25 @@ Das folgende Verfahren beschreibt die Installation überprüft, die in Abbildung
     End Function
    ```
 
-7. **Fahren Sie mit diesen Schritt das Installationsprogramm hat die LCID der installierten Version von Outlook, jedoch nicht die neuesten OSC nicht unbedingt auf dem Clientcomputer installiert ist:**
+7. **Fahren Sie mit diesem Schritt fort, wenn das Installationsprogramm die LCID der installierten Version von Outlook hat, aber der neueste OSC nicht unbedingt auf dem Clientcomputer installiert ist:**
     
-   Verketten Sie eine g-Verknüpfung mit dem Installationspaket, um sicherzustellen, dass die neueste Version von der OSC auf dem Clientcomputer installiert ist. Das g LinkFormat-Objekt lautet wie folgt:
+   VerKetten Sie einen g-Link in Ihr Installationspaket, um sicherzustellen, dass die neueste Version des OSC auf dem Clientcomputer installiert ist. Das g-Link-Format lautet wie folgt:
     
    https://g.live.com/0CR_LCID_ /  _Glink_
     
-   Finden Sie in Tabelle 1 weiter unten sind die unterstützten _LCID_ -Werte und Tabelle 2 für die unterstützten _Glink_ Werte. Beispielsweise lautet der g-Link So installieren Sie die neueste Version von der 32-Bit-OSC für 32-Bit-Outlook Social Connector 2013 (Englisch (USA)) wie folgt: 
+   In Tabelle 1 finden Sie die unterstützten _LCID_ -Werte und Tabelle 2 für die unterStützten _glink_ -Werte. Beispielsweise lautet der g-Link, um die neueste Version des 32-Bit-OSC für 32-Bit Outlook Social Connector 2013 (US-Englisch) zu installieren: 
     
    https://g.live.com/0CR1033/82
     
-8. Installieren Sie den Anbieter. Das Installationsverfahren Anbieter muss die programmkennung (ProgID) an der entsprechenden Stelle der Windows-Registrierung registrieren. Weitere Informationen finden Sie unter [Registrieren eines Anbieters](registering-a-provider.md). Außerdem sicher, dass die Bitness des Anbieters zu installierende identisch mit der Bitness der Version von Outlook auf dem Clientcomputer vorhanden ist sein. Installieren Sie 32-Bit-Anbieter Wenn 32-Bit-Outlook 2013 vorhanden ist und eine 64-Bit-Anbieter Wenn 64-Bit-Outlook 2013 installiert ist. Für Outlook 2003 oder 2007 gilt nur die 32-Bit-Version des Anbieters. 
+8. Installieren Sie den Anbieter. Bei der Anbieter Installation muss der programmgesteuerte Bezeichner (ProgID) am entsprechenden Speicherort der Windows-Registrierung registriert werden. Weitere Informationen finden Sie unter [Registrieren eines Anbieters](registering-a-provider.md). Stellen Sie außerdem sicher, dass die Bitanzahl des zu installierenden Anbieters mit dem Bitanzahl der auf dem Clientcomputer vorhandenen Version von Outlook übereinstimmt. Installieren Sie beispielsweise einen 32-Bit-Anbieter, wenn 32-Bit Outlook 2013 vorhanden ist, und einen 64-Bit-Anbieter, falls 64-Bit Outlook 2013 installiert ist. Für Outlook 2003 oder 2007 gilt nur die 32-Bit-Version Ihres Anbieters. 
     
-**Tabelle 1: Unterstützte Gebietsschemas und entsprechende LCID-Werte für das osc bilden hexadezimal**
+**Tabelle 1: unterstütztes Gebietsschema und entsprechende LCID-Werte im Hexadezimalformat für OSC**
   
 |**Gebietsschema**|**LCID**|
 |:-----|:-----|
 |ar-sa  <br/> |1025  <br/> |
 |bg-bg  <br/> |1026  <br/> |
-|CA-es  <br/> |1027  <br/> |
+|ca-es  <br/> |1027  <br/> |
 |cs-cz  <br/> |1029  <br/> |
 |da-dk  <br/> |1030  <br/> |
 |de-de  <br/> |1031  <br/> |
@@ -163,10 +163,10 @@ Das folgende Verfahren beschreibt die Installation überprüft, die in Abbildung
 |en-us  <br/> |1033  <br/> |
 |es-es  <br/> |3082  <br/> |
 |et-ee  <br/> |1061  <br/> |
-|EU-es  <br/> |1069  <br/> |
+|eu-es  <br/> |1069  <br/> |
 |fi-fi  <br/> |1035  <br/> |
 |fr-fr  <br/> |1036  <br/> |
-|GL-es  <br/> |1110  <br/> |
+|gl-es  <br/> |1110  <br/> |
 |he-il  <br/> |1037  <br/> |
 |hi-in  <br/> |1081  <br/> |
 |hr-hr  <br/> |1050  <br/> |
@@ -186,8 +186,8 @@ Das folgende Verfahren beschreibt die Installation überprüft, die in Abbildung
 |ru-ru  <br/> |1049  <br/> |
 |sk-sk  <br/> |1051  <br/> |
 |sl-si  <br/> |1060  <br/> |
-|SR-Cyrl-cs  <br/> |3098  <br/> |
-|SR-Latn-cs  <br/> |2074  <br/> |
+|SR-Cyrl-CS  <br/> |3098  <br/> |
+|SR-LATN-CS  <br/> |2074  <br/> |
 |sv-se  <br/> |1053  <br/> |
 |th-th  <br/> |1054  <br/> |
 |tr-tr  <br/> |1055  <br/> |
@@ -195,17 +195,17 @@ Das folgende Verfahren beschreibt die Installation überprüft, die in Abbildung
 |zh-cn  <br/> |2052  <br/> |
 |zh-tw  <br/> |1028  <br/> |
    
-**Tabelle 2: Unterstützte Glink Werte für das osc bilden**
+**Tabelle 2: Unterstützte glink-Werte für OSC**
   
-|**GLINK Wert**|**Funktion**|
+|**Glink-Wert**|**Funktion**|
 |:-----|:-----|
-|80  <br/> |Die neueste Version von OSC für Outlook 2003 oder Outlook 2007 installiert.  <br/> |
-|82  <br/> |Installiert den neuesten Patch von 32-Bit-OSC für Outlook 2007, Outlook 2010 oder Outlook Social Connector 2013.  <br/> |
-|83  <br/> |Das neueste OSC für Outlook 2010 oder Outlook Social Connector 2013 64-Bit-Patch installiert.  <br/> |
+|80  <br/> |Installiert die neueste Version von OSC für Outlook 2003 oder Outlook 2007.  <br/> |
+|82  <br/> |Installiert den neuesten Patch von 32-Bit OSC für Outlook 2007, Outlook 2010 oder Outlook Social Connector 2013.  <br/> |
+|83  <br/> |Installiert den neuesten Patch von 64-Bit OSC für Outlook 2010 oder Outlook Social Connector 2013.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Registrieren eines Providers](registering-a-provider.md) 
-- [QuickSteps für Informationen zum Entwickeln eines Providers](quick-steps-for-learning-to-develop-a-provider.md)
+- [Registrieren eines Anbieters](registering-a-provider.md) 
+- [Schnelle Schritte für die Entwicklung eines Anbieters](quick-steps-for-learning-to-develop-a-provider.md)
 - [Bereitstellen eines Providers](deploying-a-provider.md)
 

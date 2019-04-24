@@ -1,5 +1,5 @@
 ---
-title: PidLidRemoteTransport (kanonische Eigenschaft)
+title: Kanonische Pidlidremotetransport (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,47 +11,47 @@ api_name:
 api_type:
 - COM
 ms.assetid: b3b30d6a-05cd-4dd1-a162-20768f12e680
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 124a0d8f23fcff9d1bca9d5debe4a9aa6fb6146c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ddedc2ca0785be2fe4850ec3cfdf979d1e5f2798
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285179"
 ---
-# <a name="pidlidremotetransport-canonical-property"></a>PidLidRemoteTransport (kanonische Eigenschaft)
+# <a name="pidlidremotetransport-canonical-property"></a>Kanonische Pidlidremotetransport (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, welches Konto das Headerelement zugeordnet wird, in erster Linie auf POP belassen auf Serverfunktionen implementieren. 
+Gibt an, mit welchem Konto das Kopfzeilenelement verknüpft ist, und zwar in erster Linie für die Implementierung der Funktion "POP-Leave auf dem Server". 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften  <br/> |dispidRemoteXP  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Remote  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008F03  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Remote  <br/> |
+|Long-ID (Deckel):  <br/> |0x00008F03  <br/> |
 |Datentyp:  <br/> |PT_STRING8  <br/> |
-|Bereich:  <br/> |Remote-Nachricht  <br/> |
+|Bereich:  <br/> |Remote Nachricht  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft ist nur für Nachrichten mit einer Nachrichtenklasse IPM relevant. Remote. Microsoft Outlook behält eine Zuordnung von verschiedenen Konten, die auf einem bestimmten Speicher in einer Nachricht Ordner verknüpften Informationen (FAI) herunterladen möchten, aber es kann auch diese Informationen in der Registrierung beibehalten.
+Diese Eigenschaft ist nur für Nachrichten relevant, die über eine Nachrichtenklasse von IPM verfügen. Remote. In Microsoft Outlook werden verschiedene Konten, die in einen bestimmten Informationsspeicher heruntergeladen werden, in einer FAI-Nachricht (Folder Associated Information) aufbewahrt, aber diese Informationen können auch in der Registrierung aufbewahrt werden.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,5 +63,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

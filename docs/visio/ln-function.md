@@ -8,35 +8,35 @@ f1_keywords:
 - Vis_DSS.chm82251454
 localization_priority: Normal
 ms.assetid: 1265e4d6-58c7-896d-0d13-12944f96cf35
-description: 'Gibt den natürlichen Logarithmus einer Zahl zurück. Die Zahl positiv sein muss, oder gibt LN den Fehlerwert # ZAHL.'
-ms.openlocfilehash: 0f742159fc4c77196b3aca80893e5f7abd6d70c5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gibt den natürlichen Logarithmus einer Zahl zurück. Die Zahl muss positiv sein, oder LN gibt den Fehlerwert #NUM zurück.'
+ms.openlocfilehash: 867e487d369a7f042c3be297abd1b29e931ffea6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284172"
 ---
 # <a name="ln-function"></a>LN Function
 
-Gibt den natürlichen Logarithmus einer Zahl zurück. Die Zahl positiv sein muss, oder gibt LN den Fehlerwert # ZAHL.
+Gibt den natürlichen Logarithmus einer Zahl zurück. Die Zahl muss positiv sein, oder LN gibt den Fehlerwert #NUM zurück.
   
 ## <a name="syntax"></a>Syntax
 
-LN (** *Anzahl* **) 
+LN (* * *Number* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> | Die Zahl, deren natürlicher Logarithmus ermittelt werden soll.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> | Die Zahl, deren natürlicher Logarithmus ermittelt werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="example"></a>Beispiel
 
-LN(42) 
+LN (42) 
   
 Gibt 3,7377 zurück. 
   

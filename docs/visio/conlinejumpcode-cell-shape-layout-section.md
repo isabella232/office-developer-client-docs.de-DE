@@ -9,40 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: af85588e-8e83-5168-7a8c-d7e8b4af5c27
 description: Bestimmt die Bedingungen für einen Verbindersprung.
-ms.openlocfilehash: 002f628841356ec8a22afbb9d4aeca8236058222
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 28bf506b8d3729fefec438d259746661fd28586e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284088"
 ---
-# <a name="conlinejumpcode-cell-shape-layout-section"></a>ConLineJumpCode Cell (Shape Layout Section)
+# <a name="conlinejumpcode-cell-shape-layout-section"></a>Zelle "ConLineJumpCode" (Abschnitt "Shape Layout")
 
 Bestimmt die Bedingungen für einen Verbindersprung.
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|0  <br/> |
-          Klicken Sie gemäß den Angaben auf dem Zeichenblatt auf der Registerkarte **Entwurf** in der Gruppe **Seite einrichten** auf den Pfeil, und klicken Sie anschließend auf die Registerkarte **Layout und Routing**, um die Zeichenblattspezifikationen anzuzeigen.
-  <br/> |**visSLOJumpDefault** <br/> |
-|1  <br/> |Nie  <br/> |**visSLOJumpNever** <br/> |
-|2  <br/> |Immer  <br/> |**visSLOJumpAlways** <br/> |
+|0  <br/> |Klicken Sie gemäß den Angaben auf dem Zeichenblatt auf der Registerkarte **Entwurf** in der Gruppe **Seite einrichten** auf den Pfeil, und klicken Sie anschließend auf die Registerkarte **Layout und Routing**, um die Zeichenblattspezifikationen anzuzeigen.  <br/> |**visSLOJumpDefault** <br/> |
+|1  <br/> |Never  <br/> |**visSLOJumpNever** <br/> |
+|2  <br/> |Always  <br/> |**visSLOJumpAlways** <br/> |
 |3  <br/> |Andere Verbindersprünge  <br/> |**visSLOJumpOther** <br/> |
-|4  <br/> |
-          Keine Verbindersprünge
-  <br/> |**visSLOJumpNeither** <br/> |
+|4  <br/> |Keine Verbindersprünge  <br/> |**visSLOJumpNeither** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können auch den Wert für diese Zelle festlegen einen dynamischen Verbinder, indem Sie in der Gruppe **Shape-Design** auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und dann auf die Registerkarte **Verbinder** . 
+Sie können den Wert dieser Zelle auch festlegen, indem Sie einen dynamischen Verbinder auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten** klicken und dann auf die Registerkarte **Verbinder** klicken. 
   
-Wenn Sie einen Verweis auf die Zelle ConLineJumpCode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpCode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |ConLineJumpCode  <br/> |
+|Zellenname:  <br/> |Zelle ConLineJumpCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ConLineJumpCode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

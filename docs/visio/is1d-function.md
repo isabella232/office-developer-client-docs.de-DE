@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 72c7c99e-4d29-4b53-dc7b-a3220317d20a
 description: Gibt TRUE zurück, wenn das Shape eindimensional (1D) ist; gibt FALSE zurück, wenn das Shape zweidimensional (2D) ist.
-ms.openlocfilehash: 07ffd72393b438e113e6fb3e5f4558e4f09d1eba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6a62b481672b0e1040a34fd0a635ee7382b24f78
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297235"
 ---
 # <a name="is1d-function"></a>IS1D Function
 
@@ -25,13 +25,13 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-IS1D()
+IS1D ()
   
 ### <a name="return-value"></a>Rückgabewert
 
  **Boolean**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn es sich bei dem Blatt (Shape) um eine Seite oder ein Dokument handelt, gibt die IS1D-Funktion #REF! zurück.
   

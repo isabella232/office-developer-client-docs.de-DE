@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 87235fd2-6527-41a1-98ba-b951632a1c81
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a9e596ff8561d5aabc71ffe3540efaeef8f5b83d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2c504f98655e35af62810dd428e8e04878a36dec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309597"
 ---
 # <a name="iprofadminadminservices"></a>IProfAdmin::AdminServices
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Zugriff auf ein Objekt "Message" Service Administration für die Änderung der Nachrichtendienste in einem Profil.
+Ermöglicht den Zugriff auf ein Nachrichtendienst-Verwaltungsobjekt zum vornehmen von Änderungen an den Nachrichtendiensten in einem Profil.
   
 ```cpp
 HRESULT AdminServices(
@@ -41,71 +41,71 @@ HRESULT AdminServices(
 
  _lpszProfileName_
   
-> [in] Ein Zeiger auf den Namen des Profils geändert werden soll. Der Parameter _LpszProfileName_ darf nicht NULL sein. 
+> in Ein Zeiger auf den Namen des zu ändernden Profils. Der _lpszProfileName_ -Parameter darf nicht NULL sein. 
     
  _lpszPassword_
   
-> [in] Immer NULL. 
+> in Immer NULL. 
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, die diese Methode anzeigt.
+> in Ein Handle des übergeordneten Fensters für alle von dieser Methode angezeigten Dialogfelder oder Fenster.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die das Abrufen des Message Service Administration-Objekts steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die das Abrufen des Nachrichtendienst-Verwaltungsobjekts steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DIALOG 
   
 > Ermöglicht die Anzeige einer Benutzeroberfläche. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Der Name der Benutzerprofildienst wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Name im ANSI-Format.
+> Der Profilname ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Name im ANSI-Format.
     
  _lppServiceAdmin_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Objekt "Message" Service-Verwaltung.
+> Out Ein Zeiger auf einen Zeiger auf ein Nachrichtendienst-Verwaltungsobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Objekt "Message" Service Administration wurde erfolgreich zurückgegeben.
+> Das Nachrichtendienst-Verwaltungsobjekt wurde erfolgreich zurückgegeben.
     
 MAPI_E_LOGON_FAILED 
   
-> Das angegebene Profil ist nicht vorhanden, oder das Kennwort war falsch und ein Dialogfeld konnte nicht angezeigt werden, die dem Benutzer das korrekte Kennwort anfordern, da MAPI_DIALOG in _UlFlags_nicht festgelegt wurde.
+> Das angegebene Profil ist nicht vorhanden, oder das Kennwort war falsch, und dem Benutzer konnte kein Dialogfeld angezeigt werden, um das richtige Kennwort anzufordern, da MAPI_DIALOG in _ulFlags_nicht festgelegt wurde.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IProfAdmin::AdminServices** -Methode ermöglicht den Zugriff auf ein Objekt "Message" Service Administration für die Änderung der Konfiguration der Nachrichtendienste in einem Profil. 
+Die **IProfAdmin:: AdminServices** -Methode ermöglicht den Zugriff auf ein Nachrichtendienst-Verwaltungsobjekt, um Konfigurationsänderungen an den Nachrichtendiensten in einem Profil vorzunehmen. 
   
- Der Parameter _LpszPassword_ muss NULL oder einen Zeiger auf eine leere Zeichenfolge. 
+ Der _lpszPassword_ -Parameter muss NULL oder ein Zeiger auf eine leere Zeichenfolge sein. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Obwohl Sie einen Zeiger [IMsgServiceAdmin](imsgserviceadminiunknown.md) durch Aufrufen dieser Methode oder [IMAPISession::AdminServices](imapisession-adminservices.md)abrufen können, rufen Sie **IProfAdmin::AdminServices** , wenn Sie unbedingt einen Konfiguration-Client und keine Messagingfeatures bieten. **IProfAdmin::AdminServices** erstellt ein Session-Objekt keine und lädt keine Dienstanbieter, die Leistung verbessert. 
+Obwohl Sie einen [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Zeiger abrufen können, indem Sie entweder diese Methode oder [IMAPISession:: AdminServices](imapisession-adminservices.md)aufrufen, rufen Sie **IProfAdmin:: AdminServices** auf, wenn Sie streng einen Konfigurations Client haben und keine Messagingfunktionen anbieten. **IProfAdmin:: AdminServices** erstellt kein Sitzungsobjekt und lädt keine Dienstanbieter, wodurch die Leistung verbessert wird. 
   
-Sie können keine **IProfAdmin::AdminServices** verwenden Sie zum Erstellen eines Profils. Daher müssen Sie ein vorhandenes Profil gültiges in _LpszProfileName_angeben. Wenn das angegebene Profil nicht vorhanden ist, gibt **IProfAdmin::AdminServices** MAPI_E_LOGON_FAILED zurück. 
+Sie können **IProfAdmin:: AdminServices** nicht zum Erstellen eines Profils verwenden. Daher müssen Sie ein vorhandenes gültiges Profil in _lpszProfileName_angeben. Wenn das angegebene Profil nicht vorhanden ist, gibt **IProfAdmin:: ADMINSERVICES** MAPI_E_LOGON_FAILED zurück. 
   
 Der Name des Profils kann bis zu 64 Zeichen lang sein und kann die folgenden Zeichen enthalten:
   
-- Alle alphanumerischen Zeichen, einschließlich Akzent-Zeichen und das Unterstrichzeichen. 
+- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und der Unterstrich. 
     
-- Leerzeichen, jedoch nicht führende oder nachfolgende Leerzeichen.
+- Eingebettete Leerzeichen, aber keine führenden oder nachstehenden Leerzeichen.
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions.cpp  <br/> | HrAddServiceToProfile  <br/> |MFCMAPI (engl.) wird die **IProfAdmin::AdminServices** -Methode verwendet, um eine Nachricht Service Administration-Objekt für das ausgewählte Profil Dienste hinzufügen zu öffnen.  <br/> |
+|MAPIProfileFunctions. cpp  <br/> | HrAddServiceToProfile  <br/> |MFCMAPI verwendet die **IProfAdmin:: AdminServices** -Methode, um ein Nachrichtendienst-Verwaltungsobjekt für das ausgewählte Profil zum Hinzufügen von Diensten zu öffnen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

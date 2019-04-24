@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bd7746f4-8070-4cc5-8b8e-c527c5847545
-description: 'Letzte Änderung: Freitag, 1. Februar 2013'
-ms.openlocfilehash: 4d380f784094064232cdb7369080612ba9ccac0e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Freitag, 1. Februar 2013'
+ms.openlocfilehash: 293fe5a65c760f61ab0073e0eafc1a606c69050f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287021"
 ---
 # <a name="iaddrbookopenentry"></a>IAddrBook::OpenEntry
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet ein Adressbuch Adresseintrag, und gibt einen Zeiger auf eine Schnittstelle, die den Eintrag Zugriff auf verwendet werden kann.
+Öffnet einen Adressbucheintrag und gibt einen Zeiger auf eine Schnittstelle zurück, die für den Zugriff auf den Eintrag verwendet werden kann.
   
 ```cpp
 HRESULT OpenEntry(
@@ -40,56 +40,56 @@ HRESULT OpenEntry(
 
 _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
 _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID, die den Adresseintrag Adressbuch öffnen darstellt.
+> in Ein Zeiger auf die Eintrags-ID, die den zu öffnenden Adressbucheintrag darstellt.
     
 _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID) der Schnittstelle, greifen Sie auf den Eintrag open verwendet werden soll. Übergeben von NULL gibt Standardschnittstelle für das Objekt zurück. Für die messaging-Benutzer ist der standard-Benutzeroberfläche [IMailUser: IMAPIProp](imailuserimapiprop.md). Verteilerlisten, ist es [IDistList: IMAPIContainer](idistlistimapicontainer.md) und Containern, ist es [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md). Anrufer können auf die entsprechende standard-Schnittstelle oder eine Schnittstelle in der Vererbungshierarchie _LpInterface_ festlegen. 
+> in Ein Zeiger auf die Schnittstellen-ID (IID) der Schnittstelle, die für den Zugriff auf den geöffneten Eintrag verwendet werden soll. Durch das Übergeben von NULL wird die Standardschnittstelle des Objekts zurückgegeben. Für Messagingbenutzer ist die Standardschnittstelle [IMailUser: IMAPIProp](imailuserimapiprop.md). Für Verteilerlisten ist es [IDistList: IMAPIContainer](idistlistimapicontainer.md) und für Container ist es [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md). Anrufer können _lpInterface_ auf die entsprechende Standardschnittstelle oder eine Schnittstelle in der Vererbungshierarchie festlegen. 
     
 _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie der Eintrag geöffnet wird. Die folgenden Kennzeichen können festgelegt werden.
+> in Eine Bitmaske von Flags, die steuert, wie der Eintrag geöffnet wird. Die folgenden Flags können festgelegt werden.
     
 MAPI_BEST_ACCESS 
   
-> Fordert, dass der Eintrag mit den maximalen zulässigen Netzwerk- und Client Berechtigungen geöffnet werden. Wenn der Client über Lese-/Schreibberechtigung verfügt, sollten beispielsweise die Adressbuchanbieter versuchen, um den Eintrag mit Lese-/Schreibzugriff zu öffnen. Der Client kann die Zugriffsebene abzurufen, die durch Aufrufen der open Eintrag [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode und Abrufen der Eigenschaft **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)) gewährt wurde.
+> Fordert, dass der Eintrag mit den maximal zulässigen Netzwerk-und Clientberechtigungen geöffnet wird. Wenn der Client beispielsweise über Lese-/Schreibzugriff verfügt, sollte der Adressbuchanbieter versuchen, den Eintrag mit Berechtigung zum Lesen/Schreiben zu öffnen. Der Client kann die Zugriffsebene abrufen, die durch Aufrufen der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Open-Eintrags und Abrufen der **PR_ACCESS_LEVEL** ([pidtagaccesslevel (](pidtagaccesslevel-canonical-property.md))-Eigenschaft erteilt wurde.
     
 MAPI_CACHE_ONLY
   
-> Öffnet ein Adressbuch Adresseintrag und greift er nur aus dem Cache. Dieses Kennzeichen können Sie beispielsweise ermöglichen einer Clientanwendung zum Öffnen der globalen Adressliste (GAL) im Exchange-Cache-Modus und Zugreifen auf einen Eintrag in diesem Adressbuch aus dem Cache ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Kennzeichen werden nur von der Exchange-Adressbuchanbieter unterstützt.
+> Öffnet einen Adressbucheintrag und greift nur über den Cache auf ihn zu. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und auf einen Eintrag in diesem Adressbuch aus dem Cache zuzugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht den Anruf, potenziell erfolgreich ausgeführt werden kann, bevor der Eintrag vollständig geöffnet und kann, sagen, dass später aufruft, um den Eintrag einen Fehler zurück, möglicherweise ist.
+> Der Aufruf kann erfolgreich ausgeführt werden, bevor der Eintrag vollständig geöffnet und verfügbar ist, was bedeutet, dass spätere Aufrufe des Eintrags möglicherweise einen Fehler zurückgeben.
     
 MAPI_GAL_ONLY
   
-> Verwenden Sie nur die globale Adressliste, um namensauflösung auszuführen. Dieses Kennzeichen werden nur von der Exchange-Adressbuchanbieter unterstützt.
+> Verwenden Sie nur die GAL zum Durchführen der Namensauflösung. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
     
   > [!NOTE]
-  > _UlFlags_ MAPI_GAL_ONLY möglicherweise nicht in der herunterladbaren Headerdatei derzeit definiert werden, in diesem Fall können Sie es dem Code mit dem folgenden Wert hinzufügen: >`#define MAPI_GAL_ONLY (0x00000080)`
+  > Der _ulFlags_ -MAPI_GAL_ONLY ist möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben, in diesem Fall können Sie ihn mithilfe des folgenden Werts zu Ihrem Code hinzufügen: >`#define MAPI_GAL_ONLY (0x00000080)`
   
 MAPI_MODIFY 
   
-> Anforderungen, denen der Eintrag geöffnet werden, mit Lese-/Schreibberechtigung. Da Einträge standardmäßig mit schreibgeschützten Zugriff geöffnet sind, sollte Clients nicht wird vorausgesetzt, dass Lese-/Schreibberechtigung erteilt wurde, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
+> Fordert, dass der Eintrag mit Lese-/Schreibzugriff geöffnet wird. Da Einträge standardmäßig mit schreibgeschütztem Zugriff geöffnet werden, sollten Clients nicht davon ausgehen, dass Lese-/Schreibzugriff erteilt wurde, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
     
 MAPI_NO_CACHE
   
-> Verwenden Sie das Offlineadressbuch nicht namensauflösung ausführen. Dieses Kennzeichen werden nur von der Exchange-Adressbuchanbieter unterstützt.
+> Verwenden Sie das Offlineadressbuch nicht zum Ausführen der Namensauflösung. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
     
 _lpulObjType_
   
-> [out] Ein Zeiger auf den Typ des Eintrags geöffnet.
+> Out Ein Zeiger auf den Typ des geöffneten Eintrags.
     
 _lppUnk_
   
-> [out] Ein Zeiger auf einen Zeiger auf den Eintrag geöffnet.
+> Out Ein Zeiger auf einen Zeiger auf den geöffneten Eintrag.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -101,17 +101,17 @@ MAPI_E_NO_ACCESS
     
 MAPI_E_NOT_FOUND 
   
-> Der Eintrag durch _LpEntryID_ dargestellt ist nicht vorhanden. 
+> Der durch _lpEntryID_ dargestellte Eintrag ist nicht vorhanden. 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Die in _LpEntryID_ angegebene Eintrags-ID wird nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn die Adressbuchanbieter verantwortlich für den entsprechenden Eintrag nicht geöffnet ist. 
+> Die in _lpEntryID_ angegebene Eintrags-ID wird nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn der für den entsprechenden Eintrag zuständige Adressbuchanbieter nicht geöffnet ist. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Clients und -Dienstanbieter rufen Sie die **IAddrBook::OpenEntry** -Methode, um ein Adressbuch Adresseintrag zu öffnen. MAPI leitet den Anruf an die entsprechenden Adressbuchanbieter basierend auf der [MAPIUID](mapiuid.md) -Struktur in die Eintrags-ID in der _LpEntryID_ -Parameter übergeben enthalten. Der Adressbuchanbieter öffnet den Eintrag im schreibgeschützten Modus, es sei denn, das Flag MAPI_MODIFY oder MAPI_BEST_ACCESS im _UlFlags_ -Parameter festgelegt ist. Allerdings werden diese Flags Vorschläge. Wenn die Adressbuchanbieter keine Änderung für den Eintrag angefordert zulässt, wird MAPI_E_NO_ACCESS zurückgegeben. 
+Clients und Dienstanbieter rufen die **IAddrBook:: OpenEntry** -Methode auf, um einen Adressbucheintrag zu öffnen. MAPI leitet den Anruf an den entsprechenden Adressbuchanbieter weiter, basierend auf der [MAPIUID](mapiuid.md) -Struktur, die in der im _lpEntryID_ -Parameter übergebenen Eintrags-ID enthalten ist. Der Adressbuchanbieter öffnet den Eintrag schreibgeschützt, es sei denn, das MAPI_MODIFY-oder MAPI_BEST_ACCESS-Flag im _ulFlags_ -Parameter ist festgelegt. Diese Flags sind jedoch Vorschläge. Wenn der Adressbuchanbieter die Änderung für den angeforderten Eintrag nicht zulässt, wird MAPI_E_NO_ACCESS zurückgegeben. 
   
-Der Parameter _LpInterface_ gibt an, welche Schnittstelle zum Zugriff auf die geöffnete Eintrag verwendet werden soll. Übergeben von NULL in _LpInterface_ gibt an, dass die standard-MAPI-Schnittstelle für diesen Eintrag verwendet werden soll. Da die Adressbuchanbieter eine andere Schnittstelle als die durch den Parameter _LpInterface_ vorgeschlagene zurückgegeben werden, sollte der Aufrufer überprüfen Sie den Wert zurückgegeben, die in der _LpulObjType_ -Parameter, um festzustellen, ob der Objekttyp zurückgegeben wird Was wurde erwartet. Wenn der Objekttyp nicht mit dem erwarteten Typ ist, kann der Aufrufer den _LppUnk_ -Parameter auf einen Typ umgewandelt, die besser geeignet ist. 
+Der Parameter _lpInterface_ gibt an, welche Schnittstelle für den Zugriff auf den geöffneten Eintrag verwendet werden soll. Durch das Übergeben von NULL in _lpInterface_ wird angegeben, dass die standardmäßige MAPI-Schnittstelle für diesen Eintragstyp verwendet werden soll. Da der Adressbuchanbieter eine andere Schnittstelle als die vom _lpInterface_ -Parameter vorgeschlagene zurückgeben kann, sollte der Aufrufer den im _lpulObjType_ -Parameter zurückgegebenen Wert überprüfen, um zu bestimmen, ob der zurückgegebene Objekttyp erwartete. Wenn der Objekttyp nicht vom erwarteten Typ ist, kann der Aufrufer den Parameter _lppUnk_ in einen geeigneten Typ umwandeln. 
   
 ## <a name="see-also"></a>Siehe auch
 

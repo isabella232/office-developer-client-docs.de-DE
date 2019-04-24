@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12b95657-1926-4a24-be63-40305ea6f990
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8f68de5e18d84c728241c188b932f99456f5be8c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a1bf02de914865e27c8c018aba8695c858888ae2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299461"
 ---
 # <a name="hexfrombin"></a>HexFromBin
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert eine binäre Zahl in eine String-Darstellung eine hexadezimale Zahl. 
+Konvertiert eine binäre Zahl in eine Zeichenfolgendarstellung einer Hexadezimalzahl. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 void HexFromBin(
@@ -45,22 +45,22 @@ void HexFromBin(
 
  _pb_
   
-> [in] Zeiger auf die binären Daten konvertiert werden soll. 
+> in Zeiger auf die zu konvertierenden Binärdaten. 
     
  _cb_
   
-> [in] Größe in Bytes, die binären Daten, die durch den Parameter _pb_ auf. 
+> in Die Größe der Binärdaten, auf die durch den _PB_ -Parameter verwiesen wird, in Byte. 
     
- _su_
+ _SZ_
   
-> [out] Zeiger auf eine Null endende ASCII-Zeichenfolge, die binären Daten in Hexadezimalzahlen darstellt.
+> Out Zeiger auf eine mit NULL endende ASCII-Zeichenfolge, die die Binärdaten in Hexadezimalziffern darstellt.
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **HexFromBin** -Funktion verwendet einen Zeiger auf einer Einheit von binären Daten, deren Größe von der _Cb_ -Parameter angegeben ist. Es gibt in der Zeichenfolge _su_ innerhalb (2 * _Cb_) + 1 Byte an Arbeitsspeicher, eine Darstellung dieses Binärdaten in Hexadezimalzahlen. Wenn der Bytewert Dezimalzahl 10 ist, beispielsweise werden die hexadezimale Zeichenfolge 0A, dies der Fall ist ein Byte in die beiden Bytes in der Zeichenfolge konvertiert. 
+Die **HexFromBin** -Funktion verwendet einen Zeiger auf eine Einheit von Binärdaten, deren Größe durch den _CB_ -Parameter angegeben wird. In der _SZ_ -Zeichenfolge wird innerhalb von (2 * _CB_) + 1 Byte des Arbeitsspeichers eine Darstellung dieser Binärinformationen in Hexadezimalzahlen zurückgegeben. Wenn der Byte-Wert dezimal 10 ist, wird beispielsweise die hexadezimale Zeichenfolge 0A, sodass ein Byte in zwei Bytes in der Zeichenfolge konvertiert. 
   
 

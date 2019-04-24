@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 45066528-2447-4178-aaa3-7513ed0b3ba4
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 11f11ae2d90a951a119895f3e0e3e3ca0dbc0fc5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3ef284a2c036abb9eac10ecf33de4adbf61f3c54
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309485"
 ---
 # <a name="smapiverb"></a>SMAPIVerb
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein MAPI-Verb an.
+Beschreibt ein MAPI-Verb.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
    
 ```cpp
 typedef struct
@@ -47,15 +47,15 @@ typedef struct
 
  **lVerb**
   
-> Code, der das Verb an, das an [IMAPIForm::DoVerb](imapiform-doverb.md)übergeben wird, darstellt. Standard-Verben sind in der Headerdatei Exchform.h definiert.
+> Code, der das Verb darstellt, das an IMAPIForm übergeben wird [::D overb](imapiform-doverb.md). Standard Verben werden in der Headerdatei Exchform. h definiert.
     
  **szVerbname**
   
-> Anzeigename des Verbs, die im Formular angezeigt wird.
+> Anzeigename des Verbs, wie er im Menü Formular angezeigt wird.
     
  **fuFlags**
   
-> Flags für das Verb.
+> Kennzeichen für das Verb.
     
  **grfAttribs**
   
@@ -63,15 +63,15 @@ typedef struct
     
  **ulFlags**
   
-> Kennzeichen Sie, die das Format des Anzeigenamens des Verbs. Das folgende Flag kann festgelegt werden:
+> Flag, das das Format des Anzeigenamens des Verbs angibt. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Der Anzeigename ist im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Anzeigename im ANSI-Format.
+> Der Anzeigename ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Anzeigename im ANSI-Format.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **SMAPIVerb** wird als Parameter in der folgenden Methoden übergeben: 
+Die **SMAPIVerb** -Struktur wird als Parameter in den folgenden Methoden übergeben: 
   
 - [IMAPIFormContainer::ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md)
     

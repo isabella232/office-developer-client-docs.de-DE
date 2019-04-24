@@ -1,35 +1,35 @@
 ---
-title: Herunterfahren eines Anbieters von umschlossenem PST-Speicher
+title: Herunterfahren eines einGebundenen PST-Speicheranbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 0c9e5917-1b96-323d-bf8b-1d3aa1f677d0
-description: 'Zuletzt geändert: 02 Juli 2012'
-ms.openlocfilehash: 43a65548bedc1729ff2bcb62bc3df78d2408bf12
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 02 Juli, 2012'
+ms.openlocfilehash: fa918920213ee77c4d0c1d3ccc239ae7cffe81fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282782"
 ---
-# <a name="shutting-down-a-wrapped-pst-store-provider"></a>Herunterfahren eines Anbieters von umschlossenem PST-Speicher
+# <a name="shutting-down-a-wrapped-pst-store-provider"></a>Herunterfahren eines einGebundenen PST-Speicheranbieters
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachdem Sie mithilfe eines gepackten Anbieters für Persönliche Ordner-Datei (PST) anmelden, müssen Sie die gepackten PST-Speicheranbieter ordnungsgemäß herunterfahren. Weitere Informationen zur Verwendung der gepackten PST Informationsdienst finden Sie unter [Verwenden einer gewrappt PST Store Provider](using-a-wrapped-pst-store-provider.md).
+Nachdem Sie einen eingebundenen PST-Speicheranbieter verwendet haben, müssen Sie den eingebundenen PST-Speicheranbieter ordnungsgemäß herunterfahren. Weitere Informationen zur Verwendung des eingebundenen PST-Speicheranbieters finden Sie unter [Verwenden eines EingebundenEN PST-Speicheranbieters](using-a-wrapped-pst-store-provider.md).
   
-Um einem gepackten PST-Anbieter zu beenden, müssen Sie die Funktion **[IMSProvider::Shutdown](imsprovider-shutdown.md)** aufrufen. Diese Funktionen wird die gepackten PST Speicheranbieter ordnungsgemäß geschlossen. 
+Zum Herunterfahren eines eingebundenen PST-Speicheranbieters müssen Sie die **[IMSProvider:: Shutdown](imsprovider-shutdown.md)** -Funktion aufrufen. Diese Funktionen schließen den eingebundenen PST-Speicheranbieter ordnungsgemäß ab. 
   
-In diesem Thema wird die Funktion **IMSProvider::Shutdown** mithilfe eines Codebeispiels aus der umbrochen PST Store Beispielanbieter veranschaulicht. Das Beispiel implementiert einen gepackten PST-Anbieter, der in Verbindung mit der API für die Replikation verwendet werden soll. Weitere Informationen zum Herunterladen und Installieren der umbrochen PST Store Beispielanbieter finden Sie unter [Sample umfließendem PST Store Provider installieren](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikation-API finden Sie unter [Über die Replikation-API](about-the-replication-api.md).
+In diesem Thema wird die **IMSProvider:: Shutdown** -Funktion anhand eines Codebeispiels aus dem eingebundenen PST-Speicheranbieter demonstriert. Im Beispiel wird ein eingebundener PST-Anbieter implementiert, der in Verbindung mit der Replikations-API verwendet werden soll. Weitere Informationen zum herunterladen und Installieren des eingeWickelten Beispiel-PST-Speicheranbieters finden Sie unter [Installing the Sample Wrapped Store Provider](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikations-API finden Sie unter Informationen zur [Replikations-API](about-the-replication-api.md).
   
-## <a name="shut-down-routine"></a>Routine Herunterfahren
+## <a name="shut-down-routine"></a>Herunterfahren der Routine
 
-Die MAPI-Warteschlange Ruft die **[IMSProvider::Shutdown](imsprovider-shutdown.md)** -Funktion, bevor der gepackten PST Informationsdienst freigegeben, damit der gepackten PST Informationsdienst ordnungsgemäß heruntergefahren werden kann. Die Funktion wird beendet, alle Sitzungsobjekte, die den gepackten PST-Speicheranbieter zugeordnet. 
+Der MAPI-Spooler Ruft die **[IMSProvider:: Shutdown](imsprovider-shutdown.md)** -Funktion kurz vor dem Aufheben des eingebundenen PST-Speicheranbieters auf, sodass der verpackte PST-Speicheranbieter ordnungsgemäß heruntergefahren werden kann. Die Funktion beendet alle Sitzungsobjekte, die dem eingebundenen PST-Speicheranbieter zugeordnet sind. 
   
-## <a name="cmsprovidershutdown-example"></a>CMSProvider::ShutDown()-Beispiel
+## <a name="cmsprovidershutdown-example"></a>CMSProvider:: ShutDown ()-Beispiel
 
 ```cpp
 STDMETHODIMP CMSProvider::Shutdown(ULONG * pulFlags) 
@@ -46,13 +46,13 @@ STDMETHODIMP CMSProvider::Shutdown(ULONG * pulFlags)
 
 
 
-[Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher](about-the-sample-wrapped-pst-store-provider.md)
+[Informationen zum einGebundenen PST-Speicheranbieter](about-the-sample-wrapped-pst-store-provider.md)
   
-[Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher](installing-the-sample-wrapped-pst-store-provider.md)
+[Installieren des eingeWickelten Beispiel-PST-Speicheranbieters](installing-the-sample-wrapped-pst-store-provider.md)
   
-[Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
+[Initialisieren eines einGebundenen PST-Speicheranbieters](initializing-a-wrapped-pst-store-provider.md)
   
-[Anmelden bei einem Anbieter von umschlossenem PST-Speicher](logging-on-to-a-wrapped-pst-store-provider.md)
+[Anmelden bei einem einGebundenen PST-Speicheranbieter](logging-on-to-a-wrapped-pst-store-provider.md)
   
-[Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
+[Verwenden eines einGebundenen PST-Speicheranbieters](using-a-wrapped-pst-store-provider.md)
 

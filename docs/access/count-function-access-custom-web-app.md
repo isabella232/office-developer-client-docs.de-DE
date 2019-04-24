@@ -1,39 +1,39 @@
 ---
-title: Count-Funktion (Access benutzerdefinierte Web app)
+title: Count-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d931535b-428f-4300-93bf-cfe0ebcc2ac9
 description: Gibt die Anzahl von Datensätzen in einer Abfrage oder Tabelle zurück.
-ms.openlocfilehash: 300fcbfd2aa927dd19516355ae28eec2adadf521
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 98dbed393bf2f6dc401119f6c5dc7ab6b5ff7864
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282236"
 ---
-# <a name="count-function-access-custom-web-app"></a>Count-Funktion (Access benutzerdefinierte Web app)
+# <a name="count-function-access-custom-web-app"></a>Count-Funktion (Access Custom Web App)
 
 Gibt die Anzahl von Datensätzen in einer Abfrage oder Tabelle zurück.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
-**Count** (*Ausdruck*) 
+**Anzahl** (*Ausdruck*) 
   
-Die **Count** -Funktion enthält das folgende Argument. 
+Die **count** -Funktion enthält das folgende Argument. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Expression*  <br/> |Ein Zeichenfolgenausdruck, der das Feld, das Daten enthält, die Sie Count oder ein Ausdruck, der eine Berechnung mit den Daten in das Feld durchführt möchten. Zu den Operanden von *Ausdruck* zählen der Name des Felds oder Funktion (die integrierte oder benutzerdefinierte werden können, jedoch keine anderen SQL-Aggregatfunktionen). Sie können jede Art von Daten, einschließlich Text zählen.  <br/> |
+| *Ausdruck*  <br/> |Ein Zeichenfolgenausdruck, der das Feld identifiziert, das die zu zählenden Daten enthält, oder ein Ausdruck, der eine Berechnung mithilfe der Daten im Feld ausführt. Operanden in *Expression* können den Namen eines Tabellenfelds oder einer Funktion enthalten (Dies kann sowohl systeminterne als auch benutzerdefinierte, aber nicht andere SQL-Aggregatfunktionen sein). Sie können beliebige Daten, einschließlich Text, zählen.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Count können Sie die Anzahl der Datensätze in einer zugrunde liegenden Abfrage zählen. Count können Sie beispielsweise die Anzahl von Bestellungen, die einem bestimmten Land oder einer Region zählen.
+Mithilfe der Count-Funktion kann die Anzahl von Datensätzen in einer zugrunde liegenden Abfrage gezählt werden. Sie können beispielsweise count verwenden, um die Anzahl der Bestellungen zu ermitteln, die an ein bestimmtes Land oder eine bestimmte Region geliefert wurden.
   
-**Count** (\*) die Anzahl der Elemente in einer Gruppe zurückgegeben. Dazu gehören NULL-Werte und Duplikate. 
+**Anzahl** (\*) gibt die Anzahl der Elemente in einer Gruppe zurück. Dazu gehören NULL-Werte und Duplikate. 
   
 

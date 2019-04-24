@@ -1,5 +1,5 @@
 ---
-title: PidTagProofOfDeliveryRequested (kanonische Eigenschaft)
+title: Kanonische Pidtagproofofdeliveryrequested (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4d752d3f-bf36-4711-b1d4-68cd575a062f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2eb811a88cd15ad05d016c690d3939a6b1e00ca3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a85d1ad0526c5bac91600df32ba941ddbf28a188
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286542"
 ---
-# <a name="pidtagproofofdeliveryrequested-canonical-property"></a>PidTagProofOfDeliveryRequested (kanonische Eigenschaft)
+# <a name="pidtagproofofdeliveryrequested-canonical-property"></a>Kanonische Pidtagproofofdeliveryrequested (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält True, wenn der Absender eine Nachricht Nachweis der Lieferung für einen bestimmten Empfänger anfordert.
+Diese Eigenschaft enthält TRUE, wenn ein Nachrichtenabsender einen Übermittlungsnachweis für einen bestimmten Empfänger anfordert.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Diese Eigenschaft enthält True, wenn der Absender eine Nachricht Nachweis der L
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

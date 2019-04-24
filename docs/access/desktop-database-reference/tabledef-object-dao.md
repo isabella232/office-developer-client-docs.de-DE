@@ -8,11 +8,11 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 6e1182427c688e7c8b5ca53c1f5f4bb208b3609a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308372"
 ---
 # <a name="tabledef-object-dao"></a>TableDef-Objekt (DAO)
 
@@ -32,7 +32,7 @@ Sie ändern eine Tabellendefinition mithilfe eines **TableDef**-Objekts sowie se
 
 - Verwenden Sie die **OpenRecordset**-Methode, um ein **Recordset**-Objekt vom Typ "table", "dynaset", "dynamic", "snapshot" oder "forward–only" basierend auf der Tabellendefinition zu erstellen.
 
-Für Basistabellen enthält die **RecordCount**-Eigenschaft die Anzahl der Datensätze in der angegebenen Datenbanktabelle. For linked tables, the **RecordCount** property setting is always –1.
+Für Basistabellen enthält die **RecordCount**-Eigenschaft die Anzahl der Datensätze in der angegebenen Datenbanktabelle. Für verknüpfte Tabellen ist die Einstellung der **RecordCount**-Eigenschaft immer "-1".
 
 Um ein neues **TableDef**-Objekt zu erstellen, verwenden Sie die **[CreateTableDef](database-createtabledef-method-dao.md)**-Methode.
 

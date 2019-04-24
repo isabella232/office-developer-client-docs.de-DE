@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 32c80bcd-a5d6-af32-38ba-9ca9ff148b99
-description: Sie können die meisten Ansichtselemente erstellen, die Sie möglicherweise in Microsoft InfoPath-Formulardesigner benötigen. Wenn Sie eine benutzerdefinierte Ansichtselement, die InfoPath nicht erstellt werden kann benötigen, können Sie jedoch manuell die XSL-Transformation (XSLT) ändern, die InfoPath verwendet, um die Ansicht zu generieren. Hierzu extrahieren Sie das Formular in seine Komponentendateien mithilfe von Quelldateien auf der Registerkarte veröffentlichen, von der Microsoft Office Backstage exportieren, und klicken Sie dann bearbeiten Sie die Transformation in Ihrem bevorzugten XML-Editor wie Microsoft Visual Studio oder Editor.
-ms.openlocfilehash: 796115c99c81fc2a77812d91d317f5ce9ed54e5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sie können die meisten Ansichtselemente erstellen, die Sie wahrscheinlich im Microsoft InfoPath-Formular-Designer benötigen. Falls Sie ein benutzerdefiniertes Ansichtselement benötigen, das nicht von InfoPath erstellt werden kann, können Sie jedoch die XSL-Transformation (XSLT) manuell ändern, mit deren Hilfe von InfoPath die Ansicht erstellt wird. Extrahieren Sie dazu das Formular in die Komponentendateien mithilfe von Export Source Files auf der Registerkarte Veröffentlichen des Microsoft Office backstaging, und bearbeiten Sie die Transformation in Ihrem bevorzugten XML-Editor wie Microsoft Visual Studio oder Notepad.
+ms.openlocfilehash: a61980191dbedeec33b06ad8173ce50126fea781
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299903"
 ---
 # <a name="using-custom-xslt-in-infopath-form-templates"></a>Verwenden von benutzerdefinierter XSLT in InfoPath-Formularvorlagen
 
-Sie können die meisten Ansichtselemente erstellen, die Sie möglicherweise in Microsoft InfoPath-Formulardesigner benötigen. Wenn Sie eine benutzerdefinierte Ansichtselement, die InfoPath nicht erstellt werden kann benötigen, können Sie jedoch manuell die XSL-Transformation (XSLT) ändern, die InfoPath verwendet, um die Ansicht zu generieren. Hierzu extrahieren Sie das Formular in seine Komponentendateien mithilfe von **Quelldateien exportieren** auf der Registerkarte **Veröffentlichen** , von der Microsoft Office Backstage, und klicken Sie dann bearbeiten Sie die Transformation in Ihrem bevorzugten XML-Editor wie Microsoft Visual Studio oder Editor. 
+Sie können die meisten Ansichtselemente erstellen, die Sie wahrscheinlich im Microsoft InfoPath-Formular-Designer benötigen. Falls Sie ein benutzerdefiniertes Ansichtselement benötigen, das nicht von InfoPath erstellt werden kann, können Sie jedoch die XSL-Transformation (XSLT) manuell ändern, mit deren Hilfe von InfoPath die Ansicht erstellt wird. Extrahieren Sie dazu das Formular in die Komponentendateien mithilfe von **Export Source Files** auf der Registerkarte **veröffentlichen** des Microsoft Office backstaging, und bearbeiten Sie die Transformation in Ihrem bevorzugten XML-Editor wie Microsoft Visual Studio oder Notepad. 
   
-Wenn Sie Änderungen an einer Ansichtstransformation außerhalb von InfoPath vornehmen und klicken Sie dann die Ansicht im Entwurfsmodus öffnen und ändern, überschreibt InfoPath die Änderungen, die Sie manuell vorgenommen. Um zu verhindern, dass InfoPath und überschreiben Sie die Änderungen, die Sie vornehmen, müssen Sie diese Änderungen in Platzieren eines `<xsl:template>` Element in der Transformation und Verwendung der `xd:preserve` Modus, wie hier gezeigt: 
+Wenn Sie eine Ansichtstransformation außerhalb von InfoPath ändern und anschließend die Ansicht im Designmodus öffnen und Änderungen vornehmen, werden Ihre manuellen Änderungen von InfoPath überschrieben. Damit InfoPath die vorgenommenen Änderungen nicht überschreiben kann, müssen Sie diese Änderungen in einem `<xsl:template>` Element in der Transformation platzieren und den `xd:preserve` Modus verwenden, wie hier gezeigt: 
   
 ```XML
 <xsl:template match="my:field1" mode="xd:preserve"> 
@@ -27,12 +27,12 @@ Wenn Sie Änderungen an einer Ansichtstransformation außerhalb von InfoPath vor
 </xsl:template>
 ```
 
-Wenn Sie die Vorlage in die transformierte Datei einzuschließen, verwenden Sie die `<xsl:apply-templates>` Element mit demselben `xd:preserve` Modus: 
+Wenn Sie die Vorlage in die transformierte Datei aufnehmen möchten, `<xsl:apply-templates>` verwenden Sie das- `xd:preserve` Element mit demselben Modus: 
   
 ```XML
 <xsl:apply-templates select="my:field1" mode="xd:preserve"/>
 ```
 
-Elemente und Konstrukte in XSL-Vorlagen mit definiert die `xd:preserve` Modus wird in der InfoPath-Design-Umgebung nicht angezeigt werden. Stattdessen wird InfoPath im benutzerdefinierten Abschnitt mit dem Steuerelement mit der Bezeichnung **Geschützter Codeabschnitt** mit einem roten Rahmen markiert. Wenn ein Benutzer das Formular, um es auszufüllen geöffnet wird, die benutzerdefinierten XSL-Transformationen werden angewendet und die **Geschützter Codeabschnitt** -Steuerelemente werden nicht angezeigt. 
+Elemente und Konstrukte, die innerhalb von XSL- `xd:preserve` Vorlagen mit dem Modus definiert sind, werden in der InfoPath-Entwurfsumgebung nicht angezeigt. Stattdessen wird der benutzerdefinierte Abschnitt von InfoPath mit dem Steuerelement **Geschützter Codeabschnitt** mit einem roten Rand markiert. Wenn ein Benutzer das Formular zum Ausfüllen öffnet, werden die benutzerdefinierten XSL-Transformationen angewendet, und die Steuerelemente **Geschützter Codeabschnitt** werden nicht angezeigt. 
   
 

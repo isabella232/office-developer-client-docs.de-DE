@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 63eac3ee-e59b-4a06-8bb9-f72764d84bda
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f7ec60768ab07c56969f538f196a1f9df5dbed17
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: da314205f7d2dd746b72aa7e2b5ff2a13bb0c21b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32269923"
 ---
 # <a name="mapiuid"></a>MAPIUID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Byte-Reihenfolge unabhängige Version einer [GUID](guid.md) -Struktur, die verwendet wird, um einem Dienstanbieter eindeutig zu identifizieren. 
+Eine unabhängige Bytereihenfolge-Version einer [GUID](guid.md) -Struktur, die zum eindeutigen Identifizieren eines Dienstanbieters verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makro:  <br/> |[IsEqualMAPIUID](isequalmapiuid.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehöriges Makro:  <br/> |[IsEqualMAPIUID](isequalmapiuid.md) <br/> |
    
 ```cpp
 typedef struct _MAPIUID
@@ -46,29 +46,29 @@ typedef struct _MAPIUID
   
 > Ein Array, das einen 16-Byte-Bezeichner enthält.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine **MAPIUID** -Struktur ist eine **GUID** -Struktur in Intel® Prozessor-Byte-Reihenfolge zu platzieren. 
+Eine **MAPIUID** -Struktur ist eine **GUID** -Struktur, die in die Bytereihenfolge der Intel ® processors eingefügt wird. 
   
-MAPI erstellt **MAPIUID** Strukturen in eine Möglichkeit, mit dem zwei verschiedene Elemente, die dieselbe ID äußerst selten kann. **MAPIUID** Strukturen können gespeichert werden, als binäre Eigenschaften oder als Dateien, ohne dabei die Anordnung der Bytes des Computers speichern oder den Zugriff auf die Informationen zu berücksichtigen. 
+MAPI erstellt **MAPIUID** -Strukturen so, dass es sehr selten ist, dass zwei verschiedene Elemente denselben Bezeichner aufweisen. **MAPIUID** -Strukturen können als binäre Eigenschaften oder als Dateien gespeichert werden, unabhängig von der Bytereihenfolge des Computers, auf dem Informationen gespeichert werden. 
   
- **MAPIUID** Strukturen verwendet werden: 
+ **MAPIUID** -Strukturen werden verwendet: 
   
-- Um einen Profilabschnitt zu identifizieren.
+- , Um einen Profil Abschnitt zu identifizieren.
     
-- In den Eintrag Bezeichner der Nachricht speichern und address Book-Objekten, um den verantwortlich Dienstanbieter zu ermitteln.
+- In den Eintrags Bezeichnern von Nachrichtenspeicher-und Adressbuch Objekten, um den Verantwortlichen Dienstanbieter zu identifizieren.
     
-- In der Eigenschaft **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) von Nachrichten.
+- In der **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft von Nachrichten.
     
-Um einen **MAPIUID** Bezeichner für eine Suche Schlüssel generiert werden soll, rufen Sie Dienstanbieter [IMAPISupport::NewUID](imapisupport-newuid.md).
+Um einen **MAPIUID** -Bezeichner für einen Suchschlüssel zu generieren, rufen Dienstanbieter [IMAPISupport:: NewUID](imapisupport-newuid.md)auf.
   
-Wenn ein Client über ein Netzwerk eine Nachricht sendet, sollte ein Protokoll oder Übertragung Format verwendet werden, die nicht die Bytereihenfolge **MAPIUID** Daten geändert wird. 
+Wenn ein Client eine Nachricht über ein Netzwerk übermittelt, sollte Sie ein Protokoll-oder Übertragungsformat verwenden, das die Bytereihenfolge der **MAPIUID** -Daten nicht ändert. 
   
-Weitere Informationen dazu, wie **MAPIUID** Strukturen verwendet werden finden Sie unter den folgenden Themen: 
+Weitere Informationen zur Verwendung von **MAPIUID** -Strukturen finden Sie in den folgenden Themen: 
   
-[Registrieren der eindeutigen Dienstanbieterbezeichner](registering-service-provider-unique-identifiers.md)
+[Registrieren von eindeutigen Bezeichnern des Dienstanbieters](registering-service-provider-unique-identifiers.md)
   
-[Festlegen der Transportreihenfolge](setting-transport-order.md)
+[Festlegen des Transport Auftrags](setting-transport-order.md)
   
 ## <a name="see-also"></a>Siehe auch
 

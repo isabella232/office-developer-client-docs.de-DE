@@ -7,23 +7,23 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c5e816b5-2ff2-4f59-ba54-c3ed291f8bba
-description: Die empfohlene Methode zum Bereitstellen eines Providers Outlook Social Connector (OSC) ist die Verwendung von Windows Installer (MSI)-Paket.
+description: Die empfohlene Methode zur Bereitstellungeines OSC-Anbieters (Outlook Social Connector) ist die Verwendung eines Windows Installer-Pakets (. msi).
 ms.openlocfilehash: f606d39bd368609464cdd0ea5b9a56243ec4e27d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281061"
 ---
 # <a name="deploying-a-provider"></a>Bereitstellen eines Providers
 
-Die empfohlene Methode zum Bereitstellen eines Providers Outlook Social Connector (OSC) ist die Verwendung von Windows Installer (MSI)-Paket. Nach dem Herunterladen des Installationspakets auf einer lokalen Festplatte, installiert die Endbenutzer Office OSC-Anbieter. Nach Abschluss der Installation der Anbieter kann der Benutzer eine Verbindung mit dem OSC-Anbieter und Anmeldeinformationen für das Konto für soziale Netzwerke bereitstellen. Wenn der Benutzer entscheidet, deinstallieren Sie den OSC-Anbieter, können der Benutzer **Programme und Funktionen** in der Systemsteuerung Sie deinstallieren. 
+Die empfohlene Methode zur Bereitstellungeines OSC-Anbieters (Outlook Social Connector) ist die Verwendung eines Windows Installer-Pakets (. msi). Nach dem Herunterladen des Installationspakets auf eine lokale Festplatte installiert der Office-Endbenutzer den OSC-Anbieter. Sobald die Installation des Anbieters abgeschlossen ist, kann der Benutzer eine Verbindung mit dem OSC-Anbieter herstellen und Anmeldeinformationen für das Konto für soziale Netzwerke bereitstellen. Wenn der Benutzer entscheidet, den OSC-Anbieter zu deinstallieren, kann der Benutzer **Programme und Features** in der Systemsteuerung verwenden, um zu deinstallieren. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Registrieren Sie einen Anbieter](registering-a-provider.md): Registrierung Anforderungen für einen OSC-Anbieter beschrieben.
+- [Registrieren eines Anbieters](registering-a-provider.md): Beschreibt Registrierungsanforderungen für einen OSC-Anbieter.
     
-- [Checkliste für die Installation](installation-checklist.md): enthält eine Prüfliste, um sicherzustellen, dass ein OSC-Anbieter erfolgreich installiert.
+- [Checkliste](installation-checklist.md)für die Installation: enthält eine Prüfliste, um sicherzustellen, dass ein osc-Anbieter erfolgreich installiert wird.
     
 ## <a name="reference"></a>Referenz
 
@@ -41,9 +41,9 @@ Die empfohlene Methode zum Bereitstellen eines Providers Outlook Social Connecto
   
 - [Debuggen eines Providers](debugging-a-provider.md)
   
-- [Bewährte Methoden für das Entwickeln eines Providers](best-practices-for-developing-a-provider.md)
+- [Bewährte Methoden für die Entwicklung eines Anbieters](best-practices-for-developing-a-provider.md)
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Verwalten von Outlook Social Connector mithilfe von Gruppenrichtlinien](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
+- [So verwalten Sie den Outlook Connector für soziale Netzwerke mithilfe von Gruppenrichtlinien](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
 

@@ -1,25 +1,25 @@
 ---
-title: Access-Anwendungsdaten mithilfe des InfoPath 2003-Objektmodells
+title: Zugreifen auf Anwendungsdaten mithilfe des InfoPath-2003-Objektmodells
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Formularvorlagen [Infopath 2007], den Zugriff auf Daten mithilfe von InfoPath 2003-kompatible Formularvorlagen, zugreifen auf Anwendungsdaten 2003-Objektmodells
+- Formularvorlagen [InfoPath 2007], Zugriff auf Daten mithilfe des 2003-Objektmodells, InfoPath 2003-kompatible Formularvorlagen, zugreifen auf Anwendungsdaten
 localization_priority: Normal
 ms.assetid: da604c72-c760-4aa3-9574-d59c392753df
-description: Das InfoPath 2003-kompatible Objektmodell bietet Objekte und Sammlungen, die den Zugriff auf Informationen über die InfoPath-Anwendung, einschließlich Informationen zu einem Formular zugrunde liegenden XML-Dokument und der Formulardefinitionsdatei (XSF) verwendet werden können. Der Zugriff auf diese Daten erfolgt über das Objekt der obersten Ebene in der Hierarchie InfoPath-Objektmodells, die mithilfe der Benutzeroberfläche der Anwendung instanziiert wird.
-ms.openlocfilehash: e9cf01ff2ffa939fce5af277e756e679478f8b39
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Das InfoPath 2003-kompatible Objektmodell stellt Objekte und Auflistungen bereit, mit deren Hilfe der Zugriff auf Informationen zur InfoPath-Anwendung ermöglicht wird, einschließlich Informationen zu dem einem Formular zugrunde liegenden XML-Dokument und der Formulardefinitionsdatei (XSF). Auf diese Daten kann über das Objekt der obersten Ebene in der InfoPath-Objektmodellhierarchie zugegriffen werden, die mithilfe der Anwendungsschnittstelle instanziiert wird.
+ms.openlocfilehash: 849882a97109d91a5807a6798d5a62457ab971fd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303682"
 ---
-# <a name="access-application-data-using-the-infopath-2003-object-model"></a>Access-Anwendungsdaten mithilfe des InfoPath 2003-Objektmodells
+# <a name="access-application-data-using-the-infopath-2003-object-model"></a>Zugreifen auf Anwendungsdaten mithilfe des InfoPath-2003-Objektmodells
 
-Das InfoPath 2003-kompatible Objektmodell bietet Objekte und Sammlungen, die den Zugriff auf Informationen über die InfoPath-Anwendung, einschließlich Informationen zu einem Formular zugrunde liegenden XML-Dokument und der Formulardefinitionsdatei (XSF) verwendet werden können. Der Zugriff auf diese Daten erfolgt über das Objekt der obersten Ebene in der Hierarchie InfoPath-Objektmodells, die mithilfe der Benutzeroberfläche der [Anwendung](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) instanziiert wird. 
+Das InfoPath 2003-kompatible Objektmodell stellt Objekte und Auflistungen bereit, mit deren Hilfe der Zugriff auf Informationen zur InfoPath-Anwendung ermöglicht wird, einschließlich Informationen zu dem einem Formular zugrunde liegenden XML-Dokument und der Formulardefinitionsdatei (XSF). Auf diese Daten kann über das Objekt der obersten Ebene in der InfoPath-Objektmodellhierarchie zugegriffen werden, die mithilfe der [Anwendungs](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) Schnittstelle instanziiert wird. 
   
-Initialisiert eine InfoPath 2003-kompatible verwaltetem Code Formularvorlagenprojekt mit Visual Studio 2012 erstellt die `thisApplication` Variablen in der `_Startup` -Methode des die Formularklasse Code, die den Zugriff auf Member der [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) -Schnittstelle verwendet werden kann. Im folgenden Beispiel werden die Eigenschaften [Name](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.Name.aspx) und [Version](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.Version.aspx) der [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) -Schnittstelle zum Zurückgeben der Anzahl Name und Version der ausgeführten Instanz von InfoPath verwendet. Diese Informationen werden mithilfe der [Alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) -Methode der [Anwenderschnittstelle: 2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.aspx) -Schnittstelle in einem Meldungsfeld angezeigt. 
+Ein InfoPath 2003-kompatibles Formularvorlagenprojekt mit verwaltetem Code, das mithilfe von `thisApplication` Visual Studio 2012 `_Startup` erstellt wurde, initialisiert die Variable in der Methode der Formularcodeklasse, die für den Zugriff auf die Member der [Anwendungs](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) Schnittstelle verwendet werden kann. Im folgenden Beispiel werden die Eigenschaften [Name](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.Name.aspx) und [Version](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.Version.aspx) der [Anwendungs](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) Schnittstelle verwendet, um den Namen und die Versionsnummer der laufenden Instanz von InfoPath zurückzugeben. Diese Informationen werden in einem Meldungsfeld mithilfe der [Alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) -Methode der [UI2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.aspx) -Schnittstelle angezeigt. 
   
 ```cs
 thisXDocument.UI.Alert("Application name: " + thisApplication.Name +
@@ -31,7 +31,7 @@ thisXDocument.UI.Alert("Application name: " &amp; thisApplication.Name &amp; _
    vbNewLine &amp; "Application version: " &amp; thisApplication.Version)
 ```
 
-In Visual C#-Beispiel, den Verweis auf die `\n` Zeichen in der Zeichenfolge für die Benachrichtigung an gerendert wird, indem InfoPath nicht verwalteter Code als Standard neu line Feed, der bewirkt, dass den Text zu unterbrechen und in einer neuen Zeile im Meldungsfeld platziert werden. Wenn den neue Wert für den aktuellen Umgebung und Plattform definierten explizit verwenden möchten, verwenden Sie die **Environment.NewLine** -Eigenschaft stattdessen wie im folgenden Beispiel gezeigt. 
+Im Visual C#-Beispiel wird der Verweis auf das `\n` Zeichen in der Zeichenfolge für die Warnmeldung von InfoPath nicht verwaltetem Code als standardmäßiger neuer Linien-Feed gerendert, der dazu führt, dass der Text unterbrochen wird und in einer neuen Zeile im Meldungsfeld angezeigt wird. Um explizit den neuen Zeilenwert zu verwenden, der für die aktuelle Umgebung und Plattform definiert wurde, sollten Sie die **Environment.NewLine**-Eigenschaft verwenden, wie dies im folgenden Beispiel dargestellt ist. 
   
 ```cs
 thisXDocument.UI.Alert("Application name: " + thisApplication.Name +
@@ -41,9 +41,9 @@ thisXDocument.UI.Alert("Application name: " + thisApplication.Name +
 
 ## <a name="accessing-data-from-the-underlying-xml-document-of-a-form"></a>Zugreifen auf Daten aus dem zugrunde liegenden XML-Dokument eines Formulars
 
-Entwickler können die [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle verwenden, Zugriff auf Informationen zu einem Formular zugrunde liegenden XML-Dokument, einschließlich eines Verweises auf eine XML-DOM Document Object Model (), die den XML-Quelldaten des Formulars enthält. 
+Entwickler können die [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle verwenden, um Zugriff auf Informationen zum zugrunde LIEGENden XML-Dokument eines Formulars zu erhalten, einschließlich eines Verweises auf ein XML-DOM (Document Object Model), das die XML-Quelldaten des Formulars enthält. 
   
-Im folgenden Beispiel zeigt das erste Meldungsfeld einige der Daten, die von der [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle wie gibt an, ob das zugrunde liegende XML-Dokument (mithilfe der [IsDirty](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.IsDirty.aspx) -Eigenschaft) geändert wurde und ob er wurde verfügbar ist digital signiert (mithilfe der [IsSigned](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.IsSigned.aspx) -Eigenschaft). Das nächste Meldungsfeld verwendet die [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle [DOM-](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.DOM.aspx) Eigenschaft, um die Quell-XML-Daten des dem Formular zugrunde liegenden XML-Dokument anzuzeigen. 
+Im folgenden Beispiel zeigt das erste Meldungsfeld einige der Daten an, die von der [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle verfügbar sind, beispielsweise ob das zugrunde liegende XML-Dokument geändert wurde (mithilfe der IsDirty-Eigenschaft) und ob es [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.IsDirty.aspx) digital signiert (mit der [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.IsSigned.aspx) IsSigned-Eigenschaft). Das nächste Meldungsfeld verwendet die [DOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.DOM.aspx) -Eigenschaft der [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle, um die Quell-XML des dem Formular zuGRUNDe liegenden XML-Dokuments anzuzeigen. 
   
 ```cs
 thisXDocument.UI.Alert("\nIsDirty: " + thisXDocument.IsDirty +
@@ -63,13 +63,13 @@ thisXDocument.UI.Alert("IsDirty: " &amp; thisXDocument.IsDirty &amp; vbNewLine &
 thisXDocument.UI.Alert(thisXDocument.DOM.xml)
 ```
 
-Die **Xml** -Eigenschaft verwendet, die im vorherigen Beispiel ist eine Eigenschaft der das XML-Objektmodell (DOM). Weitere Informationen zum XML-DOM finden Sie unter der MSXML 5.0 SDK-Dokumentation. 
+Die **xml**-Eigenschaft, die im vorangegangenen Beispiel verwendet wurde, ist eine Eigenschaft des XML-DOM (Document Object Model). Weitere Informationen zum XML-DOM finden Sie in der Dokumentation zum MSXML 5.0-SDK. 
   
 ## <a name="accessing-data-from-a-forms-form-definition-file"></a>Zugreifen auf Daten aus der Formulardefinitionsdatei eines Formulars
 
-Informationen zur XSF-Datei eines Formulars, einschließlich eines XML-DOM-Verweises auf den XML-Quelldaten, die er enthält, kann auch über die [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle zugegriffen werden. Diese Informationen erfolgt mithilfe der [Solution](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.Solution.aspx) -Eigenschaft, die einen Verweis auf das [SolutionObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SolutionObject.aspx) -Schnittstelle zurückgibt. 
+Informationen zur XSF-Datei eines Formulars, einschließlich eines XML-DOM-Verweises auf die darin enthaltenen Quell-XML-Daten, können auch über die [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle aufgerufen werden. Auf diese Informationen wird mithilfe der [Solution](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.Solution.aspx) -Eigenschaft zugegriffen, die einen Verweis auf [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SolutionObject.aspx) die SolutionObject-Schnittstelle zurückgibt. 
   
-Im folgenden Beispiel zeigt der erste Hinweis einige der Daten, die über die [SolutionObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SolutionObject.aspx) -Schnittstelle, wie etwa den Uniform Resource Identifier (URI)-Speicherort (mithilfe der [URI](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Solution.URI.aspx) -Eigenschaft) und die Versionsnummer (mithilfe der [verfügbar ist Version](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Solution.Version.aspx) Eigenschaft). Der nächste Hinweis verwendet die [DOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Solution.DOM.aspx) -Eigenschaft der [SolutionObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SolutionObject.aspx) -Schnittstelle, um die Quell-XML-Code der XSF-Datei anzuzeigen. 
+Im folgenden Beispiel zeigt die erste Warnung einige der Daten an, die über die SolutionObject- [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SolutionObject.aspx) Schnittstelle verfügbar sind, beispielsWEISE den URI-Speicherort (Uniform Resource Identifier) (mithilfe der [URI](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Solution.URI.aspx) -Eigenschaft) und die Versionsnummer (mithilfe der [ Version](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Solution.Version.aspx) -Eigenschaft). Die nächste Warnung verwendet die [DOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Solution.DOM.aspx) -Eigenschaft der [SolutionObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SolutionObject.aspx) -Schnittstelle, um die Quell-XML der XSF-Datei anzuzeigen. 
   
 ```cs
 thisXDocument.UI.Alert("PackageURL: " +

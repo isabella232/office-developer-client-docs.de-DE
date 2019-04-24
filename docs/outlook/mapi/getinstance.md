@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: cb432d52-6c96-45d2-bbde-45b0de3f915c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c4e5d2847b53988fb75e23fc6c4dfc386ea678f4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 936a20c4236ab76e5acdb178737c3044d3f53bfe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299545"
 ---
 # <a name="getinstance"></a>GetInstance
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kopiert einen Wert innerhalb einer mehrwertigen Eigenschaft zu einer einwertige Eigenschaft des gleichen Typs. 
+Kopiert einen Wert in einer mehrwertigen Eigenschaft in eine einwertige Eigenschaft desselben Typs. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |MAPIUTIL. H  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 VOID GetInstance(
@@ -45,22 +45,22 @@ VOID GetInstance(
 
  _pvalMv_
   
-> [in] Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die eine mehrwertige Eigenschaft definieren. 
+> in Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die eine mehrwertige Eigenschaft definiert. 
     
  _pvalSv_
   
-> [in] Zeiger auf eine einwertige Eigenschaft Daten empfangen. 
+> in Zeiger auf eine einwertige Eigenschaft zum Empfangen von Daten. 
     
  _uliInst_
   
-> [in] Die Instanz an, die ist, das Arrayelement des Werts aus der Struktur, von der _PvalMv_ -Parameter angegebene kopiert werden. 
+> in Die Instanznummer, also das Arrayelement, des Werts, der aus der vom _pvalMv_ -Parameter angegebenen Struktur kopiert wird. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn der Wert für reservierter Speicher zu groß ist, kopiert die **GetInstance** -Funktion nur Zeiger, anstatt neue Arbeitsspeicher. 
+Wenn der kopierte Wert für den zugewiesenen Speicher zu umfangreich **** ist, kopiert die GetInstance-Funktion nur Zeiger, anstatt neuen Speicher zuzuweisen. 
   
 

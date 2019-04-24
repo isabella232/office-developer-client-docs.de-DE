@@ -1,26 +1,26 @@
 ---
-title: BevelBottomHeight Cell (Bevel Properties Section)
+title: Zelle "BevelBottomHeight" (Abschnitt "Fase Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ff681afd-c058-4fce-855f-5075b8c680c2
-description: Legt die Höhe des ein Shape unten Abschrägung in Punkt.
-ms.openlocfilehash: 4ff422a885dba214559792e17407b349223e9633
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Höhe der unteren Abschrägung eines Shapes in Punkt.
+ms.openlocfilehash: f0bed55f5ddeb8676b2b2bc2bf0cddad779b011c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283023"
 ---
-# <a name="bevelbottomheight-cell-bevel-properties-section"></a>BevelBottomHeight Cell (Bevel Properties Section)
+# <a name="bevelbottomheight-cell-bevel-properties-section"></a>Zelle "BevelBottomHeight" (Abschnitt "Fase Properties")
 
-Legt die Höhe des ein Shape unten Abschrägung in Punkt. 
+Bestimmt die Höhe der unteren Abschrägung eines Shapes in Punkt. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **BevelBottomHeight** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **BevelBottomHeight** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

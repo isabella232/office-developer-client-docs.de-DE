@@ -1,5 +1,5 @@
 ---
-title: Zuzuteilen Address Book-Benachrichtigung
+title: Behandeln von Adressbuchbenachrichtigungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,33 +8,33 @@ api_type:
 - COM
 ms.assetid: 0dc4bb48-c8a1-447f-9e38-1c234a358fca
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b5428ccde0e16bd32408b2ea908f5c5522992fc9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 122e50328272a4009e5a129233d449613817dfc8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299503"
 ---
-# <a name="handing-address-book-notification"></a>Zuzuteilen Address Book-Benachrichtigung
+# <a name="handing-address-book-notification"></a>Behandeln von Adressbuchbenachrichtigungen
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Address Book Benachrichtigungen ermöglichen einen Client Hier erfahren, die Adressbuch Adresseintrag oder zu einem bestimmten Eintrag Auftreten von Ereignissen. Sie können für diese Benachrichtigungen über das MAPI-Adressbuch durch Aufrufen von [IAddrBook::Advise](iaddrbook-advise.md) oder über ein Adressbuchcontainer Hierarchie oder Inhaltstabelle durch Aufrufen von [IMAPITable::Advise](imapitable-advise.md)registrieren. 
+Adressbuch Benachrichtigungen ermöglichen einem Client das Erlernen von Ereignissen, die für einen Adressbucheintrag oder einen bestimmten Eintrag auftreten. Sie können sich für diese Benachrichtigungen entweder über das MAPI-Adressbuch registrieren, indem Sie [IAddrBook:: Advise](iaddrbook-advise.md) oder die Hierarchie-oder Inhaltstabelle eines Adressbuch Containers aufrufen, indem Sie [IMAPITable:: Advise](imapitable-advise.md)aufrufen. 
   
-Geben Sie den Eintrag Bezeichner eines Adressbuchcontainer, Verteilerliste oder messaging-Benutzer, wenn Sie für Benachrichtigungen auf einen bestimmten Eintrag und NULL registrieren, wenn für Benachrichtigungen auf das gesamte Adressbuch registrieren. Die Eintrags-ID muss es sich um ein messaging-Benutzer oder eine Verteilerliste in einem Adressbuchcontainer darstellen. **IAddrBook::Advise** untersucht dieses Eintrags-ID, um zu bestimmen, welche Adresse Adressbuchanbieter für das entsprechende Objekt zuständig ist, und leitet den Anruf an die entsprechenden-Adressbuchanbieter [IABLogon::Advise](iablogon-advise.md) -Methode. 
+Geben Sie die Eintrags-ID eines Adressbuch Containers, einer Verteilerliste oder eines Messaging Benutzers an, wenn Sie sich für Benachrichtigungen zu einem bestimmten Eintrag registrieren, und NULL, wenn Sie sich für Benachrichtigungen im gesamten Adressbuch registrieren. Die Eintrags-ID muss einen Messagingbenutzer oder eine Verteilerliste in einem Adressbuchcontainer darstellen. **IAddrBook:: Advise** überprüft diese Eintrags-ID, um zu bestimmen, welcher Adressbuchanbieter für das entsprechende Objekt verantwortlich ist, und leitet den Anruf an die [IABLogon:: Advise](iablogon-advise.md) -Methode des entsprechenden Adressbuch Anbieters weiter. 
   
-Clients können für die folgenden Typen von Ereignissen auf Adressbucheinträge registrieren:
+Clients können sich für die folgenden Ereignistypen bei Adressbucheinträgen registrieren:
   
-- Schwerwiegender Fehler
+- Kritischer Fehler
     
-- Eines der Objektereignisse (erstellt, geändert, gelöscht, verschoben oder kopiert)
+- Beliebige Objekt Ereignisse (erstellt, geändert, gelöscht, verschoben oder kopiert)
     
 - Tabelle geändert
     
-In der Regel erfolgt Registrierung nur unter Address Book Containerinhalt und Hierarchietabellen. Es ist nur in seltenen Fällen Clients mit der unteren Ebene messaging Benutzer- und Verteilung List-Objekten zu registrieren. Dies ist, da:
+In der Regel erfolgt die Registrierung nur in Adressbuchcontainer-Inhalts-und Hierarchietabellen. Es ist selten, dass Clients sich bei den untergeordneten Messaging-Benutzer-und Verteilerlisten Objekten registrieren. Dies liegt daran, dass:
   
-- Viele adressbuchanbietern implementierte unterstützen keine Benachrichtigungen ihrer messaging-Benutzern und Verteilerlisten.
+- Viele Adressbuchanbieter unterstützen keine Benachrichtigungen zu ihren Messaging Benutzern und Verteilerlisten.
     
-- Tabelle Benachrichtigungen reichen zum Nachverfolgen von Änderungen und Berichten sie Benutzern zur Verfügung.
+- Tabellen Benachrichtigungen sind ausreichend, um Änderungen nachzuverfolgen und Benutzern zu melden.
     
 

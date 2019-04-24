@@ -1,41 +1,41 @@
 ---
-title: FestlegenEigenschaft-Makroaktion (Access benutzerdefinierte Web app)
+title: SetProperty-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 1e97dd95-23f6-4f49-b3b9-2c7261b3a70d
-description: Die FestlegenEigenschaft-Aktion können Sie eine Eigenschaft für ein Steuerelement in einer Ansicht festgelegt.
-ms.openlocfilehash: 89ac2b10715d707d3b6ee09ee8ab915384c5acf5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Mit der SetProperty-Aktion können Sie eine Eigenschaft für ein Steuerelement in einer Ansicht festlegen.
+ms.openlocfilehash: 1876be32606d66e0570c9e69206a508b8888b157
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307889"
 ---
-# <a name="setproperty-macro-action-access-custom-web-app"></a>FestlegenEigenschaft-Makroaktion (Access benutzerdefinierte Web app)
+# <a name="setproperty-macro-action-access-custom-web-app"></a>SetProperty-Makroaktion (benutzerdefinierte Access-Web-App)
 
-Die **FestlegenEigenschaft** -Aktion können Sie eine Eigenschaft für ein Steuerelement in einer Ansicht festgelegt. 
+Mit der SetProperty **** -Aktion können Sie eine Eigenschaft für ein Steuerelement in einer Ansicht festlegen. 
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="setting"></a>Einstellung
 
-Die **FestlegenEigenschaft** -Aktion hat die Argumente in der folgenden Tabelle aufgeführt. 
+Die **SetProperty-** Aktion hat die in der folgenden Tabelle aufgeführten Argumente. 
   
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
-| _Steuerelementname_ <br/> |Geben Sie den Namen des Felds oder der Steuerung für den Wert der Eigenschaft festgelegt werden soll. Lassen Sie dieses Argument leer, um die-Eigenschaft für die Ansicht festgelegt.  <br/> |
+| _Steuerelementname_ <br/> |Geben Sie den Namen des Felds oder Steuerelements ein, für das Sie den Eigenschaftswert festlegen möchten. Lassen Sie dieses Argument leer, um die Eigenschaft für die Ansicht festzulegen.  <br/> |
 | _Eigenschaft_ <br/> |Wählen Sie die Eigenschaft aus, die Sie festlegen möchten. Der Abschnitt **Hinweise** in diesem Artikel enthält eine Auflistung der Eigenschaften, die mithilfe dieser Aktion festgelegt werden können.<br/> |
-| _Wert_ <br/> |Geben Sie den Wert ein, auf den diese Eigenschaft festgelegt werden soll. Verwenden Sie bei Eigenschaften, deren Werte entweder Ja oder Nein lauten, -1 für Ja und 0 für Nein.<br/> |
+| _Wert_ <br/> |Geben Sie den Wert ein, auf den die Eigenschaft festgelegt werden soll. Für Eigenschaften, deren Werte entweder "Ja" oder "Nein" sind, verwenden Sie **-1** für Yes und **0** für Nein.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Die **FestlegenEigenschaft** -Aktion können Sie die folgenden Eigenschaften eines Steuerelements festlegen: 
+Mit der SetProperty **-** Aktion können Sie die folgenden Eigenschaften eines Steuerelements festlegen: 
   
-- Caption
+- Beschriftung
     
 - Aktiviert
     

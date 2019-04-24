@@ -1,31 +1,31 @@
 ---
-title: Datenblöcke (Access benutzerdefinierte Web app)
+title: Datenblöcke (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5d16f744-0ba2-4db8-9be8-55611c1b69d2
 description: ''
-ms.openlocfilehash: a9b9abe9b460a6ecd5e2b134f49090ec2089585e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4cee0b572a32552b6da69bd836889bfa5870298a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280773"
 ---
-# <a name="data-blocks-access-custom-web-app"></a>Datenblöcke (Access benutzerdefinierte Web app)
+# <a name="data-blocks-access-custom-web-app"></a>Datenblöcke (Access Custom Web App)
 
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [DatensatzErstellen-Datenblock (Access benutzerdefinierte Web app)](createrecord-data-block-access-custom-web-app.md)
+- [CreateRecord-Daten Block (Access Custom Web App)](createrecord-data-block-access-custom-web-app.md)
     
-- [BearbeitenDatensatz-Datenblock (Access benutzerdefinierte Web app)](editrecord-data-block-access-custom-web-app.md)
+- [Bearbeitendatensatz-Daten Block (Access Custom Web App)](editrecord-data-block-access-custom-web-app.md)
     
-- [FürJedenDatensatz-Datenblock (Access benutzerdefinierte Web app)](foreachrecord-data-block-access-custom-web-app.md)
+- [Fürjedendatensatz-Daten Block (Access Custom Web App)](foreachrecord-data-block-access-custom-web-app.md)
     
-- [NachschlagenDatensatz-Datenblock (Access benutzerdefinierte Web app)](lookuprecord-data-block-access-custom-web-app.md)
+- [LookupRecord-Daten Block (Access Custom Web App)](lookuprecord-data-block-access-custom-web-app.md)
     
 

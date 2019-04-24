@@ -8,28 +8,28 @@ f1_keywords:
 - Excel12
 - Excel4
 keywords:
-- Excel4-Funktion [excel 2007], Excel12-Funktion [Excel 2007]
+- Excel4-Funktion [Excel 2007], Excel12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 2404f10d-8641-4ee6-a909-1c5a26610f80
-description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: c7caf4923e336020928006f6838de5eaeba814a4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+ms.openlocfilehash: 7c3af5f380ae4144890b1f7b486a61a05c19de74
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304109"
 ---
 # <a name="excel4excel12"></a>Excel4/Excel12
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Ruft einen internen Microsoft Excel-Arbeitsblatt-Funktion, Blatt Makrofunktion oder Befehls, oder XLL-only Sonderfunktion bzw., aus innerhalb einer DLL/XLL oder Code-Ressource.
+Ruft eine interne Microsoft Excel-Arbeitsblattfunktion, eine Makroblatt Funktion oder einen Befehl oder eine XLL-spezifische Funktion oder einen Befehl aus einer DLL/XLL-oder Coderessource auf.
   
-Alle aktuelle Versionen von Excel unterstützen **Excel4**. Ab Excel 2007 wird **Excel12** unterstützt. 
+Alle neueren Versionen von Excel unterstützen **Excel4**. Ab Excel 2007 wird **Excel12** unterstützt. 
   
-Nur, wenn Excel Steuerelement an die DLL oder XLL übergeben wurde, können diese Funktionen aufgerufen werden. Sie können auch aufgerufen werden, wenn Excel Steuerelement indirekt über einen Aufruf zu Visual Basic für Applikationen (VBA) übergeben wurde. Sie können nicht zu einem anderen Zeitpunkt aufgerufen werden. Beispielsweise können nicht sie während des Aufrufs der [DllMain](https://docs.microsoft.com/windows/desktop/dlls/dllmain) -Funktion oder in anderen Fällen aufgerufen werden, wenn das Betriebssystem die DLL aufgerufen hat, oder aus einem Thread erstellt, die von der DLL. 
+Diese Funktionen können nur aufgerufen werden, wenn Excel die Steuerung an die DLL oder XLL übergeben hat. Sie können auch aufgerufen werden, wenn Excel die Steuerung indirekt über einen Aufruf von Visual Basic für Applikationen (VBA) übergeben hat. Sie können nicht zu einem anderen Zeitpunkt aufgerufen werden. Beispielsweise können Sie nicht während der Aufrufe an die [DllMain](https://docs.microsoft.com/windows/desktop/dlls/dllmain) -Funktion oder zu anderen Zeiten aufgerufen werden, wenn das Betriebssystem die dll aufgerufen hat, oder aus einem von der dll erstellten Thread. 
   
-Die Funktionen [Excel4v und Excel12v](excel4v-excel12v.md) annehmen deren Argumente als ein Array, während die Funktionen **Excel4** und **Excel12** deren Argumente als Liste variabler Länge auf dem Stapel annehmen. In jeder anderen Hinsicht **Excel4** verhält sich wie **Excel4v**und **Excel12** verhält sich **Excel12v**identisch.
+Die [Excel4v-und Excel12v-](excel4v-excel12v.md) Funktionen akzeptieren ihre Argumente als Array, wohingegen die **Excel4** -und die **Excel12** -Funktion Ihre Argumente als Liste mit variabler Länge im Stapel akzeptieren. In allen anderen Aspekten verhält sich **Excel4** wie **Excel4v**, und **Excel12** verhält sich genauso wie **Excel12v**.
   
 ```cs
 int Excel4(int iFunction, LPXLOPER pxRes, int iCount, LPXLOPER argument1, ...);
@@ -38,45 +38,45 @@ int Excel12(int iFunction, LPXLOPER12 pxRes, int iCount, LPXLOPER12 argument1, .
 
 ## <a name="parameters"></a>Parameter
 
- _iFunction_ (**Int**)
+ _iFunction_ (**int**)
   
-Eine Zahl, die den Befehl, Function- oder Sonderfunktion gibt an, die Sie anrufen möchten. Eine Liste der gültigen _iFunction_ Werte finden Sie unter den folgenden Hinweisen. 
+Eine Zahl, die den Befehl, die Funktion oder die spezielle Funktion angibt, die Sie aufrufen möchten. Eine Liste gültiger _iFunction_ -Werte finden Sie im folgenden Abschnitt. 
   
  _pxRes_ (**LPXLOPER** oder **LPXLOPER12**)
   
-Ein Zeiger auf eine **XLOPER** (mit **Excel4**) oder ein **XLOPER12** (mit **Excel12**), die das Ergebnis der ausgewertete Funktion enthalten soll.
+Ein Zeiger auf ein **XLOPER** (mit **Excel4**) oder ein **XLOPER12** (mit **Excel12**), das das Ergebnis der ausgewerteten Funktion enthält.
   
- _iCount_ (**Int**)
+ _iCount_ (**int**)
   
-Die Anzahl der nachfolgenden Argumente, die an die Funktion übergeben werden. In Versionen von Excel bis 2003 zu kann dies eine beliebige Zahl von 0 bis 30 sein. Ab Excel 2007, kann dies eine beliebige Zahl zwischen 0 und 255 sein.
+Die Anzahl der nachfolgenden Argumente, die an die Funktion übergeben werden. In Excel-Versionen bis zu 2003 kann es sich um eine beliebige Zahl zwischen 0 und 30 handeln. Ab Excel 2007 kann es sich um eine beliebige Zahl zwischen 0 und 255 handeln.
   
- _argument1..._ (**LPXLOPER** oder **LPXLOPER12**)
+ _Argument1,._ .. (**LPXLOPER** oder **LPXLOPER12**)
   
-Die optionalen Argumente an die Funktion. Alle Argumente müssen Zeiger auf **XLOPER** oder **XLOPER12** Werten sein. 
+Die optionalen Argumente für die Funktion. Alle Argumente müssen Zeiger auf **XLOPER** -oder **XLOPER12** -Werte sein. 
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Gibt die folgenden Werte für ganze Zahl (**Int**).
+Gibt einen der folgenden Integer-Werte (**int**) zurück.
   
 |**Wert**|**Rückgabecode**|**Beschreibung**|
 |:-----|:-----|:-----|
-|0  <br/> |**xlretSuccess** <br/> |Die Funktion wurde erfolgreich aufgerufen. Dies bedeutet, dass die Funktion einen Fehlerwert Excel nicht beendet wurde. um das herauszufinden, müssen Sie den Typ und den Wert des Parameters _PxRes_ resultierenden betrachten.  <br/> |
-|1  <br/> |**xlretAbort** <br/> |Der Befehl oder Funktion wurde fehlerbedingt beendet (interner Abbruch). Dies kann vorkommen eine XLM-Makrovorlage selbst geschlossen wird durch Aufrufen von **Schließen**oder Excel nicht genügend Arbeitsspeicher ist. Wenn Excel dieser Fehler zurückgibt, muss die aufrufende Funktion sofort beenden. Die DLL kann nur vor dem Beenden **XlFree** aufrufen. Alle anderen Aufrufe der C-API sind nicht zulässig. Der Benutzer kann keine Arbeit interaktiv speichern, mit dem Befehl **Speichern** im Menü **Datei** .  <br/> |
-|2  <br/> |**xlretInvXlfn** <br/> |Es wurde eine ungültige Funktionsnummer angegeben. Wenn Sie von der Headerdatei Xlcall.h Konstanten verwenden, sollte dies nicht der Fall, wenn Sie etwas aufrufen, die in der Version von Excel nicht unterstützt wird, das Sie ausführen.  <br/> |
-|4  <br/> |**xlretInvCount** <br/> |Eine ungültige Anzahl von Argumenten eingegeben wurde. In Versionen bis zu Excel 2003 ist die maximale Anzahl von Argumenten, mit denen jede Funktion 30. Ab Excel 2007 ist die maximale Anzahl 255. Einige erfordern einer festen oder minimalen Anzahl von Argumenten.  <br/> |
-|8  <br/> |**xlretInvXloper** <br/> |Eine unzulässige **XLOPER** oder **XLOPER12** an die Funktion übergeben wurde, oder ein Argument vom falschen Typ verwendet wurde.  <br/> |
-|16  <br/> |**xlretStackOvfl** <br/> |Stapelüberlauf. Verwenden Sie **XlStack** , um die Größe des Raums links auf den Stapel überwachen. Vermeiden Sie sehr große lokale (automatische) Arrays und Strukturen auf dem Stapel zuordnen, sofern möglich; Stellen sie statische. (Beachten Sie, dass ein Stapelüberlauf auftreten kann, ohne dass.)  <br/> |
-|32  <br/> |**xlretFailed** <br/> |Eine Funktion Befehl äquivalent ist fehlgeschlagen. Dies ist gleichbedeutend mit einer Makrobefehl das Dialogfeld Makro Fehler Warnung angezeigt.  <br/> |
-|64  <br/> |**xlretUncalced** <br/> |Es wurde versucht, auf eine Zelle, die noch nicht berechnet Dereferenzierung, da es geplant ist, nach der aktuellen Zelle berechnet werden soll. In diesem Fall muss die DLL Steuerelement nach Excel sofort zurückgeben. Die DLL kann nur vor dem Beenden **XlFree** aufrufen. Alle anderen Aufrufe der C-API sind nicht zulässig. Weitere Informationen zu den Funktionen können und die Werte von Zellen, die nicht neu berechnet wurde, finden Sie unter [Excel-Befehle, Funktionen und-Zustände](excel-commands-functions-and-states.md)können nicht zugegriffen werden.  <br/> |
-|128  <br/> |**xlretNotThreadSafe** <br/> |Es wurde versucht, eine Funktion aufgerufen, die nicht oder möglicherweise nicht, während eine Multithread-neuberechnung der Arbeitsmappe threadsicheren.  <br/> Ab Excel 2007 dieser Wert wird zurückgegeben, und nur innerhalb der XLL Arbeitsblattfunktionen deklariert thread als Safe.  <br/> |
-|256  <br/> |**xlRetInvAsynchronousContext** <br/> |Das Handle asynchronen Funktion ist ungültig.  <br/> Dieser Wert wird nur von Excel 2010 verwendet.  <br/> |
-|512  <br/> |**xlRetNotClusterSafe** <br/> |Der Anruf wird auf Clustern nicht unterstützt.  <br/> Dieser Wert wird nur von Excel 2010 verwendet.  <br/> |
+|0  <br/> |**xlretSuccess** <br/> |Die Funktion wurde erfolgreich aufgerufen. Dies bedeutet nicht, dass die Funktion keinen Excel-Fehlerwert zurückgegeben hat; um dies herauszufinden, müssen Sie den Typ und den Wert des resultierenden _pxRes_ -Parameters betrachten.  <br/> |
+|1  <br/> |**xlretAbort** <br/> |Der Befehl oder die Funktion wurde abnormal abgebrochen (interner Abbruch). Dies kann vorkommen, wenn eine XML-Makrovorlage sich selbst schließt, indem **Close**aufgerufen wird oder wenn Excel nicht genügend Arbeitsspeicher aufweist. Wenn Excel diesen Fehler zurückgibt, muss die aufrufende Funktion sofort beendet werden. Die DLL darf **xlFree** nur aufrufen, bevor Sie beendet wird. Alle anderen Aufrufe der C-API sind nicht zulässig. Der Benutzer kann alle arbeiten interaktiv speichern, indem er im Menü **Datei** den Befehl **Speichern** verwendet.  <br/> |
+|2  <br/> |**xlretInvXlfn** <br/> |Es wurde eine ungültige Funktionsnummer angegeben. Wenn Sie Konstanten aus der Headerdatei xlcall. h verwenden, sollte dies nicht geschehen, es sei denn, Sie rufen etwas auf, das in der von Ihnen verwendeten Version von Excel nicht unterstützt wird.  <br/> |
+|4  <br/> |**xlretInvCount** <br/> |Es wurde eine ungültige Anzahl von Argumenten eingegeben. In Versionen bis Excel 2003 ist die maximale Anzahl von Argumenten, die eine Funktion annehmen kann, 30. Ab Excel 2007 ist die maximale Anzahl 255. Einige erfordern eine feste oder minimale Anzahl von Argumenten.  <br/> |
+|8  <br/> |**xlretInvXloper** <br/> |Ein ungültiger **XLOPER** oder **XLOPER12** wurde an die Funktion übergeben, oder es wurde ein Argument des falschen Typs verwendet.  <br/> |
+|16  <br/> |**xlretStackOvfl** <br/> |Ein Stapelüberlauf ist aufgetreten. Verwenden Sie **xlStack** zum Überwachen des Speicherplatzes auf dem Stapel. Vermeiden Sie, dass sehr große lokale (automatische) Arrays und Strukturen, soweit möglich, auf dem Stapel reserviert werden. machen Sie Sie statisch. (Beachten Sie, dass ein Stapelüberlauf auftreten kann, ohne erkannt zu werden.)  <br/> |
+|32  <br/> |**xlretFailed** <br/> |Fehler bei einer Befehls äquivalenten Funktion. Dies entspricht einem Makrobefehl, der das Dialogfeld Makro Fehler Warnung anzeigt.  <br/> |
+|64  <br/> |**xlretUncalced** <br/> |Es wurde versucht, eine Zelle zu dereferenzieren, die noch nicht berechnet wurde, da Sie nach der aktuellen Zelle neu berechnet werden soll. In diesem Fall sollte die DLL die Steuerung sofort an Excel zurückgeben. Die DLL darf **xlFree** nur aufrufen, bevor Sie beendet wird. Alle anderen Aufrufe der C-API sind nicht zulässig. Weitere Informationen dazu, welche Funktionen auf die Werte von Zellen zugreifen können, die nicht neu berechnet wurden, finden Sie unter [Excel-Befehle,-Funktionen und-Zustände](excel-commands-functions-and-states.md).  <br/> |
+|128  <br/> |**xlretNotThreadSafe** <br/> |Es wurde versucht, eine Funktion aufzurufen, die während einer Multithread-Neuberechnung der Arbeitsmappe nicht oder nicht threadsicher ist.  <br/> Ab Excel 2007 wird dieser Wert zurückgegeben, und zwar nur innerhalb der XLL-Arbeitsblattfunktionen, die als threadsicher deklariert werden.  <br/> |
+|256  <br/> |**xlRetInvAsynchronousContext** <br/> |Der asynchrone Funktions Handle ist ungültig.  <br/> Dieser Wert wird nur von Excel 2010 verwendet.  <br/> |
+|512  <br/> |**xlRetNotClusterSafe** <br/> |Der Aufruf wird auf Clustern nicht unterstützt.  <br/> Dieser Wert wird nur von Excel 2010 verwendet.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-### <a name="valid-ifunction-values"></a>Gültige iFunction Werte
+### <a name="valid-ifunction-values"></a>Gültige iFunction-Werte
 
-Gültige **iFunction** Werte sind in der Headerdatei Xlcall.h oder eine der folgenden speziellen Funktionen definiert Konstanten **Xlf...** oder **Xlc...** . 
+Gültige **iFunction** -Werte sind beliebige der **XLF...** oder **XLC.** ..-Konstanten, die in der Headerdatei xlcall. h oder einer der folgenden speziellen Funktionen definiert sind. 
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -85,44 +85,44 @@ Gültige **iFunction** Werte sind in der Headerdatei Xlcall.h oder eine der folg
 |**xlDefineBinaryName** <br/> |**xlGetBinaryName** <br/> |**xlSet** <br/> |**xlUDF** <br/> |
 |**xlDisableXLMsgs** <br/> |**xlGetHwnd** <br/> |**xlSheetId** <br/> ||
    
-### <a name="different-types-of-functions"></a>Unterschiedliche Typen von Funktionen
+### <a name="different-types-of-functions"></a>Unterschiedliche Funktionstypen
 
- **Excel4** und **Excel12** unterscheiden, drei Klassen von Funktionen. Die Funktionen werden entsprechend der drei Zustände klassifiziert, in denen die DLL Excel aufgerufen werden kann. 
+ **Excel4** und **Excel12** unterscheiden zwischen drei Funktionsklassen. Die Funktionen werden gemäß den drei Status klassifiziert, in denen Excel die DLL aufrufen kann. 
   
-- Klasse 1 gilt, wenn die DLL aus einem Arbeitsblatt als Ergebnis einer neuberechnung aufgerufen wird. 
+- Klasse 1 gilt, wenn die DLL als Ergebnis einer Neuberechnung aus einem Arbeitsblatt aufgerufen wird. 
     
-- Klasse 2 gilt, wenn die DLL aus aufgerufen wird, in einem Funktionsmakro oder aus einem Arbeitsblatt, in dem er mit einem Nummernzeichen (#) im Text Typ registriert wurde.
+- Klasse 2 gilt, wenn die DLL aus einem Funktions Makro oder aus einem Arbeitsblatt aufgerufen wird, in dem Sie mit einem Nummernzeichen (#) im Typtext registriert wurde.
     
-- Klasse 3 gilt, wenn ein Objekt, Makros, Menü, Symbolleiste, Tastenkombination, **ExecuteExcel4Macro** -Methode oder den Befehl **Tools/Makro/ausführen** eine DLL aufgerufen wird. Weitere Informationen finden Sie unter [Excel-Befehle, Funktionen und-Zustände](excel-commands-functions-and-states.md).
+- Klasse 3 gilt, wenn eine DLL von einem Objekt, einem Makro, einem Menü, einer Symbolleiste, einer Tastenkombination, einer **ExecuteExcel4Macro** -Methode oder dem Befehl **Extras/Makro/ausführen** aufgerufen wird. Weitere Informationen finden Sie unter [Excel-Befehle,-Funktionen und-Zustände](excel-commands-functions-and-states.md).
     
-Die folgende Tabelle zeigt, welche Funktionen in jeder Klasse gültig sind.
+In der folgenden Tabelle wird gezeigt, welche Funktionen in den einzelnen Klassen gültig sind.
   
-|**1-Klasse**|**Klasse 2**|**Klasse 3**|
+|**Klasse 1**|**Klasse 2**|**Klasse 3**|
 |:-----|:-----|:-----|
-|Eine beliebige Arbeitsblattfunktion  <br/> Alle außer **gleich XlSet**XLL-only **... xl** -Funktion.  <br/> **xlfCaller** <br/> |Eine beliebige Arbeitsblattfunktion  <br/> Alle außer **gleich XlSet** **.. xl** -Funktion.  <br/> Makro Blatt Funktionen, einschließlich **XlfCaller**, die einen Wert zurück, verschiebt aber keine Aktion, die den Arbeitsbereich wirkt sich auf oder eine geöffnete Arbeitsmappe.  <br/> |Jede Funktion, einschließlich **gleich XlSet** und Funktionen, Befehl entspricht.  <br/> |
+|Beliebige Arbeitsblattfunktion  <br/> Jede XLL-only **XL...** -Funktion außer **xlSet**.  <br/> **xlfCaller** <br/> |Beliebige Arbeitsblattfunktion  <br/> Jede **XL...** -Funktion außer **xlSet**.  <br/> Makroblatt Funktionen, einschließlich **xlfCaller**, die einen Wert zurückgeben, jedoch keine Aktion ausführen, die sich auf den Arbeitsbereich oder eine beliebige geöffnete Arbeitsmappe auswirkt.  <br/> |Eine beliebige Funktion, einschließlich **xlSet** -und Command-Equivalent-Funktionen.  <br/> |
    
-### <a name="displaying-the-dialog-box-for-a-command-equivalent-function"></a>Anzeigen des Dialogfelds für einen Befehl Entsprechung-Funktion
+### <a name="displaying-the-dialog-box-for-a-command-equivalent-function"></a>Anzeigen des Dialog Felds für eine Befehlsäquivalente Funktion
 
-Weist eine Funktion Befehl Entsprechung Dialogfeld zugeordnet ist, können Sie das **XlPrompt** Bit in **iFunction**festlegen. Dies bedeutet, dass Excel das entsprechende Dialogfeld vor der Ausführung des Befehls angezeigt.
+Wenn eine Befehlsäquivalente Funktion über ein zugehöriges Dialogfeld verfügt, können Sie das **xlPrompt** -Bit in **iFunction**festlegen. Dies führt dazu, dass Excel vor dem Ausführen des Befehls das entsprechende Dialogfeld anzeigt.
   
 ### <a name="writing-international-dlls"></a>Schreiben von internationalen DLLs
 
-Wenn Sie das **Xlintl32** Bit in **iFunction**festlegen, wird die Funktion oder den Befehl ausgeführt, als ob es aus einem Makroblatt International aufgerufen wurden. Dies bedeutet, dass der Befehl verhält sich, als würde die US-Version von Excel, auch wenn er auf eine internationale (lokalisierte) Version ausgeführt wird.
+Wenn Sie das **xlIntl** -Bit in **iFunction**festlegen, wird die Funktion oder der Befehl ausgeführt, als würde er von einer internationalen Makrovorlage aufgerufen werden. Dies bedeutet, dass der Befehl sich so verhält wie in der US-Version von Excel, auch wenn er auf einer internationalen (lokalisierten) Version läuft.
   
-### <a name="xlretuncalced-or-xlretabort"></a>XlretUncalced oder xlretAbort
+### <a name="xlretuncalced-or-xlretabort"></a>xlretUncalced oder xlretAbort
 
-Nach dem Empfang einer der folgenden Werte zurückgeben, muss die DLL bereinigen und sofort die Steuerung an Excel zurück. Rückrufe in Excel über die C-API, mit Ausnahme von **XlFree**, sind deaktiviert, nach dem Empfang einer der folgenden Werte zurückgeben.
+Nachdem Sie einen dieser Rückgabewerte erhalten haben, muss die DLL die Steuerung sofort bereinigen und an Excel zurückgeben. Rückrufe in Excel über die C-API, mit Ausnahme von **xlFree**, sind deaktiviert, nachdem Sie einen dieser Rückgabewerte erhalten haben.
   
 ## <a name="example"></a>Beispiel
 
-Im folgende Beispiel wird die **Excel12** -Funktion verwendet, auf um die Zelle zu markieren, von der sie aufgerufen wurde. 
+Im folgenden Beispiel wird die **Excel12** -Funktion verwendet, um die Zelle auszuwählen, von der Sie aufgerufen wurde. 
   
-Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels in Excel 2010 XLL SDK am folgenden Speicherort, in dem Sie das SDK installiert:
+Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels, das im Excel 2010 XLL SDK bereitgestellt wird, an folgendem Speicherort, an dem Sie das SDK installiert haben:
   
 \Samples\Example\Example.c.
   
 > [!NOTE]
-> Diese Funktion ruft ein Makro mit Befehlen (XlcSelect) und daher funktioniert nur, wenn sie von einer XLM-Makrovorlage aufgerufen wird. 
+> Diese Funktion Ruft ein Befehlsmakro (xlcSelect) auf und funktioniert daher nur, wenn es von einem XML-Makroblatt aufgerufen wird. 
   
 ```cs
 short WINAPI Excel12Example(void)

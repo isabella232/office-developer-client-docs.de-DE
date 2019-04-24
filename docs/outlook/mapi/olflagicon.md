@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a3dc2c0f-b1fd-d758-e847-a0f101efe7f1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3dffb65ea4f2c19966962a7f58cfc33f767fca83
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 05312e62d6bcc1a4ddb2ece170a6c0c0bfbe5f3f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279650"
 ---
 # <a name="olflagicon"></a>OlFlagIcon
 
@@ -21,7 +21,7 @@ ms.locfileid: "22594075"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob ein Element gekennzeichnet ist, und wenn es ist, die Farbe der gekennzeichnetes Element zugeordnet.
+Gibt an, ob ein Element gekennzeichnet ist, und wenn es die Farbe ist, die mit dem gekennzeichneten Element verknüpft ist.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -42,35 +42,35 @@ enum OlFlagIcon {
 
  _olNoFlagIcon_
   
-> Kein Flag wurde das Element zugeordnet.
+> Dem Element wurde kein Flag zugeordnet.
     
  _olPurpleFlagIcon_
   
-> Lila wurde gekennzeichnetes Element zugeordnet.
+> Lila wurde dem markierten Element zugeordnet.
     
  _olOrangeFlagIcon_
   
-> Orange wurde gekennzeichnetes Element zugeordnet.
+> Orange wurde dem markierten Element zugeordnet.
     
  _olGreenFlagIcon_
   
-> Grün wurde gekennzeichnetes Element zugeordnet.
+> Dem markierten Element wurde grün zugeordnet.
     
  _olYellowFlagIcon_
   
-> Gelb wurde gekennzeichnetes Element zugeordnet.
+> Gelb wurde dem markierten Element zugeordnet.
     
  _olBlueFlagIcon_
   
-> Blau wurde gekennzeichnetes Element zugeordnet.
+> Das markierte Element wurde blau zugeordnet.
     
  _olRedFlagIcon_
   
-> Rot wurde gekennzeichneten Element zugeordnet.
+> Das markierte Element wurde rot zugeordnet.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagFollowupIcon (kanonische Eigenschaft)](pidtagfollowupicon-canonical-property.md)
+[Kanonische Pidtagfollowupicon (-Eigenschaft](pidtagfollowupicon-canonical-property.md)
 

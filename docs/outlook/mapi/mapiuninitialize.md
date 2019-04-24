@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0f4e54dc-80e5-49a7-9703-0225d8133492
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f95c86a137e7253f3445123c23f2dc0d76b6d87a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f7339588bcc6815545e7341eafffe9cf001c1d76
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270028"
 ---
 # <a name="mapiuninitialize"></a>MAPIUninitialize
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verringert der Referenzzähler bereinigt, und löscht pro Instanz globale Daten für die MAPI-DLL. 
+Dekrementiert den Verweiszähler, bereinigt und löscht einzelne globale Daten für die MAPI-DLL. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 void MAPIUninitialize ( void );
@@ -41,17 +41,17 @@ void MAPIUninitialize ( void );
 
 Keine 
   
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Clientanwendung ruft die **MAPIUninitialize** -Funktion, um die Interaktion mit MAPI, mit einem Aufruf der Funktion ["MAPIInitialize"](mapiinitialize.md) begonnen zu beenden. Nachdem **MAPIUninitialize** aufgerufen wurde, können keine anderen MAPI-Aufrufe vom Client vorgenommen werden. 
+Eine Clientanwendung Ruft die **MAPIUninitialize** -Funktion auf, um die Interaktion mit MAPI zu beenden, angefangen mit einem Aufruf der [MAPIInitialize](mapiinitialize.md) -Funktion. Nachdem **MAPIUninitialize** aufgerufen wurde, können vom Client keine weiteren MAPI-Aufrufe durchgeführt werden. 
   
- **MAPIUninitialize** den Referenzzähler und die entsprechende **"MAPIInitialize"** Funktion erhöht den Referenzzähler. Die Anzahl der Anrufe an eine Funktion muss daher die Anzahl der Aufrufe der anderen entsprechen. 
+ **MAPIUninitialize** dekrementiert den Verweiszähler, und die entsprechende **MAPIInitialize** -Funktion inkrementiert den Verweiszähler. Daher muss die Anzahl der Aufrufe an eine Funktion der Anzahl der Aufrufe der anderen entsprechen. 
   
 > [!NOTE]
-> **"MAPIInitialize"** oder **MAPIUninitialize** aus kann nicht innerhalb einer Win32 **DllMain** -Funktion oder eine andere Funktion, die erstellt oder Threads beendet aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von threadsicheren Objekten](using-thread-safe-objects.md). 
+> Sie können **MAPIInitialize** oder **MAPIUninitialize** nicht über eine Win32- **DllMain** -Funktion oder eine andere Funktion aufrufen, die Threads erstellt oder beendet. Weitere Informationen finden Sie unter [Verwenden von Thread sicheren Objekten](using-thread-safe-objects.md). 
   
 

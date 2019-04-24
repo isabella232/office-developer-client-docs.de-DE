@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1e5ea9f2-1029-4584-845a-890d3e956036
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 39854c320078d2e2ca2365244f094e28962380d0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8861c8f86eaab6defb270b673e0ee200446aedb3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282824"
 ---
 # <a name="sizeddtblcombobox"></a>SizedDtblComboBox
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die enthält eine [DTBLCOMBOBOX](dtblcombobox.md) -Struktur für die Beschreibung ein Kombinationsfeld-Steuerelement und die maximale Anzahl von Zeichen, die in der zugehörigen Bearbeitungssteuerelement eingegeben werden können. 
+Erstellt eine benannte Struktur, die eine [DTBLCOMBOBOX](dtblcombobox.md) -Struktur zur Beschreibung eines Kombinationsfeld-Steuerelements und die maximale Anzahl von Zeichen enthält, die im zugeordneten Bearbeitungssteuerelement eingegeben werden können. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**DTBLCOMBOBOX** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**DTBLCOMBOBOX** <br/> |
    
 ```cpp
 SizedDtblComboBox (n, u)
@@ -38,15 +38,15 @@ SizedDtblComboBox (n, u)
 
 _n_
   
-> Anzahl der Zeichen, die in des Kombinationsfelds eingegeben werden können edit-Steuerelement. 
+> Die Anzahl der Zeichen, die im Bearbeitungssteuerelement des Kombinationsfelds eingegeben werden können. 
     
 _u_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **SizedDtblComboBox** können Sie einem Kombinationsfeld definieren, wenn die Länge der Zeichenfolge aktiviert bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
+Mit dem **SizedDtblComboBox** -Makro können Sie ein Kombinationsfeld definieren, wenn die Länge der aktivierten Zeichenfolge bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
   
 ```cpp
 DTBLCOMBOBOX dtblcombobox;
@@ -54,7 +54,7 @@ TCHAR lpszCharsAllowed[n];
 
 ```
 
-Führen Sie einen Zeiger auf die resultierende Struktur aus dem Makro **SizedDtblComboBox** als Zeiger Struktur **DTBLCOMBOBOX** die folgende Umwandlung: 
+Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblComboBox** -Makro als **DTBLCOMBOBOX** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpDtblComboBox = (LPDTBLCOMBOBOX) &SizedDtblComboBox;

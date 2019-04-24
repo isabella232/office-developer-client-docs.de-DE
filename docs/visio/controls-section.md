@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d34c296d-e874-b5f3-9232-e1cfe01c7eab
 description: Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
-ms.openlocfilehash: 4e85ba0f59e27679e5c9928bc16ebe10ae302d09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b0ca91803d866a3d11f255273c2e338d7e7dc74a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282978"
 ---
-# <a name="controls-section"></a>Controls Section
+# <a name="controls-section"></a>Abschnitt "Controls"
 
 Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können im Abschnitt **Steuerelemente** im ShapeSheet-Fenster Steuerpunkte definieren. Wenn Ihr Shape kein Abschnitt " **Controls** " verfügt, können Sie diesen in das ShapeSheet-Fenster einfügen. Mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen**, und wählen Sie dann das Kontrollkästchen **Steuerelemente** aus. Um einem vorhandenen Abschnitt **Controls** Kontrollpunkte hinzuzufügen, mit der rechten Maustaste in einer Zeile, und klicken Sie im Kontextmenü auf **Zeile einfügen** . 
+Sie können Steuerpunkte im Abschnitt **Steuerelemente** im ShapeSheet-Fenster definieren. Wenn Ihre Form keinen **Steuerelement** Abschnitt hat, können Sie eine in das ShapeSheet-Fenster einfügen. Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen**, und aktivieren Sie dann das Kontrollkästchen **Steuerelemente** . Um einem vorhandenen **Steuer** Element Steuerpunkte hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im kontextMenü auf **Zeile einfügen** . 
   
 

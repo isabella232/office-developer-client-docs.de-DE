@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 070b4468-c907-b201-1633-1d3e10ecc2b2
 description: Zeigt an, ob die Aktion im Aktionstag- oder Kontextmenü sichtbar ist.
-ms.openlocfilehash: 8749b7d6db4a932b97c68ab5cf30b879a57d28f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 69bc96e76f27a64d6e1443f045c27566f598c1db
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297242"
 ---
-# <a name="invisible-cell-actions-section"></a>Invisible Cell (Actions Section)
+# <a name="invisible-cell-actions-section"></a>Zelle "Invisible" (Abschnitt "Actions")
 
 Zeigt an, ob die Aktion im Aktionstag- oder Kontextmenü sichtbar ist. 
   
@@ -30,18 +30,18 @@ Zeigt an, ob die Aktion im Aktionstag- oder Kontextmenü sichtbar ist.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Invisible aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle inVisible aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . Invisiblewhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name* . Invisiblewobei-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Invisible aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die unsichtbare Zelle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**VisRowAction** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionInvisible** <br/> |
    
 

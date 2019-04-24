@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 75daf9d4-6975-435f-91e5-1b41e0047ab7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 461b59ff4f4c8a93f3a9945b05e31aef9a2997bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 29677ce74f405e8ca03f1639f3d98288532e9653
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287014"
 ---
 # <a name="iaddrbooksetpab"></a>IAddrBook::SetPAB
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt einen bestimmten Container als das persönliche Adressbuch (PAB) fest.
+Legt einen bestimmten Container als persönliches Adressbuch (PAB) fest.
   
 ```cpp
 HRESULT SetPAB(
@@ -38,33 +38,33 @@ HRESULT SetPAB(
 
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Containers, als die PAB festgelegt werden sollen. Der Parameter _LpEntryID_ darf nicht NULL sein. 
+> in Ein Zeiger auf die Eintrags-ID des Containers, der als PAB festgelegt werden soll. Der _lpEntryID_ -Parameter darf nicht NULL sein. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der angegebene Container wurde als PAB eingerichtet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clients und Dienstanbieter rufen Sie die **SetPAB** -Methode, um einen bestimmten Container als PAB festzulegen. Die PAB ist ein Container, der Einträge aus anderen Containern sowie neue Einträge kopiert besteht. 
+Clients und Dienstanbieter rufen die **SetPAB** -Methode auf, um einen bestimmten Container als PAB festzulegen. Das PAB ist ein Container, der aus Einträgen aus anderen Containern sowie neuen Einträgen besteht. 
   
-Ein Aufruf von **SetPAB** stellt einen Container als PAB her, bis Containers ist nicht verfügbar gemacht, oder ein neuer Container die PAB durch einen nachfolgenden Aufruf von **SetPAB wird**. 
+Ein Aufruf von **SetPAB** richtet einen Container als PAB ein, bis dieser Container nicht verfügbar gemacht wird oder ein neuer Container durch einen nachfolgenden Aufruf von **SetPAB**zum PAB wird. 
   
-Clients und Anbieter müssen nicht Aufrufen der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode, damit die Änderung PAB dauerhaft entfernt wird. 
+Clients und Anbieter müssen nicht die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode aufrufen, um das PAB permanent zu ändern. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|AbContDlg.cpp  <br/> |CAbContDlg::OnSetPAB  <br/> |MFCMAPI (engl.) verwendet die **SetPAB** -Methode, um dem angegebenen Container PAB stellen.  <br/> |
+|AbContDlg. cpp  <br/> |CAbContDlg:: OnSetPAB  <br/> |MFCMAPI verwendet die **SetPAB** -Methode, um den angegebenen Container als PAB zu verwenden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,7 +74,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
+[Kanonische Pidtagcontainerflags (-Eigenschaft](pidtagcontainerflags-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

@@ -1,39 +1,39 @@
 ---
-title: Try_Parse-Funktion (Access benutzerdefinierte Web app)
+title: Try_Parse-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ed35263c-b0ad-4269-9caa-c0164015e980
-description: Analysiert ein Textwerts in den angegebenen Datentyp in der Kultur der Anwendung, oder gibt Null zurück, wenn die Konvertierung nicht gültig ist.
-ms.openlocfilehash: 3446e928d9772641f9aea7b956e142f995824b1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Analysiert einen Textwert in den angegebenen Datentyp in der Kultur der Anwendung oder gibt NULL zurück, wenn die Konvertierung ungültig ist.
+ms.openlocfilehash: 5d201557607d2d18c36238d9658b705a6a49fda8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307798"
 ---
-# <a name="tryparse-function-access-custom-web-app"></a>Try_Parse-Funktion (Access benutzerdefinierte Web app)
+# <a name="tryparse-function-access-custom-web-app"></a>Try_Parse-Funktion (Access Custom Web App)
 
-Analysiert ein Textwerts in den angegebenen Datentyp in der Kultur der Anwendung, oder gibt Null zurück, wenn die Konvertierung nicht gültig ist.
+Analysiert einen Textwert in den angegebenen Datentyp in der Kultur der Anwendung oder gibt NULL zurück, wenn die Konvertierung ungültig ist.
   
 > [!NOTE]
-> [!HINWEIS] Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
+> Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
   
 ## <a name="syntax"></a>Syntax
 
- **Try_Parse** (*TextExpression*, *Datentyp*) 
+ **Try_Parse** (*Text*- *Datentyp, DataType*) 
   
 Die **Try_Parse** -Funktion enthält die folgenden Argumente. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *TextExpression*  <br/> |Ein Ausdruck, der den formatierten Wert in den angegebenen Datentyp zu analysieren.  <br/> |
-| *DataType*  <br/> |Der Datentyp in die *TextExpression* zu analysieren.  <br/> |
+| *Text*  <br/> |Ein Textausdruck, der den formatierten Wert darstellt, der in den angegebenen Datentyp analysiert werden soll.  <br/> |
+| *DataType*  <br/> |Der Datentyp, in den Textform ** analysiert werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie **Try_Parse** nur für die Konvertierung von Zeichenfolge Datum/Uhrzeit und Typen der Nummer. Allgemeine typkonvertierungen auch weiterhin **Konvertieren**verwenden. 
+Verwenden Sie **Try_Parse** nur für die Konvertierung von Zeichenfolge in Datum/Uhrzeit und Zahlentypen. Verwenden Sie für allgemeine Typkonvertierungen weiterhin **Convert**. 
   
 

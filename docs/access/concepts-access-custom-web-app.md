@@ -5,19 +5,19 @@ ms.date: 08/17/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9171b1b2-470e-428f-a026-e348d28d9dc2
-ms.openlocfilehash: 15acd703a007067e3f0f8896da3c000a07759b95
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 169257af588f5a6cf561304bb79c2d7e704d7287
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282264"
 ---
 # <a name="concepts-access-custom-web-app"></a>Konzepte (benutzerdefinierte Access-Web-App)
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 - [Reservierte Wörter (benutzerdefinierte Access-Web-App)](reserved-words-access-custom-web-app.md)
     

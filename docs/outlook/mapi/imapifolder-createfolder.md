@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 39d07fc8-09aa-4122-af32-b02f2c893d29
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 694f7ec5715a7348c9bd90c28d14f30d43d19974
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 606d780aa59e363c30ddc7a5b562db64d845ccb0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280078"
 ---
 # <a name="imapifoldercreatefolder"></a>IMAPIFolder::CreateFolder
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Erstellt einen neuen Unterordner.
   
@@ -42,83 +42,83 @@ HRESULT CreateFolder(
 
  _ulFolderType_
   
-> [in] Der Typ des zu erstellenden Ordners. Die folgenden Kennzeichen können festgelegt werden:
+> in Der Typ des zu erstellende Ordners. Die folgenden Flags können festgelegt werden:
     
 FOLDER_GENERIC 
   
-> Ein generischer Ordner sollte erstellt werden.
+> Es sollte ein generischer Ordner erstellt werden.
     
 FOLDER_SEARCH 
   
-> Ein Suchergebnisse Ordner sollte erstellt werden.
+> Es sollte ein Ordner mit Suchergebnissen erstellt werden.
     
  _lpszFolderName_
   
-> [in] Ein Zeiger auf eine Zeichenfolge, die den Namen für den neuen Ordner enthält. Dieser Name ist die Grundlage für den neuen Ordner **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft.
+> in Ein Zeiger auf eine Zeichenfolge, die den Namen für den neuen Ordner enthält. Dieser Name ist die Basis für die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des neuen Ordners.
     
  _lpszFolderComment_
   
-> [in] Ein Zeiger auf eine Zeichenfolge, die einen Kommentar Zusammenhang mit den neuen Ordner enthält. Diese Zeichenfolge wird der Wert der Eigenschaft für den neuen Ordner **PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md)). Wenn NULL übergeben wird, hat der Ordner keine Kommentar.
+> in Ein Zeiger auf eine Zeichenfolge, die einen Kommentar enthält, der dem neuen Ordner zugeordnet ist. Diese Zeichenfolge wird zum Wert der **PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md))-Eigenschaft des neuen Ordners. Wenn NULL übergeben wird, hat der Ordner keinen anfänglichen Kommentar.
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle verwendet werden, Zugriff auf den neuen Ordner darstellt. Übergeben von NULL wird eine Nachricht an die Standardordner-Schnittstelle zurück, die [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md). Clients müssen NULL übergeben. Andere Aufrufer können den Parameter _LpInterface_ auf IID_IUnknown, IID_IMAPIProp, IID_IMAPIContainer oder IID_IMAPIFolder festgelegt. 
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf den neuen Ordner verwendet werden soll. Die Übergabe von NULL bewirkt, dass der Nachrichtenspeicher Anbieter die Standardordner Schnittstelle [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)zurückgibt. Clients müssen NULL überschreiten. Andere Aufrufer können den _lpInterface_ -Parameter auf IID_IUnknown, IID_IMAPIProp, IID_IMAPIContainer oder IID_IMAPIFolder festlegen. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie der Ordner erstellt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die die Erstellung des Ordners steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht die **CreateFolder** erfolgreich, möglicherweise beendet, bevor Sie der neue Ordner vollständig an den aufrufenden Client verfügbar ist. Wenn Sie der neue Ordner nicht verfügbar ist, kann nachfolgende anrufen darauf verursacht einen Fehler. 
+> Ermöglicht **** , dass CreateFolder erfolgreich zurückgegeben wird, möglicherweise bevor der neue Ordner vollständig für den aufrufenden Client verfügbar ist. Wenn der neue Ordner nicht verfügbar ist, kann der nachfolgende Aufruf zu einem Fehler führen. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Der Name des Ordners ist im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Name des Ordners im ANSI-Format.
+> Der Name des Ordners ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Ordnername im ANSI-Format.
     
 OPEN_IF_EXISTS 
   
-> Die Methode erfolgreich ausgeführt, auch wenn Sie der Ordner mit dem Namen im Parameter _LpszFolderName_ bereits vorhanden ist, indem Sie den vorhandenen Ordner mit diesem Namen öffnen können. Beachten Sie, dass Nachricht-Anbieter, mit die gleichgeordneten Knoten Ordner, die denselben Namen aufweisen können keinen bestehenden Ordner öffnen möglicherweise, wenn mehr als eine mit dem angegebenen Namen vorhanden ist. 
+> Die Methode kann auch dann erfolgreich ausgeführt werden, wenn der im _lpszFolderName_ -Parameter genannte Ordner bereits vorhanden ist, indem der vorhandene Ordner mit diesem Namen geöffnet wird. Beachten Sie, dass Nachrichtenspeicher Anbieter, die gleichgeordnete Ordner mit demselben Namen zulassen, möglicherweise keinen vorhandenen Ordner öffnen, wenn mehrere mit dem angegebenen Namen vorhanden sind. 
     
  _lppFolder_
   
-> [out] Ein Zeiger auf einen Zeiger auf den neu erstellten Ordner.
+> Out Ein Zeiger auf einen Zeiger auf den neu erstellten Ordner.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Neue Ordner wurde erfolgreich erstellt oder geöffnet, wenn das Flag OPEN_IF_EXISTS festgelegt ist.
+> Der neue Ordner wurde erfolgreich erstellt oder geöffnet, wenn das OPEN_IF_EXISTS-Flag festgelegt ist.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_COLLISION 
   
-> Ein Ordner mit dem Namen bereits in der _LpszFolderName_ -Parameter angegebenen vorhanden ist. Ordnernamen müssen eindeutig sein. 
+> Ein Ordner mit dem im _lpszFolderName_ -Parameter angegebenen Namen ist bereits vorhanden. Ordnernamen müssen eindeutig sein. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIFolder::CreateFolder** -Methode erstellt einen Unterordner im aktuellen Ordner und den neuen Ordner eine Eintrags-ID zugewiesen. 
+Die **IMAPIFolder:: CreateFolder** -Methode erstellt einen Unterordner im aktuellen Ordner und weist dem neuen Ordner eine Eintrags-ID zu. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **CreateFolder** zurückgegeben wird, achten Sie darauf, dass die Eintrags-ID für den neuen Ordner möglicherweise nicht verfügbar. Einige Anbieter Nachricht machen nicht Eintragsbezeichner erst verfügbar, nachdem Sie den neuen Ordner [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode, um sie dauerhaft zu speichern aufgerufen haben. Dies ist insbesondere dann, wenn Sie die Kennzeichen MAPI_DEFERRED_ERRORS eingerichtet haben. 
+Wenn **CreateFolder** zurückgegeben wird, müssen Sie beachten, dass die Eintrags-ID für den neuen Ordner möglicherweise nicht verfügbar ist. Einige Nachrichtenspeicher Anbieter stellen keine Eingabe-IDs zur Verfügung, bis Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode des neuen Ordners aufgerufen haben, um Sie dauerhaft zu speichern. Dies gilt insbesondere, wenn Sie das MAPI_DEFERRED_ERRORS-Flag festgelegt haben. 
   
-Beachten Sie, dass einige Anbieter Nachricht immer den _LppFolder_ -Parameter auf den Ordner Standardschnittstelle ungeachtet des Werts verweisen, die Sie für den _LpInterface_ -Parameter übergeben. Da Zeiger der Schnittstelle, der zurückgegeben wird nicht vom Typ, die Sie erwarten sein kann, rufen Sie den neuen Ordner [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode zum Abrufen der Eigenschaft **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)). Falls erforderlich, wandeln Sie den Zeiger auf ein anderes besser geeignet, bevor Sie andere Anrufe tätigen.
+Beachten Sie, dass einige Nachrichtenspeicher Anbieter den Parameter _lppFolder_ immer auf die Standardschnittstelle des Ordners verweisen, unabhängig davon, welcher Wert für den _lpInterface_ -Parameter übergeben wird. Da der zurückgegebene Schnittstellenzeiger möglicherweise nicht vom erwarteten Typ ist, rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des neuen Ordners auf, um die **PR_OBJECT_TYPE** ([pidtagobjecttype (](pidtagobjecttype-canonical-property.md))-Eigenschaft abzurufen. Falls erforderlich, werfen Sie den Zeiger in einen besser geeigneten Typ, bevor Sie andere Aufrufe ausführen.
   
-Die meisten Anbieter Nachricht erfordern den Namen des neuen Ordners in Bezug auf die Namen der zugehörigen gleichgeordneten Knoten Ordner eindeutig sein. Möglicherweise den Fehlerwert MAPI_E_COLLISION verarbeitet werden, die zurückgegeben wird, wenn diese Regel nicht befolgt wird. 
+Für die meisten Nachrichtenspeicher Anbieter muss der Name des neuen Ordners im Hinblick auf die Namen seiner nebengeordneten Ordner eindeutig sein. Sie können den MAPI_E_COLLISION-Fehlerwert behandeln, der zurückgegeben wird, wenn diese Regel nicht befolgt wird. 
   
-Um die Eintrags-ID des neu erstellten Ordners zu bestimmen, rufen Sie den neuen Ordner **IMAPIProp::GetProps** -Methode zum Abrufen der Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).
+Um die Eintrags-ID des neu erstellten Ordners zu bestimmen, rufen Sie die **IMAPIProp::** GetProps-Methode des neuen Ordners auf, um die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft abzurufen.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnCreateSubFolder  <br/> |MFCMAPI (engl.) verwendet die **CMsgStoreDlg::OnCreateSubFolder** -Methode zum Erstellen von neuer Ordnern in MFCMAPI (engl.).  <br/> |
+|MsgStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnCreateSubFolder  <br/> |MFCMAPI verwendet die **CMsgStoreDlg:: OnCreateSubFolder** -Methode, um neue Ordner in MfcMapi zu erstellen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Enumerationen (OneNote-Entwicklerreferenz)
+title: AufZählungen (OneNote-Entwicklerreferenz)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 62912d6e-c39e-4f8b-8cdb-ae9b6376cbc0
 description: This topic describes the enumerations in the OneNote 2013 object model.
-ms.openlocfilehash: ccd75843326ea5942aa80d02246e59e92331a7d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3338e444e5b0bfd0239e363c3161aeb1914b2d53
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299867"
 ---
-# <a name="enumerations-onenote-developer-reference"></a>Enumerationen (OneNote-Entwicklerreferenz)
+# <a name="enumerations-onenote-developer-reference"></a>AufZählungen (OneNote-Entwicklerreferenz)
 
 This topic describes the enumerations in the OneNote 2013 object model.
   
-## <a name="createfiletype"></a>CreateFileType
+## <a name="createfiletype"></a>CreateFiletype
 <a name="odc_CreateFileType"> </a>
 
 When passed to the **OpenHierarchy** method, specifies the type of object to create, if any, if the path passed to the method does not yet exist. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**cftNone** <br/> |0  <br/> |Creates no new object.  <br/> |
 |**cftNotebook** <br/> |1  <br/> |Creates a notebook by using the specified name and location.  <br/> |
@@ -35,7 +35,7 @@ When passed to the **OpenHierarchy** method, specifies the type of object to cre
 
 Indicates the docked location of a OneNote 2013 window by using the [Window](window-interfaces-onenote.md) interface. When set to the **DockedLocation** property, specifies the location at which to dock a OneNote window. This enumeration is new in OneNote 2013. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**dlDefault** <br/> |-1  <br/> |The OneNote window is docked at the default location on the desktop.  <br/> |
 |**dlLeft** <br/> |1  <br/> |The OneNote window is docked on the left side of the desktop.  <br/> |
@@ -48,7 +48,7 @@ Indicates the docked location of a OneNote 2013 window by using the [Window](win
 
 When passed to the **SetFilingLocation** method, specifies what type of content the filing location is set for when the content type is sent to OneNote. This enumeration is new in OneNote 2013. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**flEMail** <br/> |0  <br/> |Sets where Outlook email messages will be filed.  <br/> |
 |**flContacts** <br/> |1  <br/> |Sets where Outlook contacts will be filed.  <br/> |
@@ -62,7 +62,7 @@ When passed to the **SetFilingLocation** method, specifies what type of content 
 
 When passed to the **SetFilingLocation** method, specifies where content that is sent to OneNote is filed. This enumeration is new in OneNote 2013. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**fltNamedSectionNewPage** <br/> |0  <br/> |Sets content to be filed on a new page in a specified section.  <br/> |
 |**fltCurrentSectionNewPage** <br/> |1  <br/> |Sets content to be filed on a new page in the current section.  <br/> |
@@ -74,7 +74,7 @@ When passed to the **SetFilingLocation** method, specifies where content that is
 
 When assigned to the **TreeDepth** property of the [IQuickFilingDialog](quick-filing-dialog-box-interfaces-onenote.md) interface, specifies the depth of the OneNote tree to display when the quick filing dialog is rendered. When passed to the **AddButton** method of the **IQuickFilingDialog** object, references certain elements in the OneNote hierarchy. This enumeration is new in OneNote 2013. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**heNone** <br/> |0  <br/> |Refers to no element.  <br/> |
 |**heNotebooks** <br/> |1  <br/> |Refers to the Notebook elements.  <br/> |
@@ -87,7 +87,7 @@ When assigned to the **TreeDepth** property of the [IQuickFilingDialog](quick-fi
 
 When passed to the **GetHierarchy** method, specifies the lowest level to get in the notebook node hierarchy. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**hsSelf** <br/> |0  <br/> |Gets just the start node specified and no descendants.  <br/> |
 |**hsChildren** <br/> |1  <br/> |Gets the immediate child nodes of the start node, and no descendants in higher or lower subsection groups.  <br/> |
@@ -95,12 +95,12 @@ When passed to the **GetHierarchy** method, specifies the lowest level to get in
 |**hsSections** <br/> |3  <br/> |Gets all sections below the start node, including sections in section groups and subsection groups.  <br/> |
 |**hsPages** <br/> |4  <br/> |Gets all pages below the start node, including all pages in section groups and subsection groups.  <br/> |
    
-## <a name="newpagestyle"></a>NewPageStyle
+## <a name="newpagestyle"></a>NeuPagestyle
 <a name="odc_HierarchyScope"> </a>
 
 When passed to the **CreateNewPage** method, specifies the style of the new page. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**npsDefault** <br/> |0  <br/> |Creates a page that has the default page style.  <br/> |
 |**npsBlankPageWithTitle** <br/> |1  <br/> |Creates a blank page that has a title.  <br/> |
@@ -111,7 +111,7 @@ When passed to the **CreateNewPage** method, specifies the style of the new page
 
 When passed to the **NotebookFilterOut** method of the **QFD** object, specifies what notebooks to display when the QFD box is rendered. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**nfoLocal** <br/> |1  <br/> |Allow only Local Notebooks.  <br/> |
 |**nfoNetwork** <br/> |2  <br/> |Allows UNC or SharePoint Notebooks.  <br/> |
@@ -123,7 +123,7 @@ When passed to the **NotebookFilterOut** method of the **QFD** object, specifies
 
 When passed to the **GetPageContent** method, specifies the type of information to return with the page content. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**piBasic** <br/> |0  <br/> |Returns only basic page content, without selection markup, file types for binary data objects and binary data objects. This is the standard value to pass.  <br/> |
 |**piBinaryData** <br/> |1  <br/> |Returns page content with no selection markup, but with all binary data.  <br/> |
@@ -139,7 +139,7 @@ When passed to the **GetPageContent** method, specifies the type of information 
 
 When passed to the **Publish** method, specifies the format in which the published page will appear. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**pfOneNote** <br/> |0  <br/> |Published page is in the .one format.  <br/> |
 |**pfOneNotePackage** <br/> |1  <br/> |Published page is in the .onepkg format.  <br/> |
@@ -156,9 +156,9 @@ When passed to the **Publish** method, specifies the format in which the publish
 
 When passed to the **SetRecentResults** method of the **IQuickFilingDialog** object, specifies what recent result list to display when the Quick Filing dialog box is rendered. Recent result lists are used to track the set of OneNote locations that the user selects in the Quick Filing dialog box. There are three recent-result lists in OneNote 2013 that track filing, search, and linking actions. This enumeration is new in OneNote 2013. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**rrtNone** <br/> |0  <br/> |Sets no recent-result list to be rendered.  <br/> |
+|**Rrtnone ausgewählt** <br/> |0  <br/> |Sets no recent-result list to be rendered.  <br/> |
 |**rrtFiling** <br/> |1  <br/> |Sets the "Filing" recent-result list to be rendered.  <br/> |
 |**rrtSearch** <br/> |2  <br/> |Sets the "Search" recent-result list to be rendered.  <br/> |
 |**rrtLinks** <br/> |3  <br/> |Sets the "Links" recent-result list to be rendered.  <br/> |
@@ -168,7 +168,7 @@ When passed to the **SetRecentResults** method of the **IQuickFilingDialog** obj
 
 When passed to the **GetSpecialLocation** method, specifies the special location path to get. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**slBackupFolder** <br/> |0  <br/> |Gets the path to the Backup Folders folder location.  <br/> |
 |**slUnfiledNotesSection** <br/> |1  <br/> |Gets the path to the Unfiled Notes folder location.  <br/> |
@@ -179,7 +179,7 @@ When passed to the **GetSpecialLocation** method, specifies the special location
 
 When passed to the **TreeCollapsedState** method of the **QFD** object, specifies whether the hierarchy tree should be expanded or collapsed. 
   
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**tcsExpanded** <br/> |0  <br/> |Sets the hierarchy tree to expanded.  <br/> |
 |**tcsCollapsed** <br/> |1  <br/> |Sets the hierarchy tree to collapsed.  <br/> |
@@ -189,26 +189,26 @@ When passed to the **TreeCollapsedState** method of the **QFD** object, specifie
 
 When passed to one of the following methods, specifies the version of the OneNote XML schema to use:
   
-- **OneNote15.Application.GetPageContent**
+- **OneNote15. Application. GetPageContent**
     
-- **OneNote15.Application.FindMeta**
+- **OneNote15. Application. FindMeta**
     
-- **OneNote15.Application.FindPages**
+- **OneNote15. Application. FindPages**
     
-- **OneNote15.Application.GetHierarchy**
+- **OneNote15. Application. getHierarchy**
     
-- **OneNote15.Application.GetPageContent**
+- **OneNote15. Application. GetPageContent**
     
-- **OneNote15.Application.UpdateHierarchy**
+- **OneNote15. Application. UpdateHierarchy**
     
-- **OneNote15.Application.UpdatePageContent**
+- **OneNote15. Application. UpdatePageContent**
     
-|**Member**|**Value**|**Description**|
+|**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**xs2007** <br/> |0  <br/> |References the OneNote 2007 schema.  <br/> |
 |**xs2010** <br/> |1  <br/> |References the OneNote 2010 schema.  <br/> |
 |**xs2013** <br/> |2  <br/> |References the OneNote 2013 schema.  <br/> |
-|**xsCurrent** <br/> |2  <br/> |References the schema of the current OneNote version.  <br/> <br/>**Hinweis**: nicht empfohlen mit **XsCurrent** in den meisten Fällen wie dies Kompatibilitätsprobleme mit zukünftigen Versionen von OneNote führen kann. Geben Sie stattdessen die Version des Schemas, die Ihre app so behandeln Sie, wie xs2013 erstellt wurde.           |
+|**xsCurrent** <br/> |2  <br/> |References the schema of the current OneNote version.  <br/> <br/>**Hinweis**: Es wird nicht empfohlen, **xsCurrent** in den meisten Fällen zu verwenden, da dies zu Kompatibilitätsproblemen mit zukünftigen Versionen von OneNote führen kann. Instead specify the version of the schema that your app was built to handle, like xs2013.           |
    
 ## <a name="see-also"></a>Siehe auch
 

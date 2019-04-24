@@ -1,5 +1,5 @@
 ---
-title: Abschnitt [Services] in MapiSvc.inf
+title: Abschnitt "MapiSvc. inf [Services]"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,26 +8,26 @@ api_type:
 - COM
 ms.assetid: 99f8e623-3138-4def-9778-5580326111a5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 520478061e192f9fec97c6b13edde7833a13a3d6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e5bf5242ef673976ebda928d6ce4862e3e7dd072
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270021"
 ---
-# <a name="mapisvcinf-services-section"></a>Abschnitt [Services] in MapiSvc.inf
+# <a name="mapisvcinf-services-section"></a>Abschnitt "MapiSvc. inf [Services]"
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Im Abschnitt **[Services]** werden die Nachrichtendienste, die auf einem Computer installiert sind. Einträge in diesem Abschnitt verwenden Sie das folgende Format: 
+Im Abschnitt **[Dienste]** werden die Nachrichtendienste aufgelistet, die auf einem Computer installiert sind. Die Einträge in diesem Abschnitt verwenden das folgende Format: 
   
- **[Services]**
+ **Services**
   
- _Message-Dienst im Abschnittsname_ =  _Dienstname Nachricht_
+ _Message-Service section Name_ =  _Message Service Name_
   
-Den Namen des Abschnitts Message-Dienst ist eine Zeichenfolge vom Nachrichtendienst enthält, die dieser Eintrag einen entsprechenden Abschnitt für den Dienst an anderer Stelle im mapisvc.inf definiert. Der Dienstname Nachricht ist der Name des installierten Dienstes. Der folgende Abschnitt zeigt drei Message-Dienste: das Standard-Adressbuch, meine eigenen Service und den Informationsspeicher-Dienst. Diese Dienste sind nur zur Veranschaulichung fiktiv. Jede Nachricht Service Implementierer würde durch den entsprechenden Eintrag für seine Messagingdiensts in diesem Abschnitt ersetzen.
+Der Abschnitt Name des Message-Service-Abschnitts ist eine vom Nachrichtendienst definierte Zeichenfolge, die diesen Eintrag mit einem entsprechenden Abschnitt für den Dienst an anderer Stelle in MAPISVC. inf verknüpft. Der Name des Nachrichtendiensts ist der Name des installierten Diensts. Der folgende Abschnitt zeigt drei Nachrichtendienste: das Standardadressbuch, mein eigener Dienst und der Nachrichtenspeicher Dienst. Diese Dienste sind fiktiv, nur für Illustrationszwecke. Jeder Nachrichtendienst Implementierer würde den entsprechenden Eintrag für seinen Nachrichtendienst in diesem Abschnitt ersetzen.
   
 ```cpp
 [Services]
@@ -37,6 +37,6 @@ MS=Message Store Service
 
 ```
 
-Jeder Eintrag in diesem Abschnitt hat einen entsprechenden Abschnitt eigene, in dem Informationen für den Dienst gespeichert ist. Beispielsweise wird im entsprechende Abschnitt für das Standard-Adressbuch [AB] aufgerufen.
+Jeder Eintrag in diesem Abschnitt verfügt über einen entsprechenden Abschnitt, in dem Informationen für den Nachrichtendienst gespeichert werden. Der entsprechende Abschnitt für das Standardadressbuch heißt beispielsweise [AB].
   
 

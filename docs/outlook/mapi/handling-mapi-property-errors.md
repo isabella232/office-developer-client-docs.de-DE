@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehandlung von MAPI-Eigenschaft
+title: Behandeln von MAPI-Eigenschafts Fehlern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 23d68d8b-b0b6-4c32-8404-6acd23802db0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 82f37e2a6f6834c7a8553a3d9d364f7e657d81da
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1dc676101d4c39544c9dd1fae94000db9963ea02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299389"
 ---
-# <a name="handling-mapi-property-errors"></a>Fehlerbehandlung von MAPI-Eigenschaft
+# <a name="handling-mapi-property-errors"></a>Behandeln von MAPI-Eigenschafts Fehlern
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Anstatt vollst�ndige Fehler oder Erfolg melden die folgenden Methoden **IMAPIProp** partiellen Erfolg: 
   
@@ -25,7 +25,7 @@ Anstatt vollst�ndige Fehler oder Erfolg melden die folgenden Methoden **IMAPIP
   
 [SetProps](imapiprop-setprops.md)
   
-["DeleteProps"](imapiprop-deleteprops.md)
+[DeleteProps](imapiprop-deleteprops.md)
   
 [CopyTo](imapiprop-copyto.md)
   

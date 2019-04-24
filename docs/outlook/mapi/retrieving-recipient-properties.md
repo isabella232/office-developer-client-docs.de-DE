@@ -8,25 +8,25 @@ api_type:
 - COM
 ms.assetid: 358f892b-54a7-4213-b3c0-94f28f99716f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a48c6a8e043062bc6b48e09934fded1dccb507b2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 38063cebe70b153decce6713ac5fc31d6916dbf6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279594"
 ---
 # <a name="retrieving-recipient-properties"></a>Abrufen von Empfängereigenschaften
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-### <a name="to-access-one-or-more-properties-of-an-address-book-entry"></a>Zugriff auf eine oder mehrere Eigenschaften eines Adresseintrags Adressbuch
+### <a name="to-access-one-or-more-properties-of-an-address-book-entry"></a>So greifen Sie auf eine oder mehrere Eigenschaften eines Adressbucheintrags zu
   
-1. Rufen Sie für jeden Eintrag Address Book von Interesse [IAddrBook::OpenEntry](iaddrbook-openentry.md), übergeben die Eintrags-ID des Ziels messaging-Benutzer- oder Verteilerliste aus.
+1. Rufen Sie für jeden gewünschten Adressbucheintrag [IAddrBook:: OpenEntry](iaddrbook-openentry.md)auf, und übergeben Sie dabei den Eintragsbezeichner des Ziel-Messaging Benutzers oder der Verteilerliste.
     
-2. Klicken Sie dann einen der folgenden Schritte aus:
+2. Führen Sie dann einen der folgenden Schritte aus:
     
-   - Rufen Sie für jeden Eintrag Adressbuch Adresse von Interesse, mit der eine oder mehrere Eigenschaften zum Abrufen einer Liste der messaging-Benutzer oder die Verteilerliste [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode. 
+   - Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Messaging Benutzers oder der Verteilerliste für die einzelnen Adressbucheinträge auf, die eine Liste der Eigenschaften aufweisen, die abgerufen werden sollen. 
     
-   - Rufen Sie [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md), übergeben eine [ADRLIST](adrlist.md) -Struktur, die alle Eigenschaften für alle gewünschten Adressbucheinträge enthält. Da durch Aufrufen von **PrepareRecips** Informationen für mehrere Adresse Adressbucheinträge zurückgeben kann, ist die Strategie vorzuziehen, wenn Sie mehrere Empfänger interessiert sind. 
+   - Rufen Sie [IAddrBook::P reparerecips](iaddrbook-preparerecips.md), und übergeben Sie eine [ADRLIST](adrlist.md) -Struktur, die alle Eigenschaften für alle gewünschten Adressbucheinträge enthält. Da ein Aufruf von **PrepareRecips** Informationen für mehrere Adressbucheinträge zurückgeben kann, ist dies die bevorzugte Strategie, wenn Sie an mehreren Empfängern interessiert sind. 
     
 

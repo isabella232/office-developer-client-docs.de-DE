@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73b68614-6aca-4669-b879-5631c5d6483c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8d2f2c82c61280bae88c715f8ffae19e10f00f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5256efbff734d4555ac263dd330e3349c789cd74
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287468"
 ---
 # <a name="dtblcombobox"></a>DTBLCOMBOBOX
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Kombinationsfeld-Steuerelement, das in einem Dialogfeld erstellt aus einer Tabelle anzeigen verwendet wird.
+Beschreibt ein Kombinationsfeld-Steuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makro:  <br/> |[SizedDtblComboBox](sizeddtblcombobox.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehöriges Makro:  <br/> |[SizedDtblComboBox](sizeddtblcombobox.md) <br/> |
    
 ```cpp
 typedef struct _DTBLCOMBOBOX
@@ -48,47 +48,47 @@ typedef struct _DTBLCOMBOBOX
 
  **ulbLpszCharsAllowed**
   
-> Ein Offset ab dem Anfang der **DTBLCOMBOBOX** -Struktur zu einem Zeichen Zeichenfolge Filter, der Einschränkungen, wenn vorhanden, um die Zeichen, die in des Kombinationsfelds eingegeben werden können Bearbeitungssteuerelement beschreibt. Der Filter wird nicht als regulärer Ausdruck interpretiert und der gleiche Filter auf jedes eingegebene Zeichen angewendet wird. Das Format des Filters lautet wie folgt: 
+> Ein Offset vom Anfang der **DTBLCOMBOBOX** -Struktur zu einem Zeichenfolgenfilter, der ggf. Einschränkungen für die Zeichen beschreibt, die in das Bearbeitungssteuerelement des Kombinationsfelds eingegeben werden können. Der Filter wird nicht als regulärer Ausdruck interpretiert, und auf jedes eingegebene Zeichen wird derselbe Filter angewendet. Das Format des Filters lautet wie folgt: 
     
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-| `*` <br/> |Ein beliebiges Zeichen ist zulässig (z. B. `"*"`).  <br/> |
-| `[ ]` <br/> |Definiert eine Reihe von Zeichen (z. B. `"[0123456789]"`).  <br/> |
-| `-` <br/> |Gibt einen Bereich von Zeichen (z. B. `"[a-z]"`).  <br/> |
-| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind. (z. B. `"[~0-9]"`).  <br/> |
-| `\` <br/> |Verwendet, um die vorherigen Zeichen quote (z. B. `"[\-\\\[\]]"` bedeutet-, \, [, und] Zeichen sind zulässig).  <br/> |
+| `*` <br/> |Ein beliebiges Zeichen ist zulässig (Beispiels `"*"`Weise).  <br/> |
+| `[ ]` <br/> |Definiert eine Gruppe von Zeichen (beispielsweise `"[0123456789]"`).  <br/> |
+| `-` <br/> |Gibt einen Zeichentyp an (beispielsweise `"[a-z]"`).  <br/> |
+| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind. (Beispiel: `"[~0-9]"`).  <br/> |
+| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole zu zitieren ( `"[\-\\\[\]]"` beispielsweise sind \, means-, [und] characters zulässig).  <br/> |
    
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format des Filters Zeichen Zeichenfolge festzulegen. Das folgende Flag kann festgelegt werden:
+> Bitmaske von Flags, die zum Festlegen des Formats des Zeichenfolgen Filters verwendet werden. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Der Filter ist im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Filter im ANSI-Format.
+> Der Filter ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Filter im ANSI-Format.
     
  **ulNumCharsAllowed**
   
-> Maximale Anzahl von Zeichen, die im Textfeld des Kombinationsfelds eingegeben werden können.
+> Maximale Anzahl von Zeichen, die in das Textfeld des Kombinationsfelds eingegeben werden können.
     
  **ulPRPropertyName**
   
-> Eigenschaftentag für eine Eigenschaft vom Typ PT_TSTRING. 
+> Property-Tag für eine Eigenschaft vom Typ PT_TSTRING. 
     
  **ulPRTableName**
   
-> Eigenschaftentag für eine Eigenschaft vom Typ PT_OBJECT auf dem eine **IMAPITable** -Schnittstelle mithilfe eines Anrufs **OpenProperty** geöffnet werden kann. Die Tabelle muss eine Spalte mit einer Eigenschaft besitzen, die denselben Typ aufweist wie die-Eigenschaft, die durch das **UlPRPropertyName** -Element identifiziert. Die Zeilen der Tabelle dienen zum Auffüllen der Liste verwendet. 
+> Property-Tag für eine Eigenschaft vom Typ PT_OBJECT, auf der eine **IMAPITable** -Schnittstelle mithilfe eines **OpenProperty** -Aufrufs geöffnet werden kann. Die Tabelle muss eine Spalte mit einer Eigenschaft aufweisen, die denselben Typ hat wie die Eigenschaft, die vom **ulPRPropertyName** -Element angegeben wird. Die Zeilen der Tabelle werden zum Auffüllen der Liste verwendet. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLCOMBOBOX** beschreibt ein Kombinationsfeld ein Steuerelement, das eine Liste und ein Auswahlfeld besteht. Die Liste enthält die Informationen, die von dem ein Benutzer kann auswählen, und im Auswahlfeld zeigt die aktuelle Auswahl. Im Auswahlfeld ist ein Bearbeitungssteuerelement, die auch für die Texteingabe noch nicht in der Liste verwendet werden kann. 
+Eine **DTBLCOMBOBOX** -Struktur beschreibt ein Kombinationsfeld ein Steuerelement, das aus einer Liste und einem Auswahlfeld besteht. In der Liste werden die Informationen angezeigt, aus denen ein Benutzer auswählen kann, und das Feldauswahl zeigt die aktuelle Auswahl an. Das Auswahlfeld ist ein Bearbeitungssteuerelement, mit dem auch Text eingegeben werden kann, der noch nicht in der Liste aufgeführt ist. 
   
-Zwei-Eigenschaft Tag Mitglieder arbeiten zusammen, um die Anzeige der Browserliste mit dem Bearbeitungssteuerelement zu koordinieren. Wenn MAPI zunächst das Kombinationsfeld angezeigt wird, ruft es die **OpenProperty** -Methode der **IMAPIProp** -Implementierung, die die Tabelle anzeigen zum Abrufen der Tabelle, dargestellt durch das **UlPRTableName** -Element zugeordnet ist. Diese Tabelle hat eine Spalte eine Spalte, die Werte für die Eigenschaft, dargestellt durch das **UlPRPropertyName** -Element enthält. Aus diesem Grund diese Spalte muss vom gleichen Typ wie die **UlPRPropertyName** -Eigenschaft, und beide Spalten müssen Zeichenfolgen sein. 
+Die beiden Elemente des Property-Tags arbeiten zusammen, um die Listenanzeige mit dem Bearbeitungssteuerelement zu koordinieren. Wenn MAPI das Kombinationsfeld zuerst anzeigt, wird die **OpenProperty** -Methode der **IMAPIProp** -Implementierung aufgerufen, die der Anzeigetabelle zugeordnet ist, um die vom **ulPRTableName** -Element dargestellte Tabelle abzurufen. Diese Tabelle enthält eine Spalte eine Spalte mit Werten für die vom **ulPRPropertyName** -Element dargestellte Eigenschaft. Daher muss diese Spalte denselben Typ wie die **ulPRPropertyName** -Eigenschaft aufweisen, und beide Spalten müssen Zeichenfolgen sein. 
   
-Die Werte für die Spalte werden im Listenabschnitt des Kombinationsfelds angezeigt. Aus diesem Grund ist **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) keine gültige Eigenschaftentag für **UlPRPropertyName**. Wenn ein Benutzer eine der Zeilen auswählt, oder neue Daten in das Textfeld eingegeben, wird die **UlPRPropertyName** -Eigenschaft auf den ausgewählten oder eingegebenen Wert festgelegt. 
+Die Werte für die Spalte werden im Listenabschnitt des Kombinationsfelds angezeigt. Daher ist **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)) kein gültiges Property-Tag für **ulPRPropertyName**. Wenn ein Benutzer eine der Zeilen auswählt oder neue Daten in das Textfeld eingibt, wird die **ulPRPropertyName** -Eigenschaft auf den ausgewählten oder eingegebenen Wert festgelegt. 
   
-Um einen Anfangswert für das Bearbeitungssteuerelement anzuzeigen, ruft MAPI [IMAPIProp::GetProps](imapiprop-getprops.md) zum Abrufen der Eigenschaftswerte für die Anzeige-Tabelle. Wenn der abgerufenen Eigenschaften die Eigenschaft, dargestellt durch das **UlPRPropertyName** -Element entspricht, wird ihr Wert der Anfangswert. 
+Um einen Anfangswert für das Bearbeitungssteuerelement anzuzeigen, ruft MAPI [IMAPIProp::](imapiprop-getprops.md) GetProps auf, um die Eigenschaftswerte für die Anzeigetabelle abzurufen. Wenn eine der abgerufenen Eigenschaften mit der vom **ulPRPropertyName** -Element dargestellten Eigenschaft übereinstimmt, wird deren Wert zum Anfangswert. 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -96,7 +96,7 @@ Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt]
 
 [DTCTL](dtctl.md)
   
-[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
+[Kanonische Pidtagcontroltype (-Eigenschaft](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

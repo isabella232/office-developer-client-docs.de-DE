@@ -1,49 +1,49 @@
 ---
-title: ZWISCHEN (Access benutzerdefinierte Web app)
+title: BeTWEEN (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9dcb32c6-ed9b-4a09-9e6a-48cc50063a6f
-description: Gibt einen Bereich zu testen.
-ms.openlocfilehash: 0ef3384d6a29826968220f8d6cfc0d2f85e1131c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen zu testenden Test an.
+ms.openlocfilehash: fd67d1163f6a39779e0202b5ca1ba998ba8650a7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280743"
 ---
-# <a name="between-access-custom-web-app"></a>ZWISCHEN (Access benutzerdefinierte Web app)
+# <a name="between-access-custom-web-app"></a>BeTWEEN (Access Custom Web App)
 
-Gibt einen Bereich zu testen.
+Gibt einen zu testenden Test an.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- *test_expression*  [NOT] **BETWEEN** *begin_expression* **Und** *end_expression* 
+ *test_expression*  NICHT **Zwischen** *begin_expression* **Und** *end_expression* 
   
-Der Operator **zwischen** enthält die folgenden Argumente. 
+Der **** Operator BETWEEN enthält die folgenden Argumente. 
   
 |**Argument**|**Erforderlich**|**Beschreibung**|
 |:-----|:-----|:-----|
-| *test_expression*  <br/> |Ja  <br/> |Der Ausdruck, der im Bereich von *Begin_expression* und *End_expression* definierten testen. Muss denselben Datentyp aufweisen wie *Begin_expression* und *End_expression* .  <br/> |
+| *test_expression*  <br/> |Ja  <br/> |Der Ausdruck, der in dem durch *begin_expression* und *end_expression* definierten Range getestet werden soll. Muss derselbe Datentyp wie *begin_expression* und *end_expression* sein.  <br/> |
 | *NOT*  <br/> |Nein  <br/> |Gibt an, dass das Ergebnis des Prädikats negiert werden soll.  <br/> |
-| *begin_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Muss denselben Datentyp aufweisen wie *Test_expression* und *End_expression* .  <br/> |
-| *end_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Denselben Datentyp aufweisen wie *Test_expression* und *Begin_expression* muss sein.  <br/> |
-| *AND*  <br/> |Ja  <br/> |Gibt an, dass *Test_expression* innerhalb des Bereichs von *Begin_expression* und *End_expression* angegeben werden soll.  <br/> |
+| *begin_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Muss derselbe Datentyp wie *test_expression* und *end_expression* sein.  <br/> |
+| *end_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Muss derselbe Datentyp wie *test_expression* und *begin_expression* sein.  <br/> |
+| *AND*  <br/> |Ja  <br/> |Gibt an, dass *test_expression* innerhalb des von *begin_expression* und *end_expression* angegebenen Bereich liegen sollte.  <br/> |
    
 ## <a name="result-type"></a>Ergebnistyp
 
  **Boolean**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- **BETWEEN** gibt **TRUE** zurück, wenn der Wert von *Test_expression* größer als oder gleich dem Wert von *Begin_expression* ist kleiner oder gleich dem Wert von *End_expression* . 
+ **Zwischen** gibt **true** zurück, wenn der Wert von *test_expression* größer als oder gleich dem Wert von *begin_expression* und kleiner als oder gleich dem Wert von *end_expression* ist. 
   
- **Nicht zwischen** zurückgegeben **TRUE** , wenn der Wert von *Test_expression* kleiner als der Wert von *Begin_expression* oder größer als der Wert von *End_expression* ist. 
+ **Nicht zwischen** gibt **true** zurück, wenn der Wert von *test_expression* kleiner als der Wert von *begin_expression* oder größer als der Wert von *end_expression* ist. 
   
-Verwenden Sie zum Angeben eines Bereichs, der größer als (\>) und kleiner als Operatoren (\<).
+Um einen exklusiven Range anzugeben, verwenden Sie den Wert größer\>als () und kleiner als\<Operatoren ().
   
 

@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: 419e2c6d-ac3b-46c6-9a12-33f51f6d7f12
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b8c70c8b13025f196fdebb2956939bec840a96f5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: cb1e19a3f3703dc4943a5f6c322f1c8b429da5fa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282642"
 ---
 # <a name="sizedsrowset"></a>SizedSRowSet
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine benannte [SRowSet](srowset.md) -Struktur, die eine angegebene Anzahl von Zeilen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 SizedSRowSet (_crow, _name)
@@ -36,17 +36,17 @@ SizedSRowSet (_crow, _name)
 
 ## <a name="parameters"></a>Parameter
 
-__crow_
+__Crow_
   
-> Anzahl der Anzahl von Zeilen, die in die neue Struktur eingeschlossen werden.
+> Die Anzahl der Zeilen, die in die neue Struktur eingeschlossen werden sollen.
     
-__Namen_
+__Name_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Um die neue Struktur verwenden, die als Zeiger auf eine **SRowSet** -Struktur aus dem Makro **SizedSRowSet** erzeugt, führen Sie die folgende Umwandlung: 
+Um die neue Struktur zu verwenden, die aus dem **SizedSRowSet** -Makro als Zeiger auf eine **SRowSet** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpSRowSet = (LPSRowSet) &SizedSRowSet;

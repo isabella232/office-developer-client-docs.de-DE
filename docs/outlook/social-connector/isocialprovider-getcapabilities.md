@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f40d5405-12e3-475b-b731-d2223ab70c1d
-description: Ruft eine Zeichenfolge, die vom Anbieterfunktionen beschreibt.
-ms.openlocfilehash: 54e28f22f2dc8fdbe19821d8188087b78c327518
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft eine Zeichenfolge ab, die die Anbieter Funktionen beschreibt.
+ms.openlocfilehash: cf3d1418ac0ecbfc3f67bb550a24ec71781f2637
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285764"
 ---
 # <a name="isocialprovidergetcapabilities"></a>ISocialProvider::GetCapabilities
 
-Ruft eine Zeichenfolge, die vom Anbieterfunktionen beschreibt.
+Ruft eine Zeichenfolge ab, die die Anbieter Funktionen beschreibt.
   
 ```cpp
 HRESULT _stdcall GetCapabilities([out, retval] BSTR* result);
@@ -25,15 +25,15 @@ HRESULT _stdcall GetCapabilities([out, retval] BSTR* result);
 
 ## <a name="parameters"></a>Parameter
 
-_Ergebnis_
+_result_
   
-> [out] Eine XML-Zeichenfolge, die die Funktionen von einem Anbieter Outlook Social Connector (OSC) darstellt.
+> Out Eine XML-Zeichenfolge, die die Funktionen eines Outlook Social Connector (OSC)-Anbieters darstellt.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die zurückgegebene _Ergebnis_ -XML-Zeichenfolge muss die Schemadefinition für das **Capabilities** -Element gemäß Definition im XML-Schema für die Erweiterbarkeit des OSC-Providers entsprechen. 
+Die zurückgegebene _Ergebnis_ -XML-Zeichenfolge muss der Schema Definition für das **Capabilities** -Element entsprechen, wie im XML-Schema für osc-Anbieter Erweiterbarkeit definiert. 
   
-Der Anbieter muss eine Zeichenfolge _Ergebnis_ , um nachfolgende Aufrufe aus der OSC an den Anbieter ordnungsgemäß ermöglichen zurück. 
+Der Anbieter muss eine _Ergebnis_ Zeichenfolge zurückgeben, damit nachfolgende Aufrufe vom osc an den Anbieter ordnungsgemäß ausgeführt werden können. 
   
 ## <a name="see-also"></a>Siehe auch
 

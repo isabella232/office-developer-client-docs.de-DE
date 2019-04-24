@@ -1,33 +1,33 @@
 ---
-title: Funktionen ' SetVariable '-Makroaktion (Access benutzerdefinierte Web app)
+title: SetVariable-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: a4ffbd02-eed7-43ed-9da2-f0d1ff5d8014
-description: Sie können die Funktionen ' SetVariable '-Aktion verwenden, erstellen eine temporäre Variable und legen Sie es auf einen bestimmten Wert. Die Variable kann dann als Bedingung oder Argument in nachfolgenden Aktionen verwendet werden, oder Sie können die Variable in einem anderen Benutzer Benutzeroberfläche (UI) Makro.
-ms.openlocfilehash: 28daa4e8de247fbe4ca0d7a3fa8a908f6d7d885d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sie können die Variable-Aktion verwenden, um eine temporäre Variable zu erstellen und diese auf einen bestimmten Wert festzulegen. Die Variable kann dann als Bedingung oder Argument in nachfolgenden Aktionen verwendet werden, oder Sie können die Variable in einem anderen Benutzeroberflächen Makro verwenden.
+ms.openlocfilehash: 54c23868a5bfb66a2fb08465361583c6e9b5ed49
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307928"
 ---
-# <a name="setvariable-macro-action-access-custom-web-app"></a>Funktionen ' SetVariable '-Makroaktion (Access benutzerdefinierte Web app)
+# <a name="setvariable-macro-action-access-custom-web-app"></a>SetVariable-Makroaktion (benutzerdefinierte Access-Web-App)
 
-Sie können die **Funktionen ' SetVariable '** -Aktion verwenden, erstellen eine temporäre Variable und legen Sie es auf einen bestimmten Wert. Die Variable kann dann als Bedingung oder Argument in nachfolgenden Aktionen verwendet werden, oder Sie können die Variable in einem anderen Benutzer Benutzeroberfläche (UI) Makro. 
+Sie können die **Variable** -Aktion verwenden, um eine temporäre Variable zu erstellen und diese auf einen bestimmten Wert festzulegen. Die Variable kann dann als Bedingung oder Argument in nachfolgenden Aktionen verwendet werden, oder Sie können die Variable in einem anderen Benutzeroberflächen Makro verwenden. 
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="setting"></a>Einstellung
 
-Die **Funktionen ' SetVariable '** -Aktion hat die folgenden Argumente. 
+Die **SetVariable** -Aktion hat die folgenden Argumente. 
   
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
 |**Variable** <br/> |Geben Sie den Namen der temporären Variable ein.  <br/> |
-|**Wert =** <br/> |Geben Sie einen Ausdruck, der verwendet wird, um den Wert für diese temporäre Variable festzulegen. Setzen Sie den Ausdruck mit dem Gleichheitszeichen (**=** ) anmelden. Sie können die **Generator** -Schaltfläche ![Formel](media/buildbut_ZA06047218.gif "Formel") mithilfe des Ausdrucks-Generators zum Festlegen dieses Arguments klicken.  <br/> |
+|**Wert =** <br/> |Geben Sie einen Ausdruck ein, der zum Festlegen des Werts für diese temporäre Variable verwendet wird. Stellen Sie dem Ausdruck nicht das Gleichheitszeichen (**=** ) voran. Sie können auf die ![Formel](media/buildbut_ZA06047218.gif "Formel") **Erstellen** klicken, um den Ausdrucks-Generator zum Festlegen dieses Arguments zu verwenden.  <br/> |
    
 

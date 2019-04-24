@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c6fd0aba-7c33-b77f-207b-ba704b3e0756
 description: Legt die übergeordneten Shapes bei Verwendung von Shapes mit Steuerpunkten fest. Mithilfe dieser Zelle wird das Verhalten aller Shapes auf dem Zeichenblatt festgelegt.
-ms.openlocfilehash: a87ba7451d73af50de4a110ecdc12b3e23e14d5d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a530c48156043bec0cd58d79aead1a403c17ddce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282908"
 ---
-# <a name="ctrlasinput-cell-page-layout-section"></a>CtrlAsInput Cell (Page Layout Section)
+# <a name="ctrlasinput-cell-page-layout-section"></a>Zelle "CtrlAsInput" (Abschnitt "Page Layout")
 
 Legt die übergeordneten Shapes bei Verwendung von Shapes mit Steuerpunkten fest. Mithilfe dieser Zelle wird das Verhalten aller Shapes auf dem Zeichenblatt festgelegt.
   
@@ -25,15 +25,15 @@ Legt die übergeordneten Shapes bei Verwendung von Shapes mit Steuerpunkten fest
 | TRUE  <br/> | Legt das mit dem Steuerpunkt verbundene Shape als das übergeordnete Element fest.  <br/> |
 | FALSE  <br/> | Standard. Legt das Shape, in dem der Steuerpunkt enthalten ist, als das übergeordnete Element fest.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle CtrlAsInput aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle CtrlAsInput aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | CtrlAsInput  <br/> |
+| Zellenname:  <br/> | Zelle CtrlAsInput  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle CtrlAsInput aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle CtrlAsInput aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

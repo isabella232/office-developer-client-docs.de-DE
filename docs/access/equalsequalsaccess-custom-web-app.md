@@ -1,41 +1,41 @@
 ---
-title: Ist gleich (Access benutzerdefinierte Web app)
+title: Equals (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 70bc707a-3a61-4d75-816d-0defd0806319
 description: Vergleicht die Gleichheit zweier Ausdrücke.
-ms.openlocfilehash: efdd06a1735190d63c13c4df8230e1d29d71c1dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8c551e3dbc057433b49bc2558e08feba5ee3d04f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308225"
 ---
-# <a name="equals-access-custom-web-app"></a>Ist gleich (Access benutzerdefinierte Web app)
+# <a name="equals-access-custom-web-app"></a>Equals (Access Custom Web App)
 
 Vergleicht die Gleichheit zweier Ausdrücke.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
 `= (Equals)`
 
-*Ausdruck*  =  *Ausdruck* 
+*expression*  =  *expression* 
   
-*Ausdruck*  Ist ein beliebiger gültiger Ausdruck. Wenn die Ausdrücke nicht den gleichen Datentyp aufweisen, muss der Datentyp für einen Ausdruck implizit in den Datentyp des anderen. Die Konvertierung, abhängig von den Regeln der Rangfolge der Datentypen. 
+*expression*  Ein beliebiger gültiger Ausdruck. Wenn die Ausdrücke nicht vom gleichen Datentyp sind, muss der Datentyp für einen Ausdruck implizit in den Datentyp des anderen konvertierbar sein. Die Konvertierung ist von den Regeln der Rangfolge der Datentypen abhängig. 
   
 ## <a name="return-type"></a>Rückgabetyp
 
-**Boolean**
+**Boolescher Wert**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Beim Vergleichen von zwei NULL-Ausdrücken ist das Ergebnis TRUE.
+Wenn Sie zwei NULL-Ausdrücke vergleichen, ist das Ergebnis TRUE.
   
-FALSE führt NULL immer mit einem NULL Wert zu vergleichen.
+Das Vergleichen von NULL mit einem Wert ungleich NULL führt immer zu FALSE.
   
 

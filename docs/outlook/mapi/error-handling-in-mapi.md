@@ -7,42 +7,42 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 99e2c485-af84-46f4-84b4-fca2117b5a21
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 98ee0856411cce3a3e9012185be6c30503de7779
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287280"
 ---
 # <a name="error-handling-in-mapi"></a>Fehlerbehandlung in MAPI
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erfolg, Warnung und Fehler-Werte werden unter Verwendung einer 32-Bit-Version bekannte dementsprechend Handle oder HRESULT zurückgegeben. Ein HRESULT ist nicht wirklich ein Handle auf einen anderen Wert. Es wird lediglich eine 32-Bit-Wert mit mehrere Felder in den Wert codiert. Ein NULL-Ergebnis zeigt Erfolg und ein ungleich NULL Ergebnis Fehler.
+Erfolgs-, Warnungs-und Fehlerwerte werden mit einer 32-Bit-Zahl zurückgegeben, die als Ergebnis-Handle oder HRESULT bezeichnet wird. Ein HRESULT ist wirklich kein Handle für alles; Es handelt sich lediglich um einen 32-Bit-Wert mit mehreren Feldern, die im Wert codiert sind. Ein Ergebnis von NULL gibt den Erfolg an, und ein Ergebnis ungleich NULL weist auf einen Fehler hin.
   
-MAPI auf 32-Bit-Plattformen funktioniert nur mit HRESULT-Werte.
+MAPI auf 32-Bit-Plattformen funktioniert ausschließlich mit HRESULT-Werten.
   
 Die folgende Abbildung zeigt das HRESULT-Format für 32-Bit-Plattformen.
   
 **HRESULT-Format**
   
-![HRESULT-format] (media/amapi_49.gif "HRESULT-format")
+![HRESULT-Format] (media/amapi_49.gif "HRESULT-Format")
   
-Das hohe Bit in der HRESULT gibt an, ob der Rückgabewert Erfolg oder Fehler darstellt. Wenn der Wert Erfolg gibt 0 (null) festgelegt, an. Wenn auf 1 festgelegt, es einen Fehler angibt.
+Das hochwertige Bit im HRESULT gibt an, ob der Rückgabewert Erfolg oder Misserfolg darstellt. Bei Festlegung auf 0 (null) gibt der Wert Erfolg an. Bei Festlegung auf 1 wird ein Fehlschlagen angezeigt.
   
-Die R, C, N und R Bits sind in der HRESULT reserviert.
+Die Bits R, C, N und r sind im HRESULT reserviert.
   
-Das Feld Facility in beiden Versionen gibt den Bereich der Verantwortung für den Fehler. Es gibt verschiedene Funktionen, aber die Mehrheit der MAPI-Fehler verwenden FACILITY_ITF Benutzeroberflächenfehler darstellen. Werden die am häufigsten verwendeten Funktionen, die derzeit verwendet werden: FACILITY_NULL, FACILITY_ITF, FACILITY_DISPATCH, FACILITY_RPC und FACILITY_STORAGE. Wenn neue Funktionen erforderlich sind, weist Microsoft sie, da sie eindeutig sein müssen. In der folgenden Tabelle werden die verschiedenen Facility Felder beschrieben.
+Das Feld "Anlage" in beiden Versionen gibt den Zuständigkeitsbereich für den Fehler an. Es gibt mehrere Möglichkeiten, aber die meisten MAPI-Fehler verwenden FACILITY_ITF, um Schnittstellenfehler darzustellen. Die am häufigsten verwendeten Einrichtungen sind: FACILITY_NULL, FACILITY_ITF, FACILITY_DISPATCH, FACILITY_RPC und FACILITY_STORAGE. Wenn neue Einrichtungen erforderlich sind, weist Microsoft Sie an, da Sie eindeutig sein müssen. In der folgenden Tabelle werden die verschiedenen Facility-Felder beschrieben.
   
-|Einrichtung|Beschreibung|
+|Facility|Beschreibung|
 |:-----|:-----|
-|FACILITY_NULL  <br/> |Für umfassend anwendbaren allgemeine Statuscodes wie S_OK oder E_OUTOF_MEMORY; der Wert ist NULL.  <br/> |
-|FACILITY_ITF  <br/> |Für die meisten Statuscodes von Schnittstellenmethoden zurückgegeben; der Wert wird von der Benutzeroberfläche definiert. D. h., möglicherweise zwei HRESULT-Werte mit genau die gleiche 32-Bit-Wert zurückgegeben von zwei verschiedenen Schnittstellen verschiedene Bedeutungen haben.  <br/> |
-|FACILITY_DISPATCH  <br/> |Für späte Bindung [IDispatch](https://msdn.microsoft.com/library/ms221608.aspx) -Schnittstelle Fehler.  <br/> |
-|FACILITY_RPC  <br/> |Für Statuscodes von Remoteprozeduraufrufe zurückgegeben.  <br/> |
-|FACILITY_STORAGE  <br/> |Für Statuscodes [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx) oder [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) Aufrufe von Methoden für strukturierte Speicher zurückgegeben. Statuscodes Code (unteren 16 Bit) Werte im Bereich von Windows-Fehlercodes (d. h., kleiner als 256) haben dieselbe Bedeutung wie die entsprechende Windows-Fehler.  <br/> |
+|FACILITY_NULL  <br/> |Für allgemein gültige allgemeine Statuscodes wie S_OK oder E_OUTOF_MEMORY; der Wert ist NULL.  <br/> |
+|FACILITY_ITF  <br/> |Für die meisten von Schnittstellenmethoden zurückgegebenen Statuscodes; der Wert wird von der Schnittstelle definiert. Das heißt, zwei HRESULT-Werte mit genau demselben 32-Bit-Wert, die von zwei verschiedenen Schnittstellen zurückgegeben werden, haben möglicherweise unterschiedliche Bedeutungen.  <br/> |
+|FACILITY_DISPATCH  <br/> |Bei spätem Binden von [IDispatch](https://msdn.microsoft.com/library/ms221608.aspx) -Schnittstellenfehlern.  <br/> |
+|FACILITY_RPC  <br/> |Für Statuscodes, die von Remoteprozeduraufrufen zurückgegeben werden.  <br/> |
+|FACILITY_STORAGE  <br/> |Für Statuscodes, die von [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx) -oder [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Methoden aufrufen im Zusammenhang mit strukturiertem Speicher zurückgegeben werden. Status Codes mit Code (niedrigeren 16-Bit-Werten) im Windows-Fehlercode (also weniger als 256) haben dieselbe Bedeutung wie die entsprechenden Windows-Fehler.  <br/> |
    
-Das Feld ist eine eindeutige Zahl, die zum Darstellen der Fehlermeldung oder einer Warnung zugewiesen ist.
+Das Feld Code ist eine eindeutige Nummer, die dem Fehler oder der Warnung zugeordnet ist.
   
 

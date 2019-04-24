@@ -5,36 +5,36 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8345a4bc-ad7b-d0b0-7615-f77ade35006d
-description: Bevor Sie dieses Thema lesen, finden Sie unter TheSigned Formular Templatessection in zusätzliche Sicherheitskonzepte für InfoPath-Formular für einen Überblick über die Sicherheit signierter Formularvorlagen. Informationen und Diskussionen im Thema Sicherheitsstufen, Bereitstellung per E-Mail und Remoteformularvorlagen sind auch relevant.
-ms.openlocfilehash: de64cb0efdbbdd11a301d89ced03e63454849adb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bevor Sie dieses Thema lesen, finden Sie unter theSigned Form Templatessection in zusätzlichen InfoPath-Formular Sicherheitskonzepte Informationen zur Sicherheit signierter Formularvorlagen. Die Informationen und Hinweise im Thema Security Levels, E-Mail Deployment, and Remote Form Templates sind ebenfalls wichtig.
+ms.openlocfilehash: 76cc6dfdbd2c01827182c348281a98ad7cd17b69
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303717"
 ---
 # <a name="deploying-signed-infopath-form-templates"></a>Bereitstellen signierter InfoPath-Formularvorlagen
 
-Bevor Sie dieses Thema lesen, finden Sie unter "Signierter Formularvorlagen" in der im Abschnitt [Zusätzliche Sicherheitskonzepte für InfoPath-Formular](additional-infopath-form-security-concepts.md) einen Überblick über die Sicherheit signierter Formularvorlagen. Informationen und Diskussionen im Thema [Sicherheitsstufen, Bereitstellung, per E-Mail und Remoteformularvorlagen](security-levels-email-deployment-and-remote-form-templates.md) sind auch relevant. 
+Bevor Sie dieses Thema lesen, finden Sie im Abschnitt "signierte Formularvorlagen" Weitere Informationen zur Sicherheit von signierten Formularvorlagen unter [zusätzliche InfoPath-Formular Sicherheitskonzepte](additional-infopath-form-security-concepts.md) . Die Informationen und Hinweise im Thema [Security Levels, E-Mail Deployment, and Remote Form Templates](security-levels-email-deployment-and-remote-form-templates.md) sind ebenfalls wichtig. 
   
 ## <a name="digitally-signing-a-form-template"></a>Digitales Signieren einer Formularvorlage
 
-Wenn Sie eine Formularvorlage digital signieren, können Sie die Sicherheitsstufe für die Formularvorlage voll vertrauenswürdig festlegen, was bedeutet, dass das Formular Dateien und Einstellungen auf dem Computer des Benutzers oder in einer anderen Domäne zugreifen kann. (Darüber hinaus digitales Signieren einer Formularvorlage nicht verhindert mit anderen Sicherheitsstufen, falls gewünscht. Sie legen die Sicherheitsstufe einer signierten Formularvorlage auf die Sicherheitsstufe Domäne oder eingeschränkt erfordert.) Darüber hinaus können Sie signierten Formularvorlage für Benutzer bereitzustellen, die ein e-Mail-Programm verwenden und dann später automatisch aktualisieren signierten Formularvorlage durch die aktualisierte Version als Anlage einer e-Mail-Nachricht an die Benutzer senden, gehen Sie folgendermaßen vor:
+Wenn Sie eine Formularvorlage digital signieren, können Sie die Sicherheitsstufe für die Formularvorlage auf voll vertrauenswürdig festlegen, was dazu führt, dass das Formular auf Dateien und Einstellungen auf dem Computer des Benutzers oder in einer anderen Domäne zugreifen kann. (Auch die digitale Signierung einer Formularvorlage hindert Sie nicht daran, andere Sicherheitsstufen zu verwenden, wenn Sie es vorziehen. Sie legen die Sicherheitsstufe einer signierten Formularvorlage auf die Domäne oder eingeschränkte Sicherheitsstufe fest.) Darüber hinaus können Sie die signierte Formularvorlage für Benutzer bereitstellen, die ein e-Mail-Programm verwenden und dann die signierte Formularvorlage später automatisch aktualisieren, indem Sie die aktualisierte Version an die Benutzer als Anlage einer e-Mail-Nachricht senden, indem Sie die folgenden Schritte ausführen:
   
 ### <a name="to-digitally-sign-a-form-template"></a>So können Sie eine Formularvorlage digital signieren
 
-1. Klicken Sie im InfoPath-Designer auf der Registerkarte **Datei** , und klicken Sie dann auf der Registerkarte **Info** auf **Formularoptionen** . 
+1. Klicken Sie im InfoPath-Designer auf die Registerkarte **Datei**, und klicken Sie dann auf der Registerkarte **Info** auf **Formularoptionen**. 
     
-2. Klicken Sie im Dialogfeld **Formularoptionen** auf die Kategorie **Sicherheit und Vertrauensstellung** . 
+2. Klicken Sie im Dialogfeld **Formularoptionen** auf die Kategorie **Sicherheit und Vertrauensstellung**. 
     
-3. Aktivieren Sie das Kontrollkästchen **Diese Formularvorlage signieren** , klicken Sie unter **Signatur der Formularvorlage**. 
+3. Aktivieren Sie unter **Signatur der Formularvorlage** das Kontrollkästchen **Diese Formularvorlage signieren**. 
     
 4. Klicken Sie auf **Zertifikat auswählen**.
     
-5. Klicken Sie im Dialogfeld **Zertifikat auswählen** auf das Zertifikat, das Sie verwenden, um das Formular digital signieren möchten. 
+5. Klicken Sie im Dialogfeld **Zertifikat auswählen** auf das Zertifikat, mit dem Sie das Formular digital signieren möchten. 
     
 > [!NOTE]
-> Die Schaltfläche **Zertifikat erstellen** , klicken Sie im Dialogfeld **Formularoptionen** kann zum Generieren eines Testzertifikats zum Signieren einer Formularvorlage verwendet werden. Das Testzertifikat sollte zum Signieren von Formularvorlagen nur zu Testzwecken verwendet werden. Testzertifikate sollte nicht verwendet werden, zum Signieren von Formularvorlagen, die öffentlich verteilt werden. Da die Zertifikate nicht von einer Zertifizierungsstelle ausgestellt werden, deren Stammzertifikat möglicherweise bereits auf dem Computer eines Benutzers als vertrauenswürdig wird, überprüft das Testzertifikat nicht richtig auf dem Computer des Benutzers. Wenn Sie eine mit einem Testzertifikat signierte Formularvorlage bereitstellen, werden die Formularvorlage Benutzer wahrscheinlich nicht öffnen können. 
+> Mit der Schaltfläche **Zertifikat erstellen** im Dialogfeld **Formularoptionen** kann ein Testzertifikat zum Signieren einer Formularvorlage generiert werden. Das Testzertifikat sollte nur zu Testzwecken zum Signieren von Formularvorlagen verwendet werden. Mit Testzertifikaten sollten keine Formularvorlagen signiert werden, die öffentlich weitergegeben werden. Die Zertifikate werden nicht von einer Zertifizierungsstelle ausgestellt, deren Stammzertifikat bereits auf dem Computer eines Benutzers vertrauenswürdig ist, weshalb die Testzertifikate auf dem Computer des Benutzers nicht ordnungsgemäß überprüft werden. Wenn Sie eine mit einem Testzertifikat signierte Formularvorlage bereitstellen, können Benutzer Ihrer Formularvorlage diese höchstwahrscheinlich nicht öffnen. 
   
 ## <a name="establishing-a-trusted-root-certificate-and-publisher"></a>Einrichten eines vertrauenswürdigen Stammzertifikats und eines vertrauenswürdigen Herausgebers
 
@@ -45,7 +45,7 @@ Wenn Sie eine Formularvorlage digital signieren, können Sie die Sicherheitsstuf
   
 ## <a name="deploying-signed-form-templates-with-full-trust-access"></a>Bereitstellen signierter Formularvorlagen mit der Sicherheitsstufe "Voll vertrauenswürdig"
 
-Das primäre Szenario für Bereitstellen signierter Formularvorlagen ist so aktivieren Sie Domäne-ähnliche Funktionalität wie automatische Updates, voll vertrauenswürdige Formulare. Eine signierte Formularvorlage, die voll vertrauenswürdigen Zugriff anfordern hat den gleichen Zugriff auf Systemressourcen wie ein *voll vertrauenswürdiges Formular* . Eine ausführliche Erläuterung der Funktionsweise voll vertrauenswürdiger Formulare und zum Erstellen und Bereitstellen finden Sie unter [Grundlegendes zu voll vertrauenswürdigen Formularen](understanding-fully-trusted-forms.md).
+Das primäre Szenario für die Bereitstellung signierter Formularvorlagen besteht darin, Domänen ähnliche Funktionen wie automatische Updates in voll vertrauenswürdigen Formularen zu aktivieren. Eine signierte Formularvorlage, die den Zugriff mit voller Vertrauenswürdigkeit anfordert, hat denselben Zugriff auf Systemressourcen wie ein *voll vertrauenswürdiges Formular* . Eine ausführliche Erläuterung der Funktionsweise voll vertrauenswürdiger Formulare und wie sie erstellt und bereitgestellt werden finden Sie unter [Grundlegendes zu voll vertrauenswürdigen Formularen](understanding-fully-trusted-forms.md).
   
 In Abhängigkeit von der EDV-Umgebung Ihrer Organisation ziehen Sie jedoch möglicherweise die Verwendung signierter Formularvorlagen oder voll vertrauenswürdiger Formulare vor. Beispielsweise bietet die Verwendung einer signierten Formularvorlage, die die Sicherheitsstufe Voll vertrauenswürdig erfordert, anstelle eines registrierten, voll vertrauenswürdigen Formulars die folgenden Vorteile:
   
@@ -61,6 +61,6 @@ Falls Sie ein unsigniertes, voll vertrauenswürdiges Formular aktualisieren möc
   
 ## <a name="deploying-signed-form-templates-with-domain-or-restricted-access"></a>Bereitstellen signierter Formularvorlagen mit der Domänensicherheitsstufe oder der eingeschränkten Sicherheitsstufe 
 
-Eine signierte Formularvorlage, die Sicherheitsstufe Domäne oder eingeschränkt wurde, hat auch den Vorteil die automatische Updatefunktion. Beispielsweise könnten Sie eine signierte Formularvorlage in einer Dokumentbibliothek auf einem Server, auf der Microsoft SharePoint Foundation ausgeführt wird oder auf einem Server mit einer Domänensicherheitsstufe veröffentlichen. Wenn Sie die Formularvorlage im freigegebenen Speicherort aktualisieren, erhalten Benutzer automatisch die aktualisierte Kopie.
+Eine signierte Formularvorlage mit der Domänensicherheitsstufe oder der eingeschränkten Sicherheitsstufe bietet außerdem den Vorteil der automatischen Aktualisierungsfunktion. Sie können beispielsweise eine signierte Formularvorlage in einer Dokumentbibliothek auf einem Server veröffentlichen, auf dem Microsoft SharePoint Foundation ausgeführt wird, oder auf einem Server mit einer Domänen Sicherheitsstufe. Wenn Sie Ihre Formularvorlage in dem freigegebenen Speicherort aktualisieren, erhalten die Benutzer automatisch die aktualisierte Kopie.
   
 

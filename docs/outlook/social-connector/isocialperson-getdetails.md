@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9ca3172a-82a3-4483-b0aa-4e848930f6ed
-description: Ruft eine Zeichenfolge, die Details zu einem Profilbild der Person ein, beispielsweise den Vornamen, Nachnamen sowie eine URL darstellt.
-ms.openlocfilehash: 158ce9b5c6a97ffff0325427ed07c74f518941d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft eine Zeichenfolge ab, die Details für die Person darstellt, wie den Vornamen, den Nachnamen und eine URL zu einem Profilbild.
+ms.openlocfilehash: 05cc2565ccd0688c7b8f4eccd6d8f42353d8743e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286143"
 ---
 # <a name="isocialpersongetdetails"></a>ISocialPerson::GetDetails
 
-Ruft eine Zeichenfolge, die Details zu einem Profilbild der Person ein, beispielsweise den Vornamen, Nachnamen sowie eine URL darstellt. 
+Ruft eine Zeichenfolge ab, die Details für die Person darstellt, wie den Vornamen, den Nachnamen und eine URL zu einem Profilbild. 
   
 ```cpp
 HRESULT _stdcall GetDetails([out, retval] BSTR* details);
@@ -25,15 +25,15 @@ HRESULT _stdcall GetDetails([out, retval] BSTR* details);
 
 ## <a name="parameters"></a>Parameter
 
-_Details_
+_details_
   
-> [out] Ein XML-String-Wert, der die Details für eine Person darstellt.
+> Out Ein XML-Zeichenfolgenwert, der die Details für eine Person darstellt.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die zurückgegebene _Details_ XML-Zeichenfolge muss die Schemadefinition für die **Person**, gemäß Definition im Schema für Outlook Social Connector (OSC)-Erweiterbarkeit des Providers entsprechen.
+Die XML-Zeichenfolge zurückgegebene _Details_ muss mit der Schema Definition für **Person**übereinstimmen, wie im Schema for Outlook Social Connector (OSC)-Anbieter Erweiterbarkeit definiert.
   
-Die OSC-Aufrufe **GetDetails** , wenn der OSC-Anbieter unterstützt zwischengespeichert oder Hybrid Synchronisierung von Freunde im sozialen Netzwerk. Wenn der OSC anfänglich Freunde Aktivitäten für den angemeldeten Benutzer erhält, ruft [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md), und speichert Freunde Informationen in einem Kontakteordner speziell für die sozialen Netzwerk, in der Outlook-Standardspeicher des angemeldeten Benutzers . Anschließend wird die OSC nicht **GetFriendsAndColleagues** oder **GetDetails** aufgerufen, wenn das Aktualisierungsintervall für den Cache abgelaufen ist. Weitere Informationen dazu, wie die OSC Informationen in einem Kontakteordner Freunde zwischenspeichert finden Sie unter [Synchronisieren Freunde und Aktivitäten](synchronizing-friends-and-activities.md).
+OSC ruft **getDetails** auf, wenn der osc-Anbieter die zwischengespeicherte oder hybride Synchronisierung von Freunden im sozialen Netzwerk unterstützt. Wenn der OSC anfänglich die Aktivitäten von Freunden für den angemeldeten Benutzer abruft, ruft er [ISocialPerson:: GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)auf und speichert die Informationen der Freunde in einem für das soziale netzwerkspezifischen Kontakteordner im standardmäßigen Outlook-Speicher des angemeldeten Benutzers. . Anschließend ruft der OSC **GetFriendsAndColleagues** oder getDetails **** nur auf, wenn das Aktualisierungsintervall für den Cache abgelaufen ist. Weitere Informationen dazu, wie der OSC Freundes Informationen in einem Ordner Kontakte speichert, finden Sie unter [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md).
   
 ## <a name="see-also"></a>Siehe auch
 

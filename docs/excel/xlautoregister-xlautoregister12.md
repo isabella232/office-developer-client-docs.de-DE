@@ -1,5 +1,5 @@
 ---
-title: XlAutoRegister/xlAutoRegister12
+title: xlAutoRegister/xlAutoRegister12
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,29 +7,29 @@ ms.topic: reference
 f1_keywords:
 - xlAutoRegister
 keywords:
-- Xlautoregister-Funktion [excel 2007]
+- xlautoregister-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: aa4673cf-8e97-4678-b8d4-6a74426334f9
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e6430a54b0c0ed3b6e08d3c9256cae7dcde926ab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f043558f3f642001e9ba11ee5b18a2721c3dddfb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19790584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303948"
 ---
-# <a name="xlautoregisterxlautoregister12"></a>XlAutoRegister/xlAutoRegister12
+# <a name="xlautoregisterxlautoregister12"></a>xlAutoRegister/xlAutoRegister12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Excel Ruft die [XlAutoRegister-Funktion](xlautoregister-xlautoregister12.md) , wenn ein Anruf an XLM-Funktion **Registrieren**, oder die C-API entsprechende [XlfRegister-Funktion](xlfregister-form-1.md), mit dem Zurückgeben und -Argument der Funktion registrierende fehlenden vorgenommen wurde. Es ermöglicht die XLL zum Suchen der internen Liste der exportierten Funktionen und Befehle aus, um die Funktion mit dem Argument registrieren und Rückgabetypen angegeben.
+Excel Ruft die [xlAutoRegister-Funktion](xlautoregister-xlautoregister12.md) immer dann auf, wenn ein Aufruf an das XML-Funktions **Register**oder die äquivalente [XLFREGISTER-Funktion](xlfregister-form-1.md)der C-API erfolgt, wobei die Rückgabe-und Argumenttypen der registrierten Funktion fehlen. Es ermöglicht der XLL, die internen Listen der exportierten Funktionen und Befehle zu durchsuchen, um die Funktion mit dem angegebenen Argument und den zurückgegebenen Rückgabetypen zu registrieren.
   
-Ab Excel 2007, ruft Excel die Funktion **xlAutoRegister12** anstelle der **XlAutoRegister** -Funktion aus, wenn es von der XLL exportiert wird. 
+Ab Excel 2007 ruft Excel die **xlAutoRegister12** -Funktion bevorzugt für die **xlAutoRegister** -Funktion auf, wenn Sie von der XLL exportiert wird. 
   
-Excel erforderlich keine XLL zu implementieren und exportieren Sie eine dieser Funktionen.
+Excel erfordert keine XLL zum Implementieren und Exportieren einer dieser Funktionen.
   
 > [!NOTE]
-> Wenn **XlAutoRegister**/ **xlAutoRegister12** die Funktion ohne das Argument registrieren und Rückgabetypen versucht, eine rekursive aufrufende Schleife tritt auf, die schließlich überschreitet die Aufrufliste und stürzt Excel. 
+> Wenn **xlAutoRegister**/ **xlAutoRegister12** versucht, die Funktion ohne Angabe des Arguments und der Rückgabetypen zu registrieren, tritt eine rekursive Aufruf Schleife auf, die schließlich die Aufrufliste überschreitet und Excel abstürzt. 
   
 ```cs
 LPXLOPER12 WINAPI xlAutoRegister12(LPXLOPER12 pxName);
@@ -38,27 +38,27 @@ LPXLOPER WINAPI xlAutoRegister(LPXLOPER pxName);
 
 ## <a name="parameters"></a>Parameter
 
- _pxName_ (**XltypeStr**)
+ _pxName_ (**xltypeStr**)
   
 Der Name der XLL-Funktion, die registriert wird.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Die Funktion sollte das Ergebnis der Versuch zum Registrieren von XLL-Funktion _PxName_ mithilfe der **XlfRegister** -Funktion zurückgegeben. Wenn die angegebene Funktion nicht von der XLL-Exporten ist, sollte Zurückgeben der **#VALUE!** Fehler oder **NULL** interpretiert Excel am **#VALUE!**.
+Die Funktion sollte das Ergebnis des Versuchs zurückgeben, die XLL-Funktion _pxName_ mithilfe der **xlfRegister** -Funktion zu registrieren. Wenn es sich bei der angegebenen Funktion nicht um einen Export der XLL handelt, sollte Sie die #VALUE zurückgeben **!** Fehler oder **null** , die Excel bei **#VALUE!** interpretiert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Implementierung von **XlAutoRegister** sollte eine Groß-/Kleinschreibung unterschieden Suche durchsehen Ihrer XLL interne von Funktionen und Befehle, dass er eine Übereinstimmung mit dem Namen übergebenen Nachrichtensymbol exportiert ausführen. Wenn die Funktion oder den Befehl gefunden werden kann, sollten **XlAutoRegister** versuchen, registrieren, mit der **XlfRegister** -Funktion, wie die Zeichenfolge bereitstellen, auf denen Excel die Return und das Argument Typen von der Funktion als auch andere erforderliche angewiesen wird sichergestellt werden kann Informationen über die Funktion. Dann sollte nach Excel zurückgeben was beim Aufruf von **XlfRegister** zurückgegeben. Wenn die Funktion erfolgreich registriert wurde, gibt **XlfRegister** einen **XltypeNum** -Wert, der mit der ID registrieren der Funktion zurück. 
+Bei der Implementierung von **xlAutoRegister** sollte bei der Suche nach einer Übereinstimmung mit dem übergebenen Namen durch die internen Listen der Funktionen und Befehle, die exportiert werden soll, eine Groß-/Kleinschreibung nicht beachtet werden. Wenn die Funktion oder der Befehl gefunden wird, sollte **xlAutoRegister** versuchen, Sie zu registrieren, indem Sie die **xlfRegister** -Funktion verwenden, indem Sie sicherstellen, dass die Zeichenfolge bereitGestellt wird, die Excel die Rückgabe-und Argumenttypen der Funktion sowie alle anderen erforderlichen Informationen zur Funktion. Sie sollte dann zu Excel zurückkehren, unabhängig vom Aufruf von **xlfRegister** zurückgegeben. Wenn die Funktion erfolgreich registriert wurde, gibt **xlfRegister** einen **xltypeNum** -Wert zurück, der die Register-ID der Funktion enthält. 
   
 ### <a name="example"></a>Beispiel
 
-Finden Sie in der Datei `SAMPLES\EXAMPLE\EXAMPLE.C` für eine Beispiel-Implementierung dieser Funktion. 
+Eine Beispielimplementierung `SAMPLES\EXAMPLE\EXAMPLE.C` dieser Funktion finden Sie in der Datei. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[REGISTRIEREN](xlfregister-form-1.md)
+[Registrieren](xlfregister-form-1.md)
   
-[AUFHEBEN DER REGISTRIERUNG](xlfunregister-form-1.md)
+[Registrierung](xlfunregister-form-1.md)
 

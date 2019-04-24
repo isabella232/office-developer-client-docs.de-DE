@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 546dfe1d-de4f-cc53-8fb4-de7672adc9bc
 description: ''
-ms.openlocfilehash: 33e25f3d37dead415437c7e7ba761b7937507d2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ed130dae07257ea61c9c9ef28dafe780d6d4f4a7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282621"
 ---
 # <a name="type-a-new-formula-for-a-cell"></a>Eingeben einer neuen Formel für eine Zelle
 
@@ -24,12 +24,12 @@ ms.locfileid: "19798334"
     
 2. Geben Sie die neue Formel ein.
     
-    Die Formel, die Sie eingeben, wird der vorherigen Formel ersetzt.
+    Die von Ihnen eingegebene Formel ersetzt die vorherige Formel der Zelle.
     
-    Wenn Sie geben Sie eine Zahl, aber nicht Maßeinheiten angeben, verwendet Microsoft Visio die Einheiten von vorherigen Wert der Zelle, sofern vorhanden. Wenn die Zelle Maßeinheiten erfordert, verwendet Visio anderenfalls Standardeinheiten für die Zelle.
+    Wenn Sie eine Zahl eingeben, aber keine Maßeinheiten angeben, verwendet Microsoft Visio die Einheiten aus dem vorherigen Wert der Zelle, sofern vorhanden. Ist das nicht der Fall und die Zelle erfordert Maßeinheiten, verwendet Visio die Standardeinheiten für die Zelle.
     
-3. Um die Formel anzunehmen, drücken Sie die EINGABETASTE.
+3. Drücken Sie die EINGABEtaste, um die Formel zu übernehmen.
     
-    Enthält die Zahl oder Formel einen Fehler, Visio eine Meldung angezeigt, und klicken Sie dann den Fehler in die Zelle oder die Bearbeitungsleiste hervorgehoben. Korrigieren Sie den Fehler, und drücken Sie die EINGABETASTE, um die Korrektur anzunehmen.
+    Wenn die Nummer oder Formel einen Fehler enthält, zeigt Visio eine Meldung an und hebt dann den Fehler in der Bearbeitungsleiste oder-Zelle hervor. Korrigieren Sie den Fehler, und drücken Sie die EINGABETASTE, um die Korrektur anzunehmen.
     
 

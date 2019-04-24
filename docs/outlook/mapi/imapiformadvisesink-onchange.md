@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: d700b40f-e5b2-4d37-bf1f-8fd3dfa0dda5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e32157f41632b782fbacf87e0411c18d167b4279
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 02663570e3173bbd696af732e71f060d9dee49bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286628"
 ---
 # <a name="imapiformadvisesinkonchange"></a>IMAPIFormAdviseSink::OnChange
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass eine Änderung in den Status des Formular-Viewers aufgetreten ist. 
+Gibt an, dass eine Änderung im Status des Formular-Viewers aufgetreten ist. 
   
 ```cpp
 HRESULT OnChange(
@@ -37,51 +37,51 @@ HRESULT OnChange(
 
  _ulDir_
   
-> [in] Eine Bitmaske aus Flags, die Informationen zur Änderung bereitstellt, die in die Ereignisanzeige und die erwartete Antwort im Format aufgetreten ist. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die Informationen zur Änderung im Viewer und zur erwarteten Antwort im Formular bereitstellt. Die folgenden Flags können festgelegt werden:
     
 VCSTATUS_CATEGORY 
   
-> Es ist eine Nachricht nächste oder vorherige in einer anderen Kategorie. 
+> Es gibt eine nächste oder eine vorherige Nachricht in einer anderen Kategorie. 
     
 VCSTATUS_INTERACTIVE 
   
-> Das Formular sollte eine Benutzeroberfläche angezeigt werden. Wenn dieses Flag nicht festgelegt ist, sollte das Formular unterdrückt eine Benutzeroberfläche anzeigen, auch als Antwort auf ein Verb, das in der Regel verursacht eine Benutzeroberfläche angezeigt werden. 
+> Im Formular sollte eine Benutzeroberfläche angezeigt werden. Wenn dieses Flag nicht festgelegt ist, sollte das Formular die Anzeige einer Benutzeroberfläche unterdrücken, auch als Reaktion auf ein Verb, das in der Regel bewirkt, dass eine Benutzeroberfläche angezeigt wird. 
     
 VCSTATUS_MODAL 
   
-> Das Formular ist für den Betrachter Formular gebunden sein. 
+> Das Formular soll an den Formular Betrachter gebunden werden. 
     
 VCSTATUS_NEXT 
   
-> Es ist eine nächste Nachricht im Formular-Viewer. 
+> Es gibt eine nächste Nachricht im Formular-Viewer. 
     
 VCSTATUS_PREV 
   
-> Es ist eine vorherige Nachricht im Formular-Viewer. 
+> Es gibt eine vorherige Nachricht im Formular-Viewer. 
     
 VCSTATUS_READONLY 
   
-> Löschen Sie, senden Sie, und verschieben Sie Vorgänge deaktiviert werden soll. 
+> Lösch-, Sende-und Verschiebungsvorgänge sollten deaktiviert werden. 
     
 VCSTATUS_UNREAD 
   
-> Es ist eine nächste oder Vorherige ungelesene Nachricht im Formular-Viewer.
+> Es gibt eine nächste oder vorherige ungelesene Nachricht im Formular-Viewer.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigung war erfolgreich.
+> Die Benachrichtigung wurde erfolgreich ausgeführt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Formular Viewer rufen Sie die **IMAPIFormAdviseSink::OnChange** -Methode, um das Formular über eine Änderung in einem Viewer Status zu benachrichtigen. In der Regel ist die einzige Änderung festlegen oder Löschen der basierend auf dem Vorhandensein oder Abwesenheit einer nächsten oder vorherigen Nachricht im Viewer VCSTATUS_NEXT oder VCSTATUS_PREVIOUS-Flag. Das Form-Objekt wird entsprechend, klicken Sie dann aktiviert, oder der nächsten oder vorherigen Aktionen unterstützten deaktiviert. 
+Formular Betrachter rufen die **IMAPIFormAdviseSink:: OnChange** -Methode auf, um das Formular über eine Änderung des Status eines Viewers zu benachrichtigen. In der Regel ist die einzige Änderung das Festlegen oder Deaktivieren des VCSTATUS_NEXT-oder VCSTATUS_PREVIOUS-Kennzeichens basierend auf dem vorhanden sein oder Fehlen einer nächsten oder einer vorherigen Nachricht im Viewer. Dementsprechend aktiviert oder deaktiviert das Form-Objekt alle nächsten oder vorherigen Aktionen, die unterstützt werden. 
   
-Die Einstellungen VCSTATUS_MODAL und VCSTATUS_INTERACTIVE können nicht in einem Ansichtskontext ändern, nachdem es erstellt wurde.
+Die Einstellungen von VCSTATUS_MODAL und VCSTATUS_INTERACTIVE können nicht in einem Ansichtskontext geändert werden, nachdem Sie erstellt wurden.
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die Implementierung dieser Methode ist die Merkmale des Formulars vollständig abhängig. Die meisten Formularobjekte mit dieser Methode können Sie ihre-Benutzeroberfläche (beispielsweise zum Aktivieren oder deaktivieren Menübefehle oder Schaltflächen entsprechend der Viewer Status Flags-Parameter) ändern.
+Die spezifische Implementierung dieser Methode ist vollständig von den Details des Formulars abhängig. Die meisten Formularobjekte verwenden diese Methode, um Ihre Benutzeroberfläche zu ändern (beispielsweise, um Menübefehle oder Schaltflächen so zu aktivieren oder zu deaktivieren, dass Sie mit dem Parameter Viewer Status Flags übereinstimmen).
   
 ## <a name="see-also"></a>Siehe auch
 

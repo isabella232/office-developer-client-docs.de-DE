@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 64d62990-6275-edef-c639-b6ba8d10c38c
-description: InfoPath bietet die Möglichkeit, voll vertrauenswürdige Formulare erstellen Formulare, die größere Sicherheitsberechtigungen und Systemressourcen und anderen Komponenten auf dem Computer eines Benutzers zugreifen können. In diesem Artikel wird beschrieben, was ein voll vertrauenswürdiges Formular ist, und warum wird verwendet, und erstellen Sie ein voll vertrauenswürdiges Formular manuell konvertieren und Registrieren eines Standardformulars oder beim digitalen Signieren eines Standardformulars.
+description: InfoPath bietet die Möglichkeit, voll vertrauenswürdige Formulare zu erstellen, bei denen es sich um Formulare mit höheren Sicherheitsberechtigungen handelt, die auf Systemressourcen und andere Komponenten auf dem Computer eines Benutzers zugreifen können. In diesem Artikel wird beschrieben, was ein voll vertrauenswürdiges Formular ist und warum es verwendet wird, und ein voll vertrauenswürdiges Formular erstellen, indem Sie ein Standardformular manuell konvertieren und registrieren oder ein Standardformular digital signieren.
 ms.openlocfilehash: 04560e0c844d6a6ff681fd366ca7da2e4db36ba1
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "19790841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299766"
 ---
 # <a name="understanding-fully-trusted-forms"></a>Grundlegendes zu voll vertrauenswürdigen Formularen
 
-InfoPath bietet die Möglichkeit, voll vertrauenswürdige Formulare erstellen Formulare, die größere Sicherheitsberechtigungen und Systemressourcen und anderen Komponenten auf dem Computer eines Benutzers zugreifen können. In diesem Artikel wird beschrieben, was ein voll vertrauenswürdiges Formular ist, und warum wird verwendet, und erstellen Sie ein voll vertrauenswürdiges Formular manuell konvertieren und Registrieren eines Standardformulars oder beim digitalen Signieren eines Standardformulars.
+InfoPath bietet die Möglichkeit, voll vertrauenswürdige Formulare zu erstellen, bei denen es sich um Formulare mit höheren Sicherheitsberechtigungen handelt, die auf Systemressourcen und andere Komponenten auf dem Computer eines Benutzers zugreifen können. In diesem Artikel wird beschrieben, was ein voll vertrauenswürdiges Formular ist und warum es verwendet wird, und ein voll vertrauenswürdiges Formular erstellen, indem Sie ein Standardformular manuell konvertieren und registrieren oder ein Standardformular digital signieren.
 
-InfoPath-Formularvorlagen können mit unterschiedlichen Sicherheitsstufen bereitgestellt werden. Die Ebene, die Sie verwenden, wird durch die Zugriffsebene zu externen Ressourcen vorgegeben, die ein Formular werden soll. In der Standardeinstellung InfoPath-Formularvorlagen aus den Zugriff auf Systemressourcen eingeschränkt werden und dürfen keine Softwarekomponenten, die nicht gekennzeichnet sind als sicher für Skripting verwenden. Dieses Verhalten kann jedoch überschrieben werden, damit ein Formular zugreifen kann, Systemressourcen und andere externen Ressourcen, einschließlich Softwarekomponenten, die nicht als sicher für Skripting gekennzeichnet sind.
+InfoPath-Formularvorlagen können mit unterschiedlichen Sicherheitsstufen bereitgestellt werden. Die verwendete Stufe wird durch die Art des Zugriffs auf externe Ressourcen bestimmt, über die ein Formular verfügen soll. Standardmäßig sind InfoPath-Formulare vom Zugriff auf Systemressourcen ausgeschlossen und können keine Softwarekomponenten verwenden, die nicht als sicher für die Verwendung von Skript gekennzeichnet sind. Dieses Verhalten kann jedoch außer Kraft gesetzt werden, sodass ein Formular Zugriff auf Systemressourcen und andere externe Ressourcen sowie auf Softwarekomponenten erhält, die nicht als sicher für die Verwendung von Skript gekennzeichnet sind.
   
 Für die Verwendung eines Formulars benötigt InfoPath Zugriff auf die Formularvorlage, auf der das Formular basiert. Wenn Sie eine Formularvorlage erstellen, wird von InfoPath ein Eintrag in der Formulardefinitionsdatei (XSF-Datei) erstellt, der die URL des Speicherorts der Formularvorlage enthält. Ein URL-basiertes Formular wird als Formular *mit eingeschränkter Sicherheitsstufe* bezeichnet. Wenn ein Benutzer das Formular ausfüllt, wird es einem lokalen Cache hinzugefügt, und der Zugriff auf Systemressourcen wird ihm verweigert. Diese Art von Formularen erbt die Berechtigungen von der Domäne, in der die Formulare geöffnet werden. 
   
@@ -27,10 +27,10 @@ Sie können ein Formular jedoch so ändern, dass es stattdessen auf einem URN (U
 
 Voll vertrauenswürdige Formulare verfügen über umfassendere Berechtigungen als Formulare mit eingeschränkter Sicherheitsstufe. Sie können beispielsweise Programmiercode enthalten, in dem über externe Objekte auf Systemressourcen zugegriffen wird. Sie können Softwarekomponenten oder Microsoft ActiveX-Steuerelemente verwenden, die nicht als sicher für die Verwendung von Skript gekennzeichnet sind, und sie können in .NET-Assemblys bereitgestellte benutzerdefinierte Geschäftslogik verwenden.
   
-Darüber hinaus werden einige Member des InfoPath-Objektmodells auf Sicherheitsstufe 3 festgelegt, was bedeutet, dass sie nur in einem voll vertrauenswürdigen Formular verwendet werden können. Beispielsweise verwenden, um das Microsoft Office- **CommandBars** -Objekt zuzugreifen, Sie die [CommandBars](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.CommandBars.aspx) -Eigenschaft des InfoPath- [Fenster](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) -Klasse um einen Verweis auf dieses festzulegen. Da diese Eigenschaft auf Sicherheitsstufe 3 festgelegt ist, kann nicht sie in einem Formular verwendet werden, das nicht vollständig vertrauenswürdig ist. 
+Darüber hinaus ist für einige Member des InfoPath-Objektmodells die Sicherheitsstufe 3 festgelegt, sie können also nur in einem voll vertrauenswürdigen Formular verwendet werden. Um beispielsweise auf das Microsoft Office- **CommandBars** -Objekt zuzugreifen, verwenden Sie die [CommandBars](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.CommandBars.aspx) -Eigenschaft der InfoPath- [Fenster](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) Klasse, um einen Verweis darauf festzulegen. Da für diese Eigenschaft die Sicherheitsstufe 3 festgelegt ist, kann die Eigenschaft nur in einem voll vertrauenswürdigen Formular verwendet werden. 
   
 > [!NOTE]
-> Verwenden die [CommandBars](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.CommandBars.aspx) -Eigenschaft des [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) -Klasse oder eine beliebige andere Objektmodellelement, die Sicherheitsstufe 3 hat, führt in einem Formular, das nicht vollständig vertrauenswürdig ist ein Fehler "Berechtigung verweigert". 
+> Wenn Sie [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.CommandBars.aspx) die CommandBars-Eigenschaft der [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) -Klasse oder ein anderes Objektmodellelement mit der Sicherheitsstufe 3 in einem Formular verwenden, das nicht vollständig vertrauenswürdig ist, wird der Fehler "Berechtigung verweigert" verursacht. 
   
 ## <a name="what-makes-a-form-fully-trusted"></a>Wodurch wird ein Formular voll vertrauenswürdig?
 
@@ -58,7 +58,7 @@ Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die fo
     
 4. Geben Sie den Ordner an, in dem die Quelldateien des Formulars gespeichert werden sollen, klicken Sie auf **OK**, und beenden Sie dann den InfoPath-Designer.
     
-5. Öffnen Sie in den Ordner, in dem Sie die Dateien extrahiert haben, die Formulardefinitionsdatei (XSF)-Datei mit dem Namen `manifest.xsf` standardmäßig in einem Texteditor wie beispielsweise Microsoft Notepad. 
+5. Öffnen Sie in dem Ordner, in den Sie die Formulardateien extrahiert haben, die Formulardefinitionsdatei (XSF `manifest.xsf` ), die standardmäßig in einem Text-Editor wie Microsoft Notepad benannt ist. 
     
 6. Fügen Sie dem **xDocumentClass**-Element in der XSF-Datei die folgenden Attribute hinzu: 
    
@@ -66,11 +66,11 @@ Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die fo
    `name="urn:MyForm:MyCompany`
 
    > [!NOTE]
-   > Die Werte, die für den URN verwendet werden können beliebigen Typs String-Wert sein, solange dieser Wert eindeutig ist. Es muss mindestens zwei Werte nach der `urn:` Präfix und diese Werte durch einen Doppelpunkt getrennt werden müssen. Darüber hinaus sollten der URN 255 Zeichen nicht überschreiten. 
+   > Für den URN können beliebige Zeichenfolgenwerte verwendet werden, der gesamte Wert muss jedoch eindeutig sein. Es müssen mindestens zwei Werte nach dem `urn:` Präfix vorhanden sein, und diese Werte müssen durch einen Doppelpunkt getrennt werden. Zudem sollte der URN maximal 255 Zeichen lang sein. 
   
-7. Speichern und schließen Sie die XSF-Datei, und öffnen Sie die XML-Vorlagendatei (XML) mit dem Namen `Template.xml` standardmäßig in einem Text-Editor wie Editor. 
+7. Speichern und schließen Sie die XSF-Datei, und öffnen Sie dann die XML-Vorlagendatei `Template.xml` (XML) standardmäßig in einem Text-Editor wie Editor. 
     
-8. Entfernen Sie das **Href** -Attribut aus der `mso-infoPathSolution` verarbeitungsanweisung, und Ersetzen Sie es durch dasselbe **Name** -Attribut, das Sie in Schritt 6 für die XSF-Datei verwendet. 
+8. Entfernen Sie das Attribut **href** aus `mso-infoPathSolution` der Verarbeitungsanweisung, und ersetzen Sie es durch das gleiche **Name** -Attribut, das Sie in Schritt 6 für die XSF-Datei verwendet haben. 
     
    > [!NOTE]
    > Die URN-Werte, die für das **name**-Attribut verwendet werden, müssen in der XSF-Datei und in der XML-Vorlagendatei übereinstimmen. 
@@ -105,7 +105,7 @@ Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die fo
     ```
 
 > [!NOTE] 
-> Obwohl in diesem Beispiel eine einfache Skriptdatei verwendet wird, können Sie auch robustere Installationsverfahren, wie Microsoft Windows Installer-Dateien (MSI-Dateien), verwenden. Sie müssen dabei in jedem Fall die RegisterSolution-Methode verwenden, um das voll vertrauenswürdige Formular ordnungsgemäß auf dem Zielcomputer zu installieren. Zum Zugriff auf die RegisterSolution-Methode des InfoPath-Objekts Application von Visual Basic oder Visual Studio aus legen Sie einen Verweis auf die Microsoft InfoPath 3.0-Typbibliothek fest. Diese wird in der Datei IPEDITOR.dll im Ordner C:\Programme\Microsoft Office\Office14 bereitgestellt. 
+> In diesem Beispiel wird zwar eine einfache Skriptdatei verwendet, Sie können aber auch einen robusteren Installationsmechanismus wie Microsoft Windows Installer-Dateien (MSI) verwenden. Stellen Sie jedoch sicher, dass Sie die **RegisterSolution** -Methode verwenden, um das voll vertrauenswürdige Formular auf dem Zielcomputer ordnungsgemäß zu installieren. Wenn Sie auf die **RegisterSolution** -Methode des InfoPath-Objekts **Application** von Visual Basic oder Visual Studio zugreifen möchten, legen Sie einen Verweis auf die Microsoft InfoPath 3,0-Typbibliothek fest, die von ipeditor. dll bereitgestellt wird, die in der C:\Program Ordner "Files\Microsoft Office\Office14". 
   
 Wenn ein voll vertrauenswürdiges Formular entfernt werden muss, können Sie die **UnregisterSolution**-Methode des **Application**-Objekts verwenden, wie in den folgenden JScript- und VBScript-Beispielen gezeigt wird. 
     
@@ -131,9 +131,9 @@ Wenn ein voll vertrauenswürdiges Formular entfernt werden muss, können Sie die
 
 ### <a name="digitally-signing-a-form-template-to-create-a-fully-trusted-form"></a>Digitales Signieren einer Formularvorlage zum Erstellen eines voll vertrauenswürdigen Formulars
 
-Digitales Signieren einer Formularvorlage ermöglicht Ihnen die Bereitstellung einer voll vertrauenswürdigen Formularvorlage per e-Mail oder auf einem Webserver, wie beispielsweise einen Server mit Microsoft SharePoint Foundation. Verwenden Sie die Schritte in den folgenden drei Verfahren, um Stellen Sie ein Formular voll vertrauenswürdig als voll vertrauenswürdig für das Formular digital signieren und anschließend veröffentlicht wird.
+Wenn Sie eine Formularvorlage digital signieren, können Sie eine voll vertrauenswürdige Formularvorlage per e-Mail oder auf einem Webserver bereitstellen, beispielsweise einem Server, auf dem Microsoft SharePoint Foundation läuft. Verwenden Sie die Schritte in den folgenden drei Verfahren, um ein Formular voll vertrauenswürdig zu machen: Geben Sie die volle Vertrauenswürdigkeit für das Formular an, signieren Sie es digital, und veröffentlichen Sie es dann.
   
-#### <a name="to-digitally-sign-a-form-template"></a>So können Sie eine Formularvorlage digital signieren
+#### <a name="to-digitally-sign-a-form-template"></a>So signieren Sie eine Formularvorlage digital
 
 1. Öffnen Sie das Formular im InfoPath-Designer, klicken Sie auf die Registerkarte **Datei**, und klicken Sie dann auf der Registerkarte **Info** auf **Formularoptionen**. 
     
@@ -169,7 +169,7 @@ Digitales Signieren einer Formularvorlage ermöglicht Ihnen die Bereitstellung e
 Ein voll vertrauenswürdiges Formular wird ähnlich verwendet wie ein Standardformular. Der wesentliche Unterschied besteht darin, dass das Formular auf beschränkte Ressourcen zugreifen kann und keine Warnungen mehr angezeigt werden.
   
 > [!NOTE]
-> Um InfoPath verwenden ein voll vertrauenswürdiges Formulars zu aktivieren, müssen Benutzer sicherstellen, dass das Kontrollkästchen **Zulassen voll vertrauenswürdige Formulare auf meinem Computer ausführen** der Kategorie **Vertrauenswürdige Herausgeber** im Dialogfeld **Sicherheitscenter** ausgewählt ist. Um das Dialogfeld **Trust Center** zu öffnen, klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Optionen** (unter der Registerkarte **InfoPath** ), klicken Sie auf **Sicherheitscenter**, und klicken Sie dann auf **Einstellungen für das Sicherheitscenter**. 
+> Damit ein voll vertrauenswürdiges Formular in InfoPath verwendet werden kann, müssen Benutzer sicherstellen, dass in der Kategorie **Vertrauenswürdige Herausgeber** des Dialogfelds **Sicherheitscenter** das Kontrollkästchen **Ausführung vollständig vertrauenswürdiger Formulare auf diesem Computer zulassen** aktiviert ist. Klicken Sie zum Öffnen des Dialogfelds **Vertrauensstellungscenter** auf die Registerkarte **Datei** , klicken Sie auf **Optionen** (unter der Registerkarte **InfoPath** ), klicken Sie auf **Vertrauensstellungs**Center und dann auf Einstellungen für das Trust **Center**. 
   
 Ein voll vertrauenswürdiges Formular kann in InfoPath im Dialogfeld **Ein Formular ausfüllen** geöffnet werden. 
   
@@ -184,7 +184,7 @@ Wenn Sie jedoch Änderungen an den in der XSN-Datei enthaltenen Formulardateien 
 > [!NOTE]
 > Die beste Methode ist es, die Formularvorlage im InfoPath-Designer erneut im XSN-Format zu speichern und dann mit den hier beschriebenen Schritten ein voll vertrauenswürdiges Formular zu erstellen. 
   
-## <a name="conclusion"></a>Zusammenfassung
+## <a name="conclusion"></a>Schlussbemerkung
 
 Abhängig von Ihren Unternehmensanforderungen und den Bedürfnissen der Benutzer müssen Sie unter Umständen ein Formular erstellen, das über höhere Berechtigungen verfügt als das InfoPath-Standardformular. In InfoPath können Formulare so geändert werden, dass sie Zugriff auf Systemressourcen und andere externe Ressourcen haben, die nicht als sicher für die Verwendung von Skript gekennzeichnet sind. Dies kann manuell durch Ändern der Formulardateien einer Formularvorlage und Ausführen eines Installationsskripts erfolgen oder durch digitales Signieren der Formularvorlage.
   

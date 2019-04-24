@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: cebccd2d-8215-486e-9964-7fc42412cec6
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8b1b037cf24c1bb5a0c84da3d59892ab15763f37
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2db7dba67e7b71df6921ecd97189255a0ef7823a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309548"
 ---
 # <a name="iprofadmingetprofiletable"></a>IProfAdmin::GetProfileTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Zugriff auf die Benutzerprofildienst-Tabelle eine Tabelle mit Informationen zu allen verfügbaren Profilen.
+Ermöglicht den Zugriff auf die Profiltabelle, eine Tabelle, die Informationen zu allen verfügbaren Profilen enthält.
   
 ```cpp
 HRESULT GetProfileTable(
@@ -38,35 +38,35 @@ HRESULT GetProfileTable(
 
  _ulFlags_
   
-> [in] Immer NULL.
+> in Immer NULL.
     
  _lppTable_
   
-> [out] Ein Zeiger auf einen Zeiger auf die Benutzerprofildienst-Tabelle.
+> Out Ein Zeiger auf einen Zeiger auf die Profiltabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Profiltabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IProfAdmin::GetProfileTable** -Methode ermöglicht den Zugriff auf die Benutzerprofildienst-Tabelle, die enthält eine Zeile für jedes verfügbaren Profil. Es gibt nur zwei Spalten in jeder Zeile: Anzeigename den Namen des Profils und ein Flag, das angibt, ob das Profil der Standardwert ist. 
+Die **IProfAdmin::** getprofilable-Methode ermöglicht den Zugriff auf die Profiltabelle, die eine Zeile für jedes verfügbare Profil enthält. Es gibt nur zwei Spalten in jeder Zeile: der Anzeigename des Profils und ein Flag, das angibt, ob das Profil der Standardwert ist. 
   
-Profile, die gelöscht oder, die verwendet werden, aber zum Löschen markiert wurden, sind nicht in der Profiltabelle enthalten. Die Benutzerprofildienst-Tabelle ist statisch. nachfolgende hinzufügen und Löschen von Profilen werden in der Tabelle nicht wiedergegeben. 
+Profile, die gelöscht wurden oder verwendet werden, aber zum Löschen markiert wurden, sind nicht in der Profiltabelle enthalten. Die Profiltabelle ist statisch; nachfolgende Ergänzungen und Löschungen von Profilen werden in der Tabelle nicht wiedergegeben. 
   
-Wenn keine Profile vorhanden ist, gibt **"GetProfileTable"** eine Tabelle mit 0 (null) Zeilen zurück. 
+Wenn keine Profile vorhanden sind **** , gibt getprofilable eine Tabelle mit null Zeilen zurück. 
   
-Weitere Informationen zu der Tabelle "Profil" finden Sie unter [Profil Tabellen](profile-tables.md). 
+Weitere Informationen zur Profiltabelle finden Sie unter [profile](profile-tables.md)Tables. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnShowProfiles  <br/> |MFCMAPI (engl.) verwendet die **IProfAdmin::GetProfileTable** -Methode zum Abrufen der Benutzerprofildienst-Tabelle in ein neues Dialogfeld angezeigt.  <br/> |
+|MainDlg. cpp  <br/> |CMainDlg:: OnShowProfiles  <br/> |MFCMAPI verwendet die **IProfAdmin::** getprofilable-Methode, um die Profiltabelle abzurufen, die in einem neuen Dialogfeld angezeigt werden soll.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

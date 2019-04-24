@@ -7,46 +7,46 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 282b2377-45ba-4f0c-a7d9-830fa3505c93
-description: Outlook Social Connector (OSC) die ISocialProvider::GetCapabilities-Methode aufgerufen, um die Funktionen des OSC-Anbieter für soziale Netzwerke bestimmen.
-ms.openlocfilehash: bf6534b72af7db92e02bed74f2028a086b26cbcf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Der Outlook Connector für soziale Netzwerke (OSC) Ruft die ISocialProvider:: getCapabilities-Methode auf, um die Funktionen des OSC-Anbieters für ein soziales Netzwerk zu bestimmen.'
+ms.openlocfilehash: 420f19a8d7632f2ab9b093eb929ffe879f8a2fc2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280990"
 ---
 # <a name="forms-based-authentication"></a>Formularbasierte Authentifizierung
 
-Outlook Social Connector (OSC) die [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) -Methode aufgerufen, um die Funktionen des OSC-Anbieter für soziale Netzwerke bestimmen. Die OSC verwendet die zurückgegebenen Funktionen um zu bestimmen, wie einen Office-Benutzer unterstützen, die mit diesem sozialen Netzwerk angemeldet ist. 
+Der Outlook Connector für soziale Netzwerke (OSC) Ruft die [ISocialProvider:: getCapabilities](isocialprovider-getcapabilities.md) -Methode auf, um die Funktionen des osc-Anbieters für ein soziales Netzwerk zu bestimmen. OSC verwendet die zurückgegebenen Funktionen, um zu bestimmen, wie ein Office-Benutzer unterstützt wird, der sich an diesem sozialen Netzwerk anmeldet. 
 
-Wenn das **UseLogonWebAuth** -Element in der zurückgegebenen **Funktionen** XML gibt an, dass der OSC-Anbieter formularbasierte Authentifizierung unterstützt, kann die OSC aufrufende Folgendes zu einem Benutzer ermöglichen, melden Sie sich mit dem sozialen Netzwerk vornehmen: 
+Wenn das **useLogonWebAuth** -Element im zurückgegebenen **Capabilities** -XML-Code angibt, dass der osc-Anbieter die formularbasierte Authentifizierung unterstützt, kann osc die folgende Aufrufsequenz ausführen, um einem Benutzer die Anmeldung an diesem sozialen Netzwerk zu ermöglichen: 
   
-1. [ISocialProvider::Load](isocialprovider-load.md) &ndash; Der OSC lädt den Anbieter. 
+1. [ISocialProvider:: Laden](isocialprovider-load.md) &ndash; Der osc lädt den Anbieter. 
     
-2. [ISocialProvider::Version](isocialprovider-version.md) &ndash; Der OSC Ruft eine Zeichenfolge, die die Versionsnummer des Anbieters für diese für soziale Netzwerke darstellt. 
+2. [ISocialProvider:: Version](isocialprovider-version.md) &ndash; Osc Ruft eine Zeichenfolge ab, die die Versionsnummer des Anbieters für dieses soziale Netzwerk darstellt. 
     
-3. [ISocialProvider::SocialNetworkName](isocialprovider-socialnetworkname.md) &ndash; Der OSC Ruft eine Zeichenfolge, die den Namen für soziale Netzwerke darstellt. 
+3. [ISocialProvider:: SocialNetworkName](isocialprovider-socialnetworkname.md) &ndash; Osc Ruft eine Zeichenfolge ab, die den Namen des sozialen Netzwerks darstellt. 
     
-4. [ISocialProvider::SocialNetworkGuid](isocialprovider-socialnetworkguid.md) &ndash; Der OSC dient zum Abrufen einer unveränderlichen GUID, die für soziale Netzwerke darstellt. 
+4. [ISocialProvider:: SocialNetworkGuid](isocialprovider-socialnetworkguid.md) &ndash; Osc Ruft eine unveränderliche GUID ab, die das soziale Netzwerk darstellt. 
     
-5. [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) &ndash; Der OSC Ruft eine Zeichenfolge, die die Funktionen des Providers darstellt, die die Schemadefinition für das **Capabilities** -Element entspricht. 
+5. [ISocialProvider:: getCapabilities](isocialprovider-getcapabilities.md) &ndash; Osc Ruft eine Zeichenfolge ab, die die Funktionen des Anbieters darstellt und die der Schema Definition für das **Capabilities** -Element entspricht. 
     
-6. [ISocialProvider::SocialNetworkIcon](isocialprovider-socialnetworkicon.md) &ndash; Der OSC Ruft ein Bytearray, das Symbol für die Website für soziale Netzwerke darstellt. 
+6. [ISocialProvider:: SocialNetworkIcon](isocialprovider-socialnetworkicon.md) &ndash; Osc Ruft ein Bytearray ab, das das Symbol für die soziale Netzwerk Website darstellt. 
     
-7. [ISocialProvider::GetSession](isocialprovider-getsession.md) &ndash; Der OSC Ruft eine [ISocialSession](isocialsessioniunknown.md) -Schnittstelle. 
+7. [ISocialProvider:: getSession](isocialprovider-getsession.md) &ndash; Osc Ruft eine [ISocialSession](isocialsessioniunknown.md) -Schnittstelle ab. 
     
-8. [ISocialSession::LogonWeb](isocialsession-logonweb.md) &ndash; Der OSC initialisiert Anmelden bei der Website für soziale Netzwerke durch die formularbasierte Authentifizierung. Für diesen ersten Anmeldung Aufruf übergibt die OSC **null** für den Parameter _ConnectIn_ . 
+8. [ISocialSession:: LogonWeb](isocialsession-logonweb.md) &ndash; Osc initialisiert die Anmeldung beim Netzwerkstandort für soziale Netzwerke durch die formularbasierte Authentifizierung. Bei diesem anfänglichen Anmelde Aufruf übergibt der OSC **null** für den __ Parameter connectin. 
     
-9. [ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md) &ndash; Der OSC Ruft die URL zu einem Formular browserbasierte während der Webauthentifizierung für den Benutzer anzuzeigen. 
+9. [ISocialSession:: GetLogonUrl](isocialsession-getlogonurl.md) &ndash; Osc Ruft die URL ab, die dem Benutzer während der Webauthentifizierung ein browserbasiertes Formular angezeigt wird. 
     
-10. [ISocialSession::LogonWeb](isocialsession-logonweb.md) &ndash; Der OSC beendet die Anmeldung bei der Website für soziale Netzwerke mithilfe der formularbasierten Authentifizierung. Die OSC ruft diese Methode ein zweites Mal die URL des Formulars Anmeldung an dem Anbieter in der _ConnectIn_ -Parameter übergeben. 
+10. [ISocialSession:: LogonWeb](isocialsession-logonweb.md) &ndash; Osc vervollständigt die Anmeldung an der Website für soziale Netzwerke mithilfe der formularbasierten Authentifizierung. OSC ruft diese Methode ein zweites Mal auf und übergibt die URL des Anmeldeformulars an den Anbieter im Parameter _connectin_ . 
     
-11. [ISocialSession::GetLoggedOnUser](isocialsession-getloggedonuser.md) &ndash; Der OSC Ruft eine [ISocialProfile](isocialprovideriunknown.md) -Schnittstelle, die den angemeldeten Benutzer darstellt. 
+11. [ISocialSession:: GetLoggedOnUser](isocialsession-getloggedonuser.md) &ndash; Osc Ruft eine [ISocialProfile](isocialprovideriunknown.md) -Schnittstelle ab, die den angemeldeten Benutzer darstellt. 
     
-12. [ISocialSession::GetNetworkIdentifier](isocialsession-getnetworkidentifier.md) &ndash; Der OSC Ruft eine Zeichenfolge, die einen eindeutigen Bezeichner für eine Website für soziale Netzwerke darstellt. Die Netzwerk-ID kann den Namen des Netzwerks entsprechen. 
+12. [ISocialSession:: GetNetworkIdentifier](isocialsession-getnetworkidentifier.md) &ndash; Osc Ruft eine Zeichenfolge ab, die einen eindeutigen Bezeichner für eine soziale Netzwerk Website darstellt. Die Netzwerk-ID kann dem Netzwerknamen entsprechen. 
     
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Code für Funktionen](xml-for-capabilities.md)
+- [XML für Funktionen](xml-for-capabilities.md)
 - [OSC - Typische Aufrufsequenzen](osc-typical-calling-sequences.md)
 

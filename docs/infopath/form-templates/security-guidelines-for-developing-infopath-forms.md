@@ -5,21 +5,21 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4690028e-20ac-297b-4651-801f5159c747
-description: Bevor Sie dieses Thema lesen, finden Sie unter Allgemeine Kenntnisse über das Sicherheitsmodell für InfoPath zusätzliche Sicherheitskonzepte für InfoPath-Formular.
-ms.openlocfilehash: 3a72421882e655f34abd1eda30fe7e4fb42c45c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Lesen Sie vor der Lektüre dieses Themas Weitere Informationen zu Sicherheitskonzepten in InfoPath-Formularen, um sich mit dem InfoPath-Sicherheitsmodell vertraut zu machen.
+ms.openlocfilehash: 5108d8b1967b72ac4805f892bcf3bbae3aecccbe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299923"
 ---
 # <a name="security-guidelines-for-developing-infopath-forms"></a>Sicherheitsrichtlinien für die Entwicklung von InfoPath-Formularen
 
-Bevor Sie dieses Thema lesen, finden Sie unter Allgemeine Kenntnisse über das Sicherheitsmodell für InfoPath [Zusätzliche Sicherheitskonzepte für InfoPath-Formular](additional-infopath-form-security-concepts.md) . 
+Lesen Sie vor der Lektüre dieses Themas Weitere Informationen zu [Sicherheitskonzepten in InfoPath-Formularen](additional-infopath-form-security-concepts.md) , um sich mit dem InfoPath-Sicherheitsmodell vertraut zu machen. 
   
 ## <a name="security-issues-for-users-of-infopath-forms"></a>Sicherheitsaspekte für Benutzer von InfoPath-Formularen
 
-Die wichtigsten Sicherheitsbedenken für Benutzer von Microsoft InfoPath ähneln jenen für Webanwendungen, die in Internet Explorer ausgeführt. Beachten Sie jedoch, dass die Sicherheitsebene eines Formulars nur davon, wo sich die Formularvorlage befindet abhängt und nicht auf, an dem Benutzer speichern, oder öffnen Sie die resultierende XML-Dokumente, die sie erstellen. Benutzer können den Speicherort der Formularvorlage bestimmen, mit der Sie arbeiten Sie anhand der Statusleiste in InfoPath.
+Die wichtigsten Sicherheitsprobleme für Benutzer von Microsoft InfoPath ähneln denen für Webanwendungen, die in Internet Explorer laufen. Sie sollten jedoch beachten, dass die Sicherheitsstufe für eine Formular nur vom Speicherort der Formularvorlage abhängt, und nicht davon, wo Benutzer die resultierenden erstellten XML-Dokumente speichern oder öffnen. Die Benutzer können den Speicherort der verwendeten Formularvorlage mithilfe der Statusleiste in InfoPath bestimmen.
   
 InfoPath schützt die Benutzer vor den folgenden potenziellen Bedrohungen durch von böswilligen Benutzern erstellte Formularvorlagen:
   
@@ -31,21 +31,21 @@ InfoPath schützt die Benutzer vor den folgenden potenziellen Bedrohungen durch 
     
 ## <a name="disclosure-of-sensitive-information"></a>Weitergabe vertraulicher Informationen
 
-Das häufigste Szenario für die Offenlegung von vertraulichen Informationen kann auftreten, wenn ein Autor böswilligen Formulars ein Formular erstellt, die Anmeldeinformationen des aktuellen Benutzers verwendet, um eine Datenquelle in einer anderen als der Domäne zugreifen, auf dem das Formular selbst bereitgestellt wurde. Beispielsweise konnte ein böswilliger Benutzer ein Formular durch e-Mail-Nachricht oder mithilfe einer URL zu einem Formular auf einem privaten Freigabe oder Webserver senden. Das Formular konnte Skript enthalten, die eine Anforderung zum Zugriff von Daten mithilfe der Anmeldeinformationen des aktuellen Benutzers zum Abrufen von Daten aus einer Datenquelle in einer anderen Domäne, dass der böswillige Benutzer zugreifen kann, wie etwa eine Datenbank zu Lohn und Gehalt oder andere vertrauliche andernfalls nicht vorhanden wäre durchführt Informationen. Diese Klasse Sicherheitsrisiko wird als domänenübergreifender Datenzugriff bezeichnet.
+Das gängigste Szenario für die Weitergabe vertraulicher Informationen ist denkbar, wenn ein Formularautor mit böswilligen Absichten ein Formular erstellt, das mithilfe der Sicherheitsanmeldeinformationen des aktuellen Benutzers auf eine Datenquelle in einer anderen als der Domäne zugreift, in der das Formular selbst bereitgestellt wurde. Ein böswilliger Benutzer könnte beispielsweise ein Formular per e-Mail-Nachricht oder mithilfe einer URL zu einem Formular auf einer privaten Freigabe oder einem Webserver senden. Das Formular könnte ein Skript enthalten, das mithilfe der Anmeldeinformationen des aktuellen Benutzers eine Datenzugriffsanforderung ausführt, um Daten von einer Datenquelle in einer anderen Domäne abzurufen, auf die der böswillige Benutzer andernfalls keinen Zugriff hätte (z. B. eine Datenbank mit Lohnbuchhaltungsinformationen oder anderen vertraulichen Informationen). Diese Arte von Sicherheitsrisiko wird als domänenübergreifender Datenzugriff bezeichnet.
   
-Das Sicherheitsmodell für Internet Explorer, dem InfoPath basiert, bietet die eine Einstellung **auf Datenquellen über Domänengrenzen hinweg zugreifen** , die standardmäßig deaktiviert domänenübergreifenden Zugriff für InfoPath-Formulare, die sich im **Internet** und **eingeschränkt befinden Websites** Sicherheitszonen. Diese Einstellung auch fordert den Benutzer zulassen oder Verweigern des domänenübergreifenden Zugriffs für InfoPath-Formulare, die sich in der **lokalen** Intranetzone befinden und ermöglicht domänenübergreifenden Zugriff für InfoPath-Formulare, die sich in der **vertrauenswürdigen Sites** oder **lokalen befinden Computer** Zonen. 
+Das Sicherheitsmodell von Internet Explorer, auf dem InfoPath basiert, enthält die Einstellung **Auf Datenquellen über Domänengrenzen hinweg zugreifen**. Standardmäßig wird mit dieser Einstellung der domänenübergreifende Zugriff für InfoPath-Formulare in den Sicherheitszonen **Internet** und **Eingeschränkte Sites** deaktiviert. Der Benutzer wird außerdem gefragt, ob der domänenübergreifende Zugriff für InfoPath-Formulare in der Sicherheitszone **Lokales Intranet** zugelassen werden soll, und der domänenübergreifende Zugriff für InfoPath-Formulare in den Zonen **Vertrauenswürdige Sites** oder **Lokaler Computer** wird aktiviert. 
   
 ## <a name="malicious-use-of-activex-controls"></a>Verwendung von ActiveX-Steuerelementen mit böswilligen Absichten
 
 Das gängigste Szenario für die Verwendung von ActiveX-Steuerelementen mit böswilligen Absichten ist denkbar, wenn ein böswilliger Formularautor Code für ein ActiveX-Steuerelement schreibt, der auf das Dateisystem zugreift, um persönliche Dateien und Kennwortlisten abzurufen, Dateien zu löschen oder das System des Benutzers zu deaktivieren. Ein InfoPath-Formular kann Code für ActiveX-Steuerelemente nur in Geschäftslogik oder in einem Skript in einem Aufgabenbereich ausführen. In InfoPath dürfen mit einem Skript in InfoPath-Ansichten keine ActiveX-Steuerelemente ausgeführt werden.
   
-Das Sicherheitsmodell für Internet Explorer, dem InfoPath basiert bietet die Einstellung **als nicht sicher markiert ActiveX-Steuerelemente initialisieren und Ausführen**. Diese Einstellung wird standardmäßig deaktiviert, Initialisierung und scripting von ActiveX-Steuerelemente als unsicher für InfoPath-Formulare, die sich in den Sicherheitszonen **Lokales Intranet**, **Internet**und **Eingeschränkte Sites** befinden. Es fordert den Benutzer zulassen oder verweigern scripting von ActiveX-Steuerelemente als unsicher für InfoPath-Formulare, die sich in die **Vertrauenswürdige Sites** oder dem **Lokalen Computer** Sicherheitszonen befinden, und dadurch können ActiveX-Steuerelemente als unsicher für Skripts InfoPath-Formulare, die vollständig vertrauenswürdig sind. 
+Das Sicherheitsmodell von Internet Explorer, auf dem Microsoft InfoPath basiert, enthält die Einstellung **ActiveX-Steuerelemente initialisieren und ausführen, die nicht sicher sind**. Mit dieser Einstellung wird standardmäßig das Initialisieren und Ausführen von ActiveX-Steuerelementen, die als nicht sicher markiert sind, für InfoPath-Formulare in den Sicherheitszonen **Lokales Intranet**, **Internet** und **Eingeschränkte Sites** deaktiviert. Der Benutzer wird gefragt, ob das Ausführen von ActiveX-Steuerelementen, die als nicht sicher markiert sind, für InfoPath-Formulare in den Sicherheitszonen **Vertrauenswürdige Sites** oder **Lokaler Computer** zulässig sein soll. Außerdem wird das Ausführen von ActiveX-Steuerelementen, die als nicht sicher markiert sind, für voll vertrauenswürdige InfoPath-Formulare aktiviert. 
   
 Darüber hinaus können Sie im Designmodus kein ActiveX-Steuerelement, das zum Initialisieren und Ausführen als nicht sicher markiert ist, im Aufgabenbereich Steuerelemente hinzufügen, unabhängig von der aktiven Sicherheitszone oder der Vertrauensebene des Formulars.
   
 ## <a name="malicious-use-of-infopath-object-model-code"></a>Verwendung von InfoPath-Objektmodellcode mit böswilligen Absichten
 
-In ähnlicher Weise können InfoPath-Methoden und Eigenschaften, die aus Code aufgerufen verschiedene Risiko darstellen. Beispielsweise kann die [SaveAs(String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.SaveAs.aspx) -Methode der [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) -Klasse zum Schreiben von Daten an einer beliebigen Stelle im Dateisystem verwendet werden. Zum Schutz gegen die Verwendung dieser Objektmodellmitglieder implementiert das InfoPath-Objektmodell drei Sicherheitsstufen, die bestimmen, wie und wo ein bestimmtes Objektmodellelement verwendet werden kann. Weitere Informationen zu diesem Feature finden Sie unter [Informationen zum Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md).
+Auf ähnliche Weise können in Code aufgerufene InfoPath-Methoden und -Eigenschaften unterschiedliche Risikostufen darstellen. Beispielsweise kann die [SaveAs(String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.SaveAs.aspx)-Methode der [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx)-Klasse zum Schreiben von Daten an einer beliebigen Stelle im Dateisystem verwendet werden. Für den Schutz vor der Verwendung dieser Objektmodellmember mit böswilligen Absichten implementiert das InfoPath-Objektmodell drei Sicherheitsstufen, die bestimmen, wie und wo ein bestimmtes Objektmodellmember verwendet werden kann. Weitere Informationen zu diesem Feature finden Sie unter [Informationen zum Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md).
   
 ## <a name="best-practices-for-developers-of-infopath-forms"></a>Bewährte Methoden für Entwickler von InfoPath-Formularen
 
@@ -57,13 +57,13 @@ Entwickler, die InfoPath-Formulare erstellen, sollten mit der Implementierung de
     
 - Wie die CAB-Dateien von ActiveX-Steuerelementen signiert werden.
     
-- Wie als Anlage einer e-Mail-Nachricht gesendete Formularvorlagen signiert werden.
+- VorGehensWeise Signieren von Formularvorlagen, die als Anlage an eine e-Mail-Nachricht gesendet werden.
     
 ## <a name="best-practices-for-xml-data-associated-with-a-form"></a>Bewährte Methoden für einem Formular zugeordnete XML-Daten
 
-Beachten Sie, dass InfoPath-Formularen können XML-Daten aus einer Datenquelle verwendet werden, einschließlich derjenigen, die der Benutzer nicht notwendigerweise vertraut oder eines Steuerelements. Beispielsweise kann InfoPath XML-Daten über einen Link zu einer Webseite oder aus XML-Anlage an den Benutzer in e-Mail-Nachricht gesendet erhalten. Um diesen Risiken zu verringern, beachten Sie sollten die folgenden bewährten Methoden:
+Beachten Sie, dass InfoPath-Formulare mit XML-Daten aus einer beliebigen Quelle aufgefüllt werden können, einschließlich Quellen, denen der Benutzer nicht notwendigerweise vertraut oder die er nicht notwendigerweise kontrolliert. InfoPath kann beispielsweise XML-Daten aus einem Link zu einer Webseite oder aus einer XML-Anlage abrufen, die an den Benutzer in einer e-Mail-Nachricht gesendet wird. Beachten Sie die folgenden bewährten Methoden, um diese Risiken zu reduzieren:
   
-- Übergeben Sie nicht nicht vertrauenswürdige Daten, die an **die Eval()-Funktion Microsoft JScript** oder der **InnerHTML** -Eigenschaft des Aufgabenbereichs aus der XML-Code gelesen werden. Beide Aufrufe können verwendet werden, bösartige Skript ausgeführt. Verwenden Sie die **InnerText** -Eigenschaft in einem Aufgabenbereich als Alternative. Beachten Sie, dass das Skript nicht InfoPath-Ansichten ausgeführt werden können. 
+- Übergeben Sie keine nicht vertrauenswürdigen Daten, die aus der XML-Datei gelesen wird, an die **eval()**-Funktion von Microsoft JScript oder an die **innerHTML**-Eigenschaft des Aufgabenbereichs. Mithilfe beider Aufrufe könnte ein böswilliges Skript ausgeführt werden. Verwenden Sie in einem Aufgabenbereich alternativ die **innerText**-Eigenschaft. Beachten Sie, dass in InfoPath-Ansichten kein Skript ausgeführt werden kann. 
     
 - Aus einer XML-Datei an eine Datenbank gesendete Daten können Sicherheitsrisiken für die Datenbank darstellen, falls die Daten vor dem Senden nicht überprüft werden.
     
@@ -71,11 +71,11 @@ Daten, die vor dem Senden an eine Datenquelle nicht überprüft werden, können 
   
 ## <a name="best-practices-to-avoid-presenting-confusing-error-messages"></a>Bewährte Methoden zur Vermeidung der Anzeige verwirrender Fehlermeldungen
 
- **Bereitstellen von Formularen und deren Datenquellen in derselben Domäne**
+ **Stellen Sie Formulare und deren Datenquellen in derselben Domäne bereit**
   
-Das Sicherheitsrisiko domänenübergreifenden Datenzugriff wird von den meisten Benutzern nicht klar verstanden. Bereitstellen von Formularen, die ständig warnen und Benutzer zu ermöglichen, dass domänenübergreifenden Datenzugriff Schulung viele Benutzer alle domänenübergreifenden zugriffsanforderungen genehmigen oder die ursprüngliche Domäne ihrer Liste **vertrauenswürdiger Websites** ohne Nachrichtenempfang hinzufügen, hat auffordern die Sicherheitsrisiken ernsthaft. Um dies zu vermeiden, Bereitstellen von InfoPath-Formularen auf demselben Server wie sämtliche, den Datenquellen, auf dem sie abhängig sind. 
+Die meisten Benutzer verstehen das Sicherheitsrisiko des domänenübergreifenden Datenzugriffs nicht richtig. Die Bereitstellung von Formularen, mit denen die Benutzer ständig vor dem Zulassen des domänenübergreifenden Datenzugriffs gewarnt und aufgefordert werden, hat zur Folge, dass viele Benutzer alle domänenübergreifenden Zugriffsanforderungen genehmigen oder dass sie die Ausgangsdomäne der Liste **Vertrauenswürdige Sites** hinzufügen, ohne die damit verbundenen Sicherheitsrisiken ernst zu nehmen. Um diese Situation zu vermeiden, sollten Sie InfoPath-Formulare auf demselben Server wie die Datenquellen, von denen sie abhängen, bereitstellen. 
   
- **Vermeiden der Verwendung von ActiveX-Steuerelemente, die nicht gekennzeichnet sind als sicher für Skripting**
+ **Vermeiden Sie die Verwendung von ActiveX-Steuerelementen, die als nicht sicher markiert sind**
   
 Durch ActiveX-Steuerelemente können potenziell Eigenschaften und Methoden verfügbar gemacht werden, mit denen man sich den Zugang zum System eines Benutzers verschaffen kann, wie z. B. Methoden für den Zugriff auf das Dateisystem eines Computers. Sie sollten nach Möglichkeit nur ActiveX-Steuerelemente verwenden, die als sicher markiert sind. Hierbei handelt es sich um getestete Steuerelemente, die garantieren, dass das System eines Benutzers nicht beschädigt oder die Sicherheit des Benutzers nicht gefährdet wird, unabhängig davon, wie die Methoden und Eigenschaften des Steuerelements durch das Skript einer Webseite manipuliert werden. Beim Erstellen von ActiveX-Steuerelementen für die Verwendung mit InfoPath sollten Sie entsprechend den Code überprüfen und das ActiveX-Steuerelement gründlich testen, bevor Sie es als für die Ausführung sicher markieren.
   
@@ -83,19 +83,19 @@ InfoPath verwendet ein Sicherheitsmodell, das auf den Sicherheitszonen von Inter
   
 ## <a name="best-practices-for-managing-the-cab-files-of-activex-controls"></a>Bewährte Methoden für die Verwaltung der CAB-Dateien von ActiveX-Steuerelementen
 
-ActiveX-Steuerelemente können in Formularvorlagen für InfoPath-Editor für gehostet werden. CAB-Dateien für diese Steuerelemente, die nicht bereits auf dem Computer des Benutzers vorhanden sind, müssen in der Formularvorlagendatei (XSN) enthalten sein. CAB-Dateien in Formularvorlagen müssen digital signiert werden, in der Reihenfolge für die CAB-Datei installiert werden soll. InfoPath wird eine CAB-Datei, die nicht, unabhängig von der Vertrauensstellung oder der Sicherheitszone angemeldet ist, nicht installiert.
+ActiveX-Steuerelemente können in Formularvorlagen gehostet werden, die für den InfoPath-Editor entworfen wurden. CAB-Dateien für diese Steuerelemente, die noch nicht auf dem Computer des Benutzers vorhanden sind, müssen in der Formularvorlagendatei (XSN) enthalten sein. In Formularvorlagen enthaltene CAB-Dateien müssen digital signiert sein, damit die CAB-Dateien installiert werden. Eine nicht signierte CAB-Datei wird von InfoPath nicht installiert, und zwar unabhängig von der Vertrauensebene oder der Sicherheitszone.
   
 Um sicherzustellen, dass die digitale Signatur in der CAB-Datei überprüft werden kann, sollte die Datei mit einem Zertifikat signiert werden, das eine Vertrauenskette zu einem bereits vertrauenswürdigen Stammzertifikat aufweist. Andernfalls kann die Signatur nicht authentifiziert werden, die Signaturüberprüfung schlägt fehl, und die CAB-Datei wird nicht installiert.
   
-## <a name="best-practices-for-form-templates-sent-as-an-attachment-to-an-email-message"></a>Bewährte Methoden für als Anlage einer E-Mail-Nachricht gesendete Formularvorlagen
+## <a name="best-practices-for-form-templates-sent-as-an-attachment-to-an-email-message"></a>Bewährte Methoden für Formularvorlagen, die als Anlage an eine e-Mail-Nachricht gesendet werden
 
-InfoPath unterstützt das Bereitstellen von Formularvorlagen als Anlage einer e-Mail-Nachricht und das Verschieben von Formularvorlagen von einem Speicherort in einen anderen. Es ist eine gute Sicherheitsmethode zum digitalen Signieren eine Formularvorlage, die Sie beim Entwerfen und als Anlage einer e-Mail-Nachricht bereitstellen möchten. Eine digitale Signatur auf einer Formularvorlage von e-Mail-Nachricht bereitgestellt wird nicht nur die Echtheit der Vorlage sichergestellt. Es hat auch den Vorteil, dass die Formularvorlage automatisch aktualisiert werden.
+InfoPath unterstützt das Bereitstellen von Formularvorlagen als Anlage einer e-Mail-Nachricht und das Bewegen von Formularvorlagen von einem Speicherort an einen anderen. Es empfiehlt sich, eine Formularvorlage digital zu signieren, die Sie als Anlage einer e-Mail-Nachricht bereitstellen möchten. Eine digitale Signatur in einer Formularvorlage, die per e-Mail-Nachricht bereitgestellt wird, sichert nicht nur die Authentizität der Vorlage. Dies hat zusätzlich den Vorteil, dass die Formularvorlage automatisch aktualisiert werden kann.
   
 Die Formularvorlage sollte mit einem Zertifikat signiert werden, das eine Vertrauenskette zu einem bereits vertrauenswürdigen Stammzertifikat aufweist. Andernfalls schlägt die Signaturüberprüfung fehl, da die Signatur nicht authentifiziert werden kann.
   
 > [!NOTE]
 > Wenn eine signierte Formularvorlage die Domänensicherheitsstufe oder die eingeschränkte Sicherheitsstufe erfordert, wird die Signatur von InfoPath nicht überprüft. Es wird lediglich festgestellt, ob die Vorlage von InfoPath automatisch aktualisiert werden kann. 
   
-Weitere Informationen zur e-Mail-Bereitstellung finden in den [Sicherheitsstufen, Bereitstellung, per E-Mail und Remoteformularvorlagen](security-levels-email-deployment-and-remote-form-templates.md).
+Weitere Informationen zur e-Mail-Bereitstellung finden Sie unter [Sicherheitsstufen, e-Mail-Bereitstellung und Remote Formularvorlagen](security-levels-email-deployment-and-remote-form-templates.md).
   
 

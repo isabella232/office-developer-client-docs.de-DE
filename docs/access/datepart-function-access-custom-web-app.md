@@ -1,37 +1,37 @@
 ---
-title: DatePart-Funktion (Access benutzerdefinierte Web app)
+title: DatePart-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8936f0b6-f9b2-44ef-bf90-e482b64611cd
-description: Gibt einen numerischen Wert, der den angegebenen Datumsteil des angegebenen Datums darstellt.
-ms.openlocfilehash: 81aa1880e5b38c33f75018418a44ed82e5e7e8c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen numerischen Wert zurück, der den angegebenen Datumsteil des angegebenen Datums darstellt.
+ms.openlocfilehash: 31ac6423614afd61ed943bb7ba375f14696df1ea
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280769"
 ---
-# <a name="datepart-function-access-custom-web-app"></a>DatePart-Funktion (Access benutzerdefinierte Web app)
+# <a name="datepart-function-access-custom-web-app"></a>DatePart-Funktion (Access Custom Web App)
 
-Gibt einen numerischen Wert, der den angegebenen Datumsteil des angegebenen Datums darstellt.
+Gibt einen numerischen Wert zurück, der den angegebenen Datumsteil des angegebenen Datums darstellt.
   
 > [!NOTE]
-> [!HINWEIS] Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
+> Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
   
 ## <a name="syntax"></a>Syntax
 
-**DatePart** (*DatePart*, *Datum*) 
+**Datepart** (*Datepart*, *Datum*) 
   
-Die **DatePart** -Funktion enthält die folgenden Argumente. 
+Die **datepart** -Funktion enthält die folgenden Argumente. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *DatePart*  <br/> |Der Teil des *Datum* (einen Datums- oder Zeitwerte-Wert) für die eine ganze Zahl zurückgegeben werden. Finden Sie im Abschnitt "Hinweise" für die Liste der zulässigen Werte.  <br/> |
+| *DatePart*  <br/> |Der Teil des *Datums* (Datums-oder Uhrzeitwert), für den eine ganze Zahl zurückgegeben wird. Die Liste der gültigen Abkürzungen finden Sie im Abschnitt "Hinweise".  <br/> |
 | *Date*  <br/> |Ein Ausdruck, der in einen Datums-/Uhrzeitwert aufgelöst werden kann. Der  *Date*  -Argumentausdruck, Spaltenausdruck, benutzerdefinierte Variable oder Zeichenfolgenliteral.  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Bemerkungen
 
 In der folgenden Tabelle werden alle zulässigen  *DatePart*  -Argumente aufgeführt. 
   
@@ -43,7 +43,7 @@ In der folgenden Tabelle werden alle zulässigen  *DatePart*  -Argumente aufgef�
 |**dayofyear** <br/> |
 |**day** <br/> |
 |**week** <br/> |
-|**Weekday** <br/> |
+|**Wochentag** <br/> |
 |**hour** <br/> |
 |**minute** <br/> |
 |**second** <br/> |

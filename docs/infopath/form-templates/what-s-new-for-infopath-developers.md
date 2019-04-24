@@ -1,5 +1,5 @@
 ---
-title: Neuerungen für InfoPath-Entwickler
+title: Neuigkeiten für InfoPath-Entwickler
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: d0ad3111-bd41-4f35-8a34-62c17f20fc19
 description: InfoPath wurde entwickelt, um die Erstellung reichhaltiger, formularbasierter Anwendungen auf der Plattform Microsoft SharePoint Server zu vereinfachen. Microsoft InfoPath 2013 in Verbindung mit Microsoft SharePoint Server 2013 und InfoPath Forms Services bieten zahlreiche Features für Entwickler. Mit InfoPath Forms Services, verfügbar in SharePoint Server 2013, können Sie eine InfoPath-Formularvorlage auf einem SharePoint-Server bereitstellen, damit Benutzer ohne InfoPath Rich Client InfoPath-Formulare in einem Webbrowser öffnen und ausfüllen können.
 ms.openlocfilehash: 5d469dfb99290054008271867f24d947a42efeee
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303192"
 ---
 # <a name="whats-new-for-infopath-developers"></a>Neuerungen für InfoPath-Entwickler
 
@@ -25,17 +25,17 @@ Mit InfoPath 2013 erstellte Formularvorlagen unterstützen weiterhin für die Kl
 
 In den folgenden Abschnitten werden diese Features und Verbesserungen, die für InfoPath-Entwickler interessant sind, kurz beschrieben:
   
-- Neue Möglichkeit zum Schreiben und Bearbeiten von Code
+- Neue Möglichkeiten beim Schreiben und Bearbeiten von Code
     
 - SharePoint-Sandkastenlösungen
     
 - Veröffentlichen von Formularen mit einem Klick
     
-- Verbessern von SharePoint-Listenformularen
+- Optimieren von SharePoint-Listenformularen
     
 - Hosten von Formularen auf Portalseiten mithilfe des InfoPath-Webparts
     
-- Funktionsreichere Webformulare
+- Webformulare mit umfangreicher Funktionalität
     
 - Standardkonforme Browserformulare
     
@@ -51,7 +51,7 @@ In den folgenden Abschnitten werden Features beschrieben, die zuerst in InfoPath
   
 ## <a name="sharepoint-server-sandboxed-solutions"></a>SharePoint Server-Sandkastenlösungen
 
-Mit InfoPath ist es einfacher denn je, Formulare mit Code für SharePoint Server 2013 bereitzustellen. In Office InfoPath 2007 mussten alle Formulare mit Code genehmigt und von einem SharePoint-Farmadministrator hochgeladen werden. Dank der Unterstützung für Sandkastenlösungen in SharePoint Server 2013 können Formulardesigner mit Administratorberechtigungen für Websitesammlungen nun die meisten Formulare mit Code direkt auf ihren SharePoint-Websites veröffentlichen. Eine Ressourcenkontingenteinstellung auf dem Server begrenzt übermäßigen Ressourceneinsatz. Der Websitesammlungsadministrator behält die Kontrolle und trifft Vertrauensentscheidungen über die Lösung. Der Farmadministrator ist nicht beteiligt. Weitere Informationen zum Veröffentlichen von InfoPath-Formularvorlagen als Sandkastenlösungen finden Sie unter [Veröffentlichen von Formularen mit Code](publishing-forms-with-code.md).
+Mit InfoPath ist es einfacher denn je, Formulare mit Code für SharePoint Server 2013 bereitzustellen. In Office InfoPath 2007 mussten alle Formulare mit Code genehmigt und von einem SharePoint-Farmadministrator hochgeladen werden. Dank der Unterstützung für Sandkastenlösungen in SharePoint Server 2013 können Formulardesigner mit Administratorberechtigungen für Websitesammlungen nun die meisten Formulare mit Code direkt auf ihren SharePoint-Websites veröffentlichen. Eine Ressourcenkontingenteinstellung auf dem Server begrenzt übermäßigen Ressourceneinsatz. Der Websitesammlungsadministrator behält die Kontrolle und trifft Entscheidungen hinsichtlich Vertrauensstellungen im Zusammenhang mit der Lösung. Der Farmadministrator ist nicht beteiligt. Weitere Informationen zum Veröffentlichen von InfoPath-Formularvorlagen als Sandkastenlösungen finden Sie unter [Veröffentlichen von Formularen mit Code](publishing-forms-with-code.md).
   
 ## <a name="publish-forms-with-one-click"></a>Veröffentlichen von Formularen mit einem Mausklick
 
@@ -99,9 +99,9 @@ InfoPath unterstützt Inhalte, die mit CNG (Cryptography Next Generation) digita
 
 InfoPath bietet eine größere Sammlung an Steuerelementen, die Formularen hinzugefügt werden können. Die folgende Liste bietet eine Kurzbeschreibung der neuen Steuerelemente:
   
-- **Bildschaltfläche** – Verwenden Sie statt eines grauen Rechtecks ein beliebiges Bild als Schaltfläche in einem Formular. 
+- **Bildschaltfläche**: Anstatt eines grauen Rechtecks können Sie ein beliebiges Bild als Schaltfläche im Formular verwenden. 
     
-- **Link** – Ermöglichen Sie Benutzern, beim Ausfüllen von Formularen ihre eigenen Links einzugeben. 
+- **Hyperlink**: Ermöglichen Sie Benutzern beim Ausfüllen von Formularen das Eingeben eigener Hyperlinks. 
     
 - **Personen-/Gruppenauswahl** – Ermöglichen Sie Benutzern, beim Ausfüllen von Formularen Kontonamen und Gruppen zu überprüfen und abzufragen. 
     

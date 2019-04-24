@@ -8,18 +8,18 @@ ms.assetid: cceb8dcb-5ce1-4c32-b057-6201b62a646f
 description: Vergleicht zwei Ausdrücke im Hinblick auf größer als oder gleich.
 localization_priority: Priority
 ms.openlocfilehash: 76472544be950c68f3b5d42fe13b3040e9268f48
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302499"
 ---
 # <a name="greater-than-or-equal-to-access-custom-web-app"></a>Größer oder gleich (benutzerdefinierte Access-Web-App)
 
 Vergleicht zwei Ausdrücke im Hinblick auf größer als oder gleich.
   
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 

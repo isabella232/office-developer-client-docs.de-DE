@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 730af2da-4c4a-42a7-9d52-56d914107d64
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: aa3c010eafeba7908498965bc0491c993a4a9120
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8aafb849a98028efb37646752a7b49fa5e6ef2ff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309562"
 ---
 # <a name="iprofadmindeleteprofile"></a>IProfAdmin::DeleteProfile
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Löscht ein Profil.
   
@@ -38,37 +38,37 @@ HRESULT DeleteProfile(
 
  _lpszProfileName_
   
-> [in] Ein Zeiger auf den Namen des Profils, das gelöscht werden.
+> in Ein Zeiger auf den Namen des zu löschenden Profils.
     
  _ulFlags_
   
-> [in] Immer NULL. 
+> in Immer NULL. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Profil wurde gelöscht.
+> Das Profil wurde erfolgreich gelöscht.
     
 MAPI_E_NOT_FOUND 
   
 > Das angegebene Profil ist nicht vorhanden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IProfAdmin::DeleteProfile** -Methode löscht ein Profil. Wenn das zu löschende Profil verwendet wird, wenn **DeleteProfile** aufgerufen wird, **DeleteProfile** gibt S_OK zurück, jedoch wird das Profil nicht sofort gelöscht. Stattdessen **DeleteProfile** das Profil zum Löschen markiert und, nachdem es nicht mehr verwendet wird, wenn alle seine aktiven Sitzungen beendet haben, wird gelöscht. 
+Die **IProfAdmin::D eleteprofile** -Methode löscht ein Profil. Wenn das zu löschende Profil verwendet wird, wenn **DeleteProfile** aufgerufen wird, gibt **DELETEPROFILE** den Wert S_OK zurück, löscht das Profil jedoch nicht sofort. Stattdessen markiert **DeleteProfile** das Profil zum Löschen und löscht es, nachdem es nicht mehr verwendet wird, wenn alle aktiven Sitzungen beendet wurden. 
   
-Die Funktion Eintrag für jeden Nachrichtendienst im Profil wird mit den im Parameter _UlContext_ festgelegten MSG_SERVICE_DELETE Wert aufgerufen. Zunächst die Funktion löscht den Dienst, und löscht dann den Dienst Profilabschnitt. Die Nachricht Service Eintrag-Funktion wird nicht erneut aufgerufen, nachdem der Dienst gelöscht wurde. 
+Die Einstiegspunktfunktion für jeden Nachrichtendienst im Profil wird mit dem MSG_SERVICE_DELETE-Wert aufgerufen, der im Parameter _ulContext_ festgelegt ist. Zuerst wird der Dienst von der Funktion gelöscht, und anschließend wird der Profil Abschnitt des Diensts gelöscht. Die Nachrichtendienst-Einstiegspunktfunktion wird nicht erneut aufgerufen, nachdem der Dienst gelöscht wurde. 
   
 Zum Löschen eines Profils ist kein Kennwort erforderlich.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions.cpp  <br/> |HrRemoveProfile  <br/> |MFCMAPI (engl.) wird die **IProfAdmin::DeleteProfile** -Methode verwendet, um das ausgewählte Profil zu löschen.  <br/> |
+|MAPIProfileFunctions. cpp  <br/> |HrRemoveProfile  <br/> |MFCMAPI verwendet die **IProfAdmin::D-eleteprofile** -Methode, um das ausgewählte Profil zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

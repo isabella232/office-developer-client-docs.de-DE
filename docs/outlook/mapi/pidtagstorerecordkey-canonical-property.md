@@ -1,5 +1,5 @@
 ---
-title: PidTagStoreRecordKey (kanonische Eigenschaft)
+title: Kanonische Pidtagstorerecordkey (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 27347302-bd52-4f62-98f1-6c37f9a66463
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: d6f858a9f1d3d4620a86621e3f5ecb4ad4609691
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278729"
 ---
-# <a name="pidtagstorerecordkey-canonical-property"></a>PidTagStoreRecordKey (kanonische Eigenschaft)
+# <a name="pidtagstorerecordkey-canonical-property"></a>Kanonische Pidtagstorerecordkey (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den eindeutigen binär vergleichbaren Bezeichner (Datensatzschlüssel) des Nachrichtenspeichers in der sich ein Objekt befindet.
+Enthält den eindeutigen Binär-vergleichbaren Bezeichner (Datensatzschlüssel) des Nachrichtenspeichers, in dem sich ein Objekt befindet.
   
 |||
 |:-----|:-----|
@@ -34,33 +34,33 @@ Enthält den eindeutigen binär vergleichbaren Bezeichner (Datensatzschlüssel) 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Für einen Nachrichtenspeicher ist diese Eigenschaft mit der **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))-Eigenschaft des Speichers identisch.
+Bei einem Nachrichtenspeicher ist diese Eigenschaft mit der eigenen **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md))-Eigenschaft des Stores identisch.
   
-Die Beziehung zwischen diesem-Eigenschaft und die **PR_RECORD_KEY** ist dieselbe wie die Beziehung zwischen **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) und **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).
+Die Beziehung zwischen dieser Eigenschaft und **PR_RECORD_KEY** ist identisch mit der Beziehung zwischen **PR_STORE_ENTRYID** ([pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md)) und **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
-> Konvertiert zwischen IETF RFC2445, RFC2446, RFC2447, und Termine und meeting-Objekte.
+> Konvertiert zwischen IETF-RFC2445, RFC2446 und RFC2447 sowie Termin-und Besprechungs Objekten.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,5 +72,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

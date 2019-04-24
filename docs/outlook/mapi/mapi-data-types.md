@@ -9,21 +9,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3d314d4e-553b-4767-a64a-b9cf1839de52
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 85b31361ad39370cf4c935363b341c8378f85e19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e09e77020d3f2c45ec4033c6945c21850aa1a5bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307791"
 ---
 # <a name="mapi-data-types"></a>MAPI-Datentypen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden Einträge alphabetisch sortierte enthält Dokumentation für die Datentypen, die in MAPI-Methoden, Funktionen und Strukturen verwendet. 
+Die folgenden alphabetischen Einträge enthalten Dokumentation für die Datentypen, die in MAPI-Methoden,-Funktionen und-Strukturen verwendet werden. 
   
 ||
 |:-----|
@@ -50,7 +50,7 @@ Die folgenden Einträge alphabetisch sortierte enthält Dokumentation für die D
 |[SKEY](skey.md) <br/> |
 |[SYNC](sync.md) <br/> |
 |[SYNCCONT](synccont.md) <br/> |
-|[SYNCHRONISIERUNGSSTATUS](syncstate.md) <br/> |
+|[SYNCSTATE](syncstate.md) <br/> |
 |[TCHAR](tchar.md) <br/> |
 |[UPDEL](updel.md) <br/> |
 |[UPDELE](updele.md) <br/> |

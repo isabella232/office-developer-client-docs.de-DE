@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: a658d027-03a2-4cde-bf99-563e8521cb31
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7e50589b52f3e99bf2569a55bb7d3ca4f8247fd6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b5b9c42d944ad9d3ce92e99d08d29964944c8028
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282803"
 ---
 # <a name="sizeddtbledit"></a>SizedDtblEdit
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die enthält eine [DTBLEDIT](dtbledit.md) -Struktur für die Beschreibung ein Edit-Steuerelement und die maximale Anzahl von Zeichen, die im Steuerelement eingegeben werden können. 
+Erstellt eine benannte Struktur, die eine [DTBLEDIT](dtbledit.md) -Struktur zur Beschreibung eines Bearbeitungssteuerelements und die maximale Anzahl von Zeichen enthält, die im Steuerelement eingegeben werden können. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**DTBLEDIT** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**DTBLEDIT** <br/> |
    
 ```cpp
 SizedDtblEdit (n, u)
@@ -42,11 +42,11 @@ _n_
     
 _u_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **SizedDtblEdit** können Sie ein Edit-Steuerelement zu definieren, wenn die Anzahl der aktivierten Zeichen bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
+Mit dem **SizedDtblEdit** -Makro können Sie ein Bearbeitungssteuerelement definieren, wenn die Anzahl der aktivierten Zeichen bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
   
 ```cpp
 DTBLEDIT dtbledit;
@@ -54,7 +54,7 @@ TCHAR lpszCharsAllowed[n];
 
 ```
 
-Führen Sie einen Zeiger auf die resultierende Struktur aus dem Makro **SizedDtblEdit** als Zeiger Struktur **DTBLEDIT** die folgende Umwandlung: 
+Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblEdit** -Makro als **DTBLEDIT** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpDtblEdit = (LPDTBLEDIT) &SizedDtblEdit;

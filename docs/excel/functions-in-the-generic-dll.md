@@ -1,40 +1,40 @@
 ---
-title: Funktionen in der generische DLL
+title: Funktionen in allgemeinen DLL
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- generische Dll [excel 2007], Funktionen, Funktionen [Excel 2007], generische DLL
+- generische dll [Excel 2007], Funktionen, Funktionen [Excel 2007], generische DLL
 localization_priority: Normal
 ms.assetid: 80ce2247-d69d-45b0-b5e2-4ff0d7078a2c
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: e78f276e58ca1c98786e28ed5167762cf0bfdf7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3064e1a09ad8850e121da678f3702a6236574599
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304088"
 ---
-# <a name="functions-in-the-generic-dll"></a>Funktionen in der generische DLL
+# <a name="functions-in-the-generic-dll"></a>Funktionen in allgemeinen DLL
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Der Ordner `\EXAMPLES\GENERIC\` enthält Microsoft Visual Studio-Projektdateien und Quellcodedateien, die erforderlich sind, um das Beispiel GENERIC.xll DLL zu kompilieren. Sie können dieses Projekt als Vorlage verwenden, für das Schreiben von eigenen Microsoft Excel-XLLs. Der Quellcode in diesem Projekt werden viele der Funktionen von Excel-C-API veranschaulicht. 
+Der Ordner `\EXAMPLES\GENERIC\` enthält Microsoft Visual Studio-Projektdateien und Quellcodedateien, die zum Kompilieren der Beispiel-dll Generic. XLL benötigt werden. Sie können dieses Projekt als Vorlage zum Schreiben eigener Microsoft Excel-XLLs verwenden. Der Quellcode in diesem Projekt demonstriert viele der Features der Excel C-API. 
   
-Wenn Sie GENERIC.xll laden, wird mit vier Befehle **generische** im Menü neues erstellt: 
+Wenn Sie generische. XLL laden, wird ein neues **generisches** Menü mit vier Befehlen erstellt: 
   
-- **Dialogfeld** - ein Microsoft Excel-Dialogfeld angezeigt. 
+- **Dialog** -zeigt ein Microsoft Excel-Dialogfeld an. 
     
-- **Tanz** - verschiebt die Auswahl um, bis Sie die **ESC** -Taste drücken. 
+- **Dance** -verschiebt die Auswahl um, bis Sie die **ESC** -Taste drücken. 
     
-- **Systemeigene Dialogfeld** - ein Windows-Dialogfeld angezeigt. 
+- **Native Dialog** – zeigt ein Windows-Dialogfeld an. 
     
-- **Exit** - entlädt GENERIC.xll, und klicken Sie im Menü **generische** entfernt. 
+- **Exit** -entlädt generische. XLL und entfernt das **generische** Menü. 
     
-GENERIC.xll bietet auch drei Tabellenfunktionen, Func1, FuncSum und FuncFib, die verwendet werden kann, wenn GENERIC.xll geladen wird. GENERIC.xll können mit dem Add-In-Manager geladen werden, oder es wird geladen, wenn es am Ende der letzten Excel-Sitzung normalen aktiv war.
+GENERISCHE. XLL stellt auch drei Arbeitsblattfunktionen, func1, FuncSum und FuncFib, die verwendet werden können, wenn generische. XLL geladen wird. GENERISCHE. XLL kann mit dem Add-in-Manager geladen werden, oder Sie wird geladen, wenn Sie am normalen Ende der letzten Excel-Sitzung aktiv war.
   
-Dieses Projekt wird der Framework-Klassenbibliothek (FRMWRK32.lib) verwendet.
+Dieses Projekt verwendet die Framework-Bibliothek (FRMWRK32. lib).
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 88a910ed-b55a-4e5b-a43d-eb3ea795a70e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2dadad410b9aaf1401d792de373e561c29183a12
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 64b6235151c7700a24992bc1d4394553a53c0464
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270203"
 ---
 # <a name="imapiprogressgetmax"></a>IMAPIProgress::GetMax
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die maximale Anzahl von Elementen in den Vorgang für den Fortschritt Informationen angezeigt werden.
+Gibt die maximale Anzahl von Elementen in dem Vorgang zurück, für die Statusinformationen angezeigt werden.
   
 ```cpp
 HRESULT GetMax(
@@ -37,33 +37,33 @@ HRESULT GetMax(
 
  _lpulMax_
   
-> [out] Ein Zeiger auf die maximale Anzahl von Elementen in den Vorgang.
+> Out Ein Zeiger auf die maximale Anzahl von Elementen in dem Vorgang.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die maximale Anzahl von Elementen in der Vorgang wurde abgerufen.
+> Die maximale Anzahl von Elementen in dem Vorgang wurde abgerufen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der maximale Wert stellt das Ende des Vorgangs in numerische Form dar. Der Wert kann einen globalen Höchstwert zur Darstellung des Bereichs der gesamte Fortschrittsanzeige oder ein lokaler Wert, der zum Darstellen eines Teils der Anzeige sein. 
+Der Maximalwert stellt das Ende des Vorgangs in numerischer Form dar. Der Wert kann ein globaler Maximalwert sein, der verwendet wird, um den Umfang der gesamten Statusanzeige darzustellen, oder ein lokaler Wert, der zum Darstellen eines Teils der Anzeige verwendet wird. 
   
-Der Wert der Einstellung Flag wirkt sich auf, ob das Objekt Fortschritt den Höchstwert lokal oder global sein versteht. Wenn das Flag MAPI_TOP_LEVEL festgelegt ist, der maximale Wert gilt als globale und wird verwendet, um den Status für den gesamten Vorgang zu berechnen. Wenn MAPI_TOP_LEVEL nicht festgelegt ist, der maximale Wert gilt als lokale und Anbieter mit es intern Fortschritt für unteren Ebene Unterobjekte angezeigt werden sollen. Fortschritt Objekte speichern den lokalen Höchstwert nur, um einen Anbieter durch einen Aufruf **GetMax** wiederherzustellen. 
+Der Wert der Flag-Einstellung wirkt sich darauf aus, ob das Progress-Objekt den Maximalwert auf "lokal" oder "Global" versteht. Wenn das MAPI_TOP_LEVEL-Flag festgelegt ist, wird der Höchstwert als Global betrachtet und zum Berechnen des Fortschritts für den gesamten Vorgang verwendet. Wenn MAPI_TOP_LEVEL nicht festgelegt ist, wird der Maximalwert als lokal betrachtet, und die Anbieter verwenden ihn intern, um den Fortschritt für unter Objekte auf niedrigerer Ebene anzuzeigen. Progress-Objekte speichern den lokalen Maximalwert nur, um ihn über einen **GetMax** -Aufruf an einen Anbieter zurückzugeben. 
   
-Weitere Informationen dazu, wie und wann ein Fortschritt-Objekt aufrufen finden Sie unter [Display eine Statusanzeige](how-to-display-a-progress-indicator.md).
+Weitere Informationen dazu, wie und wann Statusobjekte aufgerufen werden, finden Sie unter [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md).
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Initialisieren Sie den Höchstwert bis 1000 ein. Dienstanbieter können durch Aufrufen der Methode [IMAPIProgress::SetLimits](imapiprogress-setlimits.md) dieser Wert zurückgesetzt. Weitere Informationen zum Implementieren von **GetMax** und anderen [IMAPIProgress](imapiprogressiunknown.md) Methoden finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md).
+Initialisieren Sie den Höchstwert auf 1000. Dienstanbieter können diesen Wert durch Aufrufen der [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)-Methode zurücksetzen. Weitere Informationen zum Implementieren von **GetMax** und den anderen [IMAPIProgress](imapiprogressiunknown.md) -Methoden finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |CMAPIProgress::GetMax  <br/> |MFCMAPI (engl.) verwendet die **IMAPIProgress::GetMax** -Methode, um den Höchstwert für den Fortschritt-Objekt abzurufen. Gibt 1000 zurück, es sei denn, Grenzwerte zuvor mit der **IMAPIProgress::SetLimits** -Methode festgelegt wurden.  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress:: GetMax  <br/> |MFCMAPI verwendet die **IMAPIProgress:: GetMax** -Methode, um den Maximalwert für das Progress-Objekt abzurufen. Gibt 1000 zurück, es sei denn, es wurden zuvor Werte mit der **IMAPIProgress::** setlimits-Methode festgelegt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

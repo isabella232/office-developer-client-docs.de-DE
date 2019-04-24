@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb243bc4-4974-4ad6-aa76-2426c1ebe84b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 389984f9d98ece6b2040edd741e3028fd7d766ed
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 50b6581dec8211968a49b204c6d9b1ba1c65bb62
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309513"
 ---
 # <a name="smapiformproparray"></a>SMAPIFormPropArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Array von [SMAPIFormProp](smapiformprop.md) -Strukturen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verwandte Makro:  <br/> |[CbMAPIFormPropArray](cbmapiformproparray.md) <br/> |
+|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Zugehöriges Makro:  <br/> |[CbMAPIFormPropArray](cbmapiformproparray.md) <br/> |
    
 ```cpp
 typedef struct
@@ -46,19 +46,19 @@ typedef struct
 
  **cProps**
   
-> Anzahl der benannten Eigenschaften im Array in der **aFormProp** Member. 
+> Die Anzahl benannter Eigenschaften im Array im **aFormProp** -Element. 
     
  **ulPad**
   
->  Acht Bytes an Füllzeichen verwendet, um die richtige Ausrichtung zu gewährleisten. 
+>  Acht Byte Leerraum, die verwendet werden, um eine korrekte Ausrichtung zu gewährleisten. 
     
  **aFormProp**
   
 > Array von Formulareigenschaften.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **SMAPIFormPropArray** wird als Parameter an die folgenden Methoden übergeben: 
+Die **SMAPIFormPropArray** -Struktur wird als Parameter an die folgenden Methoden übergeben: 
   
 - [IMAPIFormInfo::CalcFormPropSet](imapiforminfo-calcformpropset.md)
     

@@ -8,19 +8,19 @@ api_type:
 - COM
 ms.assetid: 29b7f5f1-afc1-45d9-8867-9312c072e74b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 88c3e0bdb3cc6660e35faf62c5bb63ec2f6352bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dd25751978eb036531238e6372e35934b3ec145a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299377"
 ---
 # <a name="getting-and-setting-multiple-properties"></a>Abrufen und Festlegen mehrerer Eigenschaften
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Durch Abrufen und Festlegen von so viele Eigenschaften wie möglich mit der geringsten Anzahl Anrufe, remote Aktivität Falle wird und mit jeder Eigenschaft Verwaltungsaufwand reduziert. Zwar Dienstanbieter versuchen, vor der Durchführung eines Remoteprozeduraufrufs für abrufen oder Ändern von Eigenschaften erfasst werden sollen, können Sie Maßnahme optimieren, indem Sie mehrere Eigenschaften zunächst anfordern.
+Durch das Aufrufen und festlegen so vieler Eigenschaften wie möglich mit der geringsten Anzahl von Anrufen wird die Remote Aktivität eingeschränkt, und der mit den einzelnen Eigenschaften verbundene Aufwand wird reduziert. Obwohl Dienstanbieter versuchen, Eigenschaften zu sammeln, bevor Sie einen Remoteprozeduraufruf zum Abrufen oder ändern ausführen, können Sie diesen Aufwand optimieren, indem Sie zunächst mehrere Eigenschaften anfordern.
   
-Beispielsweise wenn Sie routing Listen, die mit benannten Eigenschaften von bestimmten Eigenschaftensätze zukünftige Empfänger beschreiben entwickelt, verarbeitet alle Empfänger mit zwei Anrufe entgegennehmen. Verwenden Sie durch Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) , um die Bezeichner für alle den Empfängereigenschaften und den anderen Anruf an [IMAPIProp::GetProps](imapiprop-getprops.md) zum Abrufen aller Werte abzurufen. Die Alternative, tätigen eines Anrufs auf **GetIDsFromNames** gefolgt von einem Aufruf von **GetProps** für jeden Empfänger ist viel weniger effizient. 
+Wenn Sie beispielsweise mit Routing Listen arbeiten, die zukünftige Empfänger mit benannten Eigenschaften beschreiben, die zu bestimmten Eigenschaftensätzen gehören, verarbeiten Sie alle Empfänger mit zwei anrufen. Verwenden Sie einen Aufruf von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) , um die Bezeichner für alle Empfänger Eigenschaften und den anderen Aufruf von [IMAPIProp::](imapiprop-getprops.md) GetProps abzurufen, um alle Werte abzurufen. Die Alternative, durch die ein Aufruf von **GetIDsFromNames** gefolgt von einem Aufruf **** von GetProps für jeden Empfänger erfolgt, ist weitaus weniger effizient. 
   
 

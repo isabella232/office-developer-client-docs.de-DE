@@ -1,5 +1,5 @@
 ---
-title: PidTagPstConfigurationFlags (kanonische Eigenschaft)
+title: Kanonische Pidtagpstconfigurationflags (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,30 +9,30 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e4234ddf-d9dc-4dc9-8eda-dbbee151b5d7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b79b40a59a2bf7b68c58bffbccca04034b853a15
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e881c8eeffa29706591e07113d70a3670606f2be
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286408"
 ---
-# <a name="pidtagpstconfigurationflags-canonical-property"></a>PidTagPstConfigurationFlags (kanonische Eigenschaft)
+# <a name="pidtagpstconfigurationflags-canonical-property"></a>Kanonische Pidtagpstconfigurationflags (-Eigenschaft
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt Konfiguration Flags für eine Tabelle persönlicher Speicher (PST-Datei).
+Gibt an-Konfigurations Kennzeichen für eine persönliche Speichertabelle (PST-Datei).
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_PST_CONFIG_FLAGS  <br/> |
 |Kennung:  <br/> |0x6770  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
+|Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Folgende sind gültige Werte für diese Eigenschaft:
+Für diese Eigenschaft gelten die folgenden gültigen Werte:
   
 PST_CONFIG_UNICODE
   
@@ -42,45 +42,45 @@ PST_CONFIG_UNICODE
     
 PST_CONFIG_CREATE_NOWARN
   
-> Wenn Satz aus der Client Kennzeichen an die [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) -Methode, wie Gespräch [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) **ConfigureMsgService** behandelt und überspringt die "dieser Informationsdienst wurde nicht konfiguriert" Warnung. 
+> Wenn Sie von den Client-Flags auf die [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) -Methode festgelegt wird, behandelt **ConfigureMsgService** wie ein [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Aufruf und überspringt den "Dieser Informationsdienst wurde nicht konfiguriert" Warnung. 
     
    `#define PST_CONFIG_CREATE_NOWARN 0x00000001`
     
 PST_CONFIG_PRESERVE_DISPLAY_NAME
   
-> Teilt **ConfigureMsgService** nicht den Wert der Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) ändern, obwohl es bereitgestellt wurde. Es wurde in diesem Fall nur für neue PST-Dateien angegeben.
+> Weist **ConfigureMsgService** an, den Wert der **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft nicht zu ändern, obwohl Sie bereitgestellt wurde. In diesem Fall wurde es nur für neue PST-Dateien bereitgestellt.
     
    `#define PST_CONFIG_PRESERVE_DISPLAY_NAME 0x00000002`
     
 OST_CONFIG_POLICY_DELAY_IGNORE_OST
   
-> Erfahren Sie mehr Konfigurationscode für das erste anzuzeigende ein Dialogfeld zu bestätigen, dass eine Datei Offlineordnerdatei (OST) wurde gefunden und, je nach Antwort des Benutzers, verwenden Sie entweder den gefundenen Ordner Offline oder aktivieren den Benutzer Offline einen anderen Ordner zu suchen.
+> Weist den Konfigurationscode an, zunächst ein Dialogfeld anzuzeigen, um zu bestätigen, ob eine Offlineordnerdatei (Ost) gefunden wurde, und je nach Antwort des Benutzers entweder den gefundenen Offlineordner verwenden oder dem Benutzer ermöglichen, nach einem anderen Offlineordner zu suchen.
     
    `#define OST_CONFIG_POLICY_DELAY_IGNORE_OST 0x00000008`
     
 OST_CONFIG_CREATE_NEW_DEFAULT
   
-> Kopiert die OST-Datei mit einem neuen eindeutigen Namen und den aktuellen Namen verwirft. Die vorhandenen OST-Datei auf dem Computer bleibt jedoch nicht mehr in diesem Profil verwendet. Dies tritt normalerweise auf, wenn Microsoft Outlook, eine bestimmte OST-Datei nicht länger ermöglicht und Registrierungsrichtlinien den Benutzer, benennen Sie die Datei nicht zulassen. 
+> Kopiert die OST-Datei mit einem neuen eindeutigen Namen und verwirft den aktuellen Namen. Die vorhandene OST-Datei verbleibt auf dem Computer, wird aber in diesem Profil nicht mehr verwendet. Dies ist in der Regel der Fall, wenn Microsoft Outlook eine bestimmte OST-Datei nicht mehr zulässt und Registrierungsrichtlinien dem Benutzer die Umbenennung der Datei nicht gestatten. 
     
    `#define OST_CONFIG_CREATE_NEW_DEFAULT_OST 0x00000010`
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -92,5 +92,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

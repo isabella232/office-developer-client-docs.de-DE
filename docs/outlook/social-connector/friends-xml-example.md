@@ -7,23 +7,23 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 83afbdef-4f12-4673-a0c1-bbf86274558f
-description: Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge an Outlook Social Connector (OSC) zurückgegeben, nachdem sie die ISocialPerson::GetFriendsAndColleagues-Methode aufgerufen. Das Beispiel zeigt die Freunde XML für zwei Freunde, jeweils durch das Element Person sind. Jeder Freund gibt einen eindeutigen Wert für das UserID-Element im sozialen Netzwerk.
+description: 'Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge, die an den Outlook Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die ISocialPerson:: GetFriendsAndColleagues-Methode aufgerufen hat. Im Beispiel wird der Freundes-XML für zwei Freunde angezeigt, die jeweils durch das Person-Element getrennt sind. Jeder Freund gibt einen eindeutigen Wert für das userID-Element im sozialen Netzwerk an.'
 ms.openlocfilehash: 5dbda1e4439f807ccc6e7abddd0ef654ae801fe0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280959"
 ---
 # <a name="friends-xml-example"></a>XML-Beispiel für „friends“
 
-Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge an Outlook Social Connector (OSC) zurückgegeben, nachdem sie die [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) -Methode aufgerufen. Das Beispiel zeigt die **Freunde** XML für zwei Freunde, jeweils durch das Element **Person** sind. Jeder Freund gibt einen eindeutigen Wert für das **UserID** -Element im sozialen Netzwerk. 
+Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge, die an den Outlook Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die [ISocialPerson:: GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) -Methode aufgerufen hat. Im Beispiel wird der **Freundes** -XML für zwei Freunde angezeigt, die jeweils durch das **Person** -Element getrennt sind. Jeder Freund gibt einen eindeutigen Wert für das **UserID** -Element im sozialen Netzwerk an. 
   
-Die verbleibenden Elemente der **Freunde** XML haben selbsterklärend Namen. Detaillierte Beschreibung dieser Elemente finden Sie unter [XML für Freunde](xml-for-friends.md). 
+Die verbleibenden Elemente des **friends** -XML haben selbsterklärende Namen. Eine ausführliche Beschreibung dieser Elemente finden Sie unter [XML for friends](xml-for-friends.md). 
   
 ## <a name="xml-example"></a>XML-Beispiel
 
-Das folgende Beispiel zeigt die **Freunde** XML für zwei Personen im sozialen Netzwerk. 
+Das folgende Beispiel zeigt die **Freunde** -XML für zwei Personen im sozialen Netzwerk. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -80,8 +80,8 @@ Das folgende Beispiel zeigt die **Freunde** XML für zwei Personen im sozialen N
 
 ## <a name="see-also"></a>Siehe auch
 
-- [OSC-Anbieter XML-Beispielen](osc-provider-xml-examples.md)  
-- [Funktionen XML-Beispiel](capabilities-xml-example.md) 
-- [Beispiel für eine Aktivität Feed XML](activity-feed-xml-example.md) 
-- [Outlook Connector für soziale Netzwerke Anbieter XML-Schema](outlook-social-connector-provider-xml-schema.md)
+- [OSC-Anbieter-XML-Beispiele](osc-provider-xml-examples.md)  
+- [XML-Beispiel für Funktionen](capabilities-xml-example.md) 
+- [XML-Beispiel für Aktivitätsfeeds](activity-feed-xml-example.md) 
+- [XML-Schema des Anbieters für soziale Netzwerke in Outlook](outlook-social-connector-provider-xml-schema.md)
 

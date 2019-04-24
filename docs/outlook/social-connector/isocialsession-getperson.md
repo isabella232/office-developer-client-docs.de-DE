@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2d0a2945-54d7-417f-b5c6-2647c70263cf
-description: Ruft eine ISocialPerson-Schnittstelle basierend auf dem UserID-Parameter.
-ms.openlocfilehash: 5769f4c41bb97f45ab722f1b3a3febe24c8a7ab2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft eine ISocialPerson-Schnittstelle basierend auf dem Parameter userID ab.
+ms.openlocfilehash: b54e39b3712fb57d89d03787f1e5fa0ff50ff84a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285330"
 ---
 # <a name="isocialsessiongetperson"></a>ISocialSession::GetPerson
 
-Ruft eine [ISocialPerson](isocialpersoniunknown.md) -Schnittstelle basierend auf dem _UserID_ -Parameter. 
+Ruft eine [ISocialPerson](isocialpersoniunknown.md) -Schnittstelle basierend auf dem Parameter _UserID_ ab. 
   
 ```cpp
 HRESULT _stdcall GetPerson([in] BSTR userId, [out, retval] ISocialPerson** result);
@@ -27,15 +27,15 @@ HRESULT _stdcall GetPerson([in] BSTR userId, [out, retval] ISocialPerson** resul
 
 _userId_
   
-> [in] Eine Zeichenfolge, die eine Benutzer-ID oder SMTP-Adresse einer Person enthält.
+> in Eine Zeichenfolge, die eine Benutzer-ID oder eine SMTP-Adresse einer Person enthält.
     
-_Ergebnis_
+_result_
   
-> [out] Eine **ISocialPerson** -Schnittstelle. 
+> Out Eine **ISocialPerson** -Schnittstelle. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Der _Benutzer-ID_ -Parameter muss eine Benutzer-ID oder SMTP-Adresse sein. 
+Der Parameter _UserID_ muss eine Benutzer-ID oder eine SMTP-Adresse sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

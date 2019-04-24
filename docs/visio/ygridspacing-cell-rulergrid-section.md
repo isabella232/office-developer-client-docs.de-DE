@@ -1,5 +1,5 @@
 ---
-title: YGridSpacing Cell (Ruler &amp; Grid Section)
+title: Zelle YGridSpacing Cell (Ruler &amp; Grid section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,28 +9,28 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 30766e13-c90d-62fc-9c98-35ad7b0b4056
 description: Gibt den Abstand zwischen den vertikalen Linien in einem festen Gitter an (YGridDensity = 0).
-ms.openlocfilehash: 638479719ee0649bf271403249e2cde2ddccf09c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fc355b4e509494e9e7570122a8a3a7a3ce2e0588
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283429"
 ---
-# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>YGridSpacing Cell (Ruler &amp; Grid Section)
+# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>Zelle YGridSpacing Cell (Ruler &amp; Grid section)
 
 Gibt den Abstand zwischen den vertikalen Linien in einem festen Gitter an (YGridDensity = 0).
   
 ## <a name="remarks"></a>Bemerkungen
 
-Entspricht der vertikalen **minimaler Abstand** option in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ). 
+Entspricht der Option **** vertikaler Mindestabstand im Lineal ** &amp; -Raster** (Dialogfeld) (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil). **** 
   
-Wenn Sie einen Verweis auf die Zelle YGridSpacing aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle YGridSpacing aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |YGridSpacing  <br/> |
+|Zellenname:  <br/> |Zelle YGridSpacing  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle YGridSpacing aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle YGridSpacing aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

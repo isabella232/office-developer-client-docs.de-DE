@@ -8,24 +8,24 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a111d7b7-6e87-4958-8f9b-0f2adbeb8b63
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e7120b843eae8df70cb2c4f9cbf581dcf0e09c11
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 65ed848907e196c315e8ddb61c4afd2fe03faa18
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270287"
 ---
 # <a name="mapiofflinenotifytype"></a>MAPIOFFLINE_NOTIFY_TYPE
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die MAPIOFFLINE_NOTIFY_TYPE einer Benachrichtigung gibt an, ob eine Änderung in den Verbindungsstatus ist stattfinden soll, erfolgt oder abgeschlossen ist. 
+Der MAPIOFFLINE_NOTIFY_TYPE einer Benachrichtigung identifiziert, ob eine Änderung im Verbindungsstatus stattfindet, stattfindet oder abgeschlossen wurde. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Finden Sie unter **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**. 
+Siehe **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**. 
   
 ```cpp
 typedef enum { 
@@ -39,7 +39,7 @@ typedef enum {
 
 
 
-[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
+[Informationen zur Offlinestatus-API](about-the-offline-state-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   

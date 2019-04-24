@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 85d71b73-0630-4c5d-b0e3-b48d27a300d0
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0c72164cac8a37d0372ac93f4ed6d3face966ddb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 44e3613338c8932bc80dd1150392033dfa3cd050
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278736"
 ---
 # <a name="isequalmapiuid"></a>IsEqualMAPIUID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Testet zwei [MAPIUID](mapiuid.md) -Strukturen, um zu bestimmen, ob sie den gleichen Bezeichner enthalten. 
+Testet zwei [MAPIUID](mapiuid.md) -Strukturen, um zu bestimmen, ob Sie den gleichen Bezeichner enthalten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**MAPIUID** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**MAPIUID** <br/> |
    
 ```cpp
 IsEqualMAPIUID(lpuid1, lpuid2)
@@ -40,17 +40,17 @@ IsEqualMAPIUID(lpuid1, lpuid2)
 
  _lpuid1_
   
-> Zeiger auf die erste **MAPIUID** Struktur auf getestet werden soll. 
+> Zeiger auf die erste zu testende **MAPIUID** -Struktur. 
     
  _lpuid2_
   
-> Zeiger auf die zweite **MAPIUID** Struktur auf getestet werden soll. 
+> Zeiger auf die zweite zu testende **MAPIUID** -Struktur. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **IsEqualMAPIUID** gibt TRUE zurück, wenn die zwei **MAPIUID** -Strukturen, die dieselbe ID und FALSE enthalten, wenn nicht der Fall ist. 
+Das **IsEqualMAPIUID** -Makro gibt true zurück, wenn die beiden **MAPIUID** -Strukturen denselben Bezeichner enthalten, und false, wenn dies nicht der Fall ist. 
   
-Das Makro **IsEqualMAPIUID** erfordert, dass die Headerdatei Memory.h enthalten sein. 
+Das **IsEqualMAPIUID** -Makro erfordert, dass die Headerdatei Memory. h enthalten ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

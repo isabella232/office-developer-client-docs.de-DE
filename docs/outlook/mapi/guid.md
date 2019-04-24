@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3608c47-06be-4476-a6ef-060fac252387
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 94bafdf0ca84fa31a7df2f022265d5d5d1a99a37
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 12c50ab5936d7fffd364c276ba07ca69d3459ae7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299517"
 ---
 # <a name="guid"></a>GUID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt einen global eindeutigen Bezeichner (GUID). 
+Beschreibt eine GUID (Globally Unique Identifier). 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiguid.h  <br/> |
+|Headerdatei  <br/> |Mapiguid. h  <br/> |
    
 ```cpp
 typedef struct _GUID
@@ -46,35 +46,35 @@ typedef struct _GUID
 
  **Data1**
   
-> Eine lange Ganzzahl ohne Vorzeichen Datenwert.
+> Ein Datenwert mit langer Ganzzahl ohne Vorzeichen.
     
  **Data2**
   
-> Eine ganze Zahl ohne Vorzeichen kurzen Datenwert.
+> Ein unsigned Short Integer-Datenwert.
     
  **Data3**
   
-> Eine ganze Zahl ohne Vorzeichen kurzen Datenwert.
+> Ein unsigned Short Integer-Datenwert.
     
  **Data4**
   
-> Ein Array von nicht signierte Zeichen.
+> Ein Array mit nicht signierten Zeichen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
  **GUID** -Strukturen werden in MAPI wie folgt verwendet: 
   
-- In den [MAPIUID](mapiuid.md) -Strukturen, mit die Dienstanbieter eindeutig identifiziert. 
+- In den [MAPIUID](mapiuid.md) -Strukturen, die Dienstanbieter eindeutig identifizieren. 
     
-- Schnittstelle-Bezeichner.
+- Für Schnittstellenbezeichner.
     
-- Legen in die Eigenschaft Namen der benannten Eigenschaften. 
+- In den Eigenschaftensatz Namen benannter Eigenschaften. 
     
-Nachrichtenspeicher und Adresse adressbuchanbietern implementierte generieren eine **GUID** -Struktur, die in ihrer **MAPIUID** Struktur verwendet. Informieren Sie, indem Sie die resultierende **MAPIUID** an [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)übergeben, dieser Dienstanbieter MAPI der jeweiligen eindeutigen Bezeichner.
+Nachrichtenspeicher-und Adressbuchanbieter generieren eine **GUID** -Struktur, die in Ihrer **MAPIUID** -Struktur verwendet werden soll. Durch das Übergeben des resultierenden **MAPIUID** an [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md)informieren diese Dienstanbieter MAPI über Ihren eindeutigen Bezeichner.
   
-Darüber hinaus werden sie in der Implementierung von Microsoft Remote Procedure Call (RPC) sowie dem Objekt Description Language () verwendet. Weitere Informationen zu diesen verwendet finden Sie unter der *Microsoft RPC Programmer's Guide und Verweis* *OLE Programmer's Reference* und *In OLE*, *Second Edition* . 
+Außerdem werden Sie bei der Implementierung von Microsoft Remote Procedure Call (RPC) und der Object Description Language (ODL) verwendet. Weitere Informationen zu diesen Zwecken finden Sie im *Microsoft RPC Programmer es Guide and Reference*, *OLE Programmer es Reference* und *Inside OLE*, *Second Edition* . 
   
-Die **GUID** -Struktur ist in der *Win32 Programmer's Reference* definiert. Konkrete Werte für die **GUID** -Strukturen, die in MAPI verwendet werden, werden in der MAPI-Headerdatei Mapiguid.h definiert. 
+Die **GUID** -Struktur ist in der *Win32-Programmierreferenz* definiert. Bestimmte Werte für **GUID** -Strukturen, die in MAPI verwendet werden, sind in der MAPI-Headerdatei Mapiguid. h definiert. 
   
 ## <a name="see-also"></a>Siehe auch
 

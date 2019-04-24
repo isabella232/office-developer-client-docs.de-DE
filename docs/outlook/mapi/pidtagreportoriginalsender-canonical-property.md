@@ -1,5 +1,5 @@
 ---
-title: PidTagReportOriginalSender (kanonische Eigenschaft)
+title: Kanonische Pidtagreportoriginalsender (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,21 +9,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 429811c4-73fe-4a05-9c42-e5ac8e974f29
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1ad6d6047a021683d658a8ad9ab28ff2d1ec31f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4fc3d2751841cb2fb119e7b1695c93260758dcea
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283114"
 ---
-# <a name="pidtagreportoriginalsender-canonical-property"></a>PidTagReportOriginalSender (kanonische Eigenschaft)
+# <a name="pidtagreportoriginalsender-canonical-property"></a>Kanonische Pidtagreportoriginalsender (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den ursprünglichen Absender der Nachricht für Nachrichten, die Empfangsbestätigungen anfordern.
+Gibt den ursprünglichen Absender der Nachricht für Nachrichten an, die Empfangsbestätigungen anfordern.
   
 |||
 |:-----|:-----|
@@ -32,23 +32,23 @@ Gibt den ursprünglichen Absender der Nachricht für Nachrichten, die Empfangsbe
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

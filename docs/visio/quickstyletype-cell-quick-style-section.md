@@ -1,33 +1,33 @@
 ---
-title: QuickStyleType Cell (Quick Style Section)
+title: QuickStyleType Cell (Quick Style section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e7470417-0d70-433e-9496-604ca2eafee6
-description: Bestimmt den Typ der Schnellformatvorlagen (2-dimensionale, 1-dimensionales oder Connector), die das Shape erbt.
-ms.openlocfilehash: 211074800eee601d2658edbc03bb95d028920e54
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den Typ der Schnellformatvorlage (2-dimensional, 1-dimensional oder Verbinder), die von der Form erbt.
+ms.openlocfilehash: 95aced62c6397fc3229de29b98d3f18e5f69d05b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282579"
 ---
-# <a name="quickstyletype-cell-quick-style-section"></a>QuickStyleType Cell (Quick Style Section)
+# <a name="quickstyletype-cell-quick-style-section"></a>QuickStyleType Cell (Quick Style section)
 
-Bestimmt den Typ der Schnellformatvorlagen (2-dimensionale, 1-dimensionales oder Connector), die das Shape erbt. 
+Bestimmt den Typ der Schnellformatvorlage (2-dimensional, 1-dimensional oder Verbinder), die von der Form erbt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Visio wählt automatisch  <br/> |
-|1  <br/> |1-dimensionales  <br/> |
-|2  <br/> |2-dimensionale  <br/> |
+|1  <br/> |1-dimensional  <br/> |
+|2  <br/> |2-dimensional  <br/> |
 |3  <br/> |Connector  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **QuickStyleType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **QuickStyleType** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

@@ -7,11 +7,11 @@ ms.assetid: 2cfa5a6e-2f5c-440c-b35a-bc7a34648f9c
 description: Project Server 2013 integriert Projektmanagement-Funktionen in eine SharePoint-Farm und ermöglicht die Verwendung von Project Online mit einem clientseitigen Objektmodell (CSOM) sowie einer OData-Schnittstelle für Berichtsdaten.
 localization_priority: Priority
 ms.openlocfilehash: db4dd0eed9c043021f586041fa0e28708fdbd243
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301598"
 ---
 # <a name="project-server-architecture"></a>Project Server-Architektur
 
@@ -19,7 +19,7 @@ Project Server 2013 integriert Projektmanagement-Funktionen in eine SharePoint-F
    
 Project Server 2013 ist ein mehrstufiges System, das die in Office Project Server 2007 eingeführte Architektur erweitert. Zu den Architekturänderungen zählt die Zuweisung von Project-Anwendungsdiensten zu SharePoint-Websitesammlungen, die Erweiterung um einige Geschäftsobjekte im Web-Front-End (WFE), das clientseitige Objektmodell (CSOM) für Remotezugriff, eine einzelne Project-Datenbank, eine OData-Schnittstelle für Berichtstabellen und -ansichten, die Integration von Windows Workflow Foundation Version 4 (WF4) über Workflow Manager Client 1.0 in der Cloud oder auf einem lokalen Server sowie Remoteereignisempfänger, auf die mehrere Project Server-Installationen zugreifen können. Zusätzlich zu lokalen benutzerdefinierten Lösungen können Sie Apps erstellen, die Remoteereignisempfänger und Komponenten umfassen, die auf die CSOM- und OData-Schnittstellen zugreifen.
   
-Zur Front-End-Stufe gehören Project Professional 2013, Project Web App und Apps von Drittanbietern. Clientanwendungen kommunizieren mit der mittleren Schicht nur über PSI (Project Server Interface) oder über CSOM-Endpunkte, die wiederum mit PSI und der Geschäftsobjektschicht kommunizieren. Der Datenbankzugriff ist in die Geschäftsobjekte integriert. Das Project Server-Ereignisverwaltungssystem kann sowohl auf lokale Ereignishandler als auch auf Remoteereignisempfänger zugreifen. Der Project-Berechnungsdienst implementiert das Planungsmodul von Project Professional in Project Server. Clientanwendungen greifen nicht direkt (oder sollten dies zumindest nicht) auf die Project-Datenbank zugreifen, und in Project Server werden Geschäftsobjekte vor Clients verborgen.
+Zur Front-End-Stufe gehören Project Professional 2013, Project Web App und Apps von Drittanbietern. Client-Anwendungen kommunizieren über das Project Server Interface (PSI) oder über CSOM-Endpunkte mit der mittleren Schicht, die wiederum mit dem PSI und der Geschäftsobjekt-Schicht kommunizieren. Der Datenbankzugriff ist in die Geschäftsobjekte integriert. Das Project Server-Ereignissystem kann sowohl auf lokale Ereignishandler als auch auf Remoteereignisempfänger zugreifen. Der Project-Berechnungsdienst implementiert das Planungsmodul von Project Professional in Project Server. Clientanwendungen greifen nicht direkt (oder sollten dies zumindest nicht) auf die Project-Datenbank zugreifen, und in Project Server werden Geschäftsobjekte vor Clients verborgen.
   
 > [!NOTE]
 > Project Server basiert auf der SharePoint-Architektur. Weitere Informationen zur SharePoint Server 2013-Architektur und zum SharePoint-App-Modell finden Sie im Abschnitt *Erste Schritte bei der SharePoint-Entwicklung* in der Entwicklerdokumentation zu Office 2013. 
@@ -97,7 +97,7 @@ Es können mehrere Project Web App-Instanzen mit der Back-End-Project-Dienstanwe
 
 Für Abbildung 3 gelten die folgenden allgemeinen Anmerkungen:
   
-- **Project Online:** Sie können Apps erstellen, die die CSOM-, REST- und OData-Schnittstellen verwenden. Ein App-Paket kann auch Remoteereignisempfänger in einem benutzerdefinierten Webdienst auf einem lokalen Server, auf einem Azure-Server oder auf Microsoft Azure installieren. In Project Online werden lokale Drittanbieterlösungen, die WCF-Schnittstelle, die ASMX-Schnittstelle oder lokale Ereignishandler nicht unterstützt. 
+- **Project Online:** Sie können Apps erstellen, die die CSOM-, REST- und OData-Schnittstellen verwenden. Ein App-Paket kann auch Remoteereignisempfänger in einem benutzerdefinierten Webdienst auf einem lokalen Server, auf einem Azure-Server oder auf Microsoft Azure installieren. In Project Online werden lokale Drittanbieterlösungen, die WCF-Schnittstelle, die ASMX-Schnittstelle oder lokale Ereignishandler nicht unterstützt 
     
 - **Ereignisempfänger:** Ereignisempfänger können auch als Ereignishandler bezeichnet werden. Project Online unterstützt die Registrierung von Project Server-Remoteereignisempfängern, die von einer Project Web App-Instanz in der Cloud oder von einer lokalen Project Server-Installation verwendet werden können. Eine lokale Project Server-Installation unterstützt Remoteereignisempfänger und lokale, voll vertrauenswürdige Ereignishandler. 
     
@@ -113,14 +113,14 @@ Für Abbildung 3 gelten die folgenden allgemeinen Anmerkungen:
     > [!NOTE]
     > Das SOAP-basierte ASMX-Schnittstelle für Webdienste im PSI ist in Project Server 2013 zwar weiterhin verfügbar, gilt aber als überholt. 
   
-    Der OData-Dienst für die Berichterstellung wird von dem internen WCF-Dienst "OData.svc" implementiert. Sie können das Dokument für den Metadatendienst für die Berichterstellungsdaten mithilfe von `https://ServerName/ProjectServerName/_api/ProjectData/$metadata` abrufen. 
+    Der OData-Dienst für die Berichterstellung wird von dem internen WCF-Dienst „OData.svc" implementiert. Sie können das Dokument für den Metadatendienst für die Berichterstellungsdaten mithilfe von  `https://ServerName/ProjectServerName/_api/ProjectData/$metadata` abrufen. 
     
     Der OData-Dienst für CSOM ist für Plattformen wie Windows RT, iOS und Android ausgelegt, auf denen Sie die REST-Schnittstelle mit JavaScript in HTML-Seiten verwenden können. 
     
     > [!NOTE]
     > Obwohl die Option `$metadata` für den **ProjectData**-Berichtsdienst gültig ist, wurde die Option `$metadata` für den **ProjectServer**-Dienst des clientseitigen Objektmodells in der veröffentlichten Version von Project Server 2013 entfernt. Weitere Informationen zu REST-Abfragen für das CSOM finden Sie unter [Clientsseitiges Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md). 
   
-- **PSI-Weiterleitung:** Der programmgesteuerte Zugriff auf das PSI über ein separates WFE wird über die PSI-Weiterleitung realisiert, die eine WCF-Weiterleitung und eine Webdienst-Weiterleitung. Clients, die die ASMX-Schnittstelle verwenden, greifen über die Webdienst-Weiterleitung auf das PSI zu. Clients, die die WCF-Schnittstelle verwenden, greifen über die WCF-Weiterleitung auf das PSI zu. Der programmgesteuerte Zugriff über CSOM, OData und REST wird ebenfalls über die WCF-Weiterleitung weitergereicht. 
+- **PSI-Weiterleitung:** Der programmgesteuerte Zugriff auf das PSI über ein separates WFE wird über die PSI-Weiterleitung realisiert, die eine WCF-Weiterleitung und eine Webdienst-Weiterleitung. Clients, die die ASMX-Schnittstelle verwenden, greifen über die Webdienst-Weiterleitung auf das PSI zu. Clients, die das WCF-Interface verwenden, greifen über die WCF-Weiterleitung auf das PSI zu. Der programmgesteuerte Zugriff über CSOM, OData und REST wird ebenfalls über die WCF-Weiterleitung weitergereicht. 
     
 - **Workflows:** Deklarative Workflows (in SharePoint Designer 2013 definierte Workflows) werden zur Verarbeitung an Workflow-Manager-Client 1.0 ausgelagert. Workflow-Manager-Client 1.0 kann auf einem separaten Server in der SharePoint-Farm, unter Microsoft Azure in der Cloud oder zu Test- oder Demonstrationszwecken auf einem einzelnen Computer mit Project Server ausgeführt werden. Codierte Workflows, die mit Visual Studio 2012 entwickelt wurden, werden in der Workflowlaufzeit in SharePoint verarbeitet, so wie auch in Project Server 2010. Weitere Informationen finden Sie unter [Erste Schritte beim Entwickeln von Project Server-Workflows](getting-started-developing-project-server-workflows.md).
     
@@ -128,7 +128,7 @@ Für Abbildung 3 gelten die folgenden allgemeinen Anmerkungen:
     
 - **SharePoint-Webdienste:** In der Abbildung 3 ist nicht die SharePoint-Infrastruktur dargestellt, z. B. die Back-End-SharePoint-Webdiensteanwendung, die Teil von SharePoint Server 2013 ist. Wenn Sie Project Server installieren, wird die Project-Dienstanwendung den SharePoint-Webdiensten hinzugefügt. 
     
-Die Front-End-Ebene umfasst Drittanbieteranwendungen, Project Professional und Project Web App. Ein Browser zeigt ASP.NET 4.0-Seiten (ASPX-Seiten) in Project Web App an. Die Project Web App-Seiten verwenden Project Server-Webparts, die mit dem PSI kommunizieren und Standard-SharePoint-Webparts verwenden. 
+Die Front-End-Ebene umfasst Drittanbieteranwendungen, Project Professional und Project Web App. Ein Browser zeigt ASP.NET 4.0-Seiten (ASPX-Seiten) in Project Web App an. Die Project Web App-Seiten verwenden Project Server-Webparts, die mit der PSI kommunizieren und Standard-SharePoint-Webparts verwenden. 
   
 Die mittlere Schicht umfasst das PSI und die Geschäftsobjektschicht, die aus logischen Objekten besteht, die Project Server-Geschäftsentitäten repräsentieren. Zu den Geschäftsentitäten zählen u. a. "Project", "Task", "Resource" und "Assignment". Das PSI und die Geschäftsobjektschicht sind eng miteinander gekoppelt und befinden sich auf demselben Server. Eine Clientanwendung ruft das PSI über eine der verfügbaren Schnittstellen auf, und das PSI ruft daraufhin Geschäftsobjekte auf. Für eine optimierte Leistungsfähigkeit bezieht das WFE von Project Server 2013 einige Geschäftsobjekte in Anforderungen ein, die nicht das Warteschlangensystem von Project Server verwenden oder den Dienst für Project-Berechnungen erfordern. Die WFE-Geschäftsobjekte kommunizieren direkt mit der Project-Datenbank.
   
@@ -224,7 +224,7 @@ Project Server-Daten werden wie folgt in der Project-Datenbank aufgeteilt:
     
 Logische Entitäten wie "Resource" oder "Project" können sich über mehrere Tabellen erstrecken, und alle Tabellen für eine bestimmte Entität haben denselben Primärschlüssel. Der Primärschlüssel ist eine GUID in einer einzelnen Spalte, die eine Instanz einer bestimmten Entität eindeutig kennzeichnet.
   
-Project Server-Daten werden für jede Instanz von Project Web App in einer separaten Project-Datenbank mit jeweils unterschiedlichem Namen gespeichert. Clientanwendungen, die direkten Zugriff auf Project Server haben, können die Berichtstabellen und -ansichten direkt lesen. Bei Remotezugriff können die Clientanwendungen die OData-Schnittstelle und die REST-Schnittstelle verwenden, um Daten für Berichte abzurufen. Clients sollten nur das CSOM oder das PSI verwenden, um auf Entwurfstabellen und -ansichten, veröffentlichte Tabellen und Ansichten sowie Archivtabellen und -ansichten zuzugreifen. Der Berichtsdatendienst (in Abbildung 3 nicht dargestellt) aktualisiert die Berichtsdaten von veröffentlichten Daten nahezu in Echtzeit. Die Project-Datenbank kann sich auf einem separaten Server befinden.
+Project Server-Daten werden für jede Instanz von Project Web App in einer separaten Project-Datenbank mit jeweils unterschiedlichem Namen gespeichert. Clientanwendungen, die direkten Zugriff auf Project Server haben, können die Berichtstabellen und -ansichten direkt lesen. Bei Remote-Zugriff können die Client-Anwendungen das OData-Interface und das REST-Interface verwenden, um Daten für Berichte abzurufen. Clients sollten nur das CSOM oder das PSI verwenden, um auf Entwurfstabellen und -ansichten, veröffentlichte Tabellen und Ansichten sowie Archivtabellen und -ansichten zuzugreifen. Der Berichtsdatendienst (in Abbildung 3 nicht dargestellt) aktualisiert die Berichtsdaten von veröffentlichten Daten nahezu in Echtzeit. Die Project-Datenbank kann sich auf einem separaten Server befinden.
   
 Schemas werden nur für die Berichtstabellen und -ansichten dokumentiert. Bei einer lokalen Project Server-Installation können Sie Berichtstabellen und -ansichten für Entitäten hinzufügen, die nicht im Schema der Project-Datenbank definiert sind. Sie können auch separate Datenbanken für benutzerdefinierte Anwendungen vor Ort erstellen. Änderungen an den Entwurfstabellen und -ansichten, veröffentlichte Tabellen und Ansichten sowie Archivtabellen und -ansichten werden nicht unterstützt. Da nicht direkt in Project Online auf die Project-Datenbank zugegriffen werden kann, können Berichtstabellen und -ansichten nicht geändert werden. Wenn Sie jedoch über ein SQL Azure-Konto verfügen, können Sie separate Datenbanken für die benutzerdefinierte Verwendung erstellen Project Online.
   

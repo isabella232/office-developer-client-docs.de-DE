@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dfc92878-ab8b-4721-aee8-997c56a8e45b
-description: Gibt eine Zeichenfolge, die die Versionsnummer des Anbieters für diese für soziale Netzwerke darstellt.
-ms.openlocfilehash: 5c82df2dc4c052b1a06bcecb16defbb4dee38b18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine Zeichenfolge, die die Versionsnummer des Anbieters für dieses soziale Netzwerk darstellt.
+ms.openlocfilehash: 0749b8fb83a11328233442b79e1f9de50076effe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285385"
 ---
 # <a name="isocialproviderversion"></a>ISocialProvider::Version
 
-Gibt eine Zeichenfolge, die die Versionsnummer des Anbieters für diese für soziale Netzwerke darstellt. 
+Gibt eine Zeichenfolge, die die Versionsnummer des Anbieters für dieses soziale Netzwerk darstellt. 
   
 ```cpp
 [propget] HRESULT _stdcall Version([out, retval] BSTR* Version);
@@ -29,7 +29,7 @@ Eine Zeichenfolge, die die Versionsnummer des Anbieters enthält.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die Versionszeichenfolge sollten die _Hauptversion_verwenden. _MinorVersion_ -Format (beispielsweise 1.4730). 
+Die Versionszeichenfolge sollte den _"MajorVersion"_ verwenden. _MinorVersion_ -Format (beispielsweise 1,4730). 
   
 ## <a name="see-also"></a>Siehe auch
 

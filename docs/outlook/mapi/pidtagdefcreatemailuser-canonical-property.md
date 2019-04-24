@@ -1,5 +1,5 @@
 ---
-title: PidTagDefCreateMailuser (kanonische Eigenschaft)
+title: Kanonische Pidtagdefcreatemailuser (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e8293dc9-f2f1-4065-89f4-e734a8db63df
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 21fdff2aa713905a27a3d0cc5545ceb59f030378
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: cd09c85e4f44bbea29807d72a273ccf6980ca6df
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32269986"
 ---
-# <a name="pidtagdefcreatemailuser-canonical-property"></a>PidTagDefCreateMailuser (kanonische Eigenschaft)
+# <a name="pidtagdefcreatemailuser-canonical-property"></a>Kanonische Pidtagdefcreatemailuser (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Vorlage Eintrags-ID für eine standardmäßige messaging User-Objekt enthält. 
+Enthält den Vorlagen Eintragsbezeichner für ein Standardmäßiges Messaging-Benutzerobjekt. 
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Die Vorlage Eintrags-ID für eine standardmäßige messaging User-Objekt enthäl
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen mit dieser Eigenschaft können Sie um ein messaging User-Objekt in einem Container zu erstellen. Unterstützung von Eintrag Creation ist optional für Address Book Container. die, die nicht unterstützen sind nicht erforderlich, diese Eigenschaft verfügbar machen. 
+Client Anwendungen verwenden diese Eigenschaft, um ein Messaging-Benutzerobjekt in einem Container zu erstellen. Die Unterstützung der Eintragserstellung ist für Adressbuchcontainer optional. diejenigen, die es nicht unterstützen, müssen diese Eigenschaft nicht offen legen. 
   
-Diese Eigenschaft gibt einen Eintrag, der angezeigt werden, kann in der Eigenschaft **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) für die messaging-Benutzer. Wenn den Bezeichner erhalten haben, verwendet der Client es in einem Aufruf der [IABContainer::CreateEntry](iabcontainer-createentry.md) -Methode. Der Eintrag stellt die Vorlage für den Standard-messaging-Benutzer dar. 
+Diese Eigenschaft gibt einen Eintrag an, der in der **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft für Messagingbenutzer angezeigt werden kann. Nach dem Abrufen des Bezeichners verwendet der Client diesen bei einem Aufruf der [IABContainer:: CreateEntry](iabcontainer-createentry.md) -Methode. Der Eintrag stellt die Vorlage für den standardmäßigen Messagingbenutzer dar. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

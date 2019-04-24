@@ -1,5 +1,5 @@
 ---
-title: PidTagRuleProvider (kanonische Eigenschaft)
+title: Kanonische Pidtagruleprovider (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,15 +11,15 @@ api_name:
 api_type:
 - COM
 ms.assetid: 64f80a03-9ba4-495a-9666-b3a909335cb6
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 19889a1f48a6088f0d5ad224f7e9189b112622fa
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280605"
 ---
-# <a name="pidtagruleprovider-canonical-property"></a>PidTagRuleProvider (kanonische Eigenschaft)
+# <a name="pidtagruleprovider-canonical-property"></a>Kanonische Pidtagruleprovider (-Eigenschaft
 
   
   
@@ -32,35 +32,35 @@ Enthält den Namen der Anwendung, die eine Regel festlegt.
 |Zugeordnete Eigenschaften:  <br/> |PR_RULE_PROVIDER, PR_RULE_PROVIDER_A, PR_RULE_PROVIDER_W  <br/> |
 |Kennung:  <br/> |0x6681  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Serverseitige Regeln  <br/> |
+|Bereich:  <br/> |Server seitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zurückgestellt Aktionen müssen diese Eigenschaften zum Identifizieren des Codes, die interpretiert werden und die Regelaktion ausführen müssen.
+Verzögerte Aktionen benötigen diese Eigenschaften, um den Code zu identifizieren, der die Regelaktion interpretieren und ausführen muss.
   
-Regeln für Postfächer und Ordner gespeichert sind zugeordnet, mit der Anwendung, die sie von einer Regel Anbieterzeichenfolge besitzt. Ein Anbieter Regel festgelegt und Regeln in einer Regeltabelle behandelt. Es bietet auch eine Möglichkeit, alle zurückgestellten Aktionen verarbeiten, wenn solche Regeln festgelegt sind. Zurückgestellte Aktionen werden von den Informationsspeicher implizit erstellt. Für Vorgänge verschieben oder Kopieren auf einen anderen Wenn ein Anbieter in der Regel verzögerter Aktion Legt fest, muss es einen Ereignishandler bereitstellen, um die Aktion ausführen, wenn die Regel ausgelöst wird, und eine verzögerte Aktion erstellt wird.
+Regeln, die in Postfächern und Ordnern gespeichert sind, sind der Anwendung zugeordnet, die Sie durch eine Zeichenfolge des Regel Anbieters besitzt. Ein Regel Anbieter legt Regeln in einer Regeltabelle fest und verarbeitet sie. Sie bietet auch eine Möglichkeit, verzögerte Aktionen zu behandeln, wenn solche Regeln festgelegt werden. Verzögerte Aktionen werden implizit vom Informationsspeicher erstellt. Bei Verschiebungs-oder Kopiervorgängen in einen anderen Speicher muss ein Anbieter, der eine verzögerte Aktionsregel festlegt, einen Handler bereitstellen, um die Aktion auszuführen, wenn die Regel ausgelöst wird und eine verzögerte Aktion erstellt wird.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
-> Eingehende e-Mail-Nachrichten auf einem Server bearbeitet.
+> Bearbeitet eingehende e-Mail-Nachrichten auf einem Server.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,5 +72,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

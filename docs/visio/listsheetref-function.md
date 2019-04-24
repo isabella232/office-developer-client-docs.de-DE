@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 87ddbc35-8577-0a96-20b8-aa7734764c5b
 description: Gibt eine Blattreferenz auf das Listencontainer-Shape zurück, das das Shape enthält.
-ms.openlocfilehash: 75c765fab2d287c2da83a659dbbf070d29a9d325
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 748a248f68345e97e97ca90a4603b6e164a551c4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284081"
 ---
 # <a name="listsheetref-function"></a>LISTSHEETREF Function
 
@@ -25,9 +25,9 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-LISTMEMBERCOUNT()
+LISTMEMBERCOUNT ()
   
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 ShapeSheet-Referenz
   
@@ -37,7 +37,7 @@ Wenn es sich bei dem Shape nicht um ein Listenelement handelt, gibt die LISTSHEE
   
 ## <a name="example"></a>Beispiel
 
-LISTSHEETREF(1)!Height 
+LISTSHEETREF (1)! Höhe 
   
 Gibt den Werte in der Zelle "Height" des Listencontainer-Shapes zurück, das das Shape enthält. 
   

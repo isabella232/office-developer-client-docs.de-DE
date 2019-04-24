@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c3e883c-80c0-4eda-8f81-8277d933a74b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 02815c60b6bfc9809871af19e922913622588fc9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a476607927f3563ede94a04ccfe4f7a3749c978e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280071"
 ---
 # <a name="imapifolderdeletefolder"></a>IMAPIFolder::DeleteFolder
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Löscht einen Unterordner.
   
@@ -41,37 +41,37 @@ HRESULT DeleteFolder(
 
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Unterordners zu löschen.
+> in Ein Zeiger auf die Eintrags-ID des zu löschenden Unterordners.
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster der Statusanzeige. Der Parameter _UlUIParam_ wird ignoriert, es sei denn, das Flag FOLDER_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Handle für das übergeordnete Fenster der Statusanzeige. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das FOLDER_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _lpProgress_
   
-> [in] Ein Zeiger auf ein Fortschritt-Objekt, das eine Statusanzeige wird angezeigt. Wenn NULL _LpProgress_übergeben wird, wird der Nachricht Speicheranbieter eine Statusanzeige mithilfe der MAPI-Fortschritt objektimplementierung angezeigt. Der Parameter _LpProgress_ wird ignoriert, es sei denn, das Flag FOLDER_DIALOG in _UlFlags_festgelegt ist.
+> in Ein Zeiger auf ein Progress-Objekt, das eine Statusanzeige anzeigt. Wenn NULL in _lpProgress_übergeben wird, zeigt der Nachrichtenspeicher Anbieter mithilfe der MAPI-Progress-Objekt Implementierung eine Statusanzeige an. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das FOLDER_DIALOG-Flag wird in _ulFlags_festgelegt.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die das Löschen des Unterordners steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die das Löschen des Unterordners steuert. Die folgenden Flags können festgelegt werden:
     
 DEL_FOLDERS 
   
-> Alle Unterordner des Unterordners auf den _LpEntryID_ sollte gelöscht werden. 
+> Alle Unterordner des Unterordners, auf die durch _lpEntryID_ verwiesen wird, sollten gelöscht werden. 
     
 DEL_MESSAGES 
   
-> Alle Nachrichten in den Unterordner auf den _LpEntryID_ sollte gelöscht werden. 
+> Alle Nachrichten im Unterordner, auf die von _lpEntryID_ verwiesen wird, sollten gelöscht werden. 
     
 FOLDER_DIALOG 
   
-> Eine Statusanzeige sollte angezeigt werden, während der Vorgang fortgesetzt wird.
+> Während des Vorgangs wird eine Statusanzeige angezeigt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -79,45 +79,45 @@ S_OK
     
 MAPI_E_HAS_FOLDERS 
   
-> Der zu löschende Unterordner enthält Unterordner, und das Flag DEL_FOLDERS wurde nicht festgelegt. Die Unterordner wurden nicht gelöscht.
+> Der gelöschte Ordner enthält Unterordner, und das DEL_FOLDERS-Flag wurde nicht festgelegt. Die Unterordner wurden nicht gelöscht.
     
 MAPI_E_HAS_MESSAGES 
   
-> Der zu löschende Unterordner enthält Nachrichten, und das Flag DEL_MESSAGES wurde nicht festgelegt. Der Unterordner wurde nicht gelöscht.
+> Der gelöschte Ordner enthält Nachrichten, und das DEL_MESSAGES-Flag wurde nicht festgelegt. Der Unterordner wurde nicht gelöscht.
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Aufruf war erfolgreich, aber nicht alle Einträge erfolgreich gelöscht wurden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf war erfolgreich, aber nicht alle Einträge wurden erfolgreich gelöscht. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIFolder::DeleteFolder** -Methode löscht einen Unterordner. In der Standardeinstellung **DeleteFolder** funktioniert nur bei leeren Ordnern, jedoch können Sie sie erfolgreich für nicht leeren Ordner durch zwei Werte festlegen: DEL_FOLDERS und DEL_MESSAGES. Nur leere Ordner oder die Ordner, in denen die DEL_FOLDERS und die DEL_MESSAGES Kennzeichen für den Aufruf **DeleteFolder** festlegen können gelöscht werden. DEL_FOLDERS können alle Unterordner des Ordners entfernt werden soll. DEL_MESSAGES können alle Nachrichten von den Ordner entfernt werden soll. 
+Die **IMAPIFolder::D eletefolder** -Methode löscht einen Unterordner. Standardmäßig wird **DeleteFolder** nur in leeren Ordnern ausgeführt, aber Sie können es erfolgreich in nicht leeren Ordnern verwenden, indem Sie zwei Flags festlegen: DEL_FOLDERS und DEL_MESSAGES. Nur leere Ordner oder Ordner, die sowohl die DEL_FOLDERS-als auch die DEL_MESSAGES-Flags für den **DeleteFolder** -Aufruf festlegen, können gelöscht werden. DEL_FOLDERS ermöglicht das Entfernen aller Unterordner des Ordners; DEL_MESSAGES ermöglicht das Entfernen aller Nachrichten des Ordners. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn der Löschvorgang mehrere Ordner umfasst, führen Sie den Vorgang für jeden Ordner möglichst vollständig. Manchmal einen der zu löschenden Ordner wurde ist nicht vorhanden oder verschoben oder kopiert wurde an anderer Stelle. Beenden Sie den Vorgang nicht vorzeitig auf, es sei denn, ein Fehler, die außerhalb Ihrer Kontrolle auftritt, wie nicht genügend Arbeitsspeicher, nicht genügend Speicherplatz oder der Beschädigung im Nachrichtenspeicher ausgeführt wird.
+Wenn der Löschvorgang mehr als einen Ordner umfasst, führen Sie den Vorgang für jeden Ordner so vollständig wie möglich aus. Manchmal ist einer der zu löschenden Ordner nicht vorhanden oder wurde an anderer Stelle verschoben oder kopiert. Beenden Sie den Vorgang nicht vorzeitig, es sei denn, es tritt ein Fehler auf, der außerhalb Ihres Steuerelements liegt, beispielsweise ausgehender Arbeitsspeicher, unzureichender Festplattenspeicherplatz oder Beschädigung im Nachrichtenspeicher.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Diese Rückgabewerte unter folgenden Umständen zu erwarten.
+Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
   
-|**Bedingung**|**R�ckgabewert**|
+|**Bedingung**|**Rückgabewert**|
 |:-----|:-----|
-|Jede Nachricht und Unterordner **DeleteFolder** wurde gelöscht.  <br/> |S_OK  <br/> |
-|**DeleteFolder** konnte jede Nachricht und Unterordner erfolgreich zu löschen.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |
-|**DeleteFolder** konnte nicht abgeschlossen.  <br/> |Einen Fehlerwert außer MAPI_E_NOT_FOUND  <br/> |
+|**DeleteFolder** hat alle Nachrichten und Unterordner erfolgreich gelöscht.  <br/> |S_OK  <br/> |
+|**DeleteFolder** konnte nicht alle Nachrichten und Unterordner erfolgreich löschen.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |
+|**DeleteFolder** konnte nicht abgeschlossen werden.  <br/> |Beliebiger Fehlerwert außer MAPI_E_NOT_FOUND  <br/> |
    
-Wenn **DeleteFolder** konnte nicht abgeschlossen ist, gehen Sie nicht, dass keine Arbeit ausgeführt wurde. **DeleteFolder** wurden möglicherweise eine oder mehrere Nachrichten und Unterordner löschen, bevor der Fehler auftritt. 
+Wenn **DeleteFolder** nicht abgeschlossen werden kann, gehen Sie nicht davon aus, dass keine Arbeit ausgeführt wurde. **DeleteFolder** kann möglicherweise eine oder mehrere der Nachrichten und Unterordner gelöscht haben, bevor der Fehler auftritt. 
   
-Wenn eine oder mehrere Unterordner können nicht gelöscht werden, gibt **DeleteFolder** MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND, je nach der Implementierung der Nachricht Informationsdienst zurück. 
+Wenn ein oder mehrere Unterordner nicht gelöscht werden können, gibt **DELETEFOLDER** MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND zurück, je nach der Implementierung des Nachrichtenspeicher Anbieters. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnDeleteSelectedItem  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFolder::DeleteFolder** -Methode zum Löschen von Ordnern.  <br/> |
+|MsgStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMAPIFolder::D eletefolder** -Methode, um Ordner zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 322ea2e9-d6c9-48f9-a927-7162346d16a4
-description: Gibt ein Array von Zeichenfolgen, die Website-URLs für den Anbieter Outlook Social Connector (OSC) angeben.
-ms.openlocfilehash: a2b2e0397c7c67476ac8067a53e2acbd4eddf270
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den Outlook Social Connector (OSC)-Anbieter angeben.
+ms.openlocfilehash: 34d779d5eb42b81a14c5236685104e9ef4fe36f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285856"
 ---
 # <a name="isocialproviderdefaultsiteurls"></a>ISocialProvider::DefaultSiteUrls
 
-Gibt ein Array von Zeichenfolgen, die Website-URLs für den Anbieter Outlook Social Connector (OSC) angeben.
+Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den Outlook Social Connector (OSC)-Anbieter angeben.
   
 ```cpp
 [propget] HRESULT _stdcall DefaultSiteUrls([out, retval] SAFEARRAY(BSTR)* siteUrls);
@@ -25,13 +25,13 @@ Gibt ein Array von Zeichenfolgen, die Website-URLs für den Anbieter Outlook Soc
 
 ## <a name="property-value"></a>Eigenschaftswert
 
-Ein Zeiger auf eine Struktur, die ein Array von Zeichenfolgen gibt an, die Website-URLs für den OSC-Anbieter darstellen.
+Ein Zeiger auf eine Struktur, die ein Array von Zeichenfolgen angibt, die Website-URLs für den OSC-Anbieter darstellen.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Ein Anbieter kann mehrere Website-URLs unterstützen. Die OSC wird die [ISocialSession::SiteUrl](isocialsession-siteurl.md) -Eigenschaft, um den Anbieter für die ausgewählte Website-URL zu informieren. 
+Ein Anbieter kann mehrere Website-URLs unterstützen. OSC legt die [ISocialSession:: siteurl](isocialsession-siteurl.md) -Eigenschaft fest, um den Anbieter über die ausgewählte Website-URL zu informieren. 
   
-Die OSC wird das erste Element des Arrays als den Standard-URL der Website verwendet. Ein Anbieter kann zusätzliche Elemente in der Website-URL-Array zurückgeben, aber die OSC nicht verwenden. 
+OSC verwendet das erste Element des Arrays als Standardwebsite-URL. Ein Anbieter kann zusätzliche Elemente im URL-Array der Website zurückgeben, aber der OSC verwendet Sie nicht. 
   
 ## <a name="see-also"></a>Siehe auch
 

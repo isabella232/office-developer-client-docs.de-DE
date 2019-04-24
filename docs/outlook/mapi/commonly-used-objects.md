@@ -7,39 +7,39 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 24d4bc7e-db85-48e7-b840-0b67e319376f
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 72911e58a0295c0f6c61c877882e4e1731e2d552
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: a4f19b68eecc5173acfe21e5c7c7b1f8d836285a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285237"
 ---
 # <a name="commonly-used-objects"></a>Häufig verwendete Objekte
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zu Objekten ist in verschiedenen Abschnitten der Microsoft Outlook 2013 MAPI-Referenz dokumentiert. Der Ansatz ist, da eine einzelne MAPI-Schnittstelle fast alle MAPI-Objekte verfügbar machen, Objekte und die Schnittstellen, die sie verfügbar machen als Synonym behandeln.
+Informationen zu Objekten werden in verschiedenen Abschnitten der MAPI-Referenz von Microsoft Outlook 2013 dokumentiert. Da fast alle MAPI-Objekte eine einzelne MAPI-Schnittstelle verfügbar machen, besteht der Ansatz darin, Objekte und die Schnittstellen zu behandeln, die Sie als Synonym darstellen.
   
-In den folgenden Abschnitten finden Sie Informationen zu Objekten und Schnittstellen.
+Informationen zu Objekten und Schnittstellen finden Sie in den folgenden Abschnitten.
   
 - [MAPI-Schnittstellen](mapi-interfaces.md)
     
-    Beschreibt die Schnittstellen in Outlook 2013 MAPI-Referenz. In diesem Abschnitt können Sie beispielsweise Informationen zum Implementieren und verwenden Sie einen Ordner unter seiner Standardschnittstelle **IMAPIFolder**suchen.
+    Beschreibt die Schnittstellen in der MAPI-Referenz für Outlook 2013. In diesem Abschnitt finden Sie beispielsweise Informationen zum Implementieren und Verwenden eines Ordners unter seiner Standardschnittstelle **IMAPIFolder**.
     
-- [MAPI-Objekt und Übersicht über die Benutzeroberfläche](mapi-object-and-interface-overview.md)
+- [Übersicht über MAPI-Objekte und-Schnittstellen](mapi-object-and-interface-overview.md)
     
-    Führt in der Component Object Model bezieht sich auf MAPI, beschreibt das MAPI-Hierarchie und Kapselung-Objektmodell, ordnet Objekte Schnittstellen und Implementierungsaufgaben beschreibt.
+    Stellt das Komponentenobjektmodell im Zusammenhang mit MAPI vor, beschreibt die MAPI-Objekthierarchie und das Kapselungs Modell, ordnet Objekte zu Schnittstellen zu und beschreibt die Implementierungs Verantwortlichkeiten.
     
 - [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
     
-    Beschreibt, wie Objekte zu verwalten und Clients arbeiten mit Eigenschaften.
+    Beschreibt, wie Objekte verwaltet werden und wie Clients mit Eigenschaften arbeiten.
     
 - [MAPI-Tabellen](mapi-tables.md)
     
-    Enthält detaillierte Angaben zu implementieren und zu einem Table-Objekt verwenden, und erläutert die Zusammensetzung und den Zweck der verschiedenen Arten von Tabellen.
+    Beschreibt ausführlich, wie ein Table-Objekt implementiert und verwendet wird, und erläutert die Zusammensetzung und den Zweck der verschiedenen Tabellentypen.
     
 - [MAPI-Formulare](mapi-forms.md)
     
@@ -57,32 +57,32 @@ In den folgenden Abschnitten finden Sie Informationen zu Objekten und Schnittste
     
   - Empfänger
     
-  - Status-Objekte
+  - Statusobjekte
     
-  - Benutzerprofil und Nachricht-Objekte
+  - Profil-und Nachrichtendienst Objekte
     
-- [Entwickeln einer MAPI-Clientanwendung](developing-a-mapi-client-application.md)
+- [Entwickeln einer MAPI-Client Anwendung](developing-a-mapi-client-application.md)
     
-    Beschreibt, wie Objekte verwenden, um einen MAPI-Client-Anwendung zu implementieren.
+    Beschreibt, wie Objekte zum Implementieren einer MAPI-Clientanwendung verwendet werden.
     
 - [MAPI-Dienstanbieter](mapi-service-providers.md)
     
-    Beschreibt, wie Objekte Support und Fortschritt verwendet und Implementierung ein Statusobjekt und Tabelle angezeigt.
+    Beschreibt, wie Support-und Progress-Objekte verwendet werden und wie ein Statusobjekt und eine Anzeigetabelle implementiert werden.
     
-- [Entwicklung eines MAPI-Adressbuchanbieters](developing-a-mapi-address-book-provider.md)
+- [Entwickeln eines MAPI-Adressbuch Anbieters](developing-a-mapi-address-book-provider.md)
     
-    Beschreibt, wie die Adresse Book-Anmeldung und Anbieter-Objekten implementieren, address Book-Containern und messaging-Benutzern, Verteilerlisten und verknüpfte Tabellen.
+    Beschreibt die Implementierung von Adressbuch-und Anbieter Objekten, Adressbuch Containern, Messaging Benutzern, Verteilerlisten und verwandten Tabellen.
     
-- [Entwickeln eines MAPI-Transportanbieters](developing-a-mapi-transport-provider.md)
+- [Entwickeln eines MAPI-Transport Anbieters](developing-a-mapi-transport-provider.md)
     
-    Beschreibt, wie die Transport Anmeldung und Anbieterobjekte, Statusobjekt, Transport Neutral Encapsulation Format (TNEF)-Objekt und Ordnern zu implementieren.
+    Beschreibt, wie die Transport Anmelde-und Anbieterobjekte, das Statusobjekt, das Transport neutrale Encapsulation Format (TNEF)-Objekt und Ordner implementiert werden.
     
 - [Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
     
-    Beschreibt, wie die Message Store-Anmeldung und Anbieter Objekte Nachrichtenspeicher, Ordner, Nachrichten, Anlagen, Empfänger und verknüpfte Tabellen implementieren.
+    Beschreibt, wie die Nachrichtenspeicher-Anmelde-und-Anbieterobjekte, Nachrichtenspeicher, Ordner, Nachrichten, Anlagen, Empfänger und zugehörige Tabellen implementiert werden.
     
-- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
     
-    Beschreibt das Formular-Objekte zu implementieren.
+    Beschreibt, wie Formularobjekte implementiert werden.
     
 

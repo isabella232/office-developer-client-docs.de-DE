@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlGetName
 keywords:
-- Xlgetname-Funktion [excel 2007]
+- xlgetname-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 72dbebc0-7436-4771-8fbf-2b445341da65
 description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 069676957d280a0bf3b398bb23b27f0e654bc655
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 350ae99baf088a36fa3e1159caa1805cdd623276
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303829"
 ---
 # <a name="xlgetname"></a>xlGetName
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt den vollständigen Pfad und Namen der DLL in Form einer Zeichenfolge zurück.
+Gibt den vollständigen Pfad und den Dateinamen der DLL in Form einer Zeichenfolge zurück.
   
 ```cs
 Excel12(xlGetName, LPXLOPER12 pxRes, 0);
@@ -32,9 +32,9 @@ Excel12(xlGetName, LPXLOPER12 pxRes, 0);
 
 Diese Funktion hat keine Argumente.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Der Pfad und Dateiname (**XltypeStr**) zurückgegeben. 
+Gibt den Pfad und den Dateinamen (**xltypeStr**) zurück. 
   
 ## <a name="example"></a>Beispiel
 

@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2dd95561-ed8f-8a3b-6532-b53556f16666
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ced6f2c6540e04a0bb4945ff98c4fda520322f03
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 5e623c9d40ffd2dd276bd9601676244644bb3402
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299888"
 ---
 # <a name="getdefcachedmodedownloadpubfoldfavs"></a>GetDefCachedModeDownloadPubFoldFavs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob der Exchange-Cache-Modus für den Ordner **Öffentliche Ordner-Favoriten** aktiviert ist, und gibt an, ob dies durch Richtlinien erzwungen wird. 
+Gibt an, ob der Exchange-Cache-Modus für den Ordner **Favoriten für Öffentliche Ordner** aktiviert ist und ob dieser durch die Richtlinie erzwungen wird. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Vom exportiert werden:  <br/> |Msmapi32.dll  <br/> |
+|Exportiert von:  <br/> |msmapi32. dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
    
@@ -40,17 +40,17 @@ BOOL GetDefCachedModeDownloadPubFoldFavs(BOOL *pfPolicy);
 
  _pfPolicy_
   
-> [out] **true,** Wenn der Rückgabewert ist dies nicht durch Richtlinien, **false** erzwungen wird. 
+> Out **true** , wenn der Rückgabewert durch die Richtlinie erzwungen wird, **false** , wenn dies nicht der Fall ist. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
  **true**
   
-- Das Zwischenspeichern ist aktiviert.
+- Zwischenspeicherung ist aktiviert.
     
  **false**
   
-- Zwischenspeichern ist deaktiviert.
+- Zwischenspeicherung ist deaktiviert.
     
 ## <a name="see-also"></a>Siehe auch
 

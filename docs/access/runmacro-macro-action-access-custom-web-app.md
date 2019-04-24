@@ -1,36 +1,36 @@
 ---
-title: AusführenMakro-Makroaktion (Access benutzerdefinierte Web app)
+title: RunMacro-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 59ba365d-cff5-4126-bc22-4d5a37578aab
-description: Die AusführenMakro-Aktion können Sie ein Benutzer-Benutzeroberfläche (UI) Makro ausführen.
-ms.openlocfilehash: 68a59e246c0af8385a17aedcf3da771c720f8fd7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sie können die RunMacro-Aktion verwenden, um ein Benutzeroberflächen Makro auszuführen.
+ms.openlocfilehash: 98e3b17a6c64fa12ac37e4551d45714c873f5ccb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307966"
 ---
-# <a name="runmacro-macro-action-access-custom-web-app"></a>AusführenMakro-Makroaktion (Access benutzerdefinierte Web app)
+# <a name="runmacro-macro-action-access-custom-web-app"></a>RunMacro-Makroaktion (benutzerdefinierte Access-Web-App)
 
-Die **AusführenMakro** -Aktion können Sie ein Benutzer-Benutzeroberfläche (UI) Makro ausführen. 
+Sie können die **RunMacro** -Aktion verwenden, um ein Benutzeroberflächen Makro auszuführen. 
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="setting"></a>Einstellung
 
-Die **AusführenMakro** -Aktion hat die folgenden Argumente. 
+Die **AusführenMakro**-Aktion hat die folgenden Argumente. 
   
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
-|**Makroname** <br/> |Der Name des auszuführenden Makros Benutzeroberfläche.  <br/> |
+|**Makroname** <br/> |Der Name des auszuführenden Benutzeroberflächen Makros.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie eine Benutzeroberflächenmakro ausführen, enthält die **AusführenMakro** -Aktion, und er die **AusführenMakro** -Aktion erreicht, führt Access das gewählte UI-Makro. Wenn die gewählte Benutzeroberflächenmakro beendet wurde, Access gibt Sie zurück zum ursprünglichen UI-Makro und führt die nächste Aktion. 
+Wenn Sie ein Benutzeroberflächen Makro ausführen, das die **RunMacro** -Aktion enthält, und es die **RunMacro** -Aktion erreicht, wird das aufgerufene Benutzeroberflächen Makro von Access ausgeführt. Wenn das aufgerufene Benutzeroberflächen Makro beendet wurde, kehrt Access zum ursprünglichen Benutzeroberflächen Makro zurück und führt die nächste Aktion aus. 
   
 

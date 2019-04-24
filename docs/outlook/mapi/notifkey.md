@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 031b7e18-59b2-445c-a747-348fda92f458
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 36b8381e2bf98f5ddcb88a54b56f2b5c91b3b668
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ab1586696a4b72aa9e88545c2069c3f8b5d22d72
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280047"
 ---
 # <a name="notifkey"></a>NOTIFKEY
 
@@ -25,11 +25,11 @@ ms.locfileid: "22572599"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Identifiziert eindeutig eine Verbindung zwischen einer Advise-Empfänger, eine Advise-Quelle und MAPI.
+Identifiziert eindeutig eine Verbindung zwischen einer Advise-Senke, einer Advise-Quelle und MAPI.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
    
 ```cpp
 typedef struct
@@ -44,23 +44,23 @@ typedef struct
 
  **cb**
   
-> Die Anzahl von Bytes in das Element **Ab** . 
+> Die Anzahl der Bytes im **ab** -Element. 
     
  **ab**
   
-> Array von Bytes, beschreibt die Benachrichtigung-Taste.
+> Bytearray, das den Benachrichtigungs Schlüssel beschreibt.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die Methoden [Abonnieren](imapisupport-subscribe.md) und [Benachrichtigen](imapisupport-notify.md) der [IMAPISupport](imapisupportiunknown.md) verwenden Sie die Struktur **NOTIFKEY** zum Generieren von Benachrichtigungen an den entsprechenden Advise-Empfänger über die entsprechenden Advise-Quelle. 
+Die [subscribe](imapisupport-subscribe.md) -und [Notify](imapisupport-notify.md) -Methoden von [IMAPISupport](imapisupportiunknown.md) verwenden die **NOTIFKEY** -Struktur, um Benachrichtigungen für die entsprechende Advise-Quelle zu generieren. 
   
-Dienstanbieter generieren Benachrichtigung Schlüssel, wenn ihre **Advise** -Methode aufgerufen wird und sie **Abonnieren** , um die benachrichtigungsregistrierung und das nachfolgende Senden von Benachrichtigungen zu behandeln anrufen möchten. Eine Taste Benachrichtigung kann die Eintrags-ID der Advise-Quelle oder andere identifizierende Elemente wie etwa eine Konstante sein. Beispielsweise kann Anbieter eine Nachricht den Pfad eines Ordners als dessen Benachrichtigung Schlüssel verwenden. 
+Dienstanbieter generieren Benachrichtigungs Schlüssel, wenn Ihre **Advise** -Methode aufgerufen wird, und Sie möchten **abonnieren** aufrufen, um die Benachrichtigungs Registrierung und das anschließende Senden von Benachrichtigungen zu behandeln. Ein Benachrichtigungs Schlüssel kann die Eintrags-ID der Advise-Quelle oder ein beliebiges anderes identifizierendes Element wie eine Konstante sein. Beispielsweise kann ein Nachrichtenspeicher Anbieter den Pfad eines Ordners als Benachrichtigungs Schlüssel verwenden. 
   
-Der Schlüssel Benachrichtigung sollte für mehrere Prozesse funktionieren. 
+Der Benachrichtigungs Schlüssel sollte über mehrere Prozesse hinweg funktionieren. 
   
-Die bereichsanforderungen für eine Benachrichtigung Schlüssel ähneln jenen für langfristige Eintrags-ID. Im Gegensatz zu einer Eintrags-ID, muss eine Benachrichtigung Taste jedoch binär-vergleichbar sein. In der Regel enthält ein Benachrichtigung Schlüssel einen **GUID** -Wert, der vom Dienstanbieter gefolgt von anderen eindeutigen anbieterspezifische Informationen auf das Objekt definiert. 
+Die Bereichsanforderungen für einen Benachrichtigungs Schlüssel ähneln denen für eine langfristige Eintrags-ID. Anders als bei einer Eintrags-ID muss ein Benachrichtigungs Schlüssel jedoch Binär-vergleichbar sein. In der Regel enthält ein Benachrichtigungs Schlüssel einen vom Dienstanbieter definierten **GUID** -Wert, gefolgt von anderen anbieterspezifischen Informationen, die für das Objekt eindeutig sind. 
   
-Eine Erläuterung der Verwendung der Struktur **NOTIFKEY** zum Verwalten von Verbindungen zwischen der Advise-senken und die Objekte, die die Benachrichtigungen generieren finden Sie unter [Ereignisbenachrichtigung unterstützen](supporting-event-notification.md). 
+Eine Erläuterung der Verwendung der **NOTIFKEY** -Struktur zum Verwalten der Verbindungen zwischen den Advise-Senken und den Objekten, die die Benachrichtigungen generieren, finden Sie unter [unterstützende Ereignisbenachrichtigung](supporting-event-notification.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

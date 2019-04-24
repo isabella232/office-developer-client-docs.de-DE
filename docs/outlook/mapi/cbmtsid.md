@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: e408fe16-a2fc-4714-895d-31b8c3763e3e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2297f7fa17eb25752e0acec2a5287dfaef77e4af
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6c1d0d3a433c98b97d51d507885f6a83712456d4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281599"
 ---
 # <a name="cbmtsid"></a>CbMTSID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes in einer vorhandenen [MTSID](mtsid.md) Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [MTSID](mtsid.md) -Struktur. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**MTSID** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**MTSID** <br/> |
    
 ```cpp
 CbMTSID (_lpentry)
@@ -40,7 +40,7 @@ CbMTSID (_lpentry)
 
  __lpentry_
   
-> Zeiger auf die vorhandenen **MTSID** Struktur. 
+> Zeiger auf die vorhandene **MTSID** -Struktur. 
     
 ## <a name="see-also"></a>Siehe auch
 

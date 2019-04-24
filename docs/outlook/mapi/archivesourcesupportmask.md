@@ -11,47 +11,47 @@ api_name:
 api_type:
 - COM
 ms.assetid: e35216e0-c23f-70f2-0d5f-1ac5dc00fd8c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: da1a1403ce454eef03a4b1e965441b0c654a99aa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6fc5e8eb74d79d0a30ae6a423772ce741dee4562
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281592"
 ---
 # <a name="archivesourcesupportmask"></a>ArchiveSourceSupportMask
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob Microsoft Office Outlook Scannen von Ordnern in einem Speicher und automatisch archiviert werden soll.
+Gibt an, ob in Microsoft Office Outlook Ordner in einem Speicher gescannt und automatisch archiviert werden sollen.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Eingeblendet auf:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) Objekt  <br/> |
-|Erstellt:  <br/> |Speicheranbieter  <br/> |
-|Durch zugegriffen:  <br/> |Outlook und andere clients  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_LONG  <br/> |
-|Zugriffstyp:  <br/> |Nur-Lese- oder Lese-/Schreibzugriff, je nach Speicheranbieter  <br/> |
+|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
+|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
+|Eigenschafts:  <br/> |PT_LONG  <br/> |
+|Zugriffstyp:  <br/> |Je nach Speicheranbieter schreibgeschützt oder Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Um die Store-Funktionalität bereitzustellen, Speicheranbieter implementieren muss [IMAPIProp: IUnknown](imapipropiunknown.md) und ein Tag valid-Eigenschaft für alle diese Eigenschaften übergeben Sie einen Anruf [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) zurückzukehren. Wenn das Eigenschafts-Tag für alle diese Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss Speicheranbieter auch den richtige Wert zurückgeben. [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) , zum Abrufen oder Festlegen dieser Eigenschaften Anbieter aufgerufen. 
+Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMAPIProp: IUnknown](imapipropiunknown.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zunächst mit dem [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) um das Eigenschafts-Tag zu erhalten und geben Sie in [IMAPIProp::GetProps](imapiprop-getprops.md) zum Abrufen des Werts dieser Eigenschaftentag. Beim Aufruf von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md), geben Sie die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, das Eingabeparameter _LppPropNames_auf zeigt:
+Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
   
 |||
 |:-----|:-----|
-|x LpGuid:  <br/> |PSETID_Common  <br/> |
-|UlKind:  <br/> |MNID_STRING  <br/> |
-|Kind.lpwstrName:  <br/> |L "ArchiveSourceSupportMask"  <br/> |
+|lpGuid:  <br/> |PSETID_Common  <br/> |
+|ulKind:  <br/> |MNID_STRING  <br/> |
+|Art. lpwstrName:  <br/> |L "ArchiveSourceSupportMask"  <br/> |
    
-Mit dieser Eigenschaft können Anbieter an, ob Outlook Scannen von Ordnern in einem Speicher und automatisch archiviert werden soll.
+Mit dieser Eigenschaft können Speicheranbieter angeben, ob Outlook Ordner in einem Speicher überprüfen und automatisch archivieren soll.
   
-Standardmäßig ist diese Eigenschaft nicht in einem Speicher verfügbar gemacht bedeutet, dass Outlook-Ordnern auf den Speicher gescannt werden kann. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden die möglichen Werte:
+Standardmäßig ist diese Eigenschaft nicht in einem Speicher verfügbar, was bedeutet, dass Outlook Ordner im Speicher überprüfen kann. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden Werte möglich:
   
 ```cpp
 enum { 
@@ -63,14 +63,14 @@ enum {
 
 ASM_DEFAULT
   
-- Outlook kann-Ordnern auf den Speicher gescannt werden.
+- Outlook kann Ordner im Speicher überprüfen.
     
 ASM_DO_NOT_ARCHIVE
   
-- Outlook sollte-Ordnern auf den Speicher nicht überprüft werden.
+- Outlook sollte Ordner im Speicher nicht überprüfen.
     
 ASM_CLIENT_DO_NOT_CHANGE
   
-- Lassen Sie Clients so ändern Sie diese Eigenschaft im Store nicht zu. Beachten Sie, dass die Konstante **ASM_CLIENT_DO_NOT_CHANGE** für die zukünftige ist und ist derzeit nicht implementiert. Jetzt kann ein Speicher verhindern Clients ändern dieses Flag hartzucodieren der Wert, der der Speicher für diese Eigenschaft zurückgibt. 
+- Clients dürfen diese Eigenschaft nicht im Speicher ändern. Beachten Sie, dass die Konstante **ASM_CLIENT_DO_NOT_CHANGE** als zukünftige Referenz dient und derzeit nicht implementiert ist. Im Moment kann ein Speicher verhindern, dass Clients dieses Flag ändern, indem der Wert hart codiert wird, den der Store für diese Eigenschaft zurückgibt. 
     
 

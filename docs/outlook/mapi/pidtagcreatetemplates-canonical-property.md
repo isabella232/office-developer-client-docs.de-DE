@@ -1,5 +1,5 @@
 ---
-title: PidTagCreateTemplates (kanonische Eigenschaft)
+title: Kanonische Pidtagcreatetemplates (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d2530009-5de3-4872-a0a5-be1389c4206e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 28611e442f816e4d091cc6b29e2ee69195a63d09
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 08cf1faa0c3cc4cf61e2253b0026361704fdd0e2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32269937"
 ---
-# <a name="pidtagcreatetemplates-canonical-property"></a>PidTagCreateTemplates (kanonische Eigenschaft)
+# <a name="pidtagcreatetemplates-canonical-property"></a>Kanonische Pidtagcreatetemplates (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine eingebettete Table-Objekt, das Dialogfeld Feld Vorlage-Eintragsbezeichner enthält. 
+Enthält ein eingebettetes Table-Objekt, das Eingabe-IDs für Dialogfeldvorlagen enthält. 
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält eine eingebettete Table-Objekt, das Dialogfeld Feld Vorlage-Eintragsbez
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Welche Vorlage erhalten Sie Objekte in einem Container erstellt werden können, rufen Sie die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode für diese Eigenschaft. Das resultierende Objekt ist der einmaligen Tabelle mit den Eintrag-IDs für alle Vorlagen, die Sie innerhalb des Containers erstellen können. 
+Um zu erfahren, welche Vorlagenobjekte innerhalb eines Containers erstellt werden können, rufen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode für diese Eigenschaft auf. Das resultierende Objekt ist die einmalige Tabelle, die die Eintragsbezeichner für alle Vorlagen enthält, die Sie innerhalb des Containers erstellen können. 
   
-Rufen Sie das Containerobjekt **CreateEntry** -Methode zum Erstellen der Vorlagenobjekte auf die Spaltenwerte **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) aus der einmaligen Tabelle.
+Zum Erstellen der Template-Objekte rufen Sie die createEntry **** -Methode des Container-Objekts für die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) aus der einmaligen Tabelle auf.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -65,5 +65,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

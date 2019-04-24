@@ -1,5 +1,5 @@
 ---
-title: Laden von Nachrichtenspeicheranbietern
+title: Laden von Nachrichtenspeicher Anbietern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,46 +9,46 @@ api_type:
 ms.assetid: 632d3ef9-43c5-429a-84d7-2dce543d49fb
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: fe3a76fa246cba9447db2f99562670973af183ab
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307805"
 ---
-# <a name="loading-message-store-providers"></a>Laden von Nachrichtenspeicheranbietern
+# <a name="loading-message-store-providers"></a>Laden von Nachrichtenspeicher Anbietern
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn eine Clientanwendung einen Nachrichtenspeicher geöffnet wird, wird MAPI der Nachricht Informationsdienst DLL in den Arbeitsspeicher geladen. Nachdem MAPI die DLL-Datei geladen wurde, tritt eine ganz bestimmte Folge von-Methode aufrufen zwischen den Speicheranbieter Nachricht und MAPI. Diese Methode Anruf Sequenz ermöglicht MAPI auf oberster Ebene abrufen [IMSProvider: IUnknown](imsprovideriunknown.md), [IMSLogon: IUnknown](imslogoniunknown.md), und [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) Schnittstellen und ermöglicht es dem Anbieter Nachricht anmelden, um ein MAPI-Support-Objekt abzurufen. Nach der Sequenz Anruf sollte der Nachricht Informationsdienst zur Annahme von Anmeldungen von Clients bereit. 
+Wenn eine Clientanwendung einen Nachrichtenspeicher öffnet, lädt MAPI die DLL des Nachrichtenspeicher Anbieters in den Arbeitsspeicher. Nach dem Laden der DLL durch MAPI erfolgt eine sehr spezifische Abfolge von Methoden aufrufen zwischen dem Nachrichtenspeicher Anbieter und MAPI. Diese Methodenaufruf Sequenz ermöglicht MAPI, [IMSProvider: IUnknown](imsprovideriunknown.md), [IMSLogon: IUnknown](imslogoniunknown.md)und [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Schnittstellen abzurufen, und ermöglicht es dem Nachrichtenspeicher Anbieter, ein MAPI-Unterstützungsobjekt abzurufen. Nach der Anruffolge sollte der Nachrichtenspeicher Anbieter bereit sein, Anmeldungen von Clients zu akzeptieren. 
   
-Die Anruf Sequenz verwendet, wenn eine Nachrichtenanbieter-DLL geladen wird, lautet wie folgt:
+Die Aufrufsequenz, wenn eine Nachrichtenanbieter-DLL geladen wird, lautet wie folgt:
   
-1. Der Client ruft [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md).
+1. Der Client ruft [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md).
     
-2. Wenn der Nachrichtenspeicher noch nicht geöffnet ist, MAPI lädt den Speicheranbieter DLL und ruft die DLL [MSProviderInit](msproviderinit.md) Einstiegspunkt. Wenn der Nachrichtenspeicher bereits geöffnet ist, MAPI überspringt die Schritte 2 und 3, und klicken Sie dann verwendet den vorhandenen [IMSProvider: IUnknown](imsprovideriunknown.md) Schnittstelle ist Schritt 4. 
+2. Wenn der Nachrichtenspeicher noch nicht geöffnet ist, lädt MAPI die DLL des Speicheranbieters und ruft den [MSProviderInit](msproviderinit.md) -Einstiegspunkt der dll auf. Wenn der Nachrichtenspeicher bereits geöffnet ist, überspringt MAPI die Schritte 2 und 3 und verwendet dann die vorhandene [IMSProvider: IUnknown](imsprovideriunknown.md) -Schnittstelle zum Abschließen von Schritt 4. 
     
-3. **MSProviderInit** erstellt und gibt ein **IMSProvider** -Objekt zurück. 
+3. **MSProviderInit** erstellt ein **IMSProvider** -Objekt und gibt es zurück. 
     
-4. MAPI-Aufrufen [IMSProvider::Logon](imsprovider-logon.md), übergeben die Clientanwendung Store Eintrags-ID an.
+4. MAPI ruft [IMSProvider:: LOGON](imsprovider-logon.md)auf und übergibt die ID des Nachrichtenspeicher Eintrags der Clientanwendung.
     
-5. **IMSProvider::Logon** erstellt und gibt ein [IMSLogon: IUnknown](imslogoniunknown.md) Schnittstelle und eine [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Schnittstelle und ruft dann die [IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) -Methode auf seine [IMAPISupport: IUnknown](imapisupportiunknown.md) Schnittstelle. Wenn der Client-Nachrichtenspeichers Eintrags-ID bezieht sich auf einen Nachrichtenspeicher, der bereits geöffnet ist, die Nachrichtenanbieter kann vorhandene **IMSLogon** und **IMsgStore** Schnittstellen zurückgeben und muss nicht den Aufruf von **AddRef** für die Unterstützung. 
+5. **IMSProvider:: Anmeldung** erstellt und gibt eine [IMSLogon: IUnknown](imslogoniunknown.md) -Schnittstelle und eine [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Schnittstelle und ruft dann die [IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) -Methode auf der [IMAPISupport: IUnknown](imapisupportiunknown.md) -Schnittstelle. Wenn der Nachrichtenspeicher Eintragsbezeichner des Clients auf einen bereits geöffneten Nachrichtenspeicher verweist, kann der Nachrichtenspeicher Anbieter vorhandene **IMSLogon** -und **IMsgStore** -Schnittstellen zurückgeben und muss **AddRef** nicht für sein Support-Objekt aufrufen. 
     
-6. Wenn der Client nicht das Flag MAPI_NO_MAIL festgelegt haben erteilt Wenn es angemeldet, und er hat die MDB_NO_MAIL nicht festgelegt, in Schritt 1, MAPI Eintrags-ID der Nachrichtenspeicher die MAPI-Warteschlange, damit die MAPI-Warteschlange mit dem Nachrichtenspeicher anmelden kann.
+6. Wenn der Client das MAPI_NO_MAIL-Flag nicht festgelegt hat, als er sich angemeldet hat und es die MDB_NO_MAIL in Schritt 1 nicht festgelegt hat, gibt MAPI dem MAPI-Spooler die Eintrags-ID des Nachrichtenspeichers, damit sich der MAPI-Spooler beim Nachrichtenspeicher anmelden kann.
     
 7. MAPI gibt die **IMsgStore** -Schnittstelle an den Client zurück. 
     
-8. Die MAPI-Warteschlange ruft [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md).
+8. Der MAPI-Warteschlangen Aufruf [IMSProvider:: SpoolerLogon](imsprovider-spoolerlogon.md).
     
-9. **IMSProvider::SpoolerLogon** gibt die gleichen **IMSLogon** und **IMsgStore** Schnittstellen aus Schritt 5 zurück. 
+9. **IMSProvider:: SpoolerLogon** gibt dieselben **IMSLogon** -und **IMsgStore** -Schnittstellen aus Schritt 5 zurück. 
     
 > [!NOTE]
-> Wenn der Anmeldung Anruf an die Nachricht vom Anbieter fehlschlägt gespeichert werden, da ein falsches Kennwort angegeben wurde und der Nachricht Speicheranbieter eine Schnittstelle für das korrekte Kennwort Fragen kann nicht angezeigt werden, muss er MAPI_E_FAILONEPROVIDER aus der **IMSProvider::Logon zurückgeben. **Methode. Dadurch können Clients, den Benutzer zur Eingabe eines Kennworts anmelden bei der Nachricht Informationsdienst erneut anstelle von MAPI, um den Anbieter für die gesamte Sitzung fehlschlagen verursacht versuchen. 
+> Wenn der Anmelde Anruf beim Nachrichtenspeicher Anbieter fehlschlägt, weil ein falsches Kennwort angegeben wurde und der Nachrichtenspeicher Anbieter keine Schnittstelle anzeigen kann, um das richtige Kennwort zu befragen, sollte MAPI_E_FAILONEPROVIDER aus dem IMSProvider zurückgegeben werden **:: Anmeldung **-Methode. Auf diese Weise können Clients den Benutzer auffordern, ein Kennwort einzugeben, um sich erneut an dem Nachrichtenspeicher Anbieter anzumelden, statt zu vermeiden, dass der Anbieter für die gesamte Sitzung einen Fehler verursacht. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
+[Entwickeln eines MAPI-Nachrichtenspeicheranbieters](developing-a-mapi-message-store-provider.md)
 

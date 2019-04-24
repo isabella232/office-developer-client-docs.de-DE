@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2fc3febb-8c69-4315-a112-a28eee98013d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bbced8412c2c3438c58af74ef072a46606b59ddc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b3818e5e1429c7e2b7d5f7533db733ba29e672c8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282691"
 ---
 # <a name="sizedspropproblemarray"></a>SizedSPropProblemArray
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [SPropProblemArray](spropproblemarray.md) -Struktur, die eine angegebene Anzahl von [SPropProblem](spropproblem.md) Strukturen enthält. 
+Erstellt eine benannte [SPropProblemArray](spropproblemarray.md) -Struktur, die eine angegebene Anzahl von [SPropProblem](spropproblem.md) -Strukturen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**SPropProblemArray** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SPropProblemArray** <br/> |
    
 ```cpp
 SizedSPropProblemArray(_cprob, _name)
@@ -38,15 +38,15 @@ SizedSPropProblemArray(_cprob, _name)
 
 __cprob_
   
-> Anzahl der **SPropProblem** Strukturen, die in die neue Struktur eingeschlossen werden. 
+> Die Anzahl der **SPropProblem** -Strukturen, die in die neue Struktur eingeschlossen werden sollen. 
     
-__Namen_
+__Name_
   
-> Der Name für die neue Struktur.
+> Name für die neue Struktur.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie das Makro **SizedSPropProblemArray** , um ein Problem Array-Eigenschaft mit expliziten Grenzen zu erstellen. Um die neue Struktur verwenden, die als Zeiger auf eine **SPropProblemArray** -Struktur aus dem Makro **SizedSPropProblemArray** erzeugt, führen Sie die folgende Umwandlung: 
+Verwenden Sie das **SizedSPropProblemArray** -Makro, um ein Eigenschaften Problem Array mit expliziten Begrenzungen zu erstellen. Um die neue Struktur zu verwenden, die aus dem **SizedSPropProblemArray** -Makro als Zeiger auf eine **SPropProblemArray** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
   
 ```cpp
 lpPropProbArray = (LPSPropProblemArray) &SizedSPropProblemArray;

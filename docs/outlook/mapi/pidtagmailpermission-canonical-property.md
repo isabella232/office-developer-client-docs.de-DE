@@ -1,5 +1,5 @@
 ---
-title: PidTagMailPermission (kanonische Eigenschaft)
+title: Kanonische Pidtagmailpermission (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f8270ef2-56d4-4b47-bdda-a39c966bbcba
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fb0b66cbf0de1ac351bb2026a48e0154de779206
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b396cd326dd25fd72346f9f8037e8a712b84a196
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278872"
 ---
-# <a name="pidtagmailpermission-canonical-property"></a>PidTagMailPermission (kanonische Eigenschaft)
+# <a name="pidtagmailpermission-canonical-property"></a>Kanonische Pidtagmailpermission (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn der messaging-Benutzer senden und Empfangen von Nachrichten zulässig ist. 
+Enthält TRUE, wenn der Messagingbenutzer Nachrichten senden und empfangen darf. 
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält True, wenn der messaging-Benutzer senden und Empfangen von Nachrichten 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn diese Eigenschaft nicht festgelegt ist, wird Sie MAPI wie mit dem Wert TRUE behandelt. 
+Wenn diese Eigenschaft nicht festgelegt ist, wird Sie von MAPI als TRUE-Wert behandelt. 
   
-Legen Sie diese Eigenschaft auf false festgelegt, in ein Unternehmensverzeichnis, wo sind einige der Einträge nicht e-Mail-aktivierte. 
+Legen Sie diese Eigenschaft in einem Unternehmensverzeichnis auf FALSE fest, wobei einige der Einträge nicht e-Mail-aktiviert sind. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

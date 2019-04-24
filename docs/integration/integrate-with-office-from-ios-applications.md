@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f3a277ba-7ba1-4eea-83b5-915b409f3093
 description: Office für iOS bietet eine erweiterbare Lösung, die die Integration in Drittanbieteranwendungen ermöglicht. Dieser Artikel beschreibt, wie Sie eine Integration in Office von Ihrer iOS-Anwendung ausführen können, indem Sie Benutzer von Ihrer Anwendung in Office übergeben und sie dann an die Anwendung zurückgeben.
-ms.openlocfilehash: 2ba8e1a157953705b60ff0cac7d62bafade0c469
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: d17a096c17eadab0cd94ee1dce18e979e80fa65d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299748"
 ---
 # <a name="integrate-with-office-from-ios-applications"></a>Integration in Office von iOS-Anwendungen aus
 
@@ -42,7 +42,6 @@ Verwenden Sie die [canOpenURL](https://developer.apple.com/library/ios/documenta
 |**Office-Anwendung**|**iTunes-ID**|
 |:-----|:-----|
 |Excel  <br/> |[https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8&amp;uo=4) <br/> |
-|OneNote (iPad)  <br/> |[https://itunes.apple.com/us/app/microsoft-onenote-for-ipad/id478105721?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-onenote-for-ipad/id478105721?mt=8&amp;uo=4) <br/> |
 |OneNote (iPhone)  <br/> |[https://itunes.apple.com/us/app/microsoft-onenote-for-iphone/id410395246?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-onenote-for-iphone/id410395246?mt=8&amp;uo=4) <br/> |
 |PowerPoint  <br/> |[https://itunes.apple.com/us/app/microsoft-powerpoint/id586449534?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-powerpoint/id586449534?mt=8&amp;uo=4) <br/> |
 |Word  <br/> |[https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8&amp;uo=4) <br/> |
@@ -73,7 +72,7 @@ Das folgende Beispiel zeigt eine Anforderung zum Aufrufen einer Word-Datei zur B
 
 Die folgende Tabelle enthält die Protokolle für jede Office-Anwendung. 
   
-|**Anwendung**|**Protocol**|
+|**Anwendung**|**Protokoll**|
 |:-----|:-----|
 |Excel  <br/> |ms-excel:  <br/> |
 |OneNote  <br/> |onenote:  <br/> |

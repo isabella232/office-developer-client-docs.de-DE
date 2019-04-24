@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7174c585-86e1-42a3-bb7f-d6641001b0f2
 description: Addiert zu dem angegebenen Datum die angegebene Anzahl von Intervallen (positive oder negative ganze Zahl) der angegebenen Datumskomponente und gibt das zugehörige Ergebnis zurück.
-ms.openlocfilehash: a2baa58a2ccab7d030750d03d4fddb84e8eb8ff7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 7cfd68c4983eee22a5e542facd72ea083deb3184
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282180"
 ---
 # <a name="dateadd-function-access-custom-web-app"></a>DateAdd-Funktion (benutzerdefinierte Access-Web-App)
 
@@ -40,7 +40,7 @@ In der folgenden Tabelle werden alle zulässigen  *DatePart*  -Argumente aufgef�
 |:-----|
 |**year** <br/> |
 |**quarter** <br/> |
-|**Monat** <br/> |
+|**month** <br/> |
 |**dayofyear** <br/> |
 |**day** <br/> |
 |**week** <br/> |

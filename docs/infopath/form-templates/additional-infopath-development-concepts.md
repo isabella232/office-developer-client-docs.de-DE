@@ -5,29 +5,29 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 917e9a1d-df17-4732-8496-097c6b7bcd1f
-description: Dieser Abschnitt enthält Informationen zu zusätzlichen InfoPath-Entwicklungskonzepte und Aufgaben.
-ms.openlocfilehash: decec7d612e4cdd2be3d9717a1caba56830f04d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieser Abschnitt enthält Informationen zu weiteren InfoPath-Entwicklungskonzepten und-Aufgaben.
+ms.openlocfilehash: 592a2764216bd126e153921d08f37c00abc0df79
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300441"
 ---
 # <a name="additional-infopath-development-concepts"></a>Weitere InfoPath-Entwicklungskonzepte
 
-Dieser Abschnitt enthält Informationen zu zusätzlichen InfoPath-Entwicklungskonzepte und Aufgaben.
+Dieser Abschnitt enthält Informationen zu weiteren InfoPath-Entwicklungskonzepten und-Aufgaben.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[Informationen zu Formularvorlagenkomponenten](about-form-template-components.md)
+[Informationen zu Formularvorlagen Komponenten](about-form-template-components.md)
   
-> Beschreibt die Komponenten, die in einer InfoPath-Formular Vorlage XSN-Datei enthalten sind.
+> Beschreibt die Komponenten in einer InfoPath-Formularvorlagen-XSN-Datei.
     
 [Informationen zur InfoPath-Unterstützung für XML-Technologien](about-infopath-support-for-xml-technologies.md)
   
 > Beschreibt die Verwendung von XML-Technologien in InfoPath-Formularen.
     
-[Richtlinien zur Steigerung der Leistung von InfoPath-Formularen](guidelines-for-improving-the-performance-of-infopath-forms.md)
+[Richtlinien zum Verbessern der Leistung von InfoPath-Formularen](guidelines-for-improving-the-performance-of-infopath-forms.md)
   
 > Enthält Links zu Informationen zum Verbessern der Leistung von Formularen.
     
@@ -35,32 +35,32 @@ Dieser Abschnitt enthält Informationen zu zusätzlichen InfoPath-Entwicklungsko
   
 > Beschreibt das Arbeiten mit XML-Schemadateien in InfoPath-Formularen.
     
-[Verwenden von benutzerdefinierter XSLT in InfoPath-Formularvorlagen](using-custom-xslt-in-infopath-form-templates.md)
+[Verwenden von benutzerdefiniertem XSLT in InfoPath-Formularvorlagen](using-custom-xslt-in-infopath-form-templates.md)
   
-> Beschreibt, wie die XSL-Transformation (XSLT) zu ändern, die InfoPath verwendet, um eine Ansicht in einem Formular zu generieren.
+> Beschreibt, wie die XSL-Transformation (XSLT) geändert wird, die InfoPath zum Generieren einer Ansicht in einem Formular verwendet.
     
 [Hosten von InfoPath als XML-Editor in einer anderen Anwendung](hosting-infopath-as-an-xml-editor-in-another-application.md)
   
 > Enthält Links zu Informationen zum Hosten von InfoPath als XML-Editor in einer anderen Anwendung.
     
-[Rich-Text und Webdienste](rich-text-and-web-services.md)
+[Rich-Text und webDienste](rich-text-and-web-services.md)
   
 > Beschreibt das Binden eines Rich-Text-Steuerelements an ein XML-Element, das von einem Webdienst abgerufen wird.
     
-[InfoPath, RPC-Codierung und Webdienste](infopath-rpc-encoding-and-web-services.md)
+[InfoPath, RPC-Codierung und webDienste](infopath-rpc-encoding-and-web-services.md)
   
 > Beschreibt das Erstellen eines Proxywebdiensts für einen Webdienst vom Typ RPC/encoded.
     
-[Integrieren eines InfoPath-Formulars in einer Microsoft Access-Datenbank](integrate-an-infopath-form-with-a-microsoft-access-database.md)
+[Integrieren eines InfoPath-Formulars in eine Microsoft Access-Datenbank](integrate-an-infopath-form-with-a-microsoft-access-database.md)
   
-> Beschreibt, wie eine Microsoft Access 2010-Datenbank als Datenquelle verwenden.
+> Beschreibt die Verwendung einer Microsoft Access 2010-Datenbank als Datenquelle.
     
-[Erstellen Sie ein ActiveX-Steuerelement, das an InfoPath-Formulardaten gebunden werden können](create-an-activex-control-that-can-bind-to-infopath-form-data.md)
+[Erstellen eines ActiveX-Steuerelements, das an InfoPath-Formulardaten gebunden werden kann](create-an-activex-control-that-can-bind-to-infopath-form-data.md)
   
-> Enthält Informationen zum Erstellen von ActiveX-Steuerelemente, die an InfoPath-Formulardaten gebunden werden können.
+> Enthält Informationen zum Erstellen von ActiveX-Steuerelementen, die an InfoPath-Formulardaten gebunden werden können.
     
 [Aktivieren der benutzerdefinierten Zusammenführung von InfoPath-Formularen](enable-custom-merging-of-infopath-forms.md)
   
-> Enthält Informationen dazu, wie Sie die Seriendruckfunktion Formulare der InfoPath verwenden.
+> Enthält Informationen zur Verwendung des Features zum Zusammenführen von Formularen in InfoPath.
     
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 80c1449a-6cd9-4b93-a300-395979894b71
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f76b44b3718f08eb68fc956ad4480d4327cb0656
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 72dddca5a8079374600e05b96a24cbbc25e7f7f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279556"
 ---
 # <a name="iprovideradmincreateprovider"></a>IProviderAdmin::CreateProvider
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt einen Dienstanbieter an den Dienst. 
+Fügt dem Nachrichtendienst einen Dienstanbieter hinzu. 
   
 ```cpp
 HRESULT CreateProvider(
@@ -40,47 +40,47 @@ HRESULT CreateProvider(
 
  _lpszProvider_
   
-> [in] Ein Zeiger auf den Namen des hinzuzufügenden Anbieters an.
+> in Ein Zeiger auf den Namen des hinzuzufügenden Anbieters.
     
  _cValues_
   
-> [in] Die Anzahl der Eigenschaftswerte, die auf den durch den Parameter _LpProps_ verwiesen. 
+> in Die Anzahl der Eigenschaftswerte, auf die durch den _lpProps_ -Parameter verwiesen wird. 
     
  _lpProps_
   
-> [in] Ein Zeiger auf ein Array-Eigenschaft Wert, der beschreibt die Eigenschaften des hinzuzufügenden Anbieters an.
+> in Ein Zeiger auf ein Eigenschafts Wertarray, das die Eigenschaften des hinzuzufügenden Anbieters beschreibt.
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster des alle Dialogfelder oder Fenster zeigt diese Methode an. Der Parameter _UlUIParam_ wird verwendet, wenn das Flag MAPI_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der _ulUIParam_ -Parameter wird verwendet, wenn das MAPI_DIALOG-Flag im _ulFlags_ -Parameter festgelegt ist. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die die hinzugefügte Anbieter steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die das Hinzufügen des Anbieters steuert. Die folgenden Flags können festgelegt werden:
     
-  - MAPI_DIALOG: Zeigt ein Dialogfeld Informationen zur Konfiguration aufgefordert.
+  - MAPI_DIALOG: zeigt ein Dialog Feld an, in dem Sie nach Konfigurationsinformationen gefragt werden.
       
-  - Parameter MAPI_UNICODE: Anbieter für die Eigenschaften Name und die Zeichenfolge sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind diese Zeichenfolgen in ANSI-Format.
+  - MAPI_UNICODE: der Anbietername und die Zeichenfolgeneigenschaften sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
     
  _lpUID_
   
-> [out] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner, der den Anbieter enthält hinzufügen darstellt. 
+> Out Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner enthält, der den hinzuzufügenden Anbieter darstellt. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Anbieter wurde erfolgreich an den Nachrichtendienst hinzugefügt.
+> Der Anbieter wurde dem Nachrichtendienst erfolgreich hinzugefügt.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die **IProviderAdmin::CreateProvider** -Methode hinzugefügt der Messagingdiensts einen Dienstanbieter. Der Parameter _LpszProvider_ muss auf den Namen eines Anbieters zeigen, die den Dienst gehört. **CreateProvider** überprüft nicht, ob der Name des Anbieters in den Dienst mit dem Namen übereinstimmt; Wenn der übergebene Name den Namen eines Dienstes nicht übereinstimmt, der Aufruf erfolgreich ist, aber sind die Ergebnisse unvorhersehbar. Die meisten Message-Dienste können nicht Anbieter hinzugefügt oder gelöscht werden, während das Profil verwendet wird. 
+Mit der **IProviderAdmin:: CreateProvider** -Methode wird dem Nachrichtendienst ein Dienstanbieter hinzugefügt. Der Parameter _lpszProvider_ muss auf den Namen eines Anbieters verweisen, der zum Nachrichtendienst gehört. **CreateProvider** überprüft nicht, ob der Name mit dem Namen eines Anbieters im Dienst übereinstimmt. Wenn der übergebene Name nicht mit einem Dienstnamen übereinstimmt, ist der Aufruf erfolgreich, aber die Ergebnisse sind unvorhersehbar. Bei den meisten Nachrichtendiensten können Anbieter nicht hinzugefügt oder gelöscht werden, während das Profil verwendet wird. 
   
-Nachdem alle verfügbaren Informationen über den Dienst wurde Anbieter hinzugefügt das Profil aus der Datei "Mapisvc.inf" **CreateProvider** die Messagingdiensts Eintrag Punkt mit der _UlContext_ -Parameter auf MSG_SERVICE_ Funktionsaufrufe PROVIDER_CREATE. Wenn in der **CreateProvider** -Methode _UlFlags_ Parameter MAPI_DIALOG festgelegt ist, werden die Werte in den _UlUIParam_ und _UlFlags_ auch an die Eintrags-Funktion übergeben. Aktivieren Sie diese zusätzlichen Parameter des-Dienstanbieters für das Eigenschaftenfenster anzuzeigen, damit der Benutzer Konfigurationseinstellungen eingeben kann. 
+Nachdem alle verfügbaren Informationen zum Dienstanbieter aus der Datei MAPISVC. inf zum Profil hinzugefügt wurden, ruft **CreateProvider** die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_ festgelegt ist. PROVIDER_CREATE. Wenn MAPI_DIALOG im _ulFlags_ -Parameter **** der CreateProvider-Methode festgelegt ist, werden die Werte in den Parametern _ulUIParam_ und _ulFlags_ auch an die Einstiegspunktfunktion übergeben. Diese zusätzlichen Parameter ermöglichen es dem Dienstanbieter, sein Eigenschaftenblatt anzuzeigen, damit der Benutzerkonfigurationseinstellungen eingeben kann. 
   
 ## <a name="see-also"></a>Siehe auch
 

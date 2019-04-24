@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 10c7cb9d-2e9d-72eb-6b07-31eed892e646
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: a84114a3363f9cbcd9455bce12d3171843bd18a4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: 4440df4b8e4a46e13748cf47d599e16599aaf858
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270084"
 ---
 # <a name="imapiofflinenotifynotify"></a>IMAPIOfflineNotify::Notify
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sendet Benachrichtigungen an den Client zu den geänderten in Verbindungsstatus.
+Sendet Benachrichtigungen an den Client über Änderungen im Verbindungsstatus.
   
 ```cpp
 void STDMETHODCALLTYPE Notify(  
@@ -37,21 +37,21 @@ void STDMETHODCALLTYPE Notify(
 
  _pNotifyInfo_
   
-> [in] Benachrichtigung, die Outlook an den Client sendet. Die Benachrichtigung gibt den Teil des Verbindungsstatus, der geändert wurde, den alten Verbindungsstatus und den neuen Verbindungsstatus.
+> in Die Benachrichtigung, die Outlook an den Client sendet. Die Benachrichtigung gibt den Teil des Verbindungsstatus an, der geändert wurde, den alten Verbindungsstatus und den neuen Verbindungsstatus.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Outlook verwendet diese Methode, um die Benachrichtigung Rückrufe an einen Client gesendet. Microsoft Outlook 2010 oder Microsoft Outlook 2013 diese Schnittstelle zur Verfügung zu stellen, muss der Client diese Schnittstelle implementieren, und übergeben einen Zeiger als Mitglied in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** beim Einrichten von Rückrufe mit **[IMAPIOfflineMgr::Advise ](imapiofflinemgr-advise.md)**. 
+Outlook verwendet diese Methode zum Senden von Benachrichtigungs Rückrufen an einen Client. Um diese Schnittstelle für Microsoft Outlook 2010 oder Microsoft Outlook 2013 zur Verfügung zu stellen, muss der Client diese Schnittstelle implementieren und einen Zeiger als Member in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** beim Einrichten von Rückrufen mithilfe von **[IMAPIOfflineMgr übergeben:: Advise ](imapiofflinemgr-advise.md)**. 
   
-Der Client auch übergibt an **MAPIOFFLINE_ADVISEINFO** ein Clienttoken, Outlook 2010 oder Outlook 2013 verwendet in **IMAPIOfflineNotify::Notify** zum Identifizieren des Clients für den Rückruf Benachrichtigung registriert. 
+Der Client übergibt auch an **MAPIOFFLINE_ADVISEINFO** ein Clienttoken, das Outlook 2010 oder Outlook 2013 in **IMAPIOfflineNotify:: notify** verwendet, um den für den Benachrichtigungsrückruf registrierten Client zu identifizieren. 
   
-Im Allgemeinen Outlook 2010 und Outlook 2013 können benachrichtigt werden, einem Client online/offline ändert und andere ändern, aber die Offline Zustand-API unterstützt nur Benachrichtigungen für Online-/offline geändert wird. Der Client muss alle anderen Benachrichtigungen ignorieren.
+Im Allgemeinen können Outlook 2010 und Outlook 2013 einen Client über Online/Offline-Änderungen und andere Verbindungsstatusänderungen informieren, die Offlinestatus-API unterstützt jedoch nur Benachrichtigungen für Online/Offline-Änderungen. Der Client muss alle anderen Benachrichtigungen ignorieren.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
+[Informationen zur Offlinestatus-API](about-the-offline-state-api.md)
   
 [MAPIOFFLINE_NOTIFY](mapioffline_notify.md)
 

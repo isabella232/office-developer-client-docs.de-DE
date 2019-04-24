@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f22ccf2-1004-4731-9d68-f66c01b4588b
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 1e3d384f35726ff28bb47f3d537c8a7a1dda6dce
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299433"
 ---
 # <a name="gettnefstreamcodepage"></a>GetTnefStreamCodepage
 
@@ -21,13 +21,13 @@ ms.locfileid: "25399655"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt die Codepage eines Streams Transport-Neutral Encapsulation Format (TNEF).
+Bestimmt die Codepage für einen TNEF-Stream (Transport Neutral Encapsulation Format).
   
 |||
 |:-----|:-----|
-|Headerdatei:  <br/> |TNEF.h  <br/> |
+|Headerdatei  <br/> |TNEF. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter.  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter.  <br/> |
    
 ```cpp
 HRESULT GetTnefStreamCodepage(
@@ -41,15 +41,15 @@ HRESULT GetTnefStreamCodepage(
 
  _lpStream_
   
-> [in] Zeiger auf eine Speicher Stream-Objekt OLE **IStream** Schnittstelle, die beim Bereitstellen einer Datenquelle für eine TNEF-Nachricht Stream. 
+> in Zeiger auf ein Speicher Stream-Objekt OLE **IStream** -Schnittstelle, die eine Quelle für eine TNEF-Stream-Nachricht bereitstellt. 
     
  _lpulCodepage_
   
-> [out] Zeiger auf die Codepage des Stream-Objekts.
+> Out Zeiger auf die Codepage des Streams.
     
  _lpulSubCodepage_
   
-> [out] Zeiger auf der Seite Subcode des Stream-Objekts.
+> Out Zeiger auf die Subcode-Seite des Streams.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,15 +59,15 @@ HRESULT GetTnefStreamCodepage(
     
  **MAPI_E_NOT_ENOUGH_DISK**
   
-> Es wurde ein Fehler beim Lesen eines Attributs in der TNEF-Stream.
+> Beim Lesen eines Attributs im TNEF-Stream ist ein Fehler aufgetreten.
     
  **MAPI_E_CORRUPT_DATA**
   
-> Entweder der Stream war nicht TNEF-Stream, oder es wurde ein Fehler beim Lesen des AttOemCodepage-Attributs.
+> Entweder war der Datenstrom kein TNEF-Datenstrom, oder beim Lesen des attOemCodepage-Attributs ist ein Fehler aufgetreten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **GetTnefStreamCodepage** -Funktion, um das **AttOemCodepage** -Attribut des Datenstroms TNEF zum Bestimmen der Codepage und Subcode Seite lesen. Wenn **AttOemCodepage** nicht gefunden wird, gibt **GetTnefStreamCodepage** Codepage 437 und einer Seite Subcode 0 zurück. 
+Verwenden Sie die **GetTnefStreamCodepage** -Funktion, um das **attOemCodepage** -Attribut des TNEF-Streams zu lesen, um die Codepage und die subcodeseite zu bestimmen. Wenn **attOemCodepage** nicht gefunden wird, gibt **GetTnefStreamCodepage** eine Codepage von 437 und eine subcodeseite von 0 zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

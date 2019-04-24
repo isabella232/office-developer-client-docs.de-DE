@@ -1,31 +1,31 @@
 ---
-title: Arbeiten mit offlinelösungen
+title: Arbeiten mit Offlinelösungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- offlinelösungen [Infopath 2007] Lösungen [InfoPath 2007], offline, InfoPath 2007, offlinelösungen
+- Offlinelösungen [InfoPath 2007], Lösungen [InfoPath 2007], offline, InfoPath 2007, Offlinelösungen
 localization_priority: Normal
 ms.assetid: 108f9bd0-c80f-4790-a572-da2f571a7d85
-description: Das InfoPath-Objektmodell enthält die MachineOnlineState-Eigenschaft des Application-Klasse, mit die können Formularcode zu prüfen, ob es sich bei dem Computer des Benutzers mit dem Netzwerk verbunden ist. Überprüfen Sie den Wert der MachineOnlineState-Eigenschaft, kann Ihre Formularcode verschiedene Aktionen je nach Status der Verbindung ausführen.
-ms.openlocfilehash: ab149b488d2b2df1e91ba2cb435960c6749ecefb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: Das InfoPath-Objektmodell stellt die MachineOnlineState-Eigenschaft der Application-Klasse bereit, mit deren Hilfe der Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Durch das Überprüfen des Werts der MachineOnlineState-Eigenschaft kann der Formularcode verschiedene Aktionen ausführen, je nach Status der Verbindung.
+ms.openlocfilehash: eb2903c2445a61be803c0d7a2f5ddd7ac7a912ad
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299818"
 ---
-# <a name="work-with-offline-solutions"></a>Arbeiten mit offlinelösungen
+# <a name="work-with-offline-solutions"></a>Arbeiten mit Offlinelösungen
 
-Das InfoPath-Objektmodell enthält die [MachineOnlineState](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.MachineOnlineState.aspx) -Eigenschaft des [Application](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.aspx) -Klasse, mit die können Formularcode zu prüfen, ob es sich bei dem Computer des Benutzers mit dem Netzwerk verbunden ist. Überprüfen Sie den Wert der **MachineOnlineState** -Eigenschaft, kann Ihre Formularcode verschiedene Aktionen je nach Status der Verbindung ausführen. 
+Das InfoPath-Objektmodell stellt die [MachineOnlineState](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.MachineOnlineState.aspx) -Eigenschaft der [Application](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.aspx) -Klasse bereit, mit deren Hilfe der Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Durch das Überprüfen des Werts der **MachineOnlineState**-Eigenschaft kann der Formularcode verschiedene Aktionen ausführen, je nach Status der Verbindung. 
   
-## <a name="using-the-machineonlinestate-property"></a>Mithilfe der MachineOnlineState-Eigenschaft
+## <a name="using-the-machineonlinestate-property"></a>Verwenden der MachineOnlineState-Eigenschaft
 
 Im folgenden Beispiel wird gezeigt, wie Sie dem Formularcode Logik hinzufügen können. Mit dieser wird anhand des Online- oder Offlinestatus des Benutzercomputers bestimmt, wie ein Formular gesendet werden soll.
   
-In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von einem Umsatzbericht, die enthält ein Feld mit dem Namen an, in dem gibt an, den Monat und Jahr, die im Bericht angezeigte erstellt haben. Es wird davon ausgegangen, dass Sie bereits definiert haben, eine Verbindung von Daten und der Logik zum Senden des Berichts, wenn der Benutzer online ist. 
+Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines Umsatzberichts erstellt haben, das ein Feld mit der Bezeichnung period (Zeitraum) zur Angabe des im Bericht behandelten Monats und Jahres enthält. Außerdem wird vorausgesetzt, dass Sie bereits eine Datenverbindung und die Logik zum Senden des Berichts, wenn der Benutzer online ist, definiert haben. 
   
-### <a name="add-a-data-connection-that-submits-the-form-as-an-attachment-to-an-email-message"></a>Hinzufügen einer Datenverbindung, die das Formular als Anlage einer e-Mail-Nachricht sendet
+### <a name="add-a-data-connection-that-submits-the-form-as-an-attachment-to-an-email-message"></a>Hinzufügen einer Datenverbindung, die das Formular als Anlage an eine e-Mail-Nachricht sendet
 
 1. Erstellen Sie eine InfoPath-Formularvorlage mithilfe der Vorlage **Leer (InfoPath Editor)**. 
     
@@ -33,33 +33,33 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
     
 3. Klicken Sie im Dialogfeld **Datenverbindungen** auf **Hinzufügen**.
     
-4. Klicken Sie im **Datenverbindungs-Assistenten**klicken Sie auf **Daten senden**, und klicken Sie dann auf **Weiter**.
+4. Klicken Sie im datenVerbindungs- **Assistenten**auf **Daten senden**, und klicken Sie dann auf **weiter**.
     
-5. Klicken Sie auf der nächsten Seite des Assistenten klicken Sie auf **als e-Mail-Nachricht**, und klicken Sie dann auf **Weiter**.
+5. Klicken Sie auf der nächsten Seite des Assistenten auf **als e-Mail-Nachricht**, und klicken Sie dann auf **weiter**.
     
-6. Geben Sie auf der nächsten Seite des Assistenten Ihre e-Mail-Adresse in das Feld **an** . 
+6. Geben Sie auf der nächsten Seite des Assistenten im Feld **an** Ihre e-Mail-Adresse ein. 
     
 7. Führen Sie im Feld **Betreff** die folgenden Schritte aus, um den Umsatzzeitraum mit dem Text "Sales Report" (Umsatzbericht) zu kombinieren: 
     
-   1. Klicken Sie auf die Schaltfläche **Formel** neben dem Feld **Betreff** . 
+   1. Klicken Sie neben dem Feld **Betreff** auf die Schaltfläche **Formel** . 
       
    2. Klicken Sie im Dialogfeld **Formel einfügen** auf **Funktion einfügen**.
       
-   3. Klicken Sie im Dialogfeld **Funktion einfügen** in der Liste **Kategorien** auf **Text**, und doppelklicken Sie dann in der Liste **Funktionen** auf **verketten**. 
+   3. Klicken Sie im Dialogfeld **Funktion einfügen** in der Liste **Kategorien** auf **Text**, und doppelklicken Sie dann in der Liste **Funktionen** auf **concat**. 
       
-   4. Ersetzen Sie die erste Instanz von **Feld mit Doppelklick einfügen** durch den folgenden Text (einschließlich der einfachen Anführungszeichen): 'Sales Report: ' 
+   4. Ersetzen Sie die erste Instanz von **Doppelklicken, um Feld einzufügen** durch den folgenden Text (einschließlich der einfachen Anführungszeichen): 'Umsatzbericht: ' 
       
-   5. Doppelklicken Sie auf die zweite Instanz von **Feld mit Doppelklick einfügen**.
+   5. Doppelklicken Sie auf die zweite Instanz von **Doppelklicken, um Feld einzufügen**.
       
-   6. Klicken Sie im Dialogfeld **Feld oder Gruppe auswählen** auf das Feld für den Zeitraum (period). 
+   6. Klicken Sie im Dialogfeld **Feld oder Gruppe auswählen** auf das Feld period. 
       
-   7. Löschen Sie die letzte Instanz von **Feld mit Doppelklick einfügen**, und klicken Sie dann auf **OK**.
+   7. Löschen Sie die letzte Instanz von **Doppelklicken, um Feld einzufügen**, und klicken Sie dann auf **OK**.
     
 8. Klicken Sie im Assistenten auf **Weiter**.
     
-9. Klicken Sie auf der nächsten Seite des Assistenten klicken Sie auf die Schaltfläche **Formel** neben dem Feld **Name der Anlage** , und wiederholen Sie die oben beschriebenen Schritte zum Erstellen der Formel verketten ("Sales Report"-, Zeitraum), und klicken Sie dann auf **Weiter**.
+9. Klicken Sie auf der nächsten Seite des Assistenten auf die Schaltfläche **Formel** neben dem Feld **Anlagen Name** , und wiederholen Sie die Schritte oben, um die Formel Concat ("Umsatzbericht-", Zeitraum) zu erstellen, und klicken Sie dann auf **weiter**.
     
-10. Geben Sie auf der letzten Seite des Assistenten im Feld **Geben Sie einen Namen für diese Datenverbindung** E-Mail zu senden, und klicken Sie dann auf **Fertig stellen**.
+10. Geben Sie auf der letzten Seite des Assistenten im Feld **Geben Sie einen Namen für diese Datenverbindung ein** die Option e-Mail-übermitteln ein ein, und klicken Sie dann auf **Fertig stellen**.
     
 ### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a>Hinzufügen von Logik zum Senden des Formulars je nach dem Verbindungsstatus eines Benutzercomputers
 
@@ -67,7 +67,7 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
     
 2. Klicken Sie im Dialogfeld **Absendeoptionen** auf **Übermitteln dieses Formulars durch Benutzer zulassen**, wählen Sie **Benutzerdefinierte Aktion mithilfe von Code ausführen** aus, und klicken Sie auf **Code bearbeiten**.
     
-3. Fügen Sie die folgenden beiden Funktionen unter dem [Submit](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) -Ereignishandler hinzu: 
+3. Fügen Sie die folgenden beiden Funktionen unterhalb des [Submit](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) -Ereignishandlers hinzu: 
     
    ```cs
     public void OnlineSubmit(SubmitEventArgs e)
@@ -120,7 +120,7 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
     End Sub
    ```
 
-4. Der [Submit](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) -Ereignishandlerfunktion die folgende **if** -Anweisung hinzugefügt. 
+4. Fügen Sie der [Submit](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) -Ereignis Handlerfunktion die folgende **if** -Anweisung hinzu. 
     
    ```cs
     // Check the computer's connection state.
@@ -152,9 +152,9 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
     
 3. Starten Sie Microsoft Internet Explorer.
     
-4. Klicken Sie in Internet Explorer im Menü **Datei** auf **Offlinebetrieb**. 
+4. Klicken Sie in Internet Explorer im Menü **Datei** auf **Offline arbeiten**. 
     
-5. Klicken Sie in InfoPath auf **Senden**. Sie sollte eine Meldung angezeigt, dass das Formular als e-Mail-Nachricht gesendet werden soll.
+5. Klicken Sie in InfoPath auf **Absenden**. Es sollte eine Meldung angezeigt werden, dass das Formular als e-Mail-Nachricht gesendet wird.
     
 6. Klicken Sie auf **Senden**. Eine Meldung sollte mitteilen, dass das Formular offline gesendet wurde und gesendet wird, wenn Sie eine Verbindung mit dem Netzwerk herstellen.
     

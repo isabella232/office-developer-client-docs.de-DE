@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 58f50535-b0ed-4097-bda8-fd3ccc2d4b49
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: af695d55cdd5f8d7e24d7e60e6eebaf03868b03f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 44be43864d943257520f27297e5754a4978c568d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270168"
 ---
 # <a name="iprofadminsetdefaultprofile"></a>IProfAdmin::SetDefaultProfile
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktiviert oder deaktiviert eine Client-Standardprofil.
+Legt fest oder löscht das Standardprofil eines Clients.
   
 ```cpp
 HRESULT SetDefaultProfile(
@@ -38,33 +38,33 @@ HRESULT SetDefaultProfile(
 
  _lpszProfileName_
   
-> [in] Ein Zeiger auf den Namen des Profils, das werden die Standardeinstellung, oder NULL. _LpszProfileName_ bedeutet von NULL, dass **SetDefaultProfile** vorhandenen Standardprofils entfernen sollte den Client ohne Standardwert verlassen. 
+> in Ein Zeiger auf den Namen des Profils, das zum Standardwert wird, oder NULL. Wenn _lpszProfileName_ auf NULL festgelegt wird, bedeutet dies, dass **SetDefaultProfile** das vorhandene Standardprofil entfernen sollte, sodass der Client keinen Standardwert aufweist. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der Zeichenfolge steuert auf _LpszProfileName_zeigt. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der Zeichenfolge steuert, auf die von _lpszProfileName_verwiesen wird. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Der Name der Benutzerprofildienst wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Name der Benutzerprofildienst im ANSI-Format.
+> Der Profilname ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Profilname im ANSI-Format.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Ein Standardprofil wurde erfolgreich hergestellt oder entfernt.
+> Ein Standardprofil wurde erfolgreich erstellt oder entfernt.
     
 MAPI_E_NOT_FOUND 
   
 > Das angegebene Profil ist nicht vorhanden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IProfAdmin::SetDefaultProfile** -Methode stellt ein bestimmtes Profil als Standardprofil für den Client her, oder löscht den aktuellen Standardprofils. Das Standardprofil ist das Profil, das automatisch verwendet wird, wenn der Client eine MAPI-Sitzung beginnt. **SetDefaultProfile** wird auch neues Standardprofil **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))-Eigenschaft auf true festgelegt.
+Die **IProfAdmin:: SetDefaultProfile** -Methode richtet entweder ein bestimmtes Profil als Standardprofil des Clients ein oder löscht das aktuelle Standardprofil. Das Standardprofil ist das Profil, das automatisch verwendet wird, wenn der Client eine MAPI-Sitzung startet. **SetDefaultProfile** legt auch die **PR_DEFAULT_PROFILE** ([pidtagdefaultprofile (](pidtagdefaultprofile-canonical-property.md))-Eigenschaft des neuen Standardprofils auf true fest.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Sitzung mit dem Standardprofil starten möchten, übergeben Sie die Kennzeichen MAPI_USE_DEFAULT an die Funktion [MAPILogonEx](mapilogonex.md) . 
+Wenn Sie eine Sitzung mit dem Standardprofil starten möchten, müssen Sie das MAPI_USE_DEFAULT-Flag an die [MAPILogonEx](mapilogonex.md) -Funktion weiterleiten. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,7 +74,7 @@ Um eine Sitzung mit dem Standardprofil starten möchten, übergeben Sie die Kenn
   
 [MAPILogonEx](mapilogonex.md)
   
-[PidTagDefaultProfile (kanonische Eigenschaft)](pidtagdefaultprofile-canonical-property.md)
+[Kanonische Pidtagdefaultprofile (-Eigenschaft](pidtagdefaultprofile-canonical-property.md)
   
 [IProfAdmin : IUnknown](iprofadminiunknown.md)
 

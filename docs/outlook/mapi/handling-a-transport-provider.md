@@ -1,5 +1,5 @@
 ---
-title: Behandeln eines Transportdienstes
+title: Behandeln eines Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 60b3e5f4-4a9b-432f-bad4-4284225ab93f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 00ae0f4be9818e0e9e4562784b4d5bf44eefe308
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0fe21cea26c956f8a03a51e2f302b040fc89e751
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299496"
 ---
-# <a name="handling-a-transport-provider"></a>Behandeln eines Transportdienstes
+# <a name="handling-a-transport-provider"></a>Behandeln eines Transportanbieters
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients kommunizieren mit Transportanbieter über Status Objekte von Transportanbieter sowie die MAPI-Warteschlange bereitgestellt wird. Clientzugriff Status Objekte durch Aufrufen von [IMAPISession::GetStatusTable](imapisession-getstatustable.md) zum Abrufen der Statustabelle. Status-Objekten Implementieren der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) Schnittstelle, die verfügt über Methoden für das Konfigurieren von Anbietern, das leeren eingehende und ausgehende Warteschlangen, Festlegen von Kennwörtern und Zustand Validierung Nachricht. Weitere Informationen zu Status-Objekten finden Sie unter [Statustabelle und Status Objekte](status-table-and-status-objects.md).
+Clients kommunizieren mit Transportanbietern über Statusobjekte, die von Transportanbietern und dem MAPI-Spooler bereitgestellt werden. Clients greifen auf Statusobjekte zu, indem Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable aufrufen, um die Statustabelle abzurufen. Status Objekte implementieren Sie die [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle, die über Methoden zum Konfigurieren von Anbietern, das Leeren von eingehenden und ausgehenden Nachrichtenwarteschlangen, das Festlegen von Kennwörtern und die Statusüberprüfung verfügt. Weitere Informationen zu Statusobjekten finden Sie unter [Status Table-und Status-Objekte](status-table-and-status-objects.md).
 
 
-- [Senden oder Empfangen einer Nachricht bei Bedarf](sending-or-receiving-a-message-on-demand.md): Beschreibt, wie Sie senden oder Empfangen einer Nachricht bei Bedarf.
+- [Senden oder Empfangen einer Nachricht bei Bedarf](sending-or-receiving-a-message-on-demand.md): Beschreibt das Senden oder Empfangen einer Nachricht bei Bedarf.
     
-- [Einstellung Transport Reihenfolge](setting-transport-order.md): Beschreibt, wie Sie die Transport-Reihenfolge festlegen.
+- [Festlegen des Transportauftrags](setting-transport-order.md): Beschreibt das Festlegen des Transportauftrags.
     
-- [Neukonfigurieren eines Transportdienstes](reconfiguring-a-transport-provider.md): Beschreibt, wie ein Transportdienst neu konfigurieren, und welche Eigenschaften festlegen zur Verfügung stehen.
+- [Neukonfigurieren eines Transportanbieters](reconfiguring-a-transport-provider.md): Beschreibt, wie ein Transportanbieter neu konfiguriert wird und welche Eigenschaften festgelegt werden können.
     
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7af74fcc-c0df-4f58-a2d4-0a79c96b2e81
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9a5e4205a808c7a6e469d2e9cb0a1b3c17a92d21
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 810192bfc85c9934a282f02a0839aaed539f744d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270267"
 ---
 # <a name="imapiprogressgetflags"></a>IMAPIProgress::GetFlags
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt kennzeichnen Einstellungen aus dem Fortschritt-Objekt für die Ebene des Vorgangs auf die Fortschrittsinformationen berechnet werden.
+Gibt Flageinstellungen aus dem Progress-Objekt für die Vorgangsebene zurück, auf der die Statusinformationen berechnet werden.
   
 ```cpp
 HRESULT GetFlags(
@@ -37,39 +37,39 @@ HRESULT GetFlags(
 
  _lpulFlags_
   
-> [out] Eine Bitmaske aus Flags, die die Ebene des Vorgangs steuert, welche Fortschritt Informationen berechnet wird. Das folgende Flag können zurückgegeben werden:
+> Out Eine Bitmaske von Flags, die die Vorgangsebene steuert, auf der die Statusinformationen berechnet werden. Das folgende Flag kann zurückgegeben werden:
     
 MAPI_TOP_LEVEL 
   
-> Status wird für das Objekt der obersten Ebene, das Objekt berechnet wird, die durch den Client auf die Operation beginnen aufgerufen wird. Beispielsweise ist das Objekt der obersten Ebene in einem Ordnerkopiervorgang den Ordner, der kopiert wird. Wenn MAPI_TOP_LEVEL nicht festgelegt ist, wird für einen niedrigeren Level-Objekt oder Unterobjekts Fortschritt berechnet. In den Ordnerkopiervorgang ist eine niedrigere Level-Objekt eine Unterordner in den Ordner, der kopiert wird.
+> Der Fortschritt wird für das Objekt der obersten Ebene, das Objekt, das vom Client zum Starten des Vorgangs aufgerufen wird, berechnet. Beispielsweise ist das Objekt der obersten Ebene in einem Ordner Kopiervorgang der Ordner, der kopiert wird. Wenn MAPI_TOP_LEVEL nicht festgelegt ist, wird Progress für ein Objekt auf niedrigerer Ebene oder ein Subobjekt berechnet. Im Ordner Kopiervorgang ist ein Objekt auf niedrigerer Ebene einer der Unterordner in dem Ordner, der kopiert wird.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Wert des Flags wurde erfolgreich zurückgegeben.
+> Der Flags-Wert wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-Dienstanbieter zur Unterscheidung zwischen Objekte der obersten Ebene ermöglicht und Unterobjekte mit dem MAPI_TOP_LEVEL-Flag, damit alle Objekte in einem Vorgang beteiligt können die gleiche [IMAPIProgress](imapiprogressiunknown.md) -Implementierung, Status angezeigt. Daraufhin wird die Anzeige Indikator reibungslos in einer Richtung positive fortfahren. Ob das Flag MAPI_TOP_LEVEL festgelegt ist bestimmt, wie-Dienstanbieter die anderen Parameter in nachfolgenden Aufrufe der Fortschritt-Objekts festlegen. 
+Mit MAPI können Dienstanbieter zwischen Objekten auf oberster Ebene und Unterobjekten mit dem MAPI_TOP_LEVEL-Flag differenzieren, sodass alle an einem Vorgang beteiligten Objekte dieselbe [IMAPIProgress](imapiprogressiunknown.md) -Implementierung zum Anzeigen des Fortschritts verwenden können. Dadurch wird die Anzeige des Indikators reibungslos in eine einzelne positive Richtung fortgesetzt. Ob das MAPI_TOP_LEVEL-Flag festgelegt ist, bestimmt, wie Dienstanbieter die anderen Parameter in nachfolgenden Aufrufen des Progress-Objekts festlegen. 
   
-Der Wert von **"GetFlags"** wird zunächst von der Implementierung und anschließend vom Dienstanbieter durch einen Aufruf an die [IMAPIProgress::SetLimits](imapiprogress-setlimits.md) -Methode festgelegt. 
+Der von GetFlags zurückgegebene Wert wird anfänglich durch den Implementierer und anschließend durch den Dienstanbieter durch einen Aufruf der [IMAPIProgress::](imapiprogress-setlimits.md) setlimits-Methode festgelegt. **** 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Initialisieren Sie das Flag MAPI_TOP_LEVEL immer, und klicken Sie dann stützen Sie sich auf Dienstanbieter, ihn bei Bedarf zu löschen. Dienstanbieter können deaktivieren und das Flag zurücksetzen, indem Sie die **IMAPIProgress::SetLimits** -Methode aufrufen. Weitere Informationen zum Implementieren von **"GetFlags"** und die anderen **IMAPIProgress** Methoden finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md).
+Initialisieren Sie das Flag immer für MAPI_TOP_LEVEL, und verlassen Sie sich dann auf Dienstanbieter, um es bei Bedarf zu löschen. Dienstanbieter können das Flag löschen und zurücksetzen, indem Sie die **IMAPIProgress::** setlimits-Methode aufrufen. Weitere Informationen zum Implementieren von GetFlags und den anderen **IMAPIProgress** -Methoden finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md). ****
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie eine Statusanzeige anzeigen, stellen Sie Ihre erste Aufruf einen Anruf an **IMAPIProgress::GetFlags**. Der zurückgegebene Wert sollte MAPI_TOP_LEVEL, da allen Implementierungen den Inhalt des Parameters _LpulFlags_ auf diesen Wert initialisieren. Weitere Informationen zur Reihenfolge der Aufrufe eines Objekts Fortschritt finden Sie unter [Display eine Statusanzeige](how-to-display-a-progress-indicator.md).
+Wenn Sie eine Statusanzeige anzeigen, machen Sie Ihren ersten Aufruf einen Aufruf von **IMAPIProgress::** GetFlags. Der zurückgegebene Wert sollte MAPI_TOP_LEVEL sein, da alle Implementierungen den Inhalt des _lpulFlags_ -Parameters auf diesen Wert initialisieren. Weitere Informationen zur Abfolge von Aufrufen eines Progress-Objekts finden Sie unter [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |CMAPIProgress::GetFlags  <br/> |MFCMAPI (engl.) wird die **IMAPIProgress::GetFlags** -Methode verwendet, um zu bestimmen, welche Attribute festgelegt sind. Gibt MAPI_TOP_LEVEL zurück, es sei denn, Flags mit der **IMAPIProgress::SetLimits** -Methode festgelegt wurden.  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress:: GetFlags  <br/> |MFCMAPI verwendet die **IMAPIProgress::** GetFlags-Methode, um zu bestimmen, welche Flags festgelegt sind. Gibt MAPI_TOP_LEVEL zurück, es sei denn, Flags wurden mithilfe der **IMAPIProgress::** setlimits-Methode festgelegt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

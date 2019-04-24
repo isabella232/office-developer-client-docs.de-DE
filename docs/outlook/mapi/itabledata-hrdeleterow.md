@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 670c2291-d5b6-4dcf-9046-9125272dd8f8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 989c6872e78ef78e5e0b18149a186d4f920ca603
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b187cccc4505256b7ab4d580c30eeb2e15ebf574
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278859"
 ---
 # <a name="itabledatahrdeleterow"></a>ITableData::HrDeleteRow
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Löscht eine Tabellenzeile.
   
@@ -37,25 +37,25 @@ HRESULT HrDeleteRow(
 
  _lpSPropValue_
   
-> [in] Ein Zeiger auf eine Eigenschaft-Wert-Struktur, die beschreibt die Indexspalte für die Zeile gelöscht werden soll. Der **UlPropTag** Member der Eigenschaft Wert Struktur sollte das gleiche Eigenschafts-Tag als _UlPropTagIndexColumn_ -Parameter aus dem Aufruf der Funktion [CreateTable](createtable.md) enthalten. 
+> in Ein Zeiger auf eine Eigenschaftswert Struktur, die die Indexspalte für die zu löschende Zeile beschreibt. Das **ulPropTag** -Element der Eigenschaftswert Struktur sollte das gleiche Property-Tag wie der _ulPropTagIndexColumn_ -Parameter aus dem Aufruf der [createable](createtable.md) -Funktion enthalten. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Zeile wurde gelöscht.
+> Die Zeile wurde erfolgreich gelöscht.
     
 MAPI_E_NOT_FOUND 
   
-> Die-Eigenschaft auf das durch den Parameter _LpSPropValue_ wird eine Zeile in der Tabelle nicht identifiziert. 
+> Die Eigenschaft, auf die durch den _lpSPropValue_ -Parameter verwiesen wird, identifiziert keine Zeile in der Tabelle. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **ITableData::HrDeleteRow** -Methode entfernt Tabellenzeile, die die Spalte enthält, die-Eigenschaft auf das durch den Parameter _LpSPropValue_ übereinstimmt. Die Daten für die Zeile werden gelöscht, und die Zeile aus alle geöffneten Ansichten entfernt wird. 
+Die **ITableData:: HrDeleteRow** -Methode entfernt die Tabellenzeile, die die Spalte enthält, die mit der Eigenschaft übereinstimmt, auf die durch den _lpSPropValue_ -Parameter verwiesen wird. Die Daten für die Zeile werden gelöscht, und die Zeile wird aus allen geöffneten Ansichten entfernt. 
   
-Nachdem die Zeile gelöscht wurde, werden Benachrichtigungen an alle Clients oder Dienstanbieter, die eine Ansicht der Tabelle und aufgerufen, die die Tabelle [IMAPITable::Advise](imapitable-advise.md) -Methode zum Registrieren für Benachrichtigungen, gesendet. 
+Nachdem die Zeile gelöscht wurde, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Tabellenansicht verfügen und die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. 
   
-Löschen einer Zeile wird nicht reduziert die Spalte festlegen, die verfügbar ist, vorhandene Ansichten oder Ansichten, anschließend geöffnet, auch wenn die gelöschte Zeile die letzte Zeile ist, die einen Wert für eine bestimmte Spalte verfügt.
+Durch das Löschen einer Zeile wird der Spaltensatz, der für vorhandene oder nachträglich geöffnete Ansichten verfügbar ist, nicht reduziert, auch wenn es sich bei der gelöschten Zeile um die letzte Zeile handelt, die einen Wert für eine bestimmte Spalte aufweist.
   
 ## <a name="see-also"></a>Siehe auch
 

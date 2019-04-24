@@ -1,26 +1,26 @@
 ---
-title: QuickStyleLineMatrix Cell (Quick Style Section)
+title: QuickStyleLineMatrix Cell (Quick Style section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3b10221d-30f8-48f5-81ed-0283fdfc3e5d
-description: Bestimmt die Linienart Schnellformatvorlagen, die das Shape als ganze Zahl von 0 bis 6 erbt.
-ms.openlocfilehash: 31d5c6e7c3e0e3f10847c44d5545b2687a7e99b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Formatvorlage für die Schnellformatvorlage, die von der Form erbt, als ganze Zahl von 0-6.
+ms.openlocfilehash: e04fc6328d40b0564364aa8feff971628360d813
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282586"
 ---
-# <a name="quickstylelinematrix-cell-quick-style-section"></a>QuickStyleLineMatrix Cell (Quick Style Section)
+# <a name="quickstylelinematrix-cell-quick-style-section"></a>QuickStyleLineMatrix Cell (Quick Style section)
 
-Bestimmt die Linienart Schnellformatvorlagen, die das Shape als ganze Zahl von 0 bis 6 erbt. 
+Bestimmt die Formatvorlage für die Schnellformatvorlage, die von der Form erbt, als ganze Zahl von 0-6. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **QuickStyleLineMatrix** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **QuickStyleLineMatrix** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

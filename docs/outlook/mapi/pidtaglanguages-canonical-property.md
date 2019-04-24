@@ -1,5 +1,5 @@
 ---
-title: PidTagLanguages (kanonische Eigenschaft)
+title: Kanonische Pidtaglanguages (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 16d4e92d-d48e-4e06-9886-2d21f3d10640
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4cd001e8d919765df9003e89c3eb3e00cde3bf55
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f3d8693644020dd77877db219b000f8f8c804376
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280394"
 ---
-# <a name="pidtaglanguages-canonical-property"></a>PidTagLanguages (kanonische Eigenschaft)
+# <a name="pidtaglanguages-canonical-property"></a>Kanonische Pidtaglanguages (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine ASCII-Liste der Sprachen, die in einer Nachricht enthalten sind. 
+Enthält eine ASCII-Liste der Sprachen, die in eine Nachricht integriert sind. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_LANGUAGES, PR_LANGUAGES_A, PR_LANGUAGES_W  <br/> |
 |Kennung:  <br/> |0x002F  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Allgemeine messaging  <br/> |
+|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften enthalten eine Folge von zwei Zeichen Land/Region Codes, die durch ein Komma voneinander getrennt sind. 
+Diese Eigenschaften enthalten eine Sequenz von zweistelligen Länder-/Regionscodes, die durch Kommata getrennt sind. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

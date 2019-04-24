@@ -1,26 +1,26 @@
 ---
-title: BevelContourSize Cell (Bevel Properties Section)
+title: Zelle "BevelContourSize" (Abschnitt "Fase Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0ebde552-f1e6-43d0-8704-4e29eb2b1c9d
-description: Bestimmt die Größe der Abschrägung Kontur in Punkt.
-ms.openlocfilehash: 1b7a83674492d5ea8d3fae8150e995fd8511eef0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Größe der Kontur der Abschrägung in Punkt.
+ms.openlocfilehash: bb37c1a9990e1ee4bcca917f065b7872b8ae3bd7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285126"
 ---
-# <a name="bevelcontoursize-cell-bevel-properties-section"></a>BevelContourSize Cell (Bevel Properties Section)
+# <a name="bevelcontoursize-cell-bevel-properties-section"></a>Zelle "BevelContourSize" (Abschnitt "Fase Properties")
 
-Bestimmt die Größe der Abschrägung Kontur in Punkt. 
+Bestimmt die Größe der Kontur der Abschrägung in Punkt. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **BevelContourSize** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **BevelContourSize** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
