@@ -14,23 +14,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 6a0404c21b308f6e389ee5577cc212763e660774
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306244"
 ---
 # <a name="update-statement-microsoft-access-sql"></a>UPDATE-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt eine Aktualisierungsabfrage, die Werte in Feldern in einer angegebenen Tabelle basierend auf angegebenen Kriterien ändert.
 
 ## <a name="syntax"></a>Syntax
 
-UPDATE *Tabelle* SET *Neuer Wert* WHERE *Kriterien*;
+UPDATE *Tabelle* SET *neuerWert* WHERE *Kriterien*;
 
-Die UPDATE-Anweisung hat diese Teile:
+Die UPDATE-Anweisung setzt sich wie folgt zusammen:
 
 <table>
 <colgroup>
@@ -39,32 +39,32 @@ Die UPDATE-Anweisung hat diese Teile:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Teil</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Tabelle</em></p></td>
-<td><p>Der Name der Tabelle mit den zu ändernden Daten.</p></td>
+<td><p><em>table</em></p></td>
+<td><p>Der Name der Tabelle mit den Daten, die Sie ändern möchten.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>newvalue</em></p></td>
-<td><p>Ein Ausdruck, der den Wert bestimmt, der in ein bestimmtes Feld in die aktualisierten Datensätze eingefügt werden soll.</p></td>
+<td><p><em>NeuerWert</em></p></td>
+<td><p>Ein Ausdruck für den Wert, der in ein bestimmtes Feld in den aktualisierten Datensätzen eingefügt werden soll.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Kriterien</em></p></td>
-<td><p>Ein Ausdruck, der bestimmt, welche Datensätze aktualisiert werden. Nur Datensätze, die dem Ausdruck entsprechen, werden aktualisiert.</p></td>
+<td><p><em>criteria</em></p></td>
+<td><p>Ein Ausdruck, der festlegt, welche Datensätze aktualisiert werden. Nur Datensätze, die dem Ausdruck entsprechen, werden aktualisiert.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-UPDATE ist besonders dann nützlich, wenn Sie viele Datensätze ändern möchten oder wenn sich die zu ändernden Datensätze in mehreren Tabellen befinden.
+Die UPDATE-Anweisung ist besonders hilfreich, wenn Sie viele Datensätze ändern möchten oder die zu ändernden Datensätze in mehreren Tabellen vorhanden sind.
 
-Sie können mehrere Felder gleichzeitig ändern. Das folgende Beispiel erhöht für Versender in Großbritannien den Wert der Bestellmenge um zehn Prozent und den Wert der Fracht um drei Prozent.
+Mehrere Felder können gleichzeitig geändert werden. Im folgenden Beispiel werden für Versandfirmen im Vereinigten Königreich die Werte für "Order Amount" um 10 % und die Werte für "Freight" um 3 % erhöht:
 
 ```sql
 UPDATE Orders 
@@ -76,7 +76,7 @@ WHERE ShipCountry = 'UK';
 
 > [!IMPORTANT]
 - UPDATE generiert kein Resultset. Nach dem Aktualisieren von Datensätzen mit einer Aktualisierungsabfrage können Sie den Vorgang außerdem nicht rückgängig machen. Wenn Sie wissen möchten, welche Datensätze aktualisiert wurden, untersuchen Sie zunächst die Ergebnisse einer Auswahlabfrage, die die gleichen Kriterien verwendet, und führen Sie dann die Aktualisierungsabfrage aus.
-- Behalten Sie immer Sicherungskopien Ihrer Daten. Wenn Sie die falschen Datensätze aktualisieren, können Sie sie aus den Sicherungskopien abrufen.
+- Bewahren Sie jederzeit Sicherungskopien Ihrer Daten auf. Wenn Sie die falschen Datensätze aktualisieren, können Sie sie aus Ihren Sicherungskopien abrufen.
 
 
 

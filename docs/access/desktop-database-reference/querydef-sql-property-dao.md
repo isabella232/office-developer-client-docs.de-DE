@@ -12,40 +12,40 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: c51f0da8541cf0ba2790827c58a0b017bd6ed875
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300980"
 ---
 # <a name="querydefsql-property-dao"></a>QueryDef.SQL-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt die SQL-Anweisung fest, die die Abfrage definiert, die von einem **[QueryDef](querydef-object-dao.md)** -Objekt ausgeführt wird, oder gibt sie zurück.
+Legt die SQL-Anweisung fest, die die Abfrage definiert, die von einem **[QueryDef](querydef-object-dao.md)**-Objekt ausgeführt wird, oder gibt sie zurück.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . SQL
+*Ausdruck* .SQL
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die **SQL** -Eigenschaft enthält die SQL-Anweisung, die festlegt, wie viele Datensätze ausgewählt, gruppiert und sortiert werden, wenn Sie die Abfrage ausführen. Sie können die Abfrage verwenden, um Datensätze auszuwählen, die in ein **[Recordset](recordset-object-dao.md)** -Objekt einbezogen werden sollen. Sie können auch Aktionsabfragen definieren, um Daten zu ändern, ohne Datensätze zurückzugeben.
+Die **SQL**-Eigenschaft enthält die SQL-Anweisung, die festlegt, wie viele Datensätze ausgewählt, gruppiert und sortiert werden, wenn Sie die Abfrage ausführen. Sie können die Abfrage verwenden, um Datensätze auszuwählen, die in ein **[Recordset](recordset-object-dao.md)**-Objekt einbezogen werden sollen. Sie können auch Aktionsabfragen definieren, um Daten zu ändern, ohne Datensätze zurückzugeben.
 
 Die in einer Abfrage verwendete SQL-Syntax muss dem SQL-Dialekt des Abfragemoduls entsprechen, der vom Typ des Arbeitsbereichs festgelegt wird. In einem Microsoft Access-Arbeitsbereich verwenden Sie den Microsoft Access SQL-Dialekt, außer Sie erstellen eine SQL Pass-Through-Abfrage. In diesem Fall sollten Sie den Dialekt des Servers verwenden.
 
 Wenn die SQL-Anweisung Parameter für die Abfrage enthält, müssen Sie sie vor der Ausführung festlegen. Wenn Sie die Parameter nicht neu festlegen, werden bei jeder Ausführung der Abfrage jeweils dieselben Parameterwerte verwendet.
 
-In einem Microsoft Access-Arbeitsbereich ist Verwenden eines **QueryDef** -Objekts die bevorzugte Methode zum Ausführen von SQL-Pass-Through-Vorgänge auf Microsoft Access-Datenbank-Engine verbundene ODBC-Datenquelle aus. **[Connect](querydef-connect-property-dao.md)** -Eigenschaft des **QueryDef** -Objekts auf einer ODBC-Datenquelle festlegen, können Sie nicht Microsoft – Access-Datenbank von SQL in der Abfrage an den externen Server übergeben werden. Beispielsweise können Sie TRANSACT-SQL-Anweisungen (mit Microsoft SQL Server oder Sybase SQL Server-Datenbanken) verwenden, die Microsoft Access-Datenbankmodul nicht anderweitig verarbeiten würde.
+In einem Microsoft Access-Arbeitsbereich wird vorzugsweise ein **QueryDef**-Objekt verwendet, um SQL Pass-Through-Vorgänge auf ODBC-Datenquellen auszuführen, die mit einer Microsoft Access-Datenbank-Engine verbunden sind. Wenn Sie für die **[Connect](querydef-connect-property-dao.md)**-Eigenschaft des **QueryDef**-Objekts eine ODBC-Datenquelle festlegen, können Sie einen anderen SQL-Dialekt als Microsoft Access-Datenbank-SQL in der Abfrage verwenden und an den externen Server übergeben. Sie können z. B. TRANSACT SQL-Anweisungen verwenden (mit Microsoft SQL Server- oder Sybase SQL Server-Datenbanken), die die Microsoft Access-Datenbank-Engine andernfalls nicht verarbeiten würde.
 
 > [!NOTE]
-> Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (z. B. `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50`), ein Fehler ausgegeben, wenn Sie versuchen, das **QueryDef** -Objekt in einem Microsoft ausführen Access-Datenbank. Das geschieht, weil die Zahl während der Verkettung mithilfe des standardmäßigen Dezimalzeichens des Systems in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-amerikanische Dezimalzeichen akzeptiert.
+> Wenn Sie die Eigenschaft auf eine Zeichenfolge festlegen, die mit einem Wert verkettet ist, bei dem es sich nicht um eine Ganzzahl handelt, und die Systemparameter ein anderes als das US-amerikanische Dezimaltrennzeichen festlegen, wie etwa ein Komma (z. B. `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50`), tritt ein Fehler auf, wenn Sie versuchen, das **QueryDef**-Objekt in einer Microsoft Access-Datenbank auszuführen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **SQL** -Eigenschaft veranschaulicht, indem die **SQL** -Eigenschaft eines temporären **QueryDef** -Objekts festgelegt und geändert wird. Zum Ausführen dieser Prozedur ist die SQLOutput-Funktion erforderlich.
+In diesem Beispiel wird die **SQL**-Eigenschaft veranschaulicht, indem die **SQL**-Eigenschaft eines temporären **QueryDef**-Objekts festgelegt und geändert wird. Zum Ausführen dieser Prozedur ist die SQLOutput-Funktion erforderlich.
 
 ```vb
     Sub SQLX() 
@@ -99,7 +99,7 @@ In diesem Beispiel wird die **SQL** -Eigenschaft veranschaulicht, indem die **SQ
 
 <br/>
 
-Im folgenden Beispiel wird die **CopyQueryDef** -Methode verwendet, um eine Kopie eines **QueryDef** -Objekts anhand eines vorhandenen **Recordset** -Objekts zu erstellen. Die Kopie wird verändert, indem der **SQL** -Eigenschaft eine Klausel hinzugefügt wird. Wenn Sie ein dauerhaftes **QueryDef** -Objekt erstellen, können der **SQL** -Eigenschaft Leerzeichen, Semikolons oder Zeilenvorschübe hinzugefügt werden. Diese zusätzlichen Zeichen müssen entfernt werden, bevor die neuen Klauseln in die SQL-Anweisung eingefügt werden.
+Im folgenden Beispiel wird die **CopyQueryDef**-Methode verwendet, um eine Kopie eines **QueryDef**-Objekts anhand eines vorhandenen **Recordset**-Objekts zu erstellen. Die Kopie wird verändert, indem der **SQL**-Eigenschaft eine Klausel hinzugefügt wird. Wenn Sie ein dauerhaftes **QueryDef**-Objekt erstellen, können der **SQL**-Eigenschaft Leerzeichen, Semikolons oder Zeilenvorschübe hinzugefügt werden. Diese zusätzlichen Zeichen müssen entfernt werden, bevor die neuen Klauseln in die SQL-Anweisung eingefügt werden.
 
 ```vb
     Function CopyQueryNew(rstTemp As Recordset, _ 
@@ -186,7 +186,7 @@ Dieses Beispiel zeigt eine mögliche Verwendung von CopyQueryNew().
 
 <br/>
 
-Dieses Beispiel verwendet die **CreateQueryDef** - und **OpenRecordset** -Methode sowie die **SQL** -Eigenschaft zum Abfragen der Tabelle mit Titeln in der Microsoft SQL Server-Beispieldatenbank „Publikationen" und zum Zurückgeben des Titels und der Titel-ID des Bestsellers. Anschließend wird die Tabelle mit Autoren abgefragt, und der Benutzer wird angewiesen, einen Bonusscheck an jeden Autor zu senden, der auf dem jeweiligen Tantiemenanteil des Autors basiert (der Gesamtbonus beträgt 1.000 $, und jeder Autor soll einen Prozentsatz dieses Betrags erhalten).
+In diesem Beispiel werden die **CreateQueryDef**- und die **OpenRecordset**-Methode sowie die **SQL**-Eigenschaft verwendet, um die Tabelle der Titel in der Microsoft SQL Server-Beispieldatenbank "Pubs" abzufragen und den Titel und die Titel-ID des Bestsellers zurückzugeben. Anschließend wird die Tabelle der Autoren abgefragt, und der Benutzer wird angewiesen, einen Bonusscheck an jeden Autor zu senden, der auf dem jeweiligen Tantiemenanteil des Autors basiert (der Gesamtbonus beträgt 1.000 $, und jeder Autor soll einen Prozentsatz dieses Betrags erhalten).
 
 ```vb
     Sub ClientServerX2() 
@@ -254,9 +254,9 @@ Dieses Beispiel verwendet die **CreateQueryDef** - und **OpenRecordset** -Method
 
 <br/>
 
-Das folgende Beispiel zeigt, wie Sie eine Parameterabfrage erstellen. Eine Abfrage namens **MyQuery** wird mit zwei Parameter, mit dem Namen Param1 und Param2 erstellt. Hierzu wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, die die Parameter definiert.
+Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage erstellt wird. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern, Param1 und Param2, erstellt. Zu diesem Zweck wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, die die Parameter definiert.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub CreateQueryWithParameters()
@@ -283,7 +283,7 @@ Das folgende Beispiel zeigt, wie Sie eine Parameterabfrage erstellen. Eine Abfra
 
 <br/>
 
-Das folgende Beispiel zeigt, wie Sie die Structured Query Language (SQL)-Anweisung in einer gespeicherten Abfrage ersetzen.
+Das folgende Beispiel zeigt, wie Sie die SQL-Anweisung (Structured Query Language) in einer gespeicherten Abfrage ersetzen.
 
 ```vb
     Dim qdf as QueryDef

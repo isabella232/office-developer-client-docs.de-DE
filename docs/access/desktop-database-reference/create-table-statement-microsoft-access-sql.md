@@ -1,5 +1,5 @@
 ---
-title: CREATE TABLE-Anweisung (Microsoft Access SQL)
+title: CREATE TABLE statement (Microsoft Access SQL)
 TOCTitle: CREATE TABLE statement (Microsoft Access SQL)
 ms:assetid: fc45d36e-6e43-c030-5016-cca8bb1379fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837200(v=office.15)
@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 296e1405245d6204d136888e78b6a3846b468a1f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295359"
 ---
-# <a name="create-table-statement-microsoft-access-sql"></a>CREATE TABLE-Anweisung (Microsoft Access SQL)
+# <a name="create-table-statement-microsoft-access-sql"></a>CREATE TABLE statement (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt eine neue Tabelle.
 
 > [!NOTE]
-> [!HINWEIS] Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der CREATE TABLE- oder anderer DDL-Anweisungen für Datenbanken ohne das Microsoft Access-Datenbankmodul. Verwenden Sie stattdessen Methoden DAO **Erstellen** .
+> Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung von CREATE TABLE oder einer der DDL-Anweisungen für Datenbanken, die nicht mit dem Microsoft Access-Datenbankmodul erstellt wurden. Verwenden Sie stattdessen die **Create**-Methoden von DAO.
 
 ## <a name="syntax"></a>Syntax
 
-Erstellen von \[temporäre\] Tabelle *Tabelle* (*Feld1 Typ* \[(*Größe*)\] \[nicht "NULL"\] \[WITH COMPRESSION | WITH COMP\] \[ *index1* \] \[, *Feld2* *Typ* \[(*Größe*)\] \[nicht "NULL"\] \[ *index2* \] \[,... \] \] \[, CONSTRAINT *mehrerefelderindex* \[,... \]\])
+CREATE \[TEMPORARY\] TABLE *table* (*field1 type* \[(*size*)\] \[NOT NULL\] \[WITH COMPRESSION | WITH COMP\] \[*index1*\] \[, *field2* *type* \[(*size*)\] \[NOT NULL\] \[*index2*\] \[, …\]\] \[, CONSTRAINT *multifieldindex* \[, …\]\])
 
-Die CREATE TABLE-Anweisung besteht aus folgenden Komponenten:
+Die CREATE TABLE-Anweisung setzt sich wie folgt zusammen:
 
 <table>
 <colgroup>
@@ -40,18 +40,18 @@ Die CREATE TABLE-Anweisung besteht aus folgenden Komponenten:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Teil</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Tabelle</em></p></td>
+<td><p><em>table</em></p></td>
 <td><p>Der Name der zu erstellenden Tabelle.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Feld1</em>, <em>Feld2</em></p></td>
-<td><p>Die Namen der in der neuen Tabelle zu erstellenden Felder. Sie müssen mindestens ein Feld erstellen.</p></td>
+<td><p>Der Name des Felds oder der Felder, das/die in der neuen Tabelle erstellt werden soll(en). Sie müssen mindestens ein Feld erstellen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>type</em></p></td>
@@ -63,31 +63,31 @@ Die CREATE TABLE-Anweisung besteht aus folgenden Komponenten:
 </tr>
 <tr class="odd">
 <td><p><em>Index1</em>, <em>Index2</em></p></td>
-<td><p>Eine CONSTRAINT-Klausel, die einen Index mit einem Feld definiert. Weitere Informationen zum Erstellen dieses Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
+<td><p>Eine CONSTRAINT-Klausel, die einen einfachen Index definiert. Weitere Informationen zum Erstellen dieses Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Index_mit_mehreren_Feldern</em></p></td>
-<td><p>Eine CONSTRAINT-Klausel, die einen Index mit mehreren Feldern definiert. Weitere Informationen zum Erstellen dieses Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
+<td><p><em>zusammengesetzter Index</em></p></td>
+<td><p>Eine CONSTRAINT-Klausel, die einen zusammengesetzten Index definiert. Weitere Informationen zum Erstellen dieses Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die CREATE TABLE-Anweisung, um eine neue Tabelle und deren Felder und Feldeinschränkungen zu definieren. Wenn nicht NULL für ein Feld angegeben ist, neue Datensätze sind erforderlich, damit in diesem Feld gültige Daten vorhanden sind.
+Verwenden Sie die CREATE TABLE-Anweisung, um eine neue Tabelle und deren Felder sowie Feldeinschränkungen zu definieren. Wenn für ein Feld NOT NULL angegeben ist, müssen neue Datensätze gültige Daten in diesem Feld aufweisen.
 
 Eine CONSTRAINT-Klausel erstellt verschiedene Einschränkungen für ein Feld und kann zum Erstellen des Primärschlüssels verwendet werden. Sie können auch die [CREATE INDEX](create-index-statement-microsoft-access-sql.md)-Anweisung zum Erstellen eines Primärschlüssels oder zusätzlicher Indizes für vorhandene Tabellen verwenden.
 
-NOT NULL kann für ein einzelnes Feld oder in einer benannten CONSTRAINT-Klausel verwendet werden, die entweder für ein einzelnes Feld oder mehrere Felder namens CONSTRAINT gilt. Jedoch können Sie die NOT NULL-Einschränkung nur einmal auf ein Feld anwenden. Der Versuch, diese Einschränkung mehrmals anzuwenden, führt zu einem Laufzeitfehler.
+Sie können NOT NULL für ein einzelnes Feld oder in einer benannten CONSTRAINT-Klausel verwenden, die entweder für ein einzelnes Feld oder für mehrere Felder mit dem Namen CONSTRAINT gilt. Sie können die NOT NULL-Einschränkung jedoch nur einmal auf ein Feld anwenden. Der Versuch, diese Einschränkung mehrmals zu verwenden, führt zu einem Laufzeitfehler.
 
-Wenn eine temporäre Tabelle erstellt wird, ist sichtbar nur innerhalb der Sitzung in der es erstellt wurde. Sie wird automatisch gelöscht, wenn die Sitzung beendet wird. Auf temporäre Tabellen können mehrere Benutzer zugreifen.
+Beim Erstellen der Tabelle vom Typ TEMPORARY ist diese nur in der Sitzung sichtbar, in der sie erstellt wurde. Sie wird automatisch gelöscht, wenn die Sitzung beendet wird. Auf temporäre Tabellen können mehrere Benutzer zugreifen.
 
-Das WITH COMPRESSION-Attribut kann nur zusammen mit den Datentypen CHARACTER und MEMO (auch TEXT genannt) und den entsprechenden Synonymen verwendet werden.
+Das Attribut WITH COMPRESSION kann nur mit den Datentypen CHARACTER und MEMO (auch als TEXT bezeichnet) und deren Synonymen verwendet werden.
 
-Das WITH COMPRESSION-Attribut wurde für Zeichenspalten vom Typ CHARACTER aufgrund der Änderung am Unicode-Zeichendarstellungsformat hinzugefügt. Unicode-Zeichen benötigen jeweils zwei Bytes für jedes Zeichen. Für vorhandene Microsoft Jet-Datenbanken, die vorwiegend Zeichendaten enthalten, kann dies bedeuten, dass die Datenbankdatei beinahe die doppelte Größe, wenn Sie in das Microsoft Access-Datenbank-Engine-Format konvertiert wird. Unicode-Darstellung vieler Zeichensätze, die früher bezeichnet als Einzelbyte-Zeichen (SBCS), jedoch kann auf einfache Weise auf ein einzelnes Byte komprimiert werden. Wenn Sie eine CHARACTER-Spalte mit diesem Attribut definieren, werden die Daten automatisch komprimiert gespeichert und dekomprimiert, wenn der Abruf aus der Spalte erfolgt.
+Das Attribut WITH COMPRESSION wurde aufgrund der Änderung des Darstellungsformats von Unicode-Zeichen für Zeichenspalten hinzugefügt. Unicode-Zeichen benötigen jeweils zwei Byte, um jedes Zeichen zu speichern. Für vorhandene Microsoft Jet-Datenbanken, die überwiegend Zeichendaten enthalten, kann dies bedeuten, dass die Datenbankdatei bei Konvertierung in das Microsoft Access-Datenbankformat ihre Größe nahezu verdoppelt. Jedoch kann die Unicode-Darstellung vieler Zeichensätze, die früher als Single-Byte Character Sets (SBCS) bezeichnet wurden, auf einfache Weise zu einem einzelnen Byte komprimiert werden. Wenn Sie eine Zeichenspalte (CHARACTER) mit diesem Attribut definieren, werden die Daten beim Speichern automatisch komprimiert und beim Abrufen aus der Spalte dekomprimiert.
 
-MEMO-Spalten können auch zum Speichern von Daten in einem komprimierten Format definiert werden, wobei jedoch eine Einschränkung gilt. Nur Instanzen von MEMO-Spalten, die in komprimierten Zustand maximal 4096 Byte groß sind, werden komprimiert. Alle anderen Instanzen von MEMO-Spalten bleiben unkomprimiert. Dies bedeutet, dass in einer Tabelle bei einer bestimmten MEMO-Spalte einige Daten möglicherweise komprimiert werden und andere nicht.
+MEMO-Spalten können auch definiert werden, um Daten in einem komprimierten Format zu speichern. Es gibt jedoch eine Einschränkung. Nur Instanzen von MEMO-Spalten, die in komprimierter Form in 4096 Byte oder weniger passen, werden komprimiert. Alle anderen Instanzen von MEMO-Spalten bleiben dekomprimiert. Dies bedeutet, dass innerhalb einer bestimmten Tabelle für eine bestimmte MEMO-Spalte einige Daten möglicherweise komprimiert werden und einige Daten möglicherweise nicht komprimiert werden.
 
 ## <a name="example"></a>Beispiel
 

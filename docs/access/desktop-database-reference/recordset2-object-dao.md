@@ -8,27 +8,27 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: a25e980660e1ab098d15b66b17678ef4111ee215
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307231"
 ---
 # <a name="recordset2-object-dao"></a>Recordset2-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Ein **Recordset2** -Objekt stellt die Datensätze in einer Basistabelle oder die Datensätze dar, die aus einer Abfrage stammen.
+Ein **Recordset2**-Objekt stellt die Datensätze in einer Basistabelle oder die Datensätze dar, die aus einer Abfrage stammen.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Ein **Recordset2** -Objekt enthält dieselben Eigenschaften und Methoden wie das **[Recordset](recordset-object-dao.md)** -Objekt. Das **Recordset2** -Objekt enthält eine neue Eigenschaft, nämlich die **[ParentRecordset](recordset2-parentrecordset-property-dao.md)** -Eigenschaft, die mehrwertige Feldtypen unterstützt.
+Ein **Recordset2**-Objekt enthält dieselben Eigenschaften und Methoden wie das **[Recordset](recordset-object-dao.md)**-Objekt. Das **Recordset2**-Objekt enthält eine neue Eigenschaft, nämlich die **[ParentRecordset](recordset2-parentrecordset-property-dao.md)**-Eigenschaft, die mehrwertige Feldtypen unterstützt.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt, wie Sie durch ein Recordset-Objekt navigieren, das ein Mehrfachwertfeld enthält.
+Das folgende Beispiel zeigt, wie Sie durch ein Recordset navigieren, das ein Mehrfachwertfeld enthält.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub PrintStudentsAndClasses()

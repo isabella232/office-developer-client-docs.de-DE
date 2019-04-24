@@ -12,44 +12,44 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 1ebf963695b2d754a4501077e2236c52280a9a2e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300651"
 ---
 # <a name="recordsetbookmark-property-dao"></a>Recordset.Bookmark-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt eine Textmarke fest oder gibt sie zurück. Sie identifiziert den aktuellen Datensatz eindeutig in einem **[Recordset](recordset-object-dao.md)** -Objekt.
+Legt eine Textmarke fest oder gibt sie zurück. Sie identifiziert den aktuellen Datensatz eindeutig in einem **[Recordset](recordset-object-dao.md)**-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Lesezeichen
+*Ausdruck* .Bookmark
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Für ein **Recordset** -Objekt vollständig auf Tabellen des Microsoft Access-Datenbankmoduls basiert der Wert der **Bookmarkable** -Eigenschaft True ist, und können Sie die **Bookmark** -Eigenschaft **Recordset-Objekt**. Andere Datenbank-Produkte unterstützen Textmarken möglicherweise nicht. Sie können Textmarken nicht in beliebigen **Recordset** -Objekten verwenden, die auf einer verknüpften Paradox-Tabelle basieren, die keinen primären Schlüssel besitzt.
+Bei einem vollständig auf Microsoft Access-Datenbankmodultabellen basierenden **Recordset**-Objekt lautet der Wert der **Bookmarkable**-Eigenschaft True und Sie können die **Bookmark**-Eigenschaft mit diesem **Recordset** verwenden. Andere Datenbank-Produkte unterstützen Textmarken möglicherweise nicht. Sie können Textmarken nicht in beliebigen **Recordset** -Objekten verwenden, die auf einer verknüpften Paradox-Tabelle basieren, die keinen primären Schlüssel besitzt.
 
-Beim Erstellen oder Öffnen eines **Recordset** -Objekts besitzt jeder Datensatz bereits eine eindeutige Textmarke. Sie können die Textmarke für den aktuellen Datensatz speichern, indem Sie der Variable den Wert der **Bookmark** -Eigenschaft zuweisen. Um jederzeit schnell zu dem Datensatz zurückkehren zu können, nachdem Sie einen anderen Datensatz verschoben haben, setzen Sie die **Bookmark** -Eigenschaft des **Recordset** -Objekts auf den Wert der Variable.
+Beim Erstellen oder Öffnen eines **Recordset**-Objekts besitzt jeder Datensatz bereits eine eindeutige Textmarke. Sie können die Textmarke für den aktuellen Datensatz speichern, indem Sie der Variable den Wert der **Bookmark**-Eigenschaft zuweisen. Um jederzeit schnell zu dem Datensatz zurückkehren zu können, nachdem Sie einen anderen Datensatz verschoben haben, setzen Sie die **Bookmark**-Eigenschaft des **Recordset**-Objekts auf den Wert der Variable.
 
-Bei der Anzahl der Textmarken gibt es keine Begrenzung. Um eine Textmarke für einen anderen als den aktuellen Datensatz zu erstellen, verschieben Sie den gewünschten Datensatz und weisen Sie einer **String** -Variable den Wert der **Bookmark** -Eigenschaft zu, der den Datensatz identifiziert.
+Bei der Anzahl der Textmarken gibt es keine Begrenzung. Um eine Textmarke für einen anderen als den aktuellen Datensatz zu erstellen, verschieben Sie den gewünschten Datensatz und weisen Sie einer **String**-Variable den Wert der **Bookmark**-Eigenschaft zu, der den Datensatz identifiziert.
 
-Um sicherzustellen, dass das **Recordset** -Objekt Textmarken unterstützt, überprüfen Sie den Wert der **[Bookmarkable](recordset-bookmarkable-property-dao.md)** -Eigenschaft, bevor Sie die **Bookmark** -Eigenschaft verwenden. Wenn die **Bookmarkable** -Eigenschaft auf false festgelegt ist, das **Recordset** -Objekt Lesezeichen unterstützt keine und ein auffangbarer Fehler mithilfe der **Bookmark** -Eigenschaft erzeugt.
+Um sicherzustellen, dass das **Recordset**-Objekt Bookmarks unterstützt, überprüfen Sie den Wert der ** [Bookmarkable](recordset-bookmarkable-property-dao.md)**-Eigenschaft vor der Verwendung der **Bookmark**-Eigenschaft. Wenn die **Bookmarkable**-Eigenschaft den Wert False hat, unterstützt das **Recordset**-Objekt keine Lesezeichen, und die Verwendung der **Bookmark**-Eigenschaft führt zu einem auffangbaren Fehler.
 
-Wenn Sie die **[Clone](recordset-clone-method-dao.md)** -Methode verwenden, um eine Kopie eines **Recordset** -Objekts zu erstellen, sind die **Bookmark** -Eigenschaftseinstellungen für die ursorünglichen und die duplizierten **Recordset** -Objekte identisch und austauschbar. Textmarken aus unterschiedlichen **Recordset** -Objekten sind jedoch nicht austauschbar, selbst wenn sie mit dem gleichen Objekt oder der gleichen SQL-Anweisung erstellt wurden.
+Wenn Sie die **[Clone](recordset-clone-method-dao.md)**-Methode verwenden, um eine Kopie eines **Recordset**-Objekts zu erstellen, sind die **Bookmark**-Eigenschaftseinstellungen für die ursorünglichen und die duplizierten **Recordset**-Objekte identisch und austauschbar. Textmarken aus unterschiedlichen **Recordset**-Objekten sind jedoch nicht austauschbar, selbst wenn sie mit dem gleichen Objekt oder der gleichen SQL-Anweisung erstellt wurden.
 
-Wenn Sie die **Bookmark** -Eigenschaft auf einen Wert festlegen, der einen gelöschten Datensatz darstellt, tritt ein abfangbarer Fehler auf.
+Wenn Sie die **Bookmark**-Eigenschaft auf einen Wert festlegen, der einen gelöschten Datensatz darstellt, tritt ein abfangbarer Fehler auf.
 
-Der Wert der **Bookmark** -Eigenschaft entspricht nicht einer Datensatzanzahl.
+Der Wert der **Bookmark**-Eigenschaft entspricht nicht einer Datensatzanzahl.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die **Bookmark** - und **Bookmarkable** -Eigenschaften verwendet, damit Benutzer einen Eintrag in einem **Recordset** kennzeichnen und später zu ihm zurückkehren können.
+In diesem Beispiel werden die **Bookmark**- und **Bookmarkable**-Eigenschaften verwendet, damit Benutzer einen Eintrag in einem **Recordset** kennzeichnen und später zu ihm zurückkehren können.
 
 ```vb
     Sub BookmarkX() 
@@ -126,7 +126,7 @@ In diesem Beispiel werden die **Bookmark** - und **Bookmarkable** -Eigenschaften
 
 <br/>
 
-In diesem Beispiel wird die **LastModified** -Eigenschaft verwenden, um den aktuellen Datensatzzeiger zu einem geänderten und neu erstellten Datensatz zu verschieben.
+In diesem Beispiel wird die **LastModified**-Eigenschaft verwenden, um den aktuellen Datensatzzeiger zu einem geänderten und neu erstellten Datensatz zu verschieben.
 
 ```vb
     Sub LastModifiedX() 

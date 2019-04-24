@@ -8,33 +8,33 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 22284abf537f57d98d5f0416b58a9a2ac3c6ebe5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300700"
 ---
 # <a name="recordsetabsoluteposition-property-dao"></a>Recordset.AbsolutePosition-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt die relative Datensatznummer des aktuellen Datensatzes eines **Recordset** -Objekts fest oder gibt den betreffenden Wert zurück.
+Legt die relative Datensatznummer des aktuellen Datensatzes eines **Recordset**-Objekts fest oder gibt den betreffenden Wert zurück.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . AbsolutePosition
+*Ausdruck* .AbsolutePosition
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können die **AbsolutePosition** -Eigenschaft verwenden, um den aktuellen Datensatzzeiger basierend auf seiner Position in einem **Recordset** -Objekt vom Typ Dynaset oder Momentaufnahme auf einen bestimmten Datensatz zu verschieben. Sie können auch die aktuelle Datensatznummer ermitteln, indem Sie die Einstellung der **AbsolutePosition** -Eigenschaft überprüfen.
+Sie können die **AbsolutePosition**-Eigenschaft verwenden, um den aktuellen Datensatzzeiger basierend auf seiner Position in einem **Recordset**-Objekt vom Typ Dynaset oder Momentaufnahme auf einen bestimmten Datensatz zu verschieben. Sie können auch die aktuelle Datensatznummer ermitteln, indem Sie die Einstellung der **AbsolutePosition**-Eigenschaft überprüfen.
 
-Da es sich bei der **AbsolutePosition** -Eigenschaft um einen nullbasierten Wert handelt (d. h. die Einstellung 0 verweist auf den ersten Datensatz im **Recordset** -Objekt), können Sie keinen Wert festlegen, der größer oder gleich der Anzahl von im enthaltenen Datensätzen ist. Falls Sie das versuchen, tritt ein abfangbarer Fehler auf. Ermitteln Sie die Anzahl von im **Recordset** -Objekt enthaltenen Datensätzen, indem Sie die Einstellung der **RecordCount** -Eigenschaft überprüfen. Die maximal zulässige Einstellung für die **AbsolutePosition** -Eigenschaft entspricht dem Wert der **RecordCount** -Eigenschaft minus 1.
+Da es sich bei der **AbsolutePosition**-Eigenschaft um einen nullbasierten Wert handelt (d. h. die Einstellung 0 verweist auf den ersten Datensatz im **Recordset**-Objekt), können Sie keinen Wert festlegen, der größer oder gleich der Anzahl von im enthaltenen Datensätzen ist. Falls Sie das versuchen, tritt ein abfangbarer Fehler auf. Ermitteln Sie die Anzahl von im **Recordset**-Objekt enthaltenen Datensätzen, indem Sie die Einstellung der **RecordCount**-Eigenschaft überprüfen. Die maximal zulässige Einstellung für die **AbsolutePosition**-Eigenschaft entspricht dem Wert der **RecordCount**-Eigenschaft minus 1.
 
-Wenn kein aktueller Datensatz vorhanden ist, als wenn keine Datensätze im **Recordset** -Objekt vorhanden sind, gibt **AbsolutePosition** -1 zurück. Wenn der aktuelle Datensatz gelöscht wird, der Wert der **AbsolutePosition** -Eigenschaft ist nicht definiert, und wenn auf sie verwiesen wird, tritt ein auffangbarer Fehler auf. Neue Datensätze werden am Ende der Sequenz hinzugefügt.
+Falls es keinen aktuellen Datensatz gibt, z. B. wenn das **Recordset**-Objekt keine Datensätze enthält, gibt die **AbsolutePosition**-Eigenschaft den Wert „–1“ zurück. Wird der aktuelle Datensatz gelöscht, ist der Wert der **AbsolutePosition**-Eigenschaft nicht definiert. Wenn dann auf den Datensatz verwiesen wird, tritt ein abfangbarer Fehler auf. Neue Datensätze werden am Ende der Sequenz hinzugefügt.
 
-Verwenden Sie diese Eigenschaft nicht als Ersatz-Datensatznummer. Textmarken sind weiterhin die empfohlene Methode, um zu einer bestimmten Position zurückzukehren, und sie sind die einzige Methode der Positionierung für alle Typen von **Recordset** -Objekten. Die Position eines Datensatzes ändert sich insbesondere dann, wenn einer oder mehrere vorausgehende Datensätze gelöscht werden. Außerdem kann nicht davon ausgegangen werden, dass ein bestimmter Datensatz beim erneuten Erstellen des **Recordset** -Objekts die gleiche absolute Position aufweist. Denn die Reihenfolge einzelner Datensätze in einem **Recordset** -Objekt ist nur dann sichergestellt, wenn es in einer SQL-Anweisung mit einer ORDER BY-Klausel erstellt wird.
+Verwenden Sie diese Eigenschaft nicht als Ersatz-Datensatznummer. Textmarken sind weiterhin die empfohlene Methode, um zu einer bestimmten Position zurückzukehren, und sie sind die einzige Methode der Positionierung für alle Typen von **Recordset**-Objekten. Die Position eines Datensatzes ändert sich insbesondere dann, wenn einer oder mehrere vorausgehende Datensätze gelöscht werden. Außerdem kann nicht davon ausgegangen werden, dass ein bestimmter Datensatz beim erneuten Erstellen des **Recordset**-Objekts die gleiche absolute Position aufweist. Denn die Reihenfolge einzelner Datensätze in einem **Recordset**-Objekt ist nur dann sichergestellt, wenn es in einer SQL-Anweisung mit einer ORDER BY-Klausel erstellt wird.
 
 > [!NOTE]
 > - Wird die **AbsolutePosition**-Eigenschaft bei einem neu geöffneten, jedoch leeren **Recordset**-Objekt auf einen Wert größer als Null festgelegt, tritt ein abfangbarer Fehler auf. Füllen Sie das **Recordset**-Objekt zuerst mit der **MoveLast**-Methode auf.
@@ -42,7 +42,7 @@ Verwenden Sie diese Eigenschaft nicht als Ersatz-Datensatznummer. Textmarken sin
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel verwendet die **AbsolutePosition** -Eigenschaft, um den Status einer Schleife nachzuverfolgen, in der alle Datensätze eines **Recordset** -Objekts aufgezählt werden.
+Dieses Beispiel verwendet die **AbsolutePosition**-Eigenschaft, um den Status einer Schleife nachzuverfolgen, in der alle Datensätze eines **Recordset**-Objekts aufgezählt werden.
 
 ```vb
     Sub AbsolutePositionX() 
