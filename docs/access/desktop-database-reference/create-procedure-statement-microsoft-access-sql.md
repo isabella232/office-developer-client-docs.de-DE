@@ -10,45 +10,44 @@ dev_langs:
 - sql
 localization_priority: Priority
 ms.openlocfilehash: f223e164bd36a6a1a76140a28dd57cd2005e4a20
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295402"
 ---
 # <a name="create-procedure-statement-microsoft-access-sql"></a>CREATE PROCEDURE-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
 
 Erstellt eine gespeicherte Prozedur.
 
 > [!NOTE]
-> [!HINWEIS] Vom Microsoft Access-Datenbankmodul wird die Verwendung der CREATE PROCEDURE- oder anderer DDL-Anweisungen in Datenbanken, die nicht aus dem Microsoft Jet-Datenbankmodul stammen, nicht unterstützt.
+> Vom Microsoft Access-Datenbankmodul wird die Verwendung der CREATE PROCEDURE- oder anderer DDL-Anweisungen in Datenbanken, die nicht aus dem Microsoft Jet-Datenbankmodul stammen, nicht unterstützt.
 
 ## <a name="syntax"></a>Syntax
 
-CREATE PROCEDURE *Prozedur* \[ *param1 Datentyp*\[, *param2 Datentyp*\[,... \] \] Als SQL-Anweisung
+CREATE PROCEDURE *procedure* \[*param1 datatype*\[, *param2 datatype*\[, …\]\] AS sqlstatement
 
-Die CREATE PROCEDURE-Anweisung besteht aus drei Komponenten:
+Die CREATE PROCEDURE-Anweisung setzt sich wie folgt zusammen:
 
-|Komponente|Beschreibung|
+|Part|Beschreibung|
 |:---|:----------|
-|*Prozedur*|Ein Name für die Prozedur. Bei der Namensgebung müssen die Standardbenennungsregeln beachtet werden.|
-|*Param1*, *Param2*|Einer von 255 Feldnamen oder Parametern. Beispiel:
-<br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>Weitere Informationen zu Parametern finden Sie unter [Parameter](parameters-declaration-microsoft-access-sql.md).|
+|*Prozedur*|Der Name der Prozedur. Bei der Namensgebung müssen die Standardbenennungsregeln beachtet werden.|
+|*Parameter1*, *Parameter2*|1 bis 255 Feldnamen oder Parameter. Beispiel:<br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>Weitere Informationen zu Parametern finden Sie unter [PARAMETER](parameters-declaration-microsoft-access-sql.md).|
 |*Datentyp*|Einer der wichtigsten [Microsoft Access SQL-Datentypen](sql-data-types.md) oder eines der Synonyme.|
 |*SQL-Anweisung*|Eine SQL-Anweisung wie SELECT, UPDATE, DELETE, INSERT, CREATE TABLE, DROP TABLE usw.|
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine SQL-Prozedur besteht aus einer PROCEDURE-Klausel, die den Namen der Prozedur angibt, einer optionalen Liste mit Parameterdefinitionen und einer einzelnen SQL-Anweisung.
+Eine SQL-Prozedur besteht aus einer PROCEDURE-Klausel,die den Namen der Prozedur angibt, einer optionalen Liste von Parameterdefinitionen und einer einzelnen SQL-Anweisung.
 
-Ein Prodezurname darf nicht mit dem Namen einer bestehenden Tabelle übereinstimmen.
+Der Name der Prozedur darf nicht mit dem Namen einer vorhandenen Tabelle übereinstimmen.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die Abfrage categoryList verwendet, und es wird die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
+In diesem Beispiel wird die CategoryList-Abfrage benannt und die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung enthalten ist.
 
 ```vb
     Sub ProcedureX() 

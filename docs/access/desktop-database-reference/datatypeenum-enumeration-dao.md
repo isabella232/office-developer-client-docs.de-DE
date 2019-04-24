@@ -1,5 +1,5 @@
 ---
-title: DataTypeEnum (Aufzählung) (DAO)
+title: DataTypeEnum-Aufzählung (DAO)
 TOCTitle: DataTypeEnum Enumeration
 ms:assetid: 59ead483-52fc-53cd-02e6-084814f961ac
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194420(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 499513d706b254e72433d37d4eb5452ccbbaa257
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294449"
 ---
-# <a name="datatypeenum-enumeration-dao"></a>DataTypeEnum (Aufzählung) (DAO)
+# <a name="datatypeenum-enumeration-dao"></a>DataTypeEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Datentyp eines Objekts an.
 
@@ -118,7 +118,7 @@ Gibt den Datentyp eines Objekts an.
 <tr class="odd">
 <td><p>dbDecimal</p></td>
 <td><p>20</p></td>
-<td><p>Dezimaldaten (nur ODBCDirect)</p><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p>Dezimaldaten (nur ODBCDirect)</p><p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 </td>
 </tr>
 <tr class="even">
@@ -157,7 +157,7 @@ Gibt den Datentyp eines Objekts an.
 <td><p>Binärdaten (Bitmap)</p></td>
 </tr>
 <tr class="even">
-<td><p>Wert dbMemo</p></td>
+<td><p>dbMemo</p></td>
 <td><p>12</p></td>
 <td><p>Memodaten (erweiterter Text)</p></td>
 </tr>
@@ -182,7 +182,7 @@ Gibt den Datentyp eines Objekts an.
 <td><p>Textdaten (variable Breite)</p></td>
 </tr>
 <tr class="even">
-<td><p>Zeitpunkt</p></td>
+<td><p>dbTime</p></td>
 <td><p>22</p></td>
 <td><p>Daten im Zeitformat (nur ODBCDirect)</p>
 

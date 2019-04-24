@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: fb6cbd6cc925a3e4841d9e7d6d77332cc36c7a03
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291894"
 ---
 # <a name="ifthenelse-macro-block"></a>Wenn...Dann...Sonst-Makroblock
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Mit dem **If** -Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen.
+Mit dem **If**-Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen.
 
 ```vb
     If expression Then 
@@ -33,7 +33,7 @@ Mit dem **If** -Makroblock können Sie eine Gruppe von Aktionen je nach Wert ein
 
 ## <a name="setting"></a>Einstellung
 
-**Wenn** sowohl **Sonst wenn**sind die folgenden Argumente erforderlich.
+Für **If** und für **Else If** sind jeweils die folgenden Argumente erforderlich.
 
 <table>
 <colgroup>
@@ -49,23 +49,23 @@ Mit dem **If** -Makroblock können Sie eine Gruppe von Aktionen je nach Wert ein
 <tbody>
 <tr class="odd">
 <td><p><strong>Ausdruck</strong></p></td>
-<td><p>Die Bedingung, die Sie testen möchten. Es muss ein Ausdruck, der True oder False ausgewertet wird.</p></td>
+<td><p>Die Bedingung, die Sie testen möchten. Dies muss ein Ausdruck sein, der als "Wahr" oder "Falsch" ausgewertet wird.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie den If-Makroblock auswählen, wird ein Textfeld angezeigt, sodass Sie einen Ausdruck eingeben können, der die Bedingung darstellt, auf die Sie testen möchten. Zudem wird ein Kombinationsfeld angezeigt, in dem Sie eine Makroaktion einfügen können. Darunter wird automatisch der Text "End If" angezeigt. "If" und "End If" begrenzen einen Bereich, in dem Sie eine Gruppe oder einen Block von Aktionen eingeben können. Der Block wird nur ausgeführt, wenn der von Ihnen eingegebene Ausdruck True ist.
+Wenn Sie den **If**-Makroblock auswählen, wird ein Textfeld eingeblendet, damit Sie einen Ausdruck zur Darstellung der Bedingung eingeben können, die Sie testen möchten. Darüber hinaus wird ein Kombinationsfeld angezeigt. Sie können darin eine Makroaktion einfügen, unter der der Text "End If" automatisch angezeigt wird. Das "If" und das "End If" klammern einen Bereich ein, in dem Sie eine Gruppe (Block) von Aktionen eingeben können. Der Block wird nur ausgeführt, wenn der eingegebene Ausdruck "Wahr" ist.
 
-Um einen anderen Ausdruck auswerten, wenn der erste Ausdruck auf false festgelegt ist, können Sie **Andere Person hinzufügen Wenn** , um einen optionalen **Else If** -Block einzufügen klicken. Sie müssen einen Ausdruck, der ausgewertet wird auf True oder False, eingeben. -Block wird in diesem Fall nur, wenn der Ausdruck True ist und der erste Ausdruck False ist.
+To evaluate a different expression when the first expression is false, you can click **Add Else If** to insert an optional **Else If** block. You must enter an expression that evaluates to True or False. In this case, the block executes only if the expression is True and the first expression is False.
 
-In einem If-Block können Sie beliebig viele Else If-Blöcke eingeben.
+Sie können einem "If"-Block beliebig viele **Else If**-Blöcke hinzufügen.
 
 Sie können auf **Add Else** klicken, um einen optionalen **Else** -Block hinzuzufügen. In diesem Fall bilden die unter **Else** eingegebenen Aktionen den **Else** -Block, der nur ausgeführt wird, wenn die darüber angegebenen Aktionen nicht ausgeführt werden. Einem **If** -Block können Sie nur einen **Else** -Block hinzufügen.
 
-Im folgenden Codebeispiel wird die Makroaktionen in der erste Block ausgeführt werden, wenn der Wert der \[Status\] größer als 0 ist. Wenn der Wert der \[Status\] ist nicht größer als 0 ist, wird der Ausdruck, der die **Sonst wenn** befolgt ausgewertet. Die Makroaktionen im **Else If** -Block ausgeführt werden, wenn der Wert der \[Status\] ist gleich 0. Wenn letztlich weder der erste noch der zweite Block ausgeführt wird, werden die Aktionen im **Else** -Block ausgeführt.
+Im folgenden Codebeispiel werden die Makroaktionen im ersten Block ausgeführt, wenn der Wert von \[Status\] größer als 0 ist. Wenn der Wert von \[Status\] nicht größer als 0 ist, wird der Ausdruck nach **Else If** ausgewertet. Die Makroaktionen im **Else If**-Block werden ausgeführt, wenn der Wert von \[Status\] gleich 0 ist. Und schließlich: Wenn weder der erste noch der zweite Block ausgeführt werden, werden die Aktionen im **Else**-Block ausgeführt.
 
 ```vb
     If [Status] > 0 Then 
@@ -77,7 +77,7 @@ Im folgenden Codebeispiel wird die Makroaktionen in der erste Block ausgeführt 
     End If
 ```
 
-Sie können **Wenn** Blöcke schachteln. Sie sollten einen **If** -Block innerhalb einer **If** -Block schachteln, wenn Sie möchten einen zweiten Ausdruck ausgewertet werden soll, wenn der erste Ausdruck true festgelegt ist. Im folgenden Codebeispiel wird der innere **If** -Block nur wird ausgeführt, wenn der Wert der \[Status\] ist sowohl größer als 0 *und* größer als 100.
+Sie können **If**-Blöcke schachteln. Das Schachteln eines **If**-Blocks in einem **If**-Block sollten Sie erwägen, um einen zweiten Ausdruck auszuwerten, wenn der erste Ausdruck "Wahr" ist. Im nachstehenden Codebeispiel wird der innere **If**-Block nur dann ausgewertet, wenn der Wert von \[Status\] größer als "0" *and* größer als "100" ist.
 
 ```vb
     If [Status] > 0 Then 

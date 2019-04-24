@@ -1,5 +1,5 @@
 ---
-title: Field-Objekt - Datenzugriff Objekte (DAO)
+title: Field-Objekt – Datenzugriffsobjekte (Data Access Objects, DAO)
 TOCTitle: Field Object
 ms:assetid: 47282ce2-9b49-ccf9-ad37-c4bb25cfd037
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193203(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c58896fb0d0a5c5a28844fdd3a6df922dd587f32
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293042"
 ---
 # <a name="field-object-dao"></a>Field-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Ein **Field**-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und einer typischen Gruppe von Eigenschaften dar.
+Ein **Field**-Objekt stellt eine Spalte mit Daten mit einem gemeinsamen Datentyp und einem gemeinsamen Satz von Eigenschaften dar.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -50,15 +50,15 @@ Wenn Sie auf ein **Field**-Objekt in einer Auflistung mit seiner Ordnungszahl od
 
 - **Fields**(0)
 
-- **Felder** ("Name")
+- **Fields**("name")
 
-- **Felder**\!\[Namen\]
+- **Fields**\!\[name\]
 
 Mit denselben Syntaxformen können Sie auch auf die **Value**-Eigenschaft eines von Ihnen erstellten **Field**-Objekts verweisen, das Sie einer **Fields**-Auflistung anfügen. Der Kontext des Feldverweises bestimmt, ob sich der Verweis auf das **Field**-Objekt oder die **Value**-Eigenschaft des **Field**-Objekts bezieht.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel zeigt, welche Eigenschaften für ein **Field** -Objekt gültig sind, abhängig davon, wo sich das **Field** -Objekt befindet (z. B. **Fields** -Auflistung eines **TableDef** -Objekts, **Fields** -Auflistung eines **QueryDef** -Objekts usw.). Zum Ausführen dieser Prozedur ist die FieldOutput-Prozedur erforderlich.
+Dieses Beispiel zeigt, welche Eigenschaften für ein **Field**-Objekt gültig sind, abhängig davon, wo sich das **Field**-Objekt befindet (z. B. **Fields**-Auflistung eines **TableDef**-Objekts, **Fields**-Auflistung eines **QueryDef**-Objekts usw.). Zum Ausführen dieser Prozedur ist die FieldOutput-Prozedur erforderlich.
 
 ```vb
     Sub FieldX() 
@@ -124,7 +124,7 @@ Dieses Beispiel zeigt, welche Eigenschaften für ein **Field** -Objekt gültig s
 
 <br/>
 
-In diesem Beispiel wird die **CreateField**-Methode zum Erstellen dreier **Fields**-Objekte für ein neues **TableDef**-Objekt verwendet. Anschließend werden die Eigenschaften der **Field**-Objekte angezeigt, die nicht automatisch von der **CreateField**-Methode festgelegt werden. (Eigenschaften, deren Werte zum Zeitpunkt der Erstellung des **Field**-Objekts leer sind, werden nicht gezeigt.)
+In diesem Beispiel wird die **CreateField**-Methode zum Erstellen dreier **Fields**-Objekte für ein neues **TableDef**-Objekt verwendet. Anschließend werden die Eigenschaften der Field-Objekte angezeigt, die nicht automatisch von der **CreateField**-Methode festgelegt werden. (Eigenschaften, deren Werte zum Zeitpunkt der Erstellung des **Field**-Objekts leer sind, werden nicht gezeigt.)
 
 ```vb
     Sub CreateFieldX() 

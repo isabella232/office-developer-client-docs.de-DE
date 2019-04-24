@@ -10,11 +10,11 @@ dev_langs:
 - sql
 localization_priority: Priority
 ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314637"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT-Anweisung (Microsoft Access SQL)
 
@@ -24,7 +24,7 @@ Weist das Microsoft Access-Datenbankmodul an, Informationen aus der Datenbank al
 
 ## <a name="syntax"></a>Syntax
 
-Wählen Sie \[ *Prädikat* \] { \*  |  *Tabelle*.\*  |  \[ *Tabelle*. \] *Feld1* \[als *alias1* \] \[, \[ *Tabelle*. \] *field2* \[als *alias2* \] \[,... \] \]} FROM *Tabellenausdruck* \[,... \] \[IN *ExterneDatenbank* \] \[, in dem... \]\[GROUP BY... \]\[HAVING... \]\[ORDER BY... \]\[Mit OWNERACCESS OPTION\]
+SELECT \[*predicate*\] { \* | *table*.\* | \[*table*.\]*field1* \[AS *alias1*\] \[, \[*table*.\]*field2* \[AS *alias2*\] \[, …\]\]} FROM *tableexpression* \[, …\] \[IN *externaldatabase*\] \[WHERE… \] \[GROUP BY… \] \[HAVING… \] \[ORDER BY… \] \[WITH OWNERACCESS OPTION\]
 
 Die SELECT-Anweisung besteht aus folgenden Teilen:
 
@@ -42,14 +42,14 @@ Die SELECT-Anweisung besteht aus folgenden Teilen:
 <tbody>
 <tr class="odd">
 <td><p><em>Prädikat</em></p></td>
-<td><p>Eines der folgenden Prädikate: <a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL, DISTINCT, DISTINCTROW, or TOP</a>. Sie verwenden das Prädikat, um die Anzahl der zurückgegebenen Datensätze zu beschränken. Wenn keine Angabe erfolgt, ist die Standardeinstellung ALL.  </p></td>
+<td><p>Eines der folgenden Prädikate: <a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL, DISTINCT, DISTINCTROW, or TOP</a>. Sie verwenden das Prädikat, um die Anzahl der zurückgegebenen Datensätze zu beschränken. Wenn keine Angabe erfolgt, ist die Standardeinstellung ALL.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>*</em></p></td>
 <td><p>Gibt an, dass alle Felder der angegebenen Tabelle oder Tabellen ausgewählt werden.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Tabelle</em></p></td>
+<td><p><em>table</em></p></td>
 <td><p>Der Name der Tabelle mit den Feldern, aus denen Datensätze ausgewählt werden.</p></td>
 </tr>
 <tr class="even">
@@ -66,7 +66,7 @@ Die SELECT-Anweisung besteht aus folgenden Teilen:
 </tr>
 <tr class="odd">
 <td><p><em>externeDatenbank</em></p></td>
-<td><p>Der Name der Datenbank an, in den Tabellen unter <em>Tabellenausdruck</em> enthält, wenn sie nicht in der aktuellen Datenbank sind.</p></td>
+<td><p>Der Name der Datenbank mit den Tabellen in <em>Tabellenausdruck</em>, wenn sie sich nicht in der aktuellen Datenbank befinden.</p></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +74,7 @@ Die SELECT-Anweisung besteht aus folgenden Teilen:
 
 ## <a name="remarks"></a>Bemerkungen
 
-Zum Ausführen dieses Vorgangs Microsoft Jet-Datenbankmodul sucht nach der angegebenen Tabelle oder Tabellen extrahiert die ausgewählten Spalten, wählt Zeilen, die die Kriterien, und sortiert oder gruppiert die Zeilen in der angegebenen Reihenfolge zu erfüllen.
+Um diesen Vorgang durchzuführen, sucht das Microsoft Jet-Datenbankmodul die angegebene(n) Tabelle(n), extrahiert die ausgewählten Spalten, wählt Zeilen aus, die dem Krtierium entsprechen, und sortiert oder gruppiert die resultierenden Zeilen in der angegebenen Reihenfolge.
 
 SELECT-Anweisungen ändern keine Daten in der Datenbank.
 
@@ -90,7 +90,7 @@ Sie können ein Sternchen (\*) verwenden, um alle Felder in einer Tabelle auszuw
 SELECT * FROM Employees;
 ```
 
-Wenn ein Feldname in mehr als einer Tabelle in der FROM-Klausel enthalten ist, stellen Sie den Tabellennamen und den **.** -Operator (Punkt) voran. Im folgenden Beispiel ist das Feld "Department" in der Tabelle "Employees" und in der Tabelle "Supervisors" enthalten. Die SQL-Anweisung wählt Abteilungen aus der Tabelle "Employees" und die Namen von Vorgesetzten aus der Tabelle "Supervisors" aus:
+Wenn ein Feldname in mehr als einer Tabelle in der FROM-Klausel enthalten ist, stellen Sie den Tabellennamen und den **.**-Operator (Punkt) voran. Im folgenden Beispiel ist das Feld "Department" in der Tabelle "Employees" und in der Tabelle "Supervisors" enthalten. Die SQL-Anweisung wählt Abteilungen aus der Tabelle "Employees" und die Namen von Vorgesetzten aus der Tabelle "Supervisors" aus:
 
 ```sql
 SELECT Employees.Department, Supervisors.SupvName 
@@ -98,14 +98,14 @@ FROM Employees INNER JOIN Supervisors
 WHERE Employees.Department = Supervisors.Department;
 ```
 
-Wenn ein **Recordset** -Objekt erstellt wird, verwendet das Microsoft Jet-Datenbankmodul den Feldnamen der Tabelle als **Field** -Objektnamen im **Recordset** -Objekt. Wenn Sie einen anderen Feldnamen oder einen Namen verwenden möchten, der nicht durch den Ausdruck zum Generieren des Felds impliziert wird, verwenden Sie das reservierte Wort AS. Das folgende Beispiel verwendet den Titel "Birth", um das zurückgegebene **Field** -Objekt im resultierenden **Recordset** -Objekt zu benennen:
+Wenn ein **Recordset**-Objekt erstellt wird, verwendet das Microsoft Jet-Datenbankmodul den Feldnamen der Tabelle als **Field**-Objektnamen im **Recordset**-Objekt. Wenn Sie einen anderen Feldnamen oder einen Namen verwenden möchten, der nicht durch den Ausdruck  zum Generieren des Felds impliziert wird, verwenden Sie das reservierte Wort AS. Das folgende Beispiel verwendet den Titel "Birth", um das zurückgegebene **Field**-Objekt im resultierenden **Recordset**-Objekt zu benennen:
 
 ```sql
 SELECT BirthDate 
 AS Birth FROM Employees;
 ```
 
-Wenn Sie zusammenfassende Funktionen oder Abfragen verwenden, die mehrdeutige oder doppelte **Field** -Objektnamen zurückgeben, müssen Sie die AS-Klausel verwenden, um einen alternativen Namen für das **Field** -Objekt anzugeben. Das folgende Beispiel verwendet den Titel "HeadCount", um das zurückgegebene **Field** -Objekt im resultierenden **Recordset** -Objekt zu benennen:
+Wenn Sie zusammenfassende Funktionen oder Abfragen verwenden, die mehrdeutige oder doppelte **Field**-Objektnamen zurückgeben, müssen Sie die AS-Klausel verwenden, um einen alternativen Namen für das **Field**-Objekt anzugeben. Das folgende Beispiel verwendet den Titel "HeadCount", um das zurückgegebene **Field**-Objekt im resultierenden **Recordset**-Objekt zu benennen:
 
 ```sql
 SELECT COUNT(EmployeeID)
@@ -114,7 +114,7 @@ AS HeadCount FROM Employees;
 
 Sie können die anderen Klauseln in einer SELECT-Anweisung verwenden, um die zurückgegebenen Daten weiter einzuschränken und zu organisieren. Weitere Informationen finden Sie im Hilfethema zur verwendeten Klausel.
 
-**Links bereitgestellt werden, von** der Community [UtterAccess](https://www.utteraccess.com) . UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Links zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
 - [SQL-zu-VBA-Formatierungsprogramm](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
 
@@ -124,7 +124,7 @@ Sie können die anderen Klauseln in einer SELECT-Anweisung verwenden, um die zur
 
 Einige der folgenden Beispiele setzen das Vorhandensein einer hypothetischen Felds "Salary" in der Tabelle "Employees" voraus. Beachten Sie, dass dieses Feld in der Northwind-Datenbank "Employees" nicht wirklich vorhanden ist.
 
-Dieses Beispiel erstellt ein **Recordset** vom Typ "Dynaset" basierend auf einer SQL-Anweisung, die die Felder "LastName" und "FirstName" aus allen Datensätzen in der Tabelle "Employees" auswählt. Es ruft die "EnumFields"-Prozedur auf, die die Inhalte eines **Recordset** -Objekts im Fenster **Debug** ausgibt.
+Dieses Beispiel erstellt ein **Recordset** vom Typ "Dynaset" basierend auf einer SQL-Anweisung, die die Felder "LastName" und "FirstName" aus allen Datensätzen in der Tabelle "Employees" auswählt. Es ruft die "EnumFields"-Prozedur auf, die die Inhalte eines **Recordset**-Objekts im Fenster **Debug** ausgibt.
 
 ```sql
     Sub SelectX1() 
