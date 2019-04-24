@@ -1,5 +1,5 @@
 ---
-title: Schemazuordnung (Outlook Wetter Speicherort-Schema)
+title: Schemazuordnung (Outlook Weather Location Schema)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1a5195ae-7905-477a-7818-9eb3bff64af0
-description: In diesem Thema wird die Schemadefinition für das Outlook Wetter Speicherort XML-Schema.
+description: In diesem Thema wird die Schema Definition für das XML-Schema für Wetter Standorte in Outlook dargestellt.
 ms.openlocfilehash: fa14fd05a26bd89820c18e8d6523d80e60616f0f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355139"
 ---
-# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="1845b-103">Schemazuordnung (Outlook Wetter Speicherort-Schema)</span><span class="sxs-lookup"><span data-stu-id="1845b-103">Schema map (Outlook Weather Location Schema)</span></span>
+# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="330c7-103">Schemazuordnung (Outlook Weather Location Schema)</span><span class="sxs-lookup"><span data-stu-id="330c7-103">Schema map (Outlook Weather Location Schema)</span></span>
 
-<span data-ttu-id="1845b-104">In diesem Thema wird die Schemadefinition für das Outlook Wetter Speicherort XML-Schema.</span><span class="sxs-lookup"><span data-stu-id="1845b-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
+<span data-ttu-id="330c7-104">In diesem Thema wird die Schema Definition für das XML-Schema für Wetter Standorte in Outlook dargestellt.</span><span class="sxs-lookup"><span data-stu-id="330c7-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
   
 ```XML
 <?xml version="1.0" ?>

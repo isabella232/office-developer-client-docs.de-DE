@@ -8,22 +8,22 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1bafd92e-e044-c902-4fd0-df432bae777d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a5c9f70831b7d3f5bcbaf9d74f5526b110375ff0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f81d82a8f7336e682c4f91546ac3916810650b92
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357183"
 ---
-# <a name="mapiofflinecallbacktype"></a><span data-ttu-id="2766d-103">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="2766d-103">MAPIOFFLINE_CALLBACK_TYPE</span></span>
+# <a name="mapiofflinecallbacktype"></a><span data-ttu-id="b4b71-103">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="b4b71-103">MAPIOFFLINE_CALLBACK_TYPE</span></span>
 
   
   
-<span data-ttu-id="2766d-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2766d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b4b71-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b4b71-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2766d-105">Aufzählung der unterstützten Typen von Rückrufen.</span><span class="sxs-lookup"><span data-stu-id="2766d-105">Enumeration of supported types of callbacks.</span></span>
+<span data-ttu-id="b4b71-105">AufZählung der unterstützten Rückruf Typen.</span><span class="sxs-lookup"><span data-stu-id="b4b71-105">Enumeration of supported types of callbacks.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="2766d-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="2766d-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="b4b71-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="b4b71-106">Quick info</span></span>
 
 ```cpp
 typedef enum  
@@ -33,13 +33,13 @@ typedef enum
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="2766d-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2766d-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b4b71-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b4b71-107">See also</span></span>
 
 
 
-[<span data-ttu-id="2766d-108">Informationen zu der Offlinestatus-API</span><span class="sxs-lookup"><span data-stu-id="2766d-108">About the Offline State API</span></span>](about-the-offline-state-api.md)
+[<span data-ttu-id="b4b71-108">Informationen zur Offlinestatus-API</span><span class="sxs-lookup"><span data-stu-id="b4b71-108">About the Offline State API</span></span>](about-the-offline-state-api.md)
   
-[<span data-ttu-id="2766d-109">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="2766d-109">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="b4b71-109">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="b4b71-109">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="2766d-110">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="2766d-110">MAPIOFFLINE_ADVISEINFO</span></span>](mapioffline_adviseinfo.md)
+[<span data-ttu-id="b4b71-110">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="b4b71-110">MAPIOFFLINE_ADVISEINFO</span></span>](mapioffline_adviseinfo.md)
 

@@ -9,15 +9,15 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 527fa1e1-fb4d-0e56-eab6-ee880de8d140
 description: Enthält die x- und y-Koordinaten der Anfangs- und Endpunkte eines 1D-Shapes. Dieser Abschnitt wird nur für 1D-Shapes angezeigt.
-ms.openlocfilehash: 583dca94a69461f8ff87a50430e53295a64a1304
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b2e2aa8176812ccc983a8ccb844c7c5068ac3cf4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346263"
 ---
-# <a name="1-d-endpoints-section"></a><span data-ttu-id="222e9-104">1-D-Endpunktabschnitt</span><span class="sxs-lookup"><span data-stu-id="222e9-104">1-D Endpoints Section</span></span>
+# <a name="1-d-endpoints-section"></a><span data-ttu-id="188a4-104">Abschnitt "1-D Endpoints"</span><span class="sxs-lookup"><span data-stu-id="188a4-104">1-D Endpoints Section</span></span>
 
-<span data-ttu-id="222e9-p102">Enthält die x- und y-Koordinaten der Anfangs- und Endpunkte eines 1D-Shapes. Dieser Abschnitt wird nur für 1D-Shapes angezeigt.</span><span class="sxs-lookup"><span data-stu-id="222e9-p102">Contains x- and y-coordinates of the begin point and endpoint of a 1-D shape. This section appears for 1-D shapes only.</span></span>
+<span data-ttu-id="188a4-105">Enthält die x- und y-Koordinaten der Anfangs- und Endpunkte eines 1D-Shapes.</span><span class="sxs-lookup"><span data-stu-id="188a4-105">Contains x- and y-coordinates of the begin point and endpoint of a 1-D shape.</span></span> <span data-ttu-id="188a4-106">Dieser Abschnitt wird nur für 1D-Shapes angezeigt.</span><span class="sxs-lookup"><span data-stu-id="188a4-106">This section appears for 1-D shapes only.</span></span>
   
 

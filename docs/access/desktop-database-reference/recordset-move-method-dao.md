@@ -1,5 +1,5 @@
 ---
-title: Recordset.Move-Methode (DAO)
+title: Recordset.Move method (DAO)
 TOCTitle: Move Method
 ms:assetid: 21ca5ab5-ff71-1ae8-21b3-8991d5f795cf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191697(v=office.15)
@@ -12,25 +12,25 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 1f10b5b779141189f114e420b3f7d4827e701161
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284799"
 ---
-# <a name="recordsetmove-method-dao"></a><span data-ttu-id="e2395-102">Recordset.Move-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="e2395-102">Recordset.Move method (DAO)</span></span>
+# <a name="recordsetmove-method-dao"></a><span data-ttu-id="bdfc7-102">Recordset.Move method (DAO)</span><span class="sxs-lookup"><span data-stu-id="bdfc7-102">Recordset.Move Method (DAO)</span></span>
 
-<span data-ttu-id="e2395-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e2395-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="bdfc7-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="bdfc7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e2395-104">Verschiebt die Position des aktuellen Datensatzes in ein **[Recordset](recordset-object-dao.md)** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="e2395-104">Moves the position of the current record in a **[Recordset](recordset-object-dao.md)** object.</span></span>
+<span data-ttu-id="bdfc7-104">Verschiebt die Position des aktuellen Datensatzes in einem **[Recordset](recordset-object-dao.md)**-Objekt.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-104">Moves the position of the current record in a **[Recordset](recordset-object-dao.md)** object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e2395-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="e2395-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bdfc7-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="bdfc7-105">Syntax</span></span>
 
-<span data-ttu-id="e2395-106">*Ausdruck* . Move (***Zeilen***, ***Anfangslesezeichen***)</span><span class="sxs-lookup"><span data-stu-id="e2395-106">*expression* .Move(***Rows***, ***StartBookmark***)</span></span>
+<span data-ttu-id="bdfc7-106">*expression* .Move(***Rows***, ***StartBookmark***)</span><span class="sxs-lookup"><span data-stu-id="bdfc7-106">*expression* .Move(***Rows***, ***StartBookmark***)</span></span>
 
-<span data-ttu-id="e2395-107">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="e2395-107">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="bdfc7-107">*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-107">*expression*  A variable that represents a **Recordset** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="e2395-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="e2395-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bdfc7-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="bdfc7-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -41,46 +41,46 @@ ms.locfileid: "28709663"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="e2395-109">Name</span><span class="sxs-lookup"><span data-stu-id="e2395-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="e2395-110">Erforderlich oder optional</span><span class="sxs-lookup"><span data-stu-id="e2395-110">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="e2395-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="e2395-111">Data type</span></span></p></th>
-<th><p><span data-ttu-id="e2395-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e2395-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="bdfc7-109">Name</span><span class="sxs-lookup"><span data-stu-id="bdfc7-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="bdfc7-110">Erforderlich/optional</span><span class="sxs-lookup"><span data-stu-id="bdfc7-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="bdfc7-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="bdfc7-111">Data type</span></span></p></th>
+<th><p><span data-ttu-id="bdfc7-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bdfc7-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="e2395-113"><em>Rows</em></span><span class="sxs-lookup"><span data-stu-id="e2395-113"><em>Rows</em></span></span></p></td>
-<td><p><span data-ttu-id="e2395-114">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="e2395-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="e2395-115"><strong>Long</strong></span><span class="sxs-lookup"><span data-stu-id="e2395-115"><strong>Long</strong></span></span></p></td>
-<td><p><span data-ttu-id="e2395-p101">Die Anzahl von Zeilen, um die sich die Position verschiebt. Ist rows größer als 0, wird die Position nach vorne verschoben (Richtung Dateiende). Ist rows kleiner als 0, wird die Position nach hinten verschoben (Richtung Dateianfang).</span><span class="sxs-lookup"><span data-stu-id="e2395-p101">The number of rows the position will move. If rows is greater than 0, the position is moved forward (toward the end of the file). If rows is less than 0, the position is moved backward (toward the beginning of the file).</span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-113"><em>Rows</em></span><span class="sxs-lookup"><span data-stu-id="bdfc7-113"><em>Rows</em></span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-114">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="bdfc7-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-115"><strong>Long</strong></span><span class="sxs-lookup"><span data-stu-id="bdfc7-115"><strong>Long</strong></span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-p101">Die Anzahl von Zeilen, um die sich die Position verschiebt. Ist rows größer als 0, wird die Position nach vorne verschoben (Richtung Dateiende). Ist rows kleiner als 0, wird die Position nach hinten verschoben (Richtung Dateianfang).</span><span class="sxs-lookup"><span data-stu-id="bdfc7-p101">The number of rows the position will move. If rows is greater than 0, the position is moved forward (toward the end of the file). If rows is less than 0, the position is moved backward (toward the beginning of the file).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e2395-119"><em>Anfangslesezeichen</em></span><span class="sxs-lookup"><span data-stu-id="e2395-119"><em>StartBookmark</em></span></span></p></td>
-<td><p><span data-ttu-id="e2395-120">Optional</span><span class="sxs-lookup"><span data-stu-id="e2395-120">Optional</span></span></p></td>
-<td><p><span data-ttu-id="e2395-121"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="e2395-121"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="e2395-p102">Ein Wert, der ein Lesezeichen identifiziert. Bei Angabe von startbookmark beginnt die Verschiebung relativ zu diesem Lesezeichen. Andernfalls beginnt Move mit dem aktuellen Datensatz.</span><span class="sxs-lookup"><span data-stu-id="e2395-p102">A value identifying a bookmark. If you specify startbookmark, the move begins relative to this bookmark. Otherwise, Move begins from the current record.</span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-119"><em>StartBookmark</em></span><span class="sxs-lookup"><span data-stu-id="bdfc7-119"><em>StartBookmark</em></span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-120">Optional</span><span class="sxs-lookup"><span data-stu-id="bdfc7-120">Optional</span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-121"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="bdfc7-121"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="bdfc7-p102">Ein Wert, der ein Lesezeichen identifiziert. Bei Angabe von startbookmark beginnt die Verschiebung relativ zu diesem Lesezeichen. Andernfalls beginnt Move mit dem aktuellen Datensatz.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-p102">A value identifying a bookmark. If you specify startbookmark, the move begins relative to this bookmark. Otherwise, Move begins from the current record.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="e2395-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e2395-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bdfc7-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="bdfc7-125">Remarks</span></span>
 
-<span data-ttu-id="e2395-p103">Wenn Sie mithilfe von **Move** den aktuellen Datensatzzeiger vor dem ersten Datensatz positionieren, wird der aktuelle Datensatzzeiger an den Dateianfang verschoben. Falls das **Recordset** keine Datensätze enthält und seine **[BOF](recordset-bof-property-dao.md)** -Eigenschaft auf **True** festgelegt ist, wird ein Fehler zurückgegeben, wenn Sie sich mit dieser Methode rückwärts bewegen.</span><span class="sxs-lookup"><span data-stu-id="e2395-p103">If you use **Move** to position the current record pointer before the first record, the current record pointer moves to the beginning of the file. If the **Recordset** contains no records and its **[BOF](recordset-bof-property-dao.md)** property is **True**, using this method to move backward causes an error.</span></span>
+<span data-ttu-id="bdfc7-p103">Wenn Sie mithilfe von **Move** den aktuellen Datensatzzeiger vor dem ersten Datensatz positionieren, wird der aktuelle Datensatzzeiger an den Dateianfang verschoben. Falls das **Recordset** keine Datensätze enthält und seine **[BOF](recordset-bof-property-dao.md)**-Eigenschaft auf **True** festgelegt ist, wird ein Fehler zurückgegeben, wenn Sie sich mit dieser Methode rückwärts bewegen.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-p103">If you use **Move** to position the current record pointer before the first record, the current record pointer moves to the beginning of the file. If the **Recordset** contains no records and its **[BOF](recordset-bof-property-dao.md)** property is **True**, using this method to move backward causes an error.</span></span>
 
-<span data-ttu-id="e2395-p104">Wenn Sie mithilfe von **Move** den aktuellen Datensatzzeiger hinter dem letzten Datensatz positionieren, wird der aktuelle Datensatzzeiger an das Dateiende verschoben. Falls das **Recordset** keine Datensätze enthält und seine **[EOF](recordset-eof-property-dao.md)** -Eigenschaft auf **True** festgelegt ist, wird ein Fehler zurückgegeben, wenn Sie sich mit dieser Methode vorwärts bewegen.</span><span class="sxs-lookup"><span data-stu-id="e2395-p104">If you use **Move** to position the current record pointer after the last record, the current record pointer position moves to the end of the file. If the **Recordset** contains no records and its **[EOF](recordset-eof-property-dao.md)** property is **True**, then using this method to move forward causes an error.</span></span>
+<span data-ttu-id="bdfc7-p104">Wenn Sie mithilfe von **Move** den aktuellen Datensatzzeiger hinter dem letzten Datensatz positionieren, wird der aktuelle Datensatzzeiger an das Dateiende verschoben. Falls das **Recordset** keine Datensätze enthält und seine **[EOF](recordset-eof-property-dao.md)**-Eigenschaft auf **True** festgelegt ist, wird ein Fehler zurückgegeben, wenn Sie sich mit dieser Methode vorwärts bewegen.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-p104">If you use **Move** to position the current record pointer after the last record, the current record pointer position moves to the end of the file. If the **Recordset** contains no records and its **[EOF](recordset-eof-property-dao.md)** property is **True**, then using this method to move forward causes an error.</span></span>
 
-<span data-ttu-id="e2395-130">Wenn für die **BOF**- oder die **EOF**-Eigenschaft der Wert **True** festgelegt ist und Sie versuchen, die **Move**-Methode ohne ein zulässiges Lesezeichen zu verwenden, tritt ein Laufzeitfehler auf.</span><span class="sxs-lookup"><span data-stu-id="e2395-130">If either the **BOF** or **EOF** property is **True** and you attempt to use the **Move** method without a valid bookmark, a run-time error occurs.</span></span>
+<span data-ttu-id="bdfc7-130">Wenn für die **BOF**- oder die **EOF**-Eigenschaft der Wert **True** festgelegt ist und Sie versuchen, die **Move**-Methode ohne ein zulässiges Lesezeichen zu verwenden, tritt ein Laufzeitfehler auf.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-130">If either the **BOF** or **EOF** property is **True** and you attempt to use the **Move** method without a valid bookmark, a run-time error occurs.</span></span>
 
 > [!NOTE]
-> - <span data-ttu-id="e2395-p105">Wenn Sie **Move** auf ein **Recordset**-Objekt vom Typ Vorwärts anwenden, muss das Zeilenargument eine positive Ganzzahl sein, und Lesezeichen sind nicht zulässig. Sie können sich also nur vorwärts bewegen.</span><span class="sxs-lookup"><span data-stu-id="e2395-p105">When you use **Move** on a forward-only-type **Recordset** object, the rows argument must be a positive integer and bookmarks aren't allowed. This means you can only move forward.</span></span>
-> - <span data-ttu-id="e2395-133">Verwenden Sie eine der Methoden **MoveFirst**, **MoveLast**, **MoveNext** oder **MovePrevious**, um den ersten, letzten, nächsten oder vorherigen Datensatz in einem **Recordset** zum aktuellen Datensatz zu machen.</span><span class="sxs-lookup"><span data-stu-id="e2395-133">To make the first, last, next, or previous record in a **Recordset** the current record, use either the **MoveFirst**, **MoveLast**, **MoveNext**, or **MovePrevious** method.</span></span>
-> - <span data-ttu-id="e2395-p106">Das Verwenden von **Move** mit einer Zeilenanzahl gleich 0 ist eine einfache Möglichkeit, die zugrunde liegenden Daten für den aktuellen Datensatz abzurufen. Das ist hilfreich, wenn Sie sicherstellen möchten, dass der aktuelle Datensatz die aktuellsten Daten aus den Basistabellen enthält. Außerdem werden alle anstehenden **[Edit](recordset2-edit-method-dao.md)** - oder **[AddNew](recordset-addnew-method-dao.md)** -Aufrufe abgebrochen.</span><span class="sxs-lookup"><span data-stu-id="e2395-p106">Using **Move** with rows equal to 0 is an easy way to retrieve the underlying data for the current record. This is useful if you want to make sure that the current record has the most recent data from the base tables. It will also cancel any pending **[Edit](recordset2-edit-method-dao.md)** or **[AddNew](recordset-addnew-method-dao.md)** calls.</span></span>
+> - <span data-ttu-id="bdfc7-p105">Wenn Sie **Move** auf ein **Recordset**-Objekt vom Typ Vorwärts anwenden, muss das Zeilenargument eine positive Ganzzahl sein, und Lesezeichen sind nicht zulässig. Sie können sich also nur vorwärts bewegen.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-p105">When you use **Move** on a forward-only-type **Recordset** object, the rows argument must be a positive integer and bookmarks aren't allowed. This means you can only move forward.</span></span>
+> - <span data-ttu-id="bdfc7-133">Verwenden Sie eine der Methoden **MoveFirst**, **MoveLast**, **MoveNext** oder **MovePrevious**, um den ersten, letzten, nächsten oder vorherigen Datensatz in einem **Recordset** zum aktuellen Datensatz zu machen.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-133">To make the first, last, next, or previous record in a **Recordset** the current record, use either the **MoveFirst**, **MoveLast**, **MoveNext**, or **MovePrevious** method.</span></span>
+> - <span data-ttu-id="bdfc7-p106">Das Verwenden von **Move** mit einer Zeilenanzahl gleich 0 ist eine einfache Möglichkeit, die zugrunde liegenden Daten für den aktuellen Datensatz abzurufen. Das ist hilfreich, wenn Sie sicherstellen möchten, dass der aktuelle Datensatz die aktuellsten Daten aus den Basistabellen enthält. Außerdem werden alle anstehenden **[Edit](recordset2-edit-method-dao.md)**- oder **[AddNew](recordset-addnew-method-dao.md)**-Aufrufe abgebrochen.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-p106">Using **Move** with rows equal to 0 is an easy way to retrieve the underlying data for the current record. This is useful if you want to make sure that the current record has the most recent data from the base tables. It will also cancel any pending **[Edit](recordset2-edit-method-dao.md)** or **[AddNew](recordset-addnew-method-dao.md)** calls.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="e2395-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e2395-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bdfc7-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="bdfc7-137">Example</span></span>
 
-<span data-ttu-id="e2395-138">In diesem Beispiel wird die **Move**-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="e2395-138">This example uses the **Move** method to position the record pointer based on user input.</span></span>
+<span data-ttu-id="bdfc7-138">In diesem Beispiel wird die **Move**-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="bdfc7-138">This example uses the **Move** method to position the record pointer based on user input.</span></span>
 
 ```vb
     Sub MoveX() 

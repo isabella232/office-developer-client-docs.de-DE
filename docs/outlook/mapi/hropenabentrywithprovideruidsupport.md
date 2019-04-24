@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1fafc810-7cf3-4c8c-bf21-055ae34da690
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d6f5a0bd5da851c5107b8d3d40d683a7e3c1b26b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: da40e240b60fa42c48185600b74c6162a966e6f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347754"
 ---
-# <a name="hropenabentrywithprovideruidsupport"></a><span data-ttu-id="edfda-103">HrOpenABEntryWithProviderUIDSupport</span><span class="sxs-lookup"><span data-stu-id="edfda-103">HrOpenABEntryWithProviderUIDSupport</span></span>
+# <a name="hropenabentrywithprovideruidsupport"></a><span data-ttu-id="d986c-103">HrOpenABEntryWithProviderUIDSupport</span><span class="sxs-lookup"><span data-stu-id="d986c-103">HrOpenABEntryWithProviderUIDSupport</span></span>
 
   
   
-<span data-ttu-id="edfda-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="edfda-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="d986c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d986c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="edfda-105">Führt die gleiche Funktion wie die [HrOpenABEntryWithProviderUID](hropenabentrywithprovideruid.md) -Funktion, mit der Ausnahme, dass die **HrOpenABEntryWithProviderUIDSupport** -Funktion den Eintrag mithilfe des angegebenen Support-Objekts statt der Sitzung und das Adressbuch wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="edfda-105">Performs the same function as the [HrOpenABEntryWithProviderUID](hropenabentrywithprovideruid.md) function except that the **HrOpenABEntryWithProviderUIDSupport** function opens the entry using the given support object instead of using the session and the address book.</span></span> 
+<span data-ttu-id="d986c-105">Führt die gleiche Funktion wie die [HrOpenABEntryWithProviderUID](hropenabentrywithprovideruid.md) -Funktion aus, mit der Ausnahme, dass die **HrOpenABEntryWithProviderUIDSupport** -Funktion den Eintrag mit dem angegebenen Support Objekt öffnet, statt die Sitzung und das Adressbuch zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="d986c-105">Performs the same function as the [HrOpenABEntryWithProviderUID](hropenabentrywithprovideruid.md) function except that the **HrOpenABEntryWithProviderUIDSupport** function opens the entry using the given support object instead of using the session and the address book.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="edfda-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="edfda-106">Header file:</span></span>  <br/> |<span data-ttu-id="edfda-107">abhelp.h</span><span class="sxs-lookup"><span data-stu-id="edfda-107">abhelp.h</span></span>  <br/> |
-|<span data-ttu-id="edfda-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="edfda-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="edfda-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="edfda-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="edfda-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="edfda-110">Called by:</span></span>  <br/> |<span data-ttu-id="edfda-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="edfda-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="d986c-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="d986c-106">Header file:</span></span>  <br/> |<span data-ttu-id="d986c-107">abhelp. h</span><span class="sxs-lookup"><span data-stu-id="d986c-107">abhelp.h</span></span>  <br/> |
+|<span data-ttu-id="d986c-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="d986c-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="d986c-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="d986c-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="d986c-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="d986c-110">Called by:</span></span>  <br/> |<span data-ttu-id="d986c-111">Client Anwendungen und Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="d986c-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 HRESULT HrOpenABEntryWithProviderUIDSupport(
@@ -42,54 +42,54 @@ HRESULT HrOpenABEntryWithProviderUIDSupport(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="edfda-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="edfda-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d986c-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="d986c-112">Parameters</span></span>
 
- <span data-ttu-id="edfda-113">_pEmsabpUID_</span><span class="sxs-lookup"><span data-stu-id="edfda-113">_pEmsabpUID_</span></span>
+ <span data-ttu-id="d986c-113">_pEmsabpUID_</span><span class="sxs-lookup"><span data-stu-id="d986c-113">_pEmsabpUID_</span></span>
   
-> <span data-ttu-id="edfda-114">[in] Ein Zeiger auf ein _EmsabpUID_ -Parameter, der die Exchange-Adressbuchanbieter identifiziert, die diese Funktion zum Anzeigen von Details auf die Eintrags-ID verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="edfda-114">[in] A pointer to an  _emsabpUID_ parameter that identifies the Exchange address book provider that this function should use to display details on the entry identifier.</span></span> <span data-ttu-id="edfda-115">Wenn eingehende Eintrags-ID nicht um ein Exchange Address Book Anbieter Eintrags-ID ist, dieser Parameter wird ignoriert, und die Funktion Anruf-verhält sich genau wie [IAddrBook::Details](iaddrbook-details.md).</span><span class="sxs-lookup"><span data-stu-id="edfda-115">If the incoming entry identifier is not an Exchange address book provider entry identifier, this parameter is ignored and the function call acts exactly like [IAddrBook::Details](iaddrbook-details.md).</span></span> <span data-ttu-id="edfda-116">Wenn dieser Parameter auf NULL oder eine MAPIUID NULL ist, verhält sich diese Funktion auch genau wie [IAddrBook::Details](iaddrbook-details.md).</span><span class="sxs-lookup"><span data-stu-id="edfda-116">If this parameter is NULL or a zero MAPIUID, this function also acts exactly like [IAddrBook::Details](iaddrbook-details.md).</span></span>
+> <span data-ttu-id="d986c-114">in Ein Zeiger auf einen _emsabpUID_ -Parameter, der den Exchange-Adressbuchanbieter identifiziert, der von dieser Funktion verwendet werden soll, um Details zur Eintrags-ID anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="d986c-114">[in] A pointer to an  _emsabpUID_ parameter that identifies the Exchange address book provider that this function should use to display details on the entry identifier.</span></span> <span data-ttu-id="d986c-115">Wenn die ID des eingehenden Eintrags kein Exchange-Adressbuchanbieter ist, wird dieser Parameter ignoriert, und der Funktionsaufruf wirkt genau wie [IAddrBook::D ails](iaddrbook-details.md).</span><span class="sxs-lookup"><span data-stu-id="d986c-115">If the incoming entry identifier is not an Exchange address book provider entry identifier, this parameter is ignored and the function call acts exactly like [IAddrBook::Details](iaddrbook-details.md).</span></span> <span data-ttu-id="d986c-116">Wenn dieser Parameter NULL oder eine NULL-MAPIUID ist, wirkt sich diese Funktion auch genau wie [IAddrBook::D ails](iaddrbook-details.md).</span><span class="sxs-lookup"><span data-stu-id="d986c-116">If this parameter is NULL or a zero MAPIUID, this function also acts exactly like [IAddrBook::Details](iaddrbook-details.md).</span></span>
     
- <span data-ttu-id="edfda-117">_lpSup_</span><span class="sxs-lookup"><span data-stu-id="edfda-117">_lpSup_</span></span>
+ <span data-ttu-id="d986c-117">_lpSup_</span><span class="sxs-lookup"><span data-stu-id="d986c-117">_lpSup_</span></span>
   
 > 
     
- <span data-ttu-id="edfda-118">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="edfda-118">_cbEntryID_</span></span>
+ <span data-ttu-id="d986c-118">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="d986c-118">_cbEntryID_</span></span>
   
-> <span data-ttu-id="edfda-119">[in] Die Byteanzahl des Eintrags-ID, die durch den Parameter _LpEntryID_ angegeben.</span><span class="sxs-lookup"><span data-stu-id="edfda-119">[in] The byte count of the entry identifier specified by the  _lpEntryID_ parameter.</span></span> 
+> <span data-ttu-id="d986c-119">in Die Bytezahl der vom _lpEntryID_ -Parameter angegebenen Eintrags-ID.</span><span class="sxs-lookup"><span data-stu-id="d986c-119">[in] The byte count of the entry identifier specified by the  _lpEntryID_ parameter.</span></span> 
     
- <span data-ttu-id="edfda-120">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="edfda-120">_lpEntryID_</span></span>
+ <span data-ttu-id="d986c-120">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="d986c-120">_lpEntryID_</span></span>
   
-> <span data-ttu-id="edfda-121">[in] Ein Zeiger auf die Eintrags-ID, die den Adresseintrag Adressbuch öffnen darstellt.</span><span class="sxs-lookup"><span data-stu-id="edfda-121">[in] A pointer to the entry identifier that represents the address book entry to open.</span></span>
+> <span data-ttu-id="d986c-121">in Ein Zeiger auf die Eintrags-ID, die den zu öffnenden Adressbucheintrag darstellt.</span><span class="sxs-lookup"><span data-stu-id="d986c-121">[in] A pointer to the entry identifier that represents the address book entry to open.</span></span>
     
- <span data-ttu-id="edfda-122">_lpInterface_</span><span class="sxs-lookup"><span data-stu-id="edfda-122">_lpInterface_</span></span>
+ <span data-ttu-id="d986c-122">_lpInterface_</span><span class="sxs-lookup"><span data-stu-id="d986c-122">_lpInterface_</span></span>
   
-> <span data-ttu-id="edfda-123">[in] Ein Zeiger auf die Schnittstelle-ID (IID) der Schnittstelle, greifen Sie auf den Eintrag open verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="edfda-123">[in] A pointer to the interface identifier (IID) of the interface to be used to access the open entry.</span></span> <span data-ttu-id="edfda-124">Übergeben von NULL gibt die standard-Schnittstelle des Objekts zurück.</span><span class="sxs-lookup"><span data-stu-id="edfda-124">Passing NULL returns the standard interface of the object.</span></span> <span data-ttu-id="edfda-125">Für die messaging-Benutzer ist der standard-Benutzeroberfläche [IMailUser: IMAPIProp](imailuserimapiprop.md).</span><span class="sxs-lookup"><span data-stu-id="edfda-125">For messaging users, the standard interface is [IMailUser : IMAPIProp](imailuserimapiprop.md).</span></span> <span data-ttu-id="edfda-126">Wird für es Verteilerlisten [IDistList: IMAPIContainer](idistlistimapicontainer.md), und für Container ist [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md).</span><span class="sxs-lookup"><span data-stu-id="edfda-126">For distribution lists it is [IDistList : IMAPIContainer](idistlistimapicontainer.md), and for containers it is [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md).</span></span> <span data-ttu-id="edfda-127">Anrufer können auf die entsprechende standard-Schnittstelle oder eine Schnittstelle in der Vererbungshierarchie _LpInterface_ festlegen.</span><span class="sxs-lookup"><span data-stu-id="edfda-127">Callers can set  _lpInterface_ to the appropriate standard interface or an interface in the inheritance hierarchy.</span></span> 
+> <span data-ttu-id="d986c-123">in Ein Zeiger auf die Schnittstellen-ID (IID) der Schnittstelle, die für den Zugriff auf den geöffneten Eintrag verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="d986c-123">[in] A pointer to the interface identifier (IID) of the interface to be used to access the open entry.</span></span> <span data-ttu-id="d986c-124">Beim Übergeben von NULL wird die Standardschnittstelle des Objekts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d986c-124">Passing NULL returns the standard interface of the object.</span></span> <span data-ttu-id="d986c-125">Für Messagingbenutzer ist die Standardschnittstelle [IMailUser: IMAPIProp](imailuserimapiprop.md).</span><span class="sxs-lookup"><span data-stu-id="d986c-125">For messaging users, the standard interface is [IMailUser : IMAPIProp](imailuserimapiprop.md).</span></span> <span data-ttu-id="d986c-126">Für Verteilerlisten ist es [IDistList: IMAPIContainer](idistlistimapicontainer.md), und für Container ist es [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md).</span><span class="sxs-lookup"><span data-stu-id="d986c-126">For distribution lists it is [IDistList : IMAPIContainer](idistlistimapicontainer.md), and for containers it is [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md).</span></span> <span data-ttu-id="d986c-127">Anrufer können _lpInterface_ auf die entsprechende Standardschnittstelle oder eine Schnittstelle in der Vererbungshierarchie festlegen.</span><span class="sxs-lookup"><span data-stu-id="d986c-127">Callers can set  _lpInterface_ to the appropriate standard interface or an interface in the inheritance hierarchy.</span></span> 
     
- <span data-ttu-id="edfda-128">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="edfda-128">_ulFlags_</span></span>
+ <span data-ttu-id="d986c-128">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="d986c-128">_ulFlags_</span></span>
   
-> <span data-ttu-id="edfda-129">[in] Eine Bitmaske aus Flags, die den Typ des Texts für den Parameter _LpszButtonText_ steuert.</span><span class="sxs-lookup"><span data-stu-id="edfda-129">[in] A bitmask of flags that controls the type of the text for the  _lpszButtonText_ parameter.</span></span> <span data-ttu-id="edfda-130">Die folgenden Kennzeichen können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="edfda-130">The following flags can be set:</span></span> 
+> <span data-ttu-id="d986c-129">in Eine Bitmaske von Flags, die den Texttyp für den _lpszButtonText_ -Parameter steuert.</span><span class="sxs-lookup"><span data-stu-id="d986c-129">[in] A bitmask of flags that controls the type of the text for the  _lpszButtonText_ parameter.</span></span> <span data-ttu-id="d986c-130">Die folgenden Flags können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="d986c-130">The following flags can be set:</span></span> 
     
-<span data-ttu-id="edfda-131">AB_TELL_DETAILS_CHANGE</span><span class="sxs-lookup"><span data-stu-id="edfda-131">AB_TELL_DETAILS_CHANGE</span></span>
+<span data-ttu-id="d986c-131">AB_TELL_DETAILS_CHANGE</span><span class="sxs-lookup"><span data-stu-id="d986c-131">AB_TELL_DETAILS_CHANGE</span></span>
   
-> <span data-ttu-id="edfda-132">Gibt an, dass Details gibt TRUE zurück, wenn die Adresse tatsächlich geändert werden. Details andernfalls FALSE.</span><span class="sxs-lookup"><span data-stu-id="edfda-132">Indicates that Details returns TRUE if changes are actually made to the address; otherwise, Details returns FALSE.</span></span>
+> <span data-ttu-id="d986c-132">Gibt an, dass Details TRUE zurückgegeben werden, wenn tatsächlich Änderungen an der Adresse vorgenommen werden. Andernfalls gibt Details FALSE zurück.</span><span class="sxs-lookup"><span data-stu-id="d986c-132">Indicates that Details returns TRUE if changes are actually made to the address; otherwise, Details returns FALSE.</span></span>
     
-<span data-ttu-id="edfda-133">DIALOG_MODAL</span><span class="sxs-lookup"><span data-stu-id="edfda-133">DIALOG_MODAL</span></span>
+<span data-ttu-id="d986c-133">DIALOG_MODAL</span><span class="sxs-lookup"><span data-stu-id="d986c-133">DIALOG_MODAL</span></span>
   
-> <span data-ttu-id="edfda-134">Zeigt die modale Version im Dialogfeld allgemeine Adresse.</span><span class="sxs-lookup"><span data-stu-id="edfda-134">Displays the modal version of the common address dialog box.</span></span> <span data-ttu-id="edfda-135">Dieses Kennzeichen ist mit DIALOG_SDI gegenseitig aus.</span><span class="sxs-lookup"><span data-stu-id="edfda-135">This flag is mutually exclusive with DIALOG_SDI.</span></span>
+> <span data-ttu-id="d986c-134">Zeigt die modale Version des Dialogfelds allgemeine Adresse an.</span><span class="sxs-lookup"><span data-stu-id="d986c-134">Displays the modal version of the common address dialog box.</span></span> <span data-ttu-id="d986c-135">Dieses Flag ist mit DIALOG_SDI gegenseitig ausschließen.</span><span class="sxs-lookup"><span data-stu-id="d986c-135">This flag is mutually exclusive with DIALOG_SDI.</span></span>
     
-<span data-ttu-id="edfda-136">DIALOG_SDI</span><span class="sxs-lookup"><span data-stu-id="edfda-136">DIALOG_SDI</span></span>
+<span data-ttu-id="d986c-136">DIALOG_SDI</span><span class="sxs-lookup"><span data-stu-id="d986c-136">DIALOG_SDI</span></span>
   
-> <span data-ttu-id="edfda-137">Zeigt die allgemeine Adresse im Dialogfeld ohne Modus Version.</span><span class="sxs-lookup"><span data-stu-id="edfda-137">Displays the modeless version of the common address dialog box.</span></span> <span data-ttu-id="edfda-138">Dieses Kennzeichen ist mit DIALOG_MODAL gegenseitig aus.</span><span class="sxs-lookup"><span data-stu-id="edfda-138">This flag is mutually exclusive with DIALOG_MODAL.</span></span>
+> <span data-ttu-id="d986c-137">Zeigt die nicht modale Version des Dialogfelds allgemeine Adresse an.</span><span class="sxs-lookup"><span data-stu-id="d986c-137">Displays the modeless version of the common address dialog box.</span></span> <span data-ttu-id="d986c-138">Dieses Flag ist mit DIALOG_MODAL gegenseitig ausschließen.</span><span class="sxs-lookup"><span data-stu-id="d986c-138">This flag is mutually exclusive with DIALOG_MODAL.</span></span>
     
-<span data-ttu-id="edfda-139">PARAMETER MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="edfda-139">MAPI_UNICODE</span></span>
+<span data-ttu-id="d986c-139">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="d986c-139">MAPI_UNICODE</span></span>
   
-> <span data-ttu-id="edfda-140">Die übergebenen Zeichenfolgen sind im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="edfda-140">The passed-in strings are in Unicode format.</span></span> <span data-ttu-id="edfda-141">Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="edfda-141">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span>
+> <span data-ttu-id="d986c-140">Die übergebenen Zeichenfolgen sind im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="d986c-140">The passed-in strings are in Unicode format.</span></span> <span data-ttu-id="d986c-141">Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="d986c-141">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span>
     
- <span data-ttu-id="edfda-142">_lpulObjType_</span><span class="sxs-lookup"><span data-stu-id="edfda-142">_lpulObjType_</span></span>
+ <span data-ttu-id="d986c-142">_lpulObjType_</span><span class="sxs-lookup"><span data-stu-id="d986c-142">_lpulObjType_</span></span>
   
-> <span data-ttu-id="edfda-143">[out] Ein Zeiger auf den Typ des Eintrags geöffnet.</span><span class="sxs-lookup"><span data-stu-id="edfda-143">[out] A pointer to the type of the opened entry.</span></span>
+> <span data-ttu-id="d986c-143">Out Ein Zeiger auf den Typ des geöffneten Eintrags.</span><span class="sxs-lookup"><span data-stu-id="d986c-143">[out] A pointer to the type of the opened entry.</span></span>
     
- <span data-ttu-id="edfda-144">_lppUnk_</span><span class="sxs-lookup"><span data-stu-id="edfda-144">_lppUnk_</span></span>
+ <span data-ttu-id="d986c-144">_lppUnk_</span><span class="sxs-lookup"><span data-stu-id="d986c-144">_lppUnk_</span></span>
   
-> <span data-ttu-id="edfda-145">[out] Ein Zeiger auf einen Zeiger des Eintrags geöffnet.</span><span class="sxs-lookup"><span data-stu-id="edfda-145">[out] A pointer to a pointer of the opened entry.</span></span>
+> <span data-ttu-id="d986c-145">Out Ein Zeiger auf einen Zeiger des geöffneten Eintrags.</span><span class="sxs-lookup"><span data-stu-id="d986c-145">[out] A pointer to a pointer of the opened entry.</span></span>
     
 

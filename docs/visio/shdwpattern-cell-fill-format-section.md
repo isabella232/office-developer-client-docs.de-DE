@@ -9,39 +9,39 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: eca73b80-9835-9011-1dce-187ccee92e76
 description: Definiert das Füllmuster für den Schatten eines Shapes.
-ms.openlocfilehash: fd24a8d23d62436a6d81cf6b8049dcabe47db677
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c2591fbc9f208b1bf9c7d0c85e6de765cd9825f6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349042"
 ---
-# <a name="shdwpattern-cell-fill-format-section"></a><span data-ttu-id="d84f9-103">ShdwPattern Cell (Fill Format Section)</span><span class="sxs-lookup"><span data-stu-id="d84f9-103">ShdwPattern Cell (Fill Format Section)</span></span>
+# <a name="shdwpattern-cell-fill-format-section"></a><span data-ttu-id="435c0-103">Zelle "ShdwPattern" (Abschnitt "Fill Format")</span><span class="sxs-lookup"><span data-stu-id="435c0-103">ShdwPattern Cell (Fill Format Section)</span></span>
 
-<span data-ttu-id="d84f9-104">Definiert das Füllmuster für den Schatten eines Shapes.</span><span class="sxs-lookup"><span data-stu-id="d84f9-104">Determines the fill pattern for a shape's shadow.</span></span>
+<span data-ttu-id="435c0-104">Definiert das Füllmuster für den Schatten eines Shapes.</span><span class="sxs-lookup"><span data-stu-id="435c0-104">Determines the fill pattern for a shape's shadow.</span></span>
   
-|<span data-ttu-id="d84f9-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="d84f9-105">**Value**</span></span>|<span data-ttu-id="d84f9-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="d84f9-106">**Description**</span></span>|
+|<span data-ttu-id="435c0-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="435c0-105">**Value**</span></span>|<span data-ttu-id="435c0-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="435c0-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="d84f9-107">0</span><span class="sxs-lookup"><span data-stu-id="d84f9-107">0</span></span>  <br/> |<span data-ttu-id="d84f9-108">Keins (transparente Füllung).</span><span class="sxs-lookup"><span data-stu-id="d84f9-108">None (transparent fill)</span></span>  <br/> |
-|<span data-ttu-id="d84f9-109">1</span><span class="sxs-lookup"><span data-stu-id="d84f9-109">1</span></span>  <br/> |<span data-ttu-id="d84f9-110">Einfarbige Vordergrundfarbe</span><span class="sxs-lookup"><span data-stu-id="d84f9-110">Solid foreground color</span></span>  <br/> |
-|<span data-ttu-id="d84f9-111">2 – 40</span><span class="sxs-lookup"><span data-stu-id="d84f9-111">2 - 40</span></span>  <br/> |<span data-ttu-id="d84f9-112">Verschiedene Füllmuster</span><span class="sxs-lookup"><span data-stu-id="d84f9-112">Assorted patterns</span></span>  <br/> |
+|<span data-ttu-id="435c0-107">0</span><span class="sxs-lookup"><span data-stu-id="435c0-107">0</span></span>  <br/> |<span data-ttu-id="435c0-108">Keins (transparente Füllung).</span><span class="sxs-lookup"><span data-stu-id="435c0-108">None (transparent fill)</span></span>  <br/> |
+|<span data-ttu-id="435c0-109">1</span><span class="sxs-lookup"><span data-stu-id="435c0-109">1</span></span>  <br/> |<span data-ttu-id="435c0-110">Einfarbige Vordergrundfarbe</span><span class="sxs-lookup"><span data-stu-id="435c0-110">Solid foreground color</span></span>  <br/> |
+|<span data-ttu-id="435c0-111">2 - 40</span><span class="sxs-lookup"><span data-stu-id="435c0-111">2 - 40</span></span>  <br/> |<span data-ttu-id="435c0-112">Verschiedene Füllmuster</span><span class="sxs-lookup"><span data-stu-id="435c0-112">Assorted patterns</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d84f9-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d84f9-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="435c0-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="435c0-113">Remarks</span></span>
 
-<span data-ttu-id="d84f9-p101">Wenn Sie das Füllmuster festlegen möchten, geben Sie eine Zahl von 0 bis 40 ein. Diese Zahl ist ein Index für eine Mustersammlung. Sie können sich die Füllmustersammlung auch im Dialogfeld **Füllbereich** ansehen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Füllbereich**, und klicken Sie dann auf **Füllbereichsoptionen**).</span><span class="sxs-lookup"><span data-stu-id="d84f9-p101">To set the fill pattern, enter a number from 0 to 40, which is an index into a collection of patterns. You can view the fill pattern collection in the **Fill** dialog box (on the **Home** tab, in the **Shape** group, click **Fill**, and then click **Fill Options**).</span></span>
+<span data-ttu-id="435c0-p101">Wenn Sie das Füllmuster festlegen möchten, geben Sie eine Zahl von 0 bis 40 ein. Diese Zahl ist ein Index für eine Mustersammlung. Sie können sich die Füllmustersammlung auch im Dialogfeld **Füllbereich** ansehen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Füllbereich**, und klicken Sie dann auf **Füllbereichsoptionen**).</span><span class="sxs-lookup"><span data-stu-id="435c0-p101">To set the fill pattern, enter a number from 0 to 40, which is an index into a collection of patterns. You can view the fill pattern collection in the **Fill** dialog box (on the **Home** tab, in the **Shape** group, click **Fill**, and then click **Fill Options**).</span></span>
   
-<span data-ttu-id="d84f9-116">Wenn Sie einen Verweis auf die Zelle ShdwPattern aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="d84f9-116">To get a reference to the ShdwPattern cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="435c0-116">Wenn Sie einen Verweis auf die Zelle Zelle ShdwPattern aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="435c0-116">To get a reference to the ShdwPattern cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="d84f9-117">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="d84f9-117">Cell name:</span></span>  <br/> |<span data-ttu-id="d84f9-118">ShdwPattern</span><span class="sxs-lookup"><span data-stu-id="d84f9-118">ShdwPattern</span></span>  <br/> |
+|<span data-ttu-id="435c0-117">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="435c0-117">Cell name:</span></span>  <br/> |<span data-ttu-id="435c0-118">Zelle ShdwPattern</span><span class="sxs-lookup"><span data-stu-id="435c0-118">ShdwPattern</span></span>  <br/> |
    
-<span data-ttu-id="d84f9-119">Wenn Sie einen Verweis auf die Zelle ShdwPattern aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="d84f9-119">To get a reference to the ShdwPattern cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="435c0-119">Wenn Sie einen Verweis auf die Zelle Zelle ShdwPattern aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="435c0-119">To get a reference to the ShdwPattern cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="d84f9-120">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="d84f9-120">Section index:</span></span>  <br/> |<span data-ttu-id="d84f9-121">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="d84f9-121">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="d84f9-122">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="d84f9-122">Row index:</span></span>  <br/> |<span data-ttu-id="d84f9-123">**visRowFill**</span><span class="sxs-lookup"><span data-stu-id="d84f9-123">**visRowFill**</span></span> <br/> |
-|<span data-ttu-id="d84f9-124">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="d84f9-124">Cell index:</span></span>  <br/> |<span data-ttu-id="d84f9-125">**visFillShdwPattern**</span><span class="sxs-lookup"><span data-stu-id="d84f9-125">**visFillShdwPattern**</span></span> <br/> |
+|<span data-ttu-id="435c0-120">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="435c0-120">Section index:</span></span>  <br/> |<span data-ttu-id="435c0-121">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="435c0-121">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="435c0-122">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="435c0-122">Row index:</span></span>  <br/> |<span data-ttu-id="435c0-123">**visRowFill**</span><span class="sxs-lookup"><span data-stu-id="435c0-123">**visRowFill**</span></span> <br/> |
+|<span data-ttu-id="435c0-124">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="435c0-124">Cell index:</span></span>  <br/> |<span data-ttu-id="435c0-125">**visFillShdwPattern**</span><span class="sxs-lookup"><span data-stu-id="435c0-125">**visFillShdwPattern**</span></span> <br/> |
    
 

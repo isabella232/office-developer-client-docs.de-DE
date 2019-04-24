@@ -7,32 +7,32 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: eab68d7a-e281-fc2e-5531-91e7a4e1485f
 description: Gibt eine Referenz auf das Blatt (Shape) zurück, das in sheetref angegeben wurde; wenn der Bezeichner sheetref nicht angegeben wurde, wird eine Referenz auf das aktuelle Blatt zurückgegeben.
-ms.openlocfilehash: dcf5c0b42c3e6471ebc4bc201b8d80d420e94d29
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2c6441b5e984557035271de7d84d42078ac87804
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342833"
 ---
-# <a name="sheetref-function"></a><span data-ttu-id="a3076-103">SHEETREF Function</span><span class="sxs-lookup"><span data-stu-id="a3076-103">SHEETREF Function</span></span>
+# <a name="sheetref-function"></a><span data-ttu-id="d1fc2-103">SHEETREF Function</span><span class="sxs-lookup"><span data-stu-id="d1fc2-103">SHEETREF Function</span></span>
 
-<span data-ttu-id="a3076-104">Gibt einen Verweis auf das Blatt (Shape), das in _Sheetref_, angegeben ist oder wenn _sheetref nicht auf das aktuelle Blatt_ vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="a3076-104">Returns a reference to the sheet (shape) that is specified in  _sheetref_, or, if there is no  _sheetref_ qualifier, to the current sheet.</span></span> 
+<span data-ttu-id="d1fc2-104">Gibt einen Verweis auf das Blatt (Shape) zurück, das in _sheetref_angegeben ist, oder, wenn kein _sheetref_ -Qualifizierer vorhanden ist, zum aktuellen Blatt.</span><span class="sxs-lookup"><span data-stu-id="d1fc2-104">Returns a reference to the sheet (shape) that is specified in  _sheetref_, or, if there is no  _sheetref_ qualifier, to the current sheet.</span></span> 
   
-## <a name="version-information"></a><span data-ttu-id="a3076-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="a3076-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="d1fc2-105">Informationen zur Version</span><span class="sxs-lookup"><span data-stu-id="d1fc2-105">Version Information</span></span>
 
-<span data-ttu-id="a3076-106">Hinzugefügte Version: Visio 2010
-</span><span class="sxs-lookup"><span data-stu-id="a3076-106">Version Added: Visio 2010</span></span> 
+<span data-ttu-id="d1fc2-106">Hinzugefügte Version: Visio 2010
+</span><span class="sxs-lookup"><span data-stu-id="d1fc2-106">Version Added: Visio 2010</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="a3076-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="a3076-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d1fc2-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="d1fc2-107">Syntax</span></span>
 
- <span data-ttu-id="a3076-108">*\<Sheetref\>!*</span><span class="sxs-lookup"><span data-stu-id="a3076-108">*\<sheetref\>!*</span></span>  <span data-ttu-id="a3076-109">SHEETREF()</span><span class="sxs-lookup"><span data-stu-id="a3076-109">SHEETREF()</span></span> 
+ <span data-ttu-id="d1fc2-108">*\<sheetref\>!*</span><span class="sxs-lookup"><span data-stu-id="d1fc2-108">*\<sheetref\>!*</span></span>  <span data-ttu-id="d1fc2-109">SHEETREF ()</span><span class="sxs-lookup"><span data-stu-id="d1fc2-109">SHEETREF()</span></span> 
   
-### <a name="return-value"></a><span data-ttu-id="a3076-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a3076-110">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="d1fc2-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d1fc2-110">Return value</span></span>
 
-<span data-ttu-id="a3076-111">ShapeSheet-Referenz</span><span class="sxs-lookup"><span data-stu-id="a3076-111">ShapeSheet reference</span></span>
+<span data-ttu-id="d1fc2-111">ShapeSheet-Referenz</span><span class="sxs-lookup"><span data-stu-id="d1fc2-111">ShapeSheet reference</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a3076-112">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a3076-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d1fc2-112">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d1fc2-112">Remarks</span></span>
 
-<span data-ttu-id="a3076-113">Sie können diese Funktion in anderen Funktionen verwenden, die ein Blattreferenztoken erwarten.</span><span class="sxs-lookup"><span data-stu-id="a3076-113">You can use this function in other functions that take a sheet reference token.</span></span>
+<span data-ttu-id="d1fc2-113">Sie können diese Funktion in anderen Funktionen verwenden, die ein Blattreferenztoken erwarten.</span><span class="sxs-lookup"><span data-stu-id="d1fc2-113">You can use this function in other functions that take a sheet reference token.</span></span>
   
 

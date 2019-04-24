@@ -5,23 +5,23 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1a9871c2-b9bb-332e-b67e-85c50f7f685c
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
 ms.openlocfilehash: a73889982e4aa72fb664a8eafd6fc8704e581e98
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346424"
 ---
-# <a name="use-the-mapi-crash-recovery-api"></a><span data-ttu-id="58f92-103">Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz</span><span class="sxs-lookup"><span data-stu-id="58f92-103">Use the MAPI Crash Recovery API</span></span>
+# <a name="use-the-mapi-crash-recovery-api"></a><span data-ttu-id="8e930-103">Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz</span><span class="sxs-lookup"><span data-stu-id="8e930-103">Use the MAPI Crash Recovery API</span></span>
 
-<span data-ttu-id="58f92-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="58f92-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8e930-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8e930-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="58f92-105">Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion aus der [UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) -Funktion aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="58f92-105">This topic contains a code sample in C++ that shows how to call the [MAPICrashRecovery](mapicrashrecovery.md) function from the [UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) function.</span></span> <span data-ttu-id="58f92-106">Die Funktion [MAPICrashRecovery](mapicrashrecovery.md) überprüft, ob der Zustand des Persönliche Ordner-Datei (PST) oder Offlineordnerdatei (OST) Arbeitsspeicher freigegeben.</span><span class="sxs-lookup"><span data-stu-id="58f92-106">The [MAPICrashRecovery](mapicrashrecovery.md) function checks the state of the Personal Folders file (PST) or Offline Folders file (OST) shared memory.</span></span> 
+<span data-ttu-id="8e930-105">Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion von der [UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) -Funktion aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="8e930-105">This topic contains a code sample in C++ that shows how to call the [MAPICrashRecovery](mapicrashrecovery.md) function from the [UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) function.</span></span> <span data-ttu-id="8e930-106">Die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion überprüft den Status des freigegebenen Speichers (PST) oder der Offline Ordner Datei (Ost).</span><span class="sxs-lookup"><span data-stu-id="8e930-106">The [MAPICrashRecovery](mapicrashrecovery.md) function checks the state of the Personal Folders file (PST) or Offline Folders file (OST) shared memory.</span></span> 
 
-<span data-ttu-id="58f92-107">Wenn der Arbeitsspeicher in einen konsistenten Status befindet, wird die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion verschiebt die Daten auf dem Datenträger und verhindert, dass weitere Lese- oder Schreibzugriff, bis der Prozess beendet wird.</span><span class="sxs-lookup"><span data-stu-id="58f92-107">If the memory is in a consistent state, the [MAPICrashRecovery](mapicrashrecovery.md) function moves the data to disk and prevents further read or write access until the process is terminated.</span></span> <span data-ttu-id="58f92-108">Sicherstellen, dass die PST-Dateien oder OSTs einen konsistenten Status befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2010 oder Microsoft Outlook 2013 die folgende Fehlermeldung angezeigt und Leistungsprobleme vermeiden:</span><span class="sxs-lookup"><span data-stu-id="58f92-108">By ensuring that the PSTs or OSTs are in a consistent state before the process is terminated, you can prevent Microsoft Outlook 2010 or Microsoft Outlook 2013 from displaying the following error message and avoid performance problems:</span></span> 
+<span data-ttu-id="8e930-107">Wenn sich der Speicher in einem konsistenten Zustand befindet, verschiebt die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion die Daten auf den Datenträger und verhindert den weiteren Lese-oder Schreibzugriff, bis der Prozess beendet wird.</span><span class="sxs-lookup"><span data-stu-id="8e930-107">If the memory is in a consistent state, the [MAPICrashRecovery](mapicrashrecovery.md) function moves the data to disk and prevents further read or write access until the process is terminated.</span></span> <span data-ttu-id="8e930-108">Wenn Sie sicherstellen, dass sich PST oder Kosten in einem konsistenten Zustand befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2010 oder Microsoft Outlook 2013 folgende Fehlermeldung angezeigt wird und Leistungsprobleme vermeiden:</span><span class="sxs-lookup"><span data-stu-id="8e930-108">By ensuring that the PSTs or OSTs are in a consistent state before the process is terminated, you can prevent Microsoft Outlook 2010 or Microsoft Outlook 2013 from displaying the following error message and avoid performance problems:</span></span> 
   
-<span data-ttu-id="58f92-109">**Eine Datei wurde nicht ordnungsgemäß geschlossen zuletzt verwendet wurde, und es wird überprüft für Probleme. Während das Kontrollkästchen ausgeführt wird, kann die Leistung beeinträchtigen.**</span><span class="sxs-lookup"><span data-stu-id="58f92-109">**A data file did not close properly the last time it was used and is being checked for problems. Performance might be affected while the check is in progress.**</span></span>
+<span data-ttu-id="8e930-109">**Eine Datendatei wurde bei der letzten Verwendung nicht ordnungsgemäß geschlossen und wird auf Probleme überprüft. Die Leistung kann beeinträchtigt werden, während die Überprüfung ausgeführt wird.**</span><span class="sxs-lookup"><span data-stu-id="8e930-109">**A data file did not close properly the last time it was used and is being checked for problems. Performance might be affected while the check is in progress.**</span></span>
   
 ```cpp
 LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep) 
@@ -50,8 +50,8 @@ LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="58f92-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="58f92-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8e930-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8e930-110">See also</span></span>
 
-- [<span data-ttu-id="58f92-111">Informationen über die API zur MAPI-Wiederherstellung nach einem Absturz</span><span class="sxs-lookup"><span data-stu-id="58f92-111">About the MAPI Crash Recovery API</span></span>](about-the-mapi-crash-recovery-api.md) 
-- [<span data-ttu-id="58f92-112">MAPICrashRecovery</span><span class="sxs-lookup"><span data-stu-id="58f92-112">MAPICrashRecovery</span></span>](mapicrashrecovery.md)
+- [<span data-ttu-id="8e930-111">Informationen über die API zur MAPI-Wiederherstellung nach einem Absturz</span><span class="sxs-lookup"><span data-stu-id="8e930-111">About the MAPI Crash Recovery API</span></span>](about-the-mapi-crash-recovery-api.md) 
+- [<span data-ttu-id="8e930-112">MAPICrashRecovery</span><span class="sxs-lookup"><span data-stu-id="8e930-112">MAPICrashRecovery</span></span>](mapicrashrecovery.md)
 

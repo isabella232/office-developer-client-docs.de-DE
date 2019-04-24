@@ -11,44 +11,44 @@ api_name:
 api_type:
 - COM
 ms.assetid: 22f497de-4afe-4433-965d-c3b5a66b05da
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 7f3f6ae2b9849710bf44d3635fc7bb9a62016f48
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356980"
 ---
-# <a name="ipstoverridereq--iunknown"></a><span data-ttu-id="c9158-103">IPSTOVERRIDEREQ : IUnknown</span><span class="sxs-lookup"><span data-stu-id="c9158-103">IPSTOVERRIDEREQ : IUnknown</span></span>
+# <a name="ipstoverridereq--iunknown"></a><span data-ttu-id="86461-103">IPSTOVERRIDEREQ : IUnknown</span><span class="sxs-lookup"><span data-stu-id="86461-103">IPSTOVERRIDEREQ : IUnknown</span></span>
 
   
   
-<span data-ttu-id="c9158-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c9158-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="86461-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="86461-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c9158-105">Greift auf Ressourcen in einen Anbieter für Persönliche Ordner-Datei (PST) anmelden.</span><span class="sxs-lookup"><span data-stu-id="c9158-105">Accesses resources of a Personal Folders file (PST) store provider.</span></span>
+<span data-ttu-id="86461-105">Greift auf Ressourcen eines PST-Speicheranbieters (Personal Folders File) zu.</span><span class="sxs-lookup"><span data-stu-id="86461-105">Accesses resources of a Personal Folders file (PST) store provider.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="c9158-106">Erbt:</span><span class="sxs-lookup"><span data-stu-id="c9158-106">Inherits from:</span></span>  <br/> |<span data-ttu-id="c9158-107">IUnknown</span><span class="sxs-lookup"><span data-stu-id="c9158-107">IUnknown</span></span>  <br/> |
-|<span data-ttu-id="c9158-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="c9158-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="c9158-109">PST-Anbieter</span><span class="sxs-lookup"><span data-stu-id="c9158-109">PST store provider</span></span>  <br/> |
-|<span data-ttu-id="c9158-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="c9158-110">Called by:</span></span>  <br/> |<span data-ttu-id="c9158-111">Clientanwendungen</span><span class="sxs-lookup"><span data-stu-id="c9158-111">Client applications</span></span>  <br/> |
-|<span data-ttu-id="c9158-112">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="c9158-112">Interface identifier:</span></span>  <br/> |<span data-ttu-id="c9158-113">IID_IPSTOVERRIDEREQ</span><span class="sxs-lookup"><span data-stu-id="c9158-113">IID_IPSTOVERRIDEREQ</span></span>  <br/> |
+|<span data-ttu-id="86461-106">Erbt von:</span><span class="sxs-lookup"><span data-stu-id="86461-106">Inherits from:</span></span>  <br/> |<span data-ttu-id="86461-107">IUnknown</span><span class="sxs-lookup"><span data-stu-id="86461-107">IUnknown</span></span>  <br/> |
+|<span data-ttu-id="86461-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="86461-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="86461-109">PST-Speicheranbieter</span><span class="sxs-lookup"><span data-stu-id="86461-109">PST store provider</span></span>  <br/> |
+|<span data-ttu-id="86461-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="86461-110">Called by:</span></span>  <br/> |<span data-ttu-id="86461-111">Client Anwendungen</span><span class="sxs-lookup"><span data-stu-id="86461-111">Client applications</span></span>  <br/> |
+|<span data-ttu-id="86461-112">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="86461-112">Interface identifier:</span></span>  <br/> |<span data-ttu-id="86461-113">IID_IPSTOVERRIDEREQ</span><span class="sxs-lookup"><span data-stu-id="86461-113">IID_IPSTOVERRIDEREQ</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="c9158-114">Vtable-Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="c9158-114">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="86461-114">Vtable-Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="86461-114">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-|[<span data-ttu-id="c9158-115">IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler</span><span class="sxs-lookup"><span data-stu-id="c9158-115">IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler</span></span>](ipstoverridereq-registertrustedpstoverridehandler.md) <br/> |<span data-ttu-id="c9158-116">Initiiert das Aufheben der Sperre Verfahren für den persönlichen Ordner (PST).</span><span class="sxs-lookup"><span data-stu-id="c9158-116">Initiates the unlocking procedure for a Personal Folders (.pst) file.</span></span>  <br/> |
+|[<span data-ttu-id="86461-115">IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler</span><span class="sxs-lookup"><span data-stu-id="86461-115">IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler</span></span>](ipstoverridereq-registertrustedpstoverridehandler.md) <br/> |<span data-ttu-id="86461-116">Initiiert das Entriegelungs Verfahren für eine persönliche Ordner-Datei (PST).</span><span class="sxs-lookup"><span data-stu-id="86461-116">Initiates the unlocking procedure for a Personal Folders (.pst) file.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="c9158-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c9158-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="86461-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="86461-117">Remarks</span></span>
 
-<span data-ttu-id="c9158-118">Die PST-Datei überschreiben Handler Schnittstellenbezeichner möglicherweise nicht in der herunterladbaren Headerdatei definiert werden derzeit, in diesem Fall müssen Sie finden sie im Thema [MAPI-Konstanten](mapi-constants.md) und können kopieren und fügen sie dem Code hinzu.</span><span class="sxs-lookup"><span data-stu-id="c9158-118">The PST Override Handler Interface Identifiers might not be defined in the downloadable header file you currently have, in which case you will find them in the [MAPI Constants](mapi-constants.md) topic, and can copy and add them to your code.</span></span> <span data-ttu-id="c9158-119">Verwenden Sie das DEFINE_GUID-Makro in der Microsoft Windows Software Development Kit (SDK)-Header-Datei guiddef.h definiert, deren Werte symbolische Namen global eindeutigen Bezeichner (GUID) zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="c9158-119">Use the DEFINE_GUID macro defined in the Microsoft Windows Software Development Kit (SDK) header file guiddef.h to associate globally unique identifier (GUID) symbolic names with their values.</span></span> 
+<span data-ttu-id="86461-118">Die PST-überSchreibungs-Handler-Schnittstellenbezeichner sind möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben, in diesem Fall finden Sie Sie im Thema [MAPI-Konstanten](mapi-constants.md) und können Sie zu Ihrem Code kopieren und hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="86461-118">The PST Override Handler Interface Identifiers might not be defined in the downloadable header file you currently have, in which case you will find them in the [MAPI Constants](mapi-constants.md) topic, and can copy and add them to your code.</span></span> <span data-ttu-id="86461-119">Verwenden Sie das DEFINE_GUID-Makro, das in der Microsoft Windows Software Development Kit (SDK)-Headerdatei guiddef. h definiert ist, um symbolische GUIDs (Globally Unique Identifier) mit ihren Werten zu verknüpfen.</span><span class="sxs-lookup"><span data-stu-id="86461-119">Use the DEFINE_GUID macro defined in the Microsoft Windows Software Development Kit (SDK) header file guiddef.h to associate globally unique identifier (GUID) symbolic names with their values.</span></span> 
   
-<span data-ttu-id="c9158-120">Weitere Informationen finden Sie unter [ein PST Außerkraftsetzung Handler für die Umgehung die PSTDisableGrow Richtlinie in Outlook 2007 implementiert wird](https://support.microsoft.com/kb/956070).</span><span class="sxs-lookup"><span data-stu-id="c9158-120">For more information see [How to implement a PST override handler to bypass the PSTDisableGrow policy in Outlook 2007](https://support.microsoft.com/kb/956070).</span></span>
+<span data-ttu-id="86461-120">Weitere Informationen finden Sie unter [Implementieren eines PST-Überschreibungs Handlers, um die PSTDisableGrow-Richtlinie in Outlook 2007 zu umgehen](https://support.microsoft.com/kb/956070).</span><span class="sxs-lookup"><span data-stu-id="86461-120">For more information see [How to implement a PST override handler to bypass the PSTDisableGrow policy in Outlook 2007](https://support.microsoft.com/kb/956070).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="c9158-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c9158-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="86461-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="86461-121">See also</span></span>
 
 
 
-[<span data-ttu-id="c9158-122">IPSTOVERRIDE1 : IUnknown</span><span class="sxs-lookup"><span data-stu-id="c9158-122">IPSTOVERRIDE1 : IUnknown</span></span>](ipstoverride1iunknown.md)
+[<span data-ttu-id="86461-122">IPSTOVERRIDE1 : IUnknown</span><span class="sxs-lookup"><span data-stu-id="86461-122">IPSTOVERRIDE1 : IUnknown</span></span>](ipstoverride1iunknown.md)
 

@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c870d60b-f01d-ced6-08f7-bc3ae6832c42
 description: Enthält die Breite und Höhe eines Objekts aus einem anderen Programm, das in einer Microsoft Visio-Zeichnung verwendet wird. Dieser Abschnitt wird nur im ShapeSheet-Fenster für solche Objekte angezeigt. Hier ist auch der Abstand zwischen den Rahmen des Objekts und dem eigentlichen Bild angegeben.
-ms.openlocfilehash: 8791dc3e05b50839bd0a27c1e0345aba5ee67728
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dbc9831daeb3b7b70b3764e31f2dbc78752780d6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346053"
 ---
-# <a name="foreign-image-info-section"></a><span data-ttu-id="24ce6-104">Foreign Image Info Section</span><span class="sxs-lookup"><span data-stu-id="24ce6-104">Foreign Image Info Section</span></span>
+# <a name="foreign-image-info-section"></a><span data-ttu-id="3c5e1-104">Abschnitt "Foreign Image Info"</span><span class="sxs-lookup"><span data-stu-id="3c5e1-104">Foreign Image Info Section</span></span>
 
-<span data-ttu-id="24ce6-p102">Enthält die Breite und Höhe eines Objekts aus einem anderen Programm, das in einer Microsoft Visio-Zeichnung verwendet wird. Dieser Abschnitt wird nur im ShapeSheet-Fenster für solche Objekte angezeigt. Hier ist auch der Abstand zwischen den Rahmen des Objekts und dem eigentlichen Bild angegeben.</span><span class="sxs-lookup"><span data-stu-id="24ce6-p102">Contains the width and height of an object from another program used in a Microsoft Visio drawing and appears in the ShapeSheet window only for such objects. It also indicates the distance the object's image is offset within its borders.</span></span>
+<span data-ttu-id="3c5e1-p102">Enthält die Breite und Höhe eines Objekts aus einem anderen Programm, das in einer Microsoft Visio-Zeichnung verwendet wird. Dieser Abschnitt wird nur im ShapeSheet-Fenster für solche Objekte angezeigt. Hier ist auch der Abstand zwischen den Rahmen des Objekts und dem eigentlichen Bild angegeben.</span><span class="sxs-lookup"><span data-stu-id="3c5e1-p102">Contains the width and height of an object from another program used in a Microsoft Visio drawing and appears in the ShapeSheet window only for such objects. It also indicates the distance the object's image is offset within its borders.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="24ce6-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="24ce6-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3c5e1-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3c5e1-107">Remarks</span></span>
 
-<span data-ttu-id="24ce6-108">In Versionen von Visio-Produkten älter als Version 2000 wurde dieser Abschnitt als **Bildinformation**bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="24ce6-108">In versions of Visio products earlier than version 2000, this section was named **Image Info**.</span></span>
+<span data-ttu-id="3c5e1-108">In früheren Versionen von Visio-Produkten als Version 2000 wurde dieser Abschnitt als **Image Info**bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="3c5e1-108">In versions of Visio products earlier than version 2000, this section was named **Image Info**.</span></span>
   
 
