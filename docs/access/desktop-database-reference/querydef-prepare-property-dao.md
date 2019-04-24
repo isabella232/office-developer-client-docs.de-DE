@@ -1,5 +1,5 @@
 ---
-title: QueryDef.Prepare-Eigenschaft (DAO)
+title: QueryDef. Prepare-Eigenschaft (DAO)
 TOCTitle: Prepare Property
 ms:assetid: d5a285c4-bd00-028b-b785-f1890db29bab
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835035(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ac05510a218d1cf4cf925acc2ca8908b7bcbcd03
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303269"
 ---
-# <a name="querydefprepare-property-dao"></a>QueryDef.Prepare-Eigenschaft (DAO)
+# <a name="querydefprepare-property-dao"></a>QueryDef. Prepare-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,7 +34,7 @@ Sie können mit der **Prepare**-Eigenschaft festlegen, dass der Server anhand Ih
 
 Das Erstellen einer gespeicherten Prozedur kann die erste Ausführung verlangsamen. Alle nachfolgenden Verweise auf die Abfrage werden dann jedoch schneller ausgeführt. Einige Abfragen können nicht in Form von gespeicherten Prozeduren ausgeführt werden. In diesen Fällen setzen Sie die **Prepare**-Eigenschaft auf **dbQUnprepare**.
 
-Wenn **Vorbereiten** auf **dbExecDirect**festgelegt wird, kann dies überschrieben werden, wenn die Abfrage ausgeführt wird, indem Sie Options-Argument der **[Execute](querydef-execute-method-dao.md)** -Methode auf **DbExecDirect**festlegen.
+Wenn **Prepare** auf **dbQPrepare**festgelegt ist, kann dies überschrieben werden, wenn die Abfrage ausgeführt wird, indem das Optionsargument der **[Execute](querydef-execute-method-dao.md)** -Methode auf **dbExecDirect**.
 
 > [!NOTE]
 > [!HINWEIS] Die ODBC-API **SQLPrepare** wird aufgerufen, sobald die DAO- **[SQL](querydef-sql-property-dao.md)** -Eigenschaft festgelegt wird. Sie müssen daher zur Steigerung der Leistung mithilfe der **dbQUnprepare**-Option die **Prepare**-Eigenschaft festlegen, bevor Sie die **SQL**-Eigenschaft festlegen.

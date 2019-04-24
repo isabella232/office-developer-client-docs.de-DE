@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Requery-Methode (DAO)
+title: Recordset2. reQuery-Methode (DAO)
 TOCTitle: Requery Method
 ms:assetid: d063c1e0-2fb7-b5cf-4d98-6f77a5a13cec
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834712(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 44f573d179c26677fc801dac82e0deecc3874fb1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307210"
 ---
-# <a name="recordset2requery-method-dao"></a>Recordset2.Requery-Methode (DAO)
+# <a name="recordset2requery-method-dao"></a>Recordset2. reQuery-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Die Daten in einem **[Recordset](recordset-object-dao.md)** -Objekt werden aktualisiert durch erneutes Ausführen der Abfrage, auf der das Objekt basiert.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Requery (***NewQueryDef***)
+*Ausdruck* . ReQuery (***NewQueryDef***)
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
@@ -42,7 +42,7 @@ Die Daten in einem **[Recordset](recordset-object-dao.md)** -Objekt werden aktua
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -58,25 +58,25 @@ Die Daten in einem **[Recordset](recordset-object-dao.md)** -Objekt werden aktua
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie diese Methode, um sicherzustellen, dass ein **Recordset** die aktuellsten Daten enthält. Diese Methode füllt das aktuelle **Recordset** erneut mithilfe der aktuellen Abfrageparameter oder (in einem Microsoft Access-Arbeitsbereich) die neuen Dateien durch das Argument Newquerydef angegeben.
+Verwenden Sie diese Methode, um sicherzustellen, dass ein **Recordset** die neuesten Daten enthält. Diese Methode füllt das aktuelle  **Recordset** neu aus, indem sie entweder die aktuellen Abfrageparameter oder (in einem Microsoft Access-Arbeitsbereich) die vom newquerydef-Argument neu bereitgestgellten verwendet.
 
-Wenn Sie ein Argument Newquerydef nicht angeben, wird das **Recordset-Objekt** neu aufgefüllt basierend auf dem gleichen Abfragedefinition und Parameter verwendet, um das **Recordset**ursprünglich aufzufüllen. Änderungen an zugrunde liegenden Daten werden während des Auffüllvorgangs angezeigt. Wenn Sie zum Erstellen des **Recordset**-Objekts kein **QueryDef**-Objekt verwendet haben, wird das **Recordset** ganz neu erstellt.
+Wenn Sie kein newquerydef-Argument angeben haben, wird das **Recordset** basierend auf der gleichen Abfragedefinition und den gleichen Parametern neu ausgefüllt, die ursprünglich zum Ausfüllen des **Recordset** verwendet wurden. Änderungen der zugrunde liegenden Daten werden während des erneuten Ausfüllens berücksichtigt. Wenn Sie keine **QueryDef** zum Erstellen des **Recordset** verwendet haben, wird das **Recordset** komplett neu erstellt.
 
-Wenn Sie die ursprünglichen **QueryDef-Objekt** im Newquerydef Argument angeben, wird das **Recordset** erneut abgefragt mit den Parametern von **QueryDef-Objekt**angegeben. Änderungen an zugrunde liegenden Daten werden während des Auffüllvorgangs angezeigt. Alle Änderungen an der Abfrageparameterwerte im **Recordset-Objekt**aktualisiert, müssen Sie das Argument Newquerydef angeben.
+Wenn Sie das ursprüngliche **QueryDef** -Objekt im newquerydef-Argument angeben, wird das **Recordset** mithilfe der vom **QueryDef**-Objekt angegebenen Parameter erneut abgefragt. Änderungen der zugrunde liegenden Daten werden während des erneuten Ausfüllens übernommen. Um Änderungen der Abfrageparameterwerte im **Recordset** zu übernehmen, müssen Sie das newquerydef-Argument angeben.
 
-Wenn Sie ein anderes **QueryDef** angeben als das, mit dem das **Recordset** ursprünglich erstellt wurde, wird das **Recordset** völlig neu erstellt.
+Wenn Sie eine andere **QueryDef** als die angeben, die ursprünglich zum Erstellen des **Recordset** verwendet wurde, wird das **Recordset** komplett neu erstellt.
 
-Beim Anwenden von **Requery** wird der erste Datensatz im **Recordset** zum aktuellen Datensatz.
+Wenn Sie **Requery** verwenden, wird der erste Datensatz im **Recordset** der aktuelle Datensatz.
 
-Sie können die **Requery** -Methode nicht für **Recordset** -Objekte des dynaset- oder snapshot-Typs verwenden, deren **[Restartable](recordset2-restartable-property-dao.md)** -Eigenschaft auf **False** festgelegt ist. Wenn Sie das Argument optional Newquerydef angeben, wird jedoch die **Restartable** -Eigenschaft ignoriert.
+You can't use the **Requery** method on dynaset- or snapshot-type **Recordset** objects whose **[Restartable](recordset2-restartable-property-dao.md)** property is set to **False**. Wenn Sie jedoch das optionale newquerydef-Argument angeben, wird **** die Restartable-Eigenschaft ignoriert.
 
 Ist für die beiden Eigenschafteneinstellungen **[BOF](recordset2-bof-property-dao.md)** und **[EOF](recordset2-eof-property-dao.md)** des **Recordset**-Objekts nach dem Verwenden der **Requery**-Methode **True** festgelegt, hat die Abfrage keine Datensätze zurückgegeben, und das **Recordset** enthält keine Daten.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel zeigt, wie die **Requery** -Methode zum Aktualisieren einer Abfrage verwendet werden kann, nachdem die zugrunde liegenden Daten geändert wurden.
+Dieses Beispiel zeigt, wie die **Requery**-Methode zum Aktualisieren einer Abfrage verwendet werden kann, nachdem die zugrunde liegenden Daten geändert wurden.
 
 ```vb
     Sub RequeryX() 
@@ -134,7 +134,7 @@ Dieses Beispiel zeigt, wie die **Requery** -Methode zum Aktualisieren einer Abfr
 
 <br/>
 
-Dieses Beispiel zeigt, wie die **Requery** -Methode zum Aktualisieren einer Abfrage verwendet werden kann, nachdem die Abfrageparamter geändert wurden.
+Dieses Beispiel zeigt, wie die **Requery**-Methode zum Aktualisieren einer Abfrage verwendet werden kann, nachdem die Abfrageparamter geändert wurden.
 
 ```vb
 Sub RequeryX2() 

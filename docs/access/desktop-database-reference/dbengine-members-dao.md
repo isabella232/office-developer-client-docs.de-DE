@@ -1,5 +1,5 @@
 ---
-title: DBEngine-Member (DAO)
+title: DbEngine-Member (DAO)
 TOCTitle: DBEngine Members
 ms:assetid: 740b6a85-585f-0e1d-710b-84ba24825325
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195868(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1128b27385ef9f8c898fb79d05ae28d596c4af6a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294281"
 ---
-# <a name="dbengine-members-dao"></a>DBEngine-Member (DAO)
+# <a name="dbengine-members-dao"></a>DbEngine-Member (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das DBEngine-Objekt ist im DAO-Objektmodell das Objekt der obersten Ebene.
 
@@ -45,24 +45,24 @@ Das DBEngine-Objekt ist im DAO-Objektmodell das Objekt der obersten Ebene.
 </tr>
 <tr class="odd">
 <td><p><strong><a href="dbengine-compactdatabase-method-dao.md">CompactDatabase</a></strong></p></td>
-<td><p>Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglichkeit, die Version, die Sortierreihenfolge und die Verschlüsselung der Datenbank zu ändern (nur Microsoft Access-Arbeitsbereiche.)</p></td>
+<td><p>Kopiert eine geschlossene Datenbank und gibt Ihnen die Möglichkeit, Ihre Version, Sortierreihenfolge und Verschlüsselung zu ändern. (Gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="dbengine-createdatabase-method-dao.md">CreateDatabase</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="database-object-dao.md">Database</a></strong> -Objekt, speichert die Datenbank auf einem Datenträger und gibt ein geöffnetes <strong>Database</strong>-Objekt zurück (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Erstellt ein neues <strong><a href="database-object-dao.md">Database</a></strong> -Objekt, speichert die Datenbank auf einem Datenträger und gibt ein geöffnetes <strong>Database</strong>-Objekt zurück (gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="dbengine-createworkspace-method-dao.md">CreateWorkspace</a></strong></p></td>
 <td><p>Erstellt ein neues <strong><a href="workspace-object-dao.md">Workspace</a></strong> -Objekt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="dbengine-idle-method-dao.md">Im Leerlauf</a></strong></p></td>
+<td><p><strong><a href="dbengine-idle-method-dao.md">Leerlauf</a></strong></p></td>
 <td><p>Unterbricht die Datenverarbeitung und ermöglicht es dem Microsoft Access-Datenbankmodul, anstehende Aufgaben auszuführen, z. B. Speicheroptimierung oder Timeouts von Seiten (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="dbengine-openconnection-method-dao.md">OpenConnection</a></strong></p></td>
 <td><p>Einer der <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> -Werte.</p>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Öffnet ein <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt in einer ODBC-Datenquelle (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
@@ -101,7 +101,7 @@ Das DBEngine-Objekt ist im DAO-Objektmodell das Objekt der obersten Ebene.
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="dbengine-defaultpassword-property-dao.md">DefaultPassword</a></strong></p></td>
-<td><p>Legt das Kennwort fest, mit dem das Standardobjekt <strong>Workspace</strong> bei seiner Initialisierung erstellt wird. String-Wert mit Lese-/Schreibzugriff. <strong>String</strong></p></td>
+<td><p>Legt das Kennwort fest, mit dem der Standard <strong>Arbeitsbereich</strong> erstellt wird, wenn es initialisiert wird. <strong>Zeichenfolge</strong> mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="dbengine-defaulttype-property-dao.md">DefaultType</a></strong></p></td>

@@ -1,5 +1,5 @@
 ---
-title: AllowNullsEnum (Access PC-Datenbank-Referenz)
+title: AllowNullsEnum (Access Desktop Database Reference)
 TOCTitle: AllowNullsEnum
 ms:assetid: 7bb42b38-6b3b-5930-b1d7-16323a3bdf37
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249515(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c184253551fa3f974de1840d47654af597881cb8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297165"
 ---
 # <a name="allownullsenum"></a>AllowNullsEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt an, ob Datensätze mit Nullwerten indiziert werden.
 

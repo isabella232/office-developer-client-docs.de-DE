@@ -8,36 +8,36 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7bb2a479789a8c5bd1825b6cb04e602e0b829dfb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296549"
 ---
 # <a name="cell-object-ado-md"></a>Cell-Objekt (ADO MD)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Stellt die Daten am Kreuzungspunkt von Achsenkoordinaten dar, die in einer Zellmenge enthalten sind.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein **Cell** -Objekt wird von der [Item](item-property-ado-md-cellset.md)-Eigenschaft eines [Cellset](cellset-object-ado-md.md)-Objekts zurückgegeben.
+Ein **Cell**-Objekt wird von der [Item](item-property-ado-md-cellset.md)-Eigenschaft eines [Cellset](cellset-object-ado-md.md)-Objekts zurückgegeben.
 
 Die Auflistungen und Eigenschaften eines **Cell** -Objekts ermöglichen Folgendes:
 
-- Zurückgeben der Daten in der**** Zelle, indem Sie die [Value](value-property-ado-md.md)-Eigenschaft verwenden.
+- Return the data in the **Cell** with the [Value](value-property-ado-md.md) property.
 
 - Zurückgeben der Zeichenfolge, die die formatierte **Value** -Eigenschaft darstellt, indem Sie die [FormattedValue](formattedvalue-property-ado-md.md)-Eigenschaft verwenden.
 
-- Zurückgeben des Ordnungswerts der**** Zelle innerhalb der**** Zellmenge, indem Sie die [Ordinal](ordinal-property-ado-md-cell.md)-Eigenschaft verwenden.
+- Return the ordinal value of the **Cell** within the **Cellset** with the [Ordinal](ordinal-property-ado-md-cell.md) property.
 
-- Bestimmen der Zellenposition**** innerhalb des [CubeDef](cubedef-object-ado-md.md)-Objekts, indem Sie die [Positions](positions-collection-ado-md.md)-Auflistung verwenden.
+- Determine the position of the **Cell** within the [CubeDef](cubedef-object-ado-md.md) with the [Positions](positions-collection-ado-md.md) collection.
 
-- Abrufen anderer Informationen zur**** Zelle, indem Sie die [Properties](properties-collection-ado.md)-ADO-Standardauflistung verwenden.
+- Retrieve other information about the **Cell** with the standard ADO [Properties](properties-collection-ado.md) collection.
 
-Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
+Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.
 
 <table>
 <colgroup>

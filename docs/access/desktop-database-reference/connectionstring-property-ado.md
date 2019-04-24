@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3612652f3473c0794dbfe9be60f84ea2e3fee252
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295709"
 ---
 # <a name="connectionstring-property-ado"></a>ConnectionString-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Informationen an, mit denen eine Verbindung mit einer Datenquelle hergestellt wird.
 
@@ -25,9 +25,9 @@ Gibt die Informationen an, mit denen eine Verbindung mit einer Datenquelle herge
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **Long** festgelegt oder zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **ConnectionString** -Eigenschaft, um eine Datenquelle anzugeben, indem Sie eine mit einer Reihe von durch Semikolons getrennte *Argument* *= Wert* Anweisungen detaillierte Verbindungszeichenfolge übergeben.
+Verwenden Sie die **ConnectionString** -Eigenschaft, um eine Datenquelle anzugeben, indem Sie eine detaillierte Verbindungszeichenfolge übergeben, die eine Reihe von durch Semikolons getrennte *Argument* *= Wert* -Anweisungen enthält.
 
 ADO unterstützt fünf Argumente für die **ConnectionString** -Eigenschaft. Alle anderen Argumente werden ohne weitere Verarbeitung durch ADO direkt an den Anbieter übergeben. ADO unterstützt die im Folgenden aufgeführten Argumente.
 
@@ -44,38 +44,38 @@ ADO unterstützt fünf Argumente für die **ConnectionString** -Eigenschaft. All
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Provider=</em></p></td>
+<td><p><em>Provider =</em></p></td>
 <td><p>Gibt den Namen eines Anbieters an, der für die Verbindung verwendet werden soll.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Dateiname =</em></p></td>
+<td><p><em>File Name=</em></p></td>
 <td><p>Gibt den Namen einer anbieterspezifischen Datei an (z. B. ein gespeichertes Datenquellenobjekt), die voreingestellte Verbindungsinformationen enthält.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Remote Provider =</em></p></td>
-<td><p>Gibt den Namen eines Anbieters an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll (nur Remote Data Service).</p></td>
+<td><p><em>Remote Provider=</em></p></td>
+<td><p>Gibt den Namen eines Anbieters an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll. (Nur Remote Datendienst.)</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Remoteserver =</em></p></td>
+<td><p><em>Remote Server=</em></p></td>
 <td><p>Gibt den Pfadnamen des Servers an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll (nur Remote Data Service).</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>URL=</em></p></td>
+<td><p><em>URL =</em></p></td>
 <td><p>Gibt die Verbindungszeichenfolge als absolute URL an, die eine Ressource wie z. B. eine Datei oder ein Verzeichnis identifiziert.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Nachdem Sie die **ConnectionString** -Eigenschaft festgelegt und das [Connection](connection-object-ado.md)-Objekt geöffnet haben, kann der Anbieter den Inhalt der Eigenschaft ändern, indem er z. B. die in ADO definierten Argumentnamen den entsprechenden Anbieternamen zuordnet.
+Nachdem Sie die **ConnectionString**-Eigenschaft festgelegt und das [Connection](connection-object-ado.md)-Objekt geöffnet haben, kann der Anbieter den Inhalt der Eigenschaft ändern, indem er z. B. die in ADO definierten Argumentnamen den entsprechenden Anbieternamen zuordnet.
 
-Die **ConnectionString** -Eigenschaft erbt automatisch den Wert für das Argument *ConnectionString* der [Open](open-method-ado-connection.md) -Methode verwendet, damit Sie die aktuelle **ConnectionString** -Eigenschaft beim Aufruf **Open** -Methode außer Kraft setzen können.
+Die **ConnectionString**-Eigenschaft erbt automatisch den für das Argument *ConnectionString* der [Open](open-method-ado-connection.md)-Methode verwendeten Wert, weshalb Sie die aktuelle **ConnectionString**-Eigenschaft beim Aufruf der **Open**-Methode außer Kraft setzen können.
 
-Da das Argument *Dateiname* ADO zugeordneten Anbieter geladen wird, kann nicht den *Anbieter* und den *Dateinamen* Argumente übergeben werden.
+Das Argument *File Name* bewirkt, dass ADO den zugehörigen Anbieter lädt. Deshalb können Sie nicht sowohl das Argument *Provider* als auch das Argument *File Name* übergeben.
 
-Die **ConnectionString** -Eigenschaft hat Lese-/Schreibzugriff, wenn die Verbindung geschlossen ist. Wenn die Verbindung geöffnet ist, ist sie schreibgeschützt.
+Die **ConnectionString**-Eigenschaft hat Lese-/Schreibzugriff, wenn die Verbindung geschlossen ist. Wenn die Verbindung geöffnet ist, ist sie schreibgeschützt.
 
 Duplikate eines Arguments in der **ConnectionString** -Eigenschaft werden ignoriert. Die letzte Instanz eines Arguments wird verwendet.
 
-**Remote Data Service-Verwendung** Wenn für ein clientseitiges **Connection** -Objekt verwendet wird, kann die **ConnectionString** -Eigenschaft nur die Parameter *Remote Provider* und *Remote Server* enthalten.
+**Remote Data Service-Verwendung** Bei Verwendung in einem clientseitigen **Connection** -Objekt kann die **ConnectionString** -Eigenschaft nur die Parameter *Remote Provider* und *Remote Server* enthalten.
 

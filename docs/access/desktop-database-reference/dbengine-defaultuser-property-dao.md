@@ -1,5 +1,5 @@
 ---
-title: DBEngine.DefaultUser-Eigenschaft (DAO)
+title: DbEngine. DefaultUser-Eigenschaft (DAO)
 TOCTitle: DefaultUser Property
 ms:assetid: 41ee0211-0794-6026-7341-3698a0b2c588
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192905(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c29f9663ce3591fe5b1633239e8ec0d8866ee16a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294346"
 ---
-# <a name="dbenginedefaultuser-property-dao"></a>DBEngine.DefaultUser-Eigenschaft (DAO)
+# <a name="dbenginedefaultuser-property-dao"></a>DbEngine. DefaultUser-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt den Benutzernamen fest, mit dem das Standardobjekt **Workspace** bei seiner Initialisierung erstellt wird. **String**-Wert mit Lese-/Schreibzugriff.
 
@@ -33,7 +33,7 @@ Legt den Benutzernamen fest, mit dem das Standardobjekt **Workspace** bei seiner
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die Einstellung für **DefaultUser** ist vom Datentyp String. 1 bis 20 Zeichen lange in Microsoft Access-Arbeitsbereiche und es können enthalten alphabetische Zeichen, Akzentbuchstaben, Zahlen, Leerzeichen und Symbole mit Ausnahme von: "(Anführungszeichen) / (Schrägstrich), \\ (umgekehrter Schrägstrich), \[ \] (Klammern) ,: (Doppelpunkt), | (Pipe), \< (kleiner-als-Zeichen), \> (größer-als-Zeichen), + (Pluszeichen), = (Gleichheitszeichen), (Semikolon), (Komma)? (Fragezeichen) \* (Sternchen), führende Leerzeichen und Steuerzeichen (ASCII 00 bis ASCII 31).
+The setting for **DefaultUser** is a String data type. Es kann 1 bis 20 Zeichen lang in Microsoft Access-Arbeitsbereichen, und es kann alphabetische Zeichen, Akzentzeichen, Zahlen, Leerzeichen und Symbole enthalten, mit Ausnahme von: "(Anführungszeichen),/( \\ Schrägstrich), \[ \] (Backslash), (Klammern) ,: (Doppelpunkt), | (Pipe), \< (kleiner-als-Zeichen) \> , (größer-als-Zeichen), + (Pluszeichen), = (Gleichheitszeichen),; (Semikolon),, (Komma),? (Fragezeichen), \* (Asterisk), führende Leerzeichen und Steuerelemente (ASCII 00 bis ASCII 31).
 
 
 > [!NOTE]

@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: adcc8a2a9462509f4b37d2dbdaf824387ae52a26
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309173"
 ---
 # <a name="runsavedimportexport-macro-action"></a>RunSavedImportExport-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Mit der **RunSavedImportExport** -Aktion können Sie eine gespeicherte Import- oder Exportspezifikation ausführen, die Sie mit dem Import- bzw. Export-Assistenten erstellt haben.
 
@@ -29,7 +29,7 @@ Mit der **RunSavedImportExport** -Aktion können Sie eine gespeicherte Import- o
 
 ## <a name="setting"></a>Einstellung
 
-Die **RunSavedImportExport** -Aktion hat das folgende Argument.
+Die **RunSavedImportExport**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -51,7 +51,7 @@ Die **RunSavedImportExport** -Aktion hat das folgende Argument.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Diese Makroaktion hat denselben Effekt wie das Ausführen der folgenden Prozedur in Access:
     
@@ -65,5 +65,5 @@ Die **RunSavedImportExport** -Aktion hat das folgende Argument.
 
 - Links zu weiteren Informationen über das Speichern und Ausführen von Import- und Exportspezifikationen finden Sie im Abschnitt **Siehe auch**.
 
-- Wenn die gespeicherte Import- oder Exportspezifikation, die Sie auswählen, für das Argument **Gespeichert importieren exportieren Name** gelöscht wird, nachdem das Makro erstellt wird, zeigt Access die folgende Fehlermeldung angezeigt, wenn das Makro ausgeführt wird: **die Spezifikation mit dem angegebenen Index ist nicht vorhanden. Geben Sie einen anderen Index. ' *** Spezifikation Namen ***'.**
+- Wenn die gespeicherte Import-oder Exportspezifikation, die Sie für das Argument **saved Import Export Name** ausgewählt haben, nach dem Erstellen des Makros gelöscht wird, zeigt Access beim Ausführen des Makros die folgende Fehlermeldung **an: die Spezifikation mit dem angegebenen Index nicht vorhanden. Geben Sie einen anderen Index an. ' * * * * * Spezifikationsname *** * * * * '.
 

@@ -1,5 +1,5 @@
 ---
-title: Recordset.LastModified-Eigenschaft (DAO)
+title: Recordset. LastModified-Eigenschaft (DAO)
 TOCTitle: LastModified Property
 ms:assetid: 7386f25b-bde1-a446-e980-640696a3bfec
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195859(v=office.15)
@@ -12,18 +12,18 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 232a87b1d34cacccaeb7c380ec522f5ba1def028
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300497"
 ---
-# <a name="recordsetlastmodified-property-dao"></a>Recordset.LastModified-Eigenschaft (DAO)
+# <a name="recordsetlastmodified-property-dao"></a>Recordset. LastModified-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
 
-Gibt eine Textmarke, der angibt, die den zuletzt hinzugefügten oder geänderten Datensatz zurück.
+Gibt eine Textmarke zurück, die den zuletzt hinzugefügten oder geänderten Datensatz angibt.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,7 +33,7 @@ Gibt eine Textmarke, der angibt, die den zuletzt hinzugefügten oder geänderten
 
 ## <a name="remarks"></a>Bemerkungen
 
-Mit der LastModified-Eigenschaft können Sie den zuletzt hinzugefügten oder aktualisierten Datensatz verschieben. Verwenden Sie die LastModified-Eigenschaft für Recordset-Objekte vom Typ Tabelle und Dynaset. Damit die LastModified-Eigenschaft einen Wert hat, muss ein Datensatz im Recordset-Objekt selbst hinzugefügt oder geändert werden.
+You can use the **LastModified** property to move to the most recently added or updated record. Use the **LastModified** property with table- and dynaset-type **[Recordset](recordset-object-dao.md)** objects. A record must be added or modified in the **Recordset** object itself in order for the **LastModified** property to have a value.
 
 ## <a name="example"></a>Beispiel
 
@@ -98,7 +98,7 @@ In diesem Beispiel wird die **LastModified**-Eigenschaft verwendet, um den aktue
 
 <br/>
 
-Dieses Beispiel verwendet die **AddNew** -Methode, um einen neuen Datensatz mit dem angegebenen Namen zu erstellen. Die "AddName"-Funktion ist zum Ausführen dieser Prozedur erforderlich.
+This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.
 
 ```vb
     Sub AddNewX() 

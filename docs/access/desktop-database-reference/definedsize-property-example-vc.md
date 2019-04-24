@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 59ca2013f9cc3551d73ea21d8a6af610e0d159d1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294113"
 ---
 # <a name="definedsize-property-example-vc"></a>DefinedSize-Eigenschaft (VC++-Beispiel)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die Verwendung der DefinedSizeEigenschaft eines Column-Objekts veranschaulicht. Der Code legt die Größe der FirstName-Spalte der Employees-Tabelle in der Northwind-Datenbank neu fest. Dann wird die Änderung der Werte des FirstName-Felds eines Recordsets basierend auf der Employees-Tabelle angezeigt. Standardmäßig wird das FirstName-Feld durch Leerstellen aufgefüllt, nachdem die DefinedSize-Eigenschaft erneut festgelegt wurde.
+This example demonstrates the [DefinedSize](definedsize-property-adox.md) property of a [Column](column-object-adox.md). Mit dem Code wird die Größe der Spalte FirstName der Tabelle Employees **** der *Northwind* -Datenbank neu definiert. Then, the change in the values of the FirstName [Field](field-object-ado.md) of a [Recordset](recordset-object-ado.md) based on the **Employees** table is displayed. Note that by default, the FirstName field becomes padded with spaces after you redefine the **DefinedSize** property.
 
 ```cpp 
  

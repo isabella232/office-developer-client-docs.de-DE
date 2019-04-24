@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0f82ace31a991a6700417d4c0d66bf775fcb7b26
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293777"
 ---
 # <a name="document-object-dao"></a>Document-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein **Document**-Objekt schließt Informationen zu einer Objektinstanz ein. Bei dem Objekt kann es sich um eine Datenbank, gespeicherte Tabelle, Abfrage oder Beziehung handeln (gilt nur für Microsoft Access-Datenbanken).
 
@@ -32,15 +32,15 @@ Jedes **Container**-Objekt besitzt eine **Documents**-Auflistung mit **Document*
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Document</p></th>
+<th><p>Dokument</p></th>
 <th><p>Container</p></th>
 <th><p>Enthält Informationen zu</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Datenbank</p></td>
-<td><p>Databases</p></td>
+<td><p>Database</p></td>
+<td><p>Datenbanken</p></td>
 <td><p>Gespeicherten Datenbanken</p></td>
 </tr>
 <tr class="even">
@@ -57,7 +57,7 @@ Jedes **Container**-Objekt besitzt eine **Documents**-Auflistung mit **Document*
 </table>
 
 > [!NOTE]
-> Verwechseln Sie die in der obigen Tabelle aufgeführten Container-Objekte nicht mit den gleichnamigen Auflistungen. Das Container-Objekt Databases bezieht sich auf alle gespeicherten Datenbankobjekte, während sich die Databases-Auflistung nur auf Datenbankobjekte bezieht, die in einem bestimmten Arbeitsbereich geöffnet sind.
+> Don't confuse the **Container** objects listed in the preceding table with the collections of the same name. The Databases **Container** object refers to all saved database objects, but the **Databases** collection refers only to database objects that are open in a particular workspace.
 
 Bei einem **Document**-Objekt können Sie die folgenden Aktionen ausführen:
 
@@ -77,7 +77,7 @@ Da ein **Document**-Objekt einem vorhandenen Objekt entspricht, können keine ne
 
 - **Dokumente** ("*Name*")
 
-- **Dokumente**\!\[*Namen*\]
+- ****\!Dokument\[*Name*\]
 
 ## <a name="example"></a>Beispiel
 

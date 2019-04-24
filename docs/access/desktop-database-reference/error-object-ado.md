@@ -1,5 +1,5 @@
 ---
-title: Error-Objekt - ActiveX Data Objects (ADO)
+title: Error-Objekt – ActiveX Data Objects (ADO)
 TOCTitle: Error object (ADO)
 ms:assetid: 97e478bf-8b25-03a8-9358-abba5069cba3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249678(v=office.15)
@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a7c77a59368851f43b5e7bf2275f9f282546fb4b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293483"
 ---
 # <a name="error-object-ado"></a>Error-Objekt (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Enthält Details zu Datenzugriffsfehlern, die sich auf eine einzelne Operation beziehen, die den Anbieter betrifft.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jeder Vorgang, an dem ADO-Objekte beteiligt sind, kann mindestens einen Anbieterfehler generieren. Sobald ein Fehler auftritt, wird mindestens ein **Error** -Objekt in der [Errors](errors-collection-ado.md)-Auflistung des [Connection](connection-object-ado.md)-Objekts eingefügt. Wenn ein anderer ADO-Vorgang einen Fehler erzeugt, wird die **Errors** -Auflistung gelöscht, und die neue Gruppe der **Error** -Objekte wird in die **Errors** -Auflistung übernommen.
 
@@ -40,7 +40,7 @@ Sie können die Eigenschaften eines **Error** -Objekts lesen, um die folgenden D
 
 Wenn ein Anbieterfehler auftritt, wird er in die **Errors** -Auflistung des **Connection** -Objekts aufgenommen. ADO unterstützt die Rückgabe mehrerer Fehler durch einen einzelnen ADO-Vorgang, um anbieterspezifische Fehlerinformationen zu gestatten. Verwenden Sie die zutreffenden Fehlerbehandlungsfeatures der Sprache oder Umgebung, und durchlaufen Sie dann die Eigenschaften der einzelnen **Error** -Objekte in der **Errors** -Auflistung in geschachtelten Schleifen, um diese ausführlichen Fehlerinformationen in einer Fehlerbehandlungsroutine zu erhalten.
 
-**Microsoft Visual Basic- und VBScript-Benutzer** Wenn kein gültiges **Connection** -Objekt vorhanden ist, müssen Sie Fehlerinformationen aus dem **Error** -Objekt abzurufen.
+**Microsoft Visual Basic-und VBScript-Benutzer** Wenn kein gültiges **Connection** -Objekt vorhanden ist, müssen Sie Fehlerinformationen aus dem **Error** -Objekt abrufen.
 
 Wie andere Anbieter löscht auch ADO das **OLE Error Info** -Objekt vor dem Ausführen eines Aufrufs, der potenziell einen neuen Anbieterfehler erzeugen könnte. Die **Errors** -Auflistung des **Connection** -Objekts wird jedoch gelöscht und nur dann aufgefüllt, wenn der Anbieter einen neuen Fehler erzeugt, oder wenn die [Clear](clear-method-ado.md)-Methode aufgerufen wird.
 

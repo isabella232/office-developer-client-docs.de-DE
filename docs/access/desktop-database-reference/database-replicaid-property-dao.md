@@ -1,5 +1,5 @@
 ---
-title: Database.ReplicaID-Eigenschaft (DAO)
+title: Database. replicate-Eigenschaft (DAO)
 TOCTitle: ReplicaID Property
 ms:assetid: cf2ca8a1-d13f-30e0-2ca1-dd32ac736c56
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834672(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2ada9bf23a4b8fc34c5f9b4f24350fc6af91dc85
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294715"
 ---
-# <a name="databasereplicaid-property-dao"></a>Database.ReplicaID-Eigenschaft (DAO)
+# <a name="databasereplicaid-property-dao"></a>Database. replicate-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 Gibt einen 16-Byte-Wert zurück, der ein Replikat einer Datenbank eindeutig kennzeichnet (nur Microsoft Access-Arbeitsbereiche).
@@ -42,7 +42,7 @@ Die **ReplicaID**-Eigenschaft jedes Replikats (und der Designmaster) ist in der 
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird ein Replikat des Designmasters von Northwind.mdb erstellt. Anschließend wird die ReplicaID-Eigenschaft des Replikats zurückgegeben, die automatisch von der Microsoft Access-Datenbank-Engine erstellt wird. (Wenn Sie noch keinen Designmaster von Northwind erstellt haben, lesen Sie unter der Replicable-Eigenschaft nach oder ändern Sie den Namen der Datenbank im Code in einen vorhandenen Designmaster.)
+This example makes a replica from the Design Master of Northwind.mdb, and then returns the replica's **ReplicaID**, which is automatically created by the Microsoft Access database engine. (If you have not yet created a Design Master of Northwind, refer to the **Replicable** property, or change the name of the database in the code to an existing Design Master.)
 
 ```vb 
 Sub MakeReplicaReplicaIDX() 

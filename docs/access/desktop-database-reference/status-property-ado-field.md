@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9c5f9d73a1081bb27c88541ac99307165222ab65
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306321"
 ---
 # <a name="status-property-ado-field"></a>Status-Eigenschaft (ADO-Feld)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Status eines [Field](field-object-ado.md)-Objekts an.
 
@@ -25,13 +25,13 @@ Gibt den Status eines [Field](field-object-ado.md)-Objekts an.
 
 Gibt einen [FieldStatusEnum](fieldstatusenum.md)-Wert zurück. Der Standardwert lautet **AdFieldOK**.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft gibt für Felder eines **Recordset**-Objekts stets [adFieldOK](recordset-object-ado.md) zurück.
+Diese Eigenschaft gibt für Felder eines [Recordset](recordset-object-ado.md)-Objekts stets **adFieldOK** zurück.
 
 Ergänzungen oder Löschungen in den [Fields](fields-collection-ado.md)-Auflistungen des [Record](record-object-ado.md)-Objekts werden bis zum Aufrufen der [Update](update-method-ado.md)-Methode zwischengespeichert. Mithilfe der **Status** -Eigenschaft können Sie die Felder ermitteln, die erfolgreich hinzugefügt oder gelöscht wurden.
 
-Schemaänderungen werden zur Verbesserung der Leistung zwischengespeichert, bis **Update** aufgerufen wird, und klicken Sie dann die Änderungen in einer optimistischen Batchaktualisierung vorgenommen werden. Wenn die **Update** -Methode nicht aufgerufen wird, wird der Server nicht aktualisiert. Wenn keine Updates wird ein Fehler zurückgegeben, und die **Status** -Eigenschaft gibt die kombinierten Werte der Vorgang und Fehlerstatuscode an. Beispielsweise **AdFieldPendingInsert** **oder** **AdFieldPermissionDenied**. Die **Status** -Eigenschaft für jedes **Feld** kann verwendet werden, um zu ermitteln, warum das **Feld** nicht hinzugefügt, geändert oder gelöscht wurde. **Status** wird nur sinnvoll für den **Datensatz**angezeigt. **Fields** -Auflistung und nicht das **Recordset-Objekt**. **Fields** -Auflistung.
+To enhance performance, schema changes are cached until **Update** is called, and then the changes are made in a batch optimistic update. If the **Update** method is not called, the server is not updated. If any updates fail then an error is returned and the **Status** property indicates the combined values of the operation and error status code. For example, **adFieldPendingInsert** **OR** **adFieldPermissionDenied**. The **Status** property for each **Field** can be used to determine why the **Field** was not added, modified, or deleted. Der **Status** wird nur für den **Datensatz**sinnvoll angezeigt. **Fields** -Auflistung und nicht das **Recordset**-Objekt. **Fields** -Auflistung.
 
-Zwei Probleme können auftreten, wenn hinzufügen, ändern oder Löschen eines **Felds**. Löscht der Benutzer auf ein **Feld**, wird es in der **Fields** -Auflistung zum Löschen gekennzeichnet. Das nachfolgende **Update** einen Fehler zurück, da der Benutzer versuchte, ein **Feld** zu löschen, für die sie nicht über die Berechtigung verfügen, wird das **Feld** Status **AdFieldPermissionDenied** **oder** **AdFieldPendingDelete**aufweisen. Aufrufen der [CancelUpdate](cancelupdate-method-ado.md) -Methode stellt ursprünglichen Werte wieder her und legt den **Status** auf **AdFieldOK**fest. Auf ähnliche Weise kann die **Update** -Methode einen Fehler zurück, da ein neues **Feld** hinzugefügt und einen Ungültiger Wert angegeben wurde. In diesem Fall wird das neue **Feld** in der **Fields** -Auflistung werden, und Sie haben den Status von **AdFieldPendingInsert** und vielleicht **AdFieldCantCreate**. Sie können einen entsprechenden Wert für das neue **Feld** angeben und erneut **Update** aufrufen. Beachten Sie, dass Aufruf von **Resync** stattdessen ist der Anbieter erforderlich.
+Two problems can arise when adding, modifying, or deleting a **Field**. If the user deletes a **Field**, it is marked for deletion from the **Fields** collection. If the subsequent **Update** returns an error because the user tried to delete a **Field** for which they do not have permission, the **Field** will have a status of **adFieldPermissionDenied** **OR** **adFieldPendingDelete**. Calling the [CancelUpdate](cancelupdate-method-ado.md) method restores original values and sets the **Status** to **adFieldOK**. Similarly, the **Update** method may return an error because a new **Field** was added and given an inappropriate value. In that case the new **Field** will be in the **Fields** collection and have a status of **adFieldPendingInsert** and perhaps **adFieldCantCreate**. You can supply an appropriate value for the new **Field** and call **Update** again. Note that calling **Resync** instead requeries the provider.
 

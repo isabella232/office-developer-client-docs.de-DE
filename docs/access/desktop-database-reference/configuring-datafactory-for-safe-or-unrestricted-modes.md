@@ -8,30 +8,30 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a4313d48359499eaf249a68eb97408c8ed4ecb88
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295996"
 ---
-# <a name="configuring-datafactory-for-safe-or-unrestricted-modes"></a>Konfigurieren von "DataFactory" für den sicheren oder den uneingeschränkten Modus
+# <a name="configuring-datafactory-for-safe-or-unrestricted-modes"></a>Konfigurieren von 'DataFactory' für den sicheren oder den uneingeschränkten Modus
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Standardmäßig wird ADO (ActiveX Data Objects) mit einer sicheren [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Konfiguration installiert. Der sichere Modus für RDS-Serverkomponenten (Remote Data Service) bedeutet, dass Folgendes gilt:
 
-1.  Ein Handler ist für RDSServer.DataFactory erforderlich (dies ist durch die Einstellung für einen Registrierungsschlüssel festgelegt).
+1.  Handler is required with the RDSServer.DataFactory (this is mandated by a registry key setting).
 
-2.  Der Standardhandler msdfmap.handler ist registriert, in der Liste sicherer Handler aufgeführt und als Standardhandler gekennzeichnet.
+2.  The default handler, msdfmap.handler, is registered, present in the safe-handler list, and marked as the default handler.
 
-3.  Die Datei Msdfmap.ini ist im Windows-Verzeichnis installiert. Sie müssen diese Datei nach Ihren Anforderungen konfigurieren, bevor Sie RDS im dreistufigen Modus verwenden.
+3.  Msdfmap.ini file is installed in the Windows directory. You must configure this file according to your needs, before using RDS in three-tier mode.
 
-Optional können Sie eine uneingeschränkte **DataFactory** -Installation konfigurieren. **DataFactory** kann direkt verwendet werden, ohne den benutzerdefinierten Handler. Benutzer können trotzdem einen benutzerdefinierten Handler verwenden, indem Sie die Verbindungszeichenfolgen ändern, aber dies ist nicht erforderlich. Weitere Informationen zu den Auswirkungen der Verwendung des **RDSServer.DataFactory** -Objekts finden Sie unter [Securing RDS Applications](securing-rds-applications.md).
+Optional können Sie eine uneingeschränkte **DataFactory** -Installation konfigurieren. **DataFactory** kann direkt verwendet werden, ohne den benutzerdefinierten Handler. Benutzer können trotzdem einen benutzerdefinierten Handler verwenden, indem Sie die Verbindungszeichenfolgen ändern, aber dies ist nicht erforderlich. Weitere Informationen zu den Auswirkungen der Verwendung des **RDSServer. DataFactory** -Objekts finden Sie unter [Sichern von RDS-Anwendungen](securing-rds-applications.md).
 
-Die Registrierungsdatei handsafe.reg wurde bereitgestellt, um die Registrierungseinträge des Handlers für eine sichere Konfiguration einzurichten. Führen Sie für den sicheren Modus handsafe.reg aus. Die Registrierungsdatei handunsf.reg wurde bereitgestellt, um die Registrierungseinträge des Handlers für eine uneingeschränkte Konfiguration einzurichten. Führen Sie für den uneingeschränkten Modus handunsf.reg aus.
+The registry file handsafe.reg has been provided to set up the handler registry entries for a safe configuration. To run in safe mode, run handsafe.reg. The registry file handunsf.reg has been provided to set up the handler registry entries for an unrestricted configuration. To run in unrestricted mode, run handunsf.reg.
 
-Nach der Ausführung handsafe.reg oder handunsf.reg, müssen Sie beenden und erneutes Starten der WWW-Publishingdienst auf dem Webserver durch Eingabe der folgenden Befehle in einem Befehlsfenster: "NET STOP W3SVC" und "NET START W3SVC".
+Nachdem Sie entweder handsafe. reg oder handunsf. reg ausführen, müssen Sie den WWW-Publishing Dienst auf dem Webserver beenden und neu starten, indem Sie die folgenden Befehle in einem Befehlsfenster eingeben: "NET STOP W3SVC" und "NET START W3SVC".
 
 Weitere Informationen zur Verwendung des Features zur Handleranpassung finden Sie im technischen Artikel zur Verwendung des Features zur Handleranpassung in RDS 2.1.
 

@@ -1,5 +1,5 @@
 ---
-title: Recordset2.ValidationRule-Eigenschaft (DAO)
+title: Recordset2. ValidationRule-Eigenschaft (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: d46cc255-e588-e9e6-66d7-31fc26ae45b8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835002(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7b146aa0278db278f3831bc0e00987d21e14b70a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307154"
 ---
-# <a name="recordset2validationrule-property-dao"></a>Recordset2.ValidationRule-Eigenschaft (DAO)
+# <a name="recordset2validationrule-property-dao"></a>Recordset2. ValidationRule-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert fest, der die Daten in einem Feld überprüft, wenn es geändert oder einer Tabelle hinzugefügt wird, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche). **String**-Wert mit Lese-/Schreibzugriff.
 
@@ -49,7 +49,7 @@ Für ein **Recordset**-Objekt ist die **ValidationRule**-Eigenschaft schreibgesc
 <tbody>
 <tr class="odd">
 <td><p>Basistabelle</p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 <tr class="even">
 <td><p>Verknüpfte Tabelle</p></td>
@@ -65,8 +65,8 @@ Der von der **ValidationRule**-Eigenschaft eines **Field**-Objekts festgelegte Z
 
 Die **ValidationRule**-Eigenschaft eines **Recordset**- oder **TableDef**-Objekts kann sich auf mehrere Felder in diesem Objekt beziehen. Es gelten die weiter oben in diesem Thema genannten Einschränkungen für das **Field**-Objekt.
 
-Bei einem Recordset-Objekt vom Typ Tabelle erbt die ValidationRule-Eigenschaft die ValidationRule-Eigenschaft des TableDef-Objekts, das Sie zum Erstellen des Recordset-Objekts vom Typ Tabelle verwenden.
+For a table-type **Recordset** object, the **ValidationRule** property inherits the **ValidationRule** property setting of the **TableDef** object that you use to create the table-type **Recordset** object.
 
 > [!NOTE]
-> Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrRule = "Preis &gt; " &amp; LngPrice, und LngPrice = 125,50), ein Fehler ausgegeben, wenn der Code versucht, Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.</P>
+> Wenn Sie die-Eigenschaft auf eine Zeichenfolge festlegen, die mit einem nicht-ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht-U. S. Decimal-Zeichen wie ein Komma (beispielsweise strRule &gt; = &amp; "Price" lngPrice und lngPrice = 125, 50) angeben, tritt ein Fehler auf, wenn Ihr Code versucht, alle Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.</P>
 

@@ -1,5 +1,5 @@
 ---
-title: QueryDef.ReturnsRecords-Eigenschaft (DAO)
+title: QueryDef. ReturnsRecords-Eigenschaft (DAO)
 TOCTitle: ReturnsRecords Property
 ms:assetid: 3d1e538b-4d60-588f-4a20-89f1e2b434e6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192701(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7d2202aa506750cd0a0d2a84eea5c507c3bb1147
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303339"
 ---
-# <a name="querydefreturnsrecords-property-dao"></a>QueryDef.ReturnsRecords-Eigenschaft (DAO)
+# <a name="querydefreturnsrecords-property-dao"></a>QueryDef. ReturnsRecords-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine externe Datenbank Datensätze zurückgibt (nur Microsoft Access-Arbeitsbereiche).
 
@@ -35,7 +35,7 @@ Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine ex
 Nicht alle SQL Pass-Through-Abfragen an externe Datenbanken geben Datensätze zurück. Eine SQL UPDATE-Anweisung aktualisiert z. B. Datensätze, ohne Datensätze zurückzugeben, während eine SQL SELECT-Anweisung Datensätze zurückgibt. Wenn die Abfrage Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **True** fest. Wenn die Abfrage keine Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **False** fest.
 
 > [!NOTE]
-> [!HINWEIS] Vor dem Festlegen der [ReturnsRecords](querydef-connect-property-dao.md)-Eigenschaft müssen Sie die ****Connect**** -Eigenschaft festlegen.
+> Sie müssen die **[Connect](querydef-connect-property-dao.md)** -Eigenschaft festlegen, bevor Sie die **ReturnsRecords** -Eigenschaft festlegen.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,5 +1,5 @@
 ---
-title: Workspaces-Member (DAO)
+title: Workspaces-Elemente (DAO)
 TOCTitle: Workspaces Members
 ms:assetid: 5eaf6de5-44dc-5566-a98f-db54aecf15cb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194667(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6be2aba5ab072e40193aff11ab6be54ba6c94f34
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302604"
 ---
-# <a name="workspaces-members-dao"></a>Workspaces-Member (DAO)
+# <a name="workspaces-members-dao"></a>Workspaces-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine Workspaces-Auflistung enthält alle aktiven, nicht ausgeblendeten Workspace-Objekte des DBEngine-Objekts. (Ausgeblendete Workspace-Objekte werden nicht an die Auflistung angefügt, und auf sie wird nicht durch die Variable verwiesen, der sie zugeordnet sind.)
 
@@ -36,7 +36,7 @@ Eine Workspaces-Auflistung enthält alle aktiven, nicht ausgeblendeten Workspace
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="workspaces-append-method-dao.md">Anfügen</a></strong></p></td>
+<td><p><strong><a href="workspaces-append-method-dao.md">Append</a></strong></p></td>
 <td><p>Fügt der <strong>Workspaces</strong>-Auflistung ein neues <strong>Workspace</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Eine Workspaces-Auflistung enthält alle aktiven, nicht ausgeblendeten Workspace
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="workspaces-count-property-dao.md">Count</a></strong></p></td>
-<td><p>Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
+<td><p>Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
 </tr>
 </tbody>
 </table>

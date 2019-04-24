@@ -1,5 +1,5 @@
 ---
-title: Field2.Value-Eigenschaft (DAO)
+title: Field2. Value-Eigenschaft (DAO)
 TOCTitle: Value Property
 ms:assetid: 6ead6ba8-1613-99c7-7968-56f5b81b2385
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195566(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4324917fcabd768a9527b11fceadbfc2dc9ef2b3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292629"
 ---
-# <a name="field2value-property-dao"></a>Field2.Value-Eigenschaft (DAO)
+# <a name="field2value-property-dao"></a>Field2. Value-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt den Wert eines Objekts fest oder gibt ihn zurück. **Variant**-Wert mit Lese-/Schreibzugriff.
+Legt den Wert eines Objekts fest oder gibt ihn zurück. **Variant** mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
@@ -29,7 +29,7 @@ Legt den Wert eines Objekts fest oder gibt ihn zurück. **Variant**-Wert mit Les
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die Einstellung eines Rückgabewerts ist ein Variant-Datentyp, der als für den Datentyp geeigneter Wert ausgewertet wird, wie in der Type-Eigenschaft des Objekts angegeben.
+The setting or return value is a Variant data type that evaluates to a value appropriate for the data type, as specified by the **Type** property of an object.
 
 In der Regel werden mit der **Value**-Eigenschaft Daten in **Recordset**-Objekten abgerufen und geändert.
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8cc5153d851a4dc17ef690421d1080ddf91fc3bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292475"
 ---
 # <a name="filter-property-ado"></a>Filter-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Filter für Daten in einem [Recordset](recordset-object-ado.md) an.
 
@@ -31,17 +31,17 @@ Legt einen **Variant** -Wert fest oder gibt ihn zurück, der Folgendes enthalten
 
   - Ein [FilterGroupEnum](filtergroupenum.md)-Wert.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **Filter** -Eigenschaft, um Datensätze in einem **Recordset** -Objekt gezielt herauszufiltern. Das gefilterte **Recordset** -Objekt wird zum aktuellen Cursor. Andere Eigenschaften, deren Rückgabewerte auf dem aktuellen Cursor basieren, werden dadurch beeinflusst, wie z. B. [AbsolutePosition](absoluteposition-property-ado.md), [AbsolutePage](absolutepage-property-ado.md), [RecordCount](recordcount-property-ado.md) und [PageCount](pagecount-property-ado.md). Das liegt daran, dass der aktuelle Datensatz durch das Festlegen der **Filter** -Eigenschaft auf einen bestimmten Wert zum ersten Datensatz wechselt, der dem neuen Wert entspricht.
+Verwenden Sie die **Filter**-Eigenschaft, um Datensätze in einem **Recordset**-Objekt gezielt herauszufiltern. Das gefilterte **Recordset**-Objekt wird zum aktuellen Cursor. Andere Eigenschaften, deren Rückgabewerte auf dem aktuellen Cursor basieren, werden dadurch beeinflusst, wie z. B. [AbsolutePosition](absoluteposition-property-ado.md), [AbsolutePage](absolutepage-property-ado.md), [RecordCount](recordcount-property-ado.md) und [PageCount](pagecount-property-ado.md). Das liegt daran, dass der aktuelle Datensatz durch das Festlegen der **Filter**-Eigenschaft auf einen bestimmten Wert zum ersten Datensatz wechselt, der dem neuen Wert entspricht.
 
-Die Kriterienzeichenfolge besteht aus Klauseln in der Form *FieldName-Operator-Wert* (beispielsweise "LastName = 'Smith'"). Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit **AND** verketten (beispielsweise "LastName = 'Smith'" und "FirstName ="John"") oder **OR** (z. B. "). Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit **AND** verketten (beispielsweise "LastName = 'Smith'" und "FirstName ="John"") oder **OR** (beispielsweise "LastName = 'Smith' oder LastName = 'Jones'"). Halten Sie sich für Kriterienzeichenfolgen an die folgenden Richtlinien:
+Die Zeichenfolge der Kriterien besteht aus Klauseln im Format *FieldName-Operator-Value* (beispielsweise "LastName = ' Smith '"). Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit **und** verknüpfen (beispielsweise "LastName = ' Smith" und FirstName = ' John ' ") oder **oder** (zum Beispiel"). Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit **und** verknüpfen (beispielsweise "LastName = ' Smith" und FirstName = ' John ' ") oder **oder** (beispielsweise" LastName = ' Smith ' oder LastName = ' Jones ' "). Halten Sie sich für Kriterienzeichenfolgen an die folgenden Richtlinien:
 
-  - *FieldName* muss ein gültiger Feldname aus dem **Recordset-Objekt**sein. Wenn der Feldname Leerzeichen enthält, müssen Sie ihn in eckige Klammern einschließen.
+  - *Feldname* muss ein gültiger Feldname aus dem **Recordset**-Objekt sein. Wenn der Feldname Leerzeichen enthält, müssen Sie ihn in eckige Klammern einschließen.
 
-  - *Operator* muss einer der folgenden sein: \<, \>, \<=, \>=, \< \>, = oder **LIKE**.
+  - Der *Operator* muss einer der folgenden sein: \<, \>, \<=, \>=, \< \>, = oder **like**.
 
-  - *Wert* ist der Wert, mit denen Sie die Feldwerte vergleichen (z. B. "Smith", \#8/24/95\#, 12.345 oder $50,00). Verwenden Sie einfache Anführungszeichen mit Zeichenfolgen und Nummernzeichen (\#) mit einem Datum. Zahlen können Sie die Dezimalstellen, Dollarzeichen und die wissenschaftliche Schreibweise. Wenn der *Operator* **wie**ist, können *Wert* Platzhalter verwenden. Nur das Sternchen (\*) und Prozentzeichen (%) sind Platzhalter zulässig, und sie müssen das letzte Zeichen in der Zeichenfolge sein. *Wert* darf nicht null sein.
+  - *Value* ist der Wert, mit dem Sie die Feldwerte vergleichen (beispielsweise ' Smith ', \#8/24/95\#, 12,345 oder $50,00). Verwenden Sie einfache Anführungszeichen mit Strings und Zeichen (\#) mit Datumsangaben. Bei Zahlen können Sie Dezimalzeichen, Dollarzeichen und die wissenschaftliche Schreibweise verwenden. Wenn **LIKE** als *Operator* fungiert, kann *Wert* Platzhalterzeichen enthalten. Nur das Sternchen (\*) und das Prozentzeichen (%) Joker sind zulässig, und Sie müssen das letzte Zeichen in der Zeichenfolge sein. *Wert* darf nicht Null sein.
 
     > [!NOTE]
     > [!HINWEIS] Wenn einzelne Anführungszeichen in den Filterwert eingeschlossen werden sollen, verwenden Sie zwei einzelne Anführungszeichen zur Darstellung. Soll beispielsweise nach "O'Malley" gefiltert werden, lautet die Kriterienzeichenfolge "col1 = 'O''Malley'". Setzen Sie die Zeichenfolge zwischen Nummernzeichen (#), um einzelne Anführungszeichen am Anfang und am Ende des Filterwerts einzuschließen. Wenn Sie z. B. nach '1' filtern möchten, muss die Kriterienzeichenfolge "col1 = #'1'#" lauten.
@@ -50,7 +50,7 @@ Die Kriterienzeichenfolge besteht aus Klauseln in der Form *FieldName-Operator-W
 
   - Diesen Filter müssten Sie stattdessen folgendermaßen erstellen:
 
-  - In einer Klausel **wie** Sie einen Platzhalter am Anfang und Ende des Musters verwenden (beispielsweise LastName Like '\*Mit\*"), oder nur am Ende des Musters (beispielsweise LastName Like" Smit\*").
+  - In einer **like** -Klausel können Sie einen Platzhalter am Anfang und am Ende des Musters verwenden (beispielsweise LastName like '\*mit\*') oder nur am Ende des Musters (beispielsweise LastName wie ' Smit\*').
 
 Die Filterkonstanten vereinfachen das Lösen einzelner Datensatzkonflikte bei der Batchaktualisierung, indem Sie beispielsweise nur die Datensätze anzeigen, die durch den letzten Aufruf der [UpdateBatch](updatebatch-method-ado.md)-Methode beeinflusst wurden.
 
@@ -62,7 +62,7 @@ Sobald die **Filter** -Eigenschaft festgelegt wird, wechselt die aktuelle Datens
 
 Unter der [Bookmark](bookmark-property-ado.md)-Eigenschaft finden Sie eine Erklärung der Textmarkenwerte, aus denen Sie ein Array zur Verwendung mit der **Filter** -Eigenschaft erstellen können.
 
-Nur **Filter** in der Form von Kriterienzeichenfolgen (z. B. Bestelldatum \> ' 12/31/1999 ') wirken sich auf den Inhalt eines permanenten **Recordset-Objekt**. **Filter** mit einem Array von **Lesezeichen** erstellt oder mithilfe eines Werts aus der **FilterGroupEnum** wirkt sich nicht auf den Inhalt des gespeicherten Recordset-Objekts. Diese Regeln gelten für **Recordsets** mit clientseitige oder serverseitige Cursor erstellt wurden.
+Nur **Filter** in Form von Kriterien-Zeichenfolgen (z. \> b. OrderDate "12/31/1999") wirken sich auf den Inhalt eines beibehaltenen **Recordsets**aus. **Filter**, die mit einem Array aus **Textmarken** oder mithilfe eines Werts aus **FilterGroupEnum** erstellt wurden, haben keinen Einfluss auf den Inhalt des permanenten Recordsets. Diese Regeln gelten für **Recordset**-Objekte, die mit clientbasierten oder serverbasierten Cursorn erstellt wurden.
 
 > [!NOTE]
 > [!HINWEIS] Angenommen, Sie wenden das Kennzeichen **adFilterPendingRecords** auf ein gefiltertes und geändertes **Recordset** -Objekt im Batchaktualisierungsmodus an. In diesem Fall ist das resultierende **Recordset** -Objekt leer, wenn der Filter auf dem Schlüsselfeld einer Tabelle mit einem Schlüssel basierte und die Änderung zu den Schlüsselfeldwerten vorgenommen wurden. Das resultierende **Recordset** -Objekt ist nicht leer, wenn eine der folgenden Aussagen zutrifft:
@@ -100,7 +100,7 @@ In der folgenden Tabelle werden die Ergebnisse von **adFilterPendingRecords** in
 <td><p>Ein Schlüssel</p></td>
 <td><p>+</p></td>
 <td><p>-</p></td>
-<td><p>n/v</p></td>
+<td><p>Nicht zutreffend</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mehrere Schlüssel</p></td>

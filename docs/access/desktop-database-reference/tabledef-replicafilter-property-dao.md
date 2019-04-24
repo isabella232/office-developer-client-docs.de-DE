@@ -1,5 +1,5 @@
 ---
-title: TableDef.ReplicaFilter-Eigenschaft (DAO)
+title: TableDef. ReplicaFilter-Eigenschaft (DAO)
 TOCTitle: ReplicaFilter Property
 ms:assetid: f44273de-2b6a-750f-cb7c-12c3ac2da503
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836681(v=office.15)
@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ba296701faebb32696741a742b7fe01660b74c46
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302786"
 ---
-# <a name="tabledefreplicafilter-property-dao"></a>TableDef.ReplicaFilter-Eigenschaft (DAO)
+# <a name="tabledefreplicafilter-property-dao"></a>TableDef. ReplicaFilter-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert für ein **[TableDef](tabledef-object-dao.md)** -Objekt in einem Teilreplikat fest, der angibt, welche Teilmenge von Datensätzen in der Tabelle aus einem vollständigen Replikat repliziert werden soll, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).
 
@@ -83,7 +83,7 @@ Sie können einen Filter entfernen, indem Sie für die **ReplicaFilter**-Eigensc
 
 ## <a name="example"></a>Beispiel
 
-In dem folgenden Beispiel wird die ReplicaFilter-Eigenschaft verwendet, um nur Kundendatensätze aus der Region Kalifornien (CA) zu replizieren.
+The following example uses the **ReplicaFilter** property to replicate only customer records from the California region.
 
 ```vb 
 Sub ReplicaFilterX() 

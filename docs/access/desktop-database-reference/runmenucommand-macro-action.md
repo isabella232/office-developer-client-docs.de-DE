@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c2b5a19b7a92fb68dfb774afeec5cd6ba456f38d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306503"
 ---
 # <a name="runmenucommand-macro-action"></a>RunMenuCommand-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die **AusführenMenübefehl** -Aktion verwenden, um einen integrierten Microsoft Access-Befehl auszuführen.
+Sie können die **AusführenMenübefehl**-Aktion verwenden, um einen integrierten Microsoft Access-Befehl auszuführen.
 
 ## <a name="setting"></a>Einstellung
 
-Die **AusführenMenübefehl** -Aktion hat das folgende Aktionsargument.
+Die **AusführenMenübefehl**-Aktion hat das folgende Aktionsargument.
 
 <table>
 <colgroup>
@@ -41,15 +41,15 @@ Die **AusführenMenübefehl** -Aktion hat das folgende Aktionsargument.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Command</strong></p></td>
+<td><p><strong>Befehl</strong></p></td>
 <td><p>Der Name des auszuführenden Befehls. In Access zeigt das Feld <strong>Befehl</strong> die verfügbaren integrierten Befehle in alphabetischer Reihenfolge an. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können die **AusführenMenübefehl** -Aktion dazu verwenden, einen Access-Befehl aus einer benutzerdefinierten Menüleiste, einer globalen Menüleiste, einem benutzerdefinierten Kontextmenü oder einem globalen Kontextmenü auszuführen.
+Sie können die **AusführenMenübefehl**-Aktion dazu verwenden, einen Access-Befehl aus einer benutzerdefinierten Menüleiste, einer globalen Menüleiste, einem benutzerdefinierten Kontextmenü oder einem globalen Kontextmenü auszuführen.
 
 Um einen Befehl abhängig von bestimmten Bedingungen auszuführen, können Sie die **AusführenMenübefehl** -Aktion in einem Makro mit bedingten Ausdrücken verwenden.
 

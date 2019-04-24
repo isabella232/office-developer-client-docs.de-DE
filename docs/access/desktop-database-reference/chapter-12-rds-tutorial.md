@@ -1,5 +1,5 @@
 ---
-title: 'Kapitel 12: Remote Data Service (RDS)-Lernprogramm'
+title: 'Kapitel 12: Remote Data Service (RDS) Tutorial'
 TOCTitle: 'Chapter 12: RDS tutorial'
 ms:assetid: fa44a5e8-e4df-dfdd-d7a1-a870ec3cabdd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250277(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: aca77ac08688e643327bdbf229ab6c1dec40d109
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296479"
 ---
-# <a name="chapter-12-remote-data-service-rds-tutorial"></a>Kapitel 12: Remote Data Service (RDS)-Lernprogramm
+# <a name="chapter-12-remote-data-service-rds-tutorial"></a>Kapitel 12: Remote Data Service (RDS) Tutorial
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Dieses Lernprogramm zeigt, wie eine Datenquelle mit dem RDS-Programmiermodell abgefragt und aktualisiert wird. Zunächst werden die Schritte beschrieben, die für diese Aufgabe nötig sind. Das Lernprogramm wird dann in Microsoft Visual Basic Scripting Edition und Microsoft Visual J++ mit ADO für Windows Foundation Classes (ADO/WFC) wiederholt.
+Dieses Lernprogramm zeigt, wie eine Datenquelle mit dem RDS-Programmiermodell abgefragt und aktualisiert wird. Zunächst werden die Schritte beschrieben, die für diese Aufgabe nötig sind. Anschließend wird das Lernprogramm in Microsoft Visual Basic Scripting Edition und Microsoft Visual J++ mit ADO für Windows Foundation Classes (ADO/WFC) wiederholt.
 
 Aus zwei Gründen enthält dieses Lernprogramm Code in verschiedenen Sprachen:
 
@@ -42,9 +42,9 @@ Das RDS-Programmiermodell wird unten aufgeführt. Verwenden Sie es als Leitfaden
 
 - Das Serverprogramm gibt das endgültige **Recordset** -Objekt an die Clientanwendung zurück.
 
-- Auf dem Client wird das **Recordset** -Objekt optional in eine Form gebracht, die leicht von visuellen Steuerelementen verwendet werden kann.
+- Auf dem Client wird das **Recordset**-Objekt optional in eine Form gebracht, die leicht von visuellen Steuerelementen verwendet werden kann.
 
-- Änderungen am **Recordset** -Objekt werden zurück an den Server gesendet und zur Aktualisierung der Datenquelle verwendet.
+- Änderungen am **Recordset**-Objekt werden zurück an den Server gesendet und zur Aktualisierung der Datenquelle verwendet.
 
 ## <a name="step-1-specify-a-server-program"></a>Schritt 1: Angeben eines Serverprogramms
 
@@ -65,17 +65,17 @@ Sub RDSTutorial1()
 
 Wenn Sie auf dem Client*proxy* eine Methode aufrufen, wird die Methode vom tatsächlichen Programm auf dem Server ausgeführt. In diesem Schritt führen Sie eine Abfrage auf dem Server durch.
 
-### <a name="part-a"></a>Teil A
+### <a name="part-a"></a>Teil A 
 
-Wenn Sie in diesem Lernprogramm [RDSServer.DataFactory](datafactory-object-rdsserver.md) verwendet haben, wäre Weise zum Ausführen dieses Schritts, verwenden Sie die [RDS. DataControl](datacontrol-object-rds.md) Objekt. Das **RDS.DataControl** -Objekt verbindet den vorherigen Schritt des Erstellens eines Proxys mit diesem Schritt des Erstellens einer Abfrage.
+Wenn Sie in diesem Lernprogramm nicht [RDSServer.DataFactory](datafactory-object-rdsserver.md) verwenden würden, wäre die Verwendung des [RDS.DataControl](datacontrol-object-rds.md)-Objekts bei diesem Schritt am praktischsten. Das **RDS.DataControl**-Objekt verbindet den vorherigen Schritt des Erstellens eines Proxys mit diesem Schritt des Erstellens einer Abfrage.
 
-1. Legen Sie die **RDS. DataControl** -Objekts [Server](server-property-rds.md) -Eigenschaft, um zu identifizieren, wo das Serverprogramm instanziiert werden soll.
+1. Legen Sie **RDS fest. DataControl** -Objekt [Server](server-property-rds.md) Eigenschaft, um anzugeben, wo das Server Programm instanziiert werden soll.
 
-2. Legen Sie die [Connect](connect-property-rds.md) -Eigenschaft zum Angeben der Verbindungszeichenfolge für die Datenquelle zugreifen.
+2. Legen Sie die [Connect](connect-property-rds.md) -Eigenschaft fest, um die Verbindungszeichenfolge für den Zugriff auf die Datenquelle anzugeben.
 
-3. Legen Sie die [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) -Eigenschaft zum Angeben des Befehlstext der Abfrage. 
+3. Legen Sie die [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) -Eigenschaft fest, um den Abfragebefehlstext anzugeben. 
 
-4. Stellen Sie die [Refresh](refresh-method-rds.md) -Methode zum Auslösen des Serverprogramms zum Verbinden mit der Datenquelle, durch die Abfrage angegebenen Zeilen abrufen, und zurückgegeben Sie ein **Recordset** -Objekt an den Client.
+4. Geben Sie die [Refresh](refresh-method-rds.md) -Methode an, damit das Serverprogramm eine Verbindung mit der Datenquelle herstellen, von der Abfrage angegebene Zeilen abrufen und ein **Recordset** -Objekt an den Client zurückgeben kann.
 
 In diesem Lernprogramm wird zwar kein **RDS.DataControl** -Objekt verwendet, es würde jedoch folgendermaßen auftreten:
 
@@ -101,9 +101,9 @@ rs.Open "SELECT * FROM Authors","Provider=MS Remote;Data Source=Pubs;" & _
 "Remote Server=https://yourServer;Remote Provider=SQLOLEDB;" 
 ```
 
-### <a name="part-b"></a>Teil B
+### <a name="part-b"></a>Teil B 
 
-Die allgemeine-Methode des für diesen Schritt ist das **RDSServer.DataFactory** -Objekt, [Query](query-method-rds.md) -Methode aufrufen. In diese Methode wird anhand einer Verbindungszeichenfolge eine Verbindung mit der Datenquelle hergestellt, und mit einem Befehlstext werden die Zeilen angegeben, die aus der Datenquelle zurückgegeben werden sollen.
+Im Allgemeinen wird dieser Schritt ausgeführt, indem die [Query](query-method-rds.md)-Methode des **RDSServer.DataFactory**-Objekts aufgerufen wird. In diese Methode wird anhand einer Verbindungszeichenfolge eine Verbindung mit der Datenquelle hergestellt, und mit einem Befehlstext werden die Zeilen angegeben, die aus der Datenquelle zurückgegeben werden sollen.
 
 In diesem Lernprogramm wird die **Query** -Methode des **DataFactory** -Objekts verwendet:
 
@@ -118,7 +118,7 @@ Sub RDSTutorial2B()
 ... 
 ```
 
-## <a name="step-3-server-obtains-a-recordset"></a>Schritt 3: Abrufen ein Recordset-Objekts den Server 
+## <a name="step-3-server-obtains-a-recordset"></a>Schritt 3: Server Ruft ein Recordset-Objekt ab 
 
 Das Serverprogramm verwendet die Verbindungszeichenfolge und den Befehlstext, um die gewünschten Zeilen in der Datenquelle abzufragen. In der Regel wird ADO zum Abrufen dieses **Recordset** -Objekts verwendet, obwohl auch andere Datenzugriffsschnittstellen verwendet werden könnten (z. B. OLE DB).
 
@@ -135,11 +135,11 @@ Dim rs as New ADODB.Recordset
 End Function 
 ```
 
-## <a name="step-4-server-returns-the-recordset"></a>Schritt 4: Server gibt das Recordset-Objekt zurück. 
+## <a name="step-4-server-returns-the-recordset"></a>Schritt 4: Server gibt das Recordset-Objekt zurück 
 
 RDS konvertiert das abgerufene **Recordset**-Objekt in eine Form, die zurück an den Client gesendet werden kann (d. h. das **Recordset**-Objekt wird *gemarshallt*). In welcher Form das Objekt genau konvertiert und gesendet wird, hängt davon ab, ob sich der Server im Internet, dem Intranet oder einem LAN befindet oder ob es sich um eine DLL handelt. Diese Details ist jedoch nicht wichtig. Entscheidend ist, dass RDS das **Recordset**-Objekt zurück an den Client sendet.
 
-Auf dem Client wird ein **Recordset** -Objekt an eine lokale Variable zurückgegeben und dieser Variablen zugewiesen.
+Auf dem Client wird ein **Recordset**-Objekt an eine lokale Variable zurückgegeben und dieser Variablen zugewiesen.
 
 ```vb 
  
@@ -152,15 +152,15 @@ Sub RDSTutorial4()
 ... 
 ```
 
-## <a name="step-5-datacontrol-is-made-usable"></a>Schritt 5: DataControl ist verwendbar vorgenommen. 
+## <a name="step-5-datacontrol-is-made-usable"></a>Schritt 5: DataControl ist nutzbar 
 
-Das zurückgegebene **Recordset** -Objekt kann verwendet werden. Sie können es wie jedes andere **Recordset** -Objekt überprüfen, bearbeiten oder darin navigieren. Die Bearbeitungsmöglichkeiten des **Recordset** -Objekts hängen von der Umgebung ab. Visual Basic und Visual C++ besitzen visuelle Steuerelemente, die ein **Recordset** -Objekt direkt oder indirekt mithilfe eines aktivierenden Datensteuerelements verwenden können.
+Das zurückgegebene **Recordset**-Objekt kann verwendet werden. Sie können es wie jedes andere **Recordset**-Objekt überprüfen, bearbeiten oder darin navigieren. Die Bearbeitungsmöglichkeiten des **Recordset**-Objekts hängen von der Umgebung ab. Visual Basic und Visual C++ besitzen visuelle Steuerelemente, die ein **Recordset**-Objekt direkt oder indirekt mithilfe eines aktivierenden Datensteuerelements verwenden können.
 
-Wenn eine Webseite in Internet Explorer angezeigt werden, sollten Sie die **Recordset** -Objektdaten in einem visuellen Steuerelement anzuzeigen. Visuelle Steuerelemente auf einer Webseite können nicht direkt auf ein **Recordset** -Objekt zugreifen. Jedoch können sie das **Recordset** -Objekt über die [RDS. zugreifen. DataControl](datacontrol-object-rds.md). RDS **. DataControl** durch ein visuelles Steuerelement verwendet wird, wenn die [SourceRecordset](recordset-sourcerecordset-properties-rds.md) -Eigenschaft auf das **Recordset** -Objekt festgelegt ist.
+Wenn Sie beispielsweise eine Webseite in Internet Explorer anzeigen, möchten Sie möglicherweise die Daten des **Recordset** -Objekts in einem visuellen SteuerelementAnzeigen. Visuelle Steuerelemente auf einer Webseite können nicht direkt auf ein **Recordset** -Objekt zugreifen. Der Zugriff auf das **Recordset** ist jedoch über das [RDS.DataControl](datacontrol-object-rds.md)-Objekt möglich. Das **RDS.DataControl**-Objekt kann von einem visuellen Steuerelement verwendet werden, wenn seine [SourceRecordset](recordset-sourcerecordset-properties-rds.md)-Eigenschaft auf das **Recordset**-Objekt festgelegt ist.
 
-Der **DATASRC** -Parameter eines visuellen Steuerelements muss auf **RDS.DataControl** und seine **DATAFLD** -Eigenschaft auf ein **Recordset** -Objektfeld (Spalte) festgelegt sein.
+Der **DATASRC**-Parameter eines visuellen Steuerelements muss auf **RDS.DataControl** und seine **DATAFLD**-Eigenschaft auf ein **Recordset**-Objektfeld (Spalte) festgelegt sein.
 
-In diesem Lernprogramm legen Sie die **SourceRecordset** -Eigenschaft fest:
+In diesem Lernprogramm legen Sie die **SourceRecordset**-Eigenschaft fest:
 
 ```vb 
  
@@ -175,11 +175,11 @@ Sub RDSTutorial5()
 ... 
 ```
 
-## <a name="step-6-changes-are-sent-to-the-server"></a>Schritt 6: Änderungen werden an den Server gesendet.
+## <a name="step-6-changes-are-sent-to-the-server"></a>Schritt 6: Änderungen werden an den Server gesendet
 
 Beim Bearbeiten eines **Recordset** -Objekts können alle Änderungen (d. h. hinzugefügte, geänderte oder gelöschte Zeilen) zurück an den Server gesendet werden.
 
-[!HINWEIS] Das Standardverhalten von RDS kann implizit mit ADO-Objekten und dem Microsoft OLE DB-Anbieter für Remoting aufgerufen werden. Abfragen können **Recordsets**zurückgegeben und bearbeiteten **Recordsets** kann die Datenquelle aktualisieren. In diesem Lernprogramm wird RDS nicht mit ADO-Objekten aufgerufen, was folgendermaßen aussehen würde:
+[!HINWEIS] Das Standardverhalten von RDS kann implizit mit ADO-Objekten und dem Microsoft OLE DB-Anbieter für Remoting aufgerufen werden. Abfragen können **Recordsets**zurückgeben, und beArbeitete **Recordsets** können die Datenquelle aktualisieren. In diesem Lernprogramm wird RDS nicht mit ADO-Objekten aufgerufen, was folgendermaßen aussehen würde:
 
 ```vb 
  
@@ -191,9 +191,9 @@ rs.UpdateBatch ' The equivalent of SubmitChanges.
 ... 
 ```
 
-### <a name="part-a"></a>Teil A
+### <a name="part-a"></a>Teil A 
 
-In diesem Fall: Angenommen Sie, Sie nur die [RDS. verwendet haben DataControl](datacontrol-object-rds.md) zugeordnet und ein **Recordset** -Objekt ist jetzt die **RDS. DataControl**. Die Datenquelle wird durch die [SubmitChanges](submitchanges-method-rds.md)-Methode mit allen Änderungen am **Recordset** -Objekt aktualisiert, wenn die Eigenschaften [Server](server-property-rds.md) und [Connect](connect-property-rds.md) noch festgelegt sind.
+Gehen Sie in diesem Fall davon aus, dass Sie nur das [RDS.DataControl](datacontrol-object-rds.md)-Objekt verwendet haben und dass ein **Recordset**-Objekt nun mit dem **RDS.DataControl**-Objekt verknüpft ist. Die Datenquelle wird durch die [SubmitChanges](submitchanges-method-rds.md)-Methode mit allen Änderungen am **Recordset**-Objekt aktualisiert, wenn die Eigenschaften [Server](server-property-rds.md) und [Connect](connect-property-rds.md) noch festgelegt sind.
 
 ```vb 
  
@@ -212,9 +212,9 @@ DC.SubmitChanges
 ... 
 ```
 
-### <a name="part-b"></a>Teil B
+### <a name="part-b"></a>Teil B 
 
-Alternativ können Sie den Server mit dem [RDSServer.DataFactory](datafactory-object-rdsserver.md) -Objekt aktualisieren und eine Verbindung sowie ein **Recordset** -Objekt angeben.
+Sie können alternativ den Server mit dem [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekt aktualisieren und eine Verbindung sowie ein **Recordset**-Objekt angeben.
 
 ```vb 
  
@@ -235,9 +235,9 @@ End Sub
 
 ## <a name="appendix-a-rds-tutorial-vbscript"></a>Anhang A: RDS-Lernprogramm (VBScript)
 
-Dies ist die in Microsoft Visual Basic Scripting Edition geschriebene RDS-Lernprogramm. Eine Beschreibung des Zwecks dieses Lernprogramm finden Sie unter Einführung in die in diesem Thema.
+Dies ist das RDS-Lernprogramm, geschrieben in Microsoft Visual Basic Scripting Edition. Eine Beschreibung des Zwecks dieses Lernprogramms finden Sie in der Einführung zu diesem Thema.
 
-In diesem Lernprogramm [RDS. DataControl](datacontrol-object-rds.md) und [RDS. DataSpace](dataspace-object-rds.md) zur Entwurfszeit; erstellt werden d. h., werden sie mit der Object-Tags definiert. Alternativ können diese Objekte auch zur Laufzeit mit der **Server.CreateObject** -Methode erstellt werden. 
+In diesem Lernprogramm wird [RDS. DataControl](datacontrol-object-rds.md) und [RDS. DataSpace](dataspace-object-rds.md) werden zur Entwurfszeit erstellt; Das heißt, Sie werden mit Objekttags definiert. Alternativ können diese Objekte auch zur Laufzeit mit der **Server.CreateObject** -Methode erstellt werden. 
 
 Sie können das **RDS.DataControl** -Objekt beispielsweise folgendermaßen erstellen:
 
@@ -262,24 +262,24 @@ Sie können das **RDS.DataControl** -Objekt beispielsweise folgendermaßen erste
 
 ### <a name="step-1-specify-a-server-program"></a>Schritt 1: Angeben eines Serverprogramms
 
-VBScript kann es ausgeführt wird, durch Zugreifen auf die Active Server Pages verfügbare VBScript **Request.ServerVariables** -Methode den Namen der IIS-Webserver ermitteln:
+VBScript kann den Namen des IIS-Webservers ermitteln, auf dem er läuft, indem Sie auf die für Active Server Pages verfügbare VBScript-Methode **Request. ServerVariablesund** zugreifen:
 
 ```vb 
  
 "https://<%=Request.ServerVariables("SERVER_NAME")%>" 
 ```
 
-Verwenden Sie für dieses Lernprogramm jedoch den imaginären Server "YourServer".
+Verwenden Sie jedoch für dieses Lernprogramm den imaginären Server "yourServer".
 
 > [!NOTE]
-> Achten Sie auf den Datentyp von ByRef-Argumenten. In VBScript können Sie den Variablentyp nicht angeben, weshalb Sie immer einen Variant-Wert übergeben müssen. Bei Verwendung von HTTP lässt RDS das Übergeben eines Variant-Werts an eine Methode zu, die einen Nicht-Variant-Wert erwartet. Dazu müssen Sie die Variable jedoch mit der CreateObject-Methode des RDS.DataSpace-Objekts aufrufen. Wenn Sie DCOM oder einen In-Process-Server verwenden, müssen Sie die Parametertypen auf dem Client und dem Server angleichen, weil andernfalls ein Typenkonfliktfehler auftritt.
+> Pay attention to the data type of **ByRef** arguments. VBScript does not let you specify the variable type, so you must always pass a Variant. When using HTTP, RDS will allow you to pass a Variant to a method that expects a non-Variant if you invoke it with the **RDS.DataSpace** object [CreateObject](createobject-method-rds.md) method. When using DCOM or an in-process server, match the parameter types on the client and server sides or you will receive a "Type Mismatch" error.
 
 ```vb
  
 Set DF1 = DS1.CreateObject("RDSServer.DataFactory", "https://yourServer") 
 ```
 
-### <a name="step-2-part-a-invoke-the-server-program-with-rdsdatacontrol"></a>Schritt 2: Teil A: Aufrufen des Serverprogramms mit RDS. DataControl
+### <a name="step-2-part-a-invoke-the-server-program-with-rdsdatacontrol"></a>Schritt 2, Teil A: Aufrufen des Serverprogramms mit RDS. DataControl
 
 Das folgende Beispiel dient lediglich zur Veranschaulichung, dass das Standardverhalten des **RDS.DataControl** -Objekts im Ausführen der angegebenen Abfrage besteht.
 
@@ -300,16 +300,16 @@ Sub RDSTutorial2A()
 ... 
 ```
 
-Fahren Sie mit den folgenden Schritt.
+Fahren Sie mit dem nächsten Schritt fort.
 
-### <a name="step-4-server-returns-the-recordset"></a>Schritt 4: Server gibt das Recordset-Objekt zurück.
+### <a name="step-4-server-returns-the-recordset"></a>Schritt 4: Server gibt das Recordset-Objekt zurück
 
 ```vb
  
 Set RS = DF1.Query("DSN=Pubs;", "SELECT * FROM Authors") 
 ```
 
-### <a name="step-5-datacontrol-is-made-usable-by-visual-controls"></a>Schritt 5: DataControl verwendbar von visuellen Steuerelementen erfolgt
+### <a name="step-5-datacontrol-is-made-usable-by-visual-controls"></a>Schritt 5: DataControl wird von visuellen Steuerelementen verwendet.
 
 ```vb
  
@@ -318,7 +318,7 @@ Set RS = DF1.Query("DSN=Pubs;", "SELECT * FROM Authors")
 DC1.SourceRecordset = RS 
 ```
 
-### <a name="step-6-part-a-changes-are-sent-to-the-server-with-rdsdatacontrol"></a>Schritt 6, Teil A: Änderungen werden an den Server mit RDS. gesendet. DataControl
+### <a name="step-6-part-a-changes-are-sent-to-the-server-with-rdsdatacontrol"></a>Schritt 6, Teil A: Änderungen werden mit RDS an den Server gesendet. DataControl
 
 Das folgende Beispiel dient lediglich zur Veranschaulichung, wie das **RDS.DataControl** -Objekt Aktualisierungen ausführt.
 
@@ -344,7 +344,7 @@ Set DC1.SourceRecordset = RS
 DC1.SubmitChanges 
 ```
 
-### <a name="step-6-part-b-changes-are-sent-to-the-server-with-rdsserverdatafactory"></a>Schritt 6, Teil B: Änderungen werden an den Server mit "RDSServer.DataFactory" gesendet.
+### <a name="step-6-part-b-changes-are-sent-to-the-server-with-rdsserverdatafactory"></a>Schritt 6, Teil B: Änderungen werden mit RDSServer. dataFactory an den Server gesendet.
 
 ```vb
  
@@ -362,7 +362,7 @@ ADO/WFC entspricht insofern, als das [RDS.DataControl](datacontrol-object-rds.md
 
 Die **DataSpace** -Klasse implementiert eine [CreateObject](createobject-method-rds.md)-Methode, die wiederum ein [ObjectProxy](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/objectproxy-ado-wfc-syntax)-Objekt zurückgibt. Die **DataSpace** -Klasse implementiert auch die [InternetTimeout](internettimeout-property-rds.md)-Eigenschaft.
 
-Die ObjectProxy-Klasse implementiert die call-Methode, die jedes beliebige serverseitige Geschäftsobjekt aufrufen kann.
+The **ObjectProxy** class implements one method, call, which can invoke any server-side business object.
 
 ```java 
  

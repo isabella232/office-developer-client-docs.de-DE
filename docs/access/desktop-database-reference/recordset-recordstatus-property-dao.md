@@ -1,5 +1,5 @@
 ---
-title: Recordset.RecordStatus-Eigenschaft (DAO)
+title: Recordset. RecordStatus-Eigenschaft (DAO)
 TOCTitle: RecordStatus Property
 ms:assetid: 6fbd6909-6191-d7be-9a3a-1e9908dacc2b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195591(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 85790f92258b0851762337c2f74f281546e3526a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307609"
 ---
-# <a name="recordsetrecordstatus-property-dao"></a>Recordset.RecordStatus-Eigenschaft (DAO)
+# <a name="recordsetrecordstatus-property-dao"></a>Recordset. RecordStatus-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,7 +37,7 @@ Wenn ein Benutzer einen Datensatz ändert, wird die **RecordStatus**-Eigenschaft
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Eigenschaften RecordStatus und DefaultCursorDriver verwendet, um zu zeigen, wie Änderungen eines lokalen Recordset-Objekts während einer Batchaktualisierung verfolgt werden. Zum Ausführen dieser Prozedur ist die RecordStatusOutput-Funktion erforderlich.
+This example uses the **RecordStatus** and **DefaultCursorDriver** properties to show how changes to a local **Recordset** are tracked during batch updating. The RecordStatusOutput function is required for this procedure to run.
 
 ```vb 
 Sub RecordStatusX() 

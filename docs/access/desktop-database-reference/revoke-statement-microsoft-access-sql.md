@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 20122fee617597987940766a076d5f968a87c2d2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306531"
 ---
 # <a name="revoke-statement-microsoft-access-sql"></a>REVOKE-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Widerruft bestimmte Berechtigungen eines vorhandenen Benutzers oder einer Gruppe.
 
 ## <a name="syntax"></a>Syntax
 
-REVOKE {*Berechtigung*\[, *Berechtigung*,... \]} ON {Tabelle *Tabelle* | OBJECT- *Objekt*|
+REVOKE {*Privilege*\[, *Privileg*,... \]} On {Table *Tabelle* | Objekt *Objekt*|
 
-CONTAINTER *Container*} FROM {*autorisierungsname*\[, *autorisierungsname*,... \]}
+*Container*für "beflecker"**\[von {authorizationname, *authorizationname*,... \]}
 
 Die REVOKE-Anweisung enthält folgende Bestandteile:
 
@@ -39,22 +39,22 @@ Die REVOKE-Anweisung enthält folgende Bestandteile:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Argument</p></th>
+<th><p>Teil</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Berechtigung</em></p></td>
-<td><p>Der geringsten Rechte oder Berechtigungen, die widerrufen werden. Berechtigungen werden mithilfe der folgenden Schlüsselwörter angegeben: auswählen, DELETE, INSERT, UPDATE, DROP, SELECTSECURITY, UPDATESECURITY, DBPASSWORD, UPDATEIDENTITY, erstellen, SELECTSCHEMA, SCHEMA und UPDATEOWNER.</p></td>
+<td><p><em>Berechtigungen</em></p></td>
+<td><p>Die zu widerrufenden Berechtigungen. Berechtigungen werden mithilfe der folgenden Schlüsselwörter angegeben: SELECT, DELETE, INSERT, UPDATE, DROP, SELECTSECURITY, UPDATESECURITY, dbPASSWORD, UPDATEIDENTITY, CREATE, SELECTSCHEMA, SCHEMA und UPDATEOWNER.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>table</em></p></td>
 <td><p>Ein gültiger Tabellenname.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Objekt</em></p></td>
-<td><p>Dies kann jedes Objekt sein, das nicht aus einer Tabelle stammt. Ein Beispiel ist eine gespeicherte Abfrage (Sicht oder Prozedur).</p></td>
+<td><p><em>object</em></p></td>
+<td><p>Ein Objekt kann jedes Objekt umfassen, bei dem es sich nicht um eine Tabelle handelt. Beispiele für solche Objekte sind gespeicherte Abfragen, Sichten oder Prozeduren.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Container</em></p></td>
@@ -62,7 +62,7 @@ Die REVOKE-Anweisung enthält folgende Bestandteile:
 </tr>
 <tr class="odd">
 <td><p><em>Autorisierungsname</em></p></td>
-<td><p>Ein Benutzer- oder Gruppenname.</p></td>
+<td><p>Der Name eines Benutzers oder einer Gruppe.</p></td>
 </tr>
 </tbody>
 </table>

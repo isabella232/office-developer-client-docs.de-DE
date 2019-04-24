@@ -1,5 +1,5 @@
 ---
-title: Eigenschaften von Dateien (DAO)
+title: Documents-Eigenschaften (DAO)
 TOCTitle: Properties
 ms:assetid: 376c4e19-32bb-422e-b106-2818f072e316
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124341(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3aff68df09f211e4e87a9dbdf6848ddf7ec8f975
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293693"
 ---
-# <a name="documents-properties-dao"></a>Eigenschaften von Dateien (DAO)
+# <a name="documents-properties-dao"></a>Documents-Eigenschaften (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-- [Documents.Count-Eigenschaft (DAO)](documents-count-property-dao.md)
+- [Documents. Count-Eigenschaft (DAO)](documents-count-property-dao.md)
 

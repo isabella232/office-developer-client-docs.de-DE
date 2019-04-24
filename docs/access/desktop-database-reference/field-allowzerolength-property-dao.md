@@ -1,5 +1,5 @@
 ---
-title: Field.AllowZeroLength-Eigenschaft (DAO)
+title: Field. AllowZeroLength-Eigenschaft (DAO)
 TOCTitle: AllowZeroLength Property
 ms:assetid: 5103a905-9258-e088-0210-857372f41c3c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193832(v=office.15)
@@ -12,17 +12,17 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f1eb08c6079257a350a5bb92392871869e720f1b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293161"
 ---
-# <a name="fieldallowzerolength-property-dao"></a>Field.AllowZeroLength-Eigenschaft (DAO)
+# <a name="fieldallowzerolength-property-dao"></a>Field. AllowZeroLength-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt einen Wert zurück oder legt einen Wert fest, der angibt, ob eine leere Zeichenfolge ("") eine gültige Einstellung für die Value-Eigenschaft des Field-Objekts mit einem Datentyp Text oder Memo ist (gilt nur für Microsoft Access-Arbeitsbereiche).
+Sets or returns a value that indicates whether a zero-length string ("") is a valid setting for the **[Value](field-value-property-dao.md)** property of the **[Field](field-object-dao.md)** object with a Text or Memo data type (Microsoft Access workspaces only).
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,20 +53,20 @@ Nachdem die **AllowZeroLength**-Eigenschaft der **Fields**-Auflistung hinzugefü
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong> -Objekt</p></td>
+<td><p><strong>Relation</strong>-Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TableDef</strong> -Objekt</p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p><strong>TableDef</strong>-Objekt</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 </tbody>
 </table>

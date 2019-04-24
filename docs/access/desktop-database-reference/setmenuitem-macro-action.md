@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: fe61a3368813ba3420920909f818beee2029d993
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308680"
 ---
 # <a name="setmenuitem-macro-action"></a>SetMenuItem-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können die **SetzenMenüelement** -Aktion verwenden, um den Zustand des Menüelements (es kann aktiviert oder deaktiviert bzw. ausgewählt oder nicht ausgewählt sein) in benutzerdefinierten oder globalen Menüs auf der Registerkarte **Add-Ins** festzulegen.
 
@@ -29,7 +29,7 @@ Sie können die **SetzenMenüelement** -Aktion verwenden, um den Zustand des Men
 
 ## <a name="setting"></a>Einstellung
 
-Die **SetzenMenüelement** -Aktion verwendet folgende Argumente.
+Die **SetzenMenüelement**-Aktion verwendet folgende Argumente.
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ Die **SetzenMenüelement** -Aktion verwendet folgende Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Menüindex</strong></p></td>
-<td><p>Der Index des Menüs, das den Befehl enthält, für den Sie den Status festlegen möchten. Geben Sie einen Ganzzahlwert, beginnend bei 0, für den Index des gewünschten Menüs in der benutzerdefinierten oder globalen Menü aus. Geben Sie den Indexwert im Feld <strong>Menüindex</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators. Der Index ist relativ zu der Position im Menümakro für das benutzerdefinierte oder globale Menü (die Position des dieses Menü <strong>HinzufügenMenü</strong> -Aktion im Menümakro, beginnend bei 0). Die Anzeige des Menüs möglicherweise etwas unterschiedlich sein, da Sie bedingte Ausdrücke im Menümakro verwenden können, um benutzerdefinierter Menüelemente anzeigen oder ausblenden. Dies ist ein erforderliches Argument. Wenn Sie ein Menü mit diesem Argument auswählen und die Argumente <strong>Befehlsindex</strong> und <strong>Unterbefehlsindex</strong> leer lassen, können Sie aktivieren oder deaktivieren den Namen des Menüs selbst. Sie können nicht jedoch markieren oder Markierung aufheben einer Menüname (Access ignoriert die <strong>Häkchen</strong> <strong>versehen</strong> und Einstellungen für das Argument <strong>Flag</strong> für die Menünamen von).</p></td>
+<td><p>Der Index des Menüs, das den Befehl enthält, für den Sie den Status festlegen möchten. Geben Sie einen ganzzahligen Wert beginnend bei 0 für den Index des gewünschten Menüs im benutzerdefinierten oder im globalen Menü ein. Geben Sie den Indexwert im Feld <strong>Menü Index</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Der Index ist relativ zur Position des Menüs im Menü Makro für das benutzerdefinierte oder das globale Menü (die Position der AddMenu- <strong></strong> Aktion dieses Menüs im Menü Makro, gezählt von 0). Die Anzeige des Menüs kann etwas anders aussehen, da Sie bedingte Ausdrücke im Menü Makro verwenden können, um benutzerdefinierte Menüelemente auszublenden oder anzuzeigen. Dies ist ein erforderliches Argument. Wenn Sie ein Menü mit diesem Argument auswählen und die Argumente für den <strong>Befehlsindex</strong> und den unter <strong>Befehl</strong> leer lassen, können Sie den Menünamen selbst aktivieren oder deaktivieren. Sie können jedoch keinen Menünamen aktivieren oder deaktivieren (Access ignoriert die Einstellungen zum <strong>überprüfen</strong> und unchecken für das <strong>Flag</strong> -Argument für Menünamen). <strong></strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Befehlsindex</strong></p></td>
@@ -63,11 +63,11 @@ Die **SetzenMenüelement** -Aktion verwendet folgende Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **SetzenMenüelement** -Aktion kann nur in Kombination mit einem benutzerdefinierten oder globalen Menü verwendet werden. Ist in dem aktiven Fenster kein entsprechendes Menü enthalten, wird durch die Ausführung eines Makros, in dem die **SetzenMenüelement** -Aktion enthalten ist, ein Laufzeitfehler verursacht.
+Die **SetzenMenüelement**-Aktion kann nur in Kombination mit einem benutzerdefinierten oder globalen Menü verwendet werden. Ist in dem aktiven Fenster kein entsprechendes Menü enthalten, wird durch die Ausführung eines Makros, in dem die **SetzenMenüelement**-Aktion enthalten ist, ein Laufzeitfehler verursacht.
 
 Sie können diese Aktion verwenden, um den Zustand der Befehle und Unterbefehle in Menüs festzulegen. Die Aktion kann aber nicht für Unterbefehle von Unterbefehlen verwendet werden.
 
-Um die **SetzenMenüelement** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen, müssen Sie die **SetMenuItem** -Methode des **DoCmd** -Objekts verwenden.
+Um die **SetzenMenüelement**-Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen, müssen Sie die **SetMenuItem**-Methode des **DoCmd**-Objekts verwenden.
 

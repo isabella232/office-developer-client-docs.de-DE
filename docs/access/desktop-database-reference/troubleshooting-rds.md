@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9f62bb4578cfcad978bf596648ad040552edd1a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306279"
 ---
 # <a name="troubleshooting-rds"></a>Problembehandlung von RDS
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Finden Sie in diesem Abschnitt für bestimmte Fehler oder Probleme mit RDS-Lösungen:
+In diesem Abschnitt finden Sie Lösungen für bestimmte Fehler oder Probleme mit RDS:
 
 - [Konfigurieren von RDS unter Windows 2000](configuring-rds-on-windows-2000.md)
-- [Deadlocks bei Lesen wiederholbare Isolationsstufe](deadlocks-with-read-repeatable-isolation-level.md)
+- [Deadlocks mit Read REPEATABLE Isolation Level](deadlocks-with-read-repeatable-isolation-level.md)
 - [Sicherstellen, dass ausreichend Speicherplatz für TempDB vorhanden ist](ensuring-sufficient-tempdb-space.md)
-- [Internetserverfehler: Zugriff verweigert](internet-server-error-access-denied.md)
+- [Internet Serverfehler: Zugriff verweigert](internet-server-error-access-denied.md)
 - [Minimieren der Speicherverwendung der Protokolldatei](minimizing-log-file-space-usage.md)
-- [RDS-Fehlermeldung "Stream Not Read"](rds-returns-stream-not-read-error.md)
+- [RDS gibt den Fehler „Stream nicht gelesen“ zurück](rds-returns-stream-not-read-error.md)
 
 

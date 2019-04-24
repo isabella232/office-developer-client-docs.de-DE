@@ -1,5 +1,5 @@
 ---
-title: SynchronizeTypeEnum (Aufzählung) (DAO)
+title: SynchronizeTypeEnum-Aufzählung (DAO)
 TOCTitle: SynchronizeTypeEnum Enumeration
 ms:assetid: f9546171-283d-e9bd-5178-41bd4f41c9a6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837004(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: acd4ca20e9b6e17f28a17b012bb182060471e949
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308449"
 ---
-# <a name="synchronizetypeenum-enumeration-dao"></a>SynchronizeTypeEnum (Aufzählung) (DAO)
+# <a name="synchronizetypeenum-enumeration-dao"></a>SynchronizeTypeEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Hiermit geben Sie zusammen mit der **Synchronize**-Methode an, welche Synchronisierungsart auf zwei Replikate angewendet werden soll.
 

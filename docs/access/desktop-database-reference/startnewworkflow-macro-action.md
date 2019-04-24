@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 1e37d72754531fc4dd51427eefb355a057d08073
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306398"
 ---
 # <a name="startnewworkflow-macro-action"></a>StartNewWorkflow-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können die **StartenNeuerWorkflow** -Aktion verwenden, um einen neuen Workflow für ein Element in einer verknüpften Microsoft SharePoint Foundation-Liste zu starten.
 
 ## <a name="setting"></a>Einstellung
 
-Die **StartenNeuerWorkflow** -Aktion hat das folgende Argument.
+Die **StartenNeuerWorkflow**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -43,13 +43,13 @@ Die **StartenNeuerWorkflow** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Datensatznummer</strong></p></td>
-<td><p>Die Position des Elements in der SharePoint Foundation-Liste, beginnend mit <strong>1</strong> für das erste Element in der Liste, <strong>2</strong> für das zweite Element, und so weiter. Sie können auch einen Ausdruck für dieses Argument eingeben.</p></td>
+<td><p>Die Position des Elements in der SharePoint Foundation-Liste, beginnend mit <strong>1</strong> für das erste Element in der Liste, <strong>2</strong> für das zweite Element usw. Sie können für dieses Argument auch einen Ausdruck eingeben.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
   - Die **StartenNeuerWorkflow** -Aktion öffnet das Dialogfeld **Neuen Workflow starten**, in dem alle Workflows angezeigt werden, die für das angegebene Element zur Verfügung stehen. Ein Workflow muss für die Liste in SharePoint Foundation definiert sein, bevor Sie diese Methode verwenden können.
 

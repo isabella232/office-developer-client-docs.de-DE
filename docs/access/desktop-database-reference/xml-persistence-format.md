@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e7825d55c6f0c2f900f61a325265dce048f965e5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308281"
 ---
 # <a name="xml-persistence-format"></a>XML-Speicherformat
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="xml-persistence-format"></a>XML-Speicherformat
 
@@ -64,9 +64,9 @@ xmlns:z="#RowsetSchema">
 
 Das Schema zeigt die Deklarationen von Namespaces, den Schemaabschnitt und den Datenabschnitt. Der Schemaabschnitt enthält Definitionen für Row, ShipperID, CompanyName und Phone.
 
-Schemadefinitionen entsprechen der Spezifikation für die XML-Daten und können vollständig überprüft werden (obwohl Überprüfung in Internet Explorer 5 nicht ausgeführt wird). Sie können diese Spezifikation [W3C XMLData Hinweis](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)anzeigen. XML-Daten sind derzeit das einzige unterstützte Schemaformat für Permanenz von **Recordsets** .
+Schemadefinitionen entsprechen der XML-Datenspezifikation und können vollständig überprüft werden (die Überprüfung erfolgt jedoch nicht in Internet Explorer 5). Sie können diese Spezifikation unter W3C-XMLDATA- [Hinweis](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)anzeigen. XML-Daten sind derzeit das einzige unterstützte Schemaformat zum Speichern von **Recordset**-Objekten.
 
-Der Datenabschnitt weist drei Zeilen mit Informationen zu Lieferanten. Für ein leeres Rowset kann der Datenabschnitt möglicherweise leer ist, aber die `<rs:data>` Tags müssen vorhanden sein. Ohne Daten könnten Sie einfach als das Tag die Kurzform schreiben `<rs:data>`. Jedes Tag mit dem Präfix "Rs" gibt an, dass es in den Namespace definiert durch Urn: Schemas-Microsoft-Com:rowset. Die vollständige Definition dieses Schemas ist im Anhang zu diesem Dokument definiert.
+Der Datenabschnitt weist drei Zeilen mit Informationen zu Lieferanten auf. Bei einem leeren Rowset ist der Datenabschnitt möglicherweise leer, die `<rs:data>` Tags müssen jedoch vorhanden sein. Ohne Daten können Sie die Tag-Kurzschrift einfach `<rs:data>`schreiben. Jedes Tag mit dem Präfix "rs" gibt an, dass es sich im durch urn:schemas-microsoft-com:rowset definierten Namespace befindet. Die vollständige Definition dieses Schemas finden Sie im Anhang dieses Dokuments.
 
 ## <a name="xml-persistence-format"></a>XML-Speicherformat
 
@@ -114,7 +114,7 @@ xmlns:z="#RowsetSchema">
 
 Das Schema zeigt die Deklarationen von Namespaces, den Schemaabschnitt und den Datenabschnitt. Der Schemaabschnitt enthält Definitionen für Row, ShipperID, CompanyName und Phone.
 
-Schemadefinitionen entsprechen der Spezifikation für die XML-Daten und können vollständig überprüft werden (obwohl Überprüfung in Internet Explorer 5 nicht ausgeführt wird). Sie können diese Spezifikation [W3C XMLData Hinweis](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)anzeigen. XML-Daten sind derzeit das einzige unterstützte Schemaformat für Permanenz von **Recordsets** .
+Schemadefinitionen entsprechen der XML-Datenspezifikation und können vollständig überprüft werden (die Überprüfung erfolgt jedoch nicht in Internet Explorer 5). Sie können diese Spezifikation unter W3C-XMLDATA- [Hinweis](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)anzeigen. XML-Daten sind derzeit das einzige unterstützte Schemaformat zum Speichern von **Recordset**-Objekten.
 
-Der Datenabschnitt weist drei Zeilen mit Informationen zu Lieferanten. Für ein leeres Rowset kann der Datenabschnitt möglicherweise leer ist, aber die `<rs:data>` Tags müssen vorhanden sein. Ohne Daten könnten Sie einfach als das Tag die Kurzform schreiben `<rs:data>`. Jedes Tag mit dem Präfix "Rs" gibt an, dass es in den Namespace definiert durch Urn: Schemas-Microsoft-Com:rowset. Die vollständige Definition dieses Schemas ist im Anhang zu diesem Dokument definiert.
+Der Datenabschnitt weist drei Zeilen mit Informationen zu Lieferanten auf. Bei einem leeren Rowset ist der Datenabschnitt möglicherweise leer, die `<rs:data>` Tags müssen jedoch vorhanden sein. Ohne Daten können Sie die Tag-Kurzschrift einfach `<rs:data>`schreiben. Jedes Tag mit dem Präfix "rs" gibt an, dass es sich im durch urn:schemas-microsoft-com:rowset definierten Namespace befindet. Die vollständige Definition dieses Schemas finden Sie im Anhang dieses Dokuments.
 

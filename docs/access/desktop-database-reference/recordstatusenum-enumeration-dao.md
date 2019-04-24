@@ -1,5 +1,5 @@
 ---
-title: RecordStatusEnum (Aufzählung) (DAO)
+title: RecordStatusEnum-Aufzählung (DAO)
 TOCTitle: RecordStatusEnum Enumeration
 ms:assetid: bf4492f2-8d8f-f10f-7a3c-d6296d2ce96b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822784(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: eb7bffaf91db9e1170702d2e36393da669dbe0c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309234"
 ---
-# <a name="recordstatusenum-enumeration-dao"></a>RecordStatusEnum (Aufzählung) (DAO)
+# <a name="recordstatusenum-enumeration-dao"></a>RecordStatusEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Hiermit geben Sie zusammen mit der **RecordStatus**-Eigenschaft den Aktualisierungsstatus des aktuellen Datensatzes an, wenn dieser Teil einer Batchaktualisierung ist.
 
@@ -56,7 +56,7 @@ Hiermit geben Sie zusammen mit der **RecordStatus**-Eigenschaft den Aktualisieru
 <td><p>Der Datensatz wurde mit der <strong>AddNew</strong>-Methode eingefügt, aber noch nicht in die Datenbank eingefügt.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Wert dbRecordUnmodified</p></td>
+<td><p>dbRecordUnmodified</p></td>
 <td><p>0</p></td>
 <td><p>(Standard) Der Datensatz wurde nicht geändert, oder er wurde erfolgreich aktualisiert.</p></td>
 </tr>

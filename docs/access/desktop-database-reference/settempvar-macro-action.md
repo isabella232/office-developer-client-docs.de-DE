@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b630304774e521162687d4c78a6a97cf18ddb419
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306521"
 ---
 # <a name="settempvar-macro-action"></a>SetTempVar-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 
-Sie können die **FestlegenTempVar** -Aktion verwenden, um eine temporäre Variable zu erstellen und auf einen bestimmten Wert festzulegen. Die Variable kann dann als Bedingung oder Argument in nachfolgenden Aktionen verwendet werden. Sie können die Variable auch in einem anderen Makro, in einer Ereignisprozedur oder in einem Formular bzw. Bericht verwenden.
+Sie können die **FestlegenTempVar**-Aktion verwenden, um eine temporäre Variable zu erstellen und auf einen bestimmten Wert festzulegen. Die Variable kann dann als Bedingung oder Argument in nachfolgenden Aktionen verwendet werden. Sie können die Variable auch in einem anderen Makro, in einer Ereignisprozedur oder in einem Formular bzw. Bericht verwenden.
 
 ## <a name="setting"></a>Einstellung
 
@@ -49,17 +49,17 @@ Die **FestlegenTempVar** -Aktion verwendet die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Ausdruck</strong></p></td>
-<td><p>Geben Sie einen Ausdruck, der verwendet wird, um den Wert für diese temporäre Variable festzulegen. Setzen Sie den Ausdruck mit dem Gleichheitszeichen (<strong>=</strong>) anmelden. Klicken Sie auf die <strong>Generator</strong> -Schaltfläche <img src="media/access-build-button.gif" title="buildbut_ZA06047218" alt="buildbut_ZA06047218" /> , um das Argument mithilfe des Ausdrucks-Generators festzulegen.</p></td>
+<td><p>Geben Sie einen Ausdruck ein, der zum Festlegen des Werts für diese temporäre Variable verwendet wird. Stellen Sie dem Ausdruck nicht das Gleichheitszeichen (<strong>=</strong>) voran. Sie können auf die <strong>Generator</strong> -Schaltfläche <img src="media/access-build-button.gif" title="buildbut_ZA06047218" alt="buildbut_ZA06047218" /> Verwenden Sie zum Festlegen dieses Arguments den Ausdrucks-Generator.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Es können bis zu 255 temporäre Variablen gleichzeitig definiert sein. Eine temporäre Variable, die Sie nicht entfernen, verbleibt bis zum Schließen der Datenbank im Speicher. Es empfiehlt sich, temporäre Variablen zu entfernen, die nicht mehr benötigt werden. Wenn Sie eine einzelne temporäre Variable entfernen möchten, verwenden Sie die **[EntfernenTempVar](removetempvar-macro-action.md)** -Aktion. Legen Sie deren Argument auf den Namen der temporären Variable fest, die entfernt werden soll. Falls Sie mit mehreren temporären Variablen arbeiten und alle gleichzeitig entfernen möchten, verwenden Sie die **EntfernenAlleTempVar** -Aktion.
 
-- Temporäre Variablen sind global. Nachdem eine temporäre Variable erstellt wurde, können Sie es in einer Ereignisprozedur einem Visual Basic für Applikationen (VBA) Modul, einer Abfrage oder einem Ausdruck verweisen. Angenommen, wenn Sie eine temporäre Variable mit dem Namen *Meinevar*erstellt, können die Variable als Steuerelementinhalt für ein Textfeld Sie mithilfe der folgenden Syntax:
+- Temporäre Variablen sind Global. Nachdem eine temporäre Variable erstellt wurde, können Sie in einer Ereignisprozedur, einem VBA-Modul (Visual Basic für Applikationen), einer Abfrage oder einem Ausdruck darauf verweisen. Wenn Sie beispielsweise eine temporäre Variable mit dem Namen *MeineVar*erstellt haben, können Sie die Variable als Steuerelementquelle für ein Textfeld mithilfe der folgenden Syntax verwenden:
     
   `=[TempVars]![MyVar]`
     
@@ -91,12 +91,12 @@ Das folgende Makro veranschaulicht, wie Sie mithilfe der **FestlegenTempVar** -A
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>FestlegenTempVar</strong></p></td>
-<td><p><strong>Name</strong>: Meinevar<strong>Ausdruck</strong>: InputBox (&quot;Geben Sie eine Zahl ungleich NULL.&quot;)</p></td>
+<td><p><strong>Name</strong>: MeineVar<strong>Ausdruck</strong>: InputBox (&quot;geben Sie eine Zahl ungleich NULL&quot;ein.)</p></td>
 </tr>
 <tr class="even">
-<td><p>[TempVars]! [Meinevar] &lt; &gt;0</p></td>
+<td><p>[TempVars]! MeineVar &lt; &gt;0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Meldung</strong>: =&quot;eingegebene &quot; &amp; [TempVars]! [Meinevar] &amp; &quot;. &quot; <strong>Signalton</strong>: <strong>YesType</strong>: <strong>Informationen</strong></p></td>
+<td><p><strong>Meldung</strong>: =&quot;Sie haben &quot; &amp; [TempVars] eingegeben! MeineVar &amp; &quot;. &quot; <strong>Beep</strong>: <strong>jatyp</strong>: <strong>Informationen</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

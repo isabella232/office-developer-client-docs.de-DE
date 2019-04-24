@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e26bc59221b4ff55c943b6a9a0c87ac5c0dd936b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301190"
 ---
 # <a name="property-object-dao"></a>Property-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein **Property**-Objekt stellt eine integrierte oder benutzerdefinierte Eigenschaft eines DAO-Objekts dar.
 
@@ -51,18 +51,18 @@ Das **Property**-Objekt besitzt auch vier integrierte Eigenschaften:
 
 Wenn Sie auf ein integriertes **Property**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:
 
-- * Objekt ***. Eigenschaften**(0)
+- * Object ***. Eigenschaften**(0)
 
-- Objekt ****. Eigenschaften**("* Name *")
+- *Objekt ***. Properties**("* Name *")
 
-- Objekt ****. Eigenschaften**\!* Namen *\]
+- *Objekt ***. **Eigenschaften\!* Name *\]
 
 Bei einer integrierten Eigenschaft können Sie auch diese Syntax verwenden:
 
 - - *Objekt*. *Name*
 
 > [!NOTE]
-> Für eine benutzerdefinierte Eigenschaft müssen Sie die vollständige *Objekt ***verwenden. Eigenschaften**("* Name *") Syntax.
+> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige *Objekt * verwenden **. Eigenschaften**("* Name *")-Syntax.
 
 Sie können mit denselben Syntaxformen auf die **Value**-Eigenschaft eines **Property**-Objekts verweisen. Der Kontext des Verweises entscheidet, ob Sie sich auf das **Property**-Objekt selbst oder auf die **Value**-Eigenschaft des **Property**-Objekts beziehen.
 

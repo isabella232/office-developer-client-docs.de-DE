@@ -1,5 +1,5 @@
 ---
-title: Signalton-Makroaktion (Access PC-Datenbank-Referenz)
+title: Signalton-Makroaktion (Access Desktop Database Reference)
 TOCTitle: Beep macro action
 ms:assetid: 5ca1600f-7934-3b3d-19fd-f305cda0e5d8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194572(v=office.15)
@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 96051d8389f4b8ba7005c75ccdb5e2780ba17138
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296864"
 ---
 # <a name="beep-macro-action"></a>Beep-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die **Signalton** -Aktion verwenden, um einen Signalton über den Lautsprecher des Computers auszugeben.
+Sie können die **Signalton**-Aktion verwenden, um einen Signalton über den Lautsprecher des Computers auszugeben.
 
 ## <a name="setting"></a>Einstellung
 
-Die **Signalton** -Aktion hat keine Argumente.
+Die **Signalton**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können die **Signalton** -Aktion verwenden, um auf folgende Begebenheiten hinzuweisen:
+Sie können die **Signalton**-Aktion verwenden, um auf folgende Begebenheiten hinzuweisen:
 
   - Wichtige Bildschirmänderungen sind aufgetreten.
 

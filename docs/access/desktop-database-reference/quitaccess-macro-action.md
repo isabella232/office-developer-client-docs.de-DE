@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 424b2b2cab9bc4272052a201350a0cc2ab297b8c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302814"
 ---
 # <a name="quitaccess-macro-action"></a>QuitAccess-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können die **BeendenAccess** -Aktion verwenden, um Microsoft Access zu beenden. Für das Speichern von Datenbankobjekten vor dem Beenden von Access kann die **BeendenAccess** -Aktion außerdem mindestens eine Option festlegen.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
-Die **BeendenAccess** -Aktion hat das folgende Argument.
+Die **BeendenAccess**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -45,15 +45,15 @@ Die **BeendenAccess** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Optionen</strong></p></td>
-<td><p>Gibt an, was mit nicht gespeicherten Objekten geschieht, wenn Sie Access beenden. Klicken Sie im Feld Optionen im Bereich Aktionsargumente des Bereichs Makro-Generator auf Nachfragen (um Dialogfelder anzuzeigen, die Sie fragen, ob Sie ein Objekt speichern möchten), Alles speichern (um alle Objekte zu speichern, ohne anhand von Dialogfeldern gefragt zu werden) oder auf Beenden (um zu beenden, ohne die Objekte zu speichern). Die Standardeinstellung ist Alles speichern.</p></td>
+<td><p>Gibt an, was mit nicht gespeicherten Objekten geschieht, wenn Sie den Zugriff beenden. Klicken Sie auf <strong>Aufforderung</strong> (um Dialogfelder anzuzeigen, die Fragen, ob jedes Objekt gespeichert werden soll), <strong>Speichern Sie alle</strong> (zum Speichern aller Objekte ohne Aufforderung durch Dialogfelder), oder <strong>Beenden</strong> Sie (ohne Speichern von Objekten) im Feld <strong>Optionen</strong> in der <strong>Aktion </strong>Abschnitt "Argumente" des Bereichs "Makro-Generator". Der Standardwert ist <strong>Save all</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Access führt keine Aktionen aus, die in einem Makro auf die **BeendenAccess** -Aktion folgen.
+Access führt keine Aktionen aus, die in einem Makro auf die **BeendenAccess**-Aktion folgen.
 
 Sie können diese Aktion verwenden, um Access ohne Aufforderungen in den Dialogfeldern **Speichern** zu beenden, indem Sie einen benutzerdefinierten Menübefehl oder eine Schaltfläche in einem Formular verwenden. Unter Umständen verfügen Sie über ein Masterformular, das Sie zum Anzeigen der Objekte in Ihrem benutzerdefinierten Arbeitsbereich verwenden. Dieses Formular enthält möglicherweise eine Schaltfläche **Beenden**, mit der ein Makro ausgeführt wird, das die **BeendenAccess** -Aktion enthält, deren Argument **Optionen** auf **Alles speichern** festgelegt ist.
 

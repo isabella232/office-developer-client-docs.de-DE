@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: db9fa4fccc4f3d13849f34c157f2ea07cc3f171d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293427"
 ---
 # <a name="errors-collection-ado"></a>Errors-Auflistung (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Enthält alle [Error](error-object-ado.md)-Objekte, die als Reaktion auf einen einzelnen anbieterbezogenen Fehler erstellt wurden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jeder Vorgang, an dem ADO-Objekte beteiligt sind, kann mindestens einen Anbieterfehler generieren. Sobald ein Fehler auftritt, kann mindestens ein **Error** -Objekt in der **Errors** -Auflistung des [Connection](connection-object-ado.md)-Objekts eingefügt werden. Wenn ein anderer ADO-Vorgang einen Fehler erzeugt, wird die **Errors** -Auflistung gelöscht, und die neue Gruppe der **Error** -Objekte kann in die **Errors** -Auflistung übernommen werden.
 

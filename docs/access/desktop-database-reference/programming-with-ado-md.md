@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e78cdc00780701e6a7ecf891a1421ff4f8576408
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301302"
 ---
-# <a name="programming-with-ado-md"></a>Programmieren mit ADO MD
+# <a name="programming-with-ado-md"></a>Programmierung mit ADO MT
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Zur Verwendung von ADO MD mit einem Entwicklungstool sollten Sie einen Verweis zur ADO MD-Typbibliothek einrichten. Die Beschreibung der ADO MD-Bibliothek finden Sie unter "Microsoft ActiveX Data Objects (Multi-dimensional) Library". Der Dateiname der ADO MD-Bibliothek ist msadomd.dll. Die Programm-ID (ProgID) lautet "ADOMD". Weitere Informationen zum Erstellen von Verweisen zu Bibliotheken finden Sie in der Dokumentation Ihres Entwicklungstools.
+To use ADO MD with your development tool, you should establish a reference to the ADO MD type library. The description of the ADO MD library is Microsoft ActiveX Data Objects (Multi-dimensional) Library. The ADO MD library filename is msadomd.dll, and the program ID (ProgID) is "ADOMD". For more information about establishing references to libraries, see the documentation of your development tool.
 

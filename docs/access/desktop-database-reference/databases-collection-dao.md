@@ -1,5 +1,5 @@
 ---
-title: Databases-Auflistung (DAO)
+title: DataBases-Auflistung (DAO)
 TOCTitle: Databases Collection
 ms:assetid: 988ae6f5-ec15-cd1c-191d-f295624425f4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197944(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: dbaa0fe7aaa50c8aec582e2f03cd2849268816b9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294645"
 ---
-# <a name="databases-collection-dao"></a>Databases-Auflistung (DAO)
+# <a name="databases-collection-dao"></a>DataBases-Auflistung (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine **Databases**-Auflistung enthält alle offenen **Database**-Objekte, die in einem **Workspace**-Objekt erstellt oder geöffnet wurden.
 
@@ -28,11 +28,11 @@ In einem Microsoft Access-Arbeitsbereich handelt es sich bei der Einstellung der
 
 Der Verweis auf ein **Database**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:
 
-- **Databases**(0)
+- **Datenbanken** 0
 
 - **Datenbanken** ("*Name*")
 
-- **Datenbanken**\!\[*Namen*\]
+- ****\!Daten\[*Bankname*\]
 
 > [!NOTE]
 > [!HINWEIS] Sie können dieselbe Datenquelle oder Datenbank mehrmals öffnen, wodurch Duplikatnamen in der **Databases**-Auflistung erstellt werden. Sie sollten Objektvariablen **Database**-Objekte zuweisen und mit Variablennamen auf sie verweisen.

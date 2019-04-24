@@ -1,5 +1,5 @@
 ---
-title: Recordset2.RecordCount-Eigenschaft (DAO)
+title: Recordset2. RecordCount-Eigenschaft (DAO)
 TOCTitle: RecordCount Property
 ms:assetid: 77852966-11e9-1773-6e58-53927b84c03b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196071(v=office.15)
@@ -12,17 +12,17 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c23de433f26b5a54b3fee5cc69f67a07b53f8a3b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309156"
 ---
-# <a name="recordset2recordcount-property-dao"></a>Recordset2.RecordCount-Eigenschaft (DAO)
+# <a name="recordset2recordcount-property-dao"></a>Recordset2. RecordCount-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt die Anzahl der Datensätze zurück, auf die in einem **[Recordset](recordset-object-dao.md)** -Objekt zugegriffen wird, oder die Gesamtzahl der Datensätze in einem **Recordset** -Objekt vom "table"-Typ oder in einem **[TableDef](tabledef-object-dao.md)** -Objekt zurück. Schreibgeschütztes **Long** -Objekt.
+Returns the number of records accessed in a **[Recordset](recordset-object-dao.md)** object, or the total number of records in a table-type **Recordset** object. or **[TableDef](tabledef-object-dao.md)** object. Read-only **Long**.
 
 ## <a name="syntax"></a>Syntax
 
@@ -32,22 +32,22 @@ Gibt die Anzahl der Datensätze zurück, auf die in einem **[Recordset](recordse
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **RecordCount** -Eigenschaft, um herauszufinden, auf wie viele Datensätze in einem **Recordset** - oder **TableDef** -Objekt zugegriffen wurde. Die **RecordCount** -Eigenschaft gibt nicht an, wie viele Datensätze in einem Dynaset, Snapshot oder vorwärts Typ **Recordset** -Objekt enthalten sind, bis alle Datensätze zugegriffen wurde. Sobald auf den letzten Datensatz zugegriffen wurde, gibt die **RecordCount** -Eigenschaft die Gesamtzahl ungelöschter Datensätze im **Recordset** - oder **TableDef** -Objekt an. Um den Zugriff auf den letzten Datensatz zu erzwingen, verwenden Sie die **[MoveLast](recordset2-movelast-method-dao.md)** -Methode für das **Recordset** -Objekt. Sie können auch eine SQL- **Count** -Funktion verwenden, um die ungefähre Anzahl von Datensätzen zu bestimmen, die die Abfrage zurückgibt.
+Verwenden Sie die **RecordCount**-Eigenschaft, um herauszufinden, auf wie viele Datensätze in einem **Recordset**- oder **TableDef**-Objekt zugegriffen wurde. Die **RecordCount**-Eigenschaft gibt erst an, wie viele Datensätze in einem **Recordset**-Objekt vom "dynaset"-, "snapshot"- oder "forward-only"-Typ enthalten sind, wenn auf alle Datensätze zugegriffen wurde. Sobald auf den letzten Datensatz zugegriffen wurde, gibt die **RecordCount**-Eigenschaft die Gesamtzahl ungelöschter Datensätze im **Recordset**- oder **TableDef**-Objekt an. To force the last record to be accessed, use the **[MoveLast](recordset2-movelast-method-dao.md)** method on the **Recordset** object. You can also use an SQL **Count** function to determine the approximate number of records your query will return.
 
 > [!NOTE]
 > [!HINWEIS] Die Verwendung der **MoveLast**-Methode zum Auffüllen eines neu geöffneten **Recordset**-Objekts hat negative Auswirkungen auf die Leistung. Sofern beim Öffnen eines **Recordset**-Objekts nicht sofort ein genauer **RecordCount**-Wert erforderlich ist, sollte das **Recordset**-Objekt mit anderen Codeteilen aufgefüllt werden, bevor die **RecordCount**-Eigenschaft geprüft wird.
 
-Wenn Ihre Anwendung Datensätze in einem **Recordset** -Objekt vom "dynaset"-Typ löscht, nimmt der Wert der **RecordCount** -Eigenschaft ab. Datensätze, die von anderen Benutzern gelöscht werden, werden allerdings erst von der **RecordCount** -Eigenschaft wiedergegeben, wenn der aktuelle Datensatz auf einem gelöschten Datensatz positioniert wird. Wenn Sie eine Transaktion ausführen, die sich auf die Einstellung der **RecordCount** -Eigenschaft auswirkt und Sie dann ein Rollback für die Transaktion ausführen, gibt die **RecordCount** -Eigenschaft nicht die tatsächliche Anzahl verbleibender Datensätze wieder.
+As your application deletes records in a dynaset-type **Recordset** object, the value of the **RecordCount** property decreases. However, records deleted by other users aren't reflected by the **RecordCount** property until the current record is positioned to a deleted record. If you execute a transaction that affects the **RecordCount** property setting and you subsequently roll back the transaction, the **RecordCount** property won't reflect the actual number of remaining records.
 
-Änderungen in den zugrunde liegenden Tabellen wirkt sich nicht auf die **RecordCount** -Eigenschaft eines **Recordset** -Objekts Snapshot oder vorwärts – Typ aus.
+Die **RecordCount**-Eigenschaft eines **Recordset**-Objekts vom "snapshot"- oder "forward-only"-Typ ist nicht von den Änderungen in zugrunde liegenden Tabellen betroffen.
 
-Die **RecordCount**-Eigenschaft eines **Recordset**- oder **TableDef**-Objekts ohne Datensätze hat den Wert 0.
+Ein **Recordset**- oder **TableDef**-Objekt ohne Datensätze hat eine **RecordCount**-Eigenschaftseinstellung von "0".
 
 Bei der Verwendung der **[Requery](recordset2-requery-method-dao.md)** -Methode für ein **Recordset**-Objekt wird die **RecordCount**-Eigenschaft zurückgesetzt, so als würde die Abfrage erneut ausgeführt.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel veranschaulicht die **RecordCount**-Eigenschaft für unterschiedliche Typen von **Recordsets**-Objekten vor und nach ihrer Auffüllung.
+Dieses Beispiel demonstriert die **RecordCount**-Eigenschaft mit verschiedenen **Recordset**-Typen vor und nach der Auffüllung.
 
 ```vb
     Sub RecordCountX() 

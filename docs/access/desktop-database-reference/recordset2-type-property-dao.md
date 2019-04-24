@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Type-Eigenschaft (DAO)
+title: Recordset2. Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 9bec543e-7f59-ea59-dc79-41d0e08b5ab6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198080(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 6646658daf482373ef8b62f6d3420b1d11152cac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307175"
 ---
-# <a name="recordset2type-property-dao"></a>Recordset2.Type-Eigenschaft (DAO)
+# <a name="recordset2type-property-dao"></a>Recordset2. Type-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Schreibgeschützter **Integer**-Wert.
 
@@ -48,13 +48,13 @@ Ein **Recordset**-Objekt kann folgende Einstellungen und Rückgabewerte haben.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Übergeben</strong></p></td>
+<td><p><strong>dbOpenable</strong></p></td>
 <td><p>Tabelle (nur Microsoft Access-Arbeitsbereiche)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbOpenDynamic</strong></p></td>
 <td><p>Dynamisch (nur ODBCDirect-Arbeitsbereiche)</p>
-<p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
+<p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenDynaset</strong></p></td>
@@ -66,7 +66,7 @@ Ein **Recordset**-Objekt kann folgende Einstellungen und Rückgabewerte haben.
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenForwardOnly</strong></p></td>
-<td><p>Vorwärtsgerichtet</p></td>
+<td><p>Vorwärts</p></td>
 </tr>
 </tbody>
 </table>

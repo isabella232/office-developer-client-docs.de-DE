@@ -1,5 +1,5 @@
 ---
-title: Arbeitsbereichsmitglieder (DAO)
+title: Member Workspace (DAO)
 TOCTitle: Workspace Members
 ms:assetid: 13ac7d41-1b25-20d2-5c85-0f21bfd38328
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845437(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8a2105c13f5f7ce9a75e7e18e20477d8b283543a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302593"
 ---
-# <a name="workspace-members-dao"></a>Arbeitsbereichsmitglieder (DAO)
+# <a name="workspace-members-dao"></a>Member Workspace (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. Es enthält geöffnete Datenbanken und stellt Mechanismen für gleichzeitige Transaktionen und in Microsoft Access Arbeitsbereiche für den sicheren Arbeitsgruppen-Support bereit.
 
@@ -53,7 +53,7 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-openconnection-method-dao.md">OpenConnection</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Öffnet ein <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt in einer ODBC-Datenquelle (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
@@ -84,7 +84,7 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="workspace-connections-property-dao.md">Verbindungen</a></strong></p></td>
-<td><p>Gibt eine <strong>Connections</strong>-Auflistung zurück, die die aktuellen Verbindungen im angegebenen <strong>Workspace</strong>-Objekt darstellt. Schreibgeschützt</p></td>
+<td><p>Gibt eine <strong>Connections</strong>-Auflistung zurück, die die aktuellen Verbindungen im angegebenen <strong>Workspace</strong>-Objekt darstellt. Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="workspace-databases-property-dao.md">Datenbanken</a></strong></p></td>
@@ -92,7 +92,7 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-defaultcursordriver-property-dao.md">DefaultCursorDriver</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Mit dieser Eigenschaft wird der Typ des Cursortreibers festgelegt oder zurückgegeben, der für die mit der <strong><a href="dbengine-openconnection-method-dao.md">OpenConnection</a></strong> - oder <strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> -Methode erstellte Verbindung verwendet wird (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">

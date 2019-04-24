@@ -1,5 +1,5 @@
 ---
-title: Recordset.BatchCollisionCount-Eigenschaft (DAO)
+title: Recordset. BatchCollisionCount-Eigenschaft (DAO)
 TOCTitle: BatchCollisionCount Property
 ms:assetid: 9d166463-8313-c0f5-8389-5d5ad933eb33
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198240(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: d0c4af9744accd21a91dca2676a08cad3d1cc7e7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300630"
 ---
-# <a name="recordsetbatchcollisioncount-property-dao"></a>Recordset.BatchCollisionCount-Eigenschaft (DAO)
+# <a name="recordsetbatchcollisioncount-property-dao"></a>Recordset. BatchCollisionCount-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,11 +35,11 @@ Diese Eigenschaft gibt die Anzahl von Datensätzen an, bei denen Konflikte oder 
 
 Wenn Sie die **[Bookmark](recordset-object-dao.md)** -Eigenschaft des aktiven **[Recordset](recordset-bookmark-property-dao.md)** -Objekts auf Textmarkenwerte im **BatchCollisions**-Array festlegen, können Sie zu jedem Datensatz wechseln, bei dem die letzte **[Update](recordset-update-method-dao.md)** -Batchoperation nicht abgeschlossen werden konnte.
 
-Nachdem die Datensätze, die einen Konflikt verursacht haben, korrigiert wurden, kann erneut eine **Update**-Methode im Batchmodus aufgerufen werden. DAO versucht eine weitere Batchaktualisierung, und die **BatchCollisions**-Eigenschaft spiegelt die Datensatzgruppe wider, die beim zweiten Versuch nicht verarbeitet werden konnte. Alle Datensätze, die in der vorherigen Versuch erfolgreich abgeschlossen werden nicht in der aktuellen Versuch gesendet, da sie nun eine **[RecordStatus](recordset-recordstatus-property-dao.md)** -Eigenschaft der Wert DbRecordUnmodified aufweisen. Dieser Vorgang wird so lange fortgesetzt, bis keine Konflikte mehr auftreten oder bis Sie die Aktualisierung abbrechen und die Ergebnismenge schließen.
+After the collision records are corrected, a batch-mode **Update** method can be called again. At this point DAO attempts another batch update, and the **BatchCollisions** property again reflects the set of records that failed the second attempt. Any records that succeeded in the previous attempt are not sent in the current attempt, because they now have a **[RecordStatus](recordset-recordstatus-property-dao.md)** property of dbRecordUnmodified. This process can continue as long as collisions occur, or until you abandon the updates and close the result set.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel verwendet die **BatchCollisionCount**-Eigenschaft und die **Update**-Methode und zeigt eine Batchaktualisierung, bei der Konflikte durch Erzwingen der Aktualisierung gelöst werden.
+In diesem Beispiel wird mithilfe der **BatchCollisionCount**-Eigenschaft und der **Update**-Methode die Batchaktualisierung veranschaulicht. Konflikte werden durch das Erzwingen der Batchaktualisierung gelöst.
 
 ```vb 
 Sub BatchX() 

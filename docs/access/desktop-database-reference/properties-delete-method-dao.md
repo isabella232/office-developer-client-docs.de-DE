@@ -1,5 +1,5 @@
 ---
-title: Properties.Delete-Methode (DAO)
+title: Properties. Delete-Methode (DAO)
 TOCTitle: Delete Method
 ms:assetid: dc2493c6-337c-cb56-7c0d-36762528fa43
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835356(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8bc822abe52b8bc9e71a275f0fd9e5006099317a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301252"
 ---
-# <a name="propertiesdelete-method-dao"></a>Properties.Delete-Methode (DAO)
+# <a name="propertiesdelete-method-dao"></a>Properties. Delete-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Löscht das angegebene **Property**-Objekt aus der **Properties**-Auflistung.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Löschen Sie die (***Name***)
+*Ausdruck* . Delete (***Name***)
 
 *Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.
 
@@ -38,7 +38,7 @@ Löscht das angegebene **Property**-Objekt aus der **Properties**-Auflistung.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

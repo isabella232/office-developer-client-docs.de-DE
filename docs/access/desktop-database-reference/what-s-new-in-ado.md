@@ -1,5 +1,5 @@
 ---
-title: Was ist neu in ActiveX Data Objects (ADO)
+title: Neuigkeiten in ActiveX Data Objects (ADO)
 TOCTitle: What's new in ADO
 ms:assetid: fd3d0f9c-e9df-d130-13e3-757620e9400c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 593daf08da1b4ce435d17f2a6deedfa3e89dbd32
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302611"
 ---
 # <a name="whats-new-in-ado"></a>Neuigkeiten in ADO
 
-**Betrifft**: Access 2013, Office 2013 
+**Gilt für**: Access 2013, Office 2013 
  
 Die folgenden neuen Features und die folgende erweiterte Dokumentation sind in der Version ADO 2.5 enthalten. In dieser Liste werden ADO, ADO MD und ADOX behandelt.
 
-## <a name="new-features"></a>Neue features
+## <a name="new-features"></a>Neue Features
 
-- **[Datensätze und Datenströme](chapter-10-records-and-streams.md)**
+- **[Datensätze und Streams](chapter-10-records-and-streams.md)**
 
-  Diese Version von ADO enthält das [Record](record-object-ado.md) -Objekt, das dargestellt und Dinge wie Verzeichnisse und Dateien in einem Dateisystem oder Ordner und Nachrichten in einem e-Mail-System verwalten kann. Ein **Datensatz** kann auch eine Zeile in einem [Recordset-Objekt](recordset-object-ado.md)darstellen, auch wenn Objekte **Record** und **Recordset** über verschiedene Methoden und Eigenschaften haben.
+  In dieser Release von ADO wird das [Record](record-object-ado.md) -Objekt eingeführt, das Dinge wie Verzeichnisse und Dateien in einem Dateisystem sowie Ordner und Nachrichten in einem e-Mail-System darstellen und verwalten kann. Durch ein **Record**-Objekt kann auch eine Zeile in einem [Recordset](recordset-object-ado.md)-Objekt dargestellt werden, obwohl die Objekte **Record** und **Recordset** über unterschiedliche Methoden und Eigenschaften verfügen.
 
   Das neue [Stream](stream-object-ado.md)-Objekt ermöglicht das Lesen, Schreiben und Verwalten des binären Byte- oder Textdatenstroms, aus dem ein Datei- oder Nachrichtendatenstrom besteht.
 
@@ -36,7 +36,7 @@ Die folgenden neuen Features und die folgende erweiterte Dokumentation sind in d
 
 - **[Spezielle Felder für Dokumentquellenanbieter](records-and-provider-supplied-fields.md)**
 
-  Eine spezielle Klasse von Anbietern von Anbietern von *Quelle des Dokuments* aufgerufen werden Ordner und Dokumente verwaltet. Wenn ein **Record** -Objekt ein Dokument stellt oder ein **Recordset** -Objekt einen Ordner von Dokumenten stellt, füllt der Dokumentquellenanbieter diese Objekte mit einem eindeutigen Satz von Feldern, die Merkmale des Dokuments beschrieben. Diese Felder bilden eine *Ressource* **oder ein **Recordset**** .
+  Mit einer speziellen Anbieterklasse, den *Dokumentquellenanbietern*, werden Ordner und Dokumente verwaltet. Wenn durch ein **Record**-Objekt ein Dokument dargestellt oder durch ein **Recordset**-Objekt ein Dokumentordner dargestellt wird, werden diese Objekte vom Dokumentquellenanbieter mit einem eindeutigen Satz Felder aufgefüllt, in dem die Merkmale des Dokuments beschrieben sind. Diese Felder stellen einen *Ressourcen* **Eintrag** oder ein **Recordset**dar.
 
 ## <a name="new-reference-topics"></a>Neue Referenzthemen
 
@@ -57,35 +57,35 @@ Die folgenden neuen Eigenschaften sind in dieser Version enthalten.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="charset-property-ado.md">CharSet</a></p></td>
+<td><p><a href="charset-property-ado.md">Charset</a></p></td>
 <td><p>Der Zeichensatz wird angegeben, in den der Inhalt eines <strong>Stream</strong>-Textobjekts übersetzt werden soll.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="eos-property-ado.md">EOS</a></p></td>
-<td><p>Gibt an, ob sich die aktuelle Position am Ende des Datenstroms befindet.</p></td>
+<td><p>Es wird angegeben, ob sich die aktuelle Position am Ende des Datenstroms befindet.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lineseparator-property-ado.md">LineSeparator</a></p></td>
-<td><p>Gibt das binäre Zeichen an, das als Zeilentrennzeichen in <strong>Stream</strong>-Textobjekten verwendet wird.</p></td>
+<td><p>Das als Linientrennzeichen in <strong>Stream</strong>-Textobjekten zu verwendende binäre Zeichen wird angegeben.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="mode-property-ado.md">Mode</a></p></td>
-<td><p>Zeigt die verfügbaren Berechtigungen zum Ändern von Daten in einem <strong>Connection</strong>-, <strong>Record</strong>- oder <strong>Stream</strong>-Objekt an.</p></td>
+<td><p>Es werden die verfügbaren Berechtigungen zum Ändern von Daten in einem <strong>Connection</strong>-, <strong>Record</strong>- oder <strong>Stream</strong>-Objekt angegeben.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="parenturl-property-ado.md">ParentURL</a></p></td>
-<td><p>Gibt die Zeichenfolge einer absoluten URL an, die auf das übergeordnete <strong>Record</strong>-Objekt des aktuellen <strong>Record</strong> -Objekts verweist.</p></td>
+<td><p>Eine absolute URL-Zeichenfolge wird angegeben, die auf das übergeordnete <strong>Record</strong>-Objekt des aktuellen <strong>Record</strong>-Objekts zeigt.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="position-property-ado.md">Position</a></p></td>
-<td><p>Gibt die aktuelle Position in einem <strong>Stream</strong>-Objekt an.</p></td>
+<td><p>Die aktuelle Position in einem <strong>Stream</strong>-Objekt wird angegeben.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="recordtype-property-ado.md">RecordType</a></p></td>
-<td><p>Gibt den Typ des <strong>Record</strong>-Objekts an.</p></td>
+<td><p>Der Typ eines <strong>Record</strong>-Objekts wird angegeben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream">Größe</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream">Size</a></p></td>
 <td><p>Die Größe des Datenstroms wird als Byteanzahl angegeben.</p></td>
 </tr>
 <tr class="odd">
@@ -94,10 +94,10 @@ Die folgenden neuen Eigenschaften sind in dieser Version enthalten.
 </tr>
 <tr class="even">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>Gibt für alle entsprechenden Objekte an, ob deren Status als geöffnet oder geschlossen gilt. Gibt für alle entsprechenden Objekte, die eine asynchrone Methode ausführen, den aktuellen Status des Objekts an: Verbindungsherstellung (connecting), Ausführen (executing) oder Abrufen (retrieving).</p></td>
+<td><p>Für alle entsprechenden Objekte wird angegeben, ob der Status des Objekts open oder closed entspricht. Für alle entsprechenden Objekte, durch die eine asynchrone Methode ausgeführt wird, wird angegeben, ob der aktuelle Status des Objekts connecting, executing oder retrieving entspricht.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="type-property-ado-stream.md">Typ</a></p></td>
+<td><p><a href="type-property-ado-stream.md">Type</a></p></td>
 <td><p>Der Typ der im <strong>Stream</strong>-Objekt enthaltenen Daten (Binärdaten oder Textdaten) wird angegeben.</p></td>
 </tr>
 </tbody>
@@ -125,7 +125,7 @@ Die folgenden neuen Methoden sind in dieser Version enthalten.
 </tr>
 <tr class="even">
 <td><p><a href="copyto-method-ado.md">CopyTo</a></p></td>
-<td><p>Kopiert die angegebene Anzahl von Zeichen oder Bytes (abhängig vom <strong>Typ</strong>) im <strong>Stream</strong> - <strong>Objekt</strong> in ein anderes <strong>Stream</strong> -Objekt.</p></td>
+<td><p>Kopiert die angegebene Anzahl von Zeichen oder bytes (abhängig vom <strong>Typ</strong>) im Stream- <strong></strong> <strong>Objekt</strong> in ein anderes <strong>Stream</strong> -Objekt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="deleterecord-method-ado.md">DeleteRecord</a></p></td>
@@ -153,35 +153,35 @@ Die folgenden neuen Methoden sind in dieser Version enthalten.
 </tr>
 <tr class="odd">
 <td><p><a href="open-method-ado-stream.md">Open</a></p></td>
-<td><p>Öffnet ein <strong>Stream</strong>-Objekt, um Datenströme von Binär- oder Textdaten zu ändern.</p></td>
+<td><p>Ein <strong>Stream</strong>-Objekt zum Ändern von Datenströmen von Binär- oder Textdaten wird geöffnet.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="read-method-ado.md">Lesen</a></p></td>
-<td><p>Liest eine angegebene Anzahl von Bytes aus einem binären <strong>Stream</strong>-Objekt.</p></td>
+<td><p>Eine angegebene Anzahl von Bytes aus einem binären <strong>Stream</strong>-Objekt wird abgerufen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="readtext-method-ado.md">ReadText</a></p></td>
-<td><p>Liest eine angegebene Anzahl von Zeichen aus einem <strong>Stream</strong>-Textobjekt.</p></td>
+<td><p>Eine angegebene Anzahl von Zeichen aus einem <strong>Stream</strong>-Textobjekt wird abgerufen.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="savetofile-method-ado.md">SaveToFile</a></p></td>
-<td><p>Speichert den binären Inhalt eines <strong>Stream</strong>-Objekts in eine Datei.</p></td>
+<td><p>Der Binärinhalt eines <strong>Stream</strong>-Objekts wird in einer Datei gespeichert.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="seteos-method-ado.md">SetEOS</a></p></td>
-<td><p>Legt die Position fest, bei der es sich um das Ende des Datenstroms handelt.</p></td>
+<td><p>Die Position, die das Ende des Datenstroms darstellt, wird festgelegt.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="skipline-method-ado.md">SkipLine</a></p></td>
 <td><p>Beim Lesen eines <strong>Stream</strong>-Textobjekts wird eine gesamte Zeile übersprungen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="write-method-ado.md">Write</a>-Ereignis</p></td>
-<td><p>Schreibt Binärdaten in ein <strong>Stream</strong>-Objekt.</p></td>
+<td><p><a href="write-method-ado.md">Write</a></p></td>
+<td><p>Binärdaten werden in ein <strong>Stream</strong>-Objekt geschrieben.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="writetext-method-ado.md">WriteText</a></p></td>
-<td><p>Schreibt eine angegebene Textzeichenfolge in ein <strong>Stream</strong>-Objekt.</p></td>
+<td><p>Eine angegebene Textzeichenfolge wird in ein <strong>Stream</strong>-Objekt geschrieben.</p></td>
 </tr>
 </tbody>
 </table>
@@ -189,15 +189,15 @@ Die folgenden neuen Methoden sind in dieser Version enthalten.
 
 ## <a name="new-and-enhanced-documentation"></a>Neue und erweiterte Dokumentation
 
-- **[Code-Beispiele](ado-code-examples.md)**
+- **[Code Beispiel Themen](ado-code-examples.md)**
 
-  In den Beispielen wurden erweitert um Codebeispiele in Microsoft Visual C++ und Microsoft Visual J++ geschriebene enthalten. Sie können diese Codebeispiele kopieren und in den Editor einfügen.
+  Die Beispiele wurden erweitert und enthalten Codebeispiele, die in Microsoft Visual C++ und Microsoft Visual J++ geschrieben wurden. Sie können diese Codebeispiele kopieren und in den Editor einfügen.
 
-- **[Anhang a: Anbieter](appendix-a-providers.md)**
+- **[Anbieter Themen](appendix-a-providers.md)**
 
   Es ist ein neues Thema enthalten, in dem die Verwendung von ADO mit dem [OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) erläutert wird.
 
 - **[Programmieren mit ADO](appendix-c-programming-with-ado.md)**
 
-  Dieser neue Abschnitt enthält Tipps und Tricks für das Verwenden von ADO mit verschiedenen Programmiersprachen. Sie enthält die vorhandenen Syntaxindizes für die Visual C++-Erweiterungen für ADO und ADO/WFC-als auch neue Informationen speziell für Entwickler, die mit Microsoft Visual Basic, Microsoft Visual Basic Scripting Edition, Microsoft JScript, Microsoft Visual C++, oder Microsoft Visual J++.
+  Dieser neue Abschnitt enthält Tipps und Tricks für das Verwenden von ADO mit verschiedenen Programmiersprachen. Sie enthält die vorhandenen Syntax Indizes für die Visual C++-Erweiterungen für ADO und ADO/WFC sowie neue spezifische Informationen für Entwickler, die Microsoft Visual Basic, Microsoft Visual Basic Scripting Edition, Microsoft JScript, Microsoft Visual C++ oder Microsoft Visual J++.
 

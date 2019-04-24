@@ -1,5 +1,5 @@
 ---
-title: Recordset2.BatchCollisionCount-Eigenschaft (DAO)
+title: Recordset2. BatchCollisionCount-Eigenschaft (DAO)
 TOCTitle: BatchCollisionCount Property
 ms:assetid: 997dfbb3-673c-8813-f51b-ab8d95093c4f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197961(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 33650b9fdbaf7fbc9266c8c778199e1138cd5b21
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307483"
 ---
-# <a name="recordset2batchcollisioncount-property-dao"></a>Recordset2.BatchCollisionCount-Eigenschaft (DAO)
+# <a name="recordset2batchcollisioncount-property-dao"></a>Recordset2. BatchCollisionCount-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,7 +35,7 @@ Nachdem die Datensätze, die einen Konflikt verursacht haben, korrigiert wurden,
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel verwendet die **BatchCollisionCount**-Eigenschaft und die **Update**-Methode und zeigt eine Batchaktualisierung, bei der Konflikte durch Erzwingen der Aktualisierung gelöst werden.
+In diesem Beispiel wird mithilfe der **BatchCollisionCount**-Eigenschaft und der **Update**-Methode die Batchaktualisierung veranschaulicht. Konflikte werden durch das Erzwingen der Batchaktualisierung gelöst.
 
 ```vb 
 Sub BatchX() 

@@ -1,5 +1,5 @@
 ---
-title: Database.Version-Eigenschaft (DAO)
+title: Database. Version-Eigenschaft (DAO)
 TOCTitle: Version Property
 ms:assetid: 40faaa0c-e764-e968-f606-7e06ded80c3f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192887(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 41b408f63522902fd1d4f806090eef7563a3492a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294652"
 ---
-# <a name="databaseversion-property-dao"></a>Database.Version-Eigenschaft (DAO)
+# <a name="databaseversion-property-dao"></a>Database. Version-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 In einem Microsoft Access-Arbeitsbereich gibt diese Eigenschaft die Version der Microsoft Jet- oder Microsoft Access-Datenbank-Engine zurück, mit der die Datenbank erstellt wurde. Schreibgeschützter **String**-Wert.
 
@@ -30,7 +30,7 @@ In einem Microsoft Access-Arbeitsbereich gibt diese Eigenschaft die Version der 
 
 Der Rückgabewert ist ein String-Datentyp, der als Versionsnummer im folgenden Format ausgewertet wird.
 
-- Der Microsoft Access-Arbeitsbereich stellt die Versionsnummer in der Form major.minor dar, z. B. 3.0. Die Produktversionsnummer besteht aus der Versionsnummer (3), einem Punkt und einer Releasenummer (0).
+- Microsoft Access-Arbeitsbereich stellt die Versionsnummer im Format "*Major. Minor*" dar. For example, "3.0". The product version number consists of the version number (3), a period, and the release number (0).
 
 Die folgende Tabelle zeigt, welche Version der Datenbank-Engine in verschiedenen Versionen von Microsoft-Produkten enthalten waren.
 
@@ -58,49 +58,49 @@ Die folgende Tabelle zeigt, welche Version der Datenbank-Engine in verschiedenen
 <td><p>Microsoft Jet</p></td>
 <td><p>1.0 (1992)</p></td>
 <td><p>1.0</p></td>
-<td><p>n/v</p></td>
 <td><p>Nicht zutreffend</p></td>
-<td><p>n/v</p></td>
+<td><p>Nicht zutreffend</p></td>
+<td><p>Nicht zutreffend</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Jet</p></td>
 <td><p>1.1 (1993)</p></td>
 <td><p>1.1</p></td>
-<td><p>3.0</p></td>
-<td><p>n/v</p></td>
-<td><p>n/v</p></td>
+<td><p>3,0</p></td>
+<td><p>Nicht zutreffend</p></td>
+<td><p>Nicht zutreffend</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Jet</p></td>
 <td><p>2.0 (1994)</p></td>
 <td><p>2.0</p></td>
-<td><p>n/v</p></td>
 <td><p>Nicht zutreffend</p></td>
-<td><p>n/v</p></td>
+<td><p>Nicht zutreffend</p></td>
+<td><p>Nicht zutreffend</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Jet</p></td>
 <td><p>2.5 (1995)</p></td>
-<td><p>n/v</p></td>
+<td><p>Nicht zutreffend</p></td>
 <td><p>4.0 (16-Bit)</p></td>
-<td><p>n/v</p></td>
-<td><p>n/v</p></td>
+<td><p>Nicht zutreffend</p></td>
+<td><p>Nicht zutreffend</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Jet</p></td>
 <td><p>3.0 (1995)</p></td>
-<td><p>' 95 (7.0)</p></td>
+<td><p>‘ 95 (7.0)’</p></td>
 <td><p>4.0 (32-Bit)</p></td>
-<td><p>' 95 (7.0)</p></td>
-<td><p>4.x</p></td>
+<td><p>‘ 95 (7.0)’</p></td>
+<td><p>4. x</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Jet</p></td>
 <td><p>3.5 (1996)</p></td>
-<td><p>' 97 (8.0)</p></td>
-<td><p>5.0</p></td>
-<td><p>' 97 (8.0)</p></td>
-<td><p>5.0</p></td>
+<td><p>‘ 97 (8.0)’</p></td>
+<td><p>5,0</p></td>
+<td><p>‘ 97 (8.0)’</p></td>
+<td><p>5,0</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Jet</p></td>

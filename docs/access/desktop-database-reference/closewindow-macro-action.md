@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 4397846abdc0d10b6bfa0e6a1eb5c0c435fc862a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296290"
 ---
 # <a name="closewindow-macro-action"></a>CloseWindow-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die **Fensterschließen** -Aktion können Sie um eine angegebene Access Dokumentregisterkarte oder die aktive Dokumentregisterkarte zu schließen, wenn keines angegeben ist.
+Sie können die **Fenster schließen** -Aktion verwenden, um entweder eine angegebene Zugriffs Dokumentregisterkarte oder die aktive Dokumentregisterkarte zu beenden, wenn keine angegeben ist.
 
 ## <a name="setting"></a>Einstellung
 
-Die **FensterSchließen** -Aktion hat die folgenden Argumente.
+Die **FensterSchließen**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -43,9 +43,7 @@ Die **FensterSchließen** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Objekttyp</strong></p></td>
-<td><p>Der Typ des Objekts, dessen Dokumentregisterkarte Sie schließen möchten. Klicken Sie im Feld Objekttyp im Abschnitt Aktionsargumente des Bereichs Makro-Generator auf Tabelle, Abfrage, Formular, Bericht, Makro, Modul, Datenzugriffsseite, Serversicht, Diagramm, Gespeicherte Prozedur oder Funktion. Lassen Sie dieses Argument leer, um die aktive Dokumentregisterkarte auszuwählen. 
-
-</p>
+<td><p>Der Objekttyp, dessen Dokumentregisterkarte Sie beenden möchten. Klicken Sie im Feld <strong>Objekttyp</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs <strong>Makro-Generator</strong> auf <strong>Tabelle</strong>, <strong>Abfrage</strong>, <strong>Formular</strong>, <strong>Bericht</strong>, <strong>Makro</strong>, <strong>Datenzugriffsseite</strong>, <strong>Serversicht</strong>, <strong>Diagramm</strong>, <strong>Gespeicherte Prozedur</strong> oder <strong>Funktion</strong>. Lassen Sie dieses Argument leer, um die Registerkarte aktives Dokument auszuwählen.</p>
 
 > [!NOTE]
 > Wenn Sie ein Modul im Visual Basic-Editor schließen, müssen Sie **Modul** im Argument **Objekttyp** verwenden.
@@ -65,7 +63,7 @@ Die **FensterSchließen** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **FensterSchließen** -Aktion funktioniert für alle Datenbankobjekte, die der Benutzer explizit öffnen oder schließen kann. Diese Aktion wirkt sich genauso aus, als wenn Sie ein Objekt auswählen und es dann schließen, indem Sie mit der rechten Maustaste auf die Dokumentregisterkarte des Objekts klicken und dann auf **Schließen** im Kontextmenü klicken, oder indem Sie auf die Schaltfläche **Schließen** für das Objekt klicken.
 

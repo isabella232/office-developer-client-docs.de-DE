@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2d1fb13d04691b7bf5e0aafcc484cfc4f471e1e1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295492"
 ---
 # <a name="copyobject-macro-action"></a>CopyObject-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können die **KopierenObjekt** -Aktion verwenden, um das angegebene Datenbankobjekt in eine andere Access-Datenbank oder innerhalb derselben Datenbank oder desselben Access-Projekts unter einem neuen Namen zu kopieren. Sie können ein vorhandenes Objekt beispielsweise in eine andere Datenbank kopieren oder dort sichern oder schnell durch einige Änderungen ein ähnliches Objekt erstellen.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
-Die **KopierenObjekt** -Aktion hat die folgenden Argumente.
+Die **KopierenObjekt**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -45,9 +45,7 @@ Die **KopierenObjekt** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Zieldatenbank</strong></p></td>
-<td><p>Ein gültiger Pfad und Dateiname für die Zieldatenbank. Geben Sie den Pfad und den Dateinamen im Feld Zieldatenbank im Abschnitt Aktionsargumente des Bereichs Makro-Generator ein. Lassen Sie dieses Argument leer, wenn die aktuelle Datenbank ausgewählt werden soll. 
-
-</p><p><strong>Hinweis</strong>: dieses Argument ist nur in der Umgebung für Access-Datenbank verfügbar. Wenn Sie diese Aktion in einer Umgebung für Access-Projekt (ADP) verwenden, muss das Argument Zieldatenbank leer sein.</p>
+<td><p>Ein gültiger Pfad und Dateiname für die Zieldatenbank. Geben Sie den Pfad und den Dateinamen im Feld <strong>Zieldatenbank</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Lassen Sie dieses Argument leer, wenn Sie die aktuelle Datenbank auswählen möchten.</p><p><strong>Hinweis</strong>: dieses Argument ist nur in der Access-Datenbankumgebung verfügbar. Wenn diese Aktion in einer Access-Projektumgebung (ADP) verwendet wird, muss das Argument Zieldatenbank leer sein.</p>
 <p>Wenn Sie ein Makro, das die <strong>KopierenObjekt</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen und dieses Argument leer lassen, wird dieses Objekt von Microsoft Office Access 2007 in die Bibliotheksdatenbank kopiert.</p></td>
 </tr>
 <tr class="even">
@@ -60,17 +58,17 @@ Die **KopierenObjekt** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Objektname (Herkunft)</strong></p></td>
-<td><p>Der Name des zu kopierenden Objekts. Das Feld <strong>Objektname Quelle</strong> zeigt alle Objekte in der Datenbank an, die durch das Argument <strong>Objekttyp Quelle</strong> . Klicken Sie im Feld <strong>Objektname Quelle</strong> auf das zu kopierende Objekt. Lassen Sie dieses Argument leer, wenn Sie das Argument <strong>Objekttyp Quelle</strong> leer lassen. Wenn Sie ein Makro ausführen, das die <strong>KopierenObjekt</strong>-Aktion in einer Bibliotheksdatenbank enthält, sucht Access zunächst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Objekt mit diesem Namen.</p></td>
+<td><p>Der Name des Objekts, das Sie kopieren möchten. In der Datenbank des Typs, der mit dem Argument <strong>Objekttyp (Herkunft)</strong> ausgewählt wurde, werden im Feld <strong>Objektname (Herkunft)</strong> alle Objekte angezeigt. Klicken Sie im Feld <strong>Objektname (Herkunft)</strong> auf das zu kopierende Objekt. Wenn Sie das Argument <strong>Objekttyp (Herkunft)</strong> leer lassen, müssen Sie auch dieses Argument leer lassen. Wenn Sie ein Makro ausführen, das die <strong>KopierenObjekt</strong>-Aktion in einer Bibliotheksdatenbank enthält, sucht Access zunächst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Objekt mit diesem Namen.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie müssen für diese Aktion für mindestens eines der Argumente **Zieldatenbank** und **Neuer Name** einen Wert eingeben.
 
-Wenn Sie die Argumente Objekttyp (Herkunft) und Objektname (Herkunft) leer lassen, wird das im Navigationsbereich ausgewählte Objekt von Access kopiert. Zum Auswählen eines Objekts im Navigationsbereich können Sie die AuswählenObjekt-Aktion verwenden, wobei das Argument Im Navigationsbereich auf Ja festgelegt sein muss.
+If you leave the **Source Object Type** and **Source Object Name** arguments blank, Access copies the object selected in the Navigation Pane. To select an object in the Navigation Pane, you can use the **SelectObject** action with the In Navigation Pane argument set to **Yes**.
 
 Die **KopierenObjekt** -Aktion ist mit dem manuellen Ausführen der folgenden Schritte vergleichbar:
 

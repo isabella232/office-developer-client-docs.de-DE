@@ -8,39 +8,39 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 201b284a56fbd3030b41a95424b41c73ee13e385
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308645"
 ---
 # <a name="showallrecords-macro-action"></a>ShowAllRecords-Makroaktion
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
-Sie können die **AnzeigenAlleDatensätze** -Aktion verwenden, um alle zugewiesenen Filter aus der aktiven Tabelle, Abfrage-Resultset oder Formular zu entfernen und alle Datensätze in der Tabelle oder des Resultsets oder alle Datensätze in des Formulars zugrunde liegenden Tabelle oder Abfrage anzeigen.
+Mit der **AnzeigenAlleDatensätze** -Aktion können Sie alle angewendeten Filter aus der aktiven Tabelle, dem abfrageergebnissatz oder dem Formular entfernen und alle Datensätze in der Tabelle oder im Resultset oder alle Datensätze in der zugrunde liegenden Tabelle oder Abfrage des Formulars anzeigen.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
-Die **AnzeigenAlleDatensätze** -Aktion verfügt nicht über keine Argumente.
+Die **AnzeigenAlleDatensätze** -Aktion hat keine Argumente.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können diese Aktion verwenden, um sicherzustellen, dass alle Datensätze (einschließlich aller veränderten oder neuen Datensätze) für eine Tabelle, Abfrage-Resultset oder Formular angezeigt werden. Diese Aktion bewirkt, dass eine erneute Abfrage der Datensätze in einem Formular oder Unterformular.
+Mit dieser Aktion können Sie sicherstellen, dass alle Datensätze (einschließlich geänderter oder neuer Datensätze) für eine Tabelle, einen abfrageergebnissatz oder ein Formular angezeigt werden. Durch diese Aktion wird eine Neuabfrage der Datensätze für ein Formular oder ein Unterformular verursacht.
 
-Sie können diese Aktion auch verwenden, um alle Filter zu entfernen, der mit der **ApplyFilter** -Aktion, dem Befehl **Filter** auf der Registerkarte **Start** **Filternamen** oder der **Where-Bedingung** -Argument der **ÖffnenFormular** -Aktion angewendet wurde.
+Sie können diese Aktion auch verwenden, um alle Filter zu entfernen, die mit der **ApplyFilter** -Aktion angewendet wurden, der Befehl **Filter** auf der Registerkarte **Start** oder das Argument **Filter Name** oder **Where Condition** der OpenForm-Aktion. ****
 
-Diese Aktion hat dieselbe Wirkung wie das durch Klicken auf der Registerkarte **Start** auf **Filter ein/aus** oder mit der rechten Maustaste des gefilterten Felds und in der Formularansicht, Entwurfsansicht oder Datenblattansicht auf **Filter löschen aus** .
+Diese Aktion hat dieselbe Wirkung wie das Klicken auf **Filter umschalten** auf der Registerkarte **Start** oder mit der rechten Maustaste auf das gefilterte Feld und das Klicken auf **Filter aus...** in der Formular-, Layout-oder Datenblattansicht.
 
-Führen Sie die **AnzeigenAlleDatensätze** -Aktion in einem Visual Basic für Applikationen (VBA) Modul mit **der ShowAllRecords** -Methode des **DoCmd** -Objekts.
+Verwenden Sie die **AnzeigenAlleDatensätze** -Methode des **DoCmd** -Objekts, um die **ANZEIGENALLEDATENSÄTZE** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 
 ## <a name="example"></a>Beispiel
 
 **Anwenden eines Filters mithilfe eines Makros**
 
-Das folgende Makro enthält eine Reihe von Aktionen, die jeweils die Datensätze nach einem Formular Kunden-Telefonnummern filtern. Es zeigt die Verwendung der Aktionen AnwendenFilter, AnzeigenAlleDatensätze und GeheZuSteuerelement. Außerdem zeigt es die Verwendung von Bedingungen, mit denen ermittelt wird, welche Umschaltfläche in einer Optionsgruppe im Formular ausgewählt ist. Jeder Aktionszeile ist eine Umschaltfläche zugeordnet, mit der die mit A, B, C usw. beginnenden Datensatzgruppen oder alle Datensätze ausgewählt werden. Dieses Makro sollte dem AfterUpdate-Ereignis der Optionsgruppe CompanyNameFilter hinzugefügt werden.
+The following macro contains a set of actions, each of which filters the records for a Customer Phone List form. It shows the use of the **ApplyFilter**, **ShowAllRecords**, and **GoToControl** actions. It also shows the use of conditions to determine which toggle button in an option group has been selected on the form. Each action row is associated with a toggle button that selects the set of records starting with A, B, C, and so on, or all records. This macro should be attached to the **AfterUpdate** event of the CompanyNameFilter option group.
 
 <table>
 <colgroup>
@@ -59,21 +59,21 @@ Das folgende Makro enthält eine Reihe von Aktionen, die jeweils die Datensätze
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Filter für Firma] = 1</p></td>
+<td><p>[Company Name Filters] = 1</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Bedingung</strong>: [Firma] wie &quot;[AÀÁÂÃÄ] *&quot;</p></td>
+<td><p><strong>Bedingung</strong>: [Firmen Name] wie &quot;[AÀÁÂÃÄ] *&quot;</p></td>
 <td><p>Filtern nach Firmen, deren Name mit A, À, Á, Â, Ã oder Ä beginnt.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Filter für Firma] = 2</p></td>
+<td><p>[Company Name Filters] = 2</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Bedingung</strong>: [Firma] wie &quot;B *&quot;</p></td>
+<td><p><strong>Bedingung</strong>: [Firmen Name] wie &quot;B *&quot;</p></td>
 <td><p>Filtern nach Firmennamen, die mit B beginnen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Filter für Firma] = 3</p></td>
+<td><p>[Company Name Filters] = 3</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Bedingung</strong>: [Firma] wie &quot;[CÇ] *&quot;</p></td>
+<td><p><strong>Bedingung</strong>: [Firmen Name] wie &quot;[CÇ] *&quot;</p></td>
 <td><p>Filtern nach Firmennamen, die mit C oder Ç beginnen.</p></td>
 </tr>
 <tr class="even">
@@ -83,19 +83,19 @@ Das folgende Makro enthält eine Reihe von Aktionen, die jeweils die Datensätze
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>[Filter für Firma] = 26</p></td>
+<td><p>[Company Name Filters] = 26</p></td>
 <td><p><strong>ApplyFilter</strong></p></td>
-<td><p><strong>Bedingung</strong>: [Firma] wie &quot;[ZÆØÅ] *&quot;</p></td>
+<td><p><strong>Bedingung</strong>: [Firmen Name] wie &quot;[ZÆØÅ] *&quot;</p></td>
 <td><p>Filtern nach Firmennamen, die mit ZÆØ oder Å beginnen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Filter für Firma] = 27</p></td>
+<td><p>[Company Name Filters] = 27</p></td>
 <td><p><strong>ShowAllRecords</strong></p></td>
 <td><p></p></td>
 <td><p>Zeigt alle Datensätze an.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RecordsetClone]. [RecordCount] &gt;0</p></td>
+<td><p>[RecordsetClone]. RecordCount &gt;0</p></td>
 <td><p><strong>GoToControl</strong></p></td>
 <td><p><strong>Steuerelementname</strong>: Firma</p></td>
 <td><p>Verschiebt den Fokus auf das Steuerelement Firma, wenn Datensätze für den ausgewählten Buchstaben zurückgegeben werden.</p></td>

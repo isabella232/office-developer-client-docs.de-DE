@@ -1,5 +1,5 @@
 ---
-title: Recordset.CacheSize-Eigenschaft (DAO)
+title: Recordset. CacheSize-Eigenschaft (DAO)
 TOCTitle: CacheSize Property
 ms:assetid: 8632f5fb-6e5d-5a3e-1bd7-81e1270e9531
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196807(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 369ff9192bb592c96e17920c9771c10b70dc233b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300595"
 ---
-# <a name="recordsetcachesize-property-dao"></a>Recordset.CacheSize-Eigenschaft (DAO)
+# <a name="recordsetcachesize-property-dao"></a>Recordset. CacheSize-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt die Anzahl der von einer ODBC-Datenquelle abgefragten Datensätze fest, die lokal zwischengespeichert werden, oder gibt den betreffenden Wert zurück. **Long**-Wert mit Lese-/Schreibzugriff.
+Mit dieser Eigenschaft wird die Anzahl von Datensätzen, die aus einer ODBC-Datenquelle abgerufen und lokal gespeichert werden, festgelegt oder zurückgegeben. **Long**-Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 

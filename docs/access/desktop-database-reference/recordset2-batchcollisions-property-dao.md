@@ -1,5 +1,5 @@
 ---
-title: Recordset2.BatchCollisions-Eigenschaft (DAO)
+title: Recordset2. BatchCollisions-Eigenschaft (DAO)
 TOCTitle: BatchCollisions Property
 ms:assetid: 07d6c25f-baf5-f7d6-d225-0447e0f78fe6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844993(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ea75da06c0db4eeb4e846bacfddc9f125c03fc84
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307490"
 ---
-# <a name="recordset2batchcollisions-property-dao"></a>Recordset2.BatchCollisions-Eigenschaft (DAO)
+# <a name="recordset2batchcollisions-property-dao"></a>Recordset2. BatchCollisions-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,7 +35,7 @@ Diese Eigenschaft enthält ein Array von Lesezeichen für Zeilen, die beim letzt
 
 Wenn Sie die [**Bookmark**](recordset2-bookmark-property-dao.md) -Eigenschaft des **Recordset**-Objekts festlegen, um Werte im **BatchCollisions**-Array mit einem Lesezeichen zu versehen, können Sie zu jedem Datensatz navigieren, der beim letzten Batchaktualisierungsvorgang nicht verarbeitet werden konnte.
 
-Nachdem die Konflikte verursachenden Datensätze korrigiert wurden, kann erneut eine Update-Methode im Batchmodus aufgerufen werden. An dieser Stelle versucht DAO eine weitere Batchaktualisierung, und die BatchCollisions-Eigenschaft gibt erneut die Datensätze zurück, bei denen der zweite Versuch fehlschlug. Datensätze, bei denen der vorhergehende Versuch erfolgreich war, werden nicht erneut gesendet, da deren RecordStatus-Eigenschaft auf dbRecordUnmodified festgelegt ist. Dieser Prozess kann fortgesetzt werden, bis Sie die Aktualisierung abbrechen und das Resultset schließen.
+After the collision records are corrected, you can call the batch mode **Update** method again. At this point DAO attempts another batch update, and the **BatchCollisions** property again reflects the set of records that failed the second attempt. Any records that succeeded in the previous attempt are not sent in the current attempt, as they now have a **[RecordStatus](recordset2-recordstatus-property-dao.md)** property of dbRecordUnmodified. This process can continue as long as collisions occur, or until you abandon the updates and close the result set.
 
-Dieses Array wird bei jedem Ausführen einer **Update**-Methode im Batchmodus neu erstellt.
+Dieses Array wird bei jeder Ausführung einer **Update**-Methode im Batchmodus neu erstellt.
 

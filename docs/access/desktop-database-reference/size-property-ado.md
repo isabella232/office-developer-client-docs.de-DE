@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2a1bed3454d081b9d5de3a01e9b326130b40baa4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306930"
 ---
 # <a name="size-property-ado"></a>Size-Eigenschaft (ADO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die maximale Größe eines [Parameter](parameter-object-ado.md)-Objekts in Bytes oder Zeichen an.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
-Legt einen **Long** -Wert fest, der die maximale Größe eines Werts in einem **Parameter** -Objekt in Bytes oder Zeichen angibt, oder gibt den Wert zurück.
+Legt einen **Long**-Wert fest, der die maximale Größe eines Werts in einem **Parameter**-Objekt in Bytes oder Zeichen angibt, oder gibt den Wert zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Bestimmen Sie mit der **Size** -Eigenschaft die maximale Größe von Werten, die in die [Value](value-property-ado.md)-Eigenschaft eines **Parameter** -Objekts geschrieben oder daraus gelesen werden.
+Bestimmen Sie mit der **Size**-Eigenschaft die maximale Größe von Werten, die in die [Value](value-property-ado.md)-Eigenschaft eines **Parameter**-Objekts geschrieben oder daraus gelesen werden.
 
 Wenn Sie einen Datentyp variabler Länge für ein **Parameter**-Objekt angeben (beispielsweise einen beliebigen **String**-Typ wie z. B. **adVarChar**), müssen Sie die **Size**-Eigenschaft festlegen, bevor Sie sie der [Parameters](parameters-collection-ado.md)-Auflistung anfügen. Andernfalls tritt ein Fehler auf.
 

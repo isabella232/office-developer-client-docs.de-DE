@@ -1,5 +1,5 @@
 ---
-title: PrtDevMode-Eigenschaft (DAO)
+title: Eigenschaftselemente (DAO)
 TOCTitle: Property Members
 ms:assetid: 32658adb-f153-148d-a216-eb97b996579a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192303(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fe60c12a85eff0dd8f796f9affeef71979dac580
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301211"
 ---
-# <a name="property-members-dao"></a>PrtDevMode-Eigenschaft (DAO)
+# <a name="property-members-dao"></a>Eigenschaftselemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Property-Objekt stellt eine integrierte oder benutzerdefinierte Eigenschaft eines DAO-Objekts dar.
 
@@ -36,7 +36,7 @@ Ein Property-Objekt stellt eine integrierte oder benutzerdefinierte Eigenschaft 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="property-inherited-property-dao.md">Inherited</a></strong></p></td>
+<td><p><strong><a href="property-inherited-property-dao.md">Vererbt</a></strong></p></td>
 <td><p>Gibt einen Wert zurück, der angibt, ob ein <strong><a href="property-object-dao.md">Property</a></strong> -Objekt von einem zugrunde liegenden Objekt geerbt wurde.</p></td>
 </tr>
 <tr class="even">
@@ -49,7 +49,7 @@ Ein Property-Objekt stellt eine integrierte oder benutzerdefinierte Eigenschaft 
 </tr>
 <tr class="even">
 <td><p><strong><a href="property-type-property-dao.md">Typ</a></strong></p></td>
-<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt einen solchen Wert zurück. Lese-/Schreibzugriff <strong>Integer</strong>.</p></td>
+<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. <strong>Integer</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="property-value-property-dao.md">Wert</a></strong></p></td>

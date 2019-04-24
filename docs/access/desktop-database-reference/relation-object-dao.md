@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3eeaf8bf46d8673731243a1161ac578062a01f89
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307042"
 ---
 # <a name="relation-object-dao"></a>Relation-Objekt (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein **Relation**-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfragen dar (gilt nur für Microsoft Access-Datenbanken).
 
@@ -43,7 +43,7 @@ Beim Verwenden des **Relation**-Objekts und seiner Eigenschaften können Sie die
 
 Falls Sie Änderungen vornehmen, die gegen die für die Datenbank festgelegten Beziehungen verstoßen, tritt ein abfangbarer Fehler auf. Wenn Sie eine Aktualisierungsweitergabe oder Löschweitergabe anfordern, ändert das Microsoft Access-Datenbankmodul auch die Primärschlüssel- oder Fremdschlüsseltabellen, um die festgelegten Beziehungen zu erzwingen.
 
-Die Nordwind-Datenbank enthält z. B. eine Beziehung zwischen einer Orders-Tabelle (Bestellungen) und einer Customers-Tabelle (Kunden). Das CustomerID-Feld (Kunden-Nr) der Customers-Tabelle ist der Primärschlüssel, und das CustomerID-Feld der Orders-Tabelle ist der Fremdschlüssel. Damit das Microsoft Access-Datenbankmodul den neuen Datensatz in der Orders-Tabelle akzeptieren kann, durchsucht es die Customers-Tabelle nach einem übereinstimmenden CustomerID-Feld der Orders-Tabelle. Findet das Microsoft Access-Datenbankmodul keine Übereinstimmung, wird der neue Datensatz nicht akzeptiert, und ein abfangbarer Fehler tritt auf.
+For example, the Northwind database contains a relationship between an Orders table and a Customers table. The CustomerID field of the Customers table is the primary key, and the CustomerID field of the Orders table is the foreign key. For the Microsoft Access database engine to accept a new record in the Orders table, it searches the Customers table for a match on the CustomerID field of the Orders table. If the Microsoft Access database engine doesn't find a match, it doesn't accept the new record, and a trappable error occurs.
 
 Wenn Sie die referentielle Integrität erzwingen, muss bereits ein eindeutiger Index für das Schlüsselfeld der referenzierten Tabelle vorhanden sein. Das Microsoft Access-Datenbankmodul erstellt automatisch einen Index, wobei die **Foreign**-Eigenschaft so festgelegt ist, dass sie in der referenzierenden Tabelle als Fremdschlüssel fungiert.
 
@@ -51,13 +51,13 @@ Verwenden Sie die **CreateRelation**-Methode, um ein neues **Relation**-Objekt z
 
 **Relations**(0)
 
-**Relations** ("Name")
+**Beziehungen** ("Name")
 
-**Relations**\!\[Namen\]
+**Beziehungs**\!\[Name\]
 
 ## <a name="example"></a>Beispiel
 
-Diese Beispiel zeigt, wie ein vorhandenes **Relation**-Objekt die Dateneingabe steuern kann. Die Prozedur versucht mit einer bewusst falschen Kategorienummer (CategoryID) einen Datensatz hinzuzufügen. Dadurch wird die Fehlerbehandlungsroutine ausgelöst.
+This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.
 
 ```vb 
     Sub RelationX() 
@@ -118,7 +118,7 @@ Diese Beispiel zeigt, wie ein vorhandenes **Relation**-Objekt die Dateneingabe s
 
 <br/>
 
-In diesem Beispiel wird die **CreateRelation** -Methode zum Erstellen einer **Beziehung** zwischen Mitarbeitern **TableDef** und ein neues **TableDef** Abteilungen aufgerufen. Es wird veranschaulicht, wie Erstellen einer neuen **Relation** auch alle erforderlichen **Indizes** in der Fremdtabelle (DepartmentsEmployees Index in der Employees-Tabelle) erstellt werden.
+This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. Außerdem wird gezeigt, wie die Erstellung einer neuen **Beziehung** alle erforderlichen **Indizes** in der Fremdtabelle (der DepartmentsEmployees-Index in der Employees-Tabelle) erstellt.
 
 ```vb
     Sub CreateRelationX() 

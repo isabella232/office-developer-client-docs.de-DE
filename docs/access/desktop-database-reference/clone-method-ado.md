@@ -1,5 +1,5 @@
 ---
-title: Clone-Methode - ActiveX Data Objects (ADO)
+title: Clone-Methode-ActiveX Data Objects (ADO)
 TOCTitle: Clone method (ADO)
 ms:assetid: ca9b2b76-90bf-9a60-2611-3cb4977d5591
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249984(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 095191bbfe55f2c38529cb1c260979c48dd2d5f1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296346"
 ---
 # <a name="clone-method-ado"></a>Clone-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein [Recordset](recordset-object-ado.md)-Objektduplikat wird aus einem vorhandenen **Recordset** -Objekt erstellt. Optional wird angegeben, dass der Klon schreibgeschützt ist.
 
 ## <a name="syntax"></a>Syntax
 
-**Festlegen** *rstDuplicate*  =  *RstOriginal*. Wenn Sie den Klon (*LockType*)
+**Festgelegt** *rstDuplicate*  =  *rstOriginal*. Clone (*LockType*)
 
 ## <a name="return-value"></a>Rückgabewert
 
-Ein **Recordset** -Objektverweis wird zurückgegeben.
+Ein **Recordset**-Objektverweis wird zurückgegeben.
 
 ## <a name="parameters"></a>Parameter
 
@@ -36,7 +36,7 @@ Ein **Recordset** -Objektverweis wird zurückgegeben.
 |*rstOriginal* |Eine Objektvariable, durch die das zu duplizierende **Recordset** -Objekt identifiziert wird.|
 |*LockType* |Optional. Ein [LockTypeEnum](locktypeenum.md)-Wert, durch den der Sperrtyp des Original **recordsets** oder ein schreibgeschütztes **Recordset** angegeben wird. Gültige Werte sind **adLockUnspecified** oder **adLockReadOnly**.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **Clone** -Methode zum Erstellen mehrerer **Recordset** -Objektduplikate, insbesondere, wenn Sie mehrere aktuelle Datensätze in einem bestimmten Satz mit Datensätzen aufrechterhalten möchten. Das Verwenden der **Clone** -Methode ist effizienter als das Erstellen und Öffnen eines neuen **Recordset** -Objekts mit der gleichen Definition wie das Original.
 
@@ -52,9 +52,9 @@ Sie können nur **Recordset** -Objekte klonen, von denen Textmarken unterstützt
 
 Einige ausgelöste **Recordset** -Ereignisse werden auch in allen **Recordset** klonen ausgeführt. Die Ereignisse sind für den Klon jedoch möglicherweise nicht gültig, da sich der aktuelle Datensatz zwischen geklonten **Recordsets** unterscheiden kann.
 
-Beispielsweise, wenn Sie einen Wert eines Felds zu ändern, wird ein Ereignis [WillChangeField](willchangefield-and-fieldchangecomplete-events-ado.md) im geänderten **Recordset-Objekt** und in allen Klonen auftreten. Der Parameter *Felder* des Ereignisses **WillChangeField** eines geklonte **Recordset-Objekt** (, in dem die Änderung nicht vorgenommen wurde) wird einfach finden Sie in die Felder des aktuellen Datensatzes des Klons, die möglicherweise von einem anderen Datensatz als der aktuelle Datensatz zu der ursprüngliche **Recordset-Objekt** , das geändert wurde.
+Wenn Sie z. B. einen Wert eines Felds ändern, tritt im geänderten **Recordset** und in allen Klonen ein [WillChangeField](willchangefield-and-fieldchangecomplete-events-ado.md)-Ereignis auf. Durch den *Fields*-Parameter des **WillChangeField**-Ereignisses eines geklonten **Recordsets** (in dem die Änderung nicht vorgenommen wurde) wird einfach auf die Felder des aktuellen Datensatzes des Klons verwiesen, der ein anderer Datensatz sein kann als der aktuelle Datensatz des Original**recordsets**, in dem die Änderung auftrat.
 
-In der folgenden Tabelle wird eine vollständige Liste aller **Recordset** -Ereignisse bereitgestellt, und es wird angegeben, ob sie gültig sind und für mit der **Clone** -Methode generierte Recordsetklone ausgelöst werden.
+In der folgenden Tabelle wird eine vollständige Liste aller **Recordset**-Ereignisse bereitgestellt, und es wird angegeben, ob sie gültig sind und für mit der **Clone**-Methode generierte Recordsetklone ausgelöst werden.
 
 <table>
 <colgroup>

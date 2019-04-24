@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 195d9f5d882fd252b1b10e937fe851c4830c52d3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296052"
 ---
-# <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Vergleich von Microsoft Access SQL und ANSI SQL
+# <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Microsoft Access SQL und ANSI SQL im Vergleich
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Microsoft Access-Datenbankmodul SQL ist im Allgemeinen mit ANSI-89 Level 1 kompatibel. Bestimmte ANSI SQL-Features sind jedoch nicht in Microsoft Access SQL implementiert. Umgekehrt umfasst Microsoft Access SQL reservierte Wörter und Features, die nicht in ANSI SQL unterstützt werden.
 
-## <a name="major-differences"></a>Hauptunterschiede
+## <a name="major-differences"></a>Wesentliche Unterschiede
 
 - Microsoft Access SQL und ANSI SQL verfügen über unterschiedliche reservierte Wörter und Datentypen. Weitere Informationen finden Sie unter [Reservierte Wörter für das Microsoft Access-Datenbankmodul SQL](sql-reserved-words.md) und [Gleichwertige ANSI SQL-Datentypen](equivalent-ansi-sql-data-types.md). Bei der Verwendung des OLE DB-Anbieters für das Microsoft Office 12.0 Access-Datenbankmodul sind zusätzliche reservierte Wörter vorhanden.
 
 - **[Between…And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/and-operator)**
     
-  *expr1* \[Nicht\] **zwischen** *Wert1* **und** *Wert2*
+  *expr1* \[Nicht\] **zwischen** *Wert1* **und** *value2*
     
   In Microsoft Access SQL kann *Wert1* größer sein als *Wert2*. In ANSI SQL dagegen muss *Wert1* kleiner oder gleich *Wert2* sein.
 
@@ -74,11 +74,11 @@ Microsoft Access SQL stellt die folgenden erweiterten Features bereit:
 
 - Die [PARAMETERS](parameters-declaration-microsoft-access-sql.md)-Deklaration zum Definieren von Parameterabfragen.
 
-## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>ANSI SQL-Features nicht in Microsoft Access SQL unterstützt.
+## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>ANSI SQL-Features werden in Microsoft Access SQL nicht unterstützt
 
 Microsoft Access SQL unterstützt folgende ANSI SQL-Features nicht:
 
 - Verweise auf die DISTINCT-Aggregatfunktion. Microsoft Access SQL lässt beispielsweise die Syntax SUM(DISTINCT *Spaltenname*) nicht zu.
 
-- Die LIMIT TO *Nn* ROWS-Klausel, zur Begrenzung der Anzahl von Zeilen, die von einer Abfrage zurückgegeben. Es kann nur die [WHERE-Klausel](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) verwendet werden, um den Bereich einer Abfrage einzuschränken.
+- Die LIMIT TO *nn* ROWS-Klausel zur Einschränkung der Zeilenanzahl, die von einer Abfrage zurückgegebenen wird. Es kann nur die [WHERE-Klausel](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) verwendet werden, um den Bereich einer Abfrage einzuschränken.
 

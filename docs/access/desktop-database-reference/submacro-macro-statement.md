@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: caabfb0f4e90134c10d5ab728f19e1fd2a4437dd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308470"
 ---
 # <a name="submacro-macro-statement"></a>Untermakro-Makroanweisung
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-**Untermakro** -Anweisung wird ein separates Makro im Makro-Designer-Fenster.
+Die **submacro** -Anweisung definiert ein separates Makro im Makro-Designer-Fenster.
 
 ## <a name="setting"></a>Einstellung
 
-Die **Untermakro** -Aktion kann mit den folgenden Argumenten verwendet werden.
+Die **Untermakro**-Aktion kann mit den folgenden Argumenten verwendet werden.
 
 <table>
 <colgroup>
@@ -33,7 +33,7 @@ Die **Untermakro** -Aktion kann mit den folgenden Argumenten verwendet werden.
 <thead>
 <tr class="header">
 <th><p>Argument</p></th>
-<th><p>Eingabe erforderlich</p></th>
+<th><p>Erforderlich</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
@@ -49,9 +49,9 @@ Die **Untermakro** -Aktion kann mit den folgenden Argumenten verwendet werden.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Makro veranschaulicht die Verwendung der **BeiFehler** -Aktion. In diesem Beispiel gibt die **BeiFehler** -Aktion an, dass Access führen Sie eine benutzerdefinierte Fehlerbehandlung Makro mit dem Namen Fehlerhandler, wenn ein Fehler auftritt. Wenn ein Fehler auftritt, wird das Untermakro CatchErrors aufgerufen. Wenn die Fehlernummer 2102 ist, eine bestimmte Nachricht wird angezeigt, und Ausführung von Makros wird unterbrochen. Andernfalls wird eine Meldung, die Beschreibung des Fehlers angezeigt und das Makro wird angehalten, damit Sie zusätzliche Hinweise zur Problembehandlung ausführen können. Das Fehlerhandler Makro zeigt eine Meldung angezeigt, die auf das **MacroError** -Objekt zum Anzeigen von Informationen zu dem Fehler verweist.
+The following macro demonstrates the use of the **OnError** action. In this example, the **OnError** action specifies that Access run a custom error handling macro named ErrorHandler when an error occurs. Wenn ein Fehler auftritt, wird das CatchErrors-unter Makro aufgerufen. Wenn die Fehlernummer 2102 ist, wird eine bestimmte Meldung angezeigt, und die Ausführung des Makros wird angehalten. Andernfalls wird eine Meldung mit dem Fehler angezeigt, und das Makro wird angehalten, damit Sie zusätzliche Problembehandlung durchführen können. The ErrorHandler macro displays a message box that refers to the **MacroError** object to display information about the error.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     /* MACRO: mcrThrowErrors                                  */

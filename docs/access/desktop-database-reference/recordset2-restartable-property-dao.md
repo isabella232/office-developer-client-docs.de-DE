@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Restartable-Eigenschaft (DAO)
+title: Recordset2. Restartable-Eigenschaft (DAO)
 TOCTitle: Restartable Property
 ms:assetid: 9b1c40f8-5a33-2527-a7b6-bef4cb991d7e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198019(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 873911ff8475a0b37f3f67d9cb2c01afc577487d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309086"
 ---
-# <a name="recordset2restartable-property-dao"></a>Recordset2.Restartable-Eigenschaft (DAO)
+# <a name="recordset2restartable-property-dao"></a>Recordset2. Restartable-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der angibt, ob ein **[Recordset](recordset-object-dao.md)** -Objekt die **[Requery](recordset2-requery-method-dao.md)** -Methode unterstützt, die die Abfrage, auf der das **Recordset**-Objekt basiert, erneut ausführt.
 
@@ -29,7 +29,7 @@ Gibt einen Wert zurück, der angibt, ob ein **[Recordset](recordset-object-dao.m
 
 ## <a name="remarks"></a>Bemerkungen
 
-Recordset-Objekte vom Typ Tabelle geben immer False zurück.
+Table-type **Recordset** objects always return **False**.
 
 Überprüfen Sie die **Restartable**-Eigenschaft vor der Verwendung der **Requery**-Methode für ein **Recordset**-Objekt. Wenn die **Restartable**-Eigenschaft des Objekts den Wert **False** hat, verwenden Sie die **[OpenRecordset](connection-openrecordset-method-dao.md)** -Methode für das zugrunde liegende **[QueryDef](querydef-object-dao.md)** -Objekt, um die Abfrage erneut auszuführen.
 

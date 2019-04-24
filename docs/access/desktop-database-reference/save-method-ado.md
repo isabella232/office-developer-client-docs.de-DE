@@ -1,5 +1,5 @@
 ---
-title: Save-Methode - ActiveX Data Objects (ADO)
+title: Save-Methode-ActiveX Data Objects (ADO)
 TOCTitle: Save method (ADO)
 ms:assetid: 02dab13b-f947-b96d-46ea-0def3ed8f28f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248793(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0a3762c3d4fdb8cc833259b0435b225690d677ce
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308918"
 ---
 # <a name="save-method-ado"></a>Save-Methode (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Speichert das [Recordset](recordset-object-ado.md)-Objekt in einer Datei oder in einem [Stream](stream-object-ado.md)-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset-Objekt*. *Ziel*, *PersistFormat* speichern
+*Recordset*. *Ziel*speichern, *PersistFormat*
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,19 +31,19 @@ Speichert das [Recordset](recordset-object-ado.md)-Objekt in einer Datei oder in
 |*Destination* |Optional. Ein **Variant** -Wert, der den vollständigen Namen des Pfads, unter dem das **Recordset** -Objekt gespeichert werden soll, oder einen Verweis auf ein **Stream** -Objekt darstellt.|
 |*PersistFormat* |Optional. Ein [PersistFormatEnum](persistformatenum.md)-Wert, der das Format angibt, in dem das **Recordset** -Objekt gespeichert werden soll (XML oder ADTG). Der Standardwert lautet **adPersistADTG**.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Save**-Methode kann nur für ein offenes **Recordset**-Objekt aufgerufen werden. Verwenden Sie die [Open](open-method-ado-recordset.md)-Methode, um das **Recordset**-Objekt zu einem späteren Zeitpunkt von der *Destination* wiederherzustellen.
 
-Wenn die [Filter](filter-property-ado.md) -Eigenschaft für das **Recordset-Objekt**gültig ist, werden nur die unter dem Filter zugänglichen Zeilen gespeichert. Wenn das **Recordset** hierarchische ist, werden dann das aktuelle untergeordnete **Recordset-Objekt** und seine untergeordneten Elemente gespeichert, einschließlich des übergeordneten **Recordset-Objekt**. Falls die **Save** -Methode eines untergeordneten **Recordset** -Objekts aufgerufen wird, werden das untergeordnete Element und alle ihm untergeordneten Elemente gespeichert, das übergeordnete Element jedoch nicht.
+If the [Filter](filter-property-ado.md) property is in effect for the **Recordset**, then only the rows accessible under the filter are saved. If the **Recordset** is hierarchical, then the current child **Recordset** and its children are saved, including the parent **Recordset**. If the **Save** method of a child **Recordset** is called, the child and all its children are saved, but the parent is not.
 
 Wenn Sie das **Recordset**-Objekt das erste Mal speichern, können Sie optional das *Ziel* angeben. Wenn Sie das *Ziel* auslassen, wird eine neue Datei erstellt, deren Namen auf den Wert der [Source](source-property-ado-recordset.md)-Eigenschaft des **Recordset**-Objekts festgelegt ist.
 
-Geben Sie *Ziel* , wenn Sie anschließend nach dem ersten Speichern **Speichern aufrufen** oder, tritt ein Laufzeitfehler auf. Wenn Sie später mit einem neuen *Ziel* **Speichern** aufrufen, wird das **Recordset-Objekt** für den neuen Pfad gespeichert. Das neue Ziel und das ursprüngliche Ziel sind jedoch beide geöffnet.
+Geben Sie die *Destination* nicht an, wenn Sie nach dem ersten Speichern **Save** aufrufen, andernfalls tritt ein Fehler auf. Wenn Sie nach dem Speichern **Save** mit einer neuen *Destination* aufrufen, wird das **Recordset**-Objekt an diesem neuen Ziel gespeichert. Das neue und das ursprüngliche Ziel sind jedoch beide offen.
 
 **Save** schließt das **Recordset**-Objekt oder die *Destination* nicht. Daher können Sie weiterhin mit dem **Recordset**-Objekt arbeiten und Ihre aktuellsten Änderungen speichern. *Destination* bleibt offen, bis das **Recordset**-Objekt geschlossen ist.
 
-Aus Sicherheitsgründen gestattet die **Save** -Methode nur die Verwendung niedriger und benutzerdefinierter Sicherheitseinstellungen in einem von Microsoft Internet Explorer ausgeführten Skript. Ausführlichere Erläuterungen zu Sicherheitsproblemen finden Sie unter "ADO- und RDS-Sicherheitsprobleme in Microsoft Internet Explorer" (in englischer Sprache) im Abschnitt "ActiveX Data Objects (ADO) Technical Articles in Microsoft Data Access Technical Articles".
+For reasons of security, the **Save** method permits only the use of low and custom security settings from a script executed by Microsoft Internet Explorer. For a more detailed explanation of security issues, see "ADO and RDS Security Issues in Microsoft Internet Explorer" under ActiveX Data Objects (ADO) Technical Articles in Microsoft Data Access Technical Articles.
 
 Wenn die **Save** -Methode während eines asynchronen Abruf-, Ausführungs- oder Aktualisierungsvorgangs des **Recordset** -Objekts aufgerufen wird, wartet die **Save** -Methode, bis der asynchrone Vorgang abgeschlossen ist.
 
@@ -56,14 +56,14 @@ Wenn ein **Recordset** -Objekt mit der auf **adUseServer** festgelegten **Cursor
 > [!NOTE]
 > [!HINWEIS] Das Speichern eines **Recordset** -Objekt mit **Fields** vom Typ **adVariant**, **adIDispatch** oder **adIUnknown** wird von ADO nicht unterstützt und kann zu unvorhersehbaren Ergebnissen führen.
 
-Nur **Filter** in der Form von Kriterienzeichenfolgen (z. B. Bestelldatum \> ' 12/31/1999 ') wirken sich auf den Inhalt eines permanenten **Recordset-Objekt**. Filter mit einem Array von **Lesezeichen** erstellt oder mithilfe eines Werts aus der **FilterGroupEnum** wirkt sich nicht auf den Inhalt des gespeicherten **Recordset-Objekt**aus. Diese Regeln gelten für **Recordsets** mit clientseitige oder serverseitige Cursor erstellt wurden.
+Nur **Filter** in Form von Kriterien-Zeichenfolgen (z. \> b. OrderDate "12/31/1999") wirken sich auf den Inhalt eines beibehaltenen **Recordsets**aus. Filter, die mit einem Array mit **Bookmarks** oder mithilfe eines Werts aus **FilterGroupEnum** erstellt wurden, wirken sich nicht auf den Inhalt des gespeicherten **Recordset**-Objekts aus. Diese Regeln werden auf **Recordset**-Objekte angewendet, die mit einem clientseitigen oder einem serverseitigen Cursor erstellt wurden.
 
-Da *der Zielparameter* jedes Objekt, die die OLE DB IStream-Schnittstelle unterstützt akzeptieren kann, können Sie ein **Recordset-Objekt** direkt auf das ASP-Response-Objekt speichern. Weitere Einzelheiten finden Sie unter [Speicherszenario für XML-Recordset](xml-recordset-persistence-scenario.md).
+Da der *Destination*-Parameter alle Objekte akzeptiert, die die OLE DB IStream-Schnittstelle unterstützen, können Sie ein **Recordset**-Objekt direkt im ASP Response-Objekt speichern. Weitere Einzelheiten finden Sie unter [Speicherszenario für XML-Recordset](xml-recordset-persistence-scenario.md).
 
 Sie können ein **Recordset** -Objekt im XML-Format auch in einer Instanz eines MSXML DOM-Objekts speichern. Dies wird im folgenden Visual Basic-Code dargestellt:
 
 > [!NOTE]
 > [!HINWEIS] Beim Speichern hierarchischer **Recordset** -Objekte (Datenformen) im XML-Format gelten zwei Einschränkungen. Wenn das hierarchische **Recordset** -Objekt ausstehende Aktualisierungen enthält, können Sie dieses nicht im XML-Format speichern. Ein parametrisiertes, hierarchisches **Recordset** -Objekt kann auch nicht gespeichert werden.
 
-Ein im XML-Format gespeichertes Recordset-Objekt wird im UTF-8-Format gespeichert. Wird eine solche Datei in ein Stream-Objekt in ADO geladen, öffnen das Stream-Objekt nur dann ein Recordset-Objekt aus dem Datenstrom, wenn die Charset-Eigenschaft des Datenstroms auf den entsprechenden Wert für das UTF-8-Format festgelegt ist.
+A Recordset saved in XML format is saved using UTF-8 format. When such a file is loaded into an ADO Stream, the Stream object will not attempt to open a Recordset from the stream unless the Charset property of the stream is set to the appropriate value for UTF-8 format.
 

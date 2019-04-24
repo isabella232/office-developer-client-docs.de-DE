@@ -1,5 +1,5 @@
 ---
-title: RightsEnum (Access PC-Datenbank-Referenz)
+title: RightsEnum (Access Desktop Database Reference)
 TOCTitle: RightsEnum
 ms:assetid: 7647b9d5-5271-fdcf-489d-5a8beb931ca5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249485(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3c7bf2f88632265cda7537215f2ea3c68507f16f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306489"
 ---
 # <a name="rightsenum"></a>RightsEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt die Rechte oder Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt an.
 
@@ -67,7 +67,7 @@ Gibt die Rechte oder Berechtigungen einer Gruppe oder eines Benutzers für ein O
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, das Objekt auszuführen.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adRightFull</strong></p></td>
+<td><p><strong>zuRecht</strong></p></td>
 <td><p>268435456<br />
 (&amp;H10000000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über alle Berechtigungen für das Objekt.</p></td>

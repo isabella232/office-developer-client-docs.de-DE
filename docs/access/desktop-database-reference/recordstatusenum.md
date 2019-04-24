@@ -1,5 +1,5 @@
 ---
-title: RecordStatusEnum (Access PC-Datenbank-Referenz)
+title: RecordStatusEnum (Access Desktop Database Reference)
 TOCTitle: RecordStatusEnum
 ms:assetid: 302915b8-494d-0be2-6dce-eaf91a0ea8ae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249080(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a83de7730224c5ecd5080c795d38cf2e9a3305a9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309380"
 ---
 # <a name="recordstatusenum"></a>RecordStatusEnum
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere Mengenoperationen an.
 
@@ -38,27 +38,27 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 <tbody>
 <tr class="odd">
 <td><p><strong>adRecCanceled</strong></p></td>
-<td><p>0 x 100</p></td>
+<td><p>0x100</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da die Operation abgebrochen wurde.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecCantRelease</strong></p></td>
-<td><p>0 x 400</p></td>
+<td><p>0x400</p></td>
 <td><p>Gibt an, dass der neue Datensatz nicht gespeichert wurde, weil der vorhandene Datensatz gesperrt war.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRecConcurrencyViolation</strong></p></td>
-<td><p>0 x 800</p></td>
+<td><p>0x800</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da eine vollständiger Parallelität verwendet wurde.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecDBDeleted</strong></p></td>
-<td><p>0 x 40000</p></td>
+<td><p>0x40000</p></td>
 <td><p>Gibt an, dass der Datensatz bereits aus der Datenquelle gelöscht wurde.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRecDeleted</strong></p></td>
-<td><p>0 x 4</p></td>
+<td><p>0x4</p></td>
 <td><p>Gibt an, dass der Datensatz gelöscht wurde.</p></td>
 </tr>
 <tr class="even">
@@ -68,12 +68,12 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </tr>
 <tr class="odd">
 <td><p><strong>adRecInvalid</strong></p></td>
-<td><p>0 x 10</p></td>
+<td><p>0x10</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da seine Textmarke ungültig ist.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecMaxChangesExceeded</strong></p></td>
-<td><p>0 x 2000</p></td>
+<td><p>0x2000</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da es zu viele ausstehende Änderungen gab.</p></td>
 </tr>
 <tr class="odd">
@@ -83,7 +83,7 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </tr>
 <tr class="even">
 <td><p><strong>adRecMultipleChanges</strong></p></td>
-<td><p>0 x 40</p></td>
+<td><p>0x40</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da sich dies auf mehrere Datensätze ausgewirkt hätte.</p></td>
 </tr>
 <tr class="odd">
@@ -103,36 +103,36 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </tr>
 <tr class="even">
 <td><p><strong>adRecOutOfMemory</strong></p></td>
-<td><p>0 x 8000</p></td>
+<td><p>0X8000</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da der Computer keinen Arbeitsspeicher mehr zur Verfügung hat.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRecPendingChanges</strong></p></td>
-<td><p>0 x 80</p></td>
+<td><p>0x80</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da er sich auf eine ausstehende Einfügung bezieht.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecPermissionDenied</strong></p></td>
-<td><p>0 x 10000</p></td>
+<td><p>0x10000</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da der Benutzer über unzureichende Berechtigungen verfügt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRecSchemaViolation</strong></p></td>
-<td><p>0 x 20000</p></td>
+<td><p>0x20000</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da er gegen die Struktur der zugrunde liegenden Datenbank verstößt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecUnmodified</strong></p></td>
-<td><p>0 x 8</p></td>
+<td><p>0x8</p></td>
 <td><p>Gibt an, dass der Datensatz nicht geändert wurde.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
+### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
 
-AdoEnums.RecordStatus.
+AdoEnums. RecordStatus.
 
 Paket: **com.ms.wfc.data**
 
@@ -147,58 +147,58 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.CANCELED</p></td>
+<td><p>AdoEnums. RecordStatus. CANCELed</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.CANTRELEASE</p></td>
+<td><p>AdoEnums. RecordStatus. CANTRELEASE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.CONCURRENCYVIOLATION</p></td>
+<td><p>AdoEnums. RecordStatus. CONCURRENCYVIOLATION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.DBDELETED</p></td>
+<td><p>AdoEnums. RecordStatus. dbDELETEd</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.DELETED</p></td>
+<td><p>AdoEnums. RecordStatus. DELETED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.INTEGRITYVIOLATION</p></td>
+<td><p>AdoEnums. RecordStatus. INTEGRITYVIOLATION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.INVALID</p></td>
+<td><p>AdoEnums. RecordStatus. INVALID</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.MAXCHANGESEXCEEDED</p></td>
+<td><p>AdoEnums. RecordStatus. MAXCHANGESEXCEEDED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.MODIFIED</p></td>
+<td><p>AdoEnums. RecordStatus. MODIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.MULTIPLECHANGES</p></td>
+<td><p>AdoEnums. RecordStatus. MULTIPLECHANGES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.NEW</p></td>
+<td><p>AdoEnums. RecordStatus. NEW</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.OBJECTOPEN</p></td>
+<td><p>AdoEnums. RecordStatus. objectOPEN</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.OK</p></td>
+<td><p>AdoEnums. RecordStatus. OK</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.OUTOFMEMORY</p></td>
+<td><p>AdoEnums. RecordStatus. OUTOFMEMORY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.PENDINGCHANGES</p></td>
+<td><p>AdoEnums. RecordStatus. PENDINGCHANGES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.PERMISSIONDENIED</p></td>
+<td><p>AdoEnums. RecordStatus. PERMISSIONDENIED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.RecordStatus.SCHEMAVIOLATION</p></td>
+<td><p>AdoEnums. RecordStatus. SCHEMAVIOLATION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.RecordStatus.UNMODIFIED</p></td>
+<td><p>AdoEnums. RecordStatus. unMODIFIED</p></td>
 </tr>
 </tbody>
 </table>

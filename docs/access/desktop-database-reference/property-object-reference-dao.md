@@ -1,5 +1,5 @@
 ---
-title: Eigenschaft-Objektverweis (DAO)
+title: Property-Objektreferenz (DAO)
 TOCTitle: Property Object
 ms:assetid: f480f51c-5333-4a10-afcd-73713291c7d7
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn180085(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6a52c1ef113038ba412ab3413ae331074e787d67
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303003"
 ---
-# <a name="property-object-reference-dao"></a>Eigenschaft-Objektverweis (DAO)
+# <a name="property-object-reference-dao"></a>Property-Objektreferenz (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 - [Property-Objekt (DAO)](property-object-dao.md)
-- [PrtDevMode-Eigenschaft (DAO)](property-members-dao.md)
-- [Eigenschaft Eigenschaften (DAO)](property-properties-dao.md)
+- [Eigenschaftselemente (DAO)](property-members-dao.md)
+- [Eigenschafts Eigenschaften (DAO)](property-properties-dao.md)
 

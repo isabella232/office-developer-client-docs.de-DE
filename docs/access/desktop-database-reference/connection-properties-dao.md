@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9a121746a81f953b9f384b7f3c779e43805f1882
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295828"
 ---
 # <a name="connection-properties-dao"></a>Verbindungseigenschaften (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-- [Connection.Connect-Eigenschaft (DAO)](connection-connect-property-dao.md)
-- [Connection.Database-Eigenschaft (DAO)](connection-database-property-dao.md)
+- [Connection. Connect-Eigenschaft (DAO)](connection-connect-property-dao.md)
+- [Connection. Database-Eigenschaft (DAO)](connection-database-property-dao.md)
 - [Connection.Name-Eigenschaft (DAO)](connection-name-property-dao.md)
-- [Connection.QueryDefs-Eigenschaft (DAO)](connection-querydefs-property-dao.md)
-- [Connection.QueryTimeout-Eigenschaft (DAO)](connection-querytimeout-property-dao.md)
-- [Connection.RecordsAffected-Eigenschaft (DAO)](connection-recordsaffected-property-dao.md)
-- [Connection.Recordsets-Eigenschaft (DAO)](connection-recordsets-property-dao.md)
-- [Connection.StillExecuting-Eigenschaft (DAO)](connection-stillexecuting-property-dao.md)
-- [Connection.Transactions-Eigenschaft (DAO)](connection-transactions-property-dao.md)
-- [Connection.Updatable-Eigenschaft (DAO)](connection-updatable-property-dao.md)
+- [Connection. QueryDefs-Eigenschaft (DAO)](connection-querydefs-property-dao.md)
+- [Connection. QueryTimeout-Eigenschaft (DAO)](connection-querytimeout-property-dao.md)
+- [Connection. RecordsAffected-Eigenschaft (DAO)](connection-recordsaffected-property-dao.md)
+- [Connection. Recordsets-Eigenschaft (DAO)](connection-recordsets-property-dao.md)
+- [Connection. StillExecuting-Eigenschaft (DAO)](connection-stillexecuting-property-dao.md)
+- [Connection. transActions-Eigenschaft (DAO)](connection-transactions-property-dao.md)
+- [Connection. aktualisierbar-Eigenschaft (DAO)](connection-updatable-property-dao.md)

@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Lesezeichen (Access PC-Datenbank-Referenz)
+title: Verwenden von Lesezeichen (Access Desktop Database Reference)
 TOCTitle: Using Bookmarks
 ms:assetid: fe6333ef-c9d9-1e84-2252-d27edc676e97
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250306(v=office.15)
@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 469d8a0cc9b644fe434770d51c21d8210c8038d0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306307"
 ---
 # <a name="using-bookmarks"></a>Verwenden von Lesezeichen
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Beim Navigieren im **Recordset** -Objekt ist es oft hilfreich, wenn Sie direkt zu einem bestimmten Datensatz zurückkehren können, ohne dass Sie einen Bildlauf in allen Datensätzen ausführen und Werte vergleichen müssen. Wenn Sie z. B. mit der **Find** -Methode nach einem Datensatz suchen, die Suche aber keine Datensätze zurückgibt, wird automatisch das Ende des **Recordset** -Objekts angezeigt. Wenn Lesezeichen von Ihrem Anbieter unterstützt werden, können Sie mithilfe von Lesezeichen die Position markieren, bevor Sie die **Find** -Methode verwenden, damit Sie zu dieser Position zurückkehren können. Ein Lesezeichen ist ein Wert vom Datentyp **Variant**, mit dem ein Datensatz in einem **Recordset** -Objekt eindeutig identifiziert wird.
 
-Sie können auch ein variant-Array von Lesezeichen mit der **Filter** -Methode des **Recordset-Objekts** verwenden, um eine ausgewählte Reihe von Datensätze zu filtern. Ausführliche Informationen zu diesem Verfahren finden Sie unter Filtern der Ergebnisse im Thema, [Arbeiten mit Recordsets](working-with-recordsets.md), weiter unten in diesem Kapitel.
+You can also use a variant array of bookmarks with the **Recordset** **Filter** method to filter on a selected set of records. For details about this technique, see Filtering the Results in the topic, [Working with Recordsets](working-with-recordsets.md), later in this chapter.
 
 Mit der **Bookmark** -Eigenschaft können Sie ein Lesezeichen für einen Datensatz abrufen oder den aktuellen Datensatz in einem **Recordset** -Objekt auf den durch ein gültiges Lesezeichen identifizierten Datensatz festlegen. Im folgenden Code wird mithilfe der **Bookmark** -Eigenschaft ein Lesezeichen festgelegt und anschließend nach dem Navigieren in anderen Datensätzen zu dem Datensatz mit dem Lesezeichen zurückgekehrt. Verwenden Sie die **Supports** -Methode, um zu ermitteln, ob das **Recordset** -Objekt Lesezeichen unterstützt.
 

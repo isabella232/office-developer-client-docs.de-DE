@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f2c7697d4ae8b830afb53eee10e7dd59a7dc8db4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296164"
 ---
 # <a name="command-object-overview"></a>Übersicht über das Command-Objekt
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Die Auflistungen, Methoden und Eigenschaften eines **Command** -Objekts ermöglichen Folgendes:
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a5fc1c284ee7aae77c4fb067ad57d50200119594
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294504"
 ---
 # <a name="datafactory-customization"></a>DataFactory-Anpassung
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Durch Remote Data Service (RDS) wird eine Möglichkeit bereitgestellt, problemlosen Datenzugriff in einem dreistufigen Client-/Server-System auszuführen. Durch ein Clientdatensteuerelement werden die Parameter für Verbindungs- und Befehlszeichenfolgen zum Ausführen einer Abfrage für eine Remotedatenquelle oder Parameter für Verbindungszeichenfolgen und [Recordset](recordset-object-ado.md)-Objekte zum Ausführen einer Aktualisierung angegeben.
 
@@ -29,10 +29,10 @@ Sie können mit ADO angeben, dass **DataFactory** in Verbindung mit einem andere
 
 Die vom Handler zum Ändern von Clientparametern und Zugriffsrechten verwendeten Parameter werden in Abschnitten einer Anpassungsdatei angegeben.
 
-Weitere Informationen zum Anpassen des **DataFactory** -Objekts finden Sie unter den folgenden Themen:
+Weitere Informationen zum Anpassen des **DataFactory**-Objekts finden Sie unter den folgenden Themen:
 
 - [Grundlegendes zur Anpassungsdatei](understanding-the-customization-file.md)
-- [Verbinden von Datei-Abschnitt der Anpassungsdatei](customization-file-connect-section.md)
+- [Anpassungsdatei – Verbindungsabschnitt](customization-file-connect-section.md)
 - [Anpassungsdatei – SQL-Abschnitt](customization-file-sql-section.md)
 - [Anpassungsdatei – UserList-Abschnitt](customization-file-userlist-section.md)
 - [Anpassungsdatei – Protokollabschnitt](customization-file-logs-section.md)

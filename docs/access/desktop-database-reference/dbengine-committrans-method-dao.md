@@ -1,5 +1,5 @@
 ---
-title: DBEngine.CommitTrans-Methode (DAO)
+title: DbEngine. CommitTrans-Methode (DAO)
 TOCTitle: CommitTrans Method
 ms:assetid: 0c9d345f-13ff-7fe6-789d-fbdb43fa54b8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845171(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 75918ac4da32020214d9e58d866c5def169eede3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294387"
 ---
-# <a name="dbenginecommittrans-method-dao"></a>DBEngine.CommitTrans-Methode (DAO)
+# <a name="dbenginecommittrans-method-dao"></a>DbEngine. CommitTrans-Methode (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Beendet die aktuelle Transaktion und speichert die Änderungen.
 
@@ -39,7 +39,7 @@ Beendet die aktuelle Transaktion und speichert die Änderungen.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

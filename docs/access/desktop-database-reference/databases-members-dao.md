@@ -1,5 +1,5 @@
 ---
-title: Mitglieder der Datenbanken (DAO)
+title: DataBases-Elemente (DAO)
 TOCTitle: Databases Members
 ms:assetid: 26590849-6530-7e10-9a2c-1a9a5b2bfac6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191890(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1d334c42aa2ddb9658fc860dfcebbac2b0ae80ac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294610"
 ---
-# <a name="databases-members-dao"></a>Mitglieder der Datenbanken (DAO)
+# <a name="databases-members-dao"></a>DataBases-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine Databases-Auflistung enthält alle offenen Database-Objekte, die in einem Workspace-Objekt erstellt oder geöffnet wurden.
 
@@ -59,7 +59,7 @@ Eine Databases-Auflistung enthält alle offenen Database-Objekte, die in einem W
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="databases-count-property-dao.md">Count</a></strong></p></td>
-<td><p>Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
+<td><p>Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
 </tr>
 </tbody>
 </table>

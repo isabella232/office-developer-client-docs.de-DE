@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d30ff9146146bb0457a5aa383b2b720a4fdaeb78
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292321"
 ---
 # <a name="formal-shape-grammar"></a>Formal Shape Grammar
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Dies ist die formale Grammatik zum Erstellen von Shape-Befehlen:
 
   - Erforderliche Grammatikbegriffe sind Textzeichenfolgen, die durch spitze Klammern ("\<\>") getrennt sind.
 
-  - Optionale Begriffe werden getrennt in eckigen Klammern ("\[ \]").
+  - Optionale Ausdrücke werden durch eckige Klammern ("\[ \]") getrennt.
 
   - Alternativen werden durch einen Schrägstrich ("|") angegeben.
 
   - Wiederholte Alternativen werden durch Auslassungspunkte ("...") angegeben.
 
-  - *Alpha* wird eine Zeichenfolge aus alphabetischen Buchstaben angegeben.
+  - Durch *Alpha* wird eine Zeichenfolge aus alphabetischen Buchstaben angegeben.
 
-  - *Digit* wird eine Zeichenfolge aus Zahlen angegeben.
+  - Durch *Digit* wird eine Zeichenfolge aus Zahlen angegeben.
 
-  - *Unicode-Digit* wird eine Zeichenfolge aus Unicode-Ziffern angegeben.
+  - Durch *Unicode-digit* wird eine Zeichenfolge aus Unicode-Ziffern angegeben.
 
 Alle andere Begriffe sind Literale.
 
@@ -50,120 +50,120 @@ Alle andere Begriffe sind Literale.
 <tbody>
 <tr class="odd">
 <td><p>&lt;Shape-Befehl&gt;</p></td>
-<td><p>SHAPE [&lt;Tabelle exp&gt; [[AS] &lt;Alias&gt;]] [&lt;Shape-Aktion&gt;]</p></td>
+<td><p>Shape [&lt;Tabelle-exp&gt; [[as] &lt;Alias&gt;]] [&lt;Shape-Aktion&gt;]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Tabelle exp&gt;</p></td>
-<td><p>{&lt;Anbieter Befehlstext&gt;} |<br />
+<td><p>&lt;Tabelle-Exp&gt;</p></td>
+<td><p>{&lt;Anbieter-Command-Text&gt;} |<br />
 (&lt;Shape-Befehl&gt;) |<br />
-Tabelle &lt;quoted-Name&gt; |<br />
-&lt;Quoted-name&gt;</p></td>
+Tabelle &lt;in Anführungszeichen-Name&gt; |<br />
+&lt;zitiert-Name&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;Shape-Aktion&gt;</p></td>
-<td><p>APPEND &lt;Alias-Feldliste&gt; |</p>
-<p>BERECHNEN &lt;Alias Feldliste&gt; [BY &lt;-Feldliste&gt;]</p></td>
+<td><p>Alias &lt;-field-list anfügen&gt; |</p>
+<p>COMPUTE &lt;aliased-Field-List&gt; [by &lt;Field-List&gt;]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Alias-Feldliste&gt;</p></td>
-<td><p>&lt;Alias-Feld&gt; [, &lt;mit Aliasing-Feld &gt;]</p></td>
+<td><p>&lt;aliased-field-list&gt;</p></td>
+<td><p>&lt;aliased-Field&gt; [, &lt;aliased-Field... &gt;]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Alias-Feld&gt;</p></td>
-<td><p>&lt;Feld exp&gt; [[AS] &lt;Alias&gt;]</p></td>
+<td><p>&lt;Alias-Field&gt;</p></td>
+<td><p>&lt;Field-exp&gt; [[as] &lt;Alias&gt;]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Feld exp&gt;</p></td>
-<td><p>(&lt;Relation exp&gt;) |</p>
-<p>&lt;berechnet exp&gt; |</p>
-<p>&lt;Aggregat-exp&gt; |</p>
-<p>&lt;neue exp&gt;</p></td>
+<td><p>&lt;Field-Exp&gt;</p></td>
+<td><p>(&lt;Relation-exp&gt;) |</p>
+<p>&lt;berechnet-Exp&gt; |</p>
+<p>&lt;Aggregieren-Exp&gt; |</p>
+<p>&lt;neu-Exp&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;relation_exp&gt;</p></td>
-<td><p>&lt;Tabelle exp&gt; [[AS] &lt;Alias&gt;]</p>
-<p>&lt;Tabelle exp&gt; [[AS] &lt;Alias&gt;]</p></td>
+<td><p>&lt;Tabelle-exp&gt; [[as] &lt;Alias&gt;]</p>
+<p>&lt;Tabelle-exp&gt; [[as] &lt;Alias&gt;]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Relation-Cond-Liste&gt;</p></td>
-<td><p>&lt;Relation Cond&gt; [, &lt;Relation Cond&gt;...]</p></td>
+<td><p>&lt;Relation-Ltg-Liste&gt;</p></td>
+<td><p>&lt;Relation-Ltg&gt; [, &lt;Relation-Ltg&gt;...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Relation cond&gt;</p></td>
-<td><p>&lt;Name des Felds&gt; an &lt;untergeordneten Ref&gt;</p></td>
+<td><p>&lt;Relation-Ltg&gt;</p></td>
+<td><p>&lt;Field-Name&gt; unter &lt;Child-Ref&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;untergeordnete ref&gt;</p></td>
-<td><p>&lt;Name des Felds&gt; |</p>
-<p>PARAMETER &lt;Param-Ref&gt;</p></td>
+<td><p>&lt;Child-Ref&gt;</p></td>
+<td><p>&lt;Feldname&gt; |</p>
+<p>PARAMETER &lt;param-Ref&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Param-ref&gt;</p></td>
-<td><p>&lt;number&gt;</p></td>
+<td><p>&lt;param-Ref&gt;</p></td>
+<td><p>&lt;Anzahl&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Feldliste&gt;</p></td>
-<td><p>&lt;Name des Felds&gt; [, &lt;Feldnamen&gt;]</p></td>
+<td><p>&lt;Field-List&gt;</p></td>
+<td><p>&lt;Feldnamen&gt; [, &lt;Feldname]&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Aggregat-exp&gt;</p></td>
-<td><p>SUM (&lt;qualifizierte Feldname&gt;) |</p>
-<p>AVG (&lt;qualifizierte Feldname&gt;) |</p>
-<p>MIN (&lt;qualifizierte Feldname&gt;) |</p>
-<p>MAX (&lt;qualifizierte Feldname&gt;) |</p>
-<p>COUNT (&lt;qualifizierte Alias&gt; | &lt;qualifizierten Namen&gt;) |</p>
-<p>STDEV (&lt;qualifizierte Feldname&gt;) |</p>
-<p>Alle (&lt;qualifizierte Feldname&gt;)</p></td>
+<td><p>&lt;Aggregieren-Exp&gt;</p></td>
+<td><p>SUM (&lt;Qualified-Field-Name&gt;) |</p>
+<p>AVG (&lt;Qualified-Field-Name&gt;) |</p>
+<p>MIN (&lt;Qualified-Field-Name&gt;) |</p>
+<p>MAX (&lt;Qualified-Field-Name&gt;) |</p>
+<p>COUNT (&lt;Qualified-Alias&gt; | &lt;Qualified-Name&gt;) |</p>
+<p>STDEV (&lt;Qualified-Field-Name&gt;) |</p>
+<p>ANY (&lt;Qualified-Field-Name&gt;)</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;berechnet exp&gt;</p></td>
-<td><p>CALC(&lt;Ausdruck&gt;)</p></td>
+<td><p>&lt;berechnet-Exp&gt;</p></td>
+<td><p>CALC (&lt;Ausdruck&gt;)</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;qualifizierte Feldname&gt;</p></td>
-<td><p>&lt;Alias&gt;. [&lt;Alias&gt;...] &lt;Feldnamen&gt;</p></td>
+<td><p>&lt;Qualified-Field-Name&gt;</p></td>
+<td><p>&lt;Alias&gt;. [&lt;Alias&gt;...] &lt;Feldname&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;Alias&gt;</p></td>
-<td><p>&lt;Quoted-name&gt;</p></td>
+<td><p>&lt;zitiert-Name&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Name des Felds&gt;</p></td>
-<td><p>&lt;Quoted-Name&gt; [[AS] &lt;Alias&gt;]</p></td>
+<td><p>&lt;Feldname&gt;</p></td>
+<td><p>&lt;Anführungs&gt; Zeichen-Name [ &lt;[&gt;as] Alias]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Quoted-name&gt;</p></td>
+<td><p>&lt;zitiert-Name&gt;</p></td>
 <td><p>&quot;&lt;Zeichenfolge&gt;&quot; |</p>
-<p>'&lt;Zeichenfolge&gt;' |</p>
-<p>[&lt;Zeichenfolge&gt;] |</p>
-<p>&lt;Name&gt;</p></td>
+<p>'&lt;Zeichen&gt;Folge ' |</p>
+<p>[&lt;Zeichen&gt;Folge] |</p>
+<p>&lt;Namen&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Vollständiger name&gt;</p></td>
-<td><p>Alias [.alias...]</p></td>
+<td><p>&lt;qualifizierter Name&gt;</p></td>
+<td><p>Alias [. Alias...]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Name&gt;</p></td>
-<td><p>Alpha [Alpha | Ziffer | _ | # |: |...]</p></td>
+<td><p>&lt;Namen&gt;</p></td>
+<td><p>Alpha [alpha | Ziffer | _ | # |: |...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;number&gt;</p></td>
+<td><p>&lt;Anzahl&gt;</p></td>
 <td><p>Ziffer [Ziffer...]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;neue exp&gt;</p></td>
-<td><p>NEUE &lt;Feldtyp&gt; [(&lt;Anzahl&gt; [, &lt;Anzahl&gt;])]</p></td>
+<td><p>&lt;neu-Exp&gt;</p></td>
+<td><p>Neuer &lt;field-type&gt; [(&lt;Number&gt; [, &lt;Number&gt;])]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Feldtyp&gt;</p></td>
+<td><p>&lt;Field-Typ&gt;</p></td>
 <td><p>Ein OLE DB- oder ADO-Datentyp.</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Zeichenfolge&gt;</p></td>
-<td><p>Unicode-Zeichen [Unicode-Zeichen...]</p></td>
+<td><p>&lt;string&gt;</p></td>
+<td><p>Unicode-Char [Unicode-Char...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;expression&gt;</p></td>
+<td><p>&lt;Ausdruck&gt;</p></td>
 <td><p>Ein Visual Basic für Applikationen-Ausdruck, dessen Operanden andere Nicht-CALC-Spalten in der gleichen Zeile sind.</p></td>
 </tr>
 </tbody>

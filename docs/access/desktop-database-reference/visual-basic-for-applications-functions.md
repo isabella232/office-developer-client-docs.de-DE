@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 00bbbce065cd27819687667a2856de951ed9a328
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302793"
 ---
-# <a name="visual-basic-for-applications-functions"></a>Visual Basic für Applikationen (Funktionen)
+# <a name="visual-basic-for-applications-functions"></a>Funktionen (Visual Basic for Applications)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Die folgenden Funktionen von Visual Basic für Applikationen können für die Datenstrukturierung von CALC-Ausdrücken verwendet werden:
 
@@ -34,7 +34,7 @@ Die folgenden Funktionen von Visual Basic für Applikationen können für die Da
 <tr class="odd">
 <td><p>Abs</p></td>
 <td><p>Asc</p></td>
-<td><p>Atn</p></td>
+<td><p>Arc Tan</p></td>
 <td><p>CBool</p></td>
 <td><p>CByte</p></td>
 <td><p>CCur</p></td>
@@ -45,10 +45,10 @@ Die folgenden Funktionen von Visual Basic für Applikationen können für die Da
 <td><p>Chr</p></td>
 <td><p>ChrB</p></td>
 <td><p>ChrW</p></td>
-<td><p>Chr$</p></td>
+<td><p>Chr $</p></td>
 </tr>
 <tr class="odd">
-<td><p>ChrB$</p></td>
+<td><p>ChrB $</p></td>
 <td><p>CInt</p></td>
 <td><p>CLng</p></td>
 <td><p>Cos</p></td>
@@ -56,11 +56,11 @@ Die folgenden Funktionen von Visual Basic für Applikationen können für die Da
 <td><p>CStr</p></td>
 </tr>
 <tr class="even">
-<td><p>Cvar</p></td>
+<td><p>CVaR</p></td>
 <td><p>CVDate</p></td>
 <td><p>CVErr</p></td>
-<td><p>Date</p></td>
-<td><p>Date$</p></td>
+<td><p>Datum</p></td>
+<td><p>Datum $</p></td>
 <td><p>DateAdd</p></td>
 </tr>
 <tr class="odd">
@@ -69,20 +69,20 @@ Die folgenden Funktionen von Visual Basic für Applikationen können für die Da
 <td><p>DateSerial</p></td>
 <td><p>DateValue</p></td>
 <td><p>Tag</p></td>
-<td><p>DDB</p></td>
+<td><p>GDA</p></td>
 </tr>
 <tr class="even">
 <td><p>Fehler</p></td>
-<td><p>Error$</p></td>
+<td><p>Fehler $</p></td>
 <td><p>Exp</p></td>
-<td><p>Fix</p></td>
+<td><p>Behebung</p></td>
 <td><p>Format</p></td>
-<td><p>Format$</p></td>
+<td><p>Format $</p></td>
 </tr>
 <tr class="odd">
-<td><p>FV</p></td>
+<td><p>ZW</p></td>
 <td><p>Hex</p></td>
-<td><p>Hex$</p></td>
+<td><p>Hex $</p></td>
 <td><p>Stunde</p></td>
 <td><p>IIF</p></td>
 <td><p>InStr</p></td>
@@ -90,96 +90,96 @@ Die folgenden Funktionen von Visual Basic für Applikationen können für die Da
 <tr class="even">
 <td><p>Int</p></td>
 <td><p>IPmt</p></td>
-<td><p>IRR</p></td>
+<td><p>IKV</p></td>
 <td><p>IsDate</p></td>
 <td><p>IsEmpty</p></td>
 <td><p>ISTFEHLER</p></td>
 </tr>
 <tr class="odd">
-<td><p>IsNull</p></td>
+<td><p>IstNull</p></td>
 <td><p>IsNumeric</p></td>
 <td><p>IsObject</p></td>
 <td><p>LCase</p></td>
-<td><p>LCase$</p></td>
-<td><p>Linksbündig</p></td>
+<td><p>LCase $</p></td>
+<td><p>Left</p></td>
 </tr>
 <tr class="even">
-<td><p>LeftB</p></td>
-<td><p>Left$</p></td>
-<td><p>LeftB$</p></td>
-<td><p>Len</p></td>
-<td><p>Log</p></td>
+<td><p>LINKSB</p></td>
+<td><p>Left $</p></td>
+<td><p>LINKSB $</p></td>
+<td><p>Länge</p></td>
+<td><p>Protokoll</p></td>
 <td><p>LTrim</p></td>
 </tr>
 <tr class="odd">
-<td><p>LTrim$</p></td>
+<td><p>LTrim $</p></td>
 <td><p>Mid</p></td>
-<td><p>Mid$</p></td>
+<td><p>Mid $</p></td>
 <td><p>Minute</p></td>
 <td><p>MIRR</p></td>
 <td><p>Monat</p></td>
 </tr>
 <tr class="even">
 <td><p>Now</p></td>
-<td><p>NPer</p></td>
-<td><p>NPV</p></td>
-<td><p>Oct</p></td>
-<td><p>Oct$</p></td>
-<td><p>Pmt</p></td>
+<td><p>ZZR</p></td>
+<td><p>NBW</p></td>
+<td><p>Okt</p></td>
+<td><p>Okt $</p></td>
+<td><p>RMZ</p></td>
 </tr>
 <tr class="odd">
 <td><p>PPmt</p></td>
-<td><p>PV</p></td>
+<td><p>BW</p></td>
 <td><p>QBColor</p></td>
-<td><p>Rate</p></td>
+<td><p>Zins</p></td>
 <td><p>RGB</p></td>
-<td><p>Rechtsbündig</p></td>
+<td><p>Recht</p></td>
 </tr>
 <tr class="even">
-<td><p>RightB</p></td>
-<td><p>Right$</p></td>
-<td><p>RightB$</p></td>
+<td><p>RECHTSB</p></td>
+<td><p>Right $</p></td>
+<td><p>RECHTSB $</p></td>
 <td><p>Rnd</p></td>
-<td><p>RTrim</p></td>
-<td><p>RTrim$</p></td>
+<td><p>RGlätten</p></td>
+<td><p>RTrim $</p></td>
 </tr>
 <tr class="odd">
 <td><p>Zweiter</p></td>
 <td><p>Sgn</p></td>
 <td><p>Sin</p></td>
-<td><p>SLN</p></td>
-<td><p>Space</p></td>
-<td><p>Space$</p></td>
+<td><p>LIA</p></td>
+<td><p>Leerzeichen</p></td>
+<td><p>Platz $</p></td>
 </tr>
 <tr class="even">
 <td><p>Sqr</p></td>
 <td><p>Str</p></td>
-<td><p>Str$</p></td>
+<td><p>Str $</p></td>
 <td><p>StrComp</p></td>
 <td><p>StrConv</p></td>
-<td><p>String</p></td>
+<td><p>Zeichenfolge</p></td>
 </tr>
 <tr class="odd">
-<td><p>String$</p></td>
-<td><p>SYD</p></td>
-<td><p>Tan</p></td>
+<td><p>Zeichenfolge $</p></td>
+<td><p>DIA</p></td>
+<td><p>Gelbbraun</p></td>
 <td><p>Time</p></td>
-<td><p>Time$</p></td>
+<td><p>Zeit $</p></td>
 <td><p>Timer</p></td>
 </tr>
 <tr class="even">
 <td><p>TimeSerial</p></td>
 <td><p>TimeValue</p></td>
-<td><p>Trim</p></td>
-<td><p>Trim$</p></td>
+<td><p>Glätten</p></td>
+<td><p>Trimmen von $</p></td>
 <td><p>TypeName</p></td>
 <td><p>UCase</p></td>
 </tr>
 <tr class="odd">
-<td><p>UCase$</p></td>
+<td><p>UCase $</p></td>
 <td><p>Val</p></td>
 <td><p>VarType</p></td>
-<td><p>Weekday</p></td>
+<td><p>Wochentag</p></td>
 <td><p>Jahr</p></td>
 <td><p><br />
 </p></td>

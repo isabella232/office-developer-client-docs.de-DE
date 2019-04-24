@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Filter-Eigenschaft (DAO)
+title: Recordset2. Filter-Eigenschaft (DAO)
 TOCTitle: Filter Property
 ms:assetid: 5b3b4e18-8af4-5acd-a129-513ba2d913d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194529(v=office.15)
@@ -12,18 +12,18 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 19f3c017aa5d4a353f3e832a3678d921565ea822
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307329"
 ---
-# <a name="recordset2filter-property-dao"></a>Recordset2.Filter-Eigenschaft (DAO)
+# <a name="recordset2filter-property-dao"></a>Recordset2. Filter-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der die in einem nachfolgend geöffneten **Recordset** -Objekt enthaltenen Datensätze bestimmt, oder gibt diesen Wert zurück (nur Microsoft Access-Arbeitsbereich). Lese-/Schreibzugriff **String**.
+Legt einen Wert fest, der feststellt, welche Datensätze in einem nachfolgend geöffneten **Recordset**-Objekt einbezogen werden, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche). **String**-Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,13 +35,13 @@ Legt einen Wert fest, der die in einem nachfolgend geöffneten **Recordset** -Ob
 
 Die Einstellung bzw. der Rückgabewert ist ein String-Datentyp, der die WHERE-Klausel einer SQL-Anweisung ohne das reservierte Wort WHERE enthält.
 
-Verwenden Sie die **Filter** -Eigenschaft, um einen Filter auf ein Dynaset, Snapshot oder vorwärts Typ **Recordset** -Objekt anwenden.
+Verwenden Sie die **Filter**-Eigenschaft zum Anwenden eines Filters auf ein **Recordset**-Objekt vom Typ "Dynaset", "Snapshot" oder "Forward-only".
 
-Mit der **Filter** -Eigenschaft können Sie die Datensätze beschränken, die von einem vorhandenen Objekt zurückgegeben werden, wenn ein neues **Recordset** -Objekt basierend auf einem vorhandenen **Recordset** -Objekt geöffnet wird.
+Mit der **Filter**-Eigenschaft können Sie die Datensätze beschränken, die von einem vorhandenen Objekt zurückgegeben werden, wenn ein neues **Recordset**-Objekt basierend auf einem vorhandenen **Recordset**-Objekt geöffnet wird.
 
-Verwenden Sie das US-Datumsformat (Monat-Tag-Jahr) Wenn Sie Felder mit Datumsangaben filtern, auch wenn Sie nicht die US-Version von Microsoft Access-Datenbankmodul verwenden (in diesem Fall Sie alle Datumsangaben durch Verketten von Zeichenfolgen, beispielsweise StrMonth & zusammensetzen müssen "-" _ aMP_ StrDay & "-" & erstellen). Andernfalls können die Daten nicht gefiltert werden, wie erwartet.
+Verwenden Sie das US-Datumsformat (Monat-Tag-Jahr) beim Filtern von Feldern, die Datumsangaben enthalten, auch wenn Sie nicht die US-Version des Microsoft Access-Datenbankmoduls verwenden (in diesem Fall müssen Sie Datumsangaben durch Verketten von Zeichenfolgen zusammensetzen, beispielsweise strMonth & "-" _ aMP_ strDay & "-" & strYear). Andernfalls werden die Daten möglicherweise nicht wie erwartet gefiltert.
 
-In vielen Fällen geht es schneller, ein neues **Recordset** -Objekt mithilfe einer SQL-Anweisung zu öffnen, die eine WHERE-Klausel enthält.
+In vielen Fällen ist es schneller, ein neues **Recordset**-Objekt zu öffnen, indem Sie eine SQL-Anweisung mit einer WHERE-Klausel verwenden.
 
-Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Ganzzahl-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrFilter = "PRICE \> " &-LngPrice und LngPrice = 125,50), ein Fehler tritt auf, wenn Sie versuchen, Öffnen Sie das nächste **Recordset-Objekt**. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.
+Wenn Sie die-Eigenschaft auf eine Zeichenfolge festlegen, die mit einem nicht-ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht-U. S. Decimal-Zeichen wie ein Komma (beispielsweise strFilter \> = "Price" & lngPrice und lngPrice = 125, 50) angeben, tritt ein Fehler auf, wenn Sie versuchen, Öffnen Sie das nächste **Recordset**-Objekt. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.
 

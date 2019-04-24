@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 26eaa93a1abbb3778a2735d50dd5022edb3023d9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306223"
 ---
 # <a name="using-ado-with-microsoft-visual-basic"></a>Verwenden von ADO mit Microsoft Visual Basic
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Einrichten eines ADO-Projekts und das Schreiben von ADO-Code verläuft bei Verwendung von Visual Basic und Visual Basic für Applikationen ähnlich. In diesem Thema wird die Verwendung von ADO mit Visual Basic und mit Visual Basic für Applikationen behandelt, und etwaige Unterschiede werden genannt.
 
@@ -58,7 +58,7 @@ Zum Erstellen einer Automatisierungsvariablen und einer Instanz eines Objekts f�
 
 ### <a name="dim"></a>Dim
 
-Sie können das **New** -Schlüsselwort mit **Dim** zum Deklarieren und Instanziieren von ADO-Objekten in einem einzigem Schritt verwenden:
+Sie können das **New**-Schlüsselwort mit **Dim** zum Deklarieren und Instanziieren von ADO-Objekten in einem einzigem Schritt verwenden:
 
 ```vb 
  
@@ -74,7 +74,7 @@ Set conn = New ADODB.Connection
 ```
 
 > [!NOTE]
-> Es ist nicht erforderlich, das progid ADODB explizit zu verwenden, mit der **Dim** -Anweisung, vorausgesetzt, dass Sie ordnungsgemäß auf die ADO-Bibliothek in Ihrem Projekt verwiesen haben. Ihre Verwendung stellt jedoch sicher, dass keine Namenskonflikte mit anderen Bibliotheken auftreten.
+> Es ist nicht erforderlich, die ADODB-ProgID explizit mit der **Dim** -Anweisung zu verwenden, vorausgesetzt, Sie haben ordnungsgemäß auf die ADO-Bibliothek in Ihrem Projekt verwiesen. Ihre Verwendung stellt jedoch sicher, dass keine Namenskonflikte mit anderen Bibliotheken auftreten.
 > 
 > Wenn Sie z. B. im gleichen Projekt Verweise auf ADO und auf DAO einschließen, schließen Sie wie im folgenden Code einen Qualifizierer ein, um anzugeben, welches Objektmodell beim Instanziieren von **Recordset** -Objekten verwendet werden soll:  
 > 
@@ -84,7 +84,7 @@ Set conn = New ADODB.Connection
 
 ### <a name="createobject"></a>CreateObject
 
-Bei der **CreateObject** -Methode müssen Deklaration und Objektinstanziierung in zwei getrennten Schritten erfolgen:
+Bei der **CreateObject**-Methode müssen Deklaration und Objektinstanziierung in zwei getrennten Schritten erfolgen:
 
 ```vb 
  
@@ -105,7 +105,7 @@ Das Instanziieren von Objekten mit der **CreateObject** -Methode ist normalerwei
 
 ## <a name="handling-events"></a>Behandeln von Ereignissen
 
-Zum Behandeln von ADO-Ereignisse in Microsoft Visual Basic müssen Sie eine Variable auf Modulebene mithilfe des **WithEvents** -Schlüsselworts deklarieren. Die Variable kann nur als Teil eines Klassenmoduls deklariert werden und muss auf der Modulebene deklariert werden. Eine ausführlichere Erläuterung der ADO-Ereignisse behandeln, finden Sie unter [Kapitel 7: Behandeln von ADO-Ereignisse](chapter-7-handling-ado-events.md).
+Um ADO-Ereignisse in Microsoft Visual Basic zu behandeln, müssen Sie eine Variable auf Modulebene mit dem **WithEvents** -Schlüsselwort deklarieren. Die Variable kann nur als Teil eines Klassenmoduls deklariert werden und muss auf der Modulebene deklariert werden. Eine ausführlichere Erläuterung zur Behandlung von ADO-Ereignissen finden Sie in [Kapitel 7: Behandeln von ADO-Ereignissen](chapter-7-handling-ado-events.md).
 
 ## <a name="visual-basic-examples"></a>Visual Basic-Beispiele
 

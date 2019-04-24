@@ -1,5 +1,5 @@
 ---
-title: Relations-Member (DAO)
+title: Relations-Elemente (DAO)
 TOCTitle: Relations Members
 ms:assetid: b885db68-cee2-c5d7-1f1b-1f53eeae8308
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822446(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a53b7170568c535ed2321a902796af2f942f6808
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306951"
 ---
-# <a name="relations-members-dao"></a>Relations-Member (DAO)
+# <a name="relations-members-dao"></a>Relations-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Eine Relations-Auflistung enthält gespeicherte Relation-Objekte für ein Database-Objekt (nur für Microsoft Access-Datenbanken).
 
@@ -36,7 +36,7 @@ Eine Relations-Auflistung enthält gespeicherte Relation-Objekte für ein Databa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="relations-append-method-dao.md">Anfügen</a></strong></p></td>
+<td><p><strong><a href="relations-append-method-dao.md">Append</a></strong></p></td>
 <td><p>Fügt der <strong>Relations</strong>-Auflistung ein neues <strong>Relation</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Eine Relations-Auflistung enthält gespeicherte Relation-Objekte für ein Databa
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="relations-count-property-dao.md">Count</a></strong></p></td>
-<td><p>Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
+<td><p>Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgeschützt.</p></td>
 </tr>
 </tbody>
 </table>

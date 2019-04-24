@@ -1,5 +1,5 @@
 ---
-title: Resync Command dynamische-Eigenschaft (ADO)
+title: Resync Command Dynamic-Eigenschaft (ADO)
 TOCTitle: Resync Command dynamic property (ADO)
 ms:assetid: 5c0c0819-620a-6eb0-a217-69113ec8d094
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249322(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: aa1fe05e6aa7edf04ad74864eb30a03403323c8e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306580"
 ---
-# <a name="resync-command-dynamic-property-ado"></a>Resync Command dynamische-Eigenschaft (ADO)
+# <a name="resync-command-dynamic-property-ado"></a>Resync Command Dynamic-Eigenschaft (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Gibt eine vom Benutzer bereitgestellte Befehlszeichenfolge an, die von der [Resync](resync-method-ado.md)-Methode ausgegeben wird, um die Daten in der Tabelle zu aktualisieren, die in der dynamischen [Unique Table](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md)-Eigenschaft genannt ist.
+Es wird eine vom Benutzer bereitgestellte Befehlszeichenfolge angegeben, die von der [Resync](resync-method-ado.md)-Methode ausgegeben wird, um die Daten in der Tabelle, die in der dynamischen [Unique Table](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md)-Eigenschaft genannt ist, zu aktualisieren.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **String** festgelegt oder zurückgegeben, bei dem es sich um eine Befehlszeichenfolge handelt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das [Recordset](recordset-object-ado.md)-Objekt ist das Ergebnis einer für mehrere Basistabellen ausgeführten JOIN-Operation. Die betroffenen Zeilen hängen von der *AffectRecords* -Parameter der [Resync](resync-method-ado.md) -Methode. Die standardmäßige **Resync** -Methode wird ausgeführt, wenn die Eigenschaften [Unique Table](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md) und **Resync Command** nicht festgelegt sind.
+Das [Recordset](recordset-object-ado.md)-Objekt ist das Ergebnis einer für mehrere Basistabellen ausgeführten JOIN-Operation. Die betroffenen Zeilen hängen vom *AffectRecords*-Parameter der [Resync](resync-method-ado.md)-Methode ab. Die standardmäßige **Resync**-Methode wird ausgeführt, wenn die Eigenschaften [Unique Table](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md) und **Resync Command** nicht festgelegt sind.
 
 Die Befehlszeichenfolge der **Resync Command** -Eigenschaft ist ein parametrisierter Befehl oder eine gespeicherte Prozedur, der bzw. die die zu aktualisierende Zeile eindeutig identifiziert und eine einzelne Zeile zurückgibt, die die gleiche Anzahl und Reihenfolge der Spalten wie die zu aktualisierende Zeile enthält. Die Befehlszeichenfolge enthält einen Parameter für jede Primärschlüsselspalte in der **Unique Table** -Eigenschaft; andernfalls wird ein Laufzeitfehler zurückgegeben. Die Parameter werden automatisch mit Primärschlüsselwerten aus der zu aktualisierenden Zeile gefüllt.
 
@@ -71,11 +71,11 @@ Es folgen zwei auf SQL basierende Beispiele:
         WHERE Orders.ordid  = @ordid
     ```
 
-    Die **Resync Command** -Eigenschaft wird festgelegt auf:
+    Die **Resync Command**-Eigenschaft wird festgelegt auf:
 
     `"{call CustordersResync (?)}"`
 
 Die **Unique Table**-Eigenschaft hat wiederum den Wert *Orders*, und der Primärschlüssel, *OrderID*, ist parametrisiert.
 
-**Resync Command** ist eine dynamische Eigenschaft, die an die **Properties**-Auflistung des [Recordset](properties-collection-ado.md) -Objekts angefügt wird, wenn die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft auf **adUseClient** festgelegt ist.
+**Resync Command** ist eine dynamische Eigenschaft, die an die [Properties](properties-collection-ado.md)-Auflistung des **Recordset**-Objekts angefügt wird, wenn die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft auf **adUseClient** festgelegt ist.
 

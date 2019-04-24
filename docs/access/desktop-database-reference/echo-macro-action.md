@@ -1,5 +1,5 @@
 ---
-title: Echo-Makroaktion (Access PC-Datenbank-Referenz)
+title: Echo-Makroaktion (Access-Desktop-Daten Bankreferenz)
 TOCTitle: Echo macro action
 ms:assetid: 38dfb2cf-8db5-44b3-91fa-e490932b940b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192516(v=office.15)
@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7d536ed47c780b7f9f1675a9879e86aeff80b67f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293623"
 ---
 # <a name="echo-macro-action"></a>Echo-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die **Echo** -Aktion können Sie angeben, ob Echo aktiviert ist. Beispielsweise können Sie diese Aktion verwenden, um auszublenden oder die Ergebnisse eines Makros anzuzeigen, während der Ausführung.
+Sie können die **Echo** -Aktion verwenden, um anzugeben, ob Echo eingeschaltet ist. Sie können diese Aktion beispielsweise verwenden, um die Ergebnisse eines Makros während der Ausführung ein-oder auszublenden.
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
+> Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
 
 Die **Echo** -Aktion hat die folgenden Argumente.
 
@@ -40,32 +40,32 @@ Die **Echo** -Aktion hat die folgenden Argumente.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Klicken Sie auf dem Bildschirm</strong></p></td>
-<td><p>Klicken Sie auf <strong>Ja</strong> (Echo aktivieren) oder auf <strong>Nein</strong> (Echo deaktivieren) im Feld <strong>Echo</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators. Die Standardeinstellung ist <strong>Ja</strong>.</p></td>
+<td><p><strong>Echo ein</strong></p></td>
+<td><p>Klicken Sie im Feld <strong>Echo on</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator auf <strong>Ja</strong> (Echo aktivieren) oder <strong>Nein</strong> (Echo aus). Die Standardeinstellung ist <strong>Ja</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Statusleistentext</strong></p></td>
-<td><p>Der Text in der Statusleiste angezeigt, wenn Echo ausgeschaltet wird angezeigt. Beispielsweise wenn Echo deaktiviert ist, die Statusleiste kann anzeigen &quot;das Makro ausgeführt wird.&quot;</p></td>
+<td><p>Der Text, der in der Statusleiste angezeigt werden soll, wenn ECHO deaktiviert ist. Wenn Echo beispielsweise deaktiviert ist, kann in der Statusleiste angezeigt &quot;werden, dass das Makro gerade läuft.&quot;</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Beim Ausführen ein Makros, zeigt der Bildschirm häufig Informationen nicht entscheidend für das Funktionieren des Makros. Wenn Sie das Argument **Echo** auf **Nein**festlegen, wird das Makro ausgeführt, ohne dass den Bildschirm aktualisiert. Wenn das Makro abgeschlossen ist, werden von Access automatisch Echo wieder eingeschaltet und wird das Fenster aktualisiert. Die Einstellung " **No** " für das Argument **Echo** wirkt sich nicht auf die Funktionalität des Makros oder die Ergebnisse aus.
+Wenn ein Makro ausgeführt wird, zeigt die Bildschirmaktualisierung oft Informationen an, die für das Funktionieren des Makros nicht unbedingt erforderlich sind. Wenn Sie das Argument **Echo auf** **Nein**festlegen, wird das Makro ohne Aktualisieren des Bildschirms ausgeführt. Nach Abschluss des Makros schaltet Access das Echo automatisch wieder ein und zeichnet das Fenster neu. Die Einstellung **keine** für das Argument **Echo on wirkt sich** nicht auf die Funktionalität des Makros oder seiner Ergebnisse aus.
 
-Die **Echo** -Aktion unterdrückt nicht die Anzeige von modale Dialogfelder, wie Fehlermeldungen oder Popup Formulare, z. B. Eigenschaftenseiten. Können Dialogfeldern und pop-up-Formulare zum Sammeln und Anzeigen von Informationen, selbst wenn Echo deaktiviert ist. Um alle Nachricht oder Dialogfelder außer Fehlermeldungsfelder und Dialogfelder, in denen den Benutzer zur Eingabe von Informationen zu unterdrücken, verwenden Sie die **Warnmeldungen** -Aktion.
+Die **Echo** -Aktion unterdrückt die Anzeige von modalen Dialogfeldern wie beispielsweise Fehlermeldungen oder Popupformularen wie z. b. Eigenschaftenblätter nicht. Sie können Dialogfelder und Popupformulare verwenden, um Informationen zu erfassen oder anzuzeigen, auch wenn ECHO deaktiviert ist. Verwenden Sie die **Warn** Meldungen-Aktion, um alle Nachrichten oder Dialogfelder außer Fehler Meldungsfeldern und Dialogfeldern zu unterdrücken, in denen der Benutzerinformationen eingeben muss.
 
-Sie können die **Echo** -Aktion in einem Makro nur einmal ausführen. Dadurch können Sie den Text in der Statusleiste ändern, während das Makro ausgeführt wird.
+Sie können die **Echo** -Aktion in einem Makro mehrmals ausführen. Auf diese Weise können Sie den Text der Statusleiste ändern, während das Makro ausgeführt wird.
 
-Wenn Sie Echo deaktivieren, können Sie die **Anzeigensanduhrzeiger** -Aktion verwenden, so ändern Sie den Mauszeiger in ein Sanduhrsymbol (oder jegliches Mauszeigersymbol festlegen "Beschäftigt") visuell bereitstellen, auf denen das Makro ausgeführt wird.
+Wenn Sie Echo deaktivieren, können Sie die **anzeigen Sanduhrzeiger** -Aktion verwenden, um den Mauszeiger in ein Sanduhrsymbol zu ändern (oder für das Mauszeiger Symbol, das Sie für "busy" festgelegt haben), um einen visuellen Hinweis darauf zu geben, dass das Makro ausgeführt wird.
 
-Um die **Echo** -Aktion in einem Visual Basic für Applikationen (VBA)-Modul auszuführen, verwenden Sie die **Echo** -Methode des **DoCmd** -Objekts.
+Verwenden Sie die **Echo** -Methode des **DoCmd** -Objekts, um die **Echo** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 
 ## <a name="examples"></a>Beispiele
 
 ### <a name="set-the-value-of-a-control-by-using-a-macro"></a>Festlegen des Werts eines Steuerelements mithilfe eines Makros
 
-Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche auf dem Formular Lieferanten geöffnet. Es wird die Verwendung der **Echo**, **CloseWindow**, **ÖffnenFormular**, **SetzenWert**und **GeheZuSteuerelement** -Aktionen. Die **SetzenWert** -Aktion wird das Steuerelement Lieferanten-ID auf dem Formular auf den aktuellen Lieferanten im Formular Suppliers angezeigt. Klicken Sie dann die **GeheZuSteuerelement** -Aktion verschiebt den Fokus auf das Feld Kategorie-ID, beginnen Sie können Daten für das neue Produkt eingeben. Dieses Makro sollte der Schaltfläche Artikel hinzufügen im Formular Lieferanten zugeordnet werden.
+Das folgende Makro öffnet das Formular zum Hinzufügen von Produkten über eine Schaltfläche im Formular für Lieferanten. Es zeigt die Verwendung der Aktionen **Echo**, **FensterSchließen**, **ÖffnenFormular**, **SetzenWert ** und **GeheZuSteuerelement**. Mit **** der SetValue-Aktion wird das Lieferanten-ID-Steuerelement im Formular Produkte auf den aktuellen Lieferanten im Formular Lieferanten festgelegt. Die **gotoCONTROL** -Aktion verschiebt dann den Fokus auf das Feld Kategorie-ID, in dem Sie mit der Eingabe von Daten für das neue Produkt beginnen können. Dieses Makro sollte der Schaltfläche zum Hinzufügen von Produkten im Formular für Lieferanten zugeordnet werden.
 
 <table>
 <colgroup>
@@ -87,24 +87,24 @@ Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche
 <td><p>Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>FensterSchließen</strong></p></td>
-<td><p><strong>Objekttyp</strong>: <strong>FormObject Name</strong>: Produkt Liste <strong>Speichern</strong>: <strong>Nein</strong></p></td>
+<td><p><strong>Fenster schließen</strong></p></td>
+<td><p><strong>Objekttyp</strong>: <strong>Formularobjekt Name</strong>: Produktlisten <strong>Speicher</strong>: <strong>Nein</strong></p></td>
 <td><p>Schließen des Produktlistenformulars</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>ÖffnenFormular</strong></p></td>
-<td><p><strong>Formularname</strong>: Produkte <strong>Anzeigen</strong>: <strong>FormData Modus</strong>: <strong>Fenster hinzufügen Modus</strong>: <strong>Normal</strong></p></td>
+<td><p><strong>OpenForm</strong></p></td>
+<td><p><strong>Formular Name</strong>: Produkt <strong>Ansicht</strong>: <strong>FormData Modus</strong>: <strong>addwindow Mode</strong>: <strong>Normal</strong></p></td>
 <td><p>Öffnen des Produktformulars</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SetzenWert</strong></p></td>
-<td><p><strong>Artikel</strong>: [Formulare]! [Artikel]! [Lieferanten-Nr] <strong>Ausdruck</strong>: SupplierID</p></td>
-<td><p>Legen Sie das Steuerelement auf den aktuellen Lieferanten im Formular Suppliers angezeigt.</p></td>
+<td><p><strong>Element</strong>: [Formulare]! [Products]! LieferantenNr <strong>Ausdruck</strong>: Lieferanten-Nr.</p></td>
+<td><p>Legen Sie das Lieferanten-ID-Steuerelement auf den aktuellen Lieferanten im Formular Lieferanten fest.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>GoToControl</strong></p></td>
 <td><p><strong>Steuerelementname</strong>: CategoryID</p></td>
-<td><p>Wechseln Sie auf die Kategorie-ID-Steuerelement.</p></td>
+<td><p>Wechseln Sie zum Steuerelement Category ID.</p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +112,7 @@ Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche
 
 ### <a name="synchronize-forms-by-using-a-macro"></a>Synchronisieren von Formularen mithilfe eines Makros
 
-Mit dem folgende Makro wird das Formular Artikelliste geöffnet, in der unteren rechten Ecke des Formulars Lieferanten, die aktuellen Lieferanten anzeigen. Es zeigt die Verwendung der Aktionen **Echo**, **MessageBox**, **GoToControl**, **StopMakro**, **OpenForm** und **MoveAndSizeWindow**. Es veranschaulicht außerdem die Verwendung eines bedingten Ausdrucks mit den Aktionen **MessageBox**, **GoToControl** und **StopMakro**. Dieses Makro sollte der Schaltfläche für die Überprüfung der Produkte im Lieferantenformular zugeordnet werden.
+Mit dem folgenden Makro wird das Produktlisten Formular in der unteren rechten Ecke des Formulars Lieferanten geöffnet, in dem die Produkte des aktuellen Lieferanten angezeigt werden. Es zeigt die Verwendung der Aktionen **Echo**, **MessageBox**, **GoToControl**, **StopMakro**, **OpenForm** und **MoveAndSizeWindow**. Es veranschaulicht außerdem die Verwendung eines bedingten Ausdrucks mit den Aktionen **MessageBox**, **GoToControl** und **StopMakro**. Dieses Makro sollte der Schaltfläche für die Überprüfung der Produkte im Lieferantenformular zugeordnet werden.
 
 <table>
 <colgroup>
@@ -137,9 +137,9 @@ Mit dem folgende Makro wird das Formular Artikelliste geöffnet, in der unteren 
 <td><p>Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</p></td>
 </tr>
 <tr class="even">
-<td><p>IsNull ([Lieferanten-Nr])</p></td>
+<td><p>IsNull ([Lieferanten-ID])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message</strong>: Wechseln Sie zum Datensatz des Lieferanten, dessen Produkte Sie anzeigen möchten, und klicken Sie dann erneut auf die Schaltfläche für die Überprüfung der Produkte. <strong>Signalton</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: Lieferanten auswählen</p></td>
+<td><p><strong>Message</strong>: Wechseln Sie zum Datensatz des Lieferanten, dessen Produkte Sie anzeigen möchten, und klicken Sie dann erneut auf die Schaltfläche für die Überprüfung der Produkte. <strong>Beep</strong>: <strong>jatyp</strong>: <strong>Keinetitel</strong>: Wählen Sie einen Zulieferer aus</p></td>
 <td><p>Wenn im Lieferantenformular kein aktueller Lieferant vorhanden ist, zeigen Sie eine Meldung an.</p></td>
 </tr>
 <tr class="odd">
@@ -157,13 +157,13 @@ Mit dem folgende Makro wird das Formular Artikelliste geöffnet, in der unteren 
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>Formularname</strong>: Produkt Liste <strong>Anzeigen</strong>: <strong>DatasheetFilter Name</strong>: <strong>Bedingung</strong>: [Lieferanten-Nr] = [Formulare]! [Lieferanten]! [Lieferanten-Nr] <strong>Datenmodus</strong>: <strong>OnlyWindow Lesemodus</strong>: <strong>Normal</strong></p></td>
+<td><p><strong>Formularname</strong>: Produktlisten <strong>Ansicht</strong>: <strong>Datenblatt Filtername</strong>: <strong>Where Condition</strong>: [Supplier ID] = [Forms]! [Lieferanten]! LieferantenNr <strong>Datenmodus</strong>: <strong>Lese-schreibgeschütztfenstermodus-Modus</strong>: <strong>Normal</strong></p></td>
 <td><p>Öffnen Sie das Produktlistenformular, und ziegen Sie die Produkte des aktuellen Lieferanten an.</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><strong>MoveAndSizeWindow</strong></p></td>
-<td><p><strong>Rechts</strong>: 0.7799&quot; <strong>nach unten</strong>: 1,8&quot;</p></td>
+<td><p><strong>Verschiebenundgrößeändernfenster</strong></p></td>
+<td><p><strong>rechts</strong>: 0,7799&quot; <strong>unten</strong>: 1,8&quot;</p></td>
 <td><p>Positionieren Sie das Produktlistenformular in der unteren rechten Ecke des Lieferantenformulars.</p></td>
 </tr>
 </tbody>

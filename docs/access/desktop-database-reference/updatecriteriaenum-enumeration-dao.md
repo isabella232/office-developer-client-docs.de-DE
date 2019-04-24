@@ -1,5 +1,5 @@
 ---
-title: UpdateCriteriaEnum (Aufzählung) (DAO)
+title: UpdateCriteriaEnum-Aufzählung (DAO)
 TOCTitle: UpdateCriteriaEnum Enumeration
 ms:assetid: 1f83a0c6-bdc8-9c3e-380b-524f611f6476
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845853(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e27eb1bdfb9b393df76af8bdf54bc7f05fd82c2e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306370"
 ---
-# <a name="updatecriteriaenum-enumeration-dao"></a>UpdateCriteriaEnum (Aufzählung) (DAO)
+# <a name="updatecriteriaenum-enumeration-dao"></a>UpdateCriteriaEnum-Aufzählung (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Hiermit geben Sie zusammen mit der **UpdateOptions**-Methode an, wie eine Batchaktualisierung erstellt wird.
 
@@ -61,7 +61,7 @@ Hiermit geben Sie zusammen mit der **UpdateOptions**-Methode an, wie eine Batcha
 <td><p>Verwendet nur die Zeitstempelspalte, soweit vorhanden (ein Laufzeitfehler wird generiert, falls im Resultset keine Zeitstempelspalte vorhanden ist).</p></td>
 </tr>
 <tr class="even">
-<td><p>dbCriteriaUpdate</p></td>
+<td><p>Werden dbCriteriaUpdate</p></td>
 <td><p>32</p></td>
 <td><p>Verwendet für jede geänderte Zeile eine UPDATE-Anweisung.</p></td>
 </tr>

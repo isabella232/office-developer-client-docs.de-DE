@@ -1,5 +1,5 @@
 ---
-title: RelatedTable-Eigenschaft (ADOX)
+title: Relatedable-Eigenschaft (ADOX)
 TOCTitle: RelatedTable property (ADOX)
 ms:assetid: e9e7fedb-d280-6018-2cbf-e7be6136a00c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250185(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ec2df7a8fcf53f8f35232fd497a5f93270f4eaba
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309148"
 ---
-# <a name="relatedtable-property-adox"></a>RelatedTable-Eigenschaft (ADOX)
+# <a name="relatedtable-property-adox"></a>Relatedable-Eigenschaft (ADOX)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Namen der verknüpften Tabelle an.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
-Legt einen **String** -Wert fest bzw. gibt diesen zurück.
+Legt einen **String**-Wert fest bzw. gibt diesen zurück.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Standardwert ist eine leere Zeichenfolge ("").
 

@@ -1,5 +1,5 @@
 ---
-title: Relation.Table-Eigenschaft (DAO)
+title: Relation. Table-Eigenschaft (DAO)
 TOCTitle: Table Property
 ms:assetid: cc4f64ef-c4e9-1a14-9263-5f8220d89840
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834423(v=office.15)
@@ -12,16 +12,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 91a3262d92350618c2385013983020669b28ea5c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306993"
 ---
-# <a name="relationtable-property-dao"></a>Relation.Table-Eigenschaft (DAO)
+# <a name="relationtable-property-dao"></a>Relation. Table-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Gibt den Namen der Primärtabelle eines **[Relation](relation-object-dao.md)** -Objekts an. Dieser Name sollte mit dem Wert der **[Name](connection-name-property-dao.md)** -Eigenschaft eines **[TableDef](tabledef-object-dao.md)** - oder **[QueryDef](querydef-object-dao.md)** -Objekts übereinstimmen (nur Microsoft Access-Arbeitsbereiche).
 
@@ -37,13 +37,13 @@ Ein neues **Relation**-Objekt, das noch an keine Auflistung angefügt wurde, hat
 
 Verwenden Sie die **Table**-Eigenschaft zusammen mit der **[ForeignTable](relation-foreigntable-property-dao.md)** -Eigenschaft, um ein **Relation**-Objekt zu definieren, das die Beziehung zwischen Feldern in zwei Tabellen oder Abfragen darstellt. Legen Sie die **Table**-Eigenschaft auf den Wert der **Name**-Eigenschaft des **TableDef**- oder **QueryDef**-Objekts der Primärtabelle fest und die **ForeignTable**-Eigenschaft auf den Wert der **Name**-Eigenschaft des verweisenden **TableDef**- oder **QueryDef**-Objekts der Fremdtabelle. Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft bestimmt den Typ der Beziehung zwischen den beiden Objekten.
 
-Wenn Sie z. B. eine Liste gültiger Teilecodes (in einem Feld namens PartNo) in der Tabelle ValidParts gespeichert haben, könnten Sie eine 1:n-Beziehung mit einer Tabelle namens OrderItem einrichten. Wenn ein Teilecode in die Tabelle OrderItem eingegeben wird, muss dieser bereits in der Tabelle ValidParts vorhanden sein. Wenn der Teilecode in der Tabelle ValidParts nicht vorhanden ist und Sie die Attributes-Eigenschaft des Relation-Objekts nicht auf den Wert dbRelationDontEnforce festgelegt haben, tritt ein auffangbarer Fehler auf.
+For example, if you had a list of valid part codes (in a field named PartNo) stored in a ValidParts table, you could establish a one-to-many relationship with an OrderItem table such that if a part code were entered into the OrderItem table, it would have to already be in the ValidParts table. If the part code didn't exist in the ValidParts table and you had not set the **Attributes** property of the **Relation** object to **dbRelationDontEnforce**, a trappable error would occur.
 
-In diesem Fall ist die Tabelle ValidParts die Primärtabelle, sodass die Table-Eigenschaft des Relation-Objekts auf den Wert ValidParts und die ForeignTable-Eigenschaft des Relation-Objekts auf OrderItem festgelegt wird. Die Eigenschaften Name und ForeignName des Field-Objekts in der Fields-Auflistung des Relation-Objekts werden dann auf PartNo gesetzt.
+In this case, the ValidParts table is the primary table, so the **Table** property of the **Relation** object would be set to ValidParts and the **ForeignTable** property of the **Relation** object would be set to OrderItem. The **Name** and **ForeignName** properties of the **[Field](field-object-dao.md)** object in the **Relation** object's **[Fields](fields-collection-dao.md)** collection would be set to PartNo.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel zeigt, wie die Eigenschaften **Table**, **ForeignTable** und **ForeignName** die Bedingungen eines **Relation**-Objekts zwischen zwei Tabellen definieren.
+In diesem Beispiel wird gezeigt, wie die Eigenschaften **Table**, **ForeignTable** und **ForeignName** die Beziehungen eines **Relation**-Objekts zwischen zwei Tabellen definieren.
 
 ```vb
     Sub ForeignNameX() 

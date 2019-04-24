@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 6287bc8a66858d51d65c37477eed7a86cd7839af
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308729"
 ---
 # <a name="selectobject-macro-action"></a>SelectObject-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Sie können die **AuswählenObjekt** -Aktion zur Auswahl eines bestimmten Datenbankobjekts verwenden.
+Sie können die **AuswählenObjekt**-Aktion zur Auswahl eines bestimmten Datenbankobjekts verwenden.
 
 ## <a name="setting"></a>Einstellung
 
-Die **AuswählenObjekt** -Aktion hat die folgenden Argumente.
+Die **AuswählenObjekt**-Aktion hat die folgenden Argumente.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ Die **AuswählenObjekt** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Objektname</strong></p></td>
-<td><p>Der Name des auszuwählenden Objekts. Im Feld Objektname werden alle Objekte in der Datenbank angezeigt, die dem vom Argument Objekttyp ausgewählten Typ entsprechen. Das ist ein erforderliches Argument, es sei denn, Sie legen das Argument Im Navigationsbereich auf Ja fest.</p><p><strong>Hinweis</strong>: die Objektnamen für <STRONG>Serversicht</STRONG>, <STRONG>Diagramm</STRONG>oder <STRONG>Gespeicherte Prozedur</STRONG> -Objekte werden im Feld <STRONG>Objektname</STRONG> eines Access-Projekts (ADP) nicht angezeigt.</p></td>
+<td><p>Der Name des auszuwählenden Objekts. Im Feld <strong>Objektname</strong> werden alle Objekte in der Datenbank des Typs angezeigt, der vom Argument <strong>Objekttyp</strong> ausgewählt ist. Dies ist ein erforderliches Argument, es sei denn, Sie legen das Argument im Navigationsbereich auf <strong>Ja</strong>fest.</p><p><strong>Hinweis</strong>: die Objektnamen für <STRONG>Server Ansicht</STRONG>-, <STRONG>Diagramm</STRONG>-oder <STRONG>gespeicherte Prozedur</STRONG> Objekte werden nicht im Feld <STRONG>Objekt Name</STRONG> eines Access-Projekts (ADP) angezeigt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Im Navigationsbereich</strong></p></td>
@@ -56,9 +56,9 @@ Die **AuswählenObjekt** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **AuswählenObjekt** -Aktion funktioniert mit allen Access-Objekten, die den Fokus erhalten können. Diese Aktion weist den Fokus dem angegebenen Objekt zu und zeigt dem Objekt an, ob es ausgeblendet ist. Wenn das Objekt ein Formular ist, wird die **Sichtbar** -Eigenschaft des Formulars von der **AuswählenObjekt** -Aktion auf **Ja** festgelegt, und das Formular wird in den Modus zurückgesetzt, der durch die Formulareigenschaften festgelegt ist (beispielsweise gebundenes Formular oder Popupformular).
+Die **AuswählenObjekt**-Aktion funktioniert mit allen Access-Objekten, die den Fokus erhalten können. Diese Aktion weist den Fokus dem angegebenen Objekt zu und zeigt dem Objekt an, ob es ausgeblendet ist. Wenn das Objekt ein Formular ist, wird die **Sichtbar**-Eigenschaft des Formulars von der **AuswählenObjekt**-Aktion auf **Ja** festgelegt, und das Formular wird in den Modus zurückgesetzt, der durch die Formulareigenschaften festgelegt ist (beispielsweise gebundenes Formular oder Popupformular).
 
 Wenn das Objekt in einem der anderen Access-Fenster nicht geöffnet ist, können Sie es auswählen, indem Sie das Argument **Im Navigationsbereich** auf **Ja** festlegen. Wenn Sie das Argument **Im Navigationsbereich** auf **Nein** festlegen, wird eine Fehlermeldung angezeigt, sobald Sie versuchen, ein Objekt auszuwählen, das nicht geöffnet ist.
 

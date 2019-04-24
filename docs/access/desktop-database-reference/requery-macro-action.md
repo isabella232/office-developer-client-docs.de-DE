@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 8b90af8d1cda073ffa37022bb5db5e8cf8e3b978
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306706"
 ---
 # <a name="requery-macro-action"></a>Requery-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Sie können die **AktualisierenDaten** -Aktion verwenden, um die Daten in einem angegebenen Steuerelement des aktiven Objekts durch erneutes Abfragen der Steuerelementquelle zu aktualisieren. Wenn kein Steuerelement angegeben ist, fragt diese Aktion die Objektquelle selbst erneut ab. Verwenden Sie diese Aktion, um sicherzustellen, dass das aktive Objekt oder eines seiner Steuerelemente die neuesten Daten anzeigt.
 
 ## <a name="setting"></a>Einstellung
 
-Die **AktualisierenDaten** -Aktion hat das folgende Argument.
+Die **AktualisierenDaten**-Aktion hat das folgende Argument.
 
 <table>
 <colgroup>
@@ -42,15 +42,15 @@ Die **AktualisierenDaten** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Steuerelementname</strong></p></td>
-<td><p>Der Name des Steuerelements, das Sie aktualisieren möchten. Geben Sie den Namen des Steuerelements im Feld Steuerelementname im Abschnitt Aktionsargumente des Bereichs Makro-Generator ein. Sie sollten nur den Namen des Steuerelements, nicht den vollqualifizierten Bezeichner verwenden (wie Formulare!Formularname!Steuerelementname). Lassen Sie dieses Argument leer, um die Quelle des aktiven Objekts zu aktualisieren. Wenn das aktive Objekt ein Datenblatt oder ein Resultset einer Abfrage ist, müssen Sie dieses Argument leer lassen.</p></td>
+<td><p>Der Name des Steuerelements, das Sie aktualisieren möchten. Geben Sie den Namen des Steuerelements in das Feld <strong>Steuerelementname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Sie sollten nur den Namen des Steuerelements verwenden, nicht den vollqualifizierten Bezeichner (beispielsweise <strong>Formulare</strong>!<em> Formularname</em>! <em>ControlName</em>). Lassen Sie dieses Argument leer, um die Quelle des aktiven Objekts erneut zu aktualisieren. Wenn das aktive Objekt ein Datenblatt oder ein abfrageergebnissatz ist, müssen Sie dieses Argument leer lassen.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **AktualisierenDaten** -Aktion wendet eines der folgenden Verfahren an:
+Die **AktualisierenDaten**-Aktion wendet eines der folgenden Verfahren an:
 
 - Erneutes Ausführen der Abfrage, auf der das Steuerelement oder Objekt basiert.
 
@@ -76,5 +76,5 @@ Wenn Sie das Argument **Steuerelementname** leer lassen, hat die **Aktualisieren
 > [!NOTE]
 > [!HINWEIS] Die **AktualisierenDaten** -Aktion fragt die Herkunft des Steuerelements oder des Objekts erneut ab. Die **AktualisierenObjekt** -Aktion aktualisiert Steuerelemente im angegebenen Objekt, fragt jedoch die Datenbank nicht erneut ab oder zeigt keine neuen Datensätze an. Die **AnzeigenAlleDatensätze** -Aktion fragt nicht nur das aktive Objekt ab, sondern entfernt auch alle angewendeten Filter, was die **AktualisierenDaten** -Aktion nicht vornimmt.
 
-Wenn Sie ein Steuerelement erneut abfragen, die für das aktive Objekt ist nicht möchten, müssen Sie die **Requery** -Methode in einem Visual Basic für Applikationen (VBA) Modul, nicht die **AktualisierenDaten** -Aktion oder die entsprechende **Requery** -Methode des **DoCmd** -Objekts verwenden. Die **Requery** -Methode in VBA ist schneller als die **AktualisierenDaten** -Aktion oder die **Requery** -Methode. Darüber hinaus wird, wenn Sie die **AktualisierenDaten** -Aktion oder die **Requery** -Methode verwenden, schließt Microsoft Access die Abfrage und lädt ihn erneut aus der Datenbank, aber bei Verwendung die **Requery** -Methode führt Access ohne Schließen und neu zu laden. Beachten Sie, dass das ActiveX-Objekt (ADO) **Requery** -Methode die gleiche Weise wie die Access **Requery** -Methode funktioniert.
+Wenn Sie ein Steuerelement, das sich nicht im aktiven Objekt befindet, erneut abfragen möchten, **** müssen Sie die Requery-Methode in einem VBA-Modul (Visual Basic für Applikationen) verwenden, nicht die Requery-Aktion oder die entsprechende Requery-Methode des **DoCmd** -Objekts. **** **** Die **Requery** -Methode in VBA ist schneller **** als die Requery-Aktion oder die **DoCmd. Requery** -Methode. Darüber hinaus wird bei Verwendung der **Requery** -Aktion oder der **DoCmd. Requery** -Methode von Microsoft Access die Abfrage geschlossen und aus der Datenbank erneut geladen, aber wenn Sie die Requery-Methode verwenden, führt Access die Abfrage erneut aus, ohne Sie zu schließen und neu zu laden. **** Beachten Sie, dass die ActiveX Data Object ( **** ADO) Requery-Methode genauso funktioniert wie die Access Requery-Methode. ****
 

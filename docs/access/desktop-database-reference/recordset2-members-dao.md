@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 29d1472e8cd02d8968ba84dbc1c1cf99be7ee858
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307273"
 ---
 # <a name="recordset2-members-dao"></a>Recordset2-Member (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Datensätze dar, die aus einer Abfrage stammen.
 
@@ -41,12 +41,12 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-cancel-method-dao.md">Abbrechen</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Die Ausführung eines ausstehenden asynchronen Methodenaufrufs wird abgebrochen (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-cancelupdate-method-dao.md">CancelUpdate</a></strong></p></td>
-<td><p>Alle ausstehenden Aktualisierungen für ein <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt werden abgebrochen.</p></td>
+<td><p>Bricht alle ausstehenden Aktualisierungen für ein <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt ab.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-clone-method-dao.md">Clone</a></strong></p></td>
@@ -54,11 +54,11 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-close-method-dao.md">Schließen Sie</a></strong></p></td>
-<td><p>Schließt ein geöffnetes <strong>Recordset</strong> -Objekt.</p></td>
+<td><p>Schließt ein geöffnetes <strong>Recordset</strong>-Objekt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-copyquerydef-method-dao.md">CopyQueryDef</a></strong></p></td>
-<td><p>Gibt ein <strong><a href="querydef-object-dao.md">QueryDef</a></strong> -Objekt, das eine Kopie des <strong>QueryDef-Objekt</strong> ist verwendeten zum Erstellen des <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts, dargestellt durch das Recordset-Objekt-Platzhalter (nur Microsoft Access-Arbeitsbereiche). .</p></td>
+<td><p>Gibt ein <strong><a href="querydef-object-dao.md">QueryDef</a></strong> -Objekt zurück, das eine Kopie des <strong>QueryDef</strong> -Objekts ist, das zum Erstellen des <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekts verwendet wird, das durch den Platzhalter "Recordset" (nur Microsoft Access-Arbeitsbereiche) dargestellt wird. .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-delete-method-dao.md">Löschen</a></strong></p></td>
@@ -66,27 +66,27 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-edit-method-dao.md">Bearbeiten</a></strong></p></td>
-<td><p>Kopiert den aktuellen Datensatz aus einem aktualisierbaren <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt zur nachfolgenden Bearbeitung in den Kopierpuffer.</p></td>
+<td><p>Kopiert den aktuellen Datensatz aus einem aktualisierbaren <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt in den Kopierpuffer zur nachfolgenden Bearbeitung.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-fillcache-method-dao.md">FillCache</a></strong></p></td>
-<td><p>Füllt den lokalen Cache für ein <strong>Recordset</strong>-Objekt, das Daten aus einer mit einem Microsoft Access-Datenbankmodul verbundenen ODBC-Datenquelle enthält, teilweise oder vollständig auf (gilt nur für mit dem Microsoft Access-Datenbankmodul verbundene ODBC-Datenquellen).</p></td>
+<td><p>Füllt den lokalen Cache für ein <strong>Recordset</strong>-Objekt, das Daten aus einer mit einem Microsoft Access-Datenbankmodul verbundenen ODBC-Datenquelle enthält (gilt nur für mit dem Microsoft Access-Datenbankmodul verbundene ODBC-Datenquellen), teilweise oder vollständig auf.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-findfirst-method-dao.md">FindFirst</a></strong></p></td>
-<td><p>Sucht den ersten Datensatz in einem <strong>Recordset</strong> -Objekt vom "dynaset"- oder "snapshot"-Typ, der die angegebenen Kriterien erfüllt, und macht den Datensatz zum aktuellen Datensatz (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Locates the first record in a dynaset- or snapshot-type <strong>Recordset</strong> object that satisfies the specified criteria and makes that record the current record (Microsoft Access workspaces only).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-findlast-method-dao.md">FindLast</a></strong></p></td>
-<td><p>Sucht den letzten Datensatz in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong> vom Typ Dynaset oder Snapshot-Objekt, die den angegebenen Kriterien entspricht, und macht, die den Datensatz zum aktuellen Datensatz (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Locates the last record in a dynaset- or snapshot-type <strong><a href="recordset-object-dao.md">Recordset</a></strong> object that satisfies the specified criteria and makes that record the current record (Microsoft Access workspaces only).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-findnext-method-dao.md">FindNext</a></strong></p></td>
-<td><p>Sucht den nächsten Datensatz in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt vom Typ Dynaset oder Snapshot, der den angegebenen Kriterien entspricht, und macht diesen Datensatz zum aktuellen Datensatz (gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
+<td><p>Locates the next record in a dynaset- or snapshot-type <strong><a href="recordset-object-dao.md">Recordset</a></strong> object that satisfies the specified criteria and makes that record the current record (Microsoft Access workspaces only). .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-findprevious-method-dao.md">FindPrevious</a></strong></p></td>
-<td><p>Sucht den vorherigen Datensatz in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt vom Typ "Dynaset" oder "Snapshot", der die angegebenen Kriterien erfüllt, und macht diesen Datensatz zum aktuellen Datensatz (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Locates the previous record in a dynaset- or snapshot-type <strong><a href="recordset-object-dao.md">Recordset</a></strong> object that satisfies the specified criteria and makes that record the current record (Microsoft Access workspaces only). .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-getrows-method-dao.md">GetRows</a></strong></p></td>
@@ -114,7 +114,7 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-nextrecordset-method-dao.md">NextRecordset</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Ruft die nächste Datensatzgruppe ab (falls vorhanden), die von einer mehrteiligen Auswahlabfrage in einem <strong><a href="connection-openrecordset-method-dao.md">OpenRecordset</a></strong> -Aufruf zurückgegeben wurde. Daraufhin wird ein <strong>Boolean</strong>-Wert ausgegeben, der angibt, ob weitere Datensätze ausstehen (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
@@ -127,11 +127,11 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-seek-method-dao.md">Seek</a></strong></p></td>
-<td><p>Sucht den Datensatz in einem indizierten <strong>Recordset</strong> -Objekt vom Typ Tabelle, das den angegebenen Kriterien für den aktuellen Index entspricht, und macht diesen Datensatz zum aktuellen Datensatz (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Sucht den Datensatz in einem indizierten <strong>Recordset</strong>-Objekt vom Typ Tabelle, das den angegebenen Kriterien für den aktuellen Index entspricht, und macht diesen Datensatz zum aktuellen Datensatz (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-update-method-dao.md">Update</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Speichert den Inhalt des Kopierpuffers in einem aktualisierbaren <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt.</p></td>
 </tr>
 </tbody>
@@ -158,22 +158,22 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-batchcollisioncount-property-dao.md">BatchCollisionCount</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
-<p>Gibt die Anzahl von Datensätzen zurück, bei denen die letzte Batchaktualisierung nicht abgeschlossen wurde (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<p>Gibt die Anzahl der Datensätze zurück, die die letzte Batchaktualisierung nicht ausgeführt haben (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-batchcollisions-property-dao.md">BatchCollisions</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt ein Textmarkenarray zurück, das die Zeilen angibt, die bei der letzten Batchaktualisierung Konflikte verursacht haben (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-batchsize-property-dao.md">BatchSize</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
-<p>Mit dieser Eigenschaft wird die Anzahl von Anweisungen festgelegt oder zurückgegeben, die in jedem Batch an den Server zurückgesendet werden (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<p>Legt die Anzahl der Anweisungen fest, die in jedem Batch an den Server zurückgesendet wurden, oder gibt die betreffende Anzahl zurück (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-bof-property-dao.md">BOF</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition in einem <strong>Recordset</strong> -Objekt vor dem ersten Datensatz liegt. Schreibgeschützter <strong>Boolean</strong> -Wert.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition in einem <strong>Recordset</strong>-Objekt vor dem ersten Datensatz liegt. Schreibgeschützter <strong>Boolean</strong> -Wert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-bookmark-property-dao.md">Lesezeichen</a></strong></p></td>
@@ -181,15 +181,15 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-bookmarkable-property-dao.md">Bookmarkable</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob ein <strong>Recordset</strong>-Objekt Textmarken unterstützt, die Sie mithilfe der <strong><a href="recordset2-bookmark-property-dao.md">Bookmark</a></strong> -Eigenschaft festlegen können.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob ein <strong>Recordset</strong>-Objekt Leszeichen unterstützt, die Sie mithilfe der <strong><a href="recordset2-bookmark-property-dao.md">Bookmark</a></strong> -Eigenschaft festlegen können.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong></p></td>
-<td><p>Legt die Anzahl der von einer ODBC-Datenquelle abgefragten Datensätze fest, die lokal zwischengespeichert werden, oder gibt den betreffenden Wert zurück. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
+<td><p>Mit dieser Eigenschaft wird die Anzahl von Datensätzen, die aus einer ODBC-Datenquelle abgerufen und lokal gespeichert werden, festgelegt oder zurückgegeben. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong></p></td>
-<td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die Textmarke des ersten Datensatzes in einem Recordset -Objekt vom Typ Dynaset angibt, das lokal zwischenzuspeichernde Daten aus einer ODBC-Datenquelle enthält (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Sets or returns a value that specifies the bookmark of the first record in a dynaset-type Recordset object containing data to be locally cached from an ODBC data source (Microsoft Access workspaces only).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-connection-property-dao.md">Verbindung</a></strong></p></td>
@@ -201,23 +201,23 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-editmode-property-dao.md">EditMode</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der den Status der Bearbeitung für den aktuellen Datensatz angibt.</p></td>
+<td><p>Gibt einen Wert zurück, der den Bearbeitungsstatus für den aktuellen Datensatz angibt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-eof-property-dao.md">EOF</a></strong></p></td>
 <td><p>Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition hinter dem letzten Datensatz in einem <strong>Recordset</strong>-Objekt liegt. Schreibgeschützter <strong>Boolean</strong>-Wert.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="recordset2-fields-property-dao.md">Felder</a></strong></p></td>
-<td><p>Gibt eine <strong>Fields</strong>-Auflistung zurück, die alle gespeicherten <strong>Field</strong>-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
+<td><p><strong><a href="recordset2-fields-property-dao.md">Fields</a></strong></p></td>
+<td><p>Gibt eine <strong>Fields</strong> -Auflistung zurück, die alle gespeicherten <strong>Field</strong> -Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-filter-property-dao.md">Filter</a></strong></p></td>
-<td><p>Legt einen Wert fest, der die in einem nachfolgend geöffneten <strong>Recordset</strong> -Objekt enthaltenen Datensätze bestimmt, oder gibt diesen Wert zurück (nur Microsoft Access-Arbeitsbereich). Lese-/Schreibzugriff <strong>String</strong>.</p></td>
+<td><p>Legt einen Wert fest, der feststellt, welche Datensätze in einem nachfolgend geöffneten <strong>Recordset</strong>-Objekt einbezogen werden, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche). Lese-/Schreibzugriff <strong>String</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-index-property-dao.md">Index</a></strong></p></td>
-<td><p>Legt einen Wert fest, der den Namen des aktuellen <strong><a href="index-object-dao.md">Index</a></strong> -Objekts in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt vom Typ "Tabelle" angibt, oder gibt einen solchen Wert zurück (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Sets or returns a value that indicates the name of the current <strong><a href="index-object-dao.md">Index</a></strong> object in a table-type <strong><a href="recordset-object-dao.md">Recordset</a></strong> object (Microsoft Access workspaces only).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-lastmodified-property-dao.md">LastModified</a></strong></p></td>
@@ -233,7 +233,7 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-name-property-dao.md">Name</a></strong></p></td>
-<td><p>Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter <strong>String</strong>-Wert.</p></td>
+<td><p>Gibt den Namen des angegebenen Objekts zurück. Read-only <strong>Zeichenfolge</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-nomatch-property-dao.md">NoMatch</a></strong></p></td>
@@ -253,11 +253,11 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-recordcount-property-dao.md">RecordCount</a></strong></p></td>
-<td><p>Gibt die Anzahl der Datensätze zurück, auf die in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt zugegriffen wird, oder die Gesamtzahl der Datensätze in einem <strong>Recordset</strong> -Objekt vom "table"-Typ oder in einem <strong><a href="tabledef-object-dao.md">TableDef</a></strong> -Objekt zurück. Schreibgeschütztes <strong>Long</strong> -Objekt.</p></td>
+<td><p>Returns the number of records accessed in a <strong><a href="recordset-object-dao.md">Recordset</a></strong> object, or the total number of records in a table-type <strong>Recordset</strong> object. or <strong><a href="tabledef-object-dao.md">TableDef</a></strong> object. Read-only <strong>Long</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-recordstatus-property-dao.md">RecordStatus</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt einen Wert zurück, der den Aktualisierungsstatus des aktuellen Datensatzes angibt, wenn dieser Teil einer Batchktualisierung ist (nur ODBCDirect-Arbeitsbereiche). Schreibgeschützter <strong><a href="recordstatusenum-enumeration-dao.md">RecordStatusEnum</a></strong> -Wert.</p></td>
 </tr>
 <tr class="odd">
@@ -270,12 +270,12 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-stillexecuting-property-dao.md">StillExecuting</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt an, ob ein asynchroner Vorgang (d. h. eine Methode, die mit der <strong>dbRunAsync</strong>-Option aufgerufen wurde) abgeschlossen wurde (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset2-transactions-property-dao.md">Transaktionen</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter <strong>Boolean</strong>-Wert.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter <strong>boolescher</strong> Wert.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-type-property-dao.md">Typ</a></strong></p></td>
@@ -287,7 +287,7 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset2-updateoptions-property-dao.md">UpdateOptions</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Legt einen Wert fest, der angibt, wie die WHERE-Klausel für jeden Datensatz während einer Batchaktualisierung erstellt wird, und ob die Batchaktualisierung eine UPDATE- oder eine DELETE-Anweisung gefolgt von einer INSERT-Anweisung verwenden soll, oder gibt den betreffenden Wert zurück (nur ODBCDirect-Arbeitsbereiche). <strong><a href="updatecriteriaenum-enumeration-dao.md">UpdateCriteriaEnum</a></strong> -Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">

@@ -1,5 +1,5 @@
 ---
-title: Relation-Member (DAO)
+title: Relation-Elemente (DAO)
 TOCTitle: Relation Members
 ms:assetid: 9ee36e7d-3825-1de8-65fb-64bbcada847c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198338(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 84e18afe4a11e53d68397efad71ac6136c779143
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307037"
 ---
-# <a name="relation-members-dao"></a>Relation-Member (DAO)
+# <a name="relation-members-dao"></a>Relation-Elemente (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ein Relation-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfragen dar (gilt nur für Microsoft Access-Datenbanken).
 
@@ -37,7 +37,7 @@ Ein Relation-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfr
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="relation-createfield-method-dao.md">CreateField</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,16 +58,16 @@ Ein Relation-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfr
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="relation-attributes-property-dao.md">Attribute</a></strong></p></td>
+<td><p><strong><a href="relation-attributes-property-dao.md">Attributes</a></strong></p></td>
 <td><p>Legt einen Wert fest, der mindestens ein Merkmal eines <strong>Relation</strong>-Objekts angibt, oder gibt den betreffenden Wert zurück. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="relation-fields-property-dao.md">Felder</a></strong></p></td>
-<td><p>Gibt eine <strong>Fields</strong>-Auflistung zurück, die alle gespeicherten <strong>Field</strong>-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
+<td><p><strong><a href="relation-fields-property-dao.md">Fields</a></strong></p></td>
+<td><p>Gibt eine <strong>Fields</strong> -Auflistung zurück, die alle gespeicherten <strong>Field</strong> -Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="relation-foreigntable-property-dao.md">ForeignTable</a></strong></p></td>
-<td><p>Legt den Namen der Fremdtabelle in einer Beziehung fest oder gibt den Namen zurück (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Gibt den Namen der Fremdtabelle in einer Beziehung zurück (nur Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="relation-name-property-dao.md">Name</a></strong></p></td>

@@ -1,5 +1,5 @@
 ---
-title: WillMove- und MoveComplete-Ereignisse (ADO)
+title: WillMove-und MoveComplete-Ereignisse (ADO)
 TOCTitle: WillMove and MoveComplete events (ADO)
 ms:assetid: fe7eb823-b388-6b3d-1ae9-056018032ef5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250307(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e663e18a13803097d490e0e315d139e6e15400da
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306055"
 ---
-# <a name="willmove-and-movecomplete-events-ado"></a>WillMove- und MoveComplete-Ereignisse (ADO)
+# <a name="willmove-and-movecomplete-events-ado"></a>WillMove-und MoveComplete-Ereignisse (ADO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das **WillMove** -Ereignis wird aufgerufen, bevor ein ausstehender Vorgang die aktuelle Position im [Recordset](recordset-object-ado.md)-Objekt ändert. Das **MoveComplete** -Ereignis wird aufgerufen, nachdem die aktuelle Position im **Recordset** -Objekt geändert wurde.
 
 ## <a name="syntax"></a>Syntax
 
-WillMove-*AdReason* *AdStatus*, *pCommand*
+WillMove-*Begründung*, *Status*, precordset **
 
-MoveComplete*AdReason*, *pError*, *AdStatus*, *pCommand*
+MoveComplete**, *pError*, *Status*, precordset **
 
 ## <a name="parameters"></a>Parameter
 
@@ -32,12 +32,12 @@ MoveComplete*AdReason*, *pError*, *AdStatus*, *pCommand*
 |:--------|:----------|
 |*adReason* |Ein [EventReasonEnum](eventreasonenum.md)-Wert, der den Grund für dieses Ereignis angibt. Der Wert kann **adRsnMoveFirst**, **adRsnMoveLast**, **adRsnMoveNext**, **adRsnMovePrevious**, **adRsnMove** oder **adRsnRequery** sein.|
 |*pError* |Ein [Error](error-object-ado.md)-Objekt. Es beschreibt den Fehler, der auftritt, wenn der *adStatus* -Wert **adStatusErrorsOccurred** lautet. Andernfalls wird er nicht festgelegt.|
-|*adStatus* |[EventStatusEnum](eventstatusenum.md). Wird **WillMove** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Der Parameter wird auf **adStatusCantDeny** festgelegt, wenn dieses Ereignis den Abbruch des ausstehenden Vorgangs nicht anfordern kann. <br/><br/>Wird **MoveComplete** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Er wird auf **adStatusErrorsOccurred** festgelegt, wenn der Vorgang fehlgeschlagen ist. <br/><br/>Legen Sie diesen Parameter vor der Rückgabe von WillMove auf adStatusCancel fest, um den Abbruch des ausstehenden Vorgangs anzufordern. Oder legen Sie diesen Parameter auf adStatusUnwantedEvent fest, um nachfolgende Benachrichtigungen zu verhindern. <br/><br/>Legen Sie diesen Parameter vor der Rückgabe von **MoveComplete** auf **AdStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.|
-|*pCommand* |Ein [Recordset](recordset-object-ado.md)-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md). Wird **WillMove** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Der Parameter wird auf **adStatusCantDeny** festgelegt, wenn dieses Ereignis den Abbruch des ausstehenden Vorgangs nicht anfordern kann. <br/><br/>Wird **MoveComplete** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Er wird auf **adStatusErrorsOccurred** festgelegt, wenn der Vorgang fehlgeschlagen ist. <br/><br/>Before **WillMove** returns, set this parameter to **adStatusCancel** to request cancellation of the pending operation or set this parameter to adStatusUnwantedEvent to prevent subsequent notications. <br/><br/>Legen Sie diesen Parameter vor der Rückgabe von **MoveComplete** auf **AdStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.|
+|*precordset* |Ein [Recordset](recordset-object-ado.md)-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein **WillMove** oder **MoveComplete** -Ereignis kann aufgrund der folgenden **Recordset** -Vorgänge auftreten:
+Ein **WillMove** -oder **MoveComplete** -Ereignis kann aufgrund der folgenden **Recordset** -Vorgänge auftreten:
 
 - [Open](open-method-ado-recordset.md)
 - [Move](move-method-ado.md)
@@ -48,11 +48,11 @@ Ein **WillMove** oder **MoveComplete** -Ereignis kann aufgrund der folgenden **R
 - [AddNew](addnew-method-ado.md)
 - [Requery](requery-method-ado.md)
 
-Diese Ereignisse können auftreten, wenn die folgenden Eigenschaften:
+Diese Ereignisse können aufgrund der folgenden Eigenschaften auftreten:
 
 - [Filter](filter-property-ado.md)
 - [Index](index-property-ado.md)
-- [Lesezeichen](bookmark-property-ado.md)
+- [Bookmark](bookmark-property-ado.md)
 - [AbsolutePage](absolutepage-property-ado.md)
 - [AbsolutePosition](absoluteposition-property-ado.md)
 
