@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fb422d46-0b4d-3bf7-73aa-6b01e2454a84
 description: Enthält Zellen für eine Gruppe, die steuern, wie Sie Shapes in Gruppen einfügen, Mitglieder von Gruppen verschieben und Gruppen auswählen können.
-ms.openlocfilehash: 63bc2717d838174080d3bd13da07e5f9d6929767
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bb5d0bccd21e192ed4aff244929d2dbb507ae40b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317073"
 ---
-# <a name="group-properties-section"></a><span data-ttu-id="be431-103">Group Properties Section</span><span class="sxs-lookup"><span data-stu-id="be431-103">Group Properties Section</span></span>
+# <a name="group-properties-section"></a><span data-ttu-id="1e7d8-103">Abschnitt "Group Properties"</span><span class="sxs-lookup"><span data-stu-id="1e7d8-103">Group Properties Section</span></span>
 
-<span data-ttu-id="be431-104">Enthält Zellen für eine Gruppe, die steuern, wie Sie Shapes in Gruppen einfügen, Mitglieder von Gruppen verschieben und Gruppen auswählen können.</span><span class="sxs-lookup"><span data-stu-id="be431-104">Contains cells for a group that control how you add shapes to a group, move members of a group, and select groups.</span></span> 
+<span data-ttu-id="1e7d8-104">Enthält Zellen für eine Gruppe, die steuern, wie Sie Shapes in Gruppen einfügen, Mitglieder von Gruppen verschieben und Gruppen auswählen können.</span><span class="sxs-lookup"><span data-stu-id="1e7d8-104">Contains cells for a group that control how you add shapes to a group, move members of a group, and select groups.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="be431-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="be431-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1e7d8-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1e7d8-105">Remarks</span></span>
 
-<span data-ttu-id="be431-106">Sie können diese Werte auch im Dialogfeld **Verhalten** auf der Registerkarte **Verhalten** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**).</span><span class="sxs-lookup"><span data-stu-id="be431-106">You can also set these values on the **Behavior** tab in the **Behavior** dialog box (click **Behavior** in the **Shape Design** group on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab).</span></span> 
+<span data-ttu-id="1e7d8-106">Sie können diese Werte auch im Dialogfeld **Verhalten** auf der Registerkarte **Verhalten** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**).</span><span class="sxs-lookup"><span data-stu-id="1e7d8-106">You can also set these values on the **Behavior** tab in the **Behavior** dialog box (click **Behavior** in the **Shape Design** group on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab).</span></span> 
   
 

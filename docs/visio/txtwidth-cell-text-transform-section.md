@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e2215c67-25fa-1d75-9cce-f126bb8760a1
 description: 'Definiert die Breite eines Textblocks. Die Standardformel lautet:'
-ms.openlocfilehash: ecba66aaf1f7eeb6d16c6b0d4c6569aed051910f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 806307166035ebc2f8e20e7025d5ecb03c4d6e79
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316002"
 ---
-# <a name="txtwidth-cell-text-transform-section"></a><span data-ttu-id="7b4cb-104">TxtWidth Cell (Text Transform Section)</span><span class="sxs-lookup"><span data-stu-id="7b4cb-104">TxtWidth Cell (Text Transform Section)</span></span>
+# <a name="txtwidth-cell-text-transform-section"></a><span data-ttu-id="7c4fc-104">Zelle "TxtWidth" (Abschnitt "Text Transform")</span><span class="sxs-lookup"><span data-stu-id="7c4fc-104">TxtWidth Cell (Text Transform Section)</span></span>
 
-<span data-ttu-id="7b4cb-p102">Definiert die Breite eines Textblocks. Die Standardformel lautet:</span><span class="sxs-lookup"><span data-stu-id="7b4cb-p102">Determines the width of the text block. The default formula is:</span></span>
+<span data-ttu-id="7c4fc-105">Definiert die Breite eines Textblocks.</span><span class="sxs-lookup"><span data-stu-id="7c4fc-105">Determines the width of the text block.</span></span> <span data-ttu-id="7c4fc-106">Die Standardformel lautet:</span><span class="sxs-lookup"><span data-stu-id="7c4fc-106">The default formula is:</span></span>
   
-<span data-ttu-id="7b4cb-107">= Breite \* 1</span><span class="sxs-lookup"><span data-stu-id="7b4cb-107">= Width \* 1</span></span>
+<span data-ttu-id="7c4fc-107">= Breite \* 1</span><span class="sxs-lookup"><span data-stu-id="7c4fc-107">= Width \* 1</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7b4cb-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7b4cb-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7c4fc-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7c4fc-108">Remarks</span></span>
 
-<span data-ttu-id="7b4cb-109">Wenn Sie einen Verweis auf die Zelle TxtWidth aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="7b4cb-109">To get a reference to the TxtWidth cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="7c4fc-109">Wenn Sie einen Verweis auf die Zelle Zelle TxtWidth aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="7c4fc-109">To get a reference to the TxtWidth cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="7b4cb-110">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="7b4cb-110">Cell name:</span></span>  <br/> | <span data-ttu-id="7b4cb-111">TxtWidth</span><span class="sxs-lookup"><span data-stu-id="7b4cb-111">TxtWidth</span></span>  <br/> |
+| <span data-ttu-id="7c4fc-110">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="7c4fc-110">Cell name:</span></span>  <br/> | <span data-ttu-id="7c4fc-111">Zelle TxtWidth</span><span class="sxs-lookup"><span data-stu-id="7c4fc-111">TxtWidth</span></span>  <br/> |
    
-<span data-ttu-id="7b4cb-112">Wenn Sie einen Verweis auf die Zelle TxtWidth aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="7b4cb-112">To get a reference to the TxtWidth cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="7c4fc-112">Wenn Sie einen Verweis auf die Zelle Zelle TxtWidth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="7c4fc-112">To get a reference to the TxtWidth cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="7b4cb-113">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="7b4cb-113">Section index:</span></span>  <br/> |<span data-ttu-id="7b4cb-114">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="7b4cb-114">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="7b4cb-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="7b4cb-115">Row index:</span></span>  <br/> |<span data-ttu-id="7b4cb-116">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="7b4cb-116">**visRowTextXForm**</span></span> <br/> |
-| <span data-ttu-id="7b4cb-117">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="7b4cb-117">Cell index:</span></span>  <br/> |<span data-ttu-id="7b4cb-118">**visXFormWidth**</span><span class="sxs-lookup"><span data-stu-id="7b4cb-118">**visXFormWidth**</span></span> <br/> |
+| <span data-ttu-id="7c4fc-113">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="7c4fc-113">Section index:</span></span>  <br/> |<span data-ttu-id="7c4fc-114">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="7c4fc-114">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="7c4fc-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="7c4fc-115">Row index:</span></span>  <br/> |<span data-ttu-id="7c4fc-116">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="7c4fc-116">**visRowTextXForm**</span></span> <br/> |
+| <span data-ttu-id="7c4fc-117">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="7c4fc-117">Cell index:</span></span>  <br/> |<span data-ttu-id="7c4fc-118">**visXFormWidth**</span><span class="sxs-lookup"><span data-stu-id="7c4fc-118">**visXFormWidth**</span></span> <br/> |
    
 

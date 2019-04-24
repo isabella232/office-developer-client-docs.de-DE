@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: f3769e83-d678-1087-fc0f-b4f156386333
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5d6b1dfcd3866b0d0e7151e9d5399e1274810d14
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f5170ceb443dcde075440bf84d29000afe4680c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321273"
 ---
-# <a name="imapiofflinegetcurrentstate"></a><span data-ttu-id="9a3e5-103">IMAPIOffline::GetCurrentState</span><span class="sxs-lookup"><span data-stu-id="9a3e5-103">IMAPIOffline::GetCurrentState</span></span>
+# <a name="imapiofflinegetcurrentstate"></a><span data-ttu-id="a9240-103">IMAPIOffline::GetCurrentState</span><span class="sxs-lookup"><span data-stu-id="a9240-103">IMAPIOffline::GetCurrentState</span></span>
 
   
   
-<span data-ttu-id="9a3e5-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9a3e5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="a9240-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a9240-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9a3e5-105">Ruft den aktuellen online oder offline-Status eines offline-Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="9a3e5-105">Gets the current online or offline state of an offline object.</span></span>
+<span data-ttu-id="a9240-105">Ruft den aktuellen Online-oder Offlinestatus eines Offline Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="a9240-105">Gets the current online or offline state of an offline object.</span></span>
   
 ```cpp
 HRESULT GetCurrentState( 
@@ -33,28 +33,28 @@ HRESULT GetCurrentState(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9a3e5-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="9a3e5-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a9240-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="a9240-106">Parameters</span></span>
 
- <span data-ttu-id="9a3e5-107">_pulState_</span><span class="sxs-lookup"><span data-stu-id="9a3e5-107">_pulState_</span></span>
+ <span data-ttu-id="a9240-107">_pulState_</span><span class="sxs-lookup"><span data-stu-id="a9240-107">_pulState_</span></span>
   
-> <span data-ttu-id="9a3e5-108">[out] Der aktuelle online oder offline Zustand eines offline-Objekts.</span><span class="sxs-lookup"><span data-stu-id="9a3e5-108">[out] The current online or offline state of an offline object.</span></span> <span data-ttu-id="9a3e5-109">Es muss eine der folgenden zwei Werte sein:</span><span class="sxs-lookup"><span data-stu-id="9a3e5-109">It must be one of these two values:</span></span>
+> <span data-ttu-id="a9240-108">Out Der aktuelle Online-oder Offlinestatus eines Offline Objekts.</span><span class="sxs-lookup"><span data-stu-id="a9240-108">[out] The current online or offline state of an offline object.</span></span> <span data-ttu-id="a9240-109">Es muss einer der folgenden Werte sein:</span><span class="sxs-lookup"><span data-stu-id="a9240-109">It must be one of these two values:</span></span>
     
-<span data-ttu-id="9a3e5-110">MAPIOFFLINE_STATE_ONLINE</span><span class="sxs-lookup"><span data-stu-id="9a3e5-110">MAPIOFFLINE_STATE_ONLINE</span></span>
+<span data-ttu-id="a9240-110">MAPIOFFLINE_STATE_ONLINE</span><span class="sxs-lookup"><span data-stu-id="a9240-110">MAPIOFFLINE_STATE_ONLINE</span></span>
   
 > 
     
-<span data-ttu-id="9a3e5-111">MAPIOFFLINE_STATE_OFFLINE</span><span class="sxs-lookup"><span data-stu-id="9a3e5-111">MAPIOFFLINE_STATE_OFFLINE</span></span>
+<span data-ttu-id="a9240-111">MAPIOFFLINE_STATE_OFFLINE</span><span class="sxs-lookup"><span data-stu-id="a9240-111">MAPIOFFLINE_STATE_OFFLINE</span></span>
   
 > 
     
-## <a name="see-also"></a><span data-ttu-id="9a3e5-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9a3e5-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a9240-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a9240-112">See also</span></span>
 
 
 
-[<span data-ttu-id="9a3e5-113">IMAPIOffline::GetCapabilities</span><span class="sxs-lookup"><span data-stu-id="9a3e5-113">IMAPIOffline::GetCapabilities</span></span>](imapioffline-getcapabilities.md)
+[<span data-ttu-id="a9240-113">IMAPIOffline::GetCapabilities</span><span class="sxs-lookup"><span data-stu-id="a9240-113">IMAPIOffline::GetCapabilities</span></span>](imapioffline-getcapabilities.md)
   
-[<span data-ttu-id="9a3e5-114">IMAPIOffline::SetCurrentState</span><span class="sxs-lookup"><span data-stu-id="9a3e5-114">IMAPIOffline::SetCurrentState</span></span>](imapioffline-setcurrentstate.md)
+[<span data-ttu-id="a9240-114">IMAPIOffline::SetCurrentState</span><span class="sxs-lookup"><span data-stu-id="a9240-114">IMAPIOffline::SetCurrentState</span></span>](imapioffline-setcurrentstate.md)
 
 
-[<span data-ttu-id="9a3e5-115">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="9a3e5-115">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="a9240-115">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="a9240-115">MAPI Constants</span></span>](mapi-constants.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Implementieren von standardmäßigen Formularverben
+title: Implementieren von Standard mäßigen Formular Verben
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,34 +7,34 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f89f7c58-6358-4523-9788-676f189b5e69
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 46585859e1dde4ecf38262f99cac5e3a9d29e5db
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6360b86dc23a5404b818f76cb1c2cd10747ef3cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317444"
 ---
-# <a name="implementing-standard-form-verbs"></a><span data-ttu-id="44302-103">Implementieren von standardmäßigen Formularverben</span><span class="sxs-lookup"><span data-stu-id="44302-103">Implementing Standard Form Verbs</span></span>
+# <a name="implementing-standard-form-verbs"></a><span data-ttu-id="5ce3a-103">Implementieren von Standard mäßigen Formular Verben</span><span class="sxs-lookup"><span data-stu-id="5ce3a-103">Implementing Standard Form Verbs</span></span>
 
   
   
-<span data-ttu-id="44302-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="44302-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5ce3a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5ce3a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="44302-105">MAPI definiert eine Reihe von standardmäßigen Verben oder Aktionen ausgeführt, wenn ein Benutzer eine Menüauswahl im trifft oder auf eine Schaltfläche, die alle Formular-Viewer unterstützen soll.</span><span class="sxs-lookup"><span data-stu-id="44302-105">MAPI defines a set of standard verbs, or actions taken when a user makes a menu selection or clicks a button, that all form viewers should support.</span></span> <span data-ttu-id="44302-106">Jedes Verb hat, eine Konstante, die für die Identifikation in der EXCHFORM definierten zugeordnet wird. H-Headerdatei.</span><span class="sxs-lookup"><span data-stu-id="44302-106">Each verb has a constant associated with it for identification, defined in the EXCHFORM.H header file.</span></span> <span data-ttu-id="44302-107">Die folgende Tabelle enthält die Standardformular Verben und deren zugeordneten Konstanten:</span><span class="sxs-lookup"><span data-stu-id="44302-107">The following table lists the standard form verbs and their associated constants:</span></span>
+<span data-ttu-id="5ce3a-105">MAPI definiert eine Reihe von Standardverben oder Aktionen, die ausgeführt werden, wenn ein Benutzer eine Menüauswahl vornimmt oder auf eine Schaltfläche klickt, die von allen Formular Betrachtern unterstützt werden sollte.</span><span class="sxs-lookup"><span data-stu-id="5ce3a-105">MAPI defines a set of standard verbs, or actions taken when a user makes a menu selection or clicks a button, that all form viewers should support.</span></span> <span data-ttu-id="5ce3a-106">Jedem Verb ist eine Konstante zugeordnet, die in der EXCHFORM definiert ist. H-Headerdatei.</span><span class="sxs-lookup"><span data-stu-id="5ce3a-106">Each verb has a constant associated with it for identification, defined in the EXCHFORM.H header file.</span></span> <span data-ttu-id="5ce3a-107">In der folgenden Tabelle sind die standardmäßigen Verben und die zugehörigen Konstanten aufgeführt:</span><span class="sxs-lookup"><span data-stu-id="5ce3a-107">The following table lists the standard form verbs and their associated constants:</span></span>
   
-|<span data-ttu-id="44302-108">**Verb**</span><span class="sxs-lookup"><span data-stu-id="44302-108">**Verb**</span></span>|<span data-ttu-id="44302-109">**Wert**</span><span class="sxs-lookup"><span data-stu-id="44302-109">**Value**</span></span>|
+|<span data-ttu-id="5ce3a-108">**Verb**</span><span class="sxs-lookup"><span data-stu-id="5ce3a-108">**Verb**</span></span>|<span data-ttu-id="5ce3a-109">**Wert**</span><span class="sxs-lookup"><span data-stu-id="5ce3a-109">**Value**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="44302-110">Öffnen</span><span class="sxs-lookup"><span data-stu-id="44302-110">Open</span></span>  <br/> |<span data-ttu-id="44302-111">EXCHIVERB_OPEN</span><span class="sxs-lookup"><span data-stu-id="44302-111">EXCHIVERB_OPEN</span></span>  <br/> |
-|<span data-ttu-id="44302-112">Antworten</span><span class="sxs-lookup"><span data-stu-id="44302-112">Reply</span></span>  <br/> |<span data-ttu-id="44302-113">EXCHIVERB_REPLYTOSENDER</span><span class="sxs-lookup"><span data-stu-id="44302-113">EXCHIVERB_REPLYTOSENDER</span></span>  <br/> |
-|<span data-ttu-id="44302-114">Allen antworten</span><span class="sxs-lookup"><span data-stu-id="44302-114">Reply to All</span></span>  <br/> |<span data-ttu-id="44302-115">EXCHIVERB_REPLYTOALL</span><span class="sxs-lookup"><span data-stu-id="44302-115">EXCHIVERB_REPLYTOALL</span></span>  <br/> |
-|<span data-ttu-id="44302-116">Forward</span><span class="sxs-lookup"><span data-stu-id="44302-116">Forward</span></span>  <br/> |<span data-ttu-id="44302-117">EXCHIVERB_FORWARD</span><span class="sxs-lookup"><span data-stu-id="44302-117">EXCHIVERB_FORWARD</span></span>  <br/> |
-|<span data-ttu-id="44302-118">Drucken</span><span class="sxs-lookup"><span data-stu-id="44302-118">Print</span></span>  <br/> |<span data-ttu-id="44302-119">EXCHIVERB_PRINT</span><span class="sxs-lookup"><span data-stu-id="44302-119">EXCHIVERB_PRINT</span></span>  <br/> |
-|<span data-ttu-id="44302-120">Speichern als</span><span class="sxs-lookup"><span data-stu-id="44302-120">Save As</span></span>  <br/> |<span data-ttu-id="44302-121">EXCHIVERB_SAVEAS</span><span class="sxs-lookup"><span data-stu-id="44302-121">EXCHIVERB_SAVEAS</span></span>  <br/> |
-|<span data-ttu-id="44302-122">In Ordner antworten</span><span class="sxs-lookup"><span data-stu-id="44302-122">Reply to Folder</span></span>  <br/> |<span data-ttu-id="44302-123">EXCHIVERB_REPLYTOFOLDER</span><span class="sxs-lookup"><span data-stu-id="44302-123">EXCHIVERB_REPLYTOFOLDER</span></span>  <br/> |
+|<span data-ttu-id="5ce3a-110">Öffnen</span><span class="sxs-lookup"><span data-stu-id="5ce3a-110">Open</span></span>  <br/> |<span data-ttu-id="5ce3a-111">EXCHIVERB_OPEN</span><span class="sxs-lookup"><span data-stu-id="5ce3a-111">EXCHIVERB_OPEN</span></span>  <br/> |
+|<span data-ttu-id="5ce3a-112">Antworten</span><span class="sxs-lookup"><span data-stu-id="5ce3a-112">Reply</span></span>  <br/> |<span data-ttu-id="5ce3a-113">EXCHIVERB_REPLYTOSENDER</span><span class="sxs-lookup"><span data-stu-id="5ce3a-113">EXCHIVERB_REPLYTOSENDER</span></span>  <br/> |
+|<span data-ttu-id="5ce3a-114">Allen antworten</span><span class="sxs-lookup"><span data-stu-id="5ce3a-114">Reply to All</span></span>  <br/> |<span data-ttu-id="5ce3a-115">EXCHIVERB_REPLYTOALL</span><span class="sxs-lookup"><span data-stu-id="5ce3a-115">EXCHIVERB_REPLYTOALL</span></span>  <br/> |
+|<span data-ttu-id="5ce3a-116">Weiterleiten</span><span class="sxs-lookup"><span data-stu-id="5ce3a-116">Forward</span></span>  <br/> |<span data-ttu-id="5ce3a-117">EXCHIVERB_FORWARD</span><span class="sxs-lookup"><span data-stu-id="5ce3a-117">EXCHIVERB_FORWARD</span></span>  <br/> |
+|<span data-ttu-id="5ce3a-118">Print</span><span class="sxs-lookup"><span data-stu-id="5ce3a-118">Print</span></span>  <br/> |<span data-ttu-id="5ce3a-119">EXCHIVERB_PRINT</span><span class="sxs-lookup"><span data-stu-id="5ce3a-119">EXCHIVERB_PRINT</span></span>  <br/> |
+|<span data-ttu-id="5ce3a-120">Speichern unter</span><span class="sxs-lookup"><span data-stu-id="5ce3a-120">Save As</span></span>  <br/> |<span data-ttu-id="5ce3a-121">EXCHIVERB_SAVEAS</span><span class="sxs-lookup"><span data-stu-id="5ce3a-121">EXCHIVERB_SAVEAS</span></span>  <br/> |
+|<span data-ttu-id="5ce3a-122">In Ordner antworten</span><span class="sxs-lookup"><span data-stu-id="5ce3a-122">Reply to Folder</span></span>  <br/> |<span data-ttu-id="5ce3a-123">EXCHIVERB_REPLYTOFOLDER</span><span class="sxs-lookup"><span data-stu-id="5ce3a-123">EXCHIVERB_REPLYTOFOLDER</span></span>  <br/> |
    
-<span data-ttu-id="44302-124">Wenn ein Benutzer ein Verb auswählt, übergeben Sie die Konstante in einen Anruf an das Formular [IMAPIForm::DoVerb](imapiform-doverb.md) -Methode zum Ausführen der entsprechenden Aktion.</span><span class="sxs-lookup"><span data-stu-id="44302-124">When a user chooses a verb, pass its constant in a call to the form's [IMAPIForm::DoVerb](imapiform-doverb.md) method to perform its corresponding action.</span></span> 
+<span data-ttu-id="5ce3a-124">Wenn ein Benutzer ein Verb auswählt, übergibt seine Konstante in einem Aufruf an die [IMAPIForm::D overb](imapiform-doverb.md) -Methode des Formulars, um die entsprechende Aktion auszuführen.</span><span class="sxs-lookup"><span data-stu-id="5ce3a-124">When a user chooses a verb, pass its constant in a call to the form's [IMAPIForm::DoVerb](imapiform-doverb.md) method to perform its corresponding action.</span></span> 
   
-<span data-ttu-id="44302-125">Benutzer können über Ihr Formular Viewer auf Verben zugreifen, Verben manchmal direkt aus dem Formular zugreifen.</span><span class="sxs-lookup"><span data-stu-id="44302-125">In addition to accessing verbs through your form viewer, users can sometimes access verbs directly from the form.</span></span> <span data-ttu-id="44302-126">Beispielsweise Benutzer einige Formularobjekte sollen das Verb **Drucken** aufrufen, indem Sie mit der rechten Maustaste auf das Formular, und wählen Sie **Drucken** aus einem Kontextmenü.</span><span class="sxs-lookup"><span data-stu-id="44302-126">For example, some form objects allow the user to invoke the **Print** verb by right-clicking on the form and choosing **Print** from a context-sensitive menu.</span></span> 
+<span data-ttu-id="5ce3a-125">Zusätzlich zum Zugreifen auf Verben über den Formular Betrachter können Benutzer manchmal direkt über das Formular auf Verben zugreifen.</span><span class="sxs-lookup"><span data-stu-id="5ce3a-125">In addition to accessing verbs through your form viewer, users can sometimes access verbs directly from the form.</span></span> <span data-ttu-id="5ce3a-126">Einige Formularobjekte ermöglichen es dem Benutzer beispielsweise, das **Druck** -Verb aufzurufen, indem Sie mit der rechten Maustaste auf das Formular klicken und im kontextabhängigen Menü **Drucken** auswählen.</span><span class="sxs-lookup"><span data-stu-id="5ce3a-126">For example, some form objects allow the user to invoke the **Print** verb by right-clicking on the form and choosing **Print** from a context-sensitive menu.</span></span> 
   
 

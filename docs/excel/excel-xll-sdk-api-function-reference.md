@@ -12,55 +12,55 @@ ms.assetid: 2f6df879-7546-4ac0-a4e3-6b009aee9463
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: e116021a3dc24de7decbe0dad76cc762cd66d032
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304123"
 ---
-# <a name="excel-xll-sdk-api-function-reference"></a><span data-ttu-id="cf87a-104">Excel XLL SDK – API-Funktionsreferenz</span><span class="sxs-lookup"><span data-stu-id="cf87a-104">Excel XLL SDK API Function Reference</span></span>
+# <a name="excel-xll-sdk-api-function-reference"></a><span data-ttu-id="17799-104">Excel XLL SDK – API-Funktionsreferenz</span><span class="sxs-lookup"><span data-stu-id="17799-104">Excel XLL SDK API Function Reference</span></span>
 
-<span data-ttu-id="cf87a-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="cf87a-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+<span data-ttu-id="17799-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="17799-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="cf87a-106">Das Microsoft Excel 2013 XLL SDK enthält die Quelldateien für eine "Framework"-Bibliothek, die das Schreiben von XLLs beschleunigen soll, sowie die zwei Beispielprojekte "Example" und "Generic".</span><span class="sxs-lookup"><span data-stu-id="cf87a-106">The Microsoft Excel 2013 XLL SDK contains source files for a Framework library that is designed to speed up the writing of XLLs, and two sample projects, Example and Generic.</span></span> 
+<span data-ttu-id="17799-106">Das Microsoft Excel 2013 XLL SDK enthält die Quelldateien für eine "Framework"-Bibliothek, die das Schreiben von XLLs beschleunigen soll, sowie die zwei Beispielprojekte "Example" und "Generic".</span><span class="sxs-lookup"><span data-stu-id="17799-106">The Microsoft Excel 2013 XLL SDK contains source files for a Framework library that is designed to speed up the writing of XLLs, and two sample projects, Example and Generic.</span></span> 
   
-<span data-ttu-id="cf87a-107">Dieser Abschnitt stellt eine Funktionsreferenz für Folgendes bereit:</span><span class="sxs-lookup"><span data-stu-id="cf87a-107">This section provides a function reference for the following:</span></span>
+<span data-ttu-id="17799-107">Dieser Abschnitt stellt eine Funktionsreferenz für Folgendes bereit:</span><span class="sxs-lookup"><span data-stu-id="17799-107">This section provides a function reference for the following:</span></span>
   
-- <span data-ttu-id="cf87a-108">Excel-Rückrufe, die die XLL aufrufen kann</span><span class="sxs-lookup"><span data-stu-id="cf87a-108">Excel callbacks that the XLL can call.</span></span>
+- <span data-ttu-id="17799-108">Excel-Rückrufe, die die XLL aufrufen kann</span><span class="sxs-lookup"><span data-stu-id="17799-108">Excel callbacks that the XLL can call.</span></span>
     
-- <span data-ttu-id="cf87a-109">XLL-Rückrufe, nach denen Microsoft Excel sucht</span><span class="sxs-lookup"><span data-stu-id="cf87a-109">XLL callbacks that Microsoft Excel looks for.</span></span>
+- <span data-ttu-id="17799-109">XLL-Rückrufe, nach denen Microsoft Excel sucht</span><span class="sxs-lookup"><span data-stu-id="17799-109">XLL callbacks that Microsoft Excel looks for.</span></span>
     
-- <span data-ttu-id="cf87a-110">Wichtige Funktionen in den Beispiel- und Frameworkprojekten.</span><span class="sxs-lookup"><span data-stu-id="cf87a-110">Key functions in the sample and framework projects.</span></span>
+- <span data-ttu-id="17799-110">Wichtige Funktionen in den Beispiel- und Frameworkprojekten.</span><span class="sxs-lookup"><span data-stu-id="17799-110">Key functions in the sample and framework projects.</span></span>
     
-## <a name="sample-projects"></a><span data-ttu-id="cf87a-111">Beispielprojekte</span><span class="sxs-lookup"><span data-stu-id="cf87a-111">Sample projects</span></span>
+## <a name="sample-projects"></a><span data-ttu-id="17799-111">Beispielprojekte</span><span class="sxs-lookup"><span data-stu-id="17799-111">Sample projects</span></span>
 
-<span data-ttu-id="cf87a-112">Das Excel 2013 XLL SDK enthält Quelldateien und Microsoft Visual Studio Project-Dateien für die folgenden Beispielprojekte:</span><span class="sxs-lookup"><span data-stu-id="cf87a-112">The Excel 2013 XLL SDK provides source files and Microsoft Visual Studio project files for the following sample projects:</span></span>
+<span data-ttu-id="17799-112">Das Excel 2013 XLL SDK enthält Quelldateien und Microsoft Visual Studio Project-Dateien für die folgenden Beispielprojekte:</span><span class="sxs-lookup"><span data-stu-id="17799-112">The Excel 2013 XLL SDK provides source files and Microsoft Visual Studio project files for the following sample projects:</span></span>
   
-- <span data-ttu-id="cf87a-113">Das Projekt **Framework** (`SAMPLES\FRAMEWRK\`) enthält ein Projekt, aus dem die Bibliothek FRAMEWRK.lib erstellt werden kann, die dann mit anderen XLL-Projekten verknüpft werden kann.</span><span class="sxs-lookup"><span data-stu-id="cf87a-113">The **Framework** project (`SAMPLES\FRAMEWRK\`) contains a project that can be built to a library, FRAMEWRK.lib, which can then be linked into other XLL projects.</span></span> <span data-ttu-id="cf87a-114">Die Bibliothek enthält viele Funktionen und Tools, die das Schreiben von XLLs einfacher machen.</span><span class="sxs-lookup"><span data-stu-id="cf87a-114">The library contains many functions and tools that make writing XLLs easier.</span></span> <span data-ttu-id="cf87a-115">Diese Bibliothek wird in den beiden anderen Projekten zusammen mit der Headerdatei FRAMEWRK.h verwendet.</span><span class="sxs-lookup"><span data-stu-id="cf87a-115">This library is used in both of the other projects in conjunction with the header file FRAMEWRK.h.</span></span>
+- <span data-ttu-id="17799-113">Das Projekt **Framework** (`SAMPLES\FRAMEWRK\`) enthält ein Projekt, aus dem die Bibliothek FRAMEWRK.lib erstellt werden kann, die dann mit anderen XLL-Projekten verknüpft werden kann.</span><span class="sxs-lookup"><span data-stu-id="17799-113">The **Framework** project (`SAMPLES\FRAMEWRK\`) contains a project that can be built to a library, FRAMEWRK.lib, which can then be linked into other XLL projects.</span></span> <span data-ttu-id="17799-114">Die Bibliothek enthält viele Funktionen und Tools, die das Schreiben von XLLs einfacher machen.</span><span class="sxs-lookup"><span data-stu-id="17799-114">The library contains many functions and tools that make writing XLLs easier.</span></span> <span data-ttu-id="17799-115">Diese Bibliothek wird in den beiden anderen Projekten zusammen mit der Headerdatei FRAMEWRK.h verwendet.</span><span class="sxs-lookup"><span data-stu-id="17799-115">This library is used in both of the other projects in conjunction with the header file FRAMEWRK.h.</span></span>
     
-- <span data-ttu-id="cf87a-116">Das Projekt **Example** (`SAMPLES\EXAMPLE\`) enthält ein Projekt, aus dem die XLL-Datei EXAMPLE.xll erstellt werden kann.</span><span class="sxs-lookup"><span data-stu-id="cf87a-116">The **Example** project (`SAMPLES\EXAMPLE\`) contains a project that can be built to an XLL, EXAMPLE.xll.</span></span> <span data-ttu-id="cf87a-117">Die XLL enthält viele Beispiele für die Verwendung der Bibliothek „Framework“ sowie Beispielimplementierungen der XLL-Add-In-Schnittstellenfunktionen wie z. B. **xlAutoOpen**.</span><span class="sxs-lookup"><span data-stu-id="cf87a-117">The XLL contains many examples of the use of the Framework library, and example implementations of the XLL add-in interface functions such as **xlAutoOpen**.</span></span>
+- <span data-ttu-id="17799-116">Das Projekt **Example** (`SAMPLES\EXAMPLE\`) enthält ein Projekt, aus dem die XLL-Datei EXAMPLE.xll erstellt werden kann.</span><span class="sxs-lookup"><span data-stu-id="17799-116">The **Example** project (`SAMPLES\EXAMPLE\`) contains a project that can be built to an XLL, EXAMPLE.xll.</span></span> <span data-ttu-id="17799-117">Die XLL enthält viele Beispiele für die Verwendung der Bibliothek „Framework“ sowie Beispielimplementierungen der XLL-Add-In-Schnittstellenfunktionen wie z. B. **xlAutoOpen**.</span><span class="sxs-lookup"><span data-stu-id="17799-117">The XLL contains many examples of the use of the Framework library, and example implementations of the XLL add-in interface functions such as **xlAutoOpen**.</span></span>
     
-- <span data-ttu-id="cf87a-118">Das Projekt **Generic** (`SAMPLES\GENERIC\`) enthält ein Projekt, aus dem die XLL-Datei GENERIC.xll erstellt werden kann.</span><span class="sxs-lookup"><span data-stu-id="cf87a-118">The **Generic** project (`SAMPLES\GENERIC\`) contains a project that can be built to an XLL, GENERIC.xll.</span></span> <span data-ttu-id="cf87a-119">Die XLL veranschaulicht verschiedene Beispiele für Funktionen und Befehle und ist ein guter Ausgangspunkt zum Schreiben Ihrer eigenen XLLs.</span><span class="sxs-lookup"><span data-stu-id="cf87a-119">The XLL demonstrates several example functions and commands and is a good starting point for writing your own XLLs.</span></span>
+- <span data-ttu-id="17799-118">Das Projekt **Generic** (`SAMPLES\GENERIC\`) enthält ein Projekt, aus dem die XLL-Datei GENERIC.xll erstellt werden kann.</span><span class="sxs-lookup"><span data-stu-id="17799-118">The **Generic** project (`SAMPLES\GENERIC\`) contains a project that can be built to an XLL, GENERIC.xll.</span></span> <span data-ttu-id="17799-119">Die XLL veranschaulicht verschiedene Beispiele für Funktionen und Befehle und ist ein guter Ausgangspunkt zum Schreiben Ihrer eigenen XLLs.</span><span class="sxs-lookup"><span data-stu-id="17799-119">The XLL demonstrates several example functions and commands and is a good starting point for writing your own XLLs.</span></span>
     
-## <a name="in-this-section"></a><span data-ttu-id="cf87a-120">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="cf87a-120">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="17799-120">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="17799-120">In this section</span></span>
 
-- [<span data-ttu-id="cf87a-121">Add-In-Manager und XLL-Benutzeroberflächenfunktionen</span><span class="sxs-lookup"><span data-stu-id="cf87a-121">Add-in Manager and XLL Interface Functions</span></span>](add-in-manager-and-xll-interface-functions.md)
+- [<span data-ttu-id="17799-121">Add-In-Manager und XLL-Benutzeroberflächenfunktionen</span><span class="sxs-lookup"><span data-stu-id="17799-121">Add-in Manager and XLL Interface Functions</span></span>](add-in-manager-and-xll-interface-functions.md)
   
-- [<span data-ttu-id="cf87a-122">C-API-Rückruffunktionen Excel4, Excel12</span><span class="sxs-lookup"><span data-stu-id="cf87a-122">C API Callback Functions Excel4, Excel12</span></span>](c-api-callback-functions-excel4-excel12.md)
+- [<span data-ttu-id="17799-122">C-API-Rückruffunktionen Excel4, Excel12</span><span class="sxs-lookup"><span data-stu-id="17799-122">C API Callback Functions Excel4, Excel12</span></span>](c-api-callback-functions-excel4-excel12.md)
   
-- [<span data-ttu-id="cf87a-123">Wichtige und nützliche C-API-XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="cf87a-123">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="17799-123">Wichtige und nützliche C-API-XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="17799-123">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
   
-- [<span data-ttu-id="cf87a-124">C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="cf87a-124">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [<span data-ttu-id="17799-124">C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="17799-124">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
-- [<span data-ttu-id="cf87a-125">Funktionen in der Framework-Klassenbibliothek</span><span class="sxs-lookup"><span data-stu-id="cf87a-125">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+- [<span data-ttu-id="17799-125">Funktionen in der Framework-Klassenbibliothek</span><span class="sxs-lookup"><span data-stu-id="17799-125">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
   
-- [<span data-ttu-id="cf87a-126">Funktionen in der generische DLL</span><span class="sxs-lookup"><span data-stu-id="cf87a-126">Functions in the Generic DLL</span></span>](functions-in-the-generic-dll.md)
+- [<span data-ttu-id="17799-126">Funktionen in der generische DLL</span><span class="sxs-lookup"><span data-stu-id="17799-126">Functions in the Generic DLL</span></span>](functions-in-the-generic-dll.md)
   
-- [<span data-ttu-id="cf87a-127">Excel-Clusterconnector-Funktionen</span><span class="sxs-lookup"><span data-stu-id="cf87a-127">Excel Cluster Connector Functions</span></span>](excel-cluster-connector-functions.md)
+- [<span data-ttu-id="17799-127">Excel-Clusterconnector-Funktionen</span><span class="sxs-lookup"><span data-stu-id="17799-127">Excel Cluster Connector Functions</span></span>](excel-cluster-connector-functions.md)
   
-## <a name="see-also"></a><span data-ttu-id="cf87a-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cf87a-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="17799-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="17799-128">See also</span></span>
 
-- [<span data-ttu-id="cf87a-129">Programmieren mit der C-API in Excel</span><span class="sxs-lookup"><span data-stu-id="cf87a-129">Programming with the C API in Excel</span></span>](programming-with-the-c-api-in-excel.md)
+- [<span data-ttu-id="17799-129">Programmieren mit der C-API in Excel</span><span class="sxs-lookup"><span data-stu-id="17799-129">Programming with the C API in Excel</span></span>](programming-with-the-c-api-in-excel.md)
   
-- [<span data-ttu-id="cf87a-130">Entwickeln von XLLs für Excel</span><span class="sxs-lookup"><span data-stu-id="cf87a-130">Developing Excel XLLs</span></span>](developing-excel-xlls.md)
+- [<span data-ttu-id="17799-130">Entwickeln von XLLs für Excel</span><span class="sxs-lookup"><span data-stu-id="17799-130">Developing Excel XLLs</span></span>](developing-excel-xlls.md)
 

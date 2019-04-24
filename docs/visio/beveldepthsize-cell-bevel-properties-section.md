@@ -1,37 +1,37 @@
 ---
-title: BevelDepthSize Cell (Bevel Properties Section)
+title: Zelle "BevelDepthSize" (Abschnitt "Fase Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c6a57e52-c7ed-4a52-940f-1cef9baa70a5
-description: Bestimmt die Größe der Abschrägung Tiefe in Punkt.
-ms.openlocfilehash: 4b6f686b0afe1c09411435797cadc6f93fa0938f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Größe der Abschrägung in Punkt.
+ms.openlocfilehash: 13c00536d6fc4f19ff2c62cab2afd04f9cdf8985
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315778"
 ---
-# <a name="beveldepthsize-cell-bevel-properties-section"></a><span data-ttu-id="b0f2c-103">BevelDepthSize Cell (Bevel Properties Section)</span><span class="sxs-lookup"><span data-stu-id="b0f2c-103">BevelDepthSize Cell (Bevel Properties Section)</span></span>
+# <a name="beveldepthsize-cell-bevel-properties-section"></a><span data-ttu-id="191cb-103">Zelle "BevelDepthSize" (Abschnitt "Fase Properties")</span><span class="sxs-lookup"><span data-stu-id="191cb-103">BevelDepthSize Cell (Bevel Properties Section)</span></span>
 
-<span data-ttu-id="b0f2c-104">Bestimmt die Größe der Abschrägung Tiefe in Punkt.</span><span class="sxs-lookup"><span data-stu-id="b0f2c-104">Determines the size of the bevel's depth in points.</span></span> 
+<span data-ttu-id="191cb-104">Bestimmt die Größe der Abschrägung in Punkt.</span><span class="sxs-lookup"><span data-stu-id="191cb-104">Determines the size of the bevel's depth in points.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="b0f2c-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b0f2c-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="191cb-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="191cb-105">Remarks</span></span>
 
-<span data-ttu-id="b0f2c-106">Wenn Sie einen Verweis auf die Zelle **BevelDepthSize** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="b0f2c-106">To get a reference to the **BevelDepthSize** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="191cb-106">Wenn Sie einen Verweis auf die Zelle **BevelDepthSize** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="191cb-106">To get a reference to the **BevelDepthSize** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="b0f2c-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="b0f2c-107">Cell name:</span></span>  <br/> | <span data-ttu-id="b0f2c-108">BevelDepthSize</span><span class="sxs-lookup"><span data-stu-id="b0f2c-108">BevelDepthSize</span></span>  <br/> |
+| <span data-ttu-id="191cb-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="191cb-107">Cell name:</span></span>  <br/> | <span data-ttu-id="191cb-108">BevelDepthSize</span><span class="sxs-lookup"><span data-stu-id="191cb-108">BevelDepthSize</span></span>  <br/> |
    
-<span data-ttu-id="b0f2c-109">Wenn Sie einen Verweis auf die Zelle **BevelDepthSize** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="b0f2c-109">To get a reference to the **BevelDepthSize** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="191cb-109">Wenn Sie einen Verweis auf die Zelle **BevelDepthSize** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="191cb-109">To get a reference to the **BevelDepthSize** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="b0f2c-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="b0f2c-110">Section index:</span></span>  <br/> |<span data-ttu-id="b0f2c-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="b0f2c-111">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="b0f2c-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="b0f2c-112">Row index:</span></span>  <br/> |<span data-ttu-id="b0f2c-113">**visRowBevelProperties**</span><span class="sxs-lookup"><span data-stu-id="b0f2c-113">**visRowBevelProperties**</span></span> <br/> |
-| <span data-ttu-id="b0f2c-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="b0f2c-114">Cell index:</span></span>  <br/> |<span data-ttu-id="b0f2c-115">**visBevelDepthSize**</span><span class="sxs-lookup"><span data-stu-id="b0f2c-115">**visBevelDepthSize**</span></span> <br/> |
+| <span data-ttu-id="191cb-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="191cb-110">Section index:</span></span>  <br/> |<span data-ttu-id="191cb-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="191cb-111">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="191cb-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="191cb-112">Row index:</span></span>  <br/> |<span data-ttu-id="191cb-113">**visRowBevelProperties**</span><span class="sxs-lookup"><span data-stu-id="191cb-113">**visRowBevelProperties**</span></span> <br/> |
+| <span data-ttu-id="191cb-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="191cb-114">Cell index:</span></span>  <br/> |<span data-ttu-id="191cb-115">**visBevelDepthSize**</span><span class="sxs-lookup"><span data-stu-id="191cb-115">**visBevelDepthSize**</span></span> <br/> |
    
 

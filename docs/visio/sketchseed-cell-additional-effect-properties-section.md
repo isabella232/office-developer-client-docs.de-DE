@@ -1,37 +1,37 @@
 ---
-title: SketchSeed Cell (Additional Effect Properties Section)
+title: SketchSeed Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f62650d-36f8-4c6e-b79f-c9c397a5954d
-description: Stellt einen zufällige Wert verwendet, um die Geometrie einer Skizze Auswirkung, wie eine positive ganze Zahl zu bestimmen. Der Wert der Zelle SketchSeed wird nach dem Zufallsprinzip erstellt, wenn eine Skizze Auswirkung auf die Form angewendet wird.
-ms.openlocfilehash: 7c9d23e19da1a94bb37f1fc916e2f08095976d09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Stellt einen Zufallswert dar, der verwendet wird, um die Geometrie eines Skizzen Effekts als positive Ganzzahl zu bestimmen. Der Wert der SketchSeed-Zelle wird nach dem Zufallsprinzip erstellt, wenn ein skizzeneffekt auf die Form angewendet wird.
+ms.openlocfilehash: 3ec58fbfa183d1a6d7bb6960672658f9a6cca073
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315148"
 ---
-# <a name="sketchseed-cell-additional-effect-properties-section"></a><span data-ttu-id="62e06-104">SketchSeed Cell (Additional Effect Properties Section)</span><span class="sxs-lookup"><span data-stu-id="62e06-104">SketchSeed Cell (Additional Effect Properties Section)</span></span>
+# <a name="sketchseed-cell-additional-effect-properties-section"></a><span data-ttu-id="91d19-104">SketchSeed Cell (Additional Effect Properties section)</span><span class="sxs-lookup"><span data-stu-id="91d19-104">SketchSeed Cell (Additional Effect Properties Section)</span></span>
 
-<span data-ttu-id="62e06-105">Stellt einen zufällige Wert verwendet, um die Geometrie einer Skizze Auswirkung, wie eine positive ganze Zahl zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="62e06-105">Represents a randomization value used to determine the geometry of a sketch effect, as a positive integer.</span></span> <span data-ttu-id="62e06-106">Der Wert der Zelle **SketchSeed** wird nach dem Zufallsprinzip erstellt, wenn eine Skizze Auswirkung auf die Form angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="62e06-106">The value of the **SketchSeed** cell is randomly created when a sketch effect is applied to the shape.</span></span> 
+<span data-ttu-id="91d19-105">Stellt einen Zufallswert dar, der verwendet wird, um die Geometrie eines Skizzen Effekts als positive Ganzzahl zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="91d19-105">Represents a randomization value used to determine the geometry of a sketch effect, as a positive integer.</span></span> <span data-ttu-id="91d19-106">Der Wert der **SketchSeed** -Zelle wird nach dem Zufallsprinzip erstellt, wenn ein skizzeneffekt auf die Form angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="91d19-106">The value of the **SketchSeed** cell is randomly created when a sketch effect is applied to the shape.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="62e06-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="62e06-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="91d19-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="91d19-107">Remarks</span></span>
 
-<span data-ttu-id="62e06-108">Wenn Sie einen Verweis auf die Zelle **SketchSeed** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="62e06-108">To get a reference to the **SketchSeed** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="91d19-108">Wenn Sie einen Verweis auf die Zelle **SketchSeed** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="91d19-108">To get a reference to the **SketchSeed** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="62e06-109">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="62e06-109">Cell name:</span></span>  <br/> | <span data-ttu-id="62e06-110">SketchSeed</span><span class="sxs-lookup"><span data-stu-id="62e06-110">SketchSeed</span></span>  <br/> |
+| <span data-ttu-id="91d19-109">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="91d19-109">Cell name:</span></span>  <br/> | <span data-ttu-id="91d19-110">SketchSeed</span><span class="sxs-lookup"><span data-stu-id="91d19-110">SketchSeed</span></span>  <br/> |
    
-<span data-ttu-id="62e06-111">Wenn Sie einen Verweis auf die Zelle **SketchSeed** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="62e06-111">To get a reference to the **SketchSeed** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="91d19-111">Wenn Sie einen Verweis auf die Zelle **SketchSeed** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="91d19-111">To get a reference to the **SketchSeed** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="62e06-112">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="62e06-112">Section index:</span></span>  <br/> |<span data-ttu-id="62e06-113">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="62e06-113">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="62e06-114">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="62e06-114">Row index:</span></span>  <br/> |<span data-ttu-id="62e06-115">**visRowOtherEffectProperties**</span><span class="sxs-lookup"><span data-stu-id="62e06-115">**visRowOtherEffectProperties**</span></span> <br/> |
-| <span data-ttu-id="62e06-116">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="62e06-116">Cell index:</span></span>  <br/> |<span data-ttu-id="62e06-117">**visSketchSeed**</span><span class="sxs-lookup"><span data-stu-id="62e06-117">**visSketchSeed**</span></span> <br/> |
+| <span data-ttu-id="91d19-112">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="91d19-112">Section index:</span></span>  <br/> |<span data-ttu-id="91d19-113">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="91d19-113">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="91d19-114">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="91d19-114">Row index:</span></span>  <br/> |<span data-ttu-id="91d19-115">**visRowOtherEffectProperties**</span><span class="sxs-lookup"><span data-stu-id="91d19-115">**visRowOtherEffectProperties**</span></span> <br/> |
+| <span data-ttu-id="91d19-116">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="91d19-116">Cell index:</span></span>  <br/> |<span data-ttu-id="91d19-117">**visSketchSeed**</span><span class="sxs-lookup"><span data-stu-id="91d19-117">**visSketchSeed**</span></span> <br/> |
    
 

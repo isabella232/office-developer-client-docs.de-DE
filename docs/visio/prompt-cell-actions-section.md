@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ce43b4fd-816a-6f2f-2019-42eecf747cdd
 description: Ab Visio 2002 wird diese Zelle nicht mehr verwendet.
-ms.openlocfilehash: f75778491f587783563af2473e6d8325e9b96e44
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bd0eeaa62a1c2a3f667301db48ff301f88d6f8d3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315162"
 ---
-# <a name="prompt-cell-actions-section"></a><span data-ttu-id="3edd7-103">Prompt Cell (Actions Section)</span><span class="sxs-lookup"><span data-stu-id="3edd7-103">Prompt Cell (Actions Section)</span></span>
+# <a name="prompt-cell-actions-section"></a><span data-ttu-id="55600-103">Zelle "Prompt" (Abschnitt "Actions")</span><span class="sxs-lookup"><span data-stu-id="55600-103">Prompt Cell (Actions Section)</span></span>
 
-<span data-ttu-id="3edd7-104">Ab Visio 2002 wird diese Zelle nicht mehr verwendet.</span><span class="sxs-lookup"><span data-stu-id="3edd7-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
+<span data-ttu-id="55600-104">Ab Visio 2002 wird diese Zelle nicht mehr verwendet.</span><span class="sxs-lookup"><span data-stu-id="55600-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3edd7-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="3edd7-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="55600-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="55600-105">Remarks</span></span>
 
-<span data-ttu-id="3edd7-106">In früheren Versionen von Visio wurde in diese Zelle eine Beschreibung eingegeben, die in der Statusleiste angezeigt wurde, wenn auf den entsprechenden Befehl im Kontextmenü geklickt wurde.</span><span class="sxs-lookup"><span data-stu-id="3edd7-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
+<span data-ttu-id="55600-106">In früheren Versionen von Visio wurde in diese Zelle eine Beschreibung eingegeben, die in der Statusleiste angezeigt wurde, wenn auf den entsprechenden Befehl im Kontextmenü geklickt wurde.</span><span class="sxs-lookup"><span data-stu-id="55600-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
   
 

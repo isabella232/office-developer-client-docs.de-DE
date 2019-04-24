@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3e758acfa1cf0c11be666dd730d9bf589d2e9d77
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7e445646477ad1fc56b41141b541358d9b9f9616
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321695"
 ---
-# <a name="imapiformmgrloadform"></a><span data-ttu-id="61812-103">IMAPIFormMgr::LoadForm</span><span class="sxs-lookup"><span data-stu-id="61812-103">IMAPIFormMgr::LoadForm</span></span>
+# <a name="imapiformmgrloadform"></a><span data-ttu-id="da65e-103">IMAPIFormMgr::LoadForm</span><span class="sxs-lookup"><span data-stu-id="da65e-103">IMAPIFormMgr::LoadForm</span></span>
 
   
   
-<span data-ttu-id="61812-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="61812-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="da65e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="da65e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="61812-105">Startet ein Formular, um eine vorhandene Nachricht zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="61812-105">Starts a form to open an existing message.</span></span>
+<span data-ttu-id="da65e-105">Startet ein Formular zum Öffnen einer vorhandenen Nachricht.</span><span class="sxs-lookup"><span data-stu-id="da65e-105">Starts a form to open an existing message.</span></span>
   
 ```cpp
 HRESULT LoadForm(
@@ -43,104 +43,104 @@ HRESULT LoadForm(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="61812-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="61812-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="da65e-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="da65e-106">Parameters</span></span>
 
- <span data-ttu-id="61812-107">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="61812-107">_ulUIParam_</span></span>
+ <span data-ttu-id="da65e-107">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="da65e-107">_ulUIParam_</span></span>
   
-> <span data-ttu-id="61812-108">[in] Ein Handle für das übergeordnete Fenster der Statusanzeige, die angezeigt wird, während das Formular geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="61812-108">[in] A handle to the parent window of the progress indicator that is displayed while the form is opened.</span></span> <span data-ttu-id="61812-109">Der Parameter _UlUIParam_ wird ignoriert, es sei denn, das Flag MAPI_DIALOG im _UlFlags_ -Parameter festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="61812-109">The  _ulUIParam_ parameter is ignored unless the MAPI_DIALOG flag is set in the  _ulFlags_ parameter.</span></span> 
+> <span data-ttu-id="da65e-108">in Ein Handle für das übergeordnete Fenster der Statusanzeige, das angezeigt wird, während das Formular geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="da65e-108">[in] A handle to the parent window of the progress indicator that is displayed while the form is opened.</span></span> <span data-ttu-id="da65e-109">Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das MAPI_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt.</span><span class="sxs-lookup"><span data-stu-id="da65e-109">The  _ulUIParam_ parameter is ignored unless the MAPI_DIALOG flag is set in the  _ulFlags_ parameter.</span></span> 
     
- <span data-ttu-id="61812-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="61812-110">_ulFlags_</span></span>
+ <span data-ttu-id="da65e-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="da65e-110">_ulFlags_</span></span>
   
-> <span data-ttu-id="61812-111">[in] Eine Bitmaske aus Flags, die steuert, wie das Formular geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="61812-111">[in] A bitmask of flags that controls how the form is opened.</span></span> <span data-ttu-id="61812-112">Die folgenden Kennzeichen können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="61812-112">The following flags can be set:</span></span>
+> <span data-ttu-id="da65e-111">in Eine Bitmaske von Flags, die steuert, wie das Formular geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="da65e-111">[in] A bitmask of flags that controls how the form is opened.</span></span> <span data-ttu-id="da65e-112">Die folgenden Flags können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="da65e-112">The following flags can be set:</span></span>
     
-<span data-ttu-id="61812-113">MAPI_DIALOG</span><span class="sxs-lookup"><span data-stu-id="61812-113">MAPI_DIALOG</span></span> 
+<span data-ttu-id="da65e-113">MAPI_DIALOG</span><span class="sxs-lookup"><span data-stu-id="da65e-113">MAPI_DIALOG</span></span> 
   
-> <span data-ttu-id="61812-114">Zeigt eine Benutzeroberfläche zum Bereitstellen von Status oder auffordern, Weitere Informationen.</span><span class="sxs-lookup"><span data-stu-id="61812-114">Displays a user interface to provide status or prompt the user for more information.</span></span> <span data-ttu-id="61812-115">Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.</span><span class="sxs-lookup"><span data-stu-id="61812-115">If this flag is not set, no user interface is displayed.</span></span>
+> <span data-ttu-id="da65e-114">Zeigt eine Benutzeroberfläche an, um den Status anzugeben oder den Benutzer aufzufordern, weitere Informationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="da65e-114">Displays a user interface to provide status or prompt the user for more information.</span></span> <span data-ttu-id="da65e-115">Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.</span><span class="sxs-lookup"><span data-stu-id="da65e-115">If this flag is not set, no user interface is displayed.</span></span>
     
-<span data-ttu-id="61812-116">MAPIFORM_EXACTMATCH</span><span class="sxs-lookup"><span data-stu-id="61812-116">MAPIFORM_EXACTMATCH</span></span> 
+<span data-ttu-id="da65e-116">MAPIFORM_EXACTMATCH</span><span class="sxs-lookup"><span data-stu-id="da65e-116">MAPIFORM_EXACTMATCH</span></span> 
   
-> <span data-ttu-id="61812-117">Nur Nachricht Klasse Zeichenfolgen, die eine genaue Übereinstimmung sollten aufgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="61812-117">Only message class strings that are an exact match should be resolved.</span></span>
+> <span data-ttu-id="da65e-117">Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="da65e-117">Only message class strings that are an exact match should be resolved.</span></span>
     
- <span data-ttu-id="61812-118">_lpszMessageClass_</span><span class="sxs-lookup"><span data-stu-id="61812-118">_lpszMessageClass_</span></span>
+ <span data-ttu-id="da65e-118">_lpszMessageClass_</span><span class="sxs-lookup"><span data-stu-id="da65e-118">_lpszMessageClass_</span></span>
   
-> <span data-ttu-id="61812-119">[in] Ein Zeiger auf eine Zeichenfolge, die den Namen die Nachrichtenklasse der Nachricht geladen werden.</span><span class="sxs-lookup"><span data-stu-id="61812-119">[in] A pointer to a string that names the message class of the message to be loaded.</span></span> <span data-ttu-id="61812-120">Wenn NULL in der _LpszMessageClass_ -Parameter übergeben wird, wird die Nachrichtenklasse aus der Nachricht auf das durch den Parameter _Pmsg_ bestimmt.</span><span class="sxs-lookup"><span data-stu-id="61812-120">If NULL is passed in the  _lpszMessageClass_ parameter, the message class is determined from the message pointed to by the  _pmsg_ parameter.</span></span> 
+> <span data-ttu-id="da65e-119">in Ein Zeiger auf eine Zeichenfolge, die die Nachrichtenklasse der zu ladenden Nachricht benennt.</span><span class="sxs-lookup"><span data-stu-id="da65e-119">[in] A pointer to a string that names the message class of the message to be loaded.</span></span> <span data-ttu-id="da65e-120">Wenn NULL im _lpszMessageClass_ -Parameter übergeben wird, wird die Nachrichtenklasse aus der Nachricht bestimmt, auf die durch den _pmsg_ -Parameter verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="da65e-120">If NULL is passed in the  _lpszMessageClass_ parameter, the message class is determined from the message pointed to by the  _pmsg_ parameter.</span></span> 
     
- <span data-ttu-id="61812-121">_ulMessageStatus_</span><span class="sxs-lookup"><span data-stu-id="61812-121">_ulMessageStatus_</span></span>
+ <span data-ttu-id="da65e-121">_ulMessageStatus_</span><span class="sxs-lookup"><span data-stu-id="da65e-121">_ulMessageStatus_</span></span>
   
-> <span data-ttu-id="61812-122">[in] Eine Bitmaske vom Client definiert oder vom Anbieter definiertes Flags, kopiert aus der **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft der Nachricht bereitstellt, die Informationen zum Status der Nachricht.</span><span class="sxs-lookup"><span data-stu-id="61812-122">[in] A bitmask of client-defined or provider-defined flags copied from the **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) property of the message that provides information about the state of the message.</span></span> <span data-ttu-id="61812-123">Der Parameter _UlMessageStatus_ muss festgelegt werden, wenn _LpszMessageClass_ ungleich NULL ist. Andernfalls wird _UlMessageStatus_ ignoriert.</span><span class="sxs-lookup"><span data-stu-id="61812-123">The  _ulMessageStatus_ parameter must be set if  _lpszMessageClass_ is non-NULL; otherwise,  _ulMessageStatus_ is ignored.</span></span> 
+> <span data-ttu-id="da65e-122">in Eine Bitmaske von Client definierten oder Anbieter definierten Flags, die aus der **PR_MSG_STATUS** ([pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md))-Eigenschaft der Nachricht kopiert wurden, die Informationen zum Status der Nachricht bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="da65e-122">[in] A bitmask of client-defined or provider-defined flags copied from the **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) property of the message that provides information about the state of the message.</span></span> <span data-ttu-id="da65e-123">Der Parameter _ulMessageStatus_ muss festgelegt werden, wenn _LPSZMESSAGECLASS_ ungleich NULL ist; Andernfalls wird _ulMessageStatus_ ignoriert.</span><span class="sxs-lookup"><span data-stu-id="da65e-123">The  _ulMessageStatus_ parameter must be set if  _lpszMessageClass_ is non-NULL; otherwise,  _ulMessageStatus_ is ignored.</span></span> 
     
- <span data-ttu-id="61812-124">_ulMessageFlags_</span><span class="sxs-lookup"><span data-stu-id="61812-124">_ulMessageFlags_</span></span>
+ <span data-ttu-id="da65e-124">_ulMessageFlags_</span><span class="sxs-lookup"><span data-stu-id="da65e-124">_ulMessageFlags_</span></span>
   
-> <span data-ttu-id="61812-125">[in] Ein Zeiger auf eine Bitmaske aus Flags, die von der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht, die angibt, den aktuellen Status der Nachricht kopiert.</span><span class="sxs-lookup"><span data-stu-id="61812-125">[in] A pointer to a bitmask of flags copied from the **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) property of the message that indicates the current state of the message.</span></span> <span data-ttu-id="61812-126">Der Parameter _UlMessageFlags_ muss festgelegt werden, wenn _LpszMessageClass_ ungleich NULL ist. Andernfalls wird _UlMessageFlags_ ignoriert.</span><span class="sxs-lookup"><span data-stu-id="61812-126">The  _ulMessageFlags_ parameter must be set if  _lpszMessageClass_ is non-NULL; otherwise,  _ulMessageFlags_ is ignored.</span></span> 
+> <span data-ttu-id="da65e-125">in Ein Zeiger auf eine Bitmaske von Flags, die aus der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht kopiert werden, die den aktuellen Status der Nachricht angibt.</span><span class="sxs-lookup"><span data-stu-id="da65e-125">[in] A pointer to a bitmask of flags copied from the **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) property of the message that indicates the current state of the message.</span></span> <span data-ttu-id="da65e-126">Der Parameter _ulMessageFlags_ muss festgelegt werden, wenn _LPSZMESSAGECLASS_ ungleich NULL ist; Andernfalls wird _ulMessageFlags_ ignoriert.</span><span class="sxs-lookup"><span data-stu-id="da65e-126">The  _ulMessageFlags_ parameter must be set if  _lpszMessageClass_ is non-NULL; otherwise,  _ulMessageFlags_ is ignored.</span></span> 
     
- <span data-ttu-id="61812-127">_pFolderFocus_</span><span class="sxs-lookup"><span data-stu-id="61812-127">_pFolderFocus_</span></span>
+ <span data-ttu-id="da65e-127">_pFolderFocus_</span><span class="sxs-lookup"><span data-stu-id="da65e-127">_pFolderFocus_</span></span>
   
-> <span data-ttu-id="61812-128">[in] Ein Zeiger auf den Ordner, der die Nachricht direkt enthält.</span><span class="sxs-lookup"><span data-stu-id="61812-128">[in] A pointer to the folder that directly contains the message.</span></span> <span data-ttu-id="61812-129">Der Parameter _pFolderFocus_ kann NULL sein, wenn eine solche ein Ordner nicht vorhanden ist (z. B., wenn die Nachricht in eine andere Nachricht eingebettet ist).</span><span class="sxs-lookup"><span data-stu-id="61812-129">The  _pFolderFocus_ parameter can be NULL if such a folder does not exist (for example, if the message is embedded in another message).</span></span> 
+> <span data-ttu-id="da65e-128">in Ein Zeiger auf den Ordner, der die Nachricht direkt enthält.</span><span class="sxs-lookup"><span data-stu-id="da65e-128">[in] A pointer to the folder that directly contains the message.</span></span> <span data-ttu-id="da65e-129">Der _pFolderFocus_ -Parameter kann NULL sein, wenn ein solcher Ordner nicht vorhanden ist (beispielsweise, wenn die Nachricht in eine andere Nachricht eingebettet ist).</span><span class="sxs-lookup"><span data-stu-id="da65e-129">The  _pFolderFocus_ parameter can be NULL if such a folder does not exist (for example, if the message is embedded in another message).</span></span> 
     
- <span data-ttu-id="61812-130">_pMessageSite_</span><span class="sxs-lookup"><span data-stu-id="61812-130">_pMessageSite_</span></span>
+ <span data-ttu-id="da65e-130">_pMessageSite_</span><span class="sxs-lookup"><span data-stu-id="da65e-130">_pMessageSite_</span></span>
   
-> <span data-ttu-id="61812-131">[in] Ein Zeiger auf die Website Nachricht der Nachricht.</span><span class="sxs-lookup"><span data-stu-id="61812-131">[in] A pointer to the message site of the message.</span></span>
+> <span data-ttu-id="da65e-131">in Ein Zeiger auf die Nachrichtenwebsite der Nachricht.</span><span class="sxs-lookup"><span data-stu-id="da65e-131">[in] A pointer to the message site of the message.</span></span>
     
- <span data-ttu-id="61812-132">_pmsg_</span><span class="sxs-lookup"><span data-stu-id="61812-132">_pmsg_</span></span>
+ <span data-ttu-id="da65e-132">_pmsg_</span><span class="sxs-lookup"><span data-stu-id="da65e-132">_pmsg_</span></span>
   
-> <span data-ttu-id="61812-133">[in] Ein Zeiger auf die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="61812-133">[in] A pointer to the message.</span></span>
+> <span data-ttu-id="da65e-133">in Ein Zeiger auf die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="da65e-133">[in] A pointer to the message.</span></span>
     
- <span data-ttu-id="61812-134">_pViewContext_</span><span class="sxs-lookup"><span data-stu-id="61812-134">_pViewContext_</span></span>
+ <span data-ttu-id="da65e-134">_pViewContext_</span><span class="sxs-lookup"><span data-stu-id="da65e-134">_pViewContext_</span></span>
   
-> <span data-ttu-id="61812-135">[in] Ein Zeiger auf den Ansichtskontext für die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="61812-135">[in] A pointer to the view context for the message.</span></span> <span data-ttu-id="61812-136">Der Parameter _pViewContext_ kann NULL sein.</span><span class="sxs-lookup"><span data-stu-id="61812-136">The  _pViewContext_ parameter can be NULL.</span></span> 
+> <span data-ttu-id="da65e-135">in Ein Zeiger auf den Ansichtskontext für die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="da65e-135">[in] A pointer to the view context for the message.</span></span> <span data-ttu-id="da65e-136">Der _pViewContext_ -Parameter kann NULL sein.</span><span class="sxs-lookup"><span data-stu-id="da65e-136">The  _pViewContext_ parameter can be NULL.</span></span> 
     
- <span data-ttu-id="61812-137">_riid_</span><span class="sxs-lookup"><span data-stu-id="61812-137">_riid_</span></span>
+ <span data-ttu-id="da65e-137">_riid_</span><span class="sxs-lookup"><span data-stu-id="da65e-137">_riid_</span></span>
   
-> <span data-ttu-id="61812-138">[in] Die Schnittstelle Identifier (IID) der Schnittstelle für das zurückgegebene Form-Objekt verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="61812-138">[in] The interface identifier (IID) of the interface to be used for the returned form object.</span></span> <span data-ttu-id="61812-139">Der Parameter _Riid_ darf nicht NULL sein.</span><span class="sxs-lookup"><span data-stu-id="61812-139">The  _riid_ parameter must not be NULL.</span></span> 
+> <span data-ttu-id="da65e-138">in Der Schnittstellenbezeichner (IID) der Schnittstelle, die für das zurückgegebene Form-Objekt verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="da65e-138">[in] The interface identifier (IID) of the interface to be used for the returned form object.</span></span> <span data-ttu-id="da65e-139">Der _riid_ -Parameter darf nicht NULL sein.</span><span class="sxs-lookup"><span data-stu-id="da65e-139">The  _riid_ parameter must not be NULL.</span></span> 
     
- <span data-ttu-id="61812-140">_ppvObj_</span><span class="sxs-lookup"><span data-stu-id="61812-140">_ppvObj_</span></span>
+ <span data-ttu-id="da65e-140">_ppvObj_</span><span class="sxs-lookup"><span data-stu-id="da65e-140">_ppvObj_</span></span>
   
-> <span data-ttu-id="61812-141">[out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="61812-141">[out] A pointer to a pointer to the returned interface.</span></span>
+> <span data-ttu-id="da65e-141">Out Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="da65e-141">[out] A pointer to a pointer to the returned interface.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="61812-142">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="61812-142">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="da65e-142">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="da65e-142">Return value</span></span>
 
-<span data-ttu-id="61812-143">S_OK</span><span class="sxs-lookup"><span data-stu-id="61812-143">S_OK</span></span> 
+<span data-ttu-id="da65e-143">S_OK</span><span class="sxs-lookup"><span data-stu-id="da65e-143">S_OK</span></span> 
   
-> <span data-ttu-id="61812-144">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="61812-144">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="da65e-144">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="da65e-144">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="61812-145">MAPI_E_NO_INTERFACE</span><span class="sxs-lookup"><span data-stu-id="61812-145">MAPI_E_NO_INTERFACE</span></span> 
+<span data-ttu-id="da65e-145">MAPI_E_NO_INTERFACE</span><span class="sxs-lookup"><span data-stu-id="da65e-145">MAPI_E_NO_INTERFACE</span></span> 
   
-> <span data-ttu-id="61812-146">Das Formular unterstützt die angeforderte Schnittstelle nicht.</span><span class="sxs-lookup"><span data-stu-id="61812-146">The form does not support the requested interface.</span></span>
+> <span data-ttu-id="da65e-146">Die angeforderte Schnittstelle wird vom Formular nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="da65e-146">The form does not support the requested interface.</span></span>
     
-<span data-ttu-id="61812-147">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="61812-147">MAPI_E_NOT_FOUND</span></span> 
+<span data-ttu-id="da65e-147">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="da65e-147">MAPI_E_NOT_FOUND</span></span> 
   
-> <span data-ttu-id="61812-148">Die Nachrichtenklasse übergebenen _LpszMessageClass_ stimmt nicht mit die Nachrichtenklasse für jedes Formular in der Formularbibliothek überein.</span><span class="sxs-lookup"><span data-stu-id="61812-148">The message class passed in  _lpszMessageClass_ does not match the message class for any form in the form library.</span></span> 
+> <span data-ttu-id="da65e-148">Die Nachrichtenklasse, die in _lpszMessageClass_ übergeben wird, stimmt nicht mit der Nachrichtenklasse für ein Formular in der Formularbibliothek überein.</span><span class="sxs-lookup"><span data-stu-id="da65e-148">The message class passed in  _lpszMessageClass_ does not match the message class for any form in the form library.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="61812-149">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="61812-149">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="da65e-149">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="da65e-149">Remarks</span></span>
 
-<span data-ttu-id="61812-150">Formular Viewer rufen Sie die **IMAPIFormMgr::LoadForm** -Methode zum Öffnen eines Formulars für eine vorhandene Nachricht.</span><span class="sxs-lookup"><span data-stu-id="61812-150">Form viewers call the **IMAPIFormMgr::LoadForm** method to open a form for an existing message.</span></span> <span data-ttu-id="61812-151">**LoadForm** Öffnet das Form-Objekt, wird die Nachricht in das Form-Objekt geladen, richtet die entsprechenden Ansichtskontext bei Bedarf und die angeforderte Schnittstelle für das Form-Objekt zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="61812-151">**LoadForm** opens the form object, loads the message into the form object, sets up the appropriate view context, if necessary, and returns the requested interface for the form object.</span></span> 
+<span data-ttu-id="da65e-150">Formular Betrachter rufen die **IMAPIFormMgr:: LoadForm** -Methode auf, um ein Formular für eine vorhandene Nachricht zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="da65e-150">Form viewers call the **IMAPIFormMgr::LoadForm** method to open a form for an existing message.</span></span> <span data-ttu-id="da65e-151">**LoadForm** öffnet das Form-Objekt, lädt die Nachricht in das Form-Objekt, richtet gegebenenfalls den entsprechenden Ansichtskontext ein und gibt die angeforderte Schnittstelle für das Form-Objekt zurück.</span><span class="sxs-lookup"><span data-stu-id="da65e-151">**LoadForm** opens the form object, loads the message into the form object, sets up the appropriate view context, if necessary, and returns the requested interface for the form object.</span></span> 
   
-<span data-ttu-id="61812-152">Der _pFolderFocus_ -Parameter verweist auf den Ordner, der die Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="61812-152">The  _pFolderFocus_ parameter points to the folder that contains the message.</span></span> <span data-ttu-id="61812-153">Wenn die Nachricht in einer anderen Nachricht eingebettet ist, sollte _pFolderFocus_ NULL sein.</span><span class="sxs-lookup"><span data-stu-id="61812-153">If the message is embedded in another message,  _pFolderFocus_ should be NULL.</span></span> 
+<span data-ttu-id="da65e-152">Der _pFolderFocus_ -Parameter zeigt auf den Ordner, der die Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="da65e-152">The  _pFolderFocus_ parameter points to the folder that contains the message.</span></span> <span data-ttu-id="da65e-153">Wenn die Nachricht in eine andere Nachricht eingebettet ist, sollte _PFOLDERFOCUS_ NULL sein.</span><span class="sxs-lookup"><span data-stu-id="da65e-153">If the message is embedded in another message,  _pFolderFocus_ should be NULL.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="61812-154">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="61812-154">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="da65e-154">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="da65e-154">Notes to implementers</span></span>
 
-<span data-ttu-id="61812-155">Wenn NULL in _LpszMessageClass_übergeben wird, erhält die Implementierung der Nachricht Nachrichtenklasse, Status und Flags aus der Nachricht **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), **PR_MSG_STATUS** und **PR_MESSAGE_FLAGS **Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="61812-155">If NULL is passed in  _lpszMessageClass_, the implementation obtains the message's message class, status, and flags from the message's **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), **PR_MSG_STATUS** and **PR_MESSAGE_FLAGS** properties.</span></span> <span data-ttu-id="61812-156">Wenn eine Meldungszeichenfolge-Klasse in _LpszMessageClass_bereitgestellt wird, muss die Implementierung der Werte in _UlMessageStatus_ und _UlMessageFlags_verwenden.</span><span class="sxs-lookup"><span data-stu-id="61812-156">If a message class string is provided in  _lpszMessageClass_, the implementation must use the values in  _ulMessageStatus_ and  _ulMessageFlags_.</span></span>
+<span data-ttu-id="da65e-155">Wenn NULL in _lpszMessageClass_übergeben wird, ruft die Implementierung die Nachrichtenklasse, den Status und die Flags der Nachricht aus **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), **PR_MSG_STATUS** und \*\*PR_MESSAGE_FLAGS \*\*Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="da65e-155">If NULL is passed in  _lpszMessageClass_, the implementation obtains the message's message class, status, and flags from the message's **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), **PR_MSG_STATUS** and **PR_MESSAGE_FLAGS** properties.</span></span> <span data-ttu-id="da65e-156">Wenn in _lpszMessageClass_eine Nachrichtenklassen Zeichenfolge bereitgestellt wird, muss die Implementierung die Werte in _ulMessageStatus_ und _ulMessageFlags_verwenden.</span><span class="sxs-lookup"><span data-stu-id="da65e-156">If a message class string is provided in  _lpszMessageClass_, the implementation must use the values in  _ulMessageStatus_ and  _ulMessageFlags_.</span></span>
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="61812-157">MFCMAPI (engl.) (engl.)</span><span class="sxs-lookup"><span data-stu-id="61812-157">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="da65e-157">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="da65e-157">MFCMAPI reference</span></span>
 
-<span data-ttu-id="61812-158">Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="61812-158">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="da65e-158">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="da65e-158">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="61812-159">**Datei**</span><span class="sxs-lookup"><span data-stu-id="61812-159">**File**</span></span>|<span data-ttu-id="61812-160">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="61812-160">**Function**</span></span>|<span data-ttu-id="61812-161">**Comment**</span><span class="sxs-lookup"><span data-stu-id="61812-161">**Comment**</span></span>|
+|<span data-ttu-id="da65e-159">**Datei**</span><span class="sxs-lookup"><span data-stu-id="da65e-159">**File**</span></span>|<span data-ttu-id="da65e-160">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="da65e-160">**Function**</span></span>|<span data-ttu-id="da65e-161">**Comment**</span><span class="sxs-lookup"><span data-stu-id="da65e-161">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="61812-162">MAPIFormFunctions.cpp</span><span class="sxs-lookup"><span data-stu-id="61812-162">MAPIFormFunctions.cpp</span></span>  <br/> |<span data-ttu-id="61812-163">OpenMessageNonModal</span><span class="sxs-lookup"><span data-stu-id="61812-163">OpenMessageNonModal</span></span>  <br/> |<span data-ttu-id="61812-164">MFCMAPI (engl.) verwendet die **IMAPIFormMgr::LoadForm** -Methode, um ein Formular zu laden, bevor es angezeigt.</span><span class="sxs-lookup"><span data-stu-id="61812-164">MFCMAPI uses the **IMAPIFormMgr::LoadForm** method to load a form before displaying it.</span></span>  <br/> |
+|<span data-ttu-id="da65e-162">MAPIFormFunctions. cpp</span><span class="sxs-lookup"><span data-stu-id="da65e-162">MAPIFormFunctions.cpp</span></span>  <br/> |<span data-ttu-id="da65e-163">OpenMessageNonModal</span><span class="sxs-lookup"><span data-stu-id="da65e-163">OpenMessageNonModal</span></span>  <br/> |<span data-ttu-id="da65e-164">MFCMAPI verwendet die **IMAPIFormMgr:: LoadForm** -Methode, um ein Formular zu laden, bevor es angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="da65e-164">MFCMAPI uses the **IMAPIFormMgr::LoadForm** method to load a form before displaying it.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="61812-165">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="61812-165">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="da65e-165">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="da65e-165">See also</span></span>
 
 
 
-[<span data-ttu-id="61812-166">PidTagMessageClass (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="61812-166">PidTagMessageClass Canonical Property</span></span>](pidtagmessageclass-canonical-property.md)
+[<span data-ttu-id="da65e-166">Kanonische PidTagMessageClass-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="da65e-166">PidTagMessageClass Canonical Property</span></span>](pidtagmessageclass-canonical-property.md)
   
-[<span data-ttu-id="61812-167">PidTagMessageFlags (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="61812-167">PidTagMessageFlags Canonical Property</span></span>](pidtagmessageflags-canonical-property.md)
+[<span data-ttu-id="da65e-167">Kanonische PidTagMessageFlags-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="da65e-167">PidTagMessageFlags Canonical Property</span></span>](pidtagmessageflags-canonical-property.md)
   
-[<span data-ttu-id="61812-168">PidTagMessageStatus (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="61812-168">PidTagMessageStatus Canonical Property</span></span>](pidtagmessagestatus-canonical-property.md)
+[<span data-ttu-id="da65e-168">Kanonische Pidtagmessagestatus (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="da65e-168">PidTagMessageStatus Canonical Property</span></span>](pidtagmessagestatus-canonical-property.md)
   
-[<span data-ttu-id="61812-169">IMAPIFormMgr : IUnknown</span><span class="sxs-lookup"><span data-stu-id="61812-169">IMAPIFormMgr : IUnknown</span></span>](imapiformmgriunknown.md)
+[<span data-ttu-id="da65e-169">IMAPIFormMgr : IUnknown</span><span class="sxs-lookup"><span data-stu-id="da65e-169">IMAPIFormMgr : IUnknown</span></span>](imapiformmgriunknown.md)
 
 
-[<span data-ttu-id="61812-170">MFCMAPI (engl.) als ein Codebeispiel</span><span class="sxs-lookup"><span data-stu-id="61812-170">MFCMAPI as a Code Sample</span></span>](mfcmapi-as-a-code-sample.md)
+[<span data-ttu-id="da65e-170">MFCMAPI (engl.) als ein Codebeispiel</span><span class="sxs-lookup"><span data-stu-id="da65e-170">MFCMAPI as a Code Sample</span></span>](mfcmapi-as-a-code-sample.md)
 

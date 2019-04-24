@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5b57296c-61d7-e517-7ab7-44a9cc1f7ffc
-description: Eine Variable dieses Typs Daten enthält einen Binärwert an.
-ms.openlocfilehash: 6816fd21a51b86bda97353034e959685f22ff176
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Eine Variable dieses Datentyps enthält einen Binärwert.
+ms.openlocfilehash: 3dcaaf73a04ddc608e68ca7bd1f801d0a5d99bb6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316912"
 ---
-# <a name="acctbin"></a><span data-ttu-id="51190-103">ACCT_BIN</span><span class="sxs-lookup"><span data-stu-id="51190-103">ACCT_BIN</span></span>
+# <a name="acctbin"></a><span data-ttu-id="7cd2b-103">ACCT_BIN</span><span class="sxs-lookup"><span data-stu-id="7cd2b-103">ACCT_BIN</span></span>
 
-<span data-ttu-id="51190-104">Eine Variable dieses Typs Daten enthält einen Binärwert an.</span><span class="sxs-lookup"><span data-stu-id="51190-104">A variable of this data type holds a binary value.</span></span>
+<span data-ttu-id="7cd2b-104">Eine Variable dieses Datentyps enthält einen Binärwert.</span><span class="sxs-lookup"><span data-stu-id="7cd2b-104">A variable of this data type holds a binary value.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="51190-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="51190-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="7cd2b-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="7cd2b-105">Quick info</span></span>
 
 ```cpp
 typedef struct { 
@@ -28,14 +28,14 @@ typedef struct {
 
 ```
 
-## <a name="members"></a><span data-ttu-id="51190-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="51190-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="7cd2b-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="7cd2b-106">Members</span></span>
 
-<span data-ttu-id="51190-107">_cb_</span><span class="sxs-lookup"><span data-stu-id="51190-107">_cb_</span></span>
+<span data-ttu-id="7cd2b-107">_cb_</span><span class="sxs-lookup"><span data-stu-id="7cd2b-107">_cb_</span></span>
   
-> <span data-ttu-id="51190-108">Anzahl von Bytes, die auf _pb_ verweist.</span><span class="sxs-lookup"><span data-stu-id="51190-108">Number of bytes that  _pb_ points to.</span></span> 
+> <span data-ttu-id="7cd2b-108">Die Anzahl der Bytes, auf die _PB_ verweist.</span><span class="sxs-lookup"><span data-stu-id="7cd2b-108">Number of bytes that  _pb_ points to.</span></span> 
     
-<span data-ttu-id="51190-109">_pb_</span><span class="sxs-lookup"><span data-stu-id="51190-109">_pb_</span></span>
+<span data-ttu-id="7cd2b-109">_pb_</span><span class="sxs-lookup"><span data-stu-id="7cd2b-109">_pb_</span></span>
   
-> <span data-ttu-id="51190-110">Zeiger auf binäre Informationen.</span><span class="sxs-lookup"><span data-stu-id="51190-110">Pointer to binary information.</span></span>
+> <span data-ttu-id="7cd2b-110">Zeiger auf Binärinformationen.</span><span class="sxs-lookup"><span data-stu-id="7cd2b-110">Pointer to binary information.</span></span>
     
 

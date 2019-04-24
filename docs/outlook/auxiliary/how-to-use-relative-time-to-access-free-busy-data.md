@@ -1,32 +1,32 @@
 ---
-title: Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten
+title: Verwenden von relativer Zeit für den Zugriff auf Frei/Gebucht-Daten
 manager: soliver
 ms.date: 12/08/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 13aa6ae2-47b9-2cf4-a6ef-651f1338dd49
-description: Die IFreeBusyData-Schnittstelle in der Frei/Gebucht-API verwendet ein Konzept der relative Zeit, die die Anzahl der Minuten seit dem 1. Januar 1601, ausgedrückt als Weltzeit (UTC) ist und einen Wert vom Typ LONG ist.
+description: Die IFreeBusyData-Schnittstelle in der frei/gebucht-API verwendet ein relativ Zeitkonzept, das die Anzahl von Minuten seit dem 1. Januar 1601, ausgedrückt in weltZeit (UTC), und ein Wert vom Typ LONG ist.
 ms.openlocfilehash: 1b977fc3aebd1f2b20e51f24caa36d6bbf2862ba
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317633"
 ---
-# <a name="use-relative-time-to-access-freebusy-data"></a><span data-ttu-id="b9273-103">Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten</span><span class="sxs-lookup"><span data-stu-id="b9273-103">Use relative time to access free/busy data</span></span>
+# <a name="use-relative-time-to-access-freebusy-data"></a><span data-ttu-id="96d67-103">Verwenden von relativer Zeit für den Zugriff auf Frei/Gebucht-Daten</span><span class="sxs-lookup"><span data-stu-id="96d67-103">Use relative time to access free/busy data</span></span>
 
-<span data-ttu-id="b9273-104">Die [IFreeBusyData](ifreebusydata.md) -Schnittstelle in der Frei/Gebucht-API verwendet ein Konzept der relative Zeit, die die Anzahl der Minuten seit dem 1. Januar 1601, ausgedrückt als Weltzeit (UTC) ist und ist ein Wert vom Typ **LONG**.</span><span class="sxs-lookup"><span data-stu-id="b9273-104">The [IFreeBusyData](ifreebusydata.md) interface in the Free/Busy API uses a concept of relative time, which is the number of minutes since January 1, 1601, expressed in Universal Time (UTC), and is a value of type **LONG**.</span></span> 
+<span data-ttu-id="96d67-104">Die [IFreeBusyData](ifreebusydata.md) -Schnittstelle in der frei/gebucht-API verwendet ein relativ Zeitkonzept, das die Anzahl von Minuten seit dem 1. Januar 1601, ausgedrückt in Weltzeit (UTC), und ein Wert vom Typ **Long**ist.</span><span class="sxs-lookup"><span data-stu-id="96d67-104">The [IFreeBusyData](ifreebusydata.md) interface in the Free/Busy API uses a concept of relative time, which is the number of minutes since January 1, 1601, expressed in Universal Time (UTC), and is a value of type **LONG**.</span></span> 
   
-<span data-ttu-id="b9273-105">Im folgenden sind einige häufig verwendete relativen Zeitwerte:</span><span class="sxs-lookup"><span data-stu-id="b9273-105">The following are some commonly used relative time values:</span></span>
+<span data-ttu-id="96d67-105">Im folgenden finden Sie einige häufig verwendete relative time-Werte:</span><span class="sxs-lookup"><span data-stu-id="96d67-105">The following are some commonly used relative time values:</span></span>
   
 - `ULONG ulrtmMax = 1525252319L`
     
 - `ULONG ulrtmMin = 0L`
     
-<span data-ttu-id="b9273-106">Verwenden Sie die vorherigen Mindest- und relative Zeitwerte zu überprüfen, dass Ihre relativen Zeitwerte gültig sind.</span><span class="sxs-lookup"><span data-stu-id="b9273-106">Use the preceding maximum and minimum relative time values to help verify that your relative time values are valid.</span></span>
+<span data-ttu-id="96d67-106">Verwenden Sie die vorhergehenden maximalen und minimalen relativen Zeitwerte, um zu überprüfen, ob ihre relativen Zeitwerte gültig sind.</span><span class="sxs-lookup"><span data-stu-id="96d67-106">Use the preceding maximum and minimum relative time values to help verify that your relative time values are valid.</span></span>
   
-<span data-ttu-id="b9273-107">Da NTFS Dateizeiten systemintern im [FILETIME](https://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx) -Format aufzeichnet, kann es im folgenden Codebeispiel wird mit der relative Zeit und **FILETIME**konvertieren praktisch sein.</span><span class="sxs-lookup"><span data-stu-id="b9273-107">Because NTFS records file times natively in [FILETIME](https://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx) format, it might be handy to use the following code example to convert relative time to and from **FILETIME**.</span></span> 
+<span data-ttu-id="96d67-107">Da NTFS-Dateizeiten nativ im [FILETIME](https://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx) -Format aufgezeichnet werden, kann es hilfreich sein, das folgende Codebeispiel zu verwenden, um die relative Uhrzeit in und aus FILETIME zu konvertieren. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="96d67-107">Because NTFS records file times natively in [FILETIME](https://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx) format, it might be handy to use the following code example to convert relative time to and from **FILETIME**.</span></span> 
   
 ```cpp
 static const LONGLONG UnitsPerMinute = 600000000; 
@@ -52,8 +52,8 @@ void FileTimeToRTime(FILETIME *pft, LONG* prtime)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="b9273-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b9273-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="96d67-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="96d67-108">See also</span></span>
 
-- [<span data-ttu-id="b9273-109">Informationen zur Frei/Gebucht-API</span><span class="sxs-lookup"><span data-stu-id="b9273-109">About the Free/Busy API</span></span>](about-the-free-busy-api.md)
-- [<span data-ttu-id="b9273-110">IFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="b9273-110">IFreeBusyData</span></span>](ifreebusydata.md)
+- [<span data-ttu-id="96d67-109">Über die Frei/Gebucht-API</span><span class="sxs-lookup"><span data-stu-id="96d67-109">About the Free/Busy API</span></span>](about-the-free-busy-api.md)
+- [<span data-ttu-id="96d67-110">IFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="96d67-110">IFreeBusyData</span></span>](ifreebusydata.md)
 

@@ -1,27 +1,27 @@
 ---
-title: Schnittstellen (Frei/Gebucht-API)
+title: Schnittstellen (frei/gebucht-API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 85bcd5b9-321a-489d-9304-e7bd11e1fb2c
-description: In diesem Abschnitt werden die Schnittstellen in der Frei/Gebucht-API beschrieben.
-ms.openlocfilehash: 94a071fac2ebdcf65a0d82e14073d893c069f35b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Abschnitt werden die Schnittstellen in der frei/gebucht-API beschrieben.
+ms.openlocfilehash: ae271691deb87da202cbdc72a8a999d5609c16ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318879"
 ---
-# <a name="interfaces-freebusy-api"></a><span data-ttu-id="7b114-103">Schnittstellen (Frei/Gebucht-API)</span><span class="sxs-lookup"><span data-stu-id="7b114-103">Interfaces (Free/busy API)</span></span>
+# <a name="interfaces-freebusy-api"></a><span data-ttu-id="43ed8-103">Schnittstellen (frei/gebucht-API)</span><span class="sxs-lookup"><span data-stu-id="43ed8-103">Interfaces (Free/busy API)</span></span>
 
-<span data-ttu-id="7b114-104">In diesem Abschnitt werden die Schnittstellen in der Frei/Gebucht-API beschrieben.</span><span class="sxs-lookup"><span data-stu-id="7b114-104">This section describes the interfaces in the Free/Busy API.</span></span>
+<span data-ttu-id="43ed8-104">In diesem Abschnitt werden die Schnittstellen in der frei/gebucht-API beschrieben.</span><span class="sxs-lookup"><span data-stu-id="43ed8-104">This section describes the interfaces in the Free/Busy API.</span></span>
   
-|<span data-ttu-id="7b114-105">**Schnittstelle**</span><span class="sxs-lookup"><span data-stu-id="7b114-105">**Interface**</span></span>|<span data-ttu-id="7b114-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="7b114-106">**Description**</span></span>|
+|<span data-ttu-id="43ed8-105">**Schnittstelle**</span><span class="sxs-lookup"><span data-stu-id="43ed8-105">**Interface**</span></span>|<span data-ttu-id="43ed8-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="43ed8-106">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="7b114-107">IEnumFBBlock</span><span class="sxs-lookup"><span data-stu-id="7b114-107">IEnumFBBlock</span></span>](ienumfbblock.md) <br/> |<span data-ttu-id="7b114-108">Unterstützt den Zugriff auf und das Aufzählen von Datenblöcke Frei/Gebucht-Informationen für einen Benutzer innerhalb eines Zeitraums.</span><span class="sxs-lookup"><span data-stu-id="7b114-108">Supports accessing and enumerating free/busy blocks of data for a user within a time range.</span></span>  <br/> |
-|[<span data-ttu-id="7b114-109">IFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="7b114-109">IFreeBusyData</span></span>](ifreebusydata.md) <br/> |<span data-ttu-id="7b114-110">Für einen bestimmten Benutzer ruft ab und legt einen Zeitraum fest und gibt eine Schnittstelle zum Aufzählen Datenblöcke Frei/Gebucht-Informationen in diesem Zeitraum zurück.</span><span class="sxs-lookup"><span data-stu-id="7b114-110">For a given user, gets and sets a time range and returns an interface for enumerating free/busy blocks of data within this time range.</span></span>  <br/> |
-|[<span data-ttu-id="7b114-111">IFreeBusySupport</span><span class="sxs-lookup"><span data-stu-id="7b114-111">IFreeBusySupport</span></span>](ifreebusysupport.md) <br/> |<span data-ttu-id="7b114-112">Angabe der Schnittstellen, die Zugriff auf Frei/Gebucht-Daten für bestimmte Benutzer unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7b114-112">Supports specification of interfaces that access free/busy data for specified users.</span></span>  <br/> |
+|[<span data-ttu-id="43ed8-107">IEnumFBBlock</span><span class="sxs-lookup"><span data-stu-id="43ed8-107">IEnumFBBlock</span></span>](ienumfbblock.md) <br/> |<span data-ttu-id="43ed8-108">Unterstützt den Zugriff auf und das Aufzählen von Frei/Gebucht-Datenblöcken für einen Benutzer innerhalb eines Zeitintervalls.</span><span class="sxs-lookup"><span data-stu-id="43ed8-108">Supports accessing and enumerating free/busy blocks of data for a user within a time range.</span></span>  <br/> |
+|[<span data-ttu-id="43ed8-109">IFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="43ed8-109">IFreeBusyData</span></span>](ifreebusydata.md) <br/> |<span data-ttu-id="43ed8-110">Für einen bestimmten Benutzer ruft einen Zeitbereich ab und legt ihn fest und gibt eine Schnittstelle zum Auflisten von Frei/Gebucht-Datenblöcken innerhalb dieses Zeitintervalls zurück.</span><span class="sxs-lookup"><span data-stu-id="43ed8-110">For a given user, gets and sets a time range and returns an interface for enumerating free/busy blocks of data within this time range.</span></span>  <br/> |
+|[<span data-ttu-id="43ed8-111">IFreeBusySupport</span><span class="sxs-lookup"><span data-stu-id="43ed8-111">IFreeBusySupport</span></span>](ifreebusysupport.md) <br/> |<span data-ttu-id="43ed8-112">Unterstützt die Spezifikation von Schnittstellen, die auf Frei/Gebucht-Daten für bestimmte Benutzer zugreifen.</span><span class="sxs-lookup"><span data-stu-id="43ed8-112">Supports specification of interfaces that access free/busy data for specified users.</span></span>  <br/> |
    
 
