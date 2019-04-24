@@ -6,33 +6,33 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: d82986c1-3a1e-48de-b6c9-b4bc64a88ee2
-description: Gibt an, ob die Authentifizierung mit GESICHERTEM Kennwort für SMTP-Konto verwenden.
-ms.openlocfilehash: a0bd944f4534f1a18021d1cbf6a1d224e60f9568
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt an, ob die Secure Password Authentication (SPA) für das SMTP-Konto verwendet werden soll.
+ms.openlocfilehash: b1f2ba9b7568361ad25147a94966bf42b98eda40
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328336"
 ---
-# <a name="propsmtpusespa"></a><span data-ttu-id="835bf-103">PROP_SMTP_USE_SPA</span><span class="sxs-lookup"><span data-stu-id="835bf-103">PROP_SMTP_USE_SPA</span></span>
+# <a name="propsmtpusespa"></a><span data-ttu-id="f2d49-103">PROP_SMTP_USE_SPA</span><span class="sxs-lookup"><span data-stu-id="f2d49-103">PROP_SMTP_USE_SPA</span></span>
 
-<span data-ttu-id="835bf-104">Gibt an, ob die Authentifizierung mit GESICHERTEM Kennwort für SMTP-Konto verwenden.</span><span class="sxs-lookup"><span data-stu-id="835bf-104">Specifies whether to use Secure Password Authentication (SPA) for the SMTP account.</span></span>
+<span data-ttu-id="f2d49-104">Gibt an, ob die Secure Password Authentication (SPA) für das SMTP-Konto verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="f2d49-104">Specifies whether to use Secure Password Authentication (SPA) for the SMTP account.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="835bf-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="835bf-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f2d49-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="f2d49-105">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="835bf-106">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="835bf-106">Identifier:</span></span>  <br/> |<span data-ttu-id="835bf-107">0 x 0207</span><span class="sxs-lookup"><span data-stu-id="835bf-107">0x0207</span></span>  <br/> |
-|<span data-ttu-id="835bf-108">Der Eigenschaftentyp:</span><span class="sxs-lookup"><span data-stu-id="835bf-108">Property type:</span></span>  <br/> |<span data-ttu-id="835bf-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="835bf-109">PT_DWORD</span></span>  <br/> |
-|<span data-ttu-id="835bf-110">Eigenschafts-Tag:</span><span class="sxs-lookup"><span data-stu-id="835bf-110">Property tag:</span></span>  <br/> |<span data-ttu-id="835bf-111">0x02070003</span><span class="sxs-lookup"><span data-stu-id="835bf-111">0x02070003</span></span>  <br/> |
-|<span data-ttu-id="835bf-112">Access:</span><span class="sxs-lookup"><span data-stu-id="835bf-112">Access:</span></span>  <br/> |<span data-ttu-id="835bf-113">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="835bf-113">Read-only</span></span>  <br/> |
+|<span data-ttu-id="f2d49-106">Kennung:</span><span class="sxs-lookup"><span data-stu-id="f2d49-106">Identifier:</span></span>  <br/> |<span data-ttu-id="f2d49-107">0x0207</span><span class="sxs-lookup"><span data-stu-id="f2d49-107">0x0207</span></span>  <br/> |
+|<span data-ttu-id="f2d49-108">Eigenschafts:</span><span class="sxs-lookup"><span data-stu-id="f2d49-108">Property type:</span></span>  <br/> |<span data-ttu-id="f2d49-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="f2d49-109">PT_DWORD</span></span>  <br/> |
+|<span data-ttu-id="f2d49-110">Property-Tag:</span><span class="sxs-lookup"><span data-stu-id="f2d49-110">Property tag:</span></span>  <br/> |<span data-ttu-id="f2d49-111">0x02070003</span><span class="sxs-lookup"><span data-stu-id="f2d49-111">0x02070003</span></span>  <br/> |
+|<span data-ttu-id="f2d49-112">Access</span><span class="sxs-lookup"><span data-stu-id="f2d49-112">Access:</span></span>  <br/> |<span data-ttu-id="f2d49-113">Schreibgeschützt</span><span class="sxs-lookup"><span data-stu-id="f2d49-113">Read-only</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="835bf-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="835bf-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f2d49-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f2d49-114">Remarks</span></span>
 
-<span data-ttu-id="835bf-115">Eine NULL bedeutet der Wert nicht gesicherte KENNWORTAUTHENTIFIZIERUNG verwenden, andernfalls können Sie SPA verwenden.</span><span class="sxs-lookup"><span data-stu-id="835bf-115">A zero value means do not use SPA, otherwise use SPA.</span></span>
+<span data-ttu-id="f2d49-115">Ein Nullwert besagt, dass SPA nicht verwendet wird, andernfalls wird SPA verwendet.</span><span class="sxs-lookup"><span data-stu-id="f2d49-115">A zero value means do not use SPA, otherwise use SPA.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="835bf-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="835bf-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f2d49-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f2d49-116">See also</span></span>
 
-- [<span data-ttu-id="835bf-117">Verwalten des Nachrichtendownloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="835bf-117">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md)
-- [<span data-ttu-id="835bf-118">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="835bf-118">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="f2d49-117">Verwalten des Nachrichtendownloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="f2d49-117">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md)
+- [<span data-ttu-id="f2d49-118">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="f2d49-118">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

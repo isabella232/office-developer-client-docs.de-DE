@@ -11,45 +11,45 @@ api_name:
 api_type:
 - COM
 ms.assetid: 26628646-7948-4341-aaef-5c476a857a52
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c5956974ab38e1d2e891945083d26f1dced23284
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8ebcc1c8fc2d72b832199704fd63bbde89af68e1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331815"
 ---
-# <a name="cbnewflatmtsidlist"></a><span data-ttu-id="be6e1-103">CbNewFLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="be6e1-103">CbNewFLATMTSIDLIST</span></span>
+# <a name="cbnewflatmtsidlist"></a><span data-ttu-id="1a8ce-103">CbNewFLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="1a8ce-103">CbNewFLATMTSIDLIST</span></span>
 
   
   
-<span data-ttu-id="be6e1-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="be6e1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1a8ce-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1a8ce-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="be6e1-105">Berechnet die Anzahl von Bytes, die für eine neue [FLATMTSIDLIST](flatmtsidlist.md) -Struktur zugeordnet werden sollen, die mehrere [MTSID](mtsid.md) Strukturen einer angegebenen Größe enthält.</span><span class="sxs-lookup"><span data-stu-id="be6e1-105">Computes the number of bytes that should be allocated for a new [FLATMTSIDLIST](flatmtsidlist.md) structure that contains several [MTSID](mtsid.md) structures of a specified size.</span></span> 
+<span data-ttu-id="1a8ce-105">Berechnet die Anzahl der Bytes, die für eine neue [FLATMTSIDLIST](flatmtsidlist.md) -Struktur reserviert werden sollen, die mehrere [MTSID](mtsid.md) -Strukturen einer angegebenen Größe enthält.</span><span class="sxs-lookup"><span data-stu-id="1a8ce-105">Computes the number of bytes that should be allocated for a new [FLATMTSIDLIST](flatmtsidlist.md) structure that contains several [MTSID](mtsid.md) structures of a specified size.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="be6e1-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="be6e1-106">Header file:</span></span>  <br/> |<span data-ttu-id="be6e1-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="be6e1-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="be6e1-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="be6e1-108">Related structure:</span></span>  <br/> |<span data-ttu-id="be6e1-109">**FLATMTSIDLIST**</span><span class="sxs-lookup"><span data-stu-id="be6e1-109">**FLATMTSIDLIST**</span></span> <br/> |
+|<span data-ttu-id="1a8ce-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="1a8ce-106">Header file:</span></span>  <br/> |<span data-ttu-id="1a8ce-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="1a8ce-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="1a8ce-108">Zugehörige Struktur:</span><span class="sxs-lookup"><span data-stu-id="1a8ce-108">Related structure:</span></span>  <br/> |<span data-ttu-id="1a8ce-109">**FLATMTSIDLIST**</span><span class="sxs-lookup"><span data-stu-id="1a8ce-109">**FLATMTSIDLIST**</span></span> <br/> |
    
 ```cpp
 CbNewFLATMTSIDIDLIST (_cb)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="be6e1-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="be6e1-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="1a8ce-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="1a8ce-110">Parameters</span></span>
 
- <span data-ttu-id="be6e1-111">__cb_</span><span class="sxs-lookup"><span data-stu-id="be6e1-111">__cb_</span></span>
+ <span data-ttu-id="1a8ce-111">__CB_</span><span class="sxs-lookup"><span data-stu-id="1a8ce-111">__cb_</span></span>
   
-> <span data-ttu-id="be6e1-112">Anzahl der Bytes in den **MTSID** Strukturen, die in die neue Struktur **FLATMTSIDLIST** eingeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="be6e1-112">Count of bytes in the **MTSID** structures to be included in the new **FLATMTSIDLIST** structure.</span></span> 
+> <span data-ttu-id="1a8ce-112">Die Anzahl der Bytes in den **MTSID** -Strukturen, die in die neue **FLATMTSIDLIST** -Struktur eingeschlossen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="1a8ce-112">Count of bytes in the **MTSID** structures to be included in the new **FLATMTSIDLIST** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="be6e1-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="be6e1-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1a8ce-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1a8ce-113">See also</span></span>
 
 
 
-[<span data-ttu-id="be6e1-114">FLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="be6e1-114">FLATMTSIDLIST</span></span>](flatmtsidlist.md)
+[<span data-ttu-id="1a8ce-114">FLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="1a8ce-114">FLATMTSIDLIST</span></span>](flatmtsidlist.md)
   
-[<span data-ttu-id="be6e1-115">MTSID</span><span class="sxs-lookup"><span data-stu-id="be6e1-115">MTSID</span></span>](mtsid.md)
+[<span data-ttu-id="1a8ce-115">MTSID</span><span class="sxs-lookup"><span data-stu-id="1a8ce-115">MTSID</span></span>](mtsid.md)
 
 
-[<span data-ttu-id="be6e1-116">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="be6e1-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="1a8ce-116">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="1a8ce-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

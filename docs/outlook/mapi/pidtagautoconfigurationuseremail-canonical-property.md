@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 845140c8-5454-4b47-acec-ab5aff00b768
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: dbc575345ba2e707dd64e35c11f00a08113f5eee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: HT
+ms.openlocfilehash: 1471b0e039d96c0e2894f789647212379d15701a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326656"
 ---
-# <a name="pidtagautoconfigurationuseremail-canonical-property"></a><span data-ttu-id="7ccfa-103">PidTagAutoConfigurationUserEmail (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="7ccfa-103">PidTagAutoConfigurationUserEmail Canonical Property</span></span>
+# <a name="pidtagautoconfigurationuseremail-canonical-property"></a><span data-ttu-id="c5f3a-103">PidTagAutoConfigurationUserEmail (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="c5f3a-103">PidTagAutoConfigurationUserEmail Canonical Property</span></span>
 
   
   
-<span data-ttu-id="7ccfa-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7ccfa-104">**Applies to**: Office 365 | Outlook | Outlook 2016</span></span> 
+<span data-ttu-id="c5f3a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c5f3a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7ccfa-105">Stellt die E-Mail-Adresse des Benutzers dar.</span><span class="sxs-lookup"><span data-stu-id="7ccfa-105">Represents the user's email address.</span></span>
+<span data-ttu-id="c5f3a-105">Stellt die E-Mail-Adresse des Benutzers dar.</span><span class="sxs-lookup"><span data-stu-id="c5f3a-105">Represents the user's email address.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7ccfa-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="7ccfa-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="7ccfa-107">PR_AUTOCFG_USER_EMAIL_W</span><span class="sxs-lookup"><span data-stu-id="7ccfa-107">PR_AUTOCFG_USER_EMAIL_W</span></span>  <br/> |
-|<span data-ttu-id="7ccfa-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="7ccfa-108">Identifier:</span></span>  <br/> |<span data-ttu-id="7ccfa-109">0x67FD</span><span class="sxs-lookup"><span data-stu-id="7ccfa-109">0x67FD</span></span>  <br/> |
-|<span data-ttu-id="7ccfa-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="7ccfa-110">Data type:</span></span>  <br/> |<span data-ttu-id="7ccfa-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="7ccfa-111">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="7ccfa-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="7ccfa-112">Area:</span></span>  <br/> |<span data-ttu-id="7ccfa-113">Nachrichtenanlage</span><span class="sxs-lookup"><span data-stu-id="7ccfa-113">Message attachment</span></span>  <br/> |
+|<span data-ttu-id="c5f3a-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="c5f3a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="c5f3a-107">PR_AUTOCFG_USER_EMAIL_W</span><span class="sxs-lookup"><span data-stu-id="c5f3a-107">PR_AUTOCFG_USER_EMAIL_W</span></span>  <br/> |
+|<span data-ttu-id="c5f3a-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="c5f3a-108">Identifier:</span></span>  <br/> |<span data-ttu-id="c5f3a-109">0x67FD</span><span class="sxs-lookup"><span data-stu-id="c5f3a-109">0x67FD</span></span>  <br/> |
+|<span data-ttu-id="c5f3a-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="c5f3a-110">Data type:</span></span>  <br/> |<span data-ttu-id="c5f3a-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="c5f3a-111">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="c5f3a-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="c5f3a-112">Area:</span></span>  <br/> |<span data-ttu-id="c5f3a-113">Nachrichtenanlage</span><span class="sxs-lookup"><span data-stu-id="c5f3a-113">Message attachment</span></span>  <br/> |
    
 

@@ -1,57 +1,57 @@
 ---
-title: PublishedPage-Element (PublishSettings_Type ComplexType) ("Visio XML")
+title: PublishedPage-Element (PublishSettings_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c1eca66b-5840-790a-459f-e06680d11c05
-description: Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 sichtbar ist.
+description: Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 angezeigt werden kann.
 ms.openlocfilehash: 313cabbdd59930df67c807ee3c89df1a6e8c17a2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326796"
 ---
-# <a name="publishedpage-element-publishsettingstype-complextype-visio-xml"></a><span data-ttu-id="dd21c-103">PublishedPage-Element (PublishSettings_Type ComplexType) ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="dd21c-103">PublishedPage element (PublishSettings_Type complexType) ('Visio XML')</span></span>
+# <a name="publishedpage-element-publishsettingstype-complextype-visio-xml"></a><span data-ttu-id="48a9f-103">PublishedPage-Element (PublishSettings_Type complexType) (' Visio XML ')</span><span class="sxs-lookup"><span data-stu-id="48a9f-103">PublishedPage element (PublishSettings_Type complexType) ('Visio XML')</span></span>
 
-<span data-ttu-id="dd21c-104">Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="dd21c-104">Specifies whether a drawing page is viewable in the browser using Visio Services in Microsoft SharePoint Server 2013.</span></span>
+<span data-ttu-id="48a9f-104">Gibt an, ob ein Zeichenblatt im Browser mithilfe von Visio Services in Microsoft SharePoint Server 2013 angezeigt werden kann.</span><span class="sxs-lookup"><span data-stu-id="48a9f-104">Specifies whether a drawing page is viewable in the browser using Visio Services in Microsoft SharePoint Server 2013.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="dd21c-105">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="dd21c-105">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="48a9f-105">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="48a9f-105">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="dd21c-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="dd21c-106">**Element type**</span></span> <br/> |[<span data-ttu-id="dd21c-107">PublishedPage_Type</span><span class="sxs-lookup"><span data-stu-id="dd21c-107">PublishedPage_Type</span></span>](publishedpage_type-complextypevisio-xml.md) <br/> |
-|<span data-ttu-id="dd21c-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="dd21c-108">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|<span data-ttu-id="dd21c-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="dd21c-109">**Schema file**</span></span> <br/> |<span data-ttu-id="dd21c-110">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="dd21c-110">VisioSchema15.xsd</span></span>  <br/> |
-|<span data-ttu-id="dd21c-111">**Dokumentbausteine**</span><span class="sxs-lookup"><span data-stu-id="dd21c-111">**Document parts**</span></span> <br/> |<span data-ttu-id="dd21c-112">Document.Xml</span><span class="sxs-lookup"><span data-stu-id="dd21c-112">document.xml</span></span>  <br/> |
+|<span data-ttu-id="48a9f-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="48a9f-106">**Element type**</span></span> <br/> |[<span data-ttu-id="48a9f-107">PublishedPage_Type</span><span class="sxs-lookup"><span data-stu-id="48a9f-107">PublishedPage_Type</span></span>](publishedpage_type-complextypevisio-xml.md) <br/> |
+|<span data-ttu-id="48a9f-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="48a9f-108">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|<span data-ttu-id="48a9f-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="48a9f-109">**Schema file**</span></span> <br/> |<span data-ttu-id="48a9f-110">VisioSchema15. xsd</span><span class="sxs-lookup"><span data-stu-id="48a9f-110">VisioSchema15.xsd</span></span>  <br/> |
+|<span data-ttu-id="48a9f-111">**Dokumentteile**</span><span class="sxs-lookup"><span data-stu-id="48a9f-111">**Document parts**</span></span> <br/> |<span data-ttu-id="48a9f-112">Document. XML</span><span class="sxs-lookup"><span data-stu-id="48a9f-112">document.xml</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="dd21c-113">Definition</span><span class="sxs-lookup"><span data-stu-id="dd21c-113">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="48a9f-113">Definition</span><span class="sxs-lookup"><span data-stu-id="48a9f-113">Definition</span></span>
 
 ```XML
 < xs:element name="PublishedPage" type="PublishedPage_Type" minOccurs="0" maxOccurs="unbounded" >
 </xs:element >
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="dd21c-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="dd21c-114">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="48a9f-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="48a9f-114">Elements and attributes</span></span>
 
-<span data-ttu-id="dd21c-115">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="dd21c-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="48a9f-115">Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition.</span><span class="sxs-lookup"><span data-stu-id="48a9f-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="parent-elements"></a><span data-ttu-id="dd21c-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dd21c-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="48a9f-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="48a9f-116">Parent elements</span></span>
 
-|<span data-ttu-id="dd21c-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="dd21c-117">**Element**</span></span>|<span data-ttu-id="dd21c-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="dd21c-118">**Type**</span></span>|<span data-ttu-id="dd21c-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="dd21c-119">**Description**</span></span>|
+|<span data-ttu-id="48a9f-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="48a9f-117">**Element**</span></span>|<span data-ttu-id="48a9f-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="48a9f-118">**Type**</span></span>|<span data-ttu-id="48a9f-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="48a9f-119">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="dd21c-120">PublishSettings</span><span class="sxs-lookup"><span data-stu-id="dd21c-120">PublishSettings</span></span>](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="dd21c-121">PublishSettings_Type</span><span class="sxs-lookup"><span data-stu-id="dd21c-121">PublishSettings_Type</span></span>](publishsettings_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="dd21c-122">Gibt die Einstellungen, die verwendet werden, wenn das Diagramm mit Visio Services geöffnet wird.</span><span class="sxs-lookup"><span data-stu-id="dd21c-122">Specifies the settings that are used when the diagram is opened using Visio Services.</span></span>  <br/> |
+|[<span data-ttu-id="48a9f-120">PublishSettings</span><span class="sxs-lookup"><span data-stu-id="48a9f-120">PublishSettings</span></span>](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="48a9f-121">PublishSettings_Type</span><span class="sxs-lookup"><span data-stu-id="48a9f-121">PublishSettings_Type</span></span>](publishsettings_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="48a9f-122">Gibt die Einstellungen an, die beim Öffnen des Diagramms mithilfe von Visio Services verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="48a9f-122">Specifies the settings that are used when the diagram is opened using Visio Services.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="dd21c-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="dd21c-123">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="48a9f-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="48a9f-123">Child elements</span></span>
 
-<span data-ttu-id="dd21c-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="dd21c-124">None.</span></span>
+<span data-ttu-id="48a9f-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="48a9f-124">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="dd21c-125">Attribute</span><span class="sxs-lookup"><span data-stu-id="dd21c-125">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="48a9f-125">Attribute</span><span class="sxs-lookup"><span data-stu-id="48a9f-125">Attributes</span></span>
 
-|<span data-ttu-id="dd21c-126">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="dd21c-126">**Attribute**</span></span>|<span data-ttu-id="dd21c-127">**Typ**</span><span class="sxs-lookup"><span data-stu-id="dd21c-127">**Type**</span></span>|<span data-ttu-id="dd21c-128">**Erforderlich**</span><span class="sxs-lookup"><span data-stu-id="dd21c-128">**Required**</span></span>|<span data-ttu-id="dd21c-129">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="dd21c-129">**Description**</span></span>|<span data-ttu-id="dd21c-130">**Mögliche Werte**</span><span class="sxs-lookup"><span data-stu-id="dd21c-130">**Possible values**</span></span>|
+|<span data-ttu-id="48a9f-126">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="48a9f-126">**Attribute**</span></span>|<span data-ttu-id="48a9f-127">**Typ**</span><span class="sxs-lookup"><span data-stu-id="48a9f-127">**Type**</span></span>|<span data-ttu-id="48a9f-128">**Erforderlich**</span><span class="sxs-lookup"><span data-stu-id="48a9f-128">**Required**</span></span>|<span data-ttu-id="48a9f-129">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="48a9f-129">**Description**</span></span>|<span data-ttu-id="48a9f-130">**Mögliche Werte**</span><span class="sxs-lookup"><span data-stu-id="48a9f-130">**Possible values**</span></span>|
 |:-----|:-----|:-----|:-----|:-----|
-|<span data-ttu-id="dd21c-131">ID</span><span class="sxs-lookup"><span data-stu-id="dd21c-131">ID</span></span>  <br/> |<span data-ttu-id="dd21c-132">XSD:unsignedInt</span><span class="sxs-lookup"><span data-stu-id="dd21c-132">xsd:unsignedInt</span></span>  <br/> |<span data-ttu-id="dd21c-133">erforderlich</span><span class="sxs-lookup"><span data-stu-id="dd21c-133">required</span></span>  <br/> |<span data-ttu-id="dd21c-134">Der Bezeichner eines Zeichenblatts.</span><span class="sxs-lookup"><span data-stu-id="dd21c-134">The identifier of a drawing page.</span></span>  <br/> |<span data-ttu-id="dd21c-135">Werte des Typs Xsd:unsignedInt.</span><span class="sxs-lookup"><span data-stu-id="dd21c-135">Values of the xsd:unsignedInt type.</span></span>  <br/> |
+|<span data-ttu-id="48a9f-131">ID</span><span class="sxs-lookup"><span data-stu-id="48a9f-131">ID</span></span>  <br/> |<span data-ttu-id="48a9f-132">XSD: unsignedInt</span><span class="sxs-lookup"><span data-stu-id="48a9f-132">xsd:unsignedInt</span></span>  <br/> |<span data-ttu-id="48a9f-133">erforderlich</span><span class="sxs-lookup"><span data-stu-id="48a9f-133">required</span></span>  <br/> |<span data-ttu-id="48a9f-134">Der Bezeichner eines Zeichenblatts.</span><span class="sxs-lookup"><span data-stu-id="48a9f-134">The identifier of a drawing page.</span></span>  <br/> |<span data-ttu-id="48a9f-135">Werte des XSD: unsignedInt-Typs.</span><span class="sxs-lookup"><span data-stu-id="48a9f-135">Values of the xsd:unsignedInt type.</span></span>  <br/> |
    
 

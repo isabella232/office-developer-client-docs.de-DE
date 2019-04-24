@@ -1,5 +1,5 @@
 ---
-title: PidTagResolveMethod (kanonische Eigenschaft)
+title: Kanonische Pidtagresolvemethod (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,72 +11,72 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30d23c19-e0da-4511-9361-761153259216
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 14bb31ae9aebbb6441948b5756b426508107c9f0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331402"
 ---
-# <a name="pidtagresolvemethod-canonical-property"></a><span data-ttu-id="23111-103">PidTagResolveMethod (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="23111-103">PidTagResolveMethod Canonical Property</span></span>
+# <a name="pidtagresolvemethod-canonical-property"></a><span data-ttu-id="abd0c-103">Kanonische Pidtagresolvemethod (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="abd0c-103">PidTagResolveMethod Canonical Property</span></span>
 
   
   
-<span data-ttu-id="23111-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="23111-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="abd0c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="abd0c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="23111-105">Enthält einen Ordner Konflikt Lösung Wert.</span><span class="sxs-lookup"><span data-stu-id="23111-105">Contains a folder's conflict resolution value.</span></span>
+<span data-ttu-id="abd0c-105">Enthält den Wert der Konfliktauflösung eines Ordners.</span><span class="sxs-lookup"><span data-stu-id="abd0c-105">Contains a folder's conflict resolution value.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="23111-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="23111-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="23111-107">PR_RESOLVE_METHOD</span><span class="sxs-lookup"><span data-stu-id="23111-107">PR_RESOLVE_METHOD</span></span>  <br/> |
-|<span data-ttu-id="23111-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="23111-108">Identifier:</span></span>  <br/> |<span data-ttu-id="23111-109">0x3FE7</span><span class="sxs-lookup"><span data-stu-id="23111-109">0x3FE7</span></span>  <br/> |
-|<span data-ttu-id="23111-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="23111-110">Data type:</span></span>  <br/> |<span data-ttu-id="23111-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="23111-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="23111-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="23111-112">Area:</span></span>  <br/> |<span data-ttu-id="23111-113">MAPI-status</span><span class="sxs-lookup"><span data-stu-id="23111-113">MAPI status</span></span>  <br/> |
+|<span data-ttu-id="abd0c-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="abd0c-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="abd0c-107">PR_RESOLVE_METHOD</span><span class="sxs-lookup"><span data-stu-id="abd0c-107">PR_RESOLVE_METHOD</span></span>  <br/> |
+|<span data-ttu-id="abd0c-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="abd0c-108">Identifier:</span></span>  <br/> |<span data-ttu-id="abd0c-109">0x3FE7</span><span class="sxs-lookup"><span data-stu-id="abd0c-109">0x3FE7</span></span>  <br/> |
+|<span data-ttu-id="abd0c-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="abd0c-110">Data type:</span></span>  <br/> |<span data-ttu-id="abd0c-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="abd0c-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="abd0c-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="abd0c-112">Area:</span></span>  <br/> |<span data-ttu-id="abd0c-113">MAPI-Status</span><span class="sxs-lookup"><span data-stu-id="abd0c-113">MAPI status</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="23111-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="23111-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="abd0c-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="abd0c-114">Remarks</span></span>
 
-<span data-ttu-id="23111-115">Diese Eigenschaft auf den Ordner mit den Konflikt Lösung Nachricht wird anzugeben, wie den Konflikt zu lösen.</span><span class="sxs-lookup"><span data-stu-id="23111-115">This property on the folder containing the conflict resolution message will indicate how to resolve the conflict.</span></span> <span data-ttu-id="23111-116">Diese Eigenschaft ist nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="23111-116">This property is not required.</span></span> <span data-ttu-id="23111-117">Jedoch ist festgelegt, müssen als den folgenden Kennzeichen nicht vorhanden sein:</span><span class="sxs-lookup"><span data-stu-id="23111-117">However, if it is set, flags other than the following must not be present:</span></span>
+<span data-ttu-id="abd0c-115">Diese Eigenschaft für den Ordner mit der Konflikt Lösungs Meldung gibt an, wie der Konflikt aufgelöst werden kann.</span><span class="sxs-lookup"><span data-stu-id="abd0c-115">This property on the folder containing the conflict resolution message will indicate how to resolve the conflict.</span></span> <span data-ttu-id="abd0c-116">Diese Eigenschaft ist nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="abd0c-116">This property is not required.</span></span> <span data-ttu-id="abd0c-117">Wenn Sie jedoch festgelegt ist, dürfen keine anderen Flags vorhanden sein:</span><span class="sxs-lookup"><span data-stu-id="abd0c-117">However, if it is set, flags other than the following must not be present:</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="23111-118">RESOLVE_METHOD_DEFAULT (0 X 00000000)</span><span class="sxs-lookup"><span data-stu-id="23111-118">RESOLVE_METHOD_DEFAULT (0x00000000)</span></span>  <br/> |<span data-ttu-id="23111-119">Konflikt zu lösen, dass die Nachricht generiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="23111-119">Conflict resolve message should be generated.</span></span>  <br/> |
-|<span data-ttu-id="23111-120">RESOLVE_METHOD_LAST_WRITER_WINS (0 X 00000001)</span><span class="sxs-lookup"><span data-stu-id="23111-120">RESOLVE_METHOD_LAST_WRITER_WINS (0x00000001)</span></span>  <br/> |<span data-ttu-id="23111-121">Überschreiben Sie Zielnachricht mit aktuellen Änderungen angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="23111-121">Overwrite target message with current changes being applied.</span></span>  <br/> |
-|<span data-ttu-id="23111-122">RESOLVE_NO_CONFLICT_NOTIFICATION (0 X 00000002)</span><span class="sxs-lookup"><span data-stu-id="23111-122">RESOLVE_NO_CONFLICT_NOTIFICATION (0x00000002)</span></span>  <br/> |<span data-ttu-id="23111-123">Senden Sie Conflict-Benachrichtigung nicht beim Generieren von Konflikt beheben Nachricht im öffentlichen Ordner.</span><span class="sxs-lookup"><span data-stu-id="23111-123">Do not send conflict notification message when generating conflict resolve message in public folder.</span></span>  <br/> |
+|<span data-ttu-id="abd0c-118">RESOLVE_METHOD_DEFAULT (0x00000000)</span><span class="sxs-lookup"><span data-stu-id="abd0c-118">RESOLVE_METHOD_DEFAULT (0x00000000)</span></span>  <br/> |<span data-ttu-id="abd0c-119">Nachricht zur Konfliktlösung sollte generiert werden.</span><span class="sxs-lookup"><span data-stu-id="abd0c-119">Conflict resolve message should be generated.</span></span>  <br/> |
+|<span data-ttu-id="abd0c-120">RESOLVE_METHOD_LAST_WRITER_WINS (0x00000001)</span><span class="sxs-lookup"><span data-stu-id="abd0c-120">RESOLVE_METHOD_LAST_WRITER_WINS (0x00000001)</span></span>  <br/> |<span data-ttu-id="abd0c-121">Überschreiben der Zielnachricht mit aktuellen Änderungen, die angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="abd0c-121">Overwrite target message with current changes being applied.</span></span>  <br/> |
+|<span data-ttu-id="abd0c-122">RESOLVE_NO_CONFLICT_NOTIFICATION (0x00000002)</span><span class="sxs-lookup"><span data-stu-id="abd0c-122">RESOLVE_NO_CONFLICT_NOTIFICATION (0x00000002)</span></span>  <br/> |<span data-ttu-id="abd0c-123">Beim Generieren der Nachricht zur Konfliktbehebung im öffentlichen Ordner keine Konflikt Benachrichtigung senden.</span><span class="sxs-lookup"><span data-stu-id="abd0c-123">Do not send conflict notification message when generating conflict resolve message in public folder.</span></span>  <br/> |
    
-<span data-ttu-id="23111-124">Ein Client oder Server muss eine Nachricht an Konflikt auflösen zugeordneten Nachrichten nicht generiert werden.</span><span class="sxs-lookup"><span data-stu-id="23111-124">A client or server must not generate a conflict resolve message for associated messages.</span></span> <span data-ttu-id="23111-125">Diese Nachrichten müssen mit **RESOLVE_METHOD_LAST_WRITER_WINS** Semantik aufgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="23111-125">These messages must be resolved by using **RESOLVE_METHOD_LAST_WRITER_WINS** semantics.</span></span> 
+<span data-ttu-id="abd0c-124">Ein Client oder Server darf keine Konflikt Lösungs Meldung für zugeordnete Nachrichten generieren.</span><span class="sxs-lookup"><span data-stu-id="abd0c-124">A client or server must not generate a conflict resolve message for associated messages.</span></span> <span data-ttu-id="abd0c-125">Diese Nachrichten müssen mithilfe der **RESOLVE_METHOD_LAST_WRITER_WINS** -Semantik aufgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="abd0c-125">These messages must be resolved by using **RESOLVE_METHOD_LAST_WRITER_WINS** semantics.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="23111-126">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="23111-126">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="abd0c-126">Zugehörige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="abd0c-126">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="23111-127">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="23111-127">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="abd0c-127">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="abd0c-127">Protocol specifications</span></span>
 
-<span data-ttu-id="23111-128">[[MS-OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="23111-128">[[MS-OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="abd0c-128">[[MS-OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="abd0c-128">[[MS-OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="23111-129">Synchronisieren von messaging Objektdaten zwischen einem Server und einem Client behandelt.</span><span class="sxs-lookup"><span data-stu-id="23111-129">Handles synchronizing messaging object data between a server and a client.</span></span>
+> <span data-ttu-id="abd0c-129">Behandelt das Synchronisieren von Messagingobjekt Daten zwischen einem Server und einem Client.</span><span class="sxs-lookup"><span data-stu-id="abd0c-129">Handles synchronizing messaging object data between a server and a client.</span></span>
     
-<span data-ttu-id="23111-130">[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="23111-130">[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="abd0c-130">[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="abd0c-130">[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="23111-131">Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.</span><span class="sxs-lookup"><span data-stu-id="23111-131">Defines the basic data structures that are used in remote operations.</span></span>
+> <span data-ttu-id="abd0c-131">Definiert die grundlegenden Datenstrukturen, die in Remotevorgängen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="abd0c-131">Defines the basic data structures that are used in remote operations.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="23111-132">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="23111-132">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="abd0c-132">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="abd0c-132">Header files</span></span>
 
-<span data-ttu-id="23111-133">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="23111-133">Mapidefs.h</span></span>
+<span data-ttu-id="abd0c-133">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="abd0c-133">Mapidefs.h</span></span>
   
-> <span data-ttu-id="23111-134">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="23111-134">Provides data type definitions.</span></span>
+> <span data-ttu-id="abd0c-134">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="abd0c-134">Provides data type definitions.</span></span>
     
-<span data-ttu-id="23111-135">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="23111-135">Mapitags.h</span></span>
+<span data-ttu-id="abd0c-135">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="abd0c-135">Mapitags.h</span></span>
   
-> <span data-ttu-id="23111-136">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="23111-136">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="abd0c-136">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="abd0c-136">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="23111-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="23111-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="abd0c-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="abd0c-137">See also</span></span>
 
 
 
-[<span data-ttu-id="23111-138">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="23111-138">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="abd0c-138">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="abd0c-138">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="23111-139">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="23111-139">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="abd0c-139">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="abd0c-139">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="23111-140">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="23111-140">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="abd0c-140">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="abd0c-140">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="23111-141">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="23111-141">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="abd0c-141">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="abd0c-141">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

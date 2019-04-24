@@ -8,22 +8,22 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 68b9b5d7-a4d0-4925-adc1-c0e3cda9be16
 description: Diese Methode wird derzeit nicht unterstützt.
-ms.openlocfilehash: b41f64416f612863f2d0410a85fe74f9a2394741
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7d79bb745c73e54e2d6f65accd55f854b234266f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331630"
 ---
-# <a name="isocialpersongetfriendsandcolleaguesids"></a><span data-ttu-id="53a7a-103">ISocialPerson::GetFriendsAndColleaguesIDs</span><span class="sxs-lookup"><span data-stu-id="53a7a-103">ISocialPerson::GetFriendsAndColleaguesIDs</span></span>
+# <a name="isocialpersongetfriendsandcolleaguesids"></a><span data-ttu-id="563d9-103">ISocialPerson::GetFriendsAndColleaguesIDs</span><span class="sxs-lookup"><span data-stu-id="563d9-103">ISocialPerson::GetFriendsAndColleaguesIDs</span></span>
 
-<span data-ttu-id="53a7a-104">Diese Methode wird derzeit nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="53a7a-104">This method is currently not supported.</span></span> 
+<span data-ttu-id="563d9-104">Diese Methode wird derzeit nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="563d9-104">This method is currently not supported.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetFriendsAndColleaguesIDs([out, retval] SAFEARRAY(BSTR)* friendsIDs);
 ```
 
-## <a name="see-also"></a><span data-ttu-id="53a7a-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="53a7a-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="563d9-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="563d9-105">See also</span></span>
 
-- [<span data-ttu-id="53a7a-106">ISocialPerson : IUnknown</span><span class="sxs-lookup"><span data-stu-id="53a7a-106">ISocialPerson : IUnknown</span></span>](isocialpersoniunknown.md)
+- [<span data-ttu-id="563d9-106">ISocialPerson : IUnknown</span><span class="sxs-lookup"><span data-stu-id="563d9-106">ISocialPerson : IUnknown</span></span>](isocialpersoniunknown.md)
 

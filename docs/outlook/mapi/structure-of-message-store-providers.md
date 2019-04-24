@@ -1,5 +1,5 @@
 ---
-title: Struktur der Nachricht-Anbieter
+title: Struktur eines Nachrichtenspeicheranbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 064b2fc1-e690-43e6-95d3-a61438115de5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 58b6771c6bdae91ad0e496189258e4745de5bc84
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: eda62a4cd31e0de695d52391a6717e7a0f5ea581
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327206"
 ---
-# <a name="structure-of-message-store-providers"></a><span data-ttu-id="7c3d0-103">Struktur der Nachricht-Anbieter</span><span class="sxs-lookup"><span data-stu-id="7c3d0-103">Structure of message store providers</span></span>
+# <a name="structure-of-message-store-providers"></a><span data-ttu-id="3f421-103">Struktur eines Nachrichtenspeicheranbieters</span><span class="sxs-lookup"><span data-stu-id="3f421-103">Structure of message store providers</span></span>
   
-<span data-ttu-id="7c3d0-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7c3d0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="3f421-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3f421-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7c3d0-105">Anbieter eine Nachricht bei der Ausführung im Arbeitsspeicher, ist eine [IMSProvider: IUnknown](imsprovideriunknown.md) Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="7c3d0-105">A message store provider, when it is running in memory, is an [IMSProvider : IUnknown](imsprovideriunknown.md) interface.</span></span> <span data-ttu-id="7c3d0-106">Die **IMSProvider** -Schnittstelle ermöglicht Client-Anwendungen und die MAPI-Warteschlange an und von der Nachrichtenspeicher anmelden.</span><span class="sxs-lookup"><span data-stu-id="7c3d0-106">The **IMSProvider** interface allows client applications and the MAPI spooler to log on to and off of the message store.</span></span> <span data-ttu-id="7c3d0-107">Die, die Clientanwendungen und die MAPI-Warteschlange verwenden, Zugriff auf Ordner und Nachrichten im Nachrichtenspeicher sind [IMSLogon](imslogoniunknown.md) und [IMsgStore](imsgstoreimapiprop.md) Schnittstellen.</span><span class="sxs-lookup"><span data-stu-id="7c3d0-107">The interfaces that client applications and the MAPI spooler use to access folders and messages in the message store are [IMSLogon](imslogoniunknown.md) and [IMsgStore](imsgstoreimapiprop.md) interfaces.</span></span> <span data-ttu-id="7c3d0-108">Diese Schnittstellen werden normalerweise erstellt, wenn der Nachrichtenspeicher zuerst angemeldet ist, obwohl der Einstiegspunkt [MSProviderInit](msproviderinit.md) der Nachricht speichern DLL konnte auch erstellen sie.</span><span class="sxs-lookup"><span data-stu-id="7c3d0-108">These interfaces are typically created when the message store is first logged on to, although the [MSProviderInit](msproviderinit.md) entry point of the message store DLL could also create them.</span></span> 
+<span data-ttu-id="3f421-105">Ein Nachrichtenspeicher Anbieter ist, wenn er im Arbeitsspeicher läuft, eine [IMSProvider: IUnknown](imsprovideriunknown.md) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="3f421-105">A message store provider, when it is running in memory, is an [IMSProvider : IUnknown](imsprovideriunknown.md) interface.</span></span> <span data-ttu-id="3f421-106">Die **IMSProvider** -Schnittstelle ermöglicht es Clientanwendungen und der MAPI-Warteschlange, sich am Nachrichtenspeicher an-und abmelden zu lassen.</span><span class="sxs-lookup"><span data-stu-id="3f421-106">The **IMSProvider** interface allows client applications and the MAPI spooler to log on to and off of the message store.</span></span> <span data-ttu-id="3f421-107">Die Schnittstellen, die Clientanwendungen und der MAPI-Spooler für den Zugriff auf Ordner und Nachrichten im Nachrichtenspeicher verwenden, sind [IMSLogon](imslogoniunknown.md) -und [IMsgStore](imsgstoreimapiprop.md) -Schnittstellen.</span><span class="sxs-lookup"><span data-stu-id="3f421-107">The interfaces that client applications and the MAPI spooler use to access folders and messages in the message store are [IMSLogon](imslogoniunknown.md) and [IMsgStore](imsgstoreimapiprop.md) interfaces.</span></span> <span data-ttu-id="3f421-108">Diese Schnittstellen werden in der Regel erstellt, wenn der Nachrichtenspeicher zum ersten Mal angemeldet ist, obwohl der [MSProviderInit](msproviderinit.md) -Einstiegspunkt der nachrichtenSPEICHER-dll Sie auch erstellen kann.</span><span class="sxs-lookup"><span data-stu-id="3f421-108">These interfaces are typically created when the message store is first logged on to, although the [MSProviderInit](msproviderinit.md) entry point of the message store DLL could also create them.</span></span> 
   
-<span data-ttu-id="7c3d0-109">Da die **IMSLogon** und **IMsgStore** Schnittstellen einige Methoden gemeinsam nutzen, kann es einfacher sein ein Klassenobjekt erstellen, die beide Schnittstellen erbt.</span><span class="sxs-lookup"><span data-stu-id="7c3d0-109">Because the **IMSLogon** and **IMsgStore** interfaces share some methods, it may be easier to create one class object that inherits from both of these interfaces.</span></span> <span data-ttu-id="7c3d0-110">Sie können diese Schnittstellen in separaten Objekten implementieren, und Schreiben Hilfsfunktionen interne zur DLL, mit die die freigegebenen Methoden implementiert, die dann von den Methoden in den Schnittstellen **IMSLogon** und **IMsgStore** aufgerufen werden können.</span><span class="sxs-lookup"><span data-stu-id="7c3d0-110">You can also implement these interfaces in separate objects, and write helper functions internal to your DLL that implement the shared methods that can then be called from the methods in the **IMSLogon** and **IMsgStore** interfaces.</span></span> 
+<span data-ttu-id="3f421-109">Da die **IMSLogon** -und **IMsgStore** -Schnittstellen einige Methoden gemeinsam nutzen, ist es möglicherweise einfacher, ein Klassenobjekt zu erstellen, das von beiden Schnittstellen erbt.</span><span class="sxs-lookup"><span data-stu-id="3f421-109">Because the **IMSLogon** and **IMsgStore** interfaces share some methods, it may be easier to create one class object that inherits from both of these interfaces.</span></span> <span data-ttu-id="3f421-110">Sie können diese Schnittstellen auch in separaten Objekten implementieren und Hilfsfunktionen innerhalb Ihrer DLL schreiben, die die freigegebenen Methoden implementieren, die dann von den Methoden in den **IMSLogon** -und **IMsgStore** -Schnittstellen aufgerufen werden können.</span><span class="sxs-lookup"><span data-stu-id="3f421-110">You can also implement these interfaces in separate objects, and write helper functions internal to your DLL that implement the shared methods that can then be called from the methods in the **IMSLogon** and **IMsgStore** interfaces.</span></span> 
   
-<span data-ttu-id="7c3d0-111">Die folgende Abbildung zeigt einen allgemeinen Überblick über die Objekthierarchie innerhalb eines Nachrichtenspeichers ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="7c3d0-111">The following illustration shows a high-level outline of the object hierarchy within a running message store.</span></span>
+<span data-ttu-id="3f421-111">Die folgende Abbildung zeigt eine allgemeine Gliederung der Objekthierarchie innerhalb eines aktiven Nachrichtenspeichers.</span><span class="sxs-lookup"><span data-stu-id="3f421-111">The following illustration shows a high-level outline of the object hierarchy within a running message store.</span></span>
   
-<span data-ttu-id="7c3d0-112">**Objekthierarchie des Nachrichtenspeichers**</span><span class="sxs-lookup"><span data-stu-id="7c3d0-112">**Message store object hierarchy**</span></span>
+<span data-ttu-id="3f421-112">**Objekthierarchie des Nachrichtenspeichers**</span><span class="sxs-lookup"><span data-stu-id="3f421-112">**Message store object hierarchy**</span></span>
   
-<span data-ttu-id="7c3d0-113">![Objekthierarchie des Nachrichtenspeichers] (media/storeobj.gif "Objekthierarchie des Nachrichtenspeichers")</span><span class="sxs-lookup"><span data-stu-id="7c3d0-113">![Message store object hierarchy](media/storeobj.gif "Message store object hierarchy")</span></span>
+<span data-ttu-id="3f421-113">![Nachrichtenspeicher-Objekthierarchie] (media/storeobj.gif "Nachrichtenspeicher-Objekthierarchie")</span><span class="sxs-lookup"><span data-stu-id="3f421-113">![Message store object hierarchy](media/storeobj.gif "Message store object hierarchy")</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7c3d0-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7c3d0-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3f421-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3f421-114">See also</span></span>
 
-- [<span data-ttu-id="7c3d0-115">Entwickeln eines Providers MAPI-Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="7c3d0-115">Developing a MAPI Message Store Provider</span></span>](developing-a-mapi-message-store-provider.md)
+- [<span data-ttu-id="3f421-115">Entwickeln eines MAPI-Nachrichtenspeicheranbieters</span><span class="sxs-lookup"><span data-stu-id="3f421-115">Developing a MAPI Message Store Provider</span></span>](developing-a-mapi-message-store-provider.md)
 

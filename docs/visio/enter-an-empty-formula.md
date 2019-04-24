@@ -9,20 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5df5c253-f491-7039-ce00-e66417590bb2
 description: ''
-ms.openlocfilehash: 46feb04453025824c2d24358bf82b8e967cba84e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cc97a64da977d20d3c76f3d3a083268b4c93bbb3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328974"
 ---
-# <a name="enter-an-empty-formula"></a><span data-ttu-id="c89ec-102">Eingeben einer leeren Formel</span><span class="sxs-lookup"><span data-stu-id="c89ec-102">Enter an Empty Formula</span></span>
+# <a name="enter-an-empty-formula"></a><span data-ttu-id="06d69-102">Eingeben einer leeren Formel</span><span class="sxs-lookup"><span data-stu-id="06d69-102">Enter an Empty Formula</span></span>
 
-1. <span data-ttu-id="c89ec-103">Wählen Sie die Zelle aus, die die Formel enthalten soll.</span><span class="sxs-lookup"><span data-stu-id="c89ec-103">Select the cell that will contain the formula.</span></span>
+1. <span data-ttu-id="06d69-103">Wählen Sie die Zelle aus, die die Formel enthalten soll.</span><span class="sxs-lookup"><span data-stu-id="06d69-103">Select the cell that will contain the formula.</span></span>
     
-2. <span data-ttu-id="c89ec-104">Drücken Sie auf ENTF und anschließend die EINGABETASTE.</span><span class="sxs-lookup"><span data-stu-id="c89ec-104">Press DELETE, and then press ENTER.</span></span>
+2. <span data-ttu-id="06d69-104">Drücken Sie auf ENTF und anschließend die EINGABETASTE.</span><span class="sxs-lookup"><span data-stu-id="06d69-104">Press DELETE, and then press ENTER.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="c89ec-105">Versuchen Sie dies in einer Zelle **Scratch** nach dem eine lokale Formel einfügen.</span><span class="sxs-lookup"><span data-stu-id="c89ec-105">Try this in a **Scratch** cell after inserting a local formula.</span></span> <span data-ttu-id="c89ec-106">Die Zelle fällt "No Formula," zurück, da keine Formel zum Vererben des Master-Shapes vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="c89ec-106">The cell reverts to 'No Formula', because there is no formula to inherit from the master.</span></span> 
+> <span data-ttu-id="06d69-105">Probieren Sie dies in \*\*\*\* einer Arbeitszelle aus, nachdem Sie eine lokale Formel eingefügt haben.</span><span class="sxs-lookup"><span data-stu-id="06d69-105">Try this in a **Scratch** cell after inserting a local formula.</span></span> <span data-ttu-id="06d69-106">Die Zelle wird auf "keine Formel" zurückgesetzt, da es keine Formel gibt, die vom Master geerbt werden soll.</span><span class="sxs-lookup"><span data-stu-id="06d69-106">The cell reverts to 'No Formula', because there is no formula to inherit from the master.</span></span> 
   
 

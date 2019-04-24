@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7f083ee0-bf36-0059-1589-66e454fe0098
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f8982bafc0678378ae46dc31a9417cc11bb695a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 78ccf72f17ec350d77f2d22d0e6d2fa7c3d97543
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332144"
 ---
-# <a name="iostxsetsyncresult"></a><span data-ttu-id="026cc-103">IOSTX::SetSyncResult</span><span class="sxs-lookup"><span data-stu-id="026cc-103">IOSTX::SetSyncResult</span></span>
+# <a name="iostxsetsyncresult"></a><span data-ttu-id="9691c-103">IOSTX::SetSyncResult</span><span class="sxs-lookup"><span data-stu-id="9691c-103">IOSTX::SetSyncResult</span></span>
 
   
   
-<span data-ttu-id="026cc-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="026cc-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9691c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9691c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="026cc-105">Das Ergebnis der Synchronisierung festgelegt.</span><span class="sxs-lookup"><span data-stu-id="026cc-105">Sets the result of the synchronization.</span></span>
+<span data-ttu-id="9691c-105">Legt das Ergebnis der Synchronisierung fest.</span><span class="sxs-lookup"><span data-stu-id="9691c-105">Sets the result of the synchronization.</span></span>
   
 ```cpp
 HRESULT SetSyncResult( 
@@ -33,32 +33,32 @@ HRESULT SetSyncResult(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="026cc-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="026cc-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="9691c-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="9691c-106">Parameters</span></span>
 
- <span data-ttu-id="026cc-107">_hrSync_</span><span class="sxs-lookup"><span data-stu-id="026cc-107">_hrSync_</span></span>
+ <span data-ttu-id="9691c-107">_hrSync_</span><span class="sxs-lookup"><span data-stu-id="9691c-107">_hrSync_</span></span>
   
->  <span data-ttu-id="026cc-108">[in] Das Ergebnis der Synchronisierung.</span><span class="sxs-lookup"><span data-stu-id="026cc-108">[in] The result of the synchronization.</span></span> 
+>  <span data-ttu-id="9691c-108">in Das Ergebnis der Synchronisierung.</span><span class="sxs-lookup"><span data-stu-id="9691c-108">[in] The result of the synchronization.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="026cc-109">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="026cc-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9691c-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9691c-109">Remarks</span></span>
 
-<span data-ttu-id="026cc-110">Rufen Sie **IOSTX::SetSyncResult** vor **IOSTX::SyncEnd** , um den lokalen Speicher des Ergebnisses der Synchronisierung zu informieren.</span><span class="sxs-lookup"><span data-stu-id="026cc-110">Call **IOSTX::SetSyncResult** before calling **IOSTX::SyncEnd** to inform the local store of the result of synchronization.</span></span> 
+<span data-ttu-id="9691c-110">Rufen Sie **IOSTX:: SetSyncResult** vor dem Aufruf von **IOSTX:: SyncEnd** auf, um den lokalen Speicher über das Ergebnis der Synchronisierung zu informieren.</span><span class="sxs-lookup"><span data-stu-id="9691c-110">Call **IOSTX::SetSyncResult** before calling **IOSTX::SyncEnd** to inform the local store of the result of synchronization.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="026cc-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="026cc-111">See also</span></span>
-
-
-
-[<span data-ttu-id="026cc-112">IOSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="026cc-112">IOSTX::GetLastError</span></span>](iostx-getlasterror.md)
-  
-[<span data-ttu-id="026cc-113">IOSTX::InitSync</span><span class="sxs-lookup"><span data-stu-id="026cc-113">IOSTX::InitSync</span></span>](iostx-initsync.md)
-  
-[<span data-ttu-id="026cc-114">IOSTX::SyncBeg</span><span class="sxs-lookup"><span data-stu-id="026cc-114">IOSTX::SyncBeg</span></span>](iostx-syncbeg.md)
-  
-[<span data-ttu-id="026cc-115">IOSTX::SyncEnd</span><span class="sxs-lookup"><span data-stu-id="026cc-115">IOSTX::SyncEnd</span></span>](iostx-syncend.md)
-  
-[<span data-ttu-id="026cc-116">IOSTX::SyncHdrBeg</span><span class="sxs-lookup"><span data-stu-id="026cc-116">IOSTX::SyncHdrBeg</span></span>](iostx-synchdrbeg.md)
-  
-[<span data-ttu-id="026cc-117">IOSTX::SyncHdrEnd</span><span class="sxs-lookup"><span data-stu-id="026cc-117">IOSTX::SyncHdrEnd</span></span>](iostx-synchdrend.md)
+## <a name="see-also"></a><span data-ttu-id="9691c-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9691c-111">See also</span></span>
 
 
-[<span data-ttu-id="026cc-118">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="026cc-118">MAPI Constants</span></span>](mapi-constants.md)
+
+[<span data-ttu-id="9691c-112">IOSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="9691c-112">IOSTX::GetLastError</span></span>](iostx-getlasterror.md)
+  
+[<span data-ttu-id="9691c-113">IOSTX::InitSync</span><span class="sxs-lookup"><span data-stu-id="9691c-113">IOSTX::InitSync</span></span>](iostx-initsync.md)
+  
+[<span data-ttu-id="9691c-114">IOSTX::SyncBeg</span><span class="sxs-lookup"><span data-stu-id="9691c-114">IOSTX::SyncBeg</span></span>](iostx-syncbeg.md)
+  
+[<span data-ttu-id="9691c-115">IOSTX::SyncEnd</span><span class="sxs-lookup"><span data-stu-id="9691c-115">IOSTX::SyncEnd</span></span>](iostx-syncend.md)
+  
+[<span data-ttu-id="9691c-116">IOSTX::SyncHdrBeg</span><span class="sxs-lookup"><span data-stu-id="9691c-116">IOSTX::SyncHdrBeg</span></span>](iostx-synchdrbeg.md)
+  
+[<span data-ttu-id="9691c-117">IOSTX::SyncHdrEnd</span><span class="sxs-lookup"><span data-stu-id="9691c-117">IOSTX::SyncHdrEnd</span></span>](iostx-synchdrend.md)
+
+
+[<span data-ttu-id="9691c-118">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="9691c-118">MAPI Constants</span></span>](mapi-constants.md)
 

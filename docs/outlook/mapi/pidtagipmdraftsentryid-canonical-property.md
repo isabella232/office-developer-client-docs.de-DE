@@ -1,5 +1,5 @@
 ---
-title: PidTagIpmDraftsEntryId (kanonische Eigenschaft)
+title: Kanonische Pidtagipmdraftsentryid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,74 +11,74 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 17d64211-6265-41f4-b016-3677d75af966
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: e259c86803147d782469c8d86b23694d8b54e69d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327888"
 ---
-# <a name="pidtagipmdraftsentryid-canonical-property"></a><span data-ttu-id="12079-103">PidTagIpmDraftsEntryId (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="12079-103">PidTagIpmDraftsEntryId Canonical Property</span></span>
+# <a name="pidtagipmdraftsentryid-canonical-property"></a><span data-ttu-id="cdbce-103">Kanonische Pidtagipmdraftsentryid (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="cdbce-103">PidTagIpmDraftsEntryId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="12079-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="12079-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="cdbce-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cdbce-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="12079-105">Die **EntryID** des Ordners Outlook Entwürfe enthält.</span><span class="sxs-lookup"><span data-stu-id="12079-105">Contains the **EntryID** of the Outlook Drafts folder.</span></span> 
+<span data-ttu-id="cdbce-105">Enthält die **Eintrags** -Nr. des Outlook-Entwurfsordners.</span><span class="sxs-lookup"><span data-stu-id="cdbce-105">Contains the **EntryID** of the Outlook Drafts folder.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="12079-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="12079-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="12079-107">PR_IPM_DRAFTS_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="12079-107">PR_IPM_DRAFTS_ENTRYID</span></span>  <br/> |
-|<span data-ttu-id="12079-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="12079-108">Identifier:</span></span>  <br/> |<span data-ttu-id="12079-109">0x36D7</span><span class="sxs-lookup"><span data-stu-id="12079-109">0x36D7</span></span>  <br/> |
-|<span data-ttu-id="12079-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="12079-110">Data type:</span></span>  <br/> |<span data-ttu-id="12079-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="12079-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="12079-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="12079-112">Area:</span></span>  <br/> |<span data-ttu-id="12079-113">Ordner</span><span class="sxs-lookup"><span data-stu-id="12079-113">Folder</span></span>  <br/> |
+|<span data-ttu-id="cdbce-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="cdbce-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="cdbce-107">PR_IPM_DRAFTS_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="cdbce-107">PR_IPM_DRAFTS_ENTRYID</span></span>  <br/> |
+|<span data-ttu-id="cdbce-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="cdbce-108">Identifier:</span></span>  <br/> |<span data-ttu-id="cdbce-109">0x36D7</span><span class="sxs-lookup"><span data-stu-id="cdbce-109">0x36D7</span></span>  <br/> |
+|<span data-ttu-id="cdbce-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="cdbce-110">Data type:</span></span>  <br/> |<span data-ttu-id="cdbce-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="cdbce-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="cdbce-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="cdbce-112">Area:</span></span>  <br/> |<span data-ttu-id="cdbce-113">Ordner</span><span class="sxs-lookup"><span data-stu-id="cdbce-113">Folder</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="12079-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="12079-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cdbce-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cdbce-114">Remarks</span></span>
 
-<span data-ttu-id="12079-115">Diese Eigenschaft wird in den Ordner Posteingang als auch im Stammordner des Nachrichtenspeichers gespeichert.</span><span class="sxs-lookup"><span data-stu-id="12079-115">This property is stored in the Inbox folder as well as the root folder of the message store.</span></span> <span data-ttu-id="12079-116">Zugriff auf die Eigenschaft auf einen bestimmten Nachrichtenspeicher folgendermaßen Sie vor:</span><span class="sxs-lookup"><span data-stu-id="12079-116">To access the property on a specific message store, do the following:</span></span> 
+<span data-ttu-id="cdbce-115">Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtenspeichers gespeichert.</span><span class="sxs-lookup"><span data-stu-id="cdbce-115">This property is stored in the Inbox folder as well as the root folder of the message store.</span></span> <span data-ttu-id="cdbce-116">Gehen Sie folgendermaßen vor, um auf die Eigenschaft in einem bestimmten Nachrichtenspeicher zuzugreifen:</span><span class="sxs-lookup"><span data-stu-id="cdbce-116">To access the property on a specific message store, do the following:</span></span> 
   
-1. <span data-ttu-id="12079-117">Suchen Sie zunächst nach der Eigenschaft im Ordner Posteingang.</span><span class="sxs-lookup"><span data-stu-id="12079-117">First, look for the property in the Inbox folder.</span></span> <span data-ttu-id="12079-118">Verwenden Sie [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md) , um einen Verweis auf die **Eintrags-ID** für den Ordner Posteingang abzurufen.</span><span class="sxs-lookup"><span data-stu-id="12079-118">Use [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md) to obtain a reference to the **EntryID** for the Inbox folder.</span></span> 
+1. <span data-ttu-id="cdbce-117">Suchen Sie zunächst nach der-Eigenschaft im Ordner Posteingang.</span><span class="sxs-lookup"><span data-stu-id="cdbce-117">First, look for the property in the Inbox folder.</span></span> <span data-ttu-id="cdbce-118">Verwenden Sie [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md) , um einen Verweis auf die **Eintrags** -Nr. für den Posteingangsordner abzurufen.</span><span class="sxs-lookup"><span data-stu-id="cdbce-118">Use [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md) to obtain a reference to the **EntryID** for the Inbox folder.</span></span> 
     
-2. <span data-ttu-id="12079-119">Wenn **IMsgStore::GetReceiveFolder** erfolgreich ist, verwenden Sie den Verweis auf die **EntryID** des Posteingang und [IMsgStore::OpenEntry](imsgstore-openentry.md) zum Öffnen des Posteingangs, und rufen Sie einen Verweis auf ein Objekt **IMAPIFolder** .</span><span class="sxs-lookup"><span data-stu-id="12079-119">If **IMsgStore::GetReceiveFolder** is successful, then use the reference to the **EntryID** of the Inbox and [IMsgStore::OpenEntry](imsgstore-openentry.md) to open the Inbox and obtain a reference to an **IMAPIFolder** object.</span></span> 
+2. <span data-ttu-id="cdbce-119">Wenn **IMsgStore:: GetReceiveFolder** erfolgreich ist, verwenden Sie den Verweis auf die **Eintrags** -und [IMsgStore:: OpenEntry](imsgstore-openentry.md) , um den Posteingang zu öffnen und einen Verweis auf ein **IMAPIFolder** -Objekt abzurufen.</span><span class="sxs-lookup"><span data-stu-id="cdbce-119">If **IMsgStore::GetReceiveFolder** is successful, then use the reference to the **EntryID** of the Inbox and [IMsgStore::OpenEntry](imsgstore-openentry.md) to open the Inbox and obtain a reference to an **IMAPIFolder** object.</span></span> 
     
-3. <span data-ttu-id="12079-120">Wenn **IMsgStore::OpenEntry** erfolgreich ist, müssen verwenden Sie den zurückgegebenen Verweis auf das **IMAPIFolder** -Objekt und [IMAPIProp::GetProps](imapiprop-getprops.md) dann, um die gewünschte Eigenschaft abzurufen.</span><span class="sxs-lookup"><span data-stu-id="12079-120">If **IMsgStore::OpenEntry** is successful, then use the returned reference to the **IMAPIFolder** object and [IMAPIProp::GetProps](imapiprop-getprops.md) to obtain the desired property.</span></span> 
+3. <span data-ttu-id="cdbce-120">Wenn **IMsgStore:: OpenEntry** erfolgreich ist, verwenden Sie den zurückgegebenen Verweis auf das **IMAPIFolder** -Objekt und [IMAPIProp::](imapiprop-getprops.md) GetProps, um die gewünschte Eigenschaft abzurufen.</span><span class="sxs-lookup"><span data-stu-id="cdbce-120">If **IMsgStore::OpenEntry** is successful, then use the returned reference to the **IMAPIFolder** object and [IMAPIProp::GetProps](imapiprop-getprops.md) to obtain the desired property.</span></span> 
     
-4. <span data-ttu-id="12079-121">Wenn Schritt 1, 2 oder 3 fehlschlägt, suchen Sie nach der-Eigenschaft im Stammordner gespeichert.</span><span class="sxs-lookup"><span data-stu-id="12079-121">If Step 1, 2, or 3 fails, look for the property in the root folder.</span></span> <span data-ttu-id="12079-122">Verwenden Sie hierzu **IMsgStore::OpenEntry**, Angeben von NULL für die **LpEntryID**, um den Stammordner des Nachrichtenspeichers öffnen, und rufen Sie einen Verweis auf das **IMAPIFolder** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="12079-122">To do that, use **IMsgStore::OpenEntry**, specifying NULL for **lpEntryID**, to open the root folder of the message store and obtain a reference to the **IMAPIFolder** object.</span></span> 
+4. <span data-ttu-id="cdbce-121">Wenn Schritt 1, 2 oder 3 fehlschlägt, suchen Sie nach der Eigenschaft im Stammordner.</span><span class="sxs-lookup"><span data-stu-id="cdbce-121">If Step 1, 2, or 3 fails, look for the property in the root folder.</span></span> <span data-ttu-id="cdbce-122">Zu diesem Zweck verwenden Sie **IMsgStore:: OpenEntry**, angeben von NULL für **lpEntryID**, um den Stammordner des Nachrichtenspeichers zu öffnen und einen Verweis auf das **IMAPIFolder** -Objekt abzurufen.</span><span class="sxs-lookup"><span data-stu-id="cdbce-122">To do that, use **IMsgStore::OpenEntry**, specifying NULL for **lpEntryID**, to open the root folder of the message store and obtain a reference to the **IMAPIFolder** object.</span></span> 
     
-5. <span data-ttu-id="12079-123">Wenn Stammordner öffnen erfolgreich ist, müssen verwenden Sie den zurückgegebenen Verweis auf das **IMAPIFolder** -Objekt und **IMAPIProp::GetProps** dann, um die gewünschte Eigenschaft abzurufen.</span><span class="sxs-lookup"><span data-stu-id="12079-123">If opening the root folder is successful, then use the returned reference to the **IMAPIFolder** object and **IMAPIProp::GetProps** to obtain the desired property.</span></span> 
+5. <span data-ttu-id="cdbce-123">Wenn das Öffnen des Stammordners erfolgreich ist, verwenden Sie den zurückgegebenen Verweis auf das **IMAPIFolder** -Objekt und **IMAPIProp::** GetProps, um die gewünschte Eigenschaft abzurufen.</span><span class="sxs-lookup"><span data-stu-id="cdbce-123">If opening the root folder is successful, then use the returned reference to the **IMAPIFolder** object and **IMAPIProp::GetProps** to obtain the desired property.</span></span> 
     
-## <a name="related-resources"></a><span data-ttu-id="12079-124">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="12079-124">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="cdbce-124">Zugehörige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="cdbce-124">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="12079-125">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="12079-125">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="cdbce-125">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="cdbce-125">Protocol specifications</span></span>
 
-<span data-ttu-id="12079-126">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="12079-126">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="cdbce-126">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="cdbce-126">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="12079-127">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="12079-127">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="cdbce-127">Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.</span><span class="sxs-lookup"><span data-stu-id="cdbce-127">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="12079-128">[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="12079-128">[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="cdbce-128">[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="cdbce-128">[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="12079-129">Gibt die Eigenschaften und Operationen für das Erstellen und Ordner mit Sonderfunktion in einem Postfach suchen.</span><span class="sxs-lookup"><span data-stu-id="12079-129">Specifies the properties and operations for creating and locating the special folders in a mailbox.</span></span>
+> <span data-ttu-id="cdbce-129">Gibt die Eigenschaften und Vorgänge zum Erstellen und suchen der speziellen Ordner in einem Postfach an.</span><span class="sxs-lookup"><span data-stu-id="cdbce-129">Specifies the properties and operations for creating and locating the special folders in a mailbox.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="12079-130">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="12079-130">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="cdbce-130">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="cdbce-130">Header files</span></span>
 
-<span data-ttu-id="12079-131">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="12079-131">Mapidefs.h</span></span>
+<span data-ttu-id="cdbce-131">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="cdbce-131">Mapidefs.h</span></span>
   
-> <span data-ttu-id="12079-132">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="12079-132">Provides data type definitions.</span></span>
+> <span data-ttu-id="cdbce-132">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="cdbce-132">Provides data type definitions.</span></span>
     
-<span data-ttu-id="12079-133">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="12079-133">Mapitags.h</span></span>
+<span data-ttu-id="cdbce-133">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="cdbce-133">Mapitags.h</span></span>
   
-> <span data-ttu-id="12079-134">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="12079-134">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="cdbce-134">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="cdbce-134">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="12079-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="12079-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cdbce-135">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cdbce-135">See also</span></span>
 
 
 
-[<span data-ttu-id="12079-136">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="12079-136">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="cdbce-136">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="cdbce-136">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="12079-137">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="12079-137">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="cdbce-137">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="cdbce-137">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="12079-138">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="12079-138">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="cdbce-138">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="cdbce-138">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="12079-139">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="12079-139">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="cdbce-139">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="cdbce-139">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
