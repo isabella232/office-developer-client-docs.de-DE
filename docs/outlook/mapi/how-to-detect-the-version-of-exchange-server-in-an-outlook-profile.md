@@ -1,27 +1,27 @@
 ---
-title: Erkennen von der Version von Exchange Server in ein Outlook-Profil
+title: Ermitteln der Version des Exchange-Servers in einem Outlook-Profil
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e2d8d8a9-7e8f-9cf0-56a8-d8a6281ad589
-description: 'Zuletzt geändert: 03 Juli 2012'
-ms.openlocfilehash: b6c1482554cfb1e756266eb31f992b81bc34bb51
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 03 Juli, 2012'
+ms.openlocfilehash: c6aaac128e1a3e1a8d77d3fa8b6c50a335348b71
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345542"
 ---
-# <a name="detect-the-version-of-exchange-server-in-an-outlook-profile"></a>Erkennen von der Version von Exchange Server in ein Outlook-Profil
+# <a name="detect-the-version-of-exchange-server-in-an-outlook-profile"></a>Ermitteln der Version des Exchange-Servers in einem Outlook-Profil
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie Sie verwenden die **[PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** -Eigenschaft und **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** -Eigenschaft, um Informationen zur Version von Microsoft Exchange Server zu erhalten, das aktive Konto ist mit verbunden ist. 
+Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die **[PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** -Eigenschaft und die **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** -Eigenschaft verwendet werden, um Versionsinformationen des Microsoft Exchange-Servers abzurufen, der das aktive Konto ist. verbunden mit. 
   
-Die `GetProfileServiceVersion` -Funktion im Codebeispiel nimmt ein Profil als Eingabeparameter. Je nachdem, ob die **PR_PROFILE_SERVER_VERSION** -Eigenschaft und die **PR_PROFILE_SERVER_FULL_VERSION** -Eigenschaft im angegebenen Profil vorhanden sind die Funktion ruft jede Eigenschaft ab und gibt die entsprechende Versionsinformationen als Ausgabe zurück Parameter. 
+Die `GetProfileServiceVersion` Funktion im Codebeispiel akzeptiert ein Profil als Eingabeparameter. Je nachdem, ob die **PR_PROFILE_SERVER_VERSION** -Eigenschaft und die **PR_PROFILE_SERVER_FULL_VERSION** -Eigenschaft im angegebenen Profil vorhanden sind, ruft die Funktion jede Eigenschaft ab und gibt die entsprechenden Versionsinformationen als Ausgabe zurück. Parameter. 
   
-`GetProfileServiceVersion`Ruft zunächst die Funktion **["MAPIAdminProfiles"](mapiadminprofiles.md)** hinzu, um ein Profil Administration-Objekt zu erstellen. Anschließend wird das Profil Administration-Objekt aufrufen, **[IProfAdmin::AdminServices](iprofadmin-adminservices.md)** , um eine Nachricht Service Administration-Objekt zu erhalten. Message Service Administration-Objekts verwenden, es ruft **[IMsgServiceAdmin::OpenProfileSection](imsgserviceadmin-openprofilesection.md)** um einen Abschnitt des aktuellen Profils zu erhalten, und anschließend **[HrGetOneProp](hrgetoneprop.md)** überprüft, ob jedes der beiden Eigenschaften in diesem Abschnitt der vorhanden ist, um die das Profil und gegebenenfalls die Versionsinformationen in die entsprechenden Ausgabeparameter festgelegt. 
+`GetProfileServiceVersion`Ruft zunächst die **[MAPIAdminProfiles](mapiadminprofiles.md)** -Funktion auf, um ein Profilverwaltungsobjekt zu erstellen. Anschließend wird mithilfe des Profil Verwaltungsobjekts **[IProfAdmin:: AdminServices](iprofadmin-adminservices.md)** aufgerufen, um ein Nachrichtendienst-Verwaltungsobjekt abzurufen. Mithilfe des Nachrichtendienst-Verwaltungsobjekts ruft es **[IMsgServiceAdmin:: OpenProfileSection](imsgserviceadmin-openprofilesection.md)** auf, um einen Abschnitt des aktuellen Profils abzurufen, und ruft dann **[HrGetOneProp](hrgetoneprop.md)** auf, um zu überprüfen, ob jede der beiden Eigenschaften in diesem Abschnitt des Profile, und wenn ja, werden die Versionsinformationen in den entsprechenden Ausgabeparametern festgelegt. 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

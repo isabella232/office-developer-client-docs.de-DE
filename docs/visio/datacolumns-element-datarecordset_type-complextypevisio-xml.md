@@ -1,5 +1,5 @@
 ---
-title: DataColumns-Element (DataRecordSet_Type ComplexType) ("Visio XML")
+title: DataColumns-Element (DataRecordSet_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ localization_priority: Normal
 ms.assetid: 34e25349-d0fa-b3a0-425b-778184e9f58f
 description: Enthält alle DataColumn-Elemente in einem Datenrecordset.
 ms.openlocfilehash: a7a0a8faefdb965384e435ee3a9b059a3acbc3f0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345248"
 ---
-# <a name="datacolumns-element-datarecordsettype-complextype-visio-xml"></a>DataColumns-Element (DataRecordSet_Type ComplexType) ("Visio XML")
+# <a name="datacolumns-element-datarecordsettype-complextype-visio-xml"></a>DataColumns-Element (DataRecordSet_Type complexType) (' Visio XML ')
 
 Enthält alle **DataColumn** -Elemente in einem Datenrecordset. 
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Recordsets.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Recordsets. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält alle **DataColumn** -Elemente in einem Datenrecordset.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,13 +48,13 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[DataColumn](datacolumn-element-datacolumns_type-complextypevisio-xml.md) <br/> |[DataColumn_Type](datacolumn_type-complextypevisio-xml.md) <br/> |Definiert, wie eine Datenspalte im Fenster **Externe Daten** in der Visio-Benutzeroberfläche angezeigt und berechtigt ist die Daten in der Spalte Datentyp zu definieren und die Formatierung.  <br/> |
+|[DataColumn](datacolumn-element-datacolumns_type-complextypevisio-xml.md) <br/> |[DataColumn_Type](datacolumn_type-complextypevisio-xml.md) <br/> |Definiert, wie eine Datenspalte im Fenster **externe Daten** auf der Visio-Benutzeroberfläche angezeigt wird, und qualifiziert die Daten in der Spalte durch Definieren des Datentyps und der Formatierung.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|SortAsc  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Die Spalte, auf dem die Daten sortiert werden soll.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
-|SortColumn  <br/> |XSD: String  <br/> |Optional  <br/> |An, ob die Spalte **SortColumn** in aufsteigender (1) oder absteigender Reihenfolge (0) sortiert.  <br/> |Werte des Typs xsd: String.  <br/> |
+|SortAsc  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Die Spalte, in der die Daten sortiert werden sollen.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|SortColumn  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt an, ob die **SortColumn** -Spalte in aufsteigend (1) oder absteigend (0) sortiert werden soll.  <br/> |Werte des XSD: String-Typs.  <br/> |
    
 

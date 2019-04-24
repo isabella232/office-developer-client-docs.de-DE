@@ -11,37 +11,37 @@ api_name:
 api_type:
 - COM
 ms.assetid: a4b03a66-cf6d-cd20-f1df-b247d3ee87aa
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d17de9cc11bd791c75b83093a0431c138fd606d6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: da186e6804fc3d3c820551fee66519a2ff76f0db
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351387"
 ---
 # <a name="ifoldersupport--iunknown"></a>IFolderSupport : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zur Unterstützung für einen Ordner für die Freigabe.
+Enthält Informationen zur Unterstützung eines Ordners für die Freigabe.
   
 |||
 |:-----|:-----|
-|Bereitgestellt von:  <br/> |Nachricht Speicheranbieter  <br/> |
+|Bereitgestellt von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IFolderSupport  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|**[GetSupportMask](ifoldersupport-getsupportmask.md)** <br/> |Ruft Informationen über die Unterstützung für einen Ordner für die Freigabe.  <br/> |
+|**[Getsupportmask aufrufen](ifoldersupport-getsupportmask.md)** <br/> |Ruft Informationen über die Unterstützung eines Ordners für die Freigabe ab.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Im Allgemeinen erfordert Microsoft Office Outlook MAPI-Speicheranbieter diese Schnittstelle implementieren, wenn der Anbieter einen Ordner freigeben möchte. Die Ausnahme ist der Exchange-Server-Speicher-Anbieter, der Ordner freigeben kann, ohne dass diese Schnittstelle implementiert.
+Im Allgemeinen erfordert Microsoft Office Outlook einen MAPI-Speicheranbieter zum Implementieren dieser Schnittstelle, wenn der Anbieter einen Ordner freigeben möchte. Die Ausnahme ist der Exchange Server-Speicheranbieter, der Ordner freigeben kann, ohne diese Schnittstelle zu implementieren.
   
-Ein Client kann ein **[IMAPIFolder](imapifolderimapicontainer.md)** **IFolderSupport**Abfragen. Wenn dies erfolgreich ist, rufen Sie **IFolderSupport::GetSupportMask** , und prüfen Sie, ob das Bit **FS_SUPPORTS_SHARING** festgelegt werden soll. 
+Ein Client kann eine **[IMAPIFolder](imapifolderimapicontainer.md)** für **IFolderSupport**Abfragen. Wenn dies erfolgreich ist, rufen Sie **IFolderSupport:: getsupportmask aufrufen** auf, und überprüfen Sie, ob das **FS_SUPPORTS_SHARING** -Bit festgelegt werden soll. 
   
 

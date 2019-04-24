@@ -1,5 +1,5 @@
 ---
-title: MAPI-Dienstanbieter-Beispiel
+title: Beispiele für MAPI-Dienstanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,37 +8,37 @@ api_type:
 - COM
 ms.assetid: 953c97ef-bc38-4e30-9906-b16373cd33c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: de0d2d7c0b03f7002d07e6703d2f7854b5c6b64c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a816a45344ef1a95ff3e59822c5845dd6d0693f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346669"
 ---
-# <a name="mapi-service-provider-samples"></a>MAPI-Dienstanbieter-Beispiel
+# <a name="mapi-service-provider-samples"></a>Beispiele für MAPI-Dienstanbieter
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Dieser Abschnitt enthält Codebeispiele für drei MAPI-Dienstanbieter:
   
 - [Herunterladen der Outlook-MAPI-Beispiele](downloading-the-outlook-mapi-samples.md)
     
-    In diesem Thema wird beschrieben, wie die Beispiele herunterladen.
+    In diesem Thema wird beschrieben, wie Sie die Beispiele herunterladen.
     
 - [Address Book Anbieter Sample](address-book-provider-sample.md)
     
-    In diesem Beispiel unterstützt einen einzelnen schreibgeschützten Container für Anzeigenamen und e-Mail-Adressen, die aus einer flachen Binärdatei gelesen werden.
+    In diesem Beispiel wird ein einzelner schreibgeschützter Container für Anzeigenamen und e-Mail-Adressen unterstützt, die aus einer Flatfile-Binärdatei gelesen werden.
     
 - [Beispiel f�r einen Nachrichtenspeicher](message-store-provider-sample.md)
     
-    In diesem Beispiel verwendet die Verzeichnisse als Ordnern und OLE 2.0-Dokumentdateien als Nachrichten. Im Beispiel werden alle erforderlichen Features für einen Standard-Nachrichtenspeicher unterstützt.
+    In diesem Beispiel werden Verzeichnisse als Ordner und OLE 2,0-Dokumentdateien als Nachrichten verwendet. Das Beispiel unterstützt alle erforderlichen Features für einen Standardnachrichtenspeicher.
     
 - [Beispiel f�r einen Transport](transport-provider-sample.md)
     
-    In diesem Beispiel werden Dateien und Verzeichnisse senden und Empfangen von Nachrichten verwendet.
+    In diesem Beispiel werden Dateien und Verzeichnisse zum Senden und empfangen von Nachrichten verwendet.
     
-Um eine der folgenden Beispiele in der Windows 7, Windows Vista, Windows Server 2008, Windows XP oder Windows Server 2003-Betriebssysteme ausführen, müssen Sie zuerst das MAPI-Runtime-System einrichten. Weitere Informationen finden Sie unter [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md).
+Um diese Beispiele auf den Betriebssystemen Windows 7, Windows Vista, Windows Server 2008, Windows XP oder Windows Server 2003 ausführen zu können, müssen Sie zunächst das MAPI-Laufzeitsystem einrichten. Weitere Informationen finden Sie unter [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md).
   
 

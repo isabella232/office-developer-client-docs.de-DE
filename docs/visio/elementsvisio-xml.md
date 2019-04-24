@@ -1,22 +1,22 @@
 ---
-title: Elemente ("Visio XML")
+title: Elemente (' Visio XML ')
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: cffc4005-e260-38ab-7142-47f949cc7494
-description: In diesem Thema werden die Elemente in der XML-Dateiformatschema in Visio 2013.
-ms.openlocfilehash: 1bddf5191a726217db58dd2e064739e885b71232
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Thema werden die Elemente im XML-Schema des Visio 2013-Dateiformats aufgelistet.
+ms.openlocfilehash: 19dc710c9a76938f7ed02dec9b2e8e3a7c48f5b6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345640"
 ---
-# <a name="elements-visio-xml"></a>Elemente ("Visio XML")
+# <a name="elements-visio-xml"></a>Elemente (' Visio XML ')
 
-In diesem Thema werden die Elemente in der XML-Dateiformatschema in Visio 2013.
+In diesem Thema werden die Elemente im XML-Schema des Visio 2013-Dateiformats aufgelistet.
   
 - [AttachedToolbars-Element](attachedtoolbars-element-documentsettings_type-complextypevisio-xml.md)
     
@@ -28,13 +28,13 @@ In diesem Thema werden die Elemente in der XML-Dateiformatschema in Visio 2013.
     
 - [Zellenelement](cell-elementvisio-xml.md)
     
-- [Zellenelement (Aktions-Tag-Abschnitt)](cell-element-action-tag-sectionvisio-xml.md)
+- [Cell-Element (Action Tag section)](cell-element-action-tag-sectionvisio-xml.md)
     
 - [Zellenelement (Aktionenzeile)](cell-element-actions-rowvisio-xml.md)
     
 - [Zellenelement (ArcTo-Zeile)](cell-element-arcto-rowvisio-xml.md)
     
-- [Zellenelement (Zeichenabschnitt)](cell-element-character-sectionvisio-xml.md)
+- [Cell-Element (Abschnitt "Character")](cell-element-character-sectionvisio-xml.md)
     
 - [Zellenelement (Verbindungszeile)](cell-element-connection-rowvisio-xml.md)
     
@@ -44,19 +44,19 @@ In diesem Thema werden die Elemente in der XML-Dateiformatschema in Visio 2013.
     
 - [Zellenelement (EllipticalArcTo-Zeile)](cell-element-ellipticalarcto-rowvisio-xml.md)
     
-- [Zellenelement (Feldabschnitt)](cell-element-field-sectionvisio-xml.md)
+- [Cell-Element (Field section)](cell-element-field-sectionvisio-xml.md)
     
-- [Zellenelement (Farbverlaufabschnitt)](cell-element-fill-gradient-sectionvisio-xml.md)
+- [Cell-Element (Farbverlaufs Abschnitt)](cell-element-fill-gradient-sectionvisio-xml.md)
     
-- [Zellenelement (Geometrieabschnitt)](cell-element-geometry-sectionvisio-xml.md)
+- [Cell-Element (Abschnitt "Geometry")](cell-element-geometry-sectionvisio-xml.md)
     
 - [Zellenelement (Linkzeile)](cell-element-hyperlink-rowvisio-xml.md)
     
 - [Zellenelement (InfiniteLine-Zeile)](cell-element-infiniteline-rowvisio-xml.md)
     
-- [Zellenelement (Ebenenabschnitt)](cell-element-layer-sectionvisio-xml.md)
+- [Cell-Element (Layer-Abschnitt)](cell-element-layer-sectionvisio-xml.md)
     
-- [Zellenelement (Linienverlaufabschnitt)](cell-element-line-gradient-sectionvisio-xml.md)
+- [Zellenelement (Abschnitt "Linienverlauf")](cell-element-line-gradient-sectionvisio-xml.md)
     
 - [Zellenelement (LineTo-Zeile)](cell-element-lineto-rowvisio-xml.md)
     
@@ -64,7 +64,7 @@ In diesem Thema werden die Elemente in der XML-Dateiformatschema in Visio 2013.
     
 - [Zellenelement (NURBSTo-Zeile)](cell-element-nurbsto-rowvisio-xml.md)
     
-- [Zellenelement (Abschnitt-Abschnitt)](cell-element-paragraph-sectionvisio-xml.md)
+- [Cell-Element (Abschnitt "Paragraph")](cell-element-paragraph-sectionvisio-xml.md)
     
 - [Zellenelement (PolyLineTo-Zeile)](cell-element-polylineto-rowvisio-xml.md)
     
@@ -78,17 +78,17 @@ In diesem Thema werden die Elemente in der XML-Dateiformatschema in Visio 2013.
     
 - [Zellenelement (RelQuadBezTo-Zeile)](cell-element-relquadbezto-rowvisio-xml.md)
     
-- [Zellenelement (Scratch-Abschnitt)](cell-element-scratch-sectionvisio-xml.md)
+- [Cell-Element (Abschnitt "Scratch")](cell-element-scratch-sectionvisio-xml.md)
     
-- [Zellenelement (Shape-Datenabschnitt)](cell-element-shape-data-sectionvisio-xml.md)
+- [Cell-Element (Shape Data Section)](cell-element-shape-data-sectionvisio-xml.md)
     
 - [Zellenelement (SplineKnot-Zeile)](cell-element-splineknot-rowvisio-xml.md)
     
 - [Zellenelement (SplineStart-Zeile)](cell-element-splinestart-rowvisio-xml.md)
     
-- [Zellenelement (Tabs-Abschnitt)](cell-element-tabs-sectionvisio-xml.md)
+- [Cell-Element (Registerkarten Abschnitt)](cell-element-tabs-sectionvisio-xml.md)
     
-- [Zellenelement (Abschnitt zu benutzerdefinierten Zellen)](cell-element-user-defined-cells-sectionvisio-xml.md)
+- [Cell-Element (Abschnitt "User-Defined Cells")](cell-element-user-defined-cells-sectionvisio-xml.md)
     
 - [ColorEntry-Element](colorentry-element-colors_type-complextypevisio-xml.md)
     
@@ -234,37 +234,37 @@ In diesem Thema werden die Elemente in der XML-Dateiformatschema in Visio 2013.
     
 - [Rel-Element (Solution_Type complexType)](rel-element-solution_type-complextypevisio-xml.md)
     
-- [Zeilenelement (Aktionenzeile)](row-element-actions-sectionvisio-xml.md)
+- [Row-Element (Actions section)](row-element-actions-sectionvisio-xml.md)
     
-- [Zeilenelement (Aktions-Tag-Abschnitt)](row-element-action-tag-sectionvisio-xml.md)
+- [Row-Element (Action Tag section)](row-element-action-tag-sectionvisio-xml.md)
     
-- [Zeilenelement (Zeichenabschnitt)](row-element-character-sectionvisio-xml.md)
+- [Zeilenelement (Abschnitt "Character")](row-element-character-sectionvisio-xml.md)
     
-- [Zeilenelement (Verbindungszeile)](row-element-connection-sectionvisio-xml.md)
+- [Row-Element (Connection-Abschnitt)](row-element-connection-sectionvisio-xml.md)
     
-- [Zeilenelement (Steuerelementzeile)](row-element-controls-sectionvisio-xml.md)
+- [Row-Element (Abschnitt "Controls")](row-element-controls-sectionvisio-xml.md)
     
-- [Zeilenelement (Feldabschnitt)](row-element-field-sectionvisio-xml.md)
+- [Row-Element (Field section)](row-element-field-sectionvisio-xml.md)
     
-- [Zeilenelement (Farbverlaufabschnitt)](row-element-fill-gradient-sectionvisio-xml.md)
+- [Row-Element (Abschnitt "Füllungs Gradient")](row-element-fill-gradient-sectionvisio-xml.md)
     
-- [Zeilenelement (Geometrieabschnitt)](row-element-geometry-sectionvisio-xml.md)
+- [Zeilenelement (Abschnitt "Geometry")](row-element-geometry-sectionvisio-xml.md)
     
-- [Zeilenelement (Linkabschnitt)](row-element-hyperlink-sectionvisio-xml.md)
+- [Row-Element (Hyperlink-Abschnitt)](row-element-hyperlink-sectionvisio-xml.md)
     
-- [Zeilenelement (Ebenenabschnitt)](row-element-layer-sectionvisio-xml.md)
+- [Row-Element (Layer-Abschnitt)](row-element-layer-sectionvisio-xml.md)
     
-- [Zeilenelement (Linienverlaufabschnitt)](row-element-line-gradient-sectionvisio-xml.md)
+- [Zeilenelement (Abschnitt "Linienverlauf")](row-element-line-gradient-sectionvisio-xml.md)
     
-- [Zeilenelement (Abschnitt-Abschnitt)](row-element-paragraph-sectionvisio-xml.md)
+- [Row-Element (Abschnitt "Paragraph")](row-element-paragraph-sectionvisio-xml.md)
     
-- [Zeilenelement (Scratch-Abschnitt)](row-element-scratch-sectionvisio-xml.md)
+- [Row-Element (Abschnitt "Scratch")](row-element-scratch-sectionvisio-xml.md)
     
-- [Zeilenelement (Shape-Datenabschnitt)](row-element-shape-data-sectionvisio-xml.md)
+- [Row-Element (Shape Data Section)](row-element-shape-data-sectionvisio-xml.md)
     
-- [Zeilenelement (Tabs-Abschnitt)](row-element-tabs-sectionvisio-xml.md)
+- [Zeilenelement (Abschnitt "Tabs")](row-element-tabs-sectionvisio-xml.md)
     
-- [Zeilenelement (Abschnitt zu benutzerdefinierten Zellen)](row-element-user-defined-cells-sectionvisio-xml.md)
+- [Row-Element (Abschnitt "User-Defined Cells")](row-element-user-defined-cells-sectionvisio-xml.md)
     
 - [RowKeyValue-Element](rowkeyvalue-element-primarykey_type-complextypevisio-xml.md)
     

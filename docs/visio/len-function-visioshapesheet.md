@@ -1,5 +1,5 @@
 ---
-title: LEN Function (VisioShapeSheet)
+title: LEN-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm60104
 localization_priority: Normal
 ms.assetid: e7a62a86-36bf-31d3-a33b-2444f72d60fe
-description: Gibt die Anzahl der Zeichen in einer Textzeichenfolge zurück.
-ms.openlocfilehash: 7cc3ffe46c3e47961a687557fc5b4c9aa3c94828
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die Anzahl von Zeichen in einer Textzeichenfolge zurück.
+ms.openlocfilehash: 5d0dd56014e1e9965359814fa4de35efd5f385ac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359372"
 ---
-# <a name="len-function-visioshapesheet"></a>LEN Function (VisioShapeSheet)
+# <a name="len-function-visioshapesheet"></a>LEN-Funktion (VisioShapeSheet)
 
-Gibt die Anzahl der Zeichen in einer Textzeichenfolge zurück.
+Gibt die Anzahl von Zeichen in einer Textzeichenfolge zurück.
   
 ## <a name="syntax"></a>Syntax
 
-LEN (** *Text* **) 
+LEN (* * *Text* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,9 +30,9 @@ LEN (** *Text* **)
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Zeichenfolge, deren Länge ermittelt werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="example"></a>Beispiel
 

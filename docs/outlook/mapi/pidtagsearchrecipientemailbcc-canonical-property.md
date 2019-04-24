@@ -1,5 +1,5 @@
 ---
-title: PidTagSearchRecipientEmailBcc (kanonische Eigenschaft)
+title: Kanonische Pidtagsearchrecipientemailbcc (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d9561d13-8d52-500c-5369-15a2cf5c92c3
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 5b0db4b3bc7903aae74fa7275d3e27e22d628514
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359157"
 ---
-# <a name="pidtagsearchrecipientemailbcc-canonical-property"></a>PidTagSearchRecipientEmailBcc (kanonische Eigenschaft)
+# <a name="pidtagsearchrecipientemailbcc-canonical-property"></a>Kanonische Pidtagsearchrecipientemailbcc (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Unicodezeichenfolge, die in der Liste der e-Mail-Adressen oder Anzeigenamen der Empfänger in der **BCC** -Zeile von nicht gesendeten Nachrichten im Store abgefragt wird. 
+Enthält eine Unicode-Zeichenfolge, die in der Liste der e-Mail-Adressen oder Anzeige Namen von Empfängern abgefragt wird, die in der **Bcc** -Zeile nicht gesendeter Nachrichten im Speicher adressiert sind. 
   
 ## 
 
@@ -29,37 +29,37 @@ Enthält eine Unicodezeichenfolge, die in der Liste der e-Mail-Adressen oder Anz
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_SEARCH_RECIP_EMAIL_BCC_W  <br/> |
 |Kennung:  <br/> |0x0EA8  <br/> |
-|Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Access:  <br/> |Suche  <br/> |
+|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
+|Access  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft ist nur relevant, die Nachrichten auf den Speicher, die nicht gesendet wurden, da Nachrichten, die gesendet oder empfangen wurde keine BCC-Informationen enthalten.
+Diese Eigenschaft ist nur für Nachrichten im Speicher relevant, die nicht gesendet wurden, da Nachrichten, die gesendet oder empfangen wurden, keine BCC-Informationen enthalten.
   
 > [!NOTE]
-> Diese MAPI-Einschränkung Tag verwendet, wenn die Suche nach e-Mail-Adressen oder Anzeigenamen, die die Nachricht als eine Blindkopie gesendet wird, möglicherweise nicht in der herunterladbaren Headerdatei definiert werden, die Sie besitzen. Mit dem folgenden Wert dem Code hinzufügen: >`#define PR_SEARCH_RECIP_EMAIL_BCC_W PROP_TAG(PT_UNICODE, 0x0EA8)`
+> Dieses MAPI-Einschränkungs, das bei der Suche nach e-Mail-Adressen oder Anzeigenamen verwendet wird, an die die Nachricht als Blind Carbon Copy gesendet wird, wird möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. Sie können Sie dem Code hinzufügen, indem Sie den folgenden Wert verwenden: >`#define PR_SEARCH_RECIP_EMAIL_BCC_W PROP_TAG(PT_UNICODE, 0x0EA8)`
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.
+> Enthält Verweise auf zugehörige Microsoft Exchange Server-Protokollspezifikationen.
     
 [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen für das Bearbeiten der Liste einer Suchkonfiguration-Ordner.
+> Gibt die Eigenschaften und Vorgänge zum Bearbeiten einer Suchordner Listen Konfiguration an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -71,5 +71,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

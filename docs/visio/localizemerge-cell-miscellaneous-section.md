@@ -9,36 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 734d4415-05dd-4c4d-763e-e035fa56dcec
 description: Gibt an, ob Shapes beim Kopieren zwischen Dokumenten lokalisiert werden.
-ms.openlocfilehash: 47593802e412c1871685f7218dd2a810bc2bc469
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ddd6041ec6531652deb38a0c16be2c741bac91a6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344576"
 ---
-# <a name="localizemerge-cell-miscellaneous-section"></a>LocalizeMerge Cell (Miscellaneous Section)
+# <a name="localizemerge-cell-miscellaneous-section"></a>Zelle "LocalizeMerge" (Abschnitt "Miscellaneous")
 
 Gibt an, ob Shapes beim Kopieren zwischen Dokumenten lokalisiert werden.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| WAHR  <br/> | Shapes werden in die Sprache des Zieldokuments lokalisiert.  <br/> |
-| FALSCH  <br/> | Ein Shape auf Grundlage der Sprache des Zieldokuments (Standard) nicht lokalisiert.  <br/> |
+| TRUE  <br/> | Shapes werden in die Sprache des Zieldokuments lokalisiert.  <br/> |
+| FALSE  <br/> | Ein Shape kann nicht basierend auf der Sprache des Zieldokuments lokalisiert werden (Standardeinstellung).  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LocalizeMerge aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LocalizeMerge aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LocalizeMerge  <br/> |
+| Zellenname:  <br/> | Zelle LocalizeMerge  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LocalizeMerge aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LocalizeMerge aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
-| Zellenindex:  <br/> |**visObjLocalizeMerge** <br/> |
+| Zeilenindex:  <br/> |**visObjLocalizeMerge** <br/> |
    
 

@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3f98d982-156d-43d7-8b0b-94d8c24debef
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 742f934e980a2b8627c4e50088a9c23166d1cf6d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 301be39b71c0f04799037fa069cfe18953e216de
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348825"
 ---
 # <a name="iabprovider--iunknown"></a>IABProvider : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Methode zum Anmelden auf ein Address Book Anbieter-Objekt und eine Methode, um ein Address Book Anbieter-Objekt ungültig.
+Stellt eine Methode zum Anmelden an einem Adressbuchanbieter-Objekt und eine Methode zum Auflösen eines Adressbuchanbieter-Objekts bereit.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Address Book-Anbieter-Objekten  <br/> |
-|Implementiert von:  <br/> |Von adressbuchanbietern implementierte  <br/> |
+|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Adressbuchanbieter-Objekte  <br/> |
+|Implementiert von:  <br/> |Adressbuchanbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IABProvider  <br/> |
 |Zeigertyp:  <br/> |LPABPROVIDER  <br/> |

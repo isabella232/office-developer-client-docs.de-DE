@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cce34aba-caae-51ee-992e-92a490b68ea5
 description: Sperrt den Anfangspunkt (AnfangX, AnfangY) eines 1D-Shapes an einer bestimmten Position.
-ms.openlocfilehash: c9b9a0e9b69de9b76d78ca7cebfb69116bd2fb72
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2e6c6284ff82a88677eb46bb13b8ab8afa986584
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359647"
 ---
-# <a name="lockbegin-cell-protection-section"></a>LockBegin Cell (Protection Section)
+# <a name="lockbegin-cell-protection-section"></a>Zelle "LockBegin" (Abschnitt "Protection")
 
 Sperrt den Anfangspunkt (AnfangX, AnfangY) eines 1D-Shapes an einer bestimmten Position.
   
@@ -25,15 +25,15 @@ Sperrt den Anfangspunkt (AnfangX, AnfangY) eines 1D-Shapes an einer bestimmten P
 | TRUE  <br/> | Anfangspunkt ist gesperrt.  <br/> |
 | FALSE  <br/> | Anfang ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockBegin aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockBegin aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockBegin  <br/> |
+| Zellenname:  <br/> | Zelle LockBegin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockBegin aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockBegin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

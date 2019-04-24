@@ -9,38 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: bfddb829-6e13-7d74-b9b9-2cb5c0937bae
 description: Bestimmt die Pfeilspitzengröße am Linienanfang.
-ms.openlocfilehash: b38e4a0685fce6d7f4aea2192ed123665eacf40a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9c1288ced747c4e16090013cc043b040f1fbb59c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346228"
 ---
-# <a name="beginarrowsize-cell-line-format-section"></a>BeginArrowSize Cell (Line Format Section)
+# <a name="beginarrowsize-cell-line-format-section"></a>Zelle "BeginArrowSize" (Abschnitt "Line Format")
 
 Bestimmt die Pfeilspitzengröße am Linienanfang.
   
 |**Wert**|**Size**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Sehr klein  <br/> |**visArrowSizeVerySmall** <br/> |
-| 1  <br/> | Klein  <br/> |**visArrowSizeSmall** <br/> |
+| 1  <br/> | KKleinste  <br/> |**visArrowSizeSmall** <br/> |
 | 2  <br/> | Mittel  <br/> |**visArrowSizeMedium** <br/> |
-| 3  <br/> | Groß  <br/> |**visArrowSizeLarge** <br/> |
+| 3  <br/> | Kgrösste  <br/> |**visArrowSizeLarge** <br/> |
 | 4  <br/> | Sehr groß  <br/> |**visArrowSizeVeryLarge** <br/> |
 | 5  <br/> | Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
-| 6  <br/> | Kolossal  <br/> |**visArrowSizeColossal** <br/> |
+| 6  <br/> | Kolossalen  <br/> |**visArrowSizeColossal** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
 Sie können die Pfeilspitzengröße auch im Dialogfeld **Linie** festlegen. 
   
-Wenn Sie einen Verweis auf die Zelle BeginArrowSize aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "beginArrowSe" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | BeginArrowSize  <br/> |
+| Zellenname:  <br/> | Zelle BeginArrowSize  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BeginArrowSize aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle beginArrowS nach Index aus einem Programm abrufen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4e7340d1-3cb9-4276-b83f-1c8f94acb909
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 990fe49d39a73c5bf80b9fdda96d2e5997869edf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 24ceb7b5358447de3a240756227b86224d2c354c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344478"
 ---
 # <a name="ssizerestriction"></a>SSizeRestriction
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Beschränkung der Größe der verwendet wird, um die Größe der Wert einer Eigenschaft zu testen. 
+Beschreibt eine Größenbeschränkung, die zum Testen der Größe eines Eigenschaftswerts verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SSizeRestriction
@@ -43,47 +43,47 @@ typedef struct _SSizeRestriction
 
 ## <a name="members"></a>Elemente
 
- **RelOp-Element**
+ **RelOp**
   
-> Relationale Operator, der in der Größenvergleich verwendet wird. Mögliche Werte sind wie folgt: 
+> Relationaler Operator, der im Größenvergleich verwendet wird. Folgende Werte sind möglich: 
     
 RELOP_GE 
   
-> Der Vergleich wird basierend auf der ersten Wert größer oder gleich vorgenommen.
+> Der Vergleich erfolgt basierend auf einem größer oder gleich dem ersten Wert.
     
 RELOP_GT 
   
-> Der Vergleich wird basierend auf einen höheren Wert für die erste vorgenommen.
+> Der Vergleich erfolgt basierend auf einem höheren ersten Wert.
     
 RELOP_LE 
   
-> Der Vergleich wird basierend auf dem ersten Wert kleiner oder gleich vorgenommen.
+> Der Vergleich erfolgt basierend auf einem niedrigeren oder gleichen ersten Wert.
     
 RELOP_LT 
   
-> Der Vergleich wird basierend auf einen kleineren Wert des ersten vorgenommen.
+> Der Vergleich erfolgt basierend auf einem niedrigeren ersten Wert.
     
 RELOP_NE 
   
-> Der Vergleich wird basierend auf Werten mit ungleicher vorgenommen.
+> Der Vergleich erfolgt basierend auf ungleich Werten.
     
 RELOP_RE 
   
-> Der Vergleich basierend auf wie Werte (reguläre Ausdrücke) erfolgt.
+> Der Vergleich basiert auf LIKE (Regular Expression)-Werten.
     
 RELOP_EQ 
   
-> Der Vergleich wird basierend auf gleich große Werte vorgenommen.
+> Der Vergleich erfolgt basierend auf gleichen Werten.
     
  **ulPropTag**
   
-> Eigenschafts-Tag, die zu überprüfenden Eigenschaft identifiziert.
+> Property-Tag, das die zu testende Eigenschaft identifiziert.
     
  **cb**
   
-> Anzahl der Bytes in der Eigenschaftswert.
+> Die Anzahl der Bytes im Eigenschaftswert.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
 Eine allgemeine Erläuterung der Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   

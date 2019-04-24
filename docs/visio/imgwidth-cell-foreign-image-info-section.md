@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b57fb962-0b3e-f2e5-3b88-3edf33e40496
 description: 'Definiert die Breite des Objektbilds innerhalb seines Rahmens. Die Standardformel lautet:'
-ms.openlocfilehash: 3aab65d27d426287060f7572dad15174acb93199
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9da5e06a7fbf6ae77a49fb0410aefb406e2afecb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344723"
 ---
-# <a name="imgwidth-cell-foreign-image-info-section"></a>ImgWidth Cell (Foreign Image Info Section)
+# <a name="imgwidth-cell-foreign-image-info-section"></a>Zelle "ImgWidth" (Abschnitt "Foreign Image Info")
 
 Definiert die Breite des Objektbilds innerhalb seines Rahmens. Die Standardformel lautet:
   
@@ -24,15 +24,15 @@ Definiert die Breite des Objektbilds innerhalb seines Rahmens. Die Standardforme
   
 Beim Zuschneiden des Objekts ändert sich der Faktor, mit dem die Breite multipliziert wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle ImgWidth aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ImgWidth aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ImgWidth  <br/> |
+| Zellenname:  <br/> | Zelle ImgWidth  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ImgWidth aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ImgWidth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

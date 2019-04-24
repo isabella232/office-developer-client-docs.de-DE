@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14c171ec-0aec-43ab-8be8-e6bc0ce28a58
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a524a7eb40c33d6de2f64cd5373c9a39a8a1e3df
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ac59aeb3d650c0fbeb5bcdb580e0401cbab58ee6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347810"
 ---
 # <a name="hrentryidfromsz"></a>HrEntryIDFromSz
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine Eintrags-ID aus der ASCII-Codierung neu. 
+Erstellt eine Eintrags-ID aus der ASCII-Codierung. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HRESULT HrEntryIDFromSz(
@@ -43,34 +43,34 @@ HRESULT HrEntryIDFromSz(
 
 ## <a name="parameters"></a>Parameter
 
- _su_
+ _SZ_
   
-> [in] Zeiger auf die ASCII-Zeichenfolge aus dem Eintrags-ID erstellt. 
+> in Zeiger auf die ASCII-Zeichenfolge, aus der ein Eintragsbezeichner erstellt werden soll. 
     
  _PCB_
   
-> [out] Zeiger auf die Größe des Eintrags-ID, die auf das durch den Parameter _Ppentry_ in Bytes. 
+> Out Zeiger auf die Größe der Eintrags-ID, auf die durch den _ppentry_ -Parameter verwiesen wird, in Bytes. 
     
  _ppentry_
   
-> [out] Zeiger auf einen Zeiger auf das zurückgegebene [ENTRYID](entryid.md) -Struktur, die neuen Eintrags-ID enthält. 
+> Out Zeiger auf einen Zeiger auf die zurück [](entryid.md) geGebene Eintrags-ID-Struktur, die den neuen Eintragsbezeichner enthält. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Erneutes Erstellen war erfolgreich.
+> Die Erholung war erfolgreich.
     
 MAPI_E_INVALID_ENTRYID
   
-> Die Eintrags-ID ist ungültig.
+> Die Eintrags-ID war ungültig.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktionen **HrEntryIDFromSz** und [HrSzFromEntryID](hrszfromentryid.md) bieten eine Konvertierung zwischen der Zeichenfolge und der binären Formate der Eintragsbezeichner. 
+Die **HrEntryIDFromSz** -und [HrSzFromEntryID](hrszfromentryid.md) -Funktionen ermöglichen die Konvertierung zwischen den Zeichenfolgen-und Binärformaten der Eintrags-IDs. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **HrEntryIDFromSz** -Funktion weist Speicher für die Verwendung der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) ASCII-Zeichenfolge. 
+Die **HrEntryIDFromSz** -Funktion reserviert Speicher für die ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion. 
   
 

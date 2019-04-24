@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: bfea4ef4-1b30-eb22-215d-3b9b73098da9
 description: Bestimmt, ob die Anwendung Shapes an einem internen unsichtbaren Zeichenblattgitter ausrichtet, wenn Sie das Layout im Dialogfeld Layout konfigurieren festlegen. (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie dann auf Weitere Layoutoptionen.)
-ms.openlocfilehash: 3371767343132219ebc38134b93afd1da46c7a45
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11299ca7c9b0ea050542baf97e2cab3a27fa52ba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345556"
 ---
-# <a name="enablegrid-cell-page-layout-section"></a>EnableGrid Cell (Page Layout Section)
+# <a name="enablegrid-cell-page-layout-section"></a>Zelle "EnableGrid" (Abschnitt "Page Layout")
 
 Bestimmt, ob die Anwendung Shapes an einem internen unsichtbaren Zeichenblattgitter ausrichtet, wenn Sie das Layout im Dialogfeld **Layout konfigurieren** festlegen. (Klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu anordnen**, und klicken Sie dann auf **Weitere Layoutoptionen**.)
   
@@ -31,13 +31,13 @@ Sie erstellen dieses Zeichenblattgitter im Dialogfeld **Abstände für Layout un
   
 Wenn Sie dieses Feature aktivieren, richtet die Anwendung den Zentralpunkt jedes platzierbaren Shapes an der Mitte eines Blocks auf dem internen Seitenraster aus. 
   
-Wenn Sie einen Verweis auf die Zelle EnableGrid aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle EnableGrid aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |EnableGrid  <br/> |
+|Zellenname:  <br/> |Zelle EnableGrid  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EnableGrid aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle EnableGrid aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

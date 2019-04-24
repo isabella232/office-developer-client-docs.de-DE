@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce0be0d5-4962-4d53-828f-c93d1c5aae32
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4cbaf08c58a98be45ad33aebb8f230fb53c234f3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c13b741b1e0ddfd964b9325d736a26dac4bff2af
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346298"
 ---
 # <a name="rowlist"></a>ROWLIST
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [ROWENTRY](rowentry.md) -Strukturen, darstellen, Zeilen und die Vorgänge, die für die Zeilen in einer Tabelle über die Schnittstelle [IExchangeModifyTable](iexchangemodifytableiunknown.md) ausgeführt werden. 
+Enthält ein Array von [ROWENTRY](rowentry.md) -Strukturen, die Zeilen und die Vorgänge darstellen, die für diese Zeilen in einer Tabelle über die [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle ausgeführt werden. 
   
 ```cpp
 typedef struct
@@ -38,21 +38,21 @@ typedef struct
 
 ## <a name="members"></a>Elemente
 
- **cEntries**
+ **Zentriert**
   
-> Anzahl der Einträge im Array vom **aEntries** Member angegeben. 
+> Die Anzahl der Einträge im vom **aEntries** -Element angegebenen Array. 
     
  **aEntries [MAPI_DIM]**
   
-> Array von **ROWENTRY** -Strukturen, enthält die Zeilen und die Vorgänge, die für die Zeilen in der Tabelle ausgeführt werden. 
+> Array von **ROWENTRY** -Strukturen, die die Zeilen und Vorgänge enthalten, die für diese Zeilen in der Tabelle ausgeführt werden. 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |Verwendet, um eine Liste der ausgewählten Regeln für nachfolgende **ModifyTable** Aktionen zu erstellen.  <br/> |
+|RulesDlg. cpp  <br/> |CRulesDlg:: getSelectedItems  <br/> |Wird zum Erstellen einer Liste ausgewählter Regeln für nachfolg **** Ende modifyable-Aktionen verwendet.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

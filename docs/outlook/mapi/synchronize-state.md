@@ -1,45 +1,45 @@
 ---
-title: Status „Synchronisieren“
+title: Status Synchronisieren
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270ff414-514c-b1fc-db48-761bf6de8867
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d9f2a11a9ec1691863b476fed02eff1831a69207
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7abbf049a848d417f640528e5030e37a954413e5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349511"
 ---
-# <a name="synchronize-state"></a>Status „Synchronisieren“
+# <a name="synchronize-state"></a>Status Synchronisieren
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was geschieht, während die Synchronize-Zustand des Computers Zustand Replikation. 
+ In diesem Thema wird beschrieben, was während des Synchronisierungsstatus des Replikationsstatus Computers passiert. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|State-ID:  <br/> |**LR_SYNC** <br/> |
-|Verwandte-Datenstruktur:  <br/> |**[SYNC](sync.md)** <br/> |
-|Aus diesem Zustand:  <br/> |[Leerlauf](idle-state.md) <br/> |
-|Diesen Status:  <br/> |[Hierarchie Downloadstatus](download-hierarchy-state.md), [Synchronisieren Inhalt Zustand](synchronize-contents-state.md), [Hierarchie Zustand hochladen](upload-hierarchy-state.md)oder Leerlauf  <br/> |
+|Status-ID:  <br/> |**LR_SYNC** <br/> |
+|Zugehörige Datenstruktur:  <br/> |**[SYNC](sync.md)** <br/> |
+|Aus folgendem Zustand:  <br/> |[Zustand „Leerlauf“](idle-state.md) <br/> |
+|Zu folgendem Status:  <br/> |[Download-Hierarchie Status](download-hierarchy-state.md), [Inhaltsstatus synchronisieren](synchronize-contents-state.md), Status der [Upload-Hierarchie](upload-hierarchy-state.md)oder Leerlaufstatus  <br/> |
    
 > [!NOTE]
-> Das Zustandsautomat Replikation ist ein deterministisch Zustandsautomat. Ein Client, der von einem Zustand zu einem anderen Unternehmen muss schließlich auf die frühere letztere zurückgeben. 
+> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status wird die Synchronisierung initiiert. Ein lokales Speichers Übergang kann ein Upload oder eine Downloadstatus von hier aus. Beispielsweise ein lokales Speichers kann auf den Upload Hierarchie Status zu eine Ordnerhierarchie auf den Server hochzuladen verschieben oder sie können eine vollständige Synchronisierung durchführen, indem ersten Hochladen der Hierarchie und klicken Sie dann die Hierarchie vom Server herunterladen.
+Dieser Status initiiert die Synchronisierung. Ein lokaler Speicher kann von hier zu einem Upload-oder Downloadstatus wechseln. Beispielsweise kann ein lokaler Speicher zum Upload-Hierarchie Status wechseln, um eine Ordnerhierarchie auf den Server hochzuladen, oder eine vollständige Synchronisierung durchführen, indem Sie zunächst die Hierarchie hochladen und dann die Hierarchie vom Server herunterladen.
   
-Während dieser Zustand initialisiert Outlook die zugeordnete **SYNC** -Datenstruktur durch den Pfad zu dem lokalen Speicher, damit Outlook Änderungen bei der anderen Status sieht. 
+Während dieses Status initialisiert Outlook die zugehörige **Synchronisierungs** Datenstruktur mit dem Pfad zum lokalen Speicher, sodass Outlook während anderer Statusänderungen sieht. 
   
-Der Client legt die [in] Mitglieder der **SYNCHRONISIERUNG**, die Outlook mitteilt, wie anderen Zustände behandelt werden sollen. Beispielsweise kann der Client *UlFlags* auf **UPS_UPLOAD_ONLY** und **UPS_THESE_FOLDERS** festgelegt und *Pel* und eine Liste der Ordner an, Outlook, dass nur diese Ordner Eintragsbezeichner wird hochgeladen werden. Wenn dieser Status beendet wird, wird der lokale Speicher in den Leerlauf zurückgesetzt. 
+Der Client legt die [in]-Mitglieder der **Synchronisierung**fest, die Outlook anweist, wie andere Zustände behandelt werden. Der Client kann beispielsweise *ulFlags* auf **UPS_UPLOAD_ONLY** und **UPS_THESE_FOLDERS** und *PEL* auf eine Liste von Eintrags Bezeichnern der Ordner festlegen, um Outlook mitzuteilen, dass nur diese Ordner hochgeladen werden. Wenn dieser Status endet, wird der lokale Speicher in den Leerlauf zurückgesetzt. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -51,5 +51,5 @@ Der Client legt die [in] Mitglieder der **SYNCHRONISIERUNG**, die Outlook mittei
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: e86ca032-d973-4b79-976e-5240ab38a0da
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 174da93e7682246565b12c4fc4ffa6d1a9de065c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 07a1a0a1953d136da534fbdc6339d326c877bebf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344541"
 ---
 # <a name="snotrestriction"></a>SNotRestriction
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine **keine** Einschränkung, die mit der eine logische **NOT** -Operation, die eine Einschränkung angewendet. 
+Beschreibt eine **nicht** -Einschränkung, die verwendet wird, um eine logische **Not** -Operation auf eine Einschränkung anzuwenden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SNotRestriction
@@ -48,11 +48,11 @@ typedef struct _SNotRestriction
     
  **lpRes**
   
-> Zeiger auf eine [SRestriction](srestriction.md) -Struktur, beschreibt die Einschränkung wieder in den logischen Operator **NOT** aufgenommen werden. 
+> Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Einschränkung beschreibt, die dem logischen **Not** -Operator hinzugefügt werden soll. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zur Struktur **SNotRestriction** finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Weitere Informationen zur **SNotRestriction** -Struktur finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 6a7bb7265d29d2acfce17a1a09c95f7f7b539064
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348622"
 ---
 # <a name="itnefaddprops"></a>ITnef::AddProps
 
@@ -25,7 +25,7 @@ ms.locfileid: "25396316"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht die aufrufende Dienstanbieter oder Gateway Eigenschaften, die Kapselung einer Nachricht oder eine Anlage hinzuzufügen. 
+Ermöglicht dem aufrufenden Dienstanbieter oder Gateway das Hinzufügen von Eigenschaften zur Kapselung einer Nachricht oder Anlage. 
   
 ```cpp
 HRESULT AddProps(
@@ -40,43 +40,43 @@ HRESULT AddProps(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie Eigenschaften eingeschlossen oder ausgeschlossen Kapselung. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie Eigenschaften in Kapselung eingeschlossen oder von dieser ausgeschlossen werden. Die folgenden Flags können festgelegt werden:
     
 TNEF_PROP_ATTACHMENTS_ONLY 
   
-> Nur die Eigenschaften im _LpPropList_ -Parameter, die Teil von Anlagen in der Nachricht sind codiert. 
+> Codiert nur die Eigenschaften im _lpPropList_ -Parameter, die Teil von Anlagen in der Nachricht sind. 
     
 TNEF_PROP_CONTAINED 
   
-> Nur Eigenschaften aus der Anlage, die durch den _UlElemID_ -Parameter angegebenen codiert. Wenn der Parameter _LpvData_ nicht NULL ist, werden die Daten, auf in die Anlage-Kapselung in der durch die **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md))-Eigenschaft angegebenen Datei geschrieben.
+> Codiert nur Eigenschaften aus der Anlage, die durch den _ulElemID_ -Parameter angegeben wird. Wenn der _lpvData_ -Parameter nicht NULL ist, werden die Daten, auf die verwiesen wird, in die Kapselung der Anlage in der durch die **PR_ATTACH_TRANSPORT_NAME** ([pidtagattachtransportname (](pidtagattachtransportname-canonical-property.md))-Eigenschaft angegebenen Datei geschrieben.
     
 TNEF_PROP_CONTAINED_TNEF 
   
-> Nur Eigenschaften aus der Nachricht oder einer Anlage, die durch den _UlElemID_ -Parameter angegebenen codiert. Wenn dieses Flag festgelegt ist, muss der Wert in _LpvData_ ein [IStream](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) Zeiger sein. 
+> Codiert nur Eigenschaften aus der Nachricht oder Anlage, die durch den _ulElemID_ -Parameter angegeben wird. Wenn dieses Flag festgelegt ist, muss der Wert in _lpvData_ ein [IStream](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) -Zeiger sein. 
     
 TNEF_PROP_EXCLUDE 
   
-> Codiert alle Eigenschaften in der _LpPropList_ -Parameter nicht angegeben. 
+> Codiert alle Eigenschaften, die nicht im _lpPropList_ -Parameter angegeben sind. 
     
 TNEF_PROP_INCLUDE 
   
-> Alle Eigenschaften in _LpPropList_codiert. 
+> Codiert alle in _lpPropList_angegebenen Eigenschaften. 
     
 TNEF_PROP_MESSAGE_ONLY 
   
-> Nur die Eigenschaften im _LpPropList_ angegeben, die Teil einer Nachricht sind codiert. 
+> Codiert nur die in _lpPropList_ angegebenen Eigenschaften, die Teil der Nachricht selbst sind. 
     
  _ulElemID_
   
-> [in] Eine Anlage **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft, die eine Zahl, eindeutig enthält identifiziert die Anlage in der übergeordneten Nachricht. Der Parameter _UlElemID_ wird verwendet, wenn besondere Behandlung für eine Anlage angefordert wird. Der Parameter _UlElemID_ muss 0 sein, es sei denn, das Flag TNEF_PROP_CONTAINED oder TNEF_PROP_CONTAINED_TNEF im _UlFlags_ -Parameter festgelegt ist. 
+> in Die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft einer Anlage, die eine Zahl enthält, die die Anlage in der übergeordneten Nachricht eindeutig identifiziert. Der Parameter _ulElemID_ wird verwendet, wenn eine spezielle Behandlung für eine Anlage angefordert wird. Der _ulElemID_ -Parameter sollte 0 sein, es sei denn, das TNEF_PROP_CONTAINED-oder TNEF_PROP_CONTAINED_TNEF-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _lpvData_
   
-> [in] Ein Zeiger auf Anlagedaten verwendet, um die Daten der Anlage in _UlElemID_angegebenen ersetzen. Der Parameter _LpvData_ sollte NULL sein, es sei denn, TNEF_PROP_CONTAINED oder TNEF_PROP_CONTAINED_TNEF in _UlFlags_festgelegt ist.
+> in Ein Zeiger auf Anlagendaten, die zum Ersetzen der Daten der in _ulElemID_angegebenen Anlage verwendet werden. Der _lpvData_ -Parameter sollte NULL sein, es sei denn, TNEF_PROP_CONTAINED oder TNEF_PROP_CONTAINED_TNEF ist in _ulFlags_festgelegt.
     
  _lpPropList_
   
-> [in] Ein Zeiger auf die Liste der Eigenschaften ein-oder Ausschließen von Kapselung.
+> in Ein Zeiger auf die Liste der Eigenschaften, die in Kapselung eingeschlossen oder von dieser ausgeschlossen werden sollen.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -84,21 +84,21 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Transport-Provider, Anbieter Nachricht und Gateways rufen Sie die **ITnef::AddProps** -Methode, die Listeneigenschaften aufgenommen oder aus der Verarbeitung Transport-Neutral Encapsulation Format (TNEF) einer Nachricht oder eine Anlage ausgeschlossen werden. Mithilfe von aufeinander folgenden aufrufen, kann die Anbieter oder das Gateway angeben eine Liste der Eigenschaften, die Sie hinzufügen und codieren oder ausgeschlossen werden codiert. Anbieter und Gateways können **AddProps** auch zum Bereitstellen von Informationen über alle Anlagen besondere Behandlung gewährt werden soll. 
+Transportanbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef::** AddProps-Methode auf, um Eigenschaften aufzulisten, die in die TNEF-Verarbeitung (Transport Neutral Encapsulation Format) einer Nachricht oder Anlage eingeschlossen werden sollen. Durch die Verwendung aufeinanderfolgender Aufrufe kann der Anbieter oder das Gateway eine Liste von Eigenschaften angeben, die hinzugefügt und codiert werden sollen. Anbieter und Gateways können auch addProps verwenden, um Informationen über sonderbehandlungs Anlagen bereitzustellen. **** 
   
- **AddProps** wird nur für TNEF-Objekten unterstützt, die mit dem TNEF_ENCODE-Flag für die Funktion [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) oder [OpenTnefStreamEx](opentnefstreamex.md) geöffnet werden. 
+ **** AddProps wird nur für TNEF-Objekte unterstützt, die mit dem TNEF_ENCODE-Flag für die [OpenTnefStream](opentnefstream.md) -oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet werden. 
   
-Beachten Sie, dass keine tatsächliche TNEF-Codierung geschieht für **AddProps** , bis die [ITnef::Finish](itnef-finish.md) -Methode aufgerufen wird. Dies bedeutet, dass Zeiger in **AddProps** übergeben gültig bis bleiben müssen nach dem Anruf auf **Fertig stellen** . An dieser Stelle können alle Objekte und Daten mit **AddProps** Anrufe übergebene freigegeben oder freigegeben werden. 
+Beachten Sie, dass keine tatsächliche TNEF- **** Codierung für AddProps erfolgt, bis die [ITnef:: Finish](itnef-finish.md) -Methode aufgerufen wird. Diese Funktionalität bedeutet, dass Zeiger, **** die an AddProps übergeben werden, gültig bleiben müssen, bis der Aufruf **beendet** wurde. An diesem Punkt können alle Objekte und Daten, die mit **** AddProps-aufrufen übergeben wurden, freigegeben oder befreit werden. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|File.cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI (engl.) verwendet die **ITnef::AddProps** -Methode, um Eigenschaften aus einer Nachricht in einem Stream TNEF zu kopieren.  <br/> |
+|Datei. cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI verwendet die **ITnef::** AddProps-Methode, um Eigenschaften aus einer Nachricht in einen TNEF-Stream zu kopieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -110,7 +110,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[PidTagAttachTransportName (kanonische Eigenschaft)](pidtagattachtransportname-canonical-property.md)
+[Kanonische Pidtagattachtransportname (-Eigenschaft](pidtagattachtransportname-canonical-property.md)
   
 [ITnef : IUnknown](itnefiunknown.md)
 

@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e537c25f-51b5-4f06-a20a-44ee540b9a1f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: eb91f4998f94ffafbc33b6024228945f7c91cf43
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4bada5913623e2eb463a9e72347bd31eb22c414b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348076"
 ---
 # <a name="hrcompareabentryidswithexchangecontext"></a>HrCompareABEntryIDsWithExchangeContext
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Address Book **EntryIDs** sicher in einem Profil mehrere Exchange. Diese Funktion ist eine Funktion Ersatz für [IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md).
+Vergleicht zwei Adressbuch **entryIDs** sicher in einem Exchange-Profil. Diese Funktion ist eine Ersatzfunktion für [IAddrBook:: CompareEntryIDs](iaddrbook-compareentryids.md).
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |abhelp.h  <br/> |
+|Headerdatei  <br/> |abhelp. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrCompareABEntryIDsWithExchangeContext(
@@ -47,31 +47,31 @@ HRESULT HrCompareABEntryIDsWithExchangeContext(
 
  _pmsess_
   
-> [in] Die angemeldete **IMAPISession**. Es darf nicht NULL sein.
+> in Der angemeldete **IMAPISession**. Er darf nicht NULL sein.
     
  _pEmsmdbUID_
   
-> [in] Ein Zeiger auf eine **EmsmdbUID** , die den Exchange-Dienst identifiziert, die die Exchange-Adressbuchanbieter enthält, die diese Funktion zum Anzeigen von Details auf die Eintrags-ID verwendet werden soll. Wenn eingehende Eintrags-ID nicht um ein Exchange-Adressbuchanbieter Eintrags-ID ist, dieser Parameter wird ignoriert, und der Funktionsaufruf verhält sich wie [IAddrBook::Details](iaddrbook-details.md). Wenn dieser Parameter auf NULL oder eine MAPIUID NULL ist, verhält sich diese Funktion wie [IAddrBook::Details](iaddrbook-details.md).
+> in Ein Zeiger auf ein **emsmdbUID** , das den Exchange-Dienst identifiziert, der den Exchange-Adressbuchanbieter enthält, den diese Funktion verwenden sollte, um Details zur Eintrags-ID anzuzeigen. Wenn die ID des eingehenden Eintrags kein Exchange-Adressbuchanbieter ist, wird dieser Parameter ignoriert, und der Funktionsaufruf verhält sich wie [IAddrBook::D ails](iaddrbook-details.md). Wenn dieser Parameter NULL oder eine NULL-MAPIUID ist, verhält sich diese Funktion wie [IAddrBook::D ails](iaddrbook-details.md).
     
  _pAddrBook_
   
-> [in] Das Adressbuch verwendet, um die Eintrags-ID zu öffnen. Es darf nicht NULL sein.
+> in Das zum Öffnen des Eintrags Bezeichners verwendete Adressbuch. Er darf nicht NULL sein.
     
  _cbEntryID1_
   
-> [in] Die Byteanzahl des ersten Eintrags-ID, die durch den Parameter _lpEntryID1_ angegeben. 
+> in Die Bytezahl des ersten Eintrags-Bezeichners, der durch den _lpEntryID1_ -Parameter angegeben wird. 
     
  _lpEntryID1_
   
-> [in] Ein Zeiger auf die erste Eintrags-ID, die den Adresseintrag Adressbuch zum Vergleichen von eigenständigen darstellt.
+> in Ein Zeiger auf die erste Eintrags-ID, die den zu vergleichenden Adressbucheintrag darstellt.
     
  _cbEntryID2_
   
-> [in] Anzahl von Bytes aus der zweite Eintrags-ID, die durch den Parameter _lpEntryID2_ angegeben. 
+> in Die Bytezahl der zweiten Eintrags-ID, die durch den _lpEntryID2_ -Parameter angegeben wird. 
     
  _lpEntryID2_
   
-> [in] Ein Zeiger auf die zweite Eintrags-ID im Vergleich verwendete darstellt, der den Adresseintrag Adressbuch, verglichen werden soll.
+> in Ein Zeiger auf die zweite Eintrags-ID im Vergleich, die den zu vergleichenden Adressbucheintrag darstellt.
     
  _ulFlags_
   
@@ -79,6 +79,6 @@ HRESULT HrCompareABEntryIDsWithExchangeContext(
     
  _lpulResult_
   
-> [out] Ein Zeiger auf den Speicherort, der die Ergebnisse des Vergleichs enthält. 
+> Out Ein Zeiger auf den Speicherort, der die Ergebnisse des Vergleichs enthält. 
     
 

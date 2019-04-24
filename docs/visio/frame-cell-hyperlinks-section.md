@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f71d8737-92ef-1124-ba4a-b7e17305bd0a
 description: Stellt den Namen eines Zielframes dar, wenn die Anwendung als aktives Dokument in einer Containeranwendung geöffnet ist. Der Standardwert ist eine leere Zeichenfolge.
-ms.openlocfilehash: b94e5efd4a3fdf53e01f7518252852214a72c766
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8f41e5bf854e31e1f17eabb2aecbded55175ebaf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344852"
 ---
-# <a name="frame-cell-hyperlinks-section"></a>Frame Cell (Hyperlinks Section)
+# <a name="frame-cell-hyperlinks-section"></a>Zelle "Frame" (Abschnitt "Hyperlinks")
 
 Stellt den Namen eines Zielframes dar, wenn die Anwendung als aktives Dokument in einer Containeranwendung geöffnet ist. Der Standardwert ist eine leere Zeichenfolge.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Frame aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "Frame" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Hyperlink.  *Name* . Where eingerahmt Hyperlink.  *Name* ist der Zeilenname  <br/> |
+| Zellenname:  <br/> | Hyperlink.  *Name* . Frame, auf dem Hyperlink.  *Name* ist der Name der Zeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Frame aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Rahmen aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionHyperlink** <br/> |
-| Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> |**visHLinkFrame** <br/> |
+| Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visHLinkFrame** <br/> |
    
 

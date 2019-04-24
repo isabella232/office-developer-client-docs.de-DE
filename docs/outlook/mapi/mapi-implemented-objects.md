@@ -1,5 +1,5 @@
 ---
-title: MAPI implementierte Objekte
+title: MAPI-implementierte Objekte
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,53 +7,53 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5d07c259-0ceb-4ea5-98b4-b01720edfe2a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d212a86aae0503a5e02a5a7ecddb83db10a4d664
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 86aa8451b5b127764134f1a3a905366fd014d0c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346855"
 ---
-# <a name="mapi-implemented-objects"></a>MAPI implementierte Objekte
+# <a name="mapi-implemented-objects"></a>MAPI-implementierte Objekte
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI implementierte mehrere Objekte für die Verwendung durch Clientanwendungen und -Dienstanbieter. Session-Objekt ermöglicht Clients Sitzung Services, Zugriff auf Tabellen und zur Kommunikation mit-Dienstanbieter verwenden. Das Address Book-Objekt stellt Clients integrierte Zugriff auf alle der verschiedenen adressbuchanbietern implementierte. 
+MAPI implementiert mehrere Objekte für die Verwendung durch Clientanwendungen und Dienstanbieter. Mit dem Session-Objekt können Clients Sitzungsdienste verwenden, auf Tabellen zugreifen und mit Dienstanbietern kommunizieren. Das Address Book-Objekt bietet Clients einen integrierten Zugriff auf alle unterschiedlichen Adressbuchanbieter. 
   
-MAPI stellt mehrere Tabelle und den Status Objekte für Clients zum Anzeigen und Überwachen der Sitzung und Service Provider-Informationen verwendet werden. Beispielsweise bietet MAPI ein Profil und einer Nachricht Service-Tabelle mit Informationen zu allen im aktuellen Profil Dienste Nachricht mit Informationen zu allen der Profile, die auf dem Computer installiert sind. MAPI bietet drei verschiedenen Statuswerte Objekte: eines, Teilsystems insgesamt, einen für die MAPI-Warteschlange und einen für die integrierte Adressbuch darstellt. 
+MAPI stellt mehrere Table-und Status-Objekte für Clients bereit, die zum Anzeigen und Überwachen von Sitzungs-und Dienstanbieterinformationen verwendet werden können. MAPI stellt beispielsweise eine Profiltabelle mit Informationen zu allen Profilen bereit, die auf dem Computer installiert sind, und eine Nachrichtendienst Tabelle mit Informationen zu allen Nachrichtendiensten im aktuellen Profil. MAPI bietet drei verschiedene Statusobjekte: eine, die das Gesamt Subsystem, eine für den MAPI-Spooler und eine für das integrierte Adressbuch darstellt. 
   
-MAPI implementierte vier verschiedene Objekte für die Verwaltung der Konfigurations des Message-Dienste, Service Provider und Profile. Clients und -Dienstanbieter verwenden des Anbieters für und Profil Section-Objekten; Diese Objekte aktivieren sie zum Konfigurieren von Dienstanbietern und Zugreifen auf Profileigenschaften. Clients verwenden nur Messagingdiensts und Profile Administration-Objekten, die Objekte, die die Verwaltung von Message-Dienste und Profilen unterstützen. 
+MAPI implementiert vier verschiedene Objekte zum Verwalten der Konfiguration von Nachrichtendiensten, Dienstanbietern und Profilen. Sowohl Clients als auch Dienstanbieter verwenden Anbieterverwaltung und Profil Abschnitts Objekte; mit diesen Objekten können Sie Dienstanbieter konfigurieren und auf Profileigenschaften zugreifen. Clients verwenden nur Nachrichtendienst-und Profil Verwaltungsobjekte, die Objekte, die die Verwaltung von Nachrichtendiensten und-Profilen unterstützen. 
   
-MAPI-Dienstanbieter zwei Objekte bereit: ein Support-Objekt und ein TNEF-Objekt. Alle-Dienstanbieter verwenden Sie eine oder mehrere Support-Objekte. Es gibt vier verschiedene Support-Objekt Implementierungen. MAPI stellt eine Implementierung zur Unterstützung der Konfiguration als auch bestimmte Implementierungen für Adressbuch, Nachrichtenspeicher und Transportanbieter nicht unterstützt. Das TNEF-Objekt wird von Transportanbieter verwendet, die die Transport Neutral Encapsulation Format (TNEF) unterstützen.
+MAPI stellt zwei Objekte für Dienstanbieter bereit: ein Support-Objekt und ein TNEF-Objekt. Alle Dienstanbieter verwenden ein oder mehrere Support-Objekte; Es gibt vier verschiedene Unterstützungsobjekt Implementierungen. MAPI bietet eine Implementierung zur Unterstützung der Konfiguration sowie spezifische Implementierungen zur Unterstützung von Adressbuch-, Nachrichtenspeicher-und Transportanbietern. Das TNEF-Objekt wird von Transportanbietern verwendet, die das TNEF (Transport Neutral Encapsulation Format) unterstützen.
   
-Zwei Hilfsobjekte, Tabellendaten und Eigenschaftendaten, werden in der Regel vom Dienstanbieter verwendet. Tabelle Datenobjekte Hilfe bei der Implementierung von Table-Objekten; Eigenschaft Daten Objekte Hilfe Set und View-Eigenschaftenzugriff und Hilfe bei der Implementierung der [IMAPIProp: IUnknown](imapipropiunknown.md), die Basis-Eigenschaft-Schnittstelle. 
+Zwei Hilfsobjekte, Tabellendaten und Eigenschaftsdaten werden in der Regel von Dienstanbietern verwendet. Tabellendaten Objekte helfen bei der Implementierung von table-Objekten; Eigenschaftendaten Objekte helfen beim Festlegen und Anzeigen von Eigenschaftenzugriff und Hilfe bei der Implementierung von [IMAPIProp: IUnknown](imapipropiunknown.md), die Schnittstelle der Basiseigenschaft. 
   
-In der folgenden Tabelle werden den Zweck für jedes Objekt, das MAPI implementierte zusammengefasst.
+In der folgenden Tabelle wird der Zweck der einzelnen von MAPI implementierten Objekte zusammengefasst.
   
 |**MAPI-Objekt**|**Beschreibung**|
 |:-----|:-----|
-|Adressbuch  <br/> |Bietet Zugriff auf die integrierte Ansicht der Empfängerinformationen, die alle Anbieter Address Book in das aktive Profil gehört.  <br/> |
-|Verwalten von Diensten  <br/> |Bietet Zugriff auf Informationen zum Dienst für die Konfiguration.  <br/> |
-|Profilverwaltung  <br/> |Ermöglicht den Zugriff auf die Profilinformationen für die Konfiguration.  <br/> |
-|Profilabschnitt  <br/> |Ein Teil eines Profils verwendet, um eine bestimmte Nachricht-Dienst oder den Dienstanbieter beschreiben.  <br/> |
-|Eigenschaftendaten  <br/> |Wird der Zugriff auf Eigenschaften, und hilft Ihnen **IMAPIProp**implementieren.  <br/> |
-|Des Anbieters für  <br/> |Bietet Zugriff auf Informationen zu Anbietern für die Konfiguration.  <br/> |
-|Sitzung  <br/> |Stellt eine Verbindung mit der zugrunde liegenden messaging-Systeme und bietet Zugriff auf Ressourcen von MAPI-Clients.  <br/> |
-|Status  <br/> |Bietet Zugriff auf den Status des MAPI-Subsystems, Adressbuch oder die MAPI-Warteschlange.  <br/> |
-|Support  <br/> |Hilft Dienstanbieter Clientanforderungen.  <br/> |
-|Tabelle  <br/> |Bietet Zugriff auf eine Zusammenfassungsansicht der Objektdaten Zeile und Spalte, ähnlich wie in in einer Datenbanktabelle.  <br/> |
-|Tabellendaten  <br/> |Zugriff auf die zugrunde liegenden Tabellendaten verwaltet und Table-Objekte implementiert.  <br/> |
-|TNEF  <br/> |Unterstützt die Verwendung von Transport Neutral Encapsulation Format (TNEF).  <br/> |
+|Adressbuch  <br/> |Ermöglicht den Zugriff auf die integrierte Ansicht von Empfängerinformationen, die zu allen Adressbuch Anbietern im aktiven Profil gehört.  <br/> |
+|Nachrichtendienst Verwaltung  <br/> |Ermöglicht den Zugriff auf Nachrichtendienst Informationen für die Konfiguration.  <br/> |
+|Profilverwaltung  <br/> |Ermöglicht den Zugriff auf Profilinformationen für die Konfiguration.  <br/> |
+|Profil Abschnitt  <br/> |Ein Teil eines Profils, mit dem ein bestimmter Nachrichtendienst oder Dienstanbieter beschrieben wird.  <br/> |
+|Eigenschaftendaten  <br/> |Verwaltet den Zugriff auf Eigenschaften und hilft bei der Implementierung von **IMAPIProp**.  <br/> |
+|Anbieterverwaltung  <br/> |Ermöglicht den Zugriff auf Dienstanbieterinformationen für die Konfiguration.  <br/> |
+|Sitzung  <br/> |Stellt eine Verbindung zu zugrunde liegenden Messagingsystemen dar und bietet Clients Zugriff auf MAPI-Ressourcen.  <br/> |
+|Status  <br/> |Ermöglicht den Zugriff auf den Status des MAPI-Subsystems, des Adressbuchs oder des MAPI-Spoolers.  <br/> |
+|Support  <br/> |UnterStützt Dienstanbieter beim Verarbeiten von Clientanforderungen.  <br/> |
+|Tabelle  <br/> |Ermöglicht den Zugriff auf eine Zusammenfassungsansicht von Objektdaten im Zeilen-und Spaltenformat, ähnlich wie bei einer Datenbanktabelle.  <br/> |
+|Tabellendaten  <br/> |Verwaltet den Zugriff auf zugrunde liegende Tabellendaten und implementiert Table-Objekte.  <br/> |
+|TNEF  <br/> |Unterstützt die Verwendung des Transport Neutral Encapsulation Format (TNEF).  <br/> |
    
-Die folgende Abbildung zeigt die Beziehung zwischen den, die von MAPI implementierte Objekte, die von dem sie erben Schnittstellen und die Komponenten, die sie verwenden. 
+Die folgende Abbildung zeigt die Beziehung zwischen den Objekten, die MAPI implementiert, den Schnittstellen, von denen Sie erben, und den Komponenten, die Sie verwenden. 
   
 **Von MAPI implementierte Objekte**
   
-![Von MAPI implementierte Objekte] (media/amapi_68.gif "Von MAPI implementierte Objekte")
+Von ![MAPI implementierte Objekte] Von (media/amapi_68.gif "MAPI implementierte Objekte")
   
 ## <a name="see-also"></a>Siehe auch
 
 - [IMAPIProp : IUnknown](imapipropiunknown.md)
-- [MAPI-Objekt und Übersicht über die Benutzeroberfläche](mapi-object-and-interface-overview.md)
+- [Übersicht über MAPI-Objekte und-Schnittstellen](mapi-object-and-interface-overview.md)
 

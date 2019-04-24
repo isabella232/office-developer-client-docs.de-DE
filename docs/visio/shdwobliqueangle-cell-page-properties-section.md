@@ -9,32 +9,32 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2e0b9754-3e3b-3a26-4e1a-e09102055c20
 description: Enthält eine Zahl, die den Winkel der Schräge angibt, wenn Sie den Standardzeichenblatt-Schattentyp anwenden.
-ms.openlocfilehash: 4549ce7b5202b4649a925b04ea54c0d5df569599
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2eca29bbc735c7101ca82a2f26db30b2e344b8e6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349063"
 ---
-# <a name="shdwobliqueangle-cell-page-properties-section"></a>ShdwObliqueAngle Cell (Page Properties Section)
+# <a name="shdwobliqueangle-cell-page-properties-section"></a>Zelle "ShdwObliqueAngle" (Abschnitt "Page Properties")
 
 Enthält eine Zahl, die den Winkel der Schräge angibt, wenn Sie den Standardzeichenblatt-Schattentyp anwenden.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert Null (0) in dieser Zelle zeigt an, dass die Winkelrichtung genau nach oben verläuft, sie wird im Uhrzeigersinn gemessen.
+Der Wert Null (0) in dieser Zelle zeigt an, dass die Winkelrichtung genau nach oben verläuft und im Uhrzeigersinn gemessen wird.
   
- Der Winkel in dieser Zelle beschriebene wird verwendet, wenn die Zelle ShapeShdwType (der Schattentyp für ein Shape auf dem Zeichenblatt) auf Seitenstandard (**VisFSTPageDefault** ) festgelegt ist, und der Schattentyp oblique ist. Der Standardzeichenblatt-Schattentyp wird in der Zelle ShdwType definiert. 
+ Der in dieser Zelle beschriebene Winkel wird verwendet, wenn die Zelle-Zelle (der Schattentyp für ein Shape auf dem Zeichenblatt) auf Seiten Standard (**visFSTPageDefault** ) festgelegt ist und der Schattentyp schräg ist. Der standardmäßige Seiten Schattentyp wird in der Zelle "ShdwType definiert. 
   
 Wenn Sie dieses Verhalten für einen einzelnen Schatten festlegen möchten, verwenden Sie im Abschnitt Fill Format die Zelle ShapeShdwObliqueAngle.
   
-Wenn Sie einen Verweis auf die Zelle ShdwObliqueAngle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "ShdwObliqueAngle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ShdwObliqueAngle  <br/> |
+| Zellenname:  <br/> | "ShdwObliqueAngle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShdwObliqueAngle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "ShdwObliqueAngle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

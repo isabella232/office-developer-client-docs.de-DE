@@ -1,5 +1,5 @@
 ---
-title: PidTagCorrelate (kanonische Eigenschaft)
+title: Kanonische Pidtagcorrelate (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: be34993e-ffcc-47f5-b2d4-95ffa707bc5c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 063e41bf9fe306b3862e302abb4495ca56e3087b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ea217808a163c7f16bbaa3c5a959fd32c8cbe10c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357918"
 ---
-# <a name="pidtagcorrelate-canonical-property"></a>PidTagCorrelate (kanonische Eigenschaft)
+# <a name="pidtagcorrelate-canonical-property"></a>Kanonische Pidtagcorrelate (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn der Absender einer Nachricht die Korrelations-Funktion von messaging-System anfordert.
+Enthält TRUE, wenn der Absender einer Nachricht das Korrelations Feature des Messagingsystems anfordert.
   
 |||
 |:-----|:-----|
@@ -36,21 +36,21 @@ Enthält True, wenn der Absender einer Nachricht die Korrelations-Funktion von m
    
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird verwendet, um die Korrelation eingehende Berichte mit der ursprünglichen gesendeten Nachrichten anfordern. Stößt ein Transportdienstes eine gesendete Nachricht mit **PR_CORRELATE** Set auf true festgelegt, wird die **PR_CORRELATE_MTSID** ([PidTagCorrelateMtsid](pidtagcorrelatemtsid-canonical-property.md))-Eigenschaft auf die Übertragung System (MTS)-ID für diese Nachricht.
+Diese Eigenschaft wird verwendet, um die Korrelation eingehender Berichte mit der ursprünglichen gesendeten Nachricht anzufordern. Wenn ein Transportanbieter eine übermittelte Nachricht mit **PR_CORRELATE** auf true trifft, wird die **PR_CORRELATE_MTSID** ([pidtagcorrelatemtsid (](pidtagcorrelatemtsid-canonical-property.md))-Eigenschaft auf den MTS-Bezeichner (Message Transfer System) für diese Nachricht festgelegt.
   
- **PR_CORRELATE** sollte mit der messaging-Systeme, die Korrelation unterstützen von MTS Bezeichner, z. B. x. 400-verwendet werden. 
+ **PR_CORRELATE** sollte mit Messagingsystemen verwendet werden, die eine Korrelation durch MTS-ID, wie X. 400, unterstützen. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

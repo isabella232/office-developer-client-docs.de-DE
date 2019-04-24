@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 98091e5b-1abd-4814-9c7a-583b420ee11d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: db76dfec27100a22785082580da70ecc2c10fc45
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9f2ec8f0ec00f7314982e9b112415f69901c358c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346648"
 ---
 # <a name="mapilogonex"></a>MAPILogonEx
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Meldet eine Clientanwendung bei einer Sitzung mit der messaging-System. 
+Protokolliert eine Clientanwendung für eine Sitzung mit dem Messagingsystem. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HRESULT MAPILogonEx(
@@ -47,77 +47,77 @@ HRESULT MAPILogonEx(
 
  _ulUIParam_
   
-> [in] Handle für das Fenster, das Anmeldedialogfeld gebunden werden. Wenn kein Dialogfeld während des Anrufs angezeigt wird, wird der Parameter _UlUIParam_ ignoriert. Dieser Parameter kann 0 (null) sein. 
+> in Handle für das Fenster, in dem das Anmeldedialogfeld modal ist. Wenn während des Anrufs kein Dialogfeld angezeigt wird, wird der _ulUIParam_ -Parameter ignoriert. Dieser Parameter kann NULL sein. 
     
  _lpszProfileName_
   
-> [in] Zeiger auf eine Zeichenfolge, die enthält den Namen des Profils beim Anmelden des Benutzers verwendet werden. Diese Zeichenfolge ist auf 64 Zeichen begrenzt.
+> in Zeiger auf eine Zeichenfolge, die den Namen des Profils enthält, das bei der Anmeldung des Benutzers verwendet werden soll. Diese Zeichenfolge ist auf 64 Zeichen beschränkt.
     
  _lpszPassword_
   
-> [in] Zeiger auf eine Zeichenfolge, die das Kennwort des Profils enthält. Der Parameter _LpszPassword_ muss NULL sein. 
+> in Zeiger auf eine Zeichenfolge, die das Kennwort des Profils enthält. Der _lpszPassword_ -Parameter muss NULL sein. 
     
  _flFlags_
   
-> [in] Bitmaske aus Flags verwendet, um zu steuern, wie die Anmeldung ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Bitmaske der Flags, die verwendet werden, um die Ausführung der Anmeldung zu steuern. Die folgenden Flags können festgelegt werden:
     
 MAPI_ALLOW_OTHERS 
   
-> Die freigegebene Sitzung sollte zurückgegeben werden, wodurch höher Clients erhalten die Sitzung ohne Angabe von Anmeldeinformationen. 
+> Die freigegebene Sitzung sollte zurückgegeben werden, sodass spätere Clients die Sitzung ohne Angabe von Benutzeranmeldeinformationen abrufen können. 
     
 MAPI_BG_SESSION
   
-> Melden Sie sich bei einer Sitzung, und alle Vorgänge im Hintergrund ausgeführt. Im Allgemeinen Clientidentität will Verarbeitung in einem Hintergrundthread oder in einem gesonderten Prozess in einer Weise, die nicht störend auf den Vordergrundthread ist, muss sie mit dem MAPI_BG_SESSION-Flag aufrufen. Eine Clientanwendung wie indexing-Engine oder öffnen eine Persönliche Ordner Datei (PST) für den Hintergrund Typ Zugriff sind einige Beispiele für die Verwendung mit dem MAPI_BG_SESSION. MAPILogonEx.
+> Melden Sie sich bei einer Sitzung an, und führen Sie alle Vorgänge im Hintergrund aus. Wenn ein Client die Verarbeitung in einem Hintergrundthread oder in einem separaten Prozess auf eine Weise beabsichtigt, die unauffällig für den Vordergrundthread ist, sollte er im Allgemeinen mit dem MAPI_BG_SESSION-Flag aufgerufen werden. Eine Clientanwendung wie ein Indizierungsmodul oder das Öffnen einer PST-Datei (Personal Folders) für den Hintergrundtyp Zugriff sind einige Beispiele dafür, wo MAPI_BG_SESSION verwendet werden soll. MAPILogonEx.
     
 MAPI_EXPLICIT_PROFILE 
   
-> Das Standardprofil sollte nicht verwendet werden, und der Benutzer sollte erforderlich, um ein Profil angeben. 
+> Das Standardprofil sollte nicht verwendet werden, und der Benutzer muss ein Profil angeben müssen. 
     
 MAPI_EXTENDED 
   
-> Melden Sie sich mit erweiterten Funktionen. Dieses Kennzeichen sollte immer festgelegt werden.
+> Melden Sie sich mit erweiterten Funktionen an. Dieses Flag sollte immer festgelegt werden.
     
 MAPI_FORCE_DOWNLOAD 
   
-> Es sollten Sie alle Nachrichten des Benutzers vor der Rückgabe herunterladen versucht werden. Wenn das Flag MAPI_FORCE_DOWNLOAD nicht festgelegt ist, können Nachrichten im Hintergrund heruntergeladen werden, nachdem der Anruf an MAPILogonEx zurückgegeben. 
+> Es sollte versucht werden, alle Nachrichten des Benutzers herunterzuladen, bevor Sie zurückkehren. Wenn das MAPI_FORCE_DOWNLOAD-Flag nicht festgelegt ist, können Nachrichten im Hintergrund heruntergeladen werden, nachdem der Aufruf von MAPILogonEx zurückgegeben wird. 
     
 MAPI_LOGON_UI 
   
-> Ein Dialogfeld sollte angezeigt werden, um den Benutzer zur Anmeldeinformationen auffordern, falls erforderlich. Wenn das Flag MAPI_LOGON_UI nicht festgelegt ist, der aufrufende Client ein Anmeldedialogfeld wird nicht angezeigt und gibt einen Fehlerwert zurück, wenn der Benutzer nicht angemeldet ist.
+> Es sollte ein Dialogfeld angezeigt werden, um den Benutzer bei Bedarf um Anmeldeinformationen zu informieren. Wenn das MAPI_LOGON_UI-Flag nicht festgelegt ist, zeigt der aufrufende Client kein Anmeldedialogfeld an und gibt einen Fehlerwert zurück, wenn der Benutzer nicht angemeldet ist.
     
 MAPI_NEW_SESSION 
   
-> Soll versucht werden, erstellen Sie eine neue MAPI-Sitzung anstelle die freigegebene Sitzung erwerben. Wenn das Flag MAPI_NEW_SESSION nicht festgelegt ist, verwendet MAPILogonEx eine vorhandene freigegebene Sitzung, selbst wenn der Parameter _LpszprofileName_ nicht NULL ist. 
+> Es sollte versucht werden, eine neue MAPI-Sitzung zu erstellen, anstatt die freigegebene Sitzung zu erwerben. Wenn das MAPI_NEW_SESSION-Flag nicht festgelegt ist, verwendet MAPILogonEx eine vorhandene freigegebene Sitzung, auch wenn der _lpszprofileName_ -Parameter nicht NULL ist. 
     
 MAPI_NO_MAIL 
   
-> MAPI informiert sollte nicht die MAPI-Warteschlange des Vorhandenseins der Sitzung. Das Ergebnis ist, dass keine Nachrichten gesendet oder in der Sitzung außer über einen eng gekoppelten speichern und-Paar Transport empfangen werden können. Ein aufrufende Client wird dieses Flag, wenn es als ein Agent fungiert, wenn Sie Konfigurationsarbeit erledigt werden muss, oder wenn der Client den verfügbaren Nachrichtenspeicher durchsucht. 
+> MAPI sollte den MAPI-Spooler nicht über die Existenz der Sitzung informieren. Das Ergebnis ist, dass keine Nachrichten in der Sitzung gesendet oder empfangen werden können, mit Ausnahme eines eng gekoppelten Speicher-und Transport Paars. Ein aufrufende Client legt dieses Flag fest, wenn es als Agent fungiert, wenn Konfigurationsaufgaben ausgeführt werden müssen oder wenn der Client die verfügbaren Nachrichtenspeicher durchsucht. 
     
 MAPI_NT_SERVICE 
   
-> Der Anrufer wird als Windows-Dienst ausgeführt. Anrufer, die wie ein Windows-Dienst nicht dieses Flag festlegen sollten nicht ausgeführt werden; Anrufer, die als Dienst ausgeführt werden, müssen dieses Flag festgelegt. 
+> Der Anrufer wird als Windows-Dienst gestartet. Anrufer, die nicht als Windows-Dienst gestartet werden, sollten dieses Flag nicht festlegen; Aufrufer, die als Dienst gestartet werden, müssen dieses Flag festlegen. 
     
 MAPI_SERVICE_UI_ALWAYS 
   
-> MAPILogonEx sollte ein Konfigurationsdialogfeld für jeden Nachrichtendienst im Profil angezeigt werden. Die Dialogfelder werden angezeigt, nachdem das Profil gewählt wurde, jedoch bevor eine beliebige Nachricht Service angemeldet ist. MAPI-Standarddialogfeld für die Anmeldung enthält auch ein Kontrollkästchen, die den gleichen Vorgang anfordert. 
+> MAPILogonEx sollte ein Konfigurationsdialogfeld für jeden Nachrichtendienst im Profil anzeigen. Die Dialogfelder werden angezeigt, nachdem das Profil ausgewählt wurde, aber bevor ein Nachrichtendienst angemeldet ist. Das allgemeine MAPI-Dialogfeld für die Anmeldung enthält auch ein Kontrollkästchen, das den gleichen Vorgang anfordert. 
     
 MAPI_TIMEOUT_SHORT 
   
-> Wenn für mehr als ein paar Sekunden blockiert, sollte die Anmeldung fehlschlagen. 
+> Die Anmeldung sollte fehlschlagen, wenn Sie für mehr als ein paar Sekunden gesperrt ist. 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format. 
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
     
 MAPI_USE_DEFAULT 
   
-> Das messaging Subsystem sollten den Profilnamen des Standardprofils für den Parameter _LpszProfileName_ ersetzen. Das Flag MAPI_EXPLICIT_PROFILE wird ignoriert, es sei denn, _LpszProfileName_ NULL oder leer ist. 
+> Das Messaging Subsystem sollte den Profilnamen des Standardprofils des _lpszProfileName_ -Parameters ersetzen. Das MAPI_EXPLICIT_PROFILE-Flag wird ignoriert, es sei denn, _lpszProfileName_ ist NULL oder leer. 
     
  _lppSession_
   
-> [out] Zeiger auf einen Zeiger auf die MAPI-Sitzung-Schnittstelle.
+> Out Zeiger auf einen Zeiger auf die MAPI-Sitzungs Schnittstelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -125,51 +125,51 @@ S_OK
     
 MAPI_E_LOGON_FAILED 
   
-> Die Anmeldung ist fehlgeschlagen, da eine oder mehrere der Parameter MAPILogonEx ungültig waren oder bereits zu viele Sitzungen geöffnet waren.
+> Die Anmeldung war erfolglos, da mindestens einer der Parameter für MAPILogonEx ungültig war oder weil zu viele Sitzungen bereits geöffnet waren.
     
 MAPI_E_TIMEOUT 
   
-> MAPI serialisiert alle Anmeldungen über einen Mutex. Dies wird zurückgegeben, wenn das Flag MAPI_TIMEOUT_SHORT festgelegt wurde, und ein anderer Thread den Mutex frei. 
+> MAPI serialisiert alle Anmeldungen über einen Mutex. Dieser Wert wird zurückgegeben, wenn das MAPI_TIMEOUT_SHORT-Flag festgelegt wurde und ein anderer Thread den Mutex gehalten hat. 
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
+> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-Clientanwendungen rufen Sie die Funktion MAPILogonEx zur Anmeldung bei einer Sitzung mit der messaging-System. Alle Zeichenfolgen, die übergeben und zurückgegeben, zu und von MAPI-Aufrufe Null endende werden und müssen in der aktuellen Zeichensatz angegeben werden oder Codepage des aufrufenden Client oder Anbieter des Betriebssystems.
+MAPI-Clientanwendungen rufen die MAPILogonEx-Funktion auf, um sich bei einer Sitzung mit dem Messagingsystem anzumelden. Alle Zeichenfolgen, die übergeben und an und von MAPI-Aufrufen zurückgegeben werden, werden mit Null beendet und müssen im aktuellen Zeichensatz oder der Codepage des Betriebssystems des aufrufenden Clients oder Anbieters angegeben werden.
   
-Der Parameter _LpszProfileName_ wird ignoriert, wenn eine vorhandene vorherige Sitzung, die mit dem MAPI_ALLOW_OTHERS-Flag MapiLogonEx aufgerufen vorhanden ist und das Flag MAPI_NEW_SESSION nicht festgelegt ist. Wenn der Parameter _LpszProfileName_ NULL ist oder verweist auf eine leere Zeichenfolge und der Parameter _FlFlags_ umfasst das MAPI_LOGON_UI-Flag, generiert die MAPILogonEx-Funktion ein Anmeldedialogfeld, die ein leeres Feld für den Namen des Profils verfügt. 
+Der Parameter _lpszProfileName_ wird ignoriert, wenn eine frühere Sitzung mit dem Namen MapiLogonEx mit dem MAPI_ALLOW_OTHERS-Flag festgelegt ist und das Flag MAPI_NEW_SESSION nicht festgelegt ist. Wenn der _lpszProfileName_ -Parameter NULL ist oder auf eine leere Zeichenfolge verweist und der Parameter _flFlags_ das MAPI_LOGON_UI-Flag enthält, generiert die MAPILogonEx-Funktion ein Anmeldedialogfeld mit einem leeren Feld für den Profilnamen. 
   
-Bei der Anmeldung an einem bestimmten Profil sollte ein Client das Flag MAPI_NEW_SESSION in MAPILogonEx zusätzlich zu den Profilnamen übergeben. Andernfalls, wenn ein anderer Client eine freigegebene Sitzung anmelden, auf mit MAPI_ALLOW_OTHERS hergestellt, wird der Client an der freigegebenen Sitzung anstatt auf das Profil angefordert angemeldet sein. 
+Bei der Anmeldung an einem bestimmten Profil sollte ein Client das MAPI_NEW_SESSION-Flag zusätzlich zu dem Profilnamen an MAPILogonEx weitergeben. Wenn ein anderer Client eine freigegebene Sitzung durch Anmelden bei MAPI_ALLOW_OTHERS erstellt hat, wird der Client bei der freigegebenen Sitzung anstelle des angeforderten Profils angemeldet. 
   
-Das Flag MAPI_EXPLICIT_PROFILE nicht dazu führen, dass der Name verwendet werden, wenn _LpszProfileName_ NULL ist oder leer, wenn das Flag MAPI_USE_DEFAULT auch vorhanden ist. 
+Das MAPI_EXPLICIT_PROFILE-Flag bewirkt nicht, dass der Standardprofilname verwendet wird, wenn _LPSZPROFILENAME_ NULL oder leer ist, es sei denn, das MAPI_USE_DEFAULT-Flag ist ebenfalls vorhanden. 
   
-Das Flag MAPI_NO_MAIL hat mehrere Effekte, die die folgenden verursachen, wenn die Warteschlange MAPI nicht verwenden:
+Das MAPI_NO_MAIL-Flag weist mehrere Effekte auf, die Folgendes verursachen, wenn der MAPI-Spooler nicht verwendet wird:
   
-- Keine Nachrichten können gesendet oder durch die MAPI-Warteschlange diese Sitzung bereitgestellt werden. Nur eng gekoppelten Store und Transport-Provider können senden und Nachrichten übermitteln. 
+- Während dieser Sitzung können keine Nachrichten vom MAPI-Spooler gesendet oder übermittelt werden. Nur eng gekoppelte Speicher-und Transportanbieter können Nachrichten senden und übermitteln. 
     
-- Serverbasierte Speicher möglicherweise noch senden oder Nachrichten übermitteln. 
+- Server basierte Speicher können weiterhin Nachrichten senden oder übermitteln. 
     
-- Nachrichten gesendet oder von Server-basierte Speicher bereitgestellt werden von Anbietern Hook nicht verarbeitet. 
+- Nachrichten, die von Server basierten Stores gesendet oder übermittelt werden, werden von keinem Hook-Anbieter verarbeitet. 
     
-- Optionen für einzelne Nachrichten und pro Empfänger für Transporten sind nicht verfügbar. 
+- Pro Nachricht und pro-Empfänger-Optionen für den Verkehr sind nicht verfügbar. 
     
-- Die Statustabelle enthält keine Einträge für Transportanbieter für, und alle Transport-Funktionalität abhängig vom Status-Objekte (Konfiguration) ist nicht verfügbar. 
+- Die Statustabelle enthält keine Einträge für Transportanbieter, und alle Transportfunktionen, die von Statusobjekten (wie Konfiguration) abhängig sind, sind nicht verfügbar. 
     
-- Die Nachricht Warteschlange Zeile in der Tabelle "Status" enthält den STATUS_FAILURE-Wert. 
+- Die Zeile Nachrichtenwarteschlange in der Statustabelle enthält den STATUS_FAILURE-Wert. 
     
-- Anmeldungen Benachtichtigung sind zulässig, aber diese Anmeldungen führen nicht die vorherige Anmeldung Statusupdates-Objekt zu erhalten. 
+- Huckepack Anmeldungen sind zulässig, aber diese Anmeldungen führen nicht dazu, dass die vorherige Anmeldung Statusobjekt Aktualisierungen empfängt. 
     
-Ein Dienst sollte immer melden Sie sich mit dem MAPI_NO_MAIL-Flag. 
+Ein Dienst sollte sich immer mit dem MAPI_NO_MAIL-Flag anmelden. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIObjects.cpp  <br/> |CMapiObjects::MAPILogonEx  <br/> |MFCMAPI (engl.) verwendet die MAPILogonEx-Methode zur Anmeldung bei MAPI an.  <br/> |
+|MAPIObjects. cpp  <br/> |CMapiObjects:: MAPILogonEx  <br/> |MFCMAPI verwendet die MAPILogonEx-Methode, um sich bei MAPI anzumelden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

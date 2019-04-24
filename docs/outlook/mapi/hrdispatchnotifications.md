@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42ec4266-67b9-416e-8b9b-163c95011626
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: f4af3f2fd094942c48e02849c60f3e46acb1a5f7
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348097"
 ---
 # <a name="hrdispatchnotifications"></a>HrDispatchNotifications
 
@@ -25,13 +25,13 @@ ms.locfileid: "25385564"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erzwingt abgesetzt der Benachrichtigungen an alle in der Warteschlange. 
+ErZwingt das einplanen aller Benachrichtigungen in der Warteschlange. 
   
 |||
 |:-----|:-----|
-|Headerdatei:  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrDispatchNotifications(
@@ -49,22 +49,22 @@ HRESULT HrDispatchNotifications(
 
 S_OK
   
-> Alle in der Warteschlange Benachrichtigungen haben verteilt.
+> Alle Benachrichtigungen in der Warteschlange wurden gesendet.
     
 MAPI_E_USER_CANCEL
   
-> WM_QUIT, WM_QUERYENDSESSION oder WM_ENDSESSION wurde empfangen.
+> WM_QUIT, WM_QUERYENDSESSION oder WM_ENDSESSION wurden empfangen.
     
 MAPI_E_NOT_INITIALIZED
   
-> MAPI konnte nicht initialisiert werden.
+> MAPI wurde nicht initialisiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **HrDispatchNotifications** bewirkt, dass MAPI zu sendende alle Benachrichtigungen, die derzeit in der MAPI-Benachrichtigung Engine Warteschlange abgelegt werden ohne eine Nachricht Versendung warten. Dies kann eine wirtschaftliche Auswirkung auf die RAM-Auslastung von haben. Weitere Informationen finden Sie unter [erzwingen eine Benachrichtigung](forcing-a-notification.md). 
+Die **HrDispatchNotifications** -Funktion veranlasst MAPI, alle derzeit in der Warteschlange befindlichen Benachrichtigungen im MAPI-Benachrichtigungsmodul zu senden, ohne auf einen Nachrichtenversand zu warten. Dies kann sich positiv auf die Arbeitsspeicherauslastung auswirken. Weitere Informationen finden Sie unter [Erzwingen einer Benachrichtigung](forcing-a-notification.md). 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Einige Anwendungen warten Sie eine Benachrichtigung in einer Timeoutschleife, die mit dem Windows- [PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx) und [DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx) Funktionen. Klicken Sie auf alle außer den schnellsten Plattformen können solcher Anwendungen schlechten Leistung oder sogar Blockierung der Benachrichtigungen auftreten. Mithilfe von **HrDispatchNotifications** nicht nur verringert Code, sondern wird die Leistung verbessert. 
+Einige Anwendungen warten auf eine Benachrichtigung in einer Timeout Schleife mithilfe der Windows [PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx) -und [DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx) -Funktionen. Auf allen, außer den schnellsten Plattformen können solche Anwendungen eine schlechte Leistung oder sogar eine Blockierung von Benachrichtigungen aufweisen. Die Verwendung von **HrDispatchNotifications** reduziert nicht nur den Code, sondern verbessert auch die Leistung. 
   
 

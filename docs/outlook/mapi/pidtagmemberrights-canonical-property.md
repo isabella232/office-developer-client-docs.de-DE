@@ -1,5 +1,5 @@
 ---
-title: PidTagMemberRights (kanonische Eigenschaft)
+title: Kanonische Pidtagmemberrights (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,100 +11,100 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3e526b93-1f64-41ea-b43c-5b03fe1c56ed
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: dcbf8a323f5178a5a2e39d0963dd19415ab835bd
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342694"
 ---
-# <a name="pidtagmemberrights-canonical-property"></a>PidTagMemberRights (kanonische Eigenschaft)
+# <a name="pidtagmemberrights-canonical-property"></a>Kanonische Pidtagmemberrights (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Reihe von Bits an, die die Rechte von dieser Member in einem Ordner oder Postfach angegeben.
+Enthält eine Reihe von Bits, die die Rechte dieses Members für einen Ordner oder ein Postfach angegeben haben.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_MEMBER_RIGHTS  <br/> |
 |Kennung:  <br/> |0x6673  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
+|Bereich:  <br/> |Zugriffssteuerung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle zum Rechte eines Elements in einem Ordner zu definieren. Diese Rechte können angezeigt und geändert werden. Die folgenden Werte sind für diese Eigenschaft festgelegten Berechtigungen. 
+Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle verwendet, um die Rechte eines Members für einen Ordner zu definieren. Diese Rechte können angezeigt und geändert werden. Die folgenden Werte sind für diese Eigenschaft definierte Rechte. 
   
 frightsReadAny
   
-> Member kann Nachrichten nicht gelesen.
+> Mitglieder können alle Nachrichten lesen.
     
 frightsCreate
   
-> Member kann Nachrichten erstellen.
+> Mitglied kann Nachrichten erstellen.
     
 frightsEditOwned
   
-> Member kann alle Nachrichten, deren Besitzer der Benutzer bearbeiten.
+> Mitglieder können alle Nachrichten bearbeiten, die dem Benutzer gehören.
     
 frightsDeleteOwned
   
-> Member kann alle Nachrichten, deren Besitzer der Benutzer löschen.
+> Das Mitglied kann alle Nachrichten löschen, die dem Benutzer gehören.
     
 frightsEditAny
   
-> Member kann eine beliebige Nachricht bearbeiten.
+> Mitglied kann jede Nachricht bearbeiten.
     
 frightsDeleteAny
   
-> Member kann eine beliebige Nachricht löschen.
+> Mitglied kann jede Nachricht löschen.
     
 frightsCreateSubfolder
   
-> Member kann Unterordner für den Ordner erstellen.
+> Mitglied kann Unterordner für den Ordner erstellen.
     
 frightsOwner
   
-> Mitglied hat alle vorherigen Rechte für den Ordner.
+> Mitglied verfügt über alle vorherigen Rechte für den Ordner.
     
-frightsContact
+Berechtigung frightsContact
   
-> Member können Ihren Namen als den Kontakt für den Ordner angezeigt werden.
+> Member kann Ihren Namen als Kontakt im Ordner angezeigt werden.
     
-frightsVisible
+frightsVisible umgewandelt
   
-> Member kann sehen, dass der Ordner vorhanden ist.
+> Mitglied kann sehen, dass der Ordner vorhanden ist.
     
 rightsNone
   
-> Member verfügt nicht Rechte für den Ordner.
+> Member verfügt nicht über Rechte für den Ordner.
     
 rightsReadOnly
   
-> Member kann eine beliebige Nachricht im Ordner lesen.
+> Mitglied kann alle Nachrichten im Ordner lesen.
     
 rightsReadWrite
   
-> Member kann aus lesen und Schreiben in eine beliebige Nachricht im Ordner.
+> Mitglied kann aus einer beliebigen Nachricht im Ordner lesen und diese schreiben.
     
 rightsAll
   
-> Mitglied hat alle vorherigen Rechte für den Ordner.
+> Mitglied verfügt über alle vorherigen Rechte für den Ordner.
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> Ordner Vorgänge behandelt.
+> Behandelt Ordner Vorgänge.
     
 [[MS-OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
   
@@ -112,17 +112,17 @@ rightsAll
     
 [[MS-OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
-> Gibt die Methoden zum Verbinden mit und Postfächer als Stellvertreter und Interaktionen mit Nachrichten und Kalenderelemente konfigurieren, wenn sie im Auftrag eines anderen Benutzers agieren.
+> Gibt Methoden zum Herstellen einer Verbindung mit und Konfigurieren von Postfächern als Stellvertreter sowie Interaktionen mit Nachrichten-und Kalenderelementen an, wenn Sie im Auftrag eines anderen Benutzers agieren.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -137,5 +137,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -9,38 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 1461148d-90a9-6f7c-1b28-9310ffaf0e3b
 description: Gibt den Schattentyp für ein Shape an.
-ms.openlocfilehash: b96ad4a877d72bf4457ec3cf038a29a2b414e0f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 607881e4a520f1376562394c6e40ab5d2508906d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342861"
 ---
-# <a name="shapeshdwtype-cell-fill-format-section"></a>ShapeShdwType Cell (Fill Format Section)
+# <a name="shapeshdwtype-cell-fill-format-section"></a>Zelle "ShapeShdwType" (Abschnitt "Fill Format")
 
 Gibt den Schattentyp für ein Shape an. 
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Zeichenblattstandard verwenden (Standard)  <br/> |**visFSTPageDefault** <br/> |
-|1  <br/> |Einfach  <br/> |**visFSTSimple** <br/> |
-|2  <br/> |Schräg  <br/> |**visFSTOblique** <br/> |
+|1  <br/> |Simple  <br/> |**visFSTSimple** <br/> |
+|2  <br/> |Oblique  <br/> |**visFSTOblique** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie diese Zelle für einen Shape Schatten, der sich vom Zeichenblattstandard unterscheidet (der Schattentyp Seite wird in der Zelle ShdwType in den Abschnitt "Page Properties" definiert).
+Verwenden Sie diese Zelle, um einen anderen Shape-Schatten als den Seiten Standard anzuwenden (der Standard Schattentyp der Seite ist in der Zelle "ShdwType im Abschnitt Page Properties definiert).
   
-Einfacher Schatten werden als Offset Schatten auf der Benutzeroberfläche (UI) beschrieben. Ein einfacher Schatten hat den Effekt der Form wird auf eine parallele Ebene hinter dem Shape schattiert. Schräge Schatten werden als schräge Schatten auf der Benutzeroberfläche beschrieben, und weisen Sie die Auswirkung des einen Schatten auf eine senkrecht zum Shape. 
+Einfache Schattentypen werden als Abstandsschatten auf der Benutzeroberfläche beschrieben. Ein einfacher Schatten hat den Effekt, dass das Shape auf einer zum Shape parallelen Ebene einen Schatten zu werfen scheint. Schräge Schatten werden als schräge Schatten auf der Benutzeroberfläche beschrieben und haben den Effekt, dass der Schatten auf einer zum Shape rechtwinkligen Ebene zu liegen scheint. 
   
 Eine Liste vordefinierter einfacher und schräger Schatten finden Sie im Dialogfeld **Schatten** im Feld **Formatvorlage** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle ShapeShdwType aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |ShapeShdwType  <br/> |
+|Zellenname:  <br/> |Zelle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeShdwType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

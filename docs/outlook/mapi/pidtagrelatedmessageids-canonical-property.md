@@ -1,5 +1,5 @@
 ---
-title: PidTagRelatedMessageIds (kanonische Eigenschaft)
+title: Kanonische Pidtagrelatedmessageids (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 51f0eb8a-0a16-4b45-9380-28caddecf955
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0c3b200c416a21dab00e1ad31e70b58fbdbf845e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d909a121bdc528a04d0f400555a6f98f29da8f0c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355160"
 ---
-# <a name="pidtagrelatedmessageids-canonical-property"></a>PidTagRelatedMessageIds (kanonische Eigenschaft)
+# <a name="pidtagrelatedmessageids-canonical-property"></a>Kanonische Pidtagrelatedmessageids (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Liste mit Bezeichnern für Nachrichten, die mit denen eine Nachricht verbunden ist.
+Enthält eine Liste von Bezeichnern für Nachrichten, denen eine Nachricht zugeordnet ist.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält eine Liste mit Bezeichnern für Nachrichten, die mit denen eine Nachric
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Bezeichner verwenden bestimmte Konstruktion dieselben Regeln wie für die **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft verwendet werden.
+Die Bezeichner verwenden dieselben speziellen Konstruktionsregeln wie für die **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

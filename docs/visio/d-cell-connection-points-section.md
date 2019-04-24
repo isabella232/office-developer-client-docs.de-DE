@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 28b18e8d-fecf-a798-813e-c1a310002244
 description: Eine Zelle für den Entwurf, die zum Eingeben oder Testen von Formeln verwendet werden kann.
-ms.openlocfilehash: 21c81c7a0a64c3016d8cff3b33d83ce785dc24eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e7bd61b8bc7a1a3b765af738681d958e2c83ba05
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345087"
 ---
-# <a name="d-cell-connection-points-section"></a>D Cell (Connection Points Section)
+# <a name="d-cell-connection-points-section"></a>Zelle "D" (Abschnitt "Connection Points")
 
 Eine Zelle für den Entwurf, die zum Eingeben oder Testen von Formeln verwendet werden kann.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um auf die Zelle D zuzugreifen, klicken Sie mit der rechten Maustaste auf eine Zeile und anschließend im Kontextmenü auf Zeilentyp ändern. 
+Klicken Sie zum Zugreifen auf die Zelle D mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im Kontextmenü auf **zeilenTyp ändern** . 
   
-Wenn Sie eine Referenz auf die Zelle D nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle D aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Connections.D [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Connections. D [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle D aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle D nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionConnectionPts** <br/> |
-| Zeilenindex:  <br/> |**VisRowConnectionPts** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> |**visCnnctD** <br/> |
+| Zeilenindex:  <br/> |**visRowConnectionPts** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visCnnctD** <br/> |
    
 

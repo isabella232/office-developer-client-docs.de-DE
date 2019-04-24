@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 815e0df8-5ebf-ef1b-d620-bce8abb69f1a
 description: Gibt die Sprache an, in der Zellformeln erstellt wurden.
-ms.openlocfilehash: 669bde032daeda90b22cdab5d1758c6cbd4109d5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e1e5b92f01e97bc63003a4b195c159a50f61e77b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346501"
 ---
-# <a name="langid-cell-miscellaneous-section"></a>LangID Cell (Miscellaneous Section)
+# <a name="langid-cell-miscellaneous-section"></a>Zelle "LangID" (Abschnitt "Miscellaneous")
 
 Gibt die Sprache an, in der Zellformeln erstellt wurden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Liste der von Microsoft Office-Anwendungen unterstützten Sprachen finden Sie im Thema [Zelle "DocLangID"](doclangid-cell-document-properties-section.md) (Abschnitt "Document Properties"). 
   
-Wenn Sie einen Verweis auf die Zelle LangID aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "lang" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LangID  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LangID aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle lang aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
-| Zellenindex:  <br/> |**visObjLangID** <br/> |
+| Zeilenindex:  <br/> |**visObjLangID** <br/> |
    
 

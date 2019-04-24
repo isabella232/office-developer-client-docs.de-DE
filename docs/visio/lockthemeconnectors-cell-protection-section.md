@@ -1,31 +1,31 @@
 ---
-title: LockThemeConnectors Cell (Protection Section)
+title: LockThemeConnectors Cell (Protection section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ae7ddd55-7bcc-4bb6-bab7-97806122f166
-description: Verhindert, dass die ConnectorsSchemeIndex Zelle in der Zeile mit Design durch Anwenden eines neuen Designs oder Auswählen eines neuen Connector Schemas geändert wird. Verhindert nicht, dass Benutzer diesen Wert in das ShapeSheet manuell zu bearbeiten.
-ms.openlocfilehash: c74bcf554f0f14de47480397a96680469826d2c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Verhindert, dass die Zelle ConnectorsSchemeIndex in der Zeile Designeigenschaften geändert wird, indem ein neues Design angewendet oder ein neues Connector-Schema ausgewählt wird. Verhindert nicht, dass Benutzer diesen Wert manuell im ShapeSheet bearbeiten.
+ms.openlocfilehash: 8097e50646fd59f4ac0212cbe9ca2ecfaadab7a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348237"
 ---
-# <a name="lockthemeconnectors-cell-protection-section"></a>LockThemeConnectors Cell (Protection Section)
+# <a name="lockthemeconnectors-cell-protection-section"></a>LockThemeConnectors Cell (Protection section)
 
-Verhindert, dass die **ConnectorsSchemeIndex** Zelle in der Zeile mit **Design** durch Anwenden eines neuen Designs oder Auswählen eines neuen Connector Schemas geändert wird. Verhindert nicht, dass Benutzer diesen Wert in das ShapeSheet manuell zu bearbeiten. 
+Verhindert, dass die Zelle **ConnectorsSchemeIndex** in der Zeile **Designeigenschaften** geändert wird, indem ein neues Design angewendet oder ein neues Connector-Schema ausgewählt wird. Verhindert nicht, dass Benutzer diesen Wert manuell im ShapeSheet bearbeiten. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Die Zelle **ConnectorsSchemeIndex** kann nicht aus dem aktuellen Wert geändert werden, sofern nicht direkt im ShapeSheet geändert.  <br/> |
-|FALSE  <br/> |Die Zelle **ConnectorsSchemeIndex** kann vom aktuellen Wert über die Benutzeroberfläche geändert werden.  <br/> |
+|TRUE  <br/> |Die Zelle **ConnectorsSchemeIndex** kann nicht von Ihrem aktuellen Wert geändert werden, es sei denn, Sie wurde direkt im ShapeSheet geändert.  <br/> |
+|FALSE  <br/> |Die **ConnectorsSchemeIndex** -Zelle kann von Ihrem aktuellen Wert über die Benutzeroberfläche geändert werden.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **LockThemeConnectors** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **LockThemeConnectors** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

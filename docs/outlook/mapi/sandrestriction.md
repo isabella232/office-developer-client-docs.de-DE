@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1b7dfe87-f87f-43e3-8332-a0d9c3f70d16
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9f8da0902ea4c4a862d279ee80ba566c0473c44e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: da35c9c72f4cf3f076715a7a35a3e3514c672ceb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344660"
 ---
 # <a name="sandrestriction"></a>SAndRestriction
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Einschränkung **und** , die zur Teilnahme an einer Gruppe von Einschränkungen, die mit einer logischen **AND** -Operation verwendet wird. 
+Beschreibt eine **und-** Einschränkung, die verwendet wird, um einer Gruppe von Einschränkungen mithilfe einer logischen **and-** Operation beizutreten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SAndRestriction
@@ -44,17 +44,17 @@ typedef struct _SAndRestriction
 
  **cRes**
   
-> Anzahl der Suche Einschränkungen im Array auf das Element **LpRes** zeigt. 
+> Die Anzahl der Sucheinschränkungen im Array, auf die durch das **lpRes** -Element verwiesen wird. 
     
  **lpRes**
   
-> Zeiger auf ein Array von [SRestriction](srestriction.md) -Strukturen, die mit **eine Operation** kombiniert werden. 
+> Zeiger auf ein Array von [SRestriction](srestriction.md) -Strukturen, die mit einer logischen **and-** Operation kombiniert werden. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Ergebnis der **SAndRestriction** ist TRUE, wenn alle seine untergeordneten Einschränkungen zu TRUE ausgewertet werden. Es ist FALSE, wenn alle untergeordneten Beschränkung auf "false" ausgewertet wird. 
+Das Ergebnis des **SAndRestriction** ist true, wenn alle untergeordneten Einschränkungen zu true ausgewertet werden. Er ist FALSE, wenn eine untergeordnete Einschränkung als FALSE ausgewertet wird. 
   
-Eine Beschreibung der Einschränkungstypen zum Erstellen, und Beispielcode finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Eine Beschreibung der Einschränkungen, ihre Erstellung und Beispielcode finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
   
 ## <a name="see-also"></a>Siehe auch
 

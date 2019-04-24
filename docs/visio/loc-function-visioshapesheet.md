@@ -1,5 +1,5 @@
 ---
-title: LOC Function (VisioShapeSheet)
+title: LOC-Funktion(VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251455
 localization_priority: Normal
 ms.assetid: 7db7a8ed-50a9-8495-b978-42a2fddb466a
-description: Nimmt einen Punkt in lokalen Koordinaten eine Form definiert und gibt den entsprechenden Punkt, der in den lokalen Koordinaten des mit der Formel verknüpften Shapes ausgedrückt.
-ms.openlocfilehash: 196e2c92ea6ab410b6ecca9767b68605e4eb4d30
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Akzeptiert einen Punkt, der in den lokalen Koordinaten eines Shapes definiert ist, und gibt den entsprechenden Punkt in den lokalen Koordinaten der Form zurück, die der Formel zugeordnet ist.
+ms.openlocfilehash: 4728e5f8301c6ef10ddb0c14b6c0868a7a48b2a7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344429"
 ---
-# <a name="loc-function-visioshapesheet"></a>LOC Function (VisioShapeSheet)
+# <a name="loc-function-visioshapesheet"></a>LOC-Funktion(VisioShapeSheet)
 
-Nimmt einen Punkt in lokalen Koordinaten eine Form definiert und gibt den entsprechenden Punkt, der in den lokalen Koordinaten des mit der Formel verknüpften Shapes ausgedrückt. 
+Akzeptiert einen Punkt, der in den lokalen Koordinaten eines Shapes definiert ist, und gibt den entsprechenden Punkt in den lokalen Koordinaten der Form zurück, die der Formel zugeordnet ist. 
   
 ## <a name="syntax"></a>Syntax
 
-LOC (** *zeigen* **) 
+LOC (* * *Point* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,7 +30,7 @@ LOC (** *zeigen* **)
 |:-----|:-----|:-----|:-----|
 | _Punkt_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt, der in den lokalen Koordinaten eines Shapes definiert ist.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
@@ -40,7 +40,7 @@ Lokale Koordinaten werden von der unteren linken Ecke des Auswahlrechtecks eines
   
 ## <a name="example"></a>Beispiel
 
-LOC (Pkt (Sheet.5! LocPinX, Sheet.5! LocPinY)) 
+LOC (PNT (Blatt. 5! Zelle LocPinX, Sheet. 5! Zelle LocPinY)) 
   
 In diesem Ausdruck konvertiert PKT ein Paar lokaler Koordinaten in Sheet.5 in einen Punkt. (Bei Sheet.5 handelt es sich um ein weiteres Shape auf demselben Zeichenblatt.) LOC konvertiert diesen Punkt dann in einen äquivalenten Punkt in dem lokalen Koordinatensystem des aktuellen Shapes - relativ zur unteren linken Ecke des Auswahlrechtecks des aktuellen Shapes. 
   

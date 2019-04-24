@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginallyIntendedRecipEmailAddress (kanonische Eigenschaft)
+title: Kanonische Pidtagoriginallyintendedrecipemailaddress (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6a85b695-731a-4401-9c9c-fda6bc308558
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f4adbdfc041ebe5213c384db98343baa82af5b05
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4a0e7325618a38addefe562c8207066dfea620f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342542"
 ---
-# <a name="pidtagoriginallyintendedrecipemailaddress-canonical-property"></a>PidTagOriginallyIntendedRecipEmailAddress (kanonische Eigenschaft)
+# <a name="pidtagoriginallyintendedrecipemailaddress-canonical-property"></a>Kanonische Pidtagoriginallyintendedrecipemailaddress (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die e-Mail-Adresse des ursprünglich beabsichtigten Empfänger einer Nachricht Autoforwarded.
+Enthält die e-Mail-Adresse des ursprünglich vorgesehenen Empfängers einer AutoForwarded-Nachricht.
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält die e-Mail-Adresse des ursprünglich beabsichtigten Empfänger einer Na
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften sind Beispiele für die Adresseigenschaften für der ursprünglich beabsichtigten Empfänger. Sie müssen vom automatische Agent festgelegt werden, die die Nachricht weitergeleitet hat.
+Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den ursprünglich beabsichtigten Nachrichtenempfänger. Sie müssen vom automatischen Agent festgelegt werden, der die Nachricht weitergeleitet hat.
   
-Diese Eigenschaften entsprechen dem x. 400-Bericht pro Empfänger-Attribut.
+Diese Eigenschaften entsprechen dem Attribut X. 400 pro Empfänger.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

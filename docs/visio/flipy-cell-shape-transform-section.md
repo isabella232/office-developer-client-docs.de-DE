@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 062022ff-e243-2540-becd-d9b969ce83ce
 description: Gibt an, ob das Shape vertikal gekippt wurde.
-ms.openlocfilehash: 42ee740a13c3f447f5cd4a6caa9959189320a8af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 44ea0341cda3655e8acc69e82e89acddac69b80d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346200"
 ---
-# <a name="flipy-cell-shape-transform-section"></a>FlipY Cell (Shape Transform Section)
+# <a name="flipy-cell-shape-transform-section"></a>Zelle "FlipY" (Abschnitt "Shape Transform")
 
 Gibt an, ob das Shape vertikal gekippt wurde.
   
@@ -25,15 +25,15 @@ Gibt an, ob das Shape vertikal gekippt wurde.
 | TRUE  <br/> | Das Shape wurde vertikal gekippt.  <br/> |
 | FALSE  <br/> | Das Shape wurde nicht vertikal gekippt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle FlipY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle FlipY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | FlipY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle FlipY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle FlipY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

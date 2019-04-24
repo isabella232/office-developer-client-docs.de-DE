@@ -1,26 +1,26 @@
 ---
-title: QuickStyleFillMatrix Cell (Quick Style Section)
+title: QuickStyleFillMatrix Cell (Quick Style section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8513cf3f-42bd-4e76-bfa8-8bf12f0d1296
-description: Bestimmt das Füllformat Schnellformatvorlagen, das die Form des aktiven Designs, als ganze Zahl von 0 bis 6 erbt.
-ms.openlocfilehash: b3e5d8dc4346b6f5d8f73b220f77978a21a680c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Formatvorlage für die Schnellformatvorlage, die das Shape vom aktiven Design erbt, als ganze Zahl von 0-6.
+ms.openlocfilehash: fca0d9f8fe58fdc7c227e9c093b418ffef1ccb52
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358716"
 ---
-# <a name="quickstylefillmatrix-cell-quick-style-section"></a>QuickStyleFillMatrix Cell (Quick Style Section)
+# <a name="quickstylefillmatrix-cell-quick-style-section"></a>QuickStyleFillMatrix Cell (Quick Style section)
 
-Bestimmt das Füllformat Schnellformatvorlagen, das die Form des aktiven Designs, als ganze Zahl von 0 bis 6 erbt. 
+Bestimmt die Formatvorlage für die Schnellformatvorlage, die das Shape vom aktiven Design erbt, als ganze Zahl von 0-6. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **QuickStyleFillMatrix** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **QuickStyleFillMatrix** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

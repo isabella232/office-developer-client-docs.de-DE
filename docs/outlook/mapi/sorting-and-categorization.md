@@ -1,5 +1,5 @@
 ---
-title: Sortieren und Kategorisieren
+title: Sortieren und kategorisieren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,53 +7,53 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 853c48e4-ef5b-49da-b281-f72784c598ce
-description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 12668cb87f21b56cd398a7b5375f6a4b40c65829
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 20 November, 2011'
+ms.openlocfilehash: 8a5a07cdeb7f000c9a7da24dbea1a42a6f9fc185
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344506"
 ---
-# <a name="sorting-and-categorization"></a>Sortieren und Kategorisieren
+# <a name="sorting-and-categorization"></a>Sortieren und kategorisieren
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sortieren einer Tabelle platziert Zeilen in einer Bestellung, die für den Viewer sinnvoll sind. Angenommen, möchten ein Betrachter finden in der Inhaltstabelle eines Ordners sortiert nach Betreff der Nachricht, damit alle Threads einer Unterhaltung beieinander während einer anderen Viewer die Nachrichten, die nach dem Namen des Absenders sortiert sollten. Eine Tabelle neu instanziierte ist nicht unbedingt in einer bestimmten Reihenfolge sortiert. 
+Beim Sortieren einer Tabelle werden Zeilen in einer Reihenfolge platziert, die für den Betrachter sinnvoll ist. Beispielsweise könnte ein Betrachter die Inhaltstabelle eines Ordners nach Nachrichtenbetreff sortiert anzeigen, sodass alle Threads einer Unterhaltung zusammen sind, während ein anderer Betrachter die Nachrichten nach dem Namen des Absenders sortieren kann. Eine neu instanziierte Tabelle ist nicht unbedingt in einer bestimmten Reihenfolge sortiert. 
   
-Es gibt zwei Arten von sortieren:
+Es gibt zwei Arten der Sortierung:
   
-- Standard-Sortierung
+- Standard Sortierung
     
-- Kategorisiert sortieren 
+- Kategorisierte Sortierung 
     
-Mit standard sortieren, werden alle Zeilen in einer flachen Liste mit einer oder mehreren Spalten als Sortierschlüssel angezeigt. Mit kategorisierten sortieren, werden die Zeilen mit einer oder mehreren Spalten als Sortierschlüssel hierarchisch angezeigt. Innerhalb jeder Kategorie ist eine spezielle Überschriftenzeile, die die folgenden Spalten enthält.
+Bei der Standardsortierung werden alle Zeilen in einer flachen Liste mit einer oder mehreren Spalten als Sortierschlüssel angezeigt. Bei der kategorisierten Sortierung werden die Zeilen hierarchisch mit einer oder mehreren Spalten als Sortierschlüssel angezeigt. Innerhalb jeder Kategorie gibt es eine spezielle Überschriftenzeile mit den folgenden Spalten.
   
-- Die Spalte oder Spalten, die den Sortierschlüssel bilden
+- Die Spalten, aus denen der Sortierschlüssel besteht
     
-- **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))
+- **PR_CONTENT_COUNT** ([Pidtagcontentcount (](pidtagcontentcount-canonical-property.md))
     
-- **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md))
+- **PR_CONTENT_UNREAD** ([Pidtagcontentunreadcount (](pidtagcontentunreadcount-canonical-property.md))
     
-- **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
+- **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))
     
-- **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md))
+- **PR_DEPTH** ([Pidtagdepth (](pidtagdepth-canonical-property.md))
     
-- **PR_ROW_TYPE** ([PidTagRowType](pidtagrowtype-canonical-property.md)) 
+- **PR_ROW_TYPE** ([Pidtagrowtype (](pidtagrowtype-canonical-property.md)) 
     
-Unter der Überschriftszeile eingezogen werden alle Zeilen aus der Tabelle, die Spalten mit Werten enthalten, die mit den Sortierschlüssel übereinstimmen. Diese Zeilen werden die Zeilen Endknoten bezeichnet. Endknoten Zeilen enthalten alle Spalten in der Spalte minus Sortierschlüsselspalten festgelegt. 
+Eingerückt unter der Überschriftenzeile befinden sich alle Zeilen aus der Tabelle, die Spalten mit Werten enthalten, die mit dem Sortierschlüssel übereinstimmen. Diese Zeilen werden als Blattzeilen bezeichnet. Blattzeilen enthalten alle Spalten in der Spaltengruppe minus der Sortierschlüsselspalten. 
   
-In den Tabellen Inhalt von Ordnern unterstützen häufig kategorisierte Sortierung zusätzlich zum standard sortieren. In den Tabellen Inhalt der Address Book Container unterstützen in der Regel nur standard sortieren. 
+Die Inhaltsordner Verzeichnisse unterstützen häufig kategorisierte Sortierungen zusätzlich zur Standardsortierung. Die Inhaltstabellen der Adressbuchcontainer unterstützen in der Regel nur die Standardsortierung. 
   
-Eine Kategorie kann zwei Zustände haben: reduziert und erweitert. Wenn eine Kategorie im reduzierten Zustand befindet, wird nur die Kopfzeile von [IMAPITable::QueryRows](imapitable-queryrows.md)zurückgegeben. Wenn eine Kategorie im erweiterten Zustand befindet, werden alle Zeilen im Zusammenhang mit der Kategorie zurückgegeben. Dazu gehören die Kopfzeile und die untergeordneten Zeilen. 
+Eine Kategorie kann zwei Zustände aufweisen: reduziert und erweitert. Wenn sich eine Kategorie im reduzierten Zustand befindet, wird nur die Überschriftenzeile von [IMAPITable:: QueryRows](imapitable-queryrows.md)zurückgegeben. Wenn sich eine Kategorie im erweiterten Zustand befindet, werden alle mit der Kategorie verknüpften Zeilen zurückgegeben. Dazu gehören die Überschriftenzeile und die Blattzeilen. 
   
-Jeder Kategorie in einer Tabellenansicht kann erweitert oder reduziert unabhängig voneinander. D. h., müssen nicht alle Kategorien in dem Zustand zur selben Zeit sein. Einige Kategorien können reduziert werden, während andere erweitert werden. 
+Jede Kategorie in einer Tabellenansicht kann unabhängig voneinander erweitert oder reduziert werden. Das heißt, nicht alle Kategorien müssen gleichzeitig in demselben Zustand sein; Einige Kategorien können reduziert werden, während andere erweitert werden. 
   
-Der Benutzer einer kategorisierten Tabelle entscheidet, wie es angezeigt wird. Option für eine gemeinsame ist die Verwendung ein Steuerelements im Windows SDK bezeichnet das Treeview-Steuerelement bereitgestellt. TreeView-Steuerelemente sind Listenfelder, die Informationen in einer Baumstruktur unterstützen. Überschriftenzeilen für Kategorien im erweiterten Zustand werden mit einem Minuszeichen gekennzeichnet, während Überschriftenzeilen für Kategorien im reduzierten Zustand mit einem Pluszeichen (+) markiert sind. Mit den Endknoten Zeilen unter der Überschriftenzeilen eingezogen werden erweiterte Kategorien angezeigt. 
+Der Benutzer einer kategorisierten Tabelle entscheidet, wie er angezeigt wird. Eine gängige Option ist die Verwendung eines Steuerelements, das im Windows SDK mit dem Namen TreeView-Steuerelement bereitgestellt wird. TreeView-Steuerelemente sind Listenfelder, die Informationen in einer baumartigen Struktur unterstützen. Überschriftenzeilen für Kategorien im erweiterten Zustand sind mit einem Minuszeichen gekennzeichnet, während Überschriftenzeilen für Kategorien im reduzierten Zustand mit einem Pluszeichen gekennzeichnet sind. Erweiterte Kategorien werden mit eingezogenen Blattzeilen unter der Überschriftenzeile angezeigt. 
   
-Um zu reduzieren und erweitern eine Kategorie, eine Clientanwendung oder Service Provider verwendet die folgenden [IMAPITable: IUnknown](imapitableiunknown.md) Methoden: 
+Zum reduzieren und Erweitern einer Kategorie verwendet eine Clientanwendung oder ein Dienstanbieter die folgenden [IMAPITable: IUnknown](imapitableiunknown.md) -Methoden: 
   
 - [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)
     
@@ -63,23 +63,23 @@ Um zu reduzieren und erweitern eine Kategorie, eine Clientanwendung oder Service
     
 - [IMAPITable::CollapseRow](imapitable-collapserow.md)
     
-Weitere Informationen zum Sortieren der Threads einer Unterhaltung finden Sie unter den folgenden Themen:
+Weitere Informationen zum Sortieren der Threads einer Unterhaltung finden Sie in den folgenden Themen:
   
 - [SSortOrder](ssortorder.md)
     
-- [PidTagSubject (kanonische Eigenschaft)](pidtagsubject-canonical-property.md)
+- [Kanonische PidTagSubject-Eigenschaft](pidtagsubject-canonical-property.md)
     
-- [PidTagSubjectPrefix (kanonische Eigenschaft)](pidtagsubjectprefix-canonical-property.md)
+- [Kanonische Pidtagsubjectprefix (-Eigenschaft](pidtagsubjectprefix-canonical-property.md)
     
-- [PidTagNormalizedSubject (kanonische Eigenschaft)](pidtagnormalizedsubject-canonical-property.md)
+- [Kanonische PidTagNormalizedSubject-Eigenschaft](pidtagnormalizedsubject-canonical-property.md)
     
-- [PidTagConversationTopic (kanonische Eigenschaft)](pidtagconversationtopic-canonical-property.md)
+- [Kanonische Eigenschaftpidtagconversationtopic-Eigenschaft](pidtagconversationtopic-canonical-property.md)
     
-- [PidTagConversationIndex (kanonische Eigenschaft)](pidtagconversationindex-canonical-property.md)
+- [Kanonische PidTagConversationIndex-Eigenschaft](pidtagconversationindex-canonical-property.md)
     
 - [ScCreateConversationIndex](sccreateconversationindex.md)
     
-- [Sortieren von Tabellen nach dem Festlegen der Spalten und Einschränkungen](sorting-tables-after-setting-columns-and-restrictions.md)
+- [Sortieren von Tabellen nach dem Festlegen von Spalten und Einschränkungen](sorting-tables-after-setting-columns-and-restrictions.md)
     
 ## <a name="see-also"></a>Siehe auch
 

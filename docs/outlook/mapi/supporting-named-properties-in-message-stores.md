@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a1c73bb5-b44a-4ec6-89e4-0e2228572b2d
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 235683d8565732034f868dd71e4f2047ffe76f09
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7e33c49d1ed211abf70e04a8bd3c06ca62e88572
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349644"
 ---
 # <a name="supporting-named-properties-in-message-stores"></a>Unterst�tzung f�r benannte Eigenschaften im Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Message objects can have properties in them that are not in the set of properties defined by MAPI. Such properties can be unnamed or named. Unnamed properties must reside in a range of property identifiers defined by MAPI. Named custom properties reside in a different range of property identifiers defined by MAPI. They are typically used by custom message types. Your message store provider must support named properties if it is to be used as the default message store. Supporting named properties means implementing the [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) and [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) methods, and implementing one or more mapping signatures that identify what names go with what property identifiers. For more information, see [Definieren von neuen MAPI-Eigenschaften](defining-new-mapi-properties.md) and [Unterst�tzung f�r benannte Eigenschaften](supporting-named-properties.md).
   
@@ -29,5 +29,5 @@ Die meisten Nachrichtenspeichers Anbieter, unterst�tzen, mit dem Namen Eigensc
 
 
 
-[Implementieren von Nachrichten in Nachrichtenspeicher](implementing-messages-in-message-stores.md)
+[Implementieren von Nachrichten in Nachrichtenspeichern](implementing-messages-in-message-stores.md)
 

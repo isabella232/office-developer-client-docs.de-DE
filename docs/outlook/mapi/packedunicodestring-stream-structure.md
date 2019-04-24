@@ -1,47 +1,47 @@
 ---
-title: PackedUnicodeString-Streamstruktur
+title: Packedunicodestring streamstruktur-Datenstrom Struktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e4cb1613-7e81-432a-ae3a-7fedb05dac65
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 00791ab47cc3c6bd435d6f581e5ada53ae59d73b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fc20c259f30ded2f96f3bf314e74207bebcac980
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348475"
 ---
-# <a name="packedunicodestring-stream-structure"></a>PackedUnicodeString-Streamstruktur
+# <a name="packedunicodestring-stream-structure"></a>Packedunicodestring streamstruktur-Datenstrom Struktur
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die PackedUnicodeString Stream-Datenstruktur enthält eine Unicode (UTF-16) Darstellung einer Zeichenfolge. Diese Zeichenfolge wird durch ein Null-Zeichen nicht abgeschlossen. Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmittelbar miteinander in der folgenden Reihenfolge gespeichert. Die tatsächlichen Datenelemente, die vorhanden hängen die Länge der Zeichenfolge in UTF-16 Darstellung.
+Die Packedunicodestring streamstruktur-Datenstrom Struktur enthält eine Unicode-Darstellung (UTF-16) einer Zeichenfolge. Diese Zeichenfolge wird nicht durch ein NULL-Zeichen beendet. Datenelemente in diesem Stream werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der unten aufgeführten Reihenfolge. Die vorhandenen Datenelemente hängen von der Länge der Zeichenfolge in der UTF-16-Darstellung ab.
   
-- Nach einer Zeichenfolge, deren Darstellung UTF-16 weniger als 255 WCHARs so lang wie enthält, werden die Elemente wie folgt:
+- Für eine Zeichenfolge, deren UTF-16-Darstellung kleiner als 255 WCHARs, sind die folgenden Datenelemente enthalten:
     
-  - Länge: BYTE (1 Byte), die Länge in WCHARs so lang wie, Anzahl der UTF-16 Darstellung der Zeichenfolge.
+  - Length: BYTE (1 Byte), die Länge in der Anzahl von WCHARs, der UTF-16-Darstellung der Zeichenfolge.
     
-  - Zeichen: Ein Array von WCHAR. Die Anzahl der dieses Array ist gleich der Länge Data-Element. Die Daten im Array ist die UTF-16-Darstellung der Zeichenfolge.
+  - Characters: ein Array von Typ WCHAR. Die Anzahl dieses Arrays ist gleich dem length-Datenelement. Die Daten im Array sind die UTF-16-Darstellung der Zeichenfolge.
     
-- Nach einer Zeichenfolge, deren Darstellung UTF-16 255 und 65535 WCHARs so lang wie enthält, werden die Elemente wie folgt:
+- Für eine Zeichenfolge, deren UTF-16-Darstellung 255 bis 65535 WCHARs enthält, lauten die folgenden Datenelemente:
     
-  - Präfix: BYTE (1 Byte) der Wert der 255 (0xff).
+  - Prefix: BYTE (1 Byte), der Wert von 255 (0xFF).
     
-  - Länge: Wort (2 Bytes), die Länge in WCHARs so lang wie, Anzahl der UTF-16 Darstellung der Zeichenfolge.
+  - Length: WORD (2 Bytes), die Länge (in WCHARs) der UTF-16-Darstellung der Zeichenfolge.
     
-  - Zeichen: Ein Array von WCHAR. Die Anzahl der dieses Array ist gleich der Länge Data-Element. Die Daten im Array ist die UTF-16-Darstellung der Zeichenfolge.
+  - Characters: ein Array von Typ WCHAR. Die Anzahl dieses Arrays ist gleich dem length-Datenelement. Die Daten im Array sind die UTF-16-Darstellung der Zeichenfolge.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Elemente und Felder in Outlook](outlook-items-and-fields.md)
+[Outlook-Elemente und-Felder](outlook-items-and-fields.md)
   
-[Streamstrukturen](stream-structures.md)
+[Stream-Strukturen](stream-structures.md)
   
-[FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
+[FieldDefinition streamstruktur-Datenstrom Struktur](fielddefinition-stream-structure.md)
 

@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b9584226-79d2-4d83-8f31-dbfbc50f16c5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5fcebd1fefa0d077acbe62a45a19a622e13b35fc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6464f16d9ad73b332ff20dc007ef162b9525c6d5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346641"
 ---
 # <a name="mapiinitialize"></a>MAPIInitialize
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Inkrementiert den Referenzzähler des MAPI-Subsystems und globale-Daten für die MAPI-DLL initialisiert. 
+Inkrementiert den Verweiszähler für das MAPI-Subsystem und initialisiert globale Daten für die MAPI-DLL. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HRESULT MAPIInitialize(
@@ -43,78 +43,78 @@ HRESULT MAPIInitialize(
 
  _lpMapiInit_
   
-> [in] Zeiger auf eine [MAPIINIT_0](mapiinit_0.md) -Struktur. Der Parameter _LpMapiInit_ kann auf NULL festgelegt werden. 
+> in Zeiger auf eine [MAPIINIT_0](mapiinit_0.md) -Struktur. Der _lpMapiInit_ -Parameter kann auf NULL festgelegt werden. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> MAPI-Subsystems wurde erfolgreich initialisiert.
+> Das MAPI-Subsystem wurde erfolgreich initialisiert.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Referenz für das MAPI-Subsystem und die [MAPIUninitialize](mapiuninitialize.md) Funktion dekrementiert zählen **"MAPIInitialize"** Funktion Schritten für die interne verweiszählung. Die Anzahl der Anrufe an eine Funktion muss daher die Anzahl der Aufrufe der anderen entsprechen. **"MAPIInitialize"** gibt S_OK zurück, wenn MAPI zuvor nicht initialisiert wurde. 
+Die **MAPIInitialize** -Funktion erhöht die MAPI-Verweisanzahl für das MAPI-Subsystem, und die [MAPIUninitialize](mapiuninitialize.md) -Funktion dekrementiert den internen Verweiszähler. Daher muss die Anzahl der Aufrufe an eine Funktion der Anzahl der Aufrufe der anderen entsprechen. **MAPIInitialize** gibt S_OK zurück, wenn MAPI nicht zuvor initialisiert wurde. 
   
-Ein Client oder Dienstanbieter muss **"MAPIInitialize"** aufrufen, bevor eine beliebige andere MAPI-Aufruf. Dazu wird Client oder Dienst Anbieter Aufrufe den MAPI_E_NOT_INITIALIZED Wert zurückgegeben. 
+Ein Client oder ein Dienstanbieter muss **MAPIInitialize** aufrufen, bevor ein anderer MAPI-Aufruf vorgenommen wird. Wenn dies nicht der Fall ist, werden Client-oder Dienstanbieter Aufrufe zum Zurückgeben des MAPI_E_NOT_INITIALIZED-Werts veranlasst. 
   
-Beim Aufruf von **"MAPIInitialize"** aus einer Multithread-Anwendung, legen Sie den Parameter _LpMapiInit_ auf eine [MAPIINIT_0](mapiinit_0.md) -Struktur, die wie folgt deklariert wird: 
+Wenn Sie **MAPIInitialize** von einer Multithread-Anwendung aufrufen, legen Sie den Parameter _LpMapiInit_ auf eine [MAPIINIT_0](mapiinit_0.md) -Struktur fest, die wie folgt deklariert wird: 
   
  **MAPIINIT_0** MAPIINIT = {0, MAPI_MULTITHREAD_NOTIFICATIONS} 
   
-und rufen Sie: 
+und rufen Sie an: 
   
- **"MAPIInitialize"** (&amp;MAPIINIT); 
+ **MAPIInitialize** (&amp;MAPIINIT); 
   
-Wenn diese Struktur deklariert wird, erstellt MAPI einen getrennten Thread, um das Benachrichtigungsfenster verarbeitet werden, wird fortgesetzt, bis der Initialize-Referenzzähler auf 0 (null) fällt aus. Ein Windows-Dienst muss das **Ulflags** Mitglied der **MAPIINIT_0** -Struktur, die auf den _LpMapiInit_ zu MAPI_NT_SERVICE festgelegt. 
+Wenn diese Struktur deklariert wird, erstellt MAPI einen separaten Thread zur Behandlung des Benachrichtigungsfensters, das fortgesetzt wird, bis der Initialisierungs Verweiszähler auf Null fällt. Ein Windows-Dienst muss das **ulflags** -Element der **MAPIINIT_0** -Struktur festlegen, auf die von _lpMapiInit_ auf MAPI_NT_SERVICE verwiesen wird. 
   
 > [!NOTE]
-> **"MAPIInitialize"** oder **MAPIUninitialize** aus kann nicht innerhalb einer Win32 **DllMain** -Funktion oder eine andere Funktion, die erstellt oder Threads beendet aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von threadsicheren Objekten](using-thread-safe-objects.md). 
+> Sie können **MAPIInitialize** oder **MAPIUninitialize** nicht über eine Win32- **DllMain** -Funktion oder eine andere Funktion aufrufen, die Threads erstellt oder beendet. Weitere Informationen finden Sie unter [Verwenden von Thread sicheren Objekten](using-thread-safe-objects.md). 
   
- **"MAPIInitialize"** gibt keine erweiterten Fehlerinformationen zurück. Im Gegensatz zu den meisten anderen MAPI-Aufrufe sind die Bedeutung der seine Rückgabewerte streng, um mit dem bestimmten Schritt der Initialisierung entsprechen, die nicht definiert: 
+ **MAPIInitialize** gibt keine erweiterten Fehlerinformationen zurück. Im Gegensatz zu den meisten anderen MAPI-aufrufen werden die Bedeutungen der Rückgabewerte strikt definiert, um dem fehlerhaften Schritt der Initialisierung zu entsprechen: 
   
-1. Überprüft, Parameter und Kennzeichen.
+1. Überprüft Parameter und Flags.
     
-    MAPI_E_INVALID_PARAMETER oder MAPI_E_UNKNOWN_FLAGS. Ungültiger Parameter oder Flag Aufrufer übergeben werden.
+    MAPI_E_INVALID_PARAMETER oder MAPI_E_UNKNOWN_FLAGS. Der Aufrufer hat den ungültigen Parameter oder das Flag übergeben.
     
-2. Initialisiert MAPI erforderliche Registrierungsschlüssel, und die Art des Betriebssystems bestätigt. Dieser Schritt tritt nur auf, wenn der Clientprozess als Dienst unter Windows ausgeführt wird und das Flag MAPI_NT-Dienst in der Struktur **MAPIINIT_0** festgelegt. 
+2. Initialisiert die für MAPI erforderlichen Registrierungsschlüssel und bestätigt den Betriebssystemtyp. Dieser Schritt tritt nur auf, wenn der Clientprozess unter Windows als Dienst ausgeführt wird und das MAPI_NT-Dienst Kennzeichen in der **MAPIINIT_0** -Struktur festlegt. 
     
-    MAPI_E_TOO_COMPLEX. Der aufrufende Prozess ist ein Windows-Dienst und MAPI erforderliche Registrierungsschlüssel konnte nicht initialisiert werden. 
+    MAPI_E_TOO_COMPLEX. Der aufrufende Prozess ist ein Windows-Dienst, und Registrierungsschlüssel, die für MAPI erforderlich sind, konnten nicht initialisiert werden. 
     
-    Zusätzliche Informationen möglicherweise im Anwendungsereignisprotokoll zur Verfügung.
+    Möglicherweise stehen im Anwendungsereignisprotokoll zusätzliche Informationen zur Verfügung.
     
-3. Überprüfen Sie die Kompatibilität von MAPI mit OLE und anschließend werden Sie OLE initialisiert.
+3. Überprüfen Sie, ob MAPI mit OLE kompatibel ist, und initialisieren Sie dann OLE.
     
 1. Überprüft die Kompatibilität zwischen den aktuellen Versionen von OLE und MAPI. 
     
-    MAPI_E_VERSION. Auf der Arbeitsstation installierte OLE-Version ist nicht kompatibel mit dieser Version von MAPI.
+    MAPI_E_VERSION. Die auf der Arbeitsstation installierte OLE-Version ist mit dieser Version von MAPI nicht kompatibel.
     
-2. OLE initialisiert. 
+2. Initialisiert OLE. 
     
-    In diesem Schritt nur kann diese Funktion nicht aufgelisteten Fehlercode zurück. Etwaige Fehler _nicht_ aufgeführt Hier sollte angenommen werden, dass der OLE-Funktion **CoInitialize**stammen.
+    Während dieses Schritts kann diese Funktion einen Fehlercode zurückgeben, der hier nicht aufgeführt wird. Jeder Fehler, der hier _nicht_ aufgeführt wird, sollte davon ausgehen, dass er von der OLE-Funktion " **Initialize**" stammt.
     
-4. Initialisiert pro Prozess globale Variablen.
+4. Initialisiert globale Variablen pro Prozess.
     
-    MAPI_E_SESSION_LIMIT. MAPI richtet Kontext speziell für den aktuellen Prozess. Fehler können auftreten, Win16 übersteigt die Anzahl der Prozesse eine bestimmte Anzahl oder auf einem System verfügbaren Arbeitsspeicher ausgeschöpft ist.
+    MAPI_E_SESSION_LIMIT. MAPI richtet kontextspezifisch für den aktuellen Prozess ein. Fehler können auf Win16 auftreten, wenn die Anzahl der Prozesse eine bestimmte Zahl überschreitet oder wenn der verfügbare Arbeitsspeicher erschöpft ist.
     
-5. Initialisiert gemeinsam genutzte globale Variablen von allen Prozessen.
+5. Initialisiert gemeinsame globale Variablen aller Prozesse.
     
-    MAPI_E_NOT_ENOUGH_RESOURCES. Nicht genügend Systemressourcen waren zum Abschließen des Vorgangs verfügbar.
+    MAPI_E_NOT_ENOUGH_RESOURCES. Es waren nicht genügend Systemressourcen verfügbar, um den Vorgang abzuschließen.
     
-6. Initialisiert das Modul Benachrichtigung, die zugehörigen Fenster und einem Thread erstellt, wenn durch das Flag MAPI_MULTITHREAD_NOTIFICATIONS angefordert. 
+6. Initialisiert das Benachrichtigungsmodul, erstellt sein Fenster und seinen Thread, wenn es vom MAPI_MULTITHREAD_NOTIFICATIONS-Flag angefordert wird. 
     
-    MAPI_E_INVALID_OBJECT. Kann fehlschlagen Systemressourcen aufgebraucht sind. 
+    MAPI_E_INVALID_OBJECT. Kann fehlschlagen, wenn Systemressourcen erschöpft sind. 
     
-7. Lädt und initialisiert den Benutzerprofildienst-Anbieter. Stellt sicher, dass **"MAPIInitialize"** den Registrierungsschlüssel zugreifen können, auf dem Profildaten gespeichert sind. 
+7. Lädt und initialisiert den Profilanbieter. Überprüft, ob **MAPIInitialize** auf den Registrierungsschlüssel zugreifen kann, in dem die Profildaten gespeichert werden. 
     
-    MAPI_E_NOT_INITIALIZED. Der Benutzerprofildienst-Anbieter ist ein Fehler aufgetreten. 
+    MAPI_E_NOT_INITIALIZED. Der Profilanbieter hat einen Fehler festgestellt. 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> ||MFCMAPI (engl.) verwendet die Methode **"MAPIInitialize"** MAPI in einem Hintergrundthread die einige Tabelle Verarbeitung nicht initialisiert werden.  <br/> |
+|ContentsTableListCtrl. cpp  <br/> ||MFCMAPI verwendet die **MAPIInitialize** -Methode, um MAPI in einem Hintergrundthread für die Verarbeitung bestimmter Tabellen zu initialisieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

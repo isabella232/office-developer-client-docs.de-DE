@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 93f82ae0-3442-fac1-9906-b84afef85f5c
 description: Bestimmt die Liniensprungrichtung für Liniensprünge, die bei einem vertikalen dynamischen Verbinder für ein Shape auftreten.
-ms.openlocfilehash: 2d0c0964b52c9afbccc9cb507024825434702b6d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f86c77da62042d1bc2c0274564efa9fdb0887971
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342742"
 ---
-# <a name="conlinejumpdiry-cell-shape-layout-section"></a>ConLineJumpDirY Cell (Shape Layout Section)
+# <a name="conlinejumpdiry-cell-shape-layout-section"></a>Zelle "ConLineJumpDirY" (Abschnitt "Shape Layout")
 
 Bestimmt die Liniensprungrichtung für Liniensprünge, die bei einem vertikalen dynamischen Verbinder für ein Shape auftreten.
   
@@ -28,15 +28,15 @@ Bestimmt die Liniensprungrichtung für Liniensprünge, die bei einem vertikalen 
    
 ## <a name="remarks"></a>Bemerkungen
 
-Zum Festlegen der vertikaler Richtung für *Alle* Verbinder auf einem Zeichenblatt springt, verwenden Sie die Zelle PageLineJumpDirY im Abschnitt Page Layout. 
+Wenn Sie die standardmäßige vertikale Richtung für *alle* Verbinder-Sprünge auf einer Seite festlegen möchten, verwenden Sie die Zelle Zelle PageLineJumpDirY im Abschnitt Seiten Layout. 
   
-Wenn Sie einen Verweis auf die Zelle ConLineJumpDirY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpDirY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ConLineJumpDirY  <br/> |
+| Zellenname:  <br/> | Zelle ConLineJumpDirY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ConLineJumpDirY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpDirY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

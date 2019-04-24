@@ -1,31 +1,31 @@
 ---
-title: RefreshableData-Element (PublishSettings_Type ComplexType) ("Visio XML")
+title: RefreshableData-Element (PublishSettings_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9a3b9d5a-fcba-eb18-3199-bd5a7f889af8
-description: Gibt an, ob ein Recordset-Objekt aktualisierbare mithilfe von Visio Services in Microsoft SharePoint Server 2013.
+description: Gibt an, ob ein Recordset mit Visio Services in Microsoft SharePoint Server 2013 aktualisiert werden kann.
 ms.openlocfilehash: b402e2c9d65bf868c0ac33c782b87857ab6aed75
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346473"
 ---
-# <a name="refreshabledata-element-publishsettingstype-complextype-visio-xml"></a>RefreshableData-Element (PublishSettings_Type ComplexType) ("Visio XML")
+# <a name="refreshabledata-element-publishsettingstype-complextype-visio-xml"></a>RefreshableData-Element (PublishSettings_Type complexType) (' Visio XML ')
 
-Gibt an, ob ein Recordset-Objekt aktualisierbare mithilfe von Visio Services in Microsoft SharePoint Server 2013.
+Gibt an, ob ein Recordset mit Visio Services in Microsoft SharePoint Server 2013 aktualisiert werden kann.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RefreshableData_Type](refreshabledata_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -37,13 +37,13 @@ Gibt an, ob ein Recordset-Objekt aktualisierbare mithilfe von Visio Services in 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[PublishSettings](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |Gibt die Einstellungen, die verwendet werden, wenn das Diagramm mit Visio Services geöffnet wird.  <br/> |
+|[PublishSettings](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |Gibt die Einstellungen an, die beim Öffnen des Diagramms mithilfe von Visio Services verwendet werden.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -53,6 +53,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Der Bezeichner eines Recordset-Objekts.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
+|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Der Bezeichner eines Recordset-Objekts.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
    
 

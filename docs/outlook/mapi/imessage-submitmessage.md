@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ce93469-c55d-48d1-9abb-a637716ed4f2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 67c86f39898b4bd0c019b9b3095c9449e6e60b1b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 28786f483c4d2031c334d7b9697db7c5e627fe93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349231"
 ---
 # <a name="imessagesubmitmessage"></a>IMessage::SubmitMessage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Speichert alle Eigenschaften der Nachricht und markiert die Nachricht als gesendet werden.
+Speichert alle Eigenschaften der Nachricht und markiert die Nachricht als gesendet.
   
 ```cpp
 HRESULT SubmitMessage(
@@ -37,13 +37,13 @@ HRESULT SubmitMessage(
 
  _ulFlags_
   
-> [in] Bitmaske der Flags, die steuern, wie eine Nachricht gesendet wird. Das folgende Flag kann festgelegt werden:
+> in Bitmaske der Flags, die verwendet werden, um zu steuern, wie eine Nachricht übermittelt wird. Das folgende Flag kann festgelegt werden:
     
 FORCE_SUBMIT 
   
-> MAPI sollten die Nachricht sofort zu übermitteln. Dieses Kennzeichen werden derzeit nicht verwendet.
+> MAPI sollte die Nachricht sofort übermitteln. Dieses Flag wird derzeit nicht verwendet.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -51,29 +51,29 @@ S_OK
     
 MAPI_E_NO_RECIPIENTS 
   
-> Empfänger der Nachricht-Tabelle ist leer.
+> Die Empfängertabelle der Nachricht ist leer.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMessage::SubmitMessage** -Methode markiert die Nachricht als übertragen werden bereit. MAPI übergibt Nachrichten an die zugrunde liegenden messaging-System in der Reihenfolge, in der sie zum Senden von markiert sind. Aufgrund dieser Funktionalität möglicherweise eine Meldung in einem Nachrichtenspeicher bleiben Sie für eine Weile, bevor das zugrunde liegende messaging-System Verantwortung für sie entgegennehmen kann. Die Reihenfolge des Eingangs im Zielverzeichnis befindet sich in der zugrunde liegenden messaging-System-Steuerelement und entspricht nicht unbedingt die Reihenfolge, in der Nachrichten gesendet wurden. 
+Die **IMessage:: SubmitMessage** -Methode kennzeichnet eine Nachricht als bereit zur Übertragung. MAPI übergibt Nachrichten in der Reihenfolge, in der Sie zum Senden markiert sind, an das zugrunde liegende Messagingsystem. Aufgrund dieser Funktionalität kann eine Nachricht eine Weile in einem Nachrichtenspeicher verbleiben, bevor das zugrunde liegende Messagingsystem dafür verantwortlich ist. Die Reihenfolge des Empfangs am Zielort befindet sich im zugrunde liegenden Messagingsystem und entspricht nicht unbedingt der Reihenfolge, in der Nachrichten gesendet wurden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Rufen Sie die Nachricht [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode zum Speichern und überprüfen Sie dann die Nachricht **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft. Wenn das Flag MSGFLAG_RESEND festgelegt ist, rufen Sie [IMAPISupport::PrepareSubmit](imapisupport-preparesubmit.md). **PrepareSubmit** aktualisiert die Empfängertyp und **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))-Eigenschaft für alle Empfänger in der Nachricht erneut senden.
+Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht auf, um Sie zu speichern, und überprüfen Sie dann die **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht. Wenn das MSGFLAG_RESEND-Flag festgelegt ist, rufen Sie [IMAPISupport::P reparesubmit](imapisupport-preparesubmit.md). **PrepareSubmit** aktualisiert die Empfängertyp-und **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft für alle Empfänger in der Nachricht erneut senden.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-**SubmitMessage** , gibt alle Zeiger auf die Meldung und die zugehörigen Unterobjekte Nachrichten sind Ordner, Anlagen, Datenströme, Tabellen und So weiter nicht mehr gültig. MAPI erlaubt keine weiteren Vorgänge für diese Zeiger, außer für die **IUnknown** -Methoden aufrufen. MAPI ist darauf ausgelegt, dass nach dem Aufruf von **SubmitMessage** Sie die Nachricht und alle zugehörigen Unterobjekte freigegeben werden sollen. Wenn **SubmitMessage** einen Fehler zurück, der angibt, fehlende oder ungültige Informationen zurückgegeben wird, bleibt geöffnet, die Nachricht und die Zeiger noch gültig. 
+Wenn **SubmitMessage** zurückgibt, sind alle Zeiger auf die Nachricht und die dazugehörigen unter Objekte Nachrichten, Ordner, Anlagen, Streams, Tabellen usw. nicht mehr gültig. MAPI ermöglicht keine weiteren Vorgänge für diese Zeiger, mit Ausnahme des Aufrufs Ihrer **IUnknown:: Release** -Methoden. MAPI ist so konzipiert, dass Sie nach dem Aufruf von **SubmitMessage** die Nachricht und alle zugeordneten unter Objekte freigeben sollten. Wenn **SubmitMessage** jedoch einen Fehlerwert zurückgibt, der fehlende oder ungültige Informationen angibt, bleibt die Nachricht geöffnet, und die Zeiger bleiben gültig. 
   
-Um ein Sendevorgang abzubrechen, abrufen und einen Zeiger auf die Nachricht **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft gespeichert werden, bevor die Nachricht gesendet wird. Da er die Eintrags-ID eine Nachricht ungültig ist, nachdem die Nachricht gesendet wurde, ist es erforderlich, vor dem Aufruf von **SubmitMessage**zu speichern. Um das Senden abzubrechen, zeigen Sie den Parameter _LpEntryId_ auf dieses Eintrags-ID, und rufen Sie [IMsgStore::AbortSubmit](imsgstore-abortsubmit.md).
+Wenn Sie einen Sendevorgang abbrechen möchten, rufen Sie einen Zeiger auf die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft der Nachricht ab, und speichern Sie ihn, bevor die Nachricht übermittelt wird. Da die Eintrags-ID einer Nachricht nach der Übermittlung der Nachricht ungültig wird, muss Sie vor dem Aufrufen von **SubmitMessage**gespeichert werden. Zeigen Sie zum Abbrechen des Send-Parameters den Parameter _lpEntryId_ auf diese Eintrags-ID, und rufen Sie [IMsgStore:: AbortSubmit](imsgstore-abortsubmit.md)auf.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |**CFolderDlg::OnSubmitMessage** <br/> |MFCMAPI (engl.) wird die **IMessage::SubmitMessage** -Methode verwendet, um die ausgewählte Nachricht zu übermitteln.  <br/> |
+|FolderDlg. cpp  <br/> |**CFolderDlg:: OnSubmitMessage** <br/> |MFCMAPI verwendet die **IMessage:: SubmitMessage** -Methode, um die ausgewählte Nachricht zu übermitteln.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

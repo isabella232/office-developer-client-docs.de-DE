@@ -1,25 +1,25 @@
 ---
-title: Stellen Sie sicher, dass eine Anlage gesperrt ist
+title: Überprüfen, ob eine Anlage blockiert ist
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 69663470-45f3-86ed-e015-eba32b5a7233
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
 ms.openlocfilehash: c1c6f960f2e24108bebdc8f6cbf08bf1d94d85ae
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345885"
 ---
-# <a name="verify-an-attachment-is-blocked"></a>Stellen Sie sicher, dass eine Anlage gesperrt ist
+# <a name="verify-an-attachment-is-blocked"></a>Überprüfen, ob eine Anlage blockiert ist
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Codebeispiel in C++ beschreibt, wie Sie die ["IAttachmentSecurity": IUnknown](iattachmentsecurityiunknown.md) Schnittstelle, um herauszufinden, ob eine Anlage von Microsoft Outlook 2010 oder Microsoft Outlook 2013 zum Anzeigen und Indizierung ausgeschlossen wird. 
+Dieses Codebeispiel in C++ zeigt, wie Sie die [IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md) -Schnittstelle verwenden, um herauszufinden, ob eine Anlage von microsoft Outlook 2010 oder microsoft Outlook 2013 zum Anzeigen und indizieren blockiert wird. 
   
-["IAttachmentSecurity": IUnknown](iattachmentsecurityiunknown.md) die [IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) -Schnittstelle abgeleitet ist. Sie erhalten die ["IAttachmentSecurity": IUnknown](iattachmentsecurityiunknown.md) Schnittstelle durch Aufrufen von [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) für das MAPI-Sitzungsobjekt **IID_IAttachmentSecurity**anfordern. [IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) gibt in _PfBlocked_ **true** , wenn die Anlage von Outlook 2010 oder Outlook 2013 unsichere angesehen wird und wird zum Anzeigen und Indizierung in Outlook 2010 oder Outlook 2013 blockiert. 
+[IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md) ist von der [IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) -Schnittstelle abgeleitet. Sie können die [IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md) -Schnittstelle abrufen, indem Sie [IUnknown:: QUERYINTERFACE](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) für das MAPI-sitzungsObjekt aufrufen, das **IID_IAttachmentSecurity**anfordert. [IAttachmentSecurity:: IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) gibt **true** in _pfBlocked_ zurück, wenn die anlage von Outlook 2010 oder Outlook 2013 als unsicher betrachtet wird und zum anzeigen und Indizieren in Outlook 2010 oder Outlook 2013 gesperrt ist. 
   
 ```cpp
 HRESULT IsAttachmentBlocked(LPMAPISESSION lpMAPISession, LPCWSTR pwszFileName, BOOL* pfBlocked) 

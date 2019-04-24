@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: d295c896-9882-4d6f-9689-5cf40db208c0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 06356d60b43d7e5be61d944c07001570bdd5c678
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d0074dd006fda6d44252011d0b979169e0c3d4cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348671"
 ---
 # <a name="itabledatahrmodifyrows"></a>ITableData::HrModifyRows
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Mehrere Tabellenzeilen, möglicherweise Ersetzen der vorhandene Zeilen eingefügt.
+Fügt mehrere Tabellenzeilen ein, die möglicherweise vorhandene Zeilen ersetzen.
   
 ```cpp
 HRESULT HrModifyRows(
@@ -42,9 +42,9 @@ HRESULT HrModifyRows(
     
  _lpSRowSet_
   
-> [in] Ein Zeiger auf eine [SRowSet](srowset.md) -Struktur enthält, die den Satz von Zeilen hinzugefügt werden soll, Ersetzen von vorhandenen Zeilen bei Bedarf. Eine der Eigenschaft Wert Strukturen zum Festlegen anhand der **LpProps** Member jeder [SRow](srow.md) Struktur in der Zeile gezeigt sollte die Indexspalte den gleichen Wert enthalten, die in der _UlPropTagIndexColumn_ -Parameter im Aufruf der [angegeben wurde CreateTable](createtable.md) Funktion. 
+> in Ein Zeiger auf eine [SRowSet](srowset.md) -Struktur, die den Satz von Zeilen enthält, der hinzugefügt werden soll, und ggf. vorhandene Zeilen ersetzen. Eine der Eigenschaftswert Strukturen, auf die durch das **lpProps** -Element jeder [SRow](srow.md) -Struktur im Zeilensatz verwiesen wird, sollte die Indexspalte enthalten, den gleichen Wert, der im _ulPropTagIndexColumn_ -Parameter im Aufruf der [ Createable](createtable.md) -Funktion. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -52,17 +52,17 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Eine oder mehrere Zeilen übergebenen verfügt nicht über eine Indexspalte. Wenn dieser Fehler zurückgegeben wird, werden keine Zeilen geändert.
+> Mindestens eine der übergebenen Zeilen verfügt über keine Indexspalte. Wenn dieser Fehler zurückgegeben wird, werden keine Zeilen geändert.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **ITableData::HrModifyRows** -Methode fügt die Zeilen, die durch die [SRowSet](srowset.md) -Struktur, die auf das durch den Parameter _LpSRowSet_ beschrieben. Wenn der Wert von Column Index einer Zeile in der Zeile Set der Wert für eine vorhandene Zeile in der Tabelle entspricht, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden, die in der Struktur **SRowSet** enthaltene übereinstimmt ist, fügt **HrModifyRows** die Zeile an das Ende der Tabelle an. 
+Die **ITableData:: HrModifyRows** -Methode fügt die von der [SRowSet](srowset.md) -Struktur beschriebenen Zeilen ein, auf die durch den _lpSRowSet_ -Parameter verwiesen wird. Wenn der Index Spaltenwert einer Zeile im Zeilensatz mit dem Wert einer vorhandenen Zeile in der Tabelle übereinstimmt, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden ist, die mit der in der **SRowSet** -Struktur übereinstimmt, fügt **HrModifyRows** die Zeile am Ende der Tabelle hinzu. 
   
-Alle Ansichten für die Tabelle werden geändert, um die Zeilen, die auf den _LpSRowSet_enthalten. Jedoch, wenn eine Ansicht eine Einschränkung eingerichtet, die eine Zeile ausschließt hat, es für den Benutzer sichtbar möglicherweise nicht. 
+Alle Ansichten der Tabelle werden so geändert, dass Sie die Zeilen einbeziehen, auf die von _lpSRowSet_verwiesen wird. Wenn in einer Ansicht jedoch eine Einschränkung vorhanden ist, die eine Zeile ausschließt, ist Sie möglicherweise für den Benutzer nicht sichtbar. 
   
-Die Spalten in den Zeilen auf den _LpSRowSet_ müssen nicht in derselben Reihenfolge wie die Spalten in der Tabelle werden. Der Aufrufer kann auch als Spalteneigenschaften enthalten, die derzeit nicht in der Tabelle enthalten sind. Für vorhandene Ansichten **HrModifyRows** diesen neuen Spalten zur Verfügung umfasst aber nicht sie in der aktuellen Spalte Gruppe. Für zukünftige Ansichten enthält **HrModifyRows** die neuen Spalten in der Spalte festlegen. 
+Die Spalten in den Zeilen, auf die von _lpSRowSet_ verwiesen wird, müssen sich nicht in derselben Reihenfolge wie die Spalten in der Tabelle befinden. Der Aufrufer kann auch als Spalteneigenschaften enthalten, die sich derzeit nicht in der Tabelle befinden. Bei vorhandenen Ansichten stellt **HrModifyRows** diese neuen Spalten zur Verfügung, diese werden jedoch nicht in den aktuellen Spaltensatz aufgenommen. Für zukünftige Ansichten enthält **HrModifyRows** die neuen Spalten in den Spaltensatz. 
   
-Nachdem **HrModifyRows** die Zeilen hinzugefügt hat, werden Benachrichtigungen an alle Clients oder Dienstanbieter, die eine Ansicht der Tabelle und aufgerufen, die die Tabelle [IMAPITable::Advise](imapitable-advise.md) -Methode zum Registrieren für Benachrichtigungen, gesendet. MAPI sendet TABLE_ROW_ADDED oder TABLE_ROW_MODIFIED Benachrichtigungen für jede Zeile, bis zu acht Zeilen. Wenn mehr als acht Zeilen betroffen sind durch den Aufruf von **HrModifyRows** sendet MAPI eine einzelne TABLE_CHANGED Benachrichtigung stattdessen. 
+Nachdem **HrModifyRows** die Zeilen hinzugefügt hat, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Tabellenansicht verfügen und die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. MAPI sendet TABLE_ROW_ADDED-oder TABLE_ROW_MODIFIED-Benachrichtigungen für jede Zeile, bis zu acht Zeilen. Wenn der **HrModifyRows** -Aufruf mehr als acht Zeilen betrifft, sendet MAPI stattdessen eine einzelne TABLE_CHANGED-Benachrichtigung. 
   
 ## <a name="see-also"></a>Siehe auch
 

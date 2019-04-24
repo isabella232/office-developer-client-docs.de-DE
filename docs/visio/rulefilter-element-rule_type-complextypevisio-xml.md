@@ -1,31 +1,31 @@
 ---
-title: RuleFilter-Element (Rule_Type ComplexType) ("Visio XML")
+title: RuleFilter-Element (Rule_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b05497e6-722f-9203-e03c-0f14a712cddb
-description: Gibt den logischen Ausdruck, der bestimmt, ob der Überprüfungsregel auf ein Zielobjekt angewendet werden soll.
+description: Gibt den logischen Ausdruck an, der bestimmt, ob die Validierungsregel auf ein Zielobjekt angewendet werden soll.
 ms.openlocfilehash: 8d4167fbb8dde54c55e49debb77fe307ecab6771
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349385"
 ---
-# <a name="rulefilter-element-ruletype-complextype-visio-xml"></a>RuleFilter-Element (Rule_Type ComplexType) ("Visio XML")
+# <a name="rulefilter-element-ruletype-complextype-visio-xml"></a>RuleFilter-Element (Rule_Type complexType) (' Visio XML ')
 
-Gibt den logischen Ausdruck, der bestimmt, ob der Überprüfungsregel auf ein Zielobjekt angewendet werden soll.
+Gibt den logischen Ausdruck an, der bestimmt, ob die Validierungsregel auf ein Zielobjekt angewendet werden soll.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RuleFilter_Type](rulefilter_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Validation.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Validation. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt den logischen Ausdruck, der bestimmt, ob der Überprüfungsregel auf ein Zi
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Formel  <br/> |XSD: String  <br/> |Optional  <br/> |Formel für das Element darstellt.  <br/> |Die Werte für die XSD: String.  <br/> |
+|Formel  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der XSD:-Zeichenfolge.  <br/> |
    
 

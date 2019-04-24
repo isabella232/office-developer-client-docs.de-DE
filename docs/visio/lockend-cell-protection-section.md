@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e9742142-4d34-1ba9-480e-d1ecff4fc7cd
 description: Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.
-ms.openlocfilehash: d29f07e5b4b77ed2fb8b104769a2fdca55abcc8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d9fe0372c44fe3b029a4d06056c8d3871c3f91e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359598"
 ---
-# <a name="lockend-cell-protection-section"></a>LockEnd Cell (Protection Section)
+# <a name="lockend-cell-protection-section"></a>Zelle "LockEnd" (Abschnitt "Protection")
 
 Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.
   
@@ -25,15 +25,15 @@ Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.
 | TRUE  <br/> | Endpunkt ist gesperrt.  <br/> |
 | FALSE  <br/> | Endpunkt ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockEnd aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockEnd aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockEnd  <br/> |
+| Zellenname:  <br/> | Zelle LockEnd  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockEnd aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockEnd aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

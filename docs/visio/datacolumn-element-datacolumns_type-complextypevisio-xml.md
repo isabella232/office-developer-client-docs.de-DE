@@ -1,31 +1,31 @@
 ---
-title: DataColumn-Element (DataColumns_Type ComplexType) ("Visio XML")
+title: DataColumn-Element (DataColumns_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 92469c2f-f809-dff2-d0ee-b3b8f75083d2
-description: Definiert, wie eine Datenspalte im Fenster externe Daten in der Visio-Benutzeroberfläche angezeigt und berechtigt ist die Daten in der Spalte Datentyp zu definieren und die Formatierung.
+description: Definiert, wie eine Datenspalte im Fenster Externe Daten auf der Visio-Benutzeroberfläche angezeigt wird, und qualifiziert die Daten in der Spalte durch Definieren des Datentyps und der Formatierung.
 ms.openlocfilehash: 453ff44131575bd3d6927fdddb81db5f3f431a3b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344821"
 ---
-# <a name="datacolumn-element-datacolumnstype-complextype-visio-xml"></a>DataColumn-Element (DataColumns_Type ComplexType) ("Visio XML")
+# <a name="datacolumn-element-datacolumnstype-complextype-visio-xml"></a>DataColumn-Element (DataColumns_Type complexType) (' Visio XML ')
 
-Definiert, wie eine Datenspalte im Fenster **Externe Daten** in der Visio-Benutzeroberfläche angezeigt und berechtigt ist die Daten in der Spalte Datentyp zu definieren und die Formatierung. 
+Definiert, wie eine Datenspalte im Fenster **externe Daten** auf der Visio-Benutzeroberfläche angezeigt wird, und qualifiziert die Daten in der Spalte durch Definieren des Datentyps und der Formatierung. 
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[DataColumn_Type](datacolumn_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Recordsets.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Recordsets. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Definiert, wie eine Datenspalte im Fenster **Externe Daten** in der Visio-Benutz
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,19 +52,19 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Kalender  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> |Kalender-ID der Datenspalte.  <br/> |Werte des Typs Xsd:unsignedShort.  <br/> |
-|ColumnNameID  <br/> |XSD: String  <br/> |erforderlich  <br/> |Externer Name der Datenspalte. Wird in der Überschriften in das Fenster **Externe Daten** und Beschriftungen in Datengrafiken angezeigt.  <br/> |Werte des Typs xsd: String.  <br/> |
-|Währung  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> |Currency-ID der Datenspalte.  <br/> |Werte des Typs Xsd:unsignedShort.  <br/> |
-|DataType  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> |Typ der Daten in der Datenspalte.  <br/> |Werte des Typs Xsd:unsignedShort.  <br/> |
-|Degree  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Gibt den Grad der Einheiten, beispielsweise im Quadrat oder hoch drei (Power). Der Standardwert (-Attribut nicht vorhanden) ist 1.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|DisplayOrder  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Definiert die Anzeigeposition der Datenspalte im Fenster **Externe Daten** aus der Spalte ganz links (0), um die Spalte ganz rechts (größten Wert).  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|DisplayWidth  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Die Breite der Datenspalte im Fenster **Externe Daten** .  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|Hyperlink  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Datenspalte einen Hyperlink in einem Shape erstellt, wenn das Shape mit Daten verknüpft ist.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
-|Beschriftung  <br/> |XSD: String  <br/> |erforderlich  <br/> |Bezeichnung der Datenspalte.  <br/> |Werte des Typs xsd: String.  <br/> |
-|LangID  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Die Sprachen-ID der Datenspalte.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|Zugeordnet sind  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Spalte im Fenster **Externe Daten** angezeigt wird. Legen Sie True (1) für die Spalte sichtbar sein; False (0) für die Spalte nicht sichtbar sein. Der Standardwert (-Attribut nicht vorhanden) ist für die Spalte sichtbar sein.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
-|Name  <br/> |XSD: String  <br/> |erforderlich  <br/> |Interner Name der Datenspalte. Wird als Zeile mit dem Namen für die Shape-Datenelements (benutzerdefinierte Eigenschaft) mit einer Form hinzugefügt werden, wenn das Shape mit einer Datenzeile verknüpft ist.  <br/> |Werte des Typs xsd: String.  <br/> |
-|OrigLabel  <br/> |XSD: String  <br/> |Optional  <br/> |Spalte Beschriftung durch die zugrunde liegende ADO-Schnittstelle an Visio zurückgegeben.  <br/> |Werte des Typs xsd: String.  <br/> |
-|UnitType  <br/> |XSD: String  <br/> |Optional  <br/> |Unit-Typ der Daten in der Datenspalte.  <br/> |Werte des Typs xsd: String.  <br/> |
+|Kalender  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> |Die Kalender-ID der Datenspalte.  <br/> |Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|ColumnName-Nr.  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Externer Name der Datenspalte. Wird in den Überschriften im Fenster **externe Daten** und in Beschriftungen in Datengrafiken angezeigt.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|Währung  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> |Währungs-ID der Datenspalte.  <br/> |Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|DataType  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> |Der Typ der Daten in der Datenspalte.  <br/> |Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|Degree  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt den Grad (Potenz) der Einheiten an, beispielsweise quadriert oder gewürfelt. Der Standardwert (das Attribut fehlt) ist 1.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|Display Order  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Definiert die Anzeigeposition der Datenspalte im Fenster **externe Daten** , von der linken Spalte (0) bis zur rechten Spalte (größter Wert).  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|DisplayWidth  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Breite der Datenspalte im Fenster **externe Daten** .  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|Hyperlink  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Datenspalte in einem Shape einen Hyperlink erstellt, wenn die Form mit Daten verknüpft ist.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|Label  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Bezeichnung der Datenspalte.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|LangID  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die Sprach-ID der Datenspalte.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|Zugeordnet  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Spalte im Fenster **externe Daten** angezeigt wird. True (1), damit die Spalte sichtbar ist; False (0), damit die Spalte nicht sichtbar ist. Der Standardwert (fehlendes Attribut) ist, dass die Spalte sichtbar ist.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|Name  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Interner Name der Datenspalte. Wird als Zeilenname für das Shape-Datenelement (benutzerdefinierte Eigenschaft) verwendet, das einem Shape hinzugefügt wird, wenn das Shape mit einer Datenzeile verknüpft ist.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|OrigLabel  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Spaltenbeschriftung wird von der zugrunde liegenden ADO-Schnittstelle an Visio zurückgegeben.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|UnitType  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Einheitentyp der Daten in der Datenspalte.  <br/> |Werte des XSD: String-Typs.  <br/> |
    
 

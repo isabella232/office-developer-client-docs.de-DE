@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f4584569-1246-4ac9-a404-48284e4920d7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0075db0a515166c5185657daf3fc6b1e121d6672
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9fc21a27cb6c9041bdd8976ce5f030f0ab9eb57f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345745"
 ---
 # <a name="szfindsz"></a>SzFindSz
 
@@ -25,13 +25,13 @@ ms.locfileid: "22585122"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht den ersten Vorkommens einer Teilzeichenfolge mit Null endende in eine mit Null endende Zeichenfolge. 
+Sucht das erste Vorkommen einer null-terminierten Teilzeichenfolge in einer null-terminierten Zeichenfolge. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPSTR SzFindCh(
@@ -44,18 +44,18 @@ LPSTR SzFindCh(
 
  _lpsz_
   
-> [in] Zeiger auf die Null endende Zeichenfolge, die durchsucht werden soll. Der Parameter _Lpsz_ muss 65536 Zeichen nicht überschreiten. 
+> in Zeiger auf die zu durchsuchende NULL-terminierte Zeichenfolge. Der _lpsz_ -parameter darf 65536 Zeichen nicht überschreiten. 
     
  _lpszKey_
   
-> [in] Zeiger auf Null endende Teilzeichenfolge gesucht werden. Der Parameter _LpszKey_ muss 65536 Zeichen nicht überschreiten. 
+> in Zeiger auf die mit NULL endende Teilzeichenfolge, nach der gesucht werden soll. Der _lpszKey_ -parameter darf 65536 Zeichen nicht überschreiten. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
- **SzFindSz** gibt einen Zeiger auf das erste Zeichen des ersten Vorkommens der Teilzeichenfolge in der Zeichenfolge. Wenn die Teilzeichenfolge nicht an einer beliebigen Stelle in der Zeichenfolge auftritt, wenn _LpszKey_ größer als _Lpsz_ist oder einer der Parameter NULL ist, wird der Wert NULL zurückgegeben. 
+ **SzFindSz** gibt einen Zeiger auf das erste Zeichen des ersten Vorkommens der Teilzeichenfolge in der Zeichenfolge zurück. Wenn die Teilzeichenfolge an keiner beliebigen Stelle in der Zeichenfolge auftritt, wenn _lpszKey_ größer als _lpsz_ist oder wenn einer der Parameter NULL ist, wird der Wert NULL zurückgegeben. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **SzFindSz** sucht nach einer genauen Übereinstimmung nur; Es ist Beachtung von Groß-/Kleinschreibung und diakritische Unterschiede. Suchvorgänge in Unicode und DBCS-Formate werden unterstützt. Die maximale Länge beide Parameter ist in Zeichen, was nicht notwendigerweise Bytes. 
+Die **SzFindSz** -Funktion sucht nur nach einer genauen Übereinstimmung. Sie ist anfällig für Groß-/Kleinschreibung und diakritische Unterschiede. Suchvorgänge in Unicode-und DBCS-Formaten werden unterstützt. Die Längenbeschränkung für beide Parameter ist in Zeichen, nicht unbedingt in Bytes. 
   
 

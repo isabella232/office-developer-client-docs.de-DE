@@ -1,5 +1,5 @@
 ---
-title: PidTagServiceSupportFiles (kanonische Eigenschaft)
+title: Kanonische Pidtagservicesupportfiles (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,46 +11,46 @@ api_name:
 api_type:
 - COM
 ms.assetid: df4be986-62a8-49d6-8eca-25b55c74f830
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5165867e46d3d86d65932e7ae432b446efbd8fff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3753177552d45e32e53ae192a9dfae15b601afcc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359472"
 ---
-# <a name="pidtagservicesupportfiles-canonical-property"></a>PidTagServiceSupportFiles (kanonische Eigenschaft)
+# <a name="pidtagservicesupportfiles-canonical-property"></a>Kanonische Pidtagservicesupportfiles (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Liste der Dateien, die den Dienst angehören.
+Enthält eine Liste der Dateien, die zum Nachrichtendienst gehören.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_SERVICE_SUPPORT_FILES, PR_SERVICE_SUPPORT_FILES_A, PR_SERVICE_SUPPORT_FILES_W  <br/> |
 |Kennung:  <br/> |0x3D0F  <br/> |
-|Datentyp:  <br/> |PT_MV_STRING8 PT_MV_UNICODE  <br/> |
+|Datentyp:  <br/> |PT_MV_STRING8, PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Mithilfe eines Dialogfelds in der Systemsteuerungsoption, kann ein Benutzer die Liste der Dateien erhalten, die den Dienst angehören. Beispielsweise kann der Benutzer die Namen der alle Dynamic Link Libraries (DLLs) abgerufen, die mit dem Dienst gehören. Der Benutzer kann dann zusätzliche Informationen zu der angegebenen Dateien, beispielsweise den Namen und die Versionsnummern aller DLLs seek. MAPI verwendet diese Eigenschaften zum Erstellen einer Support-Datei-Liste in einem Dialogfeld für die Auswahl des Benutzers messaging.
+Mithilfe eines Dialogfelds in der Systemsteuerung können Benutzer die Liste der Dateien abrufen, die zum Nachrichtendienst gehören. Der Benutzer kann beispielsweise die Namen aller DLLs (Dynamic Link Libraries) abrufen, die zum Dienst gehören. Der Benutzer kann dann zusätzliche Details zu den angegebenen Dateien suchen, beispielsweise die Namen und Versionsnummern aller DLLs. MAPI verwendet die folgenden Eigenschaften zum Erstellen einer Support Dateiliste in einem Dialogfeld für die Auswahl von Messaging Benutzern.
   
-MAPI funktioniert nur mit Dateinamen und andere Zeichenfolgen übergeben wurden, in den Zeichensatz für die Active Directory Service Interfaces (ANSI). Clientanwendungen, die Dateinamen in einem Zeichensatz OEM (Original Equipment Manufacturer) verwenden, müssen sie in ANSI zu konvertieren vor dem Aufruf von MAPI.
+MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die an den Zeichensatz der Active Directory-Dienstschnittstellen (ANSI) übergeben werden. Client Anwendungen, die Dateinamen in einem OEM-Zeichensatz (Original Equipment Manufacturer) verwenden, müssen Sie vor dem Aufrufen von MAPI in ANSI konvertieren.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -8,11 +8,11 @@ ms.assetid: 69736f40-8f67-46c2-abf6-82dffecb2274
 description: Erfahren Sie mehr über das neue Dateiformat in Visio 2013, ermitteln Sie einige hochrangige Konzepte für die programmatische Arbeit mit dem Visio 2013-Dateiformat, und erstellen Sie eine einfache Konsolenanwendung, die eine Visio 2013-Datei überprüft.
 localization_priority: Priority
 ms.openlocfilehash: 74c0f05a1db280386f3dc9dfd23da73a9b2daaf5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357274"
 ---
 # <a name="introduction-to-the-visio-file-format-vsdx"></a>Einführung in das Visio-Dateiformat (.vsdx)
 
@@ -167,9 +167,9 @@ Im folgenden Codebeispiel können Sie sehen, wie eine VSDX-Datei geöffnet wird,
     
 6. Geben Sie in das Feld **Name** den Eintrag "VisioFileExplorer" ein. Das Konsolenanwendungsprojekt wird geöffnet. 
     
-7. Klicken Sie im **Solution Explorer** mit der rechten Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Add Reference**. 
+7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Verweis hinzufügen**. 
     
-8. Erweitern Sie im **Add Reference**-Dialogfeld unter **Assemblies** **Framework**, und wählen Sie dann **WindowsBase** aus.
+8. Erweitern Sie im Dialogfeld **Verweis hinzufügen** unter **Assemblies** den Knoten **Framework**, und wählen Sie dann **WindowsBase** aus.
     
 9. Fügen Sie den folgenden Code in die Lösung ein.
     

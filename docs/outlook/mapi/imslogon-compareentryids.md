@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 481812d6-8e94-4510-b288-55501dd5757c
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c5b2d7db745cc270c0be7ee2184e86c6a4f97aad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4196ed8b949ecb9e23c4bd34380db9cc5a369e23
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348727"
 ---
 # <a name="imslogoncompareentryids"></a>IMSLogon::CompareEntryIDs
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. MAPI verweist dieses Anrufs mit einem Dienstanbieter nur, wenn der eindeutige Bezeichner (UIDs) in beiden Eintragsbezeichner verglichen werden soll, die von diesem Provider behandelt werden.
+Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. MAPI bezieht diesen Aufruf nur dann an einen Dienstanbieter, wenn die eindeutigen IDs (in beiden Eingabe Bezeichnern), die verglichen werden sollen, von diesem Anbieter verarbeitet werden.
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> [in] Die Größe in Bytes für die Eintrags-ID auf das durch den Parameter _lpEntryID1_ _._
+> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird, in Bytes _._
     
  _lpEntryID1_
   
-> [in] Ein Zeiger auf die erste Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
     
  _cbEntryID2_
   
-> [in] Die Größe in Bytes für die Eintrags-ID auf das durch den Parameter _lpEntryID2_ _._
+> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird, in Bytes _._
     
  _lpEntryID2_
   
-> [in] Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden.
+> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
     
  _ulFlags_
   
@@ -62,19 +62,19 @@ HRESULT CompareEntryIDs(
     
  _lpulResult_
   
-> [out] Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. True, wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen. andernfalls, FALSE.
+> Out Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, andernfalls false. andernfalls FALSE.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Nachricht-Anbieter implementiert die **IMSLogon::CompareEntryIDs** -Methode zum Vergleichen von zwei Eintragsbezeichner für einen bestimmten Eintrag in einem Nachrichtenspeicher, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. Wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen, wird **CompareEntryIDs** den _LpulResult_ -Parameter auf true festgelegt; Wenn sie auf verschiedene Objekte verweisen, wird **CompareEntryIDs** _LpulResult_ auf false festgelegt. 
+Nachrichtenspeicher Anbieter implementieren die **IMSLogon:: CompareEntryIDs** -Methode, um zwei Eintragsbezeichner für einen bestimmten Eintrag in einem Nachrichtenspeicher zu vergleichen, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. Wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, legt **CompareEntryIDs** den _lpulResult_ -Parameter auf true fest; Wenn Sie auf verschiedene Objekte verweisen, **CompareEntryIDs** _lpulResult_ auf false festgelegt. 
   
- **CompareEntryIDs** ist hilfreich, da ein Objekt mehr als eine gültige Eingabe Bezeichner haben kann. Dies kann beispielsweise vorkommen, nach der Installation einer neuen Version des Anbieters einer Nachricht. 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. Dies kann beispielsweise der Fall sein, nachdem eine neue Version eines Nachrichtenspeicher Anbieters installiert wurde. 
   
 ## <a name="see-also"></a>Siehe auch
 

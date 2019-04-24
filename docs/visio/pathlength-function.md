@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f47ea08-fb5e-7d48-e84a-2a6570564924
 description: Gibt die Länge des Pfads zurück, der im angegebenen Abschnitt "Geometrie" definiert ist.
-ms.openlocfilehash: 37cabbde9fc0782bc1fde46f3065d0c945c9dada
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e4f90c2bb886f54164bedab5f8d78fc528758414
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344415"
 ---
 # <a name="pathlength-function"></a>PATHLENGTH Function
 
@@ -25,7 +25,7 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-PATHLENGTH (** *Abschnitt* ** ** *[, Segment]* **) 
+PATHLENGTH (* * *section* * * * * *[, Segment]* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,14 +34,14 @@ PATHLENGTH (** *Abschnitt* ** ** *[, Segment]* **)
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
 | _Segment_ <br/> |Optional  <br/> |**Integer** <br/> |Das auf 1 basierende Segment des zu messenden Pfads.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
  **Double**
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn _Section_ oder _Segment_ nicht vorhanden ist, gibt Microsoft Visio #REF! zurück. 
+Wenn _section_ oder _Segment_ nicht vorhanden ist, gibt Microsoft Visio #REF! zurück. 
   
-Wenn Sie einen Wert für _Segment_ eingeschlossen, gibt PATHLENGTH die Länge dieses Abschnitts nur zurück. 
+Wenn Sie einen _Segment_ Wert angeben, gibt PATHLENGTH nur die Länge dieses Segments zurück. 
   
 

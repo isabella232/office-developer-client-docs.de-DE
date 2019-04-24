@@ -8,23 +8,23 @@ f1_keywords:
 - Vis_DSS.chm82251826
 localization_priority: Normal
 ms.assetid: e1174d8f-70cb-4595-7906-889da15367db
-description: 'Formeln können Zeichenfolgen enthalten. Zum Formatieren von Zeichenfolgenausgabe wie in einer Zelle "Prompt", ein Shape-Datenwert Element oder ein Textfeld, geben Sie eine Formatierungsangabe. Ausgabe formatiert werden kann, als Zahl-Einheit-Paar, Zeichenfolge, Datum-Uhrzeit, Dauer oder Währung. Beispielsweise Kopplung das Format picture0 #/ 10 Uuformats die Zahl-Einheit 10,9 cm as10 9/10 Zentimeter.'
-ms.openlocfilehash: 1fd003ecd5c824042e97a40fa8374aeead254ddc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Formeln können Zeichenfolgen enthalten. Wenn Sie ausgegebene Zeichenfolgen (z. B. einen Wert in einer Eingabeaufforderungszelle), Werte für Shape-Datenelemente oder ein Textfeld formatieren möchten, geben Sie eine Formatierungsangabe an. Ausgegebene Werte können als Zahl-Einheit-Paar, Zeichenfolge, Datum-Uhrzeit, Zeitdauer oder Währung formatiert werden. Beispiel: das Format picture0 #/10 uuformats das Nummern Einheiten paar 10,9 cm AS10 9/10 Zentimeter.'
+ms.openlocfilehash: aa95e11db387913edbb40292f7da6a0f4b8a5cf7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345066"
 ---
 # <a name="about-strings"></a>Informationen zu Zeichenfolgen
 
 Formeln können Zeichenfolgen enthalten. Wenn Sie ausgegebene Zeichenfolgen (z. B. einen Wert in einer Eingabeaufforderungszelle), Werte für Shape-Datenelemente oder ein Textfeld formatieren möchten, geben Sie eine Formatierungsangabe an. Ausgegebene Werte können als Zahl-Einheit-Paar, Zeichenfolge, Datum-Uhrzeit, Zeitdauer oder Währung formatiert werden. Mit der Formatierungsangabe "0 #/10 uu" wird beispielsweise das Zahl-Einheit-Paar 10,9 cm als "10 9/10 Zentimeter" formatiert.
   
-Sie können Formatierungsangaben in der Zelle **Format** des Shape-Datenabschnitt und als Argument an die Funktion **FORMAT** oder **FORMATEX** verwenden. Wenn Sie ein Textfeld einfügen, werden Formatierungsangaben in der Liste der Formate im Dialogfeld **Feld** (Registerkarte**Einfügen** ) angezeigt. 
+Sie können Format Bilder in der Zelle **Format** des Abschnitts Shape-Daten und als Argument für die **Format** -oder **FORMATEX** -Funktion verwenden. Wenn Sie ein Textfeld einfügen, werden Bilder in der Liste der Formate im Dialogfeld **Feld** (Registerkarte**Einfügen** ) angezeigt. 
   
 ## <a name="using-functions-to-format-strings"></a>Verwenden von Funktionen zum Formatieren von Zeichenfolgen
 
-In jeder Formel, die in eine Zeichenfolge mit einer benutzerdefinierten Feld Textformeln, aufgelöst wird, können Sie die Funktion **FORMAT** oder **FORMATEX** verwenden. Die FORMAT-Funktion gibt eine Zeichenfolge der formatierten Ausgabe zurück. **FORMATEX** -Funktion konvertiert nicht typisierte Informationen in die Einheiten, die Sie für das formatierte Ergebnis auswählen. 
+In einer beliebigen Formel, die in eine Zeichenfolge aufgelöst wird, einschließlich benutzerdefinierter Textfeldformeln, können Sie die **Format** -oder die **FORMATEX** -Funktion verwenden. Die Funktion FORMAT gibt eine Zeichenfolge der formatierten Ausgabe zurück. Die **FORMATEX** -Funktion konvertiert nicht typisierte Eingabe in die Einheiten, die Sie für das formatierte Ergebnis auswählen. 
   
 ## <a name="displaying-formatted-shape-data"></a>Anzeigen formatierter Shape-Daten
 
@@ -32,7 +32,7 @@ Sie können den angezeigten Wert eines Shape-Datenelements formatieren, indem Si
   
 Ein Projektplan-Shape kann beispielsweise ein Shape-Datenelement enthalten, das die Kosten eines Prozesses misst. Standardmäßig ist der Wert eines Shape-Datenelements eine Zeichenfolge. Um die Zeichenfolge "1200" zu formatieren, können Sie "$###,###.00" in die Zelle "Format" eingeben, damit dem Benutzer eine Währung angezeigt wird.
   
-Microsoft Visio verwendet die Einstellungen auf der Registerkarte **Währung** im Dialogfeld **Format anpassen** im Element **Region und Sprache** in der Systemsteuerung bestimmt das Währungssymbol und Tausende Trennzeichen angezeigt. (Klicken Sie in **Der Systemsteuerung**klicken Sie auf **Region und Sprache**, und klicken Sie dann auf **Zusätzliche Einstellungen**.)
+Microsoft Visio bestimmt das anzuzeigende Währungssymbol und das 1000er-Trennzeichen anhand der Einstellungen auf der Registerkarte **Währung** im Dialogfeld **Format anpassen ** unter **Region und Sprache** in der Systemsteuerung. (Klicken Sie in der **System**Steuerung auf **Region und Sprache**, und klicken Sie dann auf **Weitere Einstellungen**.)
   
 Verwenden Sie die CY-Funktion, wenn Sie eine Zeichenfolge in einen Währungswert konvertieren möchten, damit Sie Berechnungen mit diesem Wert durchführen können.
   

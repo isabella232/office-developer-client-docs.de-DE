@@ -1,5 +1,5 @@
 ---
-title: PidTagRuleMsgName (kanonische Eigenschaft)
+title: Kanonische Pidtagrulemsgname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,15 +11,15 @@ api_name:
 api_type:
 - COM
 ms.assetid: eefbcdd4-9841-4742-b976-e85c8e686dda
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: bd47674def00aef5879707d5a37c2ca3c389f386
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359521"
 ---
-# <a name="pidtagrulemsgname-canonical-property"></a>PidTagRuleMsgName (kanonische Eigenschaft)
+# <a name="pidtagrulemsgname-canonical-property"></a>Kanonische Pidtagrulemsgname (-Eigenschaft
 
   
   
@@ -34,27 +34,27 @@ Enthält den Namen einer erweiterten Regel.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
-> Eingehende e-Mail-Nachrichten auf einem Server bearbeitet.
+> Bearbeitet eingehende e-Mail-Nachrichten auf einem Server.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,5 +66,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

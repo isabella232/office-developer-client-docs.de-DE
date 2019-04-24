@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 43128ea2-c0d9-c45f-31e6-768a80ae59b2
 description: Sie können Operatoren in Formeln verwenden, um arithmetische Operationen (Addition, Subtraktion, Multiplikation usw.) oder logische Vergleiche (größer als, kleiner als, gleich usw.) auszuführen. Sie können darüber hinaus die Reihenfolge der Berechnungsschritte in einer Formel bestimmen, indem Sie Ausdrücke in Klammern einschließen. Verwenden Sie den &-Operator, um Zeichenfolgen zu kombinieren bzw. miteinander zu verketten.
-ms.openlocfilehash: 3a14993ab317d19d0e4a8983e4714f587c235d57
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4f095df73f9bd1d6a876d975d262c9217c696fb9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345283"
 ---
 # <a name="about-operators"></a>Informationen zu Operatoren
 
@@ -24,11 +24,11 @@ Microsoft Visio versucht automatisch, Datentypen umzuwandeln, wenn eine Operatio
   
 Die folgende Tabelle enthält Beispiele für Ausdrücke und deren Ergebnisse.
   
-|**Expression**|**Ergebnis**|**Beschreibung**|
+|**Ausdruck**|**Ergebnis**|**Beschreibung**|
 |:-----|:-----|:-----|
-| 2 \* 5 &amp; "Cent"  <br/> | "10 Cent"  <br/> | Die &amp; -Operator (zeichenfolgenverkettung) erfordert Zeichenfolgenargumente, sodass das numerische Ergebnis von 2 \* 5 wird automatisch in die Zeichenfolge "10" konvertiert.  <br/> |
-| 5 \* "2"  <br/> | 10  <br/> | Die \* -Operator (Multiplikation) erfordert numerische Argumente, daher wird die Zeichenfolge "2" automatisch in die äquivalente Zahl 2 konvertiert.  <br/> |
-| 5 \* "Schafe"  <br/> | 0  <br/> | Die \* -Operator (Multiplikation) erfordert numerische Argumente, sodass 0 (null), da die Zeichenfolge "Schafe" in eine Zahl konvertiert werden kann, wie die numerische Entsprechung verwendet wird.  <br/> |
+| 2 \* 5 &amp; "Cent"  <br/> | "10 Cent"  <br/> | Der &amp; Operator (String Verkettung) erfordert Zeichenfolgenargumente, daher wird das numerische Ergebnis 2 \* 5 automatisch in die Zeichenfolge "10" konvertiert.  <br/> |
+| 5 \* "2"  <br/> | 10  <br/> | Der \* Operator (Multiplikation) erfordert numerische Argumente, daher wird die Zeichenfolge "2" automatisch in die entsprechende Zahl 2 konvertiert.  <br/> |
+| 5 \* "Schafe"  <br/> | 0  <br/> | Der \* Operator (Multiplikation) erfordert numerische Argumente, da die Zeichenfolge "Sheep" nicht in eine Zahl konvertiert werden kann, wird NULL als numerische Entsprechung verwendet.  <br/> |
    
 ## <a name="arithmetic-operators"></a>Arithmetische Operatoren
 
@@ -36,14 +36,14 @@ Arithmetische Operatoren führen Vorgänge mit Zahlen aus. Der +-Operator (Plus)
   
 |**Operator**|**Aktion**|**Beispiel**|**Ergebnis**|
 |:-----|:-----|:-----|:-----|
-| +  <br/> | Unärer Plus-Operator  <br/> | +37  <br/> | 37  <br/> |
+| +  <br/> | Unärer Plus-Operator  <br/> | + 37  <br/> | 37  <br/> |
 | -  <br/> | Unärer Minus-Operator  <br/> | -37  <br/> | -37  <br/> |
-| %  <br/> | Einstelliger Prozentsatz  <br/> | 37 %  <br/> | .37  <br/> |
+| %  <br/> | Einstelliger Prozentsatz  <br/> | 37%  <br/> | .37  <br/> |
 | ^  <br/> | Potenzierung  <br/> | 5 ^ 2  <br/> | 25  <br/> |
 | \*  <br/> | Multiplikation  <br/> | 5 \* 2  <br/> | 10  <br/> |
-| /  <br/> | Division  <br/> | 5 / 2  <br/> | 2,5  <br/> |
-| +  <br/> | Addition  <br/> | 5 +2  <br/> | 7  <br/> |
-| -  <br/> | Subtraktion  <br/> | 5 - 2  <br/> | 3  <br/> |
+| /  <br/> | Division  <br/> | 5/2  <br/> | 2,5  <br/> |
+| +  <br/> | Ergänzungen  <br/> | 5 +2  <br/> | 7  <br/> |
+| -  <br/> | Subtraktion  <br/> | 5 -2  <br/> | 3  <br/> |
    
 ## <a name="comparison-operators"></a>Vergleichsoperatoren
 
@@ -53,12 +53,12 @@ Vergleichsoperatoren werden verwendet, um logische Ausdrücke zu erstellen. Ein 
 |:-----|:-----|:-----|:-----|:-----|
 | \>  <br/> | _GT_  <br/> | Größer als  <br/> | 5 \> 2  <br/> | TRUE  <br/> |
 | \<  <br/> | _LT_  <br/> | Kleiner als  <br/> | 5 \< 2  <br/> | FALSE  <br/> |
-| \>=  <br/> | _GE_  <br/> | Größer als oder gleich  <br/> | 5 \>= 2  <br/> | TRUE  <br/> |
+| \>=  <br/> | _GE_  <br/> | Größer oder gleich  <br/> | 5 \>= 2  <br/> | TRUE  <br/> |
 | \<=  <br/> | _LE_  <br/> | Kleiner als oder gleich  <br/> | 5 \<= 2  <br/> | FALSE  <br/> |
 | =  <br/> | _EQ_  <br/> | Gleich  <br/> | 5 = 2  <br/> | FALSE  <br/> |
 | \<\>  <br/> | _NE_  <br/> | Nicht gleich  <br/> | 5 \< \> 2  <br/> | TRUE  <br/> |
    
-Symbolische Vergleichsoperatoren (\>, \<usw.) für die meisten Vergleiche am besten geeignet sind. Die anderen Operatoren (_GT_, _LT_usw.) führen Sie einen exakten Vergleich mit 15 Dezimalstellen Genauigkeitsverlust Visio verwendet, um Werte intern zu speichern.
+Die symbolischen Vergleichsoperatoren\>( \<usw.) sind die beste Wahl für die meisten Vergleiche. Die alternativen Operatoren (_gt_, _lt_usw.) führen einen exakten Vergleich mit den vollständigen 15-Stellen der Genauigkeit aus, die Visio zum internen Speichern von Werten verwendet.
   
 Wenn Sie gerundete oder berechnete Werte mithilfe der anderen Operatoren vergleichen, wird möglicherweise FALSE zurückgegeben, obwohl aus praktischen Gründen eigentlich TRUE zurückgegeben werden sollte.
   
@@ -70,20 +70,20 @@ Wenn eine Formel mehrere Ausdrücke enthält, werden die Ausdrücke in der Reihe
   
 |**Order**|**Aktion**|**Operator**|
 |:-----|:-----|:-----|
-|Erster  <br/> |Positiv  <br/> |+ (einstellig)  <br/> |
+|Erster  <br/> |Positive  <br/> |+ (einstellig)  <br/> |
 ||Negativ  <br/> |- (einstellig)  <br/> |
 ||Prozent  <br/> |% (einstellig)  <br/> |
 |Zweiter  <br/> |Potenzierung  <br/> |^  <br/> |
 |Dritter  <br/> |Multiplikation  <br/> |\*  <br/> |
-||Abteilung  <br/> |/  <br/> |
-|Vierter  <br/> |Ergänzungen  <br/> |+  <br/> |
+||Division  <br/> |/  <br/> |
+|Vier  <br/> |Ergänzungen  <br/> |+  <br/> |
 ||Subtraktion  <br/> |-  <br/> |
-|Fünfter  <br/> |Zeichenfolgenverknüpfung  <br/> |&amp;  <br/> |
-|Sechster  <br/> |Größer als  <br/> |\>oder GT  <br/> |
-||Größer als oder gleich  <br/> |\>= oder GE  <br/> |
+|Fünften  <br/> |Zeichenfolgenverknüpfung  <br/> |&amp;  <br/> |
+|Sechste  <br/> |Größer als  <br/> |\>oder GT  <br/> |
+||Größer oder gleich  <br/> |\>= oder GE  <br/> |
 ||Kleiner als  <br/> |\<oder LT  <br/> |
 ||Kleiner als oder gleich  <br/> |\<= oder LE  <br/> |
-|Siebenter  <br/> |Gleich  <br/> |= oder EQ  <br/> |
+|Siebten  <br/> |Equal  <br/> |= oder EQ  <br/> |
 ||Nicht gleich  <br/> |\<\>oder NE  <br/> |
    
 Sie können die Reihenfolge der Berechnung in einer Formel ändern, indem Sie Ausdrücke in Klammern einschließen. Visio berechnet Ausdrücke in Klammern zuerst, und zwar von links nach rechts. Beispiel:
@@ -98,10 +98,10 @@ Wenn Ausdrücke in Klammern geschachtelt sind, wird der Ausdruck im innersten Sa
 
 Der &-Operator gibt eine neue Zeichenfolge zurück. Mithilfe dieses Zeichens können Sie Komposita und Phrasen erstellen. Verwenden Sie die folgende Syntax:
   
-"Zeichenfolge1" &amp; "Zeichenfolge2"
+"String1" &amp; "String2"
   
  **Beispiel**
   
-"Dog" &amp; "Hütte" ergibt "Hundehütte"
+"Dog" &amp; "House" gibt "Hundehütte" zurück.
   
 

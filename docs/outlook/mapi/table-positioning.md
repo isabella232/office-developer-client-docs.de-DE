@@ -1,5 +1,5 @@
 ---
-title: Tabellenpositionierung
+title: Tabellen Positionierung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: a0cbbc93-8074-4e86-b660-ee7bab910587
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f7b2baa8cd78fbb8ace72fd0edb7c77f4c02a4c8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 656f696c58e9b62e7e601d7f531870b8c385e862
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345654"
 ---
-# <a name="table-positioning"></a>Tabellenpositionierung
+# <a name="table-positioning"></a>Tabellen Positionierung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die aktuelle Position in einer Tabelle wird immer durch einen Cursor angezeigt. Es ist ein Cursor für die einzelnen Ansichten einer Tabelle. der Wert wird von der Tabelle Implementierer festgelegt. Wenn ein Client oder Dienstanbieter mithilfe der Tabelle so ändern Sie die Position der Tabelle aufruft, wird der Wert des Cursors zurückgesetzt. Position einer Tabelle kann mit geändert werden:
+Die aktuelle Position in einer Tabelle wird immer durch einen Cursor angezeigt. Für jede Ansicht einer Tabelle gibt es einen Cursor. der Wert wird vom Implementierer der Tabelle festgelegt. Wenn ein Client oder ein Dienstanbieter, der die Tabelle verwendet, einen Aufruf zum Ändern der Position der Tabelle durchführt, wird der Wert des Cursors zurückgesetzt. Die Position einer Tabelle kann mit folgenden Änderungen geändert werden:
   
 - Textmarke.
     
-- Ein Bruch-Wert.
+- Ein Bruchteil.
     
 - Ein Filter.
     

@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 464b1297-9d90-47bd-afc4-3dc63b106cb7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5a6ba7af5e497ba59b43e9b80cfc9595961ed10e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d83b98b4f06c648676852673a694a63b78f568b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345864"
 ---
 # <a name="mapi-named-properties"></a>Benannte Eigenschaften MAPI
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI bietet die Möglichkeit zum Zuweisen von Namen zu Eigenschaften, um Managementsystems eindeutige Bezeichner zuzuordnen, sowie für diese Zuordnung persistent. Beständigen Namen Bezeichner Zuordnung wird sichergestellt, dass Eigenschaftennamen in allen Sitzungen gültig.
+MAPI bietet eine Möglichkeit zum Zuweisen von Namen zu Eigenschaften, um diese Namen eindeutigen Bezeichnern zuzuordnen und diese Zuordnung persistent zu machen. Persistent Name to Identifier Mapping stellt sicher, dass Eigenschaftsnamen in allen Sitzungen gültig bleiben.
   
-Zum Definieren einer benannten Eigenschaft ein Client oder Dienstanbieter bildet einen Namen und speichert sie in einer [MAPINAMEID](mapinameid.md) Struktur. Da Namen von einen global eindeutigen Bezeichner der 32-Bit, oder die GUID und entweder ein Unicode-Zeichen Zeichenfolge oder eines numerischen Wert vorgenommen werden, können Ersteller von benannten Eigenschaften aussagekräftige Namen des Duplizierung Wiederholungsversuchs erstellen. Namen sind eindeutig, und sie können verwendet werden, ohne dabei den Wert der ihre-IDs zu berücksichtigen. 
+Zum Definieren einer benannten Eigenschaft erstellt ein Client oder Dienstanbieter einen Namen und speichert ihn in einer [MAPINAMEID](mapinameid.md) -Struktur. Da Namen aus einem global eindeutigen 32-Bit-Bezeichner oder einer GUID und entweder einer Unicode-Zeichenfolge oder einem numerischen Wert bestehen, können Ersteller benannter Eigenschaften aussagekräftige Namen erstellen, ohne dass eine Duplizierung vorliegt. Namen sind eindeutig und können unabhängig vom Wert ihrer Bezeichner verwendet werden. 
   
-Zur Unterstützung der benannter Eigenschaften auf ein Dienstanbieter implementiert zwei Methoden – [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) und [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) – übersetzen zwischen Namen und Bezeichner und seine [IMAPIProp::GetProps](imapiprop-getprops.md) [ ermöglichen IMAPIProp::SetProps](imapiprop-setprops.md) Methoden zum Abrufen und Ändern von Eigenschaften mit Bezeichnern im Bereich benannten Eigenschaft. Der Bereich für benannte Eigenschaftenbezeichner liegt zwischen 0 x 8000 und 0xFFFE. 
+Zur Unterstützung benannter Eigenschaften implementiert ein Dienstanbieter zwei Methoden – [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) und [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) –, um zwischen Namen und Bezeichnern zu übersetzen und ihre IMAPIProp zu ermöglichen [:: GetProps](imapiprop-getprops.md) [ IMAPIProp::](imapiprop-setprops.md) SetProps-Methoden zum Abrufen und Ändern von Eigenschaften mit Bezeichnern im benannten Eigenschaftenbereich. Der Range für benannte Eigenschaftsbezeichner liegt zwischen 0X8000 und 0xFFFE. 
   
-Jedes Objekt, das die **IMAPIProp** -Schnittstelle implementiert wird, kann benannte Eigenschaften unterstützt. Von adressbuchanbietern implementierte, die es ermöglichen, dass Einträge von anderen Anbietern in ihre Container und die Nachricht kopiert werden Anbieter speichern, die zum Erstellen von beliebigen Nachrichtentypen verwendet werden können sind erforderlich, um diese Unterstützung bereitzustellen. Es ist eine Option für alle anderen Dienstanbieter. Anbieter, die keine Unterstützung für benannte Eigenschaften MAPI_E_NO_SUPPORT aus den Methoden **GetIDsFromNames** und **GetNamesFromIDs** zurückzugeben und Eigenschaften mit IDs der 0 x 8000 oder höher, Rückgabe MAPI_E_UNEXPECTED festgelegt werden, in der **Verweigern SPropProblemarray**.
+Jedes Objekt, das die **IMAPIProp** -Schnittstelle implementiert, kann benannte Eigenschaften unterstützen. Adressbuchanbieter, die das Kopieren von Einträgen anderer Anbieter in Ihre Container und Nachrichtenspeicher Anbieter zulassen, die zum Erstellen beliebiger Nachrichtentypen verwendet werden können, sind erforderlich, um diese Unterstützung bereitzustellen. Dies ist eine Option für alle anderen Dienstanbieter. Anbieter, die benannte Eigenschaften nicht unterstützen, geben MAPI_E_NO_SUPPORT aus der **GetIDsFromNames** -und der **GetNamesFromIDs** -Methode zurück und lehnen das Festlegen von Eigenschaften mit Bezeichnern von 0X8000 oder höher ab und geben MAPI_E_UNEXPECTED in der ** SPropProblemarray**.
   
-Erstellen von Namen für Eigenschaften ist eine Möglichkeit für Clients, um neue Eigenschaften für vorhandenen oder benutzerdefinierten Nachrichtenklassen definieren. Benannte Eigenschaften können Dienstanbieter um einzigartigen Merkmale von messaging-Systemen verfügbar zu machen. Geben Sie eine alternative Möglichkeit zum Verweisen auf Eigenschaften mit Bezeichnern unter 0 x 8000 ist eine andere Verwendung für benannte Eigenschaften. 
+Das Erstellen von Namen für Eigenschaften ist eine Möglichkeit für Clients, neue Eigenschaften für vorhandene oder benutzerdefinierte Nachrichtenklassen zu definieren. Dienstanbieter können benannte Eigenschaften verwenden, um eindeutige Features Ihrer Messagingsysteme anzuzeigen. Eine weitere Verwendung für benannte Eigenschaften besteht darin, eine alternative Möglichkeit zum Verweisen auf Eigenschaften mit Bezeichnern unter 0X8000 bereitzustellen. 
   
-Beispielsweise konnte ein Client ähnlichen Code wie den folgenden Code verwenden, um die Namen aller benannten Eigenschaften eines Objekts abzurufen:
+Ein Client könnte beispielsweise Code verwenden, der dem folgenden Code ähnelt, um die Namen für alle benannten Eigenschaften eines Objekts abzurufen:
   
 ```cpp
 LPSPropTagArray FAR *    lppPropTags = NULL;
@@ -44,7 +44,7 @@ lpMAPIProp->GetNamesFromIDs (lppPropTags,
  
 ```
 
-Um die Namen aller aus dem Eigenschaftensatz PS_PUBLIC_STRINGS anzufordern, würde ein Client NULL in der Property Set-Parameters, PS_PUBLIC_STRINGS wie folgt ersetzen: 
+Um alle Namen aus dem PS_PUBLIC_STRINGS-Eigenschaftensatz anzufordern, würde ein Client den NULL-Wert im Eigenschaftensatz-Parameter wie folgt in PS_PUBLIC_STRINGS ersetzen: 
   
 ```cpp
 LPSPropTagArray FAR *    lppPropTags = NULL;

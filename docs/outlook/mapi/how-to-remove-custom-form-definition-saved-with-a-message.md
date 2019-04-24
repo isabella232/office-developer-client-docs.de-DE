@@ -1,29 +1,29 @@
 ---
-title: Entfernen Sie benutzerdefinierter Formulardefinition gespeichert mit einer Nachricht
+title: Entfernen benutzerdefinierter Formulardefinitionen, die mit einer Nachricht gespeichert wurden
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6a270f0c-104a-84a1-9adf-aea166f89071
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 4b12824542a1408a364452eb6587122ec66412d3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: ac162cb73cfdee83bf034de32064c5ed9df3bc02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345934"
 ---
-# <a name="remove-custom-form-definition-saved-with-a-message"></a>Entfernen Sie benutzerdefinierter Formulardefinition gespeichert mit einer Nachricht
+# <a name="remove-custom-form-definition-saved-with-a-message"></a>Entfernen benutzerdefinierter Formulardefinitionen, die mit einer Nachricht gespeichert wurden
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird ein Codebeispiel in C++, die eine Nachricht konvertiert, die mit der Definition für ein benutzerdefiniertes Formular auf eine reguläre Nachricht ohne die Formulardefinition gespeichert wurde.
+In diesem Thema wird ein Codebeispiel in C++ gezeigt, das eine Nachricht, die mit einer benutzerdefinierten Formulardefinition gespeichert wurde, in einer regulären Nachricht ohne die Formulardefinition konvertiert.
   
-In Microsoft Outlook 2010 oder Microsoft Outlook 2013 können Sie Formulare mit benutzerdefinierten Formularseiten in einer Formularbibliothek veröffentlichen, oder speichern die entsprechenden Formulardefinition mit einer Nachricht freigeben. Ein benutzerdefiniertes Formular mit einer Nachricht gespeichert wird häufig als "einmaliges Formular," bezeichnet, da das Formular gemeinsam genutzt wird nur für die betreffende Nachricht als einmaligen Instanz anzeigen. Sie dies in der Regel das Formular wird nicht in einer Formularbibliothek veröffentlicht, aber den Empfänger das benutzerdefinierte Formular beim Öffnen des Elements verwendet werden soll. Sie können angeben, dass ein Formular einer einmaligen im Formular-Designer ist, indem Sie das Kontrollkästchen **Element mit Beschreibung senden** auf der Seite **Eigenschaften** des Formulars auswählen. 
+In Microsoft Outlook 2010 oder Microsoft Outlook 2013 können Sie Formulare freigeben, die benutzerdefinierte Formularseiten enthalten, indem Sie Sie entweder in einer Formularbibliothek veröffentlichen oder die entsprechende Formulardefinition mit einer Nachricht speichern. Ein benutzerdefiniertes Formular, das mit einer Nachricht gespeichert wird, wird gemeinhin als "einmaliges Formular" bezeichnet, da das Formular nur zum Anzeigen dieser bestimmten Nachricht als einmalige Instanz freigegeben wird. Dies geschieht normalerweise, wenn das Formular nicht in einer Formularbibliothek veröffentlicht wird, aber der Empfänger das benutzerdefinierte Formular beim Öffnen des Elements verwenden soll. Sie können angeben, dass ein Formular im Formular-Designer eine einmalige Form ist, indem Sie das Kontrollkästchen **Formulardefinition mit Element senden** auf der **Eigenschaften** Seite des Formulars aktivieren. 
   
-Formularen mit Formularseiten können mit Code in Visual Basic Scripting Edition (VBScript) angepasst werden. Nachrichten, die mit Formulardefinitionen gespeichert sind sind im Allgemeinen größer Größe. Ignorieren für Sicherheit und Storage Gründe Outlook 2010 und Outlook 2013 Formulardefinitionen mit beliebigen Elements gespeichert.
+Formulare mit Formularseiten können mit Code in Visual Basic Scripting Edition (VBScript) angepasst werden. Nachrichten, die mit Formulardefinitionen gespeichert werden, sind in der Regel größer. Aus Sicherheits-und Speicher Gründen ignorieren Outlook 2010 und Outlook 2013 Formulardefinitionen, die mit einem beliebigen Element gespeichert werden.
   
-Um eine Nachricht zu konvertieren, die mit der Definition für ein benutzerdefiniertes Formular auf eine ohne gespeichert wird, müssen Sie vier benannte Eigenschaften entfernen:
+Um eine Nachricht, die mit einer benutzerdefinierten Formulardefinition gespeichert wird, ohne zu konvertieren, müssen Sie vier benannte Eigenschaften entfernen:
   
 - [Kanonische PidLidFormStorage-Eigenschaft](pidlidformstorage-canonical-property.md)
     
@@ -33,11 +33,11 @@ Um eine Nachricht zu konvertieren, die mit der Definition für ein benutzerdefin
     
 - [Kanonische PidLidScriptStream-Eigenschaft](pidlidscriptstream-canonical-property.md)
     
-Darüber hinaus sollten Sie auch die [PidLidPropertyDefinitionStream kanonische-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md) entfernen, die enthält die Definitionen der benutzerdefinierten Eigenschaften, die mit dieser Nachricht gespeichert wurden. Eine Auswirkung dieser Eigenschaft entfernen, die die Objektmodelle von Outlook 2010 oder Outlook 2013 ist und die Benutzeroberfläche von Outlook 2010 oder Outlook 2013 werden nicht mehr Benutzer Eigenschaften zugreifen, die für die Nachricht festgelegt wurden. Sie können weiterhin auf diese Eigenschaften und deren Werte durch MAPI zuzugreifen. Beachten Sie, dass wenn diese Eigenschaft nicht entfernt und die Nachricht mit einem anderen Formulardefinition gespeichert ist, wird die [Kanonische PidLidPropertyDefinitionStream-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md) teilweise mit neuen Daten überschrieben und Datenintegrität nicht unbedingt. 
+Darüber hinaus sollten Sie auch die kanonische [Pidlidpropertydefinitionstream (-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md) entfernen, die die Definitionen der benutzerdefinierten Eigenschaften enthält, die mit dieser Nachricht gespeichert wurden. Ein Nebeneffekt beim Entfernen dieser Eigenschaft ist, dass die Outlook 2010-oder Outlook 2013-Objektmodelle und die Outlook 2010-oder Outlook 2013-Benutzeroberfläche nicht mehr auf Benutzereigenschaften zugreifen können, die für die Nachricht festgelegt wurden. Sie können weiterhin über MAPI auf diese Eigenschaften und deren Werte zugreifen. Wenn Sie diese Eigenschaft nicht entfernen und die Nachricht mit einer anderen Formulardefinition gespeichert wird, wird die [kanonische Pidlidpropertydefinitionstream (-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md) teilweise mit neuen Daten überschrieben, und die Datenintegrität wird nicht garantiert. 
   
-Wenn Sie die [Kanonische PidLidPropertyDefinitionStream-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md)entfernen möchten, sollten Sie auch die Kennzeichen **INSP_PROPDEFINITION** aus der [PidLidCustomFlag kanonische-Eigenschaft](pidlidcustomflag-canonical-property.md)entfernen.
+Wenn Sie die [kanonische Pidlidpropertydefinitionstream (-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md)entfernen, sollten Sie auch das **INSP_PROPDEFINITION** -Flag aus der [kanonischen pidlidcustomflag (-Eigenschaft](pidlidcustomflag-canonical-property.md)entfernen.
   
-Die folgende Funktion, `RemoveOneOff`, akzeptiert als Eingabeparameter einen Zeiger auf eine Nachricht und ein Indikator, ob die [Kanonische PidLidPropertyDefinitionStream-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md)zu entfernen. Verwenden den Nachrichtenzeiger, es ruft [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) , um die entsprechende Eigenschaft IDs erhalten und ruft dann [IMAPIProp::DeleteProps](imapiprop-deleteprops.md) , um die benannten Eigenschaften zu entfernen. Außerdem ruft [IMAPIProp::GetProps](imapiprop-getprops.md) zum Abrufen der [PidLidCustomFlag kanonische-Eigenschaft](pidlidcustomflag-canonical-property.md) und löscht die **INSPIRON\_ONEOFFFLAGS** Flag und **INSP_PROPDEFINITION** Kennzeichnen von der Eigenschaft entsprechend also, Outlook 2010 und Outlook 2013 wird nicht für die benannten Eigenschaften gesucht, die entfernt wurden. 
+Die folgende Funktion `RemoveOneOff`akzeptiert als Eingabeparameter einen Zeiger auf eine Nachricht und einen Indikator, ob die [kanonische pidlidpropertydefinitionstream (-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md)entfernt werden soll. Mithilfe des Nachrichten Zeigers wird [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) aufgerufen, um die entsprechenden Eigenschaftenbezeichner abzurufen, und dann wird [IMAPIProp::D eleteprops](imapiprop-deleteprops.md) aufgerufen, um die benannten Eigenschaften zu entfernen. Außerdem wird [IMAPIProp::](imapiprop-getprops.md) GetProps aufgerufen, um [die kanonische pidlidcustomflag (-Eigenschaft](pidlidcustomflag-canonical-property.md) zu erhalten und das **\_ONEOFFFLAGS** -Flag und das **INSP_PROPDEFINITION** -Flag gemäß dieser Eigenschaft zu löschen, sodass Outlook 2010 und Outlook 2013 sucht nicht nach diesen benannten Eigenschaften, die entfernt wurden. 
   
 ```cpp
 ULONG aulOneOffIDs[] = {dispidFormStorage,  

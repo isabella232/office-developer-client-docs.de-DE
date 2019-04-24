@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d8de5fa4-826b-e869-4d9f-997361d05fd8
 description: Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
-ms.openlocfilehash: 7f8800f0b260e808a46ec123d27784f3dd92e847
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f6e5176e3ab654b76c0641b8f642abcf6b1050dd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348314"
 ---
-# <a name="locktextedit-cell-protection-section"></a>LockTextEdit Cell (Protection Section)
+# <a name="locktextedit-cell-protection-section"></a>Zelle "LockTextEdit" (Abschnitt "Protection")
 
 Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
   
@@ -29,13 +29,13 @@ Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
 
 Sie können weiterhin Text formatieren, indem Sie eine Formatvorlage aus dem Dialogfeld **Text** anwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Wenn Sie einen Verweis auf die Zelle LockTextEdit aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockTextEdit aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockTextEdit  <br/> |
+| Zellenname:  <br/> | Zelle LockTextEdit  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockTextEdit aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockTextEdit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

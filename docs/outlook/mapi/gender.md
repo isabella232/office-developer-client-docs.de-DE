@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f60c65e3-b55f-cb68-746e-d0a8cd862d4d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a74a6639023ae6ffddeabd03970b609e7b7babe1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 042216df309e98f35ed0ad71742e46300ebb06da
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342581"
 ---
 # <a name="gender"></a>Geschlecht
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die möglichen Werte für das Geschlecht der messaging-Benutzer an.
+Gibt die möglichen Werte für das Geschlecht eines Messaging Benutzers an.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -41,31 +41,31 @@ enum Gender {
 
  _genderMin_
   
-> Die minimale Anzahl von unterschiedliche Werte für das Geschlecht unterstützt.
+> Die Mindestanzahl von unterschiedlichen Werten, die für das Geschlecht unterstützt werden.
     
  _genderUnspecified_
   
-> Das Geschlecht ist nicht für die messaging-Benutzer angegeben.
+> Das Geschlecht ist für den Messagingbenutzer nicht angegeben.
     
  _genderFemale_
   
-> Der messaging-Benutzer ist Weiblich.
+> Der Messagingbenutzer ist weiblich.
     
  _genderMale_
   
-> Der messaging-Benutzer ist Männlich.
+> Der Messaging-Benutzer ist männlich.
     
  _genderCount_
   
-> Die Anzahl der unterschiedlichen Werte für das Geschlecht unterstützt.
+> Die Anzahl der unterstützten Werte für das Geschlecht.
     
  _genderMax_
   
-> Die maximale Anzahl von unterschiedlichen Werten für das Geschlecht unterstützt.
+> Die maximale Anzahl unterschiedlicher Werte für das Geschlecht.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagGender (kanonische Eigenschaft)](pidtaggender-canonical-property.md)
+[Kanonische Pidtaggender (-Eigenschaft](pidtaggender-canonical-property.md)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c32493fa-aa42-485b-9ea4-f93b835906df
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8b15f12c9a7ac2041c895b935098f9681e4b3a3c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9e7d7ba91791258eca93a2b8bedf95cf121062c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348762"
 ---
 # <a name="imsgstorefinishedmsg"></a>IMsgStore::FinishedMsg
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktiviert den Nachricht-Speicher-Anbieter für die Verarbeitung für eine gesendete Nachricht. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
+Ermöglicht dem Nachrichtenspeicher Anbieter das Ausführen der Verarbeitung für eine gesendete Nachricht. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
   
 ```cpp
 HRESULT FinishedMsg(
@@ -43,40 +43,40 @@ HRESULT FinishedMsg(
     
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID der Nachricht verarbeitet werden.
+> in Ein Zeiger auf die Eintrags-ID der zu verarbeitenden Nachricht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Verarbeitung für die gesendete Nachricht war erfolgreich.
+> Die Verarbeitung der gesendeten Nachricht war erfolgreich.
     
 MAPI_E_NO_SUPPORT 
   
-> Die Nachrichtenanbieter unterstützt keine Verarbeitung von gesendeten Nachrichten. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht die MAPI-Warteschlange befindet.
+> Der Nachrichtenspeicher Anbieter unterstützt keine gesendete Nachrichtenverarbeitung. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht der MAPI-Spooler ist.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMsgStore::FinishedMsg** -Methode führt die Verarbeitung für eine gesendete Nachricht. Löschen der Nachricht in einem anderen Ordner oder beide Aktionen verschieben betreffen diese Verarbeitung. Die Art der Verarbeitung hängt davon ab, ob die **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) Eigenschaften festgelegt werden. 
+Die **IMsgStore:: FinishedMsg** -Methode führt eine Verarbeitung für eine gesendete Nachricht aus. Bei dieser Verarbeitung kann es sich um das Löschen der Nachricht, die Verschiebung in einen anderen Ordner oder um beide Aktionen handeln. Die Art der Verarbeitung hängt davon ab, ob die Eigenschaften **PR_DELETE_AFTER_SUBMIT** ([Pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md)) festgelegt sind. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Entsperren Sie in der Implementierung der **FinishedMsg**die Nachricht vom _LpEntryID_ , und führen Sie die entsprechende Verarbeitung. Die Zielnachricht wird immer gesperrt werden. die MAPI-Warteschlange übergibt die Eintrags-ID für eine nicht gesperrte Nachricht nie an **FinishedMsg**.
+Entsperren Sie in ihrer Implementierung von **FinishedMsg**die Nachricht, die von _lpEntryID_ identifiziert wurde, und führen Sie die entsprechende Verarbeitung aus. Die Zielnachricht ist immer gesperrt; der MAPI-Spooler übergibt nie den Eintragsbezeichner für eine nicht gesperrte Nachricht an **FinishedMsg**.
   
-Es ist möglich, dass weder **PR_DELETE_AFTER_SUBMIT** oder **PR_SENTMAIL_ENTRYID** festgelegt ist, beide festgelegt werden oder mindestens eine der anderen festgelegt ist. Die folgende Tabelle beschreibt die Aktion, die Sie basierend auf der Einstellungen ausgeführt werden soll: 
+Es ist möglich, dass weder **PR_DELETE_AFTER_SUBMIT** noch **PR_SENTMAIL_ENTRYID** festgelegt ist, beides festgelegt ist oder die andere festgelegt ist. In der folgenden Tabelle wird die Aktion beschrieben, die Sie auf der Grundlage der Einstellungen ergreifen sollten: 
   
 |||
 |:-----|:-----|
-|Wenn weder-Eigenschaft festgelegt ist:  <br/> |Lassen Sie die Nachricht in den Ordner, von dem sie (in der Regel im Ordner Postausgang) gesendet wurde.  <br/> |
-|Wenn beide Eigenschaften festgelegt werden:  <br/> |Verschieben der Nachricht in den angegebenen Ordner, falls gewünscht, und löschen Sie ihn.  <br/> |
-|Wenn PR_SENTMAIL_ENTRYID festgelegt ist:  <br/> |Verschieben der Nachricht in den angegebenen Ordner.  <br/> |
-|Wenn PR_DELETE_AFTER_SUBMIT festgelegt ist:  <br/> |Löschen der Nachricht.  <br/> |
+|Wenn keine Eigenschaft festgelegt ist:  <br/> |BeLassen Sie die Nachricht in dem Ordner, von dem Sie gesendet wurde (in der Regel der Postausgang).  <br/> |
+|Wenn beide Eigenschaften festgelegt sind:  <br/> |Verschieben Sie die Nachricht, falls gewünscht, in den angegebenen Ordner, und löschen Sie Sie.  <br/> |
+|Wenn PR_SENTMAIL_ENTRYID festgelegt ist:  <br/> |Verschieben Sie die Nachricht in den angegebenen Ordner.  <br/> |
+|Wenn PR_DELETE_AFTER_SUBMIT festgelegt ist:  <br/> |Löschen Sie die Nachricht.  <br/> |
    
-Nachdem Sie die geeignete Aktion durchgeführt haben, rufen Sie die [IMAPISupport::DoSentMail](imapisupport-dosentmail.md) -Methode. 
+Wenn Sie alle geeigneten Aktionen ausgeführt haben, rufen Sie die [IMAPISupport::D osentmail](imapisupport-dosentmail.md) -Methode auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

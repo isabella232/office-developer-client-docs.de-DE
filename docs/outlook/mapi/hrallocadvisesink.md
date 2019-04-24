@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1dd460e6-ce95-4fef-bb5e-8d778c9716d5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d5cb43bfa3acd912e397644657223c177d6afb30
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7f9873fe8e1825c68d4540cc1d093171e9f95727
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348216"
 ---
 # <a name="hrallocadvisesink"></a>HrAllocAdviseSink
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine Advise-Empfängerobjekt, wenn ein Kontext die aufrufende Implementierung und eine Rückruffunktion, die ausgelöst werden, indem eine Benachrichtigung angegeben wird. 
+Erstellt ein Advise-Senke-Objekt, wenn der durch die aufrufende Implementierung angegebene Kontext und eine Rückruffunktion durch eine Ereignisbenachrichtigung ausgelöst werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 STDAPI HrAllocAdviseSink(
@@ -45,27 +45,27 @@ STDAPI HrAllocAdviseSink(
 
  _lpfnCallback_
   
-> [in] Zeiger auf eine Rückruffunktion, die basierend auf den [NOTIFCALLBACK](notifcallback.md) Prototyp, die MAPI angerufen, wenn eine Benachrichtigungsereignis tritt ein, für die neu erstellte advise-Empfänger. 
+> in Zeiger auf eine Rückruffunktion basierend auf dem [NOTIFCALLBACK](notifcallback.md) -Prototyp, den MAPI aufrufen soll, wenn ein Benachrichtigungsereignis für die neu erstellte Advise-Senke auftritt. 
     
  _lpvContext_
   
-> [in] Zeiger auf Daten des Anrufers an der Callback-Funktion beim Aufrufen von MAPI übergeben. Die Anrufer Daten können eine Adresse Vielfache an den Client oder Anbieter von darstellen. In der Regel stellt der _LpvContext_ -Parameter für C++-Code einen Zeiger auf die Adresse eines Objekts. 
+> in Zeiger auf Anrufer-Daten, die an die Rückruffunktion übergeben werden, wenn Sie von MAPI aufgerufen wird. Die Anrufer-Daten können eine Adresse darstellen, die für den Client oder Anbieter von Bedeutung ist. In der Regel stellt der Parameter _lpvContext_ für C++-Code einen Zeiger auf die Adresse eines Objekts dar. 
     
  _lppAdviseSink_
   
-> [out] Zeiger auf einen Zeiger auf eine Advise-Empfängerobjekt.
+> Out Zeiger auf einen Zeiger auf ein Advise-Senke-Objekt.
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Um die **HrAllocAdviseSink** -Funktion verwenden, können Sie eine Clientanwendung oder Dienstanbieter erstellt ein Objekt Erhalt von Benachrichtigungen, erstellt eine Benachrichtigung Callback-Funktion basierend auf den [NOTIFCALLBACK](notifcallback.md) Funktionsprototyp, der mit diesem Objekt wechselt, auf und übergibt einen Zeiger auf das Objekt in der **HrAllocAdviseSink** -Funktion als _LpvContext_ Wert. Auf diese Weise führt eine Benachrichtigung. und als Teil der Benachrichtigung, MAPI-Aufrufen die Callback-Funktion mit dem Mauszeiger Objekt als Kontext aus. 
+Um die **HrAllocAdviseSink** -Funktion zu verwenden, erstellt eine Clientanwendung oder ein Dienstanbieter ein Objekt zum Empfangen von Benachrichtigungen, erstellt eine Benachrichtigungsrückruffunktion basierend auf dem [NOTIFCALLBACK](notifcallback.md) -Funktionsprototyp, der mit diesem Objekt einhergeht. und übergibt einen Zeiger auf das Objekt in der **HrAllocAdviseSink** -Funktion als _lpvContext_ -Wert. Dadurch wird eine Benachrichtigung ausgeführt; und als Teil des Benachrichtigungsprozesses ruft MAPI die Rückruffunktion mit dem Objektzeiger als Kontext auf. 
   
-MAPI implementierte eine Benachrichtigung Engine asynchron an. In C++ kann die Benachrichtigung Callback-Methode eines Objekts sein. Wenn das Objekt, das die Benachrichtigung generiert nicht vorhanden, wird des Clients oder Anbieter Anfordern einer Benachrichtigung muss eine separate Referenzzähler für dieses Objekt für des Objekts behalten advise-Empfänger. 
+MAPI implementiert das Benachrichtigungsmodul asynchron. In C++ kann der Benachrichtigungsrückruf eine Objektmethode sein. Wenn das Objekt, das die Benachrichtigung generiert, nicht vorhanden ist, muss der Client oder der Anbieter, der die Benachrichtigung anfordert, einen separaten Verweiszähler für dieses Objekt für die Advise-Senke des Objekts aufbewahren. 
   
 > [!CAUTION]
-> **HrAllocAdviseSink** sollte nur selten verwendet werden. Es ist sicherer für Clients zum Erstellen ihrer eigenen Advise-senken. 
+> **HrAllocAdviseSink** sollte sparsam verwendet werden; Es ist sicherer für Clients, eigene Advise-Senken zu erstellen. 
   
 

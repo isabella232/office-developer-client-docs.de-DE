@@ -9,36 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e67dcd83-4a88-a0f8-5c6a-dae51424edbd
 description: Gibt an, ob im Kontextmenü eines Shapes oder einer Seite ein Hyperlink angezeigt wird.
-ms.openlocfilehash: e269c5e907afa0d49f1fc6115b7a031835467c2e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b52da8244bf31e75bacbb6f24f73eba6ee8c6e5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348335"
 ---
-# <a name="invisible-cell-hyperlinks-section"></a>Invisible Cell (Hyperlinks Section)
+# <a name="invisible-cell-hyperlinks-section"></a>Zelle "Invisible" (Abschnitt "Hyperlinks")
 
 Gibt an, ob im Kontextmenü eines Shapes oder einer Seite ein Hyperlink angezeigt wird. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|WAHR  <br/> |Im Kontextmenü wird kein Hyperlink als Menüelement angezeigt.  <br/> |
-|FALSCH  <br/> |Im Kontextmenü wird ein Hyperlink als Menüelement angezeigt (Standardwert).  <br/> |
+|TRUE  <br/> |Im Kontextmenü wird kein Hyperlink als Menüelement angezeigt.  <br/> |
+|FALSE  <br/> |Im Kontextmenü wird ein Hyperlink als Menüelement angezeigt (Standardwert).  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Invisible aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle inVisible aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Hyperlink. *Name* . Unsichtbar, in dem Hyperlink *.name* der Zeilenname ist  <br/> |
+|Zellenname:  <br/> |Hyperlink. *Name* . Unsichtbar, wobei Hyperlink *. Name* der Zeilenname ist  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Invisible aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die unsichtbare Zelle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionHyperlink** <br/> |
-|Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visHLinkInvisible** <br/> |
    
 

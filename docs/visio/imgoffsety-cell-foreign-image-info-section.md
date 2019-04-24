@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3b2991aa-4722-fe3b-39c5-02d38c4c7efc
 description: Bestimmt den Abstand, den das Objekt vertikal vom Ursprung des Rahmens des Objekts entfernt ist. Der Standardwert ist 0. Durch Bearbeitung des Objekts mit dem Zuschneidetool wird dieser Wert geändert.
-ms.openlocfilehash: 2930aa092a2b776ceb0c9c4677f7e5da7f5dcdda
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 908972216a24370bc48990ddc99a36da9274d648
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344737"
 ---
-# <a name="imgoffsety-cell-foreign-image-info-section"></a>ImgOffsetY Cell (Foreign Image Info Section)
+# <a name="imgoffsety-cell-foreign-image-info-section"></a>Zelle "ImgOffsetY" (Abschnitt "Foreign Image Info")
 
-Bestimmt der Abstand das Objekt vertikal vom Ursprung des Rahmens des Objekts entfernt wird. Der Standardwert ist 0. Durch Bearbeitung des Objekts mit der **Zuschneide** -Tool Änderungen dieser Wert. 
+Bestimmt den Abstand, den das Objekt vertikal vom Ursprung des Rahmens des Objekts entfernt ist. Der Standardwert ist 0. Durch Bearbeitung des Objekts mit dem Zuschneidetool wird dieser Wert geändert. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle ImgOffsetY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ImgOffsetY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | ImgOffsetY  <br/> |
+| Zellenname:  <br/> | Zelle ImgOffsetY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ImgOffsetY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ImgOffsetY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

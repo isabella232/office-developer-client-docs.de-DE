@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 898bf89d-d00f-9769-a89d-787ef708eca5
 description: Gibt an, ob die Textrichtung von links nach rechts oder von rechts nach links verläuft.
-ms.openlocfilehash: b471d08556bedf68ce75595b9c211758297e8352
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: af1e79b13d3d8bab2e7271eb79e68cf931871806
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346221"
 ---
-# <a name="flags-cell-paragraph-section"></a>Flags Cell (Paragraph Section)
+# <a name="flags-cell-paragraph-section"></a>Zelle "Flags" (Abschnitt "Paragraph")
 
 Gibt an, ob die Textrichtung von links nach rechts oder von rechts nach links verläuft.
   
@@ -27,20 +27,20 @@ Gibt an, ob die Textrichtung von links nach rechts oder von rechts nach links ve
    
 ## <a name="remarks"></a>Bemerkungen
 
-Der Wert in dieser Zelle entspricht der Einstellung **Richtung** auf der Registerkarte **Absatz** im Dialogfeld **Text** (auf der Registerkarte **Start** , klicken Sie auf den Pfeil neben **Schriftart** ), die angezeigt wird, wenn eine Sprache, die komplexe verwendet Text Skripts wurde Klicken Sie im Dialogfeld **Microsoft Office-Spracheinstellungen** hinzugefügt. (Klicken Sie auf **Start**, klicken Sie auf **Alle Programme**, klicken Sie auf **Microsoft Office**, klicken Sie auf **Microsoft Office Tools**, und klicken Sie dann auf **Microsoft Office-Spracheinstellungen**.) 
+Der Wert in dieser Zelle entspricht der Einstellung **Richtung** auf der Registerkarte **Absatz** im Dialogfeld **Text** (Klicken Sie auf der Registerkarte **Start** auf den Pfeil für die **Schriftart** ), der nur angezeigt wird, wenn eine Sprache, die den Text komplexer Skripts verwendet, im Dialogfeld **Microsoft Office-Spracheinstellungen** hinzugefügt. (Klicken Sie auf **Start**, **Alle Programme**, **Microsoft Office**, Microsoft Office- **Tools**und dann auf **Microsoft Office-Spracheinstellungen**.) 
   
-Wenn Sie einen Verweis auf die Zelle Flags aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Flags aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Para.Flags [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+|Zellenname:  <br/> |Para. Flags [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Flags aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Flags aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-|Zeilenindex:  <br/> |**VisRowParagraph** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visFlags** <br/> |
    
 

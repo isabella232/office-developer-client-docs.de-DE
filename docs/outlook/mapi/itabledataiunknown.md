@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac7ae09f-ce19-45cf-8963-fad5bba75452
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bec68568b30bdc3112493a656de591f222801e46
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3992bea899239ee5975505dec366490d6bbe1698
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348769"
 ---
 # <a name="itabledata--iunknown"></a>ITableData : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet Methoden zum Arbeiten mit Tabellen. MAPI bietet Datenobjekte Tabelle oder Objekte, die **ITableData** , mit denen Dienstanbieter Tabelle Wartungen implementieren. Um ein Table-Datenobjekt zu erhalten, rufen Sie Dienstanbieter [CreateTable](createtable.md) -Funktion. 
+Stellt Dienstprogrammmethoden zum Arbeiten mit Tabellen bereit. MAPI stellt Tabellendaten Objekte oder Objekte bereit, die **ITableData** implementieren, um Dienstanbieter bei der Tabellenwartung zu unterstützen. Zum Abrufen eines Tabellendaten Objekts rufen Dienstanbieter die CreateTable-Funktion auf. [](createtable.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
-|Verfügbar gemacht von:  <br/> |Tabelle Datenobjekte  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Tabellendaten Objekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPITableData  <br/> |
@@ -40,23 +40,23 @@ Bietet Methoden zum Arbeiten mit Tabellen. MAPI bietet Datenobjekte Tabelle oder
 
 |||
 |:-----|:-----|
-|[HrGetView](itabledata-hrgetview.md) <br/> |Erstellt eine Tabellenansicht, einen Zeiger auf eine Implementierung [IMAPITable](imapitableiunknown.md) zurückgibt.  <br/> |
-|[HrModifyRow](itabledata-hrmodifyrow.md) <br/> |Fügt eine neue Tabellenzeile, die möglicherweise eine vorhandene Zeile ersetzen.  <br/> |
+|[HrGetView](itabledata-hrgetview.md) <br/> |Erstellt eine Tabellenansicht und gibt einen Zeiger auf eine [IMAPITable](imapitableiunknown.md) -Implementierung zurück.  <br/> |
+|[HrModifyRow](itabledata-hrmodifyrow.md) <br/> |Fügt eine neue Tabellenzeile ein, die möglicherweise eine vorhandene Zeile ersetzt.  <br/> |
 |[HrDeleteRow](itabledata-hrdeleterow.md) <br/> |Löscht eine Tabellenzeile.  <br/> |
-|[HrQueryRow](itabledata-hrqueryrow.md) <br/> |Ruft eine Tabellenzeile.  <br/> |
-|[HrEnumRow](itabledata-hrenumrow.md) <br/> |Ruft eine Zeile basierend auf seine Position in der Tabelle an.  <br/> |
+|[HrQueryRow](itabledata-hrqueryrow.md) <br/> |Ruft eine Tabellenzeile ab.  <br/> |
+|[HrEnumRow](itabledata-hrenumrow.md) <br/> |Ruft eine Zeile basierend auf ihrer Position in der Tabelle ab.  <br/> |
 |[HrNotify](itabledata-hrnotify.md) <br/> |Sendet eine Benachrichtigung für eine Tabellenzeile.  <br/> |
-|[HrInsertRow](itabledata-hrinsertrow.md) <br/> |Eine Tabellenzeile eingefügt.  <br/> |
-|[HrModifyRows](itabledata-hrmodifyrows.md) <br/> |Mehrere Tabellenzeilen, möglicherweise Ersetzen der vorhandene Zeilen eingefügt.  <br/> |
+|[HrInsertRow](itabledata-hrinsertrow.md) <br/> |Fügt eine Tabellenzeile ein.  <br/> |
+|[HrModifyRows](itabledata-hrmodifyrows.md) <br/> |Fügt mehrere Tabellenzeilen ein, die möglicherweise vorhandene Zeilen ersetzen.  <br/> |
 |[HrDeleteRows](itabledata-hrdeleterows.md) <br/> |Löscht mehrere Tabellenzeilen.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Implementierung der **ITableData** arbeitet mit Tabellen halten Sie alle Daten und zugehörigen Einschränkungen im Arbeitsspeicher, leicht für die Verwendung mit sehr große Tabellen nicht geeignet. Große Einschränkungen und komplexe Vorgänge wie Kategorisierung werden nicht unterstützt. 
+Die MAPI-Implementierung von **ITableData** funktioniert mit Tabellen, indem alle Daten und zugeordneten Einschränkungen im Arbeitsspeicher gespeichert werden, sodass Sie nicht für sehr große Tabellen verwendet werden können. Umfangreiche Einschränkungen und komplexe Vorgänge wie Kategorisierung werden nicht unterstützt. 
   
-Datenobjekte Tabelle identifizieren Zeilen mithilfe von einer Indexspalte, eine Eigenschaft, die in jedem Fall ist einen eindeutigen Wert für jede Zeile. Die meisten Dienstanbieter verwenden Sie die Eigenschaft **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) als Index-Spalte. Eigenschaften, die mehrere Werte aufweisen können nicht als eine Indexspalte verwendet werden.
+Tabellendaten Objekte identifizieren Zeilen mithilfe einer Indexspalte, einer Eigenschaft, die garantiert einen eindeutigen Wert für jede Zeile hat. Die meisten Dienstanbieter verwenden die **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md))-Eigenschaft als Indexspalte. Eigenschaften mit mehreren Werten können nicht als Indexspalte verwendet werden.
   
-Tabelle Datenobjekte generieren eine einzelne Benachrichtigung unabhängig von der Anzahl der Zeilen, die von einer Änderung oder Löschung betroffen sind. Wenn eine Zielzeile in einem Vorgang nicht vorhanden ist, wird eine Zeile hinzugefügt.
+Tabellendaten Objekte generieren eine einzelne Benachrichtigung, unabhängig von der Anzahl von Zeilen, die von einer Änderung oder Löschung betroffen sind. Wenn eine Ziel Zeile in einem Vorgang nicht vorhanden ist, wird eine Zeile hinzugefügt.
   
 ## <a name="see-also"></a>Siehe auch
 

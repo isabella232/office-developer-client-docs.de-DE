@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 5ae3fdf0-6193-4c1f-bd2e-d69c56d69773
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1f79265c4356747e64aa8102dd4486db229baf5a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c142424bb050ae287f54a87ea8a5e0ea45acb12c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351205"
 ---
 # <a name="imapifoldersavecontentssort"></a>IMAPIFolder::SaveContentsSort
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt die Standard-Sortierreihenfolge für einen Ordner Inhaltstabelle fest.
+Legt die Standardsortierreihenfolge für die Inhaltstabelle eines Ordners fest.
   
 ```cpp
 HRESULT SaveContentsSort(
@@ -38,17 +38,17 @@ HRESULT SaveContentsSort(
 
  _lpSortCriteria_
   
-> [in] Ein Zeiger auf eine [SSortOrderSet](ssortorderset.md) -Struktur, die die Sortierreihenfolge enthält. 
+> in Ein Zeiger auf eine [SSortOrderSet](ssortorderset.md) -Struktur, die die Standardsortierreihenfolge enthält. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Sortierreihenfolge festgelegt wird. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die die Festlegung der Standardsortierreihenfolge steuert. Das folgende Flag kann festgelegt werden:
     
 RECURSIVE_SORT 
   
-> Der Sortierung Reihenfolge Standardsatz gilt für den angegebenen Ordner und für alle Unterordner.
+> Die Standardeinstellung für die Sortierreihenfolge gilt für den angegebenen Ordner und alle Unterordner.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -56,13 +56,13 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Die Nachrichtenanbieter unterstützt keine Sortierreihenfolge für ihre Ordner Inhalt Tabellen speichern.
+> Der Nachrichtenspeicher Anbieter unterstützt das Speichern einer Sortierreihenfolge für die Ordnerinhaltstabellen nicht.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIFolder::SaveContentsSort** -Methode stellt eine standardmäßige Sortierreihenfolge für einen Ordner Inhaltstabelle her. D. h., wenn ein Client nach der Code ruft **SaveContentsSort**den Ordner [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) -Methode aufruft, werden die Zeilen in der Inhaltstabelle zurückgegebene in der Reihenfolge von **SaveContentsSort**hergestellt angezeigt.
+Die **IMAPIFolder:: SaveContentsSort** -Methode richtet eine Standardsortierreihenfolge für die Inhaltstabelle eines Ordners ein. Wenn ein Client die [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable-Methode des Ordners aufruft, nachdem der Code **SaveContentsSort**aufgerufen hat, werden die Zeilen in der Tabelle zurückgegebene Inhalte in der von **SaveContentsSort**festgelegten Reihenfolge angezeigt.
   
-Nachricht nicht alle Anbieter unterstützen **SaveContentsSort**. Es ist akzeptabel für Nachricht Anbieter MAPI_E_NO_SUPPORT aus der **SaveContentsSort** -Methode zurückgegeben. 
+Nicht alle Nachrichtenspeicher Anbieter unterstützen **SaveContentsSort**; Es ist akzeptabel, dass Nachrichtenspeicher Anbieter MAPI_E_NO_SUPPORT von der **SaveContentsSort** -Methode zurückgeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

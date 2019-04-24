@@ -6,27 +6,27 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 245166ce-1cb6-634b-c763-bb717a940eec
-description: 'Diese Navigationsseite enthält Links zu Themen zur Programmierbarkeit in Visio (Übersicht). Klicken Sie auf die unten aufgeführten Links, oder verwenden Sie das Inhaltsverzeichnis zum Navigieren zu den folgenden Themen:'
-ms.openlocfilehash: b385eb3228b015a1dca3df9defa5579e3d7da533
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Diese Navigationsseite enthält Links zu Übersichtsthemen zur Programmierbarkeit in Visio. Klicken Sie auf die Links, oder verwenden Sie das Inhaltsverzeichnis, um die folgenden Themen aufzurufen:'
+ms.openlocfilehash: fef26adf718b883ef2dbc75fc1f3b9cf1b143386
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358618"
 ---
 # <a name="concepts-visio-shapesheet"></a>Konzepte (Visio-ShapeSheet)
 
-Diese Navigationsseite enthält Links zu Themen zur Programmierbarkeit in Visio (Übersicht). Klicken Sie auf die unten aufgeführten Links, oder verwenden Sie das Inhaltsverzeichnis zum Navigieren zu den folgenden Themen:
+Diese Navigationsseite enthält Links zu Übersichtsthemen zur Programmierbarkeit in Visio. Klicken Sie auf die Links, oder verwenden Sie das Inhaltsverzeichnis, um die folgenden Themen aufzurufen:
   
 - [Informationen zu Zellbezügen](about-cell-references.md)
     
 - [Informationen zu Währungskonstanten](about-currency-constants.md)
     
-- [Informationen zu Datum, Uhrzeit und Dauerwerten](about-date-time-and-duration-values.md)
+- [Informationen zu Werten für Datum, Uhrzeit und Dauer](about-date-time-and-duration-values.md)
     
 - [Informationen zu Fehlerwerten](about-error-values.md)
     
-- [Informationen zum Formatieren von Bildern](about-format-pictures.md)
+- [Informationen zu Formatierungsangaben](about-format-pictures.md)
     
 - [Informationen zu Formeln](about-formulas.md)
     
@@ -34,7 +34,7 @@ Diese Navigationsseite enthält Links zu Themen zur Programmierbarkeit in Visio 
     
 - [Informationen zu Operatoren](about-operators.md)
     
-- [Informationen zu Sicherheitseinstellungen und der Ausführung von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md)
+- [Informationen zu Sicherheitseinstellungen und zum Ausführen von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md)
     
 - [Informationen zu Zeichenfolgen](about-strings.md)
     

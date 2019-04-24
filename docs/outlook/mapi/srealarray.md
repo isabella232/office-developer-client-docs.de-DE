@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95be07bf-5732-4775-9e0f-fec47e99d9b7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8c7ce2805248bf91ce7da071c67ece28a5b8ca07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8439d6609ebece75699a1150a9d0c1a41277fd52
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344380"
 ---
 # <a name="srealarray"></a>SRealArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Float-Werten, mit denen eine Eigenschaft vom Typ PT_MV_R4 beschrieben. 
+Enthält ein Array von float-Werten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_R4 verwendet werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SRealArray
@@ -44,15 +44,15 @@ typedef struct _SRealArray
 
  **cValues**
   
-> Anzahl der Werte im Array auf den Member **Lpflt** zeigt. 
+> Die Anzahl der Werte im Array, auf die durch das **lpflt** -Element verwiesen wird. 
     
  **lpflt**
   
-> Zeiger auf ein Array von Float-Werten.
+> Zeiger auf ein Array von float-Werten.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zu den Eigenschaftentyp PT_MV_R4 finden Sie unter [Eigenschaftentypen](property-types.md).
+Weitere Informationen zum PT_MV_R4-Eigenschaftentyp finden Sie unter [Property](property-types.md)Types.
   
 ## <a name="see-also"></a>Siehe auch
 

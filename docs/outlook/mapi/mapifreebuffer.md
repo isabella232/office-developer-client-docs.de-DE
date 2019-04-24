@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9412594f-8acc-4c7e-a668-4ec1da0ad9cf
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ad3d9d12e1073610747b0ab078c6d65c09f8c7c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8794bb233eb69d0f246fb1019954ab718db6f464
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346662"
 ---
 # <a name="mapifreebuffer"></a>MAPIFreeBuffer
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen mit einem Aufruf der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) oder die Funktion [MAPIAllocateMore](mapiallocatemore.md) reservierten Speicherpuffer frei. 
+Gibt einen Speicherpuffer frei, der mit einem Aufruf der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion oder der [MAPIAllocateMore](mapiallocatemore.md) -Funktion reserviert wurde. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix.h  <br/> |
+|Headerdatei  <br/> |Mapix. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 ULONG MAPIFreeBuffer(
@@ -43,24 +43,24 @@ ULONG MAPIFreeBuffer(
 
  _lpBuffer_
   
-> [in] Zeiger auf einen Puffer zuvor reservierter Speicher. Wenn NULL in der _LpBuffer_ -Parameter übergeben wird, hat **MAPIFreeBuffer** keine Auswirkung. 
+> in Zeiger auf einen zuvor reservierten Speicherpuffer. Wenn NULL im _lpBuffer_ -Parameter übergeben wird, bewirkt **mapifreebufferfreigegeben** nichts. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und den angeforderten Speicher freigegeben. **MAPIFreeBuffer** können auch S_OK zurückgeben, auf dem bereits freigegebenen Speicherorte oder wenn die Arbeitsspeicher-Block mit **MAPIAllocateBuffer** und **MAPIAllocateMore**kein Speicherplatz zugeordnet ist.
+> Der Aufruf wurde erfolgreich durchgeführt und der angeforderte Arbeitsspeicher freigegeben. **Mapifreebufferfreigegeben** kann auch S_OK auf bereits freigegebenen Speicherorten zurückgeben oder wenn der Speicherblock nicht mit **MAPIAllocateBuffer** und **MAPIAllocateMore**zugeordnet ist.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-In der Regel, wenn eine Clientanwendung oder Dienstanbieter [MAPIAllocateBuffer](mapiallocatebuffer.md) oder [MAPIAllocateMore](mapiallocatemore.md), der Betriebssystem-Konstrukte in einen zusammenhängenden Speicherpuffers einen oder mehrere komplexe Strukturen mit mehreren Ebenen von Zeigern aufruft. Wenn ein MAPI-Funktion oder -Methode einen Puffer mit solchen Inhalte erstellt, kann ein Client später frei alle Strukturen, die im Puffer enthalten sind, indem Sie den Zeiger auf den Puffer zurückgegeben, die von der MAPI-Funktion, die den Puffer erstellt an **MAPIFreeBuffer** übergeben. Einem Dienstanbieter mit **MAPIFreeBuffer**Speicherpuffers frei muss er den Zeiger dem Puffer mit DSO-Objekt für den Anbieter zurückgegebenen bestehen. 
+Wenn eine Clientanwendung oder ein Dienstanbieter [MAPIAllocateBuffer](mapiallocatebuffer.md) oder [MAPIAllocateMore](mapiallocatemore.md)aufruft, erstellt das Betriebssystem in der Regel eine oder mehrere komplexe Strukturen mit mehreren Zeiger Ebenen in einem zusammenhängenden Speicherpuffer. Wenn eine MAPI-Funktion oder-Methode einen Puffer mit solchen Inhalten erstellt, kann ein Client später alle im Puffer enthaltenen Strukturen freigeben, indem er an **mapifreebufferfreigegeben** den Zeiger auf den Puffer übergibt, der von der MAPI-Funktion zurückgegeben wurde, die den Puffer erstellt hat. Damit ein Dienstanbieter einen Speicherpuffer mithilfe von **mapifreebufferfreigegeben**freigeben kann, muss er den Zeiger an diesen Puffer übergeben, der mit dem Support Objekt des Anbieters zurückgegeben wird. 
   
-Der Aufruf **MAPIFreeBuffer** auf einen bestimmten Puffer frei so bald wie ein Client vorgenommen werden muss, oder Anbieter wird nach Abschluss des Vorgangs mit diesen Puffer. Einfach die [IMAPISession::Logoff](imapisession-logoff.md) -Methode aufruft, am Ende des MAPI-Sitzung wird nicht automatisch Speicherpuffern freigegeben. 
+Der Aufruf an **mapifreebufferfreigegeben** , einen bestimmten Puffer freizugeben, muss vorgenommen werden, sobald ein Client oder Anbieter diesen Puffer verwendet. Beim einfachen Aufrufen der [IMAPISession:: Logout](imapisession-logoff.md) -Methode am Ende einer MAPI-Sitzung werden Speicherpuffer nicht automatisch freigegeben. 
   
-Ein Client oder Dienstanbieter sollte auf der Annahme ausgeführt werden, dass nach dem erfolgreichen Beenden **MAPIFreeBuffer** _LpBuffer_ übergebene Zeiger ungültig ist. Wenn der Zeiger entweder einen nicht von der messaging-System über **MAPIAllocateBuffer** oder **MAPIAllocateMore** oder einen Speicherblock freien reservierten Arbeitsspeicher Block gibt, ist das Verhalten der **MAPIFreeBuffer** nicht definiert. 
+Ein Client oder Dienstanbieter sollte davon ausgehen, dass der in _lpBuffer_ übergebene Zeiger nach einer erfolgreichen Rückgabe von **mapifreebufferfreigegeben**ungültig ist. Wenn der Zeiger entweder einen vom Messagingsystem nicht zugewiesenen Speicherblock über **MAPIAllocateBuffer** oder **MAPIAllocateMore** oder einen freien Speicherblock angibt, ist das Verhalten von **mapifreebufferfreigegeben** nicht definiert. 
   
 > [!NOTE]
-> Übergeben einen null-Zeiger an **MAPIFreeBuffer** macht Anwendung Bereinigungscode einfacher und kleinere, da **MAPIFreeBuffer** können Zeiger auf NULL initialisiert, und klicken Sie dann in der Bereinigungscode frei, ohne sie zuerst zu testen. 
+> Durch das Übergeben eines NULL-Zeigers an **mapifreebufferfreigegeben** wird der Anwendungs Bereinigungscode einfacher und kleiner, da **MAPIFREEBUFFERFREIGEGEBEN** Zeiger auf Null initialisieren und dann im Bereinigungscode freigeben kann, ohne Sie zuerst testen zu müssen. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b2405457-843c-0d46-5f4f-9c413826c3f1
 description: Bestimmt, ob die Zeile ein untergeordnetes Erweiterungsmenü der letzten Zeile oberhalb befindlichen Zeile ist, bei der es sich nicht um eine untergeordnete Erweiterung handelt.
-ms.openlocfilehash: 8a41721f91fa9632246e512cfd4ba1a2d871ece5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 85524ea33258449f5c9ee0991ac9a64f8f0eebae
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346151"
 ---
-# <a name="flyoutchild-cell-actions-section"></a>FlyoutChild Cell (Actions Section)
+# <a name="flyoutchild-cell-actions-section"></a>Zelle "FlyoutChild" (Abschnitt "Aktionen")
 
 Bestimmt, ob die Zeile ein untergeordnetes Erweiterungsmenü der letzten Zeile oberhalb befindlichen Zeile ist, bei der es sich nicht um eine untergeordnete Erweiterung handelt. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie eine Referenz auf die Zelle FlyoutChild nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
+Wenn Sie einen Verweis auf die Zelle FlyoutChild aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . FlyoutChildwhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name* . FlyoutChildwhere-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle FlyoutChild aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle FlyoutChild aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**VisRowAction** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionFlyoutChild** <br/> |
    
 

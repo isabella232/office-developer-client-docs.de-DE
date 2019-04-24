@@ -12,38 +12,38 @@ api_type:
 - COM
 ms.assetid: b743b5b6-4a7c-46b8-99eb-afd13ee947db
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 784a2f497811ba7c4ba0abf260ff32fde75de76a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6a76488f56f9d1eb1b344c01de2615627dd5d3ec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350869"
 ---
 # <a name="imapiclientshutdownqueryfastshutdown"></a>IMAPIClientShutdown::QueryFastShutdown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Abfragen des MAPI-Subsystems für Schnelles Herunterfahren unterstützt, die von geladenen MAPI-Anbieter bereitgestellt wird.
+Fragt das MAPI-Subsystem zur Unterstützung des schnellen Herunterfahrens ab, das von geladenen MAPI-Anbietern bereitgestellt wird.
   
 ```cpp
 HRESULT QueryFastShutdown ();
 ```
 
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> MAPI-Subsystems unterstützt den MAPI-Client zum Herunterfahren schnelle.
+> Das MAPI-Subsystem unterstützt den MAPI-Client für schnelles Herunterfahren.
     
 MAPI_E_NO_SUPPORT
   
-> MAPI-Anbieter unterstützt keine den MAPI-Client zum Herunterfahren schnelle.
+> Der MAPI-Anbieter unterstützt den MAPI-Client nicht für schnelles Herunterfahren.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ob die MAPI-Subsystems auf Herunterfahren schnelle führen Sie den MAPI-Client unterstützt, hängt von Einstellung in der Windows-Registrierung des Benutzers oder das Standardverhalten des MAPI-Client für Schnelles Herunterfahren. Außerdem hängt die Möglichkeit der geladenen MAPI-Anbieter zur Unterstützung von schnellen Herunterfahren. Weitere Informationen finden Sie unter [Fast Herunterfahren Benutzeroptionen](fast-shutdown-user-options.md).
+Ob das MAPI-Subsystem den MAPI-Client für schnelles Herunterfahren unterstützt, hängt von der Windows-Registrierungseinstellung des Benutzers oder dem Standardverhalten des MAPI-Clients für schnelles Herunterfahren ab. Außerdem hängt es von der Fähigkeit der geladenen MAPI-Anbieter ab, das schnelle Herunterfahren zu unterstützen. Weitere Informationen finden Sie unter [Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md).
   
 ## <a name="see-also"></a>Siehe auch
 

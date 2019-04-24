@@ -7,75 +7,75 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b8aa6b36-d6e5-4e1f-8ac5-5d6a78a70bf8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d135e0c224866cd2a675df2ef9ec1b206f3169ab
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2a1461f0c7196cd425d9736f5837b742bedd4fb5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344575"
 ---
 # <a name="hierarchy-tables"></a>Hierarchietabellen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Hierarchietabelle enthält Informationen zu den Ordnern in einem Nachrichtenspeicher oder in einer Adressbuchcontainer Container. Jede Zeile einer Hierarchie-Tabelle enthält eine Reihe von Spalten mit Informationen zu einem Ordner oder Adressbuchcontainer. Hierarchietabellen werden hauptsächlich von Clients verwendete und implementiert Zeichenfolgeneigenschaften Nachricht eine Struktur der Ordner und Unterordner anzeigt und implementiert mithilfe von adressbuchanbietern implementierte Struktur von Containern im Adressbuch angezeigt. Container, die Untercontainer, enthalten können nicht durch ohne das Flag AB_SUBCONTAINERS in ihrer **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))-Eigenschaft keine Hierarchietabelle zu implementieren.
+Eine Hierarchietabelle enthält Informationen zu den Ordnern in einem Nachrichtenspeicher oder den Containern in einem Adressbuchcontainer. Jede Zeile einer Hierarchietabelle enthält eine Reihe von Spalten mit Informationen zu einem Ordner-oder Adressbuchcontainer. Hierarchietabellen werden in erster Linie von Clients verwendet und von Nachrichtenspeicher Anbietern implementiert, um eine Struktur von Ordnern und Unterordnern anzuzeigen und von Adressbuch Anbietern implementiert, um eine Struktur von Containern im Adressbuch anzuzeigen. Container, die keine Untercontainer enthalten können, wie durch das Fehlen des AB_SUBCONTAINERS-Flags in Ihrer **PR_CONTAINER_FLAGS** ([pidtagcontainerflags (](pidtagcontainerflags-canonical-property.md))-Eigenschaft angegeben, implementieren keine Hierarchietabelle.
   
-Eine Hierarchietabelle kann durch Aufrufen von zugegriffen werden:
+Eine Hierarchietabelle kann durch Aufrufen aufgerufen werden:
   
-- [IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md).
+- [IMAPIContainer:: GetHierarchy](imapicontainer-gethierarchytable.md).
     
-    - Oder -
+    - Oder
     
-- [IMAPIProp::OpenProperty](imapiprop-openproperty.md) **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) als Eigenschafts-Tag und IID_IMAPITable als Schnittstellenbezeichner übergeben.
+- [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) übergibt **PR_CONTAINER_HIERARCHY** ([pidtagcontainerhierarchy (](pidtagcontainerhierarchy-canonical-property.md)) als Property-Tag und IID_IMAPITable als Schnittstellenbezeichner.
     
-Container und Ordner müssen beide Verfahren zum Abrufen von Eigenschaften der Tabelle unterstützen. Es ist nicht zulässig für Dienstanbieter unterstützen nur eine Möglichkeit, diese Tabellen zugegriffen werden, da Clients erwarten die Wahl. 
+Container und Ordner müssen beide Techniken zum Abrufen von Tabelleneigenschaften unterstützen. Es ist nicht akzeptabel, dass Dienstanbieter nur eine Möglichkeit zum Zugriff auf diese Tabellen unterstützen, da Clients erwarten, dass Sie die Wahl haben. 
   
 > [!IMPORTANT]
-> Anbieter sind nicht unbedingt berücksichtigt die Sortierreihenfolge für Hierarchietabellen angegebenen festgelegt. 
+> Speicheranbieter werden nicht unbedingt für die für Hierarchietabellen angegebenen Sortierreihenfolgen festgelegt. 
   
-Der Aufruf von **IMAPIProp::OpenProperty** umfasst das Zugreifen auf die Hierarchietabelle mithilfe die entsprechende Eigenschaft **PR_CONTAINER_HIERARCHY**öffnen. Obwohl **PR_CONTAINER_HIERARCHY** über einen Ordner oder für den Container [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode abgerufen werden kann, ist es in Array der Tag-Eigenschaft enthalten, die von der [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode zurückgegeben wird. 
+Der Aufruf von **IMAPIProp:: OpenProperty** beinhaltet den Zugriff auf die Hierarchietabelle durch Öffnen der zugehörigen Eigenschaft, **PR_CONTAINER_HIERARCHY**. Obwohl **PR_CONTAINER_HIERARCHY** nicht über die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode eines Ordners oder Containers abgerufen werden kann, wird es in das Property-Tag-Array aufgenommen, das von der [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode zurückgegeben wird. 
   
- **PR_CONTAINER_HIERARCHY** kann auch zum einschließen oder Ausschließen einer Hierarchietabelle einen Kopiervorgang verwendet werden. Wenn ein Client **PR_CONTAINER_HIERARCHY** im *LpExcludeProps* -Parameter für [IMAPIProp::CopyTo](imapiprop-copyto.md) in einen Kopiervorgang angibt, wird der neuen Ordner oder im Container nicht die Hierarchietabelle des ursprünglichen Ordner oder des Containers unterstützt. 
+ **PR_CONTAINER_HIERARCHY** kann auch verwendet werden, um eine Hierarchietabelle aus einem Kopiervorgang einzubeziehen oder auszuschließen. Wenn ein Client **PR_CONTAINER_HIERARCHY** im *lpExcludeProps* -Parameter für [IMAPIProp:: CopyTo](imapiprop-copyto.md) in einem Kopiervorgang angibt, unterstützt der neue Ordner oder Container die Hierarchietabelle des ursprünglichen Ordners oder Containers nicht. 
   
-Die folgenden Eigenschaften bilden die erforderliche Spalte in einer Hierarchietabelle festgelegt:
+Die folgenden Eigenschaften sind der erforderliche Spaltensatz in einer Hierarchietabelle:
   
 |||
 |:-----|:-----|
-|**PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md))  <br/> |**PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md))  <br/> |
+|**PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md))  <br/> |**PR_DEPTH** ([Pidtagdepth (](pidtagdepth-canonical-property.md))  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |
-|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |
-|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |**PR_STATUS** ([PidTagStatus](pidtagstatus-canonical-property.md))  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))  <br/> |
+|**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |**PR_STATUS** ([Pidtagstatus (](pidtagstatus-canonical-property.md))  <br/> |
    
- **PR_DISPLAY_NAME** enthält den Namen für den Container oder Ordner, die in der Anzeige der Hierarchie angezeigt werden soll. 
+ **PR_DISPLAY_NAME** enthält den Namen für den Container oder Ordner, der in der Anzeige der Hierarchie angezeigt werden soll. 
   
- **PR_ENTRYID** ist die Eintrags-ID dieses Containers oder Ordner zugeordnet ist. Es wird erwartet, dass eine langfristige Eintrags-ID sein. Clients und MAPI können **OpenEntry** auf den Container oder Ordner öffnen und ihren Inhalt durch Aufrufen von [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)dieses Eintrags-ID übergeben. 
+ **PR_ENTRYID** ist die Eintrags-ID, die diesem Container oder Ordner zugeordnet ist. Es wird erwartet, dass es sich um eine langfristige Eintrags-ID handelt. Clients und MAPI können diese Eintrags-ID **** an OpenEntry weiterleiten, um den Container oder Ordner zu öffnen und den Inhalt durch Aufrufen von [IMAPIContainer::](imapicontainer-getcontentstable.md)getcontentable anzuzeigen. 
   
- **PR_DEPTH** ist ein numerischer Wert, der mit 0 (null) wird die oberste Ebene Einzugsebene für diesen Container oder Ordner angibt. Die tiefer in der Hierarchie einen Container oder Ordner befindet, je höher den Wert für die **PR_DEPTH** -Eigenschaft Clients verwenden die **PR_DEPTH** -Eigenschaft, um eine Hierarchietabelle entsprechend angezeigt, damit die Benutzer klar über- und untergeordnete Beziehungen sehen können. Container oder Ordner Tiefe ist immer relativ zu den Container oder Ordner die Hierarchietabelle implementieren. 
+ **PR_DEPTH** ist ein numerischer Wert, der die Einzugsebene für diesen Container oder Ordner angibt, wobei 0 (null) die oberste Ebene ist. Je tiefer in der Hierarchie sich ein Container oder Ordner befindet, desto höher ist der Wert für die **PR_DEPTH** -Eigenschaft. Clients verwenden die **PR_DEPTH** -Eigenschaft, um eine Hierarchietabelle entsprechend anzuzeigen, sodass Benutzer die Beziehungen zwischen über-und untergeordneten Elementen deutlich erkennen können. Die Container-oder Ordnertiefe ist immer relativ zum Container oder Ordner, der die Hierarchietabelle implementiert. 
   
- **PR_OBJECT_TYPE** wird immer auf MAPI_ABCONT für Address Book Hierarchietabellen und MAPI_FOLDER für Ordner Hierarchietabellen festgelegt. 
+ **PR_OBJECT_TYPE** ist immer auf MAPI_ABCONT für Adressbuch-Hierarchietabellen und MAPI_FOLDER für Ordner Hierarchietabellen festgelegt. 
   
- **PR_DISPLAY_TYPE** ist ein numerischer Wert, der beschreibt, wie eine Container oder einen Ordner in der Hierarchietabelle angezeigt wird. Es wird hauptsächlich für die Anzeige verwendet, zum Hervorheben zwischen verschiedenen Arten von Containern oder Ordner verwendet. Viele Nachricht speichern und address Book Anbieter Verwendung Symbole für die verschiedenen Anzeigetypen. Es ist bis zum Verwenden des Dienstanbieters für diese Symbole angeben. MAPI nicht Standardeinstellungen zur Verfügung. 
+ **PR_DISPLAY_TYPE** ist ein numerischer Wert, der angibt, wie ein Container oder Ordner in der Hierarchietabelle angezeigt wird. Sie wird hauptsächlich zu Anzeigezwecken verwendet, um visuell zwischen Container-oder Ordnertypen zu unterscheiden. Viele Nachrichtenspeicher-und Adressbuchanbieter verwenden Symbole für die verschiedenen Anzeigetypen. Der Anbieter muss diese Symbole bereitstellen. MAPI stellt keine Standardwerte bereit. 
   
-MAPI definiert viele Werte für **PR_DISPLAY_TYPE**, einige, die gelten für Ordner und andere Personen, die mit der Address Book Container der Hierarchietabellen verwendet werden. In der Regel ist einen Ordner **PR_DISPLAY_TYPE** auf DT_FOLDER festgelegt, um eine standardmäßige Ordnersymbol DT_FOLDER_LINK an, dass ein Symbol, das einen Link zu einem anderen Ordner darstellt, oder DT_FOLDER_SPECIAL an, dass ein Symbol, das anwendungsspezifische ist anzugeben. DT_FOLDER_LINK wird mit Suchergebnissen Ordner verwendet. 
+MAPI definiert viele Werte für **PR_DISPLAY_TYPE**, einige, die für Ordner und andere gültig sind, die mit den Hierarchietabellen von Adressbuch Containern verwendet werden. In der Regel wird die **PR_DISPLAY_TYPE** eines Ordners auf DT_FOLDER festgelegt, um ein Standardordner Symbol anzugeben, DT_FOLDER_LINK, um ein Symbol anzugeben, das einen Link zu einem anderen Ordner darstellt, oder DT_FOLDER_SPECIAL, um ein anwendungsspezifisches Symbol anzugeben. DT_FOLDER_LINK wird mit Suchergebnis Ordnern verwendet. 
   
-Zusätzlich zu diesen erforderlichen Spalten müssen Address Book Hierarchietabellen die **PR_CONTAINER_FLAGS** -Eigenschaft enthalten. **PR_CONTAINER_FLAGS** gibt verschiedene Attribute über einem Container in der Hierarchie an und wird verwendet, um einen Container aus einer anderen unterscheiden. 
+Zusätzlich zu diesen erforderlichen Spalten müssen Adressbuch-Hierarchietabellen die **PR_CONTAINER_FLAGS** -Eigenschaft enthalten. **PR_CONTAINER_FLAGS** gibt verschiedene Attribute zu einem Container in der Hierarchie an und wird verwendet, um einen Container von einem anderen zu unterscheiden. 
   
-Eine optionale Eigenschaft für Address Book Hierarchietabellen ist **PR_AB_PROVIDER_ID** ([PidTagAbProviderId](pidtagabproviderid-canonical-property.md)).
+Eine optionale Eigenschaft für Adressbuch-Hierarchietabellen ist die **PR_AB_PROVIDER_ID** ([pidtagabproviderid (](pidtagabproviderid-canonical-property.md))-Eigenschaft.
   
-Nachrichtenspeicher Hierarchietabellen fügen diese Eigenschaften in ihre erforderliche Spalte festlegen:
+Hierarchietabellen für Nachrichtenspeicher enthalten diese Eigenschaften in Ihrem erforderlichen Spaltensatz:
   
-- **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md))
+- **PR_FOLDER_TYPE** ([Pidtagfoldertype (](pidtagfoldertype-canonical-property.md))
     
-- **PR_SUBFOLDERS** ([PidTagSubfolders](pidtagsubfolders-canonical-property.md))
+- **PR_SUBFOLDERS** ([Pidtagsubfolders (](pidtagsubfolders-canonical-property.md))
     
-- **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))
+- **PR_CONTENT_COUNT** ([Pidtagcontentcount (](pidtagcontentcount-canonical-property.md))
     
-- **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md))
+- **PR_CONTENT_UNREAD** ([Pidtagcontentunreadcount (](pidtagcontentunreadcount-canonical-property.md))
     
-Von adressbuchanbietern implementierte müssen die folgenden Methoden **IMAPITable** in ihrer Hierarchie Tabelle Implementierungen unterstützen, da sie MAPI integrierte des Adressbuchs erforderlich sind: 
+Adressbuchanbieter müssen die folgenden **IMAPITable** -Methoden in ihren Hierarchietabellen Implementierungen unterstützen, da Sie für das integrierte MAPI-Adressbuch erforderlich sind: 
   
 |||
 |:-----|:-----|

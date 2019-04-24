@@ -1,57 +1,57 @@
 ---
-title: Die Reihenfolge der Lösung für Adresslisten programmgesteuert festlegen
+title: Programmgesteuertes Festlegen der Auflösungsreihenfolge für Adresslisten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f9559afb-8db1-ce72-3e11-9b3d47bb80b6
-description: 'Zuletzt geändert: 06 Juli 2012'
+description: 'Zuletzt geändert: 06 Juli, 2012'
 ms.openlocfilehash: 4ca3e9d11a3133236d38ef31b01ecded932e8013
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345962"
 ---
-# <a name="programmatically-set-the-resolution-order-for-address-lists"></a>Die Reihenfolge der Lösung für Adresslisten programmgesteuert festlegen
+# <a name="programmatically-set-the-resolution-order-for-address-lists"></a>Programmgesteuertes Festlegen der Auflösungsreihenfolge für Adresslisten
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, die die Reihenfolge der Adresslisten programmgesteuert festlegt, durch welche Empfänger in e-Mail-Nachrichten und Teilnehmer in Besprechungsanfragen aufgelöst werden.
+Dieses Thema enthält ein Codebeispiel in C++, das die Reihenfolge von Adresslisten programmgesteuert festlegt, nach der Empfänger in e-Mail-Nachrichten und Teilnehmern in Besprechungsanfragen aufgelöst werden.
   
-In MAPI jedes Profil kann mehrere Adresslisten unterstützen, und jede Adressliste befindet sich in einem eigenen Container. MAPI unterstützt die **[SetSearchPath](https://support.microsoft.com/kb/292590)** -Methode auf der Benutzeroberfläche, mit dem Sie einen neuen Pfad für die Suche im Profil festlegen, die für die namensauflösung verwendet wird. Um die **IAddrBook::SetSearchPath** -Methode verwenden, müssen Sie die gewünschte Auflösung Reihenfolge in einem Array **[SRowSet](srowset.md)** definieren, die die Container der relevanten Adressbücher in der gewünschten Reihenfolge enthält, und legen Sie das Array als die *lpSearchPath*  der Parameter. Die erste Eigenschaft für jeden Eintrag im Array **SRowSet** muss die **[PR_ENTRYID](pidtagentryid-canonical-property.md)** -Eigenschaft des entsprechenden Adressbuch. 
+In MAPI kann jedes Profil mehrere Adresslisten unterstützen, und jede Adressliste befindet sich in einem eigenen Container. MAPI unterstützt die **[SetSearchPath](https://support.microsoft.com/kb/292590)** -Methode in der Schnittstelle, mit der Sie einen neuen Suchpfad im Profil festlegen können, das für die Namensauflösung verwendet wird. Um die **IAddrBook:: SetSearchPath** -Methode verwenden zu können, müssen Sie die gewünschte Auflösungsreihenfolge in einem **[SRowSet](srowset.md)** -Array definieren, in dem die Container der relevanten Adressbücher in der gewünschten Reihenfolge enthalten sind, und dann das Array als *lpSearchPath*  Parameter. Die erste Eigenschaft für jeden Eintrag im **SRowSet** -Array muss die **[PR_ENTRYID](pidtagentryid-canonical-property.md)** -Eigenschaft des entsprechenden Adressbuchs sein. 
   
-Im Codebeispiel wird die Lösung in den folgenden Schritten:
+Im Codebeispiel wird die Auflösungsreihenfolge in den folgenden Schritten festgelegt:
   
-1. Initialisiert `numANR` auf die Anzahl der Container übereinstimmen, und gibt den Namen und die Lösung Reihenfolge der gewünschten Adresslisten in einer `ANROrder` Array. 
+1. Initialisiert `numANR` die Anzahl der übereinstimmenden Container und gibt die Namen und die Auflösungsreihenfolge der gewünschten Adresslisten in `ANROrder` einem Array an. 
     
-2. Initialisiert MAPI mithilfe der Funktion **"MAPIInitialize"** . 
+2. Initialisiert MAPI mithilfe der **MAPIInitialize** -Funktion. 
     
-3.  Meldet sich bei MAPI und ermöglicht es dem Benutzer ein Profil auswählen. 
+3.  Meldet sich bei MAPI an und ermöglicht es dem Benutzer, ein Profil auszuwählen. 
     
-4.  Ruft einen Zeiger auf das Adressbuch aus der aktuellen Sitzung. 
+4.  Ruft einen Zeiger auf das Adressbuch aus der aktuellen Sitzung ab. 
     
 5. Öffnet das Adressbuch.
     
-6. Öffnet den Container für den Stamm des Adressbuchs.
+6. Öffnet den Container für das Stamm Adressbuch.
     
-7. Öffnet die Hierarchietabelle der Stamm Adressbuchcontainer.
+7. Öffnet die Hierarchietabelle des Stamm Adressbuch-Containers.
     
-8. Ruft die Liste der Adresse Adressbuch Container in der Hierarchie.
+8. Ruft die Liste der Adressbuchcontainer in der Hierarchie ab.
     
-9. Sucht nach die Eintrags-IDs der gewünschten Adresslisten, indem die Namen der gewünschten Adresslisten in Vergleichen `ANROrder` an vorhandenen Namen in der Adressbuchhierarchie. 
+9. Sucht nach den Eintrags-IDs der gewünschten Adresslisten, indem die Namen der gewünschten Adresslisten in `ANROrder` den vorhandenen Namen in der Adressbuchhierarchie verglichen werden. 
     
-10. Legt die entsprechenden Eintrags-IDs in das Array **SRowSet** `pNewRows`.
+10. Legt die entsprechenden Eintrags-IDs **** auf das SRowSet `pNewRows`-Array fest.
     
-11. Ruft auf und übergibt `pNewRows` als Parameter *LpSearchPath* für **IAddrBook::SetSearchPath** Suchpfad festgelegt. 
+11. Aufrufe und übergibt `pNewRows` als *lpSearchPath* -Parameter an **IAddrBook:: SetSearchPath** , um den Suchpfad festzulegen. 
     
-12. Bereinigt die internen Puffer sowie Zeiger.
+12. Bereinigt interne Puffer und Zeiger.
     
-13. Abmeldung von MAPI.
+13. Meldet sich von MAPI ab.
     
 14. Uninitalizes MAPI.
     
-In diesem Codebeispiel verwendet Adresslisten, die in der standardmäßigen Installation von Microsoft Office Outlook zur Verfügung stehen: **Alle Kontakte**, **Alle Gruppen**und **Kontakte**. Sie müssen das Beispiel ausführen, nachdem Outlook wird gestartet, und klicken Sie auf ein Profil initialisierten ausgeführt wird. Das Beispiel funktioniert auch mit Namen, die in einer Sprache sind (beispielsweise alle Namen sind nur auf Englisch verfügbar). Es ist nicht ausgelegt mehrsprachigen Bereitstellungen, beispielsweise den Ordner **Kontakte** an, der für einen Benutzer, einen nicht - englischen Outlook Build ausgeführt. 
+In diesem Codebeispiel werden Adresslisten verwendet, die in der Standardinstallation von Microsoft Office Outlook verfügbar sind: **alle Kontakte**, **alle Gruppen**und **Kontakte**. Sie müssen das Beispiel ausführen, nachdem Outlook gestartet wurde und in einem initialisierten Profil ausgeführt wird. Das Beispiel funktioniert gut mit Namen, die sich in einer Sprache befinden (beispielsweise sind alle Namen in Englisch). Es ist nicht für die Verwendung in mehrsprachigen Bereitstellungen vorgesehen, beispielsweise für den Ordner " **Kontakte** ", der für einen Benutzer mit einem nicht-englischen Outlook-Build lokalisiert wurde. 
   
 ```cpp
 #include "stdafx.h" 
@@ -266,5 +266,5 @@ STDMETHODIMP CopySBinary(
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zum Festlegen der Auflösungsreihenfolge für Adresslisten in Outlook](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
+- [Informationen zum Festlegen der aufLösungsReihenfolge für Adresslisten in Outlook](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
 

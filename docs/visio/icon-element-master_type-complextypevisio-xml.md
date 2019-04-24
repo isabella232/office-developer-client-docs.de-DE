@@ -1,31 +1,31 @@
 ---
-title: Icon-Element (Master_Type ComplexType) ("Visio XML")
+title: Icon-Element (Master_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 80061e7d-dbcb-f7a1-b63a-052eee4ec7d7
-description: Gibt einen MIME (Multipurpose Internet Mail Extensions) encoded binary-Symbol (ICO-Format) für ein Master-Element in einem Dokument.
+description: Gibt ein MIME-codiertes Binär Symbol (Multipurpose Internet Mail Extensions) (im ICO-Format) für ein Master-Element in einem Dokument an.
 ms.openlocfilehash: 80d9089442318c834a9a211941187588359f7041
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344853"
 ---
-# <a name="icon-element-mastertype-complextype-visio-xml"></a>Icon-Element (Master_Type ComplexType) ("Visio XML")
+# <a name="icon-element-mastertype-complextype-visio-xml"></a>Icon-Element (Master_Type complexType) (' Visio XML ')
 
-Gibt einen MIME (Multipurpose Internet Mail Extensions) encoded binary-Symbol (ICO-Format) für ein Master-Element in einem Dokument.
+Gibt ein MIME-codiertes Binär Symbol (Multipurpose Internet Mail Extensions) (im ICO-Format) für ein Master-Element in einem Dokument an.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Icon_Type](icon_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Masters.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Masters. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt einen MIME (Multipurpose Internet Mail Extensions) encoded binary-Symbol (I
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Master](master-element-masters_type-complextypevisio-xml.md) <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |Gibt ein Master-Shape in einer Zeichnung.  <br/> |
+|[Master](master-element-masters_type-complextypevisio-xml.md) <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |Gibt einen Master in einer Zeichnung an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

@@ -14,22 +14,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: d78a6c043e99af1ca50ca798b94088400fd09f0d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287867"
 ---
 # <a name="parameters-declaration-microsoft-access-sql"></a>PARAMETERS-Deklaration (Microsoft Access SQL)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Deklariert den Namen und Datentyp der einzelnen Parameter in einer Parameterabfrage.
 
 ## <a name="syntax"></a>Syntax
 
-PARAMETERS *Name Datentyp* \[, *Name Datentyp* \[,...\]\]
+PARAMETERS *Name Datentyp* \[, *Name Datentyp* \[, …\]\]
 
 Die PARAMETERS-Deklaration enthält die folgenden Bestandteile:
 
@@ -47,7 +47,7 @@ Die PARAMETERS-Deklaration enthält die folgenden Bestandteile:
 <tbody>
 <tr class="odd">
 <td><p><em>name</em></p></td>
-<td><p>Der Name des Parameters. Wird der <strong>Name</strong> -Eigenschaft des <strong>Parameter</strong> -Objekts zugewiesen und wird verwendet, um diesen Parameter in der <strong>Parameters</strong> -Auflistung zu identifizieren. Sie können <em>Name</em> als Zeichenfolge, die in einem Dialogfeld angezeigt wird, während die Anwendung die Abfrage ausführt. Umgeben Sie Text, der Leerzeichen oder Satzzeichen enthält, mit Klammern ([ ]). Beispielsweise [Low Price] und [Bericht mit welcher Month? beginnen] sind gültigen <em>Namen</em> Argumente.</p></td>
+<td><p>Der Name des Parameters. Wird der <strong>Name</strong>-Eigenschaft des <strong>Parameter</strong>-Objekts zugewiesen und wird verwendet, um diesen Parameter in der <strong>Parameters</strong>-Auflistung zu identifizieren. Sie können angeben, dass <em>Name</em> als Zeichenfolge in einem Dialogfeld angezeigt wird, während die Abfrage von der Anwendung ausgeführt wird. Umgeben Sie Text, der Leerzeichen oder Satzzeichen enthält, mit Klammern ([ ]). [Low price] und [Begin report with which month?] sind beispielsweise gültige Argumente für <em>Name</em>.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Datentyp</em></p></td>
@@ -69,7 +69,7 @@ Wenn die Deklaration mehrere Parameter einschließt, müssen diese durch Kommas 
 PARAMETERS [Low price] Currency, [Beginning date] DateTime;
 ```
 
-Sie können *Name* , aber nicht den *Datentyp* in einer [, in dem](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) oder eine [HAVING](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/having-clause-microsoft-access-sql) -Klausel verwenden. In den folgenden Beispielen wird die Angabe von zwei Parametern erwartet, anschließend werden die Kriterien auf die Datensätze in der Orders-Tabelle angewendet:
+Sie können *Name*, jedoch nicht *Datentyp* in einer [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)- oder [HAVING](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/having-clause-microsoft-access-sql)-Klausel verwenden. In den folgenden Beispielen wird die Angabe von zwei Parametern erwartet, anschließend werden die Kriterien auf die Datensätze in der Orders-Tabelle angewendet:
 
 ```sql
 PARAMETERS [Low price] Currency, 
@@ -84,7 +84,7 @@ AND OrderDate >= [Beginning date];
 
 In diesem Beispiel muss der Benutzer eine Position angeben, die dann als Kriterium in der Abfrage verwendet wird.
 
-Sie ruft die EnumFields-Prozedur, die im Beispiel ["SELECT"-Anweisung](select-statement-microsoft-access-sql.md) gefunden werden können.
+Dabei wird die EnumFields-Prozedur aufgerufen, die im Beispiel für die [SELECT-Anweisung](select-statement-microsoft-access-sql.md) enthalten ist.
 
 ```vb
     Sub ParametersX() 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f65da1c8-d49b-44e8-8c66-9c53d088d334
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 7319f1abb4a74ee17b0a4a1220215c29434d256b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345507"
 ---
 # <a name="imapipropcopyprops"></a>IMAPIProp::CopyProps
 
@@ -25,7 +25,7 @@ ms.locfileid: "25398402"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kopiert oder verschiebt ausgewählten Eigenschaften. 
+Kopiert oder verschiebt ausgewählte Eigenschaften. 
   
 ```cpp
 HRESULT CopyProps(
@@ -43,47 +43,47 @@ HRESULT CopyProps(
 
  _lpIncludeProps_
   
-> [in] Ein Zeiger auf ein Array-Eigenschaft Tag, der angibt, die Eigenschaften zum Kopieren oder verschieben. **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) kann nicht in das Array aufgenommen werden. Der Parameter _LpIncludeProps_ darf nicht **null**sein.
+> in Ein Zeiger auf ein Property-Tag-Array, das die Eigenschaften angibt, die kopiert oder verschoben werden sollen. **PR_NULL** ([Pidtagnull (](pidtagnull-canonical-property.md)) kann nicht im Array enthalten sein. Der _lpIncludeProps_ -Parameter darf nicht **null**sein.
     
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster der Statusanzeige. 
+> in Ein Handle für das übergeordnete Fenster der Statusanzeige. 
     
  _lpProgress_
   
-> [in] Ein Zeiger auf eine Implementierung der eine Statusanzeige. Wenn **null** in der _LpProgress_ -Parameter übergeben wird, wird die Statusanzeige mithilfe der MAPI-Implementierung angezeigt. Der Parameter _LpProgress_ wird ignoriert, es sei denn, das Flag MAPI_DIALOG im _UlFlags_ -Parameter festgelegt ist. 
+> in Ein Zeiger auf eine Implementierung einer Statusanzeige. Wenn **null** im _lpProgress_ -Parameter übergeben wird, wird die STATUSanzeige mithilfe der MAPI-Implementierung angezeigt. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das MAPI_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle darstellt, die Zugriff auf das Objekt, auf das durch den Parameter _LpDestObj_ verwendet werden muss. Der Parameter _LpInterface_ darf nicht **null**sein.
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf das Objekt verwendet werden muss, auf das durch den _lpDestObj_ -Parameter verwiesen wird. Der _lpInterface_ -Parameter darf nicht **null**sein.
     
  _lpDestObj_
   
-> [in] Ein Zeiger auf das Objekt, das die Eigenschaften kopierten oder verschoben wird.
+> in Ein Zeiger auf das Objekt, das die kopierten oder verschobenen Eigenschaften empfangen soll.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Vorgang kopieren oder verschieben steuert. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die den Kopier-oder Verschiebungsvorgang steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DECLINE_OK 
   
-> Wenn **CopyProps** die [IMAPISupport::DoCopyProps](imapisupport-docopyprops.md) -Methode aufgerufen, um die Kopie zu behandeln oder verschoben wird, muss er stattdessen direkt mit den Fehlerwert MAPI_E_DECLINE_COPY zurückgeben. Das Flag MAPI_DECLINE_OK wird von MAPI festgelegt, um Rekursion zu begrenzen. Clients stellen Sie dieses Flag keine. 
+> Wenn **CopyProps** die [IMAPISupport::D-ocopyprops](imapisupport-docopyprops.md) -Methode zum Verarbeiten des Kopier-oder Verschiebungsvorgangs aufruft, sollte stattdessen sofort mit dem Fehlerwert MAPI_E_DECLINE_COPY zurückgegeben werden. Das MAPI_DECLINE_OK-Flag wird durch MAPI festgelegt, um die Rekursion einzuschränken. Clients legen dieses Flag nicht fest. 
     
 MAPI_DIALOG 
   
-> Eine Statusanzeige angezeigt.
+> Zeigt eine Statusanzeige an.
     
 MAPI_MOVE 
   
-> **CopyProps** sollte einen Verschiebevorgang anstatt einen Kopiervorgang ausgeführt. Wenn dieses Flag nicht festgelegt ist, führt **CopyProps** durch einen Kopiervorgang. 
+> **CopyProps** sollte anstelle eines Kopiervorgangs einen Verschiebungsvorgang ausführen. Wenn dieses Flag nicht festgelegt ist, führt **CopyProps** einen Kopiervorgang aus. 
     
 MAPI_NOREPLACE 
   
-> Vorhandene Eigenschaften im Zielobjekt sollte nicht überschrieben werden. Wenn dieses Flag nicht festgelegt ist, überschreibt **CopyProps** vorhandene Eigenschaften. 
+> Vorhandene Eigenschaften im Zielobjekt sollten nicht überschrieben werden. Wenn dieses Flag nicht festgelegt ist, überschreibt **CopyProps** vorhandene Eigenschaften. 
     
  _lppProblems_
   
-> [in, out] Bei Eingabe einen Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur. andernfalls **null**, was bedeutet, dass es keine Notwendigkeit Fehlerinformationen besteht. Wenn _LppProblems_ einen gültigen Zeiger für die Eingabe ist, gibt **CopyProps** detaillierte Informationen zu Fehlern in eine oder mehrere Eigenschaften kopieren. 
+> [in, out] Bei der Eingabe ein Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur; andernfalls **null**, was darauf hinweist, dass keine Fehlerinformationen erforderlich sind. Wenn _lppProblems_ ein gültiger Zeiger auf der Eingabe ist, gibt **CopyProps** detaillierte Informationen zu Fehlern beim Kopieren einer oder mehrerer Eigenschaften zurück. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -93,7 +93,7 @@ S_OK
     
 MAPI_E_COLLISION 
   
-> Ein Unterobjekt kann nicht kopiert werden, da ein Unterobjekt mit dem gleichen Anzeigenamen, durch die Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) definiert im Zielobjekt bereits vorhanden ist. 
+> Ein Subobjekt kann nicht kopiert werden, da ein Unterobjekt mit demselben Anzeigenamen, der durch die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft definiert ist, bereits im Zielobjekt vorhanden ist. 
     
 MAPI_E_DECLINE_COPY 
   
@@ -101,78 +101,78 @@ MAPI_E_DECLINE_COPY
     
 MAPI_E_FOLDER_CYCLE 
   
-> Ausführen des Vorgangs kopieren oder verschieben direkt oder indirekt Quellobjekt enthält Zielobjekt. Erhebliche Arbeit möglicherweise durchgeführt wurden, bevor diese Bedingung ermittelt wurde, damit die Quell- und Ziel-Objekte teilweise geändert werden können. 
+> Das Source-Objekt, das den Kopier-oder Verschiebungsvorgang ausführt, enthält direkt oder indirekt das Zielobjekt. Möglicherweise wurde vor dem erkennen dieser Bedingung eine beträchtliche Arbeit ausgeführt, sodass die Quell-und Zielobjekte teilweise geändert werden können. 
     
 MAPI_E_INTERFACE_NOT_SUPPORTED 
   
-> Die Schnittstelle, die vom _LpInterface_ -Parameter wird durch das Zielobjekt nicht unterstützt. 
+> Die vom _lpInterface_ -Parameter angegebene Schnittstelle wird vom Zielobjekt nicht unterstützt. 
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, auf ein Objekt zuzugreifen, für den der Anrufer nicht über ausreichende Berechtigungen verfügt. Dieser Fehler wird zurückgegeben, wenn Zielobjekt Quellobjekt identisch ist.
+> Es wurde versucht, auf ein Objekt zuzugreifen, für das der Aufrufer nicht über ausreichende Berechtigungen verfügt. Dieser Fehler wird zurückgegeben, wenn das Zielobjekt mit dem Quellobjekt identisch ist.
     
-Die folgenden Werte können in der Struktur **SPropProblemArray** , aber nicht als Rückgabewerte für **CopyProps**zurückgegeben werden soll. Diese Fehler gelten für eine einzelne Eigenschaft.
+Die folgenden Werte können in der **SPropProblemArray** -Struktur zurückgegeben werden, jedoch nicht als Rückgabewerte für **CopyProps**. Diese Fehler gelten für eine einzelne Eigenschaft.
   
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und **CopyProps** unterstützt keine Unicode oder Parameter MAPI_UNICODE wurde nicht festgelegt und **CopyProps** nur Unicode unterstützt. 
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und **CopyProps** unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und **CopyProps** unterstützt nur Unicode. 
     
 MAPI_E_COMPUTED 
   
-> Die Eigenschaft kann nicht vom Anrufer geändert werden, da es eine schreibgeschützte Eigenschaft, mit der Besitzer des Zielobjekts berechnet wird. Dieser Fehler ist nicht schwerwiegend. der Aufrufer sollte den Kopiervorgang fortgesetzt zulassen.
+> Die Eigenschaft kann vom Aufrufer nicht geändert werden, da es sich um eine schreibgeschützte Eigenschaft handelt, die vom Besitzer des Zielobjekts berechnet wird. Dieser Fehler ist nicht schwerwiegend; der Aufrufer sollte den Kopiervorgang fortsetzen lassen.
     
 MAPI_E_INVALID_TYPE 
   
-> Der Eigenschaftstyp ist ungültig.
+> Der Eigenschaftentyp ist ungültig.
     
 MAPI_E_UNEXPECTED_TYPE 
   
-> Der Eigenschaftentyp ist nicht vom Anrufer erwartet.
+> Der Eigenschaftentyp ist nicht der vom Aufrufer erwartete Typ.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPIProp::CopyProps** -Methode kopiert oder verschiebt ausgewählte Eigenschaften aus dem aktuellen Objekt in ein Zielobjekt. **CopyProps** dient hauptsächlich zum Beantworten und Weiterleiten von Nachrichten, wobei nur einige der Eigenschaften aus der ursprünglichen Nachricht mit der Antwort Reisen oder Kopie weitergeleitet. 
+Die **IMAPIProp:: CopyProps** -Methode kopiert oder verschiebt ausgewählte Eigenschaften aus dem aktuellen Objekt in ein Zielobjekt. **CopyProps** wird hauptsächlich zum beantworten und Weiterleiten von Nachrichten verwendet, wobei nur einige der Eigenschaften der ursprünglichen Nachricht mit der Antwort oder der weitergeleiteten Kopie Reisen. 
   
-Alle Unterobjekte im Quellobjekt werden vollständig unabhängig von der Verwendung von Eigenschaften, die durch die Struktur [SPropTagArray](sproptagarray.md) angegeben automatisch bei der Konflikte enthalten und kopiert oder verschoben. Standardmäßig überschreibt **CopyProps** Eigenschaften im Zielobjekt, die Eigenschaften aus dem Quellobjekt entsprechen. Wenn die kopierte oder verschobenen Eigenschaften bereits im Zielobjekt vorhanden sind, werden die vorhandenen Eigenschaften von den Eigenschaften der neuen überschrieben, wenn das Flag MAPI_NOREPLACE im _UlFlags_ -Parameter festgelegt ist. Vorhandene Informationen im Zielobjekt, das nicht überschrieben wird, bleibt unverändert. 
+Alle unter Objekte im Source-Objekt werden automatisch in den Vorgang eingeschlossen und vollständig kopiert oder verschoben, unabhängig von der Verwendung von Eigenschaften, die in der [SPropTagArray](sproptagarray.md) -Struktur angegeben sind. Standardmäßig überschreibt **CopyProps** alle Eigenschaften im Zielobjekt, die Eigenschaften des Source-Objekts erfüllen. Wenn eine der kopierten oder verschobenen Eigenschaften bereits im Zielobjekt vorhanden ist, werden die vorhandenen Eigenschaften von den neuen Eigenschaften überschrieben, es sei denn, das MAPI_NOREPLACE-Flag wird im _ulFlags_ -Parameter festgelegt. Vorhandene Informationen im Zielobjekt, das nicht überschrieben wird, bleiben unberührt. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Sie können eine vollständige Implementierung **CopyProps** bereit oder verlassen sich auf die Implementierung, die MAPI in dessen Support-Objekt bereitstellt. Wenn Sie die MAPI-Implementierung verwenden möchten, rufen Sie die **IMAPISupport::DoCopyProps** -Methode. Wenn Sie führen Sie die Verarbeitung für **DoCopyProps** delegieren, und Sie das Flag MAPI_DECLINE_OK übergeben werden, vermeiden Sie den Anruf an den Support und zurückzugeben Sie MAPI_E_DECLINE_COPY stattdessen. Sie können dieses Flag MAPI, um die möglichen Rekursion zu vermeiden, die auftreten können, wenn Sie den Ordner kopieren aufgerufen werden. 
+Sie können eine vollständige Implementierung von **CopyProps** bereitstellen oder sich auf die Implementierung verlassen, die MAPI im Unterstützungsobjekt bereitstellt. Wenn Sie die MAPI-Implementierung verwenden möchten, rufen Sie die **IMAPISupport::D ocopyprops** -Methode auf. Wenn Sie jedoch die Verarbeitung an **DoCopyProps** delegieren und das MAPI_DECLINE_OK-Flag übergeben werden, vermeiden Sie den Support Aufruf, und geben Sie stattdessen MAPI_E_DECLINE_COPY zurück. Sie werden mit dieser Kennzeichnung von MAPI aufgerufen, um eine mögliche Rekursion zu vermeiden, die beim Kopieren von Ordnern auftreten kann. 
   
-Da der Kopiervorgang langen sein kann, sollte eine Statusanzeige angezeigt werden. Verwenden Sie die [IMAPIProgress](imapiprogressiunknown.md) -Implementierung, die in den _LpProgress_ -Parameter übergeben wird, sofern vorhanden. Wenn _LpProgress_ **null**ist, rufen Sie die [IMAPISupport::DoProgressDialog](imapisupport-doprogressdialog.md) -Methode, um die MAPI-Implementierung verwenden. 
+Da der Kopiervorgang langwierig sein kann, sollten Sie eine Statusanzeige anzeigen. Verwenden Sie die [IMAPIProgress](imapiprogressiunknown.md) -Implementierung, die im _lpProgress_ -Parameter übergeben wird, sofern vorhanden. Wenn _lpProgress_ ist ****, rufen sie die [IMAPISupport::D oprogressdialog](imapisupport-doprogressdialog.md) -Methode auf, um die MAPI-Implementierung zu verwenden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Legen Sie die Kennzeichen MAPI_DECLINE_OK nicht; Es wird in die Anrufe von MAPI verwendet, auf Speicher-Anbieter **CopyProps** Implementierungen message. 
+Legen Sie das MAPI_DECLINE_OK-Flag nicht fest; Sie wird von MAPI in ihren Aufrufen von **CopyProps** -Implementierungen des Nachrichtenspeicher Anbieters verwendet. 
   
-Da verschieben und kopieren können Zeit in Anspruch nehmen, es ist ratsam, die Anzeige einer Statusanzeige anfordern, indem Sie das MAPI_DIALOG-Flag. Sie können den Parameter _LpProgress_ festlegen, die Implementierung von **IMAPIProgress**, falls vorhanden, oder **null**. Wenn _LpProgress_ **null**ist, wird **CopyProps** die Standard-Statusanzeige bereitgestellt von MAPI verwendet. 
+Da Kopier-und Verschiebungsvorgänge Zeit in Anspruch nehmen können, ist es ratsam, eine Statusanzeige anzufordern, indem Sie das MAPI_DIALOG-Flag festlegen. Sie können den Parameter _lpProgress_ auf die Implementierung von **IMAPIProgress**festlegen, sofern vorhanden, oder auf **null**. Wenn _lpProgress_ ist ****, verwendet **CopyProps** die Standard Fortschrittsanzeige von MAPI. 
   
-Sie können die Anzeige einer Statusanzeige installieren, indem Sie das Flag MAPI_DIALOG nicht festgelegt. **CopyProps** die Parameter _UlUIParam_ und _LpProgress_ ignoriert und das Symbol anzeigen vermeiden. 
+Sie können die Anzeige einer Statusanzeige unterdrücken, indem Sie das MAPI_DIALOG-Flag nicht festlegen. **CopyProps** ignoriert die Parameter _ulUIParam_ und _lpProgress_ und verhindert die Anzeige des Indikators. 
   
- **CopyProps** können melden, globale und einzelne-Fehler oder einen oder mehrere der Eigenschaften auftretenden Fehler. Diese einzelnen Fehler werden in einer **SPropProblemArray** eingefügt. Sie können die Fehlerberichterstattung Ebene der Eigenschaft, indem Sie **null**, anstatt einen gültigen Zeiger, für den Parameter Property Problem Array Struktur übergeben unterdrücken. 
+ **CopyProps** kann globale und einzelne Fehler oder Fehler melden, die mit einer oder mehreren Eigenschaften auftreten. Diese einzelnen Fehler werden in eine **SPropProblemArray** -Struktur eingefügt. Sie können die Fehlerberichterstattung auf der Eigenschaftsebene unterdrücken, indem Sie **null**anstelle eines gültigen Zeigers für den Array Struktur Parameter der Eigenschafts Problem übergeben. 
   
-Wenn Sie Informationen zu Fehlern erhalten möchten, übergeben Sie einen gültigen **SPropProblemArray** Struktur Zeiger des _LppProblems_ -Parameters. Wenn **CopyProps** S_OK zurückgegeben wird, überprüfen Sie auf mögliche Fehler mit einzelnen Eigenschaften in der Struktur. Wenn **CopyProps** einen Fehler zurückgibt, wird keine Informationen in der Struktur **SPropProblemArray** zurückgegeben. Rufen Sie stattdessen die [IMAPIProp::GetLastError](imapiprop-getlasterror.md) -Methode, um ausführliche Fehlerinformationen abzurufen. 
+Wenn Sie Informationen zu Fehlern erhalten möchten, übergeben Sie einen gültigen **SPropProblemArray** -Struktur Zeiger im _lppProblems_ -Parameter. Wenn **COPYPROPS** S_OK zurückgibt, überprüfen Sie auf mögliche Fehler mit einzelnen Eigenschaften in der Struktur. Wenn **CopyProps** einen Fehler zurückgibt, werden in der **SPropProblemArray** -Struktur keine Informationen zurückgegeben. Rufen Sie stattdessen die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode auf, um detaillierte Fehlerinformationen abzurufen. 
   
-Wenn **CopyProps** S_OK zurückgibt, frei die zurückgegebene Struktur **SPropProblemArray** durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion. 
+Wenn **COPYPROPS** S_OK zurückgibt, können Sie die zurückgegebene **SPropProblemArray** -Struktur freigeben, indem Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen. 
   
-Wenn Sie Eigenschaften, die für den Objekttyp Quelle eindeutig sind kopieren, müssen Sie sicherstellen, dass das Zielobjekt des gleichen Typs ist. **CopyProps** verhindert nicht, dass Sie Eigenschaften, die um einen Objekttyp mit einem anderen Typ des Objekts in der Regel gehören, zuordnen. Zum Schluss kommen zum Kopieren von Eigenschaften, die für Zielobjekt sinnvoll ist. Beispielsweise sollten Sie eine Adressbuchcontainer nicht Nachrichteneigenschaften kopieren. 
+Wenn Sie Eigenschaften kopieren, die für den Quellobjekttyp eindeutig sind, müssen Sie sicherstellen, dass das Zielobjekt denselben Typ aufweist. **CopyProps** verhindert nicht, dass Sie Eigenschaften zuordnen, die normalerweise zu einem Objekttyp mit einem anderen Objekttyp gehören. Sie müssen die Eigenschaften kopieren, die für das Zielobjekt sinnvoll sind. Sie sollten beispielsweise keine Nachrichteneigenschaften in einen Adressbuchcontainer kopieren. 
   
-Um sicherzustellen, dass Sie zwischen Objekten des gleichen Typs kopieren möchten, prüfen Sie, ob das Quell- und Ziel-Objekt den gleichen Typ, entweder durch Vergleichen Objektzeigern oder die [QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode aufrufen. Legen Sie die Schnittstelle-ID auf den _LpInterface_ der standard-Benutzeroberfläche für das Quellobjekt. Stellen Sie außerdem sicher, dass der Objekttyp oder **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))-Eigenschaft für die beiden Objekte identisch ist. Wenn Sie aus einer Nachricht kopieren möchten, legen Sie _LpInterface_ IID_IMessage und die **PR_OBJECT_TYPE** für beide Objekte MAPI_MESSAGE fest. 
+Um sicherzustellen, dass Sie zwischen Objekten desselben Typs kopieren, überprüfen Sie, ob das Quell-und Zielobjekt derselbe Typ ist, indem Sie entweder Objektzeiger vergleichen oder die [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode aufrufen. Legen Sie die Schnittstellenkennung, auf die von _lpInterface_ verwiesen wird, auf die Standardschnittstelle für das Source-Objekt fest. Stellen Sie außerdem sicher, dass die Eigenschaft Objekttyp oder **PR_OBJECT_TYPE** ([pidtagobjecttype (](pidtagobjecttype-canonical-property.md)) für die beiden Objekte identisch ist. Wenn Sie beispielsweise aus einer Nachricht kopieren, legen Sie _lpInterface_ auf IID_IMessage und **PR_OBJECT_TYPE** für beide Objekte auf MAPI_MESSAGE. 
   
-Wenn ein ungültiger Zeiger im _LpDestObj_ -Parameter übergeben wird, sind die Ergebnisse unvorhersehbar. 
+Wenn ein ungültiger Zeiger im _lpDestObj_ -Parameter übergeben wird, sind die Ergebnisse unvorhersehbar. 
   
-Um eine Nachricht Empfängerliste zu kopieren, rufen Sie die Nachricht **CopyProps** -Methode, und fügen Sie die **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))-Eigenschaft im Array Tag-Eigenschaft. Um die e-Mail-Anlagen zu kopieren, umfassen Sie die **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))-Eigenschaft. 
+Um die Empfängerliste einer Nachricht zu kopieren, rufen Sie die **CopyProps** -Methode der Nachricht auf, und schließen Sie die **PR_MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md))-Eigenschaft in das Tag-Array der Eigenschaft ein. Schließen Sie die **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md))-Eigenschaft ein, um die Anlagen der Nachricht zu kopieren. 
   
-Um einen Ordner oder Adressbuchcontainer des Hierarchie oder Inhaltstabelle zu kopieren, unter anderem **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) oder **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) Eigenschaften in der Tag-Array-Eigenschaft. Einen Ordner zugeordneten Inhaltstabelle aufnehmen möchten, fügen Sie die **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))-Eigenschaft im Array. 
+Wenn Sie die Hierarchie-oder Inhaltstabelle eines Ordner-oder Adressbuch Containers kopieren möchten, schließen Sie die Eigenschaften **PR_CONTAINER_HIERARCHY** ([Pidtagcontainerhierarchy (](pidtagcontainerhierarchy-canonical-property.md)) oder **PR_CONTAINER_CONTENTS** ([pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md)) in das Array für Property-Tags. Schließen Sie die **PR_FOLDER_ASSOCIATED_CONTENTS** ([pidtagfolderassociatedcontents (](pidtagfolderassociatedcontents-canonical-property.md))-Eigenschaft in das Array ein, um die zugeordnete Inhaltstabelle eines Ordners einzuschließen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |CopyNamedProps  <br/> |MFCMAPI (engl.) verwendet die **IMAPIProp::CopyProps** -Methode, um benannte Eigenschaften von einer Nachricht in eine andere kopiert.  <br/> |
-|SingleMAPIPropListCtrl.cpp  <br/> |CSingleMAPIPropListCtrl::OnPasteProperty  <br/> |MFCMAPI (engl.) verwendet die **IMAPIProp::CopyProps** -Methode, um eine Eigenschaft einzufügen, die von einem anderen Objekt kopiert wurde.  <br/> |
+|MAPIFunctions. cpp  <br/> |CopyNamedProps  <br/> |MFCMAPI verwendet die **IMAPIProp:: CopyProps** -Methode, um benannte Eigenschaften aus einer Nachricht in eine andere zu kopieren.  <br/> |
+|SingleMAPIPropListCtrl. cpp  <br/> |CSingleMAPIPropListCtrl:: onPasteproperty  <br/> |MFCMAPI verwendet die **IMAPIProp:: CopyProps** -Methode, um eine Eigenschaft einzufügen, die aus einem anderen Objekt kopiert wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -192,19 +192,19 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagContainerContents (kanonische Eigenschaft)](pidtagcontainercontents-canonical-property.md)
+[Kanonische Pidtagcontainercontents (-Eigenschaft](pidtagcontainercontents-canonical-property.md)
   
-[PidTagContainerHierarchy (kanonische Eigenschaft)](pidtagcontainerhierarchy-canonical-property.md)
+[Kanonische Pidtagcontainerhierarchy (-Eigenschaft](pidtagcontainerhierarchy-canonical-property.md)
   
-[PidTagDisplayName (kanonische Eigenschaft)](pidtagdisplayname-canonical-property.md)
+[Kanonische PidTagDisplayName-Eigenschaft](pidtagdisplayname-canonical-property.md)
   
-[PidTagFolderAssociatedContents (kanonische Eigenschaft)](pidtagfolderassociatedcontents-canonical-property.md)
+[Kanonische Pidtagfolderassociatedcontents (-Eigenschaft](pidtagfolderassociatedcontents-canonical-property.md)
   
-[PidTagMessageAttachments (kanonische Eigenschaft)](pidtagmessageattachments-canonical-property.md)
+[Kanonische Pidtagmessageattachments (-Eigenschaft](pidtagmessageattachments-canonical-property.md)
   
-[PidTagMessageRecipients (kanonische Eigenschaft)](pidtagmessagerecipients-canonical-property.md)
+[Kanonische Pidtagmessagerecipients (-Eigenschaft](pidtagmessagerecipients-canonical-property.md)
   
-[PidTagObjectType (kanonische Eigenschaft)](pidtagobjecttype-canonical-property.md)
+[Kanonische Pidtagobjecttype (-Eigenschaft](pidtagobjecttype-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   

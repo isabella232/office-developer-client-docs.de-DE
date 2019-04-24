@@ -8,26 +8,26 @@ api_type:
 - COM
 ms.assetid: 33747835-6eeb-4e07-8f92-3cfa81eecd0f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6350202eb22edc478f7738bebf6d7f0bc4684ee0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f5faf3a3d4971b01509d0ff0cfa59451015ba205
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345819"
 ---
 # <a name="mapi-object-containment-hierarchy"></a>MAPI-Objekt Kapselungshierarchie
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Eingrenzung Beziehung zwischen Objekten gibt die Abhängigkeiten, die einige Objekte auf andere Objekte für den Zugriff haben. Für eine Clientanwendung ermöglicht den Zugriff auf bestimmte Objekte Zugriff auf andere. In einigen Fällen folgt die Eingrenzung Beziehung zwischen Objekten, die von einem Dienstanbieter implementiert eine logische Hierarchie. In anderen Fällen ist es frei wählbar. 
+Die Kapselungsbeziehung zwischen Objekten gibt die Abhängigkeiten an, die einige Objekte für andere Objekte für Access aufweisen. Für eine Clientanwendung ermöglicht der Zugriff auf bestimmte Objekte den Zugriff auf andere. In einigen Fällen folgt die Kapselungsbeziehung zwischen von einem Dienstanbieter implementierten Objekten einer logischen Hierarchie. In anderen Fällen ist es willkürlich. 
   
-Ein Client muss Zugriff auf ein MAPI-Sitzung-Objekt abrufen, bevor es viele andere Objekte (beispielsweise Dienstanbieter und das MAPI-Adressbuch) verwenden kann.
+Ein Client muss Zugriff auf ein MAPI-Sitzungsobjekt erhalten, bevor es viele andere Objekte verwenden kann (beispielsweise Dienstanbieter und das MAPI-Adressbuch).
   
-Nachricht Store Kapselung basiert auf die hierarchische Beziehung zwischen Objekten im Nachrichtenspeicher: Nachrichtenspeicher-Objekts selbst, Ordner, Nachrichten und Anlagen. Anlagen sind logisch in Nachrichten, die Nachrichten in Ordnern und Ordner in der Nachrichtenspeicher enthalten. Die Beziehung Kapselung ermittelt diese logischen Hierarchie. Um den Zugriff auf eine Nachricht muss beispielsweise ein Client zunächst den Ordner zugreifen in dem die Nachricht enthalten ist. Profile und Status Objekte sind Beispiele für eine weitere beliebige Kapselung Beziehung. Beide dieser Objekte sind über die Sitzung verfügbar. 
+Die Nachrichtenspeicher Kapselung basiert auf der hierarchischen Beziehung zwischen Objekten im Nachrichtenspeicher: dem Nachrichtenspeicherobjekt selbst, Ordnern, Nachrichten und Anlagen. Logischerweise sind Anlagen in Nachrichten, Nachrichten in Ordnern und Ordnern im Nachrichtenspeicher enthalten. Die Kapselungsbeziehung entspricht dieser logischen Hierarchie. Um beispielsweise auf eine Nachricht zugreifen zu können, muss der Client zunächst auf den Ordner zugreifen, in dem die Nachricht enthalten ist. Profile und Status-Objekte sind Beispiele für eine beliebige Kapselungsbeziehung. Beide Objekte stehen über die Sitzung zur Verfügung. 
   
-Einige Objekte bereitstellen Containern nur Zugriff. Anlagen und Empfänger sind Beispiele für Objekte, deren Container solcher abhängig sind. Der nur Zugriff auf eine Anlage oder einen Empfänger erfolgt über die Nachricht, zu der es gehört. Andere Objekte weisen alternative Pfade. Diese Objekte werden binäre IDs, bezeichnet als Eintragsbezeichner, durch die-Dienstanbieter, die sie erstellen zugewiesen. Eintragsbezeichner können verwendet werden ihre Objekte direkt, Zugriff auf Clients für die Eingrenzung Struktur umgehen aktiviert werden. 
+Bei einigen Objekten bieten Container den einzigen Zugriff. Anlagen und Empfänger sind Beispiele für Objekte, die vollständig von ihren Containern abhängig sind. Der einzige Zugriff auf eine Anlage oder einen Empfänger erfolgt über die Nachricht, zu der Sie gehört. Andere Objekte weisen alternative Zugriffspfade auf. Diesen Objekten werden von den Dienstanbietern, die Sie erstellen, binäre Bezeichner (als Eintrags-IDs bezeichnet) zugewiesen. Eintrags-IDs können verwendet werden, um direkt auf Ihre Objekte zuzugreifen, sodass Clients die Kapselungs Struktur umgehen. 
   
-Die folgende Abbildung zeigt die MAPI-Kapselungshierarchie. Die Sitzung wird am oberen Rand der Struktur, da es in der Sitzung ist, dass ein Client alle anderen Objekte zugreift. Die nächste Ebene enthält die Nachricht Store Tabelle ein Table-Objekt, in der Eigenschaften für alle Anbieter die Nachricht in der aktuellen Sitzung und das Adressbuch Zugriff auf alle Address Book Anbieter bereitstellen aufgelistet. Das Nachricht Store Tabelle und Ihr-Adressbuch werden verwendet, um Zugriff auf die Objekte, die von bestimmten Dienstanbietern dargestellt im Kapselung Reihenfolge weiter implementiert.
+Die folgende Abbildung zeigt die MAPI-Kapselungshierarchie. Die Sitzung befindet sich am Anfang der Struktur, da der Client über die Sitzung Zugriff auf alle anderen Objekte erhält. Die nächste Ebene enthält die Nachrichtenspeichertabelle, ein Table-Objekt, in dem die Eigenschaften für alle Nachrichtenspeicher Anbieter in der aktuellen Sitzung aufgeführt sind, und das Adressbuch für den Zugriff auf alle Adressbuchanbieter. Die Nachrichtenspeichertabelle und das Adressbuch werden verwendet, um auf die von bestimmten Dienstanbietern implementierten Objekte zuzugreifen, die im nächsten in der Containment-Reihenfolge angezeigt werden.
   
 **MAPI-Einschlusshierarchie**
   
@@ -35,5 +35,5 @@ Die folgende Abbildung zeigt die MAPI-Kapselungshierarchie. Die Sitzung wird am 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Objekt und Übersicht über die Benutzeroberfläche](mapi-object-and-interface-overview.md)
+- [Übersicht über MAPI-Objekte und-Schnittstellen](mapi-object-and-interface-overview.md)
 

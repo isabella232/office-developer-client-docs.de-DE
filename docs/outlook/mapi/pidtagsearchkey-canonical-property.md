@@ -1,5 +1,5 @@
 ---
-title: PidTagSearchKey (kanonische Eigenschaft)
+title: Kanonische Pidtagsearchkey (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,21 +9,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: fcab369a-a1f4-4425-a272-e35046914a4d
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 9e6b9ddf37c1db8ea28ae2f82caed2a487e551e5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345465"
 ---
-# <a name="pidtagsearchkey-canonical-property"></a>PidTagSearchKey (kanonische Eigenschaft)
+# <a name="pidtagsearchkey-canonical-property"></a>Kanonische Pidtagsearchkey (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen binären vergleichbaren Schlüssel, der für eine Suche korrelierte Objekte identifiziert.
+Enthält einen binären-vergleichbaren Schlüssel, der korrelierte Objekte für eine Suche identifiziert.
   
 |||
 |:-----|:-----|
@@ -32,64 +32,64 @@ Enthält einen binären vergleichbaren Schlüssel, der für eine Suche korrelier
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft bietet eine Verfolgung für verknüpfte Objekte, wie Nachrichtenkopien, und suchen unerwünschte vorkommen, wie etwa doppelte Empfänger erleichtert.
+Diese Eigenschaft stellt eine Ablaufverfolgung für verwandte Objekte wie Nachrichtenkopien bereit und erleichtert das Auffinden unerwünschter Vorkommnisse wie doppelter Empfänger.
   
-MAPI verwendet spezielle Regeln zum Erstellen von Search-Schlüssel für Empfänger der Nachricht. Die suchen-Taste wird durch Verketten den Adresstyp (in Großbuchstaben) gebildet Doppelpunkt ":", die e-Mail-Adresse in kanonische Form und abschließendes Null-Zeichen. Kanonische Form hier bedeutet, dass die Groß-/Kleinschreibung beachtet Adressen werden in die Groß-/Kleinschreibung angezeigt und Adressen, die Groß-/ nicht Kleinschreibung in Großbuchstaben umgewandelt werden. Dies ist wichtig, können Sie die Korrelation zwischen Nachrichten zu erhalten.
+MAPI verwendet bestimmte Regeln zum Erstellen von Such Schlüsseln für Nachrichtenempfänger. Der Suchschlüssel wird durch Verkettung des Adresstyps (in Großbuchstaben), des Doppelpunktzeichens ":", der e-Mail-Adresse in kanonischer Form und des abschließenden NULL-Zeichens gebildet. Kanonische Form hier bedeuten, dass die Groß-/Kleinschreibung vertrauliche Adressen in der richtigen Groß-/Kleinschreibung angezeigt werden und Adressen, bei denen die Groß-/Kleinschreibung nicht beachtet wird, in Großbuchstaben umgewandelt werden. Dies ist wichtig, um Korrelationen zwischen Nachrichten beizubehalten.
   
-Für die Message-Objekte ist diese Eigenschaft über die [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode unmittelbar nach Erstellung der Nachricht verfügbar. Bei anderen Objekten ist es nach dem ersten Aufruf der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode zur Verfügung. Da diese Eigenschaft schreibgeschützt ist, ist es unzuverlässig über **GetProps** erhalten, bis das Gespräch **SaveChanges** Commit für alle Werte festgelegt oder geändert werden, von der [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode ausgeführt hat. 
+Bei Message-Objekten ist diese Eigenschaft über die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode unmittelbar nach der Erstellung der Nachricht verfügbar. Für andere Objekte ist Sie nach dem ersten Aufruf der [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode verfügbar. Da diese Eigenschaft veränderbar ist, ist es unzuverlässig, Sie über getProps abzurufen, bis ein **SaveChanges** -Aufruf alle Werte festgelegt hat, die von der [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode gesetzt oder geändert wurden. **** 
   
-Für Profile stellt MAPI auch einen hartcodiert und Profilabschnitt mit dem Namen **MUID_PROFILE_INSTANCE**, und diese Eigenschaft als ihre einzige Eigenschaft bereit. Dieser Schlüssel ist sichergestellt, dass für alle Profile jemals erstellten eindeutig sein und dürfen zuverlässiger als die **PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md))-Eigenschaft, die kann, beispielsweise gelöscht und neu erstellt, mit dem gleichen Namen.
+Bei Profilen liefert MAPI auch einen hartcodierten Profil Abschnitt namens **MUID_PROFILE_INSTANCE**mit dieser Eigenschaft als einzelne Eigenschaft. Dieser Schlüssel ist unter allen jemals erstellten Profilen eindeutig und kann zuverlässiger sein als die **PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md))-Eigenschaft, die beispielsweise gelöscht und mit demselben Namen neu erstellt werden kann.
   
-In der folgenden Tabelle werden die wichtigen Unterschiede zwischen **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) und diese Eigenschaft zusammengefasst.
+In der folgenden Tabelle sind wichtige Unterschiede zwischen **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md)) und dieser Eigenschaft zusammengefasst.
   
-|**Merkmale**|PR_ENTRYID ***|PR_RECORD_KEY ***|PR_SEARCH_KEY ***|
+|**Merkmal**|PR_ENTRYID * * * *|PR_RECORD_KEY * * * *|PR_SEARCH_KEY * * * *|
 |:-----|:-----|:-----|:-----|
 |Erforderlich für Attachment-Objekte  <br/> |Nein  <br/> |Ja  <br/> |Nein  <br/> |
-|Auf Ordnerobjekten erforderlich  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |
-|Erforderlich für Nachricht Store-Objekte  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |
-|Klicken Sie auf Status Objekte erforderlich  <br/> |Ja  <br/> |Nein  <br/> |Nein  <br/> |
-|Vom Client erstellbare  <br/> |Nein  <br/> |Nein  <br/> |Ja  <br/> |
-|Bevor Sie **SaveChanges** verfügbar <br/> |Je nach anbieterimplementierung  <br/> |Je nach anbieterimplementierung  <br/> |Für Nachrichten, Ja. Für andere hängt die Implementierung des Anbieters.  <br/> |
-|Geändert in einen Kopiervorgang  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |
-|Vom Client beim Kopieren eines veränderbar  <br/> |Nein  <br/> |Nein  <br/> |Ja  <br/> |
-|Unique innerhalb...  <br/> |Weltweit  <br/> |Providerinstanz  <br/> |Weltweit  <br/> |
-|Binär (mit Memcmp) vergleichbar.  <br/> |Nein – [IMAPISupport::CompareEntryIDs](imapisupport-compareentryids.md) verwenden <br/> |Ja  <br/> |Ja  <br/> |
+|Erforderliche Ordnerobjekte  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |
+|Erforderlich für Nachrichtenspeicher Objekte  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |
+|Erforderlich für Statusobjekte  <br/> |Ja  <br/> |Nein  <br/> |Nein  <br/> |
+|Erstellbarer Client  <br/> |Nein  <br/> |Nein  <br/> |Ja  <br/> |
+|Verfügbar vor **SaveChanges** <br/> |Abhängig von der Anbieterimplementierung  <br/> |Abhängig von der Anbieterimplementierung  <br/> |Für Nachrichten, ja. Für andere ist es von der Anbieterimplementierung abhängig.  <br/> |
+|Geändert in einem Kopiervorgang  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |
+|Nach einer Kopie nach dem Client änderbar  <br/> |Nein  <br/> |Nein  <br/> |Ja  <br/> |
+|Innerhalb von...  <br/> |Ganze Welt  <br/> |Anbieterinstanz  <br/> |Ganze Welt  <br/> |
+|Vergleichbare Binärdatei (wie bei memcmp)  <br/> |No--verwenden Sie [IMAPISupport:: CompareEntryIDs](imapisupport-compareentryids.md) <br/> |Ja  <br/> |Ja  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.
+> Gibt die Eigenschaften und Vorgänge für Listen von Benutzern, Kontakten, Gruppen und Ressourcen an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagResponsibility (kanonische Eigenschaft)](pidtagresponsibility-canonical-property.md)
+[Kanonische Pidtagresponsibility (-Eigenschaft](pidtagresponsibility-canonical-property.md)
   
-[PidTagStoreRecordKey (kanonische Eigenschaft)](pidtagstorerecordkey-canonical-property.md)
+[Kanonische Pidtagstorerecordkey (-Eigenschaft](pidtagstorerecordkey-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -98,5 +98,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

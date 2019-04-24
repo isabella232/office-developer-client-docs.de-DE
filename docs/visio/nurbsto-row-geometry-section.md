@@ -8,23 +8,23 @@ f1_keywords:
 - Vis_DSS.chm82251758
 localization_priority: Normal
 ms.assetid: 7e47acfe-5ec0-3689-eb89-0168f596a739
-description: Enthält die X- und y-Koordinaten, die Position des zweiten bis letzte Knoten, die Position der letzten Linienbreite, die Position des ersten Knotens, die Position der ersten Linienbreite und die Formel für ein nicht-gleichförmigen, rationalen B-Spline (NURBS).
-ms.openlocfilehash: d0c10e1da519ac98a582da9214033fb8aad5b53e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält die x-und y-Koordinaten, die Position des zweiten bis letzten Knotens, die Position der letzten Gewichtung, die Position des ersten Knotens, die Position der ersten Gewichtung und die Formel für einen nicht einheitlichen rationalen B-Spline (NURBS).
+ms.openlocfilehash: a5fc83f9581277580d076c2a850bfe937602aef0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361019"
 ---
-# <a name="nurbsto-row-geometry-section"></a>NURBSTo Row (Geometry Section)
+# <a name="nurbsto-row-geometry-section"></a>Zeile "NURBSTo" (Abschnitt "Geometry")
 
-Enthält die *X* - und *y* -Koordinaten, die Position des zweiten bis letzte Knoten, die Position der letzten Linienbreite, die Position des ersten Knotens, die Position der ersten Linienbreite und die Formel für ein nicht-gleichförmigen, rationalen B-Spline (NURBS). 
+Enthält die *x* -und *y* -Koordinaten, die Position des zweiten bis letzten Knotens, die Position der letzten Gewichtung, die Position des ersten Knotens, die Position der ersten Gewichtung und die Formel für einen nicht einheitlichen rationalen B-Spline (NURBS). 
   
 Eine Zeile NURBSTo enthält folgende Zellen.
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |Die *X* -Koordinate des letzten Kontrollpunkts eines NURBS.  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |Die *x* -Koordinate des letzten Kontrollpunkts eines NURBS.  <br/> |
 |[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des letzten Kontrollpunkts eines NURBS.  <br/> |
 |[A](a-cell-geometry-section.md) <br/> |Der zweite bis letzte Knoten des NURBS.  <br/> |
 |[B](b-cell-geometry-section.md) <br/> |Die letzte Stärke des NURBS.  <br/> |
@@ -32,7 +32,7 @@ Eine Zeile NURBSTo enthält folgende Zellen.
 |[D](d-cell-geometry-section.md) <br/> |Die erste Stärke des NURBS.  <br/> |
 |[E](e-cell-geometry-section.md) <br/> |Die Formel für einen NURBS.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein NURBS ist eine gängige Methode, mit der Sie eine Kurve mathematisch darstellen können. Sie können einen NURBS mit dem Tool **Freihand** erstellen. 
   

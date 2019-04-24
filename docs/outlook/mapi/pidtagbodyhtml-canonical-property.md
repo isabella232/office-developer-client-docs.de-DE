@@ -1,5 +1,5 @@
 ---
-title: PidTagBodyHtml (kanonische Eigenschaft)
+title: Kanonische Pidtagbodyhtml (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,58 +11,58 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 93b9215a-5900-411c-a0ae-6bba62cd5a1e
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 6ed59228ee06a1d3e362115a99bf4b859dfeb698
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359045"
 ---
-# <a name="pidtagbodyhtml-canonical-property"></a>PidTagBodyHtml (kanonische Eigenschaft)
+# <a name="pidtagbodyhtml-canonical-property"></a>Kanonische Pidtagbodyhtml (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Version Hypertext Markup Language (HTML), der den Nachrichtentext enthält. 
+Enthält die HTML-Version (Hypertext Markup Language) des Nachrichtentexts. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_BODY_HTML, PR_BODY_HTML_A, PR_BODY_HTML_W  <br/> |
 |Kennung:  <br/> |0x1013  <br/> |
-|Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
-|Bereich:  <br/> |Allgemeine messaging  <br/> |
+|Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
+|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften enthalten den gleichen Nachrichtentext als **PR_BODY_CONTENT_LOCATION** ([PidTagBodyContentLocation](pidtagbodycontentlocation-canonical-property.md)), aber im HTML-Format. 
+Diese Eigenschaften enthalten den gleichen Nachrichtentext wie **PR_BODY_CONTENT_LOCATION** ([pidtagbodycontentlocation (](pidtagbodycontentlocation-canonical-property.md)), aber in HTML. 
   
-Ein Nachrichtenspeicher, der HTML unterstützt bedeutet dies, indem das **STORE_HTML_OK** Flag in seiner **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)). 
+Ein Nachrichtenspeicher, der HTML unterstützt, weist darauf hin, indem das **STORE_HTML_OK** -Flag in seinem **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) festgelegt wird. 
   
- **Hinweis** **STORE_HTML_OK** ist in Versionen von Mapidefs.h mit Microsoft® Exchange 2000 Server und früheren Versionen enthalten nicht definiert. Wenn **STORE_HTML_OK** nicht definiert ist, verwenden Sie stattdessen den Wert 0 x 00010000. 
+ **Hinweis** **STORE_HTML_OK** ist nicht in den Versionen von Mapidefs. h definiert, die in Microsoft ® Exchange 2000 Server und früher enthalten sind. Wenn **STORE_HTML_OK** nicht definiert ist, verwenden Sie stattdessen den Wert 0x00010000. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,5 +74,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

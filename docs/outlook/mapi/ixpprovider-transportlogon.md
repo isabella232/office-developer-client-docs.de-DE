@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 534929f2-36a2-463d-8c4c-d86060cde127
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 96e81442125ae49e0c2856a1cf3a97a16d3453cf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 53b2733dbf38d680027dc00ecf5513f384e46660
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345920"
 ---
 # <a name="ixpprovidertransportlogon"></a>IXPProvider::TransportLogon
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Richtet eine Sitzung, in der eine Clientanwendung eines Transportdienstes anmeldet. 
+Richtet eine Sitzung ein, in der sich eine Clientanwendung bei einem Transportanbieter anmeldet. 
   
 ```cpp
 HRESULT TransportLogon(
@@ -38,77 +38,77 @@ HRESULT TransportLogon(
 
 ## <a name="parameters"></a>Parameter
 
-_LpMAPISup_: [in] Zeiger auf der Adressbuchhierarchie Support-Objekt für Rückruffunktionen in MAPI für diese Sitzung. Dieses Objekt bleibt gültig, bis der Adressbuchhierarchie freigegeben.
+_lpMAPISup_: [in] Zeiger auf das Unterstützungsobjekt des Transportanbieters für Rückruffunktionen in MAPI für diese Sitzung. Dieses Objekt bleibt gültig, bis der Transportanbieter es freigibt.
     
-_UlUIParam_: [in] Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows diese Methode zeigt. Der _UlUIParam_ -Parameter kann nicht Null sein, beispielsweise wenn kennzeichnen der LOGON_SETUP im _LpulFlags_ -Parameter festgelegt ist. 
+_ulUIParam_: [in] Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der _ulUIParam_ -Parameter kann ungleich NULL sein, beispielsweise, wenn das LOGON_SETUP-Flag im _lpulFlags_ -Parameter festgelegt ist. 
     
-_LpszProfileName_: [in] Zeiger auf den Profilnamen des Benutzers. Der Parameter _LpszProfileName_ wird hauptsächlich verwendet, wenn ein Dialogfeld angezeigt werden muss. 
+_lpszProfileName_: [in] Zeiger auf den Profilnamen des Benutzers. Der _lpszProfileName_ -Parameter wird hauptsächlich verwendet, wenn ein Dialogfeld angezeigt werden muss. 
     
-_LpulFlags_: [in, out] Bitmaske aus Flags, die steuert, wie die Sitzung eingerichtet wird. Die folgenden Kennzeichen können bei der Eingabe durch die MAPI-Warteschlange festgelegt werden:
+_lpulFlags_: [in, out] Bitmaske von Flags, die Steuern, wie die Anmeldesitzung eingerichtet wird. Die folgenden Flags können für die Eingabe durch den MAPI-Spooler festgelegt werden:
     
-  - LOGON_NO_CONNECT: Das Benutzerkonto ist für diesen Transportanbieter für andere Zwecke als Übertragung und Empfang von Nachrichten anmelden. Der Transportdienst sollten nicht versuchen, um alle Verbindungen mit anderen messaging-Systemen zu machen.
+  - LOGON_NO_CONNECT: das Benutzerkonto meldet sich bei diesem Transportanbieter zu anderen Zwecken als dem Senden und empfangen von Nachrichten an. Der Transportanbieter sollte nicht versuchen, Verbindungen zu anderen Messagingsystemen herzustellen.
         
-  - LOGON_NO_DIALOG: Kein Dialogfeld sollte angezeigt werden, auch wenn die aktuell gespeicherten Benutzeranmeldeinformationen ungültig oder für die Anmeldung nicht ausreichend sind.
+  - LOGON_NO_DIALOG: Es sollte kein Dialog Feld angezeigt werden, auch wenn die aktuell gespeicherten Benutzeranmeldeinformationen ungültig oder unzureichend für die Anmeldung sind.
         
-  - LOGON_NO_INBOUND: Der Adressbuchhierarchie ist nicht erforderlich, für den Empfang von Nachrichten zu initialisieren und eingehende Nachrichten sollten nicht annehmen. Die MAPI-Warteschlange kann später verwenden die [IXPLogon::TransportNotify](ixplogon-transportnotify.md) -Methode der Adressbuchhierarchie zum Aktivieren der Verarbeitung der eingehenden Nachricht signalisieren. 
+  - LOGON_NO_INBOUND: der Transportanbieter muss nicht für den Empfang von Nachrichten initialisieren und eingehende Nachrichten nicht akzeptieren. Der MAPI-Spooler kann die [IXPLogon:: TransportNotify](ixplogon-transportnotify.md) -Methode später zum Signalisieren des Transportanbieters verwenden, um die Verarbeitung eingehender Nachrichten zu ermöglichen. 
         
-  - LOGON_NO_OUTBOUND: Der Adressbuchhierarchie ist nicht erforderlich, initialisieren zum Senden von Nachrichten, die MAPI-Warteschlange eine nicht bereitstellen. Wenn eine Clientanwendung eine Verbindung zu einem remote-Anbieter während der Zusammensetzung des eine Nachricht erforderlich sind, damit es [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode aufgerufen werden kann, sollte der Adressbuchhierarchie die Verbindung herzustellen. **TransportNotify** können die MAPI-Warteschlange der Adressbuchhierarchie signalisieren, wenn ausgehende Vorgänge beginnen können. 
+  - LOGON_NO_OUTBOUND: der Transportanbieter muss nicht zum Senden von Nachrichten initialisieren, da der MAPI-Spooler keines bereitstellt. Wenn eine Clientanwendung während der Zusammensetzung einer Nachricht eine Verbindung mit einem Remoteanbieter benötigt, damit die [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methodenaufrufe durchführen können, sollte der Transportanbieter die Verbindung herstellen. Der MAPI-Spooler kann **TransportNotify** verwenden, um den Transportanbieter zu signalisieren, wenn ausgehende Vorgänge beginnen können. 
       
-  - Parameter MAPI_UNICODE: Die übergebene Zeichenfolge für den Namen des Profils im Unicode-Format ist. Wenn die MAPI\_Unicode-Flag nicht festgelegt ist, die Zeichenfolge im ANSI-Format ist.
+  - MAPI_UNICODE: die übergebene Zeichenfolge für den Profilnamen ist im Unicode-Format. Wenn das MAPI\_-Unicode-Flag nicht festgelegt ist, wird die Zeichenfolge im ANSI-Format.
       
-    Die folgenden Kennzeichen können bei der Ausgabe von der Adressbuchhierarchie festgelegt werden:
+    Die folgenden Flags können für die Ausgabe vom Transportanbieter festgelegt werden:
       
-  - LOGON_SP_IDLE: Fordert an, dass die MAPI-Warteschlange leerlaufzeitverarbeitung häufig der Adressbuchhierarchie [IXPLogon::Idle](ixplogon-idle.md) -Methode aufrufen. 
+  - LOGON_SP_IDLE: fordert, dass der MAPI-Spooler häufig die [IXPLogon:: idle](ixplogon-idle.md) -Methode des Transportanbieters für die Leerlaufverarbeitung aufruft. 
       
-  - LOGON_SP_POLL: Anforderungen, die die MAPI-Warteschlange aufrufen häufig die [IXPLogon::Poll](ixplogon-poll.md) -Methode auf das Objekt zurückgegebenen anmelden, um zu überprüfen auf neue Nachrichten. Wenn dieses Flag nicht festgelegt ist, überprüft die MAPI-Warteschlange nur für neue Nachrichten, wenn der Adressbuchhierarchie die [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) -Methode verwendet, um der Warteschlange zu benachrichtigen, dass neue Nachrichten verarbeitet werden. Ein Transportdienstes wird effektiv nur senden, indem nicht dieses Flag festlegen und nicht die MAPI-Warteschlange Nachricht Eingang benachrichtigen. 
+  - LOGON_SP_POLL: fordert, dass der MAPI-Spooler häufig die [IXPLogon::P-oll](ixplogon-poll.md) -Methode für das zurückgegebene Logon-Objekt aufruft, um nach Nachrichten zu suchen. Wenn dieses Flag nicht festgelegt ist, prüft der MAPI-Spooler nur, ob neue Nachrichten vorhanden sind, wenn der Transportanbieter die [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode verwendet, um dem Spooler mitzuteilen, dass neue Nachrichten verarbeitet werden müssen. Ein Transportanbieter wird effektiv zu nur-senden, indem dieses Flag nicht festgelegt und der MAPI-Spooler des Nachrichtenempfangs nicht benachrichtigt wird. 
       
-  - LOGON_SP_RESOLVE: Anforderungen, die in die Warteschlange MAPI aufgelöst vollständige Adressen nicht alle Nachrichtenadressen für Empfänger unterstützt von diesem Transportanbieter. Aus diesem Grund, dass der Adressbuchhierarchie für alle Empfänger einen Antwort Pfad erstellen kann.
+  - LOGON_SP_RESOLVE: fordert, dass der MAPI-Spooler alle Nachrichten Adressen für Empfänger auflöst, die von diesem Transportanbieter nicht unterstützt werden. Daher kann der Transportanbieter einen Antwortpfad für alle Empfänger erstellen.
       
-  - Parameter MAPI_UNICODE: Die zurückgegebenen Zeichenfolgen in der Struktur [MAPIERROR](mapierror.md) werden, im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format. 
+  - MAPI_UNICODE: die zurückgegebenen Zeichenfolgen in der [MAPIERROR](mapierror.md) -Struktur, sofern vorhanden, im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
     
-_LppMAPIError_: [out] Zeiger auf einen Zeiger auf das zurückgegebene **MAPIERROR** -Struktur, sofern zutreffend, enthält Angaben zu Version, Komponente und Kontext für den Fehler. Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn es keine **MAPIERROR** -Struktur ist zurückgegeben. 
+_lppMAPIError_: [out] Zeiger auf einen Zeiger auf die zurückgeGebene **MAPIERROR** -Struktur, sofern vorhanden, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn keine **MAPIERROR** -Struktur zurückgegeben werden soll. 
     
-_LppXPLogon_: [out] Zeiger auf den Zeiger auf das Objekt zurückgegebenen Transport Anbieter anmelden.
+_lppXPLogon_: [out] Zeiger auf den Zeiger auf das zurückgegebene Transportanbieter-Anmeldeobjekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-S_OK: Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.
+S_OK: der Aufruf war erfolgreich und hat den erwarteten Wert zurückgegeben.
     
-MAPI_E_FAILONEPROVIDER: Dieser Anbieter können sich nicht anmelden, aber dieser Fehler sollten Sie den Dienst nicht deaktivieren. 
+MAPI_E_FAILONEPROVIDER: dieser Anbieter kann sich nicht anmelden, aber dieser Fehler sollte den Dienst nicht deaktivieren. 
     
-MAPI_E_UNCONFIGURED: Das Profil enthält nicht ausreichend Informationen für die Anmeldung ausgeführt werden. MAPI-Aufrufen des Anbieters Nachricht Service Entry Point-Funktion.
+MAPI_E_UNCONFIGURED: das Profil enthält nicht genügend Informationen für die Anmeldung. MAPI Ruft die Einstiegspunktfunktion des Anbieters auf.
     
-MAPI_E_UNKNOWN_CPID: Codepage dem Client kann nicht vom Anbieter unterstützt werden.
+MAPI_E_UNKNOWN_CPID: der Anbieter kann die Codeseite des Clients nicht unterstützen.
     
-MAPI_E_UNKNOWN_LCID: Gebietsschemainformationen der Client kann nicht vom Anbieter unterstützt werden.
+MAPI_E_UNKNOWN_LCID: der Anbieter kann die Gebietsschemainformationen des Clients nicht unterstützen.
     
-MAPI_E_USER_CANCEL: Der Benutzer den Vorgang abgebrochen, in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld. 
+MAPI_E_USER_CANCEL: der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die MAPI-Warteschlange die **IXPProvider::TransportLogon** -Methode aufgerufen, um eine Anmeldung für einen Benutzer einzurichten. 
+Der MAPI-Spooler Ruft die **IXPProvider:: TransportLogon** -Methode auf, um eine Anmeldesitzung für einen Benutzer einzurichten. 
   
-Die meisten Transportanbieter verwenden Sie die [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) -Methode mit der Support-Objekt, auf das durch den Parameter _LpMAPISup_ zum Speichern und Abrufen von Benutzeridentitätsinformationen Serveradressen und Anmeldeinformationen bereitgestellt. Mithilfe von **"OpenProfileSection"** kann beliebigen Informationen ein Transportdienstes und versenden eine Anmeldung für eine bestimmte Ressource zuordnen. Beispielsweise können ein Anbieter **"OpenProfileSection"** Sie speichern den Kontonamen und das Kennwort für eine bestimmte Sitzung und keine Servernamen oder andere erforderlichen Informationen, die für diese Sitzung zum Zugriff auf Ressourcen erforderlich sind. MAPI werden Informationen im Zusammenhang mit einer Ressource außerhalb von Access ausgeblendet. Profilabschnitt über _LpMAPISup_ zur Verfügung gestellt wird durch die MAPI-Warteschlange verwaltet, damit Daten im Zusammenhang mit diesen Benutzerkontext von Daten für andere Kontexte getrennt ist. 
+Die meisten Transportanbieter verwenden die [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) -Methode, die mit dem Support-Objekt bereitgestellt wird, auf das durch den _lpMAPISup_ -Parameter zum Speichern und Abrufen von Benutzeridentitätsinformationen, Serveradressen und Anmeldeinformationen verwiesen wird. Mithilfe von **OpenProfileSection**kann ein Transportanbieter beliebige Informationen speichern und eine Anmeldung einer bestimmten Ressource zuordnen. Ein Anbieter kann beispielsweise **OpenProfileSection** verwenden, um den Kontonamen und das Kennwort für eine bestimmte Sitzung sowie alle Servernamen oder anderen erforderlichen Informationen zu speichern, die für den Zugriff auf Ressourcen für diese Sitzung erforderlich sind. MAPI blendet Informationen aus einer Ressource außerhalb des Zugriffs aus. Der Profil Abschnitt, der über _lpMAPISup_ zur Verfügung gestellt wird, wird vom MAPI-Spooler verwaltet, sodass Daten, die sich auf diesen Benutzerkontext beziehen, von Daten für andere Contexts getrennt werden. 
   
-Der Transportdienst muss rufen Sie die **IUnknown:: AddRef** -Methode für das Objekt unterstützt und behalten Sie eine Kopie des Zeigers auf dieses Objekt als Teil des Anbieters Anmeldung-Objekts. 
+Der Transportanbieter muss die **IUnknown:: AddRef** -Methode für das Support-Objekt aufrufen und eine Kopie des Zeigers auf dieses Objekt als Teil des Anbieter Anmelde Objekts aufbewahren. 
   
-Der Anzeigenamen Profil in _LpszProfileName_ wird bereitgestellt, sodass der Adressbuchhierarchie in Fehlermeldungen oder Dialogfelder Anmeldung verwenden kann. Wenn der Anbieter dieser Name beibehält, muss er in vom Anbieter reserviert Speicher kopiert werden. 
+Der Profilanzeige Name in _lpszProfileName_ wird bereitgestellt, damit der Transportanbieter ihn in Fehlermeldungen oder Anmelde Dialogfeldern verwenden kann. Wenn der Anbieter diesen Namen beibehält, muss er in den vom Anbieter reservierten Speicher kopiert werden. 
   
-Transportanbieter, die eng mit anderen Dienstanbietern gekoppelt sind möglicherweise zusätzliche Aufgaben bei der Anmeldung die guten für Vorgänge zwischen Anbietern Companion erforderlichen Anmeldeinformationen hergestellt werden.
+Transport Anbieter, die eng mit anderen Dienstanbietern verbunden sind, müssen möglicherweise zusätzliche Aufgaben bei der Anmeldung ausführen, um die für Vorgänge zwischen Companion-Anbietern erforderlichen guten Anmeldeinformationen zu erstellen.
   
-In der Regel werden Transportanbieter geöffnet, wenn der Benutzer zuerst zu einem Profil anmeldet. Da die erste Anmeldung zu einem Profil daher im Allgemeinen vor der Anmeldung an alle Nachrichtenspeicher gelangt, ruft die MAPI-Warteschlange **TransportLogon** in der Regel mit der LOGON_NO_INBOUND und die LOGON_NO_OUTBOUND in _LpulFlags_festgelegten Flags. Später, wenn die entsprechende Meldung Speicher in der Sitzung Profil verfügbar sind, ruft die MAPI-Warteschlange **TransportNotify** zum ein- und ausgehenden Vorgänge für den Transportanbieter zu initiieren. 
+In der Regel werden Transportanbieter geöffnet, wenn der Benutzer sich zuerst bei einem Profil anmeldet. Da sich die erste Anmeldung an einem Profil im Allgemeinen vor der Anmeldung an einem Nachrichtenspeicher befindet, ruft der MAPI-Spooler normalerweise **TransportLogon** mit den LOGON_NO_INBOUND-und LOGON_NO_OUTBOUND-Flags auf, die in _lpulFlags_festgelegt sind. Wenn die entsprechenden Nachrichtenspeicher später in der Profil Sitzung verfügbar sind, ruft der MAPI-Spooler **TransportNotify** auf, um ein-und ausgehende Vorgänge für den Transportanbieter zu initiieren. 
   
-Das LOGON_NO_CONNECT-Flag _LpulFlags_ Signale übergeben Offlinebetrieb von der Adressbuchhierarchie. Dieses Kennzeichen gibt an, dass keine externen Verbindungen hergestellt werden soll; Wenn der Adressbuchhierarchie eine Sitzung ohne eine externe Verbindung herstellen kann, muss er einen Fehlerwert für die Anmeldung zurückgeben. 
+Durch das Übergeben des LOGON_NO_CONNECT-Flags in _lpulFlags_ wird der Offlinebetrieb des Transportanbieters signalisiert. Dieses Flag gibt an, dass keine externen Verbindungen hergestellt werden sollen. Wenn der Transportanbieter keine Sitzung ohne externe Verbindung herstellen kann, sollte er einen Fehlerwert für die Anmeldung zurückgeben. 
   
-Ein Transportdienstes sollte das LOGON_SP_IDLE Flag in _LpulFlags_ bei der Initialisierung festgelegt, wenn es entwickelt wurde, zu verwenden, die das System andernfalls verbringt im Leerlauf. So lange wird häufig automatische Vorgänge wie automatische Nachricht herunterladen, ein Timeout aufgetreten Nachricht herunterladen, oder ein Timeout aufgetreten-Nachrichtenübermittlung behandeln. Wenn dieses Flag festgelegt ist, ruft die MAPI-Warteschlange **im Leerlauf** , wenn im Leerlauf Systemzeit tritt auf, um diese Vorgänge zu initiieren. Die MAPI-Warteschlange wird nicht **im Leerlauf** in festgelegten Intervallen aufgerufen. Stattdessen wird er nur während der Leerlaufzeit true aufgerufen. Anbieter sollte daher nicht funktionieren, auf alle Annahme darüber, wie häufig ihre Methoden **im Leerlauf** aufgerufen werden. Anbieter, die Leerlaufzeit Operationen unterstützen sollte eine Benutzeroberfläche für die Konfiguration dafür in ihren Anbieter-Eigenschaftenfenster bereitstellen. 
+Ein Transportanbieter sollte das LOGON_SP_IDLE-Flag in _lpulFlags_ zum Zeitpunkt der Initialisierung festlegen, wenn es darauf ausgelegt ist, die Zeit zu verwenden, die sonst im Leerlauf verwendet wird. Dieser Zeitpunkt wird häufig verwendet, um automatische Vorgänge wie automatisches Herunterladen von Nachrichten, Herunterladen von Nachrichten oder zeitgesteuerte Nachrichtenübermittlung zu behandeln. Wenn dieses Flag festgelegt ist, ruft der MAPI-Spooler **Leerlauf** auf, wenn die Systemleerlaufzeit eintritt, um solche Vorgänge zu initiieren. Der MAPI-Spooler ruft **Leerlauf** nicht in festgelegten Intervallen auf. Sie wird vielmehr nur während der tatsächlichen Leerlaufzeit aufgerufen. Daher sollten Anbieter nicht bei jeder Annahme darüber arbeiten, wie häufig ihre **Leerlauf** Methoden aufgerufen werden. Anbieter, die Leerlauf Vorgänge unterstützen, sollten in Ihrem Anbietereigenschaften Blatt eine Konfigurationsbenutzeroberfläche bereitstellen. 
   
-Wenn die Anmeldung des Transport erfolgreich ist, sollte der Anbieter im _LppXPLogon_ -Parameter einen Zeiger zurückzugeben auf ein Logon-Objekt. Die MAPI-Warteschlange wird dieses Objekt für den Anbieter für zusätzliche Zugriff verwenden. Wenn **TransportLogon** das Dialogfeld Anmeldung zeigt und der Benutzer Anmeldung in der Regel abbricht durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld sollte der Anbieter MAPI_E_USER_CANCEL zurückgegeben. 
+Wenn die Transportanbieter Anmeldung erfolgreich ist, sollte der Anbieter im _lppXPLogon_ -Parameter einen Zeiger auf ein LOGON-Objekt zurückgeben. Der MAPI-Spooler verwendet dieses Objekt für zusätzlichen Anbieter Zugriff. Wenn **TransportLogon** ein Anmeldedialogfeld anzeigt und der Benutzer die Anmeldung normalerweise abbricht, indem er im Dialogfeld auf die Schaltfläche **Abbrechen** klickt, sollte der Anbieter MAPI_E_USER_CANCEL zurückgeben. 
   
-Für die meisten Fehlerwerte von **TransportLogon**zurückgegeben deaktiviert MAPI die Message-Dienste zu denen der Anbieter gehört. MAPI rufen keine Anbieter, die zu diesem Dienst für den Rest der MAPI-Sitzung gehören. Im Gegensatz dazu gibt **TransportLogon** den Fehlerwert MAPI_E_FAILONEPROVIDER von dessen Anmeldung wird MAPI nicht den Dienst deaktiviert zu dem der Anbieter gehört. **TransportLogon** sollte MAPI_E_FAILONEPROVIDER zurückgegeben, wenn ein Fehler auftritt, der keine Garantie dafür ist das Deaktivieren des Dienstes für den Rest der Sitzung. 
+Bei den meisten Fehlerwerten, die von **TransportLogon**zurückgegeben werden, deaktiviert MAPI die Nachrichtendienste, zu denen der Anbieter gehört. MAPI Ruft für den Rest der MAPI-Sitzung keine Anbieter auf, die zu diesem Dienst gehören. Wenn **TransportLogon** hingegen den MAPI_E_FAILONEPROVIDER-Fehlerwert aus der Anmeldung zurückgibt, wird der Nachrichtendienst, zu dem der Anbieter gehört, nicht deaktiviert. **TransportLogon** sollte MAPI_E_FAILONEPROVIDER zurückgeben, wenn ein Fehler auftritt, der die Deaktivierung des Diensts für den Rest der Sitzung nicht zulässt. 
   
-Wenn ein Anbieter von dessen Anmeldung MAPI_E_UNCONFIGURED zurückgibt, wird MAPI Aufrufen des Anbieters Nachricht Service Eintrag-Funktion und wiederholen Sie die Anmeldung. MAPI übergibt MSG_SERVICE_CONFIGURE als Kontext aus, um dem Dienst selbst konfigurieren kann. Wenn der Client sich entschieden hat, um eine Benutzeroberfläche für die Anmeldung zu ermöglichen, kann der Dienst das Eigenschaftenblatt Konfiguration darstellen, damit der Benutzer Informationen eingeben kann. 
+Wenn ein Anbieter MAPI_E_UNCONFIGURED von seiner Anmeldung zurückgibt, ruft MAPI die Nachrichtendienst-Eintrags Funktion des Anbieters auf und wiederholt die Anmeldung. MAPI übergibt MSG_SERVICE_CONFIGURE als Kontext, um dem Dienst die Möglichkeit zu geben, sich selbst zu konfigurieren. Wenn der Client sich entschieden hat, eine Benutzeroberfläche für die Anmeldung zuzulassen, kann der Dienst sein Konfigurationseigenschaften Blatt anzeigen, damit der Benutzerkonfigurationsinformationen eingeben kann. 
   
-Wenn der Anbieter, dass alle erforderliche Informationen ist nicht im Profil feststellt, sollte MAPI_E_UNCONFIGURED zurückgegeben werden, damit MAPI des Anbieters Nachricht Service Entry Point-Funktion aufruft. 
+Wenn der Anbieter feststellt, dass alle erforderlichen Informationen nicht im Profil sind, sollte er MAPI_E_UNCONFIGURED zurückgeben, damit MAPI die Einstiegspunktfunktion des Anbieters für den Nachrichtendienst aufruft. 
   
 ## <a name="see-also"></a>Siehe auch
 

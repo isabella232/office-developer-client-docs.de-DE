@@ -1,26 +1,26 @@
 ---
-title: EmbellishmentIndex Cell (Theme Properties Section)
+title: EmbellishmentIndex Cell (Theme Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 98f7ebdc-fdd5-4534-97dc-9d4c00490d62
-description: Ändert das Aussehen und Verhalten (Ornament) von Legenden, Containern, Zeitplänen und Organigramm-Shapes.
-ms.openlocfilehash: 93c12a3eed1c7298b37f143fc836ad90ec3b09ab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ändert das Aussehen und Verhalten (Verschönerung) von Beschriftungen, Containern, Zeitachsen und Organigramm-Shapes.
+ms.openlocfilehash: 089623bbb310f78488a5c8c7261eed1c16a5c6e6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19796922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345626"
 ---
-# <a name="embellishmentindex-cell-theme-properties-section"></a>EmbellishmentIndex Cell (Theme Properties Section)
+# <a name="embellishmentindex-cell-theme-properties-section"></a>EmbellishmentIndex Cell (Theme Properties section)
 
-Ändert das Aussehen und Verhalten (Ornament) von Legenden, Containern, Zeitplänen und Organigramm-Shapes.
+Ändert das Aussehen und Verhalten (Verschönerung) von Beschriftungen, Containern, Zeitachsen und Organigramm-Shapes.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **EmbellishmentIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **EmbellishmentIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

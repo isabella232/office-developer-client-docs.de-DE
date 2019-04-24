@@ -1,5 +1,5 @@
 ---
-title: PidLidCategories (kanonische Eigenschaft)
+title: Kanonische Pidlidcategories (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,53 +11,53 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ad2aedc-405b-475e-ac76-7ecbbef28f73
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: b2047f04f3f4a8d2b3e58e07a71e7e2463eff9cf
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344975"
 ---
-# <a name="pidlidcategories-canonical-property"></a>PidLidCategories (kanonische Eigenschaft)
+# <a name="pidlidcategories-canonical-property"></a>Kanonische Pidlidcategories (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine Liste der Kategorien für ein Element.
+Gibt eine Liste der Kategorien für ein Element an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidCategories  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00002328  <br/> |
+|Eigenschaftensatz:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|Long-ID (Deckel):  <br/> |0x00002328  <br/> |
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |
-|Bereich:  <br/> |Common  <br/> |
+|Bereich:  <br/> |Standard  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um ein Kopfzeilenfeld Schlüsselwörter generiert werden soll, müssen die Clients den Wert dieser Eigenschaft auf die gewünschten Werte festgelegt. Diese Eigenschaft hat mehrere Zeichenfolgen. jeder Kategorie sollte zu einem einzelnen Stichwort zugeordnet werden.
+Um ein Schlüsselwort-Kopfzeilenfeld zu generieren, müssen Clients den Wert dieser Eigenschaft auf die gewünschten Werte festlegen. Diese Eigenschaft hat mehrere Zeichenfolgen; jede Kategorie sollte einem einzelnen Schlüsselwort zugeordnet werden.
   
-Multipurpose Internet Mail Extensions (MIME)-Autoren sollten jeder untergeordneten Wert dieser Eigenschaft zu einem separaten Stichwort in das Feld Schlüsselwörter Kopf durch ein Komma (U + 002 C) und Leerzeichen (U + 0020) trennen kopieren jedes Schlüsselwort. MIME-Writer können diese Eigenschaft nicht kopiert werden soll, um einen Konflikt zwischen verschiedenen Sätze von Kategorien in unterschiedlichen Organisationen zu vermeiden dem Feld Stichwörter Kopfzeile löschen.
+MIME-Writer (Multipurpose Internet Mail Extensions) sollte jeden unter Wert dieser Eigenschaft in ein separates Schlüsselwort im Kopfzeilenfeld Schlüsselwörter kopieren, wobei jedes Schlüsselwort durch ein Komma (U + 002C) und Leerzeichen (U + 0020) getrennt wird. MIME-Writer können diese Eigenschaft ablegen, anstatt Sie in das Schlüsselwort-Kopfzeilenfeld zu kopieren, um Konflikte zwischen verschiedenen Gruppen von Kategorien in unterschiedlichen Organisationen zu vermeiden.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt die Eigenschaftensatz Definition und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
+> Konvertiert von Internet Standard-e-Mail-Konventionen in Nachrichtenobjekte.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -69,5 +69,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

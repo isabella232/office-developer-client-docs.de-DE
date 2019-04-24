@@ -8,36 +8,35 @@ f1_keywords:
 - Vis_DSS.chm82251479
 localization_priority: Normal
 ms.assetid: 098d216f-e699-0e74-f702-ccfa7809c19b
-description: Eine Audiodatei oder Systemsound wiedergegeben.
-ms.openlocfilehash: ca54b749b764e9ea2c7db71d41268303542417f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine Sounddatei oder einen Systemsound wieder.
+ms.openlocfilehash: 752412aab6584d2b01235fe88644e3ec3fa5daee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346844"
 ---
 # <a name="playsound-function"></a>PLAYSOUND Function
 
-Eine Audiodatei oder Systemsound wiedergegeben. 
+Gibt eine Sounddatei oder einen Systemsound wieder. 
   
 ## <a name="syntax"></a>Syntax
 
-PLAYSOUND ("** *Filename* **" | "** *Alias* **", ** *istAlias* **, ** *Beep* **, ** *Synch* **) 
+PlaySound ("* * *filename* * *" | "* * *Alias* * *", * * *isalias* * *, * * *Beep* * *, * * *Synch* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Dateiname_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Audiodatei, die abgespielt werden soll.  <br/> |
+| _filename_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Audiodatei, die abgespielt werden soll.  <br/> |
 | _alias_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Systemsignal, das durch einen Alias dargestellt wird.  <br/> |
-| _istAlias_ <br/> |Erforderlich  <br/> |**Boolean** <br/> | Gibt an, ob der vorangegangene Ausdruck ein Alias oder ein Dateiname ist. Verwenden Sie einen Wert ungleich null zur Angabe eines Alias.  <br/> |
+| _isAlias_ <br/> |Erforderlich  <br/> |**Boolean** <br/> | Gibt an, ob der vorangegangene Ausdruck ein Alias oder ein Dateiname ist. Verwenden Sie einen Wert ungleich null zur Angabe eines Alias.  <br/> |
 | _Signalton_ <br/> |Erforderlich  <br/> |**Boolean** <br/> |Gibt an, ob Microsoft Visio eine akustische Meldung ausgibt, wenn der Sound nicht abgespielt werden kann. Verwenden Sie einen Wert ungleich null, um ein akustisches Signal zu veranlassen.  <br/> |
 | _Synch_ <br/> |Erforderlich  <br/> |**Boolean** <br/> |Bestimmt, ob Klänge asynchron (0) oder synchron (1) abgespielt werden.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sounds sollten normalerweise asynchron abgespielt werden, damit Visio fortgesetzt werden kann, während der Sound abgespielt wird. Wenn Sie mehrere Sounds hintereinander abspielen möchten, sollten Sie diese synchron abspielen. Sonst könnte es geschehen, dass einige nicht abgespielt werden.
- 
+Sie sollten Sounds in der Regel asynchron abspielen, damit Visio die Verarbeitung fortsetzen kann, während der Sound wiedergegeben wird. Um mehrere Sounds miteinander zu verbinden, spielen Sie sie synchron ab, oder es kann ein Fehler auftreten. 
   
 ## <a name="example-1"></a>Beispiel 1
 

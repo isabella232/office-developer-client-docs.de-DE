@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm82251884
 localization_priority: Normal
 ms.assetid: 25c9f817-d22b-28c9-1339-dc9f27d0dd41
-description: Verweist auf eine Zelle und berechnet die Formel nicht neu, wenn die referenzierte Zelle ändert.
-ms.openlocfilehash: 454314b1f156f560c237f22a45492978ca3c31ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Verweist auf eine Zelle und berechnet die Formel nicht neu, wenn sich die referenzierte Zelle ändert.
+ms.openlocfilehash: 38f3c8b4f34ed2b3d3711be5faed6b0d317e907a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356498"
 ---
 # <a name="getref-function"></a>GETREF Function
 
-Verweist auf eine Zelle und berechnet die Formel nicht neu, wenn die referenzierte Zelle ändert.
+Verweist auf eine Zelle und berechnet die Formel nicht neu, wenn sich die referenzierte Zelle ändert.
   
 ## <a name="syntax"></a>Syntax
 
-GETREF (** *Abrufen Cellname* **) 
+GETREF (* * *cellName* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _abrufen cellName_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der abzurufenden einen Verweis auf die Zelle.  <br/> |
+| _cellName_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Zelle, auf die ein Verweis abgerufen werden soll.  <br/> |
    
 ## <a name="example"></a>Beispiel
 
-SETF(GETREF(PinX),5.1) 
+SETF (GETREF (PinX), 5.1) 
   
 Legt die Formel der Zelle DrehbezX auf 5,1 fest. 
   

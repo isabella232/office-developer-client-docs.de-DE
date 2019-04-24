@@ -6,48 +6,48 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 11daa75b-87fc-4e63-8e02-09ab9307c8f8
 ms.date: 01/28/2016
-description: Verwenden Sie zum Öffnen der Schlingern Anwendung und anzeigen oder bearbeiten eine Schlingern das Sway URI-Schema.
-ms.openlocfilehash: 7a820339abcd666e7e1b9ad584cd152ca8fd4f68
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Verwenden Sie das Sway-URI-Schema, um die Sway-Anwendung zu öffnen und eine Sway anzuzeigen oder zu bearbeiten.
+ms.openlocfilehash: 04848ef1de2777d916d8dd8dd381e6d5f66310d6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346249"
 ---
 # <a name="sway-uri-scheme"></a>Sway-URI-Schema
 
-Dieses Dokument definiert das Format des Uniform Resource Identifiers (URIs) für die Anwendung Schlingern für Windows. Dieser URI-Schema können Sie die Anwendung Schlingern mit verschiedenen Befehlen aufrufen.
+Dieses Dokument definiert das Format von Uniform Resource Identifier (URIs) für die Sway-Anwendung für Windows. Sie können dieses URI-Schema verwenden, um die Sway-Anwendung mit verschiedenen Befehlen aufzurufen.
 
-## <a name="sway-uri-scheme-syntax"></a>Die Syntax der URI-Schema sway
+## <a name="sway-uri-scheme-syntax"></a>Syntax für das Sway-URI-Schema
 
-Dies ist die URI-Schema-Syntax:
+Es folgt die Syntax des URI-Schemas:
 
 `<ms-sway>:<command-argument>`
 
-- `<ms-sway>`&ndash; Gibt an, dass Schlingern Anwendung, die aufgerufen wird. Bei der Installation von Sway für Windows `ms-sway` mit der Schlingern Handler für Windows registriert ist.
-- `<command-argument>`&ndash; A URI möglicherweise ein oder mehrere Befehlsargumente, getrennt durch das kaufmännische und-Zeichen (`&`) Zeichen. Wenn mehr als ein Befehlsargument in einem URI, ein kaufmännisches und-Zeichen enthalten ist (`&`) Zeichen muss jede Befehlsargument aus dem folgenden Befehlsargument verwendet. Befehlsargumente variieren je nach Szenario. 
+- `<ms-sway>`&ndash; Gibt an, dass Sway die Anwendung ist, die aufgerufen werden soll. Wenn Sway for Windows installiert ist, `ms-sway` wird mit Windows als der Sway-Handler registriert.
+- `<command-argument>`&ndash; Ein URI kann über ein oder mehrere Befehlsargumente verfügen, die durch das kaufmännische`&`und-Zeichen () begrenzt werden. Wenn in einem URI mehr als ein Command-Argument enthalten ist, muss ein`&`kaufmännisches und-Zeichen () jedes Befehlsargument vom folgenden Befehlsargument trennen. Befehlsargumente variieren je nach Szenario. 
 
 ## <a name="command-arguments"></a>Befehlsargumente
 
-Mehrere Befehlsargumente können in das Sway URL-Schema enthalten sein. Dieser Befehlsargumenten sind nicht erforderlich. Wenn Sie nicht die Befehlsargumenten verwenden, wird die Anwendung Schlingern aufgerufen.
+Mehrere Befehlsargumente können als Teil des Sway-URL-Schemas eingeschlossen werden. Diese Befehlsargumente sind nicht erforderlich. Wenn Sie die Befehlsargumente nicht angeben, wird die Sway-Anwendung aufgerufen.
 
-|Befehlsnamen argument|Beschreibung|Typ|Mögliche Werte|Erforderlich?|
+|Name des Befehlsarguments|Beschreibung|Typ|Mögliche Werte|Pflichtfeld?|
 |:-----|:-----|:-----|:-----|:-----|
-|**id**|Der eindeutige Bezeichner der einer Schlingern. Verwendet, um anzugeben, die Schlingern geöffnet werden soll.|Zeichenfolge|Ein gültiger Eindeutiger Bezeichner für eine Schlingern. Die Id ist immer Teil der URL zu einer Schlingern.<br/><br/>Zum Beispiel für die folgenden Schlingern `https://sway.com/dBheQgVZ1RQBfiQU`, die Id lautet `dBheQgVZ1RQBfiQU`.<br/><br/>Wenn das Benutzerkonto, das die Schlingern-Anwendung gehörigen Bearbeitungsberechtigungen verfügt, wird die Anwendung die Schlingern im Bearbeitungsmodus geöffnet. Andernfalls wird die Anwendung die Schlingern im Ansichtsmodus geöffnet.|Nein|
-|**mode**|Der Modus, in dem eine bestimmte Schlingern geöffnet, zur Bearbeitung oder zur Anzeige werden soll.|Zeichenfolge|Bearbeiten<br/>Ansicht<br/><br/>**Hinweis**: dieser Befehlsargument wird ignoriert, wenn keine **Id** angegeben wird,.|Nein|
-|**auth_upn**|Das Konto beim Öffnen von Schlingern verwendet.|Zeichenfolge|Eine gültige e-Mail-Adresse.<br/><br/>Wenn die angegebene e-Mail-Adresse nicht mit einem Konto Schlingern verknüpft ist, wird der Benutzer als der angegebene Benutzer anmelden von Schlingern gefragt.<br/><br/>Wenn mehr als ein Konto Schlingern-Anwendung zugeordnet ist, und die angegebene e-Mail-Adresse vorhanden ist, wechselt die Schlingern-Anwendung, die mit diesem Konto beim Aufrufen.|Nein|
-|**Auth\_Pvr**|Die Art des Kontos zum Öffnen der Schlingern&mdash;ein Microsoft-Konto oder einem Azure Active Directory-Konto (Azure AD).|Zeichenfolge|WindowsLiveId – gibt an, dass die **Auth\_Upn** Konto ist ein Microsoft-Konto.<br/><br/>Organisations-ID – gibt an, dass die **Auth\_Upn** Konto ist ein Azure AD-Konto.<br/><br/>Wenn kein **Auth\_Upn** angegeben wird, ist dieses Befehlsargument wird ignoriert.|Nein|
-|**Aufrufen von\_app**|Der Name der Windows-Anwendung verwendet, um Schlingern aufzurufen.|Zeichenfolge|Der Anzeigename der Windows-Anwendung verwendet, um über das Sway URL-Schema Schlingern aufzurufen.<br/><br/>Der Zweck dieses Befehlsargument ist für Telemetrie und Nachverfolgen von Änderungen.|Nein|
+|**id**|Der eindeutige Bezeichner eines Sway. Wird verwendet, um die zu öffnende Sway anzugeben.|Zeichenfolge|Ein gültiger eindeutiger Bezeichner für eine Sway. Die ID ist immer Teil der URL zu einem Sway.<br/><br/>Beispielsweise ist `dBheQgVZ1RQBfiQU`die ID für die `https://sway.com/dBheQgVZ1RQBfiQU`folgende Sway.<br/><br/>Wenn das mit der Sway-Anwendung verknüpfte Benutzerkonto über Bearbeitungsberechtigungen verfügt, öffnet die Anwendung die Sway im Bearbeitungsmodus. Andernfalls öffnet die Anwendung die Sway im Ansichtsmodus.|Nein|
+|**mode**|Der Modus, in dem eine bestimmte Sway geöffnet werden soll, sei es zur Bearbeitung oder zur Anzeige.|Zeichenfolge|Bearbeiten<br/>Ansicht<br/><br/>**Hinweis**: Wenn keine **ID** angegeben wird, wird dieses Befehlsargument ignoriert.|Nein|
+|**auth_upn**|Das Konto, das beim Öffnen von Sway verwendet werden soll.|Zeichenfolge|Eine gültige e-Mail-Adresse.<br/><br/>Wenn die angegebene e-Mail-Adresse keinem Sway-Konto zugeordnet ist, fordert Sway den Benutzer auf, sich als der angegebene Benutzer anzumelden.<br/><br/>Wenn der Sway-Anwendung mehr als ein Konto zugeordnet ist und die angegebene e-Mail-Adresse vorhanden ist, wechselt die Sway-Anwendung zur Verwendung dieses Kontos, wenn Sie aufgerufen wird.|Nein|
+|**auth\_PVR**|Der Kontotyp, der zum Öffnen der Sway&mdash;verwendet werden soll, entweder ein Microsoft-Konto oder ein Azure Active Directory-Konto (Azure AD).|Zeichenfolge|WindowsLiveId – gibt an, dass das **auth\_-UPN** -Konto ein Microsoft-Konto ist.<br/><br/>OrgId – gibt an, dass das **auth\_-UPN** -Konto ein Azure AD-Konto ist.<br/><br/>Wenn kein **auth\_-UPN** angegeben wird, wird dieses Befehlsargument ignoriert.|Nein|
+|**Aufrufen\_der APP**|Der Name der Windows-Anwendung, die zum Aufrufen von Sway verwendet wurde.|Zeichenfolge|Der Anzeigename der Windows-Anwendung, die verwendet wird, um Sway über das Sway-URL-Schema aufzurufen.<br/><br/>Der Zweck dieses Befehlsarguments ist die Telemetrie und Nachverfolgung.|Nein|
 
-## <a name="uri-scheme-semantics"></a>Semantik der URI-Schema
+## <a name="uri-scheme-semantics"></a>URI-Schema Semantik
 
-Die `<ms-sway>` Schema definiert eine URI-Syntax zum Öffnen einer Schlingern oder für die Anwendung Schlingern aufrufen. Das Schema definiert mehrere Befehlsargumente, die verwendet werden kann, um Folgendes auszuführen: 
+Das `<ms-sway>` Schema definiert eine URI-Syntax zum Öffnen einer Sway oder zum Aufrufen der Sway-Anwendung. Das Schema definiert mehrere Befehlsargumente, die für folgende Aufgaben verwendet werden können: 
 
-- Öffnen Sie die Anwendung Schlingern &ndash; keine Befehlsargumente müssen angegeben werden. 
+- Öffnen der Sway- &ndash; Anwendung es müssen keine Befehlsargumente angegeben werden. 
 
-- Öffnen Sie ein Schlingern für die Anzeige in der Anwendung Schlingern &ndash; die **-Id** und - **Modus** anzeigen müssen angegeben werden. 
+- Öffnen Sie eine Sway für die Anzeige in der &ndash; Sway **-** Anwendung die ID und der **Modus** , die angezeigt werden sollen, müssen angegeben werden. 
 
-- Öffnen Sie ein Schlingern zur Bearbeitung in der Anwendung Schlingern &ndash; legen Sie die **Id** und den **Modus** bearbeiten muss angegeben werden. Es wird empfohlen, dass Sie auch einschließen **Auth\_Upn** und **Auth\_Pvr** zur Sicherstellung, dass das richtige Konto mit Berechtigungen bearbeiten verwendet wird, wenn Schlingern geöffnet wird.  
+- Öffnen Sie ein Sway zur Bearbeitung in der Sway &ndash; -Anwendung die **ID** und der **Modus** , die auf Bearbeiten festgelegt sind, müssen angegeben werden. Es wird empfohlen, dass Sie **auch\_auth UPN** und **auth\_PVR** hinzufügen, um sicherzustellen, dass das richtige Konto mit Bearbeitungsberechtigungen verwendet wird, wenn Sway geöffnet wird.  
 
 ## <a name="example"></a>Beispiel
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: a2401662-1ddc-40d8-a5a7-ceca24442bd4
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2aa1aca2816b8f0e148d35d1fcec761f621a2239
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ebde06d0d22320ecb5edb633cf8d04aaeec2a841
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351170"
 ---
 # <a name="imapiviewadvisesinkonsubmitted"></a>IMAPIViewAdviseSink::OnSubmitted
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigt dem Formular-Viewer, dass die aktuelle Nachricht an die MAPI-Warteschlange gesendet wurde.
+Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht an den MAPI-Spooler übermittelt wurde.
   
 ```cpp
 HRESULT OnSubmitted( void );
@@ -35,21 +35,21 @@ HRESULT OnSubmitted( void );
 
 Keine
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigung war erfolgreich.
+> Die Benachrichtigung wurde erfolgreich ausgeführt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Form-Objekt ruft die **IMAPIViewAdviseSink::OnSubmitted** -Methode auf, nachdem ein Aufruf von [IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md) erfolgreich zurückgegeben hat. 
+Ein Form-Objekt ruft die **IMAPIViewAdviseSink:: onsubmitted** -Methode nach einem Aufruf von [IMAPIMessageSite:: SubmitMessage](imapimessagesite-submitmessage.md) wurde erfolgreich zurückgegeben. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Nachdem **OnSubmitted** aufgerufen wurde, können Sie auf der Annahme fortfahren, dass die Nachricht wurde aktualisiert. Aktualisieren Sie Ihre Windows, um alle Änderungen, die aufgetreten sind. 
+Nachdem **onsubmitted** aufgerufen wurde, können Sie davon ausgehen, dass die Nachricht aktualisiert wurde. Aktualisieren Sie Ihre Fenster, um alle aufgetretenen Änderungen widerzuspiegeln. 
   
-Weitere Informationen zum Formular Benachrichtigungen finden Sie unter [Senden und Empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 

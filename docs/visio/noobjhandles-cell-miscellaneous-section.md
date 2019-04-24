@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 8e1c8c8f-4ed0-0f53-f93f-3a264edc02bd
 description: Aktiviert bzw. deaktiviert die Anzeige der Auswahlpunkte für das ausgewählte Shape.
-ms.openlocfilehash: 8f812c2087870529cb65aa2e7d705171a5d4ca32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e46f19d77d1743fb7223b5f7d98f80a05d8f6b07
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357239"
 ---
-# <a name="noobjhandles-cell-miscellaneous-section"></a>NoObjHandles Cell (Miscellaneous Section)
+# <a name="noobjhandles-cell-miscellaneous-section"></a>Zelle "NoObjHandles" (Abschnitt "Miscellaneous")
 
 Aktiviert bzw. deaktiviert die Anzeige der Auswahlpunkte für das ausgewählte Shape.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| WAHR  <br/> | Auswahlpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
-| FALSCH  <br/> | Auswahlpunkte werden angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
+| TRUE  <br/> | Auswahlpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
+| FALSE  <br/> | Auswahlpunkte werden angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle NoObjHandles aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle NoObjHandles aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | NoObjHandles  <br/> |
+| Zellenname:  <br/> | Zelle NoObjHandles  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoObjHandles aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle NoObjHandles aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

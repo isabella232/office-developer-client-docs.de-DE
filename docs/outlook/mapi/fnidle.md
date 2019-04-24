@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: f6b31bb4-69dd-43de-b62b-abfa99557641
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cbad4b903592f83fc7d72fde21f149c9835f2e23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 534f4da15bba5f38bec4cde91206694f8691cbc6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342245"
 ---
 # <a name="fnidle"></a>FNIDLE
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine im Leerlauf-Routine, die das im Leerlauf MAPI-Modul in regelmäßigen Abständen nach Priorität aufruft. 
+Definiert eine Leerlauf Routine, die vom MAPI-Leerlauf Modul regelmäßig gemäß der Priorität aufgerufen wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
-|Definierte Funktion von implementiert:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
-|Definierte Funktion aufgerufen:  <br/> |MAPI  <br/> |
-|Zeigertyp des entsprechenden:  <br/> |PFNIDLE  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Definierte Funktion, implementiert von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
+|EntSprechender Zeigertyp:  <br/> |PFNIDLE  <br/> |
    
 ```cpp
 BOOL (STDAPICALLTYPE FNIDLE)(
@@ -42,35 +42,35 @@ BOOL (STDAPICALLTYPE FNIDLE)(
 
  _lpvContext_
   
-> [in] Zeiger auf einen Block von Arbeitsspeicher, dass MAPI an im Leerlauf Routine übergeben es Zeit wird aufgerufen. Dieser Zeiger wird vom [FtgRegisterIdleRoutine](ftgregisteridleroutine.md)an das im Leerlauf MAPI-Modul in der _PvIdleParam_ -Parameter übergeben. Die Daten in den Arbeitsspeicher-Block können für den Anruf an die im Leerlauf Routine, beispielsweise zum Verarbeiten von, welches Objekt oder den aktuellen Status einer langen Operation Kontext bereitzustellen.
+> in Zeiger auf einen Speicherblock, der von MAPI bei jedem Aufruf an die Leerlauf Routine übergeben wird. Dieser Zeiger wird im _pvIdleParam_ -Parameter von [FTGREGISTERIDLEROUTINE](ftgregisteridleroutine.md)an das MAPI-Leerlauf Modul übergeben. Die Daten im Speicherblock können Kontext für den Aufruf der Leerlauf Routine bereitstellen, beispielsweise das zu verwendende Objekt oder den aktuellen Status eines langwierigen Vorgangs.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 FALSE 
   
-> Eine im Leerlauf Routine mit dem Prototyp **FNIDLE** sollte immer FALSE zurück. 
+> Eine Leerlauf Routine mit dem **FNIDLE** -Prototyp sollte immer false zurückgeben. 
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die spezifische Funktionen der der im Leerlauf Routine wird durch die Implementierung bestimmt Clientanwendung oder den Dienstanbieter. 
+Die spezifische Funktionalität der Leerlauf Routine wird von der implementierenden Clientanwendung oder dem Dienstanbieter bestimmt. 
   
-Der Client oder Anbieter muss die Ausführungszeit der einzelnen Zustände einer im Leerlauf Routine einschränken. Jeder Zustand sollte eine Mindest-Verarbeitung ausführen, in den Kontextdaten auf die _LpvContext_zeigt den aktuellen Status aktualisieren und zurück an die MAPI-Modul im Leerlauf. 
+Der Client oder Anbieter muss die Ausführungszeit der einzelnen Zustände einer Leerlauf Routine einschränken. Jeder Status sollte eine minimale Verarbeitung durchführen, den aktuellen Status in den Kontextdaten aktualisieren, auf die von _lpvContext_verwiesen wird, und zum MAPI-Leerlauf Modul zurückkehren. 
   
-Der Client oder Anbieter muss die MAPI-Funktion [MAPIInitIdle](mapiinitidle.md) aufrufen, bevor sie eine eigene im Leerlauf Routine mit einem Aufruf der Funktion [FtgRegisterIdleRoutine](ftgregisteridleroutine.md) registrieren kann. 
+Der Client oder Anbieter muss die MAPI-Funktion [MAPIInitIdle](mapiinitidle.md) aufrufen, bevor er seine eigene Leerlauf Routine mit einem Aufruf der [FtgRegisterIdleRoutine](ftgregisteridleroutine.md) -Funktion registrieren kann. 
   
-Die folgenden Funktionen Umgang mit der MAPI-Modul im Leerlauf und im Leerlauf Routinen basierend auf den FNIDLE Funktionsprototyp: 
+Die folgenden Funktionen befassen sich mit dem MAPI-Leerlauf Modul und mit Leerlauf Routinen, die auf dem FNIDLE-Funktionsprototyp basieren: 
   
-|**Im Leerlauf routinemäßige-Funktion**|**Nutzung**|
+|**Leerlauf Routine Funktion**|**Verwendung**|
 |:-----|:-----|
-|[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Eigenschaften einer registrierten im Leerlauf Routine.  <br/> |
-|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte im Leerlauf Routine aus dem MAPI-System.  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |Aktiviert oder deaktiviert erneut eine registrierte im Leerlauf Routine ohne aus der MAPI-System entfernt.  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Das MAPI-System, mit oder ohne Aktivieren hinzugefügt eine im Leerlauf Routine.  <br/> |
-|[MAPIDeInitIdle](mapideinitidle.md) <br/> |Das im Leerlauf MAPI-Modul für die aufrufende Anwendung geschlossen wird.  <br/> |
-|[MAPIInitIdle](mapiinitidle.md) <br/> |Initialisiert das im Leerlauf MAPI-Modul für die aufrufende Anwendung.  <br/> |
+|[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Eigenschaften einer registrierten Leerlauf Routine.  <br/> |
+|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte Leerlauf Routine aus dem MAPI-System.  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlauf Routine, ohne Sie aus dem MAPI-System zu entfernen.  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt eine Leerlauf Routine zum MAPI-System hinzu, mit oder ohne Sie zu aktivieren.  <br/> |
+|[MAPIDeInitIdle](mapideinitidle.md) <br/> |Fährt das MAPI-Leerlauf Modul für die aufrufende Anwendung herunter.  <br/> |
+|[MAPIInitIdle](mapiinitidle.md) <br/> |Initialisiert das MAPI-Leerlauf Modul für die aufrufende Anwendung.  <br/> |
    
-**ChangeIdleRoutine**, **DeregisterIdleRoutine**und **EnableIdleRoutine** werden als Eingabeparameter das Function-Tag von **FtgRegisterIdleRoutine**zurückgegeben. 
+**ChangeIdleRoutine**, **DeregisterIdleRoutine**und **EnableIdleRoutine** nehmen als Eingabeparameter das von **FtgRegisterIdleRoutine**zurückgegebene funktionstag an. 
   
-Wenn alle Vordergrund Aufgaben für die Plattform Leerlauf, ruft das MAPI-im Leerlauf-Modul die höchste Priorität im Leerlauf Routine, die zur Ausführung bereit ist. Es gibt keine Garantie für den Aufruf Reihenfolge zwischen im Leerlauf Routinen, der die gleiche Priorität. 
+Wenn alle Vordergrund Aufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlauf Modul die Leerlauf Routine mit der höchsten Priorität auf, die zur Ausführung bereit ist. Es gibt keine Garantie für die Anruf Reihenfolge unter Leerlauf Routinen mit derselben Priorität. 
   
 

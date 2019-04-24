@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3d16b8b3-601b-c10b-68a8-ffd47251306f
 description: Legt das standardmäßige Erscheinungsbild für sämtliche Verbinder auf einem Zeichenblatt fest.
-ms.openlocfilehash: 21da283f2d9ab43837b8fe4127840e89ea9d9949
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6daed2e06f7673e5a4ec97ec83dc31bad2766301
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358982"
 ---
-# <a name="linerouteext-cell-page-layout-section"></a>LineRouteExt Cell (Page Layout Section)
+# <a name="linerouteext-cell-page-layout-section"></a>Zelle "LineRouteExt" (Abschnitt "Page Layout")
 
 Legt das standardmäßige Erscheinungsbild für sämtliche Verbinder auf einem Zeichenblatt fest.
   
@@ -24,17 +24,17 @@ Legt das standardmäßige Erscheinungsbild für sämtliche Verbinder auf einem Z
 |:-----|:-----|:-----|
 | 0  <br/> | Standardeinstellung (gerade)  <br/> |**visLORouteExtDefault** <br/> |
 | 1  <br/> | Gerade  <br/> |**visLORouteExtStraight** <br/> |
-| 2  <br/> | Gekrümmt  <br/> |**visLORouteExtNURBS** <br/> |
+| 2  <br/> | Gebogene  <br/> |**visLORouteExtNURBS** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LineRouteExt aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineRouteExt aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LineRouteExt  <br/> |
+| Zellenname:  <br/> | Zelle LineRouteExt  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineRouteExt aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineRouteExt aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

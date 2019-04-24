@@ -1,26 +1,26 @@
 ---
-title: ReflectionBlur Cell (Additional Effect Properties Section)
+title: ReflectionBlur Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ece15159-6a33-4abd-8775-6fbe1cc43793
-description: Bestimmt die Menge des Blur für eine Spiegelung eines Shapes, die in Punkten zwischen 0,0 und 100,0.
-ms.openlocfilehash: d283531cc10b7a18952dcef398acf050c91bafb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Unschärfe für eine Reflexion auf einem Shape in Punkt zwischen 0,0 und 100,0.
+ms.openlocfilehash: 67ed06d764b90afbc47895c4c714fefadbe6f062
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348398"
 ---
-# <a name="reflectionblur-cell-additional-effect-properties-section"></a>ReflectionBlur Cell (Additional Effect Properties Section)
+# <a name="reflectionblur-cell-additional-effect-properties-section"></a>ReflectionBlur Cell (Additional Effect Properties section)
 
-Bestimmt die Menge des Blur für eine Spiegelung eines Shapes, die in Punkten zwischen 0,0 und 100,0.
+Bestimmt die Unschärfe für eine Reflexion auf einem Shape in Punkt zwischen 0,0 und 100,0.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **ReflectionBlur** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **ReflectionBlur** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

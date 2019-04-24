@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 64ef2bbb-585c-4908-8ad4-a1c954057e9b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: eecbbb3b806ecaee6c7ceba5c92bd4b713ad1075
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b2ab5d56c53216152a83ca207ff5ba1d53c9049d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345894"
 ---
 # <a name="mapi-message-classes"></a>MAPI-Nachrichtenklassen
 
@@ -21,23 +21,23 @@ ms.locfileid: "22575140"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Jede Nachricht weist eine Nachricht Class-Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), die den Typ, der Zweck oder der Inhalt der Nachricht identifiziert. **PR_MESSAGE_CLASS** ist eine erforderliche Eigenschaft für alle neuen Nachrichten. Klasse für eine Nachricht bestimmt die Form, die zur Darstellung der Nachricht auf den Benutzer und den Ordner für die Platzierung der eingehender Nachrichten verwendet wird. 
+Jede Nachricht verfügt über eine Nachrichtenklassen Eigenschaft, **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), die den Typ, Zweck oder Inhalt der Nachricht identifiziert. **PR_MESSAGE_CLASS** ist eine erforderliche Eigenschaft für alle neuen Nachrichten. Die Klasse einer Nachricht bestimmt das Formular, das verwendet wird, um die Nachricht dem Benutzer und dem Ordner zum Platzieren eingehender Nachrichten zu übertragen. 
   
-Nachrichtenklassen Groß-/Kleinschreibung beachtet Zeichenfolgen, die ASCII-Zeichen 32 bis 127 enthalten und werden durch einen Punkt getrennt werden, aber sie können nicht mit einem Punkt enden. Jede Zeichenfolge stellt eine Ebene von Unterklassen, und es gibt keine Beschränkung der Anzahl der Ebenen zulässig. 
+Nachrichtenklassen sind Zeichenfolgen mit Berücksichtigung der Groß-/Kleinschreibung, die ASCII-Zeichen 32 bis 127 enthalten und durch Punkte getrennt sind, jedoch nicht mit einem Punkt enden können. Jede Zeichenfolge stellt eine Ebene der Unterklasse dar, und es gibt keine Begrenzung für die Anzahl der zulässigen Ebenen. 
   
-Beispielsweise die meisten Nachrichten, die Clientanwendungen senden und empfangen werden, die in die Nachricht **IPM** Klasse, eine umfassende Kategorie, die alle Nachrichten zwischen Personen beschreibt (d. h., Nachrichten, die von einem Benutzer human, statt programmgesteuert durch gelesen werden soll ein Computer). Nachricht-Anbieter wird eine Nachricht IPM präziser durch Erstellen einer Unterklasse **IPM** beschrieben. Die **IPM** Unterklasse erbt die Eigenschaften der Nachrichtenklasse **IPM** . Unterklassen der Klasse **IPM** heißen durch andere Zeichenfolgen auf den Bezeichner IPM wie **IPM verketten. Hinweis** eine entsprechende Meldung und **IPM beschreiben. Wenden Sie sich an** zum Beschreiben von Kontakt Nachrichten. 
+Die meisten Nachrichten, die von Clientanwendungen gesendet und empfangen werden, fallen beispielsweise in die **IPM** -Nachrichtenklasse, eine allgemeine Kategorie, die alle zwischenmenschlichen Nachrichten beschreibt (also Nachrichten, die von einem Benutzer des Benutzers gelesen werden sollen, statt programmgesteuert durch eine Computer). Nachrichtenspeicher Anbieter beschreiben eine IPM-Nachricht präziser, indem Sie eine **IPM** -Unterklasse erstellen. Die **IPM** -Unterklasse erbt die Eigenschaften der **IPM** -Nachrichtenklasse. Unterklassen der **IPM** -Klasse werden durch die Verkettung anderer Zeichenfolgen mit dem IPM-Bezeichner (beispielsweise **IPM) benannt. Hinweis** zur Beschreibung einer Note-Meldung und **IPM. Kontakt** zur Beschreibung einer Kontakt Nachricht. 
   
-Behandeln Sie die Anzeige und Verwaltung von IPM-Nachrichten können Clients einem Standardformular simulieren, die MAPI bereitstellt. Um die Anzeige und Verwaltung von neuen Nachrichtenklassen zu behandeln, müssen Sie als Cliententwickler Anwendung zwei Optionen:
+Um die Anzeige und Verwaltung von IPM-Nachrichten zu behandeln, können Clients ein Standardformular verwenden, das MAPI bereitstellt. Um die Anzeige und Verwaltung neuer Nachrichtenklassen zu behandeln, haben Sie als Client Anwendungsentwickler zwei Optionen:
   
-1. Sie können ein neues Formular erstellen, indem Sie mit der Gruppe von MAPI-defined Formular Schnittstellen, die ein standard-Client verwenden können.
+1. Sie können ein neues Formular mithilfe der MAPI-definierten Formular Schnittstellen erstellen, die ein Standard Client verwenden kann.
     
-2. Sie können einen eigene Client schreiben, durch die Implementierung einer vollständigen, eigenständige Anwendung. 
+2. Sie können einen eigenen Client schreiben, indem Sie eine vollständige, eigenständige Anwendung implementieren. 
     
-Obwohl Clients die **PR_MESSAGE_CLASS** -Eigenschaft für alle ausgehenden Nachrichten an eine Unterklasse der **IPM** oder **IPK**festgelegt werden sollte, hat der Nachricht Speicheranbieter die ultimative Verantwortung für das Festlegen der Steuerelementvorlage. Aus diesem Grund, wenn ein Client eine Nachricht sendet, ohne dass deren Nachrichtenklasse festgelegt, wird der Nachricht Speicheranbieter auf den entsprechenden Standardwert für den betreffenden Typ des Clients. Die Standardnachrichtenklasse für zwischen Personen Messagingclients ist **IPM**. Die Standardnachrichtenklasse für Clients prozessübergreifenden Kommunikation ist **IPK**. 
+Obwohl Clients die **PR_MESSAGE_CLASS** -Eigenschaft für jede ausgehende Nachricht auf eine Unterklasse von entweder **IPM** oder **IPC**festlegen sollten, hat der Nachrichtenspeicher Anbieter die ultimative Verantwortung für die Festlegung. Wenn also ein Client eine Nachricht sendet, ohne die Nachrichtenklasse festzulegen, wird Sie vom Nachrichtenspeicher Anbieter auf den entsprechenden Standardwert für den entsprechenden Clienttyp festgelegt. Die Standardnachrichtenklasse für zwischenmenschliche Messagingclients ist **IPM**; die Standardnachrichtenklasse für Interprocess-Kommunikations Clients ist **IPC**. 
   
-Nachrichtenklassen haben eine Einschränkung Länge von 255 Zeichen. Jedoch sollten Nachrichtenklassen zur Unterstützung der Nachrichtenklassen in Berichten verwendet 127 Zeichen nicht überschreiten. Report-Nachrichtenklassen basieren auf die Klasse von der ursprünglichen Nachricht, wobei zwei Ergänzungen: ein Präfix und ein Suffix. Das Präfix Bericht gibt an, dass die Nachricht ein Bericht ist, und das Suffix den Typ des Berichts gibt: DR (Übermittlungsbericht), Unzustellbarkeitsbericht (Unzustellbarkeitsbericht), IPNRN (Bericht lesen) oder IPNNRN (nonread Report). Beachten Sie, dass diese längenbeschränkungen in Zeichen angegeben werden. auf Plattformen, die einen Double-Byte-Zeichensatz verwenden, kann die tatsächliche Byteanzahl höher sein. 
+Nachrichtenklassen haben eine Längenbeschränkung von 255 Zeichen. Nachrichtenklassen sollten jedoch 127 Zeichen nicht überschreiten, um die in Berichten verwendeten Nachrichtenklassen zu unterstützen. Berichtsnachrichten Klassen basieren auf der Klasse der ursprünglichen Nachricht mit zwei Ergänzungen: einem Präfix und einem Suffix. Der Präfix Bericht gibt an, dass die Nachricht ein Bericht ist, und das Suffix gibt den Typ des Berichts an: DR (zugestellter Bericht), NDR (Unzustellbarkeitsbericht), IPNRN (Bericht lesen) oder IPNNRN (nonread Report). Beachten Sie, dass diese Längeneinschränkungen in Zeichen angegeben werden. auf Plattformen, die einen Double-Byte-Zeichensatz verwenden, ist die tatsächliche Bytezahl möglicherweise höher. 
   
-Nachricht Anbieter sollte ihre [IMAPIProp::SetProps](imapiprop-setprops.md) -methodenimplementierungen MAPI_E_INVALID_PARAMETER zurückgeben, wenn ein Client versucht, eine Zeichenfolge zuweisen, die den zulässigen Grenzwert für die Nachrichtenklasse überschreitet. 
+Nachrichtenspeicher Anbieter sollten MAPI_E_INVALID_PARAMETER aus Ihren [IMAPIProp::](imapiprop-setprops.md) SetProps-Methodenimplementierungen zurückgeben, wenn ein Client versucht, eine Zeichenfolge zuzuweisen, die den zulässigen Grenzwert für die Nachrichtenklasse überschreitet. 
   
 ## <a name="see-also"></a>Siehe auch
 

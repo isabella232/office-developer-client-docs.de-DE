@@ -1,5 +1,5 @@
 ---
-title: DATE Function (VisioShapeSheet)
+title: DATE-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251412
 localization_priority: Normal
 ms.assetid: 2b6c5375-c543-ff2f-f20a-6d92fd65717a
-description: Gibt das Datum nach Jahr, Monat und Tag dargestellt entsprechend den Regionaleinstellungen des Systems kurzes Datumsformat formatiert. Die Werte für Jahr, Monat und Tag entsprechend der gregorianische Kalender.
-ms.openlocfilehash: 7a19d97f70f9314ecdbd2228078e1e18b1ac9146
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt das durch Jahr, Monat und Tag dargestellte Datum zurück, das gemäß der Formatvorlage für kurzes Datum in den regionalen Einstellungen des Systems formatiert ist. Die Werte für Jahr, Monat und Tag entsprechen dem gregorianischen Kalender.
+ms.openlocfilehash: 0175c1f06ec3dbdf89774759546c65994d38105e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360333"
 ---
-# <a name="date-function-visioshapesheet"></a>DATE Function (VisioShapeSheet)
+# <a name="date-function-visioshapesheet"></a>DATE-Funktion (VisioShapeSheet)
 
-Gibt das Datum, die durch *Year, Month* und *Day* entsprechend den Regionaleinstellungen des Systems kurzes Datumsformat formatiert. Die Werte für *Jahr*, *Monat* und *Tag* entsprechend der gregorianische Kalender. 
+Gibt das durch *Jahr, Monat* und *Tag* dargestellte Datum zurück, das gemäß der Formatvorlage für kurzes Datum in den regionalen Einstellungen des Systems formatiert ist. Die Werte für *Jahr*, *Monat* und *Tag* entsprechen dem gregorianischen Kalender. 
   
 ## <a name="syntax"></a>Syntax
 
-Datum (** *Jahr* **, ** *Monat* **, ** *Tag* **) 
+Datum (* * *Jahr* * *, * * *Monat* * *, * * *Tag* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,7 +34,7 @@ Datum (** *Jahr* **, ** *Monat* **, ** *Tag* **)
    
 ## <a name="example-1"></a>Beispiel 1
 
-DATE(1999,6,7)
+DATUM (1999, 6, 7)
   
 Gibt den Wert zurück, der 07.06.99 darstellt.
   
@@ -46,7 +46,7 @@ Gibt den Wert zurück, der 11.06.99 darstellt.
   
 ## <a name="example-3"></a>Beispiel 3
 
-FORMAT(DATUM(1999,10,14),"C")
+FORMAT (DATUM (1999, 10, 14), "C")
   
 Gibt den Wert zurück, der Dienstag, 14. Oktober 1999 darstellt.
   

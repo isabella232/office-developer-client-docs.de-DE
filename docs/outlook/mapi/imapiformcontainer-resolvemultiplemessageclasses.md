@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: f18c2dd1-366f-48b4-b335-ebbc0651f467
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 002dbf3e898fc0388d535e3087d17ba37d63201e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0730da9c3877985853e2cd0a55420e64fbd98e0c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342182"
 ---
 # <a name="imapiformcontainerresolvemultiplemessageclasses"></a>IMAPIFormContainer::ResolveMultipleMessageClasses
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Gruppe von Nachrichtenklassen in Formularen in einem Formular Container aufgelöst wird, und gibt ein Array von Formular Informationen Objekte für diese Formulare.
+Löst eine Gruppe von Nachrichtenklassen in Ihre Formulare in einem Formular Container auf und gibt ein Array von Formular Informationsobjekten für diese Formulare zurück.
   
 ```cpp
 HRESULT ResolveMultipleMessageClasses(
@@ -39,43 +39,43 @@ HRESULT ResolveMultipleMessageClasses(
 
  _pMsgClassArray_
   
-> [in] Ein Zeiger auf ein Array, das die Namen der Nachrichtenklassen aufzulösende enthält. Nachrichtenklassennamen sind immer noch nie Unicode-ANSI-Zeichenfolgen.
+> in Ein Zeiger auf ein Array, das die Namen der aufzulösenden Nachrichtenklassen enthält. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie die Nachrichtenklassen aufgelöst werden. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklassen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachricht Klasse Zeichenfolgen, die eine genaue Übereinstimmung sollten aufgelöst werden.
+> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
     
  _ppfrminfoarray_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Array von Formular Informationen-Objekten. Wenn eine Clientanwendung NULL im Parameter _pMsgClassArray_ übergibt, enthält der Parameter _Ppfrminfoarray_ Formular Informationen-Objekte für alle Formulare im Container. 
+> Out Ein Zeiger auf einen Zeiger auf ein Array von Formular Informationsobjekten. Wenn eine Clientanwendung im _pMsgClassArray_ -Parameter den Wert NULL übergibt, enthält der _ppfrminfoarray_ -parameterformular Informationsobjekte für alle Formulare im Container. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Clientanwendungen rufen Sie die **IMAPIFormContainer::ResolveMultipleMessageClasses** -Methode, um eine Gruppe von Nachrichtenklassen für Formulare innerhalb eines Containers Formular zu beheben. Das Objektarray Formular Informationen zurückgegeben, die im Parameter _Ppfrminfoarray_ bietet weitere Zugriff auf jede der Forms-Eigenschaften. 
+Client Anwendungen rufen die **IMAPIFormContainer:: ResolveMultipleMessageClasses** -Methode auf, um eine Gruppe von Nachrichtenklassen in Formulare in einem Formular Container aufzulösen. Das im _ppfrminfoarray_ -Parameter zurückgegebene Array von Formular Informationsobjekten bietet weiteren Zugriff auf die einzelnen Eigenschaften der Formulare. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Gruppe von Nachrichtenklassen für Formulare zu beheben, übergeben Sie ein Array von Nachrichtenklassennamen aufgelöst werden. So erzwingen Sie die Auflösung genau sein (d. h., um auf eine Basisklasse der Nachrichtenklasse Lösung zu verhindern), die Kennzeichen MAPIFORM_EXACTMATCH im _UlFlags_ -Parameter übergeben werden können. 
+Um eine Gruppe von Nachrichtenklassen in Formulare aufzulösen, führen Sie ein Array von Nachrichtenklassennamen aus, die aufgelöst werden sollen. Um die Genauigkeit der Auflösung zu erzwingen (das heißt, um eine Lösung für eine Basisklasse der Nachrichtenklasse zu verhindern), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden. 
   
-Wenn eine Nachrichtenklasse in einem Formular aufgelöst werden kann, wird NULL für die Nachrichtenklasse in das Formular Informationen Array zurückgegeben. Aus diesem Grund, auch wenn die Methode S_OK zurückgegeben wird, gehen Sie nicht, dass alle Nachrichtenklassen erfolgreich behoben wurden. Überprüfen Sie stattdessen die Werte in das zurückgegebene Array.
+Wenn eine Nachrichtenklasse nicht in ein Formular aufgelöst werden kann, wird für diese Nachrichtenklasse im Formular Informations Array NULL zurückgegeben. Daher sollten Sie nicht davon ausgehen, dass alle Nachrichtenklassen erfolgreich aufgelöst wurden, selbst wenn die Methode S_OK zurückgibt. Überprüfen Sie stattdessen die Werte im zurückgegebenen Array.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMultipleMessageClasses  <br/> |MFCMAPI (engl.) verwendet die **IMAPIFormContainer::ResolveMultipleMessageClasses** -Methode, um ein Formular zu suchen, die eine Reihe von Nachrichtenklassen zugeordnet ist.  <br/> |
+|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: OnResolveMultipleMessageClasses  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: ResolveMultipleMessageClasses** -Methode, um ein Formular zu suchen, das einer Gruppe von Nachrichtenklassen zugeordnet ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

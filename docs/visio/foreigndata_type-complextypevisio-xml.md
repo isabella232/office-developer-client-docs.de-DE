@@ -1,5 +1,5 @@
 ---
-title: ForeignData_Type ComplexType ("Visio XML")
+title: ForeignData_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 21b394a6-6f95-fc17-482c-4cb648a0d9bb
 ms.openlocfilehash: 6630c8b33dc1c4c7cbb12bb9727d4f0b1e1b19d2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346011"
 ---
-# <a name="foreigndatatype-complextype-visio-xml"></a>ForeignData_Type ComplexType ("Visio XML")
+# <a name="foreigndatatype-complextype-visio-xml"></a>ForeignData_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -73,7 +73,7 @@ ms.locfileid: "25384157"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -85,15 +85,15 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|CompressionLevel  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|CompressionType  <br/> |XSD:Token  <br/> |Optional  <br/> ||Werte des Typs Xsd:token.  <br/> |
-|ExtentX  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|ExtentY  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|ForeignType  <br/> |XSD:Token  <br/> |erforderlich  <br/> ||Werte des Typs Xsd:token.  <br/> |
-|MappingMode  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedShort.  <br/> |
-|ObjectHeight  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|ObjectType  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|ObjectWidth  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs xsd: Double.  <br/> |
-|ShowAsIcon  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |
+|CompressionLevel  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|CompressionType  <br/> |XSD: Token  <br/> |Optional  <br/> ||Werte des XSD: Token-Typs.  <br/> |
+|ExtentX  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|Umfang  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|ForeignType  <br/> |XSD: Token  <br/> |erforderlich  <br/> ||Werte des XSD: Token-Typs.  <br/> |
+|MappingMode  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> ||Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|ObjectHeight  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|ObjectType  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|ObjectWidth  <br/> |XSD: Double  <br/> |Optional  <br/> ||Werte des Typs XSD: Double.  <br/> |
+|ShowAsIcon  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
    
 

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: bfdc1a63-c355-c759-bdfa-ce27e3ad10e7
 description: Mit dem Fenster Format-Explorer können Shape-Entwickler schnell bestimmen, welche Shape-Zellen von einer bestimmten Formatvorlage erben, zudem kann die Formatvorlage ermittelt werden, von der eine bestimmte Zelle ihren Wert erbt.
-ms.openlocfilehash: 25af478b8ac4e35c7ae0b88bf69aad21d679da17
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 55800b692443bae3720b433e5a6178f2709d3675
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345346"
 ---
-# <a name="about-the-style-explorer-window"></a>Informationen zum Formatvorlagen-Explorer-Fenster
+# <a name="about-the-style-explorer-window"></a>Informationen zum Formatexplorerfenster
 
 Mit dem Fenster **Format-Explorer** können Shape-Entwickler schnell bestimmen, welche Shape-Zellen von einer bestimmten Formatvorlage erben, zudem kann die Formatvorlage ermittelt werden, von der eine bestimmte Zelle ihren Wert erbt. 
   
@@ -24,14 +24,14 @@ Formatvorlagen sind benannte Sammlungen von Formatierungsattributen, die auf ein
   
 Im Gegensatz zu Shapes, auf die Sie Formatierungsattribute individuell angewendet haben, stellen Shapes mit Formatierungseinstellungen aus Formatvorlagen nicht nur die Konsistenz sicher. Sie bieten auch beim Erstellen, Verschieben, Skalieren und Drehen eine höhere Benutzerfreundlichkeit. 
   
-Das **Format-Explorer** -Fenster enthält die Informationen, die Sie die Auswirkungen von Änderungen besser zu verstehen, die Sie Shapes vornehmen müssen. 
+Das Fenster **Format-Explorer** enthält die Informationen, die Sie benötigen, um die Auswirkungen von Änderungen an Shapes besser zu verstehen. 
   
 > [!NOTE]
 > Im ShapeSheet-Fenster schwarz formatiert angezeigte Zellenwerte sind geerbte Werte, blau formatierte Werte sind lokale Werte. 
   
 ## <a name="using-the-style-explorer-window"></a>Verwenden des Fensters "Format-Explorer"
 
-Wählen Sie **Format-Explorer**aus, um das **Format-Explorer** -Fenster, in das ShapeSheet-Fenster aktiv ist, klicken Sie auf der Registerkarte **ShapeSheet-Tools – Entwurf** in der Gruppe **Ansicht** anzuzeigen. Das **Format-Explorer** -Fenster angedockt im ShapeSheet-Fenster wird standardmäßig angezeigt, jedoch ist ein verankertes Fenster, das angedockt werden kann, Mauszeiger halten, oder mit anderen verfügbaren verankerten ShapeSheet-Fenster, **beispielsweise das Formelprotokollierungsfenster** zusammengeführt. Das Fenster **Format-Explorer** enthält eine Baumstruktur aller Formatvorlagen, die in der aktuellen Zeichnung definiert. 
+Um das Fenster **Format-Explorer** anzuzeigen und das ShapeSheet-Fenster zu aktivieren, wählen Sie auf der Registerkarte **ShapeSheet-Tools** in der Gruppe **Ansicht** die Option **Format-Explorer**aus. Das Fenster **Format-Explorer** wird standardmäßig im ShapeSheet-Fenster angedockt, es handelt sich jedoch um ein verankertes Fenster, das angedockt, unverankert oder mit anderen verfügbaren verankerten ShapeSheet-Fenstern verbunden werden kann, beispielsweise dem Fenster für die **Formel Ablaufverfolgung** . Das Fenster **Formatexplorer** enthält eine Baumstruktur aller Formatvorlagen, die in der aktuellen Zeichnung definiert sind. 
   
 > [!NOTE]
 > Wenn Sie Informationen über eine Formatvorlage erhalten möchten, klicken Sie mit der rechten Maustaste auf die betreffende Formatvorlage im Fenster **Format-Explorer**, um das dazugehörige ShapeSheet anzuzeigen. 

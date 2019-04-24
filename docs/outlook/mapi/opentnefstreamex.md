@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: eb84c408-2d8b-453b-92f4-5fd8851b84ca
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b651a913855e99e2f26dfd99fb725cc332201932
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 178ab67875d8fb442500dd412dbafe4403deee16
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348573"
 ---
 # <a name="opentnefstreamex"></a>OpenTnefStreamEx
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt einen Transport-Neutral Encapsulation Format (TNEF)-Objekt, das zum Ver- oder Entschlüsseln ein Meldungsobjekt in einen Datenstrom von TNEF für die Verwendung von Transporten oder Gateways und Nachrichtenspeicher verwendet werden kann. Dies ist der Einstiegspunkt für TNEF-Zugriff. 
+Erstellt ein Transport neutrales Encapsulation Format (TNEF)-Objekt, mit dem ein Nachrichtenobjekt für die Verwendung durch Transporte oder Gateways und Nachrichtenspeicher in einen TNEF-Datenstrom codiert oder dekodiert werden kann. Dies ist der Einstiegspunkt für den TNEF-Zugriff. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF.h  <br/> |
+|Headerdatei  <br/> |TNEF. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Transportanbieter  <br/> |
+|Aufgerufen von:  <br/> |Transport Anbieter  <br/> |
    
 ```cpp
 HRESULT OpenTnefStreamEx(
@@ -48,82 +48,82 @@ HRESULT OpenTnefStreamEx(
 
 _lpvSupport_
   
-> [in] Übergibt ein Support-Objekt oder NULL übergibt. Wenn NULL ist, sollte der Parameter _LpAddressBook_ ungleich Null sein. 
+> in Übergibt ein Support-Objekt oder übergibt NULL. Bei NULL sollte der _lpAddressBook_ -Parameter ungleich NULL sein. 
     
 _lpStream_
   
-> [in] Zeiger auf ein Storage Stream-Objekt, wie etwa eine OLE- **IStream** -Schnittstelle, Quelle oder Ziel für eine TNEF-Nachricht Stream bereitstellen. 
+> in Zeiger auf ein Speicher-Stream-Objekt, wie eine OLE **IStream** -Schnittstelle, die eine Quelle oder ein Ziel für eine TNEF-Stream-Nachricht bereitstellt. 
     
 _lpszStreamName_
   
-> [in] Zeiger auf den Namen des Datenstroms, die das TNEF-Objekt verwendet wird. Wenn der Aufrufer das Flag TNEF_ENCODE ( _UlFlags_ -Parameter) in dem Aufruf von **OpenTNEFStream nicht ausgeführt werden**festgelegt, muss den _Wert_ -Parameter einen nicht-Null Zeiger auf eine beliebige Zeichen gültig für eine Datei bestehend ungleich Null-Zeichenfolge angeben. MAPI lässt nicht Zeichenfolgennamen, einschließlich der Zeichen "[", "]", oder ":", auch wenn das Dateisystem ihre Verwendung ermöglicht. Die Größe der für den _Wert_ -Parameter übergebene Zeichenfolge muss den Wert der MAX_PATH, die maximale Länge einer Zeichenfolge, die ein Pfadname enthält, nicht überschreiten. 
+> in Zeiger auf den Namen des Datenstroms, den das TNEF-Objekt verwendet. Wenn der Aufrufer das TNEF_ENCODE-Flag ( _ulFlags_ -Parameter) beim Aufruf von **OpenTnefStream**festgelegt hat, muss der Parameter _lpszName_ einen nicht-NULL-Zeiger auf eine nicht-NULL-Zeichenfolge angeben, die aus allen für die Benennung einer Datei gültigen Zeichen besteht. MAPI erlaubt keine Zeichenfolgennamen, einschließlich der Zeichen "[", "]" oder ":", auch wenn das Dateisystem ihre Verwendung zulässt. Die Größe der für den _lpszName_ -Parameter übergebenen Zeichenfolge darf den Wert von MAX_PATH, die maximale Länge einer Zeichenfolge, die einen Pfadnamen enthält, nicht überschreiten. 
     
 _ulFlags_
   
-> [in] Bitmaske aus Flags verwendet, um den Modus der Funktion anzugeben. Die folgenden Kennzeichen können festgelegt werden:
+> in Bitmaske der Flags, die zum Anzeigen des Modus der Funktion verwendet werden. Die folgenden Flags können festgelegt werden:
     
 TNEF_BEST_DATA 
   
-> Alle mögliche Eigenschaften in ihre kompatible Attribute zugeordnet sind, aber bei ein möglichen Datenverlust aufgrund der Konvertierung einer kompatiblen-Attribut vorhanden ist, wird die Eigenschaft auch in der Encapsulations codiert. Beachten Sie, dass dies die Duplizierung von Informationen in der TNEF-Stream verursacht. TNEF_BEST_DATA ist der Standardwert, wenn keine anderen Modi angegeben werden. 
+> Alle möglichen Eigenschaften werden in ihre untergeordneten Attribute zugeordnet, aber wenn ein möglicher Datenverlust aufgrund der Konvertierung in ein Down-Level-Attribut vorhanden ist, wird die Eigenschaft auch in den Kapselungs codiert. Beachten Sie, dass dadurch die Duplizierung von Informationen im TNEF-Stream verursacht wird. TNEF_BEST_DATA ist der Standardwert, wenn keine anderen Modi angegeben werden. 
     
 TNEF_COMPATIBILITY 
   
-> Stellt die Abwärtskompatibilität mit älteren Clientanwendungen bereit. TNEF-Streams dieses Flag codiert werden alle mögliche Eigenschaften in die entsprechende kompatible Attribut zugeordnet. Dieser Modus wird auch die Standardwerte einiger Eigenschaften, die durch kompatible Clients erforderlich sind. 
+> Bietet Abwärtskompatibilität mit älteren Clientanwendungen. Mit diesem Flag codierte TNEF-Streams ordnen alle möglichen Eigenschaften dem entsprechenden Down-Level-Attribut zu. Dieser Modus bewirkt auch die Standardeinstellung einiger Eigenschaften, die von Clients der untergeordneten Ebene benötigt werden. 
     
   > [!CAUTION]
-  > Dieses Kennzeichen ist veraltet und sollte nicht verwendet werden. 
+  > Dieses Flag ist veraltet und sollte nicht verwendet werden. 
   
 TNEF_DECODE 
   
-> Das TNEF-Objekt im angegebenen Stream wird mit schreibgeschützten Zugriff geöffnet. Der Transportdienst muss dieses Flag festgelegt, wenn die Funktion ist das Objekt für die nachfolgende Decodierung nicht initialisiert werden.
+> Das TNEF-Objekt des angegebenen Streams wird mit schreibgeschütztem Zugriff geöffnet. Der Transportanbieter muss dieses Flag festlegen, wenn die Funktion das Objekt für die spätere Decodierung initialisieren soll.
     
 TNEF_ENCODE 
   
-> Das TNEF-Objekt im angegebenen Stream wird Lese-/Schreibzugriff geöffnet. Der Transportdienst muss dieses Flag festgelegt, wenn die Funktion zum Initialisieren des Objekts für die nachfolgende Codierung ist.
+> Das TNEF-Objekt des angegebenen Streams wird für Lese-/Schreibzugriff geöffnet. Der Transportanbieter muss dieses Flag festlegen, wenn die Funktion das Objekt für die nachfolgende Codierung initialisieren soll.
     
 TNEF_PURE 
   
-> Alle Eigenschaften codiert in die MAPI-Kapselung Blöcke. Aus diesem Grund "reine" TNEF-Datei besteht, höchstens, die Attribute AttMAPIProps, AttAttachment, AttRenddata und AttRecipTable. Dieser Modus ist ideal für die Verwendung, wenn keine Abwärtskompatibilität erforderlich ist.
+> Codiert alle Eigenschaften in die MAPI-Kapselungs Blöcke. Eine reine TNEF-Datei besteht daher höchstens aus den Attributen attMAPIProps, attAttachment, attRenddata und attRecipTable. Dieser Modus eignet sich ideal für den Fall, dass keine Abwärtskompatibilität erforderlich ist.
     
 _lpMessage_
   
-> [in] Zeiger auf ein Objekt "Message" als Ziel für eine entschlüsselte Nachricht mit Anlagen oder eine Quelle für eine codierte Nachricht mit Anlagen. Alle Eigenschaften einer Nachricht Ziel können durch die Eigenschaften einer verschlüsselten Nachricht überschrieben werden soll.
+> in Zeiger auf ein Nachrichtenobjekt als Ziel für eine decodierte Nachricht mit Anlagen oder eine Quelle für eine codierte Nachricht mit Anlagen. Alle Eigenschaften einer Zielnachricht können durch die Eigenschaften einer codierten Nachricht überschrieben werden.
     
 _wKeyVal_
   
-> [in] Ein Search-Schlüssel, den das TNEF-Objekt wird verwendet, um Anlagen, die Text-Tags in den Nachrichtentext eingefügt übereinstimmen. Dieser Wert sollte über Nachrichten relativ eindeutig sein. 
+> in Ein Suchschlüssel, den das TNEF-Objekt verwendet, um Anlagen mit den im Nachrichtentext eingefügten Text Tags zuzuordnen. Dieser Wert sollte für Nachrichten relativ eindeutig sein. 
     
 _lpAddressBook_
   
-> [in] Zeiger auf eine Adresse Adressbuch-Objekt verwendet, um die Informationen für Eintragsbezeichner Adressierung abrufen. 
+> in Zeiger auf ein Adressbuchobjekt, das zum Abrufen von Adressinformationen für Eintrags-IDs verwendet wird. 
     
 _lppTNEF_
   
-> [out] Zeiger auf das neue TNEF-Objekt.
+> Out Zeiger auf das neue TNEF-Objekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **OpenTnefStreamEx** -Funktion ist die empfohlene Ersatz für [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md), den ursprünglichen Einstiegspunkt für TNEF-Zugriff. 
+Die **OpenTnefStreamEx** -Funktion ist die empfohlene Ersetzung für [OpenTnefStream](opentnefstream.md), dem ursprünglichen Einstiegspunkt für den TNEF-Zugriff. 
   
-Ein TNEF-Objekt, das später durch die Funktion **OpenTnefStreamEx** erstellt Ruft die OLE-Methode **IUnknown:: AddRef** Hinzufügen von Verweisen für den Support-Objekt, das Stream-Objekt und Message-Objekts. Der Transportdienst kann die Verweise für alle drei Objekte mit einem einzigen Aufruf der OLE-Methode **IUnknown** für die TNEF-Objekt freigeben. 
+Ein von der **OpenTnefStreamEx** -Funktion erstelltes TNEF-Objekt ruft später die OLE-Methode **IUnknown:: AddRef** auf, um Verweise für das Support-Objekt, das Stream-Objekt und das Message-Objekt hinzuzufügen. Der Transportanbieter kann die Verweise für alle drei Objekte mit einem einzigen Aufruf an die OLE-Methode **IUnknown:: Release** für das TNEF-Objekt freigeben. 
   
-**OpenTnefStreamEx** reserviert und initialisiert ein TNEF-Objekt für den Anbieter in eine MAPI-Nachricht in ein Stream-Nachricht TNEF-Codierung verwendet. Alternativ kann diese Funktion das Objekt für den Anbieter im nachfolgende Aufrufe von [ITnef::ExtractProps](itnef-extractprops.md) zum Decodieren einer TNEF-Stream-Nachricht in einem MAPI-Nachricht verwenden einrichten. Um die TNEF-Objekts frei, und schließen die Sitzung, muss der Adressbuchhierarchie die geerbte **IUnknown** -Methode für das Objekt aufrufen. 
+**OpenTnefStreamEx** reserviert und INITIALISIERT ein TNEF-Objekt für den Anbieter, das beim Codieren einer MAPI-Nachricht in eine TNEF-Stream-Nachricht verwendet werden soll. Alternativ kann diese Funktion das Objekt für den Anbieter einrichten, der in nachfolgenden Aufrufen von [ITnef:: ExtractProps](itnef-extractprops.md) zum Decodieren einer TNEF-Stream-Nachricht in eine MAPI-Nachricht verwendet werden soll. Wenn Sie das TNEF-Objekt freigeben und die Sitzung beenden möchten, muss der Transportanbieter die geerbte **IUnknown:: Release** -Methode für das Objekt aufrufen. 
   
-Der Basiswert für den Parameter _wKeyVal_ darf nicht NULL sein und sollte nicht für jeden Aufruf von **OpenTnefStreamEx**identisch sein. Verwenden Sie stattdessen Zufallszahlen basierend auf der Systemzeit aus der Laufzeitbibliothek Zufallszahlengenerator.
+Der Basiswert für den _wKeyVal_ -Parameter darf nicht NULL sein und sollte nicht für jeden Aufruf von **OpenTnefStreamEx**gleich sein. Verwenden Sie stattdessen Zufallszahlen basierend auf der Systemzeit des Zufallszahlengenerators der Laufzeitbibliothek.
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|File.cpp  <br/> |LoadFromTNEF  <br/> |MFCMAPI (engl.) verwendet die **OpenTnefStreamEx** -Methode, um einen Datenstrom für die TNEF-Datei öffnen, damit Eigenschaften extrahiert werden können.  <br/> |
+|Datei. cpp  <br/> |LoadFromTNEF  <br/> |MFCMAPI verwendet die **OpenTnefStreamEx** -Methode, um einen Stream in der TNEF-Datei zu öffnen, damit Eigenschaften extrahiert werden können.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

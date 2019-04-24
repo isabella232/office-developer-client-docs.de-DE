@@ -1,26 +1,26 @@
 ---
-title: ReflectionTrans Cell (Additional Effect Properties Section)
+title: ReflectionTrans Cell (Additional Effect Properties section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1d155af5-b809-4367-b093-1218a1597656
-description: Bestimmt die Transparenz der Spiegelung, als Prozentwert zwischen 0 und 100 %.
-ms.openlocfilehash: 31f39a19313f1f1622282ea0704694bd612ef55f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Transparenz der Reflexion in Prozent zwischen 0 und 100%.
+ms.openlocfilehash: c8d4d83882a1e8eafcd93506f8f8b386828a89cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346487"
 ---
-# <a name="reflectiontrans-cell-additional-effect-properties-section"></a>ReflectionTrans Cell (Additional Effect Properties Section)
+# <a name="reflectiontrans-cell-additional-effect-properties-section"></a>ReflectionTrans Cell (Additional Effect Properties section)
 
-Bestimmt die Transparenz der Spiegelung, als Prozentwert zwischen 0 und 100 %. 
+Bestimmt die Transparenz der Reflexion in Prozent zwischen 0 und 100%. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **ReflectionTrans** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **ReflectionTrans** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

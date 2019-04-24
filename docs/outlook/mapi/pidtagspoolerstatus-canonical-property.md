@@ -1,5 +1,5 @@
 ---
-title: PidTagSpoolerStatus (kanonische Eigenschaft)
+title: Kanonische Pidtagspoolerstatus (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,50 +11,50 @@ api_name:
 api_type:
 - COM
 ms.assetid: a10d86fc-3a73-49dc-b974-ed852ec715e9
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d04144a4f5ef714b59b608bfe19367bcb3c1ced8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 426d26cae147faf3f843ac547de9d205d766ac44
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348209"
 ---
-# <a name="pidtagspoolerstatus-canonical-property"></a>PidTagSpoolerStatus (kanonische Eigenschaft)
+# <a name="pidtagspoolerstatus-canonical-property"></a>Kanonische Pidtagspoolerstatus (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Status der Nachricht basierend auf Informationen, die für die MAPI-Warteschlange verfügbar ist.
+Enthält den Status der Nachricht basierend auf Informationen, die dem MAPI-Spooler zur Verfügung stehen.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_SPOOLER_STATUS  <br/> |
 |Kennung:  <br/> |0x0E10  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
+|Bereich:  <br/> |Nicht transmitable MAPI  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird auf Message Objekte MAPI berechnet.
+Diese Eigenschaft wird von MAPI für Nachrichtenobjekte berechnet.
   
-Diese Eigenschaft wird auf eingehende Nachrichten nur angezeigt und ist in allen anderen Fällen reserviert. Es gibt an, unabhängig davon, ob eine Nachricht an seinem endgültigen Speicherort übermittelt wurde, oder gibt an, ob ein messaging Hook Anbieter potenziell die Nachricht beim gelöscht erneutes es.
+Diese Eigenschaft wird nur für eingehende Nachrichten angezeigt und ist in allen anderen Fällen reserviert. Er gibt an, ob eine Nachricht an ihren endgültigen Standort übermittelt wurde oder ob ein nachrichtenverbindungs Anbieter die Nachricht möglicherweise beim erneuten Routing gelöscht hat.
   
-Clientanwendungen sollten diese Eigenschaft festlegen. Für eine eingehende Nachricht kann ein Client oder Dienstanbieter [IMAPIProp::GetProps](imapiprop-getprops.md) für diese Eigenschaft zum Bestimmen des Nachrichtenstatus aufrufen. Der Wert S_OK gibt an, dass die Nachricht erfolgreich an den Nachrichtenspeicher übermittelt wurde. Der Wert MAPI_E_OBJECT_DELETED gibt an, dass die Nachricht gelöscht wurde und an den Store nie zugesichert wurde. 
+Client Anwendungen sollten diese Eigenschaft nie festlegen. Für eine eingehende Nachricht kann ein Client oder Dienstanbieter [IMAPIProp::](imapiprop-getprops.md) GetProps für diese Eigenschaft aufrufen, um den Nachrichtenstatus zu bestimmen. Der Wert S_OK gibt an, dass die Nachricht erfolgreich an den Nachrichtenspeicher übermittelt wurde. Der Wert MAPI_E_OBJECT_DELETED gibt an, dass die Nachricht gelöscht wurde und nie an den Speicher übergeben wurde. 
   
-Nachricht Anbieter sollte diese Eigenschaft auf Nachrichten, Empfänger Tabellen und der ausgehende Warteschlangentabelle unterstützen. Clients und Anbieter sollte können Spalten in der ausgehenden Warteschlangentabelle festgelegt und einschränken können basierend auf dieser Eigenschaft.
+Nachrichtenspeicher Anbieter sollten diese Eigenschaft für Nachrichten, Empfänger Tabellen und die Tabelle für ausgehende Warteschlangen unterstützen. Clients und Anbieter sollten in der Lage sein, Spalten der ausgehenden Warteschlangentabelle festzulegen und basierend auf dieser Eigenschaft einzuschränken.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,5 +66,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

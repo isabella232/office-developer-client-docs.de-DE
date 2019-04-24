@@ -9,20 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3afee07b-e91a-a91c-fba2-0e3251dd6385
 description: Legt fest, ob Objekte in Diagrammen platzierbar oder umleitbar sind, wenn Shapes mithilfe des Dialogfelds Layout konfigurieren ausgerichtet werden.
-ms.openlocfilehash: 23887e1d265e9e5ac1dfa9750bab65e8428b1c76
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7a607fdb53ad569e84976b6f9911fbd89f7f2628
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361012"
 ---
-# <a name="objtype-cell-miscellaneous-section"></a>ObjType Cell (Miscellaneous Section)
+# <a name="objtype-cell-miscellaneous-section"></a>Zelle "ObjType" (Abschnitt "Miscellaneous")
 
 Legt fest, ob Objekte in Diagrammen platzierbar oder umleitbar sind, wenn Shapes mithilfe des Dialogfelds **Layout konfigurieren** ausgerichtet werden. 
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|&amp;H0  <br/> |Standardeinstellung. Die Anwendung entscheidet diesen Punkt abhängig vom Zeichnungskontext.  <br/> |**visLOFlagsVisDecides** <br/> |
+|&amp;H0  <br/> |Standardwert. Die Anwendung entscheidet diesen Punkt abhängig vom Zeichnungskontext.  <br/> |**visLOFlagsVisDecides** <br/> |
 |&amp;H1  <br/> |Shape ist platzierbar.  <br/> |**visLOFlagsPlacable** <br/> |
 |&amp;H2  <br/> |Shape ist umleitbar. Es muss sich jedoch um ein eindimensionales Shape (1D-Shape) handeln.  <br/> |**visLOFlagsRoutable** <br/> |
 |&amp;H4  <br/> |Shape ist weder platzierbar noch umleitbar.  <br/> |**visLOFlagsDont** <br/> |
@@ -30,17 +30,17 @@ Legt fest, ob Objekte in Diagrammen platzierbar oder umleitbar sind, wenn Shapes
    
 ## <a name="remarks"></a>Bemerkungen
 
-Standardmäßig ist die Zelle ObjType für ein Shape auf Keine Formel (also gleich 0) gesetzt, was bedeutet, dass die Anwendung bestimmt, ob das Shape in Abhängigkeit von seinem Kontext platziert werden kann. Wenn Sie beispielsweise ein einfaches Rechteck zeichnen, lautet der Wert in der Zelle ObjType 0 (Null). Wenn Sie daraufhin das Tool Automatischer Verbinder verwenden, um das Rechteck mit einem anderen Shape zu verbinden, setzt Visio den Wert der Zelle ObjType für dieses Rechteck auf 1 (platzierbar). 
+Standardmäßig ist die Zelle ObjType-Zelle auf keine Formel für eine Form festgelegt, die auf 0 ausgewertet wird, was bedeutet, dass die Anwendung bestimmt, ob das Shape abhängig vom Kontext platziert werden kann. Wenn Sie beispielsweise ein einfaches Rechteck zeichnen, ist der Wert der Zelle ObjType-Zelle 0. Wenn Sie das Rechteck mit **** einem anderen Shape verbinden, setzt Visio den Wert der Zelle Zelle ObjType des Rechtecks auf 1 (placeable) zurück. 
   
-Der Wert der Zelle ObjType kann eine Kombination von Werten sein. Wenn das nicht platzierbare Bit festgelegt ist (&amp;H4), jedoch, er hat Vorrang vor anderen Werten mit Ausnahme der Gruppenwert (&amp;H8).
+Der Wert der Zelle ObjType kann eine Kombination aus mehreren verschiedenen Werten sein. Wenn das nicht platzierte Bit (&amp;H4) festgelegt ist, hat es Vorrang vor anderen Werten mit Ausnahme des Group-Werts (&amp;H8).
   
-Wenn Sie einen Verweis auf die Zelle ObjType aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ObjType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |ObjType  <br/> |
+|Zellenname:  <br/> |Zelle ObjType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ObjType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ObjType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

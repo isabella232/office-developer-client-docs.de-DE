@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: ddd42180-6e4f-410c-9f78-d868a91452dc
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c9197201388530bd7755eb1987ecc863220e3847
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: afac8c352ad0a07fcb1cd98683b6a5c87940ab4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357526"
 ---
 # <a name="sbitmaskrestriction"></a>SBitMaskRestriction
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Einschränkung Bitmaske, die eine bitweise **AND** -Operation ausführen und testen das Ergebnis verwendet wird. 
+Beschreibt eine Bitmasken Einschränkung, die zum Durchführen einer bitweisen **and-** Operation und zum Testen des Ergebnisses verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SBitMaskRestriction
@@ -45,29 +45,29 @@ typedef struct _SBitMaskRestriction
 
  **relBMR**
   
-> Relationale Operator, der beschreibt, wie die Maske angegeben im **UlMask** -Member auf das Eigenschafts-Tag angewendet werden soll. Mögliche Werte sind wie folgt: 
+> Relationaler Operator, der beschreibt, wie die im **ulMask** -Element angegebene Maske auf das Property-Tag angewendet werden soll. Folgende Werte sind möglich: 
     
 BMR_EQZ 
   
-> Führen Sie eine bitweise **AND** -Operation der Maske im **UlMask** -Member, mit der-Eigenschaft, die durch die **UlPropTag** Member und Test für gleich 0 (null). 
+> Führen Sie eine bitweise **and** -Operation der Maske im **ulMask** -Element mit der vom **ulPropTag** -Element dargestellten Eigenschaft aus, und testen Sie, dass Sie gleich NULL ist. 
     
 BMR_NEZ 
   
-> Führen Sie eine bitweise **AND** -Operation der Maske im **UlMask** -Member, mit der-Eigenschaft, die durch die **UlPropTag** Member und Test für wird nicht gleich 0 (null). 
+> Führen Sie eine bitweise **and** -Operation der Maske im **ulMask** -Element mit der vom **ulPropTag** -Element dargestellten Eigenschaft aus, und testen Sie, ob Sie ungleich NULL ist. 
     
  **ulPropTag**
   
-> Eigenschaftentag der-Eigenschaft auf der die Bitmaske angewendet wird.
+> Property-Tag der Eigenschaft, auf die die Bitmaske angewendet wird.
     
  **ulMask**
   
-> Bitmaske für die Eigenschaft identifizierten **UlPropTag**gelten.
+> Bitmaske, die auf die durch **ulPropTag**angegebene Eigenschaft angewendet werden soll.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **SBitMaskRestriction** führt eine bitweise **AND** -Operation verwenden die Bitmaske beschrieben in das **UlMask** -Element, und der Wert der Eigenschaft vom **UlPropTag** Member beschrieben. Wenn das Ergebnis gleich NULL ist, wird die BMR_EQZ erfüllt. Wenn es ungleich NULL ist, d. h., ist mindestens eines der gleichen Bits als **UlMask**, verfügt der Eigenschaftswert dann BMR_NEZ erfüllt.
+Die **SBitMaskRestriction** -Struktur führt eine bitweise **and** -Operation mit der im **ulMask** -Element beschriebenen Bitmaske und dem Wert der vom **ulPropTag** -Element beschriebenen Eigenschaft aus. Wenn das Ergebnis NULL ist, ist BMR_EQZ zufrieden. Wenn es ungleich NULL ist, das heißt, wenn der Eigenschaftswert mindestens eines der Bits hat, die als **ulMask**festgelegt sind, dann BMR_NEZ.
   
-Weitere Informationen zu den **SBitMaskRestriction** Struktur und Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Weitere Informationen zur **SBitMaskRestriction** -Struktur und zu Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e3ed6b2-8eaf-44ab-bc6a-d3faabe84a93
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 366208b8288aeb61bf1bb78f2c9f10b400a3dc26
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 4020a9161a51994ebe5b7e339d26f7612ad47361
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346417"
 ---
 # <a name="hrszfromentryid"></a>HrSzFromEntryID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Eintrags-ID codiert in eine ASCII-Zeichenfolge. 
+Codiert eine Eintrags-ID in eine ASCII-Zeichenfolge. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HrSzFromEntryID(
@@ -45,26 +45,26 @@ HrSzFromEntryID(
 
  _cb_
   
-> [in] Größe des Eintrags-ID, die auf das durch den Parameter _Pentry_ in Bytes. 
+> in Größe (in Bytes) der Eintrags-ID, auf die durch __ den Penty-Parameter verwiesen wird. 
     
- _pentry_
+ _Pentry_
   
-> [in] Zeiger auf eine [ENTRYID](entryid.md) -Struktur, die Eintrags-ID zu codierenden enthält. 
+> in Zeiger auf eine [Eintrags](entryid.md) -ID-Struktur, die den zu codierenden Eintragsbezeichner enthält. 
     
- _psz_
+ _PSZ_
   
-> [out] Zeiger auf die zurückgegebene ASCII-Zeichenfolge.
+> Out Zeiger auf die zurückgegebene ASCII-Zeichenfolge.
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktionen [HrEntryIDFromSz](hrentryidfromsz.md) und **HrSzFromEntryID** bieten eine Konvertierung zwischen der Zeichenfolge und der binären Formate der Eintragsbezeichner. Mit MAPI sollten Sie die Strukturen mit Binärdaten verwenden. 
+Die [HrEntryIDFromSz](hrentryidfromsz.md) -und **HrSzFromEntryID** -Funktionen ermöglichen die Konvertierung zwischen den Zeichenfolgen-und Binärformaten der Eintrags-IDs. Mit MAPI sollten Sie Strukturen mit Binärdaten verwenden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **HrSzFromEntryID** -Funktion weist Speicher für die Verwendung der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) ASCII-Zeichenfolge. 
+Die **HrSzFromEntryID** -Funktion reserviert Speicher für die ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion. 
   
 

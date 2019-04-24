@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 8d4f5e14-4f17-05a6-4092-5a102c9dc85f
 description: Gibt an, ob das Shape horizontal gekippt wurde.
-ms.openlocfilehash: fc014ff6c5a3650361d6afd478a5858f84fb5c47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b7a4a15e5a7759eddcda3ec391a81f14df545691
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346186"
 ---
-# <a name="flipx-cell-shape-transform-section"></a>FlipX Cell (Shape Transform Section)
+# <a name="flipx-cell-shape-transform-section"></a>Zelle "FlipX" (Abschnitt "Shape Transform")
 
 Gibt an, ob das Shape horizontal gekippt wurde.
   
@@ -25,15 +25,15 @@ Gibt an, ob das Shape horizontal gekippt wurde.
 | TRUE  <br/> | Das Shape wurde horizontal gekippt.  <br/> |
 | FALSE  <br/> | Das Shape wurde nicht horizontal gekippt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle FlipX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle FlipX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | FlipX  <br/> |
+| Zellenname:  <br/> | Zelle FlipX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle FlipX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle FlipX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

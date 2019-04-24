@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7c3e5a71-7b78-4328-b8ee-265cc4da4be5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: eeeff110e5de592d491865079adfa187e5dfa194
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f22d30c1bc7c797834f58bcd1306b14ac2542c6d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345136"
 ---
 # <a name="szfindlastch"></a>SzFindLastCh
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht das letzte Vorkommen eines Zeichens in eine mit Null endende Zeichenfolge. 
+Sucht nach dem letzten Vorkommen eines Zeichens in einer null-terminierten Zeichenfolge. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPSTR SzFindLastCh(
@@ -44,18 +44,18 @@ LPSTR SzFindLastCh(
 
  _lpsz_
   
-> [in] Zeiger auf die Null endende Zeichenfolge, die durchsucht werden soll. 
+> in Zeiger auf die zu durchsuchende NULL-terminierte Zeichenfolge. 
     
- _Kapitel_
+ _ch_
   
-> [in] Das Zeichen an, nach dem gesucht wird.
+> in Das Zeichen, nach dem gesucht werden soll.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
- **SzFindLastCh** gibt einen Zeiger auf das letzte Vorkommen des Zeichens in der Zeichenfolge. Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt oder wenn der Parameter _Lpsz_ NULL ist, wird der Wert NULL zurückgegeben. 
+ **SzFindLastCh** gibt einen Zeiger auf das letzte Vorkommen des Zeichens in der Zeichenfolge zurück. Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt oder wenn der _lpsz_ -Parameter NULL ist, wird der Wert NULL zurückgegeben. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **SzFindLastCh** sucht nach einer genauen Übereinstimmung nur; Es ist Beachtung von Groß-/Kleinschreibung und diakritische Unterschiede. Sucht in den Formaten Unicode und DBCS werden unterstützt. 
+Die **SzFindLastCh** -Funktion sucht nur nach einer genauen Übereinstimmung. Sie ist anfällig für Groß-/Kleinschreibung und diakritische Unterschiede. Die Suche im Unicode-und im DBCS-Format wird unterstützt. 
   
 

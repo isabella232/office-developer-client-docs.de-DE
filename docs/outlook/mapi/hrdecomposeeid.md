@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4847838a-2ad8-4927-8f78-7fa5c8eb54eb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7cae156e29503c8b50755c99023805aa6d14e704
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d3ef8b61b6042d9c3e715168d9131a74facef000
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348069"
 ---
 # <a name="hrdecomposeeid"></a>HrDecomposeEID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Trennt die zusammengesetzter Eintrags-ID eines Objekts in der Regel eine Meldung in einem Nachrichtenspeicher in die Eintrags-ID dieses Objekts im Speicher und den Store-Eintrags-ID an.
+Trennt die verknüpfte Eintrags-ID eines Objekts, in der Regel eine Nachricht in einem Nachrichtenspeicher, in der Eintrags-ID des Objekts im Speicher und der Eintrags-ID des Speichers.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HrDecomposeEID(
@@ -49,42 +49,42 @@ HrDecomposeEID(
 
  _psession_
   
-> [in] Zeiger auf die Sitzung von der Clientanwendung verwendet. 
+> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
     
  _cbEID_
   
-> [in] Größe in Bytes des Bezeichners zusammengesetzter Eintrag getrennt werden. 
+> in Die Größe des verknüpften Eintrags Bezeichners in Byte, der getrennt werden soll. 
     
  _pEID_
   
-> [in] Zeiger auf den Eintrag zusammengesetzter Bezeichner getrennt werden. 
+> in Zeiger auf die verknüpfte Eintrags-ID, die getrennt werden soll. 
     
  _pcbStoreEID_
   
-> [out] Zeiger auf die zurückgegebene Größe in Bytes für die Eintrags-ID des Nachrichtenspeichers, die das Objekt enthält. Wenn der Parameter _pEID_ auf eine noncompound Eintrags-ID verweist, verweist der Parameter _PcbStoreEID_ auf den Wert 0 (null). 
+> Out Zeiger auf die zurückgegebene Größe in Bytes des Eintrags Bezeichners des Nachrichtenspeichers, der das Objekt enthält. Wenn der _pEID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID zeigt, zeigt der _pcbStoreEID_ -Parameter auf den Wert 0 (null). 
     
  _ppStoreEID_
   
-> [out] Zeiger auf einen Zeiger auf das zurückgegebene Eintrags-ID des Nachrichtenspeichers, die das Objekt enthält. Wenn der Parameter _pEID_ auf eine noncompound Eintrags-ID verweist, wird im Parameter _PpStoreEID_ NULL zurückgegeben. 
+> Out Zeiger auf einen Zeiger auf den zurückgegebenen Eintragsbezeichner des Nachrichtenspeichers, der das Objekt enthält. Wenn der _pEID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID verweist, wird NULL im _ppStoreEID_ -Parameter zurückgegeben. 
     
  _pcbMsgEID_
   
-> [out] Zeiger auf die zurückgegebene Größe, der die Eintrags-ID des Objekts in Bytes. Wenn der Parameter _pEID_ auf einen Bezeichner noncompound Eintrag zeigt, ist der Parameter _PcbMsgEID_ gleich dem Wert des Parameters _CbEID_ . 
+> Out Zeiger auf die zurückgegebene Größe in Bytes des Eintrags Bezeichners des Objekts. Wenn der _pEID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID zeigt, ist der _pcbMsgEID_ -Parameter gleich dem Wert des _cbEID_ -Parameters. 
     
  _ppMsgEID_
   
-> [out] Zeiger auf einen Zeiger auf das zurückgegebene Eintrags-ID des Objekts. Wenn der Parameter _pEID_ auf eine noncompound Eintrags-ID verweist, verweist _PpMsgEID_ auf einen Zeiger auf eine Kopie des Bezeichners noncompound Eintrag. 
+> Out Zeiger auf einen Zeiger auf den zurückgegebenen Eintragsbezeichner des Objekts. Wenn der _pEID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID zeigt, verweist _ppMsgEID_ auf einen Zeiger auf eine Kopie des nicht zusammengesetzten Eintrags Bezeichners. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn vom _pEID_ -Parameter angegebene Bezeichner zusammengesetzter ist, wird es in die Eintrags-ID des Objekts in seiner Nachrichtenspeicher und den Store-Eintrags-ID unterteilt. Noncompound Eintrags-ID-Zeichenfolgen werden einfach kopiert. Der zusammengesetzte Bezeichner, der getrennt werden ist in der Regel durch die Funktion [HrComposeEID](hrcomposeeid.md) erstellt. 
+Wenn der vom _pEID_ -Parameter angegebene Bezeichner Compound ist, wird er in den Eintragsbezeichner des Objekts innerhalb des Nachrichtenspeichers und die Eintrags-ID des Speichers aufgeteilt. Nicht zusammengesetzte Eintrags-ID-Zeichenfolgen werden einfach kopiert. Der zusammengesetzte Bezeichner, der getrennt werden soll, wird in der Regel durch die [HrComposeEID](hrcomposeeid.md) -Funktion erstellt. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Nach dem erfolgreichen Abschluss dieser Funktion wird der Speicher, der den Parameter _pEID enthält,_ freigegeben. Die aufrufende Implementierung ist verantwortlich für die Freigabe von Speicher für die Ausgabeparameter. 
+Der Speicher, der den _pEID_ -Parameter enthält, wird nach erfolgreichem Abschluss dieser Funktion freigegeben. Die aufrufende Implementierung ist für die Freigabe des Arbeitsspeichers für die Ausgabeparameter verantwortlich. 
   
 

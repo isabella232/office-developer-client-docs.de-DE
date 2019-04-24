@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8c980257-9372-4478-b635-bd91d0a66af9
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ffc47e924b7a0f94db66adbffe01b2cdc619dc8c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 465b685038bc3d906e468c7d7b06e9c20e1fd3c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348195"
 ---
 # <a name="hraddcolumns"></a>HrAddColumns
 
@@ -21,13 +21,13 @@ ms.locfileid: "22580733"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt oder Spalten an den Anfang einer vorhandenen Tabelle verschoben.
+Fügt oder verschiebt Spalten an den Anfang einer vorhandenen Tabelle.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |mapiutil.h  <br/> |
+|Headerdatei  <br/> |mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter.  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter.  <br/> |
    
 ```cpp
 HRESULT HrAddColumns(
@@ -42,29 +42,29 @@ HRESULT HrAddColumns(
 
  _lptbl_
   
-> [in] Zeiger auf die MAPI-Tabelle betroffen.
+> in Zeiger auf die betroffene MAPI-Tabelle.
     
  _lpproptagColumnsNew_
   
-> [in] Zeiger auf eine **SPropTagArray** -Struktur, die enthält ein Array von Eigenschaftentags für die Eigenschaften hinzugefügt oder an den Anfang der Tabelle verschoben werden. 
+> in Zeiger auf eine **SPropTagArray** -Struktur, die ein Array von Property-Tags für die Eigenschaften enthält, die hinzugefügt oder an den Anfang der Tabelle verschoben werden sollen. 
     
  _lpAllocateBuffer_
   
-> [in] Zeiger auf die **MAPIAllocateBuffer** -Funktion. Zuweisen von Arbeitsspeicher verwendet. 
+> in Zeiger auf die **MAPIAllocateBuffer** -Funktion. Wird zum Reservieren von Arbeitsspeicher verwendet. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die **MAPIFreeBuffer** -Funktion. Verwendet, um Arbeitsspeicher freizugeben. 
+> in Zeiger auf die **mapifreebufferfreigegeben** -Funktion. Wird verwendet, um Arbeitsspeicher freizugeben. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
  **S_OK**
   
-> Der Aufruf war erfolgreich, und die angegebenen Spalten verschoben oder hinzugefügt wurden.
+> Der Aufruf war erfolgreich, und die angegebenen Spalten wurden verschoben oder hinzugefügt.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **HrAddColumns** ist entspricht der Verwendung von **HrAddColumnsEx** mit _LpfnFilterColumns_ auf NULL festgelegt wurde. 
+Die **HrAddColumns** -Funktion entspricht der Verwendung von **HrAddColumnsEx** mit _lpfnFilterColumns_ auf NULL festgelegt. 
   
 ## <a name="see-also"></a>Siehe auch
 

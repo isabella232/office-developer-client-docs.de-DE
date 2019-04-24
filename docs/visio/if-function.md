@@ -8,33 +8,33 @@ f1_keywords:
 - Vis_DSS.chm82251442
 localization_priority: Normal
 ms.assetid: 66771ad3-0fb3-68ff-81da-d1162d37c05a
-description: Gibt WertWennWahr zurück, wenn Logicalexpression wahr ist. Andernfalls ihn Funktion Valueiffalse zurück.
-ms.openlocfilehash: 55938e8bd78c02badb98f90665c5c26cdd70f3b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt Wahrheitsprüfung ungleich zurück, wenn logicive auf TRUE festgelegt ist. Andernfalls wird den sonst zurückgegeben.
+ms.openlocfilehash: 8780bd3dd5ded1a950a5bf3f79333687f3b6843c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344765"
 ---
 # <a name="if-function"></a>IF Function
 
-Gibt _WertWennWahr_ zurück, wenn _Logicalexpression_ wahr ist. Andernfalls ihn _Funktion Valueiffalse zurück_.
+Gibt _Wahrheitsprüfung ungleich_ zurück __ , wenn logicive auf true festgelegt ist. Andernfalls wird _den sonst_zurückgegeben.
   
 ## <a name="syntax"></a>Syntax
 
-IF (** *Logicalexpression* **, ** *WertWennWahr* **, ** *Funktion Valueiffalse zurück* **) 
+IF (* * *logischer* * *, * * *Wahrheitsprüfung ungleich* * *, * * *den sonst* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _logicalexpression_ <br/> |Erforderlich  <br/> |**String** <br/> |Der auszuwertende Ausdruck.  <br/> |
-| _WertWennWahr_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Der zurückzugebende Wert, wenn _Logicalexpression_ wahr ist.  <br/> |
-| _Funktion Valueiffalse zurück_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Der zurückzugebende Wert, wenn _Logicalexpression_ falsch ist.  <br/> |
+| _Logik_ <br/> |Erforderlich  <br/> |**String** <br/> |Der auszuwertende Ausdruck.  <br/> |
+| _Wahrheitsprüfung ungleich_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Wert, der zurückgegeben werden soll, wenn die _Logik_ true ist.  <br/> |
+| _den sonst_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Wert, der zurück __ gegeben werden soll, wenn logisches false ist.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Varies
+Variiert
   
 ## <a name="example"></a>Beispiel
 

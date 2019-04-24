@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: fe181b9a-5903-4cc0-bcd5-2061b440b5b1
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 331dc05b30390bb803d186f157e0fe9edb779ab0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f9d38c90fa5795d34f78c61ce0faa5f76d8f740d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344548"
 ---
 # <a name="ssortorder"></a>SSortOrder
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert, wie die Zeilen einer Tabelle, nach welcher Spalte die Sortierschlüssel und die Richtung der Sortierung als verwendet zu sortieren. 
+Definiert, wie die Zeilen einer Tabelle, die Spalte, die als Sortierschlüssel verwendet werden soll, und die Richtung der Sortierung sortiert werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SSortOrder
@@ -42,27 +42,27 @@ typedef struct _SSortOrder
 
 **ulPropTag**
   
-> Eigenschafts-Tag, die die Sortierung wichtige oder für eine kategorisierte Sortierung die Kategorie-Spalte identifiziert.
+> Eigenschaftentag, der den Sortierschlüssel oder für eine kategorisierte Sortierung die Spalte Category identifiziert.
     
 **ulOrder**
   
-> Die Reihenfolge, in der die Daten sortiert werden sollen. Mögliche Werte sind wie folgt:
+> Die Reihenfolge, in der die Daten sortiert werden sollen. Folgende Werte sind möglich:
     
-  - TABLE_SORT_ASCEND: Die Tabelle sollte in aufsteigender Reihenfolge sortiert werden.
+  - TABLE_SORT_ASCEND: die Tabelle sollte in aufsteigender Reihenfolge sortiert werden.
       
-  - TABLE_SORT_COMBINE: Der Sortiervorgang sollte eine Kategorie erstellen, die die Eigenschaft als die Sortierung Schlüsselspalte im **UlPropTag** -Member mit die Sortierung Schlüsselspalte angegeben, in der vorherigen **SSortOrder** Struktur identifiziert kombiniert. 
+  - TABLE_SORT_COMBINE: der Sortiervorgang sollte eine Kategorie erstellen, die die Eigenschaft, die als Sortierschlüsselspalte im **ulPropTag** -Element identifiziert wurde, mit der in der vorherigen **SSortOrder** -Struktur angegebenen Sortierschlüsselspalte kombiniert. 
       
-    TABLE_SORT_COMBINE kann nur verwendet werden, wenn die Struktur **SSortOrder** an mehrere Sortierreihenfolgen für eine kategorisierte Sortierung als Einstiegspunkt in einer [SSortOrderSet](ssortorderset.md) Struktur verwendet wird. TABLE_SORT_COMBINE kann nicht in der ersten **SSortOrder** Struktur in einer **SSortOrderSet** Struktur verwendet werden. 
+    TABLE_SORT_COMBINE kann nur verwendet werden, wenn die **SSortOrder** -Struktur als Eintrag in einer [SSortOrderSet](ssortorderset.md) -Struktur verwendet wird, um mehrere Sortierreihenfolgen für eine kategorisierte Sortierung anzugeben. TABLE_SORT_COMBINE kann nicht in der ersten **SSortOrder** -Struktur in einer **SSortOrderSet** -Struktur verwendet werden. 
       
-  - TABLE_SORT_DESCEND: Die Tabelle sollte in absteigender Reihenfolge sortiert werden.
+  - TABLE_SORT_DESCEND: die Tabelle sollte in absteigender Reihenfolge sortiert werden.
       
-  - TABLE_SORT_CATEG_MAX: Die Tabelle sollten auf den maximalen Wert des Elements **UlPropTag** für Datenzeilen in den durch die vorherigen Sortierreihenfolge in der Struktur **SSortOrderSet** angegebenen Kategorien sortiert werden. 
+  - TABLE_SORT_CATEG_MAX: die Tabelle sollte nach dem Maximalwert des **ulPropTag** -Elements für die Datenzeilen in den Kategorien sortiert werden, die in der vorherigen Sortierreihenfolge in der **SSortOrderSet** -Struktur angegeben sind. 
       
-  - TABLE_SORT_CATEG_MIN: Die Tabelle sollten auf den minimalen Wert des Elements **UlPropTag** für Datenzeilen in den durch die vorherigen Sortierreihenfolge in der Struktur der in **SSortOrderSet** angegebenen Kategorien sortiert werden. 
+  - TABLE_SORT_CATEG_MIN: die Tabelle sollte nach dem Minimalwert des **ulPropTag** -Elements für die Datenzeilen in den Kategorien sortiert werden, die in der vorherigen Sortierreihenfolge in der in **SSortOrderSet** -Struktur angegeben sind. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine **SSortOrder** -Struktur wird verwendet, um wird beschrieben, wie Sie einen standard Sortiervorgang oder ein kategorisierten Sortiervorgang durchführen. **SSortOrder** Strukturen werden in eine **SSortOrderSet** -Struktur, die mehrere Sortierschlüsseln und erfahren Sie, wie beschrieben in der Regel zusammengefasst. **SSortOrderSet** Strukturen werden in die folgenden Funktionen und Interface-Methoden verwendet: 
+Eine **SSortOrder** -Struktur wird verwendet, um die Ausführung eines Standard Sortiervorgangs oder eines kategorisierten Sortiervorgangs zu beschreiben. **SSortOrder** -Strukturen werden in der Regel in einer **SSortOrderSet** -Struktur kombiniert, um mehrere Sortierschlüssel und-Richtungen zu beschreiben. **SSortOrderSet** -Strukturen werden in den folgenden Funktionen und Schnittstellenmethoden verwendet: 
   
 - [ITableData::HrGetView](itabledata-hrgetview.md)
     
@@ -76,18 +76,18 @@ Eine **SSortOrder** -Struktur wird verwendet, um wird beschrieben, wie Sie einen
     
 - [HrQueryAllRows](hrqueryallrows.md)
     
-Der Bereich der zulässigen Spalten in einer Tabelle, die als Sortierschlüssel verwendet werden kann, hängt von den Anbieter ab. Spalten, die Teil der aktuellen Spalte sind können immer als Sortierschlüssel verwendet werden. Jedoch bestimmt jeder Anbieter, ob Sortierschlüssel definiert werden können, mithilfe von Verfügbare Spalten, die nicht in der aktuellen Spalte festgelegt sind. Eine verfügbare Spalte ist eine Spalte, die von [IMAPITable::QueryColumns](imapitable-querycolumns.md) zurückgegeben wird, wenn das Flag TBL_ALL_COLUMNS festgelegt ist. 
+Der zulässige Spalten Umfang in einer Tabelle, der als Sortierschlüssel verwendet werden kann, hängt vom Anbieter ab. Spalten, die Teil des aktuellen Spaltensatzes sind, können immer als Sortierschlüssel verwendet werden. Jeder Anbieter bestimmt jedoch, ob Sortierschlüssel mithilfe verfügbarer Spalten definiert werden können, die nicht in der aktuellen Spaltengruppe enthalten sind. Eine verfügbare Spalte ist eine Spalte, die von [IMAPITable:: QueryColumns](imapitable-querycolumns.md) zurückgegeben wird, wenn das TBL_ALL_COLUMNS-Flag festgelegt ist. 
   
-Die **UlOrder** Datenmember gibt Richtungspfeile Reihenfolge und Kategorisierungsinformationen, beispielsweise nach Unterhaltungen ([Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md)), d. h., gesprochene Thread, der eine Reihe von Nachrichten und Antworten ist. Zeilen können in ein aufsteigender oder absteigender Reihenfolge mit zuletzt positioniert alle NULL-Einträge sortiert werden. 
+Das **ulOrder** -Element gibt sowohl Richtungs Reihenfolge-als auch Kategorisierungsinformationen an, beispielsweise nach Unterhaltung ([eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md)), also konversationsthread, bei dem es sich um eine Reihe von Nachrichten und Antworten handelt. Zeilen können in aufsteigender oder absteigender Reihenfolge mit allen NULL-Einträgen in der letzten Position sortiert werden. 
   
-Der Wert TABLE_SORT_COMBINE gibt an, dass in **UlPropTag** angegebene Spalte mit der vorherigen Kategoriespalte zu eine zusammengesetzte Kategorie bilden kombiniert werden soll. D. h., können Sie statt auf eindeutige Werte der einzelnen Spalten kategorisieren, TABLE_SORT_COMBINE zur Kategorisierung auf eindeutige Werte aus einer Kombination von Spalten. Beispielsweise könnte eine einzelne Kategorie auf Gruppennachrichten aus einem bestimmten Absender auf ein bestimmtes Thema definiert werden. Festlegen des Werts auf TABLE_SORT_COMBINE Reduzierung der Anzahl von Kategorien in Zeilen, die angezeigt werden. 
+Der TABLE_SORT_COMBINE-Wert gibt an, dass die in **ulPropTag** angegebene Spalte mit der vorherigen Kategorie-Spalte kombiniert werden soll, um eine zusammengesetzte Kategorie zu bilden. Anstatt jedoch auf eindeutigen Werten einzelner Spalten zu kategorisieren, ermöglicht TABLE_SORT_COMBINE die Kategorisierung von eindeutigen Werten einer Kombination von Spalten. Beispielsweise kann eine einzelne Kategorie definiert werden, um Nachrichten zu gruppieren, die von einem bestimmten Absender zu einem bestimmten Betreff empfangen wurden. Wenn Sie den Wert auf TABLE_SORT_COMBINE festlegen, wird die Anzahl der angezeigten Kategorie-Zeilen reduziert. 
   
-Mehrwertige Spalten sortieren wird universell von allen Implementierungen der Tabelle nicht unterstützt. Unterstützt, wenden Sie die MV_FLAG verwenden das Makro MVI_PROP das Eigenschafts-Tag im **UlPropTag** -Member zum Identifizieren des Sortierschlüssels als mehrwertige Spalte. Sortieren nach einer Spalte mit mehreren Werten basiert auf die einzelnen Werte verwenden. 
+Das Sortieren von mehrwertigen Spalten wird von allen Tabellen Implementierungen nicht universell unterstützt. Wenn Sie unterstützt werden, wenden Sie das MV_FLAG mithilfe des MVI_PROP-Makros auf das Property-Tag im **ulPropTag** -Element an, um den Sortierschlüssel als mehrwertige Spalte zu identifizieren. Das Sortieren in einer mehrwertigen Spalte basiert auf der Verwendung der einzelnen Werte. 
   
 > [!IMPORTANT]
-> Die **UlOrder** Memberwerte TABLE_SORT_CATEG_MAX und TABLE_SORT_CATEG_MIN möglicherweise nicht in der herunterladbaren Headerdatei definiert werden derzeit ist, in diesem Fall können Sie diesen Code mithilfe der folgenden Werte hinzufügen: >`#define TABLE_SORT_CATEG_MAX ((ULONG) 0x00000004)`>  `#define TABLE_SORT_CATEG_MIN ((ULONG) 0x00000008)`
+> Die **ulOrder** -Elementwerte TABLE_SORT_CATEG_MAX und TABLE_SORT_CATEG_MIN sind möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben, in diesem Fall können Sie Sie mit den folgenden Werten zu Ihrem Code hinzufügen: >`#define TABLE_SORT_CATEG_MAX ((ULONG) 0x00000004)`>  `#define TABLE_SORT_CATEG_MIN ((ULONG) 0x00000008)`
   
-Weitere Informationen zu Standard- und kategorisierten Sortieren finden Sie unter [Sortieren und Kategorisierung](sorting-and-categorization.md). 
+Weitere Informationen zu standardmäßigen und kategorisierten Sortierungen finden Sie unter [Sortieren und kategorisieren](sorting-and-categorization.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

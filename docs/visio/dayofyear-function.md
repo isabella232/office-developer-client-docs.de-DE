@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251416
 localization_priority: Normal
 ms.assetid: 154d76a2-81f5-d8b1-b665-26dbae5da615
-description: Gibt eine ganze Zahl 1 und 366, die den laufenden Tag des Jahres in Datetime oder Expression darstellt. Die DAYOFYEAR-Funktion verwendet den gregorianischen Kalender.
-ms.openlocfilehash: 2fd80a2554c268d276deaa524a9d98eebc6a48d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine ganze Zahl von 1 bis 366 zurück, die den sequenziellen Tag des Jahres in DateTime oder Expression darstellt. Die DAYOFYEAR-Funktion verwendet den gregorianischen Kalender.
+ms.openlocfilehash: 30c0331a57282baee97e81689b6a8f362581b8f1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360292"
 ---
 # <a name="dayofyear-function"></a>TAGDESJAHRES-Funktion
 
-Gibt eine ganze Zahl 1 und 366, die den laufenden Tag des Jahres in _Datetime_ oder _Expression_darstellt. Die DAYOFYEAR-Funktion verwendet den gregorianischen Kalender.
+Gibt eine ganze Zahl von 1 bis 366 zurück, die den sequenziellen Tag des Jahres in _DateTime_ oder _Expression_darstellt. Die DAYOFYEAR-Funktion verwendet den gregorianischen Kalender.
   
 ## <a name="syntax"></a>Syntax
 
-DAYOFYEAR ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **]) 
+DAYOFYEAR ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,19 +30,19 @@ DAYOFYEAR ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Nummer** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Number** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Alle Zeitkomponenten in _Datetime_ oder _Expression_ wird verworfen. 
+Alle Zeitkomponenten in _DateTime_ oder _Expression_ werden verworfen. 
   
-Das Ergebnis entspricht dem 1. Januar und dem 31. Dezember. Keine Rundung erfolgt. Wenn _Datetime_ nicht vorhanden ist oder nicht als gültige Datum oder Uhrzeit interpretiert werden kann, gibt die Funktion einen Fehler zurück. 
+Das Ergebnis entspricht dem 1. Januar bis zum 31. Dezember. Es findet kein Auf- oder Abrunden statt. Wenn _DateTime_ fehlt oder nicht als gültige Datums-oder Uhrzeitangabe interpretiert werden kann, gibt die Funktion einen Fehler zurück. 
   
-Die DAYOFYEAR-Funktion nimmt auch einen einzelnen Zahlenwert für _Expression_ , wobei der Ganzzahlteil des Ergebnisses für die Anzahl von Tagen seit dem 30. Dezember 1899 steht. 
+Die DAYOFYEAR-Funktion akzeptiert auch einen einzelnen Zahlenwert für _Expression_ , wobei der ganzzahlige Teil des Ergebnisses die Anzahl von Tagen seit dem 30. Dezember 1899 darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
@@ -58,7 +58,7 @@ Gibt 157 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-DAYOFYEAR(35580.6337)
+DAYOFYEAR (35580.6337)
   
 Gibt 150 zurück.
   

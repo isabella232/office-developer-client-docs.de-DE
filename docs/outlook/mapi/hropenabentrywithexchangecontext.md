@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b640a5aa-4e36-4983-bf11-9428809e830b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e0b6718345588e79a8038f7cb409ef901d7c11f5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 415d108f7fd9e84ba2a9090658bc0923550390f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347789"
 ---
 # <a name="hropenabentrywithexchangecontext"></a>HrOpenABEntryWithExchangeContext
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet die **Eintrags-ID** mithilfe der Exchange-Adressbuch durch **pEmsmdbUID**identifiziert. Diese Funktion arbeitet ähnlich wie [IAddrBook::Details](iaddrbook-details.md) mit der Ausnahme, dass mit dieser Funktion wird sichergestellt, dass die [IAddrBook::OpenEntry](iaddrbook-openentry.md) mithilfe der erwarteten Exchange-Adressbuchanbieter geöffnet wird. 
+Öffnet die **Eintrags** -Nr. mit dem von **PEmsmdbUID**identifizierten Exchange-Adressbuch. Diese Funktion funktioniert ähnlich wie [IAddrBook::D ails](iaddrbook-details.md) , mit der Ausnahme, dass mit dieser Funktion sichergestellt wird, dass der [IAddrBook:: OpenEntry](iaddrbook-openentry.md) mithilfe des erwarteten Exchange-Adressbuch Anbieters geöffnet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |abhelp.h  <br/> |
+|Headerdatei  <br/> |abhelp. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrDoABDetailsWithExchangeContext(
@@ -45,50 +45,50 @@ HRESULT HrDoABDetailsWithExchangeContext(
 
  _pmsess_
   
-> [in] Die angemeldete **IMAPISession**. Es darf nicht NULL sein.
+> in Der angemeldete **IMAPISession**. Er darf nicht NULL sein.
     
  _pEmsmdbUID_
   
-> [in] Ein Zeiger auf eine **EmsmdbUID** , die den Exchange-Dienst identifiziert, die die Exchange-Adressbuchanbieter enthält, die diese Funktion zum Anzeigen von Details auf die Eintrags-ID verwendet werden soll. Wenn eingehende Eintrags-ID nicht um ein Exchange-Adressbuchanbieter Eintrags-ID ist, dieser Parameter wird ignoriert, und der Funktionsaufruf verhält sich wie [IAddrBook::Details](iaddrbook-details.md). Wenn dieser Parameter auf NULL oder eine MAPIUID NULL ist, verhält sich diese Funktion wie [IAddrBook::Details](iaddrbook-details.md).
+> in Ein Zeiger auf ein **emsmdbUID** , das den Exchange-Dienst identifiziert, der den Exchange-Adressbuchanbieter enthält, den diese Funktion verwenden sollte, um Details zur Eintrags-ID anzuzeigen. Wenn die ID des eingehenden Eintrags kein Exchange-Adressbuchanbieter ist, wird dieser Parameter ignoriert, und der Funktionsaufruf verhält sich wie [IAddrBook::D ails](iaddrbook-details.md). Wenn dieser Parameter NULL oder eine NULL-MAPIUID ist, verhält sich diese Funktion wie [IAddrBook::D ails](iaddrbook-details.md).
     
  _pAddrBook_
   
-> [in] Das Adressbuch verwendet, um die Eintrags-ID zu öffnen. Es darf nicht NULL sein.
+> in Das zum Öffnen des Eintrags Bezeichners verwendete Adressbuch. Er darf nicht NULL sein.
     
  _cbEntryID_
   
-> [in] Die Byteanzahl des Eintrags-ID, die durch den Parameter _LpEntryID_ angegeben. 
+> in Die Bytezahl der vom _lpEntryID_ -Parameter angegebenen Eintrags-ID. 
     
  _lpEntryID_
   
->  [in] Ein Zeiger auf die Eintrags-ID, die den Adresseintrag Adressbuch öffnen darstellt. 
+>  in Ein Zeiger auf die Eintrags-ID, die den zu öffnenden Adressbucheintrag darstellt. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die steuert, wie der Eintrag geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die steuert, wie der Eintrag geöffnet wird. Die folgenden Flags können festgelegt werden:
     
 MAPI_BEST_ACCESS
   
-> Fordert, dass der Eintrag mit den maximalen zulässigen Netzwerk- und Client Berechtigungen geöffnet werden. Wenn der Client über Lese- und Schreibberechtigungen, versucht der Adressbuchanbieter beispielsweise, öffnen Sie den Eintrag mit Lese- und Schreibberechtigungen. Der Client kann die Zugriffsebene abzurufen, die durch Aufrufen der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode des Eintrags öffnen und das Abrufen der Eigenschaft PR_ACCESS_LEVEL (PidTagAccessLevel) gewährt wurde. 
+> Fordert, dass der Eintrag mit den maximal zulässigen Netzwerk-und Clientberechtigungen geöffnet wird. Wenn der Client beispielsweise über Lese-und Schreibberechtigungen verfügt, versucht der Adressbuchanbieter, den Eintrag mit Lese-und Schreibberechtigung zu öffnen. Der Client kann die Zugriffsebene abrufen, die durch Aufrufen der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des geöffneten Eintrags und Abrufen der PR_ACCESS_LEVEL (pidtagaccesslevel ()-Eigenschaft erteilt wurde. 
     
 MAPI_CACHE_ONLY
   
-> Verwendet nur das Offlineadressbuch namensauflösung ausführen. Dieses Kennzeichen können Sie beispielsweise ermöglichen einer Clientanwendung zum Öffnen der globalen Adressliste (GAL) im Exchange-Cache-Modus und Zugreifen auf einen Eintrag in diesem Adressbuch aus dem Cache ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Kennzeichen werden nur von der Exchange-Adressbuchanbieter unterstützt.
+> Verwendet nur das Offlineadressbuch zum Durchführen der Namensauflösung. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und auf einen Eintrag in diesem Adressbuch aus dem Cache zuzugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
     
 MAPI_DEFERRED_ERRORS
   
-> Ermöglicht den Anruf, potenziell erfolgreich ausgeführt werden kann, bevor der Eintrag vollständig geöffnet und verfügbar ist, dass dies, dass nachfolgende Aufrufe von den Eintrag möglicherweise einen Fehler zurück, ist.
+> Der Aufruf kann erfolgreich ausgeführt werden, bevor der Eintrag vollständig geöffnet und verfügbar ist, was bedeutet, dass nachfolgende Aufrufe des Eintrags möglicherweise einen Fehler zurückgeben.
     
 MAPI_GAL_ONLY
   
-> Verwendet nur die globale Adressliste namensauflösung ausführen. Dieses Kennzeichen werden nur von der Exchange-Adressbuchanbieter unterstützt.
+> Verwendet nur die GAL zur Namensauflösung. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
     
 MAPI_MODIFY
   
-> Anforderungen, denen mit der Eintrag geöffnet werden Lese- und Schreibberechtigungen. Da die Einträge in der Standardeinstellung mit schreibgeschützten Zugriff geöffnet sind, sollte Clients nicht davon ausgehen, das Lesen und schreiben, dass die Berechtigung erteilt wurde, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
+> Fordert, dass der Eintrag mit Lese-und Schreibberechtigung geöffnet wird. Da Einträge standardmäßig mit schreibgeschütztem Zugriff geöffnet werden, sollten Clients nicht davon ausgehen, dass Lese-und Schreibberechtigungen erteilt wurden, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
     
 MAPI_NO_CACHE
   
-> Das Offlineadressbuch wird nicht zum Ausführen von namensauflösung verwendet werden. Dieses Kennzeichen werden nur von der Exchange-Adressbuchanbieter unterstützt.
+> Das Offlineadressbuch wird nicht zum Durchführen der Namensauflösung verwendet. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
     
 

@@ -7,27 +7,27 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: eab68d7a-e281-fc2e-5531-91e7a4e1485f
 description: Gibt eine Referenz auf das Blatt (Shape) zurück, das in sheetref angegeben wurde; wenn der Bezeichner sheetref nicht angegeben wurde, wird eine Referenz auf das aktuelle Blatt zurückgegeben.
-ms.openlocfilehash: dcf5c0b42c3e6471ebc4bc201b8d80d420e94d29
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2c6441b5e984557035271de7d84d42078ac87804
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342833"
 ---
 # <a name="sheetref-function"></a>SHEETREF Function
 
-Gibt einen Verweis auf das Blatt (Shape), das in _Sheetref_, angegeben ist oder wenn _sheetref nicht auf das aktuelle Blatt_ vorhanden ist. 
+Gibt einen Verweis auf das Blatt (Shape) zurück, das in _sheetref_angegeben ist, oder, wenn kein _sheetref_ -Qualifizierer vorhanden ist, zum aktuellen Blatt. 
   
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Visio 2010
  
   
 ## <a name="syntax"></a>Syntax
 
- *\<Sheetref\>!*  SHEETREF() 
+ *\<sheetref\>!*  SHEETREF () 
   
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 ShapeSheet-Referenz
   

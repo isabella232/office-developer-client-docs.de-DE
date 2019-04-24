@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f0b8b27eb65ef32f95d5529879dde2721e280e26
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349518"
 ---
 # <a name="create-a-rule-to-assign-categories-to-mail-items-based-on-multiple-words-in-the-subject"></a>Erstellen einer Regel zum Zuweisen von Kategorien zu E-Mail-Elementen basierend auf mehreren Wörtern im Betreff
 
@@ -29,7 +29,7 @@ Eine Regel, die von einem [Rule](https://msdn.microsoft.com/library/bb647152\(v=
 
 Folgende Eigenschaften können Sie zum Abrufen oder Festlegen eines Arrays verwenden: [Address](https://msdn.microsoft.com/library/bb647045\(v=office.15\)), [Categories](https://msdn.microsoft.com/library/bb611021\(v=office.15\)), [Categories](https://msdn.microsoft.com/library/bb612345\(v=office.15\)), [FormName](https://msdn.microsoft.com/library/bb647042\(v=office.15\)) und **TextRuleCondition.Text**. Weitere Informationen zu Regeln finden Sie unter [Erstellen einer Regel zum Ablegen von E-Mail-Elementen von einem Vorgesetzten und Kennzeichnen dieser Elemente für die Nachverfolgung](how-to-create-a-rule-to-file-mail-items-from-a-manager-and-flag-them-for-follow-up.md).
 
-Im folgenden Beispiel verwendet CreateTextAndCategoryRule die CategoryExists-Methode, um die E-Mail-Elemente des Benutzers anhand des Namens "Office" oder "Outlook" in der **Categories**-Auflistung auf Kategorien zu durchsuchen. Wenn keine Kategorien gefunden werden, werden diese hinzugefügt. Anschließend wird in dem Beispiel ein Array von Zeichenfolgen erstellt, die "Office", "Outlook" und "2007" enthalten. Dieses Array stellt die Kriterien dar, die ausgewertet werden sollen. Danach wird von CreateTextAndCategoryRule eine Regel erstellt, die durch Untersuchen des Betreffs auf die Bedingungen in dem Array mithilfe der **Text**-Eigenschaft des **TextRuleCondition**-Objekts und der [BodyOrSubject](https://msdn.microsoft.com/library/bb612744\(v=office.15\))-Eigenschaft der [RuleConditions](https://msdn.microsoft.com/library/bb610965\(v=office.15\))-Auflistung Kategorien zuordnet. Ist die Bedingung erfüllt, werden dem Element mithilfe der [AssignToCategory](https://msdn.microsoft.com/library/bb623146\(v=office.15\)) -Methode des [RuleActions](https://msdn.microsoft.com/library/bb610113\(v=office.15\)) -Objekts die Kategorien Office und Outlook zugeordnet.
+Im folgenden Beispiel verwendet CreateTextAndCategoryRule die CategoryExists-Methode, um die E-Mail-Elemente des Benutzers anhand des Namens "Office" oder "Outlook" in der **Categories**-Auflistung auf Kategorien zu durchsuchen. Wenn keine Kategorien gefunden werden, werden diese hinzugefügt. Anschließend wird in dem Beispiel ein Array von Zeichenfolgen erstellt, die “Office", “Outlook” und “2007” enthalten. Dieses Array stellt die Kriterien dar, die ausgewertet werden sollen. Danach wird von CreateTextAndCategoryRule eine Regel erstellt, die durch Untersuchen des Betreffs auf die Bedingungen in dem Array mithilfe der **Text**-Eigenschaft des **TextRuleCondition**-Objekts und der [BodyOrSubject](https://msdn.microsoft.com/library/bb612744\(v=office.15\))-Eigenschaft der [RuleConditions](https://msdn.microsoft.com/library/bb610965\(v=office.15\))-Auflistung Kategorien zuordnet. Ist die Bedingung erfüllt, werden dem Element mithilfe der [AssignToCategory](https://msdn.microsoft.com/library/bb623146\(v=office.15\)) -Methode des [RuleActions](https://msdn.microsoft.com/library/bb610113\(v=office.15\)) -Objekts die Kategorien Office und Outlook zugeordnet.
 
 Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die **using**-Anweisung darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgende Codezeile zeigt, wie Sie den Import und die Zuweisung in C\# vornehmen.
 

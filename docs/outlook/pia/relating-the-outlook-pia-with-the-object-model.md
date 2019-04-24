@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cbd5083f3adb8a30f5804cc35e0bc8a08d36b5f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342659"
 ---
 # <a name="relating-the-outlook-pia-with-the-object-model"></a>Zuordnen der Outlook-PIA zum Objektmodell
 
@@ -42,7 +42,7 @@ Weitere Informationen dazu, wie Methoden und Eigenschaften von der Typbibliothek
 
 ## <a name="hidden-and-deprecated-objects"></a>Verborgene und veraltete Objekte
 
-Die PIA enthält auch Objekte, Member und Enumerationen, die veraltet sind und optional als ausgeblendet im COM-Objektmodells gekennzeichnet wurden. Die meisten dieser Objekte, Member und Enumerationen werden in der PIA verfügbar gemacht. Allerdings werden sie nur für die Vollständigkeit der PIA verfügbar gemacht. Sie sind nicht mehr zur Verwendung durch Lösungsentwickler vorgesehen und sind daher minimal dokumentiert. Es gibt ein paar Ausnahmen, z. B. das **\_DocSiteControl**- und das **\_RecipientControl**-Objekt, die in der Typbibliothek ausgeblendet sind, aber in der PIA-Referenz als Objekte der ersten Klasse verfügbar gemacht werden. 
+Die PIA enthält auch Objekte, Member und Enumerationen, die veraltet sind und optional als ausgeblendet im COM-Objektmodells gekennzeichnet wurden. Die meisten dieser Objekte, Member und Enumerationen werden in der PIA verfügbar gemacht – allerdings nur aus Gründen der Vollständigkeit der PIA. Allerdings werden sie nur für die Vollständigkeit der PIA verfügbar gemacht. Sie sind nicht mehr zur Verwendung durch Lösungsentwickler vorgesehen und sind daher minimal dokumentiert. Es gibt ein paar Ausnahmen, z. B. das **\_DocSiteControl**- und das **\_RecipientControl**-Objekt, die in der Typbibliothek ausgeblendet sind, aber in der PIA-Referenz als Objekte der ersten Klasse verfügbar gemacht werden. 
 
 Weitere Informationen zum **\_DocSiteControl**-Objekt finden Sie unter [\_DDocSiteControl](https://msdn.microsoft.com/library/bb609520\(v=office.15\)). Weitere Informationen zum **\_RecipientControl**-Objekt finden Sie unter [\_DRecipientControl](https://msdn.microsoft.com/library/bb609501\(v=office.15\)).
 

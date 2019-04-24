@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: e04c2228-aa0a-4958-b5b2-6467e93ab613
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bbf8e2eb2961a3d149010b876d2b4cb3d0c8abc1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 682e75c4e0a2f60dbd46a13b0b737ca4a8e18f3d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345777"
 ---
 # <a name="mapierror"></a>MAPIERROR
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ausführliche Informationen zu einem Fehler, die in der Regel durch das Betriebssystem, MAPI- oder einem Dienstanbieter generiert. 
+Stellt detaillierte Informationen zu einem Fehler bereit, der normalerweise vom Betriebssystem, MAPI oder einem Dienstanbieter generiert wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _MAPIERROR
@@ -47,31 +47,31 @@ typedef struct _MAPIERROR
 
  **ulVersion**
   
-> Versionsnummer der Struktur. Der **UlVersion** Member wird für die zukünftige Erweiterung verwendet und sollte auf MAPI_ERROR_VERSION, derzeit definiert als 0 (null) festgelegt werden. 
+> Versionsnummer der Struktur. Das **ulVersion** -Element wird für zukünftige Erweiterungen verwendet und sollte auf MAPI_ERROR_VERSION festgelegt werden, das derzeit als NULL definiert ist. 
     
  **lpszError**
   
-> Zeiger auf eine Zeichenfolge, die den Fehler beschreibt. Diese Zeichenfolge wird im Unicode-Format sein, wenn der Parameter _UlFlags_ an die-Methode, in der diese Struktur verwendet wird, auf Parameter MAPI_UNICODE festgelegt ist. 
+> Zeiger auf eine Zeichenfolge, die den Fehler beschreibt. Diese Zeichenfolge ist im Unicode-Format, wenn der _ulFlags_ -Parameter für die Methode, in der diese Struktur verwendet wird, auf MAPI_UNICODE festgelegt ist. 
     
  **lpszComponent**
   
-> Zeiger auf eine Zeichenfolge, die die Komponente beschreibt, die den Fehler verursacht hat. Diese Zeichenfolge wird im Unicode-Format sein, wenn der Parameter _UlFlags_ an die-Methode, in der diese Struktur verwendet wird, auf Parameter MAPI_UNICODE festgelegt ist. 
+> Zeiger auf eine Zeichenfolge, die die Komponente beschreibt, die den Fehler generiert hat. Diese Zeichenfolge ist im Unicode-Format, wenn der _ulFlags_ -Parameter für die Methode, in der diese Struktur verwendet wird, auf MAPI_UNICODE festgelegt ist. 
     
  **ulLowLevelError**
   
-> Low-Level Fehlerwert, der verwendet wird, nur, wenn der Fehler zurückgegeben werden soll auf niedriger Ebene ist.
+> Fehlerwert auf niedriger Ebene, der nur verwendet wird, wenn der zurückzugebende Fehler niedriger ist.
     
  **ulContext**
   
-> Wert, der die Position in der Komponente darstellt, auf die der **LpszComponent** -Member, der angibt, in dem der Fehler aufgetreten ist. 
+> Wert, der die Position in der Komponente darstellt, auf die durch das **lpszComponent** -Element verwiesen wird, das angibt, wo der Fehler aufgetreten ist. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **MAPIERROR** wird verwendet, um die Fehlerinformationen zu beschreiben. Clients und Dienstanbieter übergeben einen Zeiger auf eine **MAPIERROR** -Struktur in der _LppMAPIError_ -Parameter der [IMAPIProp::GetLastError](imapiprop-getlasterror.md) -Methode. **GetLastError** gibt Informationen zu den vorherigen auf ein Objekt aufgetretenen Fehler zurück. **GetLastError** Aufrufer freigeben den Speicher für die Struktur **MAPIERROR** durch Aufrufen von [MAPIFreeBuffer](mapifreebuffer.md).
+Die **MAPIERROR** -Struktur dient zur Beschreibung von Fehlerinformationen. Clients und Dienstanbieter übergeben einen Zeiger auf eine **MAPIERROR** -Struktur im _lppMAPIError_ -Parameter der [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode. **Getlasterroraufzurufen** gibt Informationen zum vorherigen Fehler zurück, der auf ein Objekt aufgetreten ist. Aufrufer von **getlasterroraufzurufen** geben den Arbeitsspeicher für die **MAPIERROR** -Struktur frei, indem Sie [mapifreebufferfreigegeben](mapifreebuffer.md)aufrufen.
   
-Der **LpszComponent** Member kann die Komponente Hilfedatei zuordnen verwendet werden, sofern vorhanden. Dienstanbieter sollte die Größe der Komponente Zeichenfolge auf 30 Zeichen einschränken, sodass es auf einfache Weise in einem Dialogfeld angezeigt werden kann. Das **UlContext** -Element kann auch verweisen auf ein Thema der Onlinehilfe für häufige Fehler verwendet werden. 
+Das **lpszComponent** -Element kann verwendet werden, um die Hilfedatei der Komponente zuzuordnen, sofern vorhanden. Dienstanbieter sollten die Größe der Komponenten Zeichenfolge auf 30 Zeichen begrenzen, sodass Sie problemlos in einem Dialogfeld angezeigt werden kann. Das **ulContext** -Mitglied kann auch verwendet werden, um auf ein Onlinehilfethema für häufige Fehler zu verweisen. 
   
-Dienstanbieter sind nicht erforderlich, um ausführliche Fehlerinformationen bereitzustellen, sollten Clients keine Member der Struktur **MAPIERROR** erwarten, die zurückgegeben werden, um gültige Daten enthalten. Allerdings empfiehlt unter minimale MAPI, Anbieter Informationen im **LpszComponent** und **UlContext** -Member angeben. 
+Da Dienstanbieter keine detaillierten Fehlerinformationen angeben müssen, sollten Clients nicht erwarten, dass die Mitglieder der **MAPIERROR** -Struktur, die zurückgegeben werden, gültige Daten enthalten. Bei einem Minimum von MAPI wird jedoch dringend empfohlen, dass Anbieter Informationen in den **lpszComponent** -und **ulContext** -Mitgliedern angeben. 
   
 Weitere Informationen zur Fehlerbehandlung in MAPI finden Sie unter [Fehlerbehandlung](error-handling-in-mapi.md).
   

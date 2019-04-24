@@ -1,5 +1,5 @@
 ---
-title: PidTagRulesTable (kanonische Eigenschaft)
+title: Kanonische Pidtagrulestable (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,44 +9,44 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: fc520720-8190-4dff-8f6c-1bebf7080b57
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4b4b60084b8cb53a0a245b502b8fe70241fb4eb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e1c670cd566e838104ae3d5480c2297f8632d899
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348559"
 ---
-# <a name="pidtagrulestable-canonical-property"></a>PidTagRulesTable (kanonische Eigenschaft)
+# <a name="pidtagrulestable-canonical-property"></a>Kanonische Pidtagrulestable (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Tabelle mit allen Regeln in einen Ordner angewendet.
+Enthält eine Tabelle mit allen Regeln, die auf einen Ordner angewendet werden.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_RULES_TABLE  <br/> |
 |Kennung:  <br/> |0x3FE1  <br/> |
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
-|Bereich:  <br/> |Serverseitige Regeln  <br/> |
+|Bereich:  <br/> |Server seitige Regeln  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft ist auf alle Ordnerobjekte auf einem Exchange-Server, denen Regeln vorhanden. Werte enthalten, die in dieser Eigenschaft werden beim Lesen und Ändern der Regeln verwendet. Sie können die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode mit der **IID_IExchangeModifyTable** Interface Identifier verwenden, erhalten eine [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md) -Schnittstelle für die Regeltabelle für einen Ordner. Sie können diese Schnittstelle zum Lesen und ändern diese Regeln verwenden. 
+Diese Eigenschaft ist für alle Folder-Objekte auf einem Exchange-Server vorhanden, die Regeln aufweisen. In dieser Eigenschaft enthaltene Werte werden zum Lesen und Ändern von Regeln verwendet. Sie können die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode mit dem **IID_IExchangeModifyTable** -Schnittstellenbezeichner verwenden, um eine [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md) -Schnittstelle für die Rules-Tabelle in einem Ordner abzurufen. Sie können diese Schnittstelle verwenden, um diese Regeln zu lesen und zu ändern. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet. 
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind. 
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,5 +63,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

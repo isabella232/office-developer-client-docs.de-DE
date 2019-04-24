@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e6a9f3e-79be-4ffd-9d42-3a14cabb1435
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 828d7ebcbceead02441165e3af92ec7b47d9f001
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: bff73ee5cf02680a2376106e21e0c743b995d336
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348090"
 ---
 # <a name="hrdecomposemsgid"></a>HrDecomposeMsgID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Trennt die ASCII-Darstellung des Bezeichners zusammengesetzter Eintrag eines Objekts in der Regel eine Meldung in einem Nachrichtenspeicher in die Eintrags-ID dieses Objekts im Speicher und den Store-Eintrags-ID an. 
+Trennt die ASCII-Darstellung des verknüpften Eintrags Bezeichners eines Objekts, in der Regel eine Nachricht in einem Nachrichtenspeicher, in der Eintrags-ID des Objekts im Speicher und der Eintrags-ID des Speichers. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 HrDecomposeMsgID(
@@ -48,36 +48,36 @@ HrDecomposeMsgID(
 
  _psession_
   
-> [in] Zeiger auf die Sitzung von der Clientanwendung verwendet. 
+> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
     
  _szMsgID_
   
-> [in] Die Zeichenfolge, die Eintrags-ID des Objekts darstellt. 
+> in Die Zeichenfolge, die die Eintrags-ID des Objekts darstellt. 
     
  _pcbStoreEID_
   
-> [out] Zeiger auf die zurückgegebene Größe in Bytes für die Eintrags-ID des Nachrichtenspeichers, die das Objekt enthält. Wenn der Parameter _SzMsgID_ auf eine noncompound Eintrags-ID zeigt eine Zeichenfolge, klicken Sie dann _PcbStoreEID_ -Parameter verweist auf 0 (null). 
+> Out Zeiger auf die zurückgegebene Größe in Bytes des Eintrags Bezeichners des Nachrichtenspeichers, der das Objekt enthält. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID-Zeichenfolge verweist, zeigt der Parameter _pcbStoreEID_ auf NULL. 
     
  _ppStoreEID_
   
-> [out] Zeiger auf einen Zeiger auf das zurückgegebene Eintrags-ID des Nachrichtenspeichers, die das Objekt enthält. Wenn der Parameter _SzMsgID_ zu einer noncompound Eintrags-ID verweist, wird im Parameter _PpStoreEID_ NULL zurückgegeben. 
+> Out Zeiger auf einen Zeiger auf den zurückgegebenen Eintragsbezeichner des Nachrichtenspeichers, der das Objekt enthält. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID verweist, wird NULL im _ppStoreEID_ -Parameter zurückgegeben. 
     
  _pcbMsgEID_
   
-> [out] Zeiger auf die zurückgegebene Größe in Bytes für die Eintrags-ID des Objekts in seiner Store. Wenn der Parameter _SzMsgID_ auf eine Zeichenfolge noncompound Eintrag zeigt, ist der Parameter _PcbMsgEID_ gleich dem Wert des Parameters _CbEID_ . 
+> Out Zeiger auf die zurückgegebene Größe in Bytes des Eintrags Bezeichners des Objekts innerhalb des Speichers. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID-Zeichenfolge verweist, ist der _pcbMsgEID_ -Parameter gleich dem Wert des _cbEID_ -Parameters. 
     
  _ppMsgEID_
   
-> [out] Zeiger auf einen Zeiger auf die zurückgegebene Eintrag Bezeichnerzeichenfolge des Objekts in seiner Store. Wenn der Parameter _SzMsgID_ auf einen Bezeichner noncompound Eintrag zeigt, verweist _PpMsgEID_ auf einen Zeiger auf eine konvertierte Kopie des Bezeichners noncompound Eintrag. 
+> Out Zeiger auf einen Zeiger auf die zurückgegebene Eintrags-ID-Zeichenfolge des Objekts innerhalb des Speichers. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID zeigt, verweist _ppMsgEID_ auf einen Zeiger auf eine konvertierte Kopie des nicht verknüpften Eintrags Bezeichners. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn vom _SzMsgID_ -Parameter angegebene Bezeichner zusammengesetzter ist, wird es von ASCII konvertiert und Teilen in die Eintrags-ID des Objekts in seiner Nachrichtenspeicher und den Store-Eintrags-ID. Noncompound Eintrags-ID-Zeichenfolgen werden einfach konvertiert und kopiert. Die zusammengesetzter Bezeichnerzeichenfolge getrennt werden ist normalerweise mit der Funktion [HrComposeMsgID](hrcomposemsgid.md) erstellt. 
+Wenn der durch den _szMsgID_ -Parameter angegebene Bezeichner verknüpft ist, wird er aus ASCII konvertiert und in den Eintragsbezeichner des Objekts innerhalb des Nachrichtenspeichers und des Eintrags Bezeichners des Speichers aufgeteilt. Nicht zusammengesetzte Eintrags-ID-Zeichenfolgen werden einfach konvertiert und kopiert. Die zu Trenn Ende Verbund Bezeichner-Zeichenfolge wird in der Regel durch die [HrComposeMsgID](hrcomposemsgid.md) -Funktion erstellt. 
   
-Aufrufen der Funktion **HrDecomposeMsgID** entspricht dem Aufrufen der [HrEntryIDFromSz](hrentryidfromsz.md) und klicken Sie dann die Funktion [HrDecomposeEID](hrdecomposeeid.md) . 
+Das Aufrufen der **HrDecomposeMsgID** -Funktion entspricht dem Aufrufen der [HrEntryIDFromSz](hrentryidfromsz.md) -Funktion und dann der [HrDecomposeEID](hrdecomposeeid.md) -Funktion. 
   
 

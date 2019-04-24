@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b08fadcf-cdf3-48b7-9489-d7f745266482
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c165bcaedfc3dbab0c950d0674228b15dfeee958
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0f09304f21180d9ebc2a1e1dcc54ebadd3622804
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348244"
 ---
 # <a name="hrqueryallrows"></a>HrQueryAllRows
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ruft alle Zeilen einer Tabelle ab. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrQueryAllRows(
@@ -48,44 +48,44 @@ HRESULT HrQueryAllRows(
 
  _ptable_
   
-> [in] Zeiger auf die MAPI-Tabelle aus der Zeilen abgerufen werden. 
+> in Zeiger auf die MAPI-Tabelle, aus der die Zeilen abgerufen werden. 
     
  _ptaga_
   
-> [in] Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array der-Eigenschaft enthält tags Tabellenspalten angibt. Diese Tags dienen zum Auswählen der spezifischen Spalten abgerufen werden sollen. Wenn der Parameter _Ptaga_ NULL ist, ruft **HrQueryAllRows** den gesamte Spaltensatz von der aktuellen Tabellenansicht im _Ptable_ -Parameter übergeben. 
+> in Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags enthält, die Tabellenspalten anzeigen. Diese Tags werden verwendet, um die einzelnen Spalten auszuwählen, die abgerufen werden sollen. Wenn der _ptaga_ -Parameter NULL ist, ruft **HrQueryAllRows** den gesamten Spaltensatz der aktuellen Tabellenansicht ab, die im _ptable_ -Parameter übergeben wird. 
     
  _Pres_
   
-> [in] Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die Retrieval Einschränkungen enthält. Wenn der Parameter _Pres_ NULL ist, wird **HrQueryAllRows** ohne Einschränkungen. 
+> in Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die Abruf Einschränkungen enthält. Wenn der _Pres_ -Parameter NULL ist, macht **HrQueryAllRows** keine Einschränkungen. 
     
  _PSOs_
   
-> [in] Zeiger auf eine [SSortOrderSet](ssortorderset.md) -Struktur, identifiziert die Sortierreihenfolge der Spalten abgerufen werden sollen. Wenn der Parameter _Psos_ NULL ist, wird die standardmäßige Sortierreihenfolge für die Tabelle verwendet. 
+> in Zeiger auf eine [SSortOrderSet](ssortorderset.md) -Struktur, die die Sortierreihenfolge der Spalten angibt, die abgerufen werden sollen. Wenn der __ Parameter "Parameters" den Wert NULL hat, wird die Standardsortierreihenfolge für die Tabelle verwendet. 
     
  _crowsMax_
   
-> [in] Maximale Anzahl von Zeilen abgerufen werden sollen. Wenn der Wert des Parameters _CrowsMax_ gleich NULL ist, wird keine Begrenzung für die Anzahl der abgerufenen Zeilen festgelegt. 
+> in Maximale Anzahl von Zeilen, die abgerufen werden sollen. Wenn der Wert des _crowsMax_ -Parameters 0 (null) ist, wird kein Grenzwert für die Anzahl der abgerufenen Zeilen festgelegt. 
     
- _ppRows_
+ _pprows_
   
-> [out] Zeiger auf einen Zeiger auf das zurückgegebene [SRowSet](srowset.md) -Struktur, die ein Array von Zeigern für die abgerufenen Zeilen enthält. 
+> Out Zeiger auf einen Zeiger auf die zurückgegebene [SRowSet](srowset.md) -Struktur, die ein Array von Zeigern auf die abgerufenen Tabellenzeilen enthält. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Anruf abgerufen, die erwarteten Zeilen einer Tabelle. 
+> Der Aufruf hat die erwarteten Zeilen einer Tabelle abgerufen. 
     
-KEINE 
+MAPI_E_TABLE_TOO_BIG 
   
-> Die Anzahl der Zeilen in der Tabelle ist größer als die Anzahl für den _CrowsMax_ -Parameter übergeben. 
+> Die Anzahl der Zeilen in der Tabelle ist größer als die Anzahl, die für den _crowsMax_ -Parameter übergeben wurde. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Clientanwendung oder Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** versucht, abrufen, außer durch die Festlegung einer Einschränkung mit durch den Parameter _Pres_ gezeigt. Der Parameter _CrowsMax_ schränkt nicht das Abrufen auf eine bestimmte Anzahl von Zeilen der Tabelle, aber vielmehr definiert eine maximale Größe des Arbeitsspeichers zur Verfügung, die alle abgerufene Zeilen enthalten soll. Der einzige Schutz gegen Speicher Überlauf ist die stetig Funktion _CrowsMax_festlegen. Die Rendite der Fehler, die bedeutet, die Tabelle dass enthält zu viele Zeilen, die alle gleichzeitig im Speicher aufbewahrt werden. 
+Eine Clientanwendung oder ein Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** abruft, außer durch eine Einschränkung, auf die durch den _Pres_ -Parameter verwiesen wird. Der Parameter _crowsMax_ schränkt den Abruf nicht auf eine bestimmte Anzahl von Tabellenzeilen ein, sondern definiert eine maximale Menge an Arbeitsspeicher, die für alle abgerufenen Zeilen verfügbar ist. Der einzige Schutz vor massivem Speicherüberlauf ist das durch Festlegen von _crowsMax_bereitgestellte Notlösung-Feature. Der Fehler Return MAPI_E_TABLE_TOO_BIG gibt an, dass die Tabelle zu viele Zeilen enthält, die alle gleichzeitig im Arbeitsspeicher aufbewahrt werden sollen. 
   
-Tabellen, die in der Regel klein, wie eine Nachricht Store Tabelle oder einer Tabelle Anbieter können in der Regel sicher mit **HrQueryAllRows**abgerufen werden. Tabellen Risiko, wird sehr groß sein, wie etwa eine Inhalt oder sogar eine Tabelle Empfänger, sollte in [der QueryRows](imapitable-queryrows.md) mit Unterabschnitten durchlaufen werden. 
+Tabellen, die normalerweise klein sind, wie beispielsweise eine Nachrichtenspeichertabelle oder eine Anbieter Tabelle, können mit **HrQueryAllRows**in der Regel sicher abgerufen werden. Tabellen, die sehr umfangreich sind, wie beispielsweise eine Inhaltstabelle oder sogar eine Empfängertabelle, sollten mithilfe der [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode in Unterabschnitten durchlaufen werden. 
   
-Wenn alle Tabelleneigenschaften **HrQueryAllRows** aufgerufen wird nicht definiert sind, werden diese mit Eigenschaftentyp PT_NULL und Eigenschaftenbezeichner PROP_ID_NULL zurückgegeben. 
+Wenn Tabelleneigenschaften nicht definiert sind, wenn **HrQueryAllRows** aufgerufen wird, werden Sie mit dem Eigenschaftentyp PT_NULL und dem EIGENSCHAFTENbezeichner PROP_ID_NULL 
   
 

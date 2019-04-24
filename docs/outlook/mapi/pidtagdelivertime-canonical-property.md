@@ -1,5 +1,5 @@
 ---
-title: PidTagDeliverTime (kanonische Eigenschaft)
+title: Kanonische Pidtagdelivertime (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: da0ad17b-08ac-4c50-ac1d-13062b890dfd
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 198e388f5cfb6ab0431e7b7a78b9a0be3d103597
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3e9318e396bf195ad701b92372a3136dee7fd0d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357722"
 ---
-# <a name="pidtagdelivertime-canonical-property"></a>PidTagDeliverTime (kanonische Eigenschaft)
+# <a name="pidtagdelivertime-canonical-property"></a>Kanonische Pidtagdelivertime (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Datum und Uhrzeit, wann die ursprüngliche Nachricht übermittelt wurde. 
+Enthält das Datum und die Uhrzeit der Zustellung der ursprünglichen Nachricht. 
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält Datum und Uhrzeit, wann die ursprüngliche Nachricht übermittelt wurde
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft ist eine pro Empfänger-Eigenschaft für einen Delivery Report, der die angibt, die die ursprüngliche Nachricht an die messaging-Benutzer übermittelt wurde für die der Übermittlungsbericht generiert wird.
+Diese Eigenschaft ist eine empfängerspezifische Eigenschaft in einem Zustellungsbericht, der angibt, wie lange die ursprüngliche Nachricht an den Messagingbenutzer übermittelt wurde, für den der Zustellungsbericht generiert wird.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,5 +63,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

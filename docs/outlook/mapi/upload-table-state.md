@@ -1,43 +1,43 @@
 ---
-title: Status „Uploadtabelle“
+title: Tabellenstatus hochladen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: fe167c90-c817-b627-0728-5c6393477c22
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bd54c30e8701a13637235e28ddcfef4c21d10a2b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a2a9b3f214c76b8ec965c84c4731e0dc57e83352
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342840"
 ---
-# <a name="upload-table-state"></a>Status „Uploadtabelle“
+# <a name="upload-table-state"></a>Tabellenstatus hochladen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was geschieht, während die Tabelle Zustand der Replikation Zustandsautomat hochladen. 
+ In diesem Thema wird beschrieben, was während des Upload-Tabellenstatus des Replikationsstatus Computers passiert. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|State-ID:  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |
-|Verwandte-Datenstruktur:  <br/> |**[UPTBL](uptbl.md)** <br/> |
-|Aus diesem Zustand:  <br/> |[Synchronisieren von Inhalt Zustand](synchronize-contents-state.md) <br/> |
-|Diesen Status:  <br/> |[Nachrichtenstatus hochladen](upload-message-state.md), [Upload löschen Status Zustand](upload-delete-status-state.md), [Status Zustand lesen hochladen](upload-read-status-state.md), oder Inhalt Zustand synchronisieren  <br/> |
+|Status-ID:  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |
+|Zugehörige Datenstruktur:  <br/> |**[UPTBL](uptbl.md)** <br/> |
+|Aus folgendem Zustand:  <br/> |[Synchronisieren des Inhaltsstatus](synchronize-contents-state.md) <br/> |
+|Zu folgendem Status:  <br/> |[Nachrichtenstatus hochladen](upload-message-state.md), [Löschstatus](upload-delete-status-state.md)hochladen, Status [Lesen hochladen](upload-read-status-state.md)oder Inhaltsstatus synchronisieren  <br/> |
    
 > [!NOTE]
-> Das Zustandsautomat Replikation ist ein deterministisch Zustandsautomat. Ein Client, der von einem Zustand zu einem anderen Unternehmen muss schließlich auf die frühere letztere zurückgeben. 
+> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status wird initiiert, Hochladen den Inhalt eines Ordners, der in einem vorherigen synchronisieren Inhalt Zustand angegeben wurde. Der Ordner kann einen Ordner e-Mail, Kalender, Kontakte, Aufgaben, Notizen oder Journal sein. Während dieser Zustand Outlook erstellt eine Liste der Elemente, die hinzugefügt, geändert, verschoben, gelöscht, oder wurden als gelesen markiert und bereitet die entsprechende interne Informationen für den entsprechenden Upload Nachrichtenstatus, Upload löschen Status Zustand oder Status "gelesen" Hochladen Zustand.
+Dieser Status initiiert das Hochladen des Inhalts eines Ordners, der in einem vorhergehenden Synchronisierungsstatus angegeben wurde. Der Ordner kann ein Mail-, Kalender-, Kontakt-, Aufgaben-, Notizen-oder Journalordner sein. Während dieses Zustands erstellt Outlook eine Liste von Elementen, die hinzugefügt, geändert, verschoben, gelöscht oder als gelesen markiert wurden, und bereitet die entsprechenden internen Informationen für den entsprechenden Upload-Status, den Zustand "Delete" oder "Lesestatus hochladen" vor. Staat.
   
-Wenn dieser Status beendet wird, markiert Outlook den Ordner mit seinen Inhalt synchronisiert, sodass der Inhalt nicht erneut hochgeladen werden soll, bis eine andere Änderung vorgenommen wird. Auf den Synchronize Inhalt Status gibt der lokale Speicher zurück.
+Wenn dieser Status endet, markiert Outlook den Ordner als den Inhalt synchronisiert, sodass der Inhalt nicht erneut hochgeladen werden, bis eine andere Änderung vorgenommen wird. Der lokale Speicher gibt den Status "Inhalte synchronisieren" zurück.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -49,5 +49,5 @@ Wenn dieser Status beendet wird, markiert Outlook den Ordner mit seinen Inhalt s
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

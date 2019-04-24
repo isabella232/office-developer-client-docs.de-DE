@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: 48e478c4-6e9a-40ab-a7bb-e6219b743b08
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7f32145e0947411c48e1e6c3a941c9913a08709c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6c35220529fb88b470c563a0b004bfcf7e63ef76
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345647"
 ---
 # <a name="tablenotification"></a>TABLE_NOTIFICATION
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Zeile in einer Tabelle, die mit einem Typ des Ereignisses, wie eine Änderung oder einen Fehler betroffen ist. Daraufhin wird eine Tabelle Benachrichtigung generiert werden soll. 
+Beschreibt eine Zeile in einer Tabelle, die von einer Art von Ereignis beeinflusst wurde, beispielsweise eine Änderung oder ein Fehler. Dadurch wird eine Tabellenbenachrichtigung generiert. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _TABLE_NOTIFICATION
@@ -45,15 +45,15 @@ typedef struct _TABLE_NOTIFICATION
 
 **ulTableEvent**
   
-> Bitmaske aus Flags verwendet, um den Ereignistyp Tabelle darstellen. Die folgenden Kennzeichen können festgelegt werden:
+> Bitmaske der Flags, die zum Darstellen des Table-Ereignistyps verwendet werden. Die folgenden Flags können festgelegt werden:
     
 TABLE_CHANGED 
   
-> Gibt auf allgemeiner Ebene, dass etwas über die Tabelle geändert hat. Die Tabelle festgelegt ist, wie er vor dem das Ereignis. Dies bedeutet, dass alle Eigenschaften **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)), Lesezeichen, aktuellen Positionierung und Schnittstelle Benutzerauswahl noch gültig sind. Behandeln Sie dieses Ereignis wird durch erneutes Lesen der Tabelle. Dienstanbieter, die keine rich Tabelle Benachrichtigungen implementieren möchten, senden TABLE_CHANGED Ereignisse anstelle von ausführlichere Ereignisse zum Angeben eines bestimmten Typs der Änderung. 
+> Gibt auf hoher Ebene an, dass sich etwas in der Tabelle geändert hat. Der Status der Tabelle ist wie vor dem Ereignis. Dies führt dazu, dass alle **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md))-Eigenschaften, Lesezeichen, aktuelle Positionierung und Benutzeroberflächenauswahl noch gültig sind. Behandeln Sie dieses Ereignis, indem Sie die Tabelle erneut lesen. Dienstanbieter, die Rich-Table-Benachrichtigungen nicht implementieren möchten, senden TABLE_CHANGED-Ereignisse anstelle detaillierter Ereignisse, um einen bestimmten Änderungstyp anzugeben. 
     
 TABLE_ERROR 
   
-> In der Regel während der Verarbeitung eines asynchronen Vorgangs ist ein Fehler aufgetreten. Fehler bei der Verarbeitung der folgenden Methoden können dieses Ereignis generieren: 
+> Es ist ein Fehler aufgetreten, normalerweise während der Verarbeitung eines asynchronen Vorgangs. Fehler bei der Verarbeitung der folgenden Methoden können dieses Ereignis generieren: 
     
    - [IMAPITable::SortTable](imapitable-sorttable.md)
     
@@ -61,69 +61,69 @@ TABLE_ERROR
     
    - [IMAPITable::Restrict](imapitable-restrict.md)
     
-   Ein Client kann nicht nach dem Empfang ein TABLE_ERROR-Ereignis, auf die Genauigkeit der Inhalt der Tabelle verlassen. Darüber hinaus möglicherweise ausstehende Benachrichtigungen zu anderen Änderungen verloren. Die [IMAPITable::GetLastError](imapitable-getlasterror.md) -Methode bietet zusätzliche Informationen zu dem Fehler möglicherweise nicht, da es zu einem Zeitpunkt, was nicht notwendigerweise vom letzten Methodenaufruf generiert wurde. 
+   Nachdem ein TABLE_ERROR-Ereignis empfangen wurde, kann sich ein Client nicht auf die Genauigkeit des Tabelleninhalts verlassen. Außerdem können ausstehende Benachrichtigungen über andere Änderungen verloren gehen. Die [IMAPITable:: getlasterroraufzurufen](imapitable-getlasterror.md) -Methode bietet möglicherweise keine zusätzlichen Informationen zu dem Fehler, da Sie zu einem früheren Zeitpunkt generiert wurde, nicht unbedingt vom letzten Methodenaufruf. 
     
 TABLE_RELOAD 
   
-> Die Daten in der Tabelle sollte erneut geladen werden. Dienstanbieter senden TABLE_RELOAD, wenn beispielsweise die zugrunde liegenden Daten in einer Datenbank gespeichert ist und die Datenbank ersetzt wird. Behandeln Sie dieses Ereignis von, unter der Annahme, dass nichts über die Tabelle noch gültig ist und durch erneutes Lesen der Tabelle. Alle Lesezeichen, Instanzenschlüssel, Status und Positionierung Informationen sind ungültig.
+> Die Daten in der Tabelle sollten erneut geladen werden. Dienstanbieter senden TABLE_RELOAD, wenn beispielsweise die zugrunde liegenden Daten in einer Datenbank gespeichert sind und die Datenbank ersetzt wird. Behandeln Sie dieses Ereignis, indem Sie davon ausgehen, dass nichts zur Tabelle noch gültig ist und die Tabelle erneut gelesen wird. Alle Lesezeichen, Instanzenschlüssel, Status-und Positionierungsinformationen sind ungültig.
     
 TABLE_RESTRICT_DONE 
   
-> Eine Einschränkung, die mit einem Aufruf der **Methode IMAPITable:: Restrict** -Methode initiiert wurde abgeschlossen. 
+> Ein mit einem **IMAPITable:: Restrict** -Methodenaufruf initiierter Einschränkungs Vorgang wurde abgeschlossen. 
     
 TABLE_ROW_ADDED 
   
-> Eine neue Zeile wurde der Tabelle und das entsprechende Objekt gespeichert hinzugefügt. TABLE_ROW_ADDED Ereignisse werden nach einem Aufruf der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode generiert. 
+> Der Tabelle wurde eine neue Zeile hinzugefügt, und das entsprechende Objekt wurde gespeichert. TABLE_ROW_ADDED-Ereignisse werden nach einem Aufruf der [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode generiert. 
     
 TABLE_ROW_DELETED 
   
-> Eine Zeile wurde aus der Tabelle entfernt. Das **PropPrior** -Element wird auf NULL festgelegt. 
+> Eine Zeile wurde aus der Tabelle entfernt. Das **propPrior** -Element ist auf NULL festgelegt. 
     
 TABLE_ROW_MODIFIED 
   
-> Eine Zeile wurde geändert. **Das Zeilenelement** enthält die betroffenen Eigenschaften für die Zeile. Mehrere TABLE_ROW_MODIFIED-Ereignisse werden in der Reihenfolge gesendet, die sie in der Tabellenansicht angezeigt werden. 
+> Eine Zeile wurde geändert. Das **Row** -Element enthält die betroffenen Eigenschaften für die Zeile. Mehrere TABLE_ROW_MODIFIED-Ereignisse werden in der Reihenfolge gesendet, in der Sie in der Tabellenansicht angezeigt werden. 
     
-  TABLE_ROW_MODIFIED Ereignisse werden gesendet, nachdem Änderungen an das entsprechende Objekt mit einem Aufruf der **IMAPIProp::SaveChanges** -Methode übergeben wurden. Wenn die geänderte Zeile jetzt die erste Zeile in der Tabelle ist, ist der Wert des Tags-Eigenschaft im **PropPrior** -Member **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)).
+  TABLE_ROW_MODIFIED-Ereignisse werden gesendet, nachdem Änderungen am entsprechenden Objekt mit einem Aufruf der **IMAPIProp:: SaveChanges** -Methode übergeben wurden. Wenn die geänderte Zeile jetzt die erste Zeile in der Tabelle ist, ist der Wert des Property-Tags im **propPrior** -Element **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)).
     
 TABLE_SETCOL_DONE 
   
-> Eine Spalte Einstellung, die mit einem Aufruf der **IMAPITable::SetColumns** -Methode initiiert wurde abgeschlossen. 
+> Ein mit einem **IMAPITable::** SetColumns-Methodenaufruf initiierter Spalten Einstellungsvorgang wurde abgeschlossen. 
     
 TABLE_SORT_DONE 
   
-> Eine Tabelle sortieren Vorgang mit einem Aufruf der **SortTable** -Methode initiiert wurde abgeschlossen. 
+> Ein Tabellen Sortiervorgang, der mit einem **IMAPITable:: sortable** -Methodenaufruf initiiert wurde, wurde abgeschlossen. 
     
 **hResult**
   
-> HRESULT-Wert für den, der aufgetretenen Fehler, wenn das Element **UlTableEvent** auf TABLE_ERROR festgelegt ist. 
+> HRESULT-Wert für den aufgetretenen Fehler, wenn das **ulTableEvent** -Element auf TABLE_ERROR festgelegt ist. 
     
 **propIndex**
   
-> [SPropValue](spropvalue.md) -Struktur für die **PR_INSTANCE_KEY** -Eigenschaft der betreffenden Zeile. 
+> [SPropValue](spropvalue.md) -Struktur für die **PR_INSTANCE_KEY** -Eigenschaft der betroffenen Zeile. 
     
 **propPrior**
   
-> **SPropValue** -Struktur für die **PR_INSTANCE_KEY** -Eigenschaft der Zeile vor der betroffenen. Wenn die betroffene Zeile der ersten Zeile in der Tabelle ist, muss **PropPrior** **PR_NULL** und nicht 0 (null) festgelegt werden. 0 (null) ist eine gültige Eigenschaftentag. 
+> **SPropValue** -Struktur für die **PR_INSTANCE_KEY** -Eigenschaft der Zeile vor dem betroffenen. Wenn die betroffene Zeile die erste Zeile in der Tabelle ist, muss **propPrior** auf **PR_NULL** und nicht auf NULL festgelegt sein. NULL ist kein gültiges Property-Tag. 
     
-**row**
+**Zeile**
   
-> [SRow](srow.md) -Struktur, die die betreffenden Zeile beschreibt. Diese Struktur ist für alle Tabelle Benachrichtigungsereignisse gefüllt. Für Benachrichtigungsereignisse der Tabelle, die keine Zeilendaten übergeben, das **cValues** Mitglied der **SRow** -Struktur auf 0 (null) festgelegt ist und der **LpProps** Member wird auf NULL festgelegt. Da diese Struktur **SRow** schreibgeschützt ist. Clients müssen eine Kopie davon vornehmen, wenn sie Änderungen vornehmen möchten. Die [ScDupPropset](scduppropset.md) -Funktion kann verwendet werden, um die Kopie zu erstellen. 
+> [SRow](srow.md) -Struktur, die die betroffene Zeile beschreibt. Diese Struktur wird für alle Benachrichtigungsereignisse für Tabellen ausgefüllt. Für Tabellen Benachrichtigungsereignisse, die keine Zeilendaten überschreiten, wird das **cValues** -Element der **SRow** -Struktur auf NULL festgelegt, und das **LPPROPS** -Element wird auf NULL festgelegt. Da diese **SRow** -Struktur schreibgeschützt ist; Clients müssen eine Kopie davon erstellen, wenn Sie Änderungen vornehmen möchten. Die [ScDupPropset](scduppropset.md) -Funktion kann verwendet werden, um die Kopie zu erstellen. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **Tabelle\_Benachrichtigung** Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Das **Info** -Element enthält eine **Tabelle\_Benachrichtigung** Struktur, wenn der **UlEventType** Member der Struktur auf _FnevTableModified_festgelegt ist.
+Die **Tabellen\_Benachrichtigungs** Struktur ist ein Mitglied der Vereinigung der Strukturen, die im **Info** -Element der Benachrichtigungs [](notification.md) Struktur enthalten sind. Der **Info** -Member enthält **eine\_Tabellen Benachrichtigungs** Struktur, wenn das **ulEventType** -Element der Struktur auf _fnevTableModified_festgelegt ist.
   
-Die Reihenfolge und den Typ der Spalten in der Zeile Member entsprechen die Reihenfolge und den Typ, der zum Zeitpunkt gültig war, die die Benachrichtigung generiert wurde. Die Reihenfolge und den Typ der Zeitpunkt, die die Benachrichtigung generiert wurde ist nicht unbedingt identisch, wenn die Benachrichtigung übermittelt wurde. 
+Die Reihenfolge und der Typ der Spalten im row-Element geben die Reihenfolge und den Typ wieder, die zu dem Zeitpunkt wirksam waren, zu dem die Benachrichtigung generiert wurde. Die Reihenfolge und der Typ zu dem Zeitpunkt, zu dem die Benachrichtigung generiert wurde, entsprechen nicht unbedingt dem Zeitpunkt, zu dem die Benachrichtigung übermittelt wurde. 
   
-Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der folgenden Tabelle beschrieben.
+Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die **IMAPISupport** -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die **IMAPISupport** -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
-Da Tabelle Benachrichtigungen asynchron sind, können Clients Benachrichtigung über eine hinzugefügte Zeile nach Informationen über das Hinzufügen auf andere Weise erhalten. Es ist möglich, erhalten ein TABLE_ERROR-Ereignis, wenn in einer **IMAPITable::Sort**, **IMAPITable::SetColumns** oder **Methode IMAPITable:: Restrict**-Methode ein Fehler aufgetreten ist, oder wenn eine zugrunde liegende versucht, eine Tabelle mit, aktualisieren, beispielsweise neu oder geänderte Zeilen. 
+Da Tabellen Benachrichtigungen asynchron sind, können Clients Benachrichtigungen über eine hinzugefügte Zeile erhalten, nachdem Sie über das Hinzufügen auf eine andere Weise informiert wurden. Es ist möglich, ein TABLE_ERROR-Ereignis zu empfangen, wenn ein Fehler in einer **IMAPITable:: Sort**, **IMAPITable:: Restrict**oder **IMAPITable::** SetColumns-Methode vorliegt oder wenn ein zugrunde liegender Prozess versucht, eine Tabelle mit zu aktualisieren, beispielsweise neue oder geänderte Zeilen. 
   
 ## <a name="see-also"></a>Siehe auch
 

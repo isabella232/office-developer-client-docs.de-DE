@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 144dd06f-7225-57db-fd19-a58d6bccf0e1
 description: Eine Arbeitsumgebung für die Eingabe und das Testen von Formeln, auf die von anderen Zellen verwiesen werden kann.
-ms.openlocfilehash: 16f0bac8f139c0b03d7826ac377a964d15296dd8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a7d2c6762e96fc19986521c2ba164666b925c928
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344527"
 ---
-# <a name="scratch-section"></a>Scratch-Abschnitt
+# <a name="scratch-section"></a>Abschnitt "Scratch"
 
 Eine Arbeitsumgebung für die Eingabe und das Testen von Formeln, auf die von anderen Zellen verwiesen werden kann.
   
@@ -24,18 +24,18 @@ Eine Arbeitsumgebung für die Eingabe und das Testen von Formeln, auf die von an
 
 Sie können diesen Abschnitt über das Dialogfeld **Abschnitt einfügen** hinzufügen. Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie dann auf **Abschnitt einfügen**.
   
-Im Abschnitt **"Scratch"** wird in der Regel wiederholte komplexe Berechnungen zu isolieren. Wenn Ihre Lösung einen eindeutig definierten Zweck hat, ist es weiser eine Zelle im Abschnitt **User-Defined Cells** aus Gründen der Übersichtlichkeit verwendet werden, da benannt werden kann. 
+Der Abschnitt **Scratch** wird in der Regel verwendet, um wiederholte komplexe Berechnungen zu isolieren. Wenn Ihre Lösung einen genau definierten Zweck hat, ist es klüger, eine Zelle im Abschnitt **benutzerdefinierte Zellen** zur besseren Übersichtlichkeit zu verwenden, da Benutzer Zellen benannt werden können. 
   
-Zellen im Abschnitt **"Scratch"** verwenden Einheiten auf zwei verschiedene Arten. Die Zellen X und Y verwenden Zeichnungseinheiten; Zellen a bis D verwenden keine Einheiten. (Klicken Sie in der C-Programmierer benutzerdefinierten Desktops werden auch Zellen X und Y sind "typisiert" und Zellen A bis D sind "void".) Die Zellen **Scratch X** und **Y Scratch** werden häufig zum Ableiten von *x-* und *y -* Koordinaten wie **DrehbezX** und **DrehbezY**oder für die Zellen X und Y in einer Zelle der **Geometrie** -Abschnitt gefunden. Entwurfszellen Sie A bis D alle Einheiten anzeigen, können Sie angeben. 
+Zellen im **Scratch** -Abschnitt verwenden Einheiten auf zwei verschiedene Arten. X-und Y-Zellen verwenden Zeichnungseinheiten; A bis D-Zellen verwenden keine Einheiten. (Im Jargon von C-Programmierern werden die Zellen X und Y "typisiert", und die Zellen A bis D sind "void"). Die **** x-und **Scratch y** -Zellen werden häufig zum Ableiten von *x-* und *y-* Koordinaten, wie **PinX** und **PinY**, oder den x-und y-Zellen in einer **Geometry** -Abschnitts Zelle verwendet. Kratzer Zellen A bis D können anzeigen, welche Einheiten Sie angeben. 
   
-Ein weiterer Unterschied besteht die Möglichkeit, die diese Zellen Punktwerte zu speichern. Ein Punkt in Visio ist ein single-Paket für eine Koordinate ( *X, y*). Wenn eine Formel einen Punktwert zurückgibt, wird dieser Wert in drei verschiedene Arten, abhängig von der ShapeSheet-Zelle interpretiert, die in die Formel ist. Zellen, die auf *x* beziehen-Koordinaten (beispielsweise **DrehbezX**oder Zellen in der Spalte X von einem Abschnitt **"Geometry"** ) extrahiert nur die *X* -Teil einer Punktwert koordinieren. Zellen, die sich, die *y beziehen* -Koordinaten extrahieren nur der *y* -Teil einer Punktwert koordinieren. 
+Ein weiterer Unterschied ist die Art und Weise, in der diese Zellen Punktwerte speichern. Ein Punkt in Visio ist ein einzelnes Datenpaket für eine ( *x, y*)-Koordinate. Wenn eine Formel einen Point-Wert zurückgibt, wird dieser Wert auf eine von drei Arten interpretiert, abhängig von der ShapeSheet-Zelle, in der sich die Formel befindet. Zellen, die sich auf *x* -Koordinaten beziehen (beispielsweise **PinX**oder Zellen in der Spalte x eines **Geometry** -Abschnitts) extrahieren nur den *x* -Koordinate-Teil eines Punktwerts. Zellen, die sich auf *y* -Koordinaten beziehen, extrahieren nur den *y* -Koordinaten Teil eines Punktwerts. 
   
-Visio extrahiert beispielsweise die Formel `PNT(3,4)` auf diese drei Arten. 
+Visio extrahiert die Formel `PNT(3,4)` beispielsweise auf drei Arten. 
   
 |**Cell**|**Eingabe**|**Behandlung durch Visio**|**Ergebnis**|
 |:-----|:-----|:-----|:-----|
 | X  <br/> | `PNT(3,4)` <br/> | `PNTX(PNT(3,4))` <br/> | 3,0000 Zoll  <br/> |
-| Y  <br/> | `PNT(3,4)` <br/> | `PNTY(PNT(3,4))` <br/> | 4,0000 Zoll  <br/> |
-| A-D  <br/> | `PNT(3,4)` <br/> | `PNT(3,4)` <br/> | PNT (3.0000 Zoll, 4,0000 In.)  <br/> |
+| v  <br/> | `PNT(3,4)` <br/> | `PNTY(PNT(3,4))` <br/> | 4,0000 Zoll  <br/> |
+| A-D  <br/> | `PNT(3,4)` <br/> | `PNT(3,4)` <br/> | PNT (3.0000 in., 4,0000 in.)  <br/> |
    
 

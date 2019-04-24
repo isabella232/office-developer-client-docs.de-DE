@@ -1,5 +1,5 @@
 ---
-title: PidTagServerTypeDisplayName (kanonische Eigenschaft)
+title: Kanonische Pidtagservertypedisplayname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,28 +7,28 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7b1ebf5c-3355-4691-bf7b-164d0c411d0c
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 526cb55ab8efd2ccd05c1ed5bc91b871ee5b8280
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1ddd8812962fa962f4f2958b5ef3d817f6d2142c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356658"
 ---
-# <a name="pidtagservertypedisplayname-canonical-property"></a>PidTagServerTypeDisplayName (kanonische Eigenschaft)
+# <a name="pidtagservertypedisplayname-canonical-property"></a>Kanonische Pidtagservertypedisplayname (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Unicode-Zeichenfolge in der Statusleiste mit dieser Eigenschaft angezeigt.
+Gibt die Unicode-Zeichenfolge an, die in der Statusleiste mit dieser Eigenschaft angezeigt werden soll.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_SERVER_TYPE_DISPLAY_NAME  <br/> |
 |Kennung:  <br/> |0x341D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |Common  <br/> |
+|Bereich:  <br/> |Standard  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -40,5 +40,5 @@ Gibt die Unicode-Zeichenfolge in der Statusleiste mit dieser Eigenschaft angezei
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

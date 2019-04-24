@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251599
 localization_priority: Normal
 ms.assetid: 2b09eed1-1b01-e18e-d28e-674b8fc105fd
-description: Gibt den Text aus dem Feld Data 1 im Dialogfeld Shape-Name für ein Shape zurück (klicken Sie auf der Registerkarte Entwicklertools Shape-Name), als Zeichenfolge.
-ms.openlocfilehash: e24602ebf2f50d9321f556cad199cb3469a1e237
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Text aus dem Feld Daten 1 im Dialogfeld Shape Name für ein Shape zurück (Klicken Sie auf der Registerkarte Entwicklertools auf Shape Name), als Zeichenfolge.
+ms.openlocfilehash: 608a61f478e95c309051d5dc47919d6e68c7cb43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344653"
 ---
 # <a name="data1-function"></a>DATA1 Function
 
-Gibt den Text aus dem Feld **Data 1** im Dialogfeld **Shape-Name** für ein Shape zurück (klicken Sie auf der Registerkarte **Entwicklertools** **Shape-Name** ), als Zeichenfolge. 
+Gibt den Text aus dem Feld **Daten 1** im Dialogfeld **Shape Name** für ein Shape zurück (Klicken Sie auf der registerKarte **Entwicklertools** auf **Shape Name** ), als Zeichenfolge. 
   
 ## <a name="syntax"></a>Syntax
 

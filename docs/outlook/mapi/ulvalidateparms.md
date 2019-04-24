@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02c66b46-1f01-43fb-832c-bac27aaae19f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b71d1f477435b4a9327b4156560d1aa2e6079536
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e0cdcb92238dd4dffbcd6514e698e5511b05bf45
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360494"
 ---
 # <a name="ulvalidateparms"></a>UlValidateParms
 
@@ -25,11 +25,11 @@ ms.locfileid: "22578703"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine interne Funktion, um zu überprüfen, dass die Parameter-Clientanwendungen zu Dienstanbietern und MAPI-vergangen sind. 
+Ruft eine interne Funktion auf, um die Parameter zu überprüfen, die von Clientanwendungen an Dienstanbieter und MAPI übergeben wurden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapival.h  <br/> |
+|Headerdatei:  <br/> |Mapival.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
    
@@ -44,13 +44,13 @@ HRESULT UlValidateParms(
 
  _eMethod_
   
-> [in] Gibt den-Enumeration zurück, die-Methode, um zu überprüfen. 
+> in Gibt die zu überprüfende Methode an. 
     
- _Erster_
+ _First_
   
-> [in] Zeiger auf das erste Argument im Stapel.
+> in Zeiger auf das erste Argument im Stapel.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -58,12 +58,12 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Ein Fehler verhindert den Abschluss des Vorgangs.
+> Fehler beim Abschließen des Vorgangs.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Übergeben Sie Parameter zwischen MAPI- und Service Provider wird angenommen, dass korrekt und unterzogen werden nur Debug Validierung mit dem Makro [CheckParms](checkparms.md) . Anbieter sollten alle von Clientanwendungen übergebenen Parameter überprüfen, aber Clients sollten davon ausgehen, dass MAPI und Anbieter Parameter richtig sind. Verwenden Sie das Makro **HR_FAILED** , um Rückgabewerte testen. 
+Parameter, die zwischen MAPI-und Dienstanbietern übergeben werden, werden als richtig angenommen und werden nur mit dem [CheckParms](checkparms.md) -Makro überprüft. Anbieter sollten alle Parameter überprüfen, die von Clientanwendungen übergeben wurden, aber Clients sollten davon ausgehen, dass MAPI-und Anbieter Parameter korrekt sind. Verwenden Sie das **HR_FAILED** -Makro, um Rückgabewerte zu testen. 
   
-Das Makro **UlValidateParms** wird je nachdem, ob der aufrufende Code C oder C++ ist anders aufgerufen. Dieses Makro wird verwendet, um die Parameter für die einige **IUnknown** und MAPI-Methoden, die ULONG anstelle von HRESULT-Werte zurückgeben. das Makro [ValidateParms](validateparms.md) funktioniert für alle anderen. 
+Das **UlValidateParms** -Makro wird anders aufgerufen, je nachdem, ob es sich bei dem aufrufenden Code um C oder C++ handelt. Dieses Makro wird verwendet, um Parameter für die wenigen **IUnknown** -und MAPI-Methoden zu überprüfen, die ULONG anstelle von HRESULT-Werten zurückgeben. Das [ValidateParms](validateparms.md) -Makro funktioniert für alle anderen. 
   
 

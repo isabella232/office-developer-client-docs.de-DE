@@ -1,5 +1,5 @@
 ---
-title: PidTagRecipientNumberForAdvice (kanonische Eigenschaft)
+title: Kanonische Pidtagrecipientnumberforadvice (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 636c1e75-3024-43ca-a7dd-1bb480dfbb5b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3f23a332ee6778f71ce0809dfae8c0b6a92246a8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 79ef85955f15e0ca829ac6f206dddc17031b0562
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356693"
 ---
-# <a name="pidtagrecipientnumberforadvice-canonical-property"></a>PidTagRecipientNumberForAdvice (kanonische Eigenschaft)
+# <a name="pidtagrecipientnumberforadvice-canonical-property"></a>Kanonische Pidtagrecipientnumberforadvice (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält einen Nachrichtenempfänger Telefonnummer von der physischen Übermittlung einer Nachricht informiert.
+Diese Eigenschaft enthält die Telefonnummer eines Nachrichtenempfängers, die für die physische Übermittlung einer Nachricht aufgerufen werden soll.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Diese Eigenschaft enthält einen Nachrichtenempfänger Telefonnummer von der phy
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften sind in Verbindung mit der Zustellung an eine physische Ziel, statt ein elektronisches-Postfach verwendet werden, wenn der menschliche Empfänger nicht erwartet wird, Übermittlung vorhanden sein soll. Ein Beispiel ist die Telefonnummer auf ein Faxdeckblatt.
+Diese Eigenschaften sind für die Verwendung in Verbindung mit der Übertragung an ein physisches Ziel gedacht, statt für ein elektronisches Postfach, wenn der menschliche Empfänger nicht bei der Lieferung anwesend sein soll. Ein Beispiel ist die Telefonnummer auf einem Faxdeckblatt.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 
