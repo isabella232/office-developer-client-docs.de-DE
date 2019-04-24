@@ -7,28 +7,28 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: e1d86df1-3712-39cc-ad63-4c41f81a8f9d
 description: Gibt die Gesamtzahl der Container zurück, die das Shape als Element enthalten (einschließlich geschachtelter Beziehungen).
-ms.openlocfilehash: eee8fc1b31bafa424c09464a1451c4f30ba9b461
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 377ba8590cbe987a1c1ecc2e7d51fbd7dc027f5a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282985"
 ---
-# <a name="containercount-function"></a><span data-ttu-id="fc692-103">CONTAINERCOUNT Function</span><span class="sxs-lookup"><span data-stu-id="fc692-103">CONTAINERCOUNT Function</span></span>
+# <a name="containercount-function"></a><span data-ttu-id="8c2ba-103">CONTAINERCOUNT Function</span><span class="sxs-lookup"><span data-stu-id="8c2ba-103">CONTAINERCOUNT Function</span></span>
 
-<span data-ttu-id="fc692-104">Gibt die Gesamtzahl der Container zurück, die das Shape als Element enthalten (einschließlich geschachtelter Beziehungen).</span><span class="sxs-lookup"><span data-stu-id="fc692-104">Returns the total number of containers that include the shape as a member (including nested relationships).</span></span>
+<span data-ttu-id="8c2ba-104">Gibt die Gesamtzahl der Container zurück, die das Shape als Element enthalten (einschließlich geschachtelter Beziehungen).</span><span class="sxs-lookup"><span data-stu-id="8c2ba-104">Returns the total number of containers that include the shape as a member (including nested relationships).</span></span>
   
-## <a name="version-information"></a><span data-ttu-id="fc692-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="fc692-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="8c2ba-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="8c2ba-105">Version Information</span></span>
 
-<span data-ttu-id="fc692-106">Hinzugefügte Version: Visio 2010
-</span><span class="sxs-lookup"><span data-stu-id="fc692-106">Version Added: Visio 2010</span></span> 
+<span data-ttu-id="8c2ba-106">Hinzugefügte Version: Visio 2010
+</span><span class="sxs-lookup"><span data-stu-id="8c2ba-106">Version Added: Visio 2010</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="fc692-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="fc692-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8c2ba-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="8c2ba-107">Syntax</span></span>
 
-<span data-ttu-id="fc692-108">CONTAINERCOUNT()</span><span class="sxs-lookup"><span data-stu-id="fc692-108">CONTAINERCOUNT()</span></span>
+<span data-ttu-id="8c2ba-108">Container count ()</span><span class="sxs-lookup"><span data-stu-id="8c2ba-108">CONTAINERCOUNT()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="fc692-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fc692-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="8c2ba-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8c2ba-109">Return value</span></span>
 
- <span data-ttu-id="fc692-110">**Integer**</span><span class="sxs-lookup"><span data-stu-id="fc692-110">**Integer**</span></span>
+ <span data-ttu-id="8c2ba-110">**Integer**</span><span class="sxs-lookup"><span data-stu-id="8c2ba-110">**Integer**</span></span>
   
 

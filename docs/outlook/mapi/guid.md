@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3608c47-06be-4476-a6ef-060fac252387
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 94bafdf0ca84fa31a7df2f022265d5d5d1a99a37
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 12c50ab5936d7fffd364c276ba07ca69d3459ae7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299517"
 ---
-# <a name="guid"></a><span data-ttu-id="bc1f2-103">GUID</span><span class="sxs-lookup"><span data-stu-id="bc1f2-103">GUID</span></span>
+# <a name="guid"></a><span data-ttu-id="fa67f-103">GUID</span><span class="sxs-lookup"><span data-stu-id="fa67f-103">GUID</span></span>
 
   
   
-<span data-ttu-id="bc1f2-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bc1f2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="fa67f-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fa67f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="bc1f2-105">Beschreibt einen global eindeutigen Bezeichner (GUID).</span><span class="sxs-lookup"><span data-stu-id="bc1f2-105">Describes a globally unique identifier (GUID).</span></span> 
+<span data-ttu-id="fa67f-105">Beschreibt eine GUID (Globally Unique Identifier).</span><span class="sxs-lookup"><span data-stu-id="fa67f-105">Describes a globally unique identifier (GUID).</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="bc1f2-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="bc1f2-106">Header file:</span></span>  <br/> |<span data-ttu-id="bc1f2-107">Mapiguid.h</span><span class="sxs-lookup"><span data-stu-id="bc1f2-107">Mapiguid.h</span></span>  <br/> |
+|<span data-ttu-id="fa67f-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="fa67f-106">Header file:</span></span>  <br/> |<span data-ttu-id="fa67f-107">Mapiguid. h</span><span class="sxs-lookup"><span data-stu-id="fa67f-107">Mapiguid.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _GUID
@@ -42,46 +42,46 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a><span data-ttu-id="bc1f2-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="bc1f2-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="fa67f-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="fa67f-108">Members</span></span>
 
- <span data-ttu-id="bc1f2-109">**Data1**</span><span class="sxs-lookup"><span data-stu-id="bc1f2-109">**Data1**</span></span>
+ <span data-ttu-id="fa67f-109">**Data1**</span><span class="sxs-lookup"><span data-stu-id="fa67f-109">**Data1**</span></span>
   
-> <span data-ttu-id="bc1f2-110">Eine lange Ganzzahl ohne Vorzeichen Datenwert.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-110">An unsigned long integer data value.</span></span>
+> <span data-ttu-id="fa67f-110">Ein Datenwert mit langer Ganzzahl ohne Vorzeichen.</span><span class="sxs-lookup"><span data-stu-id="fa67f-110">An unsigned long integer data value.</span></span>
     
- <span data-ttu-id="bc1f2-111">**Data2**</span><span class="sxs-lookup"><span data-stu-id="bc1f2-111">**Data2**</span></span>
+ <span data-ttu-id="fa67f-111">**Data2**</span><span class="sxs-lookup"><span data-stu-id="fa67f-111">**Data2**</span></span>
   
-> <span data-ttu-id="bc1f2-112">Eine ganze Zahl ohne Vorzeichen kurzen Datenwert.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-112">An unsigned short integer data value.</span></span>
+> <span data-ttu-id="fa67f-112">Ein unsigned Short Integer-Datenwert.</span><span class="sxs-lookup"><span data-stu-id="fa67f-112">An unsigned short integer data value.</span></span>
     
- <span data-ttu-id="bc1f2-113">**Data3**</span><span class="sxs-lookup"><span data-stu-id="bc1f2-113">**Data3**</span></span>
+ <span data-ttu-id="fa67f-113">**Data3**</span><span class="sxs-lookup"><span data-stu-id="fa67f-113">**Data3**</span></span>
   
-> <span data-ttu-id="bc1f2-114">Eine ganze Zahl ohne Vorzeichen kurzen Datenwert.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-114">An unsigned short integer data value.</span></span>
+> <span data-ttu-id="fa67f-114">Ein unsigned Short Integer-Datenwert.</span><span class="sxs-lookup"><span data-stu-id="fa67f-114">An unsigned short integer data value.</span></span>
     
- <span data-ttu-id="bc1f2-115">**Data4**</span><span class="sxs-lookup"><span data-stu-id="bc1f2-115">**Data4**</span></span>
+ <span data-ttu-id="fa67f-115">**Data4**</span><span class="sxs-lookup"><span data-stu-id="fa67f-115">**Data4**</span></span>
   
-> <span data-ttu-id="bc1f2-116">Ein Array von nicht signierte Zeichen.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-116">An array of unsigned characters.</span></span>
+> <span data-ttu-id="fa67f-116">Ein Array mit nicht signierten Zeichen.</span><span class="sxs-lookup"><span data-stu-id="fa67f-116">An array of unsigned characters.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="bc1f2-117">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="bc1f2-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fa67f-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="fa67f-117">Remarks</span></span>
 
- <span data-ttu-id="bc1f2-118">**GUID** -Strukturen werden in MAPI wie folgt verwendet:</span><span class="sxs-lookup"><span data-stu-id="bc1f2-118">**GUID** structures are used in MAPI as follows:</span></span> 
+ <span data-ttu-id="fa67f-118">**GUID** -Strukturen werden in MAPI wie folgt verwendet:</span><span class="sxs-lookup"><span data-stu-id="fa67f-118">**GUID** structures are used in MAPI as follows:</span></span> 
   
-- <span data-ttu-id="bc1f2-119">In den [MAPIUID](mapiuid.md) -Strukturen, mit die Dienstanbieter eindeutig identifiziert.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-119">In the [MAPIUID](mapiuid.md) structures that uniquely identify service providers.</span></span> 
+- <span data-ttu-id="fa67f-119">In den [MAPIUID](mapiuid.md) -Strukturen, die Dienstanbieter eindeutig identifizieren.</span><span class="sxs-lookup"><span data-stu-id="fa67f-119">In the [MAPIUID](mapiuid.md) structures that uniquely identify service providers.</span></span> 
     
-- <span data-ttu-id="bc1f2-120">Schnittstelle-Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-120">For interface identifiers.</span></span>
+- <span data-ttu-id="fa67f-120">Für Schnittstellenbezeichner.</span><span class="sxs-lookup"><span data-stu-id="fa67f-120">For interface identifiers.</span></span>
     
-- <span data-ttu-id="bc1f2-121">Legen in die Eigenschaft Namen der benannten Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-121">In the property set names of named properties.</span></span> 
+- <span data-ttu-id="fa67f-121">In den Eigenschaftensatz Namen benannter Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="fa67f-121">In the property set names of named properties.</span></span> 
     
-<span data-ttu-id="bc1f2-122">Nachrichtenspeicher und Adresse adressbuchanbietern implementierte generieren eine **GUID** -Struktur, die in ihrer **MAPIUID** Struktur verwendet.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-122">Message store and address book providers generate a **GUID** structure to use in their **MAPIUID** structure.</span></span> <span data-ttu-id="bc1f2-123">Informieren Sie, indem Sie die resultierende **MAPIUID** an [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)übergeben, dieser Dienstanbieter MAPI der jeweiligen eindeutigen Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-123">By passing the resulting **MAPIUID** to [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md), these service providers inform MAPI of their unique identifier.</span></span>
+<span data-ttu-id="fa67f-122">Nachrichtenspeicher-und Adressbuchanbieter generieren eine **GUID** -Struktur, die in Ihrer **MAPIUID** -Struktur verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="fa67f-122">Message store and address book providers generate a **GUID** structure to use in their **MAPIUID** structure.</span></span> <span data-ttu-id="fa67f-123">Durch das Übergeben des resultierenden **MAPIUID** an [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md)informieren diese Dienstanbieter MAPI über Ihren eindeutigen Bezeichner.</span><span class="sxs-lookup"><span data-stu-id="fa67f-123">By passing the resulting **MAPIUID** to [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md), these service providers inform MAPI of their unique identifier.</span></span>
   
-<span data-ttu-id="bc1f2-124">Darüber hinaus werden sie in der Implementierung von Microsoft Remote Procedure Call (RPC) sowie dem Objekt Description Language () verwendet.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-124">Also, they are used in the implementation of Microsoft Remote Procedure Call (RPC) and the Object Description Language (ODL).</span></span> <span data-ttu-id="bc1f2-125">Weitere Informationen zu diesen verwendet finden Sie unter der *Microsoft RPC Programmer's Guide und Verweis* *OLE Programmer's Reference* und *In OLE*, *Second Edition* .</span><span class="sxs-lookup"><span data-stu-id="bc1f2-125">For more information about these uses, see the  *Microsoft RPC Programmer's Guide and Reference*, *OLE Programmer's Reference*  ,and  *Inside OLE*, *Second Edition*  .</span></span> 
+<span data-ttu-id="fa67f-124">Außerdem werden Sie bei der Implementierung von Microsoft Remote Procedure Call (RPC) und der Object Description Language (ODL) verwendet.</span><span class="sxs-lookup"><span data-stu-id="fa67f-124">Also, they are used in the implementation of Microsoft Remote Procedure Call (RPC) and the Object Description Language (ODL).</span></span> <span data-ttu-id="fa67f-125">Weitere Informationen zu diesen Zwecken finden Sie im *Microsoft RPC Programmer es Guide and Reference*, *OLE Programmer es Reference* und *Inside OLE*, *Second Edition* .</span><span class="sxs-lookup"><span data-stu-id="fa67f-125">For more information about these uses, see the  *Microsoft RPC Programmer's Guide and Reference*, *OLE Programmer's Reference*  ,and  *Inside OLE*, *Second Edition*  .</span></span> 
   
-<span data-ttu-id="bc1f2-126">Die **GUID** -Struktur ist in der *Win32 Programmer's Reference* definiert.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-126">The **GUID** structure is defined in the  *Win32 Programmer's Reference*  .</span></span> <span data-ttu-id="bc1f2-127">Konkrete Werte für die **GUID** -Strukturen, die in MAPI verwendet werden, werden in der MAPI-Headerdatei Mapiguid.h definiert.</span><span class="sxs-lookup"><span data-stu-id="bc1f2-127">Specific values for **GUID** structures that are used within MAPI are defined in the MAPI header file Mapiguid.h.</span></span> 
+<span data-ttu-id="fa67f-126">Die **GUID** -Struktur ist in der *Win32-Programmierreferenz* definiert.</span><span class="sxs-lookup"><span data-stu-id="fa67f-126">The **GUID** structure is defined in the  *Win32 Programmer's Reference*  .</span></span> <span data-ttu-id="fa67f-127">Bestimmte Werte für **GUID** -Strukturen, die in MAPI verwendet werden, sind in der MAPI-Headerdatei Mapiguid. h definiert.</span><span class="sxs-lookup"><span data-stu-id="fa67f-127">Specific values for **GUID** structures that are used within MAPI are defined in the MAPI header file Mapiguid.h.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="bc1f2-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bc1f2-128">See also</span></span>
-
-
-
-[<span data-ttu-id="bc1f2-129">MAPIUID</span><span class="sxs-lookup"><span data-stu-id="bc1f2-129">MAPIUID</span></span>](mapiuid.md)
+## <a name="see-also"></a><span data-ttu-id="fa67f-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fa67f-128">See also</span></span>
 
 
-[<span data-ttu-id="bc1f2-130">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="bc1f2-130">MAPI Structures</span></span>](mapi-structures.md)
+
+[<span data-ttu-id="fa67f-129">MAPIUID</span><span class="sxs-lookup"><span data-stu-id="fa67f-129">MAPIUID</span></span>](mapiuid.md)
+
+
+[<span data-ttu-id="fa67f-130">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="fa67f-130">MAPI Structures</span></span>](mapi-structures.md)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 10c7cb9d-2e9d-72eb-6b07-31eed892e646
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: a84114a3363f9cbcd9455bce12d3171843bd18a4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: 4440df4b8e4a46e13748cf47d599e16599aaf858
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270084"
 ---
-# <a name="imapiofflinenotifynotify"></a><span data-ttu-id="1794c-103">IMAPIOfflineNotify::Notify</span><span class="sxs-lookup"><span data-stu-id="1794c-103">IMAPIOfflineNotify::Notify</span></span>
+# <a name="imapiofflinenotifynotify"></a><span data-ttu-id="8e8d9-103">IMAPIOfflineNotify::Notify</span><span class="sxs-lookup"><span data-stu-id="8e8d9-103">IMAPIOfflineNotify::Notify</span></span>
 
   
   
-<span data-ttu-id="1794c-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1794c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8e8d9-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8e8d9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="1794c-105">Sendet Benachrichtigungen an den Client zu den geänderten in Verbindungsstatus.</span><span class="sxs-lookup"><span data-stu-id="1794c-105">Sends notifications to the client about changes in connection state.</span></span>
+<span data-ttu-id="8e8d9-105">Sendet Benachrichtigungen an den Client über Änderungen im Verbindungsstatus.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-105">Sends notifications to the client about changes in connection state.</span></span>
   
 ```cpp
 void STDMETHODCALLTYPE Notify(  
@@ -33,25 +33,25 @@ void STDMETHODCALLTYPE Notify(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="1794c-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="1794c-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="8e8d9-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="8e8d9-106">Parameters</span></span>
 
- <span data-ttu-id="1794c-107">_pNotifyInfo_</span><span class="sxs-lookup"><span data-stu-id="1794c-107">_pNotifyInfo_</span></span>
+ <span data-ttu-id="8e8d9-107">_pNotifyInfo_</span><span class="sxs-lookup"><span data-stu-id="8e8d9-107">_pNotifyInfo_</span></span>
   
-> <span data-ttu-id="1794c-108">[in] Benachrichtigung, die Outlook an den Client sendet.</span><span class="sxs-lookup"><span data-stu-id="1794c-108">[in] The notification that Outlook sends to the client.</span></span> <span data-ttu-id="1794c-109">Die Benachrichtigung gibt den Teil des Verbindungsstatus, der geändert wurde, den alten Verbindungsstatus und den neuen Verbindungsstatus.</span><span class="sxs-lookup"><span data-stu-id="1794c-109">The notification indicates the part of the connection state that has changed, the old connection state, and the new connection state.</span></span>
+> <span data-ttu-id="8e8d9-108">in Die Benachrichtigung, die Outlook an den Client sendet.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-108">[in] The notification that Outlook sends to the client.</span></span> <span data-ttu-id="8e8d9-109">Die Benachrichtigung gibt den Teil des Verbindungsstatus an, der geändert wurde, den alten Verbindungsstatus und den neuen Verbindungsstatus.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-109">The notification indicates the part of the connection state that has changed, the old connection state, and the new connection state.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="1794c-110">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="1794c-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8e8d9-110">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8e8d9-110">Remarks</span></span>
 
-<span data-ttu-id="1794c-111">Outlook verwendet diese Methode, um die Benachrichtigung Rückrufe an einen Client gesendet.</span><span class="sxs-lookup"><span data-stu-id="1794c-111">Outlook uses this method to send notification callbacks to a client.</span></span> <span data-ttu-id="1794c-112">Microsoft Outlook 2010 oder Microsoft Outlook 2013 diese Schnittstelle zur Verfügung zu stellen, muss der Client diese Schnittstelle implementieren, und übergeben einen Zeiger als Mitglied in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** beim Einrichten von Rückrufe mit **[IMAPIOfflineMgr::Advise ](imapiofflinemgr-advise.md)**.</span><span class="sxs-lookup"><span data-stu-id="1794c-112">To make this interface available to Microsoft Outlook 2010 or Microsoft Outlook 2013, the client must implement this interface and pass a pointer to it as a member in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** when setting up callbacks using **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)**.</span></span> 
+<span data-ttu-id="8e8d9-111">Outlook verwendet diese Methode zum Senden von Benachrichtigungs Rückrufen an einen Client.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-111">Outlook uses this method to send notification callbacks to a client.</span></span> <span data-ttu-id="8e8d9-112">Um diese Schnittstelle für Microsoft Outlook 2010 oder Microsoft Outlook 2013 zur Verfügung zu stellen, muss der Client diese Schnittstelle implementieren und einen Zeiger als Member in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** beim Einrichten von Rückrufen mithilfe von **[IMAPIOfflineMgr übergeben:: Advise ](imapiofflinemgr-advise.md)**.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-112">To make this interface available to Microsoft Outlook 2010 or Microsoft Outlook 2013, the client must implement this interface and pass a pointer to it as a member in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** when setting up callbacks using **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)**.</span></span> 
   
-<span data-ttu-id="1794c-113">Der Client auch übergibt an **MAPIOFFLINE_ADVISEINFO** ein Clienttoken, Outlook 2010 oder Outlook 2013 verwendet in **IMAPIOfflineNotify::Notify** zum Identifizieren des Clients für den Rückruf Benachrichtigung registriert.</span><span class="sxs-lookup"><span data-stu-id="1794c-113">The client also passes to **MAPIOFFLINE_ADVISEINFO** a client token that Outlook 2010 or Outlook 2013 uses in **IMAPIOfflineNotify::Notify** to identify the client registered for the notification callback.</span></span> 
+<span data-ttu-id="8e8d9-113">Der Client übergibt auch an **MAPIOFFLINE_ADVISEINFO** ein Clienttoken, das Outlook 2010 oder Outlook 2013 in **IMAPIOfflineNotify:: notify** verwendet, um den für den Benachrichtigungsrückruf registrierten Client zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-113">The client also passes to **MAPIOFFLINE_ADVISEINFO** a client token that Outlook 2010 or Outlook 2013 uses in **IMAPIOfflineNotify::Notify** to identify the client registered for the notification callback.</span></span> 
   
-<span data-ttu-id="1794c-114">Im Allgemeinen Outlook 2010 und Outlook 2013 können benachrichtigt werden, einem Client online/offline ändert und andere ändern, aber die Offline Zustand-API unterstützt nur Benachrichtigungen für Online-/offline geändert wird.</span><span class="sxs-lookup"><span data-stu-id="1794c-114">In general, Outlook 2010 and Outlook 2013 can notify a client of online/offline changes and other connection state changes, but the Offline State API supports only notifications for online/offline changes.</span></span> <span data-ttu-id="1794c-115">Der Client muss alle anderen Benachrichtigungen ignorieren.</span><span class="sxs-lookup"><span data-stu-id="1794c-115">The client must ignore all other notifications.</span></span>
+<span data-ttu-id="8e8d9-114">Im Allgemeinen können Outlook 2010 und Outlook 2013 einen Client über Online/Offline-Änderungen und andere Verbindungsstatusänderungen informieren, die Offlinestatus-API unterstützt jedoch nur Benachrichtigungen für Online/Offline-Änderungen.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-114">In general, Outlook 2010 and Outlook 2013 can notify a client of online/offline changes and other connection state changes, but the Offline State API supports only notifications for online/offline changes.</span></span> <span data-ttu-id="8e8d9-115">Der Client muss alle anderen Benachrichtigungen ignorieren.</span><span class="sxs-lookup"><span data-stu-id="8e8d9-115">The client must ignore all other notifications.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="1794c-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1794c-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8e8d9-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8e8d9-116">See also</span></span>
 
 
 
-[<span data-ttu-id="1794c-117">Informationen zu der Offlinestatus-API</span><span class="sxs-lookup"><span data-stu-id="1794c-117">About the Offline State API</span></span>](about-the-offline-state-api.md)
+[<span data-ttu-id="8e8d9-117">Informationen zur Offlinestatus-API</span><span class="sxs-lookup"><span data-stu-id="8e8d9-117">About the Offline State API</span></span>](about-the-offline-state-api.md)
   
-[<span data-ttu-id="1794c-118">MAPIOFFLINE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="1794c-118">MAPIOFFLINE_NOTIFY</span></span>](mapioffline_notify.md)
+[<span data-ttu-id="8e8d9-118">MAPIOFFLINE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="8e8d9-118">MAPIOFFLINE_NOTIFY</span></span>](mapioffline_notify.md)
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c1f630c6-9e95-49c0-9757-4685c98184dc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 961ac2d26cd58e625c35d00bd1216cdee2ce57a0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fb26c7f366ce6a262362001773e825c60d0e4ec3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282831"
 ---
-# <a name="ixplogonflushqueues"></a><span data-ttu-id="dfb06-103">IXPLogon::FlushQueues</span><span class="sxs-lookup"><span data-stu-id="dfb06-103">IXPLogon::FlushQueues</span></span>
+# <a name="ixplogonflushqueues"></a><span data-ttu-id="b08ba-103">IXPLogon::FlushQueues</span><span class="sxs-lookup"><span data-stu-id="b08ba-103">IXPLogon::FlushQueues</span></span>
 
   
   
-<span data-ttu-id="dfb06-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="dfb06-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b08ba-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b08ba-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="dfb06-105">Fordert, dass der Adressbuchhierarchie sofort alle ausstehende eingehende oder ausgehende Nachrichten übermitteln.</span><span class="sxs-lookup"><span data-stu-id="dfb06-105">Requests that the transport provider immediately deliver all pending inbound or outbound messages.</span></span>
+<span data-ttu-id="b08ba-105">Fordert, dass der Transportanbieter alle ausstehenden eingehenden oder ausgehenden Nachrichten sofort bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="b08ba-105">Requests that the transport provider immediately deliver all pending inbound or outbound messages.</span></span>
   
 ```cpp
 HRESULT FlushQueues(
@@ -36,57 +36,57 @@ HRESULT FlushQueues(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="dfb06-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="dfb06-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b08ba-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="b08ba-106">Parameters</span></span>
 
- <span data-ttu-id="dfb06-107">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="dfb06-107">_ulUIParam_</span></span>
+ <span data-ttu-id="b08ba-107">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="b08ba-107">_ulUIParam_</span></span>
   
-> <span data-ttu-id="dfb06-108">[in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, die diese Methode anzeigt.</span><span class="sxs-lookup"><span data-stu-id="dfb06-108">[in] A handle to the parent window of any dialog boxes or windows that this method displays.</span></span>
+> <span data-ttu-id="b08ba-108">in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.</span><span class="sxs-lookup"><span data-stu-id="b08ba-108">[in] A handle to the parent window of any dialog boxes or windows that this method displays.</span></span>
     
- <span data-ttu-id="dfb06-109">_cbTargetTransport_</span><span class="sxs-lookup"><span data-stu-id="dfb06-109">_cbTargetTransport_</span></span>
+ <span data-ttu-id="b08ba-109">_cbTargetTransport_</span><span class="sxs-lookup"><span data-stu-id="b08ba-109">_cbTargetTransport_</span></span>
   
-> <span data-ttu-id="dfb06-110">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="dfb06-110">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="b08ba-110">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="b08ba-110">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="dfb06-111">_lpTargetTransport_</span><span class="sxs-lookup"><span data-stu-id="dfb06-111">_lpTargetTransport_</span></span>
+ <span data-ttu-id="b08ba-111">_lpTargetTransport_</span><span class="sxs-lookup"><span data-stu-id="b08ba-111">_lpTargetTransport_</span></span>
   
-> <span data-ttu-id="dfb06-112">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="dfb06-112">[in] Reserved; must be NULL.</span></span>
+> <span data-ttu-id="b08ba-112">in Reserviert muss NULL sein.</span><span class="sxs-lookup"><span data-stu-id="b08ba-112">[in] Reserved; must be NULL.</span></span>
     
- <span data-ttu-id="dfb06-113">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="dfb06-113">_ulFlags_</span></span>
+ <span data-ttu-id="b08ba-113">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="b08ba-113">_ulFlags_</span></span>
   
-> <span data-ttu-id="dfb06-114">[in] Eine Bitmaske aus Flags, die steuert, wie Nachrichten die Warteschlange das leeren erfolgt.</span><span class="sxs-lookup"><span data-stu-id="dfb06-114">[in] A bitmask of flags that controls how message queue flushing is accomplished.</span></span> <span data-ttu-id="dfb06-115">Die folgenden Kennzeichen können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="dfb06-115">The following flags can be set:</span></span>
+> <span data-ttu-id="b08ba-114">in Eine Bitmaske von Flags, die steuert, wie die Nachrichten Warteschlangen Spülung durchgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="b08ba-114">[in] A bitmask of flags that controls how message queue flushing is accomplished.</span></span> <span data-ttu-id="b08ba-115">Die folgenden Flags können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="b08ba-115">The following flags can be set:</span></span>
     
-<span data-ttu-id="dfb06-116">FLUSH_DOWNLOAD</span><span class="sxs-lookup"><span data-stu-id="dfb06-116">FLUSH_DOWNLOAD</span></span> 
+<span data-ttu-id="b08ba-116">FLUSH_DOWNLOAD</span><span class="sxs-lookup"><span data-stu-id="b08ba-116">FLUSH_DOWNLOAD</span></span> 
   
-> <span data-ttu-id="dfb06-117">Die Warteschlange für eingehende Nachrichten oder Warteschlangen geleert werden sollte.</span><span class="sxs-lookup"><span data-stu-id="dfb06-117">The inbound message queue or queues should be flushed.</span></span>
+> <span data-ttu-id="b08ba-117">Die Warteschlange für eingehende Nachrichten oder Warteschlangen sollte geleert werden.</span><span class="sxs-lookup"><span data-stu-id="b08ba-117">The inbound message queue or queues should be flushed.</span></span>
     
-<span data-ttu-id="dfb06-118">FLUSH_FORCE</span><span class="sxs-lookup"><span data-stu-id="dfb06-118">FLUSH_FORCE</span></span> 
+<span data-ttu-id="b08ba-118">FLUSH_FORCE</span><span class="sxs-lookup"><span data-stu-id="b08ba-118">FLUSH_FORCE</span></span> 
   
-> <span data-ttu-id="dfb06-119">Der Adressbuchhierarchie sollte Verarbeiten dieser Anforderung, wenn möglich, auch wenn dies also Zeit in Anspruch nehmen ist.</span><span class="sxs-lookup"><span data-stu-id="dfb06-119">The transport provider should process this request, if possible, even if doing so is time consuming.</span></span> 
+> <span data-ttu-id="b08ba-119">Der Transportanbieter sollte diese Anforderung, wenn möglich, verarbeiten, auch wenn dies zeitaufwändig ist.</span><span class="sxs-lookup"><span data-stu-id="b08ba-119">The transport provider should process this request, if possible, even if doing so is time consuming.</span></span> 
     
-<span data-ttu-id="dfb06-120">FLUSH_NO_UI</span><span class="sxs-lookup"><span data-stu-id="dfb06-120">FLUSH_NO_UI</span></span> 
+<span data-ttu-id="b08ba-120">FLUSH_NO_UI</span><span class="sxs-lookup"><span data-stu-id="b08ba-120">FLUSH_NO_UI</span></span> 
   
-> <span data-ttu-id="dfb06-121">Der Transportdienst keine Benutzeroberfläche angezeigt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="dfb06-121">The transport provider should not display a user interface.</span></span>
+> <span data-ttu-id="b08ba-121">Der Transportanbieter sollte keine Benutzeroberfläche anzeigen.</span><span class="sxs-lookup"><span data-stu-id="b08ba-121">The transport provider should not display a user interface.</span></span>
     
-<span data-ttu-id="dfb06-122">FLUSH_UPLOAD</span><span class="sxs-lookup"><span data-stu-id="dfb06-122">FLUSH_UPLOAD</span></span> 
+<span data-ttu-id="b08ba-122">FLUSH_UPLOAD</span><span class="sxs-lookup"><span data-stu-id="b08ba-122">FLUSH_UPLOAD</span></span> 
   
-> <span data-ttu-id="dfb06-123">Die Warteschlange für ausgehende Nachrichten oder Warteschlangen geleert werden sollte.</span><span class="sxs-lookup"><span data-stu-id="dfb06-123">The outbound message queue or queues should be flushed.</span></span>
+> <span data-ttu-id="b08ba-123">Die Warteschlange für ausgehende Nachrichten oder Warteschlangen sollte geleert werden.</span><span class="sxs-lookup"><span data-stu-id="b08ba-123">The outbound message queue or queues should be flushed.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="dfb06-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dfb06-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b08ba-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b08ba-124">Return value</span></span>
 
-<span data-ttu-id="dfb06-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="dfb06-125">S_OK</span></span> 
+<span data-ttu-id="b08ba-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="b08ba-125">S_OK</span></span> 
   
-> <span data-ttu-id="dfb06-126">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dfb06-126">The call succeeded and returned the expected value or values.</span></span>
+> <span data-ttu-id="b08ba-126">Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b08ba-126">The call succeeded and returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="dfb06-127">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="dfb06-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b08ba-127">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b08ba-127">Remarks</span></span>
 
-<span data-ttu-id="dfb06-128">Die MAPI-Warteschlange Ruft die **IXPLogon::FlushQueues** -Methode, um der Adressbuchhierarchie darauf hinzuweisen, dass die MAPI-Warteschlange ist dabei, die Verarbeitung von Nachrichten zu beginnen.</span><span class="sxs-lookup"><span data-stu-id="dfb06-128">The MAPI spooler calls the **IXPLogon::FlushQueues** method to advise the transport provider that the MAPI spooler is about to begin processing messages.</span></span> <span data-ttu-id="dfb06-129">Der Transportdienst sollte die [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode zum Festlegen einer entsprechenden Bit für den Zustand in die **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))-Eigenschaft des seine Statuszeile aufrufen.</span><span class="sxs-lookup"><span data-stu-id="dfb06-129">The transport provider should call the [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) method to set an appropriate bit for its state in the **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) property of its status row.</span></span> <span data-ttu-id="dfb06-130">Nach dem Aktualisieren der Statuszeile, sollte der Adressbuchhierarchie für den Anruf **FlushQueues** S_OK zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dfb06-130">After updating its status row, the transport provider should return S_OK for the **FlushQueues** call.</span></span> <span data-ttu-id="dfb06-131">Die MAPI-Warteschlange startet das Senden von Nachrichten, mit dem Vorgang synchron an die Warteschlange MAPI.</span><span class="sxs-lookup"><span data-stu-id="dfb06-131">The MAPI spooler then starts sending messages, with the operation being synchronous to the MAPI spooler.</span></span> 
+<span data-ttu-id="b08ba-128">Der MAPI-Spooler Ruft die **IXPLogon:: FlushQueues** -Methode auf, um dem Transportanbieter zu raten, dass der MAPI-Spooler mit der Verarbeitung von Nachrichten beginnen soll.</span><span class="sxs-lookup"><span data-stu-id="b08ba-128">The MAPI spooler calls the **IXPLogon::FlushQueues** method to advise the transport provider that the MAPI spooler is about to begin processing messages.</span></span> <span data-ttu-id="b08ba-129">Der Transportanbieter sollte die [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode aufrufen, um ein entsprechendes Bit für seinen Status in der **PR_STATUS_CODE** ([pidtagstatuscode (](pidtagstatuscode-canonical-property.md))-Eigenschaft der Status Zeile festzulegen.</span><span class="sxs-lookup"><span data-stu-id="b08ba-129">The transport provider should call the [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) method to set an appropriate bit for its state in the **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) property of its status row.</span></span> <span data-ttu-id="b08ba-130">Nach dem Aktualisieren der Statuszeile sollte der Transportanbieter S_OK für den **FlushQueues** -Aufruf zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="b08ba-130">After updating its status row, the transport provider should return S_OK for the **FlushQueues** call.</span></span> <span data-ttu-id="b08ba-131">Der MAPI-Spooler startet dann das Senden von Nachrichten, wobei der Vorgang synchron mit dem MAPI-Spooler ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="b08ba-131">The MAPI spooler then starts sending messages, with the operation being synchronous to the MAPI spooler.</span></span> 
   
-<span data-ttu-id="dfb06-132">Unterstützung der Implementierung der [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) -Methode ruft die MAPI-Warteschlange **IXPLogon::FlushQueues** für alle Objekte, Anmeldung für aktiven Transport-Anbieter, die in einer Sitzung Profil ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="dfb06-132">To support its implementation of the [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) method, the MAPI spooler calls **IXPLogon::FlushQueues** for all logon objects for active transport providers that are running in a profile session.</span></span> <span data-ttu-id="dfb06-133">Wenn als Ergebnis einer Client-Anwendung **IMAPIStatus::FlushQueues**Aufruf eines Transportdienstes **FlushQueues** -Methode aufgerufen wird, tritt die Verarbeitung von Nachrichten asynchron an den Client.</span><span class="sxs-lookup"><span data-stu-id="dfb06-133">When a transport provider's **FlushQueues** method is called as a result of a client application call to **IMAPIStatus::FlushQueues**, the message processing occurs asynchronously to the client.</span></span>
+<span data-ttu-id="b08ba-132">Zur Unterstützung der Implementierung der [IMAPIStatus:: FlushQueues](imapistatus-flushqueues.md) -Methode ruft der MAPI-Spooler **IXPLogon:: FlushQueues** für alle Anmeldeobjekte für aktive Transportanbieter auf, die in einer Profil Sitzung laufen.</span><span class="sxs-lookup"><span data-stu-id="b08ba-132">To support its implementation of the [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) method, the MAPI spooler calls **IXPLogon::FlushQueues** for all logon objects for active transport providers that are running in a profile session.</span></span> <span data-ttu-id="b08ba-133">Wenn die **FlushQueues** -Methode eines Transportanbieters als Ergebnis eines Client Anwendungsaufrufs an **IMAPIStatus:: FlushQueues**aufgerufen wird, wird die Nachrichtenverarbeitung asynchron für den Client ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="b08ba-133">When a transport provider's **FlushQueues** method is called as a result of a client application call to **IMAPIStatus::FlushQueues**, the message processing occurs asynchronously to the client.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="dfb06-134">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dfb06-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b08ba-134">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b08ba-134">See also</span></span>
 
 
 
-[<span data-ttu-id="dfb06-135">IMAPIStatus::FlushQueues</span><span class="sxs-lookup"><span data-stu-id="dfb06-135">IMAPIStatus::FlushQueues</span></span>](imapistatus-flushqueues.md)
+[<span data-ttu-id="b08ba-135">IMAPIStatus::FlushQueues</span><span class="sxs-lookup"><span data-stu-id="b08ba-135">IMAPIStatus::FlushQueues</span></span>](imapistatus-flushqueues.md)
   
-[<span data-ttu-id="dfb06-136">IXPLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="dfb06-136">IXPLogon : IUnknown</span></span>](ixplogoniunknown.md)
+[<span data-ttu-id="b08ba-136">IXPLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="b08ba-136">IXPLogon : IUnknown</span></span>](ixplogoniunknown.md)
 

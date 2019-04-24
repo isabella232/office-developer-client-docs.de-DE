@@ -8,44 +8,44 @@ f1_keywords:
 - Vis_DSS.chm82251448
 localization_priority: Normal
 ms.assetid: 87508007-8ad2-3bcf-55dc-f0207c7c6fe3
-description: 'Gibt true zurück, wenn der Wert von Zellbezug beliebiger Fehlertyp #n /; Andernfalls wird FALSE zurückgegeben. Die Funktion ISERR wird in Formeln verwendet, die auf einer anderen Zelle verweisen.'
-ms.openlocfilehash: 651b095e53b7f2690aa9c8774d87d5afcede75be
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gibt TRUE zurück, wenn der Wert von cellreference ein beliebiger Fehlertyp ist, außer #N/A; Andernfalls wird FALSE zurückgegeben. Die ISERR-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen.'
+ms.openlocfilehash: e2117c38d3cad2408295ed6894aefc78e107596e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297249"
 ---
-# <a name="iserr-function"></a><span data-ttu-id="31a27-104">ISERR Function</span><span class="sxs-lookup"><span data-stu-id="31a27-104">ISERR Function</span></span>
+# <a name="iserr-function"></a><span data-ttu-id="90bd4-104">ISERR Function</span><span class="sxs-lookup"><span data-stu-id="90bd4-104">ISERR Function</span></span>
 
-<span data-ttu-id="31a27-105">Gibt True, wenn der Wert von _Zellbezug_ beliebiger Fehlertyp #n /; Andernfalls wird FALSE zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="31a27-105">Returns TRUE if the value of  _cellreference_ is any error type except #N/A; otherwise, it returns FALSE.</span></span> <span data-ttu-id="31a27-106">Die Funktion ISERR wird in Formeln verwendet, die auf einer anderen Zelle verweisen.</span><span class="sxs-lookup"><span data-stu-id="31a27-106">The ISERR function is used in formulas that refer to another cell.</span></span> 
+<span data-ttu-id="90bd4-105">Gibt TRUE zurück, wenn der Wert von _cellreference_ ein beliebiger Fehlertyp ist, außer #N/a; Andernfalls wird FALSE zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="90bd4-105">Returns TRUE if the value of  _cellreference_ is any error type except #N/A; otherwise, it returns FALSE.</span></span> <span data-ttu-id="90bd4-106">Die ISERR-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen.</span><span class="sxs-lookup"><span data-stu-id="90bd4-106">The ISERR function is used in formulas that refer to another cell.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="31a27-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="31a27-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="90bd4-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="90bd4-107">Syntax</span></span>
 
-<span data-ttu-id="31a27-108">ISERR (** *Zellbezug* **)</span><span class="sxs-lookup"><span data-stu-id="31a27-108">ISERR(** *cellreference* ** )</span></span> 
+<span data-ttu-id="90bd4-108">ISERR (\* \* *cellreference* \* \*)</span><span class="sxs-lookup"><span data-stu-id="90bd4-108">ISERR(\*\* *cellreference* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="31a27-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="31a27-109">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="90bd4-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="90bd4-109">Parameters</span></span>
 
-|<span data-ttu-id="31a27-110">**Name**</span><span class="sxs-lookup"><span data-stu-id="31a27-110">**Name**</span></span>|<span data-ttu-id="31a27-111">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="31a27-111">**Required/Optional**</span></span>|<span data-ttu-id="31a27-112">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="31a27-112">**Data Type**</span></span>|<span data-ttu-id="31a27-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="31a27-113">**Description**</span></span>|
+|<span data-ttu-id="90bd4-110">**Name**</span><span class="sxs-lookup"><span data-stu-id="90bd4-110">**Name**</span></span>|<span data-ttu-id="90bd4-111">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="90bd4-111">**Required/Optional**</span></span>|<span data-ttu-id="90bd4-112">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="90bd4-112">**Data Type**</span></span>|<span data-ttu-id="90bd4-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="90bd4-113">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="31a27-114">_Zellbezug_</span><span class="sxs-lookup"><span data-stu-id="31a27-114">_cellreference_</span></span> <br/> |<span data-ttu-id="31a27-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="31a27-115">Required</span></span>  <br/> |<span data-ttu-id="31a27-116">**String**</span><span class="sxs-lookup"><span data-stu-id="31a27-116">**String**</span></span> <br/> |<span data-ttu-id="31a27-117">Bezug auf eine Zelle.</span><span class="sxs-lookup"><span data-stu-id="31a27-117">Reference to a cell.</span></span>  <br/> |
+| <span data-ttu-id="90bd4-114">_cellreference_</span><span class="sxs-lookup"><span data-stu-id="90bd4-114">_cellreference_</span></span> <br/> |<span data-ttu-id="90bd4-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="90bd4-115">Required</span></span>  <br/> |<span data-ttu-id="90bd4-116">**String**</span><span class="sxs-lookup"><span data-stu-id="90bd4-116">**String**</span></span> <br/> |<span data-ttu-id="90bd4-117">Bezug auf eine Zelle.</span><span class="sxs-lookup"><span data-stu-id="90bd4-117">Reference to a cell.</span></span>  <br/> |
    
-## <a name="example-1"></a><span data-ttu-id="31a27-118">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="31a27-118">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="90bd4-118">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="90bd4-118">Example 1</span></span>
 
-|<span data-ttu-id="31a27-119">**Cell**</span><span class="sxs-lookup"><span data-stu-id="31a27-119">**Cell**</span></span>|<span data-ttu-id="31a27-120">**Formula**</span><span class="sxs-lookup"><span data-stu-id="31a27-120">**Formula**</span></span>|<span data-ttu-id="31a27-121">**Zurückgegebener Wert**</span><span class="sxs-lookup"><span data-stu-id="31a27-121">**Value returned**</span></span>|
+|<span data-ttu-id="90bd4-119">**Cell**</span><span class="sxs-lookup"><span data-stu-id="90bd4-119">**Cell**</span></span>|<span data-ttu-id="90bd4-120">**Formula**</span><span class="sxs-lookup"><span data-stu-id="90bd4-120">**Formula**</span></span>|<span data-ttu-id="90bd4-121">**Zurückgegebener Wert**</span><span class="sxs-lookup"><span data-stu-id="90bd4-121">**Value returned**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="31a27-122">Scratch.A1</span><span class="sxs-lookup"><span data-stu-id="31a27-122">Scratch.A1</span></span>  <br/> |<span data-ttu-id="31a27-123">=NV( )</span><span class="sxs-lookup"><span data-stu-id="31a27-123">=NA( )</span></span>  <br/> |<span data-ttu-id="31a27-124">#N/V!</span><span class="sxs-lookup"><span data-stu-id="31a27-124">#N/A!</span></span>  <br/> |
-|<span data-ttu-id="31a27-125">Scratch.B1</span><span class="sxs-lookup"><span data-stu-id="31a27-125">Scratch.B1</span></span>  <br/> |<span data-ttu-id="31a27-126">=ISERR(Scratch.a1)</span><span class="sxs-lookup"><span data-stu-id="31a27-126">=ISERR(Scratch.A1)</span></span>  <br/> |<span data-ttu-id="31a27-127">FALSCH</span><span class="sxs-lookup"><span data-stu-id="31a27-127">FALSE</span></span>  <br/> |
+|<span data-ttu-id="90bd4-122">Scratch. a1</span><span class="sxs-lookup"><span data-stu-id="90bd4-122">Scratch.A1</span></span>  <br/> |<span data-ttu-id="90bd4-123">=NV( )</span><span class="sxs-lookup"><span data-stu-id="90bd4-123">=NA( )</span></span>  <br/> |<span data-ttu-id="90bd4-124">#N/A!</span><span class="sxs-lookup"><span data-stu-id="90bd4-124">#N/A!</span></span>  <br/> |
+|<span data-ttu-id="90bd4-125">Scratch. B1</span><span class="sxs-lookup"><span data-stu-id="90bd4-125">Scratch.B1</span></span>  <br/> |<span data-ttu-id="90bd4-126">= ISERR (Scratch. a1)</span><span class="sxs-lookup"><span data-stu-id="90bd4-126">=ISERR(Scratch.A1)</span></span>  <br/> |<span data-ttu-id="90bd4-127">FALSE</span><span class="sxs-lookup"><span data-stu-id="90bd4-127">FALSE</span></span>  <br/> |
    
-<span data-ttu-id="31a27-p103">Gibt FALSE zurück, da die ISERR-Funktion den Fehler #N/V! nicht erkennt. Verwenden Sie ISERROR, um alle Fehlertypen zu finden.</span><span class="sxs-lookup"><span data-stu-id="31a27-p103">Returns FALSE because the #N/A! error is not recognized by the ISERR function. Use ISERROR to find all error types.</span></span>
+<span data-ttu-id="90bd4-p103">Gibt FALSE zurück, da die ISERR-Funktion den Fehler #N/V! nicht erkennt. Verwenden Sie ISERROR, um alle Fehlertypen zu finden.</span><span class="sxs-lookup"><span data-stu-id="90bd4-p103">Returns FALSE because the #N/A! error is not recognized by the ISERR function. Use ISERROR to find all error types.</span></span>
   
-## <a name="example-2"></a><span data-ttu-id="31a27-131">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="31a27-131">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="90bd4-131">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="90bd4-131">Example 2</span></span>
 
-|<span data-ttu-id="31a27-132">**Cell**</span><span class="sxs-lookup"><span data-stu-id="31a27-132">**Cell**</span></span>|<span data-ttu-id="31a27-133">**Formula**</span><span class="sxs-lookup"><span data-stu-id="31a27-133">**Formula**</span></span>|<span data-ttu-id="31a27-134">**Zurückgegebener Wert**</span><span class="sxs-lookup"><span data-stu-id="31a27-134">**Value returned**</span></span>|
+|<span data-ttu-id="90bd4-132">**Cell**</span><span class="sxs-lookup"><span data-stu-id="90bd4-132">**Cell**</span></span>|<span data-ttu-id="90bd4-133">**Formula**</span><span class="sxs-lookup"><span data-stu-id="90bd4-133">**Formula**</span></span>|<span data-ttu-id="90bd4-134">**Zurückgegebener Wert**</span><span class="sxs-lookup"><span data-stu-id="90bd4-134">**Value returned**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="31a27-135">Scratch.X1</span><span class="sxs-lookup"><span data-stu-id="31a27-135">Scratch.X1</span></span>  <br/> |<span data-ttu-id="31a27-136">="Haus"</span><span class="sxs-lookup"><span data-stu-id="31a27-136">="House"</span></span>  <br/> |<span data-ttu-id="31a27-137">#WERT!</span><span class="sxs-lookup"><span data-stu-id="31a27-137">#VALUE!</span></span>  <br/> |
-|<span data-ttu-id="31a27-138">Scratch.A1</span><span class="sxs-lookup"><span data-stu-id="31a27-138">Scratch.A1</span></span>  <br/> |<span data-ttu-id="31a27-139">=ISERR(Scratch.x1)</span><span class="sxs-lookup"><span data-stu-id="31a27-139">=ISERR(Scratch.X1)</span></span>  <br/> |<span data-ttu-id="31a27-140">WAHR</span><span class="sxs-lookup"><span data-stu-id="31a27-140">TRUE</span></span>  <br/> |
+|<span data-ttu-id="90bd4-135">Scratch. x1</span><span class="sxs-lookup"><span data-stu-id="90bd4-135">Scratch.X1</span></span>  <br/> |<span data-ttu-id="90bd4-136">= "Haus"</span><span class="sxs-lookup"><span data-stu-id="90bd4-136">="House"</span></span>  <br/> |<span data-ttu-id="90bd4-137">#VALUE!</span><span class="sxs-lookup"><span data-stu-id="90bd4-137">#VALUE!</span></span>  <br/> |
+|<span data-ttu-id="90bd4-138">Scratch. a1</span><span class="sxs-lookup"><span data-stu-id="90bd4-138">Scratch.A1</span></span>  <br/> |<span data-ttu-id="90bd4-139">= ISERR (Scratch. x1)</span><span class="sxs-lookup"><span data-stu-id="90bd4-139">=ISERR(Scratch.X1)</span></span>  <br/> |<span data-ttu-id="90bd4-140">TRUE</span><span class="sxs-lookup"><span data-stu-id="90bd4-140">TRUE</span></span>  <br/> |
    
-<span data-ttu-id="31a27-p104">Gibt TRUE zurück, da die Funktion ISERR den Fehler #WERT! erkennt.</span><span class="sxs-lookup"><span data-stu-id="31a27-p104">Returns TRUE because the #VALUE! error is recognized by the ISERR function.</span></span>
+<span data-ttu-id="90bd4-p104">Gibt TRUE zurück, da die Funktion ISERR den Fehler #WERT! erkennt.</span><span class="sxs-lookup"><span data-stu-id="90bd4-p104">Returns TRUE because the #VALUE! error is recognized by the ISERR function.</span></span>
   
 

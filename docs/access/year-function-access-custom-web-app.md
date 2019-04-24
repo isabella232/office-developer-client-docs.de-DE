@@ -1,38 +1,38 @@
 ---
-title: Year-Funktion (Access benutzerdefinierte Web app)
+title: Year-Funktion (Access Custom Web App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a70751eb-bfde-4f7d-ad90-a1e4cca25dbc
-description: Gibt einen numerischen Wert, der das Jahr des angegebenen Datums im gregorianischen Kalender darstellt.
-ms.openlocfilehash: f9d72343637734257a2ed9589e5539b845933826
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen numerischen Wert zurück, der das Jahr des angegebenen Datums im gregorianischen Kalender darstellt.
+ms.openlocfilehash: 1400c352bcc070035d15b46f8e547e4637364299
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301666"
 ---
-# <a name="year-function-access-custom-web-app"></a><span data-ttu-id="c3878-103">Year-Funktion (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="c3878-103">Year Function (Access custom web app)</span></span>
+# <a name="year-function-access-custom-web-app"></a><span data-ttu-id="3c4c7-103">Year-Funktion (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="3c4c7-103">Year Function (Access custom web app)</span></span>
 
-<span data-ttu-id="c3878-104">Gibt einen numerischen Wert, der das Jahr des angegebenen Datums im gregorianischen Kalender darstellt.</span><span class="sxs-lookup"><span data-stu-id="c3878-104">Returns a numeric value that represents the year of the specified date in the Gregorian calendar.</span></span>
+<span data-ttu-id="3c4c7-104">Gibt einen numerischen Wert zurück, der das Jahr des angegebenen Datums im gregorianischen Kalender darstellt.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-104">Returns a numeric value that represents the year of the specified date in the Gregorian calendar.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="c3878-p101"> Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage).</span><span class="sxs-lookup"><span data-stu-id="c3878-p101">The cloud storage feature described in this article is no longer supported in Office 2013 and Office 2016 and may result in the following error: >  *Sorry, we're having server problems, so we can't add \<service\> right now. Please try again later.* > For cloud storage for Office Online, Office for iOS, and Office for Android, you can look into our [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage).</span></span> 
+> <span data-ttu-id="3c4c7-p101">Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage).</span><span class="sxs-lookup"><span data-stu-id="3c4c7-p101">The cloud storage feature described in this article is no longer supported in Office 2013 and Office 2016 and may result in the following error: >  *Sorry, we're having server problems, so we can't add \<service\> right now. Please try again later.* > For cloud storage for Office Online, Office for iOS, and Office for Android, you can look into our [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage).</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="c3878-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="c3878-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3c4c7-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="3c4c7-107">Syntax</span></span>
 
- <span data-ttu-id="c3878-108">**Jahr** (*Datum*)</span><span class="sxs-lookup"><span data-stu-id="c3878-108">**Year** (*Date*)</span></span> 
+ <span data-ttu-id="3c4c7-108">**Jahr** (*Datum*)</span><span class="sxs-lookup"><span data-stu-id="3c4c7-108">**Year** (*Date*)</span></span> 
   
-<span data-ttu-id="c3878-109">Die **Year** -Funktion enthält die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="c3878-109">The **Year** function contains the following arguments.</span></span> 
+<span data-ttu-id="3c4c7-109">Die **year** -Funktion enthält die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-109">The **Year** function contains the following arguments.</span></span> 
   
-|<span data-ttu-id="c3878-110">**Argumentname**</span><span class="sxs-lookup"><span data-stu-id="c3878-110">**Argument name**</span></span>|<span data-ttu-id="c3878-111">**Description**</span><span class="sxs-lookup"><span data-stu-id="c3878-111">**Description**</span></span>|
+|<span data-ttu-id="3c4c7-110">**Argumentname**</span><span class="sxs-lookup"><span data-stu-id="3c4c7-110">**Argument name**</span></span>|<span data-ttu-id="3c4c7-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="3c4c7-111">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="c3878-112">*Date*</span><span class="sxs-lookup"><span data-stu-id="c3878-112">*Date*</span></span>  <br/> |<span data-ttu-id="c3878-p102">Ein Ausdruck, der in einen Datums-/Uhrzeitwert aufgelöst werden kann. Der  *Date*  -Argumentausdruck, Spaltenausdruck, benutzerdefinierte Variable oder Zeichenfolgenliteral.  </span><span class="sxs-lookup"><span data-stu-id="c3878-p102">An expression that can be resolved to a Date/Time value. The  *Date*  argument expression, column expression, user-defined variable or string literal.  </span></span><br/> |
+| <span data-ttu-id="3c4c7-112">*Date*</span><span class="sxs-lookup"><span data-stu-id="3c4c7-112">*Date*</span></span>  <br/> |<span data-ttu-id="3c4c7-p102">Ein Ausdruck, der in einen Datums-/Uhrzeitwert aufgelöst werden kann. Der  *Date*  -Argumentausdruck, Spaltenausdruck, benutzerdefinierte Variable oder Zeichenfolgenliteral.  </span><span class="sxs-lookup"><span data-stu-id="3c4c7-p102">An expression that can be resolved to a Date/Time value. The  *Date*  argument expression, column expression, user-defined variable or string literal.  </span></span><br/> |
    
-## <a name="remarks"></a><span data-ttu-id="c3878-115">Remarks</span><span class="sxs-lookup"><span data-stu-id="c3878-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3c4c7-115">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3c4c7-115">Remarks</span></span>
 
-<span data-ttu-id="c3878-116">Von den Funktionen **Jahr**, **Monat**und **Tag** zurückgegebenen Werte werden Gregorianische Werte das Anzeigeformat für den angegebenen Wert.</span><span class="sxs-lookup"><span data-stu-id="c3878-116">Values returned by the **Year**, **Month**, and **Day** functions will be Gregorian values regardless of the display format for the supplied date value.</span></span> <span data-ttu-id="c3878-117">Wenn das Anzeigeformat für das angegebene Datum verwendet, der Hijri-Kalender, die zurückgegebenen Werte für das **Jahr**, **Monat**und **Tag** -Funktionen wird werden beispielsweise Werte zugeordnet, mit dem entsprechenden gregorianischen Datum.</span><span class="sxs-lookup"><span data-stu-id="c3878-117">For example, if the display format of the supplied date uses the Hijri calendar, the returned values for the **Year**, **Month**, and **Day** functions will be values associated with the equivalent Gregorian date.</span></span> 
+<span data-ttu-id="3c4c7-116">Von den Funktionen **year**, **Month**und **Day** zurückgegebene Werte sind gregorianische Werte, unabhängig vom Anzeigeformat für den angegebenen Datumswert.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-116">Values returned by the **Year**, **Month**, and **Day** functions will be Gregorian values regardless of the display format for the supplied date value.</span></span> <span data-ttu-id="3c4c7-117">Wenn beispielsweise im Anzeigeformat des angegebenen Datums der Hijri-Kalender verwendet wird, sind die zurückgegebenen Werte für die Funktionen **year**, **Month**und **Day** Werte, die dem äquivalenten gregorianischen Datum zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="3c4c7-117">For example, if the display format of the supplied date uses the Hijri calendar, the returned values for the **Year**, **Month**, and **Day** functions will be values associated with the equivalent Gregorian date.</span></span> 
   
 

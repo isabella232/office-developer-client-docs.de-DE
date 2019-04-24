@@ -1,36 +1,36 @@
 ---
-title: AusführenMakro-Makroaktion (Access benutzerdefinierte Web app)
+title: RunMacro-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 59ba365d-cff5-4126-bc22-4d5a37578aab
-description: Die AusführenMakro-Aktion können Sie ein Benutzer-Benutzeroberfläche (UI) Makro ausführen.
-ms.openlocfilehash: 68a59e246c0af8385a17aedcf3da771c720f8fd7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Sie können die RunMacro-Aktion verwenden, um ein Benutzeroberflächen Makro auszuführen.
+ms.openlocfilehash: 98e3b17a6c64fa12ac37e4551d45714c873f5ccb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307966"
 ---
-# <a name="runmacro-macro-action-access-custom-web-app"></a><span data-ttu-id="6465b-103">AusführenMakro-Makroaktion (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="6465b-103">RunMacro Macro Action (Access custom web app)</span></span>
+# <a name="runmacro-macro-action-access-custom-web-app"></a><span data-ttu-id="994bd-103">RunMacro-Makroaktion (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="994bd-103">RunMacro Macro Action (Access custom web app)</span></span>
 
-<span data-ttu-id="6465b-104">Die **AusführenMakro** -Aktion können Sie ein Benutzer-Benutzeroberfläche (UI) Makro ausführen.</span><span class="sxs-lookup"><span data-stu-id="6465b-104">You can use the **RunMacro** action to run a user interface (UI) macro.</span></span> 
+<span data-ttu-id="994bd-104">Sie können die **RunMacro** -Aktion verwenden, um ein Benutzeroberflächen Makro auszuführen.</span><span class="sxs-lookup"><span data-stu-id="994bd-104">You can use the **RunMacro** action to run a user interface (UI) macro.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="6465b-p101"> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="6465b-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="994bd-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="994bd-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="setting"></a><span data-ttu-id="6465b-107">Einstellung</span><span class="sxs-lookup"><span data-stu-id="6465b-107">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="994bd-107">Einstellung</span><span class="sxs-lookup"><span data-stu-id="994bd-107">Setting</span></span>
 
-<span data-ttu-id="6465b-108">Die **AusführenMakro** -Aktion hat die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="6465b-108">The **RunMacro** action has the following arguments.</span></span> 
+<span data-ttu-id="994bd-108">Die **AusführenMakro**-Aktion hat die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="994bd-108">The **RunMacro** action has the following arguments.</span></span> 
   
-|<span data-ttu-id="6465b-109">**Aktionsargument**</span><span class="sxs-lookup"><span data-stu-id="6465b-109">**Action argument**</span></span>|<span data-ttu-id="6465b-110">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6465b-110">**Description**</span></span>|
+|<span data-ttu-id="994bd-109">**Aktionsargument**</span><span class="sxs-lookup"><span data-stu-id="994bd-109">**Action argument**</span></span>|<span data-ttu-id="994bd-110">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="994bd-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="6465b-111">**Makroname**</span><span class="sxs-lookup"><span data-stu-id="6465b-111">**Macro Name**</span></span> <br/> |<span data-ttu-id="6465b-112">Der Name des auszuführenden Makros Benutzeroberfläche.</span><span class="sxs-lookup"><span data-stu-id="6465b-112">The name of the UI macro to run.</span></span>  <br/> |
+|<span data-ttu-id="994bd-111">**Makroname**</span><span class="sxs-lookup"><span data-stu-id="994bd-111">**Macro Name**</span></span> <br/> |<span data-ttu-id="994bd-112">Der Name des auszuführenden Benutzeroberflächen Makros.</span><span class="sxs-lookup"><span data-stu-id="994bd-112">The name of the UI macro to run.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="6465b-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6465b-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="994bd-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="994bd-113">Remarks</span></span>
 
-<span data-ttu-id="6465b-114">Wenn Sie eine Benutzeroberflächenmakro ausführen, enthält die **AusführenMakro** -Aktion, und er die **AusführenMakro** -Aktion erreicht, führt Access das gewählte UI-Makro.</span><span class="sxs-lookup"><span data-stu-id="6465b-114">When you run a UI macro containing the **RunMacro** action, and it reaches the **RunMacro** action, Access runs the called UI macro.</span></span> <span data-ttu-id="6465b-115">Wenn die gewählte Benutzeroberflächenmakro beendet wurde, Access gibt Sie zurück zum ursprünglichen UI-Makro und führt die nächste Aktion.</span><span class="sxs-lookup"><span data-stu-id="6465b-115">When the called UI macro has finished, Access returns to the original UI macro and runs the next action.</span></span> 
+<span data-ttu-id="994bd-114">Wenn Sie ein Benutzeroberflächen Makro ausführen, das die **RunMacro** -Aktion enthält, und es die **RunMacro** -Aktion erreicht, wird das aufgerufene Benutzeroberflächen Makro von Access ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="994bd-114">When you run a UI macro containing the **RunMacro** action, and it reaches the **RunMacro** action, Access runs the called UI macro.</span></span> <span data-ttu-id="994bd-115">Wenn das aufgerufene Benutzeroberflächen Makro beendet wurde, kehrt Access zum ursprünglichen Benutzeroberflächen Makro zurück und führt die nächste Aktion aus.</span><span class="sxs-lookup"><span data-stu-id="994bd-115">When the called UI macro has finished, Access returns to the original UI macro and runs the next action.</span></span> 
   
 
