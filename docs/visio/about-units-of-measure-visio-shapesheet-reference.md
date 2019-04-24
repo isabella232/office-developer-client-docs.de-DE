@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 48f765a8-7485-03c0-3484-d4ec07822600
 description: Wenn Sie Felder in Text einfügen oder Formeln erstellen, geben Sie häufig Maßeinheiten für die eingegebenen Werte an.
-ms.openlocfilehash: ce8ad1cdcbdaba713edeb06f4cd949e49f82a311
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d23c3f30841c81d07c09e57c0802e09edb0fe3c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360452"
 ---
 # <a name="about-units-of-measure-visio-shapesheet-reference"></a>Informationen zu Maßeinheiten (Visio-ShapeSheet-Referenz)
 
 Wenn Sie Felder in Text einfügen oder Formeln erstellen, geben Sie häufig Maßeinheiten für die eingegebenen Werte an.
   
-Microsoft Visio wertet das Ergebnis einer Formel unterschiedlich, je nachdem die Zelle, in der Sie die Formel eingeben. Im Allgemeinen erfordern Zellen, die Position der Form, eine Dimension oder eines Winkels darstellen Zahl-Einheit-Paar, der eine Zahl und der qualifizierenden zur Interpretation der Zahl erforderlichen Einheiten besteht. Viele andere Zellen nicht erfordern Einheiten und Auswerten von in eine Zeichenfolge, TRUE oder FALSE oder auf einen Index. Beispielsweise die gleiche Formel, die in die Zelle **FillForegnd** Farbe 5 aus der Zeichnung Farbpalette bedeutet entspricht "TRUE" (und sperrt die Breite des Shapes) in die Zelle LockWidth. 
+Microsoft Visio wertet das Ergebnis einer Formel je nach der Zelle, in der Sie die Formel eingeben, unterschiedlich aus. In general, cells that represent shape position, a dimension, or an angle require a number-unit pair that consists of a number and the qualifying units needed to interpret the number. Many other cells don't require units and evaluate to a string, to TRUE or FALSE, or to an index. Beispiel: die gleiche Formel, die in der **Zelle FillForegnd** -Zelle die Farbe 5 aus der Farbpalette der Zeichnung angibt, ist true (und sperrt die Breite der Form) in der Zelle LockWidth-Zelle. 
   
 Geben Sie immer eine Maßeinheit an, wenn Sie eine Formel in eine Zelle eingeben, für die ein Bemaßungswert erforderlich ist. Wenn Sie keine Maßeinheit angeben, verwendet Visio die Standardeinheit für diese Zelle. Hierbei kann es sich um Seiteneinheiten, Zeichnungseinheiten, Einheitenoptionen, Einheiten für die Dauer und Winkeleinheiten handeln.
   
@@ -30,30 +30,30 @@ Verwenden Sie bei der Angabe von Maßeinheiten in ShapeSheet-Formularen die in d
   
 |**So geben Sie diese Maßeinheiten an**|**Verwenden Sie**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| Zentimeter  <br/> | cm  <br/> |**VisCentimeters (69)** <br/> |
-| Cicero  <br/> | c  <br/> |**VisCiceros (54)** <br/> |
-| Datum oder Uhrzeit  <br/> | date  <br/> |**VisDate (40)** <br/> |
-| Grad  <br/> | deg  <br/> |**visDegrees lautet (81)** <br/> |
-| Didot  <br/> | d  <br/> |**VisDidots (53)** <br/> |
-| Vergangene Wochen  <br/> | ew  <br/> |**VisElapsedWeek (43)** <br/> |
-| Vergangene Tage  <br/> | ed  <br/> |**VisElapsedDay (44)** <br/> |
-| Vergangene Stunden  <br/> | eh  <br/> |**VisElapsedHour (45)** <br/> |
-| Vergangene Minuten  <br/> | em  <br/> |**visElapsedMin lautet (46)** <br/> |
-| Vergangene Sekunden  <br/> | es  <br/> |**VisElapsedSec (47)** <br/> |
-| Fuß  <br/> | ft  <br/> |**VisFeet (66)** <br/> |
-| Zoll  <br/> | in  <br/> |**VisInches (65)** <br/> |
-| Kilometer  <br/> | km  <br/> |**VisKilometers (72)** <br/> |
-| Meter  <br/> | m  <br/> |**VisMeters (71)** <br/> |
-| Meilen  <br/> | mi  <br/> |**VisMiles (68)** <br/> |
-| Millimeter  <br/> | mm  <br/> |**VisMillimeters (70)** <br/> |
-| Minuten  <br/> | '  <br/> |**VisMin (84)** <br/> |
-| Nautische Meilen  <br/> | nm  <br/> |**VisNautMiles (76)** <br/> |
-| Prozent  <br/> | %  <br/> |**VisPercent (33)** <br/> |
-| Pica  <br/> | p  <br/> |**VisPicas (51)** <br/> |
-| Punkte  <br/> | pt  <br/> |**visPoints lautet (50)** <br/> |
-| Bogenmaß  <br/> | rad  <br/> |**VisRadians (83)** <br/> |
-| Sekunden  <br/> | "  <br/> |**VisSec (85)** <br/> |
-| Yard  <br/> | yd  <br/> |**VisYards (75)** <br/> |
+| Zentimeter  <br/> | cm  <br/> |**visCentimeters (69)** <br/> |
+| Cicero  <br/> | c  <br/> |**visCiceros (54)** <br/> |
+| Datum oder Uhrzeit  <br/> | date  <br/> |**visDate (40)** <br/> |
+| Grad  <br/> | deg  <br/> |**visDegrees (81)** <br/> |
+| Didot  <br/> | d  <br/> |**visDidots (53)** <br/> |
+| Vergangene Wochen  <br/> | ew  <br/> |**visElapsedWeek (43)** <br/> |
+| Vergangene Tage  <br/> | ed  <br/> |**visElapsedDay (44)** <br/> |
+| Vergangene Stunden  <br/> | eh  <br/> |**visElapsedHour (45)** <br/> |
+| Vergangene Minuten  <br/> | em  <br/> |**visElapsedMin (46)** <br/> |
+| Vergangene Sekunden  <br/> | es  <br/> |**visElapsedSec (47)** <br/> |
+| Fuß  <br/> | ft  <br/> |**visFeet (66)** <br/> |
+| Zoll  <br/> | in  <br/> |**visInches (65)** <br/> |
+| Kilometer  <br/> | km  <br/> |**visKilometers (72)** <br/> |
+| Meter  <br/> | m  <br/> |**visMeters (71)** <br/> |
+| Meilen  <br/> | mi  <br/> |**visMiles (68)** <br/> |
+| Millimeter  <br/> | mm  <br/> |**visMillimeters (70)** <br/> |
+| Minuten  <br/> | '  <br/> |**visMin (84)** <br/> |
+| Nautische Meilen  <br/> | nm  <br/> |**visNautMiles (76)** <br/> |
+| Prozent  <br/> | %  <br/> |**visPercent (33)** <br/> |
+| Pica  <br/> | p  <br/> |**visPicas (51)** <br/> |
+| Punkte  <br/> | pt  <br/> |**visPoints (50)** <br/> |
+| Bogenmaß  <br/> | rad  <br/> |**visRadians (83)** <br/> |
+| Sekunden  <br/> | "  <br/> |**visSec (85)** <br/> |
+| Yard  <br/> | yd  <br/> |**visYards (75)** <br/> |
    
 ## <a name="compound-units-of-measure"></a>Zusammengesetzte Maßeinheiten
 
@@ -63,26 +63,26 @@ Wenn Sie beispielsweise 45,635° eingeben, zeigt Visio den äquivalenten Wert al
   
 |**So geben Sie Einheiten an**|**Verwenden Sie diese Abkürzung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| Cicero und Didot  <br/> | CICERO/DIDOT  <br/> |**VisCicerosAndDidots (52)** <br/> |
-| Grad, Minuten und Sekunden  <br/> | °  <br/> |**VisDegreeMinSec (82)** <br/> |
-| Fuß und Zoll  <br/> | FEET/INCH  <br/> |**VisFeetAndInches (67)** <br/> |
-| Pica und Punkte  <br/> | PICAPOINTS  <br/> |**VisPicasAndPoints (49)** <br/> |
+| Cicero und Didot  <br/> | CICERO/DIDOT  <br/> |**visCicerosAndDidots (52)** <br/> |
+| Grad, Minuten und Sekunden  <br/> | °  <br/> |**visDegreeMinSec (82)** <br/> |
+| Fuß und Zoll  <br/> | FEET/INCH  <br/> |**visFeetAndInches (67)** <br/> |
+| Pica und Punkte  <br/> | PICAPOINTS  <br/> |**visPicasAndPoints (49)** <br/> |
    
 ## <a name="fractional-units-of-measure"></a>Maßeinheiten für Bruchzahlen
 
-Sie können die Maßeinheiten für Bruchzahlen angeben, in **der Zelle DrawingScale auf die Anzahl der Lineal Einteilung auswirken, in dem Visio im Zeichnungsfenster angezeigt** . In der Standardeinstellung unterteilt Visio Abstände Zehntelsekunde beim Zeichnen der Lineale. Wenn Sie in **der Zelle DrawingScale** Maßeinheiten für Bruchzahlen verwenden, ist Visio Abstand in der folgenden unterteilt: 
+Sie können Bruch Maßeinheiten in der Zelle **DrawingScale** angeben, um die Anzahl der Lineal-Unterabteilungen zu beeinflussen, die Visio im Zeichnungsfenster anzeigt. By default, Visio divides distances into tenths when drawing its rulers. Wenn Sie Fractional Maßeinheiten in der Zelle **DrawingScale** verwenden, teilt Visio den Abstand in Folgendes ein: 
   
-- Achtel für *VisInchFrac* und *visMileFrac* 
+- Achtel für *visInchFrac* und *visMileFrac* 
     
 - Zwölftel für  *visFeetAndInches* 
     
-Maßeinheiten für Bruchzahlen wirken sich ausschließlich auf die Zelle DrawingScale aus.
+Fractional units of measure have no effect in cells other than in the DrawingScale cell.
   
 |**So geben Sie Maßeinheiten für Bruchzahlen an**|**Verwenden Sie diese Abkürzung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| Zoll als Bruchzahlangabe  <br/> | IN_F  <br/> |**VisInchFrac (73)** <br/> |
-| Meilen als Bruchzahlen  <br/> | MI_F  <br/> |**VisMileFrac (74)** <br/> |
-| Fuß und Zoll  <br/> | FEET/INCH  <br/> |**VisFeetAndInches (67)** <br/> |
+| Zoll als Bruchzahlangabe  <br/> | IN_F  <br/> |**visInchFrac (73)** <br/> |
+| Meilen als Bruchzahlen  <br/> | MI_F  <br/> |**visMileFrac (74)** <br/> |
+| Fuß und Zoll  <br/> | FEET/INCH  <br/> |**visFeetAndInches (67)** <br/> |
    
 ## <a name="multidimensional-units-of-measure"></a>Mehrdimensionale Maßeinheiten
 
@@ -90,16 +90,16 @@ In Formeln können Sie Maßeinheiten für mehrdimensionale Zahlen mit den Abkür
   
 |**So geben Sie mehrdimensionale Einheiten an**|**Verwenden Sie diese Abkürzung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| Acre  <br/> | ACRES  <br/> |**VisAcre (36)** <br/> |
-| Zentimeter  <br/> | SQ. CM., SQ CM, CM.^2, CM^2  <br/> |**VisCentimeters (69)** <br/> |
-| Fuß  <br/> | SQ. FT., SQ FT, FT.^2, FT^2  <br/> |**VisFeet (66)** <br/> |
-| Hektar  <br/> | HECTARES, HECTARE, HA., HA  <br/> |**VisHectare (37)** <br/> |
-| Zoll  <br/> | SQ. IN., SQ IN, IN.^2, IN^2  <br/> |**VisInches (65)** <br/> |
-| Kilometer  <br/> | SQ. KM., SQ KM, KM.^2, KM ^2  <br/> |**VisKilometers (72)** <br/> |
-| Meter  <br/> | SQ. M., SQ M, M.^2, M ^2  <br/> |**VisMeters (71)** <br/> |
-| Meilen  <br/> | SQ. MI., SQ MI, MI.^2, MI ^2  <br/> |**VisMiles (68)** <br/> |
-| Millimeter  <br/> | SQ. MM., SQ MM, MM.^2, MM ^2  <br/> |**VisMillimeters (70)** <br/> |
-| Yard  <br/> | SQ. YD., SQ YD, YD.^2, YD^2  <br/> |**VisYards (75)** <br/> |
+| Acre  <br/> | Hektar  <br/> |**visAcre (36)** <br/> |
+| Zentimeter  <br/> | SQ. CM., SQ CM, CM.^2, CM^2  <br/> |**visCentimeters (69)** <br/> |
+| Fuß  <br/> | SQ. FT., SQ FT, FT.^2, FT^2  <br/> |**visFeet (66)** <br/> |
+| Hektar  <br/> | HECTARES, HECTARE, HA., HA  <br/> |**visHectare (37)** <br/> |
+| Zoll  <br/> | SQ. IN., SQ IN, IN.^2, IN^2  <br/> |**visInches (65)** <br/> |
+| Kilometer  <br/> | SQ. KM., SQ KM, KM.^2, KM ^2  <br/> |**visKilometers (72)** <br/> |
+| Meter  <br/> | SQ. M., SQ M, M.^2, M ^2  <br/> |**visMeters (71)** <br/> |
+| Meilen  <br/> | SQ. MI., SQ MI, MI.^2, MI ^2  <br/> |**visMiles (68)** <br/> |
+| Millimeter  <br/> | SQ. MM., SQ MM, MM.^2, MM ^2  <br/> |**visMillimeters (70)** <br/> |
+| Yard  <br/> | SQ. YD., SQ YD, YD.^2, YD^2  <br/> |**visYards (75)** <br/> |
    
 ## <a name="universal-strings"></a>Universelle Zeichenfolgen
 
@@ -153,12 +153,12 @@ number  [unit , flag ]
 |||
 |:-----|:-----|
 | _Zahl_ <br/> |Der ursprüngliche Wert, z. B. 3,7, 1,7E-4 oder 5 1/2.  <br/> |
-| _Einheit_ <br/> |Die Einheiten, in denen _Zahl_ ursprünglich ausgedrückt wurde.  <br/> |
+| _Einheit_ <br/> |Die Einheiten, in denen die _Zahl_ ursprünglich ausgedrückt wird.  <br/> |
 | _Flag_ <br/> |Das Maßsystem, das verwendet werden soll, wenn die Einheit für den impliziten Wert angezeigt wird. Entsprechende Werte finden Sie unten.  <br/> |
    
-Der Parameter _Flag_ entspricht einem der folgenden Buchstaben (Groß- oder Kleinbuchstaben) gibt das Maßsystem an, die verwendet werden soll, wenn die Anzeige von impliziten Einheiten angezeigt wird. 
+Das Parameter- _Flag_ ist eines der folgenden Buchstaben (groß-oder Kleinbuchstaben), das das Messsystem angibt, das verwendet werden soll, wenn die implizite Wert Einheit angezeigt wird. 
   
-|**_Kennzeichnung_**|**Bemaßungssystem**|**Beispiel**|
+|**_Flagge_**|**Bemaßungssystem**|**Beispiel**|
 |:-----|:-----|:-----|
 | a, A  <br/> | Winkel  <br/> | =5[deg,A]  <br/> |
 | d, D  <br/> | Zeichnung  <br/> | =5[in,D]  <br/> |
@@ -176,9 +176,9 @@ Im Folgenden werden die Standardmaßeinheiten zusammen mit den entsprechenden Ei
   
 |**Standardmaßeinheit**|**Entsprechung auf der Benutzeroberfläche**|
 |:-----|:-----|
-|**visDrawingUnits** <br/> |Die Maßeinheit in der Zelle DrawingScale des Zeichenblatts oder Master-Shapes, das die Zelle enthält.  <br/> |
-|**visPageUnits** <br/> |Die im Feld **Maßeinheiten** auf der Registerkarte **Zeichenblatteigenschaft** des Dialogfelds **Seite einrichten** ausgewählten Einheiten (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** ).  <br/> |
-|**visTypeUnits** <br/> |Die Einheiten, in **das Textfeld unter **Anzeige** auf der Registerkarte **Erweitert** im Dialogfeld **Visio-Optionen** ** ausgewählt sind (klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Optionen**).  <br/> |
+|**visDrawingUnits** <br/> |The units in the DrawingScale cell of the page or master containing the cell.  <br/> |
+|**visPageUnits** <br/> |Die im Feld **Maßeinheiten** auf der Registerkarte **Zeichenblatteigenschaft** des Dialogfelds **Seite einrichten** ausgewählten Einheiten (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für **Seite einrichten**).  <br/> |
+|**visTypeUnits** <br/> |Die Einheiten, die im Dialogfeld **Visio-Optionen** auf der Registerkarte **erweitert** in das **Textfeld** **angezeigt** werden (Klicken Sie auf die Registerkarte **Datei** und dann auf **Optionen**).  <br/> |
 |**visAngleUnits** <br/> |Die Einheiten, die im Dialogfeld  **Visio-Optionen** auf der Registerkarte **Weitere Optionen** unter **Anzeige** im Feld **Winkel** ausgewählt sind.  <br/> |
 |**visDurationUnits** <br/> |Die Einheiten, die im Dialogfeld  **Visio-Optionen** auf der Registerkarte **Weitere Optionen** unter **Anzeige** im Feld **Dauer** ausgewählt sind.  <br/> |
    

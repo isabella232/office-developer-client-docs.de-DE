@@ -9,11 +9,11 @@ ms.assetid: c0e6dd3b-fae1-453d-a9b4-7f456b5172db
 description: Erfahren Sie, wie Microsoft Word 2013-Inhaltssteuerelemente eine größere Palette von strukturierten Dokumentszenarien ermöglichen.
 localization_priority: Priority
 ms.openlocfilehash: 4234425cc8398d87b72108d389953fc0eb802c87
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358669"
 ---
 # <a name="content-controls-in-word"></a>Inhaltssteuerelemente in Word
 

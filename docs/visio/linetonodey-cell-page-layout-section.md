@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 49d649e8-1603-192b-2984-e5d0b713da89
 description: Legt den vertikalen Abstand zwischen sämtlichen Verbindern und Shapes auf dem Zeichenblatt fest.
-ms.openlocfilehash: bd5216a68abc4bcd8c3ef807b98280edb0ad29b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2a5e4469fae2fb3142db2745f26c2009d42c0d2f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359185"
 ---
-# <a name="linetonodey-cell-page-layout-section"></a>LineToNodeY Cell (Page Layout Section)
+# <a name="linetonodey-cell-page-layout-section"></a>Zelle "LineToNodeY" (Abschnitt "Page Layout")
 
 Legt den vertikalen Abstand zwischen sämtlichen Verbindern und Shapes auf dem Zeichenblatt fest.
   
@@ -24,13 +24,13 @@ Legt den vertikalen Abstand zwischen sämtlichen Verbindern und Shapes auf dem Z
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, wählen Sie **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Wenn Sie einen Verweis auf die Zelle LineToNodeX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineToNodeY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LineToNodeY  <br/> |
+| Zellenname:  <br/> | Zelle LineToNodeY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineToNodeY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineToNodeY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

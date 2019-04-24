@@ -1,26 +1,26 @@
 ---
-title: LineGradientAngle Cell (Gradient Properties Section)
+title: Zelle "LineGradientAngle" (Abschnitt "Gradient Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4b533ea0-5d2e-44fc-a691-8fa2f310ff9f
-description: Den Winkel des Farbverlaufs für ein linearer Farbverlauf, im Bereich von 0 bis 359.9 Grad Zeile bestimmt.
-ms.openlocfilehash: 8db4c7ba4bd62bfae4ec3444aef832450363763b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den Winkel des Linien Verlaufs für einen linearen Farbverlauf von 0 bis 359,9 Grad.
+ms.openlocfilehash: fd806bc7c953dbd86abd95c8e6103ab9e6ee1a10
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359268"
 ---
-# <a name="linegradientangle-cell-gradient-properties-section"></a>LineGradientAngle Cell (Gradient Properties Section)
+# <a name="linegradientangle-cell-gradient-properties-section"></a>Zelle "LineGradientAngle" (Abschnitt "Gradient Properties")
 
-Den Winkel des Farbverlaufs für ein linearer Farbverlauf, im Bereich von 0 bis 359.9 Grad Zeile bestimmt.
+Bestimmt den Winkel des Linien Verlaufs für einen linearen Farbverlauf von 0 bis 359,9 Grad.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **LineGradientAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **LineGradientAngle** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

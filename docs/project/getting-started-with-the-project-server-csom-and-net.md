@@ -7,11 +7,11 @@ ms.assetid: 5ce73baa-dfb6-41d0-918d-b0c3a498815f
 description: Sie können das clientseitige Objektmodell (CSOM) von Project Server 2013 verwenden, um Project Online und lokale Lösungen mit .NET Framework 4 zu entwickeln. Dieser Artikel beschreibt, wie Sie eine Konsolenanwendung erstellen, die das CSOM zum Erstellen und Veröffentlichen von Projekten verwendet. Nach dem Veröffentlichen eines Projekts wartet die Anwendung, bis der Project Server-Warteschlangendienst die Veröffentlichung abgeschlossen hat und listet dann die veröffentlichten Projekte auf.
 localization_priority: Priority
 ms.openlocfilehash: b53587ca1959faefdc1b40f08c4adfda4ee11d70
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360574"
 ---
 # <a name="getting-started-with-the-project-server-csom-and-net"></a>Erste Schritte mit dem Project Server-CSOM und .NET
 

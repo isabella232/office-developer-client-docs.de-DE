@@ -9,37 +9,37 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 56f9043d-a632-65df-c710-45867cce1627
 description: Definiert die Verbinder, denen Sie Liniensprünge hinzufügen möchten.
-ms.openlocfilehash: abb7208c2cfbd6b1423e091efc1d526f8b10b57d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7b5b8c8f1de160a4dc766d30a5f518c5653c270b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361117"
 ---
-# <a name="linejumpcode-cell-page-layout-section"></a>LineJumpCode Cell (Page Layout Section)
+# <a name="linejumpcode-cell-page-layout-section"></a>Zelle "LineJumpCode" (Abschnitt "Page Layout")
 
 Definiert die Verbinder, denen Sie Liniensprünge hinzufügen möchten.
   
 |**Wert**|**Verbinder, denen Sie Liniensprünge hinzufügen möchten**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|0  <br/> |Keine  <br/> |**visPLOJumpNone** <br/> |
+|0  <br/> |None  <br/> |**visPLOJumpNone** <br/> |
 |1  <br/> |Horizontale Linien  <br/> |**visPLOJumpHorizontal** <br/> |
 |2  <br/> |Vertikale Linien  <br/> |**visPLOJumpVertical** <br/> |
 |3  <br/> |Letzte umgeleitete Linie  <br/> |**visPLOJumpLastRouted** <br/> |
-|4  <br/> |Letzte angezeigte Linie (oberstes Shape in der *Z* -Reihenfolge)  <br/> |**visPLOJumpDisplayOrder** <br/> |
-|5  <br/> |Erste angezeigte Linie (Shape am unteren Rand der *Z* -Reihenfolge)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
+|4  <br/> |Letzte angezeigte Linien (Oberes Shape in der *z* -Reihenfolge)  <br/> |**visPLOJumpDisplayOrder** <br/> |
+|5  <br/> |Erste angezeigte Leitung (Form am unteren Rand der *z* -Reihenfolge)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle LineJumpCode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineJumpCode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LineJumpCode  <br/> |
+|Zellenname:  <br/> |Zelle LineJumpCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineJumpCode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineJumpCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

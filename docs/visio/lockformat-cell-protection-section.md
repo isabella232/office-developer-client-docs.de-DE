@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e9a640f4-0af0-317c-b77b-f32c651e87b4
 description: Sperrt die Formatierung eines Shapes, damit dieses nicht geändert werden kann.
-ms.openlocfilehash: c3e4d5be848e91554406e709ce6872ae49b5f38d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e0d1bb8a65b8087136e57bb46ad9f5363da30030
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359613"
 ---
-# <a name="lockformat-cell-protection-section"></a>LockFormat Cell (Protection Section)
+# <a name="lockformat-cell-protection-section"></a>Zelle "LockFormat" (Abschnitt "Protection")
 
 Sperrt die Formatierung eines Shapes, damit dieses nicht geändert werden kann.
   
@@ -25,15 +25,15 @@ Sperrt die Formatierung eines Shapes, damit dieses nicht geändert werden kann.
 | TRUE  <br/> | Formatierung kann nicht geändert werden.  <br/> |
 | FALSE  <br/> | Formatierung kann geändert werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockFormat aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "Lock Format aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockFormat  <br/> |
+| Zellenname:  <br/> | "Lock Format  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockFormat aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "Lock Format aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

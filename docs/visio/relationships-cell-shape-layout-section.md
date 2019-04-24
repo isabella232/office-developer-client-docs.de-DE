@@ -9,20 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4168cd98-9674-1233-254f-0afe81b7245b
 description: Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes.
-ms.openlocfilehash: c3410ad15581ff1704d7a43dd7ed5fa193f668b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b270366fe1045aea3d628150c82e7fd798fa21df
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359969"
 ---
-# <a name="relationships-cell-shape-layout-section"></a>Relationships Cell (Shape Layout Section)
+# <a name="relationships-cell-shape-layout-section"></a>Zelle "Relationships" (Abschnitt "Shape Layout")
 
 Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes. 
   
 ## <a name="remarks"></a>Bemerkungen
 
- Microsoft Visio verwendet die Zelle Relationships die Beziehungen zu speichern, die dieses Shape betreffen. Eine Reihe von DEPENDSON-Funktion, mit den Parametern dargestellt, werden verwendet, um mit diesem Shape Beziehungen darstellen, wie in der folgenden Tabelle dargestellt. 
+ Microsoft Visio verwendet die Zelle "Beziehungen" zum Speichern der Beziehungen, die dieses Shape betreffen. Zum Darstellen der Beziehungen zu diesem Shape wird eine Reihe von DEPENDSON-Funktionen mit den angegebenen Parametern verwendet, wie in der nachstehenden Tabelle dargestellt. 
   
 |**Erster Parameter**|**Zusätzliche Parameter**|
 |:-----|:-----|
@@ -38,13 +38,13 @@ Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes
 |10  <br/> |Container an der unteren Begrenzungskante, an der sich dieses Shape befindet  <br/> |
 |11  <br/> |Liste, die von dieser Liste überlappt wird  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle Relationships nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
+Wenn Sie einen Verweis auf die Zelle Beziehungen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Relationships  <br/> |
+|Zellenname:  <br/> |Beziehungen  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle Relationships aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Beziehungen nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

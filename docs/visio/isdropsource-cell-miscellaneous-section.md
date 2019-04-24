@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3b20e6ef-f1ac-5bb0-5ac3-4df3ae5e9bf9
 description: Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefügt werden kann.
-ms.openlocfilehash: f2edfcb7cf9d21b2ecd97b335b07f30233903d5b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e8cb02a66f745530f12c7c8be56b9bdd771121b7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360172"
 ---
-# <a name="isdropsource-cell-miscellaneous-section"></a>IsDropSource Cell (Miscellaneous Section)
+# <a name="isdropsource-cell-miscellaneous-section"></a>Zelle "IsDropSource" (Abschnitt "Miscellaneous")
 
 Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefügt werden kann.
   
@@ -29,15 +29,15 @@ Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefüg
 
 Sie können diesen Wert auch festlegen, indem Sie das Shape auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **Shape beim Ablegen der Gruppe hinzufügen** aktivieren. 
   
-Darüber hinaus müssen Sie eine Gruppe aktivieren, damit Shapes darin abgelegt werden können. Wählen Sie dazu die entsprechende Gruppe aus, klicken Sie auf der Registerkarte Entwickler auf Verhalten, und aktivieren Sie anschließend das Kontrollkästchen Abgelegte Shapes annehmen. Dieser Wert wird in der Zelle IsDropTarget im Abschnitt Gruppeneigenschaften gespeichert. 
+Sie müssen nicht nur dieses Verhalten für ein Shape aktivieren, sondern auch, dass eine Gruppe Shapes akzeptiert, die hineingezogen werden. Wählen Sie dazu die Gruppe aus, klicken Sie auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** , und aktivieren Sie dann das Kontrollkästchen **verworfene Shapes akzeptieren** . Dieser Wert wird in der Zelle "IsDropTarget im Abschnitt Group Properties gespeichert. 
   
-Wenn Sie einen Verweis auf die Zelle IsDropSource aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle IsDropSource aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |IsDropSource  <br/> |
+|Zellenname:  <br/> |Zelle IsDropSource  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle IsDropSource aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle IsDropSource aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

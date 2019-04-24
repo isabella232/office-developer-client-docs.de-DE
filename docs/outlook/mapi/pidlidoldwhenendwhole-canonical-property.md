@@ -1,5 +1,5 @@
 ---
-title: PidLidOldWhenEndWhole (kanonische Eigenschaft)
+title: Kanonische Pidlidoldwhenendwhole (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,51 +11,51 @@ api_name:
 api_type:
 - COM
 ms.assetid: 788227e9-9bcf-465c-886c-746dbc665230
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: a00517dfa87d739f19c19d0b02ab8437cae698d5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359066"
 ---
-# <a name="pidlidoldwhenendwhole-canonical-property"></a>PidLidOldWhenEndWhole (kanonische Eigenschaft)
+# <a name="pidlidoldwhenendwhole-canonical-property"></a>Kanonische Pidlidoldwhenendwhole (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den ursprünglichen Wert der Eigenschaft **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) vor einer Besprechungsanfrage an.
+Gibt den ursprünglichen Wert der **dispidApptEndWhole** ([pidlidappointmentendwhole (](pidlidappointmentendwhole-canonical-property.md))-Eigenschaft vor einer Besprechungsaktualisierung an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidOldWhenEndWhole  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x0000002A  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Meeting  <br/> |
+|Long-ID (Deckel):  <br/> |0x0000002A  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
-|Bereich:  <br/> |Besprechungen  <br/> |
+|Bereich:  <br/> |Meetings  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs-und Antwortnachrichten an.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -67,5 +67,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

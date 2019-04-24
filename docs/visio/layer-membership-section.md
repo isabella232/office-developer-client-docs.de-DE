@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7fb1d8a1-8892-f489-2f58-0008b5b750f5
 description: Enthält eine Zeile, in der alle Layer aufgeführt werden, denen das Shape zugewiesen ist.
-ms.openlocfilehash: 5f522e31916ad276e15ac23e5149407dd67eb9cf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e7e07ba14147abc8cdfd8b8544e4ee8f34b2be06
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359010"
 ---
-# <a name="layer-membership-section"></a>Layer Membership Section
+# <a name="layer-membership-section"></a>Abschnitt "Layer Membership"
 
 Enthält eine Zeile, in der alle Layer aufgeführt werden, denen das Shape zugewiesen ist.
   
@@ -26,6 +26,6 @@ Die Layerzuweisung wird als Index zu der Liste der Layer auf dem Zeichenblatt an
   
 Wenn ein Shape mehreren Layern zugewiesen ist, werden die einzelnen Layerindizes in der Zelle Layer Membership durch ein Semikolon getrennt angezeigt.
   
-Wenn Sie auf den Wert der Zelle Layer Membership in einer Formel verweisen möchten, verwenden Sie den Namen **LayerMember**.
+Wenn Sie auf den Wert der Layer-Mitgliedschafts Zelle in einer Formel verweisen möchten, verwenden Sie den Namen **LayerMember**.
   
 

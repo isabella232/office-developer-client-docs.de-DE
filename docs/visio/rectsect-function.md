@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251486
 localization_priority: Normal
 ms.assetid: e83343c5-df5f-bf74-f854-6380176693a2
-description: Berechnet den Sektor eines Rechtecks zugeordnete x und y und gibt eine Ganzzahl zwischen 0 und 4, der angibt, des Sektors.
+description: Berechnet den Bereich eines Rechtecks, das mit x und y verknüpft ist, und gibt eine ganze Zahl zwischen 0 und 4 zurück, die den Sektor angibt.
 ms.openlocfilehash: fb7ed37ac498765e21c62d7180413cdbcb932502
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360030"
 ---
 # <a name="rectsect-function"></a>RECTSECT Function
 
-Berechnet den Sektor eines Rechtecks *X* und *y* zugeordnet und gibt eine Ganzzahl zwischen 0 und 4, der angibt, des Sektors. 
+Berechnet den Bereich eines Rechtecks, das mit *x* und *y* verknüpft ist, und gibt eine ganze Zahl zwischen 0 und 4 zurück, die den Sektor angibt. 
   
 ## <a name="syntax"></a>Syntax
 
-RECTSECT (** *Breite* **, ** *Höhe* **, ** *X* **, ** *y* **, ** *Option* **) 
+RECTSECT (* * *Breite* * *, * * *Höhe* * *, * * *x* * *, * * *y* * *, * * *Option* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -36,9 +36,9 @@ RECTSECT (** *Breite* **, ** *Höhe* **, ** *X* **, ** *y* **, ** *Option* **)
    
 ## <a name="remarks"></a>Bemerkungen
 
-Berücksichtigen Sie ein Rechteck mit einer *Breite* und eine *Höhe* und einem Punkt (*X, y*) vom Mittelpunkt des Rechtecks. Zeichnen Sie diagonale Linien durch die Ecken des Rechtecks in vier Bereiche und einen Mittelpunkt unterteilen. Sektor 0 bis 4 darstellen der Mittelpunkt, rechts, oben, links und jeweils unten. 
+Betrachten Sie ein Rechteck mit einer *Breite* und einer *Höhe* und einen Punkt (*x, y*) vom Mittelpunkt des Rechtecks. Zeichnen Sie diagonale Linien durch die Ecken des Rechtecks, um Sie in vier Sektoren und einen Mittelpunkt zu teilen. Die Sektoren 0 bis 4 stellen den Mittelpunkt, rechts, oben, Links und unten dar. 
   
-![Bereiche von 0 bis 4 darstellen der Mittelpunkt, rechts, oben, links und jeweils unten](media/ShpSheetRef_CA_03_ZA07645862.gif)
+![Sektoren 0 bis 4 stellen den Mittelpunkt, rechts, oben, Links und unten dar.](media/ShpSheetRef_CA_03_ZA07645862.gif)
   
 ## <a name="example"></a>Beispiel
 

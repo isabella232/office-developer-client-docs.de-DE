@@ -6,30 +6,26 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: abd175af-ad4e-b84a-2687-2c9358653499
-ms.openlocfilehash: 95633ab7a4127564fef65062bcf328d4364ebd86
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3daeb4704a33ba836cf82c9ab3517c6ca6be8db7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19797391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359591"
 ---
-# <a name="lockfromgroupformat-cell-protection-section"></a>LockFromGroupFormat Cell (Protection Section)
+# <a name="lockfromgroupformat-cell-protection-section"></a>Zelle "LockFromGroupFormat" (Abschnitt "Protection")
 
-Blöcke format, Änderungen in einem Gruppen-Shape aus, die Teil-Shapes weitergegeben wird, während Benutzer dennoch ausgewählten untergeordneten Shapes direkt zu formatieren. 
+Blockiert Formatänderungen an einem Gruppen-Shape, die an die unter Formen weitergegeben werden, während Benutzer die ausgewählten unter Formen weiterhin direkt formatieren können. 
   
-Der Wert der Zelle LockFromGroupFormat entspricht der Einstellung für das Kontrollkästchen Von Gruppenformatierung im Dialogfeld Schutz. 
+Der Wert der Zelle LockFromGroupFormat entspricht dem Kontrollkästchen **von Gruppen Formatierungen** im Dialogfeld **Schutz** . 
   
-Wenn Sie auf die Zelle LockFromGroupFormat aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:
-
- 
+Wenn Sie auf die Zelle LockFromGroupFormat aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockFromGroupFormat  <br/> |
    
-Wenn Sie aus einem Programm heraus nach Index auf die Zelle LockFromGroupFormat verweisen möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:
-
- 
+Wenn Sie aus einem Programm aus nach Index auf die Zelle LockFromGroupFormat verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

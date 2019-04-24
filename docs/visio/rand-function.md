@@ -8,25 +8,25 @@ f1_keywords:
 - Vis_DSS.chm82251485
 localization_priority: Normal
 ms.assetid: 482497ee-fe19-c2fa-53ce-bdb27b5d28bc
-description: Gibt eine zufällige Gleitkommazahl von 0,0 1,0 zurück. Es gibt eine unterschiedliche Anzahl jedes Mal, wenn die Funktion ausgewertet wird, die einmal pro Minute entsprechend der Systemuhr ist.
-ms.openlocfilehash: 4b164e90c6d6b81764d2763bef04d836cae52c1b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine zufällige Gleitkommazahl zwischen 0,0 und 1,0 zurück. Jedes Mal, wenn die Funktion ausgewertet wird, wird je nach der Systemuhr eine andere Zahl zurückgegeben.
+ms.openlocfilehash: bab2fd74aff85be85f886e3ac8fe7df113664ae5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360004"
 ---
 # <a name="rand-function"></a>RAND Function
 
-Gibt eine zufällige Gleitkommazahl von 0,0 1,0 zurück. Es gibt eine unterschiedliche Anzahl jedes Mal, wenn die Funktion ausgewertet wird, die einmal pro Minute entsprechend der Systemuhr ist. 
+Gibt eine zufällige Gleitkommazahl zwischen 0,0 und 1,0 zurück. Jedes Mal, wenn die Funktion ausgewertet wird, wird je nach der Systemuhr eine andere Zahl zurückgegeben. 
   
 ## <a name="syntax"></a>Syntax
 
 RAND( )
   
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Float
+Gleitkommazahl
   
 ## <a name="remarks"></a>Bemerkungen
 

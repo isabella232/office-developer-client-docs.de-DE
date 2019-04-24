@@ -1,5 +1,5 @@
 ---
-title: PidLidRecallTime (kanonische Eigenschaft)
+title: Kanonische Pidlidrecalltime (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,43 +11,43 @@ api_name:
 api_type:
 - COM
 ms.assetid: 65aed75f-7e4e-4de9-b219-64dde8891a79
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1459dcdb32dce2826f10b5616f899cd424b634b7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: d4038e3ecd1b4e5283e071305a316db014aacfd6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360083"
 ---
-# <a name="pidlidrecalltime-canonical-property"></a>PidLidRecallTime (kanonische Eigenschaft)
+# <a name="pidlidrecalltime-canonical-property"></a>Kanonische Pidlidrecalltime (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Zeit an, der ein Nachrichtenrückruf initiiert wurde.
+Gibt den Zeitpunkt an, zu dem ein Nachrichtenrückruf initiiert wurde.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidRecallTime  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008549  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
+|Long-ID (Deckel):  <br/> |0x00008549  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
-|Bereich:  <br/> |Allgemeine messaging  <br/> |
+|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,5 +59,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

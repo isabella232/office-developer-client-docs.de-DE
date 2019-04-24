@@ -8,27 +8,27 @@ f1_keywords:
 - Vis_DSS.chm82251471
 localization_priority: Normal
 ms.assetid: ff59ab04-a589-cf9e-db3b-20658a7dffdc
-description: Öffnet ein Microsoft Visio-Dokument, wenn es noch nicht geöffnet ist, und das Dokumentfenster aktiviert.
-ms.openlocfilehash: 7d4778fc4641465e88303b8515365172fd8be0ff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Öffnet ein Microsoft Visio-Dokument, wenn es noch nicht geöffnet ist, und aktiviert das Dokumentfenster.
+ms.openlocfilehash: 5a89a658e560d144007ec19796de82b9949bea82
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360956"
 ---
 # <a name="openfile-function"></a>OPENFILE Function
 
-Öffnet ein Microsoft Visio-Dokument, wenn es noch nicht geöffnet ist, und das Dokumentfenster aktiviert.
+Öffnet ein Microsoft Visio-Dokument, wenn es noch nicht geöffnet ist, und aktiviert das Dokumentfenster.
   
 ## <a name="syntax"></a>Syntax
 
- **OPENFILE** ( _"Filename"_)
+ **OpenFile** ( _"filename"_)
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Dateiname_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Datei, einschließlich Dateipfad, den Sie öffnen möchten.  <br/> |
+| _filename_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Datei, einschließlich des Dateipfads, der geöffnet werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
@@ -42,6 +42,6 @@ In früheren Visio-Versionen wird diese Funktion in der Form _OPENFILE angezeigt
 
  `OPENFILE("C:/MyFile.vsdx")`
   
-Öffnet die angegebene Datei "MyFile.vsdx" in einem neuen Fenster oder aktiviert das Fenster, wenn die Datei bereits geöffnet ist. 
+Öffnet die angegebene Datei "MyFile. vsdx" in einem neuen Fenster oder aktiviert das Fenster, wenn die Datei bereits geöffnet ist. 
   
 

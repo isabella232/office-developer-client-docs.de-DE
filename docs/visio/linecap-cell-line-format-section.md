@@ -9,34 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3519216b-b6cf-2e8c-e20f-adfa373c9028
 description: Gibt an, ob eine Linie abgerundete, viereckige oder erweiterte Enden hat.
-ms.openlocfilehash: 1bd427801e6d95ce6167fa9681da2c567307f072
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 44de4bff87fd3d121dfce9eec934ec39bc61065a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359318"
 ---
-# <a name="linecap-cell-line-format-section"></a>LineCap Cell (Line Format Section)
+# <a name="linecap-cell-line-format-section"></a>Zelle "LineCap" (Abschnitt "Line Format")
 
 Gibt an, ob eine Linie abgerundete, viereckige oder erweiterte Enden hat.
   
 |**Wert**|**Formatvorlage für das Linienende**|
 |:-----|:-----|
-|0  <br/> |Abgerundet  <br/> |
-|1  <br/> |Quadrat  <br/> |
+|0  <br/> |Gerundet  <br/> |
+|1  <br/> |Square  <br/> |
 |2  <br/> |Erweitert  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Linie** festlegen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Pfeile**, und klicken Sie dann auf **Weitere Pfeile**).
   
-Wenn Sie einen Verweis auf die Zelle LineCap aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "LineCap aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LineCap  <br/> |
+|Zellenname:  <br/> |"LineCap  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineCap aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "LineCap aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

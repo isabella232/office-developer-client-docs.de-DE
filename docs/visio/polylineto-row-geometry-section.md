@@ -8,30 +8,30 @@ f1_keywords:
 - Vis_DSS.chm82251757
 localization_priority: Normal
 ms.assetid: b78a993f-4165-438d-39cf-9461b2877f17
-description: Enthält X- und y-Koordinaten des letzten Punkts einer Polylinie und eine Polylinienformel.
-ms.openlocfilehash: 56cecb2eeaa1702461b1096fe468974f2f0b1f52
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält die x-und y-Koordinaten des letzten Punkts einer Polylinie und einer Polylinie.
+ms.openlocfilehash: 13e5bd7138103094f0f00ad0512e33e9e6ad5e7f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359829"
 ---
-# <a name="polylineto-row-geometry-section"></a>PolylineTo Row (Geometry Section)
+# <a name="polylineto-row-geometry-section"></a>Zeile "PolylineTo" (Abschnitt "Geometry")
 
-Enthält die *X* - und *y* -Koordinaten des letzten Punkts einer Polylinie und eine Polylinienformel. 
+Enthält die *x* -und *y* -Koordinaten des letzten Punkts einer Polylinie und einer Polylinie. 
   
 Eine Zeile PolylineTo enthält folgende Zellen.
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |Die *X* -Koordinate des Endscheitelpunkts einer Polylinie.  <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Endscheitelpunkts einer Polylinie.  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |Die *x* -Koordinate des Endpunkts einer Polylinie.  <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Endpunkts einer Polylinie.  <br/> |
 |[A](a-cell-geometry-section.md) <br/> |Die Polylinienformel.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zeilen, die als Polylinienzeilen dargestellt werden, entsprechen Zeilen, die als Folge von LineTo-Zeilen dargestellt werden, doch eine Polylinienzeile ist effizienter. Sie können eine Zeile PolylineTo in eine Zeile LineTo ändern, damit Sie die Geometrie des Shapes problemlos anzeigen können. Klicken Sie dazu mit der rechten Maustaste auf die Zeile PolylineTo, und klicken Sie dann im Kontextmenü auf Zeile erweitern. 
+Zeilen, die als Polylinie dargestellt werden, sind äquivalent zu Zeilen, die als Sequenz von LineTo-Zeilen dargestellt werden, aber eine Polylinie-Zeile ist effizienter. Sie können eine PolylineTo-Zeile in eine LineTo-Zeile ändern, damit Sie die Form Geometrie leicht erkennen können. Klicken Sie dazu mit der rechten Maustaste auf die PolylineTo-Zeile, und klicken Sie dann im Kontextmenü auf **Zeile erweitern** . 
   
-Wenn Sie einen Zeilentyp in PolylineTo ändern möchten, klicken Sie mit der rechten Maustaste auf die Zeile, und klicken Sie dann im Kontextmenü auf Zeilentyp ändern. 
+Wenn Sie einen Zeilentyp in eine PolylineTo-Zeile ändern möchten, klicken Sie mit der rechten Maustaste auf die Zeile, und klicken Sie dann im Kontextmenü auf **zeilenTyp ändern** . 
   
 

@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251413
 localization_priority: Normal
 ms.assetid: 0bf7f757-0b7f-dec1-9709-6612c9ad0d53
-description: Gibt den Wert Datum und Uhrzeit, die durch Datetime oder Expression dargestellt.
-ms.openlocfilehash: 001430acaf9fcb670e95157380e474e12b9728cc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den Datums-und Uhrzeitwert zurück, der durch DateTime oder Expression dargestellt wird.
+ms.openlocfilehash: 2da084f685c044d48495b04f727a877140b51004
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360319"
 ---
 # <a name="datetime-function"></a>DATETIME-Funktion
 
-Gibt den Wert Datum und Uhrzeit, die durch _Datetime_ oder _Expression_dargestellt.
+Gibt den Datums-und Uhrzeitwert zurück, der durch _DateTime_ oder _Expression_dargestellt wird.
   
 ## <a name="syntax"></a>Syntax
 
-DATETIME ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **]) 
+DATETIME ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,19 +30,19 @@ DATETIME ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Nummer** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Number** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Datetime
+DateTime
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn *Datetime* nicht vorhanden ist oder nicht als gültige Datum oder Uhrzeit interpretiert werden kann, gibt DATETIME einen #VALUE! Fehler. 
+Wenn *DateTime* fehlt oder nicht als gültige Datums-oder Uhrzeitangabe interpretiert werden kann, gibt datetime einen #VALUE zurück! zurück. 
   
 Der Wert wird in dem kurzen Zeit- und Datumsformat geliefert, das aktuell in den länderspezifischen Systemeinstellungen festgelegt ist. 
   
-Die DATETIME-Funktion nimmt auch einen einzelnen Zahlenwert für *Expression* , wobei der Ganzzahlteil des Ergebnisses für die Anzahl von Tagen seit dem 30. Dezember 1899 und der Dezimalteil den Bruchteil eines Tages seit Mitternacht darstellt. 
+Die DATETIME-Funktion akzeptiert auch einen einzelnen Zahlenwert für *Expression* , wobei der ganzzahlige Teil des Ergebnisses die Anzahl von Tagen seit dem 30. Dezember 1899 darstellt und der Dezimalteil den Bruchteil eines Tags seit Mitternacht darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
@@ -64,7 +64,7 @@ Liefert den Wert, der den 19.7.2001 13:30:00 darstellt (wenn als aktuelles Jahr 
   
 ## <a name="example-4"></a>Beispiel 4
 
-DATETIME(35580.6337)
+DATETIME (35580.6337)
   
 Liefert den Wert, der den 30.5.1997 15:12:32 darstellt.
   

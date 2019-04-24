@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm1190
 localization_priority: Normal
 ms.assetid: 6d5062d3-743b-8664-8ec9-5a8f11d5edf9
-description: Steuert das Verhalten der y-Koordinate der Steuerpunkt Steuerpunkts zeigt, wenn dieser verschoben wird. Diese Formeln sind verfügbar.
-ms.openlocfilehash: ee2a5e28748df603635f64c080119e28569f576a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Steuert die Art des Verhaltens, die die y-Koordinate des Steuerpunkts zeigt, nachdem der Ziehpunkt verschoben wurde. Diese Formeln stehen zur Verfügung.
+ms.openlocfilehash: bf8cbd490884244c92b68784dcbf041093539c94
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360144"
 ---
-# <a name="y-behavior-cell-controls-section"></a>Y Behavior Cell (Controls Section)
+# <a name="y-behavior-cell-controls-section"></a>Zelle "Y Behavior" (Abschnitt "Controls")
 
-Steuert das Verhalten der *y* -Koordinate der Steuerpunkt Steuerpunkts zeigt, wenn dieser verschoben wird. Diese Formeln sind verfügbar. 
+Steuert die Art des Verhaltens, die die *y* -Koordinate des Steuerpunkts zeigt, nachdem der Ziehpunkt verschoben wurde. Diese Formeln stehen zur Verfügung. 
   
 |**Wert**|**Verhalten**|**Definition**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|:-----|
@@ -35,18 +35,18 @@ Steuert das Verhalten der *y* -Koordinate der Steuerpunkt Steuerpunkts zeigt, we
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Y Behavior aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Y Behavior aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Steuerelemente.  *Name* . YConwhere-Steuerelemente.  *Name* ist der Name der Zeile mit Steuerelementen.  <br/> |
+| Zellenname:  <br/> | Steuerelemente.  *Name* . YConwhere-Steuerelemente.  *Name* ist der Name der Zeile Controls.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Y Behavior aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Y Behavior aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionControls** <br/> |
-| Zeilenindex:  <br/> |**VisRowControl** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowControl** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCtlYCon** <br/> |
    
 

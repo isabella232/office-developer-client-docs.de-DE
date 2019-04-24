@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: cc4abf1a-c08c-4462-9d7c-6af506dc07c9
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: faba91d813d27f7ea45e978724ce0d4707803cba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b53dd9aaaf18dba5c7e33e0bc7d984de757634a4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358772"
 ---
 # <a name="scuncfromlocalpath"></a>ScUNCFromLocalPath
 
@@ -25,13 +25,13 @@ ms.locfileid: "22590106"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einer universal naming Convention (UNC) Pfad Entsprechung für den angegebenen lokalen Pfad.
+Sucht einen UNC-Pfad Gegenstück (Universal Naming Convention) für den angegebenen lokalen Pfad.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScUNCFromLocalPath(
@@ -45,33 +45,33 @@ SCODE ScUNCFromLocalPath(
 
  _szLocal_
   
-> [in] Einen Pfad im Format [ _Laufwerk:_]\[ _Pfad_] einer Datei oder ein Verzeichnis.
+> in Ein Pfad im Format [ _Drive:_]\[ _path_] einer Datei oder eines Verzeichnisses.
     
  _szUNC_
   
-> [out] Einen Pfad im Format \\[ _Server_]\[ _Freigeben_]\[ _Pfad_] der gleichen Datei oder des Verzeichnisses wie bei der _SzLocal_ -Parameter. 
+> Out Ein Pfad im \\Format [ _Server_]\[ _Freigabe_\[ _Pfad_] derselben Datei oder desselben Verzeichnisses wie für den _szLocal_ -Parameter. 
     
  _cchUNC_
   
-> [in] Die Größe des Puffers für die Ausgabezeichenfolge.
+> in Die Größe des Puffers für die Ausgabezeichenfolge.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Das Gegenstück der UNC-Pfad wurde erfolgreich gefunden.
+> Der UNC-Pfad Gegenstück wurde erfolgreich gefunden.
     
 MAPI_E_INVALID_PARAMETER
   
-> Ein oder mehrere Parameter sind ungültig.
+> Mindestens ein Parameter ist ungültig.
     
 MAPI_E_TOO_BIG
   
->  _SzUNC_ war nicht groß genug für das Ergebnis. 
+>  _szUNC_ war nicht groß genug, um das Ergebnis zu halten. 
     
 S_FALSE
   
-> Der lokale Pfad wurde bereits eine UNC-Zeichenfolge.
+> Der lokale Pfad war bereits eine UNC-Zeichenfolge.
     
 ## <a name="see-also"></a>Siehe auch
 

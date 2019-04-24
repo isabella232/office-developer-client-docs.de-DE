@@ -1,31 +1,31 @@
 ---
-title: Colors-Element (VisioDocument_Type ComplexType) ("Visio XML")
+title: Colors-Element (VisioDocument_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f439c2d-78be-5f2e-fa5a-f3feb83a0234
-description: Tabelle des Dokuments enthält.
+description: Enthält die Farbtabelle des Dokuments.
 ms.openlocfilehash: bd46f58dfbb8a596717662b9a0524d59bb508270
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358758"
 ---
-# <a name="colors-element-visiodocumenttype-complextype-visio-xml"></a>Colors-Element (VisioDocument_Type ComplexType) ("Visio XML")
+# <a name="colors-element-visiodocumenttype-complextype-visio-xml"></a>Colors-Element (VisioDocument_Type complexType) (' Visio XML ')
 
-Tabelle des Dokuments enthält.
+Enthält die Farbtabelle des Dokuments.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Colors_Type](colors_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Document.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Document. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Tabelle des Dokuments enthält.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,7 +48,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[ColorEntry](colorentry-element-colors_type-complextypevisio-xml.md) <br/> |[ColorEntry_Type](colorentry_type-complextypevisio-xml.md) <br/> |Enthält einen Eintrag Farbe an.  <br/> |
+|[ColorEntry](colorentry-element-colors_type-complextypevisio-xml.md) <br/> |[ColorEntry_Type](colorentry_type-complextypevisio-xml.md) <br/> |Enthält einen Farbtabellen Eintrag.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

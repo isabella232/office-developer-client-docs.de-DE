@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7f2b4e04-2f25-44fd-8167-6fe97fa2b719
-ms.openlocfilehash: e3bf7af0e3ee5a49502f3b71890a6c3cedfff6f8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f69d1286cc8eb2f42dd742288b961803155664a4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360536"
 ---
 # <a name="rows-visio-shapesheet-reference"></a>Zeilen (Visio-ShapeSheet-Referenz)
 
@@ -29,9 +29,9 @@ ms.locfileid: "19797921"
     
 - [Zeile "EllipticalArcTo" (Abschnitt "Geometry")](ellipticalarcto-row-geometry-section.md)
     
-- [Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md)
+- [Verlaufs Unterbrechungs Zeile (Abschnitt "Füll Verlauf")](gradient-stop-row-fill-gradient-section.md)
     
-- [Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md)
+- [Verlaufs Unterbrechungs Zeile (Abschnitt "Linienverlauf")](gradient-stop-row-line-gradient-section.md)
     
 - [Zeile "Hyperlink" (Abschnitt "Hyperlinks")](hyperlink-row-hyperlinks-section.md)
     
@@ -45,15 +45,15 @@ ms.locfileid: "19797921"
     
 - [Zeile "PolylineTo" (Abschnitt "Geometry")](polylineto-row-geometry-section.md)
     
-- [RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md)
+- [Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md)
     
-- [RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md)
+- [Zeile "RelEllipticalArcTo" (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md)
     
-- [RelLineTo Row (Geometry Section)](rellineto-row-geometry-section.md)
+- [Zeile "RelLineTo" (Abschnitt "Geometry")](rellineto-row-geometry-section.md)
     
-- [RelMoveTo Row (Geometry Section)](relmoveto-row-geometry-section.md)
+- [Zeile "RelMoveTo" (Abschnitt "Geometry")](relmoveto-row-geometry-section.md)
     
-- [RelQuadBezTo Row (Geometry Section)](relquadbezto-row-geometry-section.md)
+- [Zeile "RelQuadBezTo" (Abschnitt "Geometry")](relquadbezto-row-geometry-section.md)
     
 - [Zeile "Shape Data" (Abschnitt "Shape Data")](shape-data-row-shape-data-section.md)
     

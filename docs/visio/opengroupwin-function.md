@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251472
 localization_priority: Normal
 ms.assetid: 856ece39-18a4-766a-0dd9-7e888b8b78a5
-description: Öffnet die Gruppe im Gruppenfenster. Wenn das Objekt keine Gruppe ist, hat diese Funktion keine Auswirkung.
-ms.openlocfilehash: 690c0addeaf4a32735d8526522d2d7500e5fc126
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Öffnet die Gruppe im Gruppenfenster. Wenn es sich bei dem Objekt nicht um eine Gruppe handelt, wird von dieser Funktion nichts ausgeführt.
+ms.openlocfilehash: 67d5f055408d5dd887a6bbf052b34726986a1220
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360970"
 ---
 # <a name="opengroupwin-function"></a>OPENGROUPWIN Function
 
-Öffnet die Gruppe im Gruppenfenster. Wenn das Objekt keine Gruppe ist, hat diese Funktion keine Auswirkung.
+Öffnet die Gruppe im Gruppenfenster. Wenn es sich bei dem Objekt nicht um eine Gruppe handelt, wird von dieser Funktion nichts ausgeführt.
   
 ## <a name="syntax"></a>Syntax
 

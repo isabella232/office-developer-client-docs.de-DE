@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ae05de63-b527-66e6-2c79-056c9c92ec95
 description: Sperrt ein Objekt aus einem anderen Programm, damit es nicht mithilfe des Zuschneidetools zugeschnitten werden kann.
-ms.openlocfilehash: d7f231d5dcb022548477e0817c9d408a8d1b86ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bfb8bebd50908387fa3f94a8ca228935ef709133
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359626"
 ---
-# <a name="lockcrop-cell-protection-section"></a>LockCrop Cell (Protection Section)
+# <a name="lockcrop-cell-protection-section"></a>Zelle "LockCrop" (Abschnitt "Protection")
 
-Sperrt ein Objekt aus einem anderen Programm, damit es mithilfe **des Zuschneidetools** zugeschnitten. 
+Sperrt ein Objekt aus einem anderen Programm, damit es nicht mithilfe des Zuschneidetools zugeschnitten werden kann. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 | TRUE  <br/> | Shape kann nicht zugeschnitten werden.  <br/> |
 | FALSE  <br/> | Shape kann zugeschnitten werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockCrop aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockCrop aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockCrop  <br/> |
+| Zellenname:  <br/> | Zelle LockCrop  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockCrop aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockCrop aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

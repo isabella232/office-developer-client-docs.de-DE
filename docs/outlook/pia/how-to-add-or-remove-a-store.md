@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4346f3bf1b7bba1f26a34e1562997b4d043c8d49
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359745"
 ---
 # <a name="add-or-remove-a-store"></a>Hinzufügen oder Entfernen eines Speichers
 
@@ -22,7 +22,7 @@ In diesem Beispiel wird veranschaulicht, wie ein Speicher in einem Profil hinzug
 
 Das Codebeispiel zeigt das Hinzufügen und Entfernen eines Speichers in einem angegebenen Profil durch einen Aufruf der [AddStoreEx](https://msdn.microsoft.com/library/bb623442\(v=office.15\)) -Methode bzw. der [RemoveStore](https://msdn.microsoft.com/library/bb610524\(v=office.15\)) -Methode für das [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) -Objekt.
 
-In Outlook können Sie einen PST-Speicher nur programmatisch hinzufügen oder entfernen. Das folgende Codebeispiel fügt einen Unicode-Speicher hinzu und platziert die PST-Datei am Standardspeicherort für PST-Dateien von Benutzern: Dokumente und Einstellungen\\\<Benutzername\>\\Lokale Einstellungen\\Anwendungsdaten\\Microsoft\\Outlook. Das Codebeispiel verwendet Environment.SpecialFolder.LocalApplicationData zum Abrufen des Pfads zum Ordner „Anwendungsdaten“ unter dem Ordner „Lokale Einstellungen“. Nachdem Sie den Speicher hinzugefügt haben, wird er vom Codebeispiel entfernt. Da die **RemoveStore**-Methode ein [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\))-Objekt zum Entfernen des [Store](https://msdn.microsoft.com/library/bb609139\(v=office.15\))-Objekts erfordert, listet es die [Stores](https://msdn.microsoft.com/library/bb622944\(v=office.15\))-Sammlung auf, um das **Store**-Objekt zu suchen, das soeben hinzugefügt wurde. Dies geschieht basierend auf der [FilePath](https://msdn.microsoft.com/library/bb646113\(v=office.15\))-Eigenschaft des **Store**-Objekts.
+In Outlook können Sie einen PST-Speicher nur programmatisch hinzufügen oder entfernen. Das folgende Codebeispiel fügt einen Unicode-Speicher hinzu und platziert die PST-Datei am Standardspeicherort für PST-Dateien von Benutzern: Dokumente und Einstellungen\\\<Benutzername\>\\Lokale Einstellungen\\Anwendungsdaten\\Microsoft\\Outlook. Das Codebeispiel verwendet Environment.SpecialFolder.LocalApplicationData zum Abrufen des Pfads zum Ordner „Anwendungsdaten“ unter dem Ordner „Lokale Einstellungen“. Nachdem Sie den Speicher hinzugefügt haben, wird er vom Codebeispiel entfernt. Because the **RemoveStore** method requires a [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) object to remove the [Store](https://msdn.microsoft.com/library/bb609139\(v=office.15\)) object, it enumerates the [Stores](https://msdn.microsoft.com/library/bb622944\(v=office.15\)) collection to find the **Store** object that has just been added based on the [FilePath](https://msdn.microsoft.com/library/bb646113\(v=office.15\)) property of the **Store** object.
 
 **RemoveStore** entfernt nur den Speicher aus dem aktuellen Profil. Die PST-Datei wird nicht aus dem Dateisystem gelöscht.
 

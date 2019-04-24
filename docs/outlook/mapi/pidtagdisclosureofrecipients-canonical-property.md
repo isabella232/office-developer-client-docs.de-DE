@@ -1,5 +1,5 @@
 ---
-title: PidTagDisclosureOfRecipients (kanonische Eigenschaft)
+title: Kanonische Pidtagdisclosureofrecipients (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d77d46cd-6e21-485a-bb0d-dffece562a28
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b3a109f87ffc7c0e4c1860b779c9447596253a17
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2c047a5972ca475576a3325cef30ebc090a2b3fa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360830"
 ---
-# <a name="pidtagdisclosureofrecipients-canonical-property"></a>PidTagDisclosureOfRecipients (kanonische Eigenschaft)
+# <a name="pidtagdisclosureofrecipients-canonical-property"></a>Kanonische Pidtagdisclosureofrecipients (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn die Weitergabe von Empfängern zulässig ist.
+Enthält TRUE, wenn die Offenlegung von Empfängern zulässig ist.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält True, wenn die Weitergabe von Empfängern zulässig ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

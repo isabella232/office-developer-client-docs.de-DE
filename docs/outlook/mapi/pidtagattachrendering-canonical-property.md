@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachRendering (kanonische Eigenschaft)
+title: Kanonische Pidtagattachrendering (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1f31f7f4-fbda-4337-95e5-5474dd1bf84a
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 22d3e649641dbe688912ecece7fde73a555f4a88
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361096"
 ---
-# <a name="pidtagattachrendering-canonical-property"></a>PidTagAttachRendering (kanonische Eigenschaft)
+# <a name="pidtagattachrendering-canonical-property"></a>Kanonische Pidtagattachrendering (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Microsoft Windows-Metadatei mit Informationen für eine Anlage enthält. 
+Enthält eine Microsoft Windows-Metadatei mit Renderinginformationen für eine Anlage. 
   
 |||
 |:-----|:-----|
@@ -34,37 +34,37 @@ Eine Microsoft Windows-Metadatei mit Informationen für eine Anlage enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Zweck dieser Eigenschaft ist ein Symbol oder andere bildliche Darstellung, die innerhalb der übergeordneten Nachricht zum Zeitpunkt der Anlage angezeigt werden kann. Diese Darstellung umfasst in der Regel den Namen der Anlage, falls vorhanden, und die Art der Anlage, wie beispielsweise Microsoft Office Word-Dokument. Eine Clientanwendung können diese Darstellung in der Anzeige der Nachricht. 
+Der Zweck dieser Eigenschaft besteht darin, ein Symbol oder eine andere bildliche Darstellung bereitzustellen, die in der übergeordneten Nachricht am Punkt der Anlage angezeigt werden kann. Eine solche Darstellung enthält in der Regel den Namen der Anlage, falls vorhanden, und die Art der Anlage, wie beispielsweise ein Microsoft Office Word-Dokument. Eine Clientanwendung kann diese Darstellung in der Anzeige der Nachricht verwenden. 
   
-Bei einer Anlage dargestellt ist diese Eigenschaft in der Regel ein Symbol für die Datei. 
+Für eine angefügte Datei wird in der Regel ein Symbol für die Datei dargestellt. 
   
-Diese Eigenschaft ist für eine angefügte Nachricht in der Regel nicht festgelegt. Eine Clientanwendung zum Rendern einer angefügten Nachricht benötigen sollte seine Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) zu erhalten, rufen Sie [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) für einen Zeiger auf das entsprechende Informationen Formularobjekt, Öffnen Sie die [IMAPIFormInfo](imapiforminfoimapiprop.md) -Benutzeroberfläche für dieses Objekt und verwenden Sie **GetProps** zum Abrufen des **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) oder **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md))-Eigenschaft. 
+Für eine angefügte Nachricht ist diese Eigenschaft in der Regel nicht festgelegt. Eine Clientanwendung, die eine angefügte Nachricht Rendern muss, sollte Ihre **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft aufrufen [IMAPIFormMgr:: ResolveMessageClass](imapiformmgr-resolvemessageclass.md) für einen Zeiger auf das entsprechende Formular Informationsobjekt, Öffnen Sie die [IMAPIFormInfo](imapiforminfoimapiprop.md) -Schnittstelle für dieses Objekt, und verwenden Sie GetProps, um die **PR_ICON** ([pidtagicon (](pidtagicon-canonical-property.md)) oder **PR_MINI_ICON** ([pidtagminiicon (](pidtagminiicon-canonical-property.md))-Eigenschaft abzurufen. **** 
   
-Bei einem eingebetteten statische OLE-Objekt enthält diese Eigenschaft eine Microsoft Windows-Metadatei, die verwendet werden kann, um die Darstellung der Anlage in einem Fenster zeichnen. 
+Bei einem eingebetteten statischen OLE-Objekt enthält diese Eigenschaft eine Microsoft Windows-Metadatei, die zum Zeichnen der Anlagendarstellung in einem Fenster verwendet werden kann. 
   
-Der Client sollte für ein eingebettetes dynamische OLE-Objekt OLE-Daten verwenden, um die Wiedergabe von Informationen zu generieren. 
+Bei einem eingebetteten dynamischen OLE-Objekt sollte der Client die OLE-Daten verwenden, um die Renderinginformationen zu generieren. 
   
-In allen Fällen beachten die Clientanwendung Sie, dass diese Eigenschaft in der Regel mehrere hundert Bytes in Größe ist und Abschneiden in der Tabelle Dateianhang unterliegt. Wenn ein Client die Anlage aus dieser Eigenschaft Rendern möchte, ohne die Anlage selbst zu öffnen, müssen sie innerhalb der Tabelle abschneiden Regel arbeiten. Weitere Informationen finden Sie unter [Arbeiten mit großen Spalten](working-with-large-columns.md). 
+In allen Fällen sollte die Clientanwendung beachten, dass diese Eigenschaft in der Regel mehrere hundert Bytes groß ist und in der Attachment-Tabelle abgeschnitten wird. Wenn ein Client die Anlage aus dieser Eigenschaft Rendern möchte, ohne die Anlage selbst zu öffnen, muss Sie innerhalb der Tabellen Kürzungs Regel funktionieren. Weitere Informationen finden Sie unter [Arbeiten mit umfangreichen Spalten](working-with-large-columns.md). 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -76,5 +76,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

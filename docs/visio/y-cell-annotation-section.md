@@ -8,35 +8,35 @@ f1_keywords:
 - vis_sdr.chm60095
 localization_priority: Normal
 ms.assetid: 527a4615-2013-a4b4-81cd-7f5d71c1803c
-description: Die y-Koordinate des kommentarmarkers in Seitenkoordinaten.
-ms.openlocfilehash: cc2399de7919512796a39ca39c705c214f4c51a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Die y-Koordinate des Kommentarmarkers in Seitenkoordinaten.
+ms.openlocfilehash: 48a37c261078cd1000331920b33549cee2c1da03
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360123"
 ---
-# <a name="y-cell-annotation-section"></a>Y Cell (Annotation Section)
+# <a name="y-cell-annotation-section"></a>Zelle "Y" (Abschnitt "Annotation")
 
-Die *y* -Koordinate des kommentarmarkers in Seitenkoordinaten. 
+Die *y* -Koordinate des Kommentarmarkers in Seitenkoordinaten. 
   
 > [!NOTE]
-> Diese Zelle wird für Kommentare zur Überwachung nur, wenn eine VSD-Datei in Microsoft Visio 2013 öffnen oder eine vsdx-Datei im VSD-Format speichern. Es wird nicht zum Nachverfolgen von Kommentaren in .vsdx Dokumente in Visio 2013 verwendet. 
+> Diese Zelle wird zum Nachverfolgen von Kommentaren nur beim Öffnen einer VSD-Datei in Microsoft Visio 2013 oder beim Speichern einer. vsdx-Datei im VSD-Dateiformat verwendet. Sie wird nicht zum Nachverfolgen von Kommentaren in vsdx-Dokumenten in Visio 2013 verwendet. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Y aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Y aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Annotation.Y [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Annotation. Y [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Y aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Y nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionAnnotation** <br/> |
-| Zeilenindex:  <br/> |**VisRowAnnotation** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> |**visAnnotationY** <br/> |
+| Zeilenindex:  <br/> |**visRowAnnotation** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visAnnotationY** <br/> |
    
 

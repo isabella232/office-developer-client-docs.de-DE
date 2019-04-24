@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 13661393-adf6-4870-86c4-303262317675
 description: Der Outlook Connector für soziale Netzwerke 2013 bietet einen Hub für die private und berufliche Kommunikation.
 ms.openlocfilehash: e570fe69cbbe0e8d472e712fb3b8592c97fe43c0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359836"
 ---
 # <a name="outlook-social-connector-provider-reference"></a>Outlook Connector für soziale Netzwerke – Anbieterverweis
 

@@ -1,26 +1,26 @@
 ---
-title: QuickStyleFontMatrix Cell (Quick Style Section)
+title: QuickStyleFontMatrix Cell (Quick Style section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 304ee083-e9c8-45df-b411-ba5e7db4c086
-description: Bestimmt das Format der Schriftart für jede Schnellformatvorlagen als eine ganze Zahl zwischen 1 und 6 an.
-ms.openlocfilehash: 0c1c0d6279ba176dbb8db99c135108b1992b6202
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die Schriftart für jede Schnellformatvorlage als ganze Zahl zwischen 1 und 6.
+ms.openlocfilehash: 0708a243b001c7b4e03158b5a332a3166727cabc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360074"
 ---
-# <a name="quickstylefontmatrix-cell-quick-style-section"></a>QuickStyleFontMatrix Cell (Quick Style Section)
+# <a name="quickstylefontmatrix-cell-quick-style-section"></a>QuickStyleFontMatrix Cell (Quick Style section)
 
-Bestimmt das Format der Schriftart für jede Schnellformatvorlagen als eine ganze Zahl zwischen 1 und 6 an.
+Bestimmt die Schriftart für jede Schnellformatvorlage als ganze Zahl zwischen 1 und 6.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **QuickStyleFontMatrix** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **QuickStyleFontMatrix** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

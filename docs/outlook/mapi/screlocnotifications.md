@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 22de5d38-7be6-48b3-90a7-bc553dcdb042
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4117558d27d64444cdac62651584fe6cfe8ff061
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 81da4b77f0d2162a1119b7945b1e0ceb87ba9fb8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360711"
 ---
 # <a name="screlocnotifications"></a>ScRelocNotifications
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einen Zeiger in ein bestimmtes Ereignis Benachrichtigung Array passt. 
+Passt einen Zeiger in einem angegebenen Ereignis Benachrichtigungs Array an. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScRelocNotifications(
@@ -47,37 +47,37 @@ SCODE ScRelocNotifications(
 
  _cntf_
   
-> [in] Anzahl der [Benachrichtigung](notification.md) Strukturen in das Array, das durch den Parameter _Rgntf_ angegeben. 
+> in Die Anzahl [](notification.md) der Benachrichtigungs Strukturen im durch den _rgntf_ -Parameter angegebenen Array. 
     
  _rgntf_
   
-> [in] Zeiger auf das Array von **Benachrichtigung** Strukturen definieren von ereignisbenachrichtigungen in denen ein Zeiger ist angepasst werden. 
+> in Zeiger auf das Array von **Benachrichtigungs** Strukturen, die Ereignisbenachrichtigungen definieren, innerhalb derer ein Zeiger angepasst werden soll. 
     
  _pvBaseOld_
   
-> [in] Zeiger auf die ursprüngliche Basisadresse des Arrays durch den Parameter _Rgntf_ angegeben. 
+> in Zeiger auf die ursprüngliche Basisadresse des vom _rgntf_ -Parameter angegebenen Arrays. 
     
  _pvBaseNew_
   
-> [in] Der Speicherort, auf das die neue Basisadresse des durch den Parameter _Rgntf_ angegebenen Arrays von **ScRelocNotifications** schreibt. 
+> in Der Speicherort, an den **ScRelocNotifications** die neue Basisadresse des durch den _rgntf_ -Parameter angegebenen Arrays schreibt. 
     
  _PCB_
   
-> [out] Zeiger auf die Größe des durch den Parameter _PvBaseNew_ angegebenen Arrays in Bytes. 
+> Out Zeiger auf die Größe des vom _pvBaseNew_ -Parameter angegebenen Arrays in Byte. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Ein Zeiger wurde erfolgreich korrigiert.
+> Ein Zeiger wurde erfolgreich angepasst.
     
 MAPI_E_INVALID_PARAMETER
   
-> Eine ungültige Benachrichtigung aufgetreten.
+> Es wurde eine ungültige Benachrichtigung gefunden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Parameter _pcb_ an die Funktion **ScRelocNotifications** ist optional. 
+Der _PCB_ -Parameter für die **ScRelocNotifications** -Funktion ist optional. 
   
 ## <a name="see-also"></a>Siehe auch
 

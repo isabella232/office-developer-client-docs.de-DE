@@ -1,5 +1,5 @@
 ---
-title: Urheberrechtshinweis für Outlook Connector für soziale Netzwerke 2013 – Anbieterverweis
+title: Copyright-Hinweis zur Outlook Social Connector 2013-Anbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,15 +7,15 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1425b9f2-606a-4522-b97c-0875d45eb175
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. In diesem Dokument, einschließlich URLs und anderer Verweise auf Internetwebsites, enthaltenen Informationen und Sichten können ohne vorherige Ankündigung geändert werden. Die Verwendung erfolgt auf eigenes Risiko.
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die in diesem Dokument enthaltenen Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internet Websites, können ohne vorherige Ankündigung geändert werden. Sie tragen das volle Risiko der Verwendung.
 ms.openlocfilehash: 6d01020fc4d4081e5f55de5f64f361ac3ae8a0b0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359885"
 ---
-# <a name="outlook-social-connector-2013-provider-reference-copyright-notice"></a>Urheberrechtshinweis für Outlook Connector für soziale Netzwerke 2013 – Anbieterverweis
+# <a name="outlook-social-connector-2013-provider-reference-copyright-notice"></a>Copyright-Hinweis zur Outlook Social Connector 2013-Anbieter
 
 Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.
   

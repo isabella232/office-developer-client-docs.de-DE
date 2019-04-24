@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 596c62b7-8d42-1854-d709-592db09a6a84
 description: Sperrt das Shape, damit es nicht gelöscht werden kann.
-ms.openlocfilehash: 00229dcabf45d2a3435039ffe05fd7eb4de75808
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0819969c9ba17a52de19341b359b33ceae5b44d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359619"
 ---
-# <a name="lockdelete-cell-protection-section"></a>LockDelete Cell (Protection Section)
+# <a name="lockdelete-cell-protection-section"></a>Zelle "LockDelete" (Abschnitt "Protection")
 
 Sperrt das Shape, damit es nicht gelöscht werden kann.
   
@@ -25,15 +25,15 @@ Sperrt das Shape, damit es nicht gelöscht werden kann.
 | TRUE  <br/> | Shape kann nicht gelöscht werden.  <br/> |
 | FALSE  <br/> | Shape kann gelöscht werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockDelete aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockDelete aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockDelete  <br/> |
+| Zellenname:  <br/> | Zelle LockDelete  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockDelete aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockDelete aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

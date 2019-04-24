@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachTransportName (kanonische Eigenschaft)
+title: Kanonische Pidtagattachtransportname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 701fca52-0f96-4019-80cd-c0ccd059ff9b
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: bd3a22bf55d03f3a9f06bf5c19650407bcc5627d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361068"
 ---
-# <a name="pidtagattachtransportname-canonical-property"></a>PidTagAttachTransportName (kanonische Eigenschaft)
+# <a name="pidtagattachtransportname-canonical-property"></a>Kanonische Pidtagattachtransportname (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Namen einer Anlage-Datei geändert, sodass es TNEF-Nachrichten zugeordnet werden kann. 
+Enthält den Namen einer Anlagendatei, die so geändert wurde, dass Sie TNEF-Nachrichten zugeordnet werden kann. 
   
 |||
 |:-----|:-----|
@@ -34,29 +34,29 @@ Enthält den Namen einer Anlage-Datei geändert, sodass es TNEF-Nachrichten zuge
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-TNEF und der Adressbuchhierarchie verwenden diese Eigenschaften. Sie sind in der Regel nicht Clientanwendungen zur Verfügung. 
+TNEF und der Transportanbieter verwenden diese Eigenschaften. Sie sind in der Regel nicht für Clientanwendungen verfügbar. 
   
-Diese Eigenschaften werden häufig von TNEF verwendet, wenn das zugrunde liegende messaging-System die angegebenen Dateinamen nicht unterstützt. Beispielsweise werden sie verwendet, wenn der Benutzer mehrere Dateien mit dem gleichen Namen, beispielsweise fünf Dateien mit dem Namen CONFIG angehängt wird. SYS. Der Transportdienst müssen Sie sicherstellen, dass sie eindeutig sind die Namen ändern. Jede geänderte Name wird in der Anlage **PR_ATTACH_TRANSPORT_NAME** und zugeordneten Eigenschaften. 
+Diese Eigenschaften werden in der Regel von TNEF verwendet, wenn das zugrunde liegende Messagingsystem die angegebenen Dateinamen nicht unterstützt. Sie werden beispielsweise verwendet, wenn der Benutzer mehrere Dateien mit demselben Namen anfügt, beispielsweise fünf Dateien mit dem Namen CONFIG. SYS. Der Transportanbieter muss die Namen ändern, um sicherzustellen, dass er eindeutig ist. Jeder geänderte Name wird in den **PR_ATTACH_TRANSPORT_NAME** -und zugehörigen Eigenschaften der Anlage angezeigt. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,5 +68,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

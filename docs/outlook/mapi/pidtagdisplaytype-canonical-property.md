@@ -1,5 +1,5 @@
 ---
-title: PidTagDisplayType (kanonische Eigenschaft)
+title: Kanonische PidTagDisplayType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ee2bc6ca-3769-4b56-a77d-81418d28f768
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: da26fd2a8643817cf60adbfa6f4e85da345b875c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360781"
 ---
-# <a name="pidtagdisplaytype-canonical-property"></a>PidTagDisplayType (kanonische Eigenschaft)
+# <a name="pidtagdisplaytype-canonical-property"></a>Kanonische PidTagDisplayType-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Wert zum Verknüpfen eines Symbols mit einer bestimmten Zeile einer Tabelle verwendet. 
+Enthält einen Wert, der zum Zuordnen eines Symbols zu einer bestimmten Zeile einer Tabelle verwendet wird. 
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält einen Wert zum Verknüpfen eines Symbols mit einer bestimmten Zeile ein
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft enthält eine lange Ganzzahl, die eine besondere Behandlung des Eintrags Tabelle basierend auf dieses Typs vereinfacht. Diese besondere Behandlung umfasst in der Regel ein Symbol oder andere Display-Element, den Anzeigetyp zugeordnete anzeigen. 
+Diese Eigenschaft enthält eine lange ganze Zahl, die eine spezielle Behandlung des Tabelleneintrags basierend auf dem Typ ermöglicht. Diese spezielle Behandlung besteht in der Regel darin, ein Symbol oder ein anderes Anzeigeelement anzuzeigen, das dem Anzeigetyp zugeordnet ist. 
   
-Diese Eigenschaft wird nicht im Ordner Inhalt Tabellen verwendet. Clientanwendungen sollte einer Meldung **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft und entsprechende [IMAPIFormInfo](imapiforminfoimapiprop.md) -Schnittstelle verwenden, um die **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) und **PR_MINI_ICON** ([ zu erhalten PidTagMiniIcon](pidtagminiicon-canonical-property.md)) Eigenschaften für diese Nachricht. 
+Diese Eigenschaft wird nicht in Ordnerinhaltstabellen verwendet. Client Anwendungen sollten die **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft einer Nachricht und die entsprechende [IMAPIFormInfo](imapiforminfoimapiprop.md) -Schnittstelle verwenden, um die **PR_ICON** ([pidtagicon (](pidtagicon-canonical-property.md)) und **PR_MINI_ICON** abzurufen ([ Pidtagminiicon (](pidtagminiicon-canonical-property.md))-Eigenschaften für diese Nachricht. 
   
-Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
+Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
 DT_AGENT 
   
-> Agent automatisierte wie Angebot des Tages oder eine Diagrammanzeige Wetter.
+> Ein automatisierter Agent, wie beispielsweise "Quote-of-the-Day"-oder eine Wetter Diagrammanzeige.
     
 DT_DISTLIST 
   
@@ -52,19 +52,19 @@ DT_DISTLIST
     
 DT_FOLDER 
   
-> Standard-Ordnersymbol neben der Ordner anzeigen.
+> Standardordner Symbol neben Ordner anzeigen
     
 DT_FOLDER_LINK 
   
-> Zeigt Ordner Link Standardsymbol neben der Ordner, sondern das Standardsymbol für Ordner.
+> Symbol für Standardordner Verknüpfung neben Ordner anstelle des Standardordner Symbols anzeigen.
     
 DT_FOLDER_SPECIAL 
   
-> Zeigt das Symbol für einen Ordner mit einer anwendungsspezifischen Unterschied, wie etwa eine besondere Art des öffentlichen Ordners.
+> Anzeigesymbol für einen Ordner mit anwendungsspezifischer Unterscheidung, beispielsweise einen speziellen öffentlichen Ordnertyp.
     
 DT_FORUM 
   
-> Foren, wie ein Bulletin Board-Dienst oder ein öffentlicher oder freigegebener Ordner.
+> Ein Forum, beispielsweise ein Bulletin Board-Dienst oder ein öffentlicher oder freigegebener Ordner.
     
 DT_GLOBAL 
   
@@ -72,71 +72,71 @@ DT_GLOBAL
     
 DT_LOCAL 
   
-> Eine lokale Adressbuch, das für eine kleine Arbeitsgruppe freigegeben.
+> Ein lokales Adressbuch, das Sie für eine kleine Arbeitsgruppe freigeben.
     
 DT_MAILUSER 
   
-> Normaler Benutzer messaging.
+> Ein typischer Messagingbenutzer.
     
 DT_MODIFIABLE 
   
-> Änderbare; der Container sollte in der Benutzeroberfläche als änderbare gekennzeichnet werden.
+> Änderbaren der Container sollte in der Benutzeroberfläche als veränderbar gekennzeichnet werden.
     
 DT_NOT_SPECIFIC 
   
-> Stimmt mit keinem der anderen Einstellungen überein.
+> Stimmt mit keiner der anderen Einstellungen überein.
     
 DT_ORGANIZATION 
   
-> Eine spezielle Alias für eine große Gruppe wie Helpdesk, Buchhaltung oder Blut Laufwerk Coordinator definiert ist.
+> Ein spezieller Alias, der für eine umfangreiche Gruppe definiert wurde, beispielsweise Helpdesk, Accounting oder Blood-Drive Coordinator.
     
 DT_PRIVATE_DISTLIST 
   
-> Eine Private, persönlich verwaltet Verteilerliste.
+> Eine private, persönlich verwaltete Verteilerliste.
     
 DT_REMOTE_MAILUSER 
   
-> Ein Empfänger bekanntermaßen aus einem fremden oder remote-messaging-System.
+> Ein Empfänger, der bekanntermaßen von einem fremd-oder Remote Messagingsystem stammt.
     
 DT_WAN 
   
-> Der Adressbuch eines WAN-Netzwerk.
+> Ein Wide Area Network-Adressbuch.
     
-Address Book Inhalt Tabellen verwenden Sie die Werte DT_AGENT, DT_DISTLIST, DT_FORUM, DT_MAILUSER, DT_ORGANIZATION, DT_PRIVATE_DISTLIST und DT_REMOTE_MAILUSER. Verwenden Sie die Werte DT_GLOBAL, DT_LOCAL, DT_MODIFIABLE, DT_NOT_SPECIFIC und DT_WAN, Address Book Hierarchietabellen und einmaligen Tabellen. Ordner Hierarchietabellen verwenden Sie die Werte DT_FOLDER, DT_FOLDER_LINK und DT_FOLDER_SPECIAL. 
+In den Adressbuch Inhaltstabellen werden die Werte DT_AGENT, DT_DISTLIST, DT_FORUM, DT_MAILUSER, DT_ORGANIZATION, DT_PRIVATE_DISTLIST und DT_REMOTE_MAILUSER verwendet. Adressbuch-Hierarchietabellen und einmalige Tabellen verwenden Sie die Werte DT_GLOBAL, DT_LOCAL, DT_MODIFIABLE, DT_NOT_SPECIFIC und DT_WAN. Ordner Hierarchietabellen verwenden die DT_FOLDER-, DT_FOLDER_LINK-und DT_FOLDER_SPECIAL-Werte. 
   
-Wenn diese Eigenschaft nicht festgelegt ist, sollte der Client den Standardtyp für die Tabelle, in der Regel DT_FOLDER, DT_LOCAL oder DT_MAILUSER geeignet annehmen. 
+Wenn diese Eigenschaft nicht festgelegt ist, sollte der Client den für die Tabelle geeigneten Standardtyp annehmen, in der Regel DT_FOLDER, DT_LOCAL oder DT_MAILUSER. 
   
- **Hinweis** Alle Werte, die nicht dokumentiert sind für die MAPI reserviert. Clientanwendungen dürfen Sie keine neue Werte definieren und für den Umgang mit eine nicht dokumentierte Wert vorbereitet sein. 
+ **Hinweis** Alle nicht dokumentierten Werte sind für MAPI reserviert. Client Anwendungen dürfen keine neuen Werte definieren und müssen auf den Umgang mit einem nicht dokumentierten Wert vorbereitet sein. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für Address Book Vorlagen zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Adressbuchvorlagen zulässig sind.
     
 [[MS-OXLDAP]](https://msdn.microsoft.com/library/727c090a-f05c-4eed-94aa-565724cfc550%28Office.15%29.aspx)
   
-> Verzeichniszugriff wird aktiviert.
+> Aktiviert den Verzeichniszugriff.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -148,5 +148,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

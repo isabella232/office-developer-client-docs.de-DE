@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251459
 localization_priority: Normal
 ms.assetid: 1d198ea6-49e0-e462-b2cf-b65fbb920b55
-description: Gibt eine Zeichenfolge in Kleinbuchstaben konvertiert.
-ms.openlocfilehash: da626ee0bb0474fceafcf93ed5c835aacd0034fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine in Kleinbuchstaben konvertierte Zeichenfolge zurück.
+ms.openlocfilehash: 275e5cc40bed5c3ca7d6f40b0882f523334611c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358016"
 ---
 # <a name="lower-function"></a>LOWER Function
 
-Gibt eine Zeichenfolge in Kleinbuchstaben konvertiert.
+Gibt eine in Kleinbuchstaben konvertierte Zeichenfolge zurück.
   
 ## <a name="syntax"></a>Syntax
 
-NIEDRIGERE (** *Ausdruck* **) 
+NIEDRIGER (* * *Ausdruck* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Varies** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Kleinbuchstaben konvertiert wird.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Kleinbuchstaben konvertiert wird.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   

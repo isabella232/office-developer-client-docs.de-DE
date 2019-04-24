@@ -1,5 +1,5 @@
 ---
-title: PidTagDetailsTable (kanonische Eigenschaft)
+title: Kanonische Pidtagdetailstable (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,52 +11,52 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7a0ccad3-f497-4871-b733-771e6cb8ef6a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1602d1753d9f7f6e6f407a85dab0a33255db7aae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 74eae4a4ed742c3bb90496f5975ad7dac6ff798f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360837"
 ---
-# <a name="pidtagdetailstable-canonical-property"></a>PidTagDetailsTable (kanonische Eigenschaft)
+# <a name="pidtagdetailstable-canonical-property"></a>Kanonische Pidtagdetailstable (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine eingebettete Anzeige Table-Objekt.
+Enthält ein eingebettetes Anzeige Table-Objekt.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_DETAILS_TABLE  <br/> |
 |Kennung:  <br/> |0x3605  <br/> |
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
-|Bereich:  <br/> |MAPI-container  <br/> |
+|Bereich:  <br/> |MAPI-Container  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Übergeben diese Eigenschaft an die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode für das Objekt gibt eine [IMAPITable](imapitableiunknown.md) -Schnittstelle, mit der Erstellung der Tabelle anzeigen kann. MAPI verwendet diese Tabelle, um die Eigenschaftenseiten für ein Address Book-Objekt als Reaktion auf einen Anruf [IAddrBook::Details](iaddrbook-details.md) angezeigt. 
+Wenn Sie diese Eigenschaft an die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode für das Objekt übergeben, wird eine [IMAPITable](imapitableiunknown.md) -Schnittstelle zurückgegeben, die die Erstellung der Anzeigetabelle ermöglicht. MAPI verwendet diese Tabelle, um Eigenschaftenblätter für ein Adressbuchobjekt als Reaktion auf einen [IAddrBook::D ails](iaddrbook-details.md) -Aufruf anzuzeigen. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
+[Kanonische Pidtagcreatetemplates (-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
   
-[PidTagSearch (kanonische Eigenschaft)](pidtagsearch-canonical-property.md)
+[Kanonische Pidtagsearch (-Eigenschaft](pidtagsearch-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -65,5 +65,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

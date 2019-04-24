@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 29af746c-b081-24cf-a30d-a56353ee849e
 description: Definiert den Namen eines Menüelements, das in einem Kontext- oder Aktionstagmenü für ein Shape oder Zeichenblatt angezeigt wird.
-ms.openlocfilehash: 195af94c4c36bb3c29a4fadab3c68f8334742952
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: adb6915c34946472ada8c4ab4d02fa88bab6651a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360655"
 ---
-# <a name="menu-cell-actions-section"></a>Menu Cell (Actions Section)
+# <a name="menu-cell-actions-section"></a>Zelle "Menu" (Abschnitt "Actions")
 
 Definiert den Namen eines Menüelements, das in einem Kontext- oder Aktionstagmenü für ein Shape oder Zeichenblatt angezeigt wird. 
   
@@ -27,18 +27,18 @@ Definiert den Namen eines Menüelements, das in einem Kontext- oder Aktionstagme
 
 Wenn Sie über diesem Element ein Trennzeichen in das Menü einfügen möchten, verwenden Sie die Zelle BeginGroup. Um den Befehl unten im Menü anzuzeigen, geben Sie vor dem Namen ein Prozentzeichen (%) ein.
   
-Zum Abrufen eines Verweises auf die Zelle Menu nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Menü aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . Menuwhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name* . Menuwobei-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Menu aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Menu aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**VisRowAction** +  *i* wobei i = 0, 1, 2,...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei i = 0, 1, 2,...  <br/> |
 |Zellenindex:  <br/> |**visActionMenu** <br/> |
    
 

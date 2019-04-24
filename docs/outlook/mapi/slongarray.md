@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 57435634-202d-4998-9931-4562f1a66f5f
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a44974accea30b5d1406c9cc74570012f61639e5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9b1c5a09a60240efa9d4fa117f0d8fe8113169d5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361166"
 ---
 # <a name="slongarray"></a>SLongArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von LONG-Werttypen, mit denen eine Eigenschaft vom Typ PT_MV_LONG beschrieben. 
+Enthält ein Array von LONG-Werttypen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_LONG verwendet werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SLongArray
@@ -44,15 +44,15 @@ typedef struct _SLongArray
 
  **cValues**
   
-> Anzahl der Werte im Array auf den Member **Lpl** zeigt. 
+> Die Anzahl der Werte im Array, auf die durch das **LPL** -Element verwiesen wird. 
     
  **LPL**
   
-> Zeiger auf ein Array von LONG-Werte.
+> Zeiger auf ein Array von LONG-Werten.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Weitere Informationen zu PT_MV_LONG finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
+Weitere Informationen zu PT_MV_LONG finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

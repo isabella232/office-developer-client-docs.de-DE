@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e3399716-44de-f8cc-8b42-446284d2fbd4
 description: Enthält Zellen, die die Linienattribute für ein Shape steuern, z. B. Muster, Linienstärke und Farbe. Sie bestimmen, ob die Linienenden formatiert werden (z. B. mit einer Pfeilspitze), die Größe von Linienendformaten, den Radius des der Linie zugewiesenen Rundungskreises und das Format der Linienenden (rund oder eckig).
-ms.openlocfilehash: 0488af0f42007d83ac26bbf7aa0f991c52bf0a9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1ef8f029676801be8461faac5333d0afd4214def
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359360"
 ---
-# <a name="line-format-section"></a>Line Format Section
+# <a name="line-format-section"></a>Abschnitt "Line Format"
 
 Enthält Zellen, die die Linienattribute für ein Shape steuern, z. B. Muster, Linienstärke und Farbe. Sie bestimmen, ob die Linienenden formatiert werden (z. B. mit einer Pfeilspitze), die Größe von Linienendformaten, den Radius des der Linie zugewiesenen Rundungskreises und das Format der Linienenden (rund oder eckig).
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können festlegen, Zeile Formate mithilfe des Bereichs **Shape formatieren** (auf der Registerkarte **Start** in der Gruppe **Formenarten** klicken Sie auf **Linie**, klicken Sie auf **Optionen**), eine Linienart anwenden oder eine Formel in einer Zelle der Zeile Format eingeben.
+Sie können Linienformate mithilfe des **Shapes formatieren** -Bereichs festlegen (Klicken Sie auf der Registerkarte **Start** in der Gruppe Shape-Format **Vorlagen** auf **Linien**, klicken Sie auf Linien **Optionen**), indem Sie eine Linienart anwenden oder eine Formel in eine Linienformatzelle eingeben.
   
 

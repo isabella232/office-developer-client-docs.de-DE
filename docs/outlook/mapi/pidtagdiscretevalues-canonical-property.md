@@ -1,5 +1,5 @@
 ---
-title: PidTagDiscreteValues (kanonische Eigenschaft)
+title: Kanonische Pidtagdiscretevalues (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,48 +11,48 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 958f3cf7-953a-43f4-9102-ad35edf5e813
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f1aa54c3364185d322137ef41f6aface31c5c556
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 6d6974302e3413db3590abbbd3e6567976c6ac72
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360823"
 ---
-# <a name="pidtagdiscretevalues-canonical-property"></a>PidTagDiscreteValues (kanonische Eigenschaft)
+# <a name="pidtagdiscretevalues-canonical-property"></a>Kanonische Pidtagdiscretevalues (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn ein Unzustellbarkeitsbericht zu nur einzelne Mitglieder einer Verteilerliste, anstatt die gesamte Liste angewendet wird. 
+Enthält TRUE, wenn ein Unzustellbarkeitsbericht nur auf diskrete Mitglieder einer Verteilerliste anstatt auf die gesamte Liste angewendet wird. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_DISCRETE_VALUES  <br/> |
 |Kennung:  <br/> |0x0E0E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
+|Bereich:  <br/> |Nicht transmitable MAPI  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird in einen Unzustellbarkeitsbericht verwendet, wenn die Nachricht an einen oder mehrere Mitglieder von Verteilerlisten nicht übermittelt werden konnte. Dient zur erneuten Begrenzung nur die einzelnen Elemente und nicht die Verteilerliste als Ganzes versucht, ein. 
+Diese Eigenschaft wird in einem Unzustellbarkeitsbericht verwendet, wenn die Nachricht nicht an ein oder mehrere Mitglieder einer Verteilerliste zugestellt werden konnte. Der Zweck besteht darin, die Wiederholungsversuche auf die einzelnen Mitglieder und nicht auf die Verteilerliste als Ganzes zu begrenzen. 
   
-Die Empfänger ein Unzustellbarkeitsbericht-Tabelle enthält Einträge für alle Empfänger auf denen die Nachricht nicht übermittelt werden konnte und für die Verteilerlisten, falls vorhanden, zu denen sie gehören. Der Adressbuchhierarchie sollte diese Eigenschaft für jeden Listeneintrag Verteilung auf TRUE festgelegt, und es sollten die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) sowie die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_SEARCH_KEY** ([ Kopieren PidTagSearchKey](pidtagsearchkey-canonical-property.md)) aus der Verteilerliste **PR_ORIGINAL_DISPLAY_NAME** ([PidTagOriginalDisplayName](pidtagoriginaldisplayname-canonical-property.md)), **PR_ORIGINAL_ENTRYID** ([PidTagOriginalEntryId](pidtagoriginalentryid-canonical-property.md)) und **PR_ORIGINAL_SEARCH_KEY** ([ PidTagOriginalSearchKey](pidtagoriginalsearchkey-canonical-property.md)) Eigenschaften für jedes Mitglied der gewünschten Verteilerliste. 
+Die Empfängertabelle eines Unzustellbarkeitsberichts enthält Einträge für alle Empfänger, an die die Nachricht nicht übermittelt werden konnte, sowie an die Verteilerlisten, falls vorhanden, zu denen Sie gehören. Der Transportanbieter sollte diese Eigenschaft für jeden Verteilerlisteneintrag auf TRUE festlegen und die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)), **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_SEARCH_KEY** ([ Pidtagsearchkey (](pidtagsearchkey-canonical-property.md)) aus der Verteilerliste nach **PR_ORIGINAL_DISPLAY_NAME** ([pidtagoriginaldisplayname (](pidtagoriginaldisplayname-canonical-property.md)), **PR_ORIGINAL_ENTRYID** ([pidtagoriginalentryid (](pidtagoriginalentryid-canonical-property.md)) und **PR_ORIGINAL_SEARCH_KEY** ([ Pidtagoriginalsearchkey (](pidtagoriginalsearchkey-canonical-property.md))-Eigenschaften für jedes Mitglied dieser Verteilerliste. 
   
- **PR_DISCRETE_VALUES** sollte nicht für alle Empfänger Nondelivery Bericht-Eintrag keiner Verteilerliste festgelegt werden. 
+ **PR_DISCRETE_VALUES** sollte nicht für einen nicht Zustellungs Berichts-Empfängereintrag außer einer Verteilerliste festgelegt werden. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -64,5 +64,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

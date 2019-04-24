@@ -1,5 +1,5 @@
 ---
-title: PidTagScheduleInfoMonthsTentative (kanonische Eigenschaft)
+title: Kanonische Pidtagscheduleinfomonthstentative (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,56 +11,56 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3179442c-6499-464a-93af-eb0a7a5b0d30
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 6fa0579dcd98a0d819e58e62d8a42cb2972a9d1e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359759"
 ---
-# <a name="pidtagscheduleinfomonthstentative-canonical-property"></a>PidTagScheduleInfoMonthsTentative (kanonische Eigenschaft)
+# <a name="pidtagscheduleinfomonthstentative-canonical-property"></a>Kanonische Pidtagscheduleinfomonthstentative (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Monate in der Nachricht Frei/Gebucht-Informationen mit Vorbehalt markiert.
+Enthält die Monate mit Vorbehalt in der Frei/Gebucht-Nachricht.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_MONTHS_TENTATIVE  <br/> |
 |Kennung:  <br/> |0x6851  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
-|Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
+|Bereich:  <br/> |Frei/Gebucht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Anzahl von Werten in dieser Eigenschaft muss zwischen 0 (null) und die Anzahl der Monate nach der Veröffentlichung der Zeitraum zwischen dem **PR_FREEBUSY_PUBLISH_START** ([PidTagFreeBusyPublishStart](pidtagfreebusypublishstart-canonical-property.md)) und **PR_FREEBUSY_PUBLISH_END ist Bereich abgedeckt **([PidTagFreeBusyPublishEnd](pidtagfreebusypublishend-canonical-property.md))-Eigenschaften.
+Die Anzahl der Werte in dieser Eigenschaft muss zwischen null und der Anzahl der Monate liegen, die vom Veröffentlichungszeitraum abgedeckt werden, also die Periode zwischen **PR_FREEBUSY_PUBLISH_START** ([Pidtagfreebusypublishstart (](pidtagfreebusypublishstart-canonical-property.md)) und **PR_FREEBUSY_PUBLISH_END **([Pidtagfreebusypublishend (](pidtagfreebusypublishend-canonical-property.md))-Eigenschaften.
   
-Jeder Wert in dieser Eigenschaft hat einen Monat und Jahr, die in dem er codiert. Dies wird mithilfe des Ausdrucks "Jahr × 16 + Monat", in dem Jahr und Monat der gregorianische Kalender basieren auf berechnet. Die Werte in aufsteigender Reihenfolge sortiert sind und in little-Endian-Format codiert werden. Wenn ein Ereignis über mehrere Monate oder Jahre mehrere verteilt ist, muss ein Wert für die Monate, die in der Veröffentlichung Bereich fallen vorhanden sein. Wenn keine mit Vorbehalt Ereignisse in der Veröffentlichung Bereich vorhanden sind, hat diese Eigenschaft und die **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md)) muss nicht festgelegt werden oder gelöscht werden müssen, wenn sie bereits vorhanden. Andernfalls muss diese Eigenschaft festgelegt werden.
+Jeder Wert dieser Eigenschaft enthält einen Monat und ein Jahr. Dieser Wert wird mithilfe des Ausdrucks "Year × 16 + Month" berechnet, wobei Year und Month auf dem gregorianischen Kalender basieren. Die Werte werden in aufsteigender Reihenfolge sortiert und im Little-Endian-Format codiert. Wenn ein Ereignis über mehrere Monate oder mehrere Jahre verteilt ist, muss für jeden der Monate, die in den Veröffentlichungszeitraum fallen, ein Wert vorhanden sein. Wenn im Veröffentlichungszeitraum keine zaghaften Ereignisse vorhanden sind, dürfen diese Eigenschaft und **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([pidtagscheduleinfofreebusytentative (](pidtagscheduleinfofreebusytentative-canonical-property.md)) nicht festgelegt oder gelöscht werden, wenn Sie bereits vorhanden sind. Andernfalls muss diese Eigenschaft festgelegt werden.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > Veröffentlicht die Verfügbarkeit eines Benutzers oder einer Ressource.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,5 +72,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

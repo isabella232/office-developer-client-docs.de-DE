@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30dd19d9-0840-49e9-aec6-ec8d19b1f91d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8f4e62a8eb1b5e61cb0223c66b921e15ab9423b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 55cba4f7cfb3fa8035117348b10ab1d6d3082710
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358114"
 ---
 # <a name="spropattrarray"></a>SPropAttrArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der Attribute für die Eigenschaften eines Objekts. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage.h  <br/> |
+|Headerdatei  <br/> |IMessage. h  <br/> |
 |Verwandte Makros:  <br/> |[CbNewSPropAttrArray](cbnewspropattrarray.md), [CbSPropAttrArray](cbspropattrarray.md) <br/> |
    
 ```cpp
@@ -45,11 +45,11 @@ typedef struct
 
  **cValues**
   
-> Anzahl der Attribute im **aPropAttr** -Member. 
+> Die Anzahl der Eigenschaftsattribute im **aPropAttr** -Element. 
     
  **aPropAttr**
   
-> Ein Array von Eigenschaftsattribute. Gültige Werte für Attribute sind wie folgt:
+> Ein Array von Eigenschaftsattributen. Gültige Werte für Attribute lauten wie folgt:
     
     - PROPATTR_MANDATORY
     
@@ -59,9 +59,9 @@ typedef struct
     
     - PROPATTR_NOT_PRESENT
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Struktur **SPropAttrArray** wird vom Daten Property-Objekten, die implementiert werden die [IPropData: IMAPIProp](ipropdataimapiprop.md) Schnittstelle. Darüber hinaus wird von der MAPI-Implementierung der [IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md) also basierend auf strukturierter Speicher. 
+Die **SPropAttrArray** -Struktur wird von Eigenschaftendaten Objekten verwendet, die die [IPropData: IMAPIProp](ipropdataimapiprop.md) -Schnittstelle implementieren. Sie wird auch von der MAPI-Implementierung von [IMAPIMessageSite verwendet: IUnknown](imapimessagesiteiunknown.md) , die auf strukturiertem Speicher basiert. 
   
 ## <a name="see-also"></a>Siehe auch
 

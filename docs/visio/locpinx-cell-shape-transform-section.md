@@ -8,29 +8,29 @@ f1_keywords:
 - vis_sdr.chm680
 localization_priority: Normal
 ms.assetid: b82feade-5793-8a6e-3ff4-69a4cbdd2cf9
-description: 'Stellt die X--Koordinate der Drehbezugspunkts (Drehmittelpunkts) im Verhältnis zum Ursprung des Shapes. Die Standardformel zum Bestimmen von LocPinX lautet:'
-ms.openlocfilehash: 17f7b0fde9a54f6596f2f87f866d30b908e062b5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Stellt die x-Koordinate der PIN des Shapes (Drehmittelpunkt) im Verhältnis zum Ursprung der Form dar. Die Standardformel für die Bestimmung von Zelle LocPinX lautet:'
+ms.openlocfilehash: 2eb5c328eed3c97652173670c426b83b8c358833
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358051"
 ---
-# <a name="locpinx-cell-shape-transform-section"></a>LocPinX Cell (Shape Transform Section)
+# <a name="locpinx-cell-shape-transform-section"></a>Zelle "LocPinX" (Abschnitt "Shape Transform")
 
-Stellt die *X* --Koordinate der Drehbezugspunkts (Drehmittelpunkts) im Verhältnis zum Ursprung des Shapes. Die Standardformel zum Bestimmen von LocPinX lautet: 
+Stellt die *x* -Koordinate der PIN des Shapes (Drehmittelpunkt) im Verhältnis zum Ursprung der Form dar. Die Standardformel für die Bestimmung von Zelle LocPinX lautet: 
   
 = Breite \* 0,5
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LocPinX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LocPinX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LocPinX  <br/> |
+| Zellenname:  <br/> | Zelle LocPinX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LocPinX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LocPinX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

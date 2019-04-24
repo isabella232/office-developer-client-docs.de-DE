@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6eb51e5a-03d8-3daa-b4e1-6107d540aed9
 description: Sperrt das Auswahlrechteck eines Shapes, damit dieses nicht neu berechnet wird, wenn ein Scheitelpunkt bearbeitet oder ein Zeilentyp im Abschnitt Geometry geändert wird.
-ms.openlocfilehash: f7f9c99eb4978e9b32968d3076b0341efe42faa6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2b1d907f480a22a56f5847035da8d1cbde5fdcc5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359633"
 ---
-# <a name="lockcalcwh-cell-protection-section"></a>LockCalcWH Cell (Protection Section)
+# <a name="lockcalcwh-cell-protection-section"></a>Zelle "LockCalcWH" (Abschnitt "Protection")
 
 Sperrt das Auswahlrechteck eines Shapes, damit dieses nicht neu berechnet wird, wenn ein Scheitelpunkt bearbeitet oder ein Zeilentyp im Abschnitt Geometry geändert wird.
   
@@ -25,15 +25,15 @@ Sperrt das Auswahlrechteck eines Shapes, damit dieses nicht neu berechnet wird, 
 | TRUE  <br/> | Breite und Höhe können nicht neu berechnet werden.  <br/> |
 | FALSE  <br/> | Breite und Höhe können neu berechnet werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockCalcWH aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockCalcWH aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LockCalcWH  <br/> |
+| Zellenname:  <br/> | Zelle LockCalcWH  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockCalcWH aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockCalcWH aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

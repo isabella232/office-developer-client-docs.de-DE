@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c02186ce-6a20-fbe7-588d-d64c3ea4dec4
 description: Bestimmt die Position des Shape-Texts relativ zur Grundlinie.
-ms.openlocfilehash: 50ce5a3f7caf3e716f430aa08326281c8dc847f7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d5f6823d6f55493095d29054745f62b579a47893
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359815"
 ---
-# <a name="pos-cell-character-section"></a>Pos Cell (Character Section)
+# <a name="pos-cell-character-section"></a>Zelle "Pos" (Abschnitt "Character")
 
 Bestimmt die Position des Shape-Texts relativ zur Grundlinie.
   
@@ -28,18 +28,18 @@ Bestimmt die Position des Shape-Texts relativ zur Grundlinie.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Pos aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle POS aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zeichen.POS [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Char. POS [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Pos aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle POS aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-| Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCharacterPos** <br/> |
    
 

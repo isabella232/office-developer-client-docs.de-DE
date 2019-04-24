@@ -1,31 +1,31 @@
 ---
-title: LockThemeIndex Cell (Protection Section)
+title: LockThemeIndex Cell (Protection section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7b781727-267b-4589-ab40-cfc79bb96c2d
-description: Verhindert, dass ThemeIndex-Zelle in der Zeile mit Komponenteneigenschaften Design durch Anwenden eines neuen Designs oder Auswählen eines neuen Connector Schemas geändert wird. Verhindert nicht, dass Benutzer diesen Wert in das ShapeSheet manuell zu bearbeiten.
-ms.openlocfilehash: 4bef3eb799c943ff89027e69ae8580c9c0e51243
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Verhindert, dass die ThemeIndex Zelle in Designeigenschaften Zeile geändert wird, indem ein neues Design angewendet oder ein neues Connector-Schema ausgewählt wird. Verhindert nicht, dass Benutzer diesen Wert manuell im ShapeSheet bearbeiten.
+ms.openlocfilehash: 519c17f6e00c9aad2b5522bc66b41c0ceb75911b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358079"
 ---
-# <a name="lockthemeindex-cell-protection-section"></a>LockThemeIndex Cell (Protection Section)
+# <a name="lockthemeindex-cell-protection-section"></a>LockThemeIndex Cell (Protection section)
 
-Verhindert, dass **ThemeIndex** -Zelle in der Zeile mit **Komponenteneigenschaften Design** durch Anwenden eines neuen Designs oder Auswählen eines neuen Connector Schemas geändert wird. Verhindert nicht, dass Benutzer diesen Wert in das ShapeSheet manuell zu bearbeiten. 
+Verhindert, dass die **ThemeIndex** Zelle in **Designeigenschaften** Zeile geändert wird, indem ein neues Design angewendet oder ein neues Connector-Schema ausgewählt wird. Verhindert nicht, dass Benutzer diesen Wert manuell im ShapeSheet bearbeiten. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Die Zelle **ThemeIndex** kann nicht aus dem aktuellen Wert geändert werden, sofern nicht direkt im ShapeSheet geändert.  <br/> |
+|TRUE  <br/> |Die Zelle **ThemeIndex** kann nicht von Ihrem aktuellen Wert geändert werden, es sei denn, Sie wurde direkt im ShapeSheet geändert.  <br/> |
 |FALSE  <br/> |Die Zelle **ThemeIndex** kann vom aktuellen Wert geändert werden, wenn das Design geändert wird.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **LockThemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **LockThemeIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

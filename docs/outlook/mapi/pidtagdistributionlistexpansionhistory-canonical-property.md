@@ -1,5 +1,5 @@
 ---
-title: PidTagDistributionListExpansionHistory (kanonische Eigenschaft)
+title: Kanonische Pidtagdistributionlistexpansionhistory (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fc1e0162-d655-4761-92e7-b469579c270b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0ba27e1eefa85e1651dbd24fa0540f8b1108588a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a172fa1e04f1ea50c29955febda47be6e52663b4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360753"
 ---
-# <a name="pidtagdistributionlistexpansionhistory-canonical-property"></a>PidTagDistributionListExpansionHistory (kanonische Eigenschaft)
+# <a name="pidtagdistributionlistexpansionhistory-canonical-property"></a>Kanonische Pidtagdistributionlistexpansionhistory (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Verlauf zeigt, wie eine Verteilerliste während der Übertragung erweitert wurde. 
+Enthält einen Verlauf, der zeigt, wie eine Verteilerliste während der Nachrichtenübertragung erweitert wurde. 
   
 |||
 |:-----|:-----|
@@ -34,27 +34,27 @@ Enthält einen Verlauf zeigt, wie eine Verteilerliste während der Übertragung 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft steht Clientanwendungen empfangen, wenn der Adressbuchhierarchie sie festgelegt hat. Es ist außerdem die sendende Client zur Verfügung, wenn der Inhalt der Nachricht mit einem Bericht zurückgegeben wird. 
+Diese Eigenschaft steht für den Empfang von Clientanwendungen zur Verfügung, wenn Sie vom Transportanbieter festgelegt wurde. Er steht auch dem sendenden Client zur Verfügung, wenn der Nachrichteninhalt mit einem Bericht zurückgegeben wird. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagDistributionListExpansionProhibited (kanonische Eigenschaft)](pidtagdistributionlistexpansionprohibited-canonical-property.md)
+[Kanonische Pidtagdistributionlistexpansionprohibited (-Eigenschaft](pidtagdistributionlistexpansionprohibited-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -63,5 +63,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

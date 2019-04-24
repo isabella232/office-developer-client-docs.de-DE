@@ -9,35 +9,35 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f58687d7-2ba4-ff77-0bcc-3106867d89de
 description: Der Schriftgrad zum Formatieren von Text mit komplexen Schriftzeichen.
-ms.openlocfilehash: 4867ab57fa59b3a5e76598108fbb92b9bbab7913
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 38b01c4a0142c7eca2923ee9b13963eaa1a62830
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359344"
 ---
-# <a name="complexscriptsize-cell-character-section"></a>ComplexScriptSize Cell (Character Section)
+# <a name="complexscriptsize-cell-character-section"></a>Zelle "ComplexScriptSize" (Abschnitt "Character")
 
 Der Schriftgrad zum Formatieren von Text mit komplexen Schriftzeichen. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Komplexe Schriftzeichen Schriftgrade sind aufgelistet, auf der Registerkarte **Schriftart** im Dialogfeld **Text** verwenden (klicken Sie auf der Pfeil in der **Schriftart** auf der Registerkarte **Start** gruppieren). Diese Liste wird nur dann, wenn Sie eine Sprache hinzugefügt haben, die asiatische Sprachen oder komplexe Schriftzeichen, klicken Sie im Dialogfeld **Microsoft Office-Spracheinstellungen** enthält. (Klicken Sie auf **Start**, klicken Sie auf **Alle Programme**, klicken Sie auf **Microsoft Office**, klicken Sie auf **Microsoft Office Tools**, und klicken Sie dann auf **Microsoft Office-Spracheinstellungen**.
+Schriftgrößen für komplexe Schriftarten werden im Dialogfeld **Text** auf der Registerkarte **Schriftart** angezeigt (Klicken Sie auf der Registerkarte **Start** in der Gruppe **Schriftart** auf den Pfeil). Diese Liste wird nur angezeigt, wenn Sie im Dialogfeld **Microsoft Office-Spracheinstellungen** eine Sprache hinzugefügt haben, die asiatische oder komplexe Schriftzeichen enthält. (Klicken Sie auf **Start**, **Alle Programme**, **Microsoft Office**, Microsoft Office- **Tools**und dann auf **Microsoft Office-Spracheinstellungen**.
   
 Sie können diesen Wert als explizite Größe in Punkt oder als Prozentsatz angeben. Wenn Sie einen Prozentsatz angeben, basiert der Wert auf dem Wert in der Zelle Größe. Der Standardwert von 0 (Null) bedeutet 100 %. 
   
-Wenn Sie einen Verweis auf die Zelle ComplexScriptSize aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ComplexScriptSize aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Char.ComplexScriptSize [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+|Zellenname:  <br/> |Char. Zelle ComplexScriptSize [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ComplexScriptSize aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ComplexScriptSize aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-|Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCharacterComplexScriptSize** <br/> |
    
 

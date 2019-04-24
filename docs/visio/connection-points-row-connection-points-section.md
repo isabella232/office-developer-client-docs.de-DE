@@ -8,34 +8,34 @@ f1_keywords:
 - vis_sdr.chm3005
 localization_priority: Normal
 ms.assetid: eaac62a5-f516-9b81-587a-8e0e02de59ee
-description: Enthält die X- und y-Koordinaten, horizontalen und vertikalen Richtung und den Typ für eine einzelne Verbindung, zeigen Sie auf ein Shape. Koordinaten von Verbindungspunkten werden vom Ursprung des Shapes gemessen. Ein Shape enthält eine Zeile Connection Points für jeden Verbindungspunkt.
-ms.openlocfilehash: f1b8daf7f9845b85e76020c7f89c8c42b4500823
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Enthält die x-und y-Koordinaten, die horizontale und die vertikale Richtung und den Typ für einen einzelnen Verbindungspunkt in einem Shape. Koordinaten der Verbindungspunkte werden vom Ursprung der Form gemessen. Ein Shape enthält für jeden Verbindungspunkt eine Zeile mit Verbindungspunkten.
+ms.openlocfilehash: 301ea4fb446d9acafd4b59af388c3e7b2d419e20
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361026"
 ---
-# <a name="connection-points-row-connection-points-section"></a>Connection Points Row (Connection Points Section)
+# <a name="connection-points-row-connection-points-section"></a>Zeile "Connection Points" (Abschnitt "Connection Points")
 
-Enthält die *X* - und *y* -Koordinaten, horizontalen und vertikalen Richtung und den Typ für eine einzelne Verbindung, zeigen Sie auf ein Shape. Koordinaten von Verbindungspunkten werden vom Ursprung des Shapes gemessen. Ein Shape enthält eine Zeile Connection Points für jeden Verbindungspunkt. 
+Enthält die *x* -und *y* -Koordinaten, die horizontale und die vertikale Richtung und den Typ für einen einzelnen Verbindungspunkt in einem Shape. Koordinaten der Verbindungspunkte werden vom Ursprung der Form gemessen. Ein Shape enthält für jeden Verbindungspunkt eine Zeile mit Verbindungspunkten. 
   
-Wenn Verbindungspunktzeilen benannt sind, werden diese Namen als Verbindungen angezeigt. *Name* im ShapeSheet-Fenster. Verbindungspunktzeilen enthält folgenden Zellen. Weitere Informationen finden Sie unter die folgenden Zellen. 
+Wenn Verbindungspunkt Zeilen benannt werden, werden diese Namen als Verbindungen angezeigt. *Name* im ShapeSheet-Fenster. Connection Points-Zeilen enthalten die folgenden Zellen. Weitere Informationen finden Sie in den Themen zu bestimmten Zellen. 
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-connection-points-section.md) <br/> |Die *X* -Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar.  <br/> |
-|[Y](y-cell-connection-points-section.md) <br/> |Die *y* -Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar.  <br/> |
-|[DirX/A](dirxa-cell-connection-points-section.md) <br/> |Die *X* -Komponente für den erforderlichen Ausrichtungsvektor eines passenden Verbindungspunkts. Es wird auch zum Ausrichten des verbundenen Abschnitts eines dynamischen Verbinders verwendet. Diese Zelle benötigt einen Gleitkommawert Codepunktwert.  <br/> |
-|[DirY/B](diryb-cell-connection-points-section.md) <br/> |Die *y* -Komponente für den erforderlichen Ausrichtungsvektor eines passenden Verbindungspunkts. Es wird auch zum Ausrichten des verbundenen Abschnitts eines dynamischen Verbinders verwendet. Diese Zelle benötigt einen Gleitkommawert Codepunktwert.  <br/> |
-|[Type/C](typec-cell-connection-points-section.md) <br/> |Der Typ des Verbindungspunkts (0 = nach innen, 1 = nach außen, 2 = nach innen + nach außen).  <br/> |
+|[X](x-cell-connection-points-section.md) <br/> |Die *x* -Koordinate für einen Verbindungspunkt in lokalen Koordinaten.  <br/> |
+|[Y](y-cell-connection-points-section.md) <br/> |Die *y* -Koordinate für einen Verbindungspunkt in lokalen Koordinaten.  <br/> |
+|[DirX/A](dirxa-cell-connection-points-section.md) <br/> |Die *x* -Komponente für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Sie wird auch zur Ausrichtung des angefügten Abschnitts eines dynamischen Verbinders verwendet. Diese Zelle akzeptiert einen Fließkommawert.  <br/> |
+|[DirY/B](diryb-cell-connection-points-section.md) <br/> |Die *y* -Komponente für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Sie wird auch zur Ausrichtung des angefügten Abschnitts eines dynamischen Verbinders verwendet. Diese Zelle akzeptiert einen Fließkommawert.  <br/> |
+|[Typ/C](typec-cell-connection-points-section.md) <br/> |Der Typ des Verbindungspunkts (0 = nach innen, 1 = nach außen, 2 = nach innen + nach außen).  <br/> |
 |[D](d-cell-connection-points-section.md) <br/> |Eine Zelle für den Entwurf, die zum Eingeben oder Testen von Formeln verwendet werden kann. Klicken Sie mit der rechten Maustaste auf eine Zeile, um auf diese Zelle zuzugreifen, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern**.<br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Zellen im Verbindungen. Zeile *Name* heißen DirX/A, DirY/B und Type/C, da diese Zeilen erweiterte oder nicht erweiterte Zeilen werden können. 
+Zellen in den Verbindungen. die Zeile *Name heißt* DirX/A, DirY/B und Type/C, da es sich bei diesen Zeilen um erweiterte oder nicht erweiterte Zeilen handeln kann. 
   
-Die meisten Verbindungspunkte (alle Verbindungspunkte, die über die Benutzeroberfläche erstellt werden) sind nicht erweitert und besitzen DirX-, DirY- und Type-Zellen. Ihr Zeilentyp lautet visTagCnnctPt oder visTagCnnctNamed.
+Die meisten Verbindungspunkte (alle Verbindungspunkte, die über die Benutzeroberfläche erstellt werden) sind nicht erweitert und verfügen über DirX-, DirY-und Type-Zellen. Der Zeilentyp ist **visTagCnnctPt** oder **visTagCnnctNamed.**
   
 In nicht erweiterten Zeilen definieren die Zellen DirX und DirY gemeinsam einen Richtungsvektor, der die Drehung von Shapes beeinflusst, die in Verbindungen mithilfe des Verbindungspunkts verwendet werden. Wenn beide Null sind, ist der Punkt richtungslos. Verbindungspunkte sind in folgende Typen unterteilt:
   
@@ -45,13 +45,13 @@ In nicht erweiterten Zeilen definieren die Zellen DirX und DirY gemeinsam einen 
     
 - Nach innen und Nach außen (2). In diesem Fall ist der Verbindungspunkt nach innen gerichtet, und die entgegengesetzte Richtung gilt, wenn er als Verbindung nach außen verwendet wird.
     
-Erweiterte Zeilen haben A-, B-, C- und D-Zellen und verhalten sich wie richtungslose, nicht erweiterte Zeilen vom Typ Nach innen. Erweiterte Zeilen werden nicht sehr häufig verwendet, doch Sie können sie verwenden, um Daten einem Verbindungspunkt in den A-, B-, C- und D-Zellen zuzuordnen. Ihr Zeilentyp ist visTagCnnctPtABCD oder visTagCnnctNamedABCD. Erweiterte Zeilen können dadurch identifiziert werden, dass eine Formel in der D-Zelle vorhanden ist. 
+Erweiterte Zeilen haben die Zellen A, B, C und D und Verhalten sich wie richtungsfreie, nicht erweiterte Zeilen vom Typ nach innen. Erweiterte Zeilen werden nicht häufig verwendet, aber Sie können Sie verwenden, um Daten mit einem Verbindungspunkt in den Zellen A, B, C und D zu verknüpfen. Der Zeilentyp ist **visTagCnnctPtABCD** oder **visTagCnnctNamedABCD**. Erweiterte Zeilen können durch das vorhanden sein einer Formel in der Zelle D identifiziert werden. 
   
- Sie können beliebig viele Verbindungen hinzufügen.  *Namen* Zeilen wie Sie benötigen, den Zeilen aussagekräftige Namen zuweisen und Zellenwerte festlegen. Um einen vorhandenen Abschnitt Connection Points hinzufügen möchten, mit der rechten Maustaste in einer Zeile, und klicken Sie im Kontextmenü auf **Zeile einfügen** . 
+ Sie können so viele Verbindungen hinzufügen.  *benennen* Sie Zeilen, die Sie benötigen, und weisen Sie den Zeilen aussagekräftige Namen zu. Klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie im Kontextmenü auf **Zeile einfügen** , um einen Verbindungspunkt zu einem vorhandenen Connection Points-Abschnitt hinzuzufügen. 
   
-Sie können Verbindungspunkte Zeilenzellen anhand ihrer Zeilennamen verweisen, die in einem ShapeSheet-Fenster als roter Text angezeigt. Um die Zeile mit dem Namen zu ändern, klicken Sie darauf, und geben Sie einen Namen wie beispielsweise *benutzerdefinierte* , beispielsweise, um den Zeilennamen Connections.Custom zu erstellen. Sie können dann verweisen die Zelle X mit Connections.Custom.X, oder Connections.X1, wenn Sie die Zeilennummer verwenden möchten. 
+Sie können auf Verbindungspunkt Zeilen Zellen anhand ihres Zeilennamens verweisen, der in einem ShapeSheet-Fenster in rotem Text angezeigt wird. Um den Zeilennamen zu ändern, klicken Sie darauf, und geben Sie dann einen Namen wie *Custom* ein, um beispielsweise den Zeilennamen Connections. Custom zu erstellen. Sie können dann mithilfe von Connections. Custom. X, beispielsweise oder Connections. x1 auf die Zelle X verweisen, wenn Sie die Zeilennummer verwenden möchten. 
   
-Der eingegebene Zeilenname muss innerhalb des Abschnitts eindeutig sein. Wenn Sie einen Namen für eine Zeile in den Abschnitt Connection Points erstellen, benennt Microsoft Office Visio alle Zeilen im Abschnitt mit den Standardnamen Row_ *n* . 
+Der eingegebene Zeilenname muss innerhalb des Abschnitts eindeutig sein. Wenn Sie im Abschnitt Connection Points einen Namen für eine Zeile erstellen, benennt Microsoft Office Visio alle Zeilen im Abschnitt mit dem Standardnamen Connections. Row_ *n* . 
   
 Benannte Zeilen Connection Points sind mit Versionen von Visio vor Version 5.0 nicht kompatibel. Wenn eine Visio-Zeichnungsdatei mit benannten Zeilen Verbindungspunkte in einem älteren Format gespeichert wird, werden Verweise auf benannte Zeilen Connection Points in indizierte Verweise konvertiert, und die Zeilennamen gehen verloren.
   

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a75ca0dd-9c50-2a9f-6c59-1f8020833a01
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a1ec71d7120eab220ee3b11d2a751fba51cee48e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 45ef7ce9291376ac020035f0bde6172caf6cc01b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359423"
 ---
 # <a name="uphier"></a>UPHIER
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Synchronisieren von einer Ordnerhierarchie während der [Hierarchie Zustand hochladen](upload-hierarchy-state.md).
+Informationen zum Synchronisieren einer Ordnerhierarchie während des [Upload-Hierarchie Status](upload-hierarchy-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -37,25 +37,25 @@ struct UPHIER
 
 _ulFlags_
   
-> [in] Kennzeichen, die das Verhalten bei der Synchronisierung der Ordnerhierarchie ändern.
+> in Kennzeichen, um das Verhalten beim Synchronisieren der Ordnerhierarchie zu ändern.
     
   - UPH_OK
     
-    - [in] Der Upload war erfolgreich. Der Client legt dies nach dem Hochladen erfolgreich Informationen an den Server. Beim Anzeigen dieses Flag, löscht Outlook alle internen Protokollinformationen, die laut die Ordnerhierarchie aktualisieren erforderlich. 
+    - in Der Upload war erfolgreich. Der Client legt dies nach dem erfolgreichen Hochladen von Informationen auf den Server fest. Wenn dieses Flag angezeigt wird, werden alle internen Buchhaltungsinformationen gelöscht, die die aktualisierte Ordnerhierarchie angegeben haben. 
     
-    - Der Client übergibt das HRESULT, wenn der Hochladevorgang nicht erfolgreich war.
+    - Der Client übergibt HRESULT, wenn der Upload nicht erfolgreich war.
     
 _pstmReserved_
   
-> [out] Dieser Member wird für die Outlook interne Verwendung reserviert und wird nicht unterstützt.
+> Out Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
 _iEnt_
   
-> [out] Index zum Nachverfolgen die Anzahl von *cEnt* angegebenen Ordner zu synchronisieren. 
+> Out Index, um die Synchronisierung der Anzahl der durch *cEnt* angegebenen Ordner nachzuverfolgen. 
     
-_cEnt_
+_Prozent_
   
-> [out] Anzahl der Ordner, die nicht mehr synchronisiert sind.
+> Out Die Anzahl der Ordner, die nicht synchron sind.
     
 ## <a name="see-also"></a>Siehe auch
 

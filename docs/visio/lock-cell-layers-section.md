@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 47bb268f-acdd-7369-716c-bd51a32b8a49
 description: Gibt an, ob die dem Layer zugehörigen Shapes gesperrt sind, damit sie nicht ausgewählt oder bearbeitet werden können.
-ms.openlocfilehash: f404fe15814de802f4f6bfcebfd2558cf10cc7eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d548a6f0fe0cac10d80d73c904739b2979ecf27f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359682"
 ---
-# <a name="lock-cell-layers-section"></a>Lock Cell (Layers Section)
+# <a name="lock-cell-layers-section"></a>Zelle "Lock" (Abschnitt "Layers")
 
 Gibt an, ob die dem Layer zugehörigen Shapes gesperrt sind, damit sie nicht ausgewählt oder bearbeitet werden können.
   
@@ -29,18 +29,18 @@ Gibt an, ob die dem Layer zugehörigen Shapes gesperrt sind, damit sie nicht aus
 
 Sie können diesen Wert auch festlegen, indem Sie im Dialogfeld **Layereigenschaften** die Option **Sperre** aktivieren (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**).
   
-Wenn Sie einen Verweis auf die Zelle Lock aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Lock aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Layers.Locked [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+|Zellenname:  <br/> |Layers. Locked [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Lock aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Lock aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionLayer** <br/> |
-|Zeilenindex:  <br/> |**VisRowLayer** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowLayer** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visLayerLock** <br/> |
    
 

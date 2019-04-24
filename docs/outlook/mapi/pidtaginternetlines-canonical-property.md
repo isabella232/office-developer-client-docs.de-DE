@@ -1,5 +1,5 @@
 ---
-title: PidTagInternetLines (kanonische Eigenschaft)
+title: Kanonische Pidtaginternetlines (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bfbbbb76-796a-4ee8-8410-0d17edb349b5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fe6c756c8ba5cefbcb2878b75db1c465c861fd24
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 87c8ab6a06d830d9d509c1dd1c6f5af1a0de654b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358595"
 ---
-# <a name="pidtaginternetlines-canonical-property"></a>PidTagInternetLines (kanonische Eigenschaft)
+# <a name="pidtaginternetlines-canonical-property"></a>Kanonische Pidtaginternetlines (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wird der MIME-Zeilen Kopfzeile.
+Wird der Kopfzeile der MIME-Zeilen zugeordnet.
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Wird der MIME-Zeilen Kopfzeile.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]] 
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

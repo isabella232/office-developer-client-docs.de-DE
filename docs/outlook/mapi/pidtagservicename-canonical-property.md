@@ -1,5 +1,5 @@
 ---
-title: PidTagServiceName (kanonische Eigenschaft)
+title: Kanonische Pidtagservicename (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a63d647-7504-42fc-b317-6b02b89070eb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d950ee21c0c4c41e84c0fe1f8104219e63f84cec
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e5659113b1c6579913042ae0c8dfcd03e9802621
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359479"
 ---
-# <a name="pidtagservicename-canonical-property"></a>PidTagServiceName (kanonische Eigenschaft)
+# <a name="pidtagservicename-canonical-property"></a>Kanonische Pidtagservicename (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Namen eines Diensts Nachricht als vom Benutzer in der Datei "MapiSvc.inf" festgelegt.
+Enthält den Namen eines Nachrichtendiensts, der vom Benutzer in der Datei MapiSvc. inf festgelegt wird.
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält den Namen eines Diensts Nachricht als vom Benutzer in der Datei "MapiSv
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Der Name dieser Eigenschaften enthalten ist speziell für den Dienst. Es geht in MapiSvc.inf aktivieren Sie im Abschnitt [Services].
+Der Name, der in diesen Eigenschaften enthalten ist, ist für den Nachrichtendienst spezifisch. Sie stammt aus dem Abschnitt [Services] in MapiSvc. inf.
   
-Diese Eigenschaften werden als eine Spalte in der Tabelle der Dienste angezeigt und können verwendet werden, um die Dienste zu filtern. Da es zu identifizieren und Filtern von Services verwendet wird, sollte der Wert nicht lokalisiert werden.
+Diese Eigenschaften werden als Spalte in der Nachrichtendienst Tabelle angezeigt und können zum Filtern von Diensten verwendet werden. Da Sie zum Identifizieren und Filtern von Diensten verwendet wird, sollte der Wert nicht lokalisiert werden.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,40 +1,40 @@
 ---
-title: CompoundType Cell (Line Format Section)
+title: Zusammengesetzte Zelle (Abschnitt "Linien Format")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3e2a88ad-d92c-4550-8da3-fa7fdd032e73
-description: Bestimmt den zusammengesetzten Typ der Zeile eines Shapes.
-ms.openlocfilehash: 663b683030251c8b57324f1d2bdf492463c50eef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den zusammengesetzten Typ der Form.
+ms.openlocfilehash: 120975e419656234266cb8151b2fa37ef19602e5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359368"
 ---
-# <a name="compoundtype-cell-line-format-section"></a>CompoundType Cell (Line Format Section)
+# <a name="compoundtype-cell-line-format-section"></a>Zusammengesetzte Zelle (Abschnitt "Linien Format")
 
-Bestimmt den zusammengesetzten Typ der Zeile eines Shapes. 
+Bestimmt den zusammengesetzten Typ der Form. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Einfach  <br/> |
-|1  <br/> |Double  <br/> |
-|2  <br/> |Dick Dünn  <br/> |
-|3  <br/> |Dünn dick  <br/> |
+|1  <br/> |Gleitkommawert mit doppelter Genauigkeit  <br/> |
+|2  <br/> |Dünn  <br/> |
+|3  <br/> |Dünn  <br/> |
 |4  <br/> |Triple  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **CompoundType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die **** Zelle compoundtype aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | CompoundType  <br/> |
+| Zellenname:  <br/> | Compoundtype  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **CompoundType** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die **** Zelle compoundtype nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

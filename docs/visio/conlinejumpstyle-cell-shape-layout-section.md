@@ -9,23 +9,23 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: baa05a50-97d0-3769-635e-0ea20317d59a
 description: Bestimmt das Liniensprungformat für Liniensprünge bei einem dynamischen Verbinder.
-ms.openlocfilehash: d3e27ddb6689fb5635674b3c4a8462fe587bce7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ae8af4e326a6c895b3617a4869f98eaf0db68db1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360060"
 ---
-# <a name="conlinejumpstyle-cell-shape-layout-section"></a>ConLineJumpStyle Cell (Shape Layout Section)
+# <a name="conlinejumpstyle-cell-shape-layout-section"></a>Zelle "ConLineJumpStyle" (Abschnitt "Shape Layout")
 
 Bestimmt das Liniensprungformat für Liniensprünge bei einem dynamischen Verbinder.
   
 |**Wert**|**Liniensprungformat**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Zeichenblattstandard  <br/> |**visLOJumpStyleDefault** <br/> |
-|1  <br/> |Bogen  <br/> |**visLOJumpStyleArc** <br/> |
+|1  <br/> |Bogens  <br/> |**visLOJumpStyleArc** <br/> |
 |2  <br/> |Lücke  <br/> |**visLOJumpStyleGap** <br/> |
-|3  <br/> |Quadrat  <br/> |**visLOJumpStyleSquare** <br/> |
+|3  <br/> |Square  <br/> |**visLOJumpStyleSquare** <br/> |
 |4  <br/> |Dreieck  <br/> |**visLOJumpStyleTriangle** <br/> |
 |5  <br/> |3 Seiten  <br/> |**visLOJumpStyle2Point** <br/> |
 |6  <br/> |4 Seiten  <br/> |**visLOJumpStyle3Point** <br/> |
@@ -41,14 +41,14 @@ Bestimmt das Liniensprungformat für Liniensprünge bei einem dynamischen Verbin
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können auch den Wert für diese Zelle festlegen einen dynamischen Verbinder, indem Sie in der Gruppe **Shape-Design** auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und dann auf die Registerkarte **Verbinder** . 
+Sie können den Wert dieser Zelle auch festlegen, indem Sie einen dynamischen Verbinder auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten** klicken und dann auf die Registerkarte **Verbinder** klicken. 
   
-Wenn Sie einen Verweis auf die Zelle ConLineJumpStyle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpStyle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |ConLineJumpStyle  <br/> |
+|Zellenname:  <br/> |Zelle ConLineJumpStyle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ConLineJumpStyle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpStyle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 

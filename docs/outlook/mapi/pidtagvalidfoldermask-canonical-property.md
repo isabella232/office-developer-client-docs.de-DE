@@ -1,5 +1,5 @@
 ---
-title: PidTagValidFolderMask (kanonische Eigenschaft)
+title: Kanonische Pidtagvalidfoldermask (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83a44aee-5269-42a8-8078-4bc063bb6e29
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 605e2f528ea0afc1a35348320abaffeb142d9921
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 925e0eb60d55349ded114b827b6ca67e3b5ac1ce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360746"
 ---
-# <a name="pidtagvalidfoldermask-canonical-property"></a>PidTagValidFolderMask (kanonische Eigenschaft)
+# <a name="pidtagvalidfoldermask-canonical-property"></a>Kanonische Pidtagvalidfoldermask (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmaske der Flags, die die Gültigkeit der Eintragsbezeichner der Ordner in einem Nachrichtenspeicher angeben.
+Enthält eine Bitmaske von Flags, die die Gültigkeit der Eintragsbezeichner der Ordner in einem Nachrichtenspeicher kennzeichnen.
   
 |||
 |:-----|:-----|
@@ -34,55 +34,55 @@ Enthält eine Bitmaske der Flags, die die Gültigkeit der Eintragsbezeichner der
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eintrags-ID für einen Ordner werden ungültig, wenn ein Benutzer auf den Ordner löscht oder der Nachrichtenspeicher beschädigt.
+Die Eintrags-ID eines Ordners kann ungültig werden, wenn ein Benutzer den Ordner löscht oder wenn der Nachrichtenspeicher beschädigt wird.
   
-Für die Bitmaske kann eine oder mehrere der folgenden Werte festgelegt werden: 
+Mindestens eines der folgenden Flags kann für die Bitmaske festgelegt werden: 
   
 FOLDER_COMMON_VIEWS_VALID 
   
-> Die gemeinsamen Ordner "Ansichten" besitzt eine gültige Eingabe-ID. Finden Sie unter **PR_COMMON_VIEWS_ENTRYID** ([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md)).
+> Der Ordner Allgemeine Ansichten hat einen gültigen Eintragsbezeichner. Siehe **PR_COMMON_VIEWS_ENTRYID** ([pidtagcommonviewsentryid (](pidtagcommonviewsentryid-canonical-property.md)).
     
 FOLDER_FINDER_VALID 
   
-> Der Finder-Ordner verfügt über eine gültige Eingabe-Bezeichner. Finden Sie unter **PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md)). 
+> Der Finder-Ordner verfügt über eine gültige Eintrags-ID. Siehe **PR_FINDER_ENTRYID** ([pidtagfinderentryid (](pidtagfinderentryid-canonical-property.md)). 
     
 FOLDER_IPM_INBOX_VALID 
   
-> Die zwischen Personen angezeigt (IPM) Ordner verfügt über eine gültige Eingabe-Bezeichner. Finden Sie unter [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md). 
+> Der Empfänger Ordner für die zwischenmenschlichen Nachrichten (IPM) verfügt über eine gültige Eintrags-ID. Weitere Informationen finden Sie unter [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md). 
     
 FOLDER_IPM_OUTBOX_VALID 
   
-> Der Ordner Postausgang IPM besitzt eine gültige Eingabe-ID. Finden Sie unter **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)). 
+> Der IPM-Ausgangsordner hat einen gültigen Eintragsbezeichner. Siehe **PR_IPM_OUTBOX_ENTRYID** ([pidtagipmoutboxentryid (](pidtagipmoutboxentryid-canonical-property.md)). 
     
 FOLDER_IPM_SENTMAIL_VALID 
   
-> Ordner Gesendete Objekte IPM verfügt über eine gültige Eingabe-Bezeichner. Finden Sie unter **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)).
+> Der Ordner "IPM Sent Items" hat einen gültigen Eintragsbezeichner. Siehe **PR_IPM_SENTMAIL_ENTRYID** ([pidtagipmsentmailentryid (](pidtagipmsentmailentryid-canonical-property.md)).
     
 FOLDER_IPM_SUBTREE_VALID 
   
-> Die IPM Ordner Unterstruktur verfügt über eine gültige Eingabe Bezeichner. Finden Sie unter **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)).
+> Die Unterstruktur des IPM-Ordners verfügt über eine gültige Eintrags-ID. Siehe **PR_IPM_SUBTREE_ENTRYID** ([pidtagipmsubtreeentryid (](pidtagipmsubtreeentryid-canonical-property.md)).
     
 FOLDER_IPM_WASTEBASKET_VALID 
   
-> Der Ordner Gelöschte Objekte IPM verfügt über eine gültige Eingabe-Bezeichner. Finden Sie unter **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)).
+> Der Ordner "IPM Deleted Items" hat einen gültigen Eintragsbezeichner. Siehe **PR_IPM_WASTEBASKET_ENTRYID** ([pidtagipmwastebasketentryid (](pidtagipmwastebasketentryid-canonical-property.md)).
     
 FOLDER_VIEWS_VALID 
   
-> Ordner "Ansichten" verfügt über eine gültige Eingabe-Bezeichner. Finden Sie unter **PR_VIEWS_ENTRYID** ([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md)).
+> Der Ordner views hat eine gültige Eintrags-ID. Siehe **PR_VIEWS_ENTRYID** ([pidtagviewsentryid (](pidtagviewsentryid-canonical-property.md)).
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -94,5 +94,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

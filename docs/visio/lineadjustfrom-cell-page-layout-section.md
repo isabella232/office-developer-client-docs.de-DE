@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6949c717-dc69-1d17-5215-eb6efce56fcb
 description: Bestimmt, welche dynamischen Verbinder von der Anwendung getrennt werden, wenn diese übereinander liegen.
-ms.openlocfilehash: ee3a107f7e19b53017c2ea24c94babceb49620d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3eb9f5513ee3ce2f5dce96cb47c356bca29a289c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359325"
 ---
-# <a name="lineadjustfrom-cell-page-layout-section"></a>LineAdjustFrom Cell (Page Layout Section)
+# <a name="lineadjustfrom-cell-page-layout-section"></a>Zelle "LineAdjustFrom" (Abschnitt "Page Layout")
 
 Bestimmt, welche dynamischen Verbinder von der Anwendung getrennt werden, wenn diese übereinander liegen.
   
-|**Wert**|**Ausrichtung**|**Automatisierungskonstante**|
+|**Wert**|**Anpassung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Nicht verwandte Linien  <br/> |**visPLOLineAdjustFromNotRelated** <br/> |
 |1  <br/> |Alle Linien  <br/> |**visPLOLineAdjustFromAll** <br/> |
@@ -31,13 +31,13 @@ Bestimmt, welche dynamischen Verbinder von der Anwendung getrennt werden, wenn d
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle LineAdjustFrom aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineAdjustFrom aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LineAdjustFrom  <br/> |
+|Zellenname:  <br/> |Zelle LineAdjustFrom  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineAdjustFrom aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineAdjustFrom aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

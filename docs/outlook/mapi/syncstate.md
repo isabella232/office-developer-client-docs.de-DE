@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 63c47e94-f603-aef9-afed-e3819bd79408
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a27f38e759862c7091205a6f9a8aa1cde90c38e3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 64348347ea930e6a6a80b9a9075299d2e3109eda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360704"
 ---
 # <a name="syncstate"></a>SYNCSTATE
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Struktur definiert die Zustände für die Replikation Zustandsautomat.
+Diese Struktur definiert die Status für den Replikationsstatus Computer.
   
 ## <a name="quick-info"></a>QuickInfo
 

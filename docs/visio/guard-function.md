@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251435
 localization_priority: Normal
 ms.assetid: 6c85414c-9fb6-cdc5-f5b6-8eb13c9608af
-description: Schützt Ausdruck vor dem Löschen und Ändern von Aktionen, die ausgeführt werden im Zeichnungsfenster, beispielsweise durch Verschieben, Verändern der Größe gruppieren oder Gruppierung der Shapes aufzuheben.
-ms.openlocfilehash: fd5fcfbe11eb054dfa625834640c0280cae96c3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Schützt Ausdruck vor Löschung und Änderung durch Aktionen, die im Zeichnungsfenster ausgeführt werden, beispielsweise verschieben, skalieren, Gruppieren oder Aufheben der Gruppierung von Formen.
+ms.openlocfilehash: 0bdfa023d53e739a970cab65b1dbd67bc1a44461
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360193"
 ---
 # <a name="guard-function"></a>GUARD Function
 
-Schützt *Ausdruck* vor dem Löschen und Ändern von Aktionen, die ausgeführt werden im Zeichnungsfenster, beispielsweise durch Verschieben, Verändern der Größe gruppieren oder Gruppierung der Shapes aufzuheben. 
+Schützt *Ausdruck* vor Löschung und Änderung durch Aktionen, die im Zeichnungsfenster ausgeführt werden, beispielsweise verschieben, skalieren, Gruppieren oder Aufheben der Gruppierung von Formen. 
   
 ## <a name="syntax"></a>Syntax
 
-GUARD (** *Ausdruck* **) 
+GUARD (* * *Expression* * *) 
   
 ### <a name="parameters"></a>Parameter
 

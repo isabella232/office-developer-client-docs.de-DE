@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4aafb254-6074-4a7c-b915-d3d33304ac38
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 241fac608552036e4706956cbe79524aaedacec9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: c73fb96c9620a90ab0505b394fcb9853d02dcde5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360690"
 ---
 # <a name="screlocprops"></a>ScRelocProps
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Passt die Zeiger in ein Array [SPropValue](spropvalue.md) , nachdem das Array und seine Daten kopiert oder an einen neuen Speicherort verschoben wurde. 
+Passt die Zeiger in einem [SPropValue](spropvalue.md) -Array an, nachdem das Array und seine Daten kopiert oder an einen neuen Speicherort verschoben wurden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScRelocProps(
@@ -47,25 +47,25 @@ SCODE ScRelocProps(
 
  _cprop_
   
-> [in] Anzahl der Eigenschaften im Array auf den durch den Parameter _Rgprop_ verwiesen. 
+> in Die Anzahl der Eigenschaften im Array, auf die durch den _rgprop_ -Parameter verwiesen wird. 
     
  _rgprop_
   
-> [in] Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die für die Zeiger sind angepasst werden. 
+> in Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, für die Zeiger angepasst werden sollen. 
     
  _pvBaseOld_
   
-> [in] Zeiger auf die ursprüngliche Basisadresse des Arrays auf den durch den Parameter _Rgprop_ verwiesen. 
+> in Zeiger auf die ursprüngliche Basisadresse des Arrays, auf das durch den _rgprop_ -Parameter verwiesen wird. 
     
  _pvBaseNew_
   
-> [in] Zeiger auf die neue Basisadresse des Arrays auf den durch den Parameter _Rgprop_ verwiesen. 
+> in Zeiger auf die neue Basisadresse des Arrays, auf das durch den _rgprop_ -Parameter verwiesen wird. 
     
  _PCB_
   
-> [in, out] Optional Zeiger auf die Größe des durch den Parameter _PvBaseNew_ angegebenen Arrays in Bytes. Wenn nicht NULL-Wert der _pcb_ -Parameter wird festgelegt, um die Anzahl von Bytes, die im Parameter _PvD_ gespeichert. 
+> [in, out] Optionaler Zeiger auf die Größe des vom _pvBaseNew_ -Parameter angegebenen Arrays in Byte. Wenn dies nicht der Fall ist, wird der _PCB_ -Parameter auf die im _PVD_ -Parameter gespeicherte Anzahl von Bytes festgelegt. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
@@ -73,19 +73,19 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER
   
-> Einer oder beide Parameter war ungültig oder eine unbekannte Eigenschaftentyp aufgetreten.
+> Ein oder beide Parameter waren ungültig, oder es wurde ein unbekannter Eigenschaftentyp gefunden.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die Funktion **ScRelocProps** wirkt sich auf der Annahme, die das Wertearray-Eigenschaft für das Zeiger angepasst werden in einem einzigen Aufruf ähnlich einem Aufruf der Funktion **ScCopyProps** ursprünglich belegt wurde. Wenn eine Clientanwendung oder Service Provider-Eigenschaft den Wert funktionsfähig ist, die aus getrennten Blöcke des Arbeitsspeichers erstellt wird, sollte [ScCopyProps](sccopyprops.md) zum Kopieren von Eigenschaften stattdessen verwendet werden. 
+Die **ScRelocProps** -Funktion wird davon ausgegangen, dass das Eigenschafts Wertarray, für das Zeiger angepasst wurden, ursprünglich in einem einzelnen Aufruf zugeordnet wurde, der einem Aufruf der **ScCopyProps** -Funktion ähnelt. Wenn eine Clientanwendung oder ein Dienstanbieter mit einem Eigenschaftswert arbeitet, der aus nicht zusammengestellten Speicherblöcken erstellt wurde, sollte er [ScCopyProps](sccopyprops.md) verwenden, um stattdessen Eigenschaften zu kopieren. 
   
- **ScRelocProps** wird verwendet, um die Gültigkeit der Zeiger in ein Array [SPropValue](spropvalue.md) verwalten. Um den Zeiger Gültigkeit darzustellen, wenn ein solches Array zu schreiben und Lesen Sie es von einem Datenträger, führen Sie die folgenden Vorgänge aus: 
+ **ScRelocProps** wird verwendet, um die Gültigkeit von Zeigern in einem [SPropValue](spropvalue.md) -Array zu behalten. Führen Sie die folgenden Schritte aus, um die Gültigkeit von Zeiger beim Schreiben eines solchen Arrays in und von einem Datenträger zu erhalten: 
   
-1. Rufen Sie **ScRelocProps** vor dem Schreiben das Array und die Daten auf einem Datenträger, auf dem Array mit dem _PvBaseNew_ -Parameter für die Instanz auf einige Standardwert 0 (null), zeigen. 
+1. Bevor Sie das Array und die Daten auf einen Datenträger schreiben, rufen Sie **ScRelocProps** auf dem Array mit dem _pvBaseNew_ -Parameter auf, der auf einen Standardwert 0 (null) zeigt. 
     
-2. Nach dem Lesen der Array und Daten von einem Datenträger, rufen Sie **ScRelocProps** für das Array mit dem Parameter _PvBaseOld_ , der dem in Schritt 1 verwendeten standard Wert gleich ist. Das Array und die Daten müssen in einen Puffer mit einer einzelnen Reservierung erstellt gelesen werden. 
+2. Nachdem Sie das Array und die Daten von einem Datenträger gelesen haben, rufen Sie **ScRelocProps** im Array mit dem Parameter _pvBaseOld_ auf, der dem gleichen Standardwert entspricht, der in Schritt 1 verwendet wird. Das Array und die Daten müssen in einen mit einer einzelnen Zuordnung erstellten Puffer eingelesen werden. 
     
-3. Der Parameter _pcb_ **ScRelocProps** ist optional. 
+3. Der _PCB_ -Parameter für **ScRelocProps** ist optional. 
     
 ## <a name="see-also"></a>Siehe auch
 

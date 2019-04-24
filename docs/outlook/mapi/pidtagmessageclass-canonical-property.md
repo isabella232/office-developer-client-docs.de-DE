@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageClass (kanonische Eigenschaft)
+title: Kanonische PidTagMessageClass-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,40 +11,40 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1e704023-1992-4b43-857e-0a7da7bc8e87
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 7912a3831333ff8a464a12e567430eb5a3272172
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359263"
 ---
-# <a name="pidtagmessageclass-canonical-property"></a>PidTagMessageClass (kanonische Eigenschaft)
+# <a name="pidtagmessageclass-canonical-property"></a>Kanonische PidTagMessageClass-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Textzeichenfolge, die die Absender benutzerdefinierte Nachrichtenklasse wie IPM identifiziert. Beachten Sie. 
+Enthält eine Textzeichenfolge, die die Absender definierte Nachrichtenklasse identifiziert, beispielsweise IPM. Hinweis. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_CLASS, PR_MESSAGE_CLASS_A, PR_MESSAGE_CLASS_W  <br/> |
 |Kennung:  <br/> |0x001A  <br/> |
-|Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
-|Bereich:  <br/> |Common  <br/> |
+|Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
+|Bereich:  <br/> |Standard  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Nachrichtenklasse gibt den Typ der Nachricht. Bestimmt den Satz von Eigenschaften, die für die Nachricht definiert die Art von Informationen die Nachricht übermittelt, und wie die Meldung zu behandeln. 
+Die Message-Klasse gibt den Typ der Nachricht an. Sie bestimmt die für die Nachricht definierten Eigenschaften, die Art der Informationen, über die die Nachricht vermittelt wird, und die Behandlung der Nachricht. 
   
-Diese Eigenschaften enthalten mit Perioden verkettete Zeichenfolgen. Jede Zeichenfolge stellt eine Ebene von Unterklassen dar. Beispielsweise IPM. Hinweis: ist eine Unterklasse der IPM und eine übergeordnete Klasse von IPM. Note.Private. 
+Diese Eigenschaften enthalten Zeichenfolgen, die mit Punkten verkettet sind. Jede Zeichenfolge stellt eine Ebene der Unterklasse dar. Beispiel: IPM. Hinweis ist eine Unterklasse von IPM und eine Oberklasse von IPM. Note. private. 
   
-Diese Eigenschaften müssen den ASCII-Zeichen 32 bis 127 bestehen und darf nicht mit einem Punkt (ASCII-46) enden. Sortieren und vergleichen Vorgänge müssen sie als ein Zeichenfolgenvergleich behandeln. Die maximale mögliche Länge beträgt 255 Zeichen, aber, um MAPI Platz Qualifizierer anzufügende bereitsteht wird empfohlen, dass die ursprüngliche Länge unter 128 Zeichen behandelt werden. 
+Diese Eigenschaften müssen aus den ASCII-Zeichen 32 bis 127 bestehen und dürfen nicht mit einem Punkt (ASCII 46) enden. Sort-und Compare-Vorgänge müssen Sie als Zeichenfolge mit Groß-/Kleinschreibung behandeln. Die maximal zulässige Länge beträgt 255 Zeichen, aber um MAPI-Speicherplatz für die Anfügung von Qualifizierern zu ermöglichen, empfiehlt es sich, die ursprüngliche Länge unter 128 Zeichen zu halten. 
   
-Jede Nachricht ist erforderlich, um diese Eigenschaften bereitzustellen. Normalerweise wird die Client-Anwendung eine neue Nachricht erstellen, sobald [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) erfolgreich zurückgegeben wird. Aber wenn die Eigenschaft, wenn der Client [IMAPIProp::SaveChanges](imapiprop-savechanges.md)ruft nicht festgelegt wurde, der Nachrichtenspeicher sollte auf festlegen IPM. 
+Jede Nachricht ist erforderlich, um diese Eigenschaften bereitzustellen. NormalerWeise legt die Clientanwendung, die eine neue Nachricht erstellt, Sie fest, sobald [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) erfolgreich zurückgegeben wird. Wenn die Eigenschaft jedoch nicht festgelegt wurde, wenn der Client [IMAPIProp:: SaveChanges](imapiprop-savechanges.md)aufruft, sollte der Nachrichtenspeicher diesen auf IPM festlegen. 
   
-Die Werte von MAPI definiert sind: 
+Die von MAPI definierten Werte sind: 
   
 ```cpp
 IPM.Note for a standard interpersonal message 
@@ -55,43 +55,43 @@ REPORT.<subject message class>.IPNNRN for a nonread report
  
 ```
 
-IPM und IPK dienen nur Klassen werden, und eine Nachricht sollte mindestens eine Unterklasse Qualifizierer angefügt, bevor Sie gespeichert oder gesendet wird. Weitere Informationen über die Verwendung der Nachricht-Klasse finden Sie unter [Message Classes](mapi-message-classes.md). Liste der erforderlichen und optionalen Eigenschaften für Nachrichtenklassen finden Sie unter der untergeordneten Themen mit [Informationen zu Nachrichteneigenschaften](message-properties-overview.md).
+IPM und IPC sollen nur übergeordnete Klassen sein, und eine Nachricht sollte mindestens einen Unterklassen Qualifizierer angefügt haben, bevor Sie gespeichert oder übermittelt wird. Weitere Informationen zur Verwendung von Nachrichtenklassen finden Sie unter [Nachrichtenklassen](mapi-message-classes.md). Eine Liste der erforderlichen und optionalen Eigenschaften für Nachrichtenklassen finden Sie in den Unterthemen [zu Nachrichteneigenschaften](message-properties-overview.md).
   
-Eine benutzerdefinierte Nachrichtenklasse kann Eigenschaften in einem reservierten Bereich für die Verwendung mit nur die Nachrichtenklasse definieren. Weitere Informationen finden Sie unter [Informationen zu Eigenschaftskennungen](mapi-property-identifier-overview.md). 
+Eine benutzerdefinierte Nachrichtenklasse kann Eigenschaften in einem reservierten Range definieren, die nur für diese Nachrichtenklasse verwendet werden können. Weitere Informationen finden Sie unter [about Property Identifiers](mapi-property-identifier-overview.md). 
   
-Nachricht Klassen steuern, welche die Ordner eine eingehende Nachricht empfangen wird in gespeichert. Weitere Informationen finden Sie unter der [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) -Methode. 
+Nachrichtenklassen steuern, in welchem Empfangsordner eine eingehende Nachricht gespeichert wird. Weitere Informationen finden Sie unter der [IMsgStore:: GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) -Methode. 
   
-Weitere Informationen zur Verwendung von Nachrichtenklassen mit Formularen und Form-Servern finden Sie unter [Auswählen einer Nachrichtenklasse](choosing-a-message-class.md). 
+Weitere Informationen zur Verwendung von Nachrichtenklassen mit Formularen und Formular Servern finden Sie unter [Choosing a Message Class](choosing-a-message-class.md). 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Nachrichten und Anlagen Objekte behandelt.
+> Verarbeitet Nachrichten-und Anlagenobjekte.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für e-Mail-Nachrichtenobjekte zulässig sind.
     
 [[MS-OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für das Darstellen von Voicemail- und Sprachnachrichten zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für die Darstellung von Voicemail und Faxnachrichten zulässig sind.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -103,5 +103,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

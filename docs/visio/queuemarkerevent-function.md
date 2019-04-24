@@ -8,33 +8,33 @@ f1_keywords:
 - Vis_DSS.chm60107
 localization_priority: Normal
 ms.assetid: b4671715-4209-7774-c174-c19dc9721a02
-description: Bewirkt, dass die Anwendung ein Markerereignis für das Add-on, Microsoft Visual Basic für Applikationen (VBA)-Code oder COM-add-in auslöst.
-ms.openlocfilehash: b9175caf0845530c93f6db15e286f3eae21ea415
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bewirkt, dass die Anwendung ein Marker-Ereignis für Ihr Add-on, Microsoft Visual Basic für Applikationen (VBA)-Code oder ein COM-Add-in auslöst.
+ms.openlocfilehash: 841f6acc63497a6f0b8930c89534b5f8b04c0393
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358729"
 ---
 # <a name="queuemarkerevent-function"></a>QUEUEMARKEREVENT Function
 
-Bewirkt, dass die Anwendung ein Markerereignis für das Add-on, Microsoft Visual Basic für Applikationen (VBA)-Code oder COM-add-in auslöst. 
+Bewirkt, dass die Anwendung ein Marker-Ereignis für Ihr Add-on, Microsoft Visual Basic für Applikationen (VBA)-Code oder ein COM-Add-in auslöst. 
   
 ## <a name="syntax"></a>Syntax
 
-QUEUEMARKEREVENT (** *Zeichenfolge Event_string* **) 
+QUEUEMARKEREVENT (* * *event_string* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zeichenfolge event_string_ <br/> |Erforderlich  <br/> |**String** <br/> | Die Zeichenfolge, die an den Ereignishandler übergeben.  <br/> |
+| _event_string_ <br/> |Erforderlich  <br/> |**String** <br/> | Die an den Ereignishandler zu übergebende Zeichenfolge.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Die QUEUEMARKEREVENT-Funktion bietet Entwicklern eine Möglichkeit Codeprobleme aus einer ShapeSheet-Zelle zu benachrichtigen und lösungsspezifische Informationen übergeben. Wenn die Zelle mit der Formel mit der QUEUEMARKEREVENT-Funktion ausgewertet wird, wird die Anwendung ein Markerereignis löst und übergibt die _Zeichenfolge Event_string_ an alle Ereignishandler, die auf das **MarkerEvent** -Ereignis warten. 
+Die QUEUEMARKEREVENT-Funktion bietet Entwicklern die Möglichkeit, ihren Code über eine ShapeSheet-Zelle zu benachrichtigen und lösungsspezifische Informationen zu übergeben. Wenn die Zelle mit der Formel mit der QUEUEMARKEREVENT-Funktion ausgewertet wird, löst die Anwendung ein Marker-Ereignis und übergibt _event_string_ an alle Ereignishandler, die das **MarkerEvent** -Ereignis überwachen. 
   
-Weitere Informationen zu Markerereignissen finden Sie unter **QueueMarkerEvent** -Methode und **MarkerEvent** -Ereignis Themen in der Microsoft Visio Automation Reference. 
+Weitere Informationen zu Marker-Ereignissen finden Sie unter den Themen **QueueMarkerEvent** -Methode und **MarkerEvent** -Ereignis in der Microsoft Visio-Automatisierungsreferenz. 
   
 ## <a name="example"></a>Beispiel
 

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ed3c997b-0a58-0432-c468-a24614b67f2e
 description: Gibt TRUE zurück, wenn es sich die angegebene Zeichenfolge in der Kategorienliste des Shapes befindet.
-ms.openlocfilehash: 2445b4c3af63b331b303897997ce38b0747f17fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 902819f981b53aed96695e181ab556d3841d97c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360165"
 ---
 # <a name="hascategory-function"></a>HASCATEGORY Function
 
@@ -25,20 +25,20 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-HASCATEGORY (** *Kategorie* **) 
+HASCATEGORY (* * *Category* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _category_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zu suchende Kategorie.  <br/> |
+| _Kategorie_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zu suchende Kategorie.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
  **Boolean**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- *Kategorien* sind benutzerdefinierte Zeichenfolgen, die Sie verwenden können, die Shapes kategorisieren. Sie können die Kategorien in der Zelle User.msvShapeCategories im ShapeSheet für ein Shape definieren. Sie können mehrere Kategorien für ein Shape definieren, indem Sie die Kategorien durch ein Semikolon voneinander getrennt. 
+ *Kategorien* sind benutzerdefinierte Zeichenfolgen, die Sie verwenden können, um Shapes zu kategorisieren. Kategorien können in der Zelle User.msvShapeCategories im ShapeSheet eines Shapes definiert werden. Sie können mehrere Kategorien für ein Shape definieren, indem Sie die Kategorien durch Semikolons trennen. 
   
 

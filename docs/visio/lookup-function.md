@@ -8,33 +8,33 @@ f1_keywords:
 - Vis_DSS.chm82251457
 localization_priority: Normal
 ms.assetid: cb6ec664-6062-75d0-1514-8058b98c2c36
-description: Gibt einen nullbasierten Index, der gibt die Position der Teilzeichenfolge Schlüssel in einer Liste oder gibt-1 zurück, wenn die Zielzeichenfolge das Trennzeichen enthält.
-ms.openlocfilehash: e1fd433282871135d385d1c980c77041cd49cdf4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen nullbasierten Index zurück, der die Position des Schlüssels der Teilzeichenfolge in einer Liste angibt, oder gibt-1 zurück, wenn die Zielzeichenfolge das Trennzeichen enthält.
+ms.openlocfilehash: 10fc32e6e979ab819246161dedfb1183c2683a99
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358030"
 ---
 # <a name="lookup-function"></a>LOOKUP Function
 
-Gibt einen nullbasierten Index, der gibt die Position der Teilzeichenfolge _Schlüssel_ in einer _Liste_oder gibt-1 zurück, wenn die Zielzeichenfolge das _Trennzeichen_enthält.
+Gibt einen nullbasierten Index zurück, der die Position des _Schlüssels_ der Teilzeichenfolge in einer _Liste_angibt, oder gibt-1 zurück, wenn die Zielzeichenfolge das _Trenn_Zeichen enthält.
   
 ## <a name="syntax"></a>Syntax
 
-Nachschlagen ("** *Schlüssel* **","** *Liste* **"[,"** *Trennzeichen* **"]) 
+Lookup ("* * *Key* * *", "* * *Liste* * *" [, "* * *Trennzeichen* * *"]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Schlüssel_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zu suchende Zeichenfolge.  <br/> |
+| _key_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zu suchende Zeichenfolge.  <br/> |
 | _list_ <br/> |Erforderlich  <br/> |**String** <br/> | Die Liste, in der gesucht werden soll.  <br/> |
-| _delimiter_ <br/> |Optional  <br/> |**String** <br/> | Die Zeichenfolge an, in der _Liste_als Trennzeichen verwendet. Zeichenfolge für ein _Trennzeichen_ kann mehr als ein Zeichen lang sein und kann multibyte-Zeichen enthalten. Der Standardwert ist eine durch Semikolons.  <br/> |
+| _delimiter_ <br/> |Optional  <br/> |**String** <br/> | Die zu verwendende Zeichenfolge in _List_. Eine _Trenn_ Zeichen Zeichenfolge kann mehr als ein Zeichen lang sein und Multibyte-Zeichen enthalten. Das Standardtrennzeichen ist ein Semikolon.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -44,19 +44,19 @@ Sämtliche Argumente müssen Zeichenfolgen oder in Zeichenfolgen konvertierbare 
   
 ## <a name="example-1"></a>Beispiel 1
 
-LOOKUP("Ratte","Katze;Ratte;;Ziege")
+LOOKUP ("Rat", "Cat; Rat;; Ziege ")
   
 Gibt 1 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-LOOKUP("",";Katze;Ratte;;Ziege")
+LOOKUP ("", "; Cat; Rat;; Ziege ")
   
 Gibt 0 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-LOOKUP("t","Katze;Ratte;;Ziege","a")
+LOOKUP ("t", "Cat; Rat;; Ziege "," a ")
   
 Gibt 3 zurück.
   

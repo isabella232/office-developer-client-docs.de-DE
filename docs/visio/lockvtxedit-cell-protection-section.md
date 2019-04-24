@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 966cde5c-f04e-7149-3660-720ffa4f7079
 description: Sperrt die Scheitelpunkte eines Shapes, sodass sie nicht bearbeitet werden können.
-ms.openlocfilehash: 3766df62bb85e1470ad0fa46274b9bbbd96b8406
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1703769fe54171a14f7052f0f6686e1eb5ec92fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19797416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358058"
 ---
-# <a name="lockvtxedit-cell-protection-section"></a>LockVtxEdit Cell (Protection Section)
+# <a name="lockvtxedit-cell-protection-section"></a>Zelle "LockVtxEdit" (Abschnitt "Protection")
 
 Sperrt die Scheitelpunkte eines Shapes, sodass sie nicht bearbeitet werden können.
   
@@ -27,13 +27,13 @@ Sperrt die Scheitelpunkte eines Shapes, sodass sie nicht bearbeitet werden könn
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LockVtxEdit aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockVtxEdit aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LockVtxEdit  <br/> |
+|Zellenname:  <br/> |Zelle LockVtxEdit  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockVtxEdit aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LockVtxEdit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

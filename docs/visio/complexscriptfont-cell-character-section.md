@@ -9,35 +9,35 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e1cf9e97-101b-384f-65fe-0169c89dfccc
 description: Enthält die Nummer der Schriftart, die zum Formatieren von Text mit komplexen Schriftzeichen verwendet wird. Nummern von Schriftarten variieren entsprechend den im System installierten Schriftarten.
-ms.openlocfilehash: 0aae3a22be26f206763f18107eaced74f1078503
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5ec8deb59b875a01592b6d7b652204089ecf11e0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359381"
 ---
-# <a name="complexscriptfont-cell-character-section"></a>ComplexScriptFont Cell (Character Section)
+# <a name="complexscriptfont-cell-character-section"></a>Zelle "ComplexScriptFont" (Abschnitt "Character")
 
 Enthält die Nummer der Schriftart, die zum Formatieren von Text mit komplexen Schriftzeichen verwendet wird. Nummern von Schriftarten variieren entsprechend den im System installierten Schriftarten. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Komplexe Schriftzeichen Schriftgrade sind aufgelistet, auf der Registerkarte **Schriftart** im Dialogfeld **Text** verwenden (klicken Sie auf der Pfeil in der **Schriftart** auf der Registerkarte **Start** gruppieren). Diese Liste wird nur dann, wenn Sie eine Sprache hinzugefügt haben, die asiatische Sprachen oder komplexe Schriftzeichen, klicken Sie im Dialogfeld **Microsoft Office-Spracheinstellungen** enthält. (Klicken Sie auf **Start**, klicken Sie auf **Alle Programme**, klicken Sie auf **Microsoft Office**, klicken Sie auf **Microsoft Office Tools**, und klicken Sie dann auf **Microsoft Office-Spracheinstellungen**.
+Schriftgrößen für komplexe Schriftarten werden im Dialogfeld **Text** auf der Registerkarte **Schriftart** angezeigt (Klicken Sie auf der Registerkarte **Start** in der Gruppe **Schriftart** auf den Pfeil). Diese Liste wird nur angezeigt, wenn Sie im Dialogfeld **Microsoft Office-Spracheinstellungen** eine Sprache hinzugefügt haben, die asiatische oder komplexe Schriftzeichen enthält. (Klicken Sie auf **Start**, **Alle Programme**, **Microsoft Office**, Microsoft Office- **Tools**und dann auf **Microsoft Office-Spracheinstellungen**.
   
-Die Zahl 0 (null) bedeutet, dass keine Schriftart festgelegt ist. Die Lateinische Schriftart oder den Standard-Schriftarten verwendet werden.
+Die Nummer Null (0) bedeutet, dass keine Schriftart festgelegt ist. Die Schriftart Latein oder die Standardschriftarten werden verwendet.
   
-Wenn Sie einen Verweis auf die Zelle ComplexScriptSize aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle ComplexScriptSize aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Char.ComplexScriptFont [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+|Zellenname:  <br/> |Char. "ComplexScriptFont [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ComplexScriptFont aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "ComplexScriptFont aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-|Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCharacterComplexScriptFont** <br/> |
    
 

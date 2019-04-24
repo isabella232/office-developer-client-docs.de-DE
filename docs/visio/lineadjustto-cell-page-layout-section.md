@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 81cd9670-8a6f-824b-528c-e9b88c86f525
 description: Legt fest, welche dynamischen Verbinder übereinander liegen.
-ms.openlocfilehash: 13540f9dc5e6e6861d3f3679bcf49204d553397a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e4fb32c0fcb488173324ea597edc2c9d13f6bfca
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359311"
 ---
-# <a name="lineadjustto-cell-page-layout-section"></a>LineAdjustTo Cell (Page Layout Section)
+# <a name="lineadjustto-cell-page-layout-section"></a>Zelle "LineAdjustTo" (Abschnitt "Page Layout")
 
 Legt fest, welche dynamischen Verbinder übereinander liegen.
   
-|**Wert**|**Ausrichtung**|**Automatisierungskonstante**|
+|**Wert**|**Anpassung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Standard-Umleitungsformatvorlage  <br/> |**visPLOLineAdjustToDefault** <br/> |
 |1  <br/> |Linien, die nahe beieinander liegen.  <br/> |**visPLOLineAdjustToAll** <br/> |
@@ -31,13 +31,13 @@ Legt fest, welche dynamischen Verbinder übereinander liegen.
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle LineAdjustTo aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineAdjustTo aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LineAdjustTo  <br/> |
+|Zellenname:  <br/> |Zelle LineAdjustTo  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineAdjustTo aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle LineAdjustTo aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

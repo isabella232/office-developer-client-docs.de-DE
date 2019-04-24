@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5d4f1cf8-bc1f-07b8-1da5-7253808e337e
 description: Legt den im Dialogfeld Seite einrichten ausgewählten Zeichnungsmaßstab fest (klicken Sie auf der Registerkarte Start auf den Pfeil neben Seite einrichten).
-ms.openlocfilehash: b93bd95a30fe5a8a5de15a8e5ea104279cf1bcda
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d1c1c00ffe025c566646a1f8b9fe034732ad86a8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359689"
 ---
-# <a name="drawingscaletype-cell-page-properties-section"></a>DrawingScaleType Cell (Page Properties Section)
+# <a name="drawingscaletype-cell-page-properties-section"></a>Zelle "DrawingScaleType" (Abschnitt "Page Properties")
 
 Legt den im Dialogfeld **Seite einrichten** ausgewählten Zeichnungsmaßstab fest (klicken Sie auf der Registerkarte **Start** auf den Pfeil neben **Seite einrichten**). 
   
@@ -26,18 +26,18 @@ Legt den im Dialogfeld **Seite einrichten** ausgewählten Zeichnungsmaßstab fes
 | 1  <br/> | Architekturmaßstab  <br/> |**visArchitectural** <br/> |
 | 2  <br/> | Tiefbaumaßstab  <br/> |**visEngineering** <br/> |
 | 3  <br/> | Benutzerdefinierter Maßstab  <br/> |**visScaleCustom** <br/> |
-| 4  <br/> | Metrisch  <br/> |**visScaleMetric** <br/> |
+| 4  <br/> | Metrik  <br/> |**visScaleMetric** <br/> |
 | 5  <br/> | Maschinenbaumaßstab  <br/> |**visScaleMechanical** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle DrawingScaleType aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "DrawingScaleType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | DrawingScaleType  <br/> |
+| Zellenname:  <br/> | "DrawingScaleType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DrawingScaleType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "DrawingScaleType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

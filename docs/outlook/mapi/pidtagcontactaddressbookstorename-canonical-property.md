@@ -1,5 +1,5 @@
 ---
-title: PidTagContactAddressBookStoreName (kanonische Eigenschaft)
+title: Kanonische Pidtagcontactaddressbookstorename (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 84c1b0cb-91aa-4238-ac74-a129a6e2cdd6
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 224a2b14328795bb2bff4b1e2985f2a4c1e963a9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2eb427b99ecef9a6b78b5f7bd92bfbf6e214702f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358485"
 ---
-# <a name="pidtagcontactaddressbookstorename-canonical-property"></a>PidTagContactAddressBookStoreName (kanonische Eigenschaft)
+# <a name="pidtagcontactaddressbookstorename-canonical-property"></a>Kanonische Pidtagcontactaddressbookstorename (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Anzeigenamen des Speichers mit der Adressbuch-Anbieter verknüpft sind. 
+Enthält den Anzeigenamen des Speichers, der dem Adressbuchanbieter zugeordnet ist. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_STORE_NAME, PR_CONTAB_STORE_NAME_A, PR_CONTAB_STORE_NAME_W  <br/> |
 |Kennung:  <br/> |0x6612  <br/> |
-|Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
-|Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
+|Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
+|Bereich:  <br/> |Kontakt Adressbuch  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften sind auf einen Kontakt Adressbuch-Container und eine Spalte in der Tabelle der Kontakt-Adressbuch-Container.
+Diese Eigenschaften befinden sich in einem Adressbuchcontainer des Kontakts und eine Spalte in der Tabelle mit den Adressbuch Containern des Kontakts.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

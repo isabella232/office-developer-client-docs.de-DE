@@ -1,5 +1,5 @@
 ---
-title: PidTagRowType (kanonische Eigenschaft)
+title: Kanonische Pidtagrowtype (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,15 +11,15 @@ api_name:
 api_type:
 - COM
 ms.assetid: d57ce5c8-1f60-4709-b86a-4468c4208dfe
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 962e8c92ae61e8b60862a3ae26a7cdfbf5034e89
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359514"
 ---
-# <a name="pidtagrowtype-canonical-property"></a>PidTagRowType (kanonische Eigenschaft)
+# <a name="pidtagrowtype-canonical-property"></a>Kanonische Pidtagrowtype (-Eigenschaft
 
   
   
@@ -32,53 +32,53 @@ Enthält einen Wert, der den Typ einer Zeile in einer Tabelle angibt.
 |Zugeordnete Eigenschaften:  <br/> |PR_ROW_TYPE  <br/> |
 |Kennung:  <br/> |0x0FF5  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
+|Bereich:  <br/> |Nicht transmitable MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird nur für Tabellen Inhalt angezeigt. Eine Kategorie ist nur vorhanden, wenn er Elemente verfügt.
+Diese Eigenschaft wird nur für Inhaltstabellen angezeigt. Eine Kategorie ist nur vorhanden, wenn Sie über Elemente verfügt.
   
-Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
+Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
 TBL_LEAF_ROW 
   
-> Tatsächliche Daten darstellt, anstatt eine Kategoriezeile.
+> Stellt tatsächliche Daten anstelle einer Kategorieleiste dar.
     
 TBL_EMPTY_CATEGORY 
   
-> Derzeit nicht verwendet.
+> Wird derzeit nicht verwendet.
     
 TBL_EXPANDED_CATEGORY 
   
-> Die Kategorie erweitert ist. die Benutzeroberfläche wird in der Regel dies mit dem Minuszeichen (-) neben dem angezeigt.
+> Die Kategorie wurde erweitert; in der Benutzeroberfläche wird dies in der Regel mit dem Minuszeichen (-) angezeigt.
     
 TBL_COLLAPSED_CATEGORY 
   
-> Die Kategorie ausgeblendet ist; die Benutzeroberfläche wird dies in der Regel durch das Pluszeichen (+) neben dem.
+> Die Kategorie ist reduziert; in der Benutzeroberfläche wird dies in der Regel mit dem Pluszeichen (+) angezeigt.
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
-> Zulässige Vorgänge für die Hauptobjekte-Tabelle enthält.
+> Enthält zulässige Vorgänge für die Haupttabellen Objekte.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagRowid (kanonische Eigenschaft)](pidtagrowid-canonical-property.md)
+[Kanonische Pidtagrowid (-Eigenschaft](pidtagrowid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
@@ -87,5 +87,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

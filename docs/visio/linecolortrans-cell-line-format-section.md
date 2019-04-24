@@ -9,22 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b68054b5-7efd-1156-9dc1-5ec94e18d227
 description: Definiert die Transparenzstufe der Linienfarbe eines Shapes.
-ms.openlocfilehash: 81c23b77c4663158819f9d5fe53765860183e039
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 555ea15de0279a37bcf67de7374d922b8692ce02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359297"
 ---
-# <a name="linecolortrans-cell-line-format-section"></a>LineColorTrans Cell (Line Format Section)
+# <a name="linecolortrans-cell-line-format-section"></a>Zelle "LineColorTrans" (Abschnitt "Line Format")
 
 Definiert die Transparenzstufe der Linienfarbe eines Shapes.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|
-          0 - 100
-  <br/> |Stellt die Transparenz in Prozent dar. Der Standardwert ist 0% (vollständig undurchsichtig).  <br/> |
+|0 - 100  <br/> |Stellt die Transparenz in Prozent dar. Der Standardwert ist 0% (vollständig undurchsichtig).  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
@@ -32,13 +30,13 @@ Werte werden auf ein halbes Prozent gerundet. Ein Wert von 100% bezeichnet völl
   
 Sie können diesen Wert auch festlegen, indem Sie das Schieberegler-Steuerelement im Dialogfeld **Linie** verwenden (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Linienbreite**, und klicken Sie dann auf **Weitere Linien**).
   
-Wenn Sie einen Verweis auf die Zelle LineColorTrans aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle linecolortrans aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LineColorTrans  <br/> |
+|Zellenname:  <br/> |Zelle linecolortrans  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineColorTrans aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle linecolortrans aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

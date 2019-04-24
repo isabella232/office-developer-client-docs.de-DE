@@ -1,5 +1,5 @@
 ---
-title: DATEVALUE Function (VisioShapeSheet)
+title: DATEVALUE-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251414
 localization_priority: Normal
 ms.assetid: 514a4053-7729-ec82-c42f-5b780e48cd2a
-description: Der Date-Wert dargestellt durch Datetime oder Expression zurückgegeben.
-ms.openlocfilehash: 7fcfd625b5e4e3da71a1b160c074401b672e0be7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt den durch DateTime oder Expression dargestellten Date-Wert zurück.
+ms.openlocfilehash: d5bc1865e76940508ddb67a9b3d2122dc7c43a50
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360312"
 ---
-# <a name="datevalue-function-visioshapesheet"></a>DATEVALUE Function (VisioShapeSheet)
+# <a name="datevalue-function-visioshapesheet"></a>DATEVALUE-Funktion (VisioShapeSheet)
 
-Der Date-Wert dargestellt durch _Datetime_ oder _Expression_zurückgegeben.
+Gibt den durch _DateTime_ oder _Expression_dargestellten Date-Wert zurück.
   
 ## <a name="syntax"></a>Syntax
 
-DATEVALUE ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **]) 
+DATEvalue ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,21 +30,21 @@ DATEVALUE ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Nummer** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Number** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Datetime
+DateTime
   
 ## <a name="remarks"></a>Bemerkungen
 
-Alle Zeitkomponenten in *Datetime* oder *Expression* wird verworfen. 
+Alle Zeitkomponenten in *DateTime* oder *Expression* werden verworfen. 
   
-Wenn *Datetime* nicht vorhanden ist oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt DATEVALUE ein #VALUE! Fehler. 
+Wenn *DateTime* fehlt oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt DateValue eine #VALUE zurück! zurück. 
   
 Der Wert wird in dem Kurzdatumsformat angezeigt, der aktuell in den Ländereinstellungen des Systems festgelegt ist. 
   
-DATEVALUE-Funktion nimmt auch einen einzelnen Zahlenwert für *Expression* , wobei der Ganzzahlteil des Ergebnisses die Tagen seit dem 30. Dezember 1899 steht. 
+Die DATEvalue-Funktion akzeptiert auch einen einzelnen Zahlenwert für *Expression* , wobei der ganzzahlige Teil des Ergebnisses die Tage seit dem 30. Dezember 1899 darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
@@ -54,7 +54,7 @@ Gibt das Datum fünf Tage nach dem aktuellen Datum zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-DATEVALUE("19/7/1995 12:30")
+DATEVALUE ("7/19/1995 12:30")
   
 Gibt das Datum zurück.
   
@@ -66,7 +66,7 @@ Gibt einen Fehler vom Typ #WERT! zurück.
   
 ## <a name="example-4"></a>Beispiel 4
 
-DATEVALUE(35580.6337)
+DATEVALUE (35580.6337)
   
 Gibt 30.5. 1997 zurück.
   

@@ -1,5 +1,5 @@
 ---
-title: DataRecordSet_Type ComplexType ("Visio XML")
+title: DataRecordSet_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 59544910-6bd5-2c89-71b3-5c8ee91a1dea
 ms.openlocfilehash: 36d6cf3b34ad0aa81f7b097d6452c46679342a02
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360361"
 ---
-# <a name="datarecordsettype-complextype-visio-xml"></a>DataRecordSet_Type ComplexType ("Visio XML")
+# <a name="datarecordsettype-complextype-visio-xml"></a>DataRecordSet_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -112,7 +112,7 @@ ms.locfileid: "25395476"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -129,18 +129,18 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Prüfsumme  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|Command  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|ConnectionID  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|Name  <br/> |XSD: String  <br/> |Optional  <br/> ||Werte des Typs xsd: String.  <br/> |
-|NextRowID  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|Options  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|RefreshInterval  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|RefreshNoReconciliationUI  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |
-|RefreshOverwriteAll  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |
-|ReplaceLinks  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
-|RowOrder  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |
-|TimeRefreshed  <br/> |XSD: DateTime  <br/> |Optional  <br/> ||Werte des Typs xsd: DateTime.  <br/> |
+|Prüfsumme  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|Befehl  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|ConnectionID  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|NextRowID  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|Optionen  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|RefreshInterval  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|RefreshNoReconciliationUI  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|RefreshOverwriteAll  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|ReplaceLinks  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
+|RowOrder  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|TimeRefreshed  <br/> |XSD: dateTime  <br/> |Optional  <br/> ||Werte des XSD: dateTime-Typs.  <br/> |
    
 

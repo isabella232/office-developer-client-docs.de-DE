@@ -1,5 +1,5 @@
 ---
-title: PidLidWorkAddressState (kanonische Eigenschaft)
+title: Kanonische Pidlidworkaddressstate (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,47 +11,47 @@ api_name:
 api_type:
 - COM
 ms.assetid: 835f805e-5bf3-4ae6-a69e-41eadb76f450
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 2ccde72d25053562154ef224a299f4637267eafe
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360634"
 ---
-# <a name="pidlidworkaddressstate-canonical-property"></a>PidLidWorkAddressState (kanonische Eigenschaft)
+# <a name="pidlidworkaddressstate-canonical-property"></a>Kanonische Pidlidworkaddressstate (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Bundesland/Kanton Teil des Kontakts geschäftliche Postanschrift.
+Gibt den Bundesland-oder Kanton-Teil der Arbeits Postadresse des Kontakts an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidWorkAddressState  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008047  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Address  <br/> |
+|Long-ID (Deckel):  <br/> |0x00008047  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,5 +63,5 @@ Mapidefs.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

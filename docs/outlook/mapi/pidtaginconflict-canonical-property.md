@@ -1,5 +1,5 @@
 ---
-title: PidTagInConflict (kanonische Eigenschaft)
+title: Kanonische Pidtaginconflict (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,58 +11,58 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e83c05c6-a7c0-486c-a112-58a39255767a
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: fc2774efed1a15fe79e167149f2cb162bae7642c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358534"
 ---
-# <a name="pidtaginconflict-canonical-property"></a>PidTagInConflict (kanonische Eigenschaft)
+# <a name="pidtaginconflict-canonical-property"></a>Kanonische Pidtaginconflict (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn die Anlage eine alternative Replikat darstellt.
+Enthält TRUE, wenn die Anlage ein alternatives Replikat darstellt.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_IN_CONFLICT  <br/> |
 |Kennung:  <br/> |0x666C  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |Conflict-Hinweis  <br/> |
+|Bereich:  <br/> |Konflikt Hinweis  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die e-Mail-Client und Server müssen eine Konflikt auflösen Nachricht generieren, wenn einen Konflikt mit der aktuellen Version einer Nachricht in das Replikat während der Synchronisierung zu erkennen. Es ist wichtig zu verstehen, dass es möglich ist, dass die aktuelle Version der Nachricht in dem lokalen Replikat während der aktuellen Synchronisierungsvorgang übermittelt wurde. Das passiert, wenn Sie der Konflikt bereits auf dem Server vorhanden ist, bevor in einer miteinander in Konflikt stehende auf dem lokalen Replikat heruntergeladen wurden. Ein Konflikt beheben, dass die Nachricht als unabhängiger Replikate mit miteinander in Konflikt stehende PCLs synchronisiert werden muss. Der Konflikt aufgelöst werden kann, dass die Nachricht selbst nicht zwischen Client und Server synchronisiert werden muss. nur die unabhängige Replikate sollte ausgetauscht werden. Der Synchronisierungspartner muss dann eine neue Nachricht generieren, die die Struktur der Konfliktnachricht entspricht. Aus diesem Grund ist es wichtig, dass Client und Server den gleichen Algorithmus verwenden, um das Element "Gewinner" zu erkennen. Die folgenden Regeln müssen angewendet werden, um zu ermitteln, den "Gewinner":
+Der e-Mail-Client und der Server müssen eine Konflikt Lösungs Meldung generieren, wenn ein Konflikt mit der aktuellen Version einer Nachricht im Replikat während der Synchronisierung ermittelt wird. Es ist wichtig zu wissen, dass es möglich ist, dass die aktuelle Version der Nachricht im lokalen Replikat während des aktuellen Synchronisierungsvorgangs übertragen wurde. Dies geschieht, wenn der Konflikt bereits auf dem Server vorhanden ist, bevor eine der Konflikt verursachenden Nachrichten in das lokale Replikat heruntergeladen wurde. Eine Nachricht zur Konfliktbehebung muss als unabhängige Replikate mit widersprüchlichen PCLs synchronisiert werden. Die Nachricht zur Konfliktlösung selbst darf nicht zwischen Client und Server synchronisiert werden. nur die unabhängigen Replikate sollten ausgetauscht werden. Der Synchronisierungspartner muss dann eine neue Nachricht generieren, die mit der Struktur der Konfliktmeldung übereinstimmt. Daher ist es wichtig, dass Client und Server den gleichen Algorithmus verwenden, um das Element "Winner" zu identifizieren. Die folgenden Regeln müssen angewendet werden, um den "Gewinner" zu erfassen:
   
 1. Zeitpunkt der letzten Änderung.
     
-2. Höhere CN GUID (Verwendung von Arbeitsspeicher Compare) Tie unterbrochen.
+2. Höhere CN-GUID (mit Arbeitsspeicher Vergleich), um Tie zu unterbrechen.
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> Synchronisieren von messaging Objektdaten zwischen einem Server und einem Client behandelt.
+> Behandelt das Synchronisieren von Messagingobjekt Daten zwischen einem Server und einem Client.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,5 +74,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

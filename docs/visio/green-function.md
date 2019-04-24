@@ -8,45 +8,45 @@ f1_keywords:
 - Vis_DSS.chm82251434
 localization_priority: Normal
 ms.assetid: eccec432-32d3-15c2-06b3-dd02b6313d4c
-description: Gibt die Grünkomponente einer Farbe zurück.
-ms.openlocfilehash: 04bdadc0fa34dc4f51061d428b9366a433b669a5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die grüne Komponente einer Farbe zurück.
+ms.openlocfilehash: 0412e4519c2964b05d7663805d7773e8dc5deaab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360207"
 ---
 # <a name="green-function"></a>GREEN Function
 
-Gibt die Grünkomponente einer Farbe zurück.
+Gibt die grüne Komponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-Grün (** *Ausdruck* **) 
+Grün (* * *Ausdruck* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Index einer Farbe in das Dokument Farbe Tabelle ein Ausdruck, der in einer benutzerdefinierten Farbe (wie RGB oder HSL) oder ein Bezug auf eine Zelle, die eine Farbe Index oder Farbe Ergebnis enthält aufgelöst wird.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Index einer Farbe in der Farbtabelle des Dokuments, ein Ausdruck, der in eine benutzerdefinierte Farbe (wie RGB oder GSL) aufgelöst wird, oder ein Bezug auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255 oder Bezug auf eine Zelle, die als Index aufgelöst wird. Wenn *Ausdruck* ungültig ist, wird 0 (Schwarz) zurückgegeben. 
+Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn *Ausdruck* ungültig ist, gibt er 0 (schwarz) zurück. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-Grün (Sheet4! FillForegnd)
+Grün (Blatt. 4! Zelle FillForegnd
   
 Gibt den Wert der Grünkomponente der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-GREEN(11)
+GRÜN (11)
   
 Gibt 128 zurück, wenn das Dokument die Standardfarbpalette von Visio verwendet, wobei Dunkelgelb die Farbe mit Index 11 darstellt.
   
