@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cf15b879-a47e-a5a5-bfdd-1d7ea423742f
 description: Bestimmt das Symbol, das neben einem Element in einem Kontext- oder Aktionstagmenü angezeigt wird.
-ms.openlocfilehash: 29ff71bc04e94f97f1526b28bd52c2846327eff1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7ee9c4e7e857acb34ce75429aa0aaf679320b0e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337548"
 ---
-# <a name="buttonface-cell-actions-section"></a>ButtonFace Cell (Actions Section)
+# <a name="buttonface-cell-actions-section"></a>Zelle "ButtonFace" (Abschnitt "Actions")
 
 Bestimmt das Symbol, das neben einem Element in einem Kontext- oder Aktionstagmenü angezeigt wird.
   
@@ -27,20 +27,20 @@ Bestimmt das Symbol, das neben einem Element in einem Kontext- oder Aktionstagme
 
 Die Zeichenfolge in einer ButtonFace-Zelle stellt die ID einer Microsoft Office-Schaltflächenoberseite dar. Der Wert Null (0) oder ein Leerzeichen bedeutet, dass kein Symbol angezeigt wird. 
   
-Die IDs, die in die Zelle ButtonFace verwendet werden können, sind identisch mit den IDs, die mit der **FaceID** -Eigenschaft eines **CommandBarButton** -Objekts. Weitere Informationen zu diesen IDs auf MSDN nach "Working with Schaltflächensymbolen an Leiste Befehl" suchen. 
+Die IDs, die in der "ButtonFace-Zelle verwendet werden können, sind identisch mit den IDs, die mit der **Face** -ID-Eigenschaft eines **CommandBarButton** -Objekts verwendet werden. Weitere Informationen zu diesen IDs finden Sie unter "Working with Command Bar Button Images" auf MSDN. 
   
-Wenn Sie einen Verweis auf die Zelle ButtonFace aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "ButtonFace aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |**Aktionen**.  *Name* . **ButtonFace** wobei **Aktionen**.  *Name* ist der Name der Zeile actions  <br/> |
+|Zellenname:  <br/> |**Aktionen**.  *Name* . **"ButtonFace** , wobei **Aktionen**.  *Name* ist der Name der Zeile Actions.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ButtonFace aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "ButtonFace aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**VisRowAction** +  *i* wobei **i** = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei **i** = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionButtonFace** <br/> |
    
 

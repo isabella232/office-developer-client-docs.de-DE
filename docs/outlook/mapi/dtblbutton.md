@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6058c78b-05d4-45a3-988c-1fbf8322125e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e0797364eb4ec24793f64bad2f4d838507c236e4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a8fa683fecd59ec813fee0c15d5b4f08084c645d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338311"
 ---
 # <a name="dtblbutton"></a>DTBLBUTTON
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen über ein Button-Steuerelement für ein Dialogfeld erstellt aus einer Tabelle anzeigen.
+Enthält Informationen zu einem Schaltflächen-Steuerelement für ein Dialogfeld, das aus einer Anzeigetabelle erstellt wurde.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makro:  <br/> |[SizedDtblButton](sizeddtblbutton.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehöriges Makro:  <br/> |[SizedDtblButton](sizeddtblbutton.md) <br/> |
    
 ```cpp
 typedef struct _DTBLBUTTON
@@ -46,29 +46,29 @@ typedef struct _DTBLBUTTON
 
  **ulbLpszLabel**
   
-> Die Position im Speicher der Zeichenfolge, die auf der Schaltfläche angezeigt wird.
+> Position im Speicher der Zeichenfolge, die auf der Schaltfläche angezeigt wird.
     
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format der Beschriftung festzulegen, auf die der **UlbLpszLabel** Member. Das folgende Flag kann festgelegt werden: 
+> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabel** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Beschriftung wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
     
  **ulPRControl**
   
-> Eigenschaftentag für eine Eigenschaft vom Typ PT_OBJECT, die die [IMAPIControl](imapicontroliunknown.md) -Schnittstelle implementiert wird. Wenn die Schaltfläche geklickt wird, ruft MAPI die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode für die Anzeige Tabelle [IMAPIProp](imapipropiunknown.md) Implementierung dieser Eigenschaft abgerufen. 
+> Property-Tag für eine Eigenschaft vom Typ PT_OBJECT, die die [IMAPIControl](imapicontroliunknown.md) -Schnittstelle implementiert. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode für die [IMAPIProp](imapipropiunknown.md) -Implementierung der Display-Tabelle auf, um diese Eigenschaft abzurufen. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLBUTTON** beschreibt eine Schaltfläche ein Steuerelement, das bei geklickt haben, kann sich einen Benutzer einen Vorgang beginnen. In der Regel wird eine Schaltfläche auf die ein modales Dialogfeld angezeigt werden oder eine programmtechnische Aufgabe aufgerufen werden. Dienstanbieter können alles über ein Button-Steuerelement implementieren. Wenn die Schaltfläche zum Ausführen einer Aufgabe basierend auf den Werten der andere Steuerelemente, müssen diese Steuerelemente das Flag DT_SET_IMMEDIATE festgelegt haben. 
+Eine **DTBLBUTTON** -Struktur beschreibt ein Schaltflächen-Steuerelement, mit dem ein Benutzer beim Klicken einen Vorgang beginnen kann. Wenn Sie auf eine Schaltfläche klicken, wird in der Regel ein modales Dialogfeld angezeigt oder eine programmgesteuerte Aufgabe aufgerufen. Dienstanbieter können beliebige Elemente über ein Schaltflächen-Steuerelement implementieren. Wenn die Schaltfläche eine Aufgabe basierend auf den Werten anderer Steuerelemente ausführen soll, müssen diese Steuerelemente das DT_SET_IMMEDIATE-Flag festgelegt haben. 
   
-Der **UlbLpszLabel** -Member ist die Position im Speicher der Zeichenfolge, die auf der Schaltfläche angezeigt wird. Dienstanbieter können kaufmännischen und-Zeichen hinzufügen (&amp;) an, dass ein Windows-Accelerator die Bezeichnung der Schaltfläche. Drücken der Zugriffstaste hat die gleiche Auswirkung wie das Klicken auf die Schaltfläche. 
+Das **ulbLpszLabel** -Element ist die Position im Arbeitsspeicher der Zeichenfolge, die auf der Schaltfläche angezeigt wird. Dienstanbieter können ein kaufmännisches und-&amp;Zeichen () hinzufügen, um einen Windows-Beschleuniger in der Schaltflächenbeschriftung anzugeben. Das Drücken einer Tastenkombination hat dieselbe Wirkung wie das Klicken auf die Schaltfläche. 
   
-Der **UlPRControl** -Member beschreibt-Eigenschaft eines Objekts, das beim Öffnen mit der **IMAPIProp::OpenProperty** -Methode gibt einen Zeiger auf ein Control-Objekt zurück. Ein Control-Objekt, das die **IMAPIControl** -Schnittstelle unterstützt die Implementierung ist eine Möglichkeit zum Erweitern der MAPI-Featuregruppe und legen Sie den Vorgang oder eine Aufgabe, das auftritt, wenn auf die Schaltfläche geklickt wird. **IMAPIControl** unterstützt zwei Methoden zum Bearbeiten von Schaltflächen: [GetState](imapicontrol-getstate.md) zu deaktivieren oder Aktivieren der Schaltflächen und [Aktivieren](imapicontrol-activate.md) , auf eine Schaltfläche zu behandeln. 
+Das **ulPRControl** -Element beschreibt eine Objekteigenschaft, die beim Öffnen mit der **IMAPIProp:: OpenProperty** -Methode einen Zeiger auf ein Control-Objekt zurückgibt. Das Implementieren eines Control-Objekts, das die **IMAPIControl** -Schnittstelle unterstützt, stellt eine Möglichkeit dar, die MAPI-Featuregruppe zu erweitern und die Operation oder Aufgabe zu definieren, die beim Klicken auf die Schaltfläche auftritt. **IMAPIControl** stellt zwei Methoden zum Bearbeiten von Schaltflächen [](imapicontrol-getstate.md) bereit: GetState zum Deaktivieren oder Aktivieren von Schaltflächen und [aktivieren](imapicontrol-activate.md) zum Behandeln von Tastenklicks. 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

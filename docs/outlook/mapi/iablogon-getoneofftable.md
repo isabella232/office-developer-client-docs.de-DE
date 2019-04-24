@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7ac2a8d4-6890-4346-a6b6-34deca9dab50
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3732d8cbfaf9a6a10c62eae9e7a12b04de8a80ee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 326a78ed512ec82a9f16b1540aad60954ab2d864
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338409"
 ---
 # <a name="iablogongetoneofftable"></a>IABLogon::GetOneOffTable
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine Tabelle mit einmaligen Vorlagen zum Erstellen von Empfängern, die Empfängerliste von ausgehenden Nachrichten hinzugefügt werden soll.
+Gibt eine Tabelle mit einmaligen Vorlagen zum Erstellen von Empfängern zurück, die der Empfängerliste einer ausgehenden Nachricht hinzugefügt werden sollen.
   
 ```cpp
 HRESULT GetOneOffTable(
@@ -38,17 +38,17 @@ HRESULT GetOneOffTable(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ der in der Tabelle enthaltenen Zeichenfolgenspalten steuert. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ der Zeichenfolgenspalten in der Tabelle steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, werden die Zeichenfolgenspalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Zeichenfolgenspalten im ANSI-Format.
     
  _lppTable_
   
-> [out] Ein Zeiger auf einen Zeiger auf die einmaligen Tabelle.
+> Out Ein Zeiger auf einen Zeiger auf die einmalige Tabelle.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -56,19 +56,19 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder die Option MAPI_UNICODE festgelegt wurde und die Adressbuchanbieter unterstützt keine Unicode oder Parameter MAPI_UNICODE wurde nicht festgelegt und die Adressbuchanbieter unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und der Adressbuchanbieter unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und der Adressbuchanbieter unterstützt nur Unicode.
     
 MAPI_E_NO_SUPPORT 
   
-> Der Adressbuchanbieter nicht einmal-Vorlagen zur Verfügung.
+> Der Adressbuchanbieter liefert keine einmaligen Vorlagen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-Aufrufen die **GetOneOffTable** -Methode, um die verfügbare einmalige Vorlagen zum Erstellen von Empfängern tätigen. Die Empfängerliste von ausgehenden Nachrichten werden die neuen Empfänger hinzugefügt. Von adressbuchanbietern implementierte sollte Benachrichtigung auf ihre einmaligen Tabelle um MAPI Vorlage Änderungen informieren zu unterstützen. MAPI bleibt die einmalige Tabelle geöffnet, um dynamische Aktualisieren zu aktivieren. 
+MAPI Ruft die **GetOneOffTable** -Methode auf, um für die Erstellung von Empfängern einmalige Vorlagen zur Verfügung zu stellen. Die neuen Empfänger werden der Empfängerliste einer ausgehenden Nachricht hinzugefügt. Adressbuchanbieter sollten die Benachrichtigung über ihre einmalige Tabelle unterstützen, um MAPI über Vorlagenänderungen zu informieren. MAPI hält die einmalige Tabelle geöffnet, um dynamische Updates zu aktivieren. 
   
-Von adressbuchanbietern implementierte können auch eine einmalige Tabelle für jeden ihrer Container unterstützen. Anrufer Abrufen dieser einmaligen Tabelle, des Containers [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode aufrufen und die Eigenschaft **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) anfordern. Über diese Tabelle verfügbaren Vorlagen dienen zum Empfänger zum Container hinzuzufügen. Eine Erläuterung der Unterschiede zwischen den beiden Typen von einmaligen Tabellen finden Sie unter [Implementieren der einmaligen Tabellen](implementing-one-off-tables.md).
+Adressbuchanbieter können auch eine einmalige Tabelle für jeden ihrer Container unterstützen. Aufrufer rufen diese einmalige Tabelle ab, indem Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers aufrufen und die **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft anfordern. Die über diese Tabelle verfügbaren Vorlagen werden zum Hinzufügen von Empfängern zum Container verwendet. Eine Erläuterung der Unterschiede zwischen den beiden Arten von einmaligen Tabellen finden Sie unter [Implementieren von einmal Tabellen](implementing-one-off-tables.md).
   
-Eine Übersicht über die erforderlichen Spalten in einer Adressbuchanbieter einmaligen Tabelle finden Sie unter [Einmaligen Tabellen](one-off-tables.md).
+Eine Liste der erforderlichen Spalten in der einmaligen Tabelle eines Adressbuch Anbieters finden Sie unter [einmalige Tabellen](one-off-tables.md).
   
 ## <a name="see-also"></a>Siehe auch
 

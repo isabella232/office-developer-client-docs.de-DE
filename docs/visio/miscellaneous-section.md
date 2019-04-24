@@ -9,23 +9,23 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d2f21377-2954-d589-1329-cd23fe3fb4c6
 description: Enthält verschiedene Attribute von Shapes und Gruppen, darunter Auswahlhervorhebung und Sichtbarkeit.
-ms.openlocfilehash: 8a8138d95a56a79cc4eb0178d861d5d80073cb05
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 16ee384d137dfb4d8544c499519985c712fd56a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335286"
 ---
-# <a name="miscellaneous-section"></a>Miscellaneous Section
+# <a name="miscellaneous-section"></a>Abschnitt "Miscellaneous"
 
 Enthält verschiedene Attribute von Shapes und Gruppen, darunter Auswahlhervorhebung und Sichtbarkeit.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert vieler dieser Zellen in diesem Abschnitt im ShapeSheet-Fenster oder im Dialogfeld Verhalten auf der Registerkarte Verhalten (klicken Sie auf der Registerkarte Entwickler in der Gruppe Shape-Design auf Verhalten) im Zeichnungsfenster festlegen. Andere Gruppeneigenschaften legen Sie im Abschnitt Group Properties fest. 
+Sie können den Wert vieler Zellen in diesem Abschnitt im ShapeSheet-Fenster oder auf der Registerkarte **Verhalten** im Dialogfeld **Verhalten** festlegen (Klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten** ). im Zeichnungsfenster. Sie können andere Gruppeneigenschaften mithilfe von Zellen im Abschnitt Group Properties festlegen. 
   
-In Visio Version 5.0-Produkten enthalten in diesem Abschnitt die Zellen **ObjInterakt** und **ObjVerhalten** . Das Verhalten in der Zelle **ObjInterakt** ist nun den folgenden Zellen im Abschnitt Shape Layout zugeordnet: **ShapeFixedCode**, **ShapePermeableX**, **ShapePermeableY**und **ShapePermeablePlace**. Das Verhalten in der Zelle ObjVerhalten ist nun den Zellen **ConFixedCode** und **ShapeRouteStyle** zugeordnet. 
+In Visio Version 5,0 Products enthalten dieser Abschnitt **ObjInterakt** -und **objverhalten** -Zellen. Das Verhalten in der Zelle **ObjInterakt** wird nun den folgenden Zellen im Abschnitt Shape Layout zugeordnet: **Zelle ShapeFixedCode**, **Zelle ShapePermeableX**, **Zelle ShapePermeableY**und **Zelle ShapePermeablePlace**. Das Verhalten in der Zelle Objverhalten wird nun den Zellen **Zelle ConFixedCode** und **Zelle ShapeRouteStyle** zugeordnet. 
   
-In japanischen Produkten von Visio Version 5.0 enthielt dieser Abschnitt eine Zelle **VerticalText** . In Produkten von Visio Version 2000 und höher, ist der Wert dieser Zelle in der Zelle **TextDirection** im Abschnitt **Text Block Format** gespeichert. 
+In den japanischen Produkten der Visio-Version 5,0 war in diesem Abschnitt eine **VerticalText** -Zelle enthalten. In Visio Version 2000 Produkte und höher wird der Wert dieser Zelle in der Zelle textDirection im Abschnitt **Text Block Format** gespeichert. **** 
   
 

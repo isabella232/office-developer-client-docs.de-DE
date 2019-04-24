@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 8f5d34f0-4c4b-5265-83c1-5b86b73d464f
 description: Enthält die Initialen eines Dokumentbearbeiters.
-ms.openlocfilehash: 65f0082219c8d6adca55af86c027b2ec5642fb5d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ddca3697dfcf1f422efacbe395c18f1a6b8ac48c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335294"
 ---
-# <a name="initials-cell-reviewer-section"></a>Initials Cell (Reviewer Section)
+# <a name="initials-cell-reviewer-section"></a>Zelle "Initials" (Abschnitt "Reviewer")
 
 Enthält die Initialen eines Dokumentbearbeiters.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Standardwert sind die Initialen im Feld **Initialen** auf der Registerkarte **Allgemein** im Dialogfeld **Visio-Optionen** (klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Optionen**, und klicken Sie dann auf **Allgemein** ). 
+Dieser Wert ist standardmäßig auf die Initialen **** im Feld Initialen auf der Registerkarte **Allgemein** im Dialogfeld **Visio-Optionen** (Klicken Sie auf die registerKarte **Datei** , klicken Sie auf **Optionen**und dann auf **Allgemein** ). 
   
-Wenn Sie einen Bezug auf die Zelle Initials aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Initials aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Reviewer.Initials [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Prüfer. Initialen [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Bezug auf die Zelle Initials aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Initials aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionReviewer** <br/> |
-| Zeilenindex:  <br/> |**VisRowReviewer** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowReviewer** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visReviewerInitials** <br/> |
    
 

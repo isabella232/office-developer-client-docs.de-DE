@@ -8,48 +8,48 @@ f1_keywords:
 - Vis_DSS.chm82251405
 localization_priority: Normal
 ms.assetid: 1a8d6d48-7ae3-5483-28d2-5b1706088a53
-description: Rundet eine Zahl von 0 (null) auf die nächste Instanz von Vielfaches. Wenn Multiple nicht angegeben wurde, wird die Zahl von 0 auf die nächste ganze Zahl gerundet.
-ms.openlocfilehash: fa982b44ea4a73e7da614c49a52cd50efd612f20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Rundet eine Zahl von 0 (null) zur nächsten Instanz von Multiple ab. Wenn mehrere nicht angegeben ist, wird die Zahl von 0 auf die nächste ganze Zahl gerundet.
+ms.openlocfilehash: 449f17d1b68c116cccb2635723a3f6277d0ac2a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337226"
 ---
 # <a name="ceiling-function"></a>CEILING Function
 
-Rundet eine Zahl von 0 (null) auf die nächste Instanz von _Vielfaches_. Wenn _mehrere_ nicht angegeben ist, wird die Anzahl von 0 auf die nächste ganze Zahl gerundet. 
+Rundet eine Zahl von 0 (null) zur nächsten Instanz von _Multiple_ab. Wenn _mehrere_ nicht angegeben ist, wird die Zahl von 0 auf die nächste ganze Zahl gerundet. 
   
 ## <a name="syntax"></a>Syntax
 
-CEILING (** *Anzahl* **, ** *mehrere* **) 
+Obergrenze (* * *Number* * *, * * *Multiple* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die zu rundende Zahl.  <br/> |
-| _mehrere_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Das Vielfache, auf die gerundet werden soll.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die zu rundende Zahl.  <br/> |
+| _mehrere_ <br/> |Erforderlich  <br/> |**Number** <br/> |Das Vielfache, auf das gerundet werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
- _Anzahl_ und _Vielfaches_ müssen die gleichen Vorzeichen oder ein #NUM haben. Fehler wird zurückgegeben. Wenn _Zahl_ oder _mehrere_ auf einen Wert, der ein #VALUE konvertiert werden kann! Fehler wird zurückgegeben. Wenn _Zahl_ oder _mehrere_ 0 ist, ist das Ergebnis 0. 
+ _Zahl_ und _mehrere_ müssen die gleichen Zeichen oder ein #NUM! zurückgegeben. Wenn eine oder _mehrere_ _Zahlen_ nicht in einen Wert konvertiert werden können, wird ein #VALUE! zurückgegeben. Wenn eine _Zahl_ oder __ ein Vielfaches 0 ist, ist das Ergebnis 0. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-CEILING(3.7)
+OBERGRENZE (3.7)
   
 Gibt 4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-CEILING(-3.7)
+DECKE (-3,7)
   
 Gibt -4 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-CEILING (3.7, 0,25)
+OBERGRENZE (3.7, 0,25)
   
 Gibt 3,75 zurück.
   

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 08b730c4-5dd8-106e-ddf3-da2c942e2ef6
 description: Bestimmt den Anzeigeebenenbereich (den relativen Bereich der Gruppierung in Z-Reihenfolge) für das Shape.
-ms.openlocfilehash: 516446b2d401aaca614e24a2c5bb5003fafe8574
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4f7e3fcb2d28f8c4c0706502c66444c121ae6ee6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332536"
 ---
-# <a name="displaylevel-cell-shape-layout-section"></a>DisplayLevel Cell (Shape Layout Section)
+# <a name="displaylevel-cell-shape-layout-section"></a>Zelle "DisplayLevel" (Abschnitt "Shape Layout")
 
 Bestimmt den Anzeigeebenenbereich (den relativen Bereich der Gruppierung in Z-Reihenfolge) für das Shape.
   
@@ -28,15 +28,15 @@ Mit der Anzeigeebene werden Shapes in Gruppierungen oder Bereiche aufgeteilt. Al
   
 Der Bereich der Anzeigeebenen rangiert von -32.767 bis +32.767. Shapes mit der gleichen Anzeigeebene werden zu einem einzigen Bereich zusammengefasst, in dem sie ebenfalls gemäß der Z-Reihenfolge relativ zueinander in eine Rangfolge gesetzt werden.
   
-Sie können mithilfe der Befehle **In den Vordergrund**, **Eine Ebene nach hinten**, **in den Vordergrund**und **in den Hintergrund**der Z-Ordnung der Formen einen Streifen ändern. Diese Befehle eine Form aus der angegebenen Band verschieben, zeigt Microsoft Visio den reservierten Wert-32768 in Zelle DisplayLevel des Shapes, sofern die Zelle geschützt ist. In diesem Fall die Form nicht in einem anderen Band verschoben werden, und Visio zeigt die Warnung "Schutz und/oder Layer Formeigenschaften verhindern Ausführung dieses Befehls abgeschlossen". 
+Sie können die Z-Reihenfolge von Formen innerhalb eines Bands ändern, indem Sie die Befehle nach **vorn**, nach **hinten**, **nach vorn**und nach **hinten**senden verwenden. Wird ein Shape mit diesen Befehlen aus dem angestammten Bereich verschoben, zeigt Microsoft Visio den reservierten Wert -32768 in der Zelle "DisplayLevel" des Shapes an, sofern die Zelle nicht geschützt ist. In dem Fall kann das Shape nicht in einen anderen Bereich verschoben werden, und Visio gibt die Warnung "Aktiver Shape-Schutz oder Container- und/oder Layereigenschaften verhindern die vollständige Ausführung dieses Befehls" aus. 
   
-Wenn Sie eine Referenz auf die Zelle DisplayLevel nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
+Wenn Sie einen Verweis auf die Zelle Display Level aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |DisplayLevel  <br/> |
+|Zellenname:  <br/> |Display Level  <br/> |
    
-Wenn Sie eine Referenz auf die Zelle DisplayLevel aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Display Level aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

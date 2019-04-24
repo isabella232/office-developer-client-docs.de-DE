@@ -1,26 +1,26 @@
 ---
-title: UseGroupGradient Cell (Gradient Properties Section)
+title: Zelle "UseGroupGradient" (Abschnitt "Gradient Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f1dcf0ec-8b4a-4ee1-9208-b1c84e30d37b
-description: Bestimmt, ob die Form für einen Farbverlauf ausführt, wenn das Shape als boolescher Wert zusammen mit anderen Shapes gruppiert werden. Der Wert der Zelle UseGroupGradient betrifft nur die Füllung der Form.
-ms.openlocfilehash: ca11ad1c54097b4883bb5348583c6cf39127e4e5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt, ob die Form einen Farbverlauf annimmt, wenn das Shape zusammen mit anderen Formen als boolescher Wert gruppiert wird. Der Wert der Zelle UseGroupGradient wirkt sich nur auf die Formfüllung aus.
+ms.openlocfilehash: a69b48095aec93705c686a5401051f1d1e368d18
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337156"
 ---
-# <a name="usegroupgradient-cell-gradient-properties-section"></a>UseGroupGradient Cell (Gradient Properties Section)
+# <a name="usegroupgradient-cell-gradient-properties-section"></a>Zelle "UseGroupGradient" (Abschnitt "Gradient Properties")
 
-Bestimmt, ob die Form für einen Farbverlauf ausführt, wenn das Shape als boolescher Wert zusammen mit anderen Shapes gruppiert werden. Der Wert der Zelle **UseGroupGradient** betrifft nur die Füllung der Form. 
+Bestimmt, ob die Form einen Farbverlauf annimmt, wenn das Shape zusammen mit anderen Formen als boolescher Wert gruppiert wird. Der Wert der Zelle **UseGroupGradient** wirkt sich nur auf die Formfüllung aus. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle **UseGroupGradient** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle **UseGroupGradient** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
@@ -32,6 +32,6 @@ Wenn Sie einen Verweis auf die Zelle **UseGroupGradient** aus einem Programm nac
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowGradientProperties** <br/> |
-| Zellenindex:  <br/> |** VisUseGroupGradient ** <br/> |
+| Zellenindex:  <br/> |* * visUseGroupGradient * * <br/> |
    
 

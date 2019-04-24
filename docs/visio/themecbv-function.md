@@ -6,55 +6,55 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ef62f63f-b2ce-4d12-a294-93dbdc9a869d
-description: Gibt einen RGB-Wert oder eine ganze Zahl, die einen Index in der Farbpalette des Dokuments darstellt, in dem die Farbe (Anzahl) als Argument übergeben wurde durch den angegebenen Farbton oder eine Schattierung Wert in den Farbverlauf Einstellungen des aktiven Designs gespeichert geändert wurden.
-ms.openlocfilehash: 878da505a840234445d3e16d3b8a68e31eaf5fda
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt einen RGB-Wert oder eine ganze Zahl zurück, die einen Index in der Farbpalette des Dokuments darstellt, wobei die Farbe (Zahl), die als Argument übergeben wurde, durch den angegebenen Farbton oder Farbton geändert wurde, der in den Farbverlaufseinstellungen des aktiven Designs gespeichert ist.
+ms.openlocfilehash: 014dc04c5114e296cd2226f3cf04dfb729817578
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332263"
 ---
 # <a name="themecbv-function"></a>THEMECBV Function
 
-Gibt einen RGB-Wert oder eine ganze Zahl, die einen Index in der Farbpalette des Dokuments darstellt, in dem die Farbe (Anzahl) als Argument übergeben wurde durch den angegebenen Farbton oder eine Schattierung Wert in den Farbverlauf Einstellungen des aktiven Designs gespeichert geändert wurden. 
+Gibt einen RGB-Wert oder eine ganze Zahl zurück, die einen Index in der Farbpalette des Dokuments darstellt, wobei die Farbe (Zahl), die als Argument übergeben wurde, durch den angegebenen Farbton oder Farbton geändert wurde, der in den Farbverlaufseinstellungen des aktiven Designs gespeichert ist. 
   
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Visio 2013
  
   
 ## <a name="syntax"></a>Syntax
 
- **THEMECBV** ( _Farbe_, _Gradient_stop_number_)
+ **THEMECBV** ( _Farbe_, _gradient_stop_number_)
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Farbe_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Eine Zahl, die einen Index in der Farbpalette des Dokuments darstellt.  <br/> |
-| _gradient_stop_number_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Farbverlaufstopp (Farbton oder eine Schattierung) in den Farbverlauf Einstellungen des aktiven Designs auf die Farbe anwenden gespeichert.  <br/> |
+| _color_ <br/> |Erforderlich  <br/> |**Number** <br/> |Eine Zahl, die einen Index in der Farbpalette des Dokuments darstellt.  <br/> |
+| _gradient_stop_number_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Farbverlaufsstopp (Farbton oder Schattierung), der in den Farbverlaufseinstellungen des aktiven Designs gespeichert ist und auf die Farbe angewendet werden soll.  <br/> |
    
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
- **Nummer**
+ **Number**
   
 ## <a name="remarks"></a>Bemerkungen
 
 > [!NOTE]
-> Die THEMECBV-Funktion hat keine Auswirkung auf die Farbe als Argument übergeben wird, wenn die QuickStyle, die mit dem Shape zugewiesen ist keinen Farbverlauf verfügt. 
+> Die THEMECBV-Funktion bewirkt keine Farbe, die als Argument übergeben wird, wenn die QuickStyle, die dem Shape zugewiesen ist, keinen Farbverlauf aufweist. 
   
-Die Farbverlauf Einstellungen in einem Design sind eine Reihe von nummerierten Farbverlaufstopps, die ein "Aufhellen" (Farbton) oder "Abdunkeln" (Schatten) entsprechen. Diese Graustufen und Farbtöne gelten für eine Basis Farbe, um einen Farbverlauf Effekt zu erstellen.
+Die Farbverlaufseinstellungen in einem Design sind eine Reihe von nummerierten Farbverlaufs Unterbrechungen, die einer "Aufhellung" (Tönung) oder "Verdunkelung" (Farbton) entsprechen. Diese Schattierungen und Farbtöne werden auf eine Grundfarbe angewendet, um einen Farbverlauf zu erstellen.
   
-Die **THEMECBV** -Funktion übernimmt eine Farbe Eingabe und gibt die Farbe aus, nachdem es durch den Farbton oder die Schattierung des angegebenen Farbverlaufstopps geändert wurde. Die Farbtöne und Schattierungen stammen das Design-Definition, wenn die aktuelle Schnellformatvorlage für eine graduelle Füllung enthält. Wenn die aktive Schnellformatvorlage keine angegeben wird, dass eine graduelle Füllung oder auf das Shape kein Design festgelegt ist, gibt diese Formel einfach die Farbe, die für das erste Argument übergeben wurde. 
+Die **THEMECBV** -Funktion verwendet eine Farb Eingabe und gibt die Farbe aus, nachdem Sie durch den Farbton oder die Schattierung des angegebenen Farbverlaufsstopps geändert wurde. Die Farbtöne und Schattierungen stammen aus der Definition des Designs, wenn die aktuelle Schnellformatvorlage eine graduelle Füllung enthält. Wenn die aktive Schnellformatvorlage keine Farbverlaufsfüllung angibt oder die Form auf kein Design festgelegt ist, gibt diese Formel einfach die Farbe zurück, die für das erste Argument übergeben wurde. 
   
 ## <a name="example"></a>Beispiel
 
  `THEMECBV(FillForegnd, 5)`
   
-Gibt die Farbe erstellt wird, den Farbton oder die Schattierung in der fünften Farbverlaufstopp des Farbverlaufs auf die in die Zelle **FillForegnd** angegebene Farbe angewendet. 
+Gibt die Farbe zurück, die durch Anwenden des Farbtons oder der Schattierung im fünften Farbverlaufsstopp des Farbverlaufs mit der in der Zelle **Zelle FillForegnd** angegebenen Farbe erstellt wird. 
   
  `THEMECBV(RGB(255,0,0), 2)`
   
-Gibt eine Schattierung oder einen Farbton durch Anwenden des zweiten Unterbrechungspunkts auf einen Basiskalender Farbe Rot erstellten Rot fest.
+Gibt eine Schattierung oder einen Farbton rot zurück, indem der zweite Farbverlaufsstopp auf eine rote Basisfarbe angewendet wird.
   
 

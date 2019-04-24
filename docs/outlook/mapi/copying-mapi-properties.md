@@ -1,5 +1,5 @@
 ---
-title: Kopieren der MAPI-Eigenschaften
+title: Kopieren von MAPI-Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,32 +8,32 @@ api_type:
 - COM
 ms.assetid: a52f4bcd-6e17-4623-a469-53be1f2758b1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 556ea9faedf0d9a02b0cff1bb2f1750289cc4d1e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ae8e553cf2e19ae1ba06ca09aad84eae9f7d1238
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333075"
 ---
-# <a name="copying-mapi-properties"></a>Kopieren der MAPI-Eigenschaften
+# <a name="copying-mapi-properties"></a>Kopieren von MAPI-Eigenschaften
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients und -Dienstanbieter können eine oder mehrere der Eigenschaften eines Objekts mit dem folgenden **IMAPIProp** Methoden und API-Funktionen kopieren: 
+Clients und Dienstanbieter können eine oder mehrere Eigenschaften eines Objekts mit den folgenden **IMAPIProp** -Methoden und API-Funktionen kopieren: 
   
-- Die [IMAPIProp::CopyTo](imapiprop-copyto.md) -Methode kopiert alle Eigenschaften eines Objekts in ein anderes Objekt, optional Ausschließen von ausgewählten Eigenschaften. **CopyTo** dient zum Kopieren oder verschieben jeden Objekttyp. 
+- Die [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Methode kopiert alle Eigenschaften eines Objekts in ein anderes Objekt, wobei optional ausgewählte Eigenschaften ausgeschlossen werden. **CopyTo** wird zum Kopieren oder bewegen eines beliebigen Objekttyps verwendet. 
     
-- Die [IMAPIProp::CopyProps](imapiprop-copyprops.md) -Methode kopiert die ausgewählte Eigenschaften eines Objekts. **CopyProps** wird hauptsächlich mit Nachrichten verwendet. Wenn ein Client eine weitergeleitete Kopie einer Nachricht oder eine Antwort, die **CopyProps** Handles kopieren die entsprechenden Eigenschaften aus der ursprünglichen Nachricht erstellt. 
+- Die [IMAPIProp:: CopyProps](imapiprop-copyprops.md) -Methode kopiert die ausgewählten Eigenschaften eines Objekts. **CopyProps** wird hauptsächlich mit Nachrichten verwendet. Wenn ein Client eine weitergeleitete Kopie einer Nachricht oder einer Antwort erstellt, verarbeitet **CopyProps** das Kopieren der entsprechenden Eigenschaften aus der ursprünglichen Nachricht. 
     
-- Die [PropCopyMore](propcopymore.md) -Funktion kopiert einen einzelnen Eigenschaftswert von einem Speicherort in einen anderen. Verwenden Sie **PropCopyMore** mit Bedacht vor. Es ist möglich – Wenn Sie einen Wert zu einem Zeitpunkt kopieren – reservieren viele kleine Blöcke mit Speicher und Arbeitsspeicher zum fragmentieren verursachen. 
+- Die [PropCopyMore](propcopymore.md) -Funktion kopiert einen einzelnen Eigenschaftswert von einem Speicherort an einen anderen. Verwenden Sie **PropCopyMore** mit Vorsicht. Es ist möglich, wenn Sie einen Wert gleichzeitig kopieren, um viele kleine Speicherblöcke zuzuweisen und Speicher Fragmente zu verursachen. 
     
-- Die Funktion [ScCopyProps](sccopyprops.md) kopiert Eigenschaftswerte in einer Sammeloperation. **ScCopyProps** können Eigenschaftswerte, die erstellt wurden aus getrennten Blöcke des Arbeitsspeichers kopieren. Es gibt ein neue Eigenschaftenarray zurück. 
+- Die [ScCopyProps](sccopyprops.md) -Funktion kopiert Eigenschaftswerte in Massen. **ScCopyProps** können Eigenschaftswerte kopieren, die aus unzusammenhängenden Speicherblöcken erstellt wurden. Es wird ein neues Eigenschaftenarray zurückgegeben. 
     
-- Ist das Array-Eigenschaft zurückgegebene **ScCopyProps** , auf dem Datenträger gespeichert werden sollen, verwenden Sie die [ScRelocProps](screlocprops.md) -Funktion, um den Zeiger anzupassen. **ScRelocProps** sollte zweimal aufgerufen werden. einmal, um die Adressen vor dem Schreiben des Datenvorgangs anpassen und dann erneut bei der Lesevorgang. Die Funktion **ScRelocProps** wird vorausgesetzt, dass das Array-Eigenschaft Wert in einer einzelnen Verteilung ursprünglich belegt wurde. 
+- Wenn das von **ScCopyProps** zurückgegebene Eigenschaftenarray auf dem Datenträger gespeichert werden soll, verwenden Sie die [ScRelocProps](screlocprops.md) -Funktion, um die Zeiger anzupassen. **ScRelocProps** sollte zweimal aufgerufen werden; einmal, um die Adressen vor dem Schreiben des Datenvorgangs und dann erneut während des Lesevorgangs anzupassen. Die **ScRelocProps** -Funktion geht davon aus, dass das Eigenschafts Wertarray ursprünglich in einer einzelnen Zuordnung zugeordnet wurde. 
     
-Die API-Funktionen in der vorherigen Liste Kopie Eigenschaften im Arbeitsspeicher und nicht von einem Objekt in ein anderes Objekt beschrieben. Diese Funktionen werden derzeit unterstützt, jedoch möglicherweise nicht in einer zukünftigen Version unterstützt.
+Die in der obigen Liste beschriebenen API-Funktionen kopieren die Eigenschaften im Arbeitsspeicher und nicht von einem Objekt zu einem anderen Objekt. Diese Funktionen werden derzeit unterstützt, werden jedoch in zukünftigen Versionen möglicherweise nicht unterstützt.
   
 ## <a name="see-also"></a>Siehe auch
 

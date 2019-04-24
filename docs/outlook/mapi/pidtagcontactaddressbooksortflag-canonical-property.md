@@ -1,5 +1,5 @@
 ---
-title: PidTagContactAddressBookSortFlag (kanonische Eigenschaft)
+title: Kanonische Pidtagcontactaddressbooksortflag (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: dcbd12b4-4b50-4be6-a201-45e5d4611ce0
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1e25c265f3136fa7caf407e4b2bf160b67ba0111
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: bfdb98d5a5b768fad162d60a79cb1f541dc32866
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334370"
 ---
-# <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>PidTagContactAddressBookSortFlag (kanonische Eigenschaft)
+# <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>Kanonische Pidtagcontactaddressbooksortflag (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Kennung, die TRUE ist, wenn Kontakte von Datei unter und FALSE sortiert werden sollen, wenn sie nach dem Anzeigenamen sortiert werden sollen. 
+Enthält ein Flag, das TRUE ist, wenn Kontakte nach Datei unter und FALSE sortiert werden sollen, wenn Sie nach Anzeige Name sortiert werden sollen. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_SORT_FLAG  <br/> |
 |Kennung:  <br/> |0x6602  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
+|Bereich:  <br/> |Kontakt Adressbuch  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Dies ist eine Eigenschaft für einen Kontakt Adressbuch Profil.
+Dies ist eine Eigenschaft in einem Profil Abschnitt des Kontakt Adressbuchs.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

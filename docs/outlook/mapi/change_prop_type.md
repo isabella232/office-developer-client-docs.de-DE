@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95513b5a-fd3b-46f2-a6c0-094500ae4ca7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3d9db53dd752367570fc10aaabe3143b3b3ea917
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3ee1b84e36ef014fab87ca910115675c905f6a09
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332641"
 ---
 # <a name="changeproptype"></a>CHANGE_PROP_TYPE
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktualisiert den Eigenschaftentyp eines Eigenschaft-Tags mit einem angegebenen Wert. Der Bezeichner für die bleibt unverändert. 
+Aktualisiert den Eigenschaftentyp eines Property-Tags auf einen angegebenen Wert. Der Eigenschaftenbezeichner ist unverändert. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 CHANGE_PROP_TYPE (ulPropTag, ulPropType)
@@ -40,7 +40,7 @@ CHANGE_PROP_TYPE (ulPropTag, ulPropType)
 
  _ulPropTag_
   
-> Die Eigenschaftentag geändert werden soll.
+> Das zu ändernde Property-Tag.
     
  _ulPropType_
   

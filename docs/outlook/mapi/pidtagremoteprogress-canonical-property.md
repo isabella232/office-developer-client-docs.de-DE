@@ -1,5 +1,5 @@
 ---
-title: PidTagRemoteProgress (kanonische Eigenschaft)
+title: Kanonische Pidtagremoteprogress (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01cae79e-5b56-4cd4-83a6-f0956ff539fb
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e1f57fd95ff38ef102cd74b0035dbb6b553259c9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a5a9d0796bc92514ae6d990b7328364b85bc55cd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335434"
 ---
-# <a name="pidtagremoteprogress-canonical-property"></a>PidTagRemoteProgress (kanonische Eigenschaft)
+# <a name="pidtagremoteprogress-canonical-property"></a>Kanonische Pidtagremoteprogress (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält eine Zahl, die den Status einer remote Übertragungstyp angibt.
+Diese Eigenschaft enthält eine Zahl, die den Status einer Remoteübertragung angibt.
   
 |||
 |:-----|:-----|
@@ -34,33 +34,33 @@ Diese Eigenschaft enthält eine Zahl, die den Status einer remote Übertragungst
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie keine Übertragung ausgeführt wird, sollten diese Eigenschaft auf 1 festgelegt. Wenn eine Übertragung ausgeführt wird, sollte es auf einen anderen Wert zwischen 0 und 100, der angibt, die Übertragung Prozent der Fertigstellung festgelegt werden.
+Wenn keine Übertragung ausgeführt wird, sollte diese Eigenschaft auf 1 festgelegt werden. Wenn eine Übertragung ausgeführt wird, sollte Sie auf einen Wert zwischen 0 und 100 festgelegt werden, der den Prozentsatz der Fertigstellung des Transfers angibt.
   
-Der numerische Statuscode zugeordnete Text wird in der Eigenschaft **PR_REMOTE_PROGRESS_TEXT** ([PidTagRemoteProgressText](pidtagremoteprogresstext-canonical-property.md)) angezeigt.
+Der mit dem numerischen Statuscode verknüpfte Text wird in der **PR_REMOTE_PROGRESS_TEXT** ([pidtagremoteprogresstext (](pidtagremoteprogresstext-canonical-property.md))-Eigenschaft angezeigt.
   
-Die folgenden Kennzeichen können für diese Eigenschaft festgelegt werden:
+Für diese Eigenschaft können die folgenden Flags festgelegt werden:
   
 MSGSTATUS_REMOTE_DELETE
   
-> Übertragung der Nachricht wird gelöscht.
+> Die Nachrichtenübertragung wird gelöscht.
     
 MSGSTATUS_REMOTE_DOWNLOAD
   
-> Die Nachrichtenübermittlung wird gerade durchgeführt.
+> Die Nachrichtenübertragung wird ausgeführt.
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,5 +72,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

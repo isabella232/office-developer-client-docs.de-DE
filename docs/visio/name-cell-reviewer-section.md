@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: be39cd0b-56bf-a070-f5d8-c9a440d81ee2
 description: Enthält den Namen des Bearbeiters eines Dokuments.
-ms.openlocfilehash: 6bc1629c51fc4dcb3fe7e2d6576e8f1f096144ae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 02f353ab8f2d39cc075211bb13157b93081e9d8f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335168"
 ---
-# <a name="name-cell-reviewer-section"></a>Name Cell (Reviewer Section)
+# <a name="name-cell-reviewer-section"></a>Zelle "Name" (Abschnitt "Reviewer")
 
 Enthält den Namen des Bearbeiters eines Dokuments.
   
 ## <a name="remarks"></a>Bemerkungen
 
- Dieser Wert entspricht standardmäßig der Name im Feld **Benutzername** auf der Registerkarte **Allgemein** im Dialogfeld **Visio-Optionen** (klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Optionen**, und klicken Sie dann auf **Allgemein**). 
+ Dieser Wert ist standardmäßig der Name im Feld **Benutzername** auf der Registerkarte **Allgemein** des Dialogfelds **Visio-Optionen** (Klicken Sie auf die registerKarte **Datei** , klicken Sie auf **Optionen**und dann auf **Allgemein**). 
   
-Zum Abrufen eines Verweises auf die Zelle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Name aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Reviewer.Name [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Reviewer.Name [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Bezug auf die Zelle Name aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Name aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionReviewer** <br/> |
-| Zeilenindex:  <br/> |**VisRowReviewer** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowReviewer** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visReviewerName** <br/> |
    
 

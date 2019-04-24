@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a0beb6eb-7978-c64e-dba1-89f0caf2090e
-description: 'Zuletzt geändert: 03 Juli 2012'
-ms.openlocfilehash: a40d4e62a930219a738c7b431f3d2192007c3d9d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 03 Juli, 2012'
+ms.openlocfilehash: 864c2d2dfd17c285b0d8a401d59ce5b7d0463864
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332186"
 ---
 # <a name="iostxsynchdrend"></a>IOSTX::SyncHdrEnd
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Synchronisierung für ein Nachrichtenkopf endet.
+Beendet die Synchronisierung für einen Nachrichtenkopf.
   
 ```cpp
 HRESULT SyncHdrEnd( 
@@ -35,15 +35,15 @@ HRESULT SyncHdrEnd(
 
 ## <a name="parameters"></a>Parameter
 
- _pprog_
+ _pProg_
   
-> [in] **[IMAPIProgress](imapiprogressiunknown.md)** -Schnittstelle für die Synchronisierung von verschoben oder kopiert Nachrichten. Finden Sie unter mapidefs.h für die Definition des **LPMAPIPROGRESS**Typs. 
+> in **[IMAPIProgress](imapiprogressiunknown.md)** -Schnittstelle für die Synchronisierung von verschobenen oder kopierten Nachrichten. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMAPIPROGRESS**. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Gibt ein der lokale Speicher nach **[IOSTX::SyncBeg](iostx-syncbeg.md)** den [Status der Nachricht Kopfzeilen herunterladen](download-message-header-state.md). Der Client lädt eine vollständige e-Mail-Element (als *PmsgFull* in **[HDRSYNC](hdrsync.md)** ) herunter. Wenn dies erfolgreich ist, wird der Client *UlFlags* auch in **HDRSYNC** als **HSF_OK**. Bei **IOSTX::SyncHdrEnd**Outlook überprüft das Ergebnis in **HDRSYNC** und *Pprog* und die Informationen in **HDRSYNC** zum Aktualisieren der lokalen Nachrichtenkopf verwendet. 
+Bei **[IOSTX:: SyncBeg](iostx-syncbeg.md)** gibt der lokale Speicher den [Status des Download Nachrichtenkopfs](download-message-header-state.md)ein. Der Client lädt ein vollständiges Nachrichtenelement (als *pmsgFull* in **[HDRSYNC](hdrsync.md)** ) herunter. Wenn dies erfolgreich ist, legt der Client auch *ulFlags* in **HDRSYNC** als **HSF_OK**fest. Bei **IOSTX:: SyncHdrEnd**überprüft Outlook das Ergebnis in **HDRSYNC** und verwendet *pProg* und die Informationen in **HDRSYNC** , um den lokalen Nachrichtenkopf zu aktualisieren. 
   
-Auf den Status, in dem vor den vorherigen **[IOSTX::SyncHdrBeg](iostx-synchdrbeg.md)** gibt der lokale Speicher zurück. 
+Der lokale Speicher wird in den Zustand zurückgegeben, in dem er vor dem vorhergehenden **[IOSTX:: SyncHdrBeg](iostx-synchdrbeg.md)**. 
   
 ## <a name="see-also"></a>Siehe auch
 

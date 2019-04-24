@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: a0a17309-fc59-4822-be9b-b6f623b68bb1
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f358467d72f2a9f395762f529244041a5d9d8d6a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 877bebf0a156c99907505d815ca8d36a4b398678
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334937"
 ---
 # <a name="closeimsgsession"></a>CloseIMsgSession
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Schließt eine Sofortnachrichtensitzung und alle Nachrichten, die in dieser Sitzung erstellt. 
+Schließt eine nachrichtensitzung und alle innerhalb dieser Sitzung erstellten Nachrichten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage.h  <br/> |
+|Headerdatei  <br/> |IMessage. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 VOID CloseIMsgSession(
@@ -43,16 +43,16 @@ VOID CloseIMsgSession(
 
  _lpMsgSess_
   
-> [in] Zeiger auf das Objekt "Message" Sitzung mithilfe der Funktion [OpenIMsgSession](openimsgsession.md) am Anfang der Nachricht Sitzung abgerufen. 
+> in Zeiger auf das Nachrichten Sitzungsobjekt, das mit der [OpenIMsgSession](openimsgsession.md) -Funktion zu Beginn der nachrichtensitzung abgerufen wurde. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Sofortnachrichtensitzung wird von Clientanwendungen und Dienstanbieter, die für den Umgang mit mehrere verwandte MAPI- **IMessage** -Objekte auf der Basis zugrunde liegenden OLE **IStorage** -Objekte werden soll. Der Client oder Anbieter verwendet die Funktionen [OpenIMsgSession](openimsgsession.md) und **CloseIMsgSession** um die Erstellung solcher Nachrichten innerhalb einer Sofortnachrichtensitzung zu umschließen. Sobald die Nachricht Sitzung geöffnet ist, übergibt der Client oder der Anbieter einen Zeiger auf es in einem Aufruf von [OpenIMsgOnIStg](openimsgonistg.md) zum Erstellen einer neuen **IMessage**- auf - **IStorage** -Objekt. 
+Eine nachrichtensitzung wird von Clientanwendungen und Dienstanbietern verwendet, die mit mehreren verwandten MAPI- **IMessage** -Objekten umgehen möchten, die auf zugrunde liegenden OLE- **IStorage** -Objekten basieren. Der Client oder Anbieter verwendet die [OpenIMsgSession](openimsgsession.md) -und **CloseIMsgSession** -Funktionen, um die Erstellung solcher Nachrichten innerhalb einer nachrichtensitzung umzubrechen. Nach dem Öffnen der nachrichtensitzung übergibt der Client oder Anbieter einen Zeiger an diesen in einem Aufruf an [OpenIMsgOnIStg](openimsgonistg.md) , um ein neues **IMessage**-on- **IStorage** -Objekt zu erstellen. 
   
-Eine Sofortnachrichtensitzung werden von nachverfolgt alle **IMessage**- auf - **IStorage** -Objekte, die während der Dauer der Sitzung, zusätzlich zu aller Anlagen und andere Eigenschaften der Nachrichten geöffnet. Wenn ein Client oder Anbieter **CloseIMsgSession**aufruft, wird dieser Objekte geschlossen. **CloseIMsgSession** aufrufen, ist die einzige Möglichkeit **IMessage**- auf - **IStorage** -Objekte zu schließen. 
+Eine nachrichtensitzung verfolgt alle **IMessage**-on- **IStorage** -Objekte, die während der Dauer der Sitzung geöffnet werden, zusätzlich zu allen Anlagen und anderen Eigenschaften der Nachrichten. Wenn ein Client oder Anbieter **CloseIMsgSession**aufruft, werden alle diese Objekte geschlossen. Das Aufrufen von **CloseIMsgSession** ist die einzige Möglichkeit zum Beenden von **IMessage**-on- **IStorage** -Objekten. 
   
 

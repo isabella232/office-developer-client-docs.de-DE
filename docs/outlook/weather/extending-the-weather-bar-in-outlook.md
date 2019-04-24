@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 3b355b98-dd7d-4f16-8257-367e5dd61b34
 description: Hier erhalten Sie Informationen zum Integrieren eines Wetterwebdiensts eines Drittanbieters in die Wetterleiste in Outlook 2013, um Wetterbedingungen für einen vom Benutzer ausgewählten Ort bereitzustellen.
 ms.openlocfilehash: 0423e149306bf7562dd525f1b7460a63cbace372
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336573"
 ---
 # <a name="extending-the-weather-bar-in-outlook"></a>Erweitern der Wetterleiste in Outlook
 
@@ -80,7 +80,7 @@ In der folgenden Tabelle wird der **WeatherServiceUrl**-Schlüssel beschrieben.
   
 |||
 |:-----|:-----|
-|**Schlüssel** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**Wertname** <br/> |**WeatherServiceUrl** <br/> |
 |**Werttyp** <br/> |REG_SZ  <br/> |
 |**Standardwert** <br/> |EMPTY_STRING  <br/> |
@@ -99,7 +99,7 @@ Beachten Sie, dass ein Administrator mithilfe der Gruppenrichtlinie die Wetterle
   
 |||
 |:-----|:-----|
-|**Schlüssel** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**Wertname** <br/> |**DisableWeather** <br/> |
 |**Werttyp** <br/> |REG_DWORD  <br/> |
 |**Standardwert** <br/> |0  <br/> |

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: b465d015-9b62-4986-b0df-118121f60602
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 371d0305f8f00e66704bae03f93857c7275b6a10
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: bc511ea4b3ec4eea9e38f744bcb8f277108085cc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336897"
 ---
 # <a name="flatentrylist"></a>FLATENTRYLIST
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Array von [FLATENTRY](flatentry.md) -Strukturen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
 |Verwandte Makros:  <br/> |[CbFLATENTRYLIST](cbflatentrylist.md), [CbNewFLATENTRYLIST](cbnewflatentrylist.md) <br/> |
    
 ```cpp
@@ -42,25 +42,25 @@ typedef struct
 
 ## <a name="members"></a>Elemente
 
-**cEntries**
+**Zentriert**
   
-> Anzahl der **FLATENTRY** Strukturen in das Array von **AbEntries** -Elements beschrieben. 
+> Die Anzahl der **FLATENTRY** -Strukturen in dem vom **abEntries** -Element beschriebenen Array. 
     
 **cbEntries**
   
-> Die Anzahl von Bytes im Array von **AbEntries**beschrieben. 
+> Die Anzahl der Bytes im von **abEntries**beschriebenen Array. 
     
 **abEntries**
   
-> Byte-Array, das ein oder mehrere **FLATENTRY** Strukturen enthält angeordnete Ende zu Ende. 
+> Bytearray, das eine oder mehrere **FLATENTRY** -Strukturen enthält, die bis zum Ende angeordnet sind. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Im Array **AbEntries** wird jede **FLATENTRY** Struktur auf einer vertrauten ausgerichtete Grenze ausgerichtet. Zusätzliche Bytes sind als Abstand, stellen Sie sicher, dass natürlichen Ausrichtung alle zweier **FLATENTRY** Strukturen enthalten. Die erste **FLATENTRY** Struktur im Array ist immer ordnungsgemäß ausgerichtet werden, da der Versatz des Elements **AbEntries** 8 ist. Berechnen Sie den Offset der nächsten Struktur, verwenden Sie die Größe des ersten Eintrags aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das Makro [CbFLATENTRY](cbflatentry.md) , um die Größe einer **FLATENTRY** -Struktur zu berechnen. 
+Im **abEntries** -Array wird jede **FLATENTRY** -Struktur an einer natürlich ausgerichteten Grenze ausgerichtet. Zusätzliche Bytes sind als Padding enthalten, um eine natürliche Ausrichtung zwischen zwei **FLATENTRY** -Strukturen sicherzustellen. Die erste **FLATENTRY** -Struktur im Array wird immer korrekt ausgerichtet, da der Offset des **abEntries** -Elements 8 ist. Um den Offset der nächsten Struktur zu berechnen, verwenden Sie die Größe des ersten Eintrags, aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das [CbFLATENTRY](cbflatentry.md) -Makro, um die Größe einer **FLATENTRY** -Struktur zu berechnen. 
   
-Die zweite **FLATENTRY** -Struktur beginnt mit einem Offset, der den Offset des ersten Eintrags plus die Länge des ersten Eintrags gerundet auf die nächsten vier Bytes besteht. Die Länge des ersten Eintrags beträgt die Länge der **Cb** Mitglied plus die Länge des **AbEntry** Mitglied. 
+Beispielsweise beginnt die zweite **FLATENTRY** -Struktur mit einem Offset, der aus dem Offset des ersten Eintrags und der Länge des ersten Eintrags besteht, gerundet auf die nächsten vier Bytes. Die Länge des ersten Eintrags entspricht der Länge des **CB** -Elements sowie der Länge des **abEntry** -Elements. 
   
-Im folgenden Codebeispiel gibt an, wie Offsets in einer **FLATENTRYLIST** -Struktur zu berechnen. Wird davon ausgegangen Sie, dass diese _LpFlatEntry_ einen Zeiger auf die erste Struktur in der Liste ist. 
+Das folgende Codebeispiel gibt an, wie Offsets in einer **FLATENTRYLIST** -Struktur berechnet werden. Gehen Sie davon aus, dass _lpFlatEntry_ ein Zeiger auf die erste Struktur in der Liste ist. 
   
 ```cpp
 (offsetof(lpFlatEntry->ab) // for example, 4
@@ -71,6 +71,6 @@ Im folgenden Codebeispiel gibt an, wie Offsets in einer **FLATENTRYLIST** -Struk
 ## <a name="see-also"></a>Siehe auch
 
 - [FLATENTRY](flatentry.md)
-- [PidTagReplyRecipientEntries (kanonische Eigenschaft)](pidtagreplyrecipiententries-canonical-property.md)
+- [Kanonische Pidtagreplyrecipiententries (-Eigenschaft](pidtagreplyrecipiententries-canonical-property.md)
 - [MAPI-Strukturen](mapi-structures.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 66c83041-ee83-41d5-b9dc-a4dc4c670f82
-description: Entfernt die Person, die durch den Benutzer-ID-Parameter als einen Freund im sozialen Netzwerk identifiziert.
-ms.openlocfilehash: 8b9a1e4f903e4bc805481b8679481103ea1ec82c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Entfernt die Person, die durch den Parameter userID als Freund im sozialen Netzwerk identifiziert wird.
+ms.openlocfilehash: c276a9e5af18f7e4a3afbaa66d366d55de460a58
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336778"
 ---
 # <a name="isocialsessionunfollowperson"></a>ISocialSession::UnFollowPerson
 
-Entfernt die Person, die durch den _Benutzer-ID_ -Parameter als einen Freund im sozialen Netzwerk identifiziert. 
+Entfernt die Person, die durch den Parameter _UserID_ als Freund im sozialen Netzwerk identifiziert wird. 
   
 ```cpp
 HRESULT _stdcall UnFollowPerson([in] BSTR userID);
@@ -25,15 +25,15 @@ HRESULT _stdcall UnFollowPerson([in] BSTR userID);
 
 ## <a name="parameters"></a>Parameter
 
-_Benutzer-ID_
+_userID_
   
-> [in] Eine Zeichenfolge, die eine Benutzer-ID für soziale Netzwerke für eine Person enthält.
+> in Eine Zeichenfolge, die eine soziale Netzwerk-Benutzer-ID für eine Person enthält.
     
 ## <a name="remarks"></a>Bemerkungen
 
-_UserID_ -Parameter muss eine gültige Benutzer-ID für die Person im sozialen Netzwerk. 
+Der Parameter " _UserID_ " muss eine gültige Benutzer-ID für die Person im sozialen Netzwerk sein. 
   
-Wenn der Anbieter Outlook Social Connector (OSC) **DoNotFollowPerson** als **true** in den XML-Code für **Funktionen**eingerichtet hat, muss der Anbieter den OSC_E_NOT_FOUND Fehler im Fall zurück, dass der Benutzer, dem Übergeben von ID in ein Benutzer im Netzwerk nicht übereinstimmt. Wenn der Anbieter **DoNotFollowPerson** als **false** in **Funktionen**festgelegt ist, sollte der Anbieter den OSC_E_FAIL-Fehler zurückgegeben. Informationen zu Fehlercodes finden Sie unter [Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md).
+Wenn der Outlook Social Connector-Anbieter (OSC) **doNotFollowPerson** als **true** im XML for **Capabilities**festgelegt hat, muss der Anbieter den OSC_E_NOT_FOUND-Fehler zurückgeben, falls die Benutzer-ID, die übergeben wird, keinem Benutzer im Netzwerk entspricht. Wenn der Anbieter **doNotFollowPerson** als **false** in- **Funktionen**festgelegt hat, sollte der Anbieter den OSC_E_FAIL-Fehler zurückgeben. Informationen zu Fehlercodes finden Sie unter [Outlook Social Connector-Anbieter – Fehlercodes](outlook-social-connector-provider-error-codes.md).
   
 ## <a name="see-also"></a>Siehe auch
 

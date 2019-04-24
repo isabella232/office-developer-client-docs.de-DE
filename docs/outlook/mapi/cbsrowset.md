@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: d29e1f8e-bde8-4a6e-aee8-188cee94fe1a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bbc652d03ef9046db08d9a56459a595073c5505b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: da544e65e7d54c18211ec9bb79846dade25ae9a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334342"
 ---
 # <a name="cbsrowset"></a>CbSRowSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes in einer vorhandenen [SRowSet](srowset.md) Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SRowSet](srowset.md) -Struktur. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 CbSRowSet (_lprowset)
@@ -40,7 +40,7 @@ CbSRowSet (_lprowset)
 
  __lprowset_
   
-> Zeiger auf die vorhandenen **SRowSet** Struktur. 
+> Zeiger auf die vorhandene **SRowSet** -Struktur. 
     
 ## <a name="see-also"></a>Siehe auch
 

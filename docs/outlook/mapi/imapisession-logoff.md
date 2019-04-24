@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93e38f6c-4b67-4f2d-bc94-631efec86852
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 317c3702415ddf30038ccd0d40cdf0f19abc61f8
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338108"
 ---
 # <a name="imapisessionlogoff"></a>IMAPISession::Logoff
 
@@ -25,7 +25,7 @@ ms.locfileid: "25399648"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Sitzung beendet.
+Beendet eine MAPI-Sitzung.
   
 ```cpp
 HRESULT Logoff(
@@ -39,19 +39,19 @@ HRESULT Logoff(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für alle Dialogfelder oder Windows, angezeigt werden soll. Dieser Parameter wird ignoriert, wenn das Flag MAPI_LOGOFF_UI nicht festgelegt ist.
+> in Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die angezeigt werden sollen. Dieser Parameter wird ignoriert, wenn das MAPI_LOGOFF_UI-Flag nicht festgelegt ist.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Vorgang zum Abmelden steuern. Die folgenden Kennzeichen können festgelegt werden:
+> in Eine Bitmaske von Flags, die den Abmeldevorgang steuern. Die folgenden Flags können festgelegt werden:
     
 MAPI_LOGOFF_SHARED 
   
-> Wenn dieser Sitzung freigegeben ist, sollte die Abmeldung alle Clients, die mithilfe der freigegebenen Sitzung angemeldeten benachrichtigt werden. Die Clients sollten melden Sie sich ab. Jeder Client, der die freigegebene Sitzung verwendet wird, kann dieses Kennzeichen festgelegt. MAPI_LOGOFF_SHARED wird ignoriert, wenn die aktuelle Sitzung nicht freigegeben ist.
+> Wenn diese Sitzung freigegeben ist, sollten alle Clients, die mit der freigegebenen Sitzung angemeldet sind, über die Abmeldung benachrichtigt werden. Die Clients sollten sich abmelden. Ein beliebiger Client, der die freigegebene Sitzung verwendet, kann dieses Flag festlegen. MAPI_LOGOFF_SHARED wird ignoriert, wenn die aktuelle Sitzung nicht freigegeben ist.
     
 MAPI_LOGOFF_UI 
   
-> **Abmelden** können während des Vorgangs ein Dialogfeld anzeigen möglicherweise der Benutzer zur Bestätigung aufgefordert wird. 
+> **** Bei der Abmeldung kann während des Vorgangs ein Dialogfeld angezeigt werden, in dem der Benutzer möglicherweise zur Bestätigung aufgefordert wird. 
     
  _ulReserved_
   
@@ -61,15 +61,15 @@ MAPI_LOGOFF_UI
 
 S_OK 
   
-> Der Vorgang zum Abmelden war erfolgreich.
+> Der Abmeldevorgang war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISession::Logoff** -Methode wird eine MAPI-Sitzung beendet. Wenn **Abmelden** zurückgegeben wird, kann keine der Methoden außer [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden. 
+Die **IMAPISession:: Logout** -Methode beendet eine MAPI-Sitzung. Wenn **** die Abmeldung zurückgegeben wird, kann keine der Methoden außer [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **Abmelden** zurückgibt, release Session-Objekt durch die **IUnknown** -Methode aufrufen. 
+Wenn **** die Abmeldung zurückgegeben wird, lassen Sie das Session-Objekt durch Aufrufen der **IUnknown:: Release** -Methode los. 
   
 Weitere Informationen zum Beenden einer Sitzung finden Sie unter [Beenden einer MAPI-Sitzung](ending-a-mapi-session.md).
   
@@ -77,21 +77,21 @@ Weitere Informationen zum Beenden einer Sitzung finden Sie unter [Beenden einer 
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIObjects.cpp  <br/> |CMapiObjects::Logoff  <br/> |MFCMAPI (engl.) verwendet die **IMAPISession::Logoff** -Methode aus der Sitzung vor einer Freigabe abmelden.  <br/> |
+|MAPIObjects. cpp  <br/> |CMapiObjects:: Logoff  <br/> |MFCMAPI verwendet die **IMAPISession:: Logout** -Methode, um sich vor dem Freigeben von der Sitzung abzumelden.  <br/> |
    
 > [!NOTE]
-> Aufgrund der Verhalten für Schnelles Herunterfahren in Microsoft Office Outlook 2007 Service Pack 2, Microsoft Outlook 2010 und Microsoft Outlook 2013 eingeführt sollten Clients nie Parameters **MAPI_LOGOFF_SHARED** [IMAPISession::Logoff](imapisession-logoff.md)übergeben. Übergeben von **MAPI_LOGOFF_SHARED** bewirkt, dass alle MAPI-Clients zum Herunterfahren beginnen und unerwartetes Verhalten tritt. 
+> Aufgrund des fast shutdown-Verhaltens, das in Microsoft Office Outlook 2007 Service Pack 2, Microsoft Outlook 2010 und Microsoft Outlook 2013 eingeführt wurde, sollten Clients den Parameter **MAPI_LOGOFF_SHARED** nie an [IMAPISession:: Logoff](imapisession-logoff.md)übergeben. Das übergeben von **MAPI_LOGOFF_SHARED** bewirkt, dass alle MAPI-Clients mit dem Herunterfahren beginnen und unerwartetes Verhalten auftritt. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[IMAPISession: IUnknown](imapisessioniunknown.md)
+[IMAPISession : IUnknown](imapisessioniunknown.md)
 
 
-[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Beenden einer MAPI-Sitzung](ending-a-mapi-session.md)
 

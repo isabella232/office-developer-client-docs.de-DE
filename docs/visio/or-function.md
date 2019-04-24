@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251476
 localization_priority: Normal
 ms.assetid: 6c2154fa-4190-0699-61f7-f2bdf87173ec
-description: Gibt TRUE (1) zurück, wenn einer der logischen Ausdrücke als Parameter übergebene wahr sind.
-ms.openlocfilehash: 14646f553e76c8c395fdbde8762daf75114f9480
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt TRUE (1) zurück, wenn einer der logischen Ausdrücke, die als Parameter übergeben werden, TRUE ist.
+ms.openlocfilehash: 175a1c72f5109caca786b823966f07836f4737f0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337212"
 ---
 # <a name="or-function"></a>OR Function
 
-Gibt TRUE (1) zurück, wenn einer der logischen Ausdrücke als Parameter übergebene wahr sind.
+Gibt TRUE (1) zurück, wenn einer der logischen Ausdrücke, die als Parameter übergeben werden, TRUE ist.
   
 ## <a name="syntax"></a>Syntax
 
-ODER (** *logicalexpression1* **, ** *logicalexpression2* **,..., ** *LogicalexpressionN* **) 
+oder (* * *logicalexpression1* * *, * * *logicalexpression2* * *,..., * * *logicalexpressionN* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,9 +32,9 @@ ODER (** *logicalexpression1* **, ** *logicalexpression2* **,..., ** *Logicalexp
 | _logicalexpression2_ <br/> |Erforderlich  <br/> |**String** <br/> |Der zweite Ausdruck, dessen Wahrheit ausgewertet werden soll.  <br/> |
 | _logicalexpressionN_ <br/> |Erforderlich  <br/> |**String** <br/> |Der n-te Ausdruck, dessen Wahrheit ausgewertet werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Boolean
+Boolesch
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -42,7 +42,7 @@ Ein beliebiger Ausdruck, der einen Wert ungleich Null ergibt, wird als TRUE betr
   
 ## <a name="example"></a>Beispiel
 
-ODER (Höhe \> 1, DrehbezX \> 1) 
+OR (Höhe \> 1, PinX \> 1) 
   
 Gibt TRUE (1) zurück, wenn mindestens einer der beiden Ausdrücke TRUE ist. Gibt FALSE (0) zurück, wenn beide Ausdrücke FALSE sind. 
   

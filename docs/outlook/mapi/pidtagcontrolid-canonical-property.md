@@ -1,5 +1,5 @@
 ---
-title: PidTagControlId (kanonische Eigenschaft)
+title: Kanonische Pidtagcontrolid (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,46 +11,46 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 281bc3e0-7c69-461b-bf09-4281abbb5e1b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2868533e0383309e013bb82aaa4300a0a40e335a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: b27f59e0bfdcac8eca1751af2f07139f12e2b3a7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334741"
 ---
-# <a name="pidtagcontrolid-canonical-property"></a>PidTagControlId (kanonische Eigenschaft)
+# <a name="pidtagcontrolid-canonical-property"></a>Kanonische Pidtagcontrolid (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen eindeutigen Bezeichner für ein Steuerelement in einem Dialogfeld verwendet. 
+Enthält einen eindeutigen Bezeichner für ein Steuerelement, das in einem Dialogfeldverwendet wird. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTROL_ID  <br/> |
 |Kennung:  <br/> |0x3F07  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
+|Bereich:  <br/> |MAPI-Anzeigetabelle  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft enthält einen eindeutigen Bezeichner für das Steuerelement. Dieser Bezeichner sollte eine [GUID](guid.md) -Struktur und den Wert vom Typ **LONG**binary enthalten. Alle Steuerelemente im Dialogfeld sollte dieselbe **GUID** zum Identifizieren des Dienstanbieters verwenden, und jedes Steuerelement sollte eine eindeutige verwenden **LONG** -Wert, um sicherzustellen, dass die Steuerelemente nicht kollidieren. 
+Diese Eigenschaft enthält einen eindeutigen Bezeichner für das Steuerelement. Dieser Bezeichner sollte eine [GUID](guid.md) -Struktur und einen Binary-Wert vom Typ **Long**enthalten. Alle Steuerelemente im Dialogfeld sollten dieselbe **GUID** verwenden, um den Dienstanbieter zu identifizieren, und jedes Steuerelement sollte einen eindeutigen **Long** -Wert verwenden, um sicherzustellen, dass die Steuerelemente nicht kollidieren. 
   
-Diese Eigenschaft wird in Benachrichtigungen verwendet. Senden von Benachrichtigungen für die Anzeige-Tabelle müssen beispielsweise zur eindeutigen Identifizierung des Steuerelements so aktualisieren Sie diese Eigenschaft festgelegt. 
+Diese Eigenschaft wird in Benachrichtigungen verwendet. Benachrichtigungen, die in der Anzeigetabelle gesendet werden, müssen beispielsweise diese Eigenschaft festlegen, um das zu aktualisierende Steuerelement eindeutig zu identifizieren. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

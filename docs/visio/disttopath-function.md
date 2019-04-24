@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2ba7d372-0c2a-9fa7-0af6-97da0aafdb12
 description: Gibt den kürzesten Abstand von dem von den angegebenen Koordinaten festgelegten Punkt zu einem Punkt im Pfad zurück.
-ms.openlocfilehash: 227fe860de2e3683b5d7d3e5f9313d1e2e31b2d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5727b24739705d3e562150c48fe77f7ad6eedb57
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332690"
 ---
 # <a name="disttopath-function"></a>DISTTOPATH Function
 
@@ -25,23 +25,23 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-DISTTOPATH (** *Abschnitt* **, ** *X* **, ** *y* **) 
+DISTTOPATH (* * *section* * *, * * *x* * *, * * *y* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
-| _x_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die _X_-Koordinate des Punkts.  <br/> |
+| _x_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die _x_-Koordinate des Punkts.  <br/> |
 | _y_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die _y_-Koordinate des Punkts.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
  **Double**
   
 ## <a name="remarks"></a>Bemerkungen
 
-Microsoft Visio gibt #REF! Wenn _Section_ nicht vorhanden ist. 
+Microsoft Visio gibt #REF! Wenn _section_ nicht vorhanden ist. 
   
 Der Rückgabewert ist positiv, wenn sich der Punkt links der Laufrichtung befindet; er ist positiv, wenn sich der Punkt rechts der Laufrichtung befindet.
   

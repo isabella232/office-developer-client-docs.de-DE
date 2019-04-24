@@ -7,25 +7,25 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84251222-dac4-4f4d-97b9-aa0e2cd26c44
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ff088dc5bf62f407692c9eec649ff388f79d549d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a2a204f76b62c8c6bc6d8a4e793c936a0184dc65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335077"
 ---
 # <a name="contabentryid"></a>CONTAB_ENTRYID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID für den Kontakteordner.
+Enthält die Eintrags-ID des Ordners Kontakte.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |msomapiutil.h  <br/> |
+|Headerdatei  <br/> |msomapiutil. h  <br/> |
    
 ```cpp
 #pragma pack(4) 
@@ -46,46 +46,46 @@ typedef struct _contab_entryid
 
  **abFlags**
   
-> Eine Bitmaske aus Flags, die Informationen für das Objekt bereitstellt. Weitere Informationen finden Sie unter der Beschreibung des Felds **AbFlags** einer [ENTRYID](entryid.md) -Struktur. 
+> Eine Bitmaske von Flags, die Informationen zur Beschreibung des Objekts bereitstellt. Weitere Informationen finden Sie in der Beschreibung des **abFlags** -Felds einer [Eintrags](entryid.md) -Struktur. 
     
  **muid**
   
-> GUID, den Speicheranbieter identifiziert.
+> GUID, die den Informationsspeicher Anbieter identifiziert.
     
  **ulVersion**
   
-> Die Versionsnummer der **CONTAB_ENTRYID** Struktur. Muss auf CONTAB_VERSION festgelegt sein. 
+> Die Versionsnummer der **CONTAB_ENTRYID** -Struktur. Muss auf CONTAB_VERSION festgelegt sein. 
     
  **ulType**
   
-> Eine ganze Zahl, die den Kontakteintrag ID-Typ darstellt. Es muss eine der folgenden Werte sein:
+> Eine ganze Zahl, die den Typ des Kontakteintrags darstellt. Dabei muss es sich um einen der folgenden Werte handeln:
     
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|CONTAB_USER  <br/> |Ein messaging User-Objekt.  <br/> |
+|CONTAB_USER  <br/> |Ein Nachrichtenbenutzer-Objekt.  <br/> |
 |CONTAB_DISTLIST  <br/> |Verteilung von List-Objekt.  <br/> |
    
  **ulIndex**
   
-> Der Index der Teilmenge der e-Mail-Eigenschaft.
+> Der Index in der e-Mail-Eigenschaft-Teilmenge.
     
  **cbeid**
   
-> Die Größe des Eintrags-ID der Nachricht Kontakt im Adressbuch Kontakte Eintrag zugeordnet.
+> Die Größe der Eintrags-ID der Kontakt Nachricht, die diesem Eintrag im Adressbuchkontakte zugeordnet ist.
     
- **abeid**
+ **Abeid**
   
-> Der Eintrag Bezeichner der Nachricht Kontakt im Adressbuch Kontakte Eintrag zugeordnet.
+> Die Eintrags-ID der Kontakt Nachricht, die diesem Eintrag im Adressbuchkontakte zugeordnet ist.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Einem Adressbuch Kontakte ist ein Adressbuch, das alle Kontaktelemente in einem Kontakteordner enthält, die eine e-Mail-Adresse oder eine Faxnummer verfügen. Jeder Eintrag in einem Adressbuch Kontakte ist eine e-Mail-Adresse oder eine Faxnummer zugeordnet. Da ein Kontaktelement kann bis zu drei e-Mail-Adressen und drei Faxnummer, kann ein Kontaktelement durch maximal sechs Einträge in der entsprechenden Kontaktadressbuch dargestellt werden.
+Ein Adressbuch für Kontakte ist ein Adressbuch, das alle Kontaktelemente in einem Kontakteordner enthält, die entweder eine e-Mail-Adresse oder eine Faxnummer enthalten. Jeder Eintrag in einem Contacts-Adressbuch ist entweder einer e-Mail-Adresse oder einer Faxnummer zugeordnet. Da ein Kontaktelement bis zu drei e-Mail-Adressen und drei Faxnummern enthalten kann, kann ein Kontaktelement durch bis zu sechs Einträge im entsprechenden Adressbuch für Kontakte dargestellt werden.
   
-Einem Adressbuch Kontakte dient zur Unterstützung von Benutzern, die Adressierung von e-Mail-Nachrichten an Kontakte in einem Kontakteordner. Der Adressbuch Kontakte-Anbieter, die Unterstützung von Microsoft Outlook 2010 und Microsoft Outlook 2013 ist contab32.dll.
+Der Zweck eines Kontakt Adressbuchs besteht darin, Benutzer zu unterstützen, die e-Mail-Nachrichten an Kontakte in einem Kontakteordner adressieren. Der Adressbuchanbieter für Kontakte, der von Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützt wird, ist contab32. dll.
   
-Die Struktur **CONTAB_ENTRYID** unterstützt eine Teilmenge der Informationen, die in der zugrunde liegenden MAPI-Kontakt Nachricht vorhanden ist. Identifiziert die Kontakt-Nachricht, der ein bestimmter Eintrag Adressbuch Kontakte zugeordnet ist. 
+Die **CONTAB_ENTRYID** -Struktur unterstützt eine Teilmenge der Informationen, die in der zugrunde liegenden MAPI-Kontakt Nachricht enthalten sind. Sie identifiziert die Kontakt Nachricht, der ein bestimmter Adressbucheintrag für Kontakte zugeordnet ist. 
   
-Die Felder **Cbeid** und **Abeid** sind nur gültig, wenn der Wert des Felds **UlType** auf CONTAB_DISTLIST oder CONTAB_USER festgelegt ist. Wenn der Wert des Felds **UlType** CONTAB_ROOT, CONTAB_SUBROOT oder CONTAB_CONTAINER festgelegt ist, sollte die Struktur [DIR_ENTRYID](dir_entryid.md) stattdessen verwendet werden. 
+Die Felder **cbeid** und **Abeid** sind nur gültig, wenn der **ulType** -Feldwert auf CONTAB_DISTLIST oder CONTAB_USER festgelegt ist. Wenn der **ulType** -FELDWERT auf CONTAB_ROOT, CONTAB_SUBROOT oder CONTAB_CONTAINER festgelegt ist, sollte stattdessen die [DIR_ENTRYID](dir_entryid.md) -Struktur verwendet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

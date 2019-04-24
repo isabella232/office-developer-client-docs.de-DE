@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98c0eab1-fd7e-46c3-8619-ccd6dc7cf8f7
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 3d8b1901123743b25b5bb9df174b297398c953b8
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335764"
 ---
 # <a name="imapisessionprepareform"></a>IMAPISession::PrepareForm
 
@@ -25,7 +25,7 @@ ms.locfileid: "25393236"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine numerische Token, das die [IMAPISession::ShowForm](imapisession-showform.md) -Methode verwendet, um auf eine Nachricht zuzugreifen. 
+Erstellt ein numerisches Token, das von der [IMAPISession:: ShowForm](imapisession-showform.md) -Methode für den Zugriff auf eine Nachricht verwendet wird. 
   
 ```cpp
 HRESULT PrepareForm(
@@ -39,37 +39,37 @@ HRESULT PrepareForm(
 
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle zum Zugriff auf die Nachricht zu verwendende darstellt. Übergeben von **null** führt in der standard-Benutzeroberfläche oder [IMessage](imessageimapiprop.md), verwendet wird. Der Parameter _LpInterface_ muss **null** oder IID_IMessage sein. 
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf die Nachricht verwendet werden soll. Übergeben von **null** -Ergebnissen in der Standardschnittstelle oder [IMessage](imessageimapiprop.md), wird verwendet. Der _lpInterface_ -Parameter muss **null** oder IID_IMessage sein. 
     
  _lpMessage_
   
-> [in] Ein Zeiger auf die Nachricht, die im Formular angezeigt werden.
+> in Ein Zeiger auf die Nachricht, die im Formular angezeigt werden soll.
     
  _lpulMessageToken_
   
-> [out] Ein Zeiger auf ein Token Nachricht, die von der **IMAPISession::ShowForm** -Methode zum Zugriff auf die Meldung _LpMessage_verwendet wird.
+> Out Ein Zeiger auf ein Nachrichten Token, das von der **IMAPISession:: ShowForm** -Methode verwendet wird, um auf die Nachricht zuzugreifen, auf die von _lpMessage_verwiesen wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Vorbereitung Formular war erfolgreich.
+> Die Formular Vorbereitung war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISession::PrepareForm** -Methode erstellt eine Nachricht Token für die Meldung über den Parameter _LpMessage_ und die Nachricht [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode aufgerufen. Dieses Token wird an **IMAPISession::ShowForm**im _UlMessageToken_ -Parameter übergeben. 
+Die **IMAPISession::P repareform** -Methode erstellt ein Nachrichten Token für die Nachricht, auf die durch den _lpMessage_ -Parameter verwiesen wird, und ruft die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode der Nachricht auf. Dieses Token wird im _ulMessageToken_ -Parameter an **IMAPISession:: ShowForm**übergeben. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn der Aufruf von **PrepareForm** erfolgreich ist, Version der Meldung von _LpMessage_ dessen [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, bevor Sie **ShowForm aus**aufrufen. Installationsfehler, die Nachricht freigeben, bevor Sie **ShowForm aus** aufrufen kann Speicherverluste entstehen. 
+Wenn der Aufruf von **PrepareForm** erfolgreich ist, veröffentlichen Sie die Nachricht, auf die durch _lpMessage_ verwiesen wird, indem Sie die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, bevor Sie **ShowForm**aufrufen. Wenn Sie die Nachricht nicht freigeben, bevor Sie **ShowForm** aufrufen, kann dies zu Speicherverlusten führen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
 Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Kommentar**|
+|**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |OpenMessageModal  <br/> |MFCMAPI (engl.) verwendet die **IMAPISession::PrepareForm** -Methode, zusammen mit **IMAPISession::ShowForm**, um eine Nachricht in ein modales Formular anzuzeigen.  <br/> |
+|MAPIFormFunctions. cpp  <br/> |OpenMessageModal  <br/> |MFCMAPI verwendet die **IMAPISession::P repareform** -Methode zusammen mit **IMAPISession:: ShowForm**, um eine Nachricht in einem modalen Formular anzuzeigen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -77,7 +77,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [IMAPISession::ShowForm](imapisession-showform.md)
   
-[IMAPISession: IUnknown](imapisessioniunknown.md)
+[IMAPISession : IUnknown](imapisessioniunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

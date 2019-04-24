@@ -8,42 +8,42 @@ api_type:
 - COM
 ms.assetid: a863494f-0071-4d97-a6c4-26707ee00e04
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 69945bc03d9183ea18a436186523741ce534b71e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3d6a0eaf8ad125a0ae1ea3abb57e2aa57e0bdfe3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336736"
 ---
 # <a name="delegate-access"></a>Stellvertretungszugriff
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Delegieren des Zugriffs bezieht sich auf die M�glichkeit des Benutzers als anderer Benutzer eine Nachricht senden oder Empfangen einer Nachricht an einen anderen Benutzer. Delegieren des Zugriffs ist ein Service Provider unabh�ngigen Feature von MAPI, das Transportanbieter unterst�tzt werden k�nnen, falls gew�nscht. Jedoch ist kein Anbieter dazu erforderlich. Delegieren des Zugriffs ist hilfreich, wenn es f�r einen Benutzer als Nachrichten senden oder Filtern eingehende Nachrichten auf, wenn ein Benutzer Nachrichtenspeicher eines anderen Benutzers zugreifen muss oder eines anderen Benutzers erforderlich ist. Bevor Sie eine Verbindung mit einem anderen Benutzerspeicher Stellvertretungsbenutzers zulassen, muss der Nachricht Speicheranbieter �berpr�fen, ob Stellvertretungsbenutzers die entsprechende Autorit�t verf�gt. 
   
 Es gibt zwei Gruppen von Eigenschaften, die zur Unterst�tzung von Zugriffsrechten f�r Stellvertretung verwendet werden:
   
- **PR_SENT_REPRESENTING_ADDRTYPE** ([PidTagSentRepresentingAddressType](pidtagsentrepresentingaddresstype-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_ADDRTYPE** ([Pidtagsentrepresentingaddresstype (](pidtagsentrepresentingaddresstype-canonical-property.md)) 
   
- **PR_SENT_REPRESENTING_EMAIL_ADDRESS** ([PidTagSentRepresentingEmailAddress](pidtagsentrepresentingemailaddress-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_EMAIL_ADDRESS** ([Pidtagsentrepresentingemailaddress (](pidtagsentrepresentingemailaddress-canonical-property.md)) 
   
- **PR_SENT_REPRESENTING_ENTRYID** ([PidTagSentRepresentingEntryId](pidtagsentrepresentingentryid-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_ENTRYID** ([Pidtagsentrepresentingentryid (](pidtagsentrepresentingentryid-canonical-property.md)) 
   
  **PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)) 
   
- **PR_SENT_REPRESENTING_SEARCH_KEY** ([PidTagSentRepresentingSearchKey](pidtagsentrepresentingsearchkey-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_SEARCH_KEY** ([Pidtagsentrepresentingsearchkey (](pidtagsentrepresentingsearchkey-canonical-property.md)) 
   
- **PR_RCVD_REPRESENTING_ADDRTYPE** ([PidTagReceivedRepresentingAddressType](pidtagreceivedrepresentingaddresstype-canonical-property.md)) 
+ **PR_RCVD_REPRESENTING_ADDRTYPE** ([Pidtagreceivedrepresentingaddresstype (](pidtagreceivedrepresentingaddresstype-canonical-property.md)) 
   
- **PR_RCVD_REPRESENTING_EMAIL_ADDRESS** ([PidTagReceivedRepresentingEmailAddress](pidtagreceivedrepresentingemailaddress-canonical-property.md)) 
+ **PR_RCVD_REPRESENTING_EMAIL_ADDRESS** ([Pidtagreceivedrepresentingemailaddress (](pidtagreceivedrepresentingemailaddress-canonical-property.md)) 
   
  **PR_RCVD_REPRESENTING_ENTRYID** ([PidTagReceivedRepresentingEntryId](pidtagreceivedrepresentingentryid-canonical-property.md)) 
   
  **PR_RCVD_REPRESENTING_NAME** ([PidTagReceivedRepresentingName](pidtagreceivedrepresentingname-canonical-property.md)) 
   
- **PR_RCVD_REPRESENTING_SEARCH_KEY** ([PidTagReceivedRepresentingSearchKey](pidtagreceivedrepresentingsearchkey-canonical-property.md)) 
+ **PR_RCVD_REPRESENTING_SEARCH_KEY** ([Pidtagreceivedrepresentingsearchkey (](pidtagreceivedrepresentingsearchkey-canonical-property.md)) 
   
 F�r ausgehende Nachrichten den **PR_SENT_REPRESENTING** Eigenschaften identifiziert des messaging-Benutzers, der als Absender fungieren soll. Clients k�nnen diese Eigenschaften als Option festlegen. Wenn die **PR_SENT_REPRESENTING** Zeitpunkt nicht festgelegt werden des Anbieters Verantwortung zusammen mit den Eigenschaften **PR_SENDER** festgelegt ist, die Nachricht erreicht eine Adressbuchhierarchie Delegieren des Zugriffs, unterst�tzt. 
   

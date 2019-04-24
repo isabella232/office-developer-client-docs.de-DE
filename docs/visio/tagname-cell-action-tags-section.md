@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 28d1cd60-4fb6-9feb-1a13-0962798ac1ad
 description: Der Name des Aktionstags, das als Schlüssel verwendet wird, um das Aktionstag seinen Aktionen zuzuordnen.
-ms.openlocfilehash: dbac3d4dff9d2ffd18bba75db56cafc08f5e0ee8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 777d6c1098888c9835c1ad367bb70926b835180b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332396"
 ---
-# <a name="tagname-cell-action-tags-section"></a>TagName Cell (Action Tags Section)
+# <a name="tagname-cell-action-tags-section"></a>Zelle "TagName" (Abschnitt "Action Tags")
 
 Der Name des Aktionstags, das als Schlüssel verwendet wird, um das Aktionstag seinen Aktionen zuzuordnen.
   
@@ -25,20 +25,20 @@ Der Name des Aktionstags, das als Schlüssel verwendet wird, um das Aktionstag s
   
 ## <a name="remarks"></a>Bemerkungen
 
- Die Zelle TagName im Abschnitt Action Tags kann zusammen mit der Zelle TagName im Abschnitt Aktionen auf ein Aktionstag seinen Aktionen zuzuordnen. Zeilen im Abschnitt Aktionen auch eine Zelle TagName, und die Zeilen mit denselben Zelle TagName-Wert wie diese Zelle Aktionen an, die für diese Aktionstag definieren. 
+ Die Zelle TagName im Abschnitt Aktions Tags arbeitet zusammen mit der Zelle TagName im Abschnitt Aktionen, um den Aktionen ein Aktionstag zuzuordnen. Zeilen im Abschnitt Actions haben auch eine Zelle TagName, und diese Zeilen mit dem gleichen TagName-Zellenwert als diese Zelle definieren Aktionen, die für dieses Aktionstag ausgeführt werden sollen. 
   
-Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | SmartTags.  *Name* . TagName wobei SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
+| Zellenname:  <br/> | Smarttags.  *Name* . TagName, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**VisRowSmartTag** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagName** <br/> |
    
 

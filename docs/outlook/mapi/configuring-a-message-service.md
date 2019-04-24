@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: d68892e3-7c87-4b3a-a691-bff92f83ed00
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2b170037bc51a7848154c12acbfe700a0142ef8f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4c3d30c7111e7b26886cbfb069ec2822d2ee0234
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335112"
 ---
 # <a name="configuring-a-message-service"></a>Konfigurieren eines Nachrichtendiensts
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So konfigurieren Sie die-Dienstanbieter in einem Message-Dienst**
+ **So konfigurieren Sie alle Dienstanbieter in einem Nachrichtendienst**
   
-- Rufen Sie [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md). Wenn alle Daten für die Konfiguration notwendig sind programmgesteuert verfügbar, können Sie, ob eine Benutzeroberfläche angezeigt werden soll oder nicht. Wenn ein Teil der Informationen für einen oder mehrere Anbieter nicht verfügbar ist, stellen Sie jedoch sicher, dass Sie die Kennzeichen SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS festgelegt. Unterdrücken eine Benutzeroberfläche beim erforderlichen Konfigurationsdaten nicht verfügbar Ergebnisse in einem Nachrichtendienst nicht konfiguriert ist.
+- Rufen Sie [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)auf. Wenn alle für die Konfiguration erforderlichen Daten programmgesteuert verfügbar sind, können Sie auswählen, ob eine Benutzeroberfläche angezeigt werden soll. Wenn jedoch einige der Informationen für einen oder mehrere Anbieter nicht verfügbar sind, stellen Sie sicher, dass Sie das SERVICE_UI_ALLOWED-oder SERVICE_UI_ALWAYS-Flag festgelegt haben. Das unterdrücken einer Benutzeroberfläche, wenn erforderliche Konfigurationsdaten nicht verfügbar sind, führt zu einem nicht konfigurierten Nachrichtendienst.
     
- **So konfigurieren Sie einen einzelnen-Dienstanbieter in einem Message-Dienst**
+ **So konfigurieren Sie einen einzelnen Dienstanbieter in einem Nachrichtendienst**
   
-1. Rufen Sie [IMAPISession::GetStatusTable](imapisession-getstatustable.md) Zugriff auf den Dienstanbieter Status-Objekt. 
+1. Rufen Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable auf, um auf das Statusobjekt des Dienstanbieters zuzugreifen. 
     
-2. Rufen Sie [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md) , um den Dienstanbieter Eigenschaftenfenster anzuzeigen. 
+2. Rufen Sie [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) auf, um das Eigenschaftenfenster des Dienstanbieters anzuzeigen. 
     
-Weitere Informationen zum Status Objekte verwenden finden Sie unter [Statustabelle und Status-Objekte](status-table-and-status-objects.md).
+Weitere Informationen zur Verwendung von Status-Objekten finden Sie unter [Status Table-und Status-Objekte](status-table-and-status-objects.md).
   
 

@@ -9,40 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0ffdfc22-cbae-b397-226a-2cfcc6ca56c7
 description: Gibt den hyperbolischen Tangens eines Winkels zurück.
-ms.openlocfilehash: 1cef04ab03cdc0acfdb6970cd9699a9340a63077
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e88d24b93d06cc606d96d5a4e4a3f834b706245a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332382"
 ---
 # <a name="tanh-function"></a>TANHYP-Funktion
 
-Gibt den hyperbolischen Tangens eines Winkels zurück.
-    
- 
+Gibt den hyperbolischen Tangens eines Winkels zurück. 
   
 ## <a name="syntax"></a>Syntax
 
-TANH (** *Winkel* **) 
+TANH (* * *Winkel* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen hyperbolischer Tangens abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen hypbolic-Tangente abgerufen werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die TANH-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in *Winkel* angeben. 
+Die TANH-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im *Winkel* an. 
   
 ## <a name="example"></a>Beispiel
 
-TANH(45) 
+TANH (-45) 
   
 Gibt -0,6558 zurück. 
   

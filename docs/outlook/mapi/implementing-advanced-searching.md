@@ -8,35 +8,35 @@ api_type:
 - COM
 ms.assetid: 08cc60d4-cac8-4ba5-bd7f-a56e63697be3
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0ba9958588c476ae330b0f4a413361e80d54667a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 35d41ff903c5ed22c5210adf6448dfded0afe4b6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332816"
 ---
 # <a name="implementing-advanced-searching"></a>Implementieren der erweiterten Suche
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einige Address Book Container unterstützt eine erweiterte Suchfunktionen, mit der Clients auf andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) durchsuchen kann. Zur Unterstützung der erweiterten Suche muss vom Dienstanbieter ein speziellen Containers implementieren, das über die **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md))-Eigenschaft des Ihrer andere Container zugegriffen werden kann. **PR_SEARCH** enthält ein Container-Objekt, das Zugriff auf eine Tabelle anzeigen bietet, die beschreibt das Dialogfeld zum eingeben und bearbeiten die Kriterien für die erweiterte Suche verwendet. 
+Einige Adressbuchcontainer unterstützen eine erweiterte Suchfunktion, die es Clients ermöglicht, andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) zu suchen. Zur Unterstützung erweiterter Suchvorgänge muss der Anbieter einen speziellen Container implementieren, auf den über die **PR_SEARCH** ([pidtagsearch (](pidtagsearch-canonical-property.md))-Eigenschaft der anderen Container zugegriffen werden kann. **PR_SEARCH** enthält ein Container-Objekt, das Zugriff auf eine Anzeigetabelle bietet, in der das Dialogfeld beschrieben wird, das zum eingeben und Bearbeiten der erweiterten Suchkriterien verwendet wird. 
   
- **Zur Unterstützung der erweiterten Suche**
+ **So unterstützen Sie die erweiterte Suche**
   
-1. Definieren Sie eine Eigenschaft für die einzelnen von den Suchkriterien.
+1. Definieren Sie eine Eigenschaft für jedes Suchkriterium.
     
-2. Im Abschnitt des Codes in den Container [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode, die **PR_SEARCH** -Eigenschaft behandelt: 
+2. Im Codeabschnitt in der [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode ihres Containers, die die **PR_SEARCH** -Eigenschaft behandelt: 
     
-1. Überprüfen Sie, dass der Client die Schnittstelle **IMAPIContainer** anfordert. Wenn eine ungeeignete-Schnittstelle angefordert wird, wird ein Fehler auftritt, und geben Sie MAPI_E_INTERFACE_NOT_SUPPORTED zurück. 
+1. Überprüfen Sie, ob der Client die **IMAPIContainer** -Schnittstelle anfordert. Wenn eine ungeeignete Schnittstelle angefordert wird, schlagen Sie fehl und geben MAPI_E_INTERFACE_NOT_SUPPORTED zurück. 
     
 2. Erstellen Sie ein neues Search-Objekt, das die **IMAPIContainer** -Schnittstelle unterstützt. 
     
-3. Zu diesem Zeitpunkt wird Ihre Suche des Containers **IMAPIProp::OpenProperty** -Methode aufgerufen werden, dessen Eigenschaft **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) abzurufen. Vom Dienstanbieter muss eine zeigt die Tabelle, in der Regel durch einen Aufruf von [BuildDisplayTable](builddisplaytable.md), angeben, die Sie im Dialogfeld Erweiterte Suche der Container beschreibt.
+3. An dieser Stelle wird ein Aufruf an die **IMAPIProp:: OpenProperty** -Methode des Such Containers durchgeführt, um die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft abzurufen. Der Anbieter muss eine Anzeigetabelle angeben, normalerweise durch einen Aufruf von [BuildDisplayTable](builddisplaytable.md), der das Dialogfeld Erweiterte Suche des Containers beschreibt.
     
-4. MAPI zeigt das Dialogfeld Suchen an, in dem der Benutzer die entsprechenden Kriterien einzugeben. Wenn der Benutzer beendet wurde, ruft MAPI des Containers [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode, um die Suchkriterien zu speichern. 
+4. MAPI zeigt das Dialogfeld Suchen an, in dem der Benutzer die entsprechenden Kriterien eingeben kann. Wenn der Benutzer fertig ist, ruft MAPI die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des Containers auf, um die Suchkriterien zu speichern. 
     
-5. Ein Anruf wird versucht, Ihre Suche des Containers Inhaltstabelle anfordern. Füllen Sie auf Inhaltstabelle, indem Sie alle Einträge im Container, die mit den Kriterien übereinstimmen.
+5. Es wird ein Anruf getätigt, um die Inhaltstabelle Ihres Such Containers anzufordern. Füllen Sie die Tabelle Contents mit allen Einträgen im Container, die den Kriterien entsprechen.
     
 

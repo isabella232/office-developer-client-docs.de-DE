@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ebf66729-d794-a398-268a-84d761bf06b6
 description: Gibt an, ob ein Element in einem Kontext- oder Aktionstagmenü deaktiviert ist.
-ms.openlocfilehash: 3956b6cf5ccb870255d6943e74b4f02650952d09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ddf55f40056d7df7a2403e500bb4bae335930433
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332578"
 ---
-# <a name="disabled-cell-actions-section"></a>Disabled Cell (Actions Section)
+# <a name="disabled-cell-actions-section"></a>Zelle "Disabled" (Abschnitt "Actions")
 
 Gibt an, ob ein Element in einem Kontext- oder Aktionstagmenü deaktiviert ist.
   
@@ -30,18 +30,18 @@ Gibt an, ob ein Element in einem Kontext- oder Aktionstagmenü deaktiviert ist.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Disabled aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle disabled aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . Wobei deaktiviert Aktionen. *Name* ist der Name der Zeile Actions  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name* . Deaktiviert, wenn Aktionen. *Name* ist der Name der Zeile Actions.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Disabled aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle disabled aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**VisRowAction** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionDisabled** <br/> |
    
 

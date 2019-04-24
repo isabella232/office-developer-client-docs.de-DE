@@ -1,5 +1,5 @@
 ---
-title: PidTagConversionWithLossProhibited (kanonische Eigenschaft)
+title: Kanonische Pidtagconversionwithlossprohibited (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,44 +11,44 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a18b560a-e054-45b3-946d-6504465db5b7
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e5d9261a9f33d77d52cfd6e448e69a2c1e8df415
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 972df747e0ee459996b9b4da5732be1490fbd08a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334664"
 ---
-# <a name="pidtagconversionwithlossprohibited-canonical-property"></a>PidTagConversionWithLossProhibited (kanonische Eigenschaft)
+# <a name="pidtagconversionwithlossprohibited-canonical-property"></a>Kanonische Pidtagconversionwithlossprohibited (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn ein Message Transfer Agent (MTA) verboten wird tätigen Nachricht Text Konvertierungen, die Informationen verloren gehen. 
+Enthält TRUE, wenn ein MTA (Message Transfer Agent) keine Nachrichtentext Konvertierungen vornimmt, die Informationen verlieren. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CONVERSION_WITH_LOSS_PROHIBITED  <br/> |
-|Kennung:  <br/> |0x000d  <br/> |
+|Kennung:  <br/> |0x000D  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine Konfiguration  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Beispiel für die Art der Konvertierung wird nicht zulässig ist die "Verlust" Zuordnung von Unicode (zwei Bytes pro Zeichen) in einer Einzel-Byte-Zeichensatz. 
+Ein Beispiel für die Art der Konvertierung, die verboten wird, ist die "verlustbehaftete" Zuordnung von Unicode (zwei Bytes pro Zeichen) zu einem Single-Byte-Zeichensatz. 
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,5 +60,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

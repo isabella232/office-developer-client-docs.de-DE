@@ -9,32 +9,32 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a238bf1c-1acd-eacd-22f3-a48acaaa4549
 description: Legt die Farbe des Texthintergrunds für ein Shape fest.
-ms.openlocfilehash: 2256a4c89812924af820c020c225f4b82b1d4856
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2450bf0cb0e013c0f9310eacfca0f5a20e7e6063
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332328"
 ---
-# <a name="textbkgnd-cell-text-block-format-section"></a>TextBkgnd Cell (Text Block Format Section)
+# <a name="textbkgnd-cell-text-block-format-section"></a>Zelle "TextBkgnd" (Abschnitt "Text Block Format")
 
 Legt die Farbe des Texthintergrunds für ein Shape fest.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die Zelle TextBkgnd kann einen beliebigen Wert von 0 bis 24 oder 255 haben. Die Werte 0 und 255 ( *VisTxtBlklOpaque*) Geben Sie einen transparenten Texthintergrund an. 
+Die Zelle TextBkgnd-Zelle kann einen beliebigen Wert von 0 bis 24 oder 255 haben. Die Werte 0 und 255 ( *visTxtBlklOpaque*) deuten auf einen transparenten Texthintergrund hin. 
   
-Um eine benutzerdefinierte Farbe eingeben möchten, verwenden Sie die Funktionen RGB oder HSL plus 1 – beispielsweise RGB (255,127,255) + 1. Der Wert einer benutzerdefinierten Farbe ist ihre RGB-Farbe und RGB ( *R, g, b*) + 1, statt eine Zahl in das ShapeSheet-Fenster angezeigt werden. Bei Verwendung in numerischen Operationen haben benutzerdefinierte Farben Werte von 25 und höher. 
+Wenn Sie eine benutzerdefinierte Farbe eingeben möchten, verwenden Sie die RGB-oder die GSL-Funktion plus eine, beispielsweise RGB (255127255) + 1. Der Wert einer benutzerdefinierten Farbe ist die RGB-Farbe, und RGB ( *r, g, b*) + 1 anstelle einer Zahl wird im ShapeSheet-Fenster angezeigt. Bei numerischen Vorgängen haben benutzerdefinierte Farben Werte von 25 und höher. 
   
 Die Transparenz der Texthintergrundfarbe können Sie in der Zelle TextBkgnd Trans festlegen.
   
-Wenn Sie einen Verweis auf die Zelle TextBkgnd aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle TextBkgnd aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |TextBkgnd  <br/> |
+|Zellenname:  <br/> |Zelle TextBkgnd  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TextBkgnd aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle TextBkgnd aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

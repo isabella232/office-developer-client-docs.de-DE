@@ -9,20 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 124a5ee1-6dd1-d17d-6f0e-dbaa5d95d9cd
 description: Bestimmt das Aufzählungszeichenformat.
-ms.openlocfilehash: d3ecdd8e0f3780490f92766351b5ac94e875ae28
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 03b7d046cd42458b614313c19b2100259730539c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338185"
 ---
-# <a name="bullet-cell-paragraph-section"></a>Bullet Cell (Paragraph Section)
+# <a name="bullet-cell-paragraph-section"></a>Zelle "Bullet" (Abschnitt "Paragraph")
 
 Bestimmt das Aufzählungszeichenformat.
   
-|**Wert**|**Formatvorlage für Bildaufzählungszeichen**|
+|**Wert**|**AufZählungsZeichen**|
 |:-----|:-----|
-|0  <br/> |Keine  <br/> |
+|0  <br/> |None  <br/> |
 |1  <br/> |![](media/IC_Bullet1_ZA07645847.gif)           <br/> |
 |2  <br/> |![](media/IC_Bullet2_ZA07645848.gif)           <br/> |
 |3  <br/> |![](media/IC_Bullet3_ZA07645849.gif)           <br/> |
@@ -34,19 +34,19 @@ Bestimmt das Aufzählungszeichenformat.
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-|Zeilenindex:  <br/> |**VisRowParagraph** +  *i* wobei *i* = 0, 1, 2,...  <br/> |
+|Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2,...  <br/> |
 |Zellenindex:  <br/> |**visBulletIndex** <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert für diese Zelle auch festlegen, indem Sie mit der rechten Maustaste auf ein Shape klicken, auf **Format** zeigen, auf **Text** klicken und dann die Registerkarte **Aufzählungszeichen** auswählen. 
   
-Wenn Sie einen Verweis auf die Zelle Bullet aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle aufZählungsZeichen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Para.Bullet [ *i* ] wobei *i* = < 1 >, 2, 3,...  <br/> |
+|Zellenname:  <br/> |Abs. Bullet [ *i* ] wobei *i* = <1>, 2, 3,...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Bullet aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Bezug auf die Zelle Bullet aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 

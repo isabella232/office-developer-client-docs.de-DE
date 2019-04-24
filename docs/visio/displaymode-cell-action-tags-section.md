@@ -1,5 +1,5 @@
 ---
-title: DisplayMode Cell (Action Tags Section)
+title: Wird Display Mode Cell (Action Tags section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,45 +8,45 @@ f1_keywords:
 - Vis_DSS.chm60039
 localization_priority: Normal
 ms.assetid: 0dfad40b-f97e-0c4a-2102-7344d1317b82
-description: Bestimmt, ob das Aktionstag angezeigt wird, wenn der Zeiger über das Tag bewegt wird, wenn das Shape ausgewählt ist oder immer.
-ms.openlocfilehash: 4cb0666ca8de28247309de4fc0d2ff23e8b37d8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt, ob das Aktionstag angezeigt wird, wenn der Benutzer den Mauszeiger über das Tag bewegt, wenn das Shape ausgewählt ist, oder die ganze Zeit.
+ms.openlocfilehash: 0254ad361c63dfdeddaf8a1c2173e99aa1c05398
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332732"
 ---
-# <a name="displaymode-cell-action-tags-section"></a>DisplayMode Cell (Action Tags Section)
+# <a name="displaymode-cell-action-tags-section"></a>Wird Display Mode Cell (Action Tags section)
 
-Bestimmt, ob das Aktionstag angezeigt wird, wenn der Zeiger über das Tag bewegt wird, wenn das Shape ausgewählt ist oder immer.
+Bestimmt, ob das Aktionstag angezeigt wird, wenn der Benutzer den Mauszeiger über das Tag bewegt, wenn das Shape ausgewählt ist, oder die ganze Zeit.
   
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
 |**Wert**|**Anzeigemodus**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| 0  <br/> | Wird angezeigt, wenn die Maus über das Tag (Standardeinstellung) angehalten ist.  <br/> |**visSmartTagDispModeMouseOver** <br/> |
+| 0  <br/> | Wird angezeigt, wenn die Maus über dem Tag angehalten wird (Standardeinstellung).  <br/> |**visSmartTagDispModeMouseOver** <br/> |
 | 1  <br/> | Wird angezeigt, wenn das Shape ausgewählt ist.  <br/> |**visSmartTagDispModeShapeSelected** <br/> |
 | 2  <br/> | Wird immer angezeigt.  <br/> |**visSmartTagDispModeAlways** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Aktionstags werden nicht in gedruckten oder veröffentlichten Ausgaben angezeigt. 
   
 Wenn für ein Zeichenblatt ein Aktionstag definiert ist und die Zelle den Wert 1 aufweist, wird das Tag nie angezeigt, weil ein Zeichenblatt nicht ausgewählt werden kann. 
   
-Wenn Sie einen Verweis auf die Zelle DisplayMode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle wird Display Mode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | SmartTags.  *Name* . DisplayMode wobei SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
+| Zellenname:  <br/> | Smarttags.  *Name* . Wird Display Mode, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DisplayMode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle wird Display Mode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**VisRowSmartTag** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagDisplayMode** <br/> |
    
 

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0131b4b-9b25-47d3-8eeb-abe29c353ebc
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1f3a4444829da69f67ea8b3e833c34aa8bdc9163
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 3383c43668514d0cf164c90cbabbdadb550d706f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332655"
 ---
 # <a name="cbssortorderset"></a>CbSSortOrderSet
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl von Bytes in einer vorhandenen [SSortOrderSet](ssortorderset.md) Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SSortOrderSet](ssortorderset.md) -Struktur. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**SSortOrderSet** <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
 CbSSortOrderSet (_lpset)
@@ -38,9 +38,9 @@ CbSSortOrderSet (_lpset)
 
 ## <a name="parameters"></a>Parameter
 
- __Ipset_
+ __lpset_
   
-> Zeiger auf die vorhandenen **SSortOrderSet** Struktur. 
+> Zeiger auf die vorhandene **SSortOrderSet** -Struktur. 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen ein Profil mit benutzerdefiniertem Code
+title: Erstellen eines Profils mithilfe von benutzerdefiniertem Code
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,39 +8,39 @@ api_type:
 - COM
 ms.assetid: 5632cd25-58f5-4b9c-906c-cd377abc3daf
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c14d58e8a03633615798b50b256b9cc54fcc4f4c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f3270528194b3cc3429d3afec153355349dabbff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335790"
 ---
-# <a name="creating-a-profile-by-using-custom-code"></a>Erstellen ein Profil mit benutzerdefiniertem Code
+# <a name="creating-a-profile-by-using-custom-code"></a>Erstellen eines Profils mithilfe von benutzerdefiniertem Code
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie dem Schreiben von Code zum Erstellen eines Profils auswählen, stellen Sie sicher, dass Sie verstehen, wie bestellen profileinträgen und den Typ und die Menge der Informationen, die für jeden Eintrag erforderlich ist. Die Auswirkungen der Einträge in einem Profil Sortierung in [MAPI-Profile](mapi-profiles.md)erläutert wird.
+Wenn Sie Code zum Erstellen eines Profils schreiben, stellen Sie sicher, dass Sie wissen, wie Sie Profileinträge und die Art und Menge der Informationen, die für jeden Eintrag benötigt werden, bestellen können. Die Auswirkungen der Reihenfolge von Einträgen in einem Profil werden in [MAPI](mapi-profiles.md)-Profilen erläutert.
   
- **Zum Erstellen eines Profils mit C oder C++-code**
+ **So erstellen Sie ein Profil mit C-oder C++-Code**
   
-1. Lesen Sie die Headerdatei für jeden Nachrichtendienst. Verstehen, welche Eigenschaften, die Sie konfigurieren müssen und welche Werte verwenden.
+1. Lesen Sie die Headerdatei für jeden Nachrichtendienst. Verstehen Sie, welche Eigenschaften Sie konfigurieren müssen und welche Werte Sie verwenden werden.
     
-2. Rufen Sie die Funktion ["MAPIAdminProfiles"](mapiadminprofiles.md) zum Abrufen eines **IProfAdmin** Schnittstelle Zeigers. 
+2. Rufen Sie die [MAPIAdminProfiles](mapiadminprofiles.md) -Funktion auf, um einen **IProfAdmin** -Schnittstellenzeiger abzurufen. 
     
-3. Rufen Sie [IProfAdmin::CreateProfile](iprofadmin-createprofile.md) um Ihr Profil zu erstellen. Wenn Sie ein Profil mit der Nachrichtendienste aufgeführt, in der die Datei MAPISVC im Abschnitt **[Default Services]** erstellen möchten. INF-Datei, legen Sie das MAPI_DEFAULT_SERVICE-Flag. Wenn Sie den Benutzer zur Eingabe von Konfigurationsinformationen aktivieren möchten, legen Sie die MAPI_DIALOG-Flag. Stellen Sie sicher, dass Sie dieses Flag festlegen, wenn nicht alle erforderlichen Informationen über die Datei MAPISVC verfügbar ist. INF-Datei. **CreateProfile** Ruft die Funktion Eintrag für jeden Nachrichtendienst mit MSG_SERVICE_CREATE als _UlContext_ -Parameter festgelegt, das Profil hinzugefügt werden soll. 
+3. Rufen Sie [IProfAdmin:: CreateProfile](iprofadmin-createprofile.md) auf, um Ihr Profil zu erstellen. Wenn Sie ein Profil mit den Nachrichtendiensten erstellen möchten, die im Abschnitt **[Default Services]** des Mapisvc aufgeführt sind. INF-Datei, legen Sie das MAPI_DEFAULT_SERVICE-Flag fest. Wenn Sie möchten, dass der Benutzerkonfigurationsinformationen eingeben kann, legen Sie das MAPI_DIALOG-Flag fest. Stellen Sie sicher, dass Sie dieses Flag festlegen, wenn nicht alle erforderlichen Informationen über die MAPISVC verfügbar sind. INF-Datei. **CreateProfile** Ruft die Einstiegspunktfunktion für jeden Nachrichtendienst auf, der dem Profil hinzugefügt werden soll, wobei MSG_SERVICE_CREATE als _ulContext_ -Parameter festgelegt ist. 
     
-4. Rufen Sie [IProfAdmin::AdminServices](iprofadmin-adminservices.md) , um eine Nachricht Service Administration-Objekt zu erhalten. 
+4. Rufen Sie [IProfAdmin:: AdminServices](iprofadmin-adminservices.md) auf, um ein Nachrichtendienst-Verwaltungsobjekt abzurufen. 
     
-5. Verwenden Sie das Objekt "Message" Service Administration Message-Dienste zu dem Profil hinzufügen. Für jeden Nachrichtendienst, die Sie hinzufügen möchten:
+5. Verwenden Sie das Nachrichtendienst-Verwaltungsobjekt, um dem Profilnachrichten Dienste hinzuzufügen. Für jeden Nachrichtendienst, den Sie hinzufügen möchten:
     
-1. Rufen Sie die [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode, um den neuen Dienst erstellen. 
+1. Rufen Sie die [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode auf, um den neuen Nachrichtendienst zu erstellen. 
     
-2. Rufen Sie [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md), übergeben Sie die **MAPIUID** Struktur des Diensts, den Sie gerade erstellt haben und ein Array-Eigenschaft Wert Konfiguration Eigenschaften. 
+2. Rufen Sie [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)auf, und übergeben Sie die **MAPIUID** -Struktur des soeben erstellten Diensts und ein Eigenschaftenwert Array mit den Konfigurationseigenschaften. 
     
-6. Rufen Sie auf, um den Bezeichner für den Dienst neu hinzugefügte abzurufen, das die **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))-Eigenschaft ist, [IMsgServiceAdmin::GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) Zugriff auf die Nachricht Service Tabelle und suchen Sie nach der Zeile, die darstellt der Nachrichtendienst. Die letzte Zeile in der Tabelle wird die zuletzt hinzugefügten Messagingdiensts darstellen. 
+6. Zum Abrufen des Bezeichners eines neu hinzugefügten Diensts, bei dem es sich um die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Eigenschaft handelt, rufen Sie [IMsgServiceAdmin:: GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) auf, um auf die Nachrichtendienst Tabelle zuzugreifen und nach der Zeile zu suchen, die der Nachrichtendienst. Die letzte Zeile in der Tabelle stellt den zuletzt hinzugefügten Nachrichtendienst dar. 
     
-Um ein neues Profil temporäre machen, rufen Sie die [IProfAdmin::DeleteProfile](iprofadmin-deleteprofile.md) -Methode unmittelbar nach der Anmeldung. **DeleteProfile** kennzeichnet das neue Profil als gelöscht und dass es für die Dauer der Sitzung verwendet werden kann. Weil es nicht in der Sitzung Profiltabelle enthalten, werden andere Clients nicht verwenden. 
+Wenn Sie ein neues Profil als temporär festlegen möchten, rufen Sie die [IProfAdmin::D eleteprofile](iprofadmin-deleteprofile.md) -Methode unmittelbar nach der Anmeldung auf. **DeleteProfile** markiert das neue Profil als gelöscht, während es für die Dauer der Sitzung nutzbar gemacht wird. Da es nicht in der Profiltabelle der Sitzung enthalten ist, können andere Clients es nicht verwenden. 
   
 

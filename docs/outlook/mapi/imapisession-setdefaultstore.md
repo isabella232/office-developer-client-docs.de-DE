@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 456c207f-5d41-4d0c-94b6-0c58893a6bed
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c7eda7089515942cb38a941bab863b3adf971bdc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f4ff2a3897306ebe4f77c08630782c5f2c7d5d3d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335805"
 ---
 # <a name="imapisessionsetdefaultstore"></a>IMAPISession::SetDefaultStore
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt einen Nachrichtenspeicher als Standard-Informationsspeicher für die Sitzung her.
+Richtet einen Nachrichtenspeicher als Standardnachrichtenspeicher für die Sitzung ein.
   
 ```cpp
 HRESULT SetDefaultStore(
@@ -39,53 +39,53 @@ HRESULT SetDefaultStore(
 
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die die Einstellung der Standard-Informationsspeicher steuert. Diese Flags schließen sich gegenseitig aus; Es kann nur eine der folgenden Werte festgelegt werden:
+> in Eine Bitmaske von Flags, die die Einstellung des Standardnachrichten Speichers steuert. Diese Flags schließen sich gegenseitig aus; nur eines der folgenden Flags kann festgelegt werden:
     
 MAPI_DEFAULT_STORE
   
-> Stellt den Nachrichtenspeicher unverändert Sitzung her. Aktualisiert den Nachrichtenspeicher Status Tabellenzeile durch das Flag STATUS_DEFAULT_STORE in der Spalte **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) festgelegt.
+> Richtet den Nachrichtenspeicher als Sitzungs Standard ein. Aktualisiert die Statustabellen Zeile des Nachrichtenspeichers, indem das STATUS_DEFAULT_STORE-Flag in der **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Spalte festgelegt wird.
     
 MAPI_PRIMARY_STORE
   
-> Richtet den Nachrichtenspeicher als Speicher, die bei der Anmeldung verwendet werden. Wenn der Nachrichtenspeicher nicht des Standard-Informationsspeichers ist, sollte Clients die Standardeinstellung ermöglichen. Aktualisiert den Nachrichtenspeicher Status Tabellenzeile durch das Flag STATUS_PRIMARY_STORE in der Spalte **PR_RESOURCE_FLAGS** festgelegt. 
+> Richtet den Nachrichtenspeicher als den bei der Anmeldung zu verwendenden Speicher ein. Wenn es sich bei dem Nachrichtenspeicher nicht um den Standardspeicher handelt, sollten Clients diesen standardmäßig festlegen. Aktualisiert die Statustabellen Zeile des Nachrichtenspeichers, indem das STATUS_PRIMARY_STORE-Flag in der **PR_RESOURCE_FLAGS** -Spalte festgelegt wird. 
     
 MAPI_SECONDARY_STORE
   
-> Richtet den Nachrichtenspeicher als Speicher bei der Anmeldung verwendet werden, wenn der primäre Nachrichtenspeicher nicht verfügbar ist. Wenn ein Client den primären Speicher nicht öffnen kann, sollten sie den sekundären Speicher öffnen und als Standard festlegen. Aktualisiert den Nachrichtenspeicher Status Tabellenzeile durch das Flag STATUS_SECONDARY_STORE in der Spalte **PR_RESOURCE_FLAGS** festgelegt. 
+> Richtet den Nachrichtenspeicher als den bei der Anmeldung zu verwendenden Speicher ein, wenn der primäre Nachrichtenspeicher nicht verfügbar ist. Wenn ein Client den primären Speicher nicht öffnen kann, sollte er den sekundären Speicher öffnen und als Standard festlegen. Aktualisiert die Statustabellen Zeile des Nachrichtenspeichers, indem das STATUS_SECONDARY_STORE-Flag in der **PR_RESOURCE_FLAGS** -Spalte festgelegt wird. 
     
 MAPI_SIMPLE_STORE_PERMANENT
   
-> Das Flag STATUS_SIMPLE_STORE festgelegt in den Nachrichtenspeicher **PR_RESOURCE_FLAGS** -Eigenschaft in dessen Status Tabellenzeile Nachricht Store Tabellenzeile, und das Sitzungsprofil. 
+> Legt das STATUS_SIMPLE_STORE-Flag in der **PR_RESOURCE_FLAGS** -Eigenschaft des Nachrichtenspeichers in der Zeile Status Tabelle, Nachrichtenspeicher-Tabellenzeile und im Sitzungsprofil fest. 
     
 MAPI_SIMPLE_STORE_TEMPORARY
   
-> Legt das Flag STATUS_SIMPLE_STORE in den Nachrichtenspeicher **PR_RESOURCE_FLAGS** -Eigenschaft in den Status Tabellenzeile und Nachricht Store Tabellenzeile fest. Das Profil wird nicht geändert. 
+> Legt das STATUS_SIMPLE_STORE-Flag in der **PR_RESOURCE_FLAGS** -Eigenschaft des Nachrichtenspeichers in der Zeile Status Tabelle und Nachrichtenspeichertabelle fest. Das Profil wird nicht geändert. 
     
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Nachrichtenspeichers, das als Standard vorgesehen ist. Wenn ein Client NULL _LpEntryID_übergibt, wird keine Nachrichtenspeicher als Standard ausgewählt.
+> in Ein Zeiger auf die Eintrags-ID des Nachrichtenspeichers, der als Standard verwendet werden soll. Wenn ein Client in _LPENTRYID_NULL übergibt, wird kein Nachrichtenspeicher als Standard ausgewählt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
+> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISession::SetDefaultStore** -Methode legt einen Nachrichtenspeicher als eine der folgenden: 
+Mit der **IMAPISession:: SetDefaultStore** -Methode wird ein Nachrichtenspeicher als einer der folgenden festgelegt: 
   
-- Die Standard-Nachrichtenspeicher für die Sitzung.
+- Der standardmäßige Nachrichtenspeicher für die Sitzung.
     
-- Die primäre Nachrichtenspeicher für die Sitzung.
+- Der primäre Nachrichtenspeicher für die Sitzung.
     
-- Die sekundäre Nachrichtenspeicher für die Sitzung.
+- Der sekundäre Nachrichtenspeicher für die Sitzung.
     
-Zum Einrichten eines Nachrichtenspeichers als Standard muss der Nachrichtenspeicher folgender Flags in seiner **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft festlegen können:
+Zum Einrichten eines Nachrichtenspeichers als Standard muss für den Nachrichtenspeicher die folgenden Flags in der **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft festgelegt sein:
   
 - STORE_SUBMIT_OK
     
@@ -95,35 +95,35 @@ Zum Einrichten eines Nachrichtenspeichers als Standard muss der Nachrichtenspeic
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können Standard-Informationsspeicher für die Sitzung bestimmen, indem Status abrufen und für die Einstellung des STATUS_DEFAULT_STORE-Flags in der Spalte **PR_RESOURCE_FLAGS** suchen. Die Zeile, die diese Einstellung hat stellt den Nachrichtenspeicher, der als Sitzung Standardproxy festgelegt ist. 
+Sie können den standardmäßigen Nachrichtenspeicher für die Sitzung bestimmen, indem Sie die Statustabelle abrufen und nach der Einstellung des STATUS_DEFAULT_STORE-Flags in der **PR_RESOURCE_FLAGS** -Spalte suchen. Die Zeile mit dieser Einstellung stellt den Nachrichtenspeicher dar, der als Sitzungs Standard festgelegt ist. 
   
-Wenn die MAPI_DEFAULT_STORE oder das MAPI_SIMPLE_STORE_PERMANENT-Flag festgelegt ist, aktualisiert MAPI Profil, Nachricht Store Tabelle und Statustabelle. 
+Wenn das MAPI_DEFAULT_STORE-oder das MAPI_SIMPLE_STORE_PERMANENT-Flag festgelegt ist, aktualisiert MAPI das Profil, die Nachrichtenspeichertabelle und die Statustabelle. 
   
-Wenn die Nachricht Store Standardeinstellung eine Änderung vorgenommen wird, werden die folgenden Benachrichtigungen generiert:
+Bei jeder Änderung der Standardeinstellung für den Nachrichtenspeicher werden die folgenden Benachrichtigungen generiert:
   
-- Für jede betroffene Zeile in der Nachricht Store und den Status der Tabelle wird eine Benachrichtigung bei **FnevTableModified** ausgegeben. 
+- Für jede betroffene Zeile in der Nachrichtenspeicher-und Statustabelle wird eine **fnevTableModified** -Ereignisbenachrichtigung ausgegeben. 
     
-- Eine interne Benachrichtigung wird an die Warteschlange MAPI ausgegeben. Bereits in Bearbeitung befindlichen Vorgänge werden ohne Änderung ausgefüllt. neue Vorgänge mit Standard-Informationsspeicher, wie etwa Nachricht herunterladen, werden für den neuen Standardspeicher verarbeitet.
+- Eine interne Benachrichtigung wird an den MAPI-Spooler ausgegeben. Vorgänge, die bereits ausgeführt werden, werden ohne Änderung abgeschlossen. neue Vorgänge, die den standardmäßigen Nachrichtenspeicher betreffen, wie das Herunterladen von Nachrichten, werden für den neuen Standardspeicher verarbeitet.
     
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnSetDefaultStore  <br/> |MFCMAPI (engl.) verwendet die **IMAPISession::SetDefaultStore** -Methode, um der ausgewählten Speicher als Standard-Informationsspeicher festgelegt.  <br/> |
+|MainDlg. cpp  <br/> |CMainDlg:: OnSetDefaultStore  <br/> |MFCMAPI verwendet die **IMAPISession:: SetDefaultStore** -Methode, um den ausgewählten Speicher als Standardspeicher festzulegen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagResourceFlags (kanonische Eigenschaft)](pidtagresourceflags-canonical-property.md)
+[Kanonische Pidtagresourceflags (-Eigenschaft](pidtagresourceflags-canonical-property.md)
   
-[PidTagStoreSupportMask (kanonische Eigenschaft)](pidtagstoresupportmask-canonical-property.md)
+[Kanonische PidTagStoreSupportMask-Eigenschaft](pidtagstoresupportmask-canonical-property.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[IMAPISession: IUnknown](imapisessioniunknown.md)
+[IMAPISession : IUnknown](imapisessioniunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

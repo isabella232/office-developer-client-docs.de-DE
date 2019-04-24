@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a9b8efcf-edc0-ad99-deae-21df16c58807
 description: Gibt die Breite des zusammengesetzten Texts in einem Shape zurück.
-ms.openlocfilehash: d96b9489c08ce38205f8e9ad91e361fcb643c39c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 43848bba4d24a0c31a3a084d123cd56140bf0709
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332270"
 ---
 # <a name="textwidth-function"></a>TEXTWIDTH Function
 
@@ -22,16 +22,16 @@ Gibt die Breite des zusammengesetzten Texts in einem Shape zurück.
   
 ## <a name="syntax"></a>Syntax
 
-TEXTWIDTH (** *Shapename! TheText* ** ** *[, maxBreite]* **) 
+TextWIDTH (* * *Shapename! DerText* * * * * *[, MaximumWidth]* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Shapename! TheText_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Verweis auf die Zelle TheText mit der in der Ziel-Shape.  _Shapename!_ ist der Name des Shapes, von dem Sie den Text abrufen möchten.  <br/> |
-| _maxBreite_ <br/> |Optional  <br/> |**Numeric** <br/> |Die maximale Breite eines Textblocks.  <br/> |
+| _Shapename! DerText_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Verweis auf die Zelle mit dem Namen DerText im Ziel-Shape.  _Shapename!_ ist der Name der Form, aus der Sie den Text abrufen möchten.  <br/> |
+| _MaximumWidth_ <br/> |Optional  <br/> |**Numerisch** <br/> |Die maximale Breite eines Textblocks.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
@@ -39,13 +39,13 @@ Zeichenfolge
 
 Die TEXTWIDTH-Funktion wird meistens verwendet, um die Breite eines Shapes so anzupassen, dass der enthaltene Text vollständig hineinpasst.
   
-Wenn _SheetN!_ wird Length angegeben, das Standard-Shape ist das aktuelle Shape. 
+Wenn _Sheetn!_ nicht angegeben ist, ist die Standardform die aktuelle Form. 
   
-Wenn _maxBreite_ angegeben ist, ist das Ergebnis der längsten Textzeile in _maxBreite_hineinpasst. Wenn _maxBreite_ ausgelassen wird, ist das Ergebnis die gesamte Breite des Texts. 
+Wenn _MaximumWidth_ angegeben wird, ist das Ergebnis die längste Textzeile, die in _MaximumWidth_passt. Wenn _MaximumWidth_ ausgelassen wird, ist das Ergebnis die Gesamtbreite des Texts. 
   
 ## <a name="example"></a>Beispiel
 
-(TEXTWIDTH(DerText) 
+TextWIDTH (DerText) 
   
 Gibt die Gesamtlänge des Texts im aktuellen Shape zurück. 
   

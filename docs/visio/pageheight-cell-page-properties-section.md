@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0184814c-2d67-6ad4-e336-5694612e518d
 description: Enthält die Höhe der gedruckten Seite in Zeichnungseinheiten.
-ms.openlocfilehash: e198e90e9c70aad1e41ee02d5dcefea68846486c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ac24bee517f29da333a445f276447c1aa682f01c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334349"
 ---
-# <a name="pageheight-cell-page-properties-section"></a>PageHeight Cell (Page Properties Section)
+# <a name="pageheight-cell-page-properties-section"></a>Zelle "PageHeight" (Abschnitt "Page Properties")
 
 Enthält die Höhe der gedruckten Seite in Zeichnungseinheiten.
   
@@ -24,13 +24,13 @@ Enthält die Höhe der gedruckten Seite in Zeichnungseinheiten.
 
 Sie können die Seitenhöhe auch auf der Registerkarte **Zeichenblattgröße** im Dialogfeld **Seite einrichten** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**) oder die Seitengröße manuell mit der Maus ändern. 
   
-Wenn Sie einen Verweis auf die Zelle PageHeight aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PageHeight aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PageHeight  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageHeight aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PageHeight aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f4217030-5fd1-4ec4-a83f-752717fbb787
-description: Meldet sich bei der Website für soziale Netzwerke mithilfe der formularbasierten Authentifizierung.
-ms.openlocfilehash: 4af0301d5b619ce7f9ff54b97f54b4b00408a564
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Meldet sich mithilfe der formularbasierten Authentifizierung an der Website für soziale Netzwerke an.
+ms.openlocfilehash: 7ef7af8c1c2cdb783bdecd71b29635468e19dc6a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335364"
 ---
 # <a name="isocialsessionlogonweb"></a>ISocialSession::LogonWeb
 
-Meldet sich bei der Website für soziale Netzwerke mithilfe der formularbasierten Authentifizierung.
+Meldet sich mithilfe der formularbasierten Authentifizierung an der Website für soziale Netzwerke an.
   
 ```cpp
 HRESULT _stdcall LogonWeb([in] BSTR connectIn, [out] BSTR* connectOut);
@@ -27,35 +27,35 @@ HRESULT _stdcall LogonWeb([in] BSTR connectIn, [out] BSTR* connectOut);
 
 _connectIn_
   
-> [in] Eine Zeichenfolge, die ist **null**, eine URL zu einem Formular Anmeldung auf dem Web oder eine Zeichenfolge, die Anmeldeinformationen, je nach Kontext während der Anmeldung beim Aufruf dieser Methode enthält.
+> in Eine Zeichenfolge, die **null**ist, eine URL zu einem Anmeldeformular im Web oder eine Zeichenfolge, die Anmeldeinformationen enthält, je nach Kontext im Anmeldeprozess, wenn diese Methode aufgerufen wird.
     
-_connectOut_
+_Verbindung_
   
-> [out] Eine Zeichenfolge, die Anmeldeinformationen enthält.
+> Out Eine Zeichenfolge, die Anmeldeinformationen enthält.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Outlook Social Connector (OSC) Ruft die **LogonWeb** -Methode nur, wenn der Anbieter gibt an, dass sie die formularbasierte Authentifizierung unterstützt. Der Anbieter gibt an, dass es formularbasierte Authentifizierung erfordert, indem **UseLogonWebAuth** als **true** in den XML-Code für **Funktionen**festlegen. Wenn der Anbieter **UseLogonWebAuth** als **false**legt fest, die OSC wird die Standardauthentifizierung verwendet und die [ISocialSession::Logon](isocialsession-logon.md) -Methode aufgerufen. 
+Der Outlook Connector für soziale Netzwerke (OSC) Ruft die **LogonWeb** -Methode nur auf, wenn der Anbieter angibt, dass die formularbasierte Authentifizierung unterstützt wird. Der Anbieter gibt an, dass die formularbasierte Authentifizierung erforderlich ist, indem **useLogonWebAuth** als **true** im XML for **Capabilities**festgelegt wird. Wenn der Anbieter **useLogonWebAuth** als **false**festlegt, verwendet der osc die Standardauthentifizierung und ruft die [ISocialSession:: Login](isocialsession-logon.md) -Methode auf. 
   
-Anmelden bei einer Website für soziale Netzwerke mithilfe der formularbasierten Authentifizierung umfasst das Aufrufen der Methods **LogonWeb** und [ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md) in einer bestimmten Reihenfolge: 
+Bei der Anmeldung an einem sozialen Netzwerkstandort mithilfe der formularbasierten Authentifizierung müssen Sie die Methoden **LogonWeb** und [ISocialSession:: GetLogonUrl](isocialsession-getlogonurl.md) in einer bestimmten Reihenfolge aufrufen: 
   
-1. Die OSC ruft **LogonWeb** beim ersten **null** an den _ConnectIn_ -Parameter übergeben. 
+1. OSC ruft **LogonWeb** zum ersten Mal auf und übergibt **null** an den __ Parameter connectin. 
     
-2. Der Anbieter wird von der OSC_E_AUTH_ERROR Fehler an das osc bilden.
+2. Der Anbieter löst den OSC_E_AUTH_ERROR-Fehler an den OSC aus.
     
-3. Die OSC-Anrufe Weiter **GetLogonUrl**.
+3. Der OSC ruft **GetLogonUrl**.
     
-4. Der Anbieter gibt die entsprechende URL zu einer Anmeldeseite in der **GetLogonUrl** -Methode zurück. 
+4. Der Anbieter gibt die entsprechende URL an eine Anmeldeseite in der **GetLogonUrl** -Methode zurück. 
     
-5. Die OSC mithilfe den von **GetLogonUrl** zurückgegebenen URL die Anmeldeseite von formularbasierten angezeigt. 
+5. OSC verwendet die von **GetLogonUrl** zurückgegebene URL, um die formularbasierte Anmeldeseite anzuzeigen. 
     
-6. Die OSC ruft dann **LogonWeb** ein zweites Mal die URL an das Anmeldeformular im _ConnectIn_ -Parameter übergeben. 
+6. Der OSC ruft dann **LogonWeb** ein zweites Mal auf, wobei die URL an das Anmeldeformular im __ Parameter connectin übergeben wird. 
     
-7. Wenn Authentifizierung erfolgreich ist, gibt der Anbieter Anmeldeinformationen im _ConnectOut_ -Parameter an die OSC. Wenn die Authentifizierung fehlschlägt, löst der Anbieter der OSC_E_AUTH_ERROR Fehler, der die OSC aus. 
+7. Wenn die Authentifizierung erfolgreich ist, gibt der Anbieter Anmeldeinformationen im __ Parameter Connecting an den osc zurück. Wenn die Authentifizierung fehlschlägt, löst der Anbieter den OSC_E_AUTH_ERROR-Fehler an den OSC aus. 
     
-Wenn der OSC-Anbieter mit zwischengespeicherten Anmeldeinformationen anmelden unterstützt, gibt **UseLogonCached** in **Funktionen** XML als **true** an. Der Anbieter sollte Anmeldeinformationen in der Zeichenfolge _ConnectOut_ tätigen, die der Anbieter das osc bilden, um Verbindungen zu speichern möchte. Das osc bilden kann nicht die Zeichenfolge _ConnectOut_ interpretieren. Nachdem die OSC überprüft hat, dass diese **UseLogonCached** auf **true**festgelegt ist, werden die OSC die Zeichenfolge für die Sicherheit vor dem Speichern in der Windows-Registrierung verschlüsselt. Die OSC übergibt diese Zeichenfolge für den Parameter _ConnectIn_ auf nachfolgenden Versuche, die durch Aufrufen von [ISocialSession2::LogonCached](isocialsession2-logoncached.md)in sozialen Netzwerken anmelden. 
+Wenn der OSC-Anbieter die Anmeldung mithilfe zwischengespeicherter Anmeldeinformationen unterstützt, gibt er **useLogonCached** als **true** im **Capabilities** -XML an. Der Anbieter sollte alle Anmeldeinformationen in der _Verbindungs_ Zeichenfolge platzieren, die der osc über Verbindungen speichern möchte. OSC interpretiert die _Verbindungs_ Zeichenfolge nicht. Nachdem OSC überprüft hat, dass **useLogonCached** auf **true**festgelegt ist, verschlüsselt der osc die Zeichenfolge vor dem Speichern in der Windows-Registrierung. OSC übergibt diese Zeichenfolge an den __ Parameter connectin bei nachfolgenden Anmeldeversuchen beim sozialen Netzwerk durch Aufrufen von [ISocialSession2:: LogonCached](isocialsession2-logoncached.md). 
   
-Informationen zu Fehlercodes finden Sie unter [Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md).
+Informationen zu Fehlercodes finden Sie unter [Outlook Social Connector-Anbieter – Fehlercodes](outlook-social-connector-provider-error-codes.md).
   
 ## <a name="see-also"></a>Siehe auch
 

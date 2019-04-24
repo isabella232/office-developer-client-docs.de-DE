@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cf063c05-5789-e037-700b-1e70df00e254
 description: Bestimmt die Groß- und Kleinschreibung für den Text des Shapes. Die Optionen Nur Großbuchstaben (1) und Große Anfangsbuchstaben (2) ändern die Darstellung eines komplett in Großbuchstaben eingegebenen Texts nicht. Der Text muss in Kleinbuchstaben eingegeben werden, damit diese Optionen eine Wirkung zeigen.
-ms.openlocfilehash: 9acd786b6fa38aec42990f1fd942174367f1135e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 50ceaa1188caded40d36b8837c346fbbba2e14d2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337233"
 ---
-# <a name="case-cell-character-section"></a>Case Cell (Character Section)
+# <a name="case-cell-character-section"></a>Zelle "Case" (Abschnitt "Character")
 
 Bestimmt die Groß- und Kleinschreibung für den Text des Shapes. Die Optionen Nur Großbuchstaben (1) und Große Anfangsbuchstaben (2) ändern die Darstellung eines komplett in Großbuchstaben eingegebenen Texts nicht. Der Text muss in Kleinbuchstaben eingegeben werden, damit diese Optionen eine Wirkung zeigen.
   
@@ -28,18 +28,18 @@ Bestimmt die Groß- und Kleinschreibung für den Text des Shapes. Die Optionen N
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Case aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Case aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Char.Case [ *i* ] wobei *i* = < 1 >, 2, 3,...  <br/> |
+| Zellenname:  <br/> | Char. Case [ *i* ] wobei *i* = <1>, 2, 3,...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Case aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Case aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-| Zeilenindex:  <br/> |**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2,...  <br/> |
+| Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2,...  <br/> |
 | Zellenindex:  <br/> |**visCharacterCase** <br/> |
    
 

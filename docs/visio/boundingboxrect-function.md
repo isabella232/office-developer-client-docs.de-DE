@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1f66d2b2-ec9e-cd58-7642-96850fe4589e
 description: Gibt die Koordinate des angegebenen Rands des das Shape umgebenden Felds zurück.
-ms.openlocfilehash: 2c850cb213ec0093ead53cd860f92e38da46f27e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0018118eb0991fe9dc1da0eb000566b69d8a4b4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338052"
 ---
 # <a name="boundingboxrect-function"></a>BOUNDINGBOXRECT Function
 
@@ -25,7 +25,7 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-BOUNDINGBOXRECT (** *Index* **) 
+BOUNDINGBOXRECT (* * *Index* * *) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -33,13 +33,13 @@ BOUNDINGBOXRECT (** *Index* **)
 |:-----|:-----|:-----|:-----|
 | _Index_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Der Rand des das Shape umgebenden Felds, für den die Koordinate abgerufen werden soll. Mögliche Werte finden Sie in den Anmerkungen.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
- **Nummer**
+ **Number**
   
 ## <a name="remarks"></a>Bemerkungen
 
- *Index* kann eine der folgenden Werte sein: 
+ *Index* kann einer der folgenden Werte sein. 
   
 |**Element**|**Wert**|
 |:-----|:-----|
@@ -48,6 +48,6 @@ BOUNDINGBOXRECT (** *Index* **)
 |Oberer Rand  <br/> |2  <br/> |
 |Unterer Rand  <br/> |3  <br/> |
    
-Wenn die Form ein übergeordnetes Objekt ist, ist der Rückgabewert im Koordinatensystem des übergeordneten.
+Wenn die Form über ein übergeordnetes Shape verfügt, ist der Rückgabewert im Koordinatensystem des übergeordneten Elements.
   
 

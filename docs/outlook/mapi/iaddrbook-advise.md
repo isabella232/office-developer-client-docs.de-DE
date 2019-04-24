@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2def89ed-e4ce-446a-8b80-132d11ae8f8b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 43569b22cace7b2700d37ace49fd734b45fec73c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 7abafafd3d4bd9618d85a7dac34e4556545167bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334755"
 ---
 # <a name="iaddrbookadvise"></a>IAddrBook::Advise
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert einen Client oder Dienstanbieter Erhalt von Benachrichtigungen zu Änderungen an einen oder mehrere Einträge im Adressbuch an.
+Registriert einen Client oder Dienstanbieter für den Empfang von Benachrichtigungen zu Änderungen an einem oder mehreren Einträgen im Adressbuch.
   
 ```cpp
 HRESULT Advise(
@@ -41,15 +41,15 @@ HRESULT Advise(
 
  _cbEntryID_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID der Adressbuchcontainer messaging-Benutzer oder eine Verteilerliste, die eine Benachrichtigung generiert wird, bei einer Änderung des Typs oder Typen, die im Parameter _UlEventMask_ beschrieben wird. 
+> in Ein Zeiger auf die Eintrags-ID des Adressbuch Containers, des Messaging Benutzers oder der Verteilerliste, der eine Benachrichtigung generiert, wenn eine Änderung der im _ulEventMask_ -Parameter beschriebenen Typen auftritt. 
     
  _ulEventMask_
   
-> [in] Eine oder mehrere Benachrichtigungsereignisse, die der Anrufer Empfang registriert wird. Jedes Ereignis ist eine bestimmte Benachrichtigung-Struktur, die Informationen zum Ändern der aufgetretenen enthält zugeordnet. Die folgende Tabelle enthält die gültigen Werte für _UlEventMask_ und ihre entsprechenden Strukturen. 
+> in Ein oder mehrere Benachrichtigungsereignisse, die der Anrufer für den Empfang registriert. Jedes Ereignis ist einer bestimmten Benachrichtigungsstruktur zugeordnet, die Informationen zu der eingetretenen Änderung enthält. In der folgenden Tabelle sind die gültigen Werte für _ulEventMask_ und die entsprechenden Strukturen aufgeführt. 
     
 |**Benachrichtigungsereignis**|**Entsprechende Struktur**|
 |:-----|:-----|
@@ -63,43 +63,43 @@ HRESULT Advise(
    
  _lpAdviseSink_
   
-> [in] Ein Zeiger auf das Empfängerobjekt Advise aufgerufen werden, tritt das Ereignis für das Benachrichtigung angefordert wurde.
+> in Ein Zeiger auf das Advise-Senke-Objekt, das aufgerufen werden soll, wenn das Ereignis, für das die Benachrichtigung angefordert wurde, auftritt.
     
  _lpulConnection_
   
-> [out] Ein Zeiger auf eine Verbindung ungleich NULL-Zahl, die benachrichtigungsregistrierung darstellt.
+> Out Ein Zeiger auf eine Verbindungsnummer ungleich NULL, die die Benachrichtigungs Registrierung darstellt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die benachrichtigungsregistrierung war erfolgreich.
+> Die Benachrichtigungs Registrierung war erfolgreich.
     
 MAPI_E_INVALID_ENTRYID 
   
-> Verantwortlich für die Eintrags-ID _LpEntryID_ übergebenen Adressbuchanbieter konnte eine Benachrichtigung für den entsprechenden Eintrag nicht registriert werden. 
+> Der Adressbuchanbieter, der für die in _lpEntryID_ übergebene Eintrags-ID zuständig ist, konnte keine Benachrichtigung für den entsprechenden Eintrag registrieren. 
     
 MAPI_E_NO_SUPPORT 
   
-> Benachrichtigung wird von Adressbuchanbieter verantwortlich für das durch die Eintrags-ID in der _LpEntryID_ -Parameter übergebene Objekt nicht unterstützt. 
+> Die Benachrichtigung wird nicht vom Adressbuchanbieter unterstützt, der für das durch den _lpEntryID_ -Parameter übergebene Eintragsbezeichner verantwortlich ist. 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Die Eintrags-ID _LpEntryID_ übergebenen kann von jedem der adressbuchanbietern implementierte im Profil behandelt werden. 
+> Die in _lpEntryID_ übergebene Eintrags-ID kann von keinem der Adressbuchanbieter im Profil verarbeitet werden. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Clients und Dienstanbieter Aufrufen die **Advise** -Methode für einen bestimmten Typ oder Typen der Benachrichtigung auf ein Adressbuch Adresseintrag registriert. Die Typen der Benachrichtigung werden durch die mit der _UlEventMask_ -Parameter übergebene Ereignismaske angezeigt. 
+Clients und Dienstanbieter rufen die **Advise** -Methode auf, um für einen bestimmten Typ oder eine Art von Benachrichtigung für einen Adressbucheintrag zu registrieren. Die Benachrichtigungstypen werden durch die Ereignismaske angezeigt, die mit dem _ulEventMask_ -Parameter übergeben wird. 
   
-MAPI leitet diese **Advise** -Anruf an die Adressbuchanbieter, die verantwortlich für den Eintrag wie die Eintrags-ID in der _LpEntryID_ -Parameter angegeben ist. Der Adressbuchanbieter behandelt die Registrierung selbst, oder ruft die Support-Methode, [IMAPISupport::Subscribe](imapisupport-subscribe.md), MAPI, um den Anrufer registrieren aufgefordert. Eine Zahl ungleich NULL Verbindung wird zurückgegeben, um die erfolgreiche Registrierung darzustellen.
+MAPI leitet diesen **Advise** -Aufruf an den Adressbuchanbieter weiter, der für den Eintrag verantwortlich ist, wie durch die Eintrags-ID im _lpEntryID_ -Parameter angegeben. Der Adressbuchanbieter behandelt die Registrierung selbst oder ruft die Support Methode [IMAPISupport:: subscribe](imapisupport-subscribe.md)auf, um MAPI zur Registrierung des Anrufers aufzufordern. Eine Verbindungsnummer, die ungleich NULL ist, wird zurückgegeben, um die erfolgreiche Registrierung darzustellen.
   
-Wenn eine Änderung an den Eintrag vom Typ angegeben durch die benachrichtigungsregistrierung auftritt, ruft der Adressbuchanbieter die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für der Advise-Empfängerobjekt im _LpAdviseSink_ -Parameter angegebene. Die **OnNotify** -Methode enthält eine [Benachrichtigung](notification.md) Struktur als Eingabeparameter, der Daten zur Beschreibung des Ereignisses enthält. 
+Bei jeder Änderung des Eintrags des Typs, der durch die Benachrichtigungs Registrierung angegeben wird, ruft der Adressbuchanbieter die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode für das Advise-Senke-Objekt auf, das im _lpAdviseSink_ -Parameter angegeben ist. Die **OnNotify** -Methode enthält [](notification.md) eine Benachrichtigungsstruktur als Eingabeparameter, der Daten zum Beschreiben des Ereignisses enthält. 
   
-Je nach der Adressbuchanbieter kann der Anruf an **OnNotify** unmittelbar nach der Änderung an das registrierte Objekt oder zu einem späteren Zeitpunkt auftreten. Auf Systemen, die mehreren Threads der Ausführung zu unterstützen, kann der Aufruf von **OnNotify** auf einem beliebigen Thread auftreten. Clients können anfordern, dass diese Benachrichtigungen erfolgen für einen bestimmten Thread durch Aufrufen der [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion, um das Empfängerobjekt Advise erstellen, das an **Advise**übergeben wird. 
+Je nach Adressbuchanbieter kann der Aufruf von onNotify **** unmittelbar nach der Änderung des registrierten Objekts oder zu einem späteren Zeitpunkt erfolgen. Auf Systemen, die mehrere Threads der Ausführung unterstützen, kann **** der Aufruf von OnNotify in jedem Thread auftreten. Clients können diese Benachrichtigungen für einen bestimmten Thread anfordern, indem Sie die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion zum Erstellen des Advise-Senke-Objekts aufrufen, das an **Advise**übergeben wird. 
   
-Da ein Adressbuchanbieter der Advise-Empfängerobjekt kann jederzeit nach der erfolgreiche Abschluss der **Advise** aufrufen und aufrufen, bevor eine [IAddrBook::Unadvise](iaddrbook-unadvise.md) die Benachrichtigung Abbrechen von Clients übergebenen freigeben kann, sollte Clients freigeben. Ihre Advise Empfängerobjekten, wenn **Advise** zurückgegeben. 
+Da ein Adressbuchanbieter das Advise-Senke-Objekt, das von Clients übergeben wird, jederzeit freigeben kann, nachdem der **Advise** -Aufruf erfolgreich abgeschlossen wurde, und bevor ein [IAddrBook:: Unadvise](iaddrbook-unadvise.md) -Aufruf zum Abbrechen der Benachrichtigung ausgeführt wird, sollten Clients die Freigabe Ihre Advise-Senke-Objekte, wenn **Advise** zurückgegeben wird. 
   
-Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event Notification in MAPI](event-notification-in-mapi.md).
+Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagControlType (kanonische Eigenschaft)
+title: Kanonische Pidtagcontroltype (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,92 +11,92 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7728fa2f-4a59-4e86-90f1-4384824598aa
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3c1d415cc9aa4e66b6c4b17262f9a491fc01f6bd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 8614441ffa60181366c860b66ef4618ce32106be
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334734"
 ---
-# <a name="pidtagcontroltype-canonical-property"></a>PidTagControlType (kanonische Eigenschaft)
+# <a name="pidtagcontroltype-canonical-property"></a>Kanonische Pidtagcontroltype (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Wert zurück, der für ein Steuerelement in einem Dialogfeld verwendet einen Steuerelementtyp angibt. 
+Enthält einen Wert, der einen Steuerelementtyp für ein Steuerelement angibt, das in einem Dialogfeldverwendet wird. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTROL_TYPE  <br/> |
 |Kennung:  <br/> |0x3F02  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
+|Bereich:  <br/> |MAPI-Anzeigetabelle  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
+Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
 DTCT_BUTTON 
   
-> Ein Dialogfeld Schaltflächen-Steuerelement.
+> Ein Dialogfeld-Steuerelement.
     
 DTCT_CHECKBOX 
   
-> Ein Kontrollkästchen-Dialogfeld.
+> Ein Dialogfeld.
     
 DTCT_COMBOBOX 
   
-> Ein Kombinationsfeld-Dialogfeld.
+> Dialogfeld.
     
 DTCT_DDLBX 
   
-> Ein Dialogfeld Dropdown-Listenfeld.
+> Ein Dropdown-Listenfeld für Dialogfelder.
     
 DTCT_EDIT 
   
-> Ein Dialogfeld bearbeiten Textfeld.
+> Ein Textfeld zum Bearbeiten von Dialogfeldern.
     
 DTCT_GROUPBOX 
   
-> Ein Dialogfeld für die Gruppe.
+> Dialogfeld.
     
 DTCT_LABEL 
   
-> Ein Bezeichnungsfeld.
+> Eine Dialogfeld Bezeichnung.
     
 DTCT_LBX 
   
-> Ein Dialogfeld für die Liste.
+> Dialog Listenfeld.
     
 DTCT_LISTBOX 
   
-> Ein Dialogfeld für die Liste.
+> Dialog Listenfeld.
     
 DTCT_MVDDLBX 
   
-> Ein mehrwertiges Listenfeld durch eine mehrwertige Eigenschaft vom Typ String aufgefüllt.
+> Ein mehrwertiges Listenfeld, das von einer mehrwertigen Eigenschaft vom Typ String aufgefüllt wird.
     
 DTCT_PAGE 
   
-> Ein Dialogfeld mit Registerkarten-Seite.
+> Ein Dialogfeld mit Registerkarten.
     
 DTCT_RADIOBUTTON 
   
-> Ein Optionsfeld Dialogfeld.
+> Ein Dialogfeld.
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-mapitags.h
+mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -108,5 +108,5 @@ mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

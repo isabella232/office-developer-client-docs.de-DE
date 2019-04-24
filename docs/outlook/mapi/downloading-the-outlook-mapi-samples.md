@@ -9,11 +9,11 @@ api_type:
 ms.assetid: ee3a65ec-c776-4aa1-a772-de56fc33a8d1
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 6b41d9cbd6ec74167dce74e97bb0923817dc6f84
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338360"
 ---
 # <a name="downloading-the-outlook-mapi-samples"></a>Herunterladen der MAPI-Beispiele f�r Outlook
 

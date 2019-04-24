@@ -1,5 +1,5 @@
 ---
-title: ParagraphRow_Type ComplexType ("Visio XML")
+title: ParagraphRow_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 32bb67e1-8db8-fe28-f173-028a20bb136c
 ms.openlocfilehash: 64001e12b3e65e3259c3ebe381b2825fb80ad7b0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338479"
 ---
-# <a name="paragraphrowtype-complextype-visio-xml"></a>ParagraphRow_Type ComplexType ("Visio XML")
+# <a name="paragraphrowtype-complextype-visio-xml"></a>ParagraphRow_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |IndexedRow_Type  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -46,7 +46,7 @@ ms.locfileid: "25390688"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

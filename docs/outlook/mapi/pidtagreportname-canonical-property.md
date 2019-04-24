@@ -1,5 +1,5 @@
 ---
-title: PidTagReportName (kanonische Eigenschaft)
+title: Kanonische Pidtagreportname (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4ec3100f-7cf1-4702-b326-e6da586a7bb2
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3c1a848eec84c7d81792a95baa3f47fa6779e95f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 33a7545f9b2719615617d46e2d5ed1f6952b5522
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335427"
 ---
-# <a name="pidtagreportname-canonical-property"></a>PidTagReportName (kanonische Eigenschaft)
+# <a name="pidtagreportname-canonical-property"></a>Kanonische Pidtagreportname (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Anzeigenamen für den Empfänger, der Berichte für diese Nachricht erhalten soll.
   
@@ -34,23 +34,23 @@ Enthält den Anzeigenamen für den Empfänger, der Berichte für diese Nachricht
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Empfänger, den alle für diese Nachricht generierten Berichte empfangen der Absender delegiert wurde.
+Diese Eigenschaften sind Beispiele für die Adresseigenschaften des Empfängers, an den der Absender delegiert wurde, um alle für diese Nachricht generierten Berichte zu empfangen.
   
-Eine Clientanwendung, die Berichte an einen anderen Benutzer weitergeleitet werden muss, sollten diese Eigenschaften Zeitpunkt der Übermittlung von Nachricht festlegen. Wenn sie nicht festgelegt sind, werden die Berichte an den Absender der Nachricht gesendet.
+Eine Clientanwendung, die Berichte an einen anderen Benutzer weiterleiten muss, sollte diese Eigenschaften bei der Nachrichten Übermittlungszeit festlegen. Wenn Sie nicht festgelegt sind, werden die Berichte an den Absender der Nachricht gesendet.
   
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,5 +62,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

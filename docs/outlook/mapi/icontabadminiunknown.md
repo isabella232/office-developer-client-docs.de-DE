@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1f72ab6c-14da-47b7-97ab-f729914214ba
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d75f74de323e2ba70675a02e388d6d1539cd30ed
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 1423f76b5aade400d8b828fe63a275e14b6a0c6e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337107"
 ---
 # <a name="icontabadmin--iunknown"></a>IContabAdmin : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt wenden Sie sich an Ordnern aus dem Adressbuch von Microsoft Outlook 2010 und Microsoft Outlook 2013.
+Entfernt Kontaktordner aus dem Adressbuch von Microsoft Outlook 2010 und Microsoft Outlook 2013.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |cabadmin.h  <br/> |
-|Verfügbar gemacht von:  <br/> ||
+|Headerdatei  <br/> |cabadmin. h  <br/> |
+|Verf�gbar gemacht von:  <br/> ||
 |Implementiert von:  <br/> |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
 |Aufgerufen von:  <br/> |CRM  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IContabAdmin  <br/> |
@@ -40,6 +40,6 @@ Entfernt wenden Sie sich an Ordnern aus dem Adressbuch von Microsoft Outlook 201
 
 |||
 |:-----|:-----|
-|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |Entfernt den Kontakt Adresse Buch (CAB) mit der angegebenen Eintrags-ID aus der Adressbuchhierarchie angegeben.  <br/> |
+|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |Entfernt das von der angegebenen Eintrags-ID angegebene Kontakt Adressbuch (CAB) aus der Adressbuchhierarchie.  <br/> |
    
 

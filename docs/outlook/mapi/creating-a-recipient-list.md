@@ -8,26 +8,26 @@ api_type:
 - COM
 ms.assetid: 270f86dd-2c1f-47eb-80f7-9d0d63936d61
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6de805da2aadd8ac40ca984c5f336d5ca7906248
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e3aa1f2b2e1e7c6d8a9be3fff451002952930ffb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332907"
 ---
 # <a name="creating-a-recipient-list"></a>Erstellen einer Empfängerliste
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Empfängerliste ist eine [ADRLIST](adrlist.md) -Struktur, die ein Array der Eigenschaft Wert Strukturen für jeden Empfänger der Nachricht enthält – Ziel für die Nachricht. Ein Empfänger kann ein human Benutzer, einen Computer oder einen Ordner dar. Alle Nachrichten gesendet werden erfordern mindestens einen Empfänger, die durch den Namen Lösung Prozess wurde – ein Prozess zum sicherstellen, dass die Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) Wert Array-Eigenschaft gehören des Empfängers enthalten ist. 
+Eine Empfängerliste ist eine [ADRLIST](adrlist.md) -Struktur, die ein Array von Eigenschaftswert Strukturen für jeden Nachrichtenempfänger enthält – Ziel für die Nachricht. Ein Empfänger kann einen Benutzer, einen Computer oder einen Ordner darstellen. Für alle Nachrichten, die gesendet werden sollen, ist mindestens ein Empfänger erforderlich, der über den Prozess der Namensauflösung verfügt, um sicherzustellen, dass die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft im Eigenschaftswert Array des Empfängers enthalten ist. 
   
-Die Eigenschaften eines Empfängers sind eine Kombination von Adressbucheigenschaften und Nachrichteneigenschaften. Empfängereigenschaften können auf alle Nachrichten für einen bestimmten Empfänger oder nur für die aktuelle Nachricht anwenden. Beide Nachrichtenspeicher und Transportanbieter Empfängereigenschaften festlegen können. 
+Die Eigenschaften eines Empfängers sind eine Kombination aus Adressbucheigenschaften und Nachrichteneigenschaften. Empfänger Eigenschaften können entweder auf alle Nachrichten für einen bestimmten Empfänger oder nur auf die aktuelle Nachricht angewendet werden. Sowohl Nachrichtenspeicher-als auch Transportanbieter können Empfänger Eigenschaften festlegen. 
   
-Jeden Empfänger muss eine Kerngruppe von Eigenschaften des Arrays der Eigenschaft Wert durch die Zeit haben, die die Nachricht gesendet werden kann. Die erforderlichen Empfängereigenschaften beinhaltet:
+Jeder Empfänger muss über eine zentrale Gruppe von Eigenschaften in seinem Eigenschaftswert Array verfügen, bis die Nachricht gesendet werden kann. Zu den erforderlichen Empfänger Eigenschaften gehört Folgendes:
   
-- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) 
+- **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md)) 
     
 - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 
     
@@ -35,38 +35,38 @@ Jeden Empfänger muss eine Kerngruppe von Eigenschaften des Arrays der Eigenscha
     
 - **PR_ENTRYID**
     
-- **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) 
+- **PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md)) 
     
-- **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) 
+- **PR_SEARCH_KEY** ([Pidtagsearchkey (](pidtagsearchkey-canonical-property.md)) 
     
-Diese Eigenschaften werden verwendet, für den Zugriff auf den Empfänger senden von Nachrichten an diese, und es mit anderen Personen verglichen. Nicht alle diese Eigenschaften müssen sofort verfügbar sein. Sie können einen Empfänger zunächst hinzufügen ohne die Eintrags-ID auf Vorgang der Lösung, dieser Eigenschaft zuzuweisen. Bevor Sie eine Nachricht senden, rufen Sie zu einem bestimmten Zeitpunkt [IAddrBook::ResolveName](iaddrbook-resolvename.md) , um sicherzustellen, dass alle Empfänger in der Empfängerliste aufgelöst werden. Weitere Informationen finden Sie unter [Auflösen von Namen Empfänger](resolving-a-recipient-name.md).
+Diese Eigenschaften werden verwendet, um auf den Empfänger zuzugreifen, Nachrichten zu senden und mit anderen zu vergleichen. Nicht alle diese Eigenschaften müssen sofort verfügbar sein. Sie können einen Empfänger zunächst hinzufügen, ohne dessen Eintrags-ID zu kennen, indem Sie den namens Auflösungsprozess zum Zuweisen dieser Eigenschaft verwenden. Rufen Sie [IAddrBook::](iaddrbook-resolvename.md) ResolveName zu einem bestimmten Zeitpunkt vor dem Senden einer Nachricht auf, um sicherzustellen, dass alle Empfänger in der Empfängerliste aufgelöst werden. Weitere Informationen finden Sie unter [Auflösen eines Empfängernamens](resolving-a-recipient-name.md).
   
-Empfängerlisten können von Benutzern oder Verteilung Listeneinträge in einem Adressbuchcontainer messaging oder Fly erstellt werden. Fly sind Empfänger, die erstellt werden, entweder als temporäre Einträge aus, die nur zum Umgang mit einer Nachricht verwendet werden oder als Einträge, ein persönliches Adressbuch hinzugefügt werden soll. Das Format für einen einmaligen Eintrags-ID und eine Adresse wird durch MAPI definiert. Weitere Informationen zu diesen Formaten finden Sie unter [Einmal-Adressen](one-off-addresses.md) und [Einmaligen-Eintragsbezeichner](one-off-entry-identifiers.md).
+Empfängerlisten können aus Messaging Benutzern oder Verteilerlisten Einträgen in einem Adressbuchcontainer oder aus einmaligen erfolgen erstellt werden. Einmalig sind Empfänger, die entweder als temporäre Einträge erstellt werden, die nur für die Adressierung einer einzelnen Nachricht oder als Einträge verwendet werden, die einem persönlichen Adressbuch hinzugefügt werden sollen. Das Format für eine einmalige Eintrags-ID und-Adresse wird durch MAPI definiert. Weitere Informationen zu diesen Formaten finden Sie unter [einmalige Adressen](one-off-addresses.md) und [einmalige Eintrags-IDs](one-off-entry-identifiers.md).
   
-Sie können Benutzer ihre Empfängerlisten erstellen können:
+Sie können Benutzern das Erstellen Ihrer Empfängerlisten ermöglichen:
   
-- Nur mit den Einträgen aus dem Adressbuch.
+- Nur mit Einträgen aus dem Adressbuch.
     
-- Nur bei einmaligen Einträge.
+- Nur mit einmaligen Einträgen.
     
-- Mit einer Kombination von Address Book Empfänger und Fly.
+- Mit einer Kombination aus Adressbuch Empfängern und einmaligen.
     
- **Eine allgemeine Adresse im Dialogfeld Empfängerliste erstellen**
+ **So erstellen Sie eine Empfängerliste mithilfe des Dialogfelds "allgemeine Adresse"**
   
-1. Weisen Sie eine [ADRPARM](adrparm.md) -Struktur und einen Zeiger auf eine [ADRLIST](adrlist.md) -Struktur. 
+1. Reservieren Sie eine [ADRPARM](adrparm.md) -Struktur und einen Zeiger auf eine [ADRLIST](adrlist.md) -Struktur. 
     
-2. 0 (null) in der Struktur **ADRPARM** Speicher und den **ADRLIST** Zeiger auf NULL festgelegt wurde. 
+2. NULL der Speicher in der **ADRPARM** -Struktur und legen Sie den **ADRLIST** -Zeiger auf NULL. 
     
-3. Rufen Sie [IAddrBook::Address](iaddrbook-address.md) , um das Dialogfeld Adresse anzeigen, und füllen Sie die **ADRPARM** -Struktur. 
+3. Rufen Sie [IAddrBook:: Address](iaddrbook-address.md) auf, um das Dialogfeld Adresse anzuzeigen und die **ADRPARM** -Struktur aufzufüllen. 
     
-4. Rufen Sie [IMessage::ModifyRecipients](imessage-modifyrecipients.md), übergeben den Zeiger **ADRLIST** . Diese Struktur enthält die Eigenschaften der einzelnen der vom Benutzer ausgewählten Empfänger. 
+4. Rufen Sie [IMessage:: ModifyRecipients](imessage-modifyrecipients.md)auf, und übergeben Sie den **ADRLIST** -Zeiger. Diese Struktur enthält die Eigenschaften aller Empfänger, die vom Benutzer ausgewählt werden. 
     
- **So erstellen Sie programmgesteuert eine Empfängerliste**
+ **So erstellen Sie eine Empfängerliste programmgesteuert**
   
-1. Reservieren Sie eine **ADRLIST** -Struktur, die enthält eine [ADRENTRY](adrentry.md) -Struktur für die einzelnen Empfänger an, die in der Liste enthalten sein. Stellen Sie jede **ADRENTRY** Struktur groß genug für alle erforderlichen Eigenschaften und **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)).
+1. Reservieren Sie eine **ADRLIST** -Struktur, die eine [Miet](adrentry.md) Struktur für jeden der Empfänger enthält, der in der Liste enthalten sein soll. Legen Sie die einzelnen **Miet** Strukturen so hoch fest, dass Sie alle erforderlichen Eigenschaften und **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md)) enthalten.
     
-2. Legen Sie für jeden Empfänger des Arrays der Eigenschaft Wert für **aEntries** Mitglied in der **ADRLIST** -Struktur. 
+2. Legen Sie für jeden Empfänger das Eigenschaftswert Array für sein **aEntries** -Element in der **ADRLIST** -Struktur fest. 
     
-3. Rufen Sie [IMessage::ModifyRecipients](imessage-modifyrecipients.md) mit der MODRECIP_ADD-Flag. 
+3. Rufen Sie [IMessage:: ModifyRecipients](imessage-modifyrecipients.md) mit dem MODRECIP_ADD-Kennzeichen Satz auf. 
     
 

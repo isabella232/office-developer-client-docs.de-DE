@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c5bb383-f8e2-4d79-bcf2-aa86c130e8b1
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2405799fa59abf58583553f8e2d3718d68411a19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f8d4fb6b8cd7ad0ebf1e7660a0f3c0602274fa10
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335735"
 ---
 # <a name="errornotification"></a>ERROR_NOTIFICATION
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt die Informationen, die auf ein schwerwiegender Fehler beziehen. Daraufhin wird eine Benachrichtigung Fehler generiert werden soll. 
+Beschreibt Informationen zu einem wichtigen Fehler. Dadurch wird eine Fehlerbenachrichtigung generiert. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _ERROR_NOTIFICATION
@@ -46,7 +46,7 @@ typedef struct _ERROR_NOTIFICATION
 
  **cbEntryID**
   
-> Anzahl der Bytes in die Eintrags-ID auf **LpEntryID**zeigt. 
+> Anzahl der Bytes in der Eintrags-ID, auf die von **lpEntryID**verwiesen wird. 
     
  **lpEntryID**
   
@@ -58,29 +58,29 @@ typedef struct _ERROR_NOTIFICATION
     
  **ulFlags**
   
-> Bitmaske aus Flags verwendet, um das Format des Texts festzulegen, auf dem **LpszError** -Element in der Struktur auf den **LpMAPIError**zeigt. Das folgende Flag kann festgelegt werden:
+> Bitmaske der Flags, mit denen das Format des Texts festgelegt wird, der vom **lpszError** -Element in der Struktur verweist, auf die durch **lpMAPIError**verwiesen wird. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  **lpMAPIError**
   
 > Zeiger auf eine [MAPIERROR](mapierror.md) -Struktur, die den Fehler beschreibt. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **ERROR_NOTIFICATION** -Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Wenn **Info** Mitglied eine **Benachrichtigung** Struktur eine **ERROR_NOTIFICATION** -Struktur enthält, wird das **UlEventType** Mitglied der **Benachrichtigung** Struktur auf _FnevCriticalError_festgelegt.
+Die **ERROR_NOTIFICATION** -Struktur ist ein Mitglied der Vereinigung von Strukturen, die im **Info** -Element der Benachrichtigungs [](notification.md) Struktur enthalten sind. Wenn der **Info** -Member einer **Benachrichtigungs** Struktur eine **ERROR_NOTIFICATION** -Struktur enthält, wird das **ulEventType** -Element der **Benachrichtigungs** Struktur auf _fnevCriticalError_festgelegt.
   
-Der Wert des Members **CbEntryID** und der **LpEntryID** Member kann NULL sein. 
+Der Wert des **cbEntryID** -Elements und des **lpEntryID** -Members kann NULL sein. 
   
-Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der folgenden Tabelle beschrieben.
+Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die **IMAPISupport** -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die **IMAPISupport** -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

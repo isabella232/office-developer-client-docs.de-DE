@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 72290fd3-00d7-4055-bbfa-0c47b6e0f62d
-description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 97e7c90c2fdc715d7d0749300cc62854fffa6447
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 20 November, 2011'
+ms.openlocfilehash: c5e92c44d7078560ed84d72b3477d5cf2e809353
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333040"
 ---
 # <a name="copying-or-moving-a-message-or-a-folder"></a>Kopieren oder Verschieben einer Nachricht oder eines Ordners
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Client können eine der vier Methoden zum Kopieren oder verschieben Sie eine Nachricht oder einen Ordner:
+Ein Client kann eine der vier Methoden zum Kopieren oder Verschieben einer Nachricht oder eines Ordners verwenden:
   
 - [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md)
     
@@ -29,60 +29,60 @@ Ein Client können eine der vier Methoden zum Kopieren oder verschieben Sie eine
     
 - [IMAPIProp::CopyProps](imapiprop-copyprops.md)
     
-Durch Festlegen der entsprechenden Flags und Parameter, können **CopyTo** und **CopyProps** vorgenommen werden, genau wie **CopyFolder** oder **CopyMessages**arbeiten. Berücksichtigen Sie die folgenden Aspekte bei der Entscheidung, welche Methode aufgerufen:
+Durch Festlegen der entsprechenden Flags und Parameter können **CopyTo** und **CopyProps** wie **CopyFolder** oder **CopyMessages**ausgeführt werden. Berücksichtigen Sie bei der Entscheidung, welche Methode aufgerufen werden soll, die folgenden Probleme:
   
-- Sie kopieren oder Verschieben eines Ordners oder einer Nachricht?
+- Kopieren oder bewegen Sie einen Ordner oder eine Nachricht?
     
-- Wie viel wissen Sie zu dem Ordner oder eine Nachricht verschoben oder kopiert werden?
+- Wie viel wissen Sie über den Ordner oder die Nachricht, der verschoben oder kopiert werden soll?
     
-- Wie viele des Ordners oder des Nachrichteneigenschaften verschoben oder kopiert werden?
+- Wie viele der Eigenschaften des Ordners oder der Nachricht werden verschoben oder kopiert?
     
-Die **IMAPIProp** Methoden können Sie kopieren oder Verschieben eines Ordners oder einer Nachricht. **IMAPIFolder::CopyMessages** ist für Nachrichten nur vorgesehen. **IMAPIFolder::CopyFolder** arbeitet mit nur Ordner. 
+Sie können die **IMAPIProp** -Methoden verwenden, um einen Ordner oder eine Nachricht zu kopieren oder zu verschieben. **IMAPIFolder:: CopyMessages** funktioniert nur mit Nachrichten; **IMAPIFolder:: CopyFolder** funktioniert nur mit Ordnern. 
   
-Während die Verwendung der Methoden **IMAPIFolder** nicht erforderlich sind keine Kenntnisse über die Eigenschaften, die durch den Ordner oder die Nachricht kopiert oder verschoben werden unterstützt, benötigen Sie Kenntnisse die **IMAPIProp** Methoden verwendet werden. Mit **IMAPIProp::CopyProps**müssen Sie möglicherweise explizit welche Ordner oder eine Nachricht-Eigenschaften angeben, die Sie kopieren oder verschieben möchten. Mit **IMAPIProp::CopyTo**es sei denn, Sie verwenden möchten, kopieren oder verschieben Sie alle Eigenschaften, müssen Sie explizit angeben, welche ausgeschlossen werden soll. Weitere Informationen zu diesen Methoden finden Sie unter [Kopieren von MAPI-Eigenschaften](copying-mapi-properties.md).
+Während die Verwendung der **IMAPIFolder** -Methoden keine Kenntnis der vom Ordner oder der zu verschiebenden Nachricht unterstützten Eigenschaften erfordert, müssen Sie über Kenntnisse verfügen, um die **IMAPIProp** -Methoden verwenden zu können. Mit **IMAPIProp:: CopyProps**müssen Sie in der Lage sein, explizit anzugeben, welche der Ordner-oder Nachrichteneigenschaften Sie kopieren oder verschieben möchten. Wenn Sie alle Eigenschaften mit **IMAPIProp:: CopyTo**kopieren oder verschieben möchten, müssen Sie explizit angeben, welche davon ausgeschlossen werden sollen. Weitere Informationen zu diesen Methoden finden Sie unter [Kopieren von MAPI-Eigenschaften](copying-mapi-properties.md).
   
-Die Anzahl der Eigenschaften kopiert oder verschoben werden, kann Ihre Entscheidung über die zu verwendende Methode auswirken. Wenn Sie kopieren oder verschieben mehrere Nachrichten, rufen Sie **IMAPIFolder::CopyMessages**. Es wird eine andere Auswahl **IMAPIProp::CopyProps** zum Kopieren von nur den Ordner **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))-Eigenschaft aufzurufen. Das folgende Verfahren zeigt, wie **CopyMessages**verwenden. 
+Die Anzahl der Eigenschaften, die kopiert oder verschoben werden können, kann sich auf die Entscheidung für die zu verwendende Methode auswirken. Wenn Sie mehrere Nachrichten kopieren oder ändern, rufen Sie **IMAPIFolder:: CopyMessages**auf. Alternativ können Sie **IMAPIProp:: CopyProps** aufrufen, um nur die **PR_CONTAINER_CONTENTS** ([pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md))-Eigenschaft des Ordners zu kopieren. Im folgenden Verfahren wird gezeigt, wie Sie **CopyMessages**verwenden. 
   
-### <a name="to-copy-or-move-one-or-more-messages"></a>Kopieren oder Verschieben einer oder mehrerer Nachrichten
+### <a name="to-copy-or-move-one-or-more-messages"></a>So kopieren oder verschieben Sie eine oder mehrere Nachrichten
   
-1. Suchen Sie gültige-Eintragsbezeichner für die Quell- und Ziel-Ordner.
+1. Suchen gültiger Eintragsbezeichner für die Quell-und Zielordner.
     
-2. Öffnen Sie diese Ordner im Lese-/Schreibmodus durch Aufrufen von [IMAPISession::OpenEntry](imapisession-openentry.md) oder [IMsgStore::OpenEntry](imsgstore-openentry.md) und das MAPI_MODIFY-Flag festlegen. 
+2. Öffnen Sie diese Ordner im Lese-/Schreibzugriff, indem Sie entweder [IMAPISession:: OpenEntry](imapisession-openentry.md) oder [IMsgStore:: OpenEntry](imsgstore-openentry.md) aufrufen und das MAPI_MODIFY-Flag festlegen. 
     
-3. Überprüfen Sie, ob der von **OpenEntry** zurückgegebene Schnittstellenzeiger einen **IMAPIFolder** -Schnittstelle auf. Wenn dies nicht der Fall ist, wird es in den LPMAPIFOLDER-Typ umgewandelt. 
+3. Stellen Sie sicher, dass der von **OpenEntry** zurückgegebene Schnittstellenzeiger ein **IMAPIFolder** -Schnittstellenzeiger ist. Wenn dies nicht der Fall ist, wandeln Sie ihn in den LPMAPIFOLDER-Typ um. 
     
-4. Erstellen Sie ein Array von Eintragsbezeichner, die eine oder mehrere Nachrichten kopiert oder verschoben werden darstellt. 
+4. Erstellen Sie ein Array von Eintrags Bezeichnern, die die eine oder mehrere Nachrichten darstellen, die kopiert oder verschoben werden. 
     
-5. Rufen Sie mit dem folgenden Flags **IMAPIFolder::CopyMessages** : 
+5. Rufen Sie **IMAPIFolder:: CopyMessages** auf, wobei die folgenden Flags festgelegt sind: 
     
-   - MESSAGE_MOVE, wenn einen Verschiebevorgang ausgeführt werden soll. 
+   - MESSAGE_MOVE, wenn Sie einen Verschiebungsvorgang ausführen möchten. 
     
-   - MESSAGE_DIALOG und übergeben Sie ein Fenster behandeln im _UlUIParam_ -Parameter, wenn Sie den Ordner eine Statusanzeige anzeigen möchten. 
+   - MESSAGE_DIALOG, und übergeben Sie ein Fensterhandle im _ulUIParam_ -Parameter, wenn der Ordner eine Statusanzeige anzeigen soll. 
     
-6. Freigeben Sie die **IMAPIFolder** Zeiger für die Quell- und Ziel-Ordner. 
+6. Geben Sie die **IMAPIFolder** -Zeiger für die Quell-und Zielordner frei. 
     
-Wenn Sie den vollständigen Inhalt eines Ordners in einen anderen Ordner kopieren möchten, rufen Sie **IMAPIFolder::CopyFolder** oder **IMAPIProp::CopyTo** -Methode des Quellordners. 
+Wenn Sie den vollständigen Inhalt eines Ordners in einen anderen Ordner kopieren möchten, rufen Sie die **IMAPIFolder:: CopyFolder** -oder **IMAPIProp:: CopyTo** -Methode des Quellordners auf. 
   
-Um einige der Eigenschaften für einen Ordner zu kopieren, rufen Sie die **IMAPIProp::CopyProps** -Methode. Um die meisten Eigenschaften des Ordners zu kopieren, rufen Sie **IMAPIProp::CopyTo**. 
+Rufen Sie die **IMAPIProp:: CopyProps** -Methode auf, um einige der Eigenschaften eines Ordners zu kopieren. Um die meisten Eigenschaften eines Ordners zu kopieren, rufen Sie **IMAPIProp:: CopyTo**auf. 
   
-Wenn Sie eines Ordners **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md)) Eigenschaften kopieren möchten, müssen Sie die folgenden Optionen:
+Wenn Sie beispielsweise die Eigenschaften **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md)) eines Ordners kopieren möchten, haben Sie folgende Möglichkeiten:
   
-- Rufen Sie **IMAPIFolder::CopyFolder** zum Kopieren aller Ordnereigenschaften, und klicken Sie dann die unerwünschte Elemente aus den neuen Ordner löschen. 
+- Rufen Sie **IMAPIFolder:: CopyFolder** auf, um alle Ordner Eigenschaften zu kopieren und die unerwünschten Dateien aus dem neuen Ordner zu löschen. 
     
-- Rufen Sie **CopyTo** , und schließen Sie alle Eigenschaften des Ordners mit Ausnahme **PR_DISPLAY_NAME** und **PR_COMMENT aus**. 
+- Rufen Sie **CopyTo** auf, und schließen Sie alle Eigenschaften des Ordners außer für **PR_DISPLAY_NAME** und **PR_COMMENT**aus. 
     
-- Rufen Sie **CopyProps**, übergeben Sie **PR_DISPLAY_NAME** und **PR_COMMENT** im Array einschließen. 
+- Rufen Sie **CopyProps**auf, und übergeben Sie **PR_DISPLAY_NAME** und **PR_COMMENT** im Include-Array. 
     
-In diesem Fall **CopyProps** ist die beste Wahl, da es zum Kopieren Sie einer kleinen Gruppe von Eigenschaften verwendet werden soll und die einfachste Anruf implementieren. 
+In diesem Fall ist **CopyProps** die beste Wahl, da es verwendet werden soll, um eine kleine Gruppe von Eigenschaften zu kopieren und am einfachsten zu implementieren ist. 
   
-Zum Kopieren oder Verschieben nur die Ordnereigenschaften, ohne Nachrichten, rufen Sie den Ordner **IMAPIProp::CopyTo** -Methode und ausgeschlossen werden Sie die folgenden Eigenschaften: 
+Um nur Ordner Eigenschaften zu kopieren oder zu verschieben, ohne Nachrichten hinzufügen, rufen Sie die **IMAPIProp:: CopyTo** -Methode des Ordners auf, und schließen Sie die folgenden Eigenschaften aus: 
   
-- **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))
+- **PR_CONTAINER_CONTENTS** ([Pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md))
     
-- **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))
+- **PR_FOLDER_ASSOCIATED_CONTENTS** ([Pidtagfolderassociatedcontents (](pidtagfolderassociatedcontents-canonical-property.md))
     
-Die Copy-Methoden können S_OK, insgesamt Erfolgsmeldung MAPI_W_PARTIAL_COMPLETION, zurück, der partiellen Erfolg oder Fehler zurück. Wenn MAPI_W_PARTIAL_COMPLETION zurückgegeben wird, verwenden Sie das Makro **HR_FAILED** , um eine genauere Fehler zuzugreifen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
+Die Copy-Methoden können S_OK zurückgeben, was bedeutet, dass der gesamte Erfolg, MAPI_W_PARTIAL_COMPLETION, der teilweiser Erfolg angibt, oder ein Fehler. Wenn MAPI_W_PARTIAL_COMPLETION zurückgegeben wird, verwenden Sie das **HR_FAILED** -Makro, um auf einen spezifischeren Fehler zuzugreifen. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
   
-Wenn Sie Nachrichten von einem Informationsspeicher zu einer anderen kopieren und Unicode nicht, durch die beiden unterstützt wird, beachten Sie, dass Informationen verloren aufgrund der Konvertierung von Seiten werden kann. In der Regel können Sie nicht wissen, wenn die Nachrichtenspeicher für eine oder beide Formate unterstützen leicht zu bestimmen, ob Eigenschaften als ASCII-Zeichenfolgen oder als Unicode-Zeichenfolgen mit Text kopieren nicht möglich. Wenn Unicode unterstützt werden, versuchen Sie, eine Kopie des Unicode-ausführen. Wenn sie mit den Fehlerwert MAPI_E_BAD_CHARWIDTH fehlschlägt, greifen Sie auf ASCII.
+Wenn Sie Nachrichten aus einem Nachrichtenspeicher in einen anderen kopieren und Unicode von beiden nicht unterstützt wird, beachten Sie, dass Informationen aufgrund der Konvertierung von Codeseiten verloren gehen können. In der Regel können Sie nicht wissen, ob die Nachrichtenspeicher ein oder beide Formate unterstützen, sodass es unmöglich ist, zu bestimmen, ob Texteigenschaften als ASCII-Zeichenfolgen oder als Unicode-Zeichenfolgen kopiert werden sollen. Wenn Sie Unicode unterstützen, versuchen Sie, eine Unicode-Kopie auszuführen. Wenn Sie mit dem Fehlerwert MAPI_E_BAD_CHARWIDTH fehlschlägt, greifen Sie auf ASCII zu.
   
 

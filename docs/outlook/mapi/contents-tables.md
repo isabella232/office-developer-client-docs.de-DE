@@ -7,103 +7,103 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7b8efb4e-b5be-41b8-81bb-9aa1da421433
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 923fd527eb7d04b31f15e6d8673e2e964fa0d1ed
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 491381c771cae65e682acc8033b6558523847d3d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335595"
 ---
 # <a name="contents-tables"></a>Inhaltstabellen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Inhaltstabelle enthält Informationen zu Objekten in einem MAPI-Container. Von adressbuchanbietern implementierte implementieren Sie Inhalt Tabellen für jeden ihrer Container und Nachrichtenspeicher und remote-Transport-Anbieter Inhalt Tabellen für ihre Ordner. Die Inhaltstabelle ein Adressbuchcontainer enthält Informationen zu den messaging Listenobjekten Benutzer- und Verteilung, während der Inhalt eines Ordners Informationen zu eigenen Nachrichten in der Tabelle ist. Inhalt Tabellen werden hauptsächlich von Clientanwendungen verwendet. 
+Eine Contents-Tabelle enthält Informationen zu Objekten in einem MAPI-Container. Adressbuchanbieter implementieren Inhaltstabellen für jeden ihrer Container, und Nachrichtenspeicher-und Remote Transportanbieter implementieren Inhaltstabellen für Ihre Ordner. In der Tabelle Contents eines Adressbuch Containers werden Informationen zu den zugehörigen Messaging-Benutzer-und Verteilerlisten Objekten aufgelistet, während in der Inhaltstabelle eines Ordners Informationen zu den Nachrichten aufgelistet werden. Inhaltstabellen werden hauptsächlich von Clientanwendungen verwendet. 
   
-Es gibt zwei Arten von Ordner Inhalt Tabellen:
+Es gibt zwei Arten von Ordnerinhaltstabellen:
   
-- Standard-Inhalt Tabellen enthalten standard Nachrichten – Nachrichten, die übertragen und für einen Benutzer sichtbar gemacht werden können. 
+- Standardinhalts Tabellen enthalten Standardnachrichten – Nachrichten, die für einen Benutzer übertragen und sichtbar gemacht werden können. 
     
-- Zugehörige Inhalt Tabellen enthalten ausgeblendet, Übertragungseinehit Informationen, die von einem Client wie, eine Alternative Darstellung einer standard-Nachricht speichern für einen bestimmten Zweck, erstellt. Zugehörige Informationen wird erstellt, indem Sie das MAPI_ASSOCIATED-Flag für den Aufruf der [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) übergeben. 
+- Verknüpfte Inhaltstabellen enthalten ausgeblendete, nicht übertragbare Informationen, die von einem Client für einen bestimmten Zweck erstellt wurden, beispielsweise zum Speichern einer alternativen Darstellung einer Standardnachricht. Zugeordnete Informationen werden erstellt, indem das MAPI_ASSOCIATED-Flag an den [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Aufruf übergeben wird. 
     
-Die Inhalte, die keine für Tabellen mit den meisten Address Book Containern und viele Ordner Unterstützung kategorisiert sortieren. 
+Die Inhaltstabellen der meisten Adressbuchcontainer und viele Ordner unterstützen keine kategorisierte Sortierung. 
   
-Eine Inhaltstabelle kann durch Aufrufen von zugegriffen werden:
+Auf eine Inhaltstabelle kann durch Aufrufen zugegriffen werden:
   
-- [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md).
+- [IMAPIContainer::](imapicontainer-getcontentstable.md)getcontentable.
     
-    - Oder -
+    - Oder
     
-- [IMAPIProp::OpenProperty](imapiprop-openproperty.md) mit **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) oder **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) (nur Ordner) als Eigenschafts-Tag und IID angegeben _IMAPITable als Schnittstellenbezeichner.
+- [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) mit **PR_CONTAINER_CONTENTS** ([pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md)) oder **PR_FOLDER_ASSOCIATED_CONTENTS** ([pidtagfolderassociatedcontents (](pidtagfolderassociatedcontents-canonical-property.md)) (nur Ordner), die als Property-Tag und IID angegeben sind _IMAPITable als Schnittstellenbezeichner.
     
-Nachrichtenspeicher und Address Book Anbieter müssen beide Verfahren zum Abrufen von Eigenschaften der Tabelle unterstützen. Es ist nicht zulässig für Anbieter unterstützt nur eine Möglichkeit für den Zugriff auf diese Tabellen, da Clients erwarten, dass die Option haben. 
+Nachrichtenspeicher-und Adressbuchanbieter müssen beide Techniken zum Abrufen von Tabelleneigenschaften unterstützen. Es ist nicht akzeptabel, dass Anbieter nur eine Möglichkeit für den Zugriff auf diese Tabellen unterstützen, da Clients erwarten, dass Sie die Wahl haben. 
   
- **GetContentsTable** , die als Eingabe akzeptiert mehrere Flags, die Voreinstellungen angeben. Das Flag MAPI_ASSOCIATED bei Festlegung einer zugeordneten Inhaltstabelle abgerufen werden. Da einige Ordner zugeordneten Inhalt nicht unterstützt, und es keine Möglichkeit für Clients gibt, die diese vorausschauendes Bestimmung, gibt **GetContentsTable** manchmal den Fehler MAPI_E_NO_SUPPORT zurück, wenn einer zugeordneten Inhaltstabelle angefordert wird. 
+ **** GetContents akzeptiert als Eingabe mehrere Flags, die Einstellungen angeben. Ist diese Einstellung festgelegt, ruft das MAPI_ASSOCIATED-Flag eine zugeordnete Inhaltstabelle ab. Da einige Ordner zugeordnete Inhalte nicht unterstützen und es für Clients keine Möglichkeit gibt, dies vor der Zeit zu bestimmen, **** gibt getcontentable manchmal den Fehler MAPI_E_NO_SUPPORT zurück, wenn eine zugeordnete Inhaltstabelle angefordert wird. 
   
-Das Flag MAPI_DEFERRED_ERRORS gibt an, das die Implementierung von der Tabelle, die während des Anrufs aufgetretenen nicht bis zu einem späteren Zeitpunkt gemeldet werden müssen. 
+Das MAPI_DEFERRED_ERRORS-Flag gibt dem Implementierer der Tabelle an, dass alle während des Anrufs aufgetretenen Fehler erst später gemeldet werden müssen. 
   
-Der Aufruf von **IMAPIProp::OpenProperty** umfasst den Zugriff auf eine Inhaltstabelle durch Öffnen der entsprechenden Eigenschaft **PR_CONTAINER_CONTENTS** für Address Book Inhalt Tabellen und Standardordner Inhalt Tabellen und **PR_FOLDER_ASSOCIATED_ Inhalt** für verknüpfte Tabellen Inhalt. Jedoch weder oder diese Eigenschaften können über einen Ordner oder für den Container [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode abgerufen werden, sie sind in der von der [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode zurückgegebene Array Eigenschaft Tag enthalten. 
+Der Aufruf von **IMAPIProp:: OpenProperty** beinhaltet den Zugriff auf eine Inhaltstabelle durch Öffnen der zugehörigen Eigenschaft, **PR_CONTAINER_CONTENTS** für Adressbuch Inhaltstabellen und Standardordner Inhaltstabellen und **PR_FOLDER_ASSOCIATED_ Inhalte** für verknüpfte Inhaltstabellen. Auch wenn diese Eigenschaften nicht über die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode eines Ordners oder Containers abgerufen werden können, werden Sie in das Eigenschaftentag Array aufgenommen, das von der [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode zurückgegeben wird. 
   
- **PR_CONTAINER_CONTENTS** kann auch ein-oder Ausschließen einer Inhaltstabelle aus einem Kopiervorgang verwendet werden. Wenn ein Client **PR_CONTAINER_CONTENTS** im *LpExcludeProps* -Parameter für **IMAPIProp::CopyTo** in einen Kopiervorgang angibt, wird der neuen Ordner oder im Container nicht der Inhaltstabelle des ursprünglichen Ordner oder des Containers unterstützt. 
+ **PR_CONTAINER_CONTENTS** kann auch zum einschließen oder Ausschließen einer Inhaltstabelle aus einem Kopiervorgang verwendet werden. Wenn ein Client **PR_CONTAINER_CONTENTS** im *lpExcludeProps* -Parameter für **IMAPIProp:: CopyTo** in einem Kopiervorgang angibt, unterstützt der neue Ordner oder Container die Inhaltstabelle des ursprünglichen Ordners oder Containers nicht. 
   
-Address Book Container und Ordner Inhalt Tabellen haben eine lange Liste von erforderlichen Spalten – Spalten, die Clients zur Verfügung, nachdem sie die Tabelle aus **GetContentsTable** oder **OpenProperty**abrufen erwarten können. Anbieter können auf diesen Satz von erforderlichen hinzufügen, wenn Bedarf und Clients, mit der **SetColumns** -Methode auch Änderungen angefordert werden können. 
+Tabellen des Adressbuch Containers und des Ordnerinhalts enthalten eine lange Liste der erforderlichen Spalten – Spalten, die Clients erwarten können, nachdem Sie die Tabelle aus **** getcontentable oder **OpenProperty**abgerufen haben. Bei Bedarf können Anbieter zu diesem erforderlichen Satz hinzufügen, und Clients können **** mithilfe der SetColumns-Methode auch Änderungen anfordern. 
   
-Die erforderlichen Spalten für die einzelnen Arten von Inhalt Tabellen sind:
+Die erforderlichen Spalten für die einzelnen Inhaltstypen Tabellen sind:
   
 |**Erforderliche Spalte**|**Typ der Inhaltstabelle**|
 |:-----|:-----|
-|**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |Address Book Container Tabellen  <br/> |
-|**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Address Book Container Tabellen  <br/> |
-|**PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
-|**PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |Address Book Container Tabellen  <br/> |
-|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Alle Inhalte Tabellen  <br/> |
-|**PR_HASATTACH** ([PidTagHasAttachments](pidtaghasattachments-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |Alle Inhalte Tabellen  <br/> |
-|**PR_LAST_MODIFICATION_TIME** ([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
-|**PR_MAPPING_SIGNATURE** ([PidTagMappingSignature](pidtagmappingsignature-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
-|**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_MESSAGE_DOWNLOAD_TIME** ([PidTagMessageDownloadTime](pidtagmessagedownloadtime-canonical-property.md))  <br/> |Remote-Transport Ordner Tabellen  <br/> |
-|**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Alle Inhalte Tabellen  <br/> |
-|**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
-|**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |Speichern von Adressbuchcontainer und Nachricht Ordner Tabellen  <br/> |
-|**PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md))  <br/> |Remote-Transport Ordner Tabellen  <br/> |
-|**PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
-|**PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
+|**PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))  <br/> |Adressbuch-Container Tabellen  <br/> |
+|**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Adressbuch-Container Tabellen  <br/> |
+|**PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
+|**PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |Adressbuch-Container Tabellen  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Alle Inhaltstabellen  <br/> |
+|**PR_HASATTACH** ([Pidtaghasattachments (](pidtaghasattachments-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))  <br/> |Alle Inhaltstabellen  <br/> |
+|**PR_LAST_MODIFICATION_TIME** ([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
+|**PR_MAPPING_SIGNATURE** ([Pidtagmappingsignature (](pidtagmappingsignature-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
+|**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_MESSAGE_DOWNLOAD_TIME** ([Pidtagmessagedownloadtime (](pidtagmessagedownloadtime-canonical-property.md))  <br/> |Ordner Tabellen für Remote Transport  <br/> |
+|**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_MESSAGE_SIZE** ([Pidtagmessagesize (](pidtagmessagesize-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_MSG_STATUS** ([Pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |Alle Inhaltstabellen  <br/> |
+|**PR_PARENT_ENTRYID** ([Pidtagparententryid (](pidtagparententryid-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
+|**PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md))  <br/> |Adressbuchcontainer-und Nachrichtenspeicher Ordner-Tabellen  <br/> |
+|**PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md))  <br/> |Ordner Tabellen für Remote Transport  <br/> |
+|**PR_STORE_ENTRYID** ([Pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
+|**PR_STORE_RECORD_KEY** ([Pidtagstorerecordkey (](pidtagstorerecordkey-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
    
-Verfügbar mit jeder Zeile die Eintrags-ID kann entweder eine kurz- oder langfristig Eintrags-ID, je nach der Implementierung der Tabelle sein. Kurzfristige-Eintragsbezeichner werden normalerweise in Situationen verwendet, in dem Leistung von Belang ist. Beide Arten von Eintrags-ID kann verwendet werden, auf das entsprechende Objekt zugreifen. 
+Die für jede Zeile verfügbare Eintrags-ID kann je nach Tabellen Implementierung entweder eine kurz-oder langfristige Eintrags-ID sein. Kurzfristige Eintragsbezeichner werden in der Regel in Situationen verwendet, in denen die Leistung ein Problem ist. Für den Zugriff auf das entsprechende Objekt kann ein beliebiger Eintragsbezeichner verwendet werden. 
   
-Inhalt Tabellen haben auch eine Reihe von Spalten, die optional, wird jedoch von Dienstanbietern in ihre Implementierungen häufig enthalten sind. Diese optionalen Spalten sind:
+Inhaltstabellen verfügen außerdem über eine Reihe von Spalten, die optional sind, jedoch in der Regel von Dienstanbietern in ihren Implementierungen enthalten sind. Diese optionalen Spalten sind:
   
 |**Optionale Spalte**|**Typ der Inhaltstabelle**|
 |:-----|:-----|
-|**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
-|**PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))  <br/> |Standardordner Inhalt Tabellen  <br/> |
-|**PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md))  <br/> |Standardordner Inhalt Tabellen  <br/> |
-|**PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))  <br/> |Nachricht Store Ordner Tabellen  <br/> |
-|**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Address Book Container Tabellen  <br/> |
-|**PR_IMPORTANCE** ([PidTagImportance](pidtagimportance-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Address Book Container Tabellen  <br/> |
-|**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md))  <br/> |Address Book Container Tabellen  <br/> |
-|**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |Alle Ordner Inhalt Tabellen  <br/> |
-|**PR_TRANSMITABLE_DISPLAY_NAME** ([PidTagTransmittableDisplayName](pidtagtransmittabledisplayname-canonical-property.md))  <br/> |Address Book Container Tabellen  <br/> |
+|**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
+|**PR_CONTENT_COUNT** ([Pidtagcontentcount (](pidtagcontentcount-canonical-property.md))  <br/> |Standard Ordnerinhaltstabellen  <br/> |
+|**PR_CONTENT_UNREAD** ([Pidtagcontentunreadcount (](pidtagcontentunreadcount-canonical-property.md))  <br/> |Standard Ordnerinhaltstabellen  <br/> |
+|**PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))  <br/> |Ordner Tabellen für Nachrichtenspeicher  <br/> |
+|**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Adressbuch-Container Tabellen  <br/> |
+|**PR_IMPORTANCE** ([PidTagImportance](pidtagimportance-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_MESSAGE_DELIVERY_TIME** ([Pidtagmessagedeliverytime (](pidtagmessagedeliverytime-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_PRIORITY** ([Pidtagpriority (](pidtagpriority-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_SEARCH_KEY** ([Pidtagsearchkey (](pidtagsearchkey-canonical-property.md))  <br/> |Adressbuch-Container Tabellen  <br/> |
+|**PR_SEND_RICH_INFO** ([Pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md))  <br/> |Adressbuch-Container Tabellen  <br/> |
+|**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |Alle Ordnerinhaltstabellen  <br/> |
+|**PR_TRANSMITABLE_DISPLAY_NAME** ([Pidtagtransmittabledisplayname (](pidtagtransmittabledisplayname-canonical-property.md))  <br/> |Adressbuch-Container Tabellen  <br/> |
    
-Nachricht-Anbieter müssen auch **PR_PARENT_DISPLAY** ([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md)) Suchergebnis Ordner Inhalt nur für Tabellen enthalten.
+Nachrichtenspeicher Anbieter müssen auch **PR_PARENT_DISPLAY** ([pidtagparentdisplay (](pidtagparentdisplay-canonical-property.md)) für Suchergebnisordner-Inhaltstabellen verwenden.
   
-Benannte Eigenschaften können auf die Spalte einer Tabelle der Ordner-Inhalt hinzugefügt werden, nur, wenn alle Nachrichten in den Ordner die gleiche Zuordnung Signatur, d. h., der Zuordnung von Eigenschaftennamen Eigenschaftenbezeichner haben. Wenn sie die Erstellung von beliebigen Nachrichten im Ordner unterstützen, sollte Ordner Inhalt Tabellen hinzufügen Nachrichtenklasse spezifische Eigenschaften auf die Spalte festzulegen, unterstützen.
+Benannte Eigenschaften können dem Spaltensatz einer Ordnerinhaltstabelle nur hinzugefügt werden, wenn alle Nachrichten im Ordner dieselbe Zuordnungs Signatur aufweisen, also dieselbe Zuordnung von Eigenschaftennamen zu Eigenschaftenbezeichnern. Ordnerinhaltstabellen sollten das Hinzufügen von Nachrichtenklassen spezifischen Eigenschaften zum Spaltensatz unterstützen, wenn Sie das Erstellen beliebiger Nachrichten im Ordner unterstützen.
   
-Clients können die Standard-Sortierreihenfolge für einen Ordner Inhaltstabelle speichern, dessen [IMAPIFolder::SaveContentsSort](imapifolder-savecontentssort.md) -Methode aufrufen. Wenn das Flag RECURSIVE_SORT dem Gespräch angegeben wird, kann die Sortierreihenfolge vorgenommen werden, auf alle Unterordner innerhalb des Ordners anwenden. 
+Clients können die Standardsortierreihenfolge für eine Ordnerinhaltstabelle speichern, indem Sie die [IMAPIFolder:: SaveContentsSort](imapifolder-savecontentssort.md) -Methode aufrufen. Wenn das RECURSIVE_SORT-Flag für den Aufruf angegeben wird, kann die Sortierreihenfolge für alle Unterordner innerhalb des Ordners angewendet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

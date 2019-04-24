@@ -1,5 +1,5 @@
 ---
-title: Steuern der Objektimplementierung
+title: Implementierung des Control-Objekts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,36 +8,36 @@ api_type:
 - COM
 ms.assetid: 4ad62ff0-c527-4e75-a2af-b5906a7588e8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b4b225f7e048ef40a79c4b258629cb01b79368d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8304021565638f8a5893d0be8cd6a94ed62a8d95
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335658"
 ---
-# <a name="control-object-implementation"></a>Steuern der Objektimplementierung
+# <a name="control-object-implementation"></a>Implementierung des Control-Objekts
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Steuerelement-Objekte oder Objekte, die unterstützen die [IMAPIControl: IUnknown](imapicontroliunknown.md) Schnittstelle, die implementiert werden, von Anbietern Funktionen eine Schaltfläche hinzu, die in einem MAPI-Dialogfeld angezeigt wird. Control-Objekte können nur für Schaltflächen implementiert werden. 
+Steuerelementobjekte oder Objekte, die die [IMAPIControl: IUnknown](imapicontroliunknown.md) -Schnittstelle unterstützen, werden von Anbietern implementiert, um einer Schaltfläche, die in einem MAPI-Dialogfeld angezeigt wird, Funktionalität hinzuzufügen. Steuerelemente können nur für Schaltflächen implementiert werden. 
   
- **IMAPIControl** verfügt über drei Methoden: [GetLastError](imapicontrol-getlasterror.md) [GetState](imapicontrol-getstate.md)und zu [Aktivieren](imapicontrol-activate.md). 
+ **IMAPIControl** verfügt über drei Methoden: [Getlasterroraufzurufen](imapicontrol-getlasterror.md), GetState und [Activate](imapicontrol-activate.md). [](imapicontrol-getstate.md) 
   
-MAPI-Aufrufen **GetState** , um zu bestimmen, ob die Schaltfläche zu deaktivieren. **GetState** wird in den folgenden Situationen aufgerufen: 
+MAPI ruft **GetState** auf, um zu bestimmen, ob die Schaltfläche deaktiviert werden soll. **GetState** wird in den folgenden Situationen aufgerufen: 
   
 - Wenn das Dialogfeld, in dem die Schaltfläche angezeigt wird, zuerst angezeigt wird.
     
-- Wenn eine Anzeige Tabelle Benachrichtigung für die Schaltfläche ausgestellt wurde. 
+- Wenn eine Anzeige Tabellenbenachrichtigung für die Schaltfläche ausgegeben wird. 
     
-Legen Sie den Inhalt des Parameters _LpulState_ auf MAPI_DISABLED, wenn der Benutzer mit der Schaltfläche und MAPI_ENABLED interagieren kann, wenn der Benutzer interagieren kann. 
+Legen Sie den Inhalt des _lpulState_ -Parameters auf MAPI_DISABLED fest, wenn der Benutzer nicht mit der Schaltfläche und MAPI_ENABLED interagieren kann, wenn der Benutzer interagieren darf. 
   
-Wenn der Benutzer auf die Schaltfläche klickt, ruft MAPI **Aktivieren**. **Activate** führt die Aufgabe, die die Schaltfläche zugeordnet wurde. Für diese Aufgabe kann beliebig für Ihren Anbieter, wie ein Dialogfeld angezeigt, oder Aktualisieren einer Eigenschaft geeignet sein. Wenn der Vorgang nicht erfolgreich ist, da der Benutzer den Vorgang abgebrochen, geben Sie MAPI_E_USER_CANCEL zurück. Weitere Ursachen des Fehlers den entsprechenden Fehlerwert zurück. 
+Wenn der Benutzer auf die Schaltfläche klickt, ruft MAPI die **Aktivierung**auf. **Activate** führt die Aufgabe aus, die der Schaltfläche zugeordnet wurde. Diese Aufgabe kann für Ihren Anbieter geeignet sein, wie beispielsweise Anzeigen eines Dialogfelds oder Aktualisieren einer Eigenschaft. Wenn die Aufgabe nicht erfolgreich ist, weil der Benutzer sie abgebrochen hat, geben Sie MAPI_E_USER_CANCEL zurück. Geben Sie für weitere Fehlerursachen den entsprechenden Fehlerwert zurück. 
   
-Rufen Sie [ITableData::HrNotify](itabledata-hrnotify.md), wenn der Vorgang erfolgreich ist und mit einer Änderung der Eigenschaft, die in ein anderes Steuerelement im Dialogfeld wiedergegeben wird verknüpft ist. **HrNotify** wird aufgerufen, um eine Anzeige Tabelle Benachrichtigung mit der geänderten **PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md))-Eigenschaft in der Struktur [TABLE_NOTIFICATION](table_notification.md) Problem. Setzen Sie den neuen Eigenschaftswert nicht in der Struktur. Stattdessen geben sie zurück, wenn [IMAPIProp::GetProps](imapiprop-getprops.md) aufgerufen wird. Zwar in der Regel eine Anzeige-Tabelle-Benachrichtigung nicht zum Deaktivieren oder Aktivieren eines Steuerelements, können sie mit einer Schaltfläche verwendet werden. MAPI wird das geänderte Steuerelement, um auf die Benachrichtigung reagieren aktualisiert. 
+Wenn die Aufgabe erfolgreich ist und mit einer Eigenschaftenänderung verknüpft ist, die in einem anderen Steuerelement des Dialogfelds angezeigt wird, rufen Sie [ITableData:: HrNotify](itabledata-hrnotify.md)auf. **HrNotify** wird aufgerufen, um eine Anzeige Tabellenbenachrichtigung mit der **PR_CONTROL_ID** ([pidtagcontrolid (](pidtagcontrolid-canonical-property.md))-Eigenschaft der geänderten Eigenschaft in der [TABLE_NOTIFICATION](table_notification.md) -Struktur auszugeben. Platzieren Sie den neuen Eigenschaftswert nicht in der Struktur; Geben Sie Sie stattdessen zurück, wenn [IMAPIProp::](imapiprop-getprops.md) GetProps aufgerufen wird. Zwar kann in der Regel eine Anzeige Tabellenbenachrichtigung nicht zum Deaktivieren oder Aktivieren eines Steuerelements verwendet werden, es kann jedoch mit einer Schaltfläche verwendet werden. MAPI aktualisiert das geänderte Steuerelement so, dass es auf die Benachrichtigung reagiert. 
   
-MAPI-Aufrufen **GetLastError** -Methode des Steuerelements, wenn **Activate** als MAPI_E_USER_CANCEL einen Fehler zurückgegeben. Wenn **GetLastError** erweiterte Fehlerinformationen in der Struktur [MAPIERROR](mapierror.md) , die sie in den Inhalt des Parameters _LppMAPIError_ zurückgibt tätigt, von MAPI für den Benutzer angezeigt. 
+MAPI Ruft die **getlasterroraufzurufen** -Methode des Steuerelements auf, wenn **Activate** einen anderen Fehler als MAPI_E_USER_CANCEL zurückgibt. Wenn **getlasterroraufzurufen** in der [MAPIERROR](mapierror.md) -Struktur erweiterte Fehlerinformationen platziert, die im Inhalt des _lppMAPIError_ -Parameters zurückGEGEBEN werden, wird diese von MAPI für den Benutzer angezeigt. 
   
 ## <a name="see-also"></a>Siehe auch
 

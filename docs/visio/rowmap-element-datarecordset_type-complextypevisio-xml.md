@@ -1,31 +1,31 @@
 ---
-title: RowMap-Element (DataRecordSet_Type ComplexType) ("Visio XML")
+title: RowMap-Element (DataRecordSet_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f90dc76b-7f0b-dead-38c0-97062a7b76a6
-description: Ordnet eine Datenrecordset Zeile eines Shapes.
+description: Ordnet eine Datensatzgruppe-Zeile einem Shape zu.
 ms.openlocfilehash: 2dffa49d66e8e447b4e31d771179c74eecad21da
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332515"
 ---
-# <a name="rowmap-element-datarecordsettype-complextype-visio-xml"></a>RowMap-Element (DataRecordSet_Type ComplexType) ("Visio XML")
+# <a name="rowmap-element-datarecordsettype-complextype-visio-xml"></a>RowMap-Element (DataRecordSet_Type complexType) (' Visio XML ')
 
-Ordnet eine Datenrecordset Zeile eines Shapes.
+Ordnet eine Datensatzgruppe-Zeile einem Shape zu.
   
-## <a name="element-information"></a>Informationen zu Elementen
+## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RowMap_Type](rowmap_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
-|**Dokumentbausteine** <br/> |Recordsets.Xml  <br/> |
+|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Dokumentteile** <br/> |Recordsets. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Ordnet eine Datenrecordset Zeile eines Shapes.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt. 
+Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,8 +54,8 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|PageID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Seiten-ID des Shapes mit Daten in der Datenrecordset Zeile **RowID**identifizierten verknüpft sind.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|RowID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Zeilen-ID der Zeile, in dem Datenrecordset eindeutig.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|ShapeID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |In der identifizierten **RowID**Datenrecordset Zeile mit Daten verknüpftes Shape-ID des Shapes.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
+|PageID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Seiten-ID der Form, die mit Daten in der Datensatzgruppe verknüpft ist, die durch **ROWID**identifiziert werden.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|RowID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Zeilen-ID der Zeile, eindeutig innerhalb des Datenrecordsets.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|ShapeID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Shape-ID der Form, die mit Daten in der Datensatzgruppe verknüpft ist, die durch **ROWID**identifiziert werden.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
    
 

@@ -6,40 +6,40 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 38aedff8-e7b5-0758-c573-0ffa6a244c9c
-description: Diese Referenz enthält eine konzeptionelle Übersicht und Referenzthemen, einschließlich Beispiele, um bei der Entwicklung von Lösungen mit dem Visio-Dateiformat.
+description: Diese Referenz enthält eine konzeptionelle Übersicht über Thema-und Referenzthemen, einschließlich Beispiele, die Sie bei der Entwicklung von Lösungen mit dem Visio-Dateiformat unterstützen.
 ms.openlocfilehash: 28e7541515720c5516ce45cd48274becedd63cf3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335602"
 ---
 # <a name="visio-file-format-reference"></a>Visio-Dateiformatreferenz
 
-Diese Referenz enthält eine konzeptionelle Übersicht und Referenzthemen, einschließlich Beispiele, um bei der Entwicklung von Lösungen mit dem Visio-Dateiformat (\*.vsdx).
+Diese Referenz enthält eine konzeptionelle Übersicht über Thema-und Referenzthemen, einschließlich Beispiele, die Sie bei der Entwicklung von Lösungen mit dem\*Visio-Dateiformat (. vsdx) unterstützen.
   
-Wir freuen uns Ihre Kommentare oder Fragen zu dieser Inhalt. Sie können an [docthis@microsoft.com](mailto:docthis@microsoft.com)Feedback senden.
+Wir freuen uns über Ihre Kommentare oder Fragen zu diesen Inhalten. Sie können Ihr Feedback an [docthis@microsoft.com](mailto:docthis@microsoft.com) senden.
   
- **Initial Publikation**: Oktober 2012 | **Aktualisiert**: März 2013
+ **Erstveröffentlichung**: Oktober 2012 | **Aktualisiert**: 2013
   
-Diese Dokumentation enthält die folgenden Informationen:
+In dieser Dokumentation werden die folgenden Informationen bereitgestellt:
   
 - [Einführung in das Visio-Dateiformat (.vsdx)](introduction-to-the-visio-file-formatvsdx.md)
     
 - [Programmgesteuertes Bearbeiten des Visio-Dateiformats](how-to-manipulate-the-visio-file-format-programmatically.md)
     
-- [Schemazuordnung](schema-mapvisio-xml.md): Zeigt das XML-Schema des Visio-Dateiformats.
+- [Schemazuordnung](schema-mapvisio-xml.md): zeigt das XML-Schema des Visio-Dateiformats an.
     
-- [Elemente](elementsvisio-xml.md): enthält Informationen über die XML-Elemente, die im Visio-Format angezeigt werden können.
+- [Elements](elementsvisio-xml.md): enthält Informationen zu den XML-Elementen, die im Visio-Dateiformat angezeigt werden können.
     
-- [Typen](typesvisio-xml.md): enthält Informationen zu XML-Dateitypen, die im Visio-Format angezeigt werden können.
+- [Typen](typesvisio-xml.md): enthält Informationen zu den XML-Typen, die im Visio-Dateiformat angezeigt werden können.
     
 ## <a name="see-also"></a>Siehe auch
 
 - [Visio für Entwickler](https://msdn.microsoft.com/office/aa905478.aspx) 
 - [Barrierefreiheit in Microsoft-Produkten](https://www.microsoft.com/enable/products/default.aspx)
 - [Konventionen in diesem Dokument](https://msdn.microsoft.com/office/aa905365.aspx) 
-- [Visio SDK copyright-Hinweis](visio-sdk-copyright-notice.md)
+- [Visio SDK-Copyright-Hinweis](visio-sdk-copyright-notice.md)
 
     
 

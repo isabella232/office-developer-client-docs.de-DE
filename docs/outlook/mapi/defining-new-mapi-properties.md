@@ -1,5 +1,5 @@
 ---
-title: Definieren von neuen MAPI-Eigenschaften
+title: Definieren neuer MAPI-Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,44 +8,44 @@ api_type:
 - COM
 ms.assetid: 1a2325ea-ddfa-480f-b65f-f5b20471fb40
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f922ee95cda84311d840aa9de339883c57efba56
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 666ee413319765e39e25d586208f764afc93ae6b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336680"
 ---
-# <a name="defining-new-mapi-properties"></a>Definieren von neuen MAPI-Eigenschaften
+# <a name="defining-new-mapi-properties"></a>Definieren neuer MAPI-Eigenschaften
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Trotz der Fülle von Eigenschaften von MAPI für die Verwendung durch Clients und -Dienstanbieter bereitgestellt ermöglicht MAPI neue Eigenschaften bei Bedarf erstellt werden soll. Die gültigen Szenarien für die neue öffentliche Eigenschaften definieren gehören einen Client Erstellen von Eigenschaften zur Unterstützung einer neuen Nachrichtenklasse und einem Dienstanbieter Erstellung neuer Eigenschaften einzigartigen Merkmale von messaging System verfügbar machen.
+Trotz der Fülle an Eigenschaften, die von MAPI zur Verwendung durch Clients und Dienstanbieter bereitgestellt wurden, ermöglicht MAPI, dass bei Bedarf neue Eigenschaften erstellt werden. Einige der gültigen Szenarien für die Definition neuer öffentlicher Eigenschaften sind ein Client, der Eigenschaften erstellt, um eine neue Nachrichtenklasse zu unterstützen, und einen Dienstanbieter, der neue Eigenschaften erstellt, um eindeutige Messagingsystem Features offenzulegen.
   
-Es ist in der Regel nicht gültig für eine-Dienstanbieters für das neue Eigenschaften für einen vorhandenen MAPI-Objekt oder eine Nachrichtenklasse zu definieren. Einer der wichtigsten Vorteile der Verwendung von MAPI ist, dass der standard-IDs und Formate für eine große Anzahl von messaging-System, die Elemente eingerichtet, werden es Benutzern ermöglichen nahtlos mischen und match-Anbieter. Dienstanbieter, die nicht standardmäßige Eigenschaften verwenden, funktionieren nicht auch mit anderen Dienstanbieter. 
+Es ist in der Regel nicht gültig, dass ein Dienstanbieter neue Eigenschaften für ein vorhandenes MAPI-Objekt oder eine Nachrichtenklasse definiert. Einer der Hauptvorteile der Verwendung von MAPI besteht darin, dass Standardbezeichner und-Formate für eine Vielzahl von Messagingsystem Elementen eingerichtet sind, die es Benutzern ermöglichen, Dienstanbieter nahtlos zu kombinieren. Dienstanbieter, die nicht standardmäßige Eigenschaften verwenden, funktionieren nicht so gut mit anderen Dienstanbietern. 
   
-Clients können Content-Eigenschaften für neue Nachrichtenklassen durch erstellen:
+Clients können Inhaltseigenschaften für neue Nachrichtenklassen erstellen, indem Sie:
   
-- Verwenden von eigenschaftskennungen in einem bestimmten Bereich für Content-Klasse-spezifischen Nachrichteneigenschaften.
+- Verwenden von Eigenschafts Bezeichnern in einem bestimmten Bereich für Nachrichtenklassen spezifische Inhaltseigenschaften.
     
-    - Oder -
+    - Oder
     
-- Verwenden von benannten Eigenschaften. 
+- Verwenden benannter Eigenschaften. 
     
-Die erste Option ist vorzuziehen, da nicht alle Dienstanbieter benannte Eigenschaften unterstützen. MAPI definiert zwei separate Bereiche für Clients für neue Nachricht-Klasse spezifische Content-Eigenschaften verwenden:
+Die erste Option ist vorzuziehen, da nicht alle Dienstanbieter benannte Eigenschaften unterstützen. MAPI definiert zwei separate Bereiche für Clients, die für neue Nachrichtenklassen spezifische Inhaltseigenschaften verwendet werden sollen:
   
-- 0x6800: 0x7BFF für Übertragungseinehit-Eigenschaften
+- 0x6800 zu 0x7BFF für transmitable-Eigenschaften
     
-- 0x7C00: 0x7FFF für Nontransmittable-Eigenschaften
+- 0x7C00 zu 0x7FFF für nicht übertragbare Eigenschaften
     
-Eigenschaftenbezeichner müssen in vordefinierten Bereichen zu verhindern Konflikte zwischen den Eigenschaften, die von anderen Anbietern oder Benutzern definiert liegen. Benutzer von Eigenschaften in diesen Bereichen können nicht jedoch Annahmen über das Verhalten der Eigenschaften treffen. Jeder Client, der eine neue Nachrichtenklasse erstellt hat Zugriff auf diese Bereiche. eine Eigenschaft mit ID _Xxxx_ kann es sich um eine bestimmte Verhaltensweise für eine Nachrichtenklasse und ein anderes Verhalten für einen anderen Nachrichtenklasse bedeuten. 
+Eigenschaftsbezeichner müssen in vordefinierte Bereiche fallen, um Kollisionen zwischen Eigenschaften zu vermeiden, die von verschiedenen Anbietern oder Benutzern definiert werden. Benutzer von Eigenschaften in diesen Bereichen können jedoch keine Annahmen hinsichtlich des Verhaltens der Eigenschaften treffen. Jeder Client, der eine neue Nachrichtenklasse erstellt, hat Zugriff auf diese Bereiche; eine Eigenschaft mit dem Bezeichner _xxxx_ kann ein Verhalten für eine Nachrichtenklasse und ein anderes Verhalten für eine andere Nachrichtenklasse bedeuten. 
   
-Benannte Eigenschaften werden verwendet, um sicherzustellen, dass eine bestimmte Eigenschaft für eine Nachrichtenklasse eindeutig ist. Benannte Eigenschaftenbezeichner starten im Bereich von 0 x 8000. Clients definieren einen oder mehrere Namen, und rufen Sie dann den Nachrichtenspeicher [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode, um die einzelnen Namen einen Bezeichner zuordnen. Benannte Eigenschaften können neue Eigenschaften für jedes Objekt gilt nur, wenn der Besitzer des Objekts benannte Eigenschaften unterstützt Definieren von Clients oder -Dienstanbieter verwendet werden. Benutzer dieser Eigenschaften anrufen **GetIDsFromNames** sowie die zugehörigen **IMAPIProp** Methode [GetNamesFromIDs](imapiprop-getnamesfromids.md), Zuordnung zwischen einen Namen und des Bezeichners.
+Benannte Eigenschaften werden verwendet, um sicherzustellen, dass eine bestimmte Eigenschaft für eine Nachrichtenklasse eindeutig ist. Benannte Eigenschaftsbezeichner beginnen im 0X8000-Range. Clients definieren einen oder mehrere Namen und rufen dann die [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode des Nachrichtenspeichers auf, um jedem Namen einen Bezeichner zuzuordnen. Benannte Eigenschaften können von Clients oder Dienstanbietern nur dann zum Definieren neuer Eigenschaften für ein Objekt verwendet werden, wenn der Besitzer des Objekts benannte Eigenschaften unterstützt. Benutzer dieser Eigenschaften rufen **GetIDsFromNames** und eine zugehörige **IMAPIProp** -Methode [GetNamesFromIDs](imapiprop-getnamesfromids.md)auf, um zwischen einem Namen und seinem Bezeichner zu ordnen.
   
-Alle Eigenschaften, neue oder vorhandene, müssen die vordefinierte Eigenschaftentypen verwenden. Neue Eigenschaftstypen können nicht hinzugefügt werden, und vorhandene Typen können nicht geändert oder gelöscht werden soll. Einfache kleine Eigenschaften, wie einzelne Zeichen oder 16-Bit Ganzzahleigenschaften in einem entsprechenden gespeichert werden können. Beispielsweise ganzen Zahlen als **ULONG** gespeichert werden können und Zeichenfolgen können als **PT_STRING8**gespeichert werden. 
+Bei allen Eigenschaften, New oder existing, muss der Satz vordefinierter Eigenschaftentypen verwendet werden. Neue Eigenschaftentypen können nicht hinzugefügt werden, und vorhandene Typen können nicht geändert oder gelöscht werden. Einfache, kleine Eigenschaften wie Einzel-oder 16-Bit-Ganzzahl-Eigenschaften können in jedem geeigneten Typ gespeichert werden. Beispielsweise können ganze Zahlen als **ulong** gespeichert werden, und Zeichenfolgen können als **PT_String8**gespeichert werden. 
   
-Verwenden Sie den **PT_BINARY** -Typ an, dass gezählte Bytearray zurück. In diesem Eigenschaftentyp eignet sich für erweitern die Datentypen, die in einem Objekt gespeichert werden können. Bytes werden in der Abfolge übertragen und keine Annahmen über die Bedeutung der Daten. Wenn eine Clientanwendung Daten aus einer solchen Eigenschaft liest, sind die Daten unverändert aus, wie sie gespeichert wurden. Der Client muss alle erforderlichen Byte Austausch beim Verschieben von Daten über CPUs ausführen. 
+Verwenden Sie den **PT_BINARY** -Typ, um ein Gezähltes Bytearray anzugeben. Dieser Eigenschafts eignet sich zum Erweitern der Datentypen, die in einem Objekt gespeichert werden können. Bytes werden in der Reihenfolge übertragen, und es werden keine Annahmen hinsichtlich der Bedeutung der Daten vorgenommen. Wenn eine Clientanwendung Daten aus einer solchen Eigenschaft liest, werden die Daten unverändert, wie Sie gespeichert wurden. Der Client muss alle erforderlichen Byte Tauschvorgänge ausführen, wenn Daten über CPUs hinweg übertragen werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

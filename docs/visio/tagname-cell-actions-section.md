@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e593e95d-f975-481d-69cd-619049d4427d
 description: Enthält den Namen des Aktionstags, mit dem diese Aktion verknüpft ist.
-ms.openlocfilehash: e1495a34769cbcfdd687491855d1f9c761de2b4e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e7bf5db940934d168ac2adb86d05b0374b0fd265
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332389"
 ---
-# <a name="tagname-cell-actions-section"></a>TagName Cell (Actions Section)
+# <a name="tagname-cell-actions-section"></a>Zelle "TagName" (Abschnitt "Actions")
 
 Enthält den Namen des Aktionstags, mit dem diese Aktion verknüpft ist.
   
@@ -27,26 +27,26 @@ Enthält den Namen des Aktionstags, mit dem diese Aktion verknüpft ist.
 
 Über die Zellen TagName im Abschnitt Actions und im Abschnitt Action Tags erfolgt das Zuordnen eines Aktionstags zu den damit verknüpften Aktionen. 
   
-- Wenn in der Zeile Actions die Zelle TagName leer ist, wird die Aktion im Kontextmenü, nicht auf eine im Aktionstagmenü angezeigt.
+- Wenn die Zelle TagName in einer Zeile Aktionen leer ist, wird die Aktion in einem Kontextmenü und nicht in einem aktionstagmenü angezeigt.
     
-- Wenn ein Zellwert TagName in der Zeile Actions der Wert der TagName Zelle in einer Zeile Smart Tags entspricht, wird die Aktion auf im Aktionstagmenü angezeigt.
+- Wenn der Zellenwert TagName in der Zeile Actions mit dem Zellenwert TagName in einer Smarttag-Zeile übereinstimmt, wird die Aktion im Menü Aktionstag angezeigt.
     
-- Zelle "TagName" eine Aktion verfügt über einen Wert, jedoch entspricht nicht den Wert in einer beliebigen Form-Tag-Zeile, wird diese Aktion nicht auf eine beliebige Aktionstag oder Kontextmenüs angezeigt.
+- Wenn die Zelle TagName einer Aktion einen Wert aufweist, aber nicht mit dem Wert TagName in einer beliebigen Shape-Tag-Zeile übereinstimmt, wird diese Aktion nicht in einem Aktionstag-oder Kontextmenü angezeigt.
     
 - Wenn mehrere Smarttag-Zeilen den gleichen Wert in der Zelle TagName aufweisen, wird überall die gleiche Aktion angezeigt.
     
-Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . TagNamewhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name* . Tagnamewobei-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**VisRowAction** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionTagName** <br/> |
    
 

@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ca949013-f998-1bce-39e5-ac6f68ab2392
 description: Eine Ereigniszelle, die ausgewertet wird, wenn Sie auf ein Shape doppelklicken.
-ms.openlocfilehash: 623d1d095d3269cd9c82fa8d0d6601933a163f92
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a50e88ecd8e432629e246f7038dfcc9626725cc5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337170"
 ---
-# <a name="eventdblclick-cell-events-section"></a>EventDblClick Cell (Events Section)
+# <a name="eventdblclick-cell-events-section"></a>Zelle "EventDblClick" (Abschnitt "Events")
 
 Eine Ereigniszelle, die ausgewertet wird, wenn Sie auf ein Shape doppelklicken.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.
   
-Wenn Sie einen Verweis auf die Zelle EventDblClick aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle EreignisDpplKlck aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | EventDblClick  <br/> |
+| Zellenname:  <br/> | EreignisDpplKlck  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EventDblClick aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle EreignisDpplKlck aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowEvent** <br/> |
-| Zellenindex:  <br/> |**visEvtCellDblClick** <br/> |
+| Zeilenindex:  <br/> |**visEvtCellDblClick** <br/> |
    
 

@@ -8,41 +8,41 @@ api_type:
 - COM
 ms.assetid: 7ffec274-ee90-44c7-ab2e-7dfb502517a6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4610d9e643541e39144f2af86a2d64928b8e9ca7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e1c31e5edf702dd8f172f67e7055a96ae4cfff1c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337037"
 ---
 # <a name="displaying-recipient-information"></a>Anzeigen von Empfängerinformationen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI bietet ein Standarddialogfeld für Empfänger-Details anzeigen. Im Dialogfeld Details der wird aus einer Tabelle anzeigen und eine Implementierung **IMAPIProp** erstellt. Zeigt die Tabelle erläutert, wie unter "Details" und die Implementierung **IMAPIProp** steuert die Daten für den Empfänger. Der Anbieter ist verantwortlich für die Angabe der Tabelle anzeigen und die Implementierung **IMAPIProp** für jeden Empfänger. 
+MAPI bietet ein allgemeines Dialogfeld zum Anzeigen von Empfängerdetails. Das Dialogfeld Details wird aus einer Anzeigetabelle und einer **IMAPIProp** -Implementierung erstellt. In der Anzeigetabelle wird die Darstellung der Details angezeigt, und die **IMAPIProp** -Implementierung steuert die Daten für den Empfänger. Ihr Anbieter ist für die Bereitstellung der Anzeigetabelle und der **IMAPIProp** -Implementierung für jeden Empfänger verantwortlich. 
   
-Die einfachste Möglichkeit zum Erstellen der Anzeige-Tabelle ist eine Struktur [DTPAGE](dtpage.md) definieren und Aufrufen von [BuildDisplayTable](builddisplaytable.md). Verwenden Sie einige Anbieter, insbesondere schreibgeschützte Anbieter, mit denen die Erstellung von einmaligen Empfängern können jedoch **IPropData**. Die Implementierung **IMAPIProp** kann jede Art von Property-Objekt sein. 
+Am einfachsten können Sie die Anzeigetabelle erstellen, indem Sie eine [DTPAGE](dtpage.md) -Struktur definieren und [BuildDisplayTable](builddisplaytable.md)aufrufen. Einige Anbieter, insbesondere schreibgeschützte Anbieter, die das Erstellen von einmaligen Empfängern zulassen, verwenden jedoch **IPropData**. Bei der **IMAPIProp** -Implementierung kann es sich um einen beliebigen Typ von Property-Objekt handeln. 
   
-Es gibt zwei Methoden zum Aufrufen dieses Dialogfeld: [IAddrBook::Details](iaddrbook-details.md) und [IMAPISupport::Details](imapisupport-details.md). Wenn der Anbieter eine der folgenden Methoden zum Anfordern von Informationen für einen Empfänger aufruft, öffnet MAPI zuerst den Empfänger durch Aufrufen des Containers [IMAPIContainer::OpenEntry](imapicontainer-openentry.md) -Methode. Danach wird der Aufgabenliste des Empfängers [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode, um anzufordern, die **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md))-Eigenschaft. **PR_DETAILS_TABLE** ist die Eigenschaft, die einen Empfänger Details zeigt die Tabelle darstellt. 
+Es gibt zwei Methoden zum Aufrufen dieses Dialogfelds: [IAddrBook::D ails](iaddrbook-details.md) und [IMAPISupport::D ails](imapisupport-details.md). Wenn der Anbieter eine dieser Methoden zum Anfordern von Details für einen Empfänger aufruft, wird der Empfänger von MAPI zunächst durch Aufrufen der [IMAPIContainer:: OpenEntry](imapicontainer-openentry.md) -Methode des Containers geöffnet. Als nächstes wird die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Empfängers aufgerufen, um die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft anzufordern. **PR_DETAILS_TABLE** ist die Eigenschaft, die die Details der Anzeigetabelle eines Empfängers darstellt. 
   
-Die [IPropData: IMAPIProp](ipropdataimapiprop.md) -Schnittstelle verwendet werden, um Änderungen auf die Tabellensteuerelemente anzeigen zu überwachen, wie im folgenden Verfahren beschrieben. 
+Die [IPropData: IMAPIProp](ipropdataimapiprop.md) -Schnittstelle kann verwendet werden, um Änderungen an Anzeige Tabellensteuerelemente zu überwachen, wie im folgenden Verfahren beschrieben. 
   
-## <a name="monitor-changes-to-a-control"></a>Überwachen von Änderungen an ein Steuerelement
+## <a name="monitor-changes-to-a-control"></a>Überwachen von Änderungen an einem Steuerelement
   
-1. Bevor der Benutzer Zugriff auf das Steuerelement erhält, rufen Sie [IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md) , um die Steuerung des Zugriffs auf IPROP_CLEAN festzulegen auf. 
+1. Bevor der Benutzer Zugriff auf das Steuerelement erhält, rufen Sie [IPropData:: HrSetObjAccess](ipropdata-hrsetobjaccess.md) auf, um den Zugriff auf IPROP_CLEAN für den Steuerelement festzulegen. 
     
-2. Ermöglicht es dem Benutzer das Dialogfeld entwickelt. 
+2. Ermöglicht dem Benutzer das Arbeiten mit dem Dialogfeld. 
     
-3. Wenn der Benutzer beendet wurde, rufen Sie [IPropData::HrGetPropAccess](ipropdata-hrgetpropaccess.md) zum Abrufen der aktuellen Zugriffsebene des Steuerelements. 
+3. Wenn der Benutzer fertig ist, rufen Sie [IPropData:: HrGetPropAccess](ipropdata-hrgetpropaccess.md) auf, um die aktuelle Zugriffsebene des Steuerelements abzurufen. 
     
-4. Wenn die Zugriffsebene IPROP_DIRTY ist, hat der Benutzer das Steuerelement geändert. Der Anbieter sollte:
+4. Wenn die Zugriffsebene IPROP_DIRTY ist, hat der Benutzer das Steuerelement geändert. Ihr Anbieter sollte:
     
-   - Rufen Sie wieder auf IPROP_CLEAN [IPropData::HrSetPropAccess](ipropdata-hrsetpropaccess.md) , um den Zugriff festzulegen. 
+   - Rufen Sie [IPropData:: HrSetPropAccess](ipropdata-hrsetpropaccess.md) auf, um die Zugriffsebene auf IPROP_CLEAN zurückzustellen. 
     
-   - Rufen Sie die Eigenschaft Datenobjekt [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode, um die geänderte Eigenschaft abgerufen und durch Aufrufen von [IMAPIProp::SetProps](imapiprop-setprops.md)zu aktualisieren.
+   - Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Property-Datenobjekts auf, um die geänderte Eigenschaft abzurufen und durch Aufrufen von [IMAPIProp::](imapiprop-setprops.md)SetProps zu aktualisieren.
     
-5. Wenn die Zugriffsebene noch IPROP_CLEAN ist, wurde das Steuerelement nicht geändert. 
+5. Wenn die Zugriffsebene immer noch IPROP_CLEAN ist, wurde das Steuerelement nicht geändert. 
     
-Weitere Informationen zum Erstellen von Tabellen anzeigen finden Sie unter [Tabellen angezeigt](display-tables.md).
+Weitere Informationen zum Erstellen von Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md).
   
 

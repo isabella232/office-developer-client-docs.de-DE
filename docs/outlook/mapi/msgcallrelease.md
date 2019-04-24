@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 23c08597-41f0-4f48-a63e-79962fa812bc
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e9a1c416cbf992c9cbcfb5de42d302ff16e7f521
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 9ffaab1e9cc381be2abfb389f4b72067dca2438b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338563"
 ---
 # <a name="msgcallrelease"></a>MSGCALLRELEASE
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Rückruffunktion, die eine Schnittstelle **IStorage** nach der endgültigen Version eines Objekts mit der Funktion [OpenIMsgOnIStg](openimsgonistg.md) aufbaut **IMessage** freigegeben werden kann. 
+Definiert eine Rückruffunktion, die eine **IStorage** -Schnittstellenach der endgültigen Version eines auf Ihr basierenden **IMessage** -Objekts mit der [OpenIMsgOnIStg](openimsgonistg.md) -Funktion freigeben kann. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage.h  <br/> |
-|Definierte Funktion von implementiert:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
-|Definierte Funktion aufgerufen:  <br/> |MAPI  <br/> |
+|Headerdatei  <br/> |IMessage. h  <br/> |
+|Definierte Funktion, implementiert von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
    
 ```cpp
 typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
@@ -43,13 +43,13 @@ typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
 
  _ulCallerData_
   
-> [in] Enthält die aufrufende Anwendungsinformationen zur **IMessage** -Schnittstelle. 
+> in Enthält Anruf Anwendungsinformationen zur **IMessage** -Schnittstelle. 
     
  _lpMessage_
   
-> [in] Zeiger auf der obersten Ebene Meldung und Anlagen, die veröffentlicht wurden.
+> in Zeiger auf die Nachricht und die Anlagen auf oberster Ebene, die freigegeben wurden.
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
 None.
   

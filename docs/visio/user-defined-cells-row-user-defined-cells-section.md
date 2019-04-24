@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6c48b9b3-5c62-7d5a-1c8f-fe96606f4dea
 description: Enthält den Wert und die beschreibende Eingabeaufforderung für jede benutzerdefinierte Zelle in Ihrer Lösung. Ein Shape enthält für jedes Paar von Zellen mit Wert und Eingabeaufforderung eine User-defined Cells-Zeile.
-ms.openlocfilehash: 45a9a033fe486a14e9881c3d79b79a129ecedc1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 01e2da8ef1e97e8a911df605ab6cf1e9f8a853eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337184"
 ---
 # <a name="user-defined-cells-row-user-defined-cells-section"></a>Zeile "User-defined Cells" (Abschnitt "User-defined Cells")
 
 Enthält den Wert und die beschreibende Eingabeaufforderung für jede benutzerdefinierte Zelle in Ihrer Lösung. Ein Shape enthält für jedes Paar von Zellen mit Wert und Eingabeaufforderung eine User-defined Cells-Zeile.
   
-Zeilen User-defined Cells heißen Benutzer. *Name* und enthält folgenden Zellen. Weitere Informationen finden Sie unter die folgenden Zellen. 
+Benutzerdefinierte Zellen Zeilen werden als Benutzer bezeichnet. *Name* und enthalten die folgenden Zellen. Weitere Informationen finden Sie in den Themen zu bestimmten Zellen. 
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[Value](value-cell-user-defined-cells-section.md) <br/> |Gibt einen Wert für die entsprechende benutzerdefinierte Zelle an.  <br/> |
+|[Wert](value-cell-user-defined-cells-section.md) <br/> |Gibt einen Wert für die entsprechende benutzerdefinierte Zelle an.  <br/> |
 |[Prompt](prompt-cell-user-defined-cells-section.md) <br/> |Gibt eine beschreibende Eingabeaufforderung bzw. einen Kommentar für die benutzerdefinierte Zelle an.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Benutzerdefinierte Zellen können für die Eingabe von Formeln oder Konstanten verwendet werden, auf die durch andere Zellen oder Add-Ons verwiesen wird. Werte in benutzerdefinierten Zellen sind portabel. Wenn ein Shape, das auf eine benutzerdefinierte Zelle in einem Shape verweist, in ein anderes Shape kopiert wird, das nicht dieselbe benutzerdefinierte Zelle enthält, wird die Zelle dem Shape hinzugefügt.
   
- Sie können beliebig viele Benutzer hinzufügen.  *Namen* Zeilen wie Sie benötigen, den Zeilen aussagekräftige Namen zuweisen und Zellenwerte festlegen. Um eine Zeile eines vorhandenen Abschnitts User-defined Cells hinzuzufügen, mit der rechten Maustaste in einer Zeile, und klicken Sie im Kontextmenü auf **Zeile einfügen** . 
+ Sie können so viele Benutzer hinzufügen.  *benennen* Sie Zeilen, die Sie benötigen, und weisen Sie den Zeilen aussagekräftige Namen zu. Um einer vorhandenen benutzerdefinierten Zelle eine Zeile hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im Kontextmenü auf **Zeile einfügen** . 
   
-Sie können diese Zellen anhand ihrer Zeilennamen verweisen, die in einem ShapeSheet-Fenster als roter Text angezeigt. Um Benutzer aussagekräftige Namen zuzuweisen. *Namen* Zeilen, klicken Sie auf die Zeile, und geben Sie einen Namen wie beispielsweise *Offset* , beispielsweise, um die Zeile mit dem Namen User.Offset zu erstellen. Sie können dann die Zelle Prompt mit PROMT verweisen. 
+Sie können auf diese Zellen anhand ihres Zeilennamens verweisen, der in einem ShapeSheet-Fenster in rotem Text angezeigt wird. Dem Benutzer aussagekräftige Namen zuweisen. *Name* rows, klicken Sie auf die Zeile, und geben Sie dann einen Namen wie *Offset* ein, um beispielsweise den Zeilennamen User. Offset zu erstellen. Sie können dann mithilfe von User. Offset. reansage auf die Zelle "Ansage" verweisen. 
   
 Der eingegebene Zeilenname muss innerhalb des Abschnitts eindeutig sein.
   

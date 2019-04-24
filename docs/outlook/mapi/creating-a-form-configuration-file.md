@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Formularkonfigurationsdatei
+title: Erstellen einer Formular Konfigurationsdatei
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,26 +8,26 @@ api_type:
 - COM
 ms.assetid: aaf3b33d-ad2d-4ef8-847f-1ab1eaf08706
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d8159d93aef020d7c9c1b56be4cf6256f80b8aa3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 97ecafb2e4159c680fd23607f5ed6f8ea3156de7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333019"
 ---
-# <a name="creating-a-form-configuration-file"></a>Erstellen einer Formularkonfigurationsdatei
+# <a name="creating-a-form-configuration-file"></a>Erstellen einer Formular Konfigurationsdatei
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Konfigurationsdatei Formular enthält Informationen zu einem Formular, an den Formular-Manager verwendeten und Clientanwendungen. Eine Konfigurationsdatei Formular enthält eine umfassende Spezifikation für ein Formular, einschließlich der Eigenschaften, die vom Formular für die Verwendung von messaging-Clients, die vom Formular implementierte Verben und die Plattformen, die vom Formular veröffentlicht.
+Eine Formular Konfigurationsdatei enthält Informationen zu einem Formular sowohl für den verwendeten Formular-Manager als auch für Clientanwendungen. Eine Formular Konfigurationsdatei enthält eine umfangreiche Spezifikation für ein Formular, einschließlich der Eigenschaften, die vom Formular für die Verwendung durch Messagingclients veröffentlicht werden, die Verben, die vom Formular implementiert werden, und die vom Formular unterstützten Plattformen.
   
-Eine Konfigurationsdatei Formular ist eine Datei mit der Erweiterung cfg und weist das Format einer Windows-Initialisierungsdatei ähnelt. Es handelt sich um eine nur-Text-Datei mit einer Anzahl von Abschnitten. Jeder Abschnitt beginnt mit einem Abschnittsnamen, die in Klammern eingeschlossen. Jeder Abschnitt enthält eine oder mehrere Zeilen, die Werte und Einstellungen für diesen Abschnitt relevant definieren. Werte haben einen der folgenden Typen:
+Eine Formular Konfigurationsdatei ist eine Datei mit der Erweiterung. cfg und hat ein Format, das einer Windows-Initialisierungsdatei ähnelt. Es handelt sich um eine nur-Text-Datei mit einer Reihe von Abschnitten. Jeder Abschnitt beginnt mit einem Abschnittsnamen, der in eckigen Klammern eingeschlossen ist. Jeder Abschnitt enthält eine oder mehrere Zeilen, die Werte und Einstellungen für diesen Abschnitt definieren. Werte haben einen der folgenden Typen:
   
-- String
+- Zeichenfolge
     
-- Zeichenfolge angezeigt
+- Angezeigte Zeichenfolge
     
 - Plattformzeichenfolge
     
@@ -37,11 +37,11 @@ Eine Konfigurationsdatei Formular ist eine Datei mit der Erweiterung cfg und wei
     
 - GUID
     
-Weitere Informationen zu den Abschnitten einer Datei CFG finden Sie unter [File Format des Formulars Konfigurationsdateien](file-format-of-form-configuration-files.md).
+Weitere Informationen zu den Abschnitten einer cfg-Datei finden Sie unter [File Format of Form Configuration Files](file-format-of-form-configuration-files.md).
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
+[Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
 

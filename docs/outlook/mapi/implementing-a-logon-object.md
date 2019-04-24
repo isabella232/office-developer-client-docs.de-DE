@@ -1,5 +1,5 @@
 ---
-title: Implementieren eines Anmeldeobjekts
+title: Implementieren eines Anmelde Objekts
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,69 +7,69 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 41e5c88c-d79d-4e9f-81f4-c4365cfaa15d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 99a8473abf01467c534c0ea829e342fa46489e99
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: f9d77313012c2d133dc9352707ebc5e0c69c9973
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332844"
 ---
-# <a name="implementing-a-logon-object"></a>Implementieren eines Anmeldeobjekts
+# <a name="implementing-a-logon-object"></a>Implementieren eines Anmelde Objekts
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Jedes Adressbuch, Nachrichtenspeicher und Transport-Provider instanziiert ein Anmeldeobjekt als Teil der Implementierung der [IABProvider::Logon](iabprovider-logon.md), [IMSProvider::Logon](imsprovider-logon.md)oder [IXPProvider::TransportLogon](ixpprovider-transportlogon.md). Logon-Objekten Implementieren von Methoden, mit deren Hilfe MAPI-Client Serviceanfragen. Je nach Typ des Dienstanbieters wird Ihr Anmeldeobjekt eine der folgenden Schnittstellen unterstützen. 
+Jedes Adressbuch, jeder Nachrichtenspeicher und jeder Transportanbieter instanziiert ein LOGON-Objekt als Teil seiner Implementierung von [IABProvider:: LOGON](iabprovider-logon.md), [IMSProvider:: LOGON](imsprovider-logon.md)oder [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md). Anmeldeobjekte implementieren Methoden, die MAPI-Dienst Clientanforderungen unterstützen. Je nach Typ des Dienstanbieters unterstützt Ihr Logon-Objekt eine der folgenden Schnittstellen. 
   
-|**Anmeldung-Objektschnittstelle**|**Dienstanbieter**|
+|**Benutzeroberfläche des Anmelde Objekts**|**Dienstanbieter**|
 |:-----|:-----|
-|[IABLogon : IUnknown](iablogoniunknown.md) <br/> |-Adressbuchanbieter  <br/> |
-|[IMSLogon : IUnknown](imslogoniunknown.md) <br/> |Nachricht Speicheranbieter  <br/> |
-|[IXPLogon : IUnknown](ixplogoniunknown.md) <br/> |Transportdienst  <br/> |
+|[IABLogon : IUnknown](iablogoniunknown.md) <br/> |Adressbuchanbieter  <br/> |
+|[IMSLogon : IUnknown](imslogoniunknown.md) <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|[IXPLogon : IUnknown](ixplogoniunknown.md) <br/> |Transport Anbieter  <br/> |
    
-Adressbuch und Meldung von nachrichtenspeicheranbietern implementierte die folgenden Features in ihrer Anmeldung Objekte:
+Adressbuch-und Nachrichtenspeicher Anbieter implementieren die folgenden Features in ihren anmeldeobjekten:
   
-- Unterstützung für ereignisbenachrichtigung (**Advise** und **Unadvise** -Methoden). Eine Übersicht über ereignisbenachrichtigung finden Sie unter [Event Notification in MAPI](event-notification-in-mapi.md). Weitere Informationen zur Unterstützung von Benachrichtigung in Ihrer Anmeldung-Objekt finden Sie unter [Ereignisbenachrichtigung unterstützen](supporting-event-notification.md). 
+- Unterstützung für Ereignisbenachrichtigungen (Methoden "**Advise** " und "Unadvise"). **** Eine Übersicht über die Ereignisbenachrichtigung finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Weitere Informationen zur Unterstützung von Benachrichtigungen in Ihrem LOGON-Objekt finden Sie unter [UnterstützenDe Ereignisbenachrichtigung](supporting-event-notification.md). 
     
-- Vergleich der Eintrag Bezeichner **(Eintragsbezeichner)** . Allgemeine Informationen zu Eintragsbezeichner finden Sie unter [MAPI-Eintragsbezeichner](mapi-entry-identifiers.md). Weitere Informationen zum Vergleichen von Eintragsbezeichner in **Ihrer Anmeldung-Objekt-Eintragsbezeichner** finden Sie unter [Vergleich und unterstützende Objektzugriff](supporting-object-access-and-comparison.md).
+- Vergleich der Eintragsbezeichner (**CompareEntryIDs** -Methode). Allgemeine Informationen zu Eintrags Bezeichnern finden Sie unter [MAPI Entry Identifiers](mapi-entry-identifiers.md). Weitere Informationen zum Vergleichen von Eintrags-IDs in der **CompareEntryIDs** -Methode Ihres LOGON-Objekts finden Sie unter [Unterstützung des objektZugriffs und-Vergleichs](supporting-object-access-and-comparison.md).
     
-- Zugriff auf zusätzliche Fehlerinformationen (**GetLastError** -Methode). Weitere Informationen zur Behandlung von Fehlern in MAPI finden Sie unter [Fehlerbehandlung in MAPI](error-handling-in-mapi.md). 
+- Zugriff auf zusätzliche Fehlerinformationen (**getlasterroraufzurufen** -Methode). Weitere Informationen zum Behandeln von Fehlern in MAPI finden Sie unter [Error Handling in MAPI](error-handling-in-mapi.md). 
     
-- Zugriff auf Objekte, die vom Dienstanbieter (**OpenEntry** -Methode) implementiert. Weitere Informationen finden Sie unter [Vergleich und unterstützende Object Access](supporting-object-access-and-comparison.md).
+- Zugriff auf Objekte, die vom Dienstanbieter implementiert**** werden (OpenEntry-Methode). Weitere Informationen finden Sie unter [unterstützen des Objektzugriffs und-Vergleichs](supporting-object-access-and-comparison.md).
     
-- Zugriff auf ein Statusobjekt (**OpenStatusEntry** -Methode). Allgemeine Informationen zu Status-Objekten finden Sie unter [MAPI-Status-Objekten](mapi-status-objects.md). Bestimmte Informationen zum Implementieren der Statusobjekt finden Sie unter [Implementierung der Status-Objekts](status-object-implementation.md).
+- Zugriff auf ein Statusobjekt (**OpenStatusEntry** -Methode). Allgemeine Informationen zu Statusobjekten finden Sie unter [MAPI-Statusobjekte](mapi-status-objects.md). Spezifische Informationen zum Implementieren eines Status-Objekts finden Sie unter [Status Object Implementation](status-object-implementation.md).
     
-- Ein Prozess der Abmeldung (**Logoff (** Methode)). Weitere Informationen finden Sie unter [Herunterfahren nach unten a Service Provider](shutting-down-a-service-provider.md).
+- Ein ABMELDEPROZESS**** (Abmelde Methode). Weitere Informationen finden Sie unter [Herunterfahren eines Dienstanbieters](shutting-down-a-service-provider.md).
     
-Wenn der Anbieter eine Adressbuchanbieter ist, implementieren Sie die auch die folgenden Methoden und die zugehörigen Features:
+Wenn es sich bei Ihrem Anbieter um einen Adressbuchanbieter handelt, implementieren Sie auch die folgenden Methoden und zugehörigen Features:
   
-- [GetOneOffTable](iablogon-getoneofftable.md) , um eine Liste der Vorlagen bereitzustellen, die für das Erstellen von neuen Empfänger unterstützt. Weitere Informationen finden Sie unter [Einmaligen Tabellen](one-off-tables.md) oder [Implementieren einer einmaligen Anbieter-Tabelle](implementing-a-provider-one-off-table.md).
+- [IABLogon:: GetOneOffTable](iablogon-getoneofftable.md) , um eine Liste der Vorlagen bereitzustellen, die Sie für das Erstellen neuer Empfänger unterstützen. Weitere Informationen finden Sie unter [einmalige Tabellen](one-off-tables.md) oder [Implementieren einer Anbieter-einmaligen Tabelle](implementing-a-provider-one-off-table.md).
     
-- [OpenTemplateID](iablogon-opentemplateid.md) für den Zugriff auf die Implementierung eines Empfängers, dessen Daten in einer Host-Adressbuchanbieter befindet. Weitere Informationen finden Sie unter [als einen fremden Adressbuchanbieter fungiert](acting-as-a-foreign-address-book-provider.md). 
+- [IABLogon::](iablogon-opentemplateid.md) opentemplatecode, um den Zugriff auf die Implementierung eines Empfängers bereitzustellen, dessen Daten in einem Host Adressbuchanbieter gespeichert sind. Weitere Informationen finden Sie unter [fungieren als ein fremder Adressbuchanbieter](acting-as-a-foreign-address-book-provider.md). 
     
-- [IABLogon::PrepareRecips](iablogon-preparerecips.md) , um sicherzustellen, dass die entsprechenden Eigenschaften für alle Empfänger in einer Empfängerliste verfügbar sind. Weitere Informationen finden Sie unter [IABLogon::PrepareRecips](iablogon-preparerecips.md). 
+- [IABLogon::P reparerecips](iablogon-preparerecips.md) , um sicherzustellen, dass die entsprechenden Eigenschaften für alle Empfänger in einer Empfängerliste zur Verfügung stehen. Weitere Informationen finden Sie unter [IABLogon::P reparerecips](iablogon-preparerecips.md). 
     
-Eines Transportdienstes Anmeldung-Objekt, das implementiert [IXPLogon: IUnknown](ixplogoniunknown.md), unterscheidet sich von der Logon-Objekten, die von anderen Typen der Dienstanbieter implementiert. Es wurde die Anmeldung Objekte nur zwei Features: Zugriff auf ein Statusobjekt über die [IXPLogon::OpenStatusEntry](ixplogon-openstatusentry.md) -Methode und eine Abmeldung über die [IXPLogon::TransportLogoff](ixplogon-transportlogoff.md) -Methode. Transportanbieter implementieren die folgenden eindeutigen Features in ihrer Anmeldung Objekte: 
+Das Anmeldeobjekt eines Transportanbieters, das [IXPLogon: IUnknown](ixplogoniunknown.md)implementiert, unterscheidet sich ganz von den von den anderen Typen von Dienstanbietern implementierten anmeldeobjekten. Mit den anderen LOGON-Objekten haben Sie nur zwei Features: Zugriff auf ein Status-Objekt über die [IXPLogon:: OpenStatusEntry](ixplogon-openstatusentry.md) -Methode und einen Abmeldevorgang über die [IXPLogon:: TransportLogoff](ixplogon-transportlogoff.md) -Methode. Transport Anbieter implementieren die folgenden eindeutigen Features in ihren anmeldeobjekten: 
   
-- Registrierung für Adresstypen ([IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode). Weitere Informationen zum Registrieren eines Adresstyps finden Sie unter [Adressbuchhierarchie und MAPI-Warteschlange betriebliche Modell](transport-provider-and-mapi-spooler-operational-model.md).
+- Registrierung für Adresstypen ([IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode). Weitere Informationen zum Registrieren eines Adresstyps finden Sie unter [Transport Anbieter und MAPI-Spooler-Betriebsmodell](transport-provider-and-mapi-spooler-operational-model.md).
     
-- Steuerung der Nachrichtenübermittlung ([IXPLogon::StartMessage](ixplogon-startmessage.md), [IXPLogon::EndMessage](ixplogon-endmessage.md)und [IXPLogon::SubmitMessage](ixplogon-submitmessage.md) -Methoden). Weitere Informationen finden Sie unter [Nachricht Empfang Modell](message-reception-model.md) [interagieren mit der MAPI-Warteschlange](interacting-with-the-mapi-spooler.md)und [Nachricht Übermittlung Modell](message-submission-model.md).
+- Steuerung der Nachrichtenübermittlung ([IXPLogon:: StartMessage](ixplogon-startmessage.md), [IXPLogon:: EndMessage](ixplogon-endmessage.md)und [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md) -Methoden). Weitere Informationen finden Sie unter [Nachrichtenempfangs Modell](message-reception-model.md), [Interaktion mit dem MAPI](interacting-with-the-mapi-spooler.md)-Spooler und [Nachrichten Übermittlungs Modell](message-submission-model.md).
     
-- Überprüfung der internen Zustand ([IXPLogon::ValidateState](ixplogon-validatestate.md) -Methode). 
+- Interne Statusüberprüfung ([IXPLogon:: ValidateState](ixplogon-validatestate.md) -Methode). 
     
-- Möglichkeit zum Herunterladen und Hochladen von Nachrichten bei Bedarf ([IXPLogon::FlushQueues](ixplogon-flushqueues.md) -Methode). Weitere Informationen finden Sie unter [Implementieren der FlushQueues-Methode](implementing-the-flushqueues-method.md).
+- Möglichkeit zum Herunterladen oder Hochladen von Nachrichten bei Bedarf ([IXPLogon:: FlushQueues](ixplogon-flushqueues.md) -Methode). Weitere Informationen finden Sie unter [Implementieren der FlushQueues-Methode](implementing-the-flushqueues-method.md).
     
-- Die Möglichkeit, die Abfrage für ausstehende Nachrichten ([IXPLogon::Poll](ixplogon-poll.md) -Methode). Weitere Informationen finden Sie unter [Message Empfang Model](message-reception-model.md).
+- Möglichkeit zum Abfragen ausstehender Nachrichten ([IXPLogon::P oll](ixplogon-poll.md) -Methode). Weitere Informationen finden Sie unter [Message reception Model](message-reception-model.md).
     
-- Leerlauf Erkennung ([IXPLogon::Idle](ixplogon-idle.md) -Methode). 
+- Leerlaufstatus Erkennung ([IXPLogon:: idle](ixplogon-idle.md) -Methode). 
     
-- Interaktion mit der MAPI-Warteschlange ([IXPLogon::TransportNotify](ixplogon-transportnotify.md) -Methode). 
+- Interaktion mit dem MAPI-Spooler ([IXPLogon:: TransportNotify](ixplogon-transportnotify.md) -Methode). 
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Implementieren einer Dienstanbieteranmeldung](implementing-service-provider-logon.md)
+[Implementieren der Dienstanbieter Anmeldung](implementing-service-provider-logon.md)
 

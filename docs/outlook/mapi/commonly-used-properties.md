@@ -7,23 +7,23 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 887c5e82-170f-4c3c-986f-465c05fbbdbe
-description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 6d1eadfa4138cbd8173bccd0f31e2cdc89c9d5d6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 20 November, 2011'
+ms.openlocfilehash: 5e9a1832890c65998a1732278367c0e916fb0c5c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334909"
 ---
 # <a name="commonly-used-properties"></a>Häufig verwendete Eigenschaften
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Liste der erforderlichen und optionalen MAPI-Eigenschaften werden an verschiedenen Orten dokumentiert.
+Listen der erforderlichen und optionalen MAPI-Eigenschaften werden an mehreren Stellen dokumentiert.
   
-Finden Sie die folgenden Schnittstellen für Listen mit Objekten, die diese Schnittstellen unterstützen zugeordneten Eigenschaften:
+Sehen Sie sich die folgenden Schnittstellen für Listen von Eigenschaften an, die Objekten zugeordnet sind, die diese Schnittstellen unterstützen:
   
 - [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
     
@@ -43,18 +43,18 @@ Finden Sie die folgenden Schnittstellen für Listen mit Objekten, die diese Schn
     
 - [IProfSect : IMAPIProp](iprofsectimapiprop.md)
     
-Listen von Eigenschaften für Tabellen erforderlich finden Sie in der Dokumentation für jede Art von Tabelle in [MAPI-Tabellen](mapi-tables.md).
+Eine Liste der für Tabellen erforderlichen Eigenschaften finden Sie in der Dokumentation zu den einzelnen Tabellentypen in [MAPI-Tabellen](mapi-tables.md).
   
-Liste der erforderlichen und optionalen Nachrichteneigenschaften für Nachrichtenklassen MAPI definiert finden Sie in den folgenden Themen: 
+Eine Liste der erforderlichen und optionalen Nachrichteneigenschaften für Nachrichtenklassen, die von MAPI definiert werden, finden Sie in den folgenden Themen: 
   
 - [Erforderliche Eigenschaften für alle Nachrichten](required-properties-for-all-messages.md)
     
-- [Erforderliche Eigenschaften  für Berichtsnachrichten](required-report-message-properties.md)
+- [Erforderliche Eigenschaften für Berichtsnachrichten](required-report-message-properties.md)
     
-- [Optionale Eigenschaften für Berichtsnachrichten](optional-report-message-properties.md)
+- [Optionale Berichtnachrichten Eigenschaften](optional-report-message-properties.md)
     
-- [Empfängereigenschaften für alle Nachrichten](recipient-properties-for-all-messages.md)
+- [Empfänger Eigenschaften für alle Nachrichten](recipient-properties-for-all-messages.md)
     
-- [Empfängereigenschaften für Übermittlungsstatusberichte](recipient-properties-for-delivery-status-reports.md)
+- [Empfänger Eigenschaften für zuStellungs Status Berichte](recipient-properties-for-delivery-status-reports.md)
     
 

@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 065d78bf-4c9c-48dd-b1f1-b4e59f3f1243
-description: 'Zuletzt geändert: 21 Februar 2012'
+description: 'Zuletzt geändert: 21, 2012'
 ms.openlocfilehash: 1f137aba40703fe84e5753ee6e370262f780f0a3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338241"
 ---
 # <a name="mnlsmultibytetowidechar"></a>MNLS_MultiByteToWideChar
 
@@ -21,7 +21,7 @@ ms.locfileid: "25389554"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleichbar mit der **MultiByteToWideChar**, der eine Zeichenfolge in einen String UTF-16 (Breitzeichen) zugeordnet ist. Die Zeichenfolge ist nicht unbedingt aus einem multibyte-Zeichen festgelegt.
+Ähnlich wie **MultiByteToWideChar**wird eine zeichenFOLGE einer UTF-16-Zeichenfolge zugeordnet. Die Zeichenfolge ist nicht unbedingt aus einem Mehrbyte-Zeichensatz.
   
 ```cpp
 int MNLS_MultiByteToWideChar(
@@ -37,19 +37,19 @@ int MNLS_MultiByteToWideChar(
 
  _uCodePage_
   
-> [in] Codepage verwendet wird, in die Konvertierung ausgeführt.
+> in Codepage, die beim Ausführen der Konvertierung verwendet werden soll.
     
  _dwFlags_
   
-> [in] Flags, die den Typ für die Konvertierung angibt.
+> in Flags, die den Konvertierungs angeben.
     
  _lpMultiByteStr_
   
-> [in] Zeiger auf die Zeichenfolge zu konvertieren.
+> in Zeiger auf die Zeichenfolge, die konvertiert werden soll.
     
  _cchMultiByte_
   
-> [in] Größe in Bytes, der von der _LpMultiByteStr_ -Parameter angegebene Zeichenfolge. 
+> in Größe (in Bytes) der vom _lpMultiByteStr_ -Parameter angegebenen Zeichenfolge. 
     
  _lpWideCharStr_
   
@@ -57,14 +57,14 @@ int MNLS_MultiByteToWideChar(
     
  _cchWideChar_
   
-> [in] Größe des Puffers durch _LpWideCharStr_in Zeichen.
+> in Die Größe des von _lpWideCharStr_angegebenen Puffers in Zeichen.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt die Anzahl der Zeichen in den Puffer angegeben durch _LpWideCharStr_ bei erfolgreicher geschriebenen zurück. 
+Gibt die Anzahl von Zeichen zurück, die in den von _lpWideCharStr_ angegebenen Puffer geschrieben werden, falls erfolgreich. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Funktion wird die Funktion **MultiByteToWideChar** umbrochen. Weitere Informationen finden Sie unter [MultiByteToWideChar](https://msdn.microsoft.com/library/dd319072%28VS.85%29.aspx).
+Diese Funktion umschließt die **MultiByteToWideChar** -Funktion. Weitere Informationen finden Sie unter [MultiByteToWideChar](https://msdn.microsoft.com/library/dd319072%28VS.85%29.aspx).
   
 

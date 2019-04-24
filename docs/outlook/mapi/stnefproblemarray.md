@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 115d845b-4168-4d49-b880-219ee28baa9a
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 924ddbc7c2ad1ed84ce6927ae089b6eb223bfb92
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 721b14f101e87299f654507f94d4a957f905cac1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336498"
 ---
 # <a name="stnefproblemarray"></a>STnefProblemArray
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von **STnefProblem** -Strukturen, die eine oder mehrere Verarbeitung von Problemen, die bei der Codierung aufgetreten oder Decodierung eines Streams Transport Neutral Encapsulation Format (TNEF) beschreiben. 
+Enthält ein Array von **STnefProblem** -Strukturen, die ein oder mehrere Verarbeitungsprobleme beschreiben, die während der Codierung oder deCodierung eines Transport Neutral Encapsulation Format (TNEF)-Streams aufgetreten sind. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF.h  <br/> |
+|Headerdatei  <br/> |TNEF. h  <br/> |
    
 ```cpp
 typedef struct _STnefProblemArray
@@ -44,17 +44,17 @@ typedef struct _STnefProblemArray
 
  **cProblem**
   
-> Anzahl der Elemente im Array im **aProblem** -Member angegeben. 
+> Die Anzahl der Elemente im Array, die im **aProblem** -Element angegeben sind. 
     
  **aProblem**
   
-> Array von Strukturen [STnefProblem](stnefproblem.md) . Jede Struktur enthält Informationen zu einer Eigenschaft oder ein Problem bei der Verarbeitung. 
+> Array von [STnefProblem](stnefproblem.md) -Strukturen. Jede Struktur enthält Informationen zu einem Problem mit Eigenschaft oder Attribut Verarbeitung. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Attribut oder Eigenschaft Verarbeitung ein Problem auftritt, wird ein Output-Parameter in der [ITnef::ExtractProps](itnef-extractprops.md) -Methode und in der [ITnef::Finish](itnef-finish.md) -Methode jedes einen Zeiger auf eine **STnefProblemArray** Struktur und **ExtractProps **und der Wert MAPI_W_ERRORS_RETURNED **Ende** jeder zurückgegeben. Dieser Fehlerwert gibt an, dass ein Problem aufgetreten, während der Verarbeitung ist und eine **STnefProblemArray** -Struktur generiert wurde. 
+Wenn ein Problem während der Attribut-oder Eigenschaften Verarbeitung auftritt, erhalten ein Output-Parameter in der [ITnef:: ExtractProps](itnef-extractprops.md) -Methode und in der [ITnef:: Finish](itnef-finish.md) -Methode jeweils einen Zeiger auf eine **STnefProblemArray** -Struktur und **ExtractProps **und **Fertig stellen** Sie den Wert MAPI_W_ERRORS_RETURNED. Dieser Fehlerwert gibt an, dass während der Verarbeitung ein Problem auftrat und eine **STnefProblemArray** -Struktur generiert wurde. 
   
-Wenn eine Struktur **STnefProblem** während der Verarbeitung eines Attribut oder Eigenschaft nicht generiert wird, kann die Client-Anwendung unter der Annahme weiterhin, die die Verarbeitung dieses Attribut oder Eigenschaft erfolgreich waren. Die einzige Ausnahme tritt auf, wenn das Problem aufgetreten ist, während der Decodierung eines Blocks Kapselung. Wenn der Fehler aufgetreten ist, während diese Decodierung, kann als die [SCODE](scode.md) in der Struktur MAPI_E_UNABLE_TO_COMPLETE zurückgegeben werden. In diesem Fall die Decodierung der die entsprechende Komponente für den Block wird angehalten und der Decodierung in einer anderen Komponente fortgesetzt wird. 
+Wenn während der Verarbeitung eines Attributs oder einer Eigenschaft keine **STnefProblem** -Struktur generiert wird, kann die Clientanwendung weiterhin davon ausgehen, dass die Verarbeitung dieses Attributs oder dieser Eigenschaft erfolgreich war. Die einzige Ausnahme tritt auf, wenn das Problem während der Decodierung eines Kapselungs Blocks auftrat. Wenn der Fehler während dieser Decodierung aufgetreten ist, kann MAPI_E_UNABLE_TO_COMPLETE als [SCODE](scode.md) in der Struktur zurückgegeben werden. In diesem Fall wird die Decodierung der Komponente, die dem Block entspricht, angehalten, und die Decodierung wird in einer anderen Komponente fortgesetzt. 
   
 ## <a name="see-also"></a>Siehe auch
 

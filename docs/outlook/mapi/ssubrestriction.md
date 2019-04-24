@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f7012f7-060d-4f2d-bcff-2aa9f6980e71
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: de92a1328eb9a089a7914978ab20ab0bf5c430ba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e176f280cbe15b9c15697b03eb9738887c2924c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336414"
 ---
 # <a name="ssubrestriction"></a>SSubRestriction
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine untergeordnete Objekt Beschränkung der verwendet wird, um die Zeilen der Anlage einer Nachricht oder ein Empfänger Tabelle Filtern beschrieben.
+Beschreibt eine Unterobjekt Einschränkung, die zum Filtern der Zeilen der Anlage-oder Empfängertabelle einer Nachricht verwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SSubRestriction
@@ -44,25 +44,25 @@ typedef struct _SSubRestriction
 
  **ulSubObject**
   
-> Typ des untergeordneten Objekts als Ziel für die Einschränkung. Mögliche Werte sind wie folgt: 
+> Der Typ des untergeordneten Objekts, das als Ziel für die Einschränkung dienen soll. Folgende Werte sind möglich: 
     
 PR_MESSAGE_RECIPIENTS 
   
-> Wenden Sie die Einschränkung auf Empfänger einer Nachricht-Tabelle. 
+> Wendet die Einschränkung auf die Empfängertabelle einer Nachricht an. 
     
 PR_MESSAGE_ATTACHMENTS 
   
->  Die Beschränkung auf eine Nachricht Anlagentabelle anwenden. 
+>  Wendet die Einschränkung auf die Anlagentabelle einer Nachricht an. 
     
  **lpRes**
   
 > Zeiger auf eine [SRestriction](srestriction.md) -Struktur. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Untergeordnete Objekt Einschränkungen werden durch die alle Tabellen nicht unterstützt. In der Regel nur Ordner Inhalt Tabellen und die Ergebnisse Suchordner unterstützt. Beispielsweise werden Einschränkungen untergeordneten Objekts verwendet, um eine Nachricht zu suchen, die einen bestimmten Typ Anlage oder ein Empfänger hat. 
+Unterobjekt Einschränkungen werden von allen Tabellen nicht unterstützt. In der Regel werden nur Ordnerinhaltstabellen und Suchergebnisordner unterstützt. Unterobjekt Einschränkungen werden beispielsweise verwendet, um Nachrichten zu suchen, die einen bestimmten Anlagen-oder Empfängertyp aufweisen. 
   
-Wenn eine Implementierung der untergeordneten Objekts Einschränkungen nicht unterstützt werden, gibt die [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md) Methoden MAPI_E_TOO_COMPLEX zurück. 
+Wenn eine Implementierung Unterobjekt Einschränkungen nicht unterstützt, wird MAPI_E_TOO_COMPLEX von den [IMAPITable:: Restrict](imapitable-restrict.md) -oder [IMAPITable:: FindRow](imapitable-findrow.md) -Methoden zurückgegeben. 
   
 Eine allgemeine Erläuterung der Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   

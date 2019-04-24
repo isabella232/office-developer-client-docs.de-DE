@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 83ff54c4-86ce-4529-ae45-260dfb763b30
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 14dd11f873493e32b83dbd1960cac8ff8ef8e436
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332991"
 ---
 # <a name="implementing-a-service-provider-entry-point-function"></a>Implementieren einer Dienstanbieter-Einstiegspunktfunktion
 
@@ -21,33 +21,33 @@ ms.locfileid: "25387048"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Jeder Dienstanbieter DLL hat einen Eintrag Funktion verweist, die MAPI-aufrufen, um sie zu laden. Beachten Sie, dass dieser Eintrag Point-Funktion nicht [DllMain](https://msdn.microsoft.com/library/ms682583.aspx), die Win32-DLL-Einstiegspunktfunktion identisch ist.
+Jede Dienstanbieter-DLL verfügt über eine Einstiegspunktfunktion, die von MAPI aufgerufen wird, um Sie zu laden. Beachten Sie, dass diese Einstiegspunktfunktion nicht mit [DllMain](https://msdn.microsoft.com/library/ms682583.aspx), der Win32-DLL-Einstiegspunktfunktion, identisch ist.
   
-Je nach Typ des vom Dienstanbieter entspricht anderer Prototyp Ihrem Anbieter Eintrag Point-Funktion. MAPI definiert anderen Eintrag Punkt Prototypen für Dienstanbieter.
+Je nach Typ des Anbieters entspricht die Einstiegspunktfunktion des Anbieters einem anderen Prototyp. MAPI definiert unterschiedliche Prototypen für Einstiegspunktfunktionen für Dienstanbieter.
   
-|**Provider**|**Entry Point-Funktionsprototyp**|
+|**Provider**|**Prototyp der Einstiegspunktfunktion**|
 |:-----|:-----|
-|Nachricht-Anbieter  <br/> |[MSProviderInit](msproviderinit.md) <br/> |
-|Transportanbieter  <br/> |[XPProviderInit](xpproviderinit.md) <br/> |
-|Von adressbuchanbietern implementierte  <br/> |[ABProviderInit](abproviderinit.md) <br/> |
+|Nachrichtenspeicher Anbieter  <br/> |[MSProviderInit](msproviderinit.md) <br/> |
+|Transport Anbieter  <br/> |[XPProviderInit](xpproviderinit.md) <br/> |
+|Adressbuchanbieter  <br/> |[ABProviderInit](abproviderinit.md) <br/> |
    
-Die Funktionalität in diese Prototypen entspricht weitgehend für alle Typen von Service Provider. 
+Ein großer Teil der Funktionalität in diesen Prototypen ist für alle Dienstanbieter Typen identisch. 
   
-Adressbuch, Nachrichtenspeicher und Transportanbieter führen die folgenden zwei Hauptaufgaben in deren Entry Point-Funktionen:
+Adressbuch, Nachrichtenspeicher und Transportanbieter führen die folgenden beiden Hauptaufgaben in ihren Einstiegspunktfunktionen aus:
   
-1. Überprüfen Sie die Version der der Dienstanbieter-Schnittstelle (SPI) um sicherzustellen, dass MAPI eine Version verwendet, die mit der Version kompatibel ist, die Ihren Dienstanbieter verwendet. Verwenden Sie den _LpulMAPIVer_ -Parameter, der die MAPI SPI-Version enthält, und der _LpulProviderVer_ -Parameter, der Ihre Version SPI enthält, des Überprüfens. Diese Parameter sind nicht signierte 32-Bit-Ganzzahl bestehend aus drei Teilen: 
+1. Überprüfen Sie die Version der Service Provider Interface (SPI), um sicherzustellen, dass MAPI eine Version verwendet, die mit der Version kompatibel ist, die Ihr Dienstanbieter verwendet. Verwenden Sie den _lpulMAPIVer_ -Parameter, der die MAPI-SPI-Version enthält, und den _lpulProviderVer_ -Parameter, der Ihre SPI-Version enthält, um die Prüfung durchzuführen. Diese Parameter sind 32-Bit-Ganzzahlen ohne Vorzeichen aus drei Teilen: 
     
-  - Bits 24 bis 31 stellen die Hauptversion dar.
+  - Die Bits 24 bis 31 stellen die Hauptversion dar.
     
-  - Bits 16 bis 23 darstellen, die Nebenversion.
+  - Die Bits 16 bis 23 stellen die Nebenversion dar.
     
-  - Die Bits 0 bis 15 darstellen den Update-Bezeichner. Obwohl die Nummer der Hauptversion selten geändert werden, die Nebenversionsnummer Änderungen bei jedem MAPI freigegeben wird und die SPI geändert wurde. Die Update-ID ist die Microsoft-interne Buildversion. Es wird verwendet, um Änderungen während der Entwicklung nachzuverfolgen. MAPI definiert die CURRENT_SPI_VERSION-Konstante, in der Headerdatei Mapispi.h an, dass der derzeitigen SPI-Version dokumentiert. Die Kontrollkästchen der Fehler MAPI_E_VERSION fehl, wenn Sie eine Version der SPI verwenden, die neuer als die Version, die MAPI verwendet wird.
+  - Die Bits 0 bis 15 stellen den Update Bezeichner dar. Obwohl sich die Hauptversionsnummer selten ändert, ändert sich die Versionsnummer der Nebenversion immer dann, wenn MAPI veröffentlicht und der SPI geändert wurde. Die Update-ID ist die interne Microsoft-Buildversion; Es wird verwendet, um Änderungen während des Entwicklungsprozesses nachzuverfolgen. MAPI definiert die CURRENT_SPI_VERSION-Konstante, die in der Headerdatei Mapispi. h dokumentiert ist, um die aktuelle SPI-Version anzugeben. Führen Sie die Überprüfung mit dem Fehler MAPI_E_VERSION aus, wenn Sie eine Version des SPI verwenden, die neuer als die von MAPI verwendete Version ist.
     
-2. Erstellt eine Instanz eines Objekts vom Anbieter. Da der Anbieter gestartet und mehrmals initialisiert werden kann, sollten Sie eine neue Instanz jedes Mal erstellen, die in diesem Fall. Anbieter werden mehrere Male gestartet, wenn sie in mehreren Profilen angezeigt werden, die von einem oder mehreren Clients gleichzeitig verwendet werden, oder wenn sie mehrere Male in einem einzigen Profil angezeigt werden. Nur wächst der Eintrag Point-Funktionsprototyp je nach den Typ des vom Dienstanbieter abweicht, den Typ der Provider-Objekt. 
+2. Erstellen Sie eine Instanz eines Provider-Objekts. Da Ihr Anbieter mehrmals gestartet und initialisiert werden kann, sollten Sie jedesmal eine neue Instanz erstellen. Anbieter werden mehrmals gestartet, wenn Sie in mehreren Profilen angezeigt werden, die gleichzeitig von einem oder mehreren Clients verwendet werden, oder wenn Sie mehrmals in einem einzigen Profil angezeigt werden. Ebenso wie der Prototyp der Einstiegspunktfunktion in Abhängigkeit vom Typ des Anbieters unterschiedlich ist, wird auch der Typ des Anbieterobjekts verwendet. 
     
-    Wenn Sie eine Adressbuchanbieter schreiben, implementieren [IABProvider: IUnknown](iabprovideriunknown.md). Wenn Sie eine Nachricht Speicheranbieter schreiben, implementieren [IMSProvider: IUnknown](imsprovideriunknown.md). Weitere Informationen finden Sie unter [Message-Anbieter laden](loading-message-store-providers.md).
+    Wenn Sie einen Adressbuchanbieter schreiben, implementieren Sie [IABProvider: IUnknown](iabprovideriunknown.md). Wenn Sie einen Nachrichtenspeicher Anbieter schreiben, implementieren Sie [IMSProvider: IUnknown](imsprovideriunknown.md). Weitere Informationen finden Sie unter [Loading Message Store Providers](loading-message-store-providers.md).
     
-    Wenn Sie eine Adressbuchhierarchie schreiben, implementieren [IXPProvider: IUnknown](ixpprovideriunknown.md). Weitere Informationen finden Sie unter [der Adressbuchhierarchie initialisieren](initializing-the-transport-provider.md).
+    Wenn Sie einen Transportanbieter schreiben, implementieren Sie [IXPProvider: IUnknown](ixpprovideriunknown.md). Weitere Informationen finden Sie unter [Initialisieren des Transport Anbieters](initializing-the-transport-provider.md).
     
 ## <a name="see-also"></a>Siehe auch
 

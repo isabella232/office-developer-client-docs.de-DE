@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 746d63fa-bfb7-479f-94dc-ba40011c1ec9
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7bcaf230eed9cf21388b68f06ab678dc143f64ee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 0c33633c4decd697cf241f8b7c27360f776a1ade
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332760"
 ---
 # <a name="proptype"></a>PROP_TYPE
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Eigenschaftstyp von einem Tag für die angegebene Eigenschaft zurück.
+Gibt den Eigenschaftentyp eines angegebenen Property-Tags zurück.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 PROP_TYPE (ulPropTag)
@@ -40,13 +40,13 @@ PROP_TYPE (ulPropTag)
 
  _ulPropTag_
   
-> Eigenschafts-Tag, die den Eigenschaftentyp zurückgegeben werden soll.
+> Property-Tag, das den zurückzugebenden Eigenschaftentyp enthält.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Das Makro **PROP_TYPE** kann verwendet werden, um den Typ einer Eigenschaft ermitteln. Beispielsweise Aufruf PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) führt den Wert PT_BINARY zurückgegeben wird.
+Das **PROP_TYPE** -Makro kann verwendet werden, um den Typ einer Eigenschaft zu bestimmen. Beispielsweise führt das Aufrufen von PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) dazu, dass der Wert PT_BINARY zurückgegeben wird.
   
-Jede Eigenschaftentag enthält den Eigenschaftstyp in das niederwertige Wort (Bits 0 bis 15) und der Eigenschaft-ID in das hohe Word (Bits 16 bis 31). Das Makro **PROP_TYPE** extrahiert den Eigenschaftentyp und legt es in Bits 0 bis 15, der die ganze Zahl zurückgegeben werden soll. Die verbleibenden Bits des Rückgabewerts werden für Nullen festgelegt. 
+Jedes Property-Tag enthält den Eigenschaftentyp im niedrigwertigen Wort (Bits 0 bis 15) und den Eigenschaftenbezeichner im hochwertigen Wort (Bits 16 bis 31). Das **PROP_TYPE** -Makro extrahiert den Eigenschaftentyp und fügt ihn in die Bits 0 bis 15 der zurückzugebenden Ganzzahl ein. Die restlichen Bits des Rückgabewerts werden auf Nullen festgelegt. 
   
 ## <a name="see-also"></a>Siehe auch
 

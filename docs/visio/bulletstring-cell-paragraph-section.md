@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 38285824-30ad-0cf2-07cb-0103ab3a415a
 description: Ermöglicht das Erstellen von benutzerdefinierten Aufzählungszeichen.
-ms.openlocfilehash: bd55e2c061d8e99e0d9e9fd5d9be459b3daae524
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b7a1d7f845c7b9945670240361a4ac66efa80786
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337562"
 ---
-# <a name="bulletstring-cell-paragraph-section"></a>BulletString Cell (Paragraph Section)
+# <a name="bulletstring-cell-paragraph-section"></a>Zelle "BulletString" (Abschnitt "Paragraph")
 
 Ermöglicht das Erstellen von benutzerdefinierten Aufzählungszeichen. 
   
@@ -26,18 +26,18 @@ Geben Sie die Formatvorlage in Form einer Zeichenfolge (eingeschlossen in Anfüh
   
 Sie können den Wert für diese Zelle auch festlegen, indem Sie mit der rechten Maustaste auf ein Shape klicken, auf **Format** zeigen, auf **Text** klicken und dann die Registerkarte **Aufzählungszeichen** auswählen. 
   
-Wenn Sie einen Verweis auf die Zelle BulletString aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Bullete aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Para.BulletStr [ *i* ] wobei *i* = < 1 >, 2, 3,...  <br/> |
+|Zellenname:  <br/> |Abs. BulletStr [ *i* ] wobei *i* = <1>, 2, 3,...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BulletString aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Bullete aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-|Zeilenindex:  <br/> |**VisRowParagraph** +  *i* wobei *i* = 0, 1, 2,...  <br/> |
+|Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2,...  <br/> |
 |Zellenindex:  <br/> |**visBulletString** <br/> |
    
 

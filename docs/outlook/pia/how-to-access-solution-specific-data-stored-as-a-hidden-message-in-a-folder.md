@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e4a0a686327bb43b07773b149831107f51fcb4fa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334951"
 ---
 # <a name="access-solution-specific-data-stored-as-a-hidden-message-in-a-folder"></a>Zugreifen auf lösungsspezifische Daten, die als ausgeblendete Nachricht in einem Ordner gespeichert sind
 
@@ -22,7 +22,7 @@ Dieses Beispiel zeigt die Verwendung des [StorageItem](https://msdn.microsoft.co
 
 Das **StorageItem**-Objekt wird üblicherweise verwendet, um lösungsspezifische Daten auszublenden, die nicht programmgesteuert angezeigt werden können. In einer Exchange-Umgebung wird das **StorageItem**-Objekt zum Roaming von Lösungseinstellungen verwendet und um sicherzustellen, dass diese Einstellungen online und offline verfügbar sind. Sie können dem **StorageItem**-Objekt eine benutzerdefinierte Nachrichtenklasse zuweisen oder das Objekt durch den Betreff identifizieren.
 
-Im folgenden Codebeispiel werden die XML-Daten abgerufen, die im Kalenderordner als ausgeblendete Nachricht mit der Nachrichtenklasse IPM.Configuration.WorkHours gespeichert sind. 
+The following code sample retrieves the XML data that is stored as a hidden message in the Calendar folder with the message class equal to IPM.Configuration.WorkHours.
 
 Das [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) -Objekt gibt die XML-Daten in Form eines Objekts zurück, das anstelle einer Zeichenkettendarstellung der XML-Daten einen Datenstrom enthält. Der Datenstrom wird im Codebeispiel mithilfe von **System.Text.Encoding.Ascii.GetString** in eine Zeichenfolge umgewandelt.
 

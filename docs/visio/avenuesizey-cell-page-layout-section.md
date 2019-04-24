@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm70
 localization_priority: Normal
 ms.assetid: 9ff2893c-afe5-505e-0b55-48ec1de08a5f
-description: Bestimmt den vertikalen Abstand zwischen den Shapes auf dem Zeichenblatt, wenn Sie Shapes mithilfe des Dialogfelds Layout konfigurieren (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout, klicken Sie auf der Seite Re-Layout, und klicken Sie dann auf Weitere Layoutoptionen).
-ms.openlocfilehash: af4089a3b215efaf49b8a45929ca94799fffcba5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt den vertikalen Abstand zwischen den Shapes auf dem Zeichenblatt, wenn Sie Shapes mithilfe des Dialogfelds Layout konfigurieren (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu Layout und dann auf Weitere Layoutoptionen).
+ms.openlocfilehash: 283de8925e34c470fd1f9e78b8ae58882be8b7fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338423"
 ---
-# <a name="avenuesizey-cell-page-layout-section"></a>AvenueSizeY Cell (Page Layout Section)
+# <a name="avenuesizey-cell-page-layout-section"></a>Zelle "AvenueSizeY" (Abschnitt "Page Layout")
 
-Bestimmt den vertikalen Abstand zwischen den Shapes auf dem Zeichenblatt, wenn Sie Shapes mithilfe des Dialogfelds **Layout konfigurieren** (auf der Registerkarte **Entwurf** in der Gruppe **Layout** klicken Sie auf der Seite **Re-Layout** , und klicken Sie dann auf Weitere ** Layoutoptionen**).
+Bestimmt den vertikalen Abstand zwischen den Shapes auf dem Zeichenblatt, wenn Sie Shapes mithilfe des Dialogfelds **Layout konfigurieren** (Klicken Sie auf der Register **Karte Entwurf** in der Gruppe **Layout** auf Seite **neu Layout** ), und klicken Sie dann auf **Weitere Layout-Optionen**).
   
 ## <a name="remarks"></a>Bemerkungen
 
 Sie können diesen Wert auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** in der Gruppe **Seite einrichten** auf den Pfeil, wählen Sie die Registerkarte **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Das dynamische Gitter verwendet die in der Zelle AvenueSizeY vorgenommene Einstellung, wenn nur ein Shape für die Berechnung des vertikalen Abstands verfügbar ist. Wenn Sie das dynamische Gitter verwenden möchten, aktivieren Sie auf der Registerkarte Ansicht in der Gruppe Visuelle Unterstützung das Kontrollkästchen Dynamisches Gitter.
+Das dynamische Raster verwendet die Einstellung in der Zelle Zelle AvenueSizeY, wenn nur eine Form zum Berechnen des vertikalen Abstands zur Verfügung steht. Um das dynamische Raster zu verwenden, wählen Sie auf der Registerkarte **Ansicht** in der Gruppe **visuelle Hilfsmittel** die Option **dynamisches Raster**aus.
   
-Wenn Sie einen Verweis auf die Zelle AvenueSizeY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Zelle AvenueSizeY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | AvenueSizeY  <br/> |
+| Zellenname:  <br/> | Zelle AvenueSizeY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle AvenueSizeY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Zelle AvenueSizeY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 8d2d786b-e621-456d-b087-3373df6f8ac5
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: eaf472a380acd62cddb2c20c35335ccb1e2ce07f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 285da82d143524d2b2cf73ed3e5f1e3aeef6f9b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336715"
 ---
 # <a name="iaddrbooknewentry"></a>IAddrBook::NewEntry
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt einen neuen Empfänger um eine Adressbuchcontainer oder die Empfängerliste von ausgehenden Nachrichten.
+Fügt einen neuen Empfänger zu einem Adressbuchcontainer oder zur Empfängerliste einer ausgehenden Nachricht hinzu.
   
 ```cpp
 HRESULT NewEntry(
@@ -44,69 +44,69 @@ HRESULT NewEntry(
 
  _ulUIParam_
   
-> [in] Ein Handle für das übergeordnete Fenster für das Dialogfeld.
+> in Ein Handle für das übergeordnete Fenster für das Dialogfeld.
     
  _ulFlags_
   
-> [in] Eine Bitmaske aus Flags, die den Typ des Texts gesteuert, die verwendet wird. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, die den Typ des verwendeten Texts steuert. Das folgende Flag kann festgelegt werden:
     
-PARAMETER MAPI_UNICODE 
+MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
     
  _cbEIDContainer_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEIDContainer_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEIDContainer_ -Parameter verwiesen wird. 
     
  _lpEIDContainer_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Containers, in der neue Empfänger wird hinzugefügt werden soll. Wenn der Parameter _CbEIDContainer_ gleich NULL ist, gibt die **NewEntry** -Methode ein Empfänger Eintrags-ID und eine Liste der Vorlagen, als ob die [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md) -Methode aufgerufen wurde. 
+> in Ein Zeiger auf die Eintrags-ID des Containers, in dem der neue Empfänger hinzugefügt werden soll. Wenn der _cbEIDContainer_ -Parameter 0 (NULL **** ) ist, gibt die neuentry-Methode eine Empfänger Eintrags-ID und eine Liste von Vorlagen zurück, als ob die [IAddrBook:: CreateOneOff](iaddrbook-createoneoff.md) -Methode aufgerufen wurde. 
     
  _cbEIDNewEntryTpl_
   
-> [in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEIDNewEntryTpl_ verwiesen. 
+> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEIDNewEntryTpl_ -Parameter verwiesen wird. 
     
  _lpEIDNewEntryTpl_
   
-> [in] Ein Zeiger auf eine einmalige Vorlage, die zum Erstellen des neuen Empfängers verwendet wird. Wenn _CbEIDNewEntryTpl_ 0 (null ist) und _LpEIDNewEntryTpl_ NULL ist, zeigt **NewEntry** ein Dialogfeld, mit denen der Benutzer aus einer Liste von Vorlagen für neue Einträge auswählen kann. 
+> in Ein Zeiger auf eine einmalige Vorlage, die zum Erstellen des neuen Empfängers verwendet wird. Wenn _cbEIDNewEntryTpl_ ist und _lpEIDNewEntryTpl_ NULL ist, zeigt der neue **Eintrag** ein Dialogfeld an, in dem der Benutzer aus einer Liste von Vorlagen zum Hinzufügen neuer Einträge auswählen kann. 
     
  _lpcbEIDNewEntry_
   
-> [out] Ein Zeiger auf die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LppEIDNewEntry_ verwiesen. 
+> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppEIDNewEntry_ -Parameter verwiesen wird. 
     
  _lppEIDNewEntry_
   
-> [out] Ein Zeiger auf einen Zeiger auf den neuen Empfänger Eintrags-ID.
+> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID des neuen Empfängers.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der neuen Adresseintrag Adressbuch wurde erfolgreich erstellt.
+> Der neue Adressbucheintrag wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die **NewEntry** -Methode erstellt einen neuen Address Book Eintrag direkt in einem Container hinzugefügt werden soll oder verwendet werden, um eine ausgehende Nachricht zu adressieren. 
+Mit **** der neuentry-Methode wird ein neuer Adressbucheintrag erstellt, der direkt zu einem Container hinzugefügt oder zur Behebung einer ausgehenden Nachricht verwendet werden kann. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie den neuen Eintrag auf einen bestimmten Container hinzugefügt werden soll, legen Sie _LpEIDContainer_ Eintrags-ID und _CbEIDContainer_ , um die Byteanzahl von in die Eintrags-ID des Containers. 
+Wenn der neue Eintrag einem bestimmten Container hinzugefügt werden soll, legen Sie _lpEIDContainer_ auf die Eintrags-ID des Containers und _cbEIDContainer_ auf die Bytezahl in der Eintrags-ID fest. 
   
-Wenn Sie den neuen Eintrag der Empfängerliste von ausgehenden Nachrichten hinzugefügt werden soll, legen Sie _LpEIDContainer_ auf NULL und _CbEIDContainer_ auf NULL festgelegt. 
+Wenn der neue Eintrag der Empfängerliste einer ausgehenden Nachricht hinzugefügt werden soll, legen Sie _lpEIDContainer_ auf NULL und _cbEIDContainer_ auf 0 (null) fest. 
   
-Wenn den Benutzer von einer Clientanwendung aus, wählen Sie den Typ der Eintrag erstellt werden soll, übergeben Sie NULL in _CbEIDNewEntryTpl_ und NULL in _LpEIDNewEntryTpl_. Die **NewEntry** -Methode der MAPI-einmalige Tabelle, eine Liste der Vorlagen unterstützt durch MAPI und durch jede Adressbuchanbieter in der Sitzung angezeigt. Jede Vorlage kann ein Empfänger Eintrag für einen oder mehrere Adresstypen erstellt. 
+Wenn Sie dem Benutzer einer Clientanwendung erlauben möchten, den Typ des zu erstellenden Eintrags auszuwählen, überschreiten Sie NULL in _cbEIDNewEntryTpl_ und NULL in _lpEIDNewEntryTpl_. Die **** Posteingangs Methode zeigt die MAPI-einmalige Tabelle, eine Liste der von MAPI unterstützten Vorlagen und jedes Adressbuch Anbieters in der Sitzung an. Jede Vorlage kann einen Empfängereintrag für einen oder mehrere Adresstypen erstellen. 
   
-Wenn Sie die Eintrags-ID des neuen Eintrags beibehalten möchten, übergeben Sie die Parameter _LpcbEIDNewEntry_ und _LppEIDNewEntry_ gültige Zeiger. Sie sind verantwortlich für das Freigeben von dieses Eintrags-ID, wenn Sie mit ihm fertig sind, durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion. 
+Wenn Sie die Eintrags-ID des neuen Eintrags behalten möchten, übergeben Sie gültige Zeiger in den Parametern _lpcbEIDNewEntry_ und _lppEIDNewEntry_ . Sie sind für die Freigabe dieser Eintrags-ID verantwortlich, wenn Sie damit fertig sind, indem Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen. 
   
-Um eine bestimmte Vorlage verwenden, um einen neuen Eintrag einem änderbare Container hinzuzufügen, verwenden Sie die folgende Schritte aus:
+Gehen Sie folgendermaßen vor, um eine bestimmte Vorlage zum Hinzufügen eines neuen Eintrags zu einem änderbaren Container zu verwenden:
   
-1. Rufen Sie die [IMAPISession::OpenEntry](imapisession-openentry.md) -Methode zum Öffnen den Zielcontainer, und legen Sie den Parameter _LpEntryID_ auf die Eintrags-ID des Containers. 
+1. Rufen Sie die [IMAPISession:: OpenEntry](imapisession-openentry.md) -Methode auf, um den Zielcontainer zu öffnen, und legen Sie den Parameter _lpEntryID_ auf den Eintragsbezeichner des Containers fest. 
     
-2. Rufen Sie das Ziel des Containers [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode, und legen Sie den Parameter _UlPropTag_ **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) und der Parameter _Lpiid_ auf IID_IMAPITable. Der Container gibt eine einmalige Tabelle zurück, die alle Vorlagen aufgeführt werden, die sie zum Erstellen neuer Einträge unterstützt. 
+2. Rufen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Zielcontainers auf, und legen Sie den Parameter _ulPropTag_ auf **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md)) und den _lpIID_ -Parameter auf IID_IMAPITable fest. Der Container gibt eine einmalige Tabelle zurück, in der alle Vorlagen aufgeführt sind, die für das Erstellen neuer Einträge unterstützt werden. 
     
-3. Rufen Sie die Zeile, die die Vorlage für den angegebenen Typ des Eintrags darstellt, den Sie erstellen möchten. Die **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))-Spalte gibt den Typ der Adresse, der von der Vorlage unterstützt wird.
+3. Rufen Sie die Zeile ab, die die Vorlage für den jeweiligen Eintragstyp darstellt, den Sie erstellen möchten. Die **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md)) gibt den von der Vorlage unterstützten Adresstyp an.
     
-4. Rufen Sie die **NewEntry** -Methode, und legen Sie _LpEIDNewEntryTpl_ die Eintrags-ID der ausgewählten Vorlage. Die Eintrags-ID wird die Spalte **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) aus der Vorlage Zeile in der Tabelle "einmal" sein. Übergeben Sie NULL in _CbEIDContainer_ und NULL in _LpEIDContainer_. Übergeben Sie einen gültigen Zeiger im _LppEIDNewEntry_ -Parameter, wenn Sie den neuen Eintrag Eintrags-ID beibehalten möchten. 
+4. Rufen Sie **** die neuentry-Methode auf, und legen Sie _lpEIDNewEntryTpl_ auf die Eintrags-ID der ausgewählten Vorlage fest. Die Eintrags-ID ist die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Spalte aus der Zeile der Vorlage in der einmaligen Tabelle. NULL in _cbEIDContainer_ und NULL in _lpEIDContainer_. Übergeben Sie einen gültigen Zeiger im _lppEIDNewEntry_ -Parameter, wenn Sie die Eintrags-ID des neuen Eintrags aufbewahren möchten. 
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -116,7 +116,7 @@ Um eine bestimmte Vorlage verwenden, um einen neuen Eintrag einem änderbare Con
   
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
   
-[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
+[Kanonische Pidtagcreatetemplates (-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

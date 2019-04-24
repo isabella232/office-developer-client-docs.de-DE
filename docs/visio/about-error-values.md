@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 56430658-a798-c004-b4ba-363443f43ded
 description: Fehlerwerte werden in Zellen angezeigt, bei denen falsche Formeln für diese Zelle angegeben sind.
-ms.openlocfilehash: 301f566151362727daf8236f8ca88fca8758054e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5219becdd1af888e424a2fe33faa7df5a06f61fb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332606"
 ---
 # <a name="about-error-values"></a>Informationen zu Fehlerwerten
 
@@ -27,43 +27,11 @@ Wenn eine Formel auf eine Zelle verweist, die einen Fehlerwert enthält, zeigt d
 ||||
 |:-----|:-----|:-----|
 |**Wenn die Zelle anzeigt** <br/> |**Formel enthält** <br/> |**Beispiel** <br/> |
-| #DIV/0!  <br/> |
-                Division durch 0
-  <br/> |10/0  <br/> |
-| #VALUE!  <br/> | 
-                
-                
-                Ein Argument oder Operand vom falschen Typ
-  <br/> | 
-                
-                
-                5 + "Haus"
-  <br/> |
-| #REF!  <br/> | 
-                
-                
-                Ein Bezug auf eine nicht vorhandene Zelle
-  <br/> | 
-                
-                
-                Eine Zelle, die auf eine nicht mehr vorhandene Zelle verweist
-  <br/> |
-| #NUM!  <br/> | 
-                
-                
-                Eine ungültige Zahl
-  <br/> | 
-                
-                
-                Quadratwurzel einer negativen Zahl
-  <br/> |
-| #N/V!  <br/> | Kein verfügbaren Wert  <br/> | 
-                
-                
-                Funktion NA( )
-  <br/> |
-| #DIM!  <br/> | Ein dimensionaler Wert, der den Bemaßungsbereich überschreitet (gültige Potenzen sind Ganzzahlen-128 \<n = \<= 127)  <br/> Ein Bemaßungswert, der in einer nicht zulässigen Operation verwendet wurde.
-  <br/> |1In ^ 100 \* 1In ^ 100 (das Ergebnis ist 1In ^ 200 und liegt außerhalb des Bemaßungsbereichs)  <br/> 5,2cm^1,5 (ist keine ganzzahlige Potenz)
-  <br/> |
+| #DIV/0!  <br/> |Division durch 0  <br/> |10/0  <br/> |
+| #VALUE!  <br/> | Ein Argument oder Operand vom falschen Typ  <br/> | 5 + "Haus"  <br/> |
+| #REF!  <br/> | Ein Bezug auf eine nicht vorhandene Zelle  <br/> | Eine Zelle, die auf eine nicht mehr vorhandene Zelle verweist  <br/> |
+| #NUM!  <br/> | Eine ungültige Zahl  <br/> | Quadratwurzel einer negativen Zahl  <br/> |
+| #N/A!  <br/> | Kein verfügbarer Wert  <br/> | Funktion NA( )  <br/> |
+| #DIM!  <br/> | Ein dimensionaler Wert, der den Dimensions Umfang überschreitet (gültige Potenzen \<sind ganze \<Zahlen-128 = n = 127)  <br/> Ein Bemaßungswert, der in einer nicht zulässigen Operation verwendet wurde.  <br/> |1In ^ 100 \* 1In ^ 100 (das Ergebnis ist 1In ^ 200, das sich jenseits des Dimensions befindet)  <br/> 5,2cm^1,5 (ist keine ganzzahlige Potenz)  <br/> |
    
 

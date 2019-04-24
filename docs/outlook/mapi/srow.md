@@ -11,23 +11,23 @@ api_name:
 api_type:
 - COM
 ms.assetid: 369c2d5c-8c2b-4314-9cb2-aaa89580aa2b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 56bf1366cdd44fac185277280d2e8ab80c644c45
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2e75bc6f8e14258787a6c9d80dfbf6334ec698b4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336516"
 ---
 # <a name="srow"></a>SRow
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Zeile aus einer Tabelle, die ausgewählte Eigenschaften für ein bestimmtes Objekt enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _SRow
@@ -43,21 +43,21 @@ typedef struct _SRow
 
 **ulAdrEntryPad**
   
-> Abstand Bytes, um die Eigenschaftswerte ordnungsgemäß ausrichten auf das durch die **LpProps** Mitglied. 
+> Padding Bytes, um die Eigenschaftswerte, auf die durch das **lpProps** -Element verwiesen wird, ordnungsgemäß auszurichten. 
     
 **cValues**
   
-> Anzahl der Eigenschaftswerte, die auf die **LpProps**zeigt. 
+> Die Anzahl der Eigenschaftswerte, auf die von **lpProps**verwiesen wird. 
     
 **lpProps**
   
-> Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die Eigenschaftswerte für die Spalten in der Zeile zu beschreiben. 
+> Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die Eigenschaftswerte für die Spalten in der Zeile beschreiben. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **SRow** beschreibt eine Zeile in einer Tabelle. Es ist in der Struktur [TABLE_NOTIFICATION](table_notification.md) enthalten, die eine Benachrichtigung über eine Tabelle begleitet. 
+Eine **SRow** -Struktur beschreibt eine Zeile in einer Tabelle. Sie ist in der [TABLE_NOTIFICATION](table_notification.md) -Struktur enthalten, die einer Tabellenbenachrichtigung beigefügt ist. 
   
-**SRow** Strukturen werden in den folgenden Methoden verwendet: 
+**SRow** -Strukturen werden in den folgenden Methoden verwendet: 
   
 - [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
     
@@ -75,17 +75,17 @@ Eine Struktur **SRow** beschreibt eine Zeile in einer Tabelle. Es ist in der Str
     
 - [HrQueryAllRows](hrqueryallrows.md)
     
-Wenn mehr als eine Zeile werden beschrieben muss, wird eine [SRowSet](srowset.md) -Struktur verwendet. Eine **SRowSet** -Struktur enthält ein Array von **SRow** Strukturen und Anzahl der Strukturen im Array. 
+Wenn mehr als eine Zeile beschrieben werden muss, wird eine [SRowSet](srowset.md) -Struktur verwendet. Eine **SRowSet** -Struktur enthält ein Array von **SRow** -Strukturen und die Anzahl der Strukturen im Array. 
   
-Die folgende Abbildung zeigt die Beziehung zwischen einem **SRow** und eine **SRowSet** -Datenstruktur. 
+Die folgende Abbildung zeigt die Beziehung zwischen einer **SRow** und einer **SRowSet** -Datenstruktur. 
   
 **Beziehung zwischen SRow und SRowSet**
   
 ![Beziehung zwischen SRow und SRowSet] (media/amapi_17.gif "Beziehung zwischen SRow und SRowSet")
   
-**SRow** Strukturen definiert sind identisch mit [ADRENTRY](adrentry.md) Strukturen. Aus diesem Grund kann eine Zeile mit einem Empfänger Tabelle und einen Eintrag in einer Adressliste die gleiche Weise behandelt. 
+**SRow** -Strukturen sind identisch mit den [Miet](adrentry.md) Strukturen. Daher kann eine Zeile einer Empfängertabelle und ein Eintrag in einer Adressliste gleich behandelt werden. 
   
-Informationen dazu, wie der Speicher für **SRow** Strukturen zugewiesen werden sollten finden Sie unter [Verwalten von Arbeitsspeicher für ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md).
+Informationen dazu, wie der Speicher für **SRow** -Strukturen zugeordnet werden sollte, finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -94,5 +94,5 @@ Informationen dazu, wie der Speicher für **SRow** Strukturen zugewiesen werden 
 - [SRowSet](srowset.md)
 - [TABLE_NOTIFICATION](table_notification.md)
 - [MAPI-Strukturen](mapi-structures.md)
-- [Verwalten von Speicher für ADRLIST- und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
+- [Verwalten von Speicher für ADRLIST-und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
 

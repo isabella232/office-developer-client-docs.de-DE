@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Speichern von Nachrichten in Nachrichtenspeichern
+title: Erstellen und Speichern von Nachrichten in Nachrichtenspeicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: cc74b31c-d7ed-4fcf-9535-a2f9222901b7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: be718ea3ef4da91d2f85a0229f5a506198a2527f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: HT
+ms.openlocfilehash: 7c923a330c542dff8b1bbc476461ccd21680a5b7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332900"
 ---
 # <a name="creating-and-storing-messages-in-message-stores"></a>Erstellen und Speichern von Nachrichten in Nachrichtenspeichern
 
@@ -23,13 +23,13 @@ ms.locfileid: "22589175"
   
 Wie Ihr Nachrichtenspeicheranbieter Nachrichten in dem zugrunde liegenden Speichermechanismus erstellt und speichert, ist im Wesentlichen von dem zugrunde liegenden Speichermechanismus selbst abhängig. Im Allgemeinen müssen Sie nur Code schreiben, um die Eigenschaften einer Nachricht und deren Werte zu speichern.
   
-Wenn der Nachrichtenspeicheranbieter eine neue Nachricht erstellt, muss der Anbieter die Nachricht mit den erforderlichen Eigenschaften für Nachrichten erstellen. Eine Liste dieser Eigenschaften ist in der Dokumentation für die [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)-Schnittstelle zu finden. Danach fügen Clientanwendungen weitere Eigenschaften mit [IMAPIProp](imapipropiunknown.md)-Methoden hinzu. 
+Wenn die Nachricht speichern Anbieter erstellt eine neue Nachricht, muss des Anbieters die Nachricht mit den erforderlichen Eigenschaften f�r Nachrichten zu erstellen. Eine Liste dieser Eigenschaften finden Sie in der Dokumentation f�r die [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) Schnittstelle. Anschlie�end hinzuf�gen-Clientanwendungen alle zus�tzlichen Eigenschaften mit [IMAPIProp](imapipropiunknown.md) Methoden. 
   
-Wenn der Nachrichtenspeicheranbieter eine Nachricht im zugrunde liegenden Speichermechanismus speichert, muss der Anbieter die Eigenschaften der Nachricht durchlaufen und diese im zugrunde liegenden Speichermechanismus speichern, damit diese vollständig wiederhergestellt werden können, wenn die Nachricht später geöffnet wird.
+Wenn die Nachricht speichern Anbieter speichert eine Nachricht an die zugrunde liegende Speichermechanismus, muss der Anbieter Eigenschaften der Meldung durchlaufen, und speichern Sie sie in der zugrunde liegende Speichermechanismus, so, dass sie vollst�ndig wiederhergestellt werden k�nnen, wenn die Nachricht sp�ter ge�ffnet wird.
   
-MAPI erfordert, dass die Eigenschaften in [IMessage](imessageimapiprop.md)-Schnittstellen abgewickelt werden, was bedeutet, dass daran vorgenommene Änderungen erst dauerhaft sind, wenn die [IMAPIProp::SaveChanges](imapiprop-savechanges.md)-Methode im Nachrichtenobjekt aufgerufen wird. Der Nachrichtenspeicheranbieter ist für das Implementieren dieses Verhaltens verantwortlich. Dies ist in der Regel nicht schwierig. Es bedeutet einfach, dass Eigenschaften im Arbeitsspeicher gehalten werden, während sie geändert werden, und dass sie im zugrunde liegenden Speichermechanismus gespeichert werden, wenn **SaveChanges** aufgerufen wird. 
+MAPI erfordert, dass die Eigenschaften f�r [IMessage](imessageimapiprop.md) Schnittstellen durchgef�hrt werden, was bedeutet, dass �nderungen vorgenommen werden, bis die [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode, auf das Objekt "Message aufgerufen wird" nicht dauerhaft entfernt werden. Der Nachricht Speicheranbieter ist verantwortlich f�r die Implementierung dieses Verhalten. Dies ist in der Regel nicht schwierig. Es bedeutet ganz einfach Eigenschaften im Arbeitsspeicher gedr�ckt halten, w�hrend sie ge�ndert werden und deren Aufnahme in der zugrunde liegende Speichermechanismus, wenn **SaveChanges** aufgerufen wird. 
   
-Einige Eigenschaften in Nachrichtenobjekten haben bezüglich der **SaveChanges**-Methode eine besondere Semantik für Clientanwendungen: 
+Einige Eigenschaften f�r Nachrichtenobjekte, die haben spezielle Semantik f�r Clientanwendungen in Bezug auf die **SaveChanges** -Methode, wie folgt: 
   
 - Einige Eigenschaften sollten Lese-/Schreibzugriff haben, bevor **SaveChanges** aufgerufen wird, danach aber schreibgeschützt sein. **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) wird beispielsweise von der Clientanwendung festgelegt, die die Nachricht erstellt ( und verfügt daher über Lese-/Schreibzugriff), kann aber nach dem ersten Aufruf von **SaveChanges** nicht geändert werden.
     

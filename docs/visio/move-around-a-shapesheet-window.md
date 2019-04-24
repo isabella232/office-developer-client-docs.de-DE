@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f750223f-165c-8c2f-457b-724817b062b3
 description: Wenn Sie sich in einem ShapeSheet-Fenster von Zelle zu Zelle bewegen möchten, verwenden Sie die Pfeiltasten und die TABULATORTASTE. Klicken Sie in eine Zelle, um diese zu aktivieren, oder führen Sie einen Bildlauf durch die ShapeSheet-Zellen aus, ohne die aktive Zelle zu ändern.
-ms.openlocfilehash: 0e58ba66b6d086ee296fbc344c0892cdf11d09c9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a6e71852f20bfeb889161c245859b458ad0debfb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335238"
 ---
-# <a name="move-around-a-shapesheet-window"></a>Navigieren in einem ShapeSheet-Fenster
+# <a name="move-around-a-shapesheet-window"></a>Bewegen im ShapeSheet-Fenster
 
 Wenn Sie sich in einem ShapeSheet-Fenster von Zelle zu Zelle bewegen möchten, verwenden Sie die Pfeiltasten und die TABULATORTASTE. Klicken Sie in eine Zelle, um diese zu aktivieren, oder führen Sie einen Bildlauf durch die ShapeSheet-Zellen aus, ohne die aktive Zelle zu ändern.
   

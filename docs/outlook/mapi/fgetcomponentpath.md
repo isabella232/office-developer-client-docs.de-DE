@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 2a303458-3283-409a-bc3b-b891f3fcfc22
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 3456d81935a0a94bc2158eefd321da968dda9983
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335210"
 ---
 # <a name="fgetcomponentpath"></a>FGetComponentPath
 
@@ -25,7 +25,7 @@ ms.locfileid: "25384500"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Pfad zu der privaten Mapi32.dll zurück.
+Gibt den Pfad zur privaten Mapi32. dll zurück.
   
 ```cpp
 BOOL FGetComponentPath(
@@ -41,27 +41,27 @@ BOOL FGetComponentPath(
 
  _szComponent_
   
-> [in] Die MSIComponentID-Registrierungsschlüssel in [Mapi32.dll Stub Registrierungseinstellungen](https://msdn.microsoft.com/library/dd162409.aspx)beschrieben.
+> in Der MSIComponentID reg-Schlüssel, der in den [Mapi32. dll-Registrierungseinstellungen](https://msdn.microsoft.com/library/dd162409.aspx)beschrieben wird.
     
  _szQualifier_
   
-> [in] Die MSIApplicationLCID oder MSIOfficeLCID Unterschlüssel in [Wählen Sie eine bestimmte Version von MAPI auf Load](how-to-choose-a-specific-version-of-mapi-to-load.md)beschrieben. Anrufer können **null** übergeben, wenn kein Qualifizierer vorhanden ist. 
+> in Der Unterschlüssel MSIApplicationLCID oder MSIOfficeLCID, der in [Wählen Sie eine bestimmte Version von MAPI zum Laden](how-to-choose-a-specific-version-of-mapi-to-load.md)beschrieben. Aufrufer können **null** , wenn kein Qualifizierer vorhanden ist. 
     
  _szDllPath_
   
-> [in] Der Pfad zu der privaten Mapi32.dll, die vollständigen MAPI-Funktionalität (die gleichen Exporte als die Mapi32.dll) hat.
+> in Der Pfad zur privaten Mapi32. dll, die vollständige MAPI-Funktionalität aufweist (derselbe Export wie der Mapi32. dll).
     
  _cchBufferSize_
   
-> [in] Die Größe des _SzDllPath_in Zeichen.
+> in Die Größe von _szDllPath_in Zeichen.
     
  _fInstall_
   
-> [in] Erfahren Sie mehr MAPI, um die private Mapi32.dll Komponente zu installieren, wenn es nicht vorhanden ist.
+> in Weist MAPI an, die private Mapi32. dll-Komponente zu installieren, wenn Sie nicht vorhanden ist.
     
 ## <a name="return-value"></a>Rückgabewert
 
- **"true"**
+ **true**
   
 > Der Pfad wurde gefunden.
     
@@ -69,9 +69,9 @@ BOOL FGetComponentPath(
   
 > Der Pfad wurde nicht gefunden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **FGetComponentPath** -Funktion, wenn Sie den Pfad der privaten Mapi32.dll abzurufen müssen. 
+Verwenden Sie die **FGetComponentPath** -Funktion, wenn Sie den Pfad zur privaten Mapi32. dll abrufen müssen. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -80,5 +80,5 @@ Verwenden Sie die **FGetComponentPath** -Funktion, wenn Sie den Pfad der private
 [Auswählen einer bestimmten zu ladenden MAPI-Version](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
-[Mapi32.dll Stub Registrierungseinstellungen](https://msdn.microsoft.com/library/dd162409.aspx)
+[Mapi32. dll-Stub-Registrierungseinstellungen](https://msdn.microsoft.com/library/dd162409.aspx)
 

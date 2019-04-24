@@ -8,30 +8,30 @@ f1_keywords:
 - Vis_DSS.chm82251504
 localization_priority: Normal
 ms.assetid: 5a10892f-c8fa-c127-2f5a-564009ce5411
-description: Gibt die Höhe des zusammengesetzten Texts in einem Shape zurück, in dem keine Textzeile maxBreite überschreitet.
-ms.openlocfilehash: 9a80dafcf80a1dcba968a0f60465aae4e2a2758b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt die Höhe des zusammengesetzten Texts in einer Form zurück, in der keine Textzeile MaximumWidth überschreitet.
+ms.openlocfilehash: 7455f58f14f9a4a0ae1fcd5375dba5d5860d3852
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332353"
 ---
 # <a name="textheight-function"></a>TEXTHÖHE-Funktion
 
-Gibt die Höhe des zusammengesetzten Texts in einem Shape zurück, in dem keine Textzeile _maxBreite_überschreitet. 
+Gibt die Höhe des zusammengesetzten Texts in einer Form zurück, in der keine Textzeile _MaximumWidth_überschreitet. 
   
 ## <a name="syntax"></a>Syntax
 
-TEXTHEIGHT (** *Shapename! TheText* ** ** *[, maxBreite]* **) 
+TextHEIGHT (* * *Shapename! DerText* * * * * *[, MaximumWidth]* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Shapename! TheText_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Verweis auf die Zelle TheText mit der in der Ziel-Shape.  _Shapename!_ ist der Name des Shapes, von dem Sie den Text abrufen möchten.  <br/> |
-| _maxBreite_ <br/> |Optional  <br/> |**Numeric** <br/> |Die maximale Breite eines Textblocks.  <br/> |
+| _Shapename! DerText_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Verweis auf die Zelle mit dem Namen DerText im Ziel-Shape.  _Shapename!_ ist der Name der Form, aus der Sie den Text abrufen möchten.  <br/> |
+| _MaximumWidth_ <br/> |Optional  <br/> |**Numerisch** <br/> |Die maximale Breite eines Textblocks.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   

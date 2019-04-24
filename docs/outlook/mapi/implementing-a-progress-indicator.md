@@ -1,5 +1,5 @@
 ---
-title: Implementieren eines Statusindikators
+title: Implementieren einer Statusanzeige
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,43 +8,43 @@ api_type:
 - COM
 ms.assetid: 3a062a88-e87e-4c0c-944e-544a8f080930
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1a359ec413da91b3e2819978e80ea0a921f6b245
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6972c960705c336aa6ff96d81b48ccbd490a22ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332851"
 ---
-# <a name="implementing-a-progress-indicator"></a>Implementieren eines Statusindikators
+# <a name="implementing-a-progress-indicator"></a>Implementieren einer Statusanzeige
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Viele Vorgänge, die von Clients initiiert beanspruchen sehr viel Zeit. Einer der Eingabeparameter für diese Vorgänge potenziell langen ist ein Zeiger auf ein Objekt Fortschritt – ein Objekt, das implementiert die [IMAPIProgress: IUnknown](imapiprogressiunknown.md) Schnittstelle. Fortschritt Objekte Steuern der Darstellung und Anzeige von Statusanzeigen und von Clients und von MAPI implementiert werden. Sie können auswählen, ob einem Fortschritt-Objekt implementiert werden soll oder nicht. Die MAPI-Implementierung ist verfügbar für Dienstanbieter zu verwenden, wenn Sie festlegen, dass keine Implementierung bereitstellen. 
+Viele der von Clients initiierten Vorgänge nehmen eine beträchtliche Zeit in Anspruch. Einer der Eingabeparameter für diese potenziell langwierigen Vorgänge ist ein Zeiger auf ein Progress-Objekt, ein Objekt, das die [IMAPIProgress: IUnknown](imapiprogressiunknown.md) -Schnittstelle implementiert. Progress-Objekte steuern das Erscheinungsbild und die Anzeige von Fortschrittsindikatoren und werden von Clients und von MAPI implementiert. Sie können auswählen, ob ein Progress-Objekt implementiert werden soll. Die MAPI-Implementierung steht für Dienstanbieter zur Verfügung, wenn Sie keine Implementierung angeben. 
   
-Fortschritt Objekte arbeiten Sie mit der folgenden Datenelemente:
+Progress-Objekte können mit den folgenden Daten Teilen verwendet werden:
   
-- Eine globale Mindestwert, der Ihre [IMAPIProgress::Progress](imapiprogress-progress.md) -Methode aufgerufen wird, kleiner oder gleich dem Wert des Parameters _UlValue_ sein sollte. Am Anfang des Vorgangs werden diese Minimalwert _UlValue_ . 
+- Ein globaler Mindestwert, der bei Aufruf der [IMAPIProgress::P rogress](imapiprogress-progress.md) -Methode kleiner oder gleich dem Wert des _ulValue_ -Parameters sein muss. Zu Beginn des Vorgangs entspricht _ulValue_ diesem Minimalwert. 
     
-- Einen globalen maximale Wert, der die **IMAPIProgress::Progress** -Methode aufgerufen wird, größer als oder gleich dem Parameter _UlValue_ sein sollte. Am Ende des Vorgangs werden diese Maximalwert _UlValue_ . 
+- Ein globaler Maximalwert, der bei Aufruf der **IMAPIProgress::P rogress** -Methode größer oder gleich dem _ulValue_ -Parameter sein sollte. Am Ende des Vorgangs entspricht _ulValue_ diesem Maximalwert. 
     
-- Ein Kennzeichen Wert gibt an, ob der Status von oben entspricht oder niedrigerer Ebene item.
+- Ein Flags-Wert, der angibt, ob der Fortschritt einem Element auf oberster oder niedrigerer Ebene entspricht.
     
-- Ein Wert, der angibt, die aktuelle Stufe des Fortschritt für den Vorgang.
+- Ein Wert, der die aktuelle Statusstufe für den Vorgang angibt.
     
-- Die Anzahl der derzeit verarbeiteten Elemente relativ zur Summe.
+- Die Anzahl der derzeit verarbeiteten Elemente im Verhältnis zu der Summe.
     
-- Die Gesamtanzahl von Elementen, die während des Vorgangs verarbeitet werden.
+- Die Gesamtzahl der während des Vorgangs zu verarbeitenden Elemente.
     
-Die minimale und maximale Werte darstellen Anfang und Ende des Vorgangs in numerische Form. Verwenden Sie 1 für die anfängliche Mindestwert und 1000 Höchstwert für die anfängliche, diese Werte in den Methoden [IMAPIProgress::GetMin](imapiprogress-getmin.md) und [IMAPIProgress::GetMax](imapiprogress-getmax.md) Dienstanbietern übergeben. Dienstanbieter setzen Sie diese Werte beim Aufruf von [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)zurück. 
+Die Mindest-und Höchstwerte stellen den Anfang und das Ende des Vorgangs in numerischer Form dar. Verwenden Sie 1 für den anfänglichen Minimalwert und 1000 für den anfänglichen Maximalwert, und übergeben Sie diese Werte an Dienstanbieter in den Methoden [IMAPIProgress:: GetMin](imapiprogress-getmin.md) und [IMAPIProgress:: GetMax](imapiprogress-getmax.md) . Dienstanbieter setzen diese Werte zurück, wenn Sie [IMAPIProgress::](imapiprogress-setlimits.md)setlimits aufrufen. 
   
-Der Wert des Flags wird vom Dienstanbieter verwendet, um zu bestimmen, wie sie die anderen Werte festlegen sollten. Den Wert des Flags auf MAPI_TOP_LEVEL zu initialisieren und Rückgabewert dieses in die Implementierung von **"GetFlags"** , bis der Dienstanbieter durch Aufrufen von **SetLimits**zurückgesetzt. 
+Der Flags-Wert wird von Dienstanbietern verwendet, um zu bestimmen, wie die anderen Werte festgelegt werden sollen. Initialisieren Sie den Flags-Wert in MAPI_TOP_LEVEL, und geben Sie diesen Wert **** in der Implementierung von GetFlags zurück, bis der Dienstanbieter es durch Aufrufen von setlimits erneut festlegt. **** 
   
-Speichern Sie lokale Kopien der einzelnen Parameter in der Implementierung der **SetLimits** -Methode: _LpulMin_, _LpulMax_und _LpulFlags_. Diese Werte sollten sofort verfügbar sein, bei ein Dienstanbieter Ihrer **GetMin**, **GetMax**oder **"GetFlags"** aufruft. 
+Speichern Sie in ihrer Implementierung **** der setlimits-Methode lokale Kopien der einzelnen Parameter: _lpulMin_, _lpulMax_und _lpulFlags_. Diese Werte sollten leicht verfügbar sein, wenn ein Dienstanbieter Ihre **GetMin**-, **GetMax**- **** oder GetFlags-Methoden aufruft. 
   
-Dienstanbieter Aufrufen **IMAPIProgress::Progress** Methode, um die Anzeige der Statusanzeige zu aktualisieren. Es gibt drei Parameter an diese Methode: ein Wert, der die Anzahl und insgesamt. Verwenden Sie den ersten Parameter _UlValue_, um die Statusanzeige anzuzeigen. Der Parameter _UlValue_ wird die Statusanzeige und werden nur globale _UlMin_ am Anfang des Vorgangs gleich und gleich globale _UlMax_ nur nach Abschluss des Vorgangs. 
+Um die Anzeige der Statusanzeige zu aktualisieren, rufen Dienstanbieter Ihre **IMAPIProgress::P rogress** -Methode auf. Für diese Methode gibt es drei Parameter: einen Wert, eine Anzahl und eine Summe. Verwenden Sie den ersten Parameter _ulValue_, um die Statusanzeige anzuzeigen. Der _ulValue_ -Parameter ist die Statusanzeige und ist gleich Global _ulMin_ nur am Anfang des Vorgangs und gleich globaler _ulMax_ nur nach Abschluss des Vorgangs. 
   
-Verwenden Sie die zweite und dritte Parameter sowie die _UlCount_ und _UlTotal_, falls verfügbar, um eine optionale Nachricht wie "5 Elemente nicht genügend 10 abgeschlossen." angezeigt Wenn die zweite und dritte Parameter auf 0 festgelegt sind, können Sie, ob er die Statusanzeige visuell zu ändern. Einige Dienstanbieter legen Sie diesen Parameter auf Nullen, um anzugeben, dass sie ein Unterobjekt verarbeitet werden, deren Status relativ zu einem übergeordneten Objekt überwacht wird. In diesem Fall ist es sinnvoll, die Anzeige nur ändern, wenn das übergeordnete Objekt des Fortschritts meldet. Einige Dienstanbieter übergeben Nullen für diese Parameter jedes Mal. 
+Verwenden Sie die zweite und dritte Parameters, _ulCount_ und _ulTotal_, falls verfügbar, um eine optionale Meldung wie "5 Elemente, die von 10 abgeschlossen" anzuzeigen. Wenn der zweite und der dritte Parameter auf 0 festgelegt sind, können Sie auswählen, ob die Statusanzeige visuell geändert werden soll. Einige Dienstanbieter legen diese Parameter auf NULL fest, um anzugeben, dass Sie ein Unterobjekt verarbeiten, dessen Fortschritt relativ zu einem übergeordneten Objekt überwacht wird. In dieser Situation ist es sinnvoll, die Anzeige nur zu ändern, wenn das übergeordnete Objekt den Fortschritt meldet. Einige Dienstanbieter übergeben Nullen für diese Parameter jedes Mal. 
   
 

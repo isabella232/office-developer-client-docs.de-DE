@@ -8,27 +8,27 @@ api_type:
 - COM
 ms.assetid: b9a41f44-4c7e-4c57-b536-63fb85e4fae6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0105ac92c53424199685e76223e6d75792fb674e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3a4fb1a3f76481bf1960c251a33911b871a8791c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333061"
 ---
 # <a name="copying-a-recipient"></a>Kopieren eines Empfängers
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um einen oder mehrere Empfänger aus einem Container in ein anderes oder den gleichen Container kopieren, Sie zunächst sicher, dass der Zielcontainer geändert werden kann. Container, die geändert werden festlegen AB_MODIFIABLE Flag in ihre **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))-Eigenschaft.
+Wenn Sie einen oder mehrere Empfänger aus einem Container in einen anderen oder denselben Container kopieren möchten, überprüfen Sie zunächst, ob der Zielcontainer veränderbar ist. Zu ändernde Container legen Sie das AB_MODIFIABLE-Flag in Ihrer **PR_CONTAINER_FLAGS** ([pidtagcontainerflags (](pidtagcontainerflags-canonical-property.md))-Eigenschaft fest.
   
-Um einen oder mehrere Einträge in einem änderbare Container zu kopieren, rufen Sie das Ziel des Containers [IABContainer::CopyEntries](iabcontainer-copyentries.md) -Methode. Da Kopieren von Adressbucheinträgen zeitaufwendig sein kann, **CopyEntries** akzeptiert vier Eingabeparameter: ein Array von Eintragsbezeichner für die Einträge kopiert werden soll, ein Fensterhandle, eine Statusanzeige und eine Bitmaske aus Flags. 
+Wenn Sie einen oder mehrere Einträge in einen änderbaren Container kopieren möchten, rufen Sie die [IABContainer:: CopyEntries](iabcontainer-copyentries.md) -Methode des Zielcontainers auf. Da das Kopieren von Adressbucheinträgen zeitaufwändig sein kann, akzeptiert **CopyEntries** vier Eingabeparameter: ein Array von Eintrags Bezeichnern für die zu kopierenden Einträge, ein Fensterhandle, eine Statusanzeige und eine Bitmaske von Flags. 
   
-Das Fenster Handle und Fortschritt Symbol werden von der Adressbuchanbieter verwendet, um den Status des Vorgangs für dem Benutzer anzuzeigen. Wenn Sie Status anzeigen möchten, übergeben Sie ein Fensterhandle für das übergeordnete Fenster der Statusanzeige in der _UlUIParam_ -Parameter, und legen Sie das Flag AB_NO_DIALOG nicht im Parameter _UlFlags_ . Wenn Sie eine eigene Implementierung einer Statusanzeige haben, übergeben Sie einen Zeiger an die Implementierung der im Parameter _LpProgress_ . Wenn dies nicht der Fall ist, übergeben Sie NULL. Der Adressbuchanbieter wird die MAPI-Fortschritt Indikator Implementierung verwenden. 
+Das Fensterhandle und die Statusanzeige werden vom Adressbuchanbieter verwendet, um dem Benutzer den Status des Vorgangs anzuzeigen. Wenn Sie den Fortschrittanzeigen möchten, übergeben Sie ein Fensterhandle für das übergeordnete Fenster der Statusanzeige im _ulUIParam_ -Parameter, und legen Sie das AB_NO_DIALOG-Flag im _ulFlags_ -Parameter nicht fest. Wenn Sie über eine Statusanzeige verfügen, übergeben Sie einen Zeiger an die Implementierung im _lpProgress_ -Parameter. Wenn dies nicht der Fall ist, führen Sie NULL aus. Der Adressbuchanbieter verwendet die MAPI-Statusindikator Implementierung. 
   
-Die Bitmaske der Kennzeichen gibt an, unabhängig davon, ob eine Statusanzeige angezeigt werden soll und wie doppelter Eintrag Überprüfung behandelt werden sollen. Legen Sie die Kennzeichen AB_NO_DIALOG unterdrückt werden, eine Statusanzeige. Legen Sie das Kennzeichen CREATE_CHECK_DUP_LOOSE angewiesen, die Adressbuchanbieter lose Suche nach Duplikaten oder das CREATE_CHECK_DUP_STRICT-Flag für strengere doppelte überprüfen. Set das CREATE_REPLACE-Flag Einträge kopiert haben Ersetzen der vorhandenen Einträge aus, wenn der Anbieter wird bestimmt, ob Duplikate vorhanden sind. 
+Die Bitmaske der Flags gibt an, ob eine Statusanzeige angezeigt werden soll und wie die Überprüfung der doppelten Eingabe erfolgen soll. Legen Sie das AB_NO_DIALOG-Flag fest, um eine Statusanzeige zu unterdrücken. Legen Sie das CREATE_CHECK_DUP_LOOSE-Flag fest, um den Adressbuchanbieter anzuweisen, auf Duplikate oder das CREATE_CHECK_DUP_STRICT-Flag für strengere Duplikatprüfung zu prüfen. Legen Sie das CREATE_REPLACE-Flag so fest, dass kopierte Einträge vorhandene Einträge ersetzen, wenn der Anbieter feststellt, dass Duplikate vorhanden sind. 
   
-Beim Kopieren in einer persönlichen Adressbuchcontainer (PAB) werden der Anbieter einige oder alle Eigenschaften für jeden Eintrag kopiert. Da MAPI-Anforderungen für Anbieter implementieren von Vorgängen zum Container nicht hergestellt wird, nicht möglich Sie Annahmen über die Anzahl und Typ der Eigenschaften, die mit einem Address Book Eintrag kopiert werden.
+Beim Kopieren in einen PAB-Container (persönliches Adressbuch) kopiert der Anbieter einige oder alle Eigenschaften für jeden Eintrag. Da MAPI keine Anforderungen für Anbieter festlegt, die Container Kopiervorgänge implementieren, können Sie keine Annahmen über die Anzahl und den Typ von Eigenschaften treffen, die mit einem Adressbucheintrag kopiert werden.
   
 

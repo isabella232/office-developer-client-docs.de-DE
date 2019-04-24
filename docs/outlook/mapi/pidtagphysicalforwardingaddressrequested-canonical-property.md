@@ -1,5 +1,5 @@
 ---
-title: PidTagPhysicalForwardingAddressRequested (kanonische Eigenschaft)
+title: Kanonische Pidtagphysicalforwardingaddressrequested (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 633e71e6-fdab-4453-8921-9bc0d5752b26
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e6d0d95351ab2b82f00a7a5758e3f30637ef2cbb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 30e78eb4dbd0741df15ebfaf9ee6e98f1c5bf9b8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338234"
 ---
-# <a name="pidtagphysicalforwardingaddressrequested-canonical-property"></a>PidTagPhysicalForwardingAddressRequested (kanonische Eigenschaft)
+# <a name="pidtagphysicalforwardingaddressrequested-canonical-property"></a>Kanonische Pidtagphysicalforwardingaddressrequested (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn Message Transfer Agent So fügen Sie eine physische Weiterleitungsadresse für einen Nachrichtenempfänger an den Absender einer Nachricht angefordert wird.
+Enthält TRUE, wenn ein Nachrichtenabsender den Nachrichtenübermittlungs-Agent anfordert, eine physische Weiterleitungsadresse für einen Nachrichtenempfänger anzufügen.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält True, wenn Message Transfer Agent So fügen Sie eine physische Weiterle
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

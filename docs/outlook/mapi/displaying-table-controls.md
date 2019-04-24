@@ -7,42 +7,42 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0882be14-573c-440c-954f-76ef70eea33e
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7af1e710006986807091c5c36d54da86204a71d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 37f6cd0320894d500416672c3dd0d90ee3324b40
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337030"
 ---
 # <a name="displaying-table-controls"></a>Anzeigen von Tabellensteuerelementen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Es gibt viele verschiedene Typen von Steuerelementen, keine eindeutige MAPI. MAPI definiert eine eigene Strukturen, die verwendet werden jedoch in Verbindung mit [BuildDisplayTable](builddisplaytable.md) zum Beschreiben des eindeutigen Satz von Daten, die an jedes Steuerelement beteiligt sind. 
+Es gibt viele verschiedene Typen von Steuerelementen, die für MAPI nicht eindeutig sind. MAPI definiert jedoch eigene Strukturen, die in Verbindung mit [BuildDisplayTable](builddisplaytable.md) verwendet werden, um die eindeutigen Datensätze zu beschreiben, die mit den einzelnen Steuerelementen verbunden sind. 
   
-Die folgende Tabelle enthält die Strukturen, die jede Art von Steuerelement zu beschreiben. 
+In der folgenden Tabelle sind die Strukturen aufgelistet, in denen die einzelnen Steuerelementtypen beschrieben werden. 
   
-|**Kontrollstruktur**|**Beschreibung**|
+|**Steuerelementstruktur**|**Beschreibung**|
 |:-----|:-----|
-|[DTBLBUTTON](dtblbutton.md) <br/> |Beschreibt ein Button-Steuerelement.  <br/> |
+|[DTBLBUTTON](dtblbutton.md) <br/> |Beschreibt ein Schaltflächen-Steuerelement.  <br/> |
 |[DTBLCHECKBOX](dtblcheckbox.md) <br/> |Beschreibt ein Kontrollkästchen-Steuerelement.  <br/> |
 |[DTBLCOMBOBOX](dtblcombobox.md) <br/> |Beschreibt ein Kombinationsfeld-Steuerelement.  <br/> |
 |[DTBLDDLBX](dtblddlbx.md) <br/> |Beschreibt ein Dropdown-Listenfeld-Steuerelement.  <br/> |
-|[DTBLEDIT](dtbledit.md) <br/> |Beschreibt ein Edit-Steuerelement.  <br/> |
+|[DTBLEDIT](dtbledit.md) <br/> |Beschreibt ein Bearbeitungssteuerelement.  <br/> |
 |[DTBLGROUPBOX](dtblgroupbox.md) <br/> |Beschreibt ein Gruppenfeld-Steuerelement.  <br/> |
 |[DTBLLABEL](dtbllabel.md) <br/> |Beschreibt ein Label-Steuerelement.  <br/> |
 |[DTBLLBX](dtbllbx.md) <br/> |Beschreibt ein Listenfeld-Steuerelement.  <br/> |
-|[DTBLMVDDLBOX](dtblmvddlbox.md) <br/> |Beschreibt eine mehrwertige Dropdown-Listenfeld-Steuerelement.  <br/> |
-|[DTBLMVLISTBOX](dtblmvlistbox.md) <br/> |Beschreibt eine mehrwertige Listenfeld-Steuerelement.  <br/> |
-|[DTBLPAGE](dtblpage.md) <br/> |Beschreibt eine mit Registerkarten-Seitensteuerelement.  <br/> |
+|[DTBLMVDDLBOX](dtblmvddlbox.md) <br/> |Beschreibt ein Dropdown-Listenfeld-Steuerelement mit mehreren Werten.  <br/> |
+|[DTBLMVLISTBOX](dtblmvlistbox.md) <br/> |Beschreibt ein Listenfeld-Steuerelement mit mehreren Werten.  <br/> |
+|[DTBLPAGE](dtblpage.md) <br/> |Beschreibt ein Seitensteuerelement mit Registerkarten.  <br/> |
 |[DTBLRADIOBUTTON](dtblradiobutton.md) <br/> |Beschreibt ein Optionsfeld-Steuerelement.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Anzeigen der Tabellenimplementierung](display-table-implementation.md)
+[Anzeigen der Tabellen Implementierung](display-table-implementation.md)
 

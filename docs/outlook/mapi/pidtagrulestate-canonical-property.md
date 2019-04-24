@@ -1,5 +1,5 @@
 ---
-title: PidTagRuleState (kanonische Eigenschaft)
+title: Kanonische Pidtagrulestate (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,98 +11,98 @@ api_name:
 api_type:
 - COM
 ms.assetid: f62f3055-b855-4203-aa5c-6ba28b58c6f7
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: a0e15462cd3dc14c93155e34e47b7caac2c04087
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338612"
 ---
-# <a name="pidtagrulestate-canonical-property"></a>PidTagRuleState (kanonische Eigenschaft)
+# <a name="pidtagrulestate-canonical-property"></a>Kanonische Pidtagrulestate (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Wert, der als eine Bitmaske Kombination von Flags, die angeben, den Status der Regel interpretiert.
+Ein Wert, der als Bitmasken Kombination von Flags interpretiert wird, die den Status der Regel angeben.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_RULE_STATE  <br/> |
 |Kennung:  <br/> |0x6677  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Serverseitige Regeln  <br/> |
+|Bereich:  <br/> |Server seitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die folgende Tabelle zeigt die möglichen Werte dieser Eigenschaft an.
+In der folgenden Tabelle sind die möglichen Werte dieser Eigenschaft definiert.
   
-De-de (ST_ENABLED, 0 x 00000001 Bitmaske)
+DE (ST_ENABLED, Bitmaske 0x00000001)
   
-> Die Regel ist für die Ausführung aktiviert. Wenn dieses Flag nicht festgelegt ist, muss der Server diese Regel überspringen, beim Auswerten der Regeln.
+> Die Regel ist für die Ausführung aktiviert. Wenn dieses Flag nicht festgelegt ist, muss der Server diese Regel beim Auswerten von Regeln überspringen.
     
-ER (ST_ERROR, 0 x 00000002 Bitmaske)
+ER (ST_ERROR, Bitmaske 0x00000002)
   
-> Der Server ist Verarbeitung der Regel einen Fehler aufgetreten.
+> Der Server hat einen Fehler bei der Verarbeitung der Regel festgestellt.
     
-DER (ST_ONLY_WHEN_OOF, 0 x 00000004 Bitmaske)
+OF (ST_ONLY_WHEN_OOF, Bitmaske 0x00000004)
   
-> Die Regel wird ausgeführt, nur, wenn der Benutzer den Status von Office (OOF) für das Postfach festlegt. Dieses Kennzeichen müssen in einer Regel für Öffentliche Ordner nicht festgelegt werden.
+> Die Regel wird nur ausgeführt, wenn der Benutzer den Abwesenheitsstatus (abwesend) für das Postfach festlegt. Dieses Flag darf nicht in einer Regel für Öffentliche Ordner festgelegt werden.
     
-HI (ST_KEEP_OOF_HIST, 0 x 00000008 Bitmaske)
+Hallo (ST_KEEP_OOF_HIST, Bitmaske 0x00000008)
   
-> Dieses Kennzeichen müssen in einer Regel für Öffentliche Ordner nicht festgelegt werden.
+> Dieses Flag darf nicht in einer Regel für Öffentliche Ordner festgelegt werden.
     
-EL (ST_EXIT_LEVEL, 0 x 00000010 Bitmaske)
+EL (ST_EXIT_LEVEL, Bitmaske 0x00000010)
   
-> Auswertung der Regel werden nach dem Ausführen dieser Regel, mit Ausnahme der Auswertung von Abwesenheitsnotizen Regeln beendet.
+> Die Regelauswertung endet nach der Ausführung dieser Regel, mit Ausnahme der Auswertung von Abwesenheitsregeln.
     
-SCL-Bewertung (ST_SKIP_IF_SCL_IS_SAFE, 0 x 00000020 Bitmaske)
+SCL (ST_SKIP_IF_SCL_IS_SAFE, Bitmaske 0x00000020)
   
-> Auswertung dieser Regel möglicherweise übersprungen werden.
+> Die Auswertung dieser Regel kann übersprungen werden.
     
-PE (ST_RULE_PARSE_ERROR, 0 x 00000040 Bitmaske)
+PE (ST_RULE_PARSE_ERROR, Bitmaske 0x00000040)
   
-> Der Server ist ein Fehler, die Analyse der Regeldaten vom Client aufgetreten.
+> Beim Analysieren der vom Client bereitgestellten Regel Daten ist ein Fehler aufgetreten.
     
 X
   
-> Von dieses Protokoll nicht verwendet. Dieses Bit muss vom Client nicht geändert werden.
+> Wird von diesem Protokoll nicht verwendet. Dieses Bit darf vom Client nicht geändert werden.
     
-Beachten Sie auf die Interaktion zwischen ST_ONLY_WHEN_OOF und ST_EXIT_LEVEL Flags: 
+Beachten Sie die Interaktion zwischen ST_ONLY_WHEN_OOF-und ST_EXIT_LEVEL-Flags: 
   
-Wenn der Status "Abwesend" für das Postfach festgelegt ist, und eine Bedingung TRUE ergibt, 
+Wenn der Status "Abwesenheit" für das Postfach festgelegt ist und eine Regelbedingung "TRUE" ergibt, 
   
-UND:
+UND
   
-- Die Regel muss das ST_EXIT_LEVEL-Flag festlegen und keinen ST_ONLY_WHEN_OOF-Flag festlegen. Klicken Sie dann der Server muss nicht ausgewertet werden nachfolgende Regeln, die keine ST_ONLY_WHEN_OOF flag festgelegt und nachfolgende Regeln, die ST_ONLY_WHEN_OOF gekennzeichnet sind ausgewertet werden.
+- Die Regel hat das ST_EXIT_LEVEL-Flag festgelegt und verfügt nicht über ST_ONLY_WHEN_OOF-Flagsatz. Anschließend darf der Server nachfolgende Regeln, für die kein ST_ONLY_WHEN_OOF-Flag festgelegt ist, auswerten und nachfolgende Regeln auswerten, die ST_ONLY_WHEN_OOF-Flagsatz aufweisen.
     
-ODER:
+ODER
   
-- Die Regel verwendet den ST_EXIT_LEVEL und die ST_ONLY_WHEN_OOF Flags festgelegt. Klicken Sie dann, muss der Server nicht ausgewertet werden alle nachfolgenden Regeln.
+- Die Regel weist sowohl die ST_EXIT_LEVEL-als auch die ST_ONLY_WHEN_OOF-Flags auf. Anschließend darf der Server keine nachfolgenden Regeln auswerten.
     
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
     
 [[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
-> Eingehende e-Mail-Nachrichten auf einem Server bearbeitet.
+> Bearbeitet eingehende e-Mail-Nachrichten auf einem Server.
     
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -114,5 +114,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

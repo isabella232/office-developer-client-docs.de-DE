@@ -1,5 +1,5 @@
 ---
-title: PidTagPhysicalForwardingProhibited (kanonische Eigenschaft)
+title: Kanonische Pidtagphysicalforwardingprohibited (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2651759d-914b-4376-92b2-6d5d4ffb5530
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ae13eea7ee2579254eb4aa057647e20cfa61f389
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 2650292b0c9df224371bc7f9b5baf82ba13dc0b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338143"
 ---
-# <a name="pidtagphysicalforwardingprohibited-canonical-property"></a>PidTagPhysicalForwardingProhibited (kanonische Eigenschaft)
+# <a name="pidtagphysicalforwardingprohibited-canonical-property"></a>Kanonische Pidtagphysicalforwardingprohibited (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält True, wenn eine Nachrichtenabsender physische Nachricht-Weiterleitung für einen bestimmten Empfänger verhindert.
+Enthält TRUE, wenn ein Nachrichtenabsender die physische Nachrichtenweiterleitung für einen bestimmten Empfänger nicht unterbindet.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält True, wenn eine Nachrichtenabsender physische Nachricht-Weiterleitung f
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

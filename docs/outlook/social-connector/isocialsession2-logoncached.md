@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8cac444b-0e81-44ff-a7a0-87793b533e26
-description: Meldet sich bei der Website für soziale Netzwerke mithilfe von Anmeldeinformationen.
-ms.openlocfilehash: 098ccd2cd3a55affed683886ce1e297ed725475b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Meldet sich mithilfe zwischengespeicherter Anmeldeinformationen an der Website für soziale Netzwerke an.
+ms.openlocfilehash: b79c692c01022dd10ecb8d4085f0aedb28a810c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336505"
 ---
 # <a name="isocialsession2logoncached"></a>ISocialSession2::LogonCached
 
-Meldet sich bei der Website für soziale Netzwerke mithilfe von Anmeldeinformationen.
+Meldet sich mithilfe zwischengespeicherter Anmeldeinformationen an der Website für soziale Netzwerke an.
   
 ```cpp
 HRESULT _stdcall LogonCached([in] BSTR connectIn, [in] BSTR userName, [in] BSTR password,  [out] BSTR connectOut);
@@ -27,27 +27,27 @@ HRESULT _stdcall LogonCached([in] BSTR connectIn, [in] BSTR userName, [in] BSTR 
 
 _connectIn_
   
-> [in] Eine Zeichenfolge, die kann leer sein oder enthält die Anmeldeinformationen, je nach den Kontext, in dem die OSC **LogonCached**anruft.
+> in Eine Zeichenfolge, die leer sein oder die Anmeldeinformationen enthalten kann, je nachdem, in welchem Kontext der OSC **LogonCached**aufruft.
     
 _userName_
   
-> [in] Eine Zeichenfolge, die den Benutzernamen enthält.
+> in Eine Zeichenfolge, die den Benutzernamen enthält.
     
 _password_
   
-> [in] Eine Zeichenfolge, die das Kennwort des Benutzers enthält.
+> in Eine Zeichenfolge, die das Kennwort des Benutzers enthält.
     
-_connectOut_
+_Verbindung_
   
-> [out] Eine opake Zeichenfolge, die Anmeldeinformationen enthält.
+> Out Eine undurchsichtige Zeichenfolge, die Anmeldeinformationen enthält.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Methode ist für die Authentifizierung nur aufgerufen, wenn **UseLogonCached** in die **Funktionen** von [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)zurückgegebenen XML-Daten als **true** festgelegt ist.
+Diese Methode wird nur für die Authentifizierung aufgerufen, wenn **useLogonCached** in den von [ISocialProvider: getCapabilities](isocialprovider-getcapabilities.md)zurückgegebenen **Capabilities-Funktionen** als **true** festgelegt ist.
   
-Outlook Social Connector (OSC) **LogonCached**aufruft, und eine leere Zeichenfolge für _ConnectIn_ und nicht leeren Zeichenfolgen für _Benutzername_ und _Kennwort_ übergibt. Der Anbieter _Benutzernamen_ und das _Kennwort_ zur Anmeldung bei dem sozialen Netzwerk verwendet und gibt einen undurchsichtiger _ConnectOut_ -Parameter ist die Authentifizierung erfolgreich die OSC zurück. Wenn Authentifizierung ein Fehler auftritt, gibt der Anbieter den OSC_E_LOGON_FAILURE Fehler an das osc bilden. 
+Der Outlook Connector für soziale Netzwerke (OSC) ruft **LogonCached**auf und übergibt eine leere Zeichenfolge für _connectin_ und nicht leere _Benutzernamen_ -und _Kenn Wort_ Zeichenfolgen. Der Anbieter verwendet _username_ und _Password_ , um sich beim sozialen Netzwerk anzumelden, und gibt einen Opaque- _Verbindungs_ Parameter an den osc zurück, wenn die Authentifizierung erfolgreich ist. Wenn die Authentifizierung fehlschlägt, gibt der Anbieter den OSC_E_LOGON_FAILURE-Fehler an den OSC zurück. 
   
-Der Parameter _ConnectOut_ ist eine opake Zeichenfolge an die OSC und auf nachfolgenden Versuche an den Parameter _ConnectIn_ durch die OSC zur Anmeldung bei dem sozialen Netzwerk übergeben. Der Anbieter sollte keine Anmeldeinformationen in der Zeichenfolge _ConnectOut_ platzieren, die der Anbieter das osc bilden, um Verbindungen zu speichern möchte. Das osc bilden kann nicht die Zeichenfolge in _ConnectOut_interpretieren und verschlüsselt die Zeichenfolge aus Sicherheitsgründen vor dem Speichern in der Windows-Registrierung.
+Der __ Parameter Connecting ist eine undurchsichtige Zeichenfolge für OSC und wird bei nachfolgenden Versuchen des osc zur Anmeldung am sozialen Netzwerk an den Parameter _connectin_ übergeben. Der Anbieter sollte alle Anmeldeinformationen in der _Verbindungs_ Zeichenfolge platzieren, die der osc über Verbindungen speichern möchte. OSC interpretiert die Zeichenfolge nicht in der _Verbindung_und verschlüsselt die Zeichenfolge aus Sicherheitsgründen, bevor Sie in der Windows-Registrierung gespeichert wird.
   
 ## <a name="see-also"></a>Siehe auch
 

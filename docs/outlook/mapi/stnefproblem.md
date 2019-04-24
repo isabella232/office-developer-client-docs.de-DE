@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3fe651b7-0ddf-42fd-8277-9224505be1a8
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 90829f8fff530d22a7dee68dc227655064147cee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 19d20a3fb06f6a0a0671ba4bfd938da314001778
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336379"
 ---
 # <a name="stnefproblem"></a>STnefProblem
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zu einer Eigenschaft oder eines Attributs Verarbeitungsproblem, das in die Codierung oder Decodierung eines Streams Transport Neutral Encapsulation Format (TNEF) aufgetreten sind.
+Enthält Informationen zu einem Problem bei der Eigenschaft oder Attribut Verarbeitung, das bei der Codierung oder Decodierung eines Transport Neutral Encapsulation Format (TNEF)-Streams aufgetreten ist.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF.h  <br/> |
+|Headerdatei  <br/> |TNEF. h  <br/> |
    
 ```cpp
 typedef struct _STnefProblem
@@ -46,11 +46,11 @@ typedef struct _STnefProblem
 
  **ulComponent**
   
-> Der Typ der Verarbeitung während der das Problem aufgetreten ist. Wenn während der Verarbeitung das Problem aufgetreten ist, wird das Element **UlComponent** auf NULL gesetzt. Wenn während der Verarbeitung von Anlagen das Problem aufgetreten ist, wird die **UlComponent** auf die entsprechende Anlage **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) Wert festgelegt.
+> Die Art der Verarbeitung, bei der das Problem aufgetreten ist. Wenn das Problem während der Nachrichtenverarbeitung aufgetreten ist, wird das **ulComponent** -Element auf NULL festgelegt. Wenn das Problem bei der Anlagenverarbeitung aufgetreten ist, wird **ulComponent** auf den Wert **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md)) der entsprechenden Anlage festgelegt.
     
  **ulAttribute**
   
-> Attribut der Eigenschaft zugeordneten angegeben durch die **UlPropTag** Mitglied oder, wenn das TNEF Verarbeitungsproblem tritt auf, wenn eine Kapselung Decodierung zu blockieren, einen der folgenden Werte: 
+> Attribut, das der vom **ulPropTag** -Element angegebenen Eigenschaft zugeordnet ist, oder, wenn beim Decodieren eines Kapselungs Blocks das TNEF-Verarbeitungsproblem auftritt, einer der folgenden Werte: 
     
  _attMAPIProps_
   
@@ -58,19 +58,19 @@ typedef struct _STnefProblem
     
  _attAttachment_
   
-> Anlage-Ebene
+> Anlagenebene
     
  **ulPropTag**
   
-> Eigenschaftentag der Eigenschaft, die Ursache für das Problem der TNEF-Verarbeitung, außer wenn das Problem auftritt, wenn einen Block Encapsulation Decodierung in dem Groß-/Kleinschreibung **UlPropTag** auf 0 (null) festgelegt ist. 
+> Property-Tag der Eigenschaft, die das TNEF-Verarbeitungsproblem verursacht hat, außer wenn das Problem beim Decodieren eines Kapselungs Blocks auftritt, in diesem Fall **ulPropTag** auf NULL festgelegt ist. 
     
  **SCODE**
   
-> Fehler-Wert zurück, der das Problem aufgetreten ist, während der Verarbeitung angibt.
+> Fehlerwert, der das während der Verarbeitung auftretende Problem angibt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn eine Struktur **STnefProblem** während der Verarbeitung eines Attribut oder Eigenschaft nicht generiert wird, kann die Anwendung unter der Annahme fortgesetzt, die die Verarbeitung dieses Attribut oder Eigenschaft erfolgreich waren. Die einzige Ausnahme tritt auf, wenn das Problem aufgetreten ist, während der Decodierung eines Blocks Kapselung. In diesem Fall die Decodierung der die entsprechende Komponente für den Block wird angehalten und der Decodierung in einer anderen Komponente fortgesetzt wird. 
+Wenn während der Verarbeitung eines Attributs oder einer Eigenschaft keine **STnefProblem** -Struktur generiert wird, kann die Anwendung weiterhin davon ausgehen, dass die Verarbeitung dieses Attributs oder dieser Eigenschaft erfolgreich war. Die einzige Ausnahme tritt auf, wenn das Problem während der Decodierung eines Kapselungs Blocks auftrat. In diesem Fall wird die Decodierung der Komponente, die dem Block entspricht, angehalten, und die Decodierung wird in einer anderen Komponente fortgesetzt. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,7 +78,7 @@ Wenn eine Struktur **STnefProblem** während der Verarbeitung eines Attribut ode
 
 [STnefProblemArray](stnefproblemarray.md)
   
-[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
+[Kanonische Pidtagattachnumber (-Eigenschaft](pidtagattachnumber-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

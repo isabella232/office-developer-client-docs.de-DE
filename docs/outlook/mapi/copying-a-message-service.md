@@ -8,23 +8,23 @@ api_type:
 - COM
 ms.assetid: 01e8ad76-973a-42fa-96aa-f41aabc12b4f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8388d14446a230b032e49ad0d614c85e79b8ece8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a4db4ed1c3098226891edca054621fe145daaa1f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333054"
 ---
 # <a name="copying-a-message-service"></a>Kopieren eines Nachrichtendiensts
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
- **Kopieren einer Messagingdiensts zu einem Profil**
+ **So kopieren Sie einen Nachrichtendienst in ein Profil**
   
-- Rufen Sie [IMsgServiceAdmin::CopyMsgService](imsgserviceadmin-copymsgservice.md).
+- Rufen Sie [IMsgServiceAdmin:: CopyMsgService](imsgserviceadmin-copymsgservice.md)auf.
     
-Wenn ein Nachrichtendienst kopiert wird, ist die neue Instanz des Diensts auf genau die gleiche Weise wie die ursprüngliche konfiguriert. In einigen Fällen wird **CopyMsgService** der Fehler MAPI_E_ACCESS_DENIED zurückgegeben. Die häufigste Ursache für diese Fehler Return ist ein Nachrichtendienst, der nicht selbst zu duplizierende zulässt. 
+Wenn ein Nachrichtendienst kopiert wird, wird die neue Instanz des Diensts genau auf die gleiche Weise konfiguriert wie das Original. Manchmal gibt **CopyMsgService** den Fehler MAPI_E_ACCESS_DENIED zurück. Die häufigste Ursache für diesen Fehler ist ein Nachrichtendienst, der nicht dupliziert werden kann. 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer An- und Abmeldung für Adressbuchanbieter
+title: Implementieren der Anmeldung und abMeldung des Adressbuch Anbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,65 +8,65 @@ api_type:
 - COM
 ms.assetid: c4a1fb5d-ae23-445b-a6f0-ef430b03fc9a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f26e7b7ec607c9714012870d5367a0e775c62f34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8d33bccdd01075d692e5a887082ba51ee23bb083
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332928"
 ---
-# <a name="implementing-address-book-provider-logon-and-logoff"></a>Implementieren einer An- und Abmeldung für Adressbuchanbieter
+# <a name="implementing-address-book-provider-logon-and-logoff"></a>Implementieren der Anmeldung und abMeldung des Adressbuch Anbieters
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Von adressbuchanbietern implementierte Sitzung an- und Abmelden durch Implementierung die Methoden des unterstützen die [IABProvider: IUnknown](iabprovideriunknown.md) Schnittstelle. Die ** IABProvider ** Schnittstelle erbt direkt von **IUnknown** und fügt nur zwei andere Methoden: **Anmelden** und **Herunterfahren**. 
+Adressbuchanbieter unterstützen die Sitzungs Anmeldung und-Abmeldung, indem Sie die Methoden der [IABProvider: IUnknown](iabprovideriunknown.md) -Schnittstelle implementieren. Die * * IABProvider * *-Schnittstelle erbt direkt von **IUnknown** und fügt nur zwei weitere Methoden hinzu: **Anmelden** und **Herunterfahren**. 
   
-## <a name="logoff"></a>Logoff
+## <a name="logoff"></a>Abmelden
 
-MAPI rufen Ihres Anbieters- [IABProvider::Logon](iabprovider-logon.md) -Methode am Anfang jeder Sitzung und Ihrem Anbieter zum aktuellen Profil hinzugefügt und der Client DR unterstützt. Wenn MAPI die **IABProvider::Logon** -Methode aufruft, beginnt der Adressbuchanbieter seine Anmeldevorgang. 
+MAPI Ruft die [IABProvider:: LOGON](iabprovider-logon.md) -Methode Ihres Anbieters zu Beginn jeder Sitzung und immer dann auf, wenn der Anbieter dem aktuellen Profil hinzugefügt wird und der Client die dynamische Neukonfiguration unterstützt. Wenn MAPI die **IABProvider:: LOGON** -Methode aufruft, beginnt der Anmeldeprozess des Adressbuch Anbieters. 
   
-**Implementieren von IABProvider::Log**
+**So implementieren Sie IABProvider:: Log**
   
-1. Initialisieren Sie die Ausgabe Parameter Zeiger MAPI übergeben. 
+1. Initialisieren Sie alle Ausgabeparameter Zeiger, die von MAPI übergeben wurden. 
     
-2. Rufen Sie die des Unterstützungsobjekts **IUnknown:: AddRef** -Methode zum erhöht den Referenzzähler. 
+2. Rufen Sie die **IUnknown:: AddRef** -Methode des Support Objekts auf, um den Verweiszähler zu erhöhen. 
     
-3. Rufen Sie die des Unterstützungsobjekts [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) -Methode, um den Abschnitt des Profils zu öffnen, Konfigurationsinformationen zu Ihrem Anbieter enthält. Übergeben Sie für den Parameter _LpUID_ und das Flag MAPI_MODIFY NULL, wenn Sie Änderungen vornehmen möchten. 
+3. Rufen Sie die [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) -Methode des Support Objekts auf, um den Abschnitt des Profils zu öffnen, das Konfigurationsinformationen zu Ihrem Anbieter enthält. Übergeben Sie NULL für den _lpUID_ -Parameter und das MAPI_MODIFY-Flag, wenn Sie Änderungen vornehmen möchten. 
     
-4. Rufen Sie den Profilabschnitt [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode zum Abrufen der Eigenschaften, die vom Dienstanbieter für die Anmeldung an, wie der Name der Datentabelle Datei oder Datenbank muss. 
+4. Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des profile-Abschnitts auf, um die Eigenschaften abzurufen, die der Anbieter für die Anmeldung benötigt, beispielsweise den Namen der Datendatei oder Datenbanktabelle. 
     
-5. Prüfen Sie, ob die Eigenschaften aller verfügbar und gültig. Wenn erforderlichen und zulässigen, zeigt ein Dialogfeld, wenn der Benutzer aufgefordert, nehmen Sie Korrekturen oder ungültige oder fehlende Informationen Ergänzungen und rufen Sie den Profilabschnitt [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode, um alle Änderungen zu speichern. Die allgemeinen Eigenschaften, die verfügbar sein sollten gehören: 
+5. Überprüfen Sie, ob die Eigenschaften alle verfügbar und gültig sind. Wenn erforderlich und zulässig, zeigen Sie ein Dialogfeld an, in dem der Benutzer aufgefordert wird, Korrekturen oder Ergänzungen an ungültigen oder fehlenden Informationen vorzunehmen und die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des Profil Abschnitts aufzurufen, um alle Änderungen zu speichern. Einige der allgemeinen Eigenschaften, die verfügbar sein sollten, sind: 
     
    **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
    **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
-   **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
+   **PR_PROVIDER_DISPLAY** ([Pidtagproviderdisplay (](pidtagproviderdisplay-canonical-property.md))
     
-   **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))
+   **PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md))
     
    > [!NOTE]
-   > Stellen Sie keine **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) oder **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)). Bei der Anmeldung sind diese Eigenschaften schreibgeschützt. 
+   > Legen Sie **PR_RESOURCE_FLAGS** ([Pidtagresourceflags (](pidtagresourceflags-canonical-property.md)) oder **PR_PROVIDER_DLL_NAME** ([pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md)) nicht fest. Bei der Anmeldung sind diese Eigenschaften schreibgeschützt. 
   
-6. Wenn eine oder mehrere Konfigurationseigenschaften verfügbar sind, ein Fehler auftritt, und der Wert MAPI_E_UNCONFIGURED zurückgegeben.
+6. Wenn mindestens eine Konfigurationseigenschaft nicht verfügbar ist, schlagen Sie fehl, und geben Sie den Wert MAPI_E_UNCONFIGURED zurück.
     
-7. Rufen Sie [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) zum Registrieren einer [MAPIUID](mapiuid.md). Vom Dienstanbieter kann eine **MAPIUID** durch erstellen: 
+7. Rufen Sie [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md) auf, um ein [MAPIUID](mapiuid.md)zu registrieren. Ihr Anbieter kann eine **MAPIUID** erstellen, indem Sie: 
     
-   - Aufrufen der [IMAPISupport::NewUID](imapisupport-newuid.md) -Methode. 
+   - Aufrufen der [IMAPISupport:: NewUID](imapisupport-newuid.md) -Methode. 
     
-   - Aufrufen der generiert. EXE-Tool eine GUID definieren, die vom Dienstanbieter verwendet, um in einem der seine Headerdateien einzuschließen.
+   - Aufrufen der UUIDGEN. EXE, um eine GUID zu definieren, die der Anbieter verwendet, um eine der Headerdateien einzuschließen.
     
-8. Speichern Sie Sie bei Bedarf eine neu erstellte **MAPIUID** im aktuellen Profil durch Aufrufen der Benutzerprofildienst-Abschnitt ** IMAPIProp::SetProps ** Methode. 
+8. Speichern Sie, falls gewünscht, eine neu erstellte **MAPIUID** im aktuellen Profil, indem Sie die * * IMAPIProp:: SetProps * *-Methode des profile-Abschnitts aufrufen. 
     
-9. Version Abschnitts Profile durch die **IUnknown** -Methode aufrufen. 
+9. Geben Sie den Profil Abschnitt durch Aufrufen der **IUnknown:: Release** -Methode frei. 
     
-10. Instanziieren Sie ein neues Anmeldung-Objekt, und legen Sie den Inhalt des Parameters _LppABLogon_ auf die Adresse des neuen Objekts. 
+10. Instanziieren Sie ein neues LOGON-Objekt, und legen Sie den Inhalt des _lppABLogon_ -Parameters auf die Adresse dieses neuen Objekts fest. 
     
-Da es möglich, für die MAPI aufrufen, ist Ihr ** Anmeldung **-Methode mehrmals im Laufe einer Sitzung; es ist ratsam, diese Möglichkeit in der Implementierung unterstützen, durch die Möglichkeit zum Erstellen mehrerer Logon-Objekten und Nachverfolgen der jedes Objekt, das erstellt wird. Unterstützung für mehrere Aufrufe der **Anmeldung** ermöglicht einem Benutzer von einer Clientanwendung aus, beispielsweise zur Anmeldung bei einer Sitzung mit unterschiedlichen Identitäten oder die Übermittlung Ziele verwenden. 
+Da MAPI die * * Logon * *-Methode während einer Sitzung mehrmals aufrufen kann, ist es ratsam, diese Möglichkeit in ihrer Implementierung zu unterstützen, indem Sie mehrere Anmeldeobjekte erstellen und alle erstellten Objekte nachverfolgen können. Durch die Unterstützung mehrerer **Anmelde** Aufrufe kann sich ein Benutzer einer Clientanwendung beispielsweise bei einer Sitzung mit unterschiedlichen Identitäten anmelden oder verschiedene Zusteller verwenden. 
   
-**Beim Herunterfahren** wird aufgerufen, wenn die Sitzung beendet wird. MAPI die Methode aufruft, [IABProvider::Shutdown](iabprovider-shutdown.md) als eine der letzten Aufgaben beteiligt einer Sitzung beendet. MAPI stellt aller Ihres Anbieters Logon-Objekten und, wenn der Anbieter dieser Anruf empfängt, kann vorausgesetzt, dass dies ist der letzte Aufruf, die, den es empfängt. Führen Sie in der Implementierung der **IABProvider::Shutdown**eine abschließende Bereinigung, die Sie der Meinung sind erforderlich ist. Beispielsweise möglicherweise Ihres Anbieters **MAPIDeinitIdle** anrufen, wenn sie **MAPIInitIdle** verwenden Sie das Modul im Leerlauf während der Sitzung oder die **IUnknown** -Methode alle Objekte, die noch freigegeben werden muss, um aufgerufen wurde. 
+Das **Herunterfahren** wird aufgerufen, wenn die Sitzung beendet wird. MAPI ruft Ihre [IABProvider:: Shutdown](iabprovider-shutdown.md) -Methode als eine der letzten Aufgaben beim Herunterfahren einer Sitzung auf. MAPI hat alle Anmeldeobjekte Ihres Anbieters freigegeben, und wenn Ihr Anbieter diesen Aufruf empfängt, kann davon ausgegangen werden, dass dies der letzte Anruf ist, den es empfängt. Führen Sie in ihrer Implementierung von **IABProvider:: Shutdown**eine abschließende Bereinigung durch, die Sie für erforderlich halten. Beispielsweise kann Ihr Anbieter **MAPIDeinitIdle** aufrufen, wenn es **MAPIInitIdle** aufgerufen hat, um das Leerlauf Modul während der Sitzung oder die **IUnknown:: Release** -Methode aller Objekte zu verwenden, die noch nicht freigegeben werden müssen. 
   
-Wenn der Anbieter keine abschließende Bereinigung aufweist, kann die Implementierung einer einzelnen Codezeile bestehen: 
+Wenn Ihr Anbieter keine abschließende Bereinigung aufweist, kann die Implementierung aus einer einzigen Codezeile bestehen: 
   
 ```cpp
 return S_OK;

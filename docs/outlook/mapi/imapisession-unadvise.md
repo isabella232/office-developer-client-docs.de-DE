@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 5e608cb0-808d-4418-8521-71dcbce8cdff
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 98a5faca00f5877eb10110406875b46a69244d94
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335702"
 ---
 # <a name="imapisessionunadvise"></a>IMAPISession::Unadvise
 
@@ -25,7 +25,7 @@ ms.locfileid: "25397891"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht ab, das Senden von Benachrichtigungen, die zuvor mit einem Aufruf der Methode [IMAPISession::Advise](imapisession-advise.md) eingerichtet. 
+Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMAPISession:: Advise](imapisession-advise.md) -Methode eingerichtet wurden. 
   
 ```cpp
 HRESULT Unadvise(
@@ -37,7 +37,7 @@ HRESULT Unadvise(
 
  _ulConnection_
   
-> [in] Eine Verbindung Zahl mit einer aktiven benachrichtigungsregistrierung verknüpft ist. Der Wert der _UlConnection_ muss durch einen vorherigen Aufruf von **IMAPISession::Advise**zurückgegeben wurde, haben.
+> in Eine Verbindungsnummer, die einer aktiven Benachrichtigungs Registrierung zugeordnet ist. Der Wert von _ulConnection_ muss von einem vorherigen Aufruf von **IMAPISession:: Advise**zurückgegeben worden sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,11 +45,11 @@ S_OK
   
 > Die Registrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **IMAPISession::Unadvise** -Methode hebt die Registrierung ein für die Benachrichtigung. **Unadvise** -Versionen der Zeiger auf des Anrufers advise-Empfänger, die sie in der **Advise** -Aufruf für die Registrierung verwendet erhalten. 
+Die **IMAPISession:: Unadvise** -Methode bricht eine Registrierung für die Benachrichtigung ab. **Unadvise** gibt den Zeiger auf die Advise-Senke des Anrufers frei, die er im für die Registrierung verwendeten **Advise** -Aufruf erhalten hat. 
   
-Im Allgemeinen ruft **Unadvise** Advise-Empfänger [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode während des Anrufs **Unadvise** . Wenn ein anderer Thread wird gerade Advise-Empfänger [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode aufrufen, wird jedoch **Release** -Aufruf verzögert, bis die **OnNotify** -Methode zurückgibt. 
+Im allgemeinen **** ruft Unadvise während des Unadvise-Aufrufs die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode der Advise-Senke auf. **** Wenn jedoch ein anderer Thread gerade die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode der Advise-Senke aufruft, wird der **Freigabe** Aufruf verzögert, bis **** die OnNotify-Methode zurückgegeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,5 +59,5 @@ Im Allgemeinen ruft **Unadvise** Advise-Empfänger [IUnknown](https://msdn.micro
   
 [IMAPISession::Advise](imapisession-advise.md)
   
-[IMAPISession: IUnknown](imapisessioniunknown.md)
+[IMAPISession : IUnknown](imapisessioniunknown.md)
 

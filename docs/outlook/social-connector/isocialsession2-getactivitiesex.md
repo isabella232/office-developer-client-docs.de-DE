@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bfe30c22-017b-42e0-93be-c85d674c07e3
-description: Ruft eine Zeichenfolge, die eine Auflistung von Aktivitäten aller vom HashedAddresses-Parameter angegebenen Benutzer darstellt.
-ms.openlocfilehash: 7c24494d924b63f5e137f8e9928257967469f19c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Ruft eine Zeichenfolge, die eine Auflistung von Aktivitäten der einzelnen durch den hashedAddresses-Parameter angegebenen Benutzer darstellt.
+ms.openlocfilehash: be29d0226eb137b1ad8ed025acfe3f4958efa85f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336449"
 ---
 # <a name="isocialsession2getactivitiesex"></a>ISocialSession2::GetActivitiesEx
 
-Ruft eine Zeichenfolge, die eine Auflistung von Aktivitäten aller vom _HashedAddresses_ -Parameter angegebenen Benutzer darstellt. 
+Ruft eine Zeichenfolge, die eine Auflistung von Aktivitäten der einzelnen durch den _hashedAddresses_ -Parameter angegebenen Benutzer darstellt. 
   
 ```cpp
 HRESULT _stdcall GetActivitiesEx([in] SAFEARRAY(BSTR) hashedAddresses, [in] DATE startTime, [out, retval] BSTR *activities);
@@ -27,32 +27,32 @@ HRESULT _stdcall GetActivitiesEx([in] SAFEARRAY(BSTR) hashedAddresses, [in] DATE
 
 _hashedAddresses_
   
-> [in] Eine Struktur, die gibt ein Array von Hash SMTP-Adressen für eine Gruppe von Benutzern.
+> in Eine Struktur, die ein Array von Hash-SMTP-Adressen für eine Gruppe von Benutzern angibt.
     
 _startTime_
   
-> [in] Der Zeitpunkt, nach dem erstellten Aktivitäten zurückgegeben werden.
+> in Die Zeit, nach der die erstellten Aktivitäten zurückgegeben werden.
     
-_activities_
+_Aktivitäten_
   
-> [out] Eine XML-Zeichenfolge, die den Satz von Aktivitäten durch _HashedAddresses_ im sozialen Netzwerk seit _StartTime_angegebenen Benutzer darstellt.
+> Out Eine XML-Zeichenfolge, die den Satz von Aktivitäten der Benutzer darstellt, die von _hashedAddresses_ im sozialen Netzwerk seit _Startzeit_angegeben sind.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Die OSC **GetActivitiesEx** aufgerufen, wenn der OSC-Anbieter bedarfsgesteuerten Synchronisierung von Aktivitäten unterstützt. Die OSC speichert die Informationen, die in _Aktivitäten_ im Speicher zurückgegeben. Weitere Informationen darüber, wie die OSC verwendet und diese Informationen im Speicher aktualisiert finden Sie unter [Synchronisieren Freunde und Aktivitäten](synchronizing-friends-and-activities.md).
+OSC ruft **GetActivitiesEx** auf, wenn der osc-Anbieter die bedarfsgesteuerte Synchronisierung von Aktivitäten unterstützt. OSC speichert die Informationen, die in _Aktivitäten_ im Arbeitsspeicher zurückgegeben werden. Weitere Informationen dazu, wie der OSC diese Informationen im Arbeitsspeicher verwendet und aktualisiert, finden Sie unter [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md).
   
-Outlook Social Connector 2013 ab, der OSC unterstützt nur bedarfsgesteuerten Synchronisierung von Aktivitäten und ruft nur **GetActivitiesEx** um Aktivitäten zu erhalten. Legen Sie zur Unterstützung der Aktivitäten auf Abruf Lookup **CacheActivities** , wie **"false"**, und **GetActivities** und **DynamicActivitiesLookupEx** als **true**und die OSC **GetActivitiesEx**aufgerufen werden.
+Beginnend mit Outlook Social Connector 2013 unterstützt OSC nur die bedarfsgesteuerte Synchronisierung von Aktivitäten und ruft nur **GetActivitiesEx** zum Abrufen von Aktivitäten auf. Zur Unterstützung der Suche nach Anforderungs Aktivitäten legen Sie **cacheActivities** als **false**, und GetActivities und **dynamicActivitiesLookupEx** als **true**fest, und der osc ruft **GetActivitiesEx**auf. ****
   
-Die zurückgegebene XML-Zeichenfolge muss die Schemadefinition für **ActivityFeed**, gemäß Definition im Schema für die Erweiterbarkeit des OSC-Providers entsprechen.
+Die zurückgegebene XML-Zeichenfolge muss der Schema Definition für **activityFeed**entsprechen, wie im Schema für osc-Anbieter Erweiterbarkeit definiert.
   
-Die Zeichenfolge _HashedAddresses_ stellt einen Satz von Hash Adressen für jeden Benutzer im Bereich Personen angezeigt. Hash SMTP-Adressen werden mithilfe der vom **HashFunction** -Element in der Anbieter **Funktionen** XML angegebenen Hashfunktion verschlüsselt. Der Benutzer hat keinen Friend der angemeldete Benutzer von der [ISocialSession::LoggedOnUserName](isocialsession-loggedonusername.md) -Eigenschaft dargestellt werden. 
+Der _hashedAddresses_ -Sring stellt einen Satz von Hash Adressen für jeden Benutzer dar, der im Personen Bereich angezeigt wird. Die Hash-SMTP-Adressen werden mithilfe der Hashfunktion verschlüsselt, die durch das **hashFunction** -Element in den XML- **Funktionen** des Anbieters angegeben wird. Der Benutzer muss kein Freund des angemeldeten Benutzers sein, der durch die [ISocialSession:: LoggedOnUserName](isocialsession-loggedonusername.md) -Eigenschaft dargestellt wird. 
   
-Der Parameter _StartTime_ ist **ein Datumswert in koordinierter Weltzeit (UTC)** . Ortszeit Werte müssen in UTC **Datum** konvertiert werden soll. 
+Der __ StartTime-Parameter ist ein **Datums** Wert in koordinierter Weltzeit (UTC). Lokale Zeitwerte müssen in UTC- **Datums** Werte konvertiert werden. 
   
-Aktivitäten, die die **GetActivitiesEx** -Methode gibt benötigen einen Erstellung Time-Wert, der _Werte von StartTime_ größer ist kleiner oder gleich **jetzt**. Wenn keine Änderungen zwischen **StartTime** und **jetzt**aufgetreten sind, muss der Anbieter einen OSC_E_NO_CHANGES Fehler zurück.
+Aktivitäten, die von der **GetActivitiesEx** -Methode zurückgegeben werden, müssen einen Wert für __ die Erstellungszeit haben, der größer als StartTime und kleiner als oder gleich **Now**ist. Wenn zwischen **Startzeit** und **Now**keine Änderungen aufgetreten sind, muss der Anbieter einen OSC_E_NO_CHANGES-Fehler zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 
 - [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
-- [Synchronisieren von Freunde und Aktivitäten](synchronizing-friends-and-activities.md)
+- [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md)
 

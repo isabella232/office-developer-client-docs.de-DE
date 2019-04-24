@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 1c4c4ae2-b3fa-ed45-c6e5-22bedb2523db
 description: Legt fest, ob ein Steuerpunkt an andere Shapes geklebt werden kann.
-ms.openlocfilehash: c7b6764e25deab3345b7b3cecd6cf12dde74a84c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2f5e65ab72c584f88b56e273b0d73abf969a6588
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337254"
 ---
-# <a name="can-glue-cell-controls-section"></a>Can Glue Cell (Controls Section)
+# <a name="can-glue-cell-controls-section"></a>Zelle "Can Glue" (Abschnitt "Controls")
 
 Legt fest, ob ein Steuerpunkt an andere Shapes geklebt werden kann.
   
@@ -25,20 +25,20 @@ Legt fest, ob ein Steuerpunkt an andere Shapes geklebt werden kann.
 | TRUE  <br/> | Steuerpunkt kann geklebt werden.  <br/> |
 | FALSE  <br/> | Steuerpunkt kann nicht geklebt werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Can Glue aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Bezug auf die Zelle can Glue aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Steuerelemente.  *Name* . CanGluewhere-Steuerelemente.  *Name* ist der Name der Zeile mit Steuerelementen.  <br/> |
+| Zellenname:  <br/> | Steuerelemente.  *Name* . CanGluewhere-Steuerelemente.  *Name* ist der Name der Zeile Controls.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Can Glue aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle can Glue aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**Konstanten visSectionControls** <br/> |
-| Zeilenindex:  <br/> |**VisRowControl** +  *i* wobei *i* = 0, 1, 2,...  <br/> |
+| Zeilenindex:  <br/> |**visRowControl** +  *i* , wobei *i* = 0, 1, 2,...  <br/> |
 | Zellenindex:  <br/> |**visCtlGlue** <br/> |
    
 

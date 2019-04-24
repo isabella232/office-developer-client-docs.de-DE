@@ -8,25 +8,25 @@ api_type:
 - COM
 ms.assetid: a791b95f-56ad-493a-9ba5-fb4c7dd80e89
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2c4577a35315c9df0055e97de26dd0baf1a2b489
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2d3fbf8f7a725f121579066001715fb0bc6beba0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336932"
 ---
 # <a name="deferring-processing"></a>Zurückstellen der Verarbeitung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Übergeben Sie das MAPI_DEFERRED_ERRORS-Flag für die Methode anrufen so weit wie möglich. Viele der MAPI-Methodenaufrufe wurden optimiert Annahme dieses Flag, verursacht des Anbieters, das die angeforderte Aufgabe entweder zu verschieben, bis mehrere Aufgaben gleichzeitig ausgeführt werden können oder nicht mehr für die Ergebnisse warten können.
+Führen Sie das MAPI_DEFERRED_ERRORS-Flag so weit wie möglich an Methodenaufrufe weiter. Viele der MAPI-Methodenaufrufe wurden so optimiert, dass diese Kennzeichnung akzeptiert wird, sodass der Anbieter die angeforderte Aufgabe entweder verschiebt, bis mehrere Aufgaben gleichzeitig ausgeführt werden können, oder Sie können nicht mehr auf die Ergebnisse warten.
   
-Angenommen, wenn Sie [IMsgStore::OpenEntry](imsgstore-openentry.md) , einen Ordner öffnen MAPI_DEFERRED_ERRORS übergeben, kann das Öffnen des Ordners und einen möglichen Remoteaufruf verschoben werden, bis Sie einen weiteren Anruf wie einen Anruf an des Ordners **GetHierarchyTable** oder **vornehmen GetProps** Methoden. **GetHierarchyTable** und **GetProps** erfordern die Rückgabe von Daten vom Dienstanbieter, eine Aufgabe, die sofort ausgeführt werden muss. 
+Wenn Sie beispielsweise MAPI_DEFERRED_ERRORS an [IMsgStore:: OpenEntry](imsgstore-openentry.md) weitergeben, um einen Ordner zu öffnen, kann das Öffnen des Ordners und ein möglicher Remoteaufruf verschoben werden, bis Sie einen weiteren Aufruf ausführen, beispielsweise einen Aufruf an **** die GetHierarchy-Datei des Ordners oder ** **GetProps-Methoden. Sowohl **** gethierarchyable als auch GetProps erfordern die Rückgabe von Daten vom Dienstanbieter, eine Aufgabe, die sofort ausgeführt werden muss. **** 
   
-Eine andere Möglichkeit, Verarbeitung zurückstellen ist einfach nicht um einen Anruf zu tätigen. Bewusst des Benutzers und der Benutzer eine Belastung Ressourcen oder Verarbeitungszeit erkennen kann, können Sie ermitteln, wenn es sinnvoll, Anrufe tätigen. Möglichkeit zur Verbesserung der Leistung durch Aufrufe entweder jeweils Wenn der Benutzer nicht bemerken oder durch nicht in allen besteht.
+Eine andere Möglichkeit, die Verarbeitung zu verzögern, besteht darin, keinen Anruf zu tätigen. Wenn Sie den Benutzer erkennen und wenn der Benutzer die Ressourcen oder die Verarbeitungszeit ausleeren kann, können Sie bestimmen, wann es sinnvoll ist, Anrufe zu tätigen. Es besteht die Möglichkeit, die Leistung zu verbessern, indem Sie Anrufe entweder zu einem Zeitpunkt durchführen, zu dem der Benutzer Sie nicht bemerkt oder überhaupt nicht vornimmt.
   
-Betrachten Sie beispielsweise die Situation, wenn Sie mehr als eine Benachrichtigung pro Sekunde von einem Nachrichtenspeicher erhalten, die eine große Anzahl von Nachrichten verschoben wird. Eine Statusanzeige wird angezeigt, um den Prozentsatz der Abschluss des Vorgangs angeben. Benutzer werden in der Regel nicht schätzen diesen Vorgang, um langsame werden erst nach einige Sekunden vergangen sind. Aus diesem Grund, wenn Sie die Statusanzeige aktualisieren, führen Sie nehmen Sie keine Änderungen erst nach dem Initiieren des Verschiebevorgangs mindestens vier Sekunden. Dadurch wird im Allgemeinen Zeit sparen, wenn der Vorgang fast ist und Benutzer in kurzer Zeit zu informieren, wenn der Vorgang langsam ist.
+Betrachten Sie beispielsweise die Situation, wenn Sie mehr als eine Benachrichtigung pro Sekunde aus einem Nachrichtenspeicher erhalten, der eine große Anzahl von Nachrichten verschiebt. Eine Statusanzeige wird angezeigt, um den Prozentsatz der Fertigstellung des Vorgangs anzugeben. Dieser Vorgang wird in der Regel erst nach einigen Sekunden verlangsamt. Wenn Sie also die Statusanzeige aktualisieren, nehmen Sie keine Änderungen vor, bevor Sie mindestens vier Sekunden nach dem Initiieren des Verschiebevorgangs beginnen. Dies spart Zeit in den häufig verwendeten Fällen, wenn der Vorgang schnell ausgeführt wird und die Benutzerrecht zeitig informiert werden, wenn der Vorgang langsam ist.
   
 

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03e53e08-9113-4101-84c9-ccf6d43127f6
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cf84c7d94e67da0ce7453829042e7be0d4e313f1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: e47f4e0d1ab9ab3ecfd53932b8ef26440134c603
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334818"
 ---
 # <a name="flatentry"></a>FLATENTRY
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Struktur [ENTRYID](entryid.md) plus eine Byteanzahl angegeben, die die Größe der Struktur **ENTRYID** angibt. 
+Eine [Eintrags](entryid.md) -Struktur plus eine Byte-Anzahl, die die Größe **** der Eintrags-Struktur angibt. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Makros:  <br/> |[CbFLATENTRY](cbflatentry.md), [CbNewFLATENTRY](cbnewflatentry.md) <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Verwandte Makros:  <br/> |[cbFLATENTRY](cbflatentry.md), [CbNewFLATENTRY](cbnewflatentry.md) <br/> |
    
 ```cpp
 typedef struct
@@ -45,23 +45,23 @@ typedef struct
 
  **cb**
   
-> Anzahl der Bytes im **AbEntry** -Member. 
+> Die Anzahl der Bytes im **abEntry** -Element. 
     
  **abEntry**
   
-> Die vollständige Eintrag-Bezeichner, der das Array von Flags und binäre Daten enthält.
+> Die vollständige Eintrags-ID, die das Array von Flags und Binärdaten enthält.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **FLATENTRY** ähnelt eine [ENTRYID](entryid.md) -Struktur. Es gibt jedoch einige Unterschiede: 
+Eine **FLATENTRY** -Struktur ähnelt einer [Eintrags](entryid.md) -Struktur. Es gibt jedoch einige Unterschiede: 
   
-- Eine Struktur **FLATENTRY** speichert die Größe des Eintrags-ID an. **ENTRYID** hingegen nicht. 
+- Eine **FLATENTRY** -Struktur speichert die Größe des Eintrags Bezeichners; **** Die Eintrags-Nr. 
     
-- Eine Struktur **FLATENTRY** speichert die Kennzeichnungsdaten zusammen mit den restlichen die Eintrags-ID; **ENTRYID** separat gespeichert. 
+- Eine **FLATENTRY** -Struktur speichert die kennzeichendaten zusammen mit dem Rest der Eintrags-ID. **** Sie wird separat gespeichert. 
     
-- Eine Struktur **FLATENTRY** wird verwendet, um eine Eintrags-ID in einer Datei speichern oder in einem Stream von Bytes übergeben, während eine **ENTRYID** -Struktur, durch die [IMAPIProp](imapipropiunknown.md) -Schnittstellenmethoden und durch die folgenden Methoden **OpenEntry verwendet wird** : [IABLogon: : OpenEntry](iablogon-openentry.md), [IAddrBook::OpenEntry](iaddrbook-openentry.md), [IMAPIContainer::OpenEntry](imapicontainer-openentry.md), [IMAPISession::OpenEntry](imapisession-openentry.md), [IMAPISupport::OpenEntry](imapisupport-openentry.md), [IMsgStore::OpenEntry](imsgstore-openentry.md), [IMSLogon::OpenEntry](imslogon-openentry.md)
+- Eine **FLATENTRY** -Struktur wird verwendet, um eine Eintrags-ID in einer Datei zu speichern oder in einem Stream von **** Bytes zu übertragen, während eine Eintragsstruktur von den [IMAPIProp](imapipropiunknown.md) -schnittstellenMethoden und von den folgenden OpenEntry-Methoden verwendet wird: **** [IABLogon: :](iablogon-openentry.md)OpenEntry, [IAddrBook::](iaddrbook-openentry.md)OpenEntry, [IMAPIContainer::](imapicontainer-openentry.md)OpenEntry, [IMAPISession::](imapisession-openentry.md)OpenEntry, [IMAPISupport::](imapisupport-openentry.md)OpenEntry, [IMsgStore::](imsgstore-openentry.md)OpenEntry, [IMSLogon:](imslogon-openentry.md) : OpenEntry
     
-- Eine Struktur **FLATENTRY** wird verwendet, um eine Eintrags-ID in einer Datei speichern, oder geben Sie ihn in einen Datenstrom von Bytes. Eine **ENTRYID** -Struktur wird verwendet, um die Eintrags-ID auf dem Datenträger speichern. 
+- Eine **FLATENTRY** -Struktur wird verwendet, um eine Eintrags-ID in einer Datei zu speichern oder in einem Stream von Bytes zu übertragen. Eine **Eintrags** Struktur wird verwendet, um eine Eintrags-ID auf dem Datenträger zu speichern. 
     
 ## <a name="see-also"></a>Siehe auch
 

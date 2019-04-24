@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: acbfd3ae-bfdc-4103-bed2-6bcf7b9c448c
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4af052cdbd354d321a1d9e1dd0feb004501c8eb0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b65113e59b236b1f13596627a8669ae458f76369
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338430"
 ---
-# <a name="sending-messages-message-store-provider-tasks"></a>Senden von Nachrichten: Nachrichtenspeicher Anbieter Aufgaben
+# <a name="sending-messages-message-store-provider-tasks"></a>Senden von Nachrichten: Aufgaben des Nachrichtenspeicher Anbieters
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 A message store provider gets involved with the message sending process when a client calls the message's [IMessage::SubmitMessage](imessage-submitmessage.md) method. If multiple messages are to be sent, the message store must send them in the same order that the client used for its **SubmitMessage** calls. 
   
@@ -25,11 +25,11 @@ Der Nachricht Informationsdienst bestimmt, ob er die MAPI-Warteschlange umfassen
   
 Das folgende Verfahren beschreibt die von einem Nachrichtenanbieter zum Senden einer Nachricht erforderlichen Aufgaben. 
   
-**In der IMessage::SubmitMessage die Nachricht Speicheranbieter**:
+**In IMessage:: SubmitMessage der Nachrichtenspeicher Anbieter**:
   
-1. [IMAPISupport::PrepareSubmit](imapisupport-preparesubmit.md) aufgerufen, wenn die Nachricht das MSGFLAG_RESEND-Flag, das in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft festgelegt wurde und Fehlermeldungen an den Client zurück. **PrepareSubmit** überprüft die **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))-Eigenschaft der einzelnen Empfänger in der Liste der Empfänger der Nachricht.
+1. Ruft [IMAPISupport::P reparesubmit](imapisupport-preparesubmit.md) , wenn die Nachricht das MSGFLAG_RESEND-Flag in seiner **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft festgelegt und Fehler an den Client zurückgibt. **PrepareSubmit** überprüft die **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md))-Eigenschaft jedes Empfängers in der Empfängerliste der Nachricht.
     
-   - Wenn das Flag MAPI_SUBMITTED festgelegt ist, gibt an, dass der Empfänger die ursprüngliche Nachricht nicht erhalten haben, **PrepareSubmit** löscht das Flag und die **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))-Eigenschaft auf TRUE festgelegt. 
+   - Wenn das MAPI_SUBMITTED-Flag festgelegt ist, das angibt, dass der Empfänger die ursprüngliche Nachricht nicht empfangen hat, löscht **PrepareSubmit** das Flag und legt die **PR_RESPONSIBILITY** ([PIDTAGRESPONSIBILITY (](pidtagresponsibility-canonical-property.md))-Eigenschaft auf true fest. 
     
    - Wenn das Flag MAPI_SUBMITTED nicht festgelegt ist, der angibt, dass der Empf�nger der urspr�nglichen Nachricht erhalten hat, �ndert die Eigenschaft **PR_RECIPIENT_TYPE** in MAPI_P1 **PrepareSubmit** und die **PR_RESPONSIBILITY** -Eigenschaft auf TRUE festgelegt und etwaige Fehler generierte **PrepareSubmit** an den Client zur�ckgegeben. 
     
@@ -37,42 +37,42 @@ Das folgende Verfahren beschreibt die von einem Nachrichtenanbieter zum Senden e
     
 3. Stellt sicher, dass eine Spalte f�r **PR_RESPONSIBILITY** in der Tabelle Empf�nger und wird auf false fest, um anzugeben, dass kein Transport noch angenommenen Verantwortung f�r die �bermittlung der Nachricht wurde. 
     
-4. Legt das Datum und die Uhrzeit der Aufnahme in der Eigenschaft **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)).
+4. Legt das Datum und die Uhrzeit der Ursprung in der **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))-Eigenschaft.
     
 5. Calls [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md) to: 
     
    - Erweitern Sie alle pers�nlichen Verteilerlisten und benutzerdefinierte Empf�nger, und Ersetzen Sie alle ge�nderten Anzeigenamen durch ihren Originalnamen.
    - Entfernen von Duplikaten.
-   - Erforderliche vorverarbeitung suchen Sie, und wenn der vorverarbeitung erforderlich ist, legen Sie das Kennzeichen NEEDS_PREPROCESSING und der **PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md))-Eigenschaft, einer Eigenschaft, die für die MAPI reserviert. 
+   - Überprüfen Sie, ob eine erforderliche Vorverarbeitung erforderlich ist, und legen Sie das NEEDS_PREPROCESSING-Flag und die **PR_PREPROCESS** ([pidtagpreprocess (](pidtagpreprocess-canonical-property.md))-Eigenschaft, eine für MAPI reservierte Eigenschaft, fest, wenn die Vorverarbeitung erforderlich ist. 
    - Legen Sie das Flag NEEDS_SPOOLER, wenn der Nachrichtenspeicher eng mit einer Transport verkn�pft ist und nicht behandelt alle Empf�nger werden kann. 
     
 6. F�hrt die folgenden Aufgaben aus, wenn der Nachrichtenkennzeichnung NEEDS_PREPROCESSING festgelegt ist:
     
-   - Versetzt die Nachricht in der ausgehenden Warteschlange mit dem SUBMITFLAG_PREPROCESS Bit in der Eigenschaft **PR_SUBMIT_FLAGS** ([PidTagSubmitFlags](pidtagsubmitflags-canonical-property.md)) festgelegt.
+   - Platziert die Nachricht in der ausgehenden Warteschlange mit dem SUBMITFLAG_PREPROCESS-Bit, das in der **PR_SUBMIT_FLAGS** ([pidtagsubmitflags (](pidtagsubmitflags-canonical-property.md))-Eigenschaft festgelegt ist.
    - Benachrichtigt die MAPI-Warteschlange, die die Warteschlange ge�ndert wurde.
    - Gibt die Steuerung an den Client, und Nachrichtenfluss wird in die Warteschlange MAPI fortgesetzt. 
    - Die MAPI-Warteschlange f�hrt die folgenden Aufgaben:
-     - Sperrt die Nachricht durch Aufrufen von IMsgStore::SetLockState. 
-     - Führt die erforderlichen vorverarbeitung durch Aufrufen von alle vorverarbeitenden Funktionen in der Reihenfolge der Registrierung. Transportanbieter aufrufen IMAPISupport::RegisterPreprocessor vorverarbeitenden Funktionen registrieren. 
-     - Ruft IMessage::SubmitMessage auf der geöffneten Nachricht der Nachrichtenspeicher an, dass der vorverarbeitung abgeschlossen ist.
+     - Sperrt die Nachricht durch Aufrufen von IMsgStore:: SetLockState. 
+     - Führt die erforderliche Vorverarbeitung aus, indem alle Vorverarbeitungsfunktionen in der Reihenfolge der Registrierung aufgerufen werden. Transport Anbieter rufen IMAPISupport:: RegisterPreprocessor auf, um Vorverarbeitungsfunktionen zu registrieren. 
+     - Ruft IMessage:: SubmitMessage für die offene Nachricht auf, um dem Nachrichtenspeicher anzuzeigen, dass die Vorverarbeitung abgeschlossen ist.
 
 <br/>
 
-Die folgenden beiden Schritte auftreten im Clientprozess, wenn es wurde keine vorverarbeitung und wenn die MAPI-Warteschlange **SubmitMessage** aufruft, wenn es vorverarbeitung wurde. 
+Die folgenden beiden Schritte werden im Clientprozess ausgeführt, wenn keine Vorverarbeitung vorliegt, und wenn der MAPI-Spooler **SubmitMessage** aufruft, wenn eine Vorverarbeitung vorliegt. 
 
-**Die Nachricht Speicheranbieter**:
+**Nachrichtenspeicher Anbieter**:
 
 1. Performs the following tasks if the message store is tightly coupled to a transport and the NEEDS_SPOOLER flag was returned from [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md):
     
    - Verarbeitet Empf�nger, die es verarbeiten kann.
    - Legt die **PR_RESPONSIBILITY** -Eigenschaft auf TRUE fest, f�r alle Empf�nger, die sie behandelt. 
    - F�hrt die folgenden Aufgaben aus, wenn alle Empf�nger zu diesem eng gekoppelten Store und Transport bekannt sind:
-     - IMAPISupport::CompleteMsg aufgerufen, wenn die Nachricht vorverarbeitet wurde oder die Nachrichtenspeicher Anbieter möchte der MAPI-Warteschlange für die Durchführung Verarbeitung von Nachrichten, wird empfohlen, damit messaging, dass Haken aufgerufen werden können. Nachrichtenfluss wird die MAPI-Warteschlange fort, wie im folgenden Verfahren beschrieben.  
-     - Führt die folgenden Aufgaben aus, wenn die Nachricht nicht vorverarbeitet wurde oder der Nachricht Speicheranbieter nicht die MAPI-Warteschlange zum Abschließen der Verarbeitung von Nachrichten möchte:
-       - Kopien legen Sie die Nachricht in den Ordner, der durch die Eintrags-ID in der Eigenschaft PR_SENTMAIL_ENTRYID (PidTagSentMailEntryId), sofern bezeichnet wird.
-       - Löscht die Nachricht, wenn die PR_DELETE_AFTER_SUBMIT (PidTagDeleteAfterSubmit)-Eigenschaft auf TRUE festgelegt wurde.
-       - Entsperrt die Nachricht, wenn sie gesperrt ist.
-       - Gibt an den Client. Nachrichtenfluss ist abgeschlossen. 
+     - Ruft IMAPISupport:: CompleteMsg auf, wenn die Nachricht vorverarbeitet wurde oder der Nachrichtenspeicher Anbieter wünscht, dass der MAPI-Spooler die Nachrichtenverarbeitung durchführt, die empfohlen wird, damit Messaging-Hooks aufgerufen werden können. Der Nachrichtenfluss wird mit dem MAPI-Spooler fortgesetzt, wie im folgenden Verfahren beschrieben.  
+     - Führt die folgenden Aufgaben aus, wenn die Nachricht nicht vorverarbeitet wurde oder der Nachrichtenspeicher Anbieter nicht möchten, dass die Nachrichtenverarbeitung vom MAPI-Spooler abgeschlossen wird:
+       - Kopiert die Nachricht in den Ordner, der durch den Eintragsbezeichner in der PR_SENTMAIL_ENTRYID (Pidtagsentmailentryid ()-Eigenschaft identifiziert wird, falls festgelegt.
+       - Löscht die Nachricht, wenn die PR_DELETE_AFTER_SUBMIT (Pidtagdeleteaftersubmit ()-Eigenschaft auf TRUE festgelegt wurde.
+       - Hebt die Sperre der Nachricht auf, wenn Sie gesperrt ist.
+       - Gibt den Client zurück. Der Nachrichtenfluss ist abgeschlossen. 
    
 2. F�hrt die folgenden Aufgaben aus, wenn der Nachrichtenspeicher nicht eng um einen Transport verkn�pft, nicht alle Empf�nger mit dem Nachrichtenspeicher bezeichnet wurden oder das Flag NEEDS_SPOOLER festgelegt ist:
     

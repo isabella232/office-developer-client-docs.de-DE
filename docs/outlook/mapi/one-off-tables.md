@@ -7,44 +7,44 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0f2040b7-9b6c-4eae-aa68-29c4f7b8bd76
-description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: fc8d8d53dcbc091df98ba9e23533e4138660c8e2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Zuletzt geändert: 20 November, 2011'
+ms.openlocfilehash: 8719536efa9bffb1226f8fb665b912eb872227f1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336484"
 ---
 # <a name="one-off-tables"></a>Einmalige Tabellen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine einmalige Tabelle enthält Informationen zu den Vorlagen, die ein Adressbuchanbieter zum Erstellen des neuen Empfänger unterstützt. Einmalige Tabellen von adressbuchanbietern implementierte, einzelne Adresse Adressbuch Container, und von MAPI implementiert werden und beständige oder temporäre werden können. 
+Eine einmalige Tabelle enthält Informationen zu den Vorlagen, die ein Adressbuchanbieter zum Erstellen neuer Empfänger unterstützt. Einmalige Tabellen werden von Adressbuch Anbietern, einzelnen Adressbuch Containern und von MAPI implementiert und können dauerhaft oder temporär sein. 
   
 > [!NOTE]
-> Verwechseln Sie nicht die Vorlagen in einmaligen Tabellen mit Vorlage Bezeichnern; während ihre Zwecke ähnlich sind, sind ihre Codekonstrukte nichts gleichermaßen. Vorlagen werden verwendet, um die Empfänger eines bestimmten Typs erstellen, während die Vorlage-IDs verwendet werden, um die Daten des Empfängers ein, die mit einem Dienstanbieter Host mithilfe von Code zur Unterstützung von einem anderen Empfänger gehören, die zu einem fremden Anbieter gehören zu binden. 
+> Verwechseln Sie die Vorlagen nicht in einmaligen Tabellen mit Vorlagen Bezeichnern; während ihre Zwecke ähnlich sind, sind Ihre Code Konstrukte nichts gleich. Vorlagen werden zum Erstellen von Empfängern eines bestimmten Typs verwendet, während Vorlagenbezeichner verwendet werden, um die Daten eines Empfängers zu binden, die zu einem Hostanbieter gehören, mit Code zur Unterstützung eines anderen Empfängers, die zu einem fremden Anbieter gehören. 
   
-Erstellen von neuen Empfänger Clients:
+Clients erstellen neue Empfänger:
   
-- Die Empfängerliste von ausgehenden Nachrichten hinzu.
+- Zum Hinzufügen zur Empfängerliste einer ausgehenden Nachricht.
     
-- Um eine der Container im Adressbuch hinzuzufügen.
+- , Um einen der Container im Adressbuch hinzuzufügen.
     
-In beiden Szenarien wird ein Adressbuchanbieter gefragt, um einen einmaligen Tabelle zurückzugeben. Von adressbuchanbietern implementierte können entweder eine einzelne einmaligen Tabelle in sowohl Situationen verwendet werden oder eine eindeutige einmaligen Tabelle für jede Situation implementieren. 
+In beiden Szenarien wird ein Adressbuchanbieter aufgefordert, eine einmalige Tabelle zurückzugeben. Adressbuchanbieter können entweder eine einzelne einmalige Tabelle implementieren, die in beiden Situationen verwendet werden soll, oder eine einmalige Tabelle für jede Situation. 
   
-Wenn der Empfänger eine ausgehende Nachricht enthalten sind, ruft MAPI der Adressbuchanbieter [GetOneOffTable](iablogon-getoneofftable.md) -Methode zum Abrufen der einmaligen Tabelle. Die einmalige Tabelle enthält Vorlagen, die einen Benutzer zur Eingabe von Informationen, die bei der Erstellung eines Empfängers mit einer gültigen Adresse resultierendes aktivieren. MAPI-Register für Benachrichtigungen in dieser Tabelle, halten ihn öffnen, damit Änderungen an den Benutzer widergespiegelt werden können. MAPI-Freigaben für die Tabelle nur, wenn seine Subsystem oder Adresse Adressbuch Status des Objekts [IMAPIStatus::ValidateState](imapistatus-validatestate.md) -Methode aufgerufen wird. 
+Wenn der Empfänger mit einer ausgehenden Nachricht eingeschlossen wird, ruft MAPI die [IABLogon:: GetOneOffTable](iablogon-getoneofftable.md) -Methode des Adressbuch Anbieters auf, um die einmalige Tabelle abzurufen. Die einmalige Tabelle enthält Vorlagen, mit denen ein Benutzerinformationen eingeben kann, die zur Erstellung eines Empfängers mit einer gültigen Adresse führen. MAPI registriert Benachrichtigungen in dieser Tabelle, sodass Änderungen für den Benutzer wiedergegeben werden können. MAPI gibt die Tabelle nur dann frei, wenn die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode des Subsystems oder des Adressbuchs aufgerufen wird. 
   
-Wenn der Empfänger zu einem Container hinzugefügt werden, wird durch MAPI eines anderen Anrufs Aufrufen des Containers [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode zum Abrufen der Eigenschaft **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)). Der Satz mit Vorlagen in dieser einmaligen Tabelle enthaltenen stellt die Typen von Empfängern an, die dem Container hinzugefügt werden können. Beispielsweise verfügbar machen, e-Mail-Servern häufig ein Container für jedes Gateway, das installiert werden, damit für jeden Container enthält nur die Adressen speziell für das entsprechende Gateway.
+Wenn der Empfänger einem Container hinzugefügt wird, führt MAPI einen anderen Aufruf aus, der die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers zum Abrufen seiner **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft aufruft. Die in dieser einmaligen Tabelle enthaltenen Vorlagen stellen die Empfängertypen dar, die dem Container hinzugefügt werden können. E-Mail-Server setzen beispielsweise oft einen Container für jedes installierte Gateway aus, sodass jeder Container nur Adressen enthält, die für das entsprechende Gateway spezifisch sind.
   
-MAPI bietet einmalige Tabelle eine eigene Vorlagen sowie Vorlagen von jedem der adressbuchanbietern implementierte in der Sitzung enthält. MAPI bietet eine generische Vorlage, die verwendet werden kann, um einen neuen Empfänger für einen Adresstyp, vorausgesetzt, dass der Benutzer das Format weiß zu erstellen. Von adressbuchanbietern implementierte mithilfe dieser einmaligen Tabelle durch Aufrufen von [IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md). Jede Vorlage in die MAPI-einmaligen Tabellenergebnisse bei der Erstellung von Empfängern mit gültigen Empfängeradressen enthalten.
+MAPI bietet eine einmalige Tabelle, die eigene Vorlagen sowie Vorlagen von jedem Adressbuchanbieter in der Sitzung enthält. MAPI bietet eine generische Vorlage, die zum Erstellen eines neuen Empfängers für einen beliebigen Adresstyp verwendet werden kann, vorausgesetzt, der Benutzer weiß sein Format. Adressbuchanbieter verwenden diese einmalige Tabelle, indem Sie [IMAPISupport:: GetOneOffTable](imapisupport-getoneofftable.md)aufrufen. Jede der in der MAPI-einmaligen Tabelle enthaltenen Vorlagen resultiert in der Erstellung von Empfängern mit gültigen Empfängeradressen.
   
-Von adressbuchanbietern implementierte angeben in der Regel eine Vorlage für jede Adresstyp unterstützen. Unterstützung für Vorlagen ist nicht erforderlich, jedoch. Von adressbuchanbietern implementierte, die die Erstellung des neuen Adressen nicht zulassen zurückgeben MAPI_E_NO_SUPPORT, wenn MAPI-aufrufen, um einen einmaligen Tabelle anzufordern. Von adressbuchanbietern implementierte, die lässt das neue Adresse erstellen, aber keine Vorlagen bereit können **IMAPISupport::GetOneOffTable** , um die Vorlagen in der einmaligen MAPI-Tabelle aufgeführten verwenden aufrufen. 
+Adressbuchanbieter geben in der Regel eine Vorlage für jeden unterstützten Adresstyp an. Die Unterstützung von Vorlagen ist jedoch nicht erforderlich. Adressbuchanbieter, die das Erstellen neuer Adressen nicht zulassen, können MAPI_E_NO_SUPPORT zurückgeben, wenn MAPI-Aufrufe eine einmalige Tabelle anfordern. Adressbuchanbieter, die neue Adresserstellung zulassen, jedoch keine Vorlagen angeben, können **IMAPISupport:: GetOneOffTable** aufrufen, um die in der MAPI-einmaligen Tabelle aufgeführten Vorlagen zu verwenden. 
   
-Die folgenden Eigenschaften bilden die erforderliche Spalte in einmaligen Tabellen festzulegen:
+Die folgenden Eigenschaften bilden den erforderlichen Spaltensatz in einmaligen Tabellen:
   
-- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
     
-- **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md))
+- **PR_DEPTH** ([Pidtagdepth (](pidtagdepth-canonical-property.md))
     
 - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
@@ -52,19 +52,19 @@ Die folgenden Eigenschaften bilden die erforderliche Spalte in einmaligen Tabell
     
 - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
-- **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
+- **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))
     
-- **PR_SELECTABLE** ([PidTagSelectable](pidtagselectable-canonical-property.md))
+- **PR_SELECTABLE** ([Pidtagselectable (](pidtagselectable-canonical-property.md))
     
- **PR_ADDRTYPE** gibt den Typ der Adresse, die mit den neuen Empfänger mit der Vorlage erstellte verknüpft werden kann. 
+ **PR_ADDRTYPE** gibt den Adresstyp an, der dem neuen Empfänger zugeordnet werden kann, der mit der Vorlage erstellt wurde. 
   
- **PR_DISPLAY_NAME** und **PR_DISPLAY_TYPE** zuordnen Daten den neuen Empfänger. **PR_DISPLAY_NAME** enthält eine Zeichenfolge, die den neuen Empfänger identifiziert und **PR_DISPLAY_TYPE** enthält eine Konstante, die den Typ der Zeile mit der anzuzeigende Symbol identifiziert. Vorlagen für die messaging-Benutzer haben ihre **PR_DISPLAY_TYPE** Spalte auf DT_MAILUSER festgelegt. Vorlagen für Verteilerlisten haben ihre **PR_DISPLAY_TYPE** Spalte auf DT_DISTLIST festgelegt. 
+ **PR_DISPLAY_NAME** und **PR_DISPLAY_TYPE** ordnen Daten dem neuen Empfänger zu. **PR_DISPLAY_NAME** enthält eine Zeichenfolge, die den neuen Empfänger identifiziert, und **PR_DISPLAY_TYPE** enthält eine Konstante, die den Typ des Symbols angibt, das mit der Zeile angezeigt werden soll. Vorlagen für Messagingbenutzer haben Ihre **PR_DISPLAY_TYPE** -Spalte auf DT_MAILUSER festgelegt. Vorlagen für Verteilerlisten haben Ihre **PR_DISPLAY_TYPE** -Spalte auf DT_DISTLIST festgelegt. 
   
- **PR_ENTRYID** ist die Eintrags-ID der Vorlage, die zum Erstellen eines neuen Empfängers verwendet werden. Dieses Eintrags-ID kann in zukünftigen [IAddrBook::NewEntry](iaddrbook-newentry.md), [IAddrBook::OpenEntry](iaddrbook-openentry.md)und [IABContainer::CreateEntry](iabcontainer-createentry.md) aufrufen übergeben werden. Container legen Sie die Spalte **PR_ENTRYID** , der die Zeile für den Standard-messaging-Vorlage für Benutzer zu **PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md)) und der Spalte **PR_ENTRYID** ihre Zeile für die Standard-Verteilerliste Vorlage **PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)). 
+ **PR_ENTRYID** ist der Eintragsbezeichner der Vorlage, die zum Erstellen eines neuen Empfängers verwendet werden soll. Dieser Eintragsbezeichner kann an Future [IAddrBook::](iaddrbook-newentry.md)upentry, [IAddrBook:: OpenEntry](iaddrbook-openentry.md)und [IABContainer::](iabcontainer-createentry.md) CreateEntry-Aufrufe übergeben werden. Container legen Sie die **PR_ENTRYID** -Spalte ihrer Zeile für die standardmäßige Messaging-Benutzervorlage auf **PR_DEF_CREATE_MAILUSER** ([pidtagdefcreatemailuser (](pidtagdefcreatemailuser-canonical-property.md)) und die **PR_ENTRYID** -Spalte ihrer Zeile für die Standardverteilerliste fest. Vorlage zu **PR_DEF_CREATE_DL** ([pidtagdefcreatedl (](pidtagdefcreatedl-canonical-property.md)). 
   
- **PR_DEPTH** wird verwendet, um die hierarchische Anzeige der Einträge in einer Tabelle einmaligen unterstützen, indem, die Einzugsebene für die Vorlage angibt. Obwohl einmalige Tabellen entweder als flache Liste oder einer hierarchischen Anzeige angezeigt werden können, da letztere ist vorzuziehen und adressbuchanbietern implementierte sollte durch Festlegen der **PR_DEPTH** -Spalte für jede Zeile entsprechend unterstützen. **PR_DEPTH** ist nullbasiert. Zeilen mit einem Wert von 0 in der Spalte **PR_DEPTH** sind nicht eingezogen. Je höher der Wert der **PR_DEPTH**, wird die weitere Zeile eingerückt. Beispielsweise sind Zeilen mit **PR_DEPTH** auf 1 gesetzt eingerückter eine Registerkarte Zeilen **PR_DEPTH** auf 3 festgelegt eingerückter drei Registerkarten. 
+ **PR_DEPTH** wird verwendet, um die hierarchische Anzeige der Einträge in einer einmaligen Tabelle zu unterstützen, indem die Einzugsebene für die Vorlage angegeben wird. Obwohl einmalige Tabellen entweder als flache Liste oder als hierarchische Anzeige angezeigt werden können, ist Letztere vorzuziehen, und Adressbuchanbieter sollten Sie unterstützen, indem Sie die **PR_DEPTH** -Spalte für jede Zeile entsprechend festlegen. **PR_DEPTH** ist nullbasiert; Zeilen mit dem Wert 0 in Ihrer **PR_DEPTH** -Spalte werden nicht eingerückt. Je höher der Wert von **PR_DEPTH**ist, desto mehr wird die Zeile eingerückt. Beispielsweise sind Zeilen mit **PR_DEPTH** auf 1 eingerückt, während Zeilen mit **PR_DEPTH** auf 3 eingezogen werden. 
   
- **PR_SELECTABLE** wird verwendet, um anzugeben, ob eine Zeile in der Tabelle eine Vorlage darstellt, die ausgewählt und zum Erstellen eines neuen Empfängers verwendet werden können. Obwohl die meisten Zeilen in einer Tabelle einmaligen Vorlagen darstellen, können Anbieter ohne Vorlage Zeilen enthalten. Beispielsweise möchten ein Anbieter organisieren die einmalige Tabelle vom Typ Template, einschließlich einer Kategoriezeile, die in der Anzeige wird jedoch nicht für die Erstellung der Empfänger verwendet. 
+ **PR_SELECTABLE** wird verwendet, um anzugeben, ob eine Zeile in der Tabelle eine Vorlage darstellt, die ausgewählt und zum Erstellen eines neuen Empfängers verwendet werden kann. Obwohl die meisten Zeilen in einer einmaligen Tabelle Vorlagen darstellen, können Anbieter nicht Vorlagen Zeilen einbeziehen. Beispielsweise kann ein Anbieter die einmalige Tabelle nach Vorlagentyp organisieren, einschließlich einer Kategorie-Zeile, die in der Anzeige angezeigt wird, aber nicht für die Erstellung von Empfängern verwendet wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

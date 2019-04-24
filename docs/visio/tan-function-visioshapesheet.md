@@ -1,5 +1,5 @@
 ---
-title: TAN Function (VisioShapeSheet)
+title: TAN-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,34 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c820cb95-92e8-5d56-22d7-0a984acc6c59
 description: Gibt den Tangens eines Winkels zurück.
-ms.openlocfilehash: 508bc704c3256072a927143ea2f7f656357da0a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9ece28baa29f1fdc7d7d31938dc83d8f68f8982d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332347"
 ---
-# <a name="tan-function-visioshapesheet"></a>TAN Function (VisioShapeSheet)
+# <a name="tan-function-visioshapesheet"></a>TAN-Funktion (VisioShapeSheet)
 
 Gibt den Tangens eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-TAN (** *Winkel* **) 
+TAN (* * *Winkel* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen den Tangens abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen Tangente abgerufen werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die TAN-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in *Winkel* angeben. 
+Die TAN-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im *Winkel* an. 
   
 ## <a name="example"></a>Beispiel
 

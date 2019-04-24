@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e0b8dc9c-cc46-4d27-9497-7a55a0bfdff5
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e84dbc0976f5c438a7e0b5fd7cddcbf1c0659f40
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: a9654efc34280941cdbc727bce9912a0a39d0fb9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336841"
 ---
 # <a name="deinitmapiutil"></a>DeinitMapiUtil
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Hilfsfunktionen explizit aufgerufen werden, von der Funktion [ScInitMapiUtil](scinitmapiutil.md) oder implizit von der Funktion ["MAPIInitialize"](mapiinitialize.md) frei. 
+Gibt die von der [ScInitMapiUtil](scinitmapiutil.md) -Funktion oder implizit von der [MAPIInitialize](mapiinitialize.md) -Funktion aufgerufenen Dienstfunktionen frei. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
    
 ```cpp
 VOID DeinitMapiUtil( void );
@@ -41,14 +41,14 @@ VOID DeinitMapiUtil( void );
 
 Keine 
   
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Keine 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die **DeinitMapiUtil** -Funktion Freigabefunktionen mit [ScInitMapiUtil](scinitmapiutil.md) oder ["MAPIInitialize"](mapiinitialize.md)initialisiert. 
+Die **DeinitMapiUtil** -Funktionen werden mit [ScInitMapiUtil](scinitmapiutil.md) oder [MAPIInitialize](mapiinitialize.md)initialisiert. 
   
-Nach Abschluss der Verwendung der Funktionen von **ScInitMapiUtil** aufgerufen, muss **DeinitMapiUtil** explizit aufgerufen werden, um diese freigeben. Im Gegensatz dazu ruft [MAPIUninitialize](mapiuninitialize.md) implizit **DeinitMapiUtil**. 
+Wenn die Verwendung der von **ScInitMapiUtil** aufgerufenen Funktionen abgeschlossen ist, muss **DeinitMapiUtil** explizit aufgerufen werden, um Sie zu veröffentlichen. [MAPIUninitialize](mapiuninitialize.md) ruft hingegen implizit **DeinitMapiUtil**auf. 
   
 

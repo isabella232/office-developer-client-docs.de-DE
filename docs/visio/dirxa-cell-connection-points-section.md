@@ -8,32 +8,32 @@ f1_keywords:
 - Vis_DSS.chm82251721
 localization_priority: Normal
 ms.assetid: 00d87b92-0da7-37d6-e7b5-23f350db0a9b
-description: Legt die X-Komponente für den erforderlichen Ausrichtungsvektor eines passenden Verbindungspunkts. Die Zelle DirX / eine Zelle wird auch verwendet, um die Ausrichtung des verbundenen Abschnitts eines dynamischen Verbinders. Diese Zelle benötigt einen Gleitkommawert Codepunktwert.
-ms.openlocfilehash: 49feba7cefbccc4efcbd04e8940c1f801563539e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Bestimmt die x-Komponente für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Die Zelle DirX/A wird auch verwendet, um den angefügten Teil eines dynamischen Konnektors auszurichten. Diese Zelle akzeptiert einen Fließkommawert.
+ms.openlocfilehash: cb86ef1064537911ffd00a66f5c0b7942459f85e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332593"
 ---
-# <a name="dirx--a-cell-connection-points-section"></a>DirX / A Cell (Connection Points Section)
+# <a name="dirx--a-cell-connection-points-section"></a>Zelle "DirX / A" (Abschnitt "Connection Points")
 
-Legt die *X* -Komponente für den erforderlichen Ausrichtungsvektor eines passenden Verbindungspunkts. Die Zelle DirX / eine Zelle wird auch verwendet, um die Ausrichtung des verbundenen Abschnitts eines dynamischen Verbinders. Diese Zelle benötigt einen Gleitkommawert Codepunktwert. 
+Bestimmt die *x* -Komponente für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Die Zelle DirX/A wird auch verwendet, um den angefügten Teil eines dynamischen Konnektors auszurichten. Diese Zelle benötigt einen Fließkommawert. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle DirX / A aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle DirX/A aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Verbindungen.RichtX [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
+| Zellenname:  <br/> | Connections. DirX [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DirX / A aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle DirX/A aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionConnectionPts** <br/> |
-| Zeilenindex:  <br/> |**VisRowConnectionPts** +  *i* wobei *i* = 0, 1, 2  <br/> |
+| Zeilenindex:  <br/> |**visRowConnectionPts** +  *i* , wobei *i* = 0, 1, 2  <br/> |
 | Zellenindex:  <br/> |**visCnnctDirX** (nicht erweiterte Zeilen)           **visCnnctA** (erweiterte Zeilen)  <br/> |
    
 Informationen zu erweiterten und nicht erweiterten Zeilen finden Sie in der Zeile Connections Points.

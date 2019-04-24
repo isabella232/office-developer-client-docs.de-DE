@@ -7,42 +7,42 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9375b351-1c84-4728-bcdf-e3e7a44820ed
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 68ba23e6ab23ff7306cd1326b73512b1c9f2a0f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 00b3b30101ee1efb984cf45afb35b0b085d545ac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332802"
 ---
 # <a name="implementing-an-address-book-provider-entry-point-function"></a>Implementieren einer Adressbuchanbieter-Einstiegspunktfunktion
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn ein Client Application aufruft [MAPILogonEx](mapilogonex.md) Beginn eine Sitzung mit einem Profil, das Ihre Adressbuchanbieter enthält, lädt MAPI Ihres Anbieters und alle anderen Personen, die Teil des Profils sind. MAPI lernen im Profil anhand des Namens des Anbieters Entry Point-Funktion. Beachten Sie, dass diese Funktion nicht mit einer DLL-Einstiegspunktfunktion ist. finden Sie in der Dokumentation für **DllMain** in der Win32-Dokumentation. 
+Wenn eine Clientanwendung [MAPILogonEx](mapilogonex.md) aufruft, um eine Sitzung mit einem Profil zu beginnen, das Ihren Adressbuchanbieter enthält, lädt MAPI Ihren Anbieter und alle anderen Teil des Profils. MAPI lernt den Namen der Einstiegspunktfunktion Ihres Anbieters, indem er im Profil nachsieht. Beachten Sie, dass diese Funktion nicht mit einer DLL-Einstiegspunktfunktion identisch ist. Weitere Informationen finden Sie in der Dokumentation zu **DllMain** in der Win32-Dokumentation. 
   
-Es sind mehrere Einträge, von die einige in der Konfigurationsdatei mapisvc.inf vorhanden sein muss, die im Profilabschnitt von jedem Adressbuchanbieter enthalten sind. Die folgende Tabelle enthält diese Profil Abschnitt Einträge und unabhängig davon, ob Sie die Datei "mapisvc.inf" umfassen werden muss.
+Es gibt mehrere Einträge, von denen einige in der MAPISVC. inf-Konfigurationsdatei enthalten sein müssen, die im profile-Abschnitt jedes Adressbuch Anbieters aufgeführt sind. In der folgenden Tabelle sind diese Profil Abschnitts Einträge aufgeführt, und ob die Datei MAPISVC. inf Diese enthält.
   
-|**Profil Abschnitt Eintrag**|**MAPISVC.inf-Anforderung**|
+|**Profil Abschnitts Eintrag**|**MAPISVC. inf-Anforderung**|
 |:-----|:-----|
 |PR_DISPLAY_NAME = _Zeichenfolge_ <br/> |Optional  <br/> |
 |PR_PROVIDER_DISPLAY = _Zeichenfolge_ <br/> |Erforderlich  <br/> |
-|PR_PROVIDER_DLL_NAME = _DLL-Dateiname_ <br/> |Erforderlich  <br/> |
-|PR_RESOURCE_TYPE = _long_ <br/> |Erforderlich  <br/> |
+|PR_PROVIDER_DLL_NAME = _dll filename_ <br/> |Erforderlich  <br/> |
+|PR_RESOURCE_TYPE = _Long_ <br/> |Erforderlich  <br/> |
 |PR_RESOURCE_FLAGS = _Bitmaske_ <br/> |Optional  <br/> |
    
-Ihre Adressbuchanbieter kann diese Informationen in einem Profil direkt durch Aufrufen der Benutzerprofildienst-Abschnitt [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode oder indirekt durch Ändern der MAPISVC.INF platzieren. Profile basieren, verwenden die entsprechende Informationen in MAPISVC. INF-Datei für den ausgewählten Dienstanbieter oder Message-Dienste. Weitere Informationen über die Organisation und den Inhalt der Datei MAPISVC. INF-Datei, finden Sie unter [File Format der MapiSvc.inf](file-format-of-mapisvc-inf.md).
+Ihr Adressbuchanbieter kann diese Informationen direkt in einem Profil platzieren, indem er die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des Profil Abschnitts oder indirekt durch Ändern von MAPISVC. inf aufruft. Profile werden mithilfe der relevanten Informationen in MAPISVC erstellt. INF für die ausgewählten Dienstanbieter oder Nachrichtendienste. Weitere Informationen zur Organisation und zu den Inhalten von MAPISVC. INF finden Sie unter [Datei Format von MapiSvc. inf](file-format-of-mapisvc-inf.md).
   
-Der Name des Ihrer Adressbuchanbieter DLL-Einstiegspunktfunktion muss [ABProviderInit](abproviderinit.md) und muss mit dem **ABProviderInit** Prototyp entsprechen. Führen Sie die folgenden Aufgaben in Ihren Anbieter DLL-Einstiegspunktfunktion: 
+Der Name der DLL-Einstiegspunktfunktion Ihres Adressbuch Anbieters muss [ABProviderInit](abproviderinit.md) sein und dem **ABProviderInit** -Prototyp entsprechen. Führen Sie die folgenden Aufgaben in der DLL-Einstiegspunktfunktion Ihres Anbieters aus: 
   
-- Überprüfen Sie die Version der der Dienstanbieter-Schnittstelle (SPI), um sicherzustellen, dass MAPI eine Version verwendet, die mit der Version kompatibel ist, die Ihre Adressbuchanbieter verwendet wird.
+- Überprüfen Sie die Version der Dienstanbieterschnittstelle (SPI), um sicherzustellen, dass MAPI eine Version verwendet, die mit der Version kompatibel ist, die ihr Adressbuchanbieter verwendet.
     
-- Instanziieren Sie ein Address Book Anbieter-Objekt.
+- Instanziieren eines Adressbuchanbieter Objekts.
     
-Rufen Sie **"MAPIInitialize"** oder **MAPIUninitialize** nicht in dieser Funktion. 
+Rufen Sie in dieser Funktion weder **MAPIInitialize** noch **MAPIUninitialize** auf. 
   
-Die DLL-Einstiegspunktfunktion instanziiert ein Anbieterobjekt und gibt einen Zeiger auf dieses Objekt MAPI zurück. 
+Die DLL-Einstiegspunktfunktion instanziiert ein Provider-Objekt und gibt einen Zeiger auf dieses Objekt an MAPI zurück. 
   
 

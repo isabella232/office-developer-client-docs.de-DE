@@ -1,5 +1,5 @@
 ---
-title: Dateiformat des Formulars Konfigurationsdateien
+title: Dateiformat von Formularkonfigurationsdateien
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,21 +8,21 @@ api_type:
 - COM
 ms.assetid: 86e4ebd9-6df2-4346-9ce9-580f80a83884
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 95add2ca747a267b825648f0de82e8c8a83d3eb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d07d88d7b8b892a82832f91989e322ea3b32e040
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334825"
 ---
-# <a name="file-format-of-form-configuration-files"></a>Dateiformat des Formulars Konfigurationsdateien
+# <a name="file-format-of-form-configuration-files"></a>Dateiformat von Formularkonfigurationsdateien
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Konfigurationsdatei Formular wird eine formatierte Datei, die Formularentwickler so definieren Sie ein Formular erstellt.
+Eine Formular Konfigurationsdatei ist eine formatierte Datei, die von Formularentwicklern erstellt wurde, um ein Formular zu definieren.
   
-Da Formulardateien Konfiguration von Formular-Manager zum Laden von Formularen verwendet werden, muss jedes Formular mit einer Konfigurationsdatei Formular definiert werden. Konfigurationsdateien Formular müssen die cfg Filename-Erweiterung aufweisen. Die Datei befolgt die allgemeine Syntax von einer Windows-Initialisierungsdatei (INI-Datei). 
+Da Formular Konfigurationsdateien von Formular Managern zum Laden von Formularen verwendet werden, muss jedes Formular mithilfe einer Formular Konfigurationsdatei definiert werden. Formular Konfigurationsdateien müssen die Dateinamenerweiterung cfg aufweisen. Die Datei folgt der allgemeinen Syntax einer Windows-Initialisierungsdatei (INI-Datei). 
 
-Es ist in benannte Abschnitte unterteilt, und jeder Abschnitt enthält eine Reihe von Einträge und Werte. Werte haben einen der folgenden Typen: Zeichenfolge, Zeichenfolge angezeigt, Plattformzeichenfolge, Pfad, Integer- oder globally unique Identifier, **GUID**. Formular Konfigurationsdateien können einen beliebigen Text-Editor oder Word-Prozessor, der die Textdateien speichern kann erstellt werden.
+Sie ist in benannte Abschnitte unterteilt, und jeder Abschnitt enthält eine Reihe von Einträgen und Werten. Werte haben einen der folgenden Typen: Zeichenfolge, angezeigte Zeichenfolge, Plattformzeichenfolge, Pfad, ganze Zahl oder global eindeutiger Bezeichner, **GUID**. Formular Konfigurationsdateien können mit einem beliebigen Text-Editor oder einem Textverarbeitungsprogramm erstellt werden, das Textdateien speichern kann.
   
 

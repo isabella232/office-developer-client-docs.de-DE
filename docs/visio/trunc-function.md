@@ -8,52 +8,52 @@ f1_keywords:
 - Vis_DSS.chm82251508
 localization_priority: Normal
 ms.assetid: 62f074ef-5bf8-df1e-d826-fc1027a36501
-description: Gibt eine Zahl auf die angegebene Anzahl von Ziffern gekürzt.
-ms.openlocfilehash: 8f6a9798391d308a234469d93bc8f481de5fc8da
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine Zahl zurück, die auf die angegebene Anzahl von Ziffern abgeschnitten wurde.
+ms.openlocfilehash: 5b2138ff3091f70313344d5b38d8225d572d8e70
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335175"
 ---
 # <a name="trunc-function"></a>TRUNC Function
 
-Gibt eine Zahl auf die angegebene Anzahl von Ziffern gekürzt.
+Gibt eine Zahl zurück, die auf die angegebene Anzahl von Ziffern abgeschnitten wurde.
   
 ## <a name="syntax"></a>Syntax
 
-TRUNC (** *Anzahl* **, ** *AnzahlVonStellen* **) 
+KÜRZEN (* * *Number* * *, * * *Wert von AnzahlVonStellen* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zu kürzende Zahl.  <br/> |
-| _AnzahlVonStellen_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Anzahl der Ziffern an die zu kürzende _Zahl_.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die zu kürzende Zahl.  <br/> |
+| _Wert von AnzahlVonStellen_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Anzahl der Ziffern, auf die die _Zahl_gekürzt werden soll.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric.
+Numerischen.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn _AnzahlVonStellen_ größer als 0 ist, wird _Zahl_ auf die rechts vom Dezimalkomma _AnzahlVonStellen_ gekürzt. Wenn _AnzahlVonStellen_ 0 ist, wird _Zahl_ auf eine ganze Zahl gekürzt. Wenn _AnzahlVonStellen_ kleiner als 0 ist, wird _Zahl_ auf die links vom Dezimalkomma _AnzahlVonStellen_ gekürzt. 
+Wenn _Wert von AnzahlVonStellen_ größer als 0 ist, wird die _Zahl_ auf _Wert von AnzahlVonStellen_ rechts vom Dezimaltrennzeichen abgeschnitten. Wenn _Wert von AnzahlVonStellen_ 0 ist, wird _Number_ auf eine ganze Zahl gekürzt. Wenn _Wert von AnzahlVonStellen_ kleiner als 0 ist, wird die _Zahl_ auf _Wert von AnzahlVonStellen_ Links vom Dezimaltrennzeichen abgeschnitten. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-TRUNC(123.654,2)
+KÜRZEN (123.654, 2)
   
 Gibt 123,65 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-TRUNC(123.654,0)
+KÜRZEN (123.654, 0)
   
 Gibt 123 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-TRUNC(123.654,-1)
+KÜRZEN (123.654,-1)
   
 Gibt 120 zurück.
   

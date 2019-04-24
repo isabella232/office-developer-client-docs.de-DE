@@ -1,25 +1,25 @@
 ---
-title: Bevel Properties Section
+title: Abschnitt "Fase Properties"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1e4bb1ca-1840-4053-86da-079e3a3313e8
-description: Zeigt die Attribute für alle abschrägungseffekte auf die Form angewendet.
-ms.openlocfilehash: ca6c6a7b8e001ab9971b53aea5d64856fb618abf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Zeigt die Attribute für alle abgeschrägten Effekte an, die auf das Shape angewendet werden.
+ms.openlocfilehash: c3affda74ecbeffa3b466a48274f65264018b930
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335637"
 ---
-# <a name="bevel-properties-section"></a>Bevel Properties Section
+# <a name="bevel-properties-section"></a>Abschnitt "Fase Properties"
 
-Zeigt die Attribute für alle abschrägungseffekte auf die Form angewendet. 
+Zeigt die Attribute für alle abgeschrägten Effekte an, die auf das Shape angewendet werden. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können eine Abschrägung mit einer Form im Bereich **Shape formatieren** anwenden (**Home** > **Formenarten** > **Abschrägung** > **3-d-Optionen**, oder durch die Zellen im Abschnitt **Eigenschaften Abschrägung** der Änderung der ShapeSheet. 
+Sie können eine Abschrägung auf ein Shape im Bereich **Shape formatieren** (**Start** > **Shape Styles** > **** > **3-D-Optionen**oder durch vornehmen von Änderungen an den Zellen im Abschnitt **abgeflachte Eigenschaften** des ShapeSheet. 
   
 

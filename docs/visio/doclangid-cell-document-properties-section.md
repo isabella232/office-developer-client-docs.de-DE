@@ -9,35 +9,35 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 38391818-21c9-9450-2ed1-11cc1d862310
 description: Gibt die Standardsprache für das Dokument an.
-ms.openlocfilehash: 20a806dc97e40bbcd7c0232d59c7122a650f156a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1a4f9f353821c0b336d0a9a53b8f42b4f4abb0e1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332704"
 ---
-# <a name="doclangid-cell-document-properties-section"></a>DocLangID Cell (Document Properties Section)
+# <a name="doclangid-cell-document-properties-section"></a>Zelle "DocLangID" (Abschnitt "Document Properties")
 
 Gibt die Standardsprache für das Dokument an.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die Sprache des Dokuments basiert auf der Sprache, die im Dialogfeld **Microsoft Office-Spracheinstellungen** definiert. (Klicken Sie auf **Start**, klicken Sie auf **Alle Programme**, klicken Sie auf **Microsoft Office**, klicken Sie auf **Microsoft Office Tools**, und klicken Sie dann auf **Microsoft Office-Spracheinstellungen**.)
+Die Dokumentsprache basiert auf der Sprache, die im Dialogfeld **Microsoft Office-Spracheinstellungen** definiert ist. (Klicken Sie auf **Start**, **Alle Programme**, **Microsoft Office**, Microsoft Office- **Tools**und dann auf **Microsoft Office-Spracheinstellungen**.)
   
-Wenn Sie die Sprache für ein Dokument ändern möchten, statt der direkten Bearbeitung dieser Zelle wird empfohlen, diesen Wert im Dialogfeld **Eigenschaften** ändern (klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Info**, klicken Sie auf **Eigenschaften**, und klicken Sie dann auf **Erweitert Eigenschaften**) oder programmgesteuert mithilfe der **Language** -Eigenschaft des **Document** -Objekts. 
+Wenn Sie die Sprache für ein Dokument ändern möchten, ist es am besten, diesen Wert im Dialogfeld **Eigenschaften** zu ändern (Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Informationen**, dann auf **Eigenschaften**und dann auf **erweitert. Eigenschaften**) oder programmgesteuert mithilfe der **Language** -Eigenschaft des **Document** -Objekts. 
   
-Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs.
+Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCIDs.
   
-|**Language**|**LCID**|
+|**Sprache**|**LCID**|
 |:-----|:-----|
 |Afrikaans  <br/> |1078  <br/> |
 |Albanisch  <br/> |1052  <br/> |
 |Amharisch  <br/> |1118  <br/> |
 |Arabisch  <br/> |1025  <br/> |
 |Armenisch  <br/> |1067  <br/> |
-|Assamesisch  <br/> |1101  <br/> |
+|Assamisch  <br/> |1101  <br/> |
 |Aserbaidschanisch (Kyrillisch)  <br/> |2092  <br/> |
-|Aserbaidschanisch (Lateinisch)  <br/> |1068  <br/> |
+|Aseri (Lateinisch)  <br/> |1068  <br/> |
 |Baskisch (Baskisch)  <br/> |1069  <br/> |
 |Belarussisch  <br/> |1059  <br/> |
 |Bengali  <br/> |1093  <br/> |
@@ -51,8 +51,8 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Dänisch  <br/> |1030  <br/> |
 |Dhivehi  <br/> |1125  <br/> |
 |Niederländisch  <br/> |1043  <br/> |
-|EDO  <br/> |1126  <br/> |
-|Englisch (Australien)  <br/> |3081  <br/> |
+|Edo  <br/> |1126  <br/> |
+|Englisch (Australier)  <br/> |3081  <br/> |
 |Englisch (Kanada)  <br/> |4105  <br/> |
 |Englisch (Großbritannien)  <br/> |2057  <br/> |
 |Englisch (USA)  <br/> |1033  <br/> |
@@ -62,9 +62,9 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Finnisch  <br/> |1035  <br/> |
 |Französisch  <br/> |1036  <br/> |
 |Französisch (Kanada)  <br/> |3084  <br/> |
-|Friesisch  <br/> |1122  <br/> |
+|Friesischen  <br/> |1122  <br/> |
 |Fulfulde  <br/> |1127  <br/> |
-|Galizisch  <br/> |1110  <br/> |
+|Galicisch  <br/> |1110  <br/> |
 |Georgisch  <br/> |1079  <br/> |
 |Deutsch  <br/> |1031  <br/> |
 |Deutsch (Österreich)  <br/> |3079  <br/> |
@@ -72,7 +72,7 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Griechisch  <br/> |1032  <br/> |
 |Gujarati  <br/> |1095  <br/> |
 |Haussa  <br/> |1128  <br/> |
-|Hawaiian  <br/> |1141  <br/> |
+|Hawaiisch  <br/> |1141  <br/> |
 |Hebräisch  <br/> |1037  <br/> |
 |Hindi  <br/> |1081  <br/> |
 |Ungarisch  <br/> |1038  <br/> |
@@ -94,19 +94,19 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Lateinisch  <br/> |1142  <br/> |
 |Lettisch  <br/> |1062  <br/> |
 |Litauisch  <br/> |1063  <br/> |
-|Mazedonisch (Republik Mazedonien)  <br/> |1071  <br/> |
+|Mazedonisch (F.Y.R.O. Mazedonien  <br/> |1071  <br/> |
 |Malaiisch  <br/> |1086  <br/> |
 |Malayalam  <br/> |1100  <br/> |
 |Maltesisch  <br/> |1082  <br/> |
 |Manipuri  <br/> |1112  <br/> |
 |Marathi  <br/> |1102  <br/> |
 |Mongolisch  <br/> |1104  <br/> |
-|Nepali  <br/> |1121  <br/> |
-|Norwegisch (Bokmål)  <br/> |1044  <br/> |
+|Nepalesisch  <br/> |1121  <br/> |
+|Norwegische Bokmal  <br/> |1044  <br/> |
 |Norwegisch (Nynorsk)  <br/> |2068  <br/> |
-|Odia  <br/> |1096  <br/> |
+|Norwegisch (Nynorsk)  <br/> |1096  <br/> |
 |Oromo  <br/> |1138  <br/> |
-|Paschto  <br/> |1123  <br/> |
+|Paschtu  <br/> |1123  <br/> |
 |Persisch  <br/> |1065  <br/> |
 |Polnisch  <br/> |1045  <br/> |
 |Portugiesisch (Brasilien)  <br/> |1046  <br/> |
@@ -118,7 +118,7 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Serbisch (Kyrillisch)  <br/> |3098  <br/> |
 |Serbisch (Lateinisch)  <br/> |2074  <br/> |
 |Sindhi  <br/> |1113  <br/> |
-|Singhalesisch  <br/> |1115  <br/> |
+|Singhalesen  <br/> |1115  <br/> |
 |Slowakisch  <br/> |1051  <br/> |
 |Slowenisch  <br/> |1060  <br/> |
 |Somali  <br/> |1143  <br/> |
@@ -128,7 +128,7 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Syrisch  <br/> |1114  <br/> |
 |Tadschikisch  <br/> |1064  <br/> |
 |Tamazight (Arabisch, Marokko)  <br/> |1119  <br/> |
-|Tamazight (Lateinisch)  <br/> |2143  <br/> |
+|Tamazight (lateinisch)  <br/> |2143  <br/> |
 |Tamil  <br/> |1097  <br/> |
 |Tatarisch  <br/> |1092  <br/> |
 |Telugu  <br/> |1098  <br/> |
@@ -136,7 +136,7 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Tigrigna (Äthiopien)  <br/> |1139  <br/> |
 |Tigrigna (Eritrea)  <br/> |2163  <br/> |
 |Türkisch  <br/> |1055  <br/> |
-|Turkmenisch  <br/> |1090  <br/> |
+|Turkmenischen  <br/> |1090  <br/> |
 |Ukrainisch  <br/> |1058  <br/> |
 |Urdu  <br/> |1056  <br/> |
 |Usbekisch (Kyrillisch)  <br/> |2115  <br/> |
@@ -146,13 +146,13 @@ Die folgende Tabelle enthält eine Liste der Sprachen und den zugehörigen LCIDs
 |Jiddisch  <br/> |1085  <br/> |
 |Yoruba  <br/> |1130  <br/> |
    
-Zum Abrufen eines Verweises auf die Zelle DocLangID nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle "DocLangID aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |DocLangID  <br/> |
+|Zellenname:  <br/> |"DocLangID  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DocLangID aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle "DocLangID aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

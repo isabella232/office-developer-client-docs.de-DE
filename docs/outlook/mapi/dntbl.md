@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 77835b48-43aa-8518-9712-754e84f1e713
 description: 'Letzte Änderung: 05. Juli 2012'
 ms.openlocfilehash: 4716a6f42968d7451a5db36173c4e6a9e843c08e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337002"
 ---
 # <a name="dntbl"></a>DNTBL
  

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: bf0a80c9-0fdb-e2cf-3ab0-74cb6338fdce
 description: Gibt an, ob das Aktionstag im Zeichnungsfenster angezeigt wird.
-ms.openlocfilehash: 409327365f3daf78dba20b1874be5911a517df0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 867d36e27cb890509b0687500caf719362a711fb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332564"
 ---
-# <a name="disabled-cell-action-tags-section"></a>Disabled Cell (Action Tags Section)
+# <a name="disabled-cell-action-tags-section"></a>Zelle "Disabled" (Abschnitt "Action Tags")
 
 Gibt an, ob das Aktionstag im Zeichnungsfenster angezeigt wird.
   
@@ -28,22 +28,22 @@ Gibt an, ob das Aktionstag im Zeichnungsfenster angezeigt wird.
 | TRUE  <br/> | Das Aktionstag ist deaktiviert.  <br/> |
 | FALSE  <br/> | Das Aktionstag ist aktiviert (Standardeinstellung).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Deaktivierte Aktionstags werden erst angezeigt, wenn sie wieder aktiviert werden. 
   
-Wenn Sie einen Verweis auf die Zelle Disabled aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle disabled aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | SmartTags.  *Name* . Wobei deaktiviert SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
+| Zellenname:  <br/> | Smarttags.  *Name* . Deaktiviert, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Disabled aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle disabled aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**VisRowSmartTag** +  *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagDisabled** <br/> |
    
 

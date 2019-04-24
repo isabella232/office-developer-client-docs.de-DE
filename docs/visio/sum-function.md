@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fc97cef7-59c3-5be1-34fe-a40b4b33d1d6
 description: Gibt die Summe einer Liste von Zahlen zurück.
-ms.openlocfilehash: a64de440868c055ed917b7646a7c1d81318e3eff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 749bf1620a26c6f4cf793a2f9e596d5720175be0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332495"
 ---
 # <a name="sum-function"></a>SUM Function
 
@@ -22,23 +22,23 @@ Gibt die Summe einer Liste von Zahlen zurück.
   
 ## <a name="syntax"></a>Syntax
 
-SUM (** *Zahl1* **, ** *Zahl2* **,..., ** *[NumberN]* **) 
+SUM (* * *number1* * *, * * *number2* * *,..., * * *[numbern]* * *) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zahl1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste Zahl.  <br/> |
-| _Zahl2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite Zahl.  <br/> |
-| _numberN_ <br/> |Optional  <br/> |**Numeric** <br/> |Die n-te Zahl.  <br/> |
+| _Zahl1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die erste Zahl.  <br/> |
+| _Zahl2_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die zweite Zahl.  <br/> |
+| _Nummerierung_ <br/> |Optional  <br/> |**Numerisch** <br/> |Die n-te Zahl.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
-Numeric
+Numerisch
   
 ## <a name="example"></a>Beispiel
 
-SUM(5,7,12)
+SUM (5, 7, 12)
   
 Gibt 24 zurück.
   

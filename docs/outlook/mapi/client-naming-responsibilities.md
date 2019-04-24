@@ -1,5 +1,5 @@
 ---
-title: Kundenaufgaben bei der Benennung
+title: Verantwortlichkeiten für die beNennung von Clients
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,21 +7,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: dbb6ba5f-18c8-426f-9f50-ce6f2fd1dc5b
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f47193bf8866622fa2e6d1f849d0568471c5461c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 808c7abf3d29872a8c5095fdc6dc39b2107a8993
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335140"
 ---
-# <a name="client-naming-responsibilities"></a>Kundenaufgaben bei der Benennung
+# <a name="client-naming-responsibilities"></a>Verantwortlichkeiten für die beNennung von Clients
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients müssen einer Namenskonvention für deren Eigenschaften folgen, die von einem Gateway übersetzt werden müssen. Alle Eigenschaften übersetzt werden sollte als benannten Eigenschaften in einer der fünf-Eigenschaft festgelegt, halten Sie sämtliche Eigenschaften erstellt werden:
+Clients müssen eine Benennungskonvention für ihre Eigenschaften befolgen, die von einem Gateway übersetzt werden müssen. Alle zu übersetzenden Eigenschaften sollten als benannte Eigenschaften in einem der fünf Eigenschaftssätze erstellt werden, die zuzuordnende-Eigenschaften enthalten:
   
 PS_ROUTING_EMAIL_ADDRESSES
   
@@ -33,25 +33,25 @@ PS_ROUTING_ENTRYID
   
 PS_ROUTING_SEARCH_KEY
   
-Reagieren auf Eigenschaften, die auf denselben Benutzer beziehen, muss den gleichen Namen angegeben werden. Gateways stützen sich auf diese Benennungskonvention, der eine Adresse mit der richtigen Adresstyp entsprechen kann. Für die Adresse zu analysieren, muss die Zuordnung zwischen Adresse und Adresstyp exakt sein.
+Die Adressierung von Eigenschaften, die sich auf denselben Benutzer beziehen, muss denselben Namen haben. Gateways basieren auf dieser Benennungskonvention, die es Ihnen ermöglicht, eine Adresse mit dem richtigen Adresstyp zu vergleichen. Für die Adressanalyse muss die Zuordnung zwischen Adresse und Adresstyp genau sein.
   
-Benannte Eigenschaften MAPI mit der **MAPINAMEID** -Datenstruktur, gibt an, dass der Name der Eigenschaft, eine Unicode-Zeichenfolge oder eine 32-Bit-Ganzzahl werden kann dargestellt. Weitere Informationen finden Sie unter [MAPINAMEID](mapinameid.md). Ganze Zahl naming wird für Gruppen von Adressen empfohlen, da es eine einfache Möglichkeit zur Unterscheidung zwischen Gruppen von sämtliche Eigenschaften ist, und sie auf einfache Weise als Index für den Benutzer dienen können. Die Alternative zur Verwendung von Ganzzahlen ist eine Zeichenfolge als Namen für alle fünf sämtliche Eigenschaften eines Benutzers zuweisen. Wenn nur ein Benutzer eine Zuordnung erforderlich ist, ist das Zuweisen einer Zeichenfolge zulässig. Wenn mehrere Benutzer vorhanden sind, ist es jedoch besser Ganzzahl naming verwenden. Der Namen sollten, ob es numerische oder Zeichenfolge basierenden sein gespeichert werden, in einer Nachricht-Klasse spezifische Eigenschaft oder in einer Eigenschaft gehört zu einer Eigenschaftensatz, der von der Clientanwendung definiert ist. 
+MAPI-benannte Eigenschaften werden mit der **MAPINAMEID** -Datenstruktur dargestellt, die angibt, dass es sich bei dem Eigenschaftennamen um eine Unicode-Zeichenfolge oder eine 32-Bit-Ganzzahl handeln kann. Weitere Informationen finden Sie unter [MAPINAMEID](mapinameid.md). Ganz Zahl Benennungen werden für Gruppen von Adressen empfohlen, da es sich um eine einfache Möglichkeit zur Unterscheidung zwischen zuzuordnende-Eigenschaften handelt, und Sie können dem Benutzer problemlos als Index dienen. Die Alternative zur Verwendung von ganzen Zahlen ist das Zuweisen einer Zeichenfolge als Namen für alle fünf zuzuordnende-Eigenschaften eines Benutzers. Wenn nur ein Benutzer eine Zuordnung erfordert, ist das Zuweisen einer Zeichenfolge zulässig. Wenn es jedoch mehrere Benutzer gibt, empfiehlt es sich, die ganz Zahl Benennung zu verwenden. Der Name, unabhängig davon, ob er numerisch oder Zeichenfolgen basiert ist, sollte entweder in einer Nachrichtenklassen spezifischen Eigenschaft oder in einer Eigenschaft gespeichert werden, die zu einem Eigenschaftensatz gehört, der von der Clientanwendung definiert wird. 
   
 > [!NOTE]
-> Vermeiden Sie Übersetzung Ganzzahl Namen, Zeichenfolgen, z. B. "route_recipient_1" und "route_recipient_2." Dabei ist nicht erforderlich. 
+> Vermeiden Sie die Übersetzung von ganzzahligen Namen in Zeichenfolgen wie "route_recipient_1" und "route_recipient_2". Dieser Aufwand ist nicht erforderlich. 
   
-Berücksichtigen Sie zur Veranschaulichung der Funktionsweise dieser Namenskonvention routing-Anwendung, die an jedes Mitglied eines Teams vier Person eine Nachricht sendet. Wenn ein Element die Nachricht empfängt, muss er darauf reagieren, bevor es zusammen mit der kompilierten Antworten auf das nächste Element gesendet werden kann. Die ursprüngliche Nachricht enthält eine Empfängerliste mit einem Eintrag: der erste Mitglied des Teams. Innerhalb der Nachricht eingebettet sind die Gateways sämtliche Eigenschaften für die anderen drei Teammitglieder. Jedes Mitglied hat fünf Kerneigenschaften für Benutzer, die in die Gateway sämtliche Eigenschaftensätze, die eine eindeutige Nummer als Namen einer zugewiesen sind. 
+Um zu veranschaulichen, wie diese Benennungskonvention funktioniert, sollten Sie eine Routing Anwendung erwägen, die eine Nachricht an jedes Mitglied eines vierköpfigen Teams sendet. Wenn ein Mitglied die Nachricht erhält, muss Sie darauf antworten, bevor es zusammen mit den kompilierten Antworten an das nächste Mitglied gesendet werden kann. Die ursprüngliche Nachricht enthält eine Empfängerliste mit einem Eintrag: das erste Mitglied des Teams. Eingebettet in die Nachricht sind die Gateway-zuzuordnende-Eigenschaften für die anderen drei Teammitglieder. Jedes Mitglied verfügt über fünf Hauptbenutzer Eigenschaften, die sich in den zuzuordnende-Eigenschaftssätzen befinden, denen eine eindeutige Nummer als Name zugewiesen wird. 
   
-Die folgende Tabelle veranschaulicht die Einstellungen für jede Gruppe von Gateway sämtliche Eigenschaften für die drei verbleibenden Teammitglieder, die die Nachricht weitergeleitet wird, wenn das erste Teammitglied er nicht mehr wird, gespeichert.
+In der folgenden Tabelle sind die Einstellungen für jede Gruppe von Gateway-zuzuordnende-Eigenschaften dargestellt, die für die drei verbleibenden Teammitglieder gespeichert sind, an die die Nachricht weitergeleitet wird, wenn das erste Teammitglied damit fertig ist.
   
-|**Property Set**|**Zweite Team <br/> Member**|**Drittes Team <br/> Member**|**Vierte Team <br/> Member**|
+|**Property Set**|**Zweites Team <br/> Mitglied**|**Drittes <br/> Team Mitglied**|**Viertes <br/> Team Mitglied**|
 |:-----|:-----|:-----|:-----|
 |PS_ROUTING_EMAIL_ADDRESSES  <br/> |Adresse = 0  <br/> |Adresse = 1  <br/> |Adresse = 2  <br/> |
 |PS_ROUTING_ADDRTYPE  <br/> |Adresstyp = 0  <br/> |Adresstyp = 1  <br/> |Adresstyp = 2  <br/> |
 |PS_ROUTING_DISPLAY_NAME  <br/> |Anzeigename = 0  <br/> |Anzeigename = 1  <br/> |Anzeigename = 2  <br/> |
 |PS_ROUTING_ENTRYID  <br/> |Eintrags-ID = 0  <br/> |Eintrags-ID = 1  <br/> |Eintrags-ID = 2  <br/> |
-|PS_ROUTING_SEARCH_KEY  <br/> |Suche Schlüssel = 0  <br/> |Suche Schlüssel = 1  <br/> |Suche Schlüssel = 2  <br/> |
+|PS_ROUTING_SEARCH_KEY  <br/> |Suchschlüssel = 0  <br/> |Suchschlüssel = 1  <br/> |Suchschlüssel = 2  <br/> |
    
-Clients, die als Verweise auf andere Nachrichteneigenschaften sämtliche Search-Schlüssel verwenden müssen erkennen, dass die anderen Nachrichteneigenschaften werden nicht übersetzt werden, es sei denn, sie in einem der folgenden sämtliche Eigenschaftensätze platziert werden. Wenn eine Nachricht mit nicht zugeordnete Verweise auf zugeordneten Suche Schlüssel an ein Ziel in einer anderen Domäne messaging gesendet wird, sind die Verweise ungültig. Um diese zu anderen Eigenschaften, mit der Suche Keys synchronisiert bleiben aktivieren, können Sie diese Zeichenfolgennamen im Eigenschaftensatz PS_ROUTING_SEARCH_KEY zuordnen, die die Namen von Core sämtliche Eigenschaften nicht stören. Angenommen Sie, dass ein Client muss eine Eigenschaft zu übertragen, die den Search-Schlüssel für die letzte Person eine lange Routingliste enthält. Der Client kann eine benannte Eigenschaft im Eigenschaftensatz PS_ROUTING_SEARCH_KEY namens "Last_search_key." erstellen. Da sie in einem Eigenschaftensatz sämtliche-gespeichert ist, wird zusammen mit dem Rest der Gateway sämtliche Eigenschaften die Eigenschaft "Last_search_key" übersetzt.
+Clients, die zuzuordnende-Suchschlüssel als Verweise auf andere Nachrichteneigenschaften verwenden, müssen erkennen, dass die anderen Nachrichteneigenschaften nur dann übersetzt werden, wenn Sie in einem dieser zuzuordnende-Eigenschaftensätze enthalten sind. Wenn eine Nachricht mit nicht zugeordneten verweisen auf zugeordnete Suchschlüssel an ein Ziel in einer anderen Messaging Domäne gesendet wird, sind die Verweise ungültig. Um zu ermöglichen, dass diese anderen Eigenschaften mit den Such Schlüsseln synchronisiert bleiben, können Sie diese Zeichenfolgennamen im PS_ROUTING_SEARCH_KEY-Eigenschaftensatz zuweisen, die nicht die Namen der wichtigsten zuzuordnende-Eigenschaften beeinträchtigen. Angenommen, ein Client muss eine Eigenschaft übermitteln, die den Suchschlüssel für die letzte Person in einer langen Routingliste enthält. Der Client kann eine benannte Eigenschaft im PS_ROUTING_SEARCH_KEY-Eigenschaftensatz mit dem Namen "last_search_key" erstellen. Da es in einem zuzuordnende-Eigenschaftensatz gespeichert ist, wird die "last_search_key"-Eigenschaft zusammen mit den restlichen Gateway-zuzuordnende-Eigenschaften übersetzt.
   
 

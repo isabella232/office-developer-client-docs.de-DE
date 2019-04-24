@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1b6c88d40236ffb6cc3201b659a39e4d869de188
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335392"
 ---
 # <a name="synchronize-outlook-with-a-sharepoint-folder"></a>Synchronisieren von Outlook mit einem SharePoint-Ordner
 
@@ -23,9 +23,9 @@ In diesem Beispiel wird veranschaulicht, wie programmgesteuert eine Verbindung z
 > [!NOTE] 
 > Das folgende Codebeispiel ist ein Auszug aus [Programming Applications für Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493).
 
-In Outlook können Sie Kalender, Kontaktlisten, Aufgabenlisten, Diskussionsrunden und Dokumentbibliotheken mit SharePoint-Ordnern synchronisieren. Basierend auf der URL, die bei der Synchronisierung angegeben wurde, erstellt Outlook einen neuen Ordner vom gleichen Basistyp wie der SharePoint-Ordner. Beim Synchronisieren mit einem SharePoint-Kalenderordner zum Beispiel wird eine neuer Kalenderordner in Outlook erstellt. SharePoint-Synchronisierungsordner werden in eigenen persönlichen Outlook-Ordnern (PST-Datei) außerhalb des Benutzerpostfachs gespeichert. Sie können eine Verbindung mit einem SharePoint-Ordner mit der [OpenSharedFolder(String, Object, Object, Object)](https://msdn.microsoft.com/library/bb610157\(v=office.15\))-Methode des [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\))-Objekts herstellen. Beachten Sie, dass Sie eine stssync://-URL verwenden müssen, die Details zum SharePoint-Server, Ordnerpfad und andere Informationen bereitstellt, die Outlook zum Öffnen eines SharePoint-Ordners benötigt.
+In Outlook können Sie Kalender, Kontaktlisten, Aufgabenlisten, Diskussionsrunden und Dokumentbibliotheken mit SharePoint-Ordnern synchronisieren. Based on the URL provided upon synchronization, Outlook will create a new folder of the same base type as the SharePoint folder. Beim Synchronisieren mit einem SharePoint-Kalenderordner zum Beispiel wird eine neuer Kalenderordner in Outlook erstellt. SharePoint-Synchronisierungsordner werden in eigenen persönlichen Outlook-Ordnern (PST-Datei) außerhalb des Benutzerpostfachs gespeichert. Sie können eine Verbindung mit einem SharePoint-Ordner mit der [OpenSharedFolder(String, Object, Object, Object)](https://msdn.microsoft.com/library/bb610157\(v=office.15\))-Methode des [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\))-Objekts herstellen. Note that you must use a stssync:// URL that provides details about the SharePoint server, folder path, and other information that Outlook needs to open a SharePoint folder.
 
-Wenn Sie programmgesteuert eine Verbindung zu einem SharePoint-Ordner herstellen, müssen Sie die richtige URL ermitteln, die zum Erstellen der Freigabebeziehung zu verwenden ist. Da die stssync://-URL für den Ordner nicht auf der SharePoint-Benutzeroberfläche bereitgestellt wird, müssen Sie den Zielordner in Outlook manuell verknüpfen. Verwenden Sie dann das erste Verfahren, DisplaySharePointUrl, im folgenden Codebeispiel, um die richtige URL abzurufen. DisplaySharePointUrl verwendet das [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\))-Objekt, um nach Freigabebindungsinformationen im aktuellen Ordner für das aktive Explorer-Fenster zu suchen. Wenn eine oder mehrere Bindungskontexte gefunden werden, werden die URLs für alle verfügbaren Freigabekontexte angezeigt.
+When connecting to a SharePoint folder programmatically, you must determine the proper URL to use to create the sharing relationship. Da die stssync://-URL für den Ordner nicht auf der SharePoint-Benutzeroberfläche bereitgestellt wird, müssen Sie den Zielordner in Outlook manuell verknüpfen. Verwenden Sie dann das erste Verfahren, DisplaySharePointUrl, im folgenden Codebeispiel, um die richtige URL abzurufen. DisplaySharePointUrl verwendet das [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\))-Objekt, um nach Freigabebindungsinformationen im aktuellen Ordner für das aktive Explorer-Fenster zu suchen. Wenn eine oder mehrere Bindungskontexte gefunden werden, werden die URLs für alle verfügbaren Freigabekontexte angezeigt.
 
 Jetzt haben Sie die richtige URL zum Erstellen der Freigabebeziehung. Um den neuen SharePoint-Ordner in Outlook zu synchronisieren, kopieren Sie die URL und fügen Sie sie in die Zuweisung der Zeichenfolgenvariable „CalendarUrl“ in dem zweiten Verfahren „AddSpsFolder“. AddSpsFolder automatisiert die Synchronisierung des neuen SharePoint-Ordners in Outlook, indem die **NameSpace.OpenSharedFolder**-Methode mit einer `stssync://`-URL (in diesem Fall die URL, die im DisplaySharePointUrl-Verfahren generiert wurde) verwendet wird. AddSpsFolder bietet auch einen benutzerdefinierten Ordnernamen „Example SPS Calendar“ und weist Outlook an, die standardmäßige Gültigkeitsdauer (Time to Live, TTL) für den Ordner zu verwenden. SharePoint-Ordner laden immer Elementanlagen herunter, daher müssen Sie dies hier nicht angeben.
 

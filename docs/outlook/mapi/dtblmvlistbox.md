@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c22f842-d0e7-44f0-a7d5-c9c2aa6b8820
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f7c1241f2ad31dee8277f3b3b77ac02137067a12
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: ae8f3ab28837bf0579549ead46c28477f815f35c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338276"
 ---
 # <a name="dtblmvlistbox"></a>DTBLMVLISTBOX
 
@@ -25,11 +25,11 @@ ms.locfileid: "22576309"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine mehrwertige Liste, die in einem Dialogfeld angezeigt werden, die aus einer Tabelle anzeigen erstellt wird.
+Beschreibt eine Liste mit mehreren Werten, die in einem Dialogfeld angezeigt wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei  <br/> |Mapidefs. h  <br/> |
    
 ```cpp
 typedef struct _DTBLMVLISTBOX
@@ -44,21 +44,21 @@ typedef struct _DTBLMVLISTBOX
 
  **ulFlags**
   
-> Reserviert. NULL muss sein.
+> Reserviert muss NULL sein.
     
  **ulMVPropTag**
   
-> Eigenschaftentag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING.
+> Property-Tag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING.
     
 ## <a name="remarks"></a>Bemerkungen
 
-Eine Struktur **DTBLMVLISTBOX** beschreibt eine standard mehrwertige Liste, die eine schreibgeschützte Liste der Elemente verfügt. Eine mehrwertige Liste verwenden, werden die Werte sofort angezeigt. 
+Eine **DTBLMVLISTBOX** -Struktur beschreibt eine standardmäßige mehrwertige Liste mit einer schreibgeschützten Liste von Elementen. Bei Verwendung einer standardmäßigen mehrwertigen Liste werden die Werte sofort angezeigt. 
   
-Die Daten, die angezeigt werden, stammt aus der Eigenschaft im **UlMVPropTag** -Member identifiziert. Es ist nicht erforderlich zum Lesen aus der Eigenschaft-Schnittstelle, die das Display-Tabelle zugeordnet ist. Darüber hinaus, da der Benutzer eine Auswahl aus Risiko dieser Arten von Listen nicht können, werden Daten nicht auf die Eigenschaft Schnittstelle geschrieben. 
+Die angezeigten Daten stammen aus der im **ulMVPropTag** -Element angegebenen Eigenschaft. Es ist nicht erforderlich, von der Eigenschaften Schnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist. Da Benutzer keine Auswahl aus diesen Listentypen treffen können, werden auch keine Daten in die Eigenschaften Schnittstelle geschrieben. 
   
-Nur mehrwertige Zeichenfolgeneigenschaften werden für die Liste mit mehreren Werten unterstützt. andere mehrwertige Eigenschaft werden nicht unterstützt. 
+Nur mehrwertige Zeichenfolgeneigenschaften werden für die mehrwertige Liste unterstützt. andere mehrwertige Eigenschaftstypen werden nicht unterstützt. 
   
-Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt](display-tables.md). Informationen zum Implementieren einer Tabelle anzeigen finden Sie unter [Implementieren einer Tabelle anzuzeigen](display-table-implementation.md).
+Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Tabellen anzeigen und verwandte Strukturen
+title: Erstellen von Anzeigetabellen und verwandten Strukturen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,44 +8,44 @@ api_type:
 - COM
 ms.assetid: a8548040-13ed-4a9f-a7ca-de610f94d7df
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e17306e2b90f26dcef0a0214e78080fe78752e5f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 350272324c3827f4630f0cf35e3ade0ff213ac4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335613"
 ---
-# <a name="creating-display-tables-and-related-structures"></a>Erstellen von Tabellen anzeigen und verwandte Strukturen
+# <a name="creating-display-tables-and-related-structures"></a>Erstellen von Anzeigetabellen und verwandten Strukturen
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellen einer Tabelle anzeigen ähnelt dem Schreiben eines Programms mit einer Skriptsprache. Sie können eine Tabelle anzeigen, entweder durch Aufrufen von [BuildDisplayTable](builddisplaytable.md) oder Schreiben von benutzerdefiniertem Code zum Auffüllen der Zeilen und Spalten der Tabelle auf erstellen. Im Allgemeinen verwenden Sie das Verfahren **BuildDisplayTable** , da es einfacher ist. 
+Das Erstellen einer Anzeigetabelle ähnelt dem Schreiben eines Programms mit einer Skriptsprache. Sie können eine Anzeigetabelle entweder durch Aufrufen von [BuildDisplayTable](builddisplaytable.md) oder durch Schreiben von benutzerdefiniertem Code erstellen, um die Zeilen und Spalten der Tabelle aufzufüllen. Im Allgemeinen sollten Sie die **BuildDisplayTable** -Technik verwenden, da Sie einfacher ist. 
   
-Vor dem Aufruf der **BuildDisplayTable** um MAPI zum Erstellen einer Tabelle anzeigen auffordern ist eine Hierarchie von Strukturen, die Sie erstellen müssen. Die Hauptstruktur [DTPAGE](dtpage.md), wird eine einzelne Eigenschaftenseiten beschrieben. In jeder **DTPAGE** ist Struktur einer [DTCTL](dtctl.md) -Struktur, die ein einzelnes Steuerelement, wie ein Bearbeitungsfeld oder ein Optionsfeld beschreibt. Jede **DTCTL** -Datenstruktur enthält eine Struktur, die speziell für den Typ des Steuerelements ist. Beispielsweise wird ein **DTCTL** Struktur ein Bearbeitungsfeld-Steuerelement beschrieben, eine Struktur **DTBLEDIT** enthalten. Die **DTCTL** -Struktur für ein Optionsfeld enthält eine **DTBLRADIOBUTTON** -Struktur. 
+Bevor Sie **BuildDisplayTable** aufrufen können, um MAPI aufzufordern, eine Anzeigetabelle zu erstellen, gibt es eine Hierarchie von Strukturen, die Sie erstellen müssen. Die Struktur der obersten Ebene, [DTPAGE](dtpage.md), beschreibt eine einzelne Eigenschaftenseite im Registerkartenformat. In jeder **DTPAGE** -Struktur handelt es sich um eine [DTCTL](dtctl.md) -Struktur, die ein einzelnes Steuerelement beschreibt, beispielsweise ein Bearbeitungsfeld oder eine Optionsschaltfläche. Jede **DTCTL** -Struktur enthält eine Struktur, die spezifisch für den Typ des Steuerelements ist. Wenn beispielsweise die **DTCTL** -Struktur ein Bearbeitungsfeld-Steuerelement beschreibt, enthält es eine **DTBLEDIT** -Struktur. Die **DTCTL** -Struktur für ein Optionsfeld enthält eine **DTBLRADIOBUTTON** -Struktur. 
   
-Diese Strukturen beziehen sich direkt auf **BuildDisplayTable**; Sie haben keine Bedeutung außerhalb des Kontexts von dieser Funktion. Wenn Sie **BuildDisplayTable**aufrufen, übergeben Sie einen oder mehrere **DTPAGE** Strukturen als Eingabeparameter. Die Strukturen **DTPAGE** enthalten ein Array von **DTCTL** Strukturen und die Anzahl der **DTCTL** Strukturen im Array. Es ist eine Struktur für jedes Steuerelement im Dialogfeld angezeigt. **DTPAGE** Strukturen haben auch eine Zeichenfolge, die den Namen des eine entsprechende Hilfe-Datei und das Dialogfeld Feld Ressource darstellt. 
+Diese Strukturen beziehen sich direkt auf **BuildDisplayTable**; Sie haben keine Bedeutung außerhalb des Kontexts dieser Funktion. Wenn Sie **BuildDisplayTable**aufrufen, übergeben Sie eine oder mehrere **DTPAGE** -Strukturen als Eingabeparameter. Die **DTPAGE** -Strukturen enthalten ein Array von **DTCTL** -Strukturen und die Anzahl der **DTCTL** -Strukturen im Array. Es gibt eine Struktur für jedes Steuerelement, das im Dialogfeld angezeigt werden soll. **DTPAGE** -Strukturen besitzen auch eine Zeichenfolge, die den Namen einer entsprechenden Hilfedatei und Dialogfeldressource darstellt. 
   
-Jede **DTCTL** Struktur in einer **DTPAGE** Struktur enthält die folgenden Daten, die zum Festlegen von Eigenschaften für das Steuerelement verwendet werden: 
+Jede **DTCTL** -Struktur in einer **DTPAGE** -Struktur enthält die folgenden Daten, die zum Festlegen der Eigenschaften für das Steuerelement verwendet werden: 
   
-- Der Typ für **PR_CONTROL_TYPE** ([PidTagControlType](pidtagcontroltype-canonical-property.md)) festlegen.
+- Der Steuerelementtyp für das Festlegen von **PR_CONTROL_TYPE** ([pidtagcontroltype (](pidtagcontroltype-canonical-property.md)).
     
-- Steuerelement-Flags für **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) festlegen.
+- Steuerelemente für das Festlegen von **PR_CONTROL_FLAGS** ([pidtagcontrolflags (](pidtagcontrolflags-canonical-property.md)).
     
-- Benachrichtigungsdaten zum Festlegen von **PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md)).
+- Benachrichtigungsdaten zum Festlegen von **PR_CONTROL_ID** ([pidtagcontrolid (](pidtagcontrolid-canonical-property.md)).
     
-- Die Steuerelement-Struktur für **PR_CONTROL_STRUCTURE** ([PidTagControlStructure](pidtagcontrolstructure-canonical-property.md)) festlegen.
+- Die Steuerelementstruktur zum Festlegen von **PR_CONTROL_STRUCTURE** ([pidtagcontrolstructure (](pidtagcontrolstructure-canonical-property.md)).
     
-**DTCTL** Strukturen enthalten außerdem einen Resource Identifier und für bearbeiten und Kombinationsfeld-Steuerelemente, ein Zeichen Filter. 
+**DTCTL** -Strukturen enthalten auch einen Ressourcenbezeichner und für Bearbeitungs-und Kombinationsfeld-Steuerelemente einen Zeichenfilter. 
   
-Das Steuerelement Struktur Mitglied einer **DTCTL** Struktur beschreibt die Daten, die für den Typ des Steuerelements eindeutig ist. MAPI definiert, eine andere Struktur für jeden Steuerelementtyp. Beispielsweise werden durch eine **DTBLEDIT** Struktur die Daten von einem Bearbeitungssteuerelement dargestellt. die Daten eines Listenfelds werden durch eine **DTBLLBX** Struktur dargestellt. 
+Die Steuerelementstruktur Member einer **DTCTL** -Struktur beschreibt die Daten, die für den Typ des Steuerelements eindeutig ist. MAPI definiert eine andere Struktur für jeden Steuerelementtyp. Beispielsweise werden die Daten eines Edit-Steuerelements durch eine **DTBLEDIT** -Struktur dargestellt. die Daten eines Listenfelds werden durch eine **DTBLLBX** -Struktur dargestellt. 
   
-In der folgenden Abbildung wird die Beziehung zwischen den drei Typen von Tabellenstrukturen anzeigen angezeigt. Das Dialogfeld durch diese zeigt die Tabelle beschriebenen hat zwei Steuerelemente: eine Bezeichnung und ein Edit-Steuerelement. Die Struktur **DTBLLBX** hat ein Label-Offset-Element, wie werden einige der Steuerelement-Strukturen, die beschreibt die Zeichenfolge für die Bezeichnung an, deren beginnt. Label-Zeichenfolgen werden in der Regel im Arbeitsspeicher, die unmittelbar auf der Struktur platziert. 
+Die Beziehung zwischen den drei Arten von Anzeige Tabellenstrukturen ist in der folgenden Abbildung dargestellt. Das von dieser Anzeigetabelle beschriebene Dialogfeld verfügt über zwei Steuerelemente: eine Bezeichnung und ein Bearbeitungssteuerelement. Die **DTBLLBX** -Struktur besitzt einen Bezeichnungs Offset-Member, ebenso wie mehrere der Steuerelementstrukturen, die beschreiben, wo die Zeichenfolge für die Bezeichnung beginnt. BeZeichnungs Zeichen Zeichenfolgen werden normalerweise unmittelbar nach der Struktur in den Arbeitsspeicher verschoben. 
   
 **Anzeigetabellenstrukturen**
   
-![Tabellenstrukturen anzeigen] (media/dtstruct.gif "Tabellenstrukturen anzeigen")
+![Anzeigen von Tabellenstrukturen] (media/dtstruct.gif "Anzeigen von Tabellenstrukturen")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Implementierung der Anzeige-Tabelle](display-table-implementation.md)
+- [Implementierung von Anzeigetabellen](display-table-implementation.md)
 

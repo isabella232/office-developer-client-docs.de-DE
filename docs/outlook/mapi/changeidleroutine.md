@@ -11,25 +11,25 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0a24fe3b-a1ef-4748-b3b3-3bf747473c9d
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 49682007946a4c5dda3800751deaebcc0e1e5740
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: cfec9356a866c79b687497c3af007c046a20a75e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334433"
 ---
 # <a name="changeidleroutine"></a>ChangeIdleRoutine
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ändert einige oder alle Merkmale eine im Leerlauf Routine [FNIDLE](fnidle.md) basiert. 
+Ändert einige oder alle Merkmale einer [FNIDLE](fnidle.md) -basierten Leerlauf Routine. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Headerdatei  <br/> |Mapiutil. h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 VOID ChangeIdleRoutine(
@@ -45,75 +45,75 @@ VOID ChangeIdleRoutine(
 
 ## <a name="parameters"></a>Parameter
 
-_ftg_
+_FTG_
   
-> [in] Funktion-Tag, die im Leerlauf Routine identifiziert. 
+> in Funktionstag, das die Leerlauf Routine identifiziert. 
     
 _pfnIdle_
   
-> [in] Zeiger auf die im Leerlauf Routine. 
+> in Zeiger auf die Leerlauf Routine. 
     
 _pvIdleParam_
   
-> [in] Zeiger auf einen neuen Block Arbeitsspeicher, der die aufrufende Implementierung für die im Leerlauf Routine zuweist. 
+> in Zeiger auf einen neuen Speicherblock, den die aufrufende Implementierung für die Leerlauf Routine reserviert. 
     
 _priIdle_
   
-> [in] Wert, der eine neue Priorität für die im Leerlauf Routine darstellt. Mögliche Prioritäten für die Implementierung definierten Routinen sind größer oder kleiner als 0 (null), aber nicht 0 (null). Der Wert 0 (null) ist für eine Benutzerereignis wie klicken mit der Maus oder eine Nachricht WM_PAINT reserviert. Werte, die größer als 0 (null) darstellen Prioritäten für Hintergrund-Vorgänge, die eine höhere Priorität als Veranstaltungen und werden im Rahmen der standardmäßigen Windows-Nachricht Pumpe Schleife verteilt. Werte kleiner als 0 (null) darstellen Prioritäten für im Leerlauf Vorgänge, die nur während der Leerlaufzeit Nachrichtensystem ausgeführt. Beispiele für Prioritäten sind: 1 für die Übermittlung von Vordergrund, für das Einfügen von Power bearbeiten Zeichen 1 und 3 für das Herunterladen von neuer Nachrichten.
+> in Wert, der eine neue Priorität für die Leerlauf Routine darstellt. Mögliche Prioritäten für Implementierungs definierte Routinen sind größer oder kleiner als 0 (null), jedoch nicht NULL. Der Wert 0 (null) ist für ein Benutzerereignis wie ein Mausklick oder eine WM_PAINT-Nachricht reserviert. Werte, die größer als NULL sind, stellen Prioritäten für Hintergrundaufgaben dar, die eine höhere Priorität als Benutzerereignisse haben und als Teil der standardmäßigen Windows-Nachrichten Pumpen Schleife gesendet werden. Werte, die kleiner als 0 (null) sind, stellen Prioritäten für Leerlauf Vorgänge dar, die nur während der Nachrichten Pumpen Leerlaufzeit ausgeführt werden. Beispiele für Prioritäten sind: 1 für die Vordergrund Übermittlung, 1 für das Einfügen von Power-Edit-Zeichen und 3 zum Herunterladen neuer Nachrichten.
     
 _csecIdle_
   
-> [in] Eine neue Zeit in Hundertstelsekunden, der im Leerlauf Routine zuweisen. Die Bedeutung des ursprünglichen Zeitwerts hängt davon ab, was im _IroIdle_ -Parameter übergeben wird. Es kann sein: 
+> in Eine neue Zeit in Hundertstel Sekunden, die auf die Leerlauf Routine angewendet werden soll. Die Bedeutung des anfänglichen Time-Werts variiert je nachdem, was im _iroIdle_ -Parameter übergeben wird. Es kann Folgendes sein: 
     
-  - Der Mindestzeitraum Untätigkeit für Benutzer, die verstreichen muss, bevor die MAPI ruft im Leerlauf Modul die im Leerlauf Routine zum ersten Mal, wenn das Flag FIROWAIT in _IroIdle_festgelegt ist. Nach der Übergabe diesmal, kann das Modul im Leerlauf die im Leerlauf Routine so oft wie nötig aufrufen. 
+  - Der minimale Zeitraum der Benutzer Untätigkeit, die verstreichen muss, bevor das MAPI-Leerlauf Modul die Leerlauf Routine zum ersten Mal aufruft, wenn das FIROWAIT-Flag in _iroIdle_festgelegt ist. Nach diesem Zeitpunkt kann das Leerlauf Modul die Leerlauf Routine so oft aufrufen, wie es erforderlich ist. 
     
-  - Das kürzeste Intervall zwischen Aufrufen der im Leerlauf Routine, wenn das Flag FIROINTERVAL in _IroIdle_festgelegt ist. 
+  - Das minimale Intervall zwischen Aufrufen der Leerlauf Routine, wenn das FIROINTERVAL-Flag in _iroIdle_festgelegt ist. 
     
 _iroIdle_
   
-> [in] Bitmaske aus Flags, die neue Optionen zum Aufrufen der im Leerlauf Routine angibt. Genau einem der folgenden Flags muss festgelegt werden:
+> in Bitmaske von Flags, die neue Optionen für das Aufrufen der Leerlauf Routine angeben. Es muss genau eines der folgenden Flags festgelegt werden:
     
-  - FIROINTERVAL: Die Zeit, die durch den Parameter _CsecIdle_ angegeben ist das kürzeste Intervall zwischen aufeinander folgenden Aufrufen der Routine im Leerlauf. 
+  - FIROINTERVAL: die vom _csecIdle_ -Parameter angegebene Zeit ist das Mindestintervall zwischen aufeinanderfolgenden Aufrufen der Leerlauf Routine. 
       
   - FIROONCEONLY: veraltet. Nicht verwenden. 
       
   - FIROPERBLOCK: veraltet. Nicht verwenden. 
       
-  - FIROWAIT: Die Zeit, die durch den Parameter _CsecIdle_ angegeben ist der Mindestzeitraum Untätigkeit für Benutzer, die verstreichen muss, bevor das im Leerlauf MAPI-Modul die im Leerlauf Routine zum ersten Mal aufruft. Nach der Übergabe diesmal, kann das Modul im Leerlauf die im Leerlauf Routine so oft wie nötig aufrufen. 
+  - FIROWAIT: die vom _csecIdle_ -Parameter angegebene Zeit ist die Mindestdauer der Benutzer Untätigkeit, die verstreichen muss, bevor das MAPI-Leerlauf Modul die Leerlauf Routine zum ersten Mal aufruft. Nach diesem Zeitpunkt kann das Leerlauf Modul die Leerlauf Routine so oft aufrufen, wie es erforderlich ist. 
     
 _ircIdle_
   
-> [in] Bitmaske der Flags verwendet, um die Änderungen anzugeben, der im Leerlauf Routine vorgenommen werden sollen. Die folgenden Kennzeichen können eine beliebige Kombination festgelegt werden:
+> in Bitmaske der Flags, die zum Anzeigen der Änderungen an der Leerlauf Routine verwendet werden. Die folgenden Flags können in einer beliebigen Kombination festgelegt werden:
     
-  - FIRCCSEC: Eine Änderung an den Zeitaufwand für die im Leerlauf Routine, d. h., eine Änderung von der in der _CsecIdle_ -Parameter übergebene Wert angegeben. 
+  - FIRCCSEC: eine Änderung der Zeit, die der Leerlauf Routine zugeordnet ist, also einer Änderung, die durch den im _csecIdle_ -Parameter übergebenen Wert angegeben wird. 
       
-  - FIRCIRO: Eine Änderung der Optionen für die Routine im Leerlauf, d. h., eine Änderung angegeben durch den Wert im _IroIdle_ Parameter übergeben. 
+  - FIRCIRO: eine Änderung der Optionen für die Leerlauf Routine, also eine Änderung, die durch den im _iroIdle_ -Parameter übergebenen Wert angegeben wird. 
       
-  - FIRCPFN: Eine Änderung der im Leerlauf routinemäßige Zeiger, d. h., eine Änderung angegeben durch den Wert im _PfnIdle_ Parameter übergeben. 
+  - FIRCPFN: eine Änderung am Zeiger für die Leerlauf Routine, das heißt eine Änderung, die durch den im _pfnIdle_ -Parameter übergebenen Wert angegeben wird. 
       
-  - FIRCPRI: Eine Änderung der Priorität von der Routine im Leerlauf, d. h., eine Änderung angegeben durch den Wert im _PriIdle_ Parameter übergeben. 
+  - FIRCPRI: eine Änderung der Priorität der Leerlauf Routine, also einer Änderung, die durch den im _priIdle_ -Parameter übergebenen Wert angegeben wird. 
       
-  - FIRCPV: Eine Änderung an den Arbeitsspeicher Block mit der Routine im Leerlauf, d. h., eine Änderung angegeben durch den Wert im _PvIdleParam_ Parameter übergeben. 
+  - FIRCPV: eine Änderung des Speicherblocks der Leerlauf Routine, also einer Änderung, die durch den im _pvIdleParam_ -Parameter übergebenen Wert angegeben wird. 
     
-## <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Return value
 
-None.
+Keine.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Die folgenden Funktionen Umgang mit der MAPI-Modul im Leerlauf und im Leerlauf Routinen basierend auf den [FNIDLE](fnidle.md) Funktionsprototyp: 
+Die folgenden Funktionen befassen sich mit dem MAPI-Leerlauf Modul und mit Leerlauf Routinen, die auf dem [FNIDLE](fnidle.md) -Funktionsprototyp basieren: 
   
-|**Im Leerlauf routinemäßige-Funktion**|**Nutzung**|
+|**Leerlauf Routine Funktion**|**Verwendung**|
 |:-----|:-----|
-|**ChangeIdleRoutine** <br/> |Ändert die Eigenschaften einer registrierten im Leerlauf Routine.  <br/> |
-|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte im Leerlauf Routine aus dem MAPI-System.  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |Aktiviert oder deaktiviert erneut eine registrierte im Leerlauf Routine ohne aus der MAPI-System entfernt.  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Das MAPI-System, mit oder ohne Aktivieren hinzugefügt eine im Leerlauf Routine.  <br/> |
-|[MAPIDeInitIdle](mapideinitidle.md) <br/> |Das im Leerlauf MAPI-Modul für die aufrufende Anwendung geschlossen wird.  <br/> |
-|[MAPIInitIdle](mapiinitidle.md) <br/> |Initialisiert das im Leerlauf MAPI-Modul für die aufrufende Anwendung.  <br/> |
+|**ChangeIdleRoutine** <br/> |Ändert die Eigenschaften einer registrierten Leerlauf Routine.  <br/> |
+|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte Leerlauf Routine aus dem MAPI-System.  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlauf Routine, ohne Sie aus dem MAPI-System zu entfernen.  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt eine Leerlauf Routine zum MAPI-System hinzu, mit oder ohne Sie zu aktivieren.  <br/> |
+|[MAPIDeInitIdle](mapideinitidle.md) <br/> |Fährt das MAPI-Leerlauf Modul für die aufrufende Anwendung herunter.  <br/> |
+|[MAPIInitIdle](mapiinitidle.md) <br/> |Initialisiert das MAPI-Leerlauf Modul für die aufrufende Anwendung.  <br/> |
    
-**ChangeIdleRoutine**, **DeregisterIdleRoutine**und **EnableIdleRoutine** werden als Eingabeparameter das Function-Tag von **FtgRegisterIdleRoutine**zurückgegeben. 
+**ChangeIdleRoutine**, **DeregisterIdleRoutine**und **EnableIdleRoutine** nehmen als Eingabeparameter das von **FtgRegisterIdleRoutine**zurückgegebene funktionstag an. 
   
-Wenn alle Vordergrund Aufgaben für die Plattform Leerlauf, ruft das MAPI-im Leerlauf-Modul die höchste Priorität im Leerlauf Routine, die zur Ausführung bereit ist. Es gibt keine Garantie für den Aufruf Reihenfolge zwischen im Leerlauf Routinen, der die gleiche Priorität. 
+Wenn alle Vordergrund Aufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlauf Modul die Leerlauf Routine mit der höchsten Priorität auf, die zur Ausführung bereit ist. Es gibt keine Garantie für die Anruf Reihenfolge unter Leerlauf Routinen mit derselben Priorität. 
   
 

@@ -1,5 +1,5 @@
 ---
-title: SECOND Function (VisioShapeSheet)
+title: SECOND-Funktion (VisioShapeSheet)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251495
 localization_priority: Normal
 ms.assetid: 22005976-37c0-d2be-8e34-8aee8458e4be
-description: Gibt eine ganze Zahl 0 und 59, die die Sekundenkomponente in Datetime oder Expression darstellt.
-ms.openlocfilehash: 5f0a3e87763bd4ea5436afe221e12477e9186356
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Gibt eine ganze Zahl von 0 bis 59 zurück, die die Sekundenkomponente von DateTime oder Expression darstellt.
+ms.openlocfilehash: c23bbded12a3886fe3bd4dd2a3c3ba1bd6d11619
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332788"
 ---
-# <a name="second-function-visioshapesheet"></a>SECOND Function (VisioShapeSheet)
+# <a name="second-function-visioshapesheet"></a>SECOND-Funktion (VisioShapeSheet)
 
-Gibt eine ganze Zahl 0 und 59, die die Sekundenkomponente in _Datetime_ oder _Expression_darstellt.
+Gibt eine ganze Zahl von 0 bis 59 zurück, die die Sekundenkomponente von _DateTime_ oder _Expression_darstellt.
   
 ## <a name="syntax"></a>Syntax
 
-ZWEITE ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **]) 
+Sekunde ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *]) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,23 +30,23 @@ ZWEITE ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Numerisch** <br/> |Die Gebietsschema-ID an, bei der Bewertung von Währungssymbole _Datetime_verwendet werden. Die Gebietsschema-ID ist eine Zahl, die in den Headerdateien System beschrieben.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Numerisch** <br/> |Der Gebietsschemabezeichner, der beim Auswerten einer nicht lokalen _DateTime_verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die Datumskomponente in _Datetime_ oder _Expression_ wird verworfen. 
+Die Datumskomponente in _DateTime_ oder _Expression_ wird verworfen. 
   
-Keine Rundung erfolgt. Wenn _Datetime_ nicht vorhanden ist oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt diese Funktion einen Fehler zurück. 
+Es findet kein Auf- oder Abrunden statt. Wenn _DateTime_ fehlt oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt diese Funktion einen Fehler zurück. 
   
-Die SECOND-Funktion nimmt auch einen einzelnen Zahlenwert für _Expression_ , wobei der Dezimalteil des Ergebnisses den Bruchteil eines Tages seit Mitternacht darstellt. 
+Die zweite Funktion akzeptiert auch einen einzelnen Zahlenwert für _Expression_ , wobei der Dezimalteil des Ergebnisses den Bruchteil eines Tags seit Mitternacht darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-SECOND("30/05/1997 13:45:32")
+SEKUNDE ("05/30/1997 13:45:32")
   
 Gibt 32 zurück.
   
@@ -58,7 +58,7 @@ Gibt 52 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-SECOND(0.6337)
+SEKUNDE (0.6337)
   
 Gibt 32 zurück.
   

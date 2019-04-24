@@ -1,175 +1,175 @@
 ---
-title: Ordnerfelder-Streamstrukturen
+title: Ordnerfelder Stream-Strukturen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: edbc9e6c-008c-4c13-9a0c-cb47ac0f3686
-description: 'Letzte Änderung: Montag, 9. März 2015'
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
 ms.openlocfilehash: 96051bd2b62fd7c0e908a1018aac0225e44986be
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336890"
 ---
-# <a name="folder-fields-stream-structures"></a>Ordnerfelder-Streamstrukturen
+# <a name="folder-fields-stream-structures"></a>Ordnerfelder Stream-Strukturen
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Nachricht [PidTagUserFields](pidtaguserfields-canonical-property.md) -Eigenschaft enthält einen binären Datenstrom, FolderUserFields, die die benutzerdefinierte Felddefinitionen Ordner enthält. In diesem Thema werden die Stream-Strukturen für benutzerdefinierte Felddefinitionen Ordner. 
+Die [pidtaguserfields (](pidtaguserfields-canonical-property.md) -Eigenschaft einer Nachricht enthält einen binären Stream Beispiel für folderuserfields, der die benutzerdefinierten Felddefinitionen des Ordners enthält. In diesem Thema werden die Datenstrom Strukturen für benutzerdefinierte Ordner Felddefinitionen beschrieben. 
 
-Eine FolderUserFields Stream-Struktur besteht aus einer FolderUserFieldsA Struktur oder eine FolderUserFieldsA Struktur gefolgt von einer FolderUserFieldsW Struktur.
+Eine Beispiel für folderuserfields-Datenstrom Struktur besteht entweder aus einer FolderUserFieldsA-Struktur oder einer FolderUserFieldsA-Struktur, gefolgt von einer FolderUserFieldsW-Struktur.
   
-Data-Elemente in diesem Datenstrom werden gespeichert unmittelbar miteinander in der angegebenen Reihenfolge:
+Datenelemente in diesem Stream werden unmittelbar nach einander in der folgenden angegebenen Reihenfolge gespeichert:
   
-- **FolderUserFieldsAnsi**: eine FolderUserFieldsA stream Struktur.
+- **FolderUserFieldsAnsi**: eine FolderUserFieldsA-Datenstrom Struktur.
     
-- **FolderUserFieldsUnicode** (optional): eine FolderUserFieldsW stream Struktur.
+- **FolderUserFieldsUnicode** (optional): eine FolderUserFieldsW-Datenstrom Struktur.
     
-Das Vorhandensein von FolderUserFieldsUnicode wird durch die Gesamtlänge des der FolderUserFields größer als die Länge des FolderUserFieldsAnsi erkannt.
+Das vorhanden sein von FolderUserFieldsUnicode wird durch die Gesamtlänge der Beispiel für folderuserfields erkannt, die größer als die Länge von FolderUserFieldsAnsi ist.
   
 > [!IMPORTANT]
-> FolderUserFieldsAnsi wird verwendet, um die Kompatibilität mit älteren, nicht-Unicode Versionen von MAPI-Clients, daher Wenn FolderUserFieldsUnicode vorhanden ist, wird der Inhalt der FolderUserFieldsAnsi ignoriert. Zur Vermeidung von möglichen Daten enthalten Verlust in ANSI-Konvertierung, beim Erstellen von eines Streams FolderUserFields immer das FolderUserFieldsW Teil. 
+> FolderUserFieldsAnsi wird zur Kompatibilität mit älteren, nicht-Unicode-Versionen von MAPI-Clients verwendet, daher wird der Inhalt von FolderUserFieldsAnsi ignoriert, wenn FolderUserFieldsUnicode vorhanden ist. Um mögliche Datenverluste bei der ANSI-Konvertierung zu vermeiden, müssen Sie beim Erstellen eines Beispiel für folderuserfields-Streams immer den FolderUserFieldsW-Teil verwenden. 
   
-## <a name="folderuserfieldsa-stream-structure"></a>FolderUserFieldsA Stream-Struktur
+## <a name="folderuserfieldsa-stream-structure"></a>FolderUserFieldsA-Datenstrom Struktur
 
-Eine FolderUserFieldsA Stream-Struktur ist ein Array von FolderFieldDefinitionA Stream Strukturen, die Definitionen für alle benutzerdefinierten Felder in einem Outlook-Ordner enthalten, es sei denn, durch den FolderUserFieldsW Teil der Struktur FolderUserFields außer Kraft gesetzt.
+Eine FolderUserFieldsA-Datenstrom Struktur ist ein Array von FolderFieldDefinitionA-Datenstrom Strukturen, die Definitionen für alle benutzerdefinierten Felder in einem Outlook-Ordner enthalten, es sei denn, der FolderUserFieldsW-Teil der Beispiel für folderuserfields-Struktur wird außer Kraft gesetzt.
   
-Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmittelbar miteinander in der angegebenen Reihenfolge gespeichert:
+Datenelemente in diesem Stream werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der folgenden angegebenen Reihenfolge:
   
-- **FieldDefinitionCount**: DWORD-Wert (4 Bytes), die Anzahl der Felddefinitionen in diesen Stream. Dies ist die Anzahl der Elemente im Array **FieldDefinitions** .
+- **FieldDefinitionCount**: DWORD (4 Bytes), die Anzahl der Felddefinitionen in diesem Stream. Dies ist die Anzahl der Elemente im **FieldDefinitions** -Array.
     
-- **FieldDefinitions**: ein Array von FolderFieldDefinitionA stream Strukturen. Die Anzahl der dieses Array ist gleich der **FieldDefinitionCount** Data-Element.
+- **FieldDefinitions**: ein Array von FolderFieldDefinitionA-Stream-Strukturen. Die Anzahl dieses Arrays ist gleich dem **FieldDefinitionCount** -Datenelement.
     
-Sofern diese FolderUserFieldsA durch den FolderUserFieldsW Teil der Struktur FolderUserFields überschrieben wird, muss das Array **FieldDefinitions** "auf Null endende" sein, dass das letzte Element des FolderFieldDefinitionA Common.FieldType Feld gleich Um FtNull.
+Sofern diese FolderUserFieldsA nicht durch den FolderUserFieldsW-Teil der Beispiel für folderuserfields-Struktur überschrieben wird, muss das **FieldDefinitions** -Array "NULL-terminiert" werden, indem das allgemeine Feld des FolderFieldDefinitionA-Elements mit dem Common. FieldType-Feld gleich ist. zu ftNull.
   
-## <a name="folderuserfieldsw-stream-structure"></a>FolderUserFieldsW Stream-Struktur
+## <a name="folderuserfieldsw-stream-structure"></a>FolderUserFieldsW-Datenstrom Struktur
 
-Eine FolderUserFieldsW Stream-Struktur ist ein Array von FolderFieldDefinitionW Stream Strukturen, die Definitionen für alle benutzerdefinierten Felder in einem Outlook-Ordner enthalten.
+Eine FolderUserFieldsW-Datenstrom Struktur ist ein Array von FolderFieldDefinitionW-Datenstrom Strukturen, die Definitionen für alle benutzerdefinierten Felder in einem Outlook-Ordner enthalten.
   
-Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmittelbar miteinander in der angegebenen Reihenfolge gespeichert:
+Datenelemente in diesem Stream werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der folgenden angegebenen Reihenfolge:
   
-- **FieldDefinitionCount**: DWORD-Wert (4 Bytes), die Anzahl der Felddefinitionen in diesen Stream. Dies ist die Anzahl der Elemente im Array **FieldDefinitions** .
+- **FieldDefinitionCount**: DWORD (4 Bytes), die Anzahl der Felddefinitionen in diesem Stream. Dies ist die Anzahl der Elemente im **FieldDefinitions** -Array.
     
-- **FieldDefinitions**: ein Array von FolderFieldDefinitionW stream Strukturen. Die Anzahl der dieses Array ist gleich der **FieldDefinitionCount** Data-Element.
+- **FieldDefinitions**: ein Array von FolderFieldDefinitionW-Stream-Strukturen. Die Anzahl dieses Arrays ist gleich dem **FieldDefinitionCount** -Datenelement.
     
-Das Array **FieldDefinitions** muss "auf Null endende", wenn das letzte Element des FolderFieldDefinitionW Common.FieldType Feld FtNull gleich.
+Das **FieldDefinitions** -Array muss "null-terminated" sein, indem das gemeinsame. FieldType-Feld des letzten FolderFieldDefinitionW-Elements ftNull entspricht.
   
-## <a name="folderfielddefinitiona-stream-structure"></a>FolderFieldDefinitionA Stream-Struktur
+## <a name="folderfielddefinitiona-stream-structure"></a>FolderFieldDefinitionA-Datenstrom Struktur
 
-Eine FolderFieldDefinitionA Stream-Struktur enthält eine Definition eines benutzerdefinierten Felds mit der Name des Felds in ANSI gespeichert.
+Eine FolderFieldDefinitionA-Datenstrom Struktur enthält eine Definition eines benutzerdefinierten Felds mit dem in ANSI gespeicherten Feldnamen.
   
-Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmittelbar miteinander in der angegebenen Reihenfolge gespeichert:
+Datenelemente in diesem Stream werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der folgenden angegebenen Reihenfolge:
   
-- **FieldType**: FldType (4 Bytes) der Typ dieses Felds.
+- **FieldType**: FldType (4 Bytes), der Typ dieses Felds.
     
-- **FieldNameLength**: WORD (2 Bytes), die Anzahl der Elemente im Array **FieldName** .
+- **FieldNameLength**: Word (2 Bytes), die Anzahl der Elemente im **FieldName** -Array.
     
-- **FieldName**: ein Array von CHAR. Dies ist die Codepage ANSI CP_ACP Darstellung der Name des Felds. Die Anzahl der dieses Array ist gleich **FieldNameLength**. Der Name des Felds erfüllen muss, auf dem Name-Parameter in der [UserProperties.Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode gemäß die Einschränkungen. 
+- **FieldName**: ein Array von Char. Dies ist die ANSI-CP_ACP-Codepage-Darstellung des Feldnamens. Die Anzahl dieses Arrays ist gleich **FieldNameLength**. Der Feldname muss die Einschränkungen des Parameters Name erfüllen, wie in der [UserProperties. Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode angegeben. 
     
    > [!NOTE]
-   > Aus Gründen der Kompatibilität mit Vorversionen Outlook möglicherweise einige **FieldName** -Werte, die diese Einschränkung nicht erfüllen, jedoch solchen Fällen fallen nicht unter in diesem Thema behandelt. 
+   > Aus Gründen der Kompatibilität mit Legacyversionen kann Outlook möglicherweise einige **FieldName** -Werte verarbeiten, die diese Einschränkungen nicht erfüllen, aber solche Fälle werden in diesem Thema nicht behandelt. 
   
-- **Allgemeine**: eine FolderFieldDefinitionCommon stream Struktur.
+- **Common**: eine FolderFieldDefinitionCommon-Datenstrom Struktur.
     
-## <a name="folderfielddefinitionw-stream-structure"></a>FolderFieldDefinitionW Stream-Struktur
+## <a name="folderfielddefinitionw-stream-structure"></a>FolderFieldDefinitionW-Datenstrom Struktur
 
-Eine FolderFieldDefinitionW Stream-Struktur enthält eine Definition eines benutzerdefinierten Felds mit der Name des Felds im Unicode-Format gespeichert.
+Eine FolderFieldDefinitionW-Datenstrom Struktur enthält eine Definition eines benutzerdefinierten Felds mit dem in Unicode gespeicherten Feldnamen.
   
-Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmittelbar miteinander in der angegebenen Reihenfolge gespeichert:
+Datenelemente in diesem Stream werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der folgenden angegebenen Reihenfolge:
   
-- **FieldType**: FldType (4 Bytes) der Typ dieses Felds.
+- **FieldType**: FldType (4 Bytes), der Typ dieses Felds.
     
-- **FieldNameLength**: WORD (2 Bytes), die Anzahl der Elemente im Array **FieldName** .
+- **FieldNameLength**: Word (2 Bytes), die Anzahl der Elemente im **FieldName** -Array.
     
-- **FieldName**: ein Array von WCHAR. Dies ist der Name des Felds die Darstellung Unicode (UTF-16). Die Anzahl der dieses Array ist gleich **FieldNameLength**. Der Name des Felds erfüllen muss, auf dem Name-Parameter in der [UserProperties.Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode gemäß die Einschränkungen. 
+- **FieldName**: ein Array von Typ WCHAR. Dies ist die Unicode (UTF-16)-Darstellung des Feldnamens. Die Anzahl dieses Arrays ist gleich **FieldNameLength**. Der Feldname muss die Einschränkungen des Parameters Name erfüllen, wie in der [UserProperties. Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode angegeben. 
     
    > [!NOTE]
-   > Aus Gründen der Kompatibilität mit Vorversionen Outlook möglicherweise einige **FieldName** -Werte, die nicht den Eigenschaften dieser Beschränkungen verarbeiten, jedoch solchen Fällen unterliegen nicht in diesem Thema. 
+   > Aus Gründen der Legacy Kompatibilität kann Outlook möglicherweise einige FieldName **** -Werte verarbeiten, die diese Einschränkungen nicht erfüllen, aber solche Fälle werden in diesem Thema nicht behandelt. 
   
-- **Allgemeine**: eine FolderFieldDefinitionCommon stream Struktur.
+- **Common**: eine FolderFieldDefinitionCommon-Datenstrom Struktur.
     
-## <a name="fldtype-enumeration"></a>FldType-Aufzählung
+## <a name="fldtype-enumeration"></a>FldType-aufZählung
 
-**FldType** Enumeration-Werte werden in der folgenden Tabelle aufgeführt. 
+**FldType** -Enumerationswerte sind in der folgenden Tabelle aufgeführt. 
   
 |Name|Wert|Bedeutung|
 |:-----|:-----|:-----|
-|ftNull  <br/> |0 x 0  <br/> |In diesem Feldtyp wird verwendet, um ein Array von Felddefinitionen Null beenden.  <br/> |
-|ftString  <br/> |0 x 1  <br/> |Text  <br/> |
-|ftInteger  <br/> |0 x 3  <br/> |Ganze Zahl  <br/> |
-|ftTime  <br/> |0 x 5  <br/> |Datum/Uhrzeit  <br/> |
-|ftBoolean  <br/> |0 x 6  <br/> |Ja/Nein  <br/> |
-|ftDuration  <br/> |0 x 7  <br/> |Duration  <br/> |
-|ftMultiString  <br/> |0xb  <br/> |Schlüsselwörter  <br/> |
-|ftFloat  <br/> |0xC  <br/> |Zahl oder einen Prozentsatz  <br/> |
-|ftCurrency  <br/> |0xE zurückgeliefert  <br/> |Währung  <br/> |
-|ftCalc  <br/> |0 x 12  <br/> |Formel  <br/> |
-|ftSwitch  <br/> |0 x 13  <br/> |Die Kombination des Typs das erste nicht leeren Feld - Ignorieren nachfolgender Felder angezeigt.  <br/> |
-|ftConcat  <br/> |0 x 17  <br/> |Kombination von Typ Felder und Textabschnitte miteinander verknüpfen.  <br/> |
+|ftNull  <br/> |0x0  <br/> |Dieser Feldtyp wird verwendet, um ein Array von Felddefinitionen mit NULL zu beenden.  <br/> |
+|ftString  <br/> |0x1  <br/> |Text  <br/> |
+|ftInteger  <br/> |0x3  <br/> |Ganze Zahl  <br/> |
+|ftTime  <br/> |0x5  <br/> |Datum/Uhrzeit  <br/> |
+|ftBoolean  <br/> |0x6  <br/> |Ja/Nein  <br/> |
+|ftDuration  <br/> |0x7  <br/> |Dauer  <br/> |
+|ftMultiString  <br/> |0xB  <br/> |Schlüsselwörter  <br/> |
+|ftFloat  <br/> |0xC  <br/> |Zahl oder Prozent  <br/> |
+|ftCurrency  <br/> |0xE  <br/> |Währung  <br/> |
+|ftCalc  <br/> |0x12  <br/> |Formel  <br/> |
+|ftSwitch  <br/> |0x13  <br/> |Kombination aus Typ, der nur das erste nicht leere Feld anzeigt, das nachfolgende ignoriert.  <br/> |
+|ftConcat  <br/> |0x17  <br/> |Kombination von Typ-Join-Feldern und Textfragmenten miteinander.  <br/> |
    
-## <a name="folderfielddefinitioncommon-stream-structure"></a>FolderFieldDefinitionCommon Stream-Struktur
+## <a name="folderfielddefinitioncommon-stream-structure"></a>FolderFieldDefinitionCommon-Datenstrom Struktur
 
-Eine FolderFieldDefinitionCommon Stream-Struktur enthält die Daten der Definition eines benutzerdefinierten Felds, das in eine FolderFieldDefinitionA und eine FolderFieldDefinitionW Abfragesprache ist.
+Eine FolderFieldDefinitionCommon-streamstruktur enthält die Daten einer benutzerdefinierten Felddefinition, die sowohl für eine FolderFieldDefinitionA als auch für eine FolderFieldDefinitionW gilt.
   
-Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmittelbar miteinander in der angegebenen Reihenfolge gespeichert:
+Datenelemente in diesem Stream werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der folgenden angegebenen Reihenfolge:
   
-- **PropSetGuid**: GUID (16 Byte), die Eigenschaftensatz-GUID der entsprechenden MAPI-Eigenschaftennamen im Feld Ordner. Wert des Felds muss PS_PUBLIC_STRINGS, gleich sein, es sei denn, der Feldtyp **FtNone** ist in diesem Fall der Wert des Felds GUID_NULL gleich sein muss. 
+- **PropSetGuid**: GUID (16 Bytes), die Eigenschaftensatz-GUID des entsprechenden MAPI-Eigenschaftsnamens des Folder-Felds. Der Wert dieses Felds muss PS_PUBLIC_STRINGS sein, es sei denn, der Feldtyp ist **ftNone** , und in diesem Fall muss der Wert dieses Felds GUID_NULL entsprechen. 
     
    > [!NOTE]
-   > Aus Gründen der Kompatibilität mit Vorversionen Outlook möglicherweise einige **PropSetGuid** -Werte, die diese Einschränkung nicht erfüllen, jedoch solchen Fällen fallen nicht unter in diesem Thema behandelt. 
+   > Aus Gründen der Kompatibilität mit Legacyversionen kann Outlook möglicherweise einige **PropSetGuid** -Werte verarbeiten, die diese Einschränkung nicht erfüllen, aber solche Fälle werden in diesem Thema nicht behandelt. 
   
-- **Fcapm**: DWORD-Wert (4 Bytes), eine Kombination aus null oder mehr Flags, die in der folgenden Tabelle werden die Werte der und Bedeutung aufgeführt. Flags mit demselben Wert haben Bedeutungen hängt von dem Feld Typ, d. h., FldType-Wert.
+- **fcapm**: DWORD (4 Bytes), eine Kombination aus null oder mehr Flags die Werte, die und Bedeutungen in der folgenden Tabelle aufgeführt sind. Flags mit demselben Wert haben Bedeutungen, die vom Typ des Felds abhängig sind, also FldType-Wert.
     
-    |Namen des Kennzeichens|Wert  |Bedeutung|
+    |FlagName|Wert|Bedeutung|
     |:-----|:-----|:-----|
     |FCAPM_CAN_EDIT  <br/> |0x00000001  <br/> |Das Feld kann bearbeitet werden.  <br/> |
     |FCAPM_CAN_SORT  <br/> |0x00000002  <br/> |Das Feld ist sortierbar.  <br/> |
-    |FCAPM_CAN_GROUP  <br/> |0 x 00000004  <br/> |Das Feld ist Gruppierbare.  <br/> |
-    |FCAPM_MULTILINE_TEXT  <br/> |0 x 00000100  <br/> |Das Feld kann mehrere Textzeilen enthalten.  <br/> |
-    |FCAPM_PERCENT  <br/> |0 x 01000000  <br/> |In diesem Feld der der Typ FtFloat ist ein Prozentsatz-Feld.  <br/> |
-    |FCAPM_DATEONLY  <br/> |0 x 01000000  <br/> |Dieses Feld von der FtTime Typ ist nur Date-Time-Feld ein.  <br/> |
-    |FCAPM_UNITLESS  <br/> |0 x 01000000  <br/> |Für dieses Feld die FtInteger Typ ist keine Einheit in Anzeigeformat zulässig ist; beispielsweise Formate wie "Computer - 640 k.." sind nicht zulässig.  <br/> |
-    |FCAPM_CAN_EDIT_IN_ITEM  <br/> |0 x 80000000  <br/> |Das Feld kann im Element bearbeitet werden: Dies ist insbesondere für benutzerdefinierte Formulare.  <br/> |
+    |FCAPM_CAN_GROUP  <br/> |0x00000004  <br/> |Das Feld ist Gruppierungs basiert.  <br/> |
+    |FCAPM_MULTILINE_TEXT  <br/> |0x00000100  <br/> |Das Feld kann mehrere Textzeilen enthalten.  <br/> |
+    |FCAPM_PERCENT  <br/> |0x01000000  <br/> |Dieses Feld vom Typ ftFloat ist ein Prozentfeld.  <br/> |
+    |FCAPM_DATEONLY  <br/> |0x01000000  <br/> |Dieses Feld vom Typ ftTime ist ein Datum-nur-Zeitfeld.  <br/> |
+    |FCAPM_UNITLESS  <br/> |0x01000000  <br/> |Für dieses Feld vom Typ ftInteger ist keine Einheit im Anzeigeformat zulässig; zum Beispiel solche Formate wie "Computer-640 K..." sind nicht zulässig.  <br/> |
+    |FCAPM_CAN_EDIT_IN_ITEM  <br/> |0x80000000  <br/> |Das Feld kann im Element bearbeitet werden: Dies ist speziell für benutzerdefinierte Formulare.  <br/> |
    
-- **DwString**: DWORD-Wert (4 Bytes). Finden Sie im ersten folgenden Hinweis.
+- **dwString**: DWORD (4 Bytes). Sehen Sie sich die erste folgende Notiz an.
     
-- **DwBitmap**: DWORD-Wert (4 Bytes). Finden Sie im ersten folgenden Hinweis.
+- **dwBitmap**: DWORD (4 Bytes). Sehen Sie sich die erste folgende Notiz an.
     
-- **DwDisplay**: DWORD-Wert (4 Bytes). Finden Sie im ersten folgenden Hinweis.
+- **dwDisplay**: DWORD (4 Bytes). Sehen Sie sich die erste folgende Notiz an.
     
-- **iFmt**: INT (4 Bytes). Für die Feldtypen, die die "Format:" Kombinationsfeld "Neues Feld", "Feld bearbeiten" und "Feldeigenschaften" dialogs, der 0-basierter Indexwert des Formats in diesem Kombinationsfeld ausgewählt. Für die Feldtypen ohne, Kombinationsfeld muss dies 0 sein. Der Wert des Feldes zusammen mit den Feldtyp können die Werte der **DwString**, **DwBitmap**, eindeutig bestimmt und **DwDisplay** Felder, finden Sie unter der ersten folgende Hinweis.
+- **iFmt**: int (4 Bytes). Für die Feldtypen, die das "Format:"-Kombinationsfeld in den Dialogfeldern "neues Feld", "Feld bearbeiten" und "Feldeigenschaften" aufweisen, ist der 0-basierte Index des in diesem Kombinationsfeld ausgewählten Formats. Für die Feldtypen ohne dieses Kombinationsfeld muss es sich um 0 handeln. Der Wert des Felds zusammen mit dem Feldtyp bestimmt die Werte der Felder **dwString**, **dwBitmap**und **dwDisplay** eindeutig, indem Sie die erste folgende Notiz lesen.
     
-- **WszFormulaLength**: WORD (2 Bytes), die Anzahl der Elemente im Array **WszFormulaLength** .
+- **wszFormulaLength**: Word (2 Bytes), die Anzahl der Elemente im **wszFormulaLength** -Array.
     
-- **WszFormulaLength**: ein Array von WCHAR. Dies ist die Darstellung Unicode (UTF-16) das Feld Formel Zeichenfolge in seinem standard-Format. Finden Sie im zweiten folgenden Hinweis für die Beschreibung des Standards und Benutzeroberflächenformate ein Feld Formel ein. Die Anzahl der dieses Array ist gleich **WszFormulaLength**. Die Formel Zeichenfolge muss eine leere Zeichenfolge sein, es sei denn, der Feldtyp **FtCalc**, **FtSwitch** oder **FtConcat**ist.
+- **wszFormulaLength**: ein Array von Typ WCHAR. Dies ist die Unicode (UTF-16)-Darstellung der Formel Zeichenfolge des Felds im Standardformat. Die Beschreibung der Standard-und Benutzeroberflächen Formate der Formel eines Felds finden Sie im zweiten folgenden Hinweis. Die Anzahl dieses Arrays ist gleich **wszFormulaLength**. Die Formel Zeichenfolge muss eine leere Zeichenfolge sein, es sei denn, der Feldtyp ist **ftCalc**, **ftSwitch** oder **ftConcat**.
     
 > [!NOTE]
-> Obwohl die Werte der **DwString**, **DwBitmap**und **DwDisplay** eindeutig basierend auf der **FldType** und dem Wert der **iFmt** , die redundant sind bestimmt werden, sind die richtigen Werte weiterhin erforderlich für richtigen Verarbeitung der Felddefinition von Outlook. Es ist keine einfache Beschreibung des Algorithmus, der diese Ermittlung durchführt. 
+> Obwohl die Werte von **dwString**, **dwBitmap**und **dwDisplay** basierend auf dem **FldType** -Wert und dem **iFmt** -Wert, die redundant sind, eindeutig bestimmt werden, sind ihre korrekten Werte weiterhin für die korrekte Verarbeitung der Felddefinition durch Outlook. Es gibt keine einfache Beschreibung des Algorithmus, der diese Bestimmung ausführt. 
 > 
-> Führen Sie daher, um herauszufinden, welche Werte **DwString**, **DwBitmap**und **DwDisplay** einer bestimmten **FldType** und dem Wert **iFmt** entsprechen, einen Test durch Erstellen eines benutzerdefinierten Felds dieses Typs und mit diesem Format ausgewählt das Kombinationsfeld **Format** vorausgesetzt, dessen Gültigkeit prüfen Sie in der den resultierenden **FolderUserFields** Stream, den für das benutzerdefinierte Feld Outlook erstellt. 
+> Um herauszufinden, welche **dwString**-, **DwBitmap**-und **DwDisplay** -Werte einem bestimmten **FldType** -Wert und **iFmt** -Wert entsprechen, führen Sie einen Test durch, indem Sie ein benutzerdefiniertes Feld dieses Typs erstellen und dieses Format auswählen. untersuchen Sie im Kombinationsfeld **Format** den resultierenden **Beispiel für folderuserfields** -Datenstrom, den Outlook für dieses benutzerdefinierte Feld erstellt. 
   
-Das Feld Formel in seinem UI-Format wird in das Textfeld **Formel** von der **Neuen Felds**, **Feld bearbeiten**und **Feldeigenschaften** Dialogfeldern für das benutzerdefinierte Feld bearbeitet. Der Algorithmus zum Konvertieren einer Formel aus dem UI-Format in das standard-Format hängt von den Feldtyp wie im folgenden beschrieben: 
-- Für die Felder der Typen **FtCalc** und **FtSwitch**, das Standardformat für integrierte Felder, die keine entsprechende MAPI-Eigenschaften sind benannte Eigenschaften für die Kind MNID\_Zeichenfolge ist, wird durch das Feld Namensfragmente, d. h. ersetzen abgerufen `[<field_name>]` mit Fragmenten `[_<field_dispid_decimal>]`. 
+Die Formel des Felds im Benutzeroberflächenformat wird im Textfeld **Formel** der Felder **Neues Feld**, Feld **Bearbeiten**und **Feldeigenschaften** für das Feld User-Defined bearbeitet. Der Algorithmus zum Konvertieren einer Formel vom Benutzeroberflächenformat in das Standardformat hängt vom Feldtyp ab, wie im folgenden beschrieben: 
+- Bei Feldern der Typen **ftCalc** und **ftSwitch**wird das Standardformat für integrierte Felder, deren MAPI-Eigenschaften keine Eigenschaften der Art MNID\_-Zeichenfolge sind, durch Ersetzen von Feld Namen Fragmenten abgerufen, d. `[<field_name>]` mit Fragmenten `[_<field_dispid_decimal>]`. 
 
-  Beispiel: bei einer Formel für ein Feld vom Typ **Formel**, die **FtCalc**mit der Sprache der Office-Benutzeroberfläche wird Englisch (USA), ist das UI-Format ist `[Business Phone] & [My custom field]`, wobei `My custom field` ist der Name eines benutzerdefinierten Felds wäre das Standardformat solche einer Formel `[_14856] & [My custom field]`.
+  Wenn beispielsweise das Benutzeroberflächenformat einer Formel für ein Feld der typFormel, **** also **ftCalc**, mit der Office-Benutzeroberflächensprache Englisch ist, ist `[Business Phone] & [My custom field]`, wobei `My custom field` es sich um den Namen eines benutzerdefinierten Felds handelt, wäre das Standardformat einer solchen Formel `[_14856] & [My custom field]`.
 
-- Für Felder des Typs, **FtConcat**ist das Standardformat durch Ausführen der folgenden ermittelt:
+- Für Felder vom Typ **ftConcat**wird das Standardformat durch Ausführen der folgenden Schritte abgerufen:
 
-  1. Abschneiden Sie führende und nachfolgende Leerzeichen. 
-  2. Analysieren Sie die Formel in einer Sequenz von Fragmenten mit den folgenden zwei Arten: 
-     - Ein Feldname in eckige Klammern, d. h., `[<field_name>]`. 
-     - Eine Teilzeichenfolge, die Klammern nicht enthalten.   
-      Sicherstellen Sie, dass keine zwei Fragmente vom zweiten in der Reihenfolge angrenzen. Wenn die Formel auf diese Weise nicht analysiert werden kann, wird es als ungültig angesehen. 
-  3. Führen Sie die gleiche Ersetzung für Fragmente der ersten Art wie für die Felder **FtCalc** und **FtSwitch** . 
-  4. Für jedes Fragment vom zweiten, escape alle doppelte Anführungszeichen ("" ") Zeichen, gegebenenfalls mit zwei aufeinander folgenden Anführungszeichen Zeichen, und setzen Sie ihn in doppelte Anführungszeichen. 
-  5. Fügen Sie eine Zeichenfolge kaufmännisches und-Zeichen (`&`) zwischen zwei angrenzenden Fragmente.
+  1. AbSchneiden von führenden und nachgestellten Leerzeichen 
+  2. Analysieren Sie die Formel in eine Sequenz von Fragmenten der folgenden beiden Arten: 
+     - Ein Feldname in eckigen Klammern, also `[<field_name>]`. 
+     - Eine Teilzeichenfolge, die keine eckigen Klammern enthält.   
+      Stellen Sie sicher, dass in der Sequenz keine zwei Fragmente der zweiten Art benachbart sind. Wenn die Formel nicht auf diese Weise analysiert werden kann, wird Sie als ungültig betrachtet. 
+  3. Führen Sie dieselbe Ersetzung für Fragmente der ersten Art wie für die Felder **ftCalc** und **ftSwitch** aus. 
+  4. Escapen Sie für jedes Fragment der zweiten Art alle doppelten Anführungszeichen ("" "), sofern vorhanden, mit zwei aufeinander folgenden doppelten Anführungszeichen, und setzen Sie es in doppelte Anführungsstriche. 
+  5. Fügen Sie ein kaufmännisches`&`und-Zeichen () zwischen jedem Paar benachbarter Fragmente ein.
  
-  Beispielsweise mithilfe der Office-Benutzeroberfläche Sprache Englisch (USA), wenn das Format der Benutzeroberfläche einer Formel für ein Feld vom Typ, **FtConcat** ist `text1 [Business Phone] "text2" [My custom field]`, wobei `My custom field` ist der Name eines benutzerdefinierten Felds, das Standardformat für eine solche Formel wäre `""text1" & [_14856] & """text2""" & [My custom field]"`. 
+  Verwenden Sie beispielsweise die Office-Benutzeroberflächensprache Englisch, wenn das Benutzeroberflächenformat einer Formel für ein Feld vom Typ **ftConcat** ist `text1 [Business Phone] "text2" [My custom field]`, wobei `My custom field` es sich um den Namen eines benutzerdefinierten Felds handelt, wäre das Standardformat für eine solche Formel `""text1" & [_14856] & """text2""" & [My custom field]"`. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Beispiel für FolderUserFields-Stream](folderuserfields-stream-sample.md)
+- [Beispiel für folderuserfields-Stream-Beispiel](folderuserfields-stream-sample.md)
 - [Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
 

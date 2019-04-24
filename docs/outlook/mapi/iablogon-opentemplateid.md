@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 751c36d3-c39e-4357-a60a-88685a378de0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: bc68878a25873533162df7e1671e483c3bb77865
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334748"
 ---
 # <a name="iablogonopentemplateid"></a>IABLogon::OpenTemplateID
 
@@ -25,7 +25,7 @@ ms.locfileid: "25384633"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet einen Empfänger-Eintrag, der Daten in einer Host-Adressbuchanbieter hat.
+Öffnet einen Empfängereintrag mit Daten, die sich in einem Host-Adressbuchanbieter befinden.
   
 ```cpp
 HRESULT OpenTemplateID(
@@ -43,41 +43,41 @@ HRESULT OpenTemplateID(
 
  _cbTemplateID_
   
-> [in] Die Byteanzahl von in der Vorlagenbezeichner auf den durch den Parameter _LpTemplateID_ verwiesen. 
+> in Die Anzahl der Bytes im Vorlagenbezeichner, auf die durch den _lpTemplateID_ -Parameter verwiesen wird. 
     
  _lpTemplateID_
   
-> [in] Ein Zeiger auf die Vorlagenbezeichner oder **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md))-Eigenschaft des Empfängers Eintrags geöffnet werden soll.
+> in Ein Zeiger auf den Vorlagenbezeichner oder die **PR_TEMPLATEID** ([pidtagtemplateid (](pidtagtemplateid-canonical-property.md))-Eigenschaft des Empfänger Eintrags, der geöffnet werden soll.
     
  _ulTemplateFlags_
   
-> [in] Eine Bitmaske der Flags verwendet, um anzugeben, wie den Eintrag dargestellt durch die ID der Vorlage zu öffnen. Das folgende Flag kann festgelegt werden:
+> in Eine Bitmaske von Flags, mit der angegeben wird, wie der durch den Vorlagenbezeichner dargestellte Eintrag geöffnet wird. Das folgende Flag kann festgelegt werden:
     
 FILL_ENTRY 
   
-> Hostanbieter wird einen neuen Eintrag im Container basierend auf den Eintrag, dargestellt durch die ID der Vorlage erstellen. Die **OpenTemplateID** -Methode sollte entweder bestimmte Initialisierung des Eintrags für die Hostanbieter ausführen, mithilfe der [IMAPIProp: IUnknown](imapipropiunknown.md) Implementierung im Parameter _LpMAPIPropData_ oder Rückgabe eines benutzerdefinierten **IMAPIProp **-Schnittstelle im _LppMAPIPropNew_ -Parameter. 
+> Der Hostanbieter erstellt anhand des vom Vorlagenbezeichner dargestellten Eintrags einen neuen Eintrag im Container. Die **IABLogon::** opentemplatecollection-Methode sollte entweder eine bestimmte Initialisierung des Eintrags des Host Anbieters durchführen, indem Sie die [IMAPIProp: IUnknown](imapipropiunknown.md) -Implementierung im _lpMAPIPropData_ -Parameter verwenden oder eine benutzerdefinierte IMAPIProp zurückgeben. ** **Schnittstellenimplementierung im _lppMAPIPropNew_ -Parameter. 
     
  _lpMAPIPropData_
   
-> [in] Ein Zeiger auf die Hostanbieter Property-Objekt und Implementierung einer Schnittstelle abgeleitet **IMAPIProp**.
+> in Ein Zeiger auf das Property-Objekt des Host Anbieters und die Implementierung einer von **IMAPIProp**abgeleiteten Schnittstelle.
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die den Typ des Zeigertools der Schnittstelle in der _LppMAPIPropNew_ -Parameter zurückgegeben werden soll. Übergeben von **null** gibt die messaging-Benutzeroberfläche, [IMailUser: IMAPIProp](imailuserimapiprop.md).
+> in Ein Zeiger auf die Schnittstellen-ID (IID), die den Typ des Schnittstellenzeigers darstellt, der im _lppMAPIPropNew_ -Parameter zurückgegeben werden soll. Durch das Übergeben von **null** wird die standardmäßige Messaging-Benutzeroberfläche [IMailUser: IMAPIProp](imailuserimapiprop.md)zurückgegeben.
     
  _lppMAPIPropNew_
   
-> [out] Ein Zeiger auf das gebundenen Property-Objekt und eine Implementierung einer Schnittstelle **IMAPIProp**abgeleitet.
+> Out Ein Zeiger auf das gebundene Property-Objekt und eine Implementierung einer von **IMAPIProp**abgeleiteten Schnittstelle.
     
  _lpMAPIPropSibling_
   
-> [out] Reserviert. **null**muss sein.
+> Out Reserviert muss **null**sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der entsprechende Code wurde erfolgreich zu verwandten Daten in Hostanbieter gebunden.
+> Der entsprechende Code wurde erfolgreich an verknüpfte Daten im Hostanbieter gebunden.
     
 MAPI_E_NO_SUPPORT 
   
@@ -85,45 +85,45 @@ MAPI_E_NO_SUPPORT
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Die Vorlage-ID in der _LpTemplateID_ -Parameter übergeben wird von der Adressbuchanbieter nicht erkannt. 
+> Der im _lpTemplateID_ -Parameter übergebene Vorlagenbezeichner wird vom Adressbuchanbieter nicht erkannt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **OpenTemplateID** -Methode ist nur von adressbuchanbietern implementierte implementiert, die Kontrolle über Kopien der darin enthaltenen Einträge beibehalten werden, die in der Hostanbieter den Containern befinden. Anbieter, **die OpenTemplateID** implementieren, werden als fremden adressbuchanbietern implementierte bezeichnet. Hostanbieter [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md) um kopierten Eintrag erstellen oder öffnen Sie den kopierten Eintrag aufrufen und MAPI für den Aufruf von **OpenTemplateID**übergibt. **OpenTemplateID** öffnet den Eintrag und bindet den Code, der mit Daten in Hostanbieter gesteuert. 
+Die **IABLogon::** opentemplatecode-Methode wird nur von Adressbuch Anbietern implementiert, die die Kontrolle über Kopien Ihrer Einträge behalten müssen, die sich in den Containern von Hostanbietern befinden. Anbieter, die **** opentemplatecode implementieren, werden als fremde Adressbuchanbieter bezeichnet. Host Anbieter rufen [IMAPISupport::](imapisupport-opentemplateid.md) opentemplatecode auf, um einen kopierten Eintrag zu erstellen oder den kopierten Eintrag zu öffnen, und MAPI übergibt den Aufruf an **IABLogon::** opentemplatecode. **IABLogon::** opentemplatecode öffnet den Eintrag und bindet den Code, der ihn steuert, an Daten im Hostanbieter. 
   
-Statt eine Eintrags-ID verwenden, wird **OpenTemplateID** einer anderen-Eigenschaft, den Eintrag Vorlagenbezeichner, **PR_TEMPLATEID**verwendet. Vorlage Bezeichner sollte für Einträge unterstützt werden, dessen Code in ein Hostanbieter an Daten gebunden werden muss.
+Statt eine Eintrags-ID zu verwenden, verwendet **IABLogon::** opentemplatecode eine andere Eigenschaft, den Vorlagenbezeichner des Eintrags, **PR_TEMPLATEID**. Vorlagenbezeichner sollten für Einträge unterstützt werden, deren Code an Daten in einem Hostanbieter gebunden werden muss.
   
-Einige Beispiele für beim Adressbuch-Dienstanbieter **OpenTemplateID** implementieren sollten sind wie folgt: 
+Einige Beispiele dafür, wann ein Adressbuchanbieter **IABLogon::** opentemplateserver implementieren sollte, lauten wie folgt: 
   
-- Die Daten in einem Eintrag der kopierten regelmäßig aktualisieren, damit es mit der ursprünglichen synchronisiert bleibt.
+- So aktualisieren Sie die Daten für einen kopierten Eintrag in regelmäßigen Abständen, damit Sie mit dem Original synchronisiert bleiben.
     
-- Zum Implementieren der Funktionalität, mit denen Hostanbieter implementiert ist nicht möglich, wie dynamisches Auffüllen von Listen, die anhand von Daten auf einem Server in den Eintrag Detailtabelle angezeigt.
+- Zum Implementieren von Funktionen, die der Hostanbieter nicht implementieren kann, wie das dynamische Auffüllen einer Liste, die in der Details-Tabelle des Eintrags angezeigt wird, aus Daten auf einem Server.
     
-- Steuern die Interaktion zwischen Eigenschaften in der Hostanbieter-Eintrag und der ursprünglichen Eintrag, beispielsweise Netzwerke die **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) aus den Werten der Bearbeitungssteuerelemente in der Anzeige der Details, die verschiedene enthalten Komponenten der Adresse.
+- Um die Interaktion zwischen den Eigenschaften im Eintrag des Host Anbieters und dem ursprünglichen Eintrag zu steuern, wie etwa dem Berechnen des **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) aus den Werten der Bearbeitungssteuerelemente in der Detailanzeige, die unterschiedliche Komponenten der Adresse.
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Hostanbieter kopiert oder von Ihrem Dienstanbieter ein Eintrag erstellt, und Sie die Implementierung einer Eigenschaft-Objekt über **OpenTemplateID geben**, behandeln Sie die meisten Anrufe verwalten den Eintrag. Da es bis zu Hostanbieter diese Anrufe an Sie weitergeleitet wird, kann Hostanbieter jedoch intercept jeder Aufruf und benutzerdefinierte Verarbeitung vor dem Weiterleiten des Anrufs führen.
+Wenn ein Hostanbieter einen Eintrag von Ihrem Anbieter kopiert oder erstellt und Sie eine Property-Objekt Implementierung über **IABLogon::** opentemplatecollection bereitstellen, behandeln Sie die meisten Aufrufe, um den Eintrag zu verwalten. Da der Hostanbieter diese Anrufe an Sie weiterleiten muss, kann der Hostanbieter jedoch alle Anrufe abfangen und eine benutzerdefinierte Verarbeitung durchführen, bevor der Anruf weitergeleitet wird.
   
-Sie sollten die folgenden Richtlinien in Ihrer Eigenschaft Objekt Implementierungen verwenden:
+Sie sollten die folgenden Richtlinien in ihren Property-Objekt-Implementierungen verwenden:
   
-- Wenn [IMAPIProp::GetProps](imapiprop-getprops.md) aufgerufen wird, bestimmen Sie, ob die Anforderung für eine berechnete Eigenschaft ist und es es zu behandeln ist. Übertragen Sie alle Anfragen für nicht berechneten Eigenschaften in Hostanbieter. 
+- Wenn [IMAPIProp::](imapiprop-getprops.md) GetProps aufgerufen wird, bestimmen Sie, ob es sich bei der Anforderung um eine berechnete Eigenschaft handelt, und behandeln Sie diese. Übertragen Sie alle Anforderungen für nicht berechnete Eigenschaften an den Hostanbieter. 
     
-- [IMAPIProp::OpenProperty](imapiprop-openproperty.md) aufgerufen wird, um zu öffnen eine Tabelle mit Ausnahme der Details Tabelle anzuzeigen, die Anforderung behandelt. Die meisten Tabellen werden nicht genau in Hostanbieter kopiert. Sie müssen die **IMAPITable** -Implementierung für diese angeforderten Tabellen generieren. Die Details Tabelle **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md))-Eigenschaft muss für den Hostanbieter kopiert werden. Dies ermöglicht diesen Anbieter zum Generieren der Tabelle lokal. Möglicherweise möchten Sie die Display-Tabelle-Implementierung, um anzeigebenachrichtigungen Tabelle generieren umbrochen. 
+- Wenn [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) aufgerufen wird, um eine Tabelle mit Ausnahme der Details-Anzeigetabelle zu öffnen, behandeln Sie die Anforderung. Die meisten Tabellen können nicht genau in den Hostanbieter kopiert werden. Sie müssen die **IMAPITable** -Implementierung für diese angeforderten Tabellen generieren. Die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft der Details-Tabelle muss in den Hostanbieter kopiert werden. Dies ermöglicht es diesem Anbieter, die Tabelle lokal zu generieren. Möglicherweise möchten Sie die Implementierung der Display-Tabelle umbrechen, um Anzeige Tabellen Benachrichtigungen zu generieren. 
     
-- Wenn [IMAPIProp::SetProps](imapiprop-setprops.md) aufgerufen wird, kann die Daten von Hostanbieter überprüft werden, vor, sodass Sie die Eigenschaften festlegen. Sie können überprüfen, ob alle erforderlichen Eigenschaften festzulegen oder berechnet wurden. Den entsprechende Fehlermeldung-Wert zurück, wenn ein Fehler erkannt wurde, und, sofern möglich, eine beliebige zusätzliche Erläuterung über [IMAPIProp::GetLastError](imapiprop-getlasterror.md).
+- Wenn [IMAPIProp::](imapiprop-setprops.md) SetProps aufgerufen wird, kann der Hostanbieter die Daten überprüfen, bevor Sie die Eigenschaften festlegen. Sie können überprüfen, ob alle erforderlichen Eigenschaften festgelegt oder berechnet wurden. Wenn ein Fehler erkannt wird, geben Sie den entsprechenden Fehlerwert und, falls möglich, weitere Erläuterungen über [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md)zurück.
     
-- Wenn [IMAPIProp::SaveChanges](imapiprop-savechanges.md) aufgerufen wird, sollten die Hostanbieter Verarbeitung auszuführen, bevor Sie den Eintrag zu speichern. Speichern Sie alle Daten, die durch die geänderten Eigenschaften, wie eine neue Adresse ein, in der Hostanbieter Eintrag betroffen ist. 
+- Wenn [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) aufgerufen wird, kann der Hostanbieter die Verarbeitung vor dem Speichern des Eintrags ausführen. Sie sollten alle Daten, die von den geänderten Eigenschaften betroffen sind, wie beispielsweise eine neue Adresse, im Eintrag des Host Anbieters speichern. 
     
-Im Allgemeinen nehmen Sie die Implementierung des Eintrags, der Sie übergeben wieder Hostanbieter intercept alle Methoden zum Ausführen der kontextbezogenen Bearbeitung der relevanten Eigenschaften. Wenn das Flag FILL_ENTRY im _UlTemplateFlags_ -Parameter übergeben wird, legen Sie alle Eigenschaften für den Eintrag. 
+Im Allgemeinen sollten Sie die Implementierung des Eintrags, den Sie an den Hostanbieter zurückgeben, abfangen, um alle Methoden zum Durchführen einer kontextspezifischen Manipulation der relevanten Eigenschaften zu übernehmen. Wenn das FILL_ENTRY-Flag im _ulTemplateFlags_ -Parameter übergeben wird, legen Sie alle Eigenschaften für den Eintrag fest. 
   
-Wenn Sie ein neues Property-Objekt in der _LppMAPIPropNew_ -Parameter zurückgeben möchten, rufen Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode der Hostanbieter Property-Objekts einen Verweis zu verwalten. Nachdem sie von der gebundenen Objekt behandelt werden, müssen alle Anrufe über das gebundenen-Objekt, das die Implementierung **IMAPIProp** in _LppMAPIPropNew_ zurückgegeben, die entsprechende Methode in der Host Property-Objekt weitergeleitet werden. 
+Wenn Sie ein neues Property-Objekt im _lppMAPIPropNew_ -Parameter zurückgeben, rufen Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode des Property-Objekts des Host Anbieters auf, um einen Verweis zu verwalten. Alle Aufrufe über das gebundene Objekt, die die **IMAPIProp** -Implementierung in _lppMAPIPropNew_ zurückgegeben wird, sollten an Ihre entsprechende Methode im Host Property-Objekt weitergeleitet werden, nachdem Sie vom gebundenen Objekt behandelt werden. 
   
-Die Eigenschaftenbezeichner der keine benannten Eigenschaften auf, die über Ihre gebundenen Property-Objekt übergeben werden befinden sich im Ihres Anbieters Bezeichner Namespace. Die Implementierung der [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) -Methode sollte die Namen der Eigenschaften festlegen, so, dass es Vorlage-spezifischen Aufgaben ausführen kann. Eigenschaften, die vom Dienstanbieter für dem Hostanbieter übergibt müssen auf ähnliche Weise auch in Ihren Namespace sein. Beispielsweise wenn Sie eine benannte Eigenschaft in **OpenTemplateID**festlegen, verwenden Sie Ihre-Bezeichner für den Namen – es, falls erforderlich, durch Aufrufen der [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode erstellen. 
+Die Eigenschaftenbezeichner aller benannten Eigenschaften, die durch das gebundene Property-Objekt übergeben werden, befinden sich im Bezeichner-Namespace Ihres Anbieters. Durch die Implementierung der [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) -Methode sollten die Namen der Eigenschaften bestimmt werden, sodass Vorlagenspezifische Aufgaben ausgeführt werden können. Entsprechend müssen Eigenschaften, die Ihr Anbieter an den Hostanbieter übergibt, auch in Ihrem Namespace sein. Wenn Sie beispielsweise eine benannte Eigenschaft in openTemplatecode festlegen, sollten Sie einen ihrer Bezeichner für den Namen verwenden, um ihn gegebenenfalls zu erstellen, indem Sie die [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode aufrufen. **** 
   
-Wenn Sie die Eintrags-ID _LpTemplateID_übergebenen nicht kennen, geben Sie MAPI_E_UNKNOWN_ENTRYID zurück.
+Wenn Sie den in _lpTemplateID_übergebenen Eintragsbezeichner nicht erkennen, geben Sie MAPI_E_UNKNOWN_ENTRYID zurück.
   
-Weitere Informationen zum Arbeiten mit-Adressbuch Vorlage Adress-IDs finden Sie unter [als einen fremden Adressbuchanbieter fungiert](acting-as-a-foreign-address-book-provider.md).
+Weitere Informationen zum Arbeiten mit Adressbuchvorlagen-IDs finden Sie unter [agieren als ein fremder Adressbuchanbieter](acting-as-a-foreign-address-book-provider.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -133,7 +133,7 @@ Weitere Informationen zum Arbeiten mit-Adressbuch Vorlage Adress-IDs finden Sie 
   
 [IPropData: IMAPIProp](ipropdataimapiprop.md)
   
-[PidTagTemplateid (kanonische Eigenschaft)](pidtagtemplateid-canonical-property.md)
+[Kanonische Pidtagtemplateid (-Eigenschaft](pidtagtemplateid-canonical-property.md)
   
 [IABLogon : IUnknown](iablogoniunknown.md)
 

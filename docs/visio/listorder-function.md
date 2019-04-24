@@ -7,27 +7,27 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 55ffcfa8-57fd-dbce-e551-8584660e33fa
 description: Gibt die 1-basierte Position der Form in der Liste zurück.
-ms.openlocfilehash: 4ac9e303ac3fd53b75800366aa6cdaff428ef698
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 21f2057c4027735902a127ef16f94d6ed3f69568
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335708"
 ---
 # <a name="listorder-function"></a>LISTORDER Function
 
 Gibt die 1-basierte Position der Form in der Liste zurück.
   
-## <a name="version-information"></a>Versionsinformationen
+## <a name="version-information"></a>Informationen zur Version
 
 Hinzugefügte Version: Visio 2010
  
   
 ## <a name="syntax"></a>Syntax
 
-LISTORDER()
+LISTORDER ()
   
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Ganze Zahl
   

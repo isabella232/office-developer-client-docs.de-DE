@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginatorReturnAddress (kanonische Eigenschaft)
+title: Kanonische Pidtagoriginatorreturnaddress (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1884d83a-826e-494a-a643-c58fa9bdf812
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d771e46c92fd2bdc30857f6ba104784726dfbc62
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+ms.openlocfilehash: 49705c3c56c1268b03e09b9a95a9aa86adb2e16a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335518"
 ---
-# <a name="pidtagoriginatorreturnaddress-canonical-property"></a>PidTagOriginatorReturnAddress (kanonische Eigenschaft)
+# <a name="pidtagoriginatorreturnaddress-canonical-property"></a>Kanonische Pidtagoriginatorreturnaddress (-Eigenschaft
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Binär-codierte Absenderadresse der der Absender der Nachricht enthält.
+Enthält die binär codierte Absenderadresse des Nachrichten Erstellers.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Binär-codierte Absenderadresse der der Absender der Nachricht enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="related-resources"></a>Verwandte Ressourcen
+## <a name="related-resources"></a>Zugehörige Ressourcen
 
-### <a name="header-files"></a>Header-Dateien
+### <a name="header-files"></a>Header Dateien
 
-Mapidefs.h
+Mapidefs. h
   
-> Enthält die Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
-Mapitags.h
+Mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,5 +56,5 @@ Mapitags.h
   
 [Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 
