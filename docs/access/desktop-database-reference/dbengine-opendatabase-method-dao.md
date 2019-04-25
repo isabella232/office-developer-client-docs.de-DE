@@ -1,5 +1,5 @@
 ---
-title: Mit der Methode DBEngine.OpenDatabase (DAO)
+title: DBEngine.OpenDatabase-Methode (DAO)
 TOCTitle: OpenDatabase Method
 ms:assetid: 49fca321-5955-3e69-64ea-da191536eadb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193474(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 1cd4188931999284a6454064a0906b64cf1f519a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294253"
 ---
-# <a name="dbengineopendatabase-method-dao"></a>Mit der Methode DBEngine.OpenDatabase (DAO)
+# <a name="dbengineopendatabase-method-dao"></a>DBEngine.OpenDatabase-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Öffnet eine angegebene Datenbank und gibt einen Verweis auf das **[Database](database-object-dao.md)** -Objekt zurück, das sie darstellt.
+Öffnet eine bestimmte Datenbank und gibt einen Verweis auf das **[Database](database-object-dao.md)**-Objekt zurück, das es darstellt.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . OpenDatabase (***Name***, ***Optionen***, ***ReadOnly***, ***Verbinden***)
+*expression* .OpenDatabase(***Name***, ***Options***, ***ReadOnly***, ***Connect***)
 
-*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **DBEngine**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -42,7 +42,7 @@ ms.locfileid: "28708529"
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -51,11 +51,11 @@ ms.locfileid: "28708529"
 <tr class="odd">
 <td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
-<td><p><strong>Zeichenfolge</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>der Name einer vorhandenen Microsoft Access-Datenbankdatei oder der Datenquellenname (Data Source Name, DSN) einer ODBC-Datenquelle. Weitere Informationen zum Festlegen dieses Wertes finden Sie in der <strong><a href="connection-name-property-dao.md">Name</a></strong> -Eigenschaft.  </p></td>
 </tr>
 <tr class="even">
-<td><p><em>Options</em></p></td>
+<td><p><em>Optionen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Legt entsprechend der Angaben unter den Hinweisen verschiedene Optionen für die Datenbank fest.</p></td>
@@ -82,7 +82,7 @@ Datenbank
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können für das options-Argument folgende Werte verwenden.
+Sie können für das Options-Argument folgende Werte verwenden.
 
 <table>
 <colgroup>
@@ -108,19 +108,19 @@ Sie können für das options-Argument folgende Werte verwenden.
 </table>
 
 
-Wenn Sie eine Datenbank öffnen, wird sie automatisch zur **Databases** -Sammlung hinzugefügt.
+Wenn Sie eine Datenbank öffnen, wird sie automatisch zur **Databases**-Sammlung hinzugefügt.
 
-Einige Aspekte sollten bei Verwenden von Dbname:
+Einige Aspekte sollten bei der Verwendung von dbname berücksichtigt werden:
 
 - Wenn er sich auf eine Datenbank bezieht, die bereits für den Zugriff durch einen anderen Benutzer geöffnet wurde, tritt ein Fehler auf.
 
 - Wenn er sich nicht auf eine vorhandene Datenbank oder einen gültigen ODBC-Datenquellennamen bezieht, tritt ein Fehler auf.
 
-- Ist eine leere Zeichenfolge ("") und "ODBC;" ist *eine Verbindung herstellen* , wird ein Dialogfeld mit allen registrierten ODBC-Datenquellennamen angezeigt, damit der Benutzer eine Datenbank auswählen kann.
+- Wenn es sich um eine Zeichenfolge mit der Länge null handelt ("") und *connect* gleich "ODBC;" ist, wird ein Dialogfeld mit allen registrierten ODBC-Datenquellennamen angezeigt, sodass der Benutzer eine Datenbank auswählen kann.
 
-Um eine Datenbank zu schließen und so das **Database** -Objekt aus der **Databases** -Auflistung zu entfernen, verwenden Sie für das Objekt die **[Close](connection-close-method-dao.md)** -Methode.
+Um eine Datenbank zu schließen und so das **Database**-Objekt aus der **Databases**-Auflistung zu entfernen, verwenden Sie für das Objekt die **[Close](connection-close-method-dao.md)**-Methode.
 
 > [!NOTE]
-> [!HINWEIS] Wenn Sie auf eine ODBC-Datenquelle zugreifen, die mit einem Microsoft Access-Datenbankmodul verbunden ist, können Sie die Leistung der Anwendung verbessern, indem Sie ein **Database** -Objekt öffnen, das mit der ODBC-Datenquelle verbunden ist, anstatt einzelne [TableDef](tabledef-object-dao.md) -Objekte mit bestimmten Tabellen in der ODBC-Datenquelle zu verknüpfen.
+> Wenn Sie auf eine ODBC-Datenquelle zugreifen, die mit einem Microsoft Access-Datenbankmodul verbunden ist, können Sie die Leistung der Anwendung verbessern, indem Sie ein **Database** -Objekt öffnen, das mit der ODBC-Datenquelle verbunden ist, anstatt einzelne [TableDef](tabledef-object-dao.md) -Objekte mit bestimmten Tabellen in der ODBC-Datenquelle zu verknüpfen.
 
 

@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 9f73dfc49a6ec99b726a052c588c032783010081
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307525"
 ---
 # <a name="recordsetupdate-method-dao"></a>Recordset.Update-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Update (***UpdateType***, ***erzwingen***)
+*expression* .Update(***UpdateType***, ***Force***)
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -36,7 +36,7 @@ ms.locfileid: "28721668"
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -49,21 +49,21 @@ ms.locfileid: "28721668"
 <td><p>Eine <strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong> -Konstante, die den Aktualisierungstyp so angibt, wie er in den Einstellungen angegeben ist (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Force</em></p></td>
+<td><p><em>Kraft</em></p></td>
 <td><p>Optional</p></td>
-<td><p><strong>Boolean</strong></p></td>
+<td><p><strong>Boolescher Wert</strong></p></td>
 <td><p>Ein <strong>Boolean</strong> -Wert, der angibt, ob die Änderungen in der Datenbank unabhängig davon erzwungen werden sollen, ob die zugrunde liegenden Daten von einem anderen Benutzer seit dem <strong><a href="recordset-addnew-method-dao.md">AddNew</a></strong> -, <strong><a href="fields-delete-method-dao.md">Delete</a></strong> - oder <strong><a href="recordset-edit-method-dao.md">Edit</a></strong> -Aufruf geändert wurden. Falls <strong>True</strong>, werden die Änderungen erzwungen und Änderungen anderer Benutzer werden einfach überschrieben. Falls <strong>False</strong> (Standard), verursachen Änderungen eines anderen Benutzers, während die Aktualisierung noch aussteht, das Fehlschlagen der Aktualisierung für die Änderungen, die einen Konflikt verursachen. Es treten keine Fehler auf, aber die <strong><a href="recordset-batchcollisioncount-property-dao.md">BatchCollisionCount</a></strong> - und <strong><a href="recordset-batchcollisions-property-dao.md">BatchCollisions</a></strong> -Eigenschaften geben die Anzahl der Konflikte bzw. die Anzahl der Zeilen an, die von Konflikten betroffen sind (nur ODBCDirect-Arbeitsbereiche).  </p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie **Update**, um den aktuellen Datensatz und alle daran vorgenommenen Änderungen zu speichern.
+Verwenden Sie **Update**, um den aktuellen Datensatz und alle Änderungen, die Sie daran vorgenommen haben, zu speichern.
 
 > [!IMPORTANT]
-> [!WICHTIG] Änderungen an dem aktuellen Datensatz gehen in folgenden Fällen verloren:
+> Änderungen an dem aktuellen Datensatz gehen in folgenden Fällen verloren:
 > - Sie verwenden die **Edit**- oder **AddNew**-Methode und wechseln dann zu einem anderen Datensatz, ohne zuvor **Update** zu verwenden.
 > - Sie verwenden **Edit** oder **AddNew** und dann erneut **Edit** oder **AddNew**, ohne zuvor **Update** zu verwenden.
 > - Sie legen die **[Bookmark](recordset-bookmark-property-dao.md)** -Eigenschaft auf einen anderen Datensatz fest.
@@ -76,14 +76,14 @@ In einem ODBCDirect-Arbeitsbereich können Sie Batchaktualisierungen vornehmen, 
 
 Ist in einem Microsoft Access-Arbeitsbereich die **LockEdits**-Eigenschafteneinstellung eines **Recordset**-Objekts in einer Mehrbenutzerumgebung auf **True** festgelegt (pessimistisch gesperrt), bleibt der Datensatz ab dem Moment gesperrt, in dem **Edit** verwendet wird, bis zu dem Zeitpunkt, zu dem die **Update**-Methode ausgeführt oder die Bearbeitung abgebrochen wird. Wenn die **LockEdits**-Eigenschafteneinstellung auf **False** festgelegt ist (optimistisch gesperrt), wird der Datensatz gesperrt und mit dem vorab bearbeiteten Datensatz verglichen, bevor er in der Datenbank aktualisiert wird. 
 
-Wurde der Datensatz nach dem Verwenden der **Edit**-Methode geändert, schlägt der **Update**-Vorgang fehl. Die mit einem Microsoft Access-Datenbankmodul verbundenen ODBC- und installierbaren ISAM-Datenbanken verwenden immer optimistische Sperren. Verwenden Sie erneut die **Update**-Methode, um den **Update**-Vorgang mit Ihren Änderungen fortzusetzen. Zum Zurücksetzen auf als anderer Benutzer den Datensatz geändert, aktualisieren Sie den aktuellen Datensatz mit Move 0.
+Wurde der Datensatz nach dem Verwenden der **Edit**-Methode geändert, schlägt der **Update**-Vorgang fehl. Die mit einem Microsoft Access-Datenbankmodul verbundenen ODBC- und installierbaren ISAM-Datenbanken verwenden immer optimistische Sperren. Verwenden Sie erneut die **Update**-Methode, um den **Update**-Vorgang mit Ihren Änderungen fortzusetzen. Um den Datensatz wiederherzustellen, wie ihn der andere Benutzer geändert hat, aktualisieren Sie den aktuellen Datensatz mithilfe von Move 0.
 
 > [!NOTE]
-> [!HINWEIS] Um einen Datensatz hinzuzufügen, zu bearbeiten oder zu löschen, muss es einen eindeutigen Index im Datensatz in der zugrunde liegenden Datenquelle geben. Andernfalls tritt ein "Berechtigung verweigert"-Fehler im **AddNew** -, **Delete** - oder **Edit** -Methodenaufruf in einem Microsoft Access-Arbeitsbereich auf, oder ein "Ungültiges Argument"-Fehler tritt beim **Update** -Aufruf in einem ODBCDirect-Arbeitsbereich auf.
+> Es muss ein eindeutiger Index für den Datensatz in der zugrunde liegenden Datenquelle vorhanden sein, damit ein Datensatz hinzugefügt, bearbeitet oder gelöscht werden kann. Andernfalls tritt im Methodenaufruf **AddNew**, **Delete** oder **Edit** in einem Microsoft Access-Arbeitsbereich ein Fehler vom Typ "Berechtigung verweigert" auf, oder im **Update**-Aufruf in einem ODBCDirect-Arbeitsbereich tritt ein Fehler vom Typ "Ungültiges Argument" auf.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel demonstriert die **Update** -Methode zusammen mit der **Edit** -Methode.
+Dieses Beispiel demonstriert die **Update**-Methode zusammen mit der **Edit**-Methode.
 
 ```vb
     Sub UpdateX() 

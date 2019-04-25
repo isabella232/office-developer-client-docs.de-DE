@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 5a2ebbb549e309349695d93618f4522a2dbf7a7a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294960"
 ---
 # <a name="databaseexecute-method-dao"></a>Database.Execute-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt aus.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Führen Sie (***Abfrage***, ***Optionen***)
+*expression* .Execute(***Query***, ***Options***)
 
-*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Database**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -38,7 +38,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -47,11 +47,11 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 <tr class="odd">
 <td><p><em>Query</em></p></td>
 <td><p>Erforderlich</p></td>
-<td><p><strong>Zeichenfolge</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p><em>Options</em></p></td>
+<td><p><em>Optionen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p></p></td>
@@ -62,7 +62,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** -Konstanten für Optionen verwenden.
+Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)**-Konstanten für Options verwenden.
 
 <table>
 <colgroup>
@@ -105,7 +105,7 @@ Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeratio
 <td><p>Führt die Abfrage asynchron aus (nur ODBCDirect-Connection- und -QueryDef-Objekte).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Bei der Ausführung</strong></p></td>
+<td><p><strong>dbExecDirect</strong></p></td>
 <td><p>Führt die Anweisung aus, ohne zuvor die SQLPrepare ODBC-API-Funktion aufzurufen (nur ODBCDirect Connection- und QueryDef-Objekte).</p></td>
 </tr>
 </tbody>
@@ -113,18 +113,18 @@ Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeratio
 
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul verwenden zu müssen.
+> ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul verwenden zu müssen.
 
 > [!NOTE]
-> [!HINWEIS] Die Konstanten **dbConsistent** und **dbInconsistent** schließen sich gegenseitig aus. Sie können eins von beiden, jedoch nicht beide in einer angegebenen Instanz von **OpenRecordset** verwenden. Durch die Verwendung der **dbConsistent** - und **dbInconsistent** -Konstanten wird ein Fehler erzeugt.
+> Die Konstanten **dbConsistent** und **dbInconsistent** schließen sich gegenseitig aus. Sie können die eine oder die andere, nicht jedoch beide in einer bestimmten Instanz von **OpenRecordset** verwenden. Die gemeinsame Verwendung von **dbConsistent** und **dbInconsistent** verursacht einen Fehler.
 
-Die **Execute**-Methode gilt nur für Aktionsabfragen. Wenn Sie **Execute** mit einem anderen Abfragetyp verwenden, tritt ein Fehler auf. Da bei einer Aktionsabfrage keine Datensätze zurückgegeben werden, gibt **Execute** kein **Recordset**-Objekt zurück. (Das Durchführen einer SQL Pass-Through-Abfrage in einem ODBCDirect-Arbeitsbereich gibt keinen Fehler zurück, wenn kein **Recordset** zurückgegeben wird.)
+Die **Execute** -Methode ist nur für Aktionsabfragen gültig. Wenn Sie die **Execute** -Methode mit einem anderen Abfragetyp verwenden, tritt ein Fehler auf. Da eine Aktionsabfrage keine Datensätze zurückgibt, gibt die **Execute** -Methode keinen **Datensatz** zurück. (Durch Ausführen einer SQL-Pass-Through-Abfrage in einem ODBCDirect-Arbeitsbereich wird kein Fehler zurückgegeben, wenn kein **Datensatz** zurückgegeben wird).
 
-Mit der **RecordsAffected**-Eigenschaft des **Connection**-, **Database**- oder **QueryDef**-Objekts können Sie die Anzahl von Datensätzen bestimmen, die von der aktuellsten **Execute**-Methode betroffen sind. So umfasst **RecordsAffected** beispielsweise die Anzahl von Datensätzen, die beim Ausführen einer Aktionsabfrage gelöscht, aktualisiert oder eingefügt wurden. Wenn Sie zum Ausführen einer Abfrage die **Execute**-Methode verwenden, ist die **RecordsAffected**-Eigenschaft des **QueryDef**-Objekts auf die Anzahl von betroffenen Datensätzen festgelegt.
+Verwenden Sie die **RecordsAffected** -Eigenschaft des **Connection** -, **Database** - oder **QueryDef** -Objekts, um die Anzahl der von der aktuellsten **Execute** -Methode betroffenen Datensätze zu ermitteln. **RecordsAffected** enthält beispielsweise die Anzahl gelöschter, aktualisierter oder eingefügter Datensätze bei der Ausführung einer Aktionsabfrage. Wenn Sie zum Ausführen einer Abfrage die **Execute** -Methode verwenden, wird bei der **RecordsAffected** -Eigenschaft des **QueryDef** -Objekts die Anzahl der betroffenen Datensätze festgelegt.
 
-Wenn Sie in einem Microsoft Access-Arbeitsbereich eine syntaktisch richtige SQL-Anweisung angeben und über die entsprechenden Berechtigungen verfügen, schlägt die **Execute**-Methode nicht fehl, auch wenn keine einzelne Zeile geändert oder gelöscht werden kann. Daher sollten Sie immer mit der **dbFailOnError**-Option arbeiten, wenn Sie mit der **Execute**-Methode eine Aktualisierung ausführen oder eine Abfrage löschen. Mit dieser Option wird ein Laufzeitfehler generiert, und für alle erfolgreichen Änderungen wird ein Rollback durchgeführt, wenn einer der betroffenen Datensätze gesperrt ist und nicht aktualisiert oder gelöscht werden kann.
+Wenn Sie in einem Microsoft Access-Arbeitsbereich eine syntaktisch korrekte SQL-Anweisung angeben und über die entsprechenden Berechtigungen verfügen, tritt bei der **Execute**-Methode kein Fehler auf, selbst wenn keine einzige Zeile geändert oder gelöscht werden kann. Verwenden Sie daher stets die **dbFailOnError**-Option, wenn Sie eine Update- oder Löschabfrage mit der **Execute** Methode ausführen. Diese Option generiert einen Laufzeitfehler und führt ein Rollback aller erfolgreichen Änderungen durch, wenn einer der betroffenen Datensätze gesperrt ist und nicht aktualisiert oder gelöscht werden kann.
 
-In früheren Versionen des Microsoft Jet-Datenbankmoduls wurden SQL-Anweisungen automatisch in implizite Transaktionen eingebettet. Würde ein Teil einer mit **dbFailOnError** ausgeführten Anweisung fehlschlagen, würde für die Anweisung ein Rollback durchgeführt. Zur Leistungssteigerung wurden diese impliziten Transaktionen ab Version 3.5 entfernt. Wenn Sie älteren DAO-Code aktualisieren, sollten Sie auf jeden Fall explizite Transaktionen bei **Execute**-Anweisungen verwenden.
+In früheren Versionen des Microsoft Jet-Datenbankmoduls wurden SQL-Anweisungen automatisch in implizite Transaktionen eingebettet. Wenn bei der Ausführung eines Teils einer Anweisung ein **dbFailOnError**-Fehler auftrat, wurde ein Rollback für die gesamte Anweisung durchgeführt. Um die Leistung zu verbessern, wurden diese impliziten Transaktionen ab Version 3.5 entfernt. Wenn Sie älteren DAO-Code aktualisieren, denken Sie daran, explizite Transaktionen um **Execute**-Anweisungen zu verwenden.
 
 Um die beste Leistung in einem Microsoft Access-Arbeitsbereich zu erzielen, insbesondere in einer Mehrbenutzerumgebung, schachteln Sie die **Execute** -Methode innerhalb einer Transaktion. Verwenden Sie die **BeginTrans** -Methode bei dem aktuellen **Workspace** -Objekt, und anschließend die **Execute** -Methode, und vervollständigen Sie die Transaktion mithilfe der **CommitTrans** -Methode im **Arbeitsbereich**. Dadurch werden die Änderungen auf einem Datenträger gespeichert und während der Ausführung der Abfrage eingesetzte Sperren aufgehoben.
 

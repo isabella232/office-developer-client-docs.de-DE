@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 7ef7f61ef632617b8d64a3fd9c34e5887e50065c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302961"
 ---
 # <a name="querydefexecute-method-dao"></a>QueryDef.Execute-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Führt eine SQL-Anweisung für das angegebene Objekt aus.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Führen Sie aus (***Optionen***)
+*expression* .Execute(***Options***)
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -42,14 +42,14 @@ Führt eine SQL-Anweisung für das angegebene Objekt aus.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Options</em></p></td>
+<td><p><em>Optionen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p></p></td>
@@ -60,7 +60,7 @@ Führt eine SQL-Anweisung für das angegebene Objekt aus.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** -Konstanten für Optionen verwenden.
+Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)**-Konstanten für Options verwenden.
 
 <table>
 <colgroup>
@@ -103,7 +103,7 @@ Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeratio
 <td><p>Führt die Abfrage asynchron aus (nur ODBCDirect-Connection- und -QueryDef-Objekte).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Bei der Ausführung</strong></p></td>
+<td><p><strong>dbExecDirect</strong></p></td>
 <td><p>Führt die Anweisung aus, ohne zuvor die SQLPrepare ODBC-API-Funktion aufzurufen (nur ODBCDirect Connection- und QueryDef-Objekte).</p></td>
 </tr>
 </tbody>
@@ -111,18 +111,18 @@ Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeratio
 
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul verwenden zu müssen.
+> ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul verwenden zu müssen.
 
 > [!NOTE]
-> [!HINWEIS] Die Konstanten **dbConsistent** und **dbInconsistent** schließen sich gegenseitig aus. Sie können die eine oder die andere, nicht jedoch beide in einer bestimmten Instanz von **OpenRecordset** verwenden. Die gemeinsame Verwendung von **dbConsistent** und **dbInconsistent** verursacht einen Fehler.
+> Die Konstanten **dbConsistent** und **dbInconsistent** schließen sich gegenseitig aus. Sie können die eine oder die andere, nicht jedoch beide in einer bestimmten Instanz von **OpenRecordset** verwenden. Die gemeinsame Verwendung von **dbConsistent** und **dbInconsistent** verursacht einen Fehler.
 
-Verwenden Sie die **[RecordsAffected](querydef-recordsaffected-property-dao.md)** -Eigenschaft des **[Connection](connection-object-dao.md)** -, **[Database](database-object-dao.md)** - oder **[QueryDef](querydef-object-dao.md)** -Objekts, um die Anzahl der Datensätze zu bestimmen, die von der letzten **[Execute](querydef-execute-method-dao.md)** -Methode betroffen sind. Beispiel: **RecordsAffected** enthält die Anzahl von Datensätzen, die beim Ausführen einer Aktionsabfrage gelöscht, aktualisiert oder eingefügt werden. Wenn Sie eine Abfrage mit der **Execute** -Methode ausführen, wird die **RecordsAffected** -Eigenschaft des **QueryDef** -Objekts auf die Anzahl der betroffenen Datensätze festgelegt.
+Verwenden Sie die **[RecordsAffected](querydef-recordsaffected-property-dao.md)**-Eigenschaft des **[Connection](connection-object-dao.md)**-, **[Database](database-object-dao.md)**- oder **[QueryDef](querydef-object-dao.md)**-Objekts, um die Anzahl der Datensätze zu bestimmen, die von der letzten **[Execute](querydef-execute-method-dao.md)**-Methode betroffen sind. Beispiel: **RecordsAffected** enthält die Anzahl von Datensätzen, die beim Ausführen einer Aktionsabfrage gelöscht, aktualisiert oder eingefügt werden. Wenn Sie eine Abfrage mit der **Execute**-Methode ausführen, wird die **RecordsAffected**-Eigenschaft des **QueryDef**-Objekts auf die Anzahl der betroffenen Datensätze festgelegt.
 
-Wenn Sie in einem Microsoft Access-Arbeitsbereich eine syntaktisch korrekte SQL-Anweisung angeben und über die entsprechenden Berechtigungen verfügen, tritt bei der **Execute** -Methode kein Fehler auf, selbst wenn keine einzige Zeile geändert oder gelöscht werden kann. Verwenden Sie daher stets die **dbFailOnError** -Option, wenn Sie eine Update- oder Löschabfrage mit der **Execute** Methode ausführen. Diese Option generiert einen Laufzeitfehler und führt ein Rollback aller erfolgreichen Änderungen durch, wenn einer der betroffenen Datensätze gesperrt ist und nicht aktualisiert oder gelöscht werden kann.
+Wenn Sie in einem Microsoft Access-Arbeitsbereich eine syntaktisch korrekte SQL-Anweisung angeben und über die entsprechenden Berechtigungen verfügen, tritt bei der **Execute**-Methode kein Fehler auf, selbst wenn keine einzige Zeile geändert oder gelöscht werden kann. Verwenden Sie daher stets die **dbFailOnError**-Option, wenn Sie eine Update- oder Löschabfrage mit der **Execute** Methode ausführen. Diese Option generiert einen Laufzeitfehler und führt ein Rollback aller erfolgreichen Änderungen durch, wenn einer der betroffenen Datensätze gesperrt ist und nicht aktualisiert oder gelöscht werden kann.
 
-In früheren Versionen des Microsoft Jet-Datenbankmoduls wurden SQL-Anweisungen automatisch in implizite Transaktionen eingebettet. Wenn bei der Ausführung eines Teils einer Anweisung ein **dbFailOnError** -Fehler auftrat, wurde ein Rollback für die gesamte Anweisung durchgeführt. Um die Leistung zu verbessern, wurden diese impliziten Transaktionen ab Version 3.5 entfernt. Wenn Sie älteren DAO-Code aktualisieren, denken Sie daran, explizite Transaktionen um **Execute** -Anweisungen zu verwenden.
+In früheren Versionen des Microsoft Jet-Datenbankmoduls wurden SQL-Anweisungen automatisch in implizite Transaktionen eingebettet. Wenn bei der Ausführung eines Teils einer Anweisung ein **dbFailOnError**-Fehler auftrat, wurde ein Rollback für die gesamte Anweisung durchgeführt. Um die Leistung zu verbessern, wurden diese impliziten Transaktionen ab Version 3.5 entfernt. Wenn Sie älteren DAO-Code aktualisieren, denken Sie daran, explizite Transaktionen um **Execute**-Anweisungen zu verwenden.
 
-Um eine optimale Leistung in einem Microsoft Access-Arbeitsbereich, insbesondere in einer Mehrbenutzerumgebung zu erzielen, schachteln Sie die **Execute** -Methode innerhalb einer Transaktion. Führen Sie die **[BeginTrans](workspace-begintrans-method-dao.md)** -Methode für das aktuelle **[Workspace](workspace-object-dao.md)** -Objekt aus, verwenden Sie dann die **Execute** -Methode, und schließen Sie die Transaktion durch Ausführen der **[CommitTrans](workspace-committrans-method-dao.md)** -Methode für das **Workspace** -Objekt ab. Dadurch werden die Änderungen auf Datenträger gespeichert und alle Sperrungen aufgehoben, die während der Ausführung der Abfrage festlegt wurden.
+Um eine optimale Leistung in einem Microsoft Access-Arbeitsbereich, insbesondere in einer Mehrbenutzerumgebung zu erzielen, schachteln Sie die **Execute**-Methode innerhalb einer Transaktion. Führen Sie die **[BeginTrans](workspace-begintrans-method-dao.md)**-Methode für das aktuelle **[Workspace](workspace-object-dao.md)**-Objekt aus, verwenden Sie dann die **Execute**-Methode, und schließen Sie die Transaktion durch Ausführen der **[CommitTrans](workspace-committrans-method-dao.md)**-Methode für das **Workspace**-Objekt ab. Dadurch werden die Änderungen auf Datenträger gespeichert und alle Sperrungen aufgehoben, die während der Ausführung der Abfrage festlegt wurden.
 
 ## <a name="example"></a>Beispiel
 
@@ -243,9 +243,9 @@ In diesem Beispiel demonstrates the **Execute** method when run from both a **Qu
 
 <br/>
 
-The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.
+Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage ausgeführt wird. Die Parameter-Auflistung wird verwendet, um den Organization-Parameter der myActionQuery-Abfrage festzulegen, bevor die Abfrage ausgeführt wird.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Public Sub ExecParameterQuery()
