@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 46bc0a50e31555189c069e0ee09c4c84349c04c7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295429"
 ---
 # <a name="create-index-statement-microsoft-access-sql"></a>CREATE INDEX-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Erstellt einen neuen Index für eine vorhandene Tabelle.
 
 > [!NOTE]
-> Für Microsoft Access - Datenbanken unterstützt die Verwendung der CREATE INDEX (mit Ausnahme von So erstellen Sie einen Pseudoindex für eine verknüpfte ODBC-Tabelle) oder anderer Anweisungen in Data Definition Language, (Datendefinitionssprache DDL) Microsoft Access-Datenbankmodul nicht. Verwenden Sie stattdessen Methoden DAO **Erstellen** . Weitere Informationen finden Sie unter "Anmerkungen".
+> Bei Nicht-Microsoft Access-Datenbankmodulen wird die Verwendung von CREATE INDEX (außer zum Erstellen eines Pseudoindexes für eine verknüpfte ODBC-Tabelle) oder von DDL-Anweisungen (Data Definition Language) vom Microsoft Access-Datenbankmodul nicht unterstützt. Verwenden Sie stattdessen die **Create**-Methoden von DAO. Weitere Informationen finden Sie unter "Anmerkungen".
 
 ## <a name="syntax"></a>Syntax
 
-Erstellen von \[ UNIQUE \] INDEX *Index* ON *Tabelle* (*Feld* \[ASC | DESC\]\[, *Feld* \[ASC | DESC\],... \]) \[WITH {PRIMARY | DISALLOW NULL | IGNORE NULL}\]
+CREATE \[ UNIQUE \] INDEX *index* ON *table* (*field* \[ASC|DESC\]\[, *field* \[ASC|DESC\], …\]) \[WITH { PRIMARY | DISALLOW NULL | IGNORE NULL }\]
 
-Die CREATE INDEX-Anweisung besteht aus folgenden Komponenten:
+Die CREATE INDEX-Anweisung setzt sich wie folgt zusammen:
 
 <table>
 <colgroup>
@@ -40,49 +40,49 @@ Die CREATE INDEX-Anweisung besteht aus folgenden Komponenten:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Komponente</p></th>
+<th><p>Part</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>Index</em></p></td>
-<td><p>Der Name des zu erstellenden Indexes.</p></td>
+<td><p>Der Name des zu erstellenden Index.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>table</em></p></td>
-<td><p>Der Name der vorhandenen Tabelle, in der der Index enthalten sein wird.</p></td>
+<td><p>Der Name der vorhandenen Tabelle, die den Index enthalten soll.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Feld</em></p></td>
+<td><p><em>field</em></p></td>
 <td><p>Der Name des oder der zu indizierenden Felder. Setzen Sie den Feldnamen in Klammern, und listen Sie ihn im Anschluss an den Tabellennamen auf, um einen Index mit einem Feld zu erstellen. Wenn Sie einen Index mit mehreren Feldern erstellen möchten, listen Sie jedes Feld auf, dass im Index eingeschlossen werden soll. Verwenden Sie das reservierte Wort DESC, um Indizes in absteigender Reihenfolge zu erstellen. Andernfalls wird davon ausgegangen, dass die Indizes in aufsteigender Reihenfolge erstellt werden sollen.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um im indizierten Feld bzw. in den indizierten Feldern keine duplizierten Werte zuzulassen, verwenden Sie das reservierte Wort UNIQUE.
+Verwenden Sie das reservierte Wort UNIQUE, um doppelte Werte im indizierten Feld oder in Feldern verschiedener Datensätze zu verhindern.
 
-In der optionalen WITH-Klausel können Sie Datenüberprüfungsregeln erzwingen. Es bestehen folgende Möglichkeiten:
+In der optionalen WITH-Klausel können Sie Gültigkeitsprüfungsregeln für Daten erzwingen. Sie können:
 
-- Unter Verwendung der DISALLOW NULL-Option Einträge vom Typ Null in dem oder den indizierten Feldern neuer Datensätze nicht zulassen.
+- Sie können NULL-Einträge im indizierten Feld oder in Feldern neuer Datensätze untersagen, indem Sie die Option DISALLOW NULL verwenden.
 
-- Datensätze mit **Null** -Werten in dem oder den indizierten Feldern unter Verwendung der IGNORE NULL-Option vom Index ausschließen.
+- Sie können verhindern, dass Datensätze mit **NULL**-Werten in dem/den indizierten Feld/Feldern in den Index aufgenommen werden, indem Sie die Option IGNORE NULL verwenden.
 
 - Das oder die indizierten Felder unter Verwendung des reservierten Worts PRIMARY als Primärschlüssel bestimmen. Dies setzt voraus, dass der Schlüssel eindeutig ist, sodass das reservierte Wort UNIQUE ausgelassen werden kann.
 
-CREATE INDEX können Sie in einer verknüpften Tabelle in einer ODBC-Datenquelle, wie beispielsweise Microsoft SQL Server erstellen, die nicht bereits über einen Index verfügt. Sie brauchen nicht mit der Berechtigung oder Zugriff auf den Remoteserver zu erstellen, und die Remotedatenbank und wird nicht von den Pseudoindex nicht betroffen. Verwenden Sie dieselbe Syntax für verknüpfte und systemeigene Tabellen. Systemeigene für eine Tabelle, die normalerweise schreibgeschützt wären erstellen kann insbesondere dann hilfreich sein.
+Sie können CREATE INDEX verwenden, um einen Pseudoindex für eine verknüpfte Tabelle in einer ODBC-Datenquelle (wie z. B. Microsoft SQL Server) zu erstellen, die nicht bereits über einen Index verfügt. Sie benötigen keine Berechtigung für oder Zugriff auf den Remoteserver, um einen Pseudoindex erstellen zu können, und die Remotedatenbank erkennt den Pseudoindex nicht und ist auch nicht davon betroffen. Für verknüpfte und systemeigene Tabellen wird dieselbe Syntax verwendet. Es kann besonders nützlich sein, einen Pseudoindex für eine Tabelle zu erstellen, die normalerweise schreibgeschützt ist.
 
 Sie können auch die [ALTER TABLE](alter-table-statement-microsoft-access-sql.md)-Anweisung verwenden, um einen Index mit einem oder mehreren Feldern zu einer Tabelle hinzuzufügen, und Sie können die ALTER TABLE-Anweisung oder die [DROP](drop-statement-microsoft-access-sql.md)-Anweisung verwenden, um einen Index zu entfernen, der über die ALTER TABLE- oder CREATE INDEX-Anweisung erstellt wurde.
 
 > [!NOTE]
-> [!HINWEIS] Verwenden Sie nicht das reservierte Wort PRIMARY, wenn Sie einen neuen Index für eine Tabelle erstellen, die bereits über einen Primärschlüssel verfügt. Andernfalls wird in diesem Fall ein Fehler generiert.
+> Verwenden Sie das reservierte Wort PRIMARY nicht, wenn Sie einen neuen Index für eine Tabelle erstellen, die bereits einen Primärschlüssel aufweist. Andernfalls tritt ein Fehler auf.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird ein Index erstellt, der aus dem Home Phone-Feld (Telefon privat) und dem Extension-Feld (Durchwahl) in der Employees-Tabelle (Personal) besteht.
+This example creates an index consisting of the fields Home Phone and Extension in the Employees table.
 
 ```vb
     Sub CreateIndexX1() 
@@ -104,9 +104,7 @@ Im folgenden Beispiel wird ein Index erstellt, der aus dem Home Phone-Feld (Tele
 
 <br/>
 
-Im folgenden Beispiel wird ein Index für die Customers-Tabelle (Kunden) unter Verwendung des CustomerID-Felds (Kunden-Nr) erstellt. Für das CustomerID-Feld sind keine duplizierten Datensätze zulässig, und darüber hinaus sind keine Nullwerte zulässig.
-
-
+This example creates an index on the Customers table using the CustomerID field. No two records can have the same data in the CustomerID field, and no Null values are allowed.
 
 ```vb
     Sub CreateIndexX2() 

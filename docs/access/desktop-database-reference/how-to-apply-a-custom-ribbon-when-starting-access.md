@@ -1,7 +1,7 @@
 ---
 title: Anwenden eines benutzerdefinierten Menübands beim Starten von Access
 TOCTitle: Apply a custom ribbon when starting Access
-description: Informationen zum Anwenden von benutzerdefinierten Menüleisten beim Öffnen einer Datenbank in Access 2013.
+description: Anwenden eines benutzerdefinierten Menübands beim Öffnen einer Datenbank in Access 2013.
 ms:assetid: 9e8ddf95-35aa-4e57-8422-d770da14711e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198313(v=office.15)
 ms:contentKeyID: 48546659
@@ -9,11 +9,11 @@ ms.date: 10/16/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 0acd99a498a74f098b08814e9f11d49b28bae097
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291957"
 ---
 # <a name="apply-a-custom-ribbon-when-starting-access"></a>Anwenden eines benutzerdefinierten Menübands beim Starten von Access
 
@@ -21,15 +21,15 @@ ms.locfileid: "28709621"
 
 Das Menüband verwendet textbasiertes, deklaratives XML-Markup, das die Erstellung und Anpassung des Menübands vereinfacht. Mit ein paar XML-Zeilen können Sie genau die passende Benutzeroberfläche für den Benutzer erstellen. Access bietet eine enorme Flexibilität beim Anpassen der Menüband-Benutzeroberfläche. So können Sie das Anpassungsmarkup zum Beispiel in einer Tabelle speichern, in eine VBA-Prozedur einbetten, in einer anderen Access-Datenbank speichern oder mit einem Excel-Arbeitsblatt verknüpfen. Dieses Thema beschreibt, wie angepasste Menübänder beim Öffnen einer Datenbank angewendet werden.
 
-## <a name="make-the-ribbon-customization-xml-available"></a>Anpassung der Multifunktionsleiste XML verfügbar machen
+## <a name="make-the-ribbon-customization-xml-available"></a>XML für die Menübandanpassung verfügbar machen
 
-### <a name="store-ribbon-extensibility-xml-in-a-table"></a>Menüband-Erweiterbarkeits-XML in einer Tabelle speichern
+### <a name="store-ribbon-extensibility-xml-in-a-table"></a>Speichern der Menübanderweiterungs-XML in einer Tabelle
 
 Eine Möglichkeit zum Verfügbarmachen der Menübandanpassungen ist, sie in einer Tabelle zu speichern. Wenn Sie die Anpassungen in einer Tabelle mit dem Namen **USysRibbons** speichern, können die Anpassungen ohne Makros oder VBA-Code implementiert werden.
 
-**USysRibbons** ist eine vom Benutzer erstellte Systemtabelle. Die Tabelle muss mit bestimmten Spaltennamen für die menübandanpassungen implementiert werden erstellt werden. 
+**USysRibbons** ist eine vom Benutzer erstellte Systemtabelle. Die Tabelle muss mit bestimmten Spaltennamen erstellt werden, damit die Menübandanpassungen implementiert werden können. 
 
-In der folgenden Tabelle sind die Einstellungen beschrieben, die beim Erstellen der Tabelle **USysRibbons** verwendet werden müssen.
+Die folgende Tabelle enthält die zu verwendenden Einstellungen zum Erstellen der **USysRibbons**-Tabelle.
 
 <table>
 <colgroup>
@@ -53,21 +53,21 @@ In der folgenden Tabelle sind die Einstellungen beschrieben, die beim Erstellen 
 <tr class="even">
 <td><p><strong>RibbonXML</strong></p></td>
 <td><p>Memo</p></td>
-<td><p>Enthält die Menüband-Erweiterbarkeits-XML (RibbonX), die die menübandanpassung definiert wird.</p></td>
+<td><p>Enthält die Menübanderweiterungs-XML (RibbonX) zur Definition der Menübandanpassung.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="load-ribbon-extensibility-xml-programmatically"></a>Menüband-Erweiterbarkeits-XML programmgesteuert laden
+### <a name="load-ribbon-extensibility-xml-programmatically"></a>Menübanderweiterungs-XML programmatisch laden
 
 Mit der **[LoadCustomUI](https://docs.microsoft.com/office/vba/api/Access.Application.LoadCustomUI)** -Methode können Sie Menübandanpassungen programmatisch laden. Um das Menüband zu erstellen und der Anwendung zur Verfügung zu stellen, erstellen Sie in der Regel zunächst ein Modul in der Datenbank mit einer Prozedur, die die **LoadCustomUI** -Methode aufruft, sodass der Name des Menübands und das XML-Anpassungsmarkup übergeben werden.
 
-Das XML-Markup kann von einem **Recordset** -Objekt stammen, das aus einer Tabelle, einer datenbankexternen Quelle wie einer XML-Datei, die in eine Zeichenfolge analysiert wird, oder aus einer direkt in die Prozedur eingebetteten XML-Datei stammen kann. Sie können verschiedene Menübänder anhand mehrerer Aufrufe der **LoadCustomUI** -Methode erstellen, wobei verschiedenes XML übergeben wird, solange der Name jedes Menübands und das **id** -Attribut der Registerkarten des Menübands eindeutig sind.
+Das XML-Markup kann von einem **Recordset**-Objekt stammen, das aus einer Tabelle, einer datenbankexternen Quelle wie einer XML-Datei, die in eine Zeichenfolge analysiert wird, oder aus einer direkt in die Prozedur eingebetteten XML-Datei stammen kann. Sie können verschiedene Menübänder anhand mehrerer Aufrufe der **LoadCustomUI**-Methode erstellen, wobei verschiedenes XML übergeben wird, solange der Name jedes Menübands und das **id**-Attribut der Registerkarten des Menübands eindeutig sind.
 
-Nach Abschluss der Prozedur erstellen Sie ein AutoExec-Makro, das die Prozedur über die RunCode-Aktion aufruft. Auf diese Weise, wenn die Anwendung gestartet wird, wird automatisch die **LoadCustomUI** -Methode ausgeführt, und alle benutzerdefinierten Multifunktionsleisten der Anwendung zur Verfügung gestellt werden.
+Nachdem der Vorgang abgeschlossen ist, erstellen Sie ein AutoExec-Makro, das die Prozedur mithilfe der RunCode-Aktion aufruft. Auf diese Weise wird beim Starten der Anwendung die **LoadCustomUI**-Methode automatisch ausgeführt, und alle benutzerdefinierten Menübänder werden für die Anwendung verfügbar gemacht.
 
-## <a name="apply-customized-ribbons-when-access-starts"></a>Anwenden Sie benutzerdefinierte Multifunktionsleisten beim Starten von Access
+## <a name="apply-customized-ribbons-when-access-starts"></a>Anwenden von angepassten Menübändern beim Starten von Access
 
 Gehen Sie wie folgt vor, um eine benutzerdefiniert Oberfläche anzuwenden, die beim Starten der Anwendung zur Verfügung steht:
 
@@ -75,13 +75,13 @@ Gehen Sie wie folgt vor, um eine benutzerdefiniert Oberfläche anzuwenden, die b
 
 2.  Schließen Sie die Anwendung, und starten Sie sie neu.
 
-3.  Wählen Sie die **Microsoft Office-Schaltfläche**![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102") und wählen Sie dann auf **Access-Optionen**.
+3.  Klicken Sie auf die **Microsoft Office-Schaltfläche**![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102"), und wählen Sie dann **Access-Optionen** aus.
 
-4.  Wählen Sie die Option **Aktuelle Datenbank** und klicken Sie dann im Abschnitt **Menüband- und Symbolleistenoptionen** wählen Sie in der Liste **Name** des Menübands, und wählen Sie ein Menüband aus.
+4.  Klicken Sie auf die Option **Aktuelle Datenbank**, und klicken Sie dann im Abschnitt **Menüband- und Symbolleistenoptionen** auf die Liste **Menübandname**. Wählen Sie dann ein Menüband aus.
 
 5.  Schließen Sie jetzt die Anwendung, und starten Sie sie neu. Die ausgewählte Benutzeroberfläche wird jetzt angezeigt.
 
 > [!NOTE]
-> [!HINWEIS] Weitere Informationen über die Menüband-Benutzeroberfläche in anderen Office-Anwendungen finden Sie unter [Übersicht über das Office Fluent-Menüband](https://docs.microsoft.com/office/vba/Library-Reference/Concepts/overview-of-the-office-fluent-ribbon).
+> Weitere Informationen über die Menüband-Benutzeroberfläche in anderen Office-Anwendungen finden Sie unter [Übersicht über das Office Fluent-Menüband](https://docs.microsoft.com/office/vba/Library-Reference/Concepts/overview-of-the-office-fluent-ribbon).
 
 
