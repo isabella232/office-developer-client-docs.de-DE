@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: a94d34a2dbe8043e6db637b649f59047cf3f1dda
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301057"
 ---
 # <a name="querydef-object-dao"></a>QueryDef-Objekt (DAO)
 
 **Gilt für:** Access 2013 | Office 2013 
 
-Ein **QueryDef** -Objekt ist eine gespeicherte Definition einer Abfrage in einer Datenbank des Microsoft Access-Datenbankmoduls.
+Ein **QueryDef**-Objekt ist eine gespeicherte Definition einer Abfrage in einer Datenbank des Microsoft Access-Datenbankmoduls.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können das **QueryDef** -Objekt verwenden, um eine Abfrage zu definieren. Sie haben beispielsweise folgende Möglichkeiten:
 
@@ -44,25 +44,25 @@ Sie können sich ein dauerhaftes **QueryDef** -Objekt in einem Microsoft Access-
 
 Die bevorzugte Methode zum Verwenden des systemeigenen SQL-Dialekts eines externen Datenbankmoduls, auf das über das Microsoft Access-Datenbankmodul zugegriffen wird, ist über **QueryDef** -Objekte. Sie können z. B. eine Microsoft SQL Server-Abfrage erstellen und in einem **QueryDef** -Objekt speichern. Wenn Sie eine SQL-Abfrage aus einem anderen als dem Microsoft Access-Datenbankmodul verwenden möchten, müssen Sie eine **Connect** -Eigenschaftenzeichenfolge angeben, die auf die externe Datenquelle verweist. Abfragen mit gültigen **Connect** -Eigenschaften umgehen das Microsoft Access-Datenbankmodul und übergeben die Abfrage direkt zur Verarbeitung an den externen Datenbankserver.
 
-Verwenden Sie zum Erstellen eines neuen **QueryDef** -Objekts die **CreateQueryDef** -Methode. In Microsoft Access-Arbeitsbereich erstellen Wenn Sie eine Zeichenfolge für das Namenargument bereitstellen oder wenn Sie die **Name** -Eigenschaft das neue **QueryDef** -Objekt explizit auf eine nicht – leere Zeichenfolge festgelegt Sie eine permanente **QueryDef-Objekt** , das automatisch an die **QueryDefs** -Auflistung angefügt und auf dem Datenträger gespeichert werden. Bereitstellung eine leere Zeichenfolge als Argument für den Namen oder die **Name** -Eigenschaft auf eine leere Zeichenfolge explizit festlegen führt zu einem temporäre **QueryDef** -Objekt.
+Um ein neues **QueryDef**-Objekt zu erstellen, verwenden Sie die **CreateQueryDef**-Methode. Wenn Sie in einem Microsoft Access-Arbeitsbereich eine Zeichenfolge für das name-Argument eingeben oder die **Name**-Eigenschaft des neuen **QueryDef**-Objekts explizit auf eine Zeichenfolge festlegen, deren Länge nicht null ist, erstellen Sie ein permanentes **QueryDef**-Objekt, das automatisch an die **QueryDefs**-Auflistung angehängt und auf dem Datenträger gespeichert wird. Wenn Sie eine Zeichenfolge der Länge null als name-Argument eingeben oder die **Name**-Eigenschaft explizit auf eine Zeichenfolge der Länge null festlegen, führt dies zu einem temporären **QueryDef**-Objekt.
 
-Verwenden Sie eine der folgenden Syntaxformen, um auf ein **QueryDef** -Objekt in einer Auflistung anhand seiner Ordnungszahl oder seiner Einstellung der **Name** -Eigenschaft zu verweisen:
+Verwenden Sie eine der folgenden Syntaxformen, um auf ein **QueryDef**-Objekt in einer Auflistung anhand seiner Ordnungszahl oder seiner Einstellung der **Name**-Eigenschaft zu verweisen:
 
 QueryDefs(0)
 
 QueryDefs("name")
 
-QueryDefs\! \[ Namen\]
+QueryDefs\!\[ name\]
 
-Auf temporäre **QueryDef** -Objekte können Sie nur anhand der Objektvariablen verweisen, die Sie diesen zugewiesen haben.
+Auf temporäre **QueryDef**-Objekte können Sie nur anhand der Objektvariablen verweisen, die Sie diesen zugewiesen haben.
 
-**Link bereitgestellt, von** der Community [UtterAccess](https://www.utteraccess.com) . UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Link zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
-- [Abfragen: Dokument SQL zu Word](https://www.utteraccess.com/wiki/index.php/queries:_document_sql_to_word)
+- [Abfragen: Dokument-SQL für Word](https://www.utteraccess.com/wiki/index.php/queries:_document_sql_to_word)
 
 ## <a name="example"></a>Beispiel
 
-Mit diesem Beispiel wird ein neues **QueryDef** -Objekt erstellt, das an die **QueryDefs** -Auflistung des **Database** -Objekts der Northwind-Datenbank angehängt wird. Anschließend werden die **QueryDefs** -Auflistung und die **Properties** -Auflistung des neuen **QueryDef** -Objekts aufgeführt.
+Mit diesem Beispiel wird ein neues **QueryDef**-Objekt erstellt, das an die **QueryDefs**-Auflistung des **Database**-Objekts der Northwind-Datenbank angehängt wird. Anschließend werden die **QueryDefs**-Auflistung und die **Properties**-Auflistung des neuen **QueryDef**-Objekts aufgeführt.
 
 ```vb
     Sub QueryDefX() 
@@ -113,7 +113,7 @@ Mit diesem Beispiel wird ein neues **QueryDef** -Objekt erstellt, das an die **Q
 
 <br/>
 
-In diesem Beispiel wird die **CreateQueryDef** -Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef** -Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
+In diesem Beispiel wird die **CreateQueryDef**-Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef**-Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
 
 ```vb
     Sub CreateQueryDefX() 
@@ -170,7 +170,7 @@ In diesem Beispiel wird die **CreateQueryDef** -Methode verwendet, um ein tempor
 
 Das folgende Beispiel zeigt, wie Sie die Structured Query Language (SQL)-Anweisung in einer gespeicherten Abfrage ersetzen.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     ‘To change the Where clause in a saved query  

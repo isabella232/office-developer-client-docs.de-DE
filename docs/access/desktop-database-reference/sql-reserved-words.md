@@ -1,5 +1,5 @@
 ---
-title: Reservierte SQL-Wörter (Access PC-Datenbank-Referenz)
+title: Reservierte Wörter für SQL (Access-Desktopdatenbankreferenz)
 TOCTitle: SQL reserved words
 ms:assetid: 1a074927-64df-d645-99ce-95d9826c5a46
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845663(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 43fa81fa2f175c7b67c5de4cfda5158cc067bbac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308561"
 ---
 # <a name="sql-reserved-words"></a>Reservierte Wörter für SQL
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbankmodul für die Verwendung in SQL-Anweisungen reserviert sind. 
+Die folgende Liste enthält alle Worte, die vom Microsoft Access-Datenbankmodul in SQL-Anweisungen reserviert sind. 
 
-- Wörter, die nicht in Großbuchstaben aufgeführt sind, sind auch für andere Anwendungen reserviert. Deshalb enthalten die Hilfethemen für diese Wörter keine Beschreibung, die ausschließlich die Verwendung in SQL behandelt, sondern eine allgemeine Beschreibung.
+- Die Worte in der Liste, die nicht großgeschrieben sind, werden auch von anderen Anwendungen reserviert. Die einzelnen Hilfethemen zu diesen Worten enthalten daher allgemeine Beschreibungen, die sich nicht auf die SQL-Nutzung konzentrieren.
 
-- Wörter, gefolgt von einem Sternchen (*) sind reserviert, aber keine Bedeutung im Kontext einer Microsoft Access SQL-Anweisung (beispielsweise **Ebene** und **TableID**) haben. 
+- Worte mit einem Sternchen (*) sind reserviert, haben aber im Kontext einer Microsoft Access SQL-Anweisung keine Bedeutung (z.B. **Level** und **TableID**). 
 
-- Für Wörter ohne Unterstreichung in dieser Auflistung besteht keine Verknüpfung zu einem entsprechenden Hilfethema.
+- Für Worte, die nicht unterstrichen sind, gibt es keine verlinkten Erklärungen.
 
 ## <a name="a"></a>A
 
@@ -43,19 +43,19 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p><a href="sql-subqueries-microsoft-access-sql.md">ANY</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="alter-table-statement-microsoft-access-sql.md">FÜGEN SIE HINZU</a></p></td>
+<td><p><a href="alter-table-statement-microsoft-access-sql.md">ADD</a></p></td>
 <td><p>ARE</p></td>
 </tr>
 <tr class="odd">
 <td><p>ADMINDB</p></td>
-<td><p><a href="select-statement-microsoft-access-sql.md">ALS</a></p></td>
+<td><p><a href="select-statement-microsoft-access-sql.md">AS</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff845430(v=office.15)">ALLE</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff845430(v=office.15)">ALL</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff193772(v=office.15)">ASC</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="equivalent-ansi-sql-data-types.md">Alphanumeric</a></strong> - Siehe TEXT</p></td>
+<td><p><strong><a href="equivalent-ansi-sql-data-types.md">Alphanumeric</a></strong> – Siehe TEXT</p></td>
 <td><p>ASSERTION</p></td>
 </tr>
 <tr class="even">
@@ -64,14 +64,14 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="odd">
 <td><p><a href="alter-table-statement-microsoft-access-sql.md">ALTER TABLE</a></p></td>
-<td><p><a href="equivalent-ansi-sql-data-types.md">AUTOINCREMENT</a> - Siehe COUNTER</p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">AUTOINCREMENT</a> – Siehe COUNTER</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">Und</a></strong></p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff822755(v=office.15)">Durchschnittl.</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">And</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff822755(v=office.15)">Avg</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff197723(v=office.15)">ALS</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff197723(v=office.15)">AS</a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -87,20 +87,20 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="transaction-statement-microsoft-access-sql.md">BEGINNEN SIE MIT DEM</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">BEGIN</a></p></td>
 <td><p>COLLATION</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">Zwischen</a></strong></p></td>
-<td><p><a href="alter-table-statement-microsoft-access-sql.md">SPALTE</a></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">Between</a></strong></p></td>
+<td><p><a href="alter-table-statement-microsoft-access-sql.md">COLUMN</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">BINÄRE</a></p></td>
-<td><p><a href="transaction-statement-microsoft-access-sql.md">COMMIT AUSFÜHREN</a></p></td>
+<td><p><a href="sql-data-types.md">BINARY</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">COMMIT</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="sql-data-types.md">BIT</a></p></td>
-<td><p><a href="create-table-statement-microsoft-access-sql.md">COMP KOMPRIMIERUNG</a></p></td>
+<td><p><a href="create-table-statement-microsoft-access-sql.md">COMP, COMPRESSION</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>BIT_LENGTH</p></td>
@@ -112,10 +112,10 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="odd">
 <td><p>BOTH</p></td>
-<td><p><a href="constraint-clause-microsoft-access-sql.md">EINSCHRÄNKUNG INTEGRITÄTSREGELN</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT, CONSTRAINTS</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff822010(v=office.15)">DURCH</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff822010(v=office.15)">BY</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff836657(v=office.15)">CONTAINER</a></p></td>
 </tr>
 <tr class="odd">
@@ -132,15 +132,15 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHAR, CHARACTER</a> - Siehe TEXT</p></td>
-<td><p><a href="sql-data-types.md">LEISTUNGSINDIKATOR</a></p></td>
+<td><p><a href="sql-data-types.md">COUNTER</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHAR_LENGTH</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff192473(v=office.15)">ERSTELLEN</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff192473(v=office.15)">CREATE</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHARACTER_LENGTH</a></p></td>
-<td><p><a href="sql-data-types.md">WÄHRUNG</a></p></td>
+<td><p><a href="sql-data-types.md">CURRENCY</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>CHECK</p></td>
@@ -175,8 +175,8 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">DATENBANK</a></p></td>
-<td><p><a href="create-index-statement-microsoft-access-sql.md">NICHT ZULASSEN</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">DATABASE</a></p></td>
+<td><p><a href="create-index-statement-microsoft-access-sql.md">DISALLOW</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">DATE</a> - Siehe DATETIME</p></td>
@@ -191,12 +191,12 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">DISTINCTROW</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">DEZ, DECIMAL</a></p></td>
+<td><p><a href="sql-data-types.md">DEC, DECIMAL</a></p></td>
 <td><p>DOMAIN</p></td>
 </tr>
 <tr class="even">
 <td><p>DECLARE</p></td>
-<td><p><a href="sql-data-types.md">DOUBLE-WERT</a></p></td>
+<td><p><a href="sql-data-types.md">DOUBLE</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/ff192454(v=office.15)">DELETE</a></p></td>
@@ -220,35 +220,35 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <tbody>
 <tr class="odd">
 <td><p><strong>Eqv</strong></p></td>
-<td><p><a href="constraint-clause-microsoft-access-sql.md">FREMDSCHLÜSSEL</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">FOREIGN</a></p></td>
 </tr>
 <tr class="even">
 <td><p>EXCLUSIVECONNECT</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff821771(v=office.15)">Von</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff821771(v=office.15)">FROM</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>EXEC, EXECUTE</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff836674(v=office.15)">FROM-Klausel</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sql-subqueries-microsoft-access-sql.md">VORHANDEN IST</a></p></td>
+<td><p><a href="sql-subqueries-microsoft-access-sql.md">EXISTS</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">GENERAL</a> - Siehe LONGBINARY</p></td>
 </tr>
 <tr class="odd">
 <td><p>EXTRACT</p></td>
-<td><p><a href="grant-statement-microsoft-access-sql.md">ERTEILEN</a></p></td>
+<td><p><a href="grant-statement-microsoft-access-sql.md">GRANT</a></p></td>
 </tr>
 <tr class="even">
 <td><p>FALSE</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff837271(v=office.15)">GRUPPE</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff837271(v=office.15)">GROUP</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>FETCH</p></td>
 <td><p><a href="sql-data-types.md">GUID</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff821754(v=office.15)">ERSTE</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff193795(v=office.15)">MIT DEM</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff821754(v=office.15)">FIRST</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff193795(v=office.15)">HAVING</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">FLOAT, FLOAT8</a> - Siehe DOUBLE</p></td>
@@ -271,7 +271,7 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">IDENTITÄT</a></p></td>
+<td><p><a href="sql-data-types.md">IDENTITY</a></p></td>
 <td><p>INPUT</p></td>
 </tr>
 <tr class="even">
@@ -280,19 +280,19 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">IEEESINGLE</a> - Siehe SINGLE</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff837307(v=office.15)">EINFÜGEN</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff837307(v=office.15)">INSERT</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-index-statement-microsoft-access-sql.md">IGNORIEREN</a></p></td>
+<td><p><a href="create-index-statement-microsoft-access-sql.md">IGNORE</a></p></td>
 <td><p><a href="insert-into-statement-microsoft-access-sql.md">INSERT INTO</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">BILD</a></p></td>
+<td><p><a href="sql-data-types.md">IMAGE</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">INT, INTEGER, INTEGER4</a> - Siehe LONG</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Imp</strong></p></td>
-<td><p><a href="equivalent-ansi-sql-data-types.md">INTEGER1</a> - Siehe BYTE</p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">INTEGER1</a> – Siehe BYTE</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff836369(v=office.15)">In</a></strong></p></td>
@@ -300,18 +300,18 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/ff197682(v=office.15)">IN</a></p></td>
-<td><p><a href="equivalent-ansi-sql-data-types.md">INTERVALL</a></p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">INTERVAL</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/ff836851(v=office.15)">INDEX</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff837051(v=office.15)">IN</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff837051(v=office.15)">INTO</a></p></td>
 </tr>
 <tr class="even">
 <td><p>INDEXCREATEDB</p></td>
 <td><p><strong>Is</strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="inner-join-operation-microsoft-access-sql.md">INNERE</a></p></td>
+<td><p><a href="inner-join-operation-microsoft-access-sql.md">INNER</a></p></td>
 <td><p>ISOLATION</p></td>
 </tr>
 </tbody>
@@ -327,11 +327,11 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff196141(v=office.15)">TEILNEHMEN AN</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff196141(v=office.15)">JOIN</a></p></td>
 <td><p><a href="sql-data-types.md">LONGTEXT</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="constraint-clause-microsoft-access-sql.md">SCHLÜSSEL</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">KEY</a></p></td>
 <td><p>LOWER</p></td>
 </tr>
 <tr class="odd">
@@ -339,27 +339,27 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p>MATCH</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff195256(v=office.15)">LETZTE</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195256(v=office.15)">LAST</a></p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff194490(v=office.15)">Max</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">LINKS</a></p></td>
-<td><p><a href="equivalent-ansi-sql-data-types.md">MEMO</a> - Siehe LONGTEXT</p></td>
+<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">LEFT</a></p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">MEMO</a> – Siehe LONGTEXT</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Ebene</strong>*</p></td>
+<td><p><strong>Level</strong>*</p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff194490(v=office.15)">Min</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff195752(v=office.15)">mögen</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff195752(v=office.15)">Like</a></strong></p></td>
 <td><p>MINUTE</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">LOGICAL, LOGICAL1</a> - Siehe BIT</p></td>
-<td><p><strong>Rest</strong></p></td>
+<td><p><strong>Mod</strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">LANGE</a></p></td>
+<td><p><a href="sql-data-types.md">LONG</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">MONEY</a> - Siehe CURRENCY</p></td>
 </tr>
 <tr class="even">
@@ -384,7 +384,7 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <tbody>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">NATIONAL</a></p></td>
-<td><p><strong>Äußere</strong>*</p></td>
+<td><p><strong>Outer</strong>*</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="constraint-clause-microsoft-access-sql.md">NCHAR</a></p></td>
@@ -395,12 +395,12 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p><a href="with-owneraccess-option-declaration-microsoft-access-sql.md">OWNERACCESS</a></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>not</strong></p></td>
+<td><p><strong>Not</strong></p></td>
 <td><p>PAD</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">NTEXT</a></p></td>
-<td><p><a href="parameters-declaration-microsoft-access-sql.md">PARAMETER</a></p></td>
+<td><p><a href="parameters-declaration-microsoft-access-sql.md">PARAMETERS</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="create-index-statement-microsoft-access-sql.md">NULL</a></p></td>
@@ -412,7 +412,7 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">NUMERIC</a> - Siehe DECIMAL</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">PROZENT</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">PERCENT</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">NVARCHAR</a></p></td>
@@ -432,18 +432,18 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="odd">
 <td><p>OPEN</p></td>
-<td><p><a href="constraint-clause-microsoft-access-sql.md">PRIMÄRE</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">PRIMARY</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="with-owneraccess-option-declaration-microsoft-access-sql.md">OPTION</a></p></td>
 <td><p>PRIVILEGES</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>- oder -</strong></p></td>
-<td><p><a href="procedure-clause-microsoft-access-sql.md">PROC, PROZEDUR</a></p></td>
+<td><p><strong>Or</strong></p></td>
+<td><p><a href="procedure-clause-microsoft-access-sql.md">PROC, PROCEDURE</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff198293(v=office.15)">REIHENFOLGE</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff198293(v=office.15)">ORDER</a></p></td>
 <td><p>PUBLIC</p></td>
 </tr>
 </tbody>
@@ -463,7 +463,7 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p>SMALLDATETIME</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="constraint-clause-microsoft-access-sql.md">VERWEISE</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">REFERENCES</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">SMALLINT</a> - Siehe SHORT</p></td>
 </tr>
 <tr class="odd">
@@ -472,10 +472,10 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="even">
 <td><p><a href="revoke-statement-microsoft-access-sql.md">REVOKE</a></p></td>
-<td><p><a href="sql-subqueries-microsoft-access-sql.md">EINIGE</a></p></td>
+<td><p><a href="sql-subqueries-microsoft-access-sql.md">SOME</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">Richting</a></p></td>
+<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">RIGHT</a></p></td>
 <td><p>LEERTASTE</p></td>
 </tr>
 <tr class="even">
@@ -488,11 +488,11 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="even">
 <td><p>SECOND</p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff197043(v=office.15)">STABW</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff197043(v=office.15)">StDev</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff822042(v=office.15)">WÄHLEN SIE AUS</a></p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff197043(v=office.15)">StAbwN</a></strong></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff822042(v=office.15)">SELECT</a></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff197043(v=office.15)">StDevP</a></strong></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/ff192275(v=office.15)">SELECTSCHEMA</a></p></td>
@@ -503,15 +503,15 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p>SUBSTRING</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="update-statement-microsoft-access-sql.md">FESTLEGEN</a></p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff844764(v=office.15)">Summe</a></strong></p></td>
+<td><p><a href="update-statement-microsoft-access-sql.md">SET</a></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff844764(v=office.15)">Sum</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">KURZE</a></p></td>
+<td><p><a href="sql-data-types.md">SHORT</a></p></td>
 <td><p>SYSNAME</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sql-data-types.md">EINZELNE</a></p></td>
+<td><p><a href="sql-data-types.md">SINGLE</a></p></td>
 <td><p>SYSTEM_USER</p></td>
 </tr>
 <tr class="odd">
@@ -531,7 +531,7 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff192734(v=office.15)">TABELLE</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff192734(v=office.15)">TABLE</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff193874(v=office.15)">UPDATEOWNER</a></p></td>
 </tr>
 <tr class="even">
@@ -539,7 +539,7 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p><a href="https://msdn.microsoft.com/library/ff198241(v=office.15)">UPDATESECURITY</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-table-statement-microsoft-access-sql.md">TEMPORÄRE</a></p></td>
+<td><p><a href="create-table-statement-microsoft-access-sql.md">TEMPORARY</a></p></td>
 <td><p>UPPER</p></td>
 </tr>
 <tr class="even">
@@ -548,30 +548,30 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">TIME</a> - Siehe DATETIME</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff197645(v=office.15)">BENUTZER</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff197645(v=office.15)">USER</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="equivalent-ansi-sql-data-types.md">ZEITSTEMPEL</a></p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">TIMESTAMP</a></p></td>
 <td><p>USING</p></td>
 </tr>
 <tr class="odd">
 <td><p>TIMEZONE_HOUR</p></td>
-<td><p><a href="sql-data-types.md">WERT</a></p></td>
+<td><p><a href="sql-data-types.md">VALUE</a></p></td>
 </tr>
 <tr class="even">
 <td><p>TIMEZONE_MINUTE</p></td>
-<td><p><a href="insert-into-statement-microsoft-access-sql.md">WERTE</a></p></td>
+<td><p><a href="insert-into-statement-microsoft-access-sql.md">VALUES</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="sql-data-types.md">TINYINT</a></p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192105(v=office.15)">Varianz</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192105(v=office.15)">Var</a></strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff191822(v=office.15)">An</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff191822(v=office.15)">TO</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">VARBINARY</a> - Siehe BINARY</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">Nach oben</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">TOP</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">VARCHAR</a> - Siehe TEXT</p></td>
 </tr>
 <tr class="even">
@@ -579,12 +579,12 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff192105(v=office.15)">VarP</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="transaction-statement-microsoft-access-sql.md">TRANSAKTION</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">TRANSACTION</a></p></td>
 <td><p><a href="constraint-clause-microsoft-access-sql.md">VARYING</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="transform-statement-microsoft-access-sql.md">TRANSFORM</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff836065(v=office.15)">ANSICHT</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff836065(v=office.15)">VIEW</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>TRANSLATE</p></td>
@@ -596,18 +596,18 @@ Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbank
 </tr>
 <tr class="odd">
 <td><p>TRIM</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff195245(v=office.15)">WOBEI</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195245(v=office.15)">WHERE</a></p></td>
 </tr>
 <tr class="even">
 <td><p>TRUE</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff192721(v=office.15)">MIT</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff192721(v=office.15)">WITH</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="union-operation-microsoft-access-sql.md">UNION</a></p></td>
-<td><p><a href="transaction-statement-microsoft-access-sql.md">ARBEIT</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">WORK</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="constraint-clause-microsoft-access-sql.md">EINDEUTIGE</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">UNIQUE</a></p></td>
 <td><p><strong>Xor</strong></p></td>
 </tr>
 <tr class="odd">

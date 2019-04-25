@@ -8,29 +8,29 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 010c7a2aea777a93d1ced2d33d8743320dd05ada
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293154"
 ---
 # <a name="fieldattributes-property-dao"></a>Field.Attributes-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
-Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der ein oder mehrere Merkmale eines **[Field](field-object-dao.md)** -Objekts angibt. **Long**-Wert mit Lese-/Schreibzugriff.
+Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der ein oder mehrere Merkmale eines **[Field](field-object-dao.md)** -Objekts angibt. **Long** mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Attribute
+*expression* .Attributes
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Dieser Wert gibt die Merkmale des Felds an, das durch das **Field**-Objekt dargestellt wird. Er kann aus einer Kombinationen der folgenden Konstanten bestehen.
+Der Wert gibt die Merkmale des Felds an, das vom **Field**-Objekt dargestellt wird und eine Kombination der folgenden Konstanten sein kann.
 
 <table>
 <colgroup>
@@ -45,12 +45,12 @@ Dieser Wert gibt die Merkmale des Felds an, das durch das **Field**-Objekt darge
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbAutoIncrField festgelegt</strong></p></td>
+<td><p><strong>dbAutoIncrField</strong></p></td>
 <td><p>Der Feldwert für neue Datensätze wird automatisch auf einen eindeutigen Long Integer-Wert erhöht, der nicht geändert werden kann (wird in einem Microsoft Access-Arbeitsbereich nur bei Microsoft Access-Datenbanktabellen unterstützt).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbDescending</strong></p></td>
-<td><p>Das Feld wird in absteigender Reihenfolge sortiert (von Z bis A oder von 100 bis 0). Diese Option trifft nur auf ein <strong>Field</strong>-Objekt in einer <strong>Fields</strong>-Auflistung eines <strong>Index</strong>-Objekts zu. Wenn Sie diese Konstante auslassen, wird das Feld in aufsteigender Reihenfolge sortiert (von A bis Z oder von 0 bis 100). Das ist der Standardwert für <strong>Index</strong>- und <strong>TableDef</strong>-Felder (gilt nur für Microsoft Access-Arbeitsbereiche)..</p></td>
+<td><p>Das Feld wird in absteigender Reihenfolge (Z bis A oder 100 bis 0) sortiert. Diese Option gilt nur für ein <strong>Field</strong>-Objekt in einer <strong>Fields</strong>-Auflistung eines <strong>Index</strong>-Objekts. Wenn Sie diese Konstante nicht angeben, wird das Feld in aufsteigender Reihenfolge (A bis Z oder 0 bis 100) sortiert. Dies ist der Standardwert für <strong>Index</strong>- und <strong>TableDef</strong>-Felder (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbFixedField</strong></p></td>
@@ -58,15 +58,15 @@ Dieser Wert gibt die Merkmale des Felds an, das durch das **Field**-Objekt darge
 </tr>
 <tr class="even">
 <td><p><strong>dbHyperlinkField</strong></p></td>
-<td><p>Das Feld enthält Hyperlinkinformation (nur Memofelder).</p></td>
+<td><p>Das Feld enthält Hyperlinkinformationen (nur Memofelder).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSystemField</strong></p></td>
-<td><p>Das Feld speichert Replikationsinformationen für Replikate. Dieser Feldtyp kann nicht gelöscht werden (gilt nur für Microsoft Access-Arbeitsbereiche)</p></td>
+<td><p>Das Feld speichert Replikationsinformationen für Replikate. Dieser Typ von Feld kann nicht gelöscht werden (nur Microsoft Access-Arbeitsbereich).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbUpdatableField</strong></p></td>
-<td><p>Der Feldwert kann geändert werden.</p></td>
+<td><p>Der Wert des Felds kann geändert werden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbVariableField</strong></p></td>
@@ -92,23 +92,23 @@ Bei Objekten, die noch keiner Auflistung angefügt sind, besteht für diese Eige
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong>-Objekt</p></td>
-<td><p>Mit Lese-/Schreibzugriff bis das <strong>TableDef</strong>-Objekt, dem das <strong>Index</strong>-Objekt angefügt wird, einem <strong>Database</strong>-Objekt angefügt wird; dann ist die Eigenschaft schreibgeschützt.</p></td>
+<td><p>Lese-/Schreibzugriff, bis das <strong>TableDef</strong>-Objekt, an das das <strong>Index</strong>-Objekt angefügt ist, an ein <strong>Database</strong>-Objekt angefügt wird; die Eigenschaft ist dann schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong> -Objekt</p></td>
-<td><p>Schreibgeschützt.</p></td>
+<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong> -Objekt</p></td>
+<td><p><strong>Relation</strong>-Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TableDef</strong> -Objekt</p></td>
-<td><p>Lese-/Schreibzugriff</p></td>
+<td><p><strong>TableDef</strong>-Objekt</p></td>
+<td><p>Lesen/Schreiben</p></td>
 </tr>
 </tbody>
 </table>
@@ -118,7 +118,7 @@ Wenn Sie mehrere Attribute festlegen, können Sie sie kombinieren, indem Sie die
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel zeigt die **Attributes**-Eigenschaft für die Objekte **Field**, **Relation** und **TableDef** in der Nordwind-Datenbank an.
+In diesem Beispiel wird die **Attributes**-Eigenschaft für **Field**-, **Relation**- und **TableDef**-Objekte in der Northwind-Datenbank angezeigt.
 
 ```vb 
 Sub AttributesX() 

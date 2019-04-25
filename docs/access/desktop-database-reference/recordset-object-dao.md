@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 19999159f7987be87031f88d1eec87980585f369
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284518"
 ---
 # <a name="recordset-object-dao"></a>Recordset-Objekt (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Ein **Recordset** -Objekt stellt die Datensätze in einer Basistabelle oder die Datensätze dar, die aus einer Abfrageausführung resultieren.
+Ein **Recordset**-Objekt stellt die Datensätze in einer Basistabelle oder die Datensätze dar, die aus einer Abfrageausführung resultieren.
 
 ## <a name="remarks"></a>Hinweise
 
-Sie verwenden **Recordset** -Objekte, um Daten in einer Datenbank auf Datensatzebene zu ändern. Wenn Sie DAO-Objekte verwenden, ändern Sie Daten fast ausschließlich mit **Recordset** -Objekten. Alle **Recordset** -Objekte werden mit Datensätzen (Zeilen) und Feldern (Spalten) erstellt. Es gibt von Typen von **Recordset** -Objekten:
+Sie verwenden **Recordset**-Objekte, um Daten in einer Datenbank auf Datensatzebene zu ändern. Wenn Sie DAO-Objekte verwenden, ändern Sie Daten fast ausschließlich mit **Recordset**-Objekten. Alle **Recordset**-Objekte werden mit Datensätzen (Zeilen) und Feldern (Spalten) erstellt. Es gibt von Typen von **Recordset**-Objekten:
 
 - Tabellentyp-Recordset: Darstellung im Code einer Basistabelle, den Sie verwenden können, um Datensätze in einer einzelnen Datenbanktabelle hinzuzufügen, zu ändern oder zu löschen (nur Microsoft Access-Arbeitsbereiche).
 
@@ -35,51 +35,51 @@ Sie verwenden **Recordset** -Objekte, um Daten in einer Datenbank auf Datensatze
 - Recordset vom "dynamic"-Typ: eine Abfragergebnisgruppe aus mindestens einer Basistabelle, in der Sie Datensätze einer Abfrage, die Zeilen zurückgibt, hinzufügen, ändern oder löschen können. Außerdem werden Datensätze, die andere Benutzer in den Basistabellen hinzufügen, löschen oder bearbeiten, ebenfalls im **Recordset** angezeigt. Dieser Typ entspricht einem dynamischen ODBC-Cursor (nur ODBCDirect-Arbeitsbereiche).
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
+> ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
 
-Sie können den Typ des **Recordset** -Objekts auswählen, den, die Sie mit dem Argument Type der **OpenRecordset** -Methode erstellen möchten.
+Sie können den Typ des **Recordset** -Objekts, das Sie erstellen möchten, mithilfe des type-Arguments der **OpenRecordset** -Methode auswählen.
 
-In Microsoft Access-Arbeitsbereich Wenn Sie nicht, dass ein DAO Versuche zum Erstellen des Typs des **Recordset-Objekts** mit der meisten Funktionen zur Verfügung angeben, beginnend mit Table. Falls dieser Typ nicht verfügbar ist, probiert DAO ein "dynaset"-, dann ein "snapshot"- und schließlich ein "forward-only"- **Recordset** -Objekt aus.
+Wenn Sie in einem Microsoft Access-Arbeitsbereich keinen type angeben, versucht DAO, den **Recordset**-Typ mit den meisten verfügbaren Funktionen beginnend mit "table" zu erstellen. Falls dieser Typ nicht verfügbar ist, probiert DAO ein "dynaset"-, dann ein "snapshot"- und schließlich ein "forward-only"- **Recordset**-Objekt aus.
 
-In einem ODBCDirect-Arbeitsbereich Wenn Sie einen Typ nicht angeben versucht DAO den Typ des **Recordset-Objekts** mit die schnellstmögliche Antwortzeit für die Abfrage erstellen beginnend mit Vorwärtscursor. Falls dieser Typ nicht verfügbar ist, probiert DAO ein "snapshot"-, dann ein "dynaset"- und schließlich ein "dynamic"- **Recordset** -Objekt aus.
+Wenn Sie in einem ODBCDirect-Arbeitsbereich keinen type angeben, versucht DAO, den **Recordset**-Typ mit der schnellsten Abfrageantwort beginnend mit "forward-only" zu erstellen. Falls dieser Typ nicht verfügbar ist, probiert DAO ein "snapshot"-, dann ein "dynaset"- und schließlich ein "dynamic"- **Recordset** -Objekt aus.
 
-Wenn Sie ein **Recordset** -Objekt mit einem nicht verknüpften **[TableDef](tabledef-object-dao.md)** -Objekt in einem Microsoft Access-Arbeitsbereich erstellen, werden **Recordset** -Objekte vom "table"-Typ erstellt. Nur **Recordset** -Objekte vom "dynaset"- oder "snapshot"-Typ können mit verknüpften Tabellen oder Tabellen in ODBC-Datenbanken mit verbundenem Microsoft Access-Datenbankmodul erstellt werden.
+Wenn Sie ein **Recordset**-Objekt mit einem nicht verknüpften **[TableDef](tabledef-object-dao.md)**-Objekt in einem Microsoft Access-Arbeitsbereich erstellen, werden **Recordset**-Objekte vom "table"-Typ erstellt. Nur **Recordset**-Objekte vom "dynaset"- oder "snapshot"-Typ können mit verknüpften Tabellen oder Tabellen in ODBC-Datenbanken mit verbundenem Microsoft Access-Datenbankmodul erstellt werden.
 
-Ein neues **Recordset** -Objekt wird automatisch der **Recordsets** -Auflistung hinzugefügt, wenn Sie das Objekt öffnen, und wird automatisch entfernt, wenn Sie das Objekt schließen.
+Ein neues **Recordset**-Objekt wird automatisch der **Recordsets**-Auflistung hinzugefügt, wenn Sie das Objekt öffnen, und wird automatisch entfernt, wenn Sie das Objekt schließen.
 
 > [!NOTE]
-> [!HINWEIS] Wenn Sie Variablen verwenden, um ein **Recordset** -Objekt darzustellen, und das **Database** -Objekt das **Recordset** enthält, stellen Sie sicher, dass die Variablen den gleichen Umfang bzw. die gleiche Lebenszeit aufweisen. Wenn Sie beispielsweise eine öffentliche Variable deklarieren, die ein **Recordset** -Objekt darstellt, stellen Sie sicher, dass die Variable, die das **Database** -Objekt mit dem **Recordset** enthält, ebenfalls öffentlich ist oder in einer **Sub** - oder **Function** -Prozedur mit dem **Static** -Schlüsselwort deklariert wird.
+> Wenn Sie Variablen verwenden, um ein **Recordset**-Objekt darzustellen, und das **Database**-Objekt das **Recordset** enthält, stellen Sie sicher, dass die Variablen den gleichen Umfang bzw. die gleiche Lebenszeit aufweisen. Wenn Sie beispielsweise eine öffentliche Variable deklarieren, die ein **Recordset**-Objekt darstellt, stellen Sie sicher, dass die Variable, die das **Database**-Objekt mit dem **Recordset** enthält, ebenfalls öffentlich ist oder in einer **Sub**- oder **Function**-Prozedur mit dem **Static**-Schlüsselwort deklariert wird.
 
-Sie können beliebig viele **Recordset** -Objektvariablen erstellen. Unterschiedliche **Recordset** -Objekte können auf die gleichen Tabellen, Abfragen und Felder ohne Konflikte zugreifen.
+Sie können beliebig viele **Recordset**-Objektvariablen erstellen. Unterschiedliche **Recordset**-Objekte können auf die gleichen Tabellen, Abfragen und Felder ohne Konflikte zugreifen.
 
-Dynaset, Snapshot und Weiterleiten Typ **Recordset** -Objekte werden im lokalen Arbeitsspeicher gespeichert. Wenn zum Speichern dieser Daten im lokalen Arbeitsspeicher nicht genug Platz verfügbar ist, speichert das Microsoft Access-Datenbankmodul die zusätzlichen Daten in das Festplattenverzeichnis TEMP. Wenn dieser Platz aufgebraucht ist, tritt ein verfolgbarer Fehler auf.
+"Dynaset"-, "snapshot"- und "forward-only"-**Recordset**-Objekte werden im lokalen Arbeitsspeicher gespeichert. Wenn zum Speichern dieser Daten im lokalen Arbeitsspeicher nicht genug Platz verfügbar ist, speichert das Microsoft Access-Datenbankmodul die zusätzlichen Daten in das Festplattenverzeichnis TEMP. Wenn dieser Platz aufgebraucht ist, tritt ein verfolgbarer Fehler auf.
 
-Die Standardauflistung eines **Recordset** -Objekts ist die **Fields** -Auflistung und die Standardeigenschaft eines **[Field](field-object-dao.md)** -Objekts ist die **[Value](field-value-property-dao.md)** -Eigenschaft. Verwenden Sie diese Standardeinstellungen, um Ihren Code zu vereinfachen.
+Die Standardauflistung eines **Recordset**-Objekts ist die **Fields**-Auflistung und die Standardeigenschaft eines **[Field](field-object-dao.md)**-Objekts ist die **[Value](field-value-property-dao.md)**-Eigenschaft. Verwenden Sie diese Standardeinstellungen, um Ihren Code zu vereinfachen.
 
-Wenn Sie ein **Recordset** -Objekt erstellen, wird der aktuelle Datensatz als erster Datensatz positioniert, falls Datensätze vorhanden sind. Falls keine Datensätze vorhanden sind, lautet die Einstellung der **RecordCount** -Eigenschaft "0", und die Einstellungen der **BOF** - und **EOF** -Eigenschaften sind **True**.
+Wenn Sie ein **Recordset**-Objekt erstellen, wird der aktuelle Datensatz als erster Datensatz positioniert, falls Datensätze vorhanden sind. Falls keine Datensätze vorhanden sind, lautet die Einstellung der **RecordCount**-Eigenschaft "0", und die Einstellungen der **BOF**- und **EOF**-Eigenschaften sind **True**.
 
 Sie können die Methoden **MoveNext**, **MovePrevious**, **MoveFirst** und **MoveLast** verwenden, um den aktuellen Datensatz neu zu positionieren. "Forward-only"-**Recordset**-Objekte unterstützen nur die **MoveNext**-Methode. Wenn Sie die Move-Methoden verwenden, um die einzelnen Datensätze aufzurufen (oder das **Recordset** "durchlaufen"), können Sie die **BOF**- und **EOF**-Eigenschaften verwenden, um nach dem Anfang oder Ende des **Recordset**-Objekts zu suchen.
 
 Mit "dynaset"- und "snapshot"- **Recordset** -Objekten in einem Microsoft Access-Arbeitsbereich können Sie auch die Find-Methoden verwenden, zum Beispiel **FindFirst**, um einen bestimmten Datensatz basierend auf Kriterien zu suchen. Falls der Datensatz nicht gefunden wird, wird die **NoMatch** -Eigenschaft auf **True** festgelegt. Für **Recordset** -Objekte vom "table"-Typ können Sie Datensätze mithilfe der **Seek** -Methode suchen.
 
-Die **Type** -Eigenschaft gibt den Typ des erstellten **Recordset** -Objekts an und die **Updatable** -Eigenschaft gibt an, ob Sie die Datensätze des Objekts ändern können.
+Die **Type**-Eigenschaft gibt den Typ des erstellten **Recordset**-Objekts an und die **Updatable**-Eigenschaft gibt an, ob Sie die Datensätze des Objekts ändern können.
 
-Informationen zur Struktur einer Basistabelle, zum Beispiel zu den Namen und Datentypen der einzelnen **Field** -Objekte und **Index** -Objekte, werden in einem **TableDef** -Objekt gespeichert.
+Informationen zur Struktur einer Basistabelle, zum Beispiel zu den Namen und Datentypen der einzelnen **Field**-Objekte und **Index**-Objekte, werden in einem **TableDef**-Objekt gespeichert.
 
-Wenn Sie auf ein **Recordset**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:
+Um auf ein **Recordset**-Objekt in einer Auflistung durch die Ordnungszahl oder die Einstellung der **Name**-Eigenschaft zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
 
 - **Recordsets**(0)
 
-- **Recordset-Objekte** ("Name")
+- **Recordsets**("Name")
 
-- **Recordsets**\!\[Namen\]
+- **Recordsets**\!\[name\]
 
 > [!NOTE]
-> [!HINWEIS] Sie können ein **Recordset**-Objekt derselben Datenquelle oder Datenbank mehrmals öffnen und dabei doppelte Namen in der **Recordsets**-Auflistung erstellen. Sie sollten Objektvariablen **Recordset**-Objekte zuweisen und mit Variablennamen auf sie verweisen.
+> Sie können ein **Recordset**-Objekt aus der gleichen Datenquelle oder Datenbank mehrmals öffnen und doppelte Namen in der **Recordsets**-Auflistung erstellen. Sie sollten **Recordset**-Objekten Objektvariablen zuweisen und mit dem Variablennamen auf sie verweisen.
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel demonstriert **Recordset** -Objekte und die **Recordsets** -Auflistung durch Öffnen von vier verschiedenen **Recordsets**, Aufzählen der Recordsets-Auflistung des aktuellen **Database** -Objekts und Aufzählen der **Properties** -Auflistung jedes **Recordset** -Objekts.
+This example demonstrates **Recordset** objects and the **Recordsets** collection by opening four different types of **Recordsets**, enumerating the Recordsets collection of the current **Database**, and enumerating the **Properties** collection of each **Recordset**.
 
 ```vb
     Sub RecordsetX() 
@@ -144,7 +144,7 @@ Dieses Beispiel demonstriert **Recordset** -Objekte und die **Recordsets** -Aufl
 
 <br/>
 
-Dieses Beispiel verwendet die **OpenRecordset** -Methode, um fünf verschiedene **Recordset** -Objekte zu öffnen und ihre Inhalte anzuzeigen. Die OpenRecordsetOutput-Prozedur ist für die Ausführung dieser Prozedur erforderlich.
+Dieses Beispiel verwendet die **OpenRecordset**-Methode, um fünf verschiedene **Recordset**-Objekte zu öffnen und ihre Inhalte anzuzeigen. Die OpenRecordsetOutput-Prozedur ist für die Ausführung dieser Prozedur erforderlich.
 
 ```vb
     Sub OpenRecordsetX() 
@@ -231,7 +231,7 @@ Dieses Beispiel verwendet die **OpenRecordset** -Methode, um fünf verschiedene 
 
 <br/>
 
-Dieses Beispiel öffnet ein **Recordset** -Objekt vom "dynamic"-Typ und zählt seine Datensätze auf.
+Dieses Beispiel öffnet ein **Recordset**-Objekt vom "dynamic"-Typ und zählt seine Datensätze auf.
 
 ```vb
     Sub dbOpenDynamicX() 
@@ -321,7 +321,7 @@ Dieses Beispiel öffnet ein **Recordset** vom "dynaset"-Typ und zeigt den Umfang
 
 <br/>
 
-Dieses Beispiel öffnet ein **Recordset** vom "forward-only"-Typ, demonstriert die schreibgeschützten Merkmale und durchläuft das **Recordset** mit der **MoveNext** -Methode.
+Dieses Beispiel öffnet ein **Recordset** vom "forward-only"-Typ, demonstriert die schreibgeschützten Merkmale und durchläuft das **Recordset** mit der **MoveNext**-Methode.
 
 ```vb 
 Sub dbOpenForwardOnlyX() 
@@ -407,7 +407,7 @@ Dieses Beispiel öffnet ein **Recordset** vom "snapshot"-Typ und demonstriert di
 
 <br/>
 
-Dieses Beispiel öffnet ein **Recordset** vom "table"-Typ, legt die **Index** -Eigenschaft fest und zählt die Datensätze auf.
+Dieses Beispiel öffnet ein **Recordset** vom "table"-Typ, legt die **Index**-Eigenschaft fest und zählt die Datensätze auf.
 
 ```vb
     Sub dbOpenTableX() 
@@ -444,9 +444,9 @@ Dieses Beispiel öffnet ein **Recordset** vom "table"-Typ, legt die **Index** -E
 
 <br/>
 
-Das folgende Beispiel zeigt das Verwenden der Seek-Methode zum Suchen eines Datensatzes in einer verknüpften Tabelle.
+Im folgenden Beispiel wird gezeigt, wie Sie mithilfe der Seek-Methode einen Datensatz in einer verknüpften Tabelle finden.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 
 ```vb
@@ -495,7 +495,7 @@ Das folgende Beispiel zeigt das Verwenden der Seek-Methode zum Suchen eines Date
 
 <br/>
 
-The following example shows how to open a Recordset that is based on a parameter query.
+Das folgende Beispiel zeigt das Öffnen eines Recordset, das auf einer Parameterabfrage basiert.
 
 ```vb
     Dim dbs As DAO.Database

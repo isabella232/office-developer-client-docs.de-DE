@@ -1,5 +1,5 @@
 ---
-title: Makroereignis "Nach Eingabe"
+title: Makroereignis „Nach Eingabe“
 TOCTitle: After Insert macro event
 ms:assetid: 78013896-ee07-6979-96f7-fa0f3490419e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196099(v=office.15)
@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: c84a737d08b791bfe560bfe6af6bcc59a14d2678
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297221"
 ---
-# <a name="after-insert-macro-event"></a>Makroereignis "Nach Eingabe"
+# <a name="after-insert-macro-event"></a>Makroereignis „Nach Eingabe“
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Ereignis **Nach Eingabe** tritt auf, wenn ein Datensatz hinzugefügt wurde.
 
 > [!NOTE]
-> [!HINWEIS] Das Ereignis **Nach Eingabe** ist nur in Datenmakros verfügbar.
+> Das Ereignis **Nach Eingabe** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit dem Ereignis **Nach Eingabe** führen Sie sämtliche Aktionen nach dem Hinzufügen eines Datensatzes zu einer Tabelle aus. Häufig wird **Nach Eingabe** verwendet, um Geschäftsregeln und Workflows zu erzwingen, einen Aggregatgesamtwert zu aktualisieren oder Benachrichtigungen zu senden.
 
-Mit der Funktion Updated("Feldname") ermitteln Sie, ob ein Feld geändert wurde. Das folgende Codebeispiel zeigt die Verwendung einer If-Anweisung zum Ermitteln, ob das PaidInFull-Feld geändert wurde.
+Mithilfe der Funktion **Aktualisiert("*Feldname*")** können Sie feststellen, ob sich ein Feld verändert hat. Das folgende Codebeispiel zeigt, wie man eine **Wenn**-Anweisung verwendet, um zu ermitteln, ob das Feld "VollständigBezahlt" geändert wurde.
 
 ```vb 
  
@@ -75,7 +75,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Eingabe
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="editrecord-data-block.md">BearbeitenDatensatz-Makroaktion</a></p></td>
+<td><p><a href="editrecord-data-block.md">DatensatzBearbeiten-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
@@ -83,11 +83,11 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Eingabe
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Datenblock</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="cancelrecordchange-macro-action.md">CancelRecordChange-Makroaktion</a></p></td>
+<td><p><a href="cancelrecordchange-macro-action.md">AbbrechenDatensatzÄnderung-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -95,7 +95,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Eingabe
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="deleterecord-macro-action.md">DeleteRecord-Makroaktion</a></p></td>
+<td><p><a href="deleterecord-macro-action.md">DatensatzLöschen-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -151,9 +151,9 @@ Im Makro-Designer wird ein leeres Datenmakro angezeigt.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Codebeispiel wird das Ereignis **Nach Eingabe** auszuführenden einige verarbeiten, wenn die Spenden-Tabelle ein Datensatz hinzugefügt wird verwendet. Wenn ein Datensatz hinzugefügt wird, wird die Anzahl der Spenden Feld DonationsReceived in der Tabelle Kampagnen sowie die TotalDonatedField in der Spender-Tabelle hinzugefügt.
+The following code example uses the **After Insert** event to perform some processing when a record is added to the Donations table. When a record is added, the amount of the donation is added to the DonationsReceived field in the Campaigns table and the TotalDonatedField in the Donors table.
 
-**Klicken Sie hier, um eine Kopie des Makros anzuzeigen, die Sie im Makro-Designer einfügen können.**
+**Klicken Sie hier, um eine Kopie des Makros anzuzeigen, das Sie in Macro Designer einfügen können.**
 
 Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 

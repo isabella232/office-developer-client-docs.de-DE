@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 7033c612642aa3ae6ce6c6175560438c893cde6d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295919"
 ---
 # <a name="connectiondatabase-property-dao"></a>Connection.Database-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Datenbank
+*Ausdruck* .Database
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie bei einem **[Connection](connection-object-dao.md)** -Objekt zum Abrufen eines **Database** -Objekts zur entsprechenden **Verbindung** die **Database** -Eigenschaft. In DAO sind das **Connection** -Objekt und das entsprechende **Database** -Objekt schlicht und ergreifend zwei verschiedene Objektvariablenverweise auf dasselbe Objekt. Die **Database** -Eigenschaft eines **Connection** -Objekts und die **[Connection](database-connection-property-dao.md)** -Eigenschaft eines **Database** -Objekts erleichtern die Umstellung von Verbindungen mit einer ODBC-Datenquelle über das Microsoft Access-Datenbankmodul auf ODBCDirect.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird gezeigt, wie die **Database** -Eigenschaft dazu verwendet werden kann, Code so umzuwandeln, dass anstelle von ODBC-Daten über das Microsoft Access-Datenbankmodul anschließend ODBCDirect-Verbindungsobjekte verwendet werden.
+In diesem Beispiel wird gezeigt, wie die **Database**-Eigenschaft dazu verwendet werden kann, Code so umzuwandeln, dass anstelle von ODBC-Daten über das Microsoft Access-Datenbankmodul anschließend ODBCDirect-Verbindungsobjekte verwendet werden.
 
 Die OldDatabaseCode-Prozedur verwendet für den Zugriff auf eine ODBC-Datenbank eine Datenquelle, die mit dem Microsoft Access-Datenbankmodul verbunden ist.
 

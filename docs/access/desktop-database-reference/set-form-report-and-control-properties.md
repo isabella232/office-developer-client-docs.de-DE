@@ -1,7 +1,7 @@
 ---
 title: Einstellen von Formular-, Berichts- und Steuerelementeigenschaften
 TOCTitle: Set form, report, and control properties
-description: Jedes Formular, Bericht, Abschnitt und Steuerelement verfügt über die Einstellungen, die Sie bearbeiten können, um das Aussehen und das Verhalten des betreffenden Elements auf bestimmten in Access 2013 ändern.
+description: Jedes Formular, jeder Bericht, jeder Bereich und jedes Steuerelement verfügt über Eigenschafteneinstellungen, mit denen Sie das Aussehen und die Funktionsweise eines Elements in Access 2013 ändern können.
 ms:assetid: 03349d86-f107-9e49-89df-62f55f3a0735
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844789(v=office.15)
 ms:contentKeyID: 48542977
@@ -13,15 +13,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: bacbdc100d147be8bf4327a5a775b199c79347bb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308736"
 ---
 # <a name="set-form-report-and-control-properties"></a>Einstellen von Formular-, Berichts- und Steuerelementeigenschaften
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Jedes Formular, jeder Bericht, jeder Bereich und jedes Steuerelement verfügt über Eigenschafteneinstellungen, mit denen Sie das Aussehen und die Funktionsweise eines Elements ändern können. Sie können die Eigenschaften im Eigenschaftenfenster, in einem Makro oder in Visual Basic anzeigen und ändern.
 
@@ -29,25 +29,25 @@ Jedes Formular, jeder Bericht, jeder Bereich und jedes Steuerelement verfügt ü
 
 1. Wählen Sie in der Formularentwurfsansicht oder Berichtsentwurfsansicht das Steuerelement, den Bereich, das Formular oder den Bericht aus, für das bzw. den Sie die Eigenschaft einstellen möchten. Sie haben folgende Auswahlmöglichkeiten:
     
-   - Steuerelemente. Zum Auswählen mehrerer Steuerelemente die UMSCHALTTASTE gedrückt halten Sie und wählen Sie die Steuerelemente, oder ziehen Sie den Mauszeiger über die Steuerelemente, die Sie auswählen möchten. Wenn Sie mehrere Steuerelemente auswählen, zeigt das Eigenschaftenfenster nur die Eigenschaften an, die alle markierten Steuerelemente gemeinsam besitzen.
+   - Ein oder mehrere Steuerelemente. Wenn Sie mehrere Steuerelemente auswählen möchten, klicken Sie bei gedrückter UMSCHALTTASTE auf die gewünschten Steuerelemente, oder ziehen Sie den Mauszeiger über die gewünschten Steuerelemente. Wenn Sie mehrere Steuerelemente auswählen, zeigt das Eigenschaftenfenster nur die Eigenschaften an, die alle markierten Steuerelemente gemeinsam besitzen.
     
-   - Einen Bereich. Wählen Sie die Bereichsauswahl des Abschnitts, den Sie auswählen möchten.
+   - Einen Bereich. Klicken Sie auf den Bereichsmarkierer des gewünschten Bereichs.
     
-   - Das gesamte Formular oder den Bericht. Wählen Sie die Formular- oder Berichtsauswahl in der oberen linken Ecke des Formulars oder Berichts.
+   - Das gesamte Formular oder den gesamten Bericht. Klicken Sie auf den Formularmarkierer oder Berichtsmarkierer in der oberen linken Ecke des Formulars bzw. Berichts.
 
-2. Anzuzeigen Sie das Eigenschaftenfenster durch das Objekt oder den Bereich mit der rechten Maustaste, und klicken Sie dann im Kontextmenü auf **Eigenschaften** auswählen oder durch Auswählen von **Eigenschaften** auf der Symbolleiste.
+2. Zeigen Sie das Eigenschaftenfenster an, indem Sie zuerst mit der rechten Maustaste auf das Objekt oder den Bereich und dann im Kontextmenü auf **Eigenschaften** klicken, oder indem Sie auf der Symbolleiste auf **Eigenschaften** klicken.
 
-3. Wählen Sie die Eigenschaft für die Sie den Wert festlegen möchten, und führen Sie dann eine der folgenden:
+3. Klicken Sie auf die Eigenschaft, deren Wert Sie einstellen möchten, und führen Sie dann einen der folgenden Schritte durch:
     
-   - Geben Sie im Einstellungsfeld der Eigenschaft die gewünschte Einstellung oder einen geeigneten Ausdruck ein.
+   - Geben Sie im Eigenschaftenfeld die entsprechende Einstellung oder den entsprechenden Ausdruck an.
     
-   - Wenn das Einstellungsfeld der Eigenschaft einen Pfeil enthält, wählen Sie den Pfeil, und wählen Sie dann einen Wert in der Liste.
+   - Wenn das Einstellungsfeld der Eigenschaft einen Pfeil enthält, klicken Sie auf den Pfeil, und klicken Sie dann in der Liste auf einen Wert.
     
-   - Wenn eine **Generator** -Schaltfläche rechts neben dem Eigenschaftenfeld angezeigt wird, wählen Sie darauf, um ein Generator anzuzeigen oder Anzeigen eines Dialogfelds bietet Ihnen eine Auswahl von Generatoren. Beispielsweise können Sie die Code-Generators, Makro-Generator oder Abfrage-Generator verwenden, um bestimmte Eigenschaften festzulegen.
+   - Wenn eine **Build**-Schaltfläche rechts neben dem Eigenschaftenfeld angezeigt wird, wählen Sie diese aus, um einen Generator oder ein Dialogfeld anzuzeigen, in dem Sie eine Auswahl von Generatoren finden. Sie können z. B. den Code-Generator, den Makro-Generator oder den Abfrage-Generator verwenden, um einige Eigenschaften festzulegen.
 
-## <a name="tips"></a>Tipps
+## <a name="tips"></a>Tipps 
 
-- Microsoft Access stellt ein **Zoom** -Feld für die Eingabe und die Anzeige von Ausdrücken oder anderen langen Eigenschafteneinstellungen bereit. Um das Dialogfeld **Zoom** anzuzeigen, wählen Sie ein Eigenschaftenfeld im Eigenschaftenfenster. Drücken Sie UMSCHALT + F2 oder mit der rechten Maustaste, und wählen Sie dann im Kontextmenü auf **Zoom** .
+- Microsoft Access bietet ein **Zoom**-Feld, in dem Sie Ausdrücke oder andere Eigenschafteneinstellungen eingeben oder anzeigen können. Um das **Zoom**-Feld anzuzeigen, klicken Sie im Eigenschaftenfenster auf das Eigenschaftenfeld. Drücken Sie UMSCHALT+F2, oder klicken Sie zuerst mit der rechten Maustaste, und klicken Sie dann im Kontextmenü auf **Zoom**.
 
 - Sie können die Eigenschaft **Steuerelementinhalt** für einige Steuerelemente einstellen, indem Sie die Eigenschafteneinstellung im Steuerelement selbst vornehmen.
 

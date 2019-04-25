@@ -15,11 +15,11 @@ ms.assetid: db78a09c-ebef-47cc-8623-40abe117aa08
 description: Dieses Thema enthält Tabellen mit Fehlercodes zum PSI (Project Server Interface) in Project Server 2013.  Die Tabellen sind nach Funktionsbereich und Fehlercodebereich gegliedert.
 localization_priority: Priority
 ms.openlocfilehash: c61821bcb85fa3bd83601659850577eaa93eda61
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301477"
 ---
 # <a name="project-server-error-codes"></a>Project Server-Fehlercodes
 
@@ -858,7 +858,7 @@ Die Fehlercodes in Tabelle 17 sind für Planner, eine Komponente, die in der Pro
 |ProjectIsNotPublished = 1051  <br/> |Projekt nicht veröffentlicht.  <br/> |
 |ProjectExceededLWPTaskLimit = 1052  <br/> |Das Vorgangslimit für einen Projektvorschlag (ein kleines Projekt) wurde überschritten.  <br/> |
 |ProjectOptFinishDateInvalid = 1053  <br/> |Der Endtermin in den Projektoptionen ist ungültig.  <br/> |
-|ProjectExceededItemsLimit = 1054  <br/> |Die Anzahl der zu verarbeitenden Elemente ist überschritten. Die Project Server-Dienstanwendung kann **ProjectDataSet** nicht verwenden, um mehr als 1000 Elemente insgesamt in allen Tabellen hinzuzufügen oder zu aktualisieren. Um mehr als 1000 Elemente zu verarbeiten, verwenden Sie Mehrfachaufrufe wie beispielsweise an **QueueUpdateProject**.<br/> |
+|ProjectExceededItemsLimit = 1054  <br/> |Die Anzahl der zu verarbeitenden Elemente ist überschritten. Die Project Server-Dienstanwendung kann **ProjectDataSet** nicht verwenden, um mehr als 1000 Elemente insgesamt in allen Tabellen hinzuzufügen oder zu aktualisieren. Um mehr als 1000 Elemente zu verarbeiten, verwenden Sie Mehrfachaufrufe wie beispielsweise an **QueueUpdateProject**.  <br/> |
 |ProjectColumnNotReadOnly = 1055  <br/> |Die Spalte ist nicht schreibgeschützt.  <br/> |
 |ProjectInvalidOwner = 1056  <br/> |Der Projektbesitzer ist ungültig.  <br/> |
 |ProjectCantEditPctWrkCompForNonWrkRscs = 1057  <br/> |Für einen Vorgang, der keine echten Arbeitszuordnungen enthält, kann **PctWorkComplete** nicht bearbeitet werden.  <br/> |
@@ -1047,7 +1047,7 @@ Die Fehlercodes in Tabelle 17 sind für Planner, eine Komponente, die in der Pro
 |ResourcePlanInvalidProjectUID = 30011  <br/> |Die Projekt-GUID für den Ressourcenplan ist ungültig.  <br/> |
 |ResourcePlanResourceAlreadyExists = 30012  <br/> |Die Ressource ist im Ressourcenplan bereits vorhanden.  <br/> |
    
-Die Fehlercodes in Tabelle 22 gelten für die **Regel**-Methoden (Rules) im **PWA**-Webdienst. Sie werden intern verwendet. 
+Die Fehlercodes in Tabelle 22 gelten für die **Rules**-Methoden im **PWA**-Webdienst. Sie werden für interne Zwecke verwendet. 
 
 <a name="pj15_ErrorCodes_Rules"></a>
 
@@ -1143,7 +1143,7 @@ Die Fehlercodes in Tabelle 22 gelten für die **Regel**-Methoden (Rules) im **PW
 
 <a name="pj15_ErrorCodes_Statusing"></a>
 
-## <a name="table-25-statusing-web-service"></a>Table 25. Statuserfassungswebdienst 
+## <a name="table-25-statusing-web-service"></a>Tabelle 25. Statuserfassungswebdienst 
 
 |Fehlercode: Statuserfassungswebdienst|Beschreibung|
 |:-----|:-----|
@@ -1166,7 +1166,7 @@ Die Fehlercodes in Tabelle 22 gelten für die **Regel**-Methoden (Rules) im **PW
 |StatusingInvalidPreviewData = 3119  <br/> |Die **Statusing**-Vorschaudaten sind ungültig.  <br/> |
 |StatusingInvalidTransaction = 3120  <br/> |Die **Statusing**-Transaktion ist ungültig.  <br/> |
 |StatusingTooManyResults = 3121  <br/> |Zu viele Ergebnisse. Es würden mehr als 5.000 Zeilen beim Lesen von Statusdaten mit Zeitphasen zurückgegeben.  <br/> |
-|StatusingInvalidInterval = 3122  <br/> |Das Intervall in einer **Statusing**-Methode ist ungültig. Das Intervall muss in Minuten und größer als null sein.<br/> |
+|StatusingInvalidInterval = 3122  <br/> |Das Intervall in einer **Statusing**-Methode ist ungültig. Das Intervall muss in Minuten angegeben werden und größer null sein.  <br/> |
 |StatusingApplyUpdatesFailed = 3123  <br/> |Fehler beim Anwenden von **Statuserfassung**saktualisierungen beim Einstellen der Anforderung in die Warteschlange.  <br/> |
 |StatusingApplyUpdatesFailure = 3124  <br/> |Fehler beim Anwenden von **Statuserfassung**saktualisierungen während der Warteschlangenverarbeitung.  <br/> |
 |StatusingInvalidWorkData = 3125  <br/> |Die Arbeitsdaten für **Statusing** (Statuserfassung) sind ungültig.  <br/> |
@@ -1397,7 +1397,7 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 |WSSOLPDeleteWebObjectLinkError = 18001  <br/> |Fehler beim Löschen einer Webobjektverknüpfung im SharePoint-Objekt Link Provider.  <br/> |
 |WSSInvalidPermissionsToWssList = 18002  <br/> |Berechtigungen gelten nicht für die SharePoint-Liste.  <br/> |
 |WSSWebIsNotUnderDefaultCollection = 18003  <br/> |Die SharePoint-Webanwendung ist nicht in der Standardsammlung.  <br/> |
-|WSSWorkspaceUrlIsNotUnderPrimaryCollection = 18004  <br/> |Die angegebene Workspace-URL ist nicht in der Websitesammlung, die mit dieser Instanz von Project Server verknüpft ist.  Dies wird vom aktuellen Berechtigungsmodus gefordert.  <br/> |
+|WSSWorkspaceUrlIsNotUnderPrimaryCollection = 18004  <br/> |Die angegebene Workspace-URL ist nicht in der Websitesammlung, die mit dieser Instanz von project server verknüpft ist. Dies wird vom aktuellen Berechtigungsmodus gefordert.  <br/> |
 |WSSWorkspacesMustBeRestrictedToDefaultCollection = 18005  <br/> |Arbeitsbereiche müssen im aktuellen Berechtigungsmodus auf die Standardwebsitesammlung beschränkt sein.  <br/> |
 
 <a name="pj15_ErrorCodes_ASMXExample"> </a>
@@ -1407,7 +1407,7 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 Um eine Liste der Fehler abzurufen, wenn beim Aufrufen einer PSI-Methode eine Ausnahme erhalten, übergeben Sie das **SoapException**-Objekt an den [Microsoft.Office.Project.Server.Library.PSClientError](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSClientError.aspx)-Klassenkonstruktor. Sie können dann mithilfe von [GetAllErrors](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSClientError.GetAllErrors.aspx) die Fehlerinformationen in einem **PSErrorInfo**-Array speichern und die Fehler wie im folgenden Beispiel auflisten. 
   
 > [!NOTE]
-> Das **PSErrorInfo**-Objekt enthält möglicherweise nicht alle benötigten Informationen. Beispiel: Sie verwenden **Resource.CheckOutResources**, wobei eine der Ressourcen bereits ausgecheckt ist, **PSErrorInfo** zeigt die Fehlerursache für jede Ressource an, die nicht ausgecheckt werden kann, aber zeigt nicht den Ressourcennamen oder die GUID an.  Weitere Informationen, wie Sie mehr Daten bei einer ASMX-basierten Anwendung erhalten, finden Sie unter [CheckOutResources](https://msdn.microsoft.com/library/WebSvcResource.Resource.CheckOutResources.aspx). 
+> Das **PSErrorInfo**-Objekt enthält möglicherweise nicht alle benötigten Informationen. Beispiel: Sie verwenden **Resource.CheckOutResources**, wobei eine der Ressourcen bereits ausgecheckt ist, **PSErrorInfo** zeigt die Fehlerursache für jede Ressource an, die nicht ausgecheckt werden kann, aber zeigt nicht den Ressourcennamen oder die GUID an. Weitere Informationen, wie Sie mehr Daten bei einer ASMX-basierten Anwendung erhalten, finden Sie unter [CheckOutResources](https://msdn.microsoft.com/library/WebSvcResource.Resource.CheckOutResources.aspx). 
   
 ```cs
 using System;

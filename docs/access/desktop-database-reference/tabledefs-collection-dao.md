@@ -1,5 +1,5 @@
 ---
-title: TableDefs-Auflistung (DAO)
+title: TableDefs-Sammlung (DAO)
 TOCTitle: TableDefs Collection
 ms:assetid: a2986b02-0437-d6ac-7bbb-c43f5225c3fc
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff820997(v=office.15)
@@ -8,33 +8,33 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: f16f44b57a690aa58efdff9b00341df5023c293f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314175"
 ---
-# <a name="tabledefs-collection-dao"></a>TableDefs-Auflistung (DAO)
+# <a name="tabledefs-collection-dao"></a>TableDefs-Sammlung (DAO)
 
 **Gilt für:** Access 2013 | Office 2013
 
-Eine **TableDefs** -Sammlung enthält alle gespeicherten **TableDef** -Objekte in einer Datenbank (nur Microsoft Access-Arbeitsbereiche).
+Eine **TableDefs**-Sammlung enthält alle gespeicherten **TableDef**-Objekte in einer Datenbank (nur Microsoft Access-Arbeitsbereiche).
 
 ## <a name="remarks"></a>Hinweise
 
-Sie bearbeiten eine Tabellendefinition anhand eines **TableDef** -Objekts und seiner Methoden und Eigenschaften.
+Sie bearbeiten eine Tabellendefinition anhand eines **TableDef**-Objekts und seiner Methoden und Eigenschaften.
 
-Die Standardsammlung eines **Datenbank** objekts ist die **TableDefs** -Sammlung.
+Die Standardsammlung eines **Datenbank**objekts ist die **TableDefs**-Sammlung.
 
-Verwenden Sie eines der folgenden Syntaxformate, um auf ein **TableDef** -Objekt in einer Sammlung nach seiner Ordnungszahl oder der **Name** -Eigenschafteneinstellung zu verweisen:
+Um auf ein **TableDef**-Objekt in einer Auflistung durch die Ordnungszahl oder die Einstellung der **Name**-Eigenschaft zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
 
 **TableDefs**(0)
 
-**TableDefs** ("Name")
+**TableDefs**("name")
 
-**TableDefs**\!\[Namen\]
+**TableDefs**\!\[name\]
 
-**Links bereitgestellt werden, von** der Community [UtterAccess](https://www.utteraccess.com) . UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Links zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
   - [Re-Linker Multi-Backends](https://www.utteraccess.com/wiki/index.php/re-linker_multi-backends)
 
@@ -42,7 +42,7 @@ Verwenden Sie eines der folgenden Syntaxformate, um auf ein **TableDef** -Objekt
 
 ## <a name="example"></a>Beispiel
 
-Dieses Beispiel erstellt ein neues **TableDef** -Objekt und hängt es an die **TableDefs** -Auflistung des Northwind-Datenbankobjekts an. Dann zählt es die **TableDefs** -Auflistung und die **Properties** -Auflistung des neuen **TableDef** -Objekts auf.
+Dieses Beispiel erstellt ein neues **TableDef**-Objekt und hängt es an die **TableDefs**-Auflistung des Northwind-Datenbankobjekts an. Dann zählt es die **TableDefs**-Auflistung und die **Properties**-Auflistung des neuen **TableDef**-Objekts auf.
 
 ```vb
     Sub TableDefX() 
@@ -95,7 +95,7 @@ Dieses Beispiel erstellt ein neues **TableDef** -Objekt und hängt es an die **T
 
 <br/>
 
-Dieses Beispiel erstellt ein neues **TableDef** -Objekt in der Northwind-Datenbank.
+Dieses Beispiel erstellt ein neues **TableDef**-Objekt in der Northwind-Datenbank.
 
 ```vb 
 Sub CreateTableDefX() 

@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 713f2530369a824a6d7204655ded4333f7fe2765
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308442"
 ---
 # <a name="tabledefcreatefield-method-dao"></a>TableDef.CreateField-Methode (DAO)
 
 **Gilt für:** Access 2013 | Office 2013
 
-Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).
+Erstellt ein neues **[Field](field-object-dao.md)**-Objekt (nur Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateField (_**Name**_, _**Typ**_, _**Größe**_)
+*Ausdruck* .CreateField(_**Name**_, _**Type**_, _**Size**_)
 
-*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **TableDef**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -42,7 +42,7 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -52,19 +52,19 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 <td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Zeichenfolge, die das neue <strong>Field</strong> -Objekt eindeutig benennt. Unter der <strong><a href="connection-name-property-dao.md">Name</a></strong> -Eigenschaft finden Sie Einzelheiten zu gültigen <strong>Field</strong> -Namen.  </p></td>
+<td><p>Eine Zeichenfolge, die das neue <strong>Field</strong>-Objekt eindeutig benennt. Unter der <strong><a href="connection-name-property-dao.md">Name</a></strong>-Eigenschaft finden Sie Einzelheiten zu gültigen <strong>Field</strong>-Namen.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Type</em></p></td>
+<td><p><em>Typ</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Konstante, die den Datentyp des neuen <strong>Field</strong> -Objekts bestimmt. Unter der <strong><a href="field-type-property-dao.md">Type</a></strong> -Eigenschaft finden Sie gültige Datentypen.  </p></td>
+<td><p>Eine Konstante, die den Datentyp des neuen <strong>Field</strong>-Objekts bestimmt. Unter der <strong><a href="field-type-property-dao.md">Type</a></strong>-Eigenschaft finden Sie gültige Datentypen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Size</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Integer, die die maximale Größe eines <strong>Field</strong> -Objekts mit Text in Bytes angibt. Finden Sie unter der <strong><a href="field-size-property-dao.md">Size</a></strong> -Eigenschaft für gültige Werte. Dieses Argument wird für numerische Felder und Felder mit festgelegtem Format ignoriert.</p></td>
+<td><p>Eine ganze Zahl, die die maximale Größe eines <strong>Field</strong>-Objekts, das Text enthält, in Bytes angibt. Unter der <strong><a href="field-size-property-dao.md">Size</a></strong>-Eigenschaft finden Sie gültige Werte für size. Dieses Argument wird für numerische Felder und Felder mit fester Breite ignoriert.</p></td>
 </tr>
 </tbody>
 </table>
@@ -74,17 +74,17 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 
 Feld
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **CreateField**-Methode können Sie ein neues Feld erstellen und den Namen und Datentyp sowie die Größe des Felds angeben. Wenn Sie **CreateField** verwenden und einen oder mehrere optionale Teile weglassen, können Sie die entsprechende Eigenschaft mithilfe einer geeigneten Zuweisungsanweisung festlegen oder zurücksetzen, bevor Sie das neue Objekt an eine Auflistung anfügen. Nachdem Sie das neue Objekt angefügt haben, können Sie dessen Eigenschafteneinstellungen zum Teil ändern. Weitere Informationen finden Sie in den Themen zu den einzelnen Eigenschaften.
+Mit der **CreateField**-Methode können Sie ein neues Feld erstellen und den Namen, den Datentyp sowie die Größe des Felds angeben. Wenn Sie einen oder mehrere der optionalen Teile für **CreateField** weglassen, können Sie die entsprechende Eigenschaft mithilfe einer entsprechenden Zuweisungsanweisung festlegen oder zurücksetzen, bevor Sie das neue Objekt an eine Auflistung anfügen. Nachdem Sie das neue Objekt angefügt haben, können Sie einige, aber nicht alle Eigenschafteneinstellungen ändern. Weitere Informationen finden Sie in den Themen zu den einzelnen Eigenschaften.
 
-Den Typ und die Größe der Argumente gelten nur für **Field** -Objekte in ein **TableDef** -Objekt. Wird ein **Field**-Objekt mit einem **Index**- oder **Relation**-Objekt verknüpft, werden diese Argumente ignoriert.
+Die Argumente Typ und Größe gelten nur für **Field**-Objekte in einem **TableDef**-Objekt. Diese Argumente werden ignoriert, wenn ein **Field**-Objekt einem **Index**- oder **Relation**-Objekt zugeordnet ist.
 
-Wenn Name auf ein Objekt, das bereits ein Element der Auflistung ist bezieht, tritt ein Laufzeitfehler auf, wenn Sie die **[Append](fields-append-method-dao.md)** -Methode verwenden.
+Bezieht sich Name auf ein Objekt, das bereits ein Element der Auflistung ist, tritt ein Laufzeitfehler auf, wenn Sie die **[Append](fields-append-method-dao.md)**-Methode verwenden.
 
-Wenn Sie ein **Field**-Objekt aus einer **Fields**-Auflistung entfernen möchten, verwenden Sie die **[Delete](fields-delete-method-dao.md)** -Methode für die Auflistung. Sie können ein **Field**-Objekt nicht mehr aus der **Fields**-Auflistung eines **TableDef**-Objekts löschen, nachdem Sie einen Index erstellt haben, der auf das Feld verweist.
+Um ein **Field**-Objekt aus einer **Fields**-Auflistung zu entfernen, führen Sie die **[Delete](fields-delete-method-dao.md)**-Methode für die Auflistung aus. Sie können ein **Field**-Objekt nicht mehr aus der **Fields**-Auflistung eines **TableDef**-Objekts löschen, nachdem Sie einen Index erstellt haben, der auf das Feld verweist.
 
-**Link bereitgestellt, von** der Community [UtterAccess](https://www.utteraccess.com) . UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Link zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
 - [Hinzufügen eines Hyperlinkfelds zu einer vorhandenen Tabelle mit DAO](https://www.utteraccess.com/wiki/index.php/adding_a_hyperlink_field_to_an_existing_table_with_dao)
 
@@ -92,7 +92,7 @@ Wenn Sie ein **Field**-Objekt aus einer **Fields**-Auflistung entfernen möchten
 
 Im folgenden Beispiel wird veranschaulicht, wie Sie ein berechnetes Feld erstellen. Die CreateField-Methode erstellt ein Feld namens **FullName**. Die Expression-Eigenschaft wird dann auf den Ausdruck festgelegt, der den Wert des Felds berechnet.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub CreateCalculatedField()

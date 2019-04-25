@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 6b6f16c22e9265159c73279cfa1b2644adbc0277
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306818"
 ---
 # <a name="setvalue-macro-action"></a>SetValue-Makroaktion
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Die **SetzenWert** -Aktion können Sie den Wert des Microsoft Access-Felds, eines Steuerelements oder einer Eigenschaft in einem Formular, einem Formulardatenblatt oder einen Bericht festzulegen.
+Sie können die Aktion **SetValue** verwenden, um den Wert eines Microsoft Access-Felds, eines Steuerelements oder einer Eigenschaft in einem Formular, einem Formulardatenblatt oder einen Bericht festzulegen.
 
 > [!NOTE]
-> - Sie können die Aktion **SetzenWert** nicht verwenden, um den Wert einer Access-Eigenschaft festzulegen, die ein Objekt zurückgibt.
-> - [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> - Sie können die Aktion **SetValue** nicht verwenden, um den Wert einer Access-Eigenschaft festzulegen, die ein Objekt zurückgibt.
+> - Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 Die Aktion **SetzenWert** kann mit den folgenden Argumenten verwendet werden.
 
@@ -46,20 +46,20 @@ Die Aktion **SetzenWert** kann mit den folgenden Argumenten verwendet werden.
 </tr>
 <tr class="even">
 <td><p><strong>Ausdruck</strong></p></td>
-<td><p>Der Ausdruck, den Access verwendet, um den Wert für dieses Element festzulegen. Sie müssen immer die vollständige Syntax verwenden, um auf Objekte im Ausdruck zu verweisen. Um beispielsweise den Wert eines Steuerelements für das Gehalt in einem Formular für Mitarbeiter um 10 Prozent zu erhöhen, verwenden Sie Forms!Employees!Salary*1.1. Dies ist ein erforderliches Argument.</p><p><strong>Hinweis</strong>: Verwenden Sie ein Gleichheitszeichen (=) vor dem Ausdruck im dieses Argument. In diesem Fall Access wertet den Ausdruck und verwendet diesen Wert als den Ausdruck in diesem Argument. Wenn der Ausdruck eine Zeichenfolge ist, können unerwartete Ergebnisse auftreten.</p>
-<p>Beispiel: bei Eingabe <strong> = &quot;Zeichenfolge1&quot; </strong> für dieses Argument wertet Access zuerst den Ausdruck als Zeichenfolge1. Klicken Sie dann verwendet Zeichenfolge1 als Ausdruck, der in diesem Argument und erwartet ein Steuerelement oder eine Eigenschaft mit dem Namen String1 im Formular oder Bericht, der das Makro aufgerufen wird.</p></td>
+<td><p>Der Ausdruck, den Access verwendet, um den Wert für dieses Element festzulegen. Sie müssen immer die vollständige Syntax verwenden, um auf eines der Objekte im Ausdruck zu verweisen. Verwenden Sie z. B. Forms!Employees!Salary*1.1, um den Wert im Steuerelement für "Gehalt" um 10 Prozent zu erhöhen, das sich auf einem Mitarbeiterformular befindet. Dies ist ein erforderliches Argument.</p><p><strong>HINWEIS</strong>:Verwenden Sie kein Gleichheitszeichen (=) vor dem Ausdruck in diesem Argument. Access wertet ansonsten den Ausdruck aus und verwendet diesen Wert als Ausdruck in diesem Argument. Dies kann zu unerwarteten Ergebnissen führen, wenn der Ausdruck eine Zeichenfolge ist.</p>
+<p>Wenn Sie beispielsweise <strong>=&quot;Zeichenfolge1&quot;</strong> für dieses Argument eingeben, wertet Access zuerst den Ausdruck als Zeichenfolge1 aus. Dann wird "Zeichenfolge1" als Ausdruck in diesem Argument verwendet, wobei erwartet wird, dass ein Steuerelement oder eine Eigenschaft namens "Zeichenfolge1" auf dem Formular oder im Bericht gefunden wird, über das/den das Makro aufgerufen wurde.</p></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> Klicken Sie in einer Access-Datenbank (MDB oder ACCDB) auf die Schaltfläche **Erstellen** , um den Ausdrucks-Generator verwenden Sie zum Erstellen eines Ausdrucks für eines der folgenden Argumente.
+> Klicken Sie in einer Access-Datenbank (MDB oder ACCDB) auf die Schaltfläche **Erstellen**, um den Ausdrucks-Generator zum Erstellen eines Ausdrucks für eines dieser Argumente zu verwenden.
 
 ## <a name="remarks"></a>Hinweise
 
 Sie können diese Aktion verwenden, um einen Wert für ein Feld oder Steuerelement in einem Formular, einem Formulardatenblatt oder einem Bericht festzulegen. Sie können außerdem den Wert für nahezu alle Steuerelement-, Formular- und Berichtseigenschaften in jeder Ansicht festlegen. Informationen dazu, ob eine bestimmte Eigenschaft mit einem Makro und in welchen Ansichten die Eigenschaft festgelegt werden kann, finden Sie im Hilfethema für die jeweilige Eigenschaft im Visual Basic-Editor.
 
-Sie können auch den Wert für ein Feld in einem Formular zugrunde liegenden Tabelle festlegen, sogar dann, wenn das Formular ein Steuerelement, das an das Feld gebunden. Verwenden Sie die Syntax **Forms**\!*Formname*\!*Fieldname* im **Element** um den Wert für ein solches Feld festzulegen. Sie können auch auf ein Feld in einem Bericht zugrunde liegenden Tabelle verweisen, indem Sie mithilfe der Syntax **Berichte**\!*Reportname*\!*Fieldname*, aber es ein Steuerelement auf den Bericht an dieses Feld gebunden muss, oder das Feld werden, die in bezeichnet muss einer berechneten Steuerelement im Bericht.
+Sie können auch den Wert für ein Feld in der Tabelle festlegen, die einem Formular zugrunde liegt, auch wenn das Formular kein Steuerelement enthält, das mit dem Feld verbunden ist. Verwenden Sie die Syntax **Formulare**\!*Formularname*\!*Feldname* im Feld **Element**, um den Wert für ein derartiges Feld festzulegen. Sie können auch auf ein Feld in der Tabelle verweisen, die einem Bericht zugrunde liegt, indem Sie die Syntax **Berichte**\!*Berichtname*\!*Feldname* verwenden, aber der Bericht muss ein Steuerelement enthalten, das mit diesem Feld verbunden ist, oder auf das Feld muss in einem berechneten Steuerelement des Berichts verwiesen werden.
 
 Wenn Sie den Wert eines Steuerelements in einem Formular festlegen, löst die Aktion **SetzenWert** nicht die Gültigkeitsprüfungsregeln auf Formularebene des Steuerelements, sondern die Gültigkeitsprüfungsregeln auf Tabellenebene des zugrunde liegendenen Felds aus, wenn das Steuerelement ein gebundenes Steuerelement ist. Die Aktion **SetzenWert** löst außerdem eine Neuberechnung aus, die aber nicht unbedingt sofort erfolgt. Um eine sofortige Aktualisierung auszulösen und den Abschluss der Neuberechnung zu erzwingen, verwenden Sie die Aktion **AktualisierenObjekt**. Der Wert, den Sie in einem Steuerelement mithilfe der Aktion **SetzenWert ** festlegen, wird außerdem nicht vom Eingabeformat beeinflusst, das in der Eigenschaft **InputMask** des Steuerelements oder zugrunde liegenden Felds festgelegt ist.
 
@@ -71,7 +71,7 @@ Um den Wert eines Steuerelements zu ändern, können Sie die Aktion **SetzenWert
 > - Berechnete Steuerelemente in Formularen
 
 > [!TIP]
-> Die **SetzenWert** -Aktion können Sie ein Formular in der Formularansicht anzeigen oder ausblenden. Geben Sie **Formulare**! *Formname ***. Sichtbar** im im **Element** und **Nein** oder **Ja** im Feld **Ausdruck** . Ein modales Formular **Visible** -Eigenschaft auf **Nein** festlegen, das Formular ausgeblendet und ungebunden. Die-Eigenschaft auf **Ja** festlegen, zeigt das Formular und stellt sie erneut modal.
+> Mithilfe der **SetValue**-Aktion können Sie ein Formular in der Formularansicht aus- oder einblenden. Geben Sie **Formulare**!*Formularname***.Sichtbar** in das Feld **Element** und **Nein** oder **Ja** in das Feld **Ausdruck** ein. Wenn Sie die Eigenschaft **Sichtbar** eines modalen Formulars auf **Nein** festlegen, wird das Formular ausgeblendet und nicht modal. Wenn Sie die Eigenschaft auf **Ja**, wird das Formular eingeblendet und wieder modal.
 
 Wenn Sie über die Aktion **SetzenWert** in einem Makro den Wert eines Steuerelements ändern oder neue Daten in einem Steuerelement hinzufügen, werden keine Ereignisse wie **VorAktualisierung**, **VorEingabe** oder **Änderung** ausgelöst, die auftreten, wenn Sie in diesen Steuerelementen in der Benutzeroberfläche Daten ändern oder Daten eingeben. Diese Ereignisse treten ebenfalls nicht auf, wenn Sie den Wert des Steuerelements mithilfe eines VBA-Moduls (Visual Basic for Applications) festlegen.
 
@@ -103,23 +103,23 @@ Das folgende Makro öffnet das Formular zum Hinzufügen von Produkten über eine
 <td><p>Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>FensterSchließen</strong></p></td>
-<td><p><strong>Objekttyp</strong>: <strong>FormObject Name</strong>: Produkt Liste <strong>Speichern</strong>: <strong>Nein</strong></p></td>
+<td><p><strong>CloseWindow</strong></p></td>
+<td><p><strong>Objekttyp</strong>: <strong>FormularObjektname</strong>: Produktliste <strong>Speichern</strong>: <strong>Nein</strong></p></td>
 <td><p>Schließen des Produktlistenformulars</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>ÖffnenFormular</strong></p></td>
-<td><p><strong>Formularname</strong>: Produkte <strong>Anzeigen</strong>: <strong>FormData Modus</strong>: <strong>Fenster hinzufügen Modus</strong>: <strong>Normal</strong></p></td>
+<td><p><strong>OpenForm</strong></p></td>
+<td><p><strong>Formularname</strong>: Produkte <strong>Ansicht</strong>: <strong>FormData-Modus</strong>: <strong>AddWindow-Modus</strong>: <strong>Normal</strong></p></td>
 <td><p>Öffnen des Produktformulars</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>SetzenWert</strong></p></td>
-<td><p><strong>Artikel</strong>: [Formulare]! [Artikel]! [Lieferanten-Nr] <strong>Ausdruck</strong>: SupplierID</p></td>
+<td><p><strong>SetValue</strong></p></td>
+<td><p><strong>Item</strong>: [Forms]![Products]![SupplierID] <strong>Expression</strong>: SupplierID</p></td>
 <td><p>Festlegen des SupplierID-Steuerelements auf den aktuellen Lieferanten im Formular für Lieferanten</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>GeheZuSteuerelement</strong></p></td>
-<td><p><strong>Steuerelementname</strong>: CategoryID</p></td>
+<td><p><strong>GoToControl</strong></p></td>
+<td><p><strong>Steuerelementname</strong>: KategorieID</p></td>
 <td><p>Wechseln zum CategoryID-Steuerelement</p></td>
 </tr>
 </tbody>

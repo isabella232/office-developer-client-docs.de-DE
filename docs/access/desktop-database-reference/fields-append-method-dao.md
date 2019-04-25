@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: ec3cacbe1f1c7ac5d6bda16bdd47891dc58ebfe0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292587"
 ---
 # <a name="fieldsappend-method-dao"></a>Fields.Append-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Fügt der **[Fields](field-object-dao.md)** -Auflistung ein neues **[Field](fields-collection-dao.md)** -Objekt hinzu.
+Fügt der **[Fields](fields-collection-dao.md)**-Auflistung ein neues **[Field](field-object-dao.md)** hinzu.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Fügen Sie (***Objekt***)
+*expression* .Append(***Object***)
 
-*Ausdruck* Eine Variable, die ein **Fields** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Fields**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -38,14 +38,14 @@ Fügt der **[Fields](field-object-dao.md)** -Auflistung ein neues **[Field](fiel
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Object</em></p></td>
+<td><p><em>Objekt</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Objekt</strong></p></td>
 <td><p>Eine Objektvariable, die das Feld darstellt, das an die Auflistung angefügt wird.</p></td>
@@ -62,11 +62,11 @@ Das angefügte Objekt wird zu einem beständigen Objekt und auf einem Datenträg
 
 Das Hinzufügen eines neuen Objekts geschieht ohne Verzögerung. Trotzdem sollten Sie die **Refresh**-Methode auf alle weiteren Auflistungen anwenden, die von Änderungen an der Datenbankstruktur betroffen sein könnten.
 
-Wenn das Objekt an die, das Sie anfügen möchten (beispielsweise wenn Sie, alle **Field** -Objekte **Fields** -Auflistung eines **Index** -Objekts angefügt haben, bevor es an eine **Indexes** -Auflistung angehängt wird) abgeschlossen ist oder wenn die Eigenschaften in einem oder mehreren festlegen untergeordnete Objekte sind falsch ist, verwenden die **Append** -Methode einen Fehler verursacht. Angenommen, wenn Sie keinen Feldtyp angegeben und versuchen Sie es dann das **Field** -Objekt an die **Fields** -Auflistung in ein **TableDef** -Objekt angefügt werden soll, löst mit der **Append** -Methode einen Laufzeitfehler.
+Falls das angefügte Objekt nicht vollständig ist (wenn Sie beispielsweise noch keine **Field**-Objekte an eine **Fields**-Auflistung eines **Index**-Objekts angefügt haben, bevor es an eine **Indexes**-Auflistung angefügt wird) bzw. die in mindestens einem untergeordneten Objekt festgelegten Eigenschaften falsch sind, wird mit der **Append**-Methode ein Fehler verursacht. Angenommen, Sie haben keinen Feldtyp angegeben und versuchen dann, das **Field**-Objekt an die **Fields**-Auflistung in einem **TableDef**-Objekt anzufügen, dann löst das Anwenden der **Append**-Methode einen Laufzeitfehler aus.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird entweder die **Append** -Methode oder die **Delete** -Methode zum Ändern der **Fields** -Auflistung eines **TableDef** -Objekts verwendet. Zum Ausführen dieser Prozedur ist die AppendDeleteField-Prozedur erforderlich.
+In diesem Beispiel wird entweder die **Append**-Methode oder die **Delete**-Methode zum Ändern der **Fields**-Auflistung eines **TableDef**-Objekts verwendet. Zum Ausführen dieser Prozedur ist die AppendDeleteField-Prozedur erforderlich.
 
 ```vb
     Sub AppendX() 

@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c19ef8ab8ef2e937ba7467b3695f9aa5780c21c0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294981"
 ---
 # <a name="databasecreatequerydef-method-dao"></a>Database.CreateQueryDef-Methode (DAO)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
-Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
+Erstellt ein neues **[QueryDef](querydef-object-dao.md)**-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateQueryDef (***Name***, ***SQLText***)
+*expression* .CreateQueryDef(***Name***, ***SQLText***)
 
-*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Database**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -38,7 +38,7 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -54,7 +54,7 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 <td><p><em>SQLText</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong>Variant</strong> (Untertyp <strong>String</strong>), bei er es sich um eine SQL Anweisung handelt, die die <strong>QueryDef</strong> definiert. Wenn dieses Argument ausgelassen wird, können Sie die <strong>QueryDef</strong> durch Festlegen ihrer <strong><a href="querydef-sql-property-dao.md">SQL</a></strong>-Eigenschaft definieren, bevor oder nachdem Sie sie an eine Auflistung anfügen.</p></td>
+<td><p>Eine <strong>Variant</strong> (Untertyp <strong>String</strong>), bei der es sich um eine SQL-Anweisung handelt, die die <strong>QueryDef</strong> definiert. Wenn dieses Argument ausgelassen wird, können Sie die <strong>QueryDef</strong> durch Festlegen ihrer <strong><a href="querydef-sql-property-dao.md">SQL</a></strong> -Eigenschaft definieren, bevor oder nachdem Sie sie an eine Auflistung anfügen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -66,21 +66,21 @@ QueryDef
 
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie in einem Microsoft Access-Arbeitsbereich beim Erstellen eines **QueryDef**-Objekts für den Namen einen anderen Wert angeben als eine leere Zeichenfolge, wird das resultierende **QueryDef**-Objekt automatisch an die **[QueryDefs](querydefs-collection-dao.md)** -Auflistung angefügt.
+Wenn Sie in einem Microsoft Access-Arbeitsbereich bei der Erstellung einer **QueryDef** einen anderen Wert als eine Zeichenfolge der Länge 0 (null) für den Namen angeben, wird das resultierende **QueryDef**-Objekt automatisch an die **[QueryDefs](querydefs-collection-dao.md)**-Auflistung angefügt.
 
-Wenn das durch Name angegebene Objekt bereits ein Mitglied der **QueryDefs** -Auflistung ist, tritt ein Laufzeitfehler. Sie können eine temporäre **QueryDef-Objekt** erstellen, indem Sie eine leere Zeichenfolge für das Namenargument verwenden, wenn Sie die **CreateQueryDef** -Methode ausführen. Sie können aber auch die **[Name](querydef-name-property-dao.md)** -Eigenschaft eines neu erstellten **QueryDef**-Objekts auf eine leere Zeichenfolge ("") festlegen. 
+Wenn das von name angegebene Objekt bereits ein Mitglied der **QueryDefs**-Auflistung ist, tritt ein Laufzeitfehler auf. Sie können eine temporäre **QueryDef** erstellen, indem Sie beim Ausführen der CreateQueryDef-Methode eine Zeichenfolge der Länge 0 (null) für das **name**-Argument verwenden. Ein andere Methode besteht darin, die **[Name](querydef-name-property-dao.md)** -Eigenschaft einer neu erstellten **QueryDef** auf eine Zeichenfolge der Länge 0 ("") festzulegen. 
 
-Temporäre **QueryDef**-Objekte sind nützlich, wenn Sie dynamische SQL-Anweisungen mehrmals verwenden möchten, ohne dass Sie neue permanente Objekte in der **QueryDefs**-Auflistung erstellen müssen. Sie können ein temporäres **QueryDef**-Objekt nicht an jede Auflistung anfügen, da eine leere Zeichenfolge kein gültiger Name für ein permanentes **QueryDef**-Objekt ist. Sie haben jedoch immer die Möglichkeit, die **Name**- und **SQL**-Eigenschaften des neu erstellten **QueryDef**-Objekts festzulegen und anschließend das **QueryDef**-Objekt an die **QueryDefs**-Auflistung anzufügen.
+Temporäre **QueryDef** -Objekte sind nützlich, wenn Sie dynamische SQL-Anweisungen wiederholt verwenden möchten, ohne neue dauerhafte Objekte in der **QueryDefs** -Auflistung zu erstellen. Sie können eine temporäre **QueryDef** nicht an eine Auflistung anfügen, da eine Zeichenfolge der Länge 0 (null) kein gültiger Name für ein dauerhaftes **QueryDef** -Objekt ist. Sie können immer die Eigenschaften **Name** und **SQL** des neu erstellten **QueryDef** -Objekts festlegen und die **QueryDef** anschließend an die **QueryDefs** -Auflistung anfügen.
 
-Verwenden Sie zum Ausführen der SQL-Anweisung in einem **QueryDef**-Objekt die **[Execute](querydef-execute-method-dao.md)** - oder **[OpenRecordset](database-openrecordset-method-dao.md)** -Methode.
+Zum Ausführen der SQL-Anweisung in einem **QueryDef**-Objekt verwenden Sie die **[Execute](querydef-execute-method-dao.md)**- oder die **[OpenRecordset](database-openrecordset-method-dao.md)**-Methode.
 
-Das Verwenden eines **QueryDef**-Objekts ist die empfohlene Methode für SQL Pass-Through-Abfragen in ODBC-Datenbanken.
+Die Verwendung eines **QueryDef**-Objekts ist das bevorzugte Verfahren zum Ausführen von SQL-Pass-Through-Abfragen mit ODBC-Datenbanken.
 
-Um ein **QueryDef** -Objekt aus einer **QueryDefs** -Auflistung in einer Datenbank des Microsoft Access-Datenbankmoduls zu entfernen, führen Sie die **[Delete](querydefs-delete-method-dao.md)** -Methode für die Auflistung aus.
+Um ein **QueryDef**-Objekt aus einer **QueryDefs**-Auflistung in einer Datenbank des Microsoft Access-Datenbankmoduls zu entfernen, führen Sie die **[Delete](querydefs-delete-method-dao.md)**-Methode für die Auflistung aus.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **CreateQueryDef** -Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef** -Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
+In diesem Beispiel wird die **CreateQueryDef**-Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef**-Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
 
 ```vb
     Sub CreateQueryDefX() 
@@ -135,7 +135,7 @@ In diesem Beispiel wird die **CreateQueryDef** -Methode verwendet, um ein tempor
 
 <br/>
 
-Dieses Beispiel verwendet die **CreateQueryDef** - und **OpenRecordset** -Methode sowie die **SQL** -Eigenschaft zum Abfragen der Tabelle mit Titeln in der Microsoft SQL Server-Beispieldatenbank „Publikationen" und zum Zurückgeben des Titels und der Titel-ID des Bestsellers. Anschließend wird die Tabelle mit Autoren abgefragt, und der Benutzer wird angewiesen, einen Bonusscheck an jeden Autor zu senden, der auf dem jeweiligen Tantiemenanteil des Autors basiert (der Gesamtbonus beträgt 1.000 $, und jeder Autor soll einen Prozentsatz dieses Betrags erhalten).
+In diesem Beispiel werden die **CreateQueryDef**- und die **OpenRecordset**-Methode sowie die **SQL**-Eigenschaft verwendet, um die Tabelle der Titel in der Microsoft SQL Server-Beispieldatenbank "Pubs" abzufragen und den Titel und die Titel-ID des Bestsellers zurückzugeben. Anschließend wird die Tabelle der Autoren abgefragt, und der Benutzer wird angewiesen, einen Bonusscheck an jeden Autor zu senden, der auf dem jeweiligen Tantiemenanteil des Autors basiert (der Gesamtbonus beträgt 1.000 $, und jeder Autor soll einen Prozentsatz dieses Betrags erhalten).
 
 ```vb 
 Sub ClientServerX2() 
@@ -203,9 +203,9 @@ End Sub
 
 <br/>
 
-Das folgende Beispiel zeigt, wie Sie eine Parameterabfrage erstellen. Eine Abfrage namens **MyQuery** wird mit zwei Parameter, mit dem Namen Param1 und Param2 erstellt. Hierzu wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, die die Parameter definiert.
+Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage erstellt wird. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern, Param1 und Param2, erstellt. Zu diesem Zweck wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, die die Parameter definiert.
 
-**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub CreateQueryWithParameters()

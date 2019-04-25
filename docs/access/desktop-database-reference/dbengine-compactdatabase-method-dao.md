@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: b50cb0453df1fa357fbd0b089af2e74fdd4b4c1e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294337"
 ---
 # <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabase-Methode (DAO)
 
-**Betrifft**: Access 2013 | Access 2016
+**Gilt für:** Access 2013 | Access 2016
 
-Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglichkeit, ihre Version, Sortierreihenfolge und Verschlüsselung. (Nur Microsoft Access-Arbeitsbereiche).
+Kopiert und komprimiert eine geschlossene Datenbank und bietet die Möglichkeit, ihre Version, Sortierreihenfolge und Verschlüsselung festzulegen. (Nur Microsoft Access-Arbeitsbereiche).
 
 > [!NOTE]
-> Wenn Sie verschlüsselte verknüpfte Tabellen für die Aktion, Update und SQL-Abfragen [wie eine SQL UPDATE-Anweisung (CurrentDb.Execute "Aktualisieren...")] zu verwenden, müssen Sie den Verschlüsselungsschlüssel angeben. Darüber hinaus sind verknüpfte Tabellen 19-Zeichen beschränkt für den Verschlüsselungsschlüssel. Finden Sie im Abschnitt **verschlüsselte verknüpfte Tabellen** am Ende dieses Themas.
+> Wenn Sie verschlüsselte verknüpfte Tabellen für action-, update- und SQL-Abfragen verwenden, z. B. eine SQL UPDATE-Anweisung (CurrentDb.Execute „UPDATE..."), müssen Sie den Verschlüsselungsschlüssel angeben. Verknüpfte Tabellen weisen außerdem eine Beschränkung von 19 Zeichen für den Verschlüsselungsschlüssel auf. Weitere Informationen finden Sie im Abschnitt **Verschlüsselte verknüpfte Tabellen** am Ende dieses Themas.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CompactDatabase (***SrcName***, ***DstName***, ***DstLocale***, ***Optionen***, ***Kennwort***)
+*expression* .CompactDatabase(***SrcName***, ***DstName***, ***DstLocale***, ***Options***, ***password***)
 
-*Ausdruck* Ein Ausdruck, der ein **DBEngine** -Objekt zurückgibt.
+*Ausdruck* Ein Ausdruck, der ein **DBEngine**-Objekt zurückgibt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -45,7 +45,7 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglic
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich oder optional</p></th>
+<th><p>Erforderlich/optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
@@ -54,44 +54,44 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglic
 <tr class="odd">
 <td><p><em>SrcName</em></p></td>
 <td><p>Erforderlich</p></td>
-<td><p><strong>Zeichenfolge</strong></p></td>
-<td><p>Gibt eine vorhandene geschlossene Datenbank an. Sie können einen vollständigen Pfad und Dateinamen, wie etwa werden &quot;C:\db1.mdb&quot;. Wenn der Dateiname eine Erweiterung aufweist, müssen Sie es angeben. Wenn Ihr Netzwerk unterstützt, Sie können auch angeben einen Netzwerkpfad wie &quot; \\server1\share1\dir1\db1.mdb&quot;</p></td>
+<td><p><strong>String</strong></p></td>
+<td><p>Gibt eine vorhandene geschlossene Datenbank an. Dies kann ein vollständiger Pfad- und Dateiname sein, wie z. B. &quot;C:\db1.mdb&quot;. Wenn der Dateiname eine Erweiterung aufweist, müssen Sie diese angeben. Wenn Ihr Netzwerk dies unterstützt, können Sie auch einen Netzwerkpfad wie z. B. &quot;\\server1\share1\dir1\db1.mdb&quot; angeben.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>DstName</em></p></td>
 <td><p>Erforderlich</p></td>
-<td><p><strong>Zeichenfolge</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>Der Dateiname (und Pfad) der komprimierten Datenbank, die Sie erstellen. Sie können auch einen Netzwerkpfad angeben. Mit diesem Argument kann nicht die gleiche Datenbankdatei angegeben werden wie mit SrcName.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>DstLocale</em></p></td>
 <td><p>Optional</p></td>
-<td><p><strong>Variante</strong></p></td>
-<td><p>Ein Zeichenfolgenausdruck, der eine Sortierreihenfolge zum Erstellen von DstName angibt, wie unter „Hinweise" angegeben.</p>
+<td><p><strong>Variant</strong></p></td>
+<td><p>Ein Zeichenfolgenausdruck, der eine Sortierreihenfolge zum Erstellen von DstName angibt, wie unter „Hinweise“ angegeben.</p>
 <ul>
 <li><p>Wenn Sie dieses Argument weglassen, hat DstName das gleiche Gebietsschema wie SrcName.</p></li>
-<li><p>Sie können auch ein Kennwort für DstName erstellen, indem Sie die Kennwortzeichenfolge (beginnend mit &quot;; Pwd =&quot;) mit einer Konstante im Argument DstLocale wie folgt: DbLangSpanish &amp; &quot;; Pwd = NewPassword&quot;.</p></li>
-<li><p>Wenn Sie dasselbe DstLocale wie SrcName (Standardwert) verwenden, aber ein neues Kennwort angeben möchten, geben Sie einfach eine Kennwortzeichenfolge für DstLocale ein: &quot;; Pwd = NewPassword&quot;</p></li>
+<li><p>Sie können auch ein Kennwort für DstName erstellen, indem Sie die Kennwortzeichenfolge (die mit &quot;;pwd=&quot; beginnt) wie folgt mit einer Konstanten im DstLocale-Argument verketten: dbLangSpanish &amp; &quot;;pwd=NewPassword&quot;.</p></li>
+<li><p>Wenn Sie für DstLocale den gleichen Wert wie für SrcName verwenden (Standardwert), aber ein neues Kennwort angeben möchten, geben Sie einfach eine Kennwortzeichenfolge für DstLocale ein: &quot;;pwd=NewPassword&quot;</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><em>Options</em></p></td>
+<td><p><em>Optionen</em></p></td>
 <td><p>Optional</p></td>
-<td><p><strong>Variante</strong></p></td>
-<td><p>Optional. Ein Konstante oder Kombination aus Konstanten, mit der mindestens eine Option angegeben wird, wie unter „Hinweise" angegeben. Sie können Optionen durch Summieren der entsprechenden Konstanten kombinieren.</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>Optional. Ein Konstante oder Kombination aus Konstanten, mit der mindestens eine Option angegeben wird, wie unter „Hinweise“ angegeben. Sie können Optionen durch Summieren der entsprechenden Konstanten kombinieren.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>password</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein Zeichenfolgenausdruck, einen Verschlüsselungsschlüssel enthält, wenn die Datenbank verschlüsselt ist. Die Zeichenfolge &quot;; Pwd =&quot; dem tatsächlichen Kennwort vorausgehen muss. Wenn Sie eine Kennworteinstellung in DstLocale einschließen, wird diese Einstellung ignoriert.</p><p><strong>Hinweis</strong>: Dies ist veraltete Parameter und wird nicht unterstützt. ACCDB-Format. Zum Verschlüsseln von ein. ACCDB-Datei, verwenden Sie die "Pwd =" option Zeichenfolge. Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Zahlen und Symbole in Kombination verwenden. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</p>
+<td><p>Ein Zeichenfolgenausdruck, der einen Verschlüsselungsschlüssel enthält, wenn die Datenbank verschlüsselt ist. Die Zeichenfolge &quot;;pwd=&quot; muss vor dem eigentlichen Kennwort stehen. Wenn Sie eine Kennworteinstellung in DstLocale einschließen, wird diese Einstellung ignoriert.</p><p><strong>HINWEIS</strong>: Dies ist ein veralteter Parameter, der im ACCDB-Format nicht unterstützt wird. Zum Verschlüsseln einer ACCDB-Datei, verwenden Sie die "pwd="-Optionszeichenfolge. Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Zahlen und Symbole in Kombination verwenden. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich merken können, damit Sie es nicht aufschreiben müssen.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können eine der folgenden Konstanten für das DstLocale-Argument verwenden, um die **CollatingOrder** -Eigenschaft für Zeichenfolgenvergleiche von Text anzugeben.
 
@@ -113,15 +113,15 @@ Sie können eine der folgenden Konstanten für das DstLocale-Argument verwenden,
 </tr>
 <tr class="even">
 <td><p><strong>dbLangArabic</strong></p></td>
-<td><p>Arabisch</p></td>
+<td><p>Arabic</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLangChineseSimplified</strong></p></td>
-<td><p>Chinesisch (Vereinfacht)</p></td>
+<td><p>Chinesisch (vereinfacht)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbLangChineseTraditional</strong></p></td>
-<td><p>Chinesisch (Traditionell)</p></td>
+<td><p>Chinesisch (traditionell)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLangCyrillic</strong></p></td>
@@ -199,7 +199,7 @@ Sie können eine der folgenden Konstanten für das DstLocale-Argument verwenden,
 Sie können eine der folgenden Konstanten im options-Argument verwenden, um anzugeben, ob die Datenbank während der Komprimierung verschlüsselt werden soll.
 
 > [!NOTE]
-> Die Konstanten DbEncrypt und DbDecrypt sind veraltet und nicht unterstützt. ACCDB-Dateiformate.
+> Die Konstanten „dbEncrypt“ und „dbDecrypt“ sind veraltet und werden im ACCDB-Dateiformat nicht unterstützt.
 
 <table>
 <colgroup>
@@ -273,16 +273,16 @@ Sie können eine der folgenden Konstanten im options-Argument verwenden, um die 
 
 Sie können nur eine Versionskonstante angeben. Wenn Sie keine Versionskonstante angeben, hat DstName die gleiche Version wie SrcName. Sie können DstName nur auf eine Version komprimieren, die der von SrcName entspricht oder höher ist.
 
-Wenn Sie Daten in einer Datenbank ändern, kann die Datenbankdatei fragmentiert werden und mehr Speicherplatz belegen als erforderlich. Sie können die Datenbank in regelmäßigen Abständen mit der **CompactDatabase** -Methode komprimieren, um die Datenbankdatei zu defragmentieren. Die komprimierte Datenbank ist in der Regel kleiner und wird oft schneller ausgeführt. Sie können auch die Sortierreihenfolge, die Verschlüsselung oder die Version des Datenformats ändern, während Sie die Datenbank kopieren und komprimieren.
+Wenn Sie Daten in einer Datenbank ändern, kann die Datenbankdatei fragmentiert werden und mehr Speicherplatz belegen als erforderlich. Sie können die Datenbank in regelmäßigen Abständen mit der **CompactDatabase**-Methode komprimieren, um die Datenbankdatei zu defragmentieren. Die komprimierte Datenbank ist in der Regel kleiner und wird oft schneller ausgeführt. Sie können auch die Sortierreihenfolge, die Verschlüsselung oder die Version des Datenformats ändern, während Sie die Datenbank kopieren und komprimieren.
 
 Sie müssen SrcName schließen, bevor Sie die Datenbank komprimieren. In einer Mehrbenutzerumgebung darf SrcName während der Komprimierung nicht von einem anderen Benutzer geöffnet sein. Wenn SrcName nicht geschlossen oder nicht für die exklusive Verwendung verfügbar ist, tritt ein Fehler auf.
 
 Da **CompactDatabase** eine Kopie der Datenbank erstellt, muss genügend Speicherplatz für das Original und die Kopie der Datenbank vorhanden sein. Wenn nicht genügend Speicherplatz vorhanden ist, tritt bei der Komprimierung ein Fehler auf. Die Kopie der DstName-Datenbank muss sich nicht auf demselben Datenträger wie SrcName befinden. Nach erfolgreicher Komprimierung einer Datenbank können Sie die SrcName-Datei löschen und die komprimierte DstName-Datei in den ursprünglichen Dateinamen umbenennen.
 
-Die **CompactDatabase** -Methode kopiert alle Daten und die Einstellungen für die Sicherheitsberechtigung aus der durch SrcName angegebenen Datenbank in die durch DstName angegebene Datenbank.
+Die **CompactDatabase**-Methode kopiert alle Daten und die Einstellungen für die Sicherheitsberechtigung aus der durch SrcName angegebenen Datenbank in die durch DstName angegebene Datenbank.
 
 > [!NOTE]
-> [!HINWEIS] Da die **CompactDatabase** -Methode keine Microsoft Access-Objekte konvertiert, sollten Sie **CompactDatabase** nicht zum Konvertieren einer Datenbank verwenden, die solche Objekte enthält.
+> Da die **CompactDatabase**-Methode keine Microsoft Access-Objekte konvertiert, sollten Sie **CompactDatabase** nicht zum Konvertieren einer Datenbank verwenden, die solche Objekte enthält.
 
 ## <a name="encrypted-linked-tables"></a>Verschlüsselte verknüpfte Tabellen
 
@@ -318,7 +318,7 @@ Sie können den folgenden VBA-Beispielcode für eine Befehlsschaltfläche verwen
 
 <br/>
 
-Das folgende Codebeispiel veranschaulicht, wie CompactDatabase mit einem Kennwort (Schlüssel) verwenden, und klicken Sie dann auf eine Tabelle in die komprimierte Datenbank verknüpfen. Beachten Sie, dass ein Kennwort eingegeben werden muss.
+Im folgenden Codebeispiel wird gezeigt, wie Sie CompactDatabase mit einem Kennwort (Verschlüsselungsschlüssel) verwenden und dann eine Verknüpfung zu einer Tabelle in dieser komprimierten Datenbank herstellen. Beachten Sie, dass ein Kennwort eingegeben werden muss.
 
 ```vb
     Private Sub CompactAndLink_Click() 
