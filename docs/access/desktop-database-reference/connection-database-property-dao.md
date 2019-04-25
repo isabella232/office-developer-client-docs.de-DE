@@ -12,34 +12,34 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 7033c612642aa3ae6ce6c6175560438c893cde6d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295919"
 ---
-# <a name="connectiondatabase-property-dao"></a><span data-ttu-id="df13f-102">Connection.Database-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="df13f-102">Connection.Database property (DAO)</span></span>
+# <a name="connectiondatabase-property-dao"></a><span data-ttu-id="4a7e7-102">Connection.Database-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="4a7e7-102">Connection.Database Property (DAO)</span></span>
 
 
-<span data-ttu-id="df13f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="df13f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4a7e7-103">**Gilt für**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4a7e7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-## <a name="syntax"></a><span data-ttu-id="df13f-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="df13f-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4a7e7-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="4a7e7-104">Syntax</span></span>
 
-<span data-ttu-id="df13f-105">*Ausdruck* . Datenbank</span><span class="sxs-lookup"><span data-stu-id="df13f-105">*expression* .Database</span></span>
+<span data-ttu-id="4a7e7-105">*Ausdruck* .Database</span><span class="sxs-lookup"><span data-stu-id="4a7e7-105">expression  . Database</span></span>
 
-<span data-ttu-id="df13f-106">*Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="df13f-106">*expression* A variable that represents a **Connection** object.</span></span>
+<span data-ttu-id="4a7e7-106">*Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="4a7e7-106">*expression*  A variable that represents a **Connection** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="df13f-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="df13f-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4a7e7-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4a7e7-107">Remarks</span></span>
 
-<span data-ttu-id="df13f-p101">Verwenden Sie bei einem **[Connection](connection-object-dao.md)** -Objekt zum Abrufen eines **Database** -Objekts zur entsprechenden **Verbindung** die **Database** -Eigenschaft. In DAO sind das **Connection** -Objekt und das entsprechende **Database** -Objekt schlicht und ergreifend zwei verschiedene Objektvariablenverweise auf dasselbe Objekt. Die **Database** -Eigenschaft eines **Connection** -Objekts und die **[Connection](database-connection-property-dao.md)** -Eigenschaft eines **Database** -Objekts erleichtern die Umstellung von Verbindungen mit einer ODBC-Datenquelle über das Microsoft Access-Datenbankmodul auf ODBCDirect.</span><span class="sxs-lookup"><span data-stu-id="df13f-p101">On a **[Connection](connection-object-dao.md)** object, use the **Database** property to obtain a reference to a **Database** object that corresponds to the **Connection**. In DAO, a **Connection** object and its corresponding **Database** object are simply two different object variable references to the same object. The **Database** property of a **Connection** object and the **[Connection](database-connection-property-dao.md)** property of a **Database** object make it easier to change connections to an ODBC data source through the Microsoft Access database engine to use ODBCDirect.</span></span>
+<span data-ttu-id="4a7e7-p101">Verwenden Sie bei einem **[Connection](connection-object-dao.md)** -Objekt zum Abrufen eines **Database** -Objekts zur entsprechenden **Verbindung** die **Database** -Eigenschaft. In DAO sind das **Connection** -Objekt und das entsprechende **Database** -Objekt schlicht und ergreifend zwei verschiedene Objektvariablenverweise auf dasselbe Objekt. Die **Database** -Eigenschaft eines **Connection** -Objekts und die **[Connection](database-connection-property-dao.md)** -Eigenschaft eines **Database** -Objekts erleichtern die Umstellung von Verbindungen mit einer ODBC-Datenquelle über das Microsoft Access-Datenbankmodul auf ODBCDirect.</span><span class="sxs-lookup"><span data-stu-id="4a7e7-p101">On a **[Connection](connection-object-dao.md)** object, use the **Database** property to obtain a reference to a **Database** object that corresponds to the **Connection**. In DAO, a **Connection** object and its corresponding **Database** object are simply two different object variable references to the same object. The **Database** property of a **Connection** object and the **[Connection](database-connection-property-dao.md)** property of a **Database** object make it easier to change connections to an ODBC data source through the Microsoft Access database engine to use ODBCDirect.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df13f-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="df13f-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4a7e7-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="4a7e7-111">Example</span></span>
 
-<span data-ttu-id="df13f-112">In diesem Beispiel wird gezeigt, wie die **Database** -Eigenschaft dazu verwendet werden kann, Code so umzuwandeln, dass anstelle von ODBC-Daten über das Microsoft Access-Datenbankmodul anschließend ODBCDirect-Verbindungsobjekte verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="df13f-112">This example uses the **Database** property to show how code that used to access ODBC data through the Microsoft Access database engine can be converted to use ODBCDirect Connection objects.</span></span>
+<span data-ttu-id="4a7e7-112">In diesem Beispiel wird gezeigt, wie die **Database**-Eigenschaft dazu verwendet werden kann, Code so umzuwandeln, dass anstelle von ODBC-Daten über das Microsoft Access-Datenbankmodul anschließend ODBCDirect-Verbindungsobjekte verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="4a7e7-112">This example uses the **Database** property to show how code that used to access ODBC data through the Microsoft Access database engine can be converted to use ODBCDirect Connection objects.</span></span>
 
-<span data-ttu-id="df13f-113">Die OldDatabaseCode-Prozedur verwendet für den Zugriff auf eine ODBC-Datenbank eine Datenquelle, die mit dem Microsoft Access-Datenbankmodul verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="df13f-113">The OldDatabaseCode procedure uses a Microsoft Access database engine-connected data source to access an ODBC database.</span></span>
+<span data-ttu-id="4a7e7-113">Die OldDatabaseCode-Prozedur verwendet für den Zugriff auf eine ODBC-Datenbank eine Datenquelle, die mit dem Microsoft Access-Datenbankmodul verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="4a7e7-113">The OldDatabaseCode procedure uses a Microsoft Access database engine-connected data source to access an ODBC database.</span></span>
 
 ```vb
     Sub OldDatabaseCode() 
@@ -88,7 +88,7 @@ ms.locfileid: "28711931"
     End Sub 
 ```
 
-<span data-ttu-id="df13f-p102">Das Beispiel für NewDatabaseCode öffnet ein **Connection** -Objekt in einem ODBCDirect-Arbeitsbereich. Dann wird die **Database** -Eigenschaft des **Connection** -Objekts einer Objektvariable zugewiesen, die denselben Namen erhält wie die Datenquelle im der alten Prozedur. Der folgende Code muss nicht modifiziert werden, solange keine spezifischen Funktionen des Microsoft Access-Arbeitsbereiches verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="df13f-p102">The NewDatabaseCode example opens a **Connection** object in an ODBCDirect workspace. It then assigns the **Database** property of the **Connection** object to an object variable with the same name as the data source in the old procedure. None of the subsequent code has to be changed as long as it doesn't use any features specific to Microsoft Access workspaces.</span></span>
+<span data-ttu-id="4a7e7-p102">Das Beispiel für NewDatabaseCode öffnet ein **Connection** -Objekt in einem ODBCDirect-Arbeitsbereich. Dann wird die **Database** -Eigenschaft des **Connection** -Objekts einer Objektvariable zugewiesen, die denselben Namen erhält wie die Datenquelle im der alten Prozedur. Der folgende Code muss nicht modifiziert werden, solange keine spezifischen Funktionen des Microsoft Access-Arbeitsbereiches verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="4a7e7-p102">The NewDatabaseCode example opens a **Connection** object in an ODBCDirect workspace. It then assigns the **Database** property of the **Connection** object to an object variable with the same name as the data source in the old procedure. None of the subsequent code has to be changed as long as it doesn't use any features specific to Microsoft Access workspaces.</span></span>
 
 ```vb 
 Sub NewDatabaseCode() 
