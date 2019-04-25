@@ -14,24 +14,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: b8bd9abac3aee8be8fe52e555fcd5247e804f258
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297158"
 ---
 # <a name="alter-table-statement-microsoft-access-sql"></a>ALTER TABLE-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Ändert den Entwurf einer Tabelle, nachdem diese mit der [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisung erstellt wurde.
 
 > [!NOTE]
-> [!HINWEIS] Vom Microsoft Access-Datenbankmodul wird die Verwendung von ALTER TABLE- oder anderen DDL-Anweisungen (Data Definition Language, Datendefinitionssprache) in Nicht-Microsoft Access-Datenbanken nicht unterstützt. Verwenden Sie stattdessen Methoden DAO **Erstellen** .
+> Vom Microsoft Access-Datenbankmodul wird die Verwendung von ALTER TABLE- oder anderen DDL-Anweisungen (Data Definition Language, Datendefinitionssprache) in Nicht-Microsoft Access-Datenbanken nicht unterstützt. Verwenden Sie stattdessen die **Create**-Methoden von DAO.
 
 ## <a name="syntax"></a>Syntax
 
-ALTER TABLE *Tabelle* {ADD {Spalte *Feldtyp*\[(*Größe*)\] \[nicht "NULL"\] \[CONSTRAINT *Index* \] | ALTER COLUMN *Feldtyp*\[(*Größe*)\] | CONSTRAINT *indexmitmehrerenfeldern*} | DROP {COLUMN *Feld* I CONSTRAINT *Indexname*}}
+ALTER TABLE *Tabelle* {ADD {COLUMN *field type*\[(*size*)\] \[NOT NULL\] \[CONSTRAINT *Index*\] | ALTER COLUMN *Feldtyp*\[(*size*)\] | CONSTRAINT *multifieldindex*} | DROP {COLUMN *Feld* I CONSTRAINT *indexname*} }
 
 Die ALTER TABLE-Anweisung verfügt über drei Komponenten:
 
@@ -42,13 +42,13 @@ Die ALTER TABLE-Anweisung verfügt über drei Komponenten:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Teil</p></th>
+<th><p>Komponente</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Tabelle</em></p></td>
+<td><p><em>table</em></p></td>
 <td><p>Der Name der zu ändernden Tabelle.</p></td>
 </tr>
 <tr class="even">
@@ -65,11 +65,11 @@ Die ALTER TABLE-Anweisung verfügt über drei Komponenten:
 </tr>
 <tr class="odd">
 <td><p><em>Index</em></p></td>
-<td><p>Der Index für <em>dar</em>. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
+<td><p>Der Index für <em>Feld</em>. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>IndexMitMehrerenFeldern</em></p></td>
-<td><p>Die Definition eines mehreren Feldern bestehenden Indexes, <em>Tabelle</em>hinzugefügt werden soll. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
+<td><p><em>multifieldindex</em></p></td>
+<td><p>Die Definition eines zusammengesetzten Index, der zur <em>Tabelle</em> hinzugefügt werden soll. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Indexname</em></p></td>
@@ -79,9 +79,9 @@ Die ALTER TABLE-Anweisung verfügt über drei Komponenten:
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Mithilfe der ALTER TABLE-Anweisung können Sie eine vorhandene Tabelle auf verschiedene Weise ändern. Folgende Möglichkeiten stehen zur Verfügung:
+Mithilfe der ALTER TABLE-Anweisung können Sie eine bestehende Tabelle auf verschiedene Arten ändern. Sie können:
 
 - Verwenden Sie ADD COLUMN, um der Tabelle ein neues Feld hinzuzufügen. Sie geben den Feldnamen, den Datentyp und (für Text- und binäre Felder) optional eine Größe an. In der Anweisung im folgenden Beispiel wird der Employees-Tabelle (Personal) ein 25 Zeichen langes Textfeld namens Notes (Bemerkungen) hinzugefügt:
     
@@ -89,9 +89,9 @@ Mithilfe der ALTER TABLE-Anweisung können Sie eine vorhandene Tabelle auf versc
     ALTER TABLE Employees ADD COLUMN Notes TEXT(25)
   ```
     
-  Sie können auch einen Index für das Feld definieren. Weitere Informationen zu einem einzigen Feld Indizes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
+  Sie können auch einen Index für dieses Feld definieren. Weitere Informationen zu Einzelfeldindexes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
     
-  Wenn Sie NOT NULL für ein Feld angeben, sind neue Datensätze erforderlich, damit in diesem Feld gültige Daten vorhanden sind.
+  Wenn Sie für ein Feld NICHT NULL angeben, sind neue Datensätze erforderlich, damit gültige Daten für das Feld vorhanden sind.
 
 - Verwenden Sie ALTER COLUMN, um den Datentyp eines bestehenden Felds zu ändern. Sie geben den Feldnamen, den Datentyp und für Text- und binäre Felder optional eine Größe an. In der Anweisung im folgenden Beispiel wird der Datentyp des ZipCode-Felds (PLZ) in der Employees-Tabelle (ursprünglich Integer) in ein 10 Zeichen langes Textfeld geändert:
     
@@ -99,7 +99,7 @@ Mithilfe der ALTER TABLE-Anweisung können Sie eine vorhandene Tabelle auf versc
     ALTER TABLE Employees ALTER COLUMN ZipCode TEXT(10)
   ```
 
-- Verwenden Sie ADD CONSTRAINT, um einen aus mehreren Feldern bestehenden Index hinzuzufügen. Weitere Informationen zu mehreren Feldern bestehenden Indexes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
+- Sie können ADD CONSTRAINT verwenden, um einen zusammengesetzten Index hinzuzufügen. Weitere Informationen zu zusammengesetzten Indexes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
 
 - Verwenden Sie DROP COLUMN, um ein Feld zu löschen. Sie geben lediglich den Namen des Felds an.
 
@@ -109,12 +109,11 @@ Mithilfe der ALTER TABLE-Anweisung können Sie eine vorhandene Tabelle auf versc
 > [!NOTE] 
 > - Sie können immer nur ein Feld bzw. einen Index gleichzeitig hinzufügen oder löschen.
 > - Mithilfe der [CREATE INDEX](create-index-statement-microsoft-access-sql.md)-Anweisung können Sie einer Tabelle einen Index mit einem oder mehreren Feldern hinzufügen, und Sie können ALTER TABLE oder die [DROP](drop-statement-microsoft-access-sql.md)-Anweisung zum Löschen eines mit ALTER TABLE oder CREATE INDEX erstellten Indexes verwenden.
-> - Sie können NOT NULL für ein einzelnes Feld oder innerhalb einer benannten CONSTRAINT-Klausel verwenden, die entweder für ein einzelnes oder mehrere Felder mit dem Namen CONSTRAINT gilt. Sie können die NOT NULL-Beschränkung nur einmal auf ein Feld anwenden. Andernfalls tritt ein Laufzeitfehler auf. 
-
+> - Sie können NOT NULL für ein einzelnes Feld oder in einer benannten CONSTRAINT-Klausel verwenden, die entweder für ein einzelnes Feld oder für mehrere Felder mit dem Namen CONSTRAINT gilt. Sie können die NOT NULL-Einschränkung jedoch nur einmal auf ein Feld anwenden. Der Versuch, diese Einschränkung mehrmals zu verwenden, führt zu einem Laufzeitfehler.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird der Employees-Tabelle (Personal) ein Salary-Feld (Gehalt) mit dem **Money** -Datentyp hinzugefügt.
+In diesem Beispiel wird der Employees-Tabelle (Personal) ein Salary-Feld (Gehalt) mit dem **Money**-Datentyp hinzugefügt.
 
 ```vb
     Sub AlterTableX1() 

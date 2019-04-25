@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: a96b46fcc78c4f93887e487f52091a77da6c0d2f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297186"
 ---
 # <a name="after-update-macro-event"></a>Makroereignis "Nach Aktualisierung"
 
-**Betrifft**: Access 2013, Office 2013
+**Gilt für**: Access 2013, Office 2013
 
 Das Ereignis **Nach Aktualisierung** tritt auf, wenn ein Datensatz geändert wurde.
 
 > [!NOTE]
-> [!HINWEIS] Das Ereignis **Nach Aktualisierung** ist nur in Datenmakros verfügbar.
+> Das Ereignis **Nach Aktualisierung** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit dem Ereignis **Nach Aktualisierung** führen Sie sämtliche Aktionen nach dem Ändern eines Datensatzes aus. Häufig wird **Nach Aktualisierung** verwendet, um Geschäftsregeln zu erzwingen, einen Aggregatgesamtwert zu aktualisieren oder Benachrichtigungen zu senden.
 
-Mit der Funktion Updated("Feldname") ermitteln Sie, ob ein Feld geändert wurde. Das folgende Codebeispiel zeigt die Verwendung einer If-Anweisung zum Ermitteln, ob das PaidInFull-Feld geändert wurde.
+Mithilfe der Funktion **Aktualisiert(„*Feldname*“) ** können Sie feststellen, ob sich ein Feld verändert hat. The following code example shows how to use an **If** statement to determine determine whether the PaidInFull field has been changed.
 
 ```vb 
  
@@ -47,7 +47,7 @@ Mit der folgenden Syntax können Sie auf einen vorherigen Wert in einem Feld zug
 
 `[Old].[Field Name]`
 
-Zugriff auf den vorherigen Wert des QuantityInStock-Felds verwenden Sie beispielsweise die folgende Syntax.
+For example, to access the previous value of the QuantityInStock field, use the following syntax.
 
 `[Old].[QuantityInStock]`
 
@@ -85,7 +85,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="editrecord-data-block.md">BearbeitenDatensatz-Makroaktion</a></p></td>
+<td><p><a href="editrecord-data-block.md">DatensatzBearbeiten-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
@@ -93,7 +93,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Datenblock</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
@@ -163,7 +163,7 @@ Im Makro-Designer wird ein leeres Datenmakro angezeigt.
 
 Im folgenden Codebeispiel wird das Ereignis **Nach Aktualisierung** verwendet, um ein benanntes Datenmakro auszuführen, mit dem der Kommentar-Tabelle stets ein Datensatz hinzugefügt wird, wenn der Status eines Problems aktualisiert wird.
 
-**Klicken Sie hier, um eine Kopie des Makros anzuzeigen, die Sie im Makro-Designer einfügen können.**
+**Klicken Sie hier, um eine Kopie des Makros anzuzeigen, das Sie in Makro-Designer einfügen können.**
 
 Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 
