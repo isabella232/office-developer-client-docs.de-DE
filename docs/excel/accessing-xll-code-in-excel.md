@@ -1,100 +1,100 @@
 ---
-title: Zugriff auf XLL-Code in Excel
+title: Zugreifen auf XLL-Code in Excel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Zugriff auf Xll-Code [excel 2007], XLLs [Excel 2007], den Zugriff auf Code, Befehle [Excel 2007], Registrierung, Funktionen [Excel 2007], Registrierung, Aufrufen von XLLs in Excel, Befehle [Excel 2007] registrieren, registrieren Funktionen [Excel 2007]
-localization_priority: Normal
+- Zugreifen auf XLL-Code [Excel 2007],XLLs [Excel 2007], Zugreifen auf Code, Befehle [Excel 2007], Registrierung, Funktionen [Excel 2007], Registrierung, Aufrufen von XLLs aus Excel, Registrieren von Befehlen [Excel 2007], Registrieren von Funktionen [Excel 2007]
 ms.assetid: 6e4bf1f3-8eca-4be5-9632-75355ac31d61
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 1523f9e8213cb955f1bfd995c42f921b001299fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+localization_priority: Priority
+ms.openlocfilehash: d1332b0dffc052404c75c4ec51d94879457c3da0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304186"
 ---
-# <a name="accessing-xll-code-in-excel"></a>Zugriff auf XLL-Code in Excel
+# <a name="accessing-xll-code-in-excel"></a>Zugreifen auf XLL-Code in Excel
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-In Microsoft Excel, Funktionen und Befehle, die eine XLL enthält verfügbar sein:
+Um in Microsoft Excel zur Verfügung zu stehen, müssen die Funktionen und Befehle, die eine XLL enthält:
   
-- Muss von der XLL exportiert werden.
+- von der XLL exportiert werden.
     
-- Muss mit Excel registriert werden.
+- bei Excel registriert werden.
     
-## <a name="registering-functions-and-commands-with-excel"></a>Registrieren von Funktionen und Befehle mit Excel
+## <a name="registering-functions-and-commands-with-excel"></a>Registrieren von Funktionen und Befehlen bei Excel
 
-Registrierung teilt Excel die folgenden Informationen zu einer DLL-Einstiegspunkt:
+Die Registrierung informiert Excel über Folgendes hinsichtlich eines DLL-Einstiegspunkts:
   
-- Ob er ausgeblendet wurde oder wenn eine Funktion, wird es gibt an, ob in den Funktions-Assistenten angezeigt.
+- Ob er ausgeblendet oder, wenn es sich um eine Funktion handelt, ob er im Funktionsassistenten sichtbar ist.
     
-- Gibt an, ob es aufrufbare nur aus einer XLM-Makrovorlage oder aus einem Arbeitsblatt ist.
+- Ob er nur aus einer XLM-Makrovorlage oder auch aus einem Arbeitsblatt aufrufbar ist.
     
-- Wenn ein Befehl, ob ist es einer Tabellenfunktion oder einer gleichwertigen Blatt Makrofunktion.
+- Wenn es sich um einen Befehl handelt, ob er eine Arbeitsblattfunktion oder eine äquivalente Makrovorlagenfunktion ist.
     
-- Welchen XLL-DLL Exportnamen hat, und welche Namen Excel verwendet werden soll.
+- Wie der XLL/DLL-Exportname lautet und welchen Namen Excel verwenden soll.
     
-- Wenn es sich um eine Funktion ist:
+- Wenn es sich um eine Funktion handelt:
     
-  - Welche Daten gibt es gibt und als Argumente.
+  - Welche Datentypen er als Argumente zurückgibt und erhält.
     
-  - Gibt an, ob sie das Ergebnis zurückgegeben, indem ein Argument direkten ändern.
+  - Ob er sein Ergebnis zurückgibt, indem er ein vorhandenes Argument ändert.
     
-  - Gibt an, ob es veränderliche ist.
+  - Ob er veränderbar ist.
     
-  - Gibt an, ob es threadsicheren (unterstützte beginnend in Excel 2007) ist.
+  - Ob er Thread-sicher ist (unterstützt ab Excel 2007).
     
-  - Was Text einfügen Funktions-Assistenten und AutoVervollständigen-Editor angezeigt werden soll, das Ihnen bei Aufruf der Funktion.
+  - Welchen Text der Assistent zum Einfügen von Funktionen und der AutoVervollständigen-Editor anzeigen sollen, um beim Funktionsabruf zu unterstützen.
     
-  - Die Funktion Kategorie, die unter aufgelistet werden soll.
+  - Unter welcher Funktionskategorie er aufgelistet werden soll.
     
-Dies geschieht alle mit der C-API-Funktion [XlfRegister](xlfregister-form-1.md), entspricht die XLM-Funktion **zu registrieren**.
+Dies wird alles mit der C-API-Funktion [xlfRegister](xlfregister-form-1.md) erreicht, die der XLM-Funktion **REGISTER** entspricht.
   
-## <a name="calling-xll-functions-directly-from-excel"></a>Aufrufen von XLL-Funktionen direkt in Excel
+## <a name="calling-xll-functions-directly-from-excel"></a>Aufrufen von XLL-Funktionen direkt aus Excel
 
-Nachdem sie registriert sind, können XLL Arbeitsblatt und Makro Blatt Funktionen unabhängig vom Standort aufgerufen werden, die, denen eine integrierte Funktion aus aufgerufen werden kann:
+Sobald sie registriert sind, können die Funktionen von XLL-Arbeitsblatt und Makrovorlage dort aufgerufen werden, wo eine integrierte Funktion aufgerufen werden kann:
   
-- Eine einzelne Zelle oder ein Array der Formel in einem Arbeitsblatt.
+- Einzelzellen- oder Array-Formel in einem Arbeitsblatt.
     
-- Eine einzelne Zelle oder ein Array der Formel in einem Makroblatt.
+- Einzelzellen- oder Array-Formel in einer Makrovorlage.
     
-- Die Definition eines definierten Namens.
+- Definition eines definierten Namens.
     
-- Die Bedingung und höhere Felder in einem Dialogfeld Bedingte Formatierung.
+- Bedingungs- und Grenzwertfelder in einem Bedingungsformat-Dialogfeld.
     
-- Aus einer anderen-add-in über die C-API-Funktion [XlUDF](xludf.md).
+- Anderes Add-In über die C-API-Funktion [xlUDF](xludf.md).
     
-- In Visual Basic für Applikationen (VBA) über die **entsprechende** Methode. 
+- Aus Visual Basic for Applications (VBA) über die **Application.Run**-Methode. 
     
-Sie können einen Verweis auf die aufrufende Zelle oder eines Zellbereichs innerhalb Ihrer Funktion mit der C-API-Funktion **XlfCaller**abzurufen. Wenn die Funktion die Zelle bedingtes Format Ausdruck aufgerufen wurde, werden Sie dennoch einen Verweis auf die zugeordnete Zelle oder Zellen, zurückgegeben, sodass Sie können nicht davon ausgehen, dass die Formel der Zelle XLL-Funktion enthält. Wenn Ihre Funktion aus einer VBA-benutzerdefinierte Funktion (UDF) aufgerufen wurde, gibt **XlfCaller** erneut die Adresse der Zellen, die die VBA-Funktion aufgerufen. Weitere Informationen finden Sie unter [XlfCaller](xlfcaller.md).
+Sie erhalten eine Referenz zur aufrufenden Zelle oder zum aufrufenden Zellenbereich in der Funktion mit der C-API-Funktion **xlfCaller**. Wenn die Funktion aus dem Bedingungsformatausdruck der Zelle aufgerufen wurde, erhalten Sie weiterhin eine Referenz zu den verknüpften Zellen. Das heißt, Sie können nicht davon ausgehen, dass die Zellenformel die XLL-Funktion enthält. Wenn Ihre Funktion aus einer benutzerdefinierten VBA-Funktion (UDF) aufgerufen wurde, gibt **xlfCaller** erneut die Adresse der Zellen zurück, die die VBA-Funktion aufgerufen haben. Weitere Informationen finden Sie unter [xlfCaller](xlfcaller.md).
   
 > [!NOTE]
-> Excel ruft auch XLL-Funktionscode die Dialogfelder **Einfügen Funktions-Assistenten** , und **Ersetzen** . Sie müssen möglicherweise Ihr Codes normal ausgeführt, in die Groß-/Kleinschreibung im Dialogfeld **Funktionsargumente einfügen** , insbesondere, in dem Ihre Funktion sehr lange führen Sie ergreifen kann, einschränken. Zum Erkennen von einer der folgenden Dialogfelder Ihre Funktion aufgerufen wird, muss Implementierung Teil des Codes in Ihrem Projekt, die durchlaufen und alle geöffneten Fenster zu ermitteln, ob das Front-Fenster ist eines der folgenden Dialogfelder, und wenn Ja, welche. 
+> Excel ruft auch XLL-Funktionscode aus den Dialogfelder **Funktionsassistent einfügen** und **Ersetzen** auf. Sie müssen evtl. die normale Ausführung Ihres Codes im Dialogfeld **Funktionsargumente einfügen** einschränken, insbesondere wenn Ihre Funktion nur langsam ausgeführt wird. Um zu erkennen, ob Ihre Funktion aus einem dieser Dialogfelder aufgerufen wird, müssen Sie Code in Ihrem Projekt implementieren, der durch alle geöffneten Fenster iteriert, um zu ermitteln, ob das Fenster im Vordergrund eines dieser Dialogfelder ist, und, wenn ja, welches. 
   
-## <a name="calling-xll-commands-directly-from-excel"></a>Aufrufen von XLL-Befehle direkt in Excel
+## <a name="calling-xll-commands-directly-from-excel"></a>Direktes Aufrufen von XLL-Befehlen aus Excel
 
-Nachdem sie registriert sind, können XLL-Befehle in allen Verfahren aufgerufen werden, dass andere benutzerdefinierte Makros aufgerufen werden können:
+Sobald sie registriert sind, können XLL-Befehle so wie andere benutzerdefinierte Makros aufgerufen werden:
   
-- Durch ein Control-Objekt zugeordnet wird, die in einem Arbeitsblatt eingebettet werden.
+- Durch Zuordnung zu einem Steuerungsobjekt in einem Arbeitsblatt.
     
-- Im Dialogfeld Makro ausführen.
+- Im Dialogfeld „Makro ausführen“.
     
-- In VBA-Makro verwenden Sie die **entsprechende** Methode. 
+- Aus einem benutzerdefinierten VBA-Makro mit der **Application.Run**-Methode. 
     
-- Über ein benutzerdefiniertes Menüelement oder eine Symbolleiste.
+- Aus einem angepassten Menüelement oder einer angepassten Symbolleiste.
     
-- Mithilfe einer Tastenkombination eingerichtet werden, wenn Sie den Befehl registriert.
+- Mithilfe einer Tastenkombination, die beim Registrieren des Befehls eingerichtet wurde.
     
-- Wie der Befehl ausgeführt werden soll, wenn ein bestimmtes Ereignis aufgefangen.
+- Als Befehl, der beim Abfangen eines bestimmten Ereignisses ausgeführt wird.
     
 > [!NOTE]
-> XLL-Befehle werden ausgeblendet, dass sie nicht in der Liste der verfügbaren Makros in Excel-Dialogfelder angezeigt. Jedoch manuell in das Feld Makro ein eingegeben werden. Excel erwartet, dass der Name registriert als in diesen Dialogfeldern nicht der Name der DLL-Datei exportieren. 
+> XLL-Befehle sind ausgeblendet. Sie werden nicht in der Liste der verfügbaren Makros in Excel-Dialogfeldern angezeigt. Aber sie können manuell in das Feld „Makroname“ eingegeben werden. Excel erwartet den Registriert als-Namen in diesen Dialogfeldern, nicht den DLL-Exportnamen. 
   
-Alle XLL-Befehle mit Excel registriert werden angenommen, dass von Excel im folgenden Format sein:
+Für alle bei Excel registrierten XLL-Befehle wird von Excel die folgende Form vorausgesetzt:
   
 ```cs
 short WINAPI xll_cmd_name(void)
@@ -105,18 +105,18 @@ short WINAPI xll_cmd_name(void)
 
 ```
 
-[!HINWEIS] Der R�ckgabewert wird von Excel ignoriert, es sei denn, der Aufruf erfolgt aus einer XLM-Makrovorlage; in diesem Fall wird der R�ckgabewert in **TRUE** oder **FALSE** konvertiert. Sie m�ssen daher 1 zur�ckgeben, wenn der Befehl erfolgreich ausgef�hrt wurde, und 0 bei einem Fehler oder Benutzerabbruch.
+Der Rückgabewert wird von Excel ignoriert, es sei denn, der Aufruf erfolgt aus einer XLM-Makrovorlage; in diesem Fall wird der Rückgabewert in **TRUE** oder **FALSE** konvertiert. Sie müssen daher 1 zurückgeben, wenn der Befehl erfolgreich ausgeführt wurde, und 0 bei einem Fehler oder Benutzerabbruch.
   
-Erhalten Sie Informationen zu den gewünschten Befehl wie aufgerufen wurde mit der C-API-Funktion **XlfCaller**. Weitere Informationen finden Sie unter [XlfCaller](xlfcaller.md).
+Sie erhalten mit der C-API-Funktion **xlfCaller** Informationen darüber, wie Ihr Befehl abgerufen wurde. Weitere Informationen finden Sie unter [xlfCaller](xlfcaller.md).
   
-Starten in Excel 2007-Benutzeroberfläche ist sehr unterschiedliche aus früheren Versionen. In den meisten Fällen werden weiterhin die C-API-Funktionen, die das Hinzufügen und Löschen von benutzerdefinierten Menüleisten, Menüs, Untermenüs, Menüelemente, benutzerdefinierte Symbolleisten und Symbolleistenschaltflächen ermöglichen unterstützt. Jedoch können sie nicht immer das hinzugefügte Element in eine Möglichkeit zur Verfügung, denen Ihre Benutzer mit vertraut sind. Sie sollten sorgfältig überprüfen, dass zusätzliche Funktionen weiterhin verfügbar ist, oder implementieren eine versionsspezifischen Anpassung. Starten von der Benutzeroberfläche in Excel 2007 ist am besten angepasst, mithilfe eines Moduls von verwaltetem Code, das dann eng mit Ihrer XLL-Befehle verknüpft werden kann.
+Ab Excel 2007 unterscheidet sich die Benutzeroberfläche deutlich von früheren Versionen. Die C-API-Funktionen, die das Hinzufügen und Löschen von benutzerdefinierten Menüleisten, Menüs, Untermenüs, Menüelementen, benutzerdefinierten Symbolleisten und Symbolleistenschaltflächen zulassen, werden weiterhin in den meisten Fällen unterstützt. Jedoch stellen sie evtl. nicht immer das hinzugefügte Element in einer Weise bereit, die Benutzern vertraut ist. Sie sollten sorgfältig prüfen, dass jegliche hinzugefügte Funktionalität weiterhin zugänglich ist, oder eine versionsspezifische Anpassung implementieren. Beim Starten in Excel 2007 wird die Benutzeroberfläche am besten über ein verwaltetes Codemodul angepasst, das eng mit Ihren XLL-Befehlen gekoppelt werden kann.
   
 ## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von XLLs](creating-xlls.md)
-- [Anruf XLL-Funktionen aus der Funktions-Assistenten oder Dialogfelder ersetzen](how-to-call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes.md)
-- [Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
-- [Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+- [Aufrufen von XLL-Funktionen aus dem Funktionsassistenten oder Ersetzen von Dialogfeldern](how-to-call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes.md)
+- [Add-In-Manager und XLL-Schnittstellenfunktionen](add-in-manager-and-xll-interface-functions.md)
+- [Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 
 
 
