@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 3be0b895-d01a-d7b7-0ccf-067ba5b39ade
 description: 'Diese Navigationsseite enthält Links zu Übersichtsthemen zur Programmierbarkeit in Visio. Klicken Sie unten auf die Links oder verwenden Sie das Inhaltsverzeichnis, um zu den folgenden Themen zu navigieren:'
 ms.openlocfilehash: 2bcf96f65c774f5b5a5e0534d75ea9605a523fed
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359346"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426975"
 ---
 # <a name="common-tasks-visio-shapesheet"></a>Allgemeine Aufgaben (Visio-ShapeSheet)
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d34c296d-e874-b5f3-9232-e1cfe01c7eab
 description: Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
 ms.openlocfilehash: b0ca91803d866a3d11f255273c2e338d7e7dc74a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282978"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427171"
 ---
 # <a name="controls-section"></a>Abschnitt "Controls"
 

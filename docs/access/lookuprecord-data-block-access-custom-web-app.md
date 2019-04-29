@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 001899f7-5b1a-4c0b-a0e4-e01985eea818
 description: Mit einem NachschlagenDatensatz -Datenblock wird eine Reihe von Aktionen für einen bestimmten Datensatz ausgeführt.
 ms.openlocfilehash: a6d89b1700a47f88086fd8c4e7b594b90425912c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304270"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434361"
 ---
 # <a name="lookuprecord-data-block-access-custom-web-app"></a>LookupRecord-Daten Block (Access Custom Web App)
 
@@ -24,7 +24,7 @@ Mit einem **NachschlagenDatensatz** -Datenblock wird eine Reihe von Aktionen fü
 > [!NOTE]
 > Der **NachschlagenDatensatz**-Datenblock ist nur in Datenmakros verfügbar. 
   
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die **NachschlagenDatensatz**-Aktion kann mit den folgenden Argumenten verwendet werden. 
   

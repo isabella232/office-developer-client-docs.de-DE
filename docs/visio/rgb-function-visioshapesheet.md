@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f6b9f65c-6752-16cb-7eb1-44e1ce56e80b
 description: Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Sie gibt eine Farbe anhand ihrer rot-, grün-und Blau-Komponenten an, wobei jedes eine Zahl im Bereich von 0 bis 255, einschließlich oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird.
 ms.openlocfilehash: 34f9c2f2043afe6144feba561e545dc7be35a5a2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326740"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426303"
 ---
 # <a name="rgb-function-visioshapesheet"></a>RGB-Funktion (VisioShapeSheet)
 

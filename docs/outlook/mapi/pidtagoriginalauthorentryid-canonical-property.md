@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 34654660-b003-42f5-9fcd-24ebaccd735d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 866c28bc08f669d18487c99c9a13bc7347b605fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356203"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425589"
 ---
 # <a name="pidtagoriginalauthorentryid-canonical-property"></a>Kanonische PidTagOriginalAuthorEntryId-Eigenschaft
 
@@ -40,7 +40,7 @@ Diese Eigenschaft ist eine der Adresseigenschaften für den Autor einer Nachrich
   
 Die ursprüngliche Author-Eigenschaft ermöglicht die Aufbewahrung von Informationen außerhalb der lokalen Messaging Domäne. Wenn eine Nachricht von einer anderen Messaging Domäne eingeht, beispielsweise aus dem Internet, bietet diese Eigenschaft eine Möglichkeit, um sicherzustellen, dass die ursprünglichen Informationen nicht verloren gehen.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

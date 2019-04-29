@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 91a8ec9b-fb42-8081-cc23-172aa55531e1
 description: Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Weather Information XML-Schema. Dieses Schema ermöglicht Wetterdienst Anbietern das Senden von Wettervorhersage-Informationen für einen bestimmten Standort als Webdienstantwort an Outlook, damit Outlook die Informationen in der Wetter Leiste anzeigen kann.
 ms.openlocfilehash: 8d10a996107dca6123300249306cbd3f0e208a2c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355090"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427941"
 ---
 # <a name="outlook-weather-information-xml-schema"></a>XML-Schema für Wetterinformationen in Outlook
 
@@ -29,6 +29,6 @@ Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Weath
     
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[Erweitern der Wetterleiste in Outlook](extending-the-weather-bar-in-outlook.md)
+[Erweiterung der Wetterleiste in Outlook](extending-the-weather-bar-in-outlook.md)
   
 

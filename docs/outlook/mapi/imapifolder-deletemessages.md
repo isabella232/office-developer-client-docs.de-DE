@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a16e62b-9d33-41cd-af2b-9abd403b6f2e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0f0523c01e163b57d9ed37d9b324ec858adbd685
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280120"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426072"
 ---
 # <a name="imapifolderdeletemessages"></a>IMAPIFolder::DeleteMessages
 
@@ -84,7 +84,7 @@ Wenn der Löschvorgang mehr als eine Nachricht umfasst, führen Sie den Vorgang 
 
 Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
   
-|**Bedingung**|**Rückgabewert**|
+|**Bedingung**|**R�ckgabewert**|
 |:-----|:-----|
 |**DeleteMessages** hat jede Nachricht erfolgreich gelöscht.  <br/> |S_OK  <br/> |
 |**DeleteMessages** konnte nicht alle Nachrichten und Unterordner erfolgreich löschen.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |

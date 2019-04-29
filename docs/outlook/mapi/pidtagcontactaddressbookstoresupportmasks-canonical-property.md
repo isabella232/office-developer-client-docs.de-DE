@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 68f5aac1-714c-48fc-a0cf-a0c0401a6070
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e06d9a3ee2352e05e38ab1f2d86014f970160f9d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338262"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427801"
 ---
 # <a name="pidtagcontactaddressbookstoresupportmasks-canonical-property"></a>Kanonische Pidtagcontactaddressbookstoresupportmasks (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält Flags, die die unterstützten Features des Stores angeben.
 
 Diese Eigenschaft wird aus den Stores abgerufen, die die Kontakteordner enthalten. Der Kontakt Adressbuchanbieter verwendet es, um die Angemessenheit der unterstützten Features des Stores auszuwerten. Es handelt sich um eine Eigenschaft in einem Kontakt Adressbuch-Profil Abschnitt. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

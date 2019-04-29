@@ -11,13 +11,13 @@ keywords:
 - Excel4-Funktion [Excel 2007], Excel12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 2404f10d-8641-4ee6-a909-1c5a26610f80
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7c3af5f380ae4144890b1f7b486a61a05c19de74
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304109"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429446"
 ---
 # <a name="excel4excel12"></a>Excel4/Excel12
 
@@ -65,7 +65,7 @@ Gibt einen der folgenden Integer-Werte (**int**) zurück.
 |2  <br/> |**xlretInvXlfn** <br/> |Es wurde eine ungültige Funktionsnummer angegeben. Wenn Sie Konstanten aus der Headerdatei xlcall. h verwenden, sollte dies nicht geschehen, es sei denn, Sie rufen etwas auf, das in der von Ihnen verwendeten Version von Excel nicht unterstützt wird.  <br/> |
 |4  <br/> |**xlretInvCount** <br/> |Es wurde eine ungültige Anzahl von Argumenten eingegeben. In Versionen bis Excel 2003 ist die maximale Anzahl von Argumenten, die eine Funktion annehmen kann, 30. Ab Excel 2007 ist die maximale Anzahl 255. Einige erfordern eine feste oder minimale Anzahl von Argumenten.  <br/> |
 |8  <br/> |**xlretInvXloper** <br/> |Ein ungültiger **XLOPER** oder **XLOPER12** wurde an die Funktion übergeben, oder es wurde ein Argument des falschen Typs verwendet.  <br/> |
-|16  <br/> |**xlretStackOvfl** <br/> |Ein Stapelüberlauf ist aufgetreten. Verwenden Sie **xlStack** zum Überwachen des Speicherplatzes auf dem Stapel. Vermeiden Sie, dass sehr große lokale (automatische) Arrays und Strukturen, soweit möglich, auf dem Stapel reserviert werden. machen Sie Sie statisch. (Beachten Sie, dass ein Stapelüberlauf auftreten kann, ohne erkannt zu werden.)  <br/> |
+|16   <br/> |**xlretStackOvfl** <br/> |Ein Stapelüberlauf ist aufgetreten. Verwenden Sie **xlStack** zum Überwachen des Speicherplatzes auf dem Stapel. Vermeiden Sie, dass sehr große lokale (automatische) Arrays und Strukturen, soweit möglich, auf dem Stapel reserviert werden. machen Sie Sie statisch. (Beachten Sie, dass ein Stapelüberlauf auftreten kann, ohne erkannt zu werden.)  <br/> |
 |32  <br/> |**xlretFailed** <br/> |Fehler bei einer Befehls äquivalenten Funktion. Dies entspricht einem Makrobefehl, der das Dialogfeld Makro Fehler Warnung anzeigt.  <br/> |
 |64  <br/> |**xlretUncalced** <br/> |Es wurde versucht, eine Zelle zu dereferenzieren, die noch nicht berechnet wurde, da Sie nach der aktuellen Zelle neu berechnet werden soll. In diesem Fall sollte die DLL die Steuerung sofort an Excel zurückgeben. Die DLL darf **xlFree** nur aufrufen, bevor Sie beendet wird. Alle anderen Aufrufe der C-API sind nicht zulässig. Weitere Informationen dazu, welche Funktionen auf die Werte von Zellen zugreifen können, die nicht neu berechnet wurden, finden Sie unter [Excel-Befehle,-Funktionen und-Zustände](excel-commands-functions-and-states.md).  <br/> |
 |128  <br/> |**xlretNotThreadSafe** <br/> |Es wurde versucht, eine Funktion aufzurufen, die während einer Multithread-Neuberechnung der Arbeitsmappe nicht oder nicht threadsicher ist.  <br/> Ab Excel 2007 wird dieser Wert zurückgegeben, und zwar nur innerhalb der XLL-Arbeitsblattfunktionen, die als threadsicher deklariert werden.  <br/> |

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 1d155af5-b809-4367-b093-1218a1597656
 description: Bestimmt die Transparenz der Reflexion in Prozent zwischen 0 und 100%.
 ms.openlocfilehash: c8d4d83882a1e8eafcd93506f8f8b386828a89cb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346487"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425680"
 ---
 # <a name="reflectiontrans-cell-additional-effect-properties-section"></a>ReflectionTrans Cell (Additional Effect Properties section)
 

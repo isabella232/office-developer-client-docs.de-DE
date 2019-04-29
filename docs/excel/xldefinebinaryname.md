@@ -10,13 +10,13 @@ keywords:
 - xlDefineBinaryName-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: e3e8f91b-cc31-4f09-9941-f950ae96820a
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 3c7fc4f6b6fc7179c1ca84043895273b2781f8b5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310213"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430252"
 ---
 # <a name="xldefinebinaryname"></a>xlDefineBinaryName
 
@@ -47,7 +47,7 @@ Wenn das _pxData_ -Argument nicht angegeben wird (**xltypeMissing**), wird die d
 [xlGetBinaryName](xlgetbinaryname.md)
 
 
-[C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
 [Bekannte Probleme in Excel XLL-Entwicklung](known-issues-in-excel-xll-development.md)
 

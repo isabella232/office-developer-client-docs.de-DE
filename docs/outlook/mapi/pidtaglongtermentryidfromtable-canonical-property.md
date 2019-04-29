@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d9457fea-4b1e-4cf6-9c4b-14c98fbec2a1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 574c7d305f105709aebcd41e30b034fbac1892a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278778"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425666"
 ---
 # <a name="pidtaglongtermentryidfromtable-canonical-property"></a>Kanonische Pidtaglongtermentryidfromtable (-Eigenschaft
 
@@ -38,7 +38,7 @@ Ruft die langfristige Eintrags-ID eines Elements ab.
 
 Diese Eigenschaft kann in einer Contents-Tabelle verwendet werden, um die Eintrags-ID eines Elements als langfristige Eintrags-ID anstelle einer kurzfristigen Eintrags-ID abzurufen. Informationen zu langfristigen und kurzfristigen Bezeichnern finden Sie unter **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d0fc4e91-ed90-4d27-bd23-f01e99728e2d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 96bfc184752b6a3e15434ad67ac8c2b4b26cac4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359934"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426835"
 ---
 # <a name="pidtagcorrelatemtsid-canonical-property"></a>Kanonische Pidtagcorrelatemtsid (-Eigenschaft
 
@@ -42,7 +42,7 @@ Messaging Systeme, die eine Korrelation durch MTS-ID, wie X. 400, unterstützen,
   
 Eine Clientanwendung kann einen Suchergebnisordner aller Nachrichten mit dieser Eigenschaft verwalten. Wenn ein Bericht für eine solche Nachricht eingeht, kann der Client Einschränkungen für den Ordner Suchergebnisse anwenden, die ursprüngliche Version der Nachricht suchen und die ursprünglichen Nachrichten Informationen mit den neuen Informationen korrelieren.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

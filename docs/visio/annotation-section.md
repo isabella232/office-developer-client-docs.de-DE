@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 616c822e-1bb2-4980-7e45-0c2be77dd801
 description: Enthält Informationen zu Kommentaren, die in eine Dokumentseite eingefügt wurden.
 ms.openlocfilehash: f874a574940a5f56b1d1680b9b4b32730e1e79f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341398"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427423"
 ---
 # <a name="annotation-section"></a>Abschnitt "Annotation"
 

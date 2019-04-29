@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: fc288a7a-1927-484e-b860-9cc118672ed2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: cf9a070e8f892cb7bd4668b3f92397070e5b2284
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342525"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430140"
 ---
 # <a name="pidtagoriginallyintendedrecipentryid-canonical-property"></a>Kanonische Pidtagoriginallyintendedrecipentryid (-Eigenschaft
 
@@ -40,7 +40,7 @@ Diese Eigenschaft ist eine der Adresseigenschaften für den ursprünglich beabsi
   
 Diese Eigenschaft entspricht dem Attribut X. 400 pro Empfänger.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

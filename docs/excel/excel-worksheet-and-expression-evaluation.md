@@ -8,13 +8,13 @@ keywords:
 - Ausdrucksauswertung [Excel 2007], Fehler in Arbeitsblättern [Excel 2007], lange Unicode-Zeichenfolgen [Excel 2007], Auswerten von Ausdrücken [Excel 2007], Auswerten von Arbeitsblättern [Excel 2007], Arbeitsblatt Bewertung [Excel 2007], Arbeitsblattfehler [Excel 2007]
 localization_priority: Normal
 ms.assetid: 47b46a7d-6cfb-4f5b-946d-e0164d18512a
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: cf1e0539136435f7d7df6ef348fc92ec4380e132
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310983"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427766"
 ---
 # <a name="excel-worksheet-and-expression-evaluation"></a>Excel-Arbeitsblatt-und Ausdrucksauswertung
 
@@ -117,7 +117,7 @@ Der **#N/a** -Fehler wird häufig zurückgegeben, damit ein erfolgreiches oder a
   
 [Programmieren mit der C-API in Excel](programming-with-the-c-api-in-excel.md)
   
-[Auswerten von Namen und andere Arbeitsblatt Formula-Ausdr�cke](evaluating-names-and-other-worksheet-formula-expressions.md)
+[Auswerten von Namen und anderen Arbeitsblatt-Formelausdrücken](evaluating-names-and-other-worksheet-formula-expressions.md)
   
 [Excel XLL SDK – API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md)
 

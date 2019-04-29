@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c5b20257-676c-279d-f730-1b6fbbe98305
 description: Enthält die x-und y-Koordinaten des ersten Scheitelpunkts einer Form oder stellt die x-und y-Koordinaten des ersten Scheitelpunkts nach einer Unterbrechung in einem Pfad dar.
 ms.openlocfilehash: fc414093348b8da04fa3503053584395976982dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283858"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429698"
 ---
 # <a name="moveto-row-geometry-section"></a>Zeile "MoveTo" (Abschnitt "Geometry")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 99a5ca0e-5cb4-64cc-8af5-15ac6d02c77f
 description: Bestimmt, ob das Zeichenblatt automatisch an das Diagramm angepasst wird.
 ms.openlocfilehash: 6956c1e021ffffdb54f3dfa36270b9df04e892b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316499"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437007"
 ---
 # <a name="drawingresizetype-cell-page-properties-section"></a>Zelle "DrawingResizeType" (Abschnitt "Zeichenblatteigenschaften")
 

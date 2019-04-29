@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 36374d78-1028-bd7f-6282-66555ee31306
 description: Schränkt den Wert einer Zelle auf einen oder mehrere Bereiche ein.
 ms.openlocfilehash: 85fbe66d4e458ac4e42c9eb3c65b9a3a1d8211df
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348951"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425960"
 ---
 # <a name="bound-function"></a>BOUND Function
 
@@ -28,11 +28,11 @@ BOUND (* * *Wert* * *, * * *Typ* * *, * * *Ignore* * *, * * *Wert1* * *, * * *va
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _value_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der aktuelle einzuschränkende Wert.  <br/> |
-| _Typ_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, ob die Einschränkung einschließend (0), ausschließend (1) oder deaktiviert (2) ist.  <br/> |
+| _value_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der aktuelle einzuschränkende Wert.  <br/> |
+| _Typ_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Gibt an, ob die Einschränkung einschließend (0), ausschließend (1) oder deaktiviert (2) ist.  <br/> |
 | _ignorieren_ <br/> |Erforderlich  <br/> |**Boolean** <br/> | TRUE, um den Range zu ignorieren; FALSE, wenn der Wert der Zelle auf den Range beschränkt werden soll.  <br/> |
-| _Wert1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Erster Wert in einem Bereich.  <br/> |
-| _Wert2_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Zweiter Wert in einem Bereich.  <br/> |
+| _Wert1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Erster Wert in einem Bereich.  <br/> |
+| _Wert2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Zweiter Wert in einem Bereich.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

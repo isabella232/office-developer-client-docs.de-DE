@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: bfdc1a63-c355-c759-bdfa-ce27e3ad10e7
 description: Mit dem Fenster Format-Explorer können Shape-Entwickler schnell bestimmen, welche Shape-Zellen von einer bestimmten Formatvorlage erben, zudem kann die Formatvorlage ermittelt werden, von der eine bestimmte Zelle ihren Wert erbt.
 ms.openlocfilehash: 55800b692443bae3720b433e5a6178f2709d3675
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345346"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431785"
 ---
 # <a name="about-the-style-explorer-window"></a>Informationen zum Formatexplorerfenster
 

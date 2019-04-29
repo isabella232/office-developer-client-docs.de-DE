@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7fe270e8-0dff-bf1f-dfc0-c0608af79f59
 description: Legt die Zeichnungsgröße fest.
 ms.openlocfilehash: 33c85b6c2f0587654038eaec1a9490ca8bd8301b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351457"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425449"
 ---
 # <a name="drawingsizetype-cell-page-properties-section"></a>Zelle "DrawingSizeType" (Abschnitt "Zeichenblatteigenschaften")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c1e3d7bf-e6b6-65f1-ae40-80c8ba4821cd
 description: Ein RGB-Wert, der die Farbe darstellt, die dem Markup eines Dokument Bearbeiters zugewiesen ist.
 ms.openlocfilehash: d9df6605ca6c8a22353978b9483989ecfc08130d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341818"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430539"
 ---
 # <a name="color-cell-reviewer-section"></a>Zelle "Color" (Abschnitt "Reviewer")
 

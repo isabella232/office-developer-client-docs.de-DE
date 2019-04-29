@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 5ae57707-5a50-43f0-8c78-516790b5034e
 description: Enthält die x-und y-Koordinaten des Endpunkts einer quadratischen Bézier-Kurve relativ zur Breite und Höhe des Shapes sowie die x-und y-Koordinaten des Steuerelements der Breite und Höhe der Kurven relativen Form.
 ms.openlocfilehash: f517fa006c6630a26e9162adfbb1be2139487e63
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319929"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423356"
 ---
 # <a name="relquadbezto-row-geometry-section"></a>Zeile "RelQuadBezTo" (Abschnitt "Geometry")
 

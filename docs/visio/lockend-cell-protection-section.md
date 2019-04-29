@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e9742142-4d34-1ba9-480e-d1ecff4fc7cd
 description: Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.
 ms.openlocfilehash: d9fe0372c44fe3b029a4d06056c8d3871c3f91e8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359598"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425582"
 ---
 # <a name="lockend-cell-protection-section"></a>Zelle "LockEnd" (Abschnitt "Protection")
 
