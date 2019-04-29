@@ -10,13 +10,13 @@ keywords:
 - xlsheetid-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: cb32059c-b899-49cf-8028-ff828998ab75
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a2ca1bb478c5c985ad7032e30ed0cfe3aef31406
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310304"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428431"
 ---
 # <a name="xlsheetid"></a>xlSheetId
 
@@ -65,5 +65,5 @@ short WINAPI xlSheetIdExample(void)
 ## <a name="see-also"></a>Siehe auch
 
 - [xlSheetNm](xlsheetnm.md)
-- [C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

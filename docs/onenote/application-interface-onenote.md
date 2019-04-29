@@ -4,50 +4,50 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
 ms.assetid: 87926f7d-e1dc-41d5-8805-6ba91fc7b154
-description: 'Die Application-Schnittstelle enthält die Methoden Hilfe abrufen, bearbeiten und Aktualisieren von OneNote-Informationen und Inhalte. Die Methoden sind in vier allgemeine Kategorien:'
-ms.openlocfilehash: b34cb5e4812842cc3660e24ad2a94268563a4964
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: 'Die Anwendungsschnittstelle umfasst Methoden, mit denen OneNote-Informationen und -Inhalte abgerufen, bearbeitet und aktualisiert werden können. Die Methoden sind in vier allgemeine Kategorien unterteilt:'
+localization_priority: Priority
+ms.openlocfilehash: 20b2fc42711aaf4f1b407efb2c70057bd88a9046
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303108"
 ---
 # <a name="application-interface-onenote"></a>Anwendungsschnittstelle (OneNote)
 
-Die **Application** -Schnittstelle enthält die Methoden Hilfe abrufen, bearbeiten und Aktualisieren von OneNote-Informationen und Inhalte. Die Methoden sind in vier allgemeine Kategorien: 
+Die **Anwendungsschnittstelle** umfasst Methoden, mit denen OneNote-Informationen und -Inhalte abgerufen, bearbeitet und aktualisiert werden können. Die Methoden sind in vier allgemeine Kategorien unterteilt: 
   
-- **Notebook-Struktur** &ndash; Methoden zum Arbeiten mit Notebook-Struktur, einschließlich derjenigen für ermitteln, öffnen, ändern, schließen und Löschen von Notizbücher, Abschnitte und Abschnittsgruppen. 
+- **Notizbuchstruktur** &ndash; Methoden zum Arbeiten mit Notizbuchstrukturen, einschließlich derjenigen zum Entdecken, Öffnen, Ändern, Schließen und Löschen von Notizbüchern, Abschnittsgruppen und Abschnitten. 
     
-- **Seiteninhalt** &ndash; Methoden zum Arbeiten mit Seiten und Seiteninhalt, einschließlich derjenigen für ermitteln, ändern, speichern und Löschen von Inhalt. Seiteninhalt enthält binäre Objekte, wie Freihand- und Bilder, und Textobjekte, wie Konturen. 
+- **Seiteninhalt** &ndash; Methoden zum Arbeiten mit Seiten und Seiteninhalten, einschließlich derjenigen zum Entdecken, Ändern, Speichern und Löschen von Seiteninhalten. Seiteninhalte umfassen binäre Objekte wie Freihand und Bilder sowie Textobjekte wie Gliederungen. 
     
-- **Navigation** &ndash; Methoden zum Suchen, Verknüpfen mit und Navigation auf Seiten und Objekte. 
+- **Navigation** &ndash; Methoden zum Suchen nach, Verknüpfen mit und Navigieren zu Seiten und Objekten. 
     
-- **Funktionale** &ndash; Alle Methoden, die bestimmte Aktionen ausführen oder in OneNote Parameter festlegen. 
+- **Funktional** &ndash; Alle anderen Methoden, mit denen bestimmte Aktionen ausgeführt oder Parameter in OneNote festgelegt werden. 
     
-Darüber hinaus enthält **die Anwendungsschnittstelle** eine Anzahl von *Eigenschaften* und *Ereignisse* . 
+Außerdem umfasst die **Anwendungsschnittstelle** eine Reihe von *Eigenschaften* und *Ereignissen*. 
   
-## <a name="notebook-structure-methods"></a>Notebook-Methoden für Datenstruktur
+## <a name="notebook-structure-methods"></a>Notizbuchstruktur-Methoden
 <a name="ON14DevRef_Application_NotebookStructure"> </a>
 
-In diesem Abschnitt beschriebenen Methoden können Sie ermitteln, öffnen, ändern, schließen und Löschen von OneNote-Notizbüchern, Abschnittsgruppen und Abschnitte.
+Mit den in diesem Abschnitt beschriebenen Methoden können Sie OneNote-Notizbücher, Abschnittsgruppen und Abschnitte entdecken, öffnen, ändern, schließen und löschen.
   
 ### <a name="gethierarchy-method"></a>GetHierarchy-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Ruft die Notizbuch Knoten Hierarchiestruktur, ausgehend von den Knoten, die Sie angeben (alle Notizbücher oder eine einzelne Notizbuch, Abschnittsgruppe oder Abschnitt), und erweitern Sie nach unten für alle untergeordneten Elemente auf der Ebene, die Sie angeben.  <br/> |
+|**Beschreibung** <br/> |Ruft die Hierarchiestruktur der Notizbuchknoten ab, beginnend mit dem von Ihnen angegebenen Knoten (alle Notizbücher oder ein einzelnes Notizbuch, eine Abschnittsgruppe oder ein Abschnitt) bis hinunter zu allen Nachfolgern auf der von Ihnen angegebenen Ebene.  <br/> |
 |**Syntax** <br/> | `HRESULT GetHierarchy(`<br/>`[in]BSTR bstrStartNodeID,`<br/>`[in]HierarchyScope hsScope,`<br/>`[out]BSTR * pbstrHierarchyXmlOut,`<br/>`[in,defaultvalue(xs2013)]XMLSchema xsSchema);` <br/> |
-|**Parameter** <br/> | _bstrStartNodeID_ &ndash; Den Knoten (Notizbuch, Abschnitt Gruppen- oder Abschnitt), dessen untergeordnete Objekte werden soll. Wenn Sie eine null-Zeichenfolge übergeben (""), die Methode ruft alle Knoten unterhalb des Stammknotens (d. h., alle Notizbücher, Abschnittsgruppen und Abschnitte). Wenn Sie ein Notizbuch, Abschnitt Gruppen- oder Abschnittsknoten angeben, ruft die Methode nur untergeordnete Objekte des Knotens ab.  <br/><br/>_hsScope_ &ndash; Der niedrigsten untergeordnete Knotenebene werden soll. Angenommen, wenn Sie Seiten angeben, ruft die Methode alle Knoten so weit nach unten als der Seitenebene. Wenn Sie Abschnitte angeben, ruft die Methode nur Abschnitt Knoten unterhalb des Notizbuchs ab. Weitere Informationen finden Sie unter der **HierarchyScope** -Enumeration im Thema [Enumerationen](enumerations-onenote-developer-reference.md#odc_HierarchyScope) .  <br/><br/>_pbstrHierarchyXmlOut_ &ndash; (Ausgabeparameter) ein Zeiger auf die Zeichenfolge, die in der OneNote die XML-Ausgabe geschrieben werden sollen.  <br/><br/>_xsSchema_ &ndash; (Optional) die Version des OneNote-XML-Schemas, vom Typ **XMLSchema**, die ausgegeben werden soll. Sie können angeben, ob Sie XML-Schema Version 2013, 2010, 2007, oder die aktuelle Version.  <br/><br/>**Hinweis**: Es wird empfohlen Festlegen einer Version von OneNote (beispielsweise **xs2013**) anstelle von **XsCurrent** verwenden oder es leer lassen, da dadurch das Add-in zukünftige Versionen von OneNote entwickelt.           |
+|**Parameter** <br/> | _bstrStartNodeID_ &ndash; Der Knoten (Notizbuch, Abschnittsgruppe oder Abschnitt), dessen Nachfolger gewünscht sind. Wenn Sie eine NULL-Zeichenfolge ("") übergeben, ruft die Methode alle Knoten unterhalb des Stammknotens ab (d. h. alle Notizbücher, Abschnittsgruppen und Abschnitte). Wenn Sie ein Notizbuch, eine Abschnittsgruppe oder einen Abschnittsknoten angeben, ruft die Methode nur die Nachfolger dieses Knotens ab.  <br/><br/>_hsScope_ &ndash; Die gewünschte niedrigste Knotenebene von Nachfolgern. Wenn Sie beispielsweise Seiten angeben, ruft die Methode alle Knoten bis nach unten zur Seitenebene ab. Wenn Sie Abschnitte angeben, ruft die Methode nur Abschnittsknoten unterhalb des Notizbuchs ab. Weitere Informationen finden Sie unter der Enumeration **HierarchyScope** im Thema [Enumerations](enumerations-onenote-developer-reference.md#odc_HierarchyScope).  <br/><br/>_pbstrHierarchyXmlOut_ &ndash; (Ausgabeparameter) Ein Verweis auf die Zeichenfolge, in die OneNote die XML-Ausgabe schreiben soll.  <br/><br/>_xsSchema_ &ndash; (Optional) Die Version des OneNote-XML-Schemas des Typs **XMLSchema**, das ausgegeben werden soll. Sie können angeben, ob Sie die XML-Schemaversion 2013, 2010, 2007 oder die aktuelle Version wünschen.  <br/><br/>**HINWEIS**: Wir empfehlen Ihnen, eine Version von OneNote anzugeben (z. B. **xs2013**), statt **xsCurrent** zu verwenden oder es leer zu lassen, da das Add-In so mit zukünftigen Versionen von OneNote arbeiten kann.           |
    
-Die GetHierarchy-Methode gibt eine Zeichenfolge in OneNote 2013 XML-Format standardmäßig, oder die bevorzugte XML-Schema-Version festlegen kann mithilfe des Parameters optional _XsSchema_ zurück. 
+Die GetHierarchy-Methode gibt eine Zeichenfolge standardmäßig im OneNote 2013-XML-Format zurück. Sie können aber auch die bevorzugte XML-Schemaversion mithilfe des optionalen Parameters _xsSchema_ festlegen. 
   
-Abhängig von den Parametern, die Sie weitergeben, kann die **GetHierarchy** -Methode verschiedenen Listen (beispielsweise alle Notizbücher, alle Abschnitte in alle Notizbücher, alle Seiten innerhalb eines bestimmten Bereichs oder alle Seiten innerhalb einer bestimmten Notizbuch) zurück. Für jeden Knoten bietet die zurückgegebene XML-Zeichenfolge Eigenschaften (beispielsweise Abschnitt oder Seite Titel, ID und Zeitpunkt der letzten Änderung). 
+Abhängig von den übergebenen Parametern kann die **GetHierarchy**-Methode verschiedene Listen zurückgeben (z. B. alle Notizbücher, alle Abschnitte in allen Notizbüchern, alle Seiten in einem bestimmten Abschnitt oder alle Seiten in einem bestimmten Notizbuch). Für jeden Knoten stellt die zurückgegebene XML-Zeichenfolge Eigenschaften bereit (z. B. den Abschnitts- oder Seitentitel, die ID und die Uhrzeit der letzten Änderung). 
   
-Nicht alle Kombinationen von Startknoten und des Umfangs sind ungültig. Angenommen, wenn Sie angeben, ein Abschnitt Knoten und einen Bereich Notizbuch beginnen, **GetHierarchy** null gibt ein Ergebnis zurück, da ein Notizbuch in der Knotenhierarchie als ein Abschnitt höher ist. 
+Nicht alle Kombinationen aus Startknoten und Bereich sind gültig. Wenn Sie z. B. den Startknoten eines Abschnitts und einen Notizbuchbereich angeben, gibt **GetHierarchy** ein Null-Ergebnis zurück, da ein Notizbuch höher in der Knotenhierarchie steht als ein Abschnitt. 
   
-Im folgenden C#-Beispiel veranschaulicht die **GetHierarchy** -Methode verwenden, um die gesamte OneNote-Hierarchie, einschließlich aller Notizbücher, nach unten zu der Seitenebene abzurufen. Kopiert die Ausgabezeichenfolge in die Zwischenablage, aus der Sie die Zeichenfolge in einem Text-Editor zur Prüfung einfügen können. 
+Das folgende C#-Beispiel veranschaulicht, wie die **GetHierarchy**-Methode verwendet wird, um die gesamte OneNote-Hierarchie abzurufen, einschließlich aller Notizbücher bis auf Seitenebene. Die Ausgabezeichenfolge wird in die Zwischenablage kopiert, von wo aus Sie die Zeichenfolge zur Überprüfung in einen Texteditor einfügen können. 
   
 ```cs
 static void GetEntireHierarchy()
@@ -66,15 +66,15 @@ static void GetEntireHierarchy()
 
 |||
 |:-----|:-----|
-|**Beschreibung**|Ändert oder die Hierarchie der Notizbücher aktualisiert. Beispielsweise können Sie hinzufügen, Abschnitte oder Abschnittsgruppen in einem Notizbuch hinzufügen ein neues Notizbuchs, Abschnitte innerhalb eines Notizbuchs zu verschieben, ändern Sie den Namen eines Abschnitts, Seiten zu einem Abschnitt hinzufügen oder Ändern der Reihenfolge von Seiten in einem Abschnitt.|
+|**Beschreibung**|Ändert oder aktualisiert die Hierarchie der Notizbücher. Sie können z. B. Abschnitte oder Abschnittsgruppen in ein Notizbuch einfügen, ein neues Notizbuch hinzufügen, Abschnitte in einem Notizbuch verschieben, den Namen eines Abschnitts ändern, Seiten zu einem Abschnitt hinzufügen oder die Reihenfolge von Seiten in einem Abschnitt ändern.|
 |**Syntax**| `HRESULT UpdateHierarchy(`<br/>`[in]BSTR bstrChangesXmlIn,`<br/>`[in,defaultvalue(xsCurrent)] XMLSchema xsSchema);`|
-|**Parameter**| _bstrChangesXmlIn_ &ndash; Eine Zeichenfolge, die OneNote-XML-Code, der angibt, die Hierarchie Änderungen enthält vornehmen. Beispielsweise wenn Sie einen neuen Abschnitt einfügen möchten, können Sie ein **Abschnitt** Element hinzufügen in der XML-Zeichenfolge, um anzugeben, wo Sie den neuen Abschnitt hinzugefügt werden soll. Wenn Sie den Namen eines vorhandenen Abschnitts ändern möchten, können Sie alternativ beibehalten der ID Abschnitt und ändern Sie das **Name** -Attribut in der XML-Code.<br/><br/>_xsSchema_ &ndash; (Optional) der OneNote-Schemaversion von der Zeichenfolge _BstrChangesXmln_. Dieser Wert optionale wird Angabe die Version des OneNote-XML-Schemas, die die Zeichenfolge _BstrChangesXmlIn_ wird verwendet. Wenn dieser Wert nicht angegeben ist, wird OneNote wird vorausgesetzt, dass der XML-Code im Schema Version _XsCurrent_ist. <br/><br/>**Hinweis**: Es wird empfohlen Festlegen einer Version von OneNote (beispielsweise **xs2013**) anstelle von **XsCurrent** verwenden oder es leer lassen, da dadurch das Add-in zukünftige Versionen von OneNote entwickelt.           |
+|**Parameter**| _bstrChangesXmlIn_ &ndash; Eine Zeichenfolge, die OneNote XML-Code enthält, der die vorzunehmenden Hierarchie-Änderungen angibt. Wenn Sie beispielsweise einen neuen Abschnitt einfügen möchten, können Sie ein **Section**-Element in die XML-Zeichenfolge einfügen, um anzugeben, wo der neue Abschnitt eingefügt werden soll. Wenn Sie den Namen eines vorhandenen Abschnitts ändern möchten, können Sie auch die gleiche Abschnitt-ID beibehalten und das **name**-Attribut im XML-Code ändern.<br/><br/>_xsSchema_ &ndash; (Optional) Die OneNote-Schemaversion der Zeichenfolge _bstrChangesXmln_. Dieser optionale Wert wird verwendet, um die Version des OneNote-XML-Schemas anzugeben, im dem sich die _bstrChangesXmlIn_-Zeichenfolge befindet. Wenn dieser Wert nicht angegeben ist, setzt OneNote voraus, dass sich die XML in der Schemaversion _xsCurrent_ befindet. <br/><br/>**HINWEIS**: Wir empfehlen Ihnen, eine Version von OneNote anzugeben (z. B. **xs2013**), statt **xsCurrent** zu verwenden oder es leer zu lassen, da das Add-In so mit zukünftigen Versionen von OneNote arbeiten kann.           |
    
-Wenn Sie nur eine partielle OneNote-XML-Zeichenfolge für den _BstrChangesXmlIn_ -Parameter übergeben, versucht OneNote, die Änderungen abzuleiten gewünschten. Wenn Sie ein **Notizbuch** -Element, die nur einen Abschnitt enthält enthalten, fügt der OneNote im Abschnitt nach bestehende Abschnitte an. Wenn der Vorgang, die von den Ihnen angegebenen mehrdeutig ist, kann das Ergebnis jedoch schwer zu ermitteln sein. Beispielsweise kann ein vorhandenes Notizbuchs enthält vier Abschnitte, und die XML-Zeichenfolge, die Sie weitergeben umfasst das Notizbuch und nur die vierte und erste Abschnitte (in dieser Reihenfolge), OneNote die zweiten und dritten Abschnitten vor der vierte Abschnitt oder nach dem ersten Abschnitt platzieren . 
+Wenn Sie nur eine partielle OneNote XML-Zeichenfolge für den _bstrChangesXmlIn_-Parameter weitergeben, versucht OneNote, die gewünschten Änderungen abzuleiten. Wenn Sie z. B. ein **Notizbuch**-Element einschließen, das nur einen Abschnitt enthält, fügt OneNote den Abschnitt nach einem vorhandenen Abschnitt ein. Wenn der Vorgang, den Sie angeben, nicht eindeutig ist, kann das Ergebnis jedoch schwer zu ermitteln sein. Wenn ein vorhandenes Notizbuch z. B. vier Abschnitte enthält und die übergebene XML-Zeichenfolge das Notizbuch und nur den vierten und ersten Abschnitt enthält (in dieser Reihenfolge), platziert OneNote möglicherweise den zweiten und dritten Abschnitt vor dem vierten oder nach dem ersten Abschnitt. 
   
-Sie können nicht die **UpdateHierarchy** -Methode verwenden, um Teil eines Notizbuchs zu löschen. D. h., löscht übergeben eine XML-Zeichenfolge, die nur einen Teil einer vorhandenen Hierarchie enthält Abschnitte nicht, die nicht in der Zeichenfolge enthalten sind. Verwenden Sie die **DeleteHierarchy** -Methode, um Teil einer Hierarchie zu löschen. 
+Sie können nicht die **UpdateHierarchy**-Methode verwenden, um einen Teil eines Notizbuchs zu löschen. Dies bedeutet, dass bei der Übergabe einer XML-Zeichenfolge, die nur einen Teil einer vorhandenen Hierarchie enthält, keine Abschnitte gelöscht werden, die nicht in der Zeichenfolge enthalten sind. Verwenden Sie zum Löschen eines Teils einer Hierarchie die **DeleteHierarchy**-Methode. 
   
-Der folgende C#-Code zeigt eine Möglichkeit, die **UpdateHierarchy** -Methode verwenden, um die OneNote-Hierarchie ändern, indem Sie den Namen eines vorhandenen Abschnitts. XML-Code aus der Beispieldatei mit dem Namen ChangeSectionName.xml im Stamm von Laufwerk C, in einem XML-Dokument geladen und übergibt dann die XML-Struktur des Dokuments an die-Methode liest. 
+Der folgende C#-Code zeigt eine Möglichkeit für die Verwendung der **UpdateHierarchy**-Methode, um die OneNote-Hierarchie zu ändern, indem Sie den Namen eines vorhandenen Abschnitts ändern. XML-Code wird aus einer Beispieldatei mit dem Namen ChangeSectionName.xml im Stammverzeichnis von Laufwerk C gelesen, der dann in ein XML-Dokument geladen wird. Die XML-Struktur dieses Dokuments wird dann an die Methode übergeben. 
   
 ```cs
 static void UpdateExistingHierarchy()
@@ -94,7 +94,7 @@ static void UpdateExistingHierarchy()
 
 ```
 
-Der folgende XML-Code ist ein Auszug der ChangeSectionName.xml-Datei, die an die-Methode des vorherigen C#-Codes übergibt. Wenn die XML-Daten an die **UpdateHierarchy** -Methode übergeben wird, wird es den Namen eines der Abschnitte in der vorhandenen Hierarchie (durch den Wert des **Name** -Attributs in "Meine umbenannt im Abschnitt" ändern). Klicken Sie dann entfernt alle Abschnitte mit Ausnahme des, dessen Name geändert wurde. Darüber hinaus wird der Code entfernt unnötige Attribute vom **Abschnitt** Zielelement, einschließlich von Attributen **ZuletztGeändertUm**, **IsCurrentlyViewed**und **Farbe** , wobei nur der **Name**, **ID**und ** Pfad** Attribute erhalten bleibt. 
+Der folgende XML-Code ist ein Auszug aus der ChangeSectionName.xml-Datei, die der vorherige C#-Code an die Methode übergibt. Wenn der XML-Code an die **UpdateHierarchy**-Methode weitergegeben wird, wird der Name einer der Abschnitte in der vorhandenen Hierarchie geändert (durch Ändern des Werts des **name**-Attributs in "Mein umbenannter Abschnitt"). Dann werden alle Abschnitte außer dem, dessen Name geändert wurde, entfernt. Darüber hinaus entfernt der Code nicht erforderliche Attribute aus dem Zielelement **Abschnitt**, einschließlich der Attribute **lastModifiedTime**, **isCurrentlyViewed** und **color**, wobei nur die Attribute **name**, **ID** und **path** erhalten bleiben. 
   
 ```XML
 <?xml version="1.0" ?> 
@@ -105,7 +105,7 @@ Der folgende XML-Code ist ein Auszug der ChangeSectionName.xml-Datei, die an die
     </one:Notebooks>
 ```
 
-Der vorherigen XML-Code wurde mit dem Code im Beispiel für die **GetHierarchy** -Methode, die wie folgt geändert wird, zum Einschränken des Bereichs in Abschnitten dargestellt abgerufen. 
+Der vorherige XML-Code wurde mit dem im Beispiel für die **GetHierarchy**-Methode verwendeten Code abgerufen, der wie folgt geändert wird, um den Bereich auf Abschnitte zu beschränken. 
   
 ```cs
 static void GetAllSections()
@@ -120,7 +120,7 @@ static void GetAllSections()
 
 ```
 
-Im folgenden C#-Beispiel zeigt eine vollständige Konsolenanwendung, das durchsucht für einen Bereich mit dem Namen " `Sample_Section`", fordert den Benutzer zur Eingabe eines neuen Namens für den Abschnitt, und klicken Sie dann die **UpdateHierarchy** -Methode verwendet, um den Namen des Abschnitts auf den Namen ändern, die der Benutzer eingegeben haben. Ändern Sie vor dem Ausführen des Codes " `Sample_Section`" auf den Namen eines Abschnitts, der in der OneNote-Hierarchie vorhanden ist.
+Das folgende C#-Beispiel zeigt eine vollständige Konsolenanwendung, die nach einem Abschnitt mit dem Namen "`Sample_Section`" sucht, fordert den Benutzer zur Eingabe eines neuen Namens für den Abschnitt auf und verwendet dann die **UpdateHierarchy**-Methode, um den Abschnittsnamen in den Namen zu ändern, den der Benutzer eingegeben hat. Bevor Sie den Code ausführen, ändern Sie "`Sample_Section`" in den Namen eines Abschnitts, der in Ihrer OneNote-Hierarchie vorhanden ist.
   
 ```cs
     static void Main(string[] args)
@@ -153,15 +153,15 @@ Im folgenden C#-Beispiel zeigt eine vollständige Konsolenanwendung, das durchsu
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Öffnet ein Abschnittsgruppe oder eines Abschnitts, die Sie angeben.  <br/> |
+|**Beschreibung** <br/> |Öffnet eine Abschnittsgruppe oder einen Abschnitt, den Sie angeben.  <br/> |
 |**Syntax** <br/> | `HRESULT OpenHierarchy(`<br/>`[in]BSTR bstrPath,`<br/>`[in]BSTR bstrRelativeToObjectID,`<br/>`[out]BSTR * pbstrObjectID,`<br/>`[in,defaultvalue(cftNone)]CreateFileType cftIfNotExist);` <br/> |
-|**Parameter** <br/> | _bstrPath_ &ndash; Den Pfad, den Sie öffnen möchten. Ein Notizbuch oder einer Gruppe in einem Notizbuch kann _BstrPath_ ein Ordnerpfad oder den Pfad zum Abschnitt ONE-Datei sein. Wenn Sie den Pfad zum Abschnitt ONE-Datei angeben, müssen Sie die Erweiterung One auf die Datei Pfadzeichenfolge einbeziehen.  <br/><br/>_bstrRelativeToObjectID_ &ndash; Die OneNote-ID des übergeordneten Objekts (Notizbuch oder Gruppe), unter dem das neue Objekt geöffnet werden soll. Wenn der Parameter _BstrPath_ ein absoluter Pfad ist, übergeben Sie können eine leere Zeichenfolge ("") für _BstrRelativeToObjectID_. Alternativ können Sie übergeben die Objekt-ID der Notizbuch oder Gruppe, die sollte enthalten das Objekt (Bereich oder Abschnittsgruppe), das Sie erstellen möchten, und geben Sie den Dateinamen (z. B. section1.one) des Objekts, die Sie unter dem erstellen möchten. das übergeordnete Objekt.  <br/><br/>_pbstrObjectID_ &ndash; (Ausgabeparameter) die Objekt-ID, die OneNote-Notizbuch, Abschnittsgruppe oder Abschnitt, der die **OpenHierarchy** -Methode öffnet zurückgibt. Dieser Parameter ist ein Zeiger auf die Zeichenfolge, in dem die Methode zum Schreiben der ID ab.  <br/><br/>_cftlfNotExist_ &ndash; (Optional) ein Aufzählungswert aus der [CreateFileType](enumerations-onenote-developer-reference.md#odc_CreateFileType) -Enumeration. Wenn Sie einen Wert für _CftIfNotExist_übergeben, erstellt die **OpenHierarchy** -Methode den Abschnittsgruppe oder Abschnittsdatei unter dem angegebenen Pfad nur, wenn die Datei nicht bereits vorhanden ist.  <br/> |
+|**Parameter** <br/> | _bstrPath_ &ndash; Der Pfad, den Sie öffnen möchten. Für ein Notizbuch oder eine Abschnittsgruppe in einem Notizbuch kann _bstrPath_ ein Ordnerpfad oder der Pfad zu einer ONE-Abschnittsdatei sein. Wenn Sie den Pfad zu einer ONE-Abschnittsdatei angeben, müssen Sie die ONE-Erweiterung in die Dateipfad-Zeichenfolge einschließen.  <br/><br/>_bstrRelativeToObjectID_ &ndash; Die OneNote-ID des übergeordneten Objekts (Notizbuch oder Abschnittsgruppe), unter dem Sie das neue Objekt öffnen möchten. Wenn der _bstrPath_-Parameter ein absoluter Pfad ist, können Sie für _bstrRelativeToObjectID_ eine leere Zeichenfolge übergeben (""). Alternativ können Sie auch die Objekt-ID des Notizbuchs oder der Abschnittsgruppe weitergeben, die das Objekt enthalten sollte (Abschnitt oder Abschnittsgruppe), das Sie erstellen möchten. Geben Sie dann den Dateinamen (z. B. section1.one) des Objekts an, das Sie unter dem übergeordneten Objekt erstellen möchten.  <br/><br/>_pbstrObjectID_ &ndash; (Ausgabeparameter) Die Objekt-ID, die OneNote für das von der **OpenHierarchy**-Methode geöffnete Notizbuch, die geöffnete Abschnittsgruppe oder den geöffneten Abschnitt zurückgibt. Dieser Parameter ist ein Verweis auf die Zeichenfolge, in die die Methode die ID schreiben soll.  <br/><br/>_cftlfNotExist_ &ndash; (Optional) Ein aufgelisteter Wert aus der [CreateFileType](enumerations-onenote-developer-reference.md#odc_CreateFileType)-Enumeration. Wenn Sie einen Wert für _cftIfNotExist_ übergeben, erstellt die **OpenHierarchy**-Methode die Abschnittsgruppe oder Abschnittsdatei nur unter dem angegebenen Pfad, wenn die Datei noch nicht vorhanden ist.  <br/> |
    
-Wenn Sie eine Gruppe, die nicht in einem geöffneten Notizbuch ist angeben, wird die **OpenHierarchy** -Methode die Abschnittsgruppe als Notizbuch geöffnet. Wenn Sie einen Abschnitt, der nicht in einem geöffneten Notizbuch ist angeben, wird die **OpenHierarchy** -Methode im Abschnitt in der Gruppe der letzte geöffnet Abschnitte-Abschnitt geöffnet. Wenn Sie angeben, einer Gruppe oder eines Abschnitts, der bereits in einem geöffneten Notizbuch ist, passiert nichts, da der Abschnittsgruppe oder eines Abschnitts bereits sowie geöffnet ist. In jedem Fall gibt **OpenHierarchy** die Objekt-ID für den Abschnittsgruppe, Notizbuch oder Abschnitt, die Sie angeben, zurück, sodass Sie es in andere Vorgänge verwenden können. 
+Wenn Sie eine Abschnittsgruppe angeben, die sich nicht in einem offenen Notizbuch befindet, öffnet die **OpenHierarchy**-Methode die Abschnittsgruppe als Notizbuch. Wenn Sie einen Abschnitt angeben, der sich nicht in einem offenen Notizbuch befindet, öffnet die **OpenHierarchy**-Methode den Abschnitt in der Abschnittsgruppe "Zuletzt geöffnete Abschnitte". Wenn Sie eine Abschnittsgruppe oder einen Abschnitt angeben, die bzw. der sich bereits in einem geöffneten Notizbuch befindet, geschieht nichts, da die Abschnittsgruppe oder der Abschnitt ebenfalls bereits geöffnet ist. Auf jeden Fall gibt **OpenHierarchy** die Objekt-ID für die Abschnittsgruppe, das Notizbuch oder den Abschnitt zurück, die/das/den Sie angeben haben, sodass Sie sie in anderen Vorgängen verwenden können. 
   
-Sie können auch die **OpenHierarchy** -Methode verwenden, neue Abschnitte, anstatt dies durch das Importieren von XML zu erstellen. 
+Sie können auch die **OpenHierarchy**-Methode verwenden, um neue Abschnitte zu erstellen, anstatt XML zu importieren. 
   
-Der folgende Code veranschaulicht, wie Sie die **OpenHierarchy** -Methode im Abschnitt Besprechungen in Arbeit Notizbuch öffnen, und rufen Sie die ID für den Abschnitt. Wenn der Abschnitt nicht bereits vorhanden ist, erstellt es in OneNote in der, den von Ihnen angegebenen Speicherort. 
+Der folgende Code veranschaulicht, wie Sie die **OpenHierarchy**-Methode zum Öffnen des Abschnitts "Besprechungen" im Arbeitsnotizbuch öffnen und die ID für den Abschnitt abrufen. Wenn der Abschnitt nicht bereits vorhanden ist, erstellt OneNote ihn am von Ihnen angegebenen Speicherort. 
   
 ```cs
 static void OpenSection()
@@ -178,19 +178,19 @@ static void OpenSection()
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Löscht alle Hierarchy-Objekt (im Abschnittsgruppe, Abschnitt oder Seite) aus der Hierarchie der OneNote-Notizbuch.  <br/> |
+|**Beschreibung** <br/> |Löscht alle Hierarchie-Objekte (eine Abschnittsgruppe, einen Abschnitt oder eine Seite) aus der Hierarchie des OneNote-Notizbuchs.  <br/> |
 |**Syntax** <br/> | `HRESULT DeleteHierarchy(`<br/>`[in]BSTR bstrObjectID,`<br/>`[in,defaultvalue(0)]DATE dateExpectedLastModified,`<br/>`[in,defaultvalue(false)]VARIANT_BOOL deletePermanently);` <br/> |
-|**Parameter** <br/> | _bstrObjectID_ &ndash; Die OneNote-ID des zu löschenden Objekts. Das Objekt kann ein Abschnittsgruppe, Abschnitt oder Seite sein.  <br/><br/>_dateExpectedLastModified_ &ndash; (Optional), das Datum und die Uhrzeit, die das zu löschende Objekt zuletzt glaubt geändert. Wenn Sie einen Wert ungleich NULL für diesen Parameter übergeben, wird mit dem Update OneNote fortgesetzt, nur, wenn der Wert, den Sie weitergeben entspricht, das tatsächliche Datum und Zeit, die das Objekt zuletzt geändert wurde. Übergeben einen Wert für diesen Parameter wird verhindert, dass versehentlich überschrieben werden Benutzer, die seit der letzten des Objekts Änderung bearbeitet.  <br/><br/>_deletePermanently_ &ndash; (Optional) **true** , wenn Inhalte; endgültig löschen **false** zum Verschieben der Inhalts in die OneNote Papierkorb für das entsprechende Notizbuch (Standardeinstellung). Wenn das Notizbuch in OneNote 2007-Format ist, ist keine Papierkorb vorhanden, damit der Inhalt dauerhaft gelöscht wird.  <br/> |
+|**Parameter** <br/> | _bstrObjectID_ &ndash; Die OneNote-ID des Objekts, das Sie löschen möchten. Das Objekt kann eine Abschnittsgruppe, ein Abschnitt oder eine Seite sein.  <br/><br/>_dateExpectedLastModified_ &ndash; (Optional) Das Datum und die Uhrzeit, zu der das Objekt, das Sie löschen möchten, vermutlich zuletzt geändert wurde. Wenn Sie einen Wert ungleich NULL für diesen Parameter übergeben, fährt OneNote nur mit dem Update fort, wenn der Wert, den Sie übergeben, dem tatsächlichen Datum und der Zeit entspricht, zu der das Objekt zuletzt geändert wurde. Die Übergabe eines Werts für diesen Parameter verhindert, dass versehentlich Änderungen überschrieben werden, die Benutzer seit der letzten Änderung des Objekts vorgenommen haben.  <br/><br/>_deletePermanently_ &ndash; (Optional) **true**, um den Inhalt dauerhaft zu löschen; **false**, um den Inhalt in den OneNote-Papierkorb für das entsprechende Notizbuch (Standard) zu verschieben. Wenn das Notizbuch im OneNote 2007-Format vorliegt, ist kein Papierkorb vorhanden, sodass der Inhalt dauerhaft gelöscht wird.  <br/> |
    
 ### <a name="createnewpage-method"></a>CreateNewPage-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Fügt eine neue Seite in den Abschnitt, den Sie angeben. Die neue Seite wird als der letzten Seite des Abschnitts hinzugefügt.  <br/> |
+|**Beschreibung** <br/> |Fügt eine neue Seite am Ende des von Ihnen angegebenen Abschnitts hinzu. Die neue Seite wird als letzte Seite des Abschnitts hinzugefügt.  <br/> |
 |**Syntax** <br/> | `HRESULT CreateNewPage(`<br/>`[in]BSTR bstrSectionID,`<br/>`[out]BSTR * pbstrPageID);`<br/>`[in,defaultvalue(npsDefault)]NewPageStyle npsNewPageStyle);` <br/> |
-|**Parameter** <br/> | _bstrSectionID_ &ndash; Eine Zeichenfolge, die OneNote-ID des Abschnitts enthält, in dem Sie die neue Seite erstellen möchten.  <br/><br/>_pbstrPageID_ &ndash; (Ausgabeparameter) ein Zeiger auf die Zeichenfolge, die in dem die Methode die OneNote-ID für die neu erstellte Seite schreibt.  <br/><br/>_npsNewPageStyle_ &ndash; Einen Wert aus der **NewPageStyle** -Enumeration, die das Format der zu erstellenden Seite angibt.  <br/> |
+|**Parameter** <br/> | _bstrSectionID_ &ndash; Eine Zeichenfolge, die die OneNote-ID des Abschnitts enthält, in dem Sie eine neue Seite erstellen möchten.  <br/><br/>_pbstrPageID_ &ndash; (Ausgabeparameter) Ein Verweis auf die Zeichenfolge, in die die Methode die OneNote-ID für die neu erstellte Seite schreibt.  <br/><br/>_npsNewPageStyle_ &ndash; Ein Wert aus der **NewPageStyle**-Enumeration, der den Stil der Seite angibt, die erstellt werden soll.  <br/> |
    
-Der OneNote-API enthält die **CreateNewPage** -Methode als verwenden können. Erzielen Sie dasselbe Ergebnis, größere Kontrolle über wie die neue Seite in der Hierarchie durch Aufrufen der Methode **UpdateHierarchy** positioniert wird. Die **UpdateHierarchy** -Methode können Sie auch Unterseiten gleichzeitig zu erstellen, wie Sie eine neue Seite erstellen. 
+Die OneNote-API umfasst die **CreateNewPage**-Methode als Serviceleistung. Sie können dasselbe Ergebnis mit einer höheren Kontrolle darüber, wie die neue Seite in der Hierarchie positioniert wird, erzielen, indem Sie die **UpdateHierarchy**-Methode aufrufen. Mit der **UpdateHierarchy**-Methode können Sie beim Erstellen der neuen Seite auch Unterseiten erstellen. 
   
 ### <a name="closenotebook-method"></a>CloseNotebook-Methode
 
@@ -198,64 +198,64 @@ Der OneNote-API enthält die **CreateNewPage** -Methode als verwenden können. E
 |:-----|:-----|
 |**Beschreibung** <br/> |Schließt das angegebene Notizbuch.  <br/> |
 |**Syntax** <br/> | `HRESULT CloseNotebook(`<br/>`[in]BSTR bstrNotebookID,`<br/>`[in,defaultvalue(false)]VARIANT_BOOL force);` <br/> |
-|**Parameter** <br/> | _bstrNotebookID_ &ndash; Die OneNote-ID des Notizbuchs zu schließen.  <br/><br/>_erzwingen_ &ndash; (Optional) **true** das Notizbuch schließen, auch wenn es sind Änderungen in das Notizbuch, das vor dem Schließen; OneNote nicht synchronisiert werden kann andernfalls **false** (Standardeinstellung).  <br/> |
+|**Parameter** <br/> | _bstrNotebookID_ &ndash; Die OneNote-ID des Notizbuchs, das Sie schließen möchten.  <br/><br/>_force_ &ndash; (Optional) **true**, um das Notizbuch zu schließen, auch wenn Änderungen im Notizbuch vorliegen, die OneNote vor dem Schließen nicht synchronisieren kann; andernfalls **false** (Standard).  <br/> |
    
-Die **CloseNotebook** -Methode können Sie das Notizbuch schließen die von das Ihnen angegebenen. Wenn Sie diese Methode aufrufen, OneNote synchronisiert offline-Dateien mit aktuellen Notizbuch Inhalt, bei Bedarf und schließt dann das angegebene Notizbuch. Nach Beendigung der Methode wird das Notizbuch nicht mehr in der Liste der geöffneten Notizbücher auf der OneNote-Benutzeroberfläche (UI) angezeigt. 
+Sie können die **CloseNotebook**-Methode verwenden, um das angegebene Notizbuch zu schließen. Wenn Sie diese Methode aufrufen, synchronisiert OneNote bei Bedarf alle Offline-Dateien mit aktuellem Notizbuchinhalt und schließt dann das angegebene Notizbuch. Nachdem die Methode zurückgegeben wurde, wird das Notizbuch nicht mehr in der Liste der geöffneten Notizbücher der OneNote-Benutzeroberfläche (UI) angezeigt. 
   
 ### <a name="gethierarchyparent-method"></a>GetHierarchyParent-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Ruft die OneNote-ID für das übergeordnete Objekt eines OneNote-Objekts.  <br/> |
+|**Beschreibung** <br/> |Ruft die OneNote-ID des übergeordneten Objekts eines OneNote-Objekts ab.  <br/> |
 |**Syntax** <br/> | `HRESULT GetHierarchyParent (`<br/>`[in]BSTR bstrObjectID,`<br/>`[out]BSTR * pbstrParentID);` <br/> |
-|**Parameter** <br/> | _bstrObjectID_ &ndash; Eine Zeichenfolge, die die OneNote-ID des Objekts, von denen enthält, das übergeordnete Objekt zu erhalten soll.  <br/><br/>_pbstrParentID_ &ndash; (Ausgabeparameter) ein Zeiger auf die Zeichenfolge, die in dem die Methode die OneNote-ID des übergeordneten Objekts schreibt.  <br/> |
+|**Parameter** <br/> | _bstrObjectID_ &ndash; Eine Zeichenfolge, die die OneNote-ID des Objekts enthält, von dem Sie das übergeordnete Objekt suchen möchten.  <br/><br/>_pbstrParentID_ &ndash; (Ausgabeparameter) Ein Verweis auf die Zeichenfolge, in die die Methode die OneNote-ID des übergeordneten Objekts schreibt.  <br/> |
    
-Wenn das OneNote-Objekt besitzt kein übergeordnetes Objekt (beispielsweise, wenn ein Benutzer auf das übergeordnete Element eines Notizbuchs abrufen möchte), wird eine Ausnahme ausgelöst.
+Wenn das OneNote-Objekt kein übergeordnetes Objekt besitzt (wenn z. B. ein Benutzer das übergeordnete Element eines Notizbuchs abrufen möchte), wird eine Ausnahme ausgelöst.
   
-### <a name="getspeciallocation-method"></a>Methode "getspeciallocation"
+### <a name="getspeciallocation-method"></a>GetSpecialLocation-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Sucht den Pfad zu dem Speicherort, wo bestimmte Sonderzeichen wie Sicherungen, abgelegte Notizen und das Standardnotizbuch in OneNote gespeichert werden.  <br/> |
+|**Beschreibung** <br/> |Ruft den Pfad zu dem Speicherort ab, an dem OneNote bestimmte Sonderelemente, wie z. B. Sicherungen, nicht abgelegte Notizen und das Standardnotizbuch, speichert.  <br/> |
 |**Syntax** <br/> | `HRESULT GetSpecialLocation(`<br/>`[in]SpecialLocation slToGet,`<br/>`[out]BSTR * pbstrSpecialLocationPath);` <br/> |
-|**Parameter** <br/> | _slToGet_ &ndash; Eine der [SpecialLocation](enumerations-onenote-developer-reference.md#odc_SpecialLocation) -Enumerationswerte, der den Speicherort der Ordner mit Sonderfunktion abzurufenden angibt.  <br/><br/>_pbstrSpecialLocationPath_ &ndash; (Ausgabeparameter) ein Zeiger auf die Zeichenfolge, die in die OneNote den Pfad des Ordners spezielle geschrieben werden soll.  <br/> |
+|**Parameter** <br/> | _slToGet_ &ndash; Einer der [SpecialLocation](enumerations-onenote-developer-reference.md#odc_SpecialLocation)-Enumerationswerte, der den speziellen Ordnerspeicherort angibt, der abgerufen werden soll.  <br/><br/>_pbstrSpecialLocationPath_ &ndash; (Ausgabeparameter) Ein Verweis auf die Zeichenfolge, in die OneNote den Pfad des speziellen Ordners schreiben soll.  <br/> |
    
-Mit dieser Methode können Sie um den Speicherort des Ordners abgelegte Notes auf dem Datenträger zu bestimmen. Dies ist der Ordner, in dem speichert OneNote-Notizen, die erstellt werden, wenn Sie ein Element in OneNote ziehen sowie Hinweise, die direkt aus anderen Programmen (beispielsweise solche, die beim Klicken auf **Senden an OneNote** in Microsoft Outlook oder Microsoft stammen Internet Explorer). 
+Sie können diese Methode verwenden, um den Speicherort des Ordners "Nicht abgelegte Notizen" auf dem Datenträger zu ermitteln. Dies ist der Ordner, in dem OneNote Notizen speichert, die erstellt werden, wenn Sie ein Element in OneNote ziehen, sowie Notizen, die direkt aus anderen Anwendungen stammen (z. B. solche, die abgerufen werden, wenn Sie auf **An OneNote senden** in Microsoft Outlook oder Microsoft Internet Explorer klicken). 
   
 ## <a name="page-content-methods"></a>Seiteninhalt-Methoden
 <a name="ON14DevRef_Application_PageContent"> </a>
 
-In diesem Abschnitt beschriebenen Methoden können Sie ermitteln, aktualisieren und löschen Sie den Inhalt auf den Seiten in OneNote-Notizbüchern sowie zum Veröffentlichen von Inhalten OneNote.
+Mit den in diesem Abschnitt beschriebenen Methoden können Sie Inhalte von Seiten in OneNote-Notizbüchern entdecken, aktualisieren und löschen sowie OneNote-Inhalte veröffentlichen.
   
 ### <a name="getpagecontent-method"></a>GetPageContent-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung**|Dient zum Abrufen der gesamte Inhalt der angegebenen Seite (im OneNote-XML-Format).|
+|**Beschreibung**|Ruft alle Inhalte (im OneNote XML-Format) der angegebenen Seite ab.|
 |**Syntax**| `HRESULT GetPageContent(`<br/>`[in]BSTR bstrPageID,`<br/>`[out]BSTR * pbstrPageXmlOut,`<br/>`[in,defaultvalue(piBasic)]PageInfo pageInfoToExport,`<br/>`[in,defaultvalue(xsCurrent)]XMLSchema xsSchema);`|
-|**Parameter**| _bstrPageId_ &ndash; Die OneNote-ID auf der Seite, deren Inhalte, die Sie abrufen möchten.<br/><br/>_pbstrPageXmlOut_ &ndash; (Ausgabeparameter) ein Zeiger auf die Zeichenfolge, die in die OneNote die XML-Ausgabe geschrieben werden soll.<br/><br/>_pageInfoToExport_ &ndash; (Optional) gibt an, ob die **GetPageContent** -Methode Binärinhalt zurückgegeben wird, in den XML-Code und die Base64-codierte eingebettet. Binärer Inhalt kann beispielsweise Bilder und Freihanddaten enthalten. Der Parameter _PageInfoToExport_ gibt zudem, ob Sie die Auswahl in der XML-Code markiert, der die **GetPageContent** -Methode zurückgibt. Ein Aufzählungswert aus der [PageInfo-Klasse](enumerations-onenote-developer-reference.md#odc_PageInfo) -Aufzählung dauert.<br/><br/>_xsSchema_ &ndash; (Optional) die Version des OneNote-XML-Schemas, vom Typ **XMLSchema**, die ausgegeben werden soll. Sie können angeben, ob Sie XML-Schema Version 2013, 2010, 2007, oder die aktuelle Version. <br/><br/>**Hinweis**: Es wird empfohlen Festlegen einer Version von OneNote (beispielsweise **xs2013**) anstelle von **XsCurrent** verwenden oder es leer lassen, da dadurch das Add-in zukünftige Versionen von OneNote entwickelt.           |
+|**Parameter**| _bstrPageId_ &ndash; Die OneNote-ID der Seite, deren Inhalt Sie abrufen möchten.<br/><br/>_pbstrPageXmlOut_ &ndash; (Ausgabeparameter) Ein Verweis auf die Zeichenfolge, in die OneNote die XML-Ausgabe schreiben soll.<br/><br/>_pageInfoToExport_ &ndash; (Optional): Gibt an, ob die **GetPageContent**-Methode binäre, in XML-Code eingebettete und Base-64-codierte Inhalte zurückgibt. Binäre Inhalte können beispielsweise Bilder und Freihanddaten enthalten. Der _pageInfoToExport_-Parameter gibt auch an, ob die Auswahl im XML-Code, den die **GetPageContent**-Methode zurückgibt, gekennzeichnet werden soll. Es wird ein Enumerationswert aus der [PageInfo](enumerations-onenote-developer-reference.md#odc_PageInfo)-Enumeration verwendet.<br/><br/>_xsSchema_ &ndash; (Optional) Die Version des OneNote-XML-Schemas des Typs **XMLSchema**, das ausgegeben werden soll. Sie können angeben, ob Sie die XML-Schemaversion 2013, 2010, 2007 oder die aktuelle Version wünschen. <br/><br/>**HINWEIS**: Wir empfehlen Ihnen, eine Version von OneNote anzugeben (z. B. **xs2013**), statt **xsCurrent** zu verwenden oder es leer zu lassen, da das Add-In so mit zukünftigen Versionen von OneNote arbeiten kann.           |
    
-Standardmäßig werden zur Vermeidung von überzähligen Länge in der XML-Zeichenfolge, die sie zurückgibt, OneNote keine binären Inhalt in den XML-Code eingebettet. Den gleichen Gründen ist es nicht einrichten mit Auswahl Attribute der aktuellen Auswahl markiert. Binäre Objekte umfassen eine OneNote-ID in ihre Tags an. Wenn ein binäres Objekt erhalten möchten, rufen Sie die Methode **GetBinaryPageContent** und übergeben sie die OneNote-ID, die Sie aus der **GetPageContent** -Methode abrufen. Verwenden Sie die **GetPageContent** -Methode, wenn Sie die binären Daten nicht sofort benötigen. 
+Standardmäßig bettet OneNote keine binären Inhalte in den XML-Code ein, um übermäßige Längen in der zurückgegebenen Zeichenfolge zu vermeiden. Aus demselben Grund wird die aktuelle Auswahl nicht mit Auswahlattributen gekennzeichnet. Binäre Objekte enthalten eine OneNote-ID in Ihren eigenen Tags. Um ein binäres Objekt abzurufen, rufen Sie die **GetBinaryPageContent**-Methode auf und übergeben die OneNote-ID, die Sie von der **GetPageContent**-Methode erhalten haben. Verwenden Sie die **GetPageContent**-Methode, wenn Sie die binären Daten nicht sofort benötigen. 
   
 ### <a name="updatepagecontent-method"></a>UpdatePageContent-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung**|Aktualisiert oder ändert die Inhalte auf der Seite.|
+|**Beschreibung**|Aktualisiert oder ändert den Inhalt auf der Seite.|
 |**Syntax**| `HRESULT UpdatePageContent(`<br/>`[in]BSTR bstrPageChangesXmlIn,`<br/>`[in,defaultvalue(0)]DATE dateExpectedLastModified,`<br/>`[in,defaultvalue(xsCurrent)]XMLSchema xsSchema,`<br/>`[in,defaultvalue(false)]VARIANT_BOOL force);`|
-|**Parameter**| _bstrPageChangesXmlIn_ &ndash; Eine Zeichenfolge, die OneNote-XML-Code enthält, der die Änderungen enthält, die Sie zur Seite machen möchten.<br/><br/>_dateExpectedLastModified_ &ndash; (Optional) Datum und Uhrzeit, die Sie vorstellen die Seite zu aktualisierende zuletzt geändert. Wenn Sie einen Wert ungleich NULL für diesen Parameter übergeben, wird nur, wenn der Wert, den Sie weitergeben entspricht, das tatsächliche Datum und Uhrzeit der letzten Änderung die Seite mit dem Update OneNote fortgesetzt. Übergeben einen Wert für diesen Parameter wird verhindert, dass versehentlich überschrieben bearbeitet Benutzer, die seit des letzten Mal, das die Seite geändert wurde.<br/><br/>_xsSchema_ &ndash; (Optional) die Version des OneNote-XML-Schemas, vom Typ **XMLSchema**, die ausgegeben werden soll. Sie können angeben, ob Sie XML Schema-Version 2013, 2010, 2007, oder die aktuelle Version. <br/><br/>**Hinweis**: Es wird empfohlen Festlegen einer Version von OneNote (beispielsweise **xs2013**) anstelle von **XsCurrent** verwenden oder es leer lassen, da dadurch das Add-in zukünftige Versionen von OneNote entwickelt.<br/><br/>_erzwingen_ (Optional) **true** , wenn Inhalt der Seite aktualisieren, auch wenn unbekannte Daten auf der Seite einer zukünftigen Version von OneNote vorhanden ist; andernfalls **false** (Standardeinstellung). |
+|**Parameter**| _bstrPageChangesXmlIn_ &ndash; Eine Zeichenfolge, die OneNote XML-Code enthält, der die Änderungen enthält, die Sie an der Seite vornehmen möchten.<br/><br/>_dateExpectedLastModified_ &ndash; (Optional) Das Datum und die Uhrzeit, zu der die Seite, die Sie aktualisieren möchten, vermutlich zuletzt geändert wurde. Wenn Sie einen Wert ungleich NULL für diesen Parameter übergeben, fährt OneNote nur mit dem Update fort, wenn der Wert, den Sie übergeben, dem tatsächlichen Datum und der Zeit entspricht, zu der die Seite zuletzt geändert wurde. Die Übergabe eines Werts für diesen Parameter verhindert, dass versehentlich Änderungen überschrieben werden, die Benutzer seit der letzten Änderung der Seite vorgenommen haben.<br/><br/>_xsSchema_ &ndash; (Optional) Die Version des OneNote-XML-Schemas des Typs **XMLSchema**, das ausgegeben werden soll. Sie können angeben, ob Sie die XML-Schemaversion 2013, 2010, 2007 oder die aktuelle Version wünschen. <br/><br/>**HINWEIS**: Wir empfehlen Ihnen, eine Version von OneNote anzugeben (z. B. **xs2013**), statt **xsCurrent** zu verwenden oder es leer zu lassen, da das Add-In so mit zukünftigen Versionen von OneNote arbeiten kann.<br/><br/>_force_(Optional) **true**, um den Inhalt der Seite zu aktualisieren, auch wenn auf der Seite unbekannte Daten von einer zukünftigen OneNote-Version vorhanden sind; andernfalls **false** (Standard). |
    
-Sie können diese Methode verwenden, um der Seite auf verschiedene Weise ändern. Beispielsweise können Sie die **UpdatePageContent** -Methode verwenden, um eine Gliederung zu einer Seite hinzufügen, ändern Sie den Inhalt einer Gliederung, Hinzufügen von Bildern, Freihand hinzufügen, Verschieben von Inhalten oder Ändern von Text in Pfade. 
+Sie können diese Methode verwenden, um die Seite auf verschiedene Arten zu ändern. Beispielsweise können Sie die **UpdatePageContent**-Methode verwenden, um eine Gliederung zu einer Seite hinzuzufügen, den Inhalt einer Gliederung zu ändern, Bilder hinzuzufügen, Freihandobjekte hinzuzufügen, Inhalte zu verschieben oder Text in Gliederungen zu ändern. 
   
-Sie können eine genauere beispielsweise die **GetPageContent** -Methode exportieren eine vorhandene Seite, einige Änderungen an den XML-Code für die Seite vornehmen, und klicken Sie dann die **UpdatePageContent** -Methode verwenden, um die gesamte Seite erneut importieren verwenden. Oder Sie können diese Methode verwenden, um neue Page-Objekte wie Bilder, an das Ende einer bereits vorhandenen Seite hinzufügen. 
+Ein spezifischeres Beispiel wäre die Verwendung der **GetPageContent**-Methode, um eine vorhandene Seite zu exportieren, Änderungen am XML-Code für die Seite vorzunehmen und dann die **UpdatePageContent**-Methode zu verwenden, um die gesamte Seite erneut zu importieren. Oder Sie können diese Methode verwenden, um neue Seitenobjekte, wie z. B. Bilder, an das Ende einer vorhandenen Seite hinzuzufügen. 
   
-Die einzigen Objekte, die Sie in der XML-Code hinzufügen müssen, die Sie an die **UpdatePageContent** -Methode übergeben werden Seitenebenen-Objekte (wie Gliederungen Bilder auf der Seite oder Druckfarbe auf der Seite), die geändert wurden. Diese Methode nicht ändern oder Entfernen von Seitenebenen-Objekten, die Sie nicht in der _BstrPageChangesXmlIn_ -Parameter angeben. Die Methode ersetzt vollständig Seitenebenen-Objekte, wie Pfade, die mit den IDs der Objekte übereinstimmen, die Sie weitergeben. Daher müssen Sie alle Objekte der Seitenebene vollständig angeben, in Ihrem Code, einschließlich ihrer vorhandenen Inhalt und die Änderungen, die Sie für diese machen möchten. 
+Die einzigen Objekte, die Sie zu dem XML-Code hinzufügen müssen, den Sie an die **UpdatePageContent**-Methode übergeben, sind Seitenebene-Objekte (z. B. Gliederungen, Bilder auf der Seite oder Freihandobjekte auf der Seite), die nie geändert wurden. Diese Methode ändert oder entfernt keine Objekte auf Seitenebene, die Sie nicht im _bstrPageChangesXmlIn_-Parameter angegeben. Diese Methode ersetzt vollständig Objekte auf Seitenebene, wie z. B. Gliederungen, deren IDs mit denen der übergebenen Objekte übereinstimmen. Aus diesem Grund müssen Sie alle Objekte auf Seitenebene vollständig in Ihrem Code angeben, einschließlich der vorhandenen Inhalte und Änderungen, die Sie daran vornehmen möchten. 
   
-Wenn die Seite eine Gliederung und ein Hintergrundbild für die Seite enthält, können Sie beispielsweise ersetzen die Gliederung und das Bild vollständig angeben der Gliederung in den XML-Code mit der ID des vorhandenen Gliederung und nicht das Bild im Code einschließlich unverändert lassen. Da die überarbeitete Gliederung, die Sie vollständig in den Code eingeben die vorhandene Gliederung ersetzt, müssen Sie den gesamten Inhalt der Gliederung einbeziehen.
+Wenn Ihre Seite z. B. eine Gliederung und ein Hintergrundbild für die Seite enthält, können Sie die Gliederung ersetzen und das Bild unverändert lassen, indem Sie die Gliederung komplett im XML-Code angeben, die ID der vorhandenen Gliederung verwenden und das Bild nicht in den Code einschließlichen. Da die überarbeitete Gliederung, die Sie in den Code einschließen, die vorhandene Gliederung vollständig ersetzt, müssen Sie alle Inhalte der Gliederung einschließen.
   
-Darüber hinaus ändert die **UpdatePageContent** -Methode nur Elementeigenschaften, die Sie in der _BstrPageChangesXmlIn_ -Parameter angeben. Wenn Sie einige, aber nicht alle Eigenschaften des Elements **PageSettings** angeben, bleiben die Eigenschaften, die Sie nicht angeben, z. B. unverändert. 
+Darüber hinaus ändert die **UpdatePageContent**-Methode nur Elementeigenschaften, die Sie im _bstrPageChangesXmlIn_-Parameter angeben. Wenn Sie z. B. einige, aber nicht alle Eigenschaften des **PageSettings**-Elements angeben, bleiben die Eigenschaften, die Sie nicht angeben, unverändert. 
   
-Im folgenden Beispiel wird gezeigt, wie Sie die **UpdatePageContent** -Methode zum Ändern des Titels einer Seite und Hinzufügen von Beispieltext zur Seite. Ersetzen Sie vor Ausführung des Codes, eine gültige Seiten-ID für die Seiten-ID im Code dargestellt, damit der Code auf Ihrem Computer funktioniert. Sie können die Seiten-ID für eine Seite abrufen, indem Sie mithilfe der Methode **GetHierarchy** und Untersuchen der Ausgabe. 
+Das folgende Beispiel zeigt, wie Sie mithilfe der **UpdatePageContent**-Methode den Titel einer Seite ändern und Beispieltext zur Seite hinzufügen. Ersetzen Sie vor dem Ausführen des Codes eine gültige Seiten-ID durch die im Code angezeigte Seiten-ID, damit der Code auf Ihrem Computer funktioniert. Sie können die Seiten-ID für eine Seite abrufen, indem Sie die **GetHierarchy**-Methode verwenden und die Ausgabe untersuchen. 
   
 ```cs
 static void UpdatePageContent()
@@ -301,179 +301,179 @@ static void UpdatePageContent()
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Gibt ein binäres Objekt wie Freihand oder Bilder auf einer OneNote-Seite als Base-64-codierte Zeichenfolge zurück.  <br/> |
+|**Beschreibung** <br/> |Gibt ein binäres Objekt, wie z. B. Freihand oder Bilder, auf einer OneNote-Seite als Base-64-codierte Zeichenfolge zurück.  <br/> |
 |**Syntax** <br/> | `HRESULT GetBinaryPageContent(`<br/>`[in]BSTR bstrPageID,`<br/>`[in]BSTR bstrCallbackID,`<br/>`[out]BSTR * pbstrBinaryObjectB64Out);` <br/> |
-|**Parameter** <br/> | _bstrPageID_ &ndash; Die OneNote-ID der Seite, die binäre abzurufenden Objekts enthält.  <br/><br/>_bstrCallBackID_ &ndash; Die OneNote-ID des binary-Objekts abrufen möchten. Diese ID, bezeichnet als ein **CallbackID**ist in den OneNote-XML-Code für eine Seite, die von der **GetPageContent** -Methode zurückgegeben.  <br/><br/>_pbstrBinaryObectB64Out_ &ndash; (Ausgabeparameter) ein Zeiger auf eine Zeichenfolge, die in die OneNote das binäre Objekt als Base-64-codierte Zeichenfolge schreibt.  <br/> |
+|**Parameter** <br/> | _bstrPageID_ &ndash; Die OneNote-ID der Seite, die das binäre Objekt zum Abrufen enthält.  <br/><br/>_bstrObjectID_ &ndash; Die OneNote-ID des Objekts, das Sie abrufen möchten. Diese ID, die als **callbackID** bezeichnet wird, ist der OneNote XML-Code für eine von der **GetPageContent**-Methode zurückgegebene Seite.  <br/><br/>_pbstrBinaryObectB64Out_ &ndash; (Ausgabeparameter) Ein Verweis auf eine Zeichenfolge, in die OneNote das binäre Objekt als Base-64-codierte Zeichenfolge schreibt.  <br/> |
    
 ### <a name="deletepagecontent-method"></a>DeletePageContent-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Löscht ein Objekt &ndash; wie etwa eine **Gliederung**, **Freihand**oder **Bild** -Objekt aus einer Seite.  <br/> |
+|**Beschreibung** <br/> |Löscht ein &ndash;-Objekt wie z. B. ein **Outline**-, **Freihand**- oder **Image**-Objekt von einer Seite.  <br/> |
 |**Syntax** <br/> | `HRESULT DeletePageContent(`<br/>`[in]BSTR bstrPageID,`<br/>`[in]BSTR bstrObjectID,`<br/>`[in,defaultvalue(0)]DATE dateExpectedLastModified,`<br/>`[in,defaultvalue(#)]VARIANT_BOOL force);` <br/> |
-|**Parameter** <br/> | _bstrPageID_ &ndash; Die OneNote-ID der Seite, die zu löschenden Objekts enthält.  <br/><br/>_bstrObjectID_ &ndash; Die OneNote-ID des Objekts, das Sie löschen möchten.  <br/><br/>_dateExpectedLastModified_ &ndash; (Optional), die die Seite, die Inhalt enthält zu löschende zuletzt glaubt Datum und Uhrzeit geändert. Wenn Sie einen Wert ungleich NULL für diesen Parameter übergeben, wird nur, wenn der Wert, den Sie weitergeben entspricht, das tatsächliche Datum und Uhrzeit der letzten Änderung die Seite OneNote der Löschvorgang fortgesetzt. Übergeben einen Wert für diesen Parameter verhindert, dass versehentlich überschreiben bearbeiteten Benutzer seit dem letzten Mal, das die Seite geändert wurde.  <br/><br/>_erzwingen_ &ndash; (Optional) **true** , wenn der Inhalt der Seite aktualisieren, auch wenn unbekannte Daten auf der Seite einer zukünftigen Version von OneNote; vorhanden ist andernfalls **false** (Standardeinstellung).  <br/> |
+|**Parameter** <br/> | _bstrPageID_ &ndash; Die OneNote-ID der Seite, die das Objekt zum Löschen enthält.  <br/><br/>_bstrObjectID_ &ndash; Die OneNote-ID des Objekts, das Sie löschen möchten.  <br/><br/>_dateExpectedLastModified_ &ndash; (Optional) Das Datum und die Uhrzeit, zu der die Seite, die Inhalte zum Löschen enthält, vermutlich zuletzt geändert wurde. Wenn Sie einen Wert ungleich NULL für diesen Parameter übergeben, fährt OneNote nur mit dem Löschen fort, wenn der Wert, den Sie übergeben, dem tatsächlichen Datum und der Zeit entspricht, zu der die Seite zuletzt geändert wurde. Die Übergabe eines Werts für diesen Parameter verhindert, dass versehentlich Änderungen überschrieben werden, die Benutzer seit der letzten Änderung der Seite vorgenommen haben.  <br/><br/>_force_ &ndash; (Optional) **true**, um den Inhalt der Seite zu aktualisieren, auch wenn auf der Seite unbekannte Daten von einer zukünftigen OneNote-Version vorhanden sind; andernfalls **false** (Standard).  <br/> |
    
 ### <a name="publish-method"></a>Publish-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Exportiert die angegebene Seite in eine Datei in einem beliebigen Format, die OneNote unterstützt.  <br/> |
+|**Beschreibung** <br/> |Exportiert die Seite, die Sie angeben haben, in eine Datei in einem beliebigen Format, das OneNote unterstützt.  <br/> |
 |**Syntax** <br/> | `HRESULT Publish(`<br/>`[in]BSTR bstrHierarchyID,`<br/>`[in]BSTR bstrTargetFilePath,`<br/>`[in,defaultvalue(pfOneNote)]PublishFormat pfPublishFormat,`<br/>`[in,defaultvalue(0)]BSTR bstrCLSIDofExporter);` <br/> |
-|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID der zu exportierenden Hierarchie.  <br/><br/>_bstrTargetFilePath_ &ndash; Den absoluten Pfad zu dem Speicherort, in der Sie die resultierende Ausgabedatei speichern möchten. Die Datei, die von die Ihnen angegebenen muss eine sein, die an diesem Speicherort nicht bereits vorhanden ist.  <br/><br/>_pfPublishFormat_ &ndash; Eine der [PublishFormat](enumerations-onenote-developer-reference.md#odc_PublishFormat) -Enumerationswerte, der das Format angibt, in dem die veröffentlichte Seite (z. B., MTHML, PDF und usw.) werden soll.  <br/><br/>_bstrCLSIDofExporter_ &ndash; Die Klasse-ID (CLSID) des einer registrierten COM-Anwendung, die Microsoft Windows exportieren kann Erweiterte Metadateien (EMF). Die COM-Anwendung muss **IMsoDocExporter** -Schnittstelle implementieren. Dieser Parameter wird angegeben, um die Drittentwickler ihre eigenen Code zum Veröffentlichen von OneNote-Inhalt in einem benutzerdefinierten Format schreiben zulassen. Weitere Informationen zu **IMsoDocExporter** -Schnittstelle finden Sie unter [Extending the Office 2007 Fixed-Format Export Feature](https://msdn.microsoft.com/library/office/aa338206%28v=office.12%29.aspx).  <br/> |
+|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID der Hierarchie, die Sie exportieren möchten.  <br/><br/>_bstrTargetFilePath_ &ndash; Der absolute Pfad zu dem Speicherort, an dem Sie die resultierende Ausgabedatei speichern möchten. Die Datei, die Sie angeben, darf noch nicht an diesem Speicherort vorhanden sein.  <br/><br/>_pfPublishFormat_ &ndash; Einer der [PublishFormat](enumerations-onenote-developer-reference.md#odc_PublishFormat)-Enumerationswerte, der das Format für die veröffentlichte Seite (z. B. MTHML, PDF usw.) angibt.  <br/><br/>_bstrCLSIDofExporter_ &ndash; Die Klassen-ID (CLSID) einer registrierten COM-Anwendung, die Microsoft Windows Enhanced Metafiles (EMF) exportieren kann. Die COM-Anwendung muss die **IMsoDocExporter**-Oberfläche implementieren. Dieser Parameter wird angegeben, um zu verhindern, dass Entwickler dritter Parteien ihren eigenen Code schreiben, um OneNote-Inhalte in einem benutzerdefinierten Format zu veröffentlichen. Weitere Informationen zur **IMsoDocExporter**-Schnittstelle finden Sie unter [Erweitern Sie das Office 2007-Format Export Feature](https://msdn.microsoft.com/library/office/aa338206%28v=office.12%29.aspx).  <br/> |
    
 OneNote unterstützt derzeit die folgenden Dateiformate:
   
 - MHTML-Dateien (MHT)
-- Adobe Acrobat PDF-Dateien (PDF)
-- XML Paper Specification (XPS)-Dateien (XML Paper Specification)
-- OneNote 2013, 2010 oder 2007-Dateien (One)
-- OneNote-Paket-Dateien (ONEPKG)
+- Adobe Acrobat-PDF-Dateien (PDF)
+- XML Paper Specification-Dateien (XPS)
+- OneNote 2013-, 2010- oder 2007-Dateien (ONE)
+- OneNote-Paketdateien (ONEPKG)
 - Microsoft Word-Dokumente (DOC oder DOCX)
-- Erweiterte Microsoft Windows-Metadateien (EMF)
+- Microsoft Windows Enhanced Metafiles (EMF)
 - HTML-Dateien (HTML)
     
-Diese Methode erzeugt genau die gleichen Ergebnisse, indem Sie auf **Veröffentlichen** auf der Benutzeroberfläche und das Format angeben, erhalten würden. 
+Diese Methode erzeugt genau die gleichen Ergebnisse, die Sie auch durch Klicken auf **Publish** in der Benutzeroberfläche und Angabe des Formats erhalten würden. 
   
 ## <a name="navigation-methods"></a>Navigationsmethoden
 <a name="ON14DevRef_Application_Navigation"> </a>
 
-In diesem Abschnitt beschriebenen Methoden können Sie suchen, navigieren zu, und Verknüpfen mit OneNote-Notizbüchern, Abschnittsgruppen, Abschnitte, Seiten und Page-Objekte.
+Mit den in diesem Abschnitt beschriebenen Methoden können Sie OneNote-Notizbücher, Abschnittsgruppen, Abschnitte, Seiten und Seitenobjekte finden, zu diesen navigieren und diese verlinken.
   
-### <a name="navigateto-method"></a>NavigateTo (Methode)
+### <a name="navigateto-method"></a>NavigateTo-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Navigiert zu dem angegebenen Objekt (z. B. Abschnitte, Seiten und **Gliederung** Schemaelemente in Seiten).  <br/> |
+|**Beschreibung** <br/> |Navigiert zu dem angegebenen Objekt (z. B. Abschnitte, Seiten und **Outline**-Elemente innerhalb der Seite).  <br/> |
 |**Syntax** <br/> | `HRESULT NavigateTo(`<br/>`[in]BSTR bstrHierarchyObjectID,`<br/>`[in,defaultvalue(#)]BSTR bstrObjectID,`<br/>`[in,defaultvalue(0)]VARIANT_BOOL fNewWindow);` <br/> |
-|**Parameter** <br/> | _bstrHierarchyObjectID_ &ndash; Die OneNote-ID des Objekts in der OneNote-Hierarchie zu navigieren soll.  <br/><br/>_bstrObjectID_ &ndash; Die OneNote-ID für das Objekt, auf der OneNote-Seite zu dem navigiert werden soll.  <br/><br/>_fNewWindow_ &ndash; (Optional) **true** , wenn angegebene Objekt in einem neuen OneNote-Fenster öffnen. **"false"** wird ein neues OneNote-Fenster im nicht nicht geöffnet, falls geöffnet ist.  <br/> |
+|**Parameter** <br/> | _bstrHierarchyObjectID_ &ndash; Die OneNote-ID des Objekts, zu dem Sie in der OneNote-Hierarchie navigieren möchten.  <br/><br/>_bstrObjectID_ &ndash; Die OneNote-ID des Objekts, zu dem Sie auf der OneNote-Seite navigieren möchten.  <br/><br/>_fNewWindow_ &ndash; (Optional) **true**, um das angegebene Objekt in einem neuen OneNote-Fenster zu öffnen. **false** öffnet kein neues OneNote-Fenster, wenn eins geöffnet ist.  <br/> |
    
 ### <a name="navigatetourl-method"></a>NavigateToUrl-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn der Link externe an OneNote (wie https:// oder file:///) ist, wird das Sicherheitsdialogfeld angezeigt. Bei Kündigung OneNote versucht, öffnen Sie den Link, und ein **HResult.hrObjectDoesNotExist** -Fehler zurückgegeben.  <br/> |
+|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn sich der Link außerhalb von OneNote befindet (z. B. "https://" oder "file://"), wird ein Sicherheitsdialogfeld angezeigt. Bei Ablehnung versucht OneNote, den Link zu öffnen, und ein **HResult.hrObjectDoesNotExist**-Fehler wird zurückgegeben.  <br/> |
 |**Syntax** <br/> | `HRESULT NavigateTo(`<br/>`[in]BSTR bstrUrl,`<br/>`[in,defaultvalue(0)]VARIANT_BOOL fNewWindow);` <br/> |
-|**Parameter** <br/> | _bstrUrl_ &ndash; Eine Zeichenfolge, die angibt, wo Sie zu navigieren. Dies könnte ein OneNote-Link oder eine beliebige andere URL, beispielsweise eine Webadresse Link oder im Netzwerk.  <br/><br/>_fNewWindow_ &ndash; (Optional) **true** , wenn die angegebene URL in einem neuen OneNote-Fenster geöffnet. **"false"** wird ein neues OneNote-Fenster im nicht nicht geöffnet, falls geöffnet ist.  <br/> |
+|**Parameter** <br/> | _bstrUrl_ &ndash; Eine Zeichenfolge, die angibt, wohin navigiert werden soll. Dies kann ein OneNote-Link oder eine beliebige andere URL sein, wie z. B. ein Weblink oder eine Netzwerkadresse.  <br/><br/>_fNewWindow_ &ndash; (Optional) **true**, um die angegebene URL in einem neuen OneNote-Fenster zu öffnen. **false** öffnet kein neues OneNote-Fenster, wenn eins geöffnet ist.  <br/> |
    
 ### <a name="gethyperlinktoobject-method"></a>GetHyperLinkToObject-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Ruft einen OneNote Hyperlink zu der angegebenen Notizbuch, Abschnittsgruppe, Abschnitt, Seite oder Page-Objekt ab.  <br/> |
+|**Beschreibung** <br/> |Ruft einen OneNote-Hyperlink zum angegebenen Notizbuch, zur angegebenen Abschnittsgruppe, zum angegebenen Abschnitt, zur angegebenen Seite oder zum angegebenen Seitenobjekt ab.  <br/> |
 |**Syntax** <br/> | `HRESULT GetHyperlinkToObject(`<br/>`[in] BSTR bstrHierarchyID,`<br/>`[in] BSTR bstrPageContentObjectID,`<br/>`[out] BSTR * pbstrHyperlinkOut);` <br/> |
-|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID für das Notizbuch, Abschnittsgruppe, Abschnitt oder Seite für die Sie einen Hyperlink erstellen möchten.  <br/><br/>_bstrPageContentObjectID_ &ndash; (Optional) die OneNote-ID für das Objekt auf der Seite für die Sie einen Hyperlink erstellen möchten. Das Objekt kann beispielsweise eine Gliederung oder eine **Gliederung** Element sein. Wenn Sie übergeben Sie eine leere Zeichenfolge (""), der zurückgegebene Link verweist auf das Notizbuch, Abschnittsgruppe Abschnitt oder Seite, die Sie in der _BstrHierarchyID_ -Parameter angegeben. Wenn Sie eine nicht leere Zeichenfolge für den _BstrPageContentObjectID_ -Parameter übergeben, muss der Parameter _BstrHierarchyID_ einen Verweis auf die Seite, die das angegebene Objekt enthält.  <br/><br/>_pbstrHyperlinkOut_ &ndash; (Ausgabeparameter) ein Zeiger auf eine Zeichenfolge, die in dem die **GetHyperlinkToObject** -Methode den Hyperlinktext Ausgabe schreibt.  <br/> |
+|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID für das Notizbuch, die Abschnittsgruppe, den Abschnitt oder die Seite, für das/die/den Sie einen Hyperlink erstellen möchten.  <br/><br/>_bstrPageContentObjectID_ &ndash; (Optional) Die OneNote-ID für das Objekt auf der Seite, für das Sie einen Hyperlink erstellen möchten. Das Objekt kann z. B. eine Gliederung oder ein **outline**-Element sein. Wenn Sie eine leere Zeichenfolge übergeben (""), verweist der zurückgegebene Link auf das Notizbuch, die Abschnittsgruppe, den Abschnitt oder die Seite, das/die/der im _bstrHierarchyID_-Parameter angegeben wurde. Wenn Sie eine nicht leere Zeichenfolge für den _bstrPageContentObjectID_-Parameter übergeben, muss der _bstrHierarchyID_-Parameter ein Bezug auf die Seite sein, die das angegebene Objekt enthält.  <br/><br/>_pbstrHyperlinkOut_ &ndash; (Ausgabeparameter) Ein Verweis auf eine Zeichenfolge, in die die **GetHyperlinkToObject**-Methode den Hyperlinktext der Ausgabe schreibt.  <br/> |
    
-Wenn Sie versuchen, um den resultierenden Link zu navigieren, OneNote wird geöffnet und zeigt das angegebene Objekt im Browser.
+Wenn Sie versuchen, zum resultierenden Link zu navigieren, öffnet OneNote das angegebene Objekt im Browser.
   
 ### <a name="getwebhyperlinktoobject-method"></a>GetWebHyperlinktoObject-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Gibt einen Hyperlink auf ein Objekt, das in der OneNote-WebClient öffnet.  <br/> |
+|**Beschreibung** <br/> |Gibt einen Hyperlink zu einem Objekt zurück, das im OneNote-Webclient geöffnet wird.  <br/> |
 |**Syntax** <br/> | `HRESULT GetWebHyperlinkToObject (`<br/>`[in] BSTR bstrHierarchyID,`<br/>`[in] BSTR bstrPageContentObjectID,`<br/>`[out] BSTR * pbstrHyperlinkOut);` <br/> |
-|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID für das Notizbuch im Abschnitt Gruppe, Abschnitt oder Seite für die Sie einen Webhyperlink möchten.  <br/><br/>_bstrPageContentObjectID_ &ndash; (Optional) die OneNote-ID für das Objekt auf der Seite für die Sie einen Hyperlink erstellen möchten. Das Objekt kann beispielsweise eine Gliederung oder eine **Gliederung** Element sein. Wenn Sie übergeben Sie eine leere Zeichenfolge (""), der zurückgegebene Link verweist auf das Notizbuch, Abschnittsgruppe Abschnitt oder Seite, die Sie in der _BstrHierarchyID_ -Parameter angegeben. Wenn Sie eine nicht leere Zeichenfolge für den _BstrPageContentObjectID_ -Parameter übergeben, muss der Parameter _BstrHierarchyID_ einen Verweis auf die Seite, die das angegebene Objekt enthält.  <br/><br/>_pbstrHyperlinkOut_ &ndash; (Ausgabeparameter) ein Zeiger auf eine Zeichenfolge, die in dem die **GetWebHyperlinkToObject** -Methode den Hyperlinktext Ausgabe schreibt. Wenn ein Web-Hyperlink für das Notizbuch erstellt werden kann, wird ein Nullwert zurückgegeben.  <br/> |
+|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID für das Notizbuch, die Abschnittsgruppe, den Abschnitt oder die Seite, für das/die/den Sie einen Webhyperlink erstellen möchten.  <br/><br/>_bstrPageContentObjectID_ &ndash; (Optional) Die OneNote-ID für das Objekt auf der Seite, für das Sie einen Hyperlink erstellen möchten. Das Objekt kann z. B. eine Gliederung oder ein **outline**-Element sein. Wenn Sie eine leere Zeichenfolge übergeben (""), verweist der zurückgegebene Link auf das Notizbuch, die Abschnittsgruppe, den Abschnitt oder die Seite, das/die/der im _bstrHierarchyID_-Parameter angegeben wurde. Wenn Sie eine nicht leere Zeichenfolge für den _bstrPageContentObjectID_-Parameter übergeben, muss der _bstrHierarchyID_-Parameter ein Bezug auf die Seite sein, die das angegebene Objekt enthält.  <br/><br/>_pbstrHyperlinkOut_ &ndash; (Ausgabeparameter) Ein Verweis auf eine Zeichenfolge, in die die **GetWebHyperlinkToObject**-Methode den Hyperlinktext der Ausgabe schreibt. Wenn kein Webhyperlink für das Notizbuch erstellt werden kann, wird ein Null-Wert zurückgegeben.  <br/> |
    
 ### <a name="findpages-method"></a>FindPages-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung**|Gibt eine Liste von Seiten, die der angegebenen Abfrage entsprechen.|
+|**Beschreibung**|Gibt eine Liste der Seiten zurück, die dem angegebenen Abfragebegriff entsprechen.|
 |**Syntax**| `HRESULT FindPages(`<br/>`[in]BSTR bstrStartNodeID,`<br/>`[in]BSTR bstrSearchBSTR,`<br/>`[out]BSTR * pbstrHierarchyXmlOut,`<br/>`[in,defaultvalue(#)]VARIANT_BOOL fIncludeUnindexedPages,`<br/>`[in,defaultvalue(0)]VARIANT_BOOL fDisplay,`<br/>`[in,defaultvalue(#)]XMLSchema xsSchema);`|
-|**Parameter**| _bstrStartNodeID_ &ndash; (Stamm, Notizbuch, Abschnittsgruppe oder Abschnitt) den Knoten Unterschreitung die Suche nach Inhalten. Dieser Parameter legt den Gültigkeitsbereich für die Suche.<br/><br/>_bstrSearchString_ &ndash; Die zu suchende Zeichenfolge. Übergeben Sie genau die gleiche Zeichenfolge, die Sie in das Suchfeld in der OneNote-UI eingeben möchten. Sie können bitweise Operatoren wie **und** und **oder**, der vollständig in Großbuchstaben sein muss.<br/><br/>_pbstrHierarchyXmlOut_ &ndash; (Ausgabeparameter) ein Zeiger auf eine Zeichenfolge, die in die OneNote die Ausgabe XML-Zeichenfolge geschrieben werden soll. Die resultierende XML-Zeichenfolge enthält die Notebook-Hierarchie im Stammverzeichnis nach unten zur und einschließlich Seiten, die die zu suchende Zeichenfolge entsprechen. Beispielsweise wird die **FindPages** -Methode nicht Abschnitten aufgelistet, die keine Übereinstimmung Seite in der Hierarchie haben. Wenn nur eine Seite in einem einzigen Abschnitt mit der Zeichenfolge übereinstimmt, enthält die zurückgegebene Hierarchie ebenfalls den Pfad für diese Abschnitte und Seiten, aber für keine andere Teile der Hierarchie Notizbuch.<br/><br/>_fIncludeUnindexedPages_ &ndash; (Optional) **true,** um Seiten zu suchen, die nicht von der Windows-Suche indiziert wurden anderenfalls **false**.<br/><br/>_fDisplay_ &ndash; (Optional) **true** , wenn auch für die Suche in der Benutzeroberfläche für den Benutzer ausführen, so als würde der Benutzer es selbst eingegeben hätten. **"false"** zum Ausführen der Abfrage ohne Änderung der Benutzeroberfläche (Standardeinstellung).<br/><br/>_xsSchema_ &ndash; (Optional) der OneNote-Schemaversion von der Zeichenfolge _PbstrHierarchyXmlOut_. Dieser optionale Wert wird verwendet, die Version des OneNote-XML-Schemas an, die _PbstrHierarchyXmlOut_ -Zeichenfolge enthält. Wenn dieser Wert nicht angegeben ist, wird OneNote wird vorausgesetzt, dass der XML-Code im Schema Version _XsCurrent_ist. <br/><br/>**Hinweis**: Es wird empfohlen Festlegen einer Version von OneNote (beispielsweise **xs2013**) anstelle von **XsCurrent** verwenden oder es leer lassen, da dadurch das Add-in zukünftige Versionen von OneNote entwickelt.           |
+|**Parameter**| _bstrStartNodeID_ &ndash; Der Knoten (Stamm, Notizbuch, Abschnittsgruppe oder Abschnitt), unter dem nach Inhalten gesucht werden soll. Dieser Parameter legt den Bereich für die Suche fest.<br/><br/>_bstrSearchString_ &ndash; Die Suchzeichenfolge. Geben Sie genau die gleiche Zeichenfolge weiter, die Sie in das Suchfeld der OneNote-UI eingeben würden. Sie können bitweise Operatoren verwenden, wie z. B. **UND** und **ODER**, die komplett in Großbuchstaben angegeben werden müssen.<br/><br/>_pbstrHierarchyXmlOut_ &ndash; (Ausgabeparameter) Ein Verweis auf die Zeichenfolge, in die OneNote die XML-Ausgabezeichenfolge schreiben soll. Die resultierende XML-Zeichenfolge enthält die Notizbuchhierarchie vom Stamm bis hinunter zu den und einschließlich aller Seiten, die der Suchzeichenfolge entsprechen. Die **FindPages**-Methode listet z. B. keine Abschnitte auf, die nicht über Seitenübereinstimmungen in der Hierarchie verfügen. Wenn nur eine Seite in einem einzigen Abschnitt mit der Zeichenfolge übereinstimmt, enthält die zurückgegebene Hierarchie den Pfad zu dem Abschnitt und der Seite, aber keine anderen Bestandteile der Hierarchie des Notizbuchs.<br/><br/>_fIncludeUnindexedPages_ &ndash; (Optional) **true**, um Seiten zu suchen, die nicht von Windows Search indiziert wurden; andernfalls **false**.<br/><br/>_fDisplay_ &ndash; (Optional) **true**, um die Suche auf der Benutzeroberfläche für den Benutzer auszuführen, so als ob der Benutzer sie selbst eingegeben hätte. **false**, um die Abfrage ohne Änderung an der Benutzeroberfläche auszuführen (Standard).<br/><br/>_xsSchema_ &ndash; (Optional) Die OneNote-Schemaversion der Zeichenfolge _pbstrHierarchyXmlOut_. Dieser optionale Wert wird verwendet, um die Version des OneNote-XML-Schemas anzugeben, im dem sich die _pbstrHierarchyXmlOut_-Zeichenfolge befindet. Wenn dieser Wert nicht angegeben ist, setzt OneNote voraus, dass sich die XML in der Schemaversion _xsCurrent_ befindet. <br/><br/>**HINWEIS**: Wir empfehlen Ihnen, eine Version von OneNote anzugeben (z. B. **xs2013**), statt **xsCurrent** zu verwenden oder es leer zu lassen, da das Add-In so mit zukünftigen Versionen von OneNote arbeiten kann.           |
    
- **FindPages** funktioniert nur, wenn Sie Microsoft Search 3.0 oder 4.0 auf Ihrem Computer installiert haben. Windows Vista und Windows 7 enthalten diese Komponente. Wenn Sie eine frühere Version von Windows ausgeführt werden, müssen Sie [Windows Search](https://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx) für **FindPages** zu installieren. 
+ **FindPages** funktioniert nur, wenn Sie Microsoft Search 3.0 oder 4.0 auf Ihrem Computer installiert haben. Windows Vista und Windows 7 enthalten diese Komponente. Wenn Sie eine frühere Version von Windows ausführen, müssen Sie [Windows Search](https://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx) installieren, damit **FindPages** funktioniert. 
   
 ### <a name="findmeta-method"></a>FindMeta-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung**|Gibt eine Liste von OneNote-Objekten, die Metadaten enthalten, die mit den angegebenen Abfragebegriff übereinstimmt.|
+|**Beschreibung**|Gibt eine Liste von OneNote-Objekten zurück, die Metadaten enthalten, die dem angegebenen Abfragebegriff entsprechen.|
 |**Syntax**| `HRESULT FindMeta (`<br/>`[in]BSTR bstrStartNodeID,`<br/>`[in]BSTR bstrSearchBSTRName,`<br/>`[out]BSTR * pbstrHierarchyXmlOut,`<br/>`[in,defaultvalue(#)]VARIANT_BOOL fIncludeUnindexedPages,`<br/>`[in,defaultvalue(#)]XMLSchema xsSchema);`|
-|**Parameter**| _bstrStartNodeID_ &ndash; (Stamm, Notizbuch, Abschnittsgruppe oder Abschnitt) den Knoten Unterschreitung die Suche nach Inhalten. Dieser Parameter legt den Gültigkeitsbereich für die Suche.<br/><br/>_bstrSearchStringName_ &ndash; Die zu suchende Zeichenfolge. Übergeben Sie in einem beliebigen Teil des Metadatennamens. Wenn Sie eine leere Zeichenfolge oder einen null-Wert übergeben, werden alle Objekte, denen Metadaten der Abfrage übereinstimmen.<br/><br/>_pbstrHierarchyXmlOut_ &ndash; (Ausgabeparameter) ein Zeiger auf eine Zeichenfolge, die in die OneNote die Ausgabe XML-Zeichenfolge geschrieben werden soll. Die resultierende XML-Zeichenfolge enthält die Notebook-Hierarchie im Stammverzeichnis nach unten zur und einschließlich Seiten, die die zu suchende Zeichenfolge entsprechen. Beispielsweise wird die **FindPages** -Methode nicht Abschnitten aufgelistet, die keine Übereinstimmung Seite in der Hierarchie haben. Wenn nur eine Seite in einem einzigen Abschnitt mit der Zeichenfolge übereinstimmt, enthält die zurückgegebene Hierarchie ebenfalls den Pfad für diese Abschnitte und Seiten, aber für keine andere Teile der Hierarchie Notizbuch.  <br/><br/>_fIncludeUnindexedPages_ &ndash; (Optional) **true,** um Seiten zu suchen, die nicht von der Windows-Suche indiziert wurden anderenfalls **false**.<br/><br/>_xsSchema_ &ndash; (Optional) der OneNote-Schemaversion von der Zeichenfolge _PbstrHierarchyXmlOut_. Dieser optionale Wert wird verwendet, die Version des OneNote-XML-Schemas an, die _PbstrHierarchyXmlOut_ -Zeichenfolge enthält. Wenn dieser Wert nicht angegeben ist, wird OneNote wird vorausgesetzt, dass der XML-Code im Schema Version _XsCurrent_ist. <br/><br/>**Hinweis**: Es wird empfohlen Festlegen einer Version von OneNote (beispielsweise **xs2013**) anstelle von **XsCurrent** verwenden oder es leer lassen, da dadurch das Add-in zukünftige Versionen von OneNote entwickelt.           |
+|**Parameter**| _bstrStartNodeID_ &ndash; Der Knoten (Stamm, Notizbuch, Abschnittsgruppe oder Abschnitt), unter dem nach Inhalten gesucht werden soll. Dieser Parameter legt den Bereich für die Suche fest.<br/><br/>_bstrSearchStringName_ &ndash; Die Suchzeichenfolge. In einem beliebigen Teil des Namens der Metadaten übergeben. Wenn Sie eine leere Zeichenfolge oder einen Null-Wert übergeben, entsprechen alle Objekte, die Metadaten enthalten, der Abfrage.<br/><br/>_pbstrHierarchyXmlOut_ &ndash; (Ausgabeparameter) Ein Verweis auf die Zeichenfolge, in die OneNote die XML-Ausgabezeichenfolge schreiben soll. Die resultierende XML-Zeichenfolge enthält die Notizbuchhierarchie vom Stamm bis hinunter zu den und einschließlich aller Seiten, die der Suchzeichenfolge entsprechen. Die **FindPages**-Methode listet z. B. keine Abschnitte auf, die nicht über Seitenübereinstimmungen in der Hierarchie verfügen. Wenn nur eine Seite in einem einzigen Abschnitt mit der Zeichenfolge übereinstimmt, enthält die zurückgegebene Hierarchie den Pfad zu dem Abschnitt und der Seite, aber keine anderen Bestandteile der Hierarchie des Notizbuchs.  <br/><br/>_fIncludeUnindexedPages_ &ndash; (Optional) **true**, um Seiten zu suchen, die nicht von Windows Search indiziert wurden; andernfalls **false**.<br/><br/>_xsSchema_ &ndash; (Optional) Die OneNote-Schemaversion der Zeichenfolge _pbstrHierarchyXmlOut_. Dieser optionale Wert wird verwendet, um die Version des OneNote-XML-Schemas anzugeben, im dem sich die _pbstrHierarchyXmlOut_-Zeichenfolge befindet. Wenn dieser Wert nicht angegeben ist, setzt OneNote voraus, dass sich die XML in der Schemaversion _xsCurrent_ befindet. <br/><br/>**HINWEIS**: Wir empfehlen Ihnen, eine Version von OneNote anzugeben (z. B. **xs2013**), statt **xsCurrent** zu verwenden oder es leer zu lassen, da das Add-In so mit zukünftigen Versionen von OneNote arbeiten kann.           |
    
-**FindMeta** funktioniert nur, wenn Sie Microsoft Windows Search 3.0 oder 4.0 auf Ihrem Computer installiert haben. Windows Vista und Windows 7 enthalten diese Komponente. Wenn Sie eine frühere Version von Windows ausgeführt werden, müssen Sie [Windows Search](https://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx) für **FindMeta** zu installieren. 
+**FindMeta** funktioniert nur, wenn Sie Microsoft Windows Search 3.0 oder 4.0 auf Ihrem Computer installiert haben. Windows Vista und Windows 7 enthalten diese Komponente. Wenn Sie eine frühere Version von Windows ausführen, müssen Sie [Windows Search](https://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx) installieren, damit **FindMeta** funktioniert. 
   
 ## <a name="functional-methods"></a>Funktionale Methoden
 <a name="ON14DevRef_Application_Functional"> </a>
 
-In diesem Abschnitt beschriebenen Methoden können Sie bestimmte Aktionen ausführen, oder legen Sie die Parameter in der OneNote-Anwendung.
+Mit den in diesem Abschnitt beschriebenen Methoden können Sie bestimmte Aktionen ausführen oder Parameter innerhalb der OneNote-Anwendung festlegen.
   
 ### <a name="mergefiles-method"></a>MergeFiles-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Ermöglicht Benutzern das Zusammenführen von Änderungen für dieselbe Datei zu einem Dokument. Damit die Dateien auf die gleiche berücksichtigt werden müssen sie die gleiche OneNote-ID aufweisen.  <br/> |
+|**Beschreibung** <br/> |Ermöglicht es Benutzern, Änderungen an derselben Datei in einer Datei zusammenführen. Damit die Dateien als gleich angesehen werden, müssen Sie die gleiche OneNote-ID besitzen.  <br/> |
 |**Syntax** <br/> | `HRESULT MergeFiles (`<br/>`[in]BSTR bstrBaseFile,`<br/>`[in]BSTR bstrClientFile,`<br/>`[in]BSTR bstrServerFile,`<br/>`[in]BSTR bstrTargetFile);` <br/> |
-|**Parameter** <br/> | _bstrBaseFile_ &ndash; Die Pfadzeichenfolge auf den Speicherort der One von der Anfangszustand der Datei.  <br/><br/>_bstrClientFile_ &ndash; Die Pfadzeichenfolge auf den Speicherort der One des zweiten Satzes von Änderungen an der zugrunde liegenden Datei nach dem Ändern der Server mit der Basis zusammengeführt werden verbunden werden soll.  <br/><br/>_bstrServerFile_ &ndash; Die Pfadzeichenfolge auf den Speicherort der One der ersten Reihe von Änderungen an der Basisdatei verbunden werden soll.  <br/><br/>_bstrTargetFile_ &ndash; Die Pfadzeichenfolge auf den Speicherort der Datei mit den verbundenen Änderungen One.  <br/> |
+|**Parameter** <br/> | _bstrBaseFile_ &ndash; Die Zeichenfolge für den Pfad zum Speicherort der ONE-Datei für den ursprünglichen Zustand der Datei.  <br/><br/>_bstrClientFile_ &ndash; Die Zeichenfolge für den Pfad zum Speicherort für die zweite Gruppe von Änderungen, die mit der Basisdatei zusammengeführt werden, nachdem die Änderungen der Serverdatei mit der Basis zusammengeführt wurden.  <br/><br/>_bstrServerFile_ &ndash; Die Zeichenfolge für den Pfad zum Speicherort für die ONE-Datei der ersten Gruppe von Änderungen, die mit der Basisdatei zusammengeführt werden.  <br/><br/>_bstrTargetFile_ &ndash; Die Zeichenfolge für den Pfad zum Speicherort der ONE-Datei mit den zusammengeführten Änderungen.  <br/> |
    
-Die **MergeFiles** -Methode wurde für mobile Szenarien für die direkte Verwendung in der mehrere Versionen einer OneNote-Datei vorhanden sein können. 
+Die **MergeFiles**-Methode wurde für mobile Szenarien entwickelt, bei denen mehrere Versionen einer OneNote-Datei vorhanden sein können. 
   
 ### <a name="mergesections-method"></a>MergeSections-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Führt den Inhalt von einem Bereich in ein anderes in OneNote zusammen.  <br/> |
+|**Beschreibung** <br/> |Führt die Inhalte von einem Abschnitt mit einem anderen Abschnitt in OneNote zusammen.  <br/> |
 |**Syntax** <br/> | `HRESULT MergeSections (`<br/>`[in]BSTR bstrSectionSourceId,`<br/>`[in]BSTR bstrSectionDestinationId);` <br/> |
-|**Parameter** <br/> | _bstrSectionSourceId_ &ndash; Die OneNote-ID des Abschnitts zusammengeführt werden sollen.  <br/><br/>_bstrSectionDestinationId_ &ndash; Die OneNote-ID des Abschnitts zusammengeführt werden sollen. In diesem Zielabschnitt wird im Abschnitt Quelle zusammengeführt werden.  <br/> |
+|**Parameter** <br/> | _bstrSectionSourceId_ &ndash; Die OneNote-ID des Bereichs, der eingefügt werden soll.  <br/><br/>_bstrSectionDestinationId_ &ndash; Die OneNote-ID des Bereichs, in dem die Zusammenführung stattfinden soll. Der Quellabschnitt wird in diesen Zielabschnitt integriert.  <br/> |
    
-Diese Methode führt die gleiche Operation wie das **Zusammenführen in einen anderen Abschnitt** -Feature, das angezeigt wird, wenn Sie einen Abschnitt mit der rechten Maustaste. 
+Diese Methode führt denselben Vorgang wie das Feature **In einen anderen Abschnitt einfügen** aus, das angezeigt wird, wenn Sie mit der rechten Maustaste auf einen Abschnitt klicken. 
   
 ### <a name="quickfiling-method"></a>QuickFiling-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Gibt eine Instanz des Dialogfelds [IQuickFilingDialog](quick-filing-dialog-box-interfaces-onenote.md#odc_IQuickFilingDialog) , die verwendet werden kann, um eine Position innerhalb der OneNote-Hierarchie auszuwählen.  <br/> |
+|**Beschreibung** <br/> |Gibt eine Instanz des [IQuickFilingDialog](quick-filing-dialog-box-interfaces-onenote.md#odc_IQuickFilingDialog)-Dialogfelds zurück, die verwendet werden kann, um einen Speicherort in der OneNote-Hierarchiestruktur auszuwählen.  <br/> |
 |**Syntax** <br/> | `HRESULT QuickFiling (`<br/>` );` <br/> |
    
 ### <a name="synchierarchy-method"></a>SyncHierarchy-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Erzwingt OneNote das angegebene Objekt mit der Quelldatei auf dem Datenträger zu synchronisieren.  <br/> |
+|**Beschreibung** <br/> |Zwingt OneNote, das angegebene Objekt mit der Quelldatei auf dem Datenträger zu synchronisieren.  <br/> |
 |**Syntax** <br/> | `HRESULT SyncHierarchy (`<br/>`[in]BSTR bstrHierarchyID);` <br/> |
-|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID des Objekts synchronisiert werden.  <br/> |
+|**Parameter** <br/> | _bstrHierarchyID_ &ndash; Die OneNote-ID des Objekts, das synchronisiert werden soll.  <br/> |
    
 ### <a name="setfilinglocation-method"></a>SetFilingLocation-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Ermöglicht Benutzern, um anzugeben, wo und wie bestimmte Arten von Inhalten in OneNote eingereicht werden sollte.  <br/> |
+|**Beschreibung** <br/> |Ermöglicht es Benutzern, anzugeben, wo und wie bestimmte Arten von Inhalten in OneNote abgelegt werden sollen.  <br/> |
 |**Syntax** <br/> | `HRESULT SetFilingLocation (`<br/>`[in]FilingLocation flToSet,`<br/>`[in]FilingLocationType fltToSet,`<br/>`[in]BSTR bstrFilingSectionID);`           <br/> |
-|**Parameter** <br/> | _flToSet_ &ndash; Der Objekttyp des Speicherorts für schnelle Ablage festgelegt.  <br/><br/>_fltToSet_ &ndash; Der Speicherort, an dem Sie den Typ der Datei.  <br/><br/>_bstrFilingSectionID_ &ndash; Die OneNote-ID des Abschnitts oder Seite, an welcher Stelle Sie festlegen möchten. Wenn dies nicht anwendbar ist, kann der Benutzer in Null oder eine leere Zeichenfolge übergeben.  <br/> |
+|**Parameter** <br/> | _flToSet_ &ndash; Der Objekttyp des anzugebenden Ablageorts.  <br/><br/>_fltToSet_ &ndash; Der Speicherort, an dem der Typ abgelegt wird.  <br/><br/>_bstrFilingSectionID_ &ndash; Die OneNote-ID des Abschnitts oder der Seite für den/die ein Speicherort festgelegt werden soll. Wenn dies nicht zutrifft, kann der Benutzer einen Null-Wert oder eine leere Zeichenfolge übergeben.  <br/> |
    
-Die Arten von Inhalten, die archiviert werden kann, zählen Outlook-Elemente und Webnotizen von Internet Explorer, die über den Befehl **Senden an OneNote** in jeder Anwendung in OneNote importiert werden. Der Speicherort ablegen von Elementen, die in OneNote gedruckt werden, kann auch mit dieser Methode festgelegt werden. 
+Die Arten von Inhalten, die abgelegt werden können, umfassen Outlook-Elemente und Webnotizen von Internet Explorer, die in OneNote über den Befehl **An OneNote senden** importiert werden. Der Ablageort von Elementen, die in OneNote gedruckt werden, kann ebenfalls mit dieser Methode festgelegt werden. 
   
 ## <a name="properties"></a>Eigenschaften
 <a name="ON14DevRef_Application_Properties"> </a>
 
-In diesem Abschnitt werden die Eigenschaften der **Application** -Schnittstelle beschrieben. 
+In diesem Abschnitt werden die Eigenschaften der **Application**-Oberfläche beschrieben. 
   
 |**Eigenschaft**|**Beschreibung**|
 |:-----|:-----|
-|**Windows** <br/> |Ermöglicht Benutzern den Zugriff auf die geöffnete OneNote-Fenster. Diese Eigenschaft ermöglicht Benutzern bestimmte Fenstereigenschaften zu durchlaufen, die Gruppe von OneNote-Fenster. Weitere Informationen finden Sie unter [Windows-Schnittstellen](window-interfaces-onenote.md).  <br/> |
-|**COMAddIns** <br/> |Gibt die **COMAddIns** -Auflistung für OneNote. Diese Auflistung enthält alle COM-add-Ins, die an OneNote verfügbar sind. Die **Count** -Eigenschaft der **COMAddins** -Auflistung gibt die Anzahl der verfügbaren COM-add-ins zurück. Weitere Informationen finden Sie unter der [COMAddIns](https://msdn.microsoft.com/library/office/ff865489.aspx) -Objekt.  <br/> |
-|**LanguageSettings** <br/> |Können Sie einige APIs, um die common Language-Einstellungen von OneNote ändern zugreifen.  <br/> |
+|**Windows** <br/> |Bietet Benutzern Zugriff auf geöffnete OneNote-Fenster. Diese Eigenschaft ermöglicht es Benutzern, die OneNote-Fenster aufzulisten und bestimmte Fenstereigenschaften zu ändern. Weitere Informationen finden Sie unter [Windows-Schnittstellen](window-interfaces-onenote.md).  <br/> |
+|**COMAddIns** <br/> |Gibt die **COMAddIns**-Sammlung für OneNote zurück. Diese Sammlung enthält alle COM-Add-Ins, die für OneNote verfügbar sind. Die **Count**-Eigenschaft der **COMAddins**-Sammlung gibt die Anzahl der verfügbaren COM-Add-Ins zurück. Weitere Informationen finden Sie unter [COMAddIns](https://msdn.microsoft.com/library/office/ff865489.aspx)-Objekt.  <br/> |
+|**LanguageSettings** <br/> |Ermöglicht den Zugriff auf einige APIs, um die gängigen Spracheinstellungen von OneNote zu ändern.  <br/> |
    
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
 <a name="ON14DevRef_Application_Events"> </a>
 
-In diesem Abschnitt werden die Ereignisse der Application-Schnittstelle beschrieben.
+In diesem Abschnitt werden die Ereignisse der Anwendungsoberfläche beschrieben.
   
 > [!CAUTION]
-> Ereignisse können derzeit in verwaltetem Code hinzugefügt werden. 
+> Ereignisse können derzeit nicht zu verwaltetem Code hinzugefügt werden. 
   
 ### <a name="onnavigate-event"></a>OnNavigate-Ereignis
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Ermöglicht einem Benutzer zuweisen eine Funktion aufgerufen werden, wenn die OneNote UI Weg von der aktuellen Position OneNote navigiert wird.  <br/> |
+|**Beschreibung** <br/> |Ermöglicht es einem Benutzer, eine Funktion zuzuweisen, die aufgerufen wird, wenn die OneNote-Oberfläche von der aktuellen OneNote-Position navigiert wird.  <br/> |
 |**Syntax** <br/> | `Event OnNavigate (`<br/>` );` <br/> |
    
 ### <a name="onhierarchychange-method"></a>OnHierarchyChange-Methode
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Ermöglicht einem Benutzer das Zuweisen einer Funktion aufgerufen werden jedes Mal, wenn die Änderungen der OneNote-Hierarchie (beispielsweise das Hinzufügen oder Löschen von Seiten oder Abschnitte verschieben). Hierarchie Änderungen gestapelter werden werden, wenn mehrere Änderungen fast gleichzeitig oder auftreten, OneNote das Ereignis einmal auslöst.  <br/> |
+|**Beschreibung** <br/> |Ermöglicht es einem Benutzer, eine Funktion zuzuweisen, die immer dann aufgerufen wird, wenn die OneNote-Hierarchie sich ändert (z. B. Hinzufügen oder Löschen von Seiten oder Verschieben von Abschnitten). Hierarchie-Änderungen werden gestapelt, wenn also mehrere Änderungen zur gleichen Zeit oder etwa zur gleichen Zeit eintreten, löst OneNote das Ereignis einmal aus.  <br/> |
 |**Syntax** <br/> | `Event OnHierarchyChange (`<br/>` BSTR bstrActivePageID);` <br/> |
 |**Parameter** <br/> | _bstrActivePageID_ &ndash; Übergibt die OneNote-ID der aktiven Seite.  <br/> |
    

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ed3bc585-13f6-46a5-9e71-9c8513ddfc0a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ecd795490d953f1aa237dfbd77585ba79c8b3234
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357932"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429250"
 ---
 # <a name="pidtagcontactaddressbookmultipleaddressflags-canonical-property"></a>Kanonische Pidtagcontactaddressbookmultipleaddressflags (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält Flags, die angeben, ob die Anbieter mehrere e-Mail-Adressen pro Kontakt
 
 Wenn die Flags in dieser Eigenschaft auf TRUE festgelegt sind, enthält der Anbieter keine Kontakte ohne e-Mail-Adressen. Es wird nur die primäre e-Mail-Adresse geehrt. Dies ist eine Eigenschaft in einem Profil Abschnitt des Kontakt Adressbuchs.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

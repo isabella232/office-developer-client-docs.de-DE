@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ef62f63f-b2ce-4d12-a294-93dbdc9a869d
 description: Gibt einen RGB-Wert oder eine ganze Zahl zurück, die einen Index in der Farbpalette des Dokuments darstellt, wobei die Farbe (Zahl), die als Argument übergeben wurde, durch den angegebenen Farbton oder Farbton geändert wurde, der in den Farbverlaufseinstellungen des aktiven Designs gespeichert ist.
 ms.openlocfilehash: 014dc04c5114e296cd2226f3cf04dfb729817578
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332263"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429138"
 ---
 # <a name="themecbv-function"></a>THEMECBV Function
 
