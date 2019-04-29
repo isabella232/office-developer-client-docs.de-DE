@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 179ba0c4-da24-430e-a212-0af40a604198
 description: Hier finden Sie Informationen zum teleMetrie-Protokoll, das in Office 2013 enthalten ist.
 ms.openlocfilehash: bc408d0c42369b2132906d1df43ab64772a49489
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346277"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417455"
 ---
 # <a name="office-telemetry-log"></a>Office-Telemetrieprotokoll
 

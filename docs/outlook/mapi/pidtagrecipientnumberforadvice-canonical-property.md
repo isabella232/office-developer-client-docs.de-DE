@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 636c1e75-3024-43ca-a7dd-1bb480dfbb5b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 79ef85955f15e0ca829ac6f206dddc17031b0562
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356693"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420640"
 ---
 # <a name="pidtagrecipientnumberforadvice-canonical-property"></a>Kanonische Pidtagrecipientnumberforadvice (-Eigenschaft
 
@@ -38,7 +38,7 @@ Diese Eigenschaft enthält die Telefonnummer eines Nachrichtenempfängers, die f
 
 Diese Eigenschaften sind für die Verwendung in Verbindung mit der Übertragung an ein physisches Ziel gedacht, statt für ein elektronisches Postfach, wenn der menschliche Empfänger nicht bei der Lieferung anwesend sein soll. Ein Beispiel ist die Telefonnummer auf einem Faxdeckblatt.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

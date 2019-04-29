@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: de2aca1d-a591-cf39-990c-a24666764a6f
 description: Gibt den hyperbolischen Sinus eines Winkels zurück.
 ms.openlocfilehash: 305dd9e62a32db3a91724cd182964012e482442e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314805"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416153"
 ---
 # <a name="sinh-function"></a>SINHYP-Funktion
 
@@ -28,7 +28,7 @@ SINH (* * *Winkel* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen Hyperbolischer Sinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Hyperbolischer Sinus abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

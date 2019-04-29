@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7a0ccad3-f497-4871-b733-771e6cb8ef6a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 74eae4a4ed742c3bb90496f5975ad7dac6ff798f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360837"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419254"
 ---
 # <a name="pidtagdetailstable-canonical-property"></a>Kanonische Pidtagdetailstable (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält ein eingebettetes Anzeige Table-Objekt.
 
 Wenn Sie diese Eigenschaft an die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode für das Objekt übergeben, wird eine [IMAPITable](imapitableiunknown.md) -Schnittstelle zurückgegeben, die die Erstellung der Anzeigetabelle ermöglicht. MAPI verwendet diese Tabelle, um Eigenschaftenblätter für ein Adressbuchobjekt als Reaktion auf einen [IAddrBook::D ails](iaddrbook-details.md) -Aufruf anzuzeigen. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

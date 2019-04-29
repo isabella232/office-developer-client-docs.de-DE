@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c36fc895-5577-59f6-0ff5-5892ca81a58f
 description: Gibt die Formatierung eines Shape-Datenelements an, bei dem es sich um eine Zeichenfolge, eine feste Liste, eine Zahl, eine variable Liste, ein Datum oder eine Uhrzeit, eine Zeitdauer oder eine Währung handeln kann.
 ms.openlocfilehash: bb02cfefd6dc93798ca5e2b0c657e4616515fd0e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346025"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415362"
 ---
 # <a name="format-cell-shape-data-section"></a>Zelle "Format" (Abschnitt "Shape Data")
 
@@ -24,7 +24,7 @@ Gibt die Formatierung eines Shape-Datenelements an, bei dem es sich um eine Zeic
 
 |**Shape-Datenelementtyp**|**Wert**|**Inhalt der Zelle "Format"**|
 |:-----|:-----|:-----|
-| Zeichenfolge  <br/> | 0  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
+| String  <br/> | 0  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
 | Feste Liste  <br/> | 1  <br/> | Die Elemente, die durch Semikolon getrennt in der Liste angezeigt werden sollen.  <br/> |
 | Zahl  <br/> | 2  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
 | Variable Liste  <br/> | 4  <br/> | Die Elemente, die durch Semikolon getrennt in der Liste angezeigt werden sollen.  <br/> |

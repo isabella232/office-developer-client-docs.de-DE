@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3b9b3dc0-4f82-468b-8e77-0374c5b196f4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7439de5b91cefe89eba2f9395595d4a7c8ca3ec5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327510"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419128"
 ---
 # <a name="form-configuration-file-platforms-section"></a>Abschnitt "Formular Konfigurationsdatei [Plattformen]"
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 87ea5e8f-c3e0-009f-4bf8-8c34fbdb83a6
 description: Ruft den Text aus einer Form ab.
 ms.openlocfilehash: bb9b1fbe5900cd051828ed6c7ff07546567c1b23
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349112"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419345"
 ---
 # <a name="shapetext-function"></a>SHAPETEXT Function
 
@@ -29,7 +29,7 @@ SHAPETEXT (* * *Shapename! DerText* * * * * *[, Flag]* * *)
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Shapename! DerText_ <br/> |Erforderlich  <br/> ||Ein Verweis auf die Zelle mit dem Namen DerText im Ziel-Shape.  _Shapename!_ ist der Name der Form, aus der Sie den Text abrufen möchten.  <br/> |
-| _Flag_ <br/> |Optional  <br/> |**Numerisch** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
+| _Flag_ <br/> |Optional  <br/> |**Numeric** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
@@ -46,7 +46,7 @@ Sie können eine beliebige Kombination folgender Flags mit der Funktion SHAPETEX
 |2  <br/> |Keinen erweiterten Text in Feldern einschließen.  <br/> |
 |4  <br/> |Tabulatorzeichen in ein einzelnes Leerzeichen konvertieren.  <br/> |
 |8  <br/> |Tabulatorzeichen in mehrere Leerzeichen konvertieren.  <br/> |
-|16  <br/> |Zeilenschaltungen und Zeilenumbrüche in Leerzeichen konvertieren.  <br/> |
+|16   <br/> |Zeilenschaltungen und Zeilenumbrüche in Leerzeichen konvertieren.  <br/> |
 |32  <br/> |Typografische Anführungszeichen in normale Anführungszeichen konvertieren.  <br/> |
 |64  <br/> |Benachbarte Leerzeichen in ein einzelnes Leerzeichen konvertieren.  <br/> |
    

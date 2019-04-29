@@ -8,13 +8,13 @@ keywords:
 - Ausdrucksauswertung [Excel 2007], Arbeitsblätter [Excel 2007], Namensauswertung, Auswerten von Ausdrücken [Excel 2007], Auswerten von Arbeitsblattnamen [Excel 2007], Ausdrücke [Excel 2007], auswerten, Namen [Excel 2007], auswerten, Namensauswertung [Excel 2007] , Zeichenfolgen [Excel 2007], konvertieren in Werte, xlfEvaluate-Funktion [Excel 2007], Arbeitsblätter [Excel 2007], Ausdrucksauswertung
 localization_priority: Normal
 ms.assetid: 2b23c75e-2a95-4f26-8714-2a73f5e326a7
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 97328cbc57a9144a133524774e3be10a84a96bf4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311116"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406864"
 ---
 # <a name="evaluating-names-and-other-worksheet-formula-expressions"></a>Auswerten von Namen und anderen Arbeitsblatt-Formelausdrücken
 
@@ -88,6 +88,6 @@ Sie können auch die **XLFEVALUATE** -Funktion verwenden, um die Registrierungs-
 ## <a name="see-also"></a>Siehe auch
 
 - [Excel-Arbeitsblatt- und Ausdrucksauswertung](excel-worksheet-and-expression-evaluation.md)
-- [Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorg�nge](permitting-user-breaks-in-lengthy-operations.md)
+- [Zulassen von Benutzerunterbrechungen bei langwierigen Vorgängen](permitting-user-breaks-in-lengthy-operations.md)
 - [Erste Schritte mit dem Excel XLL SDK](getting-started-with-the-excel-xll-sdk.md)
 

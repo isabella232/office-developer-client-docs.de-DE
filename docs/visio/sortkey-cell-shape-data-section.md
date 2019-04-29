@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 67fa5389-f0b9-a9db-8d19-9b16e256dfa3
 description: Enthält eine Zeichenfolge, die die Reihenfolge beeinflusst, in der Elemente im Fenster Shape-Daten aufgelistet werden.
 ms.openlocfilehash: d166ea18a36f6a4101b8933fce804be2243954bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335182"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417854"
 ---
 # <a name="sortkey-cell-shape-data-section"></a>Zelle "SortKey" (Abschnitt "Shape Data")
 
@@ -28,7 +28,7 @@ Nachfolgend finden Sie ein Beispiel für die Verwendung von Sortierschlüsseln, 
   
  *Zeile, Beschriftung* und *SortKey* verweisen auf Zellen in der Shape-Datenzeile. In diesem Fall wurden diese Zeilen mit Shape-Daten mit einer Bezeichnung versehen. 
   
-|**Zeile**|**Label**|**SortKey**|
+|**Row**|**Label**|**SortKey**|
 |:-----|:-----|:-----|
 | Prop. Item  <br/> | Artikelnummer  <br/> | 1  <br/> |
 | Prop. Price  <br/> | Kurs  <br/> | 3  <br/> |

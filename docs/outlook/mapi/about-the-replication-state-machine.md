@@ -5,13 +5,13 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a0644e4bf5c6847d61cc59e203d50f61ad142e84
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329750"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416482"
 ---
 # <a name="about-the-replication-state-machine"></a>Informationen über den Replikationszustandsautomaten
 
@@ -48,7 +48,7 @@ Ein Client ruft **[IOSTX:: SyncBeg](iostx-syncbeg.md)**, **[IOSTX:: SyncEnd](ios
 |:-----|:-----|:-----|:-----|
 |**State** <br/> |**Replizierte Daten** <br/> |**Status-ID** <br/> |**Datenstruktur** <br/> |
 |[Zustand „Leerlauf“](idle-state.md) <br/> | *None*  <br/> |**LR_SYNC_IDLE** <br/> | *None*  <br/> |
-|[Zustand „Synchronisieren“](synchronize-state.md) <br/> |Ordner oder Elemente  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
+|[Zustand „Synchronisieren“](synchronize-state.md) <br/> |Ordner oder Elemente  <br/> |**LR_SYNC** <br/> |**[SYNCHRONISIERUNGS](sync.md)** <br/> |
 |[Hierarchie Status hochladen](upload-hierarchy-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
 |[Ordner Status hochladen](upload-folder-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
 |[Synchronisieren des Inhaltsstatus](synchronize-contents-state.md) <br/> |Elemente  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |

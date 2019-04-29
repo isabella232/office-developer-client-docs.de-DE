@@ -9,11 +9,11 @@ api_type:
 ms.assetid: f06a1034-ee49-4a09-831e-9752713228a8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 202d4b4391de7553e39e50dc527df5502ebcefb3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331269"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406465"
 ---
 # <a name="acting-as-a-host-address-book-provider"></a>Fungieren als Host-Adressbuchanbieter
 

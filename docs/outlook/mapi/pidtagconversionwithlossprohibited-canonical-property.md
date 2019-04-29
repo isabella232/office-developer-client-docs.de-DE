@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a18b560a-e054-45b3-946d-6504465db5b7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 972df747e0ee459996b9b4da5732be1490fbd08a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334664"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417126"
 ---
 # <a name="pidtagconversionwithlossprohibited-canonical-property"></a>Kanonische Pidtagconversionwithlossprohibited (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält TRUE, wenn ein MTA (Message Transfer Agent) keine Nachrichtentext Konve
 
 Ein Beispiel für die Art der Konvertierung, die verboten wird, ist die "verlustbehaftete" Zuordnung von Unicode (zwei Bytes pro Zeichen) zu einem Single-Byte-Zeichensatz. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

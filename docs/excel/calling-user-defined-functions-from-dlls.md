@@ -8,13 +8,13 @@ keywords:
 - UDFs [Excel 2007], Aufrufen von DLLs, benutzerdefinierten Funktionen [Excel 2007], Aufrufen von DLLs, DLLs [Excel 2007], Aufrufen von UDFs
 localization_priority: Normal
 ms.assetid: 99a37108-0083-4240-9c6a-3afa8d7a04f6
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 9e2ca3f4485fb41c5ab6a48f323b4c0093e747e4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301645"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417945"
 ---
 # <a name="calling-user-defined-functions-from-dlls"></a>Aufrufen von benutzerdefinierten Funktionen aus DLLs
 
@@ -115,7 +115,7 @@ Wenn Sie eine hohe Anzahl von Aufrufen an eine UDF auf diese Weise durchführen,
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorg�nge](permitting-user-breaks-in-lengthy-operations.md)
-- [C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [Zulassen von Benutzerunterbrechungen bei langwierigen Vorgängen](permitting-user-breaks-in-lengthy-operations.md)
+- [C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 - [Erste Schritte mit dem Excel XLL SDK](getting-started-with-the-excel-xll-sdk.md)
 

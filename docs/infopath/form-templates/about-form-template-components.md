@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: b51361fe-cf29-f890-9876-5aebe15c73e1
 description: Microsoft InfoPath-Formularvorlagen bestehen aus mehreren Dateien und Komponenten, die kombiniert werden, um bestimmte Funktionen für ein bestimmtes Endbenutzerszenario oder geschäftliche Anforderungen bereitzustellen. Die Komplexität von InfoPath-Formularen hängt von den jeweiligen Anforderungen ab.
 ms.openlocfilehash: 3c5adc7ec1e24af481dff7f4a8d009b2dcb6ba8a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303794"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419058"
 ---
 # <a name="about-form-template-components"></a>Informationen zu Formularvorlagenkomponenten
 
@@ -25,7 +25,7 @@ Sie sollten unbedingt beachten, dass InfoPath-Formularvorlagen aus mehreren Date
 |:-----|:-----|:-----|
 |Formulardefinition  <br/> |XSF  <br/> |Eine von InfoPath generierte Datei, die Informationen zu allen anderen in einem Formular verwendeten Dateien und Komponenten enthält. Diese Datei dient als Manifest für das Formular.  <br/> |
 |XML-Schema  <br/> |. xsd  <br/> |Die XML-Schemadateien, mit denen die zugrunde liegenden Dokumentdateien eines Formulars eingeschränkt und überprüft werden.  <br/> |
-|Ansicht  <br/> |. Xsl  <br/> |Die Präsentationslogikdateien, mit denen die in den zugrunde liegenden XML-Dokumentdateien eines Formulars enthaltenen Daten präsentiert, angezeigt und transformiert werden.  <br/> |
+|Anzeigen  <br/> |. Xsl  <br/> |Die Präsentationslogikdateien, mit denen die in den zugrunde liegenden XML-Dokumentdateien eines Formulars enthaltenen Daten präsentiert, angezeigt und transformiert werden.  <br/> |
 |XML-Vorlage  <br/> |. XML  <br/> |Die XML-Datei mit den Standarddaten, die in einer Ansicht beim Erstellen eines neuen Formulars angezeigt werden.  <br/> |
 |Präsentation  <br/> |HTM, GIF, BMP usw.  <br/> |Die Dateien, die zusammen mit den Ansichtsdateien zum Erstellen einer benutzerdefinierten Benutzeroberfläche verwendet werden.  <br/> |
 |Geschäftslogik  <br/> |. dll  <br/> |Der kompilierte Programmiercode, mit dem ein bestimmtes Bearbeitungsverhalten, die Datenüberprüfung, Ereignishandler, die Kontrolle des Datenflusses und weitere benutzerdefinierte Geschäftslogik implementiert werden. InfoPath-Geschäftslogik kann in den Programmiersprachen Visual Basic und C# .NET geschrieben werden, die als Binärdateien kompiliert und eingeschlossen werden.  <br/> |

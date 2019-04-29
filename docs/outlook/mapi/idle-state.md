@@ -5,13 +5,13 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 46976bea-c6bb-2e37-2e67-4cbccaa03aec
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3db4ead7e2485bbbae82f2a07659c934b394d6d5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351184"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419478"
 ---
 # <a name="idle-state"></a>Leerlaufstatus
 
@@ -27,7 +27,7 @@ ms.locfileid: "32351184"
 |:-----|:-----|
 |Status-ID:  <br/> |**LR_SYNC_IDLE** <br/> |
 |Zugehörige Datenstruktur:  <br/> | *None*  <br/> |
-|Aus folgendem Zustand:  <br/> | *Nicht zutreffend*  <br/> |
+|Aus folgendem Zustand:  <br/> | *Nicht anwendbar*  <br/> |
 |Zu folgendem Status:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
    
 > [!NOTE]

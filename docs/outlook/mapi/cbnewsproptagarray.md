@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: cd15d220-1f3d-440d-8699-0c934518b4a7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ce087516dde110a22c129ae73259cc95e456e765
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317948"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417777"
 ---
 # <a name="cbnewsproptagarray"></a>CbNewSPropTagArray
 

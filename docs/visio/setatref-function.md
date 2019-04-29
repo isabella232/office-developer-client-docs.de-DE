@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1ecfdb05-2533-470a-006b-e554026944d8
 description: Leitet aktualisierte Werte aus Aktionen auf der Benutzeroberfläche oder Automatisierung in eine andere Zelle um.
 ms.openlocfilehash: c4f5fe94aba90ce0a69983d6637a5399b6e42707
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326019"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416804"
 ---
 # <a name="setatref-function"></a>SETATREF Function
 
@@ -30,7 +30,7 @@ SETATREF (* * *Reference* * * [, * * *set_expression* * * [, * * *ignore_eval* *
 |:-----|:-----|:-----|:-----|
 | _reference_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf die Zelle, in die Aktualisierungen umgeleitet werden.  <br/> |
 | _set_expression_ <br/> |Optional  <br/> |**String** <br/> |Ein Ausdruck, der _Reference_zugeordnet ist.  <br/> |
-| _ignore_eval_ <br/> |Optional  <br/> |**Boolean** <br/> |Wenn der Wert TRUE ist, wird die SETATREF-Funktion zu (0) NULL ausgewertet. Wenn FALSE (Standardeinstellung), wird die SETATREF-Funktion als Wert von _Reference_ausgewertet.  <br/> |
+| _ignore_eval_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |Wenn der Wert TRUE ist, wird die SETATREF-Funktion zu (0) NULL ausgewertet. Wenn FALSE (Standardeinstellung), wird die SETATREF-Funktion als Wert von _Reference_ausgewertet.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

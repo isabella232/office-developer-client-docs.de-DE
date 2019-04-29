@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: df4be986-62a8-49d6-8eca-25b55c74f830
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3753177552d45e32e53ae192a9dfae15b601afcc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359472"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417042"
 ---
 # <a name="pidtagservicesupportfiles-canonical-property"></a>Kanonische Pidtagservicesupportfiles (-Eigenschaft
 
@@ -40,7 +40,7 @@ Mithilfe eines Dialogfelds in der Systemsteuerung können Benutzer die Liste der
   
 MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die an den Zeichensatz der Active Directory-Dienstschnittstellen (ANSI) übergeben werden. Client Anwendungen, die Dateinamen in einem OEM-Zeichensatz (Original Equipment Manufacturer) verwenden, müssen Sie vor dem Aufrufen von MAPI in ANSI konvertieren.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

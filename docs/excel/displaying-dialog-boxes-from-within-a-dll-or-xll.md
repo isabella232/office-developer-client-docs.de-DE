@@ -8,13 +8,13 @@ keywords:
 - XLLs [Excel 2007], Anzeigen von Dialogfeldern aus, Dialogfeldern [Excel 2007], anzeigen aus einer DLL oder XLL, DLLs [Excel 2007], Anzeigen von Dialogfeldern aus
 localization_priority: Normal
 ms.assetid: e77ac555-331d-41c8-a000-7b178959754d
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7b00430b047fe792afef701d210ccde06dd16216
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310936"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417868"
 ---
 # <a name="displaying-dialog-boxes-from-within-a-dll-or-xll"></a>Anzeigen von Dialog Feldern aus einer DLL oder XLL
 
@@ -36,5 +36,5 @@ Sie können Dialogfelder auch mithilfe der C-API anzeigen, ohne Windows SDK-Funk
   
 [Zugreifen auf Excel-Instanz- und Hauptfensterhandles](how-to-access-excel-instance-and-main-window-handles.md)
   
-[C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

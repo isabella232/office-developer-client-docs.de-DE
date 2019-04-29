@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 27042b62-7623-95d7-7e10-f589d74605c7
 description: Der y-Offset der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch die Zellen X und Y definiert ist.
 ms.openlocfilehash: d7a1f5c1feda3624c9f96039e7247c737a91a813
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357015"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419982"
 ---
 # <a name="y-justify-cell-action-tags-section"></a>Zelle "Y Justify" (Abschnitt "Action Tags")
 

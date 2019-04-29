@@ -10,13 +10,13 @@ keywords:
 - xlfregisterid-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: d34cf20c-a5cd-45fb-9dcb-d49eac2d99dd
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 05119226d0b6190a2c4b30846c03a59b5c3cd1d8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303878"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420059"
 ---
 # <a name="xlfregisterid"></a>xlfRegisterId
 
@@ -56,5 +56,5 @@ Wenn eine DLL-oder XLL-Funktion mit einem gültigen _pxFunctionText_ -Argument r
 
 - [Registrieren](xlfregister-form-1.md)
 - [Registrierung](xlfunregister-form-1.md)
-- [Wichtige und n�tzliche C-API XLM-Funktionen](essential-and-useful-c-api-xlm-functions.md)
+- [Wichtige und nützliche C-API-XLM-Funktionen](essential-and-useful-c-api-xlm-functions.md)
 

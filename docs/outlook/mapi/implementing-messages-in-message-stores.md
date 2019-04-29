@@ -9,11 +9,11 @@ api_type:
 ms.assetid: df5003d5-cbfe-40b2-a481-e2e11dce4b3e
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 223dfa2ac990875e98e876ab491bf09caf63e874
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310094"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416643"
 ---
 # <a name="implementing-messages-in-message-stores"></a>Implementieren von Nachrichten in Nachrichtenspeicher
 

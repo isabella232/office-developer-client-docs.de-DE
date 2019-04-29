@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 771a2ab4-578d-51c3-fabd-138f7952bb11
 description: Bestimmt die Papierzufuhr für die Seite.
 ms.openlocfilehash: eb6e7daccb1743c43a30b34598e47187496e4aac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301463"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406759"
 ---
 # <a name="papersource-cell-printproperties-section"></a>Zelle "PaperSource" (Abschnitt "Print Properties")
 

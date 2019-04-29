@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5a2bb1a7-e688-d32f-f231-ac6916d838a6
 description: Legt fest, ob jedes Mal, wenn Sie eine Zeichnung speichern, eine Vorschau gespeichert wird.
 ms.openlocfilehash: 91362d8a88cf6db2f4807c655a6d071ebbc731f5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348328"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418862"
 ---
 # <a name="lockpreview-cell-document-properties-section"></a>Zelle "LockPreview" (Abschnitt "Document Properties")
 

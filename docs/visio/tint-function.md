@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: c4f176d6-4af0-282d-5640-7d98e84dfb55
 description: Ändert die Farbe, indem die Helligkeit um die im Parameter int angegebene Menge (positiv oder negativ) erhöht wird.
 ms.openlocfilehash: 8924bc0662814e14d01b4bd5332f5fadeb0a1082
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280931"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406577"
 ---
 # <a name="tint-function"></a>TINT-Funktion
 
@@ -26,7 +26,7 @@ Farbton (* * *Farbe* * *, * * *int* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _color_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der Farbe.  <br/> |
+| _color_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der Farbe.  <br/> |
 | _int_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Der Wert, um den die Leuchtdichte der Farbe erhöht werden soll. Kann positiv oder negativ sein.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert

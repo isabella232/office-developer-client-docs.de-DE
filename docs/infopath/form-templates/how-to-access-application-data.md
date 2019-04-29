@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 2698d059-9955-4eec-85a6-79defb64e07e
 description: Das InfoPath-Objektmodell mit verwaltetem Code stellt Objekte und Auflistungen bereit, mit deren Hilfe der Zugriff auf Informationen zur InfoPath-Anwendung ermöglicht wird, einschließlich Informationen zu dem einem Formular zugrunde liegenden XML-Dokument und der Formulardefinitionsdatei (XSF). Auf diese Daten kann über das Objekt der obersten Ebene in der InfoPath-Objektmodellhierarchie zugegriffen werden, die mithilfe der Application-Klasse instanziiert wird.
 ms.openlocfilehash: 8da72313807584ee599d65701d009786dd631979
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300175"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417231"
 ---
 # <a name="access-application-data"></a>Zugreifen auf Anwendungsdaten
 

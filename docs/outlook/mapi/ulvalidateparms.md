@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02c66b46-1f01-43fb-832c-bac27aaae19f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e0cdcb92238dd4dffbcd6514e698e5511b05bf45
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360494"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419611"
 ---
 # <a name="ulvalidateparms"></a>UlValidateParms
 

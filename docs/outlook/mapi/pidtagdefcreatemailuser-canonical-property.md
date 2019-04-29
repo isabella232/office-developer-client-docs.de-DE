@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e8293dc9-f2f1-4065-89f4-e734a8db63df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: cd09c85e4f44bbea29807d72a273ccf6980ca6df
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32269986"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407480"
 ---
 # <a name="pidtagdefcreatemailuser-canonical-property"></a>Kanonische Pidtagdefcreatemailuser (-Eigenschaft
 
@@ -40,7 +40,7 @@ Client Anwendungen verwenden diese Eigenschaft, um ein Messaging-Benutzerobjekt 
   
 Diese Eigenschaft gibt einen Eintrag an, der in der **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft für Messagingbenutzer angezeigt werden kann. Nach dem Abrufen des Bezeichners verwendet der Client diesen bei einem Aufruf der [IABContainer:: CreateEntry](iabcontainer-createentry.md) -Methode. Der Eintrag stellt die Vorlage für den standardmäßigen Messagingbenutzer dar. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

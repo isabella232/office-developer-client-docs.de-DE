@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: c746aeb1-902c-440e-830b-5b9efad0ca04
 description: Die Verfahren in diesem Thema beschreiben das Erstellen einer Formularvorlage, die mit dem InfoPath 2003-kompatiblen Objektmodell kompatibel ist.
 ms.openlocfilehash: 35a9fcfbb0d93a19e013bde6980bc94af3bb5dd9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303640"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418183"
 ---
 # <a name="create-a-form-template-using-the-infopath-2003-object-model"></a>Erstellen einer Formularvorlage mit dem InfoPath-Objektmodell 2003
 

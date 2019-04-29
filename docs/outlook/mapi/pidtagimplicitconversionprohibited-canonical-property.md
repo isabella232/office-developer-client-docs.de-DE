@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c6cb5a86-0105-4743-9f8e-b832e898da52
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a0e18ef529b65317abd9446408ed73638c792809
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346606"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420668"
 ---
 # <a name="pidtagimplicitconversionprohibited-canonical-property"></a>Kanonische Pidtagimplicitconversionprohibited (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält TRUE, wenn für einen MTA (Message Transfer Agent) keine impliziten Nac
 
 Wenn diese Eigenschaft auf TRUE festgelegt ist, darf das Messagingsystem keine Inhaltskonvertierung für die Nachricht durchführen, es sei denn, Sie wird explizit pro Empfänger mit der **PR_EXPLICIT_CONVERSION** ([pidtagexplicitconversion (](pidtagexplicitconversion-canonical-property.md))-Eigenschaft angefordert.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 23329ca3-89f9-4e5a-9c8a-6262f2a2d26f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: cee99b93d41ac8cd4a3dee18cad6cd4ab01cabe3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335281"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418918"
 ---
 # <a name="pidtagacknowledgementmode-canonical-property"></a>Kanonische Pidtagacknowledgementmode (-Eigenschaft
 
@@ -43,7 +43,7 @@ Diese Eigenschaft kann genau einen der folgenden Werte haben:
 |0  <br/> |Manuelle Bestätigung.  <br/> |
 |1  <br/> |Automatische Bestätigung.  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

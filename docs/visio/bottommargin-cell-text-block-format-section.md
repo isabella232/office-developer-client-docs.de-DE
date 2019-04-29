@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3121911b-34d5-d99c-3806-76f6e2824f92
 description: Bestimmt den Abstand zwischen dem unteren Rand des Textblocks und der letzten darin enthaltenen Textzeile. Standardmäßig sind 2,54 mm festgelegt. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Größe der Zeichnung verändert wird, bleibt der untere Rand gleich.
 ms.openlocfilehash: 544557f1e797315619bc9975db0b87a09981726c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338087"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417210"
 ---
 # <a name="bottommargin-cell-text-block-format-section"></a>Zelle "BottomMargin" (Abschnitt "Text Block Format")
 

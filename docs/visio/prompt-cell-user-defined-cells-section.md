@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d0f91e7d-2373-cfef-e105-fb17e77c7f2d
 description: Gibt eine beschreibende Eingabeaufforderung bzw. einen Kommentar für die benutzerdefinierte Zelle an. Die Anwendung schließt den Ansagetext automatisch in Anführungszeichen () ein, um anzugeben, dass es sich um eine Textzeichenfolge handelt. Wenn Sie ein Gleichheitszeichen (=) eingeben und die Anführungszeichen weglassen, können Sie in diese Zelle eine Formel eingeben, die von der Anwendung ausgewertet wird.
 ms.openlocfilehash: 7684025e03bd3f4f68893179b1df00cc0cb535e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326887"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435726"
 ---
 # <a name="prompt-cell-user-defined-cells-section"></a>Zelle "Prompt" (Abschnitt "User-Defined Cells")
 

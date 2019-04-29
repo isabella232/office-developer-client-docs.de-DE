@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: cb432d52-6c96-45d2-bbde-45b0de3f915c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 936a20c4236ab76e5acdb178737c3044d3f53bfe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299545"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418722"
 ---
 # <a name="getinstance"></a>GetInstance
 

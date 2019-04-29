@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8e327e00-0844-efa4-900b-6954d3b009bb
 description: Enthält x-und y-Koordinaten für den zweiten Kontrollpunkt eines Splines, den zweiten Knoten, den ersten Knoten, den letzten Knoten und den Grad des Splines.
 ms.openlocfilehash: 2ec06619770af4e5dbcc1a763595b6e01a39052b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358793"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417476"
 ---
 # <a name="splinestart-row-geometry-section"></a>Zeile "SplineStart" (Abschnitt "Geometry")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: acc136ef-9946-7c12-a467-9ded732a3549
 description: Gibt eine ganze Zahl zurück, die das gregorianische Jahr in DateTime oder Expression darstellt, formatiert entsprechend der kurzen Datumsformat Vorlage, die durch die aktuelle Regions-und Spracheinstellungen des Systems festgelegt ist.
 ms.openlocfilehash: c9bacd34557d365841171bee5c9f4683e6a3d296
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351653"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420710"
 ---
 # <a name="year-function-visioshapesheet"></a>YEAR-Funktion (VisioShapeSheet)
 
@@ -30,7 +30,7 @@ Jahr ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *])
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Numerisch** <br/> |Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Numeric** <br/> |Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

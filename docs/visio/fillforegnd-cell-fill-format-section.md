@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7548a480-4dce-45e0-281b-f6f8bdf05c0b
 description: Legt die Farbe fest, die für den Vordergrund (Pinselstrich) des Füllmusters des Shapes verwendet wird.
 ms.openlocfilehash: 352fecf8d99069cfb5ebd72d295284dc03446364
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322505"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415565"
 ---
 # <a name="fillforegnd-cell-fill-format-section"></a>Zelle "FillForegnd" (Abschnitt "Fill Format")
 

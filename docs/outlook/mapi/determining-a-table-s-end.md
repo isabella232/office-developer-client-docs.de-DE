@@ -9,11 +9,11 @@ api_type:
 ms.assetid: c879e972-05f4-4716-8fc2-db5b22f34ca8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 28892e2d351b8dc9aa864c9eff52c94bb0f20e8f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316716"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420087"
 ---
 # <a name="determining-a-tables-end"></a>Bestimmen des Endes einer Tabelle
 
