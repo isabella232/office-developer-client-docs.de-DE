@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ea514f19-4742-4eb4-823d-6f2494668106
 description: Konvertiert einen Wert in einen angegebenen Datentyp oder gibt NULL zurück, wenn die Konvertierung ungültig ist.
 ms.openlocfilehash: 473d9063da46652afa88dc974cb4c4036e1c326c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304227"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410896"
 ---
 # <a name="tryconvert-function-access-custom-web-app"></a>Try_Convert-Funktion (Access Custom Web App)
 

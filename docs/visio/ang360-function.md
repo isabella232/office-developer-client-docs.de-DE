@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 23e6899d-0a94-a7d8-8de2-091e0531f163
 description: Normalisiert den Range eines Winkels.
 ms.openlocfilehash: 017dd89bd3b814c10422cd32eea1ee7e343eaf50
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341489"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417196"
 ---
 # <a name="ang360-function"></a>ANG360 Function
 
@@ -28,7 +28,7 @@ ANG360 (* * *Winkel* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der zu normalisierende Winkel.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der zu normalisierende Winkel.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

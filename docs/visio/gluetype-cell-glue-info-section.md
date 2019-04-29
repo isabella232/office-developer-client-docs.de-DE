@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: fffbefd6-8b0b-0023-6b03-026d1c6e885e
 description: Bestimmt, ob ein 1D-Shape statischen (Punkt-zu-Punkt) oder dynamischen (Shape-zu-Shape) Kleber verwendet, wenn es an ein anderes Shape geklebt wird.
 ms.openlocfilehash: ae4eddf17c6e7b5e56cb3397f03d0721d965c9b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339515"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410672"
 ---
 # <a name="gluetype-cell-glue-info-section"></a>Zelle "GlueType" (Abschnitt "Glue Info")
 

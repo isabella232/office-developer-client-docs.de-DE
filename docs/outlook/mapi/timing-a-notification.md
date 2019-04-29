@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 6981a3b0-96eb-44a2-b051-1c5efc70e9e3
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: fa3b155820c64ff55e324c5611eed7348cb93e2b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360396"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411148"
 ---
 # <a name="timing-a-notification"></a>Timing einer Benachrichtigung
 

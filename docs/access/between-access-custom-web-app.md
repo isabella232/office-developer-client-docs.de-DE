@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 9dcb32c6-ed9b-4a09-9e6a-48cc50063a6f
 description: Gibt einen zu testenden Test an.
 ms.openlocfilehash: fd67d1163f6a39779e0202b5ca1ba998ba8650a7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280743"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429299"
 ---
 # <a name="between-access-custom-web-app"></a>BeTWEEN (Access Custom Web App)
 
@@ -38,7 +38,7 @@ Der **** Operator BETWEEN enthält die folgenden Argumente.
 
  **Boolean**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **Zwischen** gibt **true** zurück, wenn der Wert von *test_expression* größer als oder gleich dem Wert von *begin_expression* und kleiner als oder gleich dem Wert von *end_expression* ist. 
   

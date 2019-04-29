@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: e47e1182-e44b-43a2-8254-cc39a9ba1269
 description: ''
 ms.openlocfilehash: 37e693e13da904999973774f8fc1737126a77f03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282243"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412842"
 ---
 # <a name="comparison-operators-access-custom-web-app"></a>Vergleichsoperatoren (Access Custom Web App)
 

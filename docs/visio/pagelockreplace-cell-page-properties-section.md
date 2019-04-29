@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 59c36555-42af-4729-aea7-0332d1da6e3b
 description: Gibt an, ob die Schaltfläche Shape ersetzen für diese Seite deaktiviert werden soll.
 ms.openlocfilehash: c0495d47a81ed7a23e758c531f7d754291c47852
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339480"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433101"
 ---
 # <a name="pagelockreplace-cell-page-properties-section"></a>PageLockReplace Cell (Page Properties section)
 

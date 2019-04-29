@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c3e883c-80c0-4eda-8f81-8277d933a74b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a476607927f3563ede94a04ccfe4f7a3749c978e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280071"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417406"
 ---
 # <a name="imapifolderdeletefolder"></a>IMAPIFolder::DeleteFolder
 
@@ -101,7 +101,7 @@ Wenn der Löschvorgang mehr als einen Ordner umfasst, führen Sie den Vorgang f�
 
 Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
   
-|**Bedingung**|**Rückgabewert**|
+|**Bedingung**|**R�ckgabewert**|
 |:-----|:-----|
 |**DeleteFolder** hat alle Nachrichten und Unterordner erfolgreich gelöscht.  <br/> |S_OK  <br/> |
 |**DeleteFolder** konnte nicht alle Nachrichten und Unterordner erfolgreich löschen.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |

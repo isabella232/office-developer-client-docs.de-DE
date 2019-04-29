@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 5866b202-883e-454e-aeb1-61526c43dae9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 162957ea17b5a82d4da68340e971d328c85cd9f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309580"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432716"
 ---
 # <a name="mapi-spooler-overview"></a>MAPI-Spooler-Übersicht
   

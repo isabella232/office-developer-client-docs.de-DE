@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 57965c84-7a52-4d7c-9c7f-be3d4570576d
 description: Mit der SetReturnVar-Aktion wird eine Rückgabevariable erstellt und auf einen bestimmten Wert festgelegt.
 ms.openlocfilehash: 29445f5021bed99fe45cee1d34457f1f91ca417d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310946"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409594"
 ---
 # <a name="setreturnvar-macro-action-access-custom-web-app"></a>SetReturnVar-Makroaktion (benutzerdefinierte Access-Web-App)
 
@@ -24,14 +24,14 @@ Mit der **SetReturnVar** -Aktion wird eine Rückgabevariable erstellt und auf ei
 > [!NOTE]
 > Die **SetReturnVar** -Aktion ist nur in datenmakros verfügbar. 
   
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die **SetReturnVar** -Aktion hat die folgenden Argumente. 
   
 |**Argumentname**|**Erforderlich**|**Beschreibung**|
 |:-----|:-----|:-----|
 | _Name_ <br/> |Ja  <br/> |Eine Zeichenfolge, die den Namen der Variablen angibt.  <br/> |
-| _Ausdruck_ <br/> |Ja  <br/> |Ein Ausdruck, mit dem der Wert für diese temporäre Variable festgelegt wird. Stellen Sie dem Ausdruck kein Gleichheitszeichen (=) voran. Sie können auf die **Generator** -Schaltfläche klicken, um den **Ausdrucks-Generator** zum Festlegen dieses Arguments zu verwenden.  <br/> |
+| _Ausdruck_ <br/> |Ja  <br/> |Ein Ausdruck, mit dem der Wert für diese temporäre Variable festgelegt wird. Stellen Sie dem Ausdruck kein Gleichheitszeichen (=) voran. Sie können auf die Schaltfläche **Erstellen** klicken, um das Argument mithilfe des **Ausdrucks-Generators** festzulegen.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

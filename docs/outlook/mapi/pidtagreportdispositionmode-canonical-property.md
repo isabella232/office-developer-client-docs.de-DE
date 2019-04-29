@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 67b3c76a-f6f7-462b-955c-dc7b53e7e7eb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3d598337a4a66b6345b2f7c827b62a2ccd8af366
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346361"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428970"
 ---
 # <a name="pidtagreportdispositionmode-canonical-property"></a>Kanonische Pidtagreportdispositionmode (-Eigenschaft
 
@@ -36,7 +36,7 @@ Gibt die Disposition der Bestätigung für Nachrichten an, die Empfangsbestätig
 
 Die möglichen Werte für diese Eigenschaft sind "Manual-Action/MDN-sent-automatisch" und "Manual-Action/MDN-sent-Hand".
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 

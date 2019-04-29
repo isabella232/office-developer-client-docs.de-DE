@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e1174d8f-70cb-4595-7906-889da15367db
 description: 'Formeln können Zeichenfolgen enthalten. Wenn Sie ausgegebene Zeichenfolgen (z. B. einen Wert in einer Eingabeaufforderungszelle), Werte für Shape-Datenelemente oder ein Textfeld formatieren möchten, geben Sie eine Formatierungsangabe an. Ausgegebene Werte können als Zahl-Einheit-Paar, Zeichenfolge, Datum-Uhrzeit, Zeitdauer oder Währung formatiert werden. Beispiel: das Format picture0 #/10 uuformats das Nummern Einheiten paar 10,9 cm AS10 9/10 Zentimeter.'
 ms.openlocfilehash: aa95e11db387913edbb40292f7da6a0f4b8a5cf7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345066"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409517"
 ---
 # <a name="about-strings"></a>Informationen zu Zeichenfolgen
 

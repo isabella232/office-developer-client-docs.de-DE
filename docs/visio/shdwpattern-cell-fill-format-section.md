@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: eca73b80-9835-9011-1dce-187ccee92e76
 description: Definiert das Füllmuster für den Schatten eines Shapes.
 ms.openlocfilehash: c2591fbc9f208b1bf9c7d0c85e6de765cd9825f6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349042"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427612"
 ---
 # <a name="shdwpattern-cell-fill-format-section"></a>Zelle "ShdwPattern" (Abschnitt "Fill Format")
 

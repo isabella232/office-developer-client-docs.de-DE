@@ -9,17 +9,17 @@ localization_priority: Normal
 ms.assetid: 1c9f4dd4-65f6-446f-8b86-a375ce402658
 description: Stellt eine Instanz eines Outlook Social Connector (OSC)-Anbieters dar.
 ms.openlocfilehash: f28b8343d92b09455b6049f421b839efbda21c1a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285484"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409958"
 ---
 # <a name="isocialprovider--iunknown"></a>ISocialProvider : IUnknown
 
 Stellt eine Instanz eines Outlook Social Connector (OSC)-Anbieters dar.
   
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
 In der folgenden Tabelle sind die Member aufgeführt, die auf der **ISocialProvider** -Schnittstelle verfügbar sind. 
   

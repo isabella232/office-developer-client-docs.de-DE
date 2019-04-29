@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 721ac58e-56d9-4e3b-93f1-849e0c94d010
 description: Beim Schreiben von Code, um die Funktionalität einer Formularvorlage zu erweitern, die das InfoPath 2003-Objektmodell verwendet, empfiehlt es sich häufig, dem Benutzer Informationen in einem Dialogfeld bereitzustellen.
 ms.openlocfilehash: 12088747250037e53a3b7d8d0577936e30d6292c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303612"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409482"
 ---
 # <a name="display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model"></a>Anzeigen von Warnungen und Dialog Feldern mit dem InfoPath-Objektmodell 2003
 

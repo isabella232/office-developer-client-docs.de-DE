@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ef082d7b-9b2d-4267-beb5-d3ed1d9c7bbf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0d05672a0b136520216357cc85a6b7a125415759
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345850"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427955"
 ---
 # <a name="mapi-notification-events"></a>MAPI-BenachrichtigungsEreignisse
 
@@ -33,7 +33,7 @@ Wenn Clientanwendungen für die Ereignisbenachrichtigung registriert werden, mü
 |Objekt kopiert ( _fnevObjectCopied_)  <br/> |Ein MAPI-Objekt wurde kopiert.  <br/> |Ordner, Nachrichten, alle Arten von Adressbuch Objekten  <br/> |
 |Extended-Ereignis ( _fnevExtended_)  <br/> |Ein internes Ereignis, das von einem bestimmten Dienstanbieter definiert wurde, ist aufgetreten.  <br/> |Beliebiges Advise-Quellobjekt  <br/> |
 |Suche abgeschlossen ( _fnevSearchComplete_)  <br/> |Der Suchvorgang ist abgeschlossen, und die Ergebnisse der Suche sind verfügbar.  <br/> |Ordner  <br/> |
-|Tabelle geändert ( _fnevTableModified_)  <br/> |Informationen in einem MAPI-Tabellenobjekt wurden geändert.  <br/> |Tables  <br/> |
+|Tabelle geändert ( _fnevTableModified_)  <br/> |Informationen in einem MAPI-Tabellenobjekt wurden geändert.  <br/> |Tabellen  <br/> |
 |Neue e-Mail ( _uleventmaskfnevnewmail_)  <br/> |Eine Nachricht wurde übermittelt und wartet auf die Verarbeitung.  <br/> |Nachrichtenspeicher, Ordner  <br/> |
    
 Das Extended-Ereignis wird von einem Dienstanbieter definiert, der ein Ereignis darstellt, das von keinem der anderen vordefinierten Ereignisse abgedeckt werden kann. Nur Clients, die vor Ihrer Registrierung wissen, dass ein Dienstanbieter ein erweitertes Ereignis unterstützt, können sich für dieses Ereignis registrieren. Es ist nicht möglich, dass Clients ohne Vorkenntnisse ermitteln, ob ein Dienstanbieter ein erweitertes Ereignis unterstützt und, falls dies der Fall ist, wie ein solches Ereignis beim Empfang behandelt wird.

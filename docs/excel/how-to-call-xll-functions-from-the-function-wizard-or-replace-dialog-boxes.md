@@ -1,5 +1,5 @@
 ---
-title: Aufrufen von XLL-Funktionen im Funktions-Assistenten oder Ersetzen von Dialog Feldern
+title: Aufrufen von XLL-Funktionen aus dem Funktionsassistenten oder Ersetzen von Dialogfeldern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,15 +8,15 @@ keywords:
 - XLL-Funktionen [Excel 2007], Aufruf von Dialogfeld ersetzen, Dialogfeld ersetzen [Excel 2007], Aufrufen von XLL-Funktionen, Funktions-Assistent [Excel 2007], Aufrufen von XLL-Funktionen, XLL-Funktionen [Excel 2007], aufrufen vom Funktions-Assistenten
 localization_priority: Normal
 ms.assetid: dc7e840e-6d1d-427b-97f9-7912e60ec954
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 11189beed13e2ceb99ef04b7a2f966cb4171915c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304018"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410749"
 ---
-# <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>Aufrufen von XLL-Funktionen im Funktions-Assistenten oder Ersetzen von Dialog Feldern
+# <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>Aufrufen von XLL-Funktionen aus dem Funktionsassistenten oder Ersetzen von Dialogfeldern
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
@@ -119,7 +119,7 @@ bool called_from_paste_fn_dlg(void)
 
 
 
-[Zugriff auf XLL-Code in Excel (engl.)](accessing-xll-code-in-excel.md)
+[Zugreifen auf XLL-Code in Excel](accessing-xll-code-in-excel.md)
   
 [Aufrufen von Excel von der DLL oder XLL aus](calling-into-excel-from-the-dll-or-xll.md)
   

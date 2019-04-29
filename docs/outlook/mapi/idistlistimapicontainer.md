@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: bd8e1ddb-3027-428b-8964-81614f80282d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 463d81a6692b6071cada0ad22e7343020563e41c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350890"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431547"
 ---
 # <a name="idistlist--imapicontainer"></a>IDistList : IMAPIContainer
 

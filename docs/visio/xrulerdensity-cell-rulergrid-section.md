@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c11717c5-eb0e-e4fa-5a91-c62ecc048635
 description: Legt die horizontalen Einteilungen auf dem Lineal des Zeichenblatts fest.
 ms.openlocfilehash: f459e5d1d19580201f1404ac2d1ae53c824293f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331850"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411470"
 ---
 # <a name="xrulerdensity-cell-ruler-amp-grid-section"></a>Zelle XRulerDensity Cell (Ruler &amp; Grid section)
 

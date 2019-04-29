@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 578a38a9-b8d8-42e2-b98b-5e5bb85ebe05
 description: Dieses Thema hilft Ihnen dabei, schnell Antworten zu allgemeinen Fragen in Bezug auf das Entwickeln von Formularvorlagen mit Formularcode zu finden, der mit der Microsoft.Office.Interop.InfoPath.SemiTrust-Assembly arbeitet.
 ms.openlocfilehash: 1c5f72a3fa22cbe54b1290357aae1d2a68dff5b4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303759"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411575"
 ---
 # <a name="common-tasks-for-developing-form-templates-using-the-infopath-object-model"></a>Häufige Aufgaben beim Entwickeln von Formularvorlagen mithilfe des InfoPath-Objektmodells
 

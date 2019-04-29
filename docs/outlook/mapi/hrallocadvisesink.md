@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1dd460e6-ce95-4fef-bb5e-8d778c9716d5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7f9873fe8e1825c68d4540cc1d093171e9f95727
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348216"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428900"
 ---
 # <a name="hrallocadvisesink"></a>HrAllocAdviseSink
 

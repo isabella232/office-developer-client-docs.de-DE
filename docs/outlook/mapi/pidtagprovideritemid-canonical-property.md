@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: fadbf1af-32c2-43ea-8475-15b31b2a9e68
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 48653b86d625da963b655dbd1acc01a46f4687dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286474"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412121"
 ---
 # <a name="pidtagprovideritemid-canonical-property"></a>Kanonische Pidtagprovideritemid (-Eigenschaft
 
@@ -38,7 +38,7 @@ Gibt einen Bezeichner für einen Ordner oder ein Element in einem Speicher an.
 
 Speicheranbieter können einen Wert für diese Eigenschaft für einen Ordner oder ein Element angeben, sollten den Wert jedoch zwischen den Sitzungen gleich bleiben. Speicheranbieter verwenden Sie diese Eigenschaft, um Suchergebnisse zu identifizieren, die von einer Suchmaschine zurückgegeben werden.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

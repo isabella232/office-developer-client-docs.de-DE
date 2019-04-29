@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8b1b3904-6635-3fd1-31a9-ff32c19394af
 description: Legt die Transparenzstufe fest, die für die Vordergrundfarbe (Füllbereich) des Füllmusters des Shapes verwendet wird.
 ms.openlocfilehash: d05a83f83ea3d95ac3d42a2bfb3996917119f580
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322449"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427850"
 ---
 # <a name="fillforegndtrans-cell-fill-format-section"></a>Zelle "FillForegndTrans" (Abschnitt "Fill Format")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8dc6515b-66ab-f1ac-18fd-820209f90991
 description: Enthält eine von der Anwendung generierte Triggerformel, die festlegt, ob der Endpunkt eines 1D-Shapes zur Aufrechterhaltung seiner Verbindung zu einem anderen Shape verschoben werden soll.
 ms.openlocfilehash: 9093cca782d9262b2511198ed73f512a75bb8994
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329063"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418582"
 ---
 # <a name="endtrigger-cell-glue-info-section"></a>Zelle "EndTrigger" (Abschnitt "Glue Info")
 

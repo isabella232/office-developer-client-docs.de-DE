@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 146b5e36-8d73-4949-9fed-1074f707423d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 54f61eb1bf111601e8b2c889b0d2890d0c10d63b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341237"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418337"
 ---
 # <a name="imapisyncprogresscallback--iunknown"></a>IMAPISyncProgressCallback : IUnknown
 
@@ -40,7 +40,7 @@ ms.locfileid: "32341237"
 |||
 |:-----|:-----|
 |[Progress](imapisyncprogresscallback-progress.md) <br/> |Der Informationsspeicher Anbieter ruft diese Funktion in regelmäßigen Abständen auf, um den Status im Dialogfeld senden/empfangen zu aktualisieren.  <br/> |
-|[Error](imapisyncprogresscallback-error.md) <br/> |Wenn während der Synchronisierung Fehler auftreten, ruft der Informationsspeicher Anbieter diese Funktion auf, um Details bereitzustellen, die im Dialogfeld senden/empfangen angezeigt werden.  <br/> |
+|[Fehler](imapisyncprogresscallback-error.md) <br/> |Wenn während der Synchronisierung Fehler auftreten, ruft der Informationsspeicher Anbieter diese Funktion auf, um Details bereitzustellen, die im Dialogfeld senden/empfangen angezeigt werden.  <br/> |
 |[Done](imapisyncprogresscallback-done.md) <br/> |Der Informationsspeicher Anbieter ruft diese Funktion auf, um Outlook zu benachrichtigen, dass die Synchronisierung abgeschlossen wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 30d8268e-0c64-401d-8799-e8e1ba78b88f
 description: Gibt eine Konto-ID zurück, die in Outlook-Profilen eindeutig ist.
 ms.openlocfilehash: 209f7dd89b8d947b999f2a068373aaf61a3e9784
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327629"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409433"
 ---
 # <a name="propacctminiuid"></a>PROP_ACCT_MINI_UID
 

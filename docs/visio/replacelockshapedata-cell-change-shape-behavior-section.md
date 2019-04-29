@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 6a089266-7b19-4310-8cb5-4373ea3b2d64
 description: Gibt an, ob die Werte der angegebenen Zellen in einem Master-Shape die Werte (einschließlich lokaler Werte) einer Form überschreiben, die während einer Form Ersetzung ersetzt wird. Die ReplaceLockShapeData bestimmt, ob die Shape-Daten des Master-Shapes alle Shape-Daten der Form überschreiben, die ersetzt wird.
 ms.openlocfilehash: d2349da96bde7d141aada9066d56a4379f425fee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348342"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408873"
 ---
 # <a name="replacelockshapedata-cell-change-shape-behavior-section"></a>Zelle "ReplaceLockShapeData" (Abschnitt "Shape-Verhalten ändern")
 

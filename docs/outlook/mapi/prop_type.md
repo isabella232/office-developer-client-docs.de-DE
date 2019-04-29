@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 746d63fa-bfb7-479f-94dc-ba40011c1ec9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0c33633c4decd697cf241f8b7c27360f776a1ade
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332760"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412835"
 ---
 # <a name="proptype"></a>PROP_TYPE
 

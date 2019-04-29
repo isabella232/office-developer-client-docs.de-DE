@@ -8,13 +8,13 @@ keywords:
 - Referenzen [Excel 2007], Arbeitsblatt, Arbeitsblatt Referenzen [Excel 2007], Verweise auf externe Arbeitsblätter [Excel 2007], aktives Arbeitsblatt [Excel 2007], Aktuelles Arbeitsblatt [Excel 2007], interne Arbeitsblatt Referenzen [Excel 2007]
 localization_priority: Normal
 ms.assetid: 53406fb8-4ca5-4204-a6ad-b21ca9e6a100
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 2944f73a3144837a4be8aff7c7fed9a8d2158203
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304025"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416461"
 ---
 # <a name="worksheet-references"></a>Arbeitsblattverweise
 
@@ -50,7 +50,7 @@ Der andere wesentliche Unterschied zwischen den internen und externen Verweistyp
 
 [Konzepte der Excel-Programmierung](excel-programming-concepts.md)
   
-[Auswerten von Namen und andere Arbeitsblatt Formula-Ausdr�cke](evaluating-names-and-other-worksheet-formula-expressions.md)
+[Auswerten von Namen und anderen Arbeitsblatt-Formelausdrücken](evaluating-names-and-other-worksheet-formula-expressions.md)
   
 [Excel-Arbeitsblatt- und Ausdrucksauswertung](excel-worksheet-and-expression-evaluation.md)
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 47d84d7d-08a0-1934-d156-702da848e01c
 description: Bestimmt den Abstand zwischen dem linken Rand des Textblocks und dem darin enthaltenen Text. Standardmäßig sind 2,54 mm festgelegt. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt der linke Rand unverändert.
 ms.openlocfilehash: fee8eca8b5730e40518babe0c76549e10bebd902
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359388"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411337"
 ---
 # <a name="leftmargin-cell-text-block-format-section"></a>Zelle "LeftMargin" (Abschnitt "Text Block Format")
 

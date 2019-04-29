@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f4bd5ddb-f1e7-4e2a-b312-b1884f78cc1a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3b9d1d76be6f61a1b8e60c2553d74424672d1a6f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316275"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414221"
 ---
 # <a name="pidtagformcategory-canonical-property"></a>Kanonische Pidtagformcategory (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die Kategorie eines Formulars.
 
 Der Kategoriename wird von einer Clientanwendung in einer für die Anwendung geeigneten Weise definiert. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

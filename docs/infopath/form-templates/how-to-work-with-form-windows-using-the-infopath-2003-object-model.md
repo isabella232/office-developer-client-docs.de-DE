@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: fbcf3a04-ee0f-40a6-8edd-583ae203e2e1
 description: Sie können bei der Programmierarbeit mit einem InfoPath-Formular Code schreiben, mit dem auf die Fenster eines Formulars zugegriffen wird, und dann einige der häufig enthaltenen Elemente anpassen. Das InfoPath 2003-kompatible Objektmodell unterstützt den Zugriff auf die Fenster eines Formulars, indem die WindowObject-Schnittstelle in Verbindung mit der WindowsCollection-Schnittstelle verwendet wird.
 ms.openlocfilehash: f8939fc562cf16c1bce0f6f88bba659e895254f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299895"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427577"
 ---
 # <a name="work-with-form-windows-using-the-infopath-2003-object-model"></a>Arbeiten mit Formularfenstern mithilfe des InfoPath 2003-Objektmodells
 
@@ -34,7 +34,7 @@ Die **WindowsCollection**-Schnittstelle bietet die folgenden Eigenschaften, die 
 |**Name**|**Beschreibung**|
 |:-----|:-----|
 |[Count](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Count.aspx)-Eigenschaft  <br/> |Gibt die Anzahl der **Window**-Objekte zurück, die in der Auflistung enthalten sind.  <br/> |
-|[Item](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Item.aspx)-Eigenschaft  <br/> |Gibt einen Verweis auf das angegebene **Window**-Objekt zurück.  <br/> **Hinweis**: Visual C# greift auf Auflistungen mithilfe eines Indexers zu, statt die **Item** -Eigenschaft aufzurufen. Beispiel:  `thisApplication.Windows[0].Caption`.           |
+|[Item](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Item.aspx)-Eigenschaft  <br/> |Gibt einen Verweis auf das angegebene **Window**-Objekt zurück.  <br/> **Hinweis**: Visual C# greift auf Auflistungen mithilfe eines Indexers zu, statt die **Item** -Eigenschaft aufzurufen. Zum Beispiel: `thisApplication.Windows[0].Caption`.           |
    
 ## <a name="overview-of-the-window-object"></a>Übersicht über das Window-Objekt
 

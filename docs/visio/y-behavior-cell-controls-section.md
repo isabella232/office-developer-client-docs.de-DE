@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6d5062d3-743b-8664-8ec9-5a8f11d5edf9
 description: Steuert die Art des Verhaltens, die die y-Koordinate des Steuerpunkts zeigt, nachdem der Ziehpunkt verschoben wurde. Diese Formeln stehen zur Verfügung.
 ms.openlocfilehash: bf8cbd490884244c92b68784dcbf041093539c94
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360144"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413577"
 ---
 # <a name="y-behavior-cell-controls-section"></a>Zelle "Y Behavior" (Abschnitt "Controls")
 

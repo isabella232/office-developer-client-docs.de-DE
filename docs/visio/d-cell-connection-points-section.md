@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 28b18e8d-fecf-a798-813e-c1a310002244
 description: Eine Zelle für den Entwurf, die zum Eingeben oder Testen von Formeln verwendet werden kann.
 ms.openlocfilehash: e7bd61b8bc7a1a3b765af738681d958e2c83ba05
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345087"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408173"
 ---
 # <a name="d-cell-connection-points-section"></a>Zelle "D" (Abschnitt "Connection Points")
 

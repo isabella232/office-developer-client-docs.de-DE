@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b6951a92-f32a-5829-5e07-b277b7934df3
 description: Sie können in Formeln Operationen mit Werten für Datum, Uhrzeit und Dauer ausführen. In Microsoft Visio können Ausdrücke für Datum und Uhrzeit als einzelne Werte ausgewertet werden. Bei einem Ausdruck für Daume und Uhrzeit handelt es sich um einen beliebigen Ausdruck, der üblicherweise als Datum und/oder Uhrzeit erkannt wird, oder um einen Bezug auf eine Zelle mit Informationen zu Datum und/oder Uhrzeit. Dazu gehören Zeichenfolgen und Zahlen, die wie Datums- und Uhrzeitangaben aussehen sowie Werte für Datum und Uhrzeit, die von Funktionen zurückgegeben werden.
 ms.openlocfilehash: 56de919fa713c0948bb87f794d1c6e0a5d727aef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341580"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416727"
 ---
 # <a name="about-date-time-and-duration-values"></a>Informationen zu Werten für Datum, Uhrzeit und Dauer
 

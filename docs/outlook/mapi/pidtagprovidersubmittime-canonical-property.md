@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9e5161d9-fefe-4a12-b7f7-5600f1d2e95b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c5e840250da7ba3b95150f2e83e1eb08b0c61ab5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286422"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409020"
 ---
 # <a name="pidtagprovidersubmittime-canonical-property"></a>Kanonische Pidtagprovidersubmittime (-Eigenschaft
 
@@ -40,7 +40,7 @@ Diese Eigenschaft wird vom ausgehenden Transportanbieter festgelegt, wenn eine N
   
 Diese Eigenschaft entspricht einem X. 400-Übermittlungs Umschlag pro Nachrichtenattribut. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

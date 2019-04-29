@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 5c491666-06f0-42ec-967e-1c70cd5e03a0
 description: Wenn Sie versuchen, ein Projekt mit verwaltetem Code zu debuggen oder in der Vorschau anzuzeigen, das Code enthält, der ein Objektmodellelement aufruft, das volle Vertrauenswürdigkeit erfordert, wie beispielsweise die LoginName-Eigenschaft, die Zugriff auf Informationen zur Anmeldedomäne des Benutzers benötigt, Microsoft In InfoPath werden die folgenden Fehlermeldungen angezeigt.
 ms.openlocfilehash: 0780db286e2ca9cef381c2d24cb621c7c243dcb7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303598"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411260"
 ---
 # <a name="preview-and-debug-form-templates-that-require-full-trust"></a>Vorschau und Debuggen von Formularvorlagen, die volle Vertrauenswürdigkeit erfordern
 

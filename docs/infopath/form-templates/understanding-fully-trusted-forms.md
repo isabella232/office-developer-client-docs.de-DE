@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 64d62990-6275-edef-c639-b6ba8d10c38c
 description: InfoPath bietet die Möglichkeit, voll vertrauenswürdige Formulare zu erstellen, bei denen es sich um Formulare mit höheren Sicherheitsberechtigungen handelt, die auf Systemressourcen und andere Komponenten auf dem Computer eines Benutzers zugreifen können. In diesem Artikel wird beschrieben, was ein voll vertrauenswürdiges Formular ist und warum es verwendet wird, und ein voll vertrauenswürdiges Formular erstellen, indem Sie ein Standardformular manuell konvertieren und registrieren oder ein Standardformular digital signieren.
 ms.openlocfilehash: 04560e0c844d6a6ff681fd366ca7da2e4db36ba1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299766"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430392"
 ---
 # <a name="understanding-fully-trusted-forms"></a>Grundlegendes zu voll vertrauenswürdigen Formularen
 

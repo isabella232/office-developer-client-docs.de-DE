@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6a36f4fb-17c0-4271-87d4-a92895f35f23
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7aef4c1d83672033662502ad0950b7bac9f58c52
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331514"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429502"
 ---
 # <a name="pidtagparentdisplay-canonical-property"></a>Kanonische Pidtagparentdisplay (-Eigenschaft
 
@@ -40,7 +40,7 @@ Diese Eigenschaften befinden sich nicht in einem Objekt. Sie können nur in der 
   
 Diese Eigenschaften und **PR_PARENT_ENTRYID** ([pidtagparententryid (](pidtagparententryid-canonical-property.md))-Eigenschaften sind nicht miteinander verbunden. Sie gehören ganz unterschiedlichen Kontexten.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

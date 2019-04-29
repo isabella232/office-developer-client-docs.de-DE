@@ -9,17 +9,17 @@ localization_priority: Normal
 ms.assetid: f516e86e-0158-472b-9711-fe7491b24404
 description: Unterstützt das Hinzufügen von Freunden, der on-Demand-oder Hybrid Synchronisierung von Freunden, der bedarfsgesteuerten Synchronisierung von Aktivitäten oder der Anmeldung am sozialen Netzwerk mithilfe von zwischengespeicherten Anmeldeinformationen.
 ms.openlocfilehash: 6dc581bb812408d7e01f94c375671783445616a1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345297"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408831"
 ---
 # <a name="isocialsession2--iunknown"></a>ISocialSession2 : IUnknown
 
 Unterstützt das Hinzufügen von Freunden, der on-Demand-oder Hybrid Synchronisierung von Freunden, der bedarfsgesteuerten Synchronisierung von Aktivitäten oder der Anmeldung am sozialen Netzwerk mithilfe von zwischengespeicherten Anmeldeinformationen.
   
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
 In der folgenden Tabelle sind die Member aufgeführt, die auf der **ISocialSession2** -Schnittstelle verfügbar sind. 
   

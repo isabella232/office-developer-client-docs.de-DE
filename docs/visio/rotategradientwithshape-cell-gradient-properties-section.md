@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 6aada005-3403-4666-9779-7ccb5b83b74a
 description: Bestimmt, ob ein Füll Verlauf mit einer Form in der 2D-Rotation als boolescher Wert rotiert.
 ms.openlocfilehash: 76a76a4a97128c81710269f75e9e17db90827377
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315659"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412219"
 ---
 # <a name="rotategradientwithshape-cell-gradient-properties-section"></a>Zelle "RotateGradientWithShape" (Abschnitt "Gradient Properties")
 

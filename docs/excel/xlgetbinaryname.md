@@ -10,13 +10,13 @@ keywords:
 - xlgetbinaryname-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 66af3f78-65b5-42e0-82f9-ffd639d41751
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 6d063213e3f83451e8a072e71f0878174214f73e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303836"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412464"
 ---
 # <a name="xlgetbinaryname"></a>xlGetBinaryName
 
@@ -45,5 +45,5 @@ Microsoft Excel besitzt das in **hdata**zurückgegebene Speicherhandle. In Windo
 ## <a name="see-also"></a>Siehe auch
 
 - [xlDefineBinaryName](xldefinebinaryname.md)
-- [C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

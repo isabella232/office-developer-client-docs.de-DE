@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 72290fd3-00d7-4055-bbfa-0c47b6e0f62d
 description: 'Zuletzt geändert: 20 November, 2011'
 ms.openlocfilehash: c5e92c44d7078560ed84d72b3477d5cf2e809353
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32333040"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413500"
 ---
 # <a name="copying-or-moving-a-message-or-a-folder"></a>Kopieren oder Verschieben einer Nachricht oder eines Ordners
   

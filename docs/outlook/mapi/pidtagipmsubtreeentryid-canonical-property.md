@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5763fc78-5192-4162-be27-4aadc7ed65bc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 815685696dfc93bb6241f608ca0157e87e758e7b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327870"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412730"
 ---
 # <a name="pidtagipmsubtreeentryid-canonical-property"></a>Kanonische Pidtagipmsubtreeentryid (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die Eintrags-ID des Stamms der Unterstruktur des Ordners "zwischenmensc
 
 Diese Eigenschaft stellt den Stamm der IPM-Hierarchie dar. IPM-Clients sollten keine Ordner anzeigen, die keine Unterordner des durch diese Eigenschaft dargestellten Ordners sind.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

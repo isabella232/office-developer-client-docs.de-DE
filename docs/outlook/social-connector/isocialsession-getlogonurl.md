@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: d61bab07-acb3-433b-8783-c3fe110a5582
 description: Ruft eine Zeichenfolge ab, die eine URL darstellt, die zum Anzeigen eines browserbasierten Formulars für den Benutzer während der Webauthentifizierung verwendet wird.
 ms.openlocfilehash: 83867282922ea136b9673609cc2ba2f1a206f6ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285378"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427913"
 ---
 # <a name="isocialsessiongetlogonurl"></a>ISocialSession::GetLogonUrl
 

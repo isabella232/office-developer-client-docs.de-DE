@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 9b7da082-5e55-411d-b109-7fb6fa8f6e8e
 description: Enthält die x-und y-Koordinaten des Endpunkts eines elliptischen Bogens relativ zur Breite und Höhe der Form, die x-und y-Koordinaten der Steuerpunkte im Bogen relativ zur Breite und Höhe des Shapes, der Winkel von der x-Achse zur Hauptachse der Ellipse und das Verhältnis zwischen t Haupt-und Nebenachsen der Ellipse.
 ms.openlocfilehash: e38f5f2baf6bb9ade31c2778799a3ece968147f4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359962"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409097"
 ---
 # <a name="relellipticalarcto-row-geometry-section"></a>Zeile "RelEllipticalArcTo" (Abschnitt "Geometry")
 

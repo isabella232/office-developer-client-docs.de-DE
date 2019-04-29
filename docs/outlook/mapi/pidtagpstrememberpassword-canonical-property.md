@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2f8eff88-848c-4ad4-a6be-b1744a0ce4ce
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 4688c706629368be0c2a56490020a0cab17c5bf1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356509"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405940"
 ---
 # <a name="pidtagpstrememberpassword-canonical-property"></a>Kanonische Pidtagpstrememberpassword (-Eigenschaft
 
@@ -32,7 +32,7 @@ Bestimmt, ob das Kennwort im Profil vergessen werden soll.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 

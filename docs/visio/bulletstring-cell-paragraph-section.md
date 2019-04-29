@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 38285824-30ad-0cf2-07cb-0103ab3a415a
 description: Ermöglicht das Erstellen von benutzerdefinierten Aufzählungszeichen.
 ms.openlocfilehash: b7a1d7f845c7b9945670240361a4ac66efa80786
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337562"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409748"
 ---
 # <a name="bulletstring-cell-paragraph-section"></a>Zelle "BulletString" (Abschnitt "Paragraph")
 

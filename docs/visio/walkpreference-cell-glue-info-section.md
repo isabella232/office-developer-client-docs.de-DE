@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 08165195-7e4e-f3ab-fa76-fbcacb0a9c9c
 description: Bestimmt, ob ein Endpunkt eines 1D-Shapes zu einem horizontalen oder vertikalen Verbindungspunkt auf dem Shape, mit dem er dynamisch verbunden ist, verschoben wird, wenn das Shape an eine mehrdeutige Position verschoben wird. Standardmäßig werden beide Endpunkte des 1D-Shapes zu horizontalen Verbindungspunkten verschoben.
 ms.openlocfilehash: 05f7ded3f7336dc2f8598e8d1e9edc501b511546
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285272"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408607"
 ---
 # <a name="walkpreference-cell-glue-info-section"></a>Zelle "WalkPreference" (Abschnitt "Glue Info")
 

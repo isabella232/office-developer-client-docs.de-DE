@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0ab4044e-2d77-1fbe-ef20-5d029bc064ba
 description: Zeigt an, ob eine Linie eine Pfeilspitze oder eine andere Linienendformatierung an ihrem ersten Scheitelpunkt hat. Geben Sie eine Zahl zwischen 0 und 45 oder die USE-Funktion zusammen mit dem Namen des benutzerdefinierten Linienendes ein, oder verwenden Sie das Dialogfeld Linie.
 ms.openlocfilehash: cf5a512dabd0e6296b83fa7bfd2a2a6134143d50
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346235"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410294"
 ---
 # <a name="beginarrow-cell-line-format-section"></a>Zelle "BeginArrow" (Abschnitt "Line Format")
 

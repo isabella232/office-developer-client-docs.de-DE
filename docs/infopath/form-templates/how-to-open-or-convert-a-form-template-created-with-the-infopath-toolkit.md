@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: af8eca2e-ba9a-4c37-94af-662815fff518
 description: Wenn Sie eine InfoPath 2003-Formularvorlage mit verwaltetem Code mit einem der InfoPath 2003-Toolkits für Visual Studio erstellt haben und die Kompatibilität mit InfoPath 2003 beibehalten möchten, können Sie das Formularvorlagenprojekt weiterhin bearbeiten und weiterentwickeln, indem Sie es in Microsoft InfoPath und Visual Studio 2012.
 ms.openlocfilehash: 0acbfab4a83a71d94a1c70a667a963056f5b9a38
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300112"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428585"
 ---
 # <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>Öffnen oder Konvertieren einer mit dem InfoPath-Toolkit erstellten Formularvorlage
 

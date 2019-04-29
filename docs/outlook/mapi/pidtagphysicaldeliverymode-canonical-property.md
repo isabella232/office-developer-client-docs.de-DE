@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98597495-7761-4eda-ae75-1ccefa6abb81
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a99760e11c34404f48ec193750b1a7f4ac541674
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327830"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412303"
 ---
 # <a name="pidtagphysicaldeliverymode-canonical-property"></a>Kanonische Pidtagphysicaldeliverymode (-Eigenschaft
 
@@ -34,7 +34,7 @@ Enthält eine Bitmaske von Flags, die den physischen Übermittlungsmodus (beispi
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8a8c52c9-81b9-4d10-b42b-e360c67bcf4e
 description: Gibt zurück, ob ein Einfüge-oder Aktualisierungsvorgang für das angegebene Feld versucht wurde.
 ms.openlocfilehash: 20e1b87be857f302f36244a6733625dc477da912
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307826"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410917"
 ---
 # <a name="update-function-access-custom-web-app"></a>Update-Funktion (Access Custom Web App)
 

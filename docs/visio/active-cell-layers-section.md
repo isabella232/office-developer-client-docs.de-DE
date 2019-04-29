@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 4c8e366f-9e9b-30ea-a89f-57c8d7a1168e
 description: Gibt an, ob der Layer aktiv ist. Shapes ohne vorher zugewiesene Layer werden dem bzw. den aktiven Layern zugewiesen, wenn Sie sie auf das Zeichenblatt ziehen.
 ms.openlocfilehash: f97f7dc09d1f882452ae2234882de45f06bd0da1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338780"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417434"
 ---
 # <a name="active-cell-layers-section"></a>Zelle "Active" (Abschnitt "Layers")
 

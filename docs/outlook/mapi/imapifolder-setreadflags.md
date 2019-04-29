@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95a40c8a-0a8b-46c7-a07a-cbc6a7de8a3c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 15504ecc88188ed7bc4eed0e64b1871dbc6a5e8d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350988"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406913"
 ---
 # <a name="imapifoldersetreadflags"></a>IMAPIFolder::SetReadFlags
 
@@ -134,7 +134,7 @@ Wenn sowohl die SUPPRESS_RECEIPT-als auch die GENERATE_RECEIPT_ONLY-Flags festge
 
 Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
   
-|**Bedingung**|**Rückgabewert**|
+|**Bedingung**|**R�ckgabewert**|
 |:-----|:-----|
 |**SetReadFlags** hat jede Nachricht erfolgreich verarbeitet.  <br/> |S_OK  <br/> |
 |**SetReadFlags** konnte jede Nachricht nicht erfolgreich verarbeiten.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |

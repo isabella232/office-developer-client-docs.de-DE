@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 05dfa0e2-4ab1-4f57-9009-6a815aca87bd
 description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 519acb46a1401b60c47dfbb764b2e0250fd54f89
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326642"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414326"
 ---
 # <a name="pidtagautoconfigurationusername-canonical-property"></a>PidTagAutoConfigurationUserName (kanonische Eigenschaft)
 

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: fa5498ab-2f8a-42f8-ba9d-1d555768594f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 5605de7dbcc18197748713bcf909839690d7259f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336351"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411596"
 ---
 # <a name="iid"></a>IID
 
@@ -38,7 +38,7 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
 Siehe die **GUID** -Struktur. 
   

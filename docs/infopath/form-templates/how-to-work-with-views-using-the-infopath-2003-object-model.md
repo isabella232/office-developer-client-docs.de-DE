@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: feb1bfcb-1cb1-4d5c-bc84-df86a33a5934
 description: Bei der Arbeit mit einer InfoPath-Formularvorlage können Sie Code schreiben, um auf die Ansichten des Formulars zuzugreifen, und dann eine Vielzahl von Aktionen für die in den Ansichten enthaltenen Daten ausführen. Das InfoPath 2003-kompatible Objektmodell unterstützt den Zugriff auf die Ansichten eines Formulars, indem die Elemente der ViewObject-Schnittstelle verwendet werden.
 ms.openlocfilehash: 6a2dd408ba51e5c8394120944e0c28897e768738
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299878"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411883"
 ---
 # <a name="work-with-views-using-the-infopath-2003-object-model"></a>Arbeiten mit Ansichten mithilfe des InfoPath-Objektmodells 2003
 
