@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 561dd741-ebbb-4661-95ea-39d342c32891
 description: Gibt den Rest einer Zahl geteilt durch eine andere zurück.
 ms.openlocfilehash: 6756dd50f7e062b73d6ec9e1d9753f5b7f188058
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301708"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412506"
 ---
 # <a name="mod-access-custom-web-app"></a>Mod (Access Custom Web App)
 

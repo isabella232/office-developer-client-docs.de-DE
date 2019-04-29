@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: e0513178-ddcb-4086-ab19-1bc80cf114cc
 description: In diesem Abschnitt wird Initialisierungs- und Bereinigungscode sowie das Hinzufügen von Ereignishandlern, Debuggen und das Bereitstellen von InfoPath-Formularvorlagen erläutert, die das InfoPath 2003-kompatible Objektmodell verwenden, die Unterstützung von Threads und das Arbeiten mit Microsoft XML Core Services (MSXML) aus InfoPath-Lösungen mit verwaltetem Code.
 ms.openlocfilehash: 5069636dde87eb473a2b8bef4b58a6006d557085
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303745"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410532"
 ---
 # <a name="creating-form-templates-using-the-infopath-2003-object-model"></a>Erstellen von Formularvorlagen mit dem InfoPath-Objektmodell 2003
 

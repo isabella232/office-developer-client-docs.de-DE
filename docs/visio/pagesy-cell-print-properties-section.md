@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 396a0f3e-dbbb-3f5b-3c5d-f7dd454a765f
 description: Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt vertikal dargestellt werden soll.
 ms.openlocfilehash: 43d4081439525c516d3da28b6c0e46e9273d85c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339977"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429782"
 ---
 # <a name="pagesy-cell-print-properties-section"></a>Zelle "PagesY" (Abschnitt "Print Properties")
 

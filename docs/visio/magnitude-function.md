@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9f443687-9861-5f51-94c4-f056805f736b
 description: Gibt die Größe des Vektors zurück, dessen Anstieg A ist und dessen Ausführung B ist, multipliziert mit den entsprechenden Konstanten constantA und Konstanteb.
 ms.openlocfilehash: 6393c7827e2553ca4948c8b9c51075ca8e4783bd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317815"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420458"
 ---
 # <a name="magnitude-function"></a>MAGNITUDE Function
 

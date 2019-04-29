@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 849d33e0-922f-49fe-bf2a-460329f0570d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c6a2206cf75308ad7fb955283f22eca3be9e0b3a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283170"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407767"
 ---
 # <a name="pidtagcontactversion-canonical-property"></a>Kanonische Pidtagcontactversion (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die Version der Kontaktinformationen eines Empfängers.
 
 Diese Eigenschaft ist eine der Eigenschaften, die die Identifizierung und den Zugriff auf Informationen zu einem Empfänger bereitstellt. Diese Eigenschaften werden vom Empfänger und der Organisation des Empfängers definiert.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

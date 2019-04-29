@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8140fc7b-b99c-54bb-7af3-7de6fcdae7d3
 description: Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefügt werden kann.
 ms.openlocfilehash: 50f545b3cbd4f7e1541a7f5e8ca32c34d0429c5e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297228"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410791"
 ---
 # <a name="isdroptarget-cell-group-properties-section"></a>Zelle "IsDropTarget" (Abschnitt "Group Properties")
 

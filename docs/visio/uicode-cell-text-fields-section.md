@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1d9717c1-4310-0d62-874f-4df77cd81627
 description: Bestimmt den Code eines eingefügten Felds in früheren Versionen von Visio vor Visio 2000.
 ms.openlocfilehash: 293451b61def59ccfdf849dc597def9521fd22e5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327343"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422215"
 ---
 # <a name="uicode-cell-text-fields-section"></a>Zelle "UICode" (Abschnitt "Text Fields")
 

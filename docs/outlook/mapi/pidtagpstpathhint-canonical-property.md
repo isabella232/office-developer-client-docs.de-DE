@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9cb4af50-3735-4029-a608-a6e7927019dd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 6415ddcec2823192967b8869b46b22b58b08ba5f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286357"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437308"
 ---
 # <a name="pidtagpstpathhint-canonical-property"></a>Kanonische Pidtagpstpathhint (-Eigenschaft
 
@@ -36,7 +36,7 @@ Stellt den Namen der persönlichen Speichertabelle (PST-Datei) bereit, den der B
 
 Wenn stattdessen die **PR_PST_PATH** ([pidtagpstpath (](pidtagpstpath-canonical-property.md))-Eigenschaft verwendet wird, wird das Dialogfeld Konfiguration geöffnet, aber der Benutzer kann den Pfad und viele andere Eigenschaften nicht bearbeiten.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 

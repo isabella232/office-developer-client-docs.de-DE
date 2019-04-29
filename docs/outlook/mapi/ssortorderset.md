@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e7f9be6a-92e7-44a8-93ee-b087713a31df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: db19c3908c419b98b8deb71e2a86d0aa6eebe240
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344422"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438099"
 ---
 # <a name="ssortorderset"></a>SSortOrderSet
 
@@ -43,7 +43,7 @@ typedef struct _SSortOrderSet
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cSorts**
   

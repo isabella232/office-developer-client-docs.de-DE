@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 55834445-8619-f79a-aea0-0f6a1780e016
 description: Stellt eine Zeichenfolge dar, die Informationen für die Auflösung einer URL enthält (z. B. die Koordinaten einer Imagemap). In der Zelle ExtraInfo beispielsweise gibt x = 41&amp;y = die Koordinaten einer ImageMap 7specifies.
 ms.openlocfilehash: df2886ef7911b484cc60e8a476bfa53369fbf646
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357820"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409573"
 ---
 # <a name="extrainfo-cell-hyperlinks-section"></a>Zelle "ExtraInfo" (Abschnitt "Hyperlinks")
 

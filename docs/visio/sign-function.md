@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: fdc032c2-d0bd-1592-de3f-33c478d066ee
 description: Gibt einen Wert zurück, der das Zeichen einer Zahl darstellt.
 ms.openlocfilehash: 34bbbab17de94b0a8c95b4b0bfd3829a06dc7e70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357456"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420654"
 ---
 # <a name="sign-function"></a>SIGN Function
 
@@ -28,12 +28,12 @@ SIGN (* * *Number* * *, * * *Fuzz* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> | Die Zahl, für die das Vorzeichen bestimmt werden soll.  <br/> |
-| _Fuzz_ <br/> |Optional  <br/> |**Numerisch** <br/> |Gibt an, wie klein der Wert einer Zahl sein muss, damit diese als gleich 0 (null) betrachtet wird.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> | Die Zahl, für die das Vorzeichen bestimmt werden soll.  <br/> |
+| _Fuzz_ <br/> |Optional  <br/> |**Numeric** <br/> |Gibt an, wie klein der Wert einer Zahl sein muss, damit diese als gleich 0 (null) betrachtet wird.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Numerisch
+Numeric
   
 ## <a name="remarks"></a>Bemerkungen
 

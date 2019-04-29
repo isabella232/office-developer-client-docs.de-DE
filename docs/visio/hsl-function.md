@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c9314c39-1d2e-a18f-c01b-8817286099dc
 description: Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Sie gibt eine Farbe anhand ihrer Farbton-, Sättigungs-und Helligkeits Komponenten an.
 ms.openlocfilehash: 55703239395c54beedf4b7383435253f9c37006f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329925"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420962"
 ---
 # <a name="hsl-function"></a>HSL-Funktion
 

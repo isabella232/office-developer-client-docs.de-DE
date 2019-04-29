@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4d752d3f-bf36-4711-b1d4-68cd575a062f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a85d1ad0526c5bac91600df32ba941ddbf28a188
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286542"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434837"
 ---
 # <a name="pidtagproofofdeliveryrequested-canonical-property"></a>Kanonische Pidtagproofofdeliveryrequested (-Eigenschaft
 
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält TRUE, wenn ein Nachrichtenabsender einen Übermittlun
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

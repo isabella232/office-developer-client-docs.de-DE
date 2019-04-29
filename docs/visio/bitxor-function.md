@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 672eacaf-a374-c7e2-b39b-8d42d2371aee
 description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in beiden, aber nicht binären number1 und binären number2 1 ist. Andernfalls ist das Bit auf 0 festgelegt.
 ms.openlocfilehash: ab8ff46fe98512d963ef4ecd5c37127353827725
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302989"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439233"
 ---
 # <a name="bitxor-function"></a>BITXOR Function
 
@@ -28,8 +28,8 @@ BITXOR (* * *Binary number1* * *, * * *Binary number2* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _binäre number1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
-| _binäre number2_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
+| _binäre number1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
+| _binäre number2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

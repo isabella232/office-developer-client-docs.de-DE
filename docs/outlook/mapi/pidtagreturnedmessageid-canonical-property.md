@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1f0f13e2-7554-41fc-a7a9-a90c34181c96
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e56d7851b1fe28ddea1703d9ec3ffb7737abeda6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345255"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435628"
 ---
 # <a name="pidtagreturnedmessageid-canonical-property"></a>Kanonische Pidtagreturnedmessageid (-Eigenschaft
 
@@ -36,7 +36,7 @@ Enthält TRUE, wenn die ursprüngliche Nachricht mit einem nicht gelesenen Beric
 
 Ein X. 400-Transportanbieter legt diese Eigenschaft im ungelesenen Bericht fest.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

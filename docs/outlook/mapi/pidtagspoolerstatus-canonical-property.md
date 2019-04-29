@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a10d86fc-3a73-49dc-b974-ed852ec715e9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 426d26cae147faf3f843ac547de9d205d766ac44
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348209"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408677"
 ---
 # <a name="pidtagspoolerstatus-canonical-property"></a>Kanonische Pidtagspoolerstatus (-Eigenschaft
 
@@ -44,7 +44,7 @@ Client Anwendungen sollten diese Eigenschaft nie festlegen. Für eine eingehende
   
 Nachrichtenspeicher Anbieter sollten diese Eigenschaft für Nachrichten, Empfänger Tabellen und die Tabelle für ausgehende Warteschlangen unterstützen. Clients und Anbieter sollten in der Lage sein, Spalten der ausgehenden Warteschlangentabelle festzulegen und basierend auf dieser Eigenschaft einzuschränken.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

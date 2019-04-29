@@ -5,13 +5,13 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b68f8bff-1a20-4dfd-92fe-57869328879d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: dd638a6cd6e5d32e83db827f00dd20de4a5c8a3d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335161"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439198"
 ---
 # <a name="commonly-used-property-sets"></a>Häufig verwendete Eigenschaftensätze
 
@@ -37,7 +37,7 @@ In der folgenden Tabelle sind die einzelnen Eigenschaftensätze mit GUID und Fun
 |Messaging   <br/> |PSETID_Messaging {41F28F13-83F4-4114-A584-EEDB5A6B0BFF}  <br/> |
 |Kurznotiz  <br/> |PSETID_Note {0006200E-0000-0000-C000-000000000046}  <br/> |
 |RSS-Feed  <br/> |PSETID_PostRss {00062041-0000-0000-C000-000000000046}  <br/> |
-|Aufgabe  <br/> |PSETID_Task {00062003-0000-0000-C000-000000000046}  <br/> |
+|Vorgang  <br/> |PSETID_Task {00062003-0000-0000-C000-000000000046}  <br/> |
 |Unified Messaging  <br/> |PSETID_UnifiedMessaging {4442858E-A9E3-4E80-B900-317A210CC15B}  <br/> |
 |Standard  <br/> |PS_MAPI {00020328-0000-0000-C000-000000000046}  <br/> |
 |Synchronisieren  <br/> |SETID_AirSync {71035549-0739-4DCB-9163-00F0580DBBDF}  <br/> |

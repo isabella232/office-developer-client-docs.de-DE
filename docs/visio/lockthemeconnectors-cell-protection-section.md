@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ae7ddd55-7bcc-4bb6-bab7-97806122f166
 description: Verhindert, dass die Zelle ConnectorsSchemeIndex in der Zeile Designeigenschaften geändert wird, indem ein neues Design angewendet oder ein neues Connector-Schema ausgewählt wird. Verhindert nicht, dass Benutzer diesen Wert manuell im ShapeSheet bearbeiten.
 ms.openlocfilehash: 8097e50646fd59f4ac0212cbe9ca2ecfaadab7a2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348237"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438407"
 ---
 # <a name="lockthemeconnectors-cell-protection-section"></a>LockThemeConnectors Cell (Protection section)
 

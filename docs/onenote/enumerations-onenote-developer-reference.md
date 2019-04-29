@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 62912d6e-c39e-4f8b-8cdb-ae9b6376cbc0
 description: This topic describes the enumerations in the OneNote 2013 object model.
 ms.openlocfilehash: 3338e444e5b0bfd0239e363c3161aeb1914b2d53
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299867"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410336"
 ---
 # <a name="enumerations-onenote-developer-reference"></a>AufZählungen (OneNote-Entwicklerreferenz)
 

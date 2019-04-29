@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 38e6bba7-1bf2-3d31-0912-707002454f5d
 description: Gibt den Wert der Helligkeitskomponente einer Farbe zurück.
 ms.openlocfilehash: 17fa43f8e2cd7422428f92724e351436233c2d62
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357981"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419338"
 ---
 # <a name="lum-function"></a>LUM Function
 
@@ -28,7 +28,7 @@ LUM (* * *Expression* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex aus der Farbpalette des Dokuments oder ein Bezug auf eine Zelle, die einen Farbindex enthält.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex aus der Farbpalette des Dokuments oder ein Bezug auf eine Zelle, die einen Farbindex enthält.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

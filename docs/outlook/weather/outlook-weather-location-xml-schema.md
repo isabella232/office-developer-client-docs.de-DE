@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 8bb17e80-3be5-228e-ddb4-fcda03b60ba6
 description: Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Weather Location XML-Schema. Dieses Schema ermöglicht es Wetterdienst Anbietern, auf eine Outlook Web Service-Anforderung für einen Ortscode zu antworten. Der Ortscode sollte dem Standort entsprechen, für den ein Benutzer Wetterinformationen in der Wetter Leiste anfordert.
 ms.openlocfilehash: 153244bc1ddcf84299d1e72821a5ebe65ad4ca4d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355125"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429229"
 ---
 # <a name="outlook-weather-location-xml-schema"></a>XML-Schema für Wetter Standort in Outlook
 
@@ -29,6 +29,6 @@ Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Weath
     
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[Erweitern der Wetterleiste in Outlook](extending-the-weather-bar-in-outlook.md)
+[Erweiterung der Wetterleiste in Outlook](extending-the-weather-bar-in-outlook.md)
   
 

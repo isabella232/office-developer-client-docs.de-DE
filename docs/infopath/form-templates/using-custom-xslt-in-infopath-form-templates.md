@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 32c80bcd-a5d6-af32-38ba-9ca9ff148b99
 description: Sie können die meisten Ansichtselemente erstellen, die Sie wahrscheinlich im Microsoft InfoPath-Formular-Designer benötigen. Falls Sie ein benutzerdefiniertes Ansichtselement benötigen, das nicht von InfoPath erstellt werden kann, können Sie jedoch die XSL-Transformation (XSLT) manuell ändern, mit deren Hilfe von InfoPath die Ansicht erstellt wird. Extrahieren Sie dazu das Formular in die Komponentendateien mithilfe von Export Source Files auf der Registerkarte Veröffentlichen des Microsoft Office backstaging, und bearbeiten Sie die Transformation in Ihrem bevorzugten XML-Editor wie Microsoft Visual Studio oder Notepad.
 ms.openlocfilehash: a61980191dbedeec33b06ad8173ce50126fea781
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299903"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428270"
 ---
 # <a name="using-custom-xslt-in-infopath-form-templates"></a>Verwenden von benutzerdefinierter XSLT in InfoPath-Formularvorlagen
 

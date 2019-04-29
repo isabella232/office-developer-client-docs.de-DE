@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d094411e-ed65-1d0d-5c35-68b003da2696
 description: Legt die horizontale Position einer vertikalen Führung (oder eines Führungspunkts) relativ zum Ursprung seines übergeordneten Objekts fest, an der (bzw. dem) der linke Rand des Shapes ausgerichtet ist.
 ms.openlocfilehash: 5fdf1251c8829fd644d1a4bfd5eab8890c0d3e71
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346543"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437567"
 ---
 # <a name="alignleft-cell-alignment-section"></a>Zelle "AlignLeft" (Abschnitt "Alignment")
 

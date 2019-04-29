@@ -9,11 +9,11 @@ api_type:
 ms.assetid: ac82f7e8-6453-4b4f-8223-3c23d09ca4c6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 82be33090a63f24c430007d9759045c365961f5d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327797"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412513"
 ---
 # <a name="tips-for-better-table-performance"></a>Tipps für eine bessere Tabellenleistung
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 69be9ad3-006a-459e-9cd4-eb3f609d71ad
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2fb9eed0beaf7269ac90a021dae650355484ebc2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330184"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436230"
 ---
 # <a name="pidtagresourceflags-canonical-property"></a>Kanonische Pidtagresourceflags (-Eigenschaft
 
@@ -120,7 +120,7 @@ STATUS_XP_PREFER_LAST
   
 > Statische. Dieser Transport erwartet, dass er der letzte Transport ist, der zum Senden einer Nachricht ausgewählt wurde, wenn mehrere Transportanbieter die Nachricht übertragen können.
     
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

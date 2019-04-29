@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f176308d-efb9-460c-8379-8a12d4f8e017
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ab90b05f8bd92f4cfd90f84078691a293ae159b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350666"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436853"
 ---
 # <a name="pidtagycoordinate-canonical-property"></a>Kanonische Pidtagycoordinate (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die y-Koordinate der Anfangsposition (der oberen linken Ecke) eines Dia
 
 Die **PR_XPOS** ([pidtagxcoordinate (](pidtagxcoordinate-canonical-property.md)), diese Eigenschaft, **PR_DELTAX** ([pidtagdeltax (](pidtagdeltax-canonical-property.md)) und **PR_DELTAY** ([pidtagdeltay (](pidtagdeltay-canonical-property.md)) Eigenschaften Position und Größe des Steuerelements.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

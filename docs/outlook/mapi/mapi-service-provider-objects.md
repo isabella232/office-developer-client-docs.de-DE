@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f8ade454-2450-49e6-a76f-93801055a7e5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0976e986a33d8b96366a84527f227bd05ef7845e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251605"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432268"
 ---
 # <a name="mapi-service-provider-objects"></a>MAPI-Dienstanbieter Objekte
 
@@ -26,7 +26,7 @@ Dienstanbieter implementieren viele Objekte. Einige werden hauptsächlich von MA
 |**Dienstanbieterobjekt**|**Beschreibung**|
 |:-----|:-----|
 |Adressbuchcontainer  <br/> |Enthält Empfängerinformationen für einen Adressbuchanbieter im aktiven Profil; Adressbuchanbieter können über einen oder mehrere Adressbuchcontainer verfügen.  <br/> |
-|Anlage  <br/> |Enthält zusätzliche Daten wie eine Datei oder ein OLE-Objekt, die einer Nachricht zugeordnet werden sollen.  <br/> |
+|Attachment  <br/> |Enthält zusätzliche Daten wie eine Datei oder ein OLE-Objekt, die einer Nachricht zugeordnet werden sollen.  <br/> |
 |Control  <br/> |Aktiviert oder deaktiviert eine Schaltfläche und initiiert die Verarbeitung, wenn auf die Schaltfläche geklickt wird.  <br/> |
 |Verteilerliste  <br/> |Beschreibt eine Gruppierung einzelner Nachrichtenempfänger.  <br/> |
 |Ordner  <br/> |Enthält Nachrichten und andere Nachrichtencontainer.  <br/> |

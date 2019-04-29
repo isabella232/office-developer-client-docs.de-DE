@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02e18d97-25d2-49a3-a63d-26a70895e21c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 04d97dfeeef28aac1d0bbf963074b4262d4fed3d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346305"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436587"
 ---
 # <a name="pidtagreportingmessagetransferagentcertificate-canonical-property"></a>Kanonische Pidtagreportingmessagetransferagentcertificate (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält einen Bezeichner für den Nachrichtenübermittlungs-Agent, der einen Be
 
 Diese Eigenschaft entspricht einem X. 400-Bericht pro Nachrichtenattribut.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

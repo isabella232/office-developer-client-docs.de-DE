@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f34db20d-6501-2026-a5e8-29c4d4cb2405
 description: Gibt einen nicht einheitlichen rationalen B-Spline (NURBS) zurück. Diese Funktion wird in der Zelle "E" in den NURBSTo-Geometrie Zeilen verwendet.
 ms.openlocfilehash: af92374a829c0df8e71ac81e630abc4fa64988dc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32340124"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438456"
 ---
 # <a name="nurbs-function"></a>NURBS Function
 
@@ -29,9 +29,9 @@ NURBS (* * *knotLast* * *, * * *Grad* * *, * * *xType* * *, * * *yType* * *, * *
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _knotLast_ <br/> |Erforderlich  <br/> |**Zeichenfolge** <br/> | Der letzte Knoten.  <br/> |
-| _Grad_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Gradwert des Splines.  <br/> |
-| _xType_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, wie die _x_ -Eingabedaten interpretiert werden sollen. Wenn _xType_ 0 ist, werden alle _x_ -Eingabedaten als Prozentsatz der Breite interpretiert. Wenn _xType_ ist, werden alle _x_ -Eingabedaten als lokale Koordinaten interpretiert.  <br/> |
-| _yType_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, wie die _y_ -Eingabedaten interpretiert werden sollen. Wenn _yType_ 0 ist, werden alle _y_ -Eingabedaten als Prozentsatz der Höhe interpretiert. Wenn _yType_ ist, werden alle _y_ -Eingabedaten als lokale Koordinaten interpretiert.  <br/> |
+| _Grad_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Gradwert des Splines.  <br/> |
+| _xType_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Gibt an, wie die _x_ -Eingabedaten interpretiert werden sollen. Wenn _xType_ 0 ist, werden alle _x_ -Eingabedaten als Prozentsatz der Breite interpretiert. Wenn _xType_ ist, werden alle _x_ -Eingabedaten als lokale Koordinaten interpretiert.  <br/> |
+| _yType_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Gibt an, wie die _y_ -Eingabedaten interpretiert werden sollen. Wenn _yType_ 0 ist, werden alle _y_ -Eingabedaten als Prozentsatz der Höhe interpretiert. Wenn _yType_ ist, werden alle _y_ -Eingabedaten als lokale Koordinaten interpretiert.  <br/> |
 | _x1_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine x-Koordinate.  <br/> |
 | _Y1_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine y-Koordinate.  <br/> |
 | _Knot1_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Knoten auf dem B-Spline.  <br/> |

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 435e49ee-0b51-8ce3-0589-3f0717026f4a
 description: Enthält die Formel, die ausgeführt werden soll, wenn ein Benutzer einen Befehl in einem Kontext- oder Aktionstagmenü auswählt.
 ms.openlocfilehash: e6bc576982cad871804cbcbc5f3d9c6bceb558c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283065"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407613"
 ---
 # <a name="action-cell-actions-section"></a>Zelle "Action" (Abschnitt "Actions")
 

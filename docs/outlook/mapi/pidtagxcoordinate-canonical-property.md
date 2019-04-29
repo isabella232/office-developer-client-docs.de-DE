@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 030d5c21-ab02-4047-bf2d-9a402a1e9102
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 87df676dccdb067302d62da2bd1fda6b634ed4f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350659"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436195"
 ---
 # <a name="pidtagxcoordinate-canonical-property"></a>Kanonische Pidtagxcoordinate (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die x-Koordinate der Anfangsposition (der oberen linken Ecke) eines Dia
 
 Diese Eigenschaft, **PR_YPOS** ([Pidtagycoordinate (](pidtagycoordinate-canonical-property.md)), **PR_DELTAX** ([pidtagdeltax (](pidtagdeltax-canonical-property.md)) und **PR_DELTAY** ([pidtagdeltay (](pidtagdeltay-canonical-property.md))-Eigenschaften positionieren und Größe des Dialogfeld-Steuerelements.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

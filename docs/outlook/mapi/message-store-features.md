@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d9167cd2-fc88-46b1-9a26-151955fb606c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 092cf56aea2e246fbb7ef2016a2662a1f67f889b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356903"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439520"
 ---
 # <a name="message-store-features"></a>Nachrichtenspeicher Features
 
@@ -23,7 +23,7 @@ ms.locfileid: "32356903"
   
 Nachrichtenspeicher Anbieter sind komplexer als andere MAPI-Dienstanbieter, da Nachrichtenspeicher Anbieter über eine breitere Auswahl von Features verfügen, die Sie implementieren können. Die Liste der erforderlichen Funktionen für einen Nachrichtenspeicher Anbieter ist relativ kurz. Ein typischer Nachrichtenspeicher Anbieter unterstützt jedoch eine Reihe von optionalen Features, da viele der optionalen Features für die meisten MAPI-Clients sehr nützlich oder erforderlich sind. In der folgenden Tabelle sind die wichtigsten Features aufgeführt, die von Nachrichtenspeicher Anbietern implementiert werden können, und die Angabe, ob jedes Feature für alle Nachrichtenspeicher Anbieter und für standardmäßige Nachrichtenspeicher Anbieter erforderlich oder optional ist.
   
-|**Feature**|**All**|**Default**|
+|**Funktion**|**All**|**Standard**|
 |:-----|:-----|:-----|
 |Status wird mit der MAPI-Statustabelle bereitgestellt.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
 |Implementieren von Folder-Objekten.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |

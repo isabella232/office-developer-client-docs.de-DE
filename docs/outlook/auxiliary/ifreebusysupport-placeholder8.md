@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: dcb526f8-1476-39da-cb07-42575db94320
 description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
 ms.openlocfilehash: b18d21bdd0d0d2c3a909a21906b18236f7575560
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319362"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437707"
 ---
 # <a name="ifreebusysupportplaceholder8"></a>IFreeBusySupport::Placeholder8
 

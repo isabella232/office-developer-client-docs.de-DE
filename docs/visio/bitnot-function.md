@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7b6486bb-3618-3747-4b00-93bd55767c1c
 description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit nur dann auf 1 festgelegt ist, wenn das entsprechende Bit in binary number 0 ist. Andernfalls ist das Bit auf 0 festgelegt.
 ms.openlocfilehash: 34ea6fd614feae8e3c8e97e34b7ff6c531f4c123
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330009"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438834"
 ---
 # <a name="bitnot-function"></a>BITNOT Function
 
@@ -28,7 +28,7 @@ BITNOT (* * *Binärzahl* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _binäre Zahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Eine 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Eine 16-Bit-Binärzahl.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

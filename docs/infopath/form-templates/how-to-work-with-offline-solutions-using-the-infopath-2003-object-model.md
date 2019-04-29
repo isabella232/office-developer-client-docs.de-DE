@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 634ccd8c-0b5f-4161-875c-0e546a517377
 description: Das InfoPath 2003-kompatible Objektmodell stellt die MachineOnlineState-Eigenschaft des Application-Objekts bereit, mit deren Hilfe der Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Je nach dem Status der Verbindung können vom Formularcode verschiedene Aktionen ausgeführt werden.
 ms.openlocfilehash: 452eb0d92b09dc0c3f9b2c247f7cda243dc8eb13
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303570"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429243"
 ---
 # <a name="work-with-offline-solutions-using-the-infopath-object-model"></a>Arbeiten mit Offlinelösungen mithilfe des InfoPath-Objektmodells
 

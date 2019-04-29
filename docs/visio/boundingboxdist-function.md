@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8a2490f2-48c4-5df3-a3b3-40e8e0c80479
 description: Gibt die Messung für den angegebenen Teil des das Shape umgebenden Felds zurück.
 ms.openlocfilehash: a62d5b82c310e7b99e16b70982b75a68172b7fd8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348965"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428277"
 ---
 # <a name="boundingboxdist-function"></a>BOUNDINGBOXDIST Function
 
@@ -41,7 +41,7 @@ BOUNDINGBOXDIST (* * *Index* * *)
 
  *Index* kann einer der folgenden Werte sein. 
   
-|**Element**|**Wert**|
+|**Item**|**Wert**|
 |:-----|:-----|
 |Width  <br/> |0  <br/> |
 |Height  <br/> |1  <br/> |

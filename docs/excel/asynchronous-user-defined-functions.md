@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 142eb27e-fb6f-4da3-bfb7-a88115bbb5d5
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7fdf3bd09914981865c911fd65a78d044ad582f4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304172"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412310"
 ---
 # <a name="asynchronous-user-defined-functions"></a>Asynchrone benutzerdefinierte Funktionen
 

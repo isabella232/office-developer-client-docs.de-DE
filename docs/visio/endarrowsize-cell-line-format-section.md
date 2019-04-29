@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e2ecf7c0-a0e9-951f-676a-8e5857bb6544
 description: Bestimmt die Pfeilspitzengröße am Linienende.
 ms.openlocfilehash: 768a2b2adb05248049377eaee07194cdb89ed810
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328993"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438078"
 ---
 # <a name="endarrowsize-cell-line-format-section"></a>Zelle "EndArrowSize" (Abschnitt "Line Format")
 
@@ -23,9 +23,9 @@ Bestimmt die Pfeilspitzengröße am Linienende.
 |**Wert**|**Size**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Sehr klein  <br/> |**visArrowSizeVerySmall** <br/> |
-|1  <br/> |KKleinste  <br/> |**visArrowSizeSmall** <br/> |
+|1  <br/> |Small  <br/> |**visArrowSizeSmall** <br/> |
 |2  <br/> |Mittel  <br/> |**visArrowSizeMedium** <br/> |
-|3  <br/> |Kgrösste  <br/> |**visArrowSizeLarge** <br/> |
+|3  <br/> |Large  <br/> |**visArrowSizeLarge** <br/> |
 |4  <br/> |Sehr groß  <br/> |**visArrowSizeVeryLarge** <br/> |
 |5  <br/> |Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
 |6  <br/> |Kolossalen  <br/> |**visArrowSizeColossal** <br/> |

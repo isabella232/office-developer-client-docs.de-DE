@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: db80f147-71a0-0b23-bc7e-fe1915dfdd21
 description: Berechnet den korrekten Drehwinkel des Textblocks für die angegebene Form Drehung, um zu verhindern, dass der Text auf den Kopf gestellt wird.
 ms.openlocfilehash: 77c944d954292e231f8bacbe3c8a4433aad5d689
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360186"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429285"
 ---
 # <a name="gravity-function"></a>GRAVITY Function
 

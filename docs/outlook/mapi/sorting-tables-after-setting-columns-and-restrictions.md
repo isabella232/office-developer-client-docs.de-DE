@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 57db0314-1df0-4fd2-b443-223b0512f1ad
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 62220794f325165e67db5397da2795d49959ef60
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344485"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409881"
 ---
 # <a name="sorting-tables-after-setting-columns-and-restrictions"></a>Sortieren von Tabellen nach dem Festlegen von Spalten und Einschränkungen
 

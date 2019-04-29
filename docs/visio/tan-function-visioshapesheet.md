@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c820cb95-92e8-5d56-22d7-0a984acc6c59
 description: Gibt den Tangens eines Winkels zurück.
 ms.openlocfilehash: 9ece28baa29f1fdc7d7d31938dc83d8f68f8982d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332347"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438015"
 ---
 # <a name="tan-function-visioshapesheet"></a>TAN-Funktion (VisioShapeSheet)
 
@@ -28,11 +28,11 @@ TAN (* * *Winkel* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen Tangente abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Tangente abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Numerisch
+Numeric
   
 ## <a name="remarks"></a>Bemerkungen
 

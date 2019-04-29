@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 24261b77-e3e8-7434-a503-9f23798bdab1
 description: Stellt die x-Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar.
 ms.openlocfilehash: 4bd3099b2c13572023b0b813b1cc69a7b211546b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329092"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411568"
 ---
 # <a name="endx-cell-1-d-endpoints-section"></a>Zelle "EndX" (Abschnitt "1-D Endpoints")
 

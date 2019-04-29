@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 97f08cde-d6e4-8935-1758-4018a3baf682
 description: Ruft den Typ und die Kategorien Informationen für das angegebene Konto ab.
 ms.openlocfilehash: 88021537cc7ff4c55759081e6f3619c2a9f10ea3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318186"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437903"
 ---
 # <a name="iolkaccountgetaccountinfo"></a>IOlkAccount::GetAccountInfo
 

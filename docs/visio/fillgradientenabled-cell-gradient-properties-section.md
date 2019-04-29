@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 80db9c0c-13c6-47de-967f-ade6e5899f14
 description: Bestimmt, ob ein Füll Verlauf für dieses Shape aktiviert ist.
 ms.openlocfilehash: 17f617c13b632318be22b86a3354a194f0f835f5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322491"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431211"
 ---
 # <a name="fillgradientenabled-cell-gradient-properties-section"></a>Zelle "FillGradientEnabled" (Abschnitt "Gradient Properties")
 

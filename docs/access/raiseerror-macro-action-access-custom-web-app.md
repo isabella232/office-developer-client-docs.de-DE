@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 5e29bf64-300a-4094-82ff-664e79782d86
 description: Mit der Auslösenfehler-Aktion wird ein Popupfenster mit einer angegebenen Fehlermeldung angezeigt.
 ms.openlocfilehash: 49e544d2234759709c19052b5540d42e88070849
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308015"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408243"
 ---
 # <a name="raiseerror-macro-action-access-custom-web-app"></a>Auslösenfehler-Makroaktion (benutzerdefinierte Access-Web-App)
 
@@ -24,7 +24,7 @@ Mit der **auslösenfehler** -Aktion wird ein Popupfenster mit einer angegebenen 
 > [!NOTE]
 > Die **AuslösenFehler**-Aktion ist nur in Datenmakros verfügbar. 
   
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die **auslösenfehler** -Aktion hat das folgende Argument. 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 40d7e38e-b3b0-8616-ed27-1f963a841e03
 description: Definiert die Position eines Tabstopps. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Tabstoppposition unverändert.
 ms.openlocfilehash: ef17b38d708103ca004594ba04ff5b8d1ada13bf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307749"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409930"
 ---
 # <a name="position-cell-tabs-section"></a>Zelle "Position" (Abschnitt "Tabs")
 

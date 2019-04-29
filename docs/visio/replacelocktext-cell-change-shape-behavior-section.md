@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 31f43ebe-3758-4fd9-83b5-775041c5890f
 description: Gibt an, ob die Werte der angegebenen Zellen in einem Master-Shape die Werte (einschließlich lokaler Werte) einer Form überschreiben, die während einer Form Ersetzung ersetzt wird. Die ReplaceLockText bestimmt, ob der Text, der im Master angezeigt wird, den Text der Form überschreibt, die ersetzt wird.
 ms.openlocfilehash: 299bd571ad935886879abb11108c3d0bd28e3183
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348202"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411918"
 ---
 # <a name="replacelocktext-cell-change-shape-behavior-section"></a>Zelle "ReplaceLockText" (Abschnitt "Shape-Verhalten ändern")
 

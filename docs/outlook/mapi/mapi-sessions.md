@@ -9,11 +9,11 @@ api_type:
 ms.assetid: c5a7c137-393e-40ff-a2b9-afe02da2435a
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 3dd55d8ee3cb2751fb27184f0069ae831e2164ee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319583"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435873"
 ---
 # <a name="mapi-sessions"></a>MAPI-Sitzungen
 
@@ -46,5 +46,5 @@ Informationen zur Behandlung von Sitzungen innerhalb einer Clientanwendung finde
 - [MAPILogonEx](mapilogonex.md)  
 - [IMAPISession : IUnknown](imapisessioniunknown.md)
 - [MAPI-Sitzungs Verarbeitung](mapi-session-handling.md)  
-- [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
+- [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5cc642de-21f0-4826-bf21-aac4bcfc1328
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5bfef87baa2dffa4605f9a7afa3833024f514430
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328953"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409237"
 ---
 # <a name="imapipropdeleteprops"></a>IMAPIProp::DeleteProps
 

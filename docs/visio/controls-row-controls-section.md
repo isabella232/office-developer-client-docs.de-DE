@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a57bdcd9-566b-5054-7458-7d84cbb78d23
 description: Enthält Zellen, die die x-und y-Koordinaten und das Verhalten der einzelnen Steuerelemente definieren, die für ein Shape definiert sind. Ein Shape enthält eine Zeile mit Steuerelementen für jeden Steuerpunkt.
 ms.openlocfilehash: dd5a96fe297cb62996ac2ab4d2974b8d1ae61a14
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282957"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438190"
 ---
 # <a name="controls-row-controls-section"></a>Zeile "Controls" (Abschnitt "Controls")
 
