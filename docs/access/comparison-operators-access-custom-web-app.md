@@ -7,35 +7,35 @@ localization_priority: Normal
 ms.assetid: e47e1182-e44b-43a2-8254-cc39a9ba1269
 description: ''
 ms.openlocfilehash: 37e693e13da904999973774f8fc1737126a77f03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282243"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412842"
 ---
-# <a name="comparison-operators-access-custom-web-app"></a><span data-ttu-id="9bde6-102">Vergleichsoperatoren (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-102">Comparison Operators (Access custom web app)</span></span>
+# <a name="comparison-operators-access-custom-web-app"></a><span data-ttu-id="9f987-102">Vergleichsoperatoren (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-102">Comparison Operators (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="9bde6-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="9bde6-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="9f987-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="9f987-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="9bde6-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="9bde6-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9f987-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="9f987-105">In this section</span></span>
 
-- [<span data-ttu-id="9bde6-106">\<(Kleiner als) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-106">\< (Less Than) (Access custom web app)</span></span>](less-thanaccess-custom-web-app.md)
+- [<span data-ttu-id="9f987-106">\<(Kleiner als) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-106">\< (Less Than) (Access custom web app)</span></span>](less-thanaccess-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-107">\<= (Kleiner als oder gleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-107">\<= (Less Than or Equal To) (Access custom web app)</span></span>](equalsless-than-or-equal-toaccess-custom-web-app.md)
+- [<span data-ttu-id="9f987-107">\<= (Kleiner als oder gleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-107">\<= (Less Than or Equal To) (Access custom web app)</span></span>](equalsless-than-or-equal-toaccess-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-108">\<\>(UnGleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-108">\<\> (Not Equal To) (Access custom web app)</span></span>](not-equal-toaccess-custom-web-app.md)
+- [<span data-ttu-id="9f987-108">\<\>(UnGleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-108">\<\> (Not Equal To) (Access custom web app)</span></span>](not-equal-toaccess-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-109">= (Gleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-109">= (Equals) (Access custom web app)</span></span>](equalsequalsaccess-custom-web-app.md)
+- [<span data-ttu-id="9f987-109">= (Gleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-109">= (Equals) (Access custom web app)</span></span>](equalsequalsaccess-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-110">\>(Größer als) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-110">\> (Greater Than) (Access custom web app)</span></span>](greater-thanaccess-custom-web-app.md)
+- [<span data-ttu-id="9f987-110">\>(Größer als) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-110">\> (Greater Than) (Access custom web app)</span></span>](greater-thanaccess-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-111">\>= (Größer als oder gleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-111">\>= (Greater Than or Equal To) (Access custom web app)</span></span>](equalsgreater-than-or-equal-toaccess-custom-web-app.md)
+- [<span data-ttu-id="9f987-111">\>= (Größer als oder gleich) (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-111">\>= (Greater Than or Equal To) (Access custom web app)</span></span>](equalsgreater-than-or-equal-toaccess-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-112">BeTWEEN (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-112">BETWEEN (Access custom web app)</span></span>](between-access-custom-web-app.md)
+- [<span data-ttu-id="9f987-112">BeTWEEN (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-112">BETWEEN (Access custom web app)</span></span>](between-access-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-113">IN (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-113">IN (Access custom web app)</span></span>](in-access-custom-web-app.md)
+- [<span data-ttu-id="9f987-113">IN (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-113">IN (Access custom web app)</span></span>](in-access-custom-web-app.md)
     
-- [<span data-ttu-id="9bde6-114">LIKE (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9bde6-114">LIKE (Access custom web app)</span></span>](like-access-custom-web-app.md)
+- [<span data-ttu-id="9f987-114">LIKE (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9f987-114">LIKE (Access custom web app)</span></span>](like-access-custom-web-app.md)
     
 

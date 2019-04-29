@@ -10,35 +10,35 @@ localization_priority: Normal
 ms.assetid: 1d0954c5-b2cb-6c5d-62b3-a68011cf0c85
 description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in binary number1 oder Binary number2 1 ist. Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in binären number1 als auch in binären number2 0 ist.
 ms.openlocfilehash: 13bda2c6c65557b1f8372432cf919b2aaf2d75de
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303374"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408082"
 ---
-# <a name="bitor-function"></a><span data-ttu-id="06e7b-104">BITOR Function</span><span class="sxs-lookup"><span data-stu-id="06e7b-104">BITOR Function</span></span>
+# <a name="bitor-function"></a><span data-ttu-id="b6a1e-104">BITOR Function</span><span class="sxs-lookup"><span data-stu-id="b6a1e-104">BITOR Function</span></span>
 
-<span data-ttu-id="06e7b-105">Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in *Binary number1* oder *Binary number2* 1 ist.</span><span class="sxs-lookup"><span data-stu-id="06e7b-105">Returns a 16-bit binary number in which each bit is set to 1 if the corresponding bit in either  *binary number1*  or  *binary number2*  is 1.</span></span> <span data-ttu-id="06e7b-106">Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in *binären number1* als auch in *binären number2* 0 ist.</span><span class="sxs-lookup"><span data-stu-id="06e7b-106">The bit is set to 0 only if the corresponding bit is 0 in both  *binary number1*  and  *binary number2*  .</span></span> 
+<span data-ttu-id="b6a1e-105">Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in *Binary number1* oder *Binary number2* 1 ist.</span><span class="sxs-lookup"><span data-stu-id="b6a1e-105">Returns a 16-bit binary number in which each bit is set to 1 if the corresponding bit in either  *binary number1*  or  *binary number2*  is 1.</span></span> <span data-ttu-id="b6a1e-106">Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in *binären number1* als auch in *binären number2* 0 ist.</span><span class="sxs-lookup"><span data-stu-id="b6a1e-106">The bit is set to 0 only if the corresponding bit is 0 in both  *binary number1*  and  *binary number2*  .</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="06e7b-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="06e7b-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b6a1e-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="b6a1e-107">Syntax</span></span>
 
-<span data-ttu-id="06e7b-108">BITOR (\* \* *Binary number1* \* \*, \* \* *Binary number2* \* \*)</span><span class="sxs-lookup"><span data-stu-id="06e7b-108">BITOR(\*\* *binary number1* \*\*, \*\* *binary number2* \*\* )</span></span> 
+<span data-ttu-id="b6a1e-108">BITOR (\* \* *Binary number1* \* \*, \* \* *Binary number2* \* \*)</span><span class="sxs-lookup"><span data-stu-id="b6a1e-108">BITOR(\*\* *binary number1* \*\*, \*\* *binary number2* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="06e7b-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="06e7b-109">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="b6a1e-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="b6a1e-109">Parameters</span></span>
 
-|<span data-ttu-id="06e7b-110">**Name**</span><span class="sxs-lookup"><span data-stu-id="06e7b-110">**Name**</span></span>|<span data-ttu-id="06e7b-111">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="06e7b-111">**Required/Optional**</span></span>|<span data-ttu-id="06e7b-112">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="06e7b-112">**Data Type**</span></span>|<span data-ttu-id="06e7b-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="06e7b-113">**Description**</span></span>|
+|<span data-ttu-id="b6a1e-110">**Name**</span><span class="sxs-lookup"><span data-stu-id="b6a1e-110">**Name**</span></span>|<span data-ttu-id="b6a1e-111">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="b6a1e-111">**Required/Optional**</span></span>|<span data-ttu-id="b6a1e-112">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="b6a1e-112">**Data Type**</span></span>|<span data-ttu-id="b6a1e-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b6a1e-113">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="06e7b-114">_binäre number1_</span><span class="sxs-lookup"><span data-stu-id="06e7b-114">_binary number1_</span></span> <br/> |<span data-ttu-id="06e7b-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="06e7b-115">Required</span></span>  <br/> |<span data-ttu-id="06e7b-116">**Numerisch**</span><span class="sxs-lookup"><span data-stu-id="06e7b-116">**Numeric**</span></span> <br/> |<span data-ttu-id="06e7b-117">Die erste 16-Bit-Binärzahl.</span><span class="sxs-lookup"><span data-stu-id="06e7b-117">The first 16-bit binary number.</span></span>  <br/> |
-| <span data-ttu-id="06e7b-118">_binäre number2_</span><span class="sxs-lookup"><span data-stu-id="06e7b-118">_binary number2_</span></span> <br/> |<span data-ttu-id="06e7b-119">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="06e7b-119">Required</span></span>  <br/> |<span data-ttu-id="06e7b-120">**Numerisch**</span><span class="sxs-lookup"><span data-stu-id="06e7b-120">**Numeric**</span></span> <br/> |<span data-ttu-id="06e7b-121">Die zweite 16-Bit-Binärzahl.</span><span class="sxs-lookup"><span data-stu-id="06e7b-121">The second 16-bit binary number.</span></span>  <br/> |
+| <span data-ttu-id="b6a1e-114">_binäre number1_</span><span class="sxs-lookup"><span data-stu-id="b6a1e-114">_binary number1_</span></span> <br/> |<span data-ttu-id="b6a1e-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="b6a1e-115">Required</span></span>  <br/> |<span data-ttu-id="b6a1e-116">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="b6a1e-116">**Numeric**</span></span> <br/> |<span data-ttu-id="b6a1e-117">Die erste 16-Bit-Binärzahl.</span><span class="sxs-lookup"><span data-stu-id="b6a1e-117">The first 16-bit binary number.</span></span>  <br/> |
+| <span data-ttu-id="b6a1e-118">_binäre number2_</span><span class="sxs-lookup"><span data-stu-id="b6a1e-118">_binary number2_</span></span> <br/> |<span data-ttu-id="b6a1e-119">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="b6a1e-119">Required</span></span>  <br/> |<span data-ttu-id="b6a1e-120">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="b6a1e-120">**Numeric**</span></span> <br/> |<span data-ttu-id="b6a1e-121">Die zweite 16-Bit-Binärzahl.</span><span class="sxs-lookup"><span data-stu-id="b6a1e-121">The second 16-bit binary number.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="06e7b-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="06e7b-122">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b6a1e-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b6a1e-122">Return value</span></span>
 
-<span data-ttu-id="06e7b-123">16-bit Binary</span><span class="sxs-lookup"><span data-stu-id="06e7b-123">16-bit Binary</span></span>
+<span data-ttu-id="b6a1e-123">16-bit Binary</span><span class="sxs-lookup"><span data-stu-id="b6a1e-123">16-bit Binary</span></span>
   
-## <a name="example"></a><span data-ttu-id="06e7b-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="06e7b-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6a1e-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b6a1e-124">Example</span></span>
 
-<span data-ttu-id="06e7b-125">BITOR (12, 6)</span><span class="sxs-lookup"><span data-stu-id="06e7b-125">BITOR(12,6)</span></span>
+<span data-ttu-id="b6a1e-125">BITOR (12, 6)</span><span class="sxs-lookup"><span data-stu-id="b6a1e-125">BITOR(12,6)</span></span>
   
-<span data-ttu-id="06e7b-p103">Gibt 14 zurück. Die Zahl 12 entspricht 0...01100. Die Zahl 6 entspricht 0...00110. Daher ergibt BITOR(12,6) den Wert 0...01110.</span><span class="sxs-lookup"><span data-stu-id="06e7b-p103">Returns 14. The 12 = 0...01100. The 6 = 0...00110. Therefore, BITOR(12,6) = 0...01110.</span></span>
+<span data-ttu-id="b6a1e-p103">Gibt 14 zurück. Die Zahl 12 entspricht 0...01100. Die Zahl 6 entspricht 0...00110. Daher ergibt BITOR(12,6) den Wert 0...01110.</span><span class="sxs-lookup"><span data-stu-id="b6a1e-p103">Returns 14. The 12 = 0...01100. The 6 = 0...00110. Therefore, BITOR(12,6) = 0...01110.</span></span>
   
 

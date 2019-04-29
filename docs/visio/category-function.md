@@ -10,18 +10,18 @@ localization_priority: Normal
 ms.assetid: 0a64808d-448d-4121-ba60-e191762f2ab1
 description: Gibt den Text aus dem Feld Category der Eigenschaften eines Dokuments zurück.
 ms.openlocfilehash: b066064bcf1e3d0e3cb3b0d7fda7034c6d562858
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337219"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412709"
 ---
-# <a name="category-function"></a><span data-ttu-id="dacf0-103">CATEGORY Function</span><span class="sxs-lookup"><span data-stu-id="dacf0-103">CATEGORY Function</span></span>
+# <a name="category-function"></a><span data-ttu-id="d5736-103">CATEGORY Function</span><span class="sxs-lookup"><span data-stu-id="d5736-103">CATEGORY Function</span></span>
 
-<span data-ttu-id="dacf0-104">Gibt den Text aus dem Feld **Category** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="dacf0-104">Returns the text from the **Category** field of a document's properties.</span></span> 
+<span data-ttu-id="d5736-104">Gibt den Text aus dem Feld **Category** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="d5736-104">Returns the text from the **Category** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="dacf0-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="dacf0-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d5736-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d5736-105">Syntax</span></span>
 
-<span data-ttu-id="dacf0-106">CATEGORY ( )</span><span class="sxs-lookup"><span data-stu-id="dacf0-106">CATEGORY ( )</span></span>
+<span data-ttu-id="d5736-106">CATEGORY ( )</span><span class="sxs-lookup"><span data-stu-id="d5736-106">CATEGORY ( )</span></span>
   
 

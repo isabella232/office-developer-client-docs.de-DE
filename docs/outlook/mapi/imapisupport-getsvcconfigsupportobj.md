@@ -13,19 +13,19 @@ api_type:
 ms.assetid: 56c3bdae-a3a8-4334-b6d2-a89c6820d72e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 6de0fed4df9d23e67c3520ffb019a961b890f988
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316557"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411309"
 ---
-# <a name="imapisupportgetsvcconfigsupportobj"></a><span data-ttu-id="eca7b-103">IMAPISupport::GetSvcConfigSupportObj</span><span class="sxs-lookup"><span data-stu-id="eca7b-103">IMAPISupport::GetSvcConfigSupportObj</span></span>
+# <a name="imapisupportgetsvcconfigsupportobj"></a><span data-ttu-id="357f7-103">IMAPISupport::GetSvcConfigSupportObj</span><span class="sxs-lookup"><span data-stu-id="357f7-103">IMAPISupport::GetSvcConfigSupportObj</span></span>
 
   
   
-<span data-ttu-id="eca7b-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="eca7b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="357f7-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="357f7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="eca7b-105">Erstellt ein Support Objekt für den Nachrichtendienst.</span><span class="sxs-lookup"><span data-stu-id="eca7b-105">Creates a message service support object.</span></span>
+<span data-ttu-id="357f7-105">Erstellt ein Support Objekt für den Nachrichtendienst.</span><span class="sxs-lookup"><span data-stu-id="357f7-105">Creates a message service support object.</span></span>
   
 ```cpp
 HRESULT GetSvcConfigSupportObj(
@@ -34,41 +34,41 @@ HRESULT GetSvcConfigSupportObj(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="eca7b-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="eca7b-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="357f7-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="357f7-106">Parameters</span></span>
 
- <span data-ttu-id="eca7b-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="eca7b-107">_ulFlags_</span></span>
+ <span data-ttu-id="357f7-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="357f7-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="eca7b-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="eca7b-108">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="357f7-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="357f7-108">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="eca7b-109">_lppSvcSupport_</span><span class="sxs-lookup"><span data-stu-id="eca7b-109">_lppSvcSupport_</span></span>
+ <span data-ttu-id="357f7-109">_lppSvcSupport_</span><span class="sxs-lookup"><span data-stu-id="357f7-109">_lppSvcSupport_</span></span>
   
-> <span data-ttu-id="eca7b-110">Out Ein Zeiger auf einen Zeiger auf das Support Objekt des neuen Nachrichtendiensts.</span><span class="sxs-lookup"><span data-stu-id="eca7b-110">[out] A pointer to a pointer to the new message service support object.</span></span>
+> <span data-ttu-id="357f7-110">Out Ein Zeiger auf einen Zeiger auf das Support Objekt des neuen Nachrichtendiensts.</span><span class="sxs-lookup"><span data-stu-id="357f7-110">[out] A pointer to a pointer to the new message service support object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="eca7b-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="eca7b-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="357f7-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="357f7-111">Return value</span></span>
 
-<span data-ttu-id="eca7b-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="eca7b-112">S_OK</span></span> 
+<span data-ttu-id="357f7-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="357f7-112">S_OK</span></span> 
   
-> <span data-ttu-id="eca7b-113">Das Konfigurations Unterstützungsobjekt wurde erfolgreich erstellt.</span><span class="sxs-lookup"><span data-stu-id="eca7b-113">The configuration support object was successfully created.</span></span>
+> <span data-ttu-id="357f7-113">Das Konfigurations Unterstützungsobjekt wurde erfolgreich erstellt.</span><span class="sxs-lookup"><span data-stu-id="357f7-113">The configuration support object was successfully created.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="eca7b-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="eca7b-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="357f7-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="357f7-114">Remarks</span></span>
 
-<span data-ttu-id="eca7b-115">Die **IMAPISupport:: GetSvcConfigSupportObj** -Methode wird für alle Support-Objekte implementiert.</span><span class="sxs-lookup"><span data-stu-id="eca7b-115">The **IMAPISupport::GetSvcConfigSupportObj** method is implemented for all support objects.</span></span> <span data-ttu-id="eca7b-116">Dienstanbieter rufen **GetSvcConfigSupportObj** auf, um ein Konfigurations Unterstützungsobjekt zu erstellen, das an eine Nachrichtendienst-Einstiegspunktfunktion weitergegeben wird.</span><span class="sxs-lookup"><span data-stu-id="eca7b-116">Service providers call **GetSvcConfigSupportObj** to create a configuration support object to pass to a message service entry point function.</span></span> 
+<span data-ttu-id="357f7-115">Die **IMAPISupport:: GetSvcConfigSupportObj** -Methode wird für alle Support-Objekte implementiert.</span><span class="sxs-lookup"><span data-stu-id="357f7-115">The **IMAPISupport::GetSvcConfigSupportObj** method is implemented for all support objects.</span></span> <span data-ttu-id="357f7-116">Dienstanbieter rufen **GetSvcConfigSupportObj** auf, um ein Konfigurations Unterstützungsobjekt zu erstellen, das an eine Nachrichtendienst-Einstiegspunktfunktion weitergegeben wird.</span><span class="sxs-lookup"><span data-stu-id="357f7-116">Service providers call **GetSvcConfigSupportObj** to create a configuration support object to pass to a message service entry point function.</span></span> 
   
-<span data-ttu-id="eca7b-117">Eine Nachrichtendienst-Einstiegspunktfunktion basiert auf dem [MSGSERVICEENTRY](msgserviceentry.md) -Prototyp und wird von Methoden der [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="eca7b-117">A message service entry point function is based on the [MSGSERVICEENTRY](msgserviceentry.md) prototype and is called by methods of the [IMsgServiceAdmin](imsgserviceadminiunknown.md) interface.</span></span> <span data-ttu-id="eca7b-118">Eine Nachrichtendienst-Einstiegspunktfunktion ermöglicht es Nachrichtendiensten, sich selbst zu konfigurieren oder andere Aktionen auszuführen, wenn das Profil geändert wird.</span><span class="sxs-lookup"><span data-stu-id="eca7b-118">A message service entry point function allows message services to configure themselves or perform other actions when the profile is changed.</span></span> <span data-ttu-id="eca7b-119">Einstiegspunktfunktionen für den Nachrichtendienst können Konfigurationsänderungen unterstützen, indem ein Eigenschaftenblatt oder ein Eigenschafts Wertarray angezeigt wird, das an die [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) -Methode übergeben wird.</span><span class="sxs-lookup"><span data-stu-id="eca7b-119">Message service entry point functions can support configuration changes by displaying a property sheet or through a property value array passed to the [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) method.</span></span> 
+<span data-ttu-id="357f7-117">Eine Nachrichtendienst-Einstiegspunktfunktion basiert auf dem [MSGSERVICEENTRY](msgserviceentry.md) -Prototyp und wird von Methoden der [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="357f7-117">A message service entry point function is based on the [MSGSERVICEENTRY](msgserviceentry.md) prototype and is called by methods of the [IMsgServiceAdmin](imsgserviceadminiunknown.md) interface.</span></span> <span data-ttu-id="357f7-118">Eine Nachrichtendienst-Einstiegspunktfunktion ermöglicht es Nachrichtendiensten, sich selbst zu konfigurieren oder andere Aktionen auszuführen, wenn das Profil geändert wird.</span><span class="sxs-lookup"><span data-stu-id="357f7-118">A message service entry point function allows message services to configure themselves or perform other actions when the profile is changed.</span></span> <span data-ttu-id="357f7-119">Einstiegspunktfunktionen für den Nachrichtendienst können Konfigurationsänderungen unterstützen, indem ein Eigenschaftenblatt oder ein Eigenschafts Wertarray angezeigt wird, das an die [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) -Methode übergeben wird.</span><span class="sxs-lookup"><span data-stu-id="357f7-119">Message service entry point functions can support configuration changes by displaying a property sheet or through a property value array passed to the [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) method.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="eca7b-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="eca7b-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="357f7-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="357f7-120">See also</span></span>
 
 
 
-[<span data-ttu-id="eca7b-121">IMsgServiceAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="eca7b-121">IMsgServiceAdmin : IUnknown</span></span>](imsgserviceadminiunknown.md)
+[<span data-ttu-id="357f7-121">IMsgServiceAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="357f7-121">IMsgServiceAdmin : IUnknown</span></span>](imsgserviceadminiunknown.md)
   
-[<span data-ttu-id="eca7b-122">IMsgServiceAdmin::ConfigureMsgService</span><span class="sxs-lookup"><span data-stu-id="eca7b-122">IMsgServiceAdmin::ConfigureMsgService</span></span>](imsgserviceadmin-configuremsgservice.md)
+[<span data-ttu-id="357f7-122">IMsgServiceAdmin::ConfigureMsgService</span><span class="sxs-lookup"><span data-stu-id="357f7-122">IMsgServiceAdmin::ConfigureMsgService</span></span>](imsgserviceadmin-configuremsgservice.md)
   
-[<span data-ttu-id="eca7b-123">IMsgServiceAdmin::CreateMsgService</span><span class="sxs-lookup"><span data-stu-id="eca7b-123">IMsgServiceAdmin::CreateMsgService</span></span>](imsgserviceadmin-createmsgservice.md)
+[<span data-ttu-id="357f7-123">IMsgServiceAdmin::CreateMsgService</span><span class="sxs-lookup"><span data-stu-id="357f7-123">IMsgServiceAdmin::CreateMsgService</span></span>](imsgserviceadmin-createmsgservice.md)
   
-[<span data-ttu-id="eca7b-124">IProfAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="eca7b-124">IProfAdmin : IUnknown</span></span>](iprofadminiunknown.md)
+[<span data-ttu-id="357f7-124">IProfAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="357f7-124">IProfAdmin : IUnknown</span></span>](iprofadminiunknown.md)
   
-[<span data-ttu-id="eca7b-125">MSGSERVICEENTRY</span><span class="sxs-lookup"><span data-stu-id="eca7b-125">MSGSERVICEENTRY</span></span>](msgserviceentry.md)
+[<span data-ttu-id="357f7-125">MSGSERVICEENTRY</span><span class="sxs-lookup"><span data-stu-id="357f7-125">MSGSERVICEENTRY</span></span>](msgserviceentry.md)
   
-[<span data-ttu-id="eca7b-126">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="eca7b-126">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="357f7-126">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="357f7-126">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 
