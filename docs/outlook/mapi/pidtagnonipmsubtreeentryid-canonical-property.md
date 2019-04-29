@@ -11,50 +11,50 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 03ad4bd7-3c0f-4355-9a19-51c99e6c6f7d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 15243336dd90d75df2b27c8c1de079419412ee5b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329324"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427591"
 ---
-# <a name="pidtagnonipmsubtreeentryid-canonical-property"></a><span data-ttu-id="4ae20-103">Kanonische Pidtagnonipmsubtreeentryid (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="4ae20-103">PidTagNonIpmSubtreeEntryId Canonical Property</span></span>
+# <a name="pidtagnonipmsubtreeentryid-canonical-property"></a><span data-ttu-id="a6303-103">Kanonische Pidtagnonipmsubtreeentryid (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="a6303-103">PidTagNonIpmSubtreeEntryId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="4ae20-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4ae20-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="a6303-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a6303-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4ae20-105">Zeigt die Eintrags-ID des **NON_IPM_SUBTREE** -Ordners in einem Exchange-informationsSpeicher für Öffentliche Ordner an.</span><span class="sxs-lookup"><span data-stu-id="4ae20-105">Shows the entry ID of the **NON_IPM_SUBTREE** folder in an Exchange Public Folder store.</span></span> 
+<span data-ttu-id="a6303-105">Zeigt die Eintrags-ID des **NON_IPM_SUBTREE** -Ordners in einem Exchange-informationsSpeicher für Öffentliche Ordner an.</span><span class="sxs-lookup"><span data-stu-id="a6303-105">Shows the entry ID of the **NON_IPM_SUBTREE** folder in an Exchange Public Folder store.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="4ae20-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="4ae20-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="4ae20-107">PR_NON_IPM_SUBTREE_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="4ae20-107">PR_NON_IPM_SUBTREE_ENTRYID</span></span>  <br/> |
-|<span data-ttu-id="4ae20-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="4ae20-108">Identifier:</span></span>  <br/> |<span data-ttu-id="4ae20-109">0x6620</span><span class="sxs-lookup"><span data-stu-id="4ae20-109">0x6620</span></span>  <br/> |
-|<span data-ttu-id="4ae20-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="4ae20-110">Data type:</span></span>  <br/> |<span data-ttu-id="4ae20-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="4ae20-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="4ae20-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="4ae20-112">Area:</span></span>  <br/> |<span data-ttu-id="4ae20-113">Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="4ae20-113">Message store</span></span>  <br/> |
+|<span data-ttu-id="a6303-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="a6303-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="a6303-107">PR_NON_IPM_SUBTREE_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="a6303-107">PR_NON_IPM_SUBTREE_ENTRYID</span></span>  <br/> |
+|<span data-ttu-id="a6303-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="a6303-108">Identifier:</span></span>  <br/> |<span data-ttu-id="a6303-109">0x6620</span><span class="sxs-lookup"><span data-stu-id="a6303-109">0x6620</span></span>  <br/> |
+|<span data-ttu-id="a6303-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="a6303-110">Data type:</span></span>  <br/> |<span data-ttu-id="a6303-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="a6303-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="a6303-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="a6303-112">Area:</span></span>  <br/> |<span data-ttu-id="a6303-113">Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="a6303-113">Message store</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="4ae20-114">Zugehörige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="4ae20-114">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="a6303-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="a6303-114">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="4ae20-115">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="4ae20-115">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="a6303-115">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="a6303-115">Header files</span></span>
 
-<span data-ttu-id="4ae20-116">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="4ae20-116">Mapidefs.h</span></span>
+<span data-ttu-id="a6303-116">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="a6303-116">Mapidefs.h</span></span>
   
-> <span data-ttu-id="4ae20-117">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="4ae20-117">Provides data type definitions.</span></span>
+> <span data-ttu-id="a6303-117">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="a6303-117">Provides data type definitions.</span></span>
     
-<span data-ttu-id="4ae20-118">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="4ae20-118">Mapitags.h</span></span>
+<span data-ttu-id="a6303-118">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="a6303-118">Mapitags.h</span></span>
   
-> <span data-ttu-id="4ae20-119">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="4ae20-119">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="a6303-119">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="a6303-119">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="4ae20-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4ae20-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a6303-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a6303-120">See also</span></span>
 
 
 
-[<span data-ttu-id="4ae20-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4ae20-121">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="a6303-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a6303-121">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="4ae20-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4ae20-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="a6303-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a6303-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="4ae20-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="4ae20-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="a6303-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="a6303-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="4ae20-124">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="4ae20-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="a6303-124">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="a6303-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

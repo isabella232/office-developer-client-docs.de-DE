@@ -10,26 +10,26 @@ localization_priority: Normal
 ms.assetid: ee4fb340-0c6b-1c9a-9d97-827081bea235
 description: Gibt die Nummer der Seite zurück, die die Form enthält.
 ms.openlocfilehash: 8c9f3b23afacff4a90e1fa6f2463e36150bc5d5f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339460"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424210"
 ---
-# <a name="pagenumber-function"></a><span data-ttu-id="86b19-103">PAGENUMBER Function</span><span class="sxs-lookup"><span data-stu-id="86b19-103">PAGENUMBER Function</span></span>
+# <a name="pagenumber-function"></a><span data-ttu-id="9884c-103">PAGENUMBER Function</span><span class="sxs-lookup"><span data-stu-id="9884c-103">PAGENUMBER Function</span></span>
 
-<span data-ttu-id="86b19-104">Gibt die Nummer der Seite zurück, die die Form enthält.</span><span class="sxs-lookup"><span data-stu-id="86b19-104">Returns the number of the page that contains the shape.</span></span> 
+<span data-ttu-id="9884c-104">Gibt die Nummer der Seite zurück, die die Form enthält.</span><span class="sxs-lookup"><span data-stu-id="9884c-104">Returns the number of the page that contains the shape.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="86b19-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="86b19-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9884c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="9884c-105">Syntax</span></span>
 
-<span data-ttu-id="86b19-106">PAGENUMBER ()</span><span class="sxs-lookup"><span data-stu-id="86b19-106">PAGENUMBER()</span></span>
+<span data-ttu-id="9884c-106">PAGENUMBER ()</span><span class="sxs-lookup"><span data-stu-id="9884c-106">PAGENUMBER()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="86b19-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="86b19-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="9884c-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9884c-107">Return value</span></span>
 
-<span data-ttu-id="86b19-108">Zahl</span><span class="sxs-lookup"><span data-stu-id="86b19-108">Number</span></span>
+<span data-ttu-id="9884c-108">Zahl</span><span class="sxs-lookup"><span data-stu-id="9884c-108">Number</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="86b19-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="86b19-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9884c-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9884c-109">Remarks</span></span>
 
-<span data-ttu-id="86b19-110">Wenn es sich bei dem aktuellen Zeichenblatt um ein Hintergrundzeichenblatt (ohne Nummerierung) handelt oder ein Fehler auftritt, gibt die PAGENUMBER-Funktion 0 zurück.</span><span class="sxs-lookup"><span data-stu-id="86b19-110">If the current page is a background page (unnumbered), or if an error occurs, the PAGENUMBER function returns zero.</span></span>
+<span data-ttu-id="9884c-110">Wenn es sich bei dem aktuellen Zeichenblatt um ein Hintergrundzeichenblatt (ohne Nummerierung) handelt oder ein Fehler auftritt, gibt die PAGENUMBER-Funktion 0 zurück.</span><span class="sxs-lookup"><span data-stu-id="9884c-110">If the current page is a background page (unnumbered), or if an error occurs, the PAGENUMBER function returns zero.</span></span>
   
 

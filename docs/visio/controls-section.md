@@ -10,18 +10,18 @@ localization_priority: Normal
 ms.assetid: d34c296d-e874-b5f3-9232-e1cfe01c7eab
 description: Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
 ms.openlocfilehash: b0ca91803d866a3d11f255273c2e338d7e7dc74a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282978"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427171"
 ---
-# <a name="controls-section"></a><span data-ttu-id="c2483-103">Abschnitt "Controls"</span><span class="sxs-lookup"><span data-stu-id="c2483-103">Controls Section</span></span>
+# <a name="controls-section"></a><span data-ttu-id="d71c4-103">Abschnitt "Controls"</span><span class="sxs-lookup"><span data-stu-id="d71c4-103">Controls Section</span></span>
 
-<span data-ttu-id="c2483-104">Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.</span><span class="sxs-lookup"><span data-stu-id="c2483-104">Contains a row and cells for each control handle defined for the shape.</span></span>
+<span data-ttu-id="d71c4-104">Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.</span><span class="sxs-lookup"><span data-stu-id="d71c4-104">Contains a row and cells for each control handle defined for the shape.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="c2483-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c2483-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d71c4-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d71c4-105">Remarks</span></span>
 
-<span data-ttu-id="c2483-106">Sie können Steuerpunkte im Abschnitt **Steuerelemente** im ShapeSheet-Fenster definieren.</span><span class="sxs-lookup"><span data-stu-id="c2483-106">You can define control handles in the **Controls** section in the ShapeSheet window.</span></span> <span data-ttu-id="c2483-107">Wenn Ihre Form keinen **Steuerelement** Abschnitt hat, können Sie eine in das ShapeSheet-Fenster einfügen.</span><span class="sxs-lookup"><span data-stu-id="c2483-107">If your shape has no **Controls** section, you can insert one in the ShapeSheet window.</span></span> <span data-ttu-id="c2483-108">Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen**, und aktivieren Sie dann das Kontrollkästchen **Steuerelemente** .</span><span class="sxs-lookup"><span data-stu-id="c2483-108">Right-click in the ShapeSheet window, click **Insert Section**, and then select the **Controls** check box.</span></span> <span data-ttu-id="c2483-109">Um einem vorhandenen **Steuer** Element Steuerpunkte hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im kontextMenü auf **Zeile einfügen** .</span><span class="sxs-lookup"><span data-stu-id="c2483-109">To add control handles to an existing **Controls** section, right-click a row and click **Insert Row** on the shortcut menu.</span></span> 
+<span data-ttu-id="d71c4-106">Sie können Steuerpunkte im Abschnitt **Steuerelemente** im ShapeSheet-Fenster definieren.</span><span class="sxs-lookup"><span data-stu-id="d71c4-106">You can define control handles in the **Controls** section in the ShapeSheet window.</span></span> <span data-ttu-id="d71c4-107">Wenn Ihre Form keinen **Steuerelement** Abschnitt hat, können Sie eine in das ShapeSheet-Fenster einfügen.</span><span class="sxs-lookup"><span data-stu-id="d71c4-107">If your shape has no **Controls** section, you can insert one in the ShapeSheet window.</span></span> <span data-ttu-id="d71c4-108">Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen**, und aktivieren Sie dann das Kontrollkästchen **Steuerelemente** .</span><span class="sxs-lookup"><span data-stu-id="d71c4-108">Right-click in the ShapeSheet window, click **Insert Section**, and then select the **Controls** check box.</span></span> <span data-ttu-id="d71c4-109">Um einem vorhandenen **Steuer** Element Steuerpunkte hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im kontextMenü auf **Zeile einfügen** .</span><span class="sxs-lookup"><span data-stu-id="d71c4-109">To add control handles to an existing **Controls** section, right-click a row and click **Insert Row** on the shortcut menu.</span></span> 
   
 
