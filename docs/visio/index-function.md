@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cc46f91e-733f-e25a-17d2-19df8c8febd2
 description: Gibt die Teilzeichenfolge am nullbasierten Speicherort Index in der durch Trennzeichen getrennten Liste zurück. Wenn sich der Index außerhalb des gültigen Gültigkeitsbereichs befindet, wird eine leere Zeichenfolge oder das optionale Token zurückgegeben, das als ERRORVALUE-Argument bereitgestellt wird.
 ms.openlocfilehash: 11362ed984a489682d57f007300e60de548ddf11
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344730"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431575"
 ---
 # <a name="index-function"></a>INDEX Function
 

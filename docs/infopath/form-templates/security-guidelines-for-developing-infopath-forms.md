@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 4690028e-20ac-297b-4651-801f5159c747
 description: Lesen Sie vor der Lektüre dieses Themas Weitere Informationen zu Sicherheitskonzepten in InfoPath-Formularen, um sich mit dem InfoPath-Sicherheitsmodell vertraut zu machen.
 ms.openlocfilehash: 5108d8b1967b72ac4805f892bcf3bbae3aecccbe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299923"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437812"
 ---
 # <a name="security-guidelines-for-developing-infopath-forms"></a>Sicherheitsrichtlinien für die Entwicklung von InfoPath-Formularen
 

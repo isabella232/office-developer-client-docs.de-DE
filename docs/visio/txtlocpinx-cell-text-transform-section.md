@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cbfc4e91-10d1-d50e-3e8a-f269f7123276
 description: 'Bestimmt die x-Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung des Textblocks. Die Standardformel lautet:'
 ms.openlocfilehash: 390f8129e8000a043969eda0ab1c8e4ef62515ef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316450"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425855"
 ---
 # <a name="txtlocpinx-cell-text-transform-section"></a>Zelle "TxtLocPinX" (Abschnitt "Text Transform")
 

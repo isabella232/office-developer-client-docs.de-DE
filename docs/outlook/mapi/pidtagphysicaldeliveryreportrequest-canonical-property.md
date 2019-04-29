@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e34070ae-4f7a-4506-9749-1dadd60a7d2e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5f3ea9ec2df2f22ca14ad32bcb08fa34614d69e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338255"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431127"
 ---
 # <a name="pidtagphysicaldeliveryreportrequest-canonical-property"></a>Kanonische Pidtagphysicaldeliveryreportrequest (-Eigenschaft
 
@@ -34,7 +34,7 @@ Enthält den Modus eines Berichts, der an einen bestimmten Nachrichtenempfänger
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

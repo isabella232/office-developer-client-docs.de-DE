@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 299627fe-8fbc-43e9-95aa-daf5c6e31ffb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5e3b409d4f3556a2ed08ba0e9a5576524fe1d2ef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358471"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439639"
 ---
 # <a name="pidlidremotesearchkey-canonical-property"></a>Kanonische Pidlidremotesearchkey (-Eigenschaft
 
@@ -35,7 +35,7 @@ Gibt den Suchschlüssel eines Remote Elements an.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Remote Nachricht  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3ca662c8-1ce4-89a9-3264-1ba533fcd444
 description: Enthält die Funktion für ein Feld.
 ms.openlocfilehash: d5a09dd0d59341125db897484f74addff22328de
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320202"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430945"
 ---
 # <a name="value-cell-text-fields-section"></a>Zelle "Value" (Abschnitt "Text Fields")
 

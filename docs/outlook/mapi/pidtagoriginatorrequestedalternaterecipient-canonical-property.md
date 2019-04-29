@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c85b7862-18bc-4e17-94db-9097e0ac4a02
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 45cd0e8a95f908d7ef56d03b3ecab5d5df5bcae1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342000"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437861"
 ---
 # <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>Kanonische Pidtagoriginatorrequestedalternaterecipient (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält eine Eintrags-ID für einen vom Absender angegebenen alternativen Empf�
 
 Diese Eigenschaft wird in Nachrichten mit Auto Weiterleitung verwendet. Wenn die Auto Weiterleitung nicht zulässig ist oder kein alternativer Empfänger festgelegt wurde, sollte ein Unzustellbarkeitsbericht generiert werden.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

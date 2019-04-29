@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 4fa47824-b4ef-41e1-9096-c1b1cdacd7ac
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 01fd66033da0f24948913f47a752d555eca655fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339746"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423622"
 ---
 # <a name="sending-a-message"></a>Senden einer Nachricht
 

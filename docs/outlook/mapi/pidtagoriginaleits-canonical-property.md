@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9908039e-6b88-428f-b241-b04144cbcf5c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: cdfbf0e8c5118f87ac058d56ebc8f85369bd5494
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342644"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434711"
 ---
 # <a name="pidtagoriginaleits-canonical-property"></a>Kanonische Pidtagoriginaleits (-Eigenschaft
 
@@ -34,7 +34,7 @@ Enthält eine Kopie der ursprünglichen codierten Informationstypen (EITs) für 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

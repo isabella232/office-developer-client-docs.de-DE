@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 7eb20f21-0218-4a2c-9bbc-90218a1e87bc
 description: Sie können die ChangeView-Aktion verwenden, um zwischen Ansichten zu navigieren.
 ms.openlocfilehash: 0c1e27c264a826d38ec2efbd5be9bc6237ad7437
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282313"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425358"
 ---
 # <a name="changeview-macro-action-access-custom-web-app"></a>ChangeView-Makroaktion (benutzerdefinierte Access-Web-App)
 
@@ -27,7 +27,7 @@ Die **ChangeView** -Aktion hat die folgenden Argumente.
 |**Aktionsargument**|**Erforderlich**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Tabelle  <br/> |Ja  <br/> |Der Name der zu öffnenden Tabelle.  <br/> |
-|Ansicht  <br/> |Ja  <br/> |Der Name der zu öffnenden Ansicht.  <br/> |
+|Anzeigen  <br/> |Ja  <br/> |Der Name der zu öffnenden Ansicht.  <br/> |
 |Dabei gilt:  <br/> |Nein  <br/> |Ersetzt die WHERE-Bedingung (sofern angegeben) der Objektdatenquelle.  <br/> |
 |Sortiert nach  <br/> |Nein  <br/> |Ein Zeichenfolgenausdruck, der den Namen des Felds oder die Namen der Felder zum Sortieren der Datensätze und die optionalen Schlüsselwörter ASC oder DESC enthält. Dieses Argument ist standardmäßig leer.  <br/> |
    

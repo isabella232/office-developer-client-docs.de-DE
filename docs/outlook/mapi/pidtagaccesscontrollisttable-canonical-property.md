@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 48667fda-ddc4-42ac-9231-761db0a4c1a9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9c71a2b806b810906c13ea4750e5491b1544f640
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332004"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424504"
 ---
 # <a name="pidtagaccesscontrollisttable-canonical-property"></a>Kanonische Pidtagaccesscontrollisttable (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält eine Tabelle, die aus allen SACL-Systemen (System Access Control Lists)
 
 Diese Eigenschaft ist für alle Folder-Objekte auf einem Exchange-Server vorhanden. In dieser Eigenschaft enthaltene Werte werden zum Lesen und Ändern von Zugriffssteuerungslisten (Access Control Lists, ACLs) für Ordner verwendet. Sie können die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode mit dem **IID_IExchangeModifyTable** -Schnittstellenbezeichner verwenden, um eine [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md) -Schnittstelle für die ACL-Tabelle in einem Ordner abzurufen. Sie können diese Schnittstelle verwenden, um diese ACLs zu lesen und zu ändern. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

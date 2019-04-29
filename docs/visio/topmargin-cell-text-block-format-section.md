@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c599b444-4d0e-a855-b04b-dd9dcaedf263
 description: Bestimmt den Abstand zwischen dem oberen Rand des Textblocks und der ersten darin enthaltenen Textzeile. Der Standardwert beträgt 4,0000 Punkt. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt der obere Rand unverändert.
 ms.openlocfilehash: 97d349fd4ddc3c76cda61e1ee7ce25909161e6fa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280924"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435572"
 ---
 # <a name="topmargin-cell-text-block-format-section"></a>Zelle "TopMargin" (Abschnitt "Text Block Format")
 

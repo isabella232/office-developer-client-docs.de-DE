@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ad9756c1-c1f9-4ab3-a58a-31e574dd9530
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d6e189f78dec2fc92f1804be93e7885b61734b03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327951"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431421"
 ---
 # <a name="pidtagidentitydisplay-canonical-property"></a>Kanonische Pidtagidentitydisplay (-Eigenschaft
 
@@ -40,7 +40,7 @@ Diese Eigenschaften werden nicht als Eigenschaften für ein Objekt, sondern nur 
   
 Ein Dienstanbieter, der eine beliebige Identitätseigenschaft bereit liefert, sollte alle Bereitstellung aufweisen. Anbieter, die zum gleichen Nachrichtendienst gehören, sollten dieselben Werte für die Identitätseigenschaften verfügbar machen. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

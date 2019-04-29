@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 8345a4bc-ad7b-d0b0-7615-f77ade35006d
 description: Bevor Sie dieses Thema lesen, finden Sie unter theSigned Form Templatessection in zusätzlichen InfoPath-Formular Sicherheitskonzepte Informationen zur Sicherheit signierter Formularvorlagen. Die Informationen und Hinweise im Thema Security Levels, E-Mail Deployment, and Remote Form Templates sind ebenfalls wichtig.
 ms.openlocfilehash: 76cc6dfdbd2c01827182c348281a98ad7cd17b69
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303717"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426800"
 ---
 # <a name="deploying-signed-infopath-form-templates"></a>Bereitstellen signierter InfoPath-Formularvorlagen
 

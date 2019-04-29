@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7db7a8ed-50a9-8495-b978-42a2fddb466a
 description: Akzeptiert einen Punkt, der in den lokalen Koordinaten eines Shapes definiert ist, und gibt den entsprechenden Punkt in den lokalen Koordinaten der Form zurück, die der Formel zugeordnet ist.
 ms.openlocfilehash: 4728e5f8301c6ef10ddb0c14b6c0868a7a48b2a7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344429"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422425"
 ---
 # <a name="loc-function-visioshapesheet"></a>LOC-Funktion(VisioShapeSheet)
 

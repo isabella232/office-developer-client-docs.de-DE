@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c44457ca-997a-5315-44dd-4218e4203550
 description: Zeigt den Radius des Rundungsbogens an, der sich dort befindet, wo zwei fortlaufende Segmente eines Pfads aufeinander treffen. Die Abrundungsfunktion kann beispielsweise verwendet werden, um die Ecken eines Rechtecks abzurunden. Um die Abrundung festzulegen, geben Sie einen Wert mit einer Maßeinheit ein (d. h. ein Paar aus einer Zahl und einer Einheit).
 ms.openlocfilehash: d64d3266e3dd2b0a3998955efe271aab04905fbf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358583"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427010"
 ---
 # <a name="rounding-cell-line-format-section"></a>Zelle "Rounding" (Abschnitt "Line Format")
 

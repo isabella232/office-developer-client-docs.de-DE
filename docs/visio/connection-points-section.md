@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e0c9d25d-933c-1c46-2cdd-3fa6ba3e56af
 description: Enthält eine Zeile und Zellen für jeden für das Shape definierten Verbindungspunkt.
 ms.openlocfilehash: 23d5f4a48948be517875577cd05fd253ac16ec09
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318907"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422817"
 ---
 # <a name="connection-points-section"></a>Abschnitt "Connection Points"
 

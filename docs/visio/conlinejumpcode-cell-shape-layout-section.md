@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: af85588e-8e83-5168-7a8c-d7e8b4af5c27
 description: Bestimmt die Bedingungen für einen Verbindersprung.
 ms.openlocfilehash: 28bf506b8d3729fefec438d259746661fd28586e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284088"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421620"
 ---
 # <a name="conlinejumpcode-cell-shape-layout-section"></a>Zelle "ConLineJumpCode" (Abschnitt "Shape Layout")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ab9fcebc-1550-3b9e-e3b4-e8b92424390b
 description: Legt fest, ob die Shapes auf einem Vordergrundblatt an anderen Objekten auf dem Zeichenblatt und an Shapes auf dem Hintergrundblatt einrasten.
 ms.openlocfilehash: 665130e9f9f938349028ffa1d1c06224e746de5d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335322"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426751"
 ---
 # <a name="inhibitsnap-cell-page-properties-section"></a>Zelle "InhibitSnap" (Abschnitt "Page Properties")
 

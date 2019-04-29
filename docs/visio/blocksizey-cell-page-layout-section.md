@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: be51e18e-ea49-0788-1a17-866090afb9f4
 description: Bestimmt die vertikale Blockgröße, den Bereich, in dem jede Ihrer Shapes auf das Zeichenblatt passen muss, wenn Sie Shapes mithilfe des Dialogfelds Layout konfigurieren (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu Layout, und klicken Sie dann auf Weitere Layoutoptionen).
 ms.openlocfilehash: 08f2012bb027267810c21ef253a0073bb42d3a96
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297347"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427402"
 ---
 # <a name="blocksizey-cell-page-layout-section"></a>Zelle "BlockSizeY" (Abschnitt "Page Layout")
 
