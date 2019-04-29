@@ -10,18 +10,18 @@ localization_priority: Normal
 ms.assetid: 6e178e26-e696-f38b-4720-10ce0e6ad110
 description: ''
 ms.openlocfilehash: 45616be6a1d59bd1464222897050de324cebe80e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360963"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436636"
 ---
-# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="c026e-102">Öffnen aller ShapeSheets im gleichen Fenster</span><span class="sxs-lookup"><span data-stu-id="c026e-102">Open Each ShapeSheet in the Same Window</span></span>
+# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="139fa-102">Öffnen aller ShapeSheets im gleichen Fenster</span><span class="sxs-lookup"><span data-stu-id="139fa-102">Open Each ShapeSheet in the Same Window</span></span>
 
-1. <span data-ttu-id="c026e-103">Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Optionen**und dann auf **erweitert**.</span><span class="sxs-lookup"><span data-stu-id="c026e-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
+1. <span data-ttu-id="139fa-103">Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Optionen**und dann auf **erweitert**.</span><span class="sxs-lookup"><span data-stu-id="139fa-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
     
-2. <span data-ttu-id="c026e-104">Aktivieren Sie unter **Allgemein** das Kontrollkästchen **Alle ShapeSheets in einem Fenster öffnen**.</span><span class="sxs-lookup"><span data-stu-id="c026e-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
+2. <span data-ttu-id="139fa-104">Aktivieren Sie unter **Allgemein** das Kontrollkästchen **Alle ShapeSheets in einem Fenster öffnen**.</span><span class="sxs-lookup"><span data-stu-id="139fa-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
     
-3. <span data-ttu-id="c026e-105">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="c026e-105">Click **OK**.</span></span> 
+3. <span data-ttu-id="139fa-105">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="139fa-105">Click **OK**.</span></span> 
     
 

@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.assetid: 30384098-09e9-95a3-aefd-9bda3ff1b699
 description: Gibt den Text aus dem Feld Autor der Eigenschaften eines Dokuments zurück.
 ms.openlocfilehash: d87543391f3880ac42253791e3720bdd57805bdc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282943"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422698"
 ---
-# <a name="creator-function"></a><span data-ttu-id="e006e-103">CREATOR-Funktion</span><span class="sxs-lookup"><span data-stu-id="e006e-103">CREATOR Function</span></span>
+# <a name="creator-function"></a><span data-ttu-id="874f8-103">CREATOR-Funktion</span><span class="sxs-lookup"><span data-stu-id="874f8-103">CREATOR Function</span></span>
 
-<span data-ttu-id="e006e-104">Gibt den Text aus dem Feld **Autor** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="e006e-104">Returns the text from the **Author** field of a document's properties.</span></span> 
+<span data-ttu-id="874f8-104">Gibt den Text aus dem Feld **Autor** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="874f8-104">Returns the text from the **Author** field of a document's properties.</span></span> 
   
-<span data-ttu-id="e006e-105">CREATOR ()</span><span class="sxs-lookup"><span data-stu-id="e006e-105">CREATOR ()</span></span> 
+<span data-ttu-id="874f8-105">CREATOR ()</span><span class="sxs-lookup"><span data-stu-id="874f8-105">CREATOR ()</span></span> 
   
 

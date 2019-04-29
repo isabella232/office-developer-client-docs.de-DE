@@ -9,19 +9,19 @@ api_type:
 ms.assetid: d1a050ff-3cf9-4bf7-812d-b7c1b31056e7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 89247ca1b263d6f06af73f1ffa14709a2aff23de
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310150"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432954"
 ---
-# <a name="implementing-objects-in-c"></a><span data-ttu-id="71a1e-103">Implementieren von Objekten in C++</span><span class="sxs-lookup"><span data-stu-id="71a1e-103">Implementing objects in C++</span></span>
+# <a name="implementing-objects-in-c"></a><span data-ttu-id="dad07-103">Implementieren von Objekten in C++</span><span class="sxs-lookup"><span data-stu-id="dad07-103">Implementing objects in C++</span></span>
 
-<span data-ttu-id="71a1e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="71a1e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="dad07-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="dad07-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="71a1e-105">C++-Clients und-Dienstanbieter definieren MAPI-Objekte, indem Sie Klassen erstellen, die von den von Ihnen implementierten Schnittstellen erben.</span><span class="sxs-lookup"><span data-stu-id="71a1e-105">C++ clients and service providers define MAPI objects by creating classes that inherit from the interfaces they are implementing.</span></span> <span data-ttu-id="71a1e-106">Jede der Interface-Methoden ist öffentlich, ebenso wie der Konstruktor und der Destruktor für die Klasse.</span><span class="sxs-lookup"><span data-stu-id="71a1e-106">Each of the interface methods is public, as are the constructor and destructor for the class.</span></span> <span data-ttu-id="71a1e-107">Wenn die Klasse über zusätzliche Methoden verfügt, können Sie je nach Implementierung öffentlich oder privat sein.</span><span class="sxs-lookup"><span data-stu-id="71a1e-107">If the class has additional methods, they can be public or private, depending on the implementation.</span></span> <span data-ttu-id="71a1e-108">Alle Datenmember sind privat.</span><span class="sxs-lookup"><span data-stu-id="71a1e-108">All data members are private.</span></span> 
+<span data-ttu-id="dad07-105">C++-Clients und-Dienstanbieter definieren MAPI-Objekte, indem Sie Klassen erstellen, die von den von Ihnen implementierten Schnittstellen erben.</span><span class="sxs-lookup"><span data-stu-id="dad07-105">C++ clients and service providers define MAPI objects by creating classes that inherit from the interfaces they are implementing.</span></span> <span data-ttu-id="dad07-106">Jede der Interface-Methoden ist öffentlich, ebenso wie der Konstruktor und der Destruktor für die Klasse.</span><span class="sxs-lookup"><span data-stu-id="dad07-106">Each of the interface methods is public, as are the constructor and destructor for the class.</span></span> <span data-ttu-id="dad07-107">Wenn die Klasse über zusätzliche Methoden verfügt, können Sie je nach Implementierung öffentlich oder privat sein.</span><span class="sxs-lookup"><span data-stu-id="dad07-107">If the class has additional methods, they can be public or private, depending on the implementation.</span></span> <span data-ttu-id="dad07-108">Alle Datenmember sind privat.</span><span class="sxs-lookup"><span data-stu-id="dad07-108">All data members are private.</span></span> 
   
-<span data-ttu-id="71a1e-109">Der folgende Beispielcode zeigt, wie Sie ein C++-Statusobjekt definieren.</span><span class="sxs-lookup"><span data-stu-id="71a1e-109">The following example code shows how to define a C++ status object.</span></span> <span data-ttu-id="71a1e-110">Die `CMyMAPIObject` Klasse erbt von der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="71a1e-110">The  `CMyMAPIObject` class inherits from the [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) interface.</span></span> <span data-ttu-id="71a1e-111">Viele der in diesem Beispiel verwendeten Makros sind in der OLE-Headerdatei COMPOBJ. h definiert.</span><span class="sxs-lookup"><span data-stu-id="71a1e-111">Many of the macros used in this example are defined in the OLE header file Compobj.h.</span></span> <span data-ttu-id="71a1e-112">Die ersten Member der Klasse sind die Methoden der Basisschnittstelle, gefolgt von den Methoden der geerbten Schnittstellen in der Reihenfolge der Vererbung.</span><span class="sxs-lookup"><span data-stu-id="71a1e-112">The first members of the class are the methods of the base interface, followed by the methods of the inherited interfaces in order of inheritance.</span></span> <span data-ttu-id="71a1e-113">Nach den Schnittstellendefinitionen werden zusätzliche Methoden, der Konstruktor und der Destruktor sowie die Datenmember angezeigt.</span><span class="sxs-lookup"><span data-stu-id="71a1e-113">Following the interface definitions are any additional methods, the constructor and destructor, and the data members.</span></span> 
+<span data-ttu-id="dad07-109">Der folgende Beispielcode zeigt, wie Sie ein C++-Statusobjekt definieren.</span><span class="sxs-lookup"><span data-stu-id="dad07-109">The following example code shows how to define a C++ status object.</span></span> <span data-ttu-id="dad07-110">Die `CMyMAPIObject` Klasse erbt von der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="dad07-110">The  `CMyMAPIObject` class inherits from the [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) interface.</span></span> <span data-ttu-id="dad07-111">Viele der in diesem Beispiel verwendeten Makros sind in der OLE-Headerdatei COMPOBJ. h definiert.</span><span class="sxs-lookup"><span data-stu-id="dad07-111">Many of the macros used in this example are defined in the OLE header file Compobj.h.</span></span> <span data-ttu-id="dad07-112">Die ersten Member der Klasse sind die Methoden der Basisschnittstelle, gefolgt von den Methoden der geerbten Schnittstellen in der Reihenfolge der Vererbung.</span><span class="sxs-lookup"><span data-stu-id="dad07-112">The first members of the class are the methods of the base interface, followed by the methods of the inherited interfaces in order of inheritance.</span></span> <span data-ttu-id="dad07-113">Nach den Schnittstellendefinitionen werden zusätzliche Methoden, der Konstruktor und der Destruktor sowie die Datenmember angezeigt.</span><span class="sxs-lookup"><span data-stu-id="dad07-113">Following the interface definitions are any additional methods, the constructor and destructor, and the data members.</span></span> 
   
 ```cpp
 class  CMyMAPIObject : public IMAPIStatus
@@ -48,14 +48,14 @@ private :
  
 ```
 
-<span data-ttu-id="71a1e-114">Um eine Instanz der `CMyMAPIObject` Klasse zu verwenden, führen C++-Clients oder-Dienstanbieter einen Aufruf einer der folgenden Methoden aus:</span><span class="sxs-lookup"><span data-stu-id="71a1e-114">To use an instance of the  `CMyMAPIObject` class, C++ clients or service providers make a call to one of its methods as follows:</span></span> 
+<span data-ttu-id="dad07-114">Um eine Instanz der `CMyMAPIObject` Klasse zu verwenden, führen C++-Clients oder-Dienstanbieter einen Aufruf einer der folgenden Methoden aus:</span><span class="sxs-lookup"><span data-stu-id="dad07-114">To use an instance of the  `CMyMAPIObject` class, C++ clients or service providers make a call to one of its methods as follows:</span></span> 
   
 ```cpp
 lpMyObj->ValidateState(ulUIParam, ulFlags);
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="71a1e-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="71a1e-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dad07-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dad07-115">See also</span></span>
 
-- [<span data-ttu-id="71a1e-116">Implementieren von MAPI-Objekten</span><span class="sxs-lookup"><span data-stu-id="71a1e-116">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
+- [<span data-ttu-id="dad07-116">Implementieren von MAPI-Objekten</span><span class="sxs-lookup"><span data-stu-id="dad07-116">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
 
