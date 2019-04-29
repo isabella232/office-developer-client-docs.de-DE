@@ -7,54 +7,54 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 325b6b47-b6a6-503e-e9bb-65ef7b73d659
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8e8a6ac07e14af52337b6e280fa58274df453c65
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299706"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412744"
 ---
-# <a name="getdefcachedmode"></a><span data-ttu-id="e994c-103">GetDefCachedMode</span><span class="sxs-lookup"><span data-stu-id="e994c-103">GetDefCachedMode</span></span>
+# <a name="getdefcachedmode"></a><span data-ttu-id="0ee96-103">GetDefCachedMode</span><span class="sxs-lookup"><span data-stu-id="0ee96-103">GetDefCachedMode</span></span>
 
   
   
-<span data-ttu-id="e994c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e994c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0ee96-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0ee96-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e994c-105">Gibt an, ob der Exchange-Cache-Modus für den privaten Exchange-Speicher aktiviert ist und ob dieser durch Richtlinien erzwungen wird.</span><span class="sxs-lookup"><span data-stu-id="e994c-105">Indicates whether Cached Exchange Mode for the private Exchange store is enabled, and whether this is enforced by policy.</span></span>
+<span data-ttu-id="0ee96-105">Gibt an, ob der Exchange-Cache-Modus für den privaten Exchange-Speicher aktiviert ist und ob dieser durch Richtlinien erzwungen wird.</span><span class="sxs-lookup"><span data-stu-id="0ee96-105">Indicates whether Cached Exchange Mode for the private Exchange store is enabled, and whether this is enforced by policy.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="e994c-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="e994c-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="0ee96-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="0ee96-106">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e994c-107">Exportiert von:</span><span class="sxs-lookup"><span data-stu-id="e994c-107">Exported by:</span></span>  <br/> |<span data-ttu-id="e994c-108">msmapi32. dll</span><span class="sxs-lookup"><span data-stu-id="e994c-108">msmapi32.dll</span></span>  <br/> |
-|<span data-ttu-id="e994c-109">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="e994c-109">Called by:</span></span>  <br/> |<span data-ttu-id="e994c-110">Client</span><span class="sxs-lookup"><span data-stu-id="e994c-110">Client</span></span>  <br/> |
-|<span data-ttu-id="e994c-111">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="e994c-111">Implemented by:</span></span>  <br/> |<span data-ttu-id="e994c-112">Outlook</span><span class="sxs-lookup"><span data-stu-id="e994c-112">Outlook</span></span>  <br/> |
+|<span data-ttu-id="0ee96-107">Exportiert von:</span><span class="sxs-lookup"><span data-stu-id="0ee96-107">Exported by:</span></span>  <br/> |<span data-ttu-id="0ee96-108">msmapi32. dll</span><span class="sxs-lookup"><span data-stu-id="0ee96-108">msmapi32.dll</span></span>  <br/> |
+|<span data-ttu-id="0ee96-109">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="0ee96-109">Called by:</span></span>  <br/> |<span data-ttu-id="0ee96-110">Client</span><span class="sxs-lookup"><span data-stu-id="0ee96-110">Client</span></span>  <br/> |
+|<span data-ttu-id="0ee96-111">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="0ee96-111">Implemented by:</span></span>  <br/> |<span data-ttu-id="0ee96-112">Outlook</span><span class="sxs-lookup"><span data-stu-id="0ee96-112">Outlook</span></span>  <br/> |
    
 ```cpp
 BOOL GetDefCachedMode(BOOL *pfPolicy); 
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e994c-113">Parameter</span><span class="sxs-lookup"><span data-stu-id="e994c-113">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0ee96-113">Parameter</span><span class="sxs-lookup"><span data-stu-id="0ee96-113">Parameters</span></span>
 
- <span data-ttu-id="e994c-114">_pfPolicy_</span><span class="sxs-lookup"><span data-stu-id="e994c-114">_pfPolicy_</span></span>
+ <span data-ttu-id="0ee96-114">_pfPolicy_</span><span class="sxs-lookup"><span data-stu-id="0ee96-114">_pfPolicy_</span></span>
   
-> <span data-ttu-id="e994c-115">Out **true** , wenn der Rückgabewert durch die Richtlinie erzwungen wird, **false** , wenn dies nicht der Fall ist.</span><span class="sxs-lookup"><span data-stu-id="e994c-115">[out] **true** if the return value is enforced by policy, **false** if it is not.</span></span> 
+> <span data-ttu-id="0ee96-115">Out **true** , wenn der Rückgabewert durch die Richtlinie erzwungen wird, **false** , wenn dies nicht der Fall ist.</span><span class="sxs-lookup"><span data-stu-id="0ee96-115">[out] **true** if the return value is enforced by policy, **false** if it is not.</span></span> 
     
-## <a name="return-values"></a><span data-ttu-id="e994c-116">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="e994c-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="0ee96-116">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="0ee96-116">Return values</span></span>
 
- <span data-ttu-id="e994c-117">**true**</span><span class="sxs-lookup"><span data-stu-id="e994c-117">**true**</span></span>
+ <span data-ttu-id="0ee96-117">**true**</span><span class="sxs-lookup"><span data-stu-id="0ee96-117">**true**</span></span>
   
-- <span data-ttu-id="e994c-118">Zwischenspeicherung ist aktiviert.</span><span class="sxs-lookup"><span data-stu-id="e994c-118">Caching is enabled.</span></span>
+- <span data-ttu-id="0ee96-118">Zwischenspeicherung ist aktiviert.</span><span class="sxs-lookup"><span data-stu-id="0ee96-118">Caching is enabled.</span></span>
     
- <span data-ttu-id="e994c-119">**false**</span><span class="sxs-lookup"><span data-stu-id="e994c-119">**false**</span></span>
+ <span data-ttu-id="0ee96-119">**false**</span><span class="sxs-lookup"><span data-stu-id="0ee96-119">**false**</span></span>
   
-- <span data-ttu-id="e994c-120">Zwischenspeicherung ist deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="e994c-120">Caching is disabled.</span></span>
+- <span data-ttu-id="0ee96-120">Zwischenspeicherung ist deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="0ee96-120">Caching is disabled.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="e994c-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e994c-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0ee96-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0ee96-121">See also</span></span>
 
 
 
-[<span data-ttu-id="e994c-122">GetDefCachedModeDownloadPubFoldFavs</span><span class="sxs-lookup"><span data-stu-id="e994c-122">GetDefCachedModeDownloadPubFoldFavs</span></span>](getdefcachedmodedownloadpubfoldfavs.md)
+[<span data-ttu-id="0ee96-122">GetDefCachedModeDownloadPubFoldFavs</span><span class="sxs-lookup"><span data-stu-id="0ee96-122">GetDefCachedModeDownloadPubFoldFavs</span></span>](getdefcachedmodedownloadpubfoldfavs.md)
 
